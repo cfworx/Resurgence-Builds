@@ -13,6 +13,17 @@ export interface Props {
 }
 
 const { title, href, specialization, playstyle, description, patch, pve, pvp, tags = [], featuredImage } = Astro.props;
+
+const getSpecClass = (spec: string) => {
+  switch (spec) {
+    case 'Field Medic': return 'tag--medic';
+    case 'Vanguard': return 'tag--vanguard';
+    case 'Bulwark': return 'tag--bulwark';
+    case 'Tech Operator': return 'tag--tech';
+    case 'Demolitionist': return 'tag--demo';
+    default: return 'tag--accent';
+  }
+};
 ---
 
 <article class={`card ${featuredImage ? 'card--has-image' : ''}`}>
@@ -31,7 +42,7 @@ const { title, href, specialization, playstyle, description, patch, pve, pvp, ta
     )}
     <div class="build-card__body">
       <div style="display:flex;gap:var(--sp-2);margin-bottom:var(--sp-2);flex-wrap:wrap;">
-        <span class="tag tag--accent">{specialization}</span>
+        <span class={`tag ${getSpecClass(specialization)}`}>{specialization}</span>
         <span class="tag">{playstyle}</span>
         {pve && <span class="tag">PvE</span>}
         {pvp && <span class="tag">PvP</span>}

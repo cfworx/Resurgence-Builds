@@ -323,6 +323,13 @@ pre code { background: none; padding: 0; }
   color: var(--accent);
 }
 
+/* Specialization Classes */
+.tag--medic { border-color: #1a7b45; color: #2ecc71; }
+.tag--vanguard { border-color: var(--accent-dim); color: var(--accent); }
+.tag--bulwark { border-color: #185a8a; color: #3498db; }
+.tag--tech { border-color: #9e8e00; color: #f1c40f; }
+.tag--demo { border-color: #8c1e14; color: #e74c3c; }
+
 /* Rarity colors */
 .tag--high-end,
 .rarity-high-end { border-color: #D4A534; color: #F5CC45; }
