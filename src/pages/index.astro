@@ -41,6 +41,7 @@ const posts: UnifiedPost[] = [
     description: pn.data.summary,
     type: 'patch-notes' as const,
     tags: [`v${pn.data.version}`],
+    featuredImage: pn.data.featuredImage,
   })),
   ...allGuides.map((guide) => ({
     title: guide.data.title,
