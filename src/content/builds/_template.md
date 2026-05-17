@@ -4,8 +4,8 @@ specialization: Vanguard
 playstyle: DPS
 pve: true
 pvp: false
-lastUpdated: 2026-01-01
-patch: "1.0.0"
+lastUpdated: 2026-05-17
+patch: "Season 2"
 tags: ["tag1", "tag2"]
 description: "One-sentence description of the build."
 author: "RapidF5"

@@ -6,7 +6,7 @@ playstyle: Support
 pve: true
 pvp: false
 lastUpdated: 2026-05-17
-patch: "1.2.0"
+patch: "Season 2"
 tags: [field-medic, healer, legendary, support-station, healing-hive, medical-excellence, captain-cow, healing-elites]
 description: "The ultimate Field Medic healer build for Legendary difficulty. Three simultaneous healing engines push ~37k HP per tick for 84 seconds. Teams fight over having you."
 author: "RapidF5"
