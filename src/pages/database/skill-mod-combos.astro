@@ -2,13 +2,28 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import SectionTag from '../../components/SectionTag.astro';
+import skillMods from '../../data/skill-mod-combos.json';
 
 const title = "Skill Mod Combos Database";
 const description = "Complete database of all Skill Mod Combos in The Division Resurgence.";
 const breadcrumbs = [
   { name: 'Database', url: '#' },
-  { name: 'Skill Mod Combos', url: '#' }
+  { name: 'Skill Mod Combos', url: '/database/skill-mod-combos/' }
 ];
+
+// Extract unique specializations for the filter
+const specializations = [...new Set(skillMods.map(m => m.specialization))];
+
+// Helper to assign a color class based on specialization
+const getSpecClass = (spec: string) => {
+  const s = spec.toLowerCase();
+  if (s.includes('demolitionist')) return 'tag--demolitionist';
+  if (s.includes('tech operator')) return 'tag--tech';
+  if (s.includes('bulwark')) return 'tag--bulwark';
+  if (s.includes('vanguard')) return 'tag--vanguard';
+  if (s.includes('medic')) return 'tag--medic';
+  return '';
+};
 ---
 
 <BaseLayout title={title} description={description} breadcrumbs={breadcrumbs}>
@@ -16,9 +31,174 @@ const breadcrumbs = [
     <Breadcrumbs items={breadcrumbs} />
     <SectionTag label="Database" />
     <h1 class="heading-accent">Skill Mod Combos</h1>
-    
-    <div class="prose">
-      <p>This is a placeholder for the Skill Mod Combos database. Tables and data will be added here soon.</p>
+    <p style="color:var(--ink-muted);margin-bottom:var(--sp-6);">
+      Browse the complete list of Skill Mod Combos, including 2-piece and 3-piece bonuses tailored for each specialization.
+    </p>
+
+    <div class="db-filters">
+      <div class="filter-group" id="filter-spec">
+        <span class="filter-label">Specialization:</span>
+        <div class="filter-bar">
+          <button class="filter-btn is-active" data-filter="all">All</button>
+          {specializations.map(s => <button class="filter-btn" data-filter={s}>{s}</button>)}
+        </div>
+      </div>
+    </div>
+
+    <div class="db-grid" id="combos-grid">
+      {skillMods.map((mod) => (
+        <article class="db-card" data-spec={mod.specialization}>
+          <div class="db-card__header">
+            <h2 class="db-card__title">{mod.name}</h2>
+            <span class={`tag ${getSpecClass(mod.specialization)}`}>{mod.specialization}</span>
+          </div>
+          
+          <div class="db-card__body">
+            <div class="bonus-group">
+              <span class="bonus-label">2-Piece Bonus</span>
+              <p class="bonus-text">{mod.bonus2}</p>
+            </div>
+            
+            <div class="bonus-group">
+              <span class="bonus-label">3-Piece Bonus</span>
+              <p class="bonus-text">{mod.bonus3}</p>
+            </div>
+          </div>
+        </article>
+      ))}
     </div>
   </div>
 </BaseLayout>
+
+<style>
+  .db-filters {
+    display: flex;
+    flex-direction: column;
+    gap: var(--sp-4);
+    margin-bottom: var(--sp-8);
+  }
+
+  .filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--sp-2);
+  }
+
+  .filter-label {
+    font-size: var(--text-sm);
+    font-weight: 600;
+    color: var(--ink-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .db-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--sp-6);
+  }
+
+  @media (min-width: 768px) {
+    .db-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .db-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .db-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--border-radius);
+    padding: var(--sp-5);
+    display: flex;
+    flex-direction: column;
+    gap: var(--sp-4);
+    transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+  }
+
+  .db-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+
+  .db-card__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: var(--sp-4);
+    border-bottom: 1px solid var(--border);
+    padding-bottom: var(--sp-4);
+  }
+
+  .db-card__title {
+    font-size: var(--text-xl);
+    font-weight: 700;
+    margin: 0;
+    color: var(--ink);
+  }
+
+  .db-card__body {
+    display: flex;
+    flex-direction: column;
+    gap: var(--sp-4);
+  }
+
+  .bonus-group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--sp-1);
+    background: var(--bg);
+    padding: var(--sp-3);
+    border-radius: var(--border-radius);
+    border-left: 3px solid var(--accent);
+  }
+
+  .bonus-label {
+    font-size: var(--text-xs);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--accent);
+  }
+
+  .bonus-text {
+    font-size: var(--text-sm);
+    line-height: 1.5;
+    margin: 0;
+    color: var(--ink);
+  }
+</style>
+
+<script>
+  let currentSpec = 'all';
+
+  const filterSpecBar = document.getElementById('filter-spec');
+  const grid = document.getElementById('combos-grid');
+
+  const updateFilters = () => {
+    requestAnimationFrame(() => {
+      grid.querySelectorAll('article').forEach(card => {
+        const el = card as HTMLElement;
+        const matchesSpec = currentSpec === 'all' || el.dataset.spec === currentSpec;
+        el.style.display = matchesSpec ? '' : 'none';
+      });
+    });
+  };
+
+  if (filterSpecBar && grid) {
+    filterSpecBar.addEventListener('click', (e) => {
+      const btn = (e.target as HTMLElement).closest('.filter-btn');
+      if (!btn) return;
+      
+      filterSpecBar.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('is-active'));
+      btn.classList.add('is-active');
+      currentSpec = btn.getAttribute('data-filter') || 'all';
+      updateFilters();
+    });
+  }
+</script>

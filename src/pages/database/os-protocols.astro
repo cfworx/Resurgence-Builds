@@ -15,6 +15,10 @@ const breadcrumbs = [
 const getRarityClass = (rarity: string) => {
   return `rarity-${rarity.toLowerCase().replace(' ', '-')}`;
 };
+
+// Extract unique filter values
+const rarities = [...new Set(osProtocols.map(p => p.rarity))];
+const attr1s = [...new Set(osProtocols.map(p => p.attr1))];
 ---
 
 <BaseLayout title={title} description={description} breadcrumbs={breadcrumbs}>
@@ -22,13 +26,30 @@ const getRarityClass = (rarity: string) => {
     <Breadcrumbs items={breadcrumbs} />
     <SectionTag label="Database" />
     <h1 class="heading-accent">OS Protocols</h1>
-    <p style="color:var(--ink-muted);margin-bottom:var(--sp-8);">
+    <p style="color:var(--ink-muted);margin-bottom:var(--sp-6);">
       Browse the complete list of OS Protocols, including their talents, main stats, and attributes.
     </p>
 
-    <div class="db-grid">
+    <div class="db-filters">
+      <div class="filter-group" id="filter-rarity">
+        <span class="filter-label">Rarity:</span>
+        <div class="filter-bar">
+          <button class="filter-btn is-active" data-filter="all">All</button>
+          {rarities.map(r => <button class="filter-btn" data-filter={r}>{r}</button>)}
+        </div>
+      </div>
+      <div class="filter-group" id="filter-attr1">
+        <span class="filter-label">Primary Attribute:</span>
+        <div class="filter-bar">
+          <button class="filter-btn is-active" data-filter="all">All</button>
+          {attr1s.map(a => <button class="filter-btn" data-filter={a}>{a}</button>)}
+        </div>
+      </div>
+    </div>
+
+    <div class="db-grid" id="protocols-grid">
       {osProtocols.map((protocol) => (
-        <article class={`db-card db-card--${protocol.rarity.toLowerCase().replace(' ', '-')}`}>
+        <article class={`db-card db-card--${protocol.rarity.toLowerCase().replace(' ', '-')}`} data-rarity={protocol.rarity} data-attr1={protocol.attr1}>
           <div class="db-card__header">
             <div>
               <h2 class="db-card__title">{protocol.name}</h2>
@@ -71,6 +92,34 @@ const getRarityClass = (rarity: string) => {
 </BaseLayout>
 
 <style>
+  .db-filters {
+    display: flex;
+    flex-direction: column;
+    gap: var(--sp-4);
+    margin-bottom: var(--sp-8);
+  }
+
+  @media (min-width: 768px) {
+    .db-filters {
+      flex-direction: row;
+      gap: var(--sp-8);
+    }
+  }
+
+  .filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--sp-2);
+  }
+
+  .filter-label {
+    font-size: var(--text-sm);
+    font-weight: 600;
+    color: var(--ink-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
   .db-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -211,3 +260,46 @@ const getRarityClass = (rarity: string) => {
     border-bottom: none;
   }
 </style>
+
+<script>
+  let currentRarity = 'all';
+  let currentAttr1 = 'all';
+
+  const filterRarityBar = document.getElementById('filter-rarity');
+  const filterAttr1Bar = document.getElementById('filter-attr1');
+  const grid = document.getElementById('protocols-grid');
+
+  const updateFilters = () => {
+    requestAnimationFrame(() => {
+      grid.querySelectorAll('article').forEach(card => {
+        const el = card as HTMLElement;
+        const matchesRarity = currentRarity === 'all' || el.dataset.rarity === currentRarity;
+        const matchesAttr1 = currentAttr1 === 'all' || el.dataset.attr1 === currentAttr1;
+        
+        el.style.display = (matchesRarity && matchesAttr1) ? '' : 'none';
+      });
+    });
+  };
+
+  if (filterRarityBar && filterAttr1Bar && grid) {
+    filterRarityBar.addEventListener('click', (e) => {
+      const btn = (e.target as HTMLElement).closest('.filter-btn');
+      if (!btn) return;
+      
+      filterRarityBar.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('is-active'));
+      btn.classList.add('is-active');
+      currentRarity = btn.getAttribute('data-filter') || 'all';
+      updateFilters();
+    });
+
+    filterAttr1Bar.addEventListener('click', (e) => {
+      const btn = (e.target as HTMLElement).closest('.filter-btn');
+      if (!btn) return;
+      
+      filterAttr1Bar.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('is-active'));
+      btn.classList.add('is-active');
+      currentAttr1 = btn.getAttribute('data-filter') || 'all';
+      updateFilters();
+    });
+  }
+</script>

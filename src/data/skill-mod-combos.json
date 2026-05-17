@@ -1,12 +1,611 @@
 [
-  {"id":"smc-1","comboSetName":"Explosive Ordinance","specialization":"Demolitionist","twoPieceBonus":"+15% Explosion Damage","threePieceBonus":"Grenades apply burn status for 5 seconds"},
-  {"id":"smc-2","comboSetName":"Precision Strike","specialization":"Demolitionist","twoPieceBonus":"+10% Skill Damage","threePieceBonus":"Mortar turret fires 2 rounds per volley"},
-  {"id":"smc-3","comboSetName":"Neural Network","specialization":"Tech Operator","twoPieceBonus":"+12% Skill Haste","threePieceBonus":"Deployed hive gains +25% radius"},
-  {"id":"smc-4","comboSetName":"Overload Circuit","specialization":"Tech Operator","twoPieceBonus":"+10% Skill Duration","threePieceBonus":"EMP pulse chains to 2 additional targets"},
-  {"id":"smc-5","comboSetName":"Iron Wall","specialization":"Bulwark","twoPieceBonus":"+15% Shield Health","threePieceBonus":"Blocking damage regenerates 3% shield per second"},
-  {"id":"smc-6","comboSetName":"Fortress Protocol","specialization":"Bulwark","twoPieceBonus":"+10% Armor","threePieceBonus":"Shield bash staggers elites for 2 seconds"},
-  {"id":"smc-7","comboSetName":"Spearhead","specialization":"Vanguard","twoPieceBonus":"+12% Weapon Damage while moving","threePieceBonus":"Sprinting grants 10% bonus armor for 5 seconds"},
-  {"id":"smc-8","comboSetName":"Blitz Tactics","specialization":"Vanguard","twoPieceBonus":"+8% Movement Speed","threePieceBonus":"Cover-to-cover moves grant 20% weapon damage for 3 seconds"},
-  {"id":"smc-9","comboSetName":"Triage System","specialization":"Field Medic","twoPieceBonus":"+15% Repair Skills","threePieceBonus":"Healing an ally boosts their damage by 8% for 10 seconds"},
-  {"id":"smc-10","comboSetName":"Revive Protocol","specialization":"Field Medic","twoPieceBonus":"+10% Incoming Repairs","threePieceBonus":"Reviver hive activates 30% faster"}
+  {
+    "id": "smc-1",
+    "name": "Cooling System",
+    "specialization": "Demolitionist",
+    "bonus2": "Skill Health+[4.0%~8.0%]",
+    "bonus3": "Skill Critical Hits reduce Artillery Turret Cooldown by 1.20%. Talent Cooldown: 1 second."
+  },
+  {
+    "id": "smc-2",
+    "name": "Area Suppression",
+    "specialization": "Demolitionist",
+    "bonus2": "Armor+[4.7%~9.3%]",
+    "bonus3": "Artillery Turret hits on up to 1 enemies have a 50% chance of granting +2% Skill Critical Damage for 10 second(s), up to 5 stack(s). Hits on more than 1 enemies have a guaranteed chance of granting the bonus."
+  },
+  {
+    "id": "smc-3",
+    "name": "Frag Grenades",
+    "specialization": "Demolitionist",
+    "bonus2": "Max Health+[4.0%~8.0%]",
+    "bonus3": "Artillery Turret damage grants +1% Skill Multi-Shot Chance for 10 seconds, up to 5 stacks."
+  },
+  {
+    "id": "smc-4",
+    "name": "Cooling Device",
+    "specialization": "Demolitionist",
+    "bonus2": "Skill Health+[4.0%~8.0%]",
+    "bonus3": "Explosive Seeker Mine Critical Hits reduce Explosive Seeker Mine Cooldown by 10%. Talent Cooldown: 3 seconds."
+  },
+  {
+    "id": "smc-5",
+    "name": "Applied Demolitions",
+    "specialization": "Demolitionist",
+    "bonus2": "Armor+[4.7%~9.3%]",
+    "bonus3": "Explosive Seeker Mine hits on up to 1 enemies grant +3.20% Skill Critical Damage for 20 second(s), up to 3 stack(s)."
+  },
+  {
+    "id": "smc-6",
+    "name": "Fragmentation Charge",
+    "specialization": "Demolitionist",
+    "bonus2": "Max Health+[4.0%~8.0%]",
+    "bonus3": "Explosive Seeker Mine hits grant +6.40% Skill Multi-Shot Chance for 10 seconds."
+  },
+  {
+    "id": "smc-7",
+    "name": "Fire Support",
+    "specialization": "Demolitionist",
+    "bonus2": "Skill Health+[4.0%~8.0%]",
+    "bonus3": "Skill Critical Hits grant +0.30% Signature Ability Charge. Talent Cooldown: 1 second."
+  },
+  {
+    "id": "smc-8",
+    "name": "Airburst",
+    "specialization": "Demolitionist",
+    "bonus2": "Armor+[4.7%~9.3%]",
+    "bonus3": "M32A1 Grenade Launcher hits on up to 1 enemies grant +6% Skill Critical Damage until the next M32A1 Grenade Launcher hit."
+  },
+  {
+    "id": "smc-9",
+    "name": "Concentrated Fire",
+    "specialization": "Demolitionist",
+    "bonus2": "Max Health+[4.0%~8.0%]",
+    "bonus3": "Dealing 5 M32A1 Grenade Launcher hits in 3 seconds grants +14.40% Skill Intensity for 15 seconds."
+  },
+  {
+    "id": "smc-10",
+    "name": "Shaped Charge",
+    "specialization": "Demolitionist",
+    "bonus2": "Armor+[4.7%~9.3%]",
+    "bonus3": "Artillery Turret hits on enemies afflicted by Bleed or Vulnerable grant +1.44% Firepower for 10 seconds, up to 5 stacks."
+  },
+  {
+    "id": "smc-11",
+    "name": "Optimized",
+    "specialization": "Demolitionist",
+    "bonus2": "Rate of Fire+[4.0%~8.0%]",
+    "bonus3": "Grants +8% Artillery Turret Rate of Fire. Artillery Turret hits on up to 2 enemies grant +0.50 second(s) to Artillery Turret duration (capped at 6 seconds)."
+  },
+  {
+    "id": "smc-12",
+    "name": "Enhanced Fire Control",
+    "specialization": "Demolitionist",
+    "bonus2": "Max Health+[4.0%~8.0%]",
+    "bonus3": "Artillery Turret hits grant +1.20% Weapon Critical Hit Chance for 10 seconds, up to 5 stacks."
+  },
+  {
+    "id": "smc-13",
+    "name": "Multi-Directional Charge",
+    "specialization": "Demolitionist",
+    "bonus2": "Armor+[4.7%~9.3%]",
+    "bonus3": "Explosive Seeker Mine hits on enemies afflicted by Bleed or Vulnerable apply the same debuff to all enemies within 10 meter(s) and grant +7.20% Firepower for 10 second(s)."
+  },
+  {
+    "id": "smc-14",
+    "name": "Area Denial",
+    "specialization": "Demolitionist",
+    "bonus2": "Rate of Fire+[4.0%~8.0%]",
+    "bonus3": "Grants +8.60% Explosive Seeker Mine Radius. Explosive Seeker Mine hits grant +1.60 second(s) to the duration of deployed Artillery Turrets."
+  },
+  {
+    "id": "smc-15",
+    "name": "Potent Composition",
+    "specialization": "Demolitionist",
+    "bonus2": "Max Health+[4.0%~8.0%]",
+    "bonus3": "Explosive Seeker Mine hits grant +7.20% Weapon Critical Hit Chance for 10 seconds. Talent Cooldown: 1 second."
+  },
+  {
+    "id": "smc-16",
+    "name": "Field Mortar",
+    "specialization": "Demolitionist",
+    "bonus2": "Armor+[4.7%~9.3%]",
+    "bonus3": "Increases 9.60% Weapon Damage to enemies hit by M32A1 Grenade Launcher for 20s and extends the duration of Artillery Turret by 2s."
+  },
+  {
+    "id": "smc-17",
+    "name": "Thermobaric Grenades",
+    "specialization": "Demolitionist",
+    "bonus2": "Rate of Fire+[4.0%~8.0%]",
+    "bonus3": "Reduces Grenades in Grenade Launcher to 1, expands the Explosion Radius by 100% and increases damage by 460%."
+  },
+  {
+    "id": "smc-18",
+    "name": "Precision Fires",
+    "specialization": "Demolitionist",
+    "bonus2": "Max Health+[4.0%~8.0%]",
+    "bonus3": "Landing 3 M32A1 Grenade Launcher hits grants +8% Weapon Critical Hit Chance for 10 second(s)."
+  },
+  {
+    "id": "smc-19",
+    "name": "Supercharged",
+    "specialization": "Tech Operator",
+    "bonus2": "Skill Cooldown Recovery-[2.0%~4.0%]",
+    "bonus3": "Deploying a Striker Drone restores Health equal to 5.60% Missing Health. Also grants +3% Movement Speed and +1% Skill Cooldown Recovery for 20 second(s), up to 3 stack(s)."
+  },
+  {
+    "id": "smc-20",
+    "name": "Thermite Charge",
+    "specialization": "Tech Operator",
+    "bonus2": "Skill Health+[4.0%~8.0%]",
+    "bonus3": "Striker Drone Critical Hits have a 5% chance of exploding, dealing 300% damage."
+  },
+  {
+    "id": "smc-21",
+    "name": "Extermination",
+    "specialization": "Tech Operator",
+    "bonus2": "Skill Health+[4.0%~8.0%]",
+    "bonus3": "Hitting enemies who have less than 50% Health grants +9.60% Striker Drone Multi-Shot Chance."
+  },
+  {
+    "id": "smc-22",
+    "name": "Precise Suppression",
+    "specialization": "Tech Operator",
+    "bonus2": "Skill Cooldown Recovery-[2.0%~4.0%]",
+    "bonus3": "Striker Drone hits on Drone Locked enemies have a 5% chance of granting 4.80% Damage Reduction from the targets for 10 second(s), up to 3 stack(s). Probability increases to 15% for targets who are at least 20 meter(s) away."
+  },
+  {
+    "id": "smc-23",
+    "name": "Stabilized Flight",
+    "specialization": "Tech Operator",
+    "bonus2": "Skill Health+[4.0%~8.0%]",
+    "bonus3": "Applying Drone Lock grants +6% Skill Critical Hit Chance for 20 seconds."
+  },
+  {
+    "id": "smc-24",
+    "name": "Area Sweep",
+    "specialization": "Tech Operator",
+    "bonus2": "Skill Health+[4.0%~8.0%]",
+    "bonus3": "Killing Drone Locked enemies grants +4.80% Skill Multi-Shot Chance for 10 seconds."
+  },
+  {
+    "id": "smc-25",
+    "name": "Supply Line",
+    "specialization": "Tech Operator",
+    "bonus2": "Skill Cooldown Recovery-[2.0%~4.0%]",
+    "bonus3": "Within 30 second(s) of activating Drone Overload, Striker Drone hits have a 5% chance of restoring 2% Max Health. Probability increases to 10% for targets at least 20m away."
+  },
+  {
+    "id": "smc-26",
+    "name": "Optimized Targeting",
+    "specialization": "Tech Operator",
+    "bonus2": "Skill Cooldown Recovery-[2.0%~4.0%]",
+    "bonus3": "Striker Drone hits on Drone Locked enemies grant bonus effect based on target distance."
+  },
+  {
+    "id": "smc-27",
+    "name": "Lethal Sweep",
+    "specialization": "Tech Operator",
+    "bonus2": "Skill Health+[4.0%~8.0%]",
+    "bonus3": "Striker Drone Multi-Shot hits grant bonus Skill Critical Hit Chance stacks."
+  },
+  {
+    "id": "smc-28",
+    "name": "Close Protection",
+    "specialization": "Tech Operator",
+    "bonus2": "Skill Cooldown Recovery-[2.0%~4.0%]",
+    "bonus3": "Striker Drone hits on enemies within 10 meter(s) grant bonus Damage Reduction."
+  },
+  {
+    "id": "smc-29",
+    "name": "Team Backup",
+    "specialization": "Tech Operator",
+    "bonus2": "Skill Health+[4.0%~8.0%]",
+    "bonus3": "Striker Drone hits on enemies grant bonus effects to nearby allies."
+  },
+  {
+    "id": "smc-30",
+    "name": "EMCAT",
+    "specialization": "Tech Operator",
+    "bonus2": "Skill Health+[4.0%~8.0%]",
+    "bonus3": "Striker Drone Critical Hits apply Disoriented to target enemies."
+  },
+  {
+    "id": "smc-31",
+    "name": "Applied Treatment",
+    "specialization": "Tech Operator",
+    "bonus2": "Skill Cooldown Recovery-[2.0%~4.0%]",
+    "bonus3": "Deploying Striker Drone restores Health to nearby allies."
+  },
+  {
+    "id": "smc-32",
+    "name": "Performance Enhancer",
+    "specialization": "Tech Operator",
+    "bonus2": "Skill Health+[4.0%~8.0%]",
+    "bonus3": "Striker Drone kills grant bonus Skill Intensity stacks to the player."
+  },
+  {
+    "id": "smc-33",
+    "name": "Accelerated Healing",
+    "specialization": "Tech Operator",
+    "bonus2": "Skill Cooldown Recovery-[2.0%~4.0%]",
+    "bonus3": "Striker Drone hits restore small amounts of Health to the player."
+  },
+  {
+    "id": "smc-34",
+    "name": "Support Pattern",
+    "specialization": "Tech Operator",
+    "bonus2": "Skill Cooldown Recovery-[2.0%~4.0%]",
+    "bonus3": "Striker Drone hits grant bonus Signature Ability Charge to the team."
+  },
+  {
+    "id": "smc-35",
+    "name": "Hazardous Area",
+    "specialization": "Tech Operator",
+    "bonus2": "Skill Health+[4.0%~8.0%]",
+    "bonus3": "Striker Drone creates hazardous area on enemy kills, applying status effects to nearby enemies."
+  },
+  {
+    "id": "smc-36",
+    "name": "Mutual Assist",
+    "specialization": "Tech Operator",
+    "bonus2": "Skill Cooldown Recovery-[2.0%~4.0%]",
+    "bonus3": "Striker Drone assists allies by providing bonus effects when they take damage."
+  },
+  {
+    "id": "smc-37",
+    "name": "Bulwark Shield",
+    "specialization": "Bulwark",
+    "bonus2": "Damage Reduction+[2.0%~4.0%]",
+    "bonus3": "Deploying Ballistic Shield grants bonus Armor and Toughness stacks."
+  },
+  {
+    "id": "smc-38",
+    "name": "Protective Shield",
+    "specialization": "Bulwark",
+    "bonus2": "Damage Reduction+[2.0%~4.0%]",
+    "bonus3": "Ballistic Shield absorbs bonus damage and grants resistance to status effects."
+  },
+  {
+    "id": "smc-39",
+    "name": "Shield Bash",
+    "specialization": "Bulwark",
+    "bonus2": "Damage Reduction+[2.0%~4.0%]",
+    "bonus3": "Shield Bash deals bonus damage and applies Disoriented to hit enemies."
+  },
+  {
+    "id": "smc-40",
+    "name": "Cover Advance",
+    "specialization": "Bulwark",
+    "bonus2": "Damage Reduction+[2.0%~4.0%]",
+    "bonus3": "Moving while using Ballistic Shield grants bonus Movement Speed and reduces incoming damage."
+  },
+  {
+    "id": "smc-41",
+    "name": "Impact Resistance",
+    "specialization": "Bulwark",
+    "bonus2": "Damage Reduction+[2.0%~4.0%]",
+    "bonus3": "Ballistic Shield provides bonus protection against explosive damage and staggers."
+  },
+  {
+    "id": "smc-42",
+    "name": "Counter Attack",
+    "specialization": "Bulwark",
+    "bonus2": "Damage Reduction+[2.0%~4.0%]",
+    "bonus3": "Taking damage while Ballistic Shield is deployed grants bonus Weapon Damage."
+  },
+  {
+    "id": "smc-43",
+    "name": "Tactical Defense",
+    "specialization": "Bulwark",
+    "bonus2": "Damage Reduction+[2.0%~4.0%]",
+    "bonus3": "Deploying Ballistic Shield reduces Skill Cooldowns and grants bonus Signature Ability Charge."
+  },
+  {
+    "id": "smc-44",
+    "name": "Fortified Position",
+    "specialization": "Bulwark",
+    "bonus2": "Damage Reduction+[2.0%~4.0%]",
+    "bonus3": "Stationary Ballistic Shield grants increasing Damage Reduction stacks over time."
+  },
+  {
+    "id": "smc-45",
+    "name": "Reactive Plating",
+    "specialization": "Bulwark",
+    "bonus2": "Damage Reduction+[2.0%~4.0%]",
+    "bonus3": "Ballistic Shield absorbs bonus elemental damage and converts it to Armor."
+  },
+  {
+    "id": "smc-46",
+    "name": "Vanguard Push",
+    "specialization": "Bulwark",
+    "bonus2": "Damage Reduction+[2.0%~4.0%]",
+    "bonus3": "Shield Bash knocks back enemies and grants bonus Movement Speed to the player."
+  },
+  {
+    "id": "smc-47",
+    "name": "Guardian Protocol",
+    "specialization": "Bulwark",
+    "bonus2": "Damage Reduction+[2.0%~4.0%]",
+    "bonus3": "Ballistic Shield protects nearby allies, reducing damage they take while the shield is deployed."
+  },
+  {
+    "id": "smc-48",
+    "name": "Shield Mastery",
+    "specialization": "Bulwark",
+    "bonus2": "Damage Reduction+[2.0%~4.0%]",
+    "bonus3": "Increases Ballistic Shield durability and reduces its deployment cooldown."
+  },
+  {
+    "id": "smc-49",
+    "name": "Breach Protocol",
+    "specialization": "Bulwark",
+    "bonus2": "Damage Reduction+[2.0%~4.0%]",
+    "bonus3": "Deploying Ballistic Shield and immediately firing grants bonus Weapon Damage."
+  },
+  {
+    "id": "smc-50",
+    "name": "Shock Absorber",
+    "specialization": "Bulwark",
+    "bonus2": "Damage Reduction+[2.0%~4.0%]",
+    "bonus3": "Ballistic Shield absorbs and stores damage, releasing it as bonus Weapon Damage on next attack."
+  },
+  {
+    "id": "smc-51",
+    "name": "Iron Curtain",
+    "specialization": "Bulwark",
+    "bonus2": "Damage Reduction+[2.0%~4.0%]",
+    "bonus3": "Ballistic Shield grants additional protection to the player's flanks while deployed."
+  },
+  {
+    "id": "smc-52",
+    "name": "Intimidation",
+    "specialization": "Bulwark",
+    "bonus2": "Damage Reduction+[2.0%~4.0%]",
+    "bonus3": "Enemies who attack the Ballistic Shield have reduced Weapon Damage for a duration."
+  },
+  {
+    "id": "smc-53",
+    "name": "Sentinel",
+    "specialization": "Bulwark",
+    "bonus2": "Damage Reduction+[2.0%~4.0%]",
+    "bonus3": "Ballistic Shield provides bonus protection in a wider arc, covering flanking attacks."
+  },
+  {
+    "id": "smc-54",
+    "name": "Siege Mentality",
+    "specialization": "Bulwark",
+    "bonus2": "Damage Reduction+[2.0%~4.0%]",
+    "bonus3": "Prolonged Ballistic Shield deployment grants increasing Weapon Damage stacks."
+  },
+  {
+    "id": "smc-55",
+    "name": "Effective Deterrent",
+    "specialization": "Vanguard",
+    "bonus2": "Skill Cooldown Recovery-[2.0%~4.0%]",
+    "bonus3": "While behind a Smart Cover, grants +1% Damage, up to 3 stack(s). Reaching maximum stacks grants +3% Signature Ability Charge Efficiency. This bonus resets upon leaving the Smart Cover."
+  },
+  {
+    "id": "smc-56",
+    "name": "Pulse Enhancement",
+    "specialization": "Vanguard",
+    "bonus2": "Damage Reduction+[2.0%~4.0%]",
+    "bonus3": "Deploying Scanning Pulse grants Pulsed allies Weapon Critical Hit Chance equal to 3.60% Engineering for 10 second(s)."
+  },
+  {
+    "id": "smc-57",
+    "name": "Scout",
+    "specialization": "Vanguard",
+    "bonus2": "Signature Ability Charge Efficiency+[4.0%~8.0%]",
+    "bonus3": "Pulsed enemies grant +8 Signature Ability Charge to the ally team."
+  },
+  {
+    "id": "smc-58",
+    "name": "Compound Effect",
+    "specialization": "Vanguard",
+    "bonus2": "Skill Cooldown Recovery-[2.0%~4.0%]",
+    "bonus3": "Deploying Scanning Pulse while Fortified reduces the Skill Cooldown by 1.50 second(s)."
+  },
+  {
+    "id": "smc-59",
+    "name": "Bugle Call",
+    "specialization": "Vanguard",
+    "bonus2": "Damage Reduction+[2.0%~4.0%]",
+    "bonus3": "Deploying Tactical Link grants +14.40% Rate of Fire, Damage Reduction, and Movement Speed for 15 second(s)."
+  },
+  {
+    "id": "smc-60",
+    "name": "Tactical Reinforcement",
+    "specialization": "Vanguard",
+    "bonus2": "Damage Reduction+[2.0%~4.0%]",
+    "bonus3": "Increases Signature Ability Charge Efficiency of players applied with Tactical Link by 28.80%."
+  },
+  {
+    "id": "smc-61",
+    "name": "Liquid Nitrogen",
+    "specialization": "Vanguard",
+    "bonus2": "Skill Cooldown Recovery-[2.0%~4.0%]",
+    "bonus3": "Players with self-applied Tactical Link effect have a 10% chance to reduce all skill cooldowns by 0.80 seconds on each enemy hit, with a cooldown of 5 seconds between each trigger."
+  },
+  {
+    "id": "smc-62",
+    "name": "Smart Cover Defense",
+    "specialization": "Vanguard",
+    "bonus2": "Damage Reduction+[2.0%~4.0%]",
+    "bonus3": "Smart Cover provides bonus Damage Reduction and Weapon Damage to allies using it."
+  },
+  {
+    "id": "smc-63",
+    "name": "Advanced Intel",
+    "specialization": "Vanguard",
+    "bonus2": "Skill Cooldown Recovery-[2.0%~4.0%]",
+    "bonus3": "Scanning Pulse reveals additional enemy weaknesses, granting bonus Weapon Critical Hit Chance."
+  },
+  {
+    "id": "smc-64",
+    "name": "Coordinated Strike",
+    "specialization": "Vanguard",
+    "bonus2": "Damage Reduction+[2.0%~4.0%]",
+    "bonus3": "Tactical Link grants coordinated attack bonuses when multiple allies attack the same target."
+  },
+  {
+    "id": "smc-65",
+    "name": "Suppression Field",
+    "specialization": "Vanguard",
+    "bonus2": "Damage Reduction+[2.0%~4.0%]",
+    "bonus3": "Smart Cover generates a suppression field that slows enemies entering cover range."
+  },
+  {
+    "id": "smc-66",
+    "name": "Overwatch",
+    "specialization": "Vanguard",
+    "bonus2": "Skill Cooldown Recovery-[2.0%~4.0%]",
+    "bonus3": "Scanning Pulse marks enemies for allies, granting bonus Weapon Damage against marked targets."
+  },
+  {
+    "id": "smc-67",
+    "name": "Link Booster",
+    "specialization": "Vanguard",
+    "bonus2": "Damage Reduction+[2.0%~4.0%]",
+    "bonus3": "Tactical Link bonus effects are enhanced and have extended duration."
+  },
+  {
+    "id": "smc-68",
+    "name": "Fortification",
+    "specialization": "Vanguard",
+    "bonus2": "Damage Reduction+[2.0%~4.0%]",
+    "bonus3": "Smart Cover deployment grants Fortified status to allies within range."
+  },
+  {
+    "id": "smc-69",
+    "name": "Signal Disruption",
+    "specialization": "Vanguard",
+    "bonus2": "Skill Cooldown Recovery-[2.0%~4.0%]",
+    "bonus3": "Scanning Pulse disrupts enemy skills and electronics on Pulsed targets."
+  },
+  {
+    "id": "smc-70",
+    "name": "Armor Strengthening",
+    "specialization": "Field Medic",
+    "bonus2": "Skill Duration+[3.2%~6.4%]",
+    "bonus3": "Grants +32.00% Armor while located within 20 meter(s) of a Chemical Trap."
+  },
+  {
+    "id": "smc-71",
+    "name": "Lightweight",
+    "specialization": "Field Medic",
+    "bonus2": "Damage Reduction+[2.0%~4.0%]",
+    "bonus3": "Chemical Trap can be deployed farther away. Hits on enemies inside Chemical Traps apply 1 stack(s) of Corrosive. Headshots apply 4 stacks instead. Talent Cooldown: 1.50 seconds."
+  },
+  {
+    "id": "smc-72",
+    "name": "Siphon",
+    "specialization": "Field Medic",
+    "bonus2": "Damage Reduction+[2.0%~4.0%]",
+    "bonus3": "Using a Chemical Trap to apply a stack of Corrosive has a 50% chance of restoring 4 Signature Ability Charge. Talent Cooldown: 0.50 seconds."
+  },
+  {
+    "id": "smc-73",
+    "name": "Acidic Effect",
+    "specialization": "Field Medic",
+    "bonus2": "Skill Intensity+[2.0%~4.0%]",
+    "bonus3": "When deploying Oxidizing Hive, you lose Health equal to 25% of your current Health but gain Extra Health equal to 35.00% of Max Health and 5% Armor for 20s. When Oxidizing Hive is attached to your backpack, it releases Micro Corrosive Drones to enemies within 15.00m every 1.60s."
+  },
+  {
+    "id": "smc-74",
+    "name": "Improved Formula",
+    "specialization": "Field Medic",
+    "bonus2": "Damage Reduction+[2.0%~4.0%]",
+    "bonus3": "If Oxidizing Hive is attached to your backpack and no enemy is hit by your weapon within 3s, hitting enemies with your weapon will trigger Oxidizing Hive to release 13 Mini Corrosive Drones flying towards the target and applying Corrosion to them."
+  },
+  {
+    "id": "smc-75",
+    "name": "Generative Formula",
+    "specialization": "Field Medic",
+    "bonus2": "Damage Reduction+[2.0%~4.0%]",
+    "bonus3": "While being assisted by the Oxidizing Hive, hits restore 8 Signature Ability Charge. Talent Cooldown: 2 seconds."
+  },
+  {
+    "id": "smc-76",
+    "name": "Feebleness",
+    "specialization": "Field Medic",
+    "bonus2": "Skill Critical Damage+[4.0%~8.0%]",
+    "bonus3": "Oxidizing Swarm hits inflict -12% Damage for 20 seconds. Killing an enemy within 20 meter(s) who is also afflicted by this debuff restores Health equal to 8% Missing Health for 20 second(s)."
+  },
+  {
+    "id": "smc-77",
+    "name": "Augmented Range",
+    "specialization": "Field Medic",
+    "bonus2": "Damage Reduction+[2.0%~4.0%]",
+    "bonus3": "Oxidizing Swarm can be thrown farther away. Oxidizing Swarm hits that are at least 20 meter(s) away inflict -14.40% Damage Reduction for 10 second(s)."
+  },
+  {
+    "id": "smc-78",
+    "name": "Harvest",
+    "specialization": "Field Medic",
+    "bonus2": "Damage Reduction+[2.0%~4.0%]",
+    "bonus3": "Oxidizing Swarm hits reduce Skill Cooldown by 2.40 seconds."
+  },
+  {
+    "id": "smc-79",
+    "name": "Detrimental Treatment",
+    "specialization": "Field Medic",
+    "bonus2": "Damage Reduction+[2.0%~4.0%]",
+    "bonus3": "Support Station deals damage to enemies who are within its radius. Damage is increased by 25% while located within the radius of a Support Station."
+  },
+  {
+    "id": "smc-80",
+    "name": "Auto Trauma Treatment",
+    "specialization": "Field Medic",
+    "bonus2": "Healing Intensity+[3.3%~6.7%]",
+    "bonus3": "Grants +6% Incoming Healing and automatically revives any member of the ally team who is downed within the radius of a Support Station."
+  },
+  {
+    "id": "smc-81",
+    "name": "Effective Triage",
+    "specialization": "Field Medic",
+    "bonus2": "Healing Intensity+[3.3%~6.7%]",
+    "bonus3": "Grants +40% Incoming Healing to any ally below 50% Health who is located within the radius of a Support Station."
+  },
+  {
+    "id": "smc-82",
+    "name": "Defensive Measures",
+    "specialization": "Field Medic",
+    "bonus2": "Damage Reduction+[2.0%~4.0%]",
+    "bonus3": "When Healing Hive is active, hitting enemies within 20m with weapons deals additional damage equal to 240% of your Toughness. Trigger Interval: 2s."
+  },
+  {
+    "id": "smc-83",
+    "name": "Buddy Treatment",
+    "specialization": "Field Medic",
+    "bonus2": "Healing Intensity+[3.3%~6.7%]",
+    "bonus3": "When using Healing Hive, if your and your teammate's Health is below 50%, increases by 2.00%. Using it on you deploys micro Mender Drones to your teammates within 2 meters, restore a small amount of Health if deployed (It won't grant buffs of Specialization Focus)."
+  },
+  {
+    "id": "smc-84",
+    "name": "Mutual Support",
+    "specialization": "Field Medic",
+    "bonus2": "Healing Intensity+[3.3%~6.7%]",
+    "bonus3": "While Healing Hive is deployed, grants +9.60% Skill Intensity when located within 20 meter(s) of an ally. While Healing Hive is deployed, grants +20% Movement Speed when located at least 20 meter(s) away from allies."
+  },
+  {
+    "id": "smc-85",
+    "name": "Aggressive Drones",
+    "specialization": "Field Medic",
+    "bonus2": "Damage Reduction+[2.0%~4.0%]",
+    "bonus3": "Instead of healing allies, Healing Swarm deals damage to enemies by releasing 16 nano-drones that target enemies every 1.50 second(s)."
+  },
+  {
+    "id": "smc-86",
+    "name": "Emergency Measures",
+    "specialization": "Field Medic",
+    "bonus2": "Healing Intensity+[3.3%~6.7%]",
+    "bonus3": "Healing Swarm heals allies over 10 seconds. When an ally's Health drops to 0 during the healing process, restores Health equal to 16% Max Health to them for 5 second(s)."
+  },
+  {
+    "id": "smc-87",
+    "name": "Doom Dealer",
+    "specialization": "Field Medic",
+    "bonus2": "Healing Intensity+[3.3%~6.7%]",
+    "bonus3": "For each ally healed by Healing Swarm, grants +1.20% Skill Intensity for 20 second(s), up to 16 stack(s)."
+  }
 ]
