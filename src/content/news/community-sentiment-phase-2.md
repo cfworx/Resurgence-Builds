@@ -8,6 +8,20 @@ tags: ["The Division Resurgence", "Community", "PC", "Phase 2", "Classified Ops 
 
 The Division Resurgence has had one of the busiest three-week stretches of its short live-service life. PC early access landed on April 28, Phase 2 of Season 1 went live on May 12, and the roadmap through summer is now official. Almost every conversation across Reddit, YouTube and Twitter today loops back to one of six themes. Here is where each one stands as of May 17, 2026, with sources you can click straight through to.
 
+---
+
+## Table of Contents
+
+1. [PC has been quietly winning people over](#1-pc-has-been-quietly-winning-people-over)
+2. [Higher frame rates are real, but they are device-dependent](#2-higher-frame-rates-are-real-but-they-are-device-dependent)
+3. [Classified Ops Pass 1.2 is generous on paper, polarizing in practice](#3-classified-ops-pass-12-is-generous-on-paper-polarizing-in-practice)
+4. [Missing-purchase and disappearing-gear reports have not gone away](#4-missing-purchase-and-disappearing-gear-reports-have-not-gone-away)
+5. [Dev communication has improved, but the cadence is the next ask](#5-dev-communication-has-improved-but-the-cadence-is-the-next-ask)
+6. [What's coming next — and what is locked in](#6-whats-coming-next--and-what-is-locked-in)
+7. [Where the conversation goes next](#where-the-conversation-goes-next)
+
+---
+
 ## 1. PC has been quietly winning people over
 
 Resurgence shadow-dropped on Ubisoft Connect on April 28 as "PC Early Access," with a full PC launch reaffirmed for Season 2 in August ([Ubisoft PC Early Access & Roadmap](https://www.ubisoft.com/en-us/game/the-division/resurgence/news-updates/5LqRsprrdgtEnUmStmBi0d/pc-early-access-game-roadmap), April 28, 2026; [TechRadar](https://www.techradar.com/gaming/free-to-play-mobile-game-the-division-resurgence-is-launching-on-pc-in-august-as-ubisoft-shares-new-roadmap-details-but-you-can-play-it-right-now), May 1, 2026). The Ubisoft devs themselves framed the rollout as a "we're still trying to figure out a lot of things" testing window during the launch-day stream ([RogueGold sponsored launch stream](https://www.youtube.com/watch?v=DzcW3j6rApw), April 28, 2026).
@@ -73,7 +87,7 @@ Cadence going forward: a new season every four months, with phases every six wee
 
 ## Where the conversation goes next
 
-TThe next 30 days will decide a lot. If the missing-gear category gets a named fix in a Phase 2 hotfix, sentiment lands well ahead of June 23. If the Phase 3 pass ships with a cleaner free-Exotic roll path than Strawberry Milkshake had, the "early monetization" critique softens.
+The next 30 days will decide a lot. If the missing-gear category gets a named fix in a Phase 2 hotfix, sentiment lands well ahead of June 23. If the Phase 3 pass ships with a cleaner free-Exotic roll path than Strawberry Milkshake had, the "early monetization" critique softens.
 
 On PC specifically, the early-access build is already in a better place than I expected. I'm running it at 180 FPS on High settings without issues, and the uncapped framerate option in Phase 2 ([DJ Tickle — Phase 2 walkthrough](https://www.youtube.com/watch?v=w-Mkdy4UGF8)) is the single biggest reason the PC experience feels good right now. The real test is the August Season 2 launch out of early access — if Ubisoft keeps the uncapped framerate option, expands distribution beyond Ubisoft Connect, and carries cross-progression cleanly, the player base widens meaningfully heading into the winter story expansion.
 
@@ -84,35 +98,25 @@ We will track all of it as it lands.
 
 ---
 
-## Sources
-
-**Official Ubisoft**
-- [Phase 2 Starts Now — What's New](https://www.ubisoft.com/en-us/game/the-division/resurgence/news-updates/3ygDDXxg6dv6aQD5MJvbKv/phase-2-starts-now-whats-new) (May 12, 2026)
-- [PC Early Access & Game Roadmap](https://www.ubisoft.com/en-us/game/the-division/resurgence/news-updates/5LqRsprrdgtEnUmStmBi0d/pc-early-access-game-roadmap) (April 28, 2026)
-- [Ubisoft News — The Division Resurgence Roadmap](https://news.ubisoft.com/en-us/article/9ZzMWcx5ADnaxAiOO3e0w/the-division-resurgence-roadmap-pc-launch-story-expansion-and-more) (April 28, 2026)
-- [@TheDivMobile — Strawberry Milkshake reveal](https://x.com/TheDivMobile/status/2054954901361524773) (May 14, 2026)
-- [Season 1.2 Live (official YouTube)](https://www.youtube.com/watch?v=48Uq6iM6qSA) (May 12, 2026)
-
-**Press**
-- [TechRadar — PC launch in August](https://www.techradar.com/gaming/free-to-play-mobile-game-the-division-resurgence-is-launching-on-pc-in-august-as-ubisoft-shares-new-roadmap-details-but-you-can-play-it-right-now) (May 1, 2026)
-
-**Reddit**
-- [u/JokerUnique — Developer Stream Summary](https://www.reddit.com/r/thedivisionresurgence/comments/1sos0u8/developer_stream_summary/) (April 19, 2026)
-- [u/TDResurgence — Share your questions for the live stream](https://www.reddit.com/r/thedivisionresurgence/comments/1sl9h12/share_your_questions_for_our_upcoming_live_stream/)
-- [u/LaClown-ua — Weapon disappearing from inventory](https://www.reddit.com/r/thedivisionresurgence/comments/1snm931/new_bug_weapon_disappearing_from_inventory/) (April 17, 2026)
-- [u/BelleskaTROn- — Logged back in to no weapons or gear](https://www.reddit.com/r/thedivisionresurgence/comments/1sa72za/logged_back_in_to_no_weapons_or_gear/)
-- [u/HiDefMusic — 60 FPS Very High debug menu](https://www.reddit.com/r/thedivisionresurgence/comments/1sdggia/60fps_very_high_settings_debug_menu_see/)
-
-**Creators**
-- [RogueGold — Strawberry Milkshake LMG breakdown](https://www.youtube.com/watch?v=DHIwHI15B2A) (May 13, 2026)
-- [RogueGold — PC shadow drop](https://www.youtube.com/watch?v=lvrE_xJeKfM) (April 28, 2026)
-- [RogueGold — PC launch dev stream](https://www.youtube.com/watch?v=DzcW3j6rApw) (April 28, 2026)
-- [DJ Tickle — Season 1.2 walkthrough](https://www.youtube.com/watch?v=w-Mkdy4UGF8) (May 13, 2026)
-- [Saiynergy — PC FPS uncap walkthrough](https://www.youtube.com/watch?v=80zYx7ig3DQ) (May 9, 2026)
-- [Top GamePlayz — 60 FPS Max settings](https://www.youtube.com/watch?v=MIyomnJpKyg) (May 13, 2026)
-- [Dragon's Breath — 60 FPS Ultra](https://www.youtube.com/watch?v=-MSXiEc44XE) (May 14, 2026)
-- [@RovenOP — roadmap recap](https://x.com/RovenOP/status/2049816677769154752) (April 30, 2026)
-
-**Community knowledge bases**
-- [The Division Resurgence Wiki — Hotfix tracker](https://www.thedivisionresurgence.wiki/release/the-division-resurgence-hotfix) (May 16, 2026)
-- [How To Fix Gear Lost After Disconnection (YouTube)](https://www.youtube.com/watch?v=RFi5EpprYXc) (April 17, 2026)
+**Sources [CONFIRMED]:**
+- Ubisoft (official), [Phase 2 Starts Now — What's New](https://www.ubisoft.com/en-us/game/the-division/resurgence/news-updates/3ygDDXxg6dv6aQD5MJvbKv/phase-2-starts-now-whats-new) (May 12, 2026)
+- Ubisoft (official), [PC Early Access & Game Roadmap](https://www.ubisoft.com/en-us/game/the-division/resurgence/news-updates/5LqRsprrdgtEnUmStmBi0d/pc-early-access-game-roadmap) (April 28, 2026)
+- Ubisoft News, [The Division Resurgence Roadmap](https://news.ubisoft.com/en-us/article/9ZzMWcx5ADnaxAiOO3e0w/the-division-resurgence-roadmap-pc-launch-story-expansion-and-more) (April 28, 2026)
+- @TheDivMobile, [Strawberry Milkshake reveal](https://x.com/TheDivMobile/status/2054954901361524773) (May 14, 2026)
+- Ubisoft (official YouTube), [Season 1.2 Live](https://www.youtube.com/watch?v=48Uq6iM6qSA) (May 12, 2026)
+- TechRadar, [PC launch in August](https://www.techradar.com/gaming/free-to-play-mobile-game-the-division-resurgence-is-launching-on-pc-in-august-as-ubisoft-shares-new-roadmap-details-but-you-can-play-it-right-now) (May 1, 2026)
+- u/JokerUnique, [Developer Stream Summary](https://www.reddit.com/r/thedivisionresurgence/comments/1sos0u8/developer_stream_summary/) (April 19, 2026)
+- u/TDResurgence, [Share your questions for the live stream](https://www.reddit.com/r/thedivisionresurgence/comments/1sl9h12/share_your_questions_for_our_upcoming_live_stream/)
+- u/LaClown-ua, [Weapon disappearing from inventory](https://www.reddit.com/r/thedivisionresurgence/comments/1snm931/new_bug_weapon_disappearing_from_inventory/) (April 17, 2026)
+- u/BelleskaTROn-, [Logged back in to no weapons or gear](https://www.reddit.com/r/thedivisionresurgence/comments/1sa72za/logged_back_in_to_no_weapons_or_gear/)
+- u/HiDefMusic, [60 FPS Very High debug menu](https://www.reddit.com/r/thedivisionresurgence/comments/1sdggia/60fps_very_high_settings_debug_menu_see/)
+- RogueGold (YouTube), [Strawberry Milkshake LMG breakdown](https://www.youtube.com/watch?v=DHIwHI15B2A) (May 13, 2026)
+- RogueGold (YouTube), [PC shadow drop](https://www.youtube.com/watch?v=lvrE_xJeKfM) (April 28, 2026)
+- RogueGold (YouTube), [PC launch dev stream](https://www.youtube.com/watch?v=DzcW3j6rApw) (April 28, 2026)
+- DJ Tickle (YouTube), [Season 1.2 walkthrough](https://www.youtube.com/watch?v=w-Mkdy4UGF8) (May 13, 2026)
+- Saiynergy (YouTube), [PC FPS uncap walkthrough](https://www.youtube.com/watch?v=80zYx7ig3DQ) (May 9, 2026)
+- Top GamePlayz (YouTube), [60 FPS Max settings](https://www.youtube.com/watch?v=MIyomnJpKyg) (May 13, 2026)
+- Dragon's Breath (YouTube), [60 FPS Ultra](https://www.youtube.com/watch?v=-MSXiEc44XE) (May 14, 2026)
+- @RovenOP, [roadmap recap](https://x.com/RovenOP/status/2049816677769154752) (April 30, 2026)
+- The Division Resurgence Wiki, [Hotfix tracker](https://www.thedivisionresurgence.wiki/release/the-division-resurgence-hotfix) (May 16, 2026)
+- Community (YouTube), [How To Fix Gear Lost After Disconnection](https://www.youtube.com/watch?v=RFi5EpprYXc) (April 17, 2026)
