@@ -12,13 +12,13 @@ export interface Props {
     tags?: string[];
   };
   breadcrumbs?: { name: string; url: string }[];
-  jsonLd?: Record<string, unknown>;
+  jsonLd?: Record<string, unknown> | Record<string, unknown>[];
 }
 
 const {
   title,
   description,
-  canonical = Astro.url.href,
+  canonical,
   ogType = 'website',
   ogImage = '/og-default.png',
   article,
@@ -29,6 +29,7 @@ const {
 const siteName = 'Resurgence Builds';
 const fullTitle = `${title} · ${siteName}`;
 const siteUrl = Astro.site?.toString().replace(/\/$/, '') || 'https://resurgencebuilds.com';
+const canonicalURL = canonical || new URL(Astro.url.pathname, siteUrl).toString();
 const ogImageUrl = ogImage.startsWith('http') ? ogImage : `${siteUrl}${ogImage}`;
 
 const breadcrumbLd = breadcrumbs.length > 0 ? {
@@ -58,14 +59,14 @@ const articleLd = article ? {
 <!-- Primary Meta Tags -->
 <title>{fullTitle}</title>
 <meta name="description" content={description} />
-<link rel="canonical" href={canonical} />
+<link rel="canonical" href={canonicalURL} />
 
 <!-- Open Graph -->
 <meta property="og:type" content={ogType} />
 <meta property="og:title" content={fullTitle} />
 <meta property="og:description" content={description} />
 <meta property="og:image" content={ogImageUrl} />
-<meta property="og:url" content={canonical} />
+<meta property="og:url" content={canonicalURL} />
 <meta property="og:site_name" content={siteName} />
 
 <!-- Twitter Card -->
@@ -83,5 +84,7 @@ const articleLd = article ? {
 )}
 
 {jsonLd && (
-  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  Array.isArray(jsonLd) 
+    ? jsonLd.map(schema => <script type="application/ld+json" set:html={JSON.stringify(schema)} />)
+    : <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
 )}

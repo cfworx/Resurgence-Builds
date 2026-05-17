@@ -27,6 +27,19 @@ const breadcrumbItems = [
 ];
 
 const tocItems = headings.filter(h => h.depth <= 3);
+
+const siteUrl = Astro.site?.toString().replace(/\/$/, '') || 'https://resurgencebuilds.com';
+const howToLd = headings.length > 0 ? {
+  '@context': 'https://schema.org',
+  '@type': 'HowTo',
+  name: title,
+  description: description,
+  step: headings.filter(h => h.depth === 2 || h.depth === 3).map((h, index) => ({
+    '@type': 'HowToStep',
+    text: h.text,
+    url: `${siteUrl}${Astro.url.pathname}#${h.slug}`,
+  }))
+} : null;
 ---
 
 <BaseLayout
@@ -39,6 +52,7 @@ const tocItems = headings.filter(h => h.depth <= 3);
     author,
     tags,
   }}
+  jsonLd={howToLd ? howToLd : undefined}
 >
   <div class="container section">
     <Breadcrumbs items={breadcrumbItems} />

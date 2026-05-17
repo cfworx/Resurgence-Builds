@@ -12,12 +12,26 @@ const specs = [...new Set(allBuilds.map(b => b.data.specialization))];
 const playstyles = [...new Set(allBuilds.map(b => b.data.playstyle))];
 
 const breadcrumbItems = [{ name: 'Builds', url: '/builds/' }];
+
+const siteUrl = Astro.site?.toString().replace(/\/$/, '') || 'https://resurgencebuilds.com';
+const itemListLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: 'The Division Resurgence Best Builds Tier List',
+  itemListElement: sorted.map((build, index) => ({
+    '@type': 'ListItem',
+    position: index + 1,
+    name: build.data.title,
+    url: `${siteUrl}/builds/${build.id}/`,
+  }))
+};
 ---
 
 <BaseLayout
   title="Builds"
   description="Browse all Division Resurgence builds. Filter by specialization and playstyle. Updated every patch."
   breadcrumbs={breadcrumbItems}
+  jsonLd={itemListLd}
 >
   <div class="container section">
     <Breadcrumbs items={breadcrumbItems} />
@@ -60,12 +74,18 @@ const breadcrumbItems = [{ name: 'Builds', url: '/builds/' }];
     filterBar.addEventListener('click', (e) => {
       const btn = (e.target as HTMLElement).closest('.filter-btn');
       if (!btn) return;
+      
+      // Update UI state immediately
       filterBar.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('is-active'));
       btn.classList.add('is-active');
       const filter = btn.getAttribute('data-filter');
-      grid.querySelectorAll('[data-spec]').forEach(card => {
-        const el = card as HTMLElement;
-        el.style.display = (filter === 'all' || el.dataset.spec === filter) ? '' : 'none';
+      
+      // Defer DOM updates to next frame to optimize INP
+      requestAnimationFrame(() => {
+        grid.querySelectorAll('[data-spec]').forEach(card => {
+          const el = card as HTMLElement;
+          el.style.display = (filter === 'all' || el.dataset.spec === filter) ? '' : 'none';
+        });
       });
     });
   }
