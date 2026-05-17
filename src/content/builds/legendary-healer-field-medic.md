@@ -14,6 +14,9 @@ author: "RapidF5"
 
 # The Legendary Healer
 
+## What is the best Field Medic build in The Division Resurgence?
+**The best Field Medic build in The Division Resurgence combines the Support Station and Healing Hive to output ~37,000 HP per tick for 84 seconds. By equipping the Captain Cow and Healing Elites gear sets alongside a dual-talent SMG, you can keep your entire team alive through Legendary difficulty alpha damage.**
+
 > *"Teams should be fighting over me to be on their team."*
 
 A **Field Medic** build for The Division: Resurgence built around three independent team-facing engines that all run at the same time, every fight, with zero swap penalty. Spreadsheet-verified, math on the page, no team-DR fantasy.
