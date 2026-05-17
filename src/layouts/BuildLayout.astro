@@ -15,9 +15,12 @@ export interface Props {
   tags: string[];
   author: string;
   featuredImage?: string;
+  headings?: import('astro').MarkdownHeading[];
 }
 
-const { title, description, specialization, playstyle, patch, lastUpdated, pve, pvp, tags, author, featuredImage } = Astro.props;
+const { title, description, specialization, playstyle, patch, lastUpdated, pve, pvp, tags, author, featuredImage, headings = [] } = Astro.props;
+
+const tocItems = headings.filter(h => h.depth <= 3);
 
 const formattedDate = lastUpdated.toLocaleDateString('en-US', {
   month: 'long',
@@ -70,6 +73,17 @@ const breadcrumbItems = [
               decoding="async"
             />
           </div>
+        )}
+
+        {tocItems.length > 0 && (
+          <nav class="toc" aria-label="Table of contents" style="margin-bottom: var(--sp-6);">
+            <p class="toc__title">Contents</p>
+            {tocItems.map(h => (
+              <a href={`#${h.slug}`} style={`padding-left:${(h.depth - 2) * 1}rem;`}>
+                {h.text}
+              </a>
+            ))}
+          </nav>
         )}
 
         <slot />

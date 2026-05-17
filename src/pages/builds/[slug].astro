@@ -11,7 +11,7 @@ export async function getStaticPaths() {
 }
 
 const { build } = Astro.props;
-const { Content } = await render(build);
+const { Content, headings } = await render(build);
 ---
 
 <BuildLayout
@@ -26,6 +26,7 @@ const { Content } = await render(build);
   tags={build.data.tags}
   author={build.data.author}
   featuredImage={build.data.featuredImage}
+  headings={headings}
 >
   <Content />
 </BuildLayout>
