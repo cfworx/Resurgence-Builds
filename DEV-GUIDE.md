@@ -248,6 +248,8 @@ tags: ["dark zone", "farming", "endgame", "loot"]
 description: "The most efficient Dark Zone farming routes in Division Resurgence. Includes extraction tips and PvP avoidance strategies."
 author: "YourName"
 ---
+
+<!-- WARNING: Any Dark Zone guide MUST describe Resurgence's specific mobile Dark Zone rules (extraction, contamination, rogue states). Do NOT copy mechanics from The Division 1 or 2. -->
 ```
 
 Valid categories: `Beginner`, `Leveling`, `Endgame`, `PvP`, `Farming`, `Crafting`, `General`
@@ -266,6 +268,8 @@ patchDate: 2026-06-01
 author: "YourName"
 summary: "Season 2 launch patch: new specialization, weapon balance, and bug fixes."
 ---
+
+<!-- WARNING: The version number and date above are placeholders. You MUST use the actual live patch label and deployment date for Division Resurgence. Do not guess patch numbers. -->
 ```
 
 ### Quick Reference
@@ -369,7 +373,7 @@ Google prioritizes content from people who have actually played the game. Includ
 - Screenshots from your own gameplay
 - Specific numbers you've tested ("This build does 45k DPS on the training dummy")
 - Personal opinions ("I tested this vs. Heartbreaker and found...")
-- Real examples ("In the Capitol Building stronghold, I found...")
+- Real examples ("In the Federal Reserve stronghold, I found...")
 
 **3. Be Comprehensive but Focused**
 
