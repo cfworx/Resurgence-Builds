@@ -486,4 +486,3 @@ Two heal pops, one OS. **High-HP ally heals (>50% HP) trigger a team-wide +5% Ma
 
 ---
 
-**Build version:** v9 · **Last verified:** May 2026 · **Source:** Division Resurgence Build Database (spreadsheet, literal text read) · **Mechanic claims independently verified** against Resurgence-specific community guides
