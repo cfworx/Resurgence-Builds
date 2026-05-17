@@ -2,7 +2,7 @@
 title: "What the Community Is Saying — Two Weeks Into the Phase 2 PC Era"
 publishDate: "2026-05-17"
 author: "RapidF5"
-image: "/images/news/division-resurgence-phase-2-pc-early-access.webp"
+featuredImage: "/images/news/division-resurgence-phase-2-pc-early-access.webp"
 imageAlt: "A high-end PC gaming setup with an ultrawide monitor displaying The Division Resurgence Phase 2 PC Early Access launch screen"
 description: "A breakdown of the biggest community topics right now: the PC early access launch, 60 FPS performance, Classified Ops Pass 1.2, missing gear, and the summer roadmap."
 tags: ["Community", "PC", "Phase 2", "Classified Ops Pass", "Missing Gear", "Roadmap"]
