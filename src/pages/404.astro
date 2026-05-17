@@ -2,16 +2,22 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
-<BaseLayout title="404 — Page Not Found" description="The page you're looking for doesn't exist.">
-  <div class="container section" style="text-align:center;padding:var(--sp-24) 0;">
-    <p class="section-tag" style="font-size:var(--text-5xl);margin-bottom:var(--sp-4);">404</p>
-    <h1>Agent, this route doesn't exist.</h1>
-    <p style="color:var(--ink-muted);max-width:40ch;margin:var(--sp-4) auto var(--sp-8);">
-      The page you're looking for may have been moved, deleted, or never existed. Let's get you back on track.
+<BaseLayout
+  title="404 - Page Not Found"
+  description="The page you are looking for does not exist on Resurgence Builds."
+>
+  <div class="container section text-center" style="padding-top: 15vh; padding-bottom: 15vh;">
+    <h1 style="font-size: 6rem; color: var(--accent); margin-bottom: var(--sp-4);">404</h1>
+    <h2 class="heading-accent" style="margin-bottom: var(--sp-6);">Agent Offline</h2>
+    <p style="color: var(--ink-muted); font-size: var(--text-lg); max-width: 600px; margin: 0 auto var(--sp-8);">
+      The page you're trying to reach has gone rogue or doesn't exist. Check your coordinates and try again.
     </p>
-    <div style="display:flex;gap:var(--sp-4);justify-content:center;flex-wrap:wrap;">
-      <a href="/" class="btn btn--primary">Go Home</a>
-      <a href="/builds/" class="btn btn--outline">Browse Builds</a>
-    </div>
+    <a href="/" class="btn btn--primary">Return to Base</a>
   </div>
 </BaseLayout>
+
+<style>
+  .text-center {
+    text-align: center;
+  }
+</style>
