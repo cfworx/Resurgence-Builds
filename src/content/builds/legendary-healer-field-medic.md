@@ -1,6 +1,7 @@
 ---
 title: "The Legendary Healer — Field Medic Support Build"
 specialization: Field Medic
+featuredImage: "/images/legendary-healer-field-medic.webp"
 playstyle: Support
 pve: true
 pvp: false

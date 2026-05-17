@@ -7,9 +7,10 @@ export interface Props {
   description: string;
   type: 'news' | 'patch-notes' | 'guide' | 'build';
   tags?: string[];
+  featuredImage?: string;
 }
 
-const { title, href, date, author, description, type, tags = [] } = Astro.props;
+const { title, href, date, author, description, type, tags = [], featuredImage } = Astro.props;
 
 const formattedDate = date.toLocaleDateString('en-US', {
   month: 'short',
@@ -27,20 +28,34 @@ const typeLabels: Record<string, string> = {
 const typeLabel = typeLabels[type] || type;
 ---
 
-<article class="card post-card" data-type={type} data-tags={JSON.stringify(tags)}>
+<article class={`card post-card ${featuredImage ? 'post-card--has-image' : ''}`} data-type={type} data-tags={JSON.stringify(tags)}>
   <a href={href} style="text-decoration:none;color:inherit;display:block;">
-    <div class="post-card__header">
-      <span class={`post-type-badge post-type-badge--${type}`}>{typeLabel}</span>
-      <span class="post-card__date">{formattedDate}</span>
-    </div>
-    <h3 class="card__title">{title}</h3>
-    <p class="card__meta">By {author}</p>
-    <p class="card__description">{description}</p>
-    {tags.length > 0 && (
-      <div class="post-card__tags">
-        {tags.slice(0, 4).map(tag => <span class="tag">{tag}</span>)}
+    {featuredImage && (
+      <div class="post-card__image">
+        <img
+          src={featuredImage}
+          alt={`Featured image for ${title}`}
+          loading="lazy"
+          decoding="async"
+          width="600"
+          height="315"
+        />
       </div>
     )}
+    <div class="post-card__body">
+      <div class="post-card__header">
+        <span class={`post-type-badge post-type-badge--${type}`}>{typeLabel}</span>
+        <span class="post-card__date">{formattedDate}</span>
+      </div>
+      <h3 class="card__title">{title}</h3>
+      <p class="card__meta">By {author}</p>
+      <p class="card__description">{description}</p>
+      {tags.length > 0 && (
+        <div class="post-card__tags">
+          {tags.slice(0, 4).map(tag => <span class="tag">{tag}</span>)}
+        </div>
+      )}
+    </div>
   </a>
 </article>
 
@@ -98,5 +113,29 @@ const typeLabel = typeLabels[type] || type;
     gap: var(--sp-1);
     flex-wrap: wrap;
     margin-top: var(--sp-3);
+  }
+
+  .post-card__image {
+    margin: calc(-1 * var(--sp-4));
+    margin-bottom: 0;
+    overflow: hidden;
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+  }
+
+  .post-card__image img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1200 / 630;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+  }
+
+  .post-card:hover .post-card__image img {
+    transform: scale(1.03);
+  }
+
+  .post-card--has-image .post-card__body {
+    padding-top: var(--sp-4);
   }
 </style>

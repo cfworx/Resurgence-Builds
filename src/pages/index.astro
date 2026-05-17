@@ -19,6 +19,7 @@ interface UnifiedPost {
   description: string;
   type: 'news' | 'patch-notes' | 'guide' | 'build';
   tags: string[];
+  featuredImage?: string;
 }
 
 const posts: UnifiedPost[] = [
@@ -30,6 +31,7 @@ const posts: UnifiedPost[] = [
     description: post.data.description,
     type: 'news' as const,
     tags: post.data.tags,
+    featuredImage: post.data.featuredImage,
   })),
   ...allPatchNotes.map((pn) => ({
     title: pn.data.title,
@@ -57,6 +59,7 @@ const posts: UnifiedPost[] = [
     description: build.data.description,
     type: 'build' as const,
     tags: build.data.tags,
+    featuredImage: build.data.featuredImage,
   })),
 ];
 
@@ -134,6 +137,7 @@ const filterTags = [
             description={post.description}
             type={post.type}
             tags={post.tags}
+            featuredImage={post.featuredImage}
           />
         ))}
       </div>
