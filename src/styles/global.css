@@ -353,7 +353,9 @@ table {
   border-collapse: collapse;
   font-variant-numeric: tabular-nums lining-nums;
   font-size: var(--text-sm);
-  min-width: 30rem;
+  display: block;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 thead {
