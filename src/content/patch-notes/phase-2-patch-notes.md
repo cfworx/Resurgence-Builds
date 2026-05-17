@@ -4,6 +4,8 @@ version: "1.2.0"
 patchDate: "2026-05-12"
 author: "RapidF5"
 summary: "The official patch notes for Season 1 Phase 2, featuring the new Classified Ops Pass, free Strawberry Milkshake Exotic LMG, new events, and major bug fixes."
+featuredImage: "/images/patch-notes/division-resurgence-phase-2-patch-notes-hero.webp"
+imageAlt: "A male Division agent slamming the ground in a snowy New York City street with cockroaches scattering from a manhole cover"
 ---
 
 The Phase 2 update for Season 1 went live on May 12. This is the official patch note as published by Ubisoft, organized by category.

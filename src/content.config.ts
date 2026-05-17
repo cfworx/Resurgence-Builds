@@ -69,6 +69,8 @@ const patchNotes = defineCollection({
     patchDate: z.coerce.date(),
     author: z.string(),
     summary: z.string(),
+    featuredImage: z.string().optional(),
+    imageAlt: z.string().optional(),
   }),
 });
 

@@ -1,5 +1,5 @@
 ---
-title: "What the Community Is Saying — Two Weeks Into the Phase 2 PC Era"
+title: "What the Community Is Saying"
 publishDate: "2026-05-17"
 author: "RapidF5"
 featuredImage: "/images/news/division-resurgence-phase-2-pc-era-hero.webp"
