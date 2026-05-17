@@ -2,12 +2,13 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import SectionTag from '../../components/SectionTag.astro';
+import backpackTalents from '../../data/backpack-talents.json';
 
 const title = "Backpack Talents Database";
 const description = "Complete database of all Backpack Talents in The Division Resurgence.";
 const breadcrumbs = [
   { name: 'Database', url: '#' },
-  { name: 'Backpack Talents', url: '#' }
+  { name: 'Backpack Talents', url: '/database/backpack-talents/' }
 ];
 ---
 
@@ -16,9 +17,119 @@ const breadcrumbs = [
     <Breadcrumbs items={breadcrumbs} />
     <SectionTag label="Database" />
     <h1 class="heading-accent">Backpack Talents</h1>
-    
-    <div class="prose">
-      <p>This is a placeholder for the Backpack Talents database. Tables and data will be added here soon.</p>
+    <p style="color:var(--ink-muted);margin-bottom:var(--sp-8);">
+      Browse the complete list of Backpack Talents to optimize your build's utility and survivability.
+    </p>
+
+    <div class="db-grid" id="talents-grid">
+      {backpackTalents.map((talent) => (
+        <article class="db-card">
+          <div class="db-card__header">
+            <h2 class="db-card__title">{talent.name}</h2>
+          </div>
+          
+          <div class="db-card__body">
+            <div class="talent-desc">
+              <p>{talent.description}</p>
+            </div>
+            
+            <div class="source-section">
+              <span class="source-label">Source Backpack</span>
+              <p class="source-text">Coming soon...</p>
+            </div>
+          </div>
+        </article>
+      ))}
     </div>
   </div>
 </BaseLayout>
+
+<style>
+  .db-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--sp-6);
+  }
+
+  @media (min-width: 768px) {
+    .db-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .db-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .db-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--border-radius);
+    padding: var(--sp-5);
+    display: flex;
+    flex-direction: column;
+    gap: var(--sp-4);
+    transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+  }
+
+  .db-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+
+  .db-card__header {
+    border-bottom: 1px solid var(--border);
+    padding-bottom: var(--sp-3);
+  }
+
+  .db-card__title {
+    font-size: var(--text-xl);
+    font-weight: 700;
+    margin: 0;
+    color: var(--ink);
+  }
+
+  .db-card__body {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: var(--sp-4);
+  }
+
+  .talent-desc {
+    flex-grow: 1;
+  }
+
+  .talent-desc p {
+    font-size: var(--text-md);
+    line-height: 1.6;
+    margin: 0;
+    color: var(--ink-light);
+  }
+
+  .source-section {
+    background: var(--bg);
+    padding: var(--sp-3);
+    border-radius: var(--border-radius);
+    border-left: 3px solid var(--ink-muted);
+  }
+
+  .source-label {
+    display: block;
+    font-size: var(--text-xs);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--ink-muted);
+    margin-bottom: var(--sp-1);
+  }
+
+  .source-text {
+    font-size: var(--text-sm);
+    margin: 0;
+    color: var(--ink-light);
+    font-style: italic;
+  }
+</style>

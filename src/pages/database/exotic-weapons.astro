@@ -2,12 +2,13 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import SectionTag from '../../components/SectionTag.astro';
+import exoticWeapons from '../../data/exotic-weapons.json';
 
 const title = "Exotic Weapons Database";
 const description = "Complete database of all Exotic Weapons in The Division Resurgence.";
 const breadcrumbs = [
   { name: 'Database', url: '#' },
-  { name: 'Exotic Weapons', url: '#' }
+  { name: 'Exotic Weapons', url: '/database/exotic-weapons/' }
 ];
 ---
 
@@ -16,9 +17,182 @@ const breadcrumbs = [
     <Breadcrumbs items={breadcrumbs} />
     <SectionTag label="Database" />
     <h1 class="heading-accent">Exotic Weapons</h1>
-    
-    <div class="prose">
-      <p>This is a placeholder for the Exotic Weapons database. Tables and data will be added here soon.</p>
+    <p style="color:var(--ink-muted);margin-bottom:var(--sp-8);">
+      Browse the complete list of highly coveted Exotic Weapons, featuring unique mechanics and powerful talents.
+    </p>
+
+    <div class="db-grid" id="exotics-grid">
+      {exoticWeapons.map((weapon) => (
+        <article class="db-card exotic-card">
+          <div class="db-card__header">
+            <div>
+              <h2 class="db-card__title">{weapon.name}</h2>
+              <span class="weapon-type">{weapon.type}</span>
+            </div>
+          </div>
+          
+          <div class="db-card__body">
+            <div class="stats-grid">
+              <div class="stat-item">
+                <span class="stat-label">Damage</span>
+                <span class="stat-value">{weapon.damage}</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-label">RPM</span>
+                <span class="stat-value">{weapon.rpm}</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-label">MAG</span>
+                <span class="stat-value">{weapon.mag}</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-label">Accuracy</span>
+                <span class="stat-value">{weapon.accuracy}</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-label">Reload</span>
+                <span class="stat-value">{weapon.reloadSpeed}</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-label">Opt. Range</span>
+                <span class="stat-value">{weapon.optimalRange}</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-label">Movement</span>
+                <span class="stat-value">{weapon.movementSpeed}</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-label">Stability</span>
+                <span class="stat-value">{weapon.stability}</span>
+              </div>
+            </div>
+
+            <div class="talent-section">
+              <h3 class="talent-name">{weapon.talentName}</h3>
+              <p class="talent-desc">{weapon.talentDescription}</p>
+            </div>
+          </div>
+        </article>
+      ))}
     </div>
   </div>
 </BaseLayout>
+
+<style>
+  .db-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--sp-6);
+  }
+
+  @media (min-width: 768px) {
+    .db-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .db-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--border-radius);
+    padding: var(--sp-5);
+    display: flex;
+    flex-direction: column;
+    gap: var(--sp-4);
+    transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+  }
+
+  .exotic-card {
+    border-top: 4px solid var(--danger); /* Exotic color (red/orange) */
+  }
+
+  .db-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+
+  .db-card__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: var(--sp-3);
+  }
+
+  .db-card__title {
+    font-size: var(--text-2xl);
+    font-weight: 700;
+    margin: 0;
+    color: var(--danger);
+  }
+
+  .weapon-type {
+    display: inline-block;
+    font-size: var(--text-sm);
+    color: var(--ink-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+    margin-top: var(--sp-1);
+  }
+
+  .db-card__body {
+    display: flex;
+    flex-direction: column;
+    gap: var(--sp-6);
+  }
+
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--sp-3);
+    background: var(--bg);
+    padding: var(--sp-4);
+    border-radius: var(--border-radius);
+  }
+
+  @media (min-width: 1024px) {
+    .stats-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  .stat-item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .stat-label {
+    font-size: var(--text-xs);
+    font-weight: 600;
+    color: var(--ink-muted);
+    text-transform: uppercase;
+  }
+
+  .stat-value {
+    font-size: var(--text-md);
+    font-weight: 700;
+    color: var(--ink);
+  }
+
+  .talent-section {
+    background: rgba(239, 68, 68, 0.05); /* very light danger accent */
+    border-left: 3px solid var(--danger);
+    padding: var(--sp-4);
+    border-radius: 0 var(--border-radius) var(--border-radius) 0;
+  }
+
+  .talent-name {
+    font-size: var(--text-lg);
+    font-weight: 700;
+    color: var(--danger);
+    margin: 0 0 var(--sp-2) 0;
+  }
+
+  .talent-desc {
+    font-size: var(--text-sm);
+    line-height: 1.6;
+    color: var(--ink);
+    margin: 0;
+  }
+</style>

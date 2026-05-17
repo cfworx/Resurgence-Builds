@@ -1,12 +1,127 @@
 [
-  {"id":"bat-1","talentName":"Spotter","description":"Amplifies weapon and skill damage by 15% to pulsed and tracked enemies."},
-  {"id":"bat-2","talentName":"Obliterate","description":"Critical hits increase total weapon damage by 1% for 5 seconds. Stacks up to 25 times."},
-  {"id":"bat-3","talentName":"Unstoppable Force","description":"Killing an enemy grants +5% weapon damage for 10 seconds. Stacks up to 5 times (25% max). Refreshes on kill."},
-  {"id":"bat-4","talentName":"Unbreakable","description":"When your armor breaks, repair 50% of your armor. Armor kits used within 5 seconds repair 100% armor. Cooldown: 55 seconds."},
-  {"id":"bat-5","talentName":"Kinetic Momentum","description":"Skills in motion gain 1% increased damage and repair every second. Max 15 stacks. Stacks reset when the skill stops moving."},
-  {"id":"bat-6","talentName":"Glass Cannon","description":"+25% amplified weapon and skill damage. +50% amplified damage taken."},
-  {"id":"bat-7","talentName":"Intimidate","description":"While you have bonus armor, gain +10% amplified weapon damage to enemies within 15 meters."},
-  {"id":"bat-8","talentName":"Overwatch","description":"After being in cover for 10 seconds, weapon and skill damage is increased by 12% for you and all allies. Canceled by leaving cover."},
-  {"id":"bat-9","talentName":"Empathic Resolve","description":"Repairing an ally grants them +3% weapon and skill damage for each percent of armor repaired. Max 15%. Lasts 10 seconds."},
-  {"id":"bat-10","talentName":"Headhunter","description":"After killing an enemy with a headshot, your next weapon hit within 30 seconds deals 125% of the enemy's max health as headshot damage. Damage is capped to 800% weapon damage."}
+  {
+    "id": "ba-1",
+    "name": "Accelerated Charge",
+    "description": "Kills and assists behind cover grant +30% Signature Ability Charge Efficiency for 8 seconds."
+  },
+  {
+    "id": "ba-2",
+    "name": "Battlelust",
+    "description": "Taking damage has a 50% chance of granting +6% Weapon Damage for 5 seconds, up to 3 stacks. Talent Cooldown: 1 seconds."
+  },
+  {
+    "id": "ba-3",
+    "name": "Boosted Shield",
+    "description": "While possessing Extra Health, grants +7.50% Damage Reduction and reduces Skill Cooldown by 1.50%."
+  },
+  {
+    "id": "ba-4",
+    "name": "Crossfire",
+    "description": "Grants +15% Weapon Damage when Skills are deployed."
+  },
+  {
+    "id": "ba-5",
+    "name": "Deep Focus",
+    "description": "Grants +28% Skill Duration but also inflicts -10% Skill Radius."
+  },
+  {
+    "id": "ba-6",
+    "name": "Defensive Charge",
+    "description": "Gaining Extra Health grants +3% Skill Intensity for 10 seconds, up to 5 stacks."
+  },
+  {
+    "id": "ba-7",
+    "name": "Duality",
+    "description": "Grants +15% Weapon Damage when Health is above 50%. Grants +15% Damage Reduction when Health is below 50%."
+  },
+  {
+    "id": "ba-8",
+    "name": "Emergency Retreat",
+    "description": "Grants +10% Movement Speed and +37.50% Damage Reduction for 3 seconds while within 20 meters of an enemy. Talent Cooldown: 10 seconds."
+  },
+  {
+    "id": "ba-9",
+    "name": "Energize",
+    "description": "Using a Medical Kit grants +18% Skill Damage for 8 seconds. Triggering a Skill Multi-Shot refreshes the duration."
+  },
+  {
+    "id": "ba-10",
+    "name": "Energy Drink",
+    "description": "Using a Medical Kit grants +36% Weapon Critical Hit Chance for 8 seconds."
+  },
+  {
+    "id": "ba-11",
+    "name": "Fearless Charge",
+    "description": "Sprinting grants +21% Damage Reduction."
+  },
+  {
+    "id": "ba-12",
+    "name": "Glass Cannon",
+    "description": "Grants +20% Damage. Inflicts -10% Damage Reduction."
+  },
+  {
+    "id": "ba-13",
+    "name": "Hypervigilant",
+    "description": "Healing grants +5% Damage Reduction for 3 seconds, up to 3 stacks."
+  },
+  {
+    "id": "ba-14",
+    "name": "Injured Concealment",
+    "description": "Hits taken grant +1.80% Damage for 10 seconds, up to 10 stacks."
+  },
+  {
+    "id": "ba-15",
+    "name": "Instant Triage",
+    "description": "Downed allies within 30 meters grant +22.50% Damage Reduction and +50% Rescue Efficiency for 10 seconds."
+  },
+  {
+    "id": "ba-16",
+    "name": "Nothing to Lose",
+    "description": "Taking damage has a 50% chance of reducing Skill Cooldowns of Skills deployed within 5 seconds by 2%, up to 3 stacks."
+  },
+  {
+    "id": "ba-17",
+    "name": "Recycling",
+    "description": "Taking damage within 20 meters has a 80% chance to refill 4.50 bullets in the magazine (excluding Signature Ability weapons). Talent Cooldown: 1 seconds."
+  },
+  {
+    "id": "ba-18",
+    "name": "Rescue Signal",
+    "description": "Being downed grants all allies within 40 meters +10% Movement Speed and +100% Rescue Efficiency for 10 seconds. Talent Cooldown: 10 seconds."
+  },
+  {
+    "id": "ba-19",
+    "name": "Second Wind",
+    "description": "Reloading grants Extra Health equal to 600% Firepower for 5 seconds. Talent Cooldown: 5 seconds."
+  },
+  {
+    "id": "ba-20",
+    "name": "Socialite",
+    "description": "Grants +10% Movement Speed when there are no enemies within 20 meters. Grants +36% Armor while within 20 meters of an enemy."
+  },
+  {
+    "id": "ba-21",
+    "name": "Suppression Rescue",
+    "description": "Downed allies within 30 meters grant +22.50% Weapon Damage and +10% Movement Speed for 10 seconds."
+  },
+  {
+    "id": "ba-22",
+    "name": "Suppressive Fire",
+    "description": "Grants +18% Magazine Size. Reloading grants +6% Rate of Fire for 5 seconds, up to 3 stacks."
+  },
+  {
+    "id": "ba-23",
+    "name": "Territory Expansion",
+    "description": "Grants +30% Skill Radius while at full Health."
+  },
+  {
+    "id": "ba-24",
+    "name": "Toymaker",
+    "description": "Grants +15% Skill Multi-shot Chance when there are no enemies within 20 meters."
+  },
+  {
+    "id": "ba-25",
+    "name": "Unflinching",
+    "description": "Taking damage has a 70% chance of restoring Health equal to 300% Toughness. Talent Cooldown: 2 seconds."
+  }
 ]

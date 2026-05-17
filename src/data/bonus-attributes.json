@@ -1,18 +1,46 @@
 [
-  {"id":"ba-1","category":"Firepower","attributeName":"Weapon Damage"},
-  {"id":"ba-2","category":"Firepower","attributeName":"Critical Hit Chance"},
-  {"id":"ba-3","category":"Firepower","attributeName":"Critical Hit Damage"},
-  {"id":"ba-4","category":"Firepower","attributeName":"Headshot Damage"},
-  {"id":"ba-5","category":"Toughness","attributeName":"Armor"},
-  {"id":"ba-6","category":"Toughness","attributeName":"Health"},
-  {"id":"ba-7","category":"Toughness","attributeName":"Armor Regeneration"},
-  {"id":"ba-8","category":"Toughness","attributeName":"Hazard Protection"},
-  {"id":"ba-9","category":"Engineering","attributeName":"Skill Damage"},
-  {"id":"ba-10","category":"Engineering","attributeName":"Skill Haste"},
-  {"id":"ba-11","category":"Engineering","attributeName":"Skill Repair"},
-  {"id":"ba-12","category":"Engineering","attributeName":"Skill Duration"},
-  {"id":"ba-13","category":"Universal","attributeName":"Damage to Armor"},
-  {"id":"ba-14","category":"Universal","attributeName":"Damage to Health"},
-  {"id":"ba-15","category":"Universal","attributeName":"Protection from Elites"},
-  {"id":"ba-16","category":"Universal","attributeName":"Explosive Resistance"}
+  {
+    "category": "Firepower",
+    "attributes": [
+      "Weapon Critical Hit Chance",
+      "Weapon Critical Hit Damage",
+      "Weapon Damage",
+      "Weapon Multi-Shot Chance",
+      "Headshot Damage",
+      "Weapon Blast Damage",
+      "Weapon Piercing Damage",
+      "Weapon Shredding Damage"
+    ]
+  },
+  {
+    "category": "Toughness",
+    "attributes": [
+      "Max Health",
+      "Armor",
+      "Damage Reduction"
+    ]
+  },
+  {
+    "category": "Engineering",
+    "attributes": [
+      "Skill Critical Chance",
+      "Skill Critical Damage",
+      "Skill Intensity",
+      "Skill Multi-Shot Chance",
+      "Skill Duration",
+      "Skill Radius",
+      "Skill Cooldown Recovery",
+      "Skill Blast Damage",
+      "Skill Piercing Damage",
+      "Skill Shredding Damage"
+    ]
+  },
+  {
+    "category": "Universal",
+    "attributes": [
+      "Received Healing",
+      "Damage to Elites",
+      "Signature Ability Charge Efficiency"
+    ]
+  }
 ]

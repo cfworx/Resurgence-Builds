@@ -1,12 +1,347 @@
 [
-  {"id":"wt-1","talentName":"Ranger","description":"Every 5 meters your target is away from you grants +2% weapon damage. Caps at 30 meters (+12%).","sourceWeapons":["ACR-E","AK-47","FAMAS"]},
-  {"id":"wt-2","talentName":"Close & Personal","description":"Killing a target within 7 meters grants +30% weapon damage for 10 seconds.","sourceWeapons":["MP5","Vector","UMP-45"]},
-  {"id":"wt-3","talentName":"Flatline","description":"Hitting a pulsed or tracked enemy deals 15% additional weapon damage.","sourceWeapons":["Police M4","Mk16","G36"]},
-  {"id":"wt-4","talentName":"Measured","description":"Top half of magazine has +15% rate of fire and -20% weapon damage. Bottom half has -15% rate of fire and +30% weapon damage.","sourceWeapons":["RPK-74","L86 LSW","M60"]},
-  {"id":"wt-5","talentName":"Breadbasket","description":"Landing body shots adds a stack of +5% headshot damage. Max 3 stacks. Stacks reset on headshot or after 10 seconds.","sourceWeapons":["M700","SRS","Hunting M44"]},
-  {"id":"wt-6","talentName":"Strained","description":"Gain +10% critical hit damage for every 0.5 seconds you are firing. Max 5 stacks. Stacks reset when not firing for 1 second.","sourceWeapons":["MP7","P90","AUG"]},
-  {"id":"wt-7","talentName":"Preservation","description":"Killing an enemy repairs 10% armor over 5 seconds. Headshot kills double the repair.","sourceWeapons":["ACR-E","SCAR-H","M4A1"]},
-  {"id":"wt-8","talentName":"Killer","description":"Critical hit kills grant +30% critical hit damage for 10 seconds.","sourceWeapons":["Vector","MP5","T821"]},
-  {"id":"wt-9","talentName":"Optimist","description":"Weapon damage is increased by +3% for every 10% ammo missing from the magazine.","sourceWeapons":["AK-47","G36","Police M4"]},
-  {"id":"wt-10","talentName":"Vindictive","description":"Killing a status-affected enemy grants +18% critical hit chance to you and nearby allies for 10 seconds.","sourceWeapons":["Scorpio","FAMAS","RPK-74"]}
+  {
+    "id": "wt-1",
+    "name": "Adaptation",
+    "description": "Body shots grant +4.80% Skill Duration for 8 seconds. Headshots grant +6% Skill Intensity for 8 seconds."
+  },
+  {
+    "id": "wt-2",
+    "name": "Ammo Charge",
+    "description": "Shooting has a 50% chance of granting +3.60% Skill Intensity for 10 seconds if the magazine contains less than 50% of its ammo, up to 5 stacks."
+  },
+  {
+    "id": "wt-3",
+    "name": "Ammo Supply",
+    "description": "Shooting has a 54% chance of returning the bullet in the magazine if it contains less than 30% of its ammo."
+  },
+  {
+    "id": "wt-4",
+    "name": "Backup Battery",
+    "description": "Swapping to this weapon grants +22.50% Engineering for 8 seconds. Talent Cooldown: 8 seconds."
+  },
+  {
+    "id": "wt-5",
+    "name": "Backup Magazine",
+    "description": "Swapping to this weapon reloads your second weapon after 4 seconds."
+  },
+  {
+    "id": "wt-6",
+    "name": "Backup Protection",
+    "description": "Swapping to this weapon grants Extra Health equal to 20% Max Health for 8 seconds. Talent Cooldown: 8 seconds."
+  },
+  {
+    "id": "wt-7",
+    "name": "Blood for Blood",
+    "description": "Kills and assists restore 4% Max Health. While above 50% Health, Weapon Hits consume 0.50% Max Health to deal additional damage equal to 0.50% Max Health."
+  },
+  {
+    "id": "wt-8",
+    "name": "Bloodlust",
+    "description": "Dealing 8 damage grants +4% Weapon Damage and +2% Damage Reduction for 5 seconds, up to 3 stacks."
+  },
+  {
+    "id": "wt-9",
+    "name": "Breadbasket",
+    "description": "Body shots grant +15% Headshot Damage for 8 seconds, up to 3 stacks."
+  },
+  {
+    "id": "wt-10",
+    "name": "Breathe Free",
+    "description": "While moving, grants 4 stacks per second, or 8 stacks if sprinting, up to a maximum of 40 stacks. A stack is consumed with each round fired, granting +15% Weapon Damage. Deploying a Skill consumes 10 stacks and grants +15% Skill Damage. Kills grant +10% Movement Speed for 10 seconds."
+  },
+  {
+    "id": "wt-11",
+    "name": "Calm and Collected",
+    "description": "Grants +30% Reload Speed while behind cover."
+  },
+  {
+    "id": "wt-12",
+    "name": "Conceited",
+    "description": "Kills and assists taunt enemies within 20 meters and grant +15% Damage Reduction for 10 seconds."
+  },
+  {
+    "id": "wt-13",
+    "name": "Concentrated Fire",
+    "description": "Hitting the same enemy multiple times grants +0.36% Weapon Critical Hit Damage for 5 seconds, up to 100 stacks. Stacks are reduced by half when switching to a new target."
+  },
+  {
+    "id": "wt-14",
+    "name": "Crawl",
+    "description": "Headshots grant +10% Damage Reduction for 3 seconds."
+  },
+  {
+    "id": "wt-15",
+    "name": "Damage Trade",
+    "description": "Grants +6% Weapon Damage for each 20% of the Magazine Size emptied, up to 4 stacks. Reloading removes all stacks."
+  },
+  {
+    "id": "wt-16",
+    "name": "Death by Numbers",
+    "description": "Critical Hit Kills grant +18% Weapon Multi-shot Chance for 8 seconds."
+  },
+  {
+    "id": "wt-17",
+    "name": "Enhancement Trade",
+    "description": "Grants +6% Skill Intensity for each 20% of the Magazine Size emptied for 8 seconds, up to 4 stacks. Talent Cooldown: 1 seconds."
+  },
+  {
+    "id": "wt-18",
+    "name": "Ex Machina",
+    "description": "Headshots grant +30% Skill Critical Hit Damage for 10 seconds."
+  },
+  {
+    "id": "wt-19",
+    "name": "Fast Hands",
+    "description": "Critical Hits grant +12% Reload Speed for 5 seconds, up to 3 stacks."
+  },
+  {
+    "id": "wt-20",
+    "name": "Fully Charged",
+    "description": "Reloading an empty magazine grants +7.50% Engineering for 12 seconds, up to 3 stacks."
+  },
+  {
+    "id": "wt-21",
+    "name": "Head Collection",
+    "description": "Headshots grant +6% Skill Critical Hit Chance for 10 seconds, up to 3 stacks."
+  },
+  {
+    "id": "wt-22",
+    "name": "In Sync",
+    "description": "Weapon Hits grant +9% Skill Damage for 8 seconds. Skill Hits grant +9% Weapon Damage for 8 seconds. Bonus is doubled when both buffs are active at the same time."
+  },
+  {
+    "id": "wt-23",
+    "name": "In a Day's Work",
+    "description": "Headshot Kills grant +36% Reload Speed for 5 seconds."
+  },
+  {
+    "id": "wt-24",
+    "name": "Joint Strike",
+    "description": "Headshots behind cover grant +15% Skill Intensity for 10 seconds."
+  },
+  {
+    "id": "wt-25",
+    "name": "Killer",
+    "description": "Critical Hit Kills grant +36% Critical Hit Damage for 10 seconds."
+  },
+  {
+    "id": "wt-26",
+    "name": "Last Stand",
+    "description": "Hits behind cover grant +24% Skill Duration for 10 seconds."
+  },
+  {
+    "id": "wt-27",
+    "name": "Long-Distance Marking",
+    "description": "Headshots grant +7.50% Skill Damage for 15 seconds, increasing by 1.50% for every 5 meters separating the Agent from the target (up to 18%)."
+  },
+  {
+    "id": "wt-28",
+    "name": "Medical Accuracy",
+    "description": "Headshots grant +18% Healing Intensity for 10 seconds."
+  },
+  {
+    "id": "wt-29",
+    "name": "Misdirection Insurance",
+    "description": "Missing a shot has a 30% chance of returning the bullet to the magazine."
+  },
+  {
+    "id": "wt-30",
+    "name": "Multi-Pronged Attack",
+    "description": "Hits grant +3.60% Skill Multi-Shot Chance for 10 seconds, up to 5 stacks. Missed hits remove 1 stacks."
+  },
+  {
+    "id": "wt-31",
+    "name": "Multitasking",
+    "description": "Dealing damage to 3 enemies within 5 seconds grants +30% Skill Critical Damage for 12 seconds. Talent Cooldown: 8 seconds."
+  },
+  {
+    "id": "wt-32",
+    "name": "Neverending",
+    "description": "Kills have a 50% chance to refill the magazine and grant +40% Rate of Fire for 12 seconds. Talent Cooldown: 5 seconds."
+  },
+  {
+    "id": "wt-33",
+    "name": "No Exit",
+    "description": "Headshot Kills grant +21% Weapon Damage for 5 seconds."
+  },
+  {
+    "id": "wt-34",
+    "name": "Performer",
+    "description": "Grants +18% Weapon Damage on enemies within 20 meters. Inflicts -6% Weapon Damage on enemies farther than 20 meters away."
+  },
+  {
+    "id": "wt-35",
+    "name": "Play Rough",
+    "description": "While firing, reduces Incoming Damage by 25%. When firing ceases, applies 60% of the reduced damage and grants +10% Skill Damage for 10 seconds."
+  },
+  {
+    "id": "wt-36",
+    "name": "Precise Crit",
+    "description": "Hitting an enemy 10 times grants +15% Weapon & Skill Critical Damage to all allies within 40 meters for 10 seconds."
+  },
+  {
+    "id": "wt-37",
+    "name": "Precise Trauma",
+    "description": "Hits apply a debuff to enemies, dealing Skill Damage every second for 1 seconds, up to 10 stacks. Body shots apply 1 stack, headshots apply 2 stacks."
+  },
+  {
+    "id": "wt-38",
+    "name": "Precision Support",
+    "description": "Hitting an enemy 6 times grants +7% Armor and +40% Rescue Efficiency for 10 seconds, up to 5 stacks."
+  },
+  {
+    "id": "wt-39",
+    "name": "Predatory Aura",
+    "description": "Weapon kills within 20 meters restore (240 x Firepower)% Health for 3 seconds."
+  },
+  {
+    "id": "wt-40",
+    "name": "Proficient Reload",
+    "description": "Reloading grants +6% Reload Speed for 10 seconds, up to 5 stacks."
+  },
+  {
+    "id": "wt-41",
+    "name": "Pummel",
+    "description": "10 consecutive kills or assists refills the magazine and grants +10% Weapon Damage for 12 seconds. Additional kills or assists refreshes the duration."
+  },
+  {
+    "id": "wt-42",
+    "name": "Rapid Charge",
+    "description": "Hitting an enemy 5 times in 3 seconds grants 50 Signature Ability Charge."
+  },
+  {
+    "id": "wt-43",
+    "name": "Revitalize",
+    "description": "Every 1 kills and assists restores 4.20% Max Health for 3 seconds. Talent Cooldown: 4 seconds."
+  },
+  {
+    "id": "wt-44",
+    "name": "Sadistic Shield",
+    "description": "Hitting an enemy 5 times grants 12.50% Extra Health for 10 seconds (based on Max Health)."
+  },
+  {
+    "id": "wt-45",
+    "name": "Sentinel Aura",
+    "description": "Hits within 20 meters restore (600 x Toughness)% Health. Talent Cooldown: 5 seconds."
+  },
+  {
+    "id": "wt-46",
+    "name": "Shooting Repair",
+    "description": "Shooting 10 bullets restores 2.50% Missing Health of your deployed Skills."
+  },
+  {
+    "id": "wt-47",
+    "name": "Slaughter Fortitude",
+    "description": "Kills and assists grant +12% Armor for 10 seconds, up to 3 stacks."
+  },
+  {
+    "id": "wt-48",
+    "name": "Slaughter Healing",
+    "description": "Kills and assists grant +7% Incoming Healing for 10 seconds to all allies within 40 meters, up to 3 stacks."
+  },
+  {
+    "id": "wt-49",
+    "name": "Spec-Ops",
+    "description": "Hits within 20 meters grant +20% Rate of Fire and +5% Incoming Healing for 3 seconds."
+  },
+  {
+    "id": "wt-50",
+    "name": "Spirited",
+    "description": "Grants +9% Damage Reduction while below 75% Health. Grants +12% Damage Reduction while below 50% Health. Grants +15% Damage Reduction while below 25% Health."
+  },
+  {
+    "id": "wt-51",
+    "name": "Steady Aim",
+    "description": "Aiming grants +10% Weapon Damage and +5% Damage Reduction."
+  },
+  {
+    "id": "wt-52",
+    "name": "Steady Handed",
+    "description": "Hits grant +1.20% Accuracy and Stability, up to 30 stacks. At 30 stacks, consume them to refill the magazine."
+  },
+  {
+    "id": "wt-53",
+    "name": "Steady Hands",
+    "description": "Hip firing grants +20% Stability and +15% Weapon Damage."
+  },
+  {
+    "id": "wt-54",
+    "name": "Steady Reload",
+    "description": "Reloading grants +18% Weapon Damage for 5 seconds, up to 5 stacks."
+  },
+  {
+    "id": "wt-55",
+    "name": "Steady Suppression",
+    "description": "Grants +18% Damage Reduction while firing."
+  },
+  {
+    "id": "wt-56",
+    "name": "Still Alive",
+    "description": "Kills restore 30% of missing Health. Talent Cooldown: 10 seconds."
+  },
+  {
+    "id": "wt-57",
+    "name": "Strained",
+    "description": "Firing for 0.50 seconds grants +10% Critical Hit Damage for 5 seconds, up to 3 stacks."
+  },
+  {
+    "id": "wt-58",
+    "name": "Surgical",
+    "description": "Headshots grant +7% Weapon Critical Hit Damage for 5 seconds, up to 5 stacks."
+  },
+  {
+    "id": "wt-59",
+    "name": "Swift Aim",
+    "description": "Hits while aiming reduce Skill Cooldown by 2%. Talent Cooldown: 2 seconds."
+  },
+  {
+    "id": "wt-60",
+    "name": "Swift Taunt",
+    "description": "Hitting 3 enemies within 5 seconds taunts nearby enemies and grants Extra Health equal to 25% Max Health for 10 seconds."
+  },
+  {
+    "id": "wt-61",
+    "name": "Tactical Reload",
+    "description": "Reloading grants +2.60% Skill Cooldown Recovery for 10 seconds, up to 5 stacks."
+  },
+  {
+    "id": "wt-62",
+    "name": "Tactical Targeting",
+    "description": "Skill Hits apply a mark on the target for 10 seconds. Killing a marked enemy grants Extra Health for 10 seconds (based on Max Health)."
+  },
+  {
+    "id": "wt-63",
+    "name": "Take a Breath",
+    "description": "Reloading an empty magazine grants +7.50% Toughness for 8 seconds, up to 3 stacks."
+  },
+  {
+    "id": "wt-64",
+    "name": "Target Acquisition",
+    "description": "Hitting an enemy 5 consecutive times inflicts +2.50% Incoming Damage on them for 5 seconds, up to 3 stacks."
+  },
+  {
+    "id": "wt-65",
+    "name": "Thick Skin",
+    "description": "Dealing damage grants +2.10% Armor for 5 seconds, up to 20 stacks. Kills grant 10 stacks."
+  },
+  {
+    "id": "wt-66",
+    "name": "Torrential Downpour",
+    "description": "Hitting enemies 10 times within 5 seconds grants +22.50% Engineering for 12 seconds."
+  },
+  {
+    "id": "wt-67",
+    "name": "Unbreakable",
+    "description": "Hits within 20 meters grant +36 Armor for 10 seconds."
+  },
+  {
+    "id": "wt-68",
+    "name": "Unhinged",
+    "description": "Grants +18% Weapon Damage. Inflicts -10% Stability and -10% Accuracy."
+  },
+  {
+    "id": "wt-69",
+    "name": "Vibrant",
+    "description": "Hits grant +15% Max Health for 10 seconds."
+  }
 ]

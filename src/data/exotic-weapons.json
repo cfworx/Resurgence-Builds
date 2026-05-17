@@ -1,4 +1,47 @@
 [
-  {"id":"ex-1","name":"Lady Death","type":"SMG","blastDmg":"299","rpm":"900","mag":"32","talentName":"Breathe Free","talentDescription":"While moving, grants 4 stacks per second, or 8 stacks if sprinting, up to a maximum of 40 stacks. A stack is consumed with each round fired, granting +15% Weapon Damage. Deploying a Skill consumes 10 stacks and grants +15% Skill Damage. Kills grant +10% Movement Speed for 10 seconds.","accuracy":"50","reloadSpeed":"2.98s","optimalRange":"10m","movementSpeed":"91","stability":"50"},
-  {"id":"ex-2","name":"Warlord","type":"Assault Rifle","blastDmg":"324","rpm":"600","mag":"30","talentName":"Play Rough","talentDescription":"While firing, reduces Incoming Damage by 25%. When firing ceases, applies 60% of the reduced damage and grants +10% Skill Damage for 10 seconds.","accuracy":"68","reloadSpeed":"3.1s","optimalRange":"29m","movementSpeed":"54","stability":"56"}
+  {
+    "id": "ew-1",
+    "name": "Lady Death",
+    "type": "SMG",
+    "damage": "299 Blast Damage",
+    "rpm": "900",
+    "mag": "32",
+    "talentName": "Breathe Free",
+    "talentDescription": "While moving, grants 4 stacks per second, or 8 stacks if sprinting, up to a maximum of 40 stacks. A stack is consumed with each round fired, granting +15% Weapon Damage. Deploying a Skill consumes 10 stacks and grants +15% Skill Damage. Kills grant +10% Movement Speed for 10 seconds.",
+    "accuracy": "50",
+    "reloadSpeed": "2.98s",
+    "optimalRange": "10m",
+    "movementSpeed": "91",
+    "stability": "50"
+  },
+  {
+    "id": "ew-2",
+    "name": "Warlord",
+    "type": "Assault Rifle",
+    "damage": "324 Blast Damage",
+    "rpm": "600",
+    "mag": "30",
+    "talentName": "Play Rough",
+    "talentDescription": "While firing, reduces Incoming Damage by 25%. When firing ceases, applies 60% of the reduced damage and grants +10% Skill Damage for 10 seconds.",
+    "accuracy": "68",
+    "reloadSpeed": "3.1s",
+    "optimalRange": "29m",
+    "movementSpeed": "54",
+    "stability": "56"
+  },
+  {
+    "id": "ew-3",
+    "name": "Strawberry Milkshake",
+    "type": "LMG",
+    "damage": "300 Shredding Damage",
+    "rpm": "550",
+    "mag": "100",
+    "talentName": "Anarchy",
+    "talentDescription": "Hits inflict a debuff, dealing 100% Weapon Damage over 10 seconds, up to 50 stacks. Enemies dying with this debuff transfer all stacks to a nearby enemy within 25 meters.",
+    "accuracy": "74",
+    "reloadSpeed": "5.6s",
+    "optimalRange": "29m",
+    "movementSpeed": "19",
+    "stability": "50"
+  }
 ]

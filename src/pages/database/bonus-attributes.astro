@@ -2,13 +2,23 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import SectionTag from '../../components/SectionTag.astro';
+import bonusAttributes from '../../data/bonus-attributes.json';
 
 const title = "Bonus Attributes Database";
 const description = "Complete database of all Bonus Attributes in The Division Resurgence.";
 const breadcrumbs = [
   { name: 'Database', url: '#' },
-  { name: 'Bonus Attributes', url: '#' }
+  { name: 'Bonus Attributes', url: '/database/bonus-attributes/' }
 ];
+
+const getCategoryColor = (cat: string) => {
+  switch(cat.toLowerCase()) {
+    case 'firepower': return 'var(--danger, #ef4444)';
+    case 'toughness': return 'var(--info, #3b82f6)';
+    case 'engineering': return 'var(--warning, #eab308)';
+    default: return 'var(--ink-light)';
+  }
+};
 ---
 
 <BaseLayout title={title} description={description} breadcrumbs={breadcrumbs}>
@@ -16,9 +26,94 @@ const breadcrumbs = [
     <Breadcrumbs items={breadcrumbs} />
     <SectionTag label="Database" />
     <h1 class="heading-accent">Bonus Attributes</h1>
-    
-    <div class="prose">
-      <p>This is a placeholder for the Bonus Attributes database. Tables and data will be added here soon.</p>
+    <p style="color:var(--ink-muted);margin-bottom:var(--sp-8);">
+      Browse the complete list of possible Bonus Attributes that can roll on gear and weapons, categorized by their core function.
+    </p>
+
+    <div class="db-grid" id="attributes-grid">
+      {bonusAttributes.map((category) => (
+        <article class="db-card">
+          <div class="db-card__header" style={`border-bottom-color: ${getCategoryColor(category.category)};`}>
+            <h2 class="db-card__title" style={`color: ${getCategoryColor(category.category)};`}>
+              {category.category}
+            </h2>
+          </div>
+          
+          <div class="db-card__body">
+            <ul class="attribute-list">
+              {category.attributes.map(attr => (
+                <li>{attr}</li>
+              ))}
+            </ul>
+          </div>
+        </article>
+      ))}
     </div>
   </div>
 </BaseLayout>
+
+<style>
+  .db-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--sp-6);
+  }
+
+  @media (min-width: 768px) {
+    .db-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .db-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--border-radius);
+    padding: var(--sp-5);
+    display: flex;
+    flex-direction: column;
+    gap: var(--sp-4);
+    transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+  }
+
+  .db-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+
+  .db-card__header {
+    border-bottom: 2px solid var(--border);
+    padding-bottom: var(--sp-3);
+  }
+
+  .db-card__title {
+    font-size: var(--text-2xl);
+    font-weight: 700;
+    margin: 0;
+  }
+
+  .db-card__body {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: var(--sp-4);
+  }
+
+  .attribute-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--sp-2);
+  }
+
+  .attribute-list li {
+    font-size: var(--text-md);
+    color: var(--ink);
+    padding: var(--sp-2) var(--sp-3);
+    background: var(--bg);
+    border-radius: var(--border-radius);
+    border: 1px solid var(--border);
+  }
+</style>

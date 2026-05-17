@@ -1,18 +1,114 @@
 [
-  {"id":"gs-1","gearSetName":"Striker's Battlegear","twoPiece":"+15% Weapon Damage","threePiece":"+15% Rate of Fire","fourPiece":"Every shot landed grants a stack of +0.5% weapon damage. Max 100 stacks. Missing removes 2 stacks. Stacks decay at 1/s out of combat."},
-  {"id":"gs-2","gearSetName":"True Patriot","twoPiece":"+10% Damage to Armor","threePiece":"+10% Protection from Elites","fourPiece":"Enemies cycle through red, white, and blue debuffs. Red: 8% damage taken. White: repairs your armor on hit. Blue: distributes damage to nearby enemies."},
-  {"id":"gs-3","gearSetName":"Ongoing Directive","twoPiece":"+15% Status Effects","threePiece":"+20% Skill Duration","fourPiece":"Killing a status-affected enemy transfers the status to nearby enemies within 10m and grants hollow-point ammo that applies bleed."},
-  {"id":"gs-4","gearSetName":"Hard Wired","twoPiece":"+15% Skill Health","threePiece":"+15% Skill Damage","fourPiece":"Using a skill resets the cooldown of your other skill. Cooldown: 20 seconds. Damaging an enemy with a skill reduces this cooldown by 3 seconds."},
-  {"id":"gs-5","gearSetName":"Foundry Bulwark","twoPiece":"+10% Armor","threePiece":"+3% Armor Regeneration per second","fourPiece":"While your shield is deployed, gain 1% bonus armor per second. Max 20% bonus armor. Damage taken by shield contributes to bonus armor generation."},
-  {"id":"gs-6","gearSetName":"Eclipse Protocol","twoPiece":"+15% Status Effects","threePiece":"+15% Skill Haste","fourPiece":"Applying a status effect to an enemy causes it to spread to enemies within 8 meters when that enemy dies. Status effects deal 50% increased damage."},
-  {"id":"gs-7","gearSetName":"Heartbreaker","twoPiece":"+15% Body Shot Damage","threePiece":"+10% Rate of Fire","fourPiece":"Each body shot grants a stack of +1% bonus armor and +1% weapon damage. Max 50 stacks. Stacks decay by 2/s when not hitting body shots."},
-  {"id":"gs-8","gearSetName":"Rigger","twoPiece":"+15% Skill Health","threePiece":"+15% Skill Repair","fourPiece":"Destroying or manually detonating your skill returns it with full charges and +25% skill damage for 15 seconds."},
-  {"id":"gs-9","gearSetName":"Hunter's Fury","twoPiece":"+15% Weapon Damage","threePiece":"+15% Health Damage","fourPiece":"Kills within 15m apply confusion to enemies within 5m for 5 seconds. Kills grant +20% weapon damage and 5% armor repair. Max 5 stacks."},
-  {"id":"gs-10","gearSetName":"Umbra Initiative","twoPiece":"+15% Weapon Damage","threePiece":"+10% Critical Hit Chance","fourPiece":"Hitting an enemy creates a weakness zone behind them. Allies shooting through the zone deal +25% amplified damage for 5 seconds."},
-  {"id":"gs-11","gearSetName":"Negotiator's Dilemma","twoPiece":"+15% Critical Hit Damage","threePiece":"+15% Critical Hit Chance","fourPiece":"Critical hits mark enemies. Damaging a marked enemy distributes 60% of damage dealt to all other marked targets. Max 3 marks."},
-  {"id":"gs-12","gearSetName":"Tip of the Spear","twoPiece":"+20% Signature Weapon Damage","threePiece":"+20% Skill Duration","fourPiece":"Signature weapon kills grant +40% weapon damage to the group for 20 seconds. Crossbow bolts generate on headshot kills."},
-  {"id":"gs-13","gearSetName":"System Corruption","twoPiece":"+15% Armor on Kill","threePiece":"+20% Damage to Pulsed Targets","fourPiece":"Using an armor kit or receiving bonus armor grants +50% amplified damage and +50% bonus armor for 10 seconds."},
-  {"id":"gs-14","gearSetName":"Aces & Eights","twoPiece":"+20% Headshot Damage","threePiece":"+20% Marksman Rifle Damage","fourPiece":"Headshots flip a card from a deck. Full hand grants bonus damage to the group. Four of a Kind: +30% weapon damage for 10s. Dead Man's Hand: +60% weapon damage for 5s."},
-  {"id":"gs-15","gearSetName":"Future Initiative","twoPiece":"+15% Repair Skills","threePiece":"+15% Incoming Repairs","fourPiece":"Repairing an ally at full armor grants them and you +25% total weapon and skill damage for 15 seconds. Healing allies below 50% armor grants the same bonus."},
-  {"id":"gs-16","gearSetName":"Empress International","twoPiece":"+15% Skill Damage","threePiece":"+15% Skill Haste","fourPiece":"Skills that damage enemies apply a debuff that increases all damage taken by 10% for 8 seconds. Deploying a skill resets other skill cooldowns (20s CD)."}
+  {
+    "id": "gs-1",
+    "name": "Fury Strike",
+    "bonus2": "Optimal Range +10.0%",
+    "bonus3": "Weapon Critical Hit Chance +10.8%",
+    "bonus4": "Weapon Critical Hit Damage +24.0%"
+  },
+  {
+    "id": "gs-2",
+    "name": "Quick Draw",
+    "bonus2": "Reload Speed +12.0%",
+    "bonus3": "Magazine Size +27.0%",
+    "bonus4": "Headshot Damage +28.8%"
+  },
+  {
+    "id": "gs-3",
+    "name": "Phalanx Attack",
+    "bonus2": "Magazine Size +18.0%",
+    "bonus3": "Rate of Fire +18.0%",
+    "bonus4": "Weapon Multi-Shot Chance +12.0%"
+  },
+  {
+    "id": "gs-4",
+    "name": "One Shot One Kill",
+    "bonus2": "Accuracy +24.0%",
+    "bonus3": "Headshot Damage +21.6%",
+    "bonus4": "Firepower +18.0%"
+  },
+  {
+    "id": "gs-5",
+    "name": "Gunny Johnny",
+    "bonus2": "Rate of Fire +12.0%",
+    "bonus3": "Reload Speed +18.0%",
+    "bonus4": "Weapon Damage +12.0%"
+  },
+  {
+    "id": "gs-6",
+    "name": "Mechanical Enemy",
+    "bonus2": "Weapon Critical Hit Chance +7.2%",
+    "bonus3": "Optimal Range +15.0%",
+    "bonus4": "Skill Cooldown Recovery -12.0%"
+  },
+  {
+    "id": "gs-7",
+    "name": "Jackpot",
+    "bonus2": "Skill Radius +12.0%",
+    "bonus3": "Skill Critical Chance +10.8%",
+    "bonus4": "Skill Critical Damage +24.0%"
+  },
+  {
+    "id": "gs-8",
+    "name": "Long-term Effect",
+    "bonus2": "Skill Health +12.0%",
+    "bonus3": "Skill Duration +14.4%",
+    "bonus4": "Engineering +18.0%"
+  },
+  {
+    "id": "gs-9",
+    "name": "Dr. Medic",
+    "bonus2": "Healing Intensity +10.0%",
+    "bonus3": "Skill Intensity +9.0%",
+    "bonus4": "Release Extra Protection +20.0%"
+  },
+  {
+    "id": "gs-10",
+    "name": "Boom-Shakalaka",
+    "bonus2": "Skill Cooldown Recovery -6.0%",
+    "bonus3": "Skill Radius +18.0%",
+    "bonus4": "Skill Intensity +12.0%"
+  },
+  {
+    "id": "gs-11",
+    "name": "Fire Cycle",
+    "bonus2": "Skill Critical Damage +12.0%",
+    "bonus3": "Signature Ability Charge Efficiency +18.0%",
+    "bonus4": "Skill Multi-Shot Chance +12.0%"
+  },
+  {
+    "id": "gs-12",
+    "name": "Mechanical Expert",
+    "bonus2": "Skill Duration +9.6%",
+    "bonus3": "Skill Cooldown Recovery -9.0%",
+    "bonus4": "Signature Ability Charge Efficiency +24.0%"
+  },
+  {
+    "id": "gs-13",
+    "name": "Captain Cow",
+    "bonus2": "Movement Speed +3.6%",
+    "bonus3": "Skill Duration +14.4%",
+    "bonus4": "Healing Intensity +20.0%"
+  },
+  {
+    "id": "gs-14",
+    "name": "Healing Elites",
+    "bonus2": "Received Healing +14.4%",
+    "bonus3": "Release Extra Protection +15.0%",
+    "bonus4": "Armor +28.0%"
+  },
+  {
+    "id": "gs-15",
+    "name": "Self-Propelled Shield",
+    "bonus2": "Armor +14.0%",
+    "bonus3": "Movement Speed +5.4%",
+    "bonus4": "Max Health +24.0%"
+  },
+  {
+    "id": "gs-16",
+    "name": "Fearless Warrior",
+    "bonus2": "Damage Reduction +6.0%",
+    "bonus3": "Damage Bonus +9.0%",
+    "bonus4": "Toughness +18.0%"
+  }
 ]

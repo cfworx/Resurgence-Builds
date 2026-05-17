@@ -1,12 +1,127 @@
 [
-  {"id":"bpt-1","talentName":"Vigilance","description":"+25% weapon damage when you have not taken damage for 4 seconds. Taking damage cancels the buff for 4 seconds."},
-  {"id":"bpt-2","talentName":"Companion","description":"While near a skill or ally within 5 meters, gain +15% weapon damage."},
-  {"id":"bpt-3","talentName":"Composure","description":"While in cover, weapon damage is increased by 15%."},
-  {"id":"bpt-4","talentName":"Bloodsucker","description":"Killing an enemy grants 10% bonus armor for 10 seconds. Stacks up to 5 times. Refreshes on kill."},
-  {"id":"bpt-5","talentName":"Adrenaline Rush","description":"When within 10 meters of 2 or more enemies, gain 20% bonus armor for 5 seconds. Cooldown: 5 seconds."},
-  {"id":"bpt-6","talentName":"Tech Support","description":"Killing an enemy with a skill extends the duration of all active skills by 10% of their base duration. Max extension: 50%."},
-  {"id":"bpt-7","talentName":"Combined Arms","description":"Shooting an enemy increases skill damage by 10% for 3 seconds."},
-  {"id":"bpt-8","talentName":"Galvanize","description":"Applying a status effect to an enemy grants 40% bonus armor to nearby allies within 20 meters for 10 seconds. Cooldown: 15 seconds."},
-  {"id":"bpt-9","talentName":"Opportunistic","description":"Enemies you hit from behind take 10% amplified damage from all sources for 5 seconds."},
-  {"id":"bpt-10","talentName":"Wicked","description":"Applying a status effect to an enemy increases your weapon damage by 18% for 10 seconds."}
+  {
+    "id": "bp-1",
+    "name": "Assault Protection",
+    "description": "Having Extra Health grants +1.80% Weapon Damage per second, up to 10 stacks. Losing all Extra Health removes all stacks."
+  },
+  {
+    "id": "bp-2",
+    "name": "Brainstorm",
+    "description": "Grants +15% Skill Duration. Grants an additional +15% Skill Duration when within 20 meters of an ally."
+  },
+  {
+    "id": "bp-3",
+    "name": "Combat Inspiration",
+    "description": "Weapon Critical Hits grant +3.60% Max Health for 10 seconds, up to 10 stacks."
+  },
+  {
+    "id": "bp-4",
+    "name": "Defense Enhancement",
+    "description": "Gaining Extra Health grants +7% Armor for 10 seconds, up to 5 stacks."
+  },
+  {
+    "id": "bp-5",
+    "name": "Double-edged Bullet",
+    "description": "Having Extra Health grants +18% Damage and -20% Damage Reduction."
+  },
+  {
+    "id": "bp-6",
+    "name": "Electrical Protection",
+    "description": "Having Extra Health grants +1.80% Skill Intensity per second, up to 10 stacks. Losing all Extra Health removes all stacks."
+  },
+  {
+    "id": "bp-7",
+    "name": "Emergency Measures",
+    "description": "Taking damage restores 50% Max Health when Health is below 20%. Talent Cooldown: 30 seconds."
+  },
+  {
+    "id": "bp-8",
+    "name": "Explosive Burst",
+    "description": "Throwing a Grenade grants +9% Skill Multi-shot Chance for 2 seconds, up to 10 stacks. Talent Cooldown: 3 seconds."
+  },
+  {
+    "id": "bp-9",
+    "name": "Explosive Fury",
+    "description": "Throwing a Grenade grants +18% Rate of Fire for 10 seconds, up to 2 stacks. Talent Cooldown: 3 seconds."
+  },
+  {
+    "id": "bp-10",
+    "name": "Hidden Impact",
+    "description": "Grants +18% Weapon Critical Hit Chance when behind cover for at least 3 seconds."
+  },
+  {
+    "id": "bp-11",
+    "name": "Injured Taunt",
+    "description": "Hits taken grant +1.80% Damage Reduction for 10 seconds, up to 10 stacks."
+  },
+  {
+    "id": "bp-12",
+    "name": "Inspiration",
+    "description": "Grants +30% Rate of Fire when Skills are deployed."
+  },
+  {
+    "id": "bp-13",
+    "name": "Intense Performance",
+    "description": "Grants +33% Skill Radius but also inflicts -5% Skill Duration."
+  },
+  {
+    "id": "bp-14",
+    "name": "Meditation",
+    "description": "Grants +3.60% Skill Critical Hit Chance per second while immobile, up to 5 stacks. Movement removes 1 stacks per second."
+  },
+  {
+    "id": "bp-15",
+    "name": "Minion Training",
+    "description": "Skill Critical Hit Kills grant +36% Skill Critical Hit Damage for 12 seconds."
+  },
+  {
+    "id": "bp-16",
+    "name": "Open Fire",
+    "description": "Deploying the Signature Ability grants +20% Optimal Range and +36% Magazine Size for 12 seconds."
+  },
+  {
+    "id": "bp-17",
+    "name": "Overwatch",
+    "description": "Grants +15% Skill Damage when behind cover for at least 3 seconds."
+  },
+  {
+    "id": "bp-18",
+    "name": "Painkillers",
+    "description": "Using a Medical Kit grants +9% Damage Reduction for 8 seconds, up to 2 stacks."
+  },
+  {
+    "id": "bp-19",
+    "name": "Prime Engineer",
+    "description": "Deploying a Skill at full Health grants +22.50% Engineering for 12 seconds."
+  },
+  {
+    "id": "bp-20",
+    "name": "Rescue Protection",
+    "description": "Rescuing a downed ally grants all allies within 40 meters Extra Health equal to 12.50% Max Health for 10 seconds."
+  },
+  {
+    "id": "bp-21",
+    "name": "Rock Solid",
+    "description": "Receiving Healing grants +15% Damage Reduction for 3 seconds."
+  },
+  {
+    "id": "bp-22",
+    "name": "Siege",
+    "description": "Grants Extra Health equal to 37.50% Max Health for 15 seconds when 2 enemies are within 20 meters. Talent Cooldown: 30 seconds."
+  },
+  {
+    "id": "bp-23",
+    "name": "Simple Pleasures",
+    "description": "Healing grants +4% Weapon Damage for 5 seconds, up to 3 stacks."
+  },
+  {
+    "id": "bp-24",
+    "name": "Street Fighter",
+    "description": "Grants +5% Damage Reduction while within 20 meters of an enemy. Grants +15% Weapon Critical Hit Chance for 5 seconds when an enemy dies within 20 meters."
+  },
+  {
+    "id": "bp-25",
+    "name": "Unstoppable",
+    "description": "Kills grant +5% Weapon Damage for 10 seconds, up to 3 stacks."
+  }
 ]
