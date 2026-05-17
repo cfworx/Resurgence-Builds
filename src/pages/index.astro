@@ -1,0 +1,205 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SectionTag from '../components/SectionTag.astro';
+import PostCard from '../components/PostCard.astro';
+import { getCollection } from 'astro:content';
+
+// Fetch all content collections
+const allNews = await getCollection('news');
+const allPatchNotes = await getCollection('patchNotes');
+const allGuides = await getCollection('guides');
+const allBuilds = await getCollection('builds');
+
+// Normalize into a unified post format
+interface UnifiedPost {
+  title: string;
+  href: string;
+  date: Date;
+  author: string;
+  description: string;
+  type: 'news' | 'patch-notes' | 'guide' | 'build';
+  tags: string[];
+}
+
+const posts: UnifiedPost[] = [
+  ...allNews.map((post) => ({
+    title: post.data.title,
+    href: `/news/${post.id}/`,
+    date: post.data.publishDate,
+    author: post.data.author,
+    description: post.data.description,
+    type: 'news' as const,
+    tags: post.data.tags,
+  })),
+  ...allPatchNotes.map((pn) => ({
+    title: pn.data.title,
+    href: `/patch-notes/${pn.id}/`,
+    date: pn.data.patchDate,
+    author: pn.data.author,
+    description: pn.data.summary,
+    type: 'patch-notes' as const,
+    tags: [`v${pn.data.version}`],
+  })),
+  ...allGuides.map((guide) => ({
+    title: guide.data.title,
+    href: `/guides/${guide.id}/`,
+    date: guide.data.lastUpdated,
+    author: guide.data.author || 'Resurgence Builds',
+    description: guide.data.description,
+    type: 'guide' as const,
+    tags: guide.data.tags,
+  })),
+  ...allBuilds.map((build) => ({
+    title: build.data.title,
+    href: `/builds/${build.id}/`,
+    date: build.data.lastUpdated,
+    author: build.data.author,
+    description: build.data.description,
+    type: 'build' as const,
+    tags: build.data.tags,
+  })),
+];
+
+// Sort by date (newest first)
+posts.sort((a, b) => b.date.getTime() - a.date.getTime());
+
+// Fixed tag list
+const filterTags = [
+  { label: 'News', value: 'news' },
+  { label: 'Builds', value: 'build' },
+  { label: 'Guides', value: 'guide' },
+  { label: 'Patch Notes', value: 'patch-notes' },
+];
+---
+
+<BaseLayout
+  title="Division Resurgence Builds, Guides & News"
+  description="The #1 independent resource for Tom Clancy's The Division Resurgence. Find optimized builds, in-depth guides, patch notes breakdowns, and the latest news. Updated every patch."
+  jsonLd={{
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'Resurgence Builds',
+    url: 'https://resurgencebuilds.com',
+    description: 'Independent fan resource for Tom Clancy\'s The Division Resurgence — builds, guides, patch notes, and news.',
+    publisher: {
+      '@type': 'Organization',
+      name: 'Resurgence Builds',
+      url: 'https://resurgencebuilds.com',
+    },
+  }}
+>
+  <!-- Hero -->
+  <section class="hero-banner">
+    <img src="/images/hero-banner.jpg" alt="" class="hero-banner__img" />
+    <div class="hero-banner__overlay"></div>
+    <div class="hero-banner__content container" style="display:flex; justify-content:center;">
+      <div class="hero-box">
+        <h1 class="hero__title" style="margin-bottom: var(--sp-6);">
+          Resurgence<span style="color:var(--accent);">Builds</span>
+        </h1>
+        <div class="hero__actions">
+          <a href="/builds/" class="btn btn--primary">Browse Builds</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider" style="max-width:var(--max-width);margin:0 auto;" />
+
+  <!-- Latest Posts Feed -->
+  <section class="section">
+    <div class="container">
+      <SectionTag label="Latest" />
+      <h2 class="heading-accent">Latest Posts</h2>
+      <p style="color:var(--ink-muted);margin-bottom:var(--sp-6);">
+        News, patch notes, and guides — all in one place.
+      </p>
+
+      <!-- Tag Filter Bar -->
+      <div class="filter-bar" id="tag-filters">
+        <button class="filter-btn is-active" data-tag="all">All</button>
+        {filterTags.map((tag) => (
+          <button class="filter-btn" data-tag={tag.value}>{tag.label}</button>
+        ))}
+      </div>
+
+      <!-- Posts Grid -->
+      <div class="grid grid--3" id="posts-grid">
+        {posts.map((post) => (
+          <PostCard
+            title={post.title}
+            href={post.href}
+            date={post.date}
+            author={post.author}
+            description={post.description}
+            type={post.type}
+            tags={post.tags}
+          />
+        ))}
+      </div>
+
+      <!-- Empty state (hidden by default) -->
+      <div id="no-results" style="display:none;text-align:center;padding:var(--sp-12) 0;">
+        <p style="color:var(--ink-muted);font-size:var(--text-lg);">No posts match that filter.</p>
+        <button class="btn btn--outline" id="clear-filter" style="margin-top:var(--sp-4);">Show All Posts</button>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<script>
+  const filterBar = document.getElementById('tag-filters');
+  const grid = document.getElementById('posts-grid');
+  const noResults = document.getElementById('no-results');
+  const clearBtn = document.getElementById('clear-filter');
+
+  function filterPosts(activeTag: string) {
+    if (!grid) return;
+
+    const cards = grid.querySelectorAll<HTMLElement>('.post-card');
+    let visibleCount = 0;
+
+    cards.forEach((card) => {
+      if (activeTag === 'all') {
+        card.style.display = '';
+        visibleCount++;
+        return;
+      }
+
+      const cardType = card.dataset.type || '';
+      if (cardType === activeTag) {
+        card.style.display = '';
+        visibleCount++;
+      } else {
+        card.style.display = 'none';
+      }
+    });
+
+    if (noResults) {
+      noResults.style.display = visibleCount === 0 ? '' : 'none';
+    }
+  }
+
+  function setActiveButton(activeBtn: Element) {
+    filterBar?.querySelectorAll('.filter-btn').forEach((b) => b.classList.remove('is-active'));
+    activeBtn.classList.add('is-active');
+  }
+
+  if (filterBar) {
+    filterBar.addEventListener('click', (e) => {
+      const btn = (e.target as HTMLElement).closest('.filter-btn');
+      if (!btn) return;
+      setActiveButton(btn);
+      const tag = btn.getAttribute('data-tag') || 'all';
+      filterPosts(tag);
+    });
+  }
+
+  if (clearBtn) {
+    clearBtn.addEventListener('click', () => {
+      const allBtn = filterBar?.querySelector('[data-tag="all"]');
+      if (allBtn) setActiveButton(allBtn);
+      filterPosts('all');
+    });
+  }
+</script>

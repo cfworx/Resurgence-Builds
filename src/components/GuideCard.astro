@@ -1,0 +1,21 @@
+---
+export interface Props {
+  title: string;
+  href: string;
+  category: string;
+  description: string;
+  lastUpdated: Date;
+}
+
+const { title, href, category, description, lastUpdated } = Astro.props;
+const formattedDate = lastUpdated.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+---
+
+<article class="card">
+  <a href={href} style="text-decoration:none;color:inherit;display:block;">
+    <span class="tag">{category}</span>
+    <h3 class="card__title" style="margin-top:var(--sp-2);">{title}</h3>
+    <p class="card__meta">Updated {formattedDate}</p>
+    <p class="card__description">{description}</p>
+  </a>
+</article>

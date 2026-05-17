@@ -1,0 +1,71 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import SectionTag from '../components/SectionTag.astro';
+
+export interface Props {
+  title: string;
+  description: string;
+  category: string;
+  lastUpdated: Date;
+  tags: string[];
+  author?: string;
+  headings?: { depth: number; slug: string; text: string }[];
+}
+
+const { title, description, category, lastUpdated, tags, author = 'Resurgence Builds', headings = [] } = Astro.props;
+
+const formattedDate = lastUpdated.toLocaleDateString('en-US', {
+  month: 'long',
+  day: 'numeric',
+  year: 'numeric',
+});
+
+const breadcrumbItems = [
+  { name: 'Guides', url: '/guides/' },
+  { name: title, url: '#' },
+];
+
+const tocItems = headings.filter(h => h.depth <= 3);
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  breadcrumbs={breadcrumbItems}
+  ogType="article"
+  article={{
+    publishDate: lastUpdated.toISOString(),
+    author,
+    tags,
+  }}
+>
+  <div class="container section">
+    <Breadcrumbs items={breadcrumbItems} />
+
+    <SectionTag label="Guide" />
+    <h1 class="heading-accent">{title}</h1>
+
+    <div class="article-meta">
+      <span class="tag">{category}</span>
+      <span>By {author}</span>
+      <span>·</span>
+      <time datetime={lastUpdated.toISOString()}>{formattedDate}</time>
+    </div>
+
+    {tocItems.length > 0 && (
+      <nav class="toc" aria-label="Table of contents">
+        <p class="toc__title">Contents</p>
+        {tocItems.map(h => (
+          <a href={`#${h.slug}`} style={`padding-left:${(h.depth - 2) * 1}rem;`}>
+            {h.text}
+          </a>
+        ))}
+      </nav>
+    )}
+
+    <article class="prose content-width">
+      <slot />
+    </article>
+  </div>
+</BaseLayout>

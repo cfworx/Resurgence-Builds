@@ -1,0 +1,12 @@
+[
+  {"id":"wt-1","talentName":"Ranger","description":"Every 5 meters your target is away from you grants +2% weapon damage. Caps at 30 meters (+12%).","sourceWeapons":["ACR-E","AK-47","FAMAS"]},
+  {"id":"wt-2","talentName":"Close & Personal","description":"Killing a target within 7 meters grants +30% weapon damage for 10 seconds.","sourceWeapons":["MP5","Vector","UMP-45"]},
+  {"id":"wt-3","talentName":"Flatline","description":"Hitting a pulsed or tracked enemy deals 15% additional weapon damage.","sourceWeapons":["Police M4","Mk16","G36"]},
+  {"id":"wt-4","talentName":"Measured","description":"Top half of magazine has +15% rate of fire and -20% weapon damage. Bottom half has -15% rate of fire and +30% weapon damage.","sourceWeapons":["RPK-74","L86 LSW","M60"]},
+  {"id":"wt-5","talentName":"Breadbasket","description":"Landing body shots adds a stack of +5% headshot damage. Max 3 stacks. Stacks reset on headshot or after 10 seconds.","sourceWeapons":["M700","SRS","Hunting M44"]},
+  {"id":"wt-6","talentName":"Strained","description":"Gain +10% critical hit damage for every 0.5 seconds you are firing. Max 5 stacks. Stacks reset when not firing for 1 second.","sourceWeapons":["MP7","P90","AUG"]},
+  {"id":"wt-7","talentName":"Preservation","description":"Killing an enemy repairs 10% armor over 5 seconds. Headshot kills double the repair.","sourceWeapons":["ACR-E","SCAR-H","M4A1"]},
+  {"id":"wt-8","talentName":"Killer","description":"Critical hit kills grant +30% critical hit damage for 10 seconds.","sourceWeapons":["Vector","MP5","T821"]},
+  {"id":"wt-9","talentName":"Optimist","description":"Weapon damage is increased by +3% for every 10% ammo missing from the magazine.","sourceWeapons":["AK-47","G36","Police M4"]},
+  {"id":"wt-10","talentName":"Vindictive","description":"Killing a status-affected enemy grants +18% critical hit chance to you and nearby allies for 10 seconds.","sourceWeapons":["Scorpio","FAMAS","RPK-74"]}
+]

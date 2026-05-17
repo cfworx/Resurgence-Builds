@@ -1,0 +1,102 @@
+---
+export interface Props {
+  title: string;
+  href: string;
+  date: Date;
+  author: string;
+  description: string;
+  type: 'news' | 'patch-notes' | 'guide' | 'build';
+  tags?: string[];
+}
+
+const { title, href, date, author, description, type, tags = [] } = Astro.props;
+
+const formattedDate = date.toLocaleDateString('en-US', {
+  month: 'short',
+  day: 'numeric',
+  year: 'numeric',
+});
+
+const typeLabels: Record<string, string> = {
+  'news': 'News',
+  'patch-notes': 'Patch Notes',
+  'guide': 'Guide',
+  'build': 'Build',
+};
+
+const typeLabel = typeLabels[type] || type;
+---
+
+<article class="card post-card" data-type={type} data-tags={JSON.stringify(tags)}>
+  <a href={href} style="text-decoration:none;color:inherit;display:block;">
+    <div class="post-card__header">
+      <span class={`post-type-badge post-type-badge--${type}`}>{typeLabel}</span>
+      <span class="post-card__date">{formattedDate}</span>
+    </div>
+    <h3 class="card__title">{title}</h3>
+    <p class="card__meta">By {author}</p>
+    <p class="card__description">{description}</p>
+    {tags.length > 0 && (
+      <div class="post-card__tags">
+        {tags.slice(0, 4).map(tag => <span class="tag">{tag}</span>)}
+      </div>
+    )}
+  </a>
+</article>
+
+<style>
+  .post-card__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: var(--sp-3);
+  }
+
+  .post-card__date {
+    font-family: var(--font-mono);
+    font-size: var(--text-xs);
+    color: var(--ink-muted);
+  }
+
+  .post-type-badge {
+    display: inline-block;
+    font-family: var(--font-mono);
+    font-size: var(--text-xs);
+    font-weight: 700;
+    padding: var(--sp-1) var(--sp-2);
+    border-radius: var(--border-radius);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .post-type-badge--news {
+    background: rgba(242, 104, 34, 0.15);
+    color: var(--accent);
+    border: 1px solid var(--accent-dim);
+  }
+
+  .post-type-badge--patch-notes {
+    background: rgba(93, 154, 239, 0.15);
+    color: #5B9AEF;
+    border: 1px solid #3A7BD5;
+  }
+
+  .post-type-badge--guide {
+    background: rgba(109, 170, 69, 0.15);
+    color: var(--success);
+    border: 1px solid #4A9A4A;
+  }
+
+  .post-type-badge--build {
+    background: rgba(212, 165, 52, 0.15);
+    color: #F5CC45;
+    border: 1px solid #D4A534;
+  }
+
+  .post-card__tags {
+    display: flex;
+    gap: var(--sp-1);
+    flex-wrap: wrap;
+    margin-top: var(--sp-3);
+  }
+</style>

@@ -1,0 +1,16 @@
+---
+import NewsLayout from '../../layouts/NewsLayout.astro';
+import { getCollection, render } from 'astro:content';
+
+export async function getStaticPaths() {
+  const patchNotes = await getCollection('patchNotes');
+  return patchNotes.map((pn) => ({ params: { slug: pn.id }, props: { pn } }));
+}
+
+const { pn } = Astro.props;
+const { Content } = await render(pn);
+---
+
+<NewsLayout title={pn.data.title} description={pn.data.summary} publishDate={pn.data.patchDate} author={pn.data.author} tags={[`v${pn.data.version}`]} parentPath="/patch-notes/" parentLabel="Patch Notes">
+  <Content />
+</NewsLayout>

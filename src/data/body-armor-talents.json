@@ -1,0 +1,12 @@
+[
+  {"id":"bat-1","talentName":"Spotter","description":"Amplifies weapon and skill damage by 15% to pulsed and tracked enemies."},
+  {"id":"bat-2","talentName":"Obliterate","description":"Critical hits increase total weapon damage by 1% for 5 seconds. Stacks up to 25 times."},
+  {"id":"bat-3","talentName":"Unstoppable Force","description":"Killing an enemy grants +5% weapon damage for 10 seconds. Stacks up to 5 times (25% max). Refreshes on kill."},
+  {"id":"bat-4","talentName":"Unbreakable","description":"When your armor breaks, repair 50% of your armor. Armor kits used within 5 seconds repair 100% armor. Cooldown: 55 seconds."},
+  {"id":"bat-5","talentName":"Kinetic Momentum","description":"Skills in motion gain 1% increased damage and repair every second. Max 15 stacks. Stacks reset when the skill stops moving."},
+  {"id":"bat-6","talentName":"Glass Cannon","description":"+25% amplified weapon and skill damage. +50% amplified damage taken."},
+  {"id":"bat-7","talentName":"Intimidate","description":"While you have bonus armor, gain +10% amplified weapon damage to enemies within 15 meters."},
+  {"id":"bat-8","talentName":"Overwatch","description":"After being in cover for 10 seconds, weapon and skill damage is increased by 12% for you and all allies. Canceled by leaving cover."},
+  {"id":"bat-9","talentName":"Empathic Resolve","description":"Repairing an ally grants them +3% weapon and skill damage for each percent of armor repaired. Max 15%. Lasts 10 seconds."},
+  {"id":"bat-10","talentName":"Headhunter","description":"After killing an enemy with a headshot, your next weapon hit within 30 seconds deals 125% of the enemy's max health as headshot damage. Damage is capped to 800% weapon damage."}
+]

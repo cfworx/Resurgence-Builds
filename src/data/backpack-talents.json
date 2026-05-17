@@ -1,0 +1,12 @@
+[
+  {"id":"bpt-1","talentName":"Vigilance","description":"+25% weapon damage when you have not taken damage for 4 seconds. Taking damage cancels the buff for 4 seconds."},
+  {"id":"bpt-2","talentName":"Companion","description":"While near a skill or ally within 5 meters, gain +15% weapon damage."},
+  {"id":"bpt-3","talentName":"Composure","description":"While in cover, weapon damage is increased by 15%."},
+  {"id":"bpt-4","talentName":"Bloodsucker","description":"Killing an enemy grants 10% bonus armor for 10 seconds. Stacks up to 5 times. Refreshes on kill."},
+  {"id":"bpt-5","talentName":"Adrenaline Rush","description":"When within 10 meters of 2 or more enemies, gain 20% bonus armor for 5 seconds. Cooldown: 5 seconds."},
+  {"id":"bpt-6","talentName":"Tech Support","description":"Killing an enemy with a skill extends the duration of all active skills by 10% of their base duration. Max extension: 50%."},
+  {"id":"bpt-7","talentName":"Combined Arms","description":"Shooting an enemy increases skill damage by 10% for 3 seconds."},
+  {"id":"bpt-8","talentName":"Galvanize","description":"Applying a status effect to an enemy grants 40% bonus armor to nearby allies within 20 meters for 10 seconds. Cooldown: 15 seconds."},
+  {"id":"bpt-9","talentName":"Opportunistic","description":"Enemies you hit from behind take 10% amplified damage from all sources for 5 seconds."},
+  {"id":"bpt-10","talentName":"Wicked","description":"Applying a status effect to an enemy increases your weapon damage by 18% for 10 seconds."}
+]

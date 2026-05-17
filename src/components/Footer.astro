@@ -1,0 +1,94 @@
+---
+const year = new Date().getFullYear();
+---
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-left">
+      <a href="/" class="footer-logo">Resurgence<span>Builds</span></a>
+      <span class="footer-sep">&middot;</span>
+      <span class="footer-copy">&copy; {year}</span>
+      <span class="footer-sep">&middot;</span>
+      <span class="footer-copy">CC BY-SA 4.0</span>
+    </div>
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <a href="/privacy/">Privacy</a>
+      <a href="/terms/">Terms</a>
+      <a href="/dmca/">DMCA</a>
+      <a href="/rss.xml">RSS</a>
+    </nav>
+  </div>
+  <p class="footer-disclaimer">
+    Not affiliated with, endorsed by, or sponsored by Ubisoft Entertainment SA. All game trademarks and copyrights belong to Ubisoft.
+  </p>
+</footer>
+
+<style>
+  .site-footer {
+    background: var(--surface);
+    border-top: 1px solid var(--border);
+    margin-top: var(--sp-16);
+    padding: var(--sp-4) 0 var(--sp-3);
+  }
+  .footer-inner {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 var(--sp-4);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: var(--sp-3);
+  }
+  @media (min-width: 768px) {
+    .footer-inner { padding: 0 var(--sp-8); }
+  }
+
+  .footer-left {
+    display: flex;
+    align-items: center;
+    gap: var(--sp-2);
+    flex-wrap: wrap;
+  }
+  .footer-logo {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: var(--text-sm);
+    color: var(--ink);
+    letter-spacing: -0.02em;
+    text-decoration: none;
+  }
+  .footer-logo:hover { color: var(--ink); }
+  .footer-logo span { color: var(--accent); }
+  .footer-sep { color: var(--border); }
+  .footer-copy {
+    font-size: var(--text-xs);
+    color: var(--ink-muted);
+  }
+
+  .footer-nav {
+    display: flex;
+    gap: var(--sp-4);
+    flex-wrap: wrap;
+  }
+  .footer-nav a {
+    font-size: var(--text-xs);
+    color: var(--ink-muted);
+    transition: color var(--transition-fast);
+  }
+  .footer-nav a:hover { color: var(--accent); }
+
+  .footer-disclaimer {
+    max-width: var(--max-width);
+    margin: var(--sp-3) auto 0;
+    padding: var(--sp-2) var(--sp-4) 0;
+    border-top: 1px solid var(--border);
+    font-size: 0.65rem;
+    color: var(--ink-muted);
+    text-align: center;
+    opacity: 0.7;
+  }
+  @media (min-width: 768px) {
+    .footer-disclaimer { padding: var(--sp-2) var(--sp-8) 0; }
+  }
+</style>

@@ -1,0 +1,12 @@
+[
+  {"id":"smc-1","comboSetName":"Explosive Ordinance","specialization":"Demolitionist","twoPieceBonus":"+15% Explosion Damage","threePieceBonus":"Grenades apply burn status for 5 seconds"},
+  {"id":"smc-2","comboSetName":"Precision Strike","specialization":"Demolitionist","twoPieceBonus":"+10% Skill Damage","threePieceBonus":"Mortar turret fires 2 rounds per volley"},
+  {"id":"smc-3","comboSetName":"Neural Network","specialization":"Tech Operator","twoPieceBonus":"+12% Skill Haste","threePieceBonus":"Deployed hive gains +25% radius"},
+  {"id":"smc-4","comboSetName":"Overload Circuit","specialization":"Tech Operator","twoPieceBonus":"+10% Skill Duration","threePieceBonus":"EMP pulse chains to 2 additional targets"},
+  {"id":"smc-5","comboSetName":"Iron Wall","specialization":"Bulwark","twoPieceBonus":"+15% Shield Health","threePieceBonus":"Blocking damage regenerates 3% shield per second"},
+  {"id":"smc-6","comboSetName":"Fortress Protocol","specialization":"Bulwark","twoPieceBonus":"+10% Armor","threePieceBonus":"Shield bash staggers elites for 2 seconds"},
+  {"id":"smc-7","comboSetName":"Spearhead","specialization":"Vanguard","twoPieceBonus":"+12% Weapon Damage while moving","threePieceBonus":"Sprinting grants 10% bonus armor for 5 seconds"},
+  {"id":"smc-8","comboSetName":"Blitz Tactics","specialization":"Vanguard","twoPieceBonus":"+8% Movement Speed","threePieceBonus":"Cover-to-cover moves grant 20% weapon damage for 3 seconds"},
+  {"id":"smc-9","comboSetName":"Triage System","specialization":"Field Medic","twoPieceBonus":"+15% Repair Skills","threePieceBonus":"Healing an ally boosts their damage by 8% for 10 seconds"},
+  {"id":"smc-10","comboSetName":"Revive Protocol","specialization":"Field Medic","twoPieceBonus":"+10% Incoming Repairs","threePieceBonus":"Reviver hive activates 30% faster"}
+]

@@ -1,0 +1,30 @@
+---
+import BuildLayout from '../../layouts/BuildLayout.astro';
+import { getCollection, render } from 'astro:content';
+
+export async function getStaticPaths() {
+  const builds = await getCollection('builds');
+  return builds.map((build) => ({
+    params: { slug: build.id },
+    props: { build },
+  }));
+}
+
+const { build } = Astro.props;
+const { Content } = await render(build);
+---
+
+<BuildLayout
+  title={build.data.title}
+  description={build.data.description}
+  specialization={build.data.specialization}
+  playstyle={build.data.playstyle}
+  patch={build.data.patch}
+  lastUpdated={build.data.lastUpdated}
+  pve={build.data.pve}
+  pvp={build.data.pvp}
+  tags={build.data.tags}
+  author={build.data.author}
+>
+  <Content />
+</BuildLayout>

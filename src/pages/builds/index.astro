@@ -1,0 +1,71 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import BuildCard from '../../components/BuildCard.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import SectionTag from '../../components/SectionTag.astro';
+import { getCollection } from 'astro:content';
+
+const allBuilds = await getCollection('builds');
+const sorted = allBuilds.sort((a, b) => b.data.lastUpdated.getTime() - a.data.lastUpdated.getTime());
+
+const specs = [...new Set(allBuilds.map(b => b.data.specialization))];
+const playstyles = [...new Set(allBuilds.map(b => b.data.playstyle))];
+
+const breadcrumbItems = [{ name: 'Builds', url: '/builds/' }];
+---
+
+<BaseLayout
+  title="Builds"
+  description="Browse all Division Resurgence builds. Filter by specialization and playstyle. Updated every patch."
+  breadcrumbs={breadcrumbItems}
+>
+  <div class="container section">
+    <Breadcrumbs items={breadcrumbItems} />
+    <SectionTag label="Builds" />
+    <h1 class="heading-accent">All Builds</h1>
+    <p style="color:var(--ink-muted);margin-bottom:var(--sp-6);">
+      Tested and optimized builds for every specialization and playstyle. Updated for the latest patch.
+    </p>
+
+    <div class="filter-bar" id="build-filters">
+      <button class="filter-btn is-active" data-filter="all">All</button>
+      {specs.map(s => <button class="filter-btn" data-filter={s}>{s}</button>)}
+    </div>
+
+    <div class="grid grid--3" id="builds-grid">
+      {sorted.map((build) => (
+        <div data-spec={build.data.specialization} data-playstyle={build.data.playstyle}>
+          <BuildCard
+            title={build.data.title}
+            href={`/builds/${build.id}/`}
+            specialization={build.data.specialization}
+            playstyle={build.data.playstyle}
+            description={build.data.description}
+            patch={build.data.patch}
+            pve={build.data.pve}
+            pvp={build.data.pvp}
+            tags={build.data.tags}
+          />
+        </div>
+      ))}
+    </div>
+  </div>
+</BaseLayout>
+
+<script>
+  const filterBar = document.getElementById('build-filters');
+  const grid = document.getElementById('builds-grid');
+  if (filterBar && grid) {
+    filterBar.addEventListener('click', (e) => {
+      const btn = (e.target as HTMLElement).closest('.filter-btn');
+      if (!btn) return;
+      filterBar.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('is-active'));
+      btn.classList.add('is-active');
+      const filter = btn.getAttribute('data-filter');
+      grid.querySelectorAll('[data-spec]').forEach(card => {
+        const el = card as HTMLElement;
+        el.style.display = (filter === 'all' || el.dataset.spec === filter) ? '' : 'none';
+      });
+    });
+  }
+</script>

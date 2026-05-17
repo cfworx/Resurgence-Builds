@@ -1,0 +1,151 @@
+# Workflow Guide — Resurgence Builds
+
+A plain-English guide for day-to-day content management. No coding experience required beyond basic text editing and Git commands.
+
+## Prerequisites
+
+You need:
+- A text editor (VS Code recommended — free at https://code.visualstudio.com)
+- Git installed (https://git-scm.com)
+- Node.js installed (https://nodejs.org — use the LTS version)
+- Access to the GitHub repository
+
+## How to Add a Build Guide
+
+1. **Open the project folder** in your text editor
+2. **Navigate to** `src/content/builds/`
+3. **Copy the template:** Right-click `_template.md` → Copy → Paste → Rename to your build slug (e.g., `demolitionist-explosive-dps.md`)
+4. **Edit the frontmatter** (the section between the `---` markers at the top):
+   - Change `title` to your build name
+   - Set `specialization` to one of: `Demolitionist`, `Tech Operator`, `Bulwark`, `Vanguard`, `Field Medic`
+   - Set `playstyle` to one of: `DPS`, `Tank`, `Support`, `Hybrid`, `Solo`
+   - Set `pve` and `pvp` to `true` or `false`
+   - Set `lastUpdated` to today's date (YYYY-MM-DD format, e.g., `2026-04-20`)
+   - Set `patch` to the current game version (e.g., `"1.2.0"`)
+   - Add relevant `tags` in the array
+   - Write a `description` (this appears in search results — keep it under 160 characters)
+   - Set `author` to your name
+5. **Write the build guide** below the second `---` using Markdown
+6. **Save the file**
+7. **Deploy** (see "How to Deploy Changes" below)
+
+## How to Update a Tier List After a Patch
+
+1. Open the tier list file in `src/content/tier-lists/` (e.g., `weapon-tier-list-s1.md`)
+2. Move weapons/items between tiers as needed
+3. Update the `lastUpdated` field in the frontmatter to today's date
+4. Update the `patch` field to the new patch version
+5. Add a note to the **Changelog** section at the bottom of the file:
+   ```
+   - **April 20, 2026 (Patch 1.3.0):** Moved X from B to A tier after buff. Added Y to S tier.
+   ```
+6. Save and deploy
+
+## How to Publish Patch Notes
+
+1. Copy `src/content/patch-notes/_template.md` → `patch-X-Y-Z.md` (use dashes, e.g., `patch-1-3-0.md`)
+2. Fill in the frontmatter:
+   - `title`: e.g., "Patch 1.3.0 — Mid-Season Balance Update"
+   - `version`: e.g., "1.3.0"
+   - `patchDate`: The date the patch went live
+   - `author`: Your name
+   - `summary`: One-sentence summary
+3. Write the patch notes in the body (use headings for sections like "Balance Changes", "Bug Fixes", etc.)
+4. Save and deploy
+
+## How to Deploy Changes
+
+### If you're comfortable with Git (recommended):
+
+```bash
+# Open terminal in the project folder
+git add .
+git commit -m "Added new build: Demolitionist Explosive DPS"
+git push
+```
+
+Cloudflare Pages will automatically build and deploy within ~30 seconds.
+
+### If you prefer GitHub's web interface:
+
+1. Go to the repository on GitHub.com
+2. Navigate to the file you want to edit
+3. Click the pencil icon (Edit)
+4. Make your changes
+5. Click "Commit changes" with a descriptive message
+6. The site deploys automatically
+
+## How to Preview Before Publishing
+
+```bash
+npm run dev
+```
+
+This starts a local server at `http://localhost:4321`. Open it in your browser to see your changes live. Press `q + Enter` in the terminal to stop.
+
+## How to Rollback If Something Breaks
+
+### Quick fix — revert the last commit:
+
+```bash
+git revert HEAD
+git push
+```
+
+This creates a new commit that undoes the last change. The site will redeploy automatically.
+
+### If the build itself is broken:
+
+1. Go to the Cloudflare Pages dashboard
+2. Find the last successful deployment in the deployment list
+3. Click on it → "Rollback to this deployment"
+4. The site immediately serves the older version
+5. Fix the issue locally, then push again
+
+### If you can't figure out what's wrong:
+
+1. Check the build log in Cloudflare Pages → your project → Deployments → click the failed deployment
+2. The error message usually tells you what's wrong (missing frontmatter field, typo in a filename, etc.)
+3. Common fixes are listed in "Common Troubleshooting" below
+
+## How to Moderate Comments (If Giscus Is Added)
+
+If Giscus (GitHub Discussions-based comments) is added in the future:
+
+1. Comments are managed through GitHub Discussions on the repository
+2. To delete a comment: Go to the Discussion → find the comment → click ⋯ → Delete
+3. To lock a discussion: Go to the Discussion → click Lock conversation
+4. To ban a user: Report them through GitHub's built-in reporting
+5. Giscus respects GitHub's moderation tools — no separate admin panel needed
+
+## Common Troubleshooting
+
+### "Build failed" after adding a new file
+
+**Cause:** Usually a frontmatter validation error — a required field is missing or has the wrong type.
+
+**Fix:** Check the error message. It will say something like `"specialization" is required`. Open your file and add the missing field. The valid values are listed in `src/content.config.ts`.
+
+### "Page shows 404" after deploying
+
+**Cause:** The file might be in the wrong directory, or the slug doesn't match.
+
+**Fix:** Make sure the file is in the correct `src/content/<collection>/` directory. The filename becomes the URL slug (e.g., `my-build.md` → `/builds/my-build/`).
+
+### "Deploy takes longer than usual"
+
+**Cause:** Cloudflare might be experiencing delays, or the build is queued.
+
+**Fix:** Check the Cloudflare status page at https://www.cloudflarestatus.com. Builds typically take 30–90 seconds.
+
+### "Search isn't finding new content"
+
+**Cause:** The Pagefind search index is generated at build time. If you added content and deployed, it should be indexed automatically.
+
+**Fix:** If search still doesn't find it, trigger a manual rebuild in Cloudflare Pages (Deployments → Retry deployment on the latest).
+
+### "Images aren't showing"
+
+**Cause:** Images must be in the `public/` directory or referenced via an absolute URL.
+
+**Fix:** Place images in `public/images/` and reference them as `/images/filename.png` in your Markdown.

@@ -1,0 +1,34 @@
+---
+export interface Props {
+  title: string;
+  href: string;
+  specialization: string;
+  playstyle: string;
+  description: string;
+  patch: string;
+  pve: boolean;
+  pvp: boolean;
+  tags?: string[];
+}
+
+const { title, href, specialization, playstyle, description, patch, pve, pvp, tags = [] } = Astro.props;
+---
+
+<article class="card">
+  <a href={href} style="text-decoration:none;color:inherit;display:block;">
+    <div style="display:flex;gap:var(--sp-2);margin-bottom:var(--sp-2);flex-wrap:wrap;">
+      <span class="tag tag--accent">{specialization}</span>
+      <span class="tag">{playstyle}</span>
+      {pve && <span class="tag">PvE</span>}
+      {pvp && <span class="tag">PvP</span>}
+    </div>
+    <h3 class="card__title">{title}</h3>
+    <p class="card__meta">Patch {patch}</p>
+    <p class="card__description">{description}</p>
+    {tags.length > 0 && (
+      <div style="display:flex;gap:var(--sp-1);flex-wrap:wrap;margin-top:var(--sp-3);">
+        {tags.slice(0, 3).map(tag => <span class="tag">{tag}</span>)}
+      </div>
+    )}
+  </a>
+</article>

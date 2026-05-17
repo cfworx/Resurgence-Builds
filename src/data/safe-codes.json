@@ -1,0 +1,10 @@
+[
+  {"id":"sc-1","location":"Financial District — Vault Room","code":"7-2-9-4","notes":"Found on a note behind the reception desk in the main lobby."},
+  {"id":"sc-2","location":"Hell's Kitchen — Underground Bunker","code":"3-8-1-6","notes":"Cipher is written on the whiteboard in the control room."},
+  {"id":"sc-3","location":"Midtown — Abandoned Office","code":"5-5-0-2","notes":"Look for the sticky note on the underside of the desk drawer."},
+  {"id":"sc-4","location":"Central Park — Ranger Station","code":"1-4-7-3","notes":"Posted on the bulletin board near the north entrance."},
+  {"id":"sc-5","location":"Brooklyn — Warehouse District","code":"9-0-6-8","notes":"Scratched into the wall behind the generator in the basement."},
+  {"id":"sc-6","location":"Times Square — Subway Access","code":"2-3-5-1","notes":"On a crumpled receipt inside the ticket booth."},
+  {"id":"sc-7","location":"Gramercy — Apartment Complex","code":"8-1-4-7","notes":"Written in marker on the bathroom mirror, 4th floor."},
+  {"id":"sc-8","location":"Chinatown — Hidden Cache","code":"6-6-2-9","notes":"Audio log in the adjacent room contains the combination."}
+]

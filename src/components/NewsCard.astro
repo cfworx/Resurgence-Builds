@@ -1,0 +1,26 @@
+---
+export interface Props {
+  title: string;
+  href: string;
+  publishDate: Date;
+  author: string;
+  description: string;
+  tags?: string[];
+}
+
+const { title, href, publishDate, author, description, tags = [] } = Astro.props;
+const formattedDate = publishDate.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+---
+
+<article class="card">
+  <a href={href} style="text-decoration:none;color:inherit;display:block;">
+    <p class="card__meta">{formattedDate} · {author}</p>
+    <h3 class="card__title">{title}</h3>
+    <p class="card__description">{description}</p>
+    {tags.length > 0 && (
+      <div style="display:flex;gap:var(--sp-1);flex-wrap:wrap;margin-top:var(--sp-3);">
+        {tags.slice(0, 3).map(tag => <span class="tag">{tag}</span>)}
+      </div>
+    )}
+  </a>
+</article>

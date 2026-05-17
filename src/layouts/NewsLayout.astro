@@ -1,0 +1,66 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import SectionTag from '../components/SectionTag.astro';
+
+export interface Props {
+  title: string;
+  description: string;
+  publishDate: Date;
+  author: string;
+  tags: string[];
+  parentPath: string;
+  parentLabel: string;
+}
+
+const { title, description, publishDate, author, tags, parentPath, parentLabel } = Astro.props;
+
+const formattedDate = publishDate.toLocaleDateString('en-US', {
+  weekday: 'long',
+  month: 'long',
+  day: 'numeric',
+  year: 'numeric',
+});
+
+const breadcrumbItems = [
+  { name: parentLabel, url: parentPath },
+  { name: title, url: '#' },
+];
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  breadcrumbs={breadcrumbItems}
+  ogType="article"
+  article={{
+    publishDate: publishDate.toISOString(),
+    author,
+    tags,
+  }}
+>
+  <div class="container section">
+    <Breadcrumbs items={breadcrumbItems} />
+
+    <article class="content-width">
+      <SectionTag label={parentLabel} />
+      <h1 class="heading-accent">{title}</h1>
+
+      <div class="article-meta">
+        <span>By {author}</span>
+        <span>·</span>
+        <time datetime={publishDate.toISOString()}>{formattedDate}</time>
+      </div>
+
+      {tags.length > 0 && (
+        <div style="display:flex;gap:var(--sp-1);flex-wrap:wrap;margin-bottom:var(--sp-6);">
+          {tags.map(tag => <span class="tag">{tag}</span>)}
+        </div>
+      )}
+
+      <div class="prose">
+        <slot />
+      </div>
+    </article>
+  </div>
+</BaseLayout>

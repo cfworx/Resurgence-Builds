@@ -1,0 +1,71 @@
+---
+const pathname = Astro.url.pathname;
+const navItems = [
+  { label: 'Home', href: '/' },
+  { label: 'Builds', href: '/builds/' },
+];
+---
+
+<header class="site-header" id="site-header">
+  <div class="site-header__inner">
+    <a href="/" class="site-logo" aria-label="Resurgence Builds home">
+      Resurgence<span>Builds</span>
+    </a>
+
+    <nav class="desktop-nav" aria-label="Primary navigation">
+      {navItems.map((item) => (
+        <a
+          href={item.href}
+          aria-current={
+            item.href === '/'
+              ? pathname === '/' ? 'page' : undefined
+              : pathname.startsWith(item.href) ? 'page' : undefined
+          }
+        >
+          {item.label}
+        </a>
+      ))}
+    </nav>
+
+    <button
+      class="hamburger"
+      id="hamburger-btn"
+      aria-label="Open menu"
+      aria-expanded="false"
+      aria-controls="mobile-nav"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="3" y1="6" x2="21" y2="6"/>
+        <line x1="3" y1="12" x2="21" y2="12"/>
+        <line x1="3" y1="18" x2="21" y2="18"/>
+      </svg>
+    </button>
+  </div>
+
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+    {navItems.map((item) => (
+      <a
+        href={item.href}
+        aria-current={
+          item.href === '/'
+            ? pathname === '/' ? 'page' : undefined
+            : pathname.startsWith(item.href) ? 'page' : undefined
+        }
+      >
+        {item.label}
+      </a>
+    ))}
+  </nav>
+</header>
+
+<script>
+  const btn = document.getElementById('hamburger-btn');
+  const nav = document.getElementById('mobile-nav');
+  if (btn && nav) {
+    btn.addEventListener('click', () => {
+      const isOpen = nav.classList.toggle('is-open');
+      btn.setAttribute('aria-expanded', String(isOpen));
+      btn.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
+    });
+  }
+</script>

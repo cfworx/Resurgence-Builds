@@ -1,0 +1,87 @@
+---
+export interface Props {
+  title: string;
+  description: string;
+  canonical?: string;
+  ogType?: string;
+  ogImage?: string;
+  article?: {
+    publishDate: string;
+    modifiedDate?: string;
+    author: string;
+    tags?: string[];
+  };
+  breadcrumbs?: { name: string; url: string }[];
+  jsonLd?: Record<string, unknown>;
+}
+
+const {
+  title,
+  description,
+  canonical = Astro.url.href,
+  ogType = 'website',
+  ogImage = '/og-default.png',
+  article,
+  breadcrumbs = [],
+  jsonLd,
+} = Astro.props;
+
+const siteName = 'Resurgence Builds';
+const fullTitle = `${title} · ${siteName}`;
+const siteUrl = Astro.site?.toString().replace(/\/$/, '') || 'https://resurgencebuilds.com';
+const ogImageUrl = ogImage.startsWith('http') ? ogImage : `${siteUrl}${ogImage}`;
+
+const breadcrumbLd = breadcrumbs.length > 0 ? {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: breadcrumbs.map((crumb, index) => ({
+    '@type': 'ListItem',
+    position: index + 1,
+    name: crumb.name,
+    item: `${siteUrl}${crumb.url}`,
+  })),
+} : null;
+
+const articleLd = article ? {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: title,
+  description,
+  datePublished: article.publishDate,
+  dateModified: article.modifiedDate || article.publishDate,
+  author: { '@type': 'Person', name: article.author },
+  publisher: { '@type': 'Organization', name: siteName },
+  image: ogImageUrl,
+} : null;
+---
+
+<!-- Primary Meta Tags -->
+<title>{fullTitle}</title>
+<meta name="description" content={description} />
+<link rel="canonical" href={canonical} />
+
+<!-- Open Graph -->
+<meta property="og:type" content={ogType} />
+<meta property="og:title" content={fullTitle} />
+<meta property="og:description" content={description} />
+<meta property="og:image" content={ogImageUrl} />
+<meta property="og:url" content={canonical} />
+<meta property="og:site_name" content={siteName} />
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={fullTitle} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={ogImageUrl} />
+
+{breadcrumbLd && (
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbLd)} />
+)}
+
+{articleLd && (
+  <script type="application/ld+json" set:html={JSON.stringify(articleLd)} />
+)}
+
+{jsonLd && (
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+)}

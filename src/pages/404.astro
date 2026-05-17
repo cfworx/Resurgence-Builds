@@ -1,0 +1,17 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="404 — Page Not Found" description="The page you're looking for doesn't exist.">
+  <div class="container section" style="text-align:center;padding:var(--sp-24) 0;">
+    <p class="section-tag" style="font-size:var(--text-5xl);margin-bottom:var(--sp-4);">404</p>
+    <h1>Agent, this route doesn't exist.</h1>
+    <p style="color:var(--ink-muted);max-width:40ch;margin:var(--sp-4) auto var(--sp-8);">
+      The page you're looking for may have been moved, deleted, or never existed. Let's get you back on track.
+    </p>
+    <div style="display:flex;gap:var(--sp-4);justify-content:center;flex-wrap:wrap;">
+      <a href="/" class="btn btn--primary">Go Home</a>
+      <a href="/builds/" class="btn btn--outline">Browse Builds</a>
+    </div>
+  </div>
+</BaseLayout>

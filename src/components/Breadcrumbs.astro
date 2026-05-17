@@ -1,0 +1,20 @@
+---
+export interface Props {
+  items: { name: string; url: string }[];
+}
+const { items } = Astro.props;
+---
+
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+  <a href="/">Home</a>
+  {items.map((item, i) => (
+    <>
+      <span class="breadcrumbs__separator" aria-hidden="true">/</span>
+      {i === items.length - 1 ? (
+        <span class="breadcrumbs__current" aria-current="page">{item.name}</span>
+      ) : (
+        <a href={item.url}>{item.name}</a>
+      )}
+    </>
+  ))}
+</nav>
