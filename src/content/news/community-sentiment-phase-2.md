@@ -75,11 +75,14 @@ Cadence going forward: a new season every four months, with phases every six wee
 
 ## Where the conversation goes next
 
-The next 30 days will decide a lot. If the missing-gear category gets a named fix in a Phase 2 hotfix, sentiment lands well ahead of June 23. If the Phase 3 pass ships with a cleaner free-Exotic roll path than Strawberry Milkshake had, the "early monetization" critique softens. And if the August PC launch keeps the uncapped-frame-rate option and adds Steam, the player base widens meaningfully heading into the winter story expansion.
+TThe next 30 days will decide a lot. If the missing-gear category gets a named fix in a Phase 2 hotfix, sentiment lands well ahead of June 23. If the Phase 3 pass ships with a cleaner free-Exotic roll path than Strawberry Milkshake had, the "early monetization" critique softens.
+
+On PC specifically, the early-access build is already in a better place than I expected. I'm running it at 180 FPS on High settings without issues, and the uncapped framerate option in Phase 2 ([DJ Tickle — Phase 2 walkthrough](https://www.youtube.com/watch?v=w-Mkdy4UGF8)) is the single biggest reason the PC experience feels good right now. The real test is the August Season 2 launch out of early access — if Ubisoft keeps the uncapped framerate option, expands distribution beyond Ubisoft Connect, and carries cross-progression cleanly, the player base widens meaningfully heading into the winter story expansion.
 
 For now, this is a game that has gone from a rough mobile launch to a credible cross-platform live service in roughly six weeks. Most of the loudest community asks — higher frame rates, PC, more Exotic options, a real roadmap — have been answered, at least in part. The unfinished business is the trust layer: missing items, communication cadence, and the consistency of the patch promise.
 
 We will track all of it as it lands.
+
 
 ---
 
