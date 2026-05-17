@@ -88,7 +88,7 @@ We will track all of it as it lands.
 
 ---
 
-**Sources [CONFIRMED]:**
+**Sources:**
 - Ubisoft (official), [Phase 2 Starts Now — What's New](https://www.ubisoft.com/en-us/game/the-division/resurgence/news-updates/3ygDDXxg6dv6aQD5MJvbKv/phase-2-starts-now-whats-new) (May 12, 2026)
 - Ubisoft (official), [PC Early Access & Game Roadmap](https://www.ubisoft.com/en-us/game/the-division/resurgence/news-updates/5LqRsprrdgtEnUmStmBi0d/pc-early-access-game-roadmap) (April 28, 2026)
 - Ubisoft News, [The Division Resurgence Roadmap](https://news.ubisoft.com/en-us/article/9ZzMWcx5ADnaxAiOO3e0w/the-division-resurgence-roadmap-pc-launch-story-expansion-and-more) (April 28, 2026)
