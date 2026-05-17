@@ -4,7 +4,11 @@ publishDate: "2026-04-28"
 author: "RapidF5"
 description: "Ubisoft publishes the full seasonal roadmap for Resurgence. See what's coming in Phase 3, the PC Launch in Season 2, and the Major Story Expansion in Season 3."
 tags: ["Roadmap", "Season 1", "Season 2", "Season 3"]
+featuredImage: "/images/season-roadmap.png"
+imageAlt: "A Division Agent checking a map on a snowy New York street"
 ---
+
+![A Division Agent checking a map on a snowy New York street](/images/season-roadmap.png)
 
 Ubisoft published the full seasonal roadmap on April 28. New seasons land every **four months**; phases within a season arrive every **six weeks**.
 
