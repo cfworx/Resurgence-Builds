@@ -4,11 +4,9 @@ publishDate: "2026-04-28"
 author: "RapidF5"
 description: "The Division Resurgence shadow-drops on PC via Early Access! Find out all the details on cross-play, 60 FPS support, and controller setups."
 tags: ["PC", "Early Access", "Cross-Play"]
-featuredImage: "/images/pc-early-access.png"
+featuredImage: "/images/pc-early-access.jpg"
 imageAlt: "A gamer playing The Division Resurgence on PC in Early Access at a desk setup"
 ---
-
-![A gamer playing The Division Resurgence on PC in Early Access at a desk setup](/images/pc-early-access.png)
 
 The Division Resurgence is now available in Early Access on PC via **Ubisoft Connect**, just under a month after its March 31 mobile launch. The PC version is free-to-play, with full **cross-play** and **cross-progression** across iOS, Android, and PC — you can switch devices and pick up where you left off.
 

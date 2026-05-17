@@ -4,11 +4,9 @@ version: "1.1.2"
 patchDate: "2026-04-28"
 author: "RapidF5"
 summary: "Patch 1.1.2 deployed alongside the PC Early Access launch, bringing stability improvements and a heavy emphasis on mouse-and-keyboard support."
-featuredImage: "/images/patch-1-1-2.png"
+featuredImage: "/images/patch-1-1-2.jpg"
 imageAlt: "An exhausted Division Agent resting against a brick wall on a snowy street"
 ---
-
-![An exhausted Division Agent resting against a brick wall on a snowy street](/images/patch-1-1-2.png)
 
 Patch 1.1.2 deployed alongside the PC Early Access launch. The update was a stability and quality-of-life pass, with a heavy emphasis on mouse-and-keyboard support — clearly to prep for PC players coming in fresh.
 
