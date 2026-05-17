@@ -11,10 +11,12 @@ export interface Props {
   tags: string[];
   parentPath: string;
   parentLabel: string;
+  image?: string;
+  imageAlt?: string;
   headings?: { depth: number; slug: string; text: string }[];
 }
 
-const { title, description, publishDate, author, tags, parentPath, parentLabel, headings = [] } = Astro.props;
+const { title, description, publishDate, author, tags, parentPath, parentLabel, image, imageAlt, headings = [] } = Astro.props;
 
 const tocItems = headings.filter(h => h.depth <= 3);
 
@@ -36,6 +38,7 @@ const breadcrumbItems = [
   description={description}
   breadcrumbs={breadcrumbItems}
   ogType="article"
+  ogImage={image}
   article={{
     publishDate: publishDate.toISOString(),
     author,
@@ -54,6 +57,10 @@ const breadcrumbItems = [
         <span>·</span>
         <time datetime={publishDate.toISOString()}>{formattedDate}</time>
       </div>
+
+      {image && (
+        <img src={image} alt={imageAlt || title} style="width: 100%; height: auto; margin-top: var(--sp-4); margin-bottom: var(--sp-6); border-radius: 4px;" loading="eager" fetchpriority="high" />
+      )}
 
       {tocItems.length > 0 && (
         <nav class="toc" aria-label="Table of contents">
