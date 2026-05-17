@@ -1,0 +1,24 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import SectionTag from '../../components/SectionTag.astro';
+
+const title = "Skill Mod Combos Database";
+const description = "Complete database of all Skill Mod Combos in The Division Resurgence.";
+const breadcrumbs = [
+  { name: 'Database', url: '#' },
+  { name: 'Skill Mod Combos', url: '#' }
+];
+---
+
+<BaseLayout title={title} description={description} breadcrumbs={breadcrumbs}>
+  <div class="container section">
+    <Breadcrumbs items={breadcrumbs} />
+    <SectionTag label="Database" />
+    <h1 class="heading-accent">Skill Mod Combos</h1>
+    
+    <div class="prose">
+      <p>This is a placeholder for the Skill Mod Combos database. Tables and data will be added here soon.</p>
+    </div>
+  </div>
+</BaseLayout>

@@ -3,6 +3,20 @@ const pathname = Astro.url.pathname;
 const navItems = [
   { label: 'Home', href: '/' },
   { label: 'Builds', href: '/builds/' },
+  { 
+    label: 'Database', 
+    href: '#',
+    children: [
+      { label: 'OS Protocols', href: '/database/os-protocols/' },
+      { label: 'Exotic Weapons', href: '/database/exotic-weapons/' },
+      { label: 'Skill Mod Combos', href: '/database/skill-mod-combos/' },
+      { label: 'Weapon Talents', href: '/database/weapon-talents/' },
+      { label: 'Gear Set Effects', href: '/database/gear-set-effects/' },
+      { label: 'Body Armor Talents', href: '/database/body-armor-talents/' },
+      { label: 'Backpack Talents', href: '/database/backpack-talents/' },
+      { label: 'Bonus Attributes', href: '/database/bonus-attributes/' },
+    ]
+  },
 ];
 ---
 
@@ -14,16 +28,36 @@ const navItems = [
 
     <nav class="desktop-nav" aria-label="Primary navigation">
       {navItems.map((item) => (
-        <a
-          href={item.href}
-          aria-current={
-            item.href === '/'
-              ? pathname === '/' ? 'page' : undefined
-              : pathname.startsWith(item.href) ? 'page' : undefined
-          }
-        >
-          {item.label}
-        </a>
+        item.children ? (
+          <div class="nav-dropdown">
+            <button class="nav-dropdown__btn" aria-expanded="false" aria-controls={`dropdown-${item.label.toLowerCase()}`}>
+              {item.label}
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 4px; transition: transform 0.2s;">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <ul class="nav-dropdown__menu" id={`dropdown-${item.label.toLowerCase()}`}>
+              {item.children.map(child => (
+                <li>
+                  <a href={child.href} aria-current={pathname.startsWith(child.href) ? 'page' : undefined}>
+                    {child.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ) : (
+          <a
+            href={item.href}
+            aria-current={
+              item.href === '/'
+                ? pathname === '/' ? 'page' : undefined
+                : pathname.startsWith(item.href) ? 'page' : undefined
+            }
+          >
+            {item.label}
+          </a>
+        )
       ))}
     </nav>
 
@@ -44,16 +78,36 @@ const navItems = [
 
   <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
     {navItems.map((item) => (
-      <a
-        href={item.href}
-        aria-current={
-          item.href === '/'
-            ? pathname === '/' ? 'page' : undefined
-            : pathname.startsWith(item.href) ? 'page' : undefined
-        }
-      >
-        {item.label}
-      </a>
+      item.children ? (
+        <div class="mobile-dropdown">
+          <button class="mobile-dropdown__btn" aria-expanded="false" aria-controls={`mobile-dropdown-${item.label.toLowerCase()}`} onclick="this.setAttribute('aria-expanded', this.getAttribute('aria-expanded') === 'true' ? 'false' : 'true'); this.nextElementSibling.classList.toggle('is-open'); this.querySelector('svg').style.transform = this.getAttribute('aria-expanded') === 'true' ? 'rotate(180deg)' : 'rotate(0deg)';">
+            {item.label}
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="transition: transform 0.2s;">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <ul class="mobile-dropdown__menu" id={`mobile-dropdown-${item.label.toLowerCase()}`}>
+            {item.children.map(child => (
+              <li>
+                <a href={child.href} aria-current={pathname.startsWith(child.href) ? 'page' : undefined}>
+                  {child.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ) : (
+        <a
+          href={item.href}
+          aria-current={
+            item.href === '/'
+              ? pathname === '/' ? 'page' : undefined
+              : pathname.startsWith(item.href) ? 'page' : undefined
+          }
+        >
+          {item.label}
+        </a>
+      )
     ))}
   </nav>
 </header>
