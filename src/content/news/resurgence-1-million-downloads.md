@@ -1,7 +1,7 @@
 ---
 title: "Division Resurgence Hits 1 Million Downloads in First Week"
 publishDate: 2026-04-07
-author: "AgentHex"
+author: "RapidF5"
 tags: ["launch", "milestone", "update"]
 description: "The Division Resurgence crossed 1 million downloads in its first week with strong revenue retention. Here's what the numbers say about the game's health."
 ---

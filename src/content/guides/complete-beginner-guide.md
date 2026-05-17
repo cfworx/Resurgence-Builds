@@ -4,7 +4,7 @@ category: Beginner
 lastUpdated: 2026-04-05
 tags: ["beginner", "leveling", "tips"]
 description: "Everything new agents need to know about The Division Resurgence. Covers daily XP boost, reward caps, specialization picking, gear tiers, crafting, and the Dark Zone."
-author: "AgentHex"
+author: "RapidF5"
 ---
 
 ## Welcome, Agent

@@ -8,7 +8,7 @@ lastUpdated: 2026-05-17
 patch: "1.2.0"
 tags: ["field medic", "healer", "support", "legendary", "endgame", "group"]
 description: "The ultimate Field Medic healer build for Legendary difficulty. Three simultaneous healing engines push ~37k HP per tick for 84 seconds. Teams fight over having you."
-author: "AgentHex"
+author: "RapidF5"
 ---
 
 ## The Thesis — How This Build Wins Legendary

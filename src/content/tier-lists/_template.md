@@ -4,7 +4,7 @@ type: weapon
 patch: "1.0.0"
 lastUpdated: 2026-01-01
 description: "Description of this tier list."
-author: "YourName"
+author: "RapidF5"
 ---
 
 ## S Tier

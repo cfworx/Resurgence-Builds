@@ -1,7 +1,7 @@
 ---
 title: "The Division Resurgence Launches Worldwide on iOS and Android"
 publishDate: 2026-03-31
-author: "AgentHex"
+author: "RapidF5"
 tags: ["launch", "announcement", "new content"]
 description: "The Division Resurgence is officially live worldwide as a free-to-play mobile RPG. Full Manhattan open world, 5 specializations, Dark Zone PvPvE, and co-op gameplay on day one."
 ---

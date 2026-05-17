@@ -4,7 +4,7 @@ category: General
 lastUpdated: 2026-01-01
 tags: ["tag1", "tag2"]
 description: "One-sentence description."
-author: "YourName"
+author: "RapidF5"
 ---
 
 ## Section 1

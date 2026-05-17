@@ -1,7 +1,7 @@
 ---
 title: "Known Issues and Fixes — Division Resurgence (April 2026)"
 publishDate: 2026-04-13
-author: "AgentHex"
+author: "RapidF5"
 tags: ["troubleshooting", "bugs", "update"]
 description: "All known bugs in The Division Resurgence as of version 1.1.1, including network errors, Dark Zone loot loss, and audio issues — with workarounds for each."
 ---

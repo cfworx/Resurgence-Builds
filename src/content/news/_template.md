@@ -1,7 +1,7 @@
 ---
 title: "News Title"
 publishDate: 2026-01-01
-author: "YourName"
+author: "RapidF5"
 tags: ["tag1"]
 description: "One-sentence summary."
 ---

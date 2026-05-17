@@ -2,7 +2,7 @@
 title: "Patch 1.2.0 — Season 1 Launch Update"
 version: "1.2.0"
 patchDate: 2026-04-01
-author: "AgentHex"
+author: "RapidF5"
 summary: "Season 1 launch patch: new Vanguard specialization, three gear sets, two strongholds, weapon balance pass, and bug fixes."
 ---
 

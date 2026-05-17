@@ -2,7 +2,7 @@
 title: "Patch X.Y.Z"
 version: "X.Y.Z"
 patchDate: 2026-01-01
-author: "YourName"
+author: "RapidF5"
 summary: "Brief patch summary."
 ---
 

@@ -8,7 +8,7 @@ lastUpdated: 2026-01-01
 patch: "1.0.0"
 tags: ["tag1", "tag2"]
 description: "One-sentence description of the build."
-author: "YourName"
+author: "RapidF5"
 ---
 
 ## Overview

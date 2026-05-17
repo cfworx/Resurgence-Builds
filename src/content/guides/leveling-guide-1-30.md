@@ -4,7 +4,7 @@ category: Leveling
 lastUpdated: 2026-04-15
 tags: ["leveling", "beginner", "speed", "solo"]
 description: "The fastest route from level 1 to 30 in The Division Resurgence. Optimized pathing, priority missions, and gear tips for new agents."
-author: "AgentHex"
+author: "RapidF5"
 ---
 
 ## Before You Start

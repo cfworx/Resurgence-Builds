@@ -1,7 +1,7 @@
 ---
 title: "Cross-Game Rewards Now Live Between Division 2 and Resurgence"
 publishDate: 2026-04-01
-author: "AgentHex"
+author: "RapidF5"
 tags: ["cross-game", "rewards", "division 2"]
 description: "Link your Ubisoft Connect account to unlock exclusive rewards in both The Division 2 and Division Resurgence. Full reward list and how-to guide inside."
 ---

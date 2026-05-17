@@ -1,7 +1,7 @@
 ---
 title: "Season 1 Now Live — New Specialization, Gear Sets, and Endgame Content"
 publishDate: 2026-04-01
-author: "AgentHex"
+author: "RapidF5"
 tags: ["season 1", "update", "new content", "endgame"]
 description: "The Division Resurgence Season 1 is here. New Vanguard specialization, three gear sets, two strongholds, and a full weapon balance pass."
 ---
