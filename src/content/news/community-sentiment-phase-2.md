@@ -6,8 +6,6 @@ description: "A reader-facing look at the loudest conversations in The Division 
 tags: ["The Division Resurgence", "Community", "PC", "Phase 2", "Classified Ops Pass", "Missing Gear", "Roadmap"]
 ---
 
-# What the Community Is Saying — Two Weeks Into the Phase 2 PC Era
-
 The Division Resurgence has had one of the busiest three-week stretches of its short live-service life. PC early access landed on April 28, Phase 2 of Season 1 went live on May 12, and the roadmap through summer is now official. Almost every conversation across Reddit, YouTube and Twitter today loops back to one of six themes. Here is where each one stands as of May 17, 2026, with sources you can click straight through to.
 
 ## 1. PC has been quietly winning people over
