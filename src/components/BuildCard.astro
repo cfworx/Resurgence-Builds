@@ -9,26 +9,67 @@ export interface Props {
   pve: boolean;
   pvp: boolean;
   tags?: string[];
+  featuredImage?: string;
 }
 
-const { title, href, specialization, playstyle, description, patch, pve, pvp, tags = [] } = Astro.props;
+const { title, href, specialization, playstyle, description, patch, pve, pvp, tags = [], featuredImage } = Astro.props;
 ---
 
-<article class="card">
+<article class={`card ${featuredImage ? 'card--has-image' : ''}`}>
   <a href={href} style="text-decoration:none;color:inherit;display:block;">
-    <div style="display:flex;gap:var(--sp-2);margin-bottom:var(--sp-2);flex-wrap:wrap;">
-      <span class="tag tag--accent">{specialization}</span>
-      <span class="tag">{playstyle}</span>
-      {pve && <span class="tag">PvE</span>}
-      {pvp && <span class="tag">PvP</span>}
-    </div>
-    <h3 class="card__title">{title}</h3>
-    <p class="card__meta">Patch {patch}</p>
-    <p class="card__description">{description}</p>
-    {tags.length > 0 && (
-      <div style="display:flex;gap:var(--sp-1);flex-wrap:wrap;margin-top:var(--sp-3);">
-        {tags.slice(0, 3).map(tag => <span class="tag">{tag}</span>)}
+    {featuredImage && (
+      <div class="build-card__image">
+        <img
+          src={featuredImage}
+          alt={`${title} - ${specialization} ${playstyle} build for Division Resurgence`}
+          loading="lazy"
+          decoding="async"
+          width="600"
+          height="315"
+        />
       </div>
     )}
+    <div class="build-card__body">
+      <div style="display:flex;gap:var(--sp-2);margin-bottom:var(--sp-2);flex-wrap:wrap;">
+        <span class="tag tag--accent">{specialization}</span>
+        <span class="tag">{playstyle}</span>
+        {pve && <span class="tag">PvE</span>}
+        {pvp && <span class="tag">PvP</span>}
+      </div>
+      <h3 class="card__title">{title}</h3>
+      <p class="card__meta">Patch {patch}</p>
+      <p class="card__description">{description}</p>
+      {tags.length > 0 && (
+        <div style="display:flex;gap:var(--sp-1);flex-wrap:wrap;margin-top:var(--sp-3);">
+          {tags.slice(0, 3).map(tag => <span class="tag">{tag}</span>)}
+        </div>
+      )}
+    </div>
   </a>
 </article>
+
+<style>
+  .build-card__image {
+    margin: calc(-1 * var(--sp-4));
+    margin-bottom: 0;
+    overflow: hidden;
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+  }
+
+  .build-card__image img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1200 / 630;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+  }
+
+  .card:hover .build-card__image img {
+    transform: scale(1.03);
+  }
+
+  .card--has-image .build-card__body {
+    padding-top: var(--sp-4);
+  }
+</style>
