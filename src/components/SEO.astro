@@ -26,7 +26,7 @@ const {
   jsonLd,
 } = Astro.props;
 
-const siteName = 'Resurgence Builds';
+const siteName = 'The Division Resurgence Builds';
 const fullTitle = `${title} · ${siteName}`;
 const siteUrl = Astro.site?.toString().replace(/\/$/, '') || 'https://resurgencebuilds.com';
 const canonicalURL = canonical || new URL(Astro.url.pathname, siteUrl).toString();
