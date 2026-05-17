@@ -2,13 +2,19 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import SectionTag from '../../components/SectionTag.astro';
+import osProtocols from '../../data/os-protocols.json';
 
 const title = "OS Protocols Database";
 const description = "Complete database of all OS Protocols in The Division Resurgence.";
 const breadcrumbs = [
   { name: 'Database', url: '#' },
-  { name: 'OS Protocols', url: '#' }
+  { name: 'OS Protocols', url: '/database/os-protocols/' }
 ];
+
+// Helper to get CSS class for rarity
+const getRarityClass = (rarity: string) => {
+  return `rarity-${rarity.toLowerCase().replace(' ', '-')}`;
+};
 ---
 
 <BaseLayout title={title} description={description} breadcrumbs={breadcrumbs}>
@@ -16,9 +22,192 @@ const breadcrumbs = [
     <Breadcrumbs items={breadcrumbs} />
     <SectionTag label="Database" />
     <h1 class="heading-accent">OS Protocols</h1>
-    
-    <div class="prose">
-      <p>This is a placeholder for the OS Protocols database. Tables and data will be added here soon.</p>
+    <p style="color:var(--ink-muted);margin-bottom:var(--sp-8);">
+      Browse the complete list of OS Protocols, including their talents, main stats, and attributes.
+    </p>
+
+    <div class="db-grid">
+      {osProtocols.map((protocol) => (
+        <article class={`db-card db-card--${protocol.rarity.toLowerCase().replace(' ', '-')}`}>
+          <div class="db-card__header">
+            <div>
+              <h2 class="db-card__title">{protocol.name}</h2>
+              <span class={`tag ${getRarityClass(protocol.rarity)}`} style="margin-right:var(--sp-2)">{protocol.rarity}</span>
+              <span class="tag">{protocol.specialization}</span>
+            </div>
+            {protocol.cooldown && (
+              <div class="db-card__cooldown">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                {protocol.cooldown}
+              </div>
+            )}
+          </div>
+          
+          <div class="db-card__body">
+            <div class="db-card__talent">
+              <strong>Talent:</strong> {protocol.talentDescription}
+            </div>
+            
+            <div class="db-card__stats">
+              <div class="stat-group stat-group--main">
+                <span class="stat-label">Main Stat</span>
+                <span class="stat-value">{protocol.mainStat} <span class="highlight">{protocol.mainValue}</span></span>
+              </div>
+              
+              <div class="stat-group">
+                <span class="stat-label">Attributes</span>
+                <ul class="attr-list">
+                  <li><span>{protocol.attr1}</span> <span>{protocol.val1}</span></li>
+                  <li><span>{protocol.attr2}</span> <span>{protocol.val2}</span></li>
+                  <li><span>{protocol.attr3}</span> <span>{protocol.val3}</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </article>
+      ))}
     </div>
   </div>
 </BaseLayout>
+
+<style>
+  .db-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--sp-6);
+  }
+
+  @media (min-width: 1024px) {
+    .db-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .db-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--border);
+    border-radius: var(--border-radius);
+    padding: var(--sp-5);
+    display: flex;
+    flex-direction: column;
+    gap: var(--sp-4);
+    transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+  }
+
+  .db-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+
+  .db-card--high-end { border-left-color: #D4A534; }
+  .db-card--superior { border-left-color: #9B59B6; }
+  .db-card--specialized { border-left-color: #3A7BD5; }
+  .db-card--standard { border-left-color: #4A9A4A; }
+  .db-card--exotic { border-left-color: #D4543A; }
+
+  .db-card__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: var(--sp-4);
+    border-bottom: 1px solid var(--border);
+    padding-bottom: var(--sp-4);
+  }
+
+  .db-card__title {
+    font-size: var(--text-xl);
+    font-weight: 700;
+    margin: 0 0 var(--sp-2) 0;
+    color: var(--ink);
+  }
+
+  .db-card__cooldown {
+    display: flex;
+    align-items: center;
+    gap: var(--sp-1);
+    font-size: var(--text-sm);
+    color: var(--ink-muted);
+    background: var(--surface-2);
+    padding: var(--sp-1) var(--sp-2);
+    border-radius: var(--border-radius);
+    white-space: nowrap;
+  }
+
+  .db-card__body {
+    display: flex;
+    flex-direction: column;
+    gap: var(--sp-4);
+  }
+
+  .db-card__talent {
+    font-size: var(--text-md);
+    line-height: 1.6;
+    color: var(--ink-light);
+  }
+
+  .db-card__talent strong {
+    color: var(--ink);
+  }
+
+  .db-card__stats {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--sp-4);
+    background: var(--bg);
+    padding: var(--sp-4);
+    border-radius: var(--border-radius);
+  }
+
+  @media (min-width: 640px) {
+    .db-card__stats {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .stat-group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--sp-2);
+  }
+
+  .stat-label {
+    font-size: var(--text-xs);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--ink-muted);
+    font-weight: 600;
+  }
+
+  .stat-value {
+    font-size: var(--text-md);
+    font-weight: 500;
+    color: var(--ink);
+  }
+
+  .stat-value .highlight {
+    color: var(--accent);
+  }
+
+  .attr-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--sp-1);
+  }
+
+  .attr-list li {
+    display: flex;
+    justify-content: space-between;
+    font-size: var(--text-sm);
+    color: var(--ink-light);
+    border-bottom: 1px dashed var(--border);
+    padding-bottom: 2px;
+  }
+  
+  .attr-list li:last-child {
+    border-bottom: none;
+  }
+</style>
