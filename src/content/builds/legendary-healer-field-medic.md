@@ -1,14 +1,16 @@
 ---
 title: "The Legendary Healer — Field Medic Build for The Division: Resurgence"
+subtitle: "v9 · Verified Legendary Healer · Mechanic-accurate, spreadsheet-verified, math on the page"
 specialization: Field Medic
 featuredImage: "/images/legendary-healer-field-medic.webp"
+imageAlt: "A Division Resurgence Field Medic deploying a Support Station"
 playstyle: Support
 pve: true
 pvp: false
 lastUpdated: 2026-05-17
 patch: "Season 2"
 tags: [field-medic, healer, legendary, support-station, healing-hive, medical-excellence, captain-cow, healing-elites]
-description: "The ultimate Field Medic healer build for Legendary difficulty. Three simultaneous healing engines push ~37k HP per tick for 84 seconds. Teams fight over having you."
+description: "The ultimate Division Resurgence Medic build for co-op and clans. A legendary healer loadout optimized for support and team matchmaking."
 author: "RapidF5"
 ---
 
@@ -17,14 +19,15 @@ author: "RapidF5"
 ## What is the best Field Medic build in The Division Resurgence?
 **The best Field Medic build in The Division Resurgence combines the Support Station and Healing Hive to output ~37,000 HP per tick for 84 seconds. By equipping the Captain Cow or Healing Elites gear sets alongside a dual-talent SMG, you can keep your entire team alive through Legendary difficulty alpha damage.**
 
+> *"Teams should be fighting over me to be on their team."*
 
-A **Field Medic** build for The Division: Resurgence built around three independent team-facing engines that all run at the same time, every fight.
+A **Field Medic** build for The Division: Resurgence built around three independent team-facing engines that all run at the same time, every fight, with zero swap penalty. Spreadsheet-verified, math on the page, no team-DR fantasy.
 
 **At a glance:**
 
 - **Specialization:** Field Medic — Healing Swarm signature
 - **Skills:** Support Station + Effective Triage · Healing Hive + Mutual Support
-- **Weapon:** One SMG carrying both Slaughter Healing and Medical Accuracy
+- **Weapon:** One gun carrying both Slaughter Healing and Medical Accuracy — either an SMG (close range) or an AR (medium range)
 - **Chest / Backpack:** Deep Focus · Brainstorm
 - **OS Protocol:** Medical Excellence
 - **Gear set:** Healing Elites 4pc (endgame) → Captain Cow 4pc (bridge)
@@ -36,7 +39,7 @@ A **Field Medic** build for The Division: Resurgence built around three independ
 ## Table of Contents
 
 1. [The Thesis — How This Build Wins Legendary](#the-thesis)
-2. [The One Gun — Why You Never Swap](#the-one-gun)
+2. [The One Gun — SMG vs AR, and Why You Don't Swap In-Fight](#the-one-gun)
 3. [The Full Loadout](#the-full-loadout)
 4. [Per-Piece Stat Sheet](#per-piece-stat-sheet)
 5. [The Math — Per Tick, Per Cast, Per Fight](#the-math)
@@ -63,11 +66,11 @@ Legendary missions punish two things: teams that die, and healers who can't outp
 
 ### Engine 1 — Heal Output (you, the source)
 
-Stack **+18% Healing Intensity (Medical Accuracy)** via every SMG headshot, layer it onto **+20% HI from Captain Cow 4pc**, then add **+20% HI from Medical Excellence OS**. Multiplicative output stacking that lifts every heal you cast 70–80% over baseline.
+Stack **+18% Healing Intensity (Medical Accuracy)** via every headshot, layer it onto **+20% HI from Captain Cow 4pc**, then add **+20% HI from Medical Excellence OS**. Multiplicative output stacking that lifts every heal you cast 70–80% over baseline.
 
 ### Engine 2 — Team Heal Multiplier (the receiving side)
 
-- **Slaughter Healing:** +7% Incoming Healing per stack to all allies within 40m, up to 3 stacks = +21% team-wide IH as long as your SMG is firing.
+- **Slaughter Healing:** +7% Incoming Healing per stack to all allies within 40m, up to 3 stacks = +21% team-wide IH as long as your gun is firing.
 - **Effective Triage:** Support Station mod that fires a +40% Incoming Healing buff on any ally below 50% HP standing in the 9.27m radius.
 - **Medical Excellence OS:** Flat heal pop on every cast — +5% Max HP to the entire ally team when the healed ally is above 50%; +12.5% Max HP to the target when below 50%.
 
@@ -87,24 +90,44 @@ Total ~+88% additive Skill Duration on a base 44.9s Support Station, pushing the
 
 <a id="the-one-gun"></a>
 
-## The One Gun — Why You Never Swap
+## The One Gun — SMG vs AR, and Why You Don't Swap In-Fight
 
-You run a single SMG. It rolls both healing talents simultaneously. You aim for the head, you contribute kills/assists, and every shot fed into an enemy reloads your team's heal multipliers. **No swap, no thinking, no cover dance.**
+You run a single primary with both healing talents on the same weapon. You aim for the head, you contribute kills/assists, and every shot fed into an enemy reloads your team's heal multipliers. **No mid-fight swap, no thinking, no cover dance.**
 
-### Primary: SMG with Slaughter Healing + Medical Accuracy (T2)
+### Pick your primary by range — both options carry the same talent pair
 
-Find a T2 SMG with both talents rolled. The exact weapon depends on which SMGs roll which talents in your version — chase any T2 SMG that can carry both. PPSH-41 family, Vector family, MP7 family are all reasonable candidates in the spreadsheet — confirm in your inventory.
+Slaughter Healing and Medical Accuracy can roll on both SMGs and ARs. Your choice is a range/comfort decision, not a power decision — the talents do the same thing on either chassis. Check your inventory for which specific weapons have rolled both talents and pick whichever feels best.
+
+**SMG primary (close-range teams, sub-30m fights):** Best fire rate, fastest Medical Accuracy refresh on rapid headshots, naturally hugs the 20m bubble where most healer work happens.
+
+**AR primary (medium-range, open-map content):** Same talent pair, longer effective range, easier headshots past 25–30m where SMG falloff bites. Disciplined burst/tap fire hits the +18% HI ceiling just as reliably as SMG spray, as long as you're landing heads.
+
+**Headshot economy is the same on either chassis:** Medical Accuracy refreshes on every headshot, so what matters is *how many headshots you land per 10s window*. SMG spray or AR tap — both work.
+
+### Recommended primary loadouts
+
+| Loadout | When to run | Primary | Notes |
+|---|---|---|---|
+| **Close-range healer** | Strongholds, tight-corridor content, premade team that hugs | Any SMG with Slaughter Healing + Medical Accuracy (T2 ideal) | Fastest talent refresh; classic field-medic playstyle |
+| **Medium-range healer** | Open-world legendary, Dark Zone, pug team that spreads out | Any AR with Slaughter Healing + Medical Accuracy | Same talents, longer reach, easier headshots from cover |
+| **Hybrid** | You expect both ranges in one mission | AR primary + SMG secondary, both rolling Slaughter Healing + Medical Accuracy | Mid-fight swap is fine because the talents persist on both — see note below |
+
+> **The "don't swap" rule was about not swapping to a *different* talent pool mid-fight.** Swapping between two guns that both carry Slaughter Healing + Medical Accuracy keeps all healer multipliers live on either weapon. The rule is about never abandoning the healer talents — not about which trigger you pull.
+
+### Primary talent reference
 
 | Talent | Effect | Uptime |
 |---|---|---|
 | **Slaughter Healing** | Kills/assists grant +7% Incoming Healing for 10s to all allies within 40m, up to 3 stacks | Permanent in any fight where you're shooting |
-| **Medical Accuracy** | Headshots grant +18% Healing Intensity for 10s | Refreshes constantly with SMG fire rate |
+| **Medical Accuracy** | Headshots grant +18% Healing Intensity for 10s | Refreshes on any headshot — SMG spray or AR tap, both work |
 
 Both talents stack with everything in your kit. There is no better pair on any weapon in the spreadsheet for a healer.
 
-### Secondary: Stat-stick only — never drawn
+### Secondary: two legitimate options
 
-Hold any defensive/utility weapon for stat passives only. Examples: a shotgun or SMG with **Slaughter Fortitude** (+12% Armor on kills/assists, 3 stacks) or **Conceited** (+15% DR on kills/assists). You will never fire it — its job is to add Engineering / Toughness rolls and never be touched.
+**Option 1 — Second healer gun (recommended for hybrid loadout):** Roll a second weapon (the *other* chassis from your primary) with Slaughter Healing + Medical Accuracy. If primary is the MK16, run a T2 SMG secondary; if primary is a T2 SMG, run the MK16 or a higher-tier AR secondary. This lets you swap chassis for range without losing a single healer multiplier — Slaughter Healing stacks and Medical Accuracy uptime persist through the swap because the new gun also refreshes them.
+
+**Option 2 — Defensive stat-stick (classic single-primary builds):** Hold any defensive/utility weapon for stat passives only. Examples: a shotgun or SMG with **Slaughter Fortitude** (+12% Armor on kills/assists, 3 stacks) or **Conceited** (+15% DR on kills/assists). You will never fire it — its job is to add Engineering / Toughness rolls and never be touched. Pick this if you're locked into one chassis and just want extra survival stats from the holster slot.
 
 ---
 
@@ -117,8 +140,8 @@ Every slot. Every talent. Every stat. The build at a glance.
 | Slot | Item |
 |---|---|
 | **Specialization** | Field Medic — **Healing Swarm signature** (team-wide micro-drone heal/revive burst) |
-| **Primary Weapon** | SMG with Slaughter Healing + Medical Accuracy (T2). One gun, both talents. |
-| **Secondary Weapon** | Stat-stick only — never drawn. Roll for Engineering/Toughness passives. |
+| **Primary Weapon** | Any SMG **or** AR rolling Slaughter Healing + Medical Accuracy. T2 ideal; T1 fine as a bridge. Pick the chassis that matches your range comfort. |
+| **Secondary Weapon** | Either a second healer gun on the opposite chassis (for range coverage, same talents) **or** a defensive stat-stick (Slaughter Fortitude / Conceited) for Engineering/Toughness passives. |
 | **Combat Skill 1** | **Support Station** with **Effective Triage** mod set (3-piece). +40% IH to any ally below 50% HP inside the 9.27m radius. CD 14.3s / Duration 44.9s before Skill Duration stacking. |
 | **Combat Skill 2** | **Healing Hive** with **Mutual Support** mod set (3-piece). +9.60% Skill Intensity while Hive is deployed and you are within 20m of an ally. +20% Movement Speed when 20m+ away. Hive auto-targets lowest-HP ally in range. |
 | **Signature Ability** | **Healing Swarm** — micro-drone swarm that mass-heals and revives all allies in range. Saved for whole-team panic moments. |
@@ -424,7 +447,7 @@ When you are at the loot pile post-mission, this is the only sheet you need. **A
 
 | Item | Why | Stat target |
 |---|---|---|
-| **T2 SMG with Slaughter Healing + Medical Accuracy** | The one gun. Both healing talents on a single weapon. Highest-priority drop. | Headshot Damage / Crit Chance / RoF rolls |
+| **Any SMG or AR with Slaughter Healing + Medical Accuracy** | The one gun. Both healing talents on a single weapon. Highest-priority drop — T2 ideal, T1 acceptable as a bridge. | Headshot Damage / Crit Chance / RoF rolls |
 | **Captain Cow gear piece** (any slot) | Bridge gear set 4pc. Run from start through endgame. | Engineering Core + Skill Intensity + Skill Duration |
 | **Healing Elites gear piece** (endgame) | Endgame 4pc. Requires elite missions. | Engineering Core + Skill Intensity + Skill Duration |
 | **T2 chest with Deep Focus** | Build-defining Skill Duration talent. Ops Armor T2 ideal. | Engineering Core + Skill Intensity + Skill Duration |
@@ -465,8 +488,8 @@ When you are at the loot pile post-mission, this is the only sheet you need. **A
 
 ## TL;DR — The Five Things to Remember
 
-### 1. One gun. SMG with Slaughter Healing + Medical Accuracy.
-Both talents on the same SMG. Never swap. Aim for the head — every headshot refreshes +18% Healing Intensity. Every kill/assist stacks +21% team-wide Incoming Healing aura. Secondary is a stat stick.
+### 1. One talent pair. Slaughter Healing + Medical Accuracy on every gun you draw.
+Both talents on your primary — SMG for close range, AR for medium range, your call. The talents are the build; the chassis is just ergonomics. Aim for the head — every headshot refreshes +18% Healing Intensity. Every kill/assist stacks +21% team-wide Incoming Healing aura. Secondary is either a second healer gun on the opposite chassis (full range coverage) or a defensive stat stick.
 
 ### 2. Support Station + Effective Triage. Healing Hive + Mutual Support.
 Effective Triage = +40% IH the moment any ally dips below 50% HP — biggest single heal multiplier in your class. Mutual Support (3pc) = +9.60% Skill Intensity always-on while Hive is deployed within 20m of an ally. **v8 name correction:** the mod is Mutual Support, not Coordinated Strike (that is a Vanguard / Smart Cover mod). Healing Swarm is your signature — saved for whole-team panic moments.
@@ -482,7 +505,44 @@ Two heal pops, one OS. **High-HP ally heals (>50% HP) trigger a team-wide +5% Ma
 
 ---
 
+<a id="video-audit-addendum"></a>
+
+## v9.1 Video-Audit Addendum — May 2026
+
+Reviewed 24 community videos (Godlike, Saiynergy, PVE Enjoyer, Tactical Pharma, Combat Medic, 7R Healer, RogueGold 14-tips, and more). Nothing reversed in this v9 build. Three confirmations and one optional bridge variant worth recording.
+
+### Confirmation 1 — Hypervigilant SELF-ONLY (v8 → v9 correction stands)
+No video covered the talent directly, but no video contradicted the SELF-ONLY reading either. The text-must-say-team rule remains the law. Hypervigilant stays out of the build.
+
+### Confirmation 2 — Brains over Brawn is the right OS for the Tactical Pharma variant
+The Tactical Pharma corrosive variant (the offensive-leaning Field Medic loadout) gets the same treatment Project Panda gives it on stream: **Brains over Brawn purple OS — "additional damage equal to 48% of engineering, +21% skill crit chance."** With Engineering Core on every gear piece, 48% of a 1.3K engineering pool is meaningful free damage. Recommended Tactical Pharma OS path: Medical Excellence (gold healer) → Brains over Brawn (purple offensive).
+
+### Confirmation 3 — The 4pc Shield + 2pc Fearless chassis is real and PvP-viable
+The Combat Medic video runs **4pc Shield + 2pc Fearless** with Unflinching 2 chest + Emergency Measures 2 backpack + Assisted Fury OS + Double-Barrel + P90. That is the **PvP** lean. Our v9 build is the **PvE Legendary lean** (Captain Cow → Healing Elites). Both are valid in their lanes.
+
+### Optional Bridge — "Combat Medic" PvP Companion Loadout
+If you want a second saved loadout slot for Dark Zone / PvP / solo heroics:
+
+| Slot | Item | Why |
+|---|---|---|
+| Specialization | Field Medic | Same |
+| Sets | **4pc Shield + 2pc Fearless** | Armor + max HP + DR layering |
+| Chest | **Unflinching 2** | 70% chance to restore HP = 420% Toughness on hit — self-survival |
+| Backpack | **Emergency Measures 2** | 70% Max HP restore when below 20% HP — panic button |
+| Weapon 1 | **Double-Barrel** with Steady Reload 2 | Headshot one-tap in PvP |
+| Weapon 2 | **P90** with Perform | +18% wpn dmg <20m, fallback close-range |
+| OS | **Assisted Fury** | Weapon crit chance — lets you fight back |
+| Skills | Same healer trio | Heal yourself while killing |
+
+This is your **selfish-healer** profile. Save it as Loadout B. The Legendary v9 build above stays as Loadout A.
+
+### No edits needed to the v9 build itself
+The Legendary v9 build's gear, OS, skill, and mod choices are all internally consistent with how the videos describe the underlying mechanics. Math and engine separation hold.
+
+---
+
 > *Now go heal. Nobody approaches zero.*
 
 ---
 
+ **Source:** Division Resurgence Build Database (spreadsheet, literal text read) + 24 community video transcripts · **Mechanic claims independently verified** against Resurgence-specific community guides

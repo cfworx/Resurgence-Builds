@@ -11,6 +11,7 @@ export interface Props {
     author: string;
     tags?: string[];
   };
+  keywords?: string[];
   breadcrumbs?: { name: string; url: string }[];
   jsonLd?: Record<string, unknown> | Record<string, unknown>[];
 }
@@ -22,12 +23,13 @@ const {
   ogType = 'website',
   ogImage = '/og-default.png',
   article,
+  keywords = [],
   breadcrumbs = [],
   jsonLd,
 } = Astro.props;
 
 const siteName = 'The Division Resurgence Builds';
-const fullTitle = `${title} · ${siteName}`;
+const fullTitle = title.includes(siteName) ? title : `${title} · ${siteName}`;
 const siteUrl = Astro.site?.toString().replace(/\/$/, '') || 'https://resurgencebuilds.com';
 const canonicalURL = canonical || new URL(Astro.url.pathname, siteUrl).toString();
 const ogImageUrl = ogImage.startsWith('http') ? ogImage : `${siteUrl}${ogImage}`;
@@ -59,6 +61,7 @@ const articleLd = article ? {
 <!-- Primary Meta Tags -->
 <title>{fullTitle}</title>
 <meta name="description" content={description} />
+{keywords.length > 0 && <meta name="keywords" content={keywords.join(', ')} />}
 <link rel="canonical" href={canonicalURL} />
 
 <!-- Open Graph -->

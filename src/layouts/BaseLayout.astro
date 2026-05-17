@@ -15,11 +15,12 @@ export interface Props {
     author: string;
     tags?: string[];
   };
+  keywords?: string[];
   breadcrumbs?: { name: string; url: string }[];
   jsonLd?: Record<string, unknown>;
 }
 
-const { title, description, ogType, ogImage, article, breadcrumbs, jsonLd } = Astro.props;
+const { title, description, ogType, ogImage, article, keywords, breadcrumbs, jsonLd } = Astro.props;
 ---
 
 <!DOCTYPE html>
@@ -60,6 +61,7 @@ const { title, description, ogType, ogImage, article, breadcrumbs, jsonLd } = As
     ogType={ogType}
     ogImage={ogImage}
     article={article}
+    keywords={keywords}
     breadcrumbs={breadcrumbs}
     jsonLd={jsonLd}
   />

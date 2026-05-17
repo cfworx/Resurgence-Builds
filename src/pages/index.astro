@@ -77,14 +77,24 @@ const filterTags = [
 ---
 
 <BaseLayout
-  title="Division Resurgence Builds, Guides & News"
-  description="The #1 independent resource for Tom Clancy's The Division Resurgence. Find optimized builds, in-depth guides, patch notes breakdowns, and the latest news. Updated every patch."
+  title="The Division Resurgence Builds, Guides & News"
+  description="The top independent wiki for The Division Resurgence. Discover the best mobile builds, weapon tier lists, patch notes, and class guides."
+  keywords={[
+    "the division resurgence",
+    "division resurgence mobile",
+    "division resurgence guide",
+    "division resurgence tier list",
+    "division resurgence builds",
+    "division resurgence best build",
+    "division resurgence weapon tier list",
+    "division resurgence gear sets"
+  ]}
   jsonLd={{
     '@context': 'https://schema.org',
     '@type': 'WebSite',
-    name: 'Resurgence Builds',
+    name: 'The Division Resurgence Builds',
     url: 'https://resurgencebuilds.com',
-    description: 'Independent fan resource for Tom Clancy\'s The Division Resurgence — builds, guides, patch notes, and news.',
+    description: 'Independent fan wiki and resource for The Division Resurgence — builds, guides, tier lists, and meta strategies.',
     publisher: {
       '@type': 'Organization',
       name: 'Resurgence Builds',
@@ -99,7 +109,7 @@ const filterTags = [
     <div class="hero-banner__content container" style="display:flex; justify-content:center;">
       <div class="hero-box">
         <h1 class="hero__title" style="margin-bottom: var(--sp-6);">
-          Resurgence<span style="color:var(--accent);">Builds</span>
+          The Division Resurgence <span style="color:var(--accent);">Builds</span>
         </h1>
         <div class="hero__actions">
           <a href="/builds/" class="btn btn--primary">Browse Builds</a>
@@ -155,6 +165,21 @@ const filterTags = [
         <p style="color:var(--ink-muted);font-size:var(--text-lg);">No posts match that filter.</p>
         <button class="btn btn--outline" id="clear-filter" style="margin-top:var(--sp-4);">Show All Posts</button>
       </div>
+    </div>
+  </section>
+
+  <hr class="divider" style="max-width:var(--max-width);margin:0 auto;" />
+
+  <!-- Semantic SEO Block -->
+  <section class="section" style="padding-top: var(--sp-6);">
+    <div class="container" style="max-width: 800px; margin: 0 auto; text-align: center;">
+      <h2 style="font-size: var(--text-xl); margin-bottom: var(--sp-4);">About The Division Resurgence</h2>
+      <p style="color: var(--ink-muted); font-size: var(--text-sm); line-height: 1.6; margin-bottom: var(--sp-4);">
+        <strong>The Division Resurgence</strong> is an upcoming free-to-play mobile RPG shooter from Ubisoft, bringing the acclaimed franchise to iOS and Android. Prepare for the global release date by studying our class guides, mastering the Dark Zone, and exploring the open world of Manhattan. Whether you are looking to download the APK, party up with a clan for co-op multiplayer, or optimize your system requirements and controller support on an emulator PC, we provide the best tips and walkthroughs.
+      </p>
+      <p style="color: var(--ink-muted); font-size: var(--text-sm); line-height: 1.6;">
+        Our wiki is updated every patch with the latest meta strategies, from endgame solo builds to Dark Zone PvP extraction tactics. Master exotic weapons, brand sets, and SHD tech across all factions including the Cleaners, Rikers, Hyenas, Outcasts, and True Sons.
+      </p>
     </div>
   </section>
 </BaseLayout>

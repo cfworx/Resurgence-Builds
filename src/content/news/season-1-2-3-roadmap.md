@@ -2,7 +2,7 @@
 title: "The Season 1, 2, and 3 Roadmap — What's Coming Through Winter 2026"
 publishDate: "2026-04-28"
 author: "RapidF5"
-description: "Ubisoft publishes the full seasonal roadmap for Resurgence. See what's coming in Phase 3, the PC Launch in Season 2, and the Major Story Expansion in Season 3."
+description: "Ubisoft publishes the full Division Resurgence seasonal roadmap. See what's coming in Phase 3, the PC Launch in Season 2, and new story missions and events in Season 3."
 tags: ["Roadmap", "Season 1", "Season 2", "Season 3"]
 featuredImage: "/images/season-roadmap.jpg"
 imageAlt: "A Division Agent checking a map on a snowy New York street"
