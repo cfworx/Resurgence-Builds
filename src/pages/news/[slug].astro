@@ -8,9 +8,9 @@ export async function getStaticPaths() {
 }
 
 const { post } = Astro.props;
-const { Content } = await render(post);
+const { Content, headings } = await render(post);
 ---
 
-<NewsLayout title={post.data.title} description={post.data.description} publishDate={post.data.publishDate} author={post.data.author} tags={post.data.tags} parentPath="/news/" parentLabel="News">
+<NewsLayout title={post.data.title} description={post.data.description} publishDate={post.data.publishDate} author={post.data.author} tags={post.data.tags} parentPath="/news/" parentLabel="News" headings={headings}>
   <Content />
 </NewsLayout>

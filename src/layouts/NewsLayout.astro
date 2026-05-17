@@ -11,9 +11,12 @@ export interface Props {
   tags: string[];
   parentPath: string;
   parentLabel: string;
+  headings?: { depth: number; slug: string; text: string }[];
 }
 
-const { title, description, publishDate, author, tags, parentPath, parentLabel } = Astro.props;
+const { title, description, publishDate, author, tags, parentPath, parentLabel, headings = [] } = Astro.props;
+
+const tocItems = headings.filter(h => h.depth <= 3);
 
 const formattedDate = publishDate.toLocaleDateString('en-US', {
   weekday: 'long',
@@ -51,6 +54,17 @@ const breadcrumbItems = [
         <span>·</span>
         <time datetime={publishDate.toISOString()}>{formattedDate}</time>
       </div>
+
+      {tocItems.length > 0 && (
+        <nav class="toc" aria-label="Table of contents">
+          <p class="toc__title">Contents</p>
+          {tocItems.map(h => (
+            <a href={`#${h.slug}`} style={`padding-left:${(h.depth - 2) * 1}rem;`}>
+              {h.text}
+            </a>
+          ))}
+        </nav>
+      )}
 
       {tags.length > 0 && (
         <div style="display:flex;gap:var(--sp-1);flex-wrap:wrap;margin-bottom:var(--sp-6);">

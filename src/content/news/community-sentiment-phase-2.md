@@ -2,23 +2,11 @@
 title: "What the Community Is Saying — Two Weeks Into the Phase 2 PC Era"
 publishDate: "2026-05-17"
 author: "RapidF5"
-description: "A reader-facing look at the loudest conversations in The Division Resurgence right now: the PC pivot, higher frame rates, the value of Classified Ops Pass 1.2, missing-purchase reports, dev communication, and what's coming on June 23."
-tags: ["The Division Resurgence", "Community", "PC", "Phase 2", "Classified Ops Pass", "Missing Gear", "Roadmap"]
+description: "A breakdown of the biggest community topics right now: the PC early access launch, 60 FPS performance, Classified Ops Pass 1.2, missing gear, and the summer roadmap."
+tags: ["Community", "PC", "Phase 2", "Classified Ops Pass", "Missing Gear", "Roadmap"]
 ---
 
 The Division Resurgence has had one of the busiest three-week stretches of its short live-service life. PC early access landed on April 28, Phase 2 of Season 1 went live on May 12, and the roadmap through summer is now official. Almost every conversation across Reddit, YouTube and Twitter today loops back to one of six themes. Here is where each one stands as of May 17, 2026, with sources you can click straight through to.
-
----
-
-## Table of Contents
-
-1. [PC has been quietly winning people over](#1-pc-has-been-quietly-winning-people-over)
-2. [Higher frame rates are real, but they are device-dependent](#2-higher-frame-rates-are-real-but-they-are-device-dependent)
-3. [Classified Ops Pass 1.2 is generous on paper, polarizing in practice](#3-classified-ops-pass-12-is-generous-on-paper-polarizing-in-practice)
-4. [Missing-purchase and disappearing-gear reports have not gone away](#4-missing-purchase-and-disappearing-gear-reports-have-not-gone-away)
-5. [Dev communication has improved, but the cadence is the next ask](#5-dev-communication-has-improved-but-the-cadence-is-the-next-ask)
-6. [What's coming next — and what is locked in](#6-whats-coming-next--and-what-is-locked-in)
-7. [Where the conversation goes next](#where-the-conversation-goes-next)
 
 ---
 
