@@ -2,6 +2,8 @@
 import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 
+import rehypeExternalLinks from 'rehype-external-links';
+
 export default defineConfig({
   site: 'https://resurgencebuilds.com',
   output: 'static',
@@ -14,5 +16,8 @@ export default defineConfig({
     shikiConfig: {
       theme: 'github-dark',
     },
+    rehypePlugins: [
+      [rehypeExternalLinks, { target: '_blank', rel: ['noopener', 'noreferrer'] }]
+    ]
   },
 });
