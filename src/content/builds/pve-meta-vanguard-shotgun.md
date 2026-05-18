@@ -375,7 +375,3 @@ Print this. Tape it to your monitor.
 Build originated by **Godlike** on YouTube. Watch the full breakdown:
 - [Best Vanguard Build — Highest Damage in The Division: Resurgence](https://www.youtube.com/watch?v=cLrWBvz3F64)
 - [Legendary Mission Duo Showcase](https://www.youtube.com/watch?v=B3AP1dd7iSE)
-
-This post documents the build with spreadsheet-verified math for the community. All credit for the original synthesis goes to Godlike.
-
-Posted on [resurgencebuilds.com](https://resurgencebuilds.com) — math on the page, every talent text verified against the in-game tooltip database.

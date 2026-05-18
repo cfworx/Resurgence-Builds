@@ -386,7 +386,3 @@ Build originated by **Willspot** on YouTube. Watch the full breakdown:
 
 Secondary confirmation from **EmmanuelxRD**:
 - [BEST BUILD FOR PVP? 4pc Strike Fury + 2pc Fearless Warrior](https://www.youtube.com/watch?v=zJBDwHHiNOE)
-
-This post documents the build with spreadsheet-verified math for the community. All credit for the original synthesis goes to Willspot.
-
-Posted on [resurgencebuilds.com](https://resurgencebuilds.com) — math on the page, every talent text verified against the in-game tooltip database.

@@ -377,7 +377,3 @@ Run the right build for the right mode. You can adapt either build to the other,
 
 Build originated by **Willspot** on YouTube. Watch the full breakdown (includes on-screen DPS math):
 - [Lady Death Is BROKEN — Vanguard Pulse Build (FURY + SHIELD)](https://www.youtube.com/watch?v=GN_CvEVAWj0)
-
-This post documents the build with spreadsheet-verified math for the community. All credit for the original synthesis goes to Willspot.
-
-Posted on [resurgencebuilds.com](https://resurgencebuilds.com) — math on the page, every talent text verified against the in-game tooltip database.
