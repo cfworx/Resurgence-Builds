@@ -1,8 +1,8 @@
-﻿---
+---
 title: "The Demolitionist — Explosive Chaos Solo Build for The Division: Resurgence"
 subtitle: "Solo-first Â· Spreadsheet-verified Â· Math on the page Â· Built for fun"
 specialization: Demolitionist
-featuredImage: "/images/demolitionist-explosive-chaos.jpg"
+featuredImage: "/images/demolitionist-v2.jpg"
 imageAlt: "A Demolitionist agent firing a grenade launcher amidst a fiery explosion"
 playstyle: Solo
 pve: true

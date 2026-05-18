@@ -1,8 +1,8 @@
-﻿---
+---
 title: "The Lockdown Tech Op — Disorient-Loop Striker Drone Build for The Division: Resurgence"
 subtitle: "Off-meta Â· Fun Â· Spreadsheet-verified Â· Math on the page Â· Striker Drone CC + skill-crit loop"
 specialization: Tech Operator
-featuredImage: "/images/lockdown-tech-op.jpg"
+featuredImage: "/images/tech-op-v2.jpg"
 imageAlt: "A Tech Operator agent surrounded by a swarm of Striker Drones in a snowy urban street"
 playstyle: Support
 pve: true

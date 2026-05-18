@@ -1,8 +1,8 @@
-﻿---
+---
 title: "The Vampire Bulwark — Happy Survival LMG Tank Build for The Division: Resurgence"
 subtitle: "Off-meta Â· Fun Â· Spreadsheet-verified Â· Math on the page Â· LMG vampire-tank that eats damage and gives it back"
 specialization: Bulwark
-featuredImage: "/images/vampire-bulwark.jpg"
+featuredImage: "/images/vampire-v2.jpg"
 imageAlt: "A Bulwark agent with vampire fangs wielding an LMG in a dark urban environment"
 playstyle: Tank
 pve: true
