@@ -7,6 +7,7 @@ pvp: false
 lastUpdated: 2026-05-17
 patch: "Season 2"
 featuredImage: "/images/jackpot-chemical.jpg"
+imageAlt: "A Division agent firing a chemical launcher into a group of enemies"
 tags: ["Meta", "PvE", "Tech-Operator", "Skill-Build", "Jackpot", "Fire-Cycle", "Chemical-Trap", "Farming"]
 description: "The best skill-build for farming elite missions. 4pc Jackpot + 1pc Fire Cycle with Chemical Trap and Brains Over Brawn."
 author: "RapidF5"

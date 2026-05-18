@@ -58,8 +58,8 @@ Patch 1.1.2 deployed alongside the PC Early Access launch. The update was a stab
 
 ---
 <div class="bmc-callout" style="margin: 2rem 0; padding: 1.5rem; background: var(--surface); border: 1px solid var(--accent); border-radius: 8px; text-align: center;">
-  <h3 style="margin-top: 0; margin-bottom: 0.5rem; color: var(--accent);">Tired of reading the fine print?</h3>
-  <p style="margin-bottom: 1rem; font-size: 0.875rem; color: var(--ink-muted);">Translating Ubisoft's dev-speak into English makes me violently hungry. Keeping track of the meta and writing these updates takes massive amounts of time. If this summary saved you from reading a 10-page dev blog, buy me a pizza to compensate.</p>
+  <h3 style="margin-top: 0; margin-bottom: 0.5rem; color: var(--accent);">Another patch, another migraine</h3>
+  <p style="margin-bottom: 1rem; font-size: 0.875rem; color: var(--ink-muted);">Deciphering what 'various stability improvements' actually means in a 1.1.2 update is basically a full-time detective job. If this breakdown got you back into the Dark Zone faster, hook a brother up with a pizza.</p>
   <div style="display: flex; justify-content: center;">
     <a href="https://buymeacoffee.com/resurgencebuilds" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; justify-content: center; background-color: #ff6d10; color: #000000; font-family: 'Cookie', cursive, sans-serif; font-size: 24px; text-decoration: none; padding: 5px 15px; border-radius: 5px; font-weight: bold; box-shadow: 0px 1px 2px rgba(0,0,0,0.2); transition: transform 0.2s;">
       <span style="margin-right: 8px; font-size: 24px;">🍕</span> Buy me a pizza

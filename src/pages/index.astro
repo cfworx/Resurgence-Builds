@@ -20,6 +20,7 @@ interface UnifiedPost {
   type: 'news' | 'patch-notes' | 'guide' | 'build';
   tags: string[];
   featuredImage?: string;
+  imageAlt?: string;
 }
 
 const posts: UnifiedPost[] = [
@@ -32,6 +33,7 @@ const posts: UnifiedPost[] = [
     type: 'news' as const,
     tags: post.data.tags,
     featuredImage: post.data.featuredImage,
+    imageAlt: post.data.imageAlt,
   })),
   ...allPatchNotes.map((pn) => ({
     title: pn.data.title,
@@ -42,6 +44,7 @@ const posts: UnifiedPost[] = [
     type: 'patch-notes' as const,
     tags: [`v${pn.data.version}`],
     featuredImage: pn.data.featuredImage,
+    imageAlt: pn.data.imageAlt,
   })),
   ...allGuides.map((guide) => ({
     title: guide.data.title,
@@ -61,6 +64,7 @@ const posts: UnifiedPost[] = [
     type: 'build' as const,
     tags: build.data.tags,
     featuredImage: build.data.featuredImage,
+    imageAlt: build.data.imageAlt,
   })),
 ];
 
@@ -163,6 +167,7 @@ const filterTags = [
             type={post.type}
             tags={post.tags}
             featuredImage={post.featuredImage}
+            imageAlt={post.imageAlt}
           />
         ))}
       </div>

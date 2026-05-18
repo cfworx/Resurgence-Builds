@@ -8,9 +8,10 @@ export interface Props {
   type: 'news' | 'patch-notes' | 'guide' | 'build';
   tags?: string[];
   featuredImage?: string;
+  imageAlt?: string;
 }
 
-const { title, href, date, author, description, type, tags = [], featuredImage } = Astro.props;
+const { title, href, date, author, description, type, tags = [], featuredImage, imageAlt } = Astro.props;
 
 const formattedDate = date.toLocaleDateString('en-US', {
   month: 'short',
@@ -34,7 +35,7 @@ const typeLabel = typeLabels[type] || type;
       <div class="post-card__image">
         <img
           src={featuredImage}
-          alt={`Featured image for ${title}`}
+          alt={imageAlt || `Featured image for ${title}`}
           loading="lazy"
           decoding="async"
           width="600"

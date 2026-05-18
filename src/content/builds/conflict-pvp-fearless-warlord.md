@@ -7,6 +7,7 @@ pvp: true
 lastUpdated: 2026-05-17
 patch: "Season 2"
 featuredImage: "/images/conflict-warlord.jpg"
+imageAlt: "A Fearless Warrior holding an assault rifle in the Conflict PvP arena"
 tags: ["Meta", "PvP", "Conflict", "Fearless-Warrior", "Striker", "Warlord", "Spawn-Trap"]
 description: "The best PVP build for Conflict in The Division: Resurgence right now. A bruiser-style 4pc Fearless Warrior + 2pc Striker build with the Warlord exotic AR."
 author: "RapidF5"
