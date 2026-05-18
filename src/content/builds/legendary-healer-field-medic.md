@@ -1,5 +1,5 @@
 ---
-title: "The Legendary Healer — Field Medic Build"
+title: "Field Medic — Babysitting Idiots 101"
 specialization: Field Medic
 playstyle: Support
 pve: true
@@ -9,9 +9,11 @@ patch: "Season 2"
 tags: ["field-medic", "healer", "legendary", "support-station", "healing-hive", "medical-excellence", "captain-cow", "healing-elites"]
 description: "The best healer in the game for legendary PVE. You will push heal density so high that your teammates' health bars will refuse to move."
 author: "RapidF5"
+featuredImage: "/images/legendary-healer-field-medic.webp"
+imageAlt: "Legendary Healer Field Medic Build"
 ---
 
-# The Legendary Healer
+# Field Medic — Babysitting Idiots 101
 
 **By RapidF5**
 

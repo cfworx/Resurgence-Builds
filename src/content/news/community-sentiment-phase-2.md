@@ -1,6 +1,6 @@
 ---
 title: "What the Community Is Saying"
-publishDate: "2026-05-17"
+publishDate: "2026-05-19"
 author: "RapidF5"
 featuredImage: "/images/news/community-sentiment-pc.jpg"
 imageAlt: "A young gamer giving a thumbs up with a 180 FPS overlay playing The Division Resurgence on PC"

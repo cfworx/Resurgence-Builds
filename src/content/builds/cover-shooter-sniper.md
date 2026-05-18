@@ -1,5 +1,5 @@
 ---
-title: "Vanguard — Cover Shooter Sniper"
+title: "Vanguard — The Cross-Map Coward (Sniper)"
 specialization: Vanguard
 playstyle: DPS
 pve: true
@@ -9,9 +9,11 @@ patch: "Season 2"
 tags: ["vanguard", "off-meta", "pve", "sniper", "dsr-1", "one-shot-one-kill", "cover-shooter", "glass-cannon"]
 description: "An off-meta Vanguard sniper build that deletes elites from across the map. You are functionally made of wet tissue paper, but it doesn't matter if they're dead."
 author: "RapidF5"
+featuredImage: "/images/cover-shooter-sniper.png"
+imageAlt: "Cover Shooter Sniper Build"
 ---
 
-# Vanguard — Cover Shooter Sniper
+# Vanguard — The Cross-Map Coward (Sniper)
 
 **By RapidF5**
 

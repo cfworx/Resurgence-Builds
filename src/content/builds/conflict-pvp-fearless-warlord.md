@@ -1,5 +1,5 @@
 ---
-title: "PVP Conflict Meta — 4pc Fearless Warrior + Warlord"
+title: "Vanguard — The 24-0 Spawn Trapper"
 specialization: Vanguard
 playstyle: DPS
 pve: false
@@ -9,9 +9,11 @@ patch: "Season 2"
 tags: ["meta", "pvp", "conflict", "fearless-warrior", "phalanx-attack", "warlord", "exotic"]
 description: "The dominant Conflict PVP build. A setup so disgustingly strong it allows you to spawn-trap entire teams and go 24-0."
 author: "RapidF5 (via Willspot)"
+featuredImage: "/images/division-resurgence-conflict-pvp-fearless-warrior-build.jpg"
+imageAlt: "Fearless Warrior Warlord PVP Build"
 ---
 
-# PVP Conflict Meta — 4pc Fearless Warrior + Warlord
+# Vanguard — The 24-0 Spawn Trapper
 
 **By RapidF5 (via Willspot)**
 

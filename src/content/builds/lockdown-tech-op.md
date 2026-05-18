@@ -1,5 +1,5 @@
 ---
-title: "Tech Operator — Lockdown Disorient-Loop"
+title: "Tech Operator — The Flashbang Salesman"
 specialization: "Tech Operator"
 playstyle: Support
 pve: true
@@ -9,9 +9,11 @@ patch: "Season 2"
 tags: ["tech-operator", "off-meta", "pve", "disoriented", "jackpot", "striker-drone", "striker-hive", "crowd-control"]
 description: "An off-meta Tech Operator build that keeps an entire pack permanently Disoriented while two skills DPS them down. You are basically a walking flashbang."
 author: "RapidF5"
+featuredImage: "/images/division-resurgence-tech-operator-striker-drone-build.jpg"
+imageAlt: "Tech Operator Striker Drone Build"
 ---
 
-# Tech Operator — Lockdown Disorient-Loop
+# Tech Operator — The Flashbang Salesman
 
 **By RapidF5**
 

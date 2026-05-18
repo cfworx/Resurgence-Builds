@@ -1,5 +1,5 @@
 ---
-title: "Demolitionist — Explosive Chaos Solo Build"
+title: "Demolitionist — Michael Bay's Wet Dream"
 specialization: Demolitionist
 playstyle: Solo
 pve: true
@@ -9,9 +9,11 @@ patch: "Season 2"
 tags: ["demolitionist", "solo", "explosive", "m32a1", "collateral-damage", "jackpot", "lady-death", "fun"]
 description: "A solo-first off-meta Demolitionist build where every skill cast detonates twice. Michael Bay's wet dream."
 author: "RapidF5"
+featuredImage: "/images/division-resurgence-demolitionist-explosive-solo-build.jpg"
+imageAlt: "Demolitionist Explosive Chaos Build"
 ---
 
-# Demolitionist — Explosive Chaos
+# Demolitionist — Michael Bay's Wet Dream
 
 **By RapidF5**
 

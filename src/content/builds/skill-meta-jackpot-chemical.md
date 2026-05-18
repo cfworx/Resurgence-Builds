@@ -1,5 +1,5 @@
 ---
-title: "PVE Meta — Field Medic Jackpot Chemical Trap"
+title: "Field Medic — Pure Environmental Terrorism"
 specialization: Field Medic
 playstyle: DPS
 pve: true
@@ -9,9 +9,11 @@ patch: "Season 2"
 tags: ["field-medic", "meta", "pve", "skill-build", "jackpot", "fire-cycle", "chemical-trap", "corrosion"]
 description: "The top skill-DPS build in the game. You are basically committing environmental terrorism with acid pools."
 author: "RapidF5 (via RogueMadras)"
+featuredImage: "/images/division-resurgence-field-medic-chemical-trap-skill-build.jpg"
+imageAlt: "Field Medic Chemical Trap Skill Build"
 ---
 
-# PVE Meta — Field Medic Jackpot Chemical Trap
+# Field Medic — Pure Environmental Terrorism
 
 **By RapidF5 (via RogueMadras)**
 

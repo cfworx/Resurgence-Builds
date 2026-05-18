@@ -1,5 +1,5 @@
 ---
-title: "PVP Dark Zone Meta — Vanguard Pulse + Lady Death"
+title: "Vanguard — The Hate Mail Generator"
 specialization: Vanguard
 playstyle: DPS
 pve: false
@@ -9,9 +9,11 @@ patch: "Season 2"
 tags: ["vanguard", "meta", "pvp", "dark-zone", "lady-death", "fury", "shield", "scanning-pulse"]
 description: "The absolute pinnacle of Dark Zone toxicity. Wall-hacks, absurd DPS, and an SMG that does everything for you. Expect hate mail."
 author: "RapidF5 (via Willspot)"
+featuredImage: "/images/division-resurgence-dark-zone-pvp-lady-death-build.jpg"
+imageAlt: "Vanguard Lady Death Dark Zone Build"
 ---
 
-# PVP Dark Zone Meta — Vanguard Pulse + Lady Death
+# Vanguard — The Hate Mail Generator
 
 **By RapidF5 (via Willspot)**
 

@@ -1,5 +1,5 @@
 ---
-title: "PVE Meta — Vanguard Phalanx Attack Double-Barrel"
+title: "Vanguard — The Alt-F4 Shotgun Button"
 specialization: Vanguard
 playstyle: DPS
 pve: true
@@ -9,9 +9,11 @@ patch: "Season 2"
 tags: ["vanguard", "meta", "pve", "shotgun", "phalanx-attack", "gunny-johnny", "double-barrel"]
 description: "The premier PVE DPS build. A shotgun setup so powerful it functions as an alt-F4 button for elites."
 author: "RapidF5 (via Godlike)"
+featuredImage: "/images/division-resurgence-vanguard-double-barrel-shotgun-pve-build.jpg"
+imageAlt: "Vanguard Double Barrel Shotgun Build"
 ---
 
-# PVE Meta — Vanguard Phalanx Attack Double-Barrel
+# Vanguard — The Alt-F4 Shotgun Button
 
 **By RapidF5 (via Godlike)**
 
