@@ -1,4 +1,4 @@
-﻿---
+---
 title: "The Legendary Healer — Field Medic Build"
 subtitle: "v9 Â· Verified Legendary Healer Â· Mechanic-accurate, spreadsheet-verified, math on the page"
 specialization: Field Medic
@@ -517,3 +517,13 @@ If you want a second saved loadout slot for Dark Zone / PvP / solo heroics:
 > *Now go heal. Nobody approaches zero.*
 
 ---
+
+<div class="bmc-callout" style="margin: 2rem 0; padding: 1.5rem; background: var(--surface); border: 1px solid var(--accent); border-radius: 8px; text-align: center;">
+  <h3 style="margin-top: 0; margin-bottom: 0.5rem; color: var(--accent);">Tired of carrying dead weight?</h3>
+  <p style="margin-bottom: 1rem; font-size: 0.875rem; color: var(--ink-muted);">Keeping randoms alive who refuse to use cover is a thankless job. Testing these healing curves and doing the math is just as exhausting. If this build stopped your team from wiping on the last boss, demand they buy me a pizza to compensate us both.</p>
+  <div style="display: flex; justify-content: center;">
+    <a href="https://buymeacoffee.com/resurgencebuilds" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; justify-content: center; background-color: #ff6d10; color: #000000; font-family: 'Cookie', cursive, sans-serif; font-size: 24px; text-decoration: none; padding: 5px 15px; border-radius: 5px; font-weight: bold; box-shadow: 0px 1px 2px rgba(0,0,0,0.2); transition: transform 0.2s;">
+      <span style="margin-right: 8px; font-size: 24px;">🍕</span> Buy me a pizza
+    </a>
+  </div>
+</div>
