@@ -123,18 +123,27 @@ const filterTags = [
   <!-- Latest Posts Feed -->
   <section class="section">
     <div class="container">
-      <SectionTag label="Latest" />
-      <h2 class="heading-accent">Latest Posts</h2>
-      <p style="color:var(--ink-muted);margin-bottom:var(--sp-6);">
-        News, patch notes, and guides — all in one place.
-      </p>
+      <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: var(--sp-6); margin-bottom: var(--sp-6);">
+        <div>
+          <SectionTag label="Latest" />
+          <h2 class="heading-accent">Latest Posts</h2>
+          <p style="color:var(--ink-muted);margin-bottom:var(--sp-4);">
+            News, patch notes, and guides — all in one place.
+          </p>
 
-      <!-- Tag Filter Bar -->
-      <div class="filter-bar" id="tag-filters">
-        <button class="filter-btn is-active" data-tag="all">All</button>
-        {filterTags.map((tag) => (
-          <button class="filter-btn" data-tag={tag.value}>{tag.label}</button>
-        ))}
+          <!-- Tag Filter Bar -->
+          <div class="filter-bar" id="tag-filters" style="margin-bottom: 0;">
+            <button class="filter-btn is-active" data-tag="all">All</button>
+            {filterTags.map((tag) => (
+              <button class="filter-btn" data-tag={tag.value}>{tag.label}</button>
+            ))}
+          </div>
+        </div>
+
+        <div class="bmc-callout" style="max-width: 480px; padding: var(--sp-6); background: var(--surface); border: 1px solid var(--accent); border-radius: var(--border-radius);">
+          <h3 style="margin-bottom: var(--sp-2); color: var(--accent); font-size: var(--text-lg);">100% Ad-Free Passion Project</h3>
+          <p style="font-size: var(--text-sm); color: var(--ink-muted); margin-bottom: 0; line-height: 1.6;">I run this site because I love the game. Testing loadouts and keeping the meta updated takes massive amounts of time, but I absolutely refuse to plaster the site with annoying pop-up ads. If these guides help you drop bodies in the DZ, consider tossing a few bucks my way to cover the server costs.</p>
+        </div>
       </div>
 
       <!-- Posts Grid -->

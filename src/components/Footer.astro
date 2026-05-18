@@ -1,5 +1,13 @@
 ---
+export interface Props {
+  title?: string;
+}
+
+const { title } = Astro.props;
 const year = new Date().getFullYear();
+const calloutText = title && title.length < 60 && !title.includes('Resurgence Builds') 
+  ? `Did "${title}" help you out?` 
+  : 'Did this page help you out?';
 ---
 
 <footer class="site-footer">
@@ -19,7 +27,8 @@ const year = new Date().getFullYear();
     </nav>
   </div>
 
-  <div style="display: flex; justify-content: center; margin-top: var(--sp-6);">
+  <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; margin-top: var(--sp-6);">
+    <p style="color: var(--accent); font-weight: 700; margin-bottom: var(--sp-2); font-size: var(--text-sm);">{calloutText}</p>
     <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="resurgencebuilds" data-color="#FFDD00" data-emoji="🦅" data-font="Cookie" data-text="Buy me some Phoenix Credits" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" is:inline></script>
   </div>
   <p class="footer-disclaimer" style="margin-top: 1rem; color: var(--ink-muted); font-size: 0.85rem; line-height: 1.5;">
