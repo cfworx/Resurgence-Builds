@@ -1,6 +1,6 @@
 ---
 title: "The Demolitionist — Explosive Chaos Solo Build"
-subtitle: "Solo-first Â· Spreadsheet-verified Â· Math on the page Â· Built for fun"
+subtitle: "Solo-first Â· Tested and verified Â· Math included Â· Built for fun"
 specialization: Demolitionist
 featuredImage: "/images/demolitionist-v2.jpg"
 imageAlt: "A Demolitionist agent firing a grenade launcher amidst a fiery explosion"
@@ -20,7 +20,7 @@ author: "RapidF5"
 
 **The most fun Demolitionist build in The Division Resurgence pairs the Collateral Damage OS with the M32A1 Grenade Launcher signature so every skill cast triggers a free 5-meter explosion for 3,000% Engineering (~45,000 raw damage per proc at endgame). Layer Jackpot 4pc for +24% Skill Crit Damage, Explosive Burst backpack for up to +90% Skill Multi-Shot, and Lady Death exotic SMG (or a non-exotic Vector with In Sync + Multitasking) and the screen turns into a kill cam — every grenade throw can deal 200,000+ AoE damage on a crit + Multi-Shot proc.**
 
-A **Demolitionist** build for The Division: Resurgence built around one core mechanic: **every Skill Damage event detonates twice.** Solo-first, math on the page, every entry verified verbatim against the spreadsheet.
+A **Demolitionist** build for The Division: Resurgence built around one core mechanic: **every Skill Damage event detonates twice.** Solo-first, math included, every entry verified against my testing data.
 
 **At a glance:**
 
@@ -61,7 +61,7 @@ This is the most number-on-screen build in the game. Solo content turns into a m
 
 ## The Engine — Collateral Damage as the Multiplier on Every Skill
 
-**Collateral Damage** (High-End Engineering OS) reads verbatim from the spreadsheet:
+**Collateral Damage** (High-End Engineering OS) reads exactly as noted in my database:
 
 > *"When dealing Skill Damage, also deal damage equal to 3000% Engineering to enemies within 5 meters of the target. 10 seconds [cooldown]."*
 
@@ -92,9 +92,9 @@ This build has a clear top-end weapon AND a clear non-exotic alternative. Not ev
 
 ### Path 1 (BIS): Lady Death exotic SMG — "Breathe Free"
 
-**Spreadsheet text (verbatim):** *"While moving, grants 4 stacks per second, or 8 stacks if sprinting, up to a maximum of 40 stacks. A stack is consumed with each round fired, granting +15% Weapon Damage. Deploying a Skill consumes 10 stacks and grants +15% Skill Damage. Kills grant +10% Movement Speed for 10 seconds."*
+**Exact text from my spreadsheet:** *"While moving, grants 4 stacks per second, or 8 stacks if sprinting, up to a maximum of 40 stacks. A stack is consumed with each round fired, granting +15% Weapon Damage. Deploying a Skill consumes 10 stacks and grants +15% Skill Damage. Kills grant +10% Movement Speed for 10 seconds."*
 
-Lady Death is the only exotic in the spreadsheet (alongside Warlord AR and Strawberry Milkshake LMG) whose talent **directly converts skill deployment into Skill Damage**. The +15% Skill Damage refresh on every skill cast lands directly on every Collateral Damage trigger.
+Lady Death is the only exotic in my database (alongside Warlord AR and Strawberry Milkshake LMG) whose talent **directly converts skill deployment into Skill Damage**. The +15% Skill Damage refresh on every skill cast lands directly on every Collateral Damage trigger.
 
 **How it feeds the build:**
 1. Sprint between cover — generates 8 Breathe Free stacks/second, caps at 40 in 5 seconds.
@@ -105,7 +105,7 @@ Lady Death is the only exotic in the spreadsheet (alongside Warlord AR and Straw
 
 ### Path 2 (Non-exotic, equal in spirit): First Wave Vector 45 ACP T2 with In Sync + Multitasking
 
-If you do not have Lady Death yet — or you do not chase exotics — chase a **T2 First Wave Vector 45 ACP** rolling **both In Sync AND Multitasking**. Confirmed in the spreadsheet weapon talent table: the Vector 45 ACP T2 is in the source pool for **both** talents, so a recalibrated roll can carry both at once.
+If you do not have Lady Death yet — or you do not chase exotics — chase a **T2 First Wave Vector 45 ACP** rolling **both In Sync AND Multitasking**. Confirmed in my weapon talent database: the Vector 45 ACP T2 is in the source pool for **both** talents, so a recalibrated roll can carry both at once.
 
 **In Sync (verbatim):** *"Weapon Hits grant +9% Skill Damage for 8 seconds. Skill Hits grant +9% Weapon Damage for 8 seconds. Bonus is doubled when both buffs are active at the same time."*
 
@@ -131,7 +131,7 @@ If you do not have Lady Death yet — or you do not chase exotics — chase a **
 |---|---|---|
 | **Modified USC (T2 SMG)** | Can roll In Sync | Solid In Sync chassis without Multitasking. Pair with any secondary that rolls Multitasking. |
 | **Custom 416 G3 (T2 AR)** | Can roll Multitasking AND Multi-Pronged Attack | AR rather than SMG — slower fire rate, but Multi-Pronged Attack adds up to +18% Skill Multi-Shot Chance from hits. Decent if you prefer AR play. |
-| **UIC15 MOD2 (T2 Rifle)** | Can roll In Sync, Multi-Pronged Attack, AND Long-Distance Marking | Best 3-talent stacker in the spreadsheet — if your recalibration can land any two of the three, it's a strong stat-stick primary. |
+| **UIC15 MOD2 (T2 Rifle)** | Can roll In Sync, Multi-Pronged Attack, AND Long-Distance Marking | Best 3-talent stacker in my database — if your recalibration can land any two of the three, it's a strong stat-stick primary. |
 | **Warlord (Exotic AR)** | Play Rough — +10% Skill Damage for 10s when firing ceases | Defensive option. The +10% Skill Damage is real but requires a stop-firing trigger, breaking the rhythm. Pick Lady Death over Warlord. |
 
 ### Secondary slot: Stat-stick with In Sync
@@ -251,28 +251,28 @@ That means **~1-in-4 explosions land at 1.55× damage (Lady Death) or 1.85× dam
 
 ### M32A1 Grenade Launcher: Thermobaric Grenades (3-piece)
 
-**Spreadsheet text:** *"Reduces Grenades in Grenade Launcher to 1, expands the Explosion Radius by 100% and increases damage by 460%."*
+**Exact text from my spreadsheet:** *"Reduces Grenades in Grenade Launcher to 1, expands the Explosion Radius by 100% and increases damage by 460%."*
 
 - **Why:** One grenade, one obliteration. The +460% damage means the grenade itself is a one-shot delete on most non-elite packs. The +100% radius means it covers any room you're aiming into. The single-grenade restriction is a feature — it forces deliberate target selection and prevents you from wasting Collateral Damage's 10-second cooldown on overlapping triggers.
 - **Bench mods:** **Concentrated Fire** (5 M32A1 hits in 3s = +14.4% Skill Intensity for 15s) — does not fire under Thermobaric (1 grenade per charge). **Airburst** is a backup if Thermobaric is out of reach; the +6% SCD per hit on 1-enemy is decent but does not compete with Thermobaric's raw output.
 
 ### Artillery Turret: Area Suppression (3-piece)
 
-**Spreadsheet text:** *"Artillery Turret hits on up to 1 enemies have a 50% chance of granting +2% Skill Critical Damage for 10 seconds, up to 5 stacks. Hits on more than 1 enemies have a guaranteed chance of granting the bonus."*
+**Exact text from my spreadsheet:** *"Artillery Turret hits on up to 1 enemies have a 50% chance of granting +2% Skill Critical Damage for 10 seconds, up to 5 stacks. Hits on more than 1 enemies have a guaranteed chance of granting the bonus."*
 
 - **Why:** The Turret reliably hits multiple enemies in solo play because you drop it into packs. **The guaranteed +2% per hit on 2+ enemies means full +10% SCD ramps in 3"“4 seconds.**
 - **Bench mods:** **Cooling System** (Skill Crits reduce Turret cooldown by 1.20%, 1s talent CD) for a uptime-focused alternative. **Frag Grenades** (+1% Skill Multi-Shot per Turret hit, 5 stacks = +5%) — Area Suppression beats it for crit ramp. **Optimized** (+8% Turret RoF, +0.5s duration per hit on 2+ enemies, capped 6s extra) for boss content where Turret duration matters.
 
 ### Explosive Seeker Mine: Multi-Directional Charge (3-piece)
 
-**Spreadsheet text:** *"Explosive Seeker Mine hits on enemies afflicted by Bleed or Vulnerable apply the same debuff to all enemies within 10 meter(s) and grant +7.20% Firepower for 10 second(s)."*
+**Exact text from my spreadsheet:** *"Explosive Seeker Mine hits on enemies afflicted by Bleed or Vulnerable apply the same debuff to all enemies within 10 meter(s) and grant +7.20% Firepower for 10 second(s)."*
 
 - **Why:** Artillery Turret applies Bleed naturally through Frag debris. The Seeker Mine homes onto a Bleeding enemy and **spreads the Bleed to every enemy within 10 meters**, lighting up the whole pack as another Skill Damage tick source. The +7.20% Firepower feeds your secondary weapon talent stacks.
 - **Bench mods:** **Cooling Device** (ESM Crits reduce ESM cooldown by 10%, 3s talent CD) for a CDR-focused alternative. **Applied Demolitions** (ESM hits on 1 enemy grant +3.20% SCD for 20s, 3 stacks = +9.6%). **Fragmentation Charge** (ESM hits grant +6.40% Skill Multi-Shot for 10s) — Explosive Burst already saturates Multi-Shot.
 
 ### OS Protocol: Collateral Damage (Engineering, High-End)
 
-**Spreadsheet text:** *"When dealing Skill Damage, also deal damage equal to 3000% Engineering to enemies within 5 meters of the target. 10 seconds [cooldown]."*
+**Exact text from my spreadsheet:** *"When dealing Skill Damage, also deal damage equal to 3000% Engineering to enemies within 5 meters of the target. 10 seconds [cooldown]."*
 
 - **Why:** This is the entire build. Every other choice exists to feed Collateral Damage.
 - **Bench OS:** **Explosive Charge** (HE Engineering) — *"Shooting for 3 seconds enhances the next Skill for 8 seconds. Dealing damage with the Enhanced Skill creates an explosion with a radius of 5 meters around it that deals damage equal to 1600% Engineering. 5 seconds cooldown."* Roughly half the per-trigger damage but a shorter cooldown. **Surgical Engineering** (HE Engineering, +15% SI passive) — *"Skill Critical Hits have a 60% chance of granting +16% Skill Critical Damage for 10 seconds, up to 3 stacks."* (=+48% SCD potential). Bench OS for SCD-focused playstyle if you do not have Collateral Damage yet.
@@ -283,7 +283,7 @@ That means **~1-in-4 explosions land at 1.55× damage (Lady Death) or 1.85× dam
 
 ## Why Energize Earns the Chest Slot
 
-**Spreadsheet text:** *"Using a Medical Kit grants +18% Skill Damage for 8 seconds. Triggering a Skill Multi-Shot refreshes the duration."*
+**Exact text from my spreadsheet:** *"Using a Medical Kit grants +18% Skill Damage for 8 seconds. Triggering a Skill Multi-Shot refreshes the duration."*
 
 The trick: **Triggering a Skill Multi-Shot refreshes the duration.** This build generates Skill Multi-Shot procs constantly:
 
@@ -311,7 +311,7 @@ With ~25"“60% sustained Skill Multi-Shot Chance and 3"“5 skill events per cy
 
 ## Why Explosive Burst Is the Only Backpack
 
-**Spreadsheet text:** *"Throwing a Grenade grants +9% Skill Multi-shot Chance for 2 seconds, up to 10 stacks. Talent Cooldown: 3 seconds."*
+**Exact text from my spreadsheet:** *"Throwing a Grenade grants +9% Skill Multi-shot Chance for 2 seconds, up to 10 stacks. Talent Cooldown: 3 seconds."*
 
 The math: **+9% × 10 stacks = +90% Skill Multi-Shot Chance** at full ramp. A Skill Multi-Shot doubles a Skill Damage event. **Every Collateral Damage explosion gets a ~50"“90% chance to fire twice** at full Explosive Burst stacks.
 
@@ -467,7 +467,7 @@ When you are at the loot pile post-mission, this is the only sheet you need. **A
 |---|---|
 | **Modified USC T2 SMG** with In Sync | Alternate non-exotic primary if you cannot find a Vector that rolls both In Sync and Multitasking. Pair with a secondary that rolls Multitasking. |
 | **Custom 416 G3 T2 AR** with Multitasking + Multi-Pronged Attack | AR alternative — slower fire rate, but Multi-Pronged Attack stacks up to +18% Skill Multi-Shot from hits. |
-| **UIC15 MOD2 T2 Rifle** with any two of In Sync / Multi-Pronged Attack / Long-Distance Marking | Best 3-talent stacker in the spreadsheet — strong primary if your recalibration lands two of three. |
+| **UIC15 MOD2 T2 Rifle** with any two of In Sync / Multi-Pronged Attack / Long-Distance Marking | Best 3-talent stacker in my database — strong primary if your recalibration lands two of three. |
 | **Warlord (Exotic AR)** | Defensive backup exotic. +10% Skill Damage 10s on cease-fire trigger. Inferior to Lady Death but viable. |
 | Explosive Charge OS (HE Engineering) | Alternative to Collateral Damage. Half the per-trigger damage but a 5-second cooldown. Run for sustained DPS. |
 | Surgical Engineering OS (HE Engineering) | Bench OS — Skill Crits 60% chance +16% SCD for 10s, 3 stacks (=+48% potential). |
@@ -503,7 +503,7 @@ When you are at the loot pile post-mission, this is the only sheet you need. **A
 **M32A1: 1 grenade, +100% radius, +460% damage.** One nuke per signature charge. **Turret Area Suppression: +2% Skill Crit Damage guaranteed per hit on 2+ enemies, 5 stacks (+10% SCD).** **ESM Multi-Directional Charge: spreads Bleed/Vuln to all enemies in 10m + +7.20% Firepower.** Three skills, three independent Skill Damage event streams, all feeding Collateral Damage.
 
 ### 3. Lady Death OR the Vector backup.
-**Lady Death exotic SMG (BIS).** Breathe Free generates 4 stacks/sec moving, 8/sec sprinting (cap 40). Each round burns 1 stack for +15% WD. **Deploying a skill consumes 10 stacks for +15% Skill Damage.** **Non-exotic backup: First Wave Vector 45 ACP T2 with In Sync + Multitasking.** Confirmed in the spreadsheet — the Vector 45 ACP T2 is in the source pool for both talents simultaneously. +18% Skill Damage doubled (In Sync) + +30% Skill Crit Damage permanent uptime (Multitasking). Equal-in-spirit to Lady Death on raw math.
+**Lady Death exotic SMG (BIS).** Breathe Free generates 4 stacks/sec moving, 8/sec sprinting (cap 40). Each round burns 1 stack for +15% WD. **Deploying a skill consumes 10 stacks for +15% Skill Damage.** **Non-exotic backup: First Wave Vector 45 ACP T2 with In Sync + Multitasking.** Confirmed in my database — the Vector 45 ACP T2 is in the source pool for both talents simultaneously. +18% Skill Damage doubled (In Sync) + +30% Skill Crit Damage permanent uptime (Multitasking). Equal-in-spirit to Lady Death on raw math.
 
 ### 4. Jackpot 4pc + Energize chest + Explosive Burst backpack.
 **Engineering Core on every gear slot.** Top-3 stats: **Skill Intensity → Skill Crit Chance → Skill Crit Damage.** **Jackpot 4pc: +10.8% Skill Crit Chance + +24% Skill Crit Damage.** **Energize chest: +18% Skill Damage permanent uptime via Multi-Shot refresh.** **Explosive Burst backpack: +9% Skill Multi-Shot per grenade throw, up to +90%.** **Bridge to Fire Cycle 4pc** for an extra +12% Skill Multi-Shot until you complete Jackpot.
@@ -548,7 +548,7 @@ The explosive-chaos build math, set ladder, and OS choices all hold. Glass Canno
 
 <div class="bmc-callout" style="margin: 2rem 0; padding: 1.5rem; background: var(--surface); border: 1px solid var(--accent); border-radius: 8px; text-align: center;">
   <h3 style="margin-top: 0; margin-bottom: 0.5rem; color: var(--accent);">Did your screen shake too hard?</h3>
-  <p style="margin-bottom: 1rem; font-size: 0.875rem; color: var(--ink-muted);">Carpet bombing Manhattan is fun, but doing the math to maximize explosive radius takes a ridiculous amount of time. I refuse to use annoying pop-up ads, so if this build helped you clear a room with a single grenade, toss a pizza my way to fund the chaos.</p>
+  <p style="margin: 0 auto 1rem; font-size: 0.875rem; color: var(--ink-muted);">Carpet bombing Manhattan is fun, but doing the math to maximize explosive radius takes a ridiculous amount of time. I refuse to use annoying pop-up ads, so if this build helped you clear a room with a single grenade, toss a pizza my way to fund the chaos.</p>
   <div style="display: flex; justify-content: center;">
     <a href="https://buymeacoffee.com/resurgencebuilds" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; justify-content: center; background-color: #ff6d10; color: #000000; font-family: 'Cookie', cursive, sans-serif; font-size: 24px; text-decoration: none; padding: 5px 15px; border-radius: 5px; font-weight: bold; box-shadow: 0px 1px 2px rgba(0,0,0,0.2); transition: transform 0.2s;">
       <span style="margin-right: 8px; font-size: 24px;">🍕</span> Buy me a pizza

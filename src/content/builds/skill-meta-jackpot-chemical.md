@@ -17,7 +17,7 @@ author: "RapidF5"
 
 The best skill-build for farming elite missions right now is a **Tech Operator** running **4pc Jackpot + 1pc Fire Cycle**, **Chemical Trap** as the primary skill, **Brains Over Brawn** OS Protocol, and **Engineering cores on every piece**. The build was popularized by [RogueMadras](https://www.youtube.com/watch?v=OBmF58JNQWE), who calls it "the best DPS corrosion build in The Division Mobile" and claims **highest skill DPS in the EU servers**. It farms T2 elite missions extremely fast because the Chemical Trap stacks corrosion (acid) on enemies, and the gear set bonuses turn every trap proc into a multi-shot crit fest. This guide documents the build with the math on the page.
 
-A **Tech Operator** build for The Division: Resurgence built around **skill crit chance + skill crit damage + skill multi-shot** scaling, with Chemical Trap as the delivery vehicle. Meta, spreadsheet-verified, math on the page.
+A **Tech Operator** build for The Division: Resurgence built around **skill crit chance + skill crit damage + skill multi-shot** scaling, with Chemical Trap as the delivery vehicle. Meta, backed by my spreadsheet, math included.
 
 **At a glance:**
 
@@ -337,7 +337,7 @@ Print this. Tape it to your monitor.
 
 <div class="bmc-callout" style="margin: 2rem 0; padding: 1.5rem; background: var(--surface); border: 1px solid var(--accent); border-radius: 8px; text-align: center;">
   <h3 style="margin-top: 0; margin-bottom: 0.5rem; color: var(--accent);">Enjoy watching the world burn?</h3>
-  <p style="margin-bottom: 1rem; font-size: 0.875rem; color: var(--ink-muted);">I love the smell of burning Rikers in the morning. Figuring out the exact skill math to optimize your arson habit takes massive amounts of time. If this build helped you melt a heavy in two seconds, consider covering my pizza costs before I burn my own servers down.</p>
+  <p style="margin: 0 auto 1rem; font-size: 0.875rem; color: var(--ink-muted);">I love the smell of burning Rikers in the morning. Figuring out the exact skill math to optimize your arson habit takes massive amounts of time. If this build helped you melt a heavy in two seconds, consider covering my pizza costs before I burn my own servers down.</p>
   <div style="display: flex; justify-content: center;">
     <a href="https://buymeacoffee.com/resurgencebuilds" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; justify-content: center; background-color: #ff6d10; color: #000000; font-family: 'Cookie', cursive, sans-serif; font-size: 24px; text-decoration: none; padding: 5px 15px; border-radius: 5px; font-weight: bold; box-shadow: 0px 1px 2px rgba(0,0,0,0.2); transition: transform 0.2s;">
       <span style="margin-right: 8px; font-size: 24px;">🍕</span> Buy me a pizza

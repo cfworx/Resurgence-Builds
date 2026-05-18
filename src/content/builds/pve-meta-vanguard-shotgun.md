@@ -17,7 +17,7 @@ author: "RapidF5"
 
 The current meta PVE build is a **Vanguard** loadout running **4pc Falen Attack + 2pc Gunny Johnny**, a **T2 Double Barrel Shotgun** with **Steady Reload + Thick Skin**, **Scanning Pulse**, **Commando Smart Cover**, and the **Explosive Round** OS Protocol. The build was popularized by [Godlike](https://www.youtube.com/watch?v=cLrWBvz3F64), who calls it "the premier DPS build in the game when it comes to firearms" and "the best PVE build in the game — you can use it for speedrunning." This guide documents that build with the math on the page so you can replicate it, recalibrate it, and understand why every piece is where it is.
 
-A **Vanguard** build for The Division: Resurgence built around **per-shot multi-shot scaling, Pulse vulnerability, and Explosive Round critical detonations**. Meta, spreadsheet-verified, math on the page.
+A **Vanguard** build for The Division: Resurgence built around **per-shot multi-shot scaling, Pulse vulnerability, and Explosive Round critical detonations**. Meta, backed by my spreadsheet, math included.
 
 **At a glance:**
 
@@ -62,7 +62,7 @@ Direct quotes from the source:
 - "Double barrel just one tap the world."
 - "Allows us to do astronomical damage."
 
-This post documents that build, fills in the spreadsheet math, and explains the synergies.
+This post documents that build, fills in the math from my spreadsheet, and explains the synergies.
 
 ---
 
@@ -363,7 +363,7 @@ Print this. Tape it to your monitor.
 
 <div class="bmc-callout" style="margin: 2rem 0; padding: 1.5rem; background: var(--surface); border: 1px solid var(--accent); border-radius: 8px; text-align: center;">
   <h3 style="margin-top: 0; margin-bottom: 0.5rem; color: var(--accent);">Blowing NPC heads clean off?</h3>
-  <p style="margin-bottom: 1rem; font-size: 0.875rem; color: var(--ink-muted);">Facetanking legendary bosses with a double-barrel is a power trip, but doing the spreadsheet math to make it possible is a grind. If this build helped you speedrun the latest raid without wiping, buy me a pizza to refuel.</p>
+  <p style="margin: 0 auto 1rem; font-size: 0.875rem; color: var(--ink-muted);">Facetanking legendary bosses with a double-barrel is a power trip, but doing the math in my spreadsheet to make it possible is a grind. If this build helped you speedrun the latest raid without wiping, buy me a pizza to refuel.</p>
   <div style="display: flex; justify-content: center;">
     <a href="https://buymeacoffee.com/resurgencebuilds" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; justify-content: center; background-color: #ff6d10; color: #000000; font-family: 'Cookie', cursive, sans-serif; font-size: 24px; text-decoration: none; padding: 5px 15px; border-radius: 5px; font-weight: bold; box-shadow: 0px 1px 2px rgba(0,0,0,0.2); transition: transform 0.2s;">
       <span style="margin-right: 8px; font-size: 24px;">🍕</span> Buy me a pizza

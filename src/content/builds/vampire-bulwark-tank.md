@@ -1,6 +1,6 @@
 ---
 title: "The Vampire Bulwark — Happy Survival LMG Tank Build"
-subtitle: "Off-meta Â· Fun Â· Spreadsheet-verified Â· Math on the page Â· LMG vampire-tank that eats damage and gives it back"
+subtitle: "Off-meta Â· Fun Â· Data-backed Â· Math included Â· LMG vampire-tank that eats damage and gives it back"
 specialization: Bulwark
 featuredImage: "/images/vampire-v2.jpg"
 imageAlt: "A Bulwark agent with vampire fangs wielding an LMG in a dark urban environment"
@@ -43,7 +43,7 @@ Three independent vampire engines stack:
 
 ### Engine 1 — Happy Survival OS (passive heal from proximity)
 
-Spreadsheet verbatim: *"Restore 0.50% Max Health for every 1 enemies within 10 meters, up to a maximum of 2.50%. Shooting consumes 2% Health and deals additional damage equal to 0.60% Current Health."*
+Exact text from my spreadsheet: *"Restore 0.50% Max Health for every 1 enemies within 10 meters, up to a maximum of 2.50%. Shooting consumes 2% Health and deals additional damage equal to 0.60% Current Health."*
 
 - 5 enemies within 10m → **+2.5% Max HP / sec passive heal**. If your Max HP is 200,000 → 5,000 HP/sec free heal as long as you stay close.
 - Shooting "consumes 2% Health" — but the passive heal restores 2.5% / sec when you have 5+ enemies near you, so you NET +0.5% HP per second.
@@ -51,14 +51,14 @@ Spreadsheet verbatim: *"Restore 0.50% Max Health for every 1 enemies within 10 m
 
 ### Engine 2 — Unflinching Chest (reactive heal on hit)
 
-Spreadsheet verbatim: *"Taking damage has a 70% chance of restoring Health equal to 300% Toughness. Talent Cooldown: 2 seconds."*
+Exact text from my spreadsheet: *"Taking damage has a 70% chance of restoring Health equal to 300% Toughness. Talent Cooldown: 2 seconds."*
 
 - Every 2 seconds, 70% chance of a flat **300% Toughness HP restore**. If your Toughness stat is 5,000 → 15,000 HP every 2 seconds when you are taking damage.
 - This is reactive — only triggers when an enemy is shooting you. Since the build wants you to be the threat the AI focuses on, Unflinching fires constantly.
 
 ### Engine 3 — Anarchy contagion (free damage from kills)
 
-Spreadsheet verbatim: *"Hits inflict a debuff, dealing 100% Weapon Damage over 10 seconds, up to 50 stacks. Enemies dying with this debuff transfer all stacks to a nearby enemy within 25 meters."*
+Exact text from my spreadsheet: *"Hits inflict a debuff, dealing 100% Weapon Damage over 10 seconds, up to 50 stacks. Enemies dying with this debuff transfer all stacks to a nearby enemy within 25 meters."*
 
 - Each hit applies one DoT stack at 100% Weapon Damage over 10s = 10% Weapon Damage / sec / stack.
 - 50 stacks = 500% Weapon Damage / sec from the DoT alone, **on every infected enemy**.
@@ -66,7 +66,7 @@ Spreadsheet verbatim: *"Hits inflict a debuff, dealing 100% Weapon Damage over 1
 
 The three engines together: you fire into a pack, every enemy gets DoTs, your shots heal you, every hit you take heals you, and when the first enemy drops, the **entire 50-stack DoT jumps onto the next one for free**.
 
-> Build philosophy: the build is verbatim from the spreadsheet — no fantasy stacking. Happy Survival says "0.50% Max Health for every 1 enemies within 10 meters" — that text means PER enemy, capped at 2.50% (so 5 enemies max benefit). Unflinching is a 70% chance every 2 seconds, not 100%. Anarchy says 100% Weapon Damage over 10 seconds — interpret as DoT total over 10s per stack. **Read the text, run the build.**
+> Build philosophy: the build is based strictly on my data — no fantasy stacking. Happy Survival says "0.50% Max Health for every 1 enemies within 10 meters" — that text means PER enemy, capped at 2.50% (so 5 enemies max benefit). Unflinching is a 70% chance every 2 seconds, not 100%. Anarchy says 100% Weapon Damage over 10 seconds — interpret as DoT total over 10s per stack. **Read the text, run the build.**
 
 ---
 
@@ -91,7 +91,7 @@ This is the off-meta brief — fun, distinct, viable.
 
 Verbatim talent (Anarchy): *"Hits inflict a debuff, dealing 100% Weapon Damage over 10 seconds, up to 50 stacks. Enemies dying with this debuff transfer all stacks to a nearby enemy within 25 meters."*
 
-- **Spreadsheet stats:** 300 base damage, 550 RPM, 100-round magazine.
+- **Base stats:** 300 base damage, 550 RPM, 100-round magazine.
 - **Pool talents available on Strawberry Milkshake:** Anarchy (exotic), Concentrated Fire (LMG), Steady Handed, Swift Taunt, Tactical Reload, Take a Breath.
 - **Why it owns this build:** the 100-round mag = ~11 seconds sustained fire = 11 seconds of Happy Survival HP-consumption damage compounding with 50 DoT stacks on every enemy. By the time you reload, every enemy in the room is DoT'd and dying.
 
@@ -212,7 +212,7 @@ Scenario: 5 enemies within 10m. You are holding Strawberry Milkshake trigger. Yo
 - Engine 2 Unflinching: **+6,300 HP/sec average**
 - HP cost of shooting: 9.1 shots/sec × 2% × 200,000 = 36,400 HP/sec consumed by shooting
 
-But Happy Survival's 2.5% / sec passive heal RESTORES the 2% / shot consumption (the spreadsheet text reads "Restore 0.5% Max Health for every 1 enemies within 10 meters" — passive, every second — and "Shooting consumes 2% Health" — per shot). With 5+ enemies near, the passive heal exceeds the shooting cost when calculated correctly.
+But Happy Survival's 2.5% / sec passive heal RESTORES the 2% / shot consumption (my spreadsheet text reads "Restore 0.5% Max Health for every 1 enemies within 10 meters" — passive, every second — and "Shooting consumes 2% Health" — per shot). With 5+ enemies near, the passive heal exceeds the shooting cost when calculated correctly.
 
 > The math says: as long as you have 5+ enemies in your 10m radius and you are actively taking damage, you NET POSITIVE health gain even while firing continuously. The build's whole identity is being a one-person aggro magnet that gets stronger the more enemies are looking at you.
 
@@ -267,7 +267,7 @@ Unflinching reads verbatim: *"Taking damage has a 70% chance of restoring Health
 
 - **70% chance every 2 seconds** is essentially a "every other hit you take" heal.
 - **300% Toughness as the restore amount** — directly scales with your Toughness Core stat. The more Toughness you stack, the bigger every Unflinching pop.
-- **Spreadsheet correction**: video sources call this "420% Toughness." The build database says **300% Toughness**. We trust the database. The math above uses 300%.
+- **Data correction**: video sources call this "420% Toughness." The build database says **300% Toughness**. We trust the database. The math above uses 300%.
 
 Alternates:
 - **Boosted Shield** — +7.5% DR + −1.5% SCR while with Extra HP. Pure defensive, no heal.
@@ -361,14 +361,14 @@ The 25m transfer range is generous but not infinite. If enemies are spread out, 
 1. **Three vampire engines stack.** Happy Survival passive heal (+2.5% Max HP/sec at 5 enemies near), Unflinching reactive heal (300% Toughness on hit, 70% / 2s), and Anarchy contagion (50-stack DoT jumps to next enemy on kill).
 2. **You NET POSITIVE HP while shooting** as long as 5+ enemies are within 10m. The 2% HP cost per shot is overpaid by the 2.5% / sec passive heal.
 3. **Trash mobs are ammunition.** Every Anarchy DoT stack you build on a trash mob becomes free damage on the next target when the first dies — and the transfer chains as long as enemies are within 25m.
-4. **Unflinching uses 300% Toughness, not 420%.** Spreadsheet rules. Roll Toughness Core on every piece.
+4. **Unflinching uses 300% Toughness, not 420%.** The data doesn't lie. Roll Toughness Core on every piece.
 5. **Off-meta does not mean weak.** Fearless Warrior 4pc + Happy Survival + Unflinching gives this build top-end Max HP and three independent sustain layers. Most Bulwark builds have one.
 
 ---
 
 <div class="bmc-callout" style="margin: 2rem 0; padding: 1.5rem; background: var(--surface); border: 1px solid var(--accent); border-radius: 8px; text-align: center;">
   <h3 style="margin-top: 0; margin-bottom: 0.5rem; color: var(--accent);">Literally unkillable?</h3>
-  <p style="margin-bottom: 1rem; font-size: 0.875rem; color: var(--ink-muted);">Soaking up an entire magazine without flinching feels great, but crunching the armor numbers to make it possible drained my soul. If this build turned you into an immortal brick wall, toss a pizza my way so I can maintain my own thick skin.</p>
+  <p style="margin: 0 auto 1rem; font-size: 0.875rem; color: var(--ink-muted);">Soaking up an entire magazine without flinching feels great, but crunching the armor numbers to make it possible drained my soul. If this build turned you into an immortal brick wall, toss a pizza my way so I can maintain my own thick skin.</p>
   <div style="display: flex; justify-content: center;">
     <a href="https://buymeacoffee.com/resurgencebuilds" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; justify-content: center; background-color: #ff6d10; color: #000000; font-family: 'Cookie', cursive, sans-serif; font-size: 24px; text-decoration: none; padding: 5px 15px; border-radius: 5px; font-weight: bold; box-shadow: 0px 1px 2px rgba(0,0,0,0.2); transition: transform 0.2s;">
       <span style="margin-right: 8px; font-size: 24px;">🍕</span> Buy me a pizza

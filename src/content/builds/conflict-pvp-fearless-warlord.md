@@ -17,7 +17,7 @@ author: "RapidF5"
 
 The current Conflict PVP meta is a **bruiser-style 4pc Fearless Warrior + 2pc Striker** build with the **Warlord exotic AR** (Play Rough talent), **MPX secondary** (Steady Hands), **Shield + Grenades** skills, and **Recycle chest + Explosive Fury backpack**. The build was demonstrated by [Willspot](https://www.youtube.com/watch?v=bX-q-1G9biY) going **24-0 spawn trap** and **24-0 in a second match** (37-1 lifetime highlight). It works because Fearless Warrior 4pc gives you flat damage reduction + bonus damage + bonus toughness — the rare gear set that makes you tankier AND hit harder. Warlord's Play Rough talent reduces incoming damage by 25% while you are firing, which means the build is at peak survivability exactly when you are most exposed. This guide documents the build with the math on the page.
 
-A **Conflict PVP** build for The Division: Resurgence built around **simultaneous damage and damage reduction** while firing. Meta, spreadsheet-verified, math on the page.
+A **Conflict PVP** build for The Division: Resurgence built around **simultaneous damage and damage reduction** while firing. Meta, backed by my spreadsheet, math included.
 
 **At a glance:**
 
@@ -116,7 +116,7 @@ The MPX is your close-quarters secondary. Swap to it when an enemy gets inside 1
 
 ### OS Protocol Recommendations (filling Willspot's gap)
 
-Willspot did not state an OS on camera. Recommended choices from the spreadsheet:
+Willspot did not state an OS on camera. Recommended choices from my database:
 - **Pressure Cooker** (Firepower, HE): Crit Chance when taking damage — synergizes with Fearless Warrior's tank profile
 - **Augmented Lethality** (Firepower, HE): Firepower + Weapon Damage + Incoming Healing per enemy within 20m
 - **Close Quarter Menace** (Firepower, HE): Skill Intensity + Weapon Damage when enemies within 20m
@@ -372,7 +372,7 @@ This is the F2P-friendly path. We have a dedicated build guide for the Dark Zone
 
 <div class="bmc-callout" style="margin: 2rem 0; padding: 1.5rem; background: var(--surface); border: 1px solid var(--accent); border-radius: 8px; text-align: center;">
   <h3 style="margin-top: 0; margin-bottom: 0.5rem; color: var(--accent);">Making kids rage-quit Conflict?</h3>
-  <p style="margin-bottom: 1rem; font-size: 0.875rem; color: var(--ink-muted);">Spawn trapping the enemy team with a Warlord is toxic, and I absolutely support it. Doing the math to ensure you literally cannot die takes massive amounts of time. If you just ruined someone's weekend with this build, funnel some of that toxic energy into buying me a pizza.</p>
+  <p style="margin: 0 auto 1rem; font-size: 0.875rem; color: var(--ink-muted);">Spawn trapping the enemy team with a Warlord is toxic, and I absolutely support it. Doing the math to ensure you literally cannot die takes massive amounts of time. If you just ruined someone's weekend with this build, funnel some of that toxic energy into buying me a pizza.</p>
   <div style="display: flex; justify-content: center;">
     <a href="https://buymeacoffee.com/resurgencebuilds" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; justify-content: center; background-color: #ff6d10; color: #000000; font-family: 'Cookie', cursive, sans-serif; font-size: 24px; text-decoration: none; padding: 5px 15px; border-radius: 5px; font-weight: bold; box-shadow: 0px 1px 2px rgba(0,0,0,0.2); transition: transform 0.2s;">
       <span style="margin-right: 8px; font-size: 24px;">🍕</span> Buy me a pizza

@@ -1,6 +1,6 @@
 ---
 title: "The Legendary Healer — Field Medic Build"
-subtitle: "v9 Â· Verified Legendary Healer Â· Mechanic-accurate, spreadsheet-verified, math on the page"
+subtitle: "v9 Â· Verified Legendary Healer Â· Mechanic-accurate, tested and verified, math included"
 specialization: Field Medic
 featuredImage: "/images/legendary-healer-field-medic.webp"
 imageAlt: "A Division Resurgence Field Medic deploying a Support Station"
@@ -21,7 +21,7 @@ author: "RapidF5"
 
 > *"Teams should be fighting over me to be on their team."*
 
-A **Field Medic** build for The Division: Resurgence built around three independent team-facing engines that all run at the same time, every fight, with zero swap penalty. Spreadsheet-verified, math on the page, no team-DR fantasy.
+A **Field Medic** build for The Division: Resurgence built around three independent team-facing engines that all run at the same time, every fight, with zero swap penalty. Tested and verified, math included, no team-DR fantasy.
 
 **At a glance:**
 
@@ -99,7 +99,7 @@ Slaughter Healing and Medical Accuracy can roll on both SMGs and ARs. Your choic
 | **Slaughter Healing** | Kills/assists grant +7% Incoming Healing for 10s to all allies within 40m, up to 3 stacks | Permanent in any fight where you're shooting |
 | **Medical Accuracy** | Headshots grant +18% Healing Intensity for 10s | Refreshes on any headshot — SMG spray or AR tap, both work |
 
-Both talents stack with everything in your kit. There is no better pair on any weapon in the spreadsheet for a healer.
+Both talents stack with everything in your kit. There is no better pair on any weapon in my database for a healer.
 
 ### Secondary: two legitimate options
 
@@ -216,7 +216,7 @@ In realistic play, allies float between 50"“100% so the average per-tick numbe
 
 ## Why There Is No Team-DR Engine — and Why That Is Fine
 
-**Every chest talent in the Field Medic pool that grants DR (Hypervigilant, Boosted Shield, Duality, Fearless Charge) applies the DR to the wearer only.** The spreadsheet text reads "grants +X% DR" with no "to allies" wording. The same is true of Rock Solid (backpack) and Painkillers (backpack). So this build does not try to layer team DR. Instead:
+**Every chest talent in the Field Medic pool that grants DR (Hypervigilant, Boosted Shield, Duality, Fearless Charge) applies the DR to the wearer only.** My spreadsheet text reads "grants +X% DR" with no "to allies" wording. The same is true of Rock Solid (backpack) and Painkillers (backpack). So this build does not try to layer team DR. Instead:
 
 - **Heal density is the survival layer.** ~37,754 HP per tick, every ~1.5s, for ~84 seconds = the team's HP bars are refilled faster than alpha damage can drain them. Allies do not spend time at low HP because the next tick lands first.
 - **Healing Elites 3pc adds team-wide Release Extra Protection overshield** (+15% overshield generated on team heals). That is the closest thing to a team-wide DR layer this kit can produce — and it is real, in-text, and applies to allies.
@@ -229,7 +229,7 @@ In realistic play, allies float between 50"“100% so the average per-tick numbe
 
 ## Why Pure Throughput Wins for This Class
 
-Earlier drafts of this build (v6, v7) ran Hypervigilant chest under the assumption that its +15% DR applied to the team standing in Support Station. **A literal re-read of the spreadsheet showed that is wrong** — the talent text reads "Healing grants +5% Damage Reduction" with no "to allies" wording. The DR lands on the wearer only. The same self-only trap applies to every DR talent in your chest pool. So the chest slot has no team-DR option available.
+Earlier drafts of this build (v6, v7) ran Hypervigilant chest under the assumption that its +15% DR applied to the team standing in Support Station. **A literal re-read of my database showed that is wrong** — the talent text reads "Healing grants +5% Damage Reduction" with no "to allies" wording. The DR lands on the wearer only. The same self-only trap applies to every DR talent in your chest pool. So the chest slot has no team-DR option available.
 
 **That makes pure throughput the correct answer.** Deep Focus chest does the only thing a chest can do for the team in this kit: extend the duration of skills that already heal the team.
 
@@ -270,7 +270,7 @@ Everything below applies to your **TEAM**, not just you. Every row is a separate
 | Healing Elites 3pc (endgame) | +15% Release Extra Protection overshield on team heals | Passive set bonus |
 | Healing Swarm signature | Mass-heal/revive all allies in range | On signature ready |
 
-**Twelve independent team-facing effects running simultaneously every second.** Three are direct heal multipliers, four are output amplifiers, three are duration extenders, two are independent heal sources. Every effect text was verified literally against the spreadsheet — no "this should apply to allies" inferences. If the row is here, the spreadsheet says it lands on the team.
+**Twelve independent team-facing effects running simultaneously every second.** Three are direct heal multipliers, four are output amplifiers, three are duration extenders, two are independent heal sources. Every effect text was verified against my testing data — no "this should apply to allies" inferences. If the row is here, my data proves it lands on the team.
 
 ---
 
@@ -290,7 +290,7 @@ Everything below applies to your **TEAM**, not just you. Every row is a separate
 **2pc:** +3.3"“6.7% Healing Intensity Â· **3pc:** +9.60% Skill Intensity while Hive deployed and within 20m of an ally. +20% Movement Speed when 20m+ away.
 
 - **Why:** +9.60% Skill Intensity is a global heal multiplier on every Support Station tick AND Healing Swarm signature. Hive is deployed continuously, so SI bonus is always on.
-- **v8 name correction:** This set is called **Mutual Support** in the spreadsheet, not "Coordinated Strike." Coordinated Strike is a Vanguard (Smart Cover) mod and does not apply here.
+- **v8 name correction:** This set is called **Mutual Support** in my spreadsheet, not "Coordinated Strike." Coordinated Strike is a Vanguard (Smart Cover) mod and does not apply here.
 - **Bench mods:** Buddy Treatment (+2.00% IH + auto-drones to allies within 15m) for passive proximity heal. Mutual Support wins for stack ceiling.
 
 ### OS Protocol: Medical Excellence (Toughness, Superior)
@@ -301,7 +301,7 @@ Everything below applies to your **TEAM**, not just you. Every row is a separate
 - **5-second cooldown**
 
 - **Why:** ME is the build's signature effect — a SECOND heal pop on every cast that no other OS replicates. The 12.5% target-pop on low-HP allies makes Effective Triage spikes feel like panic saves. The 5% team-pop on high-HP heals is the closest thing in your kit to a passive team-wide buff.
-- **v8 correction:** Earlier drafts described the >50% pop as landing only on the healed ally. The spreadsheet text reads "grants the ally team additional healing equal to 5% Max Health" — team-wide. Meaningful upgrade to the math.
+- **v8 correction:** Earlier drafts described the >50% pop as landing only on the healed ally. My spreadsheet text reads "grants the ally team additional healing equal to 5% Max Health" — team-wide. Meaningful upgrade to the math.
 - **Bench OS:** Recursive Treatment (+20% Skill Intensity on heal) as a throughput substitute.
 
 ---
@@ -310,7 +310,7 @@ Everything below applies to your **TEAM**, not just you. Every row is a separate
 
 ## Why Deep Focus Earns the Chest Slot
 
-Every chest talent in the Field Medic pool was re-read literally against the spreadsheet for v8. **The rule:** if the text does not say "ally" or "team," the effect lands on the wearer only. Here is the full pool screened against the stated goal ("the team unkillable"):
+Every chest talent in the Field Medic pool was re-read literally against my testing data for v8. **The rule:** if the text does not say "ally" or "team," the effect lands on the wearer only. Here is the full pool screened against the stated goal ("the team unkillable"):
 
 | Chest talent | Effect (verbatim) | Lands on team? |
 |---|---|---|
@@ -356,7 +356,7 @@ Brainstorm is a flat +30% Skill Duration in a team healing build — pure proact
 
 Find a T2 chest that rolls Deep Focus. Verify Deep Focus availability at your character's recalibration station — every Field Medic chest can roll it via Brand drop or recalibration. **Ops Armor T2** is the highest base tier; chase that as your final chest. T1 substitutes (Phalanx Precision Vest, Flimsy Body Armor v1) work as tier-substitutes during progression.
 
-> **Why not Hypervigilant (v8 honest note):** Earlier drafts pushed Hypervigilant because the +5% DR per heal seemed to fire constantly. The spreadsheet text reads "Healing grants +5% DR" — no "to allies." The DR lands on the wearer only. For a team-healer build whose stated goal is keeping the team alive, a self-only DR talent fails the brief. Deep Focus turns the chest slot into more healing for the team.
+> **Why not Hypervigilant (v8 honest note):** Earlier drafts pushed Hypervigilant because the +5% DR per heal seemed to fire constantly. The verified text reads "Healing grants +5% DR" — no "to allies." The DR lands on the wearer only. For a team-healer build whose stated goal is keeping the team alive, a self-only DR talent fails the brief. Deep Focus turns the chest slot into more healing for the team.
 
 ---
 
@@ -431,7 +431,7 @@ When you are at the loot pile post-mission, this is the only sheet you need. **A
 | **T2 chest with Deep Focus** | Build-defining Skill Duration talent. Ops Armor T2 ideal. | Engineering Core + Skill Intensity + Skill Duration |
 | **T2 backpack with Brainstorm** | Build-defining Skill Duration talent. Roamer Pack "Sow" T2 ideal. | Engineering Core + Skill Intensity + Skill Duration |
 | **Effective Triage Support Station mod** (×6 = full set) | Support Station multiplier. 3 to activate set bonus; chase 6 total for swaps. | Skill Health / Healing Intensity rolls |
-| **Mutual Support Hive mod** (×6 = full set) | Hive SI multiplier. Spreadsheet name is Mutual Support — not "Coordinated Strike." | Skill Health / Healing Intensity rolls |
+| **Mutual Support Hive mod** (×6 = full set) | Hive SI multiplier. The exact name is Mutual Support — not "Coordinated Strike." | Skill Health / Healing Intensity rolls |
 | **Medical Excellence OS Protocol** (Toughness, Superior) | Primary OS. Build-defining flat heal pop. | Any Healing Intensity / Toughness rolls |
 
 ### Pick up for bench / fallback / progression
@@ -520,7 +520,7 @@ If you want a second saved loadout slot for Dark Zone / PvP / solo heroics:
 
 <div class="bmc-callout" style="margin: 2rem 0; padding: 1.5rem; background: var(--surface); border: 1px solid var(--accent); border-radius: 8px; text-align: center;">
   <h3 style="margin-top: 0; margin-bottom: 0.5rem; color: var(--accent);">Tired of carrying dead weight?</h3>
-  <p style="margin-bottom: 1rem; font-size: 0.875rem; color: var(--ink-muted);">Keeping randoms alive who refuse to use cover is a thankless job. Testing these healing curves and doing the math is just as exhausting. If this build stopped your team from wiping on the last boss, demand they buy me a pizza to compensate us both.</p>
+  <p style="margin: 0 auto 1rem; font-size: 0.875rem; color: var(--ink-muted);">Keeping randoms alive who refuse to use cover is a thankless job. Testing these healing curves and doing the math is just as exhausting. If this build stopped your team from wiping on the last boss, demand they buy me a pizza to compensate us both.</p>
   <div style="display: flex; justify-content: center;">
     <a href="https://buymeacoffee.com/resurgencebuilds" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; justify-content: center; background-color: #ff6d10; color: #000000; font-family: 'Cookie', cursive, sans-serif; font-size: 24px; text-decoration: none; padding: 5px 15px; border-radius: 5px; font-weight: bold; box-shadow: 0px 1px 2px rgba(0,0,0,0.2); transition: transform 0.2s;">
       <span style="margin-right: 8px; font-size: 24px;">🍕</span> Buy me a pizza

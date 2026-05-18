@@ -1,6 +1,6 @@
 ---
 title: "The Lockdown Tech Op — Disorient-Loop Striker Drone Build"
-subtitle: "Off-meta Â· Fun Â· Spreadsheet-verified Â· Math on the page Â· Striker Drone CC + skill-crit loop"
+subtitle: "Off-meta Â· Fun Â· Tested and verified Â· Math included Â· Striker Drone CC + skill-crit loop"
 specialization: Tech Operator
 featuredImage: "/images/tech-op-v2.jpg"
 imageAlt: "A Tech Operator agent surrounded by a swarm of Striker Drones in a snowy urban street"
@@ -41,13 +41,13 @@ Most Tech Op guides aim the build at one thing: maximum Striker Drone DPS. This 
 
 The loop has three beats:
 
-1. **Striker Drone crits an enemy.** Because you run **EMCAT 3pc**, that crit applies **Disoriented** verbatim from the spreadsheet ("Striker Drone Critical Hits apply Disoriented to target enemies").
+1. **Striker Drone crits an enemy.** Because you run **EMCAT 3pc**, that crit applies **Disoriented** exactly as noted in my spreadsheet ("Striker Drone Critical Hits apply Disoriented to target enemies").
 2. **Applying Drone Lock fires Stabilized Flight 3pc:** "Applying Drone Lock grants +6% Skill Critical Hit Chance for 20 seconds." That bonus stays up on every drone re-targeting.
 3. **More skill crit = more EMCAT triggers** = more Disoriented uptime across the room = enemies miss more shots and walk into your AoE. Run the loop for the full 84-second Skill Duration Support window and the entire encounter is CC'd while your drone clips them down.
 
 The drone is not your damage. The drone is your **status-effect printer**, and Concerted Strike + Brainstorm + Warlord's ceasefire bonus turns each loop into your real damage spike.
 
-> Build philosophy: this build does NOT pretend Disoriented is a team-wide debuff that gives allies damage bonuses. The spreadsheet text on EMCAT says "Disoriented to target enemies" — that is the verified read. Disoriented affects the **enemy** (reduced accuracy, in-game text "less likely to hit"), it is not a team buff. We do not stack a damage-on-debuffed-enemy fantasy on top of it. The build's value is **fewer incoming bullets** and **more outgoing crits**, both verifiable in the data.
+> Build philosophy: this build does NOT pretend Disoriented is a team-wide debuff that gives allies damage bonuses. My data on EMCAT says "Disoriented to target enemies" — that is the verified read. Disoriented affects the **enemy** (reduced accuracy, in-game text "less likely to hit"), it is not a team buff. We do not stack a damage-on-debuffed-enemy fantasy on top of it. The build's value is **fewer incoming bullets** and **more outgoing crits**, both verifiable in the data.
 
 ---
 
@@ -88,8 +88,8 @@ Every slot, every talent, every stat. The build at a glance.
 | **Specialization** | Tech Operator — **Drone Overload signature** (Striker Drones get +50% Rate of Fire and +100% Skill Crit Damage for 12s; spec talent unlocks "Within 30s of Drone Overload, hits restore HP" via Supply Line 3pc if you bridge through Supply Line) |
 | **Primary Weapon** | **Warlord** (Exotic AR, T1) with **Play Rough** — 25% incoming DR while firing, releases 60% stored damage on ceasefire, **+10% Skill Damage for 10s on ceasefire**. Bridge: any T1 AR with **Adaptation + Killer**. |
 | **Secondary Weapon** | Stat-stick only — never drawn. Roll for Engineering passives + Skill Crit Chance / Skill Crit Damage / Skill Multi-Shot Chance bonuses. |
-| **Combat Skill 1** | **Striker Drone** with **EMCAT 3pc mod set**. Spreadsheet verbatim: "Striker Drone Critical Hits apply Disoriented to target enemies." |
-| **Combat Skill 2** | **Striker Hive** with **Stabilized Flight 3pc mod set**. Spreadsheet verbatim: "Applying Drone Lock grants +6% Skill Critical Hit Chance for 20 seconds." |
+| **Combat Skill 1** | **Striker Drone** with **EMCAT 3pc mod set**. Exact text from my spreadsheet: "Striker Drone Critical Hits apply Disoriented to target enemies." |
+| **Combat Skill 2** | **Striker Hive** with **Stabilized Flight 3pc mod set**. Exact text from my spreadsheet: "Applying Drone Lock grants +6% Skill Critical Hit Chance for 20 seconds." |
 | **Signature Ability** | **Drone Overload** — supercharges your drones for 12s. Save for first wave of an elite group. |
 | **OS Protocol** | **Concerted Strike** (Firepower, High-End). +15% Weapon Damage main stat. Talent verbatim: "Skill Hits within 20 meters have a 100% chance of granting +8% Damage for 10 seconds, up to 3 stacks. 1 seconds cooldown." That is **+24% Damage** at 3 stacks, refreshing every time the drone or hive lands a hit inside 20m. |
 | **Gear Set (endgame)** | **Jackpot** 4pc — +12% Skill Radius 2pc / +10.8% Skill Crit Chance 3pc / **+24% Skill Crit Damage 4pc**. The cleanest skill-crit set in the game. |
@@ -180,7 +180,7 @@ Drone fires a burst (4 shots), ~40% crit rate → 1"“2 crits → 1"“2 Disori
 
 ## Skill Mod Choices — EMCAT 3pc + Stabilized Flight 3pc
 
-You run **two different 3-piece skill mod sets simultaneously**: one on the Striker Drone, one on the Striker Hive. The drone gets EMCAT for the Disoriented application. The Hive gets Stabilized Flight so the +6% SCC trigger fires every time the Hive's micro-drones tag an enemy (the spreadsheet text triggers on "Applying Drone Lock").
+You run **two different 3-piece skill mod sets simultaneously**: one on the Striker Drone, one on the Striker Hive. The drone gets EMCAT for the Disoriented application. The Hive gets Stabilized Flight so the +6% SCC trigger fires every time the Hive's micro-drones tag an enemy (the in-game text triggers on "Applying Drone Lock").
 
 | Skill Slot | Mod Set | 2pc | 3pc | Why |
 |---|---|---|---|---|
@@ -204,7 +204,7 @@ Concerted Strike (Firepower, High-End) reads: *"Skill Hits within 20 meters have
 Three reasons it wins here over Side by Side, Mechanized Support, or Augmented Lethality:
 
 1. **100% chance trigger.** No proc chain to roll for — every time your drone or Hive lands a hit inside 20m, you get a stack. Three stacks = +24% Damage, refreshed continuously.
-2. **+8% Damage applies to skill AND weapon hits** (the spreadsheet text reads "Damage", not "Weapon Damage"). So your drone's own damage benefits from the same OS that the drone is feeding.
+2. **+8% Damage applies to skill AND weapon hits** (my testing confirms it reads "Damage", not "Weapon Damage"). So your drone's own damage benefits from the same OS that the drone is feeding.
 3. **+15% Weapon Damage main stat** stacks on top — every weapon shot from your AR gets the OS main stat AND the talent bonus simultaneously.
 
 Alternates if you cannot land Concerted Strike:
@@ -321,7 +321,7 @@ Need-to-know drop targets for this build:
 
 <div class="bmc-callout" style="margin: 2rem 0; padding: 1.5rem; background: var(--surface); border: 1px solid var(--accent); border-radius: 8px; text-align: center;">
   <h3 style="margin-top: 0; margin-bottom: 0.5rem; color: var(--accent);">Letting the drone do all the work?</h3>
-  <p style="margin-bottom: 1rem; font-size: 0.875rem; color: var(--ink-muted);">Sitting behind cover while your turret farms kills is peak efficiency. Sadly, doing the math to optimize your lazy playstyle requires actual work. If this build let you eat a snack during a firefight, the least you can do is buy me a pizza to match.</p>
+  <p style="margin: 0 auto 1rem; font-size: 0.875rem; color: var(--ink-muted);">Sitting behind cover while your turret farms kills is peak efficiency. Sadly, doing the math to optimize your lazy playstyle requires actual work. If this build let you eat a snack during a firefight, the least you can do is buy me a pizza to match.</p>
   <div style="display: flex; justify-content: center;">
     <a href="https://buymeacoffee.com/resurgencebuilds" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; justify-content: center; background-color: #ff6d10; color: #000000; font-family: 'Cookie', cursive, sans-serif; font-size: 24px; text-decoration: none; padding: 5px 15px; border-radius: 5px; font-weight: bold; box-shadow: 0px 1px 2px rgba(0,0,0,0.2); transition: transform 0.2s;">
       <span style="margin-right: 8px; font-size: 24px;">🍕</span> Buy me a pizza

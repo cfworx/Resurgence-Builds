@@ -21,7 +21,7 @@ The notes encouraged players still hitting these issues to submit an in-game sup
 ---
 <div class="bmc-callout" style="margin: 2rem 0; padding: 1.5rem; background: var(--surface); border: 1px solid var(--accent); border-radius: 8px; text-align: center;">
   <h3 style="margin-top: 0; margin-bottom: 0.5rem; color: var(--accent);">Hotfixes don't write themselves</h3>
-  <p style="margin-bottom: 1rem; font-size: 0.875rem; color: var(--ink-muted);">I dropped what I was doing on a Tuesday afternoon to figure out why the servers caught fire and summarize it for you. If I saved you from panicking on Twitter wondering if you got banned, buy me a pizza for my troubles.</p>
+  <p style="margin: 0 auto 1rem; font-size: 0.875rem; color: var(--ink-muted);">I dropped what I was doing on a Tuesday afternoon to figure out why the servers caught fire and summarize it for you. If I saved you from panicking on Twitter wondering if you got banned, buy me a pizza for my troubles.</p>
   <div style="display: flex; justify-content: center;">
     <a href="https://buymeacoffee.com/resurgencebuilds" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; justify-content: center; background-color: #ff6d10; color: #000000; font-family: 'Cookie', cursive, sans-serif; font-size: 24px; text-decoration: none; padding: 5px 15px; border-radius: 5px; font-weight: bold; box-shadow: 0px 1px 2px rgba(0,0,0,0.2); transition: transform 0.2s;">
       <span style="margin-right: 8px; font-size: 24px;">🍕</span> Buy me a pizza

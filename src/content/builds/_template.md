@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Build Name Here"
 specialization: Vanguard
 playstyle: DPS

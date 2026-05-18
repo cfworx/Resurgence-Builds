@@ -26,7 +26,7 @@ No Steam release date has been officially confirmed. The August Season 2 target 
 
 <div class="bmc-callout" style="margin: 2rem 0; padding: 1.5rem; background: var(--surface); border: 1px solid var(--accent); border-radius: 8px; text-align: center;">
   <h3 style="margin-top: 0; margin-bottom: 0.5rem; color: var(--accent);">I stared at this roadmap so you didn't have to</h3>
-  <p style="margin-bottom: 1rem; font-size: 0.875rem; color: var(--ink-muted);">Decrypting Ubisoft's 6-month content plan required three energy drinks and a microscope. If my breakdown just saved you 15 minutes of trying to figure out when the next season actually drops, fund my caffeine addiction and buy me a pizza.</p>
+  <p style="margin: 0 auto 1rem; font-size: 0.875rem; color: var(--ink-muted);">Decrypting Ubisoft's 6-month content plan required three energy drinks and a microscope. If my breakdown just saved you 15 minutes of trying to figure out when the next season actually drops, fund my caffeine addiction and buy me a pizza.</p>
   <div style="display: flex; justify-content: center;">
     <a href="https://buymeacoffee.com/resurgencebuilds" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; justify-content: center; background-color: #ff6d10; color: #000000; font-family: 'Cookie', cursive, sans-serif; font-size: 24px; text-decoration: none; padding: 5px 15px; border-radius: 5px; font-weight: bold; box-shadow: 0px 1px 2px rgba(0,0,0,0.2); transition: transform 0.2s;">
       <span style="margin-right: 8px; font-size: 24px;">🍕</span> Buy me a pizza
