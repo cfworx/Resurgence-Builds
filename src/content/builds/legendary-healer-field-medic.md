@@ -78,4 +78,4 @@ Instead, it pushes heal density so stupidly high that allies never spend time at
 3. Click heads to stack Medical Accuracy (+18% Healing Intensity per stack).
 4. Keep firing to build Slaughter Healing stacks (+21% team Incoming Healing).
 5. Pop the Medical Excellence OS on cast for the +5% team Max HP burst when someone takes a big hit. 
-6. Pop **Healing Swarm** signature for emergencies, or when you need to revive multiple downed teammates who inevitably walked out of the glowing circle.\n
+6. Pop **Healing Swarm** signature for emergencies, or when you need to revive multiple downed teammates who inevitably walked out of the glowing circle.

@@ -24,4 +24,4 @@ Ubisoft published the full seasonal roadmap on April 28. New seasons land every 
 | **Season 3** | Winter 2026 | Major story expansion — deeper backstory on the factions and characters introduced in Season 1 |
 
 ## A Note on Steam
-No Steam release date has been officially confirmed. The August Season 2 target is for Ubisoft Connect. Some creator coverage (RogueGold) referenced "Steam later this summer" based on the Ubisoft Creator Program preview, but this should be treated as **[LIKELY but UNCONFIRMED]** until Ubisoft posts it officially.\n
+No Steam release date has been officially confirmed. The August Season 2 target is for Ubisoft Connect. Some creator coverage (RogueGold) referenced "Steam later this summer" based on the Ubisoft Creator Program preview, but this should be treated as **[LIKELY but UNCONFIRMED]** until Ubisoft posts it officially.

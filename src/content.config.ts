@@ -84,6 +84,8 @@ const patchNotes = defineCollection({
     author: z.string(),
     pizzaTitle: z.string().optional(),
     pizzaText: z.string().optional(),
+    shareTitle: z.string().optional(),
+    shareText: z.string().optional(),
     summary: z.string(),
     featuredImage: z.string().optional(),
     imageAlt: z.string().optional(),

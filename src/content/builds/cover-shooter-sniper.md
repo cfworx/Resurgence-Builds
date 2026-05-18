@@ -75,4 +75,4 @@ The DSR-1 will one-shot most non-elite reds. Elites take 2-3 shots. The whole pa
 4. Headshot the next idiot — stack 2.
 5. Stack 3 — Killer talent procs on first kill (+20% WCHD for 10s). You are now doing obscene damage. 
 6. Pop **Tactical Link** for the lock-on + crit chance window when the heavy elite shows up. 
-7. Reposition between packs to a new cover line. **NEVER LEAVE COVER DURING A FIGHT.** If you stand in the open, you will instantly dissolve into red mist.\n
+7. Reposition between packs to a new cover line. **NEVER LEAVE COVER DURING A FIGHT.** If you stand in the open, you will instantly dissolve into red mist.

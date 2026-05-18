@@ -76,4 +76,4 @@ The two skills are independent: the Drone follows enemies around to bully them, 
 2. Send the **Striker Drone** to the lead elite. This is Disorient Zone 2. 
 3. Stay within 20m of your teammates like a clingy ex to stack your Concerted Strike damage buff.
 4. Fire on Disoriented targets. They will barely fire back because they are currently experiencing severe vertigo.
-5. Pop your **Drone Overload** signature to chain Disorient and drop a heavy skill damage burst when a pack gets stuck.\n
+5. Pop your **Drone Overload** signature to chain Disorient and drop a heavy skill damage burst when a pack gets stuck.

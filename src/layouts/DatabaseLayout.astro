@@ -1,0 +1,525 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import SectionTag from '../components/SectionTag.astro';
+
+interface Props {
+  title: string;
+  description: string;
+  breadcrumbs: { name: string; url: string }[];
+  heading: string;
+  subheading: string;
+}
+
+const { title, description, breadcrumbs, heading, subheading } = Astro.props;
+---
+
+<BaseLayout {title} {description} {breadcrumbs}>
+  <div class="container section">
+    <Breadcrumbs items={breadcrumbs} />
+    <SectionTag label="Database" />
+    <h1 class="db-heading heading-accent">{heading}</h1>
+    <p class="db-subheading">{subheading}</p>
+
+    <slot />
+  </div>
+</BaseLayout>
+
+<style is:global>
+  /* ============================================================
+     DATABASE — Shared Design System
+     ============================================================ */
+
+  .db-heading {
+    font-size: var(--text-4xl);
+    font-weight: 900;
+    letter-spacing: -0.03em;
+    margin-bottom: var(--sp-3);
+    background: linear-gradient(135deg, #fff 60%, var(--accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  @media (min-width: 768px) {
+    .db-heading { font-size: var(--text-5xl); }
+  }
+
+  .db-subheading {
+    color: var(--ink-muted);
+    margin-bottom: var(--sp-8);
+    font-size: var(--text-base);
+    max-width: 60ch;
+  }
+
+  /* --- Filter Bar --- */
+  .db-filters {
+    display: flex;
+    flex-direction: column;
+    gap: var(--sp-3);
+    margin-bottom: var(--sp-8);
+    padding: var(--sp-5);
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.07);
+    border-radius: 10px;
+  }
+
+  .filter-group {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--sp-2);
+  }
+
+  .filter-label {
+    font-family: var(--font-mono);
+    font-size: var(--text-xs);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--ink-muted);
+    flex-shrink: 0;
+    margin-right: var(--sp-2);
+  }
+
+  .filter-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--sp-2);
+  }
+
+  .filter-btn {
+    font-family: var(--font-mono);
+    font-size: var(--text-xs);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    padding: 6px 14px;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 999px;
+    color: var(--ink-muted);
+    cursor: pointer;
+    transition: all 200ms ease;
+    min-height: 32px;
+    display: inline-flex;
+    align-items: center;
+    white-space: nowrap;
+  }
+
+  .filter-btn:hover {
+    border-color: rgba(242, 104, 34, 0.5);
+    color: var(--accent);
+    background: rgba(242, 104, 34, 0.08);
+  }
+
+  .filter-btn.is-active {
+    border-color: var(--accent);
+    color: var(--accent);
+    background: rgba(242, 104, 34, 0.15);
+    box-shadow: 0 0 12px rgba(242, 104, 34, 0.2);
+  }
+
+  /* --- Grid --- */
+  .db-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--sp-5);
+  }
+
+  @media (min-width: 640px) {
+    .db-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  @media (min-width: 1200px) {
+    .db-grid { grid-template-columns: repeat(3, 1fr); }
+  }
+
+  /* --- Base Card --- */
+  .db-card {
+    background: linear-gradient(145deg, rgba(30,30,36,0.9) 0%, rgba(20,20,24,0.95) 100%);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 12px;
+    padding: var(--sp-6);
+    display: flex;
+    flex-direction: column;
+    gap: var(--sp-4);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  }
+
+  /* Top accent line */
+  .db-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 10%; right: 10%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--accent), transparent);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 0 0 4px 4px;
+  }
+
+  .db-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.5), 0 0 25px rgba(242, 104, 34, 0.1);
+    border-color: rgba(242, 104, 34, 0.3);
+  }
+
+  .db-card:hover::before { opacity: 1; }
+
+  /* --- Card Header --- */
+  .db-card__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: var(--sp-3);
+    padding-bottom: var(--sp-4);
+    border-bottom: 1px solid rgba(255,255,255,0.07);
+  }
+
+  .db-card__title {
+    font-family: var(--font-heading);
+    font-size: var(--text-xl);
+    font-weight: 800;
+    margin: 0 0 var(--sp-2) 0;
+    color: #fff;
+    letter-spacing: -0.01em;
+    line-height: 1.2;
+  }
+
+  .db-card__body {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: var(--sp-4);
+  }
+
+  /* --- Talent / Description block --- */
+  .talent-desc,
+  .effect-desc {
+    font-size: var(--text-sm);
+    line-height: 1.7;
+    color: #b8b8c0;
+  }
+
+  .talent-desc p, .effect-desc p { margin: 0; }
+
+  /* --- Talent Name (for exotic weapons) --- */
+  .talent-name {
+    font-family: var(--font-heading);
+    font-size: var(--text-base);
+    font-weight: 700;
+    color: #F5CC45;
+    margin: 0 0 var(--sp-2) 0;
+    display: flex;
+    align-items: center;
+    gap: var(--sp-2);
+  }
+
+  .talent-name::before {
+    content: '⬡';
+    font-size: 0.7em;
+    opacity: 0.7;
+  }
+
+  .talent-section {
+    padding: var(--sp-4);
+    background: rgba(245, 204, 69, 0.05);
+    border: 1px solid rgba(245, 204, 69, 0.2);
+    border-radius: 8px;
+  }
+
+  .talent-desc-text {
+    font-size: var(--text-sm);
+    line-height: 1.65;
+    color: #b8b8c0;
+    margin: 0;
+  }
+
+  /* --- Stats Grid (Exotic Weapons) --- */
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--sp-3) var(--sp-2);
+    background: rgba(0,0,0,0.25);
+    padding: var(--sp-4);
+    border-radius: 8px;
+    border: 1px solid rgba(255,255,255,0.05);
+  }
+
+  .stat-item {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
+
+  .stat-label {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    font-weight: 600;
+    color: var(--ink-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+
+  .stat-value {
+    font-size: var(--text-base);
+    font-weight: 700;
+    color: #fff;
+  }
+
+  /* --- Bonus Groups (Gear Sets, Skill Mods) --- */
+  .bonus-group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--sp-2);
+  }
+
+  .bonus-label {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--sp-2);
+    font-family: var(--font-mono);
+    font-size: var(--text-xs);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--accent);
+  }
+
+  .bonus-label-2 { color: #6DAA45; }
+  .bonus-label-3 { color: #3b82f6; }
+  .bonus-label-4 { color: #F5CC45; }
+
+  .bonus-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    font-size: 11px;
+    font-weight: 800;
+    font-family: var(--font-heading);
+    flex-shrink: 0;
+  }
+
+  .bonus-badge-2 { background: rgba(109, 170, 69, 0.2); color: #6DAA45; border: 1px solid rgba(109,170,69,0.4); }
+  .bonus-badge-3 { background: rgba(59, 130, 246, 0.2); color: #60a5fa; border: 1px solid rgba(59,130,246,0.4); }
+  .bonus-badge-4 { background: rgba(245, 204, 69, 0.2); color: #F5CC45; border: 1px solid rgba(245,204,69,0.4); }
+
+  .bonus-text {
+    font-size: var(--text-sm);
+    line-height: 1.65;
+    color: #b8b8c0;
+    margin: 0;
+    padding-left: var(--sp-4);
+    border-left: 2px solid rgba(255,255,255,0.07);
+  }
+
+  .bonus-block {
+    background: rgba(0,0,0,0.2);
+    border-radius: 8px;
+    padding: var(--sp-4);
+    border: 1px solid rgba(255,255,255,0.04);
+  }
+
+  /* --- OS Protocol Specific --- */
+  .main-stat-badge {
+    display: flex;
+    align-items: baseline;
+    gap: var(--sp-2);
+    padding: var(--sp-3) var(--sp-4);
+    background: linear-gradient(135deg, rgba(242, 104, 34, 0.12) 0%, rgba(242,104,34,0.04) 100%);
+    border: 1px solid rgba(242, 104, 34, 0.25);
+    border-radius: 8px;
+    margin-bottom: var(--sp-2);
+  }
+
+  .main-stat-label {
+    font-family: var(--font-mono);
+    font-size: var(--text-xs);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--accent);
+    flex-shrink: 0;
+  }
+
+  .main-stat-name {
+    font-size: var(--text-base);
+    font-weight: 700;
+    color: #fff;
+  }
+
+  .main-stat-value {
+    font-family: var(--font-mono);
+    font-size: var(--text-lg);
+    font-weight: 800;
+    color: var(--accent);
+    margin-left: auto;
+  }
+
+  .attr-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .attr-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: var(--text-sm);
+    padding: var(--sp-2) var(--sp-3);
+    background: rgba(0,0,0,0.2);
+    border-radius: 6px;
+    border: 1px solid rgba(255,255,255,0.04);
+    gap: var(--sp-3);
+  }
+
+  .attr-list li span:first-child {
+    color: #b8b8c0;
+  }
+
+  .attr-list li span:last-child {
+    font-family: var(--font-mono);
+    font-weight: 700;
+    color: #fff;
+    white-space: nowrap;
+  }
+
+  .db-card__cooldown {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-family: var(--font-mono);
+    font-size: var(--text-xs);
+    color: var(--ink-muted);
+    white-space: nowrap;
+    background: rgba(0,0,0,0.3);
+    padding: 4px 10px;
+    border-radius: 999px;
+    border: 1px solid rgba(255,255,255,0.08);
+    flex-shrink: 0;
+  }
+
+  .db-card__talent {
+    font-size: var(--text-sm);
+    line-height: 1.65;
+    color: #b8b8c0;
+    padding: var(--sp-3) var(--sp-4);
+    background: rgba(0,0,0,0.2);
+    border-radius: 8px;
+    border-left: 3px solid var(--accent-dim);
+  }
+
+  .db-card__talent strong { color: var(--accent); }
+
+  /* --- Attribute List (Bonus Attributes page) --- */
+  .attribute-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .attribute-list li {
+    font-size: var(--text-sm);
+    color: #c8c8d0;
+    padding: var(--sp-2) var(--sp-3);
+    background: rgba(0,0,0,0.2);
+    border-radius: 6px;
+    border: 1px solid rgba(255,255,255,0.04);
+    transition: background 200ms ease, border-color 200ms ease;
+    display: flex;
+    align-items: center;
+    gap: var(--sp-2);
+  }
+
+  .attribute-list li::before {
+    content: '';
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--accent);
+    flex-shrink: 0;
+    opacity: 0.5;
+  }
+
+  .attribute-list li:hover {
+    background: rgba(242, 104, 34, 0.07);
+    border-color: rgba(242, 104, 34, 0.2);
+  }
+
+  .attribute-list li:hover::before { opacity: 1; }
+
+  /* --- Source Section --- */
+  .source-section {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    gap: var(--sp-2);
+    padding: var(--sp-2) var(--sp-3);
+    background: rgba(242, 104, 34, 0.06);
+    border: 1px solid rgba(242, 104, 34, 0.15);
+    border-radius: 6px;
+  }
+
+  .source-label {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--accent);
+  }
+
+  .source-text {
+    font-size: var(--text-xs);
+    color: var(--ink-muted);
+    margin: 0;
+  }
+
+  /* --- Exotic card accent --- */
+  .exotic-card {
+    border-color: rgba(242, 104, 34, 0.2);
+    background: linear-gradient(145deg, rgba(35,28,20,0.95) 0%, rgba(20,20,24,0.98) 100%);
+  }
+
+  .exotic-card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 12px;
+    background: radial-gradient(ellipse at top right, rgba(242,104,34,0.06) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  .exotic-card:hover {
+    border-color: rgba(242, 104, 34, 0.5);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.5), 0 0 30px rgba(242, 104, 34, 0.2);
+  }
+
+  .weapon-type {
+    display: inline-flex;
+    align-items: center;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #F26822;
+    background: rgba(242,104,34,0.12);
+    border: 1px solid rgba(242,104,34,0.25);
+    padding: 3px 10px;
+    border-radius: 999px;
+  }
+</style>

@@ -73,4 +73,4 @@ The MPX secondary with Steady Hands handles close-quarters for when some brave i
 3. Open with the Warlord. Play Rough activates the very millisecond you fire, giving you 25% DR live. 
 4. Let Recycle keep your mag topped off by absorbing incoming hits. 
 5. Swap to the MPX if they get inside ~10m for hip-fire CQC dominance. 
-6. Put your Shield up if you need to break a bad angle or if you accidentally took a fair fight.\n
+6. Put your Shield up if you need to break a bad angle or if you accidentally took a fair fight.

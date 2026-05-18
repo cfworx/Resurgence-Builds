@@ -77,4 +77,4 @@ Best part? Lady Death is obtainable for 17,500 DZ credits. You don't even need r
 3. Open fire. Watch Assisted Infury and Engine Concealment start ramping your damage to absurd levels.
 4. After ~8s on Lady Death, swap to Type 81 → Backup Protection (+20% HP) + auto-reload at 4s.
 5. Spray the Type 81 for a second, then swap back to Lady Death (Backup Battery is off cooldown). 
-6. If you somehow mess this up, **Emergency Measures** auto-procs at <20% HP and restores 50% max HP. It's an idiot-proof panic button on a 30s cooldown.\n
+6. If you somehow mess this up, **Emergency Measures** auto-procs at <20% HP and restores 50% max HP. It's an idiot-proof panic button on a 30s cooldown.

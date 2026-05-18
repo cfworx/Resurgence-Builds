@@ -76,4 +76,4 @@ Plus, the Anarchy DoT means you don't even need good aim. Just apply 50 stacks t
 4. Watch Unflinching proc on incoming hits (70% chance to gain +300% Toughness as HP). Laugh as they try to kill you.
 5. Drop your Reinforcer Hive to cover your back.
 6. Use the Riot Foam signature on elites or when you get overwhelmed. Foam them up for a free, non-consensual DPS window. 
-7. Kill one enemy and watch the Anarchy DoT spread to the next victim like a highly contagious disease.\n
+7. Kill one enemy and watch the Anarchy DoT spread to the next victim like a highly contagious disease.

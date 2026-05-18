@@ -59,4 +59,4 @@ The Phase 2 update for Season 1 went live on May 12. This is the official patch 
 
 ### Technical Improvements
 - Backend and system optimizations for live operations and upcoming updates
-- Stability improvements based on multiple release-candidate iterations\n
+- Stability improvements based on multiple release-candidate iterations

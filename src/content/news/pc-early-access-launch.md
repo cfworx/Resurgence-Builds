@@ -23,4 +23,4 @@ The Division Resurgence is now available in Early Access on PC via **Ubisoft Con
 - **Account linking:** Players signed in as a mobile guest should link their Ubisoft Connect account before playing on PC to preserve progress
 
 ## Why This Matters
-Until April 28, the only routes to play on PC were unofficial emulators. Ubisoft had previously declined to commit to a PC version. The shadow-drop happened approximately one hour before the official developer livestream announcing it, which surprised even Ubisoft Creator Program partners.\n
+Until April 28, the only routes to play on PC were unofficial emulators. Ubisoft had previously declined to commit to a PC version. The shadow-drop happened approximately one hour before the official developer livestream announcing it, which surprised even Ubisoft Creator Program partners.
