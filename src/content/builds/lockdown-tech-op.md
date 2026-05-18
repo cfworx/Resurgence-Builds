@@ -1,5 +1,5 @@
 ---
-title: "The Lockdown Tech Op — Disorient-Loop Striker Drone Build for The Division: Resurgence"
+title: "The Lockdown Tech Op — Disorient-Loop Striker Drone Build"
 subtitle: "Off-meta Â· Fun Â· Spreadsheet-verified Â· Math on the page Â· Striker Drone CC + skill-crit loop"
 specialization: Tech Operator
 featuredImage: "/images/tech-op-v2.jpg"

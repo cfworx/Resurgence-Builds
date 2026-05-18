@@ -1,5 +1,5 @@
 ---
-title: "The Demolitionist — Explosive Chaos Solo Build for The Division: Resurgence"
+title: "The Demolitionist — Explosive Chaos Solo Build"
 subtitle: "Solo-first Â· Spreadsheet-verified Â· Math on the page Â· Built for fun"
 specialization: Demolitionist
 featuredImage: "/images/demolitionist-v2.jpg"

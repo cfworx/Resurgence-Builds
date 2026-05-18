@@ -1,5 +1,5 @@
 ﻿---
-title: "The Legendary Healer — Field Medic Build for The Division: Resurgence"
+title: "The Legendary Healer — Field Medic Build"
 subtitle: "v9 Â· Verified Legendary Healer Â· Mechanic-accurate, spreadsheet-verified, math on the page"
 specialization: Field Medic
 featuredImage: "/images/legendary-healer-field-medic.webp"
