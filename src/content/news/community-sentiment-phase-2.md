@@ -86,37 +86,4 @@ For now, this is a game that has gone from a rough mobile launch to a credible c
 We will track all of it as it lands.
 
 
----
-
-<div class="bmc-callout" style="margin: 2rem 0; padding: 1.5rem; background: var(--surface); border: 1px solid var(--accent); border-radius: 8px; text-align: center;">
-  <h3 style="margin-top: 0; margin-bottom: 0.5rem; color: var(--accent);">Reddit is a toxic wasteland</h3>
-  <p style="margin: 0 auto 1rem; font-size: 0.875rem; color: var(--ink-muted);">I waded through 3,000 salty Reddit comments about the matchmaking to bring you this clean, objective summary. My sanity is currently hanging by a thread. A pizza is the only known cure for extreme internet exposure.</p>
-  <div style="display: flex; justify-content: center;">
-    <a href="https://buymeacoffee.com/resurgencebuilds" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; justify-content: center; background-color: #ff6d10; color: #000000; font-family: 'Cookie', cursive, sans-serif; font-size: 24px; text-decoration: none; padding: 5px 15px; border-radius: 5px; font-weight: bold; box-shadow: 0px 1px 2px rgba(0,0,0,0.2); transition: transform 0.2s;">
-      <span style="margin-right: 8px; font-size: 24px;">🍕</span> Buy me a pizza
-    </a>
-  </div>
-</div>
-
-**Sources:**
-- Ubisoft (official), [Phase 2 Starts Now — What's New](https://www.ubisoft.com/en-us/game/the-division/resurgence/news-updates/3ygDDXxg6dv6aQD5MJvbKv/phase-2-starts-now-whats-new) (May 12, 2026)
-- Ubisoft (official), [PC Early Access & Game Roadmap](https://www.ubisoft.com/en-us/game/the-division/resurgence/news-updates/5LqRsprrdgtEnUmStmBi0d/pc-early-access-game-roadmap) (April 28, 2026)
-- Ubisoft News, [The Division Resurgence Roadmap](https://news.ubisoft.com/en-us/article/9ZzMWcx5ADnaxAiOO3e0w/the-division-resurgence-roadmap-pc-launch-story-expansion-and-more) (April 28, 2026)
-- @TheDivMobile, [Strawberry Milkshake reveal](https://x.com/TheDivMobile/status/2054954901361524773) (May 14, 2026)
-- Ubisoft (official YouTube), [Season 1.2 Live](https://www.youtube.com/watch?v=48Uq6iM6qSA) (May 12, 2026)
-- TechRadar, [PC launch in August](https://www.techradar.com/gaming/free-to-play-mobile-game-the-division-resurgence-is-launching-on-pc-in-august-as-ubisoft-shares-new-roadmap-details-but-you-can-play-it-right-now) (May 1, 2026)
-- u/JokerUnique, [Developer Stream Summary](https://www.reddit.com/r/thedivisionresurgence/comments/1sos0u8/developer_stream_summary/) (April 19, 2026)
-- u/TDResurgence, [Share your questions for the live stream](https://www.reddit.com/r/thedivisionresurgence/comments/1sl9h12/share_your_questions_for_our_upcoming_live_stream/)
-- u/LaClown-ua, [Weapon disappearing from inventory](https://www.reddit.com/r/thedivisionresurgence/comments/1snm931/new_bug_weapon_disappearing_from_inventory/) (April 17, 2026)
-- u/BelleskaTROn-, [Logged back in to no weapons or gear](https://www.reddit.com/r/thedivisionresurgence/comments/1sa72za/logged_back_in_to_no_weapons_or_gear/)
-- u/HiDefMusic, [60 FPS Very High debug menu](https://www.reddit.com/r/thedivisionresurgence/comments/1sdggia/60fps_very_high_settings_debug_menu_see/)
-- RogueGold (YouTube), [Strawberry Milkshake LMG breakdown](https://www.youtube.com/watch?v=DHIwHI15B2A) (May 13, 2026)
-- RogueGold (YouTube), [PC shadow drop](https://www.youtube.com/watch?v=lvrE_xJeKfM) (April 28, 2026)
-- RogueGold (YouTube), [PC launch dev stream](https://www.youtube.com/watch?v=DzcW3j6rApw) (April 28, 2026)
-- DJ Tickle (YouTube), [Season 1.2 walkthrough](https://www.youtube.com/watch?v=w-Mkdy4UGF8) (May 13, 2026)
-- Saiynergy (YouTube), [PC FPS uncap walkthrough](https://www.youtube.com/watch?v=80zYx7ig3DQ) (May 9, 2026)
-- Top GamePlayz (YouTube), [60 FPS Max settings](https://www.youtube.com/watch?v=MIyomnJpKyg) (May 13, 2026)
-- Dragon's Breath (YouTube), [60 FPS Ultra](https://www.youtube.com/watch?v=-MSXiEc44XE) (May 14, 2026)
-- @RovenOP, [roadmap recap](https://x.com/RovenOP/status/2049816677769154752) (April 30, 2026)
-- The Division Resurgence Wiki, [Hotfix tracker](https://www.thedivisionresurgence.wiki/release/the-division-resurgence-hotfix) (May 16, 2026)
-- Community (YouTube), [How To Fix Gear Lost After Disconnection](https://www.youtube.com/watch?v=RFi5EpprYXc) (April 17, 2026)
+---\n

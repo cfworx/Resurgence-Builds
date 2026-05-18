@@ -11,6 +11,6 @@ const { pn } = Astro.props;
 const { Content, headings } = await render(pn);
 ---
 
-<NewsLayout title={pn.data.title} description={pn.data.summary} publishDate={pn.data.patchDate} author={pn.data.author} tags={[`v${pn.data.version}`]} image={pn.data.featuredImage} imageAlt={pn.data.imageAlt} headings={headings} parentPath="/patch-notes/" parentLabel="Patch Notes">
+<NewsLayout title={pn.data.title} description={pn.data.summary} publishDate={pn.data.patchDate} author={pn.data.author} tags={[`v${pn.data.version}`]} image={pn.data.featuredImage} imageAlt={pn.data.imageAlt} headings={headings} parentPath="/patch-notes/" parentLabel="Patch Notes" pizzaTitle={pn.data.pizzaTitle} pizzaText={pn.data.pizzaText}>
   <Content />
 </NewsLayout>

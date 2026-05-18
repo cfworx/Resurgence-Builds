@@ -27,6 +27,8 @@ const builds = defineCollection({
     imageAlt: z.string().optional(),
     subtitle: z.string().optional(),
     author: z.string(),
+    pizzaTitle: z.string().optional(),
+    pizzaText: z.string().optional(),
   }),
 });
 
@@ -47,6 +49,8 @@ const guides = defineCollection({
     tags: z.array(z.string()),
     description: z.string(),
     author: z.string().optional(),
+    pizzaTitle: z.string().optional(),
+    pizzaText: z.string().optional(),
   }),
 });
 
@@ -56,6 +60,8 @@ const news = defineCollection({
     title: z.string(),
     publishDate: z.coerce.date(),
     author: z.string(),
+    pizzaTitle: z.string().optional(),
+    pizzaText: z.string().optional(),
     tags: z.array(z.string()),
     description: z.string(),
     featuredImage: z.string().optional(),
@@ -70,6 +76,8 @@ const patchNotes = defineCollection({
     version: z.string(),
     patchDate: z.coerce.date(),
     author: z.string(),
+    pizzaTitle: z.string().optional(),
+    pizzaText: z.string().optional(),
     summary: z.string(),
     featuredImage: z.string().optional(),
     imageAlt: z.string().optional(),

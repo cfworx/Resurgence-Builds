@@ -69,14 +69,4 @@ Jackpot is the only set that rolls Skill Crit Chance + Skill Crit Damage + Skill
 3. Pop the **M32A1**. Each grenade detonates → triggers Collateral Damage AOE → rolls Explosive Burst multi-shot. 
 4. The Energize chest gives +30% Skill Damage for 6s on skill cast, so keep chaining casts to keep the buff up. 
 5. Reposition frantically while skills are on cooldown because, again, your toughness is basically tissue paper.\n
----
-
-<div class="bmc-callout" style="margin: 2rem 0; padding: 1.5rem; background: var(--surface); border: 1px solid var(--accent); border-radius: 8px; text-align: center;">
-  <h3 style="margin-top: 0; margin-bottom: 0.5rem; color: var(--accent);">Explosions are expensive</h3>
-  <p style="margin: 0 auto 1rem; font-size: 0.875rem; color: var(--ink-muted);">The sheer amount of collateral damage this build causes is a liability. Help me fund my legal defense team (or just buy me a pizza) before the authorities catch on.</p>
-  <div style="display: flex; justify-content: center;">
-    <a href="https://buymeacoffee.com/resurgencebuilds" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; justify-content: center; background-color: #ff6d10; color: #000000; font-family: 'Cookie', cursive, sans-serif; font-size: 24px; text-decoration: none; padding: 5px 15px; border-radius: 5px; font-weight: bold; box-shadow: 0px 1px 2px rgba(0,0,0,0.2); transition: transform 0.2s;">
-      <span style="margin-right: 8px; font-size: 24px;">🍕</span> Buy me a pizza
-    </a>
-  </div>
-</div>
+---\n
