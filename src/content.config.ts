@@ -29,6 +29,8 @@ const builds = defineCollection({
     author: z.string(),
     pizzaTitle: z.string().optional(),
     pizzaText: z.string().optional(),
+    shareTitle: z.string().optional(),
+    shareText: z.string().optional(),
   }),
 });
 
@@ -51,6 +53,8 @@ const guides = defineCollection({
     author: z.string().optional(),
     pizzaTitle: z.string().optional(),
     pizzaText: z.string().optional(),
+    shareTitle: z.string().optional(),
+    shareText: z.string().optional(),
   }),
 });
 
@@ -62,6 +66,8 @@ const news = defineCollection({
     author: z.string(),
     pizzaTitle: z.string().optional(),
     pizzaText: z.string().optional(),
+    shareTitle: z.string().optional(),
+    shareText: z.string().optional(),
     tags: z.array(z.string()),
     description: z.string(),
     featuredImage: z.string().optional(),

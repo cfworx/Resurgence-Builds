@@ -28,5 +28,5 @@ Ubisoft launched Phase 2 of Season 1 on May 12, 2026. The update introduces a ne
 - **Warlord** (Exotic AR) added to the Dark Zone Vendor
 - **Strawberry Milkshake Tactical Augmentation Module** added to the Dark Zone Vendor
 - Skill Mod dismantle credit values increased: Blue 10 → 15, Purple 50 → 75, Yellow 450 → 750
-- Some high-end devices can now run the game at up to 60 FPS with expanded graphics settings\n
+- Some high-end devices can now run the game at up to 60 FPS with expanded graphics settings\npizzaTitle: "The grind never stops"\npizzaText: "I've been awake for 36 hours trying to figure out if the new season pass is actually worth your time. The answer is maybe, but what I definitively need right now is pizza."\nshareTitle: "Enable the grind"\nshareText: "Share this to peer pressure your friends into buying the season pass."\n
 ---\n

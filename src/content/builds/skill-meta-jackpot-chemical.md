@@ -67,5 +67,5 @@ And if that wasn't enough, the **Nothing to Lose** chest takes incoming damage a
 2. Drop 2-3 Chemical Trap zones right at the entry choke. Watch them walk into it.
 3. The first kill procs Minion Tracking → +36% Skill Crit Damage for 12s. 
 4. Re-deploy the acid pools the second the cooldown is up. (Nothing to Lose keeps it nearly always available). 
-5. Pop Healing Swarm if your team forgets how to play the game and needs a heal window.\n
+5. Pop Healing Swarm if your team forgets how to play the game and needs a heal window.\npizzaTitle: "Hazardous Materials Fee"\npizzaText: "Handling this much corrosive acid is terrible for my skin. Consider your donation a hazardous materials handling fee to keep this environmental terrorism going."\nshareTitle: "Spread the infection"\nshareText: "Help popularize war crimes by sharing this incredibly toxic setup."\n
 ---\n

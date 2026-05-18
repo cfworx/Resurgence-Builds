@@ -69,5 +69,5 @@ Stack that absurd combination on a weapon that already fires two shells per pull
 4. Close the distance to shotgun range (≤15m). 
 5. Pop Tactical Link. 
 6. Aimed shotgun crits trigger the Explosive Round AOE. Pull the trigger until there is nothing left. 
-7. Swap to the FAMAS to clean up the stragglers who are trying to run away.\n
+7. Swap to the FAMAS to clean up the stragglers who are trying to run away.\npizzaTitle: "Deleting enemies is hungry work"\npizzaText: "Pressing the 'Delete' button on an elite's health bar burns a surprising amount of calories. Buy me a pizza to keep the Alt-F4 engine running smoothly."\nshareTitle: "Share the Alt-F4 engine"\nshareText: "Tweet this so the devs see it and nerf us into the ground next patch."\n
 ---\n

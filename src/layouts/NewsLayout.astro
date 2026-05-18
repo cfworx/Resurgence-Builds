@@ -16,9 +16,11 @@ export interface Props {
   headings?: { depth: number; slug: string; text: string }[];
   pizzaTitle?: string;
   pizzaText?: string;
+  shareTitle?: string;
+  shareText?: string;
 }
 
-const { title, description, publishDate, author, tags, parentPath, parentLabel, image, imageAlt, pizzaTitle, pizzaText, headings = [] } = Astro.props;
+const { title, description, publishDate, author, tags, parentPath, parentLabel, image, imageAlt, pizzaTitle, pizzaText, shareTitle, shareText, headings = [] } = Astro.props;
 
 const twitterShareUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(title)}&url=${encodeURIComponent(Astro.url.href)}`;
 
@@ -89,8 +91,8 @@ const breadcrumbItems = [
 
       <div class="share-section" style="margin-top: var(--sp-8); padding: var(--sp-5); background: rgba(0,0,0,0.2); border-radius: var(--border-radius); border: 1px solid var(--border); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--sp-4);">
         <div>
-          <h3 style="margin: 0 0 var(--sp-1) 0; font-size: var(--text-lg);">Share this article</h3>
-          <p style="margin: 0; color: var(--ink-muted); font-size: var(--text-sm);">Share the latest news with other agents.</p>
+          <h3 style="margin: 0 0 var(--sp-1) 0; font-size: var(--text-lg);">{shareTitle || "Share this article"}</h3>
+          <p style="margin: 0; color: var(--ink-muted); font-size: var(--text-sm);">{shareText || "Share the latest news with other agents."}</p>
         </div>
         <a href={twitterShareUrl} target="_blank" rel="noopener noreferrer" class="btn btn--primary" style="display: inline-flex; align-items: center; gap: 8px; background-color: #000; color: #fff; border: 1px solid #333;">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">

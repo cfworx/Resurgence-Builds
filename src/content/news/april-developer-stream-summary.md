@@ -19,5 +19,5 @@ Ubisoft hosted a developer livestream on April 18 covering the launch period. Co
 - **No crossplay between the three regional servers** — characters are server-locked.
 
 ## Community Sentiment
-Mixed-to-frustrated. Multiple top comments described the answers as light on commitments. One commenter pointed out that a modified APK demonstrated the FPS unlock is technically feasible, which contributed to player skepticism.\n
+Mixed-to-frustrated. Multiple top comments described the answers as light on commitments. One commenter pointed out that a modified APK demonstrated the FPS unlock is technically feasible, which contributed to player skepticism.\npizzaTitle: "I watched the stream so you didn't have to"\npizzaText: "I sat through 45 minutes of corporate PR speak and 'we hear you's just to extract the actual useful information. A pizza is the only way I can recover my lost brain cells."\nshareTitle: "Save a life"\nshareText: "Share this summary to save another agent from 45 minutes of corporate jargon."\n
 ---\n

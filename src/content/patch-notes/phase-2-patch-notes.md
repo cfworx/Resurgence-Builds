@@ -55,5 +55,5 @@ The Phase 2 update for Season 1 went live on May 12. This is the official patch 
 
 ### Technical Improvements
 - Backend and system optimizations for live operations and upcoming updates
-- Stability improvements based on multiple release-candidate iterations\n
+- Stability improvements based on multiple release-candidate iterations\npizzaTitle: "Patch Note Archaeologist"\npizzaText: "Digging through 10 pages of weapon rebalancing data is exhausting work. If this summary saved you from reading a novel, consider tipping your local data miner with a slice."\nshareTitle: "Save them from reading"\nshareText: "Tweet this summary so your friends don't have to read a 10-page novel."\n
 ---\n
