@@ -11,6 +11,10 @@ description: "A solo-first off-meta Demolitionist build where every skill cast d
 author: "RapidF5"
 featuredImage: "/images/division-resurgence-demolitionist-explosive-solo-build.webp"
 imageAlt: "Demolitionist Explosive Chaos Build"
+pizzaTitle: "Explosions are expensive"
+pizzaText: "The sheer amount of collateral damage this build causes is a liability. Help me fund my legal defense team (or just buy me a pizza) before the authorities catch on."
+shareTitle: "Share the Michael Bay experience"
+shareText: "Warning: sharing this build on X may flag your account for digital terrorism."
 ---
 
 # Demolitionist — Michael Bay's Wet Dream
@@ -68,5 +72,4 @@ Jackpot is the only set that rolls Skill Crit Chance + Skill Crit Damage + Skill
 2. Throw your **Explosive Seeker Mine** for the second skill engine. 
 3. Pop the **M32A1**. Each grenade detonates → triggers Collateral Damage AOE → rolls Explosive Burst multi-shot. 
 4. The Energize chest gives +30% Skill Damage for 6s on skill cast, so keep chaining casts to keep the buff up. 
-5. Reposition frantically while skills are on cooldown because, again, your toughness is basically tissue paper.\npizzaTitle: "Explosions are expensive"\npizzaText: "The sheer amount of collateral damage this build causes is a liability. Help me fund my legal defense team (or just buy me a pizza) before the authorities catch on."\nshareTitle: "Share the Michael Bay experience"\nshareText: "Warning: sharing this build on X may flag your account for digital terrorism."\n
----\n
+5. Reposition frantically while skills are on cooldown because, again, your toughness is basically tissue paper.\n

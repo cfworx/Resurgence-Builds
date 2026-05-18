@@ -11,6 +11,10 @@ description: "The dominant Conflict PVP build. A setup so disgustingly strong it
 author: "RapidF5 (via Willspot)"
 featuredImage: "/images/division-resurgence-conflict-pvp-fearless-warrior-build.webp"
 imageAlt: "Fearless Warrior Warlord PVP Build"
+pizzaTitle: "Sponsor my toxicity"
+pizzaText: "Going 24-0 and spawn-trapping the enemy team requires fuel. Your donation directly funds the sheer disrespect this build brings to Conflict matches."
+shareTitle: "Farm hate mail"
+shareText: "Share this to let everyone know you thrive entirely on unfiltered gamer rage."
 ---
 
 # Vanguard — The 24-0 Spawn Trapper
@@ -69,5 +73,4 @@ The MPX secondary with Steady Hands handles close-quarters for when some brave i
 3. Open with the Warlord. Play Rough activates the very millisecond you fire, giving you 25% DR live. 
 4. Let Recycle keep your mag topped off by absorbing incoming hits. 
 5. Swap to the MPX if they get inside ~10m for hip-fire CQC dominance. 
-6. Put your Shield up if you need to break a bad angle or if you accidentally took a fair fight.\npizzaTitle: "Sponsor my toxicity"\npizzaText: "Going 24-0 and spawn-trapping the enemy team requires fuel. Your donation directly funds the sheer disrespect this build brings to Conflict matches."\nshareTitle: "Farm hate mail"\nshareText: "Share this to let everyone know you thrive entirely on unfiltered gamer rage."\n
----\n
+6. Put your Shield up if you need to break a bad angle or if you accidentally took a fair fight.\n

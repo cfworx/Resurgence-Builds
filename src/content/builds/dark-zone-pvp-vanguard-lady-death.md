@@ -11,6 +11,10 @@ description: "The absolute pinnacle of Dark Zone toxicity. Wall-hacks, absurd DP
 author: "RapidF5 (via Willspot)"
 featuredImage: "/images/division-resurgence-dark-zone-pvp-lady-death-build.webp"
 imageAlt: "Vanguard Lady Death Dark Zone Build"
+pizzaTitle: "Blood Money"
+pizzaText: "We both know you're going to use this build to ruin someone's day in the Dark Zone. Give me a cut of the profits so I don't feel guilty about unleashing you on the server."
+shareTitle: "Ruin more days"
+shareText: "Tweet this so more players try it and immediately get ganked by a 4-stack."
 ---
 
 # Vanguard — The Hate Mail Generator
@@ -73,5 +77,4 @@ Best part? Lady Death is obtainable for 17,500 DZ credits. You don't even need r
 3. Open fire. Watch Assisted Infury and Engine Concealment start ramping your damage to absurd levels.
 4. After ~8s on Lady Death, swap to Type 81 → Backup Protection (+20% HP) + auto-reload at 4s.
 5. Spray the Type 81 for a second, then swap back to Lady Death (Backup Battery is off cooldown). 
-6. If you somehow mess this up, **Emergency Measures** auto-procs at <20% HP and restores 50% max HP. It's an idiot-proof panic button on a 30s cooldown.\npizzaTitle: "Blood Money"\npizzaText: "We both know you're going to use this build to ruin someone's day in the Dark Zone. Give me a cut of the profits so I don't feel guilty about unleashing you on the server."\nshareTitle: "Ruin more days"\nshareText: "Tweet this so more players try it and immediately get ganked by a 4-stack."\n
----\n
+6. If you somehow mess this up, **Emergency Measures** auto-procs at <20% HP and restores 50% max HP. It's an idiot-proof panic button on a 30s cooldown.\n

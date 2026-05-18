@@ -6,6 +6,10 @@ description: "Ubisoft launches Phase 2 of Season 1 with a new Classified Ops Pas
 tags: ["Season 1", "Events", "Update"]
 featuredImage: "/images/news/division-resurgence-phase-2-season-1-live-hero.webp"
 imageAlt: "A female Division agent standing in a snowy New York City street holding the Strawberry Milkshake Exotic LMG with an orange and black magma weapon skin"
+pizzaTitle: "The grind never stops"
+pizzaText: "I've been awake for 36 hours trying to figure out if the new season pass is actually worth your time. The answer is maybe, but what I definitively need right now is pizza."
+shareTitle: "Enable the grind"
+shareText: "Share this to peer pressure your friends into buying the season pass."
 ---
 
 Ubisoft launched Phase 2 of Season 1 on May 12, 2026. The update introduces a new **Classified Ops Pass** with 50 tiers of rewards, a free Exotic LMG (Strawberry Milkshake), three new cosmetic Draw Sets, and four time-limited events — one in the Dark Zone and three speed-run challenges set in main-story missions on Challenging difficulty.
@@ -28,5 +32,4 @@ Ubisoft launched Phase 2 of Season 1 on May 12, 2026. The update introduces a ne
 - **Warlord** (Exotic AR) added to the Dark Zone Vendor
 - **Strawberry Milkshake Tactical Augmentation Module** added to the Dark Zone Vendor
 - Skill Mod dismantle credit values increased: Blue 10 → 15, Purple 50 → 75, Yellow 450 → 750
-- Some high-end devices can now run the game at up to 60 FPS with expanded graphics settings\npizzaTitle: "The grind never stops"\npizzaText: "I've been awake for 36 hours trying to figure out if the new season pass is actually worth your time. The answer is maybe, but what I definitively need right now is pizza."\nshareTitle: "Enable the grind"\nshareText: "Share this to peer pressure your friends into buying the season pass."\n
----\n
+- Some high-end devices can now run the game at up to 60 FPS with expanded graphics settings\n

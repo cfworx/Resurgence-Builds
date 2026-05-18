@@ -11,6 +11,10 @@ description: "An off-meta Tech Operator build that keeps an entire pack permanen
 author: "RapidF5"
 featuredImage: "/images/division-resurgence-tech-operator-striker-drone-build.webp"
 imageAlt: "Tech Operator Striker Drone Build"
+pizzaTitle: "Compensate me for the motion sickness"
+pizzaText: "I got a migraine testing this build so you could give the AI permanent vertigo. Toss a few bucks my way to help me pay for the aspirin."
+shareTitle: "Radicalize other agents"
+shareText: "Send this to someone who hates letting the AI have a turn to play."
 ---
 
 # Tech Operator — The Flashbang Salesman
@@ -72,5 +76,4 @@ The two skills are independent: the Drone follows enemies around to bully them, 
 2. Send the **Striker Drone** to the lead elite. This is Disorient Zone 2. 
 3. Stay within 20m of your teammates like a clingy ex to stack your Concerted Strike damage buff.
 4. Fire on Disoriented targets. They will barely fire back because they are currently experiencing severe vertigo.
-5. Pop your **Drone Overload** signature to chain Disorient and drop a heavy skill damage burst when a pack gets stuck.\npizzaTitle: "Compensate me for the motion sickness"\npizzaText: "I got a migraine testing this build so you could give the AI permanent vertigo. Toss a few bucks my way to help me pay for the aspirin."\nshareTitle: "Radicalize other agents"\nshareText: "Send this to someone who hates letting the AI have a turn to play."\n
----\n
+5. Pop your **Drone Overload** signature to chain Disorient and drop a heavy skill damage burst when a pack gets stuck.\n

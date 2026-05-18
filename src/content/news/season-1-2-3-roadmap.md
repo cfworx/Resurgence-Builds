@@ -6,6 +6,10 @@ description: "Ubisoft publishes the full Division Resurgence seasonal roadmap. S
 tags: ["Roadmap", "Season 1", "Season 2", "Season 3"]
 featuredImage: "/images/season-roadmap.jpg"
 imageAlt: "A Division Agent checking a map on a snowy New York street"
+pizzaTitle: "Translating dev roadmaps"
+pizzaText: "Deciphering 'soon', 'later this year', and 'in the works' is basically a full-time job. Toss a pizza my way to keep my crystal ball functioning."
+shareTitle: "Share the hopium"
+shareText: "Tweet this to convince your followers the game is definitely saved this time."
 ---
 
 Ubisoft published the full seasonal roadmap on April 28. New seasons land every **four months**; phases within a season arrive every **six weeks**.
@@ -20,5 +24,4 @@ Ubisoft published the full seasonal roadmap on April 28. New seasons land every 
 | **Season 3** | Winter 2026 | Major story expansion — deeper backstory on the factions and characters introduced in Season 1 |
 
 ## A Note on Steam
-No Steam release date has been officially confirmed. The August Season 2 target is for Ubisoft Connect. Some creator coverage (RogueGold) referenced "Steam later this summer" based on the Ubisoft Creator Program preview, but this should be treated as **[LIKELY but UNCONFIRMED]** until Ubisoft posts it officially.\npizzaTitle: "Translating dev roadmaps"\npizzaText: "Deciphering 'soon', 'later this year', and 'in the works' is basically a full-time job. Toss a pizza my way to keep my crystal ball functioning."\nshareTitle: "Share the hopium"\nshareText: "Tweet this to convince your followers the game is definitely saved this time."\n
----\n
+No Steam release date has been officially confirmed. The August Season 2 target is for Ubisoft Connect. Some creator coverage (RogueGold) referenced "Steam later this summer" based on the Ubisoft Creator Program preview, but this should be treated as **[LIKELY but UNCONFIRMED]** until Ubisoft posts it officially.\n

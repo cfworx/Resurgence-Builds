@@ -11,6 +11,10 @@ description: "An off-meta Vanguard sniper build that deletes elites from across 
 author: "RapidF5"
 featuredImage: "/images/division-resurgence-vanguard-sniper-build.webp"
 imageAlt: "Vanguard Cover Shooter Sniper Build"
+pizzaTitle: "Support my extreme cowardice"
+pizzaText: "I spent hours hiding in a corner testing the exact maximum range of this sniper just so you wouldn't have to. Funding my pizza habit ensures I never have to go outside and interact with real people."
+shareTitle: "Expose my cowardice"
+shareText: "Tweet this to let the world know you prefer hiding 50m away from danger."
 ---
 
 # Vanguard — The Cross-Map Coward (Sniper)
@@ -71,5 +75,4 @@ The DSR-1 will one-shot most non-elite reds. Elites take 2-3 shots. The whole pa
 4. Headshot the next idiot — stack 2.
 5. Stack 3 — Killer talent procs on first kill (+20% WCHD for 10s). You are now doing obscene damage. 
 6. Pop **Tactical Link** for the lock-on + crit chance window when the heavy elite shows up. 
-7. Reposition between packs to a new cover line. **NEVER LEAVE COVER DURING A FIGHT.** If you stand in the open, you will instantly dissolve into red mist.\npizzaTitle: "Support my extreme cowardice"\npizzaText: "I spent hours hiding in a corner testing the exact maximum range of this sniper just so you wouldn't have to. Funding my pizza habit ensures I never have to go outside and interact with real people."\nshareTitle: "Expose my cowardice"\nshareText: "Tweet this to let the world know you prefer hiding 50m away from danger."\n
----\n
+7. Reposition between packs to a new cover line. **NEVER LEAVE COVER DURING A FIGHT.** If you stand in the open, you will instantly dissolve into red mist.\n

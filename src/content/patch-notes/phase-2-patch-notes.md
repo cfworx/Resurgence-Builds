@@ -6,6 +6,10 @@ author: "RapidF5"
 summary: "The official Division Resurgence patch notes for Season 1 Phase 2. Featuring new events, the free Strawberry Milkshake exotic weapon, and Dark Zone rogue mechanic updates."
 featuredImage: "/images/patch-notes/division-resurgence-phase-2-patch-notes-hero.webp"
 imageAlt: "A male Division agent slamming the ground in a snowy New York City street with cockroaches scattering from a manhole cover"
+pizzaTitle: "Patch Note Archaeologist"
+pizzaText: "Digging through 10 pages of weapon rebalancing data is exhausting work. If this summary saved you from reading a novel, consider tipping your local data miner with a slice."
+shareTitle: "Save them from reading"
+shareText: "Tweet this summary so your friends don't have to read a 10-page novel."
 ---
 
 The Phase 2 update for Season 1 went live on May 12. This is the official patch note as published by Ubisoft, organized by category.
@@ -55,5 +59,4 @@ The Phase 2 update for Season 1 went live on May 12. This is the official patch 
 
 ### Technical Improvements
 - Backend and system optimizations for live operations and upcoming updates
-- Stability improvements based on multiple release-candidate iterations\npizzaTitle: "Patch Note Archaeologist"\npizzaText: "Digging through 10 pages of weapon rebalancing data is exhausting work. If this summary saved you from reading a novel, consider tipping your local data miner with a slice."\nshareTitle: "Save them from reading"\nshareText: "Tweet this summary so your friends don't have to read a 10-page novel."\n
----\n
+- Stability improvements based on multiple release-candidate iterations\n

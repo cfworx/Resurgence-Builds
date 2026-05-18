@@ -6,6 +6,10 @@ featuredImage: "/images/news/community-sentiment-pc.jpg"
 imageAlt: "A young gamer giving a thumbs up with a 180 FPS overlay playing The Division Resurgence on PC"
 description: "A breakdown of the biggest community topics right now: the PC early access launch, 60 FPS performance, Classified Ops Pass 1.2, missing gear, and the summer roadmap."
 tags: ["Community", "PC", "Phase 2", "Classified Ops Pass", "Missing Gear", "Roadmap"]
+pizzaTitle: "Reddit is a toxic wasteland"
+pizzaText: "I waded through 3,000 salty Reddit comments about the matchmaking to bring you this clean, objective summary. My sanity is currently hanging by a thread. A pizza is the only known cure for extreme internet exposure."
+shareTitle: "Spread the salt"
+shareText: "Share this to let X know that Reddit is still an irredeemable dumpster fire."
 ---
 
 The Division Resurgence has had one of the busiest three-week stretches of its short live-service life. PC early access landed on April 28, Phase 2 of Season 1 went live on May 12, and the roadmap through summer is now official. Almost every conversation across Reddit, YouTube and Twitter today loops back to one of six themes. Here is where each one stands as of May 17, 2026, with sources you can click straight through to.
@@ -84,6 +88,3 @@ On PC specifically, the early-access build is already in a better place than I e
 For now, this is a game that has gone from a rough mobile launch to a credible cross-platform live service in roughly six weeks. Most of the loudest community asks — higher frame rates, PC, more Exotic options, a real roadmap — have been answered, at least in part. The unfinished business is the trust layer: missing items, communication cadence, and the consistency of the patch promise.
 
 We will track all of it as it lands.
-
-
----\n
