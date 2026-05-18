@@ -512,15 +512,8 @@ If you want a second saved loadout slot for Dark Zone / PvP / solo heroics:
 | OS | **Assisted Fury** | Weapon crit chance — lets you fight back |
 | Skills | Same healer trio | Heal yourself while killing |
 
-This is your **selfish-healer** profile. Save it as Loadout B. The Legendary v9 build above stays as Loadout A.
-
-### No edits needed to the v9 build itself
-The Legendary v9 build's gear, OS, skill, and mod choices are all internally consistent with how the videos describe the underlying mechanics. Math and engine separation hold.
-
 ---
 
 > *Now go heal. Nobody approaches zero.*
 
 ---
-
- **Source:** Division Resurgence Build Database (spreadsheet, literal text read) + 24 community video transcripts Â· **Mechanic claims independently verified** against Resurgence-specific community guides
