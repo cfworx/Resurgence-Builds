@@ -43,12 +43,23 @@ const itemListLd = {
 
     <div class="filter-bar" id="build-filters">
       <button class="filter-btn is-active" data-filter="all">All</button>
+      <div class="filter-separator" style="width: 1px; height: 1.5rem; background: var(--border); margin: 0 var(--sp-2);"></div>
+      <button class="filter-btn" data-filter="pve">PvE</button>
+      <button class="filter-btn" data-filter="pvp">PvP</button>
+      <button class="filter-btn" data-filter="meta">Meta</button>
+      <div class="filter-separator" style="width: 1px; height: 1.5rem; background: var(--border); margin: 0 var(--sp-2);"></div>
       {specs.map(s => <button class="filter-btn" data-filter={s}>{s}</button>)}
     </div>
 
     <div class="grid grid--3" id="builds-grid">
       {sorted.map((build) => (
-        <div data-spec={build.data.specialization} data-playstyle={build.data.playstyle}>
+        <div 
+          data-spec={build.data.specialization} 
+          data-playstyle={build.data.playstyle}
+          data-pve={build.data.pve ? 'true' : 'false'}
+          data-pvp={build.data.pvp ? 'true' : 'false'}
+          data-tags={JSON.stringify(build.data.tags || [])}
+        >
           <BuildCard
             title={build.data.title}
             href={`/builds/${build.id}/`}
@@ -84,7 +95,28 @@ const itemListLd = {
       requestAnimationFrame(() => {
         grid.querySelectorAll('[data-spec]').forEach(card => {
           const el = card as HTMLElement;
-          el.style.display = (filter === 'all' || el.dataset.spec === filter) ? '' : 'none';
+          let show = false;
+          
+          if (filter === 'all') {
+            show = true;
+          } else if (filter === 'pve') {
+            show = el.dataset.pve === 'true';
+          } else if (filter === 'pvp') {
+            show = el.dataset.pvp === 'true';
+          } else if (filter === 'meta') {
+            try {
+              const tags = JSON.parse(el.dataset.tags || '[]');
+              // Case insensitive match for 'meta' tag
+              show = tags.some((t: string) => t.toLowerCase() === 'meta');
+            } catch {
+              show = false;
+            }
+          } else {
+            // Must be a specialization filter
+            show = el.dataset.spec === filter;
+          }
+          
+          el.style.display = show ? '' : 'none';
         });
       });
     });
