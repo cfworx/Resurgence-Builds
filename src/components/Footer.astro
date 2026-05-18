@@ -6,26 +6,6 @@ export interface Props {
 const { title } = Astro.props;
 const year = new Date().getFullYear();
 const isHome = Astro.url.pathname === '/' || Astro.url.pathname === '/index.html';
-const isBuildPost = Astro.url.pathname.startsWith('/builds/') && Astro.url.pathname.length > 9;
-
-let calloutText = "Did I just save your K/D ratio?";
-const path = Astro.url.pathname.replace(/\/$/, "");
-
-if (path === "" || path === "/index.html") {
-  calloutText = "Still breathing? Good. You owe me a beer.";
-} else if (path === "/builds") {
-  calloutText = "Stop copying my homework and buy me a pizza.";
-} else if (path.startsWith("/guides")) {
-  calloutText = "I spoon-fed you this strategy. The least you can do is feed me.";
-} else if (path.startsWith("/database")) {
-  calloutText = "I stared at spreadsheets until my eyes bled for this data.";
-} else if (path.startsWith("/news") || path.startsWith("/patch-notes")) {
-  calloutText = "Translating Ubisoft's dev-speak into English makes me violently hungry.";
-} else if (path === "/privacy" || path === "/terms" || path === "/dmca") {
-  calloutText = "You're actually reading the legal pages? What are you, a cop? Buy me a pizza.";
-} else if (title && title.length < 50 && !title.includes('Resurgence Builds')) {
-  calloutText = `Did "${title}" carry your dead weight?`;
-}
 ---
 
 <footer class="site-footer">
@@ -45,18 +25,12 @@ if (path === "" || path === "/index.html") {
     </nav>
   </div>
 
-  {!isBuildPost && (
+  {isHome && (
     <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; margin-top: var(--sp-6);">
-      <p style="color: var(--accent); font-weight: 700; margin-bottom: var(--sp-2); font-size: var(--text-sm);">{calloutText}</p>
-      {isHome ? (
-        <a href="https://buymeacoffee.com/resurgencebuilds" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; justify-content: center; background-color: #ff6d10; color: #000000; font-family: 'Comic Sans MS', 'Comic Sans', cursive; font-size: 24px; text-decoration: none; padding: 5px 15px; border-radius: 5px; font-weight: bold; box-shadow: 0px 1px 2px rgba(0,0,0,0.2); transition: transform 0.2s;">
-          <span style="margin-right: 8px; font-size: 24px;">🍺</span> Buy me a beer
-        </a>
-      ) : (
-        <a href="https://buymeacoffee.com/resurgencebuilds" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; justify-content: center; background-color: #ff6d10; color: #000000; font-family: 'Cookie', cursive, sans-serif; font-size: 24px; text-decoration: none; padding: 5px 15px; border-radius: 5px; font-weight: bold; box-shadow: 0px 1px 2px rgba(0,0,0,0.2); transition: transform 0.2s;">
-          <span style="margin-right: 8px; font-size: 24px;">🍕</span> Buy me a pizza
-        </a>
-      )}
+      <p style="color: var(--accent); font-weight: 700; margin-bottom: var(--sp-2); font-size: var(--text-sm);">Still breathing? Good. You owe me a beer.</p>
+      <a href="https://buymeacoffee.com/resurgencebuilds" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; justify-content: center; background-color: #ff6d10; color: #000000; font-family: 'Comic Sans MS', 'Comic Sans', cursive; font-size: 24px; text-decoration: none; padding: 5px 15px; border-radius: 5px; font-weight: bold; box-shadow: 0px 1px 2px rgba(0,0,0,0.2); transition: transform 0.2s;">
+        <span style="margin-right: 8px; font-size: 24px;">🍺</span> Buy me a beer
+      </a>
     </div>
   )}
   <p class="footer-disclaimer" style="margin-top: 1rem; color: var(--ink-muted); font-size: 0.85rem; line-height: 1.5;">
