@@ -9,7 +9,7 @@ patch: "Season 2"
 tags: ["vanguard", "meta", "pve", "shotgun", "phalanx-attack", "gunny-johnny", "double-barrel"]
 description: "The premier PVE DPS build. A shotgun setup so powerful it functions as an alt-F4 button for elites."
 author: "RapidF5 (via Godlike)"
-featuredImage: "/images/division-resurgence-vanguard-double-barrel-shotgun-pve-build.jpg"
+featuredImage: "/images/division-resurgence-vanguard-double-barrel-shotgun-pve-build.webp"
 imageAlt: "Vanguard Double Barrel Shotgun Build"
 ---
 
@@ -69,4 +69,15 @@ Stack that absurd combination on a weapon that already fires two shells per pull
 4. Close the distance to shotgun range (≤15m). 
 5. Pop Tactical Link. 
 6. Aimed shotgun crits trigger the Explosive Round AOE. Pull the trigger until there is nothing left. 
-7. Swap to the FAMAS to clean up the stragglers who are trying to run away.
+7. Swap to the FAMAS to clean up the stragglers who are trying to run away.\n
+---
+
+<div class="bmc-callout" style="margin: 2rem 0; padding: 1.5rem; background: var(--surface); border: 1px solid var(--accent); border-radius: 8px; text-align: center;">
+  <h3 style="margin-top: 0; margin-bottom: 0.5rem; color: var(--accent);">Deleting enemies is hungry work</h3>
+  <p style="margin: 0 auto 1rem; font-size: 0.875rem; color: var(--ink-muted);">Pressing the 'Delete' button on an elite's health bar burns a surprising amount of calories. Buy me a pizza to keep the Alt-F4 engine running smoothly.</p>
+  <div style="display: flex; justify-content: center;">
+    <a href="https://buymeacoffee.com/resurgencebuilds" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; justify-content: center; background-color: #ff6d10; color: #000000; font-family: 'Cookie', cursive, sans-serif; font-size: 24px; text-decoration: none; padding: 5px 15px; border-radius: 5px; font-weight: bold; box-shadow: 0px 1px 2px rgba(0,0,0,0.2); transition: transform 0.2s;">
+      <span style="margin-right: 8px; font-size: 24px;">🍕</span> Buy me a pizza
+    </a>
+  </div>
+</div>

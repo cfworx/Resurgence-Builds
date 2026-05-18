@@ -20,21 +20,15 @@ Ubisoft published the full seasonal roadmap on April 28. New seasons land every 
 | **Season 3** | Winter 2026 | Major story expansion — deeper backstory on the factions and characters introduced in Season 1 |
 
 ## A Note on Steam
-No Steam release date has been officially confirmed. The August Season 2 target is for Ubisoft Connect. Some creator coverage (RogueGold) referenced "Steam later this summer" based on the Ubisoft Creator Program preview, but this should be treated as **[LIKELY but UNCONFIRMED]** until Ubisoft posts it officially.
-
+No Steam release date has been officially confirmed. The August Season 2 target is for Ubisoft Connect. Some creator coverage (RogueGold) referenced "Steam later this summer" based on the Ubisoft Creator Program preview, but this should be treated as **[LIKELY but UNCONFIRMED]** until Ubisoft posts it officially.\n
 ---
 
 <div class="bmc-callout" style="margin: 2rem 0; padding: 1.5rem; background: var(--surface); border: 1px solid var(--accent); border-radius: 8px; text-align: center;">
-  <h3 style="margin-top: 0; margin-bottom: 0.5rem; color: var(--accent);">I stared at this roadmap so you didn't have to</h3>
-  <p style="margin: 0 auto 1rem; font-size: 0.875rem; color: var(--ink-muted);">Decrypting Ubisoft's 6-month content plan required three energy drinks and a microscope. If my breakdown just saved you 15 minutes of trying to figure out when the next season actually drops, fund my caffeine addiction and buy me a pizza.</p>
+  <h3 style="margin-top: 0; margin-bottom: 0.5rem; color: var(--accent);">Translating dev roadmaps</h3>
+  <p style="margin: 0 auto 1rem; font-size: 0.875rem; color: var(--ink-muted);">Deciphering 'soon', 'later this year', and 'in the works' is basically a full-time job. Toss a pizza my way to keep my crystal ball functioning.</p>
   <div style="display: flex; justify-content: center;">
     <a href="https://buymeacoffee.com/resurgencebuilds" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; justify-content: center; background-color: #ff6d10; color: #000000; font-family: 'Cookie', cursive, sans-serif; font-size: 24px; text-decoration: none; padding: 5px 15px; border-radius: 5px; font-weight: bold; box-shadow: 0px 1px 2px rgba(0,0,0,0.2); transition: transform 0.2s;">
       <span style="margin-right: 8px; font-size: 24px;">🍕</span> Buy me a pizza
     </a>
   </div>
 </div>
-
-**Sources [CONFIRMED]:**
-- Brittany Spurlin, Ubisoft News, [The Division Resurgence Roadmap](https://news.ubisoft.com/en-us/article/9ZzMWcx5ADnaxAiOO3e0w/the-division-resurgence-roadmap-pc-launch-story-expansion-and-more)
-- Ubisoft (official), [PC Early Access & Game Roadmap](https://www.ubisoft.com/en-us/game/the-division/resurgence/news-updates/5LqRsprrdgtEnUmStmBi0d/pc-early-access-game-roadmap)
-- TheSixthAxis, [Resurgence Playable on PC — Season Roadmap Revealed](https://www.thesixthaxis.com/2026/05/01/the-division-resurgence-is-now-playable-on-pc-season-roadmap-revealed/)

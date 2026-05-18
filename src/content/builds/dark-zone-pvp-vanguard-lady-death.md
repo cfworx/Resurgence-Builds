@@ -9,7 +9,7 @@ patch: "Season 2"
 tags: ["vanguard", "meta", "pvp", "dark-zone", "lady-death", "fury", "shield", "scanning-pulse"]
 description: "The absolute pinnacle of Dark Zone toxicity. Wall-hacks, absurd DPS, and an SMG that does everything for you. Expect hate mail."
 author: "RapidF5 (via Willspot)"
-featuredImage: "/images/division-resurgence-dark-zone-pvp-lady-death-build.jpg"
+featuredImage: "/images/division-resurgence-dark-zone-pvp-lady-death-build.webp"
 imageAlt: "Vanguard Lady Death Dark Zone Build"
 ---
 
@@ -73,4 +73,15 @@ Best part? Lady Death is obtainable for 17,500 DZ credits. You don't even need r
 3. Open fire. Watch Assisted Infury and Engine Concealment start ramping your damage to absurd levels.
 4. After ~8s on Lady Death, swap to Type 81 → Backup Protection (+20% HP) + auto-reload at 4s.
 5. Spray the Type 81 for a second, then swap back to Lady Death (Backup Battery is off cooldown). 
-6. If you somehow mess this up, **Emergency Measures** auto-procs at <20% HP and restores 50% max HP. It's an idiot-proof panic button on a 30s cooldown.
+6. If you somehow mess this up, **Emergency Measures** auto-procs at <20% HP and restores 50% max HP. It's an idiot-proof panic button on a 30s cooldown.\n
+---
+
+<div class="bmc-callout" style="margin: 2rem 0; padding: 1.5rem; background: var(--surface); border: 1px solid var(--accent); border-radius: 8px; text-align: center;">
+  <h3 style="margin-top: 0; margin-bottom: 0.5rem; color: var(--accent);">Blood Money</h3>
+  <p style="margin: 0 auto 1rem; font-size: 0.875rem; color: var(--ink-muted);">We both know you're going to use this build to ruin someone's day in the Dark Zone. Give me a cut of the profits so I don't feel guilty about unleashing you on the server.</p>
+  <div style="display: flex; justify-content: center;">
+    <a href="https://buymeacoffee.com/resurgencebuilds" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; justify-content: center; background-color: #ff6d10; color: #000000; font-family: 'Cookie', cursive, sans-serif; font-size: 24px; text-decoration: none; padding: 5px 15px; border-radius: 5px; font-weight: bold; box-shadow: 0px 1px 2px rgba(0,0,0,0.2); transition: transform 0.2s;">
+      <span style="margin-right: 8px; font-size: 24px;">🍕</span> Buy me a pizza
+    </a>
+  </div>
+</div>

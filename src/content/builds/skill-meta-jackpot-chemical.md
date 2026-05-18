@@ -9,7 +9,7 @@ patch: "Season 2"
 tags: ["field-medic", "meta", "pve", "skill-build", "jackpot", "fire-cycle", "chemical-trap", "corrosion"]
 description: "The top skill-DPS build in the game. You are basically committing environmental terrorism with acid pools."
 author: "RapidF5 (via RogueMadras)"
-featuredImage: "/images/division-resurgence-field-medic-chemical-trap-skill-build.jpg"
+featuredImage: "/images/division-resurgence-field-medic-chemical-trap-skill-build.webp"
 imageAlt: "Field Medic Chemical Trap Skill Build"
 ---
 
@@ -67,4 +67,15 @@ And if that wasn't enough, the **Nothing to Lose** chest takes incoming damage a
 2. Drop 2-3 Chemical Trap zones right at the entry choke. Watch them walk into it.
 3. The first kill procs Minion Tracking → +36% Skill Crit Damage for 12s. 
 4. Re-deploy the acid pools the second the cooldown is up. (Nothing to Lose keeps it nearly always available). 
-5. Pop Healing Swarm if your team forgets how to play the game and needs a heal window.
+5. Pop Healing Swarm if your team forgets how to play the game and needs a heal window.\n
+---
+
+<div class="bmc-callout" style="margin: 2rem 0; padding: 1.5rem; background: var(--surface); border: 1px solid var(--accent); border-radius: 8px; text-align: center;">
+  <h3 style="margin-top: 0; margin-bottom: 0.5rem; color: var(--accent);">Hazardous Materials Fee</h3>
+  <p style="margin: 0 auto 1rem; font-size: 0.875rem; color: var(--ink-muted);">Handling this much corrosive acid is terrible for my skin. Consider your donation a hazardous materials handling fee to keep this environmental terrorism going.</p>
+  <div style="display: flex; justify-content: center;">
+    <a href="https://buymeacoffee.com/resurgencebuilds" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; justify-content: center; background-color: #ff6d10; color: #000000; font-family: 'Cookie', cursive, sans-serif; font-size: 24px; text-decoration: none; padding: 5px 15px; border-radius: 5px; font-weight: bold; box-shadow: 0px 1px 2px rgba(0,0,0,0.2); transition: transform 0.2s;">
+      <span style="margin-right: 8px; font-size: 24px;">🍕</span> Buy me a pizza
+    </a>
+  </div>
+</div>
