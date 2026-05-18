@@ -1,76 +1,10 @@
----
-import BaseLayout from '../../layouts/BaseLayout.astro';
-import Breadcrumbs from '../../components/Breadcrumbs.astro';
-import SectionTag from '../../components/SectionTag.astro';
-import skillMods from '../../data/skill-mod-combos.json';
+const fs = require('fs');
+const path = require('path');
 
-const title = "Division Resurgence Skill Mod Combos & Mods Guide";
-const description = "Complete database of all Skill Mod Combos in The Division Resurgence. Master your loadout and skill tree for endgame PvP and PvE.";
-const breadcrumbs = [
-  { name: 'Database', url: '#' },
-  { name: 'Skill Mod Combos', url: '/database/skill-mod-combos/' }
-];
+const dir = path.join(__dirname, '../src/pages/database');
+const files = fs.readdirSync(dir).filter(f => f.endsWith('.astro'));
 
-// Extract unique specializations for the filter
-const specializations = [...new Set(skillMods.map(m => m.specialization))];
-
-// Helper to assign a color class based on specialization
-const getSpecClass = (spec: string) => {
-  const s = spec.toLowerCase();
-  if (s.includes('demolitionist')) return 'tag--demolitionist';
-  if (s.includes('tech operator')) return 'tag--tech';
-  if (s.includes('bulwark')) return 'tag--bulwark';
-  if (s.includes('vanguard')) return 'tag--vanguard';
-  if (s.includes('medic')) return 'tag--medic';
-  return '';
-};
----
-
-<BaseLayout title={title} description={description} breadcrumbs={breadcrumbs}>
-  <div class="container section">
-    <Breadcrumbs items={breadcrumbs} />
-    <SectionTag label="Database" />
-    <h1 class="heading-accent">Skill Mod Combos</h1>
-    <p style="color:var(--ink-muted);margin-bottom:var(--sp-6);">
-      Browse the complete list of Skill Mod Combos, including 2-piece and 3-piece bonuses tailored for each specialization.
-    </p>
-
-    <div class="db-filters">
-      <div class="filter-group" id="filter-spec">
-        <span class="filter-label">Specialization:</span>
-        <div class="filter-bar">
-          <button class="filter-btn is-active" data-filter="all">All</button>
-          {specializations.map(s => <button class="filter-btn" data-filter={s}>{s}</button>)}
-        </div>
-      </div>
-    </div>
-
-    <div class="db-grid" id="combos-grid">
-      {skillMods.map((mod) => (
-        <article class="db-card" data-spec={mod.specialization}>
-          <div class="db-card__header">
-            <h2 class="db-card__title">{mod.name}</h2>
-            <span class={`tag ${getSpecClass(mod.specialization)}`}>{mod.specialization}</span>
-          </div>
-          
-          <div class="db-card__body">
-            <div class="bonus-group">
-              <span class="bonus-label">2-Piece Bonus</span>
-              <p class="bonus-text">{mod.bonus2}</p>
-            </div>
-            
-            <div class="bonus-group">
-              <span class="bonus-label">3-Piece Bonus</span>
-              <p class="bonus-text">{mod.bonus3}</p>
-            </div>
-          </div>
-        </article>
-      ))}
-    </div>
-  </div>
-</BaseLayout>
-
-<style>
+const newStyle = `<style>
   .db-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -240,33 +174,20 @@ const getSpecClass = (spec: string) => {
     letter-spacing: 0.1em;
     color: var(--accent);
   }
-</style>
+</style>`;
 
-<script>
-  let currentSpec = 'all';
-
-  const filterSpecBar = document.getElementById('filter-spec');
-  const grid = document.getElementById('combos-grid');
-
-  const updateFilters = () => {
-    requestAnimationFrame(() => {
-      grid.querySelectorAll('article').forEach(card => {
-        const el = card as HTMLElement;
-        const matchesSpec = currentSpec === 'all' || el.dataset.spec === currentSpec;
-        el.style.display = matchesSpec ? '' : 'none';
-      });
-    });
-  };
-
-  if (filterSpecBar && grid) {
-    filterSpecBar.addEventListener('click', (e) => {
-      const btn = (e.target as HTMLElement).closest('.filter-btn');
-      if (!btn) return;
-      
-      filterSpecBar.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('is-active'));
-      btn.classList.add('is-active');
-      currentSpec = btn.getAttribute('data-filter') || 'all';
-      updateFilters();
-    });
+files.forEach(file => {
+  const filePath = path.join(dir, file);
+  let content = fs.readFileSync(filePath, 'utf-8');
+  
+  // Replace everything from <style> to </style>
+  const styleRegex = /<style>[\s\S]*?<\/style>/;
+  if (styleRegex.test(content)) {
+    content = content.replace(styleRegex, newStyle);
+  } else {
+    content += '\n' + newStyle;
   }
-</script>
+  
+  fs.writeFileSync(filePath, content);
+  console.log('Updated ' + file);
+});

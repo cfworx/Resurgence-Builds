@@ -125,7 +125,7 @@ const filterTags = [
   <hr class="divider" style="max-width:var(--max-width);margin:0 auto;" />
 
   <!-- Latest Posts Feed -->
-  <section class="section">
+  <section class="section" id="latest-posts-section">
     <div class="container">
       <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: var(--sp-6); margin-bottom: var(--sp-6);">
         <div>
@@ -146,7 +146,7 @@ const filterTags = [
 
         <div class="bmc-callout">
           <h3 class="bmc-callout-title">100% Ad-Free Passion Project</h3>
-          <p class="bmc-callout-text">I run this site because I love the game. Testing loadouts and keeping the meta updated takes massive amounts of time, but I absolutely refuse to plaster the site with annoying pop-up ads. If these guides help you drop bodies in the DZ, consider tossing a few bucks my way. Server costs aren't cheap, and the sheer volume of late-night pizza required to maintain my spreadsheet is actively threatening my health.</p>
+          <p class="bmc-callout-text">I run this site because I love the game. Testing loadouts and keeping the meta updated takes massive amounts of time, but I absolutely refuse to plaster the site with annoying pop-up ads. If these guides help you drop bodies in the DZ, consider tossing a few bucks my way. Server costs aren't cheap, and I need your help funding the sheer volume of late-night pizza required to maintain these spreadsheets. My doctor says my blood type is now marinara, so please, enable my terrible dietary choices.</p>
           <div style="display: flex; justify-content: flex-start;">
             <a href="https://buymeacoffee.com/resurgencebuilds" target="_blank" rel="noopener noreferrer" class="bmc-button-link" style="display: inline-flex; align-items: center; justify-content: center; background-color: #ff6d10; color: #000000; font-family: 'Cookie', cursive, sans-serif; text-decoration: none; border-radius: 5px; font-weight: bold; box-shadow: 0px 1px 2px rgba(0,0,0,0.2); transition: transform 0.2s;">
               <span class="bmc-button-emoji" style="margin-right: 8px;">🍕</span> Buy me a pizza
@@ -347,7 +347,7 @@ const filterTags = [
       if (currentPage > 1) {
         currentPage--;
         filterPosts();
-        document.getElementById('posts-grid')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        document.getElementById('latest-posts-section')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
       }
     });
   }
@@ -356,7 +356,7 @@ const filterTags = [
     nextBtn.addEventListener('click', () => {
       currentPage++;
       filterPosts();
-      document.getElementById('posts-grid')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      document.getElementById('latest-posts-section')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
     });
   }
 
