@@ -3,7 +3,7 @@ title: "The Pocket Medic Your Team Will Kill For"
 subtitle: "v9 · Verified Legendary Healer · Mechanic-accurate, tested and verified, math included"
 specialization: Field Medic
 featuredImage: "/images/legendary-healer-field-medic.webp"
-imageAlt: "A Division Resurgence Field Medic deploying a Support Station"
+imageAlt: "Division Resurgence Field Medic legendary healer build with Support Station and Healing Hive for co-op"
 playstyle: Support
 pve: true
 pvp: false

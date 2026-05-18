@@ -10,9 +10,10 @@ export interface Props {
   pvp: boolean;
   tags?: string[];
   featuredImage?: string;
+  imageAlt?: string;
 }
 
-const { title, href, specialization, playstyle, description, patch, pve, pvp, tags = [], featuredImage } = Astro.props;
+const { title, href, specialization, playstyle, description, patch, pve, pvp, tags = [], featuredImage, imageAlt } = Astro.props;
 
 const getSpecClass = (spec: string) => {
   switch (spec) {
@@ -26,13 +27,13 @@ const getSpecClass = (spec: string) => {
 };
 ---
 
-<article class={`card ${featuredImage ? 'card--has-image' : ''}`}>
-  <a href={href} style="text-decoration:none;color:inherit;display:block;">
+<article class={`card ${featuredImage ? 'card--has-image' : ''}`} style="position: relative;">
+
     {featuredImage && (
       <div class="build-card__image">
         <img
           src={featuredImage}
-          alt={`${title} - ${specialization} ${playstyle} build for Division Resurgence`}
+          alt={imageAlt || `${title} - ${specialization} ${playstyle} build for Division Resurgence`}
           loading="lazy"
           decoding="async"
           width="600"
@@ -58,11 +59,13 @@ const getSpecClass = (spec: string) => {
           .map(tag => <span class="tag">{tag}</span>)
         }
       </div>
-      <h3 class="card__title">{title}</h3>
+      <h3 class="card__title">
+        <a href={href} class="card__link">{title}</a>
+      </h3>
       <p class="card__meta">Patch {patch}</p>
       <p class="card__description">{description}</p>
     </div>
-  </a>
+
 </article>
 
 <style>
@@ -88,5 +91,17 @@ const getSpecClass = (spec: string) => {
 
   .card--has-image .build-card__body {
     padding-top: var(--sp-4);
+  }
+
+  .card__link {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .card__link::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 1;
   }
 </style>

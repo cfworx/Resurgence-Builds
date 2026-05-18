@@ -6,8 +6,8 @@ pve: true
 pvp: false
 lastUpdated: 2026-05-17
 patch: "Season 2"
-featuredImage: "/images/pve-shotgun.jpg"
-imageAlt: "A Vanguard agent firing a double barrel shotgun at point blank range"
+featuredImage: "/images/division-resurgence-vanguard-double-barrel-shotgun-pve-build.jpg"
+imageAlt: "Division Resurgence Vanguard double barrel shotgun PVE meta build with Falen Attack gear set and Explosive Round"
 tags: ["Meta", "PvE", "Vanguard", "Shotgun", "Falen-Attack", "Gunny-Johnny"]
 description: "The highest single-target DPS PVE build in the game. 4pc Falen Attack + 2pc Gunny Johnny with Double Barrel Shotgun."
 author: "RapidF5"

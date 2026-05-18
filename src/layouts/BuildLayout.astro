@@ -16,10 +16,11 @@ export interface Props {
   tags: string[];
   author: string;
   featuredImage?: string;
+  imageAlt?: string;
   headings?: import('astro').MarkdownHeading[];
 }
 
-const { title, description, specialization, playstyle, patch, lastUpdated, pve, pvp, tags, author, featuredImage, headings = [] } = Astro.props;
+const { title, description, specialization, playstyle, patch, lastUpdated, pve, pvp, tags, author, featuredImage, imageAlt, headings = [] } = Astro.props;
 
 const tocItems = headings.filter(h => h.depth <= 3);
 
@@ -53,6 +54,7 @@ const otherBuilds = allBuilds
     tags,
   }}
   ogImage={featuredImage}
+  keywords={[specialization, playstyle, ...(pve ? ['PVE'] : []), ...(pvp ? ['PVP'] : []), 'Division Resurgence', 'build guide', ...tags.slice(0, 5)]}
 >
   <div class="container section">
     <Breadcrumbs items={breadcrumbItems} />
@@ -94,7 +96,7 @@ const otherBuilds = allBuilds
           <div class="build-hero">
             <img
               src={featuredImage}
-              alt={`${title} - ${specialization} ${playstyle} build guide for Division Resurgence`}
+              alt={imageAlt || `${title} - ${specialization} ${playstyle} build guide for Division Resurgence`}
               width="1200"
               height="630"
               loading="eager"
@@ -123,7 +125,7 @@ const otherBuilds = allBuilds
             <h2 style="font-size: var(--text-xl); margin-bottom: var(--sp-4);">Explore More</h2>
             <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: var(--sp-2);">
               {otherBuilds.map(build => (
-                <li><a href={`/builds/${build.id}/`}>Check out the <strong>{build.data.title}</strong></a></li>
+                <li><a href={`/builds/${build.id}/`}>{build.data.title} <span style="color: var(--ink-muted); font-weight: 400;">— {build.data.specialization} {build.data.playstyle}</span></a></li>
               ))}
             </ul>
           </nav>

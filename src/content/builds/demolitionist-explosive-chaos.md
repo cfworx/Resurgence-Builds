@@ -2,8 +2,8 @@
 title: "Walking War Crime - Solo Demolitionist Explosive Build"
 subtitle: "Solo-first · Tested and verified · Math included · Built for fun"
 specialization: Demolitionist
-featuredImage: "/images/demolitionist-v2.jpg"
-imageAlt: "A Demolitionist agent firing a grenade launcher amidst a fiery explosion"
+featuredImage: "/images/division-resurgence-demolitionist-explosive-solo-build.jpg"
+imageAlt: "Division Resurgence Demolitionist explosive solo build with M32A1 grenade launcher and Collateral Damage OS"
 playstyle: Solo
 pve: true
 pvp: false

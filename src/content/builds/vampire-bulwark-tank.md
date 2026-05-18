@@ -2,8 +2,8 @@
 title: "The Cockroach - Unkillable LMG Vampire Tank"
 subtitle: "Off-meta · Fun · Data-backed · Math included · LMG vampire-tank that eats damage and gives it back"
 specialization: Bulwark
-featuredImage: "/images/vampire-v2.jpg"
-imageAlt: "A Bulwark agent with vampire fangs wielding an LMG in a dark urban environment"
+featuredImage: "/images/division-resurgence-bulwark-vampire-lmg-tank-build.jpg"
+imageAlt: "Division Resurgence Bulwark vampire LMG tank build using Strawberry Milkshake exotic and Happy Survival OS"
 playstyle: Tank
 pve: true
 pvp: false

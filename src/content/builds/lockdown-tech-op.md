@@ -2,8 +2,8 @@
 title: "AFK Farmer - Drone Does Everything, You Get the Loot"
 subtitle: "Off-meta · Fun · Tested and verified · Math included · Striker Drone CC + skill-crit loop"
 specialization: Tech Operator
-featuredImage: "/images/tech-op-v2.jpg"
-imageAlt: "A Tech Operator agent surrounded by a swarm of Striker Drones in a snowy urban street"
+featuredImage: "/images/division-resurgence-tech-operator-striker-drone-build.jpg"
+imageAlt: "Division Resurgence Tech Operator striker drone disorient build with EMCAT and Stabilized Flight mods"
 playstyle: Support
 pve: true
 pvp: false

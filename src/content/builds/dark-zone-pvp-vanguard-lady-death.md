@@ -6,8 +6,8 @@ pve: false
 pvp: true
 lastUpdated: 2026-05-17
 patch: "Season 2"
-featuredImage: "/images/dz-lady-death.jpg"
-imageAlt: "A Division Resurgence agent wielding a Lady Death SMG in the Dark Zone"
+featuredImage: "/images/division-resurgence-dark-zone-pvp-lady-death-build.jpg"
+imageAlt: "Division Resurgence Dark Zone PVP build with Lady Death exotic SMG and Vanguard Scanning Pulse"
 tags: ["Meta", "PvP", "Dark-Zone", "Vanguard", "Lady-Death", "Fury", "Shield"]
 description: "The current Dark Zone PVP meta for 300k+ buffed DPS. Vanguard Pulse + Lady Death with 3pc Fury and 2pc Shield."
 author: "RapidF5"
