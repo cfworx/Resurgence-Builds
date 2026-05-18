@@ -1,5 +1,5 @@
 ---
-title: "The Conflict PVP Meta — 4pc Fearless Warrior + Warlord"
+title: "Spawn Camp Simulator - Fearless Warrior PVP Build"
 specialization: Vanguard
 playstyle: DPS
 pve: false
@@ -13,17 +13,17 @@ description: "The best PVP build for Conflict in The Division: Resurgence right 
 author: "RapidF5"
 ---
 
-## What is the best PVP build for Conflict in The Division: Resurgence right now?
+## 24-0 and Counting: The Spawn Trap Special
 
-The current Conflict PVP meta is a **bruiser-style 4pc Fearless Warrior + 2pc Striker** build with the **Warlord exotic AR** (Play Rough talent), **MPX secondary** (Steady Hands), **Shield + Grenades** skills, and **Recycle chest + Explosive Fury backpack**. The build was demonstrated by [Willspot](https://www.youtube.com/watch?v=bX-q-1G9biY) going **24-0 spawn trap** and **24-0 in a second match** (37-1 lifetime highlight). It works because Fearless Warrior 4pc gives you flat damage reduction + bonus damage + bonus toughness — the rare gear set that makes you tankier AND hit harder. Warlord's Play Rough talent reduces incoming damage by 25% while you are firing, which means the build is at peak survivability exactly when you are most exposed. This guide documents the build with the math on the page.
+The current Conflict PVP meta is a **bruiser-style 4pc Fearless Warrior + 2pc Striker** build with the **Warlord exotic AR** (Play Rough talent), **MPX secondary** (Steady Hands), **Shield + Grenades** skills, and **Recycle chest + Explosive Fury backpack**. The build was demonstrated by [Willspot](https://www.youtube.com/watch?v=bX-q-1G9biY) going **24-0 spawn trap** and **24-0 in a second match** (37-1 lifetime highlight). It works because Fearless Warrior 4pc gives you flat damage reduction + bonus damage + bonus toughness - the rare gear set that makes you tankier AND hit harder. Warlord's Play Rough talent reduces incoming damage by 25% while you are firing, which means the build is at peak survivability exactly when you are most exposed. This guide documents the build with the math on the page.
 
-A **Conflict PVP** build for The Division: Resurgence built around **simultaneous damage and damage reduction** while firing. Meta, backed by my spreadsheet, math included.
+A **Conflict PVP** build for The Division: Resurgence that gets tankier the more aggressively you play. Hold trigger, get tanky. Stop shooting, die. Simple enough for anyone who peaked in CoD to understand. Meta, math included.
 
 **At a glance:**
 
-- **Specialization:** Alpha (or any DPS spec — Vanguard works too)
+- **Specialization:** Alpha (or any DPS spec - Vanguard works too)
 - **Skills:** **Shield** + **Grenades** (frag grenades for Explosive Fury synergy)
-- **Primary weapon:** **Warlord** (exotic AR — Play Rough fixed talent)
+- **Primary weapon:** **Warlord** (exotic AR - Play Rough fixed talent)
 - **Secondary weapon:** **MPX** with **Steady Hands** talent
 - **Chest:** **Recycle** (refills mag on damage taken)
 - **Backpack:** **Explosive Fury** (grenade throw → +18% RoF for 10s, 2 stacks)
@@ -35,40 +35,40 @@ A **Conflict PVP** build for The Division: Resurgence built around **simultaneou
 
 ---
 
-## The Thesis — Why Bruiser PVP?
+## Why Bruiser Builds Run PVP (And Glass Cannons Don't)
 
-PVP in The Division: Resurgence rewards **balanced bruiser builds** more than glass cannon DPS for one simple reason: the time-to-kill (TTK) on a glass cannon is so short that you cannot survive any mistake. A bruiser, by contrast, has the toughness to take 1-2 hits while landing their own — and that 1-2 extra seconds is often the entire difference between winning and losing a 1v1.
+PVP in The Division: Resurgence rewards **balanced bruiser builds** more than glass cannon DPS for one simple reason: the time-to-kill (TTK) on a glass cannon is so short that you cannot survive any mistake. A bruiser, by contrast, has the toughness to take 1-2 hits while landing their own - and that 1-2 extra seconds is often the entire difference between winning and losing a 1v1.
 
 The **Fearless Warrior 4pc** gives you what no other set in the game gives you simultaneously:
 - **+6% Damage Reduction**
 - **+9% Weapon Damage**
 - **+18% Toughness**
 
-Most PVP-viable sets force a tradeoff between damage and survival. Fearless Warrior gives you both, which is why every top Conflict player runs it.
+Most PVP-viable sets make you choose between damage and survival, like some kind of morality test. Fearless Warrior says "nah" and gives you both. That's why every top Conflict player runs it.
 
-**Striker 2pc** then bolts on **+18% Magazine Size**, which means you fire 18% more bullets before reloading — fewer reload windows = fewer windows of vulnerability.
+**Striker 2pc** then bolts on **+18% Magazine Size**, which means you fire 18% more bullets before reloading - fewer reload windows = fewer windows of vulnerability.
 
-Add the **Warlord exotic AR** with **Play Rough** (25% DR while firing) and you have a build that is **most defensive exactly when you are most exposed.** This is the inverted survival curve of every glass cannon build — it is why this archetype wins in Conflict.
+Add the **Warlord exotic AR** with **Play Rough** (25% DR while firing) and you have a build that is **most defensive exactly when you are most exposed.** Every glass cannon in the lobby is squishy when they're shooting. You're squishy when you're NOT shooting. Spot the difference.
 
-> Build philosophy: in PVP, **survival is damage**. Every second you live is another second of fire. Stack survival multiplicatively with damage multiplicatively and you win every 1v1 you would have lost as a glass cannon.
+> Build philosophy: in PVP, **survival is damage**. Every second you live is another second of fire. Stack survival multiplicatively with damage and you win every 1v1 you would have lost as a glass cannon. Simple math, complicated funeral for them.
 
 ---
 
-## The Source — Willspot's 24-0 Run
+## The Source - Willspot's 24-0 Run
 
-Full credit to [Willspot on YouTube](https://www.youtube.com/watch?v=bX-q-1G9biY) (published April 9, 2026). His video shows the build going **24-0 in a spawn trap**, **24-0 in a second match**, and references a **37-1 lifetime highlight** (screenshot only — lost the footage).
+Full credit to [Willspot on YouTube](https://www.youtube.com/watch?v=bX-q-1G9biY) (published April 9, 2026). His video shows the build going **24-0 in a spawn trap**, **24-0 in a second match**, and references a **37-1 lifetime highlight** (screenshot only - lost the footage).
 
 Direct quotes from the source:
 - The build "went CRAZY" and "absolutely shreds if you play aggressive."
 - "Definitely worth trying" for dominating Conflict.
-- MPX Steady Hands talent is "so strong" — the 15% weapon damage can be felt "instantly."
+- MPX Steady Hands talent is "so strong" - the 15% weapon damage can be felt "instantly."
 - Argues the game is **not pay-to-win**: Lady Death (17,500 DZ credits, F2P-obtainable) reportedly does more damage than Warlord.
 
 This post documents the build with full talent text and math.
 
 ---
 
-## The Weapons — Warlord + MPX
+## The Weapons - Your Two Best Friends
 
 ### Primary: Warlord (Exotic AR)
 
@@ -76,20 +76,20 @@ The Warlord is a **gold/exotic Tier 1 AR**. Its rolled stats from Willspot's loa
 - **Weapon Multi-Shot Chance**
 - **Weapon Crit Damage: +16.11%**
 
-**Fixed exotic talent — Play Rough:**
+**Fixed exotic talent - Play Rough:**
 > *"Firing reduces incoming damage by 25%. When firing, apply 60% of the reduced damage [as a return effect] and grants +10% Skill Damage for 10 seconds."*
 
-This is the talent that defines the build. **You take 25% less damage every time you pull the trigger.** Combined with Fearless Warrior 4pc's 6% DR, you sit at 31% damage reduction while actively firing — and PVP firefights are 90% "actively firing."
+This is the talent that defines the build. **You take 25% less damage every time you pull the trigger.** Combined with Fearless Warrior 4pc's 6% DR, you sit at 31% damage reduction while actively firing - and PVP firefights are 90% "actively firing."
 
 **Random secondary talent options on Warlord:**
-- **Strain 2 / Misdirection Insurance 2:** *"Missing a shot has a 42% chance of returning the bullet to the magazine."* — Effectively infinite ammo against unskilled shooters.
+- **Strain 2 / Misdirection Insurance 2:** *"Missing a shot has a 42% chance of returning the bullet to the magazine."* - Effectively infinite ammo against unskilled shooters.
 
 ### Secondary: MPX (Purple)
 
 Stats:
 - **Weapon Crit Damage: +12.77%**
 
-**Talent — Steady Hands:**
+**Talent - Steady Hands:**
 > *"Hip fire grants +20% Stability and +15% Weapon Damage."*
 
 The MPX is your close-quarters secondary. Swap to it when an enemy gets inside 10m. The 15% WD from hip-fire stacks with everything else in your build, and the stability bonus means hip-fire accuracy is competitive with ADS.
@@ -106,38 +106,38 @@ The MPX is your close-quarters secondary. Swap to it when an enemy gets inside 1
 | **Gloves** | Gold (brand-agnostic) | Damage to Elites + Skill Cooldown Recovery |
 | **Holster** | Fearless Warrior | Weapon Crit Chance + Skill Cooldown Recovery + Toughness Mod |
 | **Kneepads** | Fearless Warrior | Weapon Multi-Shot +2.25% + Toughness Mod (12 Tough) |
-| **OS Protocol** | (Willspot did not state — see options below) | Firepower-priority OS recommended |
+| **OS Protocol** | (Willspot did not state - see options below) | Firepower-priority OS recommended |
 | **Primary** | **Warlord** (exotic AR) | Play Rough + Strain 2 (or Misdirection Insurance 2) |
 | **Secondary** | **MPX** (purple) | Steady Hands |
 | **Skills** | **Shield + Grenades** | Frag grenades for Explosive Fury synergy |
 | **Specialization** | Alpha (DPS) | Vanguard also viable |
 
-**Set count:** 4pc Fearless Warrior (Mask, Backpack, Holster, Kneepads) + 2pc Striker (Chest + 1 other — Willspot used Chest + Gloves as off-set Gold filler since gloves brand was unspecified, but the optimal is 4 Fearless + 2 Striker exactly).
+**Set count:** 4pc Fearless Warrior (Mask, Backpack, Holster, Kneepads) + 2pc Striker (Chest + 1 other - Willspot used Chest + Gloves as off-set Gold filler since gloves brand was unspecified, but the optimal is 4 Fearless + 2 Striker exactly).
 
 ### OS Protocol Recommendations (filling Willspot's gap)
 
 Willspot did not state an OS on camera. Recommended choices from my database:
-- **Pressure Cooker** (Firepower, HE): Crit Chance when taking damage — synergizes with Fearless Warrior's tank profile
+- **Pressure Cooker** (Firepower, HE): Crit Chance when taking damage - synergizes with Fearless Warrior's tank profile
 - **Augmented Lethality** (Firepower, HE): Firepower + Weapon Damage + Incoming Healing per enemy within 20m
 - **Close Quarter Menace** (Firepower, HE): Skill Intensity + Weapon Damage when enemies within 20m
 
-For PVP specifically, **Pressure Cooker** is the best fit — you will be taking damage constantly, and the proc is uptime-friendly.
+For PVP specifically, **Pressure Cooker** is the best fit - you will be taking damage constantly, and the proc is uptime-friendly.
 
 ---
 
-## Per-Piece Stat Sheet — Three Stats Per Piece
+## Per-Piece Stat Sheet - Three Stats Per Piece
 
 ### Mask (Fearless Warrior)
 - **Core:** Firepower
 - **Bonus 1:** Weapon Crit Damage (+8.8%)
 - **Bonus 2:** Toughness
 
-### Chest (Striker — Recycle talent)
+### Chest (Striker - Recycle talent)
 - **Core:** Firepower
 - **Bonus 1:** Weapon Damage (+3.87%)
 - **Bonus 2:** Skill Cooldown Recovery (or Toughness)
 
-### Backpack (Fearless Warrior — Explosive Fury talent)
+### Backpack (Fearless Warrior - Explosive Fury talent)
 - **Core:** Toughness
 - **Bonus 1:** Toughness
 - **Bonus 2:** Armor / Health
@@ -157,11 +157,11 @@ For PVP specifically, **Pressure Cooker** is the best fit — you will be taking
 - **Bonus 1:** Weapon Multi-Shot (+2.25%)
 - **Bonus 2:** Toughness
 
-**Core split:** 4 Firepower + 2 Toughness. This is the 4:2 ratio recommended for Conflict — enough survival to bruise, enough damage to delete a healthy target before they can react.
+**Core split:** 4 Firepower + 2 Toughness. This is the 4:2 ratio recommended for Conflict - enough survival to bruise, enough damage to delete a healthy target before they can react.
 
 ---
 
-## The Math — One Warlord Burst on a PVP Target
+## The Math - One Warlord Burst on a PVP Target
 
 Assume Willspot's stats:
 - **DPS: 89,000**
@@ -179,7 +179,7 @@ Assume Willspot's stats:
 At 89,000 sustained DPS:
 - Time to delete a 50k HP / 2.5k armor target (52.5k effective HP): **~590ms**
 
-That is **roughly half a second** of trigger time to delete a healthy opponent. Compare to typical Conflict TTK of 1.2-2 seconds — this build is firing **2-3× faster** than the lobby average.
+That is **roughly half a second** of trigger time to delete a healthy opponent. Compare to typical Conflict TTK of 1.2-2 seconds - this build is firing **2-3x faster** than the lobby average.
 
 ### Survival math (Play Rough + Fearless Warrior 4pc + Toughness cores):
 
@@ -197,7 +197,7 @@ Against a target running 89k DPS back at you:
 
 ---
 
-## Play Rough — The Talent That Makes the Build
+## Play Rough - The Talent That Makes the Build
 
 This is worth its own section because **the entire build's viability hinges on this single exotic talent.**
 
@@ -207,7 +207,7 @@ Three effects, all active while you fire:
 
 ### 1. The 25% damage reduction
 - Stacks multiplicatively with Fearless Warrior 4pc 6% DR
-- Effective DR while firing: 1 − (0.75 × 0.94) = **29.5% DR**
+- Effective DR while firing: 1 − (0.75 x 0.94) = **29.5% DR**
 - This is on top of your armor mitigation
 
 ### 2. The 60% damage return
@@ -224,7 +224,7 @@ Three effects, all active while you fire:
 
 ---
 
-## Recycle + Explosive Fury — The Talent Pair
+## Recycle + Explosive Fury - The Talent Pair
 
 ### Chest: Recycle
 > *"Taking damage within 20m has an 80% chance of refilling 4.50% of your magazine."*
@@ -234,7 +234,7 @@ The math: in a 1v1, you take constant low-grade damage (chip damage from the ene
 ### Backpack: Explosive Fury
 > *"Throwing a grenade grants +18% Rate of Fire for 10 seconds. Stacks up to 2 (36% RoF max). Talent cooldown 3 seconds."*
 
-Throw a grenade pre-engage → +18% Rate of Fire for 10 seconds. Throw a second grenade → +36% RoF. With Warlord and MPX, +36% RoF means you are firing **roughly half-again as many bullets per second** — that 590ms TTK from the math section drops closer to **440ms**.
+Throw a grenade pre-engage → +18% Rate of Fire for 10 seconds. Throw a second grenade → +36% RoF. With Warlord and MPX, +36% RoF means you are firing **roughly half-again as many bullets per second** - that 590ms TTK from the math section drops closer to **440ms**.
 
 **Pre-firing your grenades is the single most important habit to develop with this build.**
 
@@ -249,12 +249,12 @@ Willspot's exact settings, in case you want to copy them:
 **Global Sensitivity:** Custom
 
 **Look Sensitivity:**
-- No scope, no aim — X: 266 / Y: 149
-- Third-person aim — Horizontal: 229 / Vertical: 167
+- No scope, no aim - X: 266 / Y: 149
+- Third-person aim - Horizontal: 229 / Vertical: 167
 
 **Firing Sensitivity:**
-- No scope, no aim — X: 150 / Y: 61
-- Third-person aim — Horizontal: 171 / Vertical: 72
+- No scope, no aim - X: 150 / Y: 61
+- Third-person aim - Horizontal: 171 / Vertical: 72
 
 **Sensitivity Acceleration:** Off (both boxes unchecked)
 **Inverted Axis:** Off
@@ -272,36 +272,36 @@ Willspot's exact settings, in case you want to copy them:
 
 ---
 
-## Gear Set Ladder — Pre-T2 to Endgame
+## Gear Set Ladder - Pre-T2 to Endgame
 
-### Stage 1 — Leveling
+### Stage 1 - Leveling
 - **Gear:** Whatever T0 you have, prioritize Firepower + Toughness cores
 - **Weapon:** Any AR with a damage talent
 - **Goal:** Reach level 40 and unlock Conflict
 
-### Stage 2 — Mid-T1
+### Stage 2 - Mid-T1
 - **Gear:** 2pc **Fearless Warrior** + 2pc filler with Firepower cores
 - **Weapon:** Any AR or SMG with crit talents
 - **Goal:** Farm Warlord exotic AR
 
-### Stage 3 — Late T1
+### Stage 3 - Late T1
 - **Gear:** **4pc Fearless Warrior + 2pc Striker** (T1)
 - **Weapon:** **Warlord** (T1) + **MPX** (purple)
 - **OS:** First Firepower High-End you craft (Pressure Cooker recommended)
 
-### Stage 4 — Endgame T2
+### Stage 4 - Endgame T2
 - Same set composition, T2 versions of the gear pieces (T2 Fearless Warrior has higher attribute caps)
 - T2 weapon variants with better roll potential
 - Gold mods across the board
 
 ---
 
-## Combat Rotation — How to Spawn Trap
+## Combat Rotation - How to Spawn Trap
 
 This is how Willspot ran 24-0:
 
 ### Pre-engage
-1. **Identify spawn paths.** Conflict spawns are predictable — there are typically 2-3 lanes per map.
+1. **Identify spawn paths.** Conflict spawns are predictable - there are typically 2-3 lanes per map.
 2. **Pre-throw a grenade** at the spawn lane choke point. This triggers **Explosive Fury 1st stack** (+18% RoF for 10s).
 3. **Position 15-25m from the spawn**, angled so your Shield covers your back.
 
@@ -322,7 +322,7 @@ This is how Willspot ran 24-0:
 
 Willspot explicitly notes: **Lady Death does more damage than Warlord.**
 
-Lady Death is an exotic SMG obtainable for **17,500 Dark Zone credits** — F2P-obtainable, no real-money requirement.
+Lady Death is an exotic SMG obtainable for **17,500 Dark Zone credits** - F2P-obtainable, no real-money requirement.
 
 **If you do not have Warlord yet:**
 - Run **Lady Death** as primary instead
@@ -340,12 +340,12 @@ This is the F2P-friendly path. We have a dedicated build guide for the Dark Zone
 
 | Slot | Set | Talent | Core | Bonus 1 | Bonus 2 |
 |---|---|---|---|---|---|
-| Mask | Fearless Warrior | — | Firepower | Weapon Crit Damage | Toughness |
+| Mask | Fearless Warrior | - | Firepower | Weapon Crit Damage | Toughness |
 | Chest | Striker | **Recycle** | Firepower | Weapon Damage | Skill Cooldown |
 | Backpack | Fearless Warrior | **Explosive Fury** | Toughness | Toughness | Armor / Health |
-| Holster | Fearless Warrior | — | Firepower | Weapon Crit Chance | Skill Cooldown |
-| Gloves | Gold filler | — | Firepower | Damage to Elites | Skill Cooldown |
-| Kneepads | Fearless Warrior | — | Toughness | Weapon Multi-Shot | Toughness |
+| Holster | Fearless Warrior | - | Firepower | Weapon Crit Chance | Skill Cooldown |
+| Gloves | Gold filler | - | Firepower | Damage to Elites | Skill Cooldown |
+| Kneepads | Fearless Warrior | - | Toughness | Weapon Multi-Shot | Toughness |
 
 **Weapon talent shopping list:**
 - **Warlord (exotic):** Play Rough (fixed) + Strain 2 OR Misdirection Insurance 2 (random)
@@ -360,7 +360,7 @@ This is the F2P-friendly path. We have a dedicated build guide for the Dark Zone
 
 ---
 
-## TL;DR — Five Things to Remember
+## TL;DR - Five Things to Remember
 
 1. **4pc Fearless Warrior + 2pc Striker, Warlord exotic AR, MPX secondary, Shield + Grenades.** That is the build.
 2. **Play Rough is the entire build.** 25% DR while firing turns you from glass cannon into bruiser. Always be firing.
@@ -371,19 +371,19 @@ This is the F2P-friendly path. We have a dedicated build guide for the Dark Zone
 ---
 
 <div class="bmc-callout" style="margin: 2rem 0; padding: 1.5rem; background: var(--surface); border: 1px solid var(--accent); border-radius: 8px; text-align: center;">
-  <h3 style="margin-top: 0; margin-bottom: 0.5rem; color: var(--accent);">Making kids rage-quit Conflict?</h3>
-  <p style="margin: 0 auto 1rem; font-size: 0.875rem; color: var(--ink-muted);">Spawn trapping the enemy team with a Warlord is toxic, and I absolutely support it. Doing the math to ensure you literally cannot die takes massive amounts of time. If you just ruined someone's weekend with this build, funnel some of that toxic energy into buying me a pizza.</p>
-  <div style="display: flex; justify-content: center;">
-    <a href="https://buymeacoffee.com/resurgencebuilds" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; justify-content: center; background-color: #ff6d10; color: #000000; font-family: 'Cookie', cursive, sans-serif; font-size: 24px; text-decoration: none; padding: 5px 15px; border-radius: 5px; font-weight: bold; box-shadow: 0px 1px 2px rgba(0,0,0,0.2); transition: transform 0.2s;">
-      <span style="margin-right: 8px; font-size: 24px;">🍕</span> Buy me a pizza
-    </a>
-  </div>
+ <h3 style="margin-top: 0; margin-bottom: 0.5rem; color: var(--accent);">Making kids rage-quit Conflict?</h3>
+ <p style="margin: 0 auto 1rem; font-size: 0.875rem; color: var(--ink-muted);">Spawn trapping the enemy team with a Warlord is toxic, and I absolutely support it. Doing the math to ensure you literally cannot die takes massive amounts of time. If you just ruined someone's weekend with this build, funnel some of that toxic energy into buying me a pizza.</p>
+ <div style="display: flex; justify-content: center;">
+ <a href="https://buymeacoffee.com/resurgencebuilds" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; justify-content: center; background-color: #ff6d10; color: #000000; font-family: 'Cookie', cursive, sans-serif; font-size: 24px; text-decoration: none; padding: 5px 15px; border-radius: 5px; font-weight: bold; box-shadow: 0px 1px 2px rgba(0,0,0,0.2); transition: transform 0.2s;">
+ <span style="margin-right: 8px; font-size: 24px;">🍕</span> Buy me a pizza
+ </a>
+ </div>
 </div>
 
 ## Source Credit
 
 Build originated by **Willspot** on YouTube. Watch the full breakdown:
-- [4pc Fearless Warrior + Warlord — 24-0 Spawn Trap (Build + Settings)](https://www.youtube.com/watch?v=bX-q-1G9biY)
+- [4pc Fearless Warrior + Warlord - 24-0 Spawn Trap (Build + Settings)](https://www.youtube.com/watch?v=bX-q-1G9biY)
 
 Secondary confirmation from **EmmanuelxRD**:
 - [BEST BUILD FOR PVP? 4pc Strike Fury + 2pc Fearless Warrior](https://www.youtube.com/watch?v=zJBDwHHiNOE)

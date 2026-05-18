@@ -2,6 +2,7 @@
 import BaseLayout from './BaseLayout.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import SectionTag from '../components/SectionTag.astro';
+import { getCollection } from 'astro:content';
 
 export interface Props {
   title: string;
@@ -32,6 +33,13 @@ const breadcrumbItems = [
   { name: 'Builds', url: '/builds/' },
   { name: title, url: '#' },
 ];
+
+// Dynamic Explore More: get other builds, exclude current page
+const allBuilds = await getCollection('builds');
+const otherBuilds = allBuilds
+  .filter(b => b.data.title !== title)
+  .sort((a, b) => b.data.lastUpdated.getTime() - a.data.lastUpdated.getTime())
+  .slice(0, 3);
 ---
 
 <BaseLayout
@@ -50,15 +58,35 @@ const breadcrumbItems = [
     <Breadcrumbs items={breadcrumbItems} />
 
     <div class="layout-sidebar">
-      <article class="prose">
+      <!-- Build info sidebar: appears first in DOM for mobile, reordered via CSS -->
+      <aside class="build-sidebar">
+        <div class="card build-info">
+          <SectionTag label="Build Info" />
+          <dl class="info-list">
+            <div class="info-row"><dt>Specialization</dt><dd>{specialization}</dd></div>
+            <div class="info-row"><dt>Playstyle</dt><dd>{playstyle}</dd></div>
+            <div class="info-row"><dt>PvE</dt><dd>{pve ? 'Yes' : 'No'}</dd></div>
+            <div class="info-row"><dt>PvP</dt><dd>{pvp ? 'Yes' : 'No'}</dd></div>
+            <div class="info-row"><dt>Patch</dt><dd class="stat stat--accent">{patch}</dd></div>
+            <div class="info-row"><dt>Updated</dt><dd>{formattedDate}</dd></div>
+          </dl>
+          {tags.length > 0 && (
+            <div style="display:flex;flex-wrap:wrap;gap:var(--sp-1);margin-top:var(--sp-3);">
+              {tags.map(tag => <span class="tag">{tag}</span>)}
+            </div>
+          )}
+        </div>
+      </aside>
+
+      <article class="prose build-article">
         <SectionTag label="Build Guide" />
         <h1 class="heading-accent">{title}</h1>
 
         <div class="article-meta">
           <span>By {author}</span>
-          <span>·</span>
+          <span>&middot;</span>
           <span>Patch {patch}</span>
-          <span>·</span>
+          <span>&middot;</span>
           <time datetime={lastUpdated.toISOString()}>{formattedDate}</time>
         </div>
 
@@ -90,34 +118,17 @@ const breadcrumbItems = [
 
         <hr style="margin: var(--sp-6) 0; border: none; border-top: 1px solid var(--border);" />
         
-        <nav class="explore-more" aria-label="Related Guides">
-          <h2 style="font-size: var(--text-xl); margin-bottom: var(--sp-4);">Explore More</h2>
-          <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: var(--sp-2);">
-            <li><a href="/builds/demolitionist-explosive-chaos/">Carpet bomb Manhattan with the <strong>Demolitionist Explosive Chaos Build</strong></a></li>
-            <li><a href="/builds/vampire-bulwark-tank/">Become an unkillable brick wall with the <strong>Vampire Bulwark Tank Build</strong></a></li>
-            <li><a href="/builds/skill-meta-jackpot-chemical/">Melt everything in the room with the <strong>Jackpot Chemical Skill Build</strong></a></li>
-          </ul>
-        </nav>
+        {otherBuilds.length > 0 && (
+          <nav class="explore-more" aria-label="Related Guides">
+            <h2 style="font-size: var(--text-xl); margin-bottom: var(--sp-4);">Explore More</h2>
+            <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: var(--sp-2);">
+              {otherBuilds.map(build => (
+                <li><a href={`/builds/${build.id}/`}>Check out the <strong>{build.data.title}</strong></a></li>
+              ))}
+            </ul>
+          </nav>
+        )}
       </article>
-
-      <aside>
-        <div class="card build-info" style="position:sticky;top:calc(var(--nav-height) + var(--sp-4));">
-          <SectionTag label="Build Info" />
-          <dl class="info-list">
-            <div class="info-row"><dt>Specialization</dt><dd>{specialization}</dd></div>
-            <div class="info-row"><dt>Playstyle</dt><dd>{playstyle}</dd></div>
-            <div class="info-row"><dt>PvE</dt><dd>{pve ? 'Yes' : 'No'}</dd></div>
-            <div class="info-row"><dt>PvP</dt><dd>{pvp ? 'Yes' : 'No'}</dd></div>
-            <div class="info-row"><dt>Patch</dt><dd class="stat stat--accent">{patch}</dd></div>
-            <div class="info-row"><dt>Updated</dt><dd>{formattedDate}</dd></div>
-          </dl>
-          {tags.length > 0 && (
-            <div style="display:flex;flex-wrap:wrap;gap:var(--sp-1);margin-top:var(--sp-3);">
-              {tags.map(tag => <span class="tag">{tag}</span>)}
-            </div>
-          )}
-        </div>
-      </aside>
     </div>
   </div>
 </BaseLayout>
@@ -161,5 +172,42 @@ const breadcrumbItems = [
     display: block;
     aspect-ratio: 1200 / 630;
     object-fit: cover;
+  }
+
+  /* Mobile: sidebar on top, article below */
+  .layout-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: var(--sp-6);
+  }
+
+  .build-sidebar {
+    order: -1;
+  }
+
+  .build-article {
+    order: 1;
+  }
+
+  /* Desktop: restore sidebar layout */
+  @media (min-width: 1024px) {
+    .layout-sidebar {
+      display: grid;
+      grid-template-columns: 1fr var(--sidebar-width);
+      gap: var(--sp-8);
+    }
+
+    .build-sidebar {
+      order: 1;
+    }
+
+    .build-article {
+      order: 0;
+    }
+
+    .build-info {
+      position: sticky;
+      top: calc(var(--nav-height) + var(--sp-4));
+    }
   }
 </style>

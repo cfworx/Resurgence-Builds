@@ -66,6 +66,7 @@ html {
   font-size: 16px;
   -webkit-text-size-adjust: 100%;
   scroll-behavior: smooth;
+  touch-action: manipulation;
 }
 
 body {
@@ -85,7 +86,11 @@ body {
 main { flex: 1; }
 
 img, picture, video, canvas, svg { display: block; max-width: 100%; }
-input, button, textarea, select { font: inherit; }
+input, button, textarea, select {
+  font: inherit;
+  font-size: 16px; /* Prevent mobile auto-zoom on focus */
+  touch-action: manipulation;
+}
 a { color: var(--accent); text-decoration: none; transition: color var(--transition-fast); }
 a:hover { color: var(--ink); }
 
@@ -862,15 +867,18 @@ tbody tr:hover {
 }
 
 /* --- Two-column Layout --- */
+/* Layout handled by scoped styles in BuildLayout.astro */
 .layout-sidebar {
-  display: grid;
-  gap: var(--sp-8);
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-6);
 }
 
 @media (min-width: 1024px) {
   .layout-sidebar {
+    display: grid;
     grid-template-columns: 1fr var(--sidebar-width);
+    gap: var(--sp-8);
   }
 }
 
@@ -1022,6 +1030,68 @@ tbody tr:hover {
 }
 
 .toc a:hover { color: var(--accent); }
+
+/* --- Mobile Responsiveness Tightening --- */
+@media (max-width: 767px) {
+  .card {
+    padding: var(--sp-4);
+  }
+
+  .card__title {
+    font-size: var(--text-base);
+  }
+
+  h1 { font-size: var(--text-2xl); }
+  h2 { font-size: var(--text-xl); }
+
+  .section {
+    padding: var(--sp-8) 0;
+  }
+
+  .prose h2 {
+    margin-top: var(--sp-8);
+  }
+
+  .prose h3 {
+    margin-top: var(--sp-6);
+  }
+
+  .filter-bar {
+    gap: var(--sp-1);
+  }
+
+  .filter-btn {
+    padding: var(--sp-2);
+    min-height: 40px;
+    font-size: 0.6875rem;
+  }
+
+  table {
+    font-size: var(--text-xs);
+  }
+
+  th, td {
+    padding: var(--sp-2) var(--sp-3);
+  }
+
+  .article-meta {
+    gap: var(--sp-2);
+    font-size: var(--text-xs);
+  }
+
+  .toc {
+    padding: var(--sp-3) var(--sp-4);
+  }
+
+  .hero-box {
+    padding: var(--sp-8) var(--sp-6);
+  }
+
+  .build-card__image {
+    margin: calc(-1 * var(--sp-4));
+    margin-bottom: 0;
+  }
+}
 
 /* --- Visually Hidden (screen reader only) --- */
 .sr-only {

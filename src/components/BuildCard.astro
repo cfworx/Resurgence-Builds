@@ -41,20 +41,26 @@ const getSpecClass = (spec: string) => {
       </div>
     )}
     <div class="build-card__body">
-      <div style="display:flex;gap:var(--sp-2);margin-bottom:var(--sp-2);flex-wrap:wrap;">
+      <div style="display:flex;gap:var(--sp-1);margin-bottom:var(--sp-2);flex-wrap:wrap;">
         <span class={`tag ${getSpecClass(specialization)}`}>{specialization}</span>
         <span class="tag">{playstyle}</span>
         {pve && <span class="tag">PvE</span>}
         {pvp && <span class="tag">PvP</span>}
+        {tags
+          .filter(tag => {
+            const t = tag.toLowerCase();
+            return t !== specialization.toLowerCase()
+              && t !== playstyle.toLowerCase()
+              && t !== 'pve'
+              && t !== 'pvp';
+          })
+          .slice(0, 3)
+          .map(tag => <span class="tag">{tag}</span>)
+        }
       </div>
       <h3 class="card__title">{title}</h3>
       <p class="card__meta">Patch {patch}</p>
       <p class="card__description">{description}</p>
-      {tags.length > 0 && (
-        <div style="display:flex;gap:var(--sp-1);flex-wrap:wrap;margin-top:var(--sp-3);">
-          {tags.slice(0, 3).map(tag => <span class="tag">{tag}</span>)}
-        </div>
-      )}
     </div>
   </a>
 </article>
