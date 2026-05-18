@@ -140,12 +140,12 @@ const filterTags = [
           </div>
         </div>
 
-        <div class="bmc-callout" style="max-width: 480px; padding: var(--sp-6); background: var(--surface); border: 1px solid var(--accent); border-radius: var(--border-radius);">
-          <h3 style="margin-bottom: var(--sp-2); color: var(--accent); font-size: var(--text-lg);">100% Ad-Free Passion Project</h3>
-          <p style="font-size: var(--text-sm); color: var(--ink-muted); margin-bottom: var(--sp-4); line-height: 1.6;">I run this site because I love the game. Testing loadouts and keeping the meta updated takes massive amounts of time, but I absolutely refuse to plaster the site with annoying pop-up ads. If these guides help you drop bodies in the DZ, consider tossing a few bucks my way to cover the server costs.</p>
+        <div class="bmc-callout">
+          <h3 class="bmc-callout-title">100% Ad-Free Passion Project</h3>
+          <p class="bmc-callout-text">I run this site because I love the game. Testing loadouts and keeping the meta updated takes massive amounts of time, but I absolutely refuse to plaster the site with annoying pop-up ads. If these guides help you drop bodies in the DZ, consider tossing a few bucks my way. Server costs aren't cheap, and the sheer volume of late-night pizza required to do this spreadsheet math is actively threatening my health.</p>
           <div style="display: flex; justify-content: flex-start;">
-            <a href="https://buymeacoffee.com/resurgencebuilds" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; justify-content: center; background-color: #ff6d10; color: #000000; font-family: 'Cookie', cursive, sans-serif; font-size: 24px; text-decoration: none; padding: 5px 15px; border-radius: 5px; font-weight: bold; box-shadow: 0px 1px 2px rgba(0,0,0,0.2); transition: transform 0.2s;">
-              <span style="margin-right: 8px; font-size: 24px;">🦅</span> Buy me some Phoenix Credits?
+            <a href="https://buymeacoffee.com/resurgencebuilds" target="_blank" rel="noopener noreferrer" class="bmc-button-link" style="display: inline-flex; align-items: center; justify-content: center; background-color: #ff6d10; color: #000000; font-family: 'Cookie', cursive, sans-serif; text-decoration: none; border-radius: 5px; font-weight: bold; box-shadow: 0px 1px 2px rgba(0,0,0,0.2); transition: transform 0.2s;">
+              <span class="bmc-button-emoji" style="margin-right: 8px;">🍕</span> Buy me a pizza
             </a>
           </div>
         </div>
@@ -185,6 +185,55 @@ const filterTags = [
   <hr class="divider" style="max-width:var(--max-width);margin:0 auto;" />
 
 </BaseLayout>
+
+<style>
+  .bmc-callout {
+    max-width: 480px;
+    padding: var(--sp-4);
+    background: var(--surface);
+    border: 1px solid var(--accent);
+    border-radius: var(--border-radius);
+  }
+  .bmc-callout-title {
+    margin-bottom: var(--sp-2);
+    color: var(--accent);
+    font-size: var(--text-base);
+  }
+  .bmc-callout-text {
+    font-size: var(--text-xs);
+    color: var(--ink-muted);
+    margin-bottom: var(--sp-3);
+    line-height: 1.5;
+  }
+  .bmc-button-link {
+    font-size: 20px !important;
+    padding: 4px 10px !important;
+  }
+  .bmc-button-emoji {
+    font-size: 20px !important;
+  }
+  
+  @media (min-width: 768px) {
+    .bmc-callout {
+      padding: var(--sp-6);
+    }
+    .bmc-callout-title {
+      font-size: var(--text-lg);
+    }
+    .bmc-callout-text {
+      font-size: var(--text-sm);
+      margin-bottom: var(--sp-4);
+      line-height: 1.6;
+    }
+    .bmc-button-link {
+      font-size: 24px !important;
+      padding: 5px 15px !important;
+    }
+    .bmc-button-emoji {
+      font-size: 24px !important;
+    }
+  }
+</style>
 
 <script>
   const filterBar = document.getElementById('tag-filters');
