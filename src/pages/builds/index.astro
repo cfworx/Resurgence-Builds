@@ -77,50 +77,152 @@ const itemListLd = {
         </div>
       ))}
     </div>
+
+    <!-- Pagination Controls -->
+    <div id="pagination-controls" style="display:flex; justify-content:center; align-items:center; gap:var(--sp-4); margin-top:var(--sp-8); display:none;">
+      <button class="btn btn--outline" id="prev-page" disabled>Previous</button>
+      <span id="page-info" style="color:var(--ink); font-family:var(--font-mono);">Page 1 of 1</span>
+      <button class="btn btn--outline" id="next-page" disabled>Next</button>
+    </div>
+
+    <!-- Empty state -->
+    <div id="no-results" style="display:none;text-align:center;padding:var(--sp-12) 0;">
+      <p style="color:var(--ink-muted);font-size:var(--text-lg);">No builds match that filter.</p>
+      <button class="btn btn--outline" id="clear-filter" style="margin-top:var(--sp-4);">Show All Builds</button>
+    </div>
   </div>
 </BaseLayout>
 
 <script>
   const filterBar = document.getElementById('build-filters');
   const grid = document.getElementById('builds-grid');
-  if (filterBar && grid) {
+  const noResults = document.getElementById('no-results');
+  const clearBtn = document.getElementById('clear-filter');
+  
+  const paginationControls = document.getElementById('pagination-controls');
+  const prevBtn = document.getElementById('prev-page');
+  const nextBtn = document.getElementById('next-page');
+  const pageInfo = document.getElementById('page-info');
+
+  const ITEMS_PER_PAGE = 9;
+  let currentPage = 1;
+  let currentFilter = 'all';
+
+  function filterBuilds() {
+    if (!grid) return;
+
+    const cards = Array.from(grid.querySelectorAll<HTMLElement>('[data-spec]'));
+    let matchedCards: HTMLElement[] = [];
+
+    cards.forEach((el) => {
+      let show = false;
+      if (currentFilter === 'all') {
+        show = true;
+      } else if (currentFilter === 'pve') {
+        show = el.dataset.pve === 'true';
+      } else if (currentFilter === 'pvp') {
+        show = el.dataset.pvp === 'true';
+      } else if (currentFilter === 'meta') {
+        try {
+          const tags = JSON.parse(el.dataset.tags || '[]');
+          show = tags.some((t: string) => t.toLowerCase() === 'meta');
+        } catch {
+          show = false;
+        }
+      } else {
+        show = el.dataset.spec === currentFilter;
+      }
+
+      if (show) {
+        matchedCards.push(el);
+      } else {
+        el.style.display = 'none';
+      }
+    });
+
+    const totalPages = Math.ceil(matchedCards.length / ITEMS_PER_PAGE);
+    if (currentPage > totalPages) currentPage = totalPages || 1;
+
+    const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
+    const endIndex = startIndex + ITEMS_PER_PAGE;
+
+    matchedCards.forEach((card, index) => {
+      if (index >= startIndex && index < endIndex) {
+        card.style.display = '';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+
+    if (noResults) {
+      noResults.style.display = matchedCards.length === 0 ? '' : 'none';
+    }
+
+    if (paginationControls && prevBtn && nextBtn && pageInfo) {
+      if (totalPages > 1) {
+        paginationControls.style.display = 'flex';
+        pageInfo.textContent = `Page ${currentPage} of ${totalPages}`;
+        
+        if (currentPage === 1) {
+          prevBtn.setAttribute('disabled', 'true');
+        } else {
+          prevBtn.removeAttribute('disabled');
+        }
+
+        if (currentPage === totalPages) {
+          nextBtn.setAttribute('disabled', 'true');
+        } else {
+          nextBtn.removeAttribute('disabled');
+        }
+      } else {
+        paginationControls.style.display = 'none';
+      }
+    }
+  }
+
+  function setActiveButton(activeBtn: Element) {
+    filterBar?.querySelectorAll('.filter-btn').forEach((b) => b.classList.remove('is-active'));
+    activeBtn.classList.add('is-active');
+  }
+
+  if (filterBar) {
     filterBar.addEventListener('click', (e) => {
       const btn = (e.target as HTMLElement).closest('.filter-btn');
       if (!btn) return;
-      
-      // Update UI state immediately
-      filterBar.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('is-active'));
-      btn.classList.add('is-active');
-      const filter = btn.getAttribute('data-filter');
-      
-      // Defer DOM updates to next frame to optimize INP
-      requestAnimationFrame(() => {
-        grid.querySelectorAll('[data-spec]').forEach(card => {
-          const el = card as HTMLElement;
-          let show = false;
-          
-          if (filter === 'all') {
-            show = true;
-          } else if (filter === 'pve') {
-            show = el.dataset.pve === 'true';
-          } else if (filter === 'pvp') {
-            show = el.dataset.pvp === 'true';
-          } else if (filter === 'meta') {
-            try {
-              const tags = JSON.parse(el.dataset.tags || '[]');
-              // Case insensitive match for 'meta' tag
-              show = tags.some((t: string) => t.toLowerCase() === 'meta');
-            } catch {
-              show = false;
-            }
-          } else {
-            // Must be a specialization filter
-            show = el.dataset.spec === filter;
-          }
-          
-          el.style.display = show ? '' : 'none';
-        });
-      });
+      setActiveButton(btn);
+      currentFilter = btn.getAttribute('data-filter') || 'all';
+      currentPage = 1;
+      filterBuilds();
     });
   }
+
+  if (clearBtn) {
+    clearBtn.addEventListener('click', () => {
+      const allBtn = filterBar?.querySelector('[data-filter="all"]');
+      if (allBtn) setActiveButton(allBtn);
+      currentFilter = 'all';
+      currentPage = 1;
+      filterBuilds();
+    });
+  }
+
+  if (prevBtn) {
+    prevBtn.addEventListener('click', () => {
+      if (currentPage > 1) {
+        currentPage--;
+        filterBuilds();
+        grid?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  }
+
+  if (nextBtn) {
+    nextBtn.addEventListener('click', () => {
+      currentPage++;
+      filterBuilds();
+      grid?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  }
+
+  filterBuilds();
 </script>

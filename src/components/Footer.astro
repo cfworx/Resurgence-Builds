@@ -25,14 +25,6 @@ const isHome = Astro.url.pathname === '/' || Astro.url.pathname === '/index.html
     </nav>
   </div>
 
-  {isHome && (
-    <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; margin-top: var(--sp-6);">
-      <p style="color: var(--accent); font-weight: 700; margin-bottom: var(--sp-2); font-size: var(--text-sm);">Still breathing? Good. You owe me a beer.</p>
-      <a href="https://buymeacoffee.com/resurgencebuilds" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; justify-content: center; background-color: #ff6d10; color: #000000; font-family: 'Comic Sans MS', 'Comic Sans', cursive; font-size: 24px; text-decoration: none; padding: 5px 15px; border-radius: 5px; font-weight: bold; box-shadow: 0px 1px 2px rgba(0,0,0,0.2); transition: transform 0.2s;">
-        <span style="margin-right: 8px; font-size: 24px;">🍺</span> Buy me a beer
-      </a>
-    </div>
-  )}
   <p class="footer-disclaimer" style="margin-top: 1rem; color: var(--ink-muted); font-size: 0.85rem; line-height: 1.5;">
     Welcome to Resurgence Builds, your premier hub for The Division Resurgence builds, weapons, and top-tier gear sets. The Division Resurgence is a free-to-play RPG shooter from Ubisoft, bringing the acclaimed franchise to PC, iOS, and Android. Whether you are choosing the best specialization for your playstyle, exploring the open world of Manhattan, or stepping foot into post-crisis New York for the first time, we are here to help you level fast and optimize your setup. Study our class guides, and party up with a clan for co-op multiplayer. Ready for the endgame? Our site is updated every patch with the latest meta strategies, from endgame solo builds to Dark Zone PvP extraction tactics. Master exotic weapons, brand sets, and SHD tech to defeat enemy factions including the Cleaners, Rikers, and the new Freemen. Stay ahead of the shifting meta with real-time patch notes, updates, and breaking news.
   </p>
