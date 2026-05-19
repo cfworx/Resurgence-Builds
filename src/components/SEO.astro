@@ -68,9 +68,20 @@ const faqLd = faqs.length > 0 ? {
     acceptedAnswer: {
       '@type': 'Answer',
       text: faq.answer
-    }
-  }))
 } : null;
+
+const orgLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: siteName,
+  url: siteUrl,
+  logo: `${siteUrl}/og-default.png`,
+  sameAs: [
+    'https://twitter.com/resurgencebuilds',
+    'https://youtube.com/@resurgencebuilds',
+    'https://reddit.com/r/DivisionResurgence'
+  ]
+};
 ---
 
 <!-- Primary Meta Tags -->
@@ -104,6 +115,8 @@ const faqLd = faqs.length > 0 ? {
 {faqLd && (
   <script type="application/ld+json" set:html={JSON.stringify(faqLd)} />
 )}
+
+<script type="application/ld+json" set:html={JSON.stringify(orgLd)} />
 
 {jsonLd && (
   Array.isArray(jsonLd) 

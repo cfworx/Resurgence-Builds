@@ -93,18 +93,32 @@ const filterTags = [
     "division resurgence weapon tier list",
     "division resurgence gear sets"
   ]}
-  jsonLd={{
-    '@context': 'https://schema.org',
-    '@type': 'WebSite',
-    name: 'The Division Resurgence Builds',
-    url: 'https://resurgencebuilds.com',
-    description: 'Independent fan wiki and resource for The Division Resurgence — builds, guides, tier lists, and meta strategies.',
-    publisher: {
-      '@type': 'Organization',
-      name: 'Resurgence Builds',
+  jsonLd={[
+    {
+      '@context': 'https://schema.org',
+      '@type': 'WebSite',
+      name: 'The Division Resurgence Builds',
       url: 'https://resurgencebuilds.com',
+      description: 'Independent fan wiki and resource for The Division Resurgence — builds, guides, tier lists, and meta strategies.',
+      publisher: {
+        '@type': 'Organization',
+        name: 'Resurgence Builds',
+        url: 'https://resurgencebuilds.com',
+      },
     },
-  }}
+    {
+      '@context': 'https://schema.org',
+      '@type': 'VideoGame',
+      name: 'The Division Resurgence',
+      description: 'A free-to-play third-person shooter RPG mobile game set in the Tom Clancy\'s The Division universe.',
+      genre: ['Role-playing game', 'Third-person shooter'],
+      publisher: 'Ubisoft',
+      developer: 'Ubisoft',
+      playMode: ['SinglePlayer', 'MultiPlayer', 'CoOp'],
+      applicationCategory: 'Game',
+      operatingSystem: ['iOS', 'Android']
+    }
+  ]}
 >
   <!-- Hero -->
   <section class="hero-banner">
