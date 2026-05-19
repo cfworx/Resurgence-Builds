@@ -6,11 +6,11 @@ pve: false
 pvp: true
 lastUpdated: 2026-05-18
 patch: "Season 2"
-tags: ["meta", "pvp", "conflict", "fearless-warrior", "phalanx-attack", "warlord", "exotic"]
+tags: ["pvp", "conflict", "fearless-warrior", "warlord", "exotic"]
 description: "The dominant Conflict PVP build. A setup so disgustingly strong it allows you to spawn-trap entire teams and go 24-0."
 author: "RapidF5 (via Willspot)"
 featuredImage: "/images/division-resurgence-conflict-pvp-fearless-warrior-build.webp"
-imageAlt: "Fearless Warrior Warlord PVP Build"
+imageAlt: "Division Resurgence Fearless Warrior Warlord PVP Build"
 pizzaTitle: "Sponsor my toxicity"
 pizzaText: "Going 24-0 and spawn-trapping the enemy team requires fuel. Your donation directly funds the sheer disrespect this build brings to Conflict matches."
 shareTitle: "Farm hate mail"
@@ -70,3 +70,8 @@ The MPX secondary with Steady Hands handles close-quarters for when some brave i
 4. Let Recycling keep your mag topped off by absorbing incoming hits. 
 5. Swap to the MPX if they get inside ~10m for hip-fire CQC dominance. 
 6. Put your Shield up if you need to break a bad angle or if you accidentally took a fair fight.
+
+## Related Builds
+
+- **[Vanguard — The Hate Mail Generator](/builds/dark-zone-pvp-vanguard-lady-death-3/)** — The Dark Zone PVP build. Uses Lady Death exotic SMG instead of Warlord for a different flavor of toxicity.
+- **[Bulwark — The Unkillable Mosquito](/builds/vampire-bulwark-tank-9/)** — Also runs Fearless Warrior 4pc but in a PVE tank context instead of PVP aggression.

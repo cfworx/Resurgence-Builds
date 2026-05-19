@@ -6,11 +6,11 @@ pve: true
 pvp: false
 lastUpdated: 2026-05-18
 patch: "Season 2"
-tags: ["vanguard", "off-meta", "pve", "sniper", "dsr-1", "one-shot-one-kill", "cover-shooter", "glass-cannon"]
-description: "An off-meta Vanguard sniper build that deletes elites from across the map. You are functionally made of wet tissue paper, but it doesn't matter if they're dead."
+tags: ["vanguard", "pve", "sniper", "cover-shooter", "glass-cannon"]
+description: "An off-meta Vanguard sniper build that deletes elites from across the map. Glass Cannon + Cover Shooter = one-shot headshots."
 author: "RapidF5"
 featuredImage: "/images/division-resurgence-vanguard-sniper-build.webp"
-imageAlt: "Vanguard Cover Shooter Sniper Build"
+imageAlt: "Division Resurgence Vanguard Cover Shooter Sniper Build"
 pizzaTitle: "Support my extreme cowardice"
 pizzaText: "I spent hours hiding in a corner testing the exact maximum range of this sniper just so you wouldn't have to. Funding my pizza habit ensures I never have to go outside and interact with real people."
 shareTitle: "Expose my cowardice"
@@ -72,3 +72,8 @@ The DSR-1 will one-shot most non-elite reds. Elites take 2-3 shots. The whole pa
 5. Stack 3 — Killer talent procs on first kill (+20% WCHD for 10s). You are now doing obscene damage. 
 6. Pop **Tactical Link** for the lock-on + crit chance window when the heavy elite shows up. 
 7. Reposition between packs to a new cover line. **NEVER LEAVE COVER DURING A FIGHT.** If you stand in the open, you will instantly dissolve into red mist.
+
+## Related Builds
+
+- **[Vanguard — The Alt-F4 Shotgun Button](/builds/pve-meta-vanguard-shotgun-7/)** — The meta PVE DPS build. Close-range shotgun burst instead of long-range sniper picks.
+- **[Vanguard — The Hate Mail Generator](/builds/dark-zone-pvp-vanguard-lady-death-3/)** — If you want to take your Vanguard into the Dark Zone and make enemies.

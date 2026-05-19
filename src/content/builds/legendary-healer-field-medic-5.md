@@ -6,11 +6,11 @@ pve: true
 pvp: false
 lastUpdated: 2026-05-18
 patch: "Season 2"
-tags: ["field-medic", "healer", "legendary", "support-station", "healing-hive", "medical-excellence", "captain-cow", "healing-elites"]
+tags: ["field-medic", "healer", "legendary", "support", "pve"]
 description: "The best healer in the game for legendary PVE. You will push heal density so high that your teammates' health bars will refuse to move."
 author: "RapidF5"
 featuredImage: "/images/legendary-healer-field-medic.webp"
-imageAlt: "Legendary Healer Field Medic Build"
+imageAlt: "Division Resurgence Legendary Healer Field Medic Build"
 pizzaTitle: "Tip your healers"
 pizzaText: "I literally do all the work while you just point your gun and get the credit. The least you can do is buy me a slice for keeping your dumb ass alive."
 shareTitle: "Guilt trip your DPS"
@@ -77,3 +77,8 @@ Instead, it pushes heal density so stupidly high that allies never spend time at
 6. Pop **Healing Swarm** signature for emergencies, or when you need to revive multiple downed teammates who inevitably walked out of the glowing circle.
 
 ---
+
+## Related Builds
+
+- **[Tech Operator — The Flashbang Salesman](/builds/lockdown-tech-op-6/)** — The other support build. Crowd-controls the entire pack with Disorient instead of keeping the team alive with heals.
+- **[Bulwark — The Unkillable Mosquito](/builds/vampire-bulwark-tank-9/)** — Your ideal tank duo partner. They hold aggro while you keep their health bar glued to max.

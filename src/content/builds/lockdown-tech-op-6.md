@@ -6,11 +6,11 @@ pve: true
 pvp: false
 lastUpdated: 2026-05-18
 patch: "Season 2"
-tags: ["tech-operator", "off-meta", "pve", "disoriented", "jackpot", "striker-drone", "striker-hive", "crowd-control"]
+tags: ["tech-operator", "pve", "crowd-control", "jackpot", "striker-drone"]
 description: "An off-meta Tech Operator build that keeps an entire pack permanently Disoriented while two skills DPS them down. You are basically a walking flashbang."
 author: "RapidF5"
 featuredImage: "/images/division-resurgence-tech-operator-striker-drone-build.webp"
-imageAlt: "Tech Operator Striker Drone Build"
+imageAlt: "Division Resurgence Tech Operator Striker Drone CC Build"
 pizzaTitle: "Compensate me for the motion sickness"
 pizzaText: "I got a migraine testing this build so you could give the AI permanent vertigo. Toss a few bucks my way to help me pay for the aspirin."
 shareTitle: "Radicalize other agents"
@@ -73,3 +73,8 @@ The two skills are independent: the Drone follows enemies around to bully them, 
 3. Stay within 20m of your teammates like a clingy ex to stack your Concerted Strike damage buff.
 4. Fire on Disoriented targets. They will barely fire back because they are currently experiencing severe vertigo.
 5. Pop your **Drone Overload** signature to chain Disorient and drop a heavy skill damage burst when a pack gets stuck.
+
+## Related Builds
+
+- **[Field Medic — Babysitting Idiots 101](/builds/legendary-healer-field-medic-5/)** — The other support build. Pure healing instead of crowd-control.
+- **[Demolitionist — Michael Bay's Wet Dream](/builds/demolitionist-explosive-chaos-4/)** — Also runs Jackpot 4pc but uses it for raw AoE destruction instead of team utility.

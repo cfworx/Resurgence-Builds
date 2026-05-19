@@ -6,11 +6,11 @@ pve: true
 pvp: false
 lastUpdated: 2026-05-18
 patch: "Season 2"
-tags: ["bulwark", "off-meta", "solo", "lmg", "strawberry-milkshake", "fearless-warrior", "happy-survival", "vampire", "tank"]
+tags: ["bulwark", "solo", "tank", "strawberry-milkshake", "pve"]
 description: "A solo-first off-meta Bulwark build that turns you into a caffeinated mosquito with an LMG. You literally out-heal damage by refusing to stop shooting."
 author: "RapidF5"
 featuredImage: "/images/division-resurgence-bulwark-vampire-lmg-tank-build.webp"
-imageAlt: "Vampire Bulwark LMG Tank Build"
+imageAlt: "Division Resurgence Vampire Bulwark LMG Tank Build"
 pizzaTitle: "Bulwarks need calories too"
 pizzaText: "You think holding down the trigger and never dying is easy? It requires immense focus and a caloric surplus. Buy me a pizza so I can maintain my peak physical condition."
 shareTitle: "Spread the tank propaganda"
@@ -75,3 +75,8 @@ Plus, the Anarchy DoT means you don't even need perfect aim. Just apply stacks t
 5. Drop your Reinforcer Hive to cover your back.
 6. Use the Riot Foam signature on elites or when you get overwhelmed. Foam them up for a free, non-consensual DPS window. 
 7. Kill one enemy and keep hosing down the next with fresh Anarchy stacks. The DoT ticks. The armor mod heals. The LMG goes brrrr.
+
+## Related Builds
+
+- **[Demolitionist — The Strawberry Reaper](/builds/strawberry-reaper-demolitionist-10/)** — Uses the same Strawberry Milkshake exotic but as a DPS DoT spreader instead of a tank. Glass Cannon, Phalanx Attack 4pc, and an Artillery Turret that feeds on Anarchy stacks.
+- **[Vanguard — The 24-0 Spawn Trapper](/builds/conflict-pvp-fearless-warlord/)** — Also runs Fearless Warrior 4pc but in a PVP context with the Warlord exotic AR.

@@ -6,11 +6,11 @@ pve: true
 pvp: false
 lastUpdated: 2026-05-19
 patch: "Season 2"
-tags: ["vanguard", "meta", "pve", "shotgun", "phalanx-attack", "gunny-johnny", "double-barrel"]
+tags: ["vanguard", "pve", "shotgun", "dps", "phalanx-attack"]
 description: "The premier PVE DPS build. A shotgun setup so powerful it functions as an alt-F4 button for elites."
 author: "RapidF5 (via Godlike)"
 featuredImage: "/images/division-resurgence-vanguard-double-barrel-shotgun-pve-build.webp"
-imageAlt: "Vanguard Double Barrel Shotgun Build"
+imageAlt: "Division Resurgence Vanguard Double Barrel Shotgun PVE Build"
 pizzaTitle: "Deleting enemies is hungry work"
 pizzaText: "Pressing the 'Delete' button on an elite's health bar burns a surprising amount of calories. Buy me a pizza to keep the Alt-F4 engine running smoothly."
 shareTitle: "Share the Alt-F4 engine"
@@ -70,3 +70,8 @@ Stack that absurd combination on a weapon that already fires two shells per pull
 5. Pop Tactical Link. 
 6. Aimed shotgun crits trigger the Explosive Round AOE. Pull the trigger until there is nothing left. 
 7. Swap to the FAMAS to clean up the stragglers who are trying to run away.
+
+## Related Builds
+
+- **[Demolitionist — The Strawberry Reaper](/builds/strawberry-reaper-demolitionist-10/)** — Also runs Phalanx Attack 4pc but on an LMG with DoT spread instead of shotgun burst.
+- **[Bulwark — The Unkillable Mosquito](/builds/vampire-bulwark-tank-9/)** — If you want to survive instead of delete. A tank build that trades all your DPS for immortality.

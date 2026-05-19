@@ -6,11 +6,11 @@ pve: true
 pvp: false
 lastUpdated: 2026-05-18
 patch: "Season 2"
-tags: ["demolitionist", "solo", "explosive", "m32a1", "collateral-damage", "jackpot", "lady-death", "fun"]
+tags: ["demolitionist", "solo", "explosive", "jackpot", "pve"]
 description: "A solo-first off-meta Demolitionist build where every skill cast detonates twice. Michael Bay's wet dream."
 author: "RapidF5"
 featuredImage: "/images/division-resurgence-demolitionist-explosive-solo-build.webp"
-imageAlt: "Demolitionist Explosive Chaos Build"
+imageAlt: "Division Resurgence Demolitionist Explosive Chaos Build"
 pizzaTitle: "Explosions are expensive"
 pizzaText: "The sheer amount of collateral damage this build causes is a liability. Help me fund my legal defense team (or just buy me a pizza) before the authorities catch on."
 shareTitle: "Share the Michael Bay experience"
@@ -69,3 +69,8 @@ Jackpot is the only set that rolls Skill Crit Chance + Skill Radius on its set b
 3. Pop the **M32A1**. Each grenade detonates → triggers Collateral Damage AOE → rolls Explosive Burst multi-shot. 
 4. The Energize chest gives +18% Skill Damage for 8s on medkit use, so pop a medkit when the buff drops to keep the numbers as big as possible. 
 5. Reposition frantically while skills are on cooldown because, again, your toughness is basically tissue paper.
+
+## Related Builds
+
+- **[Demolitionist — The Strawberry Reaper](/builds/strawberry-reaper-demolitionist-10/)** — The other Demolitionist build. Uses Phalanx Attack 4pc and the Strawberry Milkshake exotic for a weapon DoT approach instead of pure skill explosions.
+- **[Tactical Pharma — Pure Environmental Terrorism](/builds/skill-meta-jackpot-chemical-8/)** — Also runs Jackpot 4pc but pairs it with Chemical Trap instead of turret skills.

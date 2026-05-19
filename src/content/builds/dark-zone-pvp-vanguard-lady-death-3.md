@@ -6,11 +6,11 @@ pve: false
 pvp: true
 lastUpdated: 2026-05-18
 patch: "Season 2"
-tags: ["vanguard", "meta", "pvp", "dark-zone", "lady-death", "fury", "shield", "scanning-pulse"]
+tags: ["vanguard", "pvp", "dark-zone", "lady-death", "exotic"]
 description: "The absolute pinnacle of Dark Zone toxicity. Wall-hacks, absurd DPS, and an SMG that does everything for you. Expect hate mail."
 author: "RapidF5 (via Willspot)"
 featuredImage: "/images/division-resurgence-dark-zone-pvp-lady-death-build.webp"
-imageAlt: "Vanguard Lady Death Dark Zone Build"
+imageAlt: "Division Resurgence Vanguard Lady Death Dark Zone PVP Build"
 pizzaTitle: "Blood Money"
 pizzaText: "We both know you're going to use this build to ruin someone's day in the Dark Zone. Give me a cut of the profits so I don't feel guilty about unleashing you on the server."
 shareTitle: "Ruin more days"
@@ -75,3 +75,8 @@ Best part? Lady Death is obtainable for 17,500 DZ credits. You don't even need r
 5. After ~8s on Lady Death, swap to Type 81 → Backup Protection (+20% HP) + auto-reload at 4s.
 6. Spray the Type 81 for a second, then swap back to Lady Death (Backup Battery is off cooldown). 
 7. If you somehow mess this up, **Emergency Measures** auto-procs at <20% HP and restores 50% max HP. It's an idiot-proof panic button on a 30s cooldown.
+
+## Related Builds
+
+- **[Vanguard — The 24-0 Spawn Trapper](/builds/conflict-pvp-fearless-warlord/)** — The Conflict PVP build. Uses the Warlord exotic AR and Fearless Warrior 4pc for a more defensive PVP playstyle.
+- **[Vanguard — The Cross-Map Coward](/builds/cover-shooter-sniper-2/)** — If you prefer deleting enemies from 50m instead of breathing on them with an SMG.

@@ -6,11 +6,11 @@ pve: true
 pvp: false
 lastUpdated: 2026-05-18
 patch: "Season 2"
-tags: ["tactical-pharma", "meta", "pve", "skill-build", "jackpot", "fire-cycle", "chemical-trap", "corrosion"]
+tags: ["field-medic", "pve", "skill-build", "jackpot", "chemical-trap"]
 description: "The top skill-DPS build in the game. You are basically committing environmental terrorism with acid pools."
 author: "RapidF5 (via RogueMadras)"
 featuredImage: "/images/division-resurgence-field-medic-chemical-trap-skill-build.webp"
-imageAlt: "Tactical Pharma Chemical Trap Skill Build"
+imageAlt: "Division Resurgence Tactical Pharma Chemical Trap Skill Build"
 pizzaTitle: "Hazardous Materials Fee"
 pizzaText: "Handling this much corrosive acid is terrible for my skin. Consider your donation a hazardous materials handling fee to keep this environmental terrorism going."
 shareTitle: "Spread the infection"
@@ -74,3 +74,8 @@ And if that wasn't enough, the **Nothing to Lose** chest takes incoming damage a
 The KB-documented endgame version of this archetype (Section 18.37.11) recommends **Glass Cannon** as the chest talent — a colossal unconditional damage multiplier that also severely amplifies incoming damage. This build substitutes **Nothing to Lose** instead, which is a legitimate survivability choice. If you want maximum DPS ceiling and have already mastered the back-line / Center-ADS Release discipline required, swap Nothing to Lose for Glass Cannon. Be aware: one positioning mistake in Legendary content and you wipe the raid. Your call.
 
 ---
+
+## Related Builds
+
+- **[Demolitionist — Michael Bay's Wet Dream](/builds/demolitionist-explosive-chaos-4/)** — Also runs Jackpot 4pc but uses Collateral Damage OS and M32A1 for explosive AoE instead of DoT acid pools.
+- **[Demolitionist — The Strawberry Reaper](/builds/strawberry-reaper-demolitionist-10/)** — A weapon-based DoT build that uses the Strawberry Milkshake to spread Anarchy stacks across entire groups.
