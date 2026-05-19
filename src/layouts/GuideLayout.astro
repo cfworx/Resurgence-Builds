@@ -9,11 +9,11 @@ export interface Props {
   category: string;
   lastUpdated: Date;
   tags: string[];
-  author?: string;
   headings?: { depth: number; slug: string; text: string }[];
+  faqs?: { question: string; answer: string }[];
 }
 
-const { title, description, category, lastUpdated, tags, author = 'Resurgence Builds', headings = [] } = Astro.props;
+const { title, description, category, lastUpdated, tags, author = 'Resurgence Builds', headings = [], faqs = [] } = Astro.props;
 
 const formattedDate = lastUpdated.toLocaleDateString('en-US', {
   month: 'long',
@@ -53,6 +53,7 @@ const howToLd = headings.length > 0 ? {
     tags,
   }}
   jsonLd={howToLd ? howToLd : undefined}
+  faqs={faqs}
 >
   <div class="container section">
     <Breadcrumbs items={breadcrumbItems} />
@@ -64,7 +65,7 @@ const howToLd = headings.length > 0 ? {
       <span class="tag">{category}</span>
       <span>By {author}</span>
       <span>·</span>
-      <time datetime={lastUpdated.toISOString()}>{formattedDate}</time>
+      <time datetime={lastUpdated.toISOString()}><strong>Last updated:</strong> {formattedDate}</time>
     </div>
 
     {tocItems.length > 0 && (

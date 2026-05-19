@@ -21,9 +21,10 @@ export interface Props {
   pizzaText?: string;
   shareTitle?: string;
   shareText?: string;
+  faqs?: { question: string; answer: string }[];
 }
 
-const { title, description, specialization, playstyle, patch, lastUpdated, pve, pvp, tags, author, featuredImage, imageAlt, pizzaTitle, pizzaText, shareTitle, shareText, headings = [] } = Astro.props;
+const { title, description, specialization, playstyle, patch, lastUpdated, pve, pvp, tags, author, featuredImage, imageAlt, pizzaTitle, pizzaText, shareTitle, shareText, headings = [], faqs = [] } = Astro.props;
 
 const tocItems = headings.filter(h => h.depth <= 3);
 
@@ -60,6 +61,7 @@ const twitterShareUrl = `https://twitter.com/intent/tweet?text=${encodeURICompon
   }}
   ogImage={featuredImage}
   keywords={[specialization, playstyle, ...(pve ? ['PVE'] : []), ...(pvp ? ['PVP'] : []), 'Division Resurgence', 'build guide', ...tags.slice(0, 5)]}
+  faqs={faqs}
 >
   <div class="container section">
     <Breadcrumbs items={breadcrumbItems} />
@@ -75,7 +77,7 @@ const twitterShareUrl = `https://twitter.com/intent/tweet?text=${encodeURICompon
             <div class="info-row"><dt>PvE</dt><dd>{pve ? 'Yes' : 'No'}</dd></div>
             <div class="info-row"><dt>PvP</dt><dd>{pvp ? 'Yes' : 'No'}</dd></div>
             <div class="info-row"><dt>Patch</dt><dd class="stat stat--accent">{patch}</dd></div>
-            <div class="info-row"><dt>Updated</dt><dd>{formattedDate}</dd></div>
+            <div class="info-row"><dt>Last updated</dt><dd>{formattedDate}</dd></div>
           </dl>
           {tags.length > 0 && (
             <div style="display:flex;flex-wrap:wrap;gap:var(--sp-1);margin-top:var(--sp-3);">
@@ -94,7 +96,7 @@ const twitterShareUrl = `https://twitter.com/intent/tweet?text=${encodeURICompon
           <span>&middot;</span>
           <span>Patch {patch}</span>
           <span>&middot;</span>
-          <time datetime={lastUpdated.toISOString()}>{formattedDate}</time>
+          <time datetime={lastUpdated.toISOString()}><strong>Last updated:</strong> {formattedDate}</time>
         </div>
 
         {featuredImage && (

@@ -1,0 +1,13 @@
+# The Division Resurgence Builds
+
+**Site Purpose:** The top independent wiki and resource hub for The Division Resurgence. We provide meticulously tested mobile builds, weapon tier lists, patch notes, and class guides. 
+**Target Audience:** Hardcore, competitive players and theorycrafters looking for optimal PvP (Dark Zone/Conflict) and PvE (Legendary) setups.
+
+## Site Structure & Content Focus
+- `/builds/`: Highly optimized meta and off-meta loadouts for all specializations (Vanguard, Demolitionist, Field Medic, Tech Operator, Bulwark). 
+- `/news/`: Breaking updates, developer streams, weekly Reddit highlights, and community sentiment analysis.
+- `/patch-notes/`: Real-time tracking of game updates, balance changes, and how they affect the current meta.
+- `/guides/`: Weapon tier lists, gear set breakdowns, and tactical class guides.
+
+## AI Optimization & Accuracy Guarantee
+Our content prioritizes high information density, structured tabular data, and tested gameplay strategies over filler text. All builds and guides are strictly stamped with a `lastUpdated` date to ensure the highest degree of freshness and accuracy regarding the current live patch.

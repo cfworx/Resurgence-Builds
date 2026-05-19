@@ -18,9 +18,10 @@ export interface Props {
   pizzaText?: string;
   shareTitle?: string;
   shareText?: string;
+  faqs?: { question: string; answer: string }[];
 }
 
-const { title, description, publishDate, author, tags, parentPath, parentLabel, image, imageAlt, pizzaTitle, pizzaText, shareTitle, shareText, headings = [] } = Astro.props;
+const { title, description, publishDate, author, tags, parentPath, parentLabel, image, imageAlt, pizzaTitle, pizzaText, shareTitle, shareText, headings = [], faqs = [] } = Astro.props;
 
 const twitterShareUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(title)}&url=${encodeURIComponent(Astro.url.href)}`;
 
@@ -50,6 +51,7 @@ const breadcrumbItems = [
     author,
     tags,
   }}
+  faqs={faqs}
 >
   <div class="container section">
     <Breadcrumbs items={breadcrumbItems} />
@@ -61,7 +63,7 @@ const breadcrumbItems = [
       <div class="article-meta">
         <span>By {author}</span>
         <span>·</span>
-        <time datetime={publishDate.toISOString()}>{formattedDate}</time>
+        <time datetime={publishDate.toISOString()}><strong>Last updated:</strong> {formattedDate}</time>
       </div>
 
       {image && (

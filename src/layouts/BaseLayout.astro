@@ -18,9 +18,10 @@ export interface Props {
   keywords?: string[];
   breadcrumbs?: { name: string; url: string }[];
   jsonLd?: Record<string, unknown>;
+  faqs?: { question: string; answer: string }[];
 }
 
-const { title, description, ogType, ogImage, article, keywords, breadcrumbs, jsonLd } = Astro.props;
+const { title, description, ogType, ogImage, article, keywords, breadcrumbs, jsonLd, faqs } = Astro.props;
 ---
 
 <!DOCTYPE html>
@@ -64,6 +65,7 @@ const { title, description, ogType, ogImage, article, keywords, breadcrumbs, jso
     keywords={keywords}
     breadcrumbs={breadcrumbs}
     jsonLd={jsonLd}
+    faqs={faqs}
   />
 </head>
 <body>
