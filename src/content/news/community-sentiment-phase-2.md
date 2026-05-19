@@ -1,10 +1,10 @@
 ---
 title: "What the Community Is Saying"
-publishDate: "2026-05-19"
+publishDate: "2026-05-17"
 author: "RapidF5"
 featuredImage: "/images/news/community-sentiment-pc.jpg"
 imageAlt: "A young gamer giving a thumbs up with a 180 FPS overlay playing The Division Resurgence on PC"
-description: "A breakdown of the biggest community topics right now: the PC early access launch, 60 FPS performance, Classified Ops Pass 1.2, missing gear, and the summer roadmap."
+description: "Community breakdown: the PC launch, 60 FPS performance, Classified Ops Pass, missing gear bugs, and the summer roadmap for Division Resurgence."
 tags: ["Community", "PC", "Phase 2", "Classified Ops Pass", "Missing Gear", "Roadmap"]
 pizzaTitle: "Reddit is a toxic wasteland"
 pizzaText: "I waded through 3,000 salty Reddit comments about the matchmaking to bring you this clean, objective summary. My sanity is currently hanging by a thread. A pizza is the only known cure for extreme internet exposure."

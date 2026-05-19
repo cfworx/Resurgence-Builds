@@ -1,10 +1,10 @@
 ---
-title: "This Week on Reddit — The 10 Posts That Defined Our Collective Suffering"
+title: "Reddit This Week — 10 Posts That Defined Our Suffering"
 publishDate: "2026-05-18"
 author: "RapidF5"
-featuredImage: "/images/news/community-sentiment-pc.jpg"
-imageAlt: "Division Resurgence community Reddit highlights weekly roundup"
-description: "The funniest, saltiest, and most unhinged Reddit posts from the Division Resurgence subreddit this week. Vendor bugs, vanishing gear, and the Strawberry Milkshake roast."
+featuredImage: "/images/news/division-resurgence-reddit-weekly-highlights.webp"
+imageAlt: "SHD agent laughing at Reddit posts about Division Resurgence bugs while eating popcorn at his gaming setup"
+description: "The funniest Reddit posts from r/thedivisionresurgence this week. Vendor bugs, vanishing gear, and the Strawberry Milkshake design roast."
 tags: ["Community", "Reddit", "Humor", "Weekly"]
 pizzaTitle: "Hazard pay for reading Reddit"
 pizzaText: "I doom-scrolled r/thedivisionresurgence for six hours straight so you could get a curated highlight reel. My mental health is now a bug report. Pizza is the only known antidote."

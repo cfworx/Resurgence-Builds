@@ -1,5 +1,5 @@
 ---
-title: "Resurgence Comes to PC in Early Access — Free, Cross-Play, Cross-Progression"
+title: "Resurgence Hits PC — Free, Cross-Play, Cross-Save"
 publishDate: "2026-04-28"
 author: "RapidF5"
 description: "The Division Resurgence shadow-drops on PC via Early Access! Find out all the details on cross-play, 60 FPS support, and controller setups."
