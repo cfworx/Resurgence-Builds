@@ -4,7 +4,7 @@ specialization: Vanguard
 playstyle: DPS
 pve: true
 pvp: false
-lastUpdated: 2026-05-18
+lastUpdated: 2026-05-19
 patch: "Season 2"
 tags: ["vanguard", "meta", "pve", "shotgun", "phalanx-attack", "gunny-johnny", "double-barrel"]
 description: "The premier PVE DPS build. A shotgun setup so powerful it functions as an alt-F4 button for elites."
@@ -16,10 +16,6 @@ pizzaText: "Pressing the 'Delete' button on an elite's health bar burns a surpri
 shareTitle: "Share the Alt-F4 engine"
 shareText: "Tweet this so the devs see it and nerf us into the ground next patch."
 ---
-
-# Vanguard — The Alt-F4 Shotgun Button
-
-**By RapidF5 (via Godlike)**
 
 ## What it is
 
@@ -33,11 +29,11 @@ You are going to walk up to things and mathematically erase them from the server
 
 Three damage engines stack on *every single shotgun trigger pull*:
 
-1. **Pulse Vulnerability:** Every pulsed target takes +25% Weapon Damage from your shots. Vanguard 3pc on top of that adds up to +8% Crit Chance per pulsed target within 70m. 
+1. **Pulse Vulnerability:** Scan Pulse gives you +25% Weapon Damage while it's active and applies a +5% vulnerability debuff to every pulsed target. Vanguard Commando on top of that adds up to +8% Crit Chance per pulsed target within 70m. 
 2. **Phalanx Attack Multi-Shot:** The 4pc set bonus gives a +12% chance for *every shot* to fire an extra projectile. Since a Double Barrel fires two shells per pull, multi-shot procs feel like an extra full pellet group hitting them in the chest. 
 3. **Explosive Round OS:** Every aimed crit detonates a 5m AOE for 2,000% Firepower damage. With Phalanx multi-shot, you can trigger multiple massive detonations per trigger pull. 
 
-Pop your Tactical Link signature for an extra +20% Crit Chance and a free target lock, giving you a 15-second peak DPS window of absolute godhood. 
+Pop your Tactical Link signature for an extra +20% Crit Chance and a free target lock, giving you a ~22-second peak DPS window of absolute godhood. 
 
 ## Why it works
 
@@ -52,23 +48,23 @@ Stack that absurd combination on a weapon that already fires two shells per pull
 | Slot | Set | Talent | Core | Bonus 1 | Bonus 2 |
 |---|---|---|---|---|---|
 | Mask | Phalanx Attack | — | Firepower | Weapon Crit Chance | Headshot Damage |
-| Chest | Phalanx Attack | **Duality** | Firepower | Weapon Damage | Weapon Crit Damage |
-| Backpack | Phalanx Attack | **Street Fighter** | Firepower | Weapon Crit Damage | Multi-Shot |
+| Gloves | Phalanx Attack | — | Firepower | Weapon Crit Damage | Weapon Crit Chance |
 | Holster | Phalanx Attack | — | Firepower | Weapon Crit Chance | Weapon Damage |
-| Gloves | Gunny Johnny | — | Firepower | Weapon Crit Damage | Weapon Crit Chance |
-| Kneepads | Gunny Johnny | — | Firepower | Multi-Shot | Weapon Crit Damage |
+| Kneepads | Phalanx Attack | — | Firepower | Multi-Shot | Weapon Crit Damage |
+| Chest | Gunny Johnny | **Duality** | Firepower | Weapon Damage | Weapon Crit Damage |
+| Backpack | Gunny Johnny | **Street Fighter** | Firepower | Weapon Crit Damage | Multi-Shot |
 
 - **Primary:** Double Barrel Shotgun — Steady Reload + Thick Skin (Because reloading is for peasants)
 - **Secondary:** FAMAS AR
 - **OS Protocol:** Explosive Round (Firepower, High-End)
-- **Skills:** Scanning Pulse (Optimal Awareness 3pc) + Commando Smart Cover (Armored Train 5pc)
+- **Skills:** Scanning Pulse (Optimal Awareness 3pc) + Commando Smart Cover (Armored Train 2pc)
 - **Signature:** Tactical Link
 - **Gear Mods:** 12× Firepower (Glass Cannon supremacy)
 
 ## Rotation (How to press Delete)
 
 1. Pulse the pack. Identify your victims. 
-2. Drop Smart Cover behind you. This is your 40% Damage Reduction layer. Without it, you are dead. 
+2. Drop Smart Cover behind you. This is your Damage Reduction layer. Without it, you are dead. 
 3. Wait for your Bulwark to engage and pull aggro. Be patient. 
 4. Close the distance to shotgun range (≤15m). 
 5. Pop Tactical Link. 

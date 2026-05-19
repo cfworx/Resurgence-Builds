@@ -17,10 +17,6 @@ shareTitle: "Guilt trip your DPS"
 shareText: "Share this to remind your friends that they owe you their miserable lives."
 ---
 
-# Field Medic — Babysitting Idiots 101
-
-**By RapidF5**
-
 ## What it is
 
 Are you tired of your teammates being complete idiots and dying because they don't know what cover is? Then play the Legendary Healer. 
@@ -46,7 +42,7 @@ Three independent team-facing engines run simultaneously, every fight, with zero
 - **Deep Focus Chest:** +28% Skill Duration.
 - **Brainstorm Backpack:** +30% Skill Duration.
 - **Captain Cow 4pc:** +14.4% Skill Duration.
-**Total:** An ~88% additive duration pushes a 44.9s Support Station past **84 seconds**. The station is bigger, lasts longer, and your team is permanently buffed inside it. 
+**Total:** An ~72% additive duration pushes a 44.9s Support Station past **77 seconds**. The station is bigger, lasts longer, and your team is permanently buffed inside it. 
 
 ## Why it works
 
@@ -58,18 +54,18 @@ Instead, it pushes heal density so stupidly high that allies never spend time at
 
 | Slot | Set | Talent | Core | Bonus 1 | Bonus 2 |
 |---|---|---|---|---|---|
-| Mask | Healing Elites (T2) or Captain Cow | — | Engineering | Skill Intensity | Skill Duration |
-| Chest | Any T2 chest | **Deep Focus** | Engineering | Skill Intensity | Skill Duration |
-| Backpack | Any T2 bag | **Brainstorm** | Engineering | Skill Intensity | Skill Duration |
-| Gloves | Healing Elites or Captain Cow | — | Engineering | Skill Intensity | Skill Cooldown |
-| Holster | Healing Elites or Captain Cow | — | Engineering | Skill Intensity | Skill Duration |
-| Kneepads | Healing Elites or Captain Cow | — | Engineering | Skill Intensity | Skill Duration |
+| Mask | Healing Elites (T2) or Captain Cow | — | Toughness | Skill Intensity | Skill Duration |
+| Chest | Any T2 chest | **Deep Focus** | Toughness | Skill Intensity | Skill Duration |
+| Backpack | Any T2 bag | **Brainstorm** | Toughness | Skill Intensity | Skill Duration |
+| Gloves | Healing Elites or Captain Cow | — | Toughness | Skill Intensity | Skill Cooldown |
+| Holster | Healing Elites or Captain Cow | — | Toughness | Skill Intensity | Skill Duration |
+| Kneepads | Healing Elites or Captain Cow | — | Toughness | Skill Intensity | Skill Duration |
 
 - **Weapon:** Any SMG or AR carrying both **Slaughter Healing** + **Medical Accuracy** (the specific gun doesn't matter, just the talents)
-- **OS Protocol:** Medical Excellence (Engineering, High-End)
+- **OS Protocol:** Medical Excellence (Toughness, High-End)
 - **Skills:** Support Station + Effective Triage mod · Healing Hive + Mutual Support mod
 - **Signature:** Healing Swarm
-- **Gear Mods:** 12× Engineering (You don't shoot, you heal)
+- **Gear Mods:** 12× Toughness (You don't shoot, you heal)
 
 ## Rotation (How to babysit)
 
@@ -79,3 +75,5 @@ Instead, it pushes heal density so stupidly high that allies never spend time at
 4. Keep firing to build Slaughter Healing stacks (+21% team Incoming Healing).
 5. Pop the Medical Excellence OS on cast for the +5% team Max HP burst when someone takes a big hit. 
 6. Pop **Healing Swarm** signature for emergencies, or when you need to revive multiple downed teammates who inevitably walked out of the glowing circle.
+
+---

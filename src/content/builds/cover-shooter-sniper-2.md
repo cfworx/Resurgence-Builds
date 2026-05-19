@@ -17,10 +17,6 @@ shareTitle: "Expose my cowardice"
 shareText: "Tweet this to let the world know you prefer hiding 50m away from danger."
 ---
 
-# Vanguard — The Cross-Map Coward (Sniper)
-
-**By RapidF5**
-
 ## What it is
 
 Do you hate getting shot? Do you prefer doing your job from a different zip code while your teammates take all the aggro? Welcome to the Cover Shooter Sniper build.
@@ -54,11 +50,11 @@ The DSR-1 will one-shot most non-elite reds. Elites take 2-3 shots. The whole pa
 | Slot | Set | Talent | Core | Bonus 1 | Bonus 2 |
 |---|---|---|---|---|---|
 | Mask | One Shot One Kill | — | Firepower | Headshot Damage | Weapon Crit Damage |
-| Chest | One Shot One Kill | **Glass Cannon** | Firepower | Headshot Damage | Weapon Crit Damage |
-| Backpack | One Shot One Kill | **Hidden Impact** | Firepower | Weapon Crit Chance | Weapon Crit Damage |
+| Chest | Fury Strike | **Glass Cannon** | Firepower | Headshot Damage | Weapon Crit Damage |
+| Backpack | Fury Strike | **Hidden Impact** | Firepower | Weapon Crit Chance | Weapon Crit Damage |
 | Gloves | One Shot One Kill | — | Firepower | Headshot Damage | Weapon Damage |
-| Holster | Fury Strike | — | Firepower | Headshot Damage | Weapon Crit Damage |
-| Kneepads | Fury Strike | — | Firepower | Weapon Crit Chance | Weapon Crit Damage |
+| Holster | One Shot One Kill | — | Firepower | Headshot Damage | Weapon Crit Damage |
+| Kneepads | One Shot One Kill | — | Firepower | Weapon Crit Chance | Weapon Crit Damage |
 
 - **Primary:** DSR-1 (T2 Marksman Rifle) — Killer + Long-Distance Marking
 - **Secondary:** Any T2 AR for medium-range cleanup (for when you miss your shots and panic)

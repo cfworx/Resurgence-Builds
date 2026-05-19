@@ -17,10 +17,6 @@ shareTitle: "Radicalize other agents"
 shareText: "Send this to someone who hates letting the AI have a turn to play."
 ---
 
-# Tech Operator — The Flashbang Salesman
-
-**By RapidF5**
-
 ## What it is
 
 Welcome to the build that ruins the AI's day by giving them all permanent concussions. 
@@ -34,8 +30,8 @@ You are not the top damage dealer. You are the flashbang salesman, and business 
 Two engines run simultaneously and feed each other to create a permanent stunlock:
 
 **Engine 1 — Permanent Disorient Lockdown**
-- **EMCAT Striker Drone mod set:** Your drone's hits Disorient enemies. Disoriented targets deal 50% less damage and suffer an accuracy debuff. They are basically shooting blindfolded. 
-- **Stabilized Flight Striker Hive mod set:** Your Hive's shots also apply Disoriented. 
+- **EMCAT Striker Drone mod set:** Your drone's **critical hits** Disorient enemies. Disoriented targets deal 50% less damage and suffer an accuracy debuff. They are basically shooting blindfolded. 
+- **Stabilized Flight Striker Hive mod set:** Every time your Drone locks onto a target, it banks +6% Skill Crit Chance for 20 seconds — keeping the critical hit rate topped up so EMCAT never stops proccing Disorient. 
 - **Deep Focus (+28% Skill Duration)** + **Brainstorm (+30% Skill Duration)** + **Jackpot Skill Radius (+12%)**: This means your Disorient zones cover the entire encounter and last almost the full fight. They can't run, they can't hide, they can't shoot straight.
 
 **Engine 2 — Skill DPS while everyone's stunned**
@@ -65,7 +61,7 @@ The two skills are independent: the Drone follows enemies around to bully them, 
 | Kneepads | Jackpot | — | Engineering | Skill Crit Chance | Skill Multi-Shot |
 
 - **Weapon:** Warlord (exotic AR, Play Rough) **OR** T1 AR with Adaptation + Killer (if you're a peasant)
-- **OS Protocol:** Concerted Strike (Firepower or Engineering, High-End)
+- **OS Protocol:** Concerted Strike (Firepower, High-End)
 - **Skills:** Striker Drone + EMCAT mod set · Striker Hive + Stabilized Flight mod set
 - **Signature:** Drone Overload
 - **Gear Mods:** 12× Engineering (More gadgets, more problems)

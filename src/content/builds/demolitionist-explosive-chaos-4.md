@@ -17,10 +17,6 @@ shareTitle: "Share the Michael Bay experience"
 shareText: "Warning: sharing this build on X may flag your account for digital terrorism."
 ---
 
-# Demolitionist — Michael Bay's Wet Dream
-
-**By RapidF5**
-
 ## What it is
 
 Do you like explosions? Do you think the concept of "collateral damage" is just a suggestion? Welcome to Michael Bay's wet dream.
@@ -31,10 +27,10 @@ This is a solo-first off-meta Demolitionist build where **every single skill cas
 
 There are four explosion events on *every single M32A1 grenade throw*:
 
-1. **The Grenade Itself:** The Thermobaric Grenades skill mod adds +460% damage and +100% radius. Big boom. 
-2. **Collateral Damage OS:** Every Skill Damage event triggers a *second* explosion within 5m for 3,000% Engineering (~45,000 raw damage per proc at endgame). Bigger boom.
+1. **The Grenade Itself:** The Thermabaric Grenades skill mod adds +460% damage and +100% radius. Big boom. 
+2. **Collateral Damage OS:** Every Skill Damage event triggers a *second* explosion within 5m for 1,600% Engineering (~40,000+ raw damage per proc at endgame, 10s internal cooldown). Bigger boom.
 3. **Explosive Burst Backpack:** Up to +90% Skill Multi-Shot. This means each grenade has a near 1:1 odds of just magically firing a second grenade. Double boom. 
-4. **Jackpot 4pc Skill Crit:** +10.8% Skill Crit Chance, +24% Skill Crit Damage stacking on every detonation. Spicy boom. 
+4. **Jackpot 4pc Skill Crit:** +10% Skill Crit Chance on the 4pc, stacking toward the 99% crit ceiling on every detonation. Spicy boom. 
 
 On a crit + Multi-Shot proc, a single grenade throw hits the screen for **200,000+ AOE damage**. You will literally not be able to see the enemies through the fire. 
 
@@ -42,9 +38,9 @@ On a crit + Multi-Shot proc, a single grenade throw hits the screen for **200,00
 
 Most skill builds pick one delivery method. This one weaponizes the **OS Protocol itself as a second damage source**. 
 
-Collateral Damage's 3,000% Engineering payload triggers off *every* skill event you have. That includes the M32A1 signature, your Artillery Turret hits, and your Explosive Seeker Mine detonations. Every single gear stat that boosts Skill Crit or Skill Damage boosts BOTH explosions simultaneously. 
+Collateral Damage's 1,600% Engineering payload triggers off *every* skill event you have. That includes the M32A1 signature, your Artillery Turret hits, and your Explosive Seeker Mine detonations. Every single gear stat that boosts Skill Crit or Skill Damage boosts BOTH explosions simultaneously. 
 
-Jackpot is the only set that rolls Skill Crit Chance + Skill Crit Damage + Skill Radius on its set bonuses. Stack it with Skill Multi-Shot from Explosive Burst and every cast feels like four casts. 
+Jackpot is the only set that rolls Skill Crit Chance + Skill Radius on its set bonuses. Stack it with Skill Multi-Shot from Explosive Burst and every cast feels like four casts. 
 
 **The Tradeoff:** You have pure Engineering cores. That means you have exactly zero Toughness. You are made of explosive paper. Stay mobile, kite, and let the Artillery Turret pull aggro, or you will die in a single shot. 
 
@@ -52,12 +48,12 @@ Jackpot is the only set that rolls Skill Crit Chance + Skill Crit Damage + Skill
 
 | Slot | Set | Talent | Core | Bonus 1 | Bonus 2 |
 |---|---|---|---|---|---|
-| Mask | Jackpot | — | Engineering | Skill Intensity | Skill Crit Chance |
-| Chest | Jackpot | **Energize** | Engineering | Skill Intensity | Skill Crit Damage |
-| Backpack | Jackpot | **Explosive Burst** | Engineering | Skill Intensity | Skill Multi-Shot |
+| Mask | Jackpot | — | Engineering | Skill Crit Chance | Skill Crit Damage |
 | Gloves | Jackpot | — | Engineering | Skill Crit Chance | Skill Crit Damage |
-| Holster | Jackpot | — | Engineering | Skill Crit Damage | Skill Intensity |
-| Kneepads | Fire Cycle (T2) | — | Engineering | Skill Crit Chance | Skill Multi-Shot |
+| Holster | Jackpot | — | Engineering | Skill Crit Damage | Skill Crit Chance |
+| Kneepads | Jackpot | — | Engineering | Skill Crit Chance | Skill Multi-Shot |
+| Chest | Fire Cycle (T2) | **Energize** | Engineering | Skill Crit Chance | Skill Crit Damage |
+| Backpack | Fire Cycle (T2) | **Explosive Burst** | Engineering | Skill Crit Damage | Skill Multi-Shot |
 
 - **Primary:** Lady Death (exotic SMG, Breathe Free) **OR** T2 Vector with In Sync + Multitasking (for the poor)
 - **Secondary:** Any AR for ranged plinking when you're out of explosions
@@ -71,5 +67,5 @@ Jackpot is the only set that rolls Skill Crit Chance + Skill Crit Damage + Skill
 1. Drop the **Artillery Turret** at the chokepoint. It pulls aggro and triggers the Collateral Damage OS on *every single hit*. 
 2. Throw your **Explosive Seeker Mine** for the second skill engine. 
 3. Pop the **M32A1**. Each grenade detonates → triggers Collateral Damage AOE → rolls Explosive Burst multi-shot. 
-4. The Energize chest gives +30% Skill Damage for 6s on skill cast, so keep chaining casts to keep the buff up. 
+4. The Energize chest gives +18% Skill Damage for 8s on medkit use, so pop a medkit when the buff drops to keep the numbers as big as possible. 
 5. Reposition frantically while skills are on cooldown because, again, your toughness is basically tissue paper.
