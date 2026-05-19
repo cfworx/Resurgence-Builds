@@ -6,7 +6,7 @@ pve: true
 pvp: false
 lastUpdated: 2026-05-18
 patch: "Season 2"
-tags: ["demolitionist", "solo", "explosive", "jackpot", "pve"]
+tags: ["demolitionist", "field-grenadier", "explosive", "jackpot", "pve"]
 description: "A solo-first off-meta Demolitionist build where every skill cast detonates twice. Michael Bay's wet dream."
 author: "RapidF5"
 featuredImage: "/images/division-resurgence-demolitionist-explosive-solo-build.webp"

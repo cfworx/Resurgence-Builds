@@ -6,7 +6,7 @@ pve: true
 pvp: false
 lastUpdated: 2026-05-18
 patch: "Season 2"
-tags: ["bulwark", "solo", "tank", "strawberry-milkshake", "pve"]
+tags: ["bulwark", "juggernaut", "tank", "strawberry-milkshake", "pve"]
 description: "A solo-first off-meta Bulwark build that turns you into a caffeinated mosquito with an LMG. You literally out-heal damage by refusing to stop shooting."
 author: "RapidF5"
 featuredImage: "/images/division-resurgence-bulwark-vampire-lmg-tank-build.webp"

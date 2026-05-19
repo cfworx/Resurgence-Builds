@@ -6,7 +6,7 @@ pve: true
 pvp: false
 lastUpdated: 2026-05-18
 patch: "Season 2"
-tags: ["tech-operator", "pve", "crowd-control", "jackpot", "striker-drone"]
+tags: ["tech-operator", "pve", "offensive-operations", "jackpot", "striker-drone"]
 description: "An off-meta Tech Operator build that keeps an entire pack permanently Disoriented while two skills DPS them down. You are basically a walking flashbang."
 author: "RapidF5"
 featuredImage: "/images/division-resurgence-tech-operator-striker-drone-build.webp"

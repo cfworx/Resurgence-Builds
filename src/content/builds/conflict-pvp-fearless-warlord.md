@@ -6,7 +6,7 @@ pve: false
 pvp: true
 lastUpdated: 2026-05-18
 patch: "Season 2"
-tags: ["pvp", "conflict", "fearless-warrior", "warlord", "exotic"]
+tags: ["pvp", "conflict", "commando", "warlord", "exotic"]
 description: "The dominant Conflict PVP build. A setup so disgustingly strong it allows you to spawn-trap entire teams and go 24-0."
 author: "RapidF5 (via Willspot)"
 featuredImage: "/images/division-resurgence-conflict-pvp-fearless-warrior-build.webp"

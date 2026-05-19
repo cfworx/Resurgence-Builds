@@ -6,7 +6,7 @@ pve: true
 pvp: false
 lastUpdated: 2026-05-18
 patch: "Season 2"
-tags: ["field-medic", "pve", "skill-build", "jackpot", "chemical-trap"]
+tags: ["field-medic", "pve", "tactical-pharma", "jackpot", "chemical-trap"]
 description: "The top skill-DPS build in the game. You are basically committing environmental terrorism with acid pools."
 author: "RapidF5 (via RogueMadras)"
 featuredImage: "/images/division-resurgence-field-medic-chemical-trap-skill-build.webp"

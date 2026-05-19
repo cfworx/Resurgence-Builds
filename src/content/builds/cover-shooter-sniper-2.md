@@ -6,7 +6,7 @@ pve: true
 pvp: false
 lastUpdated: 2026-05-18
 patch: "Season 2"
-tags: ["vanguard", "pve", "sniper", "cover-shooter", "glass-cannon"]
+tags: ["vanguard", "pve", "sniper", "recon", "glass-cannon"]
 description: "An off-meta Vanguard sniper build that deletes elites from across the map. Glass Cannon + Cover Shooter = one-shot headshots."
 author: "RapidF5"
 featuredImage: "/images/division-resurgence-vanguard-sniper-build.webp"
