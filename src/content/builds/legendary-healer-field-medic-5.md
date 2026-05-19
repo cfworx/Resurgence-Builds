@@ -41,7 +41,7 @@ Three independent team-facing engines run simultaneously, every fight, with zero
 **Engine 3 — Skill Duration (The Uptime Multiplier)**
 - **Deep Focus Chest:** +28% Skill Duration.
 - **Brainstorm Backpack:** +30% Skill Duration.
-- **Captain Cow 4pc:** +14.4% Skill Duration.
+- **Captain Cow 3pc:** +14.4% Skill Duration.
 **Total:** An ~72% additive duration pushes a 44.9s Support Station past **77 seconds**. The station is bigger, lasts longer, and your team is permanently buffed inside it. 
 
 ## Why it works
@@ -78,7 +78,3 @@ Instead, it pushes heal density so stupidly high that allies never spend time at
 
 ---
 
-## Related Builds
-
-- **[Tech Operator — The Flashbang Salesman](/builds/lockdown-tech-op-6/)** — The other support build. Crowd-controls the entire pack with Disorient instead of keeping the team alive with heals.
-- **[Bulwark — The Unkillable Mosquito](/builds/vampire-bulwark-tank-9/)** — Your ideal tank duo partner. They hold aggro while you keep their health bar glued to max.

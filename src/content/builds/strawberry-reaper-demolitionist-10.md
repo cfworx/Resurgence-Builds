@@ -39,7 +39,7 @@ Strawberry Milkshake gets dismissed because players evaluate the Anarchy talent 
 - **Skill mod synergy** — the Demolitionist's Shaped Charge mod set explicitly rewards Artillery Turret hits on Bleed/Vulnerable enemies. Anarchy stacks qualify, which means the turret converts the DoT pool into a +7.2% Firepower ramp every fight.
 - **Multi-Shot stacking** — Phalanx Attack 4-piece and Dominating Presence both feed Multi-Shot Chance. Stacking them on an LMG produces an extra-hit blizzard that nobody is building around.
 
-The meta runs Striker Marksman or Sharpshooter DPS rifles. This build sidesteps both ladders entirely. It rewards group density, which is exactly the situation the meta tries to AOE-clear at range.
+The meta runs Sharpshooter DPS rifles — long-range, single-target, clean engagements. This build sidesteps that ladder entirely. It rewards group density, which is exactly the situation the meta tries to AOE-clear at range.
 
 ## Weapons
 
@@ -100,7 +100,7 @@ Artillery Turret hits on Bleed/Vulnerable enemies grant +1.44% Firepower per hit
 
 ### Glass Cannon Trade
 
-+20% Damage output for −10% Damage Resistance. The Anarchy spread pulls aggro toward bodies that are already dying, and the Artillery Turret eats the rest of the attention. At range with active cover use, the DR loss is a paper cut. If you need survivability in Legendary content, swap one Phalanx piece to a Toughness brand and accept the lost set bonus tier.
++20% Damage output for −10% Damage Resistance. The Anarchy spread pulls aggro toward bodies that are already dying, and the Artillery Turret eats the rest of the attention. At range with active cover use, the DR loss is a paper cut.
 
 ### Total Damage Multipliers in a Typical Engagement
 
@@ -162,10 +162,10 @@ Artillery Turret hits on Bleed/Vulnerable enemies grant +1.44% Firepower per hit
 
 | Item | Where to Look |
 |---|---|
-| Strawberry Milkshake | Exotic weapon drops — world bosses, Stronghold completions |
+| Strawberry Milkshake | Exotic weapon drops — world bosses, high-difficulty mission completions |
 | Phalanx Attack 4-piece | T0+ gear drops, available from first content |
 | Stoner LAMG (T2) | T2 LMG drop — world events, Dark Zone |
-| Concerted Strike OS | HE Engineering OS — Stronghold drops |
+| Concerted Strike OS | HE Engineering OS — high-difficulty mission drops |
 | Glass Cannon chest | Recalibrate any chest to Glass Cannon |
 | Overwatch backpack | Recalibrate any backpack to Overwatch |
 | Shaped Charge skill mods | Demolitionist mod drops |
@@ -182,8 +182,3 @@ Artillery Turret hits on Bleed/Vulnerable enemies grant +1.44% Firepower per hit
 
 Stack the bleed. Feed the turret. Watch it all burn.
 
-## Related Builds
-
-- **[Bulwark — The Unkillable Mosquito](/builds/vampire-bulwark-tank-9/)** — The other Strawberry Milkshake build. Trades all of your damage for Toughness and turns the Anarchy talent into a sustain engine instead of a kill cascade.
-- **[Vanguard — The Alt-F4 Shotgun Button](/builds/pve-meta-vanguard-shotgun-7/)** — Also runs Phalanx Attack 4pc but stacks it on a Double Barrel instead of an LMG. Less DoT, more instant deletion.
-- **[Demolitionist — Michael Bay's Wet Dream](/builds/demolitionist-explosive-chaos-4/)** — The other Demolitionist build. Uses Jackpot 4pc and Collateral Damage OS for pure skill-based AoE instead of weapon DoT.

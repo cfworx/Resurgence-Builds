@@ -76,7 +76,3 @@ Best part? Lady Death is obtainable for 17,500 DZ credits. You don't even need r
 6. Spray the Type 81 for a second, then swap back to Lady Death (Backup Battery is off cooldown). 
 7. If you somehow mess this up, **Emergency Measures** auto-procs at <20% HP and restores 50% max HP. It's an idiot-proof panic button on a 30s cooldown.
 
-## Related Builds
-
-- **[Vanguard — The 24-0 Spawn Trapper](/builds/conflict-pvp-fearless-warlord/)** — The Conflict PVP build. Uses the Warlord exotic AR and Fearless Warrior 4pc for a more defensive PVP playstyle.
-- **[Vanguard — The Cross-Map Coward](/builds/cover-shooter-sniper-2/)** — If you prefer deleting enemies from 50m instead of breathing on them with an SMG.

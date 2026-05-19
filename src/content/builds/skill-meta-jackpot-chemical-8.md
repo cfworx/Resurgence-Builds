@@ -75,7 +75,3 @@ The KB-documented endgame version of this archetype (Section 18.37.11) recommend
 
 ---
 
-## Related Builds
-
-- **[Demolitionist — Michael Bay's Wet Dream](/builds/demolitionist-explosive-chaos-4/)** — Also runs Jackpot 4pc but uses Collateral Damage OS and M32A1 for explosive AoE instead of DoT acid pools.
-- **[Demolitionist — The Strawberry Reaper](/builds/strawberry-reaper-demolitionist-10/)** — A weapon-based DoT build that uses the Strawberry Milkshake to spread Anarchy stacks across entire groups.

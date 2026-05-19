@@ -10,7 +10,7 @@ author: "RapidF5"
 ## Methodology
 
 Rankings are based on:
-- **Raw DPS output** in endgame PvE content (Strongholds, Legendary)
+- **Raw DPS output** in endgame PvE content (high-difficulty missions, Legendary)
 - **Talent synergy** with meta gear sets
 - **Ease of use** and consistency
 - **PvP viability** is noted but not weighted

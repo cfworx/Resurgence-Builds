@@ -71,7 +71,3 @@ Stack that absurd combination on a weapon that already fires two shells per pull
 6. Aimed shotgun crits trigger the Explosive Round AOE. Pull the trigger until there is nothing left. 
 7. Swap to the FAMAS to clean up the stragglers who are trying to run away.
 
-## Related Builds
-
-- **[Demolitionist — The Strawberry Reaper](/builds/strawberry-reaper-demolitionist-10/)** — Also runs Phalanx Attack 4pc but on an LMG with DoT spread instead of shotgun burst.
-- **[Bulwark — The Unkillable Mosquito](/builds/vampire-bulwark-tank-9/)** — If you want to survive instead of delete. A tank build that trades all your DPS for immortality.

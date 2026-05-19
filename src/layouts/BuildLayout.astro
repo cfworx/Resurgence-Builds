@@ -166,8 +166,8 @@ const facebookShareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeU
         <hr style="margin: var(--sp-6) 0; border: none; border-top: 1px solid var(--border);" />
         
         {otherBuilds.length > 0 && (
-          <nav class="explore-more" aria-label="Related Guides">
-            <h2 style="font-size: var(--text-xl); margin-bottom: var(--sp-4);">Explore More</h2>
+          <nav class="explore-more" aria-label="Related Builds">
+            <h2 style="font-size: var(--text-xl); margin-bottom: var(--sp-4);">Related Builds</h2>
             <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: var(--sp-2);">
               {otherBuilds.map(build => (
                 <li><a href={`/builds/${build.id}/`}>{build.data.title}</a> <span style="color: var(--ink-muted); font-weight: 400;">— {build.data.specialization} {build.data.playstyle}</span></li>
@@ -250,6 +250,7 @@ const facebookShareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeU
 
     .build-sidebar {
       order: 1;
+      align-self: start;
     }
 
     .build-article {

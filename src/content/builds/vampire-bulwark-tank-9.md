@@ -76,7 +76,3 @@ Plus, the Anarchy DoT means you don't even need perfect aim. Just apply stacks t
 6. Use the Riot Foam signature on elites or when you get overwhelmed. Foam them up for a free, non-consensual DPS window. 
 7. Kill one enemy and keep hosing down the next with fresh Anarchy stacks. The DoT ticks. The armor mod heals. The LMG goes brrrr.
 
-## Related Builds
-
-- **[Demolitionist — The Strawberry Reaper](/builds/strawberry-reaper-demolitionist-10/)** — Uses the same Strawberry Milkshake exotic but as a DPS DoT spreader instead of a tank. Glass Cannon, Phalanx Attack 4pc, and an Artillery Turret that feeds on Anarchy stacks.
-- **[Vanguard — The 24-0 Spawn Trapper](/builds/conflict-pvp-fearless-warlord/)** — Also runs Fearless Warrior 4pc but in a PVP context with the Warlord exotic AR.

@@ -30,7 +30,7 @@ This build wins by stacking **Weapon Crit Damage multipliers that ONLY activate 
 1. **One Shot One Kill 4pc:** Accuracy +24%, Headshot Damage +21.6%, Firepower +18%. 
 2. **Cover Shooter OS:** Crits while in cover grant +16% Weapon Crit Damage, stacking to 3 (+48% total). 
 3. **Hidden Impact Backpack:** +18% Weapon Crit Chance *while in cover*. (See a theme here?)
-4. **Glass Cannon Chest:** +25% Weapon Damage, but you take +30% Damage. This penalty literally does not matter when you never get hit because you're hiding behind a concrete planter 50m away.
+4. **Glass Cannon Chest:** +20% Weapon Damage, but you take +10% more Damage. This penalty literally does not matter when you never get hit because you're hiding behind a concrete planter 50m away.
 5. **DSR-1 with Killer + Long-Distance Marking:** Killer adds +20% Weapon Crit Damage for 10s on kill. Long-Distance Marking pulses targets at range, feeding your Vanguard 3pc passive. 
 
 Oh, and Pulse with Vanguard 3pc adds another +25% Weapon Damage and +8% Crit Chance on the target. 
@@ -73,7 +73,3 @@ The DSR-1 will one-shot most non-elite reds. Elites take 2-3 shots. The whole pa
 6. Pop **Tactical Link** for the lock-on + crit chance window when the heavy elite shows up. 
 7. Reposition between packs to a new cover line. **NEVER LEAVE COVER DURING A FIGHT.** If you stand in the open, you will instantly dissolve into red mist.
 
-## Related Builds
-
-- **[Vanguard — The Alt-F4 Shotgun Button](/builds/pve-meta-vanguard-shotgun-7/)** — The meta PVE DPS build. Close-range shotgun burst instead of long-range sniper picks.
-- **[Vanguard — The Hate Mail Generator](/builds/dark-zone-pvp-vanguard-lady-death-3/)** — If you want to take your Vanguard into the Dark Zone and make enemies.

@@ -35,7 +35,7 @@ Two engines run simultaneously and feed each other to create a permanent stunloc
 - **Deep Focus (+28% Skill Duration)** + **Brainstorm (+30% Skill Duration)** + **Jackpot Skill Radius (+12%)**: This means your Disorient zones cover the entire encounter and last almost the full fight. They can't run, they can't hide, they can't shoot straight.
 
 **Engine 2 — Skill DPS while everyone's stunned**
-- **Jackpot 4pc:** +10.8% Skill Crit Chance, +24% Skill Crit Damage. 
+- **Jackpot 3pc + 4pc:** +10.8% Skill Crit Chance (3pc) and +24% Skill Crit Damage (4pc) — with all 4 pieces slotted you receive both.
 - **Concerted Strike OS:** Skill hits within 20m of an ally grant +8% damage, stacking to 3 (+24%). 
 - Your Drone and Hive both crit-stack on Disoriented enemies who are too busy throwing up from motion sickness to accurately fire back.
 
@@ -74,7 +74,3 @@ The two skills are independent: the Drone follows enemies around to bully them, 
 4. Fire on Disoriented targets. They will barely fire back because they are currently experiencing severe vertigo.
 5. Pop your **Drone Overload** signature to chain Disorient and drop a heavy skill damage burst when a pack gets stuck.
 
-## Related Builds
-
-- **[Field Medic — Babysitting Idiots 101](/builds/legendary-healer-field-medic-5/)** — The other support build. Pure healing instead of crowd-control.
-- **[Demolitionist — Michael Bay's Wet Dream](/builds/demolitionist-explosive-chaos-4/)** — Also runs Jackpot 4pc but uses it for raw AoE destruction instead of team utility.

@@ -129,4 +129,56 @@ Based on flair and post analysis, this dataset covers:
 - Deleted authors appear as `"[deleted]"`
 - Comments are sorted by score (highest first) within each thread
 - Image-only posts have empty `body` fields
-- All timestamps are UTC
+
+---
+
+## Build Authoring Rules (AI Content Standards)
+
+These rules are derived from errors discovered during the 2026-05-19 audit of all published build guides. They are **mandatory checks** before any build post is written or published.
+
+### Rule 8 — Gear Set Bonus Tier Verification *(added 2026-05-19)*
+
+Every gear set bonus cited in a build post **must match the piece count actually slotted in that build's Full Loadout table.**
+
+- Gear set bonuses are tiered: 2pc, 3pc, and 4pc unlock sequentially.
+- If a build slots **2pc**, only the 2pc bonus is active. The 3pc and 4pc bonuses **do not apply**.
+- If a build slots **4pc**, all three tier bonuses are active (2pc + 3pc + 4pc). You may cite all of them, but **label each bonus with its correct tier** (e.g., "Jackpot 3pc: +10.8% Skill CHC" not "Jackpot 4pc: +10.8% Skill CHC").
+
+**Errors found and corrected in 2026-05-19 audit:**
+
+| Build | Error | Fix |
+|---|---|---|
+| Demolitionist Explosive Chaos | Cited Jackpot's 3pc bonus (+10.8% Skill CHC) as "the 4pc bonus" with wrong value (+10%) | Corrected to "Jackpot 3pc + 4pc: +10.8% Skill CHC (3pc) and +24% Skill CHD (4pc)" |
+| Legendary Healer | Labeled Captain Cow 3pc bonus (+14.4% Skill Duration) as "Captain Cow 4pc" | Corrected label to "Captain Cow 3pc" |
+| Tech Op Flashbang Salesman | Labeled Jackpot 3pc bonus as "Jackpot 4pc: +10.8% Skill CHC, +24% Skill CHD" | Split into correct per-tier labels |
+
+### Rule 9 — Talent Value Accuracy *(added 2026-05-19)*
+
+All talent bonus values cited in build posts **must match the exact numbers in the data files** (`src/data/body-armor-talents.json`, `backpack-talents.json`, `weapon-talents.json`, `os-protocols.json`).
+
+**Error found and corrected in 2026-05-19 audit:**
+
+| Build | Error | Correct Value |
+|---|---|---|
+| Cover Shooter Sniper | Glass Cannon cited as "+25% Weapon Damage / −30% DR" | Glass Cannon = **+20% Damage / −10% Damage Reduction** |
+
+### Reference: Gear Set Bonus Table
+
+| Set | 2pc | 3pc | 4pc |
+|---|---|---|---|
+| Fury Strike | +10% Optimal Range | +10.8% WCHC | +24% WCHD |
+| Quick Draw | +12% Reload Speed | +27% Mag Size | +28.8% HSD |
+| Phalanx Attack | +18% Mag Size | +18% Rate of Fire | +12% Multi-Shot |
+| One Shot One Kill | +24% Accuracy | +21.6% HSD | +18% Firepower |
+| Gunny Johnny | +12% Rate of Fire | +18% Reload Speed | +12% Weapon Damage |
+| Mechanical Enemy | +7.2% WCHC | +15% Optimal Range | −12% Skill CDR |
+| Jackpot | +12% Skill Radius | +10.8% Skill CHC | +24% Skill CHD |
+| Long-term Effect | +12% Skill Health | +14.4% Skill Duration | +18% Engineering |
+| Dr. Medic | +10% Healing Intensity | +9% Skill Intensity | +20% Release Extra Protection |
+| Boom-Shakalaka | −6% Skill CDR | +18% Skill Radius | +12% Skill Intensity |
+| Fire Cycle | +12% Skill CHD | +18% SAC Efficiency | +12% Skill Multi-Shot |
+| Mechanical Expert | +9.6% Skill Duration | −9% Skill CDR | +24% SAC Efficiency |
+| Captain Cow | +3.6% Move Speed | +14.4% Skill Duration | +20% Healing Intensity |
+| Healing Elites | +14.4% Received Healing | +15% Release Extra Protection | +28% Armor |
+| Self-Propelled Shield | +14% Armor | +5.4% Move Speed | +24% Max Health |
+| Fearless Warrior | +6% Damage Reduction | +9% Damage Bonus | +18% Toughness |

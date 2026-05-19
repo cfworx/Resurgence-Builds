@@ -71,7 +71,3 @@ The MPX secondary with Steady Hands handles close-quarters for when some brave i
 5. Swap to the MPX if they get inside ~10m for hip-fire CQC dominance. 
 6. Put your Shield up if you need to break a bad angle or if you accidentally took a fair fight.
 
-## Related Builds
-
-- **[Vanguard — The Hate Mail Generator](/builds/dark-zone-pvp-vanguard-lady-death-3/)** — The Dark Zone PVP build. Uses Lady Death exotic SMG instead of Warlord for a different flavor of toxicity.
-- **[Bulwark — The Unkillable Mosquito](/builds/vampire-bulwark-tank-9/)** — Also runs Fearless Warrior 4pc but in a PVE tank context instead of PVP aggression.

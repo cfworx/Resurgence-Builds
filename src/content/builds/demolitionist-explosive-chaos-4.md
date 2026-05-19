@@ -27,10 +27,10 @@ This is a solo-first off-meta Demolitionist build where **every single skill cas
 
 There are four explosion events on *every single M32A1 grenade throw*:
 
-1. **The Grenade Itself:** The Thermabaric Grenades skill mod adds +460% damage and +100% radius. Big boom. 
+1. **The Grenade Itself:** The Thermabaric Grenades skill mod adds +460% damage and +100% radius. Big boom.
 2. **Collateral Damage OS:** Every Skill Damage event triggers a *second* explosion within 5m for 1,600% Engineering (~40,000+ raw damage per proc at endgame, 10s internal cooldown). Bigger boom.
-3. **Explosive Burst Backpack:** Up to +90% Skill Multi-Shot. This means each grenade has a near 1:1 odds of just magically firing a second grenade. Double boom. 
-4. **Jackpot 4pc Skill Crit:** +10% Skill Crit Chance on the 4pc, stacking toward the 99% crit ceiling on every detonation. Spicy boom. 
+3. **Explosive Burst Backpack:** Up to +90% Skill Multi-Shot. This means each grenade has a near 1:1 odds of just magically firing a second grenade. Double boom.
+4. **Jackpot 3pc Skill CHC + 4pc Skill CHD:** Running 4pc gives you the full stack — +10.8% Skill Crit Chance (3pc) and +24% Skill Crit Damage (4pc) — stacking toward the 99% crit ceiling on every detonation. Spicy boom.
 
 On a crit + Multi-Shot proc, a single grenade throw hits the screen for **200,000+ AOE damage**. You will literally not be able to see the enemies through the fire. 
 
@@ -70,7 +70,3 @@ Jackpot is the only set that rolls Skill Crit Chance + Skill Radius on its set b
 4. The Energize chest gives +18% Skill Damage for 8s on medkit use, so pop a medkit when the buff drops to keep the numbers as big as possible. 
 5. Reposition frantically while skills are on cooldown because, again, your toughness is basically tissue paper.
 
-## Related Builds
-
-- **[Demolitionist — The Strawberry Reaper](/builds/strawberry-reaper-demolitionist-10/)** — The other Demolitionist build. Uses Phalanx Attack 4pc and the Strawberry Milkshake exotic for a weapon DoT approach instead of pure skill explosions.
-- **[Tactical Pharma — Pure Environmental Terrorism](/builds/skill-meta-jackpot-chemical-8/)** — Also runs Jackpot 4pc but pairs it with Chemical Trap instead of turret skills.
