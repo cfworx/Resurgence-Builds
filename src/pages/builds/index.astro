@@ -54,6 +54,7 @@ const itemListLd = {
     <div class="grid grid--3" id="builds-grid">
       {sorted.map((build) => (
         <div 
+          style="display: flex; height: 100%;"
           data-spec={build.data.specialization} 
           data-playstyle={build.data.playstyle}
           data-pve={build.data.pve ? 'true' : 'false'}

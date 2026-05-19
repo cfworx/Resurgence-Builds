@@ -6,7 +6,7 @@ pve: true
 pvp: false
 lastUpdated: 2026-05-17
 patch: "Season 2"
-tags: ["commando", "pve", "shotgun", "dps", "phalanx-attack"]
+tags: ["commando", "shotgun", "phalanx-attack"]
 description: "The premier PVE DPS build. A shotgun setup so powerful it functions as an alt-F4 button for elites."
 author: "RapidF5 (via Godlike)"
 featuredImage: "/images/division-resurgence-vanguard-double-barrel-shotgun-pve-build.webp"

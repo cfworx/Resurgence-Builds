@@ -6,7 +6,7 @@ pve: false
 pvp: true
 lastUpdated: 2026-05-11
 patch: "Season 2"
-tags: ["commando", "pvp", "dark-zone", "lady-death", "exotic"]
+tags: ["commando", "dark-zone", "lady-death", "exotic"]
 description: "The absolute pinnacle of Dark Zone toxicity. Wall-hacks, absurd DPS, and an SMG that does everything for you. Expect hate mail."
 author: "RapidF5 (via Willspot)"
 featuredImage: "/images/division-resurgence-dark-zone-pvp-lady-death-build.webp"

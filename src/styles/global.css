@@ -216,6 +216,9 @@ pre code { background: none; padding: 0; }
   border-radius: var(--border-radius);
   padding: var(--sp-6);
   transition: border-color var(--transition-base);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .card:hover { border-color: var(--accent-dim); }

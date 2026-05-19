@@ -6,7 +6,7 @@ pve: true
 pvp: false
 lastUpdated: 2026-05-18
 patch: "Season 2"
-tags: ["demolitionist", "pve", "strawberry-milkshake", "field-grenadier", "glass-cannon"]
+tags: ["strawberry-milkshake", "field-grenadier", "glass-cannon"]
 description: "An off-meta Demolitionist DoT spreader using the Strawberry Milkshake exotic. One kill infects the room — the room never stops bleeding."
 author: "RapidF5"
 featuredImage: "/images/division-resurgence-demolitionist-strawberry-reaper-build.webp"

@@ -1,12 +1,12 @@
 ---
-title: "Bulwark — The Unkillable Mosquito (Tank)"
+title: "Bulwark — The Unkillable Mosquito"
 specialization: Bulwark
 playstyle: Tank
 pve: true
 pvp: false
 lastUpdated: 2026-05-16
 patch: "Season 2"
-tags: ["bulwark", "juggernaut", "tank", "strawberry-milkshake", "pve"]
+tags: ["juggernaut", "strawberry-milkshake"]
 description: "A solo-first off-meta Bulwark build that turns you into a caffeinated mosquito with an LMG. You literally out-heal damage by refusing to stop shooting."
 author: "RapidF5"
 featuredImage: "/images/division-resurgence-bulwark-vampire-lmg-tank-build.webp"

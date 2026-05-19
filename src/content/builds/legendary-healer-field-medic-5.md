@@ -6,7 +6,7 @@ pve: true
 pvp: false
 lastUpdated: 2026-05-13
 patch: "Season 2"
-tags: ["field-medic", "healer", "combat-medicine", "support", "pve"]
+tags: ["healer", "combat-medicine"]
 description: "The best healer in the game for legendary PVE. You will push heal density so high that your teammates' health bars will refuse to move."
 author: "RapidF5"
 featuredImage: "/images/legendary-healer-field-medic.webp"
