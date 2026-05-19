@@ -4,7 +4,7 @@ specialization: Demolitionist
 playstyle: Solo
 pve: true
 pvp: false
-lastUpdated: 2026-05-18
+lastUpdated: 2026-05-12
 patch: "Season 2"
 tags: ["demolitionist", "field-grenadier", "explosive", "jackpot", "pve"]
 description: "A solo-first off-meta Demolitionist build where every skill cast detonates twice. Michael Bay's wet dream."

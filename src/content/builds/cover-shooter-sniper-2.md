@@ -4,7 +4,7 @@ specialization: Vanguard
 playstyle: DPS
 pve: true
 pvp: false
-lastUpdated: 2026-05-18
+lastUpdated: 2026-05-10
 patch: "Season 2"
 tags: ["vanguard", "pve", "sniper", "recon", "glass-cannon"]
 description: "An off-meta Vanguard sniper build that deletes elites from across the map. Glass Cannon + Cover Shooter = one-shot headshots."

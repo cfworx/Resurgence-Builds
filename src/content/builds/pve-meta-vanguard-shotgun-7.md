@@ -4,7 +4,7 @@ specialization: Vanguard
 playstyle: DPS
 pve: true
 pvp: false
-lastUpdated: 2026-05-19
+lastUpdated: 2026-05-17
 patch: "Season 2"
 tags: ["commando", "pve", "shotgun", "dps", "phalanx-attack"]
 description: "The premier PVE DPS build. A shotgun setup so powerful it functions as an alt-F4 button for elites."

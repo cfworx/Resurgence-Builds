@@ -4,7 +4,7 @@ specialization: Vanguard
 playstyle: DPS
 pve: false
 pvp: true
-lastUpdated: 2026-05-18
+lastUpdated: 2026-05-09
 patch: "Season 2"
 tags: ["pvp", "conflict", "commando", "warlord", "exotic"]
 description: "The dominant Conflict PVP build. A setup so disgustingly strong it allows you to spawn-trap entire teams and go 24-0."

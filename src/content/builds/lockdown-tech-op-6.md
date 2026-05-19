@@ -4,7 +4,7 @@ specialization: "Tech Operator"
 playstyle: Support
 pve: true
 pvp: false
-lastUpdated: 2026-05-18
+lastUpdated: 2026-05-14
 patch: "Season 2"
 tags: ["tech-operator", "pve", "offensive-operations", "jackpot", "striker-drone"]
 description: "An off-meta Tech Operator build that keeps an entire pack permanently Disoriented while two skills DPS them down. You are basically a walking flashbang."

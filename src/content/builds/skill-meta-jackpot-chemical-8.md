@@ -4,7 +4,7 @@ specialization: "Field Medic"
 playstyle: DPS
 pve: true
 pvp: false
-lastUpdated: 2026-05-18
+lastUpdated: 2026-05-15
 patch: "Season 2"
 tags: ["field-medic", "pve", "tactical-pharma", "jackpot", "chemical-trap"]
 description: "The top skill-DPS build in the game. You are basically committing environmental terrorism with acid pools."
