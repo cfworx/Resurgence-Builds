@@ -69,7 +69,7 @@ const breadcrumbItems = [
       </div>
 
       {image && (
-        <img src={image} alt={imageAlt || title} style="width: 100%; height: auto; margin-top: var(--sp-4); margin-bottom: var(--sp-6); border-radius: 4px;" loading="eager" fetchpriority="high" />
+        <img src={image} alt={imageAlt || title} style="width: 100%; height: auto; margin-top: var(--sp-4); margin-bottom: var(--sp-6); border-radius: 4px;" loading="eager" fetchpriority="high" decoding="sync" />
       )}
 
       {tocItems.length > 0 && (
@@ -93,7 +93,7 @@ const breadcrumbItems = [
         <slot />
       </div>
 
-      <div class="share-section" style="margin-top: var(--sp-8); padding: var(--sp-5); background: rgba(0,0,0,0.2); border-radius: var(--border-radius); border: 1px solid var(--border); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--sp-4);">
+      <div style="margin-top: var(--sp-8); padding: var(--sp-5); background: rgba(0,0,0,0.2); border-radius: var(--border-radius); border: 1px solid var(--border); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--sp-4);">
         <div>
           <h3 style="margin: 0 0 var(--sp-1) 0; font-size: var(--text-lg);">{shareTitle || "Share this article"}</h3>
           <p style="margin: 0; color: var(--ink-muted); font-size: var(--text-sm);">{shareText || "Share the latest news with other agents."}</p>
