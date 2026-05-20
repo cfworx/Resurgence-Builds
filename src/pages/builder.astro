@@ -1,0 +1,362 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import gearSets from '../data/gear-set-effects.json';
+import weaponTalents from '../data/weapon-talents.json';
+import exoticWeapons from '../data/exotic-weapons.json';
+import bodyArmorTalents from '../data/body-armor-talents.json';
+import backpackTalents from '../data/backpack-talents.json';
+import osProtocols from '../data/os-protocols.json';
+import skillModCombos from '../data/skill-mod-combos.json';
+import bonusAttributes from '../data/bonus-attributes.json';
+
+const title = "Division Resurgence Build Planner — Create & Share Loadouts";
+const description = "Plan your Division Resurgence build with our free tool. Pick gear sets, talents, OS Protocols, and skill mods. See active set bonuses, synergies, and conflicts in real-time. Share builds via URL.";
+const breadcrumbs = [
+  { name: 'Home', url: '/' },
+  { name: 'Builder', url: '/builder/' }
+];
+const faqs = [
+  { question: "What is the Division Resurgence Build Planner?", answer: "A free, browser-based tool that lets you plan loadouts for Tom Clancy's The Division Resurgence. Select gear sets across six armor slots, choose body armor and backpack talents, pick an OS Protocol and Skill Mod Combo, then see which set bonuses activate and how your choices synergize." },
+  { question: "How does the build planner generate recommendations?", answer: "The planner uses deterministic, rule-based logic — not AI guessing. It counts gear set pieces to determine active bonuses, scans talent descriptions for stat synergies, and flags conflicts like mixing incompatible playstyles. Every recommendation explains its reasoning." },
+  { question: "Can I share my build with other players?", answer: "Yes. Click Copy Build Link to generate a URL that encodes your entire loadout. Anyone who opens that link sees your exact build restored in the planner." },
+  { question: "Where does the build data come from?", answer: "All data comes from the ResurgenceBuilds.com verified dataset: 16 gear sets, 69 weapon talents, 25 body armor talents, 25 backpack talents, 66 OS Protocols, and 87 Skill Mod Combos. No data is imported from The Division 1, The Division 2, or third-party sources." }
+];
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebApplication',
+  name: 'Division Resurgence Build Planner',
+  description,
+  url: 'https://resurgencebuilds.com/builder/',
+  applicationCategory: 'GameApplication',
+  operatingSystem: 'Web',
+  offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' }
+};
+
+const allAttributes = bonusAttributes.flatMap(cat => cat.attributes);
+const SPECS = ['Demolitionist','Tech Operator','Bulwark','Vanguard','Field Medic'];
+const SLOTS = [
+  { key: 'mask', label: 'Mask', icon: '🎭', hasTalent: false },
+  { key: 'gloves', label: 'Gloves', icon: '🧤', hasTalent: false },
+  { key: 'holster', label: 'Holster', icon: '🔗', hasTalent: false },
+  { key: 'kneepads', label: 'Kneepads', icon: '🦿', hasTalent: false },
+  { key: 'body', label: 'Body Armor', icon: '🛡️', hasTalent: true, talentType: 'body' },
+  { key: 'backpack', label: 'Backpack', icon: '🎒', hasTalent: true, talentType: 'backpack' },
+];
+
+const dataPayload = JSON.stringify({ gearSets, weaponTalents, exoticWeapons, bodyArmorTalents, backpackTalents, osProtocols, skillModCombos, bonusAttributes, allAttributes });
+---
+
+<BaseLayout title={title} description={description} breadcrumbs={breadcrumbs} faqs={faqs} jsonLd={jsonLd} keywords={["division resurgence build planner","division resurgence builder","division resurgence loadout tool","resurgence build maker"]}>
+
+<section class="builder-hero">
+  <div class="container">
+    <span class="section-tag">// BUILD PLANNER</span>
+    <h1 class="builder-hero__title">Division Resurgence Build Planner</h1>
+    <p class="builder-hero__sub">Plan your loadout, see active set bonuses, detect synergies, and share your build — all from verified game data.</p>
+  </div>
+</section>
+
+<section class="builder-app container" id="builder-app">
+
+  <div class="builder-step" id="step-spec">
+    <h2 class="builder-step__heading">Specialization</h2>
+    <div class="spec-picker" id="spec-picker">
+      {SPECS.map(s => {
+        const cls = s === 'Demolitionist' ? 'demo' : s === 'Tech Operator' ? 'tech' : s === 'Bulwark' ? 'bulwark' : s === 'Vanguard' ? 'vanguard' : 'medic';
+        return <button class={`spec-btn spec-btn--${cls}`} data-spec={s} type="button">{s === 'Tech Operator' ? 'Tech Op' : s === 'Field Medic' ? 'Medic' : s}</button>;
+      })}
+    </div>
+  </div>
+
+  <div class="builder-layout">
+    <div class="builder-editor">
+
+      <div class="builder-step">
+        <h2 class="builder-step__heading">Gear Slots</h2>
+        {SLOTS.map(slot => (
+          <div class="slot-card" id={`slot-${slot.key}`}>
+            <div class="slot-card__header">
+              <span class="slot-card__icon">{slot.icon}</span>
+              <span class="slot-card__label">{slot.label}</span>
+              <span class="slot-card__badge" id={`badge-${slot.key}`}></span>
+            </div>
+            <div class="slot-card__body">
+              <div class="slot-card__row">
+                <label class="slot-label" for={`set-${slot.key}`}>Set</label>
+                <select class="slot-select" id={`set-${slot.key}`} data-slot={slot.key} data-field="set">
+                  <option value="">— None —</option>
+                  {gearSets.map(gs => <option value={gs.id}>{gs.name}</option>)}
+                </select>
+              </div>
+              {slot.hasTalent && (
+                <div class="slot-card__row">
+                  <label class="slot-label" for={`talent-${slot.key}`}>Talent</label>
+                  <select class="slot-select" id={`talent-${slot.key}`} data-slot={slot.key} data-field="talent">
+                    <option value="">— None —</option>
+                    {slot.talentType === 'body'
+                      ? bodyArmorTalents.map(t => <option value={t.id}>{t.name}</option>)
+                      : backpackTalents.map(t => <option value={t.id}>{t.name}</option>)
+                    }
+                  </select>
+                </div>
+              )}
+              <div class="slot-card__row slot-card__row--attrs">
+                <div class="slot-attr">
+                  <label class="slot-label" for={`attr1-${slot.key}`}>Bonus 1</label>
+                  <select class="slot-select slot-select--sm" id={`attr1-${slot.key}`} data-slot={slot.key} data-field="attr1">
+                    <option value="">— None —</option>
+                    {allAttributes.map(a => <option value={a}>{a}</option>)}
+                  </select>
+                </div>
+                <div class="slot-attr">
+                  <label class="slot-label" for={`attr2-${slot.key}`}>Bonus 2</label>
+                  <select class="slot-select slot-select--sm" id={`attr2-${slot.key}`} data-slot={slot.key} data-field="attr2">
+                    <option value="">— None —</option>
+                    {allAttributes.map(a => <option value={a}>{a}</option>)}
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <div class="builder-step">
+        <h2 class="builder-step__heading">Weapons</h2>
+        <div class="slot-card" id="slot-weapon1">
+          <div class="slot-card__header">
+            <span class="slot-card__icon">🔫</span>
+            <span class="slot-card__label">Primary Weapon</span>
+          </div>
+          <div class="slot-card__body">
+            <div class="slot-card__row">
+              <label class="slot-label" for="exotic-w1">Exotic</label>
+              <select class="slot-select" id="exotic-w1" data-weapon="1" data-field="exotic">
+                <option value="">— Standard Weapon —</option>
+                {exoticWeapons.map(e => <option value={e.id}>{e.name} ({e.type})</option>)}
+              </select>
+            </div>
+            <div class="slot-card__row">
+              <label class="slot-label" for="wtalent-w1">Talent</label>
+              <select class="slot-select" id="wtalent-w1" data-weapon="1" data-field="talent">
+                <option value="">— None —</option>
+                {weaponTalents.map(t => <option value={t.id}>{t.name}</option>)}
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="slot-card" id="slot-weapon2">
+          <div class="slot-card__header">
+            <span class="slot-card__icon">🔫</span>
+            <span class="slot-card__label">Secondary Weapon</span>
+          </div>
+          <div class="slot-card__body">
+            <div class="slot-card__row">
+              <label class="slot-label" for="exotic-w2">Exotic</label>
+              <select class="slot-select" id="exotic-w2" data-weapon="2" data-field="exotic">
+                <option value="">— Standard Weapon —</option>
+                {exoticWeapons.map(e => <option value={e.id}>{e.name} ({e.type})</option>)}
+              </select>
+            </div>
+            <div class="slot-card__row">
+              <label class="slot-label" for="wtalent-w2">Talent</label>
+              <select class="slot-select" id="wtalent-w2" data-weapon="2" data-field="talent">
+                <option value="">— None —</option>
+                {weaponTalents.map(t => <option value={t.id}>{t.name}</option>)}
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="builder-step">
+        <h2 class="builder-step__heading">OS Protocol</h2>
+        <div class="slot-card" id="slot-os">
+          <div class="slot-card__header">
+            <span class="slot-card__icon">⚙️</span>
+            <span class="slot-card__label">OS Protocol</span>
+            <span class="slot-card__badge" id="badge-os"></span>
+          </div>
+          <div class="slot-card__body">
+            <select class="slot-select" id="select-os">
+              <option value="">— Choose specialization first —</option>
+            </select>
+            <div class="os-detail" id="os-detail"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="builder-step">
+        <h2 class="builder-step__heading">Skill Mod Combo</h2>
+        <div class="slot-card" id="slot-smc">
+          <div class="slot-card__header">
+            <span class="slot-card__icon">🧩</span>
+            <span class="slot-card__label">Skill Mod Combo</span>
+          </div>
+          <div class="slot-card__body">
+            <select class="slot-select" id="select-smc">
+              <option value="">— Choose specialization first —</option>
+            </select>
+            <div class="smc-detail" id="smc-detail"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <aside class="builder-summary" id="builder-summary">
+      <div class="summary-inner">
+        <h2 class="summary-title">Build Summary</h2>
+        <div id="summary-empty" class="summary-empty">Select a specialization and gear to see your build analysis.</div>
+        <div id="summary-sets" class="summary-section" style="display:none">
+          <h3 class="summary-section__title">Active Set Bonuses</h3>
+          <div id="summary-sets-list"></div>
+        </div>
+        <div id="summary-talents" class="summary-section" style="display:none">
+          <h3 class="summary-section__title">Selected Talents</h3>
+          <div id="summary-talents-list"></div>
+        </div>
+        <div id="summary-synergies" class="summary-section" style="display:none">
+          <h3 class="summary-section__title">Synergies</h3>
+          <div id="summary-synergies-list"></div>
+        </div>
+        <div id="summary-conflicts" class="summary-section" style="display:none">
+          <h3 class="summary-section__title">Warnings</h3>
+          <div id="summary-conflicts-list"></div>
+        </div>
+        <div class="summary-actions">
+          <button class="btn btn--primary" id="btn-copy" type="button">Copy Build Link</button>
+          <button class="btn btn--outline" id="btn-reset" type="button">Reset</button>
+        </div>
+        <div id="copy-toast" class="copy-toast">Link copied!</div>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<section class="builder-about container">
+  <div class="builder-about__content">
+    <h2>How the Build Planner Works</h2>
+    <p>This planner operates on the ResurgenceBuilds.com verified dataset — 16 gear sets with tiered bonuses, 69 weapon talents, 25 body armor talents, 25 backpack talents, 66 OS Protocols across three specialization trees, and 87 Skill Mod Combos for all five specializations. No data is imported from The Division 1, The Division 2, or community wikis.</p>
+    <p>Select a specialization to filter OS Protocols and Skill Mod Combos to your class. Then fill gear slots with sets — the planner automatically counts pieces and shows which 2-piece, 3-piece, and 4-piece bonuses are active. Body Armor and Backpack slots accept talents that further define your playstyle. The synergy engine scans your selections for complementary stat stacking (e.g., multiple Skill Crit sources) and flags potential conflicts (e.g., Glass Cannon with no survivability).</p>
+    <p>Every recommendation uses deterministic logic with plain-English explanations. There is no hidden AI or vague "intelligence" — you can trace exactly why each synergy or warning appears.</p>
+
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-list">
+      {faqs.map(faq => (
+        <details class="faq-item">
+          <summary class="faq-question">{faq.question}</summary>
+          <p class="faq-answer">{faq.answer}</p>
+        </details>
+      ))}
+    </div>
+
+    <p class="builder-about__cta">Looking for ready-made builds? Browse our <a href="/builds/">curated build guides</a> or explore the full <a href="/database/gear-set-effects/">gear set database</a>.</p>
+  </div>
+</section>
+
+<noscript>
+  <div class="container" style="padding: 3rem 0; text-align: center;">
+    <p>The Build Planner requires JavaScript to function. Please enable JavaScript to use this tool.</p>
+    <p>In the meantime, check out our <a href="/builds/">pre-made build guides</a>.</p>
+  </div>
+</noscript>
+
+<script type="application/json" id="builder-data" is:inline set:html={dataPayload}></script>
+<script src="/js/builder-engine.js" is:inline defer></script>
+
+</BaseLayout>
+
+<style>
+.builder-hero{padding:var(--sp-12) 0 var(--sp-8);border-bottom:1px solid var(--border)}
+.builder-hero__title{font-size:var(--text-3xl);margin-bottom:var(--sp-3)}
+.builder-hero__sub{color:var(--ink-muted);max-width:55ch;font-size:var(--text-base)}
+@media(min-width:768px){.builder-hero{padding:var(--sp-16) 0 var(--sp-10)}.builder-hero__title{font-size:var(--text-4xl)}}
+
+.builder-app{padding:var(--sp-8) 0}
+.builder-layout{display:flex;flex-direction:column;gap:var(--sp-6)}
+@media(min-width:1024px){.builder-layout{flex-direction:row}.builder-editor{flex:1;min-width:0}.builder-summary{width:22rem;flex-shrink:0}}
+
+.builder-step{margin-bottom:var(--sp-6)}
+.builder-step__heading{font-size:var(--text-lg);margin-bottom:var(--sp-4);padding-bottom:var(--sp-2);border-bottom:1px solid var(--border);font-family:var(--font-heading)}
+
+.spec-picker{display:flex;flex-wrap:wrap;gap:var(--sp-2)}
+.spec-btn{font-family:var(--font-heading);font-weight:700;font-size:var(--text-sm);padding:var(--sp-3) var(--sp-4);background:var(--surface);border:1px solid var(--border);border-radius:var(--border-radius);color:var(--ink-muted);cursor:pointer;transition:all var(--transition-fast);min-height:48px;text-transform:uppercase;letter-spacing:.03em}
+.spec-btn:hover{border-color:var(--ink-muted);color:var(--ink)}
+.spec-btn.is-active{color:#fff}
+.spec-btn--demo.is-active{background:#8c1e14;border-color:#e74c3c;color:#e74c3c}
+.spec-btn--tech.is-active{background:#5a4e00;border-color:#f1c40f;color:#f1c40f}
+.spec-btn--bulwark.is-active{background:#185a8a;border-color:#3498db;color:#3498db}
+.spec-btn--vanguard.is-active{background:var(--accent-dim);border-color:var(--accent);color:var(--accent)}
+.spec-btn--medic.is-active{background:#1a7b45;border-color:#2ecc71;color:#2ecc71}
+
+.slot-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--border-radius);margin-bottom:var(--sp-3);transition:border-color var(--transition-fast)}
+.slot-card:hover{border-color:var(--accent-dim)}
+.slot-card__header{display:flex;align-items:center;gap:var(--sp-2);padding:var(--sp-3) var(--sp-4);border-bottom:1px solid var(--border);font-family:var(--font-heading);font-weight:700;font-size:var(--text-sm)}
+.slot-card__icon{font-size:var(--text-base)}
+.slot-card__label{flex:1}
+.slot-card__badge{font-family:var(--font-mono);font-size:var(--text-xs);padding:2px 6px;border-radius:3px;background:var(--surface-2);color:var(--ink-muted);display:none}
+.slot-card__badge.has-set{display:inline-block}
+.slot-card__badge.full-bonus{background:var(--accent-dim);color:var(--accent)}
+.slot-card__body{padding:var(--sp-3) var(--sp-4)}
+.slot-card__row{margin-bottom:var(--sp-2)}
+.slot-card__row:last-child{margin-bottom:0}
+.slot-card__row--attrs{display:grid;grid-template-columns:1fr 1fr;gap:var(--sp-2)}
+
+.slot-label{display:block;font-family:var(--font-mono);font-size:var(--text-xs);color:var(--ink-muted);text-transform:uppercase;letter-spacing:.05em;margin-bottom:var(--sp-1)}
+.slot-select{width:100%;padding:var(--sp-2) var(--sp-3);background:var(--surface-2);border:1px solid var(--border);border-radius:var(--border-radius);color:var(--ink);font-size:var(--text-sm);min-height:44px;cursor:pointer;transition:border-color var(--transition-fast);appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%239A9A9E' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 10px center}
+.slot-select:focus{border-color:var(--accent);outline:none}
+.slot-select--sm{font-size:var(--text-xs);min-height:40px;padding:var(--sp-1) var(--sp-2)}
+.slot-select option{background:var(--surface-2);color:var(--ink)}
+
+.os-detail,.smc-detail{margin-top:var(--sp-2);padding:var(--sp-3);background:var(--surface-2);border-radius:var(--border-radius);font-size:var(--text-xs);color:var(--ink-muted);line-height:1.5;display:none}
+.os-detail.is-visible,.smc-detail.is-visible{display:block}
+
+.summary-inner{position:sticky;top:calc(var(--nav-height) + var(--sp-4));background:var(--surface);border:1px solid var(--border);border-radius:var(--border-radius);padding:var(--sp-4)}
+.summary-title{font-size:var(--text-base);margin-bottom:var(--sp-4);padding-bottom:var(--sp-2);border-bottom:2px solid var(--accent);font-family:var(--font-heading)}
+.summary-empty{color:var(--ink-muted);font-size:var(--text-sm);text-align:center;padding:var(--sp-6) 0}
+.summary-section{margin-bottom:var(--sp-4)}
+.summary-section__title{font-family:var(--font-mono);font-size:var(--text-xs);text-transform:uppercase;letter-spacing:.08em;color:var(--ink-muted);margin-bottom:var(--sp-2)}
+
+.summary-set-item{padding:var(--sp-2) var(--sp-3);background:var(--surface-2);border-radius:var(--border-radius);margin-bottom:var(--sp-1);font-size:var(--text-sm);border-left:3px solid var(--border)}
+.summary-set-item.tier-2{border-left-color:#9A9A9E}
+.summary-set-item.tier-3{border-left-color:var(--accent-dim)}
+.summary-set-item.tier-4{border-left-color:var(--accent)}
+.summary-set-name{font-weight:700;font-family:var(--font-heading)}
+.summary-set-count{font-family:var(--font-mono);font-size:var(--text-xs);color:var(--ink-muted)}
+.summary-set-bonus{font-size:var(--text-xs);color:var(--ink-muted);margin-top:2px}
+
+.summary-talent-item{padding:var(--sp-1) var(--sp-3);font-size:var(--text-sm);color:var(--ink-muted);border-left:2px solid var(--border);margin-bottom:var(--sp-1)}
+.summary-talent-item strong{color:var(--ink);font-weight:500}
+
+.summary-synergy{padding:var(--sp-2) var(--sp-3);background:rgba(109,170,69,0.08);border-left:3px solid var(--success);border-radius:var(--border-radius);margin-bottom:var(--sp-1);font-size:var(--text-xs);color:var(--ink-muted);line-height:1.5}
+.summary-conflict{padding:var(--sp-2) var(--sp-3);background:rgba(224,64,46,0.08);border-left:3px solid var(--danger);border-radius:var(--border-radius);margin-bottom:var(--sp-1);font-size:var(--text-xs);color:var(--ink-muted);line-height:1.5}
+
+.summary-actions{display:flex;gap:var(--sp-2);margin-top:var(--sp-4)}
+.summary-actions .btn{flex:1;font-size:var(--text-xs);padding:var(--sp-2) var(--sp-3)}
+
+.copy-toast{position:fixed;bottom:var(--sp-4);left:50%;transform:translateX(-50%) translateY(100px);background:var(--accent);color:#fff;padding:var(--sp-2) var(--sp-6);border-radius:var(--border-radius);font-family:var(--font-heading);font-weight:700;font-size:var(--text-sm);z-index:200;transition:transform .3s ease;pointer-events:none}
+.copy-toast.is-visible{transform:translateX(-50%) translateY(0)}
+
+.builder-about{padding:var(--sp-12) 0 var(--sp-8);border-top:1px solid var(--border);margin-top:var(--sp-8)}
+.builder-about__content{max-width:var(--content-width)}
+.builder-about__content h2{margin-top:var(--sp-8);padding-bottom:var(--sp-2);border-bottom:1px solid var(--border)}
+.builder-about__content h2:first-child{margin-top:0}
+.builder-about__content p{color:var(--ink-muted);line-height:1.7;margin-bottom:var(--sp-4)}
+.builder-about__cta{margin-top:var(--sp-6);padding:var(--sp-4);background:var(--surface);border:1px solid var(--border);border-radius:var(--border-radius)}
+
+.faq-list{margin:var(--sp-4) 0}
+.faq-item{background:var(--surface);border:1px solid var(--border);border-radius:var(--border-radius);margin-bottom:var(--sp-2);overflow:hidden}
+.faq-question{padding:var(--sp-3) var(--sp-4);font-family:var(--font-heading);font-weight:700;font-size:var(--text-sm);cursor:pointer;list-style:none;display:flex;align-items:center;justify-content:space-between;min-height:48px}
+.faq-question::-webkit-details-marker{display:none}
+.faq-question::after{content:'＋';font-size:var(--text-lg);color:var(--accent);transition:transform .2s}
+.faq-item[open] .faq-question::after{content:'－'}
+.faq-answer{padding:0 var(--sp-4) var(--sp-4);font-size:var(--text-sm);color:var(--ink-muted);line-height:1.6}
+
+@media(max-width:767px){
+  .builder-hero__title{font-size:var(--text-2xl)}
+  .spec-btn{font-size:var(--text-xs);padding:var(--sp-2) var(--sp-3);min-height:42px}
+  .slot-card__row--attrs{grid-template-columns:1fr}
+  .summary-inner{position:static}
+}
+</style>
