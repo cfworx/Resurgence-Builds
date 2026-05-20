@@ -1,38 +1,57 @@
 Add-Type -AssemblyName System.IO.Compression.FileSystem
-$docxPath = Join-Path $PSScriptRoot '..\game_knowledge\game_knowledge.docx'
-$zip = [System.IO.Compression.ZipFile]::OpenRead($docxPath)
-$entry = $zip.Entries | Where-Object { $_.FullName -eq 'word/document.xml' }
-$stream = $entry.Open()
-$reader = New-Object System.IO.StreamReader($stream)
-$xml = $reader.ReadToEnd()
-$reader.Dispose()
-$stream.Dispose()
-$zip.Dispose()
+Add-Type -AssemblyName System.IO.Compression
 
-# Strip XML tags to get plain text
-$text = [regex]::Replace($xml, '<[^>]+>', ' ')
-$text = [regex]::Replace($text, '\s+', ' ')
+$docxPath = Resolve-Path (Join-Path $PSScriptRoot '..\game_knowledge\game_knowledge.docx')
 
-# Find the SECOND occurrence of 18.27 (body, not TOC)
-$idx1 = $text.IndexOf('18.27 Confirmed Bugs')
-$idx2 = $text.IndexOf('18.27 Confirmed Bugs', $idx1 + 1)
+$zipBytes = [System.IO.File]::ReadAllBytes($docxPath)
+$memStream = New-Object System.IO.MemoryStream
+$memStream.Write($zipBytes, 0, $zipBytes.Length)
+$memStream.Position = 0
 
-$targetIdx = if ($idx2 -gt 0) { $idx2 } else { $idx1 }
-Write-Output "18.27 body at: $targetIdx"
+$archive = New-Object System.IO.Compression.ZipArchive($memStream, [System.IO.Compression.ZipArchiveMode]::Update, $true)
 
-# Find 18.28 body
-$idx1b = $text.IndexOf('18.28 Patches')
-$idx2b = $text.IndexOf('18.28 Patches', $idx1b + 1)
-$targetIdx2 = if ($idx2b -gt 0) { $idx2b } else { $idx1b }
-Write-Output "18.28 body at: $targetIdx2"
+$docEntry = $archive.GetEntry('word/document.xml')
+$docStream = $docEntry.Open()
+$docReader = New-Object System.IO.StreamReader($docStream, [System.Text.Encoding]::UTF8)
+$docXml = $docReader.ReadToEnd()
+$docReader.Dispose()
+$docStream.Dispose()
 
-# Find Section 12 Exotic Weapons body
-$idx12a = $text.IndexOf('12. Exotic Weapons')
-$idx12b = $text.IndexOf('12. Exotic Weapons', $idx12a + 1)
-$target12 = if ($idx12b -gt 0) { $idx12b } else { $idx12a }
-Write-Output "Section 12 body at: $target12"
+# ==========================================
+# Find exact paragraph boundaries
+# ==========================================
 
-if ($targetIdx -gt 0) {
-    Write-Output "`n--- 18.27 BUGS BODY ---"
-    Write-Output $text.Substring($targetIdx, [Math]::Min(4000, $text.Length - $targetIdx))
+# The body occurrence of "18.28 Patches" is at 1760026
+# Find the <w:p at or before that position - search backwards
+$bodyPos1828 = 1760026
+$paraStart1828 = $docXml.LastIndexOf('<w:p ', $bodyPos1828)
+Write-Output "Para start for 18.28 body heading: $paraStart1828"
+
+# Find the body occurrence of "18.29 Beginner Myth"
+$search1829 = '18.29 Beginner Myth'
+$idx1829a = $docXml.IndexOf($search1829)
+$idx1829b = $docXml.IndexOf($search1829, $idx1829a + 1)
+$bodyPos1829 = if ($idx1829b -gt 0) { $idx1829b } else { $idx1829a }
+$paraStart1829 = $docXml.LastIndexOf('<w:p ', $bodyPos1829)
+Write-Output "Para start for 18.29 body heading: $paraStart1829"
+
+# Find the body occurrence of "18.28" last bullet (just before 18.29)
+# to insert the new 1.2.1 entry
+# Show what's between the two
+Write-Output "`n--- Content between 18.28 and 18.29 (last 500 chars before 18.29 para) ---"
+$snippet = $docXml.Substring($paraStart1828, $paraStart1829 - $paraStart1828)
+Write-Output "Length of 18.28 section: $($snippet.Length)"
+# Show last 800 chars of the 18.28 section
+$snippetEnd = $snippet.Substring([Math]::Max(0, $snippet.Length - 800))
+Write-Output $snippetEnd
+
+# Also check Strawberry Milkshake in XML
+$smSearch = 'Contagion DoT'
+$smIdx = $docXml.IndexOf($smSearch)
+Write-Output "`nStrawberry Milkshake 'Contagion DoT' at: $smIdx"
+if ($smIdx -gt 0) {
+    Write-Output $docXml.Substring([Math]::Max(0,$smIdx-100), [Math]::Min(600, $docXml.Length - $smIdx + 100))
 }
+
+$archive.Dispose()
+$memStream.Dispose()
