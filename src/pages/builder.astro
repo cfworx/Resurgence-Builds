@@ -16,7 +16,7 @@ const templates = allBuilds
   .filter(b => b.data.plannerHash)
   .map(b => ({
     id: b.id,
-    title: b.data.title.split(' — ')[0], // Clean up the title (e.g. Field Medic)
+    title: (b.data.title.split(' — ')[1] || b.data.title).trim(), // Get the build name after the spec (e.g. "The Alt-F4 Shotgun Button")
     hash: b.data.plannerHash,
     spec: b.data.specialization === 'Tech Operator' ? 'Tech Op' : b.data.specialization === 'Field Medic' ? 'Medic' : b.data.specialization
   }));

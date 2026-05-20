@@ -103,7 +103,10 @@
     if (selectTemplate) {
       selectTemplate.addEventListener('change', e => {
         if (e.target.value) {
-          location.hash = e.target.value;
+          // Use replaceState to set hash without triggering hashchange,
+          // then directly call loadFromURL for reliable mobile support
+          history.replaceState(null, '', '#' + e.target.value);
+          loadFromURL();
         }
       });
     }
