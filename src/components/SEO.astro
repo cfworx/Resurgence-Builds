@@ -43,7 +43,7 @@ const breadcrumbLd = breadcrumbs.length > 0 ? {
     '@type': 'ListItem',
     position: index + 1,
     name: crumb.name,
-    item: `${siteUrl}${crumb.url}`,
+    item: crumb.url === '#' ? canonicalURL : `${siteUrl}${crumb.url}`,
   })),
 } : null;
 
