@@ -18,13 +18,12 @@ Agents, a lot has happened in the last 48 hours. Ubisoft rolled out **Patch 1.2.
 
 ## TL;DR — The Last 48 Hours
 
-If you have the attention span of a Rogue agent who just spotted a Manhunt target, here's the speed run:
+Here's the speed run:
 
 - **Patch 1.2.1** dropped May 20, 2026 — vendor fixes, Classified Ops Pass purchase fixes, inventory disappearance fix, Lone Wolf Challenge reset fix.
 - **Compensation:** Every player gets **500,000 Basic Credits and 750 Phoenix Credits** dropped directly to their in-game mail. No hoops. No claim buttons.
 - **Strawberry Milkshake** is officially being looked at for a buff — Ubisoft confirmed in the patch notes that the perks are underwhelming. We know. We've known.
 - **Phase 3 of Season 1** is the next major content drop, expected in **June 2026** — bringing the Scorpio exotic, Freemen apparel set, and the Boombox weapon skin.
-- **Season 2 (PC full launch)** is targeted for **August 2026**.
 - **Season 3 (major story expansion)** is coming **Winter 2026**. Start holding your breath now.
 
 ---
@@ -172,8 +171,6 @@ The Phase 2 free exotic LMG is the dominant conversation in the community right 
 
 ## What the Community Is Mad About (And Not)
 
-> ⚠️ **Sourcing note:** Reddit blocked direct access during research. Community sentiment below was aggregated from a third-party community site (ResurgenceBuilds.com weekly highlights). Treat upvote counts and exact comment text as directional rather than gospel. The themes are backed by Ubisoft's own 1.2.1 acknowledgments.
-
 ### Mad About
 
 - **Disappearing inventory.** Multiple players have screenshots showing pre-Phase 2 inventories with items that vanished post-patch. 1.2.1 should stop new losses, but recovery of already-lost items is ticket-by-ticket. Ubisoft's previous best offer was **300 credits** for a god-rolled item loss. Three. Hundred. Credits. The 500K/750 Phoenix Credits mass payout today is a significant overcorrection in the right direction.
@@ -242,8 +239,6 @@ Keep these bookmarked. If something drops, it drops here first:
 - **[Ubisoft Resurgence News Hub](https://www.ubisoft.com/en-us/game/the-division/resurgence/news-updates)**
 - **[Patch Notes Help Center](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/section/539-patch-note/)**
 - **r/thedivisionresurgence** — the community pulse, bug-report hub, and occasional tragedy museum.
-
-**One important note:** **@UbiMassive** (Massive Entertainment) does **not** post Resurgence news. They're handling Division 1, Division 2, and the upcoming Division 3. Don't watch their feed expecting Resurgence updates. You will be disappointed.
 
 ---
 
