@@ -7,9 +7,16 @@
     'Demolitionist':'Engineering','Tech Operator':'Engineering',
     'Bulwark':'Toughness','Vanguard':'Firepower','Field Medic':'Toughness'
   };
+  const SPEC_SUBCLASSES = {
+    'Demolitionist': ['High Explosive', 'Field Grenadier'],
+    'Tech Operator': ['Offensive Operations', 'Aegis Operations'],
+    'Bulwark': ['Juggernaut', 'Breacher'],
+    'Vanguard': ['Commando', 'Recon'],
+    'Field Medic': ['Tactical Pharma', 'Combat Medicine']
+  };
   const GEAR_SLOTS = ['mask','gloves','holster','kneepads','body','backpack'];
 
-  let state = {spec:null, slots:{}, weapon1:{id:'',tier:'T2',talent:''}, weapon2:{id:'',tier:'T2',talent:''}, os:'', smc:''};
+  let state = {spec:null, subclass:'', slots:{}, weapon1:{id:'',tier:'T2',talent:''}, weapon2:{id:'',tier:'T2',talent:''}, os:'', smc1:'', smc2:'', smc3:'', buildName:''};
   GEAR_SLOTS.forEach(s => state.slots[s] = {set:'',talent:'',attr1:'',attr2:''});
 
   function init(){
@@ -20,7 +27,8 @@
       btn.classList.add('is-active');
       state.spec = btn.dataset.spec;
       populateOSDropdown();
-      populateSMCDropdown();
+      populateSubclassDropdown();
+      populateSMCDropdowns();
       update();
     });
 
@@ -79,13 +87,34 @@
     });
 
     document.getElementById('select-os').addEventListener('change', e => { state.os = e.target.value; showOSDetail(); update(); });
-    document.getElementById('select-smc').addEventListener('change', e => { state.smc = e.target.value; showSMCDetail(); update(); });
+    document.getElementById('select-subclass').addEventListener('change', e => { state.subclass = e.target.value; update(); });
+    ['1', '2', '3'].forEach(num => {
+      document.getElementById(`select-smc${num}`).addEventListener('change', e => {
+        state[`smc${num}`] = e.target.value;
+        populateSMCDropdowns();
+        update();
+      });
+    });
+    document.getElementById('input-build-name').addEventListener('input', e => {
+      state.buildName = e.target.value;
+      update();
+    });
+    const selectTemplate = document.getElementById('select-template');
+    if (selectTemplate) {
+      selectTemplate.addEventListener('change', e => {
+        if (e.target.value) {
+          location.hash = e.target.value;
+        }
+      });
+    }
     document.getElementById('btn-copy').addEventListener('click', copyLink);
     document.getElementById('btn-reset').addEventListener('click', resetBuild);
 
     populateOSDropdown();
-    populateSMCDropdown();
+    populateSubclassDropdown();
+    populateSMCDropdowns();
     loadFromURL();
+    window.addEventListener('hashchange', loadFromURL);
   }
 
   function populateOSDropdown(){
@@ -112,24 +141,55 @@
     showOSDetail();
   }
 
-  function populateSMCDropdown(){
-    const sel = document.getElementById('select-smc');
-    const filtered = state.spec ? skillModCombos.filter(s => s.specialization === state.spec) : skillModCombos;
+  function populateSubclassDropdown(){
+    const sel = document.getElementById('select-subclass');
+    const filtered = state.spec ? SPEC_SUBCLASSES[state.spec] : [];
     
     sel.innerHTML = state.spec
-      ? '<option value="">— Select Skill Mod Combo —</option>'
-      : '<option value="">— Select Skill Mod Combo (All) —</option>';
+      ? '<option value="">— Select Sub Class —</option>'
+      : '<option value="">— Choose spec first —</option>';
       
-    filtered.forEach(s => {
+    filtered.forEach(sc => {
       const opt = document.createElement('option');
-      opt.value = s.id;
-      opt.textContent = `[${s.specialization}] ${s.name}`;
+      opt.value = sc;
+      opt.textContent = sc;
       sel.appendChild(opt);
     });
     
-    if(state.smc && filtered.find(s => s.id === state.smc)) sel.value = state.smc;
-    else { state.smc = ''; }
-    showSMCDetail();
+    if(state.subclass && filtered.includes(state.subclass)) sel.value = state.subclass;
+    else { state.subclass = ''; }
+  }
+
+  function populateSMCDropdowns(){
+    const filtered = state.spec ? skillModCombos.filter(s => s.specialization === state.spec) : skillModCombos;
+    
+    ['1', '2', '3'].forEach(num => {
+      const sel = document.getElementById(`select-smc${num}`);
+      const val = state[`smc${num}`];
+      
+      sel.innerHTML = state.spec
+        ? `<option value="">— Select Chipset Mod ${num} —</option>`
+        : `<option value="">— Select Chipset Mod ${num} (All) —</option>`;
+        
+      filtered.forEach(s => {
+        const opt = document.createElement('option');
+        opt.value = s.id;
+        opt.textContent = `[${s.specialization}] ${s.name}`;
+        
+        // Disable option if selected in another slot
+        const isSelectedElsewhere = ['1', '2', '3'].some(other => other !== num && state[`smc${other}`] === s.id);
+        if (isSelectedElsewhere) {
+          opt.disabled = true;
+        }
+        
+        sel.appendChild(opt);
+      });
+      
+      if(val && filtered.find(s => s.id === val)) sel.value = val;
+      else { state[`smc${num}`] = ''; }
+    });
+    
+    showSMCDetails();
   }
 
   function showWeaponDetail(n) {
@@ -183,13 +243,16 @@
     badge.className = `slot-card__badge has-set ${rc}`; badge.textContent = p.rarity;
   }
 
-  function showSMCDetail(){
-    const el = document.getElementById('smc-detail');
-    if(!state.smc){ el.classList.remove('is-visible'); return; }
-    const s = skillModCombos.find(x => x.id === state.smc);
-    if(!s){ el.classList.remove('is-visible'); return; }
-    el.innerHTML = `<strong>${s.name}</strong> <span style="opacity:.6">(${s.specialization})</span><br><em>2pc:</em> ${s.bonus2}<br><em>3pc:</em> ${s.bonus3}`;
-    el.classList.add('is-visible');
+  function showSMCDetails(){
+    ['1', '2', '3'].forEach(num => {
+      const el = document.getElementById(`smc-detail-${num}`);
+      const val = state[`smc${num}`];
+      if(!val){ el.classList.remove('is-visible'); return; }
+      const s = skillModCombos.find(x => x.id === val);
+      if(!s){ el.classList.remove('is-visible'); return; }
+      el.innerHTML = `<strong>${s.name}</strong> <span style="opacity:.6">(${s.specialization})</span><br><em>2pc:</em> ${s.bonus2}<br><em>3pc:</em> ${s.bonus3}`;
+      el.classList.add('is-visible');
+    });
   }
 
   function countSets(){
@@ -222,7 +285,7 @@
 
   function renderSummary(){
     const counts = countSets();
-    const hasAnything = Object.keys(counts).length > 0 || state.weapon1.talent || state.weapon2.talent || state.os || state.smc || state.spec || state.weapon1.id || state.weapon2.id;
+    const hasAnything = Object.keys(counts).length > 0 || state.weapon1.talent || state.weapon2.talent || state.os || state.smc1 || state.smc2 || state.smc3 || state.subclass || state.spec || state.weapon1.id || state.weapon2.id || state.buildName;
     document.getElementById('summary-empty').style.display = hasAnything ? 'none' : 'block';
 
     // Set bonuses
@@ -286,6 +349,28 @@
     else if(w2T) talentHTML += `<div class="summary-talent-item"><strong>W2:</strong> ${w2T.name}</div>`;
     if(osP) talentHTML += `<div class="summary-talent-item"><strong>OS:</strong> ${osP.name} (${osP.rarity})</div>`;
 
+    let smcHTML = '';
+    ['1', '2', '3'].forEach(num => {
+      const val = state[`smc${num}`];
+      if(val) {
+        const s = skillModCombos.find(x => x.id === val);
+        if(s) smcHTML += `<div class="summary-talent-item"><strong>Chipset ${num}:</strong> ${s.name}</div>`;
+      }
+    });
+    talentHTML += smcHTML;
+
+    let specHTML = '';
+    if(state.buildName) {
+      specHTML += `<div class="summary-talent-item" style="font-size:1.15em; border-bottom:1px dashed var(--border); padding-bottom:6px; margin-bottom:6px; color:var(--accent);"><strong>Build:</strong> ${state.buildName}</div>`;
+    }
+    if(state.spec) {
+      specHTML += `<div class="summary-talent-item"><strong>Spec:</strong> ${state.spec === 'Tech Operator' ? 'Tech Op' : state.spec === 'Field Medic' ? 'Medic' : state.spec}</div>`;
+      if(state.subclass) {
+        specHTML += `<div class="summary-talent-item"><strong>Sub Class:</strong> ${state.subclass}</div>`;
+      }
+    }
+    talentHTML = specHTML + talentHTML;
+
     if(talentHTML){ talentsSection.style.display = 'block'; talentsEl.innerHTML = talentHTML; }
     else { talentsSection.style.display = 'none'; }
 
@@ -303,7 +388,46 @@
       w2E = exoticWeapons.find(e => e.id === state.weapon2.id.substring(3));
     }
 
-    detectSynergies(synergies, conflicts, counts, {bodyT, bpT, w1T, w2T, w1E, w2E, osP});
+    const score = detectSynergies(synergies, conflicts, counts, {bodyT, bpT, w1T, w2T, w1E, w2E, osP});
+
+    // Update Build Quality Indicator
+    const qualityBadge = document.getElementById('build-quality-badge');
+    const qualityText = document.getElementById('build-quality-text');
+    const qualityBox = document.getElementById('build-quality-indicator');
+    
+    if (qualityBadge && qualityText && qualityBox) {
+      if (score === 0) {
+        qualityBadge.innerHTML = '💩 FLAMING PILE OF GARBAGE';
+        qualityBadge.style.color = '#e74c3c';
+        qualityBox.style.background = 'rgba(231, 76, 60, 0.1)';
+        qualityBox.style.borderColor = '#e74c3c';
+        qualityText.textContent = "This build is an absolute dumpster fire. You're going to get spawn-trapped by a standard red-bar NPC in a level 1 tutorial zone. Select a spec and get some actual gear set bonuses or weapon talents before someone sees you like this.";
+      } else if (score < 7) {
+        qualityBadge.innerHTML = '⚠️ MILDLY PATHETIC';
+        qualityBadge.style.color = '#f1c40f';
+        qualityBox.style.background = 'rgba(241, 196, 15, 0.1)';
+        qualityBox.style.borderColor = '#f1c40f';
+        qualityText.textContent = "You managed to find exactly one stat connection. Congratulations, you are now slightly more useful than a decorative traffic cone. Keep linking slots to get past this embarrassment.";
+      } else if (score < 13) {
+        qualityBadge.innerHTML = '🍕 SEMI-COMPETENT';
+        qualityBadge.style.color = '#3498db';
+        qualityBox.style.background = 'rgba(52, 152, 219, 0.1)';
+        qualityBox.style.borderColor = '#3498db';
+        qualityText.textContent = "Two synergies! You might not instantly explode the split second you step into the Dark Zone, but don't go challenging anyone who has a pulse or a working keyboard just yet.";
+      } else if (score < 18) {
+        qualityBadge.innerHTML = '🔥 CERTIFIED SWEATY';
+        qualityBadge.style.color = '#9b59b6';
+        qualityBox.style.background = 'rgba(155, 89, 182, 0.1)';
+        qualityBox.style.borderColor = '#9b59b6';
+        qualityText.textContent = "Three synergies! Look at you go, you absolute tryhard. You're probably running around the house telling your dog about your optimal crit stacking. Go take a shower, you've earned it.";
+      } else {
+        qualityBadge.innerHTML = '🐐 GOD-TIER CHAD LOADOUT';
+        qualityBadge.style.color = '#2ecc71';
+        qualityBox.style.background = 'rgba(46, 204, 113, 0.1)';
+        qualityBox.style.borderColor = '#2ecc71';
+        qualityText.textContent = "Four or more synergies. Absolute theorycrafting perfection. This is so beautiful we might actually cry. Copy this link immediately, spam it in your clan Discord and watch the salt flow.";
+      }
+    }
 
     const synEl = document.getElementById('summary-synergies-list');
     const synSection = document.getElementById('summary-synergies');
@@ -331,6 +455,16 @@
     if(w2E) allDescs.push({src:'W2: '+w2E.name, d:w2E.talentDescription});
     else if(w2T) allDescs.push({src:'W2: '+w2T.name, d:w2T.description});
     if(osP) allDescs.push({src:'OS: '+osP.name, d:osP.talentDescription});
+
+    ['1', '2', '3'].forEach(num => {
+      const val = state[`smc${num}`];
+      if (val) {
+        const s = skillModCombos.find(x => x.id === val);
+        if (s) {
+          allDescs.push({src:`Chipset ${num}: ` + s.name, d: `${s.bonus2} ${s.bonus3}`});
+        }
+      }
+    });
 
     // Collect active set bonus text
     const activeBonuses = [];
@@ -376,6 +510,29 @@
       });
     });
 
+    let score = 0;
+    
+    // 1. Base components selected
+    if (state.spec) score += 1;
+    if (state.subclass) score += 1;
+    if (state.weapon1.id) score += 1;
+    if (state.weapon2.id) score += 1;
+    if (state.weapon1.talent) score += 1;
+    if (state.weapon2.talent) score += 1;
+    if (state.os) score += 1;
+    if (state.smc1) score += 1;
+    if (state.smc2) score += 1;
+    if (state.smc3) score += 1;
+    if (state.slots.body.talent) score += 1;
+    if (state.slots.backpack.talent) score += 1;
+
+    // 2. Active gear sets
+    Object.entries(counts).forEach(([sid, c]) => {
+      if (c >= 4) score += 3;
+      else if (c === 3) score += 2;
+      else if (c === 2) score += 1;
+    });
+
     // Report synergies where 2+ sources stack the same stat
     const reported = new Set();
     statPatterns.forEach(sp => {
@@ -383,15 +540,20 @@
       if(unique.length >= 2 && !reported.has(sp.key)){
         reported.add(sp.key);
         syn.push(`<strong>${sp.label} stacking</strong> — ${unique.length} sources: ${unique.join(', ')}`);
+        
+        // Add synergy weight to score
+        score += unique.length;
       }
     });
 
     // Crit pairing
     if(sources.wchc.length > 0 && sources.wchd.length > 0 && !reported.has('wcrit')){
       syn.push('<strong>Weapon Crit pairing</strong> — Crit Chance + Crit Damage sources active together.');
+      score += 2;
     }
     if(sources.schc.length > 0 && sources.schd.length > 0 && !reported.has('scrit')){
       syn.push('<strong>Skill Crit pairing</strong> — Skill Crit Chance + Skill Crit Damage sources active together.');
+      score += 2;
     }
 
     // Conflicts
@@ -417,17 +579,25 @@
       if(osIsEng && hasFPSet && !hasEngSet) con.push('<strong>Mixed focus</strong> — Engineering OS Protocol with weapon-focused gear sets. Consider matching your OS to your gear set focus.');
       if(osIsFP && hasEngSet && !hasFPSet) con.push('<strong>Mixed focus</strong> — Firepower OS Protocol with skill-focused gear sets. Consider matching your OS to your gear set focus.');
     }
+    
+    return score;
   }
 
   function loadFromURL(){
-    if(!location.hash || location.hash.length < 2) return;
+    if(!location.hash || location.hash.length < 2) {
+      if(state.spec || state.buildName || state.os) {
+        resetBuild();
+      }
+      return;
+    }
     const p = new URLSearchParams(location.hash.slice(1));
     if(p.has('s')){
       state.spec = p.get('s');
       const btn = document.querySelector(`.spec-btn[data-spec="${state.spec}"]`);
       if(btn){ document.querySelectorAll('.spec-btn').forEach(b => b.classList.remove('is-active')); btn.classList.add('is-active'); }
       populateOSDropdown();
-      populateSMCDropdown();
+      populateSubclassDropdown();
+      populateSMCDropdowns();
     }
     
     // Gear slots prefix mapping
@@ -457,10 +627,35 @@
     if(p.has('w2tr')){ state.weapon2.tier = p.get('w2tr'); document.getElementById('tier-w2').value = state.weapon2.tier; }
     
     if(p.has('os')){ state.os = p.get('os'); document.getElementById('select-os').value = state.os; showOSDetail(); }
-    if(p.has('smc')){ state.smc = p.get('smc'); document.getElementById('select-smc').value = state.smc; showSMCDetail(); }
+    if(p.has('sc')){ state.subclass = p.get('sc'); document.getElementById('select-subclass').value = state.subclass; }
+    if(p.has('n')){ state.buildName = p.get('n'); document.getElementById('input-build-name').value = state.buildName; }
+    else { state.buildName = ''; document.getElementById('input-build-name').value = ''; }
+    
+    if(p.has('smc')){ state.smc1 = p.get('smc'); }
+    if(p.has('sm1')){ state.smc1 = p.get('sm1'); }
+    if(p.has('sm2')){ state.smc2 = p.get('sm2'); }
+    if(p.has('sm3')){ state.smc3 = p.get('sm3'); }
+    populateSMCDropdowns();
     
     showWeaponDetail(1);
     showWeaponDetail(2);
+    
+    // Sync the select-template dropdown value to match current hash if applicable
+    const selectTemplate = document.getElementById('select-template');
+    if (selectTemplate) {
+      const currentHash = location.hash.slice(1);
+      let matchedValue = '';
+      if (currentHash) {
+        for (const opt of selectTemplate.options) {
+          if (opt.value && (currentHash.includes(opt.value) || opt.value.includes(currentHash))) {
+            matchedValue = opt.value;
+            break;
+          }
+        }
+      }
+      selectTemplate.value = matchedValue;
+    }
+
     update();
   }
 
@@ -482,12 +677,13 @@
   }
 
   function resetBuild(){
-    state = {spec:null, slots:{}, weapon1:{id:'',tier:'T2',talent:''}, weapon2:{id:'',tier:'T2',talent:''}, os:'', smc:''};
+    state = {spec:null, subclass:'', slots:{}, weapon1:{id:'',tier:'T2',talent:''}, weapon2:{id:'',tier:'T2',talent:''}, os:'', smc1:'', smc2:'', smc3:'', buildName:''};
     GEAR_SLOTS.forEach(s => state.slots[s] = {set:'',talent:'',attr1:'',attr2:''});
     
     document.querySelectorAll('.spec-btn').forEach(b => b.classList.remove('is-active'));
     document.querySelectorAll('.slot-select').forEach(el => { el.value = ''; el.disabled = false; });
     document.querySelectorAll('.slot-input').forEach(el => { el.value = ''; });
+    document.getElementById('input-build-name').value = '';
     
     document.getElementById('row-tier-w1').style.display = 'none';
     document.getElementById('row-tier-w2').style.display = 'none';
@@ -495,10 +691,11 @@
     document.getElementById('w2-detail').classList.remove('is-visible');
     
     populateOSDropdown();
-    populateSMCDropdown();
+    populateSubclassDropdown();
+    populateSMCDropdowns();
     
     document.getElementById('os-detail').classList.remove('is-visible');
-    document.getElementById('smc-detail').classList.remove('is-visible');
+    ['1', '2', '3'].forEach(num => document.getElementById(`smc-detail-${num}`).classList.remove('is-visible'));
     document.getElementById('badge-os').className = 'slot-card__badge';
     
     history.replaceState(null, '', location.pathname);
@@ -537,7 +734,11 @@
     if(state.weapon2.talent) p.set('w2t', state.weapon2.talent);
     
     if(state.os) p.set('os', state.os);
-    if(state.smc) p.set('smc', state.smc);
+    if(state.subclass) p.set('sc', state.subclass);
+    if(state.smc1) p.set('sm1', state.smc1);
+    if(state.smc2) p.set('sm2', state.smc2);
+    if(state.smc3) p.set('sm3', state.smc3);
+    if(state.buildName) p.set('n', state.buildName);
     
     const hash = p.toString();
     if(hash) history.replaceState(null, '', '#' + hash);

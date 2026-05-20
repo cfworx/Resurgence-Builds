@@ -15,6 +15,7 @@ pizzaTitle: "Support my extreme cowardice"
 pizzaText: "I spent hours hiding in a corner testing the exact maximum range of this sniper just so you wouldn't have to. Funding my pizza habit ensures I never have to go outside and interact with real people."
 shareTitle: "Expose my cowardice"
 shareText: "Tweet this to let the world know you prefer hiding 50m away from danger."
+plannerHash: "s=Vanguard&n=Cover+Shooter+Sniper&ms=gs-4&cs=gs-4&ct=ba-12&ps=gs-4&pt=bp-10&gs=gs-4&hs=gs-2&ks=gs-2"
 ---
 
 ## What it is

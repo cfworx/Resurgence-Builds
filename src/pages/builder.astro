@@ -9,18 +9,29 @@ import backpackTalents from '../data/backpack-talents.json';
 import osProtocols from '../data/os-protocols.json';
 import skillModCombos from '../data/skill-mod-combos.json';
 import bonusAttributes from '../data/bonus-attributes.json';
+import { getCollection } from 'astro:content';
 
-const title = "Division Resurgence Build Planner — Create & Share Loadouts";
+const allBuilds = await getCollection('builds');
+const templates = allBuilds
+  .filter(b => b.data.plannerHash)
+  .map(b => ({
+    id: b.id,
+    title: b.data.title.split(' — ')[0], // Clean up the title (e.g. Field Medic)
+    hash: b.data.plannerHash,
+    spec: b.data.specialization === 'Tech Operator' ? 'Tech Op' : b.data.specialization === 'Field Medic' ? 'Medic' : b.data.specialization
+  }));
+
+const title = "Build Planner";
 const description = "Plan your Division Resurgence build with our free tool. Pick gear sets, talents, OS Protocols, and skill mods. See active set bonuses, synergies, and conflicts in real-time. Share builds via URL.";
 const breadcrumbs = [
   { name: 'Home', url: '/' },
-  { name: 'Builder', url: '/builder/' }
+  { name: 'Build Planner', url: '/builder/' }
 ];
 const faqs = [
-  { question: "What is the Division Resurgence Build Planner?", answer: "A free, browser-based tool that lets you plan loadouts for Tom Clancy's The Division Resurgence. Select gear sets across six armor slots, choose body armor and backpack talents, pick an OS Protocol and Skill Mod Combo, then see which set bonuses activate and how your choices synergize." },
-  { question: "How does the build planner generate recommendations?", answer: "The planner uses deterministic, rule-based logic — not AI guessing. It counts gear set pieces to determine active bonuses, scans talent descriptions for stat synergies, and flags conflicts like mixing incompatible playstyles. Every recommendation explains its reasoning." },
-  { question: "Can I share my build with other players?", answer: "Yes. Click Copy Build Link to generate a URL that encodes your entire loadout. Anyone who opens that link sees your exact build restored in the planner." },
-  { question: "Where does the build data come from?", answer: "All data comes from the ResurgenceBuilds.com verified dataset: 16 gear sets, 69 weapon talents, 25 body armor talents, 25 backpack talents, 66 OS Protocols, and 87 Skill Mod Combos. No data is imported from The Division 1, The Division 2, or third-party sources." }
+  { question: "Why is this build planner faster than standard Ubisoft game servers?", answer: "Because we host it on a single potato running in a basement and even that has better uptime than Ubi's multi-million dollar infrastructure. While you wait for your next Delta-03 connection error to clear in Conflict, you can plan your gear sets and weapon talents here without getting booted back to the title screen." },
+  { question: "Will my parents ever love me?", answer: "Unlikely. But at least you can min-max your Division Resurgence builds here to make up for the crushing void of validation in your personal life." },
+  { question: "Will this Division Resurgence loadout tool guarantee I win in the Dark Zone?", answer: "No. If you have the spatial awareness of a concussed pigeon, panic-sprint directly into a brick wall while trying to reload, or throw a grenade only to have it bounce off cover right back at your feet, no loadout can save you. The tool optimizes the math, but it can't fix terminal brain-lag." },
+  { question: "Why does the verified database contain exactly 69 weapon talents?", answer: "Nice. Also, because that's the exact number of verified weapon talents in the game. If you want us to add a 70th talent just to ruin the joke, write a complaint letter to Ubisoft and see if they answer it before the next decade." }
 ];
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -62,199 +73,232 @@ const dataPayload = JSON.stringify({ gearSets, weaponTalents, exoticWeapons, sta
 <section class="builder-app container" id="builder-app">
   <div class="builder-outer">
     <div class="builder-main">
+      <!-- Build Templates (Starting Point) -->
+      <div class="quad" style="margin-bottom: 24px; border: 1px dashed var(--accent); background: rgba(0,0,0,0.15);">
+        <h2 class="quad__heading" style="color: var(--accent); margin-bottom: 8px;">:: Build Templates (Starting Point)</h2>
+        <div style="padding: var(--sp-3); display: flex; flex-direction: column; gap: var(--sp-2);">
+          <select class="slot-select" id="select-template" style="width: 100%; border: 1px solid var(--border); font-family: inherit; font-size: 0.95em; cursor: pointer;">
+            <option value="">— Select a Verified Build Template to Populate the Planner —</option>
+            {templates.map(t => (
+              <option value={t.hash}>[{t.spec}] {t.title}</option>
+            ))}
+          </select>
+          <span style="font-size: 0.85em; opacity: 0.8; color: var(--ink-muted); line-height: 1.4;">Selecting a template instantly pre-configures your entire gear, talents, weapons, and chipset loadout. Customize it from there to theorycraft your own version!</span>
+        </div>
+      </div>
       <div class="builder-grid">
-    <!-- Q1: Top-Left — Specialization + Sub Class + Skills -->
-    <div class="quad quad--spec">
-      <h2 class="quad__heading">:: Specialization</h2>
-      <div class="spec-picker" id="spec-picker">
-        {SPECS.map(s => {
-          const cls = s === 'Demolitionist' ? 'demo' : s === 'Tech Operator' ? 'tech' : s === 'Bulwark' ? 'bulwark' : s === 'Vanguard' ? 'vanguard' : 'medic';
-          return <button class={`spec-btn spec-btn--${cls}`} data-spec={s} type="button">{s === 'Tech Operator' ? 'Tech Op' : s === 'Field Medic' ? 'Medic' : s}</button>;
-        })}
-      </div>
-      <div class="quad__sub">
-        <div class="sub-card">
-          <span class="sub-card__label">Sub Class</span>
-          <select class="slot-select" id="select-smc">
-            <option value="">— Choose spec first —</option>
-          </select>
-          <div class="smc-detail" id="smc-detail"></div>
-        </div>
-        <div class="sub-card">
-          <span class="sub-card__label">Skill 1</span>
-          <input class="slot-input" type="text" id="skill1-name" placeholder="e.g. Artillery Turret" />
-          <input class="slot-input slot-input--mod" type="text" id="skill1-mod" placeholder="Mod: e.g. Area Suppression" />
-        </div>
-        <div class="sub-card">
-          <span class="sub-card__label">Skill 2</span>
-          <input class="slot-input" type="text" id="skill2-name" placeholder="e.g. Seeker Mine" />
-          <input class="slot-input slot-input--mod" type="text" id="skill2-mod" placeholder="Mod: e.g. Multi-Directional" />
-        </div>
-      </div>
-    </div>
-
-    <!-- Q2: Top-Right — Weapons (stacked) -->
-    <div class="quad quad--weapons">
-      <h2 class="quad__heading">:: Weapons</h2>
-      <div class="slot-card" id="slot-weapon1">
-        <div class="slot-card__header">
-          <span class="slot-card__icon">🔫</span>
-          <span class="slot-card__label">Primary Weapon</span>
-        </div>
-        <div class="slot-card__body">
-          <div class="slot-card__row">
-            <label class="slot-label" for="weapon-w1">Weapon</label>
-            <select class="slot-select select-weapon" id="weapon-w1" data-weapon="1">
-              <option value="">— Select Weapon —</option>
-              <optgroup label="Exotic Weapons">
-                {exoticWeapons.map(e => <option value={`ex-${e.id}`} data-type="exotic">{e.name}</option>)}
-              </optgroup>
-              <optgroup label="Standard Weapons">
-                {standardWeapons.map(w => <option value={`std-${w.id}`} data-type="standard">{w.name} ({w.type})</option>)}
-              </optgroup>
-            </select>
-          </div>
-          <div class="slot-card__row row-tier" id="row-tier-w1" style="display:none">
-            <label class="slot-label" for="tier-w1">Tier</label>
-            <select class="slot-select slot-select--sm select-tier" id="tier-w1" data-weapon="1">
-              <option value="T2">Tier 2 (Endgame)</option>
-              <option value="T1">Tier 1</option>
-              <option value="T0">Tier 0 (Basic)</option>
-            </select>
-          </div>
-          <div class="slot-card__row">
-            <label class="slot-label" for="wtalent-w1">Talent</label>
-            <select class="slot-select select-talent" id="wtalent-w1" data-weapon="1">
-              <option value="">— None —</option>
-              {weaponTalents.map(t => <option value={t.id}>{t.name}</option>)}
-            </select>
-          </div>
-          <div class="weapon-detail" id="w1-detail"></div>
-        </div>
-      </div>
-      <div class="slot-card" id="slot-weapon2">
-        <div class="slot-card__header">
-          <span class="slot-card__icon">🔫</span>
-          <span class="slot-card__label">Secondary Weapon</span>
-        </div>
-        <div class="slot-card__body">
-          <div class="slot-card__row">
-            <label class="slot-label" for="weapon-w2">Weapon</label>
-            <select class="slot-select select-weapon" id="weapon-w2" data-weapon="2">
-              <option value="">— Select Weapon —</option>
-              <optgroup label="Exotic Weapons">
-                {exoticWeapons.map(e => <option value={`ex-${e.id}`} data-type="exotic">{e.name}</option>)}
-              </optgroup>
-              <optgroup label="Standard Weapons">
-                {standardWeapons.map(w => <option value={`std-${w.id}`} data-type="standard">{w.name} ({w.type})</option>)}
-              </optgroup>
-            </select>
-          </div>
-          <div class="slot-card__row row-tier" id="row-tier-w2" style="display:none">
-            <label class="slot-label" for="tier-w2">Tier</label>
-            <select class="slot-select slot-select--sm select-tier" id="tier-w2" data-weapon="2">
-              <option value="T2">Tier 2 (Endgame)</option>
-              <option value="T1">Tier 1</option>
-              <option value="T0">Tier 0 (Basic)</option>
-            </select>
-          </div>
-          <div class="slot-card__row">
-            <label class="slot-label" for="wtalent-w2">Talent</label>
-            <select class="slot-select select-talent" id="wtalent-w2" data-weapon="2">
-              <option value="">— None —</option>
-              {weaponTalents.map(t => <option value={t.id}>{t.name}</option>)}
-            </select>
-          </div>
-          <div class="weapon-detail" id="w2-detail"></div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Q3: Bottom-Left — OS Protocol + Chipset Mods -->
-    <div class="quad quad--os">
-      <h2 class="quad__heading">:: OS Protocol</h2>
-      <div class="slot-card" id="slot-os">
-        <div class="slot-card__header">
-          <span class="slot-card__icon">⚙️</span>
-          <span class="slot-card__label">OS Protocol</span>
-          <span class="slot-card__badge" id="badge-os"></span>
-        </div>
-        <div class="slot-card__body">
-          <select class="slot-select" id="select-os">
-            <option value="">— Choose spec first —</option>
-          </select>
-          <div class="os-detail" id="os-detail"></div>
-        </div>
-      </div>
-      <div class="slot-card" id="slot-chipset">
-        <div class="slot-card__header">
-          <span class="slot-card__icon">🔩</span>
-          <span class="slot-card__label">Chipset Mods</span>
-        </div>
-        <div class="slot-card__body">
-          <input class="slot-input" type="text" id="chipset-desc" placeholder="e.g. 12× Engineering" />
-        </div>
-      </div>
-    </div>
-
-    <!-- Q4: Bottom-Right — Gear (3×2 grid) -->
-    <div class="quad quad--gear">
-      <h2 class="quad__heading">:: Gear</h2>
-      <div class="gear-grid">
-        {SLOTS.map(slot => (
-          <div class="slot-card slot-card--gear" id={`slot-${slot.key}`}>
-            <div class="slot-card__header">
-              <span class="slot-card__icon">{slot.icon}</span>
-              <span class="slot-card__label">{slot.label}</span>
-              <span class="slot-card__badge" id={`badge-${slot.key}`}></span>
+        <div class="builder-column builder-column--left">
+          <!-- Q1: Top-Left — Specialization + Sub Class -->
+          <div class="quad quad--spec">
+            <h2 class="quad__heading">:: Specialization</h2>
+            <div class="spec-picker" id="spec-picker">
+              {SPECS.map(s => {
+                const cls = s === 'Demolitionist' ? 'demo' : s === 'Tech Operator' ? 'tech' : s === 'Bulwark' ? 'bulwark' : s === 'Vanguard' ? 'vanguard' : 'medic';
+                return <button class={`spec-btn spec-btn--${cls}`} data-spec={s} type="button">{s === 'Tech Operator' ? 'Tech Op' : s === 'Field Medic' ? 'Medic' : s}</button>;
+              })}
             </div>
-            <div class="slot-card__body">
-              <div class="slot-card__row">
-                <label class="slot-label" for={`set-${slot.key}`}>Set</label>
-                <select class="slot-select" id={`set-${slot.key}`} data-slot={slot.key} data-field="set">
-                  <option value="">— None —</option>
-                  {gearSets.map(gs => <option value={gs.id}>{gs.name}</option>)}
+            <div class="quad__sub">
+              <div class="sub-card">
+                <span class="sub-card__label">Sub Class</span>
+                <select class="slot-select" id="select-subclass">
+                  <option value="">— Choose spec first —</option>
                 </select>
               </div>
-              {slot.hasTalent && (
-                <div class="slot-card__row">
-                  <label class="slot-label" for={`talent-${slot.key}`}>Talent</label>
-                  <select class="slot-select" id={`talent-${slot.key}`} data-slot={slot.key} data-field="talent">
-                    <option value="">— None —</option>
-                    {slot.talentType === 'body'
-                      ? bodyArmorTalents.map(t => <option value={t.id}>{t.name}</option>)
-                      : backpackTalents.map(t => <option value={t.id}>{t.name}</option>)
-                    }
+            </div>
+          </div>
+
+          <!-- Q3: Bottom-Left — OS Protocol + Chipset Mods -->
+          <div class="quad quad--os">
+            <h2 class="quad__heading">:: OS Protocol</h2>
+            <div class="slot-card" id="slot-os">
+              <div class="slot-card__header">
+                <span class="slot-card__icon">⚙️</span>
+                <span class="slot-card__label">OS Protocol</span>
+                <span class="slot-card__badge" id="badge-os"></span>
+              </div>
+              <div class="slot-card__body">
+                <select class="slot-select" id="select-os">
+                  <option value="">— Choose spec first —</option>
+                </select>
+                <div class="os-detail" id="os-detail"></div>
+              </div>
+            </div>
+            <div class="slot-card" id="slot-chipset">
+              <div class="slot-card__header">
+                <span class="slot-card__icon">🔩</span>
+                <span class="slot-card__label">Chipset Mods (Select 3)</span>
+              </div>
+              <div class="slot-card__body" style="display:flex; flex-direction:column; gap: var(--sp-2);">
+                <div>
+                  <select class="slot-select" id="select-smc1">
+                    <option value="">— Choose spec first —</option>
                   </select>
+                  <div class="smc-detail" id="smc-detail-1"></div>
                 </div>
-              )}
-              <div class="slot-card__row slot-card__row--attrs">
-                <div class="slot-attr">
-                  <label class="slot-label" for={`attr1-${slot.key}`}>Bonus 1</label>
-                  <select class="slot-select slot-select--sm" id={`attr1-${slot.key}`} data-slot={slot.key} data-field="attr1">
-                    <option value="">—</option>
-                    {allAttributes.map(a => <option value={a}>{a}</option>)}
+                <div>
+                  <select class="slot-select" id="select-smc2">
+                    <option value="">— Choose spec first —</option>
                   </select>
+                  <div class="smc-detail" id="smc-detail-2"></div>
                 </div>
-                <div class="slot-attr">
-                  <label class="slot-label" for={`attr2-${slot.key}`}>Bonus 2</label>
-                  <select class="slot-select slot-select--sm" id={`attr2-${slot.key}`} data-slot={slot.key} data-field="attr2">
-                    <option value="">—</option>
-                    {allAttributes.map(a => <option value={a}>{a}</option>)}
+                <div>
+                  <select class="slot-select" id="select-smc3">
+                    <option value="">— Choose spec first —</option>
                   </select>
+                  <div class="smc-detail" id="smc-detail-3"></div>
                 </div>
               </div>
             </div>
           </div>
-        ))}
-      </div>
-    </div>
+        </div>
+
+        <div class="builder-column builder-column--right">
+          <!-- Q2: Top-Right — Weapons (stacked) -->
+          <div class="quad quad--weapons">
+            <h2 class="quad__heading">:: Weapons</h2>
+            <div class="slot-card" id="slot-weapon1">
+              <div class="slot-card__header">
+                <span class="slot-card__icon">🔫</span>
+                <span class="slot-card__label">Primary Weapon</span>
+              </div>
+              <div class="slot-card__body">
+                <div class="slot-card__row">
+                  <label class="slot-label" for="weapon-w1">Weapon</label>
+                  <select class="slot-select select-weapon" id="weapon-w1" data-weapon="1">
+                    <option value="">— Select Weapon —</option>
+                    <optgroup label="Exotic Weapons">
+                      {exoticWeapons.map(e => <option value={`ex-${e.id}`} data-type="exotic">{e.name}</option>)}
+                    </optgroup>
+                    <optgroup label="Standard Weapons">
+                      {standardWeapons.map(w => <option value={`std-${w.id}`} data-type="standard">{w.name} ({w.type})</option>)}
+                    </optgroup>
+                  </select>
+                </div>
+                <div class="slot-card__row row-tier" id="row-tier-w1" style="display:none">
+                  <label class="slot-label" for="tier-w1">Tier</label>
+                  <select class="slot-select slot-select--sm select-tier" id="tier-w1" data-weapon="1">
+                    <option value="T2">Tier 2 (Endgame)</option>
+                    <option value="T1">Tier 1</option>
+                    <option value="T0">Tier 0 (Basic)</option>
+                  </select>
+                </div>
+                <div class="slot-card__row">
+                  <label class="slot-label" for="wtalent-w1">Talent</label>
+                  <select class="slot-select select-talent" id="wtalent-w1" data-weapon="1">
+                    <option value="">— None —</option>
+                    {weaponTalents.map(t => <option value={t.id}>{t.name}</option>)}
+                  </select>
+                </div>
+                <div class="weapon-detail" id="w1-detail"></div>
+              </div>
+            </div>
+            <div class="slot-card" id="slot-weapon2">
+              <div class="slot-card__header">
+                <span class="slot-card__icon">🔫</span>
+                <span class="slot-card__label">Secondary Weapon</span>
+              </div>
+              <div class="slot-card__body">
+                <div class="slot-card__row">
+                  <label class="slot-label" for="weapon-w2">Weapon</label>
+                  <select class="slot-select select-weapon" id="weapon-w2" data-weapon="2">
+                    <option value="">— Select Weapon —</option>
+                    <optgroup label="Exotic Weapons">
+                      {exoticWeapons.map(e => <option value={`ex-${e.id}`} data-type="exotic">{e.name}</option>)}
+                    </optgroup>
+                    <optgroup label="Standard Weapons">
+                      {standardWeapons.map(w => <option value={`std-${w.id}`} data-type="standard">{w.name} ({w.type})</option>)}
+                    </optgroup>
+                  </select>
+                </div>
+                <div class="slot-card__row row-tier" id="row-tier-w2" style="display:none">
+                  <label class="slot-label" for="tier-w2">Tier</label>
+                  <select class="slot-select slot-select--sm select-tier" id="tier-w2" data-weapon="2">
+                    <option value="T2">Tier 2 (Endgame)</option>
+                    <option value="T1">Tier 1</option>
+                    <option value="T0">Tier 0 (Basic)</option>
+                  </select>
+                </div>
+                <div class="slot-card__row">
+                  <label class="slot-label" for="wtalent-w2">Talent</label>
+                  <select class="slot-select select-talent" id="wtalent-w2" data-weapon="2">
+                    <option value="">— None —</option>
+                    {weaponTalents.map(t => <option value={t.id}>{t.name}</option>)}
+                  </select>
+                </div>
+                <div class="weapon-detail" id="w2-detail"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Q4: Bottom-Right — Gear (3×2 grid) -->
+          <div class="quad quad--gear">
+            <h2 class="quad__heading">:: Gear</h2>
+            <div class="gear-grid">
+              {SLOTS.map(slot => (
+                <div class="slot-card slot-card--gear" id={`slot-${slot.key}`}>
+                  <div class="slot-card__header">
+                    <span class="slot-card__icon">{slot.icon}</span>
+                    <span class="slot-card__label">{slot.label}</span>
+                    <span class="slot-card__badge" id={`badge-${slot.key}`}></span>
+                  </div>
+                  <div class="slot-card__body">
+                    <div class="slot-card__row">
+                      <label class="slot-label" for={`set-${slot.key}`}>Set</label>
+                      <select class="slot-select" id={`set-${slot.key}`} data-slot={slot.key} data-field="set">
+                        <option value="">— None —</option>
+                        {gearSets.map(gs => <option value={gs.id}>{gs.name}</option>)}
+                      </select>
+                    </div>
+                    {slot.hasTalent && (
+                      <div class="slot-card__row">
+                        <label class="slot-label" for={`talent-${slot.key}`}>Talent</label>
+                        <select class="slot-select" id={`talent-${slot.key}`} data-slot={slot.key} data-field="talent">
+                          <option value="">— None —</option>
+                          {slot.talentType === 'body'
+                            ? bodyArmorTalents.map(t => <option value={t.id}>{t.name}</option>)
+                            : backpackTalents.map(t => <option value={t.id}>{t.name}</option>)
+                          }
+                        </select>
+                      </div>
+                    )}
+                    <div class="slot-card__row slot-card__row--attrs">
+                      <div class="slot-attr">
+                        <label class="slot-label" for={`attr1-${slot.key}`}>Bonus 1</label>
+                        <select class="slot-select slot-select--sm" id={`attr1-${slot.key}`} data-slot={slot.key} data-field="attr1">
+                          <option value="">—</option>
+                          {allAttributes.map(a => <option value={a}>{a}</option>)}
+                        </select>
+                      </div>
+                      <div class="slot-attr">
+                        <label class="slot-label" for={`attr2-${slot.key}`}>Bonus 2</label>
+                        <select class="slot-select slot-select--sm" id={`attr2-${slot.key}`} data-slot={slot.key} data-field="attr2">
+                          <option value="">—</option>
+                          {allAttributes.map(a => <option value={a}>{a}</option>)}
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
       </div><!-- /builder-grid -->
     </div><!-- /builder-main -->
 
     <aside class="builder-summary" id="builder-summary">
     <div class="summary-inner">
       <h2 class="summary-title">Build Summary</h2>
+      <div class="summary-section" style="margin-bottom: 16px;">
+        <label class="slot-label" for="input-build-name" style="margin-bottom: 4px; display: block; opacity: 0.8; font-size: 0.85em; text-transform: uppercase; letter-spacing: 0.05em;">Build Name</label>
+        <input type="text" id="input-build-name" class="slot-input" placeholder="e.g. Legendary Field Medic" style="width: 100%; padding: 8px; border: 1px solid var(--border); border-radius: 4px; background: rgba(0,0,0,0.2); color: var(--text); font-family: inherit; font-size: 0.9em; box-sizing: border-box; transition: border-color 0.2s;" />
+      </div>
+      <!-- Build Quality Indicator Container -->
+      <div id="build-quality-indicator" class="summary-section" style="border: 1px dashed var(--border); padding: 12px; border-radius: 4px; background: rgba(231, 76, 60, 0.1); border-color: #e74c3c; margin-bottom: 16px; transition: all 0.3s ease;">
+        <h3 class="summary-section__title" style="margin-bottom: 4px;">Build Rating</h3>
+        <div id="build-quality-badge" style="font-family: var(--font-heading); font-size: 13px; font-weight: bold; margin-bottom: 4px; color: #e74c3c;">💩 FLAMING PILE OF GARBAGE</div>
+        <p id="build-quality-text" style="font-size: 11px; line-height: 1.4; color: var(--ink-muted); margin: 0;">This build is an absolute dumpster fire. You're going to get spawn-trapped by a standard red-bar NPC in a level 1 tutorial zone. Select a spec and get some actual gear set bonuses or weapon talents before someone sees you like this.</p>
+      </div>
       <div id="summary-empty" class="summary-empty">Select a specialization and gear to see your build analysis.</div>
         <div id="summary-sets" class="summary-section" style="display:none">
           <h3 class="summary-section__title">Active Set Bonuses</h3>
@@ -285,9 +329,7 @@ const dataPayload = JSON.stringify({ gearSets, weaponTalents, exoticWeapons, sta
 <section class="builder-about container">
   <div class="builder-about__content">
     <h2>How the Build Planner Works</h2>
-    <p>This planner operates on the ResurgenceBuilds.com verified dataset — 16 gear sets with tiered bonuses, 69 weapon talents, 25 body armor talents, 25 backpack talents, 66 OS Protocols across three specialization trees, and 87 Skill Mod Combos for all five specializations. No data is imported from The Division 1, The Division 2, or community wikis.</p>
-    <p>Select a specialization to filter OS Protocols and Skill Mod Combos to your class. Then fill gear slots with sets — the planner automatically counts pieces and shows which 2-piece, 3-piece, and 4-piece bonuses are active. Body Armor and Backpack slots accept talents that further define your playstyle. The synergy engine scans your selections for complementary stat stacking (e.g., multiple Skill Crit sources) and flags potential conflicts (e.g., Glass Cannon with no survivability).</p>
-    <p>Every recommendation uses deterministic logic with plain-English explanations. There is no hidden AI or vague "intelligence" — you can trace exactly why each synergy or warning appears.</p>
+    <p>Listen up, Agent. I hand-coded this Division Resurgence build planner during a 48-hour bender fueled entirely by spite, stale pizza, and lukewarm energy drinks. Honestly? I have absolutely zero clue how any of this spaghetti code actually works anymore. There's some dropdowns. You click them, numbers change, and your gear set bonuses and weapon talents light up in real-time. If the synergy engine throws a warning that your build is a flaming pile of garbage, it’s probably right. Just slap some gear in, copy the link, and spam it in your clan Discord to pretend you actually understand theorycrafting. Please don't ask me how the math works — looking at this code makes my eyes bleed.</p>
 
     <h2>Frequently Asked Questions</h2>
     <div class="faq-list">
@@ -321,17 +363,16 @@ const dataPayload = JSON.stringify({ gearSets, weaponTalents, exoticWeapons, sta
 .builder-hero__sub{color:var(--ink-muted);max-width:55ch;font-size:var(--text-base)}
 @media(min-width:768px){.builder-hero{padding:var(--sp-12) 0 var(--sp-8)}.builder-hero__title{font-size:var(--text-4xl)}}
 
-.builder-app{padding:var(--sp-4) 0}
+.builder-app{padding:var(--sp-4) 0;max-width:1440px}
 .builder-outer{display:flex;flex-direction:column;gap:var(--sp-3)}
 @media(min-width:1200px){.builder-outer{flex-direction:row}.builder-main{flex:1;min-width:0}.builder-summary{width:280px;flex-shrink:0}}
-.builder-grid{display:flex;flex-direction:column;gap:2px}
+.builder-grid{display:flex;flex-direction:column;gap:var(--sp-3)}
 @media(min-width:1024px){
-  .builder-grid{display:grid;grid-template-columns:minmax(280px,1.2fr) minmax(0,2fr);grid-template-rows:auto auto;gap:2px;align-items:stretch}
-  .quad--spec{grid-column:1;grid-row:1}
-  .quad--weapons{grid-column:2;grid-row:1}
-  .quad--os{grid-column:1;grid-row:2}
-  .quad--gear{grid-column:2;grid-row:2}
+  .builder-grid{display:flex;flex-direction:row;gap:var(--sp-3);align-items:flex-start}
+  .builder-column--left{width:320px;flex-shrink:0}
+  .builder-column--right{flex:1;min-width:0}
 }
+.builder-column{display:flex;flex-direction:column;gap:var(--sp-3)}
 .quad{background:var(--surface);border:1px solid var(--border);border-radius:var(--border-radius);padding:var(--sp-3)}
 .quad__heading{font-family:var(--font-heading);font-size:var(--text-xs);text-transform:uppercase;letter-spacing:.06em;color:var(--accent);margin-bottom:var(--sp-2);padding-bottom:var(--sp-1);border-bottom:1px solid var(--border)}
 .quad__sub{display:flex;flex-direction:column;gap:var(--sp-2)}

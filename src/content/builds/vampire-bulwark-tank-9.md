@@ -15,6 +15,7 @@ pizzaTitle: "Bulwarks need calories too"
 pizzaText: "You think holding down the trigger and never dying is easy? It requires immense focus and a caloric surplus. Buy me a pizza so I can maintain my peak physical condition."
 shareTitle: "Spread the tank propaganda"
 shareText: "Share this so your teammates finally understand what 'taking aggro' actually means."
+plannerHash: "s=Bulwark&sc=Juggernaut&n=Vampire+Bulwark+Tank&ms=gs-16&m1=Max+Health&m2=Damage+Reduction&cs=gs-15&ct=ba-25&c1=Max+Health&c2=Damage+Reduction&ps=gs-15&pt=bp-22&p1=Max+Health&p2=Weapon+Damage&gs=gs-16&g1=Weapon+Damage&g2=Max+Health&hs=gs-16&h1=Max+Health&h2=Armor&ks=gs-16&k1=Max+Health&k2=Damage+Reduction&w1e=ew-3&w1t=wt-10&w2s=sw-12&w2tr=T2&w2t=wt-45&os=os-30&sm1=smc-20&sm2=smc-21&sm3=smc-22"
 ---
 
 ## What it is

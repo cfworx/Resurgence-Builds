@@ -15,6 +15,7 @@ pizzaTitle: "Tip your healers"
 pizzaText: "I literally do all the work while you just point your gun and get the credit. The least you can do is buy me a slice for keeping your dumb ass alive."
 shareTitle: "Guilt trip your DPS"
 shareText: "Share this to remind your friends that they owe you their miserable lives."
+plannerHash: "s=Field+Medic&sc=Combat+Medicine&n=Legendary+Healer&ms=gs-13&m1=Skill+Intensity&m2=Skill+Duration&cs=gs-13&ct=ba-5&c1=Skill+Intensity&c2=Skill+Duration&ps=gs-14&pt=bp-2&p1=Skill+Intensity&p2=Skill+Duration&gs=gs-14&g1=Skill+Intensity&g2=Skill+Cooldown+Recovery&hs=gs-14&h1=Skill+Intensity&h2=Skill+Duration&ks=gs-14&k1=Skill+Intensity&k2=Skill+Duration&w1s=sw-12&w1tr=T2&w1t=wt-28&w2s=sw-2&w2tr=T2&w2t=wt-48&os=os-10&sm1=smc-80&sm2=smc-81&sm3=smc-82"
 ---
 
 ## What it is

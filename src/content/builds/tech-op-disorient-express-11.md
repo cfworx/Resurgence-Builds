@@ -15,6 +15,7 @@ pizzaTitle: "Hazard pay for the pilot"
 pizzaText: "I spent more hours than I'm legally allowed to admit watching enemies walk into walls because a flying disc with a police hat kept critting their kneecaps. Buy me a pizza before I file a PTSD claim with OSHA."
 shareTitle: "Send this to the guy who thinks Tech Op is just healer support"
 shareText: "Share this and watch someone completely reassemble their understanding of what a drone can do."
+plannerHash: "s=Tech+Operator&sc=Offensive+Operations&n=Disorient+Express&ms=gs-7&m1=Skill+Critical+Chance&m2=Skill+Critical+Damage&cs=gs-8&ct=ba-4&c1=Weapon+Critical+Hit+Chance&c2=Weapon+Critical+Hit+Damage&ps=gs-8&pt=bp-17&p1=Skill+Intensity&p2=Damage+to+Elites&gs=gs-7&g1=Skill+Critical+Chance&g2=Skill+Intensity&hs=gs-7&h1=Skill+Critical+Damage&h2=Skill+Cooldown+Recovery&ks=gs-7&k1=Skill+Critical+Damage&k2=Skill+Intensity&w1s=sw-2&w1tr=T2&w1t=wt-22&w2s=sw-25&w2tr=T2&w2t=wt-18&os=os-3&sm1=smc-40&sm2=smc-41&sm3=smc-42"
 ---
 
 ## What It Is

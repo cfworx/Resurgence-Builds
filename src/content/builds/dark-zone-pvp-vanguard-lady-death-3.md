@@ -15,6 +15,7 @@ pizzaTitle: "Blood Money"
 pizzaText: "We both know you're going to use this build to ruin someone's day in the Dark Zone. Give me a cut of the profits so I don't feel guilty about unleashing you on the server."
 shareTitle: "Ruin more days"
 shareText: "Tweet this so more players try it and immediately get ganked by a 4-stack."
+plannerHash: "s=Vanguard&n=Dark+Zone+Lady+Death&ms=gs-1&cs=gs-1&ct=ba-12&ps=gs-1&pt=bp-25&gs=gs-1&hs=gs-16&ks=gs-16"
 ---
 
 ## What it is

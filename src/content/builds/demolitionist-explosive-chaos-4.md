@@ -15,6 +15,7 @@ pizzaTitle: "Explosions are expensive"
 pizzaText: "The sheer amount of collateral damage this build causes is a liability. Help me fund my legal defense team (or just buy me a pizza) before the authorities catch on."
 shareTitle: "Share the Michael Bay experience"
 shareText: "Warning: sharing this build on X may flag your account for digital terrorism."
+plannerHash: "s=Demolitionist&n=Explosive+Chaos&ms=gs-10&cs=gs-10&ct=ba-5&ps=gs-10&pt=bp-8&gs=gs-10&hs=gs-7&ks=gs-7"
 ---
 
 ## What it is

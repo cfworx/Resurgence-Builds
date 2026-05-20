@@ -31,6 +31,7 @@ const builds = defineCollection({
     pizzaText: z.string().optional(),
     shareTitle: z.string().optional(),
     shareText: z.string().optional(),
+    plannerHash: z.string().optional(),
   }),
 });
 
