@@ -1,7 +1,7 @@
 /* Builder Engine — ResurgenceBuilds.com */
 (function(){
   const DATA = JSON.parse(document.getElementById('builder-data').textContent);
-  const {gearSets, weaponTalents, exoticWeapons, bodyArmorTalents, backpackTalents, osProtocols, skillModCombos} = DATA;
+  const {gearSets, weaponTalents, exoticWeapons, standardWeapons, bodyArmorTalents, backpackTalents, osProtocols, skillModCombos} = DATA;
 
   const SPEC_OS_MAP = {
     'Demolitionist':'Engineering','Tech Operator':'Engineering',
@@ -9,7 +9,7 @@
   };
   const GEAR_SLOTS = ['mask','gloves','holster','kneepads','body','backpack'];
 
-  let state = {spec:null, slots:{}, weapon1:{exotic:'',talent:''}, weapon2:{exotic:'',talent:''}, os:'', smc:''};
+  let state = {spec:null, slots:{}, weapon1:{id:'',tier:'T2',talent:''}, weapon2:{id:'',tier:'T2',talent:''}, os:'', smc:''};
   GEAR_SLOTS.forEach(s => state.slots[s] = {set:'',talent:'',attr1:'',attr2:''});
 
   function init(){
@@ -32,21 +32,50 @@
     });
 
     [1,2].forEach(n => {
-      const exEl = document.getElementById(`exotic-w${n}`);
+      const wEl = document.getElementById(`weapon-w${n}`);
       const tEl = document.getElementById(`wtalent-w${n}`);
-      exEl.addEventListener('change', () => {
-        state[`weapon${n}`].exotic = exEl.value;
-        if(exEl.value){
-          const ex = exoticWeapons.find(e => e.id === exEl.value);
-          if(ex){
+      const tierEl = document.getElementById(`tier-w${n}`);
+      const rowTier = document.getElementById(`row-tier-w${n}`);
+
+      wEl.addEventListener('change', () => {
+        const val = wEl.value;
+        state[`weapon${n}`].id = val;
+        
+        if (val.startsWith('ex-')) {
+          rowTier.style.display = 'none';
+          const exId = val.substring(3);
+          const ex = exoticWeapons.find(e => e.id === exId);
+          if (ex) {
             const matchT = weaponTalents.find(t => t.name === ex.talentName);
-            if(matchT){ tEl.value = matchT.id; state[`weapon${n}`].talent = matchT.id; }
+            if (matchT) {
+              tEl.value = matchT.id;
+              state[`weapon${n}`].talent = matchT.id;
+            }
           }
           tEl.disabled = true;
-        } else { tEl.disabled = false; }
+        } else if (val.startsWith('std-')) {
+          rowTier.style.display = 'block';
+          tEl.disabled = false;
+        } else {
+          rowTier.style.display = 'none';
+          tEl.disabled = false;
+          state[`weapon${n}`].talent = '';
+          tEl.value = '';
+        }
+        showWeaponDetail(n);
         update();
       });
-      tEl.addEventListener('change', () => { state[`weapon${n}`].talent = tEl.value; update(); });
+
+      tierEl.addEventListener('change', () => {
+        state[`weapon${n}`].tier = tierEl.value;
+        showWeaponDetail(n);
+        update();
+      });
+
+      tEl.addEventListener('change', () => {
+        state[`weapon${n}`].talent = tEl.value;
+        update();
+      });
     });
 
     document.getElementById('select-os').addEventListener('change', e => { state.os = e.target.value; showOSDetail(); update(); });
@@ -54,21 +83,30 @@
     document.getElementById('btn-copy').addEventListener('click', copyLink);
     document.getElementById('btn-reset').addEventListener('click', resetBuild);
 
+    populateOSDropdown();
+    populateSMCDropdown();
     loadFromURL();
   }
 
   function populateOSDropdown(){
     const sel = document.getElementById('select-os');
     const cat = SPEC_OS_MAP[state.spec] || '';
-    const filtered = cat ? osProtocols.filter(p => p.specialization === cat) : [];
-    sel.innerHTML = '<option value="">— Select OS Protocol —</option>';
+    const filtered = cat ? osProtocols.filter(p => p.specialization === cat) : osProtocols;
+    
+    sel.innerHTML = state.spec 
+      ? '<option value="">— Select OS Protocol —</option>'
+      : '<option value="">— Select OS Protocol (All) —</option>';
+      
     const rarityOrder = {'High-End':0,'Superior':1,'Specialized':2,'Standard':3};
     filtered.sort((a,b) => (rarityOrder[a.rarity]||9) - (rarityOrder[b.rarity]||9));
+    
     filtered.forEach(p => {
       const opt = document.createElement('option');
-      opt.value = p.id; opt.textContent = `[${p.rarity}] ${p.name} — ${p.mainStat} ${p.mainValue}`;
+      opt.value = p.id;
+      opt.textContent = `[${p.specialization}] [${p.rarity}] ${p.name}`;
       sel.appendChild(opt);
     });
+    
     if(state.os && filtered.find(p => p.id === state.os)) sel.value = state.os;
     else { state.os = ''; }
     showOSDetail();
@@ -76,16 +114,61 @@
 
   function populateSMCDropdown(){
     const sel = document.getElementById('select-smc');
-    const filtered = state.spec ? skillModCombos.filter(s => s.specialization === state.spec) : [];
-    sel.innerHTML = '<option value="">— Select Skill Mod Combo —</option>';
+    const filtered = state.spec ? skillModCombos.filter(s => s.specialization === state.spec) : skillModCombos;
+    
+    sel.innerHTML = state.spec
+      ? '<option value="">— Select Skill Mod Combo —</option>'
+      : '<option value="">— Select Skill Mod Combo (All) —</option>';
+      
     filtered.forEach(s => {
       const opt = document.createElement('option');
-      opt.value = s.id; opt.textContent = s.name;
+      opt.value = s.id;
+      opt.textContent = `[${s.specialization}] ${s.name}`;
       sel.appendChild(opt);
     });
+    
     if(state.smc && filtered.find(s => s.id === state.smc)) sel.value = state.smc;
     else { state.smc = ''; }
     showSMCDetail();
+  }
+
+  function showWeaponDetail(n) {
+    const el = document.getElementById(`w${n}-detail`);
+    const wState = state[`weapon${n}`];
+    if (!wState.id) {
+      el.classList.remove('is-visible');
+      return;
+    }
+    
+    if (wState.id.startsWith('ex-')) {
+      const exId = wState.id.substring(3);
+      const ex = exoticWeapons.find(e => e.id === exId);
+      if (!ex) {
+        el.classList.remove('is-visible');
+        return;
+      }
+      el.innerHTML = `<strong>${ex.name}</strong> <span style="opacity:.6">(${ex.type})</span><br>${ex.talentDescription}<br>` +
+        `<div class="weapon-detail__stats">` +
+        `<div class="weapon-detail__stat">RPM: <strong>${ex.rpm || '--'}</strong></div>` +
+        `<div class="weapon-detail__stat">Mag: <strong>${ex.magazineSize || '--'}</strong></div>` +
+        `<div class="weapon-detail__stat">Type: <strong>Exotic</strong></div>` +
+        `</div>`;
+      el.classList.add('is-visible');
+    } else if (wState.id.startsWith('std-')) {
+      const stdId = wState.id.substring(4);
+      const std = standardWeapons.find(w => w.id === stdId);
+      if (!std) {
+        el.classList.remove('is-visible');
+        return;
+      }
+      el.innerHTML = `<strong>${std.name}</strong> <span style="opacity:.6">(${std.type})</span><br>` +
+        `<div class="weapon-detail__stats">` +
+        `<div class="weapon-detail__stat">RPM: <strong>${std.rpm}</strong></div>` +
+        `<div class="weapon-detail__stat">Mag: <strong>${std.mag}</strong></div>` +
+        `<div class="weapon-detail__stat">Tier: <strong>${wState.tier}</strong></div>` +
+        `</div>`;
+      el.classList.add('is-visible');
+    }
   }
 
   function showOSDetail(){
@@ -94,7 +177,7 @@
     if(!state.os){ el.classList.remove('is-visible'); badge.className = 'slot-card__badge'; badge.textContent = ''; return; }
     const p = osProtocols.find(x => x.id === state.os);
     if(!p){ el.classList.remove('is-visible'); return; }
-    el.innerHTML = `<strong>${p.name}</strong> <span style="opacity:.6">(${p.rarity})</span><br>${p.talentDescription}${p.cooldown ? '<br>Cooldown: '+p.cooldown : ''}<br><span style="opacity:.5">${p.attr1} ${p.val1} · ${p.attr2} ${p.val2} · ${p.attr3} ${p.val3}</span>`;
+    el.innerHTML = `<strong>${p.name}</strong> <span style="opacity:.6">(${p.rarity} · ${p.specialization})</span><br>${p.talentDescription}${p.cooldown ? '<br>Cooldown: '+p.cooldown : ''}<br><span style="opacity:.5">${p.attr1} ${p.val1} · ${p.attr2} ${p.val2} · ${p.attr3} ${p.val3}</span>`;
     el.classList.add('is-visible');
     const rc = p.rarity === 'High-End' ? 'rarity-high-end' : p.rarity === 'Superior' ? 'rarity-superior' : p.rarity === 'Specialized' ? 'rarity-specialized' : 'rarity-standard';
     badge.className = `slot-card__badge has-set ${rc}`; badge.textContent = p.rarity;
@@ -105,7 +188,7 @@
     if(!state.smc){ el.classList.remove('is-visible'); return; }
     const s = skillModCombos.find(x => x.id === state.smc);
     if(!s){ el.classList.remove('is-visible'); return; }
-    el.innerHTML = `<strong>${s.name}</strong><br><em>2pc:</em> ${s.bonus2}<br><em>3pc:</em> ${s.bonus3}`;
+    el.innerHTML = `<strong>${s.name}</strong> <span style="opacity:.6">(${s.specialization})</span><br><em>2pc:</em> ${s.bonus2}<br><em>3pc:</em> ${s.bonus3}`;
     el.classList.add('is-visible');
   }
 
@@ -139,7 +222,7 @@
 
   function renderSummary(){
     const counts = countSets();
-    const hasAnything = Object.keys(counts).length > 0 || state.weapon1.talent || state.weapon2.talent || state.os || state.smc || state.spec;
+    const hasAnything = Object.keys(counts).length > 0 || state.weapon1.talent || state.weapon2.talent || state.os || state.smc || state.spec || state.weapon1.id || state.weapon2.id;
     document.getElementById('summary-empty').style.display = hasAnything ? 'none' : 'block';
 
     // Set bonuses
@@ -171,15 +254,35 @@
     const bpT = state.slots.backpack.talent ? backpackTalents.find(t => t.id === state.slots.backpack.talent) : null;
     const w1T = state.weapon1.talent ? weaponTalents.find(t => t.id === state.weapon1.talent) : null;
     const w2T = state.weapon2.talent ? weaponTalents.find(t => t.id === state.weapon2.talent) : null;
-    const w1E = state.weapon1.exotic ? exoticWeapons.find(e => e.id === state.weapon1.exotic) : null;
-    const w2E = state.weapon2.exotic ? exoticWeapons.find(e => e.id === state.weapon2.exotic) : null;
+    
+    let w1Name = '';
+    if (state.weapon1.id) {
+      if (state.weapon1.id.startsWith('ex-')) {
+        const ex = exoticWeapons.find(e => e.id === state.weapon1.id.substring(3));
+        if (ex) w1Name = `${ex.name} (Exotic)`;
+      } else {
+        const std = standardWeapons.find(w => w.id === state.weapon1.id.substring(4));
+        if (std) w1Name = `${std.name} (${state.weapon1.tier})`;
+      }
+    }
+    let w2Name = '';
+    if (state.weapon2.id) {
+      if (state.weapon2.id.startsWith('ex-')) {
+        const ex = exoticWeapons.find(e => e.id === state.weapon2.id.substring(3));
+        if (ex) w2Name = `${ex.name} (Exotic)`;
+      } else {
+        const std = standardWeapons.find(w => w.id === state.weapon2.id.substring(4));
+        if (std) w2Name = `${std.name} (${state.weapon2.tier})`;
+      }
+    }
+
     const osP = state.os ? osProtocols.find(p => p.id === state.os) : null;
 
     if(bodyT) talentHTML += `<div class="summary-talent-item"><strong>Body:</strong> ${bodyT.name}</div>`;
     if(bpT) talentHTML += `<div class="summary-talent-item"><strong>Pack:</strong> ${bpT.name}</div>`;
-    if(w1E) talentHTML += `<div class="summary-talent-item"><strong>W1:</strong> ${w1E.name} (${w1E.talentName})</div>`;
+    if(w1Name) talentHTML += `<div class="summary-talent-item"><strong>W1:</strong> ${w1Name} ${w1T ? '— ' + w1T.name : ''}</div>`;
     else if(w1T) talentHTML += `<div class="summary-talent-item"><strong>W1:</strong> ${w1T.name}</div>`;
-    if(w2E) talentHTML += `<div class="summary-talent-item"><strong>W2:</strong> ${w2E.name} (${w2E.talentName})</div>`;
+    if(w2Name) talentHTML += `<div class="summary-talent-item"><strong>W2:</strong> ${w2Name} ${w2T ? '— ' + w2T.name : ''}</div>`;
     else if(w2T) talentHTML += `<div class="summary-talent-item"><strong>W2:</strong> ${w2T.name}</div>`;
     if(osP) talentHTML += `<div class="summary-talent-item"><strong>OS:</strong> ${osP.name} (${osP.rarity})</div>`;
 
@@ -189,6 +292,17 @@
     // Synergies & conflicts
     const synergies = [];
     const conflicts = [];
+    
+    // Custom weapon details extraction for synergy detector
+    let w1E = null;
+    if (state.weapon1.id && state.weapon1.id.startsWith('ex-')) {
+      w1E = exoticWeapons.find(e => e.id === state.weapon1.id.substring(3));
+    }
+    let w2E = null;
+    if (state.weapon2.id && state.weapon2.id.startsWith('ex-')) {
+      w2E = exoticWeapons.find(e => e.id === state.weapon2.id.substring(3));
+    }
+
     detectSynergies(synergies, conflicts, counts, {bodyT, bpT, w1T, w2T, w1E, w2E, osP});
 
     const synEl = document.getElementById('summary-synergies-list');
@@ -305,8 +419,6 @@
     }
   }
 
-  // URL Serialization (defined below with correct prefix mapping)
-
   function loadFromURL(){
     if(!location.hash || location.hash.length < 2) return;
     const p = new URLSearchParams(location.hash.slice(1));
@@ -317,8 +429,8 @@
       populateOSDropdown();
       populateSMCDropdown();
     }
-    // Gear slots use first char: m=mask, g=gloves, h=holster, k=kneepads, b=body/backpack
-    // Handle body vs backpack collision on 'b' prefix
+    
+    // Gear slots prefix mapping
     const slotPrefixMap = {m:'mask',g:'gloves',h:'holster',k:'kneepads'};
     Object.entries(slotPrefixMap).forEach(([pre, slot]) => {
       if(p.has(pre+'s')){ state.slots[slot].set = p.get(pre+'s'); const el = document.getElementById(`set-${slot}`); if(el) el.value = state.slots[slot].set; }
@@ -326,19 +438,29 @@
       if(p.has(pre+'1')){ state.slots[slot].attr1 = p.get(pre+'1'); const el = document.getElementById(`attr1-${slot}`); if(el) el.value = state.slots[slot].attr1; }
       if(p.has(pre+'2')){ state.slots[slot].attr2 = p.get(pre+'2'); const el = document.getElementById(`attr2-${slot}`); if(el) el.value = state.slots[slot].attr2; }
     });
-    // Body uses 'c' prefix (chest), backpack uses 'p' prefix (pack)
+    
     [['c','body'],['p','backpack']].forEach(([pre, slot]) => {
       if(p.has(pre+'s')){ state.slots[slot].set = p.get(pre+'s'); const el = document.getElementById(`set-${slot}`); if(el) el.value = state.slots[slot].set; }
       if(p.has(pre+'t')){ state.slots[slot].talent = p.get(pre+'t'); const el = document.getElementById(`talent-${slot}`); if(el) el.value = state.slots[slot].talent; }
       if(p.has(pre+'1')){ state.slots[slot].attr1 = p.get(pre+'1'); const el = document.getElementById(`attr1-${slot}`); if(el) el.value = state.slots[slot].attr1; }
       if(p.has(pre+'2')){ state.slots[slot].attr2 = p.get(pre+'2'); const el = document.getElementById(`attr2-${slot}`); if(el) el.value = state.slots[slot].attr2; }
     });
-    if(p.has('w1e')){ state.weapon1.exotic = p.get('w1e'); document.getElementById('exotic-w1').value = state.weapon1.exotic; document.getElementById('wtalent-w1').disabled = true; }
+    
+    if(p.has('w1e')){ state.weapon1.id = 'ex-' + p.get('w1e'); document.getElementById('weapon-w1').value = state.weapon1.id; document.getElementById('wtalent-w1').disabled = true; }
+    else if(p.has('w1s')){ state.weapon1.id = 'std-' + p.get('w1s'); document.getElementById('weapon-w1').value = state.weapon1.id; document.getElementById('row-tier-w1').style.display = 'block'; }
     if(p.has('w1t')){ state.weapon1.talent = p.get('w1t'); document.getElementById('wtalent-w1').value = state.weapon1.talent; }
-    if(p.has('w2e')){ state.weapon2.exotic = p.get('w2e'); document.getElementById('exotic-w2').value = state.weapon2.exotic; document.getElementById('wtalent-w2').disabled = true; }
+    if(p.has('w1tr')){ state.weapon1.tier = p.get('w1tr'); document.getElementById('tier-w1').value = state.weapon1.tier; }
+    
+    if(p.has('w2e')){ state.weapon2.id = 'ex-' + p.get('w2e'); document.getElementById('weapon-w2').value = state.weapon2.id; document.getElementById('wtalent-w2').disabled = true; }
+    else if(p.has('w2s')){ state.weapon2.id = 'std-' + p.get('w2s'); document.getElementById('weapon-w2').value = state.weapon2.id; document.getElementById('row-tier-w2').style.display = 'block'; }
     if(p.has('w2t')){ state.weapon2.talent = p.get('w2t'); document.getElementById('wtalent-w2').value = state.weapon2.talent; }
+    if(p.has('w2tr')){ state.weapon2.tier = p.get('w2tr'); document.getElementById('tier-w2').value = state.weapon2.tier; }
+    
     if(p.has('os')){ state.os = p.get('os'); document.getElementById('select-os').value = state.os; showOSDetail(); }
     if(p.has('smc')){ state.smc = p.get('smc'); document.getElementById('select-smc').value = state.smc; showSMCDetail(); }
+    
+    showWeaponDetail(1);
+    showWeaponDetail(2);
     update();
   }
 
@@ -350,7 +472,6 @@
       toast.classList.add('is-visible');
       setTimeout(() => toast.classList.remove('is-visible'), 2000);
     }).catch(() => {
-      // Fallback
       const ta = document.createElement('textarea');
       ta.value = location.href; document.body.appendChild(ta); ta.select();
       document.execCommand('copy'); document.body.removeChild(ta);
@@ -361,15 +482,25 @@
   }
 
   function resetBuild(){
-    state = {spec:null, slots:{}, weapon1:{exotic:'',talent:''}, weapon2:{exotic:'',talent:''}, os:'', smc:''};
+    state = {spec:null, slots:{}, weapon1:{id:'',tier:'T2',talent:''}, weapon2:{id:'',tier:'T2',talent:''}, os:'', smc:''};
     GEAR_SLOTS.forEach(s => state.slots[s] = {set:'',talent:'',attr1:'',attr2:''});
+    
     document.querySelectorAll('.spec-btn').forEach(b => b.classList.remove('is-active'));
     document.querySelectorAll('.slot-select').forEach(el => { el.value = ''; el.disabled = false; });
-    document.getElementById('select-os').innerHTML = '<option value="">— Choose specialization first —</option>';
-    document.getElementById('select-smc').innerHTML = '<option value="">— Choose specialization first —</option>';
+    document.querySelectorAll('.slot-input').forEach(el => { el.value = ''; });
+    
+    document.getElementById('row-tier-w1').style.display = 'none';
+    document.getElementById('row-tier-w2').style.display = 'none';
+    document.getElementById('w1-detail').classList.remove('is-visible');
+    document.getElementById('w2-detail').classList.remove('is-visible');
+    
+    populateOSDropdown();
+    populateSMCDropdown();
+    
     document.getElementById('os-detail').classList.remove('is-visible');
     document.getElementById('smc-detail').classList.remove('is-visible');
     document.getElementById('badge-os').className = 'slot-card__badge';
+    
     history.replaceState(null, '', location.pathname);
     update();
   }
@@ -386,16 +517,32 @@
       if(sl.attr1) p.set(pre + '1', sl.attr1);
       if(sl.attr2) p.set(pre + '2', sl.attr2);
     });
-    if(state.weapon1.exotic) p.set('w1e', state.weapon1.exotic);
+    
+    if(state.weapon1.id) {
+      if(state.weapon1.id.startsWith('ex-')) p.set('w1e', state.weapon1.id.substring(3));
+      else if(state.weapon1.id.startsWith('std-')) {
+        p.set('w1s', state.weapon1.id.substring(4));
+        p.set('w1tr', state.weapon1.tier);
+      }
+    }
     if(state.weapon1.talent) p.set('w1t', state.weapon1.talent);
-    if(state.weapon2.exotic) p.set('w2e', state.weapon2.exotic);
+    
+    if(state.weapon2.id) {
+      if(state.weapon2.id.startsWith('ex-')) p.set('w2e', state.weapon2.id.substring(3));
+      else if(state.weapon2.id.startsWith('std-')) {
+        p.set('w2s', state.weapon2.id.substring(4));
+        p.set('w2tr', state.weapon2.tier);
+      }
+    }
     if(state.weapon2.talent) p.set('w2t', state.weapon2.talent);
+    
     if(state.os) p.set('os', state.os);
     if(state.smc) p.set('smc', state.smc);
+    
     const hash = p.toString();
     if(hash) history.replaceState(null, '', '#' + hash);
     else history.replaceState(null, '', location.pathname);
-  };
+  }
 
   if(document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
   else init();

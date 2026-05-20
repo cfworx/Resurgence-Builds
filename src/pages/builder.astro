@@ -3,6 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import gearSets from '../data/gear-set-effects.json';
 import weaponTalents from '../data/weapon-talents.json';
 import exoticWeapons from '../data/exotic-weapons.json';
+import standardWeapons from '../data/standard-weapons.json';
 import bodyArmorTalents from '../data/body-armor-talents.json';
 import backpackTalents from '../data/backpack-talents.json';
 import osProtocols from '../data/os-protocols.json';
@@ -36,14 +37,14 @@ const allAttributes = bonusAttributes.flatMap(cat => cat.attributes);
 const SPECS = ['Demolitionist','Tech Operator','Bulwark','Vanguard','Field Medic'];
 const SLOTS = [
   { key: 'mask', label: 'Mask', icon: '🎭', hasTalent: false },
+  { key: 'body', label: 'Body Armor', icon: '🛡️', hasTalent: true, talentType: 'body' },
+  { key: 'backpack', label: 'Backpack', icon: '🎒', hasTalent: true, talentType: 'backpack' },
   { key: 'gloves', label: 'Gloves', icon: '🧤', hasTalent: false },
   { key: 'holster', label: 'Holster', icon: '🔗', hasTalent: false },
   { key: 'kneepads', label: 'Kneepads', icon: '🦿', hasTalent: false },
-  { key: 'body', label: 'Body Armor', icon: '🛡️', hasTalent: true, talentType: 'body' },
-  { key: 'backpack', label: 'Backpack', icon: '🎒', hasTalent: true, talentType: 'backpack' },
 ];
 
-const dataPayload = JSON.stringify({ gearSets, weaponTalents, exoticWeapons, bodyArmorTalents, backpackTalents, osProtocols, skillModCombos, bonusAttributes, allAttributes });
+const dataPayload = JSON.stringify({ gearSets, weaponTalents, exoticWeapons, standardWeapons, bodyArmorTalents, backpackTalents, osProtocols, skillModCombos, bonusAttributes, allAttributes });
 ---
 
 <BaseLayout title={title} description={description} breadcrumbs={breadcrumbs} faqs={faqs} jsonLd={jsonLd} keywords={["division resurgence build planner","division resurgence builder","division resurgence loadout tool","resurgence build maker"]}>
@@ -56,25 +57,152 @@ const dataPayload = JSON.stringify({ gearSets, weaponTalents, exoticWeapons, bod
   </div>
 </section>
 
+<div class="beta-banner">⚠ BETA — This build planner is a work in progress. Data may be incomplete.</div>
+
 <section class="builder-app container" id="builder-app">
-
-  <div class="builder-step" id="step-spec">
-    <h2 class="builder-step__heading">Specialization</h2>
-    <div class="spec-picker" id="spec-picker">
-      {SPECS.map(s => {
-        const cls = s === 'Demolitionist' ? 'demo' : s === 'Tech Operator' ? 'tech' : s === 'Bulwark' ? 'bulwark' : s === 'Vanguard' ? 'vanguard' : 'medic';
-        return <button class={`spec-btn spec-btn--${cls}`} data-spec={s} type="button">{s === 'Tech Operator' ? 'Tech Op' : s === 'Field Medic' ? 'Medic' : s}</button>;
-      })}
+  <div class="builder-outer">
+    <div class="builder-main">
+      <div class="builder-grid">
+    <!-- Q1: Top-Left — Specialization + Sub Class + Skills -->
+    <div class="quad quad--spec">
+      <h2 class="quad__heading">:: Specialization</h2>
+      <div class="spec-picker" id="spec-picker">
+        {SPECS.map(s => {
+          const cls = s === 'Demolitionist' ? 'demo' : s === 'Tech Operator' ? 'tech' : s === 'Bulwark' ? 'bulwark' : s === 'Vanguard' ? 'vanguard' : 'medic';
+          return <button class={`spec-btn spec-btn--${cls}`} data-spec={s} type="button">{s === 'Tech Operator' ? 'Tech Op' : s === 'Field Medic' ? 'Medic' : s}</button>;
+        })}
+      </div>
+      <div class="quad__sub">
+        <div class="sub-card">
+          <span class="sub-card__label">Sub Class</span>
+          <select class="slot-select" id="select-smc">
+            <option value="">— Choose spec first —</option>
+          </select>
+          <div class="smc-detail" id="smc-detail"></div>
+        </div>
+        <div class="sub-card">
+          <span class="sub-card__label">Skill 1</span>
+          <input class="slot-input" type="text" id="skill1-name" placeholder="e.g. Artillery Turret" />
+          <input class="slot-input slot-input--mod" type="text" id="skill1-mod" placeholder="Mod: e.g. Area Suppression" />
+        </div>
+        <div class="sub-card">
+          <span class="sub-card__label">Skill 2</span>
+          <input class="slot-input" type="text" id="skill2-name" placeholder="e.g. Seeker Mine" />
+          <input class="slot-input slot-input--mod" type="text" id="skill2-mod" placeholder="Mod: e.g. Multi-Directional" />
+        </div>
+      </div>
     </div>
-  </div>
 
-  <div class="builder-layout">
-    <div class="builder-editor">
+    <!-- Q2: Top-Right — Weapons (stacked) -->
+    <div class="quad quad--weapons">
+      <h2 class="quad__heading">:: Weapons</h2>
+      <div class="slot-card" id="slot-weapon1">
+        <div class="slot-card__header">
+          <span class="slot-card__icon">🔫</span>
+          <span class="slot-card__label">Primary Weapon</span>
+        </div>
+        <div class="slot-card__body">
+          <div class="slot-card__row">
+            <label class="slot-label" for="weapon-w1">Weapon</label>
+            <select class="slot-select select-weapon" id="weapon-w1" data-weapon="1">
+              <option value="">— Select Weapon —</option>
+              <optgroup label="Exotic Weapons">
+                {exoticWeapons.map(e => <option value={`ex-${e.id}`} data-type="exotic">{e.name}</option>)}
+              </optgroup>
+              <optgroup label="Standard Weapons">
+                {standardWeapons.map(w => <option value={`std-${w.id}`} data-type="standard">{w.name} ({w.type})</option>)}
+              </optgroup>
+            </select>
+          </div>
+          <div class="slot-card__row row-tier" id="row-tier-w1" style="display:none">
+            <label class="slot-label" for="tier-w1">Tier</label>
+            <select class="slot-select slot-select--sm select-tier" id="tier-w1" data-weapon="1">
+              <option value="T2">Tier 2 (Endgame)</option>
+              <option value="T1">Tier 1</option>
+              <option value="T0">Tier 0 (Basic)</option>
+            </select>
+          </div>
+          <div class="slot-card__row">
+            <label class="slot-label" for="wtalent-w1">Talent</label>
+            <select class="slot-select select-talent" id="wtalent-w1" data-weapon="1">
+              <option value="">— None —</option>
+              {weaponTalents.map(t => <option value={t.id}>{t.name}</option>)}
+            </select>
+          </div>
+          <div class="weapon-detail" id="w1-detail"></div>
+        </div>
+      </div>
+      <div class="slot-card" id="slot-weapon2">
+        <div class="slot-card__header">
+          <span class="slot-card__icon">🔫</span>
+          <span class="slot-card__label">Secondary Weapon</span>
+        </div>
+        <div class="slot-card__body">
+          <div class="slot-card__row">
+            <label class="slot-label" for="weapon-w2">Weapon</label>
+            <select class="slot-select select-weapon" id="weapon-w2" data-weapon="2">
+              <option value="">— Select Weapon —</option>
+              <optgroup label="Exotic Weapons">
+                {exoticWeapons.map(e => <option value={`ex-${e.id}`} data-type="exotic">{e.name}</option>)}
+              </optgroup>
+              <optgroup label="Standard Weapons">
+                {standardWeapons.map(w => <option value={`std-${w.id}`} data-type="standard">{w.name} ({w.type})</option>)}
+              </optgroup>
+            </select>
+          </div>
+          <div class="slot-card__row row-tier" id="row-tier-w2" style="display:none">
+            <label class="slot-label" for="tier-w2">Tier</label>
+            <select class="slot-select slot-select--sm select-tier" id="tier-w2" data-weapon="2">
+              <option value="T2">Tier 2 (Endgame)</option>
+              <option value="T1">Tier 1</option>
+              <option value="T0">Tier 0 (Basic)</option>
+            </select>
+          </div>
+          <div class="slot-card__row">
+            <label class="slot-label" for="wtalent-w2">Talent</label>
+            <select class="slot-select select-talent" id="wtalent-w2" data-weapon="2">
+              <option value="">— None —</option>
+              {weaponTalents.map(t => <option value={t.id}>{t.name}</option>)}
+            </select>
+          </div>
+          <div class="weapon-detail" id="w2-detail"></div>
+        </div>
+      </div>
+    </div>
 
-      <div class="builder-step">
-        <h2 class="builder-step__heading">Gear Slots</h2>
+    <!-- Q3: Bottom-Left — OS Protocol + Chipset Mods -->
+    <div class="quad quad--os">
+      <h2 class="quad__heading">:: OS Protocol</h2>
+      <div class="slot-card" id="slot-os">
+        <div class="slot-card__header">
+          <span class="slot-card__icon">⚙️</span>
+          <span class="slot-card__label">OS Protocol</span>
+          <span class="slot-card__badge" id="badge-os"></span>
+        </div>
+        <div class="slot-card__body">
+          <select class="slot-select" id="select-os">
+            <option value="">— Choose spec first —</option>
+          </select>
+          <div class="os-detail" id="os-detail"></div>
+        </div>
+      </div>
+      <div class="slot-card" id="slot-chipset">
+        <div class="slot-card__header">
+          <span class="slot-card__icon">🔩</span>
+          <span class="slot-card__label">Chipset Mods</span>
+        </div>
+        <div class="slot-card__body">
+          <input class="slot-input" type="text" id="chipset-desc" placeholder="e.g. 12× Engineering" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Q4: Bottom-Right — Gear (3×2 grid) -->
+    <div class="quad quad--gear">
+      <h2 class="quad__heading">:: Gear</h2>
+      <div class="gear-grid">
         {SLOTS.map(slot => (
-          <div class="slot-card" id={`slot-${slot.key}`}>
+          <div class="slot-card slot-card--gear" id={`slot-${slot.key}`}>
             <div class="slot-card__header">
               <span class="slot-card__icon">{slot.icon}</span>
               <span class="slot-card__label">{slot.label}</span>
@@ -104,14 +232,14 @@ const dataPayload = JSON.stringify({ gearSets, weaponTalents, exoticWeapons, bod
                 <div class="slot-attr">
                   <label class="slot-label" for={`attr1-${slot.key}`}>Bonus 1</label>
                   <select class="slot-select slot-select--sm" id={`attr1-${slot.key}`} data-slot={slot.key} data-field="attr1">
-                    <option value="">— None —</option>
+                    <option value="">—</option>
                     {allAttributes.map(a => <option value={a}>{a}</option>)}
                   </select>
                 </div>
                 <div class="slot-attr">
                   <label class="slot-label" for={`attr2-${slot.key}`}>Bonus 2</label>
                   <select class="slot-select slot-select--sm" id={`attr2-${slot.key}`} data-slot={slot.key} data-field="attr2">
-                    <option value="">— None —</option>
+                    <option value="">—</option>
                     {allAttributes.map(a => <option value={a}>{a}</option>)}
                   </select>
                 </div>
@@ -120,94 +248,14 @@ const dataPayload = JSON.stringify({ gearSets, weaponTalents, exoticWeapons, bod
           </div>
         ))}
       </div>
-
-      <div class="builder-step">
-        <h2 class="builder-step__heading">Weapons</h2>
-        <div class="slot-card" id="slot-weapon1">
-          <div class="slot-card__header">
-            <span class="slot-card__icon">🔫</span>
-            <span class="slot-card__label">Primary Weapon</span>
-          </div>
-          <div class="slot-card__body">
-            <div class="slot-card__row">
-              <label class="slot-label" for="exotic-w1">Exotic</label>
-              <select class="slot-select" id="exotic-w1" data-weapon="1" data-field="exotic">
-                <option value="">— Standard Weapon —</option>
-                {exoticWeapons.map(e => <option value={e.id}>{e.name} ({e.type})</option>)}
-              </select>
-            </div>
-            <div class="slot-card__row">
-              <label class="slot-label" for="wtalent-w1">Talent</label>
-              <select class="slot-select" id="wtalent-w1" data-weapon="1" data-field="talent">
-                <option value="">— None —</option>
-                {weaponTalents.map(t => <option value={t.id}>{t.name}</option>)}
-              </select>
-            </div>
-          </div>
-        </div>
-        <div class="slot-card" id="slot-weapon2">
-          <div class="slot-card__header">
-            <span class="slot-card__icon">🔫</span>
-            <span class="slot-card__label">Secondary Weapon</span>
-          </div>
-          <div class="slot-card__body">
-            <div class="slot-card__row">
-              <label class="slot-label" for="exotic-w2">Exotic</label>
-              <select class="slot-select" id="exotic-w2" data-weapon="2" data-field="exotic">
-                <option value="">— Standard Weapon —</option>
-                {exoticWeapons.map(e => <option value={e.id}>{e.name} ({e.type})</option>)}
-              </select>
-            </div>
-            <div class="slot-card__row">
-              <label class="slot-label" for="wtalent-w2">Talent</label>
-              <select class="slot-select" id="wtalent-w2" data-weapon="2" data-field="talent">
-                <option value="">— None —</option>
-                {weaponTalents.map(t => <option value={t.id}>{t.name}</option>)}
-              </select>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="builder-step">
-        <h2 class="builder-step__heading">OS Protocol</h2>
-        <div class="slot-card" id="slot-os">
-          <div class="slot-card__header">
-            <span class="slot-card__icon">⚙️</span>
-            <span class="slot-card__label">OS Protocol</span>
-            <span class="slot-card__badge" id="badge-os"></span>
-          </div>
-          <div class="slot-card__body">
-            <select class="slot-select" id="select-os">
-              <option value="">— Choose specialization first —</option>
-            </select>
-            <div class="os-detail" id="os-detail"></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="builder-step">
-        <h2 class="builder-step__heading">Skill Mod Combo</h2>
-        <div class="slot-card" id="slot-smc">
-          <div class="slot-card__header">
-            <span class="slot-card__icon">🧩</span>
-            <span class="slot-card__label">Skill Mod Combo</span>
-          </div>
-          <div class="slot-card__body">
-            <select class="slot-select" id="select-smc">
-              <option value="">— Choose specialization first —</option>
-            </select>
-            <div class="smc-detail" id="smc-detail"></div>
-          </div>
-        </div>
-      </div>
-
     </div>
+      </div><!-- /builder-grid -->
+    </div><!-- /builder-main -->
 
     <aside class="builder-summary" id="builder-summary">
-      <div class="summary-inner">
-        <h2 class="summary-title">Build Summary</h2>
-        <div id="summary-empty" class="summary-empty">Select a specialization and gear to see your build analysis.</div>
+    <div class="summary-inner">
+      <h2 class="summary-title">Build Summary</h2>
+      <div id="summary-empty" class="summary-empty">Select a specialization and gear to see your build analysis.</div>
         <div id="summary-sets" class="summary-section" style="display:none">
           <h3 class="summary-section__title">Active Set Bonuses</h3>
           <div id="summary-sets-list"></div>
@@ -231,7 +279,7 @@ const dataPayload = JSON.stringify({ gearSets, weaponTalents, exoticWeapons, bod
         <div id="copy-toast" class="copy-toast">Link copied!</div>
       </div>
     </aside>
-  </div>
+  </div><!-- /builder-outer -->
 </section>
 
 <section class="builder-about container">
@@ -268,20 +316,31 @@ const dataPayload = JSON.stringify({ gearSets, weaponTalents, exoticWeapons, bod
 </BaseLayout>
 
 <style>
-.builder-hero{padding:var(--sp-12) 0 var(--sp-8);border-bottom:1px solid var(--border)}
+.builder-hero{padding:var(--sp-8) 0 var(--sp-6);border-bottom:1px solid var(--border)}
 .builder-hero__title{font-size:var(--text-3xl);margin-bottom:var(--sp-3)}
 .builder-hero__sub{color:var(--ink-muted);max-width:55ch;font-size:var(--text-base)}
-@media(min-width:768px){.builder-hero{padding:var(--sp-16) 0 var(--sp-10)}.builder-hero__title{font-size:var(--text-4xl)}}
+@media(min-width:768px){.builder-hero{padding:var(--sp-12) 0 var(--sp-8)}.builder-hero__title{font-size:var(--text-4xl)}}
 
-.builder-app{padding:var(--sp-8) 0}
-.builder-layout{display:flex;flex-direction:column;gap:var(--sp-6)}
-@media(min-width:1024px){.builder-layout{flex-direction:row}.builder-editor{flex:1;min-width:0}.builder-summary{width:22rem;flex-shrink:0}}
+.builder-app{padding:var(--sp-4) 0}
+.builder-outer{display:flex;flex-direction:column;gap:var(--sp-3)}
+@media(min-width:1200px){.builder-outer{flex-direction:row}.builder-main{flex:1;min-width:0}.builder-summary{width:280px;flex-shrink:0}}
+.builder-grid{display:flex;flex-direction:column;gap:2px}
+@media(min-width:1024px){
+  .builder-grid{display:grid;grid-template-columns:minmax(280px,1.2fr) minmax(0,2fr);grid-template-rows:auto auto;gap:2px;align-items:stretch}
+  .quad--spec{grid-column:1;grid-row:1}
+  .quad--weapons{grid-column:2;grid-row:1}
+  .quad--os{grid-column:1;grid-row:2}
+  .quad--gear{grid-column:2;grid-row:2}
+}
+.quad{background:var(--surface);border:1px solid var(--border);border-radius:var(--border-radius);padding:var(--sp-3)}
+.quad__heading{font-family:var(--font-heading);font-size:var(--text-xs);text-transform:uppercase;letter-spacing:.06em;color:var(--accent);margin-bottom:var(--sp-2);padding-bottom:var(--sp-1);border-bottom:1px solid var(--border)}
+.quad__sub{display:flex;flex-direction:column;gap:var(--sp-2)}
+.sub-card{background:var(--surface-2);border:1px solid var(--border);border-radius:var(--border-radius);padding:var(--sp-2)}
+.sub-card__label{display:block;font-family:var(--font-mono);font-size:9px;text-transform:uppercase;letter-spacing:.06em;color:var(--ink-muted);margin-bottom:4px}
+.beta-banner{background:var(--accent);color:#000;text-align:center;padding:6px;font-family:var(--font-heading);font-size:var(--text-xs);font-weight:700;text-transform:uppercase;letter-spacing:.08em}
 
-.builder-step{margin-bottom:var(--sp-6)}
-.builder-step__heading{font-size:var(--text-lg);margin-bottom:var(--sp-4);padding-bottom:var(--sp-2);border-bottom:1px solid var(--border);font-family:var(--font-heading)}
-
-.spec-picker{display:flex;flex-wrap:wrap;gap:var(--sp-2)}
-.spec-btn{font-family:var(--font-heading);font-weight:700;font-size:var(--text-sm);padding:var(--sp-3) var(--sp-4);background:var(--surface);border:1px solid var(--border);border-radius:var(--border-radius);color:var(--ink-muted);cursor:pointer;transition:all var(--transition-fast);min-height:48px;text-transform:uppercase;letter-spacing:.03em}
+.spec-picker{display:flex;flex-wrap:wrap;gap:4px;margin-bottom:var(--sp-2)}
+.spec-btn{font-family:var(--font-heading);font-weight:700;font-size:11px;padding:4px var(--sp-2);background:var(--surface-2);border:1px solid var(--border);border-radius:var(--border-radius);color:var(--ink-muted);cursor:pointer;transition:all var(--transition-fast);min-height:32px;text-transform:uppercase;letter-spacing:.03em}
 .spec-btn:hover{border-color:var(--ink-muted);color:var(--ink)}
 .spec-btn.is-active{color:#fff}
 .spec-btn--demo.is-active{background:#8c1e14;border-color:#e74c3c;color:#e74c3c}
@@ -290,49 +349,67 @@ const dataPayload = JSON.stringify({ gearSets, weaponTalents, exoticWeapons, bod
 .spec-btn--vanguard.is-active{background:var(--accent-dim);border-color:var(--accent);color:var(--accent)}
 .spec-btn--medic.is-active{background:#1a7b45;border-color:#2ecc71;color:#2ecc71}
 
-.slot-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--border-radius);margin-bottom:var(--sp-3);transition:border-color var(--transition-fast)}
+/* Slot cards */
+.slot-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--border-radius);margin-bottom:var(--sp-2);transition:border-color var(--transition-fast)}
 .slot-card:hover{border-color:var(--accent-dim)}
-.slot-card__header{display:flex;align-items:center;gap:var(--sp-2);padding:var(--sp-3) var(--sp-4);border-bottom:1px solid var(--border);font-family:var(--font-heading);font-weight:700;font-size:var(--text-sm)}
-.slot-card__icon{font-size:var(--text-base)}
+.slot-card__header{display:flex;align-items:center;gap:var(--sp-2);padding:var(--sp-2) var(--sp-3);border-bottom:1px solid var(--border);font-family:var(--font-heading);font-weight:700;font-size:var(--text-xs);text-transform:uppercase;letter-spacing:.02em}
+.slot-card__icon{font-size:var(--text-sm)}
 .slot-card__label{flex:1}
-.slot-card__badge{font-family:var(--font-mono);font-size:var(--text-xs);padding:2px 6px;border-radius:3px;background:var(--surface-2);color:var(--ink-muted);display:none}
+/* badge overrides below */
+.slot-card__badge{font-family:var(--font-mono);font-size:9px;padding:2px 6px;border-radius:3px;background:var(--surface-2);color:var(--ink-muted);display:none;white-space:nowrap}
 .slot-card__badge.has-set{display:inline-block}
-.slot-card__badge.full-bonus{background:var(--accent-dim);color:var(--accent)}
-.slot-card__body{padding:var(--sp-3) var(--sp-4)}
-.slot-card__row{margin-bottom:var(--sp-2)}
+.slot-card__badge.full-bonus{background:#2d1f0a;color:#fff;border:1px solid #f5a623}
+.slot-card__body{padding:var(--sp-2) var(--sp-3)}
+.slot-card__row{margin-bottom:var(--sp-1)}
 .slot-card__row:last-child{margin-bottom:0}
-.slot-card__row--attrs{display:grid;grid-template-columns:1fr 1fr;gap:var(--sp-2)}
+.slot-card__row--attrs{display:grid;grid-template-columns:1fr 1fr;gap:var(--sp-1)}
 
-.slot-label{display:block;font-family:var(--font-mono);font-size:var(--text-xs);color:var(--ink-muted);text-transform:uppercase;letter-spacing:.05em;margin-bottom:var(--sp-1)}
-.slot-select{width:100%;padding:var(--sp-2) var(--sp-3);background:var(--surface-2);border:1px solid var(--border);border-radius:var(--border-radius);color:var(--ink);font-size:var(--text-sm);min-height:44px;cursor:pointer;transition:border-color var(--transition-fast);appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%239A9A9E' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 10px center}
+.slot-label{display:block;font-family:var(--font-mono);font-size:10px;color:var(--ink-muted);text-transform:uppercase;letter-spacing:.05em;margin-bottom:2px}
+.slot-select{width:100%;padding:var(--sp-1) var(--sp-2);background:var(--surface-2);border:1px solid var(--border);border-radius:var(--border-radius);color:var(--ink);font-size:var(--text-xs);min-height:36px;cursor:pointer;transition:border-color var(--transition-fast);appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%239A9A9E' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 8px center}
 .slot-select:focus{border-color:var(--accent);outline:none}
-.slot-select--sm{font-size:var(--text-xs);min-height:40px;padding:var(--sp-1) var(--sp-2)}
+.slot-select--sm{font-size:10px;min-height:32px;padding:2px var(--sp-2)}
+.weapon-detail{margin-top:var(--sp-2);padding:var(--sp-2);background:var(--surface-2);border-radius:var(--border-radius);font-size:var(--text-xs);line-height:1.5;display:none}
+.weapon-detail.is-visible{display:block}
+.weapon-detail__stats{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp-1);margin-top:4px;border-top:1px solid var(--border);padding-top:4px}
+.weapon-detail__stat{font-family:var(--font-mono);font-size:10px;color:var(--ink-muted)}
+.weapon-detail__stat strong{color:var(--ink)}
 .slot-select option{background:var(--surface-2);color:var(--ink)}
 
-.os-detail,.smc-detail{margin-top:var(--sp-2);padding:var(--sp-3);background:var(--surface-2);border-radius:var(--border-radius);font-size:var(--text-xs);color:var(--ink-muted);line-height:1.5;display:none}
+/* Text inputs (skills, chipset) */
+.slot-input{width:100%;padding:var(--sp-1) var(--sp-2);background:var(--surface-2);border:1px solid var(--border);border-radius:var(--border-radius);color:var(--ink);font-size:var(--text-xs);min-height:36px;transition:border-color var(--transition-fast);box-sizing:border-box}
+.slot-input:focus{border-color:var(--accent);outline:none}
+.slot-input::placeholder{color:var(--ink-muted);opacity:.5}
+
+/* Gear: 3-column grid on desktop */
+.gear-grid{display:flex;flex-direction:column;gap:var(--sp-2)}
+@media(min-width:1024px){.gear-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp-2)}.gear-grid .slot-card{margin-bottom:0}}
+
+.os-detail,.smc-detail{margin-top:var(--sp-1);padding:var(--sp-2);background:var(--surface-2);border-radius:var(--border-radius);font-size:var(--text-xs);color:var(--ink);line-height:1.6;display:none}
 .os-detail.is-visible,.smc-detail.is-visible{display:block}
 
-.summary-inner{position:sticky;top:calc(var(--nav-height) + var(--sp-4));background:var(--surface);border:1px solid var(--border);border-radius:var(--border-radius);padding:var(--sp-4)}
-.summary-title{font-size:var(--text-base);margin-bottom:var(--sp-4);padding-bottom:var(--sp-2);border-bottom:2px solid var(--accent);font-family:var(--font-heading)}
-.summary-empty{color:var(--ink-muted);font-size:var(--text-sm);text-align:center;padding:var(--sp-6) 0}
-.summary-section{margin-bottom:var(--sp-4)}
-.summary-section__title{font-family:var(--font-mono);font-size:var(--text-xs);text-transform:uppercase;letter-spacing:.08em;color:var(--ink-muted);margin-bottom:var(--sp-2)}
+/* Summary: sticky sidebar on desktop */
+.builder-summary{margin-top:var(--sp-3)}
+.summary-inner{position:sticky;top:calc(var(--nav-height,60px) + var(--sp-3));background:var(--surface);border:1px solid var(--border);border-radius:var(--border-radius);padding:var(--sp-3);max-height:calc(100vh - var(--nav-height,60px) - var(--sp-6));overflow-y:auto}
+.summary-title{font-size:var(--text-sm);margin-bottom:var(--sp-2);padding-bottom:var(--sp-1);border-bottom:2px solid var(--accent);font-family:var(--font-heading)}
+.summary-empty{color:var(--ink-muted);font-size:var(--text-xs);text-align:center;padding:var(--sp-3) 0}
+.summary-section{margin-bottom:var(--sp-3)}
+.summary-section__title{font-family:var(--font-mono);font-size:10px;text-transform:uppercase;letter-spacing:.08em;color:var(--ink-muted);margin-bottom:var(--sp-1)}
 
-.summary-set-item{padding:var(--sp-2) var(--sp-3);background:var(--surface-2);border-radius:var(--border-radius);margin-bottom:var(--sp-1);font-size:var(--text-sm);border-left:3px solid var(--border)}
+.summary-set-item{padding:var(--sp-2) var(--sp-3);background:var(--surface-2);border-radius:var(--border-radius);margin-bottom:var(--sp-1);font-size:var(--text-xs);border-left:3px solid var(--border)}
 .summary-set-item.tier-2{border-left-color:#9A9A9E}
 .summary-set-item.tier-3{border-left-color:var(--accent-dim)}
 .summary-set-item.tier-4{border-left-color:var(--accent)}
 .summary-set-name{font-weight:700;font-family:var(--font-heading)}
-.summary-set-count{font-family:var(--font-mono);font-size:var(--text-xs);color:var(--ink-muted)}
-.summary-set-bonus{font-size:var(--text-xs);color:var(--ink-muted);margin-top:2px}
+.summary-set-count{font-family:var(--font-mono);font-size:10px;color:var(--ink-muted)}
+.summary-set-bonus{font-size:10px;color:var(--ink-muted);margin-top:1px}
 
-.summary-talent-item{padding:var(--sp-1) var(--sp-3);font-size:var(--text-sm);color:var(--ink-muted);border-left:2px solid var(--border);margin-bottom:var(--sp-1)}
+.summary-talent-item{padding:var(--sp-1) var(--sp-2);font-size:var(--text-xs);color:var(--ink-muted);border-left:2px solid var(--border);margin-bottom:var(--sp-1)}
 .summary-talent-item strong{color:var(--ink);font-weight:500}
 
-.summary-synergy{padding:var(--sp-2) var(--sp-3);background:rgba(109,170,69,0.08);border-left:3px solid var(--success);border-radius:var(--border-radius);margin-bottom:var(--sp-1);font-size:var(--text-xs);color:var(--ink-muted);line-height:1.5}
-.summary-conflict{padding:var(--sp-2) var(--sp-3);background:rgba(224,64,46,0.08);border-left:3px solid var(--danger);border-radius:var(--border-radius);margin-bottom:var(--sp-1);font-size:var(--text-xs);color:var(--ink-muted);line-height:1.5}
+.summary-synergy{padding:var(--sp-2);background:rgba(109,170,69,0.06);border-left:3px solid var(--success);border-radius:var(--border-radius);margin-bottom:var(--sp-2);font-size:var(--text-xs);color:var(--ink);line-height:1.5}
+.summary-conflict{padding:var(--sp-2);background:rgba(224,64,46,0.06);border-left:3px solid var(--danger);border-radius:var(--border-radius);margin-bottom:var(--sp-2);font-size:var(--text-xs);color:var(--ink);line-height:1.5}
 
-.summary-actions{display:flex;gap:var(--sp-2);margin-top:var(--sp-4)}
+.summary-actions{display:flex;gap:var(--sp-2);margin-top:var(--sp-3)}
 .summary-actions .btn{flex:1;font-size:var(--text-xs);padding:var(--sp-2) var(--sp-3)}
 
 .copy-toast{position:fixed;bottom:var(--sp-4);left:50%;transform:translateX(-50%) translateY(100px);background:var(--accent);color:#fff;padding:var(--sp-2) var(--sp-6);border-radius:var(--border-radius);font-family:var(--font-heading);font-weight:700;font-size:var(--text-sm);z-index:200;transition:transform .3s ease;pointer-events:none}
@@ -353,10 +430,23 @@ const dataPayload = JSON.stringify({ gearSets, weaponTalents, exoticWeapons, bod
 .faq-item[open] .faq-question::after{content:'－'}
 .faq-answer{padding:0 var(--sp-4) var(--sp-4);font-size:var(--text-sm);color:var(--ink-muted);line-height:1.6}
 
+/* Mobile: touch-friendly sizes */
 @media(max-width:767px){
   .builder-hero__title{font-size:var(--text-2xl)}
   .spec-btn{font-size:var(--text-xs);padding:var(--sp-2) var(--sp-3);min-height:42px}
-  .slot-card__row--attrs{grid-template-columns:1fr}
+  .slot-select{min-height:44px;font-size:var(--text-sm);padding:var(--sp-2) var(--sp-3)}
+  .slot-select--sm{min-height:40px;font-size:var(--text-xs)}
+  .slot-input{min-height:44px;font-size:var(--text-sm);padding:var(--sp-2) var(--sp-3)}
+  .slot-card__header{padding:var(--sp-3) var(--sp-4);font-size:var(--text-sm)}
+  .slot-card__body{padding:var(--sp-3) var(--sp-4)}
+  .slot-card__row{margin-bottom:var(--sp-2)}
+  .slot-label{font-size:var(--text-xs);margin-bottom:var(--sp-1)}
+  .quad{padding:var(--sp-4)}
+  .quad__heading{font-size:var(--text-sm)}
+  .sub-card{padding:var(--sp-3)}
+  .sub-card__label{font-size:var(--text-xs);margin-bottom:6px}
+  .os-detail,.smc-detail{font-size:var(--text-sm);padding:var(--sp-3)}
   .summary-inner{position:static}
 }
 </style>
+
