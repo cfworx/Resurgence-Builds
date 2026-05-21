@@ -154,7 +154,7 @@ The Phase 2 free exotic LMG is the dominant conversation in the community right 
 ### What's Confirmed (Official Sources)
 
 - Free reward on the Classified Ops Pass 1.2 track.
-- **Anarchy** talent (description was wrong pre-1.2.1 — now fixed, now accurately describes the underwhelming DoT).
+- **Anarchy** talent (description was wrong pre-1.2.1 — now fixed). Corrected values: **2.40% Weapon Damage DoT over 4.50 seconds, up to 50 stacks. Enemies dying with the debuff transfer all stacks to a nearby enemy within 12 meters.** The old tooltip incorrectly showed 100% WD / 10 seconds / 25 meters — which is why every early build guide had wildly wrong expectations.
 - Tactical Augmentation Module sold at the Dark Zone Vendor.
 - Ubisoft is reviewing the perks for a buff. This is in writing. In the official patch notes.
 

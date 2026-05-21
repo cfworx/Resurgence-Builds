@@ -37,7 +37,7 @@
     "rpm": "550",
     "mag": "100",
     "talentName": "Anarchy",
-    "talentDescription": "Hits inflict a debuff, dealing 100% Weapon Damage over 10 seconds, up to 50 stacks. Enemies dying with this debuff transfer all stacks to a nearby enemy within 25 meters.",
+    "talentDescription": "Hits inflict a debuff, dealing 2.40% Weapon Damage over 4.50 seconds, up to 50 stacks. Enemies dying with this debuff transfer all stacks to a nearby enemy within 12 meters.",
     "accuracy": "74",
     "reloadSpeed": "5.6s",
     "optimalRange": "29m",

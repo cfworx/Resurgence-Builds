@@ -48,7 +48,7 @@ A buff is being discussed. Officially. In writing. Mid-phase. Don't burn your re
 
 Additional Strawberry Milkshake changes in 1.2.1:
 
-- **Anarchy talent description fixed** — the effect value displayed was incorrect before. It now accurately describes how underwhelming the DoT is, in precise numbers
+- **Anarchy talent description fixed** — the effect value displayed was incorrect before. Corrected values: **2.40% Weapon Damage over 4.50 seconds, up to 50 stacks; death transfers stacks within 12 meters.** The pre-fix tooltip showed 100% WD / 10s / 25m — wildly wrong numbers that inflated community expectations
 - **Weekly Mission Exotic Manual / Booklet rewards** can now correctly drop Strawberry Milkshake recalibration material — start farming these now so you're ready when the buff hits
 
 ---

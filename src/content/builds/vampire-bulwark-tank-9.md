@@ -4,8 +4,8 @@ specialization: Bulwark
 playstyle: Tank
 pve: true
 pvp: false
-lastUpdated: 2026-05-16
-patch: "Season 2"
+lastUpdated: 2026-05-20
+patch: "Season 1 Phase 2"
 tags: ["juggernaut", "strawberry-milkshake"]
 description: "A solo-first off-meta Bulwark build that turns you into a caffeinated mosquito with an LMG. You literally out-heal damage by refusing to stop shooting."
 author: "RapidF5"
@@ -19,6 +19,8 @@ plannerHash: "s=Bulwark&sc=Juggernaut&n=Vampire+Bulwark+Tank&ms=gs-16&m1=Max+Hea
 ---
 
 ## What it is
+
+> ⚠️ **Buff incoming.** Ubisoft confirmed in Patch 1.2.1 (May 20, 2026) that Strawberry Milkshake's perks are underwhelming and under review for a buff. **Hold your recalibration materials** — this build will be updated when the new numbers land. Farm Weekly Mission Exotic Manuals now to stockpile SM recal mats (fixed in 1.2.1 to correctly drop).
 
 Are you tired of taking cover? Do you look at a health bar and think, "I could just shoot my way out of this"? Welcome to the Happy Survival Vampire Tank. 
 
