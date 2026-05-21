@@ -14,6 +14,19 @@ const getRarityClass = (rarity: string) => {
 
 const rarities = [...new Set(osProtocols.map(p => p.rarity))];
 const attr1s = [...new Set(osProtocols.map(p => p.attr1))];
+
+const itemListLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: 'The Division Resurgence OS Protocols',
+  description: description,
+  numberOfItems: osProtocols.length,
+  itemListElement: osProtocols.map((item: { name: string }, i: number) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    name: item.name,
+  })),
+};
 ---
 
 <DatabaseLayout
@@ -22,6 +35,7 @@ const attr1s = [...new Set(osProtocols.map(p => p.attr1))];
   {breadcrumbs}
   heading="OS Protocols"
   subheading="Your OS Protocol is the backbone of your specialization. Pick the wrong one and your entire build underperforms. No pressure."
+  jsonLd={itemListLd}
 >
   <div class="db-filters">
     <div class="filter-group" id="filter-rarity">

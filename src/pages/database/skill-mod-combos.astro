@@ -19,6 +19,19 @@ const getSpecClass = (spec: string) => {
   if (s.includes('medic')) return 'tag--medic';
   return '';
 };
+
+const itemListLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: 'The Division Resurgence Skill Mod Combos',
+  description: description,
+  numberOfItems: skillMods.length,
+  itemListElement: skillMods.map((item: { name: string }, i: number) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    name: item.name,
+  })),
+};
 ---
 
 <DatabaseLayout
@@ -27,6 +40,7 @@ const getSpecClass = (spec: string) => {
   {breadcrumbs}
   heading="Skill Mod Combos"
   subheading="Pairing the right skill mods unlocks powerful synergy bonuses. Two pieces or three — know which combo fits your chaos."
+  jsonLd={itemListLd}
 >
   <div class="db-filters">
     <div class="filter-group" id="filter-spec">

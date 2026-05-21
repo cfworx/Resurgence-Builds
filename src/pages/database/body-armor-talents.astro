@@ -7,6 +7,19 @@ const description = "Complete database of all Body Armor (Chest) Talents in The 
 const breadcrumbs = [
   { name: 'Body Armor Talents', url: '/database/body-armor-talents/' }
 ];
+
+const itemListLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: 'The Division Resurgence Body Armor Talents',
+  description: description,
+  numberOfItems: armorTalents.length,
+  itemListElement: armorTalents.map((item: { name: string }, i: number) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    name: item.name,
+  })),
+};
 ---
 
 <DatabaseLayout
@@ -15,6 +28,7 @@ const breadcrumbs = [
   {breadcrumbs}
   heading="Body Armor Talents"
   subheading="Browse the complete list of Body Armor (Chest) Talents and their powerful defensive and offensive effects."
+  jsonLd={itemListLd}
 >
   <div class="db-grid" id="talents-grid">
     {armorTalents.map((talent) => (

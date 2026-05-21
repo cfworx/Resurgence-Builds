@@ -16,6 +16,19 @@ const getCategoryColor = (cat: string) => {
     default: return { color: '#b8b8c0', bg: 'rgba(255,255,255,0.04)', border: 'rgba(255,255,255,0.1)' };
   }
 };
+
+const itemListLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: 'The Division Resurgence Bonus Attributes',
+  description: description,
+  numberOfItems: bonusAttributes.length,
+  itemListElement: bonusAttributes.map((item: { category: string }, i: number) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    name: item.category,
+  })),
+};
 ---
 
 <DatabaseLayout
@@ -24,6 +37,7 @@ const getCategoryColor = (cat: string) => {
   {breadcrumbs}
   heading="Bonus Attributes"
   subheading="Every stat that can roll on your gear and weapons — organized by core function. Know your rolls, or suffer."
+  jsonLd={itemListLd}
 >
   <div class="db-grid" id="attributes-grid">
     {bonusAttributes.map((category) => {

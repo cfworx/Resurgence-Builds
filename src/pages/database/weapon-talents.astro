@@ -7,6 +7,19 @@ const description = "A full database of Division Resurgence weapon talents, atta
 const breadcrumbs = [
   { name: 'Weapon Talents', url: '/database/weapon-talents/' }
 ];
+
+const itemListLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: 'The Division Resurgence Weapon Talents',
+  description: description,
+  numberOfItems: weaponTalents.length,
+  itemListElement: weaponTalents.map((item: { name: string }, i: number) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    name: item.name,
+  })),
+};
 ---
 
 <DatabaseLayout
@@ -15,6 +28,7 @@ const breadcrumbs = [
   {breadcrumbs}
   heading="Weapon Talents"
   subheading="The complete list of weapon talents and their effects. Slot the right one and watch your damage multiply obscenely."
+  jsonLd={itemListLd}
 >
   <div class="db-grid" id="talents-grid">
     {weaponTalents.map((talent) => (

@@ -7,6 +7,19 @@ const description = "A complete database of all Division Resurgence Gear Sets, B
 const breadcrumbs = [
   { name: 'Gear Set Effects', url: '/database/gear-set-effects/' }
 ];
+
+const itemListLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: 'The Division Resurgence Gear Set Effects',
+  description: description,
+  numberOfItems: gearSets.length,
+  itemListElement: gearSets.map((item: { name: string }, i: number) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    name: item.name,
+  })),
+};
 ---
 
 <DatabaseLayout
@@ -15,6 +28,7 @@ const breadcrumbs = [
   {breadcrumbs}
   heading="Gear Set Effects"
   subheading="Every gear set and their 2, 3, and 4-piece bonuses. Stack these correctly and you become an entirely different class of problem."
+  jsonLd={itemListLd}
 >
   <div class="db-grid" id="gear-grid">
     {gearSets.map((gear) => (

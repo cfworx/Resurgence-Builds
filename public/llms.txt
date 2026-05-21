@@ -1,0 +1,38 @@
+# ResurgenceBuilds.com
+
+> The top independent resource hub for The Division Resurgence — builds, guides, exotic weapons, patch notes, and Dark Zone intel.
+
+## Site Purpose
+ResurgenceBuilds.com is an ad-free, community-driven wiki for The Division Resurgence mobile/PC game by Ubisoft. We provide in-game tested builds, weapon databases, gear set references, and patch note analysis.
+
+## Content Overview
+- /builds/ — Optimized meta and off-meta loadouts for all 5 specializations (Vanguard, Demolitionist, Field Medic, Tech Operator, Bulwark)
+- /news/ — Developer stream summaries, patch analysis, community sentiment
+- /patch-notes/ — Detailed patch note breakdowns with build impact analysis
+- /database/ — Weapon talents, gear set effects, OS protocols, exotic weapons, skill mod combos, bonus attributes
+- /builder/ — Interactive build planner tool
+
+## Game Details
+- Game: The Division Resurgence
+- Developer: Ubisoft Bucharest
+- Publisher: Ubisoft Mobile
+- Platforms: iOS, Android, PC (Ubisoft Connect Early Access)
+- Current Season: Season 1, Phase 2 (May 2026)
+- Current Patch: 1.2.1 (May 20, 2026)
+
+## Specializations
+- Vanguard (subclasses: Commando, Recon)
+- Demolitionist (subclasses: HE Grenade, Flashguard)
+- Bulwark (subclasses: Juggernaut, Breacher)
+- Field Medic (subclasses: Combat Medicine, Tactical Pharma)
+- Tech Operator (subclasses: Offensive, Aegis)
+
+## Exotic Weapons (Current)
+- Lady Death (SMG) — Talent: Breathe Free
+- Warlord (Assault Rifle) — Talent: Play Rough
+- Strawberry Milkshake (LMG) — Talent: Anarchy (buff pending)
+- Scorpio (upcoming Phase 3, June 2026)
+
+## Contact
+- Author: RapidF5
+- Site: https://resurgencebuilds.com

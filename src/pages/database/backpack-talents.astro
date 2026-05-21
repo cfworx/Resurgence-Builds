@@ -7,6 +7,19 @@ const description = "Complete database of all Backpack Talents in The Division R
 const breadcrumbs = [
   { name: 'Backpack Talents', url: '/database/backpack-talents/' }
 ];
+
+const itemListLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: 'The Division Resurgence Backpack Talents',
+  description: description,
+  numberOfItems: backpackTalents.length,
+  itemListElement: backpackTalents.map((item: { name: string }, i: number) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    name: item.name,
+  })),
+};
 ---
 
 <DatabaseLayout
@@ -15,6 +28,7 @@ const breadcrumbs = [
   {breadcrumbs}
   heading="Backpack Talents"
   subheading="Browse the complete list of Backpack Talents to optimize your build's utility and survivability."
+  jsonLd={itemListLd}
 >
   <div class="db-grid" id="talents-grid">
     {backpackTalents.map((talent) => (
