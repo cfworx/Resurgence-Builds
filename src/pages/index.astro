@@ -54,6 +54,8 @@ const posts: UnifiedPost[] = [
     description: guide.data.description,
     type: 'guide' as const,
     tags: guide.data.tags,
+    featuredImage: guide.data.featuredImage,
+    imageAlt: guide.data.imageAlt,
   })),
   ...allBuilds.map((build) => ({
     title: build.data.title,
