@@ -52,6 +52,8 @@ const guides = defineCollection({
     tags: z.array(z.string()),
     description: z.string(),
     author: z.string().optional(),
+    featuredImage: z.string().optional(),
+    imageAlt: z.string().optional(),
     pizzaTitle: z.string().optional(),
     pizzaText: z.string().optional(),
     shareTitle: z.string().optional(),

@@ -9,11 +9,14 @@ export interface Props {
   category: string;
   lastUpdated: Date;
   tags: string[];
+  author?: string;
+  featuredImage?: string;
+  imageAlt?: string;
   headings?: { depth: number; slug: string; text: string }[];
   faqs?: { question: string; answer: string }[];
 }
 
-const { title, description, category, lastUpdated, tags, author = 'Resurgence Builds', headings = [], faqs = [] } = Astro.props;
+const { title, description, category, lastUpdated, tags, author = 'Resurgence Builds', featuredImage, imageAlt, headings = [], faqs = [] } = Astro.props;
 
 const formattedDate = lastUpdated.toLocaleDateString('en-US', {
   month: 'long',
@@ -47,6 +50,7 @@ const howToLd = headings.length > 0 ? {
   description={description}
   breadcrumbs={breadcrumbItems}
   ogType="article"
+  ogImage={featuredImage}
   article={{
     publishDate: lastUpdated.toISOString(),
     author,
@@ -67,6 +71,20 @@ const howToLd = headings.length > 0 ? {
       <span>·</span>
       <time datetime={lastUpdated.toISOString()}><strong>Last updated:</strong> {formattedDate}</time>
     </div>
+
+    {featuredImage && (
+      <div class="guide-hero">
+        <img
+          src={featuredImage}
+          alt={imageAlt || `${title} - The Division Resurgence`}
+          width="1200"
+          height="630"
+          loading="eager"
+          decoding="sync"
+          fetchpriority="high"
+        />
+      </div>
+    )}
 
     {tocItems.length > 0 && (
       <nav class="toc" aria-label="Table of contents">
@@ -95,3 +113,19 @@ const howToLd = headings.length > 0 ? {
     </article>
   </div>
 </BaseLayout>
+
+<style>
+  .guide-hero {
+    margin: var(--sp-6) 0;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    background: var(--surface);
+  }
+  .guide-hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+    aspect-ratio: 1200 / 630;
+    object-fit: cover;
+  }
+</style>
