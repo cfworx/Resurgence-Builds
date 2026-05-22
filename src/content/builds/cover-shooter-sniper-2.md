@@ -38,7 +38,7 @@ Oh, and Pulse with Vanguard 3pc adds another +25% Weapon Damage and +8% Crit Cha
 
 ## Why it works
 
-This is a build where every multiplier only works from cover, and you *only ever shoot from cover*. The +30% incoming damage penalty from Glass Cannon is functionally zero unless you do something incredibly stupid, like stand up. 
+This is a build where every multiplier only works from cover, and you *only ever shoot from cover*. The −10% Damage Resistance penalty from Glass Cannon is functionally zero unless you do something incredibly stupid, like stand up. 
 
 Cover Shooter's 3-stack ramp builds in 3 shots. If you land 3 headshot crits, you stack the bonus before the pack even realizes they're being fired at. 
 

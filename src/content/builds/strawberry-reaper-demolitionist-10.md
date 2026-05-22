@@ -51,11 +51,11 @@ The meta runs Sharpshooter DPS rifles — long-range, single-target, clean engag
 
 Use it as your primary in every engagement. The LMG's natural sustained fire pattern is what makes the talent work — you want the trigger held down, dumping rounds into the closest body.
 
-### Secondary — Stoner LAMG (T2)
+### Secondary — Custom 416 G3 (T2 AR)
 
-**Talent slots:** Tactical Reload (Reloading grants +2.60% Skill Cooldown Recovery for 10s, up to 5 stacks) and Adaptation (Body shots grant +4.80% Skill Duration for 8s; headshots grant +6% Skill Intensity for 8s).
+**Talent slots:** In Sync (Shooting enemies boosts your skill damage; skill hits boost your weapon damage — permanent two-stroke engine) and Steady Reload (Reloading after emptying the magazine grants stacking weapon damage).
 
-The Stoner is a swap weapon, not a primary. Use it to bank Skill CDR stacks while the Milkshake reloads, then return to the Milkshake. The Adaptation buff piles Skill Intensity onto your turret right before signature dumps.
+The 416 is your swap weapon when the Milkshake is reloading. In Sync keeps your Artillery Turret fed while you're on the AR, and the separate AR ammo pool means you never run dry on LMG rounds. Swap back to the Milkshake once it's reloaded.
 
 ## The Build
 
@@ -69,7 +69,7 @@ The Stoner is a swap weapon, not a primary. Use it to bank Skill CDR stacks whil
 | Kneepads | Phalanx Attack | — | Firepower | Weapon CHC | Weapon CHD |
 
 - **Primary:** Strawberry Milkshake (exotic LMG) — Anarchy
-- **Secondary:** Stoner LAMG (T2) — Adaptation + Tactical Reload
+- **Secondary:** Custom 416 G3 (T2 AR) — In Sync + Steady Reload
 - **OS Protocol:** Concerted Strike (HE Firepower)
 - **Skills:** Artillery Turret (Shaped Charge 3pc) · Explosive Seeker Mine (Area Denial 3pc)
 - **Signature:** M32A1 Grenade Launcher (Concentrated Fire 3pc)
@@ -112,7 +112,7 @@ Artillery Turret hits on Bleed/Vulnerable enemies grant +1.44% Firepower per hit
 | Glass Cannon | +20% Damage |
 | Shaped Charge | +7.2% Firepower at full turret ramp |
 | Phalanx Attack 4pc | +12% Multi-Shot Chance for free extra hits |
-| Stoner LAMG Adaptation (during swap) | +6% Skill Intensity per headshot / +4.8% Skill Duration per body shot |
+| In Sync (during AR swap) | Bidirectional damage boost — weapon hits buff skills, skill hits buff weapon |
 
 ### OS Choice: Concerted Strike vs Dominating Presence
 
@@ -148,7 +148,7 @@ Artillery Turret hits on Bleed/Vulnerable enemies grant +1.44% Firepower per hit
 6. **Keep firing the Milkshake.** When the first debuffed enemy dies, all Anarchy stacks transfer to a target within 12 meters. The group is now permanently infected.
 7. **Concerted Strike OS ramps** from turret pings on debuffed enemies. Each skill hit within 20m adds +8% Damage per stack to a +24% cap.
 8. **When the M32A1 is ready,** dump 5 hits in under 3 seconds to trigger Concentrated Fire: +14.4% Skill Intensity for 15s. Time it so the turret is still alive.
-9. **On Milkshake reload, swap to Stoner LAMG.** Reloading procs Tactical Reload (+2.6% Skill CDR per stack, up to 5). Land headshots for Adaptation (+6% Skill Intensity for 8s).
+9. **On Milkshake reload, swap to Custom 416 G3.** In Sync procs immediately on your first hit, boosting turret damage while you're on the AR. The separate AR ammo pool means your LMG reserves stay topped off.
 10. **Swap back to the Milkshake.** Repeat the debuff cycle. The DoT pool should already be active on at least one target from the previous transfer.
 
 ## Gear Ladder
@@ -166,7 +166,7 @@ Artillery Turret hits on Bleed/Vulnerable enemies grant +1.44% Firepower per hit
 |---|---|
 | Strawberry Milkshake | Free reward on the Classified Ops Pass 1.2 track (Phase 2). TAM available at DZ Vendor. |
 | Phalanx Attack 4-piece | T0+ gear drops, available from first content |
-| Stoner LAMG (T2) | T2 LMG drop — world events, Dark Zone |
+| Custom 416 G3 (T2) | T2 AR drop — world events, Dark Zone, mission rewards |
 | Concerted Strike OS | HE Engineering OS — high-difficulty mission drops |
 | Glass Cannon chest | Recalibrate any chest to Glass Cannon |
 | Overwatch backpack | Recalibrate any backpack to Overwatch |

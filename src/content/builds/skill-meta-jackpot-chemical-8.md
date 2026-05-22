@@ -58,7 +58,7 @@ And if that wasn't enough, the **Nothing to Lose** chest takes incoming damage a
 - **Skill Chip Priority:** Intensity. Skip Radius and Duration. You want it to hurt, not last long.
 - **Supporting Chips:** Acid Effect (extends the DOT), Siphon (converts skill damage to a survival layer)
 - **OS Protocol:** Brains Over Brawn (Engineering, High-End)
-- **Signature:** Healing Swarm (For team utility, because even terrorists have friends)
+- **Signature:** Oxidizing Swarm (More acid, more war crimes — this is a damage build, not a healing one)
 - **Gear Mods:** 12× Engineering 
 
 ## Rotation (How to melt faces)
@@ -67,11 +67,8 @@ And if that wasn't enough, the **Nothing to Lose** chest takes incoming damage a
 2. Drop 2-3 Chemical Trap zones right at the entry choke. Watch them walk into it.
 3. The first kill procs Minion Tracking → +36% Skill Crit Damage for 12s. 
 4. Re-deploy the acid pools the second the cooldown is up. (Nothing to Lose keeps it nearly always available). 
-5. Pop Healing Swarm if your team forgets how to play the game and needs a heal window.
+5. Pop Oxidizing Swarm to blanket the field in even more corrosive acid. Stack it on top of your Chemical Trap zones for maximum environmental terrorism.
 
-## ⚠️ Glass Cannon Note
-
-The KB-documented endgame version of this archetype (Section 18.37.11) recommends **Glass Cannon** as the chest talent — a colossal unconditional damage multiplier that also severely amplifies incoming damage. This build substitutes **Nothing to Lose** instead, which is a legitimate survivability choice. If you want maximum DPS ceiling and have already mastered the back-line / Center-ADS Release discipline required, swap Nothing to Lose for Glass Cannon. Be aware: one positioning mistake in Legendary content and you wipe the raid. Your call.
 
 ---
 
