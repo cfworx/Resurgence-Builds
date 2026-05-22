@@ -122,24 +122,32 @@
 
   function populateOSDropdown(){
     const sel = document.getElementById('select-os');
-    const cat = SPEC_OS_MAP[state.spec] || '';
-    const filtered = cat ? osProtocols.filter(p => p.specialization === cat) : osProtocols;
+    const recCat = SPEC_OS_MAP[state.spec] || '';
+    // Show ALL OS protocols — any spec can equip any OS protocol
+    const all = [...osProtocols];
     
     sel.innerHTML = state.spec 
       ? '<option value="">— Select OS Protocol —</option>'
       : '<option value="">— Select OS Protocol (All) —</option>';
       
     const rarityOrder = {'High-End':0,'Superior':1,'Specialized':2,'Standard':3};
-    filtered.sort((a,b) => (rarityOrder[a.rarity]||9) - (rarityOrder[b.rarity]||9));
+    // Sort: recommended category first, then by rarity within each group
+    all.sort((a,b) => {
+      const aRec = a.specialization === recCat ? 0 : 1;
+      const bRec = b.specialization === recCat ? 0 : 1;
+      if(aRec !== bRec) return aRec - bRec;
+      return (rarityOrder[a.rarity]||9) - (rarityOrder[b.rarity]||9);
+    });
     
-    filtered.forEach(p => {
+    all.forEach(p => {
       const opt = document.createElement('option');
       opt.value = p.id;
-      opt.textContent = `[${p.specialization}] [${p.rarity}] ${p.name}`;
+      const recTag = (recCat && p.specialization === recCat) ? ' ★' : '';
+      opt.textContent = `[${p.specialization}] [${p.rarity}] ${p.name}${recTag}`;
       sel.appendChild(opt);
     });
     
-    if(state.os && filtered.find(p => p.id === state.os)) sel.value = state.os;
+    if(state.os && all.find(p => p.id === state.os)) sel.value = state.os;
     else { state.os = ''; }
     showOSDetail();
   }

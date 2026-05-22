@@ -49,7 +49,6 @@ const otherBuilds = allBuilds
 
 const twitterShareUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(`Check out the ${title} build guide on Resurgence Builds!`)}&url=${encodeURIComponent(Astro.url.toString())}`;
 const redditShareUrl = `https://reddit.com/submit?url=${encodeURIComponent(Astro.url.toString())}&title=${encodeURIComponent(title)}`;
-const facebookShareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(Astro.url.toString())}`;
 ---
 
 <BaseLayout
@@ -136,6 +135,20 @@ const facebookShareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeU
 
         <slot />
 
+        {faqs.length > 0 && (
+          <section class="build-faq" style="margin-top: var(--sp-8);">
+            <h2 id="faq" style="font-size: var(--text-xl); margin-bottom: var(--sp-4);">Frequently Asked Questions</h2>
+            <div class="faq-list" style="display: flex; flex-direction: column; gap: var(--sp-2);">
+              {faqs.map(faq => (
+                <details class="faq-item">
+                  <summary class="faq-question">{faq.question}</summary>
+                  <p class="faq-answer">{faq.answer}</p>
+                </details>
+              ))}
+            </div>
+          </section>
+        )}
+
         <div style="margin-top: var(--sp-8); padding: var(--sp-5); background: rgba(0,0,0,0.2); border-radius: var(--border-radius); border: 1px solid var(--border); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--sp-4);">
           <div>
             <h3 style="margin: 0 0 var(--sp-1) 0; font-size: var(--text-lg);">{shareTitle || "Share this guide"}</h3>
@@ -151,10 +164,6 @@ const facebookShareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeU
             <a href={redditShareUrl} target="_blank" rel="noopener noreferrer" class="btn btn--primary" style="display: inline-flex; align-items: center; gap: 8px; background-color: #ff4500; color: #fff; border: 1px solid #ff4500;">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M15.586 8.26a2.108 2.108 0 0 0-2.1-2.095c-.83 0-1.554.48-1.87 1.178-1.428-.865-3.235-1.405-5.228-1.455l1.096-5.158 4.394 1c.026.832.716 1.498 1.555 1.498a1.55 1.55 0 0 0 0-3.099 1.547 1.547 0 0 0-1.488 1.106l-4.81-1.096a.513.513 0 0 0-.616.4l-1.2 5.645c-2.062.032-3.926.578-5.385 1.464a2.108 2.108 0 0 0-1.89-1.2A2.108 2.108 0 0 0 0 8.261c0 1.05.772 1.93 1.782 2.072A5.3 5.3 0 0 0 1.6 11.2c0 2.535 2.87 4.6 6.4 4.6 3.529 0 6.399-2.065 6.399-4.6 0-.31-.035-.615-.102-.912.986-.159 1.737-1.042 1.737-2.094a2.1 2.1 0 0 0-.448-1.233ZM3.7 10.155a1.442 1.442 0 1 1 0-2.885 1.442 1.442 0 0 1 0 2.885Zm4.872 3.197c-1.579 0-3.003-.541-3.606-1.127a.512.512 0 0 1 .715-.734c.484.471 1.705.867 2.891.867 1.186 0 2.408-.396 2.892-.867a.512.512 0 0 1 .715.734c-.604.586-2.028 1.127-3.607 1.127Zm3.27-2.07a1.442 1.442 0 1 1 0-2.884 1.442 1.442 0 0 1 0 2.884Z"/></svg>
               Reddit
-            </a>
-            <a href={facebookShareUrl} target="_blank" rel="noopener noreferrer" class="btn btn--primary" style="display: inline-flex; align-items: center; gap: 8px; background-color: #1877F2; color: #fff; border: 1px solid #1877F2;">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/></svg>
-              Facebook
             </a>
           </div>
         </div>
@@ -269,5 +278,39 @@ const facebookShareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeU
       position: sticky;
       top: calc(var(--nav-height) + var(--sp-4));
     }
+  }
+
+  /* --- FAQ Dropdowns --- */
+  .faq-list { margin: var(--sp-4) 0 }
+  .faq-item {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    margin-bottom: var(--sp-2);
+    overflow: hidden;
+    transition: border-color 200ms ease;
+  }
+  .faq-item:hover { border-color: rgba(242,104,34,0.3) }
+  .faq-item[open] { border-color: var(--accent) }
+  .faq-question {
+    padding: var(--sp-3) var(--sp-4);
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: var(--text-sm);
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 48px;
+  }
+  .faq-question::-webkit-details-marker { display: none }
+  .faq-question::after { content: '＋'; font-size: var(--text-lg); color: var(--accent); transition: transform .2s }
+  .faq-item[open] .faq-question::after { content: '－' }
+  .faq-answer {
+    padding: 0 var(--sp-4) var(--sp-4);
+    font-size: var(--text-sm);
+    color: var(--ink-muted);
+    line-height: 1.6;
   }
 </style>

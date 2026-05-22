@@ -32,6 +32,10 @@ const builds = defineCollection({
     shareTitle: z.string().optional(),
     shareText: z.string().optional(),
     plannerHash: z.string().optional(),
+    faqs: z.array(z.object({
+      question: z.string(),
+      answer: z.string(),
+    })).optional(),
   }),
 });
 

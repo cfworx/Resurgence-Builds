@@ -33,6 +33,7 @@ const { Content, headings } = await render(build);
   imageAlt={build.data.imageAlt}
   headings={headings}
   plannerHash={build.data.plannerHash}
+  faqs={build.data.faqs || []}
 >
   <Content />
 </BuildLayout>
