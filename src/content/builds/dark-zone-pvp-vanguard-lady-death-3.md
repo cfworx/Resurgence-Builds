@@ -28,11 +28,11 @@ Five damage layers stack to ensure whoever you look at instantly regrets crossin
 
 1. **Scanning Pulse:** You get wall-hacks. It gives you +25% Weapon Damage (self-buff) and debuffs every pulsed target with +5% Vulnerable Damage taken. Vanguard 3pc adds up to +8% Crit Chance per pulsed target within 70m. 
 2. **Lady Death — Breathe Free (fixed exotic talent):** While moving, you accumulate 4 stacks per second (8 if sprinting), up to 40 max. Each shot consumes a stack to grant +15% Weapon Damage. Deploying a skill consumes 10 stacks for +15% Skill Damage. Kills grant +10% Movement Speed for 10s.
-3. **Lady Death — Backup Battery (wt-4):** Swapping to Lady Death grants +22.50% Engineering for 8s (8s cooldown). This buffs your Pulse range and damage. 
+3. **Lady Death — Backup Battery:** Swapping to Lady Death grants +22.50% Engineering for 8s (8s cooldown). This buffs your Pulse range and damage. 
 4. **OS Assault Charge:** Deploying your Signature Ability grants +30% Firepower and +20% rate of fire for 20s. Pop your ult and immediately go ballistic.
-5. **Injured Concealment Chest (ba-14):** Taking hits grants +1.80% damage for 10s, stacking to 10 (+18%). Inverted scaling — you do MORE damage the longer the fight goes on. Shoot me, I dare you.
+5. **Injured Concealment Chest:** Taking hits grants +1.80% damage for 10s, stacking to 10 (+18%). Inverted scaling — you do MORE damage the longer the fight goes on. Shoot me, I dare you.
 
-Oh, and Lady Death's third random-rolled talent, **Sentinel Aura (wt-45)**, heals you for 600 × Toughness% on hits within 20m (5s cooldown). It gives you a self-heal that chains through any 1v1. 
+Oh, and Lady Death's third random-rolled talent, **Sentinel Aura**, heals you for 600 × Toughness% on hits within 20m (5s cooldown). It gives you a self-heal that chains through any 1v1. 
 
 ## Why it works
 
@@ -53,7 +53,7 @@ Best part? Lady Death is obtainable for 17,500 DZ credits. You don't even need r
 | Gloves | Fury Strike | — | Firepower | Weapon Crit Chance | Weapon Crit Damage |
 | Kneepads | Fury Strike | — | Firepower | Weapon Crit Chance | Weapon Crit Damage |
 
-- **Primary:** Lady Death (exotic SMG) — Breathe Free (fixed) + Backup Battery (wt-4) + Sentinel Aura (wt-45) (reroll the random slots until both land, then go ruin lives)
+- **Primary:** Lady Death (exotic SMG) — Breathe Free (fixed) + Backup Battery + Sentinel Aura (reroll the random slots until both land, then go ruin lives)
 - **Secondary:** Type 81 — Backup Protection + Backup Magazine
 - **OS Protocol:** Assault Charge (Firepower)
 - **Skills:** Scanning Pulse (literally mandatory)
@@ -72,4 +72,7 @@ Best part? Lady Death is obtainable for 17,500 DZ credits. You don't even need r
 5. After ~8s on Lady Death, swap to Type 81 → Backup Protection (+20% HP) + auto-reload at 4s.
 6. Spray the Type 81 for a second, then swap back to Lady Death (Backup Battery is off cooldown). 
 7. If you somehow mess this up, **Emergency Measures** auto-procs at <20% HP and restores 50% max HP. It's an idiot-proof panic button on a 30s cooldown.
+## Related Builds
 
+- **Dominate organized PvP:** Check out our [Conflict PvP Vanguard Warlord Build](/builds/conflict-pvp-fearless-warlord) for standard PvP modes.
+- **Ready for close-quarters PvE?** See our [PvE Meta Vanguard Shotgun Build](/builds/pve-meta-vanguard-shotgun-7) for high-impact room clearing.

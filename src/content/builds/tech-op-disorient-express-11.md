@@ -172,3 +172,7 @@ Drone crits → EMCAT applies Disoriented → enemy aim is disrupted → they mi
 3. **Mechanical Enemy 4pc is the unloved T2 set that finally has a home** — WCHC + Optimal Range + Skill CDR in one package.
 4. **Toymaker chest is genuinely broken** when you actually play at Tech Op ranges instead of trying to brawl.
 5. **The drone bullies their aim. You bully their HP bar. Nobody bullies you back.**
+## Related Builds
+
+- **Switch from drones to active crowd control:** Check out our [Lockdown Tech Op CC Swarm Build](/builds/lockdown-tech-op-6).
+- **Convert debuffed targets to LMG damage:** See our [Strawberry Reaper LMG Demolitionist Build](/builds/strawberry-reaper-demolitionist-10).

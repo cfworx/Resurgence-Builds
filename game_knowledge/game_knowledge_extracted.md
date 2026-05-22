@@ -21805,3 +21805,36 @@ This is the largest blanket payout issued by Ubisoft Mobile for Division Resurge
 
 • Speedrun \- MM06 Take the Castle: June 12 \- June 16, 2026
 
+
+## __18.38 RogueMadras' Tactical Pharma Build (May 2026 Livestream)__
+
+> **Source:** Livestream by RogueMadras on May 18, 2026. This intelligence log details the Tactical Pharma (Field Medic) build that claimed Rank 1 AoE Clear and Rank 6 Global on the EU server.
+
+### Build Identity & Playstyle
+- **Class / Archetype:** Field Medic (Tactical Pharma). A highly-automated, skill-damage-centric farm build designed for Tier 2 (T2) elite missions and Dark Zone (DZ) landmarks.
+- **Combat Paradigm:** Complete reliance on automated skill damage over gun DPS. Weapons function exclusively as Engineering and Skill stat sticks. 
+- **DZ Capability:** Extremely powerful for PvE farming, but highly vulnerable in solo DZ encounters (glass cannon).
+
+### Key Stats & Scaling
+- **Skill Crit Chance:** 50%+ optimal target.
+- **Skill Crit Damage:** 131% - 150%+.
+- **Skill Multi-Shot:** 40% (using T2 weapons rolled with +10% Multi-Shot).
+- **Engineering:** 70% baseline, scaling past 100%+ fully buffed.
+- **Brains Over Brawn OS Protocol (os-20):** Converts Engineering to skill damage (Specialized base 24% scaling, fully upgraded High-End 48% scaling).
+
+### Weapon & Gear Synergy
+- **Weapon 1 (Vector 45 ACP):** Standard SMG running Backup Battery talent (+22.50% Engineering on swap for 8s).
+- **Weapon 2 (T2 AR/LMG):** Secondary running Backup Battery (Option A: for 100% permanent buff uptime) or Fully Charged (Option B: reload empty mag for +7.5% per stack, up to +22.5% Engineering).
+- **8-Second Swap Loop:** Swapping weapons every 8 seconds cycles the Backup Battery buffs, guaranteeing permanent uptime of the +22.50% Engineering bonus.
+- **Gear Set:** 4pc Jackpot (gs-7) + 2pc Fire Cycle. Pushes Skill Crit Chance (+10.8%), Skill Crit Damage (+24.0% Jackpot + 12% Fire Cycle), and Skill Radius (+12.0%).
+- **Backpack Talent:** Prime Engineer (+22.50% Engineering for 12s when deployed at full HP).
+- **Chest Talent:** Glass Cannon (+20% Damage, -10% Damage Resistance).
+
+### Skills & Chips
+- **Primary Skill:** Chemical Trap (acid pools) + **Secondary Skill:** Oxidizing Swarm.
+- **Field Medic Chip Sets:**
+  - **Enhanced Formula (smc-76):** Damage-to-health restoration and Skill Crit Damage (+4%~8% at 2pc). Inflicts -12% enemy damage on Swarm hits and heals 8% of missing health on kills within 20m of debuffed targets.
+  - **Hereafter Resilience (smc-73):** Deploys micro corrosive drones from backpack every 1.6s. Departs 25% current HP to grant +35% Max HP extra health and +5% Armor for 20s.
+  - **Siphon (smc-72):** 50% chance to restore 4 Signature Ability Charge on Corrosive stack.
+  - **Chemical Recharge (smc-88):** Reduces second skill cooldown by 4.8s on trap kills.
+  - **Harvest (smc-78):** Cooldown reduction of 2.4s per swarm hit.

@@ -30,14 +30,14 @@ You are a mosquito. A very angry, heavily armored mosquito.
 
 Three survival engines run while you fire, creating a loop of unkillable annoyance:
 
-1. **Happy Survival OS (os-56):** Passively restores 0.50% Max Health per second for every enemy within 10 meters (up to 2.50% max). When you shoot, it consumes 2% Health to deal additional damage equal to 0.60% of your Current Health. You bleed yourself for damage, but the massive close-range passive regen keeps you sustained.
+1. **Happy Survival OS:** Passively restores 0.50% Max Health per second for every enemy within 10 meters (up to 2.50% max). When you shoot, it consumes 2% Health to deal additional damage equal to 0.60% of your Current Health. You bleed yourself for damage, but the massive close-range passive regen keeps you sustained.
 2. **Anarchy (Strawberry Milkshake Exotic Talent):** Applies a stacking DoT debuff to enemies you hit, scaling with weapon damage. An LMG maximizes your shots fired per minute, which is the exact stat that piles up Anarchy stacks fastest. Just apply stacks to some poor soul, walk away, and let the tick damage handle itself while you hose down the next guy.
-3. **Unflinching Chest (ba-25):** Taking damage has a 70% chance of restoring Health equal to 300% of your Toughness (2s cooldown). This is your primary reactive healing engine. The more they shoot you, the more you heal!
+3. **Unflinching Chest:** Taking damage has a 70% chance of restoring Health equal to 300% of your Toughness (2s cooldown). This is your primary reactive healing engine. The more they shoot you, the more you heal!
 
 Layered on top of this beautiful nonsense:
 - **Fearless Warrior 4pc:** +18% Toughness. The single number that makes your HP pool terrifying. Because why be just a tank when you can be a tank with an obscene health bar?
 - **Bulwark Watch (Rank 50 — mandatory):** Flat +36% Toughness baseline increase. Without this Watch maxed to Rank 50, the build is statistically a slow tank, not an immortal one. The community says it plainly: *"without this one the build is useless."* Go farm it. No debate.
-- **Combat Inspiration Backpack (bp-3):** Weapon Critical Hits grant +3.60% Max Health for 10 seconds, stacking up to 10 times (+36% Max Health total). This turns your LMG crits into a massive self-healing stack that makes you an unkillable sponge.
+- **Combat Inspiration Backpack:** Weapon Critical Hits grant +3.60% Max Health for 10 seconds, stacking up to 10 times (+36% Max Health total). This turns your LMG crits into a massive self-healing stack that makes you an unkillable sponge.
 - **Riot Foam Grenade Launcher:** Lock down the entire pack in sticky white foam for a free DPS window. 
 
 ## Why it works
@@ -76,4 +76,7 @@ Plus, the Anarchy DoT means you don't even need perfect aim. Just apply stacks t
 5. Drop your Reinforcer Hive to cover your back.
 6. Use the Riot Foam signature on elites or when you get overwhelmed. Foam them up for a free, non-consensual DPS window. 
 7. Kill one enemy and keep hosing down the next with fresh Anarchy stacks. The DoT ticks. The armor mod heals. The LMG goes brrrr.
+## Related Builds
 
+- **Hate being in their face?** See our [Vanguard Cover Shooter Sniper Build](/builds/cover-shooter-sniper-2) for safety and precision.
+- **Looking for aggressive close-range play?** See our [PvE Meta Vanguard Shotgun Build](/builds/pve-meta-vanguard-shotgun-7) for high-impact brawling.

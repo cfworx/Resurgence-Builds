@@ -38,8 +38,8 @@ Three independent team-facing engines run simultaneously, every fight, with zero
 - **Medical Excellence OS:** +5% Max HP team-wide pop on every cast (above 50%), and a +12.5% Max HP burst when below 50%. 
 
 **Engine 3 — Skill Duration (The Uptime Multiplier)**
-- **Deep Focus Chest (ba-5):** +28% Skill Duration, but also inflicts a -10% Skill Radius penalty (which you easily offset with mods).
-- **Brainstorm Backpack (bp-2):** +15% Skill Duration, plus an additional +15% when within 20 meters of an ally (+30% total).
+- **Deep Focus Chest:** +28% Skill Duration, but also inflicts a -10% Skill Radius penalty (which you easily offset with mods).
+- **Brainstorm Backpack:** +15% Skill Duration, plus an additional +15% when within 20 meters of an ally (+30% total).
 - **Captain Cow 3pc:** +14.4% Skill Duration.
 **Total:** An ~72.4% additive duration pushes a 44.9s Support Station past **77 seconds** when positioned near your team.
 
@@ -76,4 +76,7 @@ Instead, it pushes heal density so stupidly high that allies never spend time at
 6. Pop **Healing Swarm** signature for emergencies, or when you need to revive multiple downed teammates who inevitably walked out of the glowing circle.
 
 ---
+## Related Builds
 
+- **Go full offensive with chemical traps:** See our endgame [The Geneva Suggestion Field Medic Build](/builds/geneva-suggestion-field-medic-12) for top-tier AOE DPS.
+- **Automate your environmental damage:** Check out our [Jackpot Chemical Medic Build](/builds/skill-meta-jackpot-chemical-8) for specialized crowd control.

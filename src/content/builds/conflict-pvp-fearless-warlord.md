@@ -69,4 +69,7 @@ The MPX secondary with Steady Hands handles close-quarters for when some brave i
 4. Let Recycling keep your mag topped off by absorbing incoming hits. 
 5. Swap to the MPX if they get inside ~10m for hip-fire CQC dominance. 
 6. Put your Shield up if you need to break a bad angle or if you accidentally took a fair fight.
+## Related Builds
 
+- **Looking for more Vanguard dominance?** See our [Vanguard Dark Zone PvP Lady Death Build](/builds/dark-zone-pvp-vanguard-lady-death-3) for high-mobility ganking.
+- **Prefer PvE shotgun gameplay?** Check out our [PvE Meta Vanguard Shotgun Build](/builds/pve-meta-vanguard-shotgun-7) for close-range power.

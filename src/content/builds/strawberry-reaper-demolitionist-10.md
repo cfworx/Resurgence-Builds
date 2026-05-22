@@ -182,4 +182,7 @@ Artillery Turret hits on Bleed/Vulnerable enemies grant +1.44% Firepower per hit
 5. **Glass Cannon chest** is the +20% Damage multiplier that pushes the build above its weight class.
 
 Stack the bleed. Feed the turret. Watch it all burn.
+## Related Builds
 
+- **Focus entirely on explosive burst:** Check out our [Demolitionist Explosive Chaos Build](/builds/demolitionist-explosive-chaos-4) for massive seeker mine and grenade action.
+- **Disorient and control target fields:** See our [Disorient Express Drone Tech Operator Build](/builds/tech-op-disorient-express-11).

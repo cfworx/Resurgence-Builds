@@ -19,13 +19,13 @@ faqs:
   - question: "Does the Geneva Suggestion build work in PvP?"
     answer: "Yes. Glass Cannon makes you squishy, but the Chemical Trap damage output is devastating against agents too. Drop acid pools on capture points, chokepoints, and extraction zones. Position smart and let the damage do the talking."
   - question: "How much does it cost to fully optimize the Geneva Suggestion chips?"
-    answer: "Approximately 17 million credits. Each gold chip costs roughly 900,000 credits to max out. The build requires maxed Enhanced Formula (smc-76), Hereafter Resilience (smc-73), and Chemical Recharge (smc-88) chip sets for Chemical Trap, plus Harvest (smc-78) for Oxidizing Swarm."
+    answer: "Approximately 17 million credits. Each gold chip costs roughly 900,000 credits to max out. The build requires maxed Enhanced Formula, Hereafter Resilience, and Chemical Recharge chip sets for Chemical Trap, plus Harvest for Oxidizing Swarm."
   - question: "What is the 8-second weapon swap cycle?"
     answer: "Both weapons run Backup Battery, which grants +22.50% Engineering for 8 seconds on swap. You swap weapons every 8 seconds, keeping this buff active 100% of the time. You can also run Fully Charged on your secondary weapon for a hybrid, extra-high Engineering peak."
   - question: "Do I need exotic weapons for the Geneva Suggestion build?"
     answer: "No. This is one of the most accessible endgame builds because it requires zero exotic weapons. Any T2 SMG (Vector 45 ACP recommended) with Backup Battery as primary, and any T2 AR or LMG with Backup Battery (or Fully Charged) as secondary."
   - question: "What changed with the chip names in the current patch?"
-    answer: "Three Field Medic chips were renamed: Feebleness is now Enhanced Formula (smc-76), Acidic Effect is now Hereafter Resilience (smc-73), and a new chip Chemical Recharge (smc-88, legacy Freebies) was added. Functionality is unchanged — only the display names were updated."
+    answer: "Three Field Medic chips were renamed: Feebleness is now Enhanced Formula, Acidic Effect is now Hereafter Resilience, and a new chip Chemical Recharge (legacy Freebies) was added. Functionality is unchanged — only the display names were updated."
 ---
 
 ## What It Is
@@ -72,7 +72,7 @@ Both weapons in this build exist for one reason: to stack Engineering. RogueMadr
 
 **Primary — Vector 45 ACP (SMG) + Backup Battery**
 
-- **Talent: Backup Battery (wt-4).** Swapping to this weapon grants +22.50% Engineering for 8 seconds. Cooldown: 8 seconds.
+- **Talent: Backup Battery.** Swapping to this weapon grants +22.50% Engineering for 8 seconds. Cooldown: 8 seconds.
 
 RogueMadras runs the Vector specifically. It has a blazing 1200 RPM and a 25-round magazine. It serves as an Engineering stat stick with a hair trigger. Any T2 SMG works, but the Vector's fast handling and reload make it the optimal choice for active weapon-swapping.
 
@@ -85,7 +85,7 @@ You have two excellent choices for your secondary weapon slot:
 1. **Option A (RogueMadras' Meta Choice — Dual Backup Battery): Any T2 AR or LMG + Backup Battery**
    - Run Backup Battery on both weapons. This gives you a seamless, zero-effort **100% uptime** on the +22.50% Engineering buff. Whenever you swap weapons to keep your loop active, Backup Battery triggers immediately. No need to manage empty magazines or timing stacks.
 2. **Option B (The High-Peak Hybrid — Fully Charged): Any T2 AR or LMG + Fully Charged**
-   - **Talent: Fully Charged (wt-20).** Reloading an empty magazine grants +7.50% Engineering for 12 seconds, up to 3 stacks (+22.50% total).
+   - **Talent: Fully Charged.** Reloading an empty magazine grants +7.50% Engineering for 12 seconds, up to 3 stacks (+22.50% total).
    - This option allows you to stack both buffs for a peak of **+45.00% Engineering** (+22.50% from Backup Battery + +22.50% from Fully Charged). However, it requires active management: you must empty the magazine and reload to keep the stacks up, which can be annoying to maintain in chaotic DZ fights.
 
 **The 8-Second Swap Cycle (For Dual Backup Battery)**
@@ -114,7 +114,7 @@ The core mechanical rhythm of the build is simple:
 - **Signature:** Oxidizing Swarm
 - **Gear Mods:** 12× Engineering (every single slot — no compromises)
 
-**Jackpot 4-Piece (gs-7):**
+**Jackpot 4-Piece:**
 - **2pc:** Skill Radius +12.00%
 - **3pc:** Skill Critical Chance +10.80%
 - **4pc:** Skill Critical Damage +24.00%
@@ -124,9 +124,9 @@ The core mechanical rhythm of the build is simple:
 
 **Why These Talents**
 
-**Glass Cannon (Chest, ba-12):** +20% Damage / −10% Damage Reduction. Non-negotiable. This multiplier applies directly to skill damage. The opportunity cost is you take more incoming damage, so positioning matters. But with proper play, the damage output far outweighs the survivability cost — in both PvE and PvP.
+**Glass Cannon (Chest):** +20% Damage / −10% Damage Reduction. Non-negotiable. This multiplier applies directly to skill damage. The opportunity cost is you take more incoming damage, so positioning matters. But with proper play, the damage output far outweighs the survivability cost — in both PvE and PvP.
 
-**Prime Engineer (Backpack, bp-19):** Deploying a Skill at full Health grants +22.50% Engineering for 12 seconds. This is one of the largest Engineering boosts in the current gear pool. Every Chemical Trap deployment triggers it — as long as you're at full HP when you deploy. Enhanced Formula's 7.20% damage-to-health recovery helps you stay topped off between deploys.
+**Prime Engineer (Backpack):** Deploying a Skill at full Health grants +22.50% Engineering for 12 seconds. This is one of the largest Engineering boosts in the current gear pool. Every Chemical Trap deployment triggers it — as long as you're at full HP when you deploy. Enhanced Formula's 7.20% damage-to-health recovery helps you stay topped off between deploys.
 
 ## Chip Configuration
 
@@ -136,25 +136,25 @@ The core mechanical rhythm of the build is simple:
 
 The current patch (v1.2.1) has corrected the chip names. Legacy guides had incorrect or fabricated stats (e.g., claiming 7.20% flat damage-to-health or flat DoT bonuses). Here is the verified, exact mapping and in-game behavior for our core chips:
 
-| Current Name | ID | Mechanics | Why It Matters |
-|---|---|---|---|
-| **Siphon** | smc-72 | 50% chance to restore 4 Signature Ability Charge on Corrosive stack application. Cooldown: 0.5s. | Feeds your Signature Ability charge rapidly with Chemical Trap pools. |
-| **Hereafter Resilience** | smc-73 | Departs 25% current HP to grant +35% Max HP extra health & +5% Armor for 20s. Releases micro corrosive drones every 1.6s when attached to backpack. | The backpack micro-drones apply automatic corrosion ticks, keeping enemies constantly debuffed. |
-| **Enhanced Formula** | smc-76 | 2pc: Skill Crit Damage +[4%~8%]. 3pc: Oxidizing Swarm hits apply -12% Damage for 20s; kills within 20m of debuffed targets restore 8% Missing Health. | The ultimate survival layer. It keeps you topped off between pulls, countering Glass Cannon's penalty. |
-| **Chemical Recharge** | smc-88 | Killing an enemy affected by Chemical Trap reduces second ability's cooldown by 4.80s. | Uptime driver for your secondary skill (Oxidizing Swarm). |
+| Current Name | Mechanics | Why It Matters |
+|---|---|---|
+| **Siphon** | 50% chance to restore 4 Signature Ability Charge on Corrosive stack application. Cooldown: 0.5s. | Feeds your Signature Ability charge rapidly with Chemical Trap pools. |
+| **Hereafter Resilience** | Departs 25% current HP to grant +35% Max HP extra health & +5% Armor for 20s. Releases micro corrosive drones every 1.6s when attached to backpack. | The backpack micro-drones apply automatic corrosion ticks, keeping enemies constantly debuffed. |
+| **Enhanced Formula** | 2pc: Skill Crit Damage +[4%~8%]. 3pc: Oxidizing Swarm hits apply -12% Damage for 20s; kills within 20m of debuffed targets restore 8% Missing Health. | The ultimate survival layer. It keeps you topped off between pulls, countering Glass Cannon's penalty. |
+| **Chemical Recharge** | Killing an enemy affected by Chemical Trap reduces second ability's cooldown by 4.80s. | Uptime driver for your secondary skill (Oxidizing Swarm). |
 
 **Recommended Chip Loadout**
 
 - **Primary Skill: Chemical Trap**
-  - **Siphon (smc-72) 3pc** or **Chemical Recharge (smc-88) 3pc**
+  - **Siphon 3pc** or **Chemical Recharge 3pc**
     - Siphon is chosen for permanent Signature Ability generation, allowing you to spam your Signature skill.
     - Chemical Recharge is an excellent alternative to completely reset your secondary skill's cooldown upon trap kills.
 - **Secondary Skill: Oxidizing Swarm (Signature Swarm)**
-  - **Enhanced Formula (smc-76) 3pc**
+  - **Enhanced Formula 3pc**
     - Grants essential Skill Critical Damage (+4.0%~8.0% at 2pc) and the crucial survival layer: debuffs enemy damage by 12% and heals 8% of your missing health on kill.
-  - **Hereafter Resilience (smc-73) 3pc**
+  - **Hereafter Resilience 3pc**
     - Releases automatic micro corrosive drones every 1.6s from your backpack, guaranteeing constant corrosion applications and keeping your loop fully automated.
-  - **Harvest (smc-78) 3pc**
+  - **Harvest 3pc**
     - Oxidizing Swarm hits reduce Skill Cooldown by 2.40s. This is the cooldown recovery engine that keeps your Chemical Trap active 100% of the time.
 
 ## The Combat Rotation (Passive-Aggressive Warfare)
@@ -207,12 +207,12 @@ These multipliers don't add. They **multiply**. Against a dense pack standing in
 |---|---|
 | Vector 45 ACP (or any T2 SMG) | Standard weapon drops — any content |
 | Any T2 AR/LMG | Standard weapon drops — any content |
-| Backup Battery talent | Weapon talent recalibration (wt-4) |
-| Fully Charged talent | Weapon talent recalibration (wt-20) |
+| Backup Battery talent | Weapon talent recalibration |
+| Fully Charged talent | Weapon talent recalibration |
 | Jackpot 4-piece | T0+ gear drops — available from first content |
 | Fire Cycle 2-piece | T1+ gear drops — elite missions, strongholds |
-| Glass Cannon chest | Recalibrate any chest to Glass Cannon (ba-12) |
-| Prime Engineer backpack | Recalibrate any backpack to Prime Engineer (bp-19) |
+| Glass Cannon chest | Recalibrate any chest to Glass Cannon |
+| Prime Engineer backpack | Recalibrate any backpack to Prime Engineer |
 | Brains Over Brawn OS | HE Engineering OS — high-difficulty mission drops |
 | Enhanced Formula chips | Field Medic skill mod drops (Chemical Trap) |
 | Hereafter Resilience chips | Field Medic skill mod drops (Chemical Trap) |
@@ -234,3 +234,7 @@ Stack the acid. Swap the guns. Watch the numbers. Welcome to your Geneva Suggest
 - **v1.2** (May 22, 2026): Fact-check pass — removed unverified damage numbers and fabricated PvP claims. Build works in PvP. Corrected medkit to +18% Skill Damage (KB-verified). Removed unverified display bug claim.
 - **v1.1** (May 22, 2026): Corrected weapons — build uses standard weapons with Backup Battery (both) + Fully Charged (secondary), not exotic weapons. RogueMadras runs Vector 45 ACP as primary.
 - **v1.0** (May 22, 2026): Initial build — adapted from RogueMadras's Tactical Pharma configuration for Season 2 patch.
+## Related Builds
+
+- **Run the alternative chemical trap meta:** Check out our [Jackpot Chemical Medic Build](/builds/skill-meta-jackpot-chemical-8) for an explosive skill-DPS build.
+- **Shift focus to ultimate team survival:** See our dedicated [Legendary Healer Field Medic Build](/builds/legendary-healer-field-medic-5).

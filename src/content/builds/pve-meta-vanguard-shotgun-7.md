@@ -68,4 +68,7 @@ Stack that absurd combination on a weapon that already fires two shells per pull
 5. Pop Tactical Link. 
 6. Aimed shotgun crits trigger the Explosive Round AOE. Pull the trigger until there is nothing left. 
 7. Swap to the FAMAS to clean up the stragglers who are trying to run away.
+## Related Builds
 
+- **Take it to standard PvP:** Check out our [Conflict PvP Vanguard Warlord Build](/builds/conflict-pvp-fearless-warlord) for arena dominance.
+- **Ruin lives in the Dark Zone:** See our [Vanguard Dark Zone PvP Lady Death Build](/builds/dark-zone-pvp-vanguard-lady-death-3) for toxic mobility.

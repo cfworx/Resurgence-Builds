@@ -35,9 +35,9 @@ The Chemical Trap drops 2-3 acid pools per cast. Each pool ticks 6-10 times. Eve
 
 Jackpot is the *only* gear set that rolls all three skill DPS stats on its set bonuses. Fire Cycle 2pc piles on extra Skill Crit Damage just for fun. 
 
-The **Brains Over Brawn OS (os-20)** converts your Engineering stat into bonus skill damage (24% of Engineering at base Specialized rarity, up to 48% at max upgraded High-End). The **Minion Training (bp-15)** backpack refreshes +36% Skill Critical Hit Damage for 12 seconds on every Skill Critical Hit Kill — meaning the buff is literally permanent during elite waves. 
+The **Brains Over Brawn OS** converts your Engineering stat into bonus skill damage (24% of Engineering at base Specialized rarity, up to 48% at max upgraded High-End). The **Minion Training** backpack refreshes +36% Skill Critical Hit Damage for 12 seconds on every Skill Critical Hit Kill — meaning the buff is literally permanent during elite waves. 
 
-And if that wasn't enough, the **Nothing to Lose (ba-16)** chest has a 50% chance when taking damage to reduce the cooldowns of skills deployed within 5 seconds by 2% (stacking up to 3 times). Your Chemical Trap is up nearly 100% of the fight. 
+And if that wasn't enough, the **Nothing to Lose** chest has a 50% chance when taking damage to reduce the cooldowns of skills deployed within 5 seconds by 2% (stacking up to 3 times). Your Chemical Trap is up nearly 100% of the fight. 
 
 **Net Result:** A build where the skill crits ~51% of the time, multi-shots ~12% of the time, and crits hit for ~+250% damage — and the skill is ALWAYS off cooldown. Your pack clear is 3-4x faster than standard weapon DPS builds. 
 
@@ -54,7 +54,7 @@ And if that wasn't enough, the **Nothing to Lose (ba-16)** chest has a 50% chanc
 
 - **Primary Skill:** Chemical Trap (Environmental terrorism)
 - **Skill Chip Priority:** Intensity. Skip Radius and Duration. You want it to hurt, not last long.
-- **Supporting Chips:** Siphon (smc-72, 50% chance to restore 4 Signature Ability Charge on Corrosive stack), Enhanced Formula (smc-76, Skill Crit Damage & restores 8% Missing HP on kill), Hereafter Resilience (smc-73, releases micro corrosive drones from backpack every 1.6s)
+- **Supporting Chips:** Siphon (50% chance to restore 4 Signature Ability Charge on Corrosive stack), Enhanced Formula (Skill Crit Damage & restores 8% Missing HP on kill), Hereafter Resilience (releases micro corrosive drones from backpack every 1.6s)
 - **OS Protocol:** Brains Over Brawn (Engineering, Specialized base / High-End upgraded)
 - **Signature:** Oxidizing Swarm (More acid, more war crimes — this is a damage build, not a healing one)
 - **Gear Mods:** 12× Engineering 
@@ -69,4 +69,7 @@ And if that wasn't enough, the **Nothing to Lose (ba-16)** chest has a 50% chanc
 
 
 ---
+## Related Builds
 
+- **Take skill damage to the absolute limit:** See our top-tier [The Geneva Suggestion Field Medic Build](/builds/geneva-suggestion-field-medic-12) for EU server meta clear.
+- **Focus strictly on supporting your squad:** Check out our [Legendary Healer Field Medic Build](/builds/legendary-healer-field-medic-5).

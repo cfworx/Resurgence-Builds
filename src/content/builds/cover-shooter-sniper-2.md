@@ -71,4 +71,7 @@ The DSR-1 will one-shot most non-elite reds. Elites take 2-3 shots. The whole pa
 5. Stack 3 — Killer talent procs on the first Critical Hit Kill (+36% Critical Hit Damage for 10s). You are now doing obscene damage. 
 6. Pop **Tactical Link** for the lock-on + crit chance window when the heavy elite shows up. 
 7. Reposition between packs to a new cover line. **NEVER LEAVE COVER DURING A FIGHT.** If you stand in the open, you will instantly dissolve into red mist.
+## Related Builds
 
+- **Want to absorb damage instead of hiding?** Check out our solo-first [Vampire Bulwark LMG Tank Build](/builds/vampire-bulwark-tank-9).
+- **Looking for active PvP playstyles?** See our [Conflict PvP Vanguard Warlord Build](/builds/conflict-pvp-fearless-warlord) to dominate standard arenas.

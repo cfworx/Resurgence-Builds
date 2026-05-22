@@ -68,4 +68,7 @@ Jackpot is the only set that rolls Skill Crit Chance + Skill Radius on its set b
 3. Pop the **M32A1**. Each grenade detonates → triggers Collateral Damage AOE → rolls Explosive Burst multi-shot. 
 4. The Energize chest gives +18% Skill Damage for 8s on medkit use, so pop a medkit when the buff drops to keep the numbers as big as possible. 
 5. Reposition frantically while skills are on cooldown because, again, your toughness is basically tissue paper.
+## Related Builds
 
+- **Infect whole rooms with bleeding:** Check out our [Strawberry Reaper LMG Demolitionist Build](/builds/strawberry-reaper-demolitionist-10) for massive DoT cascade.
+- **Looking for heavy crowd control?** See our [Lockdown Tech Op CC Swarm Build](/builds/lockdown-tech-op-6) to freeze enemies in place.
