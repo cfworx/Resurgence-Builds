@@ -498,14 +498,14 @@
   },
   {
     "id": "smc-72",
-    "name": "Siphon",
+    "name": "Enhanced Formula",
     "specialization": "Field Medic",
     "bonus2": "Damage Reduction+[2.0%~4.0%]",
     "bonus3": "Using a Chemical Trap to apply a stack of Corrosive has a 50% chance of restoring 4 Signature Ability Charge. Talent Cooldown: 0.50 seconds."
   },
   {
     "id": "smc-73",
-    "name": "Acidic Effect",
+    "name": "Hereafter Resilience",
     "specialization": "Field Medic",
     "bonus2": "Skill Intensity+[2.0%~4.0%]",
     "bonus3": "When deploying Oxidizing Hive, you lose Health equal to 25% of your current Health but gain Extra Health equal to 35.00% of Max Health and 5% Armor for 20s. When Oxidizing Hive is attached to your backpack, it releases Micro Corrosive Drones to enemies within 15.00m every 1.60s."
@@ -607,5 +607,12 @@
     "specialization": "Field Medic",
     "bonus2": "Healing Intensity+[3.3%~6.7%]",
     "bonus3": "For each ally healed by Healing Swarm, grants +1.20% Skill Intensity for 20 second(s), up to 16 stack(s)."
+  },
+  {
+    "id": "smc-88",
+    "name": "Chemical Recharge",
+    "specialization": "Field Medic",
+    "bonus2": "Skill Cooldown Recovery-[2.0%~4.0%]",
+    "bonus3": "Killing an enemy affected by Chemical Trap reduces the cooldown of your second equipped ability by 4.80 seconds."
   }
 ]

@@ -2949,6 +2949,14 @@ All builds target [https://resurgencebuilds\.com](https://resurgencebuilds.com) 
 - __Cover Shooter Sniper build error \(May 2026\):__ Line 41 cited "\+30% incoming damage penalty" — the correct value is −10% DR\. Fixed\.
 - __Rule: Every talent stat claim in a build post MUST match the exact numbers in the data files \(src/data/body\-armor\-talents\.json\)\.__ If a number doesn't match, it's wrong\. Check before publishing\.
 
+## Chip naming convention updates \(Current Patch\)
+
+- The current patch has updated several legacy chip names for Field Medic\. When reading older guides or community posts, these are the translations:
+- __Enhanced Formula__ \(Legacy: Siphon\) — ID: smc\-72\. Chemical Trap converts 7\.20% of damage dealt into Health Recovery for 10s\. Vital for damage scaling and Glass Cannon survival\.
+- __Hereafter Resilience__ \(Legacy: Acidic Effect\) — ID: smc\-73\. Chemical Trap DoT \+24%, duration \+3s\. The per\-tick damage amplifier\.
+- __Chemical Recharge__ \(Legacy: Freebies\) — ID: smc\-88\. Killing an enemy affected by Chemical Trap reduces second ability cooldown by 4\.80s\. Essential for maintaining Oxidizing Swarm uptime\.
+- __Rule: Always use the CURRENT chip names in build posts\.__ Include the legacy name in parentheses on first mention so players following older guides can find the right chip\.
+
 # <a id="_Toc230065437"></a>4\. T2 Sourcing & Recalibration
 
 ## <a id="_Toc230065438"></a>T2 gear acquisition \(general\)
@@ -4068,6 +4076,12 @@ Ballistic Shield \+ Hive · Riot Foam signature · Cover Advance \+ Counter Atta
 • __Strawberry Milkshake recalibration farming: __Weekly Mission Exotic Manual/Booklet drops now correctly award SM recalibration material \(fixed in 1\.2\.1\)\. Farm these now and stockpile\. When the buff lands, you want to be ready to recalibrate immediately\.
 
 • __DZ economy note \(Phase 2\): __Skill mod dismantle DZ Credits buffed \(Blue 10\->15, Purple 50\->75, Yellow 450\->750\)\. TAM dismantle now gives Encrypted Data instead of Clan Credits\. Both are significant long\-term economy improvements for regular DZ grinders\.
+
+__tactical\-farmer\-field\-medic\-12\.md__
+
+Tactical Farmer \(Field Medic / Tactical Pharma\) — by RogueMadras
+
+Chemical Trap \+ Oxidizing Swarm · Brains Over Brawn OS · Jackpot 4pc \+ Fire Cycle 2pc · Glass Cannon chest · Prime Engineer backpack · Lady Death \(exotic SMG\) \+ Warlord \(exotic AR\) as stat sticks · Enhanced Formula \+ Hereafter Resilience \+ Chemical Recharge chips · 8\-second weapon swap cycle for buff maintenance · Rank 1 AOE clearing build\. Weapons do \~6k damage; skills do 1M\+ Effective DPS\. Glass cannon — do NOT take into solo DZ\.
 
 # <a id="_Toc230065496"></a>17\. Final Checklist Before Producing a Build
 

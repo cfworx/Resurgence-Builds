@@ -56,7 +56,7 @@ And if that wasn't enough, the **Nothing to Lose** chest takes incoming damage a
 
 - **Primary Skill:** Chemical Trap (Environmental terrorism)
 - **Skill Chip Priority:** Intensity. Skip Radius and Duration. You want it to hurt, not last long.
-- **Supporting Chips:** Acid Effect (extends the DOT), Siphon (converts skill damage to a survival layer)
+- **Supporting Chips:** Hereafter Resilience (extends the DOT — legacy: Acid Effect), Enhanced Formula (converts skill damage to a survival layer — legacy: Siphon)
 - **OS Protocol:** Brains Over Brawn (Engineering, High-End)
 - **Signature:** Oxidizing Swarm (More acid, more war crimes — this is a damage build, not a healing one)
 - **Gear Mods:** 12× Engineering 
