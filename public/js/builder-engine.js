@@ -277,12 +277,23 @@
     const counts = countSets();
     GEAR_SLOTS.forEach(slot => {
       const badge = document.getElementById(`badge-${slot}`);
+      const card = document.getElementById(`slot-${slot}`);
       const sid = state.slots[slot].set;
+
+      // Clear previous flame classes
+      if(card) card.classList.remove('set-active-2','set-active-3','set-active-4');
+
       if(!sid){ badge.className = 'slot-card__badge'; badge.textContent = ''; return; }
       const gs = gearSets.find(g => g.id === sid);
       const c = counts[sid] || 0;
       badge.textContent = `${c}pc ${gs ? gs.name : ''}`;
       badge.className = 'slot-card__badge has-set' + (c >= 4 ? ' full-bonus' : '');
+
+      // Apply flame class based on set piece count
+      if(card && c >= 2) {
+        const tier = c >= 4 ? 4 : c >= 3 ? 3 : 2;
+        card.classList.add(`set-active-${tier}`);
+      }
     });
   }
 

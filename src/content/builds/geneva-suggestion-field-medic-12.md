@@ -6,7 +6,7 @@ pve: true
 pvp: false
 lastUpdated: 2026-05-22
 patch: "Season 2"
-tags: ["tactical-pharma", "jackpot", "chemical-trap", "glass-cannon", "lady-death", "stat-stick", "aoe-farming", "field-medic-build", "best-aoe-build", "skill-damage"]
+tags: ["tactical-pharma", "jackpot", "chemical-trap", "glass-cannon", "backup-battery", "stat-stick", "aoe-farming", "field-medic-build", "best-aoe-build", "skill-damage"]
 description: "The #1 AOE clearing build in Division Resurgence. Chemical Trap + Jackpot 4pc melts rooms while your guns collect dust. Full gear, chips, and rotation."
 author: "RapidF5 (via RogueMadras)"
 featuredImage: "/images/division-resurgence-field-medic-geneva-suggestion-chemical-trap-build.png"
@@ -32,7 +32,7 @@ This is not a shooter build. This is a **spreadsheet build.** The gun exists to 
 - **Specialization:** Field Medic (Tactical Pharma)
 - **Archetype:** Automated skill-DPS AOE farmer using weapons as stat sticks
 - **Difficulty Ceiling:** Rank 1 PvE/mission clear speed. **Extremely vulnerable** in solo Dark Zone — optimized Bulwark and Warlord builds will one-tap you. This is a farming build, not a PvP build. Know your lane.
-- **Core Loop:** Deploy Chemical Trap → activate second ability → swap weapons every 8s to cycle Lady Death / Warlord / Backup Battery buffs → watch acid pools liquidate everything → pop medkit for +20% damage during boss phases → repeat until the mission is over and your K/D reads like a war crime tribunal filing.
+- **Core Loop:** Deploy Chemical Trap → activate second ability → swap weapons every 8s to cycle dual Backup Battery Engineering buffs → empty mags for Fully Charged stacks → watch acid pools liquidate everything → pop medkit for +20% damage during boss phases → repeat until the mission is over and your K/D reads like a war crime tribunal filing.
 
 ## Why This Build Exists (The Paradigm Shift)
 
@@ -41,7 +41,7 @@ The meta used to be "Drones Offensive" — Tech Op drone builds tunneling crit s
 In this build:
 - **Weapon DPS is a rounding error.** Your gun hits for ~6,000 once stacks are consumed. That's a rounding error on a rounding error.
 - **Skill DPS is the entire output.** Chemical Trap ticks, Oxidizing Swarm blankets, and the Brains Over Brawn → Prime Engineer → Glass Cannon stack pushes you past **1,000,000+ Effective DPS** in sustained AOE scenarios.
-- **The gun is a remote control.** You fire it to generate stacks via Backup Battery and to proc the Lady Death weapon-swap buff cycle. You are not shooting enemies. You are pressing buttons on a very expensive TV remote that happens to look like a gun.
+- **The gun is a remote control.** You fire it to proc Backup Battery's +22.50% Engineering on swap and to empty mags for Fully Charged stacks. You are not shooting enemies. You are pressing buttons on a very expensive TV remote that happens to look like a gun.
 
 The trade-off is real: by going full Glass Cannon with zero Toughness investment, you are made of wet tissue paper. One optimized PvP player in the Dark Zone will erase you before your acid pool finishes deploying. **This build farms missions, not rogues.**
 
@@ -51,7 +51,7 @@ The Geneva Suggestion runs on a precise convergence of Engineering and Skill sta
 
 | Stat Attribute | Optimal Target | Why You Care |
 |---|---|---|
-| Skill Crit Chance | 50% base / ~150% buffered | The Lady Death swap mechanic pads this to absurd levels. UI may report 150% — that's either over-capping or a display bug. Either way, you crit on everything, always. |
+| Skill Crit Chance | 50% base / ~150% buffered | The Backup Battery swap cycle + Jackpot set bonuses push this to absurd levels. UI may report 150% — that's either over-capping or a display bug. Either way, you crit on everything, always. |
 | Skill Crit Damage | 131% – 150% | The primary damage scaler. This is where your million-DPS number lives. Jackpot 4pc (+24%) + Fire Cycle 2pc (+12%) + gear rolls stack this ceiling. |
 | Skill Intensity | ~67% | Supplementary filler. Its mechanical weight is less transparent than crit stats, but it supports overall skill efficacy. Don't skip it — don't obsess over it. |
 | Skill Multi-Shot | 10% (weapon attribute) | Extra skill hits per tick. Every multi-shot proc on a Chemical Trap tick is a free extra war crime. |
@@ -59,29 +59,34 @@ The Geneva Suggestion runs on a precise convergence of Engineering and Skill sta
 
 ## Weapons (The Stat Sticks)
 
-### Primary — Lady Death (Exotic SMG)
+Both weapons in this build exist for one reason: **Backup Battery.** Every swap grants +22.50% Engineering for 8 seconds. You're running the same talent on both weapons so the buff is permanently active as long as you swap on the 8-second timer. The guns themselves are stat delivery vehicles. Their damage output is a rounding error.
 
-**Talent: Breathe Free.** While moving, grants 4 stacks per second (8 if sprinting), up to 40 stacks. Each round fired consumes a stack, granting +15% Weapon Damage. Deploying a Skill consumes 10 stacks and grants +15% Skill Damage. Kills grant +10% Movement Speed for 10 seconds.
+### Primary — Vector 45 ACP (SMG) + Backup Battery
 
-You are not using Lady Death to shoot people. You are using Lady Death because the weapon-swap cycle pads your skill stats to the 150% threshold. The Breathe Free stacking mechanic interacts with the Backup Battery perk to create an 8-second buff cycle that inflates your Skill Crit Chance to UI-breaking levels. Deploy a skill → consume 10 stacks → +15% Skill Damage → the gun itself hits like a pool noodle once stacks are consumed. **That's the point.**
+**Talent: Backup Battery (wt-4).** Swapping to this weapon grants +22.50% Engineering for 8 seconds. Cooldown: 8 seconds.
 
-### Secondary — Warlord (Exotic AR)
+RogueMadras runs the Vector specifically. Why? 1200 RPM, 25-round magazine. That tiny mag empties fast, which matters because your secondary talent (Fully Charged) rewards empty-magazine reloads. The Vector is a stat stick with a hair trigger and an identity crisis — it thinks it's a gun, but it's actually an Engineering calculator with recoil. Any T2 SMG works, but the Vector's dump speed is ideal.
 
-**Talent: Play Rough.** While firing, reduces Incoming Damage by 25%. When firing ceases, applies 60% of the reduced damage and grants **+10% Skill Damage for 10 seconds.**
+> 💡 **Any SMG will work.** The Vector is optimal for the fast mag-dump → Fully Charged cycle. If you don't have a T2 Vector, use whatever T2 SMG you've got with Backup Battery rolled on it.
 
-The Warlord is the second half of the stat-stick equation. Fire → soak damage at -25% incoming → stop firing → bank +10% Skill Damage for 10 seconds → your Chemical Trap now hits harder. You are using an assault rifle as a skill damage calculator with a built-in damage reduction insurance policy. It's the most expensive TI-84 in the game.
+### Secondary — Any AR or LMG + Fully Charged
 
-> ⚠️ **Warlord Acquisition Warning:** Switch to Vanguard/Firepower spec BEFORE buying from the DZ Vendor so rolls land on Firepower, not Engineering. Yes, it's counterintuitive. Yes, it matters. See Section 18.36.6 of the knowledge base.
+**Talent: Fully Charged (wt-20).** Reloading an empty magazine grants +7.50% Engineering for 12 seconds, up to 3 stacks.
+
+The secondary weapon is where you stack Fully Charged. Empty the mag → reload → +7.50% Engineering. At 3 stacks that's +22.50% Engineering for 12 seconds — stacking on top of Backup Battery's +22.50%. Combined, your two weapons are pushing **+45% Engineering** through talent stacking alone. That feeds directly into Brains Over Brawn (24% of Engineering as additional damage per hit). The secondary weapon's actual DPS is irrelevant. Its job is to be empty, then full, then empty again.
+
+> 💡 **Weapon choice is flexible.** Use whatever T2 AR or LMG you have with Fully Charged. Larger magazines take longer to empty but give you more sustained fire time for Chemical Trap ticks. Pick based on what you've got — the talent is what matters.
 
 ### The 8-Second Swap Cycle
 
-The core mechanical rhythm of the build is weapon-swapping every 8 seconds to refresh the **Backup Battery** perk and cycle Lady Death / Warlord buffs:
+The core mechanical rhythm of the build is weapon-swapping every 8 seconds to maintain permanent **Backup Battery** uptime while stacking **Fully Charged**:
 
-1. Fire Lady Death → build Breathe Free stacks while moving
-2. Swap to Warlord at 8s → fire into enemies → cease fire → Play Rough grants +10% Skill Damage
-3. Swap back to Lady Death → cycle restarts
+1. Fire Vector → empty the 25-round magazine fast → reload (Fully Charged stack +1)
+2. Swap to secondary at 8s → Backup Battery triggers (+22.50% Engineering) → empty mag → reload (Fully Charged stack +2)
+3. Swap back to Vector → Backup Battery triggers again → empty and reload (Fully Charged stack +3 = +22.50% bonus Engineering)
+4. Maintain rotation — both Backup Battery buffs cycling, Fully Charged at 3 stacks
 
-Failure to maintain the 8-second cycle drops you from "Effective DPS" (1M+) to "Paper DPS" (~200k). **Set a mental metronome or kiss your farm speed goodbye.**
+Failure to maintain the 8-second cycle drops your Engineering floor and kills your DPS. **Set a mental metronome or kiss your farm speed goodbye.**
 
 ## The Build
 
@@ -94,8 +99,8 @@ Failure to maintain the 8-second cycle drops you from "Effective DPS" (1M+) to "
 | Chest | Fire Cycle | **Glass Cannon** | Engineering | Skill Crit Chance | Skill Crit Damage |
 | Backpack | Fire Cycle | **Prime Engineer** | Engineering | Skill Crit Damage | Skill Intensity |
 
-- **Primary:** Lady Death (exotic SMG) — Breathe Free
-- **Secondary:** Warlord (exotic AR) — Play Rough
+- **Primary:** Vector 45 ACP (T2 SMG) — Backup Battery
+- **Secondary:** Any T2 AR/LMG — Fully Charged + Backup Battery
 - **OS Protocol:** Brains Over Brawn (Engineering, High-End)
 - **Skills:** Chemical Trap (Enhanced Formula 3pc + Hereafter Resilience 3pc) · Oxidizing Swarm (Harvest 3pc)
 - **Signature:** Oxidizing Swarm
@@ -149,9 +154,9 @@ This build runs a "passive-aggressive" combat loop where positioning and buff-ma
 
 2. **Activate your second ability** (Oxidizing Swarm when available). This auto-hits enemies for stack accumulation while you focus entirely on positioning. Harvest chip feeds CDR back into Chemical Trap. Every enemy hit is 2.40s off your next acid deployment.
 
-3. **Begin the 8-Second Weapon Swap Cycle.** Fire Lady Death → build Breathe Free stacks → swap to Warlord at 8s → fire into acid-covered enemies → cease fire → Play Rough converts to +10% Skill Damage → swap back. This is the heartbeat of the build. Miss a swap and your DPS drops by 40%+.
+3. **Begin the 8-Second Weapon Swap Cycle.** Fire Vector → dump mag → reload (Fully Charged +1) → swap at 8s → Backup Battery triggers (+22.50% Engineering) → dump secondary mag → reload (Fully Charged +2) → swap back → repeat. This is the heartbeat of the build. Miss a swap and your Engineering floor collapses.
 
-4. **Pop medkit during boss phases.** Medkits provide an additional +20% damage boost. Time them for when the boss is standing in your acid pools and your Skill Crit Damage is fully stacked. This is where the screenshot numbers come from.
+4. **Pop medkit during boss phases.** Medkits provide an additional +20% damage boost. Time them for when the boss is standing in your acid pools and your Engineering is fully stacked from Backup Battery + Fully Charged. This is where the screenshot numbers come from.
 
 5. **Zero-damage gunplay.** Your weapons hit for ~6,000 per bullet once stacks are consumed. That's fine. That's the plan. The guns are TV remotes. The skills are the show. Watch the acid pools tick for 50,000+ per crit while your gun does the damage equivalent of a stern look.
 
@@ -171,8 +176,8 @@ This build runs a "passive-aggressive" combat loop where positioning and buff-ma
 | Hereafter Resilience chip | +24% Chemical Trap DoT, +3s duration | Per-tick amplifier |
 | Enhanced Formula chip | 7.20% damage → Health Recovery | Survival layer |
 | Chemical Recharge chip | -4.80s second ability CD per kill | Uptime engine |
-| Warlord Play Rough | +10% Skill Damage on cease-fire, -25% incoming while firing | Damage + survival layer |
-| Lady Death swap cycle | Skill stat padding to ~150% crit | Buff cycling |
+| Backup Battery (both weapons) | +22.50% Engineering per swap (8s cycle) | Permanent uptime via dual-wield |
+| Fully Charged (secondary) | +7.50% Engineering per empty reload, 3 stacks = +22.50% | Stacks with Backup Battery for +45% Engineering total |
 | Medkit timing | +20% Damage during boss phases | Consumable burst |
 
 These multipliers don't add. They **multiply**. Against a dense pack standing in acid pools during a fully-buffed rotation, total Effective DPS crosses the 1,000,000 mark. That's not theory. That's the leaderboard.
@@ -184,14 +189,16 @@ These multipliers don't add. They **multiply**. Against a dense pack standing in
 | T0 Bridge | Jackpot 4pc + any 2pc Engineering set | Available immediately — Jackpot is T0+ |
 | T1 Step | Jackpot 4pc + Fire Cycle 2pc (T1 rolls) | Fire Cycle starts appearing at higher content |
 | T2 Target | Jackpot 4pc + Fire Cycle 2pc (T2) + Glass Cannon chest + Prime Engineer backpack | The endgame configuration. Requires T2 Fire Cycle pieces with correct stat rolls. |
-| Exotics | Lady Death (DZ drop) + Warlord (DZ Vendor) | The stat sticks. Build reaches full potential only with both exotics equipped. |
+| Weapons | Any T2 SMG (Vector 45 ACP ideal) + any T2 AR/LMG, both with Backup Battery, secondary with Fully Charged | No exotic requirement — this build is fully farmable outside the Dark Zone. |
 
 ## Loot Quick-Reference
 
 | Item | Where to Look |
 |---|---|
-| Lady Death | Dark Zone exclusive drop |
-| Warlord | Dark Zone Vendor (switch to Vanguard/Firepower spec BEFORE purchasing) |
+| Vector 45 ACP (or any T2 SMG) | Standard weapon drops — any content |
+| Any T2 AR/LMG | Standard weapon drops — any content |
+| Backup Battery talent | Weapon talent recalibration (wt-4) |
+| Fully Charged talent | Weapon talent recalibration (wt-20) |
 | Jackpot 4-piece | T0+ gear drops — available from first content |
 | Fire Cycle 2-piece | T1+ gear drops — elite missions, strongholds |
 | Glass Cannon chest | Recalibrate any chest to Glass Cannon (ba-12) |
@@ -206,7 +213,7 @@ These multipliers don't add. They **multiply**. Against a dense pack standing in
 
 Let's be honest with each other, because we're all old enough to handle the truth:
 
-**This build will get you killed in the Dark Zone.** Not "might." Will. You have zero Toughness, Glass Cannon's −10% DR, and the survivability profile of a paper airplane in a thunderstorm. Any optimized Bulwark running Happy Survival or a Vanguard with a Warlord will one-tap you before your acid pool finishes the deploy animation.
+**This build will get you killed in the Dark Zone.** Not "might." Will. You have zero Toughness, Glass Cannon's −10% DR, and the survivability profile of a paper airplane in a thunderstorm. Any optimized Bulwark running Happy Survival or a Vanguard will one-tap you before your acid pool finishes the deploy animation.
 
 **This build is not for the DZ.** This build is for farming T2 elite missions at maximum speed, hitting Rank 1 AOE clear times, and grinding materials while your brain runs at 15% capacity. It is a weeknight build. A "I have 45 minutes before the kids need a bath" build. A "my hands hurt and I don't want to aim" build.
 
@@ -214,7 +221,7 @@ If you want to PvP, run the [Fearless Warlord](/builds/conflict-pvp-fearless-war
 
 ## TL;DR — Five Things
 
-1. **Your guns are stat sticks.** Lady Death + Warlord exist to cycle buffs every 8 seconds. They hit for ~6,000. That's fine. That's the design.
+1. **Your guns are stat sticks.** Both run Backup Battery for +22.50% Engineering per swap. Your secondary also stacks Fully Charged for another +22.50%. They hit for ~6,000. That's fine. That's the design.
 2. **Chemical Trap does 100% of the killing.** Jackpot 4pc + Fire Cycle 2pc + Glass Cannon + Prime Engineer + Brains Over Brawn = 1M+ Effective DPS in acid pools.
 3. **The 8-second weapon swap is sacred.** Miss it and your DPS drops 40%. Set a mental timer. Become the metronome.
 4. **17 million credits for chips.** That's the real endgame boss. Budget accordingly.
@@ -226,7 +233,7 @@ Stack the acid. Swap the guns. Watch the numbers. Welcome to your Geneva Suggest
 
 ### What is the best AOE build in Division Resurgence?
 
-The Geneva Suggestion (Field Medic / Tactical Pharma) currently holds the **Rank 1 AOE clearing position** in PvE. It uses Jackpot 4pc + Fire Cycle 2pc with Chemical Trap to achieve 1,000,000+ Effective DPS in sustained AOE scenarios. The build requires Lady Death and Warlord exotic weapons as stat sticks, with zero reliance on weapon damage. Tested in Season 2 patch, May 2026.
+The Geneva Suggestion (Field Medic / Tactical Pharma) currently holds the **Rank 1 AOE clearing position** in PvE. It uses Jackpot 4pc + Fire Cycle 2pc with Chemical Trap to achieve 1,000,000+ Effective DPS in sustained AOE scenarios. Both weapons run Backup Battery (with Fully Charged on the secondary) as stat sticks — no exotics required. Tested in Season 2 patch, May 2026.
 
 ### Is the Geneva Suggestion build good for PvP or Dark Zone?
 
@@ -238,11 +245,11 @@ Approximately **17 million credits**. Each gold chip costs roughly 900,000 credi
 
 ### What is the 8-second weapon swap cycle?
 
-The core mechanical rhythm that maintains the build's DPS ceiling. You fire Lady Death to build Breathe Free stacks, swap to Warlord at 8 seconds, fire to trigger Play Rough's +10% Skill Damage buff, then swap back. The Backup Battery perk requires this 8-second cadence. Missing a swap drops your Effective DPS by approximately 40%.
+The core mechanical rhythm that maintains the build's DPS ceiling. Both weapons run Backup Battery, which grants +22.50% Engineering for 8 seconds on swap. You fire one weapon, empty the mag (proc Fully Charged), swap at 8 seconds (proc Backup Battery), repeat. This keeps your Engineering permanently buffed by +45% (Backup Battery + Fully Charged 3 stacks). Missing a swap drops your Engineering floor and kills your DPS.
 
-### Can I run this build without Lady Death or Warlord?
+### Do I need exotic weapons for this build?
 
-Yes, but at significantly reduced effectiveness. Lady Death's Breathe Free talent pads skill stats to the ~150% crit threshold via the weapon-swap cycle. Without it, you lose the stat-stick buff engine. Use any T2 SMG with In Sync as a temporary substitute. The Warlord can be replaced with a T2 AR running In Sync + Steady Reload until the exotic drops.
+No. This is one of the most accessible endgame builds because **it requires zero exotic weapons.** Any T2 SMG (Vector 45 ACP recommended) with Backup Battery as primary, and any T2 AR or LMG with Fully Charged as secondary. Roll Backup Battery on both via recalibration. The entire damage engine comes from gear sets, talents, and chips — not weapon DPS.
 
 ### What changed with the chip names in the current patch?
 
@@ -250,4 +257,5 @@ Three Field Medic chips were renamed: **Siphon → Enhanced Formula** (smc-72), 
 
 ## Changelog
 
+- **v1.1** (May 22, 2026): Corrected weapons — build uses standard weapons with Backup Battery (both) + Fully Charged (secondary), not exotic weapons. RogueMadras runs Vector 45 ACP as primary.
 - **v1.0** (May 22, 2026): Initial build — adapted from RogueMadras's Tactical Pharma configuration for Season 2 patch. All stats verified against data files (patch S2, May 2026).
