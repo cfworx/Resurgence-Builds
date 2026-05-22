@@ -498,7 +498,7 @@
   },
   {
     "id": "smc-72",
-    "name": "Enhanced Formula",
+    "name": "Siphon",
     "specialization": "Field Medic",
     "bonus2": "Damage Reduction+[2.0%~4.0%]",
     "bonus3": "Using a Chemical Trap to apply a stack of Corrosive has a 50% chance of restoring 4 Signature Ability Charge. Talent Cooldown: 0.50 seconds."
@@ -526,7 +526,7 @@
   },
   {
     "id": "smc-76",
-    "name": "Feebleness",
+    "name": "Enhanced Formula",
     "specialization": "Field Medic",
     "bonus2": "Skill Critical Damage+[4.0%~8.0%]",
     "bonus3": "Oxidizing Swarm hits inflict -12% Damage for 20 seconds. Killing an enemy within 20 meter(s) who is also afflicted by this debuff restores Health equal to 8% Missing Health for 20 second(s)."

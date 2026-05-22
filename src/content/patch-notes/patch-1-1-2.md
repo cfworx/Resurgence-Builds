@@ -6,8 +6,6 @@ author: "RapidF5"
 summary: "The Division Resurgence Patch 1.1.2 deployed alongside the emulator PC Early Access launch, bringing cross platform matchmaking and UI bug fixes."
 featuredImage: "/images/patch-1-1-2.jpg"
 imageAlt: "An exhausted Division Agent resting against a brick wall on a snowy street"
-pizzaTitle: "Reading the fine print"
-pizzaText: "I test every single 'minor bug fix' to see if they accidentally broke the entire game again. Buy me a pizza to fund the inevitable therapy."
 shareTitle: "Warn the timeline"
 shareText: "Share this to let your squad know their favorite gun just got stealth-nerfed."
 ---

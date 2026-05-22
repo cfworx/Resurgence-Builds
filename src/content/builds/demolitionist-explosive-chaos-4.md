@@ -11,8 +11,6 @@ description: "A solo-first off-meta Demolitionist build where every skill cast d
 author: "RapidF5"
 featuredImage: "/images/division-resurgence-demolitionist-explosive-solo-build.webp"
 imageAlt: "Division Resurgence Demolitionist Explosive Chaos Build"
-pizzaTitle: "Explosions are expensive"
-pizzaText: "The sheer amount of collateral damage this build causes is a liability. Help me fund my legal defense team (or just buy me a pizza) before the authorities catch on."
 shareTitle: "Share the Michael Bay experience"
 shareText: "Warning: sharing this build on X may flag your account for digital terrorism."
 plannerHash: "s=Demolitionist&n=Explosive+Chaos&ms=gs-10&cs=gs-10&ct=ba-5&ps=gs-10&pt=bp-8&gs=gs-10&hs=gs-7&ks=gs-7"
@@ -29,7 +27,7 @@ This is a solo-first off-meta Demolitionist build where **every single skill cas
 There are four explosion events on *every single M32A1 grenade throw*:
 
 1. **The Grenade Itself:** The Thermabaric Grenades skill mod adds +460% damage and +100% radius. Big boom.
-2. **Collateral Damage OS:** Every Skill Damage event triggers a *second* explosion within 5m for 1,600% Engineering (~40,000+ raw damage per proc at endgame, 10s internal cooldown). Bigger boom.
+2. **Collateral Damage OS:** Every Skill Damage event triggers a *second* explosion within 5m for 3,000% Engineering (~40,000+ raw damage per proc at endgame, 10s internal cooldown). Bigger boom.
 3. **Explosive Burst Backpack:** Up to +90% Skill Multi-Shot. This means each grenade has a near 1:1 odds of just magically firing a second grenade. Double boom.
 4. **Jackpot 3pc Skill CHC + 4pc Skill CHD:** Running 4pc gives you the full stack — +10.8% Skill Crit Chance (3pc) and +24% Skill Crit Damage (4pc) — stacking toward the 99% crit ceiling on every detonation. Spicy boom.
 
@@ -39,7 +37,7 @@ On a crit + Multi-Shot proc, a single grenade throw hits the screen for **200,00
 
 Most skill builds pick one delivery method. This one weaponizes the **OS Protocol itself as a second damage source**. 
 
-Collateral Damage's 1,600% Engineering payload triggers off *every* skill event you have. That includes the M32A1 signature, your Artillery Turret hits, and your Explosive Seeker Mine detonations. Every single gear stat that boosts Skill Crit or Skill Damage boosts BOTH explosions simultaneously. 
+Collateral Damage's 3,000% Engineering payload triggers off *every* skill event you have. That includes the M32A1 signature, your Artillery Turret hits, and your Explosive Seeker Mine detonations. Every single gear stat that boosts Skill Crit or Skill Damage boosts BOTH explosions simultaneously. 
 
 Jackpot is the only set that rolls Skill Crit Chance + Skill Radius on its set bonuses. Stack it with Skill Multi-Shot from Explosive Burst and every cast feels like four casts. 
 

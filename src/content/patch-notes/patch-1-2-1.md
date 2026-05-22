@@ -6,8 +6,6 @@ author: "RapidF5"
 summary: "Division Resurgence Patch 1.2.1 dropped May 20, 2026 — fixing the vendor sell bug, inventory disappearance, Classified Ops Pass delivery failures, Lone Wolf reset, and more. Plus 500,000 Basic Credits and 750 Phoenix Credits compensation for every account."
 featuredImage: "/images/patch-notes/division-resurgence-patch-1-2-1-notes-hero.webp"
 imageAlt: "A Division SHD agent reading patch notes on a tactical tablet in a darkened command room surrounded by screens and maps"
-pizzaTitle: "Patch Note Translator on Duty"
-pizzaText: "I read every bullet point so you don't spend your session confused about what changed and what's still spectacularly broken. The knowledge is free. The emotional damage of reading 'known issues' is not. Pizza helps."
 shareTitle: "Warn your squad"
 shareText: "Share this so your team knows what got fixed, what didn't, and why you still can't complete Outpost Annihilation."
 ---

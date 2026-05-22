@@ -6,8 +6,6 @@ featuredImage: "/images/news/division-resurgence-patch-121-cover.webp"
 imageAlt: "Division Resurgence Patch 1.2.1 splash with Strawberry Milkshake exotic LMG"
 description: "Patch 1.2.1 is live — vendor fixes, inventory loss fixed, 500K Basic Credits and 750 Phoenix Credits incoming, and Ubisoft finally admits the Strawberry Milkshake perks are underwhelming. Phase 3 drops in June."
 tags: ["News", "Patch Notes", "Season 1", "Phase 2", "Strawberry Milkshake", "Dark Zone", "Roadmap"]
-pizzaTitle: "Hazard pay for surviving Phase 2"
-pizzaText: "I spent the last 48 hours reading patch notes, cross-referencing Ubisoft's support pages, and doom-scrolling Reddit so you don't have to. My inventory is fine. My mental health is not. Pizza is the only known treatment for acute Ubisoft-induced anxiety."
 shareTitle: "Spread the news"
 shareText: "Share this so your squad knows what changed, what's still broken, and why the Strawberry Milkshake buff can't come soon enough."
 ---

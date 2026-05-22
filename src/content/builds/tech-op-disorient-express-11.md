@@ -11,11 +11,9 @@ description: "An off-meta Tech Operator hybrid that locks enemies in permanent D
 author: "RapidF5"
 featuredImage: "/images/division-resurgence-tech-op-disorient-express-build.jpg"
 imageAlt: "Division Resurgence Tech Operator Disorient Express Mechanical Enemy Drone Build"
-pizzaTitle: "Hazard pay for the pilot"
-pizzaText: "I spent more hours than I'm legally allowed to admit watching enemies walk into walls because a flying disc with a police hat kept critting their kneecaps. Buy me a pizza before I file a PTSD claim with OSHA."
 shareTitle: "Send this to the guy who thinks Tech Op is just healer support"
 shareText: "Share this and watch someone completely reassemble their understanding of what a drone can do."
-plannerHash: "s=Tech+Operator&sc=Offensive+Operations&n=Disorient+Express&ms=gs-7&m1=Skill+Critical+Chance&m2=Skill+Critical+Damage&cs=gs-8&ct=ba-4&c1=Weapon+Critical+Hit+Chance&c2=Weapon+Critical+Hit+Damage&ps=gs-8&pt=bp-17&p1=Skill+Intensity&p2=Damage+to+Elites&gs=gs-7&g1=Skill+Critical+Chance&g2=Skill+Intensity&hs=gs-7&h1=Skill+Critical+Damage&h2=Skill+Cooldown+Recovery&ks=gs-7&k1=Skill+Critical+Damage&k2=Skill+Intensity&w1s=sw-2&w1tr=T2&w1t=wt-22&w2s=sw-25&w2tr=T2&w2t=wt-18&os=os-3&sm1=smc-40&sm2=smc-41&sm3=smc-42"
+plannerHash: "s=Tech+Operator&sc=Offensive+Operations&n=Disorient+Express&ms=gs-6&m1=Skill+Critical+Chance&m2=Skill+Critical+Damage&cs=gs-10&ct=ba-24&c1=Weapon+Critical+Hit+Chance&c2=Weapon+Critical+Hit+Damage&ps=gs-10&pt=bp-15&p1=Skill+Intensity&p2=Damage+to+Elites&gs=gs-6&g1=Skill+Critical+Chance&g2=Skill+Intensity&hs=gs-6&h1=Skill+Critical+Damage&h2=Skill+Cooldown+Recovery&ks=gs-6&k1=Skill+Critical+Damage&k2=Skill+Intensity&w1s=sw-7&w1tr=T2&w1t=wt-22&w2s=sw-25&w2tr=T2&w2t=wt-18&os=os-33&sm1=smc-30&sm2=smc-23"
 ---
 
 ## What It Is
@@ -24,7 +22,7 @@ You ever play against a Tech Op who pings your skull with a flying lawnmower whi
 
 The **Disorient Express** is an off-meta Tech Operator that turns the Striker Drone into a TSA agent — every crit applies Disoriented, every Disoriented enemy gets dunked on by Concerted Strike, and the rotation never stops because the drone is feeding itself crit chance through Stabilized Flight. We're not in the meta. We're not even on the map. We're at cruising altitude.
 
-### Build Overview
+**Build Overview**
 
 - **Specialization:** Tech Operator
 - **Archetype:** Hybrid drone-CC / weapon DPS
@@ -41,11 +39,11 @@ Nobody is running this. They will be after this post.
 
 ## Weapons
 
-### Primary — Custom 416 G3 (T2 AR)
+**Primary — Custom 416 G3 (T2 AR)**
 
 **Talent: In Sync.** Weapon hits grant +9% Skill Damage for 8s. Skill hits grant +9% Weapon Damage for 8s. When both buffs are active simultaneously, both are doubled — **+18% Skill Damage and +18% Weapon Damage at the same time**, from one trigger pull. The drone counts as a skill. The second your AR hits an enemy and the drone ticks, you are running both sides of the buff simultaneously. Mechanical Enemy's WCHC keeps your AR critting and refreshing the weapon-side buff continuously.
 
-### Secondary — T2 Marksman Rifle
+**Secondary — T2 Marksman Rifle**
 
 **Talent: Ex Machina.** Headshots grant **+30% Skill Critical Hit Damage for 10 seconds**. One headshot = your drone crits for significantly more for the next 10 seconds. The MMR is the drone's remote tuner — you don't swap to it to fight, you swap to it to juice the next drone burst, then swap back to the AR.
 
@@ -67,13 +65,13 @@ Nobody is running this. They will be after this post.
 - **Signature:** Drone Overload
 - **Gear Mods:** 5× Engineering, 1× Firepower (chest slot is your weapon-damage node)
 
-### Mechanical Enemy 4-Piece Bonuses
+**Mechanical Enemy 4-Piece Bonuses**
 
 - **2-piece:** Weapon Critical Hit Chance +7.2%
 - **3-piece:** Optimal Range +15%
 - **4-piece:** Skill Cooldown Recovery −12%
 
-### Chest & Backpack Justification
+**Chest & Backpack Justification**
 
 **Toymaker** is mocked because "no enemies within 20m" sounds like a Twitch-streamer fantasy. On Tech Op you literally play 20m+ back from the cluster. The drone handles the close work. You're in cover, not in their face. **Free +15% Skill Multi-Shot Chance** on a drone that's already critting constantly is genuinely disgusting. Boom-Shakalaka's 2pc bonus adds another **+6% Skill CDR** on top of Mechanical Enemy 4pc's −12% — two separate CDR budget lines stacking, meaning the drone returns noticeably faster than either piece alone would suggest.
 
@@ -81,21 +79,21 @@ Nobody is running this. They will be after this post.
 
 ## Skill Loadout
 
-### Striker Drone — EMCAT (3pc)
+**Striker Drone — EMCAT (3pc)**
 
 The EMCAT chip set is the keystone: **every Striker Drone critical hit applies Disoriented** to the target. Disoriented disrupts enemy aim and tracking — they miss shots, panic-spray, and generally have a bad time while your drone calmly continues dunking on their skulls.
 
-### Striker Drone — Stabilized Flight (3pc)
+**Striker Drone — Stabilized Flight (3pc)**
 
 The self-sustain engine: **Applying Drone Lock grants +6% Skill Critical Hit Chance for 20 seconds**. Every time the drone acquires a new target, it banks +6% Skill CHC. Combined with the Mechanical Enemy 4pc WCHC and your Engineering stat rolling Skill CHC on the mask and gloves, the drone reaches a crit threshold where EMCAT is proccing Disoriented on essentially every burst.
 
-### Signature — Drone Overload
+**Signature — Drone Overload**
 
 Mechanical Enemy's −12% CDR shaves significant time off the Drone Overload cooldown. Use it to chain Disorient coverage across target swaps. The drone goes full aggro mode and everything in its path gets a complimentary aim-disruption package.
 
 ## How It Works (The Math)
 
-### Concerted Strike Damage Ramp
+**Concerted Strike Damage Ramp**
 
 | Stack | Bonus |
 |---|---|
@@ -105,7 +103,7 @@ Mechanical Enemy's −12% CDR shaves significant time off the Drone Overload coo
 
 The drone hits count as skill hits. As long as the drone is firing within 20m of your position and you're engaged, 24% Damage is your baseline — not a burst buff, a floor.
 
-### In Sync Double-Active Bonus
+**In Sync Double-Active Bonus**
 
 | State | Weapon Damage | Skill Damage |
 |---|---|---|
@@ -115,7 +113,7 @@ The drone hits count as skill hits. As long as the drone is firing within 20m of
 
 One AR trigger pull + one drone tick = both active. This is not a conditional. It's a consequence of existing.
 
-### Full Damage Stack Summary
+**Full Damage Stack Summary**
 
 | Source | Bonus |
 |---|---|
@@ -128,7 +126,7 @@ One AR trigger pull + one drone tick = both active. This is not a conditional. I
 | Minion Training | +36% Skill CHD per drone kill (12s, refreshes) |
 | Ex Machina (MMR headshot) | +30% Skill CHD for 10s |
 
-### The Synergy Chain
+**The Synergy Chain**
 
 Drone crits → EMCAT applies Disoriented → enemy aim is disrupted → they miss you → drone crits again → Stabilized Flight keeps Skill CHC topped up → Minion Training stacks Skill CHD → you shoot the debuffed target → Concerted Strike stacks → In Sync doubles both sides → MMR headshot pumps Ex Machina → drone crits even harder → repeat until the room is clear and nobody got to shoot back accurately.
 

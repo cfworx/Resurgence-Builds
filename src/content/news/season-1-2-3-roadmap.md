@@ -6,8 +6,6 @@ description: "The full Division Resurgence seasonal roadmap. Phase 3 details, PC
 tags: ["Roadmap", "Season 1", "Season 2", "Season 3"]
 featuredImage: "/images/season-roadmap.jpg"
 imageAlt: "A Division Agent checking a map on a snowy New York street"
-pizzaTitle: "Translating dev roadmaps"
-pizzaText: "Deciphering 'soon', 'later this year', and 'in the works' is basically a full-time job. Toss a pizza my way to keep my crystal ball functioning."
 shareTitle: "Share the hopium"
 shareText: "Tweet this to convince your followers the game is definitely saved this time."
 ---

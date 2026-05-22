@@ -6,8 +6,6 @@ author: "RapidF5"
 summary: "The official Division Resurgence patch notes for Season 1 Phase 2. Featuring new events, the free Strawberry Milkshake exotic weapon, and Dark Zone rogue mechanic updates."
 featuredImage: "/images/patch-notes/division-resurgence-phase-2-patch-notes-hero.webp"
 imageAlt: "A male Division agent slamming the ground in a snowy New York City street with cockroaches scattering from a manhole cover"
-pizzaTitle: "Patch Note Archaeologist"
-pizzaText: "Digging through 10 pages of weapon rebalancing data is exhausting work. If this summary saved you from reading a novel, consider tipping your local data miner with a slice."
 shareTitle: "Save them from reading"
 shareText: "Tweet this summary so your friends don't have to read a 10-page novel."
 ---

@@ -6,8 +6,6 @@ description: "A complete summary of the April 18 developer stream, covering the 
 tags: ["Dev Stream", "Community", "FPS"]
 featuredImage: "/images/april-dev-stream.jpg"
 imageAlt: "A multi-monitor setup displaying a Division Resurgence developer livestream alongside Twitch chat"
-pizzaTitle: "I watched the stream so you didn't have to"
-pizzaText: "I sat through 45 minutes of corporate PR speak and 'we hear you's just to extract the actual useful information. A pizza is the only way I can recover my lost brain cells."
 shareTitle: "Save a life"
 shareText: "Share this summary to save another agent from 45 minutes of corporate jargon."
 ---

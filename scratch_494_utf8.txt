@@ -1,0 +1,67 @@
+<USER_REQUEST>
+So this is the recap from the RogueMaras Geneva Suggestion build. Lets make sure our data matches this. Pay attention to his shop list, our build should contain what he thinks would be the best and what he is looking for not necesarrily what he currently has equiped. For anything that isn't striclty related to the build, but is good knowledge, add it to our knowledge doc.
+
+# RogueMadras' Tactical Pharma Build â€” The Division Resurgence
+
+> **Source:** [T2 & DZ Farm / Rank 1 Aoe / Rank 6 Global / IN The Division Resurgence](https://www.youtube.com/watch?v=orBlCP7ro4I) by RogueMadras (livestream, May 18, 2026). This document was built **exclusively** from the spoken contents of that stream â€” no outside sources were used. Anything not said on stream is intentionally omitted.
+
+---
+
+## Build Identity
+
+- **Build name / archetype:** Tactical Pharma (skill / "engineer" focused).
+- **Previously played:** Drones-Offensive HS (Hard-Strike) build; the streamer switched to Tactical Pharma.
+- **Role / play style:** Skill-damage farmer for **Tier 2 (T2)** missions and **Dark Zone (DZ)** landmarks. Solo-capable in PvE but admittedly weak in solo DZ ("two bullets will kill me").
+- **End-game claim on stream:** Rank 1 AoE / Rank 6 Global (as in the video title).
+- **Damage source:** Skills do nearly all the damage. The gun itself does "absolutely no damage" â€” shooting only triggers skill stacks/procs. Goal stated in the stream: eventually out-DPS a Vanguard.
+
+---
+
+## Stats With Current Build (As Shown On Stream)
+
+These are the numbers the streamer read out while displaying his character sheet.
+
+| Stat | Value (with current loadout) |
+|---|---|
+| Skill Crit Chance | **50%** |
+| Skill Crit Damage | **150%** (he initially mis-said 131%, then corrected) |
+| Skill Multi-Shot | **40%** |
+| Skill Intensity | **67%** (he notes he has tested this and "nothing seems to work" â€” unclear effect) |
+
+**Stat swing when swapping to the Lady Death rifle (for reference):**
+
+| Stat | Value with Lady D
+<truncated 9396 bytes>
+mes prevents larger numbers from showing.
+- **Launch-era crashes:** Were severe at release; now fixed in his experience.
+- **Aegis nerf rumor:** He thinks the **Aegis build was nerfed and then reverted** â€” uncertain.
+
+## Builds He Referenced (Context)
+- **Tactical Pharma** â€” the current build documented here.
+- **HS (Hard Strike) build** â€” previous build; while wearing a "standard" version of it he was hitting ~200k per bullet in the DZ and could one-shot purple-tier DZ enemies. Felt like "I was using Vanguard."
+- **Drones-Offensive** â€” what he ran originally before tactical pharma.
+- **Demo build** â€” "will be quite good. Especially with the ultimate. Literally one hits everyone." Still can't kill bull-walks.
+- **Drum / LMG build** â€” uses 4-piece Mechanical (he believes); not his thing.
+
+
+---
+
+## TL;DR Shopping List
+
+- **Chest:** any chest with **Glass Cannon** + skill-crit / multi-shot rolls.
+- **Backpack:** **Prime Engineering** (best) or **Minion Training** (second).
+- **Holster:** the free **+46% engineering** holster (stacks with Prime Engineering).
+- **2-piece sets:** **Fire Cycle** + **File Jackpot**, rolled into skill crit damage / chance / multi-shot.
+- **Weapon:** any gun whose augment grants **+10% Skill Multi-Shot Damage**; prioritise **Tech** on the roll, not armor or firepower.
+- **Chips:** **Enhanced Formula**, **Hereafter Resilience**, **Chemical Recharge** (all gold, maxed).
+- **Mods:** all **gold Engineering** once you can find them; tolerate one purple **Health** mod to survive.
+- **Stat goal:** push **Engineering** past **+100%** to roughly double overall damage.
+
+---
+
+*Document compiled solely from the spoken commentary of RogueMadras during the linked livestream. Where the streamer was uncertain (e.g., Skill Intensity's true effect, whether Prison drops T2, the developer studio), that uncertainty is preserved here rather than guessed at.*
+
+</USER_REQUEST>
+<ADDITIONAL_METADATA>
+The current local time is: 2026-05-22T14:18:20-07:00.
+</ADDITIONAL_METADATA>

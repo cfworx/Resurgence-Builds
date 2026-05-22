@@ -7,8 +7,6 @@ description: "Vanguard, Demolitionist, Bulwark, Field Medic, or Tech Operator â€
 author: "RapidF5"
 featuredImage: "/images/division-resurgence-which-specialization-to-pick-guide.jpg"
 imageAlt: "Which specialization to pick in The Division Resurgence â€” Vanguard, Demolitionist, Bulwark, Field Medic, Tech Operator comparison guide"
-pizzaTitle: "You made it to the end without picking the wrong spec"
-pizzaText: "That alone is worth a pizza. Help keep the guides coming and the bad spec choices contained."
 shareTitle: "Save a teammate from picking the wrong spec"
 shareText: "Share this before someone joins your Legendary run as a glass cannon Tech Op with no idea what Aegis does."
 ---

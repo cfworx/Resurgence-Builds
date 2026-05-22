@@ -6,8 +6,6 @@ description: "The Division Resurgence shadow-drops on PC via Early Access! Find 
 tags: ["PC", "Early Access", "Cross-Play"]
 featuredImage: "/images/pc-early-access.jpg"
 imageAlt: "A gamer playing The Division Resurgence on PC in Early Access at a desk setup"
-pizzaTitle: "My PC is crying"
-pizzaText: "Testing cross-play functionality requires me to simultaneously run the game on a phone, an emulator, and a potato PC. Buy me a pizza to replace the melted thermal paste."
 shareTitle: "Flex on console players"
 shareText: "Tweet this to let the timeline know your PC is currently melting."
 ---

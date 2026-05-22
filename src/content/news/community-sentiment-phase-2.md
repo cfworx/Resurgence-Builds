@@ -6,8 +6,6 @@ featuredImage: "/images/news/community-sentiment-pc.jpg"
 imageAlt: "A young gamer giving a thumbs up with a 180 FPS overlay playing The Division Resurgence on PC"
 description: "Community breakdown: the PC launch, 60 FPS performance, Classified Ops Pass, missing gear bugs, and the summer roadmap for Division Resurgence."
 tags: ["Community", "PC", "Phase 2", "Classified Ops Pass", "Missing Gear", "Roadmap"]
-pizzaTitle: "Reddit is a toxic wasteland"
-pizzaText: "I waded through 3,000 salty Reddit comments about the matchmaking to bring you this clean, objective summary. My sanity is currently hanging by a thread. A pizza is the only known cure for extreme internet exposure."
 shareTitle: "Spread the salt"
 shareText: "Share this to let X know that Reddit is still an irredeemable dumpster fire."
 ---

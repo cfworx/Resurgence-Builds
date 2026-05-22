@@ -11,8 +11,6 @@ description: "The top skill-DPS build in the game. You are basically committing 
 author: "RapidF5 (via RogueMadras)"
 featuredImage: "/images/division-resurgence-field-medic-chemical-trap-skill-build.webp"
 imageAlt: "Division Resurgence Tactical Pharma Chemical Trap Skill Build"
-pizzaTitle: "Hazardous Materials Fee"
-pizzaText: "Handling this much corrosive acid is terrible for my skin. Consider your donation a hazardous materials handling fee to keep this environmental terrorism going."
 shareTitle: "Spread the infection"
 shareText: "Help popularize war crimes by sharing this incredibly toxic setup."
 ---
@@ -37,9 +35,9 @@ The Chemical Trap drops 2-3 acid pools per cast. Each pool ticks 6-10 times. Eve
 
 Jackpot is the *only* gear set that rolls all three skill DPS stats on its set bonuses. Fire Cycle 2pc piles on extra Skill Crit Damage just for fun. 
 
-The **Brains Over Brawn OS** gives Engineering scaling which boosts every single skill stat you have. The **Minion Tracking** backpack refreshes +36% Skill Crit Damage for 12 seconds on every skill kill — meaning the buff is literally permanent during elite waves. 
+The **Brains Over Brawn OS (os-20)** converts your Engineering stat into bonus skill damage (24% of Engineering at base Specialized rarity, up to 48% at max upgraded High-End). The **Minion Training (bp-15)** backpack refreshes +36% Skill Critical Hit Damage for 12 seconds on every Skill Critical Hit Kill — meaning the buff is literally permanent during elite waves. 
 
-And if that wasn't enough, the **Nothing to Lose** chest takes incoming damage and converts it into skill cooldown reduction. Your Chemical Trap is up nearly 100% of the fight. 
+And if that wasn't enough, the **Nothing to Lose (ba-16)** chest has a 50% chance when taking damage to reduce the cooldowns of skills deployed within 5 seconds by 2% (stacking up to 3 times). Your Chemical Trap is up nearly 100% of the fight. 
 
 **Net Result:** A build where the skill crits ~51% of the time, multi-shots ~12% of the time, and crits hit for ~+250% damage — and the skill is ALWAYS off cooldown. Your pack clear is 3-4x faster than standard weapon DPS builds. 
 
@@ -52,20 +50,20 @@ And if that wasn't enough, the **Nothing to Lose** chest takes incoming damage a
 | Holster | Jackpot | — | Engineering | Skill Intensity | Skill Multi-Shot |
 | Kneepads | Jackpot | — | Engineering | Skill Crit Chance | Skill Multi-Shot |
 | Chest | Fire Cycle | **Nothing to Lose** | Engineering | Skill Crit Chance | Skill Radius |
-| Backpack | Fire Cycle | **Minion Tracking** | Engineering | Skill Crit Damage | Skill Multi-Shot |
+| Backpack | Fire Cycle | **Minion Training** | Engineering | Skill Crit Damage | Skill Multi-Shot |
 
 - **Primary Skill:** Chemical Trap (Environmental terrorism)
 - **Skill Chip Priority:** Intensity. Skip Radius and Duration. You want it to hurt, not last long.
-- **Supporting Chips:** Hereafter Resilience (extends the DOT — legacy: Acid Effect), Enhanced Formula (converts skill damage to a survival layer — legacy: Siphon)
-- **OS Protocol:** Brains Over Brawn (Engineering, High-End)
+- **Supporting Chips:** Siphon (smc-72, 50% chance to restore 4 Signature Ability Charge on Corrosive stack), Enhanced Formula (smc-76, Skill Crit Damage & restores 8% Missing HP on kill), Hereafter Resilience (smc-73, releases micro corrosive drones from backpack every 1.6s)
+- **OS Protocol:** Brains Over Brawn (Engineering, Specialized base / High-End upgraded)
 - **Signature:** Oxidizing Swarm (More acid, more war crimes — this is a damage build, not a healing one)
 - **Gear Mods:** 12× Engineering 
 
 ## Rotation (How to melt faces)
 
-1. **Pre-engage:** Activate Brains Over Brawn — it converts 48% of your Engineering stat into bonus skill damage. 
+1. **Pre-engage:** Activate Brains Over Brawn — it converts 24% to 48% of your Engineering stat into bonus skill damage depending on upgrade level. 
 2. Drop 2-3 Chemical Trap zones right at the entry choke. Watch them walk into it.
-3. The first kill procs Minion Tracking → +36% Skill Crit Damage for 12s. 
+3. The first Skill Critical Hit Kill procs Minion Training → +36% Skill Critical Hit Damage for 12s. 
 4. Re-deploy the acid pools the second the cooldown is up. (Nothing to Lose keeps it nearly always available). 
 5. Pop Oxidizing Swarm to blanket the field in even more corrosive acid. Stack it on top of your Chemical Trap zones for maximum environmental terrorism.
 

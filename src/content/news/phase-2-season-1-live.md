@@ -6,8 +6,6 @@ description: "Ubisoft launches Phase 2 of Season 1 with a new Classified Ops Pas
 tags: ["Season 1", "Events", "Update"]
 featuredImage: "/images/news/division-resurgence-phase-2-season-1-live-hero.webp"
 imageAlt: "A female Division agent standing in a snowy New York City street holding the Strawberry Milkshake Exotic LMG with an orange and black magma weapon skin"
-pizzaTitle: "The grind never stops"
-pizzaText: "I've been awake for 36 hours trying to figure out if the new season pass is actually worth your time. The answer is maybe, but what I definitively need right now is pizza."
 shareTitle: "Enable the grind"
 shareText: "Share this to peer pressure your friends into buying the season pass."
 ---

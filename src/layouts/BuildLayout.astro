@@ -17,15 +17,13 @@ export interface Props {
   author: string;
   featuredImage?: string;
   imageAlt?: string;
-  pizzaTitle?: string;
-  pizzaText?: string;
   shareTitle?: string;
   shareText?: string;
   faqs?: { question: string; answer: string }[];
   plannerHash?: string;
 }
 
-const { title, description, specialization, playstyle, patch, lastUpdated, pve, pvp, tags, author, featuredImage, imageAlt, pizzaTitle, pizzaText, shareTitle, shareText, headings = [], faqs = [], plannerHash } = Astro.props;
+const { title, description, specialization, playstyle, patch, lastUpdated, pve, pvp, tags, author, featuredImage, imageAlt, shareTitle, shareText, headings = [], faqs = [], plannerHash } = Astro.props;
 
 const tocItems = headings.filter(h => h.depth <= 3);
 
@@ -168,17 +166,6 @@ const redditShareUrl = `https://reddit.com/submit?url=${encodeURIComponent(Astro
           </div>
         </div>
 
-        {pizzaTitle && pizzaText && (
-          <div class="bmc-callout" style="margin: 2rem 0; padding: 1.5rem; background: var(--surface); border: 1px solid var(--accent); border-radius: 8px; text-align: center;">
-            <h3 style="margin-top: 0; margin-bottom: 0.5rem; color: var(--accent);">{pizzaTitle}</h3>
-            <p style="margin: 0 auto 1rem; font-size: 0.875rem; color: var(--ink-muted);">{pizzaText}</p>
-            <div style="display: flex; justify-content: center;">
-              <a href="https://buymeacoffee.com/resurgencebuilds" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; justify-content: center; background-color: #ff6d10; color: #000000; font-family: 'Cookie', cursive, sans-serif; font-size: 24px; text-decoration: none; padding: 5px 15px; border-radius: 5px; font-weight: bold; box-shadow: 0px 1px 2px rgba(0,0,0,0.2); transition: transform 0.2s;">
-                <span style="margin-right: 8px; font-size: 24px;">🍕</span> Buy me a pizza
-              </a>
-            </div>
-          </div>
-        )}
 
         <hr style="margin: var(--sp-6) 0; border: none; border-top: 1px solid var(--border);" />
         

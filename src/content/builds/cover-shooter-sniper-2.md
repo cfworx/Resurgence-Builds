@@ -11,8 +11,6 @@ description: "An off-meta Vanguard sniper build that deletes elites from across 
 author: "RapidF5"
 featuredImage: "/images/division-resurgence-vanguard-sniper-build.webp"
 imageAlt: "Division Resurgence Vanguard Cover Shooter Sniper Build"
-pizzaTitle: "Support my extreme cowardice"
-pizzaText: "I spent hours hiding in a corner testing the exact maximum range of this sniper just so you wouldn't have to. Funding my pizza habit ensures I never have to go outside and interact with real people."
 shareTitle: "Expose my cowardice"
 shareText: "Tweet this to let the world know you prefer hiding 50m away from danger."
 plannerHash: "s=Vanguard&n=Cover+Shooter+Sniper&ms=gs-4&cs=gs-4&ct=ba-12&ps=gs-4&pt=bp-10&gs=gs-4&hs=gs-2&ks=gs-2"
@@ -29,10 +27,10 @@ This is an off-meta Vanguard sniper setup that deletes elites from across the ma
 This build wins by stacking **Weapon Crit Damage multipliers that ONLY activate from cover**, and then making sure every single shot is a headshot crit:
 
 1. **One Shot One Kill 4pc:** Accuracy +24%, Headshot Damage +21.6%, Firepower +18%. 
-2. **Cover Shooter OS:** Crits while in cover grant +16% Weapon Crit Damage, stacking to 3 (+48% total). 
+2. **Cover Shooter OS:** Critical Hits behind cover have an 80% chance of granting +16% Weapon Critical Hit Damage for 5 seconds, up to 3 stacks (+48% total). 
 3. **Hidden Impact Backpack:** +18% Weapon Crit Chance *while in cover*. (See a theme here?)
-4. **Glass Cannon Chest:** +20% Weapon Damage, but you take +10% more Damage. This penalty literally does not matter when you never get hit because you're hiding behind a concrete planter 50m away.
-5. **DSR-1 with Killer + Long-Distance Marking:** Killer adds +20% Weapon Crit Damage for 10s on kill. Long-Distance Marking pulses targets at range, feeding your Vanguard 3pc passive. 
+4. **Glass Cannon Chest:** +20% Damage, but inflicts -10% Damage Reduction. This penalty literally does not matter when you never get hit because you're hiding behind a concrete planter 50m away.
+5. **DSR-1 with Killer + Long-Distance Marking:** Killer adds +36% Critical Hit Damage for 10 seconds on Critical Hit Kills. Long-Distance Marking grants +7.50% Skill Damage on headshots, increasing by 1.50% for every 5 meters of distance (up to 18%). 
 
 Oh, and Pulse with Vanguard 3pc adds another +25% Weapon Damage and +8% Crit Chance on the target. 
 
@@ -70,7 +68,7 @@ The DSR-1 will one-shot most non-elite reds. Elites take 2-3 shots. The whole pa
 2. Drop **Smart Cover** behind you for the 40% Damage Reduction layer (just in case they shoot back).
 3. Headshot the closest elite — Cover Shooter stack 1.
 4. Headshot the next idiot — stack 2.
-5. Stack 3 — Killer talent procs on first kill (+20% WCHD for 10s). You are now doing obscene damage. 
+5. Stack 3 — Killer talent procs on the first Critical Hit Kill (+36% Critical Hit Damage for 10s). You are now doing obscene damage. 
 6. Pop **Tactical Link** for the lock-on + crit chance window when the heavy elite shows up. 
 7. Reposition between packs to a new cover line. **NEVER LEAVE COVER DURING A FIGHT.** If you stand in the open, you will instantly dissolve into red mist.
 

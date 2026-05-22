@@ -11,8 +11,6 @@ description: "The best healer in the game for legendary PVE. You will push heal 
 author: "RapidF5"
 featuredImage: "/images/legendary-healer-field-medic.webp"
 imageAlt: "Division Resurgence Legendary Healer Field Medic Build"
-pizzaTitle: "Tip your healers"
-pizzaText: "I literally do all the work while you just point your gun and get the credit. The least you can do is buy me a slice for keeping your dumb ass alive."
 shareTitle: "Guilt trip your DPS"
 shareText: "Share this to remind your friends that they owe you their miserable lives."
 plannerHash: "s=Field+Medic&sc=Combat+Medicine&n=Legendary+Healer&ms=gs-13&m1=Skill+Intensity&m2=Skill+Duration&cs=gs-13&ct=ba-5&c1=Skill+Intensity&c2=Skill+Duration&ps=gs-14&pt=bp-2&p1=Skill+Intensity&p2=Skill+Duration&gs=gs-14&g1=Skill+Intensity&g2=Skill+Cooldown+Recovery&hs=gs-14&h1=Skill+Intensity&h2=Skill+Duration&ks=gs-14&k1=Skill+Intensity&k2=Skill+Duration&w1s=sw-12&w1tr=T2&w1t=wt-28&w2s=sw-2&w2tr=T2&w2t=wt-48&os=os-10&sm1=smc-80&sm2=smc-81&sm3=smc-82"
@@ -40,10 +38,10 @@ Three independent team-facing engines run simultaneously, every fight, with zero
 - **Medical Excellence OS:** +5% Max HP team-wide pop on every cast (above 50%), and a +12.5% Max HP burst when below 50%. 
 
 **Engine 3 — Skill Duration (The Uptime Multiplier)**
-- **Deep Focus Chest:** +28% Skill Duration.
-- **Brainstorm Backpack:** +30% Skill Duration.
+- **Deep Focus Chest (ba-5):** +28% Skill Duration, but also inflicts a -10% Skill Radius penalty (which you easily offset with mods).
+- **Brainstorm Backpack (bp-2):** +15% Skill Duration, plus an additional +15% when within 20 meters of an ally (+30% total).
 - **Captain Cow 3pc:** +14.4% Skill Duration.
-**Total:** An ~72% additive duration pushes a 44.9s Support Station past **77 seconds**. The station is bigger, lasts longer, and your team is permanently buffed inside it. 
+**Total:** An ~72.4% additive duration pushes a 44.9s Support Station past **77 seconds** when positioned near your team.
 
 ## Why it works
 
@@ -63,7 +61,7 @@ Instead, it pushes heal density so stupidly high that allies never spend time at
 | Kneepads | Healing Elites or Captain Cow | — | Toughness | Skill Intensity | Skill Duration |
 
 - **Weapon:** Any SMG or AR carrying both **Slaughter Healing** + **Medical Accuracy** (the specific gun doesn't matter, just the talents)
-- **OS Protocol:** Medical Excellence (Toughness, High-End)
+- **OS Protocol:** Medical Excellence (Toughness, Superior)
 - **Skills:** Support Station + Effective Triage mod · Healing Hive + Mutual Support mod
 - **Signature:** Healing Swarm
 - **Gear Mods:** 12× Toughness (You don't shoot, you heal)

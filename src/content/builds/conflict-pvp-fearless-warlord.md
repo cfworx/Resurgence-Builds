@@ -11,8 +11,6 @@ description: "The dominant Conflict PVP build. A setup so disgustingly strong it
 author: "RapidF5 (via Willspot)"
 featuredImage: "/images/division-resurgence-conflict-pvp-fearless-warrior-build.webp"
 imageAlt: "Division Resurgence Fearless Warrior Warlord PVP Build"
-pizzaTitle: "Sponsor my toxicity"
-pizzaText: "Going 24-0 and spawn-trapping the enemy team requires fuel. Your donation directly funds the sheer disrespect this build brings to Conflict matches."
 shareTitle: "Farm hate mail"
 shareText: "Share this to let everyone know you thrive entirely on unfiltered gamer rage."
 plannerHash: "s=Vanguard&sc=Recon&n=Conflict+Warlord&ms=gs-16&m1=Weapon+Critical+Hit+Damage&m2=Max+Health&cs=gs-15&ct=ba-7&c1=Weapon+Damage&c2=Skill+Cooldown+Recovery&ps=gs-15&pt=bp-25&p1=Max+Health&p2=Armor&gs=gs-16&g1=Weapon+Critical+Hit+Damage&g2=Skill+Cooldown+Recovery&hs=gs-16&h1=Weapon+Critical+Hit+Chance&h2=Skill+Cooldown+Recovery&ks=gs-16&k1=Weapon+Multi-Shot+Chance&k2=Max+Health&w1e=ew-2&w1t=wt-35&w2s=sw-12&w2tr=T2&w2t=wt-53&os=os-32"

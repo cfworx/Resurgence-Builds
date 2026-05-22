@@ -11,8 +11,6 @@ description: "A solo-first off-meta Bulwark build that turns you into a caffeina
 author: "RapidF5"
 featuredImage: "/images/division-resurgence-bulwark-vampire-lmg-tank-build.webp"
 imageAlt: "Division Resurgence Vampire Bulwark LMG Tank Build"
-pizzaTitle: "Bulwarks need calories too"
-pizzaText: "You think holding down the trigger and never dying is easy? It requires immense focus and a caloric surplus. Buy me a pizza so I can maintain my peak physical condition."
 shareTitle: "Spread the tank propaganda"
 shareText: "Share this so your teammates finally understand what 'taking aggro' actually means."
 plannerHash: "s=Bulwark&sc=Juggernaut&n=Vampire+Bulwark+Tank&ms=gs-16&m1=Max+Health&m2=Damage+Reduction&cs=gs-15&ct=ba-25&c1=Max+Health&c2=Damage+Reduction&ps=gs-15&pt=bp-22&p1=Max+Health&p2=Weapon+Damage&gs=gs-16&g1=Weapon+Damage&g2=Max+Health&hs=gs-16&h1=Max+Health&h2=Armor&ks=gs-16&k1=Max+Health&k2=Damage+Reduction&w1e=ew-3&w1t=wt-10&w2s=sw-12&w2tr=T2&w2t=wt-45&os=os-30&sm1=smc-20&sm2=smc-21&sm3=smc-22"
@@ -32,14 +30,14 @@ You are a mosquito. A very angry, heavily armored mosquito.
 
 Three survival engines run while you fire, creating a loop of unkillable annoyance:
 
-1. **Happy Survival OS:** Shooting converts 0.5% of your Max HP per hit into bonus weapon damage. At 300k+ HP, that's a tolerable bleed-out for a significant damage amplifier. You are essentially billing the enemies with your own blood — and the Juggernaut's Toughness-based armor mod (70% chance to heal based on Toughness every 3 seconds) keeps topping the tank back up. Who needs medkits when you have a built-in blood bank?
+1. **Happy Survival OS (os-56):** Passively restores 0.50% Max Health per second for every enemy within 10 meters (up to 2.50% max). When you shoot, it consumes 2% Health to deal additional damage equal to 0.60% of your Current Health. You bleed yourself for damage, but the massive close-range passive regen keeps you sustained.
 2. **Anarchy (Strawberry Milkshake Exotic Talent):** Applies a stacking DoT debuff to enemies you hit, scaling with weapon damage. An LMG maximizes your shots fired per minute, which is the exact stat that piles up Anarchy stacks fastest. Just apply stacks to some poor soul, walk away, and let the tick damage handle itself while you hose down the next guy.
-3. **Unflinching Chest:** Reduces stagger while tanking, so incoming fire doesn't break your sustained firing rhythm. Combined with the Juggernaut's Toughness-based armor mod healing you every 3 seconds, you become very difficult to stop mid-magazine.
+3. **Unflinching Chest (ba-25):** Taking damage has a 70% chance of restoring Health equal to 300% of your Toughness (2s cooldown). This is your primary reactive healing engine. The more they shoot you, the more you heal!
 
 Layered on top of this beautiful nonsense:
 - **Fearless Warrior 4pc:** +18% Toughness. The single number that makes your HP pool terrifying. Because why be just a tank when you can be a tank with an obscene health bar?
 - **Bulwark Watch (Rank 50 — mandatory):** Flat +36% Toughness baseline increase. Without this Watch maxed to Rank 50, the build is statistically a slow tank, not an immortal one. The community says it plainly: *"without this one the build is useless."* Go farm it. No debate.
-- **Combat Inspiration Backpack:** Buffs weapon damage to allies within 20m. You're a team player, theoretically.
+- **Combat Inspiration Backpack (bp-3):** Weapon Critical Hits grant +3.60% Max Health for 10 seconds, stacking up to 10 times (+36% Max Health total). This turns your LMG crits into a massive self-healing stack that makes you an unkillable sponge.
 - **Riot Foam Grenade Launcher:** Lock down the entire pack in sticky white foam for a free DPS window. 
 
 ## Why it works
@@ -63,7 +61,7 @@ Plus, the Anarchy DoT means you don't even need perfect aim. Just apply stacks t
 
 - **Primary:** Strawberry Milkshake (exotic LMG, Anarchy) **OR** T2 PKM with Sentinel Aura + Vibrant (if you're broke and don't have the exotic)
 - **Secondary:** Any AR for swap utility (but honestly, why put away the milkshake?)
-- **OS Protocol:** Happy Survival (Gold, Toughness) — drains 0.5% Max HP per shot into bonus weapon damage. Requires 300k+ HP to sustain. Stack Toughness accordingly.
+- **OS Protocol:** Happy Survival (Gold, Toughness, os-56) — restores up to 2.50% Max HP/s near enemies; shooting drains 2% Health to add 0.60% Current HP as damage.
 - **Watch:** Bulwark Watch — **must be Rank 50** for the flat +36% Toughness node. Non-negotiable. Without it, the HP math doesn't hold.
 - **Skills:** Ballistic Shield + Cover Advance mod · Reinforcer (Striker Hive variant) + Counter Attack mod
 - **Signature:** Riot Foam Grenade Launcher
@@ -73,8 +71,8 @@ Plus, the Anarchy DoT means you don't even need perfect aim. Just apply stacks t
 
 1. Push into the pack with your Ballistic Shield up like a very aggressive riot cop.
 2. Open with the LMG. Start building those Anarchy stacks. 
-3. Happy Survival OS converts your HP into bonus damage per shot — **DO. NOT. LET. GO. OF. THE. TRIGGER.** Your Toughness-based armor mod refills the tank every 3 seconds.
-4. Watch Unflinching keep your firing stance locked — incoming hits reduce stagger, not your momentum. Laugh as they try to kill you.
+3. Happy Survival OS drains your HP for current health-scaling damage while hosing enemies down — **DO. NOT. LET. GO. OF. THE. TRIGGER.** The close-range passive regen from the OS plus your Unflinching and Combat Inspiration stacks will keep refilling your tank.
+4. Watch Unflinching reactively restore Health equal to 300% Toughness (70% chance when hit, 2s cooldown) and Combat Inspiration build up to +36% Max Health. Laugh as they try to kill you while their bullets literally heal you.
 5. Drop your Reinforcer Hive to cover your back.
 6. Use the Riot Foam signature on elites or when you get overwhelmed. Foam them up for a free, non-consensual DPS window. 
 7. Kill one enemy and keep hosing down the next with fresh Anarchy stacks. The DoT ticks. The armor mod heals. The LMG goes brrrr.

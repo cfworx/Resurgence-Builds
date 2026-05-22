@@ -11,8 +11,6 @@ description: "An off-meta Tech Operator build that keeps an entire pack permanen
 author: "RapidF5"
 featuredImage: "/images/division-resurgence-tech-operator-striker-drone-build.webp"
 imageAlt: "Division Resurgence Tech Operator Striker Drone CC Build"
-pizzaTitle: "Compensate me for the motion sickness"
-pizzaText: "I got a migraine testing this build so you could give the AI permanent vertigo. Toss a few bucks my way to help me pay for the aspirin."
 shareTitle: "Radicalize other agents"
 shareText: "Send this to someone who hates letting the AI have a turn to play."
 ---
@@ -32,11 +30,11 @@ Two engines run simultaneously and feed each other to create a permanent stunloc
 **Engine 1 — Permanent Disorient Lockdown**
 - **EMCAT Striker Drone mod set:** Your drone's **critical hits** Disorient enemies. Disoriented targets deal 50% less damage and suffer an accuracy debuff. They are basically shooting blindfolded. 
 - **Stabilized Flight Striker Hive mod set:** Every time your Drone locks onto a target, it banks +6% Skill Crit Chance for 20 seconds — keeping the critical hit rate topped up so EMCAT never stops proccing Disorient. 
-- **Deep Focus (+28% Skill Duration)** + **Brainstorm (+30% Skill Duration)** + **Jackpot Skill Radius (+12%)**: This means your Disorient zones cover the entire encounter and last almost the full fight. They can't run, they can't hide, they can't shoot straight.
+- **Deep Focus (ba-5, +28% Skill Duration, but -10% Skill Radius)** + **Brainstorm (bp-2, +15% base and +15% within 20m of ally for +30% Skill Duration)** + **Jackpot Skill Radius (+12%)**: This means your Disorient zones cover the entire encounter and last almost the full fight. They can't run, they can't hide, they can't shoot straight.
 
 **Engine 2 — Skill DPS while everyone's stunned**
 - **Jackpot 3pc + 4pc:** +10.8% Skill Crit Chance (3pc) and +24% Skill Crit Damage (4pc) — with all 4 pieces slotted you receive both.
-- **Concerted Strike OS:** Skill hits within 20m of an ally grant +8% damage, stacking to 3 (+24%). 
+- **Concerted Strike OS (os-33):** Skill hits within 20 meters of the target grant +8% Damage for 10 seconds, up to 3 stacks (+24%). 
 - Your Drone and Hive both crit-stack on Disoriented enemies who are too busy throwing up from motion sickness to accurately fire back.
 
 ## Why it works
@@ -70,7 +68,7 @@ The two skills are independent: the Drone follows enemies around to bully them, 
 
 1. Drop the **Striker Hive** at the team's chokepoint. This is Disorient Zone 1. 
 2. Send the **Striker Drone** to the lead elite. This is Disorient Zone 2. 
-3. Stay within 20m of your teammates like a clingy ex to stack your Concerted Strike damage buff.
+3. Stay within 20m of the target (where your drone/hive are hitting) to stack your Concerted Strike damage buff.
 4. Fire on Disoriented targets. They will barely fire back because they are currently experiencing severe vertigo.
 5. Pop your **Drone Overload** signature to chain Disorient and drop a heavy skill damage burst when a pack gets stuck.
 

@@ -6,8 +6,6 @@ featuredImage: "/images/news/division-resurgence-reddit-weekly-highlights.webp"
 imageAlt: "SHD agent laughing at Reddit posts about Division Resurgence bugs while eating popcorn at his gaming setup"
 description: "The funniest Reddit posts from r/thedivisionresurgence this week. Vendor bugs, vanishing gear, and the Strawberry Milkshake design roast."
 tags: ["Community", "Reddit", "Humor", "Weekly"]
-pizzaTitle: "Hazard pay for reading Reddit"
-pizzaText: "I doom-scrolled r/thedivisionresurgence for six hours straight so you could get a curated highlight reel. My mental health is now a bug report. Pizza is the only known antidote."
 shareTitle: "Share the misery"
 shareText: "Share this so your friends know what they're getting into before they download the game."
 ---

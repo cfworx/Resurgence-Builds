@@ -11,8 +11,6 @@ description: "An off-meta Demolitionist DoT spreader using the Strawberry Milksh
 author: "RapidF5"
 featuredImage: "/images/division-resurgence-demolitionist-strawberry-reaper-build.webp"
 imageAlt: "Division Resurgence Demolitionist Strawberry Reaper Exotic LMG Build"
-pizzaTitle: "Fund the biohazard"
-pizzaText: "I spent an unreasonable number of hours watching DoT numbers tick while holding down the trigger on a gun named after a dessert. Buy me a pizza before the health department shuts down my operation."
 shareTitle: "Infect the timeline"
 shareText: "Share this to spread Anarchy stacks across the entire internet."
 ---
@@ -25,7 +23,7 @@ The meta sleeps on the Strawberry Milkshake. Nobody runs it. The Anarchy talent 
 
 This is the Strawberry Reaper — a Demolitionist build that turns the Milkshake's spreading DoT into a Firepower engine. The Artillery Turret feeds on debuffed bodies. Shaped Charge ramps your Firepower. Concerted Strike stacks +24% Damage off skill pings. Phalanx Attack 4-piece pours +18% Mag, +18% RoF, and +12% Multi-Shot into an LMG that already sprays. Glass Cannon pushes everything another 20% over the line. It is fast, loud, and built for clearing rooms while standing in cover, sipping a milkshake.
 
-### Build Overview
+**Build Overview**
 
 - **Specialization:** Demolitionist
 - **Archetype:** Skill-fed DoT spreader with Multi-Shot weapon backbone
@@ -45,15 +43,15 @@ The meta runs Sharpshooter DPS rifles — long-range, single-target, clean engag
 
 ## Weapons
 
-### Primary — Strawberry Milkshake (Exotic LMG)
+**Primary — Strawberry Milkshake (Exotic LMG)**
 
 **Talent: Anarchy.** Every hit inflicts a debuff dealing 2.40% Weapon Damage over 4.50 seconds, stacking up to 50. When a debuffed enemy dies, all stacks transfer to a nearby enemy within 12 meters.
 
 Use it as your primary in every engagement. The LMG's natural sustained fire pattern is what makes the talent work — you want the trigger held down, dumping rounds into the closest body.
 
-### Secondary — Custom 416 G3 (T2 AR)
+**Secondary — Custom 416 G3 (T2 AR)**
 
-**Talent slots:** In Sync (Shooting enemies boosts your skill damage; skill hits boost your weapon damage — permanent two-stroke engine) and Steady Reload (Reloading after emptying the magazine grants stacking weapon damage).
+**Talent slots:** In Sync (Shooting enemies boosts your skill damage; skill hits boost your weapon damage — permanent two-stroke engine) and Steady Reload (Reloading grants +18% Weapon Damage for 5 seconds, up to 5 stacks).
 
 The 416 is your swap weapon when the Milkshake is reloading. In Sync keeps your Artillery Turret fed while you're on the AR, and the separate AR ammo pool means you never run dry on LMG rounds. Swap back to the Milkshake once it's reloaded.
 
@@ -75,20 +73,20 @@ The 416 is your swap weapon when the Milkshake is reloading. In Sync keeps your 
 - **Signature:** M32A1 Grenade Launcher (Concentrated Fire 3pc)
 - **Gear Mods:** 6× Firepower (all slots)
 
-### Phalanx Attack 4-Piece Bonuses
+**Phalanx Attack 4-Piece Bonuses**
 
 - **2-piece:** Magazine Size +18%
 - **3-piece:** Rate of Fire +18%
 - **4-piece:** Multi-Shot Chance +12%
 
-### Free Slots
+**Free Slots**
 
 - **Chest:** Any brand. Glass Cannon talent (+20% Damage / −10% DR). Core Firepower, Bonus 1 Weapon CHC, Bonus 2 Weapon CHD.
 - **Backpack:** Any brand. Overwatch talent (+15% Skill Damage behind cover 3+ seconds). Core Firepower, Bonus 1 Weapon CHD, Bonus 2 Damage to Elites.
 
 ## How It Works (The Math)
 
-### Concerted Strike Damage Ramp
+**Concerted Strike Damage Ramp**
 
 | Stack | Damage Bonus |
 |---|---|
@@ -96,15 +94,15 @@ The 416 is your swap weapon when the Milkshake is reloading. In Sync keeps your 
 | 2 | +16% Damage |
 | 3 (max) | +24% Damage — sustained while the turret keeps pinging debuffed enemies |
 
-### Shaped Charge Firepower Ramp (3pc Mod)
+**Shaped Charge Firepower Ramp (3pc Mod)**
 
 Artillery Turret hits on Bleed/Vulnerable enemies grant +1.44% Firepower per hit, up to 5 stacks. At full ramp: **+7.20% Firepower**, refreshing continuously while Anarchy stacks tick on the target pool.
 
-### Glass Cannon Trade
+**Glass Cannon Trade**
 
 +20% Damage output for −10% Damage Resistance. The Anarchy spread pulls aggro toward bodies that are already dying, and the Artillery Turret eats the rest of the attention. At range with active cover use, the DR loss is a paper cut.
 
-### Total Damage Multipliers in a Typical Engagement
+**Total Damage Multipliers in a Typical Engagement**
 
 | Source | Bonus |
 |---|---|
@@ -114,7 +112,7 @@ Artillery Turret hits on Bleed/Vulnerable enemies grant +1.44% Firepower per hit
 | Phalanx Attack 4pc | +12% Multi-Shot Chance for free extra hits |
 | In Sync (during AR swap) | Bidirectional damage boost — weapon hits buff skills, skill hits buff weapon |
 
-### OS Choice: Concerted Strike vs Dominating Presence
+**OS Choice: Concerted Strike vs Dominating Presence**
 
 - **Dominating Presence OS:** +5% Weapon Multi-Shot Chance per enemy within 20m, capped at 5 = +25%. Stacks additively with Phalanx 4pc (+12%) for +37% total Multi-Shot Chance.
 - **Concerted Strike OS (recommended):** +24% Damage cap from turret pings. Multi-Shot stays at Phalanx 4pc baseline of +12%. Loses variable Multi-Shot but gains always-on Damage once the turret fires.
@@ -123,17 +121,17 @@ Artillery Turret hits on Bleed/Vulnerable enemies grant +1.44% Firepower per hit
 
 ## Skill Mod Choices
 
-### Artillery Turret — Shaped Charge (3-piece)
+**Artillery Turret — Shaped Charge (3-piece)**
 
 - **2pc:** Armor +4.7% to 9.3%
 - **3pc:** Artillery Turret hits on Bleed/Vulnerable enemies grant +1.44% Firepower for 10s, up to 5 stacks (+7.2% Firepower at cap)
 
-### Explosive Seeker Mine — Area Denial (3-piece)
+**Explosive Seeker Mine — Area Denial (3-piece)**
 
 - **2pc:** Rate of Fire +4% to 8%
 - **3pc:** ESM hits grant +8.6% ESM Radius. ESM hits also **extend Artillery Turret duration by +1.6 seconds** — the hidden gem. Every mine hit is a free turret-time extension, which means the Firepower ramp never resets in long fights.
 
-### M32A1 Signature — Concentrated Fire (3-piece)
+**M32A1 Signature — Concentrated Fire (3-piece)**
 
 - **2pc:** Max Health +4% to 8%
 - **3pc:** 5 M32A1 hits within 3 seconds grant +14.4% Skill Intensity for 15 seconds. Empty the signature into a tight cluster and the turret crits noticeably harder for the next 15 seconds.
@@ -167,7 +165,7 @@ Artillery Turret hits on Bleed/Vulnerable enemies grant +1.44% Firepower per hit
 | Strawberry Milkshake | Free reward on the Classified Ops Pass 1.2 track (Phase 2). TAM available at DZ Vendor. |
 | Phalanx Attack 4-piece | T0+ gear drops, available from first content |
 | Custom 416 G3 (T2) | T2 AR drop — world events, Dark Zone, mission rewards |
-| Concerted Strike OS | HE Engineering OS — high-difficulty mission drops |
+| Concerted Strike OS | HE Firepower OS — high-difficulty mission drops |
 | Glass Cannon chest | Recalibrate any chest to Glass Cannon |
 | Overwatch backpack | Recalibrate any backpack to Overwatch |
 | Shaped Charge skill mods | Demolitionist mod drops |

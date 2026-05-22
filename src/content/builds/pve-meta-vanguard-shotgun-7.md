@@ -11,8 +11,6 @@ description: "The premier PVE DPS build. A shotgun setup so powerful it function
 author: "RapidF5 (via Godlike)"
 featuredImage: "/images/division-resurgence-vanguard-double-barrel-shotgun-pve-build.webp"
 imageAlt: "Division Resurgence Vanguard Double Barrel Shotgun PVE Build"
-pizzaTitle: "Deleting enemies is hungry work"
-pizzaText: "Pressing the 'Delete' button on an elite's health bar burns a surprising amount of calories. Buy me a pizza to keep the Alt-F4 engine running smoothly."
 shareTitle: "Share the Alt-F4 engine"
 shareText: "Tweet this so the devs see it and nerf us into the ground next patch."
 ---
