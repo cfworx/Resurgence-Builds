@@ -1,5 +1,5 @@
 ---
-title: "Field Medic — The Tactical Farmer"
+title: "Field Medic — The Geneva Suggestion"
 specialization: "Field Medic"
 playstyle: DPS
 pve: true
@@ -9,19 +9,19 @@ patch: "Season 2"
 tags: ["tactical-pharma", "jackpot", "chemical-trap", "glass-cannon", "lady-death", "stat-stick", "aoe-farming", "field-medic-build", "best-aoe-build", "skill-damage"]
 description: "The #1 AOE clearing build in Division Resurgence. Chemical Trap + Jackpot 4pc melts rooms while your guns collect dust. Full gear, chips, and rotation."
 author: "RapidF5 (via RogueMadras)"
-featuredImage: "/images/division-resurgence-field-medic-tactical-farmer-chemical-trap-build.png"
-imageAlt: "Division Resurgence Field Medic Tactical Farmer Chemical Trap AOE Skill Build"
-pizzaTitle: "Fund the retirement plan"
-pizzaText: "I spent 17 million credits optimizing chips so I could watch acid pools do my job while I swap weapons every 8 seconds like a man with too many remotes and not enough channels. Buy me a pizza — my in-game wallet is emptier than my 401k."
-shareTitle: "Automate someone else's midlife crisis"
-shareText: "Share this build with that friend who complains about carpal tunnel. His guns don't need to work anymore. Neither do his hands."
+featuredImage: "/images/division-resurgence-field-medic-geneva-suggestion-chemical-trap-build.png"
+imageAlt: "Division Resurgence Field Medic Geneva Suggestion Tactical Pharma Chemical Trap AOE Skill Build"
+pizzaTitle: "Fund the war crimes defense fund"
+pizzaText: "I spent 17 million credits optimizing chips so I could watch acid pools dissolve people while I swap weapons every 8 seconds like a man with too many remotes and not enough channels. Buy me a pizza — my in-game wallet is emptier than my conscience."
+shareTitle: "Share a Geneva Convention violation"
+shareText: "Share this build with that friend who became a Field Medic to 'help people.' His Hippocratic Oath is about to become a Hippocratic Suggestion."
 ---
 
 ## What It Is
 
-> 🎬 **Build credit:** This build was created by [**RogueMadras**](https://www.youtube.com/@RogueMadras). Watch him run it live: [Tactical Farmer gameplay](https://www.youtube.com/watch?v=orBlCP7ro4I&t=3351s). Go subscribe. The man earned it.
+> 🎬 **Build credit:** This build was created by [**RogueMadras**](https://www.youtube.com/@RogueMadras). Watch him run it live: [Tactical Pharma gameplay](https://www.youtube.com/watch?v=orBlCP7ro4I&t=3351s). Go subscribe. The man earned it.
 
-The **best AOE clearing build in Division Resurgence right now** is a Field Medic that doesn't shoot. The Tactical Farmer uses Chemical Trap to melt entire rooms while your guns serve as stat sticks — hitting for 6,000 damage per bullet while skills push past 1,000,000+ Effective DPS.
+The **best AOE clearing build in Division Resurgence right now** is a Field Medic that doesn't shoot. The Geneva Suggestion uses Chemical Trap to melt entire rooms while your guns serve as stat sticks — hitting for 6,000 damage per bullet while skills push past 1,000,000+ Effective DPS. The name? Because this build treats the Geneva Convention as more of a Geneva *Suggestion*.
 
 This is the final form of the Tactical Pharma archetype. Your weapons are decorative. Your Chemical Trap is a war crime. You exist to swap weapons every 8 seconds and occasionally pop a medkit. If you've played our [Jackpot Chemical build](/builds/skill-meta-jackpot-chemical-8), this is its evolution — same skeleton, different organs, ten times the body count.
 
@@ -36,7 +36,7 @@ This is not a shooter build. This is a **spreadsheet build.** The gun exists to 
 
 ## Why This Build Exists (The Paradigm Shift)
 
-The meta used to be "Drones Offensive" — Tech Op drone builds tunneling crit stats through Jackpot. That's yesterday's news. The Tactical Farmer represents a **fundamental change in combat philosophy**: the total prioritization of automated skill damage over ballistic engagement.
+The meta used to be "Drones Offensive" — Tech Op drone builds tunneling crit stats through Jackpot. That's yesterday's news. The Geneva Suggestion represents a **fundamental change in combat philosophy**: the total prioritization of automated skill damage over ballistic engagement.
 
 In this build:
 - **Weapon DPS is a rounding error.** Your gun hits for ~6,000 once stacks are consumed. That's a rounding error on a rounding error.
@@ -47,7 +47,7 @@ The trade-off is real: by going full Glass Cannon with zero Toughness investment
 
 ## The Statistical Engine
 
-The Tactical Farmer runs on a precise convergence of Engineering and Skill stats. Every piece of gear, every chip, every weapon swap exists to push these numbers past their damage ceilings.
+The Geneva Suggestion runs on a precise convergence of Engineering and Skill stats. Every piece of gear, every chip, every weapon swap exists to push these numbers past their damage ceilings.
 
 | Stat Attribute | Optimal Target | Why You Care |
 |---|---|---|
@@ -78,9 +78,8 @@ The Warlord is the second half of the stat-stick equation. Fire → soak damage 
 The core mechanical rhythm of the build is weapon-swapping every 8 seconds to refresh the **Backup Battery** perk and cycle Lady Death / Warlord buffs:
 
 1. Fire Lady Death → build Breathe Free stacks while moving
-2. Swap to Warlord at 8s → fire into enemies → build Viral Intent stacks
-3. Take cover → Warlord converts 50% of stacks to Skill Damage
-4. Swap back to Lady Death → cycle restarts
+2. Swap to Warlord at 8s → fire into enemies → cease fire → Play Rough grants +10% Skill Damage
+3. Swap back to Lady Death → cycle restarts
 
 Failure to maintain the 8-second cycle drops you from "Effective DPS" (1M+) to "Paper DPS" (~200k). **Set a mental metronome or kiss your farm speed goodbye.**
 
@@ -221,19 +220,19 @@ If you want to PvP, run the [Fearless Warlord](/builds/conflict-pvp-fearless-war
 4. **17 million credits for chips.** That's the real endgame boss. Budget accordingly.
 5. **Do NOT take this into the Dark Zone alone.** You are made of glass, prayers, and Engineering stats. One Bulwark will send you back to the safehouse with nothing but regret and a broken stash tab.
 
-Stack the acid. Swap the guns. Watch the numbers. Welcome to your automated midlife crisis.
+Stack the acid. Swap the guns. Watch the numbers. Welcome to your Geneva Suggestion.
 
 ## Frequently Asked Questions
 
 ### What is the best AOE build in Division Resurgence?
 
-The Tactical Farmer (Field Medic / Tactical Pharma) currently holds the **Rank 1 AOE clearing position** in PvE. It uses Jackpot 4pc + Fire Cycle 2pc with Chemical Trap to achieve 1,000,000+ Effective DPS in sustained AOE scenarios. The build requires Lady Death and Warlord exotic weapons as stat sticks, with zero reliance on weapon damage. Tested in Season 2 patch, May 2026.
+The Geneva Suggestion (Field Medic / Tactical Pharma) currently holds the **Rank 1 AOE clearing position** in PvE. It uses Jackpot 4pc + Fire Cycle 2pc with Chemical Trap to achieve 1,000,000+ Effective DPS in sustained AOE scenarios. The build requires Lady Death and Warlord exotic weapons as stat sticks, with zero reliance on weapon damage. Tested in Season 2 patch, May 2026.
 
-### Is the Tactical Farmer build good for PvP or Dark Zone?
+### Is the Geneva Suggestion build good for PvP or Dark Zone?
 
 **No.** This build runs Glass Cannon (+20% Damage / −10% DR) with zero Toughness investment. In solo Dark Zone encounters, optimized Bulwark and Vanguard builds will one-tap you. This is a dedicated PvE farming build. For Dark Zone, use a [Lady Death PvP build](/builds/dark-zone-pvp-lady-death-4) or [Fearless Warlord](/builds/conflict-pvp-fearless-warlord-3) instead.
 
-### How much does it cost to fully optimize the Tactical Farmer chips?
+### How much does it cost to fully optimize the Geneva Suggestion chips?
 
 Approximately **17 million credits**. Each gold chip costs roughly 900,000 credits to max out. The build requires maxed Enhanced Formula (smc-72), Hereafter Resilience (smc-73), and Chemical Recharge (smc-88) chip sets for Chemical Trap, plus Harvest (smc-78) for Oxidizing Swarm. Budget for at least 3-4 weeks of daily credit farming.
 
@@ -251,4 +250,4 @@ Three Field Medic chips were renamed: **Siphon → Enhanced Formula** (smc-72), 
 
 ## Changelog
 
-- **v1.0** (May 22, 2026): Initial build — adapted from RogueMadras's Tactical Farmer configuration for Season 2 patch. All stats verified against data files (patch S2, May 2026).
+- **v1.0** (May 22, 2026): Initial build — adapted from RogueMadras's Tactical Pharma configuration for Season 2 patch. All stats verified against data files (patch S2, May 2026).

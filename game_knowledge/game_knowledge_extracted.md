@@ -4071,15 +4071,17 @@ Bulwark Vampire Survival Tank
 
 Ballistic Shield \+ Hive · Riot Foam signature · Cover Advance \+ Counter Attack 3pc mods · Unflinching chest · Combat Inspiration backpack · Happy Survival OS \(vampire\) · Fearless Warrior 4pc → Self\-Propelled Shield bridge · Strawberry Milkshake exotic LMG \(Anarchy contagion DoT\) or PKM bridge
 
+__geneva_suggestion_field_medic_12.md__
+
+The Geneva Suggestion (Field Medic / Tactical Pharma)
+
+Chemical Trap + Oxidizing Swarm · Brains Over Brawn OS · Jackpot 4pc + Fire Cycle 2pc · Glass Cannon chest · Prime Engineer backpack · Lady Death (exotic SMG) + Warlord (exotic AR) as stat sticks · Enhanced Formula + Hereafter Resilience + Chemical Recharge chips · 8-second weapon swap cycle for buff maintenance · Rank 1 AOE clearing build. Weapons do ~6k damage; skills do 1M+ Effective DPS. Glass cannon — do NOT take into solo DZ.
+
 • __Warlord acquisition tip \(Phase 2\+\): __Warlord exotic AR is now available at the Dark Zone Vendor\. CRITICAL: switch to Vanguard or your intended Firepower spec BEFORE buying so the rolls land on Firepower, not Engineering\. If you buy while in an Engineering spec, you get Engineering\-rolled Warlord\. This cannot be recalibrated away\.
 
 • __Strawberry Milkshake recalibration farming: __Weekly Mission Exotic Manual/Booklet drops now correctly award SM recalibration material \(fixed in 1\.2\.1\)\. Farm these now and stockpile\. When the buff lands, you want to be ready to recalibrate immediately\.
 
 • __DZ economy note \(Phase 2\): __Skill mod dismantle DZ Credits buffed \(Blue 10\->15, Purple 50\->75, Yellow 450\->750\)\. TAM dismantle now gives Encrypted Data instead of Clan Credits\. Both are significant long\-term economy improvements for regular DZ grinders\.
-
-__tactical\-farmer\-field\-medic\-12\.md__
-
-Tactical Farmer \(Field Medic / Tactical Pharma\) — by RogueMadras
 
 Chemical Trap \+ Oxidizing Swarm · Brains Over Brawn OS · Jackpot 4pc \+ Fire Cycle 2pc · Glass Cannon chest · Prime Engineer backpack · Lady Death \(exotic SMG\) \+ Warlord \(exotic AR\) as stat sticks · Enhanced Formula \+ Hereafter Resilience \+ Chemical Recharge chips · 8\-second weapon swap cycle for buff maintenance · Rank 1 AOE clearing build\. Weapons do \~6k damage; skills do 1M\+ Effective DPS\. Glass cannon — do NOT take into solo DZ\.
 
