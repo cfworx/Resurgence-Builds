@@ -5,8 +5,6 @@ lastUpdated: 2026-05-23
 tags: ["starter", "beginner", "best-builds", "pve"]
 description: "Just hit endgame and don't have exotics yet? These are the best starter builds in The Division Resurgence that don't require hundreds of hours of grinding."
 author: "RapidF5"
-featuredImage: "/images/division-resurgence-best-starter-builds.jpg"
-imageAlt: "A squad of beginner Division agents fighting in snowy urban combat with basic high-end gear and starter weapons."
 faqs:
   - question: "Can I take these starter builds into Legendary missions?"
     answer: "You can, but you'll probably spend a lot of time kissing the pavement. Use these builds to farm the gear you need for the actual endgame meta builds."

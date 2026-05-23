@@ -2,8 +2,8 @@
 title: "Reddit This Week — 10 Posts That Defined Our Suffering"
 publishDate: "2026-05-18"
 author: "RapidF5"
-featuredImage: "/images/division-resurgence-steampunk-agent-style.png"
-imageAlt: "A heavily modified, steampunk-styled Division agent holding a sign that says Agents Do It With Style."
+featuredImage: "/images/news/division-resurgence-reddit-weekly-highlights.webp"
+imageAlt: "SHD agent laughing at Reddit posts about Division Resurgence bugs while eating popcorn at his gaming setup"
 description: "The funniest Reddit posts from r/thedivisionresurgence this week. Vendor bugs, vanishing gear, and the Strawberry Milkshake design roast."
 tags: ["Community", "Reddit", "Humor", "Weekly"]
 shareTitle: "Share the misery"

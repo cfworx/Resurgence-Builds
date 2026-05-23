@@ -5,8 +5,6 @@ lastUpdated: 2026-05-23
 tags: ["pve", "dps", "tier-list", "best-builds"]
 description: "Stop bringing wet noodles to Legendary missions. These are the absolute best PvE DPS builds in The Division Resurgence right now."
 author: "RapidF5"
-featuredImage: "/images/division-resurgence-best-pve-dps-builds.jpg"
-imageAlt: "A highly optimized cyborg agent with Division Resurgence weapon attachments and DPS stats overlays showing min-maxed PVE damage."
 faqs:
   - question: "Which of these is the absolute best for soloing Legendary content?"
     answer: "The Alt-F4 Shotgun Vanguard. You delete everything before they can shoot back. But if you hate reloading, the Bulwark Vampire Tank never dies."
