@@ -73,6 +73,7 @@
           tEl2.value = '';
         }
         showWeaponDetail(n);
+        enforceExoticRestriction(n);
         update();
       });
 
@@ -163,7 +164,7 @@
       const opt = document.createElement('option');
       opt.value = p.id;
       const recTag = (recCat && p.specialization === recCat) ? ' ★' : '';
-      opt.textContent = `[${p.rarity}] ${p.name}${recTag}`;
+      opt.textContent = `${p.name}${recTag}`;
       opt.style.color = catColors[cat] || 'inherit';
       groups[cat].appendChild(opt);
     });
@@ -268,6 +269,19 @@
         `</div>`;
       el.classList.add('is-visible');
     }
+  }
+
+  function enforceExoticRestriction() {
+    [1, 2].forEach(n => {
+      const otherN = n === 1 ? 2 : 1;
+      const otherHasExotic = state[`weapon${otherN}`].id && state[`weapon${otherN}`].id.startsWith('ex-');
+      const sel = document.getElementById(`weapon-w${n}`);
+      Array.from(sel.options).forEach(opt => {
+        if (opt.value && opt.value.startsWith('ex-')) {
+          opt.disabled = otherHasExotic;
+        }
+      });
+    });
   }
 
   function showOSDetail(){
@@ -437,7 +451,7 @@
 
     // Gear Talents group
     if (bodyT || bpT) {
-      talentHTML += `<div class="summary-loadout-group">`;
+      talentHTML += `<div class="summary-loadout-group summary-loadout-group--gear">`;
       talentHTML += `<div class="summary-loadout-label">Gear Talents</div>`;
       if (bodyT) talentHTML += `<div class="summary-loadout-value">Body: ${bodyT.name}</div>`;
       if (bpT) talentHTML += `<div class="summary-loadout-value">Pack: ${bpT.name}</div>`;
@@ -774,6 +788,7 @@
       selectTemplate.value = matchedValue;
     }
 
+    enforceExoticRestriction();
     update();
   }
 
@@ -819,6 +834,7 @@
     document.getElementById('badge-os').className = 'slot-card__badge';
     
     history.replaceState(null, '', location.pathname);
+    enforceExoticRestriction();
     update();
   }
 

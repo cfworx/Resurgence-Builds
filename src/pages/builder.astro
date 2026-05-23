@@ -691,6 +691,7 @@ const dataPayload = JSON.stringify({ gearSets, weaponTalents, exoticWeapons, sta
   cursor: pointer;
   transition: all 200ms ease;
   appearance: none;
+  color-scheme: dark;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%239A9A9E' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: right 8px center;
@@ -701,8 +702,10 @@ const dataPayload = JSON.stringify({ gearSets, weaponTalents, exoticWeapons, sta
   box-shadow: 0 0 0 1px rgba(245,166,35,0.3), 0 0 8px rgba(245,166,35,0.1);
 }
 .slot-select--sm { font-size: 10px; min-height: 32px; padding: 2px var(--sp-2) }
-.slot-select option { background: #1a1a20 }
-.slot-select optgroup { background: #141418; font-style: normal; padding: 4px 0 }
+.slot-select option { background: #1e1e24; color: #e0e0e0 }
+.slot-select optgroup { background: #16161c; color: #9a9a9e; font-style: normal; padding: 4px 0; font-weight: 700 }
+.slot-select option:checked { background: #2a2a34 }
+.slot-select option:disabled { color: #555; }
 
 /* --- Weapon Detail Pane --- */
 .weapon-detail {
@@ -1023,26 +1026,29 @@ const dataPayload = JSON.stringify({ gearSets, weaponTalents, exoticWeapons, sta
   gap: 6px;
 }
 .summary-section__icon { font-size: 13px }
-.summary-section__body { display: flex; flex-direction: column; gap: 6px }
+.summary-section__body { display: flex; flex-direction: column; gap: 8px }
 
 /* Loadout items */
 .summary-loadout-group {
-  padding: 8px 10px;
-  background: rgba(0,0,0,0.2);
-  border-radius: 5px;
+  padding: 10px 12px;
+  background: rgba(255,255,255,0.03);
+  border-radius: 6px;
+  border: 1px solid rgba(255,255,255,0.06);
   border-left: 3px solid var(--panel-border);
 }
-.summary-loadout-group--spec { border-left-color: var(--accent) }
-.summary-loadout-group--weapon { border-left-color: #f97316 }
-.summary-loadout-group--os { border-left-color: #3b82f6 }
-.summary-loadout-group--chipset { border-left-color: #a855f7 }
+.summary-loadout-group--spec { border-left-color: var(--accent); background: rgba(242,104,34,0.04) }
+.summary-loadout-group--weapon { border-left-color: #f97316; background: rgba(249,115,22,0.04) }
+.summary-loadout-group--os { border-left-color: #3b82f6; background: rgba(59,130,246,0.04) }
+.summary-loadout-group--chipset { border-left-color: #a855f7; background: rgba(168,85,247,0.04) }
+.summary-loadout-group--gear { border-left-color: #22c55e; background: rgba(34,197,94,0.04) }
 .summary-loadout-label {
   font-family: var(--font-mono);
   font-size: 9px;
   text-transform: uppercase;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.08em;
   color: var(--ink-muted);
-  margin-bottom: 3px;
+  margin-bottom: 4px;
+  opacity: 0.7;
 }
 .summary-loadout-value {
   font-family: var(--font-heading);
@@ -1054,7 +1060,9 @@ const dataPayload = JSON.stringify({ gearSets, weaponTalents, exoticWeapons, sta
 .summary-loadout-sub {
   font-size: 11px;
   color: var(--ink-muted);
-  margin-top: 2px;
+  margin-top: 3px;
+  padding-top: 3px;
+  border-top: 1px solid rgba(255,255,255,0.04);
 }
 
 /* Set bonus items */
