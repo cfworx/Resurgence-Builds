@@ -61,7 +61,7 @@ Plus, the Anarchy DoT means you don't even need perfect aim. Just apply stacks t
 
 - **Primary:** Strawberry Milkshake (exotic LMG, Anarchy) **OR** T2 PKM with Sentinel Aura + Vibrant (if you're broke and don't have the exotic)
 - **Secondary:** Any AR for swap utility (but honestly, why put away the milkshake?)
-- **OS Protocol:** Happy Survival (Gold, Toughness, os-56) — restores up to 2.50% Max HP/s near enemies; shooting drains 2% Health to add 0.60% Current HP as damage.
+- **OS Protocol:** Happy Survival (Gold, Toughness) — restores up to 2.50% Max HP/s near enemies; shooting drains 2% Health to add 0.60% Current HP as damage.
 - **Watch:** Bulwark Watch — **must be Rank 50** for the flat +36% Toughness node. Non-negotiable. Without it, the HP math doesn't hold.
 - **Skills:** Ballistic Shield + Cover Advance mod · Reinforcer (Striker Hive variant) + Counter Attack mod
 - **Signature:** Riot Foam Grenade Launcher

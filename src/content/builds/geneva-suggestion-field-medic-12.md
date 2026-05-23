@@ -15,17 +15,17 @@ shareTitle: "Share a Geneva Convention violation"
 shareText: "Share this build with that friend who became a Field Medic to 'help people.' His Hippocratic Oath is about to become a Hippocratic Suggestion."
 faqs:
   - question: "What is the best AOE build in Division Resurgence?"
-    answer: "The Geneva Suggestion (Field Medic / Tactical Pharma) is the top AOE clearing build in PvE. It uses Jackpot 4pc + Fire Cycle 2pc with Chemical Trap for massive sustained AOE damage. Both weapons roll BOTH Backup Battery II and Fully Charged as stat sticks — no exotics required. Tested in Season 2 patch, May 2026."
+    answer: "The Geneva Suggestion, obviously. If you're a Field Medic / Tactical Pharma looking to commit industrial-scale AOE clearing in PvE without having to rely on your declining hand-eye coordination, this is it. It uses Jackpot 4pc + Fire Cycle 2pc with Chemical Trap to melt entire rooms while your guns sit there looking pretty. Both weapons roll BOTH Backup Battery II and Fully Charged as stat sticks. No exotics required. Go melt some faces, you beautiful grandfather."
   - question: "Does the Geneva Suggestion build work in PvP?"
-    answer: "Yes. Glass Cannon makes you extremely squishy, but the Chemical Trap damage output is devastating against agents too. Drop acid pools on capture points, chokepoints, and extraction zones. Position smartly from cover, letting the damage do the talking."
+    answer: "Yes, if you have the brain capacity to not stand in the open. Because of Glass Cannon, you have the structural integrity of wet toilet paper under a garden hose. If an enemy agent so much as sneezes near you, you're dead. But if you hide behind cover like a tactical coward and drop acid pools on capture points, chokepoints, and extraction zones, they will dissolve into neon green goo before they even see you. High risk, hilarious reward."
   - question: "How much does it cost to fully optimize the Geneva Suggestion chips?"
-    answer: "Approximately 17 million credits. Each gold chip costs roughly 900,000 credits to max out. The build requires maxing your 3 equipped firmware chipsets: Enhanced Formula, Hereafter Resilience, and Chemical Recharge."
+    answer: "A cool 17 million credits. Yes, really. At roughly 900,000 credits to max out a single gold chip, your virtual wallet is going to look like a post-divorce bank account. You'll need to max out your 9 chipset firmwares across your 3 active skills (specifically Enhanced Formula, Hereafter Resilience, and Chemical Recharge). Get ready to grind credits like you're trying to pay off a second mortgage."
   - question: "What is the 8-second weapon swap cycle?"
-    answer: "Both weapons run BOTH Backup Battery II (+31.50% Engineering on swap) and Fully Charged (+22.50% total on empty reloads). You swap weapons every 8 seconds and reload empty magazines to keep both buffs active simultaneously, peaking at +54.00% Engineering!"
+    answer: "It's your new chore. Since both weapons run BOTH Backup Battery II (+31.50% Engineering on swap) and Fully Charged (+22.50% total on empty reloads), you have to swap guns every 8 seconds and empty mags like you're trying to win a speed-reloading competition. Miss a swap, and your Engineering stats collapse like your knees on a rainy day. Sticking to the swap metronome keeps both buffs active, peaking at +54.00% Engineering."
   - question: "Do I need exotic weapons for the Geneva Suggestion build?"
-    answer: "No. This is one of the most accessible endgame builds because it requires zero exotic weapons. Any T2 SMG (Vector 45 ACP recommended) as primary and any T2 AR or LMG as secondary, both rolled with Backup Battery II + Fully Charged."
+    answer: "No, thank god. You don't have to suffer through the Dark Zone RNG nightmare to build this. You just need a standard T2 SMG (like the Vector 45 ACP) in your primary slot, and any T2 AR or LMG in your secondary, rolled with Backup Battery II + Fully Charged. Save your exotic weapons for another build where you actually have to aim."
   - question: "What changed with the chip names in the current patch?"
-    answer: "Three Field Medic chips were renamed: Feebleness is now Enhanced Formula, Acidic Effect is now Hereafter Resilience, and a new chip Chemical Recharge (legacy Freebies) was added. Functionality is unchanged — only the display names were updated."
+    answer: "The devs decided to play musical chairs with the names to confuse you. Feebleness got renamed to Enhanced Formula, Acidic Effect became Hereafter Resilience, and a new chip called Chemical Recharge (which we used to call Freebies) was added. The stats are still the same, but now they sound more like premium dietary supplements. Don't worry, they still dissolve people perfectly."
 ---
 
 ## What It Is
@@ -81,11 +81,16 @@ The Vector is the preferred primary weapon. It has a blazing 1200 RPM and a 25-r
 
 > 💡 **Any SMG will work.** The Vector is preferred for its high fire rate and fast swap speed. If you don't have a Vector, use whatever T2 SMG you have, provided you recalibrate it to roll both talents.
 
-**Secondary — Any T2 AR or LMG + Backup Battery II & Fully Charged**
+**Secondary Options**
 
-Your secondary weapon should be a high-capacity AR or LMG rolled with the same talent pairing. 
-- Having **Backup Battery II** on both weapons ensures that whenever you swap back and forth to keep your combat loop active, you immediately refresh the **+31.50% Engineering** swap buff with perfect **100% uptime**.
-- Having **Fully Charged** on both weapons allows you to empty magazines on your secondary during longer firefights to keep the extra **+22.50% Engineering** active, keeping your overall power peak at **+54.00%**!
+You have two excellent choices for your secondary weapon slot:
+
+**Option A (RogueMadras’ Meta Choice — Dual Backup Battery): Any T2 AR or LMG + Backup Battery II**
+Run Backup Battery II on both weapons. This gives you a seamless, zero-effort 100% uptime on the massive Engineering buff. Whenever you swap weapons to keep your loop active, Backup Battery II triggers immediately. No need to manage empty magazines or timing stacks.
+
+**Option B (The High-Peak Hybrid — Fully Charged): Any T2 AR or LMG + Fully Charged**
+Talent: Fully Charged. Reloading an empty magazine grants +7.50% Engineering for 12 seconds, up to 3 stacks (+22.50% total).
+This option allows you to stack both the swap buff and the reload buff for an even higher stat peak, though it requires much more active micromanagement.
 
 **The Dual-Talent 8-Second Swap & Reload Cycle**
 
@@ -134,7 +139,7 @@ The mechanical rhythm to maximize your Engineering looks like this:
 
 **Chip Naming & Mechanical Truths (Current Patch)**
 
-In *The Division Resurgence*, you are strictly capped at equipping a maximum of **3 active firmware chipsets total** in a single build. This hard ceiling means you must be extremely selective. For this endgame Tactical Pharma setup, your slots are dedicated entirely to the three most powerful Field Medic sets:
+The current patch (v1.2.1) has corrected the chip names. For this endgame Tactical Pharma setup, your active abilities run these three core Field Medic sets:
 
 | Current Name | Mechanics | Why It Matters |
 |---|---|---|
@@ -142,7 +147,7 @@ In *The Division Resurgence*, you are strictly capped at equipping a maximum of 
 | **Hereafter Resilience** | Departs 25% current HP to grant +35% Max HP extra health & +5% Armor for 20s. Releases micro corrosive drones every 1.6s when attached to backpack. | The backpack micro-drones apply automatic corrosion ticks, keeping enemies constantly debuffed. |
 | **Chemical Recharge** | Killing an enemy affected by Chemical Trap reduces second ability's cooldown by 4.80s. | Uptime driver for your secondary skill (Oxidizing Swarm). |
 
-*Note: Siphon and Harvest are completely excluded because running them would violate the 3 firmware chipsets cap.*
+*Note: Siphon and Harvest are legacy options not featured in the meta loop.*
 
 **Recommended Chip Loadout**
 
