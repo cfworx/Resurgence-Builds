@@ -1,0 +1,152 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import BuildCard from '../../components/BuildCard.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import SectionTag from '../../components/SectionTag.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const allBuilds = await getCollection('builds');
+
+  const classes = [
+    {
+      id: 'vanguard',
+      name: 'Vanguard',
+      role: 'DPS / Flanker',
+      description: 'The Vanguard thrives in the chaos of close-quarters combat. Specializing in high burst damage, unmatched mobility, and tactical awareness, this class is designed for aggressive pushes and punishing out-of-position enemies.',
+      signature: {
+        name: 'Assault Charge',
+        description: 'Grants a massive temporary boost to movement speed, firepower, and rate of fire. Perfect for closing gaps in PvP or deleting Elite targets in PvE before they can react.'
+      },
+      perkOverview: 'Vanguard talent trees focus heavily on amplifying damage while moving, granting damage reduction while sprinting, and providing wall-hack utility through specialized Pulse variants.'
+    },
+    {
+      id: 'field-medic',
+      name: 'Field Medic',
+      role: 'Support / Healer',
+      description: 'The backbone of any successful Legendary mission or Dark Zone squad. The Field Medic keeps the team alive through area-of-effect healing, armor repair, and powerful team-wide buffs.',
+      signature: {
+        name: 'Restorative Nanobots',
+        description: 'Deploys a swarm of nanobots that automatically seek out injured allies, rapidly repairing armor and granting temporary hazard protection.'
+      },
+      perkOverview: 'Talents focus on reducing skill cooldowns, increasing outgoing healing, and triggering automated defensive protocols when team members drop to critical health thresholds.'
+    },
+    {
+      id: 'demolitionist',
+      name: 'Demolitionist',
+      role: 'AoE DPS / Crowd Control',
+      description: 'Subtlety is not in the Demolitionist\'s vocabulary. This class excels at area denial, stripping enemy armor, and dealing massive burst damage to clustered groups using explosives and heavy weaponry.',
+      signature: {
+        name: 'Artillery Turret',
+        description: 'Deploys a stationary turret that lobs high-explosive shells at targeted locations, dealing devastating area-of-effect damage and inflicting Bleed.'
+      },
+      perkOverview: 'The talent tree heavily buffs explosive damage, provides immunity to explosions, and rewards multikills with increased weapon damage and signature ability generation.'
+    },
+    {
+      id: 'tech-operator',
+      name: 'Tech Operator',
+      role: 'Utility / Skill DPS',
+      description: 'The Tech Operator dominates the battlefield through deployed proxies and gadgetry. Whether blinding enemies with status effects or letting drones do the heavy lifting, this class relies on technology over brute force.',
+      signature: {
+        name: 'EMP Grenade',
+        description: 'Disrupts enemy electronics, destroys hostile deployed skills, and applies a disorient effect to organic targets caught in the blast radius.'
+      },
+      perkOverview: 'Focuses on increasing skill duration, boosting skill damage, and amplifying weapon damage against targets currently suffering from status effects.'
+    },
+    {
+      id: 'bulwark',
+      name: 'Bulwark',
+      role: 'Tank / Frontline',
+      description: 'The immovable object. The Bulwark is designed to draw enemy fire, absorb incoming damage, and anchor the team\'s position. If you want to survive the deadliest encounters in Resurgence, bring a shield.',
+      signature: {
+        name: 'Defensive Fortification',
+        description: 'Grants extreme damage mitigation to the user and nearby allies, temporarily overcharging armor and reducing all incoming status effect durations.'
+      },
+      perkOverview: 'Talents revolve around armor regeneration, threat generation (aggro management), and increasing weapon damage based on the amount of damage currently being mitigated.'
+    }
+  ];
+
+  return classes.map(c => {
+    // Filter builds for this specific class
+    const classBuilds = allBuilds
+      .filter(build => build.data.specialization === c.name)
+      .sort((a, b) => b.data.lastUpdated.getTime() - a.data.lastUpdated.getTime());
+
+    return {
+      params: { spec: c.id },
+      props: { classData: c, builds: classBuilds }
+    };
+  });
+}
+
+const { classData, builds } = Astro.props;
+
+const breadcrumbItems = [
+  { name: 'Classes', url: '#' },
+  { name: classData.name, url: `/class/${classData.id}/` }
+];
+
+const title = `Best ${classData.name} Builds - The Division Resurgence`;
+const description = `Discover the top ${classData.name} builds for PvE and PvP in The Division Resurgence. Master the ${classData.signature.name} signature skill and optimize your loadout.`;
+---
+
+<BaseLayout title={title} description={description} breadcrumbs={breadcrumbItems}>
+  <div class="container section">
+    <Breadcrumbs items={breadcrumbItems} />
+    <SectionTag label="Class Hub" />
+    
+    <div style="margin-bottom: var(--sp-8); padding-bottom: var(--sp-6); border-bottom: 1px solid var(--border);">
+      <div style="display: flex; align-items: baseline; gap: var(--sp-3); margin-bottom: var(--sp-2);">
+        <h1 class="heading-accent" style="margin: 0;">{classData.name}</h1>
+        <span class="tag tag--accent">{classData.role}</span>
+      </div>
+      
+      <p style="font-size: var(--text-lg); color: var(--ink-muted); max-width: 800px; margin-bottom: var(--sp-6); line-height: 1.6;">
+        {classData.description}
+      </p>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--sp-4);">
+        <div style="background: rgba(0,0,0,0.2); padding: var(--sp-4); border: 1px solid var(--border); border-radius: var(--border-radius);">
+          <h3 style="color: var(--accent); margin-bottom: var(--sp-2); font-size: var(--text-sm); text-transform: uppercase; letter-spacing: 0.05em;">Signature Skill: {classData.signature.name}</h3>
+          <p style="color: var(--ink-muted); font-size: var(--text-sm); margin: 0;">
+            {classData.signature.description}
+          </p>
+        </div>
+        <div style="background: rgba(0,0,0,0.2); padding: var(--sp-4); border: 1px solid var(--border); border-radius: var(--border-radius);">
+          <h3 style="color: var(--accent); margin-bottom: var(--sp-2); font-size: var(--text-sm); text-transform: uppercase; letter-spacing: 0.05em;">Talent Overview</h3>
+          <p style="color: var(--ink-muted); font-size: var(--text-sm); margin: 0;">
+            {classData.perkOverview}
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="heading-accent" style="font-size: var(--text-xl); margin-bottom: var(--sp-4);">Top {classData.name} Builds</h2>
+    
+    {builds.length > 0 ? (
+      <div class="grid grid--3">
+        {builds.map((build) => (
+          <div style="display: flex; height: 100%;">
+            <BuildCard
+              title={build.data.title}
+              href={`/builds/${build.id}/`}
+              specialization={build.data.specialization}
+              playstyle={build.data.playstyle}
+              description={build.data.description}
+              patch={build.data.patch}
+              pve={build.data.pve}
+              pvp={build.data.pvp}
+              tags={build.data.tags}
+              featuredImage={build.data.featuredImage}
+              imageAlt={build.data.imageAlt}
+            />
+          </div>
+        ))}
+      </div>
+    ) : (
+      <div style="text-align: center; padding: var(--sp-8) 0; background: rgba(0,0,0,0.1); border-radius: var(--border-radius); border: 1px dashed var(--border);">
+        <p style="color: var(--ink-muted);">No builds have been published for this class yet. Check back soon!</p>
+      </div>
+    )}
+  </div>
+</BaseLayout>

@@ -1,0 +1,279 @@
+---
+---
+
+<dialog id="search-modal" class="search-modal" aria-labelledby="search-modal-title">
+  <div class="search-modal__backdrop" id="search-backdrop"></div>
+  <div class="search-modal__content">
+    <div class="search-modal__header">
+      <div class="search-input-wrapper">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="search-icon">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input type="text" id="search-input" class="search-input" placeholder="Search builds, guides, news..." autocomplete="off" spellcheck="false" />
+      </div>
+      <button class="search-modal__close" id="search-close" aria-label="Close search">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+    <div class="search-modal__body">
+      <div id="search-results" class="search-results">
+        <div class="search-empty-state">Type to start searching...</div>
+      </div>
+    </div>
+  </div>
+</dialog>
+
+<style>
+  .search-modal {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    border: none;
+    z-index: 100;
+    display: none;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  
+  .search-modal[open] {
+    display: flex;
+  }
+
+  .search-modal__backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(4px);
+  }
+
+  .search-modal__content {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--border-radius);
+    margin-top: 10vh;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+    overflow: hidden;
+    animation: slideDown 0.2s ease-out;
+  }
+
+  @keyframes slideDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .search-modal__header {
+    display: flex;
+    align-items: center;
+    padding: var(--sp-2) var(--sp-3);
+    border-bottom: 1px solid var(--border);
+    background: rgba(0,0,0,0.2);
+  }
+
+  .search-input-wrapper {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: var(--sp-2);
+  }
+
+  .search-icon {
+    color: var(--ink-muted);
+  }
+
+  .search-input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    color: var(--ink);
+    font-size: var(--text-lg);
+    padding: var(--sp-2) 0;
+    outline: none;
+  }
+
+  .search-input::placeholder {
+    color: var(--ink-muted);
+  }
+
+  .search-modal__close {
+    background: transparent;
+    border: none;
+    color: var(--ink-muted);
+    cursor: pointer;
+    padding: var(--sp-1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    transition: all 0.2s;
+  }
+
+  .search-modal__close:hover {
+    background: rgba(255,255,255,0.1);
+    color: var(--ink);
+  }
+
+  .search-modal__body {
+    max-height: 60vh;
+    overflow-y: auto;
+    padding: var(--sp-3);
+  }
+
+  .search-results {
+    display: flex;
+    flex-direction: column;
+    gap: var(--sp-2);
+  }
+
+  .search-empty-state {
+    color: var(--ink-muted);
+    text-align: center;
+    padding: var(--sp-8) 0;
+  }
+
+  /* Exposed globally so the script can build these classes */
+  :global(.search-result-item) {
+    display: flex;
+    flex-direction: column;
+    padding: var(--sp-3);
+    background: rgba(0,0,0,0.15);
+    border: 1px solid var(--border);
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    color: var(--ink);
+    transition: all 0.2s;
+  }
+  
+  :global(.search-result-item:hover) {
+    background: rgba(255,255,255,0.05);
+    border-color: var(--accent);
+  }
+
+  :global(.search-result-item__header) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: var(--sp-1);
+  }
+
+  :global(.search-result-item__title) {
+    font-family: var(--font-heading);
+    font-size: var(--text-base);
+    color: var(--accent);
+    margin: 0;
+  }
+
+  :global(.search-result-item__type) {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    text-transform: uppercase;
+    padding: 2px 6px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 4px;
+  }
+
+  :global(.search-result-item__desc) {
+    font-size: var(--text-sm);
+    color: var(--ink-muted);
+    margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+</style>
+
+<script>
+  const modal = document.getElementById('search-modal') as HTMLDialogElement;
+  const closeBtn = document.getElementById('search-close');
+  const backdrop = document.getElementById('search-backdrop');
+  const searchInput = document.getElementById('search-input') as HTMLInputElement;
+  const resultsContainer = document.getElementById('search-results');
+
+  let searchIndex: any[] = [];
+  let isLoaded = false;
+
+  // Expose an openSearch function globally so the Header can trigger it
+  (window as any).openSearch = async () => {
+    modal?.showModal();
+    searchInput?.focus();
+    
+    if (!isLoaded) {
+      try {
+        const res = await fetch('/api/search.json');
+        searchIndex = await res.json();
+        isLoaded = true;
+      } catch (e) {
+        console.error("Failed to load search index", e);
+      }
+    }
+  };
+
+  const closeSearch = () => {
+    modal?.close();
+  };
+
+  closeBtn?.addEventListener('click', closeSearch);
+  backdrop?.addEventListener('click', closeSearch);
+  
+  // Close on Escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal?.open) {
+      closeSearch();
+    }
+  });
+
+  // Hotkey to open search (Ctrl+K or Cmd+K)
+  document.addEventListener('keydown', (e) => {
+    if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
+      e.preventDefault();
+      (window as any).openSearch();
+    }
+  });
+
+  searchInput?.addEventListener('input', (e) => {
+    const query = (e.target as HTMLInputElement).value.toLowerCase().trim();
+    
+    if (!resultsContainer) return;
+
+    if (!query) {
+      resultsContainer.innerHTML = '<div class="search-empty-state">Type to start searching...</div>';
+      return;
+    }
+
+    if (!isLoaded) {
+      resultsContainer.innerHTML = '<div class="search-empty-state">Loading index...</div>';
+      return;
+    }
+
+    const matches = searchIndex.filter(item => 
+      item.content.toLowerCase().includes(query) || 
+      item.tags.some((t: string) => t.toLowerCase().includes(query))
+    ).slice(0, 10); // Limit to 10 results
+
+    if (matches.length === 0) {
+      resultsContainer.innerHTML = '<div class="search-empty-state">No results found.</div>';
+      return;
+    }
+
+    resultsContainer.innerHTML = matches.map(m => `
+      <a href="${m.url}" class="search-result-item">
+        <div class="search-result-item__header">
+          <h3 class="search-result-item__title">${m.title}</h3>
+          <span class="search-result-item__type">${m.type}</span>
+        </div>
+        <p class="search-result-item__desc">${m.description}</p>
+      </a>
+    `).join('');
+  });
+</script>

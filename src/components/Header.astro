@@ -1,7 +1,10 @@
 ---
+import SearchModal from './SearchModal.astro';
+
 const pathname = Astro.url.pathname;
 const navItems = [
   { label: 'Home', href: '/' },
+  { label: 'Tier List', href: '/tier-list/' },
   { label: 'Builds', href: '/builds/' },
   { label: 'Guides', href: '/guides/' },
   { label: 'Build Planner', href: '/builder/' },
@@ -65,19 +68,27 @@ const navItems = [
       ))}
     </nav>
 
-    <button
-      class="hamburger"
-      id="hamburger-btn"
-      aria-label="Open menu"
-      aria-expanded="false"
-      aria-controls="mobile-nav"
-    >
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <line x1="3" y1="6" x2="21" y2="6"/>
-        <line x1="3" y1="12" x2="21" y2="12"/>
-        <line x1="3" y1="18" x2="21" y2="18"/>
-      </svg>
-    </button>
+    <div style="display: flex; align-items: center; gap: var(--sp-2);">
+      <button class="search-btn" onclick="window.openSearch && window.openSearch()" aria-label="Search">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+      </button>
+      <button
+        class="hamburger"
+        id="hamburger-btn"
+        aria-label="Open menu"
+        aria-expanded="false"
+        aria-controls="mobile-nav"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="6" x2="21" y2="6"/>
+          <line x1="3" y1="12" x2="21" y2="12"/>
+          <line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+    </div>
   </div>
 
   <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation" aria-hidden="true">
@@ -115,6 +126,25 @@ const navItems = [
     ))}
   </nav>
 </header>
+
+<SearchModal />
+
+<style>
+  .search-btn {
+    background: transparent;
+    border: none;
+    color: var(--ink);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--sp-1);
+    transition: color 0.2s;
+  }
+  .search-btn:hover {
+    color: var(--accent);
+  }
+</style>
 
 <script>
   const btn = document.getElementById('hamburger-btn');
