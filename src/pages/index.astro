@@ -2,6 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import SectionTag from '../components/SectionTag.astro';
 import PostCard from '../components/PostCard.astro';
+import AdSenseUnit from '../components/AdSenseUnit.astro';
 import { getCollection } from 'astro:content';
 
 // Fetch all content collections
@@ -177,6 +178,8 @@ const filterTags = [
           />
         ))}
       </div>
+
+      <AdSenseUnit className="ad-slot--in-feed" format="fluid" />
 
       <!-- Pagination Controls -->
       <div id="pagination-controls" style="justify-content:center; align-items:center; gap:var(--sp-4); margin-top:var(--sp-8); display:none;">

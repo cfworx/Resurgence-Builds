@@ -1108,3 +1108,25 @@ tbody tr:hover {
   white-space: nowrap;
   border-width: 0;
 }
+
+/* --- AdSense Slots --- */
+.ad-slot {
+  margin: var(--sp-8) 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90px;
+  background: rgba(0, 0, 0, 0.1); /* Slight background to indicate reserved space */
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+.ad-slot--in-feed {
+  margin: var(--sp-6) 0;
+}
+
+.ad-slot .adsbygoogle {
+  display: block;
+  width: 100%;
+  min-height: 90px; /* Crucial to prevent CLS */
+}

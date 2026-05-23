@@ -2,7 +2,7 @@
 import BaseLayout from './BaseLayout.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import SectionTag from '../components/SectionTag.astro';
-
+import AdSenseUnit from '../components/AdSenseUnit.astro';
 export interface Props {
   title: string;
   description: string;
@@ -99,6 +99,8 @@ const howToLd = headings.length > 0 ? {
 
     <article class="prose content-width">
       <slot />
+
+      <AdSenseUnit slotId="YOUR-SLOT-ID" />
 
       {faqs && faqs.length > 0 && (
         <div class="faq-section" style="margin-top: var(--sp-8);">
