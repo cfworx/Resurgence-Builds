@@ -1,11 +1,7 @@
 ---
 title: "SHD Manual — How Progression Actually Works"
-specialization: "General"
-playstyle: "Progression Guide"
-pve: true
-pvp: true
+category: "General"
 lastUpdated: 2026-05-22
-patch: "Season 2"
 tags: ["division-resurgence", "shd-manual", "progression-guide", "agent-huntsman", "gear-optimization", "new-player-guide", "tips-and-tricks"]
 description: "Agent Huntsman's definitive four-phase progression manual. Learn how to stop fighting the systems and start understanding tactical efficiency."
 author: "RapidF5 (via Agent Huntsman)"
