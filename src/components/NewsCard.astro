@@ -12,15 +12,28 @@ const { title, href, publishDate, author, description, tags = [] } = Astro.props
 const formattedDate = publishDate.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
 ---
 
-<article class="card">
-  <a href={href} style="text-decoration:none;color:inherit;display:block;">
-    <p class="card__meta">{formattedDate} · {author}</p>
-    <h3 class="card__title">{title}</h3>
-    <p class="card__description">{description}</p>
-    {tags.length > 0 && (
-      <div style="display:flex;gap:var(--sp-1);flex-wrap:wrap;margin-top:var(--sp-3);">
-        {tags.slice(0, 3).map(tag => <span class="tag">{tag}</span>)}
-      </div>
-    )}
-  </a>
+<article class="card" style="position: relative;">
+  <p class="card__meta">{formattedDate} · {author}</p>
+  <p class="card__title">
+    <a href={href} class="card__link">{title}</a>
+  </p>
+  <p class="card__description">{description}</p>
+  {tags.length > 0 && (
+    <div style="display:flex;gap:var(--sp-1);flex-wrap:wrap;margin-top:var(--sp-3);">
+      {tags.slice(0, 3).map(tag => <span class="tag">{tag}</span>)}
+    </div>
+  )}
 </article>
+
+<style>
+  .card__link {
+    text-decoration: none;
+    color: inherit;
+  }
+  .card__link::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+  }
+</style>

@@ -29,8 +29,7 @@ const typeLabels: Record<string, string> = {
 const typeLabel = typeLabels[type] || type;
 ---
 
-<article class={`card post-card ${featuredImage ? 'post-card--has-image' : ''}`} data-type={type} data-tags={JSON.stringify(tags)}>
-  <a href={href} style="text-decoration:none;color:inherit;display:block;">
+<article class={`card post-card ${featuredImage ? 'post-card--has-image' : ''}`} data-type={type} data-tags={JSON.stringify(tags)} style="position: relative;">
     {featuredImage && (
       <div class="post-card__image">
         <img
@@ -48,7 +47,7 @@ const typeLabel = typeLabels[type] || type;
         <span class={`post-type-badge post-type-badge--${type}`}>{typeLabel}</span>
         <span class="post-card__date">{formattedDate}</span>
       </div>
-      <h3 class="card__title">{title}</h3>
+      <p class="card__title"><a href={href} class="card__link">{title}</a></p>
       <p class="card__meta">By {author}</p>
       <p class="card__description">{description}</p>
       {tags.length > 0 && (
@@ -57,7 +56,6 @@ const typeLabel = typeLabels[type] || type;
         </div>
       )}
     </div>
-  </a>
 </article>
 
 <style>
@@ -138,5 +136,17 @@ const typeLabel = typeLabels[type] || type;
 
   .post-card--has-image .post-card__body {
     padding-top: var(--sp-4);
+  }
+
+  .card__link {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .card__link::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 1;
   }
 </style>
