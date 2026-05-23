@@ -1,6 +1,6 @@
 ---
 title: "Inventory Bug Fixed & Phase 3 News"
-publishDate: "2026-05-23"
+publishDate: "2026-05-23T12:00:00Z"
 author: "RapidF5"
 featuredImage: "/images/news/inventory-wipe-bug-fixed.png"
 imageAlt: "A Division Agent looking at a glitching orange holographic smartwatch interface on a snowy New York street, representing the inventory out-of-bounds error."
