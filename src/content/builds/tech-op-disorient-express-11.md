@@ -14,6 +14,13 @@ imageAlt: "Division Resurgence Tech Operator Disorient Express Mechanical Enemy 
 shareTitle: "Send this to the guy who thinks Tech Op is just healer support"
 shareText: "Share this and watch someone completely reassemble their understanding of what a drone can do."
 plannerHash: "s=Tech+Operator&sc=Offensive+Operations&n=Disorient+Express&ms=gs-6&m1=Skill+Critical+Chance&m2=Skill+Critical+Damage&cs=gs-10&ct=ba-24&c1=Weapon+Critical+Hit+Chance&c2=Weapon+Critical+Hit+Damage&ps=gs-10&pt=bp-15&p1=Skill+Intensity&p2=Damage+to+Elites&gs=gs-6&g1=Skill+Critical+Chance&g2=Skill+Intensity&hs=gs-6&h1=Skill+Critical+Damage&h2=Skill+Cooldown+Recovery&ks=gs-6&k1=Skill+Critical+Damage&k2=Skill+Intensity&w1s=sw-7&w1tr=T2&w1t=wt-22&w2s=sw-25&w2tr=T2&w2t=wt-18&os=os-33&sm1=smc-30&sm2=smc-23"
+faqs:
+  - question: "Is the Tech Operator — The Disorient Express actually the best Tech Operator setup in Division Resurgence?"
+    answer: "If you have the reflexes of a caffeinated teenager, yes. If you're a middle-aged gamer playing on a greasy phone screen, it's still top-tier, but you're probably going to die occasionally. Focus on positioning and let your Tech Operator skills do the heavy lifting."
+  - question: "Can I run this loadout loadout in the Dark Zone?"
+    answer: "You can run whatever you want in the DZ, but don't come crying to me when a rogue squad vaporizes you at extraction. Just remember to check your corners, because taking this into the wrong neighborhood means you'll be respawning before you can even complain about lag."
+  - question: "Why should I spend my hard-earned credits optimizing this?"
+    answer: "Because you can't take your credits to the grave. Grinding for the perfect gear is the entire point of The Division Resurgence. Min-max your stats, hit your breakpoints, and stop walking around with unoptimized trash in your holsters."
 ---
 
 ## What It Is

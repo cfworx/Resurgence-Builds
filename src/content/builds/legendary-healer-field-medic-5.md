@@ -14,6 +14,13 @@ imageAlt: "Division Resurgence Legendary Healer Field Medic Build"
 shareTitle: "Guilt trip your DPS"
 shareText: "Share this to remind your friends that they owe you their miserable lives."
 plannerHash: "s=Field+Medic&sc=Combat+Medicine&n=Legendary+Healer&ms=gs-13&m1=Skill+Intensity&m2=Skill+Duration&cs=gs-13&ct=ba-5&c1=Skill+Intensity&c2=Skill+Duration&ps=gs-14&pt=bp-2&p1=Skill+Intensity&p2=Skill+Duration&gs=gs-14&g1=Skill+Intensity&g2=Skill+Cooldown+Recovery&hs=gs-14&h1=Skill+Intensity&h2=Skill+Duration&ks=gs-14&k1=Skill+Intensity&k2=Skill+Duration&w1s=sw-12&w1tr=T2&w1t=wt-28&w2s=sw-2&w2tr=T2&w2t=wt-48&os=os-10&sm1=smc-80&sm2=smc-81&sm3=smc-82"
+faqs:
+  - question: "Is the Field Medic — Babysitting Idiots 101 actually the best Agent setup in Division Resurgence?"
+    answer: "If you have the reflexes of a caffeinated teenager, yes. If you're a middle-aged gamer playing on a greasy phone screen, it's still top-tier, but you're probably going to die occasionally. Focus on positioning and let your Agent skills do the heavy lifting."
+  - question: "Can I run this loadout loadout in the Dark Zone?"
+    answer: "You can run whatever you want in the DZ, but don't come crying to me when a rogue squad vaporizes you at extraction. Just remember to check your corners, because taking this into the wrong neighborhood means you'll be respawning before you can even complain about lag."
+  - question: "Why should I spend my hard-earned credits optimizing this?"
+    answer: "Because you can't take your credits to the grave. Grinding for the perfect gear is the entire point of The Division Resurgence. Min-max your stats, hit your breakpoints, and stop walking around with unoptimized trash in your holsters."
 ---
 
 ## What it is

@@ -14,6 +14,13 @@ imageAlt: "Division Resurgence Fearless Warrior Warlord PVP Build"
 shareTitle: "Farm hate mail"
 shareText: "Share this to let everyone know you thrive entirely on unfiltered gamer rage."
 plannerHash: "s=Vanguard&sc=Recon&n=Conflict+Warlord&ms=gs-16&m1=Weapon+Critical+Hit+Damage&m2=Max+Health&cs=gs-15&ct=ba-7&c1=Weapon+Damage&c2=Skill+Cooldown+Recovery&ps=gs-15&pt=bp-25&p1=Max+Health&p2=Armor&gs=gs-16&g1=Weapon+Critical+Hit+Damage&g2=Skill+Cooldown+Recovery&hs=gs-16&h1=Weapon+Critical+Hit+Chance&h2=Skill+Cooldown+Recovery&ks=gs-16&k1=Weapon+Multi-Shot+Chance&k2=Max+Health&w1e=ew-2&w1t=wt-35&w2s=sw-12&w2tr=T2&w2t=wt-53&os=os-32"
+faqs:
+  - question: "Is the Vanguard — The 24-0 Spawn Trapper actually the best Agent setup in Division Resurgence?"
+    answer: "If you have the reflexes of a caffeinated teenager, yes. If you're a middle-aged gamer playing on a greasy phone screen, it's still top-tier, but you're probably going to die occasionally. Focus on positioning and let your Agent skills do the heavy lifting."
+  - question: "Can I run this loadout loadout in the Dark Zone?"
+    answer: "You can run whatever you want in the DZ, but don't come crying to me when a rogue squad vaporizes you at extraction. Just remember to check your corners, because taking this into the wrong neighborhood means you'll be respawning before you can even complain about lag."
+  - question: "Why should I spend my hard-earned credits optimizing this?"
+    answer: "Because you can't take your credits to the grave. Grinding for the perfect gear is the entire point of The Division Resurgence. Min-max your stats, hit your breakpoints, and stop walking around with unoptimized trash in your holsters."
 ---
 
 ## What it is

@@ -13,6 +13,13 @@ featuredImage: "/images/division-resurgence-tech-operator-striker-drone-build.we
 imageAlt: "Division Resurgence Tech Operator Striker Drone CC Build"
 shareTitle: "Radicalize other agents"
 shareText: "Send this to someone who hates letting the AI have a turn to play."
+faqs:
+  - question: "Is the Tech Operator — The Flashbang Salesman actually the best Tech Operator setup in Division Resurgence?"
+    answer: "If you have the reflexes of a caffeinated teenager, yes. If you're a middle-aged gamer playing on a greasy phone screen, it's still top-tier, but you're probably going to die occasionally. Focus on positioning and let your Tech Operator skills do the heavy lifting."
+  - question: "Can I run this loadout loadout in the Dark Zone?"
+    answer: "You can run whatever you want in the DZ, but don't come crying to me when a rogue squad vaporizes you at extraction. Just remember to check your corners, because taking this into the wrong neighborhood means you'll be respawning before you can even complain about lag."
+  - question: "Why should I spend my hard-earned credits optimizing this?"
+    answer: "Because you can't take your credits to the grave. Grinding for the perfect gear is the entire point of The Division Resurgence. Min-max your stats, hit your breakpoints, and stop walking around with unoptimized trash in your holsters."
 ---
 
 ## What it is
