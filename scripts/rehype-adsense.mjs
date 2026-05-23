@@ -15,7 +15,7 @@ export default function rehypeAdsense() {
         <ins class="adsbygoogle"
              style="display:block"
              data-ad-client="ca-pub-5813932024666862"
-             data-ad-slot="YOUR-SLOT-ID"
+             data-ad-slot="8102223000"
              data-ad-format="auto"
              data-full-width-responsive="true"></ins>
         <script>
