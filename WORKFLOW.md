@@ -149,3 +149,29 @@ If Giscus (GitHub Discussions-based comments) is added in the future:
 **Cause:** Images must be in the `public/` directory or referenced via an absolute URL.
 
 **Fix:** Place images in `public/images/` and reference them as `/images/filename.png` in your Markdown.
+
+## SEO Best Practices for New Content
+
+To ensure our schema markup and SEO remain flawless when you create new builds and guides:
+
+1. **Keep Titles Concise:** Search engines truncate titles that exceed ~600px width (roughly 55-60 characters). Because the site automatically appends " · Resurgence Builds" to the end of every title, aim to keep your Markdown `title` field under **45 characters**. 
+   - *Bad:* `title: "The Absolute Best PvE DPS Builds in The Division Resurgence"`
+   - *Good:* `title: "Best PvE DPS Builds"`
+
+2. **Optimize Images and Alt Text:** Always include a `featuredImage`.
+   - Name the image file with descriptive keywords separated by dashes (e.g., `best-pve-dps-builds-division.png` instead of `image1.png`).
+   - Write a rich, descriptive `imageAlt` that explains exactly what is in the image. This helps AI parsers and image search.
+
+3. **Use the `howTo` Schema for Procedural Guides:** If a guide has step-by-step instructions (like the Center-ADS trick), include the `howTo` object in the frontmatter. This qualifies the page for rich results on Google. Example:
+   ```yaml
+   howTo:
+     name: "How to Perform a Center-ADS Release"
+     description: "Five-input technique for peeking from cover."
+     totalTime: "PT2M"
+     tool: ["Any rifle or LMG"]
+     steps:
+       - name: "Hold cover"
+         text: "Press and hold the cover button."
+   ```
+
+4. **Descriptive Descriptions:** Keep the `description` field under 150 characters, but pack it with relevant terms. This is what shows up underneath the blue link on Google.
