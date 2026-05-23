@@ -4,7 +4,7 @@ specialization: Demolitionist
 playstyle: DPS
 pve: true
 pvp: false
-lastUpdated: 2026-05-20
+lastUpdated: 2026-05-20T08:00:00Z
 patch: "Season 1 Phase 2"
 tags: ["strawberry-milkshake", "field-grenadier", "glass-cannon"]
 description: "An off-meta Demolitionist DoT spreader using the Strawberry Milkshake exotic. One kill infects the room — the room never stops bleeding."

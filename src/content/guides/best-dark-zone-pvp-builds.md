@@ -1,7 +1,7 @@
 ---
 title: "Best Dark Zone PvP Builds in The Division Resurgence"
 category: PvP
-lastUpdated: 2026-05-23
+lastUpdated: 2026-05-23T06:00:00Z
 tags: ["pvp", "dark-zone", "conflict", "best-builds"]
 description: "Want to survive extraction? These are the best Dark Zone PvP builds in The Division Resurgence for deleting rogues and stealing loot."
 author: "RapidF5"

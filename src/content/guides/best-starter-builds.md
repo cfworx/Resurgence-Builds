@@ -1,7 +1,7 @@
 ---
 title: "Best Starter Builds in The Division Resurgence"
 category: Beginner
-lastUpdated: 2026-05-23
+lastUpdated: 2026-05-23T06:00:00Z
 tags: ["starter", "beginner", "best-builds", "pve"]
 description: "Just hit endgame and don't have exotics yet? These are the best starter builds in The Division Resurgence that don't require hundreds of hours of grinding."
 author: "RapidF5"

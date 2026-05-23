@@ -1,7 +1,7 @@
 ---
 title: "Which Specialization Should You Pick in The Division Resurgence? — 2026 Guide"
 category: "Beginner"
-lastUpdated: 2026-05-20
+lastUpdated: 2026-05-20T12:00:00Z
 tags: ["specialization", "beginner", "vanguard", "demolitionist", "bulwark", "field-medic", "tech-operator", "best specialization"]
 description: "Vanguard, Demolitionist, Bulwark, Field Medic, or Tech Operator — here's how to pick the right specialization in The Division Resurgence without spending 45 minutes reading a Reddit thread."
 author: "RapidF5"

@@ -4,7 +4,7 @@ specialization: Bulwark
 playstyle: Tank
 pve: true
 pvp: false
-lastUpdated: 2026-05-20
+lastUpdated: 2026-05-20T10:00:00Z
 patch: "Season 1 Phase 2"
 tags: ["juggernaut", "strawberry-milkshake"]
 description: "A solo-first off-meta Bulwark build that turns you into a caffeinated mosquito with an LMG. You literally out-heal damage by refusing to stop shooting."

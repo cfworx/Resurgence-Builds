@@ -4,7 +4,7 @@ specialization: "Field Medic"
 playstyle: "Hybrid"
 pve: true
 pvp: true
-lastUpdated: 2026-05-23
+lastUpdated: 2026-05-23T10:00:00Z
 patch: "Season 2"
 tags: ["division-resurgence", "panda", "oxidizing-swarm", "field-medic", "pvp-build", "pve-build", "dark-zone", "skill-damage"]
 description: "ProjectPandaTv's terrifying all-around Oxidizing Swarm build that deletes players in the Dark Zone before they even know what hit them."
