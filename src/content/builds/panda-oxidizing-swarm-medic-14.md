@@ -1,5 +1,5 @@
 ---
-title: "The Toxic Waste Dump: The 'Oops, You're Dead' Medic"
+title: "Field Medic — The Toxic Waste Dump"
 specialization: "Field Medic"
 playstyle: "Hybrid"
 pve: true
@@ -45,47 +45,36 @@ Panda showed off some absolutely unhinged stats on stream.
 
 *Note: In a team, the Oxidizing Swarm hive lasts roughly 45–50 seconds, while Chem Traps sit around 25–30 seconds. That's an eternity in a PvP firefight.*
 
-## Weapons (Your Backup Plan)
+## The Statistical Engine
 
-You use your skills to kill, and your guns to survive the cooldowns.
+| Slot | Brand/Set | Talent | Base Stat | Attribute 1 | Attribute 2 |
+|---|---|---|---|---|---|
+| Mask | Jackpot | — | Engineering | Max Crit Chance | Max Multi-Shot Chance |
+| Gloves | Boom Boom | — | Engineering | Skill Crit Chance | Skill Multi-Shot |
+| Holster | Jackpot (T2) | — | Engineering | Max Crit Damage | Max Multi-Shot |
+| Kneepads | Jackpot | — | Engineering | Crit Chance | Crit Damage |
+| Chest | *Unnamed T1* | **Glass Cannon 2** | Engineering | Skill Multi-Shot Chance | Skill Cooldown Recovery |
+| Backpack | Captain Cow (T1) | **Brainstorm 2** | Engineering | Skill Intensity | Skill Crit Damage |
 
-### Primary — Lightweight M4
-- **Stat rolls:** Weapon Multi-Shot Chance + Weapon Critical Hit Damage
-- **Talents:** **In Sync** + **Fully Charged**
-- *The Grind Struggle:* Panda wants to re-roll In Sync for more Crit Damage or In Sync 2, but the Memory Proficiency book bottleneck is real. We all feel the pain.
+- **Primary:** Lightweight M4 — In Sync + Fully Charged *(Rolled for Weapon Multi-Shot + Weapon Crit Damage. Panda wants to re-roll In Sync for more Crit Damage, but material drop rates are miserable.)*
+- **Secondary:** First Wave Vector — Precise Trauma 2 + Tactical Reload *(This is the gun he uses for literally everything. Rolled for Skill Piercing + Skill Multi-Shot.)*
+- **OS Protocol:** Tactical Layering
+- **Skills:** Oxidizing Swarm (Hereafter Resilience) · Chem Traps (Armored Strengthening) · Skill Chip #3 (Enhanced Formula)
+- **Signature:** Oxidizing Swarm
+- **Gear Mods:** Mostly gold Engineering mods across all pieces, with a couple of gold Armor mods mixed in.
 
-### Main Weapon — First Wave Vector
-This is the gun he uses for literally everything. If it moves, spray it with the Vector.
-- **Stat rolls:** Skill Piercing Damage + Skill Multi-Shot
-- **Talents:** **Precise Trauma 2** + **Tactical Reload**
-- *The Grind Struggle:* Chasing Tactical Reload 2, but again, those books aren't dropping.
+**Jackpot 4-Piece:**
+- **2pc:** Skill Radius +12.00%
+- **3pc:** Skill Critical Chance +10.80%
+- **4pc:** Skill Critical Damage +24.00%
+*(Note: Panda intentionally isn't running a secondary 2-piece set yet, but the long-term goal is to slot in a 2-piece Captain Cow for the movement speed buff.)*
 
-## The Gear Setup
+**Why These Talents**
 
-### Mask — Jackpot
-Already maxed out with **Max Critical Hit Chance** and **Max Multi-Shot Chance**. Don't touch it.
+**Glass Cannon 2 (Chest):** +28% extra damage is just too nice. Yes, it makes you squishy, but you offset it by playing behind your team and stacking damage reduction elsewhere. Kill them before they kill you.
 
-### Chest — Glass Cannon 2
-- **Stats:** Skill Multi-Shot Chance + Skill Cooldown Recovery
-- **Why Glass Cannon?** "+28% extra damage is just too nice." Yes, it makes you squishy, but you offset it by playing behind your team and stacking damage reduction elsewhere. Kill them before they kill you.
+**Brainstorm 2 (Backpack):** Grants +40% skill duration when allies are within 20m. This is the secret sauce. This is why the Oxidizing Swarm lasts for nearly 50 seconds. Panda specifically tested this against Minion Training and Prime Engineer, and Brainstorm 2 won because keeping the swarm active is the entire point of the build.
 
-### Backpack — Captain Cow (T1)
-- **Talent:** **Brainstorm 2**
-- **Stats:** Skill Intensity + Skill Critical Hit Damage
-- **The Secret Sauce:** Brainstorm 2 grants **+40% skill duration** when allies are within 20m. This is why the Oxidizing Swarm lasts for nearly 50 seconds. Panda specifically tested this against Minion Training and Prime Engineer, and Brainstorm 2 won because keeping the swarm active is the entire point of the build.
-
-### Gloves — Boom Boom
-- **Stats:** Skill Critical Hit Chance + Skill Multi-Shot
-
-### Holster — Jackpot (T2)
-- **Stats:** Max Critical Hit Damage + Max Multi-Shot
-- *Mods:* Filled with Engineering and armor mods, though he's still hunting for two elusive gold armor mods.
-
-### Kneepads — Jackpot
-- **Stats:** Critical Hit Chance + Critical Hit Damage
-
-### Set Bonuses
-Right now, you're running **4-piece Jackpot** for the massive skill damage boost. Panda intentionally isn't running a secondary 2-piece set yet due to attribute layouts, but the long-term goal is to slot in a **2-piece Captain Cow** for the movement speed buff.
 
 ## The Skills
 
