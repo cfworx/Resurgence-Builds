@@ -5,8 +5,8 @@ lastUpdated: 2026-05-22
 tags: ["division-resurgence", "shd-manual", "progression-guide", "agent-huntsman", "gear-optimization", "new-player-guide", "tips-and-tricks"]
 description: "Agent Huntsman's definitive four-phase progression manual. Learn how to stop fighting the systems and start understanding tactical efficiency."
 author: "RapidF5 (via Agent Huntsman)"
-featuredImage: "/images/division-resurgence-shd-manual-progression-guide.png"
-imageAlt: "Division Resurgence SHD Manual Progression Guide by Agent Huntsman"
+featuredImage: "/images/division-resurgence-max-level-40-progression.png"
+imageAlt: "A Division agent glowing with energy after reaching max level 40, unlocking endgame progression and SHD levels."
 shareTitle: "The SHD Manual — Progression Decoded"
 shareText: "Stop wasting credits on T0 gear. Agent Huntsman breaks down the four phases of progression and how to actually build your character."
 faqs:

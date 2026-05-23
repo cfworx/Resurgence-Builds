@@ -2,8 +2,8 @@
 title: "What the Community Is Saying"
 publishDate: "2026-05-17"
 author: "RapidF5"
-featuredImage: "/images/news/community-sentiment-pc.jpg"
-imageAlt: "A young gamer giving a thumbs up with a 180 FPS overlay playing The Division Resurgence on PC"
+featuredImage: "/images/division-resurgence-community-sentiment-bugs.jpg"
+imageAlt: "A frustrated Division Resurgence player sitting in front of a whiteboard listing connection lost errors and unpatched bugs."
 description: "Community breakdown: the PC launch, 60 FPS performance, Classified Ops Pass, missing gear bugs, and the summer roadmap for Division Resurgence."
 tags: ["Community", "PC", "Phase 2", "Classified Ops Pass", "Missing Gear", "Roadmap"]
 shareTitle: "Spread the salt"
