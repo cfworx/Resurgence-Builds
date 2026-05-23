@@ -4,7 +4,7 @@ specialization: "Field Medic"
 playstyle: "Hybrid"
 pve: true
 pvp: true
-lastUpdated: 2026-05-22
+lastUpdated: 2026-05-23
 patch: "Season 2"
 tags: ["division-resurgence", "panda", "oxidizing-swarm", "field-medic", "pvp-build", "pve-build", "dark-zone", "skill-damage"]
 description: "Panda's terrifying all-around Oxidizing Swarm build that deletes players in the Dark Zone before they even know what hit them."
@@ -93,9 +93,14 @@ This is your bread and butter. You will drop this hive 90% of the time.
 - Currently stuck with a Radius roll, but you want to chase **Crit Chance, Skill Cooldown Recovery, Cooldown Reduction, or Radius.**
 
 ## OS Protocol: Tactical Layering
+
 Panda considers **Tactical Layering** the absolute #1 OS for this build. 
 
-*Why not Surgical Engineering?* Because Surgical Engineering (+15% Engineering on deploy) **does not proc on the hive**. Panda tested it—he threw it, dropped it, yelled at it—it doesn't work. The game simply doesn't consider the hive a "deployable" for that specific proc. Don't waste your time.
+**What it does:** Tactical Layering's talent is: *Deploying a Skill grants +15% Engineering, up to 3 stacks.* 
+
+**Why it's so powerful here:** Even though the game doesn't count dropping your Hive as a "deployment" to trigger this buff (a frustrating quirk Panda tested extensively), the build runs **Chem Traps**. Every time you toss a Chem Trap, you gain a massive +15% Engineering buff. You can easily keep this stacked up to 3 times (+45% Engineering!) just by actively using your Chem Traps, which supercharges the damage of your Oxidizing Swarm while it sits on the field.
+
+*What about Surgical Engineering?* Surgical Engineering is the runner-up (granting Skill Crit Damage on skill crits), but the raw, scaling Engineering power of Tactical Layering simply outpaces it when you're actively managing your traps.
 
 ## Stat Priorities Summary
 
