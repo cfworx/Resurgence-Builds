@@ -272,16 +272,34 @@
   }
 
   function enforceExoticRestriction() {
-    [1, 2].forEach(n => {
-      const otherN = n === 1 ? 2 : 1;
-      const otherHasExotic = state[`weapon${otherN}`].id && state[`weapon${otherN}`].id.startsWith('ex-');
-      const sel = document.getElementById(`weapon-w${n}`);
-      Array.from(sel.options).forEach(opt => {
-        if (opt.value && opt.value.startsWith('ex-')) {
-          opt.disabled = otherHasExotic;
-        }
+    const w1Exotic = state.weapon1.id && state.weapon1.id.startsWith('ex-');
+    const w2Exotic = state.weapon2.id && state.weapon2.id.startsWith('ex-');
+    
+    if (w1Exotic && w2Exotic) {
+      state.weapon2.id = '';
+      const w2Sel = document.getElementById('weapon-w2');
+      if (w2Sel) w2Sel.value = '';
+    }
+
+    const finalW1Ex = state.weapon1.id && state.weapon1.id.startsWith('ex-');
+    const finalW2Ex = state.weapon2.id && state.weapon2.id.startsWith('ex-');
+
+    const sel1 = document.getElementById('weapon-w1');
+    const sel2 = document.getElementById('weapon-w2');
+    
+    if (sel1) {
+      Array.from(sel1.options).forEach(opt => {
+        if (opt.value && opt.value.startsWith('ex-')) opt.disabled = finalW2Ex;
       });
-    });
+    }
+    if (sel2) {
+      Array.from(sel2.options).forEach(opt => {
+        if (opt.value && opt.value.startsWith('ex-')) opt.disabled = finalW1Ex;
+      });
+    }
+    
+    showWeaponDetail(1);
+    showWeaponDetail(2);
   }
 
   function showOSDetail(){
