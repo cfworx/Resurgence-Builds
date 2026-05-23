@@ -39,7 +39,7 @@ const navItems = [
           <div class="nav-dropdown">
             <button class="nav-dropdown__btn" aria-expanded="false" aria-controls={`dropdown-${item.label.toLowerCase()}`}>
               {item.label}
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 4px; transition: transform 0.2s;">
+              <svg aria-hidden="true" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 4px; transition: transform 0.2s;">
                 <polyline points="6 9 12 15 18 9"></polyline>
               </svg>
             </button>
@@ -70,7 +70,7 @@ const navItems = [
 
     <div style="display: flex; align-items: center; gap: var(--sp-2);">
       <button class="search-btn" onclick="window.openSearch && window.openSearch()" aria-label="Search">
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <circle cx="11" cy="11" r="8"></circle>
           <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
         </svg>
@@ -82,7 +82,7 @@ const navItems = [
         aria-expanded="false"
         aria-controls="mobile-nav"
       >
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <line x1="3" y1="6" x2="21" y2="6"/>
           <line x1="3" y1="12" x2="21" y2="12"/>
           <line x1="3" y1="18" x2="21" y2="18"/>
@@ -97,7 +97,7 @@ const navItems = [
         <div class="mobile-dropdown">
           <button class="mobile-dropdown__btn" aria-expanded="false" aria-controls={`mobile-dropdown-${item.label.toLowerCase()}`} onclick="this.setAttribute('aria-expanded', this.getAttribute('aria-expanded') === 'true' ? 'false' : 'true'); this.nextElementSibling.classList.toggle('is-open'); this.querySelector('svg').style.transform = this.getAttribute('aria-expanded') === 'true' ? 'rotate(180deg)' : 'rotate(0deg)';">
             {item.label}
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="transition: transform 0.2s;">
+            <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="transition: transform 0.2s;">
               <polyline points="6 9 12 15 18 9"></polyline>
             </svg>
           </button>
@@ -154,6 +154,7 @@ const navItems = [
       const isOpen = nav.classList.toggle('is-open');
       btn.setAttribute('aria-expanded', String(isOpen));
       btn.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
+      nav.setAttribute('aria-hidden', String(!isOpen));
     });
   }
 </script>

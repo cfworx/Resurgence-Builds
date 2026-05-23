@@ -13,10 +13,13 @@ function assignTier(build) {
   // Explicit overrides
   if (text.includes('toxic waste dump')) return 'S';
   if (text.includes('geneva suggestion')) return 'S';
+  if (text.includes('alt f4 shotgun') || text.includes('alt-f4 shotgun')) return 'A';
+  if (text.includes('disorient express')) return 'A';
+  if (text.includes('cross map coward')) return 'A';
   if (text.includes('mosquito')) return 'B';
   if (text.includes('strawberry reaper')) return 'B';
+  if (text.includes('flashbang salesman')) return 'B';
   if (text.includes('hate mail generator')) return 'C';
-  if (text.includes('disorient express')) return 'A';
 
   // Fallback heuristic rules
   if (text.includes('meta') || text.includes('24-0') || text.includes('alt-f4') || text.includes('pinnacle') || text.includes('king')) return 'S';

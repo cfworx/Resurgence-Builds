@@ -148,6 +148,22 @@ pre code { background: none; padding: 0; }
   outline-offset: 2px;
 }
 
+/* --- Skip Link --- */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--accent);
+  color: #fff;
+  padding: 8px;
+  z-index: 1000;
+  transition: top var(--transition-fast);
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
 /* --- Layout Utilities --- */
 .container {
   width: 100%;
