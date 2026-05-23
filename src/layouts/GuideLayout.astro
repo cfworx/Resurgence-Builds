@@ -61,6 +61,7 @@ const siteUrl = Astro.site?.toString().replace(/\/$/, '') || 'https://resurgence
 const howToLd = howTo ? {
   '@context': 'https://schema.org',
   '@type': 'HowTo',
+  '@id': `${siteUrl}${Astro.url.pathname}#howto`,
   name: howTo.name,
   description: howTo.description,
   totalTime: howTo.totalTime,

@@ -1,5 +1,5 @@
 ---
-title: "Best PvE DPS Builds in The Division Resurgence"
+title: "Best PvE DPS Builds"
 category: Endgame
 lastUpdated: 2026-05-23T06:00:00Z
 tags: ["pve", "dps", "tier-list", "best-builds"]
