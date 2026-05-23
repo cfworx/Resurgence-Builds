@@ -182,6 +182,10 @@ const dataPayload = JSON.stringify({ gearSets, weaponTalents, exoticWeapons, sta
                     <option value="T0">Tier 0 (Basic)</option>
                   </select>
                 </div>
+                <div class="slot-card__row row-exotic-talent" id="row-exotic-w1" style="display:none">
+                  <label class="slot-label">Native Talent</label>
+                  <div class="exotic-talent-display" id="exotic-talent-w1"></div>
+                </div>
                 <div class="slot-card__row">
                   <label class="slot-label" for="wtalent-w1">Talent 1</label>
                   <select class="slot-select select-talent" id="wtalent-w1" data-weapon="1">
@@ -224,6 +228,10 @@ const dataPayload = JSON.stringify({ gearSets, weaponTalents, exoticWeapons, sta
                     <option value="T1">Tier 1</option>
                     <option value="T0">Tier 0 (Basic)</option>
                   </select>
+                </div>
+                <div class="slot-card__row row-exotic-talent" id="row-exotic-w2" style="display:none">
+                  <label class="slot-label">Native Talent</label>
+                  <div class="exotic-talent-display" id="exotic-talent-w2"></div>
                 </div>
                 <div class="slot-card__row">
                   <label class="slot-label" for="wtalent-w2">Talent 1</label>
@@ -718,6 +726,19 @@ const dataPayload = JSON.stringify({ gearSets, weaponTalents, exoticWeapons, sta
 }
 .weapon-detail__stat { font-family: var(--font-mono); font-size: 10px; color: var(--ink-muted) }
 .weapon-detail__stat strong { color: var(--ink) }
+
+/* --- Exotic Native Talent Display --- */
+.exotic-talent-display {
+  padding: 8px 12px;
+  background: rgba(245,166,35,0.08);
+  border: 1px solid rgba(245,166,35,0.25);
+  border-radius: 4px;
+  color: #f5a623;
+  font-family: var(--font-heading);
+  font-size: var(--text-xs);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
 
 /* --- Text Inputs --- */
 .slot-input {

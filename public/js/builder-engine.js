@@ -49,13 +49,24 @@
       wEl.addEventListener('change', () => {
         const val = wEl.value;
         state[`weapon${n}`].id = val;
+        const exoticRow = document.getElementById(`row-exotic-w${n}`);
+        const exoticDisplay = document.getElementById(`exotic-talent-w${n}`);
         
         if (val.startsWith('ex-')) {
           rowTier.style.display = 'none';
+          // Show exotic native talent
+          const exId = val.substring(3);
+          const ex = exoticWeapons.find(e => e.id === exId);
+          if (ex && exoticRow && exoticDisplay) {
+            exoticDisplay.textContent = ex.talentName;
+            exoticRow.style.display = 'block';
+          }
         } else if (val.startsWith('std-')) {
           rowTier.style.display = 'block';
+          if (exoticRow) exoticRow.style.display = 'none';
         } else {
           rowTier.style.display = 'none';
+          if (exoticRow) exoticRow.style.display = 'none';
           state[`weapon${n}`].talent = '';
           tEl.value = '';
           state[`weapon${n}`].talent2 = '';
@@ -197,12 +208,12 @@
         ? `<option value="">— Select Chipset Mod ${num} —</option>`
         : `<option value="">— Select Chipset Mod ${num} (All) —</option>`;
         
-      const catColors = {'Engineering':'#3b82f6','Firepower':'#f97316','Toughness':'#22c55e'};
+      const specColors = {'Demolitionist':'#3b82f6','Tech Operator':'#3b82f6','Vanguard':'#f97316','Bulwark':'#22c55e','Field Medic':'#a855f7'};
       filtered.forEach(s => {
         const opt = document.createElement('option');
         opt.value = s.id;
-        opt.textContent = `[${s.specialization}] ${s.name}`;
-        opt.style.color = catColors[s.specialization] || 'inherit';
+        opt.textContent = s.name;
+        opt.style.color = specColors[s.specialization] || 'inherit';
         
         // Disable option if selected in another slot
         const isSelectedElsewhere = ['1', '2', '3'].some(other => other !== num && state[`smc${other}`] === s.id);
@@ -392,26 +403,35 @@
       talentHTML += `</div>`;
     }
 
-    // Weapons group
-    if (w1Name || w2Name) {
+    // Primary Weapon group
+    if (w1Name) {
+      const tierTag = state.weapon1.id.startsWith('ex-') ? 'Exotic' : state.weapon1.tier;
+      const isExotic1 = state.weapon1.id.startsWith('ex-');
+      const ex1 = isExotic1 ? exoticWeapons.find(e => e.id === state.weapon1.id.substring(3)) : null;
+      let talents = [];
+      if (ex1) talents.push(`<span style="color:#f5a623">${ex1.talentName}</span>`);
+      if (w1T) talents.push(w1T.name);
+      if (w1T2) talents.push(w1T2.name);
       talentHTML += `<div class="summary-loadout-group summary-loadout-group--weapon">`;
-      talentHTML += `<div class="summary-loadout-label">Weapons</div>`;
-      if (w1Name) {
-        const tierTag = state.weapon1.id.startsWith('ex-') ? 'Exotic' : state.weapon1.tier;
-        let talents = [];
-        if (w1T) talents.push(w1T.name);
-        if (w1T2) talents.push(w1T2.name);
-        talentHTML += `<div class="summary-loadout-value">W1: ${w1Name} <span style="opacity:.5;font-size:11px">(${tierTag})</span></div>`;
-        if (talents.length) talentHTML += `<div class="summary-loadout-sub">⤷ ${talents.join(' · ')}</div>`;
-      }
-      if (w2Name) {
-        const tierTag = state.weapon2.id.startsWith('ex-') ? 'Exotic' : state.weapon2.tier;
-        let talents = [];
-        if (w2T) talents.push(w2T.name);
-        if (w2T2) talents.push(w2T2.name);
-        talentHTML += `<div class="summary-loadout-value" style="margin-top:4px">W2: ${w2Name} <span style="opacity:.5;font-size:11px">(${tierTag})</span></div>`;
-        if (talents.length) talentHTML += `<div class="summary-loadout-sub">⤷ ${talents.join(' · ')}</div>`;
-      }
+      talentHTML += `<div class="summary-loadout-label">Primary Weapon</div>`;
+      talentHTML += `<div class="summary-loadout-value">${w1Name} <span style="opacity:.45;font-size:10px;font-weight:400">${tierTag}</span></div>`;
+      if (talents.length) talentHTML += `<div class="summary-loadout-sub">${talents.join(' · ')}</div>`;
+      talentHTML += `</div>`;
+    }
+
+    // Secondary Weapon group
+    if (w2Name) {
+      const tierTag = state.weapon2.id.startsWith('ex-') ? 'Exotic' : state.weapon2.tier;
+      const isExotic2 = state.weapon2.id.startsWith('ex-');
+      const ex2 = isExotic2 ? exoticWeapons.find(e => e.id === state.weapon2.id.substring(3)) : null;
+      let talents = [];
+      if (ex2) talents.push(`<span style="color:#f5a623">${ex2.talentName}</span>`);
+      if (w2T) talents.push(w2T.name);
+      if (w2T2) talents.push(w2T2.name);
+      talentHTML += `<div class="summary-loadout-group summary-loadout-group--weapon">`;
+      talentHTML += `<div class="summary-loadout-label">Secondary Weapon</div>`;
+      talentHTML += `<div class="summary-loadout-value">${w2Name} <span style="opacity:.45;font-size:10px;font-weight:400">${tierTag}</span></div>`;
+      if (talents.length) talentHTML += `<div class="summary-loadout-sub">${talents.join(' · ')}</div>`;
       talentHTML += `</div>`;
     }
 
@@ -532,10 +552,10 @@
     const {bodyT, bpT, w1T, w2T, w1E, w2E, osP} = talents;
     if(bodyT) allDescs.push({src:'Body: '+bodyT.name, d:bodyT.description});
     if(bpT) allDescs.push({src:'Backpack: '+bpT.name, d:bpT.description});
-    if(w1E) allDescs.push({src:'W1: '+w1E.name, d:w1E.talentDescription});
-    else if(w1T) allDescs.push({src:'W1: '+w1T.name, d:w1T.description});
-    if(w2E) allDescs.push({src:'W2: '+w2E.name, d:w2E.talentDescription});
-    else if(w2T) allDescs.push({src:'W2: '+w2T.name, d:w2T.description});
+    if(w1E) allDescs.push({src:'Primary: '+w1E.name, d:w1E.talentDescription});
+    else if(w1T) allDescs.push({src:'Primary: '+w1T.name, d:w1T.description});
+    if(w2E) allDescs.push({src:'Secondary: '+w2E.name, d:w2E.talentDescription});
+    else if(w2T) allDescs.push({src:'Secondary: '+w2T.name, d:w2T.description});
     if(osP) allDescs.push({src:'OS: '+osP.name, d:osP.talentDescription});
 
     ['1', '2', '3'].forEach(num => {
@@ -698,13 +718,27 @@
       if(p.has(pre+'2')){ state.slots[slot].attr2 = p.get(pre+'2'); const el = document.getElementById(`attr2-${slot}`); if(el) el.value = state.slots[slot].attr2; }
     });
     
-    if(p.has('w1e')){ state.weapon1.id = 'ex-' + p.get('w1e'); document.getElementById('weapon-w1').value = state.weapon1.id; }
+    if(p.has('w1e')){
+      state.weapon1.id = 'ex-' + p.get('w1e');
+      document.getElementById('weapon-w1').value = state.weapon1.id;
+      const ex1 = exoticWeapons.find(e => e.id === p.get('w1e'));
+      const exRow1 = document.getElementById('row-exotic-w1');
+      const exDisp1 = document.getElementById('exotic-talent-w1');
+      if (ex1 && exRow1 && exDisp1) { exDisp1.textContent = ex1.talentName; exRow1.style.display = 'block'; }
+    }
     else if(p.has('w1s')){ state.weapon1.id = 'std-' + p.get('w1s'); document.getElementById('weapon-w1').value = state.weapon1.id; document.getElementById('row-tier-w1').style.display = 'block'; }
     if(p.has('w1t')){ state.weapon1.talent = p.get('w1t'); document.getElementById('wtalent-w1').value = state.weapon1.talent; }
     if(p.has('w1t2')){ state.weapon1.talent2 = p.get('w1t2'); document.getElementById('wtalent2-w1').value = state.weapon1.talent2; }
     if(p.has('w1tr')){ state.weapon1.tier = p.get('w1tr'); document.getElementById('tier-w1').value = state.weapon1.tier; }
     
-    if(p.has('w2e')){ state.weapon2.id = 'ex-' + p.get('w2e'); document.getElementById('weapon-w2').value = state.weapon2.id; }
+    if(p.has('w2e')){
+      state.weapon2.id = 'ex-' + p.get('w2e');
+      document.getElementById('weapon-w2').value = state.weapon2.id;
+      const ex2 = exoticWeapons.find(e => e.id === p.get('w2e'));
+      const exRow2 = document.getElementById('row-exotic-w2');
+      const exDisp2 = document.getElementById('exotic-talent-w2');
+      if (ex2 && exRow2 && exDisp2) { exDisp2.textContent = ex2.talentName; exRow2.style.display = 'block'; }
+    }
     else if(p.has('w2s')){ state.weapon2.id = 'std-' + p.get('w2s'); document.getElementById('weapon-w2').value = state.weapon2.id; document.getElementById('row-tier-w2').style.display = 'block'; }
     if(p.has('w2t')){ state.weapon2.talent = p.get('w2t'); document.getElementById('wtalent-w2').value = state.weapon2.talent; }
     if(p.has('w2t2')){ state.weapon2.talent2 = p.get('w2t2'); document.getElementById('wtalent2-w2').value = state.weapon2.talent2; }
@@ -771,6 +805,8 @@
     
     document.getElementById('row-tier-w1').style.display = 'none';
     document.getElementById('row-tier-w2').style.display = 'none';
+    document.getElementById('row-exotic-w1').style.display = 'none';
+    document.getElementById('row-exotic-w2').style.display = 'none';
     document.getElementById('w1-detail').classList.remove('is-visible');
     document.getElementById('w2-detail').classList.remove('is-visible');
     
