@@ -5,19 +5,35 @@ export interface Props {
   category: string;
   description: string;
   lastUpdated: Date;
+  featuredImage?: string;
+  imageAlt?: string;
 }
 
-const { title, href, category, description, lastUpdated } = Astro.props;
+const { title, href, category, description, lastUpdated, featuredImage, imageAlt } = Astro.props;
 const formattedDate = lastUpdated.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
 ---
 
-<article class="card" style="position: relative;">
-  <span class="tag">{category}</span>
-  <p class="card__title" style="margin-top:var(--sp-2);">
-    <a href={href} class="card__link">{title}</a>
-  </p>
-  <p class="card__meta">Updated {formattedDate}</p>
-  <p class="card__description">{description}</p>
+<article class={`card ${featuredImage ? 'card--has-image' : ''}`} style="position: relative;">
+  {featuredImage && (
+    <div class="build-card__image">
+      <img
+        src={featuredImage}
+        alt={imageAlt || `${title} - Division Resurgence Guide`}
+        loading="lazy"
+        decoding="async"
+        width="600"
+        height="315"
+      />
+    </div>
+  )}
+  <div class={featuredImage ? 'build-card__body' : ''}>
+    <span class="tag">{category}</span>
+    <p class="card__title" style="margin-top:var(--sp-2);">
+      <a href={href} class="card__link">{title}</a>
+    </p>
+    <p class="card__meta">Updated {formattedDate}</p>
+    <p class="card__description">{description}</p>
+  </div>
 </article>
 
 <style>
