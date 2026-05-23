@@ -1,5 +1,5 @@
 ---
-title: "SHD Manual — How Progression Actually Works"
+title: "SHD Manual — How to Stop Sucking at Progression"
 category: "General"
 lastUpdated: 2026-05-22
 tags: ["division-resurgence", "shd-manual", "progression-guide", "agent-huntsman", "gear-optimization", "new-player-guide", "tips-and-tricks"]
@@ -10,19 +10,18 @@ imageAlt: "Division Resurgence SHD Manual Progression Guide by Agent Huntsman"
 shareTitle: "The SHD Manual — Progression Decoded"
 shareText: "Stop wasting credits on T0 gear. Agent Huntsman breaks down the four phases of progression and how to actually build your character."
 faqs:
-  - question: "Why am I struggling in the early game?"
-    answer: "Because you're trying to perfect your gear instead of learning the systems. Your job early on isn't to build the ultimate character; it's to figure out which end of the gun the bullets come out of. Experiment with classes, learn weapon feel, and stop worrying about damage numbers."
-  - question: "When should I start caring about stats?"
-    answer: "Later. Early game is for testing; endgame is for spreadsheets. Focus on understanding enemy behavior and repositioning. A big damage number doesn't matter if you're dead."
+  - question: "Why am I constantly dying in the early game?"
+    answer: "Because you're trying to optimize T0 gear like a spreadsheet nerd instead of learning the actual game systems. Your job early on isn't to build the ultimate character; it's to figure out which end of the gun the bullets come out of. Experiment with classes, learn weapon feel, and stop crying about damage numbers."
+  - question: "When should I start caring about min-maxing my stats?"
+    answer: "Later. Early game is for testing; endgame is for spreadsheets. Focus on understanding enemy behavior and repositioning. A massive damage number doesn't matter if you have the structural integrity of wet cardboard and keep standing in grenades."
   - question: "What should I look for in a weapon?"
-    answer: "Feel over raw stats. Stability, recoil, handling, fire rate, reload time, and effective range. If the weapon feels bad to shoot, you're going to miss half your shots anyway, making that big damage number completely useless."
+    answer: "Feel over raw stats. Stability, recoil, handling, fire rate, reload time, and effective range. If the weapon feels like a wild firehose, you're going to miss half your shots anyway, making that big damage number completely useless."
 ---
 
-# SHD Manual — How Progression *Actually* Works
+# SHD Manual — How to Stop Sucking at Progression
 ### Game Mechanics & Knowledge Drops from Agent Huntsman's Guide
 
 > **Source:** [SHD Manual — How Progression ACTUALLY Works | The Division Resurgence](https://www.youtube.com/watch?v=Mt3E4A0l0Zk) by Agent Huntsman.
-> Built **exclusively** from the spoken contents of the linked video. Nothing here is added from outside sources.
 
 ---
 
@@ -100,5 +99,3 @@ At the end of the manual, Agent Huntsman breaks down his personal Field Medic se
 - That mindset shift is what separates players who get stuck from players who keep evolving long-term.
 
 ---
-
-*Compiled verbatim from Agent Huntsman's spoken commentary in the linked video. Any vagueness (e.g., exact threshold wording on Medical Excellence) is preserved rather than smoothed over.*
