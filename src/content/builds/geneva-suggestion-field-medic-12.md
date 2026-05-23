@@ -13,6 +13,7 @@ featuredImage: "/images/division-resurgence-field-medic-geneva-suggestion-chemic
 imageAlt: "Division Resurgence Field Medic Geneva Suggestion Tactical Pharma Chemical Trap AOE Skill Build"
 shareTitle: "Share a Geneva Convention violation"
 shareText: "Share this build with that friend who became a Field Medic to 'help people.' His Hippocratic Oath is about to become a Hippocratic Suggestion."
+plannerHash: "s=Field+Medic&sc=Tactical+Pharma&n=Geneva+Suggestion&ms=gs-7&m1=Skill+Critical+Chance&m2=Skill+Critical+Damage&cs=gs-11&ct=ba-12&c1=Skill+Critical+Chance&c2=Skill+Critical+Damage&ps=gs-11&pt=bp-19&p1=Skill+Critical+Damage&p2=Skill+Intensity&gs=gs-7&g1=Skill+Critical+Chance&g2=Skill+Intensity&hs=gs-7&h1=Skill+Critical+Damage&h2=Skill+Multi-Shot+Chance&ks=gs-7&k1=Skill+Critical+Chance&k2=Skill+Multi-Shot+Chance&w1s=sw-11&w1tr=T2&w1t=wt-4&w1t2=wt-20&os=os-20&sm1=smc-88&sm2=smc-76&sm3=smc-73"
 faqs:
   - question: "What is the best AOE build in Division Resurgence?"
     answer: "The Geneva Suggestion, obviously. If you're a Field Medic / Tactical Pharma looking to commit industrial-scale AOE clearing in PvE without having to rely on your declining hand-eye coordination, this is it. It uses Jackpot 4pc + Fire Cycle 2pc with Chemical Trap to melt entire rooms while your guns sit there looking pretty. Both weapons roll BOTH Backup Battery II and Fully Charged as stat sticks. No exotics required. Go melt some faces, you beautiful grandfather."
@@ -43,7 +44,7 @@ This is not a shooter build. This is a **spreadsheet simulator disguised as an a
 - **Difficulty Ceiling:** Literally brain-dead. Glass Cannon makes you as fragile as wet tissue paper under a garden hose, but who cares? By the time the enemy aims at you, they've already dissolved into a glowing green puddle.
 - **Core Loop:** Squeeze trigger → throw a container of industrial acid → deploy micro corrosive drones → swap guns like a digital grandfather clock → empty a magazine because you have OCD → watch everything turn into neon goo → collect loot.
 
-## Why This Build Exists (The Paradigm Shift)
+## Why This Is A Hippocratic Violation
 
 The meta used to be "Drones Offensive" — Tech Op drone builds tunneling crit stats through Jackpot. That's yesterday's news. The Geneva Suggestion represents a **fundamental surrender of ballistic gunplay** in favor of throwing pools of forbidden Kool-Aid.
 
@@ -53,18 +54,6 @@ In this build:
 - **The gun is a glorified Roku remote.** You fire it to proc Backup Battery II's +31.50% Engineering on swap and to empty mags for Fully Charged stacks. You are not shooting enemies. You are clicking "Next Episode" on a very expensive remote control that happens to be shaped like a Vector.
 
 The trade-off is real: Glass Cannon means you take more damage, meaning you have the structural integrity of wet cardboard. But the damage output is so high that enemies — whether NPCs or agents — melt before they can close the gap.
-
-## The Statistical Engine
-
-The Geneva Suggestion runs on a precise convergence of Engineering and Skill stats. Every piece of gear, every chip, every weapon swap exists to push these numbers past their damage ceilings.
-
-| Stat Attribute | Optimal Target | Why You Care |
-|---|---|---|
-| Skill Crit Chance | 50%+ | The Backup Battery II swap cycle + Jackpot set bonuses push this high. You crit constantly. |
-| Skill Crit Damage | 131% – 150% | The primary damage scaler. This is where your million-DPS number lives. Jackpot 4pc (+24%) + Fire Cycle 2pc (+12%) + gear rolls stack this ceiling. |
-| Skill Intensity | ~67% | Supplementary filler. Its mechanical weight is less transparent than crit stats, but it supports overall skill efficacy. Don't skip it — don't obsess over it. |
-| Skill Multi-Shot | 10% (weapon attribute) | Extra skill hits per tick. Every multi-shot proc on a Chemical Trap tick is a free extra war crime. |
-| Engineering | 70% base → 100%+ buffed | Prime Engineer (+22.50% for 12s at full HP) + Brains Over Brawn (hits deal 24% Engineering as additional damage at Specialized base, scaling up to 48% at max upgraded High-End). At cap, your Engineering stat IS your DPS stat. |
 
 ## Weapons (The Stat Sticks)
 
@@ -85,7 +74,7 @@ The Vector is the preferred primary weapon. It has a blazing 1200 RPM and a 25-r
 
 You have two excellent choices for your secondary weapon slot:
 
-**Option A (RogueMadras’ Meta Choice — Dual Backup Battery): Any T2 AR or LMG + Backup Battery II**
+**Option A (RogueMadras' Meta Choice — Dual Backup Battery): Any T2 AR or LMG + Backup Battery II**
 Run Backup Battery II on both weapons. This gives you a seamless, zero-effort 100% uptime on the massive Engineering buff. Whenever you swap weapons to keep your loop active, Backup Battery II triggers immediately. No need to manage empty magazines or timing stacks.
 
 **Option B (The High-Peak Hybrid — Fully Charged): Any T2 AR or LMG + Fully Charged**
@@ -133,7 +122,7 @@ The mechanical rhythm to maximize your Engineering looks like this:
 
 **Prime Engineer (Backpack):** Deploying a Skill at full Health grants +22.50% Engineering for 12 seconds. This is one of the largest Engineering boosts in the current gear pool. Every Chemical Trap deployment triggers it — as long as you're at full HP when you deploy. Enhanced Formula's 7.20% damage-to-health recovery helps you stay topped off between deploys.
 
-## Chip Configuration
+## Skill Loadout
 
 > 💰 **17 Million Credit Warning.** Chip optimization is the macro-economic bottleneck of this build. Each gold chip costs approximately 900,000 credits to max out. You will need to max multiple gold chips, and you will find yourself maxing suboptimal ones just to clear storage slots. Welcome to endgame inventory management — where the real boss is your stash tab.
 
@@ -160,23 +149,21 @@ The current patch (v1.2.1) has corrected the chip names. For this endgame Tactic
   - **Hereafter Resilience 3pc**
     - Releases automatic micro corrosive drones every 1.6s from your backpack, guaranteeing constant corrosion applications and keeping your loop fully automated.
 
-## The Combat Rotation (Passive-Aggressive Warfare)
+## How It Works (The Math)
 
-This build runs a "passive-aggressive" combat loop where positioning and buff-maintenance take priority over aiming. If you're spending more than 10% of your brain on aiming, you're doing it wrong.
+The Geneva Suggestion runs on a precise convergence of Engineering and Skill stats. Every piece of gear, every chip, every weapon swap exists to push these numbers past their damage ceilings.
 
-**The Rotation:**
+**Stat Attribute Targets**
 
-1. **Deploy Chemical Trap** at the engagement choke (2-3 acid pools). Prime Engineer triggers immediately → +22.50% Engineering for 12s (must be at full HP). Brains Over Brawn makes every hit deal additional damage equal to 24% of your Engineering (up to 48% at HE max). The math is already violent.
+| Stat Attribute | Optimal Target | Why You Care |
+|---|---|---|
+| Skill Crit Chance | 50%+ | The Backup Battery II swap cycle + Jackpot set bonuses push this high. You crit constantly. |
+| Skill Crit Damage | 131% – 150% | The primary damage scaler. This is where your million-DPS number lives. Jackpot 4pc (+24%) + Fire Cycle 2pc (+12%) + gear rolls stack this ceiling. |
+| Skill Intensity | ~67% | Supplementary filler. Its mechanical weight is less transparent than crit stats, but it supports overall skill efficacy. Don't skip it — don't obsess over it. |
+| Skill Multi-Shot | 10% (weapon attribute) | Extra skill hits per tick. Every multi-shot proc on a Chemical Trap tick is a free extra war crime. |
+| Engineering | 70% base → 100%+ buffed | Prime Engineer (+22.50% for 12s at full HP) + Brains Over Brawn (hits deal 24% Engineering as additional damage at Specialized base, scaling up to 48% at max upgraded High-End). At cap, your Engineering stat IS your DPS stat. |
 
-2. **Activate your second ability** (Oxidizing Swarm). Enhanced Formula debuffs enemy damage output by 12% and grants missing health recovery, while Hereafter Resilience backpack drones automatically release micro corrosive units every 1.6s. This maintains full automation on your corrosion loops while you focus entirely on staying safe.
-
-3. **Begin the Dual-Talent Swap & Reload Cycle.** Fire your Vector SMG → empty the magazine and reload to build **Fully Charged** stacks (+7.50% per reload, up to +22.50% total) → swap at 8s → **Backup Battery II** triggers (**+31.50% Engineering**) → fire and reload your secondary to build its **Fully Charged** stacks → swap back → repeat. This dual-talent stack peaks at a massive **+54.00% Engineering**!
-
-4. **Re-deploy Chemical Trap** the instant cooldown expires. Your Chemical Recharge chips will dramatically slash your second ability's cooldown on trap kills, ensuring your skills are active for every wave. The rotation is: deploy → swap/reload → swap/reload → deploy → swap/reload → forever.
-
-5. **Position smartly in PvP.** Because of the Glass Cannon chest talent, this build is **extremely squishy in PvP** — you will fold in a fraction of a second if you stand out in the open. However, you can still run it very effectively: play from deep cover, prioritize defensive positioning, drop your acid pools on chokepoints, capture zones, or extraction areas, and watch enemy agents dissolve before they can close the distance.
-
-## The Damage Stack
+**The Damage Stack**
 
 | Source | Bonus | Type |
 |---|---|---|
@@ -194,6 +181,32 @@ This build runs a "passive-aggressive" combat loop where positioning and buff-ma
 | Fully Charged (both weapons) | +7.50% Engineering per empty reload, 3 stacks = +22.50% | Dual-stacks with Backup Battery II for a peak of +54.00% Engineering |
 
 These multipliers don't add. They **multiply**. Against a dense pack standing in acid pools during a fully-buffed rotation, the sustained AOE damage output is absurd. Stack the buffs, maintain the cycle, and watch the room dissolve.
+
+## OS Justification
+
+**Brains Over Brawn > Tactical Layering > Surgical Engineering** for this build.
+
+Brains Over Brawn's talent makes every hit deal additional damage equal to **24% of your Engineering stat** at Specialized rarity, scaling up to **48% at max upgraded High-End**. On a build that stacks Engineering to the ceiling — 70% base, 100%+ buffed with Prime Engineer and the Backup Battery II / Fully Charged weapon cycle — this OS converts your entire stat investment into a second damage layer that fires on every single skill tick.
+
+**Why not Tactical Layering?** Tactical Layering grants +15% Engineering per skill deployment, up to 3 stacks (+45%). It's strong on paper, but this build already generates massive Engineering through Prime Engineer (+22.50%), Backup Battery II (+31.50%), and Fully Charged (+22.50%). You're already at the ceiling. Brains Over Brawn converts that ceiling into raw damage output rather than stacking more Engineering with diminishing returns.
+
+**Why not Surgical Engineering?** Surgical Engineering grants Skill Crit Damage on skill crits. It's a solid runner-up, but Brains Over Brawn's additional damage proc fires on **every hit**, not just crits. With Chemical Trap ticking dozens of times per deployment across multiple targets, the volume of Brains Over Brawn procs vastly outpaces the conditional Skill Crit Damage from Surgical Engineering. When your acid pools are hitting 8 enemies simultaneously, you want a bonus that triggers on every tick, not one that only fires on the crits.
+
+**The math:** At max upgraded High-End, Brains Over Brawn adds damage equal to 48% of your Engineering on every hit. With 100%+ Engineering during your buffed rotation, that's an extra ~48% damage layered on top of Glass Cannon, Prime Engineer, and Jackpot set bonuses. It's the multiplier that ties the entire stack together.
+
+## Combat Rotation (Passive-Aggressive Warfare)
+
+This build runs a "passive-aggressive" combat loop where positioning and buff-maintenance take priority over aiming. If you're spending more than 10% of your brain on aiming, you're doing it wrong.
+
+1. **Deploy Chemical Trap** at the engagement choke (2-3 acid pools). Prime Engineer triggers immediately → +22.50% Engineering for 12s (must be at full HP). Brains Over Brawn makes every hit deal additional damage equal to 24% of your Engineering (up to 48% at HE max). The math is already violent.
+
+2. **Activate your second ability** (Oxidizing Swarm). Enhanced Formula debuffs enemy damage output by 12% and grants missing health recovery, while Hereafter Resilience backpack drones automatically release micro corrosive units every 1.6s. This maintains full automation on your corrosion loops while you focus entirely on staying safe.
+
+3. **Begin the Dual-Talent Swap & Reload Cycle.** Fire your Vector SMG → empty the magazine and reload to build **Fully Charged** stacks (+7.50% per reload, up to +22.50% total) → swap at 8s → **Backup Battery II** triggers (**+31.50% Engineering**) → fire and reload your secondary to build its **Fully Charged** stacks → swap back → repeat. This dual-talent stack peaks at a massive **+54.00% Engineering**!
+
+4. **Re-deploy Chemical Trap** the instant cooldown expires. Your Chemical Recharge chips will dramatically slash your second ability's cooldown on trap kills, ensuring your skills are active for every wave. The rotation is: deploy → swap/reload → swap/reload → deploy → swap/reload → forever.
+
+5. **Position smartly in PvP.** Because of the Glass Cannon chest talent, this build is **extremely squishy in PvP** — you will fold in a fraction of a second if you stand out in the open. However, you can still run it very effectively: play from deep cover, prioritize defensive positioning, drop your acid pools on chokepoints, capture zones, or extraction areas, and watch enemy agents dissolve before they can close the distance.
 
 ## Gear Ladder
 
@@ -236,7 +249,9 @@ Stack the acid. Swap the guns. Watch the numbers. Welcome to your Geneva Suggest
 - **v1.2** (May 22, 2026): Fact-check pass — removed unverified damage numbers and fabricated PvP claims. Build works in PvP. Corrected medkit to +18% Skill Damage (KB-verified). Removed unverified display bug claim.
 - **v1.1** (May 22, 2026): Corrected weapons — build uses standard weapons with Backup Battery (both) + Fully Charged (secondary), not exotic weapons. RogueMadras runs Vector 45 ACP as primary.
 - **v1.0** (May 22, 2026): Initial build — adapted from RogueMadras's Tactical Pharma configuration for Season 2 patch.
+
 ## Related Builds
 
 - **Run the alternative chemical trap meta:** Check out our [Jackpot Chemical Medic Build](/builds/skill-meta-jackpot-chemical-8) for an explosive skill-DPS build.
 - **Shift focus to ultimate team survival:** See our dedicated [Legendary Healer Field Medic Build](/builds/legendary-healer-field-medic-5).
+- **Try the other Oxy Swarm approach:** See our [ProjectPandaTv Oxidizing Swarm Build](/builds/panda-oxidizing-swarm-medic-14) for a Tactical Layering variant.

@@ -13,6 +13,7 @@ featuredImage: "/images/division-resurgence-demolitionist-strawberry-reaper-buil
 imageAlt: "Division Resurgence Demolitionist Strawberry Reaper Exotic LMG Build"
 shareTitle: "Infect the timeline"
 shareText: "Share this to spread Anarchy stacks across the entire internet."
+plannerHash: "s=Demolitionist&sc=Field+Grenadier&n=Strawberry+Reaper&ms=gs-3&m1=Weapon+Critical+Hit+Chance&m2=Weapon+Critical+Hit+Damage&cs=gs-3&ct=ba-12&c1=Weapon+Critical+Hit+Chance&c2=Weapon+Critical+Hit+Damage&ps=gs-3&pt=bp-17&p1=Weapon+Critical+Hit+Damage&p2=Damage+to+Elites&gs=gs-3&g1=Weapon+Critical+Hit+Chance&g2=Weapon+Critical+Hit+Damage&hs=gs-3&h1=Weapon+Critical+Hit+Chance&h2=Damage+to+Elites&ks=gs-3&k1=Weapon+Critical+Hit+Chance&k2=Weapon+Critical+Hit+Damage&w1e=ew-3&w1t=wt-10&w2s=sw-7&w2tr=T2&w2t=wt-22&w2t2=wt-54&os=os-33&sm1=smc-10&sm2=smc-14&sm3=smc-9"
 faqs:
   - question: "Is the Demolitionist — The Strawberry Reaper actually the best Agent setup in Division Resurgence?"
     answer: "If you have the reflexes of a caffeinated teenager, yes. If you're a middle-aged gamer playing on a greasy phone screen, it's still top-tier, but you're probably going to die occasionally. Focus on positioning and let your Agent skills do the heavy lifting."
