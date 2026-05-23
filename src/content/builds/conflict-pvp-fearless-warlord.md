@@ -1,5 +1,5 @@
 ---
-title: "Vanguard — The 24-0 Spawn Trapper"
+title: "The 24-0 Spawn Trapper — Vanguard PvP AR Build Guide (DPS)"
 specialization: Vanguard
 playstyle: DPS
 pve: false
@@ -27,7 +27,7 @@ faqs:
 
 ## What It Is
 
-Do you want to win? Do you want to win so badly that the other team reports you for cheating because they literally cannot kill you? Look no further.
+Do you want to win? Do you want to win so badly that the other team reports you for cheating because they literally cannot kill you? Look no further. This high-tier Vanguard PvP AR build guide is custom-built for Conflict domination, turning your assault rifle into a sustained-fire delete button. It's an easy-to-learn, high-ceiling DPS setup for absolute sickos who just want to make the enemy team uninstall the game.
 
 This is the dominant Conflict PVP build. Utilizing the **4pc Fearless Warrior** set, **2pc Phalanx Attack**, the **Warlord** exotic AR, and an MPX secondary, this build is designed to win 1v1s by simply refusing to die. Willspot went 24-0 in back-to-back matches with this. It is a certified spawn-trapping machine.
 
@@ -180,3 +180,5 @@ Pre-throw grenades → Explosive Fury stacks +36% RoF → open fire with Warlord
 
 - **Looking for more Vanguard dominance?** See our [Vanguard Dark Zone PvP Lady Death Build](/builds/dark-zone-pvp-vanguard-lady-death-3) for high-mobility ganking.
 - **Prefer PvE shotgun gameplay?** Check out our [PvE Meta Vanguard Shotgun Build](/builds/pve-meta-vanguard-shotgun-7) for close-range power.
+- **Want to sit back and relax?** Try out the [Cover Shooter Sniper Build](/builds/cover-shooter-sniper-2) to pick off enemies from across the map.
+- **Feel like being a menace with skills?** The [Tech Op Disorient Express](/builds/tech-op-disorient-express-11) brings drone CC to Conflict.

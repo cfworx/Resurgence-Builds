@@ -1,5 +1,5 @@
 ---
-title: "Demolitionist — The Strawberry Reaper"
+title: "The Strawberry Reaper — Demolitionist PvE Build Guide (LMG Bleed)"
 specialization: Demolitionist
 playstyle: DPS
 pve: true
@@ -27,7 +27,7 @@ faqs:
 
 > ⚠️ **Buff incoming.** Ubisoft confirmed in Patch 1.2.1 (May 20, 2026) that Strawberry Milkshake's perks are underwhelming and under review for a buff. **Hold your recalibration materials** — this build will be updated the moment new numbers drop. The Anarchy talent description was also corrected in 1.2.1 (was displaying wrong effect values).
 
-The meta sleeps on the Strawberry Milkshake. Nobody runs it. The Anarchy talent looks like a sticker on a soda can in isolation — a 2.40% Weapon Damage DoT that ticks for 4.50 seconds, capped at 50 stacks. Read it twice. The third line is where the build lives: **every enemy that dies with Anarchy stacks transfers all of them to a nearby target within 12 meters.** One kill infects the room. The room never stops bleeding.
+The meta sleeps on the Strawberry Milkshake. Nobody runs it. The Anarchy talent looks like a sticker on a soda can in isolation — a 2.40% Weapon Damage DoT that ticks for 4.50 seconds, capped at 50 stacks. Read it twice. The third line is where the build lives: **every enemy that dies with Anarchy stacks transfers all of them to a nearby target within 12 meters.** One kill infects the room. The room never stops bleeding. This top-tier Demolitionist PvE LMG Bleed build is a comfortable-difficulty setup that turns entire rooms into blood fountains. Equip this off-meta horror show and show the tryhards what true sustained DPS looks like.
 
 This is the Strawberry Reaper — a Demolitionist build that turns the Milkshake's spreading DoT into a Firepower engine. The Artillery Turret feeds on debuffed bodies. Shaped Charge ramps your Firepower. Concerted Strike stacks +24% Damage off skill pings. Phalanx Attack 4-piece pours +18% Mag, +18% RoF, and +12% Multi-Shot into an LMG that already sprays. Glass Cannon pushes everything another 20% over the line. It is fast, loud, and built for clearing rooms while standing in cover, sipping a milkshake.
 
@@ -194,3 +194,4 @@ Stack the bleed. Feed the turret. Watch it all burn.
 
 - **Focus entirely on explosive burst:** Check out our [Demolitionist Explosive Chaos Build](/builds/demolitionist-explosive-chaos-4) for massive seeker mine and grenade action.
 - **Disorient and control target fields:** See our [Disorient Express Drone Tech Operator Build](/builds/tech-op-disorient-express-11).
+- **Face-tank your problems:** Look into our [Vampire Bulwark Tank Build](/builds/vampire-bulwark-tank-9) if you're tired of using cover like a coward.

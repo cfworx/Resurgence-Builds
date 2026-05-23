@@ -1,0 +1,60 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PostCard from '../../components/PostCard.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import SectionTag from '../../components/SectionTag.astro';
+import { getCollection } from 'astro:content';
+
+const allNews = await getCollection('news');
+const sorted = allNews.sort((a, b) => b.data.publishDate.getTime() - a.data.publishDate.getTime());
+
+const breadcrumbItems = [{ name: 'News', url: '/news/' }];
+
+const siteUrl = Astro.site?.toString().replace(/\/$/, '') || 'https://resurgencebuilds.com';
+const itemListLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: 'The Division Resurgence News and Updates',
+  itemListElement: sorted.map((post, index) => ({
+    '@type': 'ListItem',
+    position: index + 1,
+    name: post.data.title,
+    url: `${siteUrl}/news/${post.id}/`,
+  }))
+};
+---
+
+<BaseLayout
+  title="The Division Resurgence News & Updates"
+  description="Stay up to date with the latest news, developer streams, and community highlights for The Division Resurgence."
+  breadcrumbs={breadcrumbItems}
+  jsonLd={itemListLd}
+>
+  <div class="container section">
+    <Breadcrumbs items={breadcrumbItems} />
+    <SectionTag label="News" />
+    <h1 class="heading-accent">News & Updates</h1>
+    
+    <div style="max-width: 800px; margin-bottom: var(--sp-8);">
+      <p style="color:var(--ink-muted); font-size: 1.1rem; line-height: 1.6;">
+        Welcome to the central hub for <strong>The Division Resurgence news</strong>. Here you'll find developer stream summaries, community highlights, phase announcements, and the latest information on the game's development and release cycle. We cut through the fluff and tell you exactly what you need to know.
+      </p>
+    </div>
+
+    <div class="grid grid--3">
+      {sorted.map((post) => (
+        <PostCard
+          title={post.data.title}
+          href={`/news/${post.id}/`}
+          date={post.data.publishDate}
+          author={post.data.author}
+          description={post.data.description}
+          type="news"
+          tags={post.data.tags}
+          featuredImage={post.data.featuredImage}
+          imageAlt={post.data.imageAlt}
+        />
+      ))}
+    </div>
+  </div>
+</BaseLayout>

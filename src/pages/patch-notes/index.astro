@@ -1,0 +1,60 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PostCard from '../../components/PostCard.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import SectionTag from '../../components/SectionTag.astro';
+import { getCollection } from 'astro:content';
+
+const allPatchNotes = await getCollection('patchNotes');
+const sorted = allPatchNotes.sort((a, b) => b.data.patchDate.getTime() - a.data.patchDate.getTime());
+
+const breadcrumbItems = [{ name: 'Patch Notes', url: '/patch-notes/' }];
+
+const siteUrl = Astro.site?.toString().replace(/\/$/, '') || 'https://resurgencebuilds.com';
+const itemListLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: 'The Division Resurgence Patch Notes Archive',
+  itemListElement: sorted.map((post, index) => ({
+    '@type': 'ListItem',
+    position: index + 1,
+    name: post.data.title,
+    url: `${siteUrl}/patch-notes/${post.id}/`,
+  }))
+};
+---
+
+<BaseLayout
+  title="The Division Resurgence Patch Notes Archive"
+  description="Read the latest patch notes, hotfixes, and balancing changes for The Division Resurgence. See what got buffed, nerfed, and broken."
+  breadcrumbs={breadcrumbItems}
+  jsonLd={itemListLd}
+>
+  <div class="container section">
+    <Breadcrumbs items={breadcrumbItems} />
+    <SectionTag label="Patch Notes" />
+    <h1 class="heading-accent">Patch Notes</h1>
+    
+    <div style="max-width: 800px; margin-bottom: var(--sp-8);">
+      <p style="color:var(--ink-muted); font-size: 1.1rem; line-height: 1.6;">
+        Our complete archive of <strong>The Division Resurgence patch notes</strong>. Whenever Ubisoft drops an update, we break it down. Find out exactly which meta builds got nerfed into the ground, what new exotic weapons are dominating the Dark Zone, and whether they finally fixed that annoying UI bug.
+      </p>
+    </div>
+
+    <div class="grid grid--3">
+      {sorted.map((pn) => (
+        <PostCard
+          title={pn.data.title}
+          href={`/patch-notes/${pn.id}/`}
+          date={pn.data.patchDate}
+          author={pn.data.author}
+          description={pn.data.summary}
+          type="patch-notes"
+          tags={[`v${pn.data.version}`]}
+          featuredImage={pn.data.featuredImage}
+          imageAlt={pn.data.imageAlt}
+        />
+      ))}
+    </div>
+  </div>
+</BaseLayout>

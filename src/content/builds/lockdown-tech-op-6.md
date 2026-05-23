@@ -1,5 +1,5 @@
 ---
-title: "Tech Operator — The Flashbang Salesman"
+title: "The Flashbang Salesman — Tech Operator PvE Crowd Control Drone Build Guide (Support)"
 specialization: "Tech Operator"
 playstyle: Support
 pve: true
@@ -27,7 +27,7 @@ faqs:
 
 ## What It Is
 
-Welcome to the build that ruins the AI's day by giving them all permanent concussions.
+Welcome to the build that ruins the AI's day by giving them all permanent concussions. This off-meta Tech Operator PvE crowd control drone and hive build is a masterclass in shutting down encounters. It's a comfortable-to-Legendary difficulty support setup that keeps an entire pack permanently disoriented while your teammates actually get to play the game in peace.
 
 This is an off-meta Tech Operator build that keeps an entire pack permanently **Disoriented** while two skills slowly and agonizingly DPS them down. It uses the **Jackpot 4pc**, the **Striker Drone**, the **Striker Hive**, and the **Drone Overload** signature. You are not the top damage dealer. You are the flashbang salesman, and business is booming.
 
@@ -203,3 +203,5 @@ Deploy Striker Hive at chokepoint → Send Drone to lead target → Drone Lock t
 
 - **Bully enemy aim with drone hybrid DPS:** Check out our [Disorient Express Drone Tech Operator Build](/builds/tech-op-disorient-express-11) for aim disruption plus real weapon damage.
 - **Unleash explosive damage instead of CC:** See our [Demolitionist Explosive Chaos Build](/builds/demolitionist-explosive-chaos-4) for ultimate explosive damage.
+- **Need someone to keep you alive while you CC?** Point your friends to the [Legendary Healer Field Medic Build](/builds/legendary-healer-field-medic-5).
+- **Want to sit back and click heads?** The [Cover Shooter Sniper Build](/builds/cover-shooter-sniper-2) pairs perfectly with permanently disoriented enemies.

@@ -1,5 +1,5 @@
 ---
-title: "Tactical Pharma — Pure Environmental Terrorism"
+title: "Pure Environmental Terrorism — Field Medic PvE Chemical Trap Build Guide (Skill)"
 specialization: "Field Medic"
 playstyle: DPS
 pve: true
@@ -27,7 +27,7 @@ faqs:
 
 ## What It Is
 
-Are you looking for the fastest way to farm T2 elite missions? Do you enjoy the sight of your enemies slowly dissolving in pools of highly corrosive acid? Do you consider the Geneva Convention more of a suggestion than a rule? Good. Pull up a chair. We're making war crimes.
+Are you looking for the fastest way to farm T2 elite missions? Do you enjoy the sight of your enemies slowly dissolving in pools of highly corrosive acid? Do you consider the Geneva Convention more of a suggestion than a rule? Good. Pull up a chair. We're making war crimes. This Field Medic PvE chemical trap build guide offers a top-tier skill setup for melting through Challenging difficulty. It's an area-denial masterpiece that turns your medical degree into a license for unapologetic environmental terrorism.
 
 This is the top skill-DPS build in the game, made famous by RogueMadras, who claims it has the "highest DPS in the EU servers." It uses the **Tactical Pharma spec**, **4pc Jackpot + 2pc Fire Cycle**, and turns the **Chemical Trap** into a weapon of mass destruction. You drop acid pools. Things walk into them. Things stop walking. You drop more acid pools. Repeat until the room smells like a chemistry lab explosion.
 
@@ -218,3 +218,5 @@ Other OS options either reward weapon hits (irrelevant — your guns are decorat
 
 - **Take skill damage to the absolute limit:** See our top-tier [The Geneva Suggestion Field Medic Build](/builds/geneva-suggestion-field-medic-12) for EU server meta clear.
 - **Focus strictly on supporting your squad:** Check out our [Legendary Healer Field Medic Build](/builds/legendary-healer-field-medic-5).
+- **Want to CC everything?** Try the [Lockdown Tech Op Build](/builds/lockdown-tech-op-6) to freeze the battlefield.
+- **Prefer drone warfare?** Unleash chaos with the [Tech Op Disorient Express Build](/builds/tech-op-disorient-express-11).

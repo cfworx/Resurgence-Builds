@@ -1,5 +1,5 @@
 ---
-title: "Field Medic — The Geneva Suggestion"
+title: "The Geneva Suggestion — Field Medic PvE Build Guide (Chemical Trap AOE)"
 specialization: "Field Medic"
 playstyle: DPS
 pve: true
@@ -33,7 +33,7 @@ faqs:
 
 > 🎬 **Build credit:** This build was created by [**RogueMadras**](https://www.youtube.com/@RogueMadras). Watch him run it live: [Tactical Pharma gameplay](https://www.youtube.com/watch?v=orBlCP7ro4I&t=3351s). Go subscribe. The man earned it.
 
-The **best AOE clearing build in Division Resurgence right now** is a Field Medic that barely needs to aim. The Geneva Suggestion uses Chemical Trap to melt entire rooms while your guns serve as expensive paperweights with "+31.50% Engineering" stickers on them. The name? Because this build treats the Geneva Convention as more of a Geneva *Suggestion*.
+The **best AOE clearing build in Division Resurgence right now** is a Field Medic that barely needs to aim. The Geneva Suggestion uses Chemical Trap to melt entire rooms while your guns serve as expensive paperweights with "+31.50% Engineering" stickers on them. The name? Because this build treats the Geneva Convention as more of a Geneva *Suggestion*. This God-tier Field Medic PvE Chemical Trap AOE build is a brain-dead difficulty setup that will carry you through encounters with minimal effort. It's the ultimate lazy-man's room clearer for grandpas who want to watch the world dissolve.
 
 This is the final form of the Tactical Pharma archetype. Your weapons are stat sticks. Your Chemical Trap is an international incident waiting to happen. You exist to swap weapons every 8 seconds and watch the numbers go up. If you've played our [Jackpot Chemical](/builds/skill-meta-jackpot-chemical-8) build, this is its evolution — same skeleton, different organs, way higher body count, and absolutely zero ethical constraints.
 

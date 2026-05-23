@@ -1,5 +1,5 @@
 ---
-title: "Field Medic — Babysitting Idiots 101"
+title: "Babysitting Idiots 101 — Field Medic PvE Dedicated Healer Build Guide (Support)"
 specialization: Field Medic
 playstyle: Support
 pve: true
@@ -27,7 +27,7 @@ faqs:
 
 ## What It Is
 
-Are you tired of your teammates being complete idiots and dying because they don't know what cover is? Then play the Legendary Healer.
+Are you tired of your teammates being complete idiots and dying because they don't know what cover is? Then play the Legendary Healer. This dedicated Field Medic PvE healer build is your ultimate support tool for pushing through Legendary difficulty. By relying on your Support Station and Healing Hive, it's an unkillable support setup that pushes heal density so high your brain-dead DPS teammates literally won't be able to die.
 
 This is the apex PVE healer build. Using the **Field Medic spec**, **Healing Elites 4pc** (or Captain Cow 4pc bridge), and the **Healing Swarm signature**, this build is designed so that teams will actively fight over who gets to have you in their group. You will literally be playing Farmville with health bars while everyone else is playing a shooter.
 
@@ -201,3 +201,5 @@ Deploy Support Station → Effective Triage activates on low-HP allies (+40% Inc
 
 - **Go full offensive with chemical traps:** See our endgame [The Geneva Suggestion Field Medic Build](/builds/geneva-suggestion-field-medic-12) for top-tier AOE DPS.
 - **Automate your environmental damage:** Check out our [Jackpot Chemical Medic Build](/builds/skill-meta-jackpot-chemical-8) for specialized crowd control.
+- **Need massive heals but with aggressive oxidizers?** The [Panda Oxidizing Swarm Medic](/builds/panda-oxidizing-swarm-medic-14) is your perfect hybrid choice.
+- **If you'd rather be immortal yourself:** Step into the frontline with the [Vampire Bulwark Tank Build](/builds/vampire-bulwark-tank-9) and laugh at incoming fire.

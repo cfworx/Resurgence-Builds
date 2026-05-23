@@ -1,5 +1,5 @@
 ---
-title: "Field Medic — The Toxic Waste Dump"
+title: "The Toxic Waste Dump — Field Medic Dark Zone PvP/PvE Build Guide (Oxidizing Swarm)"
 specialization: "Field Medic"
 playstyle: "Hybrid"
 pve: true
@@ -29,7 +29,7 @@ faqs:
 
 > 🎬 **Build credit:** This build comes straight from the mind of [**ProjectPandaTv**](https://www.twitch.tv/projectpandatv). Watch the breakdown here: [BEST ALL-AROUND BUILD in The Division Resurgence (PVE + PvP)](https://www.youtube.com/watch?v=CB3Rq2VIP0g). Go drop him a follow!
 
-Welcome to the **"Toxic Waste Dump"** Medic. If you thought Field Medics were just there to awkwardly throw healing hives while the Vanguard does all the actual fighting, you haven't seen ProjectPandaTv's Oxidizing Swarm build. This archetype is an Engineering-heavy "Oxy" build that treats the Geneva Convention like a coloring book and turns team fights into a localized hazmat emergency.
+Welcome to the **"Toxic Waste Dump"** Medic. If you thought Field Medics were just there to awkwardly throw healing hives while the Vanguard does all the actual fighting, you haven't seen ProjectPandaTv's Oxidizing Swarm build. This archetype is an Engineering-heavy "Oxy" build that treats the Geneva Convention like a coloring book and turns team fights into a localized hazmat emergency. This top-tier Field Medic Dark Zone PvP/PvE Oxidizing Swarm build is a high-difficulty setup designed to absolutely melt meta-chasers into green goo while you laugh from safety.
 
 Whether you're running PvE, sweating in Conflict, or stealing loot in the Dark Zone, this build is designed to nuke players almost instantly. You'll be dropping Oxidizing Swarm hives that last nearly a full minute, melting entire squads while you sit back and casually reload your Vector.
 

@@ -1,5 +1,5 @@
 ---
-title: "Vanguard — The Alt-F4 Shotgun Button"
+title: "The Alt-F4 Shotgun Button — Vanguard PvE Shotgun Build Guide (DPS)"
 specialization: Vanguard
 playstyle: DPS
 pve: true
@@ -27,7 +27,7 @@ faqs:
 
 ## What It Is
 
-Do you look at an enemy elite's health bar and think, "I want that to go away right now"? Welcome to the delete button.
+Do you look at an enemy elite's health bar and think, "I want that to go away right now"? Welcome to the delete button. This Vanguard PvE shotgun build guide is tuned for high-difficulty DPS, letting you mathematically erase targets at close range. It's the perfect aggressive setup for when you want to speed-run existence and make the servers beg for mercy.
 
 This is the current best PVE DPS build in the game. Period. It uses the **Vanguard spec**, **4pc Phalanx Attack + 2pc Gunny Johnny**, a **Double Barrel Shotgun**, and the **Explosive Round OS**. Made famous by Godlike, who calls it "the premier DPS build in the game when it comes to firearms."
 
@@ -204,3 +204,5 @@ One is a percentage increase. The other is a physics engine stress test. Run Exp
 
 - **Take it to standard PvP:** Check out our [Conflict PvP Vanguard Warlord Build](/builds/conflict-pvp-fearless-warlord) for arena dominance.
 - **Ruin lives in the Dark Zone:** See our [Vanguard Dark Zone PvP Lady Death Build](/builds/dark-zone-pvp-vanguard-lady-death-3) for toxic mobility.
+- **Need a pocket healer?** Bring along a friend running the [Legendary Healer Field Medic Build](/builds/legendary-healer-field-medic-5).
+- **Want to sit in cover instead?** Try the [Cover Shooter Sniper Build](/builds/cover-shooter-sniper-2) and let someone else take the hits.

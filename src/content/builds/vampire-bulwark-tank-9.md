@@ -1,5 +1,5 @@
 ---
-title: "Bulwark — The Unkillable Mosquito"
+title: "The Unkillable Mosquito — Bulwark PvE LMG Build Guide (Tank)"
 specialization: Bulwark
 playstyle: Tank
 pve: true
@@ -29,7 +29,7 @@ faqs:
 
 > ⚠️ **Buff incoming.** Ubisoft confirmed in Patch 1.2.1 (May 20, 2026) that Strawberry Milkshake's perks are underwhelming and under review for a buff. **Hold your recalibration materials** — this build will be updated when the new numbers land. Farm Weekly Mission Exotic Manuals now to stockpile SM recal mats (fixed in 1.2.1 to correctly drop).
 
-Are you tired of taking cover? Do you look at a health bar and think, "I could just shoot my way out of this"? Do your teammates keep dying while you stand in the open wondering what all the fuss is about? Welcome to the Happy Survival Vampire Tank.
+Are you tired of taking cover? Do you look at a health bar and think, "I could just shoot my way out of this"? Do your teammates keep dying while you stand in the open wondering what all the fuss is about? Welcome to the Happy Survival Vampire Tank. This Bulwark PvE LMG build guide is an off-meta, high-sustain tank setup designed for soloing Challenging content. It perfectly balances lifesteal and raw toughness, letting you out-heal incoming damage by stubbornly refusing to stop shooting.
 
 This is a solo-first, off-meta Bulwark build that turns you into a literal bloodsucking parasite with a machine gun. Using the **Fearless Warrior 4pc**, the **Strawberry Milkshake** exotic LMG, and the **Happy Survival OS**, the premise is beautifully simple: **Hold the trigger until the bad guys stop moving, and watch your HP bar go brrrrrrr.**
 
@@ -216,3 +216,5 @@ No other OS turns your tank stats into weapon damage. Happy Survival is the only
 
 - **Hate being in their face?** See our [Vanguard Cover Shooter Sniper Build](/builds/cover-shooter-sniper-2) for safety and precision.
 - **Looking for aggressive close-range play?** See our [PvE Meta Vanguard Shotgun Build](/builds/pve-meta-vanguard-shotgun-7) for high-impact brawling.
+- **Want to play a true support?** The [Panda Oxidizing Swarm Medic Build](/builds/panda-oxidizing-swarm-medic-14) is your ticket to keeping teams alive.
+- **Need a good explosive setup?** Try the [Strawberry Reaper Demolitionist Build](/builds/strawberry-reaper-demolitionist-10) for pure Michael Bay energy.

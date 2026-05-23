@@ -1,5 +1,5 @@
 ---
-title: "Demolitionist — Michael Bay's Wet Dream"
+title: "Michael Bay's Wet Dream — Demolitionist PvE Explosive Skill Build Guide (DPS)"
 specialization: Demolitionist
 playstyle: Solo
 pve: true
@@ -27,7 +27,7 @@ faqs:
 
 ## What It Is
 
-Do you like explosions? Do you think the concept of "collateral damage" is just a suggestion? Welcome to Michael Bay's wet dream.
+Do you like explosions? Do you think the concept of "collateral damage" is just a suggestion? Welcome to Michael Bay's wet dream. This off-meta Demolitionist PvE explosive skill build is for the solo player who wants to turn every engagement into a cinematic disaster. It's a challenging-tier DPS setup designed to completely fry the game's framerate with sheer destructive output.
 
 This is a solo-first off-meta Demolitionist build where **every single skill cast detonates twice**. Using the **Jackpot 4pc**, the **M32A1 Grenade Launcher** signature, and the **Collateral Damage OS**, this build is designed to turn your screen into a chaotic mess of fire and numbers. The Geneva Convention called — you sent it to voicemail.
 
@@ -176,3 +176,5 @@ Artillery Turret hits enemy → Collateral Damage OS detonates second explosion 
 
 - **Infect whole rooms with bleeding:** Check out our [Strawberry Reaper LMG Demolitionist Build](/builds/strawberry-reaper-demolitionist-10) for massive DoT cascade.
 - **Looking for heavy crowd control?** See our [Lockdown Tech Op CC Swarm Build](/builds/lockdown-tech-op-6) to freeze enemies in place.
+- **Want to push chemical warfare?** Our [Geneva Suggestion Field Medic Build](/builds/geneva-suggestion-field-medic-12) will satisfy your urge to commit war crimes.
+- **Need a meta weapon DPS build?** Give the [Vanguard Shotgun Meta Build](/builds/pve-meta-vanguard-shotgun-7) a spin to instantly delete elites.

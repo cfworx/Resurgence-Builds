@@ -1,5 +1,5 @@
 ---
-title: "Vanguard — The Cross-Map Coward (Sniper)"
+title: "The Cross-Map Coward — Vanguard PvE Sniper Build Guide (DPS)"
 specialization: Vanguard
 playstyle: DPS
 pve: true
@@ -27,7 +27,7 @@ faqs:
 
 ## What It Is
 
-Do you hate getting shot? Do you prefer doing your job from a different zip code while your teammates take all the aggro? Welcome to the Cover Shooter Sniper build.
+Do you hate getting shot? Do you prefer doing your job from a different zip code while your teammates take all the aggro? Welcome to the Cover Shooter Sniper build. This high-difficulty Vanguard PvE sniper build guide turns your marksman rifle into a cross-map delete button for high-end content. It's a pure glass-cannon DPS setup for cowards who want to safely click heads while watching their teammates eat grenades.
 
 This is an off-meta Vanguard sniper setup that deletes elites from across the map with bolt-action headshots. It uses the **One Shot One Kill 4pc**, a **DSR-1 marksman rifle**, and the **Glass Cannon** chest. You are mathematically designed to die if a stiff breeze hits you, but you won't care, because everything else will be dead before it gets within 50 meters of you.
 
@@ -201,3 +201,5 @@ Pulse marks targets through walls → you ADS from cover → first headshot crit
 
 - **Want to absorb damage instead of hiding?** Check out our solo-first [Vampire Bulwark LMG Tank Build](/builds/vampire-bulwark-tank-9).
 - **Looking for active PvP playstyles?** See our [Conflict PvP Vanguard Warlord Build](/builds/conflict-pvp-fearless-warlord) to dominate standard arenas.
+- **Want a different kind of explosive PvE?** Bring the boom with the [Demolitionist Explosive Chaos Build](/builds/demolitionist-explosive-chaos-4).
+- **Need to keep the team alive?** Be the ultimate band-aid with the [Legendary Healer Field Medic Build](/builds/legendary-healer-field-medic-5).

@@ -1,5 +1,5 @@
 ---
-title: "Tech Operator — The Disorient Express"
+title: "The Disorient Express — Tech Operator PvE Build Guide (Drone Hybrid)"
 specialization: "Tech Operator"
 playstyle: DPS
 pve: true
@@ -25,7 +25,7 @@ faqs:
 
 ## What It Is
 
-You ever play against a Tech Op who pings your skull with a flying lawnmower while you're frozen in place trying to remember which button is ADS? No? Cool. Let's make that their problem now.
+You ever play against a Tech Op who pings your skull with a flying lawnmower while you're frozen in place trying to remember which button is ADS? No? Cool. Let's make that their problem now. This top-tier Tech Operator PvE Drone Hybrid build is a comfortable-difficulty setup that weaponizes crowd control to hilarious effect. It's the perfect off-meta setup to make NPCs regret their life choices while you casually dismantle their health bars.
 
 The **Disorient Express** is an off-meta Tech Operator that turns the Striker Drone into a TSA agent — every crit applies Disoriented, every Disoriented enemy gets dunked on by Concerted Strike, and the rotation never stops because the drone is feeding itself crit chance through Stabilized Flight. We're not in the meta. We're not even on the map. We're at cruising altitude.
 
@@ -183,3 +183,4 @@ Drone crits → EMCAT applies Disoriented → enemy aim is disrupted → they mi
 
 - **Switch from drones to active crowd control:** Check out our [Lockdown Tech Op CC Swarm Build](/builds/lockdown-tech-op-6).
 - **Convert debuffed targets to LMG damage:** See our [Strawberry Reaper LMG Demolitionist Build](/builds/strawberry-reaper-demolitionist-10).
+- **Click heads from a distance:** See our [Cover Shooter Sniper Build](/builds/cover-shooter-sniper-2) if you want to let your crosshairs do the talking.

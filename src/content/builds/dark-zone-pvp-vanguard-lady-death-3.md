@@ -1,5 +1,5 @@
 ---
-title: "Vanguard — The Hate Mail Generator"
+title: "The Hate Mail Generator — Vanguard Dark Zone PvP SMG Build Guide (DPS)"
 specialization: Vanguard
 playstyle: DPS
 pve: false
@@ -27,7 +27,7 @@ faqs:
 
 ## What It Is
 
-This is the dominant Dark Zone PVP build. Using the **Vanguard spec**, **4pc Fury Strike + 2pc Fearless Warrior**, the **Lady Death** exotic SMG, and a Type 81 secondary. Made famous by Willspot (who probably receives a lot of angry messages), this monstrosity hits 300k+ DPS at a 75% crit chance while sitting on a 106k HP pool fully buffed.
+This is the dominant Dark Zone PVP build. Using the **Vanguard spec**, **4pc Fury Strike + 2pc Fearless Warrior**, the **Lady Death** exotic SMG, and a Type 81 secondary. This medium-difficulty Vanguard Dark Zone PvP SMG build guide is tuned for pure DPS and supreme toxicity, melting players before they can even blink. Made famous by Willspot (who probably receives a lot of angry messages), this monstrosity hits 300k+ DPS at a 75% crit chance while sitting on a 106k HP pool fully buffed, perfect for anyone whose primary goal is to ruin someone else's evening.
 
 You are bringing wall-hacks and a mathematically broken gun to a supposedly fair fight.
 
@@ -206,3 +206,5 @@ Pulse marks targets through walls → pop Tactical Link → Assault Charge gives
 
 - **Dominate organized PvP:** Check out our [Conflict PvP Vanguard Warlord Build](/builds/conflict-pvp-fearless-warlord) for standard PvP modes.
 - **Ready for close-quarters PvE?** See our [PvE Meta Vanguard Shotgun Build](/builds/pve-meta-vanguard-shotgun-7) for high-impact room clearing.
+- **Tired of running and gunning?** Chill in the back with the [Cover Shooter Sniper Build](/builds/cover-shooter-sniper-2).
+- **Want to completely disable enemies?** The [Lockdown Tech Op Build](/builds/lockdown-tech-op-6) brings massive CC to the table.
