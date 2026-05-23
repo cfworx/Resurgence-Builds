@@ -26,7 +26,15 @@ const itemListLd = {
   itemListElement: bonusAttributes.map((item: { category: string }, i: number) => ({
     '@type': 'ListItem',
     position: i + 1,
-    name: item.category,
+    url: Astro.url.href,
+    item: {
+      '@type': 'Thing',
+      '@id': `${Astro.url.href}#item-${i}`,
+      name: item.name || item.talent || item.attribute || item.protocolName || 'Item',
+      description: item.description || item.talentDescription || item.effect || item.notes || `Details for ${item.name || item.talent || item.attribute || item.protocolName || 'item'}`,
+      url: Astro.url.href,
+      subjectOf: { '@id': 'https://resurgencebuilds.com/#division-resurgence' }
+    }
   })),
 };
 ---

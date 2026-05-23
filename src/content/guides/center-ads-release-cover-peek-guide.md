@@ -9,6 +9,23 @@ featuredImage: "/images/division-resurgence-center-ads-cover-peek.png"
 imageAlt: "Division Resurgence agent performing a cover peek ADS technique in PvP combat"
 shareTitle: "Cover-Peek Tech Exposed"
 shareText: "The top Conflict streamers' cover-peek isn't a cheat — it's 14 settings and one tap input. Here's the whole playbook."
+howTo:
+  name: "How to Perform a Center-ADS Release Cover Peek"
+  description: "Five-input technique for peeking from cover, firing a controlled burst, and returning to cover without exposing your character."
+  totalTime: "PT2M"
+  tool:
+    - "Any rifle, marksman rifle, or LMG with iron sights or red dot"
+  steps:
+    - name: "Hold cover"
+      text: "Press and hold the cover button against a piece of cover until your character is fully attached."
+    - name: "Pre-aim"
+      text: "Drag the right thumbstick or aim area toward the target's expected position before pressing ADS."
+    - name: "Tap ADS"
+      text: "Briefly tap the ADS button — do not hold it — to peek out of cover."
+    - name: "Fire on release"
+      text: "Fire your controlled burst in the moment your character is peeking, then release ADS."
+    - name: "Return to cover"
+      text: "Releasing ADS automatically returns your character to cover. Do not re-press cover."
 faqs:
   - question: "Does Center-ADS Release work on mobile?"
     answer: "Yes — and frankly, the mobile players who mastered it before PC cross-play launched are the reason half the subreddit thinks the game has an aimbot problem. The tech is platform-agnostic. Touchscreen, controller, keyboard+mouse — doesn't matter. Mobile players may find the tap-release timing slightly harder without a trigger to squeeze, but the frame window is identical. Your thumbs are not the bottleneck. Your settings menu — which you haven't opened since install — is."

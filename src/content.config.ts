@@ -58,6 +58,16 @@ const guides = defineCollection({
     imageAlt: z.string().optional(),
     shareTitle: z.string().optional(),
     shareText: z.string().optional(),
+    howTo: z.object({
+      name: z.string(),
+      description: z.string(),
+      totalTime: z.string(),
+      tool: z.array(z.string()),
+      steps: z.array(z.object({
+        name: z.string(),
+        text: z.string()
+      }))
+    }).optional(),
     faqs: z.array(z.object({
       question: z.string(),
       answer: z.string(),

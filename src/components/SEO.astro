@@ -30,59 +30,178 @@ const {
   faqs = [],
 } = Astro.props;
 
-const siteName = 'The Division Resurgence Builds';
+const siteName = 'Resurgence Builds';
 const fullTitle = title.includes(siteName) ? title : `${title} · ${siteName}`;
 const siteUrl = Astro.site?.toString().replace(/\/$/, '') || 'https://resurgencebuilds.com';
 const canonicalURL = canonical || new URL(Astro.url.pathname, siteUrl).toString();
 const ogImageUrl = ogImage.startsWith('http') ? ogImage : `${siteUrl}${ogImage}`;
 
-const breadcrumbLd = breadcrumbs.length > 0 ? {
-  '@context': 'https://schema.org',
-  '@type': 'BreadcrumbList',
-  itemListElement: breadcrumbs.map((crumb, index) => ({
-    '@type': 'ListItem',
-    position: index + 1,
-    name: crumb.name,
-    item: crumb.url === '#' ? canonicalURL : `${siteUrl}${crumb.url}`,
-  })),
-} : null;
+const graph: any[] = [];
 
-const articleLd = article ? {
-  '@context': 'https://schema.org',
-  '@type': 'Article',
-  headline: title,
-  description,
-  datePublished: article.publishDate,
-  dateModified: article.modifiedDate || article.publishDate,
-  author: { '@type': 'Person', name: article.author },
-  publisher: { '@type': 'Organization', name: siteName },
-  image: ogImageUrl,
-} : null;
-
-const faqLd = faqs.length > 0 ? {
-  '@context': 'https://schema.org',
-  '@type': 'FAQPage',
-  mainEntity: faqs.map(faq => ({
-    '@type': 'Question',
-    name: faq.question,
-    acceptedAnswer: {
-      '@type': 'Answer',
-      text: faq.answer,
-    },
-  })),
-} : null;
-
-const orgLd = {
-  '@context': 'https://schema.org',
+// 1. Organization
+graph.push({
   '@type': 'Organization',
+  '@id': `${siteUrl}/#organization`,
   name: siteName,
   url: siteUrl,
-  logo: `${siteUrl}/og-default.png`,
+  logo: {
+    '@type': 'ImageObject',
+    url: `${siteUrl}/og-default.png`,
+    width: 1200,
+    height: 630
+  },
   sameAs: [
     'https://twitter.com/resurgencebuilds',
-    'https://youtube.com/@resurgencebuilds',
-    'https://reddit.com/r/DivisionResurgence'
+    'https://youtube.com/@resurgencebuilds'
   ]
+});
+
+// 2. WebSite
+const isHome = Astro.url.pathname === '/';
+graph.push({
+  '@type': 'WebSite',
+  '@id': `${siteUrl}/#website`,
+  url: siteUrl,
+  name: siteName,
+  publisher: { '@id': `${siteUrl}/#organization` },
+  potentialAction: isHome ? {
+    '@type': 'SearchAction',
+    target: {
+      '@type': 'EntryPoint',
+      urlTemplate: `${siteUrl}/?s={search_term_string}`
+    },
+    'query-input': 'required name=search_term_string'
+  } : undefined
+});
+
+// 3. VideoGame
+graph.push({
+  '@type': 'VideoGame',
+  '@id': `${siteUrl}/#division-resurgence`,
+  name: "Tom Clancy's The Division Resurgence",
+  alternateName: ["Division Resurgence", "The Division Resurgence"],
+  publisher: { '@type': 'Organization', name: 'Ubisoft' },
+  gamePlatform: ['iOS', 'Android'],
+  applicationCategory: 'Game',
+  operatingSystem: ['iOS 13+', 'Android 8+'],
+  sameAs: [
+    'https://en.wikipedia.org/wiki/Tom_Clancy%27s_The_Division_Resurgence',
+    'https://www.ubisoft.com/en-us/game/the-division/resurgence'
+  ]
+});
+
+// 4. WebPage
+graph.push({
+  '@type': 'WebPage',
+  '@id': `${canonicalURL}#webpage`,
+  url: canonicalURL,
+  isPartOf: { '@id': `${siteUrl}/#website` },
+  about: { '@id': `${siteUrl}/#division-resurgence` },
+  breadcrumb: breadcrumbs.length > 0 ? { '@id': `${canonicalURL}#breadcrumb` } : undefined
+});
+
+// 5. BreadcrumbList
+if (breadcrumbs.length > 0) {
+  const itemListElement = [];
+  
+  // Ensure Home is always position 1
+  if (breadcrumbs[0].name !== 'Home') {
+    itemListElement.push({
+      '@type': 'ListItem',
+      position: 1,
+      name: 'Home',
+      item: siteUrl
+    });
+  }
+
+  breadcrumbs.forEach((crumb, idx) => {
+    itemListElement.push({
+      '@type': 'ListItem',
+      position: itemListElement.length + 1,
+      name: crumb.name,
+      item: crumb.url === '#' ? canonicalURL : `${siteUrl}${crumb.url}`,
+    });
+  });
+
+  graph.push({
+    '@type': 'BreadcrumbList',
+    '@id': `${canonicalURL}#breadcrumb`,
+    itemListElement
+  });
+}
+
+// 6. Article
+if (article) {
+  const isPatchNote = Astro.url.pathname.includes('/patch-notes/');
+  const articleType = isPatchNote ? 'TechArticle' : 'Article';
+  
+  const articleNode: any = {
+    '@type': articleType,
+    '@id': `${canonicalURL}#article`,
+    isPartOf: { '@id': `${canonicalURL}#webpage` },
+    mainEntityOfPage: { '@id': `${canonicalURL}#webpage` },
+    headline: title,
+    description,
+    image: {
+      '@type': 'ImageObject',
+      url: ogImageUrl,
+      width: 1200,
+      height: 630
+    },
+    datePublished: article.publishDate,
+    dateModified: article.modifiedDate || article.publishDate,
+    author: {
+      '@type': 'Person',
+      name: article.author
+    },
+    publisher: { '@id': `${siteUrl}/#organization` },
+    about: { '@id': `${siteUrl}/#division-resurgence` }
+  };
+
+  if (isPatchNote) {
+    articleNode.proficiencyLevel = "Intermediate";
+    articleNode.dependencies = "Tom Clancy's The Division Resurgence";
+  }
+
+  graph.push(articleNode);
+}
+
+// 7. FAQs
+if (faqs.length > 0) {
+  graph.push({
+    '@type': 'FAQPage',
+    '@id': `${canonicalURL}#faq`,
+    mainEntity: faqs.map(faq => ({
+      '@type': 'Question',
+      name: faq.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: faq.answer,
+      },
+    })),
+  });
+}
+
+// 8. Custom JSON-LD from Pages/Layouts
+if (jsonLd) {
+  const customNodes = Array.isArray(jsonLd) ? jsonLd : [jsonLd];
+  customNodes.forEach((node: any) => {
+    // If it's passed as a full block with @context, delete context so it merges cleanly into @graph
+    delete node['@context'];
+    
+    // Auto-link to VideoGame if it makes sense (like WebApplication or ItemList)
+    if (!node.about && !node.subjectOf && node['@type'] !== 'HowTo') {
+       if (node['@type'] === 'WebApplication') {
+         node.about = { '@id': `${siteUrl}/#division-resurgence` };
+       }
+    }
+    graph.push(node);
+  });
+}
+
+const finalJsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': graph
 };
 ---
 
@@ -110,24 +229,6 @@ const orgLd = {
 <meta name="twitter:title" content={fullTitle} />
 <meta name="twitter:description" content={description} />
 <meta name="twitter:image" content={ogImageUrl} />
-<meta name="twitter:site" content="@resaboratorium" />
+<meta name="twitter:site" content="@resurgencebuilds" />
 
-{breadcrumbLd && (
-  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbLd)} />
-)}
-
-{articleLd && (
-  <script type="application/ld+json" set:html={JSON.stringify(articleLd)} />
-)}
-
-{faqLd && (
-  <script type="application/ld+json" set:html={JSON.stringify(faqLd)} />
-)}
-
-<script type="application/ld+json" set:html={JSON.stringify(orgLd)} />
-
-{jsonLd && (
-  Array.isArray(jsonLd) 
-    ? jsonLd.map(schema => <script type="application/ld+json" set:html={JSON.stringify(schema)} />)
-    : <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
-)}
+<script type="application/ld+json" set:html={JSON.stringify(finalJsonLd)} />

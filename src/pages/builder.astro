@@ -34,14 +34,16 @@ const faqs = [
   { question: "Why does the verified database contain exactly 69 weapon talents?", answer: "Nice. Also, because that's the exact number of verified weapon talents in the game. If you want us to add a 70th talent just to ruin the joke, write a complaint letter to Ubisoft and see if they answer it before the next decade." }
 ];
 const jsonLd = {
-  '@context': 'https://schema.org',
   '@type': 'WebApplication',
-  name: 'Division Resurgence Build Planner',
-  description,
+  '@id': 'https://resurgencebuilds.com/builder/#app',
+  name: 'Resurgence Build Planner',
   url: 'https://resurgencebuilds.com/builder/',
   applicationCategory: 'GameApplication',
-  operatingSystem: 'Web',
-  offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' }
+  operatingSystem: 'Any (browser)',
+  browserRequirements: 'Requires JavaScript. Modern evergreen browser.',
+  offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+  about: { '@id': 'https://resurgencebuilds.com/#division-resurgence' },
+  publisher: { '@id': 'https://resurgencebuilds.com/#organization' }
 };
 
 const allAttributes = bonusAttributes.flatMap(cat => cat.attributes);

@@ -9,7 +9,17 @@ const allBuilds = await getCollection('builds');
 
 function assignTier(build) {
   const text = (build.data.title + ' ' + build.data.description + ' ' + (build.data.tags||[]).join(' ')).toLowerCase();
-  if (text.includes('meta') || text.includes('hate mail') || text.includes('24-0') || text.includes('alt-f4') || text.includes('pinnacle') || text.includes('king')) return 'S';
+  
+  // Explicit overrides
+  if (text.includes('toxic waste dump')) return 'S';
+  if (text.includes('geneva suggestion')) return 'S';
+  if (text.includes('mosquito')) return 'B';
+  if (text.includes('strawberry reaper')) return 'B';
+  if (text.includes('hate mail generator')) return 'C';
+  if (text.includes('disorient express')) return 'A';
+
+  // Fallback heuristic rules
+  if (text.includes('meta') || text.includes('24-0') || text.includes('alt-f4') || text.includes('pinnacle') || text.includes('king')) return 'S';
   if (text.includes('exotic') || text.includes('insane') || text.includes('strong') || text.includes('unkillable')) return 'A';
   if (text.includes('off-meta') || text.includes('fun') || text.includes('coward') || text.includes('niche')) return 'C';
   return 'B';

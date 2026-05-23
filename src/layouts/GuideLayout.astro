@@ -16,9 +16,30 @@ export interface Props {
   shareText?: string;
   headings?: { depth: number; slug: string; text: string }[];
   faqs?: { question: string; answer: string }[];
+  howTo?: {
+    name: string;
+    description: string;
+    totalTime: string;
+    tool: string[];
+    steps: { name: string; text: string; }[];
+  };
 }
 
-const { title, description, category, lastUpdated, tags, author = 'Resurgence Builds', featuredImage, imageAlt, shareTitle, shareText, headings = [], faqs = [] } = Astro.props;
+const {
+  title,
+  description,
+  category,
+  lastUpdated,
+  tags,
+  author = 'RapidF5',
+  featuredImage,
+  imageAlt,
+  shareTitle,
+  shareText,
+  headings = [],
+  faqs = [],
+  howTo,
+} = Astro.props;
 
 const twitterShareUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText || `Check out this Division Resurgence guide: ${title}`)}&url=${encodeURIComponent(Astro.url.toString())}`;
 const redditShareUrl = `https://reddit.com/submit?url=${encodeURIComponent(Astro.url.toString())}&title=${encodeURIComponent(title)}`;
@@ -37,15 +58,18 @@ const breadcrumbItems = [
 const tocItems = headings.filter(h => h.depth <= 3);
 
 const siteUrl = Astro.site?.toString().replace(/\/$/, '') || 'https://resurgencebuilds.com';
-const howToLd = headings.length > 0 ? {
+const howToLd = howTo ? {
   '@context': 'https://schema.org',
   '@type': 'HowTo',
-  name: title,
-  description: description,
-  step: headings.filter(h => h.depth === 2 || h.depth === 3).map((h, index) => ({
+  name: howTo.name,
+  description: howTo.description,
+  totalTime: howTo.totalTime,
+  tool: howTo.tool.map(t => ({ '@type': 'HowToTool', name: t })),
+  step: howTo.steps.map((s, index) => ({
     '@type': 'HowToStep',
-    text: h.text,
-    url: `${siteUrl}${Astro.url.pathname}#${h.slug}`,
+    position: index + 1,
+    name: s.name,
+    text: s.text,
   }))
 } : null;
 ---

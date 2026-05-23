@@ -14,10 +14,18 @@ const itemListLd = {
   name: 'The Division Resurgence Weapon Talents',
   description: description,
   numberOfItems: weaponTalents.length,
-  itemListElement: weaponTalents.map((item: { name: string }, i: number) => ({
+  itemListElement: weaponTalents.map((item: any, i: number) => ({
     '@type': 'ListItem',
     position: i + 1,
-    name: item.name,
+    url: Astro.url.href,
+    item: {
+      '@type': 'Thing',
+      '@id': `${Astro.url.href}#item-${i}`,
+      name: item.name || item.talent || item.attribute || item.protocolName || 'Item',
+      description: item.description || item.talentDescription || item.effect || item.notes || `Details for ${item.name || item.talent || item.attribute || item.protocolName || 'item'}`,
+      url: Astro.url.href,
+      subjectOf: { '@id': 'https://resurgencebuilds.com/#division-resurgence' }
+    }
   })),
 };
 ---
