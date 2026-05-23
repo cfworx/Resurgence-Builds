@@ -173,6 +173,8 @@ Pulse marks targets through walls → pop Tactical Link → Assault Charge gives
 
 ## Combat Rotation
 
+This build is purpose-built for the [Center-ADS Release](/guides/center-ads-release-cover-peek-guide/) peek — see the full settings checklist if you haven't dialed your settings.
+
 1. **Pre-Pulse before peeking:** Establish your wall-hacks and lock your 8 targets to set up the damage multipliers.
 2. **Deploy your Signature Ability** → Assault Charge procs (+30% Firepower, +20% RoF for 20s).
 3. **Swap to Lady Death** right before engaging → Backup Battery procs (+22.50% Engineering).

@@ -148,6 +148,8 @@ Pre-throw grenades → Explosive Fury stacks +36% RoF → open fire with Warlord
 
 ## Combat Rotation
 
+This build is purpose-built for the [Center-ADS Release](/guides/center-ads-release-cover-peek-guide/) peek — see the full settings checklist if you haven't dialed your settings.
+
 1. **Pre-throw a grenade** before engaging to get your Explosive Fury stack 1 (+18% Rate of Fire for 10s).
 2. **Throw a second grenade** as the fight starts to get stack 2 (+36% RoF total).
 3. **Open with the Warlord.** Play Rough activates the very millisecond you fire, giving you 25% DR live.

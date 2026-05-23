@@ -1,0 +1,135 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import GuideCard from '../../components/GuideCard.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import SectionTag from '../../components/SectionTag.astro';
+import { getCollection } from 'astro:content';
+
+const allGuides = await getCollection('guides');
+const sorted = allGuides.sort((a, b) => b.data.lastUpdated.getTime() - a.data.lastUpdated.getTime());
+
+const categories = [...new Set(allGuides.map(g => g.data.category))];
+
+const breadcrumbItems = [{ name: 'Guides', url: '/guides/' }];
+
+const siteUrl = Astro.site?.toString().replace(/\/$/, '') || 'https://resurgencebuilds.com';
+const itemListLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: 'The Division Resurgence Guides',
+  itemListElement: sorted.map((guide, index) => ({
+    '@type': 'ListItem',
+    position: index + 1,
+    name: guide.data.title,
+    url: `${siteUrl}/guides/${guide.id}/`,
+  }))
+};
+---
+
+<BaseLayout
+  title="Division Resurgence Guides — Leveling, Farming & Strategies"
+  description="Master The Division Resurgence with our comprehensive guides covering leveling, farming, Dark Zone PvP, and general strategies."
+  breadcrumbs={breadcrumbItems}
+  jsonLd={itemListLd}
+>
+  <div class="container section">
+    <Breadcrumbs items={breadcrumbItems} />
+    <SectionTag label="Guides" />
+    <h1 class="heading-accent">All Guides</h1>
+    <p style="color:var(--ink-muted);margin-bottom:var(--sp-6);">
+      Essential knowledge for mastering Manhattan. Discover tips for leveling, farming strategies, PvP techniques, and game mechanics.
+    </p>
+
+    <div class="filter-bar" id="guide-filters">
+      <button class="filter-btn is-active" data-filter="all">All</button>
+      <div class="filter-separator" style="width: 1px; height: 1.5rem; background: var(--border); margin: 0 var(--sp-2);"></div>
+      {categories.map(c => <button class="filter-btn" data-filter={c}>{c}</button>)}
+    </div>
+
+    <div class="grid grid--3" id="guides-grid">
+      {sorted.map((guide) => (
+        <div 
+          style="display: flex; height: 100%;"
+          data-category={guide.data.category} 
+          data-tags={JSON.stringify(guide.data.tags || [])}
+        >
+          <GuideCard
+            title={guide.data.title}
+            href={`/guides/${guide.id}/`}
+            category={guide.data.category}
+            description={guide.data.description}
+            lastUpdated={guide.data.lastUpdated}
+          />
+        </div>
+      ))}
+    </div>
+
+    <!-- Empty state -->
+    <div id="no-results" style="display:none;text-align:center;padding:var(--sp-12) 0;">
+      <p style="color:var(--ink-muted);font-size:var(--text-lg);">No guides match that filter.</p>
+      <button class="btn btn--outline" id="clear-filter" style="margin-top:var(--sp-4);">Show All Guides</button>
+    </div>
+  </div>
+</BaseLayout>
+
+<script>
+  const filterBar = document.getElementById('guide-filters');
+  const grid = document.getElementById('guides-grid');
+  const noResults = document.getElementById('no-results');
+  const clearBtn = document.getElementById('clear-filter');
+  
+  let currentFilter = 'all';
+
+  function filterGuides() {
+    if (!grid) return;
+
+    const cards = Array.from(grid.querySelectorAll<HTMLElement>('[data-category]'));
+    let matchCount = 0;
+
+    cards.forEach((el) => {
+      let show = false;
+      if (currentFilter === 'all') {
+        show = true;
+      } else {
+        show = el.dataset.category === currentFilter;
+      }
+
+      if (show) {
+        el.style.display = '';
+        matchCount++;
+      } else {
+        el.style.display = 'none';
+      }
+    });
+
+    if (noResults) {
+      noResults.style.display = matchCount === 0 ? '' : 'none';
+    }
+  }
+
+  function setActiveButton(activeBtn: Element) {
+    filterBar?.querySelectorAll('.filter-btn').forEach((b) => b.classList.remove('is-active'));
+    activeBtn.classList.add('is-active');
+  }
+
+  if (filterBar) {
+    filterBar.addEventListener('click', (e) => {
+      const btn = (e.target as HTMLElement).closest('.filter-btn');
+      if (!btn) return;
+      setActiveButton(btn);
+      currentFilter = btn.getAttribute('data-filter') || 'all';
+      filterGuides();
+    });
+  }
+
+  if (clearBtn) {
+    clearBtn.addEventListener('click', () => {
+      const allBtn = filterBar?.querySelector('[data-filter="all"]');
+      if (allBtn) setActiveButton(allBtn);
+      currentFilter = 'all';
+      filterGuides();
+    });
+  }
+
+  filterGuides();
+</script>

@@ -18,7 +18,7 @@ faqs:
 
 If you're queueing into Legendary missions with a haphazard collection of gear you picked up off the floor and wondering why you're getting instantly vaporized, this guide is for you. Below is the definitive list of the best PvE DPS builds in The Division Resurgence. 
 
-Pick a lane, farm the gear, and stop making the Field Medic revive you every 30 seconds.
+Pick a lane, farm the gear, and stop making the Field Medic revive you every 30 seconds. Pair these with the [Center-ADS Release](/guides/center-ads-release-cover-peek-guide/) cover-peek technique — most of these builds assume you can do it.
 
 ### 1. The Alt-F4 Shotgun Button (Vanguard)
 The absolute king of burst DPS. This Vanguard build uses the Double Barrel Shotgun and Explosive Rounds to instantly delete elites before they even finish their spawn animations. 

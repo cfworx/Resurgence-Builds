@@ -167,6 +167,8 @@ Pulse marks targets through walls → you ADS from cover → first headshot crit
 
 ## Combat Rotation
 
+This build is purpose-built for the [Center-ADS Release](/guides/center-ads-release-cover-peek-guide/) peek — see the full settings checklist if you haven't dialed your settings.
+
 1. **Pre-engage:** Pulse the pack from the safety of your cover. Wallhacks are fair and balanced.
 2. **Drop Smart Cover** behind you for the +40% Damage Reduction layer (just in case they shoot back).
 3. **Headshot the closest elite** — Cover Shooter stack 1.
