@@ -99,7 +99,7 @@ Ubisoft explicitly acknowledges the following are **not resolved** in this patch
 - **"Outpost Annihilation"** side mission not progressing — confirmed broken since beta, still listed as under investigation. At this point it may outlive us all
 - Some purchases still not being received in-game — contact support with a transaction ID
 - Tactical Augmentation reward from the Dark Zone quest cannot be claimed
-- Weapon proficiency blocked in some cases — see the [workaround in the KB](/knowledge-base/) if you're on iOS: logging into the PC client once typically clears it
+- Weapon proficiency blocked in some cases — see the workaround if you're on iOS: logging into the PC client once typically clears it
 
 ---
 
