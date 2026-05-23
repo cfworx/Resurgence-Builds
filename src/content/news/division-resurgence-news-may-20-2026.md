@@ -8,6 +8,10 @@ description: "Patch 1.2.1 is live — vendor fixes, inventory loss fixed, 500K B
 tags: ["News", "Patch Notes", "Season 1", "Phase 2", "Strawberry Milkshake", "Dark Zone", "Roadmap"]
 shareTitle: "Spread the news"
 shareText: "Share this so your squad knows what changed, what's still broken, and why the Strawberry Milkshake buff can't come soon enough."
+
+faqs:
+  - question: "Why should I care about this news?"
+    answer: "Because reading is fundamental, Agent. And knowing is half the battle (the other half is shooting)."
 ---
 
 Agents, a lot has happened in the last 48 hours. Ubisoft rolled out **Patch 1.2.1** earlier today, the Phase 2 Classified Ops Pass exotic — Strawberry Milkshake — is officially getting reviewed for buffs, the subreddit has been screaming into the void about disappearing inventory, and Phase 3 is just around the corner. Here's everything you need to know, with zero spin and exactly the right amount of suffering.

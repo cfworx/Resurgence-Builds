@@ -8,6 +8,10 @@ featuredImage: "/images/news/division-resurgence-phase-2-season-1-live-hero.webp
 imageAlt: "A female Division agent standing in a snowy New York City street holding the Strawberry Milkshake Exotic LMG with an orange and black magma weapon skin"
 shareTitle: "Enable the grind"
 shareText: "Share this to peer pressure your friends into buying the season pass."
+
+faqs:
+  - question: "Why should I care about this news?"
+    answer: "Because reading is fundamental, Agent. And knowing is half the battle (the other half is shooting)."
 ---
 
 Ubisoft launched Phase 2 of Season 1 on May 12, 2026. The update introduces a new **Classified Ops Pass** with 50 tiers of rewards, a free Exotic LMG (Strawberry Milkshake), three new cosmetic Draw Sets, and four time-limited events — one in the Dark Zone and three speed-run challenges set in main-story missions on Challenging difficulty.

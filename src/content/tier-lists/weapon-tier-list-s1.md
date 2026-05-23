@@ -5,6 +5,10 @@ patch: "1.2.0"
 lastUpdated: 2026-04-18
 description: "Comprehensive weapon tier list for The Division Resurgence Season 1. Rankings based on endgame PvE viability, DPS output, and talent synergy."
 author: "RapidF5"
+
+faqs:
+  - question: "Is my favorite weapon S-Tier?"
+    answer: "No. But don't let some random list on the internet tell you how to live your life. (But yes, it's garbage)."
 ---
 
 ## Methodology

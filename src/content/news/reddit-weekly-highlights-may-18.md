@@ -8,6 +8,10 @@ description: "The funniest Reddit posts from r/thedivisionresurgence this week. 
 tags: ["Community", "Reddit", "Humor", "Weekly"]
 shareTitle: "Share the misery"
 shareText: "Share this so your friends know what they're getting into before they download the game."
+
+faqs:
+  - question: "Why should I care about this news?"
+    answer: "Because reading is fundamental, Agent. And knowing is half the battle (the other half is shooting)."
 ---
 
 Every week, the Division Resurgence subreddit delivers a masterclass in communal suffering, accidental comedy, and the kind of raw, unfiltered gamer rage that would make a therapist retire early. We read it all so you don't have to. Here are the 10 best posts from the last two weeks — ranked by how hard they made us laugh, cry, or both.

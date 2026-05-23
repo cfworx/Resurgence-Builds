@@ -8,6 +8,10 @@ featuredImage: "/images/season-roadmap.jpg"
 imageAlt: "A Division Agent checking a map on a snowy New York street"
 shareTitle: "Share the hopium"
 shareText: "Tweet this to convince your followers the game is definitely saved this time."
+
+faqs:
+  - question: "Why should I care about this news?"
+    answer: "Because reading is fundamental, Agent. And knowing is half the battle (the other half is shooting)."
 ---
 
 Ubisoft published the full seasonal roadmap on April 28. New seasons land every **four months**; phases within a season arrive every **six weeks**.

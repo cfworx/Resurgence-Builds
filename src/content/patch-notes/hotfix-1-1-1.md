@@ -8,6 +8,10 @@ featuredImage: "/images/patch-1-1-1.jpg"
 imageAlt: "A developer team celebrating around a desk covered in money"
 shareTitle: "Share the copium"
 shareText: "Tweet this so people finally stop asking if the servers are back up."
+
+faqs:
+  - question: "Did they fix that one bug I hate?"
+    answer: "Probably not. But they did introduce three new ones, so you have variety!"
 ---
 
 Hotfix 1.1.1 was a small, fast-shipping fix focused on sound and UI bugs reported in the first two weeks after launch.

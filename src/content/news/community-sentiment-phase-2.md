@@ -8,6 +8,10 @@ description: "Community breakdown: the PC launch, 60 FPS performance, Classified
 tags: ["Community", "PC", "Phase 2", "Classified Ops Pass", "Missing Gear", "Roadmap"]
 shareTitle: "Spread the salt"
 shareText: "Share this to let X know that Reddit is still an irredeemable dumpster fire."
+
+faqs:
+  - question: "Why should I care about this news?"
+    answer: "Because reading is fundamental, Agent. And knowing is half the battle (the other half is shooting)."
 ---
 
 

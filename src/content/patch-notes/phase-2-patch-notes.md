@@ -8,6 +8,10 @@ featuredImage: "/images/patch-notes/division-resurgence-phase-2-patch-notes-hero
 imageAlt: "A male Division agent slamming the ground in a snowy New York City street with cockroaches scattering from a manhole cover"
 shareTitle: "Save them from reading"
 shareText: "Tweet this summary so your friends don't have to read a 10-page novel."
+
+faqs:
+  - question: "Did they fix that one bug I hate?"
+    answer: "Probably not. But they did introduce three new ones, so you have variety!"
 ---
 
 The Phase 2 update for Season 1 went live on May 12. This is the official patch note as published by Ubisoft, organized by category.

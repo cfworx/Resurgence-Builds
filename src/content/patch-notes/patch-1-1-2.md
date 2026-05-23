@@ -8,6 +8,10 @@ featuredImage: "/images/patch-1-1-2.jpg"
 imageAlt: "An exhausted Division Agent resting against a brick wall on a snowy street"
 shareTitle: "Warn the timeline"
 shareText: "Share this to let your squad know their favorite gun just got stealth-nerfed."
+
+faqs:
+  - question: "Did they fix that one bug I hate?"
+    answer: "Probably not. But they did introduce three new ones, so you have variety!"
 ---
 
 Patch 1.1.2 deployed alongside the PC Early Access launch. The update was a stability and quality-of-life pass, with a heavy emphasis on mouse-and-keyboard support — clearly to prep for PC players coming in fresh.

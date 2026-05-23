@@ -8,6 +8,10 @@ featuredImage: "/images/april-dev-stream.jpg"
 imageAlt: "A multi-monitor setup displaying a Division Resurgence developer livestream alongside Twitch chat"
 shareTitle: "Save a life"
 shareText: "Share this summary to save another agent from 45 minutes of corporate jargon."
+
+faqs:
+  - question: "Why should I care about this news?"
+    answer: "Because reading is fundamental, Agent. And knowing is half the battle (the other half is shooting)."
 ---
 
 Ubisoft hosted a developer livestream on April 18 covering the launch period. Community moderator u/JokerUnique posted a clean summary on Reddit; the underlying source is the official Ubisoft Twitch stream.

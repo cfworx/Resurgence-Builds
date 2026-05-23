@@ -8,6 +8,10 @@ featuredImage: "/images/patch-notes/division-resurgence-patch-1-2-1-notes-hero.w
 imageAlt: "A Division SHD agent reading patch notes on a tactical tablet in a darkened command room surrounded by screens and maps"
 shareTitle: "Warn your squad"
 shareText: "Share this so your team knows what got fixed, what didn't, and why you still can't complete Outpost Annihilation."
+
+faqs:
+  - question: "Did they fix that one bug I hate?"
+    answer: "Probably not. But they did introduce three new ones, so you have variety!"
 ---
 
 Patch 1.2.1 deployed on **May 20, 2026**. This is a targeted hotfix — not a content drop — aimed at the vendor meltdown, inventory losses, and Classified Ops Pass chaos that followed the Phase 2 launch on May 11–12. It also includes a significant line about **Strawberry Milkshake** that every Phase 2 player needs to read. Source: [Ubisoft Mobile Help Center — Patch Note 1.2.1](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/section/539-patch-note/).

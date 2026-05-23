@@ -8,6 +8,10 @@ featuredImage: "/images/pc-early-access.jpg"
 imageAlt: "A gamer playing The Division Resurgence on PC in Early Access at a desk setup"
 shareTitle: "Flex on console players"
 shareText: "Tweet this to let the timeline know your PC is currently melting."
+
+faqs:
+  - question: "Why should I care about this news?"
+    answer: "Because reading is fundamental, Agent. And knowing is half the battle (the other half is shooting)."
 ---
 
 The Division Resurgence is now available in Early Access on PC via **Ubisoft Connect**, just under a month after its March 31 mobile launch. The PC version is free-to-play, with full **cross-play** and **cross-progression** across iOS, Android, and PC — you can switch devices and pick up where you left off.

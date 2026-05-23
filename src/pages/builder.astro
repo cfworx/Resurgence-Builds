@@ -183,8 +183,15 @@ const dataPayload = JSON.stringify({ gearSets, weaponTalents, exoticWeapons, sta
                   </select>
                 </div>
                 <div class="slot-card__row">
-                  <label class="slot-label" for="wtalent-w1">Talent</label>
+                  <label class="slot-label" for="wtalent-w1">Talent 1</label>
                   <select class="slot-select select-talent" id="wtalent-w1" data-weapon="1">
+                    <option value="">— None —</option>
+                    {weaponTalents.map(t => <option value={t.id}>{t.name}</option>)}
+                  </select>
+                </div>
+                <div class="slot-card__row">
+                  <label class="slot-label" for="wtalent2-w1">Talent 2</label>
+                  <select class="slot-select select-talent" id="wtalent2-w1" data-weapon="1">
                     <option value="">— None —</option>
                     {weaponTalents.map(t => <option value={t.id}>{t.name}</option>)}
                   </select>
@@ -219,8 +226,15 @@ const dataPayload = JSON.stringify({ gearSets, weaponTalents, exoticWeapons, sta
                   </select>
                 </div>
                 <div class="slot-card__row">
-                  <label class="slot-label" for="wtalent-w2">Talent</label>
+                  <label class="slot-label" for="wtalent-w2">Talent 1</label>
                   <select class="slot-select select-talent" id="wtalent-w2" data-weapon="2">
+                    <option value="">— None —</option>
+                    {weaponTalents.map(t => <option value={t.id}>{t.name}</option>)}
+                  </select>
+                </div>
+                <div class="slot-card__row">
+                  <label class="slot-label" for="wtalent2-w2">Talent 2</label>
+                  <select class="slot-select select-talent" id="wtalent2-w2" data-weapon="2">
                     <option value="">— None —</option>
                     {weaponTalents.map(t => <option value={t.id}>{t.name}</option>)}
                   </select>
@@ -288,40 +302,56 @@ const dataPayload = JSON.stringify({ gearSets, weaponTalents, exoticWeapons, sta
 
     <aside class="builder-summary" id="builder-summary">
     <div class="summary-inner">
-      <h2 class="summary-title">Build Summary</h2>
-      <div class="summary-section" style="margin-bottom: 16px;">
-        <label class="slot-label" for="input-build-name" style="margin-bottom: 4px; display: block; opacity: 0.8; font-size: 0.85em; text-transform: uppercase; letter-spacing: 0.05em;">Build Name</label>
-        <input type="text" id="input-build-name" class="slot-input" placeholder="e.g. Legendary Field Medic" style="width: 100%; padding: 8px; border: 1px solid var(--border); border-radius: 4px; background: rgba(0,0,0,0.2); color: var(--text); font-family: inherit; font-size: 0.9em; box-sizing: border-box; transition: border-color 0.2s;" />
+      <div class="summary-header">
+        <h2 class="summary-title">Build Summary</h2>
+        <div class="summary-actions-top">
+          <button class="btn-icon" id="btn-copy" type="button" title="Copy Build Link">🔗</button>
+          <button class="btn-icon btn-icon--danger" id="btn-reset" type="button" title="Reset Build">↺</button>
+        </div>
       </div>
-      <!-- Build Quality Indicator Container -->
-      <div id="build-quality-indicator" class="summary-section" style="border: 1px dashed var(--border); padding: 12px; border-radius: 4px; background: rgba(231, 76, 60, 0.1); border-color: #e74c3c; margin-bottom: 16px; transition: all 0.3s ease;">
-        <h3 class="summary-section__title" style="margin-bottom: 4px;">Build Rating</h3>
-        <div id="build-quality-badge" style="font-family: var(--font-heading); font-size: 13px; font-weight: bold; margin-bottom: 4px; color: #e74c3c;">💩 FLAMING PILE OF GARBAGE</div>
-        <p id="build-quality-text" style="font-size: 11px; line-height: 1.4; color: var(--ink-muted); margin: 0;">This build is an absolute dumpster fire. You're going to get spawn-trapped by a standard red-bar NPC in a level 1 tutorial zone. Select a spec and get some actual gear set bonuses or weapon talents before someone sees you like this.</p>
+
+      <div class="summary-name-section">
+        <input type="text" id="input-build-name" class="summary-name-input" placeholder="Name your build..." />
       </div>
+
+      <!-- Build Quality Indicator -->
+      <div id="build-quality-indicator" class="summary-quality">
+        <div id="build-quality-badge" class="summary-quality__badge">💩 FLAMING PILE OF GARBAGE</div>
+        <p id="build-quality-text" class="summary-quality__text">This build is an absolute dumpster fire. Select a spec and get some gear.</p>
+      </div>
+
       <div id="summary-empty" class="summary-empty">Select a specialization and gear to see your build analysis.</div>
-        <div id="summary-sets" class="summary-section" style="display:none">
-          <h3 class="summary-section__title">Active Set Bonuses</h3>
-          <div id="summary-sets-list"></div>
-        </div>
-        <div id="summary-talents" class="summary-section" style="display:none">
-          <h3 class="summary-section__title">Selected Talents</h3>
-          <div id="summary-talents-list"></div>
-        </div>
-        <div id="summary-synergies" class="summary-section" style="display:none">
-          <h3 class="summary-section__title">Synergies</h3>
-          <div id="summary-synergies-list"></div>
-        </div>
-        <div id="summary-conflicts" class="summary-section" style="display:none">
-          <h3 class="summary-section__title">Warnings</h3>
-          <div id="summary-conflicts-list"></div>
-        </div>
-        <div class="summary-actions">
-          <button class="btn btn--primary" id="btn-copy" type="button">Copy Build Link</button>
-          <button class="btn btn--outline" id="btn-reset" type="button">Reset</button>
-        </div>
-        <div id="copy-toast" class="copy-toast">Link copied!</div>
+
+      <!-- Spec & Weapons -->
+      <div id="summary-talents" class="summary-section" style="display:none">
+        <h3 class="summary-section__title"><span class="summary-section__icon">⚡</span> Loadout</h3>
+        <div id="summary-talents-list" class="summary-section__body"></div>
       </div>
+
+      <!-- Active Sets -->
+      <div id="summary-sets" class="summary-section" style="display:none">
+        <h3 class="summary-section__title"><span class="summary-section__icon">🛡️</span> Active Set Bonuses</h3>
+        <div id="summary-sets-list" class="summary-section__body"></div>
+      </div>
+
+      <!-- Synergies -->
+      <div id="summary-synergies" class="summary-section" style="display:none">
+        <h3 class="summary-section__title"><span class="summary-section__icon">✅</span> Synergies</h3>
+        <div id="summary-synergies-list" class="summary-section__body"></div>
+      </div>
+
+      <!-- Warnings -->
+      <div id="summary-conflicts" class="summary-section" style="display:none">
+        <h3 class="summary-section__title"><span class="summary-section__icon">⚠️</span> Warnings</h3>
+        <div id="summary-conflicts-list" class="summary-section__body"></div>
+      </div>
+
+      <div class="summary-actions">
+        <button class="btn btn--primary" id="btn-copy-bottom" type="button">📋 Copy Build Link</button>
+        <button class="btn btn--outline" id="btn-reset-bottom" type="button">Reset</button>
+      </div>
+      <div id="copy-toast" class="copy-toast">Link copied!</div>
+    </div>
     </aside>
   </div><!-- /builder-outer -->
 </section>
@@ -663,7 +693,8 @@ const dataPayload = JSON.stringify({ gearSets, weaponTalents, exoticWeapons, sta
   box-shadow: 0 0 0 1px rgba(245,166,35,0.3), 0 0 8px rgba(245,166,35,0.1);
 }
 .slot-select--sm { font-size: 10px; min-height: 32px; padding: 2px var(--sp-2) }
-.slot-select option { background: #1a1a20; color: var(--ink) }
+.slot-select option { background: #1a1a20 }
+.slot-select optgroup { background: #141418; font-style: normal; padding: 4px 0 }
 
 /* --- Weapon Detail Pane --- */
 .weapon-detail {
@@ -854,47 +885,162 @@ const dataPayload = JSON.stringify({ gearSets, weaponTalents, exoticWeapons, sta
 }
 
 /* ============================================================
-   SUMMARY SIDEBAR — Tech Panel
+   SUMMARY SIDEBAR — Premium Tech Panel
    ============================================================ */
 .builder-summary { margin-top: var(--sp-3) }
 .summary-inner {
   position: sticky;
   top: calc(var(--nav-height, 60px) + var(--sp-3));
-  background: var(--card-bg);
+  background: linear-gradient(180deg, #141418 0%, #111114 100%);
   border: 1px solid var(--panel-border);
-  border-radius: 6px;
-  padding: var(--sp-3);
+  border-radius: 8px;
+  padding: 0;
   max-height: calc(100vh - var(--nav-height, 60px) - var(--sp-6));
   overflow-y: auto;
-  box-shadow: inset 0 1px 0 rgba(255,255,255,0.03), 0 4px 16px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 24px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.04);
+}
+.summary-inner::-webkit-scrollbar { width: 4px }
+.summary-inner::-webkit-scrollbar-track { background: transparent }
+.summary-inner::-webkit-scrollbar-thumb { background: var(--panel-border); border-radius: 4px }
+
+.summary-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--sp-3) var(--sp-4);
+  border-bottom: 1px solid var(--panel-border);
+  background: rgba(242,104,34,0.04);
 }
 .summary-title {
   font-size: var(--text-sm);
-  margin-bottom: var(--sp-2);
-  padding-bottom: var(--sp-1);
-  border-bottom: 2px solid var(--accent);
   font-family: var(--font-heading);
   color: var(--accent);
-}
-.summary-empty { color: var(--ink-muted); font-size: var(--text-xs); text-align: center; padding: var(--sp-3) 0 }
-.summary-section { margin-bottom: var(--sp-3) }
-.summary-section__title {
-  font-family: var(--font-mono);
-  font-size: 10px;
+  margin: 0;
   text-transform: uppercase;
-  letter-spacing: .08em;
+  letter-spacing: 0.06em;
+}
+.summary-actions-top { display: flex; gap: 6px }
+.btn-icon {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--panel-border);
+  border-radius: 6px;
+  background: rgba(0,0,0,0.3);
   color: var(--ink-muted);
-  margin-bottom: var(--sp-1);
-  padding-left: var(--sp-1);
-  border-left: 2px solid var(--panel-border);
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 200ms ease;
+}
+.btn-icon:hover { border-color: var(--accent); color: var(--accent); background: rgba(242,104,34,0.08) }
+.btn-icon--danger:hover { border-color: #e74c3c; color: #e74c3c; background: rgba(231,76,60,0.08) }
+
+.summary-name-section { padding: var(--sp-3) var(--sp-4); border-bottom: 1px solid var(--panel-border) }
+.summary-name-input {
+  width: 100%;
+  padding: 8px 12px;
+  background: rgba(0,0,0,0.3);
+  border: 1px solid var(--panel-border);
+  border-radius: 6px;
+  color: var(--ink);
+  font-family: var(--font-heading);
+  font-size: var(--text-sm);
+  font-weight: 700;
+  transition: all 200ms ease;
+  box-sizing: border-box;
+}
+.summary-name-input:focus { border-color: var(--accent); outline: none; box-shadow: 0 0 0 2px rgba(242,104,34,0.15) }
+.summary-name-input::placeholder { color: var(--ink-muted); opacity: 0.4; font-weight: 400 }
+
+.summary-quality {
+  margin: var(--sp-3) var(--sp-4);
+  padding: var(--sp-3);
+  border-radius: 6px;
+  border: 1px solid #e74c3c;
+  background: rgba(231, 76, 60, 0.06);
+  transition: all 300ms ease;
+}
+.summary-quality__badge {
+  font-family: var(--font-heading);
+  font-size: 12px;
+  font-weight: 700;
+  color: #e74c3c;
+  margin-bottom: 4px;
+  letter-spacing: 0.03em;
+}
+.summary-quality__text {
+  font-size: 11px;
+  line-height: 1.5;
+  color: var(--ink-muted);
+  margin: 0;
 }
 
-.summary-set-item {
-  padding: var(--sp-2) var(--sp-3);
-  background: rgba(0,0,0,0.2);
-  border-radius: 4px;
-  margin-bottom: var(--sp-1);
+.summary-empty {
+  color: var(--ink-muted);
   font-size: var(--text-xs);
+  text-align: center;
+  padding: var(--sp-6) var(--sp-4);
+  font-style: italic;
+  opacity: 0.6;
+}
+
+.summary-section {
+  padding: var(--sp-3) var(--sp-4);
+  border-top: 1px solid var(--panel-border);
+}
+.summary-section__title {
+  font-family: var(--font-heading);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ink-muted);
+  margin-bottom: var(--sp-2);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.summary-section__icon { font-size: 13px }
+.summary-section__body { display: flex; flex-direction: column; gap: 6px }
+
+/* Loadout items */
+.summary-loadout-group {
+  padding: 8px 10px;
+  background: rgba(0,0,0,0.2);
+  border-radius: 5px;
+  border-left: 3px solid var(--panel-border);
+}
+.summary-loadout-group--spec { border-left-color: var(--accent) }
+.summary-loadout-group--weapon { border-left-color: #f97316 }
+.summary-loadout-group--os { border-left-color: #3b82f6 }
+.summary-loadout-group--chipset { border-left-color: #a855f7 }
+.summary-loadout-label {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--ink-muted);
+  margin-bottom: 3px;
+}
+.summary-loadout-value {
+  font-family: var(--font-heading);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ink);
+  line-height: 1.4;
+}
+.summary-loadout-sub {
+  font-size: 11px;
+  color: var(--ink-muted);
+  margin-top: 2px;
+}
+
+/* Set bonus items */
+.summary-set-item {
+  padding: 8px 10px;
+  background: rgba(0,0,0,0.2);
+  border-radius: 5px;
   border-left: 3px solid var(--panel-border);
   transition: all 200ms ease;
 }
@@ -905,42 +1051,44 @@ const dataPayload = JSON.stringify({ gearSets, weaponTalents, exoticWeapons, sta
   background: rgba(168,85,247,0.1);
   box-shadow: inset 0 0 12px rgba(168,85,247,0.05);
 }
-.summary-set-name { font-weight: 700; font-family: var(--font-heading) }
-.summary-set-count { font-family: var(--font-mono); font-size: 10px; color: var(--ink-muted) }
-.summary-set-bonus { font-size: 10px; color: var(--ink-muted); margin-top: 1px }
-
-.summary-talent-item {
-  padding: var(--sp-1) var(--sp-2);
-  font-size: var(--text-xs);
+.summary-set-name { font-family: var(--font-heading); font-weight: 700; font-size: 13px }
+.summary-set-count { font-family: var(--font-mono); font-size: 10px; color: var(--ink-muted); margin-left: 6px }
+.summary-set-bonus {
+  font-size: 11px;
   color: var(--ink-muted);
-  border-left: 2px solid var(--panel-border);
-  margin-bottom: var(--sp-1);
+  margin-top: 3px;
+  line-height: 1.4;
+  padding-left: 8px;
+  border-left: 1px solid var(--panel-border);
 }
-.summary-talent-item strong { color: var(--ink); font-weight: 500 }
 
+/* Synergies & Conflicts */
 .summary-synergy {
-  padding: var(--sp-2);
-  background: rgba(109,170,69,0.08);
-  border-left: 3px solid var(--success);
-  border-radius: 4px;
-  margin-bottom: var(--sp-2);
-  font-size: var(--text-xs);
+  padding: 8px 10px;
+  background: rgba(34,197,94,0.06);
+  border-left: 3px solid #22c55e;
+  border-radius: 5px;
+  font-size: 12px;
   color: var(--ink);
   line-height: 1.5;
 }
 .summary-conflict {
-  padding: var(--sp-2);
-  background: rgba(224,64,46,0.08);
-  border-left: 3px solid var(--danger);
-  border-radius: 4px;
-  margin-bottom: var(--sp-2);
-  font-size: var(--text-xs);
+  padding: 8px 10px;
+  background: rgba(239,68,68,0.06);
+  border-left: 3px solid #ef4444;
+  border-radius: 5px;
+  font-size: 12px;
   color: var(--ink);
   line-height: 1.5;
 }
 
-/* --- Action Buttons & Toast --- */
-.summary-actions { display: flex; gap: var(--sp-2); margin-top: var(--sp-3) }
+/* Bottom Actions */
+.summary-actions {
+  display: flex;
+  gap: var(--sp-2);
+  padding: var(--sp-3) var(--sp-4);
+  border-top: 1px solid var(--panel-border);
+}
 .summary-actions .btn { flex: 1; font-size: var(--text-xs); padding: var(--sp-2) var(--sp-3) }
 .copy-toast {
   position: fixed;
