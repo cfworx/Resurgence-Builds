@@ -35,7 +35,7 @@ faqs:
 
 Let's get the uncomfortable truth out of the way first. Your character screen DPS on this build is going to read something like 142,110. You are going to look at that number and feel personally attacked. Relax. That number is lying to you.
 
-This is the Vanguard Recon Scout. It does not kill things. It makes your entire team kill things three times faster. AgentHuntzman is running this at roughly 70% completion on T1 gear and it's already turning pickup groups from "struggling on Hard" into "accidentally speed-clearing Heroic."
+This is the Vanguard Recon Scout. It does not kill things. It makes your entire team kill things three times faster. AgentHuntzman runs this on T1 gear and it turns pickup groups from "struggling on Hard" into "accidentally speed-clearing Heroic."
 
 The whole thing runs on one combat loop: hit enemies fast, proc Torrential Downpour for Engineering, empty your P90 to stack Fully Charged, then let Tactical Smart Cover convert all that Engineering into raw weapon damage for every teammate standing behind it. Scanning Pulse slaps vulnerability on everything. Tactical Link gives your team rate-of-fire steroids. Repeat until everything is dead.
 
@@ -60,15 +60,17 @@ Two guns. One talent doing 60% of the work.
 
 **Primary: Police M4 (AR)**
 
-- **Talent 1: Torrential Downpour.** Hitting enemies 10 times within 5 seconds grants +22.5% Engineering for 12 seconds. This is your "always on" Engineering buff.
-- **Talent 2: Rapid Charge.** Hitting an enemy 5 times in 3 seconds grants +50 Signature Ability charge. This is how you get Tactical Link back fast enough to keep it running almost permanently.
-- **Attribute roll:** Weapon Damage primary. The Police M4 can roll Weapon Blast Damage even though the gun's actual damage registers as Shredding in community testing (see our [damage types breakdown](/guides/damage-types-color-bar-weakness-guide/)). Roll for Weapon Damage, ignore the Blast attribute if it shows up.
+- **Talent 1: Torrential Downpour.** Hitting enemies 10 times within 5 seconds grants +22.5% Engineering for 12 seconds. AgentHuntzman calls this "broken" (in a good way). It makes your Engineering jump massively, and with Tactical Link active, it turns the build into a serious damage threat on top of all the buffing.
+- **Talent 2: Rapid Charge.** Hitting an enemy 5 times in 3 seconds grants +50 Signature Ability charge. This is how you get Tactical Link back fast.
+- **RPM: 850.** Magazine: 30. This is your proc weapon, not your sustained fire weapon. Land 10 hits in 5 seconds for Torrential Downpour, then land 5 in 3 for Rapid Charge. Swap to P90.
+- **Ideal attribute bonuses:** Weapon Blast Damage + Weapon Damage.
 
 **Secondary: P90 (SMG)**
 
 - **Talent 1: Torrential Downpour.** Same talent, second copy. Different cooldown timer from the primary.
 - **Talent 2: Fully Charged.** Reloading an empty magazine grants **+7.50% Engineering for 12 seconds, stacking up to 3 times** (+22.50% total). This is the talent that makes the build tick.
 - **RPM: 900.** Magazine: 50 rounds. Reload: 2.47 seconds (slowest SMG in the game). At 900 RPM, you burn through the magazine in about 3.3 seconds of sustained fire. Every empty reload is a Fully Charged proc.
+- **Ideal attribute bonuses:** Weapon Piercing Damage + Weapon Damage. AgentHuntzman says this is the optimal roll for the P90.
 
 **Why P90 specifically:** This build needs BOTH Torrential Downpour and Fully Charged on the same weapon. Out of every SMG in the game, only **two** can roll both talents simultaneously: the **P90 (T1)** and the **AUG A3 Para XS (T1)**. The Vector 45 ACP fires at 1200 RPM but can't roll Fully Charged. The MP7 fires at 950 RPM but can't roll Torrential Downpour. The P90 at 900 RPM is the fastest SMG that qualifies for both talent slots. That's why AgentHuntzman picked it. The tradeoff: the P90 has the slowest reload of all SMGs at 2.47 seconds and the second-highest magazine (50 rounds). For this build, the slow reload is fine because you WANT to be shooting, not reloading. You empty the mag, eat the 2.47-second reload, proc Fully Charged, and go again. The AUG A3 Para XS is your only alternative if you can't find a good P90 drop.
 
@@ -76,17 +78,19 @@ Two guns. One talent doing 60% of the work.
 
 | Slot | Set | Talent | Core | Bonus 1 | Bonus 2 |
 |---|---|---|---|---|---|
-| Mask | Mechanical Expert | - | Engineering | Skill Cooldown Recovery | Skill Intensity |
+| Mask | Boom Shakalaka | - | Engineering | Skill Cooldown Recovery | Skill Intensity |
+| Chest | Mechanical Expert | **Socialite** | Toughness | Armor (or Skill Duration) | Health (or Skill Intensity) |
+| Backpack | Mechanical Expert | **Brainstorm** | Engineering | Skill Intensity | Skill Cooldown Recovery |
 | Gloves | Mechanical Expert | - | Engineering | Skill Duration | Skill Cooldown Recovery |
-| Holster | Mechanical Expert | - | Engineering | Sig. Ability Charge Efficiency | Skill Intensity |
+| Holster | Boom Shakalaka | - | Engineering | Sig. Ability Charge Efficiency | Skill Intensity |
 | Kneepads | Mechanical Expert | - | Engineering | Skill Cooldown Recovery | Weapon Damage |
-| Chest | Boom Shakalaka | **Socialite** | Toughness | Armor (or Skill Duration) | Health (or Skill Intensity) |
-| Backpack | Boom Shakalaka | **Brainstorm** | Engineering | Skill Intensity | Skill Cooldown Recovery |
 
 - **Primary:** Police M4 (AR) with Torrential Downpour + Rapid Charge
 - **Secondary:** P90 (SMG) with Torrential Downpour + Fully Charged
-- **OS Protocol:** Concerted Strike (Engineering)
+- **OS Protocol:** Pressing Matter
 - **Skills:** Tactical Smart Cover, Scanning Pulse, Tactical Link (Signature)
+
+> **Core stat note:** AgentHuntzman's video shows mixed cores (Toughness on chest, Firepower on backpack/gloves/kneepads). We recommend Engineering on every piece except the chest (Toughness for Socialite synergy). More Engineering = more Smart Cover weapon damage for the whole team. That's the entire point of the build.
 
 **Mechanical Expert 4-Piece Set Bonuses**
 
@@ -126,13 +130,26 @@ This is a team support build. You are always near your teammates. That means +30
 
 ## OS Protocol
 
-**Best in slot: Collateral Damage (Gold)**
+**Pressing Matter**
 
-Triggers AoE blast damage on critical hits. Scales off Engineering (1,600% Engineering at level 1). With your stacked Engineering pool from Fully Charged + Torrential Downpour, this OS Protocol becomes a secondary damage source that actually lets you contribute direct damage on top of all your buffing.
+Grants +10% Skill Cooldown Recovery. At level 50: +24% Skill Intensity, +358 Engineering, +286 Skill Damage, +9,402 Health.
 
-**Runner-up: Rampart (Gold)**
+This is the correct OS for this build. The +10% Skill CDR stacks with your gear CDR to keep Smart Cover and Scanning Pulse cycling faster. The +358 Engineering at level 50 feeds directly into your Smart Cover conversion ratio, which is the build's entire damage engine. The +9,402 Health is a survivability bonus on top. Every stat on Pressing Matter feeds the support loop. Nothing is wasted.
 
-+36% Skill Crit Chance at level 50. If you don't have Collateral Damage and don't want to gamble caches, Rampart guarantees your skills crit more often.
+## Specialization Focus Upgrades
+
+These are unlocked through the Recon specialization tree and are critical to the build.
+
+| Upgrade | Level | Effect |
+|---|---|---|
+| **Exposed** | 3/3 | Inflicts +10% incoming damage on scanned enemies, deals damage equal to 4% Engineering for 30 seconds, up to 3 stacks. |
+| **Foxhole** | 3/3 | Hiding behind Smart Cover grants **Fortified** to you and all allies. Fortified: Weapon hits grant non-stackable extra health equal to **450% of Engineering** for 3 seconds. Trigger interval 1 second. |
+| **Entrenched** | 3/3 | Grants +4% Damage Reduction to Fortified allies. |
+| **Target Rich Environment** | 3/3 | While using Tactical Link, each enemy within 20m grants +12% Accuracy, Stability, and Reload Speed for 10 seconds, up to 3 stacks (+36% max). |
+| **Friendly Hand** | 2/2 | Grants +10% Damage Reduction for 10 seconds to pulsed allies. |
+| **Combat Inspiration** | 2/2 | Grants +5% Engineering for 10 seconds when an Exposed enemy dies within 30 meters, up to 3 stacks (+15% Engineering). |
+
+Foxhole is the sleeper pick here. At 2,000 Engineering, Fortified gives every teammate extra health equal to **9,000 HP per weapon hit** (450% x 2,000). That refreshes every second while behind Smart Cover. Your teammates become borderline unkillable while standing in your cover. This is why the build dominates Legendary missions, you're behind cover the entire time.
 
 ## The Math (With Correct Numbers)
 
@@ -150,11 +167,11 @@ Let's run a single combat loop. These are the real, verified numbers.
 
 Now here's where the actual magic happens. The raw Engineering number isn't the story. The story is what that Engineering does to your skills:
 
-**Tactical Smart Cover converts 24% of your Engineering into Weapon Damage for every agent behind the cover.** At ~2,000 Engineering, that's roughly +480 Weapon Damage applied to every teammate. For reference, a solid weapon damage roll on a T1 piece is around 300-400. You're giving your team a free god-roll weapon damage bonus just by standing in your own cover.
+**Tactical Smart Cover converts 24% of your Engineering into Weapon Damage for every agent behind the cover.** At ~2,000 Engineering, that's roughly +480 Weapon Damage applied to every teammate. For reference, a solid weapon damage roll on a T1 piece is around 300-400. You're giving your team a free god-roll weapon damage bonus just by standing in your own cover. Base skill cooldown is 50 seconds, but with all your CDR it comes back around 35 seconds.
 
-**Scanning Pulse applies +20% Target Vulnerability + exposure stacks + a flat damage bonus scaled from Engineering.** Every enemy your Pulse touches is taking 20%+ more damage from your entire team.
+**Scanning Pulse applies +20% Target Vulnerability + Exposed stacks.** Duration is approximately 17.44 seconds, cooldown around 14.94 seconds. That means you can keep Pulse up almost permanently, there's only a brief gap between casts. Every enemy your Pulse touches is taking 20%+ more damage from your entire team. Exposed stacks add even more incoming damage on top.
 
-**Tactical Link (Bugle Call) gives +14.4% Rate of Fire** to the team. Every shot fires faster. Every shot hits enemies who are taking 20% more damage. Every shot is boosted by the Smart Cover weapon damage buff.
+**Tactical Link (Bugle Call) gives +14.4% Rate of Fire, +20% Damage Reduction, and +20% Movement Speed** to the team. Duration is approximately 21.74 seconds. Base RPM bonus is 10% on top of that. Every shot fires faster. Every shot hits enemies who are taking 20% more damage. Every shot is boosted by the Smart Cover weapon damage buff. Plus Target Rich Environment gives +36% Accuracy, Stability, and Reload Speed during Link.
 
 The team's DPS doesn't just go up. It multiplies across three separate buff stages. That's why AgentHuntzman calls this a "100k to 300k" build. The individual numbers look modest. The combined output is disgusting.
 
@@ -200,7 +217,7 @@ By three rotations deep in a long mission, your team feels like they're cheating
 | **T1 (current build)** | **4pc Mechanical Expert** | **2pc Boom Shakalaka** | **This is where the build comes online** |
 | T2 (endgame) | 4pc Long-Term Effect (+18% Eng) or Mechanical Expert | 2pc Jackpot (+10% Skill Crit) | Long-Term Effect is the Engineering ceiling upgrade |
 
-The build does NOT require T2 gear to function. AgentHuntzman is running it at T1 and tripling team DPS. T2 is refinement, not unlock. Stop waiting for perfect drops.
+The build does NOT require T2 gear to function. AgentHuntzman runs it at T1 and triples team DPS. T2 is refinement, not unlock. Stop waiting for perfect drops.
 
 ## Loot Quick-Reference
 
