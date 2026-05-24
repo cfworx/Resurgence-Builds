@@ -28210,3 +28210,282 @@ Resurgence to date.
 > • Speedrun - OW Nest Derelict Store: May 29 - June 2, 2026
 >
 > • Speedrun - MM06 Take the Castle: June 12 - June 16, 2026
+
+---
+
+## **Patch & Community Update --- May 21-23, 2026**
+
+### **Server Patch (May 21, 2026) --- Inventory Disappearance Root Cause**
+
+Official source: [u/TDResurgence "Item disappearing fix - update"](https://reddit.com/r/thedivisionresurgence/comments/1tjto41/item_disappearing_fix_update/) (May 21, 18:37 UTC).
+
+Ubisoft verbatim:
+
+> "We are introducing a server patch today to fix the issue of disappearing items. We believe items were being lost due to an issue with the index being out of bounds."
+
+Fixes shipped:
+
+> • Fix inventory bag not returning all item slots to client.
+>
+> • Fix inventory bag not saving all items into database.
+>
+> • Fix items randomly disappearing.
+
+**Root cause in plain terms:** An index-out-of-bounds error on the inventory bag system. The inventory was trying to access a slot that did not exist, dropping items in transit. Patch 1.2.1 on May 20 addressed the symptom; the May 21 server patch is the actual fix.
+
+**No retroactive compensation beyond the 500k Basic / 750 Phoenix blanket payout.** Players who lost high-value items remain on case-by-case support tickets, and customer-support outcomes so far have been Phoenix Credit refunds, not item restores (u/Ephr4im, May 21).
+
+**Community workaround for items still listed as missing (u/Vikeman45):**
+
+> "You should be able to pull the mods off the 'missing' weapon. It isn't actually missing, it just won't show in the inventory screen. Scroll to the bottom of the mods when trying to put one on and it should be there and show as equipped on your 'missing' weapon... half the time that jolts the game into remembering that you have that weapon (forces a reindexing)."
+
+### **Strawberry Milkshake --- Live Player Confirmation of Bad Math**
+
+Post-Patch 1.2.1 tooltip is now showing the correct live values: **2.40% Weapon Damage per second / 4.50s DoT / 12m transfer / 50 stacks**.
+
+Community testing in the field (May 22-23) confirms these numbers play as badly as they read. Nickname "Poor man's Pestilence" is now the coalescing community consensus:
+
+- u/FBI_Elias ([thread](https://reddit.com/r/thedivisionresurgence/comments/1tkm1mo/strawberry_milkshake_lmg/)): *"Once I got my hands on the gun, it was shit. The 'anarchy' effect was 2.4% damage per second... It really is a poor man's pestilence, my entire day was ruined."*
+- u/N43n1r4 (same thread): *"It really is the poor man's Pestilence... I just hope my second roll will be better."*
+
+**Operational guidance: Hold recalibration mats.** The buff is still officially "under review" per Patch 1.2.1 notes. Do not invest in calibration until a real number change ships.
+
+### **Aegis 3-Second Burst x Skill Multi-Shot --- First-Hand Confirmation**
+
+Fresh first-hand corroboration from a live Aegis player adds to the existing knowledge base entries on this interaction:
+
+- u/Inner_Chicken8043 ([thread](https://reddit.com/r/thedivisionresurgence/comments/1tk8cgg/damage_output_aegis_operator/)): *"You need skill multi shoot too, the big burst dmg if you high enough skill multi shoot will multiple. My skill multi between 15-20% and when the burst is up I see two number when the multi shoot proc."*
+
+**Reads as:** The Aegis 3-second burst rolls Skill Multi-Shot Chance per trigger. At ~15-20% Multi-Shot, the player visually confirms a second damage instance landing on the same burst. This is direct evidence supporting the existing entry that Skill Multi-Shot amplifies the Aegis burst.
+
+**Outlier note:** u/Silent-Farm-6997 (community recurring expert) recommended "intensity" as part of an Aegis stat target on May 22. This contradicts wider community testing and the existing knowledge base entry that **Skill Intensity does NOT scale the Aegis burst damage.** Treat that single suggestion as possibly referring to Intensity for healing or cooldown chip rolls, not burst damage scaling.
+
+### **Aegis Ultimate --- Confirmed Bug on Rapid Recast**
+
+- u/malicious06 ([thread](https://reddit.com/r/thedivisionresurgence/comments/1tkbiub/aegis_drone_ultimate_class_bug/)) (May 22): *"When I use the Aegis ultimate (create shield area), if the 1st ultimate skill have not finished its duration, and I used another ultimate, the second one does not fire."*
+
+**Practical takeaway for Aegis builds:** Do not recast the Ultimate until the first instance has fully expired. Stacking inputs eats the second cast.
+
+### **Tech Operator Drones --- Endgame Fragility Consensus**
+
+The [Tactical Pharma vs Tech Operator thread](https://reddit.com/r/thedivisionresurgence/comments/1tk1yfm/tactical_pharma_vs_tech_operator_for_better_dps/) (May 21, ↑7 / 18 comments) produced a clear community verdict for late-game / Legendary content:
+
+- u/Due-Satisfaction-290 (↑12): *"Tech operator has great dps, maybe in top 2 of all classes, but in late game on hardset difficulties drones are very squishy and most of the time you'll be sitting behind cover with 0 dps waiting for long cooldowns to summon a drone just for it to be destroyed by enemies right away."*
+- u/Key-Lobster335 (↑6): *"Striker drones are not worth it in legendary in my opinion. It pops too quickly with poor mobility rendering it susceptible to grenades, molly, and sniper fire."*
+- u/Suspicious-Sound-249 (↑4): *"Those drones individually need like 4 times the health they do for them to be kind of useful on higher difficulties. The trick and this sucks is that after a full deploy, it's best to just wait out your CD's as much as that sucks and reset."*
+
+**Build implication:** For Legendary / late-game pure damage, Tactical Pharma's AoE + skill mod versatility is currently considered more reliable than Tech Operator's drones. Tech Operator builds should bias toward **Aegis Brains over Brawn chip** (still recommended despite the BoB nerf, per u/Hour_Huckleberry_741) and treat drone uptime as a burst window rather than a constant DPS source.
+
+### **DZ Augmentation Reward Bug --- Officially Still Broken**
+
+@TDResurgence dev reply ([thread](https://reddit.com/r/thedivisionresurgence/comments/1tkkxcc/did_they_fix_getting_the_dz_augments_ive_been_on/on97ays/)), May 22:
+
+> "The team is still working on fixing this. Sorry for the delay, we know it's frustrating."
+
+**Status:** DZ Tactical Augmentation reward path remains unreliable. No ETA from Ubisoft. Until fixed, do not plan farm sessions around DZ Augmentation acquisition as a primary objective.
+
+### **DZ Leader Loot --- Still Reported Dropping Nothing**
+
+- u/Vanaris ([thread](https://reddit.com/r/thedivisionresurgence/comments/1tlhz9f/are_dz_leaders_bugged/)) (May 23): *"Killing the bosses, didn't drop anything... my name was displayed but nothing dropped. No chipset, no equipment. Nothing."*
+
+**Status:** Still unacknowledged officially in the May 21-23 window. Continue logging instances; this is a candidate for the next round of community bug-pressure on Ubisoft.
+
+### **PC and Asia Server Connection Issues Since May 12 Update**
+
+Multiple reports across the 48-hour window confirm this is still live for affected regions:
+
+- u/Hung_1989 ([thread](https://reddit.com/r/thedivisionresurgence/comments/1tkot8f/after_the_may_12_updatei_cant_connect_to_thge_pc/))
+- u/Edengaming123 ([thread](https://reddit.com/r/thedivisionresurgence/comments/1tkyaiw/cant_play_on_pc/))
+- u/Big-Tell-5132 ([thread](https://reddit.com/r/thedivisionresurgence/comments/1tk6usy/why_is_this_game_having_internet_connection_issues/)) (Asia)
+
+**Status:** Unacknowledged officially in the window. Affected players have no first-party workaround.
+
+### **Civilians-in-Need --- Broken Div 1 Carryover Mechanic**
+
+Useful piece of build-economy knowledge surfaced by [u/MuffDivers2_ thread](https://reddit.com/r/thedivisionresurgence/comments/1tk914n/what_do_we_use_bottled_water_canned_food_and/):
+
+- u/A_M_R_Egypt (↑7): *"You give them to 'civilians in need' you meet in the open, a game mechanic since Div 1.. but in Resurgence it is not coded right and that is why it is super rare to meet one. In over 340 hours in Resurgence I have only met one."*
+
+**Reads as:** Bottled Water / Canned Food / Candy Bar inventory has no reliable sink in Resurgence as of May 23. The Civilians-in-Need mechanic exists but rarely spawns. **Build implication:** stop hoarding these consumables; they are effectively vendor trash until Ubisoft fixes spawn rates.
+
+### **PvP Meta Frustration --- Bulwark Mobility and Double-Barrel Shotgun**
+
+May 21-23 community sentiment cycle:
+
+- u/Trap_Jumpinn ([thread](https://reddit.com/r/thedivisionresurgence/comments/1tlfxv7/nerf_bulwarks_now/)): *"Mobility with shield should be decreased. For a shield to take every bullet like that, there's no way that's balanced."*
+- u/Die_antwoord ([thread](https://reddit.com/r/thedivisionresurgence/comments/1tkeu7f/pay_to_win_in_unexpected_ways/)): *"I have 150k health, 5000ish armor, 25% ish damage reduction. Some doubled barrel wielding choom can one or two tap me."*
+- u/RogueBlue2164 ([thread](https://reddit.com/r/thedivisionresurgence/comments/1tl6duu/what_the_point_of_going_rouge_in_the_dz/)): Going Rogue currently dominated by Bulwark builds.
+
+**Read for build content:** Bulwark Tank remains the meta menace in DZ. Double-Barrel Shotgun remains the player-feared one-shot weapon. The existing Immortal Bulwark Tank entry (Section 18.37.12) is still accurate; if anything, community pressure is building for a Bulwark mobility nerf in a future patch. Flag for monitoring.
+
+### **Gold OS Drop Rate --- Community Frustration, Acquisition Guidance Holds**
+
+Two threads in the window ([How To Get Gold OS](https://reddit.com/r/thedivisionresurgence/comments/1tk1qjs/how_to_get_gold_os/) and [OS drop rate](https://reddit.com/r/thedivisionresurgence/comments/1tlk9aw/os_drop_rate/)) reinforce existing knowledge:
+
+- Weekly Bounty is the most reliable Gold OS path (1 chance per week per character).
+- OS Caches favor Purple. Gold from caches is rare even for active players.
+- Phoenix Credits are best saved for Augmentations, not OS gambling (u/Silent-Farm-6997).
+
+**No change to existing acquisition guidance.** Reinforces the existing knowledge base recommendation: run the weekly bounty, do not chase OS Protocol Caches.
+
+### **Crafting Reality Check --- Drops Still Beat Crafts at Level 10**
+
+[Thread by u/Dbzsuxazz](https://reddit.com/r/thedivisionresurgence/comments/1tk6uya/please_buff_the_crafting_chance_for_gold_guns_or/) reignited the crafting-cost debate. Practical confirmation from u/Silent-Farm-6997:
+
+> "The talents and attributes are RNG even with crafting level 10, I only have them for the SHD level but everything I use else was drop."
+
+**Build economy implication:** Even at max Crafting (10), expected outcome is purple-streak with rare Gold pops, and Gold roll quality is still random. Continue treating Crafting as a calibration / SHD source, not a primary acquisition path for god-roll endgame gear.
+
+### **Community OS Protocol Tier List in Progress (Watch)**
+
+[u/DPF30 "GOLD OS Protocols are not equal"](https://reddit.com/r/thedivisionresurgence/comments/1tkxy7r/gold_os_protocols_are_not_equal_base_collateral/) (thread removed by mods for title formatting; methodology sound):
+
+> "Base Collateral Damage is equal or slightly behind Tier 4 Explosive Charge since you have to shoot for 3 seconds first. I tested both at level 1. I'm going to test and compare eventually everything to make a tier list."
+
+**Why this matters for the knowledge base:** A community-tested OS Protocol tier list with verified math is exactly the kind of cross-pollination source we should track. If DPF30 (or a follow-up author) publishes the full set, fold it into Section 21 (Class-Specific Damage Mechanics) and the OS Protocol entries.
+
+### **Dev Post Cadence --- Next Major Communication Expected Late May / Early June**
+
+Last 5 official @TDResurgence posts (April 28 → May 21):
+
+> • April 28: Patch 1.1.2 notes
+>
+> • Early May: Phase 2 Patch Notes
+>
+> • Mid May: Game Update Patch Notes
+>
+> • May 20: Patch 1.2.1
+>
+> • May 21: Item Disappearing Fix Server Patch
+
+**Cadence:** roughly one major post every 5-10 days. Next major dev post expected late May or early June. Plan content around that window (Phase 3 details would be the natural drop).
+
+---
+
+## **Knowledge Additions From AgentHuntsman Video Series (May 24, 2026)**
+
+Source: [AgentHuntsman YouTube channel](https://www.youtube.com/@AgentHuntzman), 10 videos pulled May 24. Channel is clan Cascadia (American server). Voice is patient, beginner-to-intermediate focused. Numbers below are spoken on camera; cross-reference against existing KB entries before quoting in posts.
+
+### **Damage Type Visual Identifier --- The Colored Bar Above Enemy Health (NEW)**
+
+Source: [SHD Manual --- How Progression ACTUALLY Works](https://www.youtube.com/watch?v=Mt3E4A0l0Zk) (May 22, 2026), 25:44, AgentHuntsman, ~14:35 timestamp.
+
+Verbatim:
+
+> "If there is a dark blue bar on top of the health bar of the enemy, it's piercing. If it's a light blue, it's shredding. If it's a red one, it's blast damage. Using the appropriate damage type will allow you to do more damage to those enemies."
+
+**This is the in-game visual indicator most players miss.** Until now the KB had damage-type effectiveness documented as a stat property (e.g. Warlord = Blast = good against red armored enemies) but never the visual reference for identifying which type the enemy is weak to in real time.
+
+**Color-to-damage-type mapping:**
+
+> • **Dark blue bar** above enemy health = enemy is weak to **Piercing**
+>
+> • **Light blue bar** above enemy health = enemy is weak to **Shredding**
+>
+> • **Red bar** above enemy health = enemy is weak to **Blast**
+
+**Practical implication:** Players running a Blast-attribute build (Warlord, Lady Death) into a mission full of light-blue-bar enemies are losing significant damage they could recover by swapping to a Shredding weapon. This is the field-readable version of the existing damage-type effectiveness tables in the KB.
+
+### **Stoner LMG --- Confirmed In-Game (Update to Section 12.11)**
+
+Section 12.11 of the KB had Stoner LMG flagged as "Requested But Not Confirmed as In-Game." **This is now confirmed in-game.**
+
+Source: [SHD Manual](https://www.youtube.com/watch?v=Mt3E4A0l0Zk) (May 22, 2026), ~20:00 timestamp. AgentHuntsman shows the weapon equipped while building his Field Medic and identifies it on camera as "the L A M G, the Stoner."
+
+**Confirmed talents on the Stoner LMG variant AgentHuntsman is using:**
+
+- **Blood for Blood** (verbatim from gameplay): *"Kills and assists restore 5.6% Max Health. While above 50% health, weapon hits consume 0.5% Max Health to deal additional damage equals to 0.7% Max Health."* This is the same Blood for Blood family already documented in Sections 1.5 / 3.4 / 4.4 of the KB but **confirmed rolling on Stoner LMG**.
+- **Calm and Collected** (description by gameplay): faster reload, especially valuable on LMG which has long base reload animation.
+
+**Build implication:** Stoner LMG + Blood for Blood is a viable Field Medic damage anchor specifically because Field Medic constantly self-heals, which keeps the >50% HP threshold permanently true and the +0.7% Max Health bonus damage permanently active. Up time is effectively 100%.
+
+### **PPSh-41 Confirmed Talents (NEW)**
+
+Source: [SHD Manual](https://www.youtube.com/watch?v=Mt3E4A0l0Zk), ~21:00 timestamp.
+
+AgentHuntsman reads the PPSh-41 talent set verbatim from his loadout:
+
+- **Swap-into talent:** *"Swap into this weapon grants extra health equals to 20% Max Health for 8 seconds."*
+- **Reload talent:** *"Reloading grants +2.6% skill cooldown recovery for 10 seconds, up to five stacks."* (Stacks to +13% Skill CDR)
+- Confirmed base attribute rolls available: **Weapon Multi-Shot Chance** and **Weapon Piercing Damage Boost**.
+
+**Build implication:** PPSh-41 is a strong **secondary weapon** for skill-heavy classes (Field Medic, Tech Aegis, Demolitionist). The swap-into +20% HP burst gives an emergency damage soak; the reload-stacking +2.6% Skill CDR per stack rewards constant fire-then-reload cycles. The Piercing Damage attribute pairs well into dark-blue-bar enemy content.
+
+### **AgentHuntsman Field Medic Build (In Progress, T1 gear)**
+
+Source: [SHD Manual --- end of video](https://www.youtube.com/watch?v=Mt3E4A0l0Zk), ~22:00 onward. AgentHuntsman walks through his post-class-swap Field Medic plan after the community vote went Tech Operator and he chose Field Medic anyway.
+
+**OS Protocol:** Medical Excellence (already documented in Section 1.13 / 4.x of KB --- 5% Max Health team heal above 50% HP, 12.5% target heal below 50% HP). AgentHuntsman is collecting duplicates to upgrade further.
+
+**Gear set goal:**
+
+> • **4-piece Doctor Medic** (mask/gloves/holster/kneepads) --- Toughness scaling for the class
+>
+> • **2-piece Healing Elites** (chest/backpack) --- already documented in KB as T2-only set, Release Extra Armor +28%
+
+**Stat priority:**
+
+> • Toughness (primary) --- Field Medic scales healing with toughness
+>
+> • Firepower (secondary) --- AgentHuntsman wants damage capability for solo content
+>
+> • Skill Intensity + Weapon Damage on sub-rolls
+
+**Skill chips:**
+
+- **Beneficial Association**
+- **Coordinated Strike** (already documented in KB as a Vanguard Tactical Link mod; AgentHuntsman is running it on Medic context --- worth verifying if this is a Medic-side chip family or if he is cross-equipping)
+- **Auto Trauma Treatment** (KB Section 5.185 confirms this is a Healing Intensity 2pc set/skill family). AgentHuntsman's use case: *"You can throw your healing bag on the floor and start reviving them automatically, without needing you to go there and revive yourself."* Confirms auto-revive functionality of the healing bag when slotted with this chip.
+
+**Weapons:**
+
+- **Primary:** Stoner LMG (Blood for Blood + Calm and Collected) --- see Stoner LMG entry above
+- **Secondary:** PPSh-41 (Swap-into +20% Max HP + Reload +2.6% Skill CDR) --- see PPSh-41 entry above
+
+**Skill / Hive selection:**
+
+- **Offensive Defense hive** with the talent *"240% Weapon Damage / 240% of Toughness (swappable depending on stat target)"*.
+
+**CRITICAL CROSS-REFERENCE WARNING:** KB **Section 1.13** (line 26275) documents that the **Healing Hive 240% damage mod is community-confirmed broken**. Multiple players (u/lnRussia, u/DisasterRepulsive769) tested with and without the mod active and saw no damage difference. AgentHuntsman is building around a mod that may not actually function. **Do not echo the 240% Offensive Defense hive recommendation in any post without flagging this discrepancy.** Treat AgentHuntsman's build as his planned setup, not as a confirmed-working damage source.
+
+### **Vanguard Recon Scout Build --- Reinforcing Source (Cross-Reference Section 18.14)**
+
+Source: [Best Scout Build in Division Resurgence (Vanguard Meta) T1 gear](https://www.youtube.com/watch?v=b1ZjnGeeRKI) (Apr 26, 2026), 16:44, AgentHuntsman.
+
+This video is the **primary source** for the existing KB entry at Section 18.14 (Vanguard Scout / Recon build, lines 5695-5762). All numbers in that section --- 142.11k DPS, 76,163 health, 5,119 armor, Mechanical Expert 4pc + Boom Shakalaka 2pc, Precise Matters watch, Tactical Smart Cover 41.20s/35.59s, Scanning Pulse 17.44s/14.95s, Tactical Link 21.74s, Duration Downpour +22.5% Engineering, Fully Charged +750% Engineering, Sociality, Intense Performance II --- come directly from AgentHuntsman's on-screen breakdown.
+
+**Use this video as the primary citation when posting any Vanguard Recon scout content.** The build has been verified against gameplay footage, not just text descriptions.
+
+### **General Progression / Mindset Content (No New Mechanics, But Citable Source)**
+
+The remaining AgentHuntsman videos from the May 2026 batch are mindset / progression videos that **reinforce existing KB content** without adding new mechanics. Cite as supporting source when relevant:
+
+- [How to start your build](https://www.youtube.com/watch?v=phHiYGujrRQ) (Apr 12, 2026): T0 gear floor-farming rule, +10 levels-above-current weapon upgrade cap, exotic weapon list (Warlord + Lady Death at launch, more from Battle Pass position 40).
+- [Money making 101](https://www.youtube.com/watch?v=ramrwvtxS4o) (Apr 19, 2026, timestamp ~2:15-2:55): **Vendor white-mat sell trick.** AgentHuntsman: "If you go to a vendor, you can sell these white ones... I do this once a week... one of them gives you 150, but then you sell 1,000, you get... 150,000 credits." So the verified math is ~150 basic credits per white material, and selling 1,000 stockpiled whites = 150,000 basic credits. He runs this weekly, selling roughly half his stockpile across all white material types. Heroic mission baseline for comparison: 8,000 credits per heroic clear, 4,000 per story clear (3,500 if speed-spammed). Worth adding to economy section. Source: AgentHuntsman "Money making 101" (Apr 19, 2026).
+- [My dailies 101](https://www.youtube.com/watch?v=FrZXSqcRTFU) (Apr 19, 2026): Daily routine = check Daily Missions → refresh if junk → check world map for high-level Nests → return to clan base → donate daily clan tribute → run **3 of each Open World daily** (Arms Deal Disruption, Hostage Rescue, Supply Runs) instead of pushing for 10 of one type. AgentHuntsman's pacing pattern, not a hard mechanic.
+- [The Game NEVER Properly Explains These Mechanics](https://www.youtube.com/watch?v=EflBC5vKwT0) (May 2, 2026): RPM as proc-engine, cooldown breaking point, amplification vs raw damage, support-as-aggression. **All of these mechanics are already documented in KB Sections 5.344+ (Mechanic 1-5).** AgentHuntsman is a high-quality secondary citation.
+- [Why Your Build Feels WEAK](https://www.youtube.com/watch?v=8n9wQDmZN4o) (May 6, 2026): Six mistakes (stat-spreading, blind-copying, wrong recalibration, overbuilding survivability, playstyle mismatch, gear-equals-power fallacy). All already documented in KB build-rule sections.
+- [Why Pros ALWAYS Value Support Builds](https://www.youtube.com/watch?v=kl_bGvFy96A) (May 8, 2026): Support-as-tempo-control framing. Reinforces KB pressure-angles / support sections.
+- [Why Good Players NEVER Fight Fair](https://www.youtube.com/watch?v=E6msESpjVq4) (May 13, 2026): Pressure angles, multi-direction AI breakdown. **Already documented in KB Section 18.33.7 and 18.35.9.** AgentHuntsman is excellent visual reinforcement.
+- [The Endgame Mistakes Slowing Your Progress](https://www.youtube.com/watch?v=jO-1mbahPec) (May 15, 2026): 5 mistakes (constant class swapping, power-score obsession, scattered investment, directionless farming, damage-over-efficiency). Already documented in KB.
+
+### **Channel Disposition for Citation**
+
+AgentHuntsman writes from clan Cascadia (American server), plays a Vanguard Recon main with a planned Field Medic alt, and produces patient educational content. His on-screen number breakdowns are reliable (verified in the existing KB). Use as a **primary video citation** for build content and a **secondary citation** for mindset/progression content where written-source documentation already exists.
+
+### **Correction: "Precise Matters Watch" Is Actually "Pressing Matter" OS Protocol (May 24, 2026)**
+
+AgentHuntsman's YouTube auto-captions on the [Best Scout Build video](https://www.youtube.com/watch?v=b1ZjnGeeRKI) (~1:00 mark) render the item name as "Precise Matters Watch." He calls it a "watch" because the OS Protocol is wrist-mounted in the UI.
+
+**The correct in-game name is "Pressing Matter"** (singular, no 's'), and it is an **OS Protocol**, not a separate watch slot. Confirmed against the official Division Resurgence Build Database (May 24, 2026 import). Category: Engineering. Rarity: Superior.
+
+Database base stats:
+- Skill Intensity: +12.00%
+- Engineering: +77
+- Skill Damage: +62
+- Health: +2,043
+- Talent: "Grants +10% Skill Cooldown Recovery"
+
+AgentHuntsman's quoted stats at level 50 max-upgraded (+24% Skill Intensity, +358 Engineering, +2,586 Skill Damage, +9,442 Health) are the leveled-up version. The +10% Skill Cooldown Recovery talent is fixed and does not scale.
+
+Citation pattern going forward: when transcribing AgentHuntsman or any creator using "watch" to refer to wrist-mounted gear, cross-check against the OS Protocols list in the Build Database before publishing. Auto-captions consistently mishear "Pressing Matter" as "Precise Matters."
