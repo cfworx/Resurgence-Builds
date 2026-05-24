@@ -15,12 +15,16 @@ shareTitle: "Infect the timeline"
 shareText: "Share this to spread Anarchy stacks across the entire internet."
 plannerHash: "s=Demolitionist&sc=Field+Grenadier&n=Strawberry+Reaper&ms=gs-3&m1=Weapon+Critical+Hit+Chance&m2=Weapon+Critical+Hit+Damage&cs=gs-3&ct=ba-12&c1=Weapon+Critical+Hit+Chance&c2=Weapon+Critical+Hit+Damage&ps=gs-3&pt=bp-17&p1=Weapon+Critical+Hit+Damage&p2=Damage+to+Elites&gs=gs-3&g1=Weapon+Critical+Hit+Chance&g2=Weapon+Critical+Hit+Damage&hs=gs-3&h1=Weapon+Critical+Hit+Chance&h2=Damage+to+Elites&ks=gs-3&k1=Weapon+Critical+Hit+Chance&k2=Weapon+Critical+Hit+Damage&w1e=ew-3&w1t=wt-10&w2s=sw-7&w2tr=T2&w2t=wt-22&w2t2=wt-54&os=os-33&sm1=smc-10&sm2=smc-14&sm3=smc-9"
 faqs:
-  - question: "Is the Demolitionist — The Strawberry Reaper actually the best Agent setup in Division Resurgence?"
-    answer: "If you have the reflexes of a caffeinated teenager, yes. If you're a middle-aged gamer playing on a greasy phone screen, it's still top-tier, but you're probably going to die occasionally. Focus on positioning and let your Agent skills do the heavy lifting."
-  - question: "Can I run this loadout loadout in the Dark Zone?"
-    answer: "You can run whatever you want in the DZ, but don't come crying to me when a rogue squad vaporizes you at extraction. Just remember to check your corners, because taking this into the wrong neighborhood means you'll be respawning before you can even complain about lag."
-  - question: "Why should I spend my hard-earned credits optimizing this?"
-    answer: "Because you can't take your credits to the grave. Grinding for the perfect gear is the entire point of The Division Resurgence. Min-max your stats, hit your breakpoints, and stop walking around with unoptimized trash in your holsters."
+  - question: "Is the Strawberry Reaper the best Demolitionist build in Division Resurgence?"
+    answer: "If you have the reflexes of a caffeinated teenager, yes. If you're a middle-aged gamer playing on a greasy phone screen, it's still top-tier, but you're probably going to die occasionally. Focus on positioning and let your Agent skills do the heavy lifting. The explosions don't need your motor skills. They just need your Engineering stat."
+  - question: "Why is this Demolitionist build called the Strawberry Reaper?"
+    answer: "Because it harvests enemies with the sweet efficiency of a berry picker in a field of exploding fruit. Also because the community naming convention for builds on this site is 'make it sound ridiculous enough that people click on it.' Mission accomplished. You're reading this, aren't you?"
+  - question: "Can I run the Strawberry Reaper in Dark Zone PvP?"
+    answer: "You can try, and the area denial aspect works great at extraction points. The problem is that Demolitionist in PvP is like bringing a trebuchet to a knife fight. If the enemy stands still, you win. If the enemy is a Vanguard player with Lady Death sprinting at you like a cracked-out cheetah, you're going to have a bad time. Plant your explosives, pray, and remember that respawning is free."
+  - question: "Does this build work without exotic weapons?"
+    answer: "Yes. That's one of its biggest selling points. The Strawberry Reaper runs entirely on gear set bonuses and Engineering scaling. Your weapons are stat sticks and talent delivery systems, not the damage source. Any weapon with Duration Downpour works. You could technically run a water pistol if it had the right talent."
+  - question: "Is Demolitionist still good after the patch 1.2.1 changes?"
+    answer: "Demolitionist was barely touched in 1.2.1. While Ubisoft was busy fixing the inventory bug for the eighteenth time, Demolitionist players were quietly deleting rooms full of enemies. The small indie company has bigger fish to fry right now, so enjoy the current state of explosive dominance while it lasts."
 ---
 
 ## What It Is

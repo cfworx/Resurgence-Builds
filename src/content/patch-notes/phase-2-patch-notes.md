@@ -10,8 +10,12 @@ shareTitle: "Save them from reading"
 shareText: "Tweet this summary so your friends don't have to read a 10-page novel."
 
 faqs:
-  - question: "Did they fix that one bug I hate?"
-    answer: "Probably not. But they did introduce three new ones, so you have variety!"
+  - question: "What's new in Division Resurgence Phase 2?"
+    answer: "Everything. New gear sets (Mechanical Expert, Boom Shakalaka, Long-Term Effect), new exotic weapons, the Aegis system rework, new missions, expanded Dark Zone, and quality-of-life updates. Phase 2 is effectively the game's second launch. If you bounced off Phase 1, this is where it gets good. If you stayed through Phase 1, congratulations on your patience. It was rewarded."
+  - question: "Is Phase 2 the biggest update Division Resurgence has had?"
+    answer: "By a significant margin, yes. Phase 1 was the foundation. Phase 2 is the actual house. New endgame systems, new gear to chase, new reasons to log in daily. It's the update that separates 'I played for a week' players from 'I've been playing for six months' players. If Ubisoft can maintain this cadence, Resurgence has a real shot at being the definitive mobile looter shooter. No pressure."
+  - question: "Should I start playing Division Resurgence now or wait for Phase 3?"
+    answer: "Start now. Phase 2 has enough content to keep you busy for months, and starting now means you'll be geared and ready when Phase 3 drops in June. Waiting for Phase 3 means you'll be undergeared while everyone else is farming the new content. Don't be the person who shows up to the expansion launch in tutorial gear. That person dies first and gets zero loot."
 ---
 
 The Phase 2 update for Season 1 went live on May 12. This is the official patch note as published by Ubisoft, organized by category.

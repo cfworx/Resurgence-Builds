@@ -10,10 +10,16 @@ imageAlt: "Tactical Division Resurgence agents armed with high-tech assault rifl
 shareTitle: "Best PvE DPS Builds"
 shareText: "Stop bringing wet noodles to Legendary missions. These are the best PvE DPS builds in Division Resurgence right now."
 faqs:
-  - question: "Which of these is the absolute best for soloing Legendary content?"
-    answer: "The Alt-F4 Shotgun Vanguard. You delete everything before they can shoot back. But if you hate reloading, the Bulwark Vampire Tank never dies."
-  - question: "Do I need exotic weapons for these to work?"
-    answer: "Need? No. Want? Yes. Most of these function perfectly fine with T2 high-end guns, but strapping on a Warlord or Lady Death takes them from 'good' to 'bannable offense'."
+  - question: "What is the best PvE DPS build in Division Resurgence?"
+    answer: "The Alt-F4 Shotgun Vanguard is the current king. It deletes Legendary elites before they can return fire. But 'best' depends on your playstyle. If you hate being close to enemies, the Oxidizing Swarm Medic does comparable damage from 30 meters away. If you hate pressing buttons, the Jackpot Chemical build lets you throw stuff and walk away. Every build on this list clears endgame. Pick the one that matches your willingness to aim."
+  - question: "Which of these builds is the easiest to farm?"
+    answer: "The Jackpot Chemical Medic by a mile. The Jackpot set drops from regular mission rewards, the build requires zero exotic weapons, and the playstyle is 'throw chemicals at doors.' You can have a functioning version in two days of casual play. The shotgun and sniper builds require specific weapon drops that could take weeks. Start Jackpot, upgrade later."
+  - question: "Why does my DPS build feel weak in Legendary?"
+    answer: "Three possible reasons. One: you're splitting stats between Firepower and Engineering. Stop that. Two: your weapon's damage type doesn't match the enemies you're fighting. Check the color bar. Three: you're running solo in content designed for four players. The difficulty doesn't scale down. Legendary is tuned for a full squad. If you're solo and struggling, it's not your build. It's your ambition."
+  - question: "Is PvE endgame worth grinding in Division Resurgence?"
+    answer: "If you enjoy the gameplay loop, absolutely. Legendary missions are the most mechanically demanding content in the game and clearing them feels genuinely rewarding. If you're only grinding for loot, be aware that the RNG is the real final boss. You will farm the same mission 30 times for a specific drop. That's looter shooters. Destiny players did this for a decade and their game just shut down. At least ours is still getting patches."
+  - question: "Do I need a full squad for Legendary missions?"
+    answer: "You need at least three competent players. The ideal squad is one DPS, one support (like the Vanguard Scout Recon), one CC/skill build, and one flex. Matchmaking works but you'll get random quality. If you matchmake into a Legendary with four DPS builds and zero crowd control, you're not clearing it. Leave and re-queue. Life is too short for groups without synergy."
 ---
 
 ## Stop Dragging Down Your Team

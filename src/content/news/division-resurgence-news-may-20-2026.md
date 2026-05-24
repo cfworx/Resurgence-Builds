@@ -10,8 +10,12 @@ shareTitle: "Spread the news"
 shareText: "Share this so your squad knows what changed, what's still broken, and why the Strawberry Milkshake buff can't come soon enough."
 
 faqs:
-  - question: "Why should I care about this news?"
-    answer: "Because reading is fundamental, Agent. And knowing is half the battle (the other half is shooting)."
+  - question: "What happened in Division Resurgence this week?"
+    answer: "The big stories: Patch 1.2.1 dropped with bug fixes, the community discovered the color bar damage type system, and the Strawberry Milkshake exotic continued to disappoint everyone who farmed it. Also, the DZ is still a warzone and Bulwark mains are still the most hated players in Conflict. Business as usual in post-apocalyptic Manhattan."
+  - question: "Is Patch 1.2.1 a big update?"
+    answer: "It's a bug fix patch, not a content patch. Think of it as Ubisoft sweeping the floor after the Phase 2 party. The inventory bug fix was critical, and some weapon tuning happened under the hood, but no new missions, no new gear sets, and no new exotics. The real content drops are Phase 3 in June. 1.2.1 was a maintenance patch. Important but not exciting."
+  - question: "When is Phase 3 coming to Division Resurgence?"
+    answer: "June 2026 is the current target. Phase 3 is expected to bring the Scorpio exotic, the Freemen apparel set, and potentially a new PvP mode. Specific dates haven't been confirmed because Ubisoft announces dates approximately 48 hours before the content drops. We'll cover it the moment it's official."
 ---
 
 Agents, a lot has happened in the last 48 hours. Ubisoft rolled out **Patch 1.2.1** earlier today, the Phase 2 Classified Ops Pass exotic — Strawberry Milkshake — is officially getting reviewed for buffs, the subreddit has been screaming into the void about disappearing inventory, and Phase 3 is just around the corner. Here's everything you need to know, with zero spin and exactly the right amount of suffering.

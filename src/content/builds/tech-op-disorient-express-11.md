@@ -15,12 +15,16 @@ shareTitle: "Send this to the guy who thinks Tech Op is just healer support"
 shareText: "Share this and watch someone completely reassemble their understanding of what a drone can do."
 plannerHash: "s=Tech+Operator&sc=Offensive+Operations&n=Disorient+Express&ms=gs-6&m1=Skill+Critical+Chance&m2=Skill+Critical+Damage&cs=gs-10&ct=ba-24&c1=Weapon+Critical+Hit+Chance&c2=Weapon+Critical+Hit+Damage&ps=gs-10&pt=bp-15&p1=Skill+Intensity&p2=Damage+to+Elites&gs=gs-6&g1=Skill+Critical+Chance&g2=Skill+Intensity&hs=gs-6&h1=Skill+Critical+Damage&h2=Skill+Cooldown+Recovery&ks=gs-6&k1=Skill+Critical+Damage&k2=Skill+Intensity&w1s=sw-7&w1tr=T2&w1t=wt-22&w2s=sw-25&w2tr=T2&w2t=wt-18&os=os-33&sm1=smc-30&sm2=smc-23"
 faqs:
-  - question: "Is the Tech Operator — The Disorient Express actually the best Tech Operator setup in Division Resurgence?"
-    answer: "If you have the reflexes of a caffeinated teenager, yes. If you're a middle-aged gamer playing on a greasy phone screen, it's still top-tier, but you're probably going to die occasionally. Focus on positioning and let your Tech Operator skills do the heavy lifting."
-  - question: "Can I run this loadout loadout in the Dark Zone?"
-    answer: "You can run whatever you want in the DZ, but don't come crying to me when a rogue squad vaporizes you at extraction. Just remember to check your corners, because taking this into the wrong neighborhood means you'll be respawning before you can even complain about lag."
-  - question: "Why should I spend my hard-earned credits optimizing this?"
-    answer: "Because you can't take your credits to the grave. Grinding for the perfect gear is the entire point of The Division Resurgence. Min-max your stats, hit your breakpoints, and stop walking around with unoptimized trash in your holsters."
+  - question: "Is the Disorient Express the best crowd control build in Division Resurgence?"
+    answer: "For pure 'nobody in this room is allowed to shoot back' energy, nothing else comes close. The Disorient Express stacks so many CC effects that enemies spend more time staggered than standing. It's the Division Resurgence equivalent of your mom unplugging the router during an online argument. Enemies just... disconnect."
+  - question: "Can I run Tech Operator in Conflict PvP?"
+    answer: "Technically yes. Practically, you'll spend most of the match getting rushed by Vanguards who move faster than your turret can rotate. Tech Operator PvP is a patience game. You set up, you wait, and when someone walks into your kill zone, you make them deeply regret it. The problem is Conflict maps are small enough that 'setting up' takes longer than the average fight. It's like building a pillow fort in a bar fight."
+  - question: "What makes the Disorient Express different from the Lockdown Tech Op?"
+    answer: "The Lockdown build is about holding one position and making it impenetrable. The Disorient Express is about making the ENTIRE room a nightmare. More CC, wider coverage, faster skill cycling. Lockdown is a castle. Disorient Express is a tornado. Both ruin people's days, just differently."
+  - question: "Why does Tech Operator feel weak compared to Vanguard?"
+    answer: "Because Vanguard kills things immediately and Tech Operator kills things... eventually. The DPS scoreboard will always favor burst damage over sustained control. But here's the dirty secret: in Legendary content, the team with a Tech Operator controlling spawns clears faster than the team with four Vanguards fighting for kills. Your impact doesn't show on the scoreboard. It shows in the clear time."
+  - question: "Is Division Resurgence worth playing over Destiny 2 in 2026?"
+    answer: "Destiny 2 is getting its final update on June 9 and then entering permanent maintenance mode. Division Resurgence is actively getting new content, patches, and bug fixes (when the inventory doesn't eat your loot). So the question isn't whether Resurgence is worth playing over Destiny. It's whether Resurgence is the only looter shooter left standing. The irony of the 'Destiny killer' outliving Destiny is not lost on us."
 ---
 
 ## What It Is

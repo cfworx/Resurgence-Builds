@@ -10,10 +10,16 @@ imageAlt: "Three elite Division Resurgence agents in the Dark Zone, armed with s
 shareTitle: "Best Dark Zone PvP Builds"
 shareText: "Stop getting ganked at extraction. These are the best DZ PvP builds in Division Resurgence for deleting rogues and stealing their loot."
 faqs:
-  - question: "Are these builds good for solo Dark Zone?"
-    answer: "The Lady Death Vanguard is excellent for solo play, but the Oxidizing Swarm Medic requires a team unless you enjoy getting flanked."
-  - question: "Why is everyone running Vanguard in the DZ?"
-    answer: "Because Pulse gives you free wallhacks and Vanguard has the best burst mobility. If you aren't running it, you're playing at a disadvantage."
+  - question: "What is the best Dark Zone PvP build in Division Resurgence?"
+    answer: "The Lady Death Vanguard is the undisputed meta right now. Burst SMG damage, wallhack Pulse, and movement speed that makes you look like a caffeinated cockroach. The Warlord Vanguard is the close second for players who prefer assault rifle range. Both builds assume you can Center-ADS peek. If you can't, learn that first. The build doesn't matter if you can't execute the fundamentals."
+  - question: "Is the Dark Zone worth playing in Division Resurgence?"
+    answer: "If you enjoy adrenaline, paranoia, and typing angry messages to strangers, yes. The Dark Zone has the best loot density in the game, but it also has four-stacks of rogues who treat solo players like walking ATMs. Go in with a group. Extract fast. Trust nobody. And remember, the DZ was designed by people who think 'player interaction' means 'getting shot in the back while trying to extract a god-rolled backpack.'"
+  - question: "How do I survive as a solo player in the Dark Zone?"
+    answer: "Run fast, extract faster, and never fight on someone else's terms. Use Scanning Pulse to see enemies before they see you. Don't engage groups. If you see four agents running in formation, those are not new friends, they are your executioners. Farm in the dead zones of the map where nobody goes and extract at off-peak hours. The DZ rewards cowardice. Embrace it."
+  - question: "Why do rogues always seem to have better gear than me?"
+    answer: "Because they've been farming players like you for weeks. The DZ creates a positive feedback loop where the strong get stronger and the weak provide free loot deliveries. The only way to break the cycle is to get good enough gear outside the DZ first. Farm Legendary missions, build a proper PvP loadout from our build guides, then come back to the DZ as the predator instead of the prey."
+  - question: "Is Division Resurgence PvP balanced?"
+    answer: "No, and that's kind of the point. Looter shooter PvP is inherently unbalanced because the entire game is built around making your character stronger than other characters. 'Balance' in the DZ means 'both sides brought equally broken builds.' If you want balanced PvP, play chess. If you want to feel like a god for 30 seconds before getting killed by someone with better loot, welcome to the Dark Zone."
 ---
 
 ## Welcome to the Toxicity

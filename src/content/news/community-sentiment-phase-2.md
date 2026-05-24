@@ -10,8 +10,12 @@ shareTitle: "Spread the salt"
 shareText: "Share this to let X know that Reddit is still an irredeemable dumpster fire."
 
 faqs:
-  - question: "Why should I care about this news?"
-    answer: "Because reading is fundamental, Agent. And knowing is half the battle (the other half is shooting)."
+  - question: "Is the Division Resurgence community happy with Phase 2?"
+    answer: "Happy is a strong word. 'Cautiously optimistic while still angry about the inventory bug' is more accurate. Phase 2 brought real content (new missions, Aegis rework, gear sets) but also brought real bugs (disappearing items, connection issues, the Strawberry Milkshake being terrible). The community is in the 'we want to love this game but you're making it really hard' phase of the relationship."
+  - question: "Is Division Resurgence dying?"
+    answer: "No. The subreddit is more active than ever, matchmaking times are short, and the Dark Zone is populated enough that you can't extract without getting ganked. Those are signs of a healthy player base. For context, Destiny 2 just announced its final content update drops June 9. Division Resurgence is growing while its biggest competitor is shutting down. That's not dying. That's winning by default."
+  - question: "What's the biggest complaint about Division Resurgence right now?"
+    answer: "The inventory disappearing bug was the biggest, but that's been patched. Currently, it's Dark Zone PvP balance (Bulwark and shotguns), the Gold OS Protocol drop rate being abysmal, and the general feeling that the game doesn't explain its own mechanics. All valid complaints. All things Ubisoft is 'aware of and investigating.' Which is corporate for 'we'll get to it eventually.'"
 ---
 
 

@@ -10,8 +10,12 @@ shareTitle: "Warn your squad"
 shareText: "Share this so your team knows what got fixed, what didn't, and why you still can't complete Outpost Annihilation."
 
 faqs:
-  - question: "Did they fix that one bug I hate?"
-    answer: "Probably not. But they did introduce three new ones, so you have variety!"
+  - question: "What are the most important changes in Patch 1.2.1?"
+    answer: "The inventory disappearing bug fix is the headliner. Everything else is secondary. Ubisoft also fixed the Strawberry Milkshake tooltip (it now shows accurate but depressing numbers), tweaked some weapon balance, and addressed connection issues for Asia and PC players. The patch is primarily a stability and trust-recovery update after the rough Phase 2 launch."
+  - question: "Did Patch 1.2.1 nerf any builds?"
+    answer: "No significant build-killing nerfs in 1.2.1. Weapon tuning was minor and most gear set bonuses were untouched. If your build worked before the patch, it works after the patch. If your build didn't work before the patch, it still doesn't, and that's a you problem, not a Ubisoft problem."
+  - question: "Is the Strawberry Milkshake fixed in Patch 1.2.1?"
+    answer: "The tooltip was fixed to show accurate numbers. The weapon itself is still terrible. The community has dubbed it the 'poor man's Pestilence' and Ubisoft has acknowledged a buff is coming. Do not spend recalibration materials on it until the buff arrives. The Milkshake brings nobody to the yard in its current state."
 ---
 
 Patch 1.2.1 deployed on **May 20, 2026**. This is a targeted hotfix — not a content drop — aimed at the vendor meltdown, inventory losses, and Classified Ops Pass chaos that followed the Phase 2 launch on May 11–12. It also includes a significant line about **Strawberry Milkshake** that every Phase 2 player needs to read. Source: [Ubisoft Mobile Help Center — Patch Note 1.2.1](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/section/539-patch-note/).

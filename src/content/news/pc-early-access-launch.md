@@ -10,8 +10,12 @@ shareTitle: "Flex on console players"
 shareText: "Tweet this to let the timeline know your PC is currently melting."
 
 faqs:
-  - question: "Why should I care about this news?"
-    answer: "Because reading is fundamental, Agent. And knowing is half the battle (the other half is shooting)."
+  - question: "Is Division Resurgence on PC?"
+    answer: "Yes. PC early access launched alongside the mobile versions. The PC client runs through the official launcher and offers full keyboard/mouse support. It's the same game, same servers, same content. PC players can matchmake with mobile players, which means phone players are now getting cover-peeked by people with 240Hz monitors and Cherry MX switches. Welcome to cross-play."
+  - question: "Does Division Resurgence support controller on PC?"
+    answer: "Yes, full controller support is available on PC. The game auto-detects your input device and adjusts the UI accordingly. If you're coming from console Destiny (rest in peace, June 9), the controller layout will feel familiar. Just don't expect aim assist to carry you the way Bungie's did."
+  - question: "Is the PC version of Division Resurgence a good port?"
+    answer: "It's decent but not perfect. The UI still has some mobile-era remnants, like button sizes optimized for touchscreens and some menu navigation that feels clunky with a mouse. Performance is solid on mid-range hardware. It runs better than Destiny 2 on the same specs, which is both a compliment and a low bar. Ubisoft is iterating on the PC experience with each patch."
 ---
 
 The Division Resurgence is now available in Early Access on PC via **Ubisoft Connect**, just under a month after its March 31 mobile launch. The PC version is free-to-play, with full **cross-play** and **cross-progression** across iOS, Android, and PC — you can switch devices and pick up where you left off.

@@ -10,10 +10,16 @@ imageAlt: "A squad of beginner Division agents fighting in snowy urban combat wi
 shareTitle: "Best Starter Builds"
 shareText: "Just hit endgame with no exotics? These starter builds will carry you through the grind without hundreds of hours of farming."
 faqs:
-  - question: "Can I take these starter builds into Legendary missions?"
-    answer: "You can, but you'll probably spend a lot of time kissing the pavement. Use these builds to farm the gear you need for the actual endgame meta builds."
-  - question: "Which specialization should I start with?"
-    answer: "Vanguard is the easiest for raw DPS, while Field Medic is always welcome in group play because nobody else wants to play healer."
+  - question: "What is the best starter build for new Division Resurgence players?"
+    answer: "The Jackpot Chemical Medic. No exotics required. The gear set drops everywhere. The playstyle is 'throw chemicals at doorways and watch enemies dissolve.' You don't need good aim, you don't need good reflexes, and you don't need to understand the damage formula. You just need Engineering on every piece and the willingness to commit light war crimes. Welcome to endgame."
+  - question: "Can I take starter builds into Legendary missions?"
+    answer: "You can, but manage your expectations. Starter builds are designed to farm the gear you need for ACTUAL Legendary builds. Running a starter build into Legendary is like showing up to a job interview in pajamas. It's technically possible, but everyone in the room knows you're not prepared. Farm Hard and Heroic first, build a proper loadout, then come back to Legendary with gear that earns respect."
+  - question: "Which specialization should I pick first in Division Resurgence?"
+    answer: "Vanguard if you want to play solo DPS and pretend you're in a John Wick movie. Field Medic if you want to be useful in groups and never wait for a matchmaking invite. Tech Operator if you like gadgets and have the patience of a monk. Demolitionist if you want big explosions and small health bars. Bulwark if you enjoy watching other people's bullets bounce off your shield while they question their life choices."
+  - question: "How long does it take to get a good endgame build?"
+    answer: "A functional endgame build takes about a week of casual play. A GOOD endgame build takes 2-3 weeks. A PERFECT endgame build with max-rolled T2 gear on every slot takes months and a sacrifice to the RNG gods. The good news is that a 'functional' build can clear Legendary content. Perfection is for bragging rights, not necessity."
+  - question: "Is Division Resurgence pay-to-win?"
+    answer: "No. Zero gameplay-affecting items are sold for real money. Cosmetics only. This is genuinely one of the fairest free-to-play models in mobile gaming right now. Ubisoft may struggle with inventory bugs and balance patches, but they got monetization right. Your wallet won't help your build. Only your grind will. And your sanity. You'll lose both."
 ---
 
 ## You Gotta Start Somewhere

@@ -10,8 +10,12 @@ shareTitle: "Share the hopium"
 shareText: "Tweet this to convince your followers the game is definitely saved this time."
 
 faqs:
-  - question: "Why should I care about this news?"
-    answer: "Because reading is fundamental, Agent. And knowing is half the battle (the other half is shooting)."
+  - question: "What's on the Division Resurgence roadmap?"
+    answer: "Season 1 brought the foundation (classes, Dark Zone, first exotics). Season 2 adds new gear sets, the Scorpio exotic, and expanded PvP. Season 3 is expected to include a new specialization, though Ubisoft hasn't confirmed details. The roadmap is intentionally vague because Ubisoft learned from Destiny's mistake of over-promising and under-delivering. At least they learned SOMETHING from watching Destiny, even if Destiny itself didn't survive."
+  - question: "Will there be new specializations in Division Resurgence?"
+    answer: "Heavily rumored for Season 3 but not officially confirmed. The community is betting on a dedicated marksman or sniper specialization based on datamined assets and dev stream hints. If it happens, expect this site to have a build guide up within 24 hours of launch. We don't sleep. We caffeinate."
+  - question: "How long will Division Resurgence be supported?"
+    answer: "Ubisoft has committed to a multi-year content plan. Given that the game is generating revenue through cosmetics and has a growing player base, support should continue for at least 2-3 more years. For comparison, Destiny 2 lasted about 10 years before Bungie pulled the plug in June 2026. Division Resurgence is just getting started. The future looks promising, assuming the inventory stays intact."
 ---
 
 Ubisoft published the full seasonal roadmap on April 28. New seasons land every **four months**; phases within a season arrive every **six weeks**.

@@ -10,8 +10,12 @@ shareTitle: "Save a life"
 shareText: "Share this summary to save another agent from 45 minutes of corporate jargon."
 
 faqs:
-  - question: "Why should I care about this news?"
-    answer: "Because reading is fundamental, Agent. And knowing is half the battle (the other half is shooting)."
+  - question: "When is the next Division Resurgence developer stream?"
+    answer: "Ubisoft's dev stream cadence is roughly every 3-4 weeks, but they've been known to go radio silent for up to 6 weeks during crunch periods. The April stream was the last one with significant content reveals. Follow @TDResurgence on Twitter/X for announcements, but don't hold your breath. The small indie company communicates on their own schedule."
+  - question: "Does Ubisoft actually listen to player feedback?"
+    answer: "Based on the April stream, yes, they read Reddit. Whether they ACT on it in a timely manner is a separate conversation. The inventory bug was reported for two weeks before it got patched. The Dark Zone balance complaints have been ongoing since launch. They listen. They just process feedback at the speed of a government agency approving a building permit."
+  - question: "What was the most important announcement from the developer stream?"
+    answer: "The Phase 2 roadmap confirmation and the hint at Season 2 content. Everything else was quality-of-life stuff that should have been in the game at launch. But we'll take it. Progress is progress, even when it's slow enough to measure with a calendar instead of a stopwatch."
 ---
 
 Ubisoft hosted a developer livestream on April 18 covering the launch period. Community moderator u/JokerUnique posted a clean summary on Reddit; the underlying source is the official Ubisoft Twitch stream.

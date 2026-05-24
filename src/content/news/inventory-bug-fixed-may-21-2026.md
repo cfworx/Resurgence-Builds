@@ -10,10 +10,12 @@ shareTitle: "The Inventory Bug is Dead"
 shareText: "Ubisoft finally fixed the disappearing loot bug, but the compensation is lacking. Plus, why the Strawberry Milkshake is the new Pestilence."
 
 faqs:
-  - question: "Did they fix the disappearing items?"
-    answer: "Yes, a May 21 server patch addressed the 'index out of bounds' error causing the inventory wipes. However, compensation for previously lost items is still being handled on a case-by-case basis via support tickets."
-  - question: "Is the Strawberry Milkshake worth using?"
-    answer: "Currently, no. The community has dubbed it the 'poor man's Pestilence.' Save your recalibration materials until Ubisoft releases the confirmed buff."
+  - question: "Did Ubisoft fix the disappearing inventory bug in Division Resurgence?"
+    answer: "Yes, a May 21 server-side patch addressed the 'index out of bounds' error causing inventory wipes. In non-developer terms: the game's inventory system was trying to access a storage slot that didn't exist, and your god-rolled Lady Death fell into the digital void. The fix stops new items from disappearing. Compensation for previously lost items is being handled via support tickets, which means 'send a ticket and pray.'"
+  - question: "Will I get my lost items back from the inventory bug?"
+    answer: "The blanket compensation was 500k Basic Credits and 750 Phoenix Credits for all affected players. For specific lost items, you need to submit a support ticket to Ubisoft customer service. Community reports on success rates are mixed. Some players got items restored, others got a form response. If you lost a max-rolled Warlord, our condolences. And our suggestion to submit that ticket immediately."
+  - question: "Is it safe to play Division Resurgence now or will my items disappear again?"
+    answer: "The root cause has been patched. The 'index out of bounds' error has been fixed at the server level, meaning the specific bug that caused items to vanish in transit between your inventory and the database is no longer active. That said, this is a live service game. New bugs can always appear. But the specific inventory-eating demon has been exorcised. Probably. This IS Ubisoft we're talking about."
 ---
 
 # Ubisoft Names the Boss: Inventory-Wipe Bug Was an Index-Out-of-Bounds Error

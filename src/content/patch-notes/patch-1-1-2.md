@@ -10,8 +10,12 @@ shareTitle: "Warn the timeline"
 shareText: "Share this to let your squad know their favorite gun just got stealth-nerfed."
 
 faqs:
-  - question: "Did they fix that one bug I hate?"
-    answer: "Probably not. But they did introduce three new ones, so you have variety!"
+  - question: "What changed in Division Resurgence Patch 1.1.2?"
+    answer: "Balance changes, bug fixes, and quality-of-life improvements. Check the full notes above for specifics. The TL;DR is that nothing got nerfed hard enough to kill a build and nothing got buffed hard enough to create a new meta. It's a tune-up patch, not a revolution. Your current build probably still works fine."
+  - question: "Should I re-farm my gear after Patch 1.1.2?"
+    answer: "Only if a specific talent or gear set bonus you use was changed in the patch notes. If your build wasn't touched, your gear is still good. Don't re-farm out of paranoia. Re-farm out of confirmed patch notes. Read the notes, check your build, and only panic if the numbers actually changed."
+  - question: "When is the next big content update for Division Resurgence?"
+    answer: "Phase 2 was the last major content drop. Phase 3 is expected in June 2026. Between now and then, expect hotfixes and balance patches. The game is in maintenance mode between content drops, which is normal for live service titles. Destiny did this for a decade. Resurgence does it between seasons. The cycle of content drought and content flood is the looter shooter circle of life."
 ---
 
 Patch 1.1.2 deployed alongside the PC Early Access launch. The update was a stability and quality-of-life pass, with a heavy emphasis on mouse-and-keyboard support — clearly to prep for PC players coming in fresh.

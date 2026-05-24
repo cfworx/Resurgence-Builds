@@ -10,8 +10,12 @@ shareTitle: "Share the misery"
 shareText: "Share this so your friends know what they're getting into before they download the game."
 
 faqs:
-  - question: "Why should I care about this news?"
-    answer: "Because reading is fundamental, Agent. And knowing is half the battle (the other half is shooting)."
+  - question: "Where can I find Division Resurgence community discussion?"
+    answer: "The main hub is r/thedivisionresurgence on Reddit. It's where build theory, bug reports, memes, and heated PvP balance debates all coexist in a chaotic stew of shared frustration and genuine love for the game. The official Discord is also active but Reddit has the best searchable history. Twitter/X has the content creators. YouTube has the build videos. Choose your own adventure."
+  - question: "Is the Division Resurgence Reddit toxic?"
+    answer: "By gaming subreddit standards? It's actually pretty civil. People are passionate about the game, which means debates get heated, but outright toxicity gets moderated. The DZ complaints are loud but justified. The build theorycrafting is genuinely helpful. And the memes are mid-tier at best, which means there's room for you to be the hero this community deserves."
+  - question: "Does Ubisoft read the Division Resurgence subreddit?"
+    answer: "Yes. The official u/TDResurgence account posts semi-regularly and community managers have confirmed they monitor the sub. Whether individual feedback threads get elevated to the dev team is another question. The inventory bug fix was partially accelerated by Reddit pressure, so yes, screaming into the void works. Sometimes. If enough people scream simultaneously."
 ---
 
 Every week, the Division Resurgence subreddit delivers a masterclass in communal suffering, accidental comedy, and the kind of raw, unfiltered gamer rage that would make a therapist retire early. We read it all so you don't have to. Here are the 10 best posts from the last two weeks — ranked by how hard they made us laugh, cry, or both.

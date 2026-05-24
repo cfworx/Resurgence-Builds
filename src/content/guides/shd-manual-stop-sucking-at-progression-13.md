@@ -10,12 +10,16 @@ imageAlt: "Division Resurgence SHD Manual Progression Guide by Agent Huntsman"
 shareTitle: "The SHD Manual — Progression Decoded"
 shareText: "Stop wasting credits on T0 gear. Agent Huntsman breaks down the four phases of progression and how to actually build your character."
 faqs:
-  - question: "Why am I constantly dying in the early game?"
-    answer: "Because you're trying to optimize T0 gear like a spreadsheet nerd instead of learning the actual game systems. Your job early on isn't to build the ultimate character; it's to figure out which end of the gun the bullets come out of. Experiment with classes, learn weapon feel, and stop crying about damage numbers."
-  - question: "When should I start caring about min-maxing my stats?"
-    answer: "Later. Early game is for testing; endgame is for spreadsheets. Focus on understanding enemy behavior and repositioning. A massive damage number doesn't matter if you have the structural integrity of wet cardboard and keep standing in grenades."
-  - question: "What should I look for in a weapon?"
-    answer: "Feel over raw stats. Stability, recoil, handling, fire rate, reload time, and effective range. If the weapon feels like a wild firehose, you're going to miss half your shots anyway, making that big damage number completely useless."
+  - question: "What is the SHD Manual in Division Resurgence?"
+    answer: "It's the in-game progression guide that Ubisoft buried behind three menus and wrote in a font size apparently designed for ants. It contains genuinely useful information about how damage types, stat scaling, and gear progression work. The problem is that nobody reads it because the game never tells you it exists and the UI makes it look like a loading screen tip someone accidentally left in. We extracted the useful parts so you don't have to squint."
+  - question: "How does gear progression actually work in Division Resurgence?"
+    answer: "You get gear. You look at the stats. If the stats match your build identity, you equip it. If they don't, you break it down for materials. That's it. The confusing part is that the game throws a dozen stats at you and never explains which ones matter for YOUR build. Here's the shortcut: your core stat (Firepower, Engineering, or Toughness) matters. Everything else is supporting cast. Focus on core stat first, optimize secondary rolls later."
+  - question: "Why does the game never explain its own systems?"
+    answer: "Because Ubisoft is a small indie company with limited resources for tutorial design. Just kidding, they're a multi-billion dollar corporation that chose to ship a game with a damage-type system that isn't explained in the tutorial, a cover-peek mechanic that isn't mentioned anywhere in-game, and a stat formula that requires a community wiki to understand. We are that community wiki. You're welcome."
+  - question: "Is there a max level cap in Division Resurgence?"
+    answer: "The current level cap is 50, with gear tiers going up to T2. Beyond that, SHD levels provide incremental stat bonuses that scale indefinitely but with diminishing returns. The real cap isn't a number. It's your sanity. After a certain point, you're farming for 0.5% improvements that take 40 hours each. Only you can decide when 'good enough' is good enough."
+  - question: "Should I follow the game's recommended gear or build my own?"
+    answer: "Build your own. The game's recommended gear is based on Power Score, which we've established is about as useful as a chocolate teapot. A recommended loadout will have mismatched stats, conflicting talents, and zero synergy. It's the build equivalent of a suit made from three different suits stapled together. Pick a build guide from this site, farm the specific pieces, and ignore the green arrows of lies."
 ---
 
 # SHD Manual — How to Stop Sucking at Progression

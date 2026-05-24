@@ -10,12 +10,16 @@ imageAlt: "Which specialization to pick in The Division Resurgence — Vanguard,
 shareTitle: "Save a teammate from picking the wrong spec"
 shareText: "Share this before someone joins your Legendary run as a glass cannon Tech Op with no idea what Aegis does."
 faqs:
-  - question: "Is the Which Specialization Should You Pick in The Division Resurgence? — 2026 Guide actually the best Beginner setup in Division Resurgence?"
-    answer: "If you have the reflexes of a caffeinated teenager, yes. If you're a middle-aged gamer playing on a greasy phone screen, it's still top-tier, but you're probably going to die occasionally. Focus on positioning and let your Beginner skills do the heavy lifting."
-  - question: "Can I run this loadout loadout in the Dark Zone?"
-    answer: "You can run whatever you want in the DZ, but don't come crying to me when a rogue squad vaporizes you at extraction. Just remember to check your corners, because taking this into the wrong neighborhood means you'll be respawning before you can even complain about lag."
-  - question: "Why should I spend my hard-earned credits optimizing this?"
-    answer: "Because you can't take your credits to the grave. Grinding for the perfect gear is the entire point of The Division Resurgence. Min-max your stats, hit your breakpoints, and stop walking around with unoptimized trash in your holsters."
+  - question: "What is the best specialization in Division Resurgence?"
+    answer: "Vanguard, and it's not particularly close. Scanning Pulse is legal wallhacks, the mobility skills are the best in the game, and both the DPS and Support builds are top-tier. That said, 'best' depends on role. For healing, Field Medic has no competition. For tanking, Bulwark is the only option. For explosions, Demolitionist. For gadgets, Tech Operator. Vanguard just happens to be best at the thing most people want to do: kill stuff quickly."
+  - question: "Can I change my specialization in Division Resurgence?"
+    answer: "Yes, you can unlock and switch between all five specializations. Your gear stays in your inventory. The only investment lost when switching is the time spent leveling up that specialization's skill tree. Which means the real answer is: try all five, pick the one that matches your playstyle, and switch whenever the meta shifts. Flexibility is a feature. Ubisoft got this one right."
+  - question: "Is Field Medic boring to play?"
+    answer: "Only if you think keeping four random people alive through content they have no business attempting is boring. Field Medic is the 'mom friend' of Division Resurgence. You bring the snacks, clean up everyone's mess, and never get thanked. But you're also the reason the group didn't disband after the third wipe. Healer mains are a different breed. We respect them. We're also slightly concerned about them."
+  - question: "Which specialization has the best PvP in Division Resurgence?"
+    answer: "Vanguard dominates PvP at every level. Scanning Pulse gives you enemy positions, the movement abilities let you disengage bad fights, and the DPS ceiling is the highest of any spec. Field Medic's Oxidizing Swarm build is a dark horse in the Dark Zone for area denial. Demolitionist and Tech Operator can work but require more game knowledge and positioning. Bulwark is strong in 1v1 but a liability if outnumbered."
+  - question: "Should I unlock all specializations or focus on one?"
+    answer: "Focus one to max level first, then branch out. Trying to level all five simultaneously means you'll be mediocre at everything and dominant at nothing. Pick your main, max its skill tree, gear it fully, then use your alt specs for variety when your main's content gets stale. The exception is if your clan needs a healer and nobody else will do it. In that case, level Field Medic first. Someone has to be the adult."
 ---
 
 ## What Is the Best Specialization in The Division Resurgence?

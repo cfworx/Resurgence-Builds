@@ -7,8 +7,16 @@ description: "Comprehensive weapon tier list for The Division Resurgence Season 
 author: "RapidF5"
 
 faqs:
-  - question: "Is my favorite weapon S-Tier?"
-    answer: "No. But don't let some random list on the internet tell you how to live your life. (But yes, it's garbage)."
+  - question: "What is the best weapon in Division Resurgence Season 1?"
+    answer: "The Warlord AR is the consensus S-tier weapon for PvE and PvP. Massive damage per bullet, strong talent options, and the Blast damage type melts anything with a red weakness bar. The caveat is that it's an exotic, so getting one requires either luck or a blood sacrifice to the RNG gods. If you don't have a Warlord yet, any AR with Duration Downpour is your best non-exotic option."
+  - question: "Is the tier list based on DPS numbers or actual gameplay?"
+    answer: "Actual gameplay, community testing, and content creator analysis. DPS numbers in Division Resurgence are misleading because the character screen doesn't account for talent procs, set bonuses, or team buffs. Our rankings reflect how weapons perform in real endgame content (Legendary missions, Dark Zone PvP, Conflict) with optimized builds, not how they look on a stat screen that was clearly designed by someone who hates useful information."
+  - question: "Why is the Strawberry Milkshake rated so low?"
+    answer: "Because it does 38 damage per DoT tick. That's not a typo. Thirty-eight. The community has formally requested that Ubisoft rename it to the 'Strawberry Mistake.' A buff is confirmed coming but until it arrives, this weapon is a trophy you display in your stash, not a tool you bring to content. Save your recalibration materials."
+  - question: "How often is the Division Resurgence tier list updated?"
+    answer: "After every major patch or when community testing reveals a significant meta shift. We don't update for minor hotfixes that don't affect weapon balance. If you're reading this and the 'last updated' date is more than a month old, yell at us on Twitter @ResurgenceBuild. We probably forgot. It happens."
+  - question: "Does this tier list apply to PvP and PvE?"
+    answer: "It's weighted toward PvE because that's where most players spend most of their time. PvP tier rankings can differ significantly. The Lady Death is a B-tier PvE weapon but an S-tier PvP weapon because SMG range isn't a limitation when you're 5 meters from another player. Check our PvP-specific build guides for Dark Zone and Conflict recommendations."
 ---
 
 ## Methodology
