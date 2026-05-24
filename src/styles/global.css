@@ -844,12 +844,45 @@ tbody tr:hover {
 
 /* --- Prose Content (Markdown body) --- */
 .prose h2 {
-  margin-top: var(--sp-10);
-  padding-bottom: var(--sp-3);
-  border-bottom: 1px solid var(--border);
+  margin-top: var(--sp-12);
+  margin-bottom: var(--sp-6);
+  padding: var(--sp-4) var(--sp-5);
+  background: linear-gradient(135deg, rgba(242, 104, 34, 0.08) 0%, rgba(23, 23, 26, 0.9) 100%);
+  border-left: 3px solid var(--accent);
+  border-radius: 0 var(--border-radius) var(--border-radius) 0;
+  font-size: var(--text-2xl);
+  letter-spacing: -0.02em;
 }
 
-.prose h3 { margin-top: var(--sp-8); }
+.prose h3 {
+  margin-top: var(--sp-8);
+  margin-bottom: var(--sp-3);
+  padding-left: var(--sp-4);
+  position: relative;
+  color: var(--ink);
+}
+
+.prose h3::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 6px;
+  background: var(--accent);
+  border-radius: 50%;
+}
+
+.prose p {
+  color: var(--ink-muted);
+  line-height: 1.8;
+}
+
+.prose strong {
+  color: var(--ink);
+  font-weight: 600;
+}
 
 .prose ul, .prose ol {
   margin-bottom: var(--sp-4);
@@ -862,28 +895,88 @@ tbody tr:hover {
 .prose li {
   margin-bottom: var(--sp-2);
   color: var(--ink-muted);
+  line-height: 1.7;
 }
 
 .prose li::marker { color: var(--accent); }
 
+.prose li strong {
+  color: var(--ink);
+}
+
 .prose blockquote {
-  border-left: 2px solid var(--accent);
-  padding-left: var(--sp-4);
+  border-left: 3px solid var(--accent);
+  background: linear-gradient(135deg, rgba(242, 104, 34, 0.06) 0%, var(--surface) 100%);
+  padding: var(--sp-4) var(--sp-5);
   margin: var(--sp-6) 0;
   color: var(--ink-muted);
   font-style: italic;
+  border-radius: 0 var(--border-radius) var(--border-radius) 0;
+}
+
+.prose blockquote strong {
+  color: var(--accent);
+  font-style: normal;
 }
 
 .prose hr {
   border: none;
   height: 1px;
-  background: var(--border);
-  margin: var(--sp-8) 0;
+  background: linear-gradient(90deg, var(--accent) 0%, var(--accent-dim) 20%, var(--border) 50%, transparent 100%);
+  margin: var(--sp-12) 0;
+  opacity: 0.6;
 }
 
 .prose img {
   border-radius: var(--border-radius);
   margin: var(--sp-6) 0;
+}
+
+/* --- Prose Tables (elevated card style) --- */
+.prose table {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.prose thead {
+  background: linear-gradient(135deg, rgba(242, 104, 34, 0.12) 0%, var(--surface-2) 100%);
+  border-bottom: 2px solid var(--accent-dim);
+}
+
+.prose th {
+  color: var(--ink);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: var(--text-xs);
+  letter-spacing: 0.06em;
+  padding: var(--sp-3) var(--sp-4);
+}
+
+.prose td {
+  padding: var(--sp-3) var(--sp-4);
+  border-bottom: 1px solid rgba(42, 42, 45, 0.6);
+  color: var(--ink-muted);
+}
+
+.prose tbody tr {
+  transition: background var(--transition-fast);
+}
+
+.prose tbody tr:hover {
+  background: rgba(242, 104, 34, 0.04);
+}
+
+.prose tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* --- Prose emphasis/italic (talent descriptions) --- */
+.prose em {
+  color: rgba(242, 104, 34, 0.8);
+  font-style: italic;
 }
 
 /* --- Two-column Layout --- */
@@ -1070,10 +1163,17 @@ tbody tr:hover {
 
   .prose h2 {
     margin-top: var(--sp-8);
+    padding: var(--sp-3) var(--sp-4);
+    font-size: var(--text-xl);
   }
 
   .prose h3 {
     margin-top: var(--sp-6);
+    font-size: var(--text-lg);
+  }
+
+  .prose hr {
+    margin: var(--sp-8) 0;
   }
 
   .filter-bar {
