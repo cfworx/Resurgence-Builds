@@ -75,14 +75,14 @@ The loop is simple: stack Engineering through Torrential Downpour and Fully Char
 
 ## Loot Quick-Reference
 
-| Drop | Keep If | Recalibrate To |
+| Drop | Must Drop With | Recalibrate (1 slot) |
 |---|---|---|
-| T1 Boom Shakalaka mask/holster | Engineering core + Skill CDR or Duration roll | Engineering primary, CDR/Duration secondary |
-| T1 Mechanical Expert chest | Engineering core + Socialite talent | Armor or Damage Reduction secondary |
-| T1 Mechanical Expert backpack | Engineering core + Brainstorm talent | Skill Duration or CDR secondary |
-| T1 Mechanical Expert gloves/kneepads | Engineering core + Skill CDR or Duration roll | Engineering primary, CDR/Duration secondary |
-| Police M4 (any tier) | Torrential Downpour OR Rapid Charge rolled | Weapon Blast Damage + Weapon Damage |
-| P90 or AUG A3 Para XS (T1) | **Both Torrential Downpour AND Fully Charged rolled** | Weapon Piercing Damage + Weapon Damage |
+| T1 Boom Shakalaka mask/holster | Engineering core + either Skill CDR or Duration | Recal the other bonus to CDR or Duration |
+| T1 Mechanical Expert chest | Engineering core + Socialite talent | Recal one bonus to Armor or Damage Reduction |
+| T1 Mechanical Expert backpack | Engineering core + Brainstorm talent | Recal one bonus to Skill Duration or CDR |
+| T1 Mechanical Expert gloves/kneepads | Engineering core + either Skill CDR or Duration | Recal the other bonus to CDR or Duration |
+| Police M4 (any tier) | Torrential Downpour OR Rapid Charge (need one) | Recal the missing talent onto it |
+| P90 or AUG A3 Para XS (T1) | Torrential Downpour AND Fully Charged (need both) | Can't recal talents onto each other — both must drop naturally |
 | Pressing Matter OS Protocol | Always keep | n/a |
 
 ---
