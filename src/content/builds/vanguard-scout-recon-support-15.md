@@ -52,21 +52,16 @@ The loop is simple: stack Engineering through Torrential Downpour and Fully Char
 | Holster | Boom Shakalaka | - | Engineering | Sig. Ability Charge Efficiency | Skill Duration |
 | Kneepads | Mechanical Expert | - | Engineering | Skill Cooldown Recovery | Weapon Damage |
 
-### Weapons, Skills & OS
+### Loadout
 
 | Slot | Item | Details |
 |---|---|---|
 | **Primary** | Police M4 (AR) | Torrential Downpour + Rapid Charge |
 | **Secondary** | P90 (SMG) | Torrential Downpour + Fully Charged |
+| **OS Protocol** | Pressing Matter | +10% Skill CDR · +358 Engineering · +24% Skill Intensity |
 | **Skill 1** | Tactical Smart Cover | Team weapon damage buff based on your Engineering |
 | **Skill 2** | Scanning Pulse | +20% Target Vulnerability to all enemies hit |
 | **Signature** | Tactical Link | Team-wide Rate of Fire, Damage Reduction, Movement Speed |
-
-### OS Protocol
-
-| Protocol | Base Effect | Level 50 Stats |
-|---|---|---|
-| **Pressing Matter** | +10% Skill Cooldown Recovery | +24% Skill Intensity, +358 Engineering, +286 Skill Damage, +9,402 Health |
 
 ### Software/Firmware Chipsets
 
