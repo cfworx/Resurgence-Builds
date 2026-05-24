@@ -224,8 +224,16 @@ const redditShareUrl = `https://reddit.com/submit?url=${encodeURIComponent(Astro
     width: 100%;
     height: auto;
     display: block;
-    aspect-ratio: 1200 / 630;
-    object-fit: cover;
+    max-height: 400px;
+    object-fit: contain;
+    background: var(--surface);
+  }
+  @media(min-width: 768px) {
+    .build-hero img {
+      max-height: 500px;
+      object-fit: cover;
+      aspect-ratio: 16 / 9;
+    }
   }
 
   /* Mobile: sidebar on top, article below */

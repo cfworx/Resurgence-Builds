@@ -39,7 +39,7 @@ This is the Vanguard Recon Scout. It does not kill things. It makes your entire 
 
 The whole thing runs on one combat loop: hit enemies fast, proc Torrential Downpour for Engineering, empty your P90 to stack Fully Charged, then let Tactical Smart Cover convert all that Engineering into raw weapon damage for every teammate standing behind it. Scanning Pulse slaps vulnerability on everything. Tactical Link gives your team rate-of-fire steroids. Repeat until everything is dead.
 
-Your scoreboard number will look embarrassing. Your team's total output will be disgusting.
+Your personal DPS will look embarrassing. Your team's total output will be disgusting.
 
 ## Why Support Beats Solo Damage
 
@@ -236,7 +236,7 @@ The build does NOT require T2 gear to function. AgentHuntzman runs it at T1 and 
 2. **Police M4 with Torrential Downpour + Rapid Charge as primary. P90 with Torrential Downpour + Fully Charged as secondary.** Only two SMGs (P90 and AUG A3 Para XS) can roll both talents. The P90 at 900 RPM empties its mag in 3.3 seconds for maximum Fully Charged procs.
 3. **Socialite on chest, Brainstorm on backpack.** Socialite makes you tanky. Brainstorm gives +30% Skill Duration when near allies (you're a support build, you're always near allies). More uptime on every buff you place.
 4. **Mobile Bastion + Scout + Bugle Call for skill chips.** All three generate team Signature Ability charge or buff team output. None of them buff you personally. That's the entire point.
-5. **The combat loop is: Pulse, Smart Cover, M4 for Torrential Downpour, P90 empty reloads x3, Tactical Link.** Run that loop. Your team triples their damage. Your own DPS looks mid on the scoreboard. That is the build working correctly.
+5. **The combat loop is: Pulse, Smart Cover, M4 for Torrential Downpour, P90 empty reloads x3, Tactical Link.** Run that loop. Your team triples their damage. That is the build working correctly.
 
 ## Related Builds
 
