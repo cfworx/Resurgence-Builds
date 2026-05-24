@@ -155,19 +155,6 @@ The team's DPS doesn't just go up. It multiplies across three separate buff stag
 
 ---
 
-## Why Support Beats Solo Damage
-
-The current Legendary meta is brutal on solo damage builds. Tech Operator drones are getting popped by single grenades. Bulwark tanks run out of ammo before they run out of health. Pure DPS Vanguards melt one wave then sit in cover for 45 seconds waiting on Tactical Link cooldown.
-
-The Scout sidesteps all of that:
-
-1. **Your skills don't die.** Smart Cover doesn't have an HP bar. Scanning Pulse doesn't have an HP bar. They tick forever while drones are exploding like fireworks around you.
-2. **You're not the single point of failure.** When a DPS build goes down, the team's damage goes with it. When you go down, the team loses a buff. They can still shoot.
-3. **You play from cover.** Socialite gives +36% Armor when enemies are within 20 meters. You are tankier than most "tank" builds while sitting safer than most DPS builds.
-4. **Engineering scales everything.** Fully Charged stacks inflate your Engineering pool. Smart Cover converts that pool into team weapon damage. The build feeds itself.
-
----
-
 ## Specialization Focus Upgrades
 
 These are unlocked through the Recon specialization tree and are critical to the build.
