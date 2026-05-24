@@ -7,7 +7,7 @@ pvp: false
 lastUpdated: 2026-05-24T11:00:00Z
 patch: "Season 2"
 tags: ["vanguard", "scout", "recon", "support", "engineering", "smart-cover", "tactical-link", "scanning-pulse", "fully-charged", "team-dps"]
-description: "The T1 Vanguard Scout build that triples your team's DPS through Smart Cover, Scanning Pulse, and Fully Charged stacking. No Legendary drops required."
+description: "The Vanguard Scout build that triples your team's DPS through Smart Cover, Scanning Pulse, and Fully Charged stacking."
 author: "RapidF5 via AgentHuntzman"
 featuredImage: "/images/division-resurgence-vanguard-scout-build.png"
 imageAlt: "Division Resurgence Vanguard Scout Recon build with Smart Cover and Scanning Pulse buffing team damage"
@@ -22,11 +22,11 @@ faqs:
   - question: "Is the P90 actually better than an LMG for this build?"
     answer: "For this build, absolutely. The P90 fires at 900 RPM, which means you burn through magazines fast and trigger Fully Charged (+7.50% Engineering) on every empty reload. An LMG with a 100-round belt takes forever to empty, so you're waiting ages between Engineering stacks. But here's the real reason: the build needs BOTH Torrential Downpour and Fully Charged on the same weapon. Only two SMGs in the entire game can roll both talents: the P90 and the AUG A3 Para XS. The Vector fires at 1200 RPM but can't roll Fully Charged. The MP7 fires at 950 RPM but can't roll Torrential Downpour. The P90 is the fastest SMG that actually qualifies for both slots. AgentHuntzman didn't pick it randomly."
   - question: "What's the best Vanguard support build in Division Resurgence?"
-    answer: "You're looking at it. The Vanguard Scout Recon running 4pc Mechanical Expert + 2pc Boom Shakalaka is currently the highest-impact support build in the game. AgentHuntzman runs this on T1 gear and triples team DPS."
+    answer: "You're looking at it. The Vanguard Scout Recon running 4pc Mechanical Expert + 2pc Boom Shakalaka is currently the highest-impact support build in the game. AgentHuntzman runs this and triples team DPS."
   - question: "Do I need Legendary drops for this build?"
-    answer: "Nope. That's the beautiful part. This build runs on T1 gear and already dramatically multiplies your team's damage output. T2 gear is refinement, not a requirement. Stop waiting for perfect drops and start running the build. Your squad will thank you immediately."
+    answer: "Nope. That's the beautiful part. This build already dramatically multiplies your team's damage output. Stop waiting for perfect drops and start running the build. Your squad will thank you immediately."
   - question: "Why Mechanical Expert over Long-Term Effect?"
-    answer: "At T1, Mechanical Expert is the correct choice because the 2pc Skill Duration (+9.6%) and 3pc CDR (-9.0%) keep your Smart Cover and Scanning Pulse cycling with near-permanent uptime. The 4pc SAC Efficiency (+24%) means your Tactical Link charges faster. Long-Term Effect's +18% Engineering 4pc bonus is the eventual T2 upgrade for raw Engineering scaling, but you need permanent skill uptime before you need bigger numbers. A buff that's down for 5 seconds between casts is doing zero damage during those 5 seconds, no matter how large the number is."
+    answer: "Mechanical Expert is the correct choice because the 2pc Skill Duration (+9.6%) and 3pc CDR (-9.0%) keep your Smart Cover and Scanning Pulse cycling with near-permanent uptime. The 4pc SAC Efficiency (+24%) means your Tactical Link charges faster. You need permanent skill uptime before you need bigger numbers. A buff that's down for 5 seconds between casts is doing zero damage during those 5 seconds, no matter how large the number is."
 ---
 
 ## What This Build Does
@@ -77,12 +77,12 @@ The loop is simple: stack Engineering through Torrential Downpour and Fully Char
 
 | Drop | Must Drop With | Recalibrate (1 slot) |
 |---|---|---|
-| T1 Boom Shakalaka mask/holster | Engineering core + either Skill CDR or Duration | Recal the other bonus to CDR or Duration |
-| T1 Mechanical Expert chest | Engineering core + Socialite talent | Recal one bonus to Armor or Damage Reduction |
-| T1 Mechanical Expert backpack | Engineering core + Brainstorm talent | Recal one bonus to Skill Duration or CDR |
-| T1 Mechanical Expert gloves/kneepads | Engineering core + either Skill CDR or Duration | Recal the other bonus to CDR or Duration |
-| Police M4 (any tier) | Torrential Downpour OR Rapid Charge (need one) | Recal the missing talent onto it |
-| P90 (T1) | Torrential Downpour OR Fully Charged (need one) | Recal the missing talent onto it |
+| Boom Shakalaka mask/holster | Engineering core + either Skill CDR or Duration | Recal the other bonus to CDR or Duration |
+| Mechanical Expert chest | Engineering core + Socialite talent | Recal one bonus to Armor or Damage Reduction |
+| Mechanical Expert backpack | Engineering core + Brainstorm talent | Recal one bonus to Skill Duration or CDR |
+| Mechanical Expert gloves/kneepads | Engineering core + either Skill CDR or Duration | Recal the other bonus to CDR or Duration |
+| Police M4 | Engineering core + Torrential Downpour OR Rapid Charge | Recal the missing talent onto it |
+| P90 | Engineering core + Torrential Downpour OR Fully Charged | Recal the missing talent onto it |
 | Pressing Matter OS Protocol | Always keep | n/a |
 
 ---
