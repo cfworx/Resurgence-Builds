@@ -1,12 +1,12 @@
-﻿---
+---
 title: "7 Hidden Mechanics Explained"
 category: "Endgame"
 lastUpdated: 2026-05-24T12:00:00Z
 tags: ["mechanics", "hidden-systems", "optimization", "rpm", "amplification", "cooldown", "recalibration", "power-score", "endgame", "build-guide"]
 description: "Your DPS number is lying. Power score is a trap. Here are the 7 hidden mechanics that separate struggling players from consistent Legendary clearers."
 author: "RapidF5"
-featuredImage: "/images/division-resurgence-hidden-mechanics.png"
-imageAlt: "Division Resurgence agent studying floating holographic data panels showing hidden game mechanics damage formulas and stat breakpoints"
+featuredImage: "/images/division-resurgence-hidden-mechanics-guide.jpg"
+imageAlt: "Division Resurgence gameplay showing hidden game mechanics including damage formulas RPM breakpoints and stat optimization"
 shareTitle: "Your Build Isn't Weak. You Are."
 shareText: "7 hidden mechanics the game never explains. This is why your build feels like a wet noodle even with good gear."
 faqs:

@@ -208,9 +208,7 @@ By three rotations deep in a long mission, your team feels like they're cheating
 
 ## Related Builds
 
-- **Want to run the damage dealer this build supports?** Check out the [Conflict PvP Fearless Warlord](/builds/conflict-pvp-fearless-warlord/) for the Vanguard DPS it amplifies hardest.
-- **Prefer solo play?** See the [PvE Meta Vanguard Shotgun](/builds/pve-meta-vanguard-shotgun-7/) for the build that doesn't need friends.
-- **Want the DZ support variant?** Check the [Dark Zone PvP Vanguard Lady Death](/builds/dark-zone-pvp-vanguard-lady-death-3/) for the aggressive support option.
+- **Want to keep your team alive instead of buffing their damage?** Check out [The Geneva Suggestion](/builds/geneva-suggestion-field-medic-12/) — the Field Medic build that heals so aggressively it probably violates international law.
 
 ---
 

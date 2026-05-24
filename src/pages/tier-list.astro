@@ -10,23 +10,9 @@ const allBuilds = await getCollection('builds');
 function assignTier(build) {
   const text = (build.data.title + ' ' + build.data.description + ' ' + (build.data.tags||[]).join(' ')).toLowerCase();
   
-  // Explicit overrides
-  if (text.includes('toxic waste dump')) return 'S';
-  if (text.includes('geneva suggestion')) return 'S';
-  if (text.includes('alt f4 shotgun') || text.includes('alt-f4 shotgun')) return 'A';
-  if (text.includes('disorient express')) return 'A';
-  if (text.includes('michael bays wet dream') || text.includes("michael bay's wet dream")) return 'A';
-  if (text.includes('vanguard scout recon') || text.includes('recon scout')) return 'A';
-  if (text.includes('cross map coward')) return 'B';
-  if (text.includes('mosquito')) return 'B';
-  if (text.includes('strawberry reaper')) return 'B';
-  if (text.includes('flashbang salesman')) return 'B';
-  if (text.includes('hate mail generator')) return 'C';
+  if (text.includes('geneva suggestion')) return 'A';
+  if (text.includes('vanguard') && text.includes('recon')) return 'B';
 
-  // Fallback heuristic rules
-  if (text.includes('meta') || text.includes('24-0') || text.includes('alt-f4') || text.includes('pinnacle') || text.includes('king')) return 'S';
-  if (text.includes('exotic') || text.includes('insane') || text.includes('strong') || text.includes('unkillable')) return 'A';
-  if (text.includes('off-meta') || text.includes('fun') || text.includes('coward') || text.includes('niche')) return 'C';
   return 'B';
 }
 
