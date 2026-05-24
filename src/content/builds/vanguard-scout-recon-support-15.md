@@ -22,20 +22,20 @@ faqs:
   - question: "Is the P90 actually better than an LMG for this build?"
     answer: "Yes, and it's not even close. The P90's small 50-round magazine is the feature, not the bug. You WANT to empty it fast because every empty reload triggers Fully Charged (+7.50% Engineering). A 100-round LMG takes three times as long to empty, which means three times as long between Engineering stacks. The P90 is not your damage source. It's your stat-reload button."
   - question: "What's the best Vanguard support build in Division Resurgence?"
-    answer: "You're looking at it. The Vanguard Scout Recon running 4pc Mechanical Expert + 2pc Boom Shakalaka is currently the highest-impact support build in the game. AgentHuntsman is running it at T1 and tripling team DPS. If you want to be the reason your squad clears Legendary content instead of the reason they wipe, this is the build."
+    answer: "You're looking at it. The Vanguard Scout Recon running 4pc Mechanical Expert + 2pc Boom Shakalaka is currently the highest-impact support build in the game. AgentHuntzman is running it at T1 and tripling team DPS. If you want to be the reason your squad clears Legendary content instead of the reason they wipe, this is the build."
   - question: "Do I need Legendary drops for this build?"
-    answer: "Nope. That's the beautiful part. AgentHuntsman is running this at roughly 70% completion on T1 gear and it's already turning 100k DPS teams into 300k DPS teams. T2 gear is refinement, not a requirement. Stop waiting for perfect drops and start running the build. Your squad will thank you immediately."
+    answer: "Nope. That's the beautiful part. AgentHuntzman is running this at roughly 70% completion on T1 gear and it's already turning 100k DPS teams into 300k DPS teams. T2 gear is refinement, not a requirement. Stop waiting for perfect drops and start running the build. Your squad will thank you immediately."
   - question: "Why Mechanical Expert over Long-Term Effect?"
     answer: "At T1, Mechanical Expert is the correct choice because the Skill CDR and Duration bonuses keep your Smart Cover and Scanning Pulse cycling with near-permanent uptime. Long-Term Effect's +18% Engineering 4pc bonus is the eventual T2 upgrade for raw Engineering scaling, but you need permanent skill uptime before you need bigger numbers. A buff that's down for 5 seconds between casts is doing zero damage during those 5 seconds, no matter how large the number is."
 ---
 
 ## What This Build Actually Is
 
-> Build credit: This build comes from [**AgentHuntsman**](https://www.youtube.com/watch?v=b1ZjnGeeRKI). Go watch his breakdown and drop a sub. The man is doing the Lord's work with a calculator.
+> Build credit: This build comes from [**AgentHuntzman**](https://www.youtube.com/watch?v=b1ZjnGeeRKI). Go watch his breakdown and drop a sub. The man is doing the Lord's work with a calculator.
 
 Let's get the uncomfortable truth out of the way first. Your character screen DPS on this build is going to read something like 142,110. You are going to look at that number and think "that's not a real build." You are wrong.
 
-This is the Vanguard Recon Scout. It does not kill things. It makes your entire team kill things three times faster. AgentHuntsman is running this at roughly 70% completion on T1 gear and it's already turning pickup groups from "struggling on Hard" into "accidentally speed-clearing Heroic."
+This is the Vanguard Recon Scout. It does not kill things. It makes your entire team kill things three times faster. AgentHuntzman is running this at roughly 70% completion on T1 gear and it's already turning pickup groups from "struggling on Hard" into "accidentally speed-clearing Heroic."
 
 The whole thing runs on one combat loop: hit enemies fast, proc Duration Downpour for Engineering, empty your P90 to stack Fully Charged, then let Tactical Smart Cover convert all that Engineering into raw weapon damage for every teammate standing behind it. Scanning Pulse slaps vulnerability on everything. Tactical Link gives your team rate-of-fire steroids. Repeat until everything is dead.
 
@@ -51,7 +51,7 @@ The Scout sidesteps all of that:
 
 1. **Your skills don't die.** Smart Cover doesn't have an HP bar. Scanning Pulse doesn't have an HP bar. They sit there and tick forever while drones are exploding like fireworks around you.
 2. **You're not the single point of failure.** When a DPS build goes down, the team's damage goes with it. When you go down, the team loses a buff. They can still shoot.
-3. **You play from cover.** Sociality (your chest talent) gives +36% Armor when enemies are within 20 meters. You are tankier than most "tank" builds while sitting safer than most DPS builds.
+3. **You play from cover.** Socialite (your chest talent) gives +36% Armor when enemies are within 20 meters. You are tankier than most "tank" builds while sitting safer than most DPS builds.
 4. **Engineering scales everything.** Fully Charged stacks inflate your Engineering pool. Smart Cover converts that inflated pool into team weapon damage. Pulse scales its radius off Engineering. The build feeds itself like a perpetual motion machine of violence.
 
 ## Weapons
@@ -80,7 +80,7 @@ Two guns. One talent doing 60% of the work.
 | Gloves | Mechanical Expert | - | Engineering | Skill Duration | Skill Cooldown Recovery |
 | Holster | Mechanical Expert | - | Engineering | Sig. Ability Charge Efficiency | Skill Intensity |
 | Kneepads | Mechanical Expert | - | Engineering | Skill Cooldown Recovery | Weapon Damage |
-| Chest | Boom Shakalaka | **Sociality** | Toughness | Armor | Health |
+| Chest | Boom Shakalaka | **Socialite** | Toughness | Armor | Health |
 | Backpack | Boom Shakalaka | **Intense Performance II** | Engineering | Skill Intensity | Skill Cooldown Recovery |
 
 - **Primary:** Police M4 (AR) with Duration Downpour + Rapid Charge
@@ -99,7 +99,7 @@ All three bonuses directly feed the Scout's core loop. CDR cycles your skills fa
 
 ## Chest and Backpack Talents
 
-**Chest: Sociality**
+**Chest: Socialite**
 
 "Grants 10% movement speed when there are no enemies within 20m. Grants +36% armor while within 20m of an enemy."
 
@@ -151,7 +151,7 @@ Now here's where the actual magic happens. The raw Engineering number isn't the 
 
 **Tactical Link (Bugle Call) gives +14.4% Rate of Fire** to the team. Every shot fires faster. Every shot hits enemies who are taking 20% more damage. Every shot is boosted by the Smart Cover weapon damage buff.
 
-The team's DPS doesn't just go up. It multiplies across three separate buff stages. That's why AgentHuntsman calls this a "100k to 300k" build. The individual numbers look modest. The combined output is disgusting.
+The team's DPS doesn't just go up. It multiplies across three separate buff stages. That's why AgentHuntzman calls this a "100k to 300k" build. The individual numbers look modest. The combined output is disgusting.
 
 ## Combat Rotation
 
@@ -195,14 +195,14 @@ By three rotations deep in a long mission, your team feels like they're cheating
 | **T1 (current build)** | **4pc Mechanical Expert** | **2pc Boom Shakalaka** | **This is where the build comes online** |
 | T2 (endgame) | 4pc Long-Term Effect (+18% Eng) or Mechanical Expert | 2pc Jackpot (+10% Skill Crit) | Long-Term Effect is the Engineering ceiling upgrade |
 
-The build does NOT require T2 gear to function. AgentHuntsman is running it at T1 and tripling team DPS. T2 is refinement, not unlock. Stop waiting for perfect drops.
+The build does NOT require T2 gear to function. AgentHuntzman is running it at T1 and tripling team DPS. T2 is refinement, not unlock. Stop waiting for perfect drops.
 
 ## Loot Quick-Reference
 
 | Drop | Keep If | Recalibrate To |
 |---|---|---|
 | T1 Mechanical Expert mask/gloves/holster/kneepads | Engineering core + Skill CDR or Duration roll | Engineering primary, CDR/Duration secondary |
-| T1 Boom Shakalaka chest | Toughness core + Sociality talent | Armor secondary |
+| T1 Boom Shakalaka chest | Toughness core + Socialite talent | Armor secondary |
 | T1 Boom Shakalaka backpack | Engineering core + Intense Performance II | Skill Intensity secondary |
 | Police M4 (any tier) | Duration Downpour OR Rapid Charge rolled | Weapon Damage primary |
 | P90 (any tier) | **Fully Charged rolled** | Keep everything else as-is |
@@ -212,7 +212,7 @@ The build does NOT require T2 gear to function. AgentHuntsman is running it at T
 
 1. **Run 4pc Mechanical Expert + 2pc Boom Shakalaka.** Engineering core on every piece you can. Skill CDR, Duration, and Intensity on the bonuses.
 2. **Police M4 with Duration Downpour + Rapid Charge as primary. P90 with Duration Downpour + Fully Charged as secondary.** The P90 is your stat-reload button. Empty, reload, stack Engineering.
-3. **Sociality on chest, Intense Performance II on backpack.** Sociality makes you tanky. Intense Performance II makes Scanning Pulse cover entire rooms for almost no cost.
+3. **Socialite on chest, Intense Performance II on backpack.** Socialite makes you tanky. Intense Performance II makes Scanning Pulse cover entire rooms for almost no cost.
 4. **Mobile Bastion + Scout + Bugle Call for skill chips.** All three generate team Signature Ability charge or buff team output. None of them buff you personally. That's the entire point.
 5. **The combat loop is: Pulse, Smart Cover, M4 for Duration Downpour, P90 empty reloads x3, Tactical Link.** Run that loop. Your team triples their damage. Your own DPS looks mid on the scoreboard. That is the build working correctly.
 
@@ -224,6 +224,6 @@ The build does NOT require T2 gear to function. AgentHuntsman is running it at T
 
 ## Sources
 
-- [AgentHuntsman, Best Scout Build in Division Resurgence (Vanguard Meta) T1 gear](https://www.youtube.com/watch?v=b1ZjnGeeRKI), April 26, 2026.
+- [AgentHuntzman, Best Scout Build in Division Resurgence (Vanguard Meta) T1 gear](https://www.youtube.com/watch?v=b1ZjnGeeRKI), April 26, 2026.
 - Fully Charged talent verified in-game: +7.50% Engineering per empty reload, 12 seconds, up to 3 stacks.
 - Community testing threads on r/thedivisionresurgence for Vanguard mod sets, Tactical Link mechanics, and Engineering-to-Weapon-Damage conversion.

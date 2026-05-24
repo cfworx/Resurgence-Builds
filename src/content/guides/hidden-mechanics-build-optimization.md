@@ -17,7 +17,7 @@ faqs:
   - question: "Should I stack all Engineering or all Firepower on my build?"
     answer: "Pick ONE and go all in. The absolute worst thing you can do is split 50/50. A build with 1,700 Engineering and 400 Firepower is dramatically stronger than a build with 1,050 of each, because the damage formula multiplies your core stat at several stages. Splitting dilutes every multiplier. If you're a DPS build, go Firepower. If you're a support or skill build, go Engineering. If you're a tank, go Toughness. There is no such thing as a 'balanced' endgame build. There are only focused builds and weak ones."
   - question: "Why do I keep dying in Legendary missions?"
-    answer: "90% of the time it's positioning, not toughness. Players who die in Legendary are usually standing in the open, peeking too long, or fighting from angles that expose them to multiple enemy lines of fire simultaneously. Move to cover that only exposes you to one or two enemies at a time. Use Smart Cover. Let enemies come to your kill zone instead of running into theirs. The other 10% of the time, yes, your armor is too low. Run Sociality on chest."
+    answer: "90% of the time it's positioning, not toughness. Players who die in Legendary are usually standing in the open, peeking too long, or fighting from angles that expose them to multiple enemy lines of fire simultaneously. Move to cover that only exposes you to one or two enemies at a time. Use Smart Cover. Let enemies come to your kill zone instead of running into theirs. The other 10% of the time, yes, your armor is too low. Run Socialite on chest."
   - question: "Does RPM actually matter more than damage per bullet?"
     answer: "For any build that relies on procs, stacks, or talent triggers: absolutely yes. A P90 firing 900 rounds per minute generates talent procs three times faster than a marksman rifle firing 300 RPM. If your build needs to hit enemies 10 times in 5 seconds to trigger Duration Downpour, the P90 gets there in 0.67 seconds. The marksman rifle needs 2 seconds. In a game where buff windows are 12 seconds long, that speed difference is the entire build."
   - question: "What's the fastest way to fix a weak build in Division Resurgence?"
@@ -30,7 +30,7 @@ This is the long-form follow-up to every player who has ever typed "is my build 
 
 The answer is almost never "your gear is bad." The answer is that the game ships with at least seven systems that quietly decide whether you feel powerful or feel useless, and the in-game tooltips don't mention any of them. Not one. It's like buying a car that comes with an engine manual written entirely in emoji.
 
-We're pulling this together from community testing, our own build sessions, and the work [AgentHuntsman](https://www.youtube.com/@AgentHuntsman) has been documenting on YouTube over the last six weeks. Every claim is cited at the bottom. Where we're confident, we say so. Where the community is still testing, we hedge.
+We're pulling this together from community testing, our own build sessions, and the work [AgentHuntzman](https://www.youtube.com/@AgentHuntzman) has been documenting on YouTube over the last six weeks. Every claim is cited at the bottom. Where we're confident, we say so. Where the community is still testing, we hedge.
 
 The seven mechanics, ranked by how much they'll change your game:
 
@@ -131,7 +131,7 @@ The damage formula multiplies your core stat at several stages. If you have 1,70
 
 The math gets worse the more multipliers your build has. A support build with five different Engineering-scaling effects loses more from splitting stats than a DPS build with two Firepower-scaling effects. This is why the best builds in the game are absolute psychos about one stat and completely ignore the others.
 
-**The rule:** Pick ONE core stat and max it on every gear piece. Use your chest talent (Sociality for armor, Glass Cannon for damage) to cover survivability. Use weapon talents to cover whatever your core stat doesn't. Let set bonuses fill the gaps.
+**The rule:** Pick ONE core stat and max it on every gear piece. Use your chest talent (Socialite for armor, Glass Cannon for damage) to cover survivability. Use weapon talents to cover whatever your core stat doesn't. Let set bonuses fill the gaps.
 
 A build with 1,700 Engineering and 400 Firepower will always outperform a build with 1,050 of each. Always. The focused build doesn't just hit harder per stat point. It multiplies harder per stat point. And in a game built on multipliers, that's everything.
 
@@ -145,7 +145,7 @@ Every recalibration slot spent on comfort (health, armor, damage reduction) is a
 
 **The uncomfortable truth:** If you're dying in Legendary, it's almost always positioning. You're peeking too long. You're standing in the open. You're fighting from an angle that exposes you to four enemies instead of one. Swapping a damage stat for a health stat doesn't fix bad positioning. It just lets you survive bad positioning slightly longer before dying anyway.
 
-The fix: Use your chest talent for survivability (Sociality gives +36% armor for free just by being near enemies, which you already are). Keep every other slot focused on damage or utility. If you're still dying after that, read Mechanic 4 again.
+The fix: Use your chest talent for survivability (Socialite gives +36% armor for free just by being near enemies, which you already are). Keep every other slot focused on damage or utility. If you're still dying after that, read Mechanic 4 again.
 
 ---
 
@@ -191,6 +191,6 @@ If you answered "no" to all five: congratulations. You're building correctly. Th
 
 ## Sources
 
-- [AgentHuntsman, Division Resurgence YouTube channel](https://www.youtube.com/@AgentHuntsman). Primary source for mechanics testing, build math, and the proc engine framework.
+- [AgentHuntzman, Division Resurgence YouTube channel](https://www.youtube.com/@AgentHuntzman). Primary source for mechanics testing, build math, and the proc engine framework.
 - Community testing via [r/thedivisionresurgence](https://reddit.com/r/thedivisionresurgence). Cooldown breakpoint analysis, Engineering-to-Weapon-Damage conversion, and Power Score vs. build quality debates.
 - Internal Resurgence Builds knowledge base: damage formula stages, CDR diminishing returns modeling, and stat-splitting damage loss calculations.

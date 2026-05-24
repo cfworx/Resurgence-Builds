@@ -36,7 +36,7 @@ Here is what the bar means. One sentence each. Free of charge.
 
 If you are running a Blast attribute on your weapon (Warlord, Lady Death, anything rolling "Weapon Blast Damage") and the enemies in your mission are showing light blue bars, you are doing reduced damage. You have been doing reduced damage since you equipped that gun. The game just never told you. You're welcome.
 
-This was confirmed on camera by [AgentHuntsman in his SHD Manual video](https://www.youtube.com/watch?v=Mt3E4A0l0Zk) and verified against community testing, where every Warlord owner has been told for months that Blast is best against red-armor enemies but nobody connected it to the visual indicator that's been sitting on screen since launch.
+This was confirmed on camera by [AgentHuntzman in his SHD Manual video](https://www.youtube.com/watch?v=Mt3E4A0l0Zk) and verified against community testing, where every Warlord owner has been told for months that Blast is best against red-armor enemies but nobody connected it to the visual indicator that's been sitting on screen since launch.
 
 ---
 
@@ -180,6 +180,6 @@ This is where the dual-type loadout stops being optional and starts being the pr
 
 ## Sources
 
-- [AgentHuntsman, SHD Manual: How Progression ACTUALLY Works](https://www.youtube.com/watch?v=Mt3E4A0l0Zk), May 22, 2026. Primary on-camera confirmation of the color-to-damage-type mapping.
+- [AgentHuntzman, SHD Manual: How Progression ACTUALLY Works](https://www.youtube.com/watch?v=Mt3E4A0l0Zk), May 22, 2026. Primary on-camera confirmation of the color-to-damage-type mapping.
 - Community testing via [r/thedivisionresurgence](https://reddit.com/r/thedivisionresurgence). Warlord and Lady Death attribute breakdowns from u/TOPolyak, u/TheeLoo, and u/TF_Doomer_HK.
 - Internal Resurgence Builds testing on damage types, weapon attribute panels, and exotic damage-type locking.

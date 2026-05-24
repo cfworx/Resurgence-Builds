@@ -5692,7 +5692,7 @@ Ultimate Knowledge guide and Definitive Tactical Compendium.
 
 •  Engineering: 1,066
 
-•  Armor: 5,119 (base) → 6k+ when enemies within 20m (via Sociality)
+•  Armor: 5,119 (base) → 6k+ when enemies within 20m (via Socialite)
 
 •  Health: 76,163
 
@@ -5736,7 +5736,7 @@ is what makes the build \"hit like a truck.\"
 
 **Talents:**
 
-•  Chest: **Sociality** --- +10% movement speed when no enemies within
+•  Chest: **Socialite** --- +10% movement speed when no enemies within
 20m, +36% Armor (jump from 5k to 6k+) when enemies enter 20m radius
 
 •  Backpack: **Intense Performance II** --- +46% Skill Radius for Pulse
@@ -6742,7 +6742,7 @@ curve.
 **Why it matters:** Engineering normally dictates utility (heal
 magnitude, shield HP). On this build, the Fully Charged talent (+750%
 Engineering, 3 stacks, P90 reload trigger) compounds with Mechanical
-Expert 4pc + Boom-Shakalaka 2pc + Pressing Meta Watch + Sociality +
+Expert 4pc + Boom-Shakalaka 2pc + Pressing Meta Watch + Socialite +
 Intense Performance II, producing an Engineering value that
 **fundamentally rewrites what Engineering does** in the conversion math.
 
@@ -6939,7 +6939,7 @@ multiplier in the game for a support.
 
 •  **Target Rich chip:** +36% Accuracy and +36% Stability.
 
-•  **Sociality chip:** Dynamically adds **+36% Armor when enemies are
+•  **Socialite chip:** Dynamically adds **+36% Armor when enemies are
 close**, pushing the build well past **6,000 Armor** in close-range
 engagements.
 
@@ -28452,7 +28452,7 @@ Source: [SHD Manual --- end of video](https://www.youtube.com/watch?v=Mt3E4A0l0Z
 
 Source: [Best Scout Build in Division Resurgence (Vanguard Meta) T1 gear](https://www.youtube.com/watch?v=b1ZjnGeeRKI) (Apr 26, 2026), 16:44, AgentHuntsman.
 
-This video is the **primary source** for the existing KB entry at Section 18.14 (Vanguard Scout / Recon build, lines 5695-5762). All numbers in that section --- 142.11k DPS, 76,163 health, 5,119 armor, Mechanical Expert 4pc + Boom Shakalaka 2pc, Precise Matters watch, Tactical Smart Cover 41.20s/35.59s, Scanning Pulse 17.44s/14.95s, Tactical Link 21.74s, Duration Downpour +22.5% Engineering, Fully Charged +750% Engineering, Sociality, Intense Performance II --- come directly from AgentHuntsman's on-screen breakdown.
+This video is the **primary source** for the existing KB entry at Section 18.14 (Vanguard Scout / Recon build, lines 5695-5762). All numbers in that section --- 142.11k DPS, 76,163 health, 5,119 armor, Mechanical Expert 4pc + Boom Shakalaka 2pc, Precise Matters watch, Tactical Smart Cover 41.20s/35.59s, Scanning Pulse 17.44s/14.95s, Tactical Link 21.74s, Duration Downpour +22.5% Engineering, Fully Charged +750% Engineering, Socialite, Intense Performance II --- come directly from AgentHuntsman's on-screen breakdown.
 
 **Use this video as the primary citation when posting any Vanguard Recon scout content.** The build has been verified against gameplay footage, not just text descriptions.
 
