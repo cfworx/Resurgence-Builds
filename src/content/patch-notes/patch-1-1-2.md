@@ -1,4 +1,4 @@
----
+﻿---
 title: "Patch 1.1.2 Notes"
 version: "1.1.2"
 patchDate: "2026-04-28"
@@ -18,7 +18,7 @@ faqs:
     answer: "Phase 2 was the last major content drop. Phase 3 is expected in June 2026. Between now and then, expect hotfixes and balance patches. The game is in maintenance mode between content drops, which is normal for live service titles. Destiny did this for a decade. Resurgence does it between seasons. The cycle of content drought and content flood is the looter shooter circle of life."
 ---
 
-Patch 1.1.2 deployed alongside the PC Early Access launch. The update was a stability and quality-of-life pass, with a heavy emphasis on mouse-and-keyboard support — clearly to prep for PC players coming in fresh.
+Patch 1.1.2 deployed alongside the PC Early Access launch. The update was a stability and quality-of-life pass, with a heavy emphasis on mouse-and-keyboard support , clearly to prep for PC players coming in fresh.
 
 ### Stability & Crash Fixes
 - Improved overall stability and fixed multiple crashes during gameplay and menu navigation

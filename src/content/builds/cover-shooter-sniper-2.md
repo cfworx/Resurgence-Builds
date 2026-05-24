@@ -1,5 +1,5 @@
----
-title: "The Cross-Map Coward — Vanguard PvE Sniper Build Guide (DPS)"
+﻿---
+title: "The Cross-Map Coward - Vanguard PvE Sniper Build Guide (DPS)"
 specialization: Vanguard
 playstyle: DPS
 pve: true
@@ -52,33 +52,33 @@ The DSR-1 will one-shot most non-elite reds. Elites take 2-3 shots. The whole pa
 
 ## Weapons
 
-**Primary — DSR-1 (T2 Marksman Rifle)**
+**Primary , DSR-1 (T2 Marksman Rifle)**
 
 **Talent: Killer.** Critical Hit Kills grant +36% Critical Hit Damage for 10 seconds. On a bolt-action rifle where every shot is a headshot crit, this procs on your first kill and stays active through the entire engagement. The buff refreshes on each crit kill, meaning it's effectively permanent as long as you keep clicking on heads. Which you will. Because that's the entire build.
 
-**Talent: Long-Distance Marking.** Headshots grant +7.50% Skill Damage, increasing by +1.50% for every 5 meters of distance (up to +18%). At 50m+ — which is where you should be playing — this maxes out and turns your Pulse and Smart Cover into stronger utility tools. The further you are from danger, the better this talent gets. Cowardice has never been so rewarding.
+**Talent: Long-Distance Marking.** Headshots grant +7.50% Skill Damage, increasing by +1.50% for every 5 meters of distance (up to +18%). At 50m+ , which is where you should be playing , this maxes out and turns your Pulse and Smart Cover into stronger utility tools. The further you are from danger, the better this talent gets. Cowardice has never been so rewarding.
 
-**Secondary — Any T2 AR**
+**Secondary , Any T2 AR**
 
-Your "oh no they got close" weapon. Use it for medium-range cleanup when you miss a shot and the surviving elite starts sprinting at you with malicious intent. Any AR with In Sync or Measured works here — this is not where your damage comes from. This is where your panic comes from.
+Your "oh no they got close" weapon. Use it for medium-range cleanup when you miss a shot and the surviving elite starts sprinting at you with malicious intent. Any AR with In Sync or Measured works here , this is not where your damage comes from. This is where your panic comes from.
 
 ## The Build
 
 | Slot | Set | Talent | Core | Bonus 1 | Bonus 2 |
 |---|---|---|---|---|---|
-| Mask | One Shot One Kill | — | Firepower | Headshot Damage | Weapon Crit Damage |
+| Mask | One Shot One Kill | , | Firepower | Headshot Damage | Weapon Crit Damage |
 | Chest | Fury Strike | **Glass Cannon** | Firepower | Headshot Damage | Weapon Crit Damage |
 | Backpack | Fury Strike | **Hidden Impact** | Firepower | Weapon Crit Chance | Weapon Crit Damage |
-| Gloves | One Shot One Kill | — | Firepower | Headshot Damage | Weapon Damage |
-| Holster | One Shot One Kill | — | Firepower | Headshot Damage | Weapon Crit Damage |
-| Kneepads | One Shot One Kill | — | Firepower | Weapon Crit Chance | Weapon Crit Damage |
+| Gloves | One Shot One Kill | , | Firepower | Headshot Damage | Weapon Damage |
+| Holster | One Shot One Kill | , | Firepower | Headshot Damage | Weapon Crit Damage |
+| Kneepads | One Shot One Kill | , | Firepower | Weapon Crit Chance | Weapon Crit Damage |
 
-- **Primary:** DSR-1 (T2 Marksman Rifle) — Killer + Long-Distance Marking
+- **Primary:** DSR-1 (T2 Marksman Rifle) , Killer + Long-Distance Marking
 - **Secondary:** Any T2 AR for medium-range cleanup (for when you miss your shots and panic)
 - **OS Protocol:** Cover Shooter (Firepower, High-End)
 - **Skills:** Smart Cover + Effective Deterrent mod · Scanning Pulse + Pulse Enhancement mod
 - **Signature:** Tactical Link
-- **Gear Mods:** 6× Firepower (Survival is a myth — embrace the glass)
+- **Gear Mods:** 6× Firepower (Survival is a myth , embrace the glass)
 
 **One Shot One Kill 4-Piece Bonuses**
 
@@ -100,15 +100,15 @@ Your "oh no they got close" weapon. Use it for medium-range cleanup when you mis
 
 **Smart Cover + Effective Deterrent Mod**
 
-Smart Cover drops behind you and provides +40% Damage Reduction — the safety net for a Glass Cannon build that otherwise folds like wet paper. The Effective Deterrent mod enhances the cover's defensive profile, making it harder for enemies to flush you from your perch. Deploy it the moment you enter a new cover line and forget about it. It's your adult supervision.
+Smart Cover drops behind you and provides +40% Damage Reduction , the safety net for a Glass Cannon build that otherwise folds like wet paper. The Effective Deterrent mod enhances the cover's defensive profile, making it harder for enemies to flush you from your perch. Deploy it the moment you enter a new cover line and forget about it. It's your adult supervision.
 
 **Scanning Pulse + Pulse Enhancement Mod**
 
 The legal wallhack. Scanning Pulse marks up to 8 targets through walls, granting you +25% Weapon Damage (self-buff) and debuffing every pulsed target with +5% Vulnerable Damage taken. Vanguard 3pc adds up to +8% Crit Chance per pulsed target within 70m. The Pulse Enhancement mod extends range and duration, ensuring your wallhacks stay active through the entire engagement. You see them. They don't see you. This is the way.
 
-**Signature — Tactical Link**
+**Signature , Tactical Link**
 
-Pop this when the heavy elite shows up or when you need the lock-on aim assist and crit chance window for a guaranteed one-shot. Save it for the targets that actually require it — burning Tactical Link on a red-bar enemy is like using a sledgehammer on a thumbtack.
+Pop this when the heavy elite shows up or when you need the lock-on aim assist and crit chance window for a guaranteed one-shot. Save it for the targets that actually require it , burning Tactical Link on a red-bar enemy is like using a sledgehammer on a thumbtack.
 
 ## How It Works (The Math)
 
@@ -116,10 +116,10 @@ Pop this when the heavy elite shows up or when you need the lock-on aim assist a
 
 | Stack | Bonus | Condition |
 |---|---|---|
-| 0 | +0% WCHD | Haven't crit yet — fix that |
+| 0 | +0% WCHD | Haven't crit yet , fix that |
 | 1 | +16% WCHD | First crit behind cover (80% proc) |
-| 2 | +32% WCHD | Second crit — they're starting to sweat |
-| 3 (max) | +48% WCHD | Third crit — congratulations, everything dies |
+| 2 | +32% WCHD | Second crit , they're starting to sweat |
+| 3 (max) | +48% WCHD | Third crit , congratulations, everything dies |
 
 Each stack lasts 5 seconds and refreshes on proc. With an 80% proc rate per crit, you'll hit 3 stacks within your first 3-4 shots.
 
@@ -157,25 +157,25 @@ Pulse marks targets through walls → you ADS from cover → first headshot crit
 
 ## OS Justification
 
-**Cover Shooter > Assault Charge** for this build. Assault Charge wants you to pop a signature ability and go aggressive — that's antithetical to a sniper playstyle. Cover Shooter's +48% WCHD at 3 stacks is a sustained, always-on multiplier that refreshes as long as you keep critting from cover. It costs nothing. It requires no cooldown. It just rewards you for doing the one thing you're already doing: sitting in cover and clicking heads. Assault Charge's +30% Firepower for 20s is flashy but temporary. Cover Shooter's damage is forever (or at least 5 seconds, which refreshes, which is basically forever).
+**Cover Shooter > Assault Charge** for this build. Assault Charge wants you to pop a signature ability and go aggressive , that's antithetical to a sniper playstyle. Cover Shooter's +48% WCHD at 3 stacks is a sustained, always-on multiplier that refreshes as long as you keep critting from cover. It costs nothing. It requires no cooldown. It just rewards you for doing the one thing you're already doing: sitting in cover and clicking heads. Assault Charge's +30% Firepower for 20s is flashy but temporary. Cover Shooter's damage is forever (or at least 5 seconds, which refreshes, which is basically forever).
 
 ## Gear Ladder
 
 | Tier | Set | Notes |
 |---|---|---|
-| T0 Bridge | One Shot One Kill 4pc + any 2pc brand | OSOK drops at T0 — get the Headshot Damage and Firepower bonuses online immediately |
-| T1 Step | OSOK 4pc + Fury Strike 2pc | Fury Strike 2pc adds +14.4% WCHD — a massive jump in crit damage |
+| T0 Bridge | One Shot One Kill 4pc + any 2pc brand | OSOK drops at T0 , get the Headshot Damage and Firepower bonuses online immediately |
+| T1 Step | OSOK 4pc + Fury Strike 2pc | Fury Strike 2pc adds +14.4% WCHD , a massive jump in crit damage |
 | T2 Destination | OSOK T2 4pc + Fury Strike T2 2pc + DSR-1 T2 + Glass Cannon | Max stat rolls, T2 bolt-action, and the full multiplier stack. This is where red bars stop existing. |
 
 ## Combat Rotation
 
-This build is purpose-built for the [Center-ADS Release](/guides/center-ads-release-cover-peek-guide/) peek — see the full settings checklist if you haven't dialed your settings.
+This build is purpose-built for the [Center-ADS Release](/guides/center-ads-release-cover-peek-guide/) peek , see the full settings checklist if you haven't dialed your settings.
 
 1. **Pre-engage:** Pulse the pack from the safety of your cover. Wallhacks are fair and balanced.
 2. **Drop Smart Cover** behind you for the +40% Damage Reduction layer (just in case they shoot back).
-3. **Headshot the closest elite** — Cover Shooter stack 1.
-4. **Headshot the next idiot** — stack 2.
-5. **Stack 3** — Killer talent procs on the first Critical Hit Kill (+36% Critical Hit Damage for 10s). You are now doing obscene damage.
+3. **Headshot the closest elite** , Cover Shooter stack 1.
+4. **Headshot the next idiot** , stack 2.
+5. **Stack 3** , Killer talent procs on the first Critical Hit Kill (+36% Critical Hit Damage for 10s). You are now doing obscene damage.
 6. **Pop Tactical Link** for the lock-on + crit chance window when the heavy elite shows up.
 7. **Reposition between packs** to a new cover line. **NEVER LEAVE COVER DURING A FIGHT.** If you stand in the open, you will instantly dissolve into red mist.
 
@@ -183,22 +183,22 @@ This build is purpose-built for the [Center-ADS Release](/guides/center-ads-rele
 
 | Item | Where to Look |
 |---|---|
-| One Shot One Kill 4pc | T0+ gear drops — world events, mission completions, crafting |
-| Fury Strike 2pc | T0+ gear drops — world events, crafting, DZ |
-| DSR-1 (T2 Marksman Rifle) | T2 MR drops — world events, elite missions, Dark Zone |
-| Cover Shooter OS | HE Firepower OS — high-difficulty mission drops |
+| One Shot One Kill 4pc | T0+ gear drops , world events, mission completions, crafting |
+| Fury Strike 2pc | T0+ gear drops , world events, crafting, DZ |
+| DSR-1 (T2 Marksman Rifle) | T2 MR drops , world events, elite missions, Dark Zone |
+| Cover Shooter OS | HE Firepower OS , high-difficulty mission drops |
 | Glass Cannon chest talent | Recalibrate any chest to Glass Cannon |
 | Hidden Impact backpack talent | Recalibrate any backpack to Hidden Impact |
-| Effective Deterrent skill mod | Vanguard mod drops — skill mod caches |
-| Pulse Enhancement skill mod | Vanguard mod drops — skill mod caches |
-| Any T2 AR (secondary) | T2 AR drops — literally everywhere, you'll trip over these |
+| Effective Deterrent skill mod | Vanguard mod drops , skill mod caches |
+| Pulse Enhancement skill mod | Vanguard mod drops , skill mod caches |
+| Any T2 AR (secondary) | T2 AR drops , literally everywhere, you'll trip over these |
 
-## TL;DR — Five Things
+## TL;DR - Five Things
 
 1. **Five independent damage layers, all from cover.** Pulse + Cover Shooter OS + Glass Cannon + One Shot One Kill + Killer talent. Multiplicative. Disgusting.
-2. **Cover Shooter OS stacks +48% WCHD** in 3 shots from cover — and it refreshes every time you crit, which is always.
+2. **Cover Shooter OS stacks +48% WCHD** in 3 shots from cover , and it refreshes every time you crit, which is always.
 3. **Glass Cannon's −10% DR doesn't matter** when you're 50m away behind Smart Cover. The penalty is theoretical. The +20% Damage is very real.
-4. **Scanning Pulse gives you legal wallhacks** — see through walls, mark 8 targets, and add +25% Weapon Damage to every shot.
+4. **Scanning Pulse gives you legal wallhacks** , see through walls, mark 8 targets, and add +25% Weapon Damage to every shot.
 5. **If you stand up, you die.** This is not a suggestion. It is a physical law of this build's universe.
 
 ## Related Builds

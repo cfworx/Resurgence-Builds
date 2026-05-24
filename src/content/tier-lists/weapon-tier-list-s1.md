@@ -1,4 +1,4 @@
----
+﻿---
 title: "Season 1 Weapon Tier List"
 type: weapon
 patch: "1.2.0"
@@ -27,7 +27,7 @@ Rankings are based on:
 - **Ease of use** and consistency
 - **PvP viability** is noted but not weighted
 
-## S Tier — Meta Defining
+## S Tier - Meta Defining
 
 These weapons dominate the current patch and should be the first choices for any serious build.
 
@@ -37,7 +37,7 @@ These weapons dominate the current patch and should be the first choices for any
 | Vector SBR | SMG | Highest burst DPS for close-range. Strained + crit builds melt everything. |
 | M700 Carbon | Marksman Rifle | One-shot headshot potential on non-elites. Breadbasket talent is perfectly matched. |
 
-## A Tier — Excellent
+## A Tier - Excellent
 
 Slightly behind S Tier but still top-performing. Viable in all content.
 
@@ -48,7 +48,7 @@ Slightly behind S Tier but still top-performing. Viable in all content.
 | RPK-74 | LMG | Measured talent turns this into a DPS monster. Slower handling is the tradeoff. |
 | Hunting M44 | Marksman Rifle | Higher damage than M700 but slower bolt action. Headhunter build staple. |
 
-## B Tier — Solid
+## B Tier - Solid
 
 Good weapons that work in most content but aren't optimal.
 
@@ -59,7 +59,7 @@ Good weapons that work in most content but aren't optimal.
 | L86 LSW | LMG | Good all-rounder LMG, just outclassed by RPK-74 in raw damage. |
 | SRS | Marksman Rifle | Consistent but lacks the punch of M700/M44. |
 
-## C Tier — Niche
+## C Tier - Niche
 
 Usable in specific builds or activities but generally outperformed.
 
@@ -69,7 +69,7 @@ Usable in specific builds or activities but generally outperformed.
 | T821 | SMG | Low RPM for an SMG. Killer talent is its only saving grace. |
 | M60 | LMG | Huge magazine but terrible handling. PvP suppression use only. |
 
-## D Tier — Needs Buffs
+## D Tier - Needs Buffs
 
 These weapons are underperforming and need developer attention.
 

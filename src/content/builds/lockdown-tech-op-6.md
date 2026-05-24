@@ -1,5 +1,5 @@
----
-title: "The Flashbang Salesman — Tech Operator PvE Crowd Control Drone Build Guide (Support)"
+﻿---
+title: "The Flashbang Salesman - Tech Operator PvE Crowd Control Drone Build Guide (Support)"
 specialization: "Tech Operator"
 playstyle: Support
 pve: true
@@ -37,7 +37,7 @@ This is an off-meta Tech Operator build that keeps an entire pack permanently **
 
 - **Specialization:** Tech Operator
 - **Archetype:** Full-CC support with passive skill DPS
-- **Difficulty Ceiling:** Comfortable through Legendary. The Disorient uptime makes this one of the safest builds in the game — enemies literally can't shoot straight while your CC is active.
+- **Difficulty Ceiling:** Comfortable through Legendary. The Disorient uptime makes this one of the safest builds in the game , enemies literally can't shoot straight while your CC is active.
 - **Core Loop:** Deploy Striker Hive at chokepoint → Send Striker Drone to lead target → EMCAT crits apply Disoriented → Stabilized Flight feeds Skill CHC to keep crits rolling → Concerted Strike stacks +24% Damage from skill hits → Drone Overload signature for burst CC chains → enemies experience severe vertigo and file complaints with Ubisoft.
 
 ## Why This Is a Walking War Crime
@@ -52,11 +52,11 @@ The two skills are independent: the Drone follows enemies around to bully them, 
 
 ## Weapons
 
-**Primary — Warlord (Exotic AR)**
+**Primary , Warlord (Exotic AR)**
 
-**Talent: Play Rough.** The Warlord's Play Rough talent converts incoming damage into a delayed bleed-back effect — you take the damage over time instead of all at once. In a build where your primary job is staying alive and keeping skills deployed, this is a survival talent disguised as a weapon perk. The delayed damage gives your Healing Hive or Support Station time to top you off before the bleed actually threatens you. You're not using this gun for DPS. You're using it as a health insurance policy with an assault rifle attached.
+**Talent: Play Rough.** The Warlord's Play Rough talent converts incoming damage into a delayed bleed-back effect , you take the damage over time instead of all at once. In a build where your primary job is staying alive and keeping skills deployed, this is a survival talent disguised as a weapon perk. The delayed damage gives your Healing Hive or Support Station time to top you off before the bleed actually threatens you. You're not using this gun for DPS. You're using it as a health insurance policy with an assault rifle attached.
 
-**Secondary — T1 AR (budget option)**
+**Secondary , T1 AR (budget option)**
 
 **Talent: Adaptation + Killer.** If you don't have the Warlord, any T1 AR with Adaptation (incoming damage reduction on kill) and Killer (crit kills extend duration of damage buffs) gives you a functional survival-plus-damage fallback. Adaptation keeps you alive. Killer extends whatever buffs are running. Neither matters as much as your skills, but they keep you from being completely useless during the 3 seconds between skill deployments when you remember you're technically holding a gun.
 
@@ -64,14 +64,14 @@ The two skills are independent: the Drone follows enemies around to bully them, 
 
 | Slot | Set | Talent | Core | Bonus 1 | Bonus 2 |
 |---|---|---|---|---|---|
-| Mask | Jackpot | — | Engineering | Skill Crit Chance | Skill Crit Damage |
+| Mask | Jackpot | , | Engineering | Skill Crit Chance | Skill Crit Damage |
 | Chest | Any T2 chest | **Deep Focus** | Engineering | Skill Intensity | Skill Duration |
 | Backpack | Any T2 bag | **Brainstorm** | Engineering | Skill Intensity | Skill Duration |
-| Gloves | Jackpot | — | Engineering | Skill Crit Chance | Skill Crit Damage |
-| Holster | Jackpot | — | Engineering | Skill Intensity | Skill Crit Chance |
-| Kneepads | Jackpot | — | Engineering | Skill Crit Chance | Skill Multi-Shot |
+| Gloves | Jackpot | , | Engineering | Skill Crit Chance | Skill Crit Damage |
+| Holster | Jackpot | , | Engineering | Skill Intensity | Skill Crit Chance |
+| Kneepads | Jackpot | , | Engineering | Skill Crit Chance | Skill Multi-Shot |
 
-- **Primary:** Warlord (exotic AR) — Play Rough
+- **Primary:** Warlord (exotic AR) , Play Rough
 - **Secondary:** T1 AR with Adaptation + Killer (budget option)
 - **OS Protocol:** Concerted Strike (Firepower, High-End)
 - **Skills:** Striker Drone + EMCAT mod set · Striker Hive + Stabilized Flight mod set
@@ -86,23 +86,23 @@ The two skills are independent: the Drone follows enemies around to bully them, 
 
 **Chest & Backpack Justification**
 
-**Deep Focus** gives +28% Skill Duration at the cost of -10% Skill Radius. On a CC build, duration is everything — the longer your Disoriented effect persists, the longer enemies can't fight back. The Skill Radius penalty is offset by Jackpot's 2pc +12% Skill Radius bonus, netting you a positive radius budget overall. Your drone doesn't care about radius. Your Hive does, and it still covers the chokepoint with room to spare.
+**Deep Focus** gives +28% Skill Duration at the cost of -10% Skill Radius. On a CC build, duration is everything , the longer your Disoriented effect persists, the longer enemies can't fight back. The Skill Radius penalty is offset by Jackpot's 2pc +12% Skill Radius bonus, netting you a positive radius budget overall. Your drone doesn't care about radius. Your Hive does, and it still covers the chokepoint with room to spare.
 
 **Brainstorm** stacks +15% Skill Duration baseline, scaling to +30% when within 20m of an ally. You're a support player. You are always near your team. Combined with Deep Focus, this gives you ~58% additive Skill Duration, which means your Drone Lock, your Hive field, and your Disorient CC all persist significantly longer than base values. The enemies don't get a break. They don't get to shoot straight. The CC uptime is the entire point, and these two talents deliver it.
 
 ## Skill Loadout
 
-**Striker Drone — EMCAT (3pc)**
+**Striker Drone , EMCAT (3pc)**
 
-The EMCAT chip set is the keystone: **every Striker Drone critical hit applies Disoriented** to the target. Disoriented disrupts enemy aim and tracking — they miss shots, panic-spray, and generally have a bad time while your drone calmly continues dunking on their skulls. With Jackpot's +10.8% Skill CHC at 3pc plus your Engineering gear rolling Skill CHC on mask, gloves, holster, and kneepads, the drone crits constantly. EMCAT procs on essentially every burst.
+The EMCAT chip set is the keystone: **every Striker Drone critical hit applies Disoriented** to the target. Disoriented disrupts enemy aim and tracking , they miss shots, panic-spray, and generally have a bad time while your drone calmly continues dunking on their skulls. With Jackpot's +10.8% Skill CHC at 3pc plus your Engineering gear rolling Skill CHC on mask, gloves, holster, and kneepads, the drone crits constantly. EMCAT procs on essentially every burst.
 
-**Striker Hive — Stabilized Flight (3pc)**
+**Striker Hive , Stabilized Flight (3pc)**
 
-The crit-sustain engine: **Applying Drone Lock grants +6% Skill Critical Hit Chance for 20 seconds**. Every time the drone acquires a new target, it banks +6% Skill CHC. The Hive benefits from the same Skill CHC pool — when the drone builds crit chance, the Hive's hits crit more often too. Combined with Jackpot's passive +10.8% and your gear rolls, this pushes your skill crit rate toward the ceiling where EMCAT is proccing on nearly every hit from both skills simultaneously.
+The crit-sustain engine: **Applying Drone Lock grants +6% Skill Critical Hit Chance for 20 seconds**. Every time the drone acquires a new target, it banks +6% Skill CHC. The Hive benefits from the same Skill CHC pool , when the drone builds crit chance, the Hive's hits crit more often too. Combined with Jackpot's passive +10.8% and your gear rolls, this pushes your skill crit rate toward the ceiling where EMCAT is proccing on nearly every hit from both skills simultaneously.
 
 **Drone Overload (Signature)**
 
-Your burst CC button. Pop it when a fresh pack enters or when the current Disorient uptime is about to lapse. Drone Overload puts the drone into full aggro mode — it attacks faster, crits harder, and applies EMCAT Disorient to everything in its path. Deep Focus and Brainstorm's duration bonuses mean the Disorient applied during Overload persists long after the signature ends, giving you a CC runway that bridges to the next rotation.
+Your burst CC button. Pop it when a fresh pack enters or when the current Disorient uptime is about to lapse. Drone Overload puts the drone into full aggro mode , it attacks faster, crits harder, and applies EMCAT Disorient to everything in its path. Deep Focus and Brainstorm's duration bonuses mean the Disorient applied during Overload persists long after the signature ends, giving you a CC runway that bridges to the next rotation.
 
 ## How It Works (The Math)
 
@@ -114,15 +114,15 @@ Your burst CC button. Pop it when a fresh pack enters or when the current Disori
 | Disoriented | -50% Damage | They deal less damage TO you |
 | Blinded | Enemies stop shooting | Full CC, short duration |
 
-Disoriented is the sustained defensive multiplier. Pulsed is offensive. Blinded is binary CC. This build chooses the defensive multiplier because it's permanent — EMCAT re-applies it every drone crit, and the drone crits constantly.
+Disoriented is the sustained defensive multiplier. Pulsed is offensive. Blinded is binary CC. This build chooses the defensive multiplier because it's permanent , EMCAT re-applies it every drone crit, and the drone crits constantly.
 
 **Concerted Strike Damage Ramp**
 
 | Stack | Bonus |
 |---|---|
-| 1 | +8% Damage — first skill hit within 20m |
+| 1 | +8% Damage , first skill hit within 20m |
 | 2 | +16% Damage |
-| 3 (max) | +24% Damage — sustained while drone and hive keep pinging |
+| 3 (max) | +24% Damage , sustained while drone and hive keep pinging |
 
 Both the drone and the hive count as skill hits. With two skills firing simultaneously, you reach 3 stacks within seconds and maintain +24% Damage as a floor, not a ceiling.
 
@@ -161,7 +161,7 @@ Deploy Striker Hive at chokepoint → Send Drone to lead target → Drone Lock t
 
 ## OS Justification
 
-**Concerted Strike > Collateral Damage** for this build. Collateral Damage provides a 3,000% Engineering burst on a 10-second ICD — huge on an explosive build, wasteful on a CC build. Your goal isn't burst damage. Your goal is sustained CC uptime and consistent +24% Damage to the team's output. Concerted Strike stacks from both the drone and the hive simultaneously, reaching max stacks in seconds and staying there as long as your skills are active. The +24% Damage is always-on — not conditional, not on a cooldown, not requiring aim. Your skills do the work. You collect the buff. The enemies collect concussions.
+**Concerted Strike > Collateral Damage** for this build. Collateral Damage provides a 3,000% Engineering burst on a 10-second ICD , huge on an explosive build, wasteful on a CC build. Your goal isn't burst damage. Your goal is sustained CC uptime and consistent +24% Damage to the team's output. Concerted Strike stacks from both the drone and the hive simultaneously, reaching max stacks in seconds and staying there as long as your skills are active. The +24% Damage is always-on , not conditional, not on a cooldown, not requiring aim. Your skills do the work. You collect the buff. The enemies collect concussions.
 
 ## Gear Ladder
 
@@ -184,20 +184,20 @@ Deploy Striker Hive at chokepoint → Send Drone to lead target → Drone Lock t
 
 | Item | Where to Look |
 |---|---|
-| Jackpot 4pc | T0+ gear drops — available from early content, all activities |
-| Warlord (Exotic AR) | Exotic drops — DZ Vendor TAM, high-difficulty mission clears |
-| T1 AR (budget) | T1 AR drops — any content, world events |
-| Concerted Strike OS | HE Firepower OS — high-difficulty mission drops |
+| Jackpot 4pc | T0+ gear drops , available from early content, all activities |
+| Warlord (Exotic AR) | Exotic drops , DZ Vendor TAM, high-difficulty mission clears |
+| T1 AR (budget) | T1 AR drops , any content, world events |
+| Concerted Strike OS | HE Firepower OS , high-difficulty mission drops |
 | Deep Focus chest talent | Recalibrate any T2 chest to Deep Focus |
 | Brainstorm backpack talent | Recalibrate any T2 backpack to Brainstorm |
-| EMCAT chip set | Tech Operator skill mod drops — skill mod caches |
-| Stabilized Flight chip set | Tech Operator skill mod drops — skill mod caches |
+| EMCAT chip set | Tech Operator skill mod drops , skill mod caches |
+| Stabilized Flight chip set | Tech Operator skill mod drops , skill mod caches |
 
-## TL;DR — Five Things
+## TL;DR - Five Things
 
-1. **EMCAT drone crits apply Disoriented** — enemies deal 50% less damage and can't aim. Your entire team benefits from the defensive multiplier.
+1. **EMCAT drone crits apply Disoriented** , enemies deal 50% less damage and can't aim. Your entire team benefits from the defensive multiplier.
 2. **Jackpot 4pc feeds the crit ceiling** that makes EMCAT procs permanent. +10.8% Skill CHC and +24% Skill CHD keep the drone critting non-stop.
-3. **Deep Focus + Brainstorm stack ~58% Skill Duration.** Your CC doesn't just apply — it lingers like regret after a bad DZ extraction.
+3. **Deep Focus + Brainstorm stack ~58% Skill Duration.** Your CC doesn't just apply , it lingers like regret after a bad DZ extraction.
 4. **Concerted Strike OS gives +24% sustained Damage** from two skills hitting simultaneously. It stacks in seconds and never drops.
 5. **Your personal DPS is garbage and that's the point.** You're not the carry. You're the reason the carry doesn't die. Accept the assist medal.
 

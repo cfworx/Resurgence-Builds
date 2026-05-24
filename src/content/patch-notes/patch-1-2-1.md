@@ -1,9 +1,9 @@
----
-title: "Patch 1.2.1 Notes — Vendor Fixes, Inventory Fixes, and a Very Public Strawberry Milkshake Apology"
+﻿---
+title: "Patch 1.2.1 Notes - Vendor Fixes, Inventory Fixes, and a Very Public Strawberry Milkshake Apology"
 version: "1.2.1"
 patchDate: "2026-05-20"
 author: "RapidF5"
-summary: "Division Resurgence Patch 1.2.1 dropped May 20, 2026 — fixing the vendor sell bug, inventory disappearance, Classified Ops Pass delivery failures, Lone Wolf reset, and more. Plus 500,000 Basic Credits and 750 Phoenix Credits compensation for every account."
+summary: "Division Resurgence Patch 1.2.1 dropped May 20, 2026 , fixing the vendor sell bug, inventory disappearance, Classified Ops Pass delivery failures, Lone Wolf reset, and more. Plus 500,000 Basic Credits and 750 Phoenix Credits compensation for every account."
 featuredImage: "/images/patch-notes/division-resurgence-patch-1-2-1-notes-hero.webp"
 imageAlt: "A Division SHD agent reading patch notes on a tactical tablet in a darkened command room surrounded by screens and maps"
 shareTitle: "Warn your squad"
@@ -18,11 +18,11 @@ faqs:
     answer: "The tooltip was fixed to show accurate numbers. The weapon itself is still terrible. The community has dubbed it the 'poor man's Pestilence' and Ubisoft has acknowledged a buff is coming. Do not spend recalibration materials on it until the buff arrives. The Milkshake brings nobody to the yard in its current state."
 ---
 
-Patch 1.2.1 deployed on **May 20, 2026**. This is a targeted hotfix — not a content drop — aimed at the vendor meltdown, inventory losses, and Classified Ops Pass chaos that followed the Phase 2 launch on May 11–12. It also includes a significant line about **Strawberry Milkshake** that every Phase 2 player needs to read. Source: [Ubisoft Mobile Help Center — Patch Note 1.2.1](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/section/539-patch-note/).
+Patch 1.2.1 deployed on **May 20, 2026**. This is a targeted hotfix , not a content drop , aimed at the vendor meltdown, inventory losses, and Classified Ops Pass chaos that followed the Phase 2 launch on May 11–12. It also includes a significant line about **Strawberry Milkshake** that every Phase 2 player needs to read. Source: [Ubisoft Mobile Help Center , Patch Note 1.2.1](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/section/539-patch-note/).
 
 ---
 
-### Compensation — Sent to Every Account
+### Compensation - Sent to Every Account
 
 Ubisoft is mailing this directly to your in-game mailbox. No claim button, no timer, no special offer. Just open your mail.
 
@@ -38,24 +38,24 @@ This is the largest blanket compensation the game has issued since launch. Draw 
 The vendor has been a crime scene since Phase 2 hit. Here's the cleanup:
 
 - Fixed vendors not showing items the player could sell
-- Fixed players being able to sell locked or favorited items — yes, that was also a bug, yes it went the wrong direction
+- Fixed players being able to sell locked or favorited items , yes, that was also a bug, yes it went the wrong direction
 - Fixed the Dark Zone vendor displaying no item names (how do you sell a nameless gun? ask Ubisoft, apparently)
 
 ---
 
-### Strawberry Milkshake — Fixes and the Official Buff Signal
+### Strawberry Milkshake - Fixes and the Official Buff Signal
 
 This is the section everyone's been waiting for.
 
 > *"We are aware that many players report underwhelming perks for the weapon and are looking into how this may be addressed."*
-> — Ubisoft, Patch 1.2.1 Notes
+> , Ubisoft, Patch 1.2.1 Notes
 
 A buff is being discussed. Officially. In writing. Mid-phase. Don't burn your recalibration mats until the numbers land.
 
 Additional Strawberry Milkshake changes in 1.2.1:
 
-- **Anarchy talent description fixed** — the effect value displayed was incorrect before. Corrected values: **2.40% Weapon Damage over 4.50 seconds, up to 50 stacks; death transfers stacks within 12 meters.** The pre-fix tooltip showed 100% WD / 10s / 25m — wildly wrong numbers that inflated community expectations
-- **Weekly Mission Exotic Manual / Booklet rewards** can now correctly drop Strawberry Milkshake recalibration material — start farming these now so you're ready when the buff hits
+- **Anarchy talent description fixed** , the effect value displayed was incorrect before. Corrected values: **2.40% Weapon Damage over 4.50 seconds, up to 50 stacks; death transfers stacks within 12 meters.** The pre-fix tooltip showed 100% WD / 10s / 25m , wildly wrong numbers that inflated community expectations
+- **Weekly Mission Exotic Manual / Booklet rewards** can now correctly drop Strawberry Milkshake recalibration material , start farming these now so you're ready when the buff hits
 
 ---
 
@@ -70,7 +70,7 @@ Additional Strawberry Milkshake changes in 1.2.1:
 - Fixed players who purchased the pass **not receiving their purchase**
 - Fixed pass level upgrades **costing more than the listed in-game price**
 
-If you were hit by either of these bugs, Ubisoft says to contact support via the **in-game support button**. Have your transaction ID ready — they will need it.
+If you were hit by either of these bugs, Ubisoft says to contact support via the **in-game support button**. Have your transaction ID ready , they will need it.
 
 ---
 
@@ -86,7 +86,7 @@ Items lost before this patch are being handled on a case-by-case basis through s
 
 ### Localization Fixes
 
-Not glamorous, but real — especially for non-English players who have been staring at mystery text since Phase 2:
+Not glamorous, but real , especially for non-English players who have been staring at mystery text since Phase 2:
 
 - "Sold Out" now translates correctly in the Specials store
 - Exotic Weapon Tactical Augmentations Cache now has correct translations in the Dark Zone vendor
@@ -95,15 +95,15 @@ Not glamorous, but real — especially for non-English players who have been sta
 
 ---
 
-### Known Issues — Still Not Fixed
+### Known Issues - Still Not Fixed
 
 Ubisoft explicitly acknowledges the following are **not resolved** in this patch. This list is in the official patch notes, unusually transparently:
 
 - Gamepad support issues on iOS
-- **"Outpost Annihilation"** side mission not progressing — confirmed broken since beta, still listed as under investigation. At this point it may outlive us all
-- Some purchases still not being received in-game — contact support with a transaction ID
+- **"Outpost Annihilation"** side mission not progressing , confirmed broken since beta, still listed as under investigation. At this point it may outlive us all
+- Some purchases still not being received in-game , contact support with a transaction ID
 - Tactical Augmentation reward from the Dark Zone quest cannot be claimed
-- Weapon proficiency blocked in some cases — see the workaround if you're on iOS: logging into the PC client once typically clears it
+- Weapon proficiency blocked in some cases , see the workaround if you're on iOS: logging into the PC client once typically clears it
 
 ---
 

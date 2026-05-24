@@ -1,5 +1,5 @@
----
-title: "The Strawberry Reaper — Demolitionist PvE Build Guide (LMG Bleed)"
+﻿---
+title: "The Strawberry Reaper - Demolitionist PvE Build Guide (LMG Bleed)"
 specialization: Demolitionist
 playstyle: DPS
 pve: true
@@ -7,7 +7,7 @@ pvp: false
 lastUpdated: 2026-05-20T08:00:00Z
 patch: "Season 1 Phase 2"
 tags: ["strawberry-milkshake", "field-grenadier", "glass-cannon"]
-description: "An off-meta Demolitionist DoT spreader using the Strawberry Milkshake exotic. One kill infects the room — the room never stops bleeding."
+description: "An off-meta Demolitionist DoT spreader using the Strawberry Milkshake exotic. One kill infects the room , the room never stops bleeding."
 author: "RapidF5"
 featuredImage: "/images/division-resurgence-demolitionist-strawberry-reaper-build.webp"
 imageAlt: "Division Resurgence Demolitionist Strawberry Reaper Exotic LMG Build"
@@ -29,11 +29,11 @@ faqs:
 
 ## What It Is
 
-> ⚠️ **Buff incoming.** Ubisoft confirmed in Patch 1.2.1 (May 20, 2026) that Strawberry Milkshake's perks are underwhelming and under review for a buff. **Hold your recalibration materials** — this build will be updated the moment new numbers drop. The Anarchy talent description was also corrected in 1.2.1 (was displaying wrong effect values).
+> ⚠️ **Buff incoming.** Ubisoft confirmed in Patch 1.2.1 (May 20, 2026) that Strawberry Milkshake's perks are underwhelming and under review for a buff. **Hold your recalibration materials** , this build will be updated the moment new numbers drop. The Anarchy talent description was also corrected in 1.2.1 (was displaying wrong effect values).
 
-The meta sleeps on the Strawberry Milkshake. Nobody runs it. The Anarchy talent looks like a sticker on a soda can in isolation — a 2.40% Weapon Damage DoT that ticks for 4.50 seconds, capped at 50 stacks. Read it twice. The third line is where the build lives: **every enemy that dies with Anarchy stacks transfers all of them to a nearby target within 12 meters.** One kill infects the room. The room never stops bleeding. This top-tier Demolitionist PvE LMG Bleed build is a comfortable-difficulty setup that turns entire rooms into blood fountains. Equip this off-meta horror show and show the tryhards what true sustained DPS looks like.
+The meta sleeps on the Strawberry Milkshake. Nobody runs it. The Anarchy talent looks like a sticker on a soda can in isolation , a 2.40% Weapon Damage DoT that ticks for 4.50 seconds, capped at 50 stacks. Read it twice. The third line is where the build lives: **every enemy that dies with Anarchy stacks transfers all of them to a nearby target within 12 meters.** One kill infects the room. The room never stops bleeding. This top-tier Demolitionist PvE LMG Bleed build is a comfortable-difficulty setup that turns entire rooms into blood fountains. Equip this off-meta horror show and show the tryhards what true sustained DPS looks like.
 
-This is the Strawberry Reaper — a Demolitionist build that turns the Milkshake's spreading DoT into a Firepower engine. The Artillery Turret feeds on debuffed bodies. Shaped Charge ramps your Firepower. Concerted Strike stacks +24% Damage off skill pings. Phalanx Attack 4-piece pours +18% Mag, +18% RoF, and +12% Multi-Shot into an LMG that already sprays. Glass Cannon pushes everything another 20% over the line. It is fast, loud, and built for clearing rooms while standing in cover, sipping a milkshake.
+This is the Strawberry Reaper , a Demolitionist build that turns the Milkshake's spreading DoT into a Firepower engine. The Artillery Turret feeds on debuffed bodies. Shaped Charge ramps your Firepower. Concerted Strike stacks +24% Damage off skill pings. Phalanx Attack 4-piece pours +18% Mag, +18% RoF, and +12% Multi-Shot into an LMG that already sprays. Glass Cannon pushes everything another 20% over the line. It is fast, loud, and built for clearing rooms while standing in cover, sipping a milkshake.
 
 **Build Overview**
 
@@ -46,24 +46,24 @@ This is the Strawberry Reaper — a Demolitionist build that turns the Milkshake
 
 Strawberry Milkshake gets dismissed because players evaluate the Anarchy talent at one stack on one target. That math is misleading. The talent compounds in two directions at once:
 
-- **Vertical stack growth** — sustained fire on a single target builds up to 50 stacks, and each stack is its own 2.40% Weapon Damage tick over 4.50 seconds.
-- **Horizontal stack transfer** — when a stacked target dies, the entire stack pool jumps to a new enemy within 12 meters. Group fights become self-sustaining DoT chains.
-- **Skill mod synergy** — the Demolitionist's Shaped Charge mod set explicitly rewards Artillery Turret hits on Bleed/Vulnerable enemies. Anarchy stacks qualify, which means the turret converts the DoT pool into a +7.2% Firepower ramp every fight.
-- **Multi-Shot stacking** — Phalanx Attack 4-piece and Dominating Presence both feed Multi-Shot Chance. Stacking them on an LMG produces an extra-hit blizzard that nobody is building around.
+- **Vertical stack growth** , sustained fire on a single target builds up to 50 stacks, and each stack is its own 2.40% Weapon Damage tick over 4.50 seconds.
+- **Horizontal stack transfer** , when a stacked target dies, the entire stack pool jumps to a new enemy within 12 meters. Group fights become self-sustaining DoT chains.
+- **Skill mod synergy** , the Demolitionist's Shaped Charge mod set explicitly rewards Artillery Turret hits on Bleed/Vulnerable enemies. Anarchy stacks qualify, which means the turret converts the DoT pool into a +7.2% Firepower ramp every fight.
+- **Multi-Shot stacking** , Phalanx Attack 4-piece and Dominating Presence both feed Multi-Shot Chance. Stacking them on an LMG produces an extra-hit blizzard that nobody is building around.
 
-The meta runs Sharpshooter DPS rifles — long-range, single-target, clean engagements. This build sidesteps that ladder entirely. It rewards group density, which is exactly the situation the meta tries to AOE-clear at range.
+The meta runs Sharpshooter DPS rifles , long-range, single-target, clean engagements. This build sidesteps that ladder entirely. It rewards group density, which is exactly the situation the meta tries to AOE-clear at range.
 
 ## Weapons
 
-**Primary — Strawberry Milkshake (Exotic LMG)**
+**Primary , Strawberry Milkshake (Exotic LMG)**
 
 **Talent: Anarchy.** Every hit inflicts a debuff dealing 2.40% Weapon Damage over 4.50 seconds, stacking up to 50. When a debuffed enemy dies, all stacks transfer to a nearby enemy within 12 meters.
 
-Use it as your primary in every engagement. The LMG's natural sustained fire pattern is what makes the talent work — you want the trigger held down, dumping rounds into the closest body.
+Use it as your primary in every engagement. The LMG's natural sustained fire pattern is what makes the talent work , you want the trigger held down, dumping rounds into the closest body.
 
-**Secondary — Custom 416 G3 (T2 AR)**
+**Secondary , Custom 416 G3 (T2 AR)**
 
-**Talent slots:** In Sync (Shooting enemies boosts your skill damage; skill hits boost your weapon damage — permanent two-stroke engine) and Steady Reload (Reloading grants +18% Weapon Damage for 5 seconds, up to 5 stacks).
+**Talent slots:** In Sync (Shooting enemies boosts your skill damage; skill hits boost your weapon damage , permanent two-stroke engine) and Steady Reload (Reloading grants +18% Weapon Damage for 5 seconds, up to 5 stacks).
 
 The 416 is your swap weapon when the Milkshake is reloading. In Sync keeps your Artillery Turret fed while you're on the AR, and the separate AR ammo pool means you never run dry on LMG rounds. Swap back to the Milkshake once it's reloaded.
 
@@ -71,15 +71,15 @@ The 416 is your swap weapon when the Milkshake is reloading. In Sync keeps your 
 
 | Slot | Set | Talent | Core | Bonus 1 | Bonus 2 |
 |---|---|---|---|---|---|
-| Mask | Phalanx Attack | — | Firepower | Weapon CHC | Weapon CHD |
+| Mask | Phalanx Attack | , | Firepower | Weapon CHC | Weapon CHD |
 | Chest | Any | **Glass Cannon** | Firepower | Weapon CHC | Weapon CHD |
-| Gloves | Phalanx Attack | — | Firepower | Weapon CHC | Weapon CHD |
-| Holster | Phalanx Attack | — | Firepower | Weapon CHC | Damage to Elites |
+| Gloves | Phalanx Attack | , | Firepower | Weapon CHC | Weapon CHD |
+| Holster | Phalanx Attack | , | Firepower | Weapon CHC | Damage to Elites |
 | Backpack | Any | **Overwatch** | Firepower | Weapon CHD | Damage to Elites |
-| Kneepads | Phalanx Attack | — | Firepower | Weapon CHC | Weapon CHD |
+| Kneepads | Phalanx Attack | , | Firepower | Weapon CHC | Weapon CHD |
 
-- **Primary:** Strawberry Milkshake (exotic LMG) — Anarchy
-- **Secondary:** Custom 416 G3 (T2 AR) — In Sync + Steady Reload
+- **Primary:** Strawberry Milkshake (exotic LMG) , Anarchy
+- **Secondary:** Custom 416 G3 (T2 AR) , In Sync + Steady Reload
 - **OS Protocol:** Concerted Strike (HE Firepower)
 - **Skills:** Artillery Turret (Shaped Charge 3pc) · Explosive Seeker Mine (Area Denial 3pc)
 - **Signature:** M32A1 Grenade Launcher (Concentrated Fire 3pc)
@@ -104,7 +104,7 @@ The 416 is your swap weapon when the Milkshake is reloading. In Sync keeps your 
 |---|---|
 | 1 | +8% Damage on first skill hit within 20m |
 | 2 | +16% Damage |
-| 3 (max) | +24% Damage — sustained while the turret keeps pinging debuffed enemies |
+| 3 (max) | +24% Damage , sustained while the turret keeps pinging debuffed enemies |
 
 **Shaped Charge Firepower Ramp (3pc Mod)**
 
@@ -122,7 +122,7 @@ Artillery Turret hits on Bleed/Vulnerable enemies grant +1.44% Firepower per hit
 | Glass Cannon | +20% Damage |
 | Shaped Charge | +7.2% Firepower at full turret ramp |
 | Phalanx Attack 4pc | +12% Multi-Shot Chance for free extra hits |
-| In Sync (during AR swap) | Bidirectional damage boost — weapon hits buff skills, skill hits buff weapon |
+| In Sync (during AR swap) | Bidirectional damage boost , weapon hits buff skills, skill hits buff weapon |
 
 **OS Choice: Concerted Strike vs Dominating Presence**
 
@@ -133,26 +133,26 @@ Artillery Turret hits on Bleed/Vulnerable enemies grant +1.44% Firepower per hit
 
 ## Skill Mod Choices
 
-**Artillery Turret — Shaped Charge (3-piece)**
+**Artillery Turret , Shaped Charge (3-piece)**
 
 - **2pc:** Armor +4.7% to 9.3%
 - **3pc:** Artillery Turret hits on Bleed/Vulnerable enemies grant +1.44% Firepower for 10s, up to 5 stacks (+7.2% Firepower at cap)
 
-**Explosive Seeker Mine — Area Denial (3-piece)**
+**Explosive Seeker Mine , Area Denial (3-piece)**
 
 - **2pc:** Rate of Fire +4% to 8%
-- **3pc:** ESM hits grant +8.6% ESM Radius. ESM hits also **extend Artillery Turret duration by +1.6 seconds** — the hidden gem. Every mine hit is a free turret-time extension, which means the Firepower ramp never resets in long fights.
+- **3pc:** ESM hits grant +8.6% ESM Radius. ESM hits also **extend Artillery Turret duration by +1.6 seconds** , the hidden gem. Every mine hit is a free turret-time extension, which means the Firepower ramp never resets in long fights.
 
-**M32A1 Signature — Concentrated Fire (3-piece)**
+**M32A1 Signature , Concentrated Fire (3-piece)**
 
 - **2pc:** Max Health +4% to 8%
 - **3pc:** 5 M32A1 hits within 3 seconds grant +14.4% Skill Intensity for 15 seconds. Empty the signature into a tight cluster and the turret crits noticeably harder for the next 15 seconds.
 
 ## Rotation (Stack the Bleed)
 
-1. **Sprint to cover.** Position before the fight starts — the build punishes static cover and rewards angles into a group.
+1. **Sprint to cover.** Position before the fight starts , the build punishes static cover and rewards angles into a group.
 2. **Deploy Artillery Turret.** Let it acquire the nearest target before you commit shots.
-3. **Fire Strawberry Milkshake into the densest part of the group.** Stack Anarchy on at least one target — 10 to 15 stacks is enough to start the cascade.
+3. **Fire Strawberry Milkshake into the densest part of the group.** Stack Anarchy on at least one target , 10 to 15 stacks is enough to start the cascade.
 4. **Deploy Explosive Seeker Mine.** Its hits qualify for Area Denial 3pc, extending turret duration by 1.6 seconds per hit.
 5. **Pop into cover for 3+ seconds.** Overwatch backpack activates: +15% Skill Damage applies to the next turret volley.
 6. **Keep firing the Milkshake.** When the first debuffed enemy dies, all Anarchy stacks transfer to a target within 12 meters. The group is now permanently infected.
@@ -176,16 +176,16 @@ Artillery Turret hits on Bleed/Vulnerable enemies grant +1.44% Firepower per hit
 |---|---|
 | Strawberry Milkshake | Free reward on the Classified Ops Pass 1.2 track (Phase 2). TAM available at DZ Vendor. |
 | Phalanx Attack 4-piece | T0+ gear drops, available from first content |
-| Custom 416 G3 (T2) | T2 AR drop — world events, Dark Zone, mission rewards |
-| Concerted Strike OS | HE Firepower OS — high-difficulty mission drops |
+| Custom 416 G3 (T2) | T2 AR drop , world events, Dark Zone, mission rewards |
+| Concerted Strike OS | HE Firepower OS , high-difficulty mission drops |
 | Glass Cannon chest | Recalibrate any chest to Glass Cannon |
 | Overwatch backpack | Recalibrate any backpack to Overwatch |
 | Shaped Charge skill mods | Demolitionist mod drops |
 | Area Denial skill mods | Demolitionist mod drops |
 | Concentrated Fire skill mods | Demolitionist mod drops |
-| SM Recalibration Material | Weekly Mission Exotic Manual / Booklet rewards (fixed in Patch 1.2.1 to correctly drop — farm these now) |
+| SM Recalibration Material | Weekly Mission Exotic Manual / Booklet rewards (fixed in Patch 1.2.1 to correctly drop , farm these now) |
 
-## TL;DR — Five Things
+## TL;DR - Five Things
 
 1. **Strawberry Milkshake's Anarchy DoT spreads on kill.** One death infects enemies within 12 meters automatically.
 2. **Phalanx Attack 4pc** gives +18% Mag, +18% RoF, and +12% Multi-Shot. The Milkshake sprays faster and hits harder.

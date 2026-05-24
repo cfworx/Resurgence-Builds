@@ -20,7 +20,7 @@ faqs:
   - question: "Can I run this build solo?"
     answer: "You can also eat soup with a fork. Technically possible, practically miserable. This build is designed to multiply other people's damage. If there are no other people, you are multiplying zero. For solo content, run a Vanguard Commando DPS build instead and come back to Scout when you have friends. Or matchmake. We don't judge."
   - question: "Is the P90 actually better than an LMG for this build?"
-    answer: "Yes, and it's not even close. The P90's small 50-round magazine is the feature, not the bug. You WANT to empty it fast because every empty reload triggers Fully Charged (+7.50% Engineering). A 100-round LMG takes three times as long to empty, which means three times as long between Engineering stacks. The P90 is not your damage source. It's your stat-reload button."
+    answer: "For this build, absolutely. The P90 fires at 900 RPM, which means you burn through magazines fast and trigger Fully Charged (+7.50% Engineering) on every empty reload. An LMG with a 100-round belt takes forever to empty, so you're waiting ages between Engineering stacks. The P90 exists to proc Fully Charged as often as possible. Every empty reload is a damage buff for your entire team."
   - question: "What's the best Vanguard support build in Division Resurgence?"
     answer: "You're looking at it. The Vanguard Scout Recon running 4pc Mechanical Expert + 2pc Boom Shakalaka is currently the highest-impact support build in the game. AgentHuntzman is running it at T1 and tripling team DPS. Meanwhile, Destiny 2's support classes are getting their final update on June 9 before Bungie turns the lights off. So if you want a looter shooter where support builds actually get new content, you're in the right place."
   - question: "Do I need Legendary drops for this build?"
@@ -33,13 +33,13 @@ faqs:
 
 > Build credit: This build comes from [**AgentHuntzman**](https://www.youtube.com/watch?v=b1ZjnGeeRKI). Go watch his breakdown and drop a sub. The man is doing the Lord's work with a calculator.
 
-Let's get the uncomfortable truth out of the way first. Your character screen DPS on this build is going to read something like 142,110. You are going to look at that number and think "that's not a real build." You are wrong.
+Let's get the uncomfortable truth out of the way first. Your character screen DPS on this build is going to read something like 142,110. You are going to look at that number and feel personally attacked. Relax. That number is lying to you.
 
 This is the Vanguard Recon Scout. It does not kill things. It makes your entire team kill things three times faster. AgentHuntzman is running this at roughly 70% completion on T1 gear and it's already turning pickup groups from "struggling on Hard" into "accidentally speed-clearing Heroic."
 
 The whole thing runs on one combat loop: hit enemies fast, proc Duration Downpour for Engineering, empty your P90 to stack Fully Charged, then let Tactical Smart Cover convert all that Engineering into raw weapon damage for every teammate standing behind it. Scanning Pulse slaps vulnerability on everything. Tactical Link gives your team rate-of-fire steroids. Repeat until everything is dead.
 
-You are not the DPS. You are the reason DPS exists.
+Your scoreboard number will look embarrassing. Your team's total output will be disgusting.
 
 ## Why Support Beats Solo Damage
 
@@ -52,7 +52,7 @@ The Scout sidesteps all of that:
 1. **Your skills don't die.** Smart Cover doesn't have an HP bar. Scanning Pulse doesn't have an HP bar. They sit there and tick forever while drones are exploding like fireworks around you.
 2. **You're not the single point of failure.** When a DPS build goes down, the team's damage goes with it. When you go down, the team loses a buff. They can still shoot.
 3. **You play from cover.** Socialite (your chest talent) gives +36% Armor when enemies are within 20 meters. You are tankier than most "tank" builds while sitting safer than most DPS builds.
-4. **Engineering scales everything.** Fully Charged stacks inflate your Engineering pool. Smart Cover converts that inflated pool into team weapon damage. Pulse scales its radius off Engineering. The build feeds itself like a perpetual motion machine of violence.
+4. **Engineering scales everything.** Fully Charged stacks inflate your Engineering pool. Smart Cover converts that inflated pool into team weapon damage. The build feeds itself like a perpetual motion machine of violence.
 
 ## Weapons
 
@@ -68,9 +68,9 @@ Two guns. One talent doing 60% of the work.
 
 - **Talent 1: Duration Downpour.** Same talent, second copy. Different cooldown timer from the primary.
 - **Talent 2: Fully Charged.** Reloading an empty magazine grants **+7.50% Engineering for 12 seconds, stacking up to 3 times** (+22.50% total). This is the talent that makes the build tick.
-- **RPM: 900.** Magazine: 50 rounds. You will empty this gun in about 3.3 seconds of sustained fire. That's the point. Every empty reload is a Fully Charged proc.
+- **RPM: 900.** Magazine: 50 rounds. At 900 RPM, you burn through the magazine in about 3.3 seconds of sustained fire. Every empty reload is a Fully Charged proc.
 
-**Why P90 specifically:** Small magazine, insane fire rate. You WANT to empty it fast. A 100-round Stoner LMG takes three times as long to empty, which means three times as long between Engineering stacks. For this build, the P90's tiny mag is the feature. Not the bug.
+**Why P90 specifically:** 900 RPM fire rate means you cycle through magazines faster than almost anything else in the game. You burn the mag, reload, proc Fully Charged, and start stacking Engineering immediately. An LMG with a 100-round belt takes three times as long to empty, which means three times as long between Engineering stacks. Speed of proc is everything on this build.
 
 ## The Build
 
@@ -80,7 +80,7 @@ Two guns. One talent doing 60% of the work.
 | Gloves | Mechanical Expert | - | Engineering | Skill Duration | Skill Cooldown Recovery |
 | Holster | Mechanical Expert | - | Engineering | Sig. Ability Charge Efficiency | Skill Intensity |
 | Kneepads | Mechanical Expert | - | Engineering | Skill Cooldown Recovery | Weapon Damage |
-| Chest | Boom Shakalaka | **Socialite** | Toughness | Armor | Health |
+| Chest | Boom Shakalaka | **Socialite** | Toughness | Armor (or Skill Duration) | Health (or Skill Intensity) |
 | Backpack | Boom Shakalaka | **Intense Performance II** | Engineering | Skill Intensity | Skill Cooldown Recovery |
 
 - **Primary:** Police M4 (AR) with Duration Downpour + Rapid Charge
@@ -109,7 +109,7 @@ This is the best support-survivability talent in the game. It rewards exactly wh
 
 "Grants +46% skill radius. Inflicts -5% skill duration."
 
-The -5% duration penalty on a Scanning Pulse with a 17.44-second base is 0.87 seconds. Less than one second of downtime for +46% more coverage area. That's the difference between a Pulse that covers one wave and a Pulse that covers the entire room plus the hallway behind it. This is one of the most lopsided trades in the game. Take it and laugh.
+The -5% duration penalty on a Scanning Pulse with a 17.44-second base is 0.87 seconds. The trade for +46% more coverage area looks good on paper, and AgentHuntzman runs it. That said, Skill Radius is a contested stat in the community. Some players prefer **Calculated** (kill-based cooldown reduction) or **Skilled** (skill crit = cooldown refund) for tighter skill cycling instead of wider coverage. If your team stacks on a chokepoint, radius matters less than uptime. Try both and see what fits your squad.
 
 ## Skill Mods (Chips)
 
@@ -202,7 +202,7 @@ The build does NOT require T2 gear to function. AgentHuntzman is running it at T
 | Drop | Keep If | Recalibrate To |
 |---|---|---|
 | T1 Mechanical Expert mask/gloves/holster/kneepads | Engineering core + Skill CDR or Duration roll | Engineering primary, CDR/Duration secondary |
-| T1 Boom Shakalaka chest | Toughness core + Socialite talent | Armor secondary |
+| T1 Boom Shakalaka chest | Toughness core + Socialite talent | Armor or Skill Duration secondary |
 | T1 Boom Shakalaka backpack | Engineering core + Intense Performance II | Skill Intensity secondary |
 | Police M4 (any tier) | Duration Downpour OR Rapid Charge rolled | Weapon Damage primary |
 | P90 (any tier) | **Fully Charged rolled** | Keep everything else as-is |
@@ -211,7 +211,7 @@ The build does NOT require T2 gear to function. AgentHuntzman is running it at T
 ## TL;DR
 
 1. **Run 4pc Mechanical Expert + 2pc Boom Shakalaka.** Engineering core on every piece you can. Skill CDR, Duration, and Intensity on the bonuses.
-2. **Police M4 with Duration Downpour + Rapid Charge as primary. P90 with Duration Downpour + Fully Charged as secondary.** The P90 is your stat-reload button. Empty, reload, stack Engineering.
+2. **Police M4 with Duration Downpour + Rapid Charge as primary. P90 with Duration Downpour + Fully Charged as secondary.** The P90 exists to proc Fully Charged. Empty the mag at 900 RPM, reload, stack Engineering.
 3. **Socialite on chest, Intense Performance II on backpack.** Socialite makes you tanky. Intense Performance II makes Scanning Pulse cover entire rooms for almost no cost.
 4. **Mobile Bastion + Scout + Bugle Call for skill chips.** All three generate team Signature Ability charge or buff team output. None of them buff you personally. That's the entire point.
 5. **The combat loop is: Pulse, Smart Cover, M4 for Duration Downpour, P90 empty reloads x3, Tactical Link.** Run that loop. Your team triples their damage. Your own DPS looks mid on the scoreboard. That is the build working correctly.

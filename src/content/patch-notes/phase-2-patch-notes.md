@@ -1,4 +1,4 @@
----
+﻿---
 title: "Phase 2 Patch Notes (Season 1, Phase 2)"
 version: "1.2.0"
 patchDate: "2026-05-12"
@@ -24,16 +24,16 @@ The Phase 2 update for Season 1 went live on May 12. This is the official patch 
 
 **New Classified Ops Pass**
 - 50 tiers of exclusive rewards
-- "Strawberry Milkshake" — free new Exotic Weapon (LMG)
-- "Hot Rod" — Superior Weapon Skin
-- "Pyromaniac" — Apparel Set
+- "Strawberry Milkshake" , free new Exotic Weapon (LMG)
+- "Hot Rod" , Superior Weapon Skin
+- "Pyromaniac" , Apparel Set
 
 **New Cosmetic Draw Sets**
 - Eradication Exotic Weapon Skin + Battle-worn Metal Weapon Skin Set
 - Special Forces Apparel Set + Battle-Hardened Weapon Skin Set
 - Ken Ito Apparel Set + Rikers Unchained Weapon Skin Set
 
-**Time-Limited Events** — Four new events
+**Time-Limited Events** , Four new events
 - 1 Dark Zone event
 - 3 speed-run challenges (revisiting main-story missions on Challenging difficulty)
 

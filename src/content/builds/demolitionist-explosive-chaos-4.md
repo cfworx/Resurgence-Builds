@@ -1,5 +1,5 @@
----
-title: "Michael Bay's Wet Dream — Demolitionist PvE Explosive Skill Build Guide (DPS)"
+﻿---
+title: "Michael Bay's Wet Dream - Demolitionist PvE Explosive Skill Build Guide (DPS)"
 specialization: Demolitionist
 playstyle: Solo
 pve: true
@@ -31,7 +31,7 @@ faqs:
 
 Do you like explosions? Do you think the concept of "collateral damage" is just a suggestion? Welcome to Michael Bay's wet dream. This off-meta Demolitionist PvE explosive skill build is for the solo player who wants to turn every engagement into a cinematic disaster. It's a challenging-tier DPS setup designed to completely fry the game's framerate with sheer destructive output.
 
-This is a solo-first off-meta Demolitionist build where **every single skill cast detonates twice**. Using the **Jackpot 4pc**, the **M32A1 Grenade Launcher** signature, and the **Collateral Damage OS**, this build is designed to turn your screen into a chaotic mess of fire and numbers. The Geneva Convention called — you sent it to voicemail.
+This is a solo-first off-meta Demolitionist build where **every single skill cast detonates twice**. Using the **Jackpot 4pc**, the **M32A1 Grenade Launcher** signature, and the **Collateral Damage OS**, this build is designed to turn your screen into a chaotic mess of fire and numbers. The Geneva Convention called , you sent it to voicemail.
 
 **Build Overview**
 
@@ -52,26 +52,26 @@ Jackpot is the only set that rolls Skill Crit Chance + Skill Radius on its set b
 
 ## Weapons
 
-**Primary — Lady Death (Exotic SMG)**
+**Primary , Lady Death (Exotic SMG)**
 
 **Talent: Breathe Free.** The Lady Death gives you movement-speed stacks that convert into weapon damage. You're constantly repositioning in this build anyway (because standing still = death), so the stacks build naturally. When you absolutely need to put bullets into something between skill cooldowns, the Lady Death hits significantly harder than any standard SMG. The exotic perk rewards the exact playstyle this build demands: run, gun, explode, repeat.
 
-**Secondary — T2 Vector (or any AR for ranged plinking)**
+**Secondary , T2 Vector (or any AR for ranged plinking)**
 
-**Talent: In Sync + Multitasking.** In Sync is the two-stroke engine — weapon hits boost skill damage, skill hits boost weapon damage. Since your skills are always active, the weapon-side buff is permanently running. Multitasking gives you bonus damage when multiple skills are deployed, which is... always. The secondary exists for the 8 seconds between explosions when you need to pretend you're playing a shooter.
+**Talent: In Sync + Multitasking.** In Sync is the two-stroke engine , weapon hits boost skill damage, skill hits boost weapon damage. Since your skills are always active, the weapon-side buff is permanently running. Multitasking gives you bonus damage when multiple skills are deployed, which is... always. The secondary exists for the 8 seconds between explosions when you need to pretend you're playing a shooter.
 
 ## The Build
 
 | Slot | Set | Talent | Core | Bonus 1 | Bonus 2 |
 |---|---|---|---|---|---|
-| Mask | Jackpot | — | Engineering | Skill Crit Chance | Skill Crit Damage |
-| Gloves | Jackpot | — | Engineering | Skill Crit Chance | Skill Crit Damage |
-| Holster | Jackpot | — | Engineering | Skill Crit Damage | Skill Crit Chance |
-| Kneepads | Jackpot | — | Engineering | Skill Crit Chance | Skill Multi-Shot |
+| Mask | Jackpot | , | Engineering | Skill Crit Chance | Skill Crit Damage |
+| Gloves | Jackpot | , | Engineering | Skill Crit Chance | Skill Crit Damage |
+| Holster | Jackpot | , | Engineering | Skill Crit Damage | Skill Crit Chance |
+| Kneepads | Jackpot | , | Engineering | Skill Crit Chance | Skill Multi-Shot |
 | Chest | Fire Cycle (T2) | **Energize** | Engineering | Skill Crit Chance | Skill Crit Damage |
 | Backpack | Fire Cycle (T2) | **Explosive Burst** | Engineering | Skill Crit Damage | Skill Multi-Shot |
 
-- **Primary:** Lady Death (exotic SMG) — Breathe Free
+- **Primary:** Lady Death (exotic SMG) , Breathe Free
 - **Secondary:** T2 Vector with In Sync + Multitasking (or any AR for ranged plinking)
 - **OS Protocol:** Collateral Damage (Engineering, High-End)
 - **Skills:** Artillery Turret + Area Suppression mod · Explosive Seeker Mine + Multi-Directional Charge mod
@@ -86,17 +86,17 @@ Jackpot is the only set that rolls Skill Crit Chance + Skill Radius on its set b
 
 **Chest & Backpack Justification**
 
-**Energize** gives +18% Skill Damage for 8 seconds every time you use a medkit. In a build where your survival strategy is "pop medkits and pray," this is effectively a permanent buff. You're already burning through medkits because your Toughness is a rounding error — might as well get a damage bonus out of your panic healing. Fire Cycle's brand bonus adds Skill Damage stats that stack directly into your Engineering scaling.
+**Energize** gives +18% Skill Damage for 8 seconds every time you use a medkit. In a build where your survival strategy is "pop medkits and pray," this is effectively a permanent buff. You're already burning through medkits because your Toughness is a rounding error , might as well get a damage bonus out of your panic healing. Fire Cycle's brand bonus adds Skill Damage stats that stack directly into your Engineering scaling.
 
 **Explosive Burst** is the talent that pushes this build from "good" to "unhinged." Up to +90% Skill Multi-Shot Chance means each grenade, each turret shot, each seeker mine detonation has near-coinflip odds of just... doing it again. For free. No cooldown. No extra resource cost. The backpack is the reason single grenades turn into carpet bombings.
 
 ## Skill Loadout
 
-**Artillery Turret — Area Suppression (3pc)**
+**Artillery Turret , Area Suppression (3pc)**
 
 The Artillery Turret is your primary aggro magnet and consistent damage source. Area Suppression mods expand the turret's blast radius and increase its suppression effect. Drop it at the chokepoint, let it pull every enemy's attention, and watch it trigger Collateral Damage OS on every single hit. The turret's consistent tick rate means your OS is proccing on cooldown without any player input. You're basically AFK-bombing.
 
-**Explosive Seeker Mine — Multi-Directional Charge (3pc)**
+**Explosive Seeker Mine , Multi-Directional Charge (3pc)**
 
 The Seeker Mine is your second skill engine. Multi-Directional Charge splits the mine into multiple smaller charges that seek individual targets, spreading your damage (and Collateral Damage OS procs) across the entire engagement. Each sub-munition is its own skill event, which means each one independently rolls for Explosive Burst Multi-Shot. One seeker throw can produce 4-6 separate explosions before the OS even triggers.
 
@@ -133,7 +133,7 @@ Artillery Turret hits enemy → Collateral Damage OS detonates second explosion 
 
 ## OS Justification
 
-**Collateral Damage > Concerted Strike** for this build. Concerted Strike caps at +24% Damage from skill hits within 20m — a strong, reliable buff. But Collateral Damage doesn't buff your damage. It **IS** damage. A raw 3,000% Engineering nuke on a 10-second cooldown that triggers off any skill event, including the Artillery Turret, which fires every 2-3 seconds. You're not stacking a buff — you're adding an entire extra explosion to every engagement cycle. In a build that already produces 4-6 skill events per rotation, Collateral Damage's total output dwarfs the +24% multiplier. The ICD is the only thing keeping this OS from being nerfed into the ground.
+**Collateral Damage > Concerted Strike** for this build. Concerted Strike caps at +24% Damage from skill hits within 20m , a strong, reliable buff. But Collateral Damage doesn't buff your damage. It **IS** damage. A raw 3,000% Engineering nuke on a 10-second cooldown that triggers off any skill event, including the Artillery Turret, which fires every 2-3 seconds. You're not stacking a buff , you're adding an entire extra explosion to every engagement cycle. In a build that already produces 4-6 skill events per rotation, Collateral Damage's total output dwarfs the +24% multiplier. The ICD is the only thing keeping this OS from being nerfed into the ground.
 
 ## Gear Ladder
 
@@ -149,26 +149,26 @@ Artillery Turret hits enemy → Collateral Damage OS detonates second explosion 
 2. **Throw your Explosive Seeker Mine** for the second skill engine. Multi-Directional Charge splits across multiple targets.
 3. **Pop the M32A1.** Each grenade detonates → triggers Collateral Damage AOE → rolls Explosive Burst Multi-Shot. This is where the screen turns orange.
 4. **The Energize chest gives +18% Skill Damage for 8s on medkit use,** so pop a medkit when the buff drops to keep the numbers as big as possible. Yes, you are using medkits offensively. No, that's not weird.
-5. **Reposition frantically** while skills are on cooldown because, again, your toughness is basically tissue paper. If you're standing still, you're already dead — you just haven't received the notification yet.
+5. **Reposition frantically** while skills are on cooldown because, again, your toughness is basically tissue paper. If you're standing still, you're already dead , you just haven't received the notification yet.
 6. **Repeat.** By the time you've repositioned, the turret cooldown is back. Redeploy. The cycle of violence continues.
 
 ## Loot Quick-Reference
 
 | Item | Where to Look |
 |---|---|
-| Jackpot 4pc | T0+ gear drops — available from early content, all activities |
-| Fire Cycle 2pc (T2) | T2 gear drops — world events, elite missions, DZ |
-| Lady Death (Exotic SMG) | Exotic drops — DZ Vendor TAM, high-difficulty mission clears |
-| T2 Vector (SMG) | T2 SMG drops — world events, mission completions |
-| Collateral Damage OS | HE Engineering OS — high-difficulty mission drops |
+| Jackpot 4pc | T0+ gear drops , available from early content, all activities |
+| Fire Cycle 2pc (T2) | T2 gear drops , world events, elite missions, DZ |
+| Lady Death (Exotic SMG) | Exotic drops , DZ Vendor TAM, high-difficulty mission clears |
+| T2 Vector (SMG) | T2 SMG drops , world events, mission completions |
+| Collateral Damage OS | HE Engineering OS , high-difficulty mission drops |
 | Energize chest talent | Recalibrate any T2 chest to Energize |
 | Explosive Burst backpack talent | Recalibrate any T2 backpack to Explosive Burst |
-| Area Suppression skill mods | Demolitionist mod drops — skill mod caches |
-| Multi-Directional Charge skill mods | Demolitionist mod drops — skill mod caches |
+| Area Suppression skill mods | Demolitionist mod drops , skill mod caches |
+| Multi-Directional Charge skill mods | Demolitionist mod drops , skill mod caches |
 
-## TL;DR — Five Things
+## TL;DR - Five Things
 
-1. **Collateral Damage OS adds a 3,000% Engineering explosion to every skill event.** Your turret doesn't just shoot — it detonates the OS on every hit.
+1. **Collateral Damage OS adds a 3,000% Engineering explosion to every skill event.** Your turret doesn't just shoot , it detonates the OS on every hit.
 2. **Explosive Burst backpack gives up to +90% Skill Multi-Shot.** Every grenade has coinflip odds of becoming two grenades. For free.
 3. **Jackpot 4pc stacks +10.8% Skill CHC and +24% Skill CHD.** Your explosions crit. Your crits explode. The loop feeds itself.
 4. **Your Toughness is zero.** You are a glass cannon made entirely of glass and cannon. Stay behind cover or become a cautionary tale.

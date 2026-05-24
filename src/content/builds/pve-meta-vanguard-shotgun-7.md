@@ -1,5 +1,5 @@
----
-title: "The Alt-F4 Shotgun Button — Vanguard PvE Shotgun Build Guide (DPS)"
+﻿---
+title: "The Alt-F4 Shotgun Button - Vanguard PvE Shotgun Build Guide (DPS)"
 specialization: Vanguard
 playstyle: DPS
 pve: true
@@ -44,7 +44,7 @@ You are going to walk up to things and mathematically erase them from the server
 
 ## Why This Is The Uninstall Button
 
-Every meta build in Division Resurgence tries to optimize sustained DPS — steady damage over time, manage your cooldowns, keep the rotation flowing. This build doesn't have a rotation. It has a **trigger pull**.
+Every meta build in Division Resurgence tries to optimize sustained DPS , steady damage over time, manage your cooldowns, keep the rotation flowing. This build doesn't have a rotation. It has a **trigger pull**.
 
 Phalanx Attack is the *only* gear set that rolls Magazine Size, Rate of Fire, AND Multi-Shot at 2/3/4pc. Stack that absurd combination on a weapon that already fires two shells per pull. Layer Pulse Vulnerability on top. Add an OS that triggers a 5m AOE explosion on every aimed crit for **2,000% Firepower damage**. The result is a build where each trigger pull is doing 3-4 separate, massive damage instances on every enemy in the pack.
 
@@ -52,13 +52,13 @@ Phalanx Attack is the *only* gear set that rolls Magazine Size, Rate of Fire, AN
 
 ## Weapons
 
-**Primary — Double Barrel Shotgun (T2 Shotgun)**
+**Primary , Double Barrel Shotgun (T2 Shotgun)**
 
-**Talent: Steady Reload.** Reloading grants +18% Weapon Damage for 5 seconds, up to 5 stacks. The Double Barrel reloads constantly because it holds two shells. Every reload is a damage ramp. You're not reloading — you're winding up a catapult.
+**Talent: Steady Reload.** Reloading grants +18% Weapon Damage for 5 seconds, up to 5 stacks. The Double Barrel reloads constantly because it holds two shells. Every reload is a damage ramp. You're not reloading , you're winding up a catapult.
 
 **Talent 2: Thick Skin.** Bonus survivability to offset the glass-cannon stat line. You're standing at shotgun range with zero Toughness investment. Every little bit helps keep you vertical long enough to pull the trigger one more time.
 
-**Secondary — FAMAS (T2 AR)**
+**Secondary , FAMAS (T2 AR)**
 
 The cleanup weapon. When the Double Barrel deletes everything in the immediate vicinity and a few stragglers are limping away at 10% HP, you don't reload the shotgun for them. You swap to the FAMAS and spray until the room is quiet. It's the broom after the wrecking ball.
 
@@ -66,14 +66,14 @@ The cleanup weapon. When the Double Barrel deletes everything in the immediate v
 
 | Slot | Set | Talent | Core | Bonus 1 | Bonus 2 |
 |---|---|---|---|---|---|
-| Mask | Phalanx Attack | — | Firepower | Weapon Crit Chance | Headshot Damage |
-| Gloves | Phalanx Attack | — | Firepower | Weapon Crit Damage | Weapon Crit Chance |
-| Holster | Phalanx Attack | — | Firepower | Weapon Crit Chance | Weapon Damage |
-| Kneepads | Phalanx Attack | — | Firepower | Multi-Shot | Weapon Crit Damage |
+| Mask | Phalanx Attack | , | Firepower | Weapon Crit Chance | Headshot Damage |
+| Gloves | Phalanx Attack | , | Firepower | Weapon Crit Damage | Weapon Crit Chance |
+| Holster | Phalanx Attack | , | Firepower | Weapon Crit Chance | Weapon Damage |
+| Kneepads | Phalanx Attack | , | Firepower | Multi-Shot | Weapon Crit Damage |
 | Chest | Gunny Johnny | **Duality** | Firepower | Weapon Damage | Weapon Crit Damage |
 | Backpack | Gunny Johnny | **Street Fighter** | Firepower | Weapon Crit Damage | Multi-Shot |
 
-- **Primary:** Double Barrel Shotgun (T2) — Steady Reload + Thick Skin
+- **Primary:** Double Barrel Shotgun (T2) , Steady Reload + Thick Skin
 - **Secondary:** FAMAS (T2 AR)
 - **OS Protocol:** Explosive Round (Firepower, High-End)
 - **Skills:** Scanning Pulse (Optimal Awareness 3pc) + Commando Smart Cover (Armored Train 2pc)
@@ -88,21 +88,21 @@ The cleanup weapon. When the Double Barrel deletes everything in the immediate v
 
 **Chest & Backpack Justification**
 
-**Duality** on the chest doubles down on the aggressive playstyle — rewarding you for staying in the fight and capitalizing on the burst window. The Gunny Johnny 2pc brand bonus stacks with your Firepower core, and Duality synergizes with the "all-in on one trigger pull" philosophy. You're not playing safe. You're playing fast.
+**Duality** on the chest doubles down on the aggressive playstyle , rewarding you for staying in the fight and capitalizing on the burst window. The Gunny Johnny 2pc brand bonus stacks with your Firepower core, and Duality synergizes with the "all-in on one trigger pull" philosophy. You're not playing safe. You're playing fast.
 
-**Street Fighter** on the backpack is the close-range amplifier. Since you're already standing at ≤15m to fire the shotgun, Street Fighter's bonus activates naturally. The Multi-Shot roll on the backpack stacks with Phalanx 4pc, and the talent reward for close-range combat means you're being paid for doing what you were already going to do — stand uncomfortably close to dangerous things.
+**Street Fighter** on the backpack is the close-range amplifier. Since you're already standing at ≤15m to fire the shotgun, Street Fighter's bonus activates naturally. The Multi-Shot roll on the backpack stacks with Phalanx 4pc, and the talent reward for close-range combat means you're being paid for doing what you were already going to do , stand uncomfortably close to dangerous things.
 
 ## Skill Loadout
 
-**Scanning Pulse — Optimal Awareness (3pc)**
+**Scanning Pulse , Optimal Awareness (3pc)**
 
 The Scanning Pulse is your pre-engagement opener. It applies **+5% Vulnerability** to every pulsed target and grants you **+25% Weapon Damage** while active. The Commando subspec layers **+8% Crit Chance per pulsed target within 70m** on top. Optimal Awareness 3pc extends the Pulse duration and tightens the stat window, ensuring you get maximum uptime during your burst window.
 
-**Commando Smart Cover — Armored Train (2pc)**
+**Commando Smart Cover , Armored Train (2pc)**
 
-Your only survival mechanic. Smart Cover provides a Damage Reduction layer that keeps you alive at shotgun range. Armored Train 2pc adds extra Toughness while in cover. Without Smart Cover active, you are a tissue paper strongman — impressive on the way in, confetti on the way out. Drop it behind you before engaging and don't leave it.
+Your only survival mechanic. Smart Cover provides a Damage Reduction layer that keeps you alive at shotgun range. Armored Train 2pc adds extra Toughness while in cover. Without Smart Cover active, you are a tissue paper strongman , impressive on the way in, confetti on the way out. Drop it behind you before engaging and don't leave it.
 
-**Signature — Tactical Link**
+**Signature , Tactical Link**
 
 The kill button's kill button. +20% Crit Chance and a free target lock for ~22 seconds. Pop this before your first aimed shotgun crit and watch every pellet trigger Explosive Round detonations. This is your "everything dies now" window. Use it on elite packs and bosses. Do not waste it on red-bar trash.
 
@@ -158,7 +158,7 @@ Pulse debuffs targets → you close to ≤15m → Smart Cover provides DR → ai
 
 **Explosive Round > Dominating Presence** for this build. Dominating Presence gives +5% Weapon Multi-Shot Chance per enemy within 20m (cap +25%), which stacks additively with Phalanx 4pc's +12% for a total of +37% Multi-Shot. That's nice.
 
-Explosive Round gives a **2,000% Firepower AOE on every aimed crit**. The Double Barrel fires two shells per pull, each of which can crit independently, each of which can proc Multi-Shot for additional shells, and *each of those* can crit and trigger another detonation. You're not comparing +25% Multi-Shot to an AOE nuke — you're comparing a nice bonus to a chain reaction.
+Explosive Round gives a **2,000% Firepower AOE on every aimed crit**. The Double Barrel fires two shells per pull, each of which can crit independently, each of which can proc Multi-Shot for additional shells, and *each of those* can crit and trigger another detonation. You're not comparing +25% Multi-Shot to an AOE nuke , you're comparing a nice bonus to a chain reaction.
 
 One is a percentage increase. The other is a physics engine stress test. Run Explosive Round.
 
@@ -184,19 +184,19 @@ One is a percentage increase. The other is a physics engine stress test. Run Exp
 
 | Item | Where to Look |
 |---|---|
-| Phalanx Attack 4pc | T0+ gear drops — available from first content, farmable everywhere |
-| Gunny Johnny 2pc (Chest + Backpack) | T1+ brand drops — world events, mission rewards |
-| Double Barrel Shotgun (T2) | T2 Shotgun drops — world events, elite missions, DZ |
-| FAMAS (T2 AR) | T2 AR drops — world events, mission completions |
-| Explosive Round OS | HE Firepower OS — high-difficulty mission drops |
+| Phalanx Attack 4pc | T0+ gear drops , available from first content, farmable everywhere |
+| Gunny Johnny 2pc (Chest + Backpack) | T1+ brand drops , world events, mission rewards |
+| Double Barrel Shotgun (T2) | T2 Shotgun drops , world events, elite missions, DZ |
+| FAMAS (T2 AR) | T2 AR drops , world events, mission completions |
+| Explosive Round OS | HE Firepower OS , high-difficulty mission drops |
 | Duality chest talent | Recalibrate any Gunny Johnny chest |
 | Street Fighter backpack talent | Recalibrate any Gunny Johnny backpack |
-| Optimal Awareness skill mods | Vanguard skill mod drops — skill mod caches |
-| Armored Train skill mods | Vanguard skill mod drops — skill mod caches |
+| Optimal Awareness skill mods | Vanguard skill mod drops , skill mod caches |
+| Armored Train skill mods | Vanguard skill mod drops , skill mod caches |
 
-## TL;DR — Five Things
+## TL;DR - Five Things
 
-1. **The Double Barrel fires two shells per pull** — each one independently rolls for crit and Multi-Shot. It's not a gun, it's a slot machine that only pays out in violence.
+1. **The Double Barrel fires two shells per pull** , each one independently rolls for crit and Multi-Shot. Basically a slot machine that only pays out in violence.
 2. **Explosive Round OS detonates a 5m AOE on every aimed crit** for 2,000% Firepower damage. Multiple crits per pull = multiple simultaneous war crimes.
 3. **Phalanx Attack 4pc is the only set** that gives Mag Size, Rate of Fire, AND Multi-Shot in one package. It was made for this.
 4. **Tactical Link's +20% Crit Chance window** is where the build goes from "really good" to "someone clip that."

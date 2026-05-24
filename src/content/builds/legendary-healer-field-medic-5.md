@@ -1,5 +1,5 @@
----
-title: "Babysitting Idiots 101 — Field Medic PvE Dedicated Healer Build Guide (Support)"
+﻿---
+title: "Babysitting Idiots 101 - Field Medic PvE Dedicated Healer Build Guide (Support)"
 specialization: Field Medic
 playstyle: Support
 pve: true
@@ -48,44 +48,44 @@ Instead, it pushes heal density so stupidly high that allies never spend time at
 
 Three independent team-facing engines run simultaneously, every fight, with zero swap penalty:
 
-**Engine 1 — Heal Output (The Source)**
+**Engine 1 , Heal Output (The Source)**
 - **Medical Accuracy Weapon Talent:** +18% Healing Intensity on headshot.
 - **Captain Cow 4pc:** +20% Healing Intensity.
 - **Medical Excellence OS:** +20% Healing Intensity.
 
-**Engine 2 — Team Heal Multiplier (The Receiving Side)**
+**Engine 2 , Team Heal Multiplier (The Receiving Side)**
 - **Slaughter Healing Weapon Talent:** +7% Incoming Healing per stack to all allies within 40m. 3 stacks = +21% team Incoming Healing.
 - **Effective Triage (Support Station mod):** +40% Incoming Healing to any ally below 50% HP in the 9.27m station radius.
 - **Medical Excellence OS:** +5% Max HP team-wide pop on every cast (above 50%), and a +12.5% Max HP burst when below 50%.
 
-**Engine 3 — Skill Duration (The Uptime Multiplier)**
+**Engine 3 , Skill Duration (The Uptime Multiplier)**
 - **Deep Focus Chest:** +28% Skill Duration, but also inflicts a -10% Skill Radius penalty (which you easily offset with mods).
 - **Brainstorm Backpack:** +15% Skill Duration, plus an additional +15% when within 20 meters of an ally (+30% total).
 - **Captain Cow 3pc:** +14.4% Skill Duration.
 
 ## Weapons
 
-**Primary — T2 SMG (any)**
+**Primary , T2 SMG (any)**
 
-**Talent: Medical Accuracy.** Headshots grant +18% Healing Intensity. You're not here to kill things — you're here to click heads and fuel your healing engine. The SMG's high rate of fire gives you more headshot opportunities per magazine, which means more Medical Accuracy procs per engagement. The specific SMG doesn't matter. The talent does. Pick whatever feels good and has stable recoil, because you're going to be aiming at heads while simultaneously babysitting four health bars.
+**Talent: Medical Accuracy.** Headshots grant +18% Healing Intensity. You're not here to kill things , you're here to click heads and fuel your healing engine. The SMG's high rate of fire gives you more headshot opportunities per magazine, which means more Medical Accuracy procs per engagement. The specific SMG doesn't matter. The talent does. Pick whatever feels good and has stable recoil, because you're going to be aiming at heads while simultaneously babysitting four health bars.
 
-**Secondary — T2 AR (any)**
+**Secondary , T2 AR (any)**
 
-**Talent: Slaughter Healing.** Every hit stacks +7% Incoming Healing on all allies within 40m, up to 3 stacks (+21%). The AR is your "buff the team" weapon — swap to it, dump a few rounds into the nearest enemy, and the entire team receives significantly more healing from every source for the duration. Pair this with the Support Station's Effective Triage mod and allies below 50% HP are receiving healing that borders on algorithmic abuse.
+**Talent: Slaughter Healing.** Every hit stacks +7% Incoming Healing on all allies within 40m, up to 3 stacks (+21%). The AR is your "buff the team" weapon , swap to it, dump a few rounds into the nearest enemy, and the entire team receives significantly more healing from every source for the duration. Pair this with the Support Station's Effective Triage mod and allies below 50% HP are receiving healing that borders on algorithmic abuse.
 
 ## The Build
 
 | Slot | Set | Talent | Core | Bonus 1 | Bonus 2 |
 |---|---|---|---|---|---|
-| Mask | Healing Elites (T2) or Captain Cow | — | Toughness | Skill Intensity | Skill Duration |
+| Mask | Healing Elites (T2) or Captain Cow | , | Toughness | Skill Intensity | Skill Duration |
 | Chest | Any T2 chest | **Deep Focus** | Toughness | Skill Intensity | Skill Duration |
 | Backpack | Any T2 bag | **Brainstorm** | Toughness | Skill Intensity | Skill Duration |
-| Gloves | Healing Elites or Captain Cow | — | Toughness | Skill Intensity | Skill Cooldown |
-| Holster | Healing Elites or Captain Cow | — | Toughness | Skill Intensity | Skill Duration |
-| Kneepads | Healing Elites or Captain Cow | — | Toughness | Skill Intensity | Skill Duration |
+| Gloves | Healing Elites or Captain Cow | , | Toughness | Skill Intensity | Skill Cooldown |
+| Holster | Healing Elites or Captain Cow | , | Toughness | Skill Intensity | Skill Duration |
+| Kneepads | Healing Elites or Captain Cow | , | Toughness | Skill Intensity | Skill Duration |
 
-- **Primary:** Any T2 SMG — Medical Accuracy
-- **Secondary:** Any T2 AR — Slaughter Healing
+- **Primary:** Any T2 SMG , Medical Accuracy
+- **Secondary:** Any T2 AR , Slaughter Healing
 - **OS Protocol:** Medical Excellence (Toughness, Superior)
 - **Skills:** Support Station + Effective Triage mod · Healing Hive + Mutual Support mod
 - **Signature:** Healing Swarm
@@ -99,23 +99,23 @@ Three independent team-facing engines run simultaneously, every fight, with zero
 
 **Chest & Backpack Justification**
 
-**Deep Focus** is the duration king: +28% Skill Duration at the cost of -10% Skill Radius. On a healer whose primary skill is a fixed-point Support Station, the radius penalty is trivial — your teammates should be standing in the circle anyway, and if they're not, that's a them problem. The duration bonus pushes your Support Station past 77 seconds of uptime, meaning you deploy it once per engagement and spend the rest of the fight shooting heads for heal buffs.
+**Deep Focus** is the duration king: +28% Skill Duration at the cost of -10% Skill Radius. On a healer whose primary skill is a fixed-point Support Station, the radius penalty is trivial , your teammates should be standing in the circle anyway, and if they're not, that's a them problem. The duration bonus pushes your Support Station past 77 seconds of uptime, meaning you deploy it once per engagement and spend the rest of the fight shooting heads for heal buffs.
 
 **Brainstorm** stacks another +15% Skill Duration baseline, scaling to +30% when you're within 20 meters of an ally. You're a healer. You are ALWAYS within 20 meters of an ally. If you're not, you're doing it wrong. Combined with Deep Focus and Captain Cow 3pc, this gives you an additive ~72.4% Skill Duration that turns every heal deployment into a semi-permanent fixture.
 
 ## Skill Loadout
 
-**Support Station — Effective Triage (3pc)**
+**Support Station , Effective Triage (3pc)**
 
-The Support Station is your primary heal anchor. Drop it at the team's chokepoint. It heals every ally inside its 9.27m radius continuously. The Effective Triage mod set is the critical piece: **+40% Incoming Healing to any ally below 50% HP** inside the station radius. This means your already-massive heals become 40% larger on the people who need them most. Combined with Slaughter Healing's +21% team Incoming Healing, an ally at low HP is receiving heals that are effectively 61% larger than baseline. Their health bar doesn't dip — it bounces.
+The Support Station is your primary heal anchor. Drop it at the team's chokepoint. It heals every ally inside its 9.27m radius continuously. The Effective Triage mod set is the critical piece: **+40% Incoming Healing to any ally below 50% HP** inside the station radius. This means your already-massive heals become 40% larger on the people who need them most. Combined with Slaughter Healing's +21% team Incoming Healing, an ally at low HP is receiving heals that are effectively 61% larger than baseline. Their health bar doesn't dip , it bounces.
 
-**Healing Hive — Mutual Support (3pc)**
+**Healing Hive , Mutual Support (3pc)**
 
-The Healing Hive is your mobile healing complement. Place it between you and the team for coverage overlap with the Support Station. Mutual Support mods give the Hive charges that automatically deploy to allies who take damage, providing burst healing when the Support Station's tick-based healing can't keep up with spike damage. Between the Station and the Hive, you have two independent healing sources covering different damage profiles — sustained and burst.
+The Healing Hive is your mobile healing complement. Place it between you and the team for coverage overlap with the Support Station. Mutual Support mods give the Hive charges that automatically deploy to allies who take damage, providing burst healing when the Support Station's tick-based healing can't keep up with spike damage. Between the Station and the Hive, you have two independent healing sources covering different damage profiles , sustained and burst.
 
 **Healing Swarm (Signature)**
 
-Your emergency "everyone screwed up" button. Pop it when multiple teammates are downed or when a boss mechanic punches through your heal density. The Swarm revives and heals in an AOE. In Legendary, this is the difference between a wipe and a recovery. Save it for actual emergencies — your passive healing should handle everything else.
+Your emergency "everyone screwed up" button. Pop it when multiple teammates are downed or when a boss mechanic punches through your heal density. The Swarm revives and heals in an AOE. In Legendary, this is the difference between a wipe and a recovery. Save it for actual emergencies , your passive healing should handle everything else.
 
 ## How It Works (The Math)
 
@@ -158,7 +158,7 @@ Deploy Support Station → Effective Triage activates on low-HP allies (+40% Inc
 
 ## OS Justification
 
-**Medical Excellence > all other Field Medic OS options** for this build. Medical Excellence provides three things simultaneously: +20% Healing Intensity (passive), +5% Max HP team pulse on skill cast (above 50%), and +12.5% Max HP burst when an ally is below 50%. No other OS provides both a passive healing multiplier AND a reactive burst heal. The +20% Healing Intensity alone would justify the slot — the burst heals are gravy. Other OS options might offer personal survivability or damage, but you're a healer. Your survivability IS your team's health bars. If they're full, nobody is shooting at you because the enemies are shooting at the four idiots standing in your healing circle.
+**Medical Excellence > all other Field Medic OS options** for this build. Medical Excellence provides three things simultaneously: +20% Healing Intensity (passive), +5% Max HP team pulse on skill cast (above 50%), and +12.5% Max HP burst when an ally is below 50%. No other OS provides both a passive healing multiplier AND a reactive burst heal. The +20% Healing Intensity alone would justify the slot , the burst heals are gravy. Other OS options might offer personal survivability or damage, but you're a healer. Your survivability IS your team's health bars. If they're full, nobody is shooting at you because the enemies are shooting at the four idiots standing in your healing circle.
 
 ## Gear Ladder
 
@@ -174,24 +174,24 @@ Deploy Support Station → Effective Triage activates on low-HP allies (+40% Inc
 2. **Place the Healing Hive** between you and the team. This catches the people who wandered out of the Support Station radius because they have the spatial awareness of a goldfish.
 3. **Click heads with the SMG** to stack Medical Accuracy (+18% Healing Intensity per headshot). Your heals are now significantly larger.
 4. **Swap to AR and keep firing** to build Slaughter Healing stacks (+7% per stack, +21% team Incoming Healing at cap). The entire team is now receiving buffed heals from every source.
-5. **Pop the Medical Excellence OS on cast** for the +5% team Max HP burst when someone takes a big hit. Below 50% HP, this becomes +12.5% Max HP — the panic button that isn't.
+5. **Pop the Medical Excellence OS on cast** for the +5% team Max HP burst when someone takes a big hit. Below 50% HP, this becomes +12.5% Max HP , the panic button that isn't.
 6. **Pop Healing Swarm signature** for emergencies, or when you need to revive multiple downed teammates who inevitably walked out of the glowing circle. Resist the urge to type "I told you so" in chat. Actually, don't resist. They deserve it.
 
 ## Loot Quick-Reference
 
 | Item | Where to Look |
 |---|---|
-| Healing Elites 4pc (T2) | T2 gear drops — world events, elite missions, DZ |
-| Captain Cow 4pc (bridge) | T0+ gear drops — available from early content |
-| T2 SMG (any with Medical Accuracy) | T2 SMG drops — world events, mission completions |
-| T2 AR (any with Slaughter Healing) | T2 AR drops — world events, mission completions |
-| Medical Excellence OS | Superior Toughness OS — high-difficulty mission drops |
+| Healing Elites 4pc (T2) | T2 gear drops , world events, elite missions, DZ |
+| Captain Cow 4pc (bridge) | T0+ gear drops , available from early content |
+| T2 SMG (any with Medical Accuracy) | T2 SMG drops , world events, mission completions |
+| T2 AR (any with Slaughter Healing) | T2 AR drops , world events, mission completions |
+| Medical Excellence OS | Superior Toughness OS , high-difficulty mission drops |
 | Deep Focus chest talent | Recalibrate any T2 chest to Deep Focus |
 | Brainstorm backpack talent | Recalibrate any T2 backpack to Brainstorm |
-| Effective Triage skill mods | Field Medic mod drops — skill mod caches |
-| Mutual Support skill mods | Field Medic mod drops — skill mod caches |
+| Effective Triage skill mods | Field Medic mod drops , skill mod caches |
+| Mutual Support skill mods | Field Medic mod drops , skill mod caches |
 
-## TL;DR — Five Things
+## TL;DR - Five Things
 
 1. **Your teammates' health bars will not move.** +58% Healing Intensity baseline plus +61% Incoming Healing on low-HP allies means you out-heal the game's damage design.
 2. **Support Station lasts 77+ seconds** thanks to ~72.4% additive Skill Duration. Deploy once, babysit forever.

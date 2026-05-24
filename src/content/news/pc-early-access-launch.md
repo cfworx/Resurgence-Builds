@@ -1,5 +1,5 @@
----
-title: "Resurgence Hits PC — Free, Cross-Play, Cross-Save"
+﻿---
+title: "Resurgence Hits PC - Free, Cross-Play, Cross-Save"
 publishDate: "2026-04-28"
 author: "RapidF5"
 description: "The Division Resurgence shadow-drops on PC via Early Access! Find out all the details on cross-play, 60 FPS support, and controller setups."
@@ -18,14 +18,14 @@ faqs:
     answer: "It's decent but not perfect. The UI still has some mobile-era remnants, like button sizes optimized for touchscreens and some menu navigation that feels clunky with a mouse. Performance is solid on mid-range hardware. It runs better than Destiny 2 on the same specs, which is both a compliment and a low bar. Ubisoft is iterating on the PC experience with each patch."
 ---
 
-The Division Resurgence is now available in Early Access on PC via **Ubisoft Connect**, just under a month after its March 31 mobile launch. The PC version is free-to-play, with full **cross-play** and **cross-progression** across iOS, Android, and PC — you can switch devices and pick up where you left off.
+The Division Resurgence is now available in Early Access on PC via **Ubisoft Connect**, just under a month after its March 31 mobile launch. The PC version is free-to-play, with full **cross-play** and **cross-progression** across iOS, Android, and PC , you can switch devices and pick up where you left off.
 
 ## Key Details
 - **Download client:** Ubisoft Connect (not Steam at this stage)
 - **File size:** approximately 17 GB
-- **Frame rate:** locked at 60 FPS in Early Access, but without the visual fidelity caps of the mobile version — Very High graphics presets are supported
+- **Frame rate:** locked at 60 FPS in Early Access, but without the visual fidelity caps of the mobile version , Very High graphics presets are supported
 - **Input:** full mouse-and-keyboard support and native controller support; the on-screen UI can be toggled between "Keyboard/Mouse Exclusive UI" and "Controller UI" in `Generic Settings → External Device UI`
-- **PvP matchmaking** is cross-platform — a Resurgence team has acknowledged the fairness question but has not announced platform-segregated PvP
+- **PvP matchmaking** is cross-platform , a Resurgence team has acknowledged the fairness question but has not announced platform-segregated PvP
 - **Account linking:** Players signed in as a mobile guest should link their Ubisoft Connect account before playing on PC to preserve progress
 
 ## Why This Matters

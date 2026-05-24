@@ -1,4 +1,4 @@
----
+﻿---
 title: "Best Starter Builds in The Division Resurgence"
 category: Beginner
 lastUpdated: 2026-05-23T06:00:00Z
@@ -37,7 +37,7 @@ If your gear sucks, the easiest way to get carried through hard content is to pl
 👉 **[Read the Legendary Healer Build Guide](/builds/legendary-healer-field-medic-5/)**
 
 ### 3. The Geneva Suggestion (AOE Chem Medic)
-Another excellent variant of the Medic that focuses entirely on area denial. It's incredibly forgiving because you don't actually need to shoot your guns—just throw acid at spawn doors.
+Another excellent variant of the Medic that focuses entirely on area denial. It's incredibly forgiving because you don't actually need to shoot your guns,just throw acid at spawn doors.
 👉 **[Read the Geneva Suggestion Build Guide](/builds/geneva-suggestion-field-medic-12/)**
 
 ### Next Steps

@@ -1,5 +1,5 @@
----
-title: "The Hate Mail Generator — Vanguard Dark Zone PvP SMG Build Guide (DPS)"
+﻿---
+title: "The Hate Mail Generator - Vanguard Dark Zone PvP SMG Build Guide (DPS)"
 specialization: Vanguard
 playstyle: DPS
 pve: false
@@ -37,22 +37,22 @@ You are bringing wall-hacks and a mathematically broken gun to a supposedly fair
 
 - **Specialization:** Vanguard
 - **Archetype:** High-mobility DZ ganker with Pulse wallhacks and exotic SMG ramp
-- **Difficulty Ceiling:** Medium floor, high ceiling. The weapon-swap rotation is where average players fumble — getting Backup Battery procs on cooldown while managing Breathe Free stacks separates "died at extraction" from "stole everyone's extraction."
+- **Difficulty Ceiling:** Medium floor, high ceiling. The weapon-swap rotation is where average players fumble , getting Backup Battery procs on cooldown while managing Breathe Free stacks separates "died at extraction" from "stole everyone's extraction."
 - **Core Loop:** Pulse for wallhacks → pop Signature for Assault Charge → swap to Lady Death for Backup Battery → sprint to build Breathe Free stacks → open fire consuming stacks for +15% Weapon Damage per shot → Injured Concealment ramps damage as you take hits → swap to Type 81 for Backup Protection heal → swap back → repeat until the server population files a group therapy session.
 
 ## Why This Is A Geneva Convention Violation
 
 As a Vanguard, Pulse is information warfare. It's an 8-target lock that lets you see through walls, and the damage multipliers stack on every shot. In the Dark Zone, where engagements are chaotic and third-partying is a lifestyle, the side that sees first wins. You see everything.
 
-Lady Death is the *only* exotic in the game that carries **three talents simultaneously** — a moving stack damage buff, a swap-buff, and a healing layer. Combined with the Type 81's Backup Protection (+20% Max HP on swap) and Backup Magazine (auto-reload), the simple act of *swapping your weapon* becomes a survival kit you proc every 8 seconds.
+Lady Death is the *only* exotic in the game that carries **three talents simultaneously** , a moving stack damage buff, a swap-buff, and a healing layer. Combined with the Type 81's Backup Protection (+20% Max HP on swap) and Backup Magazine (auto-reload), the simple act of *swapping your weapon* becomes a survival kit you proc every 8 seconds.
 
 Best part? Lady Death is obtainable for 17,500 DZ credits. You don't even need real money to become a villain.
 
 ## Weapons
 
-**Primary — Lady Death (Exotic SMG)**
+**Primary , Lady Death (Exotic SMG)**
 
-**Talent: Breathe Free (fixed).** While moving, you accumulate 4 stacks per second (8 if sprinting), up to 40 max. Each shot consumes a stack to grant +15% Weapon Damage. This is the core damage ramp — sprint toward your target, arrive with 40 stacks, and your first 40 bullets each carry a +15% Weapon Damage bonus. In the DZ, where engagements start with a sprint and end with a funeral, this is always maxed before the fight begins.
+**Talent: Breathe Free (fixed).** While moving, you accumulate 4 stacks per second (8 if sprinting), up to 40 max. Each shot consumes a stack to grant +15% Weapon Damage. This is the core damage ramp , sprint toward your target, arrive with 40 stacks, and your first 40 bullets each carry a +15% Weapon Damage bonus. In the DZ, where engagements start with a sprint and end with a funeral, this is always maxed before the fight begins.
 
 **Talent: Backup Battery.** Swapping to Lady Death grants +22.50% Engineering for 8s (8s cooldown). This buffs your Pulse range and Pulse damage passively. Every weapon swap is a free Pulse steroid. The cooldown aligns perfectly with the Type 81 swap rotation.
 
@@ -60,9 +60,9 @@ Best part? Lady Death is obtainable for 17,500 DZ credits. You don't even need r
 
 Deploying a skill consumes 10 stacks for +15% Skill Damage. Kills grant +10% Movement Speed for 10s.
 
-**Secondary — Type 81 (T2 AR)**
+**Secondary , Type 81 (T2 AR)**
 
-**Talent: Backup Protection.** Swapping to Type 81 grants +20% Max HP for the swap duration. This is your mid-fight survival button — swap to the Type 81 when Lady Death's stacks are spent, gain the HP boost, let Backup Magazine auto-reload Lady Death, then swap back. The weapon swap cycle IS your healing rotation.
+**Talent: Backup Protection.** Swapping to Type 81 grants +20% Max HP for the swap duration. This is your mid-fight survival button , swap to the Type 81 when Lady Death's stacks are spent, gain the HP boost, let Backup Magazine auto-reload Lady Death, then swap back. The weapon swap cycle IS your healing rotation.
 
 **Talent: Backup Magazine.** Auto-reloads your holstered weapon over time. Lady Death reloads herself while you spray the Type 81. You never touch a reload button. You never stop shooting. Your opponents never stop dying.
 
@@ -70,15 +70,15 @@ Deploying a skill consumes 10 stacks for +15% Skill Damage. Kills grant +10% Mov
 
 | Slot | Set | Talent | Core | Bonus 1 | Bonus 2 |
 |---|---|---|---|---|---|
-| Mask | Fury Strike | — | Firepower | Weapon Crit Chance | Skill Multi-Shot |
+| Mask | Fury Strike | , | Firepower | Weapon Crit Chance | Skill Multi-Shot |
 | Chest | Fearless Warrior | **Injured Concealment** | Firepower | Skill Multi-Shot | Weapon Crit Chance |
 | Backpack | Fearless Warrior | **Emergency Measures** | Toughness | Weapon Damage | Armor |
-| Holster | Fury Strike | — | Firepower | Skill Crit Damage | Weapon Crit Damage |
-| Gloves | Fury Strike | — | Firepower | Weapon Crit Chance | Weapon Crit Damage |
-| Kneepads | Fury Strike | — | Firepower | Weapon Crit Chance | Weapon Crit Damage |
+| Holster | Fury Strike | , | Firepower | Skill Crit Damage | Weapon Crit Damage |
+| Gloves | Fury Strike | , | Firepower | Weapon Crit Chance | Weapon Crit Damage |
+| Kneepads | Fury Strike | , | Firepower | Weapon Crit Chance | Weapon Crit Damage |
 
-- **Primary:** Lady Death (exotic SMG) — Breathe Free (fixed) + Backup Battery + Sentinel Aura (reroll the random slots until both land, then go ruin lives)
-- **Secondary:** Type 81 — Backup Protection + Backup Magazine
+- **Primary:** Lady Death (exotic SMG) , Breathe Free (fixed) + Backup Battery + Sentinel Aura (reroll the random slots until both land, then go ruin lives)
+- **Secondary:** Type 81 , Backup Protection + Backup Magazine
 - **OS Protocol:** Assault Charge (Firepower)
 - **Skills:** Scanning Pulse (literally mandatory)
 - **Signature:** Tactical Link
@@ -98,7 +98,7 @@ Deploying a skill consumes 10 stacks for +15% Skill Damage. Kills grant +10% Mov
 
 **Chest & Backpack Justification**
 
-**Injured Concealment** is inverted scaling at its finest. Taking hits grants +1.80% Damage for 10s, stacking to 10 (+18%). In a PvP fight where both players are dumping rounds into each other, you are *rewarded for getting shot*. The longer the fight goes, the harder you hit. Most PvP builds front-load burst — this one back-loads sustained dominance. By the time your opponent realizes they're losing the trade, you're at 8+ stacks and the TTK math has already left the building.
+**Injured Concealment** is inverted scaling at its finest. Taking hits grants +1.80% Damage for 10s, stacking to 10 (+18%). In a PvP fight where both players are dumping rounds into each other, you are *rewarded for getting shot*. The longer the fight goes, the harder you hit. Most PvP builds front-load burst , this one back-loads sustained dominance. By the time your opponent realizes they're losing the trade, you're at 8+ stacks and the TTK math has already left the building.
 
 **Emergency Measures** auto-procs at <20% HP and restores 50% max HP on a 30s cooldown. It's an idiot-proof panic button. Combined with Sentinel Aura's passive heal and Backup Protection's +20% Max HP on swap, you have three separate "I should be dead" escape hatches. In the DZ, where fights are messy, chaotic, and frequently interrupted by third parties, these layers are the difference between extracting your loot and watching someone else extract your loot.
 
@@ -108,7 +108,7 @@ Deploying a skill consumes 10 stacks for +15% Skill Damage. Kills grant +10% Mov
 
 The entire reason you're running Vanguard. Scanning Pulse marks up to 8 targets through walls, granting +25% Weapon Damage (self-buff) and debuffing every pulsed target with +5% Vulnerable Damage taken. Vanguard 3pc adds up to +8% Crit Chance per pulsed target within 70m. In the Dark Zone, where every corner could hide a rogue agent, this is the difference between ambushing and being ambushed. Use it before every engagement, every extraction approach, and every time you hear footsteps. Paranoia is a survival skill.
 
-**Signature — Tactical Link**
+**Signature , Tactical Link**
 
 Your "delete this person" button. Pop it when engaging a geared player or when a squad pushes you. The lock-on aim assist and crit chance window guarantee your Lady Death stacks connect. More importantly, deploying Tactical Link triggers Assault Charge's +30% Firepower and +20% RoF for 20 seconds. Time it with a full 40-stack Breathe Free ramp and the target doesn't get to play the game anymore.
 
@@ -146,7 +146,7 @@ Each consumed stack grants +15% Weapon Damage per shot. Your first 40 rounds fro
 | 0-6s | Fire Lady Death | Consume Breathe Free stacks, build Injured Concealment |
 | 6s | Swap to Type 81 | Backup Protection: +20% Max HP; Backup Magazine auto-reloads Lady Death |
 | 6-8s | Fire Type 81 | Maintain DPS while Lady Death reloads in holster |
-| 8s | Swap back to Lady Death | Backup Battery off cooldown — cycle repeats |
+| 8s | Swap back to Lady Death | Backup Battery off cooldown , cycle repeats |
 
 **Stat Snapshot (Full Buffs Active)**
 
@@ -163,19 +163,19 @@ Pulse marks targets through walls → pop Tactical Link → Assault Charge gives
 
 ## OS Justification
 
-**Assault Charge > Cover Shooter** for DZ PvP. Cover Shooter requires you to stay behind cover — in the Dark Zone, fights are mobile, chaotic, and rarely happen near convenient waist-high walls. Assault Charge ties to your Signature Ability deploy: +30% Firepower and +20% Rate of Fire for 20 seconds. That's your opening burst window, timed with Breathe Free's full 40-stack ramp. The combination of Lady Death's per-shot damage bonus + Assault Charge's Firepower + the RoF buff makes the first 3-4 seconds of the engagement almost unsurvivable for the opponent. Cover Shooter can't compete with that in a mobile combat environment.
+**Assault Charge > Cover Shooter** for DZ PvP. Cover Shooter requires you to stay behind cover , in the Dark Zone, fights are mobile, chaotic, and rarely happen near convenient waist-high walls. Assault Charge ties to your Signature Ability deploy: +30% Firepower and +20% Rate of Fire for 20 seconds. That's your opening burst window, timed with Breathe Free's full 40-stack ramp. The combination of Lady Death's per-shot damage bonus + Assault Charge's Firepower + the RoF buff makes the first 3-4 seconds of the engagement almost unsurvivable for the opponent. Cover Shooter can't compete with that in a mobile combat environment.
 
 ## Gear Ladder
 
 | Tier | Set | Notes |
 |---|---|---|
-| T0 Bridge | Fury Strike 4pc + any 2pc | Fury Strike drops at T0 — get the WCHD, WCHC, and RoF bonuses online while farming DZ credits |
-| T1 Step | Fury Strike 4pc + Fearless Warrior 2pc | FW 2pc adds +6% DR — your first real survivability layer for DZ brawls |
+| T0 Bridge | Fury Strike 4pc + any 2pc | Fury Strike drops at T0 , get the WCHD, WCHC, and RoF bonuses online while farming DZ credits |
+| T1 Step | Fury Strike 4pc + Fearless Warrior 2pc | FW 2pc adds +6% DR , your first real survivability layer for DZ brawls |
 | T2 Destination | Fury Strike T2 4pc + Fearless Warrior T2 2pc + Lady Death exotic | Max rolls on all pieces, Lady Death equipped with Backup Battery + Sentinel Aura. This is the 300k DPS, 106k HP version that generates hate mail. |
 
 ## Combat Rotation
 
-This build is purpose-built for the [Center-ADS Release](/guides/center-ads-release-cover-peek-guide/) peek — see the full settings checklist if you haven't dialed your settings.
+This build is purpose-built for the [Center-ADS Release](/guides/center-ads-release-cover-peek-guide/) peek , see the full settings checklist if you haven't dialed your settings.
 
 1. **Pre-Pulse before peeking:** Establish your wall-hacks and lock your 8 targets to set up the damage multipliers.
 2. **Deploy your Signature Ability** → Assault Charge procs (+30% Firepower, +20% RoF for 20s).
@@ -189,21 +189,21 @@ This build is purpose-built for the [Center-ADS Release](/guides/center-ads-rele
 
 | Item | Where to Look |
 |---|---|
-| Lady Death (exotic SMG) | DZ Vendor for 17,500 DZ credits — cheapest exotic villain arc in the game |
-| Fury Strike 4pc | T0+ gear drops — world events, mission completions, DZ landmark clears |
-| Fearless Warrior 2pc | T0+ gear drops — available from early content, Conflict reward caches |
-| Type 81 (T2 AR) | T2 AR drops — world events, Dark Zone, mission rewards |
-| Assault Charge OS | HE Firepower OS — high-difficulty mission drops |
+| Lady Death (exotic SMG) | DZ Vendor for 17,500 DZ credits , cheapest exotic villain arc in the game |
+| Fury Strike 4pc | T0+ gear drops , world events, mission completions, DZ landmark clears |
+| Fearless Warrior 2pc | T0+ gear drops , available from early content, Conflict reward caches |
+| Type 81 (T2 AR) | T2 AR drops , world events, Dark Zone, mission rewards |
+| Assault Charge OS | HE Firepower OS , high-difficulty mission drops |
 | Injured Concealment chest talent | Recalibrate any chest to Injured Concealment |
 | Emergency Measures backpack talent | Recalibrate any backpack to Emergency Measures |
-| Scanning Pulse mods | Vanguard mod drops — skill mod caches |
+| Scanning Pulse mods | Vanguard mod drops , skill mod caches |
 
-## TL;DR — Five Things
+## TL;DR - Five Things
 
-1. **Lady Death has three talents simultaneously** — Breathe Free (+15% WD per shot from movement stacks), Backup Battery (+22.50% Engineering on swap), and Sentinel Aura (passive self-heal). No other exotic does this.
-2. **Scanning Pulse is legal wallhacks** — see through walls, mark 8 targets, +25% Weapon Damage, +5% Vulnerable, +8% Crit Chance per target via Vanguard 3pc.
+1. **Lady Death has three talents simultaneously** , Breathe Free (+15% WD per shot from movement stacks), Backup Battery (+22.50% Engineering on swap), and Sentinel Aura (passive self-heal). No other exotic does this.
+2. **Scanning Pulse is legal wallhacks** , see through walls, mark 8 targets, +25% Weapon Damage, +5% Vulnerable, +8% Crit Chance per target via Vanguard 3pc.
 3. **The weapon-swap cycle IS the rotation.** Every 8 seconds you swap weapons and proc Backup Battery, Backup Protection, and auto-reload. You never stop shooting. You never stop healing. You never stop being a problem.
-4. **Injured Concealment rewards you for getting shot** — +18% Damage at 10 stacks. The longer the fight goes, the harder you hit. In the DZ, this is called "winning."
+4. **Injured Concealment rewards you for getting shot** , +18% Damage at 10 stacks. The longer the fight goes, the harder you hit. In the DZ, this is called "winning."
 5. **Lady Death costs 17,500 DZ credits.** You can become the villain everyone hates without spending a single real dollar. Democracy in action.
 
 ## Related Builds

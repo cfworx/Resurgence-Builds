@@ -1,5 +1,5 @@
----
-title: "SHD Manual — How to Stop Sucking at Progression"
+﻿---
+title: "SHD Manual - How to Stop Sucking at Progression"
 category: "General"
 lastUpdated: 2026-05-22
 tags: ["division-resurgence", "shd-manual", "progression-guide", "agent-huntsman", "gear-optimization", "new-player-guide", "tips-and-tricks"]
@@ -7,7 +7,7 @@ description: "Agent Huntsman's definitive four-phase progression manual. Learn h
 author: "RapidF5 (via Agent Huntsman)"
 featuredImage: "/images/division-resurgence-shd-manual-progression-guide.png"
 imageAlt: "Division Resurgence SHD Manual Progression Guide by Agent Huntsman"
-shareTitle: "The SHD Manual — Progression Decoded"
+shareTitle: "The SHD Manual , Progression Decoded"
 shareText: "Stop wasting credits on T0 gear. Agent Huntsman breaks down the four phases of progression and how to actually build your character."
 faqs:
   - question: "What is the SHD Manual in Division Resurgence?"
@@ -22,22 +22,22 @@ faqs:
     answer: "Build your own. The game's recommended gear is based on Power Score, which we've established is about as useful as a chocolate teapot. A recommended loadout will have mismatched stats, conflicting talents, and zero synergy. It's the build equivalent of a suit made from three different suits stapled together. Pick a build guide from this site, farm the specific pieces, and ignore the green arrows of lies."
 ---
 
-# SHD Manual — How to Stop Sucking at Progression
+# SHD Manual - How to Stop Sucking at Progression
 ### Game Mechanics & Knowledge Drops from Agent Huntsman's Guide
 
-> **Source:** [SHD Manual — How Progression ACTUALLY Works | The Division Resurgence](https://www.youtube.com/watch?v=Mt3E4A0l0Zk) by Agent Huntsman.
+> **Source:** [SHD Manual , How Progression ACTUALLY Works | The Division Resurgence](https://www.youtube.com/watch?v=Mt3E4A0l0Zk) by Agent Huntsman.
 
 ---
 
 ## Quick Take
 
-Agent Huntsman's framing of the entire game: The Division Resurgence overwhelms new players because gear, recalibration, classes, farming, mods, stats, crafting, damage types, and optimization all get thrown at you immediately. The whole video is a four-phase progression manual plus a final breakdown of the biggest mistakes — followed by a personal Field Medic build the creator is now running.
+Agent Huntsman's framing of the entire game: The Division Resurgence overwhelms new players because gear, recalibration, classes, farming, mods, stats, crafting, damage types, and optimization all get thrown at you immediately. The whole video is a four-phase progression manual plus a final breakdown of the biggest mistakes , followed by a personal Field Medic build the creator is now running.
 
 ---
 
 ## The Four Progression Phases
 
-### Phase 1 — Early Game: Learn the Systems, Don't Perfect Them
+### Phase 1 - Early Game: Learn the Systems, Don't Perfect Them
 
 Your job in the early game is **not** to build the perfect character. It's to understand the battlefield. Gear gets replaced constantly at low levels, so over-optimizing early is the #1 way to burn resources you'll need later.
 
@@ -49,14 +49,14 @@ Your job in the early game is **not** to build the perfect character. It's to un
   - Reload time
   - Effective range (damage drops the farther you are from the enemy)
 - **Why feel matters later:** weapon comfort affects accuracy, combat consistency, pressure control, proc uptime, and engagement rhythm.
-- **Experiment with classes early.** Try support, frontline, DPS, utility — whatever. This is the cheapest time to test what feels natural. Later, specialization is significantly more important.
+- **Experiment with classes early.** Try support, frontline, DPS, utility , whatever. This is the cheapest time to test what feels natural. Later, specialization is significantly more important.
 - **Study enemy behavior, not just shooting them.** Watch repositioning, rush timing, flanking maneuvers, and grenade tells.
 
-### Phase 2 & 3 — Mid Game & Transition to Endgame
+### Phase 2 & 3 - Mid Game & Transition to Endgame
 
 *(Transition phases involve continuing to replace gear rapidly while starting to identify synergies. Do not commit heavy resources until you reach the endgame tiers, or you'll be broke when it actually matters.)*
 
-### Phase 4 — The Endgame Reality
+### Phase 4 - The Endgame Reality
 
 The endgame shifts entirely away from "bigger number better" to system mastery. 
 
@@ -68,23 +68,23 @@ The endgame shifts entirely away from "bigger number better" to system mastery.
 
 ## Agent Huntsman's Personal Field Medic Build
 
-At the end of the manual, Agent Huntsman breaks down his personal Field Medic setup — aimed not at out-DPSing a Vanguard, but at having enough damage to **solo clear content if needed**, while still being the team's primary healer.
+At the end of the manual, Agent Huntsman breaks down his personal Field Medic setup , aimed not at out-DPSing a Vanguard, but at having enough damage to **solo clear content if needed**, while still being the team's primary healer.
 
 ### Weapons
 
-**AR — P416** *(current primary)*
+**AR , P416** *(current primary)*
 
-- **Weapon Talent:** hitting an enemy under a status effect grants increased damage. Since he plays with a Demolitionist who constantly applies burn/bleed, this damage proc is active nearly all the time — effectively a permanent damage buff.
+- **Weapon Talent:** hitting an enemy under a status effect grants increased damage. Since he plays with a Demolitionist who constantly applies burn/bleed, this damage proc is active nearly all the time , effectively a permanent damage buff.
 - **Calm and Collected:** faster reloads (great on an LMG, which reloads slowly), especially when reloading from cover.
 
-**SMG — PPSh-41** *(current secondary)*
+**SMG , PPSh-41** *(current secondary)*
 
 - **Swap-in talent:** swapping to this weapon grants **+20% max HP for 8 seconds**.
 - **Reload talent:** reloading grants **+2.6% skill cooldown recovery for 10s**, up to **5 stacks**.
 - Has **Weapon Multi-Shot Chance** and **Weapon Piercing Damage** rolls.
 
 ### Healing Hive
-- **Offensive Defense** — its description scales **240% of weapon damage** in some cases and **240% of toughness** in others. Plan is to swap between the two depending on situation.
+- **Offensive Defense** , its description scales **240% of weapon damage** in some cases and **240% of toughness** in others. Plan is to swap between the two depending on situation.
 
 ### Stat Priorities on Gear
 - **Skill Intensity** → bigger heals from abilities.

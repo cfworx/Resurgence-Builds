@@ -1,5 +1,5 @@
----
-title: "April Dev Stream — Bugs, Fixes, and What's Next"
+﻿---
+title: "April Dev Stream - Bugs, Fixes, and What's Next"
 publishDate: "2026-04-18"
 author: "RapidF5"
 description: "A complete summary of the April 18 developer stream, covering the FPS cap, bug fixes, Exotic weapons per season, and crossplay."
@@ -26,7 +26,7 @@ Ubisoft hosted a developer livestream on April 18 covering the launch period. Co
 - **Three Exotic weapons per season**, all reachable on the **free** Classified Ops track.
 - **Tier 2 crafting** is planned for a later update.
 - **33 encrypted crates** exist in the game (not all had been discovered by the community as of the stream).
-- **No crossplay between the three regional servers** — characters are server-locked.
+- **No crossplay between the three regional servers** , characters are server-locked.
 
 ## Community Sentiment
 Mixed-to-frustrated. Multiple top comments described the answers as light on commitments. One commenter pointed out that a modified APK demonstrated the FPS unlock is technically feasible, which contributed to player skepticism.

@@ -11,7 +11,7 @@ shareTitle: "Your Build Isn't Weak. You Are."
 shareText: "7 hidden mechanics the game never explains. This is why your build feels like a wet noodle even with good gear."
 faqs:
   - question: "Why does my DPS number look low on my support build in Division Resurgence?"
-    answer: "Because the character screen DPS only calculates YOUR bullet damage at YOUR base stats with zero buffs active. It does not factor in the weapon damage you're pumping into teammates through Smart Cover, the vulnerability stacks from Scanning Pulse, or the rate-of-fire buff from Tactical Link. Your 142k DPS is not your contribution. Your contribution is the 300k your team is outputting because of you. The scoreboard is lying. You are the carry. Act accordingly."
+    answer: "Because the character screen DPS only calculates YOUR bullet damage at YOUR base stats with zero buffs active. It does not factor in the weapon damage you're pumping into teammates through Smart Cover, the vulnerability stacks from Scanning Pulse, or the rate-of-fire buff from Tactical Link. The 142k on your screen is your personal bullet output. Your actual contribution is the 300k your team is outputting because of you. The scoreboard is lying. You are the carry. Act accordingly."
   - question: "Is Power Score useless in Division Resurgence?"
     answer: "Not useless, but extremely misleading. Power Score goes up when you equip higher-tier gear regardless of whether the stat rolls are any good. A T1 Mechanical Expert mask with perfect Engineering and Skill CDR rolls will outperform a T2 random mask with Toughness core and Weapon Damage secondary in every measurable way. Power Score tells you your gear is new. It does not tell you your gear is good. Ubisoft could fix this with one tooltip. They won't. Small indie company."
   - question: "Should I stack all Engineering or all Firepower on my build?"
@@ -34,7 +34,7 @@ We're pulling this together from community testing, our own build sessions, and 
 
 The seven mechanics, ranked by how much they'll change your game:
 
-1. Your weapon is not your damage source. It is a trigger engine.
+1. Your weapon is a trigger engine first, a damage source second.
 2. DPS amplification multiplies. Raw damage only adds.
 3. Cooldown reduction has a breaking point. Past it, more CDR is wasted budget.
 4. Pressure angles win fights the loadout screen cannot.
@@ -42,7 +42,7 @@ The seven mechanics, ranked by how much they'll change your game:
 6. Recalibrating for comfort instead of impact makes your build worse.
 7. Power score is not build quality. Chasing it is the progression wall.
 
-If you understand all seven, you will outscale players in better gear. That's not hype. That's math.
+If you understand all seven, you will outscale players in better gear. Pure math. Zero copium.
 
 ---
 

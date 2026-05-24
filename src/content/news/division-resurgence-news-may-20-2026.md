@@ -1,10 +1,10 @@
----
+﻿---
 title: "Patch 1.2.1 Drops, Strawberry Milkshake Catches Heat, and Phase 3 Is Coming to Save Us All"
 publishDate: "2026-05-20"
 author: "RapidF5"
 featuredImage: "/images/news/division-resurgence-patch-121-cover.webp"
 imageAlt: "Division Resurgence Patch 1.2.1 splash with Strawberry Milkshake exotic LMG"
-description: "Patch 1.2.1 is live — vendor fixes, inventory loss fixed, 500K Basic Credits and 750 Phoenix Credits incoming, and Ubisoft finally admits the Strawberry Milkshake perks are underwhelming. Phase 3 drops in June."
+description: "Patch 1.2.1 is live , vendor fixes, inventory loss fixed, 500K Basic Credits and 750 Phoenix Credits incoming, and Ubisoft finally admits the Strawberry Milkshake perks are underwhelming. Phase 3 drops in June."
 tags: ["News", "Patch Notes", "Season 1", "Phase 2", "Strawberry Milkshake", "Dark Zone", "Roadmap"]
 shareTitle: "Spread the news"
 shareText: "Share this so your squad knows what changed, what's still broken, and why the Strawberry Milkshake buff can't come soon enough."
@@ -18,27 +18,27 @@ faqs:
     answer: "June 2026 is the current target. Phase 3 is expected to bring the Scorpio exotic, the Freemen apparel set, and potentially a new PvP mode. Specific dates haven't been confirmed because Ubisoft announces dates approximately 48 hours before the content drops. We'll cover it the moment it's official."
 ---
 
-Agents, a lot has happened in the last 48 hours. Ubisoft rolled out **Patch 1.2.1** earlier today, the Phase 2 Classified Ops Pass exotic — Strawberry Milkshake — is officially getting reviewed for buffs, the subreddit has been screaming into the void about disappearing inventory, and Phase 3 is just around the corner. Here's everything you need to know, with zero spin and exactly the right amount of suffering.
+Agents, a lot has happened in the last 48 hours. Ubisoft rolled out **Patch 1.2.1** earlier today, the Phase 2 Classified Ops Pass exotic , Strawberry Milkshake , is officially getting reviewed for buffs, the subreddit has been screaming into the void about disappearing inventory, and Phase 3 is just around the corner. Here's everything you need to know, with zero spin and exactly the right amount of suffering.
 
 ---
 
-## TL;DR — The Last 48 Hours
+## TL;DR - The Last 48 Hours
 
 Here's the speed run:
 
-- **Patch 1.2.1** dropped May 20, 2026 — vendor fixes, Classified Ops Pass purchase fixes, inventory disappearance fix, Lone Wolf Challenge reset fix.
+- **Patch 1.2.1** dropped May 20, 2026 , vendor fixes, Classified Ops Pass purchase fixes, inventory disappearance fix, Lone Wolf Challenge reset fix.
 - **Compensation:** Every player gets **500,000 Basic Credits and 750 Phoenix Credits** dropped directly to their in-game mail. No hoops. No claim buttons.
-- **Strawberry Milkshake** is officially being looked at for a buff — Ubisoft confirmed in the patch notes that the perks are underwhelming. We know. We've known.
-- **Phase 3 of Season 1** is the next major content drop, expected in **June 2026** — bringing the Scorpio exotic, Freemen apparel set, and the Boombox weapon skin.
+- **Strawberry Milkshake** is officially being looked at for a buff , Ubisoft confirmed in the patch notes that the perks are underwhelming. We know. We've known.
+- **Phase 3 of Season 1** is the next major content drop, expected in **June 2026** , bringing the Scorpio exotic, Freemen apparel set, and the Boombox weapon skin.
 - **Season 3 (major story expansion)** is coming **Winter 2026**. Start holding your breath now.
 
 ---
 
-## Patch 1.2.1 — Full Breakdown
+## Patch 1.2.1 - Full Breakdown
 
-Patch 1.2.1 is a hotfix, not a content drop. It exists to put out the fires that Phase 2 started when it launched on May 11–12. Full source: [Ubisoft Mobile Help Center — Patch Note 1.2.1](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/section/539-patch-note/).
+Patch 1.2.1 is a hotfix, not a content drop. It exists to put out the fires that Phase 2 started when it launched on May 11–12. Full source: [Ubisoft Mobile Help Center , Patch Note 1.2.1](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/section/539-patch-note/).
 
-### Compensation Package (Everyone Gets It — Yes, Even You)
+### Compensation Package (Everyone Gets It - Yes, Even You)
 
 Ubisoft is mailing this to every account automatically. Check your in-game mail:
 
@@ -55,7 +55,7 @@ The vendor has been a dumpster fire. Here's what's now (theoretically) fixed:
 - Fixed players being able to sell locked or favored items. (Classic in the opposite direction.)
 - Fixed the Dark Zone vendor missing item-name text. (How do you sell a gun with no name? You don't. That's the bug.)
 
-### Strawberry Milkshake — Fixes and the Big Admission
+### Strawberry Milkshake - Fixes and the Big Admission
 
 This is the section you've been waiting for. Directly from the patch notes, verbatim:
 
@@ -65,7 +65,7 @@ Translation: **a buff is being discussed.** Ubisoft is not promising timelines o
 
 Other Strawberry Milkshake fixes in 1.2.1:
 
-- **Anarchy talent description fixed** — it was showing the wrong effect value before. Now you can know exactly how underwhelming the DoT is in accurate numbers.
+- **Anarchy talent description fixed** , it was showing the wrong effect value before. Now you can know exactly how underwhelming the DoT is in accurate numbers.
 - **Weekly mission Exotic Manual / Booklet rewards** can now correctly drop Strawberry Milkshake recalibration material. Farm those manuals. Have them ready for when the buff lands.
 
 ### Lone Wolf Challenge
@@ -81,7 +81,7 @@ Two ugly bugs got fixed:
 
 ### Inventory Items Disappearing
 
-The bug where items would randomly vanish when inventory was full has been fixed. Ubisoft also acknowledges that **edge cases may still exist** — so if it happens again, submit a ticket immediately and document everything with screenshots.
+The bug where items would randomly vanish when inventory was full has been fixed. Ubisoft also acknowledges that **edge cases may still exist** , so if it happens again, submit a ticket immediately and document everything with screenshots.
 
 If you lost items before this patch? That's currently on a case-by-case support ticket basis. Not great, not ideal, but better than the previous answer of "have you tried turning it off and on again."
 
@@ -98,10 +98,10 @@ If you've been playing in a non-English language, Phase 2 has been an *adventure
 
 ### Still Under Investigation (Known Issues, Still Not Fixed)
 
-Ubisoft explicitly lists these as ongoing — they are aware, they are not fixed:
+Ubisoft explicitly lists these as ongoing , they are aware, they are not fixed:
 
 - Gamepad support issues on iOS
-- "Outpost Annihilation" side mission not progressing (broken since launch — at this point it's a cryptid)
+- "Outpost Annihilation" side mission not progressing (broken since launch , at this point it's a cryptid)
 - Some purchases still not being received in-game
 - Tactical Augmentation reward from the Dark Zone quest cannot be claimed
 - Weapon proficiency blocked in some cases
@@ -110,14 +110,14 @@ The Outpost Annihilation one is particularly impressive. It has been broken sinc
 
 ---
 
-## Phase 2 Recap — In Case You Missed the Chaos
+## Phase 2 Recap - In Case You Missed the Chaos
 
-Phase 2 of Season 1 went live around **May 11–12, 2026** ([Ubisoft — Phase 2 Starts Now](https://www.ubisoft.com/en-us/game/the-division/resurgence/news-updates/3ygDDXxg6dv6aQD5MJvbKv/phase-2-starts-now-whats-new)). The big-ticket items are still active right now.
+Phase 2 of Season 1 went live around **May 11–12, 2026** ([Ubisoft , Phase 2 Starts Now](https://www.ubisoft.com/en-us/game/the-division/resurgence/news-updates/3ygDDXxg6dv6aQD5MJvbKv/phase-2-starts-now-whats-new)). The big-ticket items are still active right now.
 
 ### Classified Ops Pass 1.2
 
 - 50 tiers of rewards
-- **Strawberry Milkshake** — free exotic LMG on the pass track (buff incoming, hold your mats)
+- **Strawberry Milkshake** , free exotic LMG on the pass track (buff incoming, hold your mats)
 - **Hot Rod** superior weapon skin
 - **Pyromaniac** apparel set
 
@@ -139,35 +139,35 @@ The MM04 speedrun (May 15–19) has already ended. Don't worry about it. Grieve 
 
 ### Phase 2 Balance Changes Worth Knowing
 
-These are not in 1.2.1 — these came in Phase 2 itself and are still in effect:
+These are not in 1.2.1 , these came in Phase 2 itself and are still in effect:
 
 - **Dark Zone Credits on skill mod dismantle buffed:** Blue/Purple/Yellow went from 10/50/450 → **15/75/750**. A long-requested QoL change that the community actually liked. A rare Ubisoft win.
 - **Tactical Augmentation Modules** (weapon, gear, exotic) now give **Encrypted Data instead of Clan Credits** on dismantle. Better long-term economy.
-- **Warlord added to the Dark Zone Vendor** — finally a reliable path to one of the strongest exotics in the game. **Critical reminder:** switch to **Vanguard or your intended Firepower spec BEFORE buying** so the rolls land on Firepower, not Engineering. Don't waste the purchase.
+- **Warlord added to the Dark Zone Vendor** , finally a reliable path to one of the strongest exotics in the game. **Critical reminder:** switch to **Vanguard or your intended Firepower spec BEFORE buying** so the rolls land on Firepower, not Engineering. Don't waste the purchase.
 - **Strawberry Milkshake Tactical Augmentation Module** added to the Dark Zone Vendor.
 - **+1 Exotic Weapon Enhancement Kit** added to Dark Zone Vendor stock.
 - **Weekly Random Tactical Augmentation Module Crate** added to the Dark Zone Vendor.
 - **+1 copy** of regular Weapon and Gear Tactical Augmentation Modules added to the Clan Vendor.
-- **60 FPS support** on select high-end devices — Snapdragon 8 Elite-class hardware and PC are holding frame.
-- **Brain Over Brawns OS** bug fixed — was scaling off the wrong stats. It now actually does what it says it does, which is apparently revolutionary.
+- **60 FPS support** on select high-end devices , Snapdragon 8 Elite-class hardware and PC are holding frame.
+- **Brain Over Brawns OS** bug fixed , was scaling off the wrong stats. It now actually does what it says it does, which is apparently revolutionary.
 
 ---
 
-## Strawberry Milkshake — Weapon Watch
+## Strawberry Milkshake - Weapon Watch
 
 The Phase 2 free exotic LMG is the dominant conversation in the community right now, and for good reason. Let's break down what's actually confirmed vs. what's Reddit math.
 
 ### What's Confirmed (Official Sources)
 
 - Free reward on the Classified Ops Pass 1.2 track.
-- **Anarchy** talent (description was wrong pre-1.2.1 — now fixed). Corrected values: **2.40% Weapon Damage DoT over 4.50 seconds, up to 50 stacks. Enemies dying with the debuff transfer all stacks to a nearby enemy within 12 meters.** The old tooltip incorrectly showed 100% WD / 10 seconds / 25 meters — which is why every early build guide had wildly wrong expectations.
+- **Anarchy** talent (description was wrong pre-1.2.1 , now fixed). Corrected values: **2.40% Weapon Damage DoT over 4.50 seconds, up to 50 stacks. Enemies dying with the debuff transfer all stacks to a nearby enemy within 12 meters.** The old tooltip incorrectly showed 100% WD / 10 seconds / 25 meters , which is why every early build guide had wildly wrong expectations.
 - Tactical Augmentation Module sold at the Dark Zone Vendor.
 - Ubisoft is reviewing the perks for a buff. This is in writing. In the official patch notes.
 
 ### What's Unconfirmed (Community Reports)
 
 - One bullet reportedly does ~7,900 damage. The Anarchy DoT reportedly does ~38 per tick. If you're doing that math right now, yes, it's as bad as it sounds. ([u/N43n1r4 on Reddit](https://www.reddit.com/r/thedivisionresurgence/comments/1td38s9/cursed_gun/), May 17–18 window.)
-- The DoT allegedly spreads across multiple enemies on hit — the community comparison to Division 2's Pestilence is everywhere right now.
+- The DoT allegedly spreads across multiple enemies on hit , the community comparison to Division 2's Pestilence is everywhere right now.
 
 ### The Verdict
 
@@ -181,18 +181,18 @@ The Phase 2 free exotic LMG is the dominant conversation in the community right 
 
 - **Disappearing inventory.** Multiple players have screenshots showing pre-Phase 2 inventories with items that vanished post-patch. 1.2.1 should stop new losses, but recovery of already-lost items is ticket-by-ticket. Ubisoft's previous best offer was **300 credits** for a god-rolled item loss. Three. Hundred. Credits. The 500K/750 Phoenix Credits mass payout today is a significant overcorrection in the right direction.
 - **Outpost Annihilation** is still broken. It was broken in beta. It is broken now. At this rate we'll get a Phase 3 hotfix that introduces a new bug to Outpost Annihilation. A bug cannot fix a bug that has never worked.
-- **Warlord proficiency wiping** on some accounts — a community-reported bug that has hit iOS players especially hard. Still listed as under investigation.
+- **Warlord proficiency wiping** on some accounts , a community-reported bug that has hit iOS players especially hard. Still listed as under investigation.
 - **The sell function** being unavailable for 3+ days for some players. Patch 1.2.1 directly addresses this one.
 
 ### Actually Enjoying
 
 - **60 FPS on supported hardware.** The visual upgrade is real and the community on Snapdragon 8 Elite devices and PC is noticeably happier.
-- **Dark Zone Credit buffs** on skill mod dismantling. Small change, loud reception — this is exactly the kind of QoL fix that keeps grinders grinding.
+- **Dark Zone Credit buffs** on skill mod dismantling. Small change, loud reception , this is exactly the kind of QoL fix that keeps grinders grinding.
 - **Warlord in the DZ vendor.** A real, predictable acquisition path for a top-tier exotic. The community waited for this. It's here.
 
 ---
 
-## Roadmap — What's Coming Next
+## Roadmap - What's Coming Next
 
 Source: [The Division Resurgence Roadmap: PC Launch, Story Expansion, and More](https://news.ubisoft.com/en-us/article/9ZzMWcx5ADnaxAiOO3e0w/the-division-resurgence-roadmap-pc-launch-story-expansion-and-more) (Ubisoft, April 28, 2026).
 
@@ -203,13 +203,13 @@ Source: [The Division Resurgence Roadmap: PC Launch, Story Expansion, and More](
 
 Simple enough. Now let's talk about what's actually coming.
 
-### Phase 3 — June 2026
+### Phase 3 - June 2026
 
 The next real milestone. Per the official roadmap, Phase 3 brings:
 
-- **Scorpio** — free exotic weapon on the Classified Ops Pass 1.3 track
-- **Freemen** — full apparel set
-- **Boombox** — weapon skin
+- **Scorpio** , free exotic weapon on the Classified Ops Pass 1.3 track
+- **Freemen** , full apparel set
+- **Boombox** , weapon skin
 
 Expect new time-limited events, a refreshed Classified Ops Pass, and almost certainly another wave of bug fixes and balance changes alongside the content drop. If the Strawberry Milkshake buff hasn't landed by then, Phase 3 is when it shows up.
 
@@ -223,13 +223,13 @@ Expect new time-limited events, a refreshed Classified Ops Pass, and almost cert
 
 *Sources: [Techmash Phase 2 recap](https://techmash.co.uk/2026/05/13/agents-back-to-manhattan-the-division-resurgence-season-1-phase-2-is-live/), cross-checked against Ubisoft Phase 2 notes.*
 
-### Season 2 — August 2026
+### Season 2 - August 2026
 
 - **Full PC launch** on Ubisoft Connect.
 - Cross-progression and cross-platform play confirmed.
 - Your current PC early access save carries over. No restart. No stat wipe.
 
-### Season 3 — Winter 2026
+### Season 3 - Winter 2026
 
 A major story expansion is coming. No mission details, no new exotics announced, no new specializations confirmed yet. We'll cover it the moment Ubisoft says anything. Set your expectations to "intrigued but cautious," which is exactly where they should be for a live service in its first year.
 
@@ -239,12 +239,12 @@ A major story expansion is coming. No mission details, no new exotics announced,
 
 Keep these bookmarked. If something drops, it drops here first:
 
-- **[@TheDivMobile](https://x.com/TheDivMobile)** on X — the dedicated Division Resurgence account. This is your primary source.
-- **[@TheDivisionGame](https://x.com/TheDivisionGame)** on X — franchise-wide, cross-posts Resurgence news.
-- **[@UbisoftMobile](https://x.com/UbisoftMobile)** on X — Ubisoft's mobile-publishing arm.
+- **[@TheDivMobile](https://x.com/TheDivMobile)** on X , the dedicated Division Resurgence account. This is your primary source.
+- **[@TheDivisionGame](https://x.com/TheDivisionGame)** on X , franchise-wide, cross-posts Resurgence news.
+- **[@UbisoftMobile](https://x.com/UbisoftMobile)** on X , Ubisoft's mobile-publishing arm.
 - **[Ubisoft Resurgence News Hub](https://www.ubisoft.com/en-us/game/the-division/resurgence/news-updates)**
 - **[Patch Notes Help Center](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/section/539-patch-note/)**
-- **r/thedivisionresurgence** — the community pulse, bug-report hub, and occasional tragedy museum.
+- **r/thedivisionresurgence** , the community pulse, bug-report hub, and occasional tragedy museum.
 
 ---
 
@@ -256,15 +256,15 @@ The Strawberry Milkshake buff confirmation is the most important content signal 
 
 Phase 3 in June is the next real milestone. If you've been on the fence about grinding the current Pass, 1.2.1 should make the vendor flow functional again. The Encrypted Data conversion on Tactical Aug dismantles is a quiet but meaningful long-term economy upgrade that rewards consistent grinders.
 
-We'll have a dedicated build post the moment the Strawberry Milkshake buff numbers land. Full Phase 3 preview drops in June. Until then: keep your inventory screenshotted, keep your recalibration mats saved, and remember that Outpost Annihilation is a warning — not a mission.
+We'll have a dedicated build post the moment the Strawberry Milkshake buff numbers land. Full Phase 3 preview drops in June. Until then: keep your inventory screenshotted, keep your recalibration mats saved, and remember that Outpost Annihilation is a warning , not a mission.
 
 ---
 
 ## Sources
 
-- [Ubisoft Mobile Help Center — Patch Note 1.2.1 (May 20, 2026)](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/section/539-patch-note/)
-- [Ubisoft — Phase 2 Starts Now: What's New (May 11–12, 2026)](https://www.ubisoft.com/en-us/game/the-division/resurgence/news-updates/3ygDDXxg6dv6aQD5MJvbKv/phase-2-starts-now-whats-new)
-- [Ubisoft News — Division Resurgence Roadmap (April 28, 2026)](https://news.ubisoft.com/en-us/article/9ZzMWcx5ADnaxAiOO3e0w/the-division-resurgence-roadmap-pc-launch-story-expansion-and-more)
-- [Techmash — Phase 2 Live Recap (May 13, 2026)](https://techmash.co.uk/2026/05/13/agents-back-to-manhattan-the-division-resurgence-season-1-phase-2-is-live/)
-- [TheSixthAxis — PC Launch Coverage (May 1, 2026)](https://www.thesixthaxis.com/2026/05/01/the-division-resurgence-is-now-playable-on-pc-season-roadmap-revealed/)
-- Community sentiment: third-party aggregator (ResurgenceBuilds.com weekly highlights) — directional only, not Reddit-verified.
+- [Ubisoft Mobile Help Center , Patch Note 1.2.1 (May 20, 2026)](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/section/539-patch-note/)
+- [Ubisoft , Phase 2 Starts Now: What's New (May 11–12, 2026)](https://www.ubisoft.com/en-us/game/the-division/resurgence/news-updates/3ygDDXxg6dv6aQD5MJvbKv/phase-2-starts-now-whats-new)
+- [Ubisoft News , Division Resurgence Roadmap (April 28, 2026)](https://news.ubisoft.com/en-us/article/9ZzMWcx5ADnaxAiOO3e0w/the-division-resurgence-roadmap-pc-launch-story-expansion-and-more)
+- [Techmash , Phase 2 Live Recap (May 13, 2026)](https://techmash.co.uk/2026/05/13/agents-back-to-manhattan-the-division-resurgence-season-1-phase-2-is-live/)
+- [TheSixthAxis , PC Launch Coverage (May 1, 2026)](https://www.thesixthaxis.com/2026/05/01/the-division-resurgence-is-now-playable-on-pc-season-roadmap-revealed/)
+- Community sentiment: third-party aggregator (ResurgenceBuilds.com weekly highlights) , directional only, not Reddit-verified.

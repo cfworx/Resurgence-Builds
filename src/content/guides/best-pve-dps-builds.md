@@ -1,4 +1,4 @@
----
+﻿---
 title: "Best PvE DPS Builds"
 category: Endgame
 lastUpdated: 2026-05-23T06:00:00Z
@@ -15,7 +15,7 @@ faqs:
   - question: "Which of these builds is the easiest to farm?"
     answer: "The Jackpot Chemical Medic by a mile. The Jackpot set drops from regular mission rewards, the build requires zero exotic weapons, and the playstyle is 'throw chemicals at doors.' You can have a functioning version in two days of casual play. The shotgun and sniper builds require specific weapon drops that could take weeks. Start Jackpot, upgrade later."
   - question: "Why does my DPS build feel weak in Legendary?"
-    answer: "Three possible reasons. One: you're splitting stats between Firepower and Engineering. Stop that. Two: your weapon's damage type doesn't match the enemies you're fighting. Check the color bar. Three: you're running solo in content designed for four players. The difficulty doesn't scale down. Legendary is tuned for a full squad. If you're solo and struggling, it's not your build. It's your ambition."
+    answer: "Three possible reasons. One: you're splitting stats between Firepower and Engineering. Stop that. Two: your weapon's damage type doesn't match the enemies you're fighting. Check the color bar. Three: you're running solo in content designed for four players. The difficulty doesn't scale down. Legendary is tuned for a full squad. Solo Legendary is a choice, and that choice has consequences. Bring friends or lower the difficulty."
   - question: "Is PvE endgame worth grinding in Division Resurgence?"
     answer: "If you enjoy the gameplay loop, absolutely. Legendary missions are the most mechanically demanding content in the game and clearing them feels genuinely rewarding. If you're only grinding for loot, be aware that the RNG is the real final boss. You will farm the same mission 30 times for a specific drop. That's looter shooters. Destiny players did this for a decade and their game just shut down. At least ours is still getting patches."
   - question: "Do I need a full squad for Legendary missions?"
@@ -26,7 +26,7 @@ faqs:
 
 If you're queueing into Legendary missions with a haphazard collection of gear you picked up off the floor and wondering why you're getting instantly vaporized, this guide is for you. Below is the definitive list of the best PvE DPS builds in The Division Resurgence. 
 
-Pick a lane, farm the gear, and stop making the Field Medic revive you every 30 seconds. Pair these with the [Center-ADS Release](/guides/center-ads-release-cover-peek-guide/) cover-peek technique — most of these builds assume you can do it.
+Pick a lane, farm the gear, and stop making the Field Medic revive you every 30 seconds. Pair these with the [Center-ADS Release](/guides/center-ads-release-cover-peek-guide/) cover-peek technique , most of these builds assume you can do it.
 
 ### 1. The Alt-F4 Shotgun Button (Vanguard)
 The absolute king of burst DPS. This Vanguard build uses the Double Barrel Shotgun and Explosive Rounds to instantly delete elites before they even finish their spawn animations. 

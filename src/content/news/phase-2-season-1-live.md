@@ -1,5 +1,5 @@
----
-title: "Phase 2 Is Live — Free Exotic LMG and New Events"
+﻿---
+title: "Phase 2 Is Live - Free Exotic LMG and New Events"
 publishDate: "2026-05-12"
 author: "RapidF5"
 description: "Ubisoft launches Phase 2 of Season 1 with a new Classified Ops Pass, free Strawberry Milkshake Exotic LMG, and new Dark Zone events."
@@ -18,12 +18,12 @@ faqs:
     answer: "Season 2 is expected to begin with Phase 3 in June 2026. It will bring new exotic weapons, gear sets, and potentially a new PvP mode. Ubisoft has not confirmed exact dates because confirming dates requires commitment, and commitment requires the confidence that the inventory won't eat itself again."
 ---
 
-Ubisoft launched Phase 2 of Season 1 on May 12, 2026. The update introduces a new **Classified Ops Pass** with 50 tiers of rewards, a free Exotic LMG (Strawberry Milkshake), three new cosmetic Draw Sets, and four time-limited events — one in the Dark Zone and three speed-run challenges set in main-story missions on Challenging difficulty.
+Ubisoft launched Phase 2 of Season 1 on May 12, 2026. The update introduces a new **Classified Ops Pass** with 50 tiers of rewards, a free Exotic LMG (Strawberry Milkshake), three new cosmetic Draw Sets, and four time-limited events , one in the Dark Zone and three speed-run challenges set in main-story missions on Challenging difficulty.
 
 ## Headline Rewards on the New Pass
-- **Strawberry Milkshake** — free Exotic Weapon (LMG) at Tier 5 of the free track
-- **Hot Rod** — Superior Weapon Skin
-- **Pyromaniac** — Apparel Set
+- **Strawberry Milkshake** , free Exotic Weapon (LMG) at Tier 5 of the free track
+- **Hot Rod** , Superior Weapon Skin
+- **Pyromaniac** , Apparel Set
 
 ## New Cosmetic Draw Sets Added
 - Eradication Exotic Weapon Skin + Battle-worn Metal Skin Set

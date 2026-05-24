@@ -82,7 +82,7 @@ These aren't cosmetic labels. Each type routes through a different damage equati
 
 Here is the important part:
 
-> **A weapon with a Blast attribute shooting a Shredding-weakness enemy is not doing zero damage. It's doing reduced damage compared to a Shredding weapon shooting that same enemy.** The penalty isn't a cliff. It's a tax. You can clear content with the wrong type. You'll just clear it slower, eat more cover time, and burn more ammo. For solo content, that tax is annoying. For Legendary group content where every second matters, that tax is what separates a smooth run from a wipe at the final phase.
+> **A weapon with a Blast attribute shooting a Shredding-weakness enemy is not doing zero damage. It's doing reduced damage compared to a Shredding weapon shooting that same enemy.** Think of the mismatch penalty as a damage tax, not a damage wall. You can clear content with the wrong type. You'll just clear it slower, eat more cover time, and burn more ammo. For solo content, that tax is annoying. For Legendary group content where every second matters, that tax is what separates a smooth run from a wipe at the final phase.
 
 ---
 

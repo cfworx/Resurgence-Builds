@@ -1,5 +1,5 @@
----
-title: "The 24-0 Spawn Trapper — Vanguard PvP AR Build Guide (DPS)"
+﻿---
+title: "The 24-0 Spawn Trapper - Vanguard PvP AR Build Guide (DPS)"
 specialization: Vanguard
 playstyle: DPS
 pve: false
@@ -20,7 +20,7 @@ faqs:
   - question: "Can I run this build in PvE content?"
     answer: "You can, but it's like bringing a Formula 1 car to a grocery run. The build is optimized for killing other players in 1.2 seconds. PvE enemies don't strafe, don't pop medkits, and don't send you angry DMs afterward. If you want a PvE Vanguard, check our shotgun build instead. It's less flashy but it won't leave you wondering why Legendary NPCs are bullet sponges when your PvP TTK is under two seconds."
   - question: "Why does everyone hate fighting the Warlord in Conflict?"
-    answer: "Because being deleted before your brain processes the audio cue is not most people's idea of a fair fight. The Warlord's combination of damage per bullet, fire rate, and the Vanguard's peek speed means you can kill someone who technically hasn't even seen you yet. It's not a bug. It's the intended design of a looter shooter PvP mode. Ubisoft made this bed. We're all sleeping in it."
+    answer: "Because being deleted before your brain processes the audio cue is not most people's idea of a fair fight. The Warlord's combination of damage per bullet, fire rate, and the Vanguard's peek speed means you can kill someone who technically hasn't even seen you yet. Ubisoft designed it this way. The cover system, the TTK, the peek speed. All intentional. We're just the ones reading the manual."
   - question: "What's the counter to this build in Division Resurgence PvP?"
     answer: "Distance. The Warlord falls off hard past 25 meters. If you see a Vanguard sprinting at you with a Warlord, do not engage at close range. Back up, use a marksman rifle or sniper, and pray their aim is worse than their build is strong. If they close the gap, you're already dead. Accept it. Respawn. Try again."
   - question: "Should I farm Conflict or Dark Zone for Warlord drops?"
@@ -37,24 +37,24 @@ This is the dominant Conflict PVP build. Utilizing the **4pc Fearless Warrior** 
 
 - **Specialization:** Vanguard
 - **Archetype:** Unkillable PvP brawler with sustained-fire DR stacking
-- **Difficulty Ceiling:** Low floor, high ceiling. The mechanics are simple — hold trigger, don't die — but positioning and grenade timing separate a 12-4 game from a 24-0 one.
+- **Difficulty Ceiling:** Low floor, high ceiling. The mechanics are simple , hold trigger, don't die , but positioning and grenade timing separate a 12-4 game from a 24-0 one.
 - **Core Loop:** Pre-throw grenades for Explosive Fury RoF → open fire with Warlord → Play Rough gives 25% DR while firing → Recycling refills your mag from incoming damage → Fearless Warrior 4pc stacks flat DR + Damage + Toughness → opponent dies wondering what just happened.
 
 ## Why This Is Mathematically Unfair
 
 Most PVP builds force you to make a choice: do you want to do damage, or do you want to survive? This build laughs at tradeoffs and takes both.
 
-Play Rough's 25% DR is up whenever you're actively firing — which, in a PVP shooter, is 90% of the time. Combined with Fearless Warrior's flat damage bonus and toughness, you will out-TTK (time-to-kill) opponents who chose pure damage, and you will out-survive opponents who chose pure tank. You win by default.
+Play Rough's 25% DR is up whenever you're actively firing , which, in a PVP shooter, is 90% of the time. Combined with Fearless Warrior's flat damage bonus and toughness, you will out-TTK (time-to-kill) opponents who chose pure damage, and you will out-survive opponents who chose pure tank. You win by default.
 
 The MPX secondary with Steady Hands handles close-quarters for when some brave idiot gets inside the Warlord's effective range. Hip-firing grants +20% Stability and +15% Weapon Damage.
 
 ## Weapons
 
-**Primary — Warlord (Exotic AR)**
+**Primary , Warlord (Exotic AR)**
 
-**Talent: Play Rough (fixed).** Firing reduces incoming damage by 25%. This is the cornerstone of the entire build — in a PvP game where every millisecond of TTK matters, being 25% tankier *while actively shooting* is the equivalent of bringing body armor to a pillow fight. Pair it with **Strain 2** or **Misdirection Insurance 2** as your rerolled talent — Strain adds crit damage scaling while close, Misdirection Insurance gives you another survivability layer. Reroll until you land one.
+**Talent: Play Rough (fixed).** Firing reduces incoming damage by 25%. This is the cornerstone of the entire build , in a PvP game where every millisecond of TTK matters, being 25% tankier *while actively shooting* is the equivalent of bringing body armor to a pillow fight. Pair it with **Strain 2** or **Misdirection Insurance 2** as your rerolled talent , Strain adds crit damage scaling while close, Misdirection Insurance gives you another survivability layer. Reroll until you land one.
 
-**Secondary — MPX (T2 SMG)**
+**Secondary , MPX (T2 SMG)**
 
 **Talent: Steady Hands.** Hip-firing grants +20% Stability and +15% Weapon Damage. This is your panic button for CQC. When someone with a shotgun build slides into your personal space like an unwanted Tinder match, you swap to this and hip-fire them into the respawn screen.
 
@@ -62,15 +62,15 @@ The MPX secondary with Steady Hands handles close-quarters for when some brave i
 
 | Slot | Set | Talent | Core | Bonus 1 | Bonus 2 |
 |---|---|---|---|---|---|
-| Mask | Fearless Warrior | — | Firepower | Weapon Crit Damage | Toughness |
+| Mask | Fearless Warrior | , | Firepower | Weapon Crit Damage | Toughness |
 | Chest | Phalanx Attack | **Recycling** | Firepower | Weapon Damage | Skill Cooldown |
 | Backpack | Phalanx Attack | **Explosive Fury** | Toughness | Toughness | Armor |
-| Holster | Fearless Warrior | — | Firepower | Weapon Crit Chance | Skill Cooldown |
-| Gloves | Fearless Warrior | — | Firepower | Weapon Crit Damage | Skill Cooldown |
-| Kneepads | Fearless Warrior | — | Toughness | Weapon Multi-Shot | Toughness |
+| Holster | Fearless Warrior | , | Firepower | Weapon Crit Chance | Skill Cooldown |
+| Gloves | Fearless Warrior | , | Firepower | Weapon Crit Damage | Skill Cooldown |
+| Kneepads | Fearless Warrior | , | Toughness | Weapon Multi-Shot | Toughness |
 
-- **Primary:** Warlord (exotic AR) — Play Rough (fixed) + Strain 2 *or* Misdirection Insurance 2 (reroll until you get one, then go bully people)
-- **Secondary:** MPX — Steady Hands
+- **Primary:** Warlord (exotic AR) , Play Rough (fixed) + Strain 2 *or* Misdirection Insurance 2 (reroll until you get one, then go bully people)
+- **Secondary:** MPX , Steady Hands
 - **OS Protocol:** Assault Charge (Firepower)
 - **Skills:** Shield + Frag Grenades
 - **Signature:** Tactical Link
@@ -90,15 +90,15 @@ The MPX secondary with Steady Hands handles close-quarters for when some brave i
 
 **Chest & Backpack Justification**
 
-**Recycling** is the talent that makes PvP opponents alt-tab to the report button. Taking damage within 20m has an 80% chance to refill 4.5 bullets. In a Conflict brawl, both players are shooting each other — which means every bullet they land on you is feeding your magazine. They are literally reloading your gun for you. Combined with Phalanx Attack's +18% Mag Size, you have a functionally bottomless magazine during sustained engagements.
+**Recycling** is the talent that makes PvP opponents alt-tab to the report button. Taking damage within 20m has an 80% chance to refill 4.5 bullets. In a Conflict brawl, both players are shooting each other , which means every bullet they land on you is feeding your magazine. They are literally reloading your gun for you. Combined with Phalanx Attack's +18% Mag Size, you have a functionally bottomless magazine during sustained engagements.
 
-**Explosive Fury** turns your grenades into a pre-fight steroid. Throwing a grenade grants +18% Rate of Fire for 10s, stacking twice for +36% RoF. You throw both grenades before engaging, and for the next 10 seconds your Warlord sounds like a belt-fed machine gun. The Toughness core on this slot is intentional — you need the HP pool to survive the trade.
+**Explosive Fury** turns your grenades into a pre-fight steroid. Throwing a grenade grants +18% Rate of Fire for 10s, stacking twice for +36% RoF. You throw both grenades before engaging, and for the next 10 seconds your Warlord sounds like a belt-fed machine gun. The Toughness core on this slot is intentional , you need the HP pool to survive the trade.
 
 ## Skill Loadout
 
 **Shield**
 
-Your emergency repositioning tool. Pop it when you need to break a bad angle, push through a doorway, or survive a situation where you accidentally took a fair fight. The Shield buys you the 2-3 seconds needed to get behind cover and re-engage on your terms. In Conflict, it's also useful for blocking sightlines while reviving teammates — not that you'll need to revive anyone when you're going 24-0.
+Your emergency repositioning tool. Pop it when you need to break a bad angle, push through a doorway, or survive a situation where you accidentally took a fair fight. The Shield buys you the 2-3 seconds needed to get behind cover and re-engage on your terms. In Conflict, it's also useful for blocking sightlines while reviving teammates , not that you'll need to revive anyone when you're going 24-0.
 
 **Frag Grenades**
 
@@ -138,19 +138,19 @@ Pre-throw grenades → Explosive Fury stacks +36% RoF → open fire with Warlord
 
 ## OS Justification
 
-**Assault Charge > Concerted Strike** for PvP. Concerted Strike wants skill hits within 20m — this build doesn't run offensive skills. Assault Charge deploys with your Signature Ability and front-loads +30% Firepower and +20% Rate of Fire for 20 seconds. That's your opening burst window. Pop Tactical Link → Assault Charge activates → throw grenades for Explosive Fury → you now have +36% RoF from Explosive Fury AND +20% RoF from Assault Charge simultaneously. For 10 seconds, your Warlord is printing bullets faster than the Federal Reserve prints money.
+**Assault Charge > Concerted Strike** for PvP. Concerted Strike wants skill hits within 20m , this build doesn't run offensive skills. Assault Charge deploys with your Signature Ability and front-loads +30% Firepower and +20% Rate of Fire for 20 seconds. That's your opening burst window. Pop Tactical Link → Assault Charge activates → throw grenades for Explosive Fury → you now have +36% RoF from Explosive Fury AND +20% RoF from Assault Charge simultaneously. For 10 seconds, your Warlord is printing bullets faster than the Federal Reserve prints money.
 
 ## Gear Ladder
 
 | Tier | Set | Notes |
 |---|---|---|
-| T0 Bridge | Fearless Warrior 4pc + any 2pc | FW drops at T0 — get the 4pc bonus online immediately and start learning the playstyle |
+| T0 Bridge | Fearless Warrior 4pc + any 2pc | FW drops at T0 , get the 4pc bonus online immediately and start learning the playstyle |
 | T1 Step | Fearless Warrior 4pc + Phalanx Attack 2pc | PA 2pc adds the +18% Mag Size that enables Recycling to truly shine |
-| T2 Destination | Fearless Warrior T2 4pc + Phalanx Attack T2 2pc + Warlord exotic | Max stat rolls on all pieces, exotic AR equipped — this is where the 24-0 games start |
+| T2 Destination | Fearless Warrior T2 4pc + Phalanx Attack T2 2pc + Warlord exotic | Max stat rolls on all pieces, exotic AR equipped , this is where the 24-0 games start |
 
 ## Combat Rotation
 
-This build is purpose-built for the [Center-ADS Release](/guides/center-ads-release-cover-peek-guide/) peek — see the full settings checklist if you haven't dialed your settings.
+This build is purpose-built for the [Center-ADS Release](/guides/center-ads-release-cover-peek-guide/) peek , see the full settings checklist if you haven't dialed your settings.
 
 1. **Pre-throw a grenade** before engaging to get your Explosive Fury stack 1 (+18% Rate of Fire for 10s).
 2. **Throw a second grenade** as the fight starts to get stack 2 (+36% RoF total).
@@ -158,23 +158,23 @@ This build is purpose-built for the [Center-ADS Release](/guides/center-ads-rele
 4. **Let Recycling keep your mag topped off** by absorbing incoming hits.
 5. **Swap to the MPX** if they get inside ~10m for hip-fire CQC dominance.
 6. **Put your Shield up** if you need to break a bad angle or if you accidentally took a fair fight.
-7. **Pop Tactical Link** when the enemy team groups up — Assault Charge's +30% Firepower and +20% RoF turn you into a walking war crime for 20 seconds.
+7. **Pop Tactical Link** when the enemy team groups up , Assault Charge's +30% Firepower and +20% RoF turn you into a walking war crime for 20 seconds.
 
 ## Loot Quick-Reference
 
 | Item | Where to Look |
 |---|---|
 | Warlord (exotic AR) | Exotic caches, DZ Vendor rotation, high-difficulty mission exotic drops |
-| Fearless Warrior 4pc | T0+ gear drops — available from early content, farmable in Conflict reward caches |
-| Phalanx Attack 2pc | T0+ gear drops — world events, mission completions |
-| MPX (T2 SMG) | T2 SMG drops — world events, Dark Zone, Conflict reward caches |
-| Assault Charge OS | HE Firepower OS — high-difficulty mission drops, Conflict reward caches |
+| Fearless Warrior 4pc | T0+ gear drops , available from early content, farmable in Conflict reward caches |
+| Phalanx Attack 2pc | T0+ gear drops , world events, mission completions |
+| MPX (T2 SMG) | T2 SMG drops , world events, Dark Zone, Conflict reward caches |
+| Assault Charge OS | HE Firepower OS , high-difficulty mission drops, Conflict reward caches |
 | Recycling chest talent | Recalibrate any chest to Recycling |
 | Explosive Fury backpack talent | Recalibrate any backpack to Explosive Fury |
 
-## TL;DR — Five Things
+## TL;DR - Five Things
 
-1. **Fearless Warrior 4pc gives you tank AND damage** — +6% DR, +9% Damage, +18% Toughness. Nobody else gets to have both.
+1. **Fearless Warrior 4pc gives you tank AND damage** , +6% DR, +9% Damage, +18% Toughness. Nobody else gets to have both.
 2. **Warlord's Play Rough = 25% DR while firing.** Combined with FW, that's ~29.5% DR while you hold the trigger. They literally cannot out-trade you.
 3. **Recycling chest refills your mag from their bullets.** They shoot you, you get ammo. This is the most disrespectful talent in the game.
 4. **Explosive Fury turns your grenades into a +36% RoF steroid.** Throw both before engaging and the Warlord becomes a belt-fed nightmare.
