@@ -20,13 +20,13 @@ faqs:
   - question: "Can I run this build solo?"
     answer: "You can also eat soup with a fork. Technically possible, practically miserable. This build is designed to multiply other people's damage. If there are no other people, you are multiplying zero. For solo content, run a Vanguard Commando DPS build instead and come back to Scout when you have friends. Or matchmake. We don't judge."
   - question: "Is the P90 actually better than an LMG for this build?"
-    answer: "For this build, absolutely. The P90 fires at 900 RPM, which means you burn through magazines fast and trigger Fully Charged (+7.50% Engineering) on every empty reload. An LMG with a 100-round belt takes forever to empty, so you're waiting ages between Engineering stacks. The P90 exists to proc Fully Charged as often as possible. Every empty reload is a damage buff for your entire team."
+    answer: "For this build, absolutely. The P90 fires at 900 RPM, which means you burn through magazines fast and trigger Fully Charged (+7.50% Engineering) on every empty reload. An LMG with a 100-round belt takes forever to empty, so you're waiting ages between Engineering stacks. The P90 exists to proc Fully Charged as often as possible. Every empty reload is a damage buff for your entire team. That said, the First Wave Vector 45 ACP (T2) fires at 1200 RPM, which is even better for proc speed. If you can farm the T2 drop with Duration Downpour + Fully Charged, the Vector is a direct upgrade."
   - question: "What's the best Vanguard support build in Division Resurgence?"
     answer: "You're looking at it. The Vanguard Scout Recon running 4pc Mechanical Expert + 2pc Boom Shakalaka is currently the highest-impact support build in the game. AgentHuntzman is running it at T1 and tripling team DPS. Meanwhile, Destiny 2's support classes are getting their final update on June 9 before Bungie turns the lights off. So if you want a looter shooter where support builds actually get new content, you're in the right place."
   - question: "Do I need Legendary drops for this build?"
     answer: "Nope. That's the beautiful part. AgentHuntzman is running this at roughly 70% completion on T1 gear and it's already turning 100k DPS teams into 300k DPS teams. T2 gear is refinement, not a requirement. Stop waiting for perfect drops and start running the build. Your squad will thank you immediately."
   - question: "Why Mechanical Expert over Long-Term Effect?"
-    answer: "At T1, Mechanical Expert is the correct choice because the Skill CDR and Duration bonuses keep your Smart Cover and Scanning Pulse cycling with near-permanent uptime. Long-Term Effect's +18% Engineering 4pc bonus is the eventual T2 upgrade for raw Engineering scaling, but you need permanent skill uptime before you need bigger numbers. A buff that's down for 5 seconds between casts is doing zero damage during those 5 seconds, no matter how large the number is."
+    answer: "At T1, Mechanical Expert is the correct choice because the 2pc Skill Duration (+9.6%) and 3pc CDR (-9.0%) keep your Smart Cover and Scanning Pulse cycling with near-permanent uptime. The 4pc SAC Efficiency (+24%) means your Tactical Link charges faster. Long-Term Effect's +18% Engineering 4pc bonus is the eventual T2 upgrade for raw Engineering scaling, but you need permanent skill uptime before you need bigger numbers. A buff that's down for 5 seconds between casts is doing zero damage during those 5 seconds, no matter how large the number is."
 ---
 
 ## What This Build Actually Is
@@ -64,13 +64,16 @@ Two guns. One talent doing 60% of the work.
 - **Talent 2: Rapid Charge.** Hitting an enemy 5 times in 3 seconds grants +50 Signature Ability charge. This is how you get Tactical Link back fast enough to keep it running almost permanently.
 - **Attribute roll:** Weapon Damage primary. The Police M4 can roll Weapon Blast Damage even though the gun's actual damage registers as Shredding in community testing (see our [damage types breakdown](/guides/damage-types-color-bar-weakness-guide/)). Roll for Weapon Damage, ignore the Blast attribute if it shows up.
 
-**Secondary: P90 (SMG)**
+**Secondary: P90 (SMG) or First Wave Vector 45 ACP (SMG)**
 
 - **Talent 1: Duration Downpour.** Same talent, second copy. Different cooldown timer from the primary.
 - **Talent 2: Fully Charged.** Reloading an empty magazine grants **+7.50% Engineering for 12 seconds, stacking up to 3 times** (+22.50% total). This is the talent that makes the build tick.
-- **RPM: 900.** Magazine: 50 rounds. At 900 RPM, you burn through the magazine in about 3.3 seconds of sustained fire. Every empty reload is a Fully Charged proc.
+- **P90 stats:** RPM: 900. Magazine: 50 rounds. At 900 RPM, you burn through the magazine in about 3.3 seconds of sustained fire. Every empty reload is a Fully Charged proc.
+- **Vector 45 ACP stats:** RPM: 1200. Smaller magazine. At 1200 RPM, you empty the mag even faster for more Fully Charged procs per minute.
 
-**Why P90 specifically:** 900 RPM fire rate means you cycle through magazines faster than almost anything else in the game. You burn the mag, reload, proc Fully Charged, and start stacking Engineering immediately. An LMG with a 100-round belt takes three times as long to empty, which means three times as long between Engineering stacks. Speed of proc is everything on this build.
+**Why a high-RPM SMG?** You WANT to empty the magazine fast. Every empty reload is a Fully Charged proc (+7.50% Engineering). An LMG with a 100-round belt takes forever to empty, which means forever between Engineering stacks. Speed of proc is everything on this build.
+
+**P90 vs. Vector 45 ACP:** AgentHuntzman's original build uses the P90 (T1). The **First Wave Vector 45 ACP (T2)** fires at 1200 RPM, which is 33% faster than the P90's 900 RPM. Faster RPM means faster empty mags, faster Fully Charged stacks, and faster Duration Downpour procs. If you have a T2 First Wave Vector with Duration Downpour + Fully Charged, it's a direct upgrade. The P90 is the easier-to-farm T1 bridge.
 
 ## The Build
 
@@ -84,18 +87,23 @@ Two guns. One talent doing 60% of the work.
 | Backpack | Boom Shakalaka | **Intense Performance II** | Engineering | Skill Intensity | Skill Cooldown Recovery |
 
 - **Primary:** Police M4 (AR) with Duration Downpour + Rapid Charge
-- **Secondary:** P90 (SMG) with Duration Downpour + Fully Charged
-- **OS Protocol:** Collateral Damage (Gold)
-- **Watch:** Pressing Matters at level 50
+- **Secondary:** P90 (SMG) or First Wave Vector 45 ACP (SMG) with Duration Downpour + Fully Charged
+- **OS Protocol:** Concerted Strike (Engineering)
 - **Skills:** Tactical Smart Cover, Scanning Pulse, Tactical Link (Signature)
 
 **Mechanical Expert 4-Piece Set Bonuses**
 
-- **2pc:** Skill Cooldown Recovery +10%
-- **3pc:** Skill Duration +15%
-- **4pc:** Skill Intensity +20%
+- **2pc:** Skill Duration +9.6%
+- **3pc:** Skill Cooldown Recovery -9.0%
+- **4pc:** Signature Ability Charge Efficiency +24.0%
 
-All three bonuses directly feed the Scout's core loop. CDR cycles your skills faster. Duration keeps them up longer. Intensity makes them hit harder. This set was literally designed for this build.
+The 2pc and 3pc bonuses feed the Scout's core loop directly. Duration keeps your skills up longer. CDR cycles them faster. The 4pc bonus (+24% SAC Efficiency) means your Tactical Link charges faster from all sources, which means more uptime on the team damage buff.
+
+**Boom-Shakalaka 2-Piece Set Bonus**
+
+- **2pc:** Skill Cooldown Recovery -6.0%
+
+The Boom-Shakalaka 2pc stacks with Mechanical Expert's 3pc CDR bonus for even faster skill cycling. At 2pc, you only get the CDR. The 3pc (+18% Skill Radius) and 4pc (+12% Skill Intensity) bonuses are NOT active since you only slot 2 pieces.
 
 ## Chest and Backpack Talents
 
@@ -205,13 +213,13 @@ The build does NOT require T2 gear to function. AgentHuntzman is running it at T
 | T1 Boom Shakalaka chest | Toughness core + Socialite talent | Armor or Skill Duration secondary |
 | T1 Boom Shakalaka backpack | Engineering core + Intense Performance II | Skill Intensity secondary |
 | Police M4 (any tier) | Duration Downpour OR Rapid Charge rolled | Weapon Damage primary |
-| P90 (any tier) | **Fully Charged rolled** | Keep everything else as-is |
+| P90 (T1) or First Wave Vector 45 ACP (T2) | **Fully Charged rolled** | Vector is a direct upgrade if you can farm the T2 drop |
 | Pressing Matters watch | Always keep | n/a |
 
 ## TL;DR
 
 1. **Run 4pc Mechanical Expert + 2pc Boom Shakalaka.** Engineering core on every piece you can. Skill CDR, Duration, and Intensity on the bonuses.
-2. **Police M4 with Duration Downpour + Rapid Charge as primary. P90 with Duration Downpour + Fully Charged as secondary.** The P90 exists to proc Fully Charged. Empty the mag at 900 RPM, reload, stack Engineering.
+2. **Police M4 with Duration Downpour + Rapid Charge as primary. P90 or First Wave Vector 45 ACP with Duration Downpour + Fully Charged as secondary.** The SMG exists to proc Fully Charged. Empty the mag, reload, stack Engineering. Vector at 1200 RPM is a direct upgrade over P90 at 900 RPM if you can farm the T2 drop.
 3. **Socialite on chest, Intense Performance II on backpack.** Socialite makes you tanky. Intense Performance II makes Scanning Pulse cover entire rooms for almost no cost.
 4. **Mobile Bastion + Scout + Bugle Call for skill chips.** All three generate team Signature Ability charge or buff team output. None of them buff you personally. That's the entire point.
 5. **The combat loop is: Pulse, Smart Cover, M4 for Duration Downpour, P90 empty reloads x3, Tactical Link.** Run that loop. Your team triples their damage. Your own DPS looks mid on the scoreboard. That is the build working correctly.

@@ -96,7 +96,7 @@ Open inventory. Pick your weapon. Look at the attributes panel on the right side
 
 Most weapons roll one of the three as their primary damage attribute. Some roll a different attribute than their base type suggests, which is a recalibration trap: the Police M4 has been spotted rolling Weapon Blast Damage as an attribute even though community testing shows it deals Shredding on impact. If your rolled attribute is one type and the weapon's actual hit damage is another, the rolled attribute is doing nothing for you. Recalibrate.
 
-**Exotics are locked to one damage type.** Warlord = Blast. Lady Death = Blast. You cannot reroll it. Both exotics shine against red-bar enemies and tax you against light-blue and dark-blue ones. This is by design.
+**Exotics are locked to one damage type.** Warlord = Blast. Lady Death = Blast. Strawberry Milkshake = Shredding. You cannot reroll any of them. The two Blast exotics shine against red-bar enemies and tax you against everything else. Strawberry Milkshake has the opposite profile, strong against light-blue-bar enemies.
 
 ---
 
@@ -173,7 +173,7 @@ This is where the dual-type loadout stops being optional and starts being the pr
 1. **There is a colored bar above every elite enemy's health.** Dark blue = Piercing weakness, light blue = Shredding weakness, red = Blast weakness. Look for it.
 2. **Your weapon's damage type is on its attribute panel.** Weapon Blast Damage, Weapon Piercing Damage, or Weapon Shredding Damage. One of those is what you're dealing.
 3. **Mismatched damage type is a tax, not a wall.** You can still kill the enemy. You'll just kill them slower and waste more ammo doing it.
-4. **Warlord and Lady Death are Blast-locked.** They eat red-bar enemies and struggle against everything else. Bring a second weapon of a different type.
+4. **Warlord and Lady Death are Blast-locked. Strawberry Milkshake is Shredding-locked.** The Blast exotics eat red-bar enemies and struggle against everything else. Bring a second weapon of a different type.
 5. **Hard skews red, Heroic skews mixed, Legendary forces dual-type loadouts.** A T1 shredding LMG paired with your exotic Warlord clears more endgame content than two Warlords ever will.
 
 ---

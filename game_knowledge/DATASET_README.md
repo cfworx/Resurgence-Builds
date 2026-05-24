@@ -182,3 +182,29 @@ All talent bonus values cited in build posts **must match the exact numbers in t
 | Healing Elites | +14.4% Received Healing | +15% Release Extra Protection | +28% Armor |
 | Self-Propelled Shield | +14% Armor | +5.4% Move Speed | +24% Max Health |
 | Fearless Warrior | +6% Damage Reduction | +9% Damage Bonus | +18% Toughness |
+
+### Rule 10 - Exotic Weapon Data Accuracy *(added 2026-05-24)*
+
+The Excel "Exotic Weapons" sheet contains errors for Strawberry Milkshake. **Corrected values from in-game screenshots:**
+
+| Field | Excel (WRONG) | Correct (In-Game) |
+|---|---|---|
+| Damage Type | Blast Damage 300 | **Shredding Damage 300** |
+| RPM | 550 (correct) | 550 |
+| MAG | 100 (correct) | 100 |
+| Anarchy Description | "dealing 100% Weapon Damage over 10 seconds, up to 50 stacks. Enemies dying with this debuff transfer all stacks to a nearby enemy within 25 meters." | **"dealing 2.40% Weapon Damage over 4.50 seconds, up to 50 stacks. Enemies dying with this debuff transfer all stacks to a nearby enemy within 12 meters."** |
+
+**Errors fixed:**
+1. Strawberry Milkshake is **Shredding**, not Blast
+2. Anarchy deals **2.40%** WD, not 100%
+3. Anarchy ticks over **4.50** seconds, not 10
+4. Transfer radius is **12** meters, not 25
+
+### Rule 11 - Weapon RPM Verification *(added 2026-05-24)*
+
+**Verified SMG RPM values:**
+- Vector 45 ACP: **1200 RPM** (user-confirmed)
+- P90: **900 RPM** (cited in AgentHuntzman's Scout build)
+- Lady Death: **900 RPM** (from Excel)
+
+The First Wave Vector 45 ACP (T2) at 1200 RPM is a direct upgrade over the P90 (T1) at 900 RPM for proc-based builds (Fully Charged, Duration Downpour).
