@@ -82,7 +82,7 @@ The loop is simple: stack Engineering through Torrential Downpour and Fully Char
 | T1 Mechanical Expert backpack | Engineering core + Brainstorm talent | Recal one bonus to Skill Duration or CDR |
 | T1 Mechanical Expert gloves/kneepads | Engineering core + either Skill CDR or Duration | Recal the other bonus to CDR or Duration |
 | Police M4 (any tier) | Torrential Downpour OR Rapid Charge (need one) | Recal the missing talent onto it |
-| P90 or AUG A3 Para XS (T1) | Torrential Downpour AND Fully Charged (need both) | Can't recal talents onto each other — both must drop naturally |
+| P90 (T1) | Torrential Downpour OR Fully Charged (need one) | Recal the missing talent onto it |
 | Pressing Matter OS Protocol | Always keep | n/a |
 
 ---
@@ -139,7 +139,7 @@ You'll notice we've swapped most Skill Intensity rolls for **Skill Duration**, *
 
 ### Why P90 Specifically
 
-This build needs BOTH Torrential Downpour and Fully Charged on the same weapon. Out of every SMG in the game, only **two** can roll both talents simultaneously: the **P90 (T1)** and the **AUG A3 Para XS (T1)**. The Vector 45 ACP fires at 1200 RPM but can't roll Fully Charged. The MP7 fires at 950 RPM but can't roll Torrential Downpour. The P90 at 900 RPM is the fastest SMG that qualifies for both talent slots. The AUG A3 Para XS is your only alternative if you can't find a good P90 drop.
+This build needs BOTH Torrential Downpour and Fully Charged on the same weapon. You only need one to drop naturally — recalibrate the other onto it. The P90 at 900 RPM is the fastest SMG that can roll both talent slots, which is why AgentHuntzman picked it.
 
 ---
 
