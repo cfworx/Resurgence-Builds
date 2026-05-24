@@ -1,4 +1,4 @@
-﻿# Division Resurgence Community Knowledge Base
+# Division Resurgence Community Knowledge Base
 ## Dataset README & AI Ingestion Guide
 
 **Source:** r/thedivisionresurgence (Reddit)  
@@ -213,3 +213,10 @@ The Excel "Exotic Weapons" sheet contains errors for Strawberry Milkshake. **Cor
 - MP7: **950 RPM** (cannot roll Torrential Downpour)
 - P90: **900 RPM** (can roll both)
 - Lady Death: **900 RPM** (exotic, locked talents)
+
+**P90 Full Stats (user-verified):**
+- RPM: 900
+- Magazine: 50 (2nd highest SMG mag, same across all tiers)
+- Reload: 2.47 seconds (slowest reload of all SMGs)
+- Accuracy: 49/100
+- Stability: 92/100

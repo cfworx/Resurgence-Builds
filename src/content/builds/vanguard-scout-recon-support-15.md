@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Vanguard Scout Recon Build"
 specialization: "Vanguard"
 playstyle: "Support"
@@ -68,9 +68,9 @@ Two guns. One talent doing 60% of the work.
 
 - **Talent 1: Torrential Downpour.** Same talent, second copy. Different cooldown timer from the primary.
 - **Talent 2: Fully Charged.** Reloading an empty magazine grants **+7.50% Engineering for 12 seconds, stacking up to 3 times** (+22.50% total). This is the talent that makes the build tick.
-- **RPM: 900.** Magazine: 50 rounds. At 900 RPM, you burn through the magazine in about 3.3 seconds of sustained fire. Every empty reload is a Fully Charged proc.
+- **RPM: 900.** Magazine: 50 rounds. Reload: 2.47 seconds (slowest SMG in the game). At 900 RPM, you burn through the magazine in about 3.3 seconds of sustained fire. Every empty reload is a Fully Charged proc.
 
-**Why P90 specifically:** This build needs BOTH Torrential Downpour and Fully Charged on the same weapon. Out of every SMG in the game, only **two** can roll both talents simultaneously: the **P90 (T1)** and the **AUG A3 Para XS (T1)**. The Vector 45 ACP fires at 1200 RPM but can't roll Fully Charged. The MP7 fires at 950 RPM but can't roll Torrential Downpour. The P90 at 900 RPM is the fastest SMG that qualifies for both talent slots. That's why AgentHuntzman picked it. The AUG A3 Para XS is your only alternative if you can't find a good P90 drop.
+**Why P90 specifically:** This build needs BOTH Torrential Downpour and Fully Charged on the same weapon. Out of every SMG in the game, only **two** can roll both talents simultaneously: the **P90 (T1)** and the **AUG A3 Para XS (T1)**. The Vector 45 ACP fires at 1200 RPM but can't roll Fully Charged. The MP7 fires at 950 RPM but can't roll Torrential Downpour. The P90 at 900 RPM is the fastest SMG that qualifies for both talent slots. That's why AgentHuntzman picked it. The tradeoff: the P90 has the slowest reload of all SMGs at 2.47 seconds and the second-highest magazine (50 rounds). For this build, the slow reload is fine because you WANT to be shooting, not reloading. You empty the mag, eat the 2.47-second reload, proc Fully Charged, and go again. The AUG A3 Para XS is your only alternative if you can't find a good P90 drop.
 
 ## The Build
 
@@ -81,7 +81,7 @@ Two guns. One talent doing 60% of the work.
 | Holster | Mechanical Expert | - | Engineering | Sig. Ability Charge Efficiency | Skill Intensity |
 | Kneepads | Mechanical Expert | - | Engineering | Skill Cooldown Recovery | Weapon Damage |
 | Chest | Boom Shakalaka | **Socialite** | Toughness | Armor (or Skill Duration) | Health (or Skill Intensity) |
-| Backpack | Boom Shakalaka | **Intense Performance II** | Engineering | Skill Intensity | Skill Cooldown Recovery |
+| Backpack | Boom Shakalaka | **Brainstorm** | Engineering | Skill Intensity | Skill Cooldown Recovery |
 
 - **Primary:** Police M4 (AR) with Torrential Downpour + Rapid Charge
 - **Secondary:** P90 (SMG) with Torrential Downpour + Fully Charged
@@ -110,11 +110,11 @@ The Boom-Shakalaka 2pc stacks with Mechanical Expert's 3pc CDR bonus for even fa
 
 This is the best support-survivability talent in the game. It rewards exactly what you're already doing (sitting in your Smart Cover while enemies push toward you) with enough armor to turn your 5,119 base into 6k+. You're tankier than most Bulwark players at the moment of contact, which is hilarious given that you're technically a "support" build.
 
-**Backpack: Intense Performance II**
+**Backpack: Brainstorm**
 
-"Grants +46% skill radius. Inflicts -5% skill duration."
+"Grants +15% Skill Duration. Grants an additional +15% Skill Duration when within 20 meters of an ally."
 
-The -5% duration penalty on a Scanning Pulse with a 17.44-second base is 0.87 seconds. The trade for +46% more coverage area looks good on paper, and AgentHuntzman runs it. That said, Skill Radius is a contested stat in the community. Some players prefer **Calculated** (kill-based cooldown reduction) or **Skilled** (skill crit = cooldown refund) for tighter skill cycling instead of wider coverage. If your team stacks on a chokepoint, radius matters less than uptime. Try both and see what fits your squad.
+This is a team support build. You are always near your teammates. That means +30% Skill Duration at all times. Your Smart Cover stays up 30% longer. Your Scanning Pulse vulnerability window lasts 30% longer. Every second of extra uptime is a second your team is doing amplified damage. No downside, no penalty, no tradeoff. Just more time on every buff you place. Intense Performance II (+46% Skill Radius) looks tempting, but Skill Radius is a trap stat for this build. Your Smart Cover is placed on a specific piece of cover, radius doesn't make it bigger. Your Scanning Pulse already covers a room at base radius. Making it 46% wider to cover the hallway behind you where nobody is standing is wasted budget. Duration is king.
 
 ## Skill Mods (Chips)
 
@@ -208,7 +208,7 @@ The build does NOT require T2 gear to function. AgentHuntzman is running it at T
 |---|---|---|
 | T1 Mechanical Expert mask/gloves/holster/kneepads | Engineering core + Skill CDR or Duration roll | Engineering primary, CDR/Duration secondary |
 | T1 Boom Shakalaka chest | Toughness core + Socialite talent | Armor or Skill Duration secondary |
-| T1 Boom Shakalaka backpack | Engineering core + Intense Performance II | Skill Intensity secondary |
+| T1 Boom Shakalaka backpack | Engineering core + Brainstorm talent | Skill Intensity secondary |
 | Police M4 (any tier) | Torrential Downpour OR Rapid Charge rolled | Weapon Damage primary |
 | P90 or AUG A3 Para XS (T1) | **Both Torrential Downpour AND Fully Charged rolled** | Only two SMGs can roll both talents. P90 at 900 RPM is preferred. |
 | Pressing Matters watch | Always keep | n/a |
@@ -217,7 +217,7 @@ The build does NOT require T2 gear to function. AgentHuntzman is running it at T
 
 1. **Run 4pc Mechanical Expert + 2pc Boom Shakalaka.** Engineering core on every piece you can. Skill CDR, Duration, and Intensity on the bonuses.
 2. **Police M4 with Torrential Downpour + Rapid Charge as primary. P90 with Torrential Downpour + Fully Charged as secondary.** Only two SMGs (P90 and AUG A3 Para XS) can roll both talents. The P90 at 900 RPM empties its mag in 3.3 seconds for maximum Fully Charged procs.
-3. **Socialite on chest, Intense Performance II on backpack.** Socialite makes you tanky. Intense Performance II makes Scanning Pulse cover entire rooms for almost no cost.
+3. **Socialite on chest, Brainstorm on backpack.** Socialite makes you tanky. Brainstorm gives +30% Skill Duration when near allies (you're a support build, you're always near allies). More uptime on every buff you place.
 4. **Mobile Bastion + Scout + Bugle Call for skill chips.** All three generate team Signature Ability charge or buff team output. None of them buff you personally. That's the entire point.
 5. **The combat loop is: Pulse, Smart Cover, M4 for Torrential Downpour, P90 empty reloads x3, Tactical Link.** Run that loop. Your team triples their damage. Your own DPS looks mid on the scoreboard. That is the build working correctly.
 
