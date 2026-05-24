@@ -50,76 +50,22 @@ Your personal DPS will look embarrassing. Your team's total output will be disgu
 | Holster | Boom Shakalaka | - | Engineering | Sig. Ability Charge Efficiency | Skill Intensity |
 | Kneepads | Mechanical Expert | - | Engineering | Skill Cooldown Recovery | Weapon Damage |
 
-- **Primary:** Police M4 (AR) with Torrential Downpour + Rapid Charge
-- **Secondary:** P90 (SMG) with Torrential Downpour + Fully Charged
-- **OS Protocol:** Pressing Matter
-- **Skills:** Tactical Smart Cover, Scanning Pulse, Tactical Link (Signature)
+| Slot | Item | Details |
+|---|---|---|
+| **Primary** | Police M4 (AR) | Torrential Downpour + Rapid Charge |
+| **Secondary** | P90 (SMG) | Torrential Downpour + Fully Charged |
+| **OS Protocol** | Pressing Matter | +10% Skill Cooldown Recovery |
+| **Skills** | Tactical Smart Cover | Scanning Pulse, Tactical Link (Signature) |
 
-> **Core stat note:** AgentHuntzman's video shows mixed cores (Toughness on chest, Firepower on backpack/gloves/kneepads). We recommend Engineering on every piece except the chest (Toughness for Socialite synergy). More Engineering = more Smart Cover weapon damage for the whole team. That's the entire point of the build.
+| Protocol | Base Effect | Level 50 Stats |
+|---|---|---|
+| **Pressing Matter** | +10% Skill Cooldown Recovery | +24% Skill Intensity, +358 Engineering, +286 Skill Damage, +9,402 Health |
 
-**Mechanical Expert 4-Piece Set Bonuses**
-
-- **2pc:** Skill Duration +9.6%
-- **3pc:** Skill Cooldown Recovery -9.0%
-- **4pc:** Signature Ability Charge Efficiency +24.0%
-
-The 2pc and 3pc bonuses feed the Scout's core loop directly. Duration keeps your skills up longer. CDR cycles them faster. The 4pc bonus (+24% SAC Efficiency) means your Tactical Link charges faster from all sources, which means more uptime on the team damage buff.
-
-**Boom-Shakalaka 2-Piece Set Bonus**
-
-- **2pc:** Skill Cooldown Recovery -6.0%
-
-The Boom-Shakalaka 2pc stacks with Mechanical Expert's 3pc CDR bonus for even faster skill cycling. At 2pc, you only get the CDR. The 3pc (+18% Skill Radius) and 4pc (+12% Skill Intensity) bonuses are NOT active since you only slot 2 pieces.
-
-**Chest: Socialite**
-
-"Grants 10% movement speed when there are no enemies within 20m. Grants +36% armor while within 20m of an enemy."
-
-This is the best support-survivability talent in the game. It rewards exactly what you're already doing (sitting in your Smart Cover while enemies push toward you) with a massive armor boost at the moment of contact.
-
-**Backpack: Brainstorm**
-
-"Grants +15% Skill Duration. Grants an additional +15% Skill Duration when within 20 meters of an ally."
-
-This is a team support build. You are always near your teammates. That means +30% Skill Duration at all times. Your Smart Cover stays up 30% longer. Your Scanning Pulse vulnerability window lasts 30% longer. Every second of extra uptime is a second your team is doing amplified damage. No downside, no penalty, no tradeoff. Just more time on every buff you place. Intense Performance II (+46% Skill Radius) looks tempting, but Skill Radius is a trap stat for this build. Your Smart Cover is placed on a specific piece of cover, radius doesn't make it bigger. Your Scanning Pulse already covers a room at base radius. Making it 46% wider to cover the hallway behind you where nobody is standing is wasted budget. Duration is king.
-
-## Weapons
-
-Two guns. One talent doing 60% of the work.
-
-**Primary: Police M4 (AR)**
-
-- **Talent 1: Torrential Downpour.** Hitting enemies 10 times within 5 seconds grants +22.5% Engineering for 12 seconds. AgentHuntzman calls this "broken" (in a good way). It makes your Engineering jump massively, and with Tactical Link active, it turns the build into a serious damage threat on top of all the buffing.
-- **Talent 2: Rapid Charge.** Hitting an enemy 5 times in 3 seconds grants +50 Signature Ability charge. This is how you get Tactical Link back fast.
-- **RPM: 850.** Magazine: 30. This is your proc weapon, not your sustained fire weapon. Land 10 hits in 5 seconds for Torrential Downpour, then land 5 in 3 for Rapid Charge. Swap to P90.
-- **Ideal attribute bonuses:** Weapon Blast Damage + Weapon Damage.
-
-**Secondary: P90 (SMG)**
-
-- **Talent 1: Torrential Downpour.** Same talent, second copy. Different cooldown timer from the primary.
-- **Talent 2: Fully Charged.** Reloading an empty magazine grants **+7.50% Engineering for 12 seconds, stacking up to 3 times** (+22.50% total). This is the talent that makes the build tick.
-- **RPM: 900.** Magazine: 50 rounds. Reload: 2.47 seconds (slowest SMG in the game). At 900 RPM, you burn through the magazine in about 3.3 seconds of sustained fire. Every empty reload is a Fully Charged proc.
-- **Ideal attribute bonuses:** Weapon Piercing Damage + Weapon Damage. AgentHuntzman says this is the optimal roll for the P90.
-
-**Why P90 specifically:** This build needs BOTH Torrential Downpour and Fully Charged on the same weapon. Out of every SMG in the game, only **two** can roll both talents simultaneously: the **P90 (T1)** and the **AUG A3 Para XS (T1)**. The Vector 45 ACP fires at 1200 RPM but can't roll Fully Charged. The MP7 fires at 950 RPM but can't roll Torrential Downpour. The P90 at 900 RPM is the fastest SMG that qualifies for both talent slots. That's why AgentHuntzman picked it. The tradeoff: the P90 has the slowest reload of all SMGs at 2.47 seconds and the second-highest magazine (50 rounds). For this build, the slow reload is fine because you WANT to be shooting, not reloading. You empty the mag, eat the 2.47-second reload, proc Fully Charged, and go again. The AUG A3 Para XS is your only alternative if you can't find a good P90 drop.
-
-## OS Protocol
-
-**Pressing Matter**
-
-Grants +10% Skill Cooldown Recovery. At level 50: +24% Skill Intensity, +358 Engineering, +286 Skill Damage, +9,402 Health.
-
-This is the correct OS for this build. The +10% Skill CDR stacks with your gear CDR to keep Smart Cover and Scanning Pulse cycling faster. The +358 Engineering at level 50 feeds directly into your Smart Cover conversion ratio, which is the build's entire damage engine. The +9,402 Health is a survivability bonus on top. Every stat on Pressing Matter feeds the support loop. Nothing is wasted.
-
-## Software/Firmware Chipsets
-
-| Skill | Chipset | What It Does | Why |
-|---|---|---|---|
-| Tactical Smart Cover | **Mobile Bastion** | Kills/assists behind Smart Cover grant +10 Signature Ability charge to the whole team. Plus weapon damage reduction. | Feeds the entire team's Tactical Link, not just yours. Coordinated squads see all four teammates hit Link simultaneously. |
-| Scanning Pulse | **Scout (C-Chip)** | Each pulse grants +8 Signature Ability charge to the allied team. | The single biggest team-wide signature generator in the game. Pop Pulse, everyone's Link bar fills. |
-| Tactical Link | **Bugle Call** | Deploying Link grants +14.4% Rate of Fire, Damage Reduction, and Movement Speed to the team for 15 seconds. | Rate of fire is what converts the Smart Cover weapon damage buff into actual kills. Stacks with the base Tactical Link buffs. |
-
-The entire chipset strategy is focused on one thing: getting Tactical Link back as fast as possible and making it hit harder when it does. Mobile Bastion + Scout both generate team-wide Signature Ability charge. Bugle Call makes the Link itself buff the whole team's combat stats. The faster you cycle Link, the more DPS your team does.
+| Skill | Chipset | What It Does |
+|---|---|---|
+| Tactical Smart Cover | **Mobile Bastion** | Kills/assists behind Smart Cover grant +10 Signature Ability charge to the whole team. |
+| Scanning Pulse | **Scout (C-Chip)** | Each pulse grants +8 Signature Ability charge to the allied team. |
+| Tactical Link | **Bugle Call** | Deploying Link grants +14.4% Rate of Fire, Damage Reduction, and Movement Speed. |
 
 ## Loot Quick-Reference
 
@@ -132,6 +78,34 @@ The entire chipset strategy is focused on one thing: getting Tactical Link back 
 | Police M4 (any tier) | Torrential Downpour OR Rapid Charge rolled | Weapon Blast Damage + Weapon Damage |
 | P90 or AUG A3 Para XS (T1) | **Both Torrential Downpour AND Fully Charged rolled** | Weapon Piercing Damage + Weapon Damage |
 | Pressing Matter OS Protocol | Always keep | n/a |
+
+## Build Mechanics & Details
+
+> **Core stat note:** AgentHuntzman's video shows mixed cores (Toughness on chest, Firepower on backpack/gloves/kneepads). We recommend Engineering on every piece except the chest (Toughness for Socialite synergy). More Engineering = more Smart Cover weapon damage for the whole team. That's the entire point of the build.
+
+**Mechanical Expert 4-Piece Set Bonuses**
+The 2pc (+9.6% Skill Duration) and 3pc (-9.0% CDR) bonuses feed the Scout's core loop directly. Duration keeps your skills up longer. CDR cycles them faster. The 4pc bonus (+24% SAC Efficiency) means your Tactical Link charges faster from all sources, which means more uptime on the team damage buff.
+
+**Boom-Shakalaka 2-Piece Set Bonus**
+The 2pc (-6.0% CDR) stacks with Mechanical Expert's 3pc CDR bonus for even faster skill cycling. At 2pc, you only get the CDR. The 3pc and 4pc bonuses are NOT active since you only slot 2 pieces.
+
+**Chest: Socialite**
+*Grants 10% movement speed when there are no enemies within 20m. Grants +36% armor while within 20m of an enemy.*
+This is the best support-survivability talent in the game. It rewards exactly what you're already doing (sitting in your Smart Cover while enemies push toward you) with a massive armor boost at the moment of contact.
+
+**Backpack: Brainstorm**
+*Grants +15% Skill Duration. Grants an additional +15% Skill Duration when within 20 meters of an ally.*
+This is a team support build. You are always near your teammates. That means +30% Skill Duration at all times. Your Smart Cover stays up 30% longer. Your Scanning Pulse vulnerability window lasts 30% longer. Every second of extra uptime is a second your team is doing amplified damage. No downside, no penalty, no tradeoff. Just more time on every buff you place. 
+
+**Weapons Strategy**
+- **Primary: Police M4 (AR).** Hitting enemies 10 times within 5 seconds grants +22.5% Engineering for 12 seconds via Torrential Downpour. Hitting an enemy 5 times in 3 seconds grants +50 Signature Ability charge via Rapid Charge. This is your proc weapon. Land your hits, swap to P90.
+- **Secondary: P90 (SMG).** This build needs BOTH Torrential Downpour and Fully Charged on the same weapon. Out of every SMG in the game, only two can roll both talents simultaneously: the P90 (T1) and the AUG A3 Para XS (T1). The P90 at 900 RPM is the fastest SMG that qualifies for both talent slots. You burn through the magazine in about 3.3 seconds. Every empty reload triggers Fully Charged (+7.50% Engineering for 12 seconds, stacking up to 3 times).
+
+**OS Protocol Strategy**
+The +10% Skill CDR from Pressing Matter stacks with your gear CDR to keep Smart Cover and Scanning Pulse cycling faster. The +358 Engineering at level 50 feeds directly into your Smart Cover conversion ratio, which is the build's entire damage engine. 
+
+**Chipset Strategy**
+The entire chipset strategy is focused on one thing: getting Tactical Link back as fast as possible and making it hit harder when it does. Mobile Bastion + Scout both generate team-wide Signature Ability charge. Bugle Call makes the Link itself buff the whole team's combat stats. The faster you cycle Link, the more DPS your team does.
 
 ## Why Support Beats Solo Damage
 
@@ -215,4 +189,4 @@ By three rotations deep in a long mission, your team feels like they're cheating
 
 - [AgentHuntzman, Best Scout Build in Division Resurgence (Vanguard Meta) T1 gear](https://www.youtube.com/watch?v=b1ZjnGeeRKI), April 26, 2026.
 - In-game Division Resurgence Build Database, verified May 2026.
-- [The Armory](https://thearmory.gg), community gear and talent reference.
+- The in-game Armory, community gear and talent reference.
