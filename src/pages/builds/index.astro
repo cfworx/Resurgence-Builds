@@ -9,7 +9,6 @@ const allBuilds = await getCollection('builds');
 const sorted = allBuilds.sort((a, b) => b.data.lastUpdated.getTime() - a.data.lastUpdated.getTime());
 
 const specs = [...new Set(allBuilds.map(b => b.data.specialization))];
-const playstyles = [...new Set(allBuilds.map(b => b.data.playstyle))];
 
 const breadcrumbItems = [{ name: 'Builds', url: '/builds/' }];
 
@@ -38,7 +37,7 @@ const itemListLd = {
     <SectionTag label="Builds" />
     <h1 class="heading-accent">All Builds</h1>
     <p style="color:var(--ink-muted);margin-bottom:var(--sp-6);">
-      Tested and optimized meta and non-meta builds for every specialization and playstyle. Updated for the latest patch.
+      Every build we've tested and haven't been embarrassed to publish. Updated when Ubisoft breaks something, which is often.
     </p>
 
     <div class="filter-bar" id="build-filters">
@@ -46,7 +45,7 @@ const itemListLd = {
       <div class="filter-separator" style="width: 1px; height: 1.5rem; background: var(--border); margin: 0 var(--sp-2);"></div>
       <button class="filter-btn" data-filter="pve">PvE</button>
       <button class="filter-btn" data-filter="pvp">PvP</button>
-      <button class="filter-btn" data-filter="meta">Meta</button>
+      <button class="filter-btn" data-filter="pvepvp">PvE/PvP</button>
       <div class="filter-separator" style="width: 1px; height: 1.5rem; background: var(--border); margin: 0 var(--sp-2);"></div>
       {specs.map(s => <button class="filter-btn" data-filter={s}>{s}</button>)}
     </div>
@@ -87,7 +86,7 @@ const itemListLd = {
 
     <!-- Empty state -->
     <div id="no-results" style="display:none;text-align:center;padding:var(--sp-12) 0;">
-      <p style="color:var(--ink-muted);font-size:var(--text-lg);">No builds match that filter.</p>
+      <p style="color:var(--ink-muted);font-size:var(--text-lg);">No builds match that filter. Your standards are too high. Lower them and try again.</p>
       <button class="btn btn--outline" id="clear-filter" style="margin-top:var(--sp-4);">Show All Builds</button>
     </div>
   </div>
@@ -122,13 +121,8 @@ const itemListLd = {
         show = el.dataset.pve === 'true';
       } else if (currentFilter === 'pvp') {
         show = el.dataset.pvp === 'true';
-      } else if (currentFilter === 'meta') {
-        try {
-          const tags = JSON.parse(el.dataset.tags || '[]');
-          show = tags.some((t: string) => t.toLowerCase() === 'meta');
-        } catch {
-          show = false;
-        }
+      } else if (currentFilter === 'pvepvp') {
+        show = el.dataset.pve === 'true' && el.dataset.pvp === 'true';
       } else {
         show = el.dataset.spec === currentFilter;
       }

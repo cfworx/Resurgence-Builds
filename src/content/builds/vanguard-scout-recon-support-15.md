@@ -6,7 +6,7 @@ pve: true
 pvp: false
 lastUpdated: 2026-05-24T11:00:00Z
 patch: "Season 2"
-tags: ["vanguard", "scout", "recon", "support", "engineering", "smart-cover", "tactical-link", "scanning-pulse", "fully-charged", "team-dps"]
+tags: ["Scout", "vanguard", "recon", "support", "engineering", "smart-cover", "tactical-link", "scanning-pulse", "fully-charged", "team-dps"]
 description: "The Vanguard Scout build that triples your team's DPS through Smart Cover, Scanning Pulse, and Fully Charged stacking."
 author: "RapidF5 via AgentHuntzman"
 featuredImage: "/images/division-resurgence-vanguard-scout-build.png"

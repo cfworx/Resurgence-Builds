@@ -6,7 +6,7 @@ pve: true
 pvp: true
 lastUpdated: 2026-05-22
 patch: "Season 2"
-tags: ["tactical-pharma", "jackpot", "chemical-trap", "glass-cannon", "backup-battery", "stat-stick", "aoe-farming", "field-medic-build", "best-aoe-build", "skill-damage"]
+tags: ["Tactical Pharma", "jackpot", "chemical-trap", "glass-cannon", "backup-battery", "stat-stick", "aoe-farming", "field-medic-build", "best-aoe-build", "skill-damage"]
 description: "The #1 AOE clearing build in Division Resurgence. Chemical Trap + Jackpot 4pc melts rooms while your guns collect dust. Full gear, chips, and rotation."
 author: "RapidF5 (via RogueMadras)"
 featuredImage: "/images/division-resurgence-field-medic-geneva-suggestion-chemical-trap-build.png"
