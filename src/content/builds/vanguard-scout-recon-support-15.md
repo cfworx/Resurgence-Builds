@@ -46,7 +46,7 @@ The loop is simple: stack Engineering through Torrential Downpour and Fully Char
 | Slot | Set | Talent | Core | Bonus 1 | Bonus 2 |
 |---|---|---|---|---|---|
 | Mask | Boom Shakalaka | - | Engineering | Skill Cooldown Recovery | Skill Duration |
-| Chest | Mechanical Expert | **Socialite** | Toughness | Armor | Damage Reduction |
+| Chest | Mechanical Expert | **Socialite** | Engineering | Armor | Damage Reduction |
 | Backpack | Mechanical Expert | **Brainstorm** | Engineering | Skill Duration | Skill Cooldown Recovery |
 | Gloves | Mechanical Expert | - | Engineering | Skill Duration | Skill Cooldown Recovery |
 | Holster | Boom Shakalaka | - | Engineering | Sig. Ability Charge Efficiency | Skill Duration |
@@ -83,7 +83,7 @@ The loop is simple: stack Engineering through Torrential Downpour and Fully Char
 | Drop | Keep If | Recalibrate To |
 |---|---|---|
 | T1 Boom Shakalaka mask/holster | Engineering core + Skill CDR or Duration roll | Engineering primary, CDR/Duration secondary |
-| T1 Mechanical Expert chest | Toughness core + Socialite talent | Armor or Damage Reduction secondary |
+| T1 Mechanical Expert chest | Engineering core + Socialite talent | Armor or Damage Reduction secondary |
 | T1 Mechanical Expert backpack | Engineering core + Brainstorm talent | Skill Duration or CDR secondary |
 | T1 Mechanical Expert gloves/kneepads | Engineering core + Skill CDR or Duration roll | Engineering primary, CDR/Duration secondary |
 | Police M4 (any tier) | Torrential Downpour OR Rapid Charge rolled | Weapon Blast Damage + Weapon Damage |
@@ -96,7 +96,7 @@ The loop is simple: stack Engineering through Torrential Downpour and Fully Char
 
 ### Engineering on Every Piece
 
-AgentHuntzman's video shows mixed cores (Toughness on chest, Firepower on backpack/gloves/kneepads). We recommend Engineering on every piece except the chest (Toughness for Socialite synergy). More Engineering = more Smart Cover weapon damage for the whole team. That's the entire point of the build.
+AgentHuntzman's video shows mixed cores (Toughness on chest, Firepower on backpack/gloves/kneepads). We recommend Engineering on every piece. More Engineering = more Smart Cover weapon damage for the whole team. That's the entire point of the build.
 
 ### Mechanical Expert 4-Piece
 
@@ -186,7 +186,7 @@ These are unlocked through the Recon specialization tree and are critical to the
 | **Friendly Hand** | 2/2 | Grants +10% Damage Reduction for 10 seconds to pulsed allies. |
 | **Combat Inspiration** | 2/2 | Grants +5% Engineering for 10 seconds when an Exposed enemy dies within 30 meters, up to 3 stacks (+15% Engineering). |
 
-Foxhole is the sleeper pick. The higher your Engineering, the more extra health every teammate gets per weapon hit while behind your Smart Cover. Your teammates become borderline unkillable. This is why the build dominates Legendary missions.
+Foxhole is the sleeper here. The higher your Engineering, the more extra health every teammate gets per weapon hit while behind your Smart Cover. Your teammates become borderline unkillable. This is why the build dominates Legendary missions.
 
 ---
 
