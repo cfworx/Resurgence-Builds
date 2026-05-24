@@ -46,17 +46,21 @@ const getSpecClass = (spec: string) => {
       <div style="display:flex;gap:var(--sp-1);margin-bottom:var(--sp-2);flex-wrap:wrap;">
         <span class={`tag ${getSpecClass(specialization)}`}>{specialization}</span>
         <span class="tag">{playstyle}</span>
-        {pve && <span class="tag">PvE</span>}
-        {pvp && <span class="tag">PvP</span>}
+        {pve && pvp && <span class="tag">PvE/PvP</span>}
+        {pve && !pvp && <span class="tag">PvE</span>}
+        {!pve && pvp && <span class="tag">PvP</span>}
         {tags
           .filter(tag => {
             const t = tag.toLowerCase();
-            return t !== specialization.toLowerCase()
+            // Only show display tags (capitalized, not kebab-case SEO tags)
+            return tag[0] === tag[0].toUpperCase()
+              && !tag.includes('-')
+              && t !== specialization.toLowerCase()
               && t !== playstyle.toLowerCase()
               && t !== 'pve'
               && t !== 'pvp';
           })
-          .slice(0, 3)
+          .slice(0, 1)
           .map(tag => <span class="tag">{tag}</span>)
         }
       </div>
