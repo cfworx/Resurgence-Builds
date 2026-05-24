@@ -1,4 +1,4 @@
-# Division Resurgence Community Knowledge Base
+﻿# Division Resurgence Community Knowledge Base
 ## Dataset README & AI Ingestion Guide
 
 **Source:** r/thedivisionresurgence (Reddit)  
@@ -200,11 +200,16 @@ The Excel "Exotic Weapons" sheet contains errors for Strawberry Milkshake. **Cor
 3. Anarchy ticks over **4.50** seconds, not 10
 4. Transfer radius is **12** meters, not 25
 
-### Rule 11 - Weapon RPM Verification *(added 2026-05-24)*
+### Rule 11 - Weapon Talent Pool Constraints *(added 2026-05-24)*
+
+**Fully Charged can ONLY roll on these SMGs:** MP7, Enhanced AUG A3P, AUG A3 Para XS, Converted SMG-9 A2, P90, PP-19, Naval MP5.
+
+**Torrential Downpour (Torrential Downpour) can ONLY roll on these SMGs:** First Wave Vector 45 ACP (T2), Modified USC (T2), AUG A3 Para XS (T1), P90 (T1), MP40 (T1), Vector 45 ACP (T0), Converted SMG-9 (T0), MPX (T0).
+
+**Overlap (can roll BOTH talents):** P90 (T1), AUG A3 Para XS (T1). Only these two SMGs qualify for the Scout build secondary.
 
 **Verified SMG RPM values:**
-- Vector 45 ACP: **1200 RPM** (user-confirmed)
-- P90: **900 RPM** (cited in AgentHuntzman's Scout build)
-- Lady Death: **900 RPM** (from Excel)
-
-The First Wave Vector 45 ACP (T2) at 1200 RPM is a direct upgrade over the P90 (T1) at 900 RPM for proc-based builds (Fully Charged, Duration Downpour).
+- Vector 45 ACP: **1200 RPM** (cannot roll Fully Charged)
+- MP7: **950 RPM** (cannot roll Torrential Downpour)
+- P90: **900 RPM** (can roll both)
+- Lady Death: **900 RPM** (exotic, locked talents)

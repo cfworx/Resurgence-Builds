@@ -1,4 +1,4 @@
-__Division Resurgence__
+﻿__Division Resurgence__
 
 Build Theorycrafting Knowledge Base
 
@@ -4245,7 +4245,7 @@ __Skills \+ chips:__
 
 __Weapons:__
 
-•  Police M4 \+ P90, both with __Duration Downpour__ \(10 hits in 5s → \+22\.5% Engineering for 12s\)
+•  Police M4 \+ P90, both with __Torrential Downpour__ \(10 hits in 5s → \+22\.5% Engineering for 12s\)
 
 •  P90 specifically: __Fully Charged__ — reloading an empty magazine grants __\+750% Engineering for 12 seconds__, stacks up to 3 times\. This is what makes the build "hit like a truck\."
 
@@ -4257,7 +4257,7 @@ __Talents:__
 
 __Combat loop:__
 
-1\.  Engage with Police M4 / P90 → land 10 hits in 5s → Duration Downpour fires \(\+22\.5–50% Engineering, 12s\)
+1\.  Engage with Police M4 / P90 → land 10 hits in 5s → Torrential Downpour fires \(\+22\.5–50% Engineering, 12s\)
 
 2\.  Empty P90 magazine and reload → Fully Charged fires \(\+750% Engineering, stacks to 3, 12s\)
 
@@ -4583,7 +4583,7 @@ These are end\-of\-build diagnostic checks\. If any of these is true, the build 
 
 1\.  __Stat Spreading\.__ Balanced stats = identity\-less build\. Specialize 80%\+ of mods into your primary stat \(Firepower, Toughness, or Engineering\)\.
 
-2\.  __Blind Copying\.__ Using a meta gear list without executing the playstyle triggers — 10\-hit Duration Downpour combos, empty\-mag Fully Charged reloads, hit\-per\-second talent procs — produces 70% effectiveness loss\.
+2\.  __Blind Copying\.__ Using a meta gear list without executing the playstyle triggers — 10\-hit Torrential Downpour combos, empty\-mag Fully Charged reloads, hit\-per\-second talent procs — produces 70% effectiveness loss\.
 
 3\.  __Recalibration Comfort\.__ Choosing health/armor stats during recalibration over your primary build stat = comfort over impact\. Always recalibrate toward the build's purpose\.
 
@@ -4933,7 +4933,7 @@ __Reckless aggression:__ Pushing because you're impatient, ignoring teammate coo
 
 __Tactical aggression:__ Push the moment:
 
-1\.  Your damage buffs are actively ticking \(Duration Downpour active, Fully Charged stacks live\)
+1\.  Your damage buffs are actively ticking \(Torrential Downpour active, Fully Charged stacks live\)
 
 2\.  Squad cooldowns overlap \(Smart Cover up, Pulse up, Tactical Link charged\)
 
@@ -5093,7 +5093,7 @@ This is the canonical Vanguard support reference build\. Use these numbers verba
 
 •  __Scanning Pulse:__ Applies __20% Vulnerability__ to enemies AND stacks a __10% incoming\-damage debuff up to 3 times__ \(30% total at full stack\)\.
 
-•  __Engineering spike loop:__ M4 \+ P90 with __Duration Downpour__ \(M4\) and __Fully Charged__ \(P90\) weapon buffs constantly add __\+20% to \+30% Engineering__ mid\-combat, on top of the static 1,066 base\.
+•  __Engineering spike loop:__ M4 \+ P90 with __Torrential Downpour__ \(M4\) and __Fully Charged__ \(P90\) weapon buffs constantly add __\+20% to \+30% Engineering__ mid\-combat, on top of the static 1,066 base\.
 
 ## <a id="_Toc230065551"></a>18\.35\.6 Vanguard Lv50 Meta Watch \+ Chip Stack
 

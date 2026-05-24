@@ -8,7 +8,7 @@ author: "RapidF5"
 
 faqs:
   - question: "What is the best weapon in Division Resurgence Season 1?"
-    answer: "The Warlord AR is the consensus S-tier weapon for PvE and PvP. Massive damage per bullet, strong talent options, and the Blast damage type melts anything with a red weakness bar. The caveat is that it's an exotic, so getting one requires either luck or a blood sacrifice to the RNG gods. If you don't have a Warlord yet, any AR with Duration Downpour is your best non-exotic option."
+    answer: "The Warlord AR is the consensus S-tier weapon for PvE and PvP. Massive damage per bullet, strong talent options, and the Blast damage type melts anything with a red weakness bar. The caveat is that it's an exotic, so getting one requires either luck or a blood sacrifice to the RNG gods. If you don't have a Warlord yet, any AR with Torrential Downpour is your best non-exotic option."
   - question: "Is the tier list based on DPS numbers or actual gameplay?"
     answer: "Actual gameplay, community testing, and content creator analysis. DPS numbers in Division Resurgence are misleading because the character screen doesn't account for talent procs, set bonuses, or team buffs. Our rankings reflect how weapons perform in real endgame content (Legendary missions, Dark Zone PvP, Conflict) with optimized builds, not how they look on a stat screen that was clearly designed by someone who hates useful information."
   - question: "Why is the Strawberry Milkshake rated so low?"

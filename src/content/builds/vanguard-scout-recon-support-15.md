@@ -1,4 +1,4 @@
----
+﻿---
 title: "Vanguard Scout Recon Build"
 specialization: "Vanguard"
 playstyle: "Support"
@@ -20,7 +20,7 @@ faqs:
   - question: "Can I run this build solo?"
     answer: "You can also eat soup with a fork. Technically possible, practically miserable. This build is designed to multiply other people's damage. If there are no other people, you are multiplying zero. For solo content, run a Vanguard Commando DPS build instead and come back to Scout when you have friends. Or matchmake. We don't judge."
   - question: "Is the P90 actually better than an LMG for this build?"
-    answer: "For this build, absolutely. The P90 fires at 900 RPM, which means you burn through magazines fast and trigger Fully Charged (+7.50% Engineering) on every empty reload. An LMG with a 100-round belt takes forever to empty, so you're waiting ages between Engineering stacks. The P90 exists to proc Fully Charged as often as possible. Every empty reload is a damage buff for your entire team. That said, the First Wave Vector 45 ACP (T2) fires at 1200 RPM, which is even better for proc speed. If you can farm the T2 drop with Duration Downpour + Fully Charged, the Vector is a direct upgrade."
+    answer: "For this build, absolutely. The P90 fires at 900 RPM, which means you burn through magazines fast and trigger Fully Charged (+7.50% Engineering) on every empty reload. An LMG with a 100-round belt takes forever to empty, so you're waiting ages between Engineering stacks. But here's the real reason: the build needs BOTH Torrential Downpour and Fully Charged on the same weapon. Only two SMGs in the entire game can roll both talents: the P90 and the AUG A3 Para XS. The Vector fires at 1200 RPM but can't roll Fully Charged. The MP7 fires at 950 RPM but can't roll Torrential Downpour. The P90 is the fastest SMG that actually qualifies for both slots. AgentHuntzman didn't pick it randomly."
   - question: "What's the best Vanguard support build in Division Resurgence?"
     answer: "You're looking at it. The Vanguard Scout Recon running 4pc Mechanical Expert + 2pc Boom Shakalaka is currently the highest-impact support build in the game. AgentHuntzman is running it at T1 and tripling team DPS. Meanwhile, Destiny 2's support classes are getting their final update on June 9 before Bungie turns the lights off. So if you want a looter shooter where support builds actually get new content, you're in the right place."
   - question: "Do I need Legendary drops for this build?"
@@ -37,7 +37,7 @@ Let's get the uncomfortable truth out of the way first. Your character screen DP
 
 This is the Vanguard Recon Scout. It does not kill things. It makes your entire team kill things three times faster. AgentHuntzman is running this at roughly 70% completion on T1 gear and it's already turning pickup groups from "struggling on Hard" into "accidentally speed-clearing Heroic."
 
-The whole thing runs on one combat loop: hit enemies fast, proc Duration Downpour for Engineering, empty your P90 to stack Fully Charged, then let Tactical Smart Cover convert all that Engineering into raw weapon damage for every teammate standing behind it. Scanning Pulse slaps vulnerability on everything. Tactical Link gives your team rate-of-fire steroids. Repeat until everything is dead.
+The whole thing runs on one combat loop: hit enemies fast, proc Torrential Downpour for Engineering, empty your P90 to stack Fully Charged, then let Tactical Smart Cover convert all that Engineering into raw weapon damage for every teammate standing behind it. Scanning Pulse slaps vulnerability on everything. Tactical Link gives your team rate-of-fire steroids. Repeat until everything is dead.
 
 Your scoreboard number will look embarrassing. Your team's total output will be disgusting.
 
@@ -60,20 +60,17 @@ Two guns. One talent doing 60% of the work.
 
 **Primary: Police M4 (AR)**
 
-- **Talent 1: Duration Downpour.** Hitting enemies 10 times within 5 seconds grants +22.5% Engineering for 12 seconds. This is your "always on" Engineering buff.
+- **Talent 1: Torrential Downpour.** Hitting enemies 10 times within 5 seconds grants +22.5% Engineering for 12 seconds. This is your "always on" Engineering buff.
 - **Talent 2: Rapid Charge.** Hitting an enemy 5 times in 3 seconds grants +50 Signature Ability charge. This is how you get Tactical Link back fast enough to keep it running almost permanently.
 - **Attribute roll:** Weapon Damage primary. The Police M4 can roll Weapon Blast Damage even though the gun's actual damage registers as Shredding in community testing (see our [damage types breakdown](/guides/damage-types-color-bar-weakness-guide/)). Roll for Weapon Damage, ignore the Blast attribute if it shows up.
 
-**Secondary: P90 (SMG) or First Wave Vector 45 ACP (SMG)**
+**Secondary: P90 (SMG)**
 
-- **Talent 1: Duration Downpour.** Same talent, second copy. Different cooldown timer from the primary.
+- **Talent 1: Torrential Downpour.** Same talent, second copy. Different cooldown timer from the primary.
 - **Talent 2: Fully Charged.** Reloading an empty magazine grants **+7.50% Engineering for 12 seconds, stacking up to 3 times** (+22.50% total). This is the talent that makes the build tick.
-- **P90 stats:** RPM: 900. Magazine: 50 rounds. At 900 RPM, you burn through the magazine in about 3.3 seconds of sustained fire. Every empty reload is a Fully Charged proc.
-- **Vector 45 ACP stats:** RPM: 1200. Smaller magazine. At 1200 RPM, you empty the mag even faster for more Fully Charged procs per minute.
+- **RPM: 900.** Magazine: 50 rounds. At 900 RPM, you burn through the magazine in about 3.3 seconds of sustained fire. Every empty reload is a Fully Charged proc.
 
-**Why a high-RPM SMG?** You WANT to empty the magazine fast. Every empty reload is a Fully Charged proc (+7.50% Engineering). An LMG with a 100-round belt takes forever to empty, which means forever between Engineering stacks. Speed of proc is everything on this build.
-
-**P90 vs. Vector 45 ACP:** AgentHuntzman's original build uses the P90 (T1). The **First Wave Vector 45 ACP (T2)** fires at 1200 RPM, which is 33% faster than the P90's 900 RPM. Faster RPM means faster empty mags, faster Fully Charged stacks, and faster Duration Downpour procs. If you have a T2 First Wave Vector with Duration Downpour + Fully Charged, it's a direct upgrade. The P90 is the easier-to-farm T1 bridge.
+**Why P90 specifically:** This build needs BOTH Torrential Downpour and Fully Charged on the same weapon. Out of every SMG in the game, only **two** can roll both talents simultaneously: the **P90 (T1)** and the **AUG A3 Para XS (T1)**. The Vector 45 ACP fires at 1200 RPM but can't roll Fully Charged. The MP7 fires at 950 RPM but can't roll Torrential Downpour. The P90 at 900 RPM is the fastest SMG that qualifies for both talent slots. That's why AgentHuntzman picked it. The AUG A3 Para XS is your only alternative if you can't find a good P90 drop.
 
 ## The Build
 
@@ -86,8 +83,8 @@ Two guns. One talent doing 60% of the work.
 | Chest | Boom Shakalaka | **Socialite** | Toughness | Armor (or Skill Duration) | Health (or Skill Intensity) |
 | Backpack | Boom Shakalaka | **Intense Performance II** | Engineering | Skill Intensity | Skill Cooldown Recovery |
 
-- **Primary:** Police M4 (AR) with Duration Downpour + Rapid Charge
-- **Secondary:** P90 (SMG) or First Wave Vector 45 ACP (SMG) with Duration Downpour + Fully Charged
+- **Primary:** Police M4 (AR) with Torrential Downpour + Rapid Charge
+- **Secondary:** P90 (SMG) with Torrential Downpour + Fully Charged
 - **OS Protocol:** Concerted Strike (Engineering)
 - **Skills:** Tactical Smart Cover, Scanning Pulse, Tactical Link (Signature)
 
@@ -131,7 +128,7 @@ The -5% duration penalty on a Scanning Pulse with a 17.44-second base is 0.87 se
 
 **Best in slot: Collateral Damage (Gold)**
 
-Triggers AoE blast damage on critical hits. Scales off Engineering (1,600% Engineering at level 1). With your stacked Engineering pool from Fully Charged + Duration Downpour, this OS Protocol becomes a secondary damage source that actually lets you contribute direct damage on top of all your buffing.
+Triggers AoE blast damage on critical hits. Scales off Engineering (1,600% Engineering at level 1). With your stacked Engineering pool from Fully Charged + Torrential Downpour, this OS Protocol becomes a secondary damage source that actually lets you contribute direct damage on top of all your buffing.
 
 **Runner-up: Rampart (Gold)**
 
@@ -143,7 +140,7 @@ Let's run a single combat loop. These are the real, verified numbers.
 
 **Starting Engineering:** 1,006 (gear) + 358 (Pressing Matters watch) = **1,364 base Engineering.**
 
-**Step 1:** Land 10 hits on enemies within 5 seconds with Police M4. Duration Downpour fires. +22.5% Engineering for 12 seconds. New Engineering: 1,364 x 1.225 = **1,671 Engineering.**
+**Step 1:** Land 10 hits on enemies within 5 seconds with Police M4. Torrential Downpour fires. +22.5% Engineering for 12 seconds. New Engineering: 1,364 x 1.225 = **1,671 Engineering.**
 
 **Step 2:** Empty the P90 magazine. Reload. Fully Charged stack 1 fires. +7.50% Engineering for 12 seconds. New Engineering: 1,671 x 1.075 = **~1,796 Engineering.**
 
@@ -173,7 +170,7 @@ This is the exact sequence. Memorize it like your middle school locker combo.
 
 **Phase 1 (first 10 seconds):**
 
-4. Fire Police M4 into the densest enemy cluster. Aim for 10 hits in 5 seconds for the Duration Downpour proc. +22.5% Engineering, 12 seconds.
+4. Fire Police M4 into the densest enemy cluster. Aim for 10 hits in 5 seconds for the Torrential Downpour proc. +22.5% Engineering, 12 seconds.
 5. Keep firing M4. Rapid Charge starts generating Tactical Link energy as you land 5 hits per 3-second window.
 
 **Phase 2 (10 to 25 seconds):**
@@ -212,17 +209,17 @@ The build does NOT require T2 gear to function. AgentHuntzman is running it at T
 | T1 Mechanical Expert mask/gloves/holster/kneepads | Engineering core + Skill CDR or Duration roll | Engineering primary, CDR/Duration secondary |
 | T1 Boom Shakalaka chest | Toughness core + Socialite talent | Armor or Skill Duration secondary |
 | T1 Boom Shakalaka backpack | Engineering core + Intense Performance II | Skill Intensity secondary |
-| Police M4 (any tier) | Duration Downpour OR Rapid Charge rolled | Weapon Damage primary |
-| P90 (T1) or First Wave Vector 45 ACP (T2) | **Fully Charged rolled** | Vector is a direct upgrade if you can farm the T2 drop |
+| Police M4 (any tier) | Torrential Downpour OR Rapid Charge rolled | Weapon Damage primary |
+| P90 or AUG A3 Para XS (T1) | **Both Torrential Downpour AND Fully Charged rolled** | Only two SMGs can roll both talents. P90 at 900 RPM is preferred. |
 | Pressing Matters watch | Always keep | n/a |
 
 ## TL;DR
 
 1. **Run 4pc Mechanical Expert + 2pc Boom Shakalaka.** Engineering core on every piece you can. Skill CDR, Duration, and Intensity on the bonuses.
-2. **Police M4 with Duration Downpour + Rapid Charge as primary. P90 or First Wave Vector 45 ACP with Duration Downpour + Fully Charged as secondary.** The SMG exists to proc Fully Charged. Empty the mag, reload, stack Engineering. Vector at 1200 RPM is a direct upgrade over P90 at 900 RPM if you can farm the T2 drop.
+2. **Police M4 with Torrential Downpour + Rapid Charge as primary. P90 with Torrential Downpour + Fully Charged as secondary.** Only two SMGs (P90 and AUG A3 Para XS) can roll both talents. The P90 at 900 RPM empties its mag in 3.3 seconds for maximum Fully Charged procs.
 3. **Socialite on chest, Intense Performance II on backpack.** Socialite makes you tanky. Intense Performance II makes Scanning Pulse cover entire rooms for almost no cost.
 4. **Mobile Bastion + Scout + Bugle Call for skill chips.** All three generate team Signature Ability charge or buff team output. None of them buff you personally. That's the entire point.
-5. **The combat loop is: Pulse, Smart Cover, M4 for Duration Downpour, P90 empty reloads x3, Tactical Link.** Run that loop. Your team triples their damage. Your own DPS looks mid on the scoreboard. That is the build working correctly.
+5. **The combat loop is: Pulse, Smart Cover, M4 for Torrential Downpour, P90 empty reloads x3, Tactical Link.** Run that loop. Your team triples their damage. Your own DPS looks mid on the scoreboard. That is the build working correctly.
 
 ## Related Builds
 

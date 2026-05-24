@@ -22,7 +22,7 @@ faqs:
   - question: "Can I run the Strawberry Reaper in Dark Zone PvP?"
     answer: "You can try, and the area denial aspect works great at extraction points. The problem is that Demolitionist in PvP is like bringing a trebuchet to a knife fight. If the enemy stands still, you win. If the enemy is a Vanguard player with Lady Death sprinting at you like a cracked-out cheetah, you're going to have a bad time. Plant your explosives, pray, and remember that respawning is free."
   - question: "Does this build work without exotic weapons?"
-    answer: "Yes. That's one of its biggest selling points. The Strawberry Reaper runs entirely on gear set bonuses and Engineering scaling. Your weapons are stat sticks and talent delivery systems, not the damage source. Any weapon with Duration Downpour works. You could technically run a water pistol if it had the right talent."
+    answer: "Yes. That's one of its biggest selling points. The Strawberry Reaper runs entirely on gear set bonuses and Engineering scaling. Your weapons are stat sticks and talent delivery systems, not the damage source. Any weapon with Torrential Downpour works. You could technically run a water pistol if it had the right talent."
   - question: "Is Demolitionist still good after the patch 1.2.1 changes?"
     answer: "Demolitionist was barely touched in 1.2.1. While Ubisoft was busy fixing the inventory bug for the eighteenth time, Demolitionist players were quietly deleting rooms full of enemies. The small indie company has bigger fish to fry right now, so enjoy the current state of explosive dominance while it lasts."
 ---

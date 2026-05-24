@@ -1,4 +1,4 @@
-**Division Resurgence**
+﻿**Division Resurgence**
 
 Build Theorycrafting Knowledge Base
 
@@ -5727,7 +5727,7 @@ DR, and movement speed
 
 **Weapons:**
 
-•  Police M4 + P90, both with **Duration Downpour** (10 hits in 5s →
+•  Police M4 + P90, both with **Torrential Downpour** (10 hits in 5s →
 +22.5% Engineering for 12s)
 
 •  P90 specifically: **Fully Charged** --- reloading an empty magazine
@@ -5744,7 +5744,7 @@ coverage, --5% duration
 
 **Combat loop:**
 
-1.  Engage with Police M4 / P90 → land 10 hits in 5s → Duration Downpour
+1.  Engage with Police M4 / P90 → land 10 hits in 5s → Torrential Downpour
 fires (+22.5--50% Engineering, 12s)
 
 2.  Empty P90 magazine and reload → Fully Charged fires (+750%
@@ -6118,7 +6118,7 @@ build is broken regardless of Power Score.
 Engineering).
 
 2.  **Blind Copying.** Using a meta gear list without executing the
-playstyle triggers --- 10-hit Duration Downpour combos, empty-mag Fully
+playstyle triggers --- 10-hit Torrential Downpour combos, empty-mag Fully
 Charged reloads, hit-per-second talent procs --- produces 70%
 effectiveness loss.
 
@@ -6672,7 +6672,7 @@ downed player, momentum loss, team rescue diverts focus, wipe.
 
 **Tactical aggression:** Push the moment:
 
-1.  Your damage buffs are actively ticking (Duration Downpour active,
+1.  Your damage buffs are actively ticking (Torrential Downpour active,
 Fully Charged stacks live)
 
 2.  Squad cooldowns overlap (Smart Cover up, Pulse up, Tactical Link
@@ -6919,7 +6919,7 @@ to allies that scales off your Engineering stat.
 stacks a **10% incoming-damage debuff up to 3 times** (30% total at full
 stack).
 
-•  **Engineering spike loop:** M4 + P90 with **Duration Downpour** (M4)
+•  **Engineering spike loop:** M4 + P90 with **Torrential Downpour** (M4)
 and **Fully Charged** (P90) weapon buffs constantly add **+20% to +30%
 Engineering** mid-combat, on top of the static 1,066 base.
 
@@ -28452,7 +28452,7 @@ Source: [SHD Manual --- end of video](https://www.youtube.com/watch?v=Mt3E4A0l0Z
 
 Source: [Best Scout Build in Division Resurgence (Vanguard Meta) T1 gear](https://www.youtube.com/watch?v=b1ZjnGeeRKI) (Apr 26, 2026), 16:44, AgentHuntsman.
 
-This video is the **primary source** for the existing KB entry at Section 18.14 (Vanguard Scout / Recon build, lines 5695-5762). All numbers in that section --- 142.11k DPS, 76,163 health, 5,119 armor, Mechanical Expert 4pc + Boom Shakalaka 2pc, Precise Matters watch, Tactical Smart Cover 41.20s/35.59s, Scanning Pulse 17.44s/14.95s, Tactical Link 21.74s, Duration Downpour +22.5% Engineering, Fully Charged +750% Engineering, Socialite, Intense Performance II --- come directly from AgentHuntsman's on-screen breakdown.
+This video is the **primary source** for the existing KB entry at Section 18.14 (Vanguard Scout / Recon build, lines 5695-5762). All numbers in that section --- 142.11k DPS, 76,163 health, 5,119 armor, Mechanical Expert 4pc + Boom Shakalaka 2pc, Precise Matters watch, Tactical Smart Cover 41.20s/35.59s, Scanning Pulse 17.44s/14.95s, Tactical Link 21.74s, Torrential Downpour +22.5% Engineering, Fully Charged +750% Engineering, Socialite, Intense Performance II --- come directly from AgentHuntsman's on-screen breakdown.
 
 **Use this video as the primary citation when posting any Vanguard Recon scout content.** The build has been verified against gameplay footage, not just text descriptions.
 

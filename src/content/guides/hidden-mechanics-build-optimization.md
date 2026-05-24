@@ -1,4 +1,4 @@
----
+﻿---
 title: "7 Hidden Mechanics Explained"
 category: "Endgame"
 lastUpdated: 2026-05-24T12:00:00Z
@@ -19,7 +19,7 @@ faqs:
   - question: "Why do I keep dying in Legendary missions?"
     answer: "90% of the time it's positioning, not toughness. You're peeking too long, standing in the open, or fighting from angles that expose you to four enemies at once. Move to cover that only exposes you to one or two enemies at a time. Use Smart Cover. Let enemies come to your kill zone instead of running into theirs. The other 10% of the time, yes, your armor is too low. Run Socialite on chest. Destiny players had ten years to learn this. You get one paragraph."
   - question: "Does RPM actually matter more than damage per bullet?"
-    answer: "For any build that relies on procs, stacks, or talent triggers: absolutely yes. A P90 firing 900 rounds per minute generates talent procs three times faster than a marksman rifle firing 300 RPM. If your build needs to hit enemies 10 times in 5 seconds to trigger Duration Downpour, the P90 gets there in 0.67 seconds. The marksman rifle needs 2 seconds. In a game where buff windows are 12 seconds long, that speed difference is the entire build."
+    answer: "For any build that relies on procs, stacks, or talent triggers: absolutely yes. A P90 firing 900 rounds per minute generates talent procs three times faster than a marksman rifle firing 300 RPM. If your build needs to hit enemies 10 times in 5 seconds to trigger Torrential Downpour, the P90 gets there in 0.67 seconds. The marksman rifle needs 2 seconds. In a game where buff windows are 12 seconds long, that speed difference is the entire build."
   - question: "What's the fastest way to fix a weak build in Division Resurgence?"
     answer: "Step 1: Pick one core stat and put it on every piece. Step 2: Make sure your chest and backpack talents actually synergize with your playstyle, not just whatever dropped first. Step 3: Check if your weapon's damage type matches the content you're running. Step 4: Stop recalibrating for health and start recalibrating for damage or utility. You can do all four of these in about 20 minutes and your build will feel like a completely different character. Faster than waiting for Ubisoft to buff your favorite weapon, that's for sure."
 ---
@@ -63,7 +63,7 @@ The math, simplified:
 - Faster stacks = higher buff uptime
 - Higher buff uptime = higher actual damage output
 
-The character screen DPS does not show any of this. It calculates one bullet at one base damage value. It doesn't know that your build wants to trigger Duration Downpour 14 times per second.
+The character screen DPS does not show any of this. It calculates one bullet at one base damage value. It doesn't know that your build wants to trigger Torrential Downpour 14 times per second.
 
 **The takeaway:** Before you pick a weapon, ask what your build wants from your weapon. If the answer is "land hits to trigger procs and stacks," pick the highest-RPM weapon in that weapon class. If the answer is "deliver one large damage instance per shot," then yes, pick the hard-hitter. Most builds want the first answer. That's why the P90 shows up in builds where it has no business being based on raw damage alone.
 
