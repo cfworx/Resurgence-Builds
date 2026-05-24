@@ -7,6 +7,8 @@ description: "Just hit endgame and don't have exotics yet? These are the best st
 author: "RapidF5"
 featuredImage: "/images/division-resurgence-best-starter-builds.jpg"
 imageAlt: "A squad of beginner Division agents fighting in snowy urban combat with basic high-end gear and starter weapons."
+shareTitle: "Best Starter Builds"
+shareText: "Just hit endgame with no exotics? These starter builds will carry you through the grind without hundreds of hours of farming."
 faqs:
   - question: "Can I take these starter builds into Legendary missions?"
     answer: "You can, but you'll probably spend a lot of time kissing the pavement. Use these builds to farm the gear you need for the actual endgame meta builds."

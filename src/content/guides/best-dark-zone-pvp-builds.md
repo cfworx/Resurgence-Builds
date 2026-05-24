@@ -7,6 +7,8 @@ description: "Want to survive extraction? These are the best Dark Zone PvP build
 author: "RapidF5"
 featuredImage: "/images/division-resurgence-best-dark-zone-pvp-builds.jpg"
 imageAlt: "Three elite Division Resurgence agents in the Dark Zone, armed with specialized PvP weapons and a tactical shield."
+shareTitle: "Best Dark Zone PvP Builds"
+shareText: "Stop getting ganked at extraction. These are the best DZ PvP builds in Division Resurgence for deleting rogues and stealing their loot."
 faqs:
   - question: "Are these builds good for solo Dark Zone?"
     answer: "The Lady Death Vanguard is excellent for solo play, but the Oxidizing Swarm Medic requires a team unless you enjoy getting flanked."

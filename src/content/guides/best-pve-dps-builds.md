@@ -7,6 +7,8 @@ description: "Stop bringing wet noodles to Legendary missions. These are the abs
 author: "RapidF5"
 featuredImage: "/images/best-pve-dps-builds-division-resurgence.png"
 imageAlt: "Tactical Division Resurgence agents armed with high-tech assault rifles engaged in a fierce firefight in a snowy, ruined post-apocalyptic New York City street."
+shareTitle: "Best PvE DPS Builds"
+shareText: "Stop bringing wet noodles to Legendary missions. These are the best PvE DPS builds in Division Resurgence right now."
 faqs:
   - question: "Which of these is the absolute best for soloing Legendary content?"
     answer: "The Alt-F4 Shotgun Vanguard. You delete everything before they can shoot back. But if you hate reloading, the Bulwark Vampire Tank never dies."

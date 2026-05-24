@@ -175,3 +175,55 @@ To ensure our schema markup and SEO remain flawless when you create new builds a
    ```
 
 4. **Descriptive Descriptions:** Keep the `description` field under 150 characters, but pack it with relevant terms. This is what shows up underneath the blue link on Google.
+
+## Mandatory Post Checklist (Every Post, Every Time)
+
+Before publishing ANY post (build, guide, or news), every item below must be checked. No exceptions.
+
+### Frontmatter Requirements
+
+- [ ] **`title`** - Under 45 characters (site appends " · Resurgence Builds" automatically)
+- [ ] **`description`** - Under 150 characters, keyword-rich
+- [ ] **`featuredImage`** - Path to image in `/public/images/`, filename uses keyword-dashes (e.g., `division-resurgence-vanguard-scout-build.png`)
+- [ ] **`imageAlt`** - Descriptive alt text with keywords (for AI parsers and image search)
+- [ ] **`shareTitle`** - Short, punchy title for X/Reddit share cards
+- [ ] **`shareText`** - One sentence that makes people click (shows under the card title on X)
+- [ ] **`faqs`** - At minimum 3 FAQ entries, maximum 6. Every FAQ must:
+  - Hit a primary search keyword in the question
+  - Be genuinely funny (our audience is middle-aged male gamers with edgy humor)
+  - Provide a real, useful answer underneath the joke
+- [ ] **`author`** - Always "RapidF5" unless crediting a community creator
+
+### Build-Specific Requirements
+
+- [ ] **`plannerHash`** - URL parameter string for the "Open in Build Planner" button
+- [ ] **Tier List Override** - Add the build name to `src/pages/tier-list.astro` in the `assignTier()` function
+- [ ] **`specialization`** - Must match one of: Demolitionist, Tech Operator, Bulwark, Vanguard, Field Medic
+- [ ] **`playstyle`** - Must match one of: DPS, Tank, Support, Hybrid, Solo
+
+### Image Requirements
+
+- [ ] Image generated or sourced (no placeholders ever)
+- [ ] Filename uses SEO-friendly keyword-dashes (NOT `image1.png` or `screenshot.png`)
+- [ ] File placed in `public/images/` (or `public/images/news/` for news posts)
+- [ ] Image is at least 1024x1024 for proper X card rendering
+
+### Style Rules
+
+- [ ] **NO em dashes** (the — character). Use commas, periods, or rewrite the sentence
+- [ ] Voice matches site tone: sarcastic, data-driven, funny. Think "Reddit shitposter with a journalism degree"
+- [ ] All game mechanic claims are cited or hedged ("from our understanding" / "community testing suggests")
+- [ ] Cross-links to related posts on the site (internal linking for SEO)
+
+### X (Twitter) Card Verification
+
+The site has `twitter:card = summary_large_image`, `twitter:image`, `og:image`, `og:image:width`, and `og:image:height` set globally via `SEO.astro`. For cards to display correctly on X:
+
+1. The `featuredImage` path must point to a real file in `/public/images/`
+2. The image must be at least 800x418 pixels (we use 1024x1024)
+3. After deploying, X caches old cards aggressively. Use the [X Card Validator](https://cards-dev.twitter.com/validator) to force a re-crawl, or post a new tweet (X re-crawls on first share)
+4. Our `twitter:site` is `@ResurgenceBuild` (no trailing 's')
+
+### Pre-Publish Build Check
+
+Always run `npx astro build` before deploying. The build must complete with zero errors. Warnings about "Duplicate id" are from Astro's content cache and can be ignored.
