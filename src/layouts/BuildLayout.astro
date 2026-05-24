@@ -108,7 +108,8 @@ const redditShareUrl = `https://reddit.com/submit?url=${encodeURIComponent(Astro
         </div>
 
         {featuredImage && (
-          <div class="build-hero">
+          <div class="build-hero" style={`background-image: url('${featuredImage}')`}>
+            <div class="build-hero__blur"></div>
             <img
               src={featuredImage}
               alt={imageAlt || `${title} - ${specialization} ${playstyle} build guide for Division Resurgence`}
@@ -218,15 +219,31 @@ const redditShareUrl = `https://reddit.com/submit?url=${encodeURIComponent(Astro
     margin: var(--sp-6) 0;
     border-radius: var(--border-radius);
     overflow: hidden;
-    background: var(--surface);
+    background-color: var(--surface);
+    background-size: cover;
+    background-position: center;
+    position: relative;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .build-hero__blur {
+    position: absolute;
+    inset: -20px; /* Oversize to hide blur edges */
+    background: inherit;
+    filter: blur(16px) brightness(0.4);
+    z-index: 0;
   }
   .build-hero img {
+    position: relative;
+    z-index: 1;
     max-width: 100%;
     height: auto;
-    display: inline-block;
-    max-height: 420px;
+    display: block;
+    max-height: 480px;
     object-fit: contain;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
   }
 
   /* Mobile: sidebar on top, article below */

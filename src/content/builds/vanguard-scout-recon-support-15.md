@@ -16,7 +16,7 @@ shareText: "Your DPS looks mid. Your team's DPS triples. The Vanguard Scout is t
 plannerHash: "s=Vanguard&sc=Scout&n=Recon+Scout&ms=gs-9&m1=Skill+Cooldown+Recovery&m2=Skill+Intensity&cs=gs-3&ct=ba-16&c1=Armor&c2=Health&ps=gs-9&pt=bp-10&p1=Skill+Intensity&p2=Skill+Cooldown+Recovery&gs=gs-9&g1=Skill+Duration&g2=Skill+Cooldown+Recovery&hs=gs-9&h1=Signature+Ability+Charge+Efficiency&h2=Skill+Intensity&ks=gs-9&k1=Skill+Cooldown+Recovery&k2=Weapon+Damage&w1s=sw-3&w1tr=T1&w1t=wt-16&w1t2=wt-53&w2s=sw-11&w2tr=T1&w2t=wt-16&w2t2=wt-22&os=os-6&sm1=smc-50&sm2=smc-27&sm3=smc-8"
 faqs:
   - question: "Why does my DPS look terrible on this build?"
-    answer: "Because you're reading the wrong number, champ. Your character screen shows YOUR damage. It does not show the Weapon Damage you're pumping into every teammate through Smart Cover, the +20% vulnerability from Scanning Pulse, or the rate-of-fire buff from Tactical Link. Your team's total DPS is tripling. Yours just isn't the one doing it. Think of yourself as the guy who brought the aux cord to the party. Nobody thanks the DJ, but the party dies without him."
+    answer: "Because you're reading the wrong number, champ. Your stats show YOUR damage. It does not show the Weapon Damage you're pumping into every teammate through Smart Cover, the +20% vulnerability from Scanning Pulse, or the rate-of-fire buff from Tactical Link. Your team's total DPS is tripling. Yours just isn't the one doing it. Think of yourself as the guy who brought the aux cord to the party. Nobody thanks the DJ, but the party dies without him."
   - question: "Can I run this build solo?"
     answer: "You can also eat soup with a fork. Technically possible, practically miserable. This build is designed to multiply other people's damage. If there are no other people, you are multiplying zero. For solo content, run a Vanguard Commando DPS build instead and come back to Scout when you have friends. Or matchmake. We don't judge."
   - question: "Is the P90 actually better than an LMG for this build?"
@@ -33,7 +33,7 @@ faqs:
 
 > Build credit: This build comes from [**AgentHuntzman**](https://www.youtube.com/watch?v=b1ZjnGeeRKI). Go watch his breakdown and drop a sub. The man is doing the Lord's work with a calculator.
 
-Your character screen DPS on this build is going to look terrible. Relax. That number is lying to you.
+Your personal DPS on this build is going to look terrible. Relax. That number is lying to you.
 
 This is the Vanguard Recon Scout. It does not kill things. It makes your entire team kill things three times faster. The whole thing runs on one combat loop: hit enemies fast, proc Torrential Downpour for Engineering, empty your P90 to stack Fully Charged, then let Tactical Smart Cover convert all that Engineering into raw weapon damage for every teammate standing behind it. Scanning Pulse slaps vulnerability on everything. Tactical Link gives your team rate-of-fire steroids. Repeat until everything is dead.
 
