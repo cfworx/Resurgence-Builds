@@ -2,13 +2,209 @@
 /**
  * SocialBar — official follow/join buttons for all Resurgence Builds socials.
  * Uses brand-accurate SVG icons and official brand colors.
- * All links open in new tabs with rel="noopener noreferrer" (safe external linking).
- * No rel="nofollow" — these are our own profiles and linking helps SEO (sameAs signals).
+ * Each page gets a unique, funny, keyword-rich heading based on the URL path.
  */
+
+interface Props {
+  pathname?: string;
+}
+
+const { pathname = '/' } = Astro.props;
+
+// --- Funny, keyword-rich headings by content category ---
+const buildHeadings = [
+  "Your build is mid. Our Discord will fix that.",
+  "Stop running random gear. We have a Discord for that.",
+  "You didn't farm 47 Legendary runs to NOT share your drops.",
+  "Your DPS is lacking and so is your friend list.",
+  "This build slaps harder with a squad. Find one.",
+  "Solo queue is just suffering with extra steps.",
+  "Your loadout is ready. Your squad isn't. Fix that.",
+  "Nobody cares about your Power Score. We care about your vibes.",
+  "LFG posts are cringe. Discord lobbies are not.",
+  "You read the whole build guide. You're one of us now.",
+  "Your Warlord deserves better teammates than matchmaking randoms.",
+  "Don't let your god roll rot in solo queue.",
+  "The real endgame is the friends you farm Legendaries with.",
+  "Your build is optimized. Your social life isn't.",
+  "Matchmaking gave you 4 DPS players and zero heals. We can help.",
+  "Your recalibration bench can't fix loneliness. Discord can.",
+  "This build melts. Your squad should too. Not literally.",
+  "Ubisoft made the game. We made it make sense. Join us.",
+  "Dark Zone extractions are easier with friends who won't betray you. Probably.",
+  "You just min-maxed a mobile game. You belong here.",
+  "Destiny died so we could thrive. Come thrive with us.",
+  "Your gear score is temporary. Our community is forever.",
+  "Congrats, you can read stat sheets. Now read our Discord.",
+  "The DZ rogues have a squad. You should too.",
+  "Your build didn't get you killed. Your lack of callouts did.",
+  "Even Ubisoft's QA team couldn't optimize like you just did.",
+  "Your K/D ratio needs friends, not just better gear.",
+  "The inventory bug took your gear. We'll help you rebuild.",
+  "This build guide is free. Therapy for your RNG luck is not.",
+  "Four randoms in Legendary is a war crime. Squad up.",
+  "Your talent synergies are chef's kiss. Your Discord activity is not.",
+  "If you're reading footnotes on a build guide, you're our people.",
+  "The meta changes every patch. The homies are forever.",
+  "You theorycrafted a build at work. Don't pretend you didn't.",
+  "Your Engineering stat is maxed. Your networking stat is zero.",
+  "Still using the recommended loadout? We need to talk.",
+  "The small indie company won't help you. We will.",
+];
+
+const guideHeadings = [
+  "You just read a 2,000 word guide. You're already in too deep.",
+  "Knowledge is power. Discord is where the knowledge lives.",
+  "You learned something. Now argue about it with strangers.",
+  "This guide was free. So is joining our Discord.",
+  "Ubisoft won't explain their own game. We will. Join us.",
+  "The real hidden mechanic is having friends who play this game.",
+  "You scrolled past the FAQ. You're basically family now.",
+  "Still confused? Our Discord has people even more confused than you.",
+  "The game won't teach you this. Neither will Ubisoft. We gotchu.",
+  "You now know more than 90% of matchmaking randoms. Celebrate with us.",
+  "Free knowledge, zero microtransactions. Unlike some small indie companies.",
+  "Your brain grew three sizes reading this. Your friend list should too.",
+];
+
+const newsHeadings = [
+  "Stay ahead of the patch notes. Follow us before Ubisoft breaks something.",
+  "Breaking news travels fast. Our Discord travels faster.",
+  "Ubisoft tweets. We translate. Follow along.",
+  "The next balance patch will ruin your build. We'll warn you first.",
+  "Patch notes are love letters from a small indie company.",
+  "Get the news before your clanmates. Be the smart one for once.",
+  "Server maintenance is when we post the best memes. Don't miss them.",
+  "Your Reddit feed is mid. Our content is not.",
+];
+
+const patchHeadings = [
+  "Your build just got patched. Our Discord is already theorycrafting the fix.",
+  "Ubisoft giveth and Ubisoft taketh away. We document both.",
+  "RIP to whatever got nerfed. Pour one out in our Discord.",
+  "Every patch breaks something new. We find it first.",
+  "Patch notes: the scariest content drop in any live service game.",
+  "Another patch, another reason to check if your build still works.",
+];
+
+const tierListHeadings = [
+  "Disagree with our tier list? Argue about it in Discord.",
+  "Your favorite weapon is B-tier. Cope with us.",
+  "S-tier builds. S-tier community. D-tier Strawberry Milkshake.",
+  "The meta shifts. Our tier list shifts. Your copium shouldn't.",
+  "If your main weapon isn't on this list, we need to talk.",
+];
+
+const homeHeadings = [
+  "30,000 agents can't be wrong. Actually they can. Join anyway.",
+  "The Division Resurgence community that actually explains the game.",
+  "Builds, guides, and shitposts. The holy trinity.",
+  "Where endgame players go when matchmaking lets them down.",
+  "Free builds. Free guides. Free entry. Ubisoft could never.",
+  "We're the community wiki Ubisoft was too busy to make.",
+];
+
+const fallbackHeadings = [
+  "You're still here? Might as well follow us.",
+  "The algorithm brought you here. Free will keeps you.",
+  "If you read this far, you legally have to join our Discord.",
+  "Follow us or don't. But you'll be back.",
+  "Our content is free. Our Discord is free. Your excuses aren't.",
+  "You miss 100% of the builds you don't see. Follow us.",
+];
+
+// All known page slugs per category, sorted alphabetically.
+// Each slug maps to its index position, which picks from the heading pool.
+// New pages added later just get appended and pick the next heading.
+const buildSlugs = [
+  'conflict-pvp-fearless-warlord',
+  'cover-shooter-sniper-2',
+  'dark-zone-pvp-vanguard-lady-death-3',
+  'demolitionist-explosive-chaos-4',
+  'geneva-suggestion-field-medic-12',
+  'legendary-healer-field-medic-5',
+  'lockdown-tech-op-6',
+  'panda-oxidizing-swarm-medic-14',
+  'pve-meta-vanguard-shotgun-7',
+  'skill-meta-jackpot-chemical-8',
+  'strawberry-reaper-demolitionist-10',
+  'tech-op-disorient-express-11',
+  'vampire-bulwark-tank-9',
+  'vanguard-scout-recon-support-15',
+];
+
+const guideSlugs = [
+  'best-dark-zone-pvp-builds',
+  'best-pve-dps-builds',
+  'best-starter-builds',
+  'center-ads-release-cover-peek-guide',
+  'damage-types-color-bar-weakness-guide',
+  'hidden-mechanics-build-optimization',
+  'shd-manual-stop-sucking-at-progression-13',
+  'which-specialization-to-pick',
+];
+
+const newsSlugs = [
+  'april-developer-stream-summary',
+  'community-sentiment-phase-2',
+  'division-resurgence-news-may-20-2026',
+  'inventory-bug-fixed-may-21-2026',
+  'pc-early-access-launch',
+  'phase-2-season-1-live',
+  'reddit-weekly-highlights-may-18',
+  'season-1-2-3-roadmap',
+];
+
+const patchSlugs = [
+  'hotfix-1-1-1',
+  'patch-1-1-2',
+  'patch-1-2-1',
+  'phase-2-patch-notes',
+];
+
+const tierSlugs = [
+  'weapon-tier-list-s1',
+];
+
+// Extract slug from pathname
+const slug = pathname.replace(/^\/[^/]+\//, '').replace(/\/$/, '');
+
+let headings: string[];
+let index = 0;
+
+if (pathname.startsWith('/builds/')) {
+  headings = buildHeadings;
+  const pos = buildSlugs.indexOf(slug);
+  index = pos >= 0 ? pos : buildSlugs.length;
+} else if (pathname.startsWith('/guides/')) {
+  headings = guideHeadings;
+  const pos = guideSlugs.indexOf(slug);
+  index = pos >= 0 ? pos : guideSlugs.length;
+} else if (pathname.startsWith('/news/')) {
+  headings = newsHeadings;
+  const pos = newsSlugs.indexOf(slug);
+  index = pos >= 0 ? pos : newsSlugs.length;
+} else if (pathname.startsWith('/patch-notes/')) {
+  headings = patchHeadings;
+  const pos = patchSlugs.indexOf(slug);
+  index = pos >= 0 ? pos : patchSlugs.length;
+} else if (pathname.startsWith('/tier-lists/')) {
+  headings = tierListHeadings;
+  const pos = tierSlugs.indexOf(slug);
+  index = pos >= 0 ? pos : tierSlugs.length;
+} else if (pathname === '/' || pathname === '/index.html') {
+  headings = homeHeadings;
+  index = 0;
+} else {
+  headings = fallbackHeadings;
+  index = 0;
+}
+
+const heading = headings[index % headings.length];
 ---
 
 <div class="social-bar" role="navigation" aria-label="Follow Resurgence Builds">
-  <p class="social-bar__heading">Join the Community</p>
+  <p class="social-bar__heading">{heading}</p>
   <div class="social-bar__links">
 
     <a href="https://discord.gg/t6GTR6tpd" target="_blank" rel="noopener noreferrer" class="social-btn social-btn--discord" aria-label="Join our Discord server">
