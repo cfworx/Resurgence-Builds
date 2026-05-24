@@ -45,7 +45,6 @@ const getSpecClass = (spec: string) => {
     <div class="build-card__body">
       <div style="display:flex;gap:var(--sp-1);margin-bottom:var(--sp-2);flex-wrap:wrap;">
         <span class={`tag ${getSpecClass(specialization)}`}>{specialization}</span>
-        <span class="tag">{playstyle}</span>
         {pve && pvp && <span class="tag">PvE/PvP</span>}
         {pve && !pvp && <span class="tag">PvE</span>}
         {!pve && pvp && <span class="tag">PvP</span>}
