@@ -26,7 +26,7 @@ faqs:
   - question: "Does this build work with the Oxidizing Swarm skill?"
     answer: "This build IS the Oxidizing Swarm skill. The entire loadout exists to make your chemical abilities tick harder, last longer, and cover more ground. The guns are an afterthought. You shoot your guns between skill cooldowns the way a chef uses a microwave. It works, but it's not the point."
   - question: "Is Division Resurgence pay-to-win?"
-    answer: "No. There is no gear or weapon you can buy with real money that affects gameplay. The only things for sale are cosmetics. Ubisoft may be a small indie company that struggles with inventory bugs, but at least they got the monetization right. Destiny charged people full expansion prices and then shut down in June. At least our bugs are free."
+    answer: "Yes. Next question. Look, you can absolutely swipe your credit card and skip a chunk of the grind. Is it as bad as some mobile games? No. Is it 'just cosmetics' like Ubisoft's PR team would love you to believe? Also no. The good news is that a whale with garbage positioning still dies to a free player who knows what they're doing. Money buys shortcuts, not skill. Your dad reflexes are still the bottleneck."
 ---
 
 ## What This Build Does
@@ -57,7 +57,7 @@ This is not a shooter build. This is a **spreadsheet simulator disguised as an a
 | Slot | Item | Details |
 |---|---|---|
 | **Primary** | Vector 45 ACP (SMG) | Backup Battery II + Fully Charged |
-| **Secondary** | Any AR or LMG | Backup Battery II + Fully Charged |
+| **Secondary** | Any SMG | Backup Battery II + Fully Charged |
 | **OS Protocol** | Brains Over Brawn | Hits deal additional damage = 24% Engineering (up to 48% at max upgraded) |
 | **Skill 1** | Chemical Trap | AOE acid pools — the main damage source |
 | **Skill 2** | Oxidizing Swarm | Automated corrosive drones + debuff layer |
@@ -71,8 +71,6 @@ This is not a shooter build. This is a **spreadsheet simulator disguised as an a
 | Oxidizing Swarm | **Enhanced Formula 3pc** | Skill Crit Damage +4-8%, debuffs enemy damage by 12%, heals 8% missing HP on kill |
 | Oxidizing Swarm | **Hereafter Resilience 3pc** | Auto-releases micro corrosive drones every 1.6s from backpack |
 
-> **Chip budget warning:** You can only equip 3 firmware chipsets total. These are your three. Each gold chip costs ~900,000 credits to max out. Welcome to endgame inventory management — where the real boss is your stash tab.
-
 ---
 
 ## Loot Quick-Reference
@@ -83,7 +81,7 @@ This is not a shooter build. This is a **spreadsheet simulator disguised as an a
 | Fire Cycle chest | Engineering core + Glass Cannon talent | Recal one bonus to Skill Crit Chance or Crit Damage |
 | Fire Cycle backpack | Engineering core + Prime Engineer talent | Recal one bonus to Skill Crit Damage or Intensity |
 | Vector 45 ACP (SMG) | Engineering core + Backup Battery II OR Fully Charged | Recal the missing talent onto it |
-| Secondary AR/LMG | Engineering core + Backup Battery II OR Fully Charged | Recal the missing talent onto it |
+| Secondary SMG | Engineering core + Backup Battery II OR Fully Charged | Recal the missing talent onto it |
 | Brains Over Brawn OS | Always keep | n/a |
 
 ---
@@ -147,7 +145,7 @@ Together, that's a peak of **+54.00% Engineering per weapon.** The 8-second swap
 
 1200 RPM, 25-round magazine. Empties in a fraction of a second, which means faster Fully Charged stacks. Any SMG works. The Vector is preferred because its fire rate makes it the fastest Engineering generator in the game.
 
-### Secondary: Any AR or LMG
+### Secondary: Any SMG
 
 Same talent loadout. RogueMadras runs Backup Battery II on both for seamless 100% uptime — no magazine management needed, just swap and go.
 
@@ -199,14 +197,6 @@ Why not Surgical Engineering? It only procs on crits. Brains Over Brawn procs on
 
 **PvP note:** Glass Cannon makes you extremely squishy. Play from deep cover, drop acid on choke points and extraction ropes, and let enemies walk into your pools. You fold in a fraction of a second if caught in the open. Position like your life depends on it, because it does.
 
----
-
-## Changelog
-
-- **v1.3** (May 23, 2026): Updated weapons to detail dual-talent rolls (Backup Battery II + Fully Charged) for +54.00% peak Engineering, enforced the strict 3 active firmware chipset limit, and added PvP squishiness guidelines.
-- **v1.2** (May 22, 2026): Fact-check pass — removed unverified damage numbers and fabricated PvP claims. Build works in PvP. Corrected medkit to +18% Skill Damage (KB-verified). Removed unverified display bug claim.
-- **v1.1** (May 22, 2026): Corrected weapons — build uses standard weapons with Backup Battery (both) + Fully Charged (secondary), not exotic weapons. RogueMadras runs Vector 45 ACP as primary.
-- **v1.0** (May 22, 2026): Initial build — adapted from RogueMadras's Tactical Pharma configuration for Season 2 patch.
 
 ---
 
