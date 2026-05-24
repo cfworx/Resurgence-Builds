@@ -387,6 +387,7 @@ table {
   display: block;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
+  margin-bottom: var(--sp-8);
 }
 
 thead {
