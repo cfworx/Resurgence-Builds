@@ -10,8 +10,8 @@ const allBuilds = await getCollection('builds');
 function assignTier(build) {
   const text = (build.data.title + ' ' + build.data.description + ' ' + (build.data.tags||[]).join(' ')).toLowerCase();
   
-  if (text.includes('geneva suggestion')) return 'A';
-  if (text.includes('vanguard') && text.includes('recon')) return 'B';
+  if (text.includes('roguemadras') || text.includes('geneva suggestion')) return 'S';
+  if (text.includes('agenthuntzman') || (text.includes('vanguard') && text.includes('recon'))) return 'B';
 
   return 'B';
 }
