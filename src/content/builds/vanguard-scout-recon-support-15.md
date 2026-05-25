@@ -67,27 +67,32 @@ The loop is simple: stack Engineering through Torrential Downpour and Fully Char
 | **Skill 2** | Scanning Pulse | +20% Target Vulnerability to all enemies hit |
 | **Signature** | Tactical Link | Team-wide Rate of Fire, Damage Reduction, Movement Speed |
 
-### Software/Firmware Chipsets
+### Skill Mods
 
-| Skill | Chipset | Effect |
+| Skill | Mod | Effect |
 |---|---|---|
 | Tactical Smart Cover | **Mobile Bastion** | Kills/assists behind cover grant +10 Sig. Ability charge to the whole team |
 | Scanning Pulse | **Scout (C-Chip)** | Each pulse grants +8 Sig. Ability charge to the allied team |
 | Tactical Link | **Bugle Call** | Deploying Link grants +14.4% Rate of Fire, Damage Reduction, and Movement Speed |
 
+**Alternatives worth knowing:**
+- Smart Cover: **Hardened Casing** (+12% Armor to covered allies) if your team is dying before they can deal damage
+- Scanning Pulse: **Exposing Burst** (increases Exposed stack damage) for harder PvE content with tankier enemies
+- Tactical Link: Target Rich Environment is a specialization tree node, not a mod slot. Bugle Call is the correct mod here.
+
 ---
 
 ## Loot Quick-Reference
 
-| Drop | Must Drop With | Recalibrate (1 slot) |
-|---|---|---|
-| Boom Shakalaka mask/holster | Engineering core + either Skill CDR or Duration | Recal the other bonus to CDR or Duration |
-| Mechanical Expert chest | Engineering core + Socialite talent | Recal one bonus to Armor or Damage Reduction |
-| Mechanical Expert backpack | Engineering core + Brainstorm talent | Recal one bonus to Skill Duration or CDR |
-| Mechanical Expert gloves/kneepads | Engineering core + either Skill CDR or Duration | Recal the other bonus to CDR or Duration |
-| Police M4 | Engineering core + Torrential Downpour OR Rapid Charge | Recal the missing talent onto it |
-| P90 | Engineering core + Torrential Downpour OR Fully Charged | Recal the missing talent onto it |
-| Pressing Matter OS Protocol | Always keep | n/a |
+| Drop | Must Have |
+|---|---|
+| Boom Shakalaka mask/holster | Engineering core + Skill CDR or Skill Duration |
+| Mechanical Expert chest | Engineering core + Socialite talent |
+| Mechanical Expert backpack | Engineering core + Brainstorm talent |
+| Mechanical Expert gloves/kneepads | Engineering core + Skill CDR or Skill Duration |
+| Police M4 | Torrential Downpour + Rapid Charge (recal whichever is missing) |
+| P90 | Torrential Downpour + Fully Charged (recal whichever is missing) |
+| Pressing Matter OS Protocol | Always keep |
 
 ---
 
@@ -111,6 +116,8 @@ The 2pc (-6.0% CDR) stacks with Mechanical Expert's 3pc for even faster skill cy
 
 It rewards exactly what you're already doing — sitting in your Smart Cover while enemies push toward you — with a massive armor boost at the moment of contact.
 
+The chest slot does have other talent options worth exploring depending on how your squad plays. Socialite is our pick and AgentHuntzman's pick for standard content, but if you find something that works better for your team, drop it in Discord.
+
 ### Backpack: Brainstorm (Our Recommendation)
 
 *"Grants +15% Skill Duration. Grants an additional +15% Skill Duration when within 20 meters of an ally."*
@@ -121,11 +128,25 @@ Brainstorm gives +30% Skill Duration at all times (you are always near teammates
 
 ### A Note on Skill Intensity
 
-You'll notice we've swapped most Skill Intensity rolls for **Skill Duration**, **Sig. Ability Charge Efficiency**, **Damage Reduction**, and **Skill Cooldown Recovery**. Skill Intensity sounds good on paper but its actual impact on this build is minimal — the scaling just isn't there. You get far more value from keeping your skills up longer (Duration), getting Tactical Link back faster (SAC Efficiency), cycling skills more often (CDR), and staying alive (Damage Reduction). Prioritize those stats on your rolls.
+You'll notice we've swapped most Skill Intensity rolls for **Skill Duration**, **Sig. Ability Charge Efficiency**, **Damage Reduction**, and **Skill Cooldown Recovery**. Skill Intensity sounds good on paper but its actual impact on this build is not well documented — the community assumption is that it increases the weapon damage Smart Cover transmits to allies, but exact scaling hasn't been confirmed by testing. Until we have hard numbers, the stats with known impact win. If you test it and get real results, share them in Discord.
+
+---
+
+## Skill Duration vs. CDR: Does More CDR Actually Help?
+
+People invest in both without knowing which actually matters more. Here are the numbers.
+
+**Scanning Pulse:** Base duration roughly 17 seconds, base cooldown roughly 15 seconds. Duration already beats cooldown out of the box — the debuff doesn't expire before you can reapply it. CDR still helps tighten the cycle, but you're not in a race.
+
+**Tactical Smart Cover:** Base duration roughly 25 seconds with standard CDR. Again, duration beats cooldown. If Smart Cover is dropping before you can recast it, check your CDR rolls first.
+
+Once both skills are cycling clean with no gaps, more CDR gives diminishing returns. At that point extra Skill Duration is free uptime insurance. The 15% total CDR from Mechanical Expert 3pc + Boom Shakalaka 2pc + Pressing Matter gets you into a healthy range. Stack Duration in your bonus slots from there. Stop stressing about CDR.
 
 ---
 
 ## Weapons Deep Dive
+
+All weapons below assume a **tactical mod is equipped**. SMG tactical mod reduces reload time by roughly 45% (community-tested). AR tactical mod improves stability and reduces recoil. These are not optional — equip them.
 
 ### Primary: Police M4 (AR)
 
@@ -133,17 +154,56 @@ You'll notice we've swapped most Skill Intensity rolls for **Skill Duration**, *
 - **Rapid Charge:** Hitting an enemy 5 times in 3 seconds grants +50 Signature Ability charge. This is how you get Tactical Link back fast.
 - **RPM: 850. Magazine: 30.** This is your proc weapon, not your sustained fire weapon. Land your hits, swap to P90.
 - **Ideal attributes:** Weapon Blast Damage + Weapon Damage.
+- Torrential Downpour and Rapid Charge can be recalibrated between compatible AR platforms. Whether a specific AR can accept a specific talent depends on its talent pool — verify in-game before committing a recal.
 
 ### Secondary: P90 (SMG)
 
 - **Torrential Downpour:** Same talent, second copy. Different cooldown timer from the primary.
 - **Fully Charged:** Reloading an empty magazine grants +7.50% Engineering for 12 seconds, stacking up to 3 times (+22.50% total). This is the talent that makes the build tick.
-- **RPM: 900. Magazine: 50. Reload: 2.47s.** You burn through the magazine in about 3.3 seconds. Every empty reload is a Fully Charged proc.
+- **RPM: 900. Magazine: 50. Reload: 2.47s base.** With the SMG tactical mod, that reload gets significantly faster. You burn through the magazine in about 3.3 seconds. Every empty reload is a Fully Charged proc — the mod makes the cycle feel near-continuous.
 - **Ideal attributes:** Weapon Piercing Damage + Weapon Damage.
 
 ### Why P90 Specifically
 
-This build needs BOTH Torrential Downpour and Fully Charged on the same weapon. You only need one to drop naturally — recalibrate the other onto it. The P90 at 900 RPM is the fastest SMG that can roll both talent slots, which is why AgentHuntzman picked it.
+This build needs BOTH Torrential Downpour and Fully Charged on the same weapon. You only need one to drop naturally — recalibrate the other onto it. The P90 at 900 RPM is the fastest SMG that can roll both talent slots, which is why AgentHuntzman picked it. Based on community reports, the AUG A3 Para XS also qualifies. The Vector can't roll Fully Charged. The MP7 can't roll Torrential Downpour. If the talent pool has shifted since this was written, verify before you recal.
+
+---
+
+## Smart Cover: What the Description Doesn't Tell You
+
+**Tactical Smart Cover converts 24% of your Engineering into Weapon Damage for every agent behind cover.** The higher your Engineering, the bigger that bonus.
+
+What it doesn't say upfront: the **Foxhole** specialization node (3/3) grants **Fortified** to every ally behind your cover. While Fortified, every weapon hit restores health equal to **450% of your Engineering** for 3 seconds. On a full Engineering build, that's a meaningful passive health restore per shot — your teammates hit harder and stay alive doing it. This is why the build holds up in Legendary content. The cover is doing two jobs at once.
+
+---
+
+## This Gear on Other Specializations
+
+The gear set — Mechanical Expert 4pc + Boom Shakalaka 2pc — is not Vanguard-locked. If you have the pieces, you can run it on another specialization and keep the set bonuses. What you lose is everything in the Vanguard Recon tree: Foxhole, Exposed, Friendly Hand, Combat Inspiration, Target Rich Environment. All of that is Recon-specific.
+
+On Aegis or Tech Operator with this gear, Smart Cover still transmits weapon damage and the set CDR still applies. You just don't have the passive health restore from Foxhole, the Exposed damage stacks, or the Sig charge generation from the Scout subclass. The build functions. It's less effective.
+
+Run it on Vanguard Recon when your team coordinates around the cover. If your team scatters, the multipliers don't land and you'd get more value from a build that works independently.
+
+---
+
+## Team DPS: Before and After
+
+These are estimates based on each buff's stated value compounding in sequence — not controlled test results. Treat them as a framework for understanding how the buffs layer, not hard numbers.
+
+**Baseline (no support buffs):** 100%
+
+**After Smart Cover** (24% Engineering conversion to Weapon Damage): ~124%
+
+**After Scanning Pulse** (+20% Target Vulnerability, multiplicative): ~149%
+
+**After Exposed stacks** (+10% incoming damage, up to 3 stacks): compounds further
+
+**After Tactical Link Bugle Call** (+14.4% Rate of Fire, more shots per second): compounds further
+
+**After Combat Inspiration** (+15% Engineering feeding back into Smart Cover): small additional multiplier
+
+These stack multiplicatively, not additively. The actual output depends on your Engineering total and how many buffs are active at once. If you run it and track real numbers, share them.
 
 ---
 
@@ -207,6 +267,4 @@ Foxhole is the sleeper here. The higher your Engineering, the more extra health 
 13. Tactical Link refreshes. Repeat from Step 1.
 
 By three rotations deep in a long mission, your team feels like they're cheating.
-
-
 
