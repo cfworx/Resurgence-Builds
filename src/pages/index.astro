@@ -18,7 +18,7 @@ interface UnifiedPost {
   date: Date;
   author: string;
   description: string;
-  type: 'news' | 'patch-notes' | 'guide' | 'build';
+  type: 'news' | 'patch-notes' | 'guide' | 'build' | 'alert';
   tags: string[];
   featuredImage?: string;
   imageAlt?: string;
@@ -31,7 +31,7 @@ const posts: UnifiedPost[] = [
     date: post.data.publishDate,
     author: post.data.author,
     description: post.data.description,
-    type: 'news' as const,
+    type: (post.data.tags.includes('Alert') ? 'alert' : 'news') as 'alert' | 'news',
     tags: post.data.tags,
     featuredImage: post.data.featuredImage,
     imageAlt: post.data.imageAlt,
@@ -77,6 +77,7 @@ posts.sort((a, b) => b.date.getTime() - a.date.getTime());
 // Fixed tag list
 const filterTags = [
   { label: 'News', value: 'news' },
+  { label: 'Alerts', value: 'alert' },
   { label: 'Builds', value: 'build' },
   { label: 'Guides', value: 'guide' },
   { label: 'Patch Notes', value: 'patch-notes' },

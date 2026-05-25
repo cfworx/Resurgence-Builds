@@ -5,7 +5,7 @@ export interface Props {
   date: Date;
   author: string;
   description: string;
-  type: 'news' | 'patch-notes' | 'guide' | 'build';
+  type: 'news' | 'patch-notes' | 'guide' | 'build' | 'alert';
   tags?: string[];
   featuredImage?: string;
   imageAlt?: string;
@@ -24,6 +24,7 @@ const typeLabels: Record<string, string> = {
   'patch-notes': 'Patch Notes',
   'guide': 'Guide',
   'build': 'Build',
+  'alert': '⚠ Alert',
 };
 
 const typeLabel = typeLabels[type] || type;
@@ -106,6 +107,18 @@ const typeLabel = typeLabels[type] || type;
     background: rgba(212, 165, 52, 0.15);
     color: #F5CC45;
     border: 1px solid #D4A534;
+  }
+
+  .post-type-badge--alert {
+    background: rgba(220, 38, 38, 0.15);
+    color: #F87171;
+    border: 1px solid #DC2626;
+    animation: pulse-alert 2s ease-in-out infinite;
+  }
+
+  @keyframes pulse-alert {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.6; }
   }
 
   .post-card__tags {
