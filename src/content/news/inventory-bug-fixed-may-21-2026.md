@@ -1,9 +1,9 @@
-﻿---
+---
 title: "Inventory Bug Fixed & Phase 3 News"
 publishDate: "2026-05-23T23:59:59Z"
 author: "RapidF5"
-featuredImage: "/images/news/inventory-wipe-bug-fixed.png"
-imageAlt: "A Division Agent looking at a glitching orange holographic smartwatch interface on a snowy New York street, representing the inventory out-of-bounds error."
+featuredImage: "/images/news/inventory-wipe-bug-fixed.jpg"
+imageAlt: "A Division Resurgence Agent looking at a glitching orange holographic smartwatch interface on a snowy New York street, representing the inventory out-of-bounds bug error."
 description: "Ubisoft fixes the disappearing inventory index error, Strawberry Milkshake underperforms, and Phase 3 approaches. Here's your 48-hour Resurgence brief."
 tags: ["News", "Patch Notes", "Phase 2", "Strawberry Milkshake", "Aegis", "Dark Zone", "Bugs"]
 shareTitle: "The Inventory Bug is Dead"
