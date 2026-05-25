@@ -30,7 +30,7 @@ This is the long-form follow-up to every player who has ever typed "is my build 
 
 The answer is almost never "your gear is bad." The answer is that the game ships with at least seven systems that quietly decide whether you feel powerful or feel useless, and the in-game tooltips don't mention any of them. Not one. It's like buying a car that comes with an engine manual written entirely in emoji.
 
-We're pulling this together from community testing, our own build sessions, and the work [AgentHuntzman](https://www.youtube.com/@AgentHuntzman) has been documenting on YouTube over the last six weeks. Every claim is cited at the bottom. Where we're confident, we say so. Where the community is still testing, we hedge.
+We're pulling this together from community testing, our own build sessions, and hundreds of hours of endgame play. Every claim is cited at the bottom. Where we're confident, we say so. Where the community is still testing, we hedge.
 
 The seven mechanics, ranked by how much they'll change your game:
 
@@ -175,22 +175,10 @@ Answer these five questions. If you say "yes" to three or more, your build has a
 
 If you answered "no" to all five: congratulations. You're building correctly. The problem is probably positioning (Mechanic 4) or you're running a solo DPS build in content that rewards support multipliers (Mechanic 2). Consider the [Vanguard Scout Recon](/builds/vanguard-scout-recon-support-15/).
 
----
-
-## TL;DR
-
-1. **Your weapon is a trigger engine.** Pick weapons by RPM and proc synergy, not damage per bullet. The P90 is a stat-reload button, not a damage dealer.
-2. **Amplification multiplies. Raw damage adds.** Support builds that buff three different formula stages create more total team damage than solo DPS builds. The scoreboard lies.
-3. **CDR has a breaking point.** If your skill's cooldown is already shorter than its duration, stop stacking CDR. Put those stats into duration, intensity, or crit.
-4. **Position wins fights.** Spread to multiple angles. Force enemies into crossfire. A well-placed Smart Cover creates more damage than a god-rolled weapon.
-5. **Pick ONE core stat and max it.** Splitting Firepower/Toughness/Engineering 50/50 makes you bad at everything. Go all in on one.
-6. **Stop recalibrating for health.** You're dying because of positioning, not toughness. Use chest talent for survivability. Keep everything else on damage.
-7. **Power Score is not build quality.** A T1 piece with perfect rolls beats a T2 piece with garbage rolls. Stop equipping gear just because the number is bigger.
 
 ---
 
 ## Sources
 
-- [AgentHuntzman, Division Resurgence YouTube channel](https://www.youtube.com/@AgentHuntzman). Primary source for mechanics testing, build math, and the proc engine framework.
 - Community testing via [r/thedivisionresurgence](https://reddit.com/r/thedivisionresurgence). Cooldown breakpoint analysis, Engineering-to-Weapon-Damage conversion, and Power Score vs. build quality debates.
 - Internal Resurgence Builds knowledge base: damage formula stages, CDR diminishing returns modeling, and stat-splitting damage loss calculations.

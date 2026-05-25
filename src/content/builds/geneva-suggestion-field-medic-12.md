@@ -1,5 +1,5 @@
 ---
-title: "The Geneva Suggestion - Field Medic PvE Build Guide (Chemical Trap AOE)"
+title: "The Geneva Suggestion - Field Medic PvE/PvP Build Guide (Chemical Trap AOE)"
 specialization: "Field Medic"
 playstyle: DPS
 pve: true
@@ -197,12 +197,6 @@ Why not Surgical Engineering? It only procs on crits. Brains Over Brawn procs on
 
 **PvP note:** Glass Cannon makes you extremely squishy. Play from deep cover, drop acid on choke points and extraction ropes, and let enemies walk into your pools. You fold in a fraction of a second if caught in the open. Position like your life depends on it, because it does.
 
-
----
-
-## Related Builds
-
-- **Want to triple your team's DPS instead of melting rooms solo?** Check out [AgentHuntzman's Vanguard Recon Build](/builds/vanguard-scout-recon-support-15/) — the support build that makes your whole squad disgusting.
 
 ---
 

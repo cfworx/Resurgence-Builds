@@ -204,16 +204,11 @@ Foxhole is the sleeper here. The higher your Engineering, the more extra health 
 
 By three rotations deep in a long mission, your team feels like they're cheating.
 
----
-
-## Related Builds
-
-- **Want to keep your team alive instead of buffing their damage?** Check out [The Geneva Suggestion](/builds/geneva-suggestion-field-medic-12/) — the Field Medic build that heals so aggressively it probably violates international law.
 
 ---
 
 ## Sources
 
-- [AgentHuntzman, Best Scout Build in Division Resurgence (Vanguard Meta) T1 gear](https://www.youtube.com/watch?v=b1ZjnGeeRKI), April 26, 2026.
+- [AgentHuntzman, Best Scout Build in Division Resurgence (Vanguard Meta)](https://www.youtube.com/watch?v=b1ZjnGeeRKI), April 26, 2026.
 - In-game Division Resurgence Build Database, verified May 2026.
 - The in-game Armory, community gear and talent reference.
