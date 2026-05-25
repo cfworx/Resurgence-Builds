@@ -34,6 +34,7 @@ const builds = defineCollection({
       question: z.string(),
       answer: z.string(),
     })).optional(),
+    sources: z.array(z.string()).optional(),
   }),
 });
 

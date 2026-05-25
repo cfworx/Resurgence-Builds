@@ -13,6 +13,10 @@ featuredImage: "/images/division-resurgence-vanguard-scout-build.png"
 imageAlt: "Division Resurgence Vanguard Scout Recon build with Smart Cover and Scanning Pulse buffing team damage"
 shareTitle: "The Silent Carry Build"
 shareText: "Your DPS looks mid. Your team's DPS triples. The Vanguard Scout is the most impactful build in Resurgence and nobody is talking about it."
+sources:
+  - '<a href="https://www.youtube.com/watch?v=b1ZjnGeeRKI">AgentHuntzman, Best Scout Build in Division Resurgence (Vanguard Meta)</a>, April 26, 2026.'
+  - 'In-game Division Resurgence Build Database, verified May 2026.'
+  - 'The in-game Armory, community gear and talent reference.'
 plannerHash: "s=Vanguard&sc=Scout&n=Recon+Scout&ms=gs-9&m1=Skill+Cooldown+Recovery&m2=Skill+Intensity&cs=gs-3&ct=ba-16&c1=Armor&c2=Health&ps=gs-9&pt=bp-10&p1=Skill+Intensity&p2=Skill+Cooldown+Recovery&gs=gs-9&g1=Skill+Duration&g2=Skill+Cooldown+Recovery&hs=gs-9&h1=Signature+Ability+Charge+Efficiency&h2=Skill+Intensity&ks=gs-9&k1=Skill+Cooldown+Recovery&k2=Weapon+Damage&w1s=sw-3&w1tr=T1&w1t=wt-16&w1t2=wt-53&w2s=sw-11&w2tr=T1&w2t=wt-16&w2t2=wt-22&os=os-6&sm1=smc-50&sm2=smc-27&sm3=smc-8"
 faqs:
   - question: "Why does my DPS look terrible on this build?"
@@ -205,10 +209,4 @@ Foxhole is the sleeper here. The higher your Engineering, the more extra health 
 By three rotations deep in a long mission, your team feels like they're cheating.
 
 
----
 
-## Sources
-
-- [AgentHuntzman, Best Scout Build in Division Resurgence (Vanguard Meta)](https://www.youtube.com/watch?v=b1ZjnGeeRKI), April 26, 2026.
-- In-game Division Resurgence Build Database, verified May 2026.
-- The in-game Armory, community gear and talent reference.

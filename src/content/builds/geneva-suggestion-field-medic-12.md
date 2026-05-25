@@ -13,6 +13,10 @@ featuredImage: "/images/division-resurgence-field-medic-geneva-suggestion-chemic
 imageAlt: "Division Resurgence Field Medic Geneva Suggestion build using Chemical Trap and Jackpot gear set for AOE skill damage"
 shareTitle: "Share a Geneva Convention violation"
 shareText: "Share this build with that friend who became a Field Medic to 'help people.' His Hippocratic Oath is about to become a Hippocratic Suggestion."
+sources:
+  - '<a href="https://www.youtube.com/watch?v=orBlCP7ro4I&t=3351s">RogueMadras, Tactical Pharma gameplay</a>, 2026.'
+  - 'In-game Division Resurgence Build Database, verified May 2026.'
+  - 'The in-game Armory, community gear and talent reference.'
 plannerHash: "s=Field+Medic&sc=Tactical+Pharma&n=Geneva+Suggestion&ms=gs-7&m1=Skill+Critical+Chance&m2=Skill+Critical+Damage&cs=gs-11&ct=ba-12&c1=Skill+Critical+Chance&c2=Skill+Critical+Damage&ps=gs-11&pt=bp-19&p1=Skill+Critical+Damage&p2=Skill+Intensity&gs=gs-7&g1=Skill+Critical+Chance&g2=Skill+Intensity&hs=gs-7&h1=Skill+Critical+Damage&h2=Skill+Multi-Shot+Chance&ks=gs-7&k1=Skill+Critical+Chance&k2=Skill+Multi-Shot+Chance&w1s=sw-11&w1tr=T2&w1t=wt-4&w1t2=wt-20&os=os-20&sm1=smc-88&sm2=smc-76&sm3=smc-73"
 faqs:
   - question: "Is the Geneva Suggestion actually the best Field Medic build in Division Resurgence?"
@@ -198,10 +202,4 @@ Why not Surgical Engineering? It only procs on crits. Brains Over Brawn procs on
 **PvP note:** Glass Cannon makes you extremely squishy. Play from deep cover, drop acid on choke points and extraction ropes, and let enemies walk into your pools. You fold in a fraction of a second if caught in the open. Position like your life depends on it, because it does.
 
 
----
 
-## Sources
-
-- [RogueMadras, Tactical Pharma gameplay](https://www.youtube.com/watch?v=orBlCP7ro4I&t=3351s), 2026.
-- In-game Division Resurgence Build Database, verified May 2026.
-- The in-game Armory, community gear and talent reference.

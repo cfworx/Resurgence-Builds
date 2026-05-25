@@ -21,10 +21,11 @@ export interface Props {
   shareTitle?: string;
   shareText?: string;
   faqs?: { question: string; answer: string }[];
+  sources?: string[];
   plannerHash?: string;
 }
 
-const { title, description, specialization, playstyle, patch, lastUpdated, pve, pvp, tags, author, featuredImage, imageAlt, shareTitle, shareText, headings = [], faqs = [], plannerHash } = Astro.props;
+const { title, description, specialization, playstyle, patch, lastUpdated, pve, pvp, tags, author, featuredImage, imageAlt, shareTitle, shareText, headings = [], faqs = [], sources = [], plannerHash } = Astro.props;
 
 const tocItems = headings.filter(h => h.depth <= 3);
 
@@ -151,6 +152,20 @@ const redditShareUrl = `https://reddit.com/submit?url=${encodeURIComponent(Astro
           </section>
         )}
 
+        {otherBuilds.length > 0 && (
+          <>
+            <hr style="margin: var(--sp-6) 0; border: none; border-top: 1px solid var(--border);" />
+            <nav class="explore-more" aria-label="Related Builds">
+              <h2 style="font-size: var(--text-xl); margin-bottom: var(--sp-4);">Related Builds</h2>
+              <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: var(--sp-2);">
+                {otherBuilds.map(build => (
+                  <li><a href={`/builds/${build.id}/`}>{build.data.title}</a> <span style="color: var(--ink-muted); font-weight: 400;">— {build.data.specialization} {build.data.playstyle}</span></li>
+                ))}
+              </ul>
+            </nav>
+          </>
+        )}
+
         <div style="margin-top: var(--sp-8); padding: var(--sp-5); background: rgba(0,0,0,0.2); border-radius: var(--border-radius); border: 1px solid var(--border); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--sp-4);">
           <div>
             <h3 style="margin: 0 0 var(--sp-1) 0; font-size: var(--text-lg);">{shareTitle || "Share this guide"}</h3>
@@ -170,18 +185,15 @@ const redditShareUrl = `https://reddit.com/submit?url=${encodeURIComponent(Astro
           </div>
         </div>
 
-
-        <hr style="margin: var(--sp-6) 0; border: none; border-top: 1px solid var(--border);" />
-        
-        {otherBuilds.length > 0 && (
-          <nav class="explore-more" aria-label="Related Builds">
-            <h2 style="font-size: var(--text-xl); margin-bottom: var(--sp-4);">Related Builds</h2>
-            <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: var(--sp-2);">
-              {otherBuilds.map(build => (
-                <li><a href={`/builds/${build.id}/`}>{build.data.title}</a> <span style="color: var(--ink-muted); font-weight: 400;">— {build.data.specialization} {build.data.playstyle}</span></li>
+        {sources.length > 0 && (
+          <section class="build-sources" style="margin-top: var(--sp-8); background: rgba(0,0,0,0.15); border-radius: var(--border-radius); padding: var(--sp-6);">
+            <h2 id="sources" style="font-size: var(--text-xl); margin-bottom: var(--sp-4);">Sources</h2>
+            <ul style="color: var(--ink-muted); padding-left: var(--sp-5); font-size: var(--text-sm);">
+              {sources.map(source => (
+                <li style="margin-bottom: var(--sp-2);" set:html={source}></li>
               ))}
             </ul>
-          </nav>
+          </section>
         )}
       </article>
     </div>
@@ -288,37 +300,5 @@ const redditShareUrl = `https://reddit.com/submit?url=${encodeURIComponent(Astro
     }
   }
 
-  /* --- FAQ Dropdowns --- */
-  .faq-list { margin: var(--sp-4) 0 }
-  .faq-item {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 6px;
-    margin-bottom: var(--sp-2);
-    overflow: hidden;
-    transition: border-color 200ms ease;
-  }
-  .faq-item:hover { border-color: rgba(242,104,34,0.3) }
-  .faq-item[open] { border-color: var(--accent) }
-  .faq-question {
-    padding: var(--sp-3) var(--sp-4);
-    font-family: var(--font-heading);
-    font-weight: 700;
-    font-size: var(--text-sm);
-    cursor: pointer;
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    min-height: 48px;
-  }
-  .faq-question::-webkit-details-marker { display: none }
-  .faq-question::after { content: '＋'; font-size: var(--text-lg); color: var(--accent); transition: transform .2s }
-  .faq-item[open] .faq-question::after { content: '－' }
-  .faq-answer {
-    padding: 0 var(--sp-4) var(--sp-4);
-    font-size: var(--text-sm);
-    color: var(--ink-muted);
-    line-height: 1.6;
-  }
+
 </style>
