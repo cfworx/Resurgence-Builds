@@ -1,5 +1,5 @@
 ---
-title: "The Geneva Suggestion - Field Medic PvE/PvP Build Guide (Chemical Trap AOE)"
+title: "RogueMadras says this is the best PVE/PVP Build in the Division Resurgence!"
 specialization: "Field Medic"
 playstyle: DPS
 pve: true
