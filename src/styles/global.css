@@ -1249,6 +1249,54 @@ tbody tr:hover {
   min-height: 90px; /* Crucial to prevent CLS */
 }
 
+/* --- Disclaimer / Humility Banner --- */
+.disclaimer-banner {
+  background: rgba(242, 104, 34, 0.07);
+  border-top: 1px solid rgba(242, 104, 34, 0.2);
+  border-bottom: 1px solid rgba(242, 104, 34, 0.2);
+  padding: var(--sp-4) 0;
+}
+.disclaimer-banner__inner {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-4);
+  flex-wrap: wrap;
+}
+.disclaimer-banner__icon {
+  font-size: 1.4rem;
+  flex-shrink: 0;
+}
+.disclaimer-banner__text {
+  flex: 1;
+  min-width: 200px;
+  font-size: var(--text-sm);
+  color: var(--ink-muted);
+  line-height: 1.6;
+}
+.disclaimer-banner__text strong {
+  color: var(--ink);
+}
+.disclaimer-banner__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-2);
+  flex-shrink: 0;
+  padding: var(--sp-2) var(--sp-4);
+  background: #5865F2;
+  color: #fff;
+  border-radius: 6px;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: var(--text-sm);
+  text-decoration: none;
+  transition: background 0.2s ease, transform 0.15s ease;
+  white-space: nowrap;
+}
+.disclaimer-banner__btn:hover {
+  background: #4752c4;
+  transform: translateY(-1px);
+}
+
 /* --- FAQ Dropdowns (Global) --- */
 .faq-list { margin: var(--sp-4) 0 }
 .faq-item {
