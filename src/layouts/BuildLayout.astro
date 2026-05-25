@@ -159,7 +159,7 @@ const redditShareUrl = `https://reddit.com/submit?url=${encodeURIComponent(Astro
               <h2 style="font-size: var(--text-xl); margin-bottom: var(--sp-4);">Related Builds</h2>
               <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: var(--sp-2);">
                 {otherBuilds.map(build => (
-                  <li><a href={`/builds/${build.id}/`}>{build.data.title}</a> <span style="color: var(--ink-muted); font-weight: 400;">— {build.data.specialization} {build.data.playstyle}</span></li>
+                  <li><a href={`/builds/${build.id}/`}>{build.data.title.split(' — ')[0]}</a> {build.data.title.includes(' — ') && <span style="color: var(--ink-muted); font-weight: 400;">— {build.data.title.split(' — ').slice(1).join(' — ')}</span>}</li>
                 ))}
               </ul>
             </nav>
@@ -300,5 +300,20 @@ const redditShareUrl = `https://reddit.com/submit?url=${encodeURIComponent(Astro
     }
   }
 
-
 </style>
+
+<script>
+  // Wrap all prose tables in a scrollable div so the table can stay
+  // display:table (full width) while the wrapper handles overflow scrolling.
+  document.addEventListener('DOMContentLoaded', () => {
+    const prose = document.querySelector('.prose');
+    if (!prose) return;
+    prose.querySelectorAll('table').forEach(table => {
+      if (table.parentElement?.classList.contains('table-scroll')) return;
+      const wrapper = document.createElement('div');
+      wrapper.className = 'table-scroll';
+      table.parentNode?.insertBefore(wrapper, table);
+      wrapper.appendChild(table);
+    });
+  });
+</script>

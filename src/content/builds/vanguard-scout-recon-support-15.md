@@ -1,6 +1,7 @@
 ---
 title: "AgentHuntzman's Leaderboard Vanguard Support Build"
 specialization: "Vanguard"
+subclass: "Recon"
 playstyle: "Support"
 pve: true
 pvp: false

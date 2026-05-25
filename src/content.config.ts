@@ -26,6 +26,7 @@ const builds = defineCollection({
     featuredImage: z.string().optional(),
     imageAlt: z.string().optional(),
     subtitle: z.string().optional(),
+    subclass: z.string().optional(),
     author: z.string(),
     shareTitle: z.string().optional(),
     shareText: z.string().optional(),

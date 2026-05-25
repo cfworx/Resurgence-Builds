@@ -1,6 +1,7 @@
 ---
-title: "RogueMadras says this is the best PVE/PVP Build in the Division Resurgence!"
+title: "RogueMadras says this is the best PVE/PVP Build in the Division Resurgence! — Field Medic (Tactical Pharma) DPS"
 specialization: "Field Medic"
+subclass: "Tactical Pharma"
 playstyle: DPS
 pve: true
 pvp: true

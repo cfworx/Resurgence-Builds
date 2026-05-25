@@ -162,11 +162,13 @@ const typeLabel = typeLabels[type] || type;
     display: block;
     transition: transform 0.3s ease, filter 0.3s ease;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
-    filter: saturate(0.6) brightness(0.8) blur(0.5px);
+    filter: saturate(0.92) brightness(0.96) blur(0.2px);
+    transform: scale(1) translateZ(0);
+    will-change: transform;
   }
 
   .post-card:hover .post-card__image img {
-    transform: scale(1.03);
+    transform: scale(1.03) translateZ(0);
     filter: saturate(1) brightness(1);
   }
 

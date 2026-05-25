@@ -381,8 +381,7 @@ pre code { background: none; padding: 0; }
 }
 
 table {
-  width: max-content;
-  min-width: 100%;
+  width: 100%;
   border-collapse: collapse;
   font-variant-numeric: tabular-nums lining-nums;
   font-size: var(--text-sm);
@@ -392,8 +391,22 @@ table {
   margin-bottom: var(--sp-8);
 }
 
+/* Table scroll wrapper — added by JS in BuildLayout */
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: var(--sp-8);
+}
+
+.table-scroll table {
+  display: table;
+  width: 100%;
+  margin-bottom: 0;
+  overflow-x: visible;
+}
+
 thead {
-  border-bottom: 2px solid var(--accent);
+  /* border handled on th elements */
 }
 
 th {
@@ -403,6 +416,7 @@ th {
   padding: var(--sp-3) var(--sp-4);
   color: var(--ink);
   white-space: nowrap;
+  border-bottom: 2px solid var(--accent);
 }
 
 td {
@@ -941,12 +955,10 @@ tbody tr:hover {
   border-radius: 6px;
   overflow: hidden;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-  min-width: 100%;
 }
 
 .prose thead {
   background: linear-gradient(135deg, rgba(242, 104, 34, 0.12) 0%, var(--surface-2) 100%);
-  border-bottom: 2px solid var(--accent-dim);
 }
 
 .prose th {
@@ -956,6 +968,7 @@ tbody tr:hover {
   font-size: var(--text-xs);
   letter-spacing: 0.06em;
   padding: var(--sp-3) var(--sp-4);
+  border-bottom: 2px solid var(--accent);
 }
 
 .prose td {
@@ -1230,25 +1243,35 @@ tbody tr:hover {
 }
 
 /* --- AdSense Slots --- */
+@keyframes adFadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
 .ad-slot {
-  margin: var(--sp-8) 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 90px;
-  background: rgba(0, 0, 0, 0.1); /* Slight background to indicate reserved space */
+  margin: var(--sp-4) 0;
   border-radius: var(--border-radius);
   overflow: hidden;
+  animation: adFadeIn 0.6s ease;
+}
+
+/* Pre-approval placeholder: thin dark line, barely visible */
+.ad-slot__placeholder {
+  height: 4px;
+  background: var(--border);
+  border-radius: 2px;
+  opacity: 0.4;
 }
 
 .ad-slot--in-feed {
-  margin: var(--sp-6) 0;
+  margin: var(--sp-2) 0;
 }
 
+/* When real ads are live */
 .ad-slot .adsbygoogle {
   display: block;
   width: 100%;
-  min-height: 90px; /* Crucial to prevent CLS */
+  background: var(--surface);
 }
 
 /* --- Disclaimer / Humility Banner --- */

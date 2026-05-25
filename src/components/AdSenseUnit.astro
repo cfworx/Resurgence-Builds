@@ -5,24 +5,34 @@ export interface Props {
   format?: 'auto' | 'fluid' | 'rectangle';
 }
 
-// Default placeholder for development/testing
+// ─── ADSENSE SWITCH ───────────────────────────────────────────────────────────
+// Set to true once Google approves the account. Until then, renders a dark
+// placeholder that reserves no visible space. Ads will work immediately on flip.
+const ADSENSE_ENABLED = false;
+// ─────────────────────────────────────────────────────────────────────────────
+
 const clientID = "ca-pub-5813932024666862";
 const { slotId = "8102223000", className = '', format = 'auto' } = Astro.props;
 ---
 
 <div class={`ad-slot ${className}`} aria-label="Advertisement">
-  <ins class="adsbygoogle"
-       style="display:block"
-       data-ad-client={clientID}
-       data-ad-slot={slotId}
-       data-ad-format={format}
-       data-full-width-responsive="true"></ins>
-  <script is:inline>
-    // Only push to adsbygoogle if it's available, catching potential adblocker errors
-    try {
-      (window.adsbygoogle = window.adsbygoogle || []).push({});
-    } catch (e) {
-      console.warn("AdSense failed to load:", e);
-    }
-  </script>
+  {ADSENSE_ENABLED ? (
+    <>
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client={clientID}
+           data-ad-slot={slotId}
+           data-ad-format={format}
+           data-full-width-responsive="true"></ins>
+      <script is:inline>
+        try {
+          (window.adsbygoogle = window.adsbygoogle || []).push({});
+        } catch (e) {
+          console.warn("AdSense failed to load:", e);
+        }
+      </script>
+    </>
+  ) : (
+    <div class="ad-slot__placeholder"></div>
+  )}
 </div>
