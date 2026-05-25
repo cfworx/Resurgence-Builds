@@ -381,7 +381,7 @@ pre code { background: none; padding: 0; }
 }
 
 table {
-  width: 100%;
+  width: max-content;
   min-width: 100%;
   border-collapse: collapse;
   font-variant-numeric: tabular-nums lining-nums;
@@ -941,6 +941,7 @@ tbody tr:hover {
   border-radius: 6px;
   overflow: hidden;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  min-width: 100%;
 }
 
 .prose thead {

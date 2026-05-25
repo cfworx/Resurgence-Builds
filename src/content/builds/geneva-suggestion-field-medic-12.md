@@ -12,7 +12,7 @@ author: "RapidF5 (via RogueMadras)"
 featuredImage: "/images/division-resurgence-field-medic-geneva-suggestion-chemical-trap-build.png"
 imageAlt: "Division Resurgence Field Medic Geneva Suggestion build using Chemical Trap and Jackpot gear set for AOE skill damage"
 shareTitle: "Share a Geneva Convention violation"
-shareText: "Share this build with that friend who became a Field Medic to 'help people.' His Hippocratic Oath is about to become a Hippocratic Suggestion."
+shareText: "Send this to your squad's 'healer.' Tell them it's a support build. Don't mention the acid."
 sources:
   - '<a href="https://www.youtube.com/watch?v=orBlCP7ro4I&t=3351s">RogueMadras, Tactical Pharma gameplay</a>, 2026.'
   - 'In-game Division Resurgence Build Database, verified May 2026.'
