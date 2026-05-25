@@ -47,7 +47,7 @@ This is not a shooter build. This is a **spreadsheet simulator disguised as an a
 
 ### Gear
 
-| Slot | Set | Talent | Core | Bonus 1 | Bonus 2 |
+| Slot | Set | Talent | Core | Attribute Bonus 1 | Attribute Bonus 2 |
 |---|---|---|---|---|---|
 | Mask | Jackpot | - | Engineering | Skill Crit Chance | Skill Crit Damage |
 | Chest | Fire Cycle | **Glass Cannon** | Engineering | Skill Crit Chance | Skill Crit Damage |
@@ -63,13 +63,13 @@ This is not a shooter build. This is a **spreadsheet simulator disguised as an a
 | **Primary** | Vector 45 ACP (SMG) | Backup Battery II + Fully Charged |
 | **Secondary** | Any SMG | Backup Battery II + Fully Charged |
 | **OS Protocol** | Brains Over Brawn | Hits deal additional damage = 24% Engineering (up to 48% at max upgraded) |
-| **Skill 1** | Chemical Trap | AOE acid pools — the main damage source |
+| **Skill 1** | Chemical Trap | AOE acid pools, the main damage source |
 | **Skill 2** | Oxidizing Swarm | Automated corrosive drones + debuff layer |
 | **Gear Mods** | 12× Engineering | Every single slot, no compromises |
 
-### Software/Firmware Chipsets
+### Skill Mods
 
-| Skill | Chipset | Effect |
+| Skill | Mod | Effect |
 |---|---|---|
 | Chemical Trap | **Chemical Recharge 3pc** | Kills in acid pools reduce Oxidizing Swarm cooldown by 4.80s |
 | Oxidizing Swarm | **Enhanced Formula 3pc** | Skill Crit Damage +4-8%, debuffs enemy damage by 12%, heals 8% missing HP on kill |
@@ -79,14 +79,14 @@ This is not a shooter build. This is a **spreadsheet simulator disguised as an a
 
 ## Loot Quick-Reference
 
-| Drop | Must Drop With | Recalibrate (1 slot) |
-|---|---|---|
-| Jackpot mask/gloves/holster/kneepads | Engineering core + Skill Crit Chance or Crit Damage | Recal the other bonus to Crit Chance, Crit Damage, or Multi-Shot |
-| Fire Cycle chest | Engineering core + Glass Cannon talent | Recal one bonus to Skill Crit Chance or Crit Damage |
-| Fire Cycle backpack | Engineering core + Prime Engineer talent | Recal one bonus to Skill Crit Damage or Intensity |
-| Vector 45 ACP (SMG) | Engineering core + Backup Battery II OR Fully Charged | Recal the missing talent onto it |
-| Secondary SMG | Engineering core + Backup Battery II OR Fully Charged | Recal the missing talent onto it |
-| Brains Over Brawn OS | Always keep | n/a |
+| Drop | Must Have |
+|---|---|
+| Jackpot mask/gloves/holster/kneepads | Engineering core + Skill Crit Chance or Crit Damage |
+| Fire Cycle chest | Engineering core + Glass Cannon talent |
+| Fire Cycle backpack | Engineering core + Prime Engineer talent |
+| Vector 45 ACP (SMG) | Engineering core + Backup Battery II and Fully Charged |
+| Secondary SMG | Engineering core + Backup Battery II and Fully Charged |
+| Brains Over Brawn OS | Always keep |
 
 ---
 
@@ -94,13 +94,13 @@ This is not a shooter build. This is a **spreadsheet simulator disguised as an a
 
 ### Jackpot 4-Piece
 
-- **2pc:** Skill Radius +12.00% — wider acid pools, more enemies bathing in your war crimes
-- **3pc:** Skill Critical Chance +10.80% — you crit constantly
-- **4pc:** Skill Critical Damage +24.00% — the big ceiling, this is where your damage lives
+- **2pc:** Skill Radius +12.00%. Wider acid pools, more enemies bathing in your war crimes.
+- **3pc:** Skill Critical Chance +10.80%. You crit constantly.
+- **4pc:** Skill Critical Damage +24.00%. The big ceiling, this is where your damage lives.
 
 ### Fire Cycle 2-Piece
 
-- **2pc:** Skill Crit Damage +12.00% — stacks with Jackpot 4pc for a combined +36% Skill Crit Damage from set bonuses alone
+- **2pc:** Skill Crit Damage +12.00%. Stacks with Jackpot 4pc for a combined +36% Skill Crit Damage from set bonuses alone.
 
 ### Chest: Glass Cannon
 
@@ -112,7 +112,7 @@ Non-negotiable. This multiplier applies directly to skill damage. You take more 
 
 *"Deploying a Skill at full Health grants +22.50% Engineering for 12 seconds."*
 
-One of the largest Engineering boosts in the game. Every Chemical Trap deployment triggers it — as long as you're at full HP when you deploy. Enhanced Formula's 8% health recovery on kill keeps you topped off between deploys.
+One of the largest Engineering boosts in the game. Every Chemical Trap deployment triggers it, as long as you're at full HP when you deploy. Enhanced Formula's 8% health recovery on kill keeps you topped off between deploys.
 
 ### A Note on Stats
 
@@ -127,6 +127,8 @@ One of the largest Engineering boosts in the game. Every Chemical Trap deploymen
 ---
 
 ## Weapons Deep Dive
+
+> **Tactical Mod note:** All weapons below assume a tactical mod is equipped. The SMG tactical mod reduces reload time by roughly 45% (community-tested), which meaningfully tightens the swap/reload cycle and keeps Engineering uptime as high as possible.
 
 Your guns are not guns. They are Roku remotes that happen to be shaped like firearms. You fire them to proc Engineering stacks. You are not shooting enemies. You are clicking "Next Episode."
 
@@ -151,7 +153,7 @@ Together, that's a peak of **+54.00% Engineering per weapon.** The 8-second swap
 
 ### Secondary: Any SMG
 
-Same talent loadout. RogueMadras runs Backup Battery II on both for seamless 100% uptime — no magazine management needed, just swap and go.
+Same talent loadout. RogueMadras runs Backup Battery II on both for seamless 100% uptime. No magazine management needed, just swap and go.
 
 ---
 
@@ -159,9 +161,9 @@ Same talent loadout. RogueMadras runs Backup Battery II on both for seamless 100
 
 **Chemical Trap** drops 2-3 acid pools at a choke point. Enemies walk in, take massive corrosive DOT ticks, and can't shoot straight because they're busy dying. Every tick benefits from Glass Cannon, Prime Engineer, Brains Over Brawn, and your entire Skill Crit stack. The pools don't care if the target is an NPC or a player.
 
-**Oxidizing Swarm** provides the automation layer. Enhanced Formula debuffs enemy damage by 12% and heals you. Hereafter Resilience's backpack drones release micro corrosive drones every 1.6 seconds automatically — no input required. Between Chemical Trap and the auto-drones, enemies are taking corrosion damage from multiple sources simultaneously.
+**Oxidizing Swarm** provides the automation layer. Enhanced Formula debuffs enemy damage by 12% and heals you. Hereafter Resilience's backpack drones release micro corrosive drones every 1.6 seconds automatically, no input required. Between Chemical Trap and the auto-drones, enemies are taking corrosion damage from multiple sources simultaneously.
 
-**Chemical Recharge** ties the loop together. Every enemy that dies in your acid pools reduces Oxidizing Swarm's cooldown by 4.80 seconds. More kills = faster skill cycling = more acid = more kills. The build feeds itself.
+**Chemical Recharge** ties the loop together. Every enemy that dies in your acid pools reduces Oxidizing Swarm's cooldown by 4.80 seconds. More kills, faster skill cycling, more acid, more kills. The build feeds itself.
 
 ---
 

@@ -47,7 +47,7 @@ The loop is simple: stack Engineering through Torrential Downpour and Fully Char
 
 ### Gear
 
-| Slot | Set | Talent | Core | Bonus 1 | Bonus 2 |
+| Slot | Set | Talent | Core | Attribute Bonus 1 | Attribute Bonus 2 |
 |---|---|---|---|---|---|
 | Mask | Boom Shakalaka | - | Engineering | Skill Cooldown Recovery | Skill Duration |
 | Chest | Mechanical Expert | **Socialite** | Engineering | Armor | Damage Reduction |
@@ -90,8 +90,8 @@ The loop is simple: stack Engineering through Torrential Downpour and Fully Char
 | Mechanical Expert chest | Engineering core + Socialite talent |
 | Mechanical Expert backpack | Engineering core + Brainstorm talent |
 | Mechanical Expert gloves/kneepads | Engineering core + Skill CDR or Skill Duration |
-| Police M4 | Torrential Downpour + Rapid Charge (recal whichever is missing) |
-| P90 | Torrential Downpour + Fully Charged (recal whichever is missing) |
+| Police M4 | Torrential Downpour + Rapid Charge |
+| P90 | Torrential Downpour + Fully Charged |
 | Pressing Matter OS Protocol | Always keep |
 
 ---
@@ -110,13 +110,29 @@ The 2pc (+9.6% Skill Duration) and 3pc (-9.0% CDR) keep your skills cycling with
 
 The 2pc (-6.0% CDR) stacks with Mechanical Expert's 3pc for even faster skill cycling. You only slot 2 pieces, so the 3pc and 4pc bonuses are not active.
 
-### Chest: Socialite
+### Chest: Socialite (And Real Alternatives)
 
-*"Grants 10% movement speed when there are no enemies within 20m. Grants +36% armor while within 20m of an enemy."*
+*"Grants +10% Movement Speed when there are no enemies within 20m. Grants +36% Armor while within 20m of an enemy."*
 
-You're sitting in your Smart Cover while enemies push toward you, and it rewards that with a massive armor boost at the moment of contact.
+You're sitting in your Smart Cover while enemies push toward you, and it rewards that with a massive armor boost at the moment of contact. Solid pick, and AgentHuntzman's choice.
 
-The chest slot does have other talent options worth exploring depending on how your squad plays. Socialite is our pick and AgentHuntzman's pick for standard content, but if you find something that works better for your team, drop it in Discord.
+**Attribute bonuses on the chest:** Roll Armor and Damage Reduction here, not Duration or CDR. The chest is the one survivability slot in the build. Socialite's +36% Armor scales directly off your Armor stat, so more Armor in your bonus slots means a bigger shield when enemies close range. Damage Reduction stacks on top. The rest of your gear handles uptime. The chest handles keeping you alive long enough to use it.
+
+But the chest slot has genuine competitors that are worth knowing:
+
+**Deep Focus:** *"Grants +28% Skill Duration but inflicts -10% Skill Radius."*
+
+This might actually be the better pick for this build. +28% Skill Duration directly extends your Smart Cover uptime and your Scanning Pulse vulnerability window. The -10% Skill Radius penalty sounds scary but does nothing meaningful here: your Smart Cover sits on a fixed piece of cover (radius doesn't expand its protection area) and your Scanning Pulse already fills a room at base range. If you care more about uptime than staying alive, Deep Focus is worth testing over Socialite.
+
+**Accelerated Charge:** *"Kills and assists behind cover grant +30% Signature Ability Charge Efficiency for 8 seconds."*
+
+More Tactical Link uptime. If your team is getting kills consistently behind your cover (and they will be, because you've tripled their damage), this procs constantly and stacks on top of your existing SAC build. Worth running if Tactical Link uptime is your priority over raw armor.
+
+**Nothing to Lose:** *"Taking damage has a 50% chance of reducing Skill Cooldowns of deployed Skills by 2%, up to 3 stacks."*
+
+Situationally useful if you're getting pressured, but it requires you to be taking hits to proc. Doesn't fit the play pattern of sitting safely in cover.
+
+We haven't tested these head-to-head yet. If you run Deep Focus or Accelerated Charge and have results, drop them in Discord. This section will get updated.
 
 ### Backpack: Brainstorm (Our Recommendation)
 
@@ -134,13 +150,15 @@ You'll notice we've swapped most Skill Intensity rolls for **Skill Duration**, *
 
 ## Skill Duration vs. CDR: Does More CDR Actually Help?
 
-People invest in both without knowing which actually matters more. Here are the numbers.
+Short answer: at this gear setup, probably not. Here's why.
 
-**Scanning Pulse:** Base duration roughly 17 seconds, base cooldown roughly 15 seconds. Duration already beats cooldown out of the box, so the debuff doesn't expire before you can reapply it. CDR still helps tighten the cycle, but you're not in a race.
+**Scanning Pulse base duration: roughly 17 seconds. Base cooldown: roughly 15 seconds.** Duration already beats cooldown with no CDR investment at all. That means you can reapply the debuff before it ever expires. CDR reduces the gap between your recast and the next window, but since there is no gap (the debuff is still up when you can already recast), stacking more CDR gives you nothing extra on Pulse.
 
-**Tactical Smart Cover:** Base duration roughly 25 seconds with standard CDR. Again, duration beats cooldown. If Smart Cover is dropping before you can recast it, check your CDR rolls first.
+**Tactical Smart Cover base duration: roughly 25 seconds. Base cooldown: roughly 22 seconds** (with the 15% CDR from your set bonuses already applied). Same story. Duration wins. Your cover isn't dropping before you can recast it.
 
-Once both skills are cycling clean with no gaps, more CDR gives diminishing returns. At that point extra Skill Duration is free uptime insurance. The 15% total CDR from Mechanical Expert 3pc + Boom Shakalaka 2pc + Pressing Matter gets you into a healthy range. Stack Duration in your bonus slots from there. Stop stressing about CDR.
+**Our gut call:** the CDR you get from Mechanical Expert 3pc + Boom Shakalaka 2pc + Pressing Matter is already enough. It's baked into the build. Every additional CDR roll you chase after that is wasted. You're buying a faster recast window for a skill that's still active. Stack Skill Duration instead. Longer buffs mean your team is inside a vulnerability window or behind an amplified cover longer per fight. That compounds.
+
+The one exception: if your rotations feel ragged in practice and Smart Cover is actually going down mid-fight, check your CDR rolls before anything else. But if the build is geared correctly, this shouldn't happen.
 
 ---
 
