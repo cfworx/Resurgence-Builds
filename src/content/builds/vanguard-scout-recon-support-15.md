@@ -1,5 +1,5 @@
 ---
-title: "AgentHuntzman's #1 Vanguard Recon Build"
+title: "AgentHuntzman's Leaderboard Vanguard Support Build"
 specialization: "Vanguard"
 playstyle: "Support"
 pve: true
