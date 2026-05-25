@@ -382,6 +382,7 @@ pre code { background: none; padding: 0; }
 
 table {
   width: 100%;
+  min-width: 100%;
   border-collapse: collapse;
   font-variant-numeric: tabular-nums lining-nums;
   font-size: var(--text-sm);
