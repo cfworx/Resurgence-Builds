@@ -9,7 +9,7 @@ patch: "Season 2"
 tags: ["Tactical Pharma", "jackpot", "chemical-trap", "glass-cannon", "backup-battery", "stat-stick", "aoe-farming", "field-medic-build", "best-aoe-build", "skill-damage"]
 description: "The #1 AOE clearing build in Division Resurgence. Chemical Trap + Jackpot 4pc melts rooms while your guns collect dust. Full gear, chips, and rotation."
 author: "RapidF5 (via RogueMadras)"
-featuredImage: "/images/division-resurgence-field-medic-geneva-suggestion-chemical-trap-build.jpg"
+featuredImage: "/images/division-resurgence-field-medic-geneva-suggestion-chemical-trap-build.png"
 imageAlt: "Division Resurgence Field Medic Geneva Suggestion build using Chemical Trap and Jackpot gear set for AOE skill damage"
 shareTitle: "Share a Geneva Convention violation"
 shareText: "Share this build with that friend who became a Field Medic to 'help people.' His Hippocratic Oath is about to become a Hippocratic Suggestion."
