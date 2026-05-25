@@ -10,7 +10,7 @@ shareTitle: "Asian Server Maintenance Tomorrow"
 shareText: "Division Resurgence Asian servers are going offline May 26 starting 1PM CET. Plan accordingly."
 ---
 
-Heads up, agents on Asian servers — the game is going down tomorrow.
+Heads up, agents on Asian servers. The game is going down tomorrow.
 
 The Division Resurgence team confirmed maintenance will begin **May 26 at 1PM CET**. Expect the Asian servers to be unavailable for a couple of hours.
 
