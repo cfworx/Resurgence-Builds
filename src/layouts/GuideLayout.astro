@@ -16,6 +16,7 @@ export interface Props {
   shareText?: string;
   headings?: { depth: number; slug: string; text: string }[];
   faqs?: { question: string; answer: string }[];
+  sources?: string[];
   howTo?: {
     name: string;
     description: string;
@@ -38,6 +39,7 @@ const {
   shareText,
   headings = [],
   faqs = [],
+  sources = [],
   howTo,
 } = Astro.props;
 
@@ -132,20 +134,7 @@ const howToLd = howTo ? {
 
       <AdSenseUnit slotId="8102223000" />
 
-      {faqs && faqs.length > 0 && (
-        <div class="faq-section" style="margin-top: var(--sp-8);">
-          <h2>Frequently Asked Questions</h2>
-          <div class="faq-list" style="display: flex; flex-direction: column; gap: var(--sp-2);">
-            {faqs.map(faq => (
-              <details class="faq-item">
-                <summary class="faq-question">{faq.question}</summary>
-                <p class="faq-answer">{faq.answer}</p>
-              </details>
-            ))}
-          </div>
-        </div>
-      )}
-
+      <!-- 1. Share -->
       <div style="margin-top: var(--sp-8); padding: var(--sp-5); background: rgba(0,0,0,0.2); border-radius: var(--border-radius); border: 1px solid var(--border); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--sp-4);">
         <div>
           <h3 style="margin: 0 0 var(--sp-1) 0; font-size: var(--text-lg);">{shareTitle || "Share this guide"}</h3>
@@ -165,8 +154,23 @@ const howToLd = howTo ? {
         </div>
       </div>
 
+      <!-- 2. FAQ -->
+      {faqs && faqs.length > 0 && (
+        <div class="faq-section" style="margin-top: var(--sp-8);">
+          <h2>Frequently Asked Questions</h2>
+          <div class="faq-list" style="display: flex; flex-direction: column; gap: var(--sp-2);">
+            {faqs.map(faq => (
+              <details class="faq-item">
+                <summary class="faq-question">{faq.question}</summary>
+                <p class="faq-answer">{faq.answer}</p>
+              </details>
+            ))}
+          </div>
+        </div>
+      )}
+
+      <!-- 3. Explore More -->
       <hr style="margin: var(--sp-6) 0; border: none; border-top: 1px solid var(--border);" />
-      
       <nav class="explore-more" aria-label="Related Guides">
         <h2 style="font-size: var(--text-xl); margin-bottom: var(--sp-4);">Explore More</h2>
         <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: var(--sp-2);">
@@ -175,6 +179,18 @@ const howToLd = howTo ? {
           <li>Stay updated with the latest <a href="/news/"><strong>Patch Notes and Breaking News</strong></a></li>
         </ul>
       </nav>
+
+      <!-- 4. Sources -->
+      {sources.length > 0 && (
+        <section class="build-sources" style="margin-top: var(--sp-8); background: rgba(0,0,0,0.15); border-radius: var(--border-radius); padding: var(--sp-6);">
+          <h2 id="sources" style="font-size: var(--text-xl); margin-bottom: var(--sp-4);">Sources</h2>
+          <ul style="color: var(--ink-muted); padding-left: var(--sp-5); font-size: var(--text-sm);">
+            {sources.map(source => (
+              <li style="margin-bottom: var(--sp-2);" set:html={source}></li>
+            ))}
+          </ul>
+        </section>
+      )}
     </article>
   </div>
 </BaseLayout>
