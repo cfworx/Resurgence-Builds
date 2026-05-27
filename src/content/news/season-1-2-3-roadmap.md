@@ -1,11 +1,11 @@
-﻿---
+---
 title: "Season 1–3 Roadmap - What's Coming in 2026"
 publishDate: "2026-04-28"
 author: "RapidF5"
 description: "The full Division Resurgence seasonal roadmap. Phase 3 details, PC launch in Season 2, and new story missions in Season 3."
 tags: ["Roadmap", "Season 1", "Season 2", "Season 3"]
-featuredImage: "/images/season-roadmap.jpg"
-imageAlt: "A Division Agent checking a map on a snowy New York street"
+featuredImage: "/images/news/division-resurgence-season-1-2-3-roadmap-hero.jpg"
+imageAlt: "A Division Resurgence agent checking a map on a snowy New York street for the Season 1, 2, and 3 content roadmap"
 shareTitle: "Share the hopium"
 shareText: "Tweet this to convince your followers the game is definitely saved this time."
 
