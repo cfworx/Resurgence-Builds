@@ -83,7 +83,7 @@ If you have a +50% buff at Stage A and a +100% buff at Stage B, you don't get +1
 
 That's a 200% increase, not 150%. And that's with only two buffs. Stack a third buff at a third stage and the multiplication goes nuclear.
 
-This is exactly what the [Vanguard Scout Recon build](/builds/vanguard-scout-recon-support-15/) does. Tactical Smart Cover adds weapon damage (Stage 1). Scanning Pulse adds vulnerability and exposure (Stage 2). Tactical Link adds rate of fire (Stage 3). Each one feeds a different stage. Each one multiplies the others.
+This is exactly what the [AgentHuntzman's Leaderboard Ranking Vanguard Support Build](/builds/agenthuntzmans-leaderboard-ranking-vanguard-support-build/) does. Tactical Smart Cover adds weapon damage (Stage 1). Scanning Pulse adds vulnerability and exposure (Stage 2). Tactical Link adds rate of fire (Stage 3). Each one feeds a different stage. Each one multiplies the others.
 
 A solo DPS build that stacks +100% weapon damage at a single stage gets... +100% damage. A support build that stacks +30% at three different stages gets:
 
@@ -173,7 +173,7 @@ Answer these five questions. If you say "yes" to three or more, your build has a
 4. **Do you have a skill whose cooldown is shorter than its duration, but you're still stacking CDR on it?** If yes, read Mechanic 3.
 5. **Did you equip a piece of gear solely because it was a higher tier than what you had before?** If yes, read Mechanic 7.
 
-If you answered "no" to all five: congratulations. You're building correctly. The problem is probably positioning (Mechanic 4) or you're running a solo DPS build in content that rewards support multipliers (Mechanic 2). Consider the [Vanguard Scout Recon](/builds/vanguard-scout-recon-support-15/).
+If you answered "no" to all five: congratulations. You're building correctly. The problem is probably positioning (Mechanic 4) or you're running a solo DPS build in content that rewards support multipliers (Mechanic 2). Consider the [AgentHuntzman's Leaderboard Ranking Vanguard Support Build](/builds/agenthuntzmans-leaderboard-ranking-vanguard-support-build/).
 
 
 ---

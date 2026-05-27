@@ -1,5 +1,5 @@
 ---
-title: "AgentHuntzman's Leaderboard Vanguard Support Build"
+title: "AgentHuntzman's Leaderboard Ranking Vanguard Support Build"
 specialization: "Vanguard"
 subclass: "Recon"
 playstyle: "Support"
