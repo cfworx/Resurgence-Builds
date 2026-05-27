@@ -1321,6 +1321,12 @@ tbody tr:hover {
   background: #4752c4;
   transform: translateY(-1px);
 }
+@media (max-width: 767px) {
+  .disclaimer-banner__btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
 
 /* --- FAQ Dropdowns (Global) --- */
 .faq-list { margin: var(--sp-4) 0 }
