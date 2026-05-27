@@ -1,8 +1,8 @@
-﻿---
+---
 title: "Reddit This Week - 10 Posts That Defined Our Suffering"
 publishDate: "2026-05-18"
 author: "RapidF5"
-featuredImage: "/images/news/division-resurgence-reddit-weekly-highlights.webp"
+featuredImage: "/images/news/division-resurgence-reddit-weekly-highlights-may-18.jpg"
 imageAlt: "SHD agent laughing at Reddit posts about Division Resurgence bugs while eating popcorn at his gaming setup"
 description: "The funniest Reddit posts from r/thedivisionresurgence this week. Vendor bugs, vanishing gear, and the Strawberry Milkshake design roast."
 tags: ["Community", "Reddit", "Humor", "Weekly"]

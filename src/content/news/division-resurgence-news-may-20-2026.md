@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Patch 1.2.1 Drops, Strawberry Milkshake Catches Heat, and Phase 3 Is Coming to Save Us All"
 publishDate: "2026-05-20"
 author: "RapidF5"
@@ -22,17 +22,6 @@ Agents, a lot has happened in the last 48 hours. Ubisoft rolled out **Patch 1.2.
 
 ---
 
-## TL;DR - The Last 48 Hours
-
-Here's the speed run:
-
-- **Patch 1.2.1** dropped May 20, 2026 , vendor fixes, Classified Ops Pass purchase fixes, inventory disappearance fix, Lone Wolf Challenge reset fix.
-- **Compensation:** Every player gets **500,000 Basic Credits and 750 Phoenix Credits** dropped directly to their in-game mail. No hoops. No claim buttons.
-- **Strawberry Milkshake** is officially being looked at for a buff , Ubisoft confirmed in the patch notes that the perks are underwhelming. We know. We've known.
-- **Phase 3 of Season 1** is the next major content drop, expected in **June 2026** , bringing the Scorpio exotic, Freemen apparel set, and the Boombox weapon skin.
-- **Season 3 (major story expansion)** is coming **Winter 2026**. Start holding your breath now.
-
----
 
 ## Patch 1.2.1 - Full Breakdown
 

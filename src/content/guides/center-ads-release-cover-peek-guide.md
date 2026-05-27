@@ -146,7 +146,7 @@ Avoid full-auto LMGs and SMGs for this specifically. Their DPS is in sustained f
 
 ## Why This Works (The Boring Frame-Data Part)
 
-If you don't care about the underlying mechanic, skip to the TL;DR. If you stayed for the boring part , respect. Here's the short version:
+If you stayed for the boring part, respect. Here's the short version:
 
 Resurgence's netcode validates damage against your character's visibility state on the server tick that the damage event arrives. When you're in cover camera, your character model is server-side flagged as "in cover." When you ADS, that flag clears , but only after the camera transition completes. With Mixed ADS enabled, your bullets register against the *enemy's* hitbox during the transition, but your *own* hitbox is still flagged in-cover for those same frames.
 
@@ -171,14 +171,5 @@ If you're doing everything right and it still doesn't work, run through this lis
 
 ---
 
-## TL;DR - Five Things
-
-1. **Settings come first.** Entering Cover on Crouch Mode, Auto Enter Cover on No, Aim Mode on Tap, **ADS View on Mixed**, Auto-ADS on Mixed or Disable All, sensitivity acceleration X+Y at minimum, Framerate as high as your device sustains. No exceptions.
-2. **Pre-aim, then peek.** The window is too short to acquire mid-input.
-3. **Tap, don't hold.** The shot lands on the release, not the press.
-4. **Crouch cover only.** Hard cover kills the camera blend that the tech relies on.
-5. **Practice in PvE first.** Frame-perfect inputs need reps before they survive Dark Zone latency.
-
----
 
 *Got the tech working? Tag us on X or drop a clip on Reddit , we want to see your cleanest cover clears. Got a settings combo that works better than the one above? Even more interested. Got a therapist who specializes in mobile game addiction? DM me. , RapidF5*

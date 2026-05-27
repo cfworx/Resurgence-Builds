@@ -168,15 +168,6 @@ This is where the dual-type loadout stops being optional and starts being the pr
 
 ---
 
-## TL;DR
-
-1. **There is a colored bar above every elite enemy's health.** Dark blue = Piercing weakness, light blue = Shredding weakness, red = Blast weakness. Look for it.
-2. **Your weapon's damage type is on its attribute panel.** Weapon Blast Damage, Weapon Piercing Damage, or Weapon Shredding Damage. One of those is what you're dealing.
-3. **Mismatched damage type is a tax, not a wall.** You can still kill the enemy. You'll just kill them slower and waste more ammo doing it.
-4. **Warlord and Lady Death are Blast-locked. Strawberry Milkshake is Shredding-locked.** The Blast exotics eat red-bar enemies and struggle against everything else. Bring a second weapon of a different type.
-5. **Hard skews red, Heroic skews mixed, Legendary forces dual-type loadouts.** A T1 shredding LMG paired with your exotic Warlord clears more endgame content than two Warlords ever will.
-
----
 
 ## Sources
 
