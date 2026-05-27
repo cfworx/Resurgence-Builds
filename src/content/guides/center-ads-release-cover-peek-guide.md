@@ -5,7 +5,7 @@ lastUpdated: 2026-05-23T14:30:00Z
 tags: ["pvp", "cover-peek", "center-ads-release", "conflict", "dark-zone", "settings-guide", "frame-tech", "aim-mode"]
 description: "Master the Center-ADS Release cover-peek technique that every top PvP player uses in Division Resurgence. Full 14-point settings checklist, step-by-step input, practice drill, and the frame-data explanation."
 author: "RapidF5"
-featuredImage: "/images/division-resurgence-center-ads-cover-peek.jpg"
+featuredImage: "/images/division-resurgence-center-ads-cover-peek-guide-hero.png"
 imageAlt: "Division Resurgence agent performing the Center-ADS Release cover-peek technique in PvP combat in the Dark Zone"
 shareTitle: "Cover-Peek Tech Exposed"
 shareText: "The top Conflict streamers' cover-peek technique uses 14 settings and one tap input. Here's the whole playbook."
