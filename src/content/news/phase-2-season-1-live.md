@@ -1,10 +1,10 @@
-﻿---
+---
 title: "Phase 2 Is Live - Free Exotic LMG and New Events"
 publishDate: "2026-05-12"
 author: "RapidF5"
 description: "Ubisoft launches Phase 2 of Season 1 with a new Classified Ops Pass, free Strawberry Milkshake Exotic LMG, and new Dark Zone events."
 tags: ["Season 1", "Events", "Update"]
-featuredImage: "/images/news/division-resurgence-phase-2-season-1-live-hero.webp"
+featuredImage: "/images/news/division-resurgence-phase-2-season-1-live-hero.jpg"
 imageAlt: "A female Division agent standing in a snowy New York City street holding the Strawberry Milkshake Exotic LMG with an orange and black magma weapon skin"
 shareTitle: "Enable the grind"
 shareText: "Share this to peer pressure your friends into buying the season pass."
