@@ -1,11 +1,11 @@
-﻿---
+---
 title: "Patch 1.1.2 Notes"
 version: "1.1.2"
 patchDate: "2026-04-28"
 author: "RapidF5"
 summary: "The Division Resurgence Patch 1.1.2 deployed alongside the emulator PC Early Access launch, bringing cross platform matchmaking and UI bug fixes."
-featuredImage: "/images/patch-1-1-2.jpg"
-imageAlt: "An exhausted Division Agent resting against a brick wall on a snowy street"
+featuredImage: "/images/patch-notes/division-resurgence-patch-1-1-2-hero.jpg"
+imageAlt: "An exhausted Division Resurgence Agent resting against a brick wall on a snowy street"
 shareTitle: "Warn the timeline"
 shareText: "Share this to let your squad know their favorite gun just got stealth-nerfed."
 
