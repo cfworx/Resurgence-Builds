@@ -3,6 +3,7 @@ import BaseLayout from './BaseLayout.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import SectionTag from '../components/SectionTag.astro';
 import AdSenseUnit from '../components/AdSenseUnit.astro';
+import YouTubeEmbed from '../components/YouTubeEmbed.astro';
 import { getCollection } from 'astro:content';
 
 export interface Props {
@@ -23,9 +24,12 @@ export interface Props {
   faqs?: { question: string; answer: string }[];
   sources?: string[];
   plannerHash?: string;
+  videoId?: string;
+  videoTitle?: string;
+  videoChannel?: string;
 }
 
-const { title, description, specialization, playstyle, patch, lastUpdated, pve, pvp, tags, author, featuredImage, imageAlt, shareTitle, shareText, headings = [], faqs = [], sources = [], plannerHash } = Astro.props;
+const { title, description, specialization, playstyle, patch, lastUpdated, pve, pvp, tags, author, featuredImage, imageAlt, shareTitle, shareText, headings = [], faqs = [], sources = [], plannerHash, videoId, videoTitle, videoChannel } = Astro.props;
 
 const tocItems = headings.filter(h => h.depth <= 3);
 
@@ -122,6 +126,15 @@ const redditShareUrl = `https://reddit.com/submit?url=${encodeURIComponent(Astro
               fetchpriority="high"
             />
           </div>
+        )}
+
+        {videoId && (
+          <YouTubeEmbed
+            videoId={videoId}
+            title={videoTitle || `${title} — Video Guide`}
+            description={description}
+            channelName={videoChannel}
+          />
         )}
 
         {tocItems.length > 0 && (
@@ -276,6 +289,9 @@ const redditShareUrl = `https://reddit.com/submit?url=${encodeURIComponent(Astro
 
   .build-article {
     order: 1;
+    max-width: var(--content-width);
+    margin: 0 auto;
+    width: 100%;
   }
 
   /* Desktop: restore sidebar layout */
@@ -293,6 +309,8 @@ const redditShareUrl = `https://reddit.com/submit?url=${encodeURIComponent(Astro
 
     .build-article {
       order: 0;
+      max-width: none;
+      margin: 0;
     }
 
     .build-info {

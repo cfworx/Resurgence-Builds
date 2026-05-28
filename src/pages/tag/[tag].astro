@@ -1,0 +1,125 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PostCard from '../../components/PostCard.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import SectionTag from '../../components/SectionTag.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const allBuilds = await getCollection('builds');
+  const allGuides = await getCollection('guides');
+  const allNews = await getCollection('news');
+  const allPatchNotes = await getCollection('patchNotes');
+
+  // Collect every unique tag across all content
+  const tagMap = new Map<string, any[]>();
+
+  allBuilds.forEach(post => {
+    (post.data.tags || []).forEach((tag: string) => {
+      if (!tagMap.has(tag)) tagMap.set(tag, []);
+      tagMap.get(tag)!.push({
+        title: post.data.title,
+        href: `/builds/${post.id}/`,
+        date: post.data.lastUpdated,
+        author: post.data.author || 'RapidF5',
+        description: post.data.description,
+        type: 'Build',
+        tags: post.data.tags || [],
+        featuredImage: post.data.featuredImage,
+        imageAlt: post.data.imageAlt,
+      });
+    });
+  });
+
+  allGuides.forEach(post => {
+    (post.data.tags || []).forEach((tag: string) => {
+      if (!tagMap.has(tag)) tagMap.set(tag, []);
+      tagMap.get(tag)!.push({
+        title: post.data.title,
+        href: `/guides/${post.id}/`,
+        date: post.data.lastUpdated || post.data.publishDate,
+        author: post.data.author || 'RapidF5',
+        description: post.data.description,
+        type: 'Guide',
+        tags: post.data.tags || [],
+        featuredImage: post.data.featuredImage,
+        imageAlt: post.data.imageAlt,
+      });
+    });
+  });
+
+  allNews.forEach(post => {
+    (post.data.tags || []).forEach((tag: string) => {
+      if (!tagMap.has(tag)) tagMap.set(tag, []);
+      tagMap.get(tag)!.push({
+        title: post.data.title,
+        href: `/news/${post.id}/`,
+        date: post.data.publishDate,
+        author: post.data.author || 'RapidF5',
+        description: post.data.description,
+        type: 'News',
+        tags: post.data.tags || [],
+        featuredImage: post.data.image,
+        imageAlt: post.data.imageAlt,
+      });
+    });
+  });
+
+  // Filter out placeholder tags
+  const excludeTags = ['tag1', 'tag2'];
+  
+  return [...tagMap.entries()]
+    .filter(([tag]) => !excludeTags.includes(tag))
+    .map(([tag, posts]) => {
+      // Sort by date descending
+      posts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+      return {
+        params: { tag: tag.toLowerCase().replace(/\s+/g, '-') },
+        props: { 
+          tagName: tag,
+          posts,
+        },
+      };
+    });
+}
+
+const { tagName, posts } = Astro.props;
+
+// Format the tag for display (capitalize words)
+const displayTag = tagName.replace(/-/g, ' ').replace(/\b\w/g, (c: string) => c.toUpperCase());
+
+const breadcrumbItems = [
+  { name: 'Tags', url: '#' },
+  { name: displayTag, url: `/tag/${Astro.params.tag}/` },
+];
+
+const title = `${displayTag} — Division Resurgence Guides | Resurgence Builds`;
+const description = `All Division Resurgence content tagged "${displayTag}" — builds, guides, and news. ${posts.length} article${posts.length !== 1 ? 's' : ''} covering ${displayTag.toLowerCase()} in The Division Resurgence.`;
+---
+
+<BaseLayout {title} {description} breadcrumbs={breadcrumbItems}>
+  <div class="container section">
+    <Breadcrumbs items={breadcrumbItems} />
+    <SectionTag label="Tag Archive" />
+    <h1 class="heading-accent">{displayTag}</h1>
+    <p style="color:var(--ink-muted);margin-bottom:var(--sp-6);">
+      {posts.length} {posts.length === 1 ? 'article' : 'articles'} tagged <strong style="color:var(--accent);">{displayTag}</strong> in The Division Resurgence.
+    </p>
+
+    <div class="grid grid--3">
+      {posts.map((post) => (
+        <PostCard
+          title={post.title}
+          href={post.href}
+          date={post.date}
+          author={post.author}
+          description={post.description}
+          type={post.type}
+          tags={post.tags}
+          featuredImage={post.featuredImage}
+          imageAlt={post.imageAlt}
+        />
+      ))}
+    </div>
+  </div>
+</BaseLayout>

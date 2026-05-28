@@ -283,4 +283,13 @@
       </a>
     `).join('');
   });
+
+  // Auto-open search from ?q= URL parameter (enables Google SearchAction sitelinks)
+  const urlQ = new URLSearchParams(window.location.search).get('q');
+  if (urlQ && searchInput) {
+    (window as any).openSearch().then(() => {
+      searchInput.value = urlQ;
+      searchInput.dispatchEvent(new Event('input'));
+    });
+  }
 </script>

@@ -50,6 +50,15 @@ const itemListLd = {
       {specs.map(s => <button class="filter-btn" data-filter={s}>{s}</button>)}
     </div>
 
+    <div style="display: flex; flex-wrap: wrap; gap: var(--sp-2); margin-bottom: var(--sp-8);">
+      <span style="font-family: var(--font-mono); font-size: var(--text-xs); color: var(--ink-muted); text-transform: uppercase; letter-spacing: 0.08em; align-self: center; margin-right: var(--sp-1);">Class Hubs</span>
+      <a href="/class/vanguard/" style="font-size: var(--text-xs); padding: 4px 12px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1); border-radius: 999px; color: var(--ink-muted); transition: all 200ms ease; text-decoration: none;">Vanguard</a>
+      <a href="/class/field-medic/" style="font-size: var(--text-xs); padding: 4px 12px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1); border-radius: 999px; color: var(--ink-muted); transition: all 200ms ease; text-decoration: none;">Field Medic</a>
+      <a href="/class/demolitionist/" style="font-size: var(--text-xs); padding: 4px 12px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1); border-radius: 999px; color: var(--ink-muted); transition: all 200ms ease; text-decoration: none;">Demolitionist</a>
+      <a href="/class/tech-operator/" style="font-size: var(--text-xs); padding: 4px 12px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1); border-radius: 999px; color: var(--ink-muted); transition: all 200ms ease; text-decoration: none;">Tech Operator</a>
+      <a href="/class/bulwark/" style="font-size: var(--text-xs); padding: 4px 12px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1); border-radius: 999px; color: var(--ink-muted); transition: all 200ms ease; text-decoration: none;">Bulwark</a>
+    </div>
+
     <div class="grid grid--3" id="builds-grid">
       {sorted.map((build) => (
         <div 

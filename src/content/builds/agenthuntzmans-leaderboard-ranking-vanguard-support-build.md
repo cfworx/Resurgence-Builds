@@ -32,6 +32,9 @@ faqs:
     answer: "Nope. That's the beautiful part. This build already dramatically multiplies your team's damage output. Stop waiting for perfect drops and start running the build. Your squad will thank you immediately."
   - question: "Why Mechanical Expert over Long-Term Effect?"
     answer: "Mechanical Expert is the correct choice because the 2pc Skill Duration (+9.6%) and 3pc CDR (-9.0%) keep your Smart Cover and Scanning Pulse cycling with near-permanent uptime. The 4pc SAC Efficiency (+24%) means your Tactical Link charges faster. You need permanent skill uptime before you need bigger numbers. A buff that's down for 5 seconds between casts is doing zero damage during those 5 seconds, no matter how large the number is."
+videoId: "b1ZjnGeeRKI"
+videoTitle: "AgentHuntzman — Best Scout Build in Division Resurgence"
+videoChannel: "AgentHuntzman"
 ---
 
 ## What This Build Does

@@ -1,0 +1,168 @@
+---
+/**
+ * YouTubeEmbed.astro — Lazy-loaded, privacy-enhanced YouTube embed with VideoObject schema.
+ * 
+ * Usage:
+ *   <YouTubeEmbed
+ *     videoId="dQw4w9WgXcQ"
+ *     title="Build Guide by RogueMadras"
+ *     description="Full walkthrough of the Tactical Pharma build"
+ *     thumbnailQuality="maxresdefault"
+ *   />
+ */
+export interface Props {
+  /** YouTube video ID (the part after ?v=) */
+  videoId: string;
+  /** Video title — used for accessibility and schema */
+  title: string;
+  /** Optional description for VideoObject schema */
+  description?: string;
+  /** Optional upload date (ISO-8601) for schema */
+  uploadDate?: string;
+  /** Thumbnail quality: default, mqdefault, hqdefault, sddefault, maxresdefault */
+  thumbnailQuality?: string;
+  /** Optional channel name for schema */
+  channelName?: string;
+}
+
+const {
+  videoId,
+  title,
+  description = '',
+  uploadDate,
+  thumbnailQuality = 'hqdefault',
+  channelName,
+} = Astro.props;
+
+const embedUrl = `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&rel=0`;
+const thumbnailUrl = `https://i.ytimg.com/vi/${videoId}/${thumbnailQuality}.jpg`;
+const watchUrl = `https://www.youtube.com/watch?v=${videoId}`;
+
+// VideoObject JSON-LD
+const videoSchema = {
+  '@type': 'VideoObject',
+  name: title,
+  description: description || title,
+  thumbnailUrl: thumbnailUrl,
+  embedUrl: embedUrl.replace('&autoplay=1', ''),
+  contentUrl: watchUrl,
+  ...(uploadDate && { uploadDate }),
+  ...(channelName && {
+    author: {
+      '@type': 'Person',
+      name: channelName,
+    },
+  }),
+};
+---
+
+<div class="yt-embed" data-video-id={videoId}>
+  <button
+    class="yt-embed__trigger"
+    aria-label={`Play video: ${title}`}
+    style={`background-image: url(${thumbnailUrl});`}
+  >
+    <div class="yt-embed__play">
+      <svg viewBox="0 0 68 48" width="68" height="48" aria-hidden="true">
+        <path class="yt-embed__play-bg" d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55C3.97 2.33 2.27 4.81 1.48 7.74.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="#212121" fill-opacity="0.8"/>
+        <path d="M45 24 27 14v20" fill="#fff"/>
+      </svg>
+    </div>
+    <span class="yt-embed__title">{title}</span>
+  </button>
+</div>
+
+<script type="application/ld+json" set:html={JSON.stringify(videoSchema)} />
+
+<style>
+  .yt-embed {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 */
+    background: var(--surface);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    margin: var(--sp-6) 0;
+    border: 1px solid var(--border);
+  }
+
+  .yt-embed__trigger {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: var(--sp-3);
+    transition: opacity 200ms ease;
+  }
+
+  .yt-embed__trigger:hover {
+    opacity: 0.9;
+  }
+
+  .yt-embed__trigger:hover .yt-embed__play-bg {
+    fill: #f00;
+    fill-opacity: 1;
+  }
+
+  .yt-embed__play {
+    filter: drop-shadow(0 2px 8px rgba(0,0,0,0.6));
+    transition: transform 200ms ease;
+  }
+
+  .yt-embed__trigger:hover .yt-embed__play {
+    transform: scale(1.1);
+  }
+
+  .yt-embed__title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: var(--sp-3) var(--sp-4);
+    background: linear-gradient(transparent, rgba(0,0,0,0.8));
+    color: #fff;
+    font-size: var(--text-sm);
+    font-weight: 500;
+    text-align: left;
+  }
+
+  .yt-embed iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+</style>
+
+<script>
+  document.querySelectorAll('.yt-embed').forEach((container) => {
+    const btn = container.querySelector('.yt-embed__trigger');
+    if (!btn) return;
+    
+    btn.addEventListener('click', () => {
+      const videoId = container.getAttribute('data-video-id');
+      if (!videoId) return;
+
+      const iframe = document.createElement('iframe');
+      iframe.src = `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&rel=0`;
+      iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+      iframe.allowFullscreen = true;
+      iframe.title = btn.getAttribute('aria-label') || 'YouTube video';
+      iframe.loading = 'lazy';
+
+      // Replace the button with the iframe
+      btn.remove();
+      container.appendChild(iframe);
+    });
+  });
+</script>

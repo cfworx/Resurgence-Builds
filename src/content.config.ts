@@ -36,6 +36,9 @@ const builds = defineCollection({
       answer: z.string(),
     })).optional(),
     sources: z.array(z.string()).optional(),
+    videoId: z.string().optional(),
+    videoTitle: z.string().optional(),
+    videoChannel: z.string().optional(),
   }),
 });
 

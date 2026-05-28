@@ -32,6 +32,9 @@ const { Content, headings } = await render(build);
   headings={headings}
   plannerHash={build.data.plannerHash}
   faqs={build.data.faqs || []}
+  videoId={build.data.videoId}
+  videoTitle={build.data.videoTitle}
+  videoChannel={build.data.videoChannel}
 >
   <Content />
 </BuildLayout>

@@ -5,7 +5,7 @@
   "description": "Independent fan resource for Tom Clancy's The Division Resurgence — builds, guides, tier lists, patch notes.",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build && node scripts/inject-lastmod.mjs && npx pagefind --site dist",
+    "build": "astro build && node scripts/inject-lastmod.mjs && node scripts/inject-sitemap-images.mjs && npx pagefind --site dist",
     "preview": "astro preview",
     "astro": "astro",
     "bump-patch": "node scripts/bump-patch.mjs"

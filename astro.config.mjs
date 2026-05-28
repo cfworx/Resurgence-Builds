@@ -75,7 +75,8 @@ export default defineConfig({
         if (
           url.includes('/privacy/') ||
           url.includes('/terms/') ||
-          url.includes('/dmca/')
+          url.includes('/dmca/') ||
+          url.includes('/contact/')
         ) {
           return { ...item, priority: 0.3, changefreq: 'never', lastmod: SITE_LAST_UPDATED };
         }
@@ -83,6 +84,11 @@ export default defineConfig({
         // --- Class pages ---
         if (url.includes('/class/')) {
           return { ...item, priority: 0.5, changefreq: 'monthly', lastmod: SITE_LAST_UPDATED };
+        }
+
+        // --- Tag archive pages ---
+        if (url.includes('/tag/')) {
+          return { ...item, priority: 0.4, changefreq: 'weekly', lastmod: SITE_LAST_UPDATED };
         }
 
         // Fallback
