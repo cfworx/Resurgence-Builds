@@ -277,5 +277,3 @@ All weapon attachments should be **Engineering.** Skill Damage and Engineering o
 10. Swap back to Vector → Backup Battery triggers again.
 11. Chemical Recharge is slashing Oxidizing Swarm's cooldown with every acid kill.
 12. The rotation is: **deploy → swap → shoot → deploy → swap → shoot → forever.** It's like doing laundry. Repetitive. Mindless. Oddly satisfying once you accept this is your life now.
-
-**PvP note:** Glass Cannon makes you squishier than a banana in a hydraulic press. Play from deep cover, drop acid on choke points and extraction ropes, and let enemies walk into your pools. You fold in a fraction of a second if caught in the open. Position like your K/D depends on it, because it does. And so does the group chat's respect for you, which , let's be honest , was already hanging by a thread.
