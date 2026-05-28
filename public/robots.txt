@@ -1,47 +1,114 @@
-# Default: allow all crawlers
+# =============================================================================
+# ResurgenceBuilds.com — robots.txt
+# The #1 independent Division Resurgence wiki & build database
+# =============================================================================
+
+# Default: allow all crawlers full access
 User-agent: *
-Disallow:
+Allow: /
+Disallow: /api/
+Disallow: /pagefind/
 
-# OpenAI
-User-agent: GPTBot
-Allow: /
-User-agent: ChatGPT-User
-Allow: /
-User-agent: OAI-SearchBot
-Allow: /
-
-# Anthropic (Claude)
-User-agent: ClaudeBot
-Allow: /
-User-agent: Claude-Web
-Allow: /
-User-agent: anthropic-ai
+# =============================================================================
+# Google
+# =============================================================================
+User-agent: Googlebot
 Allow: /
 
-# Perplexity
-User-agent: PerplexityBot
-Allow: /
+User-agent: Googlebot-Image
+Allow: /images/
 
-# Google AI
 User-agent: Google-Extended
 Allow: /
 
-# Apple (Siri/Spotlight)
+# =============================================================================
+# Bing & Microsoft
+# =============================================================================
+User-agent: Bingbot
+Allow: /
+
+User-agent: msnbot
+Allow: /
+
+# =============================================================================
+# OpenAI
+# =============================================================================
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+# =============================================================================
+# Anthropic (Claude)
+# =============================================================================
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+# =============================================================================
+# Google AI (Gemini)
+# =============================================================================
+User-agent: Google-Extended
+Allow: /
+
+User-agent: GoogleOther
+Allow: /
+
+# =============================================================================
+# Perplexity
+# =============================================================================
+User-agent: PerplexityBot
+Allow: /
+
+# =============================================================================
+# Apple (Siri / Spotlight)
+# =============================================================================
+User-agent: Applebot
+Allow: /
+
 User-agent: Applebot-Extended
 Allow: /
 
+# =============================================================================
 # Amazon
+# =============================================================================
 User-agent: Amazonbot
 Allow: /
 
-# AI search engines
+# =============================================================================
+# Other AI Search Engines
+# =============================================================================
 User-agent: YouBot
 Allow: /
+
 User-agent: DuckAssistBot
 Allow: /
+
 User-agent: PhindBot
 Allow: /
+
 User-agent: FirecrawlAgent
 Allow: /
 
+User-agent: Bytespider
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+# =============================================================================
+# Sitemap & AI Discovery
+# =============================================================================
 Sitemap: https://resurgencebuilds.com/sitemap-index.xml

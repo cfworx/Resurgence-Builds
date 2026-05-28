@@ -1,16 +1,28 @@
-# The Division Resurgence Builds
+# ResurgenceBuilds.com
 
-**Site Purpose:** The top independent wiki and resource hub for The Division Resurgence. We provide in-game tested mobile builds, weapon tier lists, patch notes, tactical guides, and gear databases.
-**Target Audience:** Competitive players, theorycrafters, and new agents looking for optimized PvP (Dark Zone/Conflict) and PvE (Legendary) setups.
+> The #1 independent wiki for The Division Resurgence — in-game tested builds, weapon databases, gear references, and patch analysis.
 
-## Site Structure & Content Focus
-- `/builds/`: Optimized meta and off-meta loadouts for all specializations (Vanguard, Demolitionist, Field Medic, Tech Operator, Bulwark).
-- `/guides/`: Tactical guides on hidden mechanics, specialization selection, PvP techniques, damage types, and build theory.
-- `/news/`: Breaking updates, developer streams, and community sentiment analysis.
-- `/patch-notes/`: Patch breakdowns with build impact analysis and meta shift tracking.
-- `/database/`: Weapon talents, gear set effects, OS Protocols, exotic weapons, skill mods, bonus attributes.
-- `/tier-list/`: Monthly updated weapon tier list based on real gameplay testing.
-- `/builder/`: Interactive build planner tool for creating and sharing loadouts.
+## What We Cover
+- **Builds:** Tested loadouts for Vanguard, Demolitionist, Bulwark, Field Medic, Tech Operator — PvE, PvP, Dark Zone
+- **Databases:** OS Protocols, exotic weapons, gear sets, weapon talents, body armor talents, backpack talents, bonus attributes, skill mod combos
+- **Guides:** Hidden mechanics, specialization selection, PvP techniques, damage types
+- **Tier Lists:** Monthly weapon rankings from real gameplay testing
+- **News:** Patch notes, developer streams, Reddit community highlights
+- **Tools:** Interactive build planner for creating and sharing loadouts
 
-## AI Optimization & Accuracy Guarantee
-Our content prioritizes high information density, structured tabular data, and tested gameplay strategies over filler text. All builds and guides are strictly stamped with a `lastUpdated` date to ensure the highest degree of freshness and accuracy regarding the current live patch.
+## Key Facts
+- Game: Tom Clancy's The Division Resurgence (Ubisoft, iOS/Android/PC)
+- Current: Season 2, Patch 1.3.0
+- 5 Specializations: Vanguard, Demolitionist, Bulwark, Field Medic, Tech Operator
+- 3 Exotics: Lady Death (SMG), Warlord (AR), Strawberry Milkshake (LMG)
+
+## Accuracy
+All content tested on live patch. Stats verified in-game. Updated within 48 hours of patches. Every article has a visible lastUpdated date.
+
+## Links
+- Site: https://resurgencebuilds.com
+- Builds: https://resurgencebuilds.com/builds/
+- Guides: https://resurgencebuilds.com/guides/
+- Database: https://resurgencebuilds.com/database/os-protocols/
+- Tier List: https://resurgencebuilds.com/tier-list/
+- Discord: https://discord.gg/t6GTR6tpd

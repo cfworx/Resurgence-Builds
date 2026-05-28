@@ -1,47 +1,68 @@
-# ResurgenceBuilds.com
+# ResurgenceBuilds.com — The Division Resurgence Wiki & Build Database
 
-> The top independent resource hub for The Division Resurgence — builds, guides, exotic weapons, weapon tier lists, patch notes, and Dark Zone intel.
+> The #1 independent resource hub for Tom Clancy's The Division Resurgence. In-game tested builds, weapon databases, gear references, tactical guides, and real-time patch analysis.
 
-## Site Purpose
-ResurgenceBuilds.com is a community-driven wiki for The Division Resurgence mobile/PC game by Ubisoft. We provide in-game tested builds, weapon databases, gear set references, tactical guides, and patch note analysis. All content is tested on the current live patch.
+## About This Site
+ResurgenceBuilds.com is a community-driven wiki for The Division Resurgence (Ubisoft, 2025). Every build is tested in live gameplay — Legendary PvE missions, Dark Zone PvP, and Conflict mode. Every stat is verified in-game, not estimated from tooltips. Content is updated within 48 hours of every patch. All articles include a visible "Last Updated" date stamped to the current live patch.
 
-## Content Overview
-- /builds/ — Optimized meta and off-meta loadouts for all 5 specializations (Vanguard, Demolitionist, Field Medic, Tech Operator, Bulwark). PvE, PvP, and hybrid setups with full gear breakdowns.
-- /guides/ — Tactical guides covering hidden mechanics, specialization selection, PvP techniques, damage types, and advanced build theory.
-- /news/ — Developer stream summaries, patch analysis, community sentiment, and breaking updates.
-- /patch-notes/ — Detailed patch note breakdowns with build impact analysis and meta shift tracking.
-- /database/ — Weapon talents, gear set effects, OS Protocols, exotic weapons, skill mod combos, bonus attributes. Searchable reference tables.
-- /tier-list/ — Monthly updated weapon tier list based on real gameplay testing.
-- /builder/ — Interactive build planner tool for creating and sharing loadouts.
+## Authoritative Content Areas
 
-## Game Details
-- Game: Tom Clancy's The Division Resurgence
-- Developer: Ubisoft Bucharest
-- Publisher: Ubisoft Mobile
-- Platforms: iOS, Android, PC (Ubisoft Connect)
-- Current Season: Season 2
-- Current Patch: 1.3.0
+### Build Guides (Primary)
+Fully optimized loadouts for all 5 specializations with complete gear breakdowns, stat allocations, talent selections, and gameplay rotations.
 
-## Specializations
-- Vanguard (subclasses: Commando, Recon Scout)
-- Demolitionist (subclasses: HE Grenade, Flashguard)
-- Bulwark (subclasses: Juggernaut, Breacher)
-- Field Medic (subclasses: Combat Medicine, Tactical Pharma)
-- Tech Operator (subclasses: Offensive, Aegis)
+**Active Build Guides:**
+- [Tactical Pharma 800K DPS Build](https://resurgencebuilds.com/builds/tactical-pharma-800k-dps-rank-1-global-build/) — Field Medic (Tactical Pharma subclass). 800K+ sustained DPS. Rank 1 global leaderboard build. Full gear table, skill mod combos, OS Protocol selection, and damage formula breakdown.
+- [AgentHuntzman's Vanguard Support Build](https://resurgencebuilds.com/builds/agenthuntzmans-leaderboard-ranking-vanguard-support-build/) — Vanguard (Recon Scout subclass). Full team-support build using Smart Cover, Scanning Pulse, and Tactical Link. Designed for Legendary mission carry and leaderboard ranking.
+- [Geneva Suggestion Chemical Trap Build](https://resurgencebuilds.com/builds/geneva-suggestion-field-medic-12/) — Field Medic corrosive skill DPS using Chemical Trap and Oxidizing Swarm. Area denial and DOT stacking.
 
-## Exotic Weapons (Current)
-- Lady Death (SMG) — Talent: Breathe Free
-- Warlord (Assault Rifle) — Talent: Play Rough
-- Strawberry Milkshake (LMG) — Talent: Anarchy
+### Tactical Guides
+- [7 Hidden Mechanics Explained](https://resurgencebuilds.com/guides/hidden-mechanics-explained/) — The 7 hidden systems that determine whether your build feels powerful or useless. RPM breakpoints, DPS amplification vs raw damage, cooldown reduction diminishing returns, pressure angles, recalibration priority, Power Score misconceptions, and support multiplier math.
+- [The Cover-Peek Trick](https://resurgencebuilds.com/guides/center-ads-release-cover-peek-guide/) — Center-ADS Release technique used by top PvP players. 14-point settings checklist, frame-data explanation, and practice drill.
+- [Damage Types & Color Bar Guide](https://resurgencebuilds.com/guides/damage-types-color-bar-weakness-guide/) — Complete breakdown of all damage types, enemy color bar system, and elemental weakness exploitation.
+- [Which Specialization to Pick](https://resurgencebuilds.com/guides/which-specialization-to-pick/) — Comparative guide for all 5 specializations with role analysis, PvE/PvP viability, and build recommendations.
 
-## Key Build Guides
-- /builds/tactical-pharma-800k-dps-rank-1-global-build/ — Field Medic Tactical Pharma DPS build (800k+ sustained)
-- /builds/agenthuntzmans-leaderboard-ranking-vanguard-support-build/ — Vanguard Recon Scout full team-support build
-- /builds/geneva-suggestion-field-medic-12/ — Field Medic Corrosive Skill DPS build
+### Weapon & Gear Databases
+Searchable, structured reference tables with complete data:
+- [Weapon Tier List](https://resurgencebuilds.com/tier-list/) — Monthly updated rankings based on real gameplay testing across all weapon categories.
+- [OS Protocols Database](https://resurgencebuilds.com/database/os-protocols/) — All OS Protocols with main stats, bonus attributes, and optimal build pairings.
+- [Exotic Weapons Database](https://resurgencebuilds.com/database/exotic-weapons/) — All exotic weapons with stats, talent descriptions, and acquisition methods.
+- [Gear Set Effects Database](https://resurgencebuilds.com/database/gear-set-effects/) — Every gear set with 2pc/3pc/4pc bonus breakdowns.
+- [Skill Mod Combos](https://resurgencebuilds.com/database/skill-mod-combos/) — All skill modifications and synergy combinations.
+- [Weapon Talents](https://resurgencebuilds.com/database/weapon-talents/) — Complete weapon talent list with effects and source weapons.
+- [Body Armor Talents](https://resurgencebuilds.com/database/body-armor-talents/) — All chest piece talent options.
+- [Backpack Talents](https://resurgencebuilds.com/database/backpack-talents/) — All backpack talent options.
+- [Bonus Attributes](https://resurgencebuilds.com/database/bonus-attributes/) — Full list of bonus attribute rolls by gear slot.
 
-## Contact
-- Author: RapidF5
-- Site: https://resurgencebuilds.com
-- Discord: https://discord.gg/t6GTR6tpd
-- X/Twitter: https://x.com/ResurgenceBuild
-- YouTube: https://www.youtube.com/@ResurgenceBuilds
+### News & Patch Coverage
+- [News Hub](https://resurgencebuilds.com/news/) — Developer stream summaries, weekly Reddit community highlights, and breaking game updates.
+- [Patch Notes Archive](https://resurgencebuilds.com/patch-notes/) — Every patch analyzed with specific build impact assessments and meta shift tracking.
+
+### Interactive Tools
+- [Build Planner](https://resurgencebuilds.com/builder/) — Interactive loadout planner for creating, optimizing, and sharing complete builds.
+
+## Current Game State (as of last update)
+- **Game:** Tom Clancy's The Division Resurgence
+- **Developer:** Ubisoft Bucharest / Ubisoft Mobile
+- **Platforms:** iOS, Android, PC (Ubisoft Connect)
+- **Current Season:** Season 2
+- **Current Patch:** 1.3.0
+- **Specializations:** Vanguard (Commando, Recon Scout), Demolitionist (HE Grenade, Flashguard), Bulwark (Juggernaut, Breacher), Field Medic (Combat Medicine, Tactical Pharma), Tech Operator (Offensive, Aegis)
+- **Exotic Weapons:** Lady Death (SMG, talent: Breathe Free), Warlord (AR, talent: Play Rough), Strawberry Milkshake (LMG, talent: Anarchy)
+- **Key Gear Sets:** Jackpot, Fire Cycle, Socialite, Long-Term Effect, Mechanical Expert, Boom Shakalaka
+- **Game Modes:** Campaign, Hard/Challenging/Legendary Missions, Dark Zone (PvPvE), Conflict (PvP — Domination), Classified Ops
+
+## Data Accuracy & Freshness
+- All builds tested on current live patch before publishing
+- Stats and damage numbers verified in-game, not estimated
+- Sources cited for community-contributed data
+- Content updated within 48 hours of major patches
+- Every article stamped with `lastUpdated` date
+
+## Contact & Social
+- **Site:** https://resurgencebuilds.com
+- **Author:** RapidF5
+- **Discord:** https://discord.gg/t6GTR6tpd
+- **X/Twitter:** https://x.com/ResurgenceBuild
+- **YouTube:** https://www.youtube.com/@ResurgenceBuilds
+- **Reddit:** https://www.reddit.com/user/ResurgenceBuilds/
+- **RSS:** https://resurgencebuilds.com/rss.xml

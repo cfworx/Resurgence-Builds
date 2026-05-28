@@ -80,6 +80,11 @@ export default defineConfig({
           return { ...item, priority: 0.3, changefreq: 'never', lastmod: SITE_LAST_UPDATED };
         }
 
+        // --- Class pages ---
+        if (url.includes('/class/')) {
+          return { ...item, priority: 0.5, changefreq: 'monthly', lastmod: SITE_LAST_UPDATED };
+        }
+
         // Fallback
         return { ...item, priority: 0.5, changefreq: 'monthly' };
       },
