@@ -1,0 +1,17 @@
+{
+  "name": "Resurgence Builds",
+  "short_name": "RB",
+  "description": "The best Division Resurgence builds, guides, and news. Updated every patch.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0D0D0F",
+  "theme_color": "#0D0D0F",
+  "icons": [
+    {
+      "src": "/og-default.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

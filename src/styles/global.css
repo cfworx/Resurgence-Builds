@@ -70,6 +70,16 @@ html {
   touch-action: manipulation;
 }
 
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
 body {
   font-family: var(--font-body);
   font-weight: 400;
@@ -341,6 +351,13 @@ pre code { background: none; padding: 0; }
   color: var(--ink-muted);
   text-transform: uppercase;
   letter-spacing: 0.05em;
+}
+
+a.tag {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  padding: var(--sp-2) var(--sp-3);
 }
 
 .tag--accent {
@@ -1199,8 +1216,8 @@ tbody tr:hover {
 
   .filter-btn {
     padding: var(--sp-2);
-    min-height: 40px;
-    font-size: 0.6875rem;
+    min-height: 44px;
+    font-size: var(--text-xs);
   }
 
   table {
