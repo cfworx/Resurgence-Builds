@@ -80,21 +80,6 @@ The loop is simple: stack Engineering through Torrential Downpour and Fully Char
 - Smart Cover: **Hardened Casing** (+12% Armor to covered allies) if your team is dying before they can deal damage
 - Scanning Pulse: **Exposing Burst** (increases Exposed stack damage) for harder PvE content with tankier enemies
 
-
----
-
-## Loot Quick-Reference
-
-| Drop | Must Have |
-|---|---|
-| Boom Shakalaka mask/holster | Engineering core + Skill CDR or Skill Duration |
-| Mechanical Expert chest | Engineering core + Socialite talent |
-| Mechanical Expert backpack | Engineering core + Brainstorm talent |
-| Mechanical Expert gloves/kneepads | Engineering core + Skill CDR or Skill Duration |
-| Police M4 | Torrential Downpour + Rapid Charge |
-| P90 | Torrential Downpour + Fully Charged |
-| Pressing Matter OS Protocol | Always keep |
-
 ---
 
 ## Why Each Piece Matters
@@ -188,6 +173,23 @@ This build needs BOTH Torrential Downpour and Fully Charged on the same weapon. 
 
 ---
 
+## Specialization Focus Upgrades
+
+These are unlocked through the Recon specialization tree and are critical to the build.
+
+| Upgrade | Level | Effect |
+|---|---|---|
+| **Exposed** | 3/3 | Inflicts +10% incoming damage on scanned enemies, deals damage equal to 4% Engineering for 30 seconds, up to 3 stacks. |
+| **Foxhole** | 3/3 | Hiding behind Smart Cover grants **Fortified** to you and all allies. Weapon hits grant extra health equal to **450% of Engineering** for 3 seconds. |
+| **Entrenched** | 3/3 | Grants +4% Damage Reduction to Fortified allies. |
+| **Target Rich Environment** | 3/3 | While using Tactical Link, each enemy within 20m grants +12% Accuracy, Stability, and Reload Speed for 10 seconds, up to 3 stacks (+36% max). |
+| **Friendly Hand** | 2/2 | Grants +10% Damage Reduction for 10 seconds to pulsed allies. |
+| **Combat Inspiration** | 2/2 | Grants +5% Engineering for 10 seconds when an Exposed enemy dies within 30 meters, up to 3 stacks (+15% Engineering). |
+
+Foxhole is the sleeper here. The higher your Engineering, the more extra health every teammate gets per weapon hit while behind your Smart Cover. Your teammates become borderline unkillable. This is why the build dominates Legendary missions.
+
+---
+
 ## Smart Cover: What the Description Doesn't Tell You
 
 **Tactical Smart Cover converts 24% of your Engineering into Weapon Damage for every agent behind cover.** The higher your Engineering, the bigger that bonus.
@@ -196,13 +198,15 @@ What it doesn't say upfront: the **Foxhole** specialization node (3/3) grants **
 
 ---
 
-## This Gear on Other Specializations
+## How the Skills Work Together
 
-The gear set (Mechanical Expert 4pc + Boom Shakalaka 2pc) is not Vanguard-locked. If you have the pieces, you can run it on another specialization and keep the set bonuses. What you lose is everything in the Vanguard Recon tree: Foxhole, Exposed, Friendly Hand, Combat Inspiration, Target Rich Environment. All of that is Recon-specific.
+**Tactical Smart Cover** converts 24% of your Engineering into Weapon Damage for every agent behind the cover. The higher your Engineering, the bigger the weapon damage bonus your whole team gets.
 
-On Aegis or Tech Operator with this gear, Smart Cover still transmits weapon damage and the set CDR still applies. You just don't have the passive health restore from Foxhole, the Exposed damage stacks, or the Sig charge generation from the Scout subclass. The build functions. It's less effective.
+**Scanning Pulse** applies +20% Target Vulnerability + Exposed stacks. Duration is approximately 17.44 seconds, cooldown around 14.94 seconds. That means near-permanent uptime. Every enemy your Pulse touches is taking 20%+ more damage from your entire team.
 
-Run it on Vanguard Recon when your team coordinates around the cover. If your team scatters, the multipliers don't land and you'd get more value from a build that works independently.
+**Tactical Link (Bugle Call)** gives +14.4% Rate of Fire, +20% Damage Reduction, and +20% Movement Speed to the team. Duration is approximately 21.74 seconds. Every shot fires faster. Every shot hits enemies who are taking 20% more damage. Every shot is boosted by Smart Cover. Plus Target Rich Environment gives +36% Accuracy, Stability, and Reload Speed during Link.
+
+The team's DPS doesn't just go up. It multiplies across three separate buff stages.
 
 ---
 
@@ -226,32 +230,13 @@ These stack multiplicatively, not additively. The actual output depends on your 
 
 ---
 
-## How the Skills Work Together
+## This Gear on Other Specializations
 
-**Tactical Smart Cover** converts 24% of your Engineering into Weapon Damage for every agent behind the cover. The higher your Engineering, the bigger the weapon damage bonus your whole team gets.
+The gear set (Mechanical Expert 4pc + Boom Shakalaka 2pc) is not Vanguard-locked. If you have the pieces, you can run it on another specialization and keep the set bonuses. What you lose is everything in the Vanguard Recon tree: Foxhole, Exposed, Friendly Hand, Combat Inspiration, Target Rich Environment. All of that is Recon-specific.
 
-**Scanning Pulse** applies +20% Target Vulnerability + Exposed stacks. Duration is approximately 17.44 seconds, cooldown around 14.94 seconds. That means near-permanent uptime. Every enemy your Pulse touches is taking 20%+ more damage from your entire team.
+On Aegis or Tech Operator with this gear, Smart Cover still transmits weapon damage and the set CDR still applies. You just don't have the passive health restore from Foxhole, the Exposed damage stacks, or the Sig charge generation from the Scout subclass. The build functions. It's less effective.
 
-**Tactical Link (Bugle Call)** gives +14.4% Rate of Fire, +20% Damage Reduction, and +20% Movement Speed to the team. Duration is approximately 21.74 seconds. Every shot fires faster. Every shot hits enemies who are taking 20% more damage. Every shot is boosted by Smart Cover. Plus Target Rich Environment gives +36% Accuracy, Stability, and Reload Speed during Link.
-
-The team's DPS doesn't just go up. It multiplies across three separate buff stages.
-
----
-
-## Specialization Focus Upgrades
-
-These are unlocked through the Recon specialization tree and are critical to the build.
-
-| Upgrade | Level | Effect |
-|---|---|---|
-| **Exposed** | 3/3 | Inflicts +10% incoming damage on scanned enemies, deals damage equal to 4% Engineering for 30 seconds, up to 3 stacks. |
-| **Foxhole** | 3/3 | Hiding behind Smart Cover grants **Fortified** to you and all allies. Weapon hits grant extra health equal to **450% of Engineering** for 3 seconds. |
-| **Entrenched** | 3/3 | Grants +4% Damage Reduction to Fortified allies. |
-| **Target Rich Environment** | 3/3 | While using Tactical Link, each enemy within 20m grants +12% Accuracy, Stability, and Reload Speed for 10 seconds, up to 3 stacks (+36% max). |
-| **Friendly Hand** | 2/2 | Grants +10% Damage Reduction for 10 seconds to pulsed allies. |
-| **Combat Inspiration** | 2/2 | Grants +5% Engineering for 10 seconds when an Exposed enemy dies within 30 meters, up to 3 stacks (+15% Engineering). |
-
-Foxhole is the sleeper here. The higher your Engineering, the more extra health every teammate gets per weapon hit while behind your Smart Cover. Your teammates become borderline unkillable. This is why the build dominates Legendary missions.
+Run it on Vanguard Recon when your team coordinates around the cover. If your team scatters, the multipliers don't land and you'd get more value from a build that works independently.
 
 ---
 
@@ -287,3 +272,16 @@ Foxhole is the sleeper here. The higher your Engineering, the more extra health 
 
 By three rotations deep in a long mission, your team feels like they're cheating.
 
+---
+
+## Loot Quick-Reference
+
+| Drop | Must Have |
+|---|---|
+| Boom Shakalaka mask/holster | Engineering core + Skill CDR or Skill Duration |
+| Mechanical Expert chest | Engineering core + Socialite talent |
+| Mechanical Expert backpack | Engineering core + Brainstorm talent |
+| Mechanical Expert gloves/kneepads | Engineering core + Skill CDR or Skill Duration |
+| Police M4 | Torrential Downpour + Rapid Charge |
+| P90 | Torrential Downpour + Fully Charged |
+| Pressing Matter OS Protocol | Always keep |

@@ -37,103 +37,15 @@ faqs:
 
 ## What This Build Does
 
-> Build credit: [**RogueMadras**](https://www.youtube.com/@RogueMadras). He just released an [updated build video](https://www.youtube.com/watch?v=1dAkSWoR7co) walking through his latest Tactical Pharma setup — the same build that pushed him to **Rank 1 Global**. You can also watch his [original gameplay breakdown](https://www.youtube.com/watch?v=orBlCP7ro4I&t=3351s).
+> Build credit: [**RogueMadras**](https://www.youtube.com/@RogueMadras). He just released an [updated build video](https://www.youtube.com/watch?v=1dAkSWoR7co) walking through his latest Tactical Pharma setup, the same build that pushed him to **Rank 1 Global**. You can also watch his [original gameplay breakdown](https://www.youtube.com/watch?v=orBlCP7ro4I&t=3351s).
 
 We originally covered this build as the "Geneva Suggestion." RogueMadras has since optimized it further for Division Resurgence Season 2, so we're updating everything. **800k+ DPS.** Rank 1 Global. On a Field Medic.
 
-This is a skill-damage build that uses Chemical Trap and Oxidizing Swarm as the primary damage sources. Weapons exist to generate Engineering stacks — they aren't doing the killing. The core loop is straightforward: throw Chemical Trap at a choke point, swap weapons to trigger Backup Battery (+22.50% Engineering) and Prime Engineer 2 (+31.50% Engineering), then deploy Oxidizing Swarm for automated corrosive pressure. Swap to MK16 to stack Skill Multi-Shot, and repeat as cooldowns come back. The build scales entirely through Engineering, Skill Crit, and Skill Multi-Shot.
+This is a skill-damage build that uses Chemical Trap and Oxidizing Swarm as the primary damage sources. Weapons exist to generate Engineering stacks, not to kill. The core loop is straightforward: throw Chemical Trap at a choke point, swap weapons to trigger Backup Battery (+22.50% Engineering) and Prime Engineer 2 (+31.50% Engineering), then deploy Oxidizing Swarm for automated corrosive pressure. Swap to MK16 to stack Skill Multi-Shot, and repeat as cooldowns come back. The build scales entirely through Engineering, Skill Crit, and Skill Multi-Shot.
 
 ---
 
-## Tactical Pharma Gear and Loadout
-
-### Gear
-
-**Engineering core on every piece. 4× Jackpot + 2× Fire Cycle.**
-
-| Slot | Set | Talent | Core | Attribute Bonus 1 | Attribute Bonus 2 |
-|---|---|---|---|---|---|
-| Mask | Fire Cycle | - | Engineering | Skill Crit Damage | Skill Crit Chance |
-| Chest | Jackpot | **Glass Cannon (T2)** | Engineering | Skill Crit Chance | Skill Intensity |
-| Backpack | Fire Cycle | **Prime Engineer 2** | Engineering | Skill Multi-Shot Chance | Skill Crit Chance |
-| Gloves | Jackpot | - | Engineering | Skill Intensity | Skill Crit Chance |
-| Holster | Jackpot | - | Engineering | Skill Intensity | Skill Multi-Shot |
-| Kneepads | Jackpot | - | Engineering | Skill Crit Damage | Skill Crit Chance |
-
-**Where we differ from RogueMadras's current setup (with his blessing):**
-- **Chest:** He's running **Energize 2** (+25% Skill Damage for 8s on Medical Kit use; Multi-Shot refreshes duration) but recommends **Glass Cannon** as best-in-slot. T2 gives **+28% Damage**, T1 gives +20%.
-- **Backpack:** He has Skill Cooldown Recovery in one slot but doesn't recommend CDR. We use **Skill Crit Chance** instead. Alternative talent: **Minion Training** (+36% Skill Crit Hit Damage for 12s on skill crit kills).
-- **Gloves:** He has Skill Duration but says to swap it. We use **Skill Intensity** — higher damage per tick matters more than longer duration.
-
-### Loadout
-
-| Slot | Item | Details |
-|---|---|---|
-| **Primary** | Vector 45 ACP (T2, SMG) | Backup Battery + Backup Magazine · Attributes: Skill Intensity + Skill Crit Damage |
-| **Secondary** | MK16 (AR) | Multi-Pronged Attack + Multitasking · Attributes: Skill Intensity + Skill Crit Damage |
-| **OS Protocol** | **Rampart** (High-End) | Best option: +5% Damage while immobile, up to 6 stacks (+30%). See OS Protocol section. |
-| **Skill 1** | Chemical Trap | AOE corrosive damage — main damage source |
-| **Skill 2** | Oxidizing Swarm | Automated corrosive pressure + debuff layer |
-| **Gear Mods** | 12× Engineering | All slots |
-
-### Skill Mods
-
-| Skill | Mod | Preferred Firmware |
-|---|---|---|
-| Chemical Trap | **Chemical Recharge** | **Chemical Trap Intensity** |
-| Oxidizing Swarm | **Enhanced Formula** | **Oxidizing Intensity** |
-| Oxidizing Hive | **Hereafter Resilience** | **Oxidizing Hive Intensity** |
-
-> **Use Intensity, not Radius.** Radius increases area coverage. Intensity increases damage per tick. Intensity on all three — always.
-
----
-
-## Loot Quick-Reference for Tactical Pharma
-
-| Drop | Must Have |
-|---|---|
-| Jackpot chest/gloves/holster/kneepads | Engineering core + Skill Crit Chance, Crit Damage, Intensity, or Multi-Shot |
-| Fire Cycle mask | Engineering core + Skill Crit Damage + Skill Crit Chance |
-| Fire Cycle backpack | Engineering core + Prime Engineer 2 talent |
-| Vector 45 ACP (T2 SMG) | Engineering roll + Backup Battery + Backup Magazine |
-| MK16 (AR) | Engineering roll + Multi-Pronged Attack + Multitasking |
-| Rampart OS (High-End) | Always keep |
-
----
-
-## Why Each Gear Piece Matters
-
-### Jackpot 4-Piece
-
-- **2pc:** Skill Radius +12.00%. Wider coverage, more enemies hit per deployment.
-- **3pc:** Skill Critical Chance +10.80%. Consistent crits on every tick.
-- **4pc:** Skill Critical Damage +24.00%. This is where the damage ceiling lives.
-
-### Fire Cycle 2-Piece
-
-- **2pc:** Skill Crit Damage +12.00%. Combined with Jackpot 4pc, that's **+36% Skill Crit Damage** from set bonuses alone — before any gear rolls or talents.
-
-### Chest: Glass Cannon (T2)
-
-*+28% Damage (T2) / +20% Damage (T1). Increases incoming damage as a tradeoff.*
-
-Best-in-slot for maximum DPS. The multiplier applies directly to skill damage. Position 30 meters behind the fight to offset the squishiness.
-
-**Alternative:** **Energize 2** (+25% Skill Damage for 8s on Medical Kit use, refreshed by Multi-Shot procs). Safer, less raw output. RogueMadras is currently running this but recommends Glass Cannon.
-
-### Backpack: Prime Engineer 2
-
-*Deploying a Skill at full Health grants +31.50% Engineering for 12 seconds.*
-
-One of the largest single Engineering boosts in the game. Triggers on every Chemical Trap deployment at full HP. Stacks with Backup Battery's +22.50% on weapon swap for a combined **+54% Engineering.**
-
-**Alternative:** **Minion Training** — Skill Crit Kill Hits grant +36% Skill Crit Hit Damage for 12 seconds.
-
-### Skill Multi-Shot: Why 40% Is Enough
-
-Through Tactical Augmentation you get 2 talents that boost Skill Multi-Shot damage, so the procs you land hit significantly harder. **~40% Skill Multi-Shot Chance** is the target — going higher trades Crit Chance or Intensity for diminishing returns.
-
-### RogueMadras's Stats (26.61k Power Score)
+## RogueMadras's Stats (26.61k Power Score)
 
 His actual in-game numbers for reference:
 
@@ -154,6 +66,83 @@ His actual in-game numbers for reference:
 
 ---
 
+## Tactical Pharma Gear and Loadout
+
+### Gear
+
+
+| Slot | Set | Talent | Core | Attribute Bonus 1 | Attribute Bonus 2 |
+|---|---|---|---|---|---|
+| Mask | Fire Cycle | - | Engineering | Skill Crit Damage | Skill Crit Chance |
+| Chest | Jackpot | **Glass Cannon (T2)** | Engineering | Skill Crit Chance | Skill Intensity |
+| Backpack | Fire Cycle | **Prime Engineer 2** | Engineering | Skill Multi-Shot Chance | Skill Crit Chance |
+| Gloves | Jackpot | - | Engineering | Skill Intensity | Skill Crit Chance |
+| Holster | Jackpot | - | Engineering | Skill Intensity | Skill Multi-Shot |
+| Kneepads | Jackpot | - | Engineering | Skill Crit Damage | Skill Crit Chance |
+
+**Where we differ from RogueMadras's current setup:**
+- **Chest:** He's running **Energize 2** (+25% Skill Damage for 8s on Medical Kit use; Multi-Shot refreshes duration) but recommends **Glass Cannon** as best-in-slot. T2 gives **+28% Damage**, T1 gives +20%.
+- **Backpack:** He has Skill Cooldown Recovery in one slot but doesn't recommend CDR. We use **Skill Crit Chance** instead. Alternative talent: **Minion Training** (+36% Skill Crit Hit Damage for 12s on skill crit kills).
+- **Gloves:** He has Skill Duration but says to swap it. We use **Skill Intensity** because higher damage per tick matters more than longer duration.
+
+### Loadout
+
+| Slot | Item | Details |
+|---|---|---|
+| **Primary** | Vector 45 ACP (T2, SMG) | Backup Battery + Backup Magazine · Attributes: Skill Intensity + Skill Crit Damage |
+| **Secondary** | MK16 (AR) | Multi-Pronged Attack + Multitasking · Attributes: Skill Intensity + Skill Crit Damage |
+| **OS Protocol** | **Rampart** (High-End) | Best option: +5% Damage while immobile, up to 6 stacks (+30%). See OS Protocol section. |
+| **Skill 1** | Chemical Trap | AOE corrosive damage, main damage source |
+| **Skill 2** | Oxidizing Swarm | Automated corrosive pressure + debuff layer |
+| **Gear Mods** | 12× Engineering | All slots |
+
+### Skill Mods
+
+| Skill | Mod | Preferred Firmware |
+|---|---|---|
+| Chemical Trap | **Chemical Recharge** | **Chemical Trap Intensity** |
+| Oxidizing Swarm | **Enhanced Formula** | **Oxidizing Intensity** |
+| Oxidizing Hive | **Hereafter Resilience** | **Oxidizing Hive Intensity** |
+
+> **Use Intensity, not Radius.** Radius increases area coverage. Intensity increases damage per tick. Intensity on all three, always.
+
+---
+
+## Why Each Gear Piece Matters
+
+### Jackpot 4-Piece
+
+- **2pc:** Skill Radius +12.00%. Wider coverage, more enemies hit per deployment.
+- **3pc:** Skill Critical Chance +10.80%. Consistent crits on every tick.
+- **4pc:** Skill Critical Damage +24.00%. This is where the damage ceiling lives.
+
+### Fire Cycle 2-Piece
+
+- **2pc:** Skill Crit Damage +12.00%. Combined with Jackpot 4pc, that's **+36% Skill Crit Damage** from set bonuses alone, before any gear rolls or talents.
+
+### Chest: Glass Cannon (T2)
+
+*+28% Damage (T2) / +20% Damage (T1). Increases incoming damage as a tradeoff.*
+
+Best-in-slot for maximum DPS. The multiplier applies directly to skill damage. Position 30 meters behind the fight to offset the squishiness.
+
+**Alternative:** **Energize 2** (+25% Skill Damage for 8s on Medical Kit use, refreshed by Multi-Shot procs). Safer, less raw output. RogueMadras is currently running this but recommends Glass Cannon.
+
+### Backpack: Prime Engineer 2
+
+*Deploying a Skill at full Health grants +31.50% Engineering for 12 seconds.*
+
+One of the largest single Engineering boosts in the game. Triggers on every Chemical Trap deployment at full HP. Stacks with Backup Battery's +22.50% on weapon swap for a combined **+54% Engineering.**
+
+**Alternative:** **Minion Training.** Skill Crit Kill Hits grant +36% Skill Crit Hit Damage for 12 seconds.
+
+### Skill Multi-Shot: Why 40% Is Enough
+
+Through Tactical Augmentation you get 2 talents that boost Skill Multi-Shot damage, so the procs you land hit significantly harder. **~40% Skill Multi-Shot Chance** is the target. Going higher trades Crit Chance or Intensity for diminishing returns.
+
+
+---
+
 ## Best OS Protocol for Tactical Pharma
 
 RogueMadras recommends **Rampart** as the best OS Protocol. He is currently running Brains Over Brawn. Here are all viable options:
@@ -162,7 +151,7 @@ RogueMadras recommends **Rampart** as the best OS Protocol. He is currently runn
 
 *"While immobile, grants +5% Damage for 1 second, up to 6 stacks. This bonus resets upon moving."*
 
-"Immobile" means **not moving your character** — just standing still. On a skill build where you position behind cover and deploy, this is a free +30% Damage with minimal effort.
+"Immobile" means **not moving your character.** Just standing still. On a skill build where you position behind cover and deploy, this is a free +30% Damage with minimal effort.
 
 **Stats:** Skill Critical Chance +18.00%, Engineering +97, Skill Damage +77, Health +2,554.
 
@@ -174,7 +163,7 @@ Every skill tick deals bonus damage equal to nearly half your Engineering stat. 
 
 **Stats (at Lv50):** Engineering +268, Skill Damage +215, Health +7,052.
 
-+268 Engineering on a Blue OS is more than most High-End protocols give. Strong talent, strong stats — just not Rampart.
++268 Engineering on a Blue OS is more than most High-End protocols give. Strong talent, strong stats, just not Rampart.
 
 ### 3. Chain Reaction (Superior / Purple) — Strong Alternative
 
@@ -184,7 +173,7 @@ Stays permanently active on a build that clears rooms every 10 seconds. Feeds di
 
 **Stats (at Lv50):** Skill Critical Chance +28.80%, Engineering +358, Skill Damage +286, Health +9,402.
 
-RogueMadras recommends at least **Talent Rank 3** — below that, the bonus doesn't justify the slot.
+RogueMadras recommends at least **Talent Rank 3**. Below that, the bonus doesn't justify the slot.
 
 ### 4. Tactical Layering (High-End / Gold) — Solid Option
 
@@ -212,7 +201,7 @@ Both weapons exist to generate buffs. The Vector stacks Engineering through Back
 
 T2 Vector rolled for Engineering. High RPM empties magazines fast, which means faster buff procs.
 
-- **Backup Battery:** Swapping to this weapon grants **+22.50% Engineering** for 8 seconds (8s cooldown). Core Engineering injection — swap on cooldown, every 8 seconds.
+- **Backup Battery:** Swapping to this weapon grants **+22.50% Engineering** for 8 seconds (8s cooldown). Core Engineering injection. Swap on cooldown, every 8 seconds.
 - **Backup Magazine:** Swapping to this weapon reloads your second weapon after 4 seconds. The MK16 reloads itself while you fire the Vector. Keeps the rotation smooth.
 
 **Attributes:** Skill Intensity + Skill Critical Damage.
@@ -228,23 +217,23 @@ The Multi-Shot engine. Swap to this to stack Multi-Shot chance and boost Skill C
 
 **Attributes:** Skill Intensity + Skill Critical Damage.
 
-RogueMadras is running **Bloodlust 2 + Adaptation** on his MK16 — not ideal for this build. Use the recommended talents above.
+RogueMadras is running **Bloodlust 2 + Adaptation** on his MK16, which is not ideal for this build. Use the recommended talents above.
 
 ### Attachments & Tactical Augmentation
 
 All weapon attachments should be **Engineering.**
 
-**Tactical Augmentation:** For the first augment perk, pick the option that gives **+10% Weapon Multi-Shot Damage and +10% Skill Multi-Shot Damage.** Every gun has different first-perk options — make sure you pick the one that benefits skills.
+**Tactical Augmentation:** For the first augment perk, pick the option that gives **+10% Weapon Multi-Shot Damage and +10% Skill Multi-Shot Damage.** Every gun has different first-perk options, so make sure you pick the one that benefits skills.
 
 ---
 
-## How Chemical Trap and Oxidizing Swarm Work Together
+## Loot Quick-Reference for Tactical Pharma
 
-**Chemical Trap** creates corrosive AOE zones at choke points. Enemies take massive DOT ticks boosted by Glass Cannon, Prime Engineer 2, your OS Protocol, and your full Skill Crit stack. Works on NPCs and players.
-
-**Oxidizing Swarm** handles automation. Enhanced Formula debuffs enemy damage while applying ongoing corrosion. Hereafter Resilience releases micro corrosive drones every 1.6 seconds automatically — no input required.
-
-**Chemical Recharge** closes the loop. Kills reduce Oxidizing Swarm's cooldown. More kills → faster cycling → more damage → more kills.
-
-**The Engineering Stack:** Prime Engineer 2 (+31.50% on skill deploy) + Backup Battery (+22.50% on weapon swap) = **+54% Engineering.**
-
+| Drop | Must Have |
+|---|---|
+| Jackpot chest/gloves/holster/kneepads | Engineering core + Skill Crit Chance, Crit Damage, Intensity, or Multi-Shot |
+| Fire Cycle mask | Engineering core + Skill Crit Damage + Skill Crit Chance |
+| Fire Cycle backpack | Engineering core + Prime Engineer 2 talent |
+| Vector 45 ACP (T2 SMG) | Engineering roll + Backup Battery + Backup Magazine |
+| MK16 (AR) | Engineering roll + Multi-Pronged Attack + Multitasking |
+| Rampart OS (High-End) | Always keep |

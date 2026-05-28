@@ -1,3 +1,6 @@
 https://www.resurgencebuilds.com/* https://resurgencebuilds.com/:splat 301
 http://www.resurgencebuilds.com/* https://resurgencebuilds.com/:splat 301
 http://resurgencebuilds.com/* https://resurgencebuilds.com/:splat 301
+
+# Content redirects
+/guides/hidden-mechanics-build-optimization/ /guides/hidden-mechanics-explained/ 301

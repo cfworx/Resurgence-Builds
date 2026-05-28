@@ -2,21 +2,62 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
-<BaseLayout title="About Us — Resurgence Builds" description="Learn more about Resurgence Builds, a passion project dedicated to The Division Resurgence.">
+<BaseLayout
+  title="About Us — Resurgence Builds"
+  description="Learn more about Resurgence Builds, a passion project dedicated to The Division Resurgence. In-game tested builds, weapon data, and patch analysis."
+  keywords={["about resurgence builds", "division resurgence wiki", "division resurgence community", "resurgence builds team"]}
+>
   <div class="container section content-width">
-    <h1 class="heading-accent">About Us</h1>
+    <h1 class="heading-accent">About Resurgence Builds</h1>
     
     <div class="prose">
-      <p>Welcome to <strong>Resurgence Builds</strong>. We're a small crew of Division Resurgence players who got tired of Googling "best Vanguard build" and getting the same recycled garbage from sites that have never loaded into a Dark Zone.</p>
-      
+      <p><strong>Resurgence Builds</strong> is an independent, community-driven resource hub for <em>Tom Clancy's The Division Resurgence</em>. We publish in-game tested builds, weapon databases, gear set references, patch note analysis, and tactical guides. Every piece of content on this site is written by people who actually play the game.</p>
+
       <h2>Why We Built This</h2>
-      <p>Every other "build guide" site reads like it was written by someone who watched one YouTube video and called it research. We actually play the game. We test the builds. We argue about the math in Discord until 2am. Then we write it down so you don't have to.</p>
-      
-      <h2>What You Get</h2>
-      <p>Builds that work. Guides that explain the why, not just the what. Patch notes that tell you if your build just got murdered by Ubisoft. No paywalls, no gated content, no "subscribe for the REAL build." Everything is here. We run a few ads to keep the lights on because hosting costs money and we refuse to sell you a battle pass for a website.</p>
-      
+      <p>There's no shortage of Division Resurgence content on the internet. Most of it is recycled from other sites, based on outdated patch data, or written by people who haven't loaded into a Dark Zone since launch. We wanted something better: a single source where the builds are tested, the math is shown, and the information is current.</p>
+
+      <h2>What We Publish</h2>
+      <ul>
+        <li><strong>Build Guides:</strong> Fully tested loadouts for all five specializations — Vanguard, Demolitionist, Field Medic, Tech Operator, and Bulwark — covering PvE, PvP, and hybrid setups.</li>
+        <li><strong>Weapon &amp; Gear Databases:</strong> Searchable references for weapon talents, gear set effects, OS Protocols, exotic weapons, skill mods, and bonus attributes.</li>
+        <li><strong>Patch Notes &amp; Analysis:</strong> Breakdowns of every game update with specific impact analysis on the current meta.</li>
+        <li><strong>Guides &amp; Tutorials:</strong> From hidden mechanics to specialization selection to advanced PvP techniques.</li>
+        <li><strong>Weapon Tier Lists:</strong> Monthly updated rankings based on real gameplay testing.</li>
+        <li><strong>Build Planner Tool:</strong> An interactive tool for planning and sharing loadouts.</li>
+      </ul>
+
+      <h2>Our Testing Process</h2>
+      <p>Builds are tested in live gameplay — Legendary missions, Dark Zone PvP, and Conflict. We don't just theory-craft from a spreadsheet. When we say a build does 800k DPS, it's because we measured it in-game, not because a tooltip said so. We cite our sources, show our stat breakdowns, and update content whenever a patch changes the numbers.</p>
+      <p>Every guide and build on the site includes a <strong>Last Updated</strong> date so you always know whether the information reflects the current live patch.</p>
+
+      <h2>Content Standards</h2>
+      <ul>
+        <li>All builds tested on the current live patch before publishing</li>
+        <li>Stats and damage numbers verified in-game, not estimated</li>
+        <li>Sources cited for community-contributed data</li>
+        <li>Content updated within 48 hours of major patches</li>
+        <li>No paywalls, no gated content, no "subscribe for the real build"</li>
+      </ul>
+
+      <h2>Advertising &amp; Monetization</h2>
+      <p>Resurgence Builds is a passion project, but hosting and development cost real money. We run non-intrusive ads through Google AdSense to keep the lights on. We will never gate content behind a paywall, run pop-up ads, or prioritize revenue over user experience. The site is free and will stay free.</p>
+
       <h2>Get Involved</h2>
-      <p>Have a build that's shredding the Dark Zone? Found a typo? Just want to tell us our tier list is wrong? We're always looking for feedback. Hit us up on Discord or drop a comment. We read everything. We respond to most of it. We fix the stuff that's actually wrong.</p>
+      <p>Have a build that's shredding the Dark Zone? Found a typo? Disagree with a tier list ranking? We're always looking for feedback. Join our Discord community or reach out on social media — we read everything and fix what needs fixing.</p>
+      
+      <div style="display: flex; gap: var(--sp-3); flex-wrap: wrap; margin-top: var(--sp-4);">
+        <a href="https://discord.gg/t6GTR6tpd" target="_blank" rel="noopener noreferrer" class="btn btn--primary" style="display: inline-flex; align-items: center; gap: 8px;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true"><path d="M13.545 2.907a13.2 13.2 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.2 12.2 0 0 0-3.658 0 8 8 0 0 0-.412-.833.05.05 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.04.04 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032q.003.022.021.037a13.3 13.3 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019q.463-.63.818-1.329a.05.05 0 0 0-.01-.059l-.018-.011a9 9 0 0 1-1.248-.595.05.05 0 0 1-.02-.066l.015-.019q.127-.095.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.05.05 0 0 1 .053.007q.121.1.248.195a.05.05 0 0 1-.004.085 8 8 0 0 1-1.249.594.05.05 0 0 0-.03.03.05.05 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.2 13.2 0 0 0 4.001-2.02.05.05 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.03.03 0 0 0-.02-.019m-8.198 7.307c-.789 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612m5.316 0c-.788 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612"/></svg>
+          Join Our Discord
+        </a>
+        <a href="https://x.com/ResurgenceBuild" target="_blank" rel="noopener noreferrer" class="btn btn--outline" style="display: inline-flex; align-items: center; gap: 8px;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16"><path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z"/></svg>
+          Follow on X
+        </a>
+      </div>
+
+      <h2>Disclaimer</h2>
+      <p>Resurgence Builds is not affiliated with, endorsed by, or sponsored by Ubisoft Entertainment SA. All game trademarks, logos, and copyrights belong to their respective owners. <em>Tom Clancy's The Division Resurgence</em> is a registered trademark of Ubisoft.</p>
     </div>
   </div>
 </BaseLayout>

@@ -35,6 +35,7 @@ const fullTitle = title.includes(siteName) ? title : `${title} · ${siteName}`;
 const siteUrl = Astro.site?.toString().replace(/\/$/, '') || 'https://resurgencebuilds.com';
 const canonicalURL = canonical || new URL(Astro.url.pathname, siteUrl).toString();
 const ogImageUrl = ogImage.startsWith('http') ? ogImage : `${siteUrl}${ogImage}`;
+const isDefaultOgImage = ogImage === '/images/resurgence-builds-official-logo.png';
 
 const graph: any[] = [];
 
@@ -218,8 +219,8 @@ const finalJsonLd = {
 <meta property="og:title" content={fullTitle} />
 <meta property="og:description" content={description} />
 <meta property="og:image" content={ogImageUrl} />
-<meta property="og:image:width" content="1024" />
-<meta property="og:image:height" content="1024" />
+<meta property="og:image:width" content={isDefaultOgImage ? "800" : "1200"} />
+<meta property="og:image:height" content={isDefaultOgImage ? "800" : "630"} />
 <meta property="og:url" content={canonicalURL} />
 <meta property="og:site_name" content={siteName} />
 <meta property="og:locale" content="en_US" />
@@ -234,5 +235,6 @@ const finalJsonLd = {
 <meta name="twitter:description" content={description} />
 <meta name="twitter:image" content={ogImageUrl} />
 <meta name="twitter:site" content="@ResurgenceBuild" />
+{article && <meta name="author" content={article.author} />}
 
 <script type="application/ld+json" set:html={JSON.stringify(finalJsonLd)} />

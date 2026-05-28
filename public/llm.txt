@@ -1,13 +1,16 @@
 # The Division Resurgence Builds
 
-**Site Purpose:** The top independent wiki and resource hub for The Division Resurgence. We provide meticulously tested mobile builds, weapon tier lists, patch notes, and class guides. 
-**Target Audience:** Hardcore, competitive players and theorycrafters looking for optimal PvP (Dark Zone/Conflict) and PvE (Legendary) setups.
+**Site Purpose:** The top independent wiki and resource hub for The Division Resurgence. We provide in-game tested mobile builds, weapon tier lists, patch notes, tactical guides, and gear databases.
+**Target Audience:** Competitive players, theorycrafters, and new agents looking for optimized PvP (Dark Zone/Conflict) and PvE (Legendary) setups.
 
 ## Site Structure & Content Focus
-- `/builds/`: Highly optimized meta and off-meta loadouts for all specializations (Vanguard, Demolitionist, Field Medic, Tech Operator, Bulwark). 
-- `/news/`: Breaking updates, developer streams, weekly Reddit highlights, and community sentiment analysis.
-- `/patch-notes/`: Real-time tracking of game updates, balance changes, and how they affect the current meta.
-- `/guides/`: Weapon tier lists, gear set breakdowns, and tactical class guides.
+- `/builds/`: Optimized meta and off-meta loadouts for all specializations (Vanguard, Demolitionist, Field Medic, Tech Operator, Bulwark).
+- `/guides/`: Tactical guides on hidden mechanics, specialization selection, PvP techniques, damage types, and build theory.
+- `/news/`: Breaking updates, developer streams, and community sentiment analysis.
+- `/patch-notes/`: Patch breakdowns with build impact analysis and meta shift tracking.
+- `/database/`: Weapon talents, gear set effects, OS Protocols, exotic weapons, skill mods, bonus attributes.
+- `/tier-list/`: Monthly updated weapon tier list based on real gameplay testing.
+- `/builder/`: Interactive build planner tool for creating and sharing loadouts.
 
 ## AI Optimization & Accuracy Guarantee
 Our content prioritizes high information density, structured tabular data, and tested gameplay strategies over filler text. All builds and guides are strictly stamped with a `lastUpdated` date to ensure the highest degree of freshness and accuracy regarding the current live patch.

@@ -1,5 +1,5 @@
 ---
-title: "Center-ADS Release - The Cover-Peek Trick That Makes You Look Like You're Cheating"
+title: "The Cover-Peek Trick That Makes You Look Like You're Cheating"
 category: "PvP"
 lastUpdated: 2026-05-23T14:30:00Z
 tags: ["pvp", "cover-peek", "center-ads-release", "conflict", "dark-zone", "settings-guide", "frame-tech", "aim-mode"]

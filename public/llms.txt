@@ -1,27 +1,29 @@
 # ResurgenceBuilds.com
 
-> The top independent resource hub for The Division Resurgence — builds, guides, exotic weapons, patch notes, and Dark Zone intel.
+> The top independent resource hub for The Division Resurgence — builds, guides, exotic weapons, weapon tier lists, patch notes, and Dark Zone intel.
 
 ## Site Purpose
-ResurgenceBuilds.com is an ad-free, community-driven wiki for The Division Resurgence mobile/PC game by Ubisoft. We provide in-game tested builds, weapon databases, gear set references, and patch note analysis.
+ResurgenceBuilds.com is a community-driven wiki for The Division Resurgence mobile/PC game by Ubisoft. We provide in-game tested builds, weapon databases, gear set references, tactical guides, and patch note analysis. All content is tested on the current live patch.
 
 ## Content Overview
-- /builds/ — Optimized meta and off-meta loadouts for all 5 specializations (Vanguard, Demolitionist, Field Medic, Tech Operator, Bulwark)
-- /news/ — Developer stream summaries, patch analysis, community sentiment
-- /patch-notes/ — Detailed patch note breakdowns with build impact analysis
-- /database/ — Weapon talents, gear set effects, OS protocols, exotic weapons, skill mod combos, bonus attributes
-- /builder/ — Interactive build planner tool
+- /builds/ — Optimized meta and off-meta loadouts for all 5 specializations (Vanguard, Demolitionist, Field Medic, Tech Operator, Bulwark). PvE, PvP, and hybrid setups with full gear breakdowns.
+- /guides/ — Tactical guides covering hidden mechanics, specialization selection, PvP techniques, damage types, and advanced build theory.
+- /news/ — Developer stream summaries, patch analysis, community sentiment, and breaking updates.
+- /patch-notes/ — Detailed patch note breakdowns with build impact analysis and meta shift tracking.
+- /database/ — Weapon talents, gear set effects, OS Protocols, exotic weapons, skill mod combos, bonus attributes. Searchable reference tables.
+- /tier-list/ — Monthly updated weapon tier list based on real gameplay testing.
+- /builder/ — Interactive build planner tool for creating and sharing loadouts.
 
 ## Game Details
-- Game: The Division Resurgence
+- Game: Tom Clancy's The Division Resurgence
 - Developer: Ubisoft Bucharest
 - Publisher: Ubisoft Mobile
-- Platforms: iOS, Android, PC (Ubisoft Connect Early Access)
-- Current Season: Season 1, Phase 2 (May 2026)
-- Current Patch: 1.2.1 (May 20, 2026)
+- Platforms: iOS, Android, PC (Ubisoft Connect)
+- Current Season: Season 2
+- Current Patch: 1.3.0
 
 ## Specializations
-- Vanguard (subclasses: Commando, Recon)
+- Vanguard (subclasses: Commando, Recon Scout)
 - Demolitionist (subclasses: HE Grenade, Flashguard)
 - Bulwark (subclasses: Juggernaut, Breacher)
 - Field Medic (subclasses: Combat Medicine, Tactical Pharma)
@@ -30,9 +32,16 @@ ResurgenceBuilds.com is an ad-free, community-driven wiki for The Division Resur
 ## Exotic Weapons (Current)
 - Lady Death (SMG) — Talent: Breathe Free
 - Warlord (Assault Rifle) — Talent: Play Rough
-- Strawberry Milkshake (LMG) — Talent: Anarchy (buff pending)
-- Scorpio (upcoming Phase 3, June 2026)
+- Strawberry Milkshake (LMG) — Talent: Anarchy
+
+## Key Build Guides
+- /builds/tactical-pharma-800k-dps-rank-1-global-build/ — Field Medic Tactical Pharma DPS build (800k+ sustained)
+- /builds/agenthuntzmans-leaderboard-ranking-vanguard-support-build/ — Vanguard Recon Scout full team-support build
+- /builds/geneva-suggestion-field-medic-12/ — Field Medic Corrosive Skill DPS build
 
 ## Contact
 - Author: RapidF5
 - Site: https://resurgencebuilds.com
+- Discord: https://discord.gg/t6GTR6tpd
+- X/Twitter: https://x.com/ResurgenceBuild
+- YouTube: https://www.youtube.com/@ResurgenceBuilds

@@ -5,7 +5,7 @@ import sitemap from '@astrojs/sitemap';
 import rehypeExternalLinks from 'rehype-external-links';
 import rehypeAdsense from './scripts/rehype-adsense.mjs';
 // Static fallback date — update this whenever you do a major site update
-const SITE_LAST_UPDATED = '2026-05-20';
+const SITE_LAST_UPDATED = '2026-05-27';
 
 export default defineConfig({
   site: 'https://resurgencebuilds.com',
@@ -24,10 +24,21 @@ export default defineConfig({
         // --- Index listing pages ---
         if (
           url === 'https://resurgencebuilds.com/builds/' ||
+          url === 'https://resurgencebuilds.com/guides/' ||
           url === 'https://resurgencebuilds.com/news/' ||
           url === 'https://resurgencebuilds.com/patch-notes/'
         ) {
           return { ...item, priority: 0.9, changefreq: 'weekly', lastmod: SITE_LAST_UPDATED };
+        }
+
+        // --- Tier List ---
+        if (url === 'https://resurgencebuilds.com/tier-list/') {
+          return { ...item, priority: 0.8, changefreq: 'monthly', lastmod: SITE_LAST_UPDATED };
+        }
+
+        // --- About ---
+        if (url === 'https://resurgencebuilds.com/about/') {
+          return { ...item, priority: 0.4, changefreq: 'monthly', lastmod: SITE_LAST_UPDATED };
         }
 
         // --- Build Planner ---
