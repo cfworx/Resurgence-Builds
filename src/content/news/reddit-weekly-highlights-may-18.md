@@ -64,7 +64,7 @@ Someone finally said what we were all thinking: *"Why would you put a bayonet on
 
 **u/SilentRiot13** drops the lore bomb: *"All aesthetic choices are jabs at how stupid Jax is."* And **u/STILLPunkedUp-** admits: *"Bro I didn't see the knife being shorter than the barrel until reading this and now im dying 😂"*
 
-We built an [entire build around this ridiculous gun](/builds/strawberry-reaper-demolitionist-10/). Go make it work.
+We built an entire build around this ridiculous gun. Go make it work.
 
 ---
 

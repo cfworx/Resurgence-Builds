@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Which Specialization Should You Pick in The Division Resurgence? - 2026 Guide"
 category: "Beginner"
 lastUpdated: 2026-05-20T12:00:00Z
@@ -61,8 +61,8 @@ Vanguard is never the wrong answer. It's also rarely a *surprising* answer. If y
 **Best for:** Players who want to learn the game without fighting their spec at the same time. PvP players who want to understand why they keep winning or dying.
 
 **Builds on the site:**
-- [Vanguard , The Dark Zone PvP Lady Death build](/builds/dark-zone-pvp-vanguard-lady-death-3/) , the DZ aggressor loadout
-- [Vanguard , The PvE Shotgun Meta build](/builds/pve-meta-vanguard-shotgun-7/) , a surprisingly nasty close-range PvE option
+- Vanguard, The Dark Zone PvP Lady Death build — the DZ aggressor loadout
+- Vanguard, The PvE Shotgun Meta build — a surprisingly nasty close-range PvE option
 
 ---
 
@@ -83,8 +83,8 @@ Fair warning: you will also shoot yourself with it. At least once. Probably in a
 **Best for:** Players who like thinking in areas of effect rather than single-target math. Anyone who finds the meta builds too fiddly and wants to press a button and watch a room clear.
 
 **Builds on the site:**
-- [Demolitionist , Explosive Chaos](/builds/demolitionist-explosive-chaos-4/) , the full grenade brain build
-- [Demolitionist , The Strawberry Reaper](/builds/strawberry-reaper-demolitionist-10/) , the off-meta DoT spreader using the Strawberry Milkshake exotic LMG
+- Demolitionist, Explosive Chaos — the full grenade brain build
+- Demolitionist, The Strawberry Reaper — the off-meta DoT spreader using the Strawberry Milkshake exotic LMG
 
 ---
 
@@ -103,8 +103,8 @@ The Bulwark is the spec that experienced players suddenly appreciate after a ses
 **Best for:** Players who don't care about kill counts. Experienced players who know what holds a group together. Anyone who has ever muttered "I'll just absorb everything" and meant it without sarcasm.
 
 **Builds on the site:**
-- [Bulwark , The Unkillable Mosquito](/builds/vampire-bulwark-tank-9/) , the Vampire Tank that heals off Happy Survival and refuses to die
-- [Conflict PvP , Fearless Warlord](/builds/conflict-pvp-fearless-warlord/) , the PvP monster that turns the Domination zone into a personal throne
+- Bulwark, The Unkillable Mosquito — the Vampire Tank that heals off Happy Survival and refuses to die
+- Conflict PvP, Fearless Warlord — the PvP monster that turns the Domination zone into a personal throne
 
 ---
 
@@ -123,7 +123,7 @@ Let's be honest about who picks Field Medic. It's people who, in a past life, pl
 **Best for:** Players who want to enable a group rather than carry it. Solo players who want Corrosion debuffs stacking while drones handle the dirty work. Anyone who likes being indispensable without needing the kill feed to prove it.
 
 **Builds on the site:**
-- [Field Medic , Legendary Healer](/builds/legendary-healer-field-medic-5/) , the full support build that keeps Legendary runs from becoming reload screens
+- Field Medic, Legendary Healer — the full support build that keeps Legendary runs from becoming reload screens
 
 ---
 
@@ -144,8 +144,8 @@ When it works, however, nobody looks cooler.
 **Best for:** Players who enjoy optimizing systems and watching them execute. Skill-damage theorycrafters. Anyone who has ever watched a YouTube video called "perfect drone rotation guide" without any irony.
 
 **Builds on the site:**
-- [Tech Operator , Lockdown](/builds/lockdown-tech-op-6/) , zone control and skill damage
-- [Tech Operator , Disorient Express](/builds/tech-op-disorient-express-11/) , the disorientation stacking build that makes enemies temporarily useless
+- Tech Operator, Lockdown — zone control and skill damage
+- Tech Operator, Disorient Express — the disorientation stacking build that makes enemies temporarily useless
 
 ---
 

@@ -140,7 +140,7 @@ Center-ADS Release is weapon-agnostic in theory, but in practice the payoff scal
 
 Avoid full-auto LMGs and SMGs for this specifically. Their DPS is in sustained fire, and sustained fire is what Center-ADS Release explicitly avoids. If you're holding the trigger down, you're not peeking , you're posing.
 
-**Want a full sniper build that makes the most of this tech?** Check out our [Cover-Shooter Sniper build](/builds/cover-shooter-sniper-2/) , it was designed around this exact technique.
+**Want a full sniper build that makes the most of this tech?** Check out our Cover-Shooter Sniper build (coming soon) — it was designed around this exact technique.
 
 ---
 
