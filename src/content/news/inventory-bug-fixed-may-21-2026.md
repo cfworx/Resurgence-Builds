@@ -7,7 +7,7 @@ imageAlt: "A Division Resurgence Agent looking at a glitching orange holographic
 description: "Ubisoft fixes the disappearing inventory index error, Strawberry Milkshake underperforms, and Phase 3 approaches. Here's your 48-hour Resurgence brief."
 tags: ["News", "Patch Notes", "Phase 2", "Strawberry Milkshake", "Aegis", "Dark Zone", "Bugs"]
 shareTitle: "The Inventory Bug is Dead"
-shareText: "Ubisoft finally fixed the disappearing loot bug, but the compensation is lacking. Plus, why the Strawberry Milkshake is the new Pestilence."
+shareText: "The disappearing loot bug is fixed. Here's the full breakdown plus why the Strawberry Milkshake is the new Pestilence."
 
 faqs:
   - question: "Did Ubisoft fix the disappearing inventory bug in Division Resurgence?"
@@ -15,7 +15,7 @@ faqs:
   - question: "Will I get my lost items back from the inventory bug?"
     answer: "The blanket compensation was 500k Basic Credits and 750 Phoenix Credits for all affected players. For specific lost items, you need to submit a support ticket to Ubisoft customer service. Community reports on success rates are mixed. Some players got items restored, others got a form response. If you lost a max-rolled Warlord, our condolences. And our suggestion to submit that ticket immediately."
   - question: "Is it safe to play Division Resurgence now or will my items disappear again?"
-    answer: "The root cause has been patched. The 'index out of bounds' error has been fixed at the server level, meaning the specific bug that caused items to vanish in transit between your inventory and the database is no longer active. That said, this is a live service game. New bugs can always appear. But the specific inventory-eating demon has been exorcised. Probably. This IS Ubisoft we're talking about."
+    answer: "The root cause has been patched. The 'index out of bounds' error has been fixed at the server level, meaning the specific bug that caused items to vanish in transit between your inventory and the database is no longer active. That said, this is a live service game. New bugs can always appear. But the specific inventory-eating demon has been exorcised."
 ---
 
 # Ubisoft Names the Boss: Inventory-Wipe Bug Was an Index-Out-of-Bounds Error
@@ -57,7 +57,7 @@ Players are reporting the Anarchy DoT ticking for a dismal ~38 damage per tick. 
 
 ## 📢 THE OFFICIAL QUIET
 
-Aside from the inventory fix, Ubisoft has been conspicuously quiet. Over the last 48 hours, the official `@TDResurgence` account has made exactly two community comments:
+Aside from the inventory fix, official communications have been light. Over the last 48 hours, the official `@TDResurgence` account has made exactly two community comments:
 1. Confirming they love a "Fashion Friday" idea.
 2. Confirming the **DZ Tactical Augmentation reward bug** is still broken and under investigation with no ETA.
 

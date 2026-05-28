@@ -40,7 +40,7 @@ The community has officially reached the "thank you for the trauma" stage. We're
 
 This absolute legend did what no one else thought to do: **screenshotted their entire inventory before the Phase 2 patch** to prove items were disappearing. Result? 16 items gone. Including a god-rolled Double Barrel with max armor and Unbreakable.
 
-The fix? **u/VegetableTea4447** casually drops: *"All it took to fix it for me was closing out the game and clearing the apps cache."* 43 upvotes. The man saved more inventories than Ubisoft support has in two months.
+The fix? **u/VegetableTea4447** casually drops: *"All it took to fix it for me was closing out the game and clearing the apps cache."* 43 upvotes. Community-sourced troubleshooting at its finest.
 
 Meanwhile, **u/X_CLOWNEY_X** asks the question we're all thinking: *"Do they only have Dave working on this game from his house and when he has spare time?"* Dave, if you're reading this: we believe in you. But also please hire help.
 
@@ -130,7 +130,7 @@ A comprehensive list of every active bug, from the lock glitch that deletes weap
 
 **u/Low-Extent9267** delivers the line of the week: *"This game is more infected than the whole lore of the Division series."* And **u/whodafukisnar** with the rebrand: *"THE DIVISION: (BUGS) RESURGENCE."*
 
-Honestly? That's a better subtitle than anything Ubisoft marketing has come up with.
+Hard to argue with that level of creative community engagement.
 
 ---
 
@@ -144,9 +144,7 @@ Honestly? That's a better subtitle than anything Ubisoft marketing has come up w
 
 ## What This Means
 
-The subreddit is in full "acceptance" stage of grief. The sarcasm has evolved past anger into something beautiful , a community that roasts the game it loves because nobody else is going to fix it for them. The vendor bug, the inventory wipes, and the 300-credit support tickets are the defining moments of Phase 2 so far.
-
-If Ubisoft is reading this: your community is still here. They're still playing. They're just also writing your eulogy in real time. Fix the vendor. Fix the inventory. Fix Outpost Annihilation. And for the love of god, give that poor man more than 300 credits.
+The community is still here. Still playing. Still passionate enough to write detailed bug reports and creative roasts in the same breath. The vendor bug, the inventory wipes, and the support ticket process are the defining frustrations of Phase 2 so far — but the fact that players care this much is a good sign for the game's long-term health.
 
 We'll be back next week with another round. Until then, keep your inventories screenshotted and your expectations underground.
 

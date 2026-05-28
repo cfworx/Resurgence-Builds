@@ -320,19 +320,3 @@ const redditShareUrl = `https://reddit.com/submit?url=${encodeURIComponent(Astro
   }
 
 </style>
-
-<script>
-  // Wrap all prose tables in a scrollable div so the table can stay
-  // display:table (full width) while the wrapper handles overflow scrolling.
-  document.addEventListener('DOMContentLoaded', () => {
-    const prose = document.querySelector('.prose');
-    if (!prose) return;
-    prose.querySelectorAll('table').forEach(table => {
-      if (table.parentElement?.classList.contains('table-scroll')) return;
-      const wrapper = document.createElement('div');
-      wrapper.className = 'table-scroll';
-      table.parentNode?.insertBefore(wrapper, table);
-      wrapper.appendChild(table);
-    });
-  });
-</script>

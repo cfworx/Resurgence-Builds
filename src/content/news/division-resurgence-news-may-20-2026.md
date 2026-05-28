@@ -168,8 +168,8 @@ The Phase 2 free exotic LMG is the dominant conversation in the community right 
 
 ### Mad About
 
-- **Disappearing inventory.** Multiple players have screenshots showing pre-Phase 2 inventories with items that vanished post-patch. 1.2.1 should stop new losses, but recovery of already-lost items is ticket-by-ticket. Ubisoft's previous best offer was **300 credits** for a god-rolled item loss. Three. Hundred. Credits. The 500K/750 Phoenix Credits mass payout today is a significant overcorrection in the right direction.
-- **Outpost Annihilation** is still broken. It was broken in beta. It is broken now. At this rate we'll get a Phase 3 hotfix that introduces a new bug to Outpost Annihilation. A bug cannot fix a bug that has never worked.
+- **Disappearing inventory.** Multiple players have screenshots showing pre-Phase 2 inventories with items that vanished post-patch. 1.2.1 should stop new losses, but recovery of already-lost items is ticket-by-ticket. The 500K/750 Phoenix Credits mass payout today is a meaningful step toward compensating affected players.
+- **Outpost Annihilation** is still bugged. The issue has persisted since beta and remains unresolved. Hopefully a future patch addresses it.
 - **Warlord proficiency wiping** on some accounts , a community-reported bug that has hit iOS players especially hard. Still listed as under investigation.
 - **The sell function** being unavailable for 3+ days for some players. Patch 1.2.1 directly addresses this one.
 

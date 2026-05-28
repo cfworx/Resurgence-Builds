@@ -13,9 +13,9 @@ faqs:
   - question: "What's new in Division Resurgence Phase 2?"
     answer: "New missions, new gear sets (including Mechanical Expert and Boom Shakalaka), the Aegis system rework, new exotic weapons including the Strawberry Milkshake (which is currently terrible, see our coverage), and quality-of-life updates. Phase 2 is the 'real launch' of endgame content. Phase 1 was the tutorial. This is where the game actually starts."
   - question: "Is Phase 2 worth coming back for?"
-    answer: "If you left because of the content drought in Phase 1, yes. There's significantly more to do now. If you left because of bugs, maybe wait one more patch. Phase 2 launched with the inventory bug that ate people's gear, which Ubisoft has since fixed. The game is in a better state now than it was at Phase 2 launch, and it's only getting better. Probably."
+    answer: "If you left because of the content drought in Phase 1, yes. There's significantly more to do now. If you left because of bugs, the inventory wipe issue has been fixed and the game is in a noticeably better state than it was at Phase 2 launch."
   - question: "When does Season 2 start in Division Resurgence?"
-    answer: "Season 2 is expected to begin with Phase 3 in June 2026. It will bring new exotic weapons, gear sets, and potentially a new PvP mode. Ubisoft has not confirmed exact dates because confirming dates requires commitment, and commitment requires the confidence that the inventory won't eat itself again."
+    answer: "Season 2 is expected to begin with Phase 3 in June 2026. It will bring new exotic weapons, gear sets, and potentially a new PvP mode. Exact dates haven't been confirmed yet, but the roadmap points to a June window."
 ---
 
 Ubisoft launched Phase 2 of Season 1 on May 12, 2026. The update introduces a new **Classified Ops Pass** with 50 tiers of rewards, a free Exotic LMG (Strawberry Milkshake), three new cosmetic Draw Sets, and four time-limited events , one in the Dark Zone and three speed-run challenges set in main-story missions on Challenging difficulty.

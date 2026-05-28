@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Season 1 Weapon Tier List"
 type: weapon
 patch: "1.2.0"
@@ -12,7 +12,7 @@ faqs:
   - question: "Is the tier list based on DPS numbers or actual gameplay?"
     answer: "Actual gameplay, community testing, and content creator analysis. DPS numbers in Division Resurgence are misleading because the character screen doesn't account for talent procs, set bonuses, or team buffs. Our rankings reflect how weapons perform in real endgame content (Legendary missions, Dark Zone PvP, Conflict) with optimized builds, not how they look on a stat screen that was clearly designed by someone who hates useful information."
   - question: "Why is the Strawberry Milkshake rated so low?"
-    answer: "Because it does 38 damage per DoT tick. That's not a typo. Thirty-eight. The community has formally requested that Ubisoft rename it to the 'Strawberry Mistake.' A buff is confirmed coming but until it arrives, this weapon is a trophy you display in your stash, not a tool you bring to content. Save your recalibration materials."
+    answer: "Because it does 38 damage per DoT tick. That's not a typo. Thirty-eight. The Anarchy DoT is effectively non-functional in practice. A buff is confirmed coming, but until it arrives, the Strawberry Milkshake's value is in its massive magazine, Concentrated Fire stacking, and Swift Taunt combo — not the DoT. Save your recalibration materials until after the buff."
   - question: "How often is the Division Resurgence tier list updated?"
     answer: "After every major patch or when community testing reveals a significant meta shift. We don't update for minor hotfixes that don't affect weapon balance. If you're reading this and the 'last updated' date is more than a month old, yell at us on Twitter @ResurgenceBuild. We probably forgot. It happens."
   - question: "Does this tier list apply to PvP and PvE?"

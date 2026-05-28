@@ -76,6 +76,18 @@ const { title, description, ogType, ogImage, article, keywords, breadcrumbs, jso
   <main id="main-content">
     <slot />
   </main>
-  <Footer title={title} />
+<Footer title={title} />
+  <script>
+    // Wrap all prose/content tables in a scrollable div for mobile
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('.prose table, main table').forEach(table => {
+        if (table.parentElement?.classList.contains('table-scroll')) return;
+        const wrapper = document.createElement('div');
+        wrapper.className = 'table-scroll';
+        table.parentNode?.insertBefore(wrapper, table);
+        wrapper.appendChild(table);
+      });
+    });
+  </script>
 </body>
 </html>
