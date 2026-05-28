@@ -241,6 +241,13 @@
     }
   });
 
+  // Escape HTML to prevent XSS in rendered search results
+  function esc(str: string): string {
+    const d = document.createElement('div');
+    d.textContent = str;
+    return d.innerHTML;
+  }
+
   searchInput?.addEventListener('input', (e) => {
     const query = (e.target as HTMLInputElement).value.toLowerCase().trim();
     
@@ -267,12 +274,12 @@
     }
 
     resultsContainer.innerHTML = matches.map(m => `
-      <a href="${m.url}" class="search-result-item">
+      <a href="${esc(m.url)}" class="search-result-item">
         <div class="search-result-item__header">
-          <h3 class="search-result-item__title">${m.title}</h3>
-          <span class="search-result-item__type">${m.type}</span>
+          <h3 class="search-result-item__title">${esc(m.title)}</h3>
+          <span class="search-result-item__type">${esc(m.type)}</span>
         </div>
-        <p class="search-result-item__desc">${m.description}</p>
+        <p class="search-result-item__desc">${esc(m.description)}</p>
       </a>
     `).join('');
   });
