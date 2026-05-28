@@ -1055,11 +1055,12 @@ tbody tr:hover {
 }
 
 .hero__subtitle {
-  font-size: var(--text-lg);
-  color: #fcfcfc;
-  max-width: 40ch;
-  margin: 0 auto var(--sp-8);
-  text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+  display: block;
+  font-size: var(--text-base);
+  font-weight: 400;
+  color: var(--ink-muted);
+  margin-top: var(--sp-2);
+  letter-spacing: 0;
 }
 
 .hero__actions {
