@@ -8,7 +8,7 @@ pvp: true
 lastUpdated: 2026-05-28T00:00:00Z
 patch: "Season 2"
 tags: ["Tactical Pharma", "jackpot", "fire-cycle", "chemical-trap", "glass-cannon", "backup-battery", "roguemadras", "field-medic-build", "800k-dps", "skill-damage"]
-description: "RogueMadras's updated Tactical Pharma Field Medic build for Division Resurgence. 800k DPS from the Rank 1 Global player. Chemical Trap + Oxidizing Swarm with Jackpot 4pc and Fire Cycle 2pc. Full gear, talents, OS Protocol options, and skill mods."
+description: "RogueMadras's updated Tactical Pharma build for Division Resurgence. 800k DPS from the Rank 1 Global player. Chemical Trap + Oxidizing Hive with Jackpot 4pc and Fire Cycle 2pc. Oxidizing Swarm signature. Full gear, talents, OS Protocol options, and skill mods."
 author: "RapidF5 (via RogueMadras)"
 featuredImage: "/images/division-resurgence-tactical-pharma-800k-dps-field-medic-build.png"
 imageAlt: "Division Resurgence Tactical Pharma Field Medic 800k DPS build stats from Rank 1 Global player RogueMadras showing 704k DPS with Jackpot and Fire Cycle gear"
@@ -22,11 +22,11 @@ sources:
 plannerHash: "s=Field+Medic&sc=Tactical+Pharma&n=Tactical+Pharma+800k&ms=gs-7&m1=Skill+Critical+Damage&m2=Skill+Critical+Chance&cs=gs-11&ct=ba-12&c1=Skill+Critical+Chance&c2=Skill+Intensity&ps=gs-7&pt=bp-19&p1=Skill+Multi-Shot+Chance&p2=Skill+Critical+Chance&gs=gs-11&g1=Skill+Intensity&g2=Skill+Critical+Chance&hs=gs-11&h1=Skill+Intensity&h2=Skill+Multi-Shot+Chance&ks=gs-11&k1=Skill+Critical+Damage&k2=Skill+Critical+Chance&w1s=sw-11&w1tr=T2&w1t=wt-4&w1t2=wt-5&w2s=sw-33&w2tr=T1&w2t=wt-30&w2t2=wt-31&os=os-20&sm1=smc-88&sm2=smc-76&sm3=smc-73"
 faqs:
   - question: "What is the best Field Medic build in Division Resurgence?"
-    answer: "You're reading it. RogueMadras's Tactical Pharma build is the highest-DPS skill build in the game right now, pushing 800k+ DPS with optimized gear. It uses Chemical Trap and Oxidizing Swarm to dissolve entire rooms while your guns sit there collecting Engineering stacks like participation trophies. If your idea of 'healing' is making sure the enemies die before your teammates need healing, welcome home."
+    answer: "You're reading it. RogueMadras's Tactical Pharma build is the highest-DPS skill build in the game right now, pushing 800k+ DPS with optimized gear. It uses Chemical Trap and Oxidizing Hive as slotted skills, with Oxidizing Swarm as the signature ability, to dissolve entire rooms while your guns sit there collecting Engineering stacks like participation trophies. If your idea of 'healing' is making sure the enemies die before your teammates need healing, welcome home."
   - question: "Can I run this Tactical Pharma build in the Dark Zone?"
     answer: "You can, and it's actually hilarious for area denial at extractions. Drop a chemical trap on the rope, watch rogues walk into it, and type 'Geneva was a suggestion' in chat. The downside is that if someone rushes you with a Lady Death, your chemical cloud won't save you from the burst damage. Keep distance. You're a war criminal, not a brawler."
-  - question: "Is Glass Cannon worth the risk on this Field Medic build?"
-    answer: "Glass Cannon T2 gives +28% damage in exchange for your dignity every time a stray bullet one-taps you from across the map. On a character who should be standing 30 meters behind the fight throwing chemicals at doorways, the extra incoming damage almost never matters. If you're getting shot enough for Glass Cannon to kill you, the problem isn't the talent. The problem is you. RogueMadras is currently running Energize 2 but recommends Glass Cannon as the best option. He also has better positioning than you. Probably."
+  - question: "Is Glass Cannon worth the risk on this Tactical Pharma build?"
+    answer: "Glass Cannon T2 gives +28% damage in exchange for your dignity every time a stray bullet one-taps you from across the map. On a build where you should be standing 30 meters behind the fight throwing chemicals at doorways, the extra incoming damage almost never matters. If you're getting shot enough for Glass Cannon to kill you, the problem isn't the talent. The problem is you. RogueMadras is currently running Energize 2 but recommends Glass Cannon as the best option. He also has better positioning than you. Probably."
   - question: "What OS Protocol should I use for Tactical Pharma?"
     answer: "Rampart (High-End/Gold) is the best option. While immobile, meaning literally just standing still and not touching your joystick, you get +5% Damage per second up to 6 stacks for +30% total. On a build where your entire job is to stand behind cover and let acid do the talking, 'don't move' is the easiest instruction you'll ever follow. RogueMadras is currently running Brains Over Brawn (Specialized/Blue) but recommends Rampart. Chain Reaction (Superior/Purple) and Tactical Layering (High-End/Gold) are also viable if you can't get Rampart because RNG hates you personally."
   - question: "Why does this build only need 40% Skill Multi-Shot Chance?"
@@ -42,9 +42,9 @@ videoChannel: "RogueMadras"
 
 > Build credit: [**RogueMadras**](https://www.youtube.com/@RogueMadras). He just released an [updated build video](https://www.youtube.com/watch?v=1dAkSWoR7co) walking through his latest Tactical Pharma setup, the same build that pushed him to **Rank 1 Global**. You can also watch his [original gameplay breakdown](https://www.youtube.com/watch?v=orBlCP7ro4I&t=3351s).
 
-We originally covered this build as the "Geneva Suggestion." RogueMadras has since optimized it further for Division Resurgence Season 2, so we're updating everything. **800k+ DPS.** Rank 1 Global. On a Field Medic.
+We originally covered this build as the "Geneva Suggestion." RogueMadras has since optimized it further for Division Resurgence Season 2, so we're updating everything. **800k+ DPS.** Rank 1 Global. On the Tactical Pharma specialization.
 
-This is a skill-damage build that uses Chemical Trap and Oxidizing Swarm as the primary damage sources. Weapons exist to generate Engineering stacks, not to kill. The core loop is straightforward: throw Chemical Trap at a choke point, swap weapons to trigger Backup Battery (+22.50% Engineering) and Prime Engineer 2 (+31.50% Engineering), then deploy Oxidizing Swarm for automated corrosive pressure. Swap to MK16 to stack Skill Multi-Shot, and repeat as cooldowns come back. The build scales entirely through Engineering, Skill Crit, and Skill Multi-Shot.
+This is a skill-damage build that uses **Chemical Trap** and **Oxidizing Hive** as slotted skills, with **Oxidizing Swarm** as the signature ability providing automated corrosive pressure. Weapons exist to generate Engineering stacks, not to kill. The core loop is straightforward: throw Chemical Trap at a choke point, swap weapons to trigger Backup Battery (+22.50% Engineering) and Prime Engineer 2 (+31.50% Engineering), then deploy Oxidizing Hive for sustained corrosive damage. Pop Oxidizing Swarm (signature) when available for burst pressure. Swap to MK16 to stack Skill Multi-Shot, and repeat as cooldowns come back. The build scales entirely through Engineering, Skill Crit, and Skill Multi-Shot.
 
 ---
 
@@ -95,8 +95,9 @@ His actual in-game numbers for reference:
 | **Primary** | Vector 45 ACP (T2, SMG) | Backup Battery + Backup Magazine · Attributes: Skill Intensity + Skill Crit Damage |
 | **Secondary** | MK16 (AR) | Multi-Pronged Attack + Multitasking · Attributes: Skill Intensity + Skill Crit Damage |
 | **OS Protocol** | **Rampart** (High-End) | Best option: +5% Damage while immobile, up to 6 stacks (+30%). See OS Protocol section. |
-| **Skill 1** | Chemical Trap | AOE corrosive damage, main damage source |
-| **Skill 2** | Oxidizing Swarm | Automated corrosive pressure + debuff layer |
+| **Skill 1** | Chemical Trap | AoE corrosive damage, main damage source |
+| **Skill 2** | Oxidizing Hive | Sustained corrosive damage + area denial |
+| **Signature** | Oxidizing Swarm | Automated corrosive burst pressure (signature ability, not slotted) |
 | **Gear Mods** | 12× Engineering | All slots |
 
 ### Skill Mods
@@ -104,10 +105,10 @@ His actual in-game numbers for reference:
 | Skill | Mod | Preferred Firmware |
 |---|---|---|
 | Chemical Trap | **Chemical Recharge** | **Chemical Trap Intensity** |
-| Oxidizing Swarm | **Enhanced Formula** | **Oxidizing Intensity** |
-| Oxidizing Hive | **Hereafter Resilience** | **Oxidizing Hive Intensity** |
+| Oxidizing Hive | **Enhanced Formula** | **Oxidizing Hive Intensity** |
+| Oxidizing Swarm (Sig) | **Hereafter Resilience** | **Oxidizing Intensity** |
 
-> **Use Intensity, not Radius.** Radius increases area coverage. Intensity increases damage per tick. Intensity on all three, always.
+> **Use Intensity, not Radius.** Radius increases area coverage. Intensity increases damage per tick. Intensity on all skills, always.
 
 ---
 
@@ -127,7 +128,7 @@ His actual in-game numbers for reference:
 
 *+28% Damage (T2) / +20% Damage (T1). Increases incoming damage as a tradeoff.*
 
-Best-in-slot for maximum DPS. The multiplier applies directly to skill damage. Position 30 meters behind the fight to offset the squishiness.
+Best-in-slot for maximum DPS. Glass Cannon increases all damage you deal, including skill damage, based on current community testing. Position 30 meters behind the fight to offset the squishiness.
 
 **Alternative:** **Energize 2** (+25% Skill Damage for 8s on Medical Kit use, refreshed by Multi-Shot procs). Safer, less raw output. RogueMadras is currently running this but recommends Glass Cannon.
 
@@ -154,7 +155,7 @@ RogueMadras recommends **Rampart** as the best OS Protocol. He is currently runn
 
 *"While immobile, grants +5% Damage for 1 second, up to 6 stacks. This bonus resets upon moving."*
 
-"Immobile" means **not moving your character.** Just standing still. On a skill build where you position behind cover and deploy, this is a free +30% Damage with minimal effort.
+"Immobile" means **not moving your character.** Just standing still. On a skill build where you position behind cover and deploy, this is a free +30% Damage with minimal effort. Rampart is recommended over alternatives because Glass Cannon and Prime Engineer already push your Engineering high enough that Rampart's flat +30% Damage acts as a multiplicative layer on top — rather than stacking more Engineering from the same additive pool.
 
 **Stats:** Skill Critical Chance +18.00%, Engineering +97, Skill Damage +77, Health +2,554.
 
@@ -182,7 +183,7 @@ RogueMadras recommends at least **Talent Rank 3**. Below that, the bonus doesn't
 
 *"Deploying a Skill grants +15% Engineering, up to 3 stacks."* (+45% max)
 
-Every Chemical Trap and Oxidizing Swarm deployment stacks Engineering. Stays active permanently on a skill-spam build.
+Every Chemical Trap and Oxidizing Hive deployment stacks Engineering. Stays active permanently on a skill-spam build.
 
 **Stats:** Skill Intensity +15.00%, Engineering +97, Skill Damage +77, Health +2,554.
 
@@ -226,7 +227,7 @@ RogueMadras is running **Bloodlust 2 + Adaptation** on his MK16, which is not id
 
 All weapon attachments should be **Engineering.**
 
-**Tactical Augmentation:** For the first augment perk, pick the option that gives **+10% Weapon Multi-Shot Damage and +10% Skill Multi-Shot Damage.** Every gun has different first-perk options, so make sure you pick the one that benefits skills.
+**Tactical Augmentation:** If your weapon offers an augment that boosts **Skill Multi-Shot Damage**, prefer that option. Augmentation options vary by weapon type and rarity — not every weapon offers the same perks. Look for anything that increases Skill Multi-Shot Damage or Skill Intensity. The exact rolls depend on what's available for your specific weapon.
 
 ---
 

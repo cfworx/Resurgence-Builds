@@ -243,40 +243,6 @@ Run it on Vanguard Recon when your team coordinates around the cover. If your te
 
 ---
 
-## Combat Rotation
-
-**Pre-engage:**
-
-1. Move within range so Scanning Pulse will cover the enemy group.
-2. Drop Tactical Smart Cover on the position your team will ACTUALLY USE.
-3. Cast Scanning Pulse. Vulnerability applied. Team starts shooting.
-
-**Phase 1 — Proc Engineering (first 10 seconds):**
-
-4. Fire Police M4 into the densest enemy cluster. 10 hits in 5 seconds = Torrential Downpour proc (+22.5% Engineering).
-5. Keep firing M4. Rapid Charge generates Tactical Link energy (5 hits per 3-second window).
-
-**Phase 2 — Stack Fully Charged (10 to 25 seconds):**
-
-6. Swap to P90. Empty the magazine. Reload. **Fully Charged stack 1** (+7.50% Engineering).
-7. Keep firing. Empty again. Reload. **Stack 2.**
-8. One more empty mag. Reload. **Stack 3, max** (+22.50% total from Fully Charged).
-
-**Phase 3 — Tactical Link window:**
-
-9. Pop Tactical Link. Bugle Call slaps +14.4% RoF, Damage Reduction, and Movement Speed on the whole team.
-10. During Link, fire continuously. Mobile Bastion generates team Sig charge per kill. Scout chip generates team Sig charge per Pulse.
-
-**Phase 4 — Re-cycle:**
-
-11. Pulse comes back up (~15s cooldown). Recast.
-12. Smart Cover refreshes. Recast.
-13. Tactical Link refreshes. Repeat from Step 1.
-
-By three rotations deep in a long mission, your team feels like they're cheating.
-
----
-
 ## Loot Quick-Reference
 
 | Drop | Must Have |
