@@ -12,57 +12,57 @@ export async function getStaticPaths() {
     {
       id: 'vanguard',
       name: 'Vanguard',
-      role: 'Support / DPS',
-      description: 'The Vanguard is the most versatile specialization in Resurgence. The Commando subclass delivers aggressive close-range burst DPS with Warlord and Lady Death builds, while the Scout subclass is the highest-impact support in the game — buffing team damage through Smart Cover and Scanning Pulse so effectively that one Scout can triple a squad\'s total output.',
+      role: 'DPS / Team Utility',
+      description: 'A front-line attacker that bridges tanking and DPS. The Vanguard kit is built around Mobile Cover and Pulse-style scouting tools, giving the team both positional advantage and intel. The Commando subclass focuses on close-range burst damage, while the Scout Recon path provides high-impact team utility that community builds frequently rate as one of the strongest endgame setups.',
       signature: {
         name: 'Tactical Link',
-        description: 'Buffs allies with Pulsed status and preferentially targets enemy shields with its damage. Pairs with SAC Efficiency stacking for faster uptime in group content.'
+        description: 'The Vanguard\'s iconic offensive team buff. Tactical Link provides a high-impact damage and tempo boost tied into the class\'s cover and scouting tools.'
       },
-      perkOverview: 'Vanguard talents branch into Commando (Firepower-focused DPS with Warlord/Lady Death/DBS builds) and Scout Recon (Engineering-focused support using Smart Cover and Scanning Pulse to multiply team damage). The Scout meta currently dominates endgame group content.'
+      perkOverview: 'Vanguard talents branch into Commando (Firepower-focused DPS with Warlord, Lady Death, and DBS builds) and Scout Recon (Engineering-focused team utility using Smart Cover and Scanning Pulse). Community builds rate Scout Recon as very strong in endgame group content.'
     },
     {
       id: 'field-medic',
       name: 'Field Medic',
-      role: 'Healer / Battle Medic',
-      description: 'The backbone of any Legendary mission or Dark Zone squad. The Field Medic keeps the team alive through Support Station healing, Mender Drone sustain, and the Emergency Healing ultimate. The Combat Medic subclass can also deal meaningful damage by stacking Toughness with the Defensive Measures mod.',
+      role: 'Healer / Support',
+      description: 'The backbone of any Legendary mission or Dark Zone squad. The Field Medic keeps the team alive through healing skills, support tools, and a powerful burst-heal ultimate. The Combat Medic subclass can also deal meaningful damage by stacking Toughness with the Defensive Measures mod.',
       signature: {
-        name: 'Emergency Healing',
-        description: 'A burst heal that restores health to the user and nearby allies at 50% of the self-heal value. The AoE radius is fixed and does not scale with Skill Radius or Skill Duration stats.'
+        name: 'Burst Heal',
+        description: 'A burst heal that restores health to the user and splashes healing to nearby allies. The Field Medic\'s emergency heal is the most impactful single-use recovery tool in the game.'
       },
-      perkOverview: 'Healer stat priority runs Toughness (for survival and Defensive Measures damage scaling) → Skill Intensity → Skill Duration → Skill CDR. Deep Focus chest talent and Captain Cow gear set extend Support Station uptime significantly. Engineering is not worth prioritizing on pure medic builds.'
+      perkOverview: 'Community builds commonly prioritize Toughness (for survival and Defensive Measures damage scaling), followed by Skill Intensity, Skill Duration, and Skill CDR. Deep Focus chest talent and Captain Cow gear set extend Support Station uptime significantly.'
     },
     {
       id: 'demolitionist',
       name: 'Demolitionist',
-      role: 'AoE DPS / Skill DPS',
+      role: 'AoE DPS / Explosive Specialist',
       description: 'The Demolitionist excels at area denial and burst damage through grenades, artillery skills, and explosive chain reactions. The HE (High Explosive) subclass stacks Engineering and Skill Crit for devastating AoE output, while the Field Grenadier variant offers an alternative approach to explosive damage.',
       signature: {
         name: 'Grenade Launcher',
-        description: 'A heavy explosive launcher that deals massive area-of-effect damage. The Thermabaric Grenades mod increases damage to 460% at level 1 but reduces the magazine to a single shot. Synergizes with the Explosive Charge OS Protocol for burst rotations.'
+        description: 'A heavy explosive launcher that deals massive area-of-effect damage. Mods can dramatically increase per-shot damage at the cost of magazine capacity. The signature synergizes with Engineering stacking and explosive OS Protocols.'
       },
-      perkOverview: 'Talent trees revolve around Engineering stacking, Skill Crit Chance/Damage, and Skill Intensity. Recommended gear sets are Jackpot (4pc) with Fire Cycle or Boom-Shakalaka (2pc). Artillery rotations synergize with the Explosive Charge OS Protocol for chained burst damage.'
+      perkOverview: 'Talent trees revolve around Engineering stacking, Skill Crit Chance, Skill Crit Damage, and Skill Intensity. Community builds commonly run Jackpot (4pc) with Fire Cycle or Boom-Shakalaka (2pc) for maximum skill crit output.'
     },
     {
       id: 'tech-operator',
       name: 'Tech Operator',
       role: 'Skill DPS / Utility',
-      description: 'The Tech Operator dominates through deployed skills and gadgetry. The Aegis Operator subclass uses a shield with a powerful undocumented 3-second passive burst mechanic that deals significant damage when stacked with Engineering. The Offensive subclass relies on Striker Drone crits to apply Disoriented status and chain skill damage.',
+      description: 'The Tech Operator dominates through deployed skills and gadgetry. The Aegis Operator subclass uses a shield with a passive burst mechanic that deals significant damage when built around Engineering. The Offensive subclass uses Striker Drone crits to apply Disoriented status and chain skill damage.',
       signature: {
-        name: 'Overdrive',
-        description: 'Overcharges deployed skills, dramatically increasing their damage output and effectiveness for a limited duration. Pairs with Engineering stacking and Skill CDR for maximum uptime.'
+        name: 'Skill Overcharge',
+        description: 'Overcharges deployed skills for a limited duration, increasing their damage output and effectiveness. Pairs with Engineering stacking for maximum burst potential.'
       },
-      perkOverview: 'Aegis builds prioritize Engineering (which benefits the burst mechanic 2.25x more than Skill Damage). Striker Drone is standard for all offensive builds. Swift Aim weapon talent reduces Skill CDR and is effective for Aegis rotations. High skill ceiling in PvP — rewards deep mechanics knowledge.'
+      perkOverview: 'Aegis builds prioritize Engineering, which benefits the passive burst mechanic significantly more than Skill Damage. Striker Drone is standard for offensive builds. Swift Aim weapon talent is effective for rotation-heavy playstyles. High skill ceiling in PvP per community assessment.'
     },
     {
       id: 'bulwark',
       name: 'Bulwark',
       role: 'Tank / Frontline',
-      description: 'The immovable object. The Bulwark draws enemy fire, absorbs incoming damage, and anchors the team\'s position behind the Phalanx Shield. The Juggernaut subclass is the dominant force in PvP — Shockwave Spike delivers a 3-5 second stun on a 10-second cooldown that the community considers effectively unbeatable.',
+      description: 'The immovable object. The Bulwark draws enemy fire, absorbs incoming damage, and anchors the team\'s position behind the Phalanx Shield. Shockwave Spike MK3 emits shockwaves that apply Shock status, immobilizing enemies for several seconds — making Bulwark the most feared PvP specialization in the current meta.',
       signature: {
-        name: 'Shockwave Spike',
-        description: 'A devastating stun that incapacitates enemies for 3-5 seconds with a 10-second cooldown. Combined with a Stun Grenade, this creates a 5-second stunlock with no current counterplay. Can also softlock Boss Juggernaut AI with repeated stun loops.'
+        name: 'Breach Combo',
+        description: 'Expands the Phalanx Shield and pairs it with a powerful shotgun for aggressive close-range engagements. The Bulwark\'s signature enables the class to push forward while maintaining full frontal protection.'
       },
-      perkOverview: 'Juggernaut is universally dominant in PvP and endgame content. Build around Toughness stacking to maximize shield HP. Recommended gear sets are Fearless Warrior or Phalanx Attack (4pc) with Self-Propelled Shield (2pc). Breacher has niche PvE use for armor-breaking but is not meta-defining.'
+      perkOverview: 'Juggernaut is the dominant Bulwark subclass for both PvP and endgame PvE. Shockwave Spike MK3 provides approximately 5-second stuns on a short cooldown per community observation. Build around Toughness to maximize shield HP. Breacher has niche PvE use for armor-breaking.'
     }
   ];
 
