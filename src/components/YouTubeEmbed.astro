@@ -135,7 +135,8 @@ const videoSchema = {
     text-align: left;
   }
 
-  .yt-embed iframe {
+  .yt-embed iframe,
+  .yt-embed :global(iframe) {
     position: absolute;
     inset: 0;
     width: 100%;
@@ -159,6 +160,12 @@ const videoSchema = {
       iframe.allowFullscreen = true;
       iframe.title = btn.getAttribute('aria-label') || 'YouTube video';
       iframe.loading = 'lazy';
+      // Inline styles ensure sizing works even if scoped CSS doesn't match
+      iframe.style.position = 'absolute';
+      iframe.style.inset = '0';
+      iframe.style.width = '100%';
+      iframe.style.height = '100%';
+      iframe.style.border = 'none';
 
       // Replace the button with the iframe
       btn.remove();
