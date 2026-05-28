@@ -28,9 +28,9 @@ howTo:
       text: "Releasing ADS automatically returns your character to cover. Do not re-press cover."
 faqs:
   - question: "What is Center-ADS Release in Division Resurgence?"
-    answer: "A 3-frame cover peek technique that lets you pop out of cover, land a shot, and return to cover so fast that the enemy barely registers you were there. The game's netcode creates a tiny window where you're visible to the server but not long enough for enemies to return accurate fire. Ubisoft knows about it. They designed the cover system this way. Probably."
+    answer: "A 3-frame cover peek technique that lets you pop out of cover, land a shot, and return to cover so fast that the enemy barely registers you were there. The game's netcode creates a tiny window where you're visible to the server but not long enough for enemies to return accurate fire. The cover system was designed this way intentionally."
   - question: "Is the cover peek technique considered an exploit?"
-    answer: "No. Center-ADS Release uses the game's intended cover mechanics. You're pressing buttons the game gives you in an order the game allows. If Ubisoft considered it an exploit, they'd patch it, and considering the small indie company took three patches to fix disappearing inventory, they've clearly got bigger priorities. Use it guilt-free."
+    answer: "No. Center-ADS Release uses the game's intended cover mechanics. You're pressing buttons the game gives you in an order the game allows. If it were considered an exploit, it would have been patched already. Use it guilt-free."
   - question: "Can I do Center-ADS on mobile or only on PC?"
     answer: "Both, but mobile is significantly harder because you're doing precise timing on a touchscreen. PC players with a mouse have a massive advantage for cover peeking. If you're on mobile, consider a controller or a tablet with a bigger screen. The difference between a clean peek and a sloppy one is milliseconds, and fat-fingering on a 6-inch screen adds milliseconds you can't afford."
   - question: "Why do streamers kill so fast from cover in Division Resurgence?"
@@ -52,7 +52,7 @@ Here's the part nobody writes down: **the input doesn't work on default settings
 
 ## Why This Is the Most Underrated Tech in the Game
 
-Resurgence is a mobile-first looter-shooter with full cross-play to PC. That means the engine has to handle both touchscreen aim and a 144Hz mouse trying to micro-adjust mid-peek. Ubisoft's compromise is a stack of "assistance" settings that are on by default and that quietly fight you the moment you try to do anything precise.
+Resurgence is a mobile-first looter-shooter with full cross-play to PC. That means the engine has to handle both touchscreen aim and a 144Hz mouse trying to micro-adjust mid-peek. The engine's compromise is a stack of "assistance" settings that are on by default and that quietly fight you the moment you try to do anything precise.
 
 Top players turn the assistance off and flip the camera and ADS toggles into their "Mixed" modes. That's when they discover the cover camera and the ADS toggle don't share the same frame budget on the default setup , and that gap is where the peek lives.
 

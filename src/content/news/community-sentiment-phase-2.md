@@ -1,4 +1,4 @@
-﻿---
+---
 title: "What the Community Is Saying"
 publishDate: "2026-05-17"
 author: "RapidF5"
@@ -7,7 +7,7 @@ imageAlt: "A young gamer giving a thumbs up with a 180 FPS overlay playing The D
 description: "Community breakdown: the PC launch, 60 FPS performance, Classified Ops Pass, missing gear bugs, and the summer roadmap for Division Resurgence."
 tags: ["Community", "PC", "Phase 2", "Classified Ops Pass", "Missing Gear", "Roadmap"]
 shareTitle: "Spread the salt"
-shareText: "Share this to let X know that Reddit is still an irredeemable dumpster fire."
+shareText: "Share this community roundup with your squad. The conversation matters."
 
 faqs:
   - question: "Is the Division Resurgence community happy with Phase 2?"
@@ -15,7 +15,7 @@ faqs:
   - question: "Is Division Resurgence dying?"
     answer: "No. The subreddit is more active than ever, matchmaking times are short, and the Dark Zone is populated enough that you can't extract without getting ganked. Those are signs of a healthy player base. For context, Destiny 2 just announced its final content update drops June 9. Division Resurgence is growing while its biggest competitor is shutting down. That's not dying. That's winning by default."
   - question: "What's the biggest complaint about Division Resurgence right now?"
-    answer: "The inventory disappearing bug was the biggest, but that's been patched. Currently, it's Dark Zone PvP balance (Bulwark and shotguns), the Gold OS Protocol drop rate being abysmal, and the general feeling that the game doesn't explain its own mechanics. All valid complaints. All things Ubisoft is 'aware of and investigating.' Which is corporate for 'we'll get to it eventually.'"
+    answer: "The inventory disappearing bug was the biggest, but that's been patched. Currently, it's Dark Zone PvP balance (Bulwark and shotguns), the Gold OS Protocol drop rate being abysmal, and the general feeling that the game doesn't explain its own mechanics. All valid complaints that the team is actively investigating."
 ---
 
 
@@ -60,7 +60,7 @@ This is the credibility-defining issue for the live team. Multiple threads descr
 - u/BelleskaTROn- logged back in to a wiped loadout with no weapons or gear, sparking a wider thread of similar reports ([u/BelleskaTROn- , no weapons or gear](https://www.reddit.com/r/thedivisionresurgence/comments/1sa72za/logged_back_in_to_no_weapons_or_gear/)).
 - The April 19 dev-stream summary acknowledges the broader category , "Missing purchases should have been granted; if not, contact customer service" , but does not commit to a fix in the Phase 2 patch notes ([u/JokerUnique , Developer Stream Summary](https://www.reddit.com/r/thedivisionresurgence/comments/1sos0u8/developer_stream_summary/), April 19, 2026).
 
-Phase 2's patch notes list a related fix , "Fixed an issue where mods could sometimes break or not display correctly due to missing data" , but do not call out the disappearing-weapon or wiped-loadout cases by name ([Ubisoft , Phase 2 Starts Now](https://www.ubisoft.com/en-us/game/the-division/resurgence/news-updates/3ygDDXxg6dv6aQD5MJvbKv/phase-2-starts-now-whats-new), May 12, 2026). As of May 17, treat this as **acknowledged but unresolved**. Workarounds players are sharing , restart the client, verify your server region, check your mailbox, wait up to 24 hours for server-side restoration , are all client-side coping mechanisms rather than fixes ([How To Fix Gear Lost After Disconnection (YouTube)](https://www.youtube.com/watch?v=RFi5EpprYXc), April 17, 2026).
+Phase 2's patch notes list a related fix , "Fixed an issue where mods could sometimes break or not display correctly due to missing data" , but do not call out the disappearing-weapon or wiped-loadout cases by name ([Ubisoft , Phase 2 Starts Now](https://www.ubisoft.com/en-us/game/the-division/resurgence/news-updates/3ygDDXxg6dv6aQD5MJvbKv/phase-2-starts-now-whats-new), May 12, 2026). As of May 17, treat this as **acknowledged but unresolved**. Workarounds players are sharing , restart the client, verify your server region, check your mailbox, wait up to 24 hours for server-side restoration , are community-shared workarounds while the team investigates ([How To Fix Gear Lost After Disconnection (YouTube)](https://www.youtube.com/watch?v=RFi5EpprYXc), April 17, 2026).
 
 If you are affected, the official path is still in-game support with a transaction ID. Document everything.
 

@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Patch 1.2.1 Notes - Vendor Fixes, Inventory Fixes, and a Very Public Strawberry Milkshake Apology"
 version: "1.2.1"
 patchDate: "2026-05-20"
@@ -29,17 +29,17 @@ Ubisoft is mailing this directly to your in-game mailbox. No claim button, no ti
 - **500,000 Basic Credits**
 - **750 Phoenix Credits**
 
-This is the largest blanket compensation the game has issued since launch. Draw your own conclusions about what that implies about the Phase 2 launch.
+This is the largest blanket compensation the game has issued since launch.
 
 ---
 
 ### Vendor Fixes
 
-The vendor has been a crime scene since Phase 2 hit. Here's the cleanup:
+The vendor had several issues after Phase 2 launched. Here's the cleanup:
 
 - Fixed vendors not showing items the player could sell
-- Fixed players being able to sell locked or favorited items , yes, that was also a bug, yes it went the wrong direction
-- Fixed the Dark Zone vendor displaying no item names (how do you sell a nameless gun? ask Ubisoft, apparently)
+- Fixed players being able to sell locked or favorited items
+- Fixed the Dark Zone vendor displaying no item names
 
 ---
 
@@ -100,7 +100,7 @@ Not glamorous, but real , especially for non-English players who have been stari
 Ubisoft explicitly acknowledges the following are **not resolved** in this patch. This list is in the official patch notes, unusually transparently:
 
 - Gamepad support issues on iOS
-- **"Outpost Annihilation"** side mission not progressing , confirmed broken since beta, still listed as under investigation. At this point it may outlive us all
+- **"Outpost Annihilation"** side mission not progressing , confirmed broken since beta, still listed as under investigation
 - Some purchases still not being received in-game , contact support with a transaction ID
 - Tactical Augmentation reward from the Dark Zone quest cannot be claimed
 - Weapon proficiency blocked in some cases , see the workaround if you're on iOS: logging into the PC client once typically clears it

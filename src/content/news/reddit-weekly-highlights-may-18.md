@@ -26,7 +26,7 @@ Every week, the Division Resurgence subreddit delivers a masterclass in communal
 
 **u/starzwillsucceed** · [Score: 94](https://www.reddit.com/r/thedivisionresurgence/comments/1tegzmt/i_want_to_thank_the_devs_they_are_truly_a/) · May 16
 
-The sarcasm-to-word ratio on this post could power a small city. Our man typed out a genuine thank-you letter to Ubisoft… for being so incompetent that he finally quit and went to play Kingdom Come instead. *"You have saved me hundreds of hours from myself and this daily grind of a game by not giving a shit about your most dedicated followers."* 
+The sarcasm-to-word ratio on this post could power a small city. Our man typed out a genuine thank-you letter to the devs… for motivating him to finally touch grass and play Kingdom Come instead. *"You have saved me hundreds of hours from myself and this daily grind of a game by not giving a shit about your most dedicated followers."* 
 
 Top comment from **u/Madwand01**: *"This is so true! These Devs have saved me a shitload of money!"*
 
@@ -72,7 +72,7 @@ We built an entire build around this ridiculous gun. Go make it work.
 
 **u/harmundo** · [Score: 65](https://www.reddit.com/r/thedivisionresurgence/comments/1tclvcg/everythings_cool_they_understand_the_frustration/) · May 14
 
-A screenshot of Ubisoft support saying they'll share news about game-breaking bugs "when they feel like it." The top comment is just: *"Team"* , in quotes , followed by *"Skeleton crew of 3 overworked devs most likely."*
+A screenshot of a support response about bug communication timelines. The top comment is just: *"Team"* , in quotes , followed by *"Skeleton crew of 3 overworked devs most likely."*
 
 **u/superchugga504** delivers the killshot: *"This is honestly funny considering Outpost Annihilation has never worked as far as I can tell (since people are saying it's been broken since beta)."* That mission has been broken since before the game launched. At this point the bug has seniority over most of the dev team.
 
@@ -106,7 +106,7 @@ When someone titles their post with a date range like a tombstone inscription, y
 
 This player didn't just quit. They **gave their 25.5k power account to a random clan member** and posted about it like a will reading. After 40 days of grinding, the Warlord proficiency bug and zero gold chips from DZ broke them.
 
-**u/NecessaryComputer450**: *"The more people leave the better I guess, then they see how shit they are treating us."* And **u/X_CLOWNEY_X** with the real talk: *"They are only trying to recoup some of the money they have poured into this game… Pure cash grab."* Brutal. Possibly accurate.
+**u/NecessaryComputer450**: *"The more people leave the better I guess, then they see how shit they are treating us."* And **u/X_CLOWNEY_X** with the real talk: *"They are only trying to recoup some of the money they have poured into this game… Pure cash grab."* Strong community feelings on the topic.
 
 ---
 
@@ -114,7 +114,7 @@ This player didn't just quit. They **gave their 25.5k power account to a random 
 
 **u/DunBrun** · [Score: 51](https://www.reddit.com/r/thedivisionresurgence/comments/1teq6tl/compensation/) · May 16
 
-After losing two items that broke both his 2-piece and 4-piece set bonuses, waiting weeks for support, AND buying 10 caches that didn't give the guaranteed reward… Ubisoft offered **300 credits**. That's not even enough to buy two caches.
+After losing two items that broke both his 2-piece and 4-piece set bonuses, waiting weeks for support, AND buying 10 caches that didn't give the guaranteed reward… the reported compensation was **300 credits** — the community pointed out that's less than two caches.
 
 **u/NoPart7463**: *"😭💔300 credits this must be ragebait."* It's not. It's customer service.
 

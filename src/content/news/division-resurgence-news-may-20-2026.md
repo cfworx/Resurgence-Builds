@@ -38,7 +38,7 @@ No claim button. No special offer. No "limited time" timer counting down to make
 
 ### Vendor Fixes
 
-The vendor has been a dumpster fire. Here's what's now (theoretically) fixed:
+The vendor had several issues. Here's what's now (theoretically) fixed:
 
 - Fixed vendors not showing items the player could sell. (Classic.)
 - Fixed players being able to sell locked or favored items. (Classic in the opposite direction.)
@@ -59,7 +59,7 @@ Other Strawberry Milkshake fixes in 1.2.1:
 
 ### Lone Wolf Challenge
 
-The reset schedule was broken and is now fixed. It should refresh every 3 weeks as intended. If it doesn't, Ubisoft now has no excuse.
+The reset schedule was broken and is now fixed. It should refresh every 3 weeks as intended. If it doesn't, report it via in-game support so the team can investigate.
 
 ### Classified Ops Pass
 

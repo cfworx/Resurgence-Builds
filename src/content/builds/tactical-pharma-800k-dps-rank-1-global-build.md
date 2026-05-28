@@ -32,7 +32,7 @@ faqs:
   - question: "Why does this build only need 40% Skill Multi-Shot Chance?"
     answer: "Because through Tactical Augmentation you can get 2 additional talents that increase your Skill Multi-Shot damage. At 40% you're already getting multi-shot procs on nearly half your skill ticks, and with the augmentation bonuses those procs hit like a second mortgage. Stacking beyond 40% is like putting a spoiler on a minivan. Technically possible. Practically pointless."
   - question: "Is Division Resurgence pay-to-win?"
-    answer: "Yes. Next question. Look, you can absolutely swipe your credit card and skip a chunk of the grind. Is it as bad as some mobile games? No. Is it 'just cosmetics' like Ubisoft's PR team would love you to believe? Also no. The good news is that a whale with garbage positioning still dies to a free player who knows what they're doing. Money buys shortcuts, not skill. Your dad reflexes are still the bottleneck."
+    answer: "No. Resurgence is free-to-play with optional convenience and cosmetic purchases. Every piece of gear in this build was earned through gameplay. Spending money can speed up your grind, but it can't buy positioning, game sense, or the knowledge to stack the right talents. A player who understands the mechanics will outperform a player who doesn't, regardless of spending. Your dad reflexes are still the bottleneck."
 videoId: "1dAkSWoR7co"
 videoTitle: "RogueMadras — Updated Tactical Pharma Build Guide"
 videoChannel: "RogueMadras"
