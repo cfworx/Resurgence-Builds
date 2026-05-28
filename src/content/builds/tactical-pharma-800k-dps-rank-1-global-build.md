@@ -1,5 +1,5 @@
 ---
-title: "Tactical Pharma 800k DPS/ Rank 1 Global player Build"
+title: "Tactical Pharma 800k DPS | Rank 1 Global Player Build"
 specialization: "Field Medic"
 subclass: "Tactical Pharma"
 playstyle: DPS
@@ -8,7 +8,7 @@ pvp: true
 lastUpdated: 2026-05-28T00:00:00Z
 patch: "Season 2"
 tags: ["Tactical Pharma", "jackpot", "fire-cycle", "chemical-trap", "glass-cannon", "backup-battery", "roguemadras", "field-medic-build", "800k-dps", "skill-damage"]
-description: "RogueMadras's updated 800k DPS Tactical Pharma build. Rank 1 Global player. Chemical Trap + Oxidizing Swarm + Jackpot 4pc + Fire Cycle 2pc. Full gear, OS options, and rotation."
+description: "RogueMadras's updated Tactical Pharma Field Medic build for Division Resurgence. 800k DPS from the Rank 1 Global player. Chemical Trap + Oxidizing Swarm with Jackpot 4pc and Fire Cycle 2pc. Full gear, talents, OS Protocol options, and skill mods."
 author: "RapidF5 (via RogueMadras)"
 featuredImage: "/images/division-resurgence-tactical-pharma-800k-dps-field-medic-build.png"
 imageAlt: "Division Resurgence Tactical Pharma Field Medic 800k DPS build stats from Rank 1 Global player RogueMadras showing 704k DPS with Jackpot and Fire Cycle gear"
@@ -39,13 +39,13 @@ faqs:
 
 > Build credit: [**RogueMadras**](https://www.youtube.com/@RogueMadras). He just released an [updated build video](https://www.youtube.com/watch?v=1dAkSWoR7co) walking through his latest Tactical Pharma setup — the same build that pushed him to **Rank 1 Global**. You can also watch his [original gameplay breakdown](https://www.youtube.com/watch?v=orBlCP7ro4I&t=3351s).
 
-We originally covered this build as the "Geneva Suggestion." RogueMadras has since optimized it further, so we're updating everything. **800k+ DPS.** Rank 1 Global. On a Field Medic.
+We originally covered this build as the "Geneva Suggestion." RogueMadras has since optimized it further for Division Resurgence Season 2, so we're updating everything. **800k+ DPS.** Rank 1 Global. On a Field Medic.
 
 This is a skill-damage build that uses Chemical Trap and Oxidizing Swarm as the primary damage sources. Weapons exist to generate Engineering stacks — they aren't doing the killing. The core loop is straightforward: throw Chemical Trap at a choke point, swap weapons to trigger Backup Battery (+22.50% Engineering) and Prime Engineer 2 (+31.50% Engineering), then deploy Oxidizing Swarm for automated corrosive pressure. Swap to MK16 to stack Skill Multi-Shot, and repeat as cooldowns come back. The build scales entirely through Engineering, Skill Crit, and Skill Multi-Shot.
 
 ---
 
-## The Build
+## Tactical Pharma Gear and Loadout
 
 ### Gear
 
@@ -88,7 +88,7 @@ This is a skill-damage build that uses Chemical Trap and Oxidizing Swarm as the 
 
 ---
 
-## Loot Quick-Reference
+## Loot Quick-Reference for Tactical Pharma
 
 | Drop | Must Have |
 |---|---|
@@ -101,7 +101,7 @@ This is a skill-damage build that uses Chemical Trap and Oxidizing Swarm as the 
 
 ---
 
-## Why Each Piece Matters
+## Why Each Gear Piece Matters
 
 ### Jackpot 4-Piece
 
@@ -154,7 +154,7 @@ His actual in-game numbers for reference:
 
 ---
 
-## OS Protocol Options
+## Best OS Protocol for Tactical Pharma
 
 RogueMadras recommends **Rampart** as the best OS Protocol. He is currently running Brains Over Brawn. Here are all viable options:
 
@@ -204,7 +204,7 @@ Similar concept to Rampart with a 3-second wind-up instead of per-second stackin
 
 ---
 
-## Weapons Deep Dive
+## Weapon Talents and Attachments
 
 Both weapons exist to generate buffs. The Vector stacks Engineering through Backup Battery, the MK16 stacks Skill Multi-Shot through Multi-Pronged Attack.
 
@@ -238,7 +238,7 @@ All weapon attachments should be **Engineering.**
 
 ---
 
-## How the Skills Work Together
+## How Chemical Trap and Oxidizing Swarm Work Together
 
 **Chemical Trap** creates corrosive AOE zones at choke points. Enemies take massive DOT ticks boosted by Glass Cannon, Prime Engineer 2, your OS Protocol, and your full Skill Crit stack. Works on NPCs and players.
 
