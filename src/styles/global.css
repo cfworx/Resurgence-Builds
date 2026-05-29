@@ -963,6 +963,9 @@ tbody tr:hover {
 .prose img {
   border-radius: var(--border-radius);
   margin: var(--sp-4) 0;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
 }
 
 /* --- Prose Tables (elevated card style) --- */

@@ -121,7 +121,7 @@ Five shotgun Tactical Augmentation Modules. Two of everything else. The RNG look
 
 **u/NoPart7463** · [Original post](https://www.reddit.com/r/thedivisionresurgence/comments/1tnzvbo/this_game_should_be_called_reading_simulator/) · May 26
 
-![Screenshot of Division Resurgence gear stats screen showing dense walls of text and stat descriptions](https://preview.redd.it/this-game-should-be-called-reading-simulator-v0-rxl3ufujrf3h1.jpeg?auto=webp&s=df14d9fbc55f5df158e4c6815d9ad5d003ffb5c6)
+![Screenshot of Division Resurgence gear stats screen showing dense walls of text and stat descriptions](https://i.redd.it/rxl3ufujrf3h1.jpeg)
 
 > "Every damn thing has a description, atp it has become muscle memory to discard anything that doesn't have critical hit chance and damage."
 
