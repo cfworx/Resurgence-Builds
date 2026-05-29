@@ -1,11 +1,11 @@
 ---
 /**
  * GiscusComments.astro — GitHub-backed comments via giscus.
- * Dynamically injects the script to avoid Astro's bundler stripping data-* attributes.
+ * Auto-repositions above Related Reading / Sources sections if present in the markdown.
  */
 ---
 
-<section class="giscus-wrapper" aria-label="Comments">
+<section class="giscus-wrapper" id="giscus-comments" aria-label="Comments">
   <h2 style="font-size: var(--text-xl); margin-bottom: var(--sp-4);">Comments</h2>
   <p style="color: var(--ink-muted); font-size: var(--text-sm); margin-bottom: var(--sp-4);">Join the discussion — powered by GitHub Discussions. No tracking, no ads.</p>
   <div class="giscus"></div>
@@ -29,7 +29,29 @@
     s.setAttribute('data-loading', 'lazy');
     s.setAttribute('crossorigin', 'anonymous');
     s.async = true;
-    d.querySelector('.giscus').appendChild(s);
+    var target = d.querySelector('.giscus');
+    if (target) target.appendChild(s);
+
+    // Reposition: move comments above "Related Reading" or "Sources" if they exist in the markdown
+    var wrapper = d.getElementById('giscus-comments');
+    if (wrapper) {
+      var prose = wrapper.closest('.prose') || wrapper.parentElement;
+      if (prose) {
+        var headings = prose.querySelectorAll('h2, h3, p > strong');
+        for (var i = 0; i < headings.length; i++) {
+          var txt = headings[i].textContent.trim().toLowerCase();
+          if (txt === 'related reading:' || txt === 'related reading' || txt === 'sources:' || txt === 'sources') {
+            // Find the parent element to insert before
+            var anchor = headings[i].tagName === 'STRONG' ? headings[i].closest('p') : headings[i];
+            // Also grab the <hr> above if present
+            var prev = anchor.previousElementSibling;
+            if (prev && prev.tagName === 'HR') anchor = prev;
+            anchor.parentNode.insertBefore(wrapper, anchor);
+            break;
+          }
+        }
+      }
+    }
   })();
 </script>
 
