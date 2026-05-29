@@ -1,4 +1,6 @@
 ---
+import { getAuthorSlug } from '../utils/author';
+
 export interface Props {
   title: string;
   description: string;
@@ -156,8 +158,8 @@ if (article) {
     author: {
       '@type': 'Person',
       name: article.author,
-      '@id': `${siteUrl}/author/${article.author.toLowerCase().replace(/\s+/g, '-')}/#person`,
-      url: `${siteUrl}/author/${article.author.toLowerCase().replace(/\s+/g, '-')}/`,
+      '@id': `${siteUrl}/author/${getAuthorSlug(article.author)}/#person`,
+      url: `${siteUrl}/author/${getAuthorSlug(article.author)}/`,
     },
     publisher: { '@id': `${siteUrl}/#organization` },
     about: { '@id': `${siteUrl}/#division-resurgence` }

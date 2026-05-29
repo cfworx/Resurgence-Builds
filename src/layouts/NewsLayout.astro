@@ -2,6 +2,7 @@
 import BaseLayout from './BaseLayout.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import SectionTag from '../components/SectionTag.astro';
+import { getAuthorUrl } from '../utils/author';
 
 export interface Props {
   title: string;
@@ -61,7 +62,7 @@ const breadcrumbItems = [
       <h1 class="heading-accent">{title}</h1>
 
       <div class="article-meta">
-        <span>By <a href={`/author/${author.toLowerCase().replace(/\s+/g, '-')}/`} style="color: var(--accent); text-decoration: none;">{author}</a></span>
+        <span>By <a href={getAuthorUrl(author)} style="color: var(--accent); text-decoration: none;">{author}</a></span>
         <span>·</span>
         <time datetime={publishDate.toISOString()}><strong>Last updated:</strong> {formattedDate}</time>
       </div>

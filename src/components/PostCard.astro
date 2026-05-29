@@ -1,4 +1,6 @@
 ---
+import { getAuthorUrl } from '../utils/author';
+
 export interface Props {
   title: string;
   href: string;
@@ -50,7 +52,7 @@ const typeLabel = typeLabels[type] || type;
         <span class="post-card__date">{formattedDate}</span>
       </div>
       <p class="card__title"><a href={href} class="card__link">{title}</a></p>
-      <p class="card__meta">By <a href={`/author/${author.toLowerCase().replace(/\s+/g, '-')}/`} class="card__author-link">{author}</a></p>
+      <p class="card__meta">By <a href={getAuthorUrl(author)} class="card__author-link">{author}</a></p>
       <p class="card__description">{description}</p>
       {tags.length > 0 && (
         <div class="post-card__tags">

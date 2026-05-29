@@ -1,4 +1,6 @@
 ---
+import { getAuthorUrl } from '../utils/author';
+
 export interface Props {
   title: string;
   href: string;
@@ -13,7 +15,7 @@ const formattedDate = publishDate.toLocaleDateString('en-US', { month: 'short', 
 ---
 
 <article class="card" style="position: relative;">
-  <p class="card__meta">{formattedDate} · <a href={`/author/${author.toLowerCase().replace(/\s+/g, '-')}/`} class="card__author-link">{author}</a></p>
+  <p class="card__meta">{formattedDate} · <a href={getAuthorUrl(author)} class="card__author-link">{author}</a></p>
   <p class="card__title">
     <a href={href} class="card__link">{title}</a>
   </p>
