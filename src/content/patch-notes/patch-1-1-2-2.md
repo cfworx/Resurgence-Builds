@@ -1,9 +1,9 @@
 ---
-title: "Patch 1.1.2.2 Notes — Players Got GM Powers for 20 Minutes and Bans Followed"
+title: "Patch 1.1.2.2 Notes — Players Had GM Powers for 20 Minutes and Now Face Bans"
 version: "1.1.2.2"
 patchDate: "2026-05-29"
 author: "RapidF5"
-summary: "Division Resurgence Patch 1.1.2.2 deployed May 29, 2026 with audio crash, guest account, DZ Tactical Augmentation, and Network Failure fixes. Then the servers came back up and players discovered they had GM powers. Servers went down again. Bans followed. Here's the full timeline."
+summary: "Division Resurgence Patch 1.1.2.2 deployed May 29, 2026 with audio crash, guest account, DZ Tactical Augmentation, and Network Failure fixes. Then the servers came back up and players discovered they had GM powers. Servers went down again. Bans were threatened. Here's the full timeline."
 featuredImage: "/images/patch-notes/division-resurgence-patch-1-1-2-2-gm-bug-hero.jpg"
 imageAlt: "Division Resurgence SHD agent wearing a Game Master hat in a safehouse, referencing the Patch 1.1.2.2 GM permissions bug on May 29, 2026"
 shareTitle: "Warn your squad"
@@ -13,13 +13,13 @@ faqs:
   - question: "What is Division Resurgence Patch 1.1.2.2?"
     answer: "Patch 1.1.2.2 is the May 29, 2026 update that included both a server maintenance window and a client update through the Play Store and App Store. It fixed an audio crash bug, a guest account login bug, the missing Dark Zone Shotgun Tactical Augmentation reward, the roaming Network Failure popup, and several smaller issues."
   - question: "What was the GM permissions bug in Division Resurgence on May 29, 2026?"
-    answer: "After Patch 1.1.2.2 deployed and servers came back online, players discovered they had access to in-game GM (Game Master) developer tools that were accidentally left enabled. The dev team had to take servers down a second time to lock it back up. Ubisoft community moderator Ubi_Ticksy confirmed on the official Discord that it was an accidental misconfiguration. Players who used the GM interface are reportedly being banned."
+    answer: "After Patch 1.1.2.2 deployed and servers came back online, players discovered they had access to in-game GM (Game Master) developer tools that were accidentally left enabled. The dev team had to take servers down a second time to lock it back up. Ubisoft community moderator Ubi_Ticksy confirmed on the official Discord that it was an accidental misconfiguration. Ubisoft has stated that players who used the GM interface will face account action."
   - question: "Is the vendor still broken after the May 29 patch?"
     answer: "A small number of players reported the vendor showing only locked items in the sell window right after the patch. The community fix is to fully close the game, clear cache if your platform allows, and restart. That has resolved it for most affected players."
   - question: "Did the patch fix Outpost Annihilation?"
     answer: "No. The Outpost Annihilation side mission west of Dante's Run is still on the under investigation list per the dev team. They have acknowledged it directly and said additional DZ mission fixes are coming."
   - question: "Will players who used the GM bug be banned?"
-    answer: "Per community moderator messaging on Discord, yes. Ubisoft's response was that the GM access was an accidental exposure, not an authorized feature, and players who exploited it during the brief window will face account action. No rollback was issued because the exposure window was short."
+    answer: "Ubisoft has stated through Discord community moderators that players who exploited the GM access will face account action. No specific bans have been publicly confirmed yet, and no rollback was issued because the exposure window was short. The stated position is that it was an accidental exposure, not an authorized feature."
   - question: "Where can I find the official Patch 1.1.2.2 notes?"
     answer: "The official Patch 1.1.2.2 notes are posted on the Ubisoft Mobile Helpshift support portal and mirrored on r/thedivisionresurgence."
 ---
@@ -99,7 +99,7 @@ So this is on the record from Ubisoft itself: the GM tools were accidentally lef
 
 ### What about the players who used it?
 
-Per community moderator messaging on Discord, **players who used the GM menu will be banned.** No rollback was issued because the exposure window was short and the vast majority of accounts were not affected. If you're seeing a player with a full god-roll set across every slot with zero recalibrations, that's the kind of profile the team will be looking at. Report it through the in-game support button.
+Per community moderator messaging on Discord, **Ubisoft has stated that players who used the GM menu will face account action.** No specific bans have been publicly confirmed yet, and no rollback was issued because the exposure window was short and the vast majority of accounts were not affected. If you're seeing a player with a full god-roll set across every slot with zero recalibrations, that's the kind of profile the team will likely be looking at. Report it through the in-game support button.
 
 ### Should you be worried?
 
@@ -143,7 +143,7 @@ This was a tough patch day. The fixes themselves are good and overdue. The GM pe
 - They caught it fast
 - They took servers down to contain it
 - They told the community what happened through official channels
-- They named bans as the consequence for exploitation
+- They stated account action as the consequence for exploitation
 - They shipped the actual patch the same day
 
 Not every studio handles a misstep that cleanly. We've watched live service games sit on backend exposures for days. We've watched studios refuse to acknowledge anything went wrong. Today's response was bumpy, but it was honest, and that's worth something while the game continues to grow.
