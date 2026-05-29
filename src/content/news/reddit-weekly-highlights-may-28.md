@@ -10,13 +10,13 @@ shareTitle: "Share the chaos"
 shareText: "The 10 funniest Reddit posts from the last 10 days of Division Resurgence. Your clan needs to see this."
 faqs:
   - question: "Is the vendor working again in Division Resurgence?"
-    answer: "Yes. The vendor is back. He has been through a lot. Please do not sell him 47 grey pistols at once, the man just got back on his feet. Give him a minute."
+    answer: "Yes. The vendor is back. He has been through a lot. Please do not sell him 47 grey drops at once, the man just got back on his feet. Give him a minute."
   - question: "Why do I keep getting shotgun augments?"
     answer: "Because the RNG sees your carefully optimized AR build and has chosen violence. There is no fix. There is only acceptance. You are a shotgun main now. Embrace it."
   - question: "Did the NYC base janitor ever get a break?"
     answer: "No. He is still sweeping. He has been sweeping since launch. Multiple agents have offered to help. He declined. This is his burden. He will carry it alone."
   - question: "Should I read the gear descriptions in Division Resurgence?"
-    answer: "Technically yes. Realistically, you are going to look at Crit Chance, Crit Damage, and maybe the color of the icon, and that is fine. The lore team wrote it all anyway and they know we skip it. They are used to the pain."
+    answer: "Technically yes. Realistically, you are going to look at Crit Chance, Crit Damage, and maybe the color of the icon, and that is fine. Somebody wrote all those descriptions and they know we skip them. We are sorry."
 ---
 
 This week on r/thedivisionresurgence: a Cleaner defied gravity and moved to the ceiling, the NYC janitor is still sweeping and will outlive us all, the vendor came back from his mental health leave and immediately started overpaying by 60x, a man filed the most professional cosmetic bug report in gaming history using MS Paint, and someone realized the game has more required reading than a college syllabus. The subreddit went from doomposting to roast mode in record time, and honestly? The memes are better content than most gaming outlets are putting out right now. Here are the 10 best posts from the last 10 days.
@@ -126,7 +126,7 @@ Five shotgun Tactical Augmentation Modules. Two of everything else. The RNG look
 
 > "Every damn thing has a description, atp it has become muscle memory to discard anything that doesn't have critical hit chance and damage."
 
-Every gear piece comes with a paragraph. Every mod has a talent. Every talent has a sub-effect. We're all just thumbing past it on the way to "Crit Chance: 12%." Salute to the lore team. Sorry we don't read.
+Every gear piece comes with a paragraph. Every mod has a talent. Every talent has a sub-effect. We're all just thumbing past it on the way to "Crit Chance: 12%." Somebody wrote all of that. We will never read it. We are sorry.
 
 ---
 
