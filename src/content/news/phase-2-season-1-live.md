@@ -39,3 +39,11 @@ Ubisoft launched Phase 2 of Season 1 on May 12, 2026. The update introduces a ne
 - **Strawberry Milkshake Tactical Augmentation Module** added to the Dark Zone Vendor
 - Skill Mod dismantle credit values increased: Blue 10 → 15, Purple 50 → 75, Yellow 450 → 750
 - Some high-end devices can now run the game at up to 60 FPS with expanded graphics settings
+
+---
+
+**Related Reading:**
+- [Phase 2 Full Patch Notes](/patch-notes/phase-2-patch-notes/)
+- [Which Specialization Should You Pick?](/guides/which-specialization-to-pick/) — switch to Vanguard before buying Warlord from the DZ vendor
+- [Damage Types Guide](/guides/damage-types-color-bar-weakness-guide/) — understand the color bar system for endgame
+- [Device Compatibility Guide](/guides/division-resurgence-device-compatibility/) — check if your device supports 60 FPS

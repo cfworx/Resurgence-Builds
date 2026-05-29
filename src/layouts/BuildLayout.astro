@@ -96,7 +96,7 @@ const redditShareUrl = `https://reddit.com/submit?url=${encodeURIComponent(Astro
           )}
           {tags.filter(t => t[0] === t[0].toUpperCase() && !t.includes('-')).length > 0 && (
             <div style="display:flex;flex-wrap:wrap;gap:var(--sp-1);margin-top:var(--sp-3);">
-              {tags.filter(t => t[0] === t[0].toUpperCase() && !t.includes('-')).map(tag => <span class="tag">{tag}</span>)}
+              {tags.filter(t => t[0] === t[0].toUpperCase() && !t.includes('-')).map(tag => <a href={`/tag/${tag.toLowerCase().replace(/\s+/g, '-')}/`} class="tag">{tag}</a>)}
             </div>
           )}
         </div>

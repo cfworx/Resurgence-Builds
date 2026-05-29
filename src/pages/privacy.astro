@@ -2,16 +2,50 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
-<BaseLayout title="Privacy Policy" description="Privacy Policy for Resurgence Builds — how we handle your data.">
+<BaseLayout title="Privacy Policy" description="Privacy Policy for Resurgence Builds — how we handle your data, cookies, and third-party advertising.">
   <div class="container section content-width">
     <h1 class="heading-accent">Privacy Policy</h1>
-    <p style="color:var(--ink-muted);">Last updated: April 20, 2026</p>
+    <p style="color:var(--ink-muted);">Last updated: May 29, 2026</p>
     <div class="prose">
       <h2>Introduction</h2>
       <p>Resurgence Builds ("we," "our," or "us") operates the website resurgencebuilds.com. This Privacy Policy explains how we collect, use, and protect your information when you visit our site.</p>
 
       <h2>Information We Collect</h2>
-      <p>We do not collect any personal data, use any tracking cookies, or employ any analytics software. We do not use a mailing list. The only data processed is standard edge routing data by our hosting provider, Cloudflare, which is necessary to deliver the website to your browser.</p>
+      <p>We do not directly collect personal data or require user accounts. However, third-party services integrated into our site may collect certain information automatically, including:</p>
+      <ul>
+        <li>IP address and general location data (via Cloudflare and Google AdSense)</li>
+        <li>Browser type, device type, and operating system</li>
+        <li>Pages visited and time spent on the site</li>
+        <li>Advertising interaction data (via Google AdSense)</li>
+      </ul>
+
+      <h2>Third-Party Advertising</h2>
+      <p>We use <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener noreferrer"><strong>Google AdSense</strong></a> to display advertisements on our site. Google AdSense uses cookies and similar technologies to serve ads based on your prior visits to this website and other websites. This includes:</p>
+      <ul>
+        <li>Placing tracking cookies on your device to personalize advertisements</li>
+        <li>Using the DoubleClick cookie to enable interest-based advertising</li>
+        <li>Collecting data about your browsing behavior across websites that use Google advertising services</li>
+      </ul>
+      <p>You can opt out of personalized advertising by visiting <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener noreferrer">Google's Ads Settings</a>. You may also opt out of third-party vendor cookies by visiting the <a href="https://optout.networkadvertising.org/" target="_blank" rel="noopener noreferrer">Network Advertising Initiative opt-out page</a>.</p>
+      <p>For more information about how Google uses data when you use our site, visit <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener noreferrer">Google's partner sites policy</a>.</p>
+
+      <h2>Cookies</h2>
+      <p>Our site uses cookies from the following categories:</p>
+      <h3>Essential Cookies</h3>
+      <ul>
+        <li><strong>Cloudflare:</strong> Security and performance cookies required for content delivery, DDoS protection, and edge routing. These are necessary for the site to function properly.</li>
+      </ul>
+      <h3>Advertising Cookies</h3>
+      <ul>
+        <li><strong>Google AdSense:</strong> Tracking cookies used to serve personalized advertisements based on your browsing history. These cookies may track your activity across multiple websites. You can manage your ad personalization preferences at <a href="https://adssettings.google.com" target="_blank" rel="noopener noreferrer">Google Ads Settings</a>.</li>
+      </ul>
+
+      <h2>Third-Party Services</h2>
+      <ul>
+        <li><strong>Cloudflare:</strong> Hosting, CDN, and security</li>
+        <li><strong>Google AdSense:</strong> Advertising (<a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener noreferrer">Google's privacy policy</a>)</li>
+        <li><strong>Google Fonts:</strong> Typography</li>
+      </ul>
 
       <h2>GDPR Rights (EU Users)</h2>
       <p>Under GDPR, you have the right to:</p>
@@ -21,33 +55,25 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         <li>Erase your data ("right to be forgotten")</li>
         <li>Restrict processing</li>
         <li>Data portability</li>
-        <li>Object to processing</li>
+        <li>Object to processing, including profiling for advertising purposes</li>
       </ul>
-      <p>To exercise these rights, contact us at <a href="mailto:p1@cfworx.tech">p1@cfworx.tech</a>.</p>
+      <p>Please note that advertising data collected by Google AdSense is processed by Google under their own privacy policy. To exercise your rights regarding Google's data collection, visit <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google's Privacy Policy</a>. For data we control, contact us at <a href="mailto:p1@cfworx.tech">p1@cfworx.tech</a>.</p>
 
       <h2>CalOPPA Compliance (California Users)</h2>
-      <p>We do not sell personal information. We do not track users across third-party websites. We honor Do Not Track browser signals. California residents may request details about data we hold by contacting us.</p>
-
-      <h2>Cookies</h2>
-      <p>We do not use any tracking cookies. Third-party services (Google Fonts) may set their own cookies per their policies.</p>
-
-      <h2>Third-Party Services</h2>
-      <ul>
-        <li><strong>Cloudflare:</strong> Hosting and CDN</li>
-        <li><strong>Google Fonts:</strong> Typography</li>
-      </ul>
+      <p>We do not sell personal information. Third-party advertising partners (Google AdSense) may collect data for interest-based advertising as described above. We honor Do Not Track browser signals where technically feasible. California residents may request details about data we hold by contacting us.</p>
 
       <h2>Data Security</h2>
-      <p>We serve all content over HTTPS with HSTS enabled. We do not store passwords, payment information, or sensitive personal data.</p>
+      <p>We serve all content over HTTPS with HSTS enabled. We do not store passwords, payment information, or sensitive personal data. Advertising data is processed by Google under their own security standards.</p>
 
       <h2>Children's Privacy</h2>
-      <p>Our site is not directed at children under 13. We do not knowingly collect data from children.</p>
+      <p>Our site is not directed at children under 13. We do not knowingly collect data from children. Google AdSense is configured to comply with COPPA requirements.</p>
 
       <h2>Changes</h2>
       <p>We may update this policy. Changes will be posted here with an updated date.</p>
 
       <h2>Contact</h2>
       <p>Questions? Email <a href="mailto:p1@cfworx.tech">p1@cfworx.tech</a>.</p>
+      <p>Publisher mailing address available upon written request to <a href="mailto:p1@cfworx.tech">p1@cfworx.tech</a>.</p>
     </div>
   </div>
 </BaseLayout>

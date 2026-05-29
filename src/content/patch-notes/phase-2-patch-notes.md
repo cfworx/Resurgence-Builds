@@ -66,3 +66,13 @@ The Phase 2 update for Season 1 went live on May 12. This is the official patch 
 ### Technical Improvements
 - Backend and system optimizations for live operations and upcoming updates
 - Stability improvements based on multiple release-candidate iterations
+
+## Player Impact
+
+Phase 2 is the update that turned Division Resurgence from a promising mobile launch into a real endgame grind. The Strawberry Milkshake exotic is the headline, but the economy changes matter more long-term — Tactical Augmentation Modules giving Encrypted Data instead of Clan Credits fundamentally changes how you value dismantle decisions, and the Skill Mod dismantle yield increase makes every Blue/Purple/Yellow mod worth breaking down instead of ignoring.
+
+The [Warlord](/database/exotic-weapons/) being added to the Dark Zone Vendor is the most requested change from Phase 1. Previously, the only path to this [exotic AR](/database/exotic-weapons/) was RNG from Dark Zone caches. Now you can buy it directly — but remember to switch to your [Vanguard specialization](/guides/which-specialization-to-pick/) before purchasing so the rolls land on Firepower stats.
+
+The 60 FPS unlock on select devices changes how the game feels at endgame. If your [device supports it](/guides/division-resurgence-device-compatibility/), the cover-peek timing and hit registration improvements are immediately noticeable. Check our [cover-peek guide](/guides/center-ads-release-cover-peek-guide/) for the full settings breakdown.
+
+For the full list of what's still broken after this patch, see the [Patch 1.2.1 hotfix notes](/patch-notes/patch-1-2-1/) that followed nine days later.

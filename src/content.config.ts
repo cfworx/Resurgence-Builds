@@ -77,6 +77,10 @@ const guides = defineCollection({
       question: z.string(),
       answer: z.string(),
     })).optional(),
+    videoId: z.string().optional(),
+    videoTitle: z.string().optional(),
+    videoChannel: z.string().optional(),
+    sources: z.array(z.string()).optional(),
   }),
 });
 
@@ -92,6 +96,10 @@ const news = defineCollection({
     description: z.string(),
     featuredImage: z.string().optional(),
     imageAlt: z.string().optional(),
+    faqs: z.array(z.object({
+      question: z.string(),
+      answer: z.string(),
+    })).optional(),
   }),
 });
 
@@ -107,6 +115,10 @@ const patchNotes = defineCollection({
     summary: z.string(),
     featuredImage: z.string().optional(),
     imageAlt: z.string().optional(),
+    faqs: z.array(z.object({
+      question: z.string(),
+      answer: z.string(),
+    })).optional(),
   }),
 });
 

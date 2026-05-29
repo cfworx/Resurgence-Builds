@@ -91,3 +91,11 @@ On PC specifically, the early-access build is already in a better place than I e
 For now, this is a game that has gone from a rough mobile launch to a credible cross-platform live service in roughly six weeks. Most of the loudest community asks , higher frame rates, PC, more Exotic options, a real roadmap , have been answered, at least in part. The unfinished business is the trust layer: missing items, communication cadence, and the consistency of the patch promise.
 
 We will track all of it as it lands.
+
+---
+
+**Related Reading:**
+- [Phase 2 Patch Notes](/patch-notes/phase-2-patch-notes/) — the full official notes
+- [Patch 1.2.1 Notes](/patch-notes/patch-1-2-1/) — the hotfix that addressed the inventory bug
+- [Device Compatibility Guide](/guides/division-resurgence-device-compatibility/) — check if your device supports 60 FPS
+- [PC Emulator Comparison](/guides/division-resurgence-pc-emulator-comparison/) — for Mac players still waiting on a native client

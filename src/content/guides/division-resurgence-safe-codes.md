@@ -9,6 +9,9 @@ featuredImage: "/images/guides/division-resurgence-safe-codes-encrypted-crates-h
 imageAlt: "Division Resurgence encrypted crate safe codes master list showing all 21 confirmed locations and combinations for May 2026"
 shareTitle: "Stop typing wrong safe codes"
 shareText: "Every verified encrypted crate code in Division Resurgence. Three are randomized per character and most guides get them wrong."
+videoId: "ljFeKCV0ZII"
+videoTitle: "Safe Codes Locations Walkthrough"
+videoChannel: "GooHootGaming"
 faqs:
   - question: "How many safes are there in Division Resurgence?"
     answer: "There are 33 encrypted crates tied to the New York City Collector commendation. The community has decoded 21 as of late May 2026. The other 12 are still being mapped."
@@ -31,6 +34,9 @@ faqs:
   - question: "What is the safe code for the Oak Lock store?"
     answer: "1122. Some older guides list 122. The keypad takes four digits and the correct input is 1122."
 ---
+
+> [!INFO]
+> **Looking for redemption codes or gift codes?** See our [Division Resurgence Codes Guide](/guides/division-resurgence-codes/) for active promo codes, Twitch Drops, and how to redeem them.
 
 The Division Resurgence calls them **encrypted crates**, the community calls them safes, and either way they drop **superior gear, crafting materials, Phoenix Credits, and a chunk of progress toward the New York City Collector commendation**. There are 33 of them in total tied to the commendation. The community has mapped and decoded **21**. The other 12 are still being hunted.
 

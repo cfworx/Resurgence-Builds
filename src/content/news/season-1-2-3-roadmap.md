@@ -31,3 +31,11 @@ Ubisoft published the full seasonal roadmap on April 28. New seasons land every 
 
 ## A Note on Steam
 No Steam release date has been officially confirmed. The August Season 2 target is for Ubisoft Connect. Some creator coverage (RogueGold) referenced "Steam later this summer" based on the Ubisoft Creator Program preview, but this should be treated as **[LIKELY but UNCONFIRMED]** until Ubisoft posts it officially.
+
+---
+
+**Related Reading:**
+- [Phase 2 Patch Notes](/patch-notes/phase-2-patch-notes/) — the latest content update
+- [PC Early Access Launch](/news/pc-early-access-launch/) — everything you need to know about the current PC version
+- [Which Specialization Should You Pick?](/guides/which-specialization-to-pick/) — get your build ready for Phase 3
+- [Division Resurgence Codes](/guides/division-resurgence-codes/) — current promo codes and Twitch Drops

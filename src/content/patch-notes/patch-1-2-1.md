@@ -112,3 +112,11 @@ Ubisoft explicitly acknowledges the following are **not resolved** in this patch
 To be clear: **Patch 1.2.1 is not a content patch.** There are no new missions, no new exotics, no balance changes beyond the Strawberry Milkshake buff signal. The next content milestone is **Phase 3 in June 2026**, which brings the Scorpio exotic, the Freemen apparel set, and a refreshed Classified Ops Pass.
 
 We'll have full coverage of Phase 3 the moment it drops.
+
+## Player Impact
+
+Patch 1.2.1 is the trust patch. The 500K Basic Credits and 750 Phoenix Credits compensation acknowledges that Phase 2's launch was rough — and the transparency of listing known-but-unfixed issues in the official notes is unusual for a live-service studio. Most devs bury those acknowledgments. Ubisoft put them in bold.
+
+For build-focused players, the key takeaway is: **do not invest recalibration materials into the Strawberry Milkshake yet.** The buff confirmation is in writing, which means Ubisoft will change the numbers. Farm the Weekly Mission Exotic Manuals now so you're ready to recalibrate the moment the updated values drop.
+
+The inventory fix is the critical one. If you lost items before this patch, your path is a [support ticket](https://ubisoft-mobile.helpshift.com/hc/app/41-the-division-resurgence/) with screenshots. If you're still experiencing connection issues, check the [error codes guide](/guides/division-resurgence-error-codes/) for the full troubleshooting stack. And if you're wondering what the [Phase 3 Scorpio exotic](/news/season-1-2-3-roadmap/) will bring, we'll have coverage the day it launches.

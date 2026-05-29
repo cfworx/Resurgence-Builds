@@ -150,4 +150,4 @@ We'll be back next week with another round. Until then, keep your inventories sc
 
 ---
 
-**Want to make your broken game slightly less broken?** Check out our [build guides](/builds/) , at least your loadout can be optimized, even if the game isn't.
+**Want to make your broken game slightly less broken?** Check out our [build guides](/builds/), the [damage types guide](/guides/damage-types-color-bar-weakness-guide/) to understand why your DPS is low, or the [error codes reference](/guides/division-resurgence-error-codes/) for when the game decides to throw NETWORK_FAILURE at you mid-extraction.

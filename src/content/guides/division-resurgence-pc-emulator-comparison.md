@@ -9,6 +9,9 @@ featuredImage: "/images/guides/division-resurgence-pc-emulator-comparison-hero.j
 imageAlt: "Division Resurgence PC emulator comparison guide for BlueStacks, MuMu Player, and LDPlayer on Mac and Windows in May 2026"
 shareTitle: "The real emulator breakdown for Resurgence"
 shareText: "BlueStacks vs MuMu vs LDPlayer for Division Resurgence. Benchmarks, settings, and the honest Mac verdict."
+videoId: "TFIbd80wSHQ"
+videoTitle: "Division Resurgence Emulator Setup Guide"
+videoChannel: "MuMu Player"
 faqs:
   - question: "Does Division Resurgence have a native PC version?"
     answer: "Yes. Ubisoft released the native PC version on April 28, 2026 via Ubisoft Connect. It is Windows-only and free to play with full cross-progression to mobile."

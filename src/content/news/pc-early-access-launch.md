@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Resurgence Hits PC - Free, Cross-Play, Cross-Save"
 publishDate: "2026-04-28"
 author: "RapidF5"
@@ -30,3 +30,11 @@ The Division Resurgence is now available in Early Access on PC via **Ubisoft Con
 
 ## Why This Matters
 Until April 28, the only routes to play on PC were unofficial emulators. Ubisoft had previously declined to commit to a PC version. The shadow-drop happened approximately one hour before the official developer livestream announcing it, which surprised even Ubisoft Creator Program partners.
+
+---
+
+**Related Reading:**
+- [PC Emulator Comparison](/guides/division-resurgence-pc-emulator-comparison/) — still relevant if you're on Mac
+- [Device Compatibility Guide](/guides/division-resurgence-device-compatibility/) — full PC system requirements
+- [Season 1–3 Roadmap](/news/season-1-2-3-roadmap/) — the full PC launch is planned for Season 2 in August
+- [Patch 1.1.2 Notes](/patch-notes/patch-1-1-2/) — the patch that shipped alongside this PC launch

@@ -82,7 +82,7 @@ export async function getStaticPaths() {
 const { classData, builds } = Astro.props;
 
 const breadcrumbItems = [
-  { name: 'Classes', url: '#' },
+  { name: 'Classes', url: '/builds/' },
   { name: classData.name, url: `/class/${classData.id}/` }
 ];
 

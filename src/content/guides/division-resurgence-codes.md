@@ -51,6 +51,9 @@ faqs:
     answer: "Watch the official @TheDivMobile X account, the official Discord, and Twitch streams. This page updates within hours of any real code going live."
 ---
 
+> [!INFO]
+> **Looking for in-game safe combinations?** Check out our [Safe Codes Master List](/guides/division-resurgence-safe-codes/) for every encrypted crate location, code, and reward.
+
 Quick answer:
 
 - **No public redeem codes are active for Division Resurgence right now.**
@@ -211,6 +214,23 @@ There is no fix. Rewards lock at claim time. Always be on your main first.
 
 **"I never got the item from a past purchase."**
 Different issue. Open the in-game **Support** button, file a ticket with your transaction ID. Ubisoft was actively resolving these through the [Patch 1.2.1](/patch-notes/patch-1-2-1/) rollout.
+
+---
+
+## Past Rewards & Expired Promotions
+
+No traditional text-entry "redeem codes" have ever been publicly released for The Division Resurgence. However, several limited-time reward programs have come and gone. This table tracks every known promotion for historical reference.
+
+| Promotion | Reward | Period | Status |
+|---|---|---|---|
+| Backbone One Collab (Superior Pack) | 3 Superior-rarity items | Launch — Ongoing | ✅ Active |
+| Backbone One Collab (Exotic Skin) | Exotic weapon skin | Launch — Ongoing | ✅ Active |
+| Twitch Drops — Phase 1 Launch | Cosmetic drops (banner, weapon skin) | May 2026 | ❌ Expired |
+| Pre-Registration Rewards | Starter resource bundle | Pre-launch — Launch | ❌ Expired |
+| Creator Code Rewards | Varies by creator | Periodic | ⏳ Varies |
+
+> [!WARNING]
+> Any website listing "active codes" like "DIVISION2026" or "FREECOINS" is lying. As of Patch 1.2.1, Ubisoft has not released any public text-entry redemption codes for The Division Resurgence. Don't fall for clickbait.
 
 ---
 

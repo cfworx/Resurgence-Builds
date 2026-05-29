@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Hotfix 1.1.1 Notes"
 version: "1.1.1"
 patchDate: "2026-04-13"
@@ -27,3 +27,11 @@ Hotfix 1.1.1 was a small, fast-shipping fix focused on sound and UI bugs reporte
 4. Multiple crashes across various mobile devices , fixed
 
 The notes encouraged players still hitting these issues to submit an in-game support ticket to provide the team with the data needed for a fast fix.
+
+## Why This Matters
+
+Hotfix 1.1.1 was the first post-launch patch and set the tone for Ubisoft's response cadence. The sound bug affected a wide range of Android devices (VIVO especially), and the Quartermaster UI break could soft-lock new players during the opening mission sequence — both critical-path issues that needed immediate attention.
+
+For players who started at launch and hit the invisible Quartermaster UI, this was the difference between continuing the game and uninstalling. The leaderboard fix also mattered more than it looks — broken leaderboards meant Conflict PvP rankings were invisible, which killed competitive motivation for early adopters.
+
+This hotfix landed 13 days after global launch. The next major patch was [Patch 1.1.2](/patch-notes/patch-1-1-2/) on April 28, which shipped alongside the [PC Early Access launch](/news/pc-early-access-launch/). If you're still hitting audio issues after this hotfix, check the [error codes guide](/guides/division-resurgence-error-codes/) for the latest Android and iOS audio workarounds.

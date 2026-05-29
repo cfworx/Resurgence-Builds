@@ -249,6 +249,14 @@ We'll have a dedicated build post the moment the Strawberry Milkshake buff numbe
 
 ---
 
+**Related Reading:**
+- [Damage Types & Color Bar Guide](/guides/damage-types-color-bar-weakness-guide/) — the damage type system that changes how you build
+- [Which Specialization Should You Pick?](/guides/which-specialization-to-pick/) — switch before buying from the DZ vendor
+- [Hidden Mechanics Explained](/guides/hidden-mechanics-explained/) — 7 systems the game never tells you about
+- [Safe Codes Master List](/guides/division-resurgence-safe-codes/) — every encrypted crate location and code
+
+---
+
 ## Sources
 
 - [Ubisoft Mobile Help Center , Patch Note 1.2.1 (May 20, 2026)](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/section/539-patch-note/)

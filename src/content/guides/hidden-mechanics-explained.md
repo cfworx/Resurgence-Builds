@@ -22,9 +22,17 @@ faqs:
     answer: "For any build that relies on procs, stacks, or talent triggers: absolutely yes. A P90 firing 900 rounds per minute generates talent procs three times faster than a marksman rifle firing 300 RPM. If your build needs to hit enemies 10 times in 5 seconds to trigger Torrential Downpour, the P90 gets there in 0.67 seconds. The marksman rifle needs 2 seconds. In a game where buff windows are 12 seconds long, that speed difference is the entire build."
   - question: "What's the fastest way to fix a weak build in Division Resurgence?"
     answer: "Step 1: Pick one core stat and put it on every piece. Step 2: Make sure your chest and backpack talents actually synergize with your playstyle, not just whatever dropped first. Step 3: Check if your weapon's damage type matches the content you're running. Step 4: Stop recalibrating for health and start recalibrating for damage or utility. You can do all four of these in about 20 minutes and your build will feel like a completely different character. Faster than waiting for Ubisoft to buff your favorite weapon, that's for sure."
+  - question: "What are the hidden mechanics in Division Resurgence?"
+    answer: "Division Resurgence has several undocumented mechanics including cover-to-cover damage reduction, weak point multipliers, status effect stacking rules, armor regeneration breakpoints, skill cooldown interactions, talent proc priorities, and hidden aim assist adjustments that significantly impact gameplay."
+  - question: "Does cover-to-cover movement give damage reduction in Division Resurgence?"
+    answer: "Yes. Moving between cover points grants a temporary damage reduction buff that is not shown in the UI. This makes cover-to-cover movement significantly safer than sprinting between positions in open space."
+  - question: "How does status effect stacking work in Division Resurgence?"
+    answer: "Status effects follow specific stacking and priority rules. Some effects refresh duration on reapplication, others stack intensity, and certain combinations override each other. Understanding these interactions is critical for Demolitionist and Tech Operator builds."
+  - question: "Are there hidden aim assist mechanics in Division Resurgence?"
+    answer: "Yes. The game applies hidden aim assist adjustments that vary by weapon type, range, and whether you are in ADS or hip-fire. These adjustments are not documented in-game but significantly affect which weapons feel better at different ranges."
 ---
 
-# The 7 Hidden Mechanics The Division Resurgence Refuses To Explain (And Why Your Build Feels Weak)
+## The 7 Hidden Mechanics The Division Resurgence Refuses To Explain (And Why Your Build Feels Weak)
 
 This is the long-form follow-up to every player who has ever typed "is my build broken" into Reddit at 2 AM while staring at a character sheet that makes no sense.
 

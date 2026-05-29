@@ -3,6 +3,7 @@ import BaseLayout from './BaseLayout.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import SectionTag from '../components/SectionTag.astro';
 import AdSenseUnit from '../components/AdSenseUnit.astro';
+import YouTubeEmbed from '../components/YouTubeEmbed.astro';
 import { getAuthorUrl } from '../utils/author';
 export interface Props {
   title: string;
@@ -25,6 +26,9 @@ export interface Props {
     tool: string[];
     steps: { name: string; text: string; }[];
   };
+  videoId?: string;
+  videoTitle?: string;
+  videoChannel?: string;
 }
 
 const {
@@ -42,6 +46,9 @@ const {
   faqs = [],
   sources = [],
   howTo,
+  videoId,
+  videoTitle,
+  videoChannel,
 } = Astro.props;
 
 const twitterShareUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText || `Check out this Division Resurgence guide: ${title}`)}&url=${encodeURIComponent(Astro.url.toString())}`;
@@ -100,7 +107,7 @@ const howToLd = howTo ? {
     <h1 class="heading-accent">{title}</h1>
 
     <div class="article-meta">
-      <span class="tag">{category}</span>
+          <a href={`/tag/${category.toLowerCase().replace(/\s+/g, '-')}/`} class="tag">{category}</a>
       <span>By <a href={getAuthorUrl(author)} style="color: var(--accent); text-decoration: none;">{author}</a></span>
       <span>·</span>
       <time datetime={lastUpdated.toISOString()}><strong>Last updated:</strong> {formattedDate}</time>
@@ -118,6 +125,15 @@ const howToLd = howTo ? {
           fetchpriority="high"
         />
       </div>
+    )}
+
+    {videoId && (
+      <YouTubeEmbed
+        videoId={videoId}
+        title={videoTitle || `${title} — Video Guide`}
+        description={description}
+        channelName={videoChannel}
+      />
     )}
 
     {tocItems.length > 0 && (

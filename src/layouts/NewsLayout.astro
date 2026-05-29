@@ -84,7 +84,7 @@ const breadcrumbItems = [
 
       {tags.length > 0 && (
         <div style="display:flex;gap:var(--sp-1);flex-wrap:wrap;margin-bottom:var(--sp-6);">
-          {tags.map(tag => <span class="tag">{tag}</span>)}
+          {tags.map(tag => <a href={`/tag/${tag.toLowerCase().replace(/\s+/g, '-')}/`} class="tag">{tag}</a>)}
         </div>
       )}
 

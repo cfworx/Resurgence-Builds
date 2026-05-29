@@ -1,4 +1,4 @@
-﻿---
+---
 title: "April Dev Stream - Bugs, Fixes, and What's Next"
 publishDate: "2026-04-18"
 author: "RapidF5"
@@ -30,3 +30,11 @@ Ubisoft hosted a developer livestream on April 18 covering the launch period. Co
 
 ## Community Sentiment
 Mixed-to-frustrated. Multiple top comments described the answers as light on commitments. One commenter pointed out that a modified APK demonstrated the FPS unlock is technically feasible, which contributed to player skepticism.
+
+---
+
+**Related Reading:**
+- [Which Specialization Should You Pick?](/guides/which-specialization-to-pick/)
+- [Safe Codes Master List](/guides/division-resurgence-safe-codes/) — the 33 encrypted crates mentioned in the stream
+- [Season 1–3 Roadmap](/news/season-1-2-3-roadmap/)
+- [Error Codes Guide](/guides/division-resurgence-error-codes/)

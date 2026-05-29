@@ -10,9 +10,10 @@ interface Props {
   heading: string;
   subheading: string;
   jsonLd?: Record<string, unknown> | Record<string, unknown>[];
+  lastVerified?: string;
 }
 
-const { title, description, breadcrumbs, heading, subheading, jsonLd } = Astro.props;
+const { title, description, breadcrumbs, heading, subheading, jsonLd, lastVerified } = Astro.props;
 ---
 
 <BaseLayout {title} {description} {breadcrumbs} {jsonLd}>
@@ -21,6 +22,13 @@ const { title, description, breadcrumbs, heading, subheading, jsonLd } = Astro.p
     <SectionTag label="Database" />
     <h1 class="db-heading heading-accent">{heading}</h1>
     <p class="db-subheading">{subheading}</p>
+
+    {lastVerified && (
+      <div class="db-verified">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+        <span>Last verified for <strong>{lastVerified}</strong></span>
+      </div>
+    )}
 
     <slot />
   </div>
@@ -522,5 +530,20 @@ const { title, description, breadcrumbs, heading, subheading, jsonLd } = Astro.p
     border: 1px solid rgba(242,104,34,0.25);
     padding: 3px 10px;
     border-radius: 999px;
+  }
+
+  .db-verified {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-family: var(--font-mono);
+    font-size: var(--text-xs);
+    color: #6DAA45;
+    background: rgba(109, 170, 69, 0.1);
+    border: 1px solid rgba(109, 170, 69, 0.25);
+    padding: 6px 14px;
+    border-radius: 999px;
+    margin-bottom: var(--sp-6);
+    letter-spacing: 0.02em;
   }
 </style>

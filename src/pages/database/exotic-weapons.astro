@@ -2,7 +2,7 @@
 import DatabaseLayout from '../../layouts/DatabaseLayout.astro';
 import exoticWeapons from '../../data/exotic-weapons.json';
 
-const title = "Division Resurgence Exotic Weapons & Weapon Tier List";
+const title = "Division Resurgence Exotic Weapons — Full List & Tier Rankings";
 const description = "Every exotic weapon in Division Resurgence, ranked. Each one bends the rules differently. Most are broken. That's the point.";
 const breadcrumbs = [
   { name: 'Exotic Weapons', url: '/database/exotic-weapons/' }
@@ -37,59 +37,212 @@ const itemListLd = {
   heading="Exotic Weapons"
   subheading="The rarest and most powerful weapons in Resurgence. Each one bends the rules in a different way. Most are broken. That's the point."
   jsonLd={itemListLd}
+  lastVerified="Patch 1.2.1"
 >
-  <div class="db-grid" id="exotics-grid">
-    {exoticWeapons.map((weapon) => (
-      <article class="db-card exotic-card">
-        <div class="db-card__header">
-          <div>
-            <h2 class="db-card__title">{weapon.name}</h2>
-            <span class="weapon-type">{weapon.type}</span>
-          </div>
-        </div>
-        
-        <div class="db-card__body">
-          <div class="stats-grid">
-            <div class="stat-item">
-              <span class="stat-label">Damage</span>
-              <span class="stat-value">{weapon.damage}</span>
-            </div>
-            <div class="stat-item">
-              <span class="stat-label">RPM</span>
-              <span class="stat-value">{weapon.rpm}</span>
-            </div>
-            <div class="stat-item">
-              <span class="stat-label">MAG</span>
-              <span class="stat-value">{weapon.mag}</span>
-            </div>
-            <div class="stat-item">
-              <span class="stat-label">Accuracy</span>
-              <span class="stat-value">{weapon.accuracy}</span>
-            </div>
-            <div class="stat-item">
-              <span class="stat-label">Reload</span>
-              <span class="stat-value">{weapon.reloadSpeed}</span>
-            </div>
-            <div class="stat-item">
-              <span class="stat-label">Opt. Range</span>
-              <span class="stat-value">{weapon.optimalRange}</span>
-            </div>
-            <div class="stat-item">
-              <span class="stat-label">Movement</span>
-              <span class="stat-value">{weapon.movementSpeed}</span>
-            </div>
-            <div class="stat-item">
-              <span class="stat-label">Stability</span>
-              <span class="stat-value">{weapon.stability}</span>
-            </div>
-          </div>
+  <!-- Tab Bar -->
+  <div class="exotic-tabs" id="exotic-tabs">
+    <button class="exotic-tab is-active" data-tab="all-exotics">All Exotics</button>
+    <button class="exotic-tab" data-tab="tier-rankings">Tier Rankings</button>
+  </div>
 
-          <div class="talent-section">
-            <h3 class="talent-name">{weapon.talentName}</h3>
-            <p class="talent-desc-text">{weapon.talentDescription}</p>
+  <!-- All Exotics Tab Content -->
+  <div class="exotic-tab-content" id="tab-all-exotics">
+    <div class="db-grid" id="exotics-grid">
+      {exoticWeapons.map((weapon) => (
+        <article class="db-card exotic-card">
+          <div class="db-card__header">
+            <div>
+              <h2 class="db-card__title">{weapon.name}</h2>
+              <span class="weapon-type">{weapon.type}</span>
+            </div>
           </div>
+          
+          <div class="db-card__body">
+            <div class="stats-grid">
+              <div class="stat-item">
+                <span class="stat-label">Damage</span>
+                <span class="stat-value">{weapon.damage}</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-label">RPM</span>
+                <span class="stat-value">{weapon.rpm}</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-label">MAG</span>
+                <span class="stat-value">{weapon.mag}</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-label">Accuracy</span>
+                <span class="stat-value">{weapon.accuracy}</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-label">Reload</span>
+                <span class="stat-value">{weapon.reloadSpeed}</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-label">Opt. Range</span>
+                <span class="stat-value">{weapon.optimalRange}</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-label">Movement</span>
+                <span class="stat-value">{weapon.movementSpeed}</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-label">Stability</span>
+                <span class="stat-value">{weapon.stability}</span>
+              </div>
+            </div>
+
+            <div class="talent-section">
+              <h3 class="talent-name">{weapon.talentName}</h3>
+              <p class="talent-desc-text">{weapon.talentDescription}</p>
+            </div>
+          </div>
+        </article>
+      ))}
+    </div>
+  </div>
+
+  <!-- Tier Rankings Tab Content -->
+  <div class="exotic-tab-content" id="tab-tier-rankings" style="display:none;">
+    <div class="tier-list">
+      <div class="tier-row tier-row--s">
+        <div class="tier-label">S</div>
+        <div class="tier-items">
+          <p class="tier-placeholder">Tier rankings are being evaluated for the current patch. Check back soon.</p>
         </div>
-      </article>
-    ))}
+      </div>
+      <div class="tier-row tier-row--a">
+        <div class="tier-label">A</div>
+        <div class="tier-items">
+          <p class="tier-placeholder">&nbsp;</p>
+        </div>
+      </div>
+      <div class="tier-row tier-row--b">
+        <div class="tier-label">B</div>
+        <div class="tier-items">
+          <p class="tier-placeholder">&nbsp;</p>
+        </div>
+      </div>
+      <div class="tier-row tier-row--c">
+        <div class="tier-label">C</div>
+        <div class="tier-items">
+          <p class="tier-placeholder">&nbsp;</p>
+        </div>
+      </div>
+    </div>
   </div>
 </DatabaseLayout>
+
+<style is:global>
+  .exotic-tabs {
+    display: flex;
+    gap: var(--sp-2);
+    margin-bottom: var(--sp-6);
+  }
+
+  .exotic-tab {
+    font-family: var(--font-mono);
+    font-size: var(--text-xs);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    padding: 8px 20px;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 999px;
+    color: var(--ink-muted);
+    cursor: pointer;
+    transition: all 200ms ease;
+  }
+
+  .exotic-tab:hover {
+    border-color: rgba(242, 104, 34, 0.5);
+    color: var(--accent);
+    background: rgba(242, 104, 34, 0.08);
+  }
+
+  .exotic-tab.is-active {
+    border-color: var(--accent);
+    color: var(--accent);
+    background: rgba(242, 104, 34, 0.15);
+    box-shadow: 0 0 12px rgba(242, 104, 34, 0.2);
+  }
+
+  .tier-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--sp-3);
+  }
+
+  .tier-row {
+    display: flex;
+    gap: var(--sp-3);
+    min-height: 80px;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,0.08);
+  }
+
+  .tier-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    flex-shrink: 0;
+    font-family: var(--font-heading);
+    font-size: var(--text-3xl);
+    font-weight: 900;
+    color: #fff;
+  }
+
+  .tier-row--s .tier-label { background: rgba(255, 65, 54, 0.3); color: #ff4136; }
+  .tier-row--a .tier-label { background: rgba(255, 133, 27, 0.3); color: #ff851b; }
+  .tier-row--b .tier-label { background: rgba(46, 204, 113, 0.3); color: #2ecc71; }
+  .tier-row--c .tier-label { background: rgba(59, 130, 246, 0.3); color: #3b82f6; }
+
+  .tier-items {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--sp-2);
+    padding: var(--sp-3);
+    background: rgba(0,0,0,0.2);
+  }
+
+  .tier-placeholder {
+    color: var(--ink-muted);
+    font-size: var(--text-sm);
+    font-style: italic;
+    margin: 0;
+  }
+</style>
+
+<script>
+  const tabBar = document.getElementById('exotic-tabs');
+  const allExoticsTab = document.getElementById('tab-all-exotics');
+  const tierRankingsTab = document.getElementById('tab-tier-rankings');
+
+  if (tabBar && allExoticsTab && tierRankingsTab) {
+    tabBar.addEventListener('click', (e) => {
+      const btn = (e.target as HTMLElement).closest('.exotic-tab');
+      if (!btn) return;
+
+      const tabId = btn.getAttribute('data-tab');
+
+      // Update active tab button
+      tabBar.querySelectorAll('.exotic-tab').forEach(b => b.classList.remove('is-active'));
+      btn.classList.add('is-active');
+
+      // Show/hide tab content
+      if (tabId === 'all-exotics') {
+        allExoticsTab.style.display = '';
+        tierRankingsTab.style.display = 'none';
+      } else if (tabId === 'tier-rankings') {
+        allExoticsTab.style.display = 'none';
+        tierRankingsTab.style.display = '';
+      }
+    });
+  }
+</script>

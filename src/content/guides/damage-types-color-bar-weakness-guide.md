@@ -9,6 +9,9 @@ featuredImage: "/images/division-resurgence-damage-types-color-bar.png"
 imageAlt: "Division Resurgence damage type weakness color bars above enemy health showing dark blue piercing, light blue shredding, and red blast indicators"
 shareTitle: "You're Ignoring The Most Useful UI Element"
 shareText: "There's a colored bar above every elite enemy telling you what damage type to use. Most players have 80 hours in and never noticed it."
+videoId: "Mt3E4A0l0Zk"
+videoTitle: "SHD Agent Manual — Damage Types Explained"
+videoChannel: "AgentHuntzman"
 faqs:
   - question: "What do the colored bars above enemy health mean in Division Resurgence?"
     answer: "They're the game's way of whispering 'hey, use this damage type.' Dark blue bar means the enemy is weak to Piercing damage. Light blue means weak to Shredding. Red means weak to Blast. The game put this information right on the screen and then decided telling you what it means was apparently optional. The tutorial team must have been on lunch that day. Or maybe they assumed everyone reads patch notes like scripture. Spoiler: nobody does."
@@ -24,7 +27,7 @@ faqs:
     answer: "Two weapons covering two different types. The easy version: Warlord (Blast) as primary for red-bar enemies, plus any AR or LMG with Weapon Shredding Damage rolled as secondary for everything else. You can't cover all three types with two guns, but Shredding and Blast cover roughly 80% of endgame encounters. Piercing is mostly for Dark Zone Hunters, and honestly, they deserve whatever damage type they get."
 ---
 
-# The Color Bar Above Enemy Health Is Telling You The Whole Game And You're Not Reading It
+## The Color Bar Above Enemy Health Is Telling You The Whole Game And You're Not Reading It
 
 There is a small colored bar sitting above the health of every elite, named, and yellow-bar enemy in The Division Resurgence. It is the single most useful piece of UI in the entire game. The game does not explain what it means. Not in the tutorial. Not in the SHD manual. Not in the journal. Not in the loading screen tips that you already skip anyway.
 

@@ -35,15 +35,16 @@ Pour one out. He died doing what he loved, which was waiting.
 
 ---
 
-## 2. 🏆 "They Did It"
+## 2. 🕷️ "Spiderman Resurgence"
 
-**u/Vanitas_Vanitatum73** · [Original post](https://www.reddit.com/r/thedivisionresurgence/comments/1timuxi/they_did_it/) · May 20
+**u/craig_cloud** · May 28
 
-![In-game vendor screen showing items available for sale, confirming the vendor is working again after the May 20 patch](https://preview.redd.it/they-did-it-v0-i1415zzbva2h1.jpeg?auto=webp&s=528f0a2622cc99ec15e36dd8219398a14ed1132e)
+![Cleaner enemy stuck upside down on the ceiling of an office building while an agent stares at him from across the room](https://i.redd.it/i221lu9xfu3h1.jpeg)
+*Screenshot via [r/thedivisionresurgence](https://www.reddit.com/r/thedivisionresurgence/comments/1tpy3xu/spiderman_resurgence/). With great ragdoll comes great responsibility.*
 
-*"Happy to report that the vendor is working as intended."*
+The physics engine had a moment. A Cleaner took one shotgun blast, slingshotted into low earth orbit, and landed feet-first on the ceiling like he was auditioning for the next Marvel movie. The agent in the foreground is just staring at him. No reaction. No prompt. Just two coworkers acknowledging that one of them is now on the roof and neither knows what to do about it.
 
-No screenshots. No patch note breakdown. Just a man so relieved he could sell loot again that he posted like a hostage who just got rescued. This is what trauma recovery looks like in 2026.
+This is the Division Resurgence experience in one screenshot. The game will throw a thousand enemies at you and one of them will end up hanging from the lights, and you'll keep playing because what else are you going to do.
 
 ---
 
@@ -59,13 +60,13 @@ This NPC has been sweeping the same patch of concrete since launch day. He did n
 
 ---
 
-## 4. 🎟️ "Game Update Patch Notes" - The 500K Apology Tour
+## 4. 📦 "Vendor Got Tired of Buying From Me"
 
-**u/TDResurgence** · [Original post](https://www.reddit.com/r/thedivisionresurgence/comments/1tijpxo/game_update_patch_notes/) · May 20
+**u/NoPart7463** · [Original post](https://www.reddit.com/r/thedivisionresurgence/comments/1tj8azi/vendor_got_tired_of_buying_from_me/)
 
-The dev team came back with **500,000 Basic Credits and 750 Phoenix Credits** for everyone. A clean 10x on the original gesture. Vendor bug patched. Strawberry Milkshake talent description fixed. Classified Ops Pass delivering. Lone Wolf reset sorted.
+![Buyback list is full popup blocking the vendor sell screen](https://i.redd.it/eocqdoebte2h1.jpeg)
 
-The team read the room, did the math, and showed up. That is how you do a recovery arc.
+The vendor finally comes back online, and within minutes it throws up a popup asking permission to clear your buyback list to make room for more of your junk. The vendor tapped out. Not a bug, just a man who has seen enough.
 
 ---
 
@@ -145,11 +146,7 @@ We needed this post.
 
 ## Honorable Mention
 
-**"Buyback List Is Full"** by u/NoPart7463 ([Original post](https://www.reddit.com/r/thedivisionresurgence/comments/1tj8azi/vendor_got_tired_of_buying_from_me/))
-
-![Buyback list is full popup blocking the vendor sell screen](https://i.redd.it/eocqdoebte2h1.jpeg)
-
-The vendor finally comes back online, and within minutes it throws up a popup asking permission to clear your buyback list to make room for more of your junk. The vendor tapped out. Not a bug, just a man who has seen enough.
+**"Lore Team? Lore Team."** — Every gear piece comes with a paragraph. Every mod has a talent. Every talent has a sub-effect. We're all just thumbing past it on the way to "Crit Chance: 12%." Salute to the lore team. Sorry we don't read.
 
 ---
 

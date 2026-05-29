@@ -18,12 +18,12 @@ faqs:
     answer: "The root cause has been patched. The 'index out of bounds' error has been fixed at the server level, meaning the specific bug that caused items to vanish in transit between your inventory and the database is no longer active. That said, this is a live service game. New bugs can always appear. But the specific inventory-eating demon has been exorcised."
 ---
 
-# Ubisoft Names the Boss: Inventory-Wipe Bug Was an Index-Out-of-Bounds Error
+## Ubisoft Names the Boss: Inventory-Wipe Bug Was an Index-Out-of-Bounds Error
 **Plus Everything Else From a Suspiciously Quiet 48 Hours**
 
 It’s been a weird couple of days in Manhattan. While Patch 1.2.1 tried to put a bandage on the chaos of Phase 2’s launch, it took a quiet server-side patch 24 hours later to finally kill the final boss of Season 1: **the disappearing inventory bug.** 
 
-Meanwhile, the community has gotten its hands on the new exotic LMG, Aegis is sparking fierce build debates, and the Dark Zone PvP meta is as salty as ever. Here is your unfiltered 48-hour news brief.
+Meanwhile, the community has gotten its hands on the new [exotic LMG](/database/exotic-weapons/), Aegis is sparking fierce [build debates](/guides/which-specialization-to-pick/), and the Dark Zone PvP meta is as salty as ever. Here is your unfiltered 48-hour news brief.
 
 ---
 
@@ -70,7 +70,7 @@ Based on their historic post cadence, they average one major communication every
 If you look past the bug reports, the endgame players are hyper-focused on three things right now:
 
 ### 1. Cracking the Aegis / Tech Operator Code
-Aegis is the dominant class discussion. Players are realizing that to make the drone DPS viable in Legendary content, you need to absolutely max out Engineering and Skill Multi-Shot. 
+Aegis is the dominant [specialization](/guides/which-specialization-to-pick/) discussion. Players are realizing that to make the drone DPS viable in Legendary content, you need to absolutely max out Engineering and Skill Multi-Shot. 
 *   **The Math:** Skill Multi-Shot actually scales the 3-second Aegis burst into multiple damage instances. 
 *   **The Reality:** Even with optimized gear, Striker drones pop instantly in Legendary content to molotovs and sniper fire. Many are pivoting back to Tactical Pharma for reliable AoE and survivability.
 
@@ -86,7 +86,7 @@ Maxing your crafting bench to level 10 gives a 25% chance at gold gear, but the 
 
 Don't adjust your routers; these are confirmed live issues as of May 23:
 *   **DZ Leaders Not Dropping Loot:** Reports of boss kills resulting in zero drops (no chipsets, no equipment).
-*   **Asia & PC Connection Issues:** Persistent disconnects since the Phase 2 update.
+*   **Asia & PC Connection Issues:** Persistent disconnects since the Phase 2 update. See the [error codes guide](/guides/division-resurgence-error-codes/) for troubleshooting steps.
 *   **Aegis Ultimate Recast Bug:** If your first Aegis ultimate shield is still active, popping a second ultimate fails to fire. 
 *   **Civilians in Need:** The Div 1 carryover mechanic for giving away bottled water is coded so rarely you have a better chance of finding a Gold OS Protocol.
 
@@ -104,6 +104,6 @@ When a player with 150k health and 5,000 armor can still be two-tapped by a shot
 
 Take a breath, because next week the grind continues. 
 *   **OW Nest Speedrun (Derelict Store):** Starts May 29 through June 2. 
-*   **Phase 3:** Drops in June, bringing the new Scorpio exotic, the Freemen apparel set, and the Boombox weapon skin. 
+*   **Phase 3:** Drops in June, bringing the new Scorpio [exotic](/database/exotic-weapons/), the Freemen apparel set, and the Boombox weapon skin. 
 
 Patch 1.2.1 and the May 21 server patch were the dev team's response to the roughest week of the game's life. The bleeding has stopped, but the community is still licking its wounds. **Phase 3 is the real next test.** See you in the Dark Zone.

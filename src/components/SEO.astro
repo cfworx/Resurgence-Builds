@@ -61,6 +61,23 @@ graph.push({
   ]
 });
 
+// 1b. Person — site-wide E-E-A-T signal
+graph.push({
+  '@type': 'Person',
+  '@id': `${siteUrl}/author/rapidf5/#person`,
+  name: 'RapidF5',
+  url: `${siteUrl}/author/rapidf5/`,
+  image: `${siteUrl}/images/resurgence-builds-official-logo.png`,
+  jobTitle: 'Founder & Lead Author',
+  worksFor: { '@id': `${siteUrl}/#organization` },
+  sameAs: [
+    'https://x.com/ResurgenceBuild',
+    'https://www.youtube.com/@ResurgenceBuilds',
+    'https://www.reddit.com/user/ResurgenceBuilds/',
+    'https://discord.gg/t6GTR6tpd'
+  ]
+});
+
 // 2. WebSite
 const isHome = Astro.url.pathname === '/';
 graph.push({
@@ -138,7 +155,8 @@ if (breadcrumbs.length > 0) {
 // 6. Article
 if (article) {
   const isPatchNote = Astro.url.pathname.includes('/patch-notes/');
-  const articleType = isPatchNote ? 'TechArticle' : 'Article';
+  const isNews = Astro.url.pathname.includes('/news/');
+  const articleType = isPatchNote ? 'TechArticle' : isNews ? 'NewsArticle' : 'Article';
   
   const articleNode: any = {
     '@type': articleType,
