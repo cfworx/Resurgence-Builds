@@ -188,6 +188,8 @@ const howToLd = howTo ? {
         </div>
       )}
 
+      <GiscusComments />
+
       <!-- 3. Explore More -->
       <hr style="margin: var(--sp-6) 0; border: none; border-top: 1px solid var(--border);" />
       <nav class="explore-more" aria-label="Related Guides">
@@ -198,8 +200,6 @@ const howToLd = howTo ? {
           <li>Stay updated with the latest <a href="/news/"><strong>Patch Notes and Breaking News</strong></a></li>
         </ul>
       </nav>
-
-      <GiscusComments />
 
       <!-- 4. Sources -->
       {sources.length > 0 && (

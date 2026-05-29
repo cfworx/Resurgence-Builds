@@ -1,12 +1,7 @@
 ---
 /**
  * GiscusComments.astro — GitHub-backed comments via giscus.
- * 
- * To configure:
- * 1. Enable GitHub Discussions on your repo
- * 2. Install the giscus app: https://github.com/apps/giscus
- * 3. Visit https://giscus.app to generate your config
- * 4. Replace the placeholder values below
+ * Dynamically injects the script to avoid Astro's bundler stripping data-* attributes.
  */
 ---
 
@@ -16,23 +11,27 @@
   <div class="giscus"></div>
 </section>
 
-<script is:inline
-  src="https://giscus.app/client.js"
-  data-repo="cfworx/Resurgence-Builds"
-  data-repo-id="R_kgDOSgFl1w"
-  data-category="Announcements"
-  data-category-id="DIC_kwDOSgFl184C-FVG"
-  data-mapping="pathname"
-  data-strict="0"
-  data-reactions-enabled="1"
-  data-emit-metadata="0"
-  data-input-position="bottom"
-  data-theme="dark"
-  data-lang="en"
-  data-loading="lazy"
-  crossorigin="anonymous"
-  async
-></script>
+<script is:inline>
+  (function() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://giscus.app/client.js';
+    s.setAttribute('data-repo', 'cfworx/Resurgence-Builds');
+    s.setAttribute('data-repo-id', 'R_kgDOSgFl1w');
+    s.setAttribute('data-category', 'Announcements');
+    s.setAttribute('data-category-id', 'DIC_kwDOSgFl184C-FVG');
+    s.setAttribute('data-mapping', 'pathname');
+    s.setAttribute('data-strict', '0');
+    s.setAttribute('data-reactions-enabled', '1');
+    s.setAttribute('data-emit-metadata', '0');
+    s.setAttribute('data-input-position', 'bottom');
+    s.setAttribute('data-theme', 'dark');
+    s.setAttribute('data-lang', 'en');
+    s.setAttribute('data-loading', 'lazy');
+    s.setAttribute('crossorigin', 'anonymous');
+    s.async = true;
+    d.querySelector('.giscus').appendChild(s);
+  })();
+</script>
 
 <style>
   .giscus-wrapper {
