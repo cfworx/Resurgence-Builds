@@ -1,6 +1,6 @@
 ---
 title: "Reddit This Week - 10 Posts That Made the Last 10 Days Worth It"
-publishDate: "2026-05-28"
+publishDate: "2026-05-28T21:00:00Z"
 author: "RapidF5"
 featuredImage: "/images/news/reddit-weekly-highlights-may-28-hero.jpg"
 imageAlt: "Division Resurgence Reddit weekly community highlights for late May 2026 featuring vendor fixes, compensation, and Dark Zone drama"
