@@ -19,7 +19,7 @@ faqs:
     answer: "Technically yes. Realistically, you are going to look at Crit Chance, Crit Damage, and maybe the color of the icon, and that is fine. The lore team wrote it all anyway and they know we skip it. They are used to the pain."
 ---
 
-Last time we checked in, the subreddit was a tire fire. This time? The dev team showed up with a 500K credit care package, the vendor remembered how to do its job, and the community pivoted from rage to roast mode in about 72 hours. Here are the 10 funniest posts from r/thedivisionresurgence over the last 10 days, ranked by how hard they made us laugh during our lunch break.
+This week on r/thedivisionresurgence: a Cleaner defied gravity and moved to the ceiling, the NYC janitor is still sweeping and will outlive us all, the vendor came back from his mental health leave and immediately started overpaying by 60x, a man filed the most professional cosmetic bug report in gaming history using MS Paint, and someone realized the game has more required reading than a college syllabus. The subreddit went from doomposting to shitposting in record time, and honestly? The shitposts are better content than most gaming outlets are putting out right now. Here are the 10 best posts from the last 10 days.
 
 ---
 

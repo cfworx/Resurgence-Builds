@@ -22,3 +22,7 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# private research / notes
+game_knowledge/
+_archived_builds/
