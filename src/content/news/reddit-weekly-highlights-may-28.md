@@ -1,120 +1,172 @@
 ---
-title: "Reddit This Week - 10 Posts From the Last 10 Days of Vendor Trauma"
+title: "Reddit This Week - 10 Posts That Made the Last 10 Days Worth It"
 publishDate: "2026-05-30"
 author: "RapidF5"
 featuredImage: "/images/news/reddit-weekly-highlights-may-28-hero.jpg"
 imageAlt: "Division Resurgence Reddit weekly community highlights for late May 2026 featuring vendor fixes, compensation, and Dark Zone drama"
-description: "The 10 best Reddit posts from r/thedivisionresurgence over the last 10 days. The 500K credit comeback, the vendor finally working, NYC base janitor folklore, and the great Heroic nest drop conspiracy."
+description: "The 10 funniest Reddit posts from r/thedivisionresurgence over the last 10 days. The 500K comeback, the vendor that tapped out, NYC base janitor folklore, and the SWAT neck of shame."
 tags: ["Community", "Reddit", "Humor", "Weekly"]
 shareTitle: "Share the chaos"
-shareText: "The 10 best Reddit posts from the last 10 days of Division Resurgence vendor trauma. Your clan needs to see this."
+shareText: "The 10 funniest Reddit posts from the last 10 days of Division Resurgence. Your clan needs to see this."
+faqs:
+  - question: "What was the compensation Ubisoft gave players in late May 2026?"
+    answer: "Massive sent every player 500,000 Basic Credits and 750 Phoenix Credits on May 20, 2026, alongside the patch that fixed the vendor selling bug. This was a 10x increase over the earlier 50,000 credit gesture from the previous week."
+  - question: "Is the vendor bug fixed in Division Resurgence?"
+    answer: "Yes. The May 20 server patch fixed the bug where vendors were not showing items players could sell, the bug where players could accidentally sell locked items, and the Dark Zone vendor text issue. Selling is working again as of late May 2026."
+  - question: "Did Ubisoft fix the disappearing inventory bug?"
+    answer: "Yes. A follow-up server patch on May 21, 2026 addressed the index-out-of-bounds issue that caused items to randomly vanish from inventories. If you still see items disappearing, file a support ticket through the in-game button."
+  - question: "Are Heroic nest drop rates actually nerfed?"
+    answer: "There is no official confirmation from the dev team. Community sentiment says fewer gold mods and fewer purple bag drops since the Phase 2 patch, but without published drop tables it is impossible to call it a stealth nerf versus a bad RNG streak."
+  - question: "What is still broken after the May 20 patch?"
+    answer: "Per the official notes, still under investigation: iOS gamepad support, the Outpost Annihilation side mission, some Ubisoft Shop purchases not being delivered, the Tactical Augmentation reward from the Dark Zone quest being unclaimable, and weapon proficiency blockers. The 13th Collectible SHD crate is also still unreachable."
 ---
 
-Last time we checked in, the subreddit was a smoldering crater of vendor bug rage and 50K credit insult memes. Ten days later? The dev team actually heard us, dropped a 500K credit care package, and the salt has been replaced with a brand new, artisanal, small-batch flavor of salt. The healing is slow. The loot is still mid. The NYC base janitor is still mopping up grenade casings while questioning every life decision that led him to this post-apocalyptic custodial career. Here are the 10 best posts from the last 10 days, ranked by how hard they made a grown man laugh into his third beer on a Tuesday.
+Last time we checked in, the subreddit was a tire fire. This time? The dev team showed up with a 500K credit apology, the vendor remembered how to do its job, and the community pivoted from rage to roast in about 72 hours. Healing is happening. The jokes are also happening. Here are the 10 funniest posts from r/thedivisionresurgence over the last 10 days, ranked by how hard they made us laugh during our lunch break.
 
 ---
 
 ## 1. 💀 "Somebody Passed Out in Main HQ Waiting for Fixes"
 
-**u/Bruce_wayne____** · [Score: 190](https://www.reddit.com/r/thedivisionresurgence/comments/1th6iwh/somebody_passed_out_in_main_hq_waiting_for_fixes/) · May 19
+**u/Bruce_wayne____** · [Original post](https://www.reddit.com/r/thedivisionresurgence/comments/1th6iwh/somebody_passed_out_in_main_hq_waiting_for_fixes/) · May 19
 
-Top post of the entire window, and the caption was just "Sad day for deceased agent." That's it. That's the whole post. No essay. No manifesto. Just a screenshot of an NPC face-down on the floor of the Base of Operations like he tried to sell a green pistol and the vendor said "no" so hard his soul left his body. This man spoke for all of us. He lived through a global pandemic, signed up to save New York City, and died waiting for a sell button. We've all been this NPC. Some of us were this NPC at 11pm on a work night. Rest easy, agent. You deserved better drops.
+![NPC lying motionless on the floor of the Base of Operations while two agents stand nearby](https://i.redd.it/gdxfc2u0nz1h1.jpeg)
+*Screenshot via [r/thedivisionresurgence](https://www.reddit.com/r/thedivisionresurgence/comments/1th6iwh/somebody_passed_out_in_main_hq_waiting_for_fixes/). HQ medic stats: 72127/72127 HP, 0/0 will to live.*
 
----
-
-## 2. 🎯 "Game Update Patch Notes" - The Comeback Tour
-
-**u/TDResurgence** · [Score: 66](https://www.reddit.com/r/thedivisionresurgence/comments/1tijpxo/game_update_patch_notes/) · May 20
-
-Five days after the 50K insult that had the entire subreddit writing their breakup letters, the dev team came back with **500,000 Basic Credits and 750 Phoenix Credits** for every player. That's a 10x correction in less than a week. In relationship terms, they went from "sorry babe, here's a gas station gift card" to "I booked us a weekend away and I already called your boss." Plus actual fixes: the vendor selling bug, the Strawberry Milkshake Anarchy talent description, the Classified Ops Pass purchase issue, and the Lone Wolf challenge reset. Were people fully satisfied? Of course not. This is Reddit. You could hand these people a golden toilet and they'd complain about the seat temperature. But credit where it's due: the dev team read the room, did the math, and came back with real money. The Tactical Augmentation claim bug and the Outpost Annihilation mission are still "under investigation," which is dev-speak for "we know, please stop tagging us." Top comment energy: *"They did it"* from u/Vanitas_Vanitatum73, whose follow-up post (Score: 40) was literally just a man celebrating that he can sell items again. Like watching your dad figure out the TV remote. Beautiful.
+The single best post of the entire window, and the caption was just "Sad day for deceased agent." That's it. That's the post. Six words and 190 upvotes. The NPC is sprawled out cold in the middle of the Base of Operations like he tripped over a SHD beacon and decided this is where his story ends. The community looked at this man and saw themselves at hour seven of a vendor outage. Pour one out. He died doing what he loved, which was waiting.
 
 ---
 
-## 3. 🐀 "Is It a Bug? Or They Saw an Opportunity?"
+## 2. 🏆 "They Did It"
 
-**u/Gullible_Secret8109** · [Score: 19](https://www.reddit.com/r/thedivisionresurgence/comments/1th6iwh/somebody_passed_out_in_main_hq_waiting_for_fixes/) · May 19
+**u/Vanitas_Vanitatum73** · [Original post](https://www.reddit.com/r/thedivisionresurgence/comments/1timuxi/they_did_it/) · May 20
 
-A genuinely unhinged conspiracy theory that reads like it was written at 2am by a man who has seen too many YouTube documentaries. The pitch: the vendor wasn't broken. It was a controlled economic experiment to see if players were desperate enough to buy Phoenix Credits to get Sealed Caches to get Encrypted Data to convert into Basic Credits. The vendor still let you *buy* but not *sell*. That's the smoking gun, allegedly. Is this true? Almost certainly not. The simplest explanation is always "a developer forgot a semicolon somewhere and went home for the weekend." But did it spawn a 12-comment thread of grown adults debating whether a mobile game studio is running a psychological warfare operation against its own playerbase? You bet your recalibrated Firepower roll it did. Never change, Reddit.
-
----
-
-## 4. 🧹 "NYC Base Janitor Deserves Hazard Pay at This Point"
-
-**u/JA_Guyyy** · [Score: 24](https://www.reddit.com/r/thedivisionresurgence/comments/1tmnffz/nyc_base_janitor_deserves_hazard_pay_at_this_point/) · May 24
-
-Wholesome content in a sea of rage. A single screenshot of the NPC janitor mopping the Base of Operations floor while agents are literally throwing grenades around him like it's a company holiday party where someone found the fireworks. *"Can agents please stop throwing grenades inside the NYC Base of Operations. Every time I walk in, this poor guy is out here mopping the floors while agents are launching explosives around like it's the Dark Zone. My man didn't survive a pandemic just to clean up after our SHD nonsense."* This janitor has seen more combat than half the agents in his building. He doesn't get Phoenix Credits. He doesn't get a specialization. He gets a mop and a pension that probably doesn't even exist anymore because the dollar collapsed. This man is the backbone of the SHD and we will not rest until he gets a commendation. Free the janitor. Give him hazard pay. Let him sell items at the vendor.
+A three-word post celebrating that the vendor was finally working again. *"Happy to report that the vendor is working as intended."* That's the whole text. No screenshots, no patch note breakdown, just a man so overwhelmed by being able to sell loot that he sounded like he was reporting from a war zone. This is what trauma recovery looks like in 2026. We salute you, agent.
 
 ---
 
-## 5. 📉 "4 Years Down the Drain"
+## 3. 🧹 "NYC Base Janitor Deserves Hazard Pay at This Point"
 
-**u/BusinessCultural3831** · [Score: 43](https://www.reddit.com/r/thedivisionresurgence/comments/1thrm5a/4_years_down_the_drain/) · May 19
+**u/JA_Guyyy** · [Original post](https://www.reddit.com/r/thedivisionresurgence/comments/1tmnffz/nyc_base_janitor_deserves_hazard_pay_at_this_point/) · May 24
 
-A 28-comment ode to patience that no human being should have been asked to demonstrate. OP played the original closed beta back in 2022 and watched the game vanish like a DZ extraction helicopter that just... never came back. Then it got rumored canceled. Then it reappeared. Then it launched. Then his inventory disappeared. *"The state of the game right now is exactly the same it was 4 years ago (minus the bugs). The only things added in this launch were the bugs."* That's the kind of line that hits different when you're 35 and you've already survived Anthem, Hyenas getting canceled, and the Marvel's Avengers shutdown. The PC version helps. The 500K compensation helps. But anyone who waited four years for this deserves at minimum a god-rolled Strawberry Milkshake and a handwritten apology from the vendor NPC personally.
+![NPC janitor sweeping the floor of NYC Base of Operations while two agents emote nearby](https://i.redd.it/9ougmuzhb53h1.jpeg)
+*Screenshot via [r/thedivisionresurgence](https://www.reddit.com/r/thedivisionresurgence/comments/1tmnffz/nyc_base_janitor_deserves_hazard_pay_at_this_point/). Look at this man. He has seen things.*
 
----
+> "Can agents please stop throwing grenades inside the NYC Base of Operations. My man didn't survive a pandemic just to clean up after our SHD nonsense."
 
-## 6. 🛒 "50K Basic Credits Is a Joke" - The OG Manifesto
-
-**u/Aggressive-Onion-781** · [Score: 46](https://www.reddit.com/r/thedivisionresurgence/comments/1thvs8k/50k_basic_credits_is_a_joke/) · May 19
-
-Posted *before* the real compensation dropped, this was the post that lit the fuse. The match in the powder keg. The guy at the cookout who finally says what everyone's been thinking while the host is still flipping burgers. *"I haven't even been mad at all the bugs... but seriously, 50K basic credits for vendor being down as long as it has feels disrespectful. I'm completely unmotivated to play this game now."* 50K credits. In a game where a single recalibration costs more than that. That's like your job offering you a pizza party after a round of layoffs. You could argue this thread, and the dozen like it, is the reason the dev team came back with half a million the next day. Turns out screaming into the void works if enough of you scream at the same time. Democracy in action.
+This poor guy is sweeping the floor while two agents are dancing five feet away from him like it's prom night. He has been mopping the same patch of concrete since the game launched. He has watched a thousand grenades hit the wall behind him. He has seen Captain Miller yell at fifteen different agents this morning. He just wants to go home. Free this man. Give him a side mission. Let him retire.
 
 ---
 
-## 7. 🐌 "Yo, What Was Up With the Heroic Nest Drop Rates?"
+## 4. 🎟️ "Game Update Patch Notes" - The 500K Apology Tour
 
-**u/LackadaisicalFred** · [Score: 29](https://www.reddit.com/r/thedivisionresurgence/comments/1tn60i1/am_i_crazy_or_did_they_shadow_nerfed_the_heroic/) · May 25
+**u/TDResurgence** · [Original post](https://www.reddit.com/r/thedivisionresurgence/comments/1tijpxo/game_update_patch_notes/) · May 20
 
-A genuine community detective thread, and by "detective" we mean "30 dads comparing notes about whether their loot got worse or if they're just old and their memory is going." *"Am I crazy or did they shadow nerfed the heroic nests drop rate? I'm almost sure I used to get way more gold mods. Also, purples used to drop from the bags found in the location, no?"* 30 comments of people confirming, denying, and building conspiracy boards in their heads like they're investigating a cold case. Whether it's an actual stealth nerf or just the universe's way of telling you to go to bed, the community has decided it's both. Half the playerbase is now running Heroic nests with a spreadsheet open on a second monitor. We are not a well people.
+![In-game System mail dated 2026/05/20 confirming a compensation package of 500,000 Basic Credits and 750 Phoenix Credits](https://i.redd.it/i1415zzbva2h1.jpeg)
+*The compensation mail in-game, timestamped May 20, 2026. Sender: System. Subject: please come back.*
 
----
-
-## 8. 🛡️ "Nerf Bulwarks Now"
-
-**u/Trap_Jumpinn** · [Score: 21](https://www.reddit.com/r/thedivisionresurgence/comments/1tlfxv7/nerf_bulwarks_now/) · May 23
-
-Every PvP game needs a villain, and right now it's the Bulwark player who walks into a four-on-one like he's picking up groceries. OP's thesis: the shield is too mobile, the shock gadget is on a cooldown shorter than your average sneeze, and *"they need to use their skills for every kill, which shows they aren't as good as they think they are. They're just taking advantage of bad game mechanics."* 28 comments of Bulwark mains showing up to defend themselves with the confidence of a man who has never lost a 1v1 and the social awareness of a man who doesn't understand why nobody wants to play with him. Meanwhile, double-barrel mains are in the replies acting like they're somehow morally superior, which is rich coming from people who delete other players in 0.4 seconds from behind a dumpster. The DZ meta debate is officially open for Phase 2 and nobody is leaving with their dignity.
+Five days after the original 50K credit gesture got dunked on so hard it generated its own gravity, the dev team came back with **500,000 Basic Credits and 750 Phoenix Credits** for everyone. A clean 10x on the apology. The vendor selling bug got patched, the Strawberry Milkshake Anarchy talent description got fixed, the Classified Ops Pass started actually delivering passes. Even the Lone Wolf reset schedule got sorted out. The dev team read the room, did the math, and showed up. We see you. Now please fix the Tactical Augmentation claim before we have to write another one of these.
 
 ---
 
-## 9. 🎮 "What's the Point of Going Rogue in the DZ?"
+## 5. 🎰 "Why Are They Offering Me So Much for My Old Gun?"
 
-**u/RogueBlue2164** · [Score: 40](https://www.reddit.com/r/thedivisionresurgence/comments/1tl6duu/what_the_point_of_going_rouge_in_the_dz/) · May 23
+**u/Recycled_Michael** · [Original post](https://www.reddit.com/r/thedivisionresurgence/comments/1the6bx/why_are_they_offering_me_so_much_for_my_old_gun/) · May 19
 
-The eternal question that has haunted looter-shooters since the concept was invented by someone who clearly never had to extract loot while three teenagers with nothing to lose hunted them across a map. *"Is there a point to going around killing agents? And it's always a Bulwark too. Going to a boss fight and attacking agents from behind. Like get a life... I hate the game forces me to play that mode to get skill mod chips."* 42 comments of philosophical warfare about whether griefing is content. It's the gaming equivalent of asking "is a hot dog a sandwich?" except everyone is angry and someone just lost a god-rolled backpack. The Dark Zone remains the only place in gaming where a 40-year-old man can feel genuine adrenaline, genuine betrayal, and genuine regret about not just going to bed, all within a 90-second window.
+![Vendor sell screen showing a 1800 credit base price with a 107,770 credit bonus circled in red](https://i.redd.it/h5typ2gsd12h1.jpeg)
+*Screenshot via [r/thedivisionresurgence](https://www.reddit.com/r/thedivisionresurgence/comments/1the6bx/why_are_they_offering_me_so_much_for_my_old_gun/). Vendor: 1,800 credits. Bonus: 107,770 credits. Math: not mathing.*
+
+Listed sell price: 1,800 credits. Bonus: 107,770 credits. The vendor came back from his week off so guilty about being broken that he started overpaying by 60x just to make things right. This is the most relatable bug in the game. We've all had a coworker come back from vacation and start aggressively volunteering for things. Nobody on the subreddit reported it. Nobody filed a ticket. We all just took the money and walked away whistling.
 
 ---
 
-## 10. 🤖 "Devs, Can You Please Fix the Exposed Neck"
+## 6. 🤖 "Devs, Can You Please Fix the Exposed Neck"
 
-**u/MuffDivers2_** · [Score: 18](https://www.reddit.com/r/thedivisionresurgence/comments/1tn60i1/am_i_crazy_or_did_they_shadow_nerfed_the_heroic/) · May 25
+**u/MuffDivers2_** · [Original post](https://www.reddit.com/r/thedivisionresurgence/comments/1tn41h3/devs_can_you_please_fix_the_exposed_neck_the/) · May 25
 
-The most niche complaint on the entire subreddit, and somehow 17 people cared enough to comment on it, which tells you everything about where we are as a community. The character models have a small visible gap between the helmet and the collar, a tiny strip of exposed neck skin that has apparently been haunting Division players since The Division 2 had the exact same problem. *"The people making Div 2 have the same issue."* Some bugs are generational trauma. This neck gap has been passed down from franchise to franchise like a family recipe nobody asked for. Your agent survived a bioweapon pandemic, rebuilt Manhattan, and runs Legendary content solo, but a light breeze on the back of his neck is apparently beyond the scope of modern military technology. Patch the neck. Our agents deserve turtlenecks.
+![SWAT character model with a red X over the gap between helmet and vest, and a green checkmark on the preview thumbnail showing it correct](https://i.redd.it/wolxpo6i593h1.png)
+*Screenshot via [r/thedivisionresurgence](https://www.reddit.com/r/thedivisionresurgence/comments/1tn41h3/devs_can_you_please_fix_the_exposed_neck_the/). MS Paint circles tell a story.*
+
+A man took a screenshot of his SWAT character, pulled up MS Paint, drew a red X over the neck gap, drew a green checkmark on the preview thumbnail that shows it correct, and posted it with the caption *"Devs, can you please fix the exposed neck? The people making Div 2 have the same issue."* This is forensic-level dad energy. He could have just complained. Instead he made a diagram. The man has a folder somewhere called "neck evidence" and we respect him for it.
+
+---
+
+## 7. 🕵️ "Is It a Bug? Or They Saw an Opportunity?"
+
+**u/Gullible_Secret8109** · [Original post](https://www.reddit.com/r/thedivisionresurgence/comments/1thnifd/is_it_a_bugg_or_they_saw_an_opportunity/) · May 19
+
+A 470-word conspiracy thesis claiming the vendor wasn't broken at all. It was a deliberate economic experiment to see if players were desperate enough to buy Phoenix Credits to get Sealed Caches to get Encrypted Data to convert into Basic Credits. The author's evidence: the vendor still let you buy, just not sell, so technically the bug should have killed both functions. Therefore, conspiracy.
+
+This is the kind of thread you read at 2 AM with a cold slice of pizza in one hand. It's unhinged. It's compelling. It's almost certainly wrong. The follow-up comments alternate between "you might be onto something" and "you need to log off." Either way, it generated more engagement than the actual patch notes, which is impressive work for a vendor truther.
+
+---
+
+## 8. 📦 "These Augment Crates Have to Be Weighted, Right?"
+
+**u/X_CLOWNEY_X** · [Original post](https://www.reddit.com/r/thedivisionresurgence/comments/1tns80a/these_augment_crates_have_to_be_weighted_right/) · May 26
+
+![Augmentation inventory showing 5 shotgun Tactical Augmentation Modules and 2 of every other weapon type](https://i.redd.it/lzrnxsx2xd3h1.jpeg)
+*Screenshot via [r/thedivisionresurgence](https://www.reddit.com/r/thedivisionresurgence/comments/1tns80a/these_augment_crates_have_to_be_weighted_right/). Five shotgun TAMs. The universe is sending a message.*
+
+> "I really don't want to use shotguns haha."
+
+The inventory shows five shotgun Tactical Augmentation Modules sitting next to exactly two of every other weapon type. The math is so cursed it loops back around to looking intentional. The RNG looked at this man's loadout, looked at his preferences, looked at his hopes and dreams, and said *here are some shotguns*. Sometimes the game knows what you need better than you do. Sometimes the game is just being mean. We'll let you decide which one this is.
+
+---
+
+## 9. 📖 "This Game Should Be Called Reading Simulator"
+
+**u/NoPart7463** · [Original post](https://www.reddit.com/r/thedivisionresurgence/comments/1tnzvbo/this_game_should_be_called_reading_simulator/) · May 26
+
+> "Every damn thing has a description, atp it has become muscle memory to discard anything that doesn't have critical hit chance and damage. And the UI man... sometimes I forget which stuff is placed where."
+
+The most accurate UX review of any looter shooter in the last five years. Every gear piece comes with a paragraph. Every weapon has a description. Every mod has a talent. Every talent has a sub-effect. There is a man at the studio whose entire job is writing flavor text and he is winning. The rest of us are just thumbing past it on the way to "Crit Chance: 12%." Salute to the lore team. Sorry we don't read.
+
+---
+
+## 10. ⏳ "4 Years Down the Drain"
+
+**u/BusinessCultural3831** · [Original post](https://www.reddit.com/r/thedivisionresurgence/comments/1thrm5a/4_years_down_the_drain/) · May 19
+
+> "Cut to the day beta launched, lots of hype and lots of fun. Anyhoo thanks for listening to me rant!"
+
+A genuinely beautiful 28-comment eulogy from someone who played the original 2022 closed beta, watched the game vanish, heard the cancellation rumors, and then watched it come back four years later as a mostly-the-same launch. The whole post lands like a guy at a bar telling you about his ex. It's not really about the game. It's about time. It's about hope. It's about how 2022 was a different era and we were all younger and the vendor worked. We needed this post. We needed to feel things together.
 
 ---
 
 ## Honorable Mentions
 
-- **"Pay to Win in Unexpected Ways"** by u/Die_antwoord (Score 30) - A long, fair breakdown of how a double-barrel-wielding cash player can erase a Heroic DZ subway boss before anyone else gets to start their second magazine. *"Maybe we need to start calling the Dark Zone PvEPvPPvM (money)."*
-- **"So We Are Adding All Cool Sets as Cosmetic Draws?"** by u/ComputerSagtNein (Score 28) - Outrage over gacha-style cosmetic events instead of fixed-price store sets. *"Sets could be added for 10 to 20 bucks to the store. Just as is."* Yes they could. They won't, but they could.
-- **"Vendor Got Tired of Buying From Me"** by u/NoPart7463 (Score 20, Media) - A screenshot of the vendor finally working, then immediately breaking again. Like fixing your kitchen sink and then the toilet explodes. The vendor has had more outages than your buddy's New Year's resolution to hit the gym.
-- **"This Game Should Be Called Reading Simulator"** by u/NoPart7463 (Score 12, Humor) - *"Every damn thing has a description, atp it has become muscle memory to discard anything that doesn't have critical hit chance and damage."* The man has a point. We spend more time reading gear descriptions than we spent reading our kids' report cards. The UX team is presumably busy designing more menus for us to read.
-- **"ULTIMATE BUG LIST (At the Moment)"** by u/LaClown-ua (Score 81) - A community-maintained, lovingly curated breakdown of every active bug, status, and dev priority. The 13th Collectible SHD crate that nobody can reach, the Aegis Performance Enhancer that enhances nothing, the invisible bots. This person is doing QA for free. On a volunteer basis. Out of love. That's either the most beautiful thing in gaming or a cry for help. Either way, the dev team owes them a salary.
+- **"Buyback List Is Full"** by u/NoPart7463 (Score 20, Media, titled "Vendor got tired of buying from me") - The vendor finally working, then immediately throwing up a popup asking permission to clear your buyback list to make room for more of your junk. The vendor tapped out. Not a bug, just a man who has seen enough.
+
+  ![Buyback list is full popup blocking the vendor sell screen](https://i.redd.it/eocqdoebte2h1.jpeg)
+  *Screenshot via u/NoPart7463.*
+
+- **"Bro Is Mocking the Grim Reaper"** by u/Whole_Entrepreneur23 (Score 1, Humor) - A player taunting a Hunter boss like he's not currently down to 8% armor. We don't have the screenshot but we don't need one. We've all been this guy. We've all paid for it.
+
+- **"Pay to Win in Unexpected Ways"** by u/Die_antwoord (Score 30) - A fair breakdown of how double-barrel shotgun mains erase Heroic DZ bosses before anyone else can fire a second magazine. *"Maybe we need to start calling the Dark Zone PvEPvPPvM (money)."* The acronym is funnier than it has any right to be.
+
+- **"ULTIMATE BUG LIST"** by u/LaClown-ua (Score 81) - A community-maintained breakdown of every active bug, status, and dev priority. Free labor, professionally formatted, deserves a clan tag and a paycheck.
+
+- **"NYC Vertical Mode"** by u/FenoXM (Score 17, Humor) - *"Game suddenly went vertical for me but funny enough I can still play inside the border and I just finish nest run and it work."* The game turned 90 degrees and he completed the nest anyway. Adapt or die. He adapted.
 
 ---
 
 ## What This Means
 
-The pendulum swung. The vendor works again. The 500K compensation landed. Items stopped disappearing from inventory, which is a low bar, but in 2026 we're celebrating low bars like they're championship trophies. The community went from "I'm uninstalling" on May 19 to "they did it" by May 20. That's a five-day turnaround on what could have been a death spiral, and honestly? Respect. Most of us can't even get our oil changed that fast.
+Two weeks ago this community was writing eulogies. This week it's writing punchlines. That's a real turn. The dev team came back with 500K credits, fixed the vendor, patched the inventory loss bug, and earned themselves a little goodwill in the process. The Tactical Augmentation claim is still busted, Outpost Annihilation still doesn't progress, and the Strawberry Milkshake LMG is still a sad pile of Anarchy ticks. But the energy in the subreddit is back to "I love this dumb game" and that matters more than any patch note.
 
-But the work isn't done. The Tactical Augmentation claim is still broken, Outpost Annihilation is still bugged (it's been bugged so long it should qualify for a pension), the Strawberry Milkshake LMG is still doing the damage equivalent of throwing cotton balls at a brick wall, and Bulwarks are still ruining everyone's afternoon in the Dark Zone like it's their actual job. Phase 2 has good bones underneath all the duct tape. Keep your inventory screenshotted, keep your expectations at the same altitude as your knees, and keep your loadout optimized so you're ready when the next patch drops and breaks two new things while fixing one.
+We'll be back next week with more. Until then, keep your inventory screenshotted, keep your jokes ready, and tip the NYC base janitor.
 
-Want to make sure your build is pulling its weight while the meta shifts? Check out our [build guides](/builds/), our [PC emulator head-to-head](/guides/division-resurgence-pc-emulator-comparison/), and our [error code reference](/guides/division-resurgence-error-codes/) for the next time the game decides to throw a NETWORK_FAILURE at you mid-extraction.
+Want to make sure your build keeps up with the Phase 2 meta shifts? Check out our [build guides](/builds/), the [PC emulator head-to-head](/guides/division-resurgence-pc-emulator-comparison/) if you're still on Mac, and our [error code reference](/guides/division-resurgence-error-codes/) for the next time the game decides to throw NETWORK_FAILURE at you mid-extraction.
 
 ### Share the Chaos
 
-Share this so your clan knows what they slept through, so the NYC base janitor knows we see him, and so your wife understands why you were laughing at your phone at midnight instead of sleeping like a normal person.
+Send this to the clan member who quit last week. They need to know what they're missing.
+
+---
+
+## Image Credits
+
+All screenshots in this article are credited inline to their original Reddit authors and link back to the source thread. Images are used for community commentary under fair use. If you're the original creator and want a takedown or different credit, reach out and we'll fix it same-day.
 
 ---
 
@@ -122,10 +174,14 @@ Share this so your clan knows what they slept through, so the NYC base janitor k
 - [Game Update Patch Notes - r/thedivisionresurgence](https://www.reddit.com/r/thedivisionresurgence/comments/1tijpxo/game_update_patch_notes/)
 - [Item Disappearing Fix Update - r/thedivisionresurgence](https://www.reddit.com/r/thedivisionresurgence/comments/1tjto41/item_disappearing_fix_update/)
 - [Somebody Passed Out in Main HQ - u/Bruce_wayne____](https://www.reddit.com/r/thedivisionresurgence/comments/1th6iwh/somebody_passed_out_in_main_hq_waiting_for_fixes/)
+- [They Did It - u/Vanitas_Vanitatum73](https://www.reddit.com/r/thedivisionresurgence/comments/1timuxi/they_did_it/)
 - [NYC Base Janitor Deserves Hazard Pay - u/JA_Guyyy](https://www.reddit.com/r/thedivisionresurgence/comments/1tmnffz/nyc_base_janitor_deserves_hazard_pay_at_this_point/)
+- [Why Are They Offering Me So Much for My Old Gun - u/Recycled_Michael](https://www.reddit.com/r/thedivisionresurgence/comments/1the6bx/why_are_they_offering_me_so_much_for_my_old_gun/)
+- [Devs Can You Please Fix the Exposed Neck - u/MuffDivers2_](https://www.reddit.com/r/thedivisionresurgence/comments/1tn41h3/devs_can_you_please_fix_the_exposed_neck_the/)
+- [Is It a Bug or They Saw an Opportunity - u/Gullible_Secret8109](https://www.reddit.com/r/thedivisionresurgence/comments/1thnifd/is_it_a_bugg_or_they_saw_an_opportunity/)
+- [These Augment Crates Have to Be Weighted - u/X_CLOWNEY_X](https://www.reddit.com/r/thedivisionresurgence/comments/1tns80a/these_augment_crates_have_to_be_weighted_right/)
+- [Reading Simulator - u/NoPart7463](https://www.reddit.com/r/thedivisionresurgence/comments/1tnzvbo/this_game_should_be_called_reading_simulator/)
 - [4 Years Down the Drain - u/BusinessCultural3831](https://www.reddit.com/r/thedivisionresurgence/comments/1thrm5a/4_years_down_the_drain/)
-- [Heroic Nest Drop Rate - u/LackadaisicalFred](https://www.reddit.com/r/thedivisionresurgence/comments/1tn60i1/am_i_crazy_or_did_they_shadow_nerfed_the_heroic/)
-- [Nerf Bulwarks Now - u/Trap_Jumpinn](https://www.reddit.com/r/thedivisionresurgence/comments/1tlfxv7/nerf_bulwarks_now/)
-- [What's the Point of Going Rogue - u/RogueBlue2164](https://www.reddit.com/r/thedivisionresurgence/comments/1tl6duu/what_the_point_of_going_rouge_in_the_dz/)
-- [50K Basic Credits Is a Joke - u/Aggressive-Onion-781](https://www.reddit.com/r/thedivisionresurgence/comments/1thvs8k/50k_basic_credits_is_a_joke/)
+- [Vendor Got Tired of Buying From Me - u/NoPart7463](https://www.reddit.com/r/thedivisionresurgence/comments/1tj8azi/vendor_got_tired_of_buying_from_me/)
 - [Ultimate Bug List - u/LaClown-ua](https://www.reddit.com/r/thedivisionresurgence/comments/1thnk8e/ultimate_bug_list_at_the_moment/)
+- [The Division Vertical - u/FenoXM](https://www.reddit.com/r/thedivisionresurgence/comments/1tmi6uz/the_division_vertical/)
