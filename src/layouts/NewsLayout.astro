@@ -61,7 +61,7 @@ const breadcrumbItems = [
       <h1 class="heading-accent">{title}</h1>
 
       <div class="article-meta">
-        <span>By {author}</span>
+        <span>By <a href={`/author/${author.toLowerCase().replace(/\s+/g, '-')}/`} style="color: var(--accent); text-decoration: none;">{author}</a></span>
         <span>·</span>
         <time datetime={publishDate.toISOString()}><strong>Last updated:</strong> {formattedDate}</time>
       </div>

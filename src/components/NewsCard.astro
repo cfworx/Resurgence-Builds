@@ -13,7 +13,7 @@ const formattedDate = publishDate.toLocaleDateString('en-US', { month: 'short', 
 ---
 
 <article class="card" style="position: relative;">
-  <p class="card__meta">{formattedDate} · {author}</p>
+  <p class="card__meta">{formattedDate} · <a href={`/author/${author.toLowerCase().replace(/\s+/g, '-')}/`} class="card__author-link">{author}</a></p>
   <p class="card__title">
     <a href={href} class="card__link">{title}</a>
   </p>
@@ -35,5 +35,14 @@ const formattedDate = publishDate.toLocaleDateString('en-US', { month: 'short', 
     position: absolute;
     inset: 0;
     z-index: 1;
+  }
+  .card__author-link {
+    color: var(--accent);
+    text-decoration: none;
+    position: relative;
+    z-index: 2;
+  }
+  .card__author-link:hover {
+    text-decoration: underline;
   }
 </style>

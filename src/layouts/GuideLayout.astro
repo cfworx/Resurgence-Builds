@@ -100,7 +100,7 @@ const howToLd = howTo ? {
 
     <div class="article-meta">
       <span class="tag">{category}</span>
-      <span>By {author}</span>
+      <span>By <a href={`/author/${author.toLowerCase().replace(/\s+/g, '-')}/`} style="color: var(--accent); text-decoration: none;">{author}</a></span>
       <span>·</span>
       <time datetime={lastUpdated.toISOString()}><strong>Last updated:</strong> {formattedDate}</time>
     </div>
