@@ -32,7 +32,11 @@ Last time we checked in, the subreddit was a tire fire. This time? The dev team 
 ![NPC lying motionless on the floor of the Base of Operations while two agents stand nearby](https://i.redd.it/gdxfc2u0nz1h1.jpeg)
 *Screenshot via [r/thedivisionresurgence](https://www.reddit.com/r/thedivisionresurgence/comments/1th6iwh/somebody_passed_out_in_main_hq_waiting_for_fixes/). HQ medic stats: 72127/72127 HP, 0/0 will to live.*
 
-The single best post of the entire window, and the caption was just "Sad day for deceased agent." That's it. That's the post. Six words and 190 upvotes. The NPC is sprawled out cold in the middle of the Base of Operations like he tripped over a SHD beacon and decided this is where his story ends. The community looked at this man and saw themselves at hour seven of a vendor outage. Pour one out. He died doing what he loved, which was waiting.
+The single best post of the entire window, and the caption was just "Sad day for deceased agent." That's it. That's the post. Six words.
+
+The NPC is sprawled out cold in the middle of the Base of Operations like he tripped over a SHD beacon and decided this is where his story ends. The community looked at this man and saw themselves at hour seven of a vendor outage.
+
+Pour one out. He died doing what he loved, which was waiting.
 
 ---
 
@@ -40,7 +44,14 @@ The single best post of the entire window, and the caption was just "Sad day for
 
 **u/Vanitas_Vanitatum73** · [Original post](https://www.reddit.com/r/thedivisionresurgence/comments/1timuxi/they_did_it/) · May 20
 
-A three-word post celebrating that the vendor was finally working again. *"Happy to report that the vendor is working as intended."* That's the whole text. No screenshots, no patch note breakdown, just a man so overwhelmed by being able to sell loot that he sounded like he was reporting from a war zone. This is what trauma recovery looks like in 2026. We salute you, agent.
+![In-game vendor screen showing items available for sale, confirming the vendor is working again after the May 20 patch](https://preview.redd.it/they-did-it-v0-i1415zzbva2h1.jpeg?auto=webp&s=528f0a2622cc99ec15e36dd8219398a14ed1132e)
+*Screenshot via [r/thedivisionresurgence](https://www.reddit.com/r/thedivisionresurgence/comments/1timuxi/they_did_it/). The vendor lives.*
+
+*"Happy to report that the vendor is working as intended."*
+
+That's the whole text. No screenshots. No patch note breakdown. Just a man so overwhelmed by being able to sell loot that he sounded like he was reporting from a war zone.
+
+This is what trauma recovery looks like in 2026. We salute you, agent.
 
 ---
 
@@ -53,7 +64,11 @@ A three-word post celebrating that the vendor was finally working again. *"Happy
 
 > "Can agents please stop throwing grenades inside the NYC Base of Operations. My man didn't survive a pandemic just to clean up after our SHD nonsense."
 
-This poor guy is sweeping the floor while two agents are dancing five feet away from him like it's prom night. He has been mopping the same patch of concrete since the game launched. He has watched a thousand grenades hit the wall behind him. He has seen Captain Miller yell at fifteen different agents this morning. He just wants to go home. Free this man. Give him a side mission. Let him retire.
+This poor guy is sweeping the floor while two agents are dancing five feet away from him like it's prom night.
+
+He has been mopping the same patch of concrete since the game launched. He has watched a thousand grenades hit the wall behind him. He has seen Captain Miller yell at fifteen different agents this morning. He just wants to go home.
+
+Free this man. Give him a side mission. Let him retire.
 
 ---
 
@@ -64,7 +79,11 @@ This poor guy is sweeping the floor while two agents are dancing five feet away 
 ![In-game System mail dated 2026/05/20 confirming a compensation package of 500,000 Basic Credits and 750 Phoenix Credits](https://i.redd.it/i1415zzbva2h1.jpeg)
 *The compensation mail in-game, timestamped May 20, 2026. Sender: System. Subject: please come back.*
 
-Five days after the original 50K credit gesture got dunked on so hard it generated its own gravity, the dev team came back with **500,000 Basic Credits and 750 Phoenix Credits** for everyone. A clean 10x on the apology. The vendor selling bug got patched, the Strawberry Milkshake Anarchy talent description got fixed, the Classified Ops Pass started actually delivering passes. Even the Lone Wolf reset schedule got sorted out. The dev team read the room, did the math, and showed up. We see you. Now please fix the Tactical Augmentation claim before we have to write another one of these.
+Five days after the original 50K credit gesture got dunked on so hard it generated its own gravity, the dev team came back with **500,000 Basic Credits and 750 Phoenix Credits** for everyone. A clean 10x on the apology.
+
+The vendor selling bug got patched. The Strawberry Milkshake Anarchy talent description got fixed. The Classified Ops Pass started actually delivering passes. Even the Lone Wolf reset schedule got sorted out.
+
+The dev team read the room, did the math, and showed up. We see you. Now please fix the Tactical Augmentation claim before we have to write another one of these.
 
 ---
 
@@ -75,7 +94,11 @@ Five days after the original 50K credit gesture got dunked on so hard it generat
 ![Vendor sell screen showing a 1800 credit base price with a 107,770 credit bonus circled in red](https://i.redd.it/h5typ2gsd12h1.jpeg)
 *Screenshot via [r/thedivisionresurgence](https://www.reddit.com/r/thedivisionresurgence/comments/1the6bx/why_are_they_offering_me_so_much_for_my_old_gun/). Vendor: 1,800 credits. Bonus: 107,770 credits. Math: not mathing.*
 
-Listed sell price: 1,800 credits. Bonus: 107,770 credits. The vendor came back from his week off so guilty about being broken that he started overpaying by 60x just to make things right. This is the most relatable bug in the game. We've all had a coworker come back from vacation and start aggressively volunteering for things. Nobody on the subreddit reported it. Nobody filed a ticket. We all just took the money and walked away whistling.
+Listed sell price: 1,800 credits. Bonus: 107,770 credits.
+
+The vendor came back from his week off so guilty about being broken that he started overpaying by 60x just to make things right. We've all had a coworker come back from vacation and start aggressively volunteering for things. This is that energy.
+
+Nobody on the subreddit reported it. Nobody filed a ticket. We all just took the money and walked away whistling.
 
 ---
 
@@ -86,7 +109,11 @@ Listed sell price: 1,800 credits. Bonus: 107,770 credits. The vendor came back f
 ![SWAT character model with a red X over the gap between helmet and vest, and a green checkmark on the preview thumbnail showing it correct](https://i.redd.it/wolxpo6i593h1.png)
 *Screenshot via [r/thedivisionresurgence](https://www.reddit.com/r/thedivisionresurgence/comments/1tn41h3/devs_can_you_please_fix_the_exposed_neck_the/). MS Paint circles tell a story.*
 
-A man took a screenshot of his SWAT character, pulled up MS Paint, drew a red X over the neck gap, drew a green checkmark on the preview thumbnail that shows it correct, and posted it with the caption *"Devs, can you please fix the exposed neck? The people making Div 2 have the same issue."* This is forensic-level dad energy. He could have just complained. Instead he made a diagram. The man has a folder somewhere called "neck evidence" and we respect him for it.
+A man took a screenshot of his SWAT character, pulled up MS Paint, drew a red X over the neck gap, drew a green checkmark on the preview thumbnail that shows it correct, and posted it with the caption *"Devs, can you please fix the exposed neck? The people making Div 2 have the same issue."*
+
+This is forensic-level dad energy. He could have just complained. Instead he made a diagram.
+
+The man has a folder somewhere called "neck evidence" and we respect him for it.
 
 ---
 
@@ -94,9 +121,16 @@ A man took a screenshot of his SWAT character, pulled up MS Paint, drew a red X 
 
 **u/Gullible_Secret8109** · [Original post](https://www.reddit.com/r/thedivisionresurgence/comments/1thnifd/is_it_a_bugg_or_they_saw_an_opportunity/) · May 19
 
-A 470-word conspiracy thesis claiming the vendor wasn't broken at all. It was a deliberate economic experiment to see if players were desperate enough to buy Phoenix Credits to get Sealed Caches to get Encrypted Data to convert into Basic Credits. The author's evidence: the vendor still let you buy, just not sell, so technically the bug should have killed both functions. Therefore, conspiracy.
+![Reddit post screenshot showing the vendor conspiracy theory with the subreddit community icon](https://preview.redd.it/is-it-a-bugg-or-they-saw-an-opportunity-v0-vab37szbl32h1.png?auto=webp&s=dcb3ecb014670cb084a9bccb2cd50c6fd88d05d1)
+*Screenshot via [r/thedivisionresurgence](https://www.reddit.com/r/thedivisionresurgence/comments/1thnifd/is_it_a_bugg_or_they_saw_an_opportunity/). The evidence board.*
 
-This is the kind of thread you read at 2 AM with a cold slice of pizza in one hand. It's unhinged. It's compelling. It's almost certainly wrong. The follow-up comments alternate between "you might be onto something" and "you need to log off." Either way, it generated more engagement than the actual patch notes, which is impressive work for a vendor truther.
+A 470-word conspiracy thesis claiming the vendor wasn't broken at all. It was a deliberate economic experiment to see if players were desperate enough to buy Phoenix Credits to get Sealed Caches to get Encrypted Data to convert into Basic Credits.
+
+The author's evidence: the vendor still let you *buy*, just not *sell*. Technically the bug should have killed both functions. Therefore, conspiracy.
+
+This is the kind of thread you read at 2 AM with a cold slice of pizza in one hand. It's unhinged. It's compelling. It's almost certainly wrong.
+
+The follow-up comments alternate between "you might be onto something" and "you need to log off." Either way, it generated more engagement than the actual patch notes, which is impressive work for a vendor truther.
 
 ---
 
@@ -109,7 +143,11 @@ This is the kind of thread you read at 2 AM with a cold slice of pizza in one ha
 
 > "I really don't want to use shotguns haha."
 
-The inventory shows five shotgun Tactical Augmentation Modules sitting next to exactly two of every other weapon type. The math is so cursed it loops back around to looking intentional. The RNG looked at this man's loadout, looked at his preferences, looked at his hopes and dreams, and said *here are some shotguns*. Sometimes the game knows what you need better than you do. Sometimes the game is just being mean. We'll let you decide which one this is.
+The inventory shows five shotgun Tactical Augmentation Modules sitting next to exactly two of every other weapon type. The math is so cursed it loops back around to looking intentional.
+
+The RNG looked at this man's loadout, looked at his preferences, looked at his hopes and dreams, and said *here are some shotguns*.
+
+Sometimes the game knows what you need better than you do. Sometimes the game is just being mean.
 
 ---
 
@@ -117,9 +155,16 @@ The inventory shows five shotgun Tactical Augmentation Modules sitting next to e
 
 **u/NoPart7463** · [Original post](https://www.reddit.com/r/thedivisionresurgence/comments/1tnzvbo/this_game_should_be_called_reading_simulator/) · May 26
 
+![Screenshot of Division Resurgence gear stats screen showing dense walls of text and stat descriptions](https://preview.redd.it/this-game-should-be-called-reading-simulator-v0-rxl3ufujrf3h1.jpeg?auto=webp&s=df14d9fbc55f5df158e4c6815d9ad5d003ffb5c6)
+*Screenshot via [r/thedivisionresurgence](https://www.reddit.com/r/thedivisionresurgence/comments/1tnzvbo/this_game_should_be_called_reading_simulator/). Required reading: everything.*
+
 > "Every damn thing has a description, atp it has become muscle memory to discard anything that doesn't have critical hit chance and damage. And the UI man... sometimes I forget which stuff is placed where."
 
-The most accurate UX review of any looter shooter in the last five years. Every gear piece comes with a paragraph. Every weapon has a description. Every mod has a talent. Every talent has a sub-effect. There is a man at the studio whose entire job is writing flavor text and he is winning. The rest of us are just thumbing past it on the way to "Crit Chance: 12%." Salute to the lore team. Sorry we don't read.
+The most accurate UX review of any looter shooter in the last five years.
+
+Every gear piece comes with a paragraph. Every weapon has a description. Every mod has a talent. Every talent has a sub-effect. There is a man at the studio whose entire job is writing flavor text and he is winning.
+
+The rest of us are just thumbing past it on the way to "Crit Chance: 12%." Salute to the lore team. Sorry we don't read.
 
 ---
 
@@ -129,24 +174,28 @@ The most accurate UX review of any looter shooter in the last five years. Every 
 
 > "Cut to the day beta launched, lots of hype and lots of fun. Anyhoo thanks for listening to me rant!"
 
-A genuinely beautiful 28-comment eulogy from someone who played the original 2022 closed beta, watched the game vanish, heard the cancellation rumors, and then watched it come back four years later as a mostly-the-same launch. The whole post lands like a guy at a bar telling you about his ex. It's not really about the game. It's about time. It's about hope. It's about how 2022 was a different era and we were all younger and the vendor worked. We needed this post. We needed to feel things together.
+A genuinely beautiful 28-comment eulogy from someone who played the original 2022 closed beta, watched the game vanish, heard the cancellation rumors, and then watched it come back four years later as a mostly-the-same launch.
+
+The whole post lands like a guy at a bar telling you about his ex. It's not really about the game. It's about time. It's about hope. It's about how 2022 was a different era and we were all younger and the vendor worked.
+
+We needed this post. We needed to feel things together.
 
 ---
 
 ## Honorable Mentions
 
-- **"Buyback List Is Full"** by u/NoPart7463 (Score 20, Media, titled "Vendor got tired of buying from me") - The vendor finally working, then immediately throwing up a popup asking permission to clear your buyback list to make room for more of your junk. The vendor tapped out. Not a bug, just a man who has seen enough.
+- **"Buyback List Is Full"** by u/NoPart7463 (titled "Vendor got tired of buying from me") - The vendor finally working, then immediately throwing up a popup asking permission to clear your buyback list to make room for more of your junk. The vendor tapped out. Not a bug, just a man who has seen enough.
 
   ![Buyback list is full popup blocking the vendor sell screen](https://i.redd.it/eocqdoebte2h1.jpeg)
   *Screenshot via u/NoPart7463.*
 
-- **"Bro Is Mocking the Grim Reaper"** by u/Whole_Entrepreneur23 (Score 1, Humor) - A player taunting a Hunter boss like he's not currently down to 8% armor. We don't have the screenshot but we don't need one. We've all been this guy. We've all paid for it.
+- **"Bro Is Mocking the Grim Reaper"** by u/Whole_Entrepreneur23 - A player taunting a Hunter boss like he's not currently down to 8% armor. We don't have the screenshot but we don't need one. We've all been this guy. We've all paid for it.
 
-- **"Pay to Win in Unexpected Ways"** by u/Die_antwoord (Score 30) - A fair breakdown of how double-barrel shotgun mains erase Heroic DZ bosses before anyone else can fire a second magazine. *"Maybe we need to start calling the Dark Zone PvEPvPPvM (money)."* The acronym is funnier than it has any right to be.
+- **"Pay to Win in Unexpected Ways"** by u/Die_antwoord - A fair breakdown of how double-barrel shotgun mains erase Heroic DZ bosses before anyone else can fire a second magazine. *"Maybe we need to start calling the Dark Zone PvEPvPPvM (money)."* The acronym is funnier than it has any right to be.
 
-- **"ULTIMATE BUG LIST"** by u/LaClown-ua (Score 81) - A community-maintained breakdown of every active bug, status, and dev priority. Free labor, professionally formatted, deserves a clan tag and a paycheck.
+- **"ULTIMATE BUG LIST"** by u/LaClown-ua - A community-maintained breakdown of every active bug, status, and dev priority. Free labor, professionally formatted, deserves a clan tag and a paycheck.
 
-- **"NYC Vertical Mode"** by u/FenoXM (Score 17, Humor) - *"Game suddenly went vertical for me but funny enough I can still play inside the border and I just finish nest run and it work."* The game turned 90 degrees and he completed the nest anyway. Adapt or die. He adapted.
+- **"NYC Vertical Mode"** by u/FenoXM - *"Game suddenly went vertical for me but funny enough I can still play inside the border and I just finish nest run and it work."* The game turned 90 degrees and he completed the nest anyway. Adapt or die. He adapted.
 
 ---
 
