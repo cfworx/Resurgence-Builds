@@ -4,6 +4,7 @@ import Breadcrumbs from '../components/Breadcrumbs.astro';
 import SectionTag from '../components/SectionTag.astro';
 import AdSenseUnit from '../components/AdSenseUnit.astro';
 import YouTubeEmbed from '../components/YouTubeEmbed.astro';
+import GiscusComments from '../components/GiscusComments.astro';
 import { getAuthorUrl } from '../utils/author';
 export interface Props {
   title: string;
@@ -209,6 +210,8 @@ const howToLd = howTo ? {
           </ul>
         </section>
       )}
+
+      <GiscusComments />
     </article>
   </div>
 </BaseLayout>

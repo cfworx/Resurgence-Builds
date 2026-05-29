@@ -19,7 +19,7 @@ faqs:
     answer: "Technically yes. Realistically, you are going to look at Crit Chance, Crit Damage, and maybe the color of the icon, and that is fine. The lore team wrote it all anyway and they know we skip it. They are used to the pain."
 ---
 
-This week on r/thedivisionresurgence: a Cleaner defied gravity and moved to the ceiling, the NYC janitor is still sweeping and will outlive us all, the vendor came back from his mental health leave and immediately started overpaying by 60x, a man filed the most professional cosmetic bug report in gaming history using MS Paint, and someone realized the game has more required reading than a college syllabus. The subreddit went from doomposting to shitposting in record time, and honestly? The shitposts are better content than most gaming outlets are putting out right now. Here are the 10 best posts from the last 10 days.
+This week on r/thedivisionresurgence: a Cleaner defied gravity and moved to the ceiling, the NYC janitor is still sweeping and will outlive us all, the vendor came back from his mental health leave and immediately started overpaying by 60x, a man filed the most professional cosmetic bug report in gaming history using MS Paint, and someone realized the game has more required reading than a college syllabus. The subreddit went from doomposting to roast mode in record time, and honestly? The memes are better content than most gaming outlets are putting out right now. Here are the 10 best posts from the last 10 days.
 
 ---
 
@@ -142,13 +142,6 @@ The whole post lands like a guy at a bar telling you about his ex. It's not real
 
 We needed this post.
 
----
-
-## Honorable Mention
-
-**"Lore Team? Lore Team."** — Every gear piece comes with a paragraph. Every mod has a talent. Every talent has a sub-effect. We're all just thumbing past it on the way to "Crit Chance: 12%." Salute to the lore team. Sorry we don't read.
-
----
 
 ## What This Means
 
@@ -162,15 +155,13 @@ Want to make sure your build keeps up with the Phase 2 meta shifts? Check out ou
 ---
 
 **Sources:**
-- [Game Update Patch Notes - r/thedivisionresurgence](https://www.reddit.com/r/thedivisionresurgence/comments/1tijpxo/game_update_patch_notes/)
-- [Item Disappearing Fix Update - r/thedivisionresurgence](https://www.reddit.com/r/thedivisionresurgence/comments/1tjto41/item_disappearing_fix_update/)
 - [Somebody Passed Out in Main HQ - u/Bruce_wayne____](https://www.reddit.com/r/thedivisionresurgence/comments/1th6iwh/somebody_passed_out_in_main_hq_waiting_for_fixes/)
-- [They Did It - u/Vanitas_Vanitatum73](https://www.reddit.com/r/thedivisionresurgence/comments/1timuxi/they_did_it/)
+- [Spiderman Resurgence - u/craig_cloud](https://www.reddit.com/r/thedivisionresurgence/comments/1tpy3xu/spiderman_resurgence/)
 - [NYC Base Janitor Deserves Hazard Pay - u/JA_Guyyy](https://www.reddit.com/r/thedivisionresurgence/comments/1tmnffz/nyc_base_janitor_deserves_hazard_pay_at_this_point/)
+- [Vendor Got Tired of Buying From Me - u/NoPart7463](https://www.reddit.com/r/thedivisionresurgence/comments/1tj8azi/vendor_got_tired_of_buying_from_me/)
 - [Why Are They Offering Me So Much for My Old Gun - u/Recycled_Michael](https://www.reddit.com/r/thedivisionresurgence/comments/1the6bx/why_are_they_offering_me_so_much_for_my_old_gun/)
 - [Devs Can You Please Fix the Exposed Neck - u/MuffDivers2_](https://www.reddit.com/r/thedivisionresurgence/comments/1tn41h3/devs_can_you_please_fix_the_exposed_neck_the/)
 - [Is It a Bug or They Saw an Opportunity - u/Gullible_Secret8109](https://www.reddit.com/r/thedivisionresurgence/comments/1thnifd/is_it_a_bugg_or_they_saw_an_opportunity/)
 - [These Augment Crates Have to Be Weighted - u/X_CLOWNEY_X](https://www.reddit.com/r/thedivisionresurgence/comments/1tns80a/these_augment_crates_have_to_be_weighted_right/)
 - [Reading Simulator - u/NoPart7463](https://www.reddit.com/r/thedivisionresurgence/comments/1tnzvbo/this_game_should_be_called_reading_simulator/)
 - [4 Years Down the Drain - u/BusinessCultural3831](https://www.reddit.com/r/thedivisionresurgence/comments/1thrm5a/4_years_down_the_drain/)
-- [Vendor Got Tired of Buying From Me - u/NoPart7463](https://www.reddit.com/r/thedivisionresurgence/comments/1tj8azi/vendor_got_tired_of_buying_from_me/)
