@@ -1,9 +1,9 @@
 ---
-title: "Patch 1.1.2.2 Notes — GM Access Fix, Audio Crash Fix, and What's Actually Working"
+title: "Patch 1.1.2.2 Notes — Players Got GM Powers for 20 Minutes and Bans Followed"
 version: "1.1.2.2"
 patchDate: "2026-05-29"
 author: "RapidF5"
-summary: "Division Resurgence Patch 1.1.2.2 deployed May 29, 2026. Audio crash fix, guest account fix, DZ Tactical Augmentation reward fix, roaming Network Failure fix, plus the full story on the GM permissions exposure and what happened next."
+summary: "Division Resurgence Patch 1.1.2.2 deployed May 29, 2026 with audio crash, guest account, DZ Tactical Augmentation, and Network Failure fixes. Then the servers came back up and players discovered they had GM powers. Servers went down again. Bans followed. Here's the full timeline."
 featuredImage: "/images/patch-notes/division-resurgence-patch-1-1-2-2-gm-bug-hero.jpg"
 imageAlt: "Division Resurgence SHD agent wearing a Game Master hat in a safehouse, referencing the Patch 1.1.2.2 GM permissions bug on May 29, 2026"
 shareTitle: "Warn your squad"
@@ -13,7 +13,7 @@ faqs:
   - question: "What is Division Resurgence Patch 1.1.2.2?"
     answer: "Patch 1.1.2.2 is the May 29, 2026 update that included both a server maintenance window and a client update through the Play Store and App Store. It fixed an audio crash bug, a guest account login bug, the missing Dark Zone Shotgun Tactical Augmentation reward, the roaming Network Failure popup, and several smaller issues."
   - question: "What was the GM permissions bug in Division Resurgence on May 29, 2026?"
-    answer: "During the maintenance window for Patch 1.1.2.2, a backend developer tool used for testing was briefly accessible to some players who were already in-game when servers went down. Ubisoft community moderator Ubi_Ticksy confirmed on the official Discord that it was an accidental misconfiguration during deployment. Servers were taken down quickly to lock it back up, and players who used the GM interface are reportedly being banned."
+    answer: "After Patch 1.1.2.2 deployed and servers came back online, players discovered they had access to in-game GM (Game Master) developer tools that were accidentally left enabled. The dev team had to take servers down a second time to lock it back up. Ubisoft community moderator Ubi_Ticksy confirmed on the official Discord that it was an accidental misconfiguration. Players who used the GM interface are reportedly being banned."
   - question: "Is the vendor still broken after the May 29 patch?"
     answer: "A small number of players reported the vendor showing only locked items in the sell window right after the patch. The community fix is to fully close the game, clear cache if your platform allows, and restart. That has resolved it for most affected players."
   - question: "Did the patch fix Outpost Annihilation?"
@@ -24,13 +24,13 @@ faqs:
     answer: "The official Patch 1.1.2.2 notes are posted on the Ubisoft Mobile Helpshift support portal and mirrored on r/thedivisionresurgence."
 ---
 
-A surprise maintenance window dropped on May 29, 2026 and dragged Patch **1.1.2.2** into the wild with it. Servers went down without much warning, came back up a few hours later with a short list of fixes, a client update through the Play Store and App Store, and a much longer side story about a backend access issue that had the community talking. Here's the clean breakdown of what shipped, what's still in the queue, and what the dev team is acknowledging.
+A surprise maintenance window dropped on May 29, 2026 and dragged Patch **1.1.2.2** into the wild with it. Servers went down without much warning, came back up with a short list of fixes and a client update through the Play Store and App Store. Then players logged back in and discovered they had access to GM (Game Master) developer commands. Servers went down *again*. Here's the full timeline of what shipped, what broke after it shipped, and what the dev team did about it.
 
 ## TL;DR
 
 - **Patch 1.1.2.2 deployed May 29, 2026** during a server maintenance window. A client update is also rolling out through the Play Store and App Store, so if the game prompts you to update, do it before logging in.
 - Five fixes shipped: audio crash, guest account loss, DZ Tactical Augmentation shotgun reward, roaming Network Failure popup, and a handful of small bugs.
-- A separate **GM permissions issue** was discovered during the maintenance window and the team took servers down quickly to resolve it. Ubisoft community moderator confirmed it was an accidental misconfiguration, not a hack. Players who exploited it are reportedly facing bans.
+- **After the patch went live**, players discovered they had access to GM (Game Master) developer tools that were accidentally left enabled. The team had to **take servers down a second time** to lock it back up. Ubisoft confirmed it was an accidental misconfiguration, not a hack. Players who exploited it are reportedly facing bans.
 - The vendor "can't sell" bug **came back briefly post-patch** for some players. Restarting the game appears to clear it.
 - Outpost Annihilation, the Tactical Augmentation claim from the DZ quest, and a few other long-standing issues are still on the open list.
 
@@ -77,13 +77,13 @@ If you're hitting any of these, contact in-game support directly. The team has b
 
 ---
 
-## About the GM Permissions Issue
+## The GM Permissions Incident — What Actually Happened
 
-You may have seen Reddit threads today flagging that some players reportedly had access to in-game GM (Game Master) commands during the maintenance window. We want to walk through this calmly because the facts matter, and the dev team has actually been transparent about what happened.
+You may have seen Reddit threads today flagging that some players had access to in-game GM (Game Master) commands. Here's the timeline, because the order of events matters and a lot of posts are getting it wrong.
 
 ### What happened
 
-During the deployment of Patch 1.1.2.2, the backend tools that the developers use for testing and troubleshooting were briefly accessible from inside live game sessions. Players who were already logged in when the maintenance started weren't booted, and a small number of them were able to see and interact with the GM interface.
+Patch 1.1.2.2 deployed. Servers came back online. Players logged in and started playing on the new build. Then a small number of players noticed they could see and interact with GM developer tools — the backend interface that the dev team uses for testing and troubleshooting. These tools were accidentally left enabled when the patch went live. The dev team caught it, pulled the servers down a **second time**, and locked the GM tools back out. So the timeline is: maintenance → patch deployed → servers up → GM access discovered → servers down again → GM access removed → servers back up for good.
 
 ### How we know
 
@@ -95,7 +95,7 @@ Community moderator **Ubi_Ticksy** confirmed it directly on the official Discord
 ![Discord screenshot showing Ubisoft moderator Ubi_Ticksy explaining the GM permissions exposure was an easy mistake during the Division Resurgence Patch 1.1.2.2 deployment](https://preview.redd.it/s4bj7xita44h1.jpeg)
 *The official line: it was an accidental misconfiguration during deployment, not a hack or a leak. Same Discord thread.*
 
-So this is on the record from Ubisoft itself: it was an accidental dev tool exposure during the deploy, the team caught it, and they pulled servers down to lock it back up. That's not great, but it's also not the apocalypse some posts are making it out to be. Live service deploys with backend tooling are one of the hardest things to get right, and even big studios trip on them. The fact that they noticed quickly and announced it quickly is actually how this kind of thing is supposed to be handled.
+So this is on the record from Ubisoft itself: the GM tools were accidentally left on after the patch went live, the team caught it once players started reporting it, and they pulled servers down a second time to lock it back up. That's not great, but it's also not the apocalypse some posts are making it out to be. Live service deploys with backend tooling are one of the hardest things to get right, and even big studios trip on them. The fact that they noticed quickly, pulled the trigger on a second downtime, and told the community what happened is actually how this kind of thing is supposed to be handled.
 
 ### What about the players who used it?
 
