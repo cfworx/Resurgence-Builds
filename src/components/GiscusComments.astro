@@ -55,15 +55,19 @@
   })();
 </script>
 
-<style>
+<style is:global>
   .giscus-wrapper {
     margin-top: var(--sp-8);
     padding-top: var(--sp-6);
     border-top: 1px solid var(--border);
   }
-  .giscus-wrapper .giscus,
-  .giscus-wrapper .giscus iframe {
+  .giscus-wrapper .giscus {
+    width: 100%;
+  }
+  .giscus-wrapper .giscus > iframe {
     width: 100% !important;
-    min-height: 260px;
+    min-height: 400px !important;
+    border: none;
+    display: block;
   }
 </style>
