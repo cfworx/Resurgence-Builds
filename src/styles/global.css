@@ -877,8 +877,8 @@ tbody tr:hover {
 
 /* --- Prose Content (Markdown body) --- */
 .prose h2 {
-  margin-top: var(--sp-12);
-  margin-bottom: var(--sp-6);
+  margin-top: var(--sp-8);
+  margin-bottom: var(--sp-4);
   padding: var(--sp-4) var(--sp-5);
   background: linear-gradient(135deg, rgba(242, 104, 34, 0.08) 0%, rgba(23, 23, 26, 0.9) 100%);
   border-left: 3px solid var(--accent);
@@ -941,7 +941,7 @@ tbody tr:hover {
   border-left: 3px solid var(--accent);
   background: linear-gradient(135deg, rgba(242, 104, 34, 0.06) 0%, var(--surface) 100%);
   padding: var(--sp-4) var(--sp-5);
-  margin: var(--sp-6) 0;
+  margin: var(--sp-4) 0;
   color: var(--ink-muted);
   font-style: italic;
   border-radius: 0 var(--border-radius) var(--border-radius) 0;
@@ -956,13 +956,13 @@ tbody tr:hover {
   border: none;
   height: 1px;
   background: linear-gradient(90deg, var(--accent) 0%, var(--accent-dim) 20%, var(--border) 50%, transparent 100%);
-  margin: var(--sp-12) 0;
+  margin: var(--sp-6) 0;
   opacity: 0.6;
 }
 
 .prose img {
   border-radius: var(--border-radius);
-  margin: var(--sp-6) 0;
+  margin: var(--sp-4) 0;
 }
 
 /* --- Prose Tables (elevated card style) --- */
@@ -1207,7 +1207,7 @@ tbody tr:hover {
   }
 
   .prose hr {
-    margin: var(--sp-8) 0;
+    margin: var(--sp-4) 0;
   }
 
   .filter-bar {
