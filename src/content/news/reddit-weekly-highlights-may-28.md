@@ -9,16 +9,14 @@ tags: ["Community", "Reddit", "Humor", "Weekly"]
 shareTitle: "Share the chaos"
 shareText: "The 10 funniest Reddit posts from the last 10 days of Division Resurgence. Your clan needs to see this."
 faqs:
-  - question: "What was the compensation players received in late May 2026?"
-    answer: "Every player received 500,000 Basic Credits and 750 Phoenix Credits on May 20, 2026, alongside the patch that fixed the vendor selling bug. This was a 10x increase over the earlier 50,000 credit gesture from the previous week."
-  - question: "Is the vendor bug fixed in Division Resurgence?"
-    answer: "Yes. The May 20 server patch fixed the bug where vendors were not showing items players could sell, the bug where players could accidentally sell locked items, and the Dark Zone vendor text issue. Selling is working again as of late May 2026."
-  - question: "Did the disappearing inventory bug get fixed?"
-    answer: "Yes. A follow-up server patch on May 21, 2026 addressed the index-out-of-bounds issue that caused items to randomly vanish from inventories. If you still see items disappearing, file a support ticket through the in-game button."
-  - question: "Are Heroic nest drop rates actually nerfed?"
-    answer: "There is no official confirmation from the dev team. Community sentiment says fewer gold mods and fewer purple bag drops since the Phase 2 patch, but without published drop tables it is impossible to call it a stealth nerf versus a bad RNG streak."
-  - question: "What is still being worked on after the May 20 patch?"
-    answer: "Per the official notes, still under investigation: iOS gamepad support, the Outpost Annihilation side mission, some Ubisoft Shop purchases not being delivered, the Tactical Augmentation reward from the Dark Zone quest being unclaimable, and weapon proficiency blockers. The 13th Collectible SHD crate is also still unreachable."
+  - question: "Is the vendor working again in Division Resurgence?"
+    answer: "Yes. The vendor is back. He has been through a lot. Please do not sell him 47 grey pistols at once, the man just got back on his feet. Give him a minute."
+  - question: "Why do I keep getting shotgun augments?"
+    answer: "Because the RNG sees your carefully optimized AR build and has chosen violence. There is no fix. There is only acceptance. You are a shotgun main now. Embrace it."
+  - question: "Did the NYC base janitor ever get a break?"
+    answer: "No. He is still sweeping. He has been sweeping since launch. Multiple agents have offered to help. He declined. This is his burden. He will carry it alone."
+  - question: "Should I read the gear descriptions in Division Resurgence?"
+    answer: "Technically yes. Realistically, you are going to look at Crit Chance, Crit Damage, and maybe the color of the icon, and that is fine. The lore team wrote it all anyway and they know we skip it. They are used to the pain."
 ---
 
 Last time we checked in, the subreddit was a tire fire. This time? The dev team showed up with a 500K credit care package, the vendor remembered how to do its job, and the community pivoted from rage to roast mode in about 72 hours. Here are the 10 funniest posts from r/thedivisionresurgence over the last 10 days, ranked by how hard they made us laugh during our lunch break.
@@ -163,11 +161,6 @@ We'll be back next week with more. Until then, keep your inventory screenshotted
 
 Want to make sure your build keeps up with the Phase 2 meta shifts? Check out our [build guides](/builds/), the [PC emulator head-to-head](/guides/division-resurgence-pc-emulator-comparison/) if you're still on Mac, and our [error code reference](/guides/division-resurgence-error-codes/) for the next time the game decides to throw NETWORK_FAILURE at you mid-extraction.
 
----
-
-## Image Credits
-
-All screenshots in this article are credited to their original Reddit authors and link back to the source thread. Images are used for community commentary under fair use. If you're the original creator and want a takedown or different credit, reach out and we'll fix it same-day.
 
 ---
 
