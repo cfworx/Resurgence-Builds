@@ -27,7 +27,7 @@ faqs:
   - question: "Does cover-to-cover movement give damage reduction in Division Resurgence?"
     answer: "Yes. Moving between cover points grants a temporary damage reduction buff that is not shown in the UI. This makes cover-to-cover movement significantly safer than sprinting between positions in open space."
   - question: "How does status effect stacking work in Division Resurgence?"
-    answer: "Status effects follow specific stacking and priority rules. Some effects refresh duration on reapplication, others stack intensity, and certain combinations override each other. Understanding these interactions is critical for Demolitionist and Tech Operator builds."
+    answer: "Status effects follow specific stacking and priority rules. Some effects refresh duration on reapplication, others stack intensity, and certain combinations override each other. If you run Demolitionist or Tech Operator, you need to know how these interact or you'll waste half your kit."
   - question: "Are there hidden aim assist mechanics in Division Resurgence?"
     answer: "Yes. The game applies hidden aim assist adjustments that vary by weapon type, range, and whether you are in ADS or hip-fire. These adjustments are not documented in-game but significantly affect which weapons feel better at different ranges."
 ---
