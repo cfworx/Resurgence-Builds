@@ -20,8 +20,8 @@ function getImageMap() {
   const contentDirs = [
     { dir: 'builds', prefix: '/builds/', field: 'featuredImage' },
     { dir: 'guides', prefix: '/guides/', field: 'featuredImage' },
-    { dir: 'news', prefix: '/news/', field: 'image' },
-    { dir: 'patchNotes', prefix: '/patch-notes/', field: 'image' },
+    { dir: 'news', prefix: '/news/', field: 'featuredImage' },
+    { dir: 'patch-notes', prefix: '/patch-notes/', field: 'featuredImage' },
   ];
 
   for (const { dir, prefix, field } of contentDirs) {

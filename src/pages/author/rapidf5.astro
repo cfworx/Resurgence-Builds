@@ -1,0 +1,323 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PostCard from '../../components/PostCard.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import { getCollection } from 'astro:content';
+
+// Fetch all content collections
+const allBuilds = await getCollection('builds');
+const allGuides = await getCollection('guides');
+const allNews = await getCollection('news');
+
+// Normalize into a unified post format
+interface UnifiedPost {
+  title: string;
+  href: string;
+  date: Date;
+  author: string;
+  description: string;
+  type: 'news' | 'patch-notes' | 'guide' | 'build' | 'alert';
+  tags: string[];
+  featuredImage?: string;
+  imageAlt?: string;
+}
+
+const posts: UnifiedPost[] = [
+  ...allBuilds
+    .filter((post) => (post.data.author || 'RapidF5') === 'RapidF5')
+    .map((post) => ({
+      title: post.data.title,
+      href: `/builds/${post.id}/`,
+      date: post.data.lastUpdated,
+      author: post.data.author || 'RapidF5',
+      description: post.data.description,
+      type: 'build' as const,
+      tags: post.data.tags || [],
+      featuredImage: post.data.featuredImage,
+      imageAlt: post.data.imageAlt,
+    })),
+  ...allGuides
+    .filter((post) => (post.data.author || 'RapidF5') === 'RapidF5')
+    .map((post) => ({
+      title: post.data.title,
+      href: `/guides/${post.id}/`,
+      date: post.data.lastUpdated || post.data.publishDate,
+      author: post.data.author || 'RapidF5',
+      description: post.data.description,
+      type: 'guide' as const,
+      tags: post.data.tags || [],
+      featuredImage: post.data.featuredImage,
+      imageAlt: post.data.imageAlt,
+    })),
+  ...allNews
+    .filter((post) => (post.data.author || 'RapidF5') === 'RapidF5')
+    .map((post) => ({
+      title: post.data.title,
+      href: `/news/${post.id}/`,
+      date: post.data.publishDate,
+      author: post.data.author || 'RapidF5',
+      description: post.data.description,
+      type: (post.data.tags?.includes('Alert') ? 'alert' : 'news') as 'alert' | 'news',
+      tags: post.data.tags || [],
+      featuredImage: post.data.featuredImage,
+      imageAlt: post.data.imageAlt,
+    })),
+];
+
+// Sort by date descending
+posts.sort((a, b) => b.date.getTime() - a.date.getTime());
+
+// Count per type
+const buildCount = posts.filter((p) => p.type === 'build').length;
+const guideCount = posts.filter((p) => p.type === 'guide').length;
+const newsCount = posts.filter((p) => p.type === 'news' || p.type === 'alert').length;
+
+// Breadcrumbs
+const breadcrumbItems = [
+  { name: 'Authors', url: '#' },
+  { name: 'RapidF5', url: '/author/rapidf5/' },
+];
+
+// Person JSON-LD
+const authorSchema = {
+  '@type': 'Person',
+  '@id': 'https://resurgencebuilds.com/author/rapidf5/#person',
+  name: 'RapidF5',
+  url: 'https://resurgencebuilds.com/author/rapidf5/',
+  description: 'Division franchise veteran, founder of Resurgence Builds, and author of in-game tested build guides, weapon databases, and patch analysis for The Division Resurgence.',
+  sameAs: [
+    'https://x.com/ResurgenceBuild',
+    'https://www.youtube.com/@ResurgenceBuilds',
+    'https://www.reddit.com/user/ResurgenceBuilds/',
+  ],
+};
+---
+
+<BaseLayout
+  title="RapidF5 — Author Profile | Resurgence Builds"
+  description="RapidF5 is a Division franchise veteran and founder of Resurgence Builds — publishing in-game tested build guides, weapon databases, and patch analysis for The Division Resurgence."
+  keywords={["rapidf5", "resurgence builds author", "division resurgence builds", "division resurgence guides", "division resurgence content creator"]}
+  breadcrumbs={breadcrumbItems}
+  jsonLd={authorSchema}
+>
+  <article class="container section">
+    <Breadcrumbs items={breadcrumbItems} />
+
+    <!-- Author Header -->
+    <section aria-labelledby="author-heading">
+    <div class="author-header">
+      <div class="author-avatar">
+        <span class="author-avatar__initials">RF</span>
+      </div>
+      <div class="author-info">
+        <h1 id="author-heading" class="author-name heading-accent">RapidF5</h1>
+        <span class="author-role">Founder & Lead Author</span>
+        <p class="author-bio">With months of play time in the original Division and extensive time in The Division 2, RapidF5 brings deep franchise knowledge to every piece of content on this site. A family man who got frustrated with the lack of accurate, non-spammy content for The Division Resurgence, he decided to build something better. Resurgence Builds is the result — a site where every build is tested in-game, every stat is verified, and the information is always current.</p>
+      </div>
+    </div>
+
+    <!-- Stats Row -->
+    <div class="author-stats">
+      <div class="author-stat">
+        <span class="author-stat__value">{buildCount}</span>
+        <span class="author-stat__label">Builds</span>
+      </div>
+      <div class="author-stat">
+        <span class="author-stat__value">{guideCount}</span>
+        <span class="author-stat__label">Guides</span>
+      </div>
+      <div class="author-stat">
+        <span class="author-stat__value">{newsCount}</span>
+        <span class="author-stat__label">News Articles</span>
+      </div>
+    </div>
+
+    <!-- Social Links -->
+    <div class="author-socials">
+      <a href="https://x.com/ResurgenceBuild" target="_blank" rel="noopener noreferrer" class="btn btn--outline" style="display: inline-flex; align-items: center; gap: 8px;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true"><path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z"/></svg>
+        Follow on X
+      </a>
+      <a href="https://www.youtube.com/@ResurgenceBuilds" target="_blank" rel="noopener noreferrer" class="btn btn--outline" style="display: inline-flex; align-items: center; gap: 8px;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true"><path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/></svg>
+        YouTube
+      </a>
+      <a href="https://www.reddit.com/user/ResurgenceBuilds/" target="_blank" rel="noopener noreferrer" class="btn btn--outline" style="display: inline-flex; align-items: center; gap: 8px;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true"><path d="M6.167 8a.83.83 0 0 0-.83.83c0 .459.372.84.83.831a.831.831 0 0 0 0-1.661m1.843 3.647c.315 0 1.403-.038 1.976-.611a.23.23 0 0 0 0-.306.213.213 0 0 0-.306 0c-.353.363-1.126.487-1.67.487-.545 0-1.308-.124-1.671-.487a.213.213 0 0 0-.306 0 .213.213 0 0 0 0 .306c.564.563 1.652.61 1.977.61zm.992-2.807c0 .458.373.83.831.83s.83-.381.83-.83a.831.831 0 0 0-1.66 0z"/><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.828-1.165c-.025 0-.05.002-.075.006A4.7 4.7 0 0 0 8 5.501a4.7 4.7 0 0 0-4.094 1.338 1.07 1.07 0 0 0-.543-.143c-.59 0-1.07.479-1.07 1.068 0 .421.244.786.596.963-.013.124-.02.252-.02.38 0 1.945 2.26 3.522 5.05 3.522s5.048-1.577 5.048-3.521c0-.13-.007-.257-.02-.382.35-.178.592-.54.592-.958 0-.59-.48-1.07-1.07-1.07H12.2z"/></svg>
+        Reddit
+      </a>
+      <a href="https://discord.gg/t6GTR6tpd" target="_blank" rel="noopener noreferrer" class="btn btn--primary" style="display: inline-flex; align-items: center; gap: 8px;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true"><path d="M13.545 2.907a13.2 13.2 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.2 12.2 0 0 0-3.658 0 8 8 0 0 0-.412-.833.05.05 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.04.04 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032q.003.022.021.037a13.3 13.3 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019q.463-.63.818-1.329a.05.05 0 0 0-.01-.059l-.018-.011a9 9 0 0 1-1.248-.595.05.05 0 0 1-.02-.066l.015-.019q.127-.095.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.05.05 0 0 1 .053.007q.121.1.248.195a.05.05 0 0 1-.004.085 8 8 0 0 1-1.249.594.05.05 0 0 0-.03.03.05.05 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.2 13.2 0 0 0 4.001-2.02.05.05 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.03.03 0 0 0-.02-.019m-8.198 7.307c-.789 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612m5.316 0c-.788 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612"/></svg>
+        Join Discord
+      </a>
+    </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- Published Content -->
+    <section aria-labelledby="content-heading">
+    <h2 id="content-heading" class="heading-accent">Published Content</h2>
+    <p style="color:var(--ink-muted);margin-bottom:var(--sp-6);">
+      {posts.length} {posts.length === 1 ? 'article' : 'articles'} published by <strong style="color:var(--accent);">RapidF5</strong>.
+    </p>
+
+    {posts.length > 0 ? (
+      <div class="grid grid--3">
+        {posts.map((post) => (
+          <PostCard
+            title={post.title}
+            href={post.href}
+            date={post.date}
+            author={post.author}
+            description={post.description}
+            type={post.type}
+            tags={post.tags}
+            featuredImage={post.featuredImage}
+            imageAlt={post.imageAlt}
+          />
+        ))}
+      </div>
+    ) : (
+      <p style="color:var(--ink-muted);text-align:center;padding:var(--sp-12) 0;">No content published yet.</p>
+    )}
+    </section>
+
+    <!-- Disclaimer -->
+    <footer class="author-disclaimer">
+      <p>Resurgence Builds is not affiliated with, endorsed by, or sponsored by Ubisoft Entertainment SA.</p>
+    </footer>
+  </article>
+</BaseLayout>
+
+<style>
+  /* Author Header */
+  .author-header {
+    display: flex;
+    flex-direction: column;
+    gap: var(--sp-6);
+    margin-bottom: var(--sp-8);
+  }
+
+  @media (min-width: 768px) {
+    .author-header {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+  }
+
+  .author-avatar {
+    flex-shrink: 0;
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    background: var(--surface-2);
+    border: 2px solid var(--accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .author-avatar__initials {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: var(--text-3xl);
+    color: var(--accent);
+    letter-spacing: -0.02em;
+  }
+
+  .author-info {
+    flex: 1;
+  }
+
+  .author-name {
+    margin-bottom: var(--sp-2);
+  }
+
+  .author-role {
+    display: inline-block;
+    font-family: var(--font-mono);
+    font-size: var(--text-xs);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--accent);
+    background: rgba(242, 104, 34, 0.15);
+    border: 1px solid var(--accent-dim);
+    padding: var(--sp-1) var(--sp-2);
+    border-radius: var(--border-radius);
+    margin-bottom: var(--sp-4);
+  }
+
+  .author-bio {
+    color: var(--ink-muted);
+    font-size: var(--text-base);
+    line-height: 1.7;
+    max-width: 65ch;
+  }
+
+  /* Stats Row */
+  .author-stats {
+    display: flex;
+    gap: var(--sp-4);
+    flex-wrap: wrap;
+    margin-bottom: var(--sp-6);
+  }
+
+  .author-stat {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--border-radius);
+    padding: var(--sp-4) var(--sp-6);
+    text-align: center;
+    min-width: 120px;
+    flex: 1;
+    transition: border-color var(--transition-base);
+  }
+
+  .author-stat:hover {
+    border-color: var(--accent-dim);
+  }
+
+  .author-stat__value {
+    display: block;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: var(--text-3xl);
+    color: var(--accent);
+    line-height: 1.2;
+  }
+
+  .author-stat__label {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: var(--text-xs);
+    color: var(--ink-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-top: var(--sp-1);
+  }
+
+  /* Social Links */
+  .author-socials {
+    display: flex;
+    gap: var(--sp-3);
+    flex-wrap: wrap;
+    margin-bottom: var(--sp-8);
+  }
+
+  /* Disclaimer */
+  .author-disclaimer {
+    margin-top: var(--sp-8);
+    padding-top: var(--sp-6);
+    border-top: 1px solid var(--border);
+    text-align: center;
+  }
+
+  .author-disclaimer p {
+    font-size: var(--text-xs);
+    color: var(--ink-muted);
+    max-width: none;
+    margin: 0 auto;
+  }
+</style>

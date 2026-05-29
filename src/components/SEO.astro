@@ -155,7 +155,9 @@ if (article) {
     dateModified: article.modifiedDate || article.publishDate,
     author: {
       '@type': 'Person',
-      name: article.author
+      name: article.author,
+      '@id': `${siteUrl}/author/${article.author.toLowerCase().replace(/\s+/g, '-')}/#person`,
+      url: `${siteUrl}/author/${article.author.toLowerCase().replace(/\s+/g, '-')}/`,
     },
     publisher: { '@id': `${siteUrl}/#organization` },
     about: { '@id': `${siteUrl}/#division-resurgence` }

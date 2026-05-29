@@ -1,11 +1,30 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const allBuilds = await getCollection('builds');
+const allGuides = await getCollection('guides');
+const allNews = await getCollection('news');
+
+const aboutPageSchema = {
+  '@type': 'AboutPage',
+  '@id': 'https://resurgencebuilds.com/about/#aboutpage',
+  name: 'About Resurgence Builds',
+  description: 'Learn more about Resurgence Builds, an independent fan resource for Tom Clancy\'s The Division Resurgence.',
+  mainEntity: { '@id': 'https://resurgencebuilds.com/#organization' },
+};
+
+const breadcrumbItems = [
+  { name: 'About', url: '/about/' },
+];
 ---
 
 <BaseLayout
   title="About Us — Resurgence Builds"
   description="Learn more about Resurgence Builds, a passion project dedicated to The Division Resurgence. In-game tested builds, weapon data, and patch analysis."
   keywords={["about resurgence builds", "division resurgence wiki", "division resurgence community", "resurgence builds team"]}
+  jsonLd={aboutPageSchema}
+  breadcrumbs={breadcrumbItems}
 >
   <div class="container section content-width">
     <h1 class="heading-accent">About Resurgence Builds</h1>
@@ -26,6 +45,40 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         <li><strong>Build Planner Tool:</strong> An interactive tool for planning and sharing loadouts.</li>
       </ul>
 
+      <h2>Meet the Founder</h2>
+    </div>
+
+    <section class="founder-card" aria-label="Site founder">
+      <div class="founder-info">
+        <div class="founder-header">
+          <div>
+            <h3 class="founder-name">RapidF5</h3>
+            <span class="founder-role">Founder & Lead Author</span>
+          </div>
+        </div>
+        <p class="founder-bio">With months of play time in the original <em>Tom Clancy's The Division</em> and extensive time in <em>The Division 2</em>, RapidF5 brings deep franchise knowledge to every piece of content on this site. A family man who got frustrated with the lack of accurate, non-spammy content for <em>The Division Resurgence</em>, he decided to build something better. Resurgence Builds is the result — a site where every build is tested in-game, every stat is verified, and the information is always current.</p>
+        <div class="founder-stats">
+          <div class="founder-stat">
+            <span class="founder-stat__number">{allBuilds.length}</span>
+            <span class="founder-stat__label">Builds</span>
+          </div>
+          <div class="founder-stat">
+            <span class="founder-stat__number">{allGuides.length}</span>
+            <span class="founder-stat__label">Guides</span>
+          </div>
+          <div class="founder-stat">
+            <span class="founder-stat__number">{allNews.length}</span>
+            <span class="founder-stat__label">Articles</span>
+          </div>
+        </div>
+        <a href="/author/rapidf5/" class="btn btn--outline" style="margin-top: var(--sp-3); display: inline-flex; align-items: center; gap: 6px; font-size: var(--text-sm);">
+          View Full Profile
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+        </a>
+      </div>
+    </section>
+
+    <div class="prose">
       <h2>Our Testing Process</h2>
       <p>Builds are tested in live gameplay — Legendary missions, Dark Zone PvP, and Conflict. We don't just theory-craft from a spreadsheet. When we say a build does 800k DPS, it's because we measured it in-game, not because a tooltip said so. We cite our sources, show our stat breakdowns, and update content whenever a patch changes the numbers.</p>
       <p>Every guide and build on the site includes a <strong>Last Updated</strong> date so you always know whether the information reflects the current live patch.</p>
@@ -43,7 +96,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       <p>Resurgence Builds is a passion project, but hosting and development cost real money. We run non-intrusive ads through Google AdSense to keep the lights on. We will never gate content behind a paywall, run pop-up ads, or prioritize revenue over user experience. The site is free and will stay free.</p>
 
       <h2>Get Involved</h2>
-      <p>Have a build that's shredding the Dark Zone? Found a typo? Disagree with a tier list ranking? We're always looking for feedback. Join our Discord community or reach out on social media — we read everything and fix what needs fixing.</p>
+      <p>Have a build that's shredding the Dark Zone? Found a typo? Disagree with a tier list ranking? We're always looking for feedback. Join our Discord community or <a href="/contact/">reach out via our contact page</a> — we read everything and fix what needs fixing.</p>
       
       <div style="display: flex; gap: var(--sp-3); flex-wrap: wrap; margin-top: var(--sp-4);">
         <a href="https://discord.gg/t6GTR6tpd" target="_blank" rel="noopener noreferrer" class="btn btn--primary" style="display: inline-flex; align-items: center; gap: 8px;">
@@ -61,3 +114,90 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     </div>
   </div>
 </BaseLayout>
+
+<style>
+  .founder-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--border);
+    border-radius: var(--border-radius);
+    padding: var(--sp-6);
+    margin: var(--sp-6) 0;
+    backdrop-filter: blur(8px);
+  }
+
+  .founder-header {
+    display: flex;
+    align-items: center;
+    gap: var(--sp-4);
+    margin-bottom: var(--sp-4);
+  }
+
+  .founder-name {
+    font-family: var(--font-heading);
+    font-size: var(--text-xl);
+    font-weight: 700;
+    color: var(--ink);
+    margin: 0;
+    line-height: 1.2;
+  }
+
+  .founder-role {
+    display: inline-block;
+    font-size: var(--text-xs);
+    color: var(--accent);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-top: var(--sp-1);
+  }
+
+  .founder-bio {
+    color: var(--ink-muted);
+    font-size: var(--text-base);
+    line-height: 1.7;
+    margin: 0 0 var(--sp-4) 0;
+  }
+
+  .founder-stats {
+    display: flex;
+    gap: var(--sp-6);
+    padding-top: var(--sp-4);
+    border-top: 1px solid var(--border);
+    margin-bottom: var(--sp-2);
+  }
+
+  .founder-stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--sp-1);
+  }
+
+  .founder-stat__number {
+    font-family: var(--font-heading);
+    font-size: var(--text-2xl);
+    font-weight: 700;
+    color: var(--accent);
+  }
+
+  .founder-stat__label {
+    font-size: var(--text-xs);
+    color: var(--ink-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+
+  @media (max-width: 600px) {
+    .founder-card {
+      padding: var(--sp-4);
+    }
+
+    .founder-stats {
+      gap: var(--sp-4);
+    }
+
+    .founder-stat__number {
+      font-size: var(--text-xl);
+    }
+  }
+</style>

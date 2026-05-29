@@ -1379,3 +1379,75 @@ tbody tr:hover {
   color: var(--ink-muted);
   line-height: 1.6;
 }
+
+/* --- Callouts / Admonitions (rehype-callouts output) --- */
+.callout {
+  margin: var(--sp-6) 0;
+  padding: var(--sp-4);
+  border-left: 3px solid var(--callout-accent);
+  border-radius: 0 var(--border-radius) var(--border-radius) 0;
+  background: var(--callout-bg);
+}
+
+.callout--info {
+  --callout-accent: #3b82f6;
+  --callout-bg: rgba(59, 130, 246, 0.08);
+}
+
+.callout--warning {
+  --callout-accent: #f59e0b;
+  --callout-bg: rgba(245, 158, 11, 0.08);
+}
+
+.callout--danger {
+  --callout-accent: #ef4444;
+  --callout-bg: rgba(239, 68, 68, 0.08);
+}
+
+.callout__header {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+  margin-bottom: var(--sp-2);
+}
+
+.callout__header svg {
+  flex-shrink: 0;
+  color: var(--callout-accent);
+}
+
+.callout__title {
+  font-family: var(--font-heading);
+  font-size: var(--text-base);
+  font-weight: 700;
+  color: var(--callout-accent);
+}
+
+.callout__body {
+  font-size: var(--text-sm);
+  color: var(--ink-muted);
+  line-height: 1.7;
+}
+
+.callout__body p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 600px) {
+  .callout {
+    padding: var(--sp-3);
+    margin: var(--sp-4) 0;
+  }
+
+  .callout__header {
+    gap: var(--sp-1);
+  }
+
+  .callout__title {
+    font-size: var(--text-sm);
+  }
+
+  .callout__body {
+    font-size: var(--text-xs);
+  }
+}

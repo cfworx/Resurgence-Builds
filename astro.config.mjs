@@ -3,6 +3,7 @@ import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 
 import rehypeExternalLinks from 'rehype-external-links';
+import rehypeCallouts from './scripts/rehype-callouts.mjs';
 import rehypeAdsense from './scripts/rehype-adsense.mjs';
 // Static fallback date — update this whenever you do a major site update
 const SITE_LAST_UPDATED = '2026-05-27';
@@ -102,6 +103,7 @@ export default defineConfig({
     },
     rehypePlugins: [
       [rehypeExternalLinks, { target: '_blank', rel: ['noopener', 'noreferrer'] }],
+      rehypeCallouts,
       rehypeAdsense
     ]
   },
