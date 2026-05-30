@@ -17,7 +17,7 @@ shareText: "237k DPS Tech Aegis build. 53% Skill Crit Chance. Your drones do mor
 sources:
   - '<a href="https://www.youtube.com/watch?v=bZA3H9f2ah0">Tampishach (PowerfulJRE Clips), Tech Aegis Build Walkthrough</a>, April 2026.'
   - 'In-game Division Resurgence Build Database, verified May 2026.'
-plannerHash: "s=Tech+Operator&sc=Tech+Aegis&n=Tech+Aegis+237k&ms=gs-7&m1=Signature+Ability+Charge+Efficiency&m2=Skill+Critical+Damage&cs=gs-8&ct=ba-14&c1=Skill+Radius&c2=Skill+Critical+Damage&ps=gs-8&pt=bp-19&p1=Damage+Reduction&p2=Skill+Critical+Chance&gs=gs-8&g1=Skill+Critical+Chance&g2=Skill+Critical+Damage&hs=gs-7&h1=Damage+Reduction&h2=Skill+Critical+Damage&ks=gs-8&k1=Skill+Critical+Chance&k2=Skill+Critical+Damage&w1s=sw-12&w1tr=T0&w1t=wt-66&w1t2=wt-42&w2s=sw-10&w2tr=T1&w2t=wt-22&w2t2=wt-60&os=os-20&sm1=smc-35&sm2=smc-29&sm3=smc-32"
+plannerHash: "s=Tech+Operator&sc=Aegis+Operations&n=Tech+Aegis+237k&ms=gs-7&m1=Signature+Ability+Charge+Efficiency&m2=Skill+Critical+Damage&cs=gs-8&ct=ba-14&c1=Skill+Radius&c2=Skill+Critical+Damage&ps=gs-8&pt=bp-19&p1=Damage+Reduction&p2=Skill+Critical+Chance&gs=gs-8&g1=Skill+Critical+Chance&g2=Skill+Critical+Damage&hs=gs-7&h1=Damage+Reduction&h2=Skill+Critical+Damage&ks=gs-8&k1=Skill+Critical+Chance&k2=Skill+Critical+Damage&w1s=sw-12&w1tr=T0&w1t=wt-66&w1t2=wt-42&w2s=sw-10&w2tr=T1&w2t=wt-22&w2t2=wt-60&os=os-20&sm1=smc-35&sm2=smc-29&sm3=smc-32"
 videoId: "bZA3H9f2ah0"
 videoTitle: "Tampishach — Tech Aegis Build Walkthrough"
 videoChannel: "PowerfulJRE Clips"
