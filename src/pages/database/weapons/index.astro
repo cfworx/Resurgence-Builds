@@ -1,0 +1,51 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../../components/Breadcrumbs.astro';
+import SectionTag from '../../../components/SectionTag.astro';
+import AdSenseUnit from '../../../components/AdSenseUnit.astro';
+import standardWeapons from '../../../data/standard-weapons.json';
+import exoticWeapons from '../../../data/exotic-weapons.json';
+
+const breadcrumbs = [
+  { name: 'Database', url: '/database/' },
+  { name: 'Weapons', url: '/database/weapons/' }
+];
+
+const title = "All Weapons — Division Resurgence Database";
+const description = "Complete Division Resurgence weapon database. Every Assault Rifle, SMG, LMG, Marksman Rifle, Shotgun, and Pistol with RPM, magazine size, and damage type.";
+
+// Group by type
+const types = [...new Set(standardWeapons.map((w: any) => w.type))];
+---
+
+<BaseLayout {title} {description} {breadcrumbs}>
+  <div class="container section">
+    <Breadcrumbs items={breadcrumbs} />
+    <SectionTag label="Weapon Database" />
+    <h1 class="heading-accent">All Weapons</h1>
+    <p style="color: var(--ink-muted); margin-bottom: var(--sp-6); max-width: 800px;">
+      Every standard weapon in Division Resurgence with stats and class breakdowns. Click any weapon for full details, or check the <a href="/database/exotic-weapons/" style="color: var(--accent);">Exotic Weapons</a> for unique talents.
+    </p>
+
+    {types.map((type: string) => (
+      <div style="margin-bottom: var(--sp-8);">
+        <h2 style="font-family: var(--font-heading); font-size: var(--text-xl); font-weight: 800; color: var(--accent); margin-bottom: var(--sp-4);">{type}s</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: var(--sp-3);">
+          {standardWeapons.filter((w: any) => w.type === type).map((w: any) => (
+            <a href={`/database/weapons/${w.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')}/`}
+               style="display: flex; justify-content: space-between; align-items: center; padding: var(--sp-4); background: rgba(0,0,0,0.2); border: 1px solid var(--border); border-radius: 8px; text-decoration: none; transition: all 0.2s; color: inherit;"
+            >
+              <div>
+                <strong style="color: #fff;">{w.name}</strong>
+                <span style="display: block; font-family: var(--font-mono); font-size: 10px; color: var(--ink-muted); text-transform: uppercase; margin-top: 2px;">{w.rpm} RPM · {w.mag} MAG · {w.dmgType}</span>
+              </div>
+              <span style="color: var(--accent); font-size: var(--text-sm);">→</span>
+            </a>
+          ))}
+        </div>
+      </div>
+    ))}
+
+    <AdSenseUnit />
+  </div>
+</BaseLayout>

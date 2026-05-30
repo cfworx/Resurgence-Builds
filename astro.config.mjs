@@ -57,6 +57,11 @@ export default defineConfig({
           return { ...item, priority: 0.7, changefreq: 'monthly', lastmod: SITE_LAST_UPDATED };
         }
 
+        // --- Map page ---
+        if (url.includes('/division-resurgence-interactive-map/')) {
+          return { ...item, priority: 0.7, changefreq: 'monthly', lastmod: SITE_LAST_UPDATED };
+        }
+
         // --- News articles ---
         if (url.includes('/news/')) {
           return { ...item, priority: 0.7, changefreq: 'never' };

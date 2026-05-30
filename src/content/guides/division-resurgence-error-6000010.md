@@ -53,6 +53,13 @@ faqs:
 
 > Division Resurgence error **6000010** is the *"Network connection error. Please check your network connection and try again or exit the game."* popup. It is the single most reported error in the game, and it hits at every conceivable choke point: login, matchmaking, mission entry, randomly mid-fight. The good news is that the same five-step fix flow resolves it for the vast majority of players. The bad news is that sometimes it isn't you, it's Ubisoft, and the only fix is to wait.
 
+<div class="callout callout--danger">
+<div class="callout__header"><strong class="callout__title">Don't Reinstall Yet</strong></div>
+<div class="callout__body">
+<p>Error 6000010 is almost always a network routing issue, not a corrupted install. Uninstalling wastes 10+ GB of data and rarely fixes anything. Try all five fixes below first.</p>
+</div>
+</div>
+
 ## TL;DR
 
 - **What it is:** A generic network connection error. Hits at login, matchmaking, instance entry, and mid-mission.

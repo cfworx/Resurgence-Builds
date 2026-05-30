@@ -1,0 +1,134 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../../components/Breadcrumbs.astro';
+import SectionTag from '../../../components/SectionTag.astro';
+import AdSenseUnit from '../../../components/AdSenseUnit.astro';
+import standardWeapons from '../../../data/standard-weapons.json';
+
+export function getStaticPaths() {
+  return standardWeapons.map((weapon: any) => ({
+    params: {
+      slug: weapon.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')
+    },
+    props: { weapon }
+  }));
+}
+
+const { weapon } = Astro.props;
+
+const slug = weapon.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+const siteUrl = 'https://resurgencebuilds.com';
+
+const title = `${weapon.name} — ${weapon.type} | Division Resurgence`;
+const description = `${weapon.name} ${weapon.type} stats: ${weapon.rpm} RPM, ${weapon.mag} magazine, ${weapon.dmgType} damage. Full breakdown for Division Resurgence.`;
+
+const breadcrumbs = [
+  { name: 'Weapons', url: '/database/weapons/' },
+  { name: weapon.name, url: '#' }
+];
+
+const typeGuide: Record<string, string> = {
+  'Assault Rifle': 'Assault Rifles are the most versatile weapon class in Division Resurgence. They offer balanced damage, RPM, and range — making them the default pick for players who want one gun that works everywhere. Most meta builds run an AR as the primary weapon.',
+  'SMG': 'SMGs dominate close-range combat in Division Resurgence. They trade range for extremely high RPM and built-in Crit Chance bonuses, making them the go-to for Dark Zone PvP rushdown builds and aggressive PvE playstyles.',
+  'LMG': 'LMGs are the sustained-fire kings of Division Resurgence. Huge magazines mean less reloading and more time dealing damage, which synergizes with stacking talents like Multi-Shot and In Sync. Popular in both solo and group PvE.',
+  'Marksman Rifle': 'Marksman Rifles deliver the highest per-shot damage in Division Resurgence. They reward precision with massive headshot multipliers and are the backbone of sniper builds using Death From Afar OS Protocol.',
+  'Shotgun': 'Shotguns deal devastating burst damage at point-blank range. In Division Resurgence, they pair with Bulwark Breacher builds using the Ballistic Shield for protected close-range engagements.',
+  'Pistol': 'Pistols are sidearms in Division Resurgence, used when your primary and secondary are empty or during shield builds. Some exotic pistols have powerful unique talents worth building around.',
+};
+
+const typeDesc = typeGuide[weapon.type] || `${weapon.type}s are a weapon category in Division Resurgence offering unique playstyle options depending on your build and specialization.`;
+
+const faqs = [
+  {
+    question: `Is the ${weapon.name} good in Division Resurgence?`,
+    answer: `The ${weapon.name} is a ${weapon.type} with ${weapon.rpm} RPM and a ${weapon.mag}-round magazine dealing ${weapon.dmgType} damage. ${typeDesc.split('.')[0]}. Whether it's meta depends on available weapon talents and your build's gear set synergies.`
+  },
+  {
+    question: `What type of damage does the ${weapon.name} do?`,
+    answer: `The ${weapon.name} deals ${weapon.dmgType} damage. This matters for builds that stack damage-type-specific bonuses through gear sets, OS Protocols, and weapon talents.`
+  },
+  {
+    question: `What builds use ${weapon.type}s in Division Resurgence?`,
+    answer: typeDesc
+  }
+];
+
+const weaponLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: title,
+  description: description,
+  url: `${siteUrl}/database/weapons/${slug}/`,
+  author: { '@type': 'Person', '@id': `${siteUrl}/author/rapidf5/#person`, name: 'RapidF5' },
+  publisher: { '@type': 'Organization', '@id': `${siteUrl}/#organization`, name: 'Resurgence Builds' },
+  mainEntityOfPage: { '@type': 'WebPage', '@id': `${siteUrl}/database/weapons/${slug}/` },
+  datePublished: '2026-05-30',
+  dateModified: '2026-05-30',
+};
+---
+
+<BaseLayout title={title} description={description} breadcrumbs={breadcrumbs} jsonLd={weaponLd} faqs={faqs}>
+  <div class="container section">
+    <Breadcrumbs items={breadcrumbs} />
+    <SectionTag label="Weapon Database" />
+
+    <div style="max-width: 700px;">
+      <!-- Header -->
+      <div style="margin-bottom: var(--sp-8); padding-bottom: var(--sp-6); border-bottom: 1px solid rgba(255,255,255,0.08);">
+        <div style="display: flex; flex-wrap: wrap; align-items: center; gap: var(--sp-4);">
+          <h1 style="font-family: var(--font-heading); font-size: var(--text-4xl); font-weight: 900; letter-spacing: -0.03em; margin: 0; background: linear-gradient(135deg, #fff 60%, var(--accent)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">{weapon.name}</h1>
+          <span style="display: inline-flex; align-items: center; font-family: var(--font-mono); font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent); background: rgba(242,104,34,0.12); border: 1px solid rgba(242,104,34,0.25); padding: 5px 14px; border-radius: 999px;">{weapon.type}</span>
+        </div>
+        <div style="display: inline-flex; align-items: center; gap: 6px; font-family: var(--font-mono); font-size: var(--text-xs); color: #6DAA45; background: rgba(109, 170, 69, 0.1); border: 1px solid rgba(109, 170, 69, 0.25); padding: 6px 14px; border-radius: 999px; margin-top: var(--sp-4); letter-spacing: 0.02em;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+          <span>Last verified for <strong>Patch 1.2.1</strong></span>
+        </div>
+      </div>
+
+      <!-- Overview -->
+      <div style="margin-bottom: var(--sp-8);">
+        <h2 style="font-family: var(--font-heading); font-size: var(--text-lg); font-weight: 800; color: #fff; margin: 0 0 var(--sp-4) 0; padding-bottom: var(--sp-2); border-bottom: 1px solid rgba(255,255,255,0.08);">Overview</h2>
+        <p style="color: #c8c8d0; line-height: 1.75; font-size: var(--text-base);">
+          The <strong>{weapon.name}</strong> is a <strong>{weapon.type}</strong> in The Division Resurgence that fires at <strong>{weapon.rpm} RPM</strong> with a <strong>{weapon.mag}-round</strong> magazine and deals <strong>{weapon.dmgType}</strong> damage. {typeDesc}
+        </p>
+      </div>
+
+      <!-- Stats -->
+      <div style="margin-bottom: var(--sp-8);">
+        <h2 style="font-family: var(--font-heading); font-size: var(--text-lg); font-weight: 800; color: #fff; margin: 0 0 var(--sp-4) 0; padding-bottom: var(--sp-2); border-bottom: 1px solid rgba(255,255,255,0.08);">Stats</h2>
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--sp-3);">
+          <div style="display: flex; flex-direction: column; gap: 4px; background: rgba(0,0,0,0.25); padding: var(--sp-4); border-radius: 8px; border: 1px solid rgba(255,255,255,0.05);">
+            <span style="font-family: var(--font-mono); font-size: 10px; font-weight: 600; color: var(--ink-muted); text-transform: uppercase; letter-spacing: 0.06em;">RPM</span>
+            <span style="font-size: var(--text-lg); font-weight: 700; color: #fff;">{weapon.rpm}</span>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 4px; background: rgba(0,0,0,0.25); padding: var(--sp-4); border-radius: 8px; border: 1px solid rgba(255,255,255,0.05);">
+            <span style="font-family: var(--font-mono); font-size: 10px; font-weight: 600; color: var(--ink-muted); text-transform: uppercase; letter-spacing: 0.06em;">Magazine</span>
+            <span style="font-size: var(--text-lg); font-weight: 700; color: #fff;">{weapon.mag}</span>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 4px; background: rgba(0,0,0,0.25); padding: var(--sp-4); border-radius: 8px; border: 1px solid rgba(255,255,255,0.05);">
+            <span style="font-family: var(--font-mono); font-size: 10px; font-weight: 600; color: var(--ink-muted); text-transform: uppercase; letter-spacing: 0.06em;">Damage Type</span>
+            <span style="font-size: var(--text-lg); font-weight: 700; color: #fff;">{weapon.dmgType}</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Weapon class guide -->
+      <div style="margin-bottom: var(--sp-8);">
+        <h2 style="font-family: var(--font-heading); font-size: var(--text-lg); font-weight: 800; color: #fff; margin: 0 0 var(--sp-4) 0; padding-bottom: var(--sp-2); border-bottom: 1px solid rgba(255,255,255,0.08);">{weapon.type} Class Guide</h2>
+        <div style="padding: var(--sp-5); background: rgba(0,0,0,0.25); border-left: 3px solid var(--accent); border-radius: 0 8px 8px 0;">
+          <p style="margin: 0; color: #c8c8d0; line-height: 1.75; font-size: var(--text-base);">{typeDesc}</p>
+        </div>
+      </div>
+
+      <!-- Related links -->
+      <div style="display: flex; flex-wrap: wrap; gap: var(--sp-3); padding-top: var(--sp-6); border-top: 1px solid rgba(255,255,255,0.08);">
+        <a href="/database/weapons/" style="font-family: var(--font-mono); font-size: var(--text-sm); color: var(--accent); text-decoration: none; padding: var(--sp-2) var(--sp-4); background: rgba(242,104,34,0.08); border: 1px solid rgba(242,104,34,0.2); border-radius: 6px; transition: all 0.2s;">&larr; All Weapons</a>
+        <a href="/database/weapon-talents/" style="font-family: var(--font-mono); font-size: var(--text-sm); color: var(--accent); text-decoration: none; padding: var(--sp-2) var(--sp-4); background: rgba(242,104,34,0.08); border: 1px solid rgba(242,104,34,0.2); border-radius: 6px; transition: all 0.2s;">Weapon Talents</a>
+        <a href="/database/exotic-weapons/" style="font-family: var(--font-mono); font-size: var(--text-sm); color: var(--accent); text-decoration: none; padding: var(--sp-2) var(--sp-4); background: rgba(242,104,34,0.08); border: 1px solid rgba(242,104,34,0.2); border-radius: 6px; transition: all 0.2s;">Exotic Weapons</a>
+        <a href="/tier-list/" style="font-family: var(--font-mono); font-size: var(--text-sm); color: var(--accent); text-decoration: none; padding: var(--sp-2) var(--sp-4); background: rgba(242,104,34,0.08); border: 1px solid rgba(242,104,34,0.2); border-radius: 6px; transition: all 0.2s;">Build Tier List</a>
+      </div>
+    </div>
+
+    <AdSenseUnit />
+  </div>
+</BaseLayout>

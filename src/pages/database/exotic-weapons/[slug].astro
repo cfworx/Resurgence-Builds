@@ -2,6 +2,7 @@
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../../components/Breadcrumbs.astro';
 import SectionTag from '../../../components/SectionTag.astro';
+import AdSenseUnit from '../../../components/AdSenseUnit.astro';
 import exoticWeapons from '../../../data/exotic-weapons.json';
 
 export function getStaticPaths() {
@@ -37,9 +38,25 @@ const faqs = [
     answer: `Exotic weapons like ${weapon.name} drop from the ${weapon.type} loot pool in endgame activities including Conflicts, Dark Zone, and Legendary missions. Exotic drop rates are low, so focus on running activities that reward ${weapon.type}s. Weekly bounties and targeted loot areas also have a chance.`
   }
 ];
+
+const slug = weapon.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+const siteUrl = 'https://resurgencebuilds.com';
+
+const weaponLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: title,
+  description: description,
+  url: `${siteUrl}/database/exotic-weapons/${slug}/`,
+  author: { '@type': 'Person', '@id': `${siteUrl}/author/rapidf5/#person`, name: 'RapidF5' },
+  publisher: { '@type': 'Organization', '@id': `${siteUrl}/#organization`, name: 'Resurgence Builds' },
+  mainEntityOfPage: { '@type': 'WebPage', '@id': `${siteUrl}/database/exotic-weapons/${slug}/` },
+  datePublished: '2026-05-29',
+  dateModified: '2026-05-30',
+};
 ---
 
-<BaseLayout {title} {description} {breadcrumbs} faqs={faqs}>
+<BaseLayout {title} {description} {breadcrumbs} faqs={faqs} jsonLd={weaponLd}>
   <div class="container section">
     <Breadcrumbs items={breadcrumbs} />
     <SectionTag label="Exotic Weapon" />
@@ -98,7 +115,57 @@ const faqs = [
         </div>
       </div>
 
-      {/* Featured Build */}
+      <!-- Overview -->
+      <div style="margin-bottom: var(--sp-8);">
+        <h2 class="weapon-stats__heading">Overview</h2>
+        <div style="color: #c8c8d0; line-height: 1.75; font-size: var(--text-base);">
+          <p>The <strong style="color: #fff;">{weapon.name}</strong> is one of only three exotic weapons currently available in Division Resurgence. Exotic weapons are defined by their unique talent — {weapon.name}'s <strong style="color: #F5CC45;">{weapon.talentName}</strong> fundamentally changes how you play compared to any standard {weapon.type}. With {weapon.damage} base damage at {weapon.rpm} RPM and a {weapon.mag}-round magazine, the raw stat profile {weapon.rpm >= 800 ? 'favors aggressive close-range engagements where the high fire rate can proc talent effects rapidly.' : weapon.rpm >= 600 ? 'balances between sustained damage and burst potential, making it versatile across most engagement ranges.' : 'rewards sustained-fire playstyles where the large magazine and steady damage output compound over long engagements.'}</p>
+        </div>
+      </div>
+
+      <!-- How the Talent Works -->
+      <div style="margin-bottom: var(--sp-8);">
+        <h2 class="weapon-stats__heading">How {weapon.talentName} Works</h2>
+        <div style="color: #c8c8d0; line-height: 1.75; font-size: var(--text-base);">
+          {weapon.name === 'Lady Death' && (
+            <Fragment>
+              <p><strong style="color: #fff;">Breathe Free</strong> is a movement-based stacking talent. While moving, you gain 4 stacks per second (8 while sprinting), up to 40 stacks maximum. Each round fired consumes 1 stack and grants <strong style="color: var(--accent);">+15% Weapon Damage</strong>. Deploying a skill consumes 10 stacks and grants <strong style="color: var(--accent);">+15% Skill Damage</strong>. Kills grant +10% Movement Speed for 10 seconds.</p>
+              <p>The optimal loop: sprint-stack to 40 before engaging, unload your mag for the boosted damage, deploy a skill mid-fight for the skill damage bonus, then reposition. Lady Death rewards aggressive players who are constantly moving — standing still means zero stacks and zero bonus damage. In the Dark Zone, the movement speed on kill chains into repositioning, making Lady Death one of the strongest PvP SMGs in the game.</p>
+            </Fragment>
+          )}
+          {weapon.name === 'Warlord' && (
+            <Fragment>
+              <p><strong style="color: #fff;">Play Rough</strong> gives you <strong style="color: var(--accent);">25% damage reduction while firing</strong>. When you stop firing, 60% of the damage that was reduced gets applied to enemies in range, and you gain +10% Skill Damage for 10 seconds. This creates a unique tank-DPS hybrid playstyle — you absorb punishment while shooting, then the stored damage explodes outward.</p>
+              <p><strong style="color: #F5CC45;">Warning — The Warlord Trap:</strong> Warlord is a T1 Exotic AR available from the Battle Pass. Committing to it requires significant PvP farming for weapon proficiency — Level 7 requires roughly 70 agent kills. There is also a known proficiency tracking bug. Make sure the build actually needs Warlord before investing the PvP grind time. For PvE-only players, the proficiency gate can be a blocker.</p>
+            </Fragment>
+          )}
+          {weapon.name === 'Strawberry Milkshake' && (
+            <Fragment>
+              <p>The Strawberry Milkshake has <strong style="color: #fff;">six talents</strong> — more than any other weapon in Division Resurgence. The headliners are <strong style="color: var(--accent);">Anarchy</strong> (DoT on body shots, stacks up to 50, transfers on kill), <strong style="color: var(--accent);">Concentrated Fire</strong> (+0.36% WCHD per hit, up to 100 stacks on same target), and <strong style="color: var(--accent);">Swift Taunt</strong> (hit 3 enemies in 5s for taunt + Extra Health).</p>
+              <p><strong style="color: #F5CC45;">Community reality check:</strong> The Anarchy DoT is effectively non-functional in practice — the per-tick damage is negligible. Do NOT build around the DoT mechanic. The Strawberry Milkshake's real value is the 100-round magazine combined with Concentrated Fire (massive crit damage stacking on boss targets) and Swift Taunt (free Extra Health for survivability). Pair with In Sync on a secondary weapon and Phalanx Attack 4pc for Multi-Shot + Rate of Fire to maximize the sustained-fire engine.</p>
+              <p><strong style="color: #fff;">Damage type note:</strong> Strawberry Milkshake deals <strong>Shredding</strong> damage — NOT Blast. This is a common misreporting. Matters for armor-type matchups against specific enemy types.</p>
+            </Fragment>
+          )}
+        </div>
+      </div>
+
+      <!-- Build Strategy -->
+      <div style="margin-bottom: var(--sp-8);">
+        <h2 class="weapon-stats__heading">Build Strategy</h2>
+        <div style="color: #c8c8d0; line-height: 1.75; font-size: var(--text-base);">
+          <p>Exotic weapons define builds around their unique talent. {weapon.name === 'Lady Death' ? 'Lady Death builds stack Firepower and Weapon Damage to maximize the +15% WD per stack. Run Vanguard for the Tactical Link synergy, or Bulwark Breacher for the aggressive shield-push playstyle. Best gear sets: Fury Strike 4pc (Crit) for maximum per-shot damage, or Quick Draw 4pc for Headshot Damage if your aim supports it.' : weapon.name === 'Warlord' ? 'Warlord builds lean into the tank-DPS hybrid identity. Stack Toughness or Firepower depending on whether you want to absorb more or deal more. The damage reduction while firing makes Warlord excellent for Legendary missions where you need to face-tank adds. Pair with Fearless Warrior for even more DR, or Fury Strike for crit amplification.' : 'Strawberry Milkshake builds focus on sustained fire and Multi-Shot stacking. The 100-round magazine means you rarely reload, giving talents like Concentrated Fire time to hit maximum stacks. Run Phalanx Attack 4pc for +18% Mag Size and +12% Multi-Shot, paired with Fury Strike 2pc for Crit Chance. Glass Cannon chest for +20% damage, and Dominating Presence OS for even more Multi-Shot per enemy in range.'}</p>
+          <p>Check the <a href="/tier-list/" style="color: var(--accent);">Build Tier List</a> for verified loadouts that use {weapon.name}, or use the <a href="/builder/" style="color: var(--accent);">Build Planner</a> to theory-craft your own around this exotic.</p>
+        </div>
+      </div>
+
+      <!-- How to Get -->
+      <div style="margin-bottom: var(--sp-8);">
+        <h2 class="weapon-stats__heading">How to Get {weapon.name}</h2>
+        <div style="color: #c8c8d0; line-height: 1.75; font-size: var(--text-base);">
+          <p>Exotic weapons in Division Resurgence drop from endgame activities including Legendary/Elite missions, Dark Zone, and Conflicts. Drop rates are extremely low — expect to run dozens of activities before seeing an exotic drop. {weapon.name === 'Warlord' ? 'Warlord is unique in that it is available from the Battle Pass as a T1 version, making it the most accessible exotic to acquire. However, upgrading proficiency requires PvP kills.' : 'Focus on Legendary missions for the highest drop rates, and prioritize activities that have ' + weapon.type + ' in the targeted loot pool.'}</p>
+          <p>T2 exotic weapons can only drop from Elite/Legendary difficulty. T1 versions are more accessible and still competitive for most content. Weapon proficiency can be leveled on any tier of the weapon, so start farming proficiency as soon as you acquire one.</p>
+        </div>
+      </div>
       {weapon.name === 'Strawberry Milkshake' && (
         <div class="weapon-build">
           <h2 class="weapon-stats__heading">Featured Build</h2>
@@ -120,6 +187,8 @@ const faqs = [
         </a>
       </div>
     </div>
+
+    <AdSenseUnit />
   </div>
 </BaseLayout>
 

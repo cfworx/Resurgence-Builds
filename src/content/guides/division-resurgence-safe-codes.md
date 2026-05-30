@@ -1,5 +1,5 @@
 ---
-title: "Safe Codes Master List � Division Resurgence"
+title: "Safe Codes Master List — Division Resurgence"
 category: "General"
 lastUpdated: 2026-05-28T12:00:00Z
 tags: ["safe-codes", "encrypted-crates", "collectibles", "cryptic-clues", "exploration", "commendations", "safe-locations", "division-resurgence-safes"]
@@ -33,6 +33,24 @@ faqs:
     answer: "7069, written on a yellow sticky note pinned to the side of the lockers."
   - question: "What is the safe code for the Oak Lock store?"
     answer: "1122. Some older guides list 122. The keypad takes four digits and the correct input is 1122."
+howTo:
+  name: "How to Find and Open Encrypted Crate Safes in Division Resurgence"
+  description: "Step-by-step instructions for locating encrypted crates, finding their codes, and opening them in The Division Resurgence."
+  totalTime: "PT5M"
+  tool:
+    - "Division Resurgence (installed)"
+    - "Cryptic Clues collectibles"
+  steps:
+    - name: "Locate the encrypted crate on the map"
+      text: "Use the master list below to find the crate location. Head to the marked area on your NYC map."
+    - name: "Find the code clue nearby"
+      text: "Look for a Code Clue collectible within 5-10 meters of the crate. It's usually on a wall, table, or chalkboard."
+    - name: "Read the code in your Cryptic Clues menu"
+      text: "Open Inventory → Collectibles → Cryptic Clues. Find the clue you just picked up and read the code."
+    - name: "Enter the code on the crate keypad"
+      text: "Interact with the crate and type the 4-digit code. If it's a randomized crate (03, 12, or 20), use YOUR personal code from the clue."
+    - name: "Collect the rewards"
+      text: "The crate opens and drops Superior gear, crafting materials, Phoenix Credits, and commendation progress."
 ---
 
 > [!INFO]

@@ -2,6 +2,7 @@
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../../components/Breadcrumbs.astro';
 import SectionTag from '../../../components/SectionTag.astro';
+import AdSenseUnit from '../../../components/AdSenseUnit.astro';
 import osProtocols from '../../../data/os-protocols.json';
 
 export function getStaticPaths() {
@@ -48,13 +49,20 @@ const faqs = [
   }
 ];
 
+const slug = protocol.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+const siteUrl = 'https://resurgencebuilds.com';
+
 const protocolLd = {
   '@context': 'https://schema.org',
-  '@type': 'Thing',
-  name: protocol.name,
-  description: protocol.talentDescription,
-  url: `https://resurgencebuilds.com/database/os-protocols/${protocol.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')}/`,
-  subjectOf: { '@id': 'https://resurgencebuilds.com/#division-resurgence' },
+  '@type': 'Article',
+  headline: `${protocol.name} OS Protocol — Division Resurgence`,
+  description: description,
+  url: `${siteUrl}/database/os-protocols/${slug}/`,
+  author: { '@type': 'Person', '@id': `${siteUrl}/author/rapidf5/#person`, name: 'RapidF5' },
+  publisher: { '@type': 'Organization', '@id': `${siteUrl}/#organization`, name: 'Resurgence Builds' },
+  mainEntityOfPage: { '@type': 'WebPage', '@id': `${siteUrl}/database/os-protocols/${slug}/` },
+  datePublished: '2026-05-27',
+  dateModified: '2026-05-30',
 };
 ---
 
@@ -120,7 +128,41 @@ const protocolLd = {
         </div>
       </div>
 
-      {/* Featured Builds */}
+      <!-- Overview -->
+      <div class="protocol-section">
+        <h2 class="protocol-section__title">Overview</h2>
+        <div style="color: #c8c8d0; line-height: 1.75; font-size: var(--text-base);">
+          <p>{protocol.name} is a <strong style="color: #fff;">{protocol.rarity}</strong> OS Protocol in the <strong style="color: #fff;">{protocol.specialization}</strong> tree. OS Protocols are gear chips that grant a major stat bonus plus a unique talent — think of them as the sixth gear piece that defines how your build plays. {protocol.name}'s main stat provides <strong style="color: var(--accent);">{protocol.mainStat} {protocol.mainValue}</strong>, with secondary bonuses to {protocol.attr1} ({protocol.val1}), {protocol.attr2} ({protocol.val2}), and {protocol.attr3} ({protocol.val3}).</p>
+          <p>The talent is what makes {protocol.name} worth farming: <em>"{protocol.talentDescription}"</em> — this changes how you approach combat and build composition. {protocol.specialization === 'Engineering' ? 'Engineering protocols like this one are most effective on Demolitionist, Tech Operator, and Field Medic builds where skill output is the primary damage or healing source.' : protocol.specialization === 'Firepower' ? 'Firepower protocols like this one maximize weapon damage output, making them ideal for Vanguard DPS builds and any specialization running a gun-forward playstyle.' : 'Toughness protocols like this one boost survivability and are core to Bulwark tank builds, Field Medic battle-medics, and any build that needs to absorb hits in Legendary or Dark Zone PvP.'}</p>
+        </div>
+      </div>
+
+      <!-- Build Use Cases -->
+      <div class="protocol-section">
+        <h2 class="protocol-section__title">Best Builds & Playstyles</h2>
+        <div style="color: #c8c8d0; line-height: 1.75; font-size: var(--text-base);">
+          <p>{protocol.name} works best with <strong style="color: #fff;">{specClass}</strong> builds that want to maximize {protocol.specialization} output. The {protocol.mainStat} {protocol.mainValue} main stat is a direct multiplier on your build's core, and the talent adds a conditional layer that rewards specific playstyles.</p>
+          <p>{protocol.specialization === 'Engineering' ? 'For Engineering builds, pair this with gear sets like Jackpot (Skill Crit) or Long-term Effect (Skill Duration/Engineering) for maximum skill scaling. The 4pc gear set bonuses compound with the OS Protocol talent to create significantly higher effective damage or healing than either would provide alone.' : protocol.specialization === 'Firepower' ? 'For Firepower builds, pair this with Fury Strike (Crit) or Phalanx Attack (Multi-Shot/Rate of Fire) depending on whether you want sustained DPS or burst windows. The weapon talent synergy matters — look for In Sync, Concentrated Fire, or Killer on your primary weapon to compound with the OS bonus.' : 'For Toughness builds, pair this with Fearless Warrior (DR/Damage) or Self-Propelled Shield (Armor/Health) for maximum tank presence. Healing Elites is the premium T2-only option that adds massive survivability on top of your OS Protocol talent.'}</p>
+        </div>
+      </div>
+
+      <!-- Stacking & Synergies -->
+      <div class="protocol-section">
+        <h2 class="protocol-section__title">Stacking & Synergies</h2>
+        <div style="color: #c8c8d0; line-height: 1.75; font-size: var(--text-base);">
+          <p>OS Protocol talents stack <strong style="color: #fff;">multiplicatively</strong> with gear set bonuses and weapon talents — meaning they multiply your total output, not just add to it. This is why OS Protocol selection is one of the highest-impact gearing decisions in Division Resurgence. A well-chosen OS Protocol can increase your effective DPS or healing by 30-50% over a mismatched one.</p>
+          <p>{protocol.rarity === 'High-End' ? 'As a High-End (Gold) protocol, ' + protocol.name + ' provides the strongest stat bonuses in its category. Gold protocols are the endgame target — they represent a significant power increase over Superior and Specialized alternatives.' : protocol.rarity === 'Superior' ? 'As a Superior (Purple) protocol, ' + protocol.name + ' is a strong mid-tier option. While High-End protocols offer higher raw stats, Superior protocols are far easier to farm and the talent can be equally impactful in the right build.' : protocol.name + ' is a Specialized (Blue) protocol — an accessible starting option that provides a meaningful talent bonus while you farm for higher-rarity alternatives.'} Check the <a href="/tier-list/os-protocols/" style="color: var(--accent);">OS Protocol Tier List</a> to see where {protocol.name} ranks against alternatives.</p>
+        </div>
+      </div>
+
+      <!-- How to Get -->
+      <div class="protocol-section">
+        <h2 class="protocol-section__title">How to Get {protocol.name}</h2>
+        <div style="color: #c8c8d0; line-height: 1.75; font-size: var(--text-base);">
+          <p>OS Protocols drop from several endgame sources in Division Resurgence. {protocol.rarity === 'High-End' ? 'Gold OS Protocols are the rarest tier. Your best sources are: the DZ vendor (costs DZ Credits — 20,000 available per week from DZ quests), the premium gacha system, and extremely rare drops from Legendary/Elite missions. The DZ vendor is the most reliable F2P path.' : protocol.rarity === 'Superior' ? 'Superior OS Protocols drop regularly from weekly bounties, Heroic mission rewards, and Conflicts reward tracks. You can also find them at the DZ vendor. Expect to see one every few Heroic runs.' : 'Specialized OS Protocols are common drops from most endgame activities including Challenging missions, weekly bounties, and standard reward tracks. You should have several to choose from early in your endgame progression.'}</p>
+          <p>The key sources to prioritize: <strong style="color: #fff;">Weekly Bounties</strong> (guaranteed protocol-eligible rewards), <strong style="color: #fff;">Dark Zone vendor</strong> (check stock rotation for {protocol.specialization} protocols), and <strong style="color: #fff;">Legendary missions</strong> (highest-quality drops but require strong gear to clear). Keep an eye on the <a href="/guides/division-resurgence-codes/" style="color: var(--accent);">active codes page</a> — Ubisoft occasionally distributes OS Protocol selection boxes during events.</p>
+        </div>
+      </div>
       {protocol.name === 'Dominating Presence' && (
         <div class="protocol-section">
           <h2 class="protocol-section__title">Featured Build</h2>
@@ -177,6 +219,8 @@ const protocolLd = {
         <a href="/guides/best-os-protocol/" class="protocol-back">Best Protocol Per Class</a>
       </div>
     </div>
+
+    <AdSenseUnit />
   </div>
 </BaseLayout>
 

@@ -1,6 +1,7 @@
 ---
 import DatabaseLayout from '../../../layouts/DatabaseLayout.astro';
 import osProtocols from '../../../data/os-protocols.json';
+import AdSenseUnit from '../../../components/AdSenseUnit.astro';
 
 const slugify = (name: string) => name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
 
@@ -189,6 +190,7 @@ const faqs = [
     </ul>
   </div>
 
+<AdSenseUnit />
 </DatabaseLayout>
 
 <style is:global>

@@ -105,6 +105,11 @@ const description = `All Division Resurgence content tagged "${displayTag}" — 
     <p style="color:var(--ink-muted);margin-bottom:var(--sp-6);">
       {posts.length} {posts.length === 1 ? 'article' : 'articles'} tagged <strong style="color:var(--accent);">{displayTag}</strong> in The Division Resurgence.
     </p>
+    <div style="background: rgba(0,0,0,0.15); border: 1px solid var(--border); border-radius: var(--border-radius); padding: var(--sp-5); margin-bottom: var(--sp-6); max-width: 800px;">
+      <p style="color: var(--ink-muted); font-size: var(--text-sm); line-height: 1.7; margin: 0;">
+        Everything Resurgence Builds has published about <strong style="color: var(--ink);">{displayTag}</strong> in The Division Resurgence — including build guides, database breakdowns, patch notes, and news coverage. Each piece is in-game tested and updated for the current patch. Use the cards below to jump into any article, or explore related topics using the tags on each card. Looking for a specific build? Try our <a href="/tier-list/" style="color: var(--accent);">Best Builds Tier List</a> or the <a href="/builder/" style="color: var(--accent);">Build Planner</a> to create your own loadout from scratch.
+      </p>
+    </div>
 
     <div class="grid grid--3">
       {posts.map((post) => (
