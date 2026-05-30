@@ -115,7 +115,7 @@ const faqs = [
     <SectionTag label="Meta Ranking" />
     <h1 class="heading-accent">OS Protocol Tier List</h1>
     <p style="color:var(--ink-muted);margin-bottom:var(--sp-3); max-width: 800px;">
-      Every OS Protocol ranked for Patch 1.1.2.2. <strong>S-Tier</strong> protocols define the meta and slot into multiple builds. <strong>A-Tier</strong> protocols are the best-in-slot for their class. <strong>B-Tier</strong> protocols are strong niche picks you use while hunting for your S or A drop. <strong>C-Tier</strong> protocols get replaced as you gear up.
+      Every OS Protocol ranked for Patch 1.1.2.2. <strong>S-Tier</strong> protocols are the best in the game — equip these and don't look back. <strong>A-Tier</strong> protocols are strong class-specific picks that anchor endgame builds. <strong>B-Tier</strong> protocols are solid placeholders while you farm for the good stuff. <strong>C-Tier</strong> protocols get replaced as soon as something better drops.
     </p>
 
     <div style="display: inline-flex; align-items: center; gap: 6px; font-family: var(--font-mono); font-size: var(--text-xs); color: #6DAA45; background: rgba(109, 170, 69, 0.1); border: 1px solid rgba(109, 170, 69, 0.25); padding: 6px 14px; border-radius: 999px; margin-bottom: var(--sp-6); letter-spacing: 0.02em;">
@@ -145,7 +145,7 @@ const faqs = [
         <div class="tier-content">
           <div class="tier-grid">
             {sTier.map(p => (
-              <a href={`/database/os-protocols/#${p.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')}`} class="tier-card">
+              <a href={`/database/os-protocols/${p.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')}/`} class="tier-card">
                 <div class="tier-card__spec-dot" style={`background: ${specColor(p.spec)};`}></div>
                 <div class="tier-card__info">
                   <h4>{p.name}</h4>
@@ -164,7 +164,7 @@ const faqs = [
         <div class="tier-content">
           <div class="tier-grid">
             {aTier.map(p => (
-              <a href={`/database/os-protocols/#${p.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')}`} class="tier-card">
+              <a href={`/database/os-protocols/${p.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')}/`} class="tier-card">
                 <div class="tier-card__spec-dot" style={`background: ${specColor(p.spec)};`}></div>
                 <div class="tier-card__info">
                   <h4>{p.name}</h4>
@@ -183,7 +183,7 @@ const faqs = [
         <div class="tier-content">
           <div class="tier-grid">
             {bTier.map(p => (
-              <a href={`/database/os-protocols/#${p.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')}`} class="tier-card">
+              <a href={`/database/os-protocols/${p.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')}/`} class="tier-card">
                 <div class="tier-card__spec-dot" style={`background: ${specColor(p.spec)};`}></div>
                 <div class="tier-card__info">
                   <h4>{p.name}</h4>
@@ -201,7 +201,7 @@ const faqs = [
         <div class="tier-content">
           <div class="tier-grid">
             {cTier.map(p => (
-              <a href={`/database/os-protocols/#${p.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')}`} class="tier-card">
+              <a href={`/database/os-protocols/${p.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')}/`} class="tier-card">
                 <div class="tier-card__spec-dot" style={`background: ${specColor(p.spec)};`}></div>
                 <div class="tier-card__info">
                   <h4>{p.name}</h4>
