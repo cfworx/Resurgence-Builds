@@ -277,4 +277,50 @@ const breadcrumbs = [
     border-color: var(--accent);
     color: var(--accent);
   }
+
+  /* Featured Build */
+  .weapon-build {
+    margin-bottom: var(--sp-8);
+  }
+  .weapon-build__card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--sp-4);
+    padding: var(--sp-5);
+    background: rgba(242,104,34,0.06);
+    border: 1px solid rgba(242,104,34,0.2);
+    border-radius: 12px;
+    text-decoration: none;
+    flex-wrap: wrap;
+    transition: all 200ms ease;
+  }
+  .weapon-build__card:hover {
+    background: rgba(242,104,34,0.12);
+    border-color: var(--accent);
+  }
+  .weapon-build__title {
+    margin: 0 0 4px 0;
+    font-size: var(--text-base);
+    font-weight: 700;
+    color: #fff;
+  }
+  .weapon-build__desc {
+    margin: 0;
+    font-size: var(--text-sm);
+    color: var(--ink-muted);
+  }
+  .weapon-build__btn {
+    font-family: var(--font-mono);
+    font-size: var(--text-xs);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    white-space: nowrap;
+    padding: 10px 20px;
+    color: #fff;
+    background: rgba(242,104,34,0.2);
+    border: 1px solid rgba(242,104,34,0.4);
+    border-radius: 8px;
+  }
 </style>
