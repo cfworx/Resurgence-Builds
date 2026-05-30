@@ -29,9 +29,37 @@ export interface Props {
   videoId?: string;
   videoTitle?: string;
   videoChannel?: string;
+  howTo?: {
+    name: string;
+    description: string;
+    totalTime: string;
+    tool: string[];
+    steps: { name: string; text: string }[];
+  };
 }
 
-const { title, description, specialization, playstyle, patch, lastUpdated, pve, pvp, tags, author, featuredImage, imageAlt, shareTitle, shareText, headings = [], faqs = [], sources = [], plannerHash, videoId, videoTitle, videoChannel } = Astro.props;
+const { title, description, specialization, playstyle, patch, lastUpdated, pve, pvp, tags, author, featuredImage, imageAlt, shareTitle, shareText, headings = [], faqs = [], sources = [], plannerHash, videoId, videoTitle, videoChannel, howTo } = Astro.props;
+
+const siteUrl = 'https://resurgencebuilds.com';
+
+// HowTo JSON-LD for structured search results
+const howToLd = howTo ? {
+  '@context': 'https://schema.org',
+  '@type': 'HowTo',
+  '@id': `${siteUrl}${Astro.url.pathname}#howto`,
+  name: howTo.name,
+  description: howTo.description,
+  totalTime: howTo.totalTime,
+  tool: howTo.tool.map(t => ({ '@type': 'HowToTool', name: t })),
+  step: howTo.steps.map((s, index) => ({
+    '@type': 'HowToStep',
+    position: index + 1,
+    name: s.name,
+    text: s.text,
+  })),
+} : null;
+
+const classSlug = specialization.toLowerCase().replace(/\s+/g, '-');
 
 const tocItems = headings.filter(h => h.depth <= 3);
 
@@ -71,6 +99,7 @@ const redditShareUrl = `https://reddit.com/submit?url=${encodeURIComponent(Astro
   ogImage={featuredImage}
   keywords={[specialization, playstyle, ...(pve ? ['PVE'] : []), ...(pvp ? ['PVP'] : []), 'Division Resurgence', 'build guide', ...tags.slice(0, 5)]}
   faqs={faqs}
+  jsonLd={howToLd ? howToLd : undefined}
 >
   <div class="container section">
     <Breadcrumbs items={breadcrumbItems} />
@@ -113,6 +142,14 @@ const redditShareUrl = `https://reddit.com/submit?url=${encodeURIComponent(Astro
           <span>Patch {patch}</span>
           <span>&middot;</span>
           <time datetime={lastUpdated.toISOString()}><strong>Last updated:</strong> {formattedDate}</time>
+        </div>
+
+        <div style="display: flex; flex-wrap: wrap; align-items: center; gap: var(--sp-2); margin-bottom: var(--sp-4); font-size: var(--text-sm);">
+          <span style="display: inline-flex; align-items: center; gap: 4px; padding: 4px 10px; background: rgba(34,197,94,0.12); border: 1px solid rgba(34,197,94,0.3); border-radius: 4px; color: #22c55e; font-family: var(--font-mono); font-size: var(--text-xs); font-weight: 600; letter-spacing: 0.03em;">
+            ✓ Verified for Patch {patch}
+          </span>
+          <span style="color: var(--ink-muted);">·</span>
+          <span style="color: var(--ink-muted);">Part of our <a href={`/class/${classSlug}/`} style="color: var(--accent); text-decoration: none;">{specialization} build collection</a></span>
         </div>
 
         {featuredImage && (

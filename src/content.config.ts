@@ -39,6 +39,16 @@ const builds = defineCollection({
     videoId: z.string().optional(),
     videoTitle: z.string().optional(),
     videoChannel: z.string().optional(),
+    howTo: z.object({
+      name: z.string(),
+      description: z.string(),
+      totalTime: z.string(),
+      tool: z.array(z.string()),
+      steps: z.array(z.object({
+        name: z.string(),
+        text: z.string()
+      }))
+    }).optional(),
   }),
 });
 

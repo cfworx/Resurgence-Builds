@@ -1,5 +1,5 @@
 ---
-title: "Demolitionist Glass Cannon Build | 333k DPS Skill Multi-Shot | PVE Enjoyer"
+title: "Demolitionist Glass Cannon Build — 333k DPS Fire Cycle T2"
 specialization: "Demolitionist"
 subclass: "Glass Cannon"
 playstyle: DPS
@@ -8,7 +8,7 @@ pvp: false
 lastUpdated: 2026-05-30T00:00:00Z
 patch: "1.1.2.2"
 tags: ["Demolitionist", "Fire Cycle", "Jackpot", "Pressing Matter", "Warlord", "StG 44", "Glass Cannon", "PVE Enjoyer", "Toymaker", "Skill Multi-Shot", "Artillery Turret", "Explosive Seeker Mine"]
-description: "PVE Enjoyer's verified Demolitionist build for Division Resurgence. 333.25k DPS, 22.32k Power Score, 4pc Fire Cycle T2 + 2pc Jackpot, Pressing Matter OS Protocol, Artillery Turret, Explosive Seeker Mine, M32A1 signature. Full gear, talents, weapons, firmware, and loot routes."
+description: "PVE Enjoyer's verified Demolitionist build: 333k DPS, 4pc Fire Cycle T2, Pressing Matter OS, Toymaker II glass-cannon range. Full gear, talents, weapons."
 author: "RapidF5 (via PVE Enjoyer)"
 featuredImage: "/images/division-resurgence-demolitionist-glass-cannon-build-pveenjoyer.webp"
 imageAlt: "Division Resurgence Demolitionist Glass Cannon build stats from PVE Enjoyer showing 333k DPS with Fire Cycle and Jackpot gear sets"
@@ -37,11 +37,40 @@ faqs:
 videoId: "zJ5t0lGR1gU"
 videoTitle: "PVE Enjoyer — Demolitionist Build Guide"
 videoChannel: "PVE Enjoyer"
+howTo:
+  name: "How to Stack Skill Multi-Shot Chance on a Demolitionist Build"
+  description: "Step-by-step guide to stacking 35-45% Skill Multi-Shot Chance on a Division Resurgence Demolitionist using Fire Cycle T2, Toymaker II, and the right weapon and firmware rolls."
+  totalTime: "PT2H"
+  tool:
+    - "Fire Cycle T2 gear set (4 pieces)"
+    - "Jackpot gear set (2 pieces)"
+    - "Toymaker II body armor talent"
+    - "StG 44 Assault Rifle"
+    - "Frag Grenades firmware set"
+    - "Applied Demolitions firmware set"
+  steps:
+    - name: "Equip 4pc Fire Cycle T2 for the +12% base"
+      text: "The Fire Cycle 4-piece set bonus grants +12% Skill Multi-Shot Chance passively. This is the single largest passive source on the build. Fire Cycle only drops from Tier 2 content."
+    - name: "Slot Toymaker II on chest for +21% at range"
+      text: "Toymaker II grants +21% Skill Multi-Shot Chance when no enemies are within 20 meters. Maintain glass-cannon distance to keep this active."
+    - name: "Roll Skill Multi-Shot Chance on gear sub-attributes"
+      text: "Target Skill Multi-Shot Chance as a sub-attribute on your mask (+2.69%), chest (+3.5%), and knee pads. These stack additively with the set bonus."
+    - name: "Use StG 44 with Skill Multi-Shot Chance weapon attribute"
+      text: "The StG 44 can roll Skill Multi-Shot Chance +7.81% as a weapon attribute. This adds directly to your total."
+    - name: "Equip Applied Demolitions firmware for Seeker Mine"
+      text: "The Applied Demolitions 3pc firmware rolls Skill Multi-Shot Chance +2.47% on the Seeker Mine mods."
+    - name: "Equip Frag Grenades firmware for Artillery Turret stacking"
+      text: "Frag Grenades 3pc grants +1% Skill Multi-Shot Chance per Artillery Turret damage tick for 10 seconds, stacking up to 5 times for +5% during combat."
 ---
 
 ## What This Build Does
 
-> Build credit: **PVE Enjoyer** (436-subscriber YouTube creator who puts out clean, honest Division Resurgence walkthroughs without the highlight-reel fluff). He posted his Demolitionist setup back in mid April, and the bones of the build are still solid heading into the 1.1.2.2 patch. We pulled every number straight off his in-game tooltips, so nothing in this post is a guess. Watch his original walkthrough on [YouTube](https://www.youtube.com/watch?v=zJ5t0lGR1gU).
+<div class="callout callout--info">
+<div class="callout__header"><strong class="callout__title">Build Credit</strong></div>
+<div class="callout__body">
+<p><strong>PVE Enjoyer</strong> (436-subscriber YouTube creator who puts out clean, honest Division Resurgence walkthroughs without the highlight-reel fluff). He posted his Demolitionist setup back in mid April, and the bones of the build are still solid heading into the 1.1.2.2 patch. We pulled every number straight off his in-game tooltips. Watch his <a href="https://www.youtube.com/watch?v=zJ5t0lGR1gU">original walkthrough on YouTube</a>.</p>
+</div>
+</div>
 
 This is a **Demolitionist glass cannon** that turns Skill Multi-Shot Chance into a wrecking ball. PVE Enjoyer is running **22.32k Power Score, 333.25k DPS, 6,718 Armor, and 117,900 Health on a Level 40 PVE character**, with **291 Firepower, 702 Engineering, and 1.59k Toughness** on the sheet. The 4pc Fire Cycle T2 set is the engine. It stacks Skill Critical Damage, Signature Ability Charge Efficiency, and a fat +12% Skill Multi-Shot Chance just for wearing four pieces. The 2pc Jackpot rounds it out with a chunk of Skill Radius and signature charge. **[Pressing Matter](/database/os-protocols/pressing-matter/)** OS Protocol gives him +24% Skill Intensity and an extra 10% Skill Cooldown Recovery on the chassis. The play loop: drop the Artillery Turret, toss out an Explosive Seeker Mine, sit back roughly 20 meters, and let the M32A1 grenade launcher signature finish whatever crawls out. His words on the playstyle were short and to the point: he plays glass cannon, deals damage, and lets the turret do the babysitting.
 
@@ -78,7 +107,14 @@ His actual in-game numbers for reference:
 
 **Core roll philosophy:** Engineering is the king stat for this build. PVE Enjoyer is blunt about it on camera when he scrolls through his attribute pool: roll Engineering on the gear core wherever it is available, then chase Skill Intensity, Skill Critical Damage, Skill Critical Chance, and Skill Multi-Shot Chance on the sub-attributes. Engineering is the multiplier baked into every Demolitionist skill, your turret, your seeker mine, and the [Pressing Matter](/database/os-protocols/pressing-matter/) OS bonus. Stack it everywhere it appears and the sheet numbers move on their own.
 
-**Set split:** 4pc Fire Cycle T2 + 2pc Jackpot. The Fire Cycle 4-piece is the heart of the build. PVE Enjoyer points out a hard requirement on camera: Fire Cycle pieces only drop at Tier 2, so you have to hit Conflicts Level 100 or push the harder PVE content before this set even shows up in your loot pool. If you are not at T2 yet, he says, run a 4pc Jackpot setup instead until you get there. The 2pc Jackpot fills the holster and knee pad slots and tosses in a clean +12% Skill Radius. Easy synergy.
+**Set split:** 4pc Fire Cycle T2 + 2pc Jackpot. The Fire Cycle 4-piece is the heart of the build.
+
+<div class="callout callout--warning">
+<div class="callout__header"><strong class="callout__title">T2 Progression Gate</strong></div>
+<div class="callout__body">
+<p>Fire Cycle pieces only drop at Tier 2. You must hit Conflicts Level 100 or push harder PVE content before this set shows up in your loot pool. If you are not at T2 yet, run a 4pc Jackpot setup as a bridge build.</p>
+</div>
+</div>
 
 **Combo set bonuses (Fire Cycle 4/4):**
 
@@ -138,6 +174,13 @@ The mask is the cheapest Fire Cycle T2 piece to slot, but it rolls hot. 5.93k He
 The chest is the damage stacker. **Toymaker II** is the headline talent: "Grants +21% Skill Multi-Shot Chance when there are no enemies within 20 meters." That is why PVE Enjoyer plays glass cannon and sits back. Stay outside the 20m radius and you are running a +21% Skill Multi-Shot Chance on top of the +12% from the Fire Cycle 4pc. Add the Skill Multi-Shot rolls on the gear sub-attributes and the StG 44 weapon attributes, and your skill shots are firing twice constantly.
 
 The Ops Armor itself rolls 4.20k Health and 1.69k Armor at Level 50 with +69 Firepower, +59 Armor, and +169 Skill Power on the core, then +3.5% Skill Multi-Shot Chance and +2.88% Damage to Elites on the sub-attributes. Solid.
+
+<div class="callout callout--warning">
+<div class="callout__header"><strong class="callout__title">20m Glass-Cannon Range</strong></div>
+<div class="callout__body">
+<p>Toymaker II only fires when no enemies are within 20 meters. If you play closer, you lose +21% Skill Multi-Shot Chance and the build's damage drops hard. If you prefer a closer playstyle, swap Toymaker for Injured Concealment II or Energize II.</p>
+</div>
+</div>
 
 **Chest talent alternatives:** If Toymaker II is a pain to roll, PVE Enjoyer flips through a few other options on camera that work for the build:
 
