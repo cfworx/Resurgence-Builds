@@ -32,6 +32,21 @@ const { title, description, breadcrumbs, heading, subheading, jsonLd, lastVerifi
     )}
 
     <slot />
+
+    {faqs && faqs.length > 0 && (
+      <div class="faq-section" style="margin-top: var(--sp-8);">
+        <h2 style="font-family: var(--font-heading); font-size: var(--text-2xl); font-weight: 800; margin-bottom: var(--sp-4);">Frequently Asked Questions</h2>
+        <div class="faq-list" style="display: flex; flex-direction: column; gap: var(--sp-2);">
+          {faqs.map(faq => (
+            <details class="faq-item">
+              <summary class="faq-question">{faq.question}</summary>
+              <p class="faq-answer">{faq.answer}</p>
+            </details>
+          ))}
+        </div>
+      </div>
+    )}
+
   </div>
 </BaseLayout>
 
