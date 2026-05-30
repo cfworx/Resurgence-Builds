@@ -162,34 +162,37 @@ const talentLd = {
       <!-- Best Builds -->
       <div style="margin-bottom: var(--sp-8);">
         <h2 style="font-family: var(--font-heading); font-size: var(--text-lg); font-weight: 800; color: #fff; margin: 0 0 var(--sp-4) 0; padding-bottom: var(--sp-2); border-bottom: 1px solid rgba(255,255,255,0.08);">Best Builds for {talent.name}</h2>
-        <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: var(--sp-3);">
-          {buildRecs.map((rec) => (
-            <li style="display: flex; align-items: flex-start; gap: var(--sp-3); padding: var(--sp-4); background: rgba(0,0,0,0.2); border-radius: 8px; border: 1px solid rgba(255,255,255,0.05);">
-              <span style="color: var(--accent); font-size: var(--text-lg); line-height: 1; flex-shrink: 0;">▸</span>
-              <span style="color: #c8c8d0; line-height: 1.65; font-size: var(--text-base);">{rec}</span>
-            </li>
-          ))}
-        </ul>
+        <div style="color: #c8c8d0; line-height: 1.75; font-size: var(--text-base);">
+          <p>{isDPS && isTank ? `${talent.name} is one of the few backpack talents that bridges offense and defense. DPS mains who occasionally get caught in the open will appreciate the safety net, and tanks who want to contribute damage instead of just soaking hits will get real value here. Run it on Vanguard builds that push aggressively or Bulwark setups that want to hit back harder.` : isDPS ? `${talent.name} belongs on any build where killing things faster is the goal. Vanguard DPS builds stacking Firepower get the most mileage — pair it with an AR or LMG primary and watch the numbers climb. If you're running Fury Strike or Phalanx Attack gear sets, this backpack talent multiplies on top of your set bonuses for serious damage output.` : isSkill ? `Skill builds running high Engineering are where ${talent.name} really shines. Demolitionist Artillery Turret setups, Tech Operator drone builds, and any loadout where your skills are doing 60%+ of your damage will feel the difference immediately. Stack it with Jackpot or Long-term Effect gear sets for maximum skill carnage.` : isTank ? `${talent.name} is built for the frontline. Bulwark Breacher shield builds, Field Medic face-tankers, and anyone who needs to eat shots in Legendary or Dark Zone PvP without folding. Pair it with Fearless Warrior or Self-Propelled Shield gear sets and a Toughness OS Protocol — you become the agent who simply refuses to go down.` : `${talent.name} is flexible enough to work across multiple build archetypes. If you haven't committed to a specific playstyle yet, this is a safe pick that won't actively hurt any setup. Once you know your build direction, you can swap to a more specialized talent — but honestly, versatility has its own value.`}</p>
+          {isTeam && <p>This talent also benefits your squad, making it extra valuable in group Heroic/Legendary runs and Strongholds. Your teammates will appreciate the passive support even if they don't realize where it's coming from.</p>}
+        </div>
       </div>
 
-      <!-- Synergies -->
+      <!-- Synergies & Stacking -->
       <div style="margin-bottom: var(--sp-8);">
-        <h2 style="font-family: var(--font-heading); font-size: var(--text-lg); font-weight: 800; color: #fff; margin: 0 0 var(--sp-4) 0; padding-bottom: var(--sp-2); border-bottom: 1px solid rgba(255,255,255,0.08);">Synergies</h2>
-        <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: var(--sp-3);">
-          {synergies.map((syn) => (
-            <li style="display: flex; align-items: flex-start; gap: var(--sp-3); padding: var(--sp-4); background: rgba(0,0,0,0.2); border-radius: 8px; border: 1px solid rgba(255,255,255,0.05);">
-              <span style="color: #6DAA45; font-size: var(--text-lg); line-height: 1; flex-shrink: 0;">⬡</span>
-              <span style="color: #c8c8d0; line-height: 1.65; font-size: var(--text-base);">{syn}</span>
-            </li>
-          ))}
-        </ul>
+        <h2 style="font-family: var(--font-heading); font-size: var(--text-lg); font-weight: 800; color: #fff; margin: 0 0 var(--sp-4) 0; padding-bottom: var(--sp-2); border-bottom: 1px solid rgba(255,255,255,0.08);">Synergies &amp; Stacking</h2>
+        <div style="color: #c8c8d0; line-height: 1.75; font-size: var(--text-base);">
+          <p>Backpack talents in Division Resurgence stack <strong style="color: #fff;">multiplicatively</strong> with your weapon talent, gear set bonuses, and OS Protocol — every layer multiplies your total output rather than just adding to it. The right backpack talent in a fully synergized build can push your effective performance 20-30% higher than running a mismatched one. Your backpack talent is one of only two gear talent slots (the other being chest), so choose carefully.</p>
+          <p>{isDPS ? `For a damage-focused talent like ${talent.name}, pair it with Fury Strike (Crit) or Phalanx Attack (sustained fire) gear sets and a Firepower OS Protocol. Your weapon talent should complement the same archetype — In Sync for hybrid, Killer for crit chains, or Measured for sustained spray. The multiplicative stacking between all four layers (backpack + chest + weapon + OS Protocol) is where DPS builds go from good to disgusting.` : isSkill ? `${talent.name} pairs naturally with Jackpot (Skill Crit) or Long-term Effect (Skill Duration) gear sets. Run an Engineering OS Protocol with Skill Intensity main stat, and a weapon talent like In Sync or Spike to bridge gun damage into skill buffs. The four-layer multiplicative stack (backpack + chest + weapon talent + OS Protocol) is how skill builds hit absurd numbers.` : isTank ? `${talent.name} synergizes with Fearless Warrior (DR + Damage) or Self-Propelled Shield (Armor/Health) gear sets. Toughness OS Protocol with Damage Reduction or Armor main stat. Your chest talent should also lean defensive — pair with Duality or Unflinching for maximum survivability stacking. In Legendary content, this combo is the difference between comfortable clears and constant revive screens.` : `${talent.name} works with whatever gear set matches your primary playstyle. The key is consistency — pick a direction (DPS, tank, skills) and make sure your backpack talent, chest talent, gear set, and OS Protocol all pull the same way. Mixed builds sound cool on paper but get outperformed by focused setups every time.`}</p>
+        </div>
+      </div>
+
+      <!-- How to Get -->
+      <div style="margin-bottom: var(--sp-8);">
+        <h2 style="font-family: var(--font-heading); font-size: var(--text-lg); font-weight: 800; color: #fff; margin: 0 0 var(--sp-4) 0; padding-bottom: var(--sp-2); border-bottom: 1px solid rgba(255,255,255,0.08);">How to Get {talent.name}</h2>
+        <div style="color: #c8c8d0; line-height: 1.75; font-size: var(--text-base);">
+          <p>Backpack talents roll randomly on <strong style="color: #fff;">Tier 2 backpacks</strong>. Any T2 backpack drop can have {talent.name} — farm Heroic missions, weekly bounties, DZ extractions, and Conflict reward tracks for T2 gear drops. The talent is passive, meaning it activates automatically once equipped with no button press or condition to remember.</p>
+          <p>If you find a backpack with great stats but the wrong talent, use the <strong style="color: #fff;">Recalibration Station</strong> to swap it. Extract {talent.name} from any backpack that has it — it saves permanently in your Recalibration Library. Then apply it to your target piece. Remember: <strong style="color: var(--accent);">one recal slot per gear piece</strong>. If you already recalibrated a stat on that backpack, you can't also swap the talent. Plan ahead.</p>
+        </div>
       </div>
 
       <!-- Related Links -->
       <div style="display: flex; flex-wrap: wrap; gap: var(--sp-3); padding-top: var(--sp-6); border-top: 1px solid rgba(255,255,255,0.08);">
         <a href="/database/backpack-talents/" style="font-family: var(--font-mono); font-size: var(--text-sm); color: var(--accent); text-decoration: none; padding: var(--sp-2) var(--sp-4); background: rgba(242,104,34,0.08); border: 1px solid rgba(242,104,34,0.2); border-radius: 6px; transition: all 0.2s;">&larr; All Backpack Talents</a>
         <a href="/database/body-armor-talents/" style="font-family: var(--font-mono); font-size: var(--text-sm); color: var(--accent); text-decoration: none; padding: var(--sp-2) var(--sp-4); background: rgba(242,104,34,0.08); border: 1px solid rgba(242,104,34,0.2); border-radius: 6px; transition: all 0.2s;">Body Armor Talents</a>
-        <a href="/tier-list/" style="font-family: var(--font-mono); font-size: var(--text-sm); color: var(--accent); text-decoration: none; padding: var(--sp-2) var(--sp-4); background: rgba(242,104,34,0.08); border: 1px solid rgba(242,104,34,0.2); border-radius: 6px; transition: all 0.2s;">Build Tier List</a>
+        <a href="/database/gear-set-effects/" style="font-family: var(--font-mono); font-size: var(--text-sm); color: var(--accent); text-decoration: none; padding: var(--sp-2) var(--sp-4); background: rgba(242,104,34,0.08); border: 1px solid rgba(242,104,34,0.2); border-radius: 6px; transition: all 0.2s;">Gear Sets</a>
+        <a href="/database/os-protocols/" style="font-family: var(--font-mono); font-size: var(--text-sm); color: var(--accent); text-decoration: none; padding: var(--sp-2) var(--sp-4); background: rgba(242,104,34,0.08); border: 1px solid rgba(242,104,34,0.2); border-radius: 6px; transition: all 0.2s;">OS Protocols</a>
+        <a href="/tier-list/" style="font-family: var(--font-mono); font-size: var(--text-sm); color: var(--accent); text-decoration: none; padding: var(--sp-2) var(--sp-4); background: rgba(242,104,34,0.08); border: 1px solid rgba(242,104,34,0.2); border-radius: 6px; transition: all 0.2s;">Tier List</a>
       </div>
     </div>
 

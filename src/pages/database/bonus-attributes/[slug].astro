@@ -287,6 +287,15 @@ const toAttrSlug = (name: string) => name.toLowerCase().replace(/[^a-z0-9]+/g, '
         </div>
       </div>
 
+      <!-- Recalibration Strategy -->
+      <div class="attr-section">
+        <h2 class="attr-section__title">Recalibration Strategy</h2>
+        <div style="color: #c8c8d0; line-height: 1.75; font-size: var(--text-base);">
+          <p>Bonus attributes in Division Resurgence stack <strong style="color: #fff;">multiplicatively</strong> with gear set bonuses, weapon talents, and OS Protocol talents — which means stacking {attribute} across multiple gear pieces compounds your total {category.toLowerCase()} output rather than just adding to it. A build optimized with {attribute} on every available slot outperforms a build with random bonus attributes by 20-40% in the stat it targets.</p>
+          <p>When recalibrating, prioritize the gear slots that can roll the <strong style="color: #fff;">highest values</strong> for {attribute}. Each piece only gets one recalibration slot, so you need to decide: swap the core stat, the bonus attribute, or the talent? For most builds, locking in the right talent and core stat first, then recalibrating the bonus attribute last, gives you the most flexibility. Extract high rolls of {attribute} from junk gear into your <strong style="color: var(--accent);">Recalibration Library</strong> — once stored, it's available permanently for any future gear piece.</p>
+        </div>
+      </div>
+
       <!-- Related Attributes -->
       {siblings.length > 0 && (
         <div class="attr-section">

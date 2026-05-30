@@ -20,6 +20,8 @@
     data = JSON.parse(dataEl.textContent);
     initMap();
     buildMarkers();
+    initFilters();
+    initMobileFilters();
 
     // Dev coordinate picker — Shift+Click copies pixel coords
     map.on('click', (e) => {
@@ -241,6 +243,102 @@
 
   function saveProgress(set) {
     localStorage.setItem(PROGRESS_KEY, JSON.stringify([...set]));
+  }
+
+  /* --- Filter System --- */
+  const FILTER_KEY = 'rb-map-filters-v1';
+  let activeFilters = loadFilters();
+
+  function loadFilters() {
+    try {
+      const saved = JSON.parse(localStorage.getItem(FILTER_KEY));
+      if (saved && typeof saved === 'object') return saved;
+    } catch {}
+    // Default from data
+    const defaults = {};
+    return defaults;
+  }
+
+  function saveFilters(filters) {
+    localStorage.setItem(FILTER_KEY, JSON.stringify(filters));
+  }
+
+  function initFilters() {
+    const checkboxes = document.querySelectorAll('.filter-checkbox');
+
+    // Apply saved state or defaults
+    checkboxes.forEach(cb => {
+      const catId = cb.dataset.category;
+      if (activeFilters[catId] !== undefined) {
+        cb.checked = activeFilters[catId];
+      }
+      // Apply initial visibility
+      applyFilter(catId, cb.checked);
+    });
+
+    // Update POI counts
+    updateFilterCounts();
+
+    // Listen for changes
+    checkboxes.forEach(cb => {
+      cb.addEventListener('change', () => {
+        const catId = cb.dataset.category;
+        activeFilters[catId] = cb.checked;
+        saveFilters(activeFilters);
+        applyFilter(catId, cb.checked);
+      });
+    });
+  }
+
+  function applyFilter(categoryId, visible) {
+    allMarkers.forEach(marker => {
+      if (marker.poi && marker.poi.category === categoryId) {
+        if (visible) {
+          if (!map.hasLayer(marker)) marker.addTo(map);
+        } else {
+          if (map.hasLayer(marker)) map.removeLayer(marker);
+        }
+      }
+    });
+  }
+
+  function updateFilterCounts() {
+    const counts = {};
+    for (const poi of data.pois) {
+      counts[poi.category] = (counts[poi.category] || 0) + 1;
+    }
+    document.querySelectorAll('.filter-count').forEach(el => {
+      const catId = el.dataset.countFor;
+      el.textContent = counts[catId] || '0';
+    });
+  }
+
+  /* --- Mobile Filter Panel --- */
+  function initMobileFilters() {
+    const panel = document.getElementById('map-filters');
+    const toggle = document.getElementById('filters-toggle');
+    const close = document.getElementById('filters-close');
+    if (!panel || !toggle) return;
+
+    // Create backdrop
+    const backdrop = document.createElement('div');
+    backdrop.className = 'map-filters-backdrop';
+    document.body.appendChild(backdrop);
+
+    function openFilters() {
+      panel.classList.add('is-open');
+      backdrop.classList.add('is-open');
+      toggle.style.display = 'none';
+    }
+    function closeFilters() {
+      panel.classList.remove('is-open');
+      backdrop.classList.remove('is-open');
+      toggle.style.display = '';
+    }
+
+    toggle.addEventListener('click', openFilters);
+    if (close) close.addEventListener('click', closeFilters);
+    backdrop.addEventListener('click', closeFilters);
   }
 
 })();

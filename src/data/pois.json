@@ -13,19 +13,7 @@
     { "id": "dark_zone", "name": "Dark Zone", "level": "DZ", "bbox": [1050, 100, 1850, 1000], "contaminated": true }
   ],
   "categories": [
-    { "id": "safe_house", "label": "Safe Houses", "icon": "/icons/map/safehouse.svg", "color": "#F26822", "group": "World", "defaultOn": true },
-    { "id": "main_mission", "label": "Main Missions", "icon": "/icons/map/mission.svg", "color": "#ffcc33", "group": "World", "defaultOn": true },
-    { "id": "side_mission", "label": "Side Missions", "icon": "/icons/map/side.svg", "color": "#ffaa55", "group": "World", "defaultOn": true },
-    { "id": "control_point", "label": "Control Points", "icon": "/icons/map/cp.svg", "color": "#ff5050", "group": "World", "defaultOn": true },
-    { "id": "nest", "label": "Nests", "icon": "/icons/map/nest.svg", "color": "#aa00ff", "group": "World", "defaultOn": true },
-    { "id": "ammo_crate", "label": "Ammo Crates", "icon": "/icons/map/ammo.svg", "color": "#ffffff", "group": "Collectibles", "defaultOn": false },
-    { "id": "lockbox", "label": "Lockboxes", "icon": "/icons/map/lockbox.svg", "color": "#ff3333", "group": "Collectibles", "defaultOn": true },
-    { "id": "cryptic_clue", "label": "Cryptic Clues", "icon": "/icons/map/clue.svg", "color": "#00ffd5", "group": "Collectibles", "defaultOn": true },
-    { "id": "collectible", "label": "Collectibles", "icon": "/icons/map/collectible.svg", "color": "#00bfff", "group": "Collectibles", "defaultOn": true },
-    { "id": "echo", "label": "Echoes", "icon": "/icons/map/echo.svg", "color": "#00ffff", "group": "Collectibles", "defaultOn": false },
-    { "id": "named_boss", "label": "Named Bosses", "icon": "/icons/map/boss.svg", "color": "#ff0033", "group": "Dark Zone", "defaultOn": false },
-    { "id": "fast_travel", "label": "Fast Travel", "icon": "/icons/map/travel.svg", "color": "#ffffff", "group": "Services", "defaultOn": false },
-    { "id": "dz_gate", "label": "Dark Zone Gates", "icon": "/icons/map/dz.svg", "color": "#9933ff", "group": "Dark Zone", "defaultOn": true }
+    { "id": "safe_house", "label": "Safe Houses", "icon": "/icons/map/safehouse.svg", "color": "#F26822", "group": "World", "defaultOn": true }
   ],
   "pois": [
     {

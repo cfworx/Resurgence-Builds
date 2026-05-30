@@ -162,9 +162,19 @@ const talentLd = {
       <!-- Synergies -->
       <div style="margin-bottom: var(--sp-8);">
         <h2 style="font-family: var(--font-heading); font-size: var(--text-lg); font-weight: 800; color: #fff; margin: 0 0 var(--sp-4) 0; padding-bottom: var(--sp-2); border-bottom: 1px solid rgba(255,255,255,0.08);">Synergies &amp; Gear Pairings</h2>
-        <p style="color: #c8c8d0; line-height: 1.75; font-size: var(--text-base);">
-          {getSynergies()}
-        </p>
+        <div style="color: #c8c8d0; line-height: 1.75; font-size: var(--text-base);">
+          <p>{getSynergies()}</p>
+          <p>Your chest talent is one of only <strong style="color: #fff;">two gear talent slots</strong> in Division Resurgence (backpack being the other). Both stack multiplicatively with weapon talents, gear set bonuses, and OS Protocol talents — meaning the right combo doesn't add damage, it multiplies your entire output. A fully synergized build with matching chest + backpack + weapon talent + gear set 4pc + OS Protocol can outperform a mismatched setup by 40-50%. This is why your chest talent choice matters more than most individual stat rolls on your gear.</p>
+        </div>
+      </div>
+
+      <!-- How to Get -->
+      <div style="margin-bottom: var(--sp-8);">
+        <h2 style="font-family: var(--font-heading); font-size: var(--text-lg); font-weight: 800; color: #fff; margin: 0 0 var(--sp-4) 0; padding-bottom: var(--sp-2); border-bottom: 1px solid rgba(255,255,255,0.08);">How to Get {talent.name}</h2>
+        <div style="color: #c8c8d0; line-height: 1.75; font-size: var(--text-base);">
+          <p>Body armor talents roll randomly on <strong style="color: #fff;">Tier 2 chest pieces</strong>. Farm Heroic missions (guaranteed T2 drops), weekly bounties, DZ extractions, and Conflict caches. {talent.name} is a passive talent — once equipped, it's always active with no button press needed.</p>
+          <p>Got a chest piece with perfect stats but the wrong talent? Use the <strong style="color: #fff;">Recalibration Station</strong> to swap it. Extract {talent.name} from any chest that has it — saves permanently in your Recalibration Library. Apply it to your target piece. One recal slot per gear piece, so if you already recalibrated a stat on that chest, the talent is locked in. Plan your recalibrations before committing. Check the <a href="/guides/division-resurgence-codes/" style="color: var(--accent);">active codes page</a> — Ubisoft drops gear caches during events that can roll solid talents.</p>
+        </div>
       </div>
 
       <!-- Related Links -->
@@ -172,7 +182,8 @@ const talentLd = {
         <a href="/database/body-armor-talents/" style="font-family: var(--font-mono); font-size: var(--text-sm); color: var(--accent); text-decoration: none; padding: var(--sp-2) var(--sp-4); background: rgba(242,104,34,0.08); border: 1px solid rgba(242,104,34,0.2); border-radius: 6px; transition: all 0.2s;">&larr; All Body Armor Talents</a>
         <a href="/database/backpack-talents/" style="font-family: var(--font-mono); font-size: var(--text-sm); color: var(--accent); text-decoration: none; padding: var(--sp-2) var(--sp-4); background: rgba(242,104,34,0.08); border: 1px solid rgba(242,104,34,0.2); border-radius: 6px; transition: all 0.2s;">Backpack Talents</a>
         <a href="/database/gear-set-effects/" style="font-family: var(--font-mono); font-size: var(--text-sm); color: var(--accent); text-decoration: none; padding: var(--sp-2) var(--sp-4); background: rgba(242,104,34,0.08); border: 1px solid rgba(242,104,34,0.2); border-radius: 6px; transition: all 0.2s;">Gear Sets</a>
-        <a href="/tier-list/" style="font-family: var(--font-mono); font-size: var(--text-sm); color: var(--accent); text-decoration: none; padding: var(--sp-2) var(--sp-4); background: rgba(242,104,34,0.08); border: 1px solid rgba(242,104,34,0.2); border-radius: 6px; transition: all 0.2s;">Build Tier List</a>
+        <a href="/database/os-protocols/" style="font-family: var(--font-mono); font-size: var(--text-sm); color: var(--accent); text-decoration: none; padding: var(--sp-2) var(--sp-4); background: rgba(242,104,34,0.08); border: 1px solid rgba(242,104,34,0.2); border-radius: 6px; transition: all 0.2s;">OS Protocols</a>
+        <a href="/tier-list/" style="font-family: var(--font-mono); font-size: var(--text-sm); color: var(--accent); text-decoration: none; padding: var(--sp-2) var(--sp-4); background: rgba(242,104,34,0.08); border: 1px solid rgba(242,104,34,0.2); border-radius: 6px; transition: all 0.2s;">Tier List</a>
       </div>
     </div>
 

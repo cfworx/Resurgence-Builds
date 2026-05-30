@@ -417,21 +417,6 @@ const dataPayload = JSON.stringify({ gearSets, weaponTalents, exoticWeapons, sta
    Division Resurgence HUD-inspired dark tactical theme
    ============================================================ */
 
-/* --- Purple Flame Palette --- */
-.builder-app {
-  --flame-1: #c084fc;
-  --flame-2: #a855f7;
-  --flame-3: #7c3aed;
-  --flame-glow: rgba(168, 85, 247, 0.35);
-  --flame-glow-deep: rgba(124, 58, 237, 0.25);
-  --gold-rarity: #f5a623;
-  --gold-dim: #c4841a;
-  --card-bg: linear-gradient(180deg, #141418 0%, #1a1a20 100%);
-  --card-bg-hover: linear-gradient(180deg, #18181e 0%, #1e1e26 100%);
-  --panel-border: #2f2f35;
-  --hud-glow: rgba(242, 104, 34, 0.08);
-}
-
 /* --- Hero --- */
 .builder-hero {
   padding: var(--sp-8) 0 var(--sp-6);
@@ -452,6 +437,28 @@ const dataPayload = JSON.stringify({ gearSets, weaponTalents, exoticWeapons, sta
   .builder-hero__title { font-size: var(--text-4xl) }
 }
 
+/* --- Builder App Background --- */
+.builder-app {
+  --flame-1: #c084fc;
+  --flame-2: #a855f7;
+  --flame-3: #7c3aed;
+  --flame-glow: rgba(168, 85, 247, 0.35);
+  --flame-glow-deep: rgba(124, 58, 237, 0.25);
+  --gold-rarity: #f5a623;
+  --gold-dim: #c4841a;
+  --card-bg: linear-gradient(180deg, #141418 0%, #1a1a20 100%);
+  --card-bg-hover: linear-gradient(180deg, #18181e 0%, #1e1e26 100%);
+  --panel-border: #2f2f35;
+  --hud-glow: rgba(242, 104, 34, 0.08);
+
+  padding: var(--sp-4) 0;
+  max-width: 1440px;
+  position: relative;
+  background:
+    linear-gradient(180deg, rgba(10,13,20,0.85) 0%, rgba(10,13,20,0.7) 50%, rgba(10,13,20,0.85) 100%),
+    url('/images/workbench-bg.png') center / cover no-repeat;
+}
+
 /* --- Beta Banner --- */
 .beta-banner {
   background: linear-gradient(90deg, var(--accent) 0%, var(--accent-dim) 100%);
@@ -466,7 +473,6 @@ const dataPayload = JSON.stringify({ gearSets, weaponTalents, exoticWeapons, sta
 }
 
 /* --- Layout: Outer / Grid --- */
-.builder-app { padding: var(--sp-4) 0; max-width: 1440px }
 .builder-outer { display: flex; flex-direction: column; gap: var(--sp-3) }
 @media(min-width:1200px) {
   .builder-outer { flex-direction: row }
