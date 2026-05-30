@@ -1,0 +1,102 @@
+{
+  "version": 1,
+  "image": { "width": 2190, "height": 1920 },
+  "districts": [
+    { "id": "hells_kitchen", "name": "Hell's Kitchen", "level": "1-5", "bbox": [340, 340, 720, 620] },
+    { "id": "clinton", "name": "Clinton", "level": "3-7", "bbox": [450, 100, 830, 340] },
+    { "id": "times_square", "name": "Times Square", "level": "5-10", "bbox": [720, 250, 1050, 520] },
+    { "id": "hudson_yards", "name": "Hudson Yards", "level": "5-10", "bbox": [180, 520, 600, 850] },
+    { "id": "garment_district", "name": "Garment District", "level": "8-12", "bbox": [650, 520, 1050, 830] },
+    { "id": "pennsylvania_plaza", "name": "Pennsylvania Plaza", "level": "10-14", "bbox": [500, 830, 950, 1150] },
+    { "id": "tenderloin", "name": "Tenderloin", "level": "12-16", "bbox": [850, 1100, 1250, 1450] },
+    { "id": "chelsea", "name": "Chelsea", "level": "12-16", "bbox": [350, 1150, 850, 1550] },
+    { "id": "dark_zone", "name": "Dark Zone", "level": "DZ", "bbox": [1050, 100, 1850, 1000], "contaminated": true }
+  ],
+  "categories": [
+    { "id": "safe_house", "label": "Safe Houses", "icon": "/icons/map/safehouse.svg", "color": "#F26822", "group": "World", "defaultOn": true },
+    { "id": "main_mission", "label": "Main Missions", "icon": "/icons/map/mission.svg", "color": "#ffcc33", "group": "World", "defaultOn": true },
+    { "id": "side_mission", "label": "Side Missions", "icon": "/icons/map/side.svg", "color": "#ffaa55", "group": "World", "defaultOn": true },
+    { "id": "control_point", "label": "Control Points", "icon": "/icons/map/cp.svg", "color": "#ff5050", "group": "World", "defaultOn": true },
+    { "id": "nest", "label": "Nests", "icon": "/icons/map/nest.svg", "color": "#aa00ff", "group": "World", "defaultOn": true },
+    { "id": "ammo_crate", "label": "Ammo Crates", "icon": "/icons/map/ammo.svg", "color": "#ffffff", "group": "Collectibles", "defaultOn": false },
+    { "id": "lockbox", "label": "Lockboxes", "icon": "/icons/map/lockbox.svg", "color": "#ff3333", "group": "Collectibles", "defaultOn": true },
+    { "id": "cryptic_clue", "label": "Cryptic Clues", "icon": "/icons/map/clue.svg", "color": "#00ffd5", "group": "Collectibles", "defaultOn": true },
+    { "id": "collectible", "label": "Collectibles", "icon": "/icons/map/collectible.svg", "color": "#00bfff", "group": "Collectibles", "defaultOn": true },
+    { "id": "echo", "label": "Echoes", "icon": "/icons/map/echo.svg", "color": "#00ffff", "group": "Collectibles", "defaultOn": false },
+    { "id": "named_boss", "label": "Named Bosses", "icon": "/icons/map/boss.svg", "color": "#ff0033", "group": "Dark Zone", "defaultOn": false },
+    { "id": "fast_travel", "label": "Fast Travel", "icon": "/icons/map/travel.svg", "color": "#ffffff", "group": "Services", "defaultOn": false },
+    { "id": "dz_gate", "label": "Dark Zone Gates", "icon": "/icons/map/dz.svg", "color": "#9933ff", "group": "Dark Zone", "defaultOn": true }
+  ],
+  "pois": [
+    {
+      "id": "sh_autumns_hope",
+      "category": "safe_house",
+      "district": "times_square",
+      "name": "Autumn's Hope",
+      "x": 1248,
+      "y": 415,
+      "description": "Safe house in the Times Square area. Encrypted crate inside (Code: 1883).",
+      "amenities": ["Stash", "Resupply", "Vendor"]
+    },
+    {
+      "id": "sh_lazarus_rest",
+      "category": "safe_house",
+      "district": "clinton",
+      "name": "Lazarus Rest",
+      "x": 972,
+      "y": 451,
+      "description": "Clinton district safe house near several encrypted crates.",
+      "amenities": ["Stash", "Resupply", "Vendor"]
+    },
+    {
+      "id": "sh_dantes_run",
+      "category": "safe_house",
+      "district": "hells_kitchen",
+      "name": "Dante's Run",
+      "x": 694,
+      "y": 603,
+      "description": "Hell's Kitchen district safe house. Encrypted crate inside clothing store (Code: 7716).",
+      "amenities": ["Stash", "Resupply", "Vendor"]
+    },
+    {
+      "id": "sh_kerman_station",
+      "category": "safe_house",
+      "district": "hudson_yards",
+      "name": "Kerman Station",
+      "x": 450,
+      "y": 1011,
+      "description": "Hudson Yards district safe house. Encrypted crate inside locker area (Code: 7069).",
+      "amenities": ["Stash", "Resupply", "Vendor"]
+    },
+    {
+      "id": "sh_the_cavern",
+      "category": "safe_house",
+      "district": "garment_district",
+      "name": "The Cavern",
+      "x": 1282,
+      "y": 939,
+      "description": "Garment District safe house. Encrypted crate inside (Code is randomized).",
+      "amenities": ["Stash", "Resupply", "Vendor"]
+    },
+    {
+      "id": "sh_the_meat_locker",
+      "category": "safe_house",
+      "district": "tenderloin",
+      "name": "The Meat Locker",
+      "x": 1354,
+      "y": 1435,
+      "description": "Tenderloin district safe house.",
+      "amenities": ["Stash", "Resupply", "Vendor"]
+    },
+    {
+      "id": "sh_camp_hudson",
+      "category": "safe_house",
+      "district": "chelsea",
+      "name": "Camp Hudson",
+      "x": 274,
+      "y": 1657,
+      "description": "Chelsea district safe house.",
+      "amenities": ["Stash", "Resupply", "Vendor"]
+    }
+  ]
+}
