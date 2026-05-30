@@ -110,8 +110,8 @@
                  ${found ? '<span class="poi-check">✓</span>' : ''}
                </div>`,
         className: 'poi-marker',
-        iconSize: [28, 28],
-        iconAnchor: [14, 14],
+        iconSize: [dotSize, dotSize],
+        iconAnchor: [halfDot, halfDot],
       });
 
       const marker = L.marker(rc.unproject([poi.x, poi.y]), { icon });
