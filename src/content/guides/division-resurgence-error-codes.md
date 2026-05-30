@@ -100,6 +100,8 @@ If you're stuck at this error and have already tried all four, you're looking at
 
 ## Error 6000010: Network Connection Error
 
+> **Full standalone guide:** [Division Resurgence Error 6000010: How to Fix the Network Connection Error →](/guides/division-resurgence-error-6000010/)
+
 > "Network connection error. Please check your network connection and try again or exit the game."
 
 The most common error in Division Resurgence. Happens at login, during matchmaking, when entering instances, and randomly mid-mission. Some players incorrectly report this as **error 600100** (one digit short, same code).
