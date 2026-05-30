@@ -1030,103 +1030,200 @@ const dataPayload = JSON.stringify({ gearSets, weaponTalents, exoticWeapons, sta
 .summary-section {
   padding: var(--sp-3) var(--sp-4);
   border-top: 1px solid var(--panel-border);
+  position: relative;
+}
+.summary-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(242,104,34,0.15), transparent);
 }
 .summary-section__title {
   font-family: var(--font-heading);
   font-size: 11px;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: var(--ink-muted);
-  margin-bottom: var(--sp-2);
+  letter-spacing: 0.1em;
+  color: var(--accent);
+  margin-bottom: var(--sp-3);
   display: flex;
   align-items: center;
   gap: 6px;
+  padding-bottom: 6px;
+  border-bottom: 1px dashed rgba(242,104,34,0.2);
 }
 .summary-section__icon { font-size: 13px }
-.summary-section__body { display: flex; flex-direction: column; gap: 8px }
+.summary-section__body { display: flex; flex-direction: column; gap: 6px }
 
-/* Loadout items */
+/* Loadout items — tactical card style */
 .summary-loadout-group {
-  padding: 10px 12px;
-  background: rgba(255,255,255,0.03);
-  border-radius: 6px;
+  padding: 0;
+  background: rgba(0,0,0,0.3);
+  border-radius: 4px;
   border: 1px solid rgba(255,255,255,0.06);
-  border-left: 3px solid var(--panel-border);
+  overflow: hidden;
+  position: relative;
+  transition: border-color 200ms ease;
 }
-.summary-loadout-group--spec { border-left-color: var(--accent); background: rgba(242,104,34,0.04) }
-.summary-loadout-group--weapon { border-left-color: #f97316; background: rgba(249,115,22,0.04) }
-.summary-loadout-group--os { border-left-color: #3b82f6; background: rgba(59,130,246,0.04) }
-.summary-loadout-group--chipset { border-left-color: #a855f7; background: rgba(168,85,247,0.04) }
-.summary-loadout-group--gear { border-left-color: #22c55e; background: rgba(34,197,94,0.04) }
+.summary-loadout-group:hover {
+  border-color: rgba(255,255,255,0.12);
+}
+.summary-loadout-group::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--panel-border);
+}
+.summary-loadout-group--spec::before { background: linear-gradient(90deg, var(--accent), rgba(242,104,34,0.3)); }
+.summary-loadout-group--weapon::before { background: linear-gradient(90deg, #f97316, rgba(249,115,22,0.3)); }
+.summary-loadout-group--os::before { background: linear-gradient(90deg, #3b82f6, rgba(59,130,246,0.3)); }
+.summary-loadout-group--chipset::before { background: linear-gradient(90deg, #a855f7, rgba(168,85,247,0.3)); }
+.summary-loadout-group--gear::before { background: linear-gradient(90deg, #22c55e, rgba(34,197,94,0.3)); }
+
 .summary-loadout-label {
   font-family: var(--font-mono);
   font-size: 9px;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: var(--ink-muted);
-  margin-bottom: 4px;
-  opacity: 0.7;
+  letter-spacing: 0.1em;
+  padding: 6px 10px 4px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
 }
+.summary-loadout-group--spec .summary-loadout-label { color: var(--accent); }
+.summary-loadout-group--weapon .summary-loadout-label { color: #f97316; }
+.summary-loadout-group--os .summary-loadout-label { color: #3b82f6; }
+.summary-loadout-group--chipset .summary-loadout-label { color: #a855f7; }
+.summary-loadout-group--gear .summary-loadout-label { color: #22c55e; }
+
 .summary-loadout-value {
   font-family: var(--font-heading);
-  font-size: 13px;
-  font-weight: 600;
-  color: var(--ink);
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff;
   line-height: 1.4;
+  padding: 0 10px 2px;
 }
 .summary-loadout-sub {
-  font-size: 11px;
+  font-size: 10px;
   color: var(--ink-muted);
-  margin-top: 3px;
-  padding-top: 3px;
+  padding: 4px 10px 8px;
   border-top: 1px solid rgba(255,255,255,0.04);
+  margin-top: 2px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
-/* Set bonus items */
+/* Set bonus items — tiered glow cards */
 .summary-set-item {
-  padding: 8px 10px;
-  background: rgba(0,0,0,0.2);
-  border-radius: 5px;
-  border-left: 3px solid var(--panel-border);
+  padding: 0;
+  background: rgba(0,0,0,0.3);
+  border-radius: 4px;
+  border: 1px solid rgba(255,255,255,0.06);
+  overflow: hidden;
+  position: relative;
   transition: all 200ms ease;
 }
-.summary-set-item.tier-2 { border-left-color: #9A9A9E }
-.summary-set-item.tier-3 { border-left-color: var(--flame-2); background: rgba(168,85,247,0.06) }
-.summary-set-item.tier-4 {
-  border-left-color: var(--flame-1);
-  background: rgba(168,85,247,0.1);
-  box-shadow: inset 0 0 12px rgba(168,85,247,0.05);
+.summary-set-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--panel-border);
 }
-.summary-set-name { font-family: var(--font-heading); font-weight: 700; font-size: 13px }
-.summary-set-count { font-family: var(--font-mono); font-size: 10px; color: var(--ink-muted); margin-left: 6px }
+.summary-set-item.tier-2::before { background: linear-gradient(90deg, #9A9A9E, rgba(154,154,158,0.3)); }
+.summary-set-item.tier-3::before { background: linear-gradient(90deg, var(--flame-2), rgba(168,85,247,0.3)); }
+.summary-set-item.tier-3 { border-color: rgba(168,85,247,0.2); box-shadow: 0 0 8px rgba(168,85,247,0.06); }
+.summary-set-item.tier-4::before { background: linear-gradient(90deg, var(--flame-1), var(--flame-3)); }
+.summary-set-item.tier-4 {
+  border-color: rgba(192,132,252,0.3);
+  box-shadow: 0 0 12px rgba(168,85,247,0.1), inset 0 0 12px rgba(168,85,247,0.03);
+}
+.summary-set-name {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 12px;
+  padding: 8px 10px 2px;
+  display: inline-block;
+}
+.summary-set-count {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  color: var(--flame-1);
+  background: rgba(168,85,247,0.15);
+  padding: 1px 6px;
+  border-radius: 3px;
+  margin-left: 4px;
+  vertical-align: middle;
+  letter-spacing: 0.04em;
+}
 .summary-set-bonus {
-  font-size: 11px;
+  font-size: 10px;
   color: var(--ink-muted);
-  margin-top: 3px;
-  line-height: 1.4;
-  padding-left: 8px;
-  border-left: 1px solid var(--panel-border);
+  line-height: 1.5;
+  padding: 2px 10px 2px 18px;
+  position: relative;
+}
+.summary-set-bonus:last-child { padding-bottom: 8px; }
+.summary-set-bonus::before {
+  content: '›';
+  position: absolute;
+  left: 10px;
+  color: var(--flame-2);
+  font-weight: 700;
 }
 
-/* Synergies & Conflicts */
+/* Synergies & Conflicts — tactical alert cards */
 .summary-synergy {
-  padding: 8px 10px;
-  background: rgba(34,197,94,0.06);
-  border-left: 3px solid #22c55e;
-  border-radius: 5px;
-  font-size: 12px;
+  padding: 0;
+  background: rgba(0,0,0,0.3);
+  border-radius: 4px;
+  border: 1px solid rgba(34,197,94,0.15);
+  font-size: 11px;
   color: var(--ink);
   line-height: 1.5;
+  overflow: hidden;
+  position: relative;
 }
+.summary-synergy::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #22c55e, rgba(34,197,94,0.3));
+}
+.summary-synergy strong { color: #22c55e; }
+.summary-synergy { padding: 10px 10px 8px; }
 .summary-conflict {
-  padding: 8px 10px;
-  background: rgba(239,68,68,0.06);
-  border-left: 3px solid #ef4444;
-  border-radius: 5px;
-  font-size: 12px;
+  padding: 10px 10px 8px;
+  background: rgba(0,0,0,0.3);
+  border-radius: 4px;
+  border: 1px solid rgba(239,68,68,0.15);
+  font-size: 11px;
   color: var(--ink);
   line-height: 1.5;
+  overflow: hidden;
+  position: relative;
 }
+.summary-conflict::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #ef4444, rgba(239,68,68,0.3));
+}
+.summary-conflict strong { color: #ef4444; }
 
 /* Bottom Actions */
 .summary-actions {
