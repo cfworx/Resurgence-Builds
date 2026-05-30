@@ -1,0 +1,365 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import SectionTag from '../../components/SectionTag.astro';
+
+const title = "Best OS Protocol Per Class in Division Resurgence - Patch 1.1.2.2 Guide";
+const description = "Find the best OS Protocol for every class in Division Resurgence. Per-class primary and backup recommendations for Vanguard, Field Medic, Bulwark, Demolitionist, and Tech Operator at Patch 1.1.2.2.";
+
+const breadcrumbs = [
+  { name: 'Best OS Protocol', url: '/guides/best-os-protocol/' }
+];
+
+const classes = [
+  {
+    name: 'Vanguard',
+    tagClass: 'tag--vanguard',
+    primary: {
+      name: 'Strategic Assistance',
+      spec: 'Engineering',
+      slug: 'strategic-assistance',
+      explanation: 'Strategic Assistance is the Vanguard\'s best OS Protocol because it generates Signature Ability Charge Efficiency and Skill Cooldown reduction through assists. The Vanguard thrives on Tactical Link and Scanning Pulse uptime, and this protocol directly amplifies both. Every assist you land accelerates your team\'s tempo, making this a must-have for group content.'
+    },
+    backup: {
+      name: 'Assault Charge',
+      spec: 'Firepower',
+      slug: 'assault-charge',
+      explanation: 'Assault Charge provides Signature burst windows that pair well with the Vanguard\'s aggressive positioning.'
+    }
+  },
+  {
+    name: 'Field Medic',
+    tagClass: 'tag--medic',
+    primary: {
+      name: 'Concerted Strike',
+      spec: 'Firepower',
+      slug: 'concerted-strike',
+      explanation: 'Concerted Strike makes the Field Medic a genuine hybrid threat. Skill hits within 20 meters grant +8% Damage stacks, which the class triggers constantly through Oxidizing Swarm and Support Station. You maintain healing uptime while passively stacking a serious damage buff that makes your weapon hits count.'
+    },
+    backup: {
+      name: 'Tactical Layering',
+      spec: 'Engineering',
+      slug: 'tactical-layering',
+      explanation: 'Tactical Layering gives +15% Engineering per skill deploy, boosting healing output if you prefer a pure support role.'
+    }
+  },
+  {
+    name: 'Bulwark',
+    tagClass: 'tag--bulwark',
+    primary: {
+      name: 'Pummeling Shield',
+      spec: 'Toughness',
+      slug: 'pummeling-shield',
+      explanation: 'Pummeling Shield defines the Bulwark class. The stun proc on every 10 hits and the extra health regeneration on damage taken makes Heroic content viable. Without this protocol, the Bulwark loses its core identity as the team\'s immovable anchor. There is no real second choice for serious play.'
+    },
+    backup: {
+      name: 'Heavy Armor',
+      spec: 'Toughness',
+      slug: 'heavy-armor',
+      explanation: 'Heavy Armor provides a damage bonus plus assist-triggered survivability, a solid option while farming for Pummeling Shield.'
+    }
+  },
+  {
+    name: 'Demolitionist',
+    tagClass: 'tag--demo',
+    primary: {
+      name: 'Surgical Engineering',
+      spec: 'Engineering',
+      slug: 'surgical-engineering',
+      explanation: 'Surgical Engineering is the Demolitionist\'s best protocol because of the 60% chance to gain +16% Skill Critical Damage on every Skill Crit. The Demolitionist has naturally high skill crit chance, so this proc triggers constantly. The stacking damage amplification pushes your explosive skills into one-shot territory on elites.'
+    },
+    backup: {
+      name: 'Explosive Charge',
+      spec: 'Engineering',
+      slug: 'explosive-charge',
+      explanation: 'Explosive Charge offers the highest skill damage ceiling with AoE on every enhanced skill hit, a strong alternative for pure AoE builds.'
+    }
+  },
+  {
+    name: 'Tech Operator',
+    tagClass: 'tag--tech',
+    primary: {
+      name: 'Tactical Layering',
+      spec: 'Engineering',
+      slug: 'tactical-layering',
+      explanation: 'Tactical Layering gives +15% Engineering per skill deployment, stacking up to 3 times. The Tech Operator\'s Striker Drone uptime and frequent skill rotation means you hit max stacks quickly and keep them. This scales perfectly with the class\'s design and keeps your Engineering stat compounding throughout encounters.'
+    },
+    backup: {
+      name: 'Relentless Assault',
+      spec: 'Engineering',
+      slug: 'relentless-assault',
+      explanation: 'Relentless Assault works well with sustained-fire skill builds, especially if you run LMG hybrids.'
+    }
+  }
+];
+
+const faqs = [
+  { question: "What is the best OS Protocol in Division Resurgence?", answer: "The strongest build-defining protocols are Explosive Charge (Engineering), Explosive Round (Firepower), and Pummeling Shield (Toughness). These three anchor the highest-performing builds in each specialization at Patch 1.1.2.2." },
+  { question: "How do OS Protocols work in Division Resurgence?", answer: "OS Protocols are unique gear-talent items that slot into your Operating System loadout. Each provides a main stat, three sub-stats, and a unique Talent that triggers under specific combat conditions. You can swap them freely at any safe house." },
+  { question: "Can you change OS Protocols mid-mission?", answer: "No. OS Protocols can only be swapped outside of combat, at a Base of Operations, safe house, or any non-combat area. Plan your protocol for the encounter you're about to enter." },
+  { question: "What is the best OS Protocol for Vanguard?", answer: "Strategic Assistance (Engineering, High-End). The assist-based Signature Ability Charge Efficiency and Skill Cooldown reduction directly amplify the class's reliance on Tactical Link and Scanning Pulse uptime." },
+  { question: "What is the best OS Protocol for Field Medic?", answer: "Concerted Strike (Firepower, High-End). Skill hits within 20 meters grant +8% Damage stacks, which the class triggers constantly through Oxidizing Swarm and Support Station." },
+  { question: "What is the best OS Protocol for Bulwark?", answer: "Pummeling Shield (Toughness, High-End). The Stun proc on every 10 hits and the Extra Health regen on damage makes the class viable at Heroic difficulty." },
+  { question: "What is the best OS Protocol for Demolitionist?", answer: "Surgical Engineering (Engineering, High-End). The 60% chance of +16% Skill Critical Damage on Skill Crits scales perfectly with the class's natural skill crit chance." },
+  { question: "What is the best OS Protocol for Tech Operator?", answer: "Tactical Layering (Engineering, High-End). +15% Engineering per skill deployment (up to 3 stacks) scales perfectly with Striker Drone uptime and skill rotation." },
+];
+---
+
+<BaseLayout {title} {description} breadcrumbs={breadcrumbs} faqs={faqs}>
+  <div class="container section">
+    <Breadcrumbs items={breadcrumbs} />
+    <SectionTag label="Guide" />
+    <h1 class="heading-accent">Best OS Protocol Per Class</h1>
+    <p style="color:var(--ink-muted);margin-bottom:var(--sp-3); max-width: 800px;">
+      The right OS Protocol turns a good build into a great one. Here's the best primary and backup protocol for every class in Division Resurgence, verified for Patch 1.1.2.2.
+    </p>
+
+    <div style="display: inline-flex; align-items: center; gap: 6px; font-family: var(--font-mono); font-size: var(--text-xs); color: #6DAA45; background: rgba(109, 170, 69, 0.1); border: 1px solid rgba(109, 170, 69, 0.25); padding: 6px 14px; border-radius: 999px; margin-bottom: var(--sp-8); letter-spacing: 0.02em;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+      <span>Last verified for <strong>Patch 1.1.2.2</strong></span>
+    </div>
+
+    <!-- Class Sections -->
+    <div class="class-sections">
+      {classes.map((cls) => (
+        <div class="class-section">
+          <div class="class-section__header">
+            <h2 class="class-section__name">{cls.name}</h2>
+            <span class={`tag ${cls.tagClass}`}>{cls.name}</span>
+          </div>
+
+          <!-- Primary Pick -->
+          <div class="protocol-pick protocol-pick--primary">
+            <div class="protocol-pick__badge">Primary</div>
+            <div class="protocol-pick__content">
+              <h3 class="protocol-pick__name">
+                <a href={`/database/os-protocols/#${cls.primary.slug}`}>{cls.primary.name}</a>
+                <span class="protocol-pick__spec">{cls.primary.spec}</span>
+              </h3>
+              <p class="protocol-pick__explanation">{cls.primary.explanation}</p>
+            </div>
+          </div>
+
+          <!-- Backup Pick -->
+          <div class="protocol-pick protocol-pick--backup">
+            <div class="protocol-pick__badge protocol-pick__badge--backup">Backup</div>
+            <div class="protocol-pick__content">
+              <h3 class="protocol-pick__name">
+                <a href={`/database/os-protocols/#${cls.backup.slug}`}>{cls.backup.name}</a>
+                <span class="protocol-pick__spec">{cls.backup.spec}</span>
+              </h3>
+              <p class="protocol-pick__explanation">{cls.backup.explanation}</p>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <!-- FAQ Section -->
+    <div class="faq-section" style="margin-top: var(--sp-8);">
+      <h2 style="font-family: var(--font-heading); font-size: var(--text-2xl); font-weight: 800; margin-bottom: var(--sp-4);">Frequently Asked Questions</h2>
+      <div class="faq-list" style="display: flex; flex-direction: column; gap: var(--sp-2);">
+        {faqs.map(faq => (
+          <details class="faq-item">
+            <summary class="faq-question">{faq.question}</summary>
+            <p class="faq-answer">{faq.answer}</p>
+          </details>
+        ))}
+      </div>
+    </div>
+
+    <!-- Related Links -->
+    <div style="margin-top: var(--sp-8); padding-top: var(--sp-6); border-top: 1px solid rgba(255,255,255,0.08);">
+      <h2 style="font-family: var(--font-heading); font-size: var(--text-xl); font-weight: 800; margin-bottom: var(--sp-4);">Related Resources</h2>
+      <div class="related-links">
+        <a href="/tier-list/os-protocols/" class="related-link">
+          <span class="related-link__label">Tier List</span>
+          <span class="related-link__title">OS Protocol Tier List</span>
+          <span class="related-link__desc">Every protocol ranked S to C</span>
+        </a>
+        <a href="/database/os-protocols/" class="related-link">
+          <span class="related-link__label">Database</span>
+          <span class="related-link__title">OS Protocols Database</span>
+          <span class="related-link__desc">Full stats, talents, and details</span>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</BaseLayout>
+
+<style>
+  .class-sections {
+    display: flex;
+    flex-direction: column;
+    gap: var(--sp-6);
+  }
+
+  .class-section {
+    background: linear-gradient(145deg, rgba(30,30,36,0.9) 0%, rgba(20,20,24,0.95) 100%);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 12px;
+    padding: var(--sp-6);
+    display: flex;
+    flex-direction: column;
+    gap: var(--sp-5);
+  }
+
+  .class-section__header {
+    display: flex;
+    align-items: center;
+    gap: var(--sp-3);
+    padding-bottom: var(--sp-4);
+    border-bottom: 1px solid rgba(255,255,255,0.07);
+  }
+
+  .class-section__name {
+    font-family: var(--font-heading);
+    font-size: var(--text-2xl);
+    font-weight: 800;
+    margin: 0;
+    color: #fff;
+  }
+
+  /* Protocol Picks */
+  .protocol-pick {
+    display: flex;
+    gap: var(--sp-4);
+    padding: var(--sp-5);
+    border-radius: 10px;
+    border: 1px solid rgba(242, 104, 34, 0.2);
+    background: rgba(242, 104, 34, 0.04);
+  }
+
+  .protocol-pick--backup {
+    border-color: rgba(255,255,255,0.1);
+    background: rgba(255,255,255,0.02);
+  }
+
+  .protocol-pick__badge {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--accent);
+    background: rgba(242, 104, 34, 0.12);
+    border: 1px solid rgba(242, 104, 34, 0.25);
+    padding: 4px 10px;
+    border-radius: 999px;
+    flex-shrink: 0;
+    height: fit-content;
+    white-space: nowrap;
+  }
+
+  .protocol-pick__badge--backup {
+    color: var(--ink-muted);
+    background: rgba(255,255,255,0.04);
+    border-color: rgba(255,255,255,0.12);
+  }
+
+  .protocol-pick__content {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .protocol-pick__name {
+    font-family: var(--font-heading);
+    font-size: var(--text-lg);
+    font-weight: 700;
+    margin: 0 0 var(--sp-2) 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--sp-2);
+  }
+
+  .protocol-pick__name a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 200ms ease;
+  }
+
+  .protocol-pick__name a:hover {
+    color: var(--accent);
+  }
+
+  .protocol-pick__spec {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #F5CC45;
+    background: rgba(245, 204, 69, 0.1);
+    border: 1px solid rgba(245, 204, 69, 0.25);
+    padding: 2px 8px;
+    border-radius: 999px;
+  }
+
+  .protocol-pick__explanation {
+    font-size: var(--text-sm);
+    line-height: 1.7;
+    color: #b8b8c0;
+    margin: 0;
+  }
+
+  /* Related Links */
+  .related-links {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--sp-3);
+  }
+
+  @media (min-width: 640px) {
+    .related-links {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .related-link {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: var(--sp-5);
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 10px;
+    text-decoration: none;
+    transition: all 200ms ease;
+  }
+
+  .related-link:hover {
+    border-color: rgba(242, 104, 34, 0.4);
+    background: rgba(242, 104, 34, 0.04);
+    transform: translateY(-2px);
+  }
+
+  .related-link__label {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--accent);
+  }
+
+  .related-link__title {
+    font-family: var(--font-heading);
+    font-size: var(--text-lg);
+    font-weight: 700;
+    color: #fff;
+  }
+
+  .related-link__desc {
+    font-size: var(--text-sm);
+    color: var(--ink-muted);
+  }
+
+  @media (max-width: 640px) {
+    .protocol-pick {
+      flex-direction: column;
+      gap: var(--sp-3);
+    }
+  }
+</style>
