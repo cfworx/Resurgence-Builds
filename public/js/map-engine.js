@@ -43,6 +43,23 @@
     }, { passive: true });
     mapEl.addEventListener('touchmove', () => { clearTimeout(longPressTimer); }, { passive: true });
     mapEl.addEventListener('touchend', () => { clearTimeout(longPressTimer); }, { passive: true });
+
+    // Flip popup below marker if it clips at the top
+    map.on('popupopen', (e) => {
+      const popup = e.popup;
+      const px = map.latLngToContainerPoint(popup.getLatLng());
+      const popupEl = popup.getElement();
+      if (!popupEl) return;
+      const popupH = popupEl.offsetHeight;
+      // If popup extends above the container, flip it below
+      if (px.y - popupH - 20 < 0) {
+        popup.options.offset = [0, popupH + 10];
+        popup.update();
+      } else {
+        popup.options.offset = [0, 0];
+        popup.update();
+      }
+    });
   });
 
   /* --- Coordinate Grabber (shared by Shift+Click and long-press) --- */
