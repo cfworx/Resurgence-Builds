@@ -1,0 +1,425 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../../components/Breadcrumbs.astro';
+import SectionTag from '../../../components/SectionTag.astro';
+import AdSenseUnit from '../../../components/AdSenseUnit.astro';
+import bonusAttributes from '../../../data/bonus-attributes.json';
+
+export function getStaticPaths() {
+  const paths: any[] = [];
+  bonusAttributes.forEach((cat: any) => {
+    cat.attributes.forEach((attr: string) => {
+      paths.push({
+        params: { slug: attr.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '') },
+        props: { attribute: attr, category: cat.category, siblings: cat.attributes.filter((a: string) => a !== attr) }
+      });
+    });
+  });
+  return paths;
+}
+
+const { attribute, category, siblings } = Astro.props;
+
+const slug = attribute.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+const siteUrl = 'https://resurgencebuilds.com';
+
+const title = `${attribute} — Division Resurgence Bonus Attribute`;
+const description = `${attribute} is a ${category} bonus attribute in Division Resurgence. Learn what it does, which builds stack it, how to recalibrate it, and why it matters for your loadout.`;
+
+const breadcrumbs = [
+  { name: 'Bonus Attributes', url: '/database/bonus-attributes/' },
+  { name: attribute, url: '#' }
+];
+
+const categoryColors: Record<string, { color: string; bg: string; border: string }> = {
+  'Firepower': { color: '#f87171', bg: 'rgba(239,68,68,0.12)', border: 'rgba(239,68,68,0.25)' },
+  'Toughness': { color: '#60a5fa', bg: 'rgba(59,130,246,0.12)', border: 'rgba(59,130,246,0.25)' },
+  'Engineering': { color: '#facc15', bg: 'rgba(234,179,8,0.12)', border: 'rgba(234,179,8,0.25)' },
+  'Universal': { color: '#b8b8c0', bg: 'rgba(255,255,255,0.06)', border: 'rgba(255,255,255,0.15)' },
+};
+
+const palette = categoryColors[category] || categoryColors['Universal'];
+
+// Build dynamic content per attribute
+type AttrInfo = {
+  overview: string;
+  whyItMatters: string;
+  howToGet: string;
+  bestBuilds: string;
+};
+
+const attrGuide: Record<string, AttrInfo> = {
+  'Weapon Critical Hit Chance': {
+    overview: 'Weapon Critical Hit Chance (CHC) is the probability that each bullet scores a critical hit. In Division Resurgence, crits aren\'t just "nice to have" — they\'re the entire foundation of DPS builds. Every percentage point of CHC you stack is a direct multiplier on your sustained damage output, especially when paired with high Critical Hit Damage.',
+    whyItMatters: 'DPS builds want CHC maxed as close to 50-60% as possible. After that cap, you pivot to stacking Critical Hit Damage instead. Vanguard and Firepower-heavy builds treat this as the #1 priority stat. Fury Strike gear set synergizes perfectly — its 4-piece bonus gives you additional crit stacking. SMGs get innate CHC, which is why they\'re so dominant in PvP.',
+    howToGet: 'CHC can roll on gloves, mask, and weapon mods. Recalibrate it onto any gear piece that\'s missing it. The Recalibration Library stores your best roll permanently — extract a high CHC roll from a junk piece, then stamp it onto your endgame gear. Some OS Protocols also have CHC as a secondary stat.',
+    bestBuilds: 'Every Firepower build in the game wants this. Vanguard DPS with Phalanx Attack 4pc, Bulwark Breacher with Fury Strike 4pc, any build using Killer or Concentrated Fire weapon talents. If your build fires bullets and wants them to hurt, CHC is non-negotiable.',
+  },
+  'Weapon Critical Hit Damage': {
+    overview: 'Weapon Critical Hit Damage (CHD) determines how hard your crits actually hit. A crit without CHD is just a yellow number that\'s barely bigger than a white one. Stack this after you\'ve got your CHC to a comfortable level and your crits start deleting health bars instead of tickling them.',
+    whyItMatters: 'CHD is a direct multiplier on every crit you land. Once your CHC is at 50%+, this becomes your highest-value stat. The relationship between CHC and CHD is the foundation of all DPS math in Division Resurgence — if you\'re ignoring either one, you\'re gimping your damage by 30-40%.',
+    howToGet: 'CHD rolls on chest, backpack, and weapon mods. Fury Strike gear set gives bonus CHD as part of its set bonuses. Recalibrate it onto your chest piece if it rolled something useless instead. Marksman Rifles get bonus headshot damage that stacks multiplicatively with CHD.',
+    bestBuilds: 'Fury Strike DPS builds, any Vanguard loadout running Killer or Concentrated Fire, Marksman Rifle snipers stacking one-shot potential. CHD is the stat that turns "this build crits often" into "this build one-taps elites."',
+  },
+  'Weapon Damage': {
+    overview: 'Weapon Damage is the most straightforward stat in the game — it makes your guns hit harder, period. No conditions, no proc requirements, no cooldowns. Every bullet from every weapon benefits. It\'s the "I don\'t want to think, I just want bigger numbers" stat, and honestly? It works.',
+    whyItMatters: 'Weapon Damage is an additive bonus to your base gun damage, which means it\'s most impactful early in your build where you don\'t have much of it yet. It scales linearly, so there are diminishing returns if you stack too much of it without also investing in multipliers like CHC/CHD. But for builds that don\'t crit (yes, they exist), this is king.',
+    howToGet: 'Weapon Damage rolls on gloves and some chest/backpack pieces. Most Firepower OS Protocols have it as a main stat. The Provocateur Bulwark mod combo also gives bonus Weapon Damage. Recalibrate it onto any piece that can roll it — especially gloves, which are your primary Weapon Damage slot.',
+    bestBuilds: 'Bulwark Breacher shield builds that need reliable per-shot damage, LMG sustained DPS builds, any non-crit loadout. Also valuable as a secondary stat on crit builds that already have CHC/CHD covered elsewhere.',
+  },
+  'Weapon Multi-Shot Chance': {
+    overview: 'Weapon Multi-Shot Chance gives each bullet a probability of hitting the target multiple times. When it procs, your single shot effectively becomes multiple shots — stacking talent procs, dealing extra damage, and occasionally making enemies question their life choices. It\'s RNG-based chaos and it\'s glorious.',
+    whyItMatters: 'Multi-Shot is the sleeper stat for sustained DPS builds. LMGs with their massive magazines get the most value — more bullets means more rolls of the dice, and when Multi-Shot procs on an LMG that\'s already firing 900 RPM, the DPS goes vertical. Phalanx Attack gear set has Multi-Shot synergies baked in.',
+    howToGet: 'Multi-Shot Chance appears on weapon mods and some gear pieces. Phalanx Attack gear set gives it as a set bonus. Certain skill mod combos also grant temporary Multi-Shot Chance. It\'s a rarer stat, so when you see a high roll, throw it in your Recalibration Library immediately.',
+    bestBuilds: 'LMG builds with Phalanx Attack 4pc, any sustained-fire DPS build that wants to proc weapon talents faster. Multi-Shot turns In Sync and Killer into nearly permanent buffs on high-RPM weapons.',
+  },
+  'Headshot Damage': {
+    overview: 'Headshot Damage is the sniper\'s best friend. If you can consistently land headshots, this stat turns every precision shot into a mini nuke. It multiplies damage specifically on headshot hits, which means Marksman Rifles and single-shot weapons benefit the most.',
+    whyItMatters: 'Headshot Damage is multiplicative with CHD, which means a crit headshot with high values in both stats absolutely ruins enemies. Sniper builds running Death From Afar OS Protocol with max Headshot Damage can one-tap elite enemies in Heroic content. If your aim is bad though, this stat does literally nothing — it\'s high risk, high reward.',
+    howToGet: 'Headshot Damage rolls on mask and some weapon mods. Marksman Rifles have innate headshot multipliers that stack with this. Death From Afar OS Protocol leans into headshot builds. Recalibrate it onto your mask — that\'s the highest-impact slot for this stat.',
+    bestBuilds: 'Marksman Rifle sniper builds, Death From Afar OS Protocol loadouts, any Vanguard or Demolitionist running a bolt-action primary. Useless on shotgun and SMG builds unless you\'re some kind of close-range headshot wizard.',
+  },
+  'Weapon Blast Damage': {
+    overview: 'Weapon Blast Damage increases the damage dealt by weapon blast effects. This applies to explosive rounds, certain weapon talents that deal AoE damage, and any weapon-based blast proc. It\'s a niche stat, but when your build uses blast mechanics, it hits different.',
+    whyItMatters: 'Blast Damage is relevant for builds running explosive weapon mods or talents that create AoE damage. It\'s particularly valuable on shotgun builds and grenade launcher sidearms where the blast component is a significant portion of total damage. Most builds won\'t need this, but the ones that do really feel the difference.',
+    howToGet: 'Weapon Blast Damage rolls on specific gear pieces and weapon mods. It\'s one of the rarer bonus attributes, so high rolls are worth preserving in your Recalibration Library. Check your gear carefully — it\'s easy to overlook this stat when you\'re speed-looting after missions.',
+    bestBuilds: 'Shotgun builds, explosive weapon talent builds, and Demolitionist loadouts that use weapon-based blast damage. Niche but powerful in the right setup.',
+  },
+  'Weapon Piercing Damage': {
+    overview: 'Weapon Piercing Damage increases damage dealt through armor-piercing mechanics. In Division Resurgence, some weapons and talents have piercing components that bypass enemy armor — this stat makes those hits hurt more. It\'s one of those stats that sounds boring until you see the damage numbers.',
+    whyItMatters: 'Against armored enemies (which is most of the endgame), piercing damage provides a direct damage boost that bypasses some damage reduction. This is particularly relevant in Legendary content where enemies have massive armor values. The difference between having and not having piercing damage against a Legendary boss is noticeable.',
+    howToGet: 'Piercing Damage can roll on certain gear slots and weapon mods. It\'s not the most common stat, so preserve good rolls. Some weapon types have innate piercing mechanics that scale with this stat.',
+    bestBuilds: 'Endgame PvE builds focused on boss damage, Legendary mission farming loadouts, and any build running weapons with piercing mechanics. Less useful in PvP where enemy armor values are lower.',
+  },
+  'Weapon Shredding Damage': {
+    overview: 'Weapon Shredding Damage boosts your damage against enemy armor specifically. When you\'re chewing through an elite enemy\'s armor bar, this stat accelerates the process. Think of it as anti-armor specialization — the stat that makes tanky enemies less tanky.',
+    whyItMatters: 'In endgame content, enemies are basically walking armor bars with health bars hiding underneath. Shredding Damage makes the most painful part of the fight — breaking armor — go faster. It\'s especially relevant in Legendary and Heroic modes where enemy armor pools are absurd.',
+    howToGet: 'Shredding Damage appears on certain gear pieces and weapon mods. It\'s a specialized stat, so you won\'t see it on every drop. When you find a high roll, add it to your Recalibration Library for future use.',
+    bestBuilds: 'PvE DPS builds focused on Heroic/Legendary content, armor-breaking support builds, and any loadout designed for time-attack content where speed-killing armored enemies is the goal.',
+  },
+  'Max Health': {
+    overview: 'Max Health is your total health pool — the green bar that sits behind your armor. When your armor breaks, this is all that\'s left between you and the respawn screen. More Max Health means more margin for error, more time for your healer to save you, and more face-tanking before things go sideways.',
+    whyItMatters: 'Tank builds and Field Medic Combat Medic builds stack Max Health alongside Armor for raw survivability. In PvP, the difference between 80k and 120k Health is the difference between getting two-tapped and having time to pop a medkit. Several skill mod combos also give bonuses based on your Max Health or Missing Health.',
+    howToGet: 'Max Health rolls on kneepads and some other gear slots. Toughness OS Protocols have it as a secondary stat. Some skill mod combos (like Frag Grenades and Cooling Device) grant Max Health as their 2-piece bonus. Recalibrate it onto your kneepads for the biggest impact.',
+    bestBuilds: 'Bulwark tank builds, Field Medic Combat Medic with Defensive Measures (damage scales on Toughness), any PvP build that needs to survive burst damage. Also important for solo players who can\'t rely on a healer.',
+  },
+  'Armor': {
+    overview: 'Armor is your first line of defense — the blue bar that takes hits before your health does. In Division Resurgence, armor damage reduction is percentage-based, meaning more armor gives you multiplicatively more effective HP. It\'s the single most important survivability stat for tank builds.',
+    whyItMatters: 'Every point of Armor directly reduces incoming damage before it touches your health. Bulwark builds stack this to become functionally immortal in Heroic content. The Ballistic Shield\'s durability also scales with your overall Toughness, which Armor contributes to. In PvP, high Armor + Damage Reduction makes you extremely annoying to kill.',
+    howToGet: 'Armor rolls on chest, backpack, holster, and kneepads. Self-Propelled Shield gear set stacks Armor bonuses. Multiple skill mod combos give Armor as their 2-piece bonus (Area Suppression, Applied Demolitions, etc). Recalibrate it onto every piece you can if you\'re running a tank build.',
+    bestBuilds: 'Bulwark tank builds (mandatory), Field Medic survival builds, any PvP loadout that needs to face-tank. Also useful as a secondary stat on DPS builds for Dark Zone survival — dead DPS does zero damage.',
+  },
+  'Damage Reduction': {
+    overview: 'Damage Reduction (DR) is a flat percentage reduction on all incoming damage. Unlike Armor, which acts as a separate health pool, DR reduces every hit before it even touches your armor. It\'s one of the most efficient survivability stats in the game, and it stacks multiplicatively with Armor.',
+    whyItMatters: 'DR stacks multiplicatively with Armor, which means 10% DR on a high-Armor build is worth way more effective HP than 10% more Armor. This is why Bulwark builds feel unkillable — they\'re stacking DR on top of massive Armor pools. Fearless Warrior OS Protocol leans heavily into DR. In PvP, DR is the stat that makes people rage-quit because they can\'t kill you.',
+    howToGet: 'DR rolls on chest and some other slots. Multiple Bulwark and Vanguard skill mod combos give DR as their 2-piece bonus. Fearless Warrior OS Protocol has DR baked in. It\'s a premium stat — when you see a high DR roll, protect it at all costs.',
+    bestBuilds: 'Bulwark builds (mandatory), Vanguard hybrid builds that want to survive in PvP, Field Medic face-tank Combat Medic builds. DR is the stat that lets you play aggressive without getting punished for it.',
+  },
+  'Skill Critical Chance': {
+    overview: 'Skill Critical Chance (Skill CHC) determines how often your deployed skills land critical hits. Artillery Turrets, Striker Drones, Seeker Mines — when they crit, they proc talent effects and deal massively amplified damage. This is the Engineering equivalent of Weapon CHC.',
+    whyItMatters: 'Skill builds live and die by their Skill CHC. A Demolitionist Artillery Turret with 50% Skill Crit Chance fires twice as many crits as one with 25%, and each of those crits can proc cooldown reductions, damage buffs, and set bonuses. Jackpot gear set\'s entire identity revolves around Skill Crit stacking. Tampishach\'s 237k DPS Tech Aegis build hits 53% Skill Crit Chance for a reason.',
+    howToGet: 'Skill CHC rolls on mask and gloves for Engineering builds. Jackpot gear set gives bonus Skill CHC as a set bonus. Brains Over Brawn OS Protocol has Engineering as its main stat, which indirectly boosts skill performance. Recalibrate it onto your mask if you\'re running a skill build.',
+    bestBuilds: 'Demolitionist skill crit builds with Jackpot 4pc, Tech Operator Striker Drone builds, any Engineering-stacking loadout. If your skills do the damage, Skill CHC is your most important stat.',
+  },
+  'Skill Critical Damage': {
+    overview: 'Skill Critical Damage (Skill CHD) determines how hard your skill crits actually hit. Like Weapon CHD, this is the multiplier that turns frequent crits from "nice" into "nuclear." Stack this alongside Skill CHC and your turrets/drones/mines start deleting rooms.',
+    whyItMatters: 'Skill CHD multiplies every skill crit, so once your Skill CHC is comfortable (40-50%+), this becomes your highest-value Engineering stat. Several skill mod combos grant stacking Skill Critical Damage as their 3-piece bonus (Applied Demolitions, Airburst). The multiplicative interaction between Skill CHC, Skill CHD, and Skill Intensity is what makes endgame skill builds so strong.',
+    howToGet: 'Skill CHD rolls on backpack, chest, and Engineering-focused gear pieces. Enhanced Formula skill mod combo grants Skill Critical Damage as a 2-piece bonus. Stack it alongside Skill CHC for maximum effect. Recalibrate it onto your backpack for the biggest single-slot gain.',
+    bestBuilds: 'All Engineering DPS builds — Demolitionist glass cannon, Tech Operator Striker Drone, any skill build running Jackpot gear set. Skill CHD is the second half of the skill crit equation.',
+  },
+  'Skill Intensity': {
+    overview: 'Skill Intensity is a universal multiplier for skill effectiveness. It increases damage for offensive skills, healing for support skills, and buff strength for utility skills. It\'s the one stat that makes everything about your skills better, regardless of what those skills actually do.',
+    whyItMatters: 'Skill Intensity is multiplicative with other skill bonuses, which is why it\'s so valuable. A 10% increase in Skill Intensity isn\'t just 10% more damage — it\'s 10% more on top of all your other multipliers. Field Medic healing builds stack this for bigger heals, Demolitionist builds stack it for bigger explosions, and Tech Operator builds use it for nastier drone attacks.',
+    howToGet: 'Skill Intensity can roll on multiple gear slots. Several skill mod combos grant Skill Intensity as stacking bonuses (Concentrated Fire, Mutual Support, Doom Dealer). Brains Over Brawn OS Protocol and Long-term Effect gear set both synergize with Skill Intensity stacking.',
+    bestBuilds: 'Field Medic healing builds (Support Station and Healing Hive), Demolitionist AoE builds, Tech Operator drone builds, any Engineering-focused loadout that wants a flat boost to everything their skills do.',
+  },
+  'Skill Multi-Shot Chance': {
+    overview: 'Skill Multi-Shot Chance gives your skills a probability of hitting the same target multiple times per attack. When your Artillery Turret or Striker Drone procs Multi-Shot, each individual hit can crit separately and trigger talent effects independently. It\'s RNG on top of RNG, and when it lines up, the DPS goes crazy.',
+    whyItMatters: 'Multi-Shot is the high-variance DPS stat for skill builds. Each extra hit from a Multi-Shot proc is a separate damage instance, which means it can crit, proc cooldown reductions, and trigger gear set bonuses. On a Striker Drone with 50% Skill Crit Chance, a Multi-Shot proc essentially doubles your DPS for that attack cycle.',
+    howToGet: 'Skill Multi-Shot Chance appears on specific Engineering gear pieces and weapon mods. Several skill mod combos grant it as stacking bonuses (Area Sweep, Frag Grenades, Fragmentation Charge). Phalanx Attack gear set has Multi-Shot synergies as well.',
+    bestBuilds: 'Tech Operator Striker Drone builds, Demolitionist Artillery Turret builds, any skill DPS loadout that fires frequently. High attack-speed skills get the most value from Multi-Shot because they have more chances to proc it.',
+  },
+  'Skill Duration': {
+    overview: 'Skill Duration extends how long your deployed skills stay active before expiring or going on cooldown. That extra 5-10 seconds on your Artillery Turret or Healing Hive can be the difference between clearing the room and watching your skill poof right when you needed it most.',
+    whyItMatters: 'Skill Duration is effectively a damage multiplier for time-limited skills. An Artillery Turret that lasts 30 seconds instead of 20 does 50% more total damage over its lifetime. Long-term Effect gear set is built entirely around Skill Duration stacking. For Field Medic builds, longer Support Station uptime means more healing without having to worry about cooldowns.',
+    howToGet: 'Skill Duration can roll on multiple gear pieces. Long-term Effect gear set gives massive Skill Duration bonuses. Some skill mod combos extend specific skill durations as part of their 3-piece bonus (Optimized extends Artillery Turret, Area Denial extends deployed turrets). Recalibrate it onto your gear if you\'re running duration-dependent skills.',
+    bestBuilds: 'Long-term Effect 4pc Engineering builds, Field Medic Support Station healer builds, any build running deployable skills that benefit from longer uptime. Less useful for instant-use skills like Seeker Mines.',
+  },
+  'Skill Radius': {
+    overview: 'Skill Radius expands the area of effect for your skills. Bigger radius means your Artillery Turret hits more enemies per shot, your Support Station heals allies in a wider area, and your Seeker Mines have a larger blast zone. It\'s the "I want to cover more ground" stat.',
+    whyItMatters: 'In group content, Skill Radius can be the difference between your Support Station covering your whole team or just yourself. For offensive skills, bigger AoE means more enemies hit per activation, which means more set bonus procs and faster clear times. Area Denial skill mod combo specifically boosts Explosive Seeker Mine Radius.',
+    howToGet: 'Skill Radius rolls on certain gear pieces and Engineering-focused equipment. Area Denial mod combo gives Explosive Seeker Mine Radius as part of its 3-piece bonus. It\'s not the most common stat, but it\'s valuable when your build depends on AoE coverage.',
+    bestBuilds: 'Demolitionist AoE builds, Field Medic Support Station builds for group content, any build using area-denial skills in choke points. Especially valuable in PvP for zone control.',
+  },
+  'Skill Cooldown Recovery': {
+    overview: 'Skill Cooldown Recovery (Skill Haste) reduces the time between skill uses. Faster cooldowns mean more skill uptime, more talent procs, and more of whatever your skills do per minute. It\'s the tempo stat that keeps your build\'s engine running.',
+    whyItMatters: 'Cooldown Recovery has diminishing returns at extreme values, but moderate stacking (20-40% total) dramatically improves your skill rotation. For builds that chain skills together — like Demolitionist running Artillery Turret + Seeker Mine — faster cooldowns mean you always have something cooking. Several skill mod combos reduce specific skill cooldowns as their 3-piece talent.',
+    howToGet: 'Skill Cooldown Recovery rolls on multiple gear pieces. It\'s one of the most common 2-piece bonuses for Tech Operator and Vanguard skill mod combos. Long-term Effect gear set indirectly reduces effective cooldowns by extending skill duration. Liquid Nitrogen mod combo specifically reduces all skill cooldowns on enemy hits.',
+    bestBuilds: 'All Engineering builds benefit. Especially valuable for Demolitionist dual-skill rotations, Field Medic builds that need their Healing Hive back ASAP, and any build running skills with naturally long cooldowns.',
+  },
+  'Skill Blast Damage': {
+    overview: 'Skill Blast Damage increases the explosive damage component of your skills. Artillery Turrets, Seeker Mines, and any skill that deals blast/explosive damage gets a direct damage boost. This is the Demolitionist\'s bread-and-butter stat.',
+    whyItMatters: 'For explosive skill builds, Skill Blast Damage is a flat multiplier on your primary damage source. Demolitionist builds running Artillery Turret or Explosive Seeker Mine stack this alongside Skill Intensity and Skill Crit for maximum AoE carnage. Boom-Shakalaka gear set amplifies blast damage further.',
+    howToGet: 'Skill Blast Damage rolls on Engineering-focused gear pieces. Boom-Shakalaka gear set provides blast damage bonuses. Thermobaric Grenades mod combo dramatically increases Grenade Launcher damage. Stack it on every available slot for pure explosive builds.',
+    bestBuilds: 'Demolitionist glass cannon builds, Artillery Turret AoE builds, Seeker Mine builds, any loadout using Boom-Shakalaka or Fire Cycle gear sets. If your build explodes things, this stat makes them explode harder.',
+  },
+  'Skill Piercing Damage': {
+    overview: 'Skill Piercing Damage boosts the piercing damage component of applicable skills. Similar to Weapon Piercing Damage but for skill-based attacks, this stat increases damage that bypasses enemy armor — particularly relevant for Striker Drone and certain turret configurations.',
+    whyItMatters: 'Against heavily armored enemies in endgame content, skill piercing damage provides a meaningful DPS increase by partially bypassing damage reduction. It\'s most effective in Legendary content where enemy armor values are extreme and conventional damage gets absorbed.',
+    howToGet: 'Skill Piercing Damage appears on Engineering gear pieces and certain equipment slots. It\'s a specialized stat, so preserve any high rolls in your Recalibration Library.',
+    bestBuilds: 'Tech Operator Striker Drone builds focused on single-target boss damage, Demolitionist builds for Legendary content, any Engineering build that needs to punch through high-armor targets.',
+  },
+  'Skill Shredding Damage': {
+    overview: 'Skill Shredding Damage increases how quickly your skills chew through enemy armor. When your turret or drone is attacking an armored enemy, this stat accelerates the armor-breaking process — getting to the health bar faster means faster kills.',
+    whyItMatters: 'In endgame PvE, enemies are walking armor bars. Skill Shredding Damage accelerates the most time-consuming part of every engagement — breaking through that armor. For skill builds running in Legendary content, this stat directly translates to faster clear times.',
+    howToGet: 'Skill Shredding Damage can roll on certain Engineering gear slots. It\'s relatively rare as a bonus attribute, so high rolls are worth preserving.',
+    bestBuilds: 'Engineering DPS builds for Legendary and Heroic content, Tech Operator builds focused on sustained drone damage, any skill build that fights armored enemies (which is basically all of them in endgame).',
+  },
+  'Received Healing': {
+    overview: 'Received Healing (Incoming Healing) increases all healing you receive — from skills, talents, medkits, and allied healers. In a game where not dying is half the battle, this stat turns every heal into a bigger heal. Simple, effective, and massively underrated.',
+    whyItMatters: 'Received Healing is multiplicative with healing sources. A Field Medic\'s Support Station healing you for 10k per tick becomes 12k with 20% Received Healing. That compounds over time — longer fights, harder content, the math adds up fast. Auto Trauma Treatment mod combo grants +6% Incoming Healing. For groups running a dedicated healer, this stat on the DPS/tank players is the most efficient way to improve survivability.',
+    howToGet: 'Received Healing rolls on kneepads and certain other gear slots. It\'s a Universal stat, meaning it doesn\'t require any specific core attribute commitment. Auto Trauma Treatment and Effective Triage mod combos have healing synergies. Stack it if your group has a Field Medic.',
+    bestBuilds: 'Any build running in a group with a healer. Bulwark tanks get the most value because they take the most hits and need the most healing. Also useful on DPS builds in Legendary content where chip damage adds up.',
+  },
+  'Damage to Elites': {
+    overview: 'Damage to Elites (DtE) is a flat damage multiplier against elite-tier enemies — the gold and purple health bar enemies that make up most of endgame PvE. It doesn\'t work in PvP, but for PvE farming, it\'s one of the most efficient damage stats available.',
+    whyItMatters: 'DtE is additive with other DtE sources but multiplicative with weapon damage and crit. In Heroic and Legendary content, virtually every enemy is elite-tier, which means DtE is essentially a permanent damage buff for PvE content. The stat is worthless in PvP and against normal/veteran enemies, so it\'s purely a PvE farming stat.',
+    howToGet: 'Damage to Elites can roll on mask and certain other gear slots. It\'s a Universal stat that works regardless of your core attribute split. For dedicated PvE farmers, recalibrating DtE onto your mask is one of the highest-value changes you can make.',
+    bestBuilds: 'Every PvE build benefits. Especially valuable for Legendary mission farmers, Summit grinders, and anyone focused purely on PvE clear speed. Absolutely useless for PvP builds — if you\'re entering the Dark Zone, swap this stat out.',
+  },
+  'Signature Ability Charge Efficiency': {
+    overview: 'Signature Ability Charge Efficiency (SACE) increases the rate at which your Signature Ability charges. Your Signature is your ultimate — Grenade Launcher for Demo, Tactical Link for Vanguard, Breach Combo for Bulwark, Burst Heal for Medic, Skill Overcharge for Tech Op. Getting it faster means using it more often, and using it more often means more clutch plays.',
+    whyItMatters: 'SACE stacks with other charge sources multiplicatively. Scout mod combo gives flat Signature Ability Charge on pulsed enemies, and SACE multiplies that amount. Tactical Reinforcement mod combo increases SACE by 28.8% for Tactical Link recipients. In endgame content, the team that uses their ultimates most frequently usually wins — this stat enables that.',
+    howToGet: 'SACE can roll on certain gear pieces. Scout and Tactical Insight skill mod combos have SACE as their 2-piece bonus. Some OS Protocols provide SACE as a secondary stat. It\'s a Universal stat, so any build can run it without sacrificing core attribute investment.',
+    bestBuilds: 'Vanguard support builds running Tactical Link (SACE makes you the ultimate battery for your team), Field Medic builds that need Burst Heal available for emergencies, Demolitionist builds that want their Grenade Launcher up for every boss phase. The value scales with how impactful your Signature is.',
+  },
+};
+
+// Fallback for attributes not explicitly defined
+const attrKey = attribute as string;
+const info: AttrInfo = attrGuide[attrKey] || {
+  overview: `${attribute} is a ${category} bonus attribute in Division Resurgence that directly affects your build's performance. It's a secondary stat that rolls on gear alongside your core attribute, and stacking it correctly is the difference between a functional loadout and a real build.`,
+  whyItMatters: `${category === 'Firepower' ? 'As a Firepower stat, this directly impacts your weapon damage output. DPS builds — especially Vanguard and weapon-focused loadouts — should consider this stat when optimizing their gear rolls.' : category === 'Toughness' ? 'As a Toughness stat, this contributes to your survivability. Bulwark tanks and any build that needs to absorb damage should prioritize this alongside other defensive stats.' : category === 'Engineering' ? 'As an Engineering stat, this enhances your skill performance. Demolitionist, Tech Operator, and skill-focused Field Medic builds all benefit from stacking this stat.' : 'As a Universal stat, this works regardless of your core attribute focus. Any build can benefit, which makes it a versatile option for rounding out your loadout.'}`,
+  howToGet: `${attribute} can roll on certain gear pieces as a bonus attribute. Check your gear drops carefully — high rolls should go straight into your Recalibration Library. The Recalibration Station lets you swap one bonus attribute per gear piece, so you can stamp this stat onto any piece that's missing it.`,
+  bestBuilds: `Builds that stack ${category} benefit the most from ${attribute}. Check the gear set database and OS Protocol listings for synergies — the right combination of bonus attributes and set bonuses is where endgame optimization lives.`,
+};
+
+const faqs = [
+  {
+    question: `What does ${attribute} do in Division Resurgence?`,
+    answer: info.overview.split('.').slice(0, 2).join('.') + '.',
+  },
+  {
+    question: `Which builds should stack ${attribute}?`,
+    answer: info.bestBuilds,
+  },
+  {
+    question: `How do I get ${attribute} on my gear in Division Resurgence?`,
+    answer: info.howToGet,
+  }
+];
+
+const articleLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: title,
+  description: description,
+  url: `${siteUrl}/database/bonus-attributes/${slug}/`,
+  author: { '@type': 'Person', '@id': `${siteUrl}/author/rapidf5/#person`, name: 'RapidF5' },
+  publisher: { '@type': 'Organization', '@id': `${siteUrl}/#organization`, name: 'Resurgence Builds' },
+  mainEntityOfPage: { '@type': 'WebPage', '@id': `${siteUrl}/database/bonus-attributes/${slug}/` },
+  datePublished: '2026-05-30',
+  dateModified: '2026-05-30',
+};
+
+const toAttrSlug = (name: string) => name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+---
+
+<BaseLayout title={title} description={description} breadcrumbs={breadcrumbs} jsonLd={articleLd} faqs={faqs}>
+  <div class="container section">
+    <Breadcrumbs items={breadcrumbs} />
+    <SectionTag label="Bonus Attribute" />
+
+    <div class="attr-detail">
+      <!-- Header -->
+      <div class="attr-header">
+        <div class="attr-header__top">
+          <h1 class="attr-title">{attribute}</h1>
+          <div class="attr-badges">
+            <span class="attr-badge" style={`border-color: ${palette.color}; color: ${palette.color}; background: ${palette.bg};`}>{category}</span>
+          </div>
+        </div>
+        <div style="display: inline-flex; align-items: center; gap: 6px; font-family: var(--font-mono); font-size: var(--text-xs); color: #6DAA45; background: rgba(109, 170, 69, 0.1); border: 1px solid rgba(109, 170, 69, 0.25); padding: 6px 14px; border-radius: 999px; margin-top: var(--sp-4); letter-spacing: 0.02em;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+          <span>Last verified for <strong>Patch 1.2.1</strong></span>
+        </div>
+      </div>
+
+      <!-- Overview -->
+      <div class="attr-section">
+        <h2 class="attr-section__title">Overview</h2>
+        <div style="color: #c8c8d0; line-height: 1.75; font-size: var(--text-base);">
+          <p>{info.overview}</p>
+        </div>
+      </div>
+
+      <!-- Why It Matters -->
+      <div class="attr-section">
+        <h2 class="attr-section__title">Why It Matters</h2>
+        <div style="color: #c8c8d0; line-height: 1.75; font-size: var(--text-base);">
+          <p>{info.whyItMatters}</p>
+        </div>
+      </div>
+
+      <!-- How to Get It -->
+      <div class="attr-section">
+        <h2 class="attr-section__title">How to Get It</h2>
+        <div style="color: #c8c8d0; line-height: 1.75; font-size: var(--text-base);">
+          <p>{info.howToGet}</p>
+        </div>
+      </div>
+
+      <!-- Best Builds -->
+      <div class="attr-section">
+        <h2 class="attr-section__title">Best Builds</h2>
+        <div style="color: #c8c8d0; line-height: 1.75; font-size: var(--text-base);">
+          <p>{info.bestBuilds}</p>
+        </div>
+      </div>
+
+      <!-- Related Attributes -->
+      {siblings.length > 0 && (
+        <div class="attr-section">
+          <h2 class="attr-section__title">Other {category} Attributes</h2>
+          <div class="attr-sibling-grid">
+            {siblings.map((sibling: string) => (
+              <a href={`/database/bonus-attributes/${toAttrSlug(sibling)}/`} class="attr-sibling-link" style={`border-color: ${palette.border};`}>
+                <span style="color: #fff; font-weight: 600;">{sibling}</span>
+                <span style={`font-family: var(--font-mono); font-size: var(--text-xs); color: ${palette.color};`}>{category}</span>
+              </a>
+            ))}
+          </div>
+        </div>
+      )}
+
+      <!-- Related Links -->
+      <div class="attr-related-links">
+        <a href="/database/bonus-attributes/" class="attr-link">&larr; All Attributes</a>
+        <a href="/database/gear-set-effects/" class="attr-link">Gear Sets</a>
+        <a href="/database/os-protocols/" class="attr-link">OS Protocols</a>
+        <a href="/database/skill-mod-combos/" class="attr-link">Skill Mods</a>
+      </div>
+    </div>
+
+    <AdSenseUnit />
+  </div>
+</BaseLayout>
+
+<style>
+  .attr-detail {
+    max-width: 700px;
+  }
+
+  .attr-header {
+    margin-bottom: var(--sp-8);
+  }
+
+  .attr-header__top {
+    display: flex;
+    flex-direction: column;
+    gap: var(--sp-3);
+  }
+
+  .attr-title {
+    font-family: var(--font-heading);
+    font-size: var(--text-4xl);
+    font-weight: 900;
+    letter-spacing: -0.03em;
+    margin: 0;
+    background: linear-gradient(135deg, #fff 60%, var(--accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .attr-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--sp-2);
+  }
+
+  .attr-badge {
+    font-family: var(--font-mono);
+    font-size: var(--text-xs);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    padding: 5px 14px;
+    border: 1px solid;
+    border-radius: 999px;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .attr-section {
+    margin-bottom: var(--sp-8);
+  }
+
+  .attr-section__title {
+    font-family: var(--font-heading);
+    font-size: var(--text-lg);
+    font-weight: 800;
+    color: #fff;
+    margin: 0 0 var(--sp-4) 0;
+    padding-bottom: var(--sp-2);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+
+  .attr-sibling-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: var(--sp-3);
+  }
+
+  .attr-sibling-link {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: var(--sp-4);
+    background: rgba(0,0,0,0.2);
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.2s;
+  }
+
+  .attr-sibling-link:hover {
+    border-color: var(--accent);
+    background: rgba(242,104,34,0.06);
+  }
+
+  .attr-related-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--sp-3);
+    padding-top: var(--sp-6);
+    border-top: 1px solid rgba(255,255,255,0.08);
+  }
+
+  .attr-link {
+    font-family: var(--font-mono);
+    font-size: var(--text-sm);
+    color: var(--accent);
+    text-decoration: none;
+    padding: var(--sp-2) var(--sp-4);
+    background: rgba(242,104,34,0.08);
+    border: 1px solid rgba(242,104,34,0.2);
+    border-radius: 6px;
+    transition: all 0.2s;
+  }
+
+  .attr-link:hover {
+    background: rgba(242,104,34,0.15);
+    border-color: var(--accent);
+  }
+</style>

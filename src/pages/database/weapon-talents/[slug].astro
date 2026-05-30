@@ -1,0 +1,183 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../../components/Breadcrumbs.astro';
+import SectionTag from '../../../components/SectionTag.astro';
+import AdSenseUnit from '../../../components/AdSenseUnit.astro';
+import weaponTalents from '../../../data/weapon-talents.json';
+
+export function getStaticPaths() {
+  return weaponTalents.map((talent: any) => ({
+    params: {
+      slug: talent.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')
+    },
+    props: { talent }
+  }));
+}
+
+const { talent } = Astro.props;
+
+const slug = talent.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+const siteUrl = 'https://resurgencebuilds.com';
+const desc = talent.description.toLowerCase();
+
+// Determine build archetype from keywords
+function getBuildArchetype(description: string): { primary: string; label: string; prose: string; builds: string } {
+  const d = description.toLowerCase();
+
+  if (d.includes('skill damage') && d.includes('weapon damage')) {
+    return {
+      primary: 'hybrid',
+      label: 'Hybrid DPS / Engineering',
+      prose: `This is a hybrid talent that bridges the gap between shooting and skill usage. It rewards agents who actively use both their weapons and skills in combat — not just sitting back lobbing turrets, and not just holding the trigger and ignoring your cooldowns. If you run a build that does both, this talent is basically free damage everywhere.`,
+      builds: `Hybrid builds that split between Firepower and Engineering get the most mileage here. Vanguard Operatives and Tactical Medics who actually shoot their guns (yes, you should be shooting) will love this. It's also solid on any DPS build that uses offensive skills like the Assault Turret or Striker Drone alongside their primary weapon.`
+    };
+  }
+  if (d.includes('engineering') || d.includes('skill intensity') || d.includes('skill cooldown') || d.includes('skill duration') || d.includes('skill critical') || d.includes('skill multi-shot') || d.includes('skill damage')) {
+    return {
+      primary: 'engineering',
+      label: 'Engineering / Skill Build',
+      prose: `This talent is tailor-made for skill builds. If your playstyle is "deploy skills and let them do the work," this gives your abilities a serious boost. Your turrets hit harder, your drones last longer, and your cooldowns shrink. Stack it with Engineering gear and watch your skills do obscene things.`,
+      builds: `Engineer-focused builds running high Engineering attributes will squeeze the most out of this. Pathfinder Hunters running Assault Turret combos, Tactical Medics stacking skill haste, and anyone rocking the Cluster Seeker Mine as their main damage source. If your gear has more yellow than red, this talent wants to be on your weapon.`
+    };
+  }
+  if (d.includes('critical hit') || d.includes('critical damage') || d.includes('crit')) {
+    return {
+      primary: 'dps-crit',
+      label: 'DPS / Crit Build',
+      prose: `This is a crit-focused talent — it wants you stacking Critical Hit Chance and Critical Hit Damage everywhere. The more crits you land, the harder it snowballs. On the right build, the damage output gets disgusting fast. On the wrong build (low crit chance), it's basically a dead talent slot.`,
+      builds: `SMG builds with innate Crit Chance love this. ARs with crit-stacked gear sets like Striker or Providence Defense are also prime candidates. If your build sheet shows 50%+ Crit Chance, this talent turns those orange numbers into real damage. Low-crit tank builds should look elsewhere.`
+    };
+  }
+  if (d.includes('weapon damage') || d.includes('rate of fire') || d.includes('headshot')) {
+    return {
+      primary: 'dps',
+      label: 'DPS / Firepower',
+      prose: `Pure damage talent. No gimmicks, no conditions you'll forget about mid-firefight — just more weapon damage. This is the kind of talent you slot when you want your bullets to hit harder and you don't want to think about it too much. Point, shoot, things die faster.`,
+      builds: `Any Firepower-stacked DPS build benefits from raw weapon damage. AR mains running Striker's Battlegear, LMG builds going for sustained damage, and Marksman Rifle users who want bigger headshot numbers. If your core attribute is Firepower and your job is killing things, this talent fits.`
+    };
+  }
+  if (d.includes('armor') || d.includes('damage reduction') || d.includes('toughness') || d.includes('extra health') || d.includes('max health') || d.includes('incoming damage')) {
+    return {
+      primary: 'tank',
+      label: 'Tank / Survivability',
+      prose: `A survivability talent for agents who like staying alive. This won't win any DPS contests, but it keeps you in the fight when things get ugly. Pair it with Toughness-stacked gear and you become the agent who just won't go down — the cockroach of the squad, if you will.`,
+      builds: `Bulwark Breacher shield builds are the obvious pick. Any frontline tank running high Toughness with a Ballistic Shield or drawing aggro for the team. Also solid on solo players who need to facetank when there's no healer around. Dark Zone PvP builds that need to survive burst damage will consider this too.`
+    };
+  }
+  if (d.includes('healing') || d.includes('health') || d.includes('rescue') || d.includes('restore')) {
+    return {
+      primary: 'support',
+      label: 'Support / Healer',
+      prose: `This talent has healing or sustain baked in. It's for the agents who keep the squad alive, or for solo players who need to self-sustain through tough content. Not the flashiest talent in the list, but it's the difference between wiping and clutching.`,
+      builds: `Tactical Medic builds stacking Incoming Healing and Repair Skills get the most value. Also works on solo players who don't have a dedicated healer and need passive sustain. If you're running Legendary missions solo, a talent like this can carry runs that would otherwise end at the revive screen.`
+    };
+  }
+  if (d.includes('reload')) {
+    return {
+      primary: 'utility',
+      label: 'Utility / Quality of Life',
+      prose: `A utility talent focused on reload speed. Faster reloads mean less downtime, more damage uptime, and fewer awkward moments where you're stuck in a reload animation while a rusher is in your face. It's not glamorous, but time-spent-not-shooting is time-spent-dying.`,
+      builds: `LMG builds benefit the most since their base reload speed is glacial. AR and SMG builds that burn through mags quickly also appreciate the smoother flow. Any build where you find yourself dying during reloads should consider this — it's a QoL boost that translates directly to DPS uptime.`
+    };
+  }
+
+  return {
+    primary: 'general',
+    label: 'Versatile',
+    prose: `A flexible talent that doesn't lock you into one playstyle. It provides a useful bonus that works across different build types and combat situations. Not the most specialized option, but reliability counts for something when everything's exploding around you.`,
+    builds: `This works on most builds without being amazing on any specific one. If you're still putting your gear together and haven't committed to a full build yet, this is a solid placeholder that won't actively hurt you. Swap it out once you know exactly what archetype you're running.`
+  };
+}
+
+const archetype = getBuildArchetype(talent.description);
+
+const title = `${talent.name} Weapon Talent — Division Resurgence`;
+const description = `${talent.name} weapon talent in Division Resurgence: ${talent.description.substring(0, 120)}${talent.description.length > 120 ? '...' : ''} Full breakdown, best builds, and how to use it.`;
+
+const breadcrumbs = [
+  { name: 'Weapon Talents', url: '/database/weapon-talents/' },
+  { name: talent.name, url: '#' }
+];
+
+const faqs = [
+  {
+    question: `Is ${talent.name} a good weapon talent in Division Resurgence?`,
+    answer: `${talent.name} is a ${archetype.label} talent. ${archetype.prose.split('.')[0]}. How good it is depends entirely on your build — if you're running a ${archetype.primary === 'dps' || archetype.primary === 'dps-crit' ? 'Firepower' : archetype.primary === 'engineering' ? 'Engineering' : archetype.primary === 'tank' ? 'Toughness' : archetype.primary === 'support' ? 'healer' : 'balanced'}-focused setup, it pulls its weight. On the wrong build, it's wasted potential.`
+  },
+  {
+    question: `What builds should use ${talent.name} in Division Resurgence?`,
+    answer: archetype.builds
+  },
+  {
+    question: `How do I get the ${talent.name} talent in Division Resurgence?`,
+    answer: `${talent.name} rolls randomly on Tier 2 weapons. Farm T2 drops from Heroic missions, Summit, or Countdown and check each weapon's talent. Once you find it, extract it at the Recalibration Station to save it permanently in your Recalibration Library. Then you can apply it to any T2 weapon — just remember you only get one recalibration slot per weapon.`
+  }
+];
+
+const talentLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: title,
+  description: description,
+  url: `${siteUrl}/database/weapon-talents/${slug}/`,
+  author: { '@type': 'Person', '@id': `${siteUrl}/author/rapidf5/#person`, name: 'RapidF5' },
+  publisher: { '@type': 'Organization', '@id': `${siteUrl}/#organization`, name: 'Resurgence Builds' },
+  mainEntityOfPage: { '@type': 'WebPage', '@id': `${siteUrl}/database/weapon-talents/${slug}/` },
+  datePublished: '2026-05-30',
+  dateModified: '2026-05-30',
+};
+---
+
+<BaseLayout title={title} description={description} breadcrumbs={breadcrumbs} jsonLd={talentLd} faqs={faqs}>
+  <div class="container section">
+    <Breadcrumbs items={breadcrumbs} />
+    <SectionTag label="Weapon Talent" />
+
+    <div style="max-width: 700px;">
+      <!-- Header -->
+      <div style="margin-bottom: var(--sp-8); padding-bottom: var(--sp-6); border-bottom: 1px solid rgba(255,255,255,0.08);">
+        <div style="display: flex; flex-wrap: wrap; align-items: center; gap: var(--sp-4);">
+          <h1 style="font-family: var(--font-heading); font-size: var(--text-4xl); font-weight: 900; letter-spacing: -0.03em; margin: 0; background: linear-gradient(135deg, #fff 60%, var(--accent)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">{talent.name}</h1>
+          <span style="display: inline-flex; align-items: center; font-family: var(--font-mono); font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent); background: rgba(242,104,34,0.12); border: 1px solid rgba(242,104,34,0.25); padding: 5px 14px; border-radius: 999px;">{archetype.label}</span>
+        </div>
+        <div style="display: inline-flex; align-items: center; gap: 6px; font-family: var(--font-mono); font-size: var(--text-xs); color: #6DAA45; background: rgba(109, 170, 69, 0.1); border: 1px solid rgba(109, 170, 69, 0.25); padding: 6px 14px; border-radius: 999px; margin-top: var(--sp-4); letter-spacing: 0.02em;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+          <span>Last verified for <strong>Patch 1.2.1</strong></span>
+        </div>
+      </div>
+
+      <!-- Overview -->
+      <div style="margin-bottom: var(--sp-8);">
+        <h2 style="font-family: var(--font-heading); font-size: var(--text-lg); font-weight: 800; color: #fff; margin: 0 0 var(--sp-4) 0; padding-bottom: var(--sp-2); border-bottom: 1px solid rgba(255,255,255,0.08);">Overview</h2>
+        <p style="color: #c8c8d0; line-height: 1.75; font-size: var(--text-base);">
+          <strong>{talent.name}</strong> is a weapon talent in The Division Resurgence classified as a <strong>{archetype.label}</strong> talent. {archetype.prose}
+        </p>
+      </div>
+
+      <!-- How It Works -->
+      <div style="margin-bottom: var(--sp-8);">
+        <h2 style="font-family: var(--font-heading); font-size: var(--text-lg); font-weight: 800; color: #fff; margin: 0 0 var(--sp-4) 0; padding-bottom: var(--sp-2); border-bottom: 1px solid rgba(255,255,255,0.08);">How It Works</h2>
+        <div style="padding: var(--sp-5); background: rgba(0,0,0,0.25); border-left: 3px solid var(--accent); border-radius: 0 8px 8px 0;">
+          <p style="margin: 0; color: #e8e8f0; line-height: 1.75; font-size: var(--text-base); font-weight: 500;">{talent.description}</p>
+        </div>
+      </div>
+
+      <!-- Best Builds -->
+      <div style="margin-bottom: var(--sp-8);">
+        <h2 style="font-family: var(--font-heading); font-size: var(--text-lg); font-weight: 800; color: #fff; margin: 0 0 var(--sp-4) 0; padding-bottom: var(--sp-2); border-bottom: 1px solid rgba(255,255,255,0.08);">Best Builds for {talent.name}</h2>
+        <p style="color: #c8c8d0; line-height: 1.75; font-size: var(--text-base);">
+          {archetype.builds}
+        </p>
+      </div>
+
+      <!-- Related links -->
+      <div style="display: flex; flex-wrap: wrap; gap: var(--sp-3); padding-top: var(--sp-6); border-top: 1px solid rgba(255,255,255,0.08);">
+        <a href="/database/weapon-talents/" style="font-family: var(--font-mono); font-size: var(--text-sm); color: var(--accent); text-decoration: none; padding: var(--sp-2) var(--sp-4); background: rgba(242,104,34,0.08); border: 1px solid rgba(242,104,34,0.2); border-radius: 6px; transition: all 0.2s;">&larr; All Weapon Talents</a>
+        <a href="/database/weapons/" style="font-family: var(--font-mono); font-size: var(--text-sm); color: var(--accent); text-decoration: none; padding: var(--sp-2) var(--sp-4); background: rgba(242,104,34,0.08); border: 1px solid rgba(242,104,34,0.2); border-radius: 6px; transition: all 0.2s;">Weapons Database</a>
+        <a href="/tier-list/" style="font-family: var(--font-mono); font-size: var(--text-sm); color: var(--accent); text-decoration: none; padding: var(--sp-2) var(--sp-4); background: rgba(242,104,34,0.08); border: 1px solid rgba(242,104,34,0.2); border-radius: 6px; transition: all 0.2s;">Build Tier List</a>
+      </div>
+    </div>
+
+    <AdSenseUnit />
+  </div>
+</BaseLayout>

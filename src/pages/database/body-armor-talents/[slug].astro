@@ -1,0 +1,181 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../../components/Breadcrumbs.astro';
+import SectionTag from '../../../components/SectionTag.astro';
+import AdSenseUnit from '../../../components/AdSenseUnit.astro';
+import armorTalents from '../../../data/body-armor-talents.json';
+
+export function getStaticPaths() {
+  return armorTalents.map((talent: any) => ({
+    params: {
+      slug: talent.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')
+    },
+    props: { talent }
+  }));
+}
+
+const { talent } = Astro.props;
+
+const slug = talent.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+const siteUrl = 'https://resurgencebuilds.com';
+
+const title = `${talent.name} — Body Armor Talent | Division Resurgence`;
+const description = `${talent.name} chest talent breakdown for Division Resurgence. ${talent.description} Best builds, synergies, and gear pairings.`;
+
+const breadcrumbs = [
+  { name: 'Body Armor Talents', url: '/database/body-armor-talents/' },
+  { name: talent.name, url: '#' }
+];
+
+// --- Build archetype guide per talent ---
+const isDmg = /weapon damage|damage(?! reduction)|crit|rate of fire|magazine size/i.test(talent.description);
+const isSkill = /skill|multi-shot/i.test(talent.description);
+const isTank = /damage reduction|armor|health|toughness|extra health|shield/i.test(talent.description);
+const isSupport = /allies|rescue|downed|movement speed/i.test(talent.description);
+const isMedkit = /medical kit/i.test(talent.description);
+const isCover = /cover/i.test(talent.description);
+const isSprint = /sprint/i.test(talent.description);
+const isSigAbility = /signature ability/i.test(talent.description);
+
+function getOverview(): string {
+  if (talent.name === 'Glass Cannon') return `${talent.name} is the "go big or go home" chest talent. You get a straight +20% Damage across the board — weapon damage, skill damage, everything. The catch? You lose 10% Damage Reduction, so you're squishier than a marshmallow in a microwave. This is the chest talent for players who trust their positioning and want maximum kill speed.`;
+  if (talent.name === 'Duality') return `${talent.name} is the Swiss Army knife of chest talents. Above 50% HP you get a fat damage buff, and when things go sideways and you drop below 50%, you swap to a defensive bonus that keeps you alive. It's reactive, it's reliable, and it works in basically every scenario from solo PvE to Dark Zone chaos.`;
+  if (isMedkit && isDmg) return `${talent.name} rewards aggressive medkit usage by turning your heal into a damage steroid. Pop that medkit and you're not just recovering — you're ramping up to shred. Great for players who like an active, ability-driven playstyle where timing your heals matters.`;
+  if (isMedkit) return `${talent.name} ties its bonus to medkit usage, giving you a significant combat buff every time you heal up. This talent turns a defensive action into an offensive opportunity. You'll want to time your medkits for maximum upside, not just survival.`;
+  if (isSupport && isTank) return `${talent.name} activates when your teammates go down, giving you the tools to actually rescue them instead of joining them on the floor. It's a support talent through and through — not flashy, but clutch when the squad is getting wiped.`;
+  if (isSupport) return `${talent.name} is built for team players. When allies are in trouble, you get buffed. It's a chest talent that literally rewards you for keeping your squad alive and fighting near them. Solo players can skip this one, but in group content, it's a powerhouse.`;
+  if (isSigAbility) return `${talent.name} speeds up your Signature Ability charge rate, letting you pop your ultimate more often. Sig abilities can swing entire fights, so getting yours up faster than the enemy team is a legitimate strategy — especially in drawn-out PvE missions and DZ extractions.`;
+  if (isSprint && isTank) return `${talent.name} makes you tankier while sprinting, which is perfect for closing distance or repositioning without getting melted. Aggressive players who push flanks will get the most out of this one.`;
+  if (isCover && isDmg) return `${talent.name} buffs your output while fighting from cover. If your playstyle already involves locking down lanes and playing smart, this talent stacks perfectly on top of what you're already doing. Free damage for good habits.`;
+  if (isSkill && isDmg) return `${talent.name} bridges the gap between weapon damage and skill builds. You get gun damage bonuses that activate around your skill usage, making it perfect for hybrid builds that want to shoot AND deploy skills. Pure skill or pure DPS builds have better options, but hybrids love this.`;
+  if (isSkill && !isDmg) return `${talent.name} is a skill-focused chest talent that boosts your deployed abilities. If you're running a skill build — turrets, drones, seekers, whatever — this talent makes them hit harder or last longer. Weapon-focused players should look elsewhere.`;
+  if (isDmg && isTank) return `${talent.name} gives you damage output with a side of survivability. It's the "I want to kill stuff but also not die" chest talent, and honestly, that's a solid place to be in Division Resurgence. Works across most content types without feeling like a compromise.`;
+  if (isDmg) return `${talent.name} is a straight-up DPS chest talent. It buffs your weapon damage output, making your guns hit harder with no complicated conditions to manage. If your build is about dealing maximum damage per second, this belongs on your chest piece.`;
+  if (isTank) return `${talent.name} is a survivability talent that makes you harder to kill. In a game where face-tanking usually means a fast trip to the respawn screen, having reliable damage reduction or health recovery on your chest is huge — especially in Heroic content and the Dark Zone.`;
+  return `${talent.name} is a body armor talent in Division Resurgence that provides a unique combat bonus on your chest piece. Your chest talent is the single most impactful gear talent slot in the game, so choosing the right one for your build matters more than almost any other gear decision.`;
+}
+
+function getBestBuilds(): string {
+  if (talent.name === 'Glass Cannon') return `Glass Cannon is the crown jewel of full-red DPS builds. Stack it with 6 red cores, a damage-boosting backpack talent, and a high-RPM weapon to delete enemies before they can punish your reduced survivability. Sniper builds running Marksman Rifles also love Glass Cannon because you're already staying at range where the DR loss barely matters. Not recommended for Dark Zone unless you trust your PvP mechanics — one mistake and you're loot.`;
+  if (talent.name === 'Duality') return `Duality is the go-to for balanced builds that don't want to fully commit to glass cannon or full tank. It works great on 4-red/2-blue hybrid setups, solo players who need to survive unexpected damage spikes, and DZ builds where fights are unpredictable. It's also solid on Bulwark specs since you'll naturally fluctuate around 50% HP during shield fights.`;
+  if (isMedkit && isDmg) return `Pairs well with aggressive DPS builds that use medkits frequently — especially in PvP or Heroic PvE where you're constantly taking chip damage. Stack weapon damage or crit stats and time your medkits to line up with engagement windows. Works on any specialization that pushes forward and expects to take hits.`;
+  if (isMedkit) return `Best on builds that burn through medkits regularly — frontline fighters, aggressive PvP players, and anyone running Heroic content. The bonus activates on medkit use, so builds with faster medkit cooldowns or additional medkit charges get more upside.`;
+  if (isSupport) return `Designed for group PvE and team-oriented DZ squads. Pairs well with healer/support builds running high Toughness or Skill Intensity. If you're the team's designated rescue player (the one who always picks up downed allies), this talent actually rewards that role. Not useful for solo play at all.`;
+  if (isSigAbility) return `Great for builds that revolve around their Signature Ability. If you're running an OS Protocol whose sig ability is a fight-changer, getting it back faster is massive. Especially strong in group PvE content where longer engagements give you multiple sig ability windows per encounter.`;
+  if (isSkill && !isDmg) return `Slot this on dedicated skill builds stacking Skill Intensity or Skill Duration. Turret/drone combos, seeker mine builds, and support skill loadouts all benefit. Pair with a skill-focused OS Protocol and skill-heavy gear sets for maximum payoff.`;
+  if (isSkill && isDmg) return `Hybrid weapon/skill builds get the most out of this talent. Run a setup with 3-4 red cores and a few skill-focused pieces, deploy your skills, then start shooting. The weapon damage boost while skills are active makes hybrid builds competitive with pure DPS setups.`;
+  if (isDmg) return `Pure DPS builds want this. Stack weapon damage, crit chance, and crit damage, then let this talent multiply your output even further. Works on any weapon class — ARs, SMGs, LMGs — whatever you're running. The more raw damage you already have, the more this talent gives back.`;
+  if (isTank) return `Tank and survivability builds benefit most. Pair with high armor/HP gear, a defensive OS Protocol, and a backpack talent that provides sustain. Great for solo players who need to absorb damage without a healer, and for DZ players who need to survive burst damage in PvP.`;
+  return `This talent works across multiple build archetypes depending on how you trigger its conditions. Experiment with different gear combinations to find the setup that activates it most consistently for your playstyle.`;
+}
+
+function getSynergies(): string {
+  if (talent.name === 'Glass Cannon') return `Glass Cannon pairs disgustingly well with any gear set that stacks additive damage — you want multiplicative sources because they scale off each other. Combine with a damage-boosting backpack talent for a ridiculous multiplier stack. High-armor builds can partially offset the DR loss, but honestly, the best synergy is "just kill them before they kill you."`;
+  if (talent.name === 'Duality') return `Duality works with almost everything because it's always doing something. It pairs well with gear sets that provide sustained bonuses (not ones that require specific HP thresholds to stack). Any backpack talent that provides regen or sustain extends your time above 50% HP, maximizing the damage phase of Duality.`;
+  if (isMedkit) return `Gear sets that improve medkit efficiency or reduce cooldowns are your best friend. Backpack talents that provide healing or regen help keep your medkit usage aggressive instead of purely defensive. Look for OS Protocols that complement the activation window.`;
+  if (isSupport) return `Pairs with gear sets focused on group utility and healing. Backpack talents that provide team-wide buffs stack with this for maximum support impact. Any OS Protocol with area healing or team buffs makes the most of this support-oriented talent.`;
+  if (isSkill) return `Skill-focused gear sets that boost Skill Intensity, Duration, or Damage are the natural pairing. Backpack talents that reduce skill cooldowns or boost skill damage compound the effect. Any OS Protocol that enhances your deployed skills will stack with this chest talent.`;
+  if (isDmg && isTank) return `Gear sets that provide both offensive and defensive bonuses are the natural pairing — you're already splitting the difference, so lean into it. Backpack talents that provide weapon damage or sustain both work well depending on whether you want more offense or defense.`;
+  if (isDmg) return `Stack this with gear sets that amplify weapon damage or crit stats. Backpack talents that provide additional damage bonuses create multiplicative scaling that gets out of hand fast. Pair with an offensive OS Protocol for maximum DPS output.`;
+  if (isTank) return `Defensive gear sets that stack armor, HP, or damage reduction compound this talent's survivability gains. Backpack talents that provide healing, regen, or additional DR make you extremely hard to put down. Pair with a tanky OS Protocol for maximum face-tank potential.`;
+  return `Look for gear sets and backpack talents that activate under similar conditions to this chest talent. When your chest, backpack, and gear set all reward the same playstyle, the synergy becomes greater than the sum of its parts.`;
+}
+
+const faqs = [
+  {
+    question: `What does ${talent.name} do in Division Resurgence?`,
+    answer: `${talent.name} is a body armor (chest piece) talent in Division Resurgence. Its effect: ${talent.description} This talent is always active once equipped on a Tier 2 chest piece — no manual activation needed.`
+  },
+  {
+    question: `Is ${talent.name} good for PvP in Division Resurgence?`,
+    answer: isDmg
+      ? `${talent.name} can be strong in PvP if your build can capitalize on the damage bonus. Dark Zone fights are fast, so talents that provide immediate damage increases tend to outperform conditional ones. Make sure the rest of your build supports the playstyle this talent rewards.`
+      : isTank
+        ? `${talent.name} helps you survive burst damage in PvP, which is huge in the Dark Zone. Survivability talents keep you alive through the initial engagement, giving you time to fight back or disengage. It won't win fights by itself, but it keeps you in them.`
+        : `${talent.name} has niche PvP applications depending on your build and playstyle. It's not the meta pick for most PvP setups, but it can work if your entire build is designed around its activation condition.`
+  },
+  {
+    question: `What gear pairs best with ${talent.name}?`,
+    answer: `${talent.name} works best when your gear set, backpack talent, and OS Protocol all support the same playstyle. ${isDmg ? 'Stack damage-boosting gear for multiplicative scaling.' : isSkill ? 'Run skill-focused gear sets to compound the skill bonuses.' : isTank ? 'Layer defensive bonuses from multiple gear pieces for maximum survivability.' : 'Match your gear to the activation condition for the most consistent uptime.'}`
+  }
+];
+
+const talentLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: title,
+  description: description,
+  url: `${siteUrl}/database/body-armor-talents/${slug}/`,
+  author: { '@type': 'Person', '@id': `${siteUrl}/author/rapidf5/#person`, name: 'RapidF5' },
+  publisher: { '@type': 'Organization', '@id': `${siteUrl}/#organization`, name: 'Resurgence Builds' },
+  mainEntityOfPage: { '@type': 'WebPage', '@id': `${siteUrl}/database/body-armor-talents/${slug}/` },
+  datePublished: '2026-05-30',
+  dateModified: '2026-05-30',
+};
+---
+
+<BaseLayout title={title} description={description} breadcrumbs={breadcrumbs} jsonLd={talentLd} faqs={faqs}>
+  <div class="container section">
+    <Breadcrumbs items={breadcrumbs} />
+    <SectionTag label="Body Armor Talent" />
+
+    <div style="max-width: 700px;">
+      <!-- Header -->
+      <div style="margin-bottom: var(--sp-8); padding-bottom: var(--sp-6); border-bottom: 1px solid rgba(255,255,255,0.08);">
+        <div style="display: flex; flex-wrap: wrap; align-items: center; gap: var(--sp-4);">
+          <h1 style="font-family: var(--font-heading); font-size: var(--text-4xl); font-weight: 900; letter-spacing: -0.03em; margin: 0; background: linear-gradient(135deg, #fff 60%, var(--accent)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">{talent.name}</h1>
+          <span style="display: inline-flex; align-items: center; font-family: var(--font-mono); font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent); background: rgba(242,104,34,0.12); border: 1px solid rgba(242,104,34,0.25); padding: 5px 14px; border-radius: 999px;">Chest Talent</span>
+        </div>
+        <div style="display: inline-flex; align-items: center; gap: 6px; font-family: var(--font-mono); font-size: var(--text-xs); color: #6DAA45; background: rgba(109, 170, 69, 0.1); border: 1px solid rgba(109, 170, 69, 0.25); padding: 6px 14px; border-radius: 999px; margin-top: var(--sp-4); letter-spacing: 0.02em;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+          <span>Last verified for <strong>Patch 1.2.1</strong></span>
+        </div>
+      </div>
+
+      <!-- Overview -->
+      <div style="margin-bottom: var(--sp-8);">
+        <h2 style="font-family: var(--font-heading); font-size: var(--text-lg); font-weight: 800; color: #fff; margin: 0 0 var(--sp-4) 0; padding-bottom: var(--sp-2); border-bottom: 1px solid rgba(255,255,255,0.08);">Overview</h2>
+        <p style="color: #c8c8d0; line-height: 1.75; font-size: var(--text-base);">
+          {getOverview()}
+        </p>
+      </div>
+
+      <!-- How It Works -->
+      <div style="margin-bottom: var(--sp-8);">
+        <h2 style="font-family: var(--font-heading); font-size: var(--text-lg); font-weight: 800; color: #fff; margin: 0 0 var(--sp-4) 0; padding-bottom: var(--sp-2); border-bottom: 1px solid rgba(255,255,255,0.08);">How It Works</h2>
+        <div style="padding: var(--sp-5); background: rgba(0,0,0,0.25); border-left: 3px solid var(--accent); border-radius: 0 8px 8px 0;">
+          <p style="margin: 0; color: #c8c8d0; line-height: 1.75; font-size: var(--text-base);">{talent.description}</p>
+        </div>
+        <p style="color: var(--ink-muted); font-size: var(--text-sm); margin-top: var(--sp-3); line-height: 1.6;">
+          This talent rolls on <strong style="color: #fff;">Tier 2 body armor (chest pieces)</strong> only. One chest talent per piece — it's always active once equipped. You can recalibrate it at the Crafting Station if RNG didn't bless you.
+        </p>
+      </div>
+
+      <!-- Best Builds -->
+      <div style="margin-bottom: var(--sp-8);">
+        <h2 style="font-family: var(--font-heading); font-size: var(--text-lg); font-weight: 800; color: #fff; margin: 0 0 var(--sp-4) 0; padding-bottom: var(--sp-2); border-bottom: 1px solid rgba(255,255,255,0.08);">Best Builds</h2>
+        <p style="color: #c8c8d0; line-height: 1.75; font-size: var(--text-base);">
+          {getBestBuilds()}
+        </p>
+      </div>
+
+      <!-- Synergies -->
+      <div style="margin-bottom: var(--sp-8);">
+        <h2 style="font-family: var(--font-heading); font-size: var(--text-lg); font-weight: 800; color: #fff; margin: 0 0 var(--sp-4) 0; padding-bottom: var(--sp-2); border-bottom: 1px solid rgba(255,255,255,0.08);">Synergies &amp; Gear Pairings</h2>
+        <p style="color: #c8c8d0; line-height: 1.75; font-size: var(--text-base);">
+          {getSynergies()}
+        </p>
+      </div>
+
+      <!-- Related Links -->
+      <div style="display: flex; flex-wrap: wrap; gap: var(--sp-3); padding-top: var(--sp-6); border-top: 1px solid rgba(255,255,255,0.08);">
+        <a href="/database/body-armor-talents/" style="font-family: var(--font-mono); font-size: var(--text-sm); color: var(--accent); text-decoration: none; padding: var(--sp-2) var(--sp-4); background: rgba(242,104,34,0.08); border: 1px solid rgba(242,104,34,0.2); border-radius: 6px; transition: all 0.2s;">&larr; All Body Armor Talents</a>
+        <a href="/database/backpack-talents/" style="font-family: var(--font-mono); font-size: var(--text-sm); color: var(--accent); text-decoration: none; padding: var(--sp-2) var(--sp-4); background: rgba(242,104,34,0.08); border: 1px solid rgba(242,104,34,0.2); border-radius: 6px; transition: all 0.2s;">Backpack Talents</a>
+        <a href="/database/gear-set-effects/" style="font-family: var(--font-mono); font-size: var(--text-sm); color: var(--accent); text-decoration: none; padding: var(--sp-2) var(--sp-4); background: rgba(242,104,34,0.08); border: 1px solid rgba(242,104,34,0.2); border-radius: 6px; transition: all 0.2s;">Gear Sets</a>
+        <a href="/tier-list/" style="font-family: var(--font-mono); font-size: var(--text-sm); color: var(--accent); text-decoration: none; padding: var(--sp-2) var(--sp-4); background: rgba(242,104,34,0.08); border: 1px solid rgba(242,104,34,0.2); border-radius: 6px; transition: all 0.2s;">Build Tier List</a>
+      </div>
+    </div>
+
+    <AdSenseUnit />
+  </div>
+</BaseLayout>

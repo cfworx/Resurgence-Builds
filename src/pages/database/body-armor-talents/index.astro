@@ -1,7 +1,7 @@
 ---
-import DatabaseLayout from '../../layouts/DatabaseLayout.astro';
-import armorTalents from '../../data/body-armor-talents.json';
-import AdSenseUnit from '../../components/AdSenseUnit.astro';
+import DatabaseLayout from '../../../layouts/DatabaseLayout.astro';
+import armorTalents from '../../../data/body-armor-talents.json';
+import AdSenseUnit from '../../../components/AdSenseUnit.astro';
 
 const title = "Division Resurgence Body Armor Talents & Best Builds";
 const description = "Every Body Armor (Chest) Talent in Division Resurgence. Pick the right one and you're unkillable. Pick the wrong one and you're a loot donation.";
@@ -35,6 +35,10 @@ const itemListLd = {
     }
   })),
 };
+
+function toSlug(name: string) {
+  return name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+}
 ---
 
 <DatabaseLayout
@@ -49,24 +53,26 @@ const itemListLd = {
 >
   <div class="db-grid" id="talents-grid">
     {armorTalents.map((talent) => (
-      <article class="db-card">
-        <div class="db-card__header">
-          <div>
-            <h2 class="db-card__title">{talent.name}</h2>
-          </div>
-        </div>
-        
-        <div class="db-card__body">
-          <div class="talent-desc">
-            <p>{talent.description}</p>
+      <a href={`/database/body-armor-talents/${toSlug(talent.name)}/`} class="db-card-link" style="text-decoration: none; color: inherit;">
+        <article class="db-card">
+          <div class="db-card__header">
+            <div>
+              <h2 class="db-card__title">{talent.name}</h2>
+            </div>
           </div>
           
-          <div class="source-section">
-            <span class="source-label">Source Armor</span>
-            <p class="source-text">Rolls on T2 chest pieces — equip via Build Planner</p>
+          <div class="db-card__body">
+            <div class="talent-desc">
+              <p>{talent.description}</p>
+            </div>
+            
+            <div class="source-section">
+              <span class="source-label">Source Armor</span>
+              <p class="source-text">Rolls on T2 chest pieces — equip via Build Planner</p>
+            </div>
           </div>
-        </div>
-      </article>
+        </article>
+      </a>
     ))}
   </div>
 <AdSenseUnit />

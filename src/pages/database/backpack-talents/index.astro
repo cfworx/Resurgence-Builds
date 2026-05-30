@@ -1,10 +1,10 @@
 ---
-import DatabaseLayout from '../../layouts/DatabaseLayout.astro';
-import backpackTalents from '../../data/backpack-talents.json';
-import AdSenseUnit from '../../components/AdSenseUnit.astro';
+import DatabaseLayout from '../../../layouts/DatabaseLayout.astro';
+import backpackTalents from '../../../data/backpack-talents.json';
+import AdSenseUnit from '../../../components/AdSenseUnit.astro';
 
 const title = "Division Resurgence Backpack Talents & Best Builds";
-const description = "Every Backpack Talent in Division Resurgence. The good, the bad, and the ones that make you wonder if anyone at Ubisoft playtested them.";
+const description = "Every Backpack Talent in Division Resurgence. The good, the bad, and the ones that make you wonder if anyone playtested them.";
 const breadcrumbs = [
   { name: 'Backpack Talents', url: '/database/backpack-talents/' }
 ];
@@ -24,13 +24,13 @@ const itemListLd = {
   itemListElement: backpackTalents.map((item: any, i: number) => ({
     '@type': 'ListItem',
     position: i + 1,
-    url: Astro.url.href,
+    url: `${Astro.url.origin}/database/backpack-talents/${item.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')}/`,
     item: {
       '@type': 'Thing',
       '@id': `${Astro.url.href}#item-${i}`,
       name: item.name || item.talent || item.attribute || item.protocolName || 'Item',
       description: item.description || item.talentDescription || item.effect || item.notes || `Details for ${item.name || item.talent || item.attribute || item.protocolName || 'item'}`,
-      url: Astro.url.href,
+      url: `${Astro.url.origin}/database/backpack-talents/${item.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')}/`,
       subjectOf: { '@id': 'https://resurgencebuilds.com/#division-resurgence' }
     }
   })),
@@ -48,26 +48,31 @@ const itemListLd = {
   {faqs}
 >
   <div class="db-grid" id="talents-grid">
-    {backpackTalents.map((talent) => (
-      <article class="db-card">
-        <div class="db-card__header">
-          <div>
-            <h2 class="db-card__title">{talent.name}</h2>
-          </div>
-        </div>
-        
-        <div class="db-card__body">
-          <div class="talent-desc">
-            <p>{talent.description}</p>
-          </div>
-          
-          <div class="source-section">
-            <span class="source-label">Source Backpack</span>
-            <p class="source-text">Rolls on T2 backpacks — equip via Build Planner</p>
-          </div>
-        </div>
-      </article>
-    ))}
+    {backpackTalents.map((talent) => {
+      const slug = talent.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+      return (
+        <a href={`/database/backpack-talents/${slug}/`} class="db-card-link" style="text-decoration: none; color: inherit;">
+          <article class="db-card">
+            <div class="db-card__header">
+              <div>
+                <h2 class="db-card__title">{talent.name}</h2>
+              </div>
+            </div>
+            
+            <div class="db-card__body">
+              <div class="talent-desc">
+                <p>{talent.description}</p>
+              </div>
+              
+              <div class="source-section">
+                <span class="source-label">Source Backpack</span>
+                <p class="source-text">Rolls on T2 backpacks — equip via Build Planner</p>
+              </div>
+            </div>
+          </article>
+        </a>
+      );
+    })}
   </div>
 <AdSenseUnit />
 </DatabaseLayout>

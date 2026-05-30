@@ -1,0 +1,198 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../../components/Breadcrumbs.astro';
+import SectionTag from '../../../components/SectionTag.astro';
+import AdSenseUnit from '../../../components/AdSenseUnit.astro';
+import backpackTalents from '../../../data/backpack-talents.json';
+
+export function getStaticPaths() {
+  return backpackTalents.map((talent: any) => ({
+    params: {
+      slug: talent.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')
+    },
+    props: { talent }
+  }));
+}
+
+const { talent } = Astro.props;
+
+const slug = talent.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+const siteUrl = 'https://resurgencebuilds.com';
+const desc = talent.description.toLowerCase();
+
+const title = `${talent.name} — Backpack Talent | Division Resurgence`;
+const description = `${talent.name} backpack talent in Division Resurgence: ${talent.description.split('.')[0]}. Full breakdown, best builds, and synergies.`;
+
+const breadcrumbs = [
+  { name: 'Backpack Talents', url: '/database/backpack-talents/' },
+  { name: talent.name, url: '#' }
+];
+
+// --- Dynamic build recommendations based on description keywords ---
+const isDPS = /weapon damage|critical hit chance|critical hit damage|rate of fire|magazine size|optimal range|damage(?! reduction)/i.test(talent.description);
+const isSkill = /skill|engineering/i.test(talent.description);
+const isTank = /armor|health|damage reduction|healing|medical kit|extra health/i.test(talent.description);
+const isTeam = /ally|allies/i.test(talent.description);
+
+function getBuildRecs() {
+  const recs: string[] = [];
+  if (isDPS) recs.push('DPS and Firepower builds that want to maximize gun damage output.');
+  if (isSkill) recs.push('Skill-focused Engineering builds running turrets, drones, or seekers.');
+  if (isTank) recs.push('Tank and survivability builds that need to stay alive under pressure.');
+  if (isTeam) recs.push('Team support builds in group PvE and Strongholds.');
+  if (recs.length === 0) recs.push('Versatile builds — this talent works across multiple playstyles.');
+  return recs;
+}
+
+function getSynergies() {
+  const synergies: string[] = [];
+  if (isDPS) {
+    synergies.push('Pairs well with Striker gear set for stacking weapon damage.');
+    synergies.push('Strong with Gunslinger or Overcharge OS Protocols for burst windows.');
+  }
+  if (isSkill) {
+    synergies.push('Great with Mechanist gear set for maximum skill uptime.');
+    synergies.push('Combos with Tactical Link OS Protocol to push skill numbers even higher.');
+  }
+  if (isTank) {
+    synergies.push('Synergizes with Bulwark or Guardian gear sets for face-tanking.');
+    synergies.push('Works well with Fortify OS Protocol and Ballistic Shield builds.');
+  }
+  if (isTeam) {
+    synergies.push('Fits naturally in healer/support setups running Restorer Hive.');
+    synergies.push('Stacks nicely with team-oriented gear bonuses like Guardian 4-piece.');
+  }
+  if (synergies.length === 0) {
+    synergies.push('Flexible enough to slot into most gear set combos — experiment and find what clicks.');
+    synergies.push('Test it with different OS Protocols to see where the bonus hits hardest.');
+  }
+  return synergies;
+}
+
+function getOverview() {
+  const parts: string[] = [];
+  parts.push(`${talent.name} is a backpack talent in Division Resurgence that rolls on Tier 2 backpacks.`);
+
+  if (isDPS && isTank) {
+    parts.push(`This one pulls double duty — it buffs your damage output while also giving you some survivability. That kind of flexibility is rare on a single talent slot.`);
+  } else if (isDPS) {
+    parts.push(`It's a straight-up damage talent. If your build is about putting numbers on the screen, this is fighting for a slot on your backpack.`);
+  } else if (isSkill) {
+    parts.push(`This talent is built for skill users. If you're running an Engineering-heavy loadout, this is the kind of passive that makes your abilities hit harder or last longer.`);
+  } else if (isTank) {
+    parts.push(`Survivability is the name of the game here. This talent keeps you standing when the incoming fire gets nasty.`);
+  } else {
+    parts.push(`It's a solid utility talent that can fit into a variety of builds depending on how you play.`);
+  }
+
+  if (isTeam) {
+    parts.push(`Bonus points — it also benefits your squad, so it's extra valuable in group content.`);
+  }
+
+  return parts.join(' ');
+}
+
+const buildRecs = getBuildRecs();
+const synergies = getSynergies();
+const overview = getOverview();
+
+const faqs = [
+  {
+    question: `What does the ${talent.name} backpack talent do in Division Resurgence?`,
+    answer: `${talent.name}: ${talent.description} It's a passive talent on Tier 2 backpacks — once equipped, it activates automatically without any button press.`
+  },
+  {
+    question: `Is ${talent.name} worth using in Division Resurgence?`,
+    answer: `${isDPS ? `If you care about damage, yes — ${talent.name} directly buffs your offensive output.` : ''}${isSkill ? `For skill builds, absolutely — ${talent.name} boosts your skill performance.` : ''}${isTank ? `For survivability builds, it's strong — ${talent.name} helps you stay alive longer.` : ''}${!isDPS && !isSkill && !isTank ? `${talent.name} is a flexible utility talent that fits well in multiple setups.` : ''} Like any talent, it depends on what the rest of your build looks like. Check the synergies section for pairing ideas.`
+  },
+  {
+    question: `How do you get the ${talent.name} backpack talent in Division Resurgence?`,
+    answer: `${talent.name} can roll on any Tier 2 backpack that drops in the open world, missions, or Dark Zone. If you get a backpack with the wrong talent but great stats, hit the Recalibration Station — you can swap the talent slot as long as you haven't already recalibrated another slot on that piece.`
+  }
+];
+
+const talentLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: title,
+  description: description,
+  url: `${siteUrl}/database/backpack-talents/${slug}/`,
+  author: { '@type': 'Person', '@id': `${siteUrl}/author/rapidf5/#person`, name: 'RapidF5' },
+  publisher: { '@type': 'Organization', '@id': `${siteUrl}/#organization`, name: 'Resurgence Builds' },
+  mainEntityOfPage: { '@type': 'WebPage', '@id': `${siteUrl}/database/backpack-talents/${slug}/` },
+  datePublished: '2026-05-30',
+  dateModified: '2026-05-30',
+};
+---
+
+<BaseLayout title={title} description={description} breadcrumbs={breadcrumbs} jsonLd={talentLd} faqs={faqs}>
+  <div class="container section">
+    <Breadcrumbs items={breadcrumbs} />
+    <SectionTag label="Backpack Talent" />
+
+    <div style="max-width: 700px;">
+      <!-- Header -->
+      <div style="margin-bottom: var(--sp-8); padding-bottom: var(--sp-6); border-bottom: 1px solid rgba(255,255,255,0.08);">
+        <div style="display: flex; flex-wrap: wrap; align-items: center; gap: var(--sp-4);">
+          <h1 style="font-family: var(--font-heading); font-size: var(--text-4xl); font-weight: 900; letter-spacing: -0.03em; margin: 0; background: linear-gradient(135deg, #fff 60%, var(--accent)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">{talent.name}</h1>
+          <span style="display: inline-flex; align-items: center; font-family: var(--font-mono); font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent); background: rgba(242,104,34,0.12); border: 1px solid rgba(242,104,34,0.25); padding: 5px 14px; border-radius: 999px;">Backpack Talent</span>
+        </div>
+        <div style="display: inline-flex; align-items: center; gap: 6px; font-family: var(--font-mono); font-size: var(--text-xs); color: #6DAA45; background: rgba(109, 170, 69, 0.1); border: 1px solid rgba(109, 170, 69, 0.25); padding: 6px 14px; border-radius: 999px; margin-top: var(--sp-4); letter-spacing: 0.02em;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+          <span>Last verified for <strong>Patch 1.2.1</strong></span>
+        </div>
+      </div>
+
+      <!-- Overview -->
+      <div style="margin-bottom: var(--sp-8);">
+        <h2 style="font-family: var(--font-heading); font-size: var(--text-lg); font-weight: 800; color: #fff; margin: 0 0 var(--sp-4) 0; padding-bottom: var(--sp-2); border-bottom: 1px solid rgba(255,255,255,0.08);">Overview</h2>
+        <p style="color: #c8c8d0; line-height: 1.75; font-size: var(--text-base);">
+          {overview}
+        </p>
+      </div>
+
+      <!-- How It Works -->
+      <div style="margin-bottom: var(--sp-8);">
+        <h2 style="font-family: var(--font-heading); font-size: var(--text-lg); font-weight: 800; color: #fff; margin: 0 0 var(--sp-4) 0; padding-bottom: var(--sp-2); border-bottom: 1px solid rgba(255,255,255,0.08);">How It Works</h2>
+        <div style="padding: var(--sp-5); background: rgba(0,0,0,0.25); border-left: 3px solid var(--accent); border-radius: 0 8px 8px 0;">
+          <p style="margin: 0; color: #c8c8d0; line-height: 1.75; font-size: var(--text-base);">{talent.description}</p>
+        </div>
+      </div>
+
+      <!-- Best Builds -->
+      <div style="margin-bottom: var(--sp-8);">
+        <h2 style="font-family: var(--font-heading); font-size: var(--text-lg); font-weight: 800; color: #fff; margin: 0 0 var(--sp-4) 0; padding-bottom: var(--sp-2); border-bottom: 1px solid rgba(255,255,255,0.08);">Best Builds for {talent.name}</h2>
+        <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: var(--sp-3);">
+          {buildRecs.map((rec) => (
+            <li style="display: flex; align-items: flex-start; gap: var(--sp-3); padding: var(--sp-4); background: rgba(0,0,0,0.2); border-radius: 8px; border: 1px solid rgba(255,255,255,0.05);">
+              <span style="color: var(--accent); font-size: var(--text-lg); line-height: 1; flex-shrink: 0;">▸</span>
+              <span style="color: #c8c8d0; line-height: 1.65; font-size: var(--text-base);">{rec}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <!-- Synergies -->
+      <div style="margin-bottom: var(--sp-8);">
+        <h2 style="font-family: var(--font-heading); font-size: var(--text-lg); font-weight: 800; color: #fff; margin: 0 0 var(--sp-4) 0; padding-bottom: var(--sp-2); border-bottom: 1px solid rgba(255,255,255,0.08);">Synergies</h2>
+        <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: var(--sp-3);">
+          {synergies.map((syn) => (
+            <li style="display: flex; align-items: flex-start; gap: var(--sp-3); padding: var(--sp-4); background: rgba(0,0,0,0.2); border-radius: 8px; border: 1px solid rgba(255,255,255,0.05);">
+              <span style="color: #6DAA45; font-size: var(--text-lg); line-height: 1; flex-shrink: 0;">⬡</span>
+              <span style="color: #c8c8d0; line-height: 1.65; font-size: var(--text-base);">{syn}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <!-- Related Links -->
+      <div style="display: flex; flex-wrap: wrap; gap: var(--sp-3); padding-top: var(--sp-6); border-top: 1px solid rgba(255,255,255,0.08);">
+        <a href="/database/backpack-talents/" style="font-family: var(--font-mono); font-size: var(--text-sm); color: var(--accent); text-decoration: none; padding: var(--sp-2) var(--sp-4); background: rgba(242,104,34,0.08); border: 1px solid rgba(242,104,34,0.2); border-radius: 6px; transition: all 0.2s;">&larr; All Backpack Talents</a>
+        <a href="/database/body-armor-talents/" style="font-family: var(--font-mono); font-size: var(--text-sm); color: var(--accent); text-decoration: none; padding: var(--sp-2) var(--sp-4); background: rgba(242,104,34,0.08); border: 1px solid rgba(242,104,34,0.2); border-radius: 6px; transition: all 0.2s;">Body Armor Talents</a>
+        <a href="/tier-list/" style="font-family: var(--font-mono); font-size: var(--text-sm); color: var(--accent); text-decoration: none; padding: var(--sp-2) var(--sp-4); background: rgba(242,104,34,0.08); border: 1px solid rgba(242,104,34,0.2); border-radius: 6px; transition: all 0.2s;">Build Tier List</a>
+      </div>
+    </div>
+
+    <AdSenseUnit />
+  </div>
+</BaseLayout>

@@ -1,0 +1,371 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../../components/Breadcrumbs.astro';
+import SectionTag from '../../../components/SectionTag.astro';
+import AdSenseUnit from '../../../components/AdSenseUnit.astro';
+import gearSets from '../../../data/gear-set-effects.json';
+
+export function getStaticPaths() {
+  return gearSets.map((set: any) => ({
+    params: {
+      slug: set.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')
+    },
+    props: { set }
+  }));
+}
+
+const { set } = Astro.props;
+
+const slug = set.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+const siteUrl = 'https://resurgencebuilds.com';
+
+// Analyze bonus text to determine build archetype
+const allBonuses = `${set.bonus2} ${set.bonus3} ${set.bonus4}`.toLowerCase();
+
+const isDPS = /weapon|crit|headshot|firepower|rate of fire|reload|magazine|accuracy|optimal range|multi-shot/.test(allBonuses);
+const isSkill = /skill|engineering|signature ability/.test(allBonuses);
+const isTank = /armor|health|damage reduction|toughness|received healing|extra protection/.test(allBonuses);
+const isHealer = /healing intensity|extra protection|received healing/.test(allBonuses);
+const isHybrid = (isDPS && isSkill) || (isDPS && isTank) || (isSkill && isTank);
+
+const archetype = isHealer ? 'Healer/Support' :
+                  isTank && !isDPS && !isSkill ? 'Tank' :
+                  isSkill && !isDPS ? 'Skill DPS / Engineering' :
+                  isDPS && !isSkill && !isTank ? 'Weapon DPS' :
+                  isHybrid && isDPS && isSkill ? 'Hybrid DPS/Skill' :
+                  isHybrid && isDPS && isTank ? 'Hybrid DPS/Tank' :
+                  'Versatile';
+
+const specRecommendation: Record<string, string> = {
+  'Weapon DPS': 'Vanguard and Breacher builds that lead with bullets. Stack this with a Firepower OS Protocol and weapon talents like Killer, Concentrated Fire, or In Sync.',
+  'Skill DPS / Engineering': 'Demolitionist and Tech Operator builds where your skills are doing the real work. Pair with an Engineering OS Protocol — Surgical Engineering or Tactical Layering are the move.',
+  'Tank': 'Bulwark builds and face-tanking Field Medics. Run a Toughness OS Protocol like Pummeling Shield or Heavy Armor and become the team\'s human shield.',
+  'Healer/Support': 'Field Medic and support-focused builds. Your job is keeping everyone alive — stack Healing Intensity and pair with Captain Cow or Dr. Medic pieces for maximum healing output.',
+  'Hybrid DPS/Skill': 'Builds that want their guns AND skills hitting hard. Tech Operators running Striker Drone + an AR, or Vanguards who lean on Scanning Pulse for crit buffs.',
+  'Hybrid DPS/Tank': 'Bruiser builds — you want to deal damage AND eat shots. Bulwark Breachers or Vanguards who push aggressively into enemies.',
+  'Versatile': 'Flexible enough to slot into multiple build types. Check what your 4-piece bonus actually does and build around that specific stat.',
+};
+
+const overviewGuide: Record<string, string> = {
+  'Fury Strike': `Fury Strike is the go-to crit set in Division Resurgence. The 2-piece gives you extra range, the 3-piece adds Crit Chance, and the 4-piece stacks Crit Damage on top. If you're building a Vanguard or Breacher DPS that wants every shot to potentially delete something, this is your set. It's currently one of the most-used sets in endgame for good reason — raw multiplicative crit scaling is hard to beat.`,
+  'Quick Draw': `Quick Draw is built for marksmen and headshot hunters. Reload Speed and Magazine Size at 2 and 3 pieces keep you in the fight, and the 4-piece bonus is a fat Headshot Damage boost. Pair this with a Marksman Rifle and the One Shot One Kill playstyle or run it on an AR build where you're consistently landing heads. If your aim is mid, skip this — the set does nothing for body-shot builds.`,
+  'Phalanx Attack': `Phalanx Attack is the sustained DPS king. Magazine Size, Rate of Fire, and Multi-Shot Chance — this set wants you to never stop shooting. It's the backbone of LMG builds running Strawberry Milkshake and a staple in any build that values total damage output over burst. Multi-Shot Chance at 4 pieces means every bullet has a chance to hit twice. On an LMG with 100-round mags, that's disgusting.`,
+  'One Shot One Kill': `One Shot One Kill is a precision set for agents with good aim. Accuracy and Headshot Damage bonuses feed directly into Marksman Rifle and Rifle builds. The 4-piece Firepower bonus is a universal damage multiplier that scales everything. If you're hitting heads consistently, this set competes with Fury Strike for raw output.`,
+  'Gunny Johnny': `Gunny Johnny is a workhorse DPS set that buffs your gun from every angle — Rate of Fire, Reload Speed, and flat Weapon Damage. It doesn't specialize in crits or headshots, which makes it a solid generalist choice if your RNG hasn't blessed you with Fury Strike pieces yet. Good starter set, but gets outscaled at endgame by more focused options.`,
+  'Mechanical Enemy': `Mechanical Enemy bridges the gap between weapon DPS and skill builds. Crit Chance and Optimal Range for your guns, plus Skill Cooldown Recovery for your skills. It's an oddball hybrid set — great for Tech Operators who shoot between skill deployments or Vanguards who want their Scanning Pulse back faster. Not best-in-slot for either role, but solid if you're juggling both.`,
+  'Jackpot': `Jackpot is THE skill crit set. Skill Radius, Skill Crit Chance, and Skill Crit Damage — the entire set exists to make your skills crit harder. Demolitionist Artillery Turret builds and Tech Operator Striker Drone builds both love this. Run 2 pieces of Jackpot with 4 pieces of another Engineering set, or go full 4-piece if you want maximum skill crit scaling.`,
+  'Long-term Effect': `Long-term Effect is the core Engineering set. Skill Health keeps your deployables alive, Skill Duration extends their uptime, and the 4-piece gives you +18% Engineering — a massive multiplier on everything skill-related. This is the most-used skill set in endgame because Engineering scales multiplicatively with other bonuses. Four pieces of this plus two Jackpot pieces is the meta Engineering loadout right now.`,
+  'Dr. Medic': `Dr. Medic is a dedicated healer set. Healing Intensity, Skill Intensity, and Release Extra Protection — everything here is about keeping your team alive. Field Medic mains who run Support Station or Healing Hive should have this on their radar. It's not flashy, but when your squad survives a Legendary wipe because your heals actually chunked, you'll appreciate it.`,
+  'Boom-Shakalaka': `Boom-Shakalaka is a skill utility set focused on cooldowns, radius, and intensity. The 4-piece Skill Intensity bonus amplifies everything your skills do — damage, healing, CC effects. It's most at home on Demolitionist builds that want their Seeker Mines and Turrets to cover more ground and cycle faster. The name alone is worth running this set.`,
+  'Fire Cycle': `Fire Cycle is for skill builds that want Signature Ability uptime and Multi-Shot procs. Skill Crit Damage at 2 pieces, Signature Ability Charge Efficiency at 3, and Skill Multi-Shot at 4. This set turns your skills into a machine gun — every skill hit has a chance to fire twice. Demolitionist Artillery Turret and Explosive Seeker Mine builds get absurd value from this.`,
+  'Mechanical Expert': `Mechanical Expert is all about Signature Ability uptime. Skill Duration and Cooldown Recovery keep your skills deployed, and the 4-piece gives you +24% Signature Ability Charge Efficiency — the highest single-source Sig charge bonus in the game. Run this if your build revolves around getting your Signature Ability as fast as possible, especially on Demolitionist or Vanguard.`,
+  'Captain Cow': `Captain Cow is a healer/support hybrid with a funny name and serious utility. Movement Speed for repositioning, Skill Duration for keeping your heals active longer, and Healing Intensity at 4 pieces for fat heals. Field Medic mains love this set for Support Station builds — the longer your station stays deployed, the more healing it pumps out. Don't let the name fool you, this set slaps.`,
+  'Healing Elites': `Healing Elites is a tank/healer hybrid set that makes you nearly impossible to kill. Received Healing, Release Extra Protection, and a massive +28% Armor at 4 pieces. Bulwark builds running a Ballistic Shield become actual walls with this set. If your team's Field Medic is good, Healing Elites turns you into an unkillable raid boss.`,
+  'Self-Propelled Shield': `Self-Propelled Shield is a pure survivability set — Armor, Movement Speed, and Max Health. No damage bonuses, just raw stats that keep you alive. This is a tank set for Bulwark agents who want to push aggressively with a Ballistic Shield without getting melted. The Movement Speed bonus is underrated — a tank that can actually reposition is way more useful than a stationary one.`,
+  'Fearless Warrior': `Fearless Warrior is the bruiser's gear set. Damage Reduction, Damage Bonus, and Toughness — it makes you tanky AND makes you hit harder. This is the go-to for Bulwark Breachers who want to deal damage while absorbing hits, or any frontline build that refuses to choose between offense and defense. Pair with a Toughness OS Protocol for disgusting survivability.`,
+};
+
+const overview = overviewGuide[set.name] || `${set.name} gives you ${set.bonus2} at 2 pieces, ${set.bonus3} at 3 pieces, and ${set.bonus4} at 4 pieces. Build around the 4-piece bonus — that's where the real power spike lives.`;
+
+const title = `${set.name} Gear Set — Division Resurgence`;
+const description = `${set.name} gear set bonuses: ${set.bonus2} (2pc), ${set.bonus3} (3pc), ${set.bonus4} (4pc). Best builds and farming guide for Division Resurgence.`;
+
+const breadcrumbs = [
+  { name: 'Gear Sets', url: '/database/gear-set-effects/' },
+  { name: set.name, url: '#' }
+];
+
+const faqs = [
+  {
+    question: `Is ${set.name} good in Division Resurgence?`,
+    answer: `${set.name} is a ${archetype} gear set. The 4-piece bonus gives you ${set.bonus4}, which ${isDPS ? 'directly scales your weapon output' : isSkill ? 'amps your skill performance across the board' : isTank ? 'makes you significantly harder to kill' : isHealer ? 'boosts your healing and support output' : 'provides a solid stat boost'}. ${archetype === 'Weapon DPS' || archetype === 'Skill DPS / Engineering' ? 'It\'s one of the stronger offensive sets in the game right now.' : archetype === 'Tank' ? 'If survivability is your priority, this set delivers.' : 'Solid choice for the right build.'}`
+  },
+  {
+    question: `What builds use ${set.name} in Division Resurgence?`,
+    answer: `${set.name} fits best on ${specRecommendation[archetype] || 'builds that stack the stats this set provides. Check the 4-piece bonus and build around it.'}`
+  },
+  {
+    question: `How do I farm ${set.name} in Division Resurgence?`,
+    answer: `Gear set pieces drop from endgame activities — Heroic and Legendary missions, weekly bounties, Conflicts reward tracks, and Dark Zone. There's no guaranteed source for specific sets, so you're at the mercy of RNG. Weekly bounties are your most consistent farm. Dismantle or sell pieces from sets you don't need and keep grinding.`
+  }
+];
+
+const setLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: title,
+  description: description,
+  url: `${siteUrl}/database/gear-set-effects/${slug}/`,
+  author: { '@type': 'Person', '@id': `${siteUrl}/author/rapidf5/#person`, name: 'RapidF5' },
+  publisher: { '@type': 'Organization', '@id': `${siteUrl}/#organization`, name: 'Resurgence Builds' },
+  mainEntityOfPage: { '@type': 'WebPage', '@id': `${siteUrl}/database/gear-set-effects/${slug}/` },
+  datePublished: '2026-05-30',
+  dateModified: '2026-05-30',
+};
+
+const bonuses = [
+  { count: 2, label: '2-Piece Bonus', value: set.bonus2, color: '#3b82f6', bg: 'rgba(59,130,246,0.1)', border: 'rgba(59,130,246,0.25)' },
+  { count: 3, label: '3-Piece Bonus', value: set.bonus3, color: '#a855f7', bg: 'rgba(168,85,247,0.1)', border: 'rgba(168,85,247,0.25)' },
+  { count: 4, label: '4-Piece Bonus', value: set.bonus4, color: '#F5CC45', bg: 'rgba(245,204,69,0.1)', border: 'rgba(245,204,69,0.25)' },
+];
+---
+
+<BaseLayout title={title} description={description} breadcrumbs={breadcrumbs} jsonLd={setLd} faqs={faqs}>
+  <div class="container section">
+    <Breadcrumbs items={breadcrumbs} />
+    <SectionTag label="Gear Set" />
+
+    <div class="gearset-detail">
+      <!-- Header -->
+      <div class="gearset-header">
+        <div class="gearset-header__top">
+          <h1 class="gearset-title">{set.name}</h1>
+          <span class="gearset-archetype-badge">{archetype}</span>
+        </div>
+        <div class="gearset-verified">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+          <span>Last verified for <strong>Patch 1.2.1</strong></span>
+        </div>
+      </div>
+
+      <!-- Overview -->
+      <div class="gearset-section">
+        <h2 class="gearset-section__title">Overview</h2>
+        <div class="gearset-prose">
+          <p>{overview}</p>
+        </div>
+      </div>
+
+      <!-- Set Bonuses -->
+      <div class="gearset-section">
+        <h2 class="gearset-section__title">Set Bonuses</h2>
+        <div class="gearset-bonuses-grid">
+          {bonuses.map((bonus) => (
+            <div class="gearset-bonus-card" style={`border-color: ${bonus.border}; background: ${bonus.bg};`}>
+              <div class="gearset-bonus-card__header">
+                <span class="gearset-bonus-count" style={`background: ${bonus.color}; color: #000;`}>{bonus.count}</span>
+                <span class="gearset-bonus-label">{bonus.label}</span>
+              </div>
+              <p class="gearset-bonus-value">{bonus.value}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <!-- Best Builds -->
+      <div class="gearset-section">
+        <h2 class="gearset-section__title">Best Builds & Playstyles</h2>
+        <div class="gearset-prose">
+          <p><strong style="color: #fff;">Build Archetype:</strong> <span style={`color: ${isDPS ? 'var(--accent)' : isSkill ? '#F5CC45' : isTank ? '#3a7bd5' : '#6DAA45'};`}>{archetype}</span></p>
+          <p>{specRecommendation[archetype] || 'This set works best when you build around the 4-piece bonus. Check what stat it provides and pick a specialization, OS Protocol, and weapon talents that multiply that stat.'}</p>
+          <p>Most endgame builds run a 4-piece gear set core with 2 pieces from a complementary set. {isDPS ? `For ${set.name}, common combos include 4pc ${set.name} + 2pc Phalanx Attack (Magazine/RoF) or 2pc Fury Strike (Range/Crit).` : isSkill ? `For ${set.name}, try 4pc ${set.name} + 2pc Jackpot (Skill Radius) or 2pc Long-term Effect (Skill Health).` : isTank ? `For ${set.name}, pair with 2pc Fearless Warrior (DR) or 2pc Self-Propelled Shield (Armor) for the tankiest build possible.` : `For ${set.name}, mix and match based on your team role — 2pc from a complementary set fills in the gaps.`}</p>
+        </div>
+      </div>
+
+      <!-- How to Farm -->
+      <div class="gearset-section">
+        <h2 class="gearset-section__title">How to Farm {set.name}</h2>
+        <div class="gearset-prose">
+          <p>Gear set pieces in Division Resurgence don't have a dedicated farm — they drop from the general endgame loot pool. That means you're running the same activities and praying to RNG. Here's where to focus your time:</p>
+          <ul>
+            <li><strong style="color: #fff;">Weekly Bounties</strong> — Most consistent source. Do all of them, every week. The reward pool includes gear set pieces.</li>
+            <li><strong style="color: #fff;">Heroic & Legendary Missions</strong> — Higher difficulty = better loot quality. Legendary has the best drop rates but requires a solid build to clear.</li>
+            <li><strong style="color: #fff;">Conflicts</strong> — PvP reward tracks drop gear set pieces. If you enjoy PvP, this is efficient farming.</li>
+            <li><strong style="color: #fff;">Dark Zone</strong> — Contaminated gear drops can roll as gear set pieces. High risk, high reward. Extract carefully.</li>
+          </ul>
+          <p>Tier matters too — T2 pieces have the best stat rolls, but T0 and T1 set pieces still activate set bonuses. A full 4-piece set in T0 is better than 2 random T2 pieces with no synergy. Get the set bonus first, then upgrade individual pieces over time.</p>
+        </div>
+      </div>
+
+      <!-- Related Links -->
+      <div class="gearset-related">
+        <a href="/database/gear-set-effects/" class="gearset-link">&larr; All Gear Sets</a>
+        <a href="/database/os-protocols/" class="gearset-link">OS Protocols</a>
+        <a href="/tier-list/" class="gearset-link">Build Tier List</a>
+        <a href="/build-planner/" class="gearset-link">Build Planner</a>
+      </div>
+    </div>
+
+    <AdSenseUnit />
+  </div>
+</BaseLayout>
+
+<style>
+  .gearset-detail {
+    max-width: 700px;
+  }
+
+  .gearset-header {
+    margin-bottom: var(--sp-8);
+  }
+
+  .gearset-header__top {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--sp-4);
+  }
+
+  .gearset-title {
+    font-family: var(--font-heading);
+    font-size: var(--text-4xl);
+    font-weight: 900;
+    letter-spacing: -0.03em;
+    margin: 0;
+    background: linear-gradient(135deg, #fff 60%, var(--accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .gearset-archetype-badge {
+    display: inline-flex;
+    align-items: center;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--accent);
+    background: rgba(242,104,34,0.12);
+    border: 1px solid rgba(242,104,34,0.25);
+    padding: 5px 14px;
+    border-radius: 999px;
+  }
+
+  .gearset-verified {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-family: var(--font-mono);
+    font-size: var(--text-xs);
+    color: #6DAA45;
+    background: rgba(109, 170, 69, 0.1);
+    border: 1px solid rgba(109, 170, 69, 0.25);
+    padding: 6px 14px;
+    border-radius: 999px;
+    margin-top: var(--sp-4);
+    letter-spacing: 0.02em;
+  }
+
+  /* Sections */
+  .gearset-section {
+    margin-bottom: var(--sp-8);
+  }
+
+  .gearset-section__title {
+    font-family: var(--font-heading);
+    font-size: var(--text-lg);
+    font-weight: 800;
+    color: #fff;
+    margin: 0 0 var(--sp-4) 0;
+    padding-bottom: var(--sp-2);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+
+  .gearset-prose {
+    color: #c8c8d0;
+    line-height: 1.75;
+    font-size: var(--text-base);
+  }
+
+  .gearset-prose p {
+    margin: 0 0 var(--sp-4) 0;
+  }
+
+  .gearset-prose p:last-child {
+    margin-bottom: 0;
+  }
+
+  .gearset-prose ul {
+    padding-left: var(--sp-6);
+    margin: var(--sp-3) 0 var(--sp-4) 0;
+  }
+
+  .gearset-prose li {
+    margin-bottom: var(--sp-2);
+    color: #c8c8d0;
+    line-height: 1.7;
+  }
+
+  /* Bonuses Grid */
+  .gearset-bonuses-grid {
+    display: flex;
+    flex-direction: column;
+    gap: var(--sp-3);
+  }
+
+  .gearset-bonus-card {
+    padding: var(--sp-5);
+    border: 1px solid;
+    border-radius: 12px;
+    transition: all 0.2s ease;
+  }
+
+  .gearset-bonus-card:hover {
+    transform: translateY(-1px);
+  }
+
+  .gearset-bonus-card__header {
+    display: flex;
+    align-items: center;
+    gap: var(--sp-3);
+    margin-bottom: var(--sp-3);
+  }
+
+  .gearset-bonus-count {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 8px;
+    font-family: var(--font-mono);
+    font-size: var(--text-sm);
+    font-weight: 900;
+    flex-shrink: 0;
+  }
+
+  .gearset-bonus-label {
+    font-family: var(--font-mono);
+    font-size: var(--text-xs);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #b8b8c0;
+  }
+
+  .gearset-bonus-value {
+    margin: 0;
+    font-size: var(--text-base);
+    font-weight: 600;
+    color: #fff;
+    line-height: 1.5;
+  }
+
+  /* Related */
+  .gearset-related {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--sp-3);
+    padding-top: var(--sp-6);
+    border-top: 1px solid rgba(255,255,255,0.08);
+  }
+
+  .gearset-link {
+    font-family: var(--font-mono);
+    font-size: var(--text-sm);
+    color: var(--accent);
+    text-decoration: none;
+    padding: var(--sp-2) var(--sp-4);
+    background: rgba(242,104,34,0.08);
+    border: 1px solid rgba(242,104,34,0.2);
+    border-radius: 6px;
+    transition: all 0.2s;
+  }
+
+  .gearset-link:hover {
+    background: rgba(242,104,34,0.15);
+    border-color: var(--accent);
+  }
+</style>

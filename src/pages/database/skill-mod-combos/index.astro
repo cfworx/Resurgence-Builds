@@ -1,7 +1,7 @@
 ---
-import DatabaseLayout from '../../layouts/DatabaseLayout.astro';
-import skillMods from '../../data/skill-mod-combos.json';
-import AdSenseUnit from '../../components/AdSenseUnit.astro';
+import DatabaseLayout from '../../../layouts/DatabaseLayout.astro';
+import skillMods from '../../../data/skill-mod-combos.json';
+import AdSenseUnit from '../../../components/AdSenseUnit.astro';
 
 const title = "Division Resurgence Skill Mod Combos & Mods Guide";
 const description = "Every Skill Mod Combo in Division Resurgence and their 2-piece and 3-piece set bonuses. Pair them wrong and your build is a participation trophy.";
@@ -21,6 +21,8 @@ const getSpecClass = (spec: string) => {
   return '';
 };
 
+const toSlug = (name: string) => name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+
 const faqs = [
   { question: "What are skill mod combos in Division Resurgence?", answer: "Skill mod combos are set bonuses you get from equipping matching skill mods. Slot 2 mods from the same combo set for a 2-piece bonus, or go all-in with 3 matching mods for the full 3-piece bonus. They're tied to specific specializations, so make sure you're matching mods that work with your class." },
   { question: "How do I get skill mods in Division Resurgence?", answer: "Skill mods drop from endgame activities — missions, open world events, Dark Zone, and Summit. Higher difficulty means better mod quality. You can also craft them at the Crafting Station once you've unlocked the blueprints. Farm targeted loot areas if you're chasing a specific combo set." },
@@ -36,13 +38,13 @@ const itemListLd = {
   itemListElement: skillMods.map((item: any, i: number) => ({
     '@type': 'ListItem',
     position: i + 1,
-    url: Astro.url.href,
+    url: `https://resurgencebuilds.com/database/skill-mod-combos/${toSlug(item.name)}/`,
     item: {
       '@type': 'Thing',
-      '@id': `${Astro.url.href}#item-${i}`,
-      name: item.name || item.talent || item.attribute || item.protocolName || 'Item',
-      description: item.description || item.talentDescription || item.effect || item.notes || `Details for ${item.name || item.talent || item.attribute || item.protocolName || 'item'}`,
-      url: Astro.url.href,
+      '@id': `https://resurgencebuilds.com/database/skill-mod-combos/${toSlug(item.name)}/`,
+      name: item.name,
+      description: `${item.name} — ${item.specialization} Skill Mod Combo. 2pc: ${item.bonus2}. 3pc: ${item.bonus3}`,
+      url: `https://resurgencebuilds.com/database/skill-mod-combos/${toSlug(item.name)}/`,
       subjectOf: { '@id': 'https://resurgencebuilds.com/#division-resurgence' }
     }
   })),
@@ -71,36 +73,38 @@ const itemListLd = {
 
   <div class="db-grid" id="combos-grid">
     {skillMods.map((mod) => (
-      <article class="db-card" data-spec={mod.specialization}>
-        <div class="db-card__header">
-          <div>
-            <h2 class="db-card__title">{mod.name}</h2>
-            <span class={`tag ${getSpecClass(mod.specialization)}`} style="margin-top:var(--sp-2);display:inline-block;">{mod.specialization}</span>
-          </div>
-        </div>
-        
-        <div class="db-card__body">
-          <div class="bonus-block">
-            <div class="bonus-group">
-              <span class="bonus-label bonus-label-2">
-                <span class="bonus-badge bonus-badge-2">2</span>
-                Piece Bonus
-              </span>
-              <p class="bonus-text">{mod.bonus2}</p>
+      <a href={`/database/skill-mod-combos/${toSlug(mod.name)}/`} class="db-card-link" data-spec={mod.specialization} style="text-decoration:none;color:inherit;display:block;">
+        <article class="db-card" style="height:100%;">
+          <div class="db-card__header">
+            <div>
+              <h2 class="db-card__title">{mod.name}</h2>
+              <span class={`tag ${getSpecClass(mod.specialization)}`} style="margin-top:var(--sp-2);display:inline-block;">{mod.specialization}</span>
             </div>
           </div>
+          
+          <div class="db-card__body">
+            <div class="bonus-block">
+              <div class="bonus-group">
+                <span class="bonus-label bonus-label-2">
+                  <span class="bonus-badge bonus-badge-2">2</span>
+                  Piece Bonus
+                </span>
+                <p class="bonus-text">{mod.bonus2}</p>
+              </div>
+            </div>
 
-          <div class="bonus-block">
-            <div class="bonus-group">
-              <span class="bonus-label bonus-label-3">
-                <span class="bonus-badge bonus-badge-3">3</span>
-                Piece Bonus
-              </span>
-              <p class="bonus-text">{mod.bonus3}</p>
+            <div class="bonus-block">
+              <div class="bonus-group">
+                <span class="bonus-label bonus-label-3">
+                  <span class="bonus-badge bonus-badge-3">3</span>
+                  Piece Bonus
+                </span>
+                <p class="bonus-text">{mod.bonus3}</p>
+              </div>
             </div>
           </div>
-        </div>
-      </article>
+        </article>
+      </a>
     ))}
   </div>
 <AdSenseUnit />
@@ -114,8 +118,8 @@ const itemListLd = {
 
   const updateFilters = () => {
     requestAnimationFrame(() => {
-      grid?.querySelectorAll('article').forEach(card => {
-        const el = card as HTMLElement;
+      grid?.querySelectorAll('.db-card-link').forEach(link => {
+        const el = link as HTMLElement;
         const matchesSpec = currentSpec === 'all' || el.dataset.spec === currentSpec;
         el.style.display = matchesSpec ? '' : 'none';
       });

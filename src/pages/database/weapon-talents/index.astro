@@ -1,7 +1,7 @@
 ---
-import DatabaseLayout from '../../layouts/DatabaseLayout.astro';
-import weaponTalents from '../../data/weapon-talents.json';
-import AdSenseUnit from '../../components/AdSenseUnit.astro';
+import DatabaseLayout from '../../../layouts/DatabaseLayout.astro';
+import weaponTalents from '../../../data/weapon-talents.json';
+import AdSenseUnit from '../../../components/AdSenseUnit.astro';
 
 const title = "Division Resurgence Weapon Talents & Attachments Guide";
 const description = "Every weapon talent in Division Resurgence. Some of these will triple your DPS. Most will make you wonder what Ubisoft was thinking.";
@@ -15,6 +15,10 @@ const faqs = [
   { question: "Can you change weapon talents in Division Resurgence?", answer: "Yes. You can recalibrate the talent on any Tier 2 weapon at the Recalibration Station. Extract the talent you want from a donor weapon first — it gets saved permanently in your Recalibration Library. Then apply it to your weapon. One recalibration slot per weapon, so if you already recalibrated a stat, you can't also swap the talent on that same gun." },
 ];
 
+function toSlug(name: string) {
+  return name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+}
+
 const itemListLd = {
   '@context': 'https://schema.org',
   '@type': 'ItemList',
@@ -24,13 +28,13 @@ const itemListLd = {
   itemListElement: weaponTalents.map((item: any, i: number) => ({
     '@type': 'ListItem',
     position: i + 1,
-    url: Astro.url.href,
+    url: `${Astro.url.origin}/database/weapon-talents/${toSlug(item.name)}/`,
     item: {
       '@type': 'Thing',
       '@id': `${Astro.url.href}#item-${i}`,
       name: item.name || item.talent || item.attribute || item.protocolName || 'Item',
       description: item.description || item.talentDescription || item.effect || item.notes || `Details for ${item.name || item.talent || item.attribute || item.protocolName || 'item'}`,
-      url: Astro.url.href,
+      url: `${Astro.url.origin}/database/weapon-talents/${toSlug(item.name)}/`,
       subjectOf: { '@id': 'https://resurgencebuilds.com/#division-resurgence' }
     }
   })),
@@ -49,24 +53,26 @@ const itemListLd = {
 >
   <div class="db-grid" id="talents-grid">
     {weaponTalents.map((talent) => (
-      <article class="db-card">
-        <div class="db-card__header">
-          <div>
-            <h2 class="db-card__title">{talent.name}</h2>
-          </div>
-        </div>
-        
-        <div class="db-card__body">
-          <div class="talent-desc">
-            <p>{talent.description}</p>
+      <a href={`/database/weapon-talents/${toSlug(talent.name)}/`} class="db-card-link" style="text-decoration: none; color: inherit; display: block;">
+        <article class="db-card">
+          <div class="db-card__header">
+            <div>
+              <h2 class="db-card__title">{talent.name}</h2>
+            </div>
           </div>
           
-          <div class="source-section">
-            <span class="source-label">Source Weapons</span>
-            <p class="source-text">Rolls on T2 standard & exotic weapons — see Build Planner to equip</p>
+          <div class="db-card__body">
+            <div class="talent-desc">
+              <p>{talent.description}</p>
+            </div>
+            
+            <div class="source-section">
+              <span class="source-label">Source Weapons</span>
+              <p class="source-text">Rolls on T2 standard & exotic weapons — see Build Planner to equip</p>
+            </div>
           </div>
-        </div>
-      </article>
+        </article>
+      </a>
     ))}
   </div>
 <AdSenseUnit />

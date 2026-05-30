@@ -1,7 +1,9 @@
 ---
-import DatabaseLayout from '../../layouts/DatabaseLayout.astro';
-import gearSets from '../../data/gear-set-effects.json';
-import AdSenseUnit from '../../components/AdSenseUnit.astro';
+import DatabaseLayout from '../../../layouts/DatabaseLayout.astro';
+import gearSets from '../../../data/gear-set-effects.json';
+import AdSenseUnit from '../../../components/AdSenseUnit.astro';
+
+const slugify = (name: string) => name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
 
 const title = "Division Resurgence Gear Sets & Brand Sets | Best Builds";
 const description = "Every gear set and brand set in Division Resurgence with their 2, 3, and 4-piece bonuses. Stack them right and enemies file complaints.";
@@ -49,46 +51,64 @@ const itemListLd = {
 >
   <div class="db-grid" id="gear-grid">
     {gearSets.map((gear) => (
-      <article class="db-card">
-        <div class="db-card__header">
-          <div>
-            <h2 class="db-card__title">{gear.name}</h2>
-          </div>
-        </div>
-        
-        <div class="db-card__body">
-          <div class="bonus-block">
-            <div class="bonus-group">
-              <span class="bonus-label bonus-label-2">
-                <span class="bonus-badge bonus-badge-2">2</span>
-                Piece Bonus
-              </span>
-              <p class="bonus-text">{gear.bonus2}</p>
+      <a href={`/database/gear-set-effects/${slugify(gear.name)}/`} class="db-card-link">
+        <article class="db-card">
+          <div class="db-card__header">
+            <div>
+              <h2 class="db-card__title">{gear.name}</h2>
             </div>
           </div>
+          
+          <div class="db-card__body">
+            <div class="bonus-block">
+              <div class="bonus-group">
+                <span class="bonus-label bonus-label-2">
+                  <span class="bonus-badge bonus-badge-2">2</span>
+                  Piece Bonus
+                </span>
+                <p class="bonus-text">{gear.bonus2}</p>
+              </div>
+            </div>
 
-          <div class="bonus-block">
-            <div class="bonus-group">
-              <span class="bonus-label bonus-label-3">
-                <span class="bonus-badge bonus-badge-3">3</span>
-                Piece Bonus
-              </span>
-              <p class="bonus-text">{gear.bonus3}</p>
+            <div class="bonus-block">
+              <div class="bonus-group">
+                <span class="bonus-label bonus-label-3">
+                  <span class="bonus-badge bonus-badge-3">3</span>
+                  Piece Bonus
+                </span>
+                <p class="bonus-text">{gear.bonus3}</p>
+              </div>
             </div>
-          </div>
 
-          <div class="bonus-block">
-            <div class="bonus-group">
-              <span class="bonus-label bonus-label-4">
-                <span class="bonus-badge bonus-badge-4">4</span>
-                Piece Bonus
-              </span>
-              <p class="bonus-text">{gear.bonus4}</p>
+            <div class="bonus-block">
+              <div class="bonus-group">
+                <span class="bonus-label bonus-label-4">
+                  <span class="bonus-badge bonus-badge-4">4</span>
+                  Piece Bonus
+                </span>
+                <p class="bonus-text">{gear.bonus4}</p>
+              </div>
             </div>
           </div>
-        </div>
-      </article>
+        </article>
+      </a>
     ))}
   </div>
 <AdSenseUnit />
 </DatabaseLayout>
+
+<style>
+  .db-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+  }
+  .db-card-link .db-card {
+    height: 100%;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  }
+  .db-card-link:hover .db-card {
+    border-color: rgba(242,104,34,0.4);
+    box-shadow: 0 0 20px rgba(242,104,34,0.08);
+  }
+</style>
