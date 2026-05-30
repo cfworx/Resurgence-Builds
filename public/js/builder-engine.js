@@ -8,7 +8,7 @@
     'Bulwark':'Toughness','Vanguard':'Firepower','Field Medic':'Toughness'
   };
   const SPEC_SUBCLASSES = {
-    'Demolitionist': ['High Explosive', 'Field Grenadier'],
+    'Demolitionist': ['HE Munitions', 'Field Grenadier'],
     'Tech Operator': ['Offensive Operations', 'Aegis Operations'],
     'Bulwark': ['Juggernaut', 'Breacher'],
     'Vanguard': ['Commando', 'Recon'],

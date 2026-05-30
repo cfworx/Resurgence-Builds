@@ -18,7 +18,7 @@ sources:
   - '<a href="https://www.youtube.com/watch?v=zJ5t0lGR1gU">PVE Enjoyer, Demolitionist Build Guide</a>, April 2026.'
   - 'In-game Division Resurgence Build Database, verified May 2026.'
   - 'The in-game Armory, community gear and talent reference.'
-plannerHash: "s=Demolitionist&sc=Glass+Cannon&n=Demolitionist+Glass+Cannon+333k&ms=gs-11&m1=Skill+Multi-Shot+Chance&m2=Skill+Intensity&cs=gs-11&ct=ba-24&c1=Skill+Multi-Shot+Chance&c2=Damage+to+Elites&ps=gs-11&pt=bp-13&p1=Skill+Critical+Damage&p2=Signature+Ability+Charge+Efficiency&gs=gs-11&g1=Skill+Multi-Shot+Chance&g2=Skill+Intensity&hs=gs-7&h1=Max+Health&h2=Skill+Critical+Chance&ks=gs-7&k1=Skill+Multi-Shot+Chance&k2=Skill+Intensity&w1s=ew-2&w1tr=T1&w1t=wt-4&w1t2=wt-5&w2s=sw-34&w2tr=T1&w2t=wt-4&w2t2=wt-5&os=os-14&sm1=smc-5&sm2=smc-3&sm3=smc-7"
+plannerHash: "s=Demolitionist&sc=HE+Munitions&n=Demolitionist+Glass+Cannon+333k&ms=gs-11&m1=Skill+Multi-Shot+Chance&m2=Skill+Intensity&cs=gs-11&ct=ba-24&c1=Skill+Multi-Shot+Chance&c2=Damage+to+Elites&ps=gs-11&pt=bp-13&p1=Skill+Critical+Damage&p2=Signature+Ability+Charge+Efficiency&gs=gs-11&g1=Skill+Multi-Shot+Chance&g2=Skill+Intensity&hs=gs-7&h1=Max+Health&h2=Skill+Critical+Chance&ks=gs-7&k1=Skill+Multi-Shot+Chance&k2=Skill+Intensity&w1e=ew-2&w2s=sw-34&w2tr=T1&w2t=wt-4&w2t2=wt-5&os=os-14&sm1=smc-5&sm2=smc-3&sm3=smc-7"
 faqs:
   - question: "Is this Demolitionist build still good after Patch 1.1.2.2?"
     answer: "Yes. The video was filmed in mid April 2026 before Patches 1.1.2, Phase 2, 1.2.1, and 1.1.2.2. None of those patches touched the Fire Cycle set, the Jackpot set, the Warlord or StG 44 rifles, the Artillery Turret, the Explosive Seeker Mine, the M32A1 signature, or the Pressing Matter OS Protocol. The build remains fully viable on the current live version."
@@ -60,9 +60,6 @@ His actual in-game numbers for reference:
 | Engineering | 702 |
 | Toughness | 1.59k |
 | Power Score | 22.32k |
-| Level | 40 |
-| Class | Demolitionist (PVE) |
-| Device | nubia NX789, Medium graphics, 63 FPS |
 
 ---
 
@@ -75,7 +72,7 @@ His actual in-game numbers for reference:
 | Mask | Fire Cycle (Javelina Mask, T2 Level 50, 5.93k Health) | - | Firepower +43 · Armor +59 · Skill Power +172 | Skill Multi-Shot Chance +2.69% | Skill Intensity +4.69% |
 | Chest | Fire Cycle (Ops Armor, T2 Level 50, 1217 PS) | **Toymaker II** | Firepower +69 · Armor +59 · Skill Power +169 | Skill Multi-Shot Chance +3.5% | Damage to Elites +2.88% |
 | Backpack | Fire Cycle (AMP24, T2 Level 50) | **Intense Performance II** | Firepower / Armor / Skill Power roll | Skill Critical Damage roll | Signature Charge roll |
-| Gloves | Fire Cycle (T2 Level 50) | Not specified in video | Firepower / Armor / Skill Power roll | Skill Multi-Shot Chance | Skill Intensity |
+| Gloves | Fire Cycle (T2 Level 50) | - | Firepower / Armor / Skill Power roll | Skill Multi-Shot Chance | Skill Intensity |
 | Holster | Jackpot (Jags Sidearm Mount, T2 Level 50) | - | Skill Power | Max Health +9.42% | Skill Critical Chance roll |
 | Knee Pads | Jackpot (T2 Level 50) | - | Skill Power | Skill Multi-Shot Chance | Skill Intensity |
 
@@ -219,9 +216,24 @@ His farming tip is gold for anyone who hates running long missions: stand outsid
 
 ## Loot Quick-Reference for Demolitionist
 
-PVE Enjoyer's loot path is short and on-brand: **farm Hostile Nests for gear mods, and farm weekly bounties for OS Protocols.** The Fire Cycle T2 set only drops once you are running Tier 2 content, which means clearing Conflicts to Level 100 first, then pushing into the harder PVE encounters where T2 loot opens up. The 4pc Jackpot fallback can be farmed at any tier from open-world activities and faction caches, so anyone still working through campaign progression has a usable bridge build. The Warlord and StG 44 both drop from the standard Assault Rifle loot pool, so the grind there is talent rolls, not the base weapon. The [Pressing Matter](/database/os-protocols/pressing-matter/) and Brains Over Brawn OS Protocols both come out of weekly bounty runs. PVE Enjoyer says he upgraded a blue OS Protocol fully in one day just by running the main weekly bounty target on repeat, so the OS Protocol farm is fast if you stay focused on it.
+Use this table to judge whether a drop is worth keeping for this build.
 
-He also mentions he has not done much Dark Zone or PvP, only pushing Conflicts to Level 100 for the T2 unlock. If you are a PvE-first player, this build matches that exact philosophy.
+| Piece | What You Need | Where It Drops | Priority Rolls |
+|---|---|---|---|
+| **Mask** | Fire Cycle T2 | T2 PVE content / Conflicts 100+ | Skill Multi-Shot Chance · Skill Intensity |
+| **Chest** | Fire Cycle T2 + Toymaker II | T2 PVE content / Conflicts 100+ | Skill Multi-Shot Chance · Damage to Elites |
+| **Backpack** | Fire Cycle T2 + Intense Performance II | T2 PVE content / Conflicts 100+ | Skill Critical Damage · Signature Charge |
+| **Gloves** | Fire Cycle T2 | T2 PVE content / Conflicts 100+ | Skill Multi-Shot Chance · Skill Intensity |
+| **Holster** | Jackpot T2 | Open-world activities / Faction caches | Max Health · Skill Critical Chance |
+| **Knee Pads** | Jackpot T2 | Open-world activities / Faction caches | Skill Multi-Shot Chance · Skill Intensity |
+| **Warlord** | Exotic AR (Engineering main stat) | Assault Rifle loot pool | Skill Intensity · Skill Shredding Damage |
+| **StG 44** | Standard AR + Backup Battery II | Assault Rifle loot pool | Skill Multi-Shot Chance · Skill Piercing Damage |
+| **OS Protocol** | [Pressing Matter](/database/os-protocols/pressing-matter/) | Weekly bounty runs | +24% Skill Intensity · +10% Skill Cooldown Recovery |
+| **Seeker Mine Firmware** | Applied Demolitions 3pc | Hostile Nests (sub-rewards) | Mine Radius · Skill Multi-Shot Chance |
+| **Turret Firmware** | Frag Grenades 3pc | Hostile Nests (sub-rewards) | Turret Intensity · Damage to Elites |
+| **Signature Firmware** | Fire Support 3pc | Hostile Nests (sub-rewards) | M32A1 Damage · Damage to Elites |
+
+**Farm path:** Hostile Nests for gear mods and firmware, weekly bounties for OS Protocols. Fire Cycle T2 is gated behind Conflicts Level 100 or T2 PVE content. If you are not there yet, run 4pc Jackpot as a bridge build. The Warlord and StG 44 drop from the standard AR pool — the grind is talent and stat rolls, not the base weapon.
 
 ---
 
