@@ -76,6 +76,8 @@
       keyboard: false,
       dragging: false,
       touchZoom: false,
+      zoomSnap: 0,        // allow fractional zoom for pixel-perfect fit
+      zoomDelta: 0.25,
     });
 
     // RasterCoords setup
@@ -84,12 +86,22 @@
     // Image overlay
     L.imageOverlay('/images/map/manhattan-base.jpg', rc.getMaxBounds()).addTo(map);
 
-    // Show entire image — no pan, no zoom
-    map.fitBounds(rc.getMaxBounds());
-    const zoom = map.getBoundsZoom(rc.getMaxBounds());
+    // Fit image to container with zero padding
+    const bounds = rc.getMaxBounds();
+    const zoom = map.getBoundsZoom(bounds, false, [0, 0]);
     map.setView(rc.unproject([imgW / 2, imgH / 2]), zoom);
     map.setMinZoom(zoom);
-    map.setMaxZoom(zoom);
+    map.setMaxZoom(zoom + 0.5);
+    map.setMaxBounds(bounds);
+
+    // Re-fit after CSS settles (fixes mobile timing)
+    requestAnimationFrame(() => {
+      map.invalidateSize();
+      const z = map.getBoundsZoom(bounds, false, [0, 0]);
+      map.setView(rc.unproject([imgW / 2, imgH / 2]), z);
+      map.setMinZoom(z);
+      map.setMaxZoom(z + 0.5);
+    });
   }
 
   /* --- Build markers from pois.json --- */
