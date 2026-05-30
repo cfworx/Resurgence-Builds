@@ -89,10 +89,10 @@ Patch 1.1.2.2 deployed. Servers came back online. Players logged in and started 
 
 Community moderator **Ubi_Ticksy** confirmed it directly on the official Discord. Two screenshots circulating on Reddit show the conversation:
 
-![Discord screenshot showing Ubisoft moderator Ubi_Ticksy confirming servers were taken down to resolve the GM permissions issue during the Patch 1.1.2.2 deployment on May 29, 2026](https://preview.redd.it/p3s4wzowa44h1.jpeg)
+![Discord screenshot showing Ubisoft moderator Ubi_Ticksy confirming servers were taken down to resolve the GM permissions issue during the Patch 1.1.2.2 deployment on May 29, 2026](/images/patch-notes/discord-ubiticksy-gm-confirm.jpg)
 *Ubi_Ticksy (Ubisoft mod) confirming on the official Discord that servers were taken down to resolve the GM access issue. Screenshot via [u/Careful_Grapefruit_4 on r/thedivisionresurgence](https://www.reddit.com/r/thedivisionresurgence/comments/1tr2ajq/updateconcerns/).*
 
-![Discord screenshot showing Ubisoft moderator Ubi_Ticksy explaining the GM permissions exposure was an easy mistake during the Division Resurgence Patch 1.1.2.2 deployment](https://preview.redd.it/s4bj7xita44h1.jpeg)
+![Discord screenshot showing Ubisoft moderator Ubi_Ticksy explaining the GM permissions exposure was an easy mistake during the Division Resurgence Patch 1.1.2.2 deployment](/images/patch-notes/discord-ubiticksy-gm-easy-mistake.jpg)
 *The official line: it was an accidental misconfiguration during deployment, not a hack or a leak. Same Discord thread.*
 
 So this is on the record from Ubisoft itself: the GM tools were accidentally left on after the patch went live, the team caught it once players started reporting it, and they pulled servers down a second time to lock it back up. That's not great, but it's also not the apocalypse some posts are making it out to be. Live service deploys with backend tooling are one of the hardest things to get right, and even big studios trip on them. The fact that they noticed quickly, pulled the trigger on a second downtime, and told the community what happened is actually how this kind of thing is supposed to be handled.
