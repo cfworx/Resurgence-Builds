@@ -46,7 +46,7 @@ faqs:
 
 > **RapidF5 note:** We have tweaked the weapon talents on the Lightweight M4 from Saiynergy's original loadout. He runs Steady Hands and Medical Accuracy. We are recommending **Killer + Breadbasket** instead, because Killer is the strongest AR talent for crit builds and Breadbasket stacks Headshot Damage that feeds directly into Death From Afar. The rest of the build is Saiynergy's original.
 
-This is a **Breacher shield build** that anchors a doorway and refuses to leave. Saiynergy is sitting at **23.17k Power Score, 334.07k DPS, and 7,679 Armor at Level 50**. The 4pc Fury Strike gives you the crit chance and crit damage backbone. The 2pc Phalanx Attack stacks magazine size so the Vector keeps firing past the point where most builds reload and die. The Ballistic Shield with **Intimidation** punishes anyone shooting your shield. The Shockwave Spike Mk.3 with **Attritional Charge** keeps your damage reduction and crit chance topped off. **Death From Afar** OS Protocol turns headshot damage into raw Firepower. The core loop is straightforward: shield up, walk forward, let the Vector pour rounds into whatever the M4 can't reach. Your job is to be the wall. Your fireteam's job is to be the people who do not have to be the wall.
+This is a **Breacher shield build** that anchors a doorway and refuses to leave. Saiynergy is sitting at **23.17k Power Score, 334.07k DPS, and 7,679 Armor**. The 4pc Fury Strike gives you the crit chance and crit damage backbone. The 2pc Phalanx Attack stacks magazine size so the Vector keeps firing past the point where most builds reload and die. The Ballistic Shield with **Intimidation** punishes anyone shooting your shield. The Shockwave Spike Mk.3 with **Attritional Charge** keeps your damage reduction and crit chance topped off. **Death From Afar** OS Protocol turns headshot damage into raw Firepower. The core loop is straightforward: shield up, walk forward, let the Vector pour rounds into whatever the M4 can't reach. Your job is to be the wall. Your fireteam's job is to be the people who do not have to be the wall.
 
 ---
 
@@ -57,7 +57,6 @@ This is a **Breacher shield build** that anchors a doorway and refuses to leave.
 | DPS | 334.07k |
 | Armor | 7,679 |
 | Power Score | 23.17k |
-| Class | Breacher |
 
 ---
 
@@ -68,7 +67,7 @@ This is a **Breacher shield build** that anchors a doorway and refuses to leave.
 | Slot | Set | Talent | Core | Attribute Bonus 1 | Attribute Bonus 2 |
 |---|---|---|---|---|---|
 | Mask | Fury Strike or Phalanx Attack | - | Firepower | Headshot Damage | Weapon Crit Hit Chance |
-| Chest | Fury Strike or Phalanx Attack | **Unflinching** | **Armor** | Weapon Crit Hit Chance | Skill Crit Chance |
+| Chest | Fury Strike or Phalanx Attack | **Unflinching** | Armor | Weapon Crit Hit Chance | Skill Crit Chance |
 | Backpack | Fury Strike ("Rally Point Secure Pack") | **Hidden Impact 2** | Firepower | Skill Crit Chance +5.17% | Weapon Crit Hit Damage +4.68% |
 | Gloves | Fury Strike ("Lochy" Hand Savers, T0) | - | Firepower | Weapon Crit Hit Chance +4.67% | Weapon Crit Hit Damage +8.89% |
 | Holster | Fury Strike or Phalanx Attack | - | Firepower | Weapon Crit Hit Damage | Headshot Damage |
@@ -204,13 +203,17 @@ Backup weapons for farming attachments and talents:
 
 ## Loot Quick-Reference
 
-| Drop | Where to Get It |
+| Item | Keep If It Has |
 |---|---|
-| 4pc Fury Strike / 2pc Phalanx Attack gear | **Wall Street Woes** (heroic, 15.7k power req), **Liberty Island** |
-| Lightweight M4 / assault rifles | **New Enemy** mission |
-| High-End attachments | **Hostile Nests** (challenging or heroic) |
-| Dark Zone mods and gear | **Q Building** (heroic), **47th Street Extraction DZ Enemy** (heroic), **Sports Store** (challenging) |
-| Death From Afar OS Protocol | Weekly bounties (purple/blue tier) or Steel Caches shop (gold) |
+| Fury Strike gear (4pc) | Weapon Crit Hit Damage, Headshot Damage, Weapon Crit Hit Chance |
+| Phalanx Attack gear (2pc) | Weapon Crit Hit Damage, Headshot Damage |
+| Chest (any set) | Unflinching talent, Armor core |
+| Backpack (any set) | Hidden Impact talent, Skill Crit Chance, Weapon Crit Hit Damage |
+| Lightweight M4 (AR) | Killer + Breadbasket talents |
+| Vector 45 ACP (SMG) | Strained + Adaptation talents |
+| Death From Afar OS | Any attribute — the talent is what matters |
+| Ballistic Shield mod | Provocateur firmware |
+| Shockwave Spike mod | Attritional Charge firmware |
 
 ---
 

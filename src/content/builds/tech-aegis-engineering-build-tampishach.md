@@ -17,7 +17,7 @@ shareText: "237k DPS Tech Aegis build. 53% Skill Crit Chance. Your drones do mor
 sources:
   - '<a href="https://www.youtube.com/watch?v=bZA3H9f2ah0">Tampishach (PowerfulJRE Clips), Tech Aegis Build Walkthrough</a>, April 2026.'
   - 'In-game Division Resurgence Build Database, verified May 2026.'
-plannerHash: "s=Tech+Operator&sc=Aegis+Operations&n=Tech+Aegis+237k&ms=gs-7&m1=Signature+Ability+Charge+Efficiency&m2=Skill+Critical+Damage&cs=gs-8&ct=ba-14&c1=Skill+Radius&c2=Skill+Critical+Damage&ps=gs-8&pt=bp-19&p1=Damage+Reduction&p2=Skill+Critical+Chance&gs=gs-8&g1=Skill+Critical+Chance&g2=Skill+Critical+Damage&hs=gs-7&h1=Damage+Reduction&h2=Skill+Critical+Damage&ks=gs-8&k1=Skill+Critical+Chance&k2=Skill+Critical+Damage&w1s=sw-12&w1tr=T0&w1t=wt-66&w1t2=wt-42&w2s=sw-10&w2tr=T1&w2t=wt-22&w2t2=wt-60&os=os-20&sm1=smc-35&sm2=smc-29&sm3=smc-32"
+plannerHash: "s=Tech+Operator&sc=Aegis+Operations&n=Tech+Aegis+237k&ms=gs-7&m1=Signature+Ability+Charge+Efficiency&m2=Skill+Critical+Damage&cs=gs-8&ct=ba-14&c1=Skill+Radius&c2=Skill+Critical+Damage&ps=gs-8&pt=bp-19&p1=Damage+Reduction&p2=Skill+Critical+Chance&gs=gs-8&g1=Skill+Critical+Chance&g2=Skill+Critical+Damage&hs=gs-7&h1=Damage+Reduction&h2=Skill+Critical+Damage&ks=gs-8&k1=Skill+Critical+Chance&k2=Skill+Critical+Damage&w1s=sw-10&w1tr=T1&w1t=wt-22&w1t2=wt-60&w2s=sw-12&w2tr=T0&w2t=wt-66&w2t2=wt-42&os=os-20&sm1=smc-35&sm2=smc-29&sm3=smc-32"
 videoId: "bZA3H9f2ah0"
 videoTitle: "Tampishach — Tech Aegis Build Walkthrough"
 videoChannel: "PowerfulJRE Clips"
@@ -59,8 +59,6 @@ This is a **Tech Aegis Engineering build** that turns skill crit into a sledgeha
 | Skill Crit Chance | 53% |
 | Skill Crit Damage | 113% |
 | Power Score | 18.70k |
-| Level | 50 |
-| Class | Tech Aegis |
 
 ---
 
@@ -71,11 +69,11 @@ This is a **Tech Aegis Engineering build** that turns skill crit into a sledgeha
 | Slot | Set | Talent | Core | Attribute Bonus 1 | Attribute Bonus 2 |
 |---|---|---|---|---|---|
 | Mask | Jackpot (Rapid Deployment Mask, T0) | - | Firepower | Sig Ability Charge Efficiency +9.78% | Skill Critical Damage +7.63% |
-| Chest | Long-term Effect (Mechanized Infantry Arm, T0) | **Injured Concealment** | **Firepower** | Skill Radius +4.61% | Skill Critical Damage +7.84% |
+| Chest | Long-term Effect (Mechanized Infantry Arm, T0) | **Injured Concealment** | Firepower | Skill Radius +4.61% | Skill Critical Damage +7.84% |
 | Backpack | Long-term Effect (Mountain Hiking Pack, T2) | **Prime Engineer** (recommended) | Firepower | Damage Reduction +3.1% | Skill Critical Chance +5.67% |
 | Gloves | Long-term Effect | - | Firepower | Skill Critical Chance | Skill Critical Damage |
 | Holster | Jackpot (Jags Sidearm Mount, T2) | - | Firepower | Damage Reduction +3.64% | Skill Critical Damage +8.62% |
-| Knee Pads | Long-term Effect (Brown Knee Guards, T1) | - | Firepower | Skill Critical Chance +5.99% | - |
+| Knee Pads | Long-term Effect (Brown Knee Guards, T1) | - | Firepower | Skill Critical Chance +5.99% | Skill Critical Damage |
 
 **Core roll philosophy:** Firepower cores across the board, with every sub-attribute pointed at Skill Critical Chance and Skill Critical Damage. Tampishach: *"Try to get as much engineering as you can."* Engineering is the multiplier on every skill, the Brains Over Brawn OS Protocol, and the Long-term Effect 4pc bonus. The gear modules on every slot should be rolled to Engineering and maxed out.
 
@@ -87,8 +85,8 @@ This is a **Tech Aegis Engineering build** that turns skill crit into a sledgeha
 
 | Slot | Item | Details |
 |---|---|---|
-| **Primary** | MPX (T0, SMG, Level 50) | **Torrential Downpour II + Rapid Charge** · Skill Multi-Shot Chance +8.09% |
-| **Secondary** | Copperhead (T1, SMG, Level 40) | **In Sync + Swift Taunt** · Piercing Damage 800 |
+| **Primary** | Copperhead (T1, SMG, Level 40) | **In Sync + Swift Taunt** · Piercing Damage 800 |
+| **Secondary** | MPX (T0, SMG, Level 50) | **Torrential Downpour II + Rapid Charge** · Skill Multi-Shot Chance +8.09% |
 | **OS Protocol** | **Brains Over Brawn** (High-End, Level 50) | +21.60% Skill Crit Chance. Hits deal additional damage equal to 48% Engineering |
 | **Skill 1** | Defender Drone | Hazardous Area firmware 3pc |
 | **Skill 2** | Mender Drone | Team Backup firmware 3pc |
@@ -163,14 +161,7 @@ If you want to push the Skill Crit Damage ceiling instead of the Skill Crit Chan
 
 ## Weapon Talents and Attachments
 
-### Primary: MPX (T0, SMG, Level 50)
-
-- **Torrential Downpour II:** Hitting enemies 10 times within 5 seconds grants +31.50% Engineering for 12 seconds. With an 850 RPM SMG, hitting that window is trivial.
-- **Rapid Charge:** Hitting an enemy 5 times in 3 seconds grants 50 Signature Ability Charge. Faster Aegis Operations uptime.
-
-**Headline attribute:** Skill Multi-Shot Chance +8.09%.
-
-### Secondary: Copperhead (T1, SMG, Level 40)
+### Primary: Copperhead (T1, SMG, Level 40)
 
 - **In Sync:** Weapon Hits grant +9% Skill Damage, Skill Hits grant +9% Weapon Damage. Doubled when both are active.
 - **Swift Taunt:** Hitting 3 enemies within 5 seconds taunts nearby enemies and grants Extra Health equal to 25% Max Health.
@@ -178,6 +169,13 @@ If you want to push the Skill Crit Damage ceiling instead of the Skill Crit Chan
 Tampishach recommends hunting for **Torrential Downpour II** or **In Sync II** as upgrades.
 
 **Weapon attributes:** Skill Critical Damage +19.55%, Armor +19.94%.
+
+### Secondary: MPX (T0, SMG, Level 50)
+
+- **Torrential Downpour II:** Hitting enemies 10 times within 5 seconds grants +31.50% Engineering for 12 seconds. With an 850 RPM SMG, hitting that window is trivial.
+- **Rapid Charge:** Hitting an enemy 5 times in 3 seconds grants 50 Signature Ability Charge. Faster Aegis Operations uptime.
+
+**Headline attribute:** Skill Multi-Shot Chance +8.09%.
 
 ### Attachments
 
@@ -190,14 +188,16 @@ Both guns should run **Engineering-stacked mods** in every slot:
 
 ## Loot Quick-Reference
 
-| Drop | Where to Get It |
+| Item | Stats to Look For |
 |---|---|
-| 4pc Long-term Effect gear | Dark Zone caches, named DZ bosses |
-| 2pc Jackpot gear | Open-world activities, faction caches |
-| MPX / Copperhead (SMGs) | Generic SMG loot pools |
-| Brains Over Brawn OS Protocol | Weekly bounties (farm to max level) |
-| Prime Engineer backpack talent | Long-term Effect cache rerolls, DZ drops |
-| Engineering weapon mods | Hostile Nests (challenging or heroic) |
+| 4pc Long-term Effect gear | Skill Critical Chance, Skill Critical Damage, Engineering modules |
+| 2pc Jackpot gear | Skill Critical Damage, Signature Ability Charge Efficiency |
+| Copperhead (Primary SMG) | In Sync or Torrential Downpour II, Skill Critical Damage, Armor |
+| MPX (Secondary SMG) | Torrential Downpour II, Rapid Charge, Skill Multi-Shot Chance |
+| Brains Over Brawn OS Protocol | Max to Level 50 for +21.60% Skill Crit Chance |
+| Chest talent | Injured Concealment (or Rank 2 for +28% Damage) |
+| Backpack talent | Prime Engineer (+22.50% Engineering on skill deploy) |
+| Weapon mods (all slots) | Engineering, Skill Shredding Damage, Skill Blast Damage |
 
 ---
 
