@@ -36,13 +36,11 @@ faqs:
 
 **By RapidF5 ·** Patch 1.1.2.2 ·
 
-> Strawberry Milkshake is the exotic LMG that no one took seriously until someone bolted Phalanx Attack, Fury Strike, and In Sync onto it. This is that build. 118-round magazine, ~37% Multi-Shot Chance, double-dipped In Sync, Glass Cannon justified by Swift Taunt's Extra Health buffer, and a Dominating Presence OS Protocol that rewards standing in the worst possible spot. We call it **The Milkshake Machine** because it shreds enemies the way a blender shreds ice — and because naming a build "Strawberry Milkshake Optimal" has the same energy as naming your fantasy football team "Team 1."
+> 118 rounds. ~37% Multi-Shot. In Sync double-dip from bullet one. Glass Cannon justified by Swift Taunt. Dominating Presence rewarding you for standing in the worst possible spot. We call it **The Milkshake Machine** because it shreds enemies the way a blender shreds ice — and because naming a build "Strawberry Milkshake Optimal" has the same energy as naming your fantasy football team "Team 1."
 
-> ⚡ **Not meta. Not trying to be.** The Milkshake Machine is a fun build. It won't top the leaderboard and it's not what you bring when your clan is actually trying. It's what you bring when you want to watch 118 rounds of Multi-Shot crits turn a room into a smoothie while your wife asks why you're cackling at your phone at 11pm. If you want the current meta, check the [Build Tier List](/tier-list/). If you want to have a good time, keep reading.
+> ⚡ **Not meta. Not trying to be.** This is a fun build. It won't top the leaderboard and it's not what you bring when your clan is actually trying. It's what you bring when you want to watch Multi-Shot crits turn a room into a smoothie while your wife asks why you're cackling at your phone at 11pm. Want meta? Check the [Build Tier List](/tier-list/). Want a good time? Keep reading.
 
-This is a Firepower-stacked, Multi-Shot-stacked Vanguard build that turns the Strawberry Milkshake into the most disrespectful sustained-fire weapon in Division Resurgence. The core loop is straightforward: drop Smart Cover, cast Scanning Pulse, fire SM. Scanning Pulse counts as a skill hit, which activates In Sync's skill-side buff instantly. Your first SM bullet activates the weapon-side buff. Both buffs are live. Both double. You are now putting out **+18% Skill Damage and +18% Weapon Damage from bullet one**, into Pulsed enemies taking +20% vulnerability, with every third-ish bullet firing twice via Multi-Shot, while Glass Cannon adds +20% Damage and Inspiration grants +30% RoF because Smart Cover is always deployed. The 118-round magazine and Field Supplies skill mod refilling your mag on Pulsed kills means you almost never reload. When you do, Armored Train stacks WCHC behind cover passively. Tactical Link comes back, you pop it, Commando skill mod adds +10.20% WCHC on kills, and the room dies.
-
-It's a lot of moving parts. That's the whole point. If you wanted "hold trigger, watch bars go down," there are simpler builds. This one rewards the kind of person who reads patch notes on the toilet.
+The core loop: drop Smart Cover, cast Scanning Pulse (instant In Sync skill-side buff), fire Strawberry Milkshake (In Sync weapon-side buff on first hit). Both buffs double. **+18% Weapon Damage and +18% Skill Damage from bullet one**, into Pulsed enemies taking +20% vulnerability, every third-ish bullet firing twice via Multi-Shot, Glass Cannon adding +20% Damage, Inspiration granting +30% RoF. The 118-round mag and Field Supplies refilling on Pulsed kills means you almost never reload. A lot of moving parts — that's the whole point. This one rewards the kind of person who reads patch notes on the toilet.
 
 ---
 
@@ -73,7 +71,6 @@ This is not a glass-cannon-and-die build. The Extra Health from Swift Taunt is u
 | Build Talents | **In Sync** (slot 1) + **Swift Taunt** (slot 2) |
 | Godroll Attribute Rolls | Weapon Damage + Weapon Critical Hit Damage |
 
-A note on Anarchy: the community consensus is that Anarchy is currently non-functional or so weak it might as well be a flavor text. **Do not build around it.** It's the exotic equivalent of that one drawer in your kitchen that's full of dead batteries and takeout menus. The real engine is In Sync.
 
 
 
