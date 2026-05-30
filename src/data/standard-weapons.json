@@ -31,5 +31,6 @@
   {"id":"sw-30","name":"Classic M1A","type":"Rifle","rpm":"300","mag":"10","dmgType":"Physical"},
   {"id":"sw-31","name":"Urban MDR","type":"Rifle","rpm":"350","mag":"20","dmgType":"Physical"},
   {"id":"sw-32","name":"ACR SS","type":"Rifle","rpm":"360","mag":"20","dmgType":"Physical"},
-  {"id":"sw-33","name":"Mk16","type":"Assault Rifle","rpm":"625","mag":"30","dmgType":"Physical"}
+  {"id":"sw-33","name":"Mk16","type":"Assault Rifle","rpm":"625","mag":"30","dmgType":"Physical"},
+  {"id":"sw-34","name":"StG 44","type":"Assault Rifle","rpm":"600","mag":"30","dmgType":"Physical"}
 ]
