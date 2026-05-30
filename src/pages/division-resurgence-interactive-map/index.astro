@@ -143,16 +143,21 @@ const dataPayload = JSON.stringify(poisData);
   margin: var(--sp-4) auto 0;
   border: 1px solid var(--border);
   border-radius: var(--border-radius);
-  overflow: hidden;
+  overflow: visible;
+  position: relative;
+}
+.map-canvas-wrap .leaflet-popup-pane {
+  z-index: 700;
 }
 #map-canvas {
   width: 100%;
   height: 75vh;
   min-height: 500px;
   background: #0a0d12;
-  cursor: grab;
+  cursor: default;
 }
-#map-canvas:active { cursor: grabbing }
+#map-canvas .leaflet-map-pane { overflow: hidden; }
+#map-canvas:active { cursor: default }
 
 /* --- Markers --- */
 .poi-marker { background: none !important; border: none !important }
