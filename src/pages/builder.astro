@@ -1057,66 +1057,72 @@ const dataPayload = JSON.stringify({ gearSets, weaponTalents, exoticWeapons, sta
 .summary-section__icon { font-size: 13px }
 .summary-section__body { display: flex; flex-direction: column; gap: 6px }
 
-/* Loadout items — tactical card style */
-.summary-loadout-group {
-  padding: 0;
+/* Loadout rows — compact HUD readout */
+.sl-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 8px 10px;
   background: rgba(0,0,0,0.3);
   border-radius: 4px;
-  border: 1px solid rgba(255,255,255,0.06);
-  overflow: hidden;
+  border-left: 2px solid var(--panel-border);
   position: relative;
   transition: border-color 200ms ease;
 }
-.summary-loadout-group:hover {
-  border-color: rgba(255,255,255,0.12);
-}
-.summary-loadout-group::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 2px;
-  background: var(--panel-border);
-}
-.summary-loadout-group--spec::before { background: linear-gradient(90deg, var(--accent), rgba(242,104,34,0.3)); }
-.summary-loadout-group--weapon::before { background: linear-gradient(90deg, #f97316, rgba(249,115,22,0.3)); }
-.summary-loadout-group--os::before { background: linear-gradient(90deg, #3b82f6, rgba(59,130,246,0.3)); }
-.summary-loadout-group--chipset::before { background: linear-gradient(90deg, #a855f7, rgba(168,85,247,0.3)); }
-.summary-loadout-group--gear::before { background: linear-gradient(90deg, #22c55e, rgba(34,197,94,0.3)); }
-
-.summary-loadout-label {
+.sl-row:hover { border-color: rgba(255,255,255,0.2); }
+.sl-row--spec { border-left-color: var(--accent); }
+.sl-row--weapon { border-left-color: #f97316; }
+.sl-row--gear { border-left-color: #22c55e; }
+.sl-row--os { border-left-color: #3b82f6; }
+.sl-row--smc { border-left-color: #a855f7; }
+.sl-icon { font-size: 14px; flex-shrink: 0; line-height: 1; margin-top: 1px; }
+.sl-body { display: flex; flex-direction: column; gap: 1px; min-width: 0; }
+.sl-label {
   font-family: var(--font-mono);
-  font-size: 9px;
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
-  padding: 6px 10px 4px;
-  display: flex;
-  align-items: center;
-  gap: 6px;
+  color: var(--ink-muted);
+  opacity: 0.6;
 }
-.summary-loadout-group--spec .summary-loadout-label { color: var(--accent); }
-.summary-loadout-group--weapon .summary-loadout-label { color: #f97316; }
-.summary-loadout-group--os .summary-loadout-label { color: #3b82f6; }
-.summary-loadout-group--chipset .summary-loadout-label { color: #a855f7; }
-.summary-loadout-group--gear .summary-loadout-label { color: #22c55e; }
-
-.summary-loadout-value {
+.sl-row--spec .sl-label { color: var(--accent); opacity: 1; }
+.sl-row--weapon .sl-label { color: #f97316; opacity: 1; }
+.sl-row--gear .sl-label { color: #22c55e; opacity: 1; }
+.sl-row--os .sl-label { color: #3b82f6; opacity: 1; }
+.sl-row--smc .sl-label { color: #a855f7; opacity: 1; }
+.sl-val {
   font-family: var(--font-heading);
   font-size: 12px;
   font-weight: 700;
   color: #fff;
-  line-height: 1.4;
-  padding: 0 10px 2px;
+  line-height: 1.3;
 }
-.summary-loadout-sub {
+.sl-dim { font-weight: 400; font-size: 10px; color: var(--ink-muted); }
+.sl-talents {
   font-size: 10px;
   color: var(--ink-muted);
-  padding: 4px 10px 8px;
-  border-top: 1px solid rgba(255,255,255,0.04);
-  margin-top: 2px;
-  margin-left: 10px;
-  margin-right: 10px;
+  line-height: 1.3;
+}
+.sl-pill {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 8px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 1px 5px;
+  border-radius: 3px;
+  background: rgba(255,255,255,0.08);
+  color: var(--ink-muted);
+  border: 1px solid rgba(255,255,255,0.1);
+  vertical-align: middle;
+  margin-left: 4px;
+}
+.sl-pill--exotic {
+  background: rgba(245,166,35,0.15);
+  color: #f5a623;
+  border-color: rgba(245,166,35,0.3);
 }
 
 /* Set bonus items — tiered glow cards */

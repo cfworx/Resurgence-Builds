@@ -60,7 +60,7 @@ This is not a glass-cannon-and-die build. The Extra Health from Swift Taunt is u
 
 ---
 
-## Strawberry Milkshake (Confirmed Stats)
+## Strawberry Milkshake
 
 | STAT | VALUE |
 |---|---|
@@ -75,7 +75,7 @@ This is not a glass-cannon-and-die build. The Extra Health from Swift Taunt is u
 
 A note on Anarchy: the doc-and-Reddit consensus is that Anarchy is currently non-functional or so weak it's effectively non-functional for build purposes. **Do not build around it.** The real engine is In Sync.
 
-> ⚠️ **One Exotic Hard Cap.** Strawberry Milkshake is your exotic. Only one exotic weapon can be equipped at a time. Never pair SM with Warlord, Lady Death, or any other exotic. The game will not allow it.
+
 
 ---
 
@@ -185,36 +185,22 @@ This is a survival swap, not a primary damage tool. Talents: **Revitalize** (kil
 
 ---
 
-## Combat Rotation
+## Loot Quick-Reference
 
-**Pre-engage.** Drop Smart Cover. Cast Scanning Pulse. All enemies in range take a skill hit. In Sync skill-side buff activates instantly. Fire Strawberry Milkshake. Weapon hits activate the weapon-side buff. Both buffs are live. Both double. Full power from bullet one.
-
-**Sustained fire.** Hold the trigger. 550 RPM + Phalanx +18% RoF + Inspiration +30% RoF means Swift Taunt's 3-enemies-in-5-seconds trigger is permanently met. Extra Health is always up. Glass Cannon is justified. With 4+ enemies within 20m, Dominating Presence adds +20% Multi-Shot. Every third-ish bullet is firing twice into Pulsed enemies. Field Supplies refills mag on Pulsed kills.
-
-**Signature window.** Pop Tactical Link. Commando mod kicks in: every kill or assist during Link grants +10.20% WCHC for 10 seconds. Stack it. This is your room-clear window.
-
-**Reload.** A 118-round mag means fewer reloads than any sane LMG build. When you do reload, do it behind Smart Cover. Armored Train begins stacking +2% WCHC at 5% per hit, up to 3 stacks (+6% total). In Sync refreshes within the first few shots of the new mag.
-
-**Re-cycle.** Pulse back up. Recast. In Sync refreshed. Field Supplies online. Smart Cover refreshes, recast, In Sync skill-side refreshed, Armored Train stacks reset. Link comes back. Fire it. Repeat.
-
----
-
-## Loot Quick-Reference for The Milkshake Machine
-
-Farm checklist. Star priorities first.
-
-- **Phalanx Attack · Mask** · Firepower core · WCHC + WCHD
-- **Phalanx Attack · Chest** · Firepower core · Glass Cannon talent · WCHD + Weapon Damage
-- **Phalanx Attack · Gloves** · Firepower core · WCHC + WCHD
-- **Phalanx Attack · Holster** · Firepower core · WCHD + Weapon Damage
-- **Fury Strike · Backpack** · Firepower core · Inspiration talent · WCHD + Weapon Damage
-- **Fury Strike · Kneepads** · Firepower core · WCHD + Optimal Range
-- **Strawberry Milkshake (T2)** · In Sync + Swift Taunt · Godroll: Weapon Damage + WCHD
-- **PPSH-41 (T2)** · Revitalize + Sentinel Aura
-- **Dominating Presence OS** · Any roll. The Multi-Shot talent is what matters.
-- **Skill Mod · Tactical Link** · Farm Commando mod (3pc)
-- **Skill Mod · Commando Smart Cover** · Farm Armored Train mod (3pc)
-- **Skill Mod · Scanning Pulse** · Farm Field Supplies mod (3pc). Alt: Tactical Insight.
+| ITEM | SET / TYPE | CORE | TARGET ROLLS | NOTES |
+|---|---|---|---|---|
+| Mask | Phalanx Attack | Firepower | WCHC + WCHD | Crit roll slot |
+| Chest | Phalanx Attack | Firepower | WCHD + WD | Glass Cannon talent |
+| Backpack | Fury Strike | Firepower | WCHD + WD | Inspiration talent |
+| Gloves | Phalanx Attack | Firepower | WCHC + WCHD | Crit roll slot |
+| Holster | Phalanx Attack | Firepower | WCHD + WD | — |
+| Kneepads | Fury Strike | Firepower | WCHD + Optimal Range | — |
+| Primary | Strawberry Milkshake | Exotic LMG | WD + WCHD | In Sync + Swift Taunt |
+| Secondary | PPSH-41 (T2) | SMG | — | Revitalize + Sentinel Aura |
+| OS Protocol | Dominating Presence | — | Any | Multi-Shot talent is what matters |
+| Skill Mod 1 | Commando (Tactical Link) | — | 3pc | +10.20% WCHC on kills during Link |
+| Skill Mod 2 | Armored Train (Smart Cover) | — | 3pc | +2% WCHC behind cover, up to 3 stacks |
+| Skill Mod 3 | Field Supplies (Scanning Pulse) | — | 3pc | Refills 6.40% mag on Pulsed kills. Alt: Tactical Insight |
 
 ---
 
@@ -226,15 +212,3 @@ Farm checklist. Star priorities first.
 | T1 | Phalanx 4pc + Fury Strike 2pc + Inspiration backpack | Fully functional. In Sync double-dip live. All three skill mods active. |
 | T2 | Same sets, godrolled. SM rerolled to WD + WCHD. | Full ceiling. Current SM attribute rolls are the priority upgrade. |
 
----
-
-## Share the chaos
-
-If this build melts a Dark Zone room for you, drop the clip. If it gets you killed in Outpost Annihilation because you forgot Glass Cannon was on, also drop the clip. We're not picky.
-
-**Related builds and guides:**
-
-- [OS Protocols Database](/database/os-protocols/)
-- [OS Protocol Tier List](/tier-list/os-protocols/)
-- [Patch 1.1.2.2 Notes](/patch-notes/patch-1-1-2-2/)
-- [Exotic Weapons Database](/database/exotic-weapons/)

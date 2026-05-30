@@ -428,81 +428,62 @@
     // Spec group
     if (state.spec) {
       const specName = state.spec === 'Tech Operator' ? 'Tech Op' : state.spec === 'Field Medic' ? 'Medic' : state.spec;
-      talentHTML += `<div class="summary-loadout-group summary-loadout-group--spec">`;
-      talentHTML += `<div class="summary-loadout-label">Specialization</div>`;
-      talentHTML += `<div class="summary-loadout-value">${specName}</div>`;
-      if (state.subclass) talentHTML += `<div class="summary-loadout-sub">${state.subclass}</div>`;
-      talentHTML += `</div>`;
+      talentHTML += `<div class="sl-row sl-row--spec"><span class="sl-icon">🎯</span><div class="sl-body"><span class="sl-label">SPEC</span><span class="sl-val">${specName}${state.subclass ? ' <span class="sl-dim">/ ' + state.subclass + '</span>' : ''}</span></div></div>`;
     }
 
     // Primary Weapon group
     if (w1Name) {
-      const tierTag = state.weapon1.id.startsWith('ex-') ? 'Exotic' : state.weapon1.tier;
+      const tierTag = state.weapon1.id.startsWith('ex-') ? '<span class="sl-pill sl-pill--exotic">Exotic</span>' : `<span class="sl-pill">${state.weapon1.tier}</span>`;
       const isExotic1 = state.weapon1.id.startsWith('ex-');
       const ex1 = isExotic1 ? exoticWeapons.find(e => e.id === state.weapon1.id.substring(3)) : null;
       let talents = [];
       if (ex1) talents.push(`<span style="color:#f5a623">${ex1.talentName}</span>`);
       if (w1T) talents.push(w1T.name);
       if (w1T2) talents.push(w1T2.name);
-      talentHTML += `<div class="summary-loadout-group summary-loadout-group--weapon">`;
-      talentHTML += `<div class="summary-loadout-label">Primary Weapon</div>`;
-      talentHTML += `<div class="summary-loadout-value">${w1Name} <span style="opacity:.45;font-size:10px;font-weight:400">${tierTag}</span></div>`;
-      if (talents.length) talentHTML += `<div class="summary-loadout-sub">${talents.join(' · ')}</div>`;
-      talentHTML += `</div>`;
+      talentHTML += `<div class="sl-row sl-row--weapon"><span class="sl-icon">🔫</span><div class="sl-body"><span class="sl-label">PRIMARY</span><span class="sl-val">${w1Name} ${tierTag}</span>${talents.length ? '<span class="sl-talents">' + talents.join(' · ') + '</span>' : ''}</div></div>`;
     }
 
     // Secondary Weapon group
     if (w2Name) {
-      const tierTag = state.weapon2.id.startsWith('ex-') ? 'Exotic' : state.weapon2.tier;
+      const tierTag = state.weapon2.id.startsWith('ex-') ? '<span class="sl-pill sl-pill--exotic">Exotic</span>' : `<span class="sl-pill">${state.weapon2.tier}</span>`;
       const isExotic2 = state.weapon2.id.startsWith('ex-');
       const ex2 = isExotic2 ? exoticWeapons.find(e => e.id === state.weapon2.id.substring(3)) : null;
       let talents = [];
       if (ex2) talents.push(`<span style="color:#f5a623">${ex2.talentName}</span>`);
       if (w2T) talents.push(w2T.name);
       if (w2T2) talents.push(w2T2.name);
-      talentHTML += `<div class="summary-loadout-group summary-loadout-group--weapon">`;
-      talentHTML += `<div class="summary-loadout-label">Secondary Weapon</div>`;
-      talentHTML += `<div class="summary-loadout-value">${w2Name} <span style="opacity:.45;font-size:10px;font-weight:400">${tierTag}</span></div>`;
-      if (talents.length) talentHTML += `<div class="summary-loadout-sub">${talents.join(' · ')}</div>`;
-      talentHTML += `</div>`;
+      talentHTML += `<div class="sl-row sl-row--weapon"><span class="sl-icon">🔫</span><div class="sl-body"><span class="sl-label">SECONDARY</span><span class="sl-val">${w2Name} ${tierTag}</span>${talents.length ? '<span class="sl-talents">' + talents.join(' · ') + '</span>' : ''}</div></div>`;
     }
 
     // Gear Talents group
     if (bodyT || bpT) {
-      talentHTML += `<div class="summary-loadout-group summary-loadout-group--gear">`;
-      talentHTML += `<div class="summary-loadout-label">Gear Talents</div>`;
-      if (bodyT) talentHTML += `<div class="summary-loadout-value">Body: ${bodyT.name}</div>`;
-      if (bpT) talentHTML += `<div class="summary-loadout-value">Pack: ${bpT.name}</div>`;
-      talentHTML += `</div>`;
+      let gearParts = [];
+      if (bodyT) gearParts.push(`<span class="sl-val">${bodyT.name} <span class="sl-dim">chest</span></span>`);
+      if (bpT) gearParts.push(`<span class="sl-val">${bpT.name} <span class="sl-dim">pack</span></span>`);
+      talentHTML += `<div class="sl-row sl-row--gear"><span class="sl-icon">🛡️</span><div class="sl-body"><span class="sl-label">GEAR TALENTS</span>${gearParts.join('')}</div></div>`;
     }
 
     // OS Protocol group
     if (osP) {
-      talentHTML += `<div class="summary-loadout-group summary-loadout-group--os">`;
-      talentHTML += `<div class="summary-loadout-label">OS Protocol</div>`;
-      talentHTML += `<div class="summary-loadout-value">${osP.name}</div>`;
-      talentHTML += `<div class="summary-loadout-sub">${osP.specialization} · ${osP.rarity}</div>`;
-      talentHTML += `</div>`;
+      const osColor = osP.specialization === 'Engineering' ? '#3b82f6' : osP.specialization === 'Firepower' ? '#f97316' : '#22c55e';
+      talentHTML += `<div class="sl-row sl-row--os"><span class="sl-icon">⚙️</span><div class="sl-body"><span class="sl-label">OS PROTOCOL</span><span class="sl-val">${osP.name} <span class="sl-pill" style="background:${osColor}22;color:${osColor};border-color:${osColor}44">${osP.specialization}</span></span></div></div>`;
     }
 
-    // Chipset Mods group
+    // Skill Mods group
     let hasChipsets = false;
-    let chipsetHTML = '';
+    let chipsetNames = [];
     ['1', '2', '3'].forEach(num => {
       const val = state[`smc${num}`];
       if (val) {
         const s = skillModCombos.find(x => x.id === val);
         if (s) {
           hasChipsets = true;
-          chipsetHTML += `<div class="summary-loadout-value">${s.name}</div>`;
+          chipsetNames.push(s.name);
         }
       }
     });
     if (hasChipsets) {
-      talentHTML += `<div class="summary-loadout-group summary-loadout-group--chipset">`;
-      talentHTML += `<div class="summary-loadout-label">Skill Mods</div>`;
-      talentHTML += chipsetHTML;
-      talentHTML += `</div>`;
+      talentHTML += `<div class="sl-row sl-row--smc"><span class="sl-icon">🔩</span><div class="sl-body"><span class="sl-label">SKILL MODS</span>${chipsetNames.map(n => '<span class="sl-val">' + n + '</span>').join('')}</div></div>`;
     }
 
     if(talentHTML){ talentsSection.style.display = 'block'; talentsEl.innerHTML = talentHTML; }
