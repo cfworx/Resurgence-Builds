@@ -161,12 +161,12 @@
       </div>
       ${poi.description ? `<p class="popup-desc">${poi.description}</p>` : ''}
       ${extra}
-      <div class="popup-actions">
+      ${poi.category !== 'safe_house' ? `<div class="popup-actions">
         <button class="popup-btn ${found ? 'popup-btn--found' : ''}" onclick="window.__mapToggleFound('${poi.id}', this)">
           ${found ? '✓ Found' : '☐ Mark as Found'}
         </button>
         ${poi.source ? `<a href="${poi.source}" target="_blank" rel="noopener" class="popup-link">🔗 Source</a>` : ''}
-      </div>
+      </div>` : ''}
     </div>`;
   }
 
