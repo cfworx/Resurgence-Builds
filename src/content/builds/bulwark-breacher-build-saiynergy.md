@@ -17,7 +17,7 @@ shareText: "334k DPS Breacher build that holds doorways and refuses to leave. Sa
 sources:
   - '<a href="https://www.youtube.com/watch?v=28lsRrnJ6Vg">Saiynergy, Full Breacher Walkthrough</a>, May 2026.'
   - 'In-game Division Resurgence Build Database, verified May 2026.'
-plannerHash: "s=Bulwark&sc=Breacher&n=Bulwark+Breacher+334k&ms=gs-1&m1=Headshot+Damage&m2=Weapon+Crit+Hit+Chance&cs=gs-1&ct=ba-25&c1=Weapon+Crit+Hit+Chance&c2=Skill+Crit+Chance&ps=gs-1&pt=bp-10&p1=Skill+Crit+Chance&p2=Weapon+Crit+Hit+Damage&gs=gs-1&g1=Weapon+Crit+Hit+Chance&g2=Weapon+Crit+Hit+Damage&hs=gs-3&h1=Weapon+Crit+Hit+Damage&h2=Headshot+Damage&ks=gs-3&k1=Weapon+Crit+Hit+Damage&k2=Headshot+Damage&w1s=sw-2&w1tr=T2&w1t=wt-25&w2s=sw-11&w2tr=T2&w2t=wt-57&w2t2=wt-1&os=os-45"
+plannerHash: "s=Bulwark&sc=Breacher&n=Bulwark+Breacher+334k&ms=gs-1&m1=Headshot+Damage&m2=Weapon+Critical+Hit+Chance&cs=gs-1&ct=ba-25&c1=Weapon+Critical+Hit+Chance&c2=Skill+Critical+Chance&ps=gs-1&pt=bp-10&p1=Skill+Critical+Chance&p2=Weapon+Critical+Hit+Damage&gs=gs-1&g1=Weapon+Critical+Hit+Chance&g2=Weapon+Critical+Hit+Damage&hs=gs-3&h1=Weapon+Critical+Hit+Damage&h2=Headshot+Damage&ks=gs-3&k1=Weapon+Critical+Hit+Damage&k2=Headshot+Damage&w1s=sw-2&w1tr=T2&w1t=wt-25&w1t2=wt-9&w2s=sw-11&w2tr=T2&w2t=wt-57&w2t2=wt-1&os=os-45&sm1=smc-52&sm2=smc-89"
 videoId: "28lsRrnJ6Vg"
 videoTitle: "Saiynergy — Full Breacher Build Walkthrough"
 videoChannel: "Saiynergy"
@@ -33,7 +33,7 @@ faqs:
   - question: "Does this Breacher build still work after Patch 1.1.2.2?"
     answer: "Every set bonus, talent, and skill firmware in this build matches the current database as of May 30, 2026. We have flagged it as RapidF5-verified at the structural level."
   - question: "What weapons does Saiynergy use on his Breacher?"
-    answer: "Lightweight M4 (T2, Level 45) as the primary with the Killer talent. First Wave Vector 45 ACP (T2, Level 44) as the secondary with Strained and Adaptation."
+    answer: "Lightweight M4 (T2, Level 45) as the primary with Killer and Breadbasket (RapidF5 recommendation over the original Steady Hands + Medical Accuracy). First Wave Vector 45 ACP (T2, Level 44) as the secondary with Strained and Adaptation."
   - question: "Is Division Resurgence pay-to-win?"
     answer: "No. Resurgence is free-to-play with optional convenience and cosmetic purchases. Every piece of gear in this build was earned through gameplay. Spending money can speed up the grind, but it cannot buy positioning, game sense, or the knowledge to stack the right talents. Your dad reflexes are still the bottleneck."
 ---
@@ -43,6 +43,8 @@ faqs:
 ## What This Build Does
 
 > Build credit: **Saiynergy** of **ATLAS Division**. Full Breacher walkthrough covering every gear roll, weapon talent, skill firmware, and loot route. Watch his original walkthrough on [YouTube](https://www.youtube.com/watch?v=28lsRrnJ6Vg) and jump in the [ATLAS Division Discord](https://discord.gg/e7EUUBbBYa) if you want in on the clan.
+
+> **RapidF5 note:** We have tweaked the weapon talents on the Lightweight M4 from Saiynergy's original loadout. He runs Steady Hands and Medical Accuracy. We are recommending **Killer + Breadbasket** instead, because Killer is the strongest AR talent for crit builds and Breadbasket stacks Headshot Damage that feeds directly into Death From Afar. The rest of the build is Saiynergy's original.
 
 This is a **Breacher shield build** that anchors a doorway and refuses to leave. Saiynergy is sitting at **23.17k Power Score, 334.07k DPS, and 7,679 Armor at Level 50**. The 4pc Fury Strike gives you the crit chance and crit damage backbone. The 2pc Phalanx Attack stacks magazine size so the Vector keeps firing past the point where most builds reload and die. The Ballistic Shield with **Intimidation** punishes anyone shooting your shield. The Shockwave Spike Mk.3 with **Attritional Charge** keeps your damage reduction and crit chance topped off. **Death From Afar** OS Protocol turns headshot damage into raw Firepower. The core loop is straightforward: shield up, walk forward, let the Vector pour rounds into whatever the M4 can't reach. Your job is to be the wall. Your fireteam's job is to be the people who do not have to be the wall.
 
@@ -81,7 +83,7 @@ This is a **Breacher shield build** that anchors a doorway and refuses to leave.
 
 | Slot | Item | Details |
 |---|---|---|
-| **Primary** | Lightweight M4 (T2, AR, Level 45) | **Killer** talent · Long Range Scope · Suppressor · Extended Magazine · Vertical Grip |
+| **Primary** | Lightweight M4 (T2, AR, Level 45) | **Killer + Breadbasket** (RapidF5 rec) · Long Range Scope · Suppressor · Extended Magazine · Vertical Grip |
 | **Secondary** | First Wave Vector 45 ACP (T2, SMG, Level 44) | **Strained + Adaptation** · Red Dot · Extended Magazine · Suppressor |
 | **OS Protocol** | **Death From Afar** (High-End) | Grants Firepower equal to 21.60% Headshot Damage, capped at 54% Firepower |
 | **Skill 1** | Ballistic Shield | Mobile cover, Breacher signature kit |
@@ -173,9 +175,10 @@ For Breachers who close the distance instead of holding it. Shield play forces y
 
 ### Primary: Lightweight M4 (T2, Assault Rifle, Level 45)
 
-- **Killer:** Critical Hit Kills grant +36% Critical Hit Damage for 10 seconds. With Fury Strike pumping crit chance, this buff refreshes constantly.
+Saiynergy runs Steady Hands and Medical Accuracy on his M4. We are recommending a different pairing that synergizes better with the rest of this build.
 
-Saiynergy: *"You definitely just need Killer. Killer is most needed on assault rifles."*
+- **Killer (RapidF5 rec):** Critical Hit Kills grant +36% Critical Hit Damage for 10 seconds. With Fury Strike pumping crit chance, this buff refreshes constantly. Saiynergy himself recommends Killer as the best AR talent: *"You definitely just need Killer. Killer is most needed on assault rifles."*
+- **Breadbasket (RapidF5 rec):** Body shots grant +15% Headshot Damage for 8 seconds, up to 3 stacks. This is the synergy pick. Every Breadbasket stack increases your Headshot Damage, which Death From Afar converts into raw Firepower. The M4 fires fast enough to keep 3 stacks active permanently.
 
 **Attachments:** Long Range Scope, Suppressor, Extended Magazine, Vertical Grip.
 
@@ -208,8 +211,6 @@ Backup weapons for farming attachments and talents:
 | High-End attachments | **Hostile Nests** (challenging or heroic) |
 | Dark Zone mods and gear | **Q Building** (heroic), **47th Street Extraction DZ Enemy** (heroic), **Sports Store** (challenging) |
 | Death From Afar OS Protocol | Weekly bounties (purple/blue tier) or Steel Caches shop (gold) |
-
-> **Saiynergy's timing tip:** *"I would wait until Friday to do all of this because when the week resets, there's only one available."* On Q Building: *"Q Building is the one that is heroic and gives the best drops."* Heroic only.
 
 ---
 
