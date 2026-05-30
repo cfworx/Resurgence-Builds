@@ -1,12 +1,14 @@
 ---
-import DatabaseLayout from '../../layouts/DatabaseLayout.astro';
-import exoticWeapons from '../../data/exotic-weapons.json';
+import DatabaseLayout from '../../../layouts/DatabaseLayout.astro';
+import exoticWeapons from '../../../data/exotic-weapons.json';
 
 const title = "Division Resurgence Exotic Weapons — Full List & Tier Rankings";
 const description = "Every exotic weapon in Division Resurgence, ranked. Each one bends the rules differently. Most are broken. That's the point.";
 const breadcrumbs = [
   { name: 'Exotic Weapons', url: '/database/exotic-weapons/' }
 ];
+
+const slugify = (name: string) => name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
 
 const itemListLd = {
   '@context': 'https://schema.org',
@@ -17,13 +19,13 @@ const itemListLd = {
   itemListElement: exoticWeapons.map((item: any, i: number) => ({
     '@type': 'ListItem',
     position: i + 1,
-    url: Astro.url.href,
+    url: `${Astro.url.origin}/database/exotic-weapons/${slugify(item.name)}/`,
     item: {
       '@type': 'Thing',
       '@id': `${Astro.url.href}#item-${i}`,
       name: item.name || item.talent || item.attribute || item.protocolName || 'Item',
       description: item.description || item.talentDescription || item.effect || item.notes || `Details for ${item.name || item.talent || item.attribute || item.protocolName || 'item'}`,
-      url: Astro.url.href,
+      url: `${Astro.url.origin}/database/exotic-weapons/${slugify(item.name)}/`,
       subjectOf: { '@id': 'https://resurgencebuilds.com/#division-resurgence' }
     }
   })),
@@ -50,54 +52,56 @@ const itemListLd = {
     <div class="db-grid" id="exotics-grid">
       {exoticWeapons.map((weapon) => (
         <article class="db-card exotic-card">
-          <div class="db-card__header">
-            <div>
-              <h2 class="db-card__title">{weapon.name}</h2>
-              <span class="weapon-type">{weapon.type}</span>
-            </div>
-          </div>
-          
-          <div class="db-card__body">
-            <div class="stats-grid">
-              <div class="stat-item">
-                <span class="stat-label">Damage</span>
-                <span class="stat-value">{weapon.damage}</span>
-              </div>
-              <div class="stat-item">
-                <span class="stat-label">RPM</span>
-                <span class="stat-value">{weapon.rpm}</span>
-              </div>
-              <div class="stat-item">
-                <span class="stat-label">MAG</span>
-                <span class="stat-value">{weapon.mag}</span>
-              </div>
-              <div class="stat-item">
-                <span class="stat-label">Accuracy</span>
-                <span class="stat-value">{weapon.accuracy}</span>
-              </div>
-              <div class="stat-item">
-                <span class="stat-label">Reload</span>
-                <span class="stat-value">{weapon.reloadSpeed}</span>
-              </div>
-              <div class="stat-item">
-                <span class="stat-label">Opt. Range</span>
-                <span class="stat-value">{weapon.optimalRange}</span>
-              </div>
-              <div class="stat-item">
-                <span class="stat-label">Movement</span>
-                <span class="stat-value">{weapon.movementSpeed}</span>
-              </div>
-              <div class="stat-item">
-                <span class="stat-label">Stability</span>
-                <span class="stat-value">{weapon.stability}</span>
+          <a href={`/database/exotic-weapons/${slugify(weapon.name)}/`} class="exotic-card-link">
+            <div class="db-card__header">
+              <div>
+                <h2 class="db-card__title">{weapon.name}</h2>
+                <span class="weapon-type">{weapon.type}</span>
               </div>
             </div>
+            
+            <div class="db-card__body">
+              <div class="stats-grid">
+                <div class="stat-item">
+                  <span class="stat-label">Damage</span>
+                  <span class="stat-value">{weapon.damage}</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-label">RPM</span>
+                  <span class="stat-value">{weapon.rpm}</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-label">MAG</span>
+                  <span class="stat-value">{weapon.mag}</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-label">Accuracy</span>
+                  <span class="stat-value">{weapon.accuracy}</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-label">Reload</span>
+                  <span class="stat-value">{weapon.reloadSpeed}</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-label">Opt. Range</span>
+                  <span class="stat-value">{weapon.optimalRange}</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-label">Movement</span>
+                  <span class="stat-value">{weapon.movementSpeed}</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-label">Stability</span>
+                  <span class="stat-value">{weapon.stability}</span>
+                </div>
+              </div>
 
-            <div class="talent-section">
-              <h3 class="talent-name">{weapon.talentName}</h3>
-              <p class="talent-desc-text">{weapon.talentDescription}</p>
+              <div class="talent-section">
+                <h3 class="talent-name">{weapon.talentName}</h3>
+                <p class="talent-desc-text">{weapon.talentDescription}</p>
+              </div>
             </div>
-          </div>
+          </a>
         </article>
       ))}
     </div>
@@ -167,6 +171,18 @@ const itemListLd = {
     color: var(--accent);
     background: rgba(242, 104, 34, 0.15);
     box-shadow: 0 0 12px rgba(242, 104, 34, 0.2);
+  }
+
+  .exotic-card-link {
+    display: flex;
+    flex-direction: column;
+    gap: var(--sp-4);
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .exotic-card-link:hover {
+    color: inherit;
   }
 
   .tier-list {

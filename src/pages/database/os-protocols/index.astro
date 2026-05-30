@@ -1,6 +1,8 @@
 ---
-import DatabaseLayout from '../../layouts/DatabaseLayout.astro';
-import osProtocols from '../../data/os-protocols.json';
+import DatabaseLayout from '../../../layouts/DatabaseLayout.astro';
+import osProtocols from '../../../data/os-protocols.json';
+
+const slugify = (name: string) => name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
 
 const title = "Division Resurgence OS Protocols Guide - Every Protocol, Best Picks Per Class, S to C Tier List";
 const description = "The complete Division Resurgence OS Protocols guide. All protocols across Engineering, Firepower, and Toughness specializations, with S/A/B/C tier list, best picks per class, and FAQ.";
@@ -90,6 +92,14 @@ const faqs = [
       <a href="/tier-list/os-protocols/" class="btn btn--primary" style="white-space: nowrap;">View Tier List &rarr;</a>
     </div>
 
+    <div class="tier-link-card">
+      <div>
+        <h3 style="margin: 0 0 4px 0; font-size: var(--text-base); color: #fff;">Best OS Protocol Per Class</h3>
+        <p style="margin: 0; font-size: var(--text-sm); color: var(--ink-muted);">In-depth breakdown of the top pick for each class with reasoning and backup picks.</p>
+      </div>
+      <a href="/guides/best-os-protocol/" class="btn btn--primary" style="white-space: nowrap;">View Guide &rarr;</a>
+    </div>
+
     <h2 id="best-per-class">Best Protocol Per Class — Quick Reference</h2>
 
     <div class="class-picks-compact">
@@ -126,52 +136,54 @@ const faqs = [
 
   <div class="db-grid" id="protocols-grid">
     {osProtocols.map((protocol) => (
-      <article class={`db-card db-card--${protocol.rarity.toLowerCase().replace(' ', '-')}`} data-rarity={protocol.rarity} data-attr1={protocol.attr1} id={protocol.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')}>
-        <div class="db-card__header">
-          <div>
-            <h2 class="db-card__title">{protocol.name}</h2>
-            <div style="display:flex;gap:var(--sp-2);flex-wrap:wrap;margin-top:var(--sp-2);">
-              <span class={`tag ${getRarityClass(protocol.rarity)}`}>{protocol.rarity}</span>
-              <span class="tag">{protocol.specialization}</span>
+      <a href={`/database/os-protocols/${slugify(protocol.name)}/`} class="db-card-link" data-rarity={protocol.rarity} data-attr1={protocol.attr1} id={slugify(protocol.name)}>
+        <article class={`db-card db-card--${protocol.rarity.toLowerCase().replace(' ', '-')}`}>
+          <div class="db-card__header">
+            <div>
+              <h2 class="db-card__title">{protocol.name}</h2>
+              <div style="display:flex;gap:var(--sp-2);flex-wrap:wrap;margin-top:var(--sp-2);">
+                <span class={`tag ${getRarityClass(protocol.rarity)}`}>{protocol.rarity}</span>
+                <span class="tag">{protocol.specialization}</span>
+              </div>
             </div>
+            {protocol.cooldown && (
+              <div class="db-card__cooldown">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                {protocol.cooldown}
+              </div>
+            )}
           </div>
-          {protocol.cooldown && (
-            <div class="db-card__cooldown">
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
-              {protocol.cooldown}
-            </div>
-          )}
-        </div>
-        
-        <div class="db-card__body">
-          <div class="db-card__talent">
-            <strong>Talent:</strong> {protocol.talentDescription}
-          </div>
-
-          <div>
-            <div class="main-stat-badge">
-              <span class="main-stat-label">Main Stat</span>
-              <span class="main-stat-name">{protocol.mainStat}</span>
-              <span class="main-stat-value">{protocol.mainValue}</span>
+          
+          <div class="db-card__body">
+            <div class="db-card__talent">
+              <strong>Talent:</strong> {protocol.talentDescription}
             </div>
 
-            <ul class="attr-list">
-              <li>
-                <span>{protocol.attr1}</span>
-                <span>{protocol.val1}</span>
-              </li>
-              <li>
-                <span>{protocol.attr2}</span>
-                <span>{protocol.val2}</span>
-              </li>
-              <li>
-                <span>{protocol.attr3}</span>
-                <span>{protocol.val3}</span>
-              </li>
-            </ul>
+            <div>
+              <div class="main-stat-badge">
+                <span class="main-stat-label">Main Stat</span>
+                <span class="main-stat-name">{protocol.mainStat}</span>
+                <span class="main-stat-value">{protocol.mainValue}</span>
+              </div>
+
+              <ul class="attr-list">
+                <li>
+                  <span>{protocol.attr1}</span>
+                  <span>{protocol.val1}</span>
+                </li>
+                <li>
+                  <span>{protocol.attr2}</span>
+                  <span>{protocol.val2}</span>
+                </li>
+                <li>
+                  <span>{protocol.attr3}</span>
+                  <span>{protocol.val3}</span>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-      </article>
+        </article>
+      </a>
     ))}
   </div>
 
@@ -280,6 +292,16 @@ const faqs = [
     font-size: 10px;
     color: var(--ink-muted);
   }
+
+  /* Clickable card wrapper */
+  .db-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+  }
+  .db-card-link .db-card {
+    height: 100%;
+  }
 </style>
 
 <script>
@@ -292,7 +314,7 @@ const faqs = [
 
   const updateFilters = () => {
     requestAnimationFrame(() => {
-      grid?.querySelectorAll('article').forEach(card => {
+      grid?.querySelectorAll('.db-card-link').forEach(card => {
         const el = card as HTMLElement;
         const matchesRarity = currentRarity === 'all' || el.dataset.rarity === currentRarity;
         const matchesAttr1 = currentAttr1 === 'all' || el.dataset.attr1 === currentAttr1;
