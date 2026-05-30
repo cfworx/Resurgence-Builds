@@ -36,13 +36,13 @@ faqs:
 
 **By RapidF5 ·** Patch 1.1.2.2 ·
 
-> Strawberry Milkshake is the exotic LMG that no one took seriously until someone bolted Phalanx Attack, Fury Strike, and In Sync onto it. This is that build. 118-round magazine, ~37% Multi-Shot Chance, double-dipped In Sync, Glass Cannon justified by Swift Taunt's Extra Health buffer, and a Dominating Presence OS Protocol that rewards standing in the worst possible spot. We call it **The Milkshake Machine** because it shreds enemies the way a blender shreds ice, and because naming a build "Strawberry Milkshake Optimal" doesn't sell guides.
+> Strawberry Milkshake is the exotic LMG that no one took seriously until someone bolted Phalanx Attack, Fury Strike, and In Sync onto it. This is that build. 118-round magazine, ~37% Multi-Shot Chance, double-dipped In Sync, Glass Cannon justified by Swift Taunt's Extra Health buffer, and a Dominating Presence OS Protocol that rewards standing in the worst possible spot. We call it **The Milkshake Machine** because it shreds enemies the way a blender shreds ice — and because naming a build "Strawberry Milkshake Optimal" has the same energy as naming your fantasy football team "Team 1."
 
-> ⚡ **Not meta. Not trying to be.** The Milkshake Machine is a fun build. It's not competing for top-tier DPS charts and it's not what you bring to push leaderboards. It's what you bring when you want to watch 118 rounds of Multi-Shot crits turn a room into a smoothie. If you're looking for the current meta, check the [Build Tier List](/tier-list/). If you want to have a good time, keep reading.
+> ⚡ **Not meta. Not trying to be.** The Milkshake Machine is a fun build. It won't top the leaderboard and it's not what you bring when your clan is actually trying. It's what you bring when you want to watch 118 rounds of Multi-Shot crits turn a room into a smoothie while your wife asks why you're cackling at your phone at 11pm. If you want the current meta, check the [Build Tier List](/tier-list/). If you want to have a good time, keep reading.
 
 This is a Firepower-stacked, Multi-Shot-stacked Vanguard build that turns the Strawberry Milkshake into the most disrespectful sustained-fire weapon in Division Resurgence. The core loop is straightforward: drop Smart Cover, cast Scanning Pulse, fire SM. Scanning Pulse counts as a skill hit, which activates In Sync's skill-side buff instantly. Your first SM bullet activates the weapon-side buff. Both buffs are live. Both double. You are now putting out **+18% Skill Damage and +18% Weapon Damage from bullet one**, into Pulsed enemies taking +20% vulnerability, with every third-ish bullet firing twice via Multi-Shot, while Glass Cannon adds +20% Damage and Inspiration grants +30% RoF because Smart Cover is always deployed. The 118-round magazine and Field Supplies skill mod refilling your mag on Pulsed kills means you almost never reload. When you do, Armored Train stacks WCHC behind cover passively. Tactical Link comes back, you pop it, Commando skill mod adds +10.20% WCHC on kills, and the room dies.
 
-It's a lot of moving parts. That's the whole point.
+It's a lot of moving parts. That's the whole point. If you wanted "hold trigger, watch bars go down," there are simpler builds. This one rewards the kind of person who reads patch notes on the toilet.
 
 ---
 
@@ -56,11 +56,11 @@ It's a lot of moving parts. That's the whole point.
 - **Field Supplies skill mod** refills 6.40% of your current magazine on every Pulsed-enemy kill, so the mag effectively never runs out in crowd fights.
 - **Commando skill mod** stacks +10.20% WCHC for 10 seconds on every kill or assist during Tactical Link, turning your signature window into a crit avalanche.
 
-This is not a glass-cannon-and-die build. The Extra Health from Swift Taunt is up almost permanently because hitting three enemies in five seconds at 550 RPM is trivial. You have a damage floor and a damage ceiling, and the ceiling is genuinely stupid.
+This is not a glass-cannon-and-die build. The Extra Health from Swift Taunt is up almost permanently because hitting three enemies in five seconds at 550 RPM is trivial. You have a damage floor and a damage ceiling, and the ceiling is the kind of number that makes you screenshot it and send it to your clan Discord at 1am like a proud parent showing off a report card.
 
 ---
 
-## Strawberry Milkshake
+## Strawberry Milkshake Stats and Exotic Talent
 
 | STAT | VALUE |
 |---|---|
@@ -73,13 +73,13 @@ This is not a glass-cannon-and-die build. The Extra Health from Swift Taunt is u
 | Build Talents | **In Sync** (slot 1) + **Swift Taunt** (slot 2) |
 | Godroll Attribute Rolls | Weapon Damage + Weapon Critical Hit Damage |
 
-A note on Anarchy: the doc-and-Reddit consensus is that Anarchy is currently non-functional or so weak it's effectively non-functional for build purposes. **Do not build around it.** The real engine is In Sync.
+A note on Anarchy: the community consensus is that Anarchy is currently non-functional or so weak it might as well be a flavor text. **Do not build around it.** It's the exotic equivalent of that one drawer in your kitchen that's full of dead batteries and takeout menus. The real engine is In Sync.
 
 
 
 ---
 
-## The Milkshake Machine Gear and Loadout
+## The Milkshake Machine Gear, Loadout, and Skill Mods
 
 ### Gear
 
@@ -134,19 +134,19 @@ Three skill mod combo sets, one per skill. All confirmed in-game on Patch 1.1.2.
 
 ---
 
-## Why Each Gear Piece Matters
+## Why Each Gear Piece Matters in This Build
 
-**Chest: Glass Cannon (T2).** +20% Damage, -10% Damage Reduction. The damage trade is huge. The -10% DR is what scares people, and it shouldn't, because Swift Taunt grants you 25% Max Health Extra Health for 10 seconds every time you hit three enemies in five seconds. At 550 RPM into a crowd, that buff is permanent. The math says you have a fat health buffer almost constantly, which more than offsets the DR loss.
+**Chest: Glass Cannon (T2).** +20% Damage, -10% Damage Reduction. Yes, Glass Cannon. No, you won't die every 4 seconds. Swift Taunt grants 25% Max Health as Extra Health for 10 seconds every time you hit three enemies in five seconds. At 550 RPM into a crowd, that buff is basically a permanent force field. Your spouse will lose more health stepping on a LEGO than you'll notice from the -10% DR.
 
-**Backpack: Inspiration (Fury Strike).** +30% Rate of Fire while skills are deployed. Smart Cover is deployed essentially all the time. This is +30% RoF as a passive baseline once you press the skill button. Free damage.
+**Backpack: Inspiration (Fury Strike).** +30% Rate of Fire while skills are deployed. Smart Cover is deployed essentially all the time. This is +30% RoF as a passive baseline the moment you press the skill button. Free damage. The kind of free that makes you suspicious, but it's real.
 
-**Mask, Gloves, Holster: Phalanx Attack (Firepower core).** These are your crit roll slots. Stack WCHC on the mask and gloves, WCHD on the holster. The Phalanx 4pc set bonus is what makes the build, and these three slots round out the 4pc count.
+**Mask, Gloves, Holster: Phalanx Attack (Firepower core).** These are your crit roll slots. Stack WCHC on the mask and gloves, WCHD on the holster. The Phalanx 4pc set bonus is the entire reason this build exists, and these three slots round out the 4pc count. If RNG gives you bad rolls, welcome to the club — we meet on Tuesdays.
 
-**Kneepads: Fury Strike with Optimal Range secondary.** Fury Strike 2pc gives you +10% Optimal Range, which stacks on Strawberry Milkshake's confirmed 29m base. Optimal Range roll on the kneepads pushes that envelope further. You want to be deleting things before they get close enough to remind you Glass Cannon exists.
+**Kneepads: Fury Strike with Optimal Range secondary.** Fury Strike 2pc gives you +10% Optimal Range, stacking on Strawberry Milkshake's 29m base. Optimal Range roll on the kneepads pushes it further. The goal: delete things before they get close enough to remind you that Glass Cannon exists and your reflexes aren't what they were in 2008.
 
 ---
 
-## Best OS Protocol for The Milkshake Machine
+## Best OS Protocol for Strawberry Milkshake in Division Resurgence
 
 **Dominating Presence** is the pick. +12% Weapon Damage as a flat baseline, plus +5% Weapon Multi-Shot Chance per enemy within 20 meters, capped at +20% with 4 enemies. This OS Protocol literally rewards you for standing in a bad place, which is exactly where The Milkshake Machine wants to be. Combined with Phalanx 4pc's +12% Multi-Shot and gear rolls, you can comfortably hit ~37-40% Multi-Shot Chance in the middle of a crowd fight. That means every third-ish bullet fires twice. Onto Pulsed enemies. With In Sync's +18% WD active. While Glass Cannon adds +20% Damage. While Inspiration adds +30% RoF.
 
@@ -154,7 +154,7 @@ Other OS Protocols are technically usable on this build, but nothing else create
 
 ---
 
-## Weapon Talents and Attachments
+## Best Weapon Talents for Strawberry Milkshake
 
 ### Primary: Strawberry Milkshake (Exotic LMG)
 
@@ -171,7 +171,7 @@ This is a survival swap, not a primary damage tool. Talents: **Revitalize** (kil
 
 ---
 
-## Stat Targets
+## Stat Targets for The Milkshake Machine
 
 | STAT | TARGET |
 |---|---|
@@ -204,11 +204,13 @@ This is a survival swap, not a primary damage tool. Talents: **Revitalize** (kil
 
 ---
 
-## Gear Ladder
+## Gear Ladder — How to Farm Toward The Milkshake Machine
+
+You don't need godrolled everything on day one. Build toward it.
 
 | TIER | SETUP | NOTES |
 |---|---|---|
-| T0 | Phalanx 4pc + Quick Draw 2pc | Learn the engine. No Optimal Range patch yet. Mods still work. |
-| T1 | Phalanx 4pc + Fury Strike 2pc + Inspiration backpack | Fully functional. In Sync double-dip live. All three skill mods active. |
-| T2 | Same sets, godrolled. SM rerolled to WD + WCHD. | Full ceiling. Current SM attribute rolls are the priority upgrade. |
+| T0 | Phalanx 4pc + Quick Draw 2pc | The training wheels version. Learn the engine, get comfortable with the loop. No Optimal Range patch yet, but the mods still work and In Sync still double-dips. Good enough to run missions without embarrassing yourself. |
+| T1 | Phalanx 4pc + Fury Strike 2pc + Inspiration backpack | The real deal. Fully functional Milkshake Machine with In Sync double-dip live and all three skill mods active. This is where it starts feeling unfair in the best way possible. |
+| T2 | Same sets, godrolled. SM rerolled to WD + WCHD. | Full ceiling. This is the version that makes you stand up from your chair and high-five the air. Current SM attribute rolls are the priority upgrade — if yours still has Piercing Damage, that's your next project. |
 
