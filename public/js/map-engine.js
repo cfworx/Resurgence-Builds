@@ -62,8 +62,8 @@
         offsetY = popupH + 10;
       }
       // Shift right if clipping left
-      if (px.x - popupW / 2 < 10) {
-        offsetX = (popupW / 2) - px.x + 20;
+      if (px.x - popupW / 2 < 30) {
+        offsetX = (popupW / 2) - px.x + 40;
       }
       // Shift left if clipping right
       if (px.x + popupW / 2 > containerW) {
