@@ -147,7 +147,6 @@ Three skill mod combo sets, one per skill. All confirmed in-game on Patch 1.1.2.
 
 **Dominating Presence** is the pick. +12% Weapon Damage as a flat baseline, plus +5% Weapon Multi-Shot Chance per enemy within 20 meters, capped at +20% with 4 enemies. This OS Protocol literally rewards you for standing in a bad place, which is exactly where The Milkshake Machine wants to be. Combined with Phalanx 4pc's +12% Multi-Shot and gear rolls, you can comfortably hit ~37-40% Multi-Shot Chance in the middle of a crowd fight. That means every third-ish bullet fires twice. Onto Pulsed enemies. With In Sync's +18% WD active. While Glass Cannon adds +20% Damage. While Inspiration adds +30% RoF.
 
-Other OS Protocols are technically usable on this build, but nothing else creates this much synergy with what the rest of the gear is doing. **Roll for Dominating Presence with any attribute, the talent is what matters.**
 
 ---
 
@@ -160,7 +159,6 @@ The talents you want on Strawberry Milkshake are **In Sync (slot 1)** and **Swif
 - **In Sync:** Weapon hits grant +9% Skill Damage for 8 seconds. Skill hits grant +9% Weapon Damage for 8 seconds. Bonus is doubled when both buffs are active simultaneously. Cast Scanning Pulse first. Pulse counts as a skill hit. Skill-side buff activates instantly. Fire SM. Weapon-side buff activates on the first hit. Both active. Both doubled. **+18% Weapon Damage and +18% Skill Damage from bullet one.**
 - **Swift Taunt:** Hitting 3 enemies within 5 seconds taunts nearby enemies and grants Extra Health equal to 25% Max Health for 10 seconds. At 550 RPM, this is trivially always on. This is what justifies Glass Cannon.
 
-**Current SM rolls vs godroll.** If your Strawberry Milkshake came with Weapon Piercing Damage and Skill Intensity (the standard drop rolls), you're sitting on a non-ideal stat profile. SM is **Shredding damage only**. Do not roll Piercing or Blast. **Reroll for Weapon Damage + Weapon Critical Hit Damage** when you have the resources. That is the godroll.
 
 ### Secondary: PPSH-41 (T2, SMG)
 
