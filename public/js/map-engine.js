@@ -44,21 +44,34 @@
     mapEl.addEventListener('touchmove', () => { clearTimeout(longPressTimer); }, { passive: true });
     mapEl.addEventListener('touchend', () => { clearTimeout(longPressTimer); }, { passive: true });
 
-    // Flip popup below marker if it clips at the top
+    // Flip popup if it clips at edges
     map.on('popupopen', (e) => {
       const popup = e.popup;
       const px = map.latLngToContainerPoint(popup.getLatLng());
       const popupEl = popup.getElement();
       if (!popupEl) return;
       const popupH = popupEl.offsetHeight;
-      // If popup extends above the container, flip it below
+      const popupW = popupEl.offsetWidth;
+      const containerW = map.getContainer().offsetWidth;
+
+      let offsetY = 0;
+      let offsetX = 0;
+
+      // Flip below if clipping top
       if (px.y - popupH - 20 < 0) {
-        popup.options.offset = [0, popupH + 10];
-        popup.update();
-      } else {
-        popup.options.offset = [0, 0];
-        popup.update();
+        offsetY = popupH + 10;
       }
+      // Shift right if clipping left
+      if (px.x - popupW / 2 < 0) {
+        offsetX = (popupW / 2) - px.x + 10;
+      }
+      // Shift left if clipping right
+      if (px.x + popupW / 2 > containerW) {
+        offsetX = containerW - px.x - popupW / 2 - 10;
+      }
+
+      popup.options.offset = [offsetX, offsetY];
+      popup.update();
     });
   });
 
