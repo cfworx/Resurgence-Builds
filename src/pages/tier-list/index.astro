@@ -11,6 +11,9 @@ function assignTier(build) {
   const text = (build.data.title + ' ' + build.data.description + ' ' + (build.data.tags||[]).join(' ')).toLowerCase();
   
   if (text.includes('roguemadras') || text.includes('tactical pharma')) return 'S';
+  if (text.includes('saiynergy') || text.includes('breacher')) return 'A';
+  if (text.includes('milkshake') || text.includes('strawberry')) return 'B';
+  if (text.includes('disorient') || text.includes('tech-op')) return 'A';
   if (text.includes('agenthuntzman') || (text.includes('vanguard') && text.includes('recon'))) return 'B';
 
   return 'B';
