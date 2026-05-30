@@ -402,11 +402,12 @@ const dataPayload = JSON.stringify(poisData);
   .map-hero__title { font-size: var(--text-2xl) }
   .map-hero__sub { font-size: var(--text-xs) }
   .map-wip { font-size: 10px; padding: 8px 12px }
-  #map-canvas { height: 55vh; min-height: 300px }
-  .map-canvas-wrap { margin-left: var(--sp-2); margin-right: var(--sp-2); border-radius: 6px }
+  #map-canvas { height: auto; min-height: unset; aspect-ratio: 2190 / 1920 }
+  .map-canvas-wrap { margin-left: 0; margin-right: 0; border-radius: 0; border-left: none; border-right: none }
   .map-seo, .map-faq { padding-left: var(--sp-3); padding-right: var(--sp-3) }
-  .poi-dot { width: 24px; height: 24px }
-  .poi-icon { width: 13px; height: 13px }
+  .poi-dot { width: 18px; height: 18px; border-width: 1.5px }
+  .poi-icon { width: 10px; height: 10px }
+  .poi-check { width: 10px; height: 10px; font-size: 7px; top: -3px; right: -3px }
   .map-popup { min-width: 180px; max-width: 250px }
   .popup-name { font-size: var(--text-sm) }
   .popup-desc { font-size: var(--text-xs) }
@@ -417,7 +418,9 @@ const dataPayload = JSON.stringify(poisData);
 
 @media (max-width: 480px) {
   .map-hero__title { font-size: var(--text-xl) }
-  #map-canvas { height: 50vh; min-height: 260px }
+  .poi-dot { width: 16px; height: 16px; border-width: 1px }
+  .poi-icon { width: 8px; height: 8px }
+  .poi-check { width: 8px; height: 8px; font-size: 6px }
   .faq-question { font-size: var(--text-xs); min-height: 44px; padding: var(--sp-2) var(--sp-3) }
   .faq-answer { padding: 0 var(--sp-3) var(--sp-3); font-size: var(--text-xs) }
 }

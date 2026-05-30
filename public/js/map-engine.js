@@ -94,6 +94,11 @@
 
   /* --- Build markers from pois.json --- */
   function buildMarkers() {
+    const isMobile = window.innerWidth <= 767;
+    const isSmall = window.innerWidth <= 480;
+    const dotSize = isSmall ? 16 : isMobile ? 18 : 28;
+    const halfDot = dotSize / 2;
+
     for (const poi of data.pois) {
       const cat = data.categories.find(c => c.id === poi.category);
       if (!cat) continue;
