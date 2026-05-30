@@ -5,7 +5,7 @@ import osProtocols from '../../../data/os-protocols.json';
 const slugify = (name: string) => name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
 
 const title = "Division Resurgence OS Protocols Guide - Every Protocol, Best Picks Per Class, S to C Tier List";
-const description = "The complete Division Resurgence OS Protocols guide. All protocols across Engineering, Firepower, and Toughness specializations, with S/A/B/C tier list, best picks per class, and FAQ.";
+const description = "The complete Division Resurgence OS Protocols guide. All protocols across Engineering, Firepower, and Toughness specializations with tier rankings, best picks per class, and FAQ.";
 const breadcrumbs = [
   { name: 'OS Protocols', url: '/database/os-protocols/' }
 ];
@@ -65,7 +65,7 @@ const faqs = [
 
     <p>OS Protocols are the single highest-leverage gear slot in the game. Every protocol carries a unique talent that can completely reshape your build, plus a main stat roll and three sub-stat rolls. There are <strong>41 distinct protocols across three specializations</strong>: Engineering, Firepower, and Toughness. This guide breaks down every single one, ranks them in a tier list, and tells you exactly which to chase for each of the five class archetypes.</p>
 
-    <p>If you just want the answer: scroll to the <a href="#tier-list">Tier List</a>, then jump to your <a href="#best-per-class">class section</a>. If you want the receipts, every protocol has its own anchor heading with full stats and a use-case recommendation below.</p>
+    <p>If you just want the answer: check the <a href="/tier-list/os-protocols/">Tier Rankings</a> or the <a href="/guides/best-os-protocol/">Best Protocol Per Class</a> guide. If you want the receipts, every protocol has its own page with full stats and a use-case recommendation below.</p>
 
     <h2 id="what-is-an-os-protocol">What is an OS Protocol?</h2>
 
@@ -79,32 +79,31 @@ const faqs = [
       <li>For active-effect protocols, a <strong>Cooldown</strong> in seconds</li>
     </ul>
 
-    <p>Protocols come in four rarity tiers: <strong>High-End, Superior, Specialized, and Standard.</strong> High-End protocols carry the strongest talent effects and the highest stat rolls.</p>
-
-    <!-- Tier List & Class Picks — now on their own page -->
-
-    <div class="tier-link-card">
-      <div>
-        <h3 style="margin: 0 0 4px 0; font-size: var(--text-base); color: #fff;">Tier Rankings</h3>
-        <p style="margin: 0; font-size: var(--text-sm); color: var(--ink-muted);">Every protocol ranked for Patch 1.1.2.2 with per-class best picks.</p>
-      </div>
-      <a href="/tier-list/os-protocols/" class="tier-link-btn">View Tier List &rarr;</a>
-    </div>
-
-    <div class="tier-link-card">
-      <div>
-        <h3 style="margin: 0 0 4px 0; font-size: var(--text-base); color: #fff;">Best OS Protocol Per Class</h3>
-        <p style="margin: 0; font-size: var(--text-sm); color: var(--ink-muted);">In-depth breakdown of the top pick for each class with reasoning and backup picks.</p>
-      </div>
-      <a href="/guides/best-os-protocol/" class="tier-link-btn">View Guide &rarr;</a>
-    </div>
-
   </div> <!-- close .os-guide -->
+
+  <!-- Link cards - outside prose wrapper for proper styling -->
+  <div class="os-link-cards">
+    <a href="/tier-list/os-protocols/" class="os-link-card">
+      <div>
+        <h3>Tier Rankings</h3>
+        <p>Every protocol ranked for Patch 1.1.2.2 with per-class best picks.</p>
+      </div>
+      <span class="os-link-card__btn">View Tier List &rarr;</span>
+    </a>
+
+    <a href="/guides/best-os-protocol/" class="os-link-card">
+      <div>
+        <h3>Best OS Protocol Per Class</h3>
+        <p>In-depth breakdown of the top pick for each class with reasoning and backup picks.</p>
+      </div>
+      <span class="os-link-card__btn">View Guide &rarr;</span>
+    </a>
+  </div>
 
   <!-- Divider before the interactive grid -->
   <hr style="margin: var(--sp-10) 0; border-color: rgba(255,255,255,0.08);" />
 
-  <h2 class="db-heading" style="font-size: var(--text-3xl);">Full Protocol Database</h2>
+  <h2 style="font-family: var(--font-heading); font-size: var(--text-3xl); font-weight: 900; color: #fff; margin-bottom: var(--sp-3);">Full Protocol Database</h2>
   <p class="db-subheading">Every protocol, filterable by rarity and specialization. Click any card for full stats.</p>
 
   <!-- Existing filters + grid -->
@@ -233,22 +232,42 @@ const faqs = [
   }
   .os-guide a:hover { color: #fff; }
 
-  /* Tier link card */
-  .tier-link-card {
+  /* Link cards */
+  .os-link-cards {
+    display: flex;
+    flex-direction: column;
+    gap: var(--sp-3);
+    margin: var(--sp-6) 0;
+  }
+  .os-link-card {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: var(--sp-4);
     padding: var(--sp-5);
-    background: linear-gradient(135deg, rgba(242,104,34,0.08) 0%, rgba(30,30,36,0.9) 100%);
+    background: rgba(242,104,34,0.06);
     border: 1px solid rgba(242,104,34,0.2);
     border-radius: 12px;
-    margin-bottom: var(--sp-6);
+    text-decoration: none;
     flex-wrap: wrap;
+    transition: all 200ms ease;
   }
-
-  /* Tier link button */
-  .tier-link-btn {
+  .os-link-card:hover {
+    background: rgba(242,104,34,0.12);
+    border-color: var(--accent);
+  }
+  .os-link-card h3 {
+    margin: 0 0 4px 0;
+    font-size: var(--text-base);
+    font-weight: 700;
+    color: #fff;
+  }
+  .os-link-card p {
+    margin: 0;
+    font-size: var(--text-sm);
+    color: var(--ink-muted);
+  }
+  .os-link-card__btn {
     display: inline-flex;
     align-items: center;
     font-family: var(--font-mono);
@@ -256,19 +275,12 @@ const faqs = [
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.06em;
-    text-decoration: none;
     white-space: nowrap;
     padding: 10px 20px;
     color: #fff;
-    background: rgba(242,104,34,0.15);
+    background: rgba(242,104,34,0.2);
     border: 1px solid rgba(242,104,34,0.4);
     border-radius: 8px;
-    transition: all 200ms ease;
-  }
-  .tier-link-btn:hover {
-    background: rgba(242,104,34,0.25);
-    border-color: var(--accent);
-    color: #fff;
   }
 
   /* Clickable card wrapper */
