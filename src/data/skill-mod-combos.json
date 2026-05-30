@@ -483,6 +483,34 @@
     "bonus3": "Scanning Pulse disrupts enemy skills and electronics on Pulsed targets."
   },
   {
+    "id": "smc-89",
+    "name": "Commando",
+    "specialization": "Vanguard",
+    "bonus2": "Damage Reduction+[2.0%~4.0%]",
+    "bonus3": "Kills or assists while using Tactical Link grant +10.20% Weapon Critical Hit Chance for 10 second(s)."
+  },
+  {
+    "id": "smc-90",
+    "name": "Armored Train",
+    "specialization": "Vanguard",
+    "bonus2": "Skill Cooldown Recovery-[2.0%~4.0%]",
+    "bonus3": "While behind a Smart Cover, weapon hits have a 5% chance of granting +2% Weapon Critical Hit Chance for 20 second(s), up to 3 stack(s)."
+  },
+  {
+    "id": "smc-91",
+    "name": "Field Supplies",
+    "specialization": "Vanguard",
+    "bonus2": "Damage Reduction+[2.0%~4.0%]",
+    "bonus3": "Kills or assists on Pulsed enemies restore 6% Health and refill 6.40% of the current magazine."
+  },
+  {
+    "id": "smc-92",
+    "name": "Tactical Insight",
+    "specialization": "Vanguard",
+    "bonus2": "Signature Ability Charge Efficiency+[4.0%~8.0%]",
+    "bonus3": "Deploying Scanning Pulse restores 48 Signature Ability Charge, increased by 64 if there are more than 3 enemies within 70 meter(s)."
+  },
+  {
     "id": "smc-70",
     "name": "Armor Strengthening",
     "specialization": "Field Medic",

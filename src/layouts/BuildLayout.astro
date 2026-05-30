@@ -154,6 +154,8 @@ const redditShareUrl = `https://reddit.com/submit?url=${encodeURIComponent(Astro
 
         <AdSenseUnit slotId="8102223000" />
 
+        <GiscusComments />
+
         {faqs.length > 0 && (
           <section class="build-faq" style="margin-top: var(--sp-8);">
             <h2 id="faq" style="font-size: var(--text-xl); margin-bottom: var(--sp-4);">Frequently Asked Questions</h2>
@@ -200,8 +202,6 @@ const redditShareUrl = `https://reddit.com/submit?url=${encodeURIComponent(Astro
             </a>
           </div>
         </div>
-
-        <GiscusComments />
 
         {sources.length > 0 && (
           <section class="build-sources" style="margin-top: var(--sp-8); background: rgba(0,0,0,0.15); border-radius: var(--border-radius); padding: var(--sp-6);">
