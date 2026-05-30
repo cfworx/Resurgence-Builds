@@ -1178,15 +1178,15 @@ const dataPayload = JSON.stringify({ gearSets, weaponTalents, exoticWeapons, sta
 }
 .faq-list { margin: var(--sp-4) 0 }
 .faq-item {
-  background: var(--card-bg);
-  border: 1px solid var(--panel-border);
+  background: var(--surface);
+  border: 1px solid var(--border);
   border-radius: 6px;
   margin-bottom: var(--sp-2);
   overflow: hidden;
   transition: border-color 200ms ease;
 }
 .faq-item:hover { border-color: rgba(242,104,34,0.3) }
-.faq-item[open] { border-color: var(--accent-dim) }
+.faq-item[open] { border-color: var(--accent) }
 .faq-question {
   padding: var(--sp-3) var(--sp-4);
   font-family: var(--font-heading);
@@ -1200,12 +1200,7 @@ const dataPayload = JSON.stringify({ gearSets, weaponTalents, exoticWeapons, sta
   min-height: 48px;
 }
 .faq-question::-webkit-details-marker { display: none }
-.faq-question::after {
-  content: '＋';
-  font-size: var(--text-lg);
-  color: var(--accent);
-  transition: transform .2s;
-}
+.faq-question::after { content: '＋'; font-size: var(--text-lg); color: var(--accent); transition: transform .2s }
 .faq-item[open] .faq-question::after { content: '－' }
 .faq-answer {
   padding: 0 var(--sp-4) var(--sp-4);

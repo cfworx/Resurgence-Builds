@@ -101,6 +101,20 @@ const protocolLd = {
         </div>
       </div>
 
+      {/* Featured Build */}
+      {protocol.name === 'Dominating Presence' && (
+        <div class="protocol-section">
+          <h2 class="protocol-section__title">Featured Build</h2>
+          <a href="/builds/milkshake-machine-strawberry-milkshake-lmg-build/" class="protocol-build-link">
+            <div>
+              <strong style="color: #fff;">The Milkshake Machine</strong>
+              <span style="display: block; font-size: var(--text-sm); color: var(--ink-muted); margin-top: 2px;">Strawberry Milkshake LMG · Vanguard · Phalanx Attack 4pc + Fury Strike 2pc</span>
+            </div>
+            <span style="font-family: var(--font-mono); font-size: var(--text-xs); font-weight: 700; text-transform: uppercase; color: #fff; background: rgba(242,104,34,0.2); border: 1px solid rgba(242,104,34,0.4); padding: 8px 16px; border-radius: 6px; white-space: nowrap;">View Build →</span>
+          </a>
+        </div>
+      )}
+
       <!-- Related Links -->
       <div class="protocol-related">
         <a href="/database/os-protocols/" class="protocol-back">&larr; All OS Protocols</a>
@@ -281,6 +295,24 @@ const protocolLd = {
 
   .protocol-back:hover {
     background: rgba(242,104,34,0.15);
+    border-color: var(--accent);
+  }
+
+  .protocol-build-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--sp-4);
+    padding: var(--sp-5);
+    background: rgba(242,104,34,0.06);
+    border: 1px solid rgba(242,104,34,0.2);
+    border-radius: 12px;
+    text-decoration: none;
+    flex-wrap: wrap;
+    transition: all 200ms ease;
+  }
+  .protocol-build-link:hover {
+    background: rgba(242,104,34,0.12);
     border-color: var(--accent);
   }
 </style>
