@@ -2,6 +2,7 @@
 import SEO from '../components/SEO.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import AdSenseUnit from '../components/AdSenseUnit.astro';
 import '../styles/global.css';
 
 export interface Props {
@@ -19,9 +20,10 @@ export interface Props {
   breadcrumbs?: { name: string; url: string }[];
   jsonLd?: Record<string, unknown>;
   faqs?: { question: string; answer: string }[];
+  noAds?: boolean;
 }
 
-const { title, description, ogType, ogImage, article, keywords, breadcrumbs, jsonLd, faqs } = Astro.props;
+const { title, description, ogType, ogImage, article, keywords, breadcrumbs, jsonLd, faqs, noAds } = Astro.props;
 ---
 
 <!DOCTYPE html>
@@ -75,6 +77,11 @@ const { title, description, ogType, ogImage, article, keywords, breadcrumbs, jso
   <Header />
   <main id="main-content">
     <slot />
+    {!noAds && (
+      <div class="container" style="padding-top: var(--sp-6); padding-bottom: var(--sp-4);">
+        <AdSenseUnit />
+      </div>
+    )}
   </main>
 <Footer title={title} />
   <script>
