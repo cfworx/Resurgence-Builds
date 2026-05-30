@@ -96,7 +96,7 @@ const dataPayload = JSON.stringify({ gearSets, weaponTalents, exoticWeapons, sta
               <option value={t.hash}>[{t.spec}] {t.title}</option>
             ))}
           </select>
-          <span style="font-size: 0.85em; opacity: 0.8; color: var(--ink-muted); line-height: 1.4;">Selecting a template instantly pre-configures your entire gear, talents, weapons, and chipset loadout. Customize it from there to theorycraft your own version!</span>
+          <span style="font-size: 0.85em; opacity: 0.8; color: var(--ink-muted); line-height: 1.4;">Selecting a template instantly pre-configures your entire gear, talents, weapons, and skill mod loadout. Customize it from there to theorycraft your own version!</span>
         </div>
       </div>
       <div class="builder-grid">
@@ -120,7 +120,7 @@ const dataPayload = JSON.stringify({ gearSets, weaponTalents, exoticWeapons, sta
             </div>
           </div>
 
-          <!-- Q3: Bottom-Left — OS Protocol + Chipset Mods -->
+          <!-- Q3: Bottom-Left — OS Protocol + Skill Mods -->
           <div class="quad quad--os">
             <h2 class="quad__heading">:: OS Protocol</h2>
             <div class="slot-card" id="slot-os">
@@ -139,7 +139,7 @@ const dataPayload = JSON.stringify({ gearSets, weaponTalents, exoticWeapons, sta
             <div class="slot-card" id="slot-chipset">
               <div class="slot-card__header">
                 <span class="slot-card__icon">🔩</span>
-                <span class="slot-card__label">Chipset Mods (Select 3)</span>
+                <span class="slot-card__label">Skill Mods (Select 3)</span>
               </div>
               <div class="slot-card__body" style="display:flex; flex-direction:column; gap: var(--sp-2);">
                 <div>

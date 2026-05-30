@@ -206,8 +206,8 @@
       const val = state[`smc${num}`];
       
       sel.innerHTML = state.spec
-        ? `<option value="">— Select Chipset Mod ${num} —</option>`
-        : `<option value="">— Select Chipset Mod ${num} (All) —</option>`;
+        ? `<option value="">— Select Skill Mod ${num} —</option>`
+        : `<option value="">— Select Skill Mod ${num} (All) —</option>`;
         
       const specColors = {'Demolitionist':'#3b82f6','Tech Operator':'#3b82f6','Vanguard':'#f97316','Bulwark':'#22c55e','Field Medic':'#a855f7'};
       filtered.forEach(s => {
@@ -500,7 +500,7 @@
     });
     if (hasChipsets) {
       talentHTML += `<div class="summary-loadout-group summary-loadout-group--chipset">`;
-      talentHTML += `<div class="summary-loadout-label">Chipset Mods</div>`;
+      talentHTML += `<div class="summary-loadout-label">Skill Mods</div>`;
       talentHTML += chipsetHTML;
       talentHTML += `</div>`;
     }
@@ -595,7 +595,7 @@
       if (val) {
         const s = skillModCombos.find(x => x.id === val);
         if (s) {
-          allDescs.push({src:`Chipset ${num}: ` + s.name, d: `${s.bonus2} ${s.bonus3}`});
+          allDescs.push({src:`Skill Mod ${num}: ` + s.name, d: `${s.bonus2} ${s.bonus3}`});
         }
       }
     });
