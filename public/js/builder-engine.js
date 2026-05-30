@@ -158,14 +158,13 @@
       if (!groups[cat]) {
         groups[cat] = document.createElement('optgroup');
         groups[cat].label = cat;
-        groups[cat].style.color = catColors[cat] || 'inherit';
-        groups[cat].style.fontWeight = '700';
+        groups[cat].style.cssText = `color:${catColors[cat]||'inherit'};font-weight:700;background:#16161c`;
       }
       const opt = document.createElement('option');
       opt.value = p.id;
       const recTag = (recCat && p.specialization === recCat) ? ' ★' : '';
       opt.textContent = `${p.name}${recTag}`;
-      opt.style.color = catColors[cat] || 'inherit';
+      opt.style.cssText = `color:${catColors[cat]||'inherit'};background:#1e1e24`;
       groups[cat].appendChild(opt);
     });
     // Add recommended category first
@@ -191,6 +190,7 @@
       const opt = document.createElement('option');
       opt.value = sc;
       opt.textContent = sc;
+      opt.style.cssText = 'background:#1e1e24;color:#e0e0e0';
       sel.appendChild(opt);
     });
     
@@ -214,7 +214,7 @@
         const opt = document.createElement('option');
         opt.value = s.id;
         opt.textContent = s.name;
-        opt.style.color = specColors[s.specialization] || 'inherit';
+        opt.style.cssText = `color:${specColors[s.specialization]||'inherit'};background:#1e1e24`;
         
         // Disable option if selected in another slot
         const isSelectedElsewhere = ['1', '2', '3'].some(other => other !== num && state[`smc${other}`] === s.id);
