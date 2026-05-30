@@ -9,6 +9,12 @@ const breadcrumbs = [
   { name: 'Backpack Talents', url: '/database/backpack-talents/' }
 ];
 
+const faqs = [
+  { question: "What are backpack talents in Division Resurgence?", answer: "Backpack talents are passive abilities that roll on Tier 2 backpacks. Each backpack can have one talent, and it activates automatically — no button press needed. They affect things like healing, ammo management, and damage output. You equip them through the Build Planner." },
+  { question: "What is the best backpack talent in Division Resurgence?", answer: "It depends on your build, but the most universally strong backpack talents buff sustain or amplify your main damage source. DPS players usually want talents that boost weapon damage on kill or after using skills. Tank and healer builds lean toward talents that regenerate armor or extend skill effects. Check the individual talent descriptions on this page to match one to your playstyle." },
+  { question: "Can you reroll backpack talents in Division Resurgence?", answer: "Yes. You can recalibrate one attribute or talent per gear piece at the Recalibration Station. If your backpack dropped with a garbage talent but great stats, you can swap the talent out. Just remember — you can only recalibrate one slot per item, so pick wisely." },
+];
+
 const itemListLd = {
   '@context': 'https://schema.org',
   '@type': 'ItemList',
@@ -39,6 +45,7 @@ const itemListLd = {
   subheading="Every backpack talent in the game. Most of them are mid. A few of them will change your life. We've sorted them so you don't have to."
   jsonLd={itemListLd}
   lastVerified="Patch 1.2.1"
+  {faqs}
 >
   <div class="db-grid" id="talents-grid">
     {backpackTalents.map((talent) => (

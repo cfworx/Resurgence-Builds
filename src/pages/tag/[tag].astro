@@ -95,9 +95,24 @@ const breadcrumbItems = [
 
 const title = `${displayTag} — Division Resurgence Guides | Resurgence Builds`;
 const description = `All Division Resurgence content tagged "${displayTag}" — builds, guides, and news. ${posts.length} article${posts.length !== 1 ? 's' : ''} covering ${displayTag.toLowerCase()} in The Division Resurgence.`;
+
+const faqs = [
+  {
+    question: `What is ${displayTag} in Division Resurgence?`,
+    answer: `${displayTag} is a topic covered across ${posts.length} article${posts.length !== 1 ? 's' : ''} on Resurgence Builds — including builds, guides, patch breakdowns, and news. If it matters for your loadout or your grind, we've written about it.`,
+  },
+  {
+    question: `How many ${displayTag} guides does Resurgence Builds have?`,
+    answer: `Right now we've got ${posts.length} piece${posts.length !== 1 ? 's' : ''} of content covering ${displayTag.toLowerCase()}. Every article is tested in-game and kept up to date with the current patch, so you're not reading stale theorycrafting from six months ago.`,
+  },
+  {
+    question: `Where can I find the best ${displayTag} build?`,
+    answer: `Start right here — browse the ${displayTag.toLowerCase()} articles below for build guides and gear breakdowns. For a quick power-ranking, check our Best Builds Tier List at /tier-list/, or use the Build Planner at /builder/ to cook up something custom.`,
+  },
+];
 ---
 
-<BaseLayout {title} {description} breadcrumbs={breadcrumbItems}>
+<BaseLayout {title} {description} breadcrumbs={breadcrumbItems} {faqs}>
   <div class="container section">
     <Breadcrumbs items={breadcrumbItems} />
     <SectionTag label="Tag Archive" />
@@ -107,7 +122,7 @@ const description = `All Division Resurgence content tagged "${displayTag}" — 
     </p>
     <div style="background: rgba(0,0,0,0.15); border: 1px solid var(--border); border-radius: var(--border-radius); padding: var(--sp-5); margin-bottom: var(--sp-6); max-width: 800px;">
       <p style="color: var(--ink-muted); font-size: var(--text-sm); line-height: 1.7; margin: 0;">
-        Everything Resurgence Builds has published about <strong style="color: var(--ink);">{displayTag}</strong> in The Division Resurgence — including build guides, database breakdowns, patch notes, and news coverage. Each piece is in-game tested and updated for the current patch. Use the cards below to jump into any article, or explore related topics using the tags on each card. Looking for a specific build? Try our <a href="/tier-list/" style="color: var(--accent);">Best Builds Tier List</a> or the <a href="/builder/" style="color: var(--accent);">Build Planner</a> to create your own loadout from scratch.
+        Here's every <strong style="color: var(--ink);">{displayTag}</strong> article we've put out — builds, gear breakdowns, patch notes, the works. All tested in-game, all kept current so you're not running yesterday's meta. Click any card to jump in, or use the tags to rabbit-hole into related topics. Want the short version of what's good right now? Hit the <a href="/tier-list/" style="color: var(--accent);">Tier List</a>. Want to theorycraft your own loadout? The <a href="/builder/" style="color: var(--accent);">Build Planner</a> is right there.
       </p>
     </div>
 

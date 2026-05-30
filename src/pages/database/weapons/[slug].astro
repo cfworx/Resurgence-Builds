@@ -28,12 +28,12 @@ const breadcrumbs = [
 ];
 
 const typeGuide: Record<string, string> = {
-  'Assault Rifle': 'Assault Rifles are the most versatile weapon class in Division Resurgence. They offer balanced damage, RPM, and range — making them the default pick for players who want one gun that works everywhere. Most meta builds run an AR as the primary weapon.',
-  'SMG': 'SMGs dominate close-range combat in Division Resurgence. They trade range for extremely high RPM and built-in Crit Chance bonuses, making them the go-to for Dark Zone PvP rushdown builds and aggressive PvE playstyles.',
-  'LMG': 'LMGs are the sustained-fire kings of Division Resurgence. Huge magazines mean less reloading and more time dealing damage, which synergizes with stacking talents like Multi-Shot and In Sync. Popular in both solo and group PvE.',
-  'Marksman Rifle': 'Marksman Rifles deliver the highest per-shot damage in Division Resurgence. They reward precision with massive headshot multipliers and are the backbone of sniper builds using Death From Afar OS Protocol.',
-  'Shotgun': 'Shotguns deal devastating burst damage at point-blank range. In Division Resurgence, they pair with Bulwark Breacher builds using the Ballistic Shield for protected close-range engagements.',
-  'Pistol': 'Pistols are sidearms in Division Resurgence, used when your primary and secondary are empty or during shield builds. Some exotic pistols have powerful unique talents worth building around.',
+  'Assault Rifle': 'ARs are the jack-of-all-trades in Division Resurgence — good damage, good RPM, good range. If you just want one gun that works everywhere without thinking too hard, this is it. Most meta builds run an AR primary for a reason.',
+  'SMG': 'SMGs are for players who like getting in people\'s faces. You give up range for insane RPM and built-in Crit Chance, which makes them absolute monsters in Dark Zone PvP and aggressive PvE runs. If you\'re not pushing forward, you\'re wasting the gun.',
+  'LMG': 'LMGs let you hold the trigger and just keep shooting. Massive magazines mean you\'re stacking talents like Multi-Shot and In Sync without ever stopping to reload. Great for solo and group PvE — you become the team\'s damage printer.',
+  'Marksman Rifle': 'Marksman Rifles hit the hardest per shot in Division Resurgence. If your aim is good, the headshot multipliers are disgusting. These are the backbone of sniper builds running Death From Afar OS Protocol.',
+  'Shotgun': 'Shotguns delete people up close. In Division Resurgence, they\'re best on Bulwark Breacher builds with a Ballistic Shield — walk up, blast, repeat. Not subtle, but extremely effective.',
+  'Pistol': 'Pistols are your sidearm — you pull them out when everything else is empty, or if you\'re running a shield build. Some exotic pistols have wild talents that are actually worth building around.',
 };
 
 const typeDesc = typeGuide[weapon.type] || `${weapon.type}s are a weapon category in Division Resurgence offering unique playstyle options depending on your build and specialization.`;
@@ -41,11 +41,11 @@ const typeDesc = typeGuide[weapon.type] || `${weapon.type}s are a weapon categor
 const faqs = [
   {
     question: `Is the ${weapon.name} good in Division Resurgence?`,
-    answer: `The ${weapon.name} is a ${weapon.type} with ${weapon.rpm} RPM and a ${weapon.mag}-round magazine dealing ${weapon.dmgType} damage. ${typeDesc.split('.')[0]}. Whether it's meta depends on available weapon talents and your build's gear set synergies.`
+    answer: `The ${weapon.name} is a ${weapon.type} — ${weapon.rpm} RPM, ${weapon.mag}-round mag, ${weapon.dmgType} damage. ${typeDesc.split('.')[0]}. How good it actually is depends on what weapon talents you roll and how well it fits your gear set combo.`
   },
   {
     question: `What type of damage does the ${weapon.name} do?`,
-    answer: `The ${weapon.name} deals ${weapon.dmgType} damage. This matters for builds that stack damage-type-specific bonuses through gear sets, OS Protocols, and weapon talents.`
+    answer: `${weapon.dmgType} damage. This actually matters — some gear sets, OS Protocols, and weapon talents give bonuses tied to specific damage types. Make sure your build isn't fighting against the damage type you're dealing.`
   },
   {
     question: `What builds use ${weapon.type}s in Division Resurgence?`,

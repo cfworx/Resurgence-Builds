@@ -9,6 +9,12 @@ const breadcrumbs = [
   { name: 'Weapon Talents', url: '/database/weapon-talents/' }
 ];
 
+const faqs = [
+  { question: "What are weapon talents in Division Resurgence?", answer: "Weapon talents are passive or conditional abilities that roll on Tier 2 weapons. Each weapon gets one talent, and it can dramatically change how the gun performs — from boosting damage on consecutive hits to refilling your magazine on kills. The talent is often more important than the weapon's base stats." },
+  { question: "What is the best weapon talent in Division Resurgence?", answer: "The best weapon talent depends on your weapon type and build. For sustained DPS with ARs and LMGs, talents that ramp damage on hits are king. For burst damage with Marksman Rifles, look for talents that reward precision. SMG builds love anything that procs on close-range kills. Read the talent descriptions below and match one to how you actually play, not what sounds cool on paper." },
+  { question: "Can you change weapon talents in Division Resurgence?", answer: "Yes. You can recalibrate the talent on any Tier 2 weapon at the Recalibration Station. Extract the talent you want from a donor weapon first — it gets saved permanently in your Recalibration Library. Then apply it to your weapon. One recalibration slot per weapon, so if you already recalibrated a stat, you can't also swap the talent on that same gun." },
+];
+
 const itemListLd = {
   '@context': 'https://schema.org',
   '@type': 'ItemList',
@@ -39,6 +45,7 @@ const itemListLd = {
   subheading="The complete list of weapon talents and their effects. Slot the right one and watch your damage multiply obscenely."
   jsonLd={itemListLd}
   lastVerified="Patch 1.2.1"
+  {faqs}
 >
   <div class="db-grid" id="talents-grid">
     {weaponTalents.map((talent) => (

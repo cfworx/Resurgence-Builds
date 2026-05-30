@@ -106,7 +106,7 @@ When someone titles their post with a date range like a tombstone inscription, y
 
 This player didn't just quit. They **gave their 25.5k power account to a random clan member** and posted about it like a will reading. After 40 days of grinding, the Warlord proficiency bug and zero gold chips from DZ broke them.
 
-**u/NecessaryComputer450**: *"The more people leave the better I guess, then they see how shit they are treating us."* And **u/X_CLOWNEY_X** with the real talk: *"They are only trying to recoup some of the money they have poured into this game… Pure cash grab."* Strong community feelings on the topic.
+**u/NecessaryComputer450** and **u/X_CLOWNEY_X** summed up the frustration: players feel the monetization approach prioritizes revenue recovery over player goodwill. Strong community feelings on the topic.
 
 ---
 

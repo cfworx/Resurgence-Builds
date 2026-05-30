@@ -9,6 +9,12 @@ const breadcrumbs = [
   { name: 'Body Armor Talents', url: '/database/body-armor-talents/' }
 ];
 
+const faqs = [
+  { question: "What are body armor talents in Division Resurgence?", answer: "Body armor talents are passive abilities on Tier 2 chest pieces. Your chest talent is arguably the most impactful gear talent in the game because it directly affects survivability or damage output in every firefight. One talent per chest piece, always active once equipped." },
+  { question: "What is the best body armor talent for DPS in Division Resurgence?", answer: "For pure DPS, you want a chest talent that amplifies weapon damage or gives you a damage bonus when certain conditions are met (like hitting crits or staying in cover). The strongest DPS chest talents typically give a flat damage increase that multiplies with everything else in your build. Check the descriptions below — if it says 'amplified' damage, that's the good stuff." },
+  { question: "What is the difference between backpack and body armor talents?", answer: "Backpack talents and body armor talents occupy separate gear slots and stack with each other. They're different talent pools — you won't find the same talent on both. Your chest talent usually has a bigger impact on your build's identity, while backpack talents tend to provide sustain or utility bonuses. You want both working together." },
+];
+
 const itemListLd = {
   '@context': 'https://schema.org',
   '@type': 'ItemList',
@@ -39,6 +45,7 @@ const itemListLd = {
   subheading="The talent on your chest piece is the most important decision you'll make in this game. Choose poorly and you're a walking loot piñata for Dark Zone rogues."
   jsonLd={itemListLd}
   lastVerified="Patch 1.2.1"
+  {faqs}
 >
   <div class="db-grid" id="talents-grid">
     {armorTalents.map((talent) => (

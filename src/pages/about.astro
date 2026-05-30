@@ -17,6 +17,21 @@ const aboutPageSchema = {
 const breadcrumbItems = [
   { name: 'About', url: '/about/' },
 ];
+
+const faqs = [
+  {
+    question: "Who runs Resurgence Builds?",
+    answer: "The site is run by RapidF5, a longtime Division franchise player who got tired of outdated, copy-paste content for The Division Resurgence. It's a one-man passion project backed by a Discord community of players who help test builds and catch mistakes."
+  },
+  {
+    question: "Is Resurgence Builds affiliated with Ubisoft?",
+    answer: "No. Resurgence Builds is a completely independent fan site. We are not affiliated with, endorsed by, or sponsored by Ubisoft. All game trademarks belong to their respective owners."
+  },
+  {
+    question: "How can I contribute or report an error?",
+    answer: "Join our Discord and drop your feedback in the #report-website-issues channel. Got a build you think deserves coverage? Post it in #builds with your stats and gameplay clips. We read everything and credit contributors."
+  },
+];
 ---
 
 <BaseLayout
@@ -25,6 +40,7 @@ const breadcrumbItems = [
   keywords={["about resurgence builds", "division resurgence wiki", "division resurgence community", "resurgence builds team"]}
   jsonLd={aboutPageSchema}
   breadcrumbs={breadcrumbItems}
+  faqs={faqs}
 >
   <div class="container section content-width">
     <h1 class="heading-accent">About Resurgence Builds</h1>

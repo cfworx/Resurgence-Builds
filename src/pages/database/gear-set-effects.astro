@@ -9,6 +9,12 @@ const breadcrumbs = [
   { name: 'Gear Set Effects', url: '/database/gear-set-effects/' }
 ];
 
+const faqs = [
+  { question: "How do gear sets work in Division Resurgence?", answer: "Gear sets give you stacking bonuses for wearing multiple pieces from the same set. Equip 2 pieces for a small bonus, 3 for a stronger one, and 4 pieces to unlock the full set effect — which is usually a build-defining ability. You can mix brand sets and gear sets, but the 4-piece bonus is where the real power spike lives." },
+  { question: "What is the best gear set in Division Resurgence?", answer: "There's no single best gear set — it depends on your playstyle and specialization. DPS builds usually gravitate toward sets that buff weapon damage or crit. Tank builds want sets with armor bonuses and threat generation. Skill builds look for Engineering boosts and skill damage. Check the 4-piece bonuses on this page and pick the one that matches your build's core loop." },
+  { question: "Should I use a gear set or brand set in Division Resurgence?", answer: "Both are viable. Gear sets give you a powerful 4-piece bonus but lock you into specific pieces. Brand sets offer more flexibility since each brand has its own 2 and 3-piece bonuses you can mix and match. Most endgame builds use a 4-piece gear set core with brand set pieces filling the remaining slots for extra stat coverage." },
+];
+
 const itemListLd = {
   '@context': 'https://schema.org',
   '@type': 'ItemList',
@@ -39,6 +45,7 @@ const itemListLd = {
   subheading="Every gear set and their 2, 3, and 4-piece bonuses. Stack these correctly and you become an entirely different class of problem."
   jsonLd={itemListLd}
   lastVerified="Patch 1.2.1"
+  {faqs}
 >
   <div class="db-grid" id="gear-grid">
     {gearSets.map((gear) => (

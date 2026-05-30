@@ -33,9 +33,24 @@ const breadcrumbItems = [{ name: 'Tier List', url: '/tier-list/' }];
 
 const title = "Best Builds & Tier List — Division Resurgence";
 const description = "The best Division Resurgence builds ranked S through C tier. PvE Legendary, Dark Zone PvP, and Conflict meta loadouts. Updated for Patch 1.2.1.";
+
+const faqs = [
+  {
+    question: "How do you rank builds on the tier list?",
+    answer: "Every build is tested in live gameplay — Legendary missions, Dark Zone PvP, and Conflict. We look at raw DPS output, survivability, team utility, and how forgiving the build is if you mess up a rotation. No theory-crafting from spreadsheets. If it doesn't perform in-game, it doesn't rank high."
+  },
+  {
+    question: "How often is the tier list updated?",
+    answer: "We re-evaluate the tier list after every major patch and hotfix. If a balance change moves the meta, we update within 48 hours. Each build card links to a full guide with a Last Updated date so you know exactly how fresh the info is."
+  },
+  {
+    question: "I think my build is ranked too low. What do I do?",
+    answer: "Hit us up on Discord in the #builds channel with your loadout, stats, and gameplay clips. If your build is putting up numbers we can't argue with, we'll re-test it and adjust the ranking. We've moved builds up before — prove it and we'll own the mistake."
+  },
+];
 ---
 
-<BaseLayout title={title} description={description} breadcrumbs={breadcrumbItems} ogImage="/images/best-pve-dps-builds-division-resurgence.png">
+<BaseLayout title={title} description={description} breadcrumbs={breadcrumbItems} ogImage="/images/best-pve-dps-builds-division-resurgence.png" faqs={faqs}>
   <div class="container section">
     <Breadcrumbs items={breadcrumbItems} />
     <SectionTag label="Meta Ranking" />
