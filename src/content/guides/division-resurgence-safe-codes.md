@@ -1,9 +1,9 @@
 ---
-title: "Division Resurgence Safe Codes Master List (May 2026): Every Encrypted Crate Location, Code, and Reward"
+title: "Safe Codes Master List — Division Resurgence"
 category: "General"
 lastUpdated: 2026-05-28T12:00:00Z
 tags: ["safe-codes", "encrypted-crates", "collectibles", "cryptic-clues", "exploration", "commendations", "safe-locations", "division-resurgence-safes"]
-description: "Every confirmed encrypted crate code in The Division Resurgence, with on-screen verification, randomized crate notes, and the commendation rewards behind them."
+description: "Every confirmed Division Resurgence safe code with location, combination, and reward. On-screen verified, updated May 2026."
 author: "RapidF5"
 featuredImage: "/images/guides/division-resurgence-safe-codes-encrypted-crates-hero.jpg"
 imageAlt: "Division Resurgence encrypted crate safe codes master list showing all 21 confirmed locations and combinations for May 2026"

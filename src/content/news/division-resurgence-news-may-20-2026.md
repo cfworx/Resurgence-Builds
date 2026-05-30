@@ -1,10 +1,10 @@
 ---
-title: "Patch 1.2.1 Drops, Strawberry Milkshake Catches Heat, and Phase 3 Is Coming to Save Us All"
+title: "Patch 1.2.1, Milkshake Nerf, Phase 3 Coming"
 publishDate: "2026-05-20"
 author: "RapidF5"
 featuredImage: "/images/news/division-resurgence-patch-121-cover.webp"
 imageAlt: "Division Resurgence Patch 1.2.1 splash with Strawberry Milkshake exotic LMG"
-description: "Patch 1.2.1 is live , vendor fixes, inventory loss fixed, 500K Basic Credits and 750 Phoenix Credits incoming, and Ubisoft finally admits the Strawberry Milkshake perks are underwhelming. Phase 3 drops in June."
+description: "Patch 1.2.1 is live with vendor and inventory fixes. 500K Credits incoming. Ubisoft admits Strawberry Milkshake perks are underwhelming."
 tags: ["News", "Patch Notes", "Season 1", "Phase 2", "Strawberry Milkshake", "Dark Zone", "Roadmap"]
 shareTitle: "Spread the news"
 shareText: "Share this so your squad knows what changed, what's still broken, and why the Strawberry Milkshake buff can't come soon enough."

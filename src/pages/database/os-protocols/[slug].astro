@@ -13,8 +13,8 @@ export function getStaticPaths() {
 
 const { protocol } = Astro.props;
 
-const title = `${protocol.name} OS Protocol - Division Resurgence ${protocol.specialization} Protocol Stats & Talent`;
-const description = `${protocol.name} is a ${protocol.rarity} ${protocol.specialization} OS Protocol in Division Resurgence. Main stat: ${protocol.mainStat} ${protocol.mainValue}. Talent: ${protocol.talentDescription.substring(0, 120)}...`;
+const title = `${protocol.name} OS Protocol — Division Resurgence`;
+const description = `${protocol.name}: ${protocol.rarity} ${protocol.specialization} OS Protocol. ${protocol.mainStat} ${protocol.mainValue}. Talent and stats breakdown.`;
 
 const breadcrumbs = [
   { name: 'OS Protocols', url: '/database/os-protocols/' },
@@ -29,6 +29,25 @@ const rarityColor = protocol.rarity === 'High-End' ? '#F5CC45' :
                     protocol.rarity === 'Superior' ? '#a855f7' :
                     protocol.rarity === 'Specialized' ? '#3b82f6' : '#888';
 
+const specClass = protocol.specialization === 'Engineering' ? 'Demolitionist or Tech Operator' :
+                  protocol.specialization === 'Firepower' ? 'Vanguard' :
+                  protocol.specialization === 'Toughness' ? 'Bulwark or Field Medic' : 'any specialization';
+
+const faqs = [
+  {
+    question: `Is ${protocol.name} a good OS Protocol in Division Resurgence?`,
+    answer: `${protocol.name} is a ${protocol.rarity}-tier ${protocol.specialization} OS Protocol. Its talent "${protocol.talentDescription.substring(0, 150)}${protocol.talentDescription.length > 150 ? '...' : ''}" makes it strong for builds that stack ${protocol.specialization}. The main stat gives ${protocol.mainStat} ${protocol.mainValue}, with secondary bonuses of ${protocol.attr1} ${protocol.val1}, ${protocol.attr2} ${protocol.val2}, and ${protocol.attr3} ${protocol.val3}.`
+  },
+  {
+    question: `Which specialization uses ${protocol.name}?`,
+    answer: `${protocol.name} is a ${protocol.specialization} protocol, which means it pairs best with ${specClass} builds. Any build that stacks ${protocol.specialization} will benefit from the ${protocol.mainStat} ${protocol.mainValue} main stat and the talent bonus.`
+  },
+  {
+    question: `How do I get ${protocol.name} in Division Resurgence?`,
+    answer: `OS Protocols like ${protocol.name} drop from weekly bounties, Conflicts rewards, and endgame PvE activities. ${protocol.rarity === 'High-End' ? 'As a High-End protocol, it is one of the rarest drops — expect to farm weekly bounties for several cycles.' : protocol.rarity === 'Superior' ? 'As a Superior protocol, it drops fairly regularly from weekly bounties and endgame activities.' : 'As a Specialized protocol, it is a common drop from most endgame activities.'} Keep running weekly bounties for the best chance.`
+  }
+];
+
 const protocolLd = {
   '@context': 'https://schema.org',
   '@type': 'Thing',
@@ -39,7 +58,7 @@ const protocolLd = {
 };
 ---
 
-<BaseLayout title={title} description={description} breadcrumbs={breadcrumbs} jsonLd={protocolLd}>
+<BaseLayout title={title} description={description} breadcrumbs={breadcrumbs} jsonLd={protocolLd} faqs={faqs}>
   <div class="container section">
     <Breadcrumbs items={breadcrumbs} />
     <SectionTag label="OS Protocol" />

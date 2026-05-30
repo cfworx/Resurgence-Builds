@@ -1,10 +1,10 @@
 ---
-title: "Reddit This Week - 10 Posts That Made the Last 10 Days Worth It"
+title: "Reddit This Week — 10 Best Posts May 28"
 publishDate: "2026-05-28T21:00:00Z"
 author: "RapidF5"
 featuredImage: "/images/news/reddit-weekly-highlights-may-28-hero.jpg"
 imageAlt: "Division Resurgence Reddit weekly community highlights for late May 2026 featuring vendor fixes, compensation, and Dark Zone drama"
-description: "The 10 funniest Reddit posts from r/thedivisionresurgence over the last 10 days. The 500K comeback, the vendor that tapped out, NYC base janitor folklore, and the SWAT neck of shame."
+description: "10 funniest Reddit posts from r/thedivisionresurgence this week. 500K comeback, vendor rage, NYC janitor lore, and more."
 tags: ["Community", "Reddit", "Humor", "Weekly"]
 shareTitle: "Share the chaos"
 shareText: "The 10 funniest Reddit posts from the last 10 days of Division Resurgence. Your clan needs to see this."

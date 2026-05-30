@@ -16,15 +16,30 @@ export function getStaticPaths() {
 const { weapon } = Astro.props;
 
 const title = `${weapon.name} — Exotic ${weapon.type} | Division Resurgence`;
-const description = `${weapon.name} exotic ${weapon.type} stats, talent "${weapon.talentName}", and full breakdown for Division Resurgence.`;
+const description = `${weapon.name} exotic ${weapon.type}: ${weapon.damage} damage, ${weapon.rpm} RPM, talent "${weapon.talentName}". Full stats and build recommendations.`;
 
 const breadcrumbs = [
   { name: 'Exotic Weapons', url: '/database/exotic-weapons/' },
   { name: weapon.name, url: '#' }
 ];
+
+const faqs = [
+  {
+    question: `Is ${weapon.name} good in Division Resurgence?`,
+    answer: `${weapon.name} is an exotic ${weapon.type} with ${weapon.damage} damage and ${weapon.rpm} RPM. Its unique talent "${weapon.talentName}" — ${weapon.talentDescription.substring(0, 200)}${weapon.talentDescription.length > 200 ? '...' : ''} — makes it a strong pick for builds that capitalize on its exotic perk. Check the featured build section for a proven loadout.`
+  },
+  {
+    question: `What builds use ${weapon.name}?`,
+    answer: `${weapon.name} works best in builds that take advantage of its "${weapon.talentName}" talent. As a ${weapon.type}, it pairs well with specializations that stack the matching core stat. Look for gear sets and OS Protocols that amplify the weapon's exotic talent for maximum effect.`
+  },
+  {
+    question: `How do I get ${weapon.name} in Division Resurgence?`,
+    answer: `Exotic weapons like ${weapon.name} drop from the ${weapon.type} loot pool in endgame activities including Conflicts, Dark Zone, and Legendary missions. Exotic drop rates are low, so focus on running activities that reward ${weapon.type}s. Weekly bounties and targeted loot areas also have a chance.`
+  }
+];
 ---
 
-<BaseLayout {title} {description} {breadcrumbs}>
+<BaseLayout {title} {description} {breadcrumbs} faqs={faqs}>
   <div class="container section">
     <Breadcrumbs items={breadcrumbs} />
     <SectionTag label="Exotic Weapon" />

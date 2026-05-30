@@ -1,5 +1,5 @@
 ---
-title: "Demolitionist Glass Cannon Build — 333k DPS Fire Cycle T2"
+title: "Demolitionist Glass Cannon — 333k DPS Fire Cycle T2"
 specialization: "Demolitionist"
 subclass: "Glass Cannon"
 playstyle: DPS

@@ -1,9 +1,9 @@
 ---
-title: "Division Resurgence Error Codes (May 2026): Full List and How to Fix Every One"
+title: "All Error Codes — Division Resurgence 2026"
 category: "General"
 lastUpdated: 2026-05-28T12:00:00Z
 tags: ["error-codes", "troubleshooting", "network-error", "error-271581191", "error-6000010", "connection-error", "bug-fix", "division-resurgence-errors"]
-description: "Every Division Resurgence error code players have hit since launch and the fixes that actually work. Error 271581191, 6000010, Network Failure, stuck at 99%, audio bugs, and more. Updated as new codes appear."
+description: "Every Division Resurgence error code and its fix. Error 271581191, 6000010, Network Failure, stuck at 99%, and more. Updated May 2026."
 author: "RapidF5"
 featuredImage: "/images/guides/division-resurgence-error-codes-fix-guide-hero.jpg"
 imageAlt: "Division Resurgence error codes troubleshooting guide covering error 271581191, 6000010, network failure, and common fixes"

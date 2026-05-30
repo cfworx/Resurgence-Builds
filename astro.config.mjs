@@ -6,7 +6,7 @@ import rehypeExternalLinks from 'rehype-external-links';
 import rehypeCallouts from './scripts/rehype-callouts.mjs';
 import rehypeAdsense from './scripts/rehype-adsense.mjs';
 // Static fallback date — update this whenever you do a major site update
-const SITE_LAST_UPDATED = '2026-05-27';
+const SITE_LAST_UPDATED = '2026-05-30';
 
 export default defineConfig({
   site: 'https://resurgencebuilds.com',
@@ -84,7 +84,7 @@ export default defineConfig({
 
         // --- Class pages ---
         if (url.includes('/class/')) {
-          return { ...item, priority: 0.5, changefreq: 'monthly', lastmod: SITE_LAST_UPDATED };
+          return { ...item, priority: 0.8, changefreq: 'monthly', lastmod: SITE_LAST_UPDATED };
         }
 
         // --- Tag archive pages ---

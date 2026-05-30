@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import AdSenseUnit from '../components/AdSenseUnit.astro';
 import gearSets from '../data/gear-set-effects.json';
 import weaponTalents from '../data/weapon-talents.json';
 import exoticWeapons from '../data/exotic-weapons.json';
@@ -405,6 +406,8 @@ const dataPayload = JSON.stringify({ gearSets, weaponTalents, exoticWeapons, sta
 
 <script type="application/json" id="builder-data" is:inline set:html={dataPayload}></script>
 <script src="/js/builder-engine.js?v=4" is:inline defer></script>
+
+<AdSenseUnit />
 
 </BaseLayout>
 

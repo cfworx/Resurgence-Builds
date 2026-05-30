@@ -1,5 +1,5 @@
 ---
-title: "Division Resurgence Patch 1.1.2.2 Notes: GM Powers Briefly Exposed, Ubisoft Says Exploiters Will Be Banned"
+title: "Patch 1.1.2.2 Notes — Division Resurgence"
 version: "1.1.2.2"
 patchDate: "2026-05-29"
 author: "RapidF5"

@@ -39,6 +39,19 @@ const breadcrumbItems = [
   { name: parentLabel, url: parentPath },
   { name: title, url: '#' },
 ];
+
+const siteUrl = 'https://resurgencebuilds.com';
+
+// Speakable schema for AI voice assistants (Google Assistant, Alexa)
+const speakableLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  '@id': `${siteUrl}${Astro.url.pathname}#speakable`,
+  speakable: {
+    '@type': 'SpeakableSpecification',
+    cssSelector: ['.heading-accent', '.article-meta', '.prose > p:first-of-type'],
+  },
+};
 ---
 
 <BaseLayout
@@ -54,6 +67,7 @@ const breadcrumbItems = [
     tags,
   }}
   faqs={faqs}
+  jsonLd={speakableLd}
 >
   <div class="container section">
     <Breadcrumbs items={breadcrumbItems} />

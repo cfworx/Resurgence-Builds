@@ -1,5 +1,5 @@
 ---
-title: "Patch 1.2.1 Notes - Vendor Fixes, Inventory Fixes, and a Very Public Strawberry Milkshake Apology"
+title: "Patch 1.2.1 Notes — Division Resurgence"
 version: "1.2.1"
 patchDate: "2026-05-20"
 author: "RapidF5"

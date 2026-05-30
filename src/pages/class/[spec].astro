@@ -3,6 +3,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import BuildCard from '../../components/BuildCard.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import SectionTag from '../../components/SectionTag.astro';
+import AdSenseUnit from '../../components/AdSenseUnit.astro';
 import { getCollection } from 'astro:content';
 
 export async function getStaticPaths() {
@@ -86,14 +87,34 @@ const breadcrumbItems = [
   { name: classData.name, url: `/class/${classData.id}/` }
 ];
 
-const title = `Best ${classData.name} Builds - The Division Resurgence`;
-const description = `Discover the top ${classData.name} builds for PvE and PvP in The Division Resurgence. Master the ${classData.signature.name} signature skill and optimize your loadout.`;
+const title = `Best ${classData.name} Builds — Division Resurgence`;
+const description = `Top ${classData.name} builds for PvE and PvP in Division Resurgence. ${classData.role} loadouts with gear sets, talents, and OS Protocols.`;
+
+const faqs = [
+  {
+    question: `Is ${classData.name} good in Division Resurgence?`,
+    answer: classData.description
+  },
+  {
+    question: `What is the best ${classData.name} build?`,
+    answer: builds.length > 0
+      ? `The top-rated ${classData.name} build on Resurgence Builds is ${builds[0].data.title}. ${classData.perkOverview}`
+      : `${classData.name} builds focus on ${classData.role} playstyles. ${classData.perkOverview}`
+  },
+  {
+    question: `What gear sets work best for ${classData.name}?`,
+    answer: classData.perkOverview
+  }
+];
 ---
 
-<BaseLayout title={title} description={description} breadcrumbs={breadcrumbItems}>
+<BaseLayout title={title} description={description} breadcrumbs={breadcrumbItems} faqs={faqs} ogImage={builds.length > 0 && builds[0].data.featuredImage ? builds[0].data.featuredImage : '/images/best-pve-dps-builds-division-resurgence.png'}>
   <div class="container section">
     <Breadcrumbs items={breadcrumbItems} />
     <SectionTag label="Class Hub" />
+    <div style="display: flex; flex-wrap: wrap; align-items: center; gap: var(--sp-2); margin-bottom: var(--sp-4); font-size: var(--text-sm);">
+      <span style="display: inline-flex; align-items: center; gap: 4px; padding: 4px 10px; background: rgba(34,197,94,0.12); border: 1px solid rgba(34,197,94,0.3); border-radius: 4px; color: #22c55e; font-family: var(--font-mono); font-size: var(--text-xs); font-weight: 600; letter-spacing: 0.03em;">✓ Verified for Patch 1.2.1</span>
+    </div>
     
     <div style="margin-bottom: var(--sp-8); padding-bottom: var(--sp-6); border-bottom: 1px solid var(--border);">
       <div style="display: flex; align-items: baseline; gap: var(--sp-3); margin-bottom: var(--sp-2);">
@@ -148,5 +169,7 @@ const description = `Discover the top ${classData.name} builds for PvE and PvP i
         <p style="color: var(--ink-muted);">No builds have been published for this class yet. Check back soon!</p>
       </div>
     )}
+
+    <AdSenseUnit />
   </div>
 </BaseLayout>

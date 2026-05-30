@@ -1,5 +1,5 @@
 ---
-title: "Tech Aegis Engineering Build | 237k DPS Skill Crit | Tampishach"
+title: "Tech Aegis Build — 237k DPS Skill Crit"
 specialization: "Tech Operator"
 subclass: "Tech Aegis"
 playstyle: DPS
@@ -8,7 +8,7 @@ pvp: true
 lastUpdated: 2026-05-30T00:00:00Z
 patch: "Patch 1.1.2.2"
 tags: ["Tech Aegis", "Aegis Operations", "Long-term Effect", "Jackpot", "MPX", "Copperhead", "Engineering", "Tampishach", "Brains Over Brawn", "Skill Crit"]
-description: "Tampishach's verified Tech Aegis build for Division Resurgence. 237.52k DPS, 18.70k Power Score, 53% Skill Crit Chance, 113% Skill Crit Damage. 4pc Long-term Effect + 2pc Jackpot, Defender Drone, Mender Drone, Firefly, Brains Over Brawn OS Protocol. Full gear, talents, weapons, and loot routes."
+description: "Tampishach's Tech Aegis build: 237k DPS, 53% Skill Crit, 4pc Long-term Effect, Brains Over Brawn OS. Full gear, talents, and weapons."
 author: "RapidF5 (via Tampishach)"
 featuredImage: "/images/builds/tech-aegis-engineering-build-tampishach-hero.jpg"
 imageAlt: "Division Resurgence Tech Aegis Engineering build 237k DPS by Tampishach showing 18.70k Power Score with Long-term Effect and Jackpot gear"
