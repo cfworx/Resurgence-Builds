@@ -11,12 +11,13 @@ interface Props {
   subheading: string;
   jsonLd?: Record<string, unknown> | Record<string, unknown>[];
   lastVerified?: string;
+  faqs?: { question: string; answer: string }[];
 }
 
-const { title, description, breadcrumbs, heading, subheading, jsonLd, lastVerified } = Astro.props;
+const { title, description, breadcrumbs, heading, subheading, jsonLd, lastVerified, faqs } = Astro.props;
 ---
 
-<BaseLayout {title} {description} {breadcrumbs} {jsonLd}>
+<BaseLayout {title} {description} {breadcrumbs} {jsonLd} {faqs}>
   <div class="container section">
     <Breadcrumbs items={breadcrumbs} />
     <SectionTag label="Database" />

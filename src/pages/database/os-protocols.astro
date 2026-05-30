@@ -2,8 +2,8 @@
 import DatabaseLayout from '../../layouts/DatabaseLayout.astro';
 import osProtocols from '../../data/os-protocols.json';
 
-const title = "Division Resurgence OS Protocols Tier List & Specializations";
-const description = "Every OS Protocol in Division Resurgence. Pick the right one and your build sings. Pick the wrong one and you're carrying dead weight in every slot.";
+const title = "Division Resurgence OS Protocols Guide - Every Protocol, Best Picks Per Class, S to C Tier List";
+const description = "The complete Division Resurgence OS Protocols guide. All protocols across Engineering, Firepower, and Toughness specializations, with S/A/B/C tier list, best picks per class, and FAQ.";
 const breadcrumbs = [
   { name: 'OS Protocols', url: '/database/os-protocols/' }
 ];
@@ -35,6 +35,17 @@ const itemListLd = {
     }
   })),
 };
+
+const faqs = [
+  { question: "What is the best OS Protocol in Division Resurgence?", answer: "There is no single best OS Protocol because the answer depends on your class and build, but the strongest build-defining picks across the game are Explosive Charge (Engineering), Explosive Round (Firepower), and Pummeling Shield (Toughness). These three protocols anchor the highest-performing builds in each specialization at Patch 1.1.2.2." },
+  { question: "How do OS Protocols work in Division Resurgence?", answer: "OS Protocols are unique gear-talent items that slot into your Operating System loadout. Each protocol provides a main stat, three sub-stats (a specialization rating, a damage modifier, and a Health value), and a unique Talent that triggers under specific combat conditions. You can swap OS Protocols freely at any safe house or Base of Operations." },
+  { question: "Can you change OS Protocols mid-mission in Division Resurgence?", answer: "No. OS Protocols can only be swapped outside of combat, at a Base of Operations, safe house, or any non-combat area. Once you start a mission or enter the Dark Zone, your equipped protocol is locked in until you return to a safe location." },
+  { question: "What is the best OS Protocol for Vanguard?", answer: "Strategic Assistance (Engineering, High-End) is the strongest pick for Vanguard builds. The assist-based Signature Ability Charge Efficiency and Skill Cooldown reduction directly amplify the class's reliance on Tactical Link and Scanning Pulse uptime." },
+  { question: "What is the best OS Protocol for Field Medic?", answer: "Concerted Strike (Firepower, High-End) is the best pick for Field Medic builds. Skill hits within 20 meters grant +8% Damage stacks, which the class triggers constantly through Oxidizing Swarm and Support Station." },
+  { question: "What is the best OS Protocol for Bulwark?", answer: "Pummeling Shield (Toughness, High-End) is the defining protocol for Bulwark. The Stun proc on every 10 hits and the Extra Health regen on damage makes the class viable at Heroic difficulty." },
+  { question: "What is the best OS Protocol for Demolitionist?", answer: "Surgical Engineering (Engineering, High-End) is the strongest Demolitionist pick. The 60% chance of +16% Skill Critical Damage on Skill Crits scales with the class's natural skill crit chance from Artillery Turret and Explosive Seeker Mine." },
+  { question: "What is the best OS Protocol for Tech Operator?", answer: "Tactical Layering (Engineering, High-End) is the best Tech Operator pick. The +15% Engineering per skill deployment (up to 3 stacks) scales perfectly with Striker Drone uptime and skill rotation." },
+];
 ---
 
 <DatabaseLayout
@@ -44,8 +55,155 @@ const itemListLd = {
   heading="OS Protocols"
   subheading="Your OS Protocol is the backbone of your specialization. Pick the wrong one and your entire build underperforms. No pressure."
   jsonLd={itemListLd}
-  lastVerified="Patch 1.2.1"
+  lastVerified="Patch 1.1.2.2"
+  {faqs}
 >
+  <!-- Guide content -->
+  <div class="prose os-guide">
+
+    <p>OS Protocols are the single highest-leverage gear slot in the game. Every protocol carries a unique talent that can completely reshape your build, plus a main stat roll and three sub-stat rolls. There are <strong>41 distinct protocols across three specializations</strong>: Engineering, Firepower, and Toughness. This guide breaks down every single one, ranks them in a tier list, and tells you exactly which to chase for each of the five class archetypes.</p>
+
+    <p>If you just want the answer: scroll to the <a href="#tier-list">Tier List</a>, then jump to your <a href="#best-per-class">class section</a>. If you want the receipts, every protocol has its own anchor heading with full stats and a use-case recommendation below.</p>
+
+    <h2 id="what-is-an-os-protocol">What is an OS Protocol?</h2>
+
+    <p>An OS Protocol is a unique gear-talent item slotted into your Operating System loadout. Each protocol provides:</p>
+    <ul>
+      <li>One <strong>main stat</strong> (Engineering, Firepower, Toughness, or a specialized rating like Skill Intensity or Weapon Damage)</li>
+      <li>One <strong>specialization rating</strong> (Engineering, Firepower, or Toughness)</li>
+      <li>A <strong>secondary damage modifier</strong> (Skill Damage or All Weapon Damage)</li>
+      <li>A <strong>Health value</strong></li>
+      <li>A <strong>unique Talent</strong> that triggers under specific combat conditions</li>
+      <li>For active-effect protocols, a <strong>Cooldown</strong> in seconds</li>
+    </ul>
+
+    <p>Protocols come in four rarity tiers: <strong>High-End, Superior, Specialized, and Standard.</strong> High-End protocols carry the strongest talent effects and the highest stat rolls.</p>
+
+    <!-- ============================================ -->
+    <h2 id="tier-list">OS Protocol Tier List - Patch 1.1.2.2</h2>
+
+    <p>Tiers reflect overall build flexibility and damage ceiling, weighted across PvE Heroic Nests, Dark Zone, and Outpost content.</p>
+
+    <h3>S Tier - Build-Defining</h3>
+    <p>These protocols anchor the strongest builds in the game and slot into multiple class archetypes.</p>
+
+    <div class="tier-table-wrap">
+      <table>
+        <thead><tr><th>Protocol</th><th>Spec</th><th>Why S Tier</th></tr></thead>
+        <tbody>
+          <tr><td><a href="#explosive-charge">Explosive Charge</a></td><td>Engineering</td><td>Highest skill damage ceiling, AoE on every enhanced skill hit</td></tr>
+          <tr><td><a href="#explosive-round">Explosive Round</a></td><td>Firepower</td><td>Best raw weapon damage protocol, free AoE on crit headshots</td></tr>
+          <tr><td><a href="#pummeling-shield">Pummeling Shield</a></td><td>Toughness</td><td>Bulwark's defining protocol, stuns + extra health on demand</td></tr>
+          <tr><td><a href="#heavy-armor">Heavy Armor</a></td><td>Toughness</td><td>Damage bonus plus assist-triggered survivability</td></tr>
+          <tr><td><a href="#collateral-damage">Collateral Damage</a></td><td>Engineering</td><td>3000% engineering AoE on every skill hit</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>A Tier - Top-Tier Per Class</h3>
+    <p>Excellent within their specialization, often the second-best pick.</p>
+
+    <div class="tier-table-wrap">
+      <table>
+        <thead><tr><th>Protocol</th><th>Spec</th><th>Best For</th></tr></thead>
+        <tbody>
+          <tr><td><a href="#overwhelming-power">Overwhelming Power</a></td><td>Firepower</td><td>Sustained DPS, 50% damage reduction window</td></tr>
+          <tr><td><a href="#cover-shooter">Cover Shooter</a></td><td>Firepower</td><td>Cover-based DPS, marksman and rifle builds</td></tr>
+          <tr><td><a href="#assault-charge">Assault Charge</a></td><td>Firepower</td><td>Signature burst windows, Tech Operator and Vanguard</td></tr>
+          <tr><td><a href="#concerted-strike">Concerted Strike</a></td><td>Firepower</td><td>Skill-weapon hybrids, Field Medic</td></tr>
+          <tr><td><a href="#tactical-layering">Tactical Layering</a></td><td>Engineering</td><td>Engineering stacking, scaling skill builds</td></tr>
+          <tr><td><a href="#relentless-assault">Relentless Assault</a></td><td>Engineering</td><td>Sustained-fire skill builds, LMG hybrids</td></tr>
+          <tr><td><a href="#strategic-assistance">Strategic Assistance</a></td><td>Engineering</td><td>Signature charge generation, team play</td></tr>
+          <tr><td><a href="#surgical-engineering">Surgical Engineering</a></td><td>Engineering</td><td>Skill crit damage stacking, Demolitionist</td></tr>
+          <tr><td><a href="#happy-survival">Happy Survival</a></td><td>Toughness</td><td>Close-range, shotgun and SMG mains</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>B Tier - Solid Niche Picks</h3>
+    <p>Strong protocols with specific use cases. Wear them while hunting for A and S drops.</p>
+
+    <div class="tier-table-wrap">
+      <table>
+        <thead><tr><th>Protocol</th><th>Spec</th></tr></thead>
+        <tbody>
+          <tr><td><a href="#rampart">Rampart</a></td><td>Engineering</td></tr>
+          <tr><td><a href="#chain-reaction">Chain Reaction</a></td><td>Engineering</td></tr>
+          <tr><td><a href="#tactical-persistence">Tactical Persistence</a></td><td>Engineering</td></tr>
+          <tr><td><a href="#recursive-treatment">Recursive Treatment</a></td><td>Engineering</td></tr>
+          <tr><td><a href="#close-and-personal">Close and Personal</a></td><td>Engineering</td></tr>
+          <tr><td><a href="#ambusher">Ambusher</a></td><td>Engineering</td></tr>
+          <tr><td><a href="#cornered-animal">Cornered Animal</a></td><td>Engineering</td></tr>
+          <tr><td><a href="#tactical-pistolero">Tactical Pistolero</a></td><td>Firepower</td></tr>
+          <tr><td><a href="#tight-grouping">Tight Grouping</a></td><td>Firepower</td></tr>
+          <tr><td><a href="#pressure-cooker">Pressure Cooker</a></td><td>Firepower</td></tr>
+          <tr><td><a href="#trench-fighter">Trench Fighter</a></td><td>Firepower</td></tr>
+          <tr><td><a href="#mechanized-support">Mechanized Support</a></td><td>Firepower</td></tr>
+          <tr><td><a href="#combat-reload">Combat Reload</a></td><td>Firepower</td></tr>
+          <tr><td><a href="#death-from-afar">Death From Afar</a></td><td>Firepower</td></tr>
+          <tr><td><a href="#blitz-tactics">Blitz Tactics</a></td><td>Toughness</td></tr>
+          <tr><td><a href="#medical-excellence">Medical Excellence</a></td><td>Toughness</td></tr>
+          <tr><td><a href="#level-headed">Level-Headed</a></td><td>Toughness</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>C Tier - Specialized or Replaceable</h3>
+    <p>Functional but situational. Most C-tier protocols are Specialized or Standard rarity and get replaced as you progress. All Specialized and Standard tier protocols fall here unless explicitly listed above.</p>
+
+    <!-- ============================================ -->
+    <h2 id="best-per-class">Best OS Protocol Per Class</h2>
+
+    <p>Each class archetype has a defining playstyle. The protocol you pair with it should amplify that style, not fight it.</p>
+
+    <div class="class-picks">
+
+      <div class="class-pick-card">
+        <h3>Best OS Protocol for Vanguard</h3>
+        <div class="pick-primary"><strong>Primary:</strong> <a href="#strategic-assistance">Strategic Assistance</a> (Engineering, High-End)</div>
+        <p>Vanguards win through Tactical Link and Scanning Pulse uptime. Strategic Assistance grants +4.80% Signature Ability Charge Efficiency per assist (up to 5 stacks) plus Skill Cooldown reduction. For a class that lives on signature ability rotation, this is the highest-leverage protocol you can equip.</p>
+        <div class="pick-backup"><strong>Backup:</strong> <a href="#concerted-strike">Concerted Strike</a> for hybrid skill-weapon builds.</div>
+      </div>
+
+      <div class="class-pick-card">
+        <h3>Best OS Protocol for Field Medic</h3>
+        <div class="pick-primary"><strong>Primary:</strong> <a href="#concerted-strike">Concerted Strike</a> (Firepower, High-End)</div>
+        <p>Field Medics live in the overlap of healing skills and weapon damage. Concerted Strike triggers on skill hits within 20 meters, granting +8% Damage for 10 seconds up to 3 stacks. Pair this with Oxidizing Swarm and you keep the buff active every engagement.</p>
+        <div class="pick-backup"><strong>Backup:</strong> <a href="#medical-excellence">Medical Excellence</a> for pure support builds.</div>
+      </div>
+
+      <div class="class-pick-card">
+        <h3>Best OS Protocol for Bulwark</h3>
+        <div class="pick-primary"><strong>Primary:</strong> <a href="#pummeling-shield">Pummeling Shield</a> (Toughness, High-End)</div>
+        <p>The defining protocol for shield play. Stun every 10 hits while you have Extra Health, and the at-Max-Health trigger grants Extra Health equal to 2400% Firepower. This is what makes Bulwark viable solo at Heroic.</p>
+        <div class="pick-backup"><strong>Backup:</strong> <a href="#heavy-armor">Heavy Armor</a> for assist-stacking team play.</div>
+      </div>
+
+      <div class="class-pick-card">
+        <h3>Best OS Protocol for Demolitionist</h3>
+        <div class="pick-primary"><strong>Primary:</strong> <a href="#surgical-engineering">Surgical Engineering</a> (Engineering, High-End)</div>
+        <p>Demolitionists win through Artillery Turret and Explosive Seeker Mine crits. Surgical Engineering grants +16% Skill Critical Damage for 10 seconds on Skill Crits (60% chance, up to 3 stacks). Scales perfectly with the class's natural crit-heavy combos.</p>
+        <div class="pick-backup"><strong>Backup:</strong> <a href="#collateral-damage">Collateral Damage</a> for more raw AoE coverage.</div>
+      </div>
+
+      <div class="class-pick-card">
+        <h3>Best OS Protocol for Tech Operator</h3>
+        <div class="pick-primary"><strong>Primary:</strong> <a href="#tactical-layering">Tactical Layering</a> (Engineering, High-End)</div>
+        <p>Tech Operators stack Engineering through Striker Drone uptime and skill deployment. Tactical Layering grants +15% Engineering per skill deployment, up to 3 stacks. With Striker Drone redeploys and skill rotation, you keep this at 3 stacks during sustained fights.</p>
+        <div class="pick-backup"><strong>Backup:</strong> <a href="#assault-charge">Assault Charge</a> for Drone Overload burst builds.</div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Divider before the interactive grid -->
+  <hr style="margin: var(--sp-10) 0; border-color: rgba(255,255,255,0.08);" />
+
+  <h2 class="db-heading" style="font-size: var(--text-3xl);">Full Protocol Database</h2>
+  <p class="db-subheading">Every protocol, filterable by rarity and specialization. Click any card for full stats.</p>
+
+  <!-- Existing filters + grid -->
   <div class="db-filters">
     <div class="filter-group" id="filter-rarity">
       <span class="filter-label">Rarity:</span>
@@ -65,7 +223,7 @@ const itemListLd = {
 
   <div class="db-grid" id="protocols-grid">
     {osProtocols.map((protocol) => (
-      <article class={`db-card db-card--${protocol.rarity.toLowerCase().replace(' ', '-')}`} data-rarity={protocol.rarity} data-attr1={protocol.attr1}>
+      <article class={`db-card db-card--${protocol.rarity.toLowerCase().replace(' ', '-')}`} data-rarity={protocol.rarity} data-attr1={protocol.attr1} id={protocol.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')}>
         <div class="db-card__header">
           <div>
             <h2 class="db-card__title">{protocol.name}</h2>
@@ -113,7 +271,147 @@ const itemListLd = {
       </article>
     ))}
   </div>
+
+  <!-- Internal links -->
+  <div class="os-related" style="margin-top: var(--sp-10);">
+    <h2 class="db-heading" style="font-size: var(--text-2xl);">Related Guides</h2>
+    <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: var(--sp-2);">
+      <li><a href="/database/">Division Resurgence Build Database</a></li>
+      <li><a href="/patch-notes/patch-1-1-2-2/">Patch 1.1.2.2 Notes (May 29, 2026)</a></li>
+      <li><a href="/patch-notes/patch-1-2-1/">Patch 1.2.1 Notes (May 20, 2026)</a></li>
+      <li><a href="/build-planner/">Division Resurgence Build Planner</a></li>
+      <li><a href="/guides/division-resurgence-codes/">Division Resurgence Codes</a></li>
+    </ul>
+  </div>
+
 </DatabaseLayout>
+
+<style is:global>
+  /* OS Guide prose content */
+  .os-guide {
+    max-width: 80ch;
+    margin-bottom: var(--sp-8);
+  }
+  .os-guide h2 {
+    font-family: var(--font-heading);
+    font-size: var(--text-2xl);
+    font-weight: 800;
+    color: #fff;
+    margin: var(--sp-8) 0 var(--sp-4) 0;
+    padding-top: var(--sp-4);
+    border-top: 1px solid rgba(255,255,255,0.08);
+  }
+  .os-guide h2:first-of-type { border-top: none; padding-top: 0; }
+  .os-guide h3 {
+    font-family: var(--font-heading);
+    font-size: var(--text-lg);
+    font-weight: 700;
+    color: var(--accent);
+    margin: var(--sp-6) 0 var(--sp-3) 0;
+  }
+  .os-guide p {
+    color: #b8b8c0;
+    line-height: 1.7;
+    margin-bottom: var(--sp-4);
+  }
+  .os-guide ul {
+    color: #b8b8c0;
+    padding-left: var(--sp-6);
+    margin-bottom: var(--sp-4);
+    line-height: 1.7;
+  }
+  .os-guide a {
+    color: var(--accent);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+  .os-guide a:hover { color: #fff; }
+
+  /* Tier list tables */
+  .tier-table-wrap {
+    overflow-x: auto;
+    margin-bottom: var(--sp-6);
+    border-radius: 8px;
+    border: 1px solid rgba(255,255,255,0.08);
+  }
+  .tier-table-wrap table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: var(--text-sm);
+  }
+  .tier-table-wrap thead th {
+    font-family: var(--font-mono);
+    font-size: var(--text-xs);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--accent);
+    text-align: left;
+    padding: var(--sp-3) var(--sp-4);
+    background: rgba(242, 104, 34, 0.08);
+    border-bottom: 1px solid rgba(242, 104, 34, 0.2);
+  }
+  .tier-table-wrap tbody td {
+    padding: var(--sp-3) var(--sp-4);
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    color: #c8c8d0;
+  }
+  .tier-table-wrap tbody tr:hover td {
+    background: rgba(255,255,255,0.03);
+  }
+  .tier-table-wrap tbody td a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .tier-table-wrap tbody td a:hover {
+    text-decoration: underline;
+  }
+
+  /* Class pick cards */
+  .class-picks {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--sp-5);
+  }
+  @media (min-width: 768px) {
+    .class-picks { grid-template-columns: repeat(2, 1fr); }
+  }
+  .class-pick-card {
+    background: rgba(30,30,36,0.9);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 12px;
+    padding: var(--sp-6);
+  }
+  .class-pick-card h3 {
+    font-size: var(--text-base) !important;
+    margin-top: 0 !important;
+    margin-bottom: var(--sp-3) !important;
+    color: #fff !important;
+  }
+  .class-pick-card p {
+    font-size: var(--text-sm);
+    margin-bottom: var(--sp-3);
+  }
+  .pick-primary {
+    font-size: var(--text-sm);
+    color: var(--accent);
+    margin-bottom: var(--sp-3);
+    padding: var(--sp-2) var(--sp-3);
+    background: rgba(242,104,34,0.08);
+    border-radius: 6px;
+    border-left: 3px solid var(--accent);
+  }
+  .pick-primary a { color: #fff; font-weight: 700; }
+  .pick-backup {
+    font-size: var(--text-xs);
+    color: var(--ink-muted);
+    padding: var(--sp-2) var(--sp-3);
+    background: rgba(255,255,255,0.03);
+    border-radius: 6px;
+  }
+  .pick-backup a { color: var(--accent); }
+</style>
 
 <script>
   let currentRarity = 'all';
