@@ -649,5 +649,12 @@
     "specialization": "Bulwark",
     "bonus2": "Damage Reduction+[2.0%~4.0%]",
     "bonus3": "Shockwave Spike Mk.3 grants Damage Reduction and Weapon Critical Hit Chance while deployed. Damage Reduction +3.66%, Weapon Critical Hit Chance +4.16%."
+  },
+  {
+    "id": "smc-90",
+    "name": "Provocateur",
+    "specialization": "Bulwark",
+    "bonus2": "Weapon Damage+[2.0%~4.0%]",
+    "bonus3": "Enemies within 20 meter(s) focus the Agent in priority when deploying the Phalanx Shield. Grants +3.20% Damage Reduction for 10 second(s) for each enemy who is targeting the Agent, up to 5 stack(s)."
   }
 ]

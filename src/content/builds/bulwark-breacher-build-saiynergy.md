@@ -17,7 +17,7 @@ shareText: "334k DPS Breacher build that holds doorways and refuses to leave. Sa
 sources:
   - '<a href="https://www.youtube.com/watch?v=28lsRrnJ6Vg">Saiynergy, Full Breacher Walkthrough</a>, May 2026.'
   - 'In-game Division Resurgence Build Database, verified May 2026.'
-plannerHash: "s=Bulwark&sc=Breacher&n=Bulwark+Breacher+334k&ms=gs-1&m1=Headshot+Damage&m2=Weapon+Critical+Hit+Chance&cs=gs-1&ct=ba-25&c1=Weapon+Critical+Hit+Chance&c2=Skill+Critical+Chance&ps=gs-1&pt=bp-10&p1=Skill+Critical+Chance&p2=Weapon+Critical+Hit+Damage&gs=gs-1&g1=Weapon+Critical+Hit+Chance&g2=Weapon+Critical+Hit+Damage&hs=gs-3&h1=Weapon+Critical+Hit+Damage&h2=Headshot+Damage&ks=gs-3&k1=Weapon+Critical+Hit+Damage&k2=Headshot+Damage&w1s=sw-2&w1tr=T2&w1t=wt-25&w1t2=wt-9&w2s=sw-11&w2tr=T2&w2t=wt-57&w2t2=wt-1&os=os-45&sm1=smc-52&sm2=smc-89"
+plannerHash: "s=Bulwark&sc=Breacher&n=Bulwark+Breacher+334k&ms=gs-1&m1=Headshot+Damage&m2=Weapon+Critical+Hit+Chance&cs=gs-1&ct=ba-25&c1=Weapon+Critical+Hit+Chance&c2=Skill+Critical+Chance&ps=gs-1&pt=bp-10&p1=Skill+Critical+Chance&p2=Weapon+Critical+Hit+Damage&gs=gs-1&g1=Weapon+Critical+Hit+Chance&g2=Weapon+Critical+Hit+Damage&hs=gs-3&h1=Weapon+Critical+Hit+Damage&h2=Headshot+Damage&ks=gs-3&k1=Weapon+Critical+Hit+Damage&k2=Headshot+Damage&w1s=sw-2&w1tr=T2&w1t=wt-25&w1t2=wt-9&w2s=sw-11&w2tr=T2&w2t=wt-57&w2t2=wt-1&os=os-45&sm1=smc-52&sm2=smc-89&sm3=smc-90"
 videoId: "28lsRrnJ6Vg"
 videoTitle: "Saiynergy — Full Breacher Build Walkthrough"
 videoChannel: "Saiynergy"
@@ -57,7 +57,6 @@ This is a **Breacher shield build** that anchors a doorway and refuses to leave.
 | DPS | 334.07k |
 | Armor | 7,679 |
 | Power Score | 23.17k |
-| Level | 50 |
 | Class | Breacher |
 
 ---
@@ -94,6 +93,7 @@ This is a **Breacher shield build** that anchors a doorway and refuses to leave.
 
 | Skill | Firmware | Quality | Stats |
 |---|---|---|---|
+| Ballistic Shield | **Provocateur** (3pc) | - | Weapon Damage +2.0%~4.0%. Enemies within 20m focus the Agent when deploying Phalanx Shield. +3.20% DR per targeting enemy, up to 5 stacks |
 | Breach Combo | **Intimidation** (3pc) | Purple | Skill Duration +5.74%, Weapon Crit Hit Damage +6.80% |
 | Shockwave Spike Mk.3 | **Attritional Charge** (3pc) | High-End | Damage Reduction +3.66%, Weapon Crit Hit Chance +4.16% |
 
