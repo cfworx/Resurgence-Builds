@@ -79,123 +79,26 @@ const faqs = [
 
     <p>Protocols come in four rarity tiers: <strong>High-End, Superior, Specialized, and Standard.</strong> High-End protocols carry the strongest talent effects and the highest stat rolls.</p>
 
-    <!-- ============================================ -->
-    <h2 id="tier-list">OS Protocol Tier List - Patch 1.1.2.2</h2>
+    <!-- Tier List & Class Picks — now on their own page -->
+    <h2 id="tier-list">OS Protocol Tier List</h2>
 
-    <p>Tiers reflect overall build flexibility and damage ceiling, weighted across PvE Heroic Nests, Dark Zone, and Outpost content.</p>
-
-    <h3>S Tier - Build-Defining</h3>
-    <p>These protocols anchor the strongest builds in the game and slot into multiple class archetypes.</p>
-
-    <div class="tier-table-wrap">
-      <table>
-        <thead><tr><th>Protocol</th><th>Spec</th><th>Why S Tier</th></tr></thead>
-        <tbody>
-          <tr><td><a href="#explosive-charge">Explosive Charge</a></td><td>Engineering</td><td>Highest skill damage ceiling, AoE on every enhanced skill hit</td></tr>
-          <tr><td><a href="#explosive-round">Explosive Round</a></td><td>Firepower</td><td>Best raw weapon damage protocol, free AoE on crit headshots</td></tr>
-          <tr><td><a href="#pummeling-shield">Pummeling Shield</a></td><td>Toughness</td><td>Bulwark's defining protocol, stuns + extra health on demand</td></tr>
-          <tr><td><a href="#heavy-armor">Heavy Armor</a></td><td>Toughness</td><td>Damage bonus plus assist-triggered survivability</td></tr>
-          <tr><td><a href="#collateral-damage">Collateral Damage</a></td><td>Engineering</td><td>3000% engineering AoE on every skill hit</td></tr>
-        </tbody>
-      </table>
+    <div class="tier-link-card">
+      <div>
+        <h3 style="margin: 0 0 4px 0; font-size: var(--text-base); color: #fff;">S/A/B/C Tier Rankings</h3>
+        <p style="margin: 0; font-size: var(--text-sm); color: var(--ink-muted);">Every protocol ranked for Patch 1.1.2.2 with per-class best picks.</p>
+      </div>
+      <a href="/tier-list/os-protocols/" class="btn btn--primary" style="white-space: nowrap;">View Tier List &rarr;</a>
     </div>
 
-    <h3>A Tier - Top-Tier Per Class</h3>
-    <p>Excellent within their specialization, often the second-best pick.</p>
+    <h2 id="best-per-class">Best Protocol Per Class — Quick Reference</h2>
 
-    <div class="tier-table-wrap">
-      <table>
-        <thead><tr><th>Protocol</th><th>Spec</th><th>Best For</th></tr></thead>
-        <tbody>
-          <tr><td><a href="#overwhelming-power">Overwhelming Power</a></td><td>Firepower</td><td>Sustained DPS, 50% damage reduction window</td></tr>
-          <tr><td><a href="#cover-shooter">Cover Shooter</a></td><td>Firepower</td><td>Cover-based DPS, marksman and rifle builds</td></tr>
-          <tr><td><a href="#assault-charge">Assault Charge</a></td><td>Firepower</td><td>Signature burst windows, Tech Operator and Vanguard</td></tr>
-          <tr><td><a href="#concerted-strike">Concerted Strike</a></td><td>Firepower</td><td>Skill-weapon hybrids, Field Medic</td></tr>
-          <tr><td><a href="#tactical-layering">Tactical Layering</a></td><td>Engineering</td><td>Engineering stacking, scaling skill builds</td></tr>
-          <tr><td><a href="#relentless-assault">Relentless Assault</a></td><td>Engineering</td><td>Sustained-fire skill builds, LMG hybrids</td></tr>
-          <tr><td><a href="#strategic-assistance">Strategic Assistance</a></td><td>Engineering</td><td>Signature charge generation, team play</td></tr>
-          <tr><td><a href="#surgical-engineering">Surgical Engineering</a></td><td>Engineering</td><td>Skill crit damage stacking, Demolitionist</td></tr>
-          <tr><td><a href="#happy-survival">Happy Survival</a></td><td>Toughness</td><td>Close-range, shotgun and SMG mains</td></tr>
-        </tbody>
-      </table>
+    <div class="class-picks-compact">
+      <div class="qp"><span class="qp__class">Vanguard</span><a href="#strategic-assistance">Strategic Assistance</a><span class="qp__spec">Engineering</span></div>
+      <div class="qp"><span class="qp__class">Field Medic</span><a href="#concerted-strike">Concerted Strike</a><span class="qp__spec">Firepower</span></div>
+      <div class="qp"><span class="qp__class">Bulwark</span><a href="#pummeling-shield">Pummeling Shield</a><span class="qp__spec">Toughness</span></div>
+      <div class="qp"><span class="qp__class">Demolitionist</span><a href="#surgical-engineering">Surgical Engineering</a><span class="qp__spec">Engineering</span></div>
+      <div class="qp"><span class="qp__class">Tech Operator</span><a href="#tactical-layering">Tactical Layering</a><span class="qp__spec">Engineering</span></div>
     </div>
-
-    <h3>B Tier - Solid Niche Picks</h3>
-    <p>Strong protocols with specific use cases. Wear them while hunting for A and S drops.</p>
-
-    <div class="tier-table-wrap">
-      <table>
-        <thead><tr><th>Protocol</th><th>Spec</th></tr></thead>
-        <tbody>
-          <tr><td><a href="#rampart">Rampart</a></td><td>Engineering</td></tr>
-          <tr><td><a href="#chain-reaction">Chain Reaction</a></td><td>Engineering</td></tr>
-          <tr><td><a href="#tactical-persistence">Tactical Persistence</a></td><td>Engineering</td></tr>
-          <tr><td><a href="#recursive-treatment">Recursive Treatment</a></td><td>Engineering</td></tr>
-          <tr><td><a href="#close-and-personal">Close and Personal</a></td><td>Engineering</td></tr>
-          <tr><td><a href="#ambusher">Ambusher</a></td><td>Engineering</td></tr>
-          <tr><td><a href="#cornered-animal">Cornered Animal</a></td><td>Engineering</td></tr>
-          <tr><td><a href="#tactical-pistolero">Tactical Pistolero</a></td><td>Firepower</td></tr>
-          <tr><td><a href="#tight-grouping">Tight Grouping</a></td><td>Firepower</td></tr>
-          <tr><td><a href="#pressure-cooker">Pressure Cooker</a></td><td>Firepower</td></tr>
-          <tr><td><a href="#trench-fighter">Trench Fighter</a></td><td>Firepower</td></tr>
-          <tr><td><a href="#mechanized-support">Mechanized Support</a></td><td>Firepower</td></tr>
-          <tr><td><a href="#combat-reload">Combat Reload</a></td><td>Firepower</td></tr>
-          <tr><td><a href="#death-from-afar">Death From Afar</a></td><td>Firepower</td></tr>
-          <tr><td><a href="#blitz-tactics">Blitz Tactics</a></td><td>Toughness</td></tr>
-          <tr><td><a href="#medical-excellence">Medical Excellence</a></td><td>Toughness</td></tr>
-          <tr><td><a href="#level-headed">Level-Headed</a></td><td>Toughness</td></tr>
-        </tbody>
-      </table>
-    </div>
-
-    <h3>C Tier - Specialized or Replaceable</h3>
-    <p>Functional but situational. Most C-tier protocols are Specialized or Standard rarity and get replaced as you progress. All Specialized and Standard tier protocols fall here unless explicitly listed above.</p>
-
-    <!-- ============================================ -->
-    <h2 id="best-per-class">Best OS Protocol Per Class</h2>
-
-    <p>Each class archetype has a defining playstyle. The protocol you pair with it should amplify that style, not fight it.</p>
-
-    <div class="class-picks">
-
-      <div class="class-pick-card">
-        <h3>Best OS Protocol for Vanguard</h3>
-        <div class="pick-primary"><strong>Primary:</strong> <a href="#strategic-assistance">Strategic Assistance</a> (Engineering, High-End)</div>
-        <p>Vanguards win through Tactical Link and Scanning Pulse uptime. Strategic Assistance grants +4.80% Signature Ability Charge Efficiency per assist (up to 5 stacks) plus Skill Cooldown reduction. For a class that lives on signature ability rotation, this is the highest-leverage protocol you can equip.</p>
-        <div class="pick-backup"><strong>Backup:</strong> <a href="#concerted-strike">Concerted Strike</a> for hybrid skill-weapon builds.</div>
-      </div>
-
-      <div class="class-pick-card">
-        <h3>Best OS Protocol for Field Medic</h3>
-        <div class="pick-primary"><strong>Primary:</strong> <a href="#concerted-strike">Concerted Strike</a> (Firepower, High-End)</div>
-        <p>Field Medics live in the overlap of healing skills and weapon damage. Concerted Strike triggers on skill hits within 20 meters, granting +8% Damage for 10 seconds up to 3 stacks. Pair this with Oxidizing Swarm and you keep the buff active every engagement.</p>
-        <div class="pick-backup"><strong>Backup:</strong> <a href="#medical-excellence">Medical Excellence</a> for pure support builds.</div>
-      </div>
-
-      <div class="class-pick-card">
-        <h3>Best OS Protocol for Bulwark</h3>
-        <div class="pick-primary"><strong>Primary:</strong> <a href="#pummeling-shield">Pummeling Shield</a> (Toughness, High-End)</div>
-        <p>The defining protocol for shield play. Stun every 10 hits while you have Extra Health, and the at-Max-Health trigger grants Extra Health equal to 2400% Firepower. This is what makes Bulwark viable solo at Heroic.</p>
-        <div class="pick-backup"><strong>Backup:</strong> <a href="#heavy-armor">Heavy Armor</a> for assist-stacking team play.</div>
-      </div>
-
-      <div class="class-pick-card">
-        <h3>Best OS Protocol for Demolitionist</h3>
-        <div class="pick-primary"><strong>Primary:</strong> <a href="#surgical-engineering">Surgical Engineering</a> (Engineering, High-End)</div>
-        <p>Demolitionists win through Artillery Turret and Explosive Seeker Mine crits. Surgical Engineering grants +16% Skill Critical Damage for 10 seconds on Skill Crits (60% chance, up to 3 stacks). Scales perfectly with the class's natural crit-heavy combos.</p>
-        <div class="pick-backup"><strong>Backup:</strong> <a href="#collateral-damage">Collateral Damage</a> for more raw AoE coverage.</div>
-      </div>
-
-      <div class="class-pick-card">
-        <h3>Best OS Protocol for Tech Operator</h3>
-        <div class="pick-primary"><strong>Primary:</strong> <a href="#tactical-layering">Tactical Layering</a> (Engineering, High-End)</div>
-        <p>Tech Operators stack Engineering through Striker Drone uptime and skill deployment. Tactical Layering grants +15% Engineering per skill deployment, up to 3 stacks. With Striker Drone redeploys and skill rotation, you keep this at 3 stacks during sustained fights.</p>
-        <div class="pick-backup"><strong>Backup:</strong> <a href="#assault-charge">Assault Charge</a> for Drone Overload burst builds.</div>
-      </div>
-
-    </div>
-
-  </div>
 
   <!-- Divider before the interactive grid -->
   <hr style="margin: var(--sp-10) 0; border-color: rgba(255,255,255,0.08);" />

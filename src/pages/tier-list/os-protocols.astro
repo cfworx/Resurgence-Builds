@@ -1,0 +1,395 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import SectionTag from '../../components/SectionTag.astro';
+
+const breadcrumbItems = [{ name: 'OS Protocol Tier List', url: '/tier-list/os-protocols/' }];
+
+const title = "Division Resurgence OS Protocol Tier List - S to C Ranked for Patch 1.1.2.2";
+const description = "The definitive OS Protocol tier list for Division Resurgence. Every protocol ranked S to C for PvE, Dark Zone, and Outpost content. Best picks per class included.";
+
+// S Tier
+const sTier = [
+  { name: 'Explosive Charge', spec: 'Engineering', rarity: 'High-End', note: 'Highest skill damage ceiling, AoE on every enhanced skill hit' },
+  { name: 'Explosive Round', spec: 'Firepower', rarity: 'High-End', note: 'Best raw weapon damage protocol, free AoE on crit headshots' },
+  { name: 'Pummeling Shield', spec: 'Toughness', rarity: 'High-End', note: "Bulwark's defining protocol, stuns + extra health on demand" },
+  { name: 'Heavy Armor', spec: 'Toughness', rarity: 'High-End', note: 'Damage bonus plus assist-triggered survivability' },
+  { name: 'Collateral Damage', spec: 'Engineering', rarity: 'High-End', note: '3000% engineering AoE on every skill hit' },
+];
+
+// A Tier
+const aTier = [
+  { name: 'Overwhelming Power', spec: 'Firepower', rarity: 'High-End', note: 'Sustained DPS, 50% damage reduction window' },
+  { name: 'Cover Shooter', spec: 'Firepower', rarity: 'High-End', note: 'Cover-based DPS, marksman and rifle builds' },
+  { name: 'Assault Charge', spec: 'Firepower', rarity: 'High-End', note: 'Signature burst windows, Tech Operator and Vanguard' },
+  { name: 'Concerted Strike', spec: 'Firepower', rarity: 'High-End', note: 'Skill-weapon hybrids, Field Medic damage' },
+  { name: 'Tactical Layering', spec: 'Engineering', rarity: 'High-End', note: 'Engineering stacking, scaling skill builds' },
+  { name: 'Relentless Assault', spec: 'Engineering', rarity: 'High-End', note: 'Sustained-fire skill builds, LMG hybrids' },
+  { name: 'Strategic Assistance', spec: 'Engineering', rarity: 'High-End', note: 'Signature charge generation, team play' },
+  { name: 'Surgical Engineering', spec: 'Engineering', rarity: 'High-End', note: 'Skill crit damage stacking, Demolitionist' },
+  { name: 'Happy Survival', spec: 'Toughness', rarity: 'High-End', note: 'Close-range, shotgun and SMG mains' },
+];
+
+// B Tier
+const bTier = [
+  { name: 'Rampart', spec: 'Engineering', rarity: 'High-End' },
+  { name: 'Chain Reaction', spec: 'Engineering', rarity: 'Superior' },
+  { name: 'Tactical Persistence', spec: 'Engineering', rarity: 'Superior' },
+  { name: 'Recursive Treatment', spec: 'Engineering', rarity: 'Superior' },
+  { name: 'Close and Personal', spec: 'Engineering', rarity: 'Superior' },
+  { name: 'Ambusher', spec: 'Engineering', rarity: 'Superior' },
+  { name: 'Cornered Animal', spec: 'Engineering', rarity: 'Superior' },
+  { name: 'Tactical Pistolero', spec: 'Firepower', rarity: 'Superior' },
+  { name: 'Tight Grouping', spec: 'Firepower', rarity: 'Superior' },
+  { name: 'Pressure Cooker', spec: 'Firepower', rarity: 'Superior' },
+  { name: 'Trench Fighter', spec: 'Firepower', rarity: 'Superior' },
+  { name: 'Mechanized Support', spec: 'Firepower', rarity: 'Superior' },
+  { name: 'Combat Reload', spec: 'Firepower', rarity: 'Superior' },
+  { name: 'Death From Afar', spec: 'Firepower', rarity: 'Superior' },
+  { name: 'Blitz Tactics', spec: 'Toughness', rarity: 'Superior' },
+  { name: 'Medical Excellence', spec: 'Toughness', rarity: 'Superior' },
+  { name: 'Level-Headed', spec: 'Toughness', rarity: 'Superior' },
+];
+
+// C Tier
+const cTier = [
+  { name: 'Chase the Weak', spec: 'Engineering', rarity: 'Superior' },
+  { name: 'Together We Stand', spec: 'Engineering', rarity: 'Superior' },
+  { name: 'Pressing Matter', spec: 'Engineering', rarity: 'Superior' },
+  { name: 'Assisted Infantry', spec: 'Firepower', rarity: 'Superior' },
+  { name: 'Dominating Presence', spec: 'Firepower', rarity: 'Superior' },
+  { name: 'Augmented Lethality', spec: 'Firepower', rarity: 'Superior' },
+  { name: 'Deadly Accuracy', spec: 'Firepower', rarity: 'Superior' },
+  { name: 'Close Quarters Menace', spec: 'Firepower', rarity: 'Superior' },
+  { name: 'Last Resort', spec: 'Toughness', rarity: 'Superior' },
+  { name: 'Rocket Science', spec: 'Engineering', rarity: 'Specialized' },
+  { name: 'Applied Demolition', spec: 'Engineering', rarity: 'Specialized' },
+  { name: 'Hardware Upgrade', spec: 'Engineering', rarity: 'Specialized' },
+  { name: 'Brains Over Brawn', spec: 'Engineering', rarity: 'Specialized' },
+  { name: 'Running Around', spec: 'Engineering', rarity: 'Specialized' },
+  { name: 'Long-Range Artillery', spec: 'Engineering', rarity: 'Specialized' },
+  { name: 'Hunting Season', spec: 'Firepower', rarity: 'Specialized' },
+  { name: 'Side by Side', spec: 'Firepower', rarity: 'Specialized' },
+  { name: 'Suppressive Fire', spec: 'Firepower', rarity: 'Specialized' },
+  { name: 'Resentful', spec: 'Firepower', rarity: 'Specialized' },
+  { name: 'Face-to-Face Advantage', spec: 'Firepower', rarity: 'Specialized' },
+  { name: 'Caretaker', spec: 'Toughness', rarity: 'Specialized' },
+  { name: 'Enduring', spec: 'Toughness', rarity: 'Specialized' },
+  { name: 'Steadfast', spec: 'Toughness', rarity: 'Specialized' },
+  { name: 'Overclocking', spec: 'Engineering', rarity: 'Standard' },
+  { name: 'Energizer', spec: 'Engineering', rarity: 'Standard' },
+  { name: 'Combat Doc', spec: 'Engineering', rarity: 'Standard' },
+  { name: 'Genius Engineer', spec: 'Engineering', rarity: 'Standard' },
+  { name: 'Inspiration', spec: 'Engineering', rarity: 'Standard' },
+  { name: 'Hermit', spec: 'Engineering', rarity: 'Standard' },
+  { name: 'War Machine', spec: 'Firepower', rarity: 'Standard' },
+  { name: 'Seasoned Veteran', spec: 'Firepower', rarity: 'Standard' },
+  { name: "Spray 'n' Pray", spec: 'Firepower', rarity: 'Standard' },
+  { name: 'Plate Carrier', spec: 'Toughness', rarity: 'Standard' },
+  { name: 'Layered Defense', spec: 'Toughness', rarity: 'Standard' },
+  { name: 'Physical Training', spec: 'Toughness', rarity: 'Standard' },
+];
+
+const specColor = (spec: string) => {
+  if (spec === 'Engineering') return '#F5CC45';
+  if (spec === 'Firepower') return '#F26822';
+  if (spec === 'Toughness') return '#3a7bd5';
+  return 'var(--ink-muted)';
+};
+
+const faqs = [
+  { question: "What is the best OS Protocol in Division Resurgence?", answer: "The strongest build-defining protocols are Explosive Charge (Engineering), Explosive Round (Firepower), and Pummeling Shield (Toughness). These three anchor the highest-performing builds in each specialization at Patch 1.1.2.2." },
+  { question: "How do OS Protocols work in Division Resurgence?", answer: "OS Protocols are unique gear-talent items that slot into your Operating System loadout. Each provides a main stat, three sub-stats, and a unique Talent that triggers under specific combat conditions. You can swap them freely at any safe house." },
+  { question: "Can you change OS Protocols mid-mission?", answer: "No. OS Protocols can only be swapped outside of combat, at a Base of Operations, safe house, or any non-combat area. Plan your protocol for the encounter you're about to enter." },
+  { question: "What is the best OS Protocol for Vanguard?", answer: "Strategic Assistance (Engineering, High-End). The assist-based Signature Ability Charge Efficiency and Skill Cooldown reduction directly amplify the class's reliance on Tactical Link and Scanning Pulse uptime." },
+  { question: "What is the best OS Protocol for Field Medic?", answer: "Concerted Strike (Firepower, High-End). Skill hits within 20 meters grant +8% Damage stacks, which the class triggers constantly through Oxidizing Swarm and Support Station." },
+  { question: "What is the best OS Protocol for Bulwark?", answer: "Pummeling Shield (Toughness, High-End). The Stun proc on every 10 hits and the Extra Health regen on damage makes the class viable at Heroic difficulty." },
+  { question: "What is the best OS Protocol for Demolitionist?", answer: "Surgical Engineering (Engineering, High-End). The 60% chance of +16% Skill Critical Damage on Skill Crits scales perfectly with the class's natural skill crit chance." },
+  { question: "What is the best OS Protocol for Tech Operator?", answer: "Tactical Layering (Engineering, High-End). +15% Engineering per skill deployment (up to 3 stacks) scales perfectly with Striker Drone uptime and skill rotation." },
+];
+---
+
+<BaseLayout title={title} description={description} breadcrumbs={breadcrumbItems} faqs={faqs}>
+  <div class="container section">
+    <Breadcrumbs items={breadcrumbItems} />
+    <SectionTag label="Meta Ranking" />
+    <h1 class="heading-accent">OS Protocol Tier List</h1>
+    <p style="color:var(--ink-muted);margin-bottom:var(--sp-3); max-width: 800px;">
+      Every OS Protocol ranked for Patch 1.1.2.2. <strong>S-Tier</strong> protocols define the meta and slot into multiple builds. <strong>A-Tier</strong> protocols are the best-in-slot for their class. <strong>B-Tier</strong> protocols are strong niche picks you use while hunting for your S or A drop. <strong>C-Tier</strong> protocols get replaced as you gear up.
+    </p>
+
+    <div style="display: inline-flex; align-items: center; gap: 6px; font-family: var(--font-mono); font-size: var(--text-xs); color: #6DAA45; background: rgba(109, 170, 69, 0.1); border: 1px solid rgba(109, 170, 69, 0.25); padding: 6px 14px; border-radius: 999px; margin-bottom: var(--sp-6); letter-spacing: 0.02em;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+      <span>Last verified for <strong>Patch 1.1.2.2</strong></span>
+    </div>
+
+    <!-- Best per class quick links -->
+    <div class="class-quick-picks">
+      <h2 style="font-size: var(--text-lg); margin-bottom: var(--sp-4);">Best Protocol Per Class</h2>
+      <div class="quick-picks-grid">
+        <div class="quick-pick"><span class="quick-pick__class">Vanguard</span><a href="/database/os-protocols/#strategic-assistance">Strategic Assistance</a></div>
+        <div class="quick-pick"><span class="quick-pick__class">Field Medic</span><a href="/database/os-protocols/#concerted-strike">Concerted Strike</a></div>
+        <div class="quick-pick"><span class="quick-pick__class">Bulwark</span><a href="/database/os-protocols/#pummeling-shield">Pummeling Shield</a></div>
+        <div class="quick-pick"><span class="quick-pick__class">Demolitionist</span><a href="/database/os-protocols/#surgical-engineering">Surgical Engineering</a></div>
+        <div class="quick-pick"><span class="quick-pick__class">Tech Operator</span><a href="/database/os-protocols/#tactical-layering">Tactical Layering</a></div>
+      </div>
+    </div>
+
+    <!-- TIER LIST -->
+    <div class="tier-list">
+      
+      <!-- S-TIER -->
+      <div class="tier-row">
+        <div class="tier-label tier-s">S</div>
+        <div class="tier-content">
+          <div class="tier-grid">
+            {sTier.map(p => (
+              <a href={`/database/os-protocols/#${p.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')}`} class="tier-card">
+                <div class="tier-card__spec-dot" style={`background: ${specColor(p.spec)};`}></div>
+                <div class="tier-card__info">
+                  <h4>{p.name}</h4>
+                  <span class="tier-card__spec">{p.spec} · {p.rarity}</span>
+                  {p.note && <span class="tier-card__note">{p.note}</span>}
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      <!-- A-TIER -->
+      <div class="tier-row">
+        <div class="tier-label tier-a">A</div>
+        <div class="tier-content">
+          <div class="tier-grid">
+            {aTier.map(p => (
+              <a href={`/database/os-protocols/#${p.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')}`} class="tier-card">
+                <div class="tier-card__spec-dot" style={`background: ${specColor(p.spec)};`}></div>
+                <div class="tier-card__info">
+                  <h4>{p.name}</h4>
+                  <span class="tier-card__spec">{p.spec} · {p.rarity}</span>
+                  {p.note && <span class="tier-card__note">{p.note}</span>}
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      <!-- B-TIER -->
+      <div class="tier-row">
+        <div class="tier-label tier-b">B</div>
+        <div class="tier-content">
+          <div class="tier-grid">
+            {bTier.map(p => (
+              <a href={`/database/os-protocols/#${p.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')}`} class="tier-card">
+                <div class="tier-card__spec-dot" style={`background: ${specColor(p.spec)};`}></div>
+                <div class="tier-card__info">
+                  <h4>{p.name}</h4>
+                  <span class="tier-card__spec">{p.spec} · {p.rarity}</span>
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      <!-- C-TIER -->
+      <div class="tier-row">
+        <div class="tier-label tier-c">C</div>
+        <div class="tier-content">
+          <div class="tier-grid">
+            {cTier.map(p => (
+              <a href={`/database/os-protocols/#${p.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')}`} class="tier-card">
+                <div class="tier-card__spec-dot" style={`background: ${specColor(p.spec)};`}></div>
+                <div class="tier-card__info">
+                  <h4>{p.name}</h4>
+                  <span class="tier-card__spec">{p.spec} · {p.rarity}</span>
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- FAQ -->
+    <div class="faq-section" style="margin-top: var(--sp-8);">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-list" style="display: flex; flex-direction: column; gap: var(--sp-2);">
+        {faqs.map(faq => (
+          <details class="faq-item">
+            <summary class="faq-question">{faq.question}</summary>
+            <p class="faq-answer">{faq.answer}</p>
+          </details>
+        ))}
+      </div>
+    </div>
+
+    <!-- Related -->
+    <div style="margin-top: var(--sp-8); padding-top: var(--sp-6); border-top: 1px solid rgba(255,255,255,0.08);">
+      <p style="color: var(--ink-muted); font-size: var(--text-sm);">
+        Full stats, talents, and per-class build recommendations are in the <a href="/database/os-protocols/" style="color: var(--accent);">OS Protocols Database</a>. See also: <a href="/tier-list/" style="color: var(--accent);">Build Tier List</a>
+      </p>
+    </div>
+
+  </div>
+</BaseLayout>
+
+<style>
+  .tier-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--sp-4);
+    background: rgba(0,0,0,0.2);
+    padding: var(--sp-4);
+    border-radius: var(--border-radius);
+    border: 1px solid var(--border);
+  }
+
+  .tier-row {
+    display: flex;
+    flex-direction: column;
+    background: var(--surface);
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    overflow: hidden;
+  }
+
+  @media (min-width: 768px) {
+    .tier-row {
+      flex-direction: row;
+    }
+  }
+
+  .tier-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-heading);
+    font-size: 3rem;
+    font-weight: 800;
+    color: #1a1a20;
+    min-width: 100px;
+    padding: var(--sp-4);
+    text-shadow: 0 1px 2px rgba(255,255,255,0.2);
+  }
+
+  .tier-s { background: linear-gradient(135deg, #ff7b00, #ff5100); }
+  .tier-a { background: linear-gradient(135deg, #00d2ff, #3a7bd5); }
+  .tier-b { background: linear-gradient(135deg, #28a745, #20c997); }
+  .tier-c { background: linear-gradient(135deg, #6c757d, #adb5bd); }
+
+  .tier-content {
+    flex: 1;
+    padding: var(--sp-3);
+    background: rgba(0,0,0,0.15);
+  }
+
+  .tier-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: var(--sp-2);
+  }
+
+  .tier-card {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--sp-2);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 8px 10px;
+    text-decoration: none;
+    transition: all 0.2s;
+  }
+
+  .tier-card:hover {
+    border-color: var(--accent);
+    background: rgba(255,255,255,0.05);
+    transform: translateY(-2px);
+  }
+
+  .tier-card__spec-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    margin-top: 5px;
+  }
+
+  .tier-card__info h4 {
+    color: var(--ink);
+    font-size: 13px;
+    margin: 0 0 2px 0;
+    line-height: 1.2;
+  }
+
+  .tier-card__spec {
+    font-family: var(--font-mono);
+    font-size: 9px;
+    color: var(--ink-muted);
+    text-transform: uppercase;
+  }
+
+  .tier-card__note {
+    display: block;
+    font-size: 11px;
+    color: var(--ink-muted);
+    line-height: 1.3;
+    margin-top: 3px;
+  }
+
+  .tier-empty {
+    color: var(--ink-muted);
+    font-style: italic;
+    padding: var(--sp-2);
+    font-size: var(--text-sm);
+  }
+
+  /* Quick picks */
+  .class-quick-picks {
+    margin-bottom: var(--sp-6);
+    padding: var(--sp-5);
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.07);
+    border-radius: 10px;
+  }
+
+  .quick-picks-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: var(--sp-2);
+  }
+
+  .quick-pick {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding: var(--sp-3);
+    background: rgba(0,0,0,0.2);
+    border-radius: 6px;
+    border: 1px solid rgba(255,255,255,0.05);
+  }
+
+  .quick-pick__class {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--ink-muted);
+  }
+
+  .quick-pick a {
+    color: var(--accent);
+    font-weight: 600;
+    font-size: var(--text-sm);
+    text-decoration: none;
+  }
+
+  .quick-pick a:hover {
+    text-decoration: underline;
+  }
+</style>

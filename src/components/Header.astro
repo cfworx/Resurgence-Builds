@@ -4,7 +4,14 @@ import SearchModal from './SearchModal.astro';
 const pathname = Astro.url.pathname;
 const navItems = [
   { label: 'Home', href: '/' },
-  { label: 'Tier List', href: '/tier-list/' },
+  { 
+    label: 'Tier Lists', 
+    href: '#',
+    children: [
+      { label: 'Build Tier List', href: '/tier-list/' },
+      { label: 'OS Protocol Tier List', href: '/tier-list/os-protocols/' },
+    ]
+  },
   { label: 'Builds', href: '/builds/' },
   { label: 'Guides', href: '/guides/' },
   { label: 'Build Planner', href: '/builder/' },
