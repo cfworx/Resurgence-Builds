@@ -128,7 +128,7 @@
 
       const popupMaxW = isMobile ? 160 : 220;
       const marker = L.marker(rc.unproject([poi.x, poi.y]), { icon });
-      marker.bindPopup(() => buildPopup(poi, cat), { maxWidth: popupMaxW, minWidth: 120, autoPanPadding: [10, 10] });
+      marker.bindPopup(() => buildPopup(poi, cat), { maxWidth: popupMaxW, minWidth: 120, autoPan: false });
       marker.bindTooltip(poi.name, { direction: 'top', offset: [0, -(halfDot)], className: 'map-tooltip' });
       marker.poi = poi;
       marker.poiCat = cat;
