@@ -10,69 +10,69 @@ const description = "The definitive OS Protocol tier list for Division Resurgenc
 
 // S Tier
 const sTier = [
-  { name: 'Explosive Charge', spec: 'Engineering', rarity: 'High-End', note: 'Highest skill damage ceiling, AoE on every enhanced skill hit' },
   { name: 'Explosive Round', spec: 'Firepower', rarity: 'High-End', note: 'Best raw weapon damage protocol, free AoE on crit headshots' },
+  { name: 'Explosive Charge', spec: 'Engineering', rarity: 'High-End', note: 'Highest skill damage ceiling, AoE on every enhanced skill hit' },
   { name: 'Pummeling Shield', spec: 'Toughness', rarity: 'High-End', note: "Bulwark's defining protocol, stuns + extra health on demand" },
-  { name: 'Heavy Armor', spec: 'Toughness', rarity: 'High-End', note: 'Damage bonus plus assist-triggered survivability' },
-  { name: 'Collateral Damage', spec: 'Engineering', rarity: 'High-End', note: '3000% engineering AoE on every skill hit' },
+  { name: 'Collateral Damage', spec: 'Engineering', rarity: 'High-End', note: '3000% engineering AoE on every skill hit, no condition required' },
+  { name: 'Heavy Armor', spec: 'Toughness', rarity: 'High-End', note: '+14.4% Damage while Extra Health is up, assist-triggered survivability' },
 ];
 
 // A Tier
 const aTier = [
+  { name: 'Concerted Strike', spec: 'Firepower', rarity: 'High-End', note: '+24% Damage at 3 stacks, 100% proc rate. Meta drone build cornerstone.' },
+  { name: 'Surgical Engineering', spec: 'Engineering', rarity: 'High-End', note: 'Skill crit damage stacking, Demolitionist' },
+  { name: 'Tactical Layering', spec: 'Engineering', rarity: 'High-End', note: 'Engineering stacking, most reliable scaling skill builds' },
+  { name: 'Strategic Assistance', spec: 'Engineering', rarity: 'High-End', note: 'Signature charge generation, Vanguard team play' },
   { name: 'Overwhelming Power', spec: 'Firepower', rarity: 'High-End', note: 'Sustained DPS, 50% damage reduction window' },
   { name: 'Cover Shooter', spec: 'Firepower', rarity: 'High-End', note: 'Cover-based DPS, marksman and rifle builds' },
   { name: 'Assault Charge', spec: 'Firepower', rarity: 'High-End', note: 'Signature burst windows, Tech Operator and Vanguard' },
-  { name: 'Concerted Strike', spec: 'Firepower', rarity: 'High-End', note: 'Skill-weapon hybrids, Field Medic damage' },
-  { name: 'Tactical Layering', spec: 'Engineering', rarity: 'High-End', note: 'Engineering stacking, scaling skill builds' },
   { name: 'Relentless Assault', spec: 'Engineering', rarity: 'High-End', note: 'Sustained-fire skill builds, LMG hybrids' },
-  { name: 'Strategic Assistance', spec: 'Engineering', rarity: 'High-End', note: 'Signature charge generation, team play' },
-  { name: 'Surgical Engineering', spec: 'Engineering', rarity: 'High-End', note: 'Skill crit damage stacking, Demolitionist' },
   { name: 'Happy Survival', spec: 'Toughness', rarity: 'High-End', note: 'Close-range, shotgun and SMG mains' },
-  { name: 'Rampart', spec: 'Engineering', rarity: 'High-End', note: 'Skill damage amplification, sustained engineering builds' },
-  { name: 'Brains Over Brawn', spec: 'Engineering', rarity: 'Specialized', note: 'Engineering scaling, underrated stat conversion' },
+  { name: 'Brains Over Brawn', spec: 'Engineering', rarity: 'Specialized', note: 'Engineering scaling, Specialized-rarity outlier that punches above its weight' },
 ];
 
 // B Tier
 const bTier = [
-  { name: 'Chain Reaction', spec: 'Engineering', rarity: 'Superior' },
-  { name: 'Tactical Persistence', spec: 'Engineering', rarity: 'Superior' },
-  { name: 'Recursive Treatment', spec: 'Engineering', rarity: 'Superior' },
-  { name: 'Close and Personal', spec: 'Engineering', rarity: 'Superior' },
-  { name: 'Ambusher', spec: 'Engineering', rarity: 'Superior' },
-  { name: 'Cornered Animal', spec: 'Engineering', rarity: 'Superior' },
-  { name: 'Tactical Pistolero', spec: 'Firepower', rarity: 'Superior' },
-  { name: 'Tight Grouping', spec: 'Firepower', rarity: 'Superior' },
-  { name: 'Pressure Cooker', spec: 'Firepower', rarity: 'Superior' },
-  { name: 'Trench Fighter', spec: 'Firepower', rarity: 'Superior' },
-  { name: 'Mechanized Support', spec: 'Firepower', rarity: 'Superior' },
-  { name: 'Combat Reload', spec: 'Firepower', rarity: 'Superior' },
-  { name: 'Death From Afar', spec: 'Firepower', rarity: 'Superior' },
-  { name: 'Blitz Tactics', spec: 'Toughness', rarity: 'Superior' },
-  { name: 'Medical Excellence', spec: 'Toughness', rarity: 'Superior' },
-  { name: 'Level-Headed', spec: 'Toughness', rarity: 'Superior' },
-  { name: 'Pressing Matter', spec: 'Engineering', rarity: 'Superior' },
+  { name: 'Rampart', spec: 'Engineering', rarity: 'High-End', note: 'Stationary turret play, resets on movement' },
+  { name: 'Chain Reaction', spec: 'Engineering', rarity: 'Superior', note: 'Add-clearing builds' },
+  { name: 'Tactical Persistence', spec: 'Engineering', rarity: 'Superior', note: 'Sustained skill DPS' },
+  { name: 'Recursive Treatment', spec: 'Engineering', rarity: 'Superior', note: 'Field Medic skill hybrid' },
+  { name: 'Close and Personal', spec: 'Engineering', rarity: 'Superior', note: 'Vanguard buff-team play' },
+  { name: 'Pressing Matter', spec: 'Engineering', rarity: 'Superior', note: 'Universal cooldown recovery' },
+  { name: 'Ambusher', spec: 'Engineering', rarity: 'Superior', note: 'Stationary marksman-skill hybrids' },
+  { name: 'Cornered Animal', spec: 'Engineering', rarity: 'Superior', note: 'Low-magazine shotgun/grenade launcher' },
+  { name: 'Together We Stand', spec: 'Engineering', rarity: 'Superior', note: 'Close-formation team play' },
+  { name: 'Chase the Weak', spec: 'Engineering', rarity: 'Superior', note: 'Corrosive Field Medic and Vanguard Pulse setups' },
+  { name: 'Trench Fighter', spec: 'Firepower', rarity: 'Superior', note: 'Cover-based crit damage' },
+  { name: 'Mechanized Support', spec: 'Firepower', rarity: 'Superior', note: 'Tech Operator and Demolitionist near deployed skills' },
+  { name: 'Pressure Cooker', spec: 'Firepower', rarity: 'Superior', note: 'Aggressive close-range crit stacking' },
+  { name: 'Combat Reload', spec: 'Firepower', rarity: 'Superior', note: 'Shotgun and Marksman Rifle reload builds' },
+  { name: 'Tactical Pistolero', spec: 'Firepower', rarity: 'Superior', note: 'Skill-weapon hybrids' },
+  { name: 'Tight Grouping', spec: 'Firepower', rarity: 'Superior', note: 'High rate of fire cover builds' },
+  { name: 'Assisted Infantry', spec: 'Firepower', rarity: 'Superior', note: 'LMG sustained-fire' },
+  { name: 'Death From Afar', spec: 'Firepower', rarity: 'Superior', note: 'Headshot-stacking marksman' },
+  { name: 'Augmented Lethality', spec: 'Firepower', rarity: 'Superior', note: 'Aggressive frontline damage per nearby enemy' },
+  { name: 'Dominating Presence', spec: 'Firepower', rarity: 'Superior', note: 'Shotgun crowd-clear Multi-Shot' },
+  { name: 'Close Quarters Menace', spec: 'Firepower', rarity: 'Superior', note: 'Aggressive Field Medic shotgun' },
+  { name: 'Deadly Accuracy', spec: 'Firepower', rarity: 'Superior', note: 'Marksman precision, punishes missed shots' },
+  { name: 'Blitz Tactics', spec: 'Toughness', rarity: 'Superior', note: 'Aggressive tank soloing' },
+  { name: 'Medical Excellence', spec: 'Toughness', rarity: 'Superior', note: 'Dedicated Field Medic healer' },
+  { name: 'Level-Headed', spec: 'Toughness', rarity: 'Superior', note: 'Tank self-heal builds' },
+  { name: 'Last Resort', spec: 'Toughness', rarity: 'Superior', note: 'Team support when allies are low' },
 ];
 
 // C Tier
 const cTier = [
-  { name: 'Chase the Weak', spec: 'Engineering', rarity: 'Superior' },
-  { name: 'Together We Stand', spec: 'Engineering', rarity: 'Superior' },
-  { name: 'Assisted Infantry', spec: 'Firepower', rarity: 'Superior' },
-  { name: 'Dominating Presence', spec: 'Firepower', rarity: 'Superior' },
-  { name: 'Augmented Lethality', spec: 'Firepower', rarity: 'Superior' },
-  { name: 'Deadly Accuracy', spec: 'Firepower', rarity: 'Superior' },
-  { name: 'Close Quarters Menace', spec: 'Firepower', rarity: 'Superior' },
-  { name: 'Last Resort', spec: 'Toughness', rarity: 'Superior' },
   { name: 'Rocket Science', spec: 'Engineering', rarity: 'Specialized' },
   { name: 'Applied Demolition', spec: 'Engineering', rarity: 'Specialized' },
   { name: 'Hardware Upgrade', spec: 'Engineering', rarity: 'Specialized' },
   { name: 'Running Around', spec: 'Engineering', rarity: 'Specialized' },
   { name: 'Long-Range Artillery', spec: 'Engineering', rarity: 'Specialized' },
-  { name: 'Hunting Season', spec: 'Firepower', rarity: 'Specialized' },
-  { name: 'Side by Side', spec: 'Firepower', rarity: 'Specialized' },
-  { name: 'Suppressive Fire', spec: 'Firepower', rarity: 'Specialized' },
-  { name: 'Resentful', spec: 'Firepower', rarity: 'Specialized' },
-  { name: 'Face-to-Face Advantage', spec: 'Firepower', rarity: 'Specialized' },
+  { name: 'Hunting Season', spec: 'Firepower', rarity: 'Superior' },
+  { name: 'Side by Side', spec: 'Firepower', rarity: 'Superior' },
+  { name: 'Suppressive Fire', spec: 'Firepower', rarity: 'Superior' },
+  { name: 'Resentful', spec: 'Firepower', rarity: 'Superior' },
+  { name: 'Face-to-Face Advantage', spec: 'Firepower', rarity: 'Superior' },
   { name: 'Caretaker', spec: 'Toughness', rarity: 'Specialized' },
   { name: 'Enduring', spec: 'Toughness', rarity: 'Specialized' },
   { name: 'Steadfast', spec: 'Toughness', rarity: 'Specialized' },
@@ -188,6 +188,7 @@ const faqs = [
                 <div class="tier-card__info">
                   <h4>{p.name}</h4>
                   <span class="tier-card__spec">{p.spec} · {p.rarity}</span>
+                  {p.note && <span class="tier-card__note">{p.note}</span>}
                 </div>
               </a>
             ))}
