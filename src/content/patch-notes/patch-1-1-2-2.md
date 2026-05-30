@@ -163,12 +163,6 @@ We'll be tracking the follow-up notes through the weekend. If anything material 
 
 ---
 
-**Image Credits:**
-
-All Reddit and Discord screenshots in this article are credited inline to their original posters and link back to the source threads. Images are used for community commentary and patch documentation under fair use. If you're the original creator and want a takedown or different credit, reach out and we'll handle it same day.
-
----
-
 **Sources:**
 
 - [Patch Note 1.1.2.2 — Ubisoft Helpshift](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2517-patch-note---1-1-2-2-update-29-may-2026/) — Official patch notes
