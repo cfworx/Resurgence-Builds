@@ -408,12 +408,23 @@ const dataPayload = JSON.stringify(poisData);
   .poi-dot { width: 18px; height: 18px; border-width: 1.5px }
   .poi-icon { width: 10px; height: 10px }
   .poi-check { width: 10px; height: 10px; font-size: 7px; top: -3px; right: -3px }
-  .map-popup { min-width: 180px; max-width: 250px }
-  .popup-name { font-size: var(--text-sm) }
-  .popup-desc { font-size: var(--text-xs) }
-  .popup-btn { padding: 5px 10px; font-size: 10px }
   .mobile-only { display: inline }
   .desktop-only { display: none }
+
+  /* Popups */
+  .leaflet-popup-content-wrapper { border-radius: 4px !important; }
+  .leaflet-popup-content { margin: 8px 10px !important; }
+  .map-popup { min-width: 140px; max-width: 200px }
+  .popup-header { gap: 6px; margin-bottom: 4px }
+  .popup-cat-icon { width: 16px; height: 16px }
+  .popup-name { font-size: 11px }
+  .popup-meta { font-size: 9px }
+  .popup-desc { font-size: 10px; margin: 4px 0; line-height: 1.4 }
+  .popup-code { font-size: 10px }
+  .popup-amenities { gap: 3px; margin-bottom: 4px }
+  .popup-tag { font-size: 9px; padding: 1px 4px }
+  .popup-actions { padding-top: 4px; gap: 6px }
+  .popup-btn { padding: 3px 8px; font-size: 9px }
 }
 
 @media (max-width: 480px) {
