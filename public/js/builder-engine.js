@@ -183,7 +183,7 @@
     const filtered = state.spec ? SPEC_SUBCLASSES[state.spec] : [];
     
     sel.innerHTML = state.spec
-      ? '<option value="">— Select Sub Class —</option>'
+      ? '<option value="">— Select Focus —</option>'
       : '<option value="">— Choose spec first —</option>';
       
     filtered.forEach(sc => {

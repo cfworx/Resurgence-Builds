@@ -1,4 +1,4 @@
-﻿---
+---
 title: "AgentHuntzman's Leaderboard Ranking Vanguard Support Build"
 specialization: "Vanguard"
 subclass: "Recon"
@@ -240,7 +240,7 @@ These stack multiplicatively, not additively. The actual output depends on your 
 
 The gear set (Mechanical Expert 4pc + Boom Shakalaka 2pc) is not Vanguard-locked. If you have the pieces, you can run it on another specialization and keep the set bonuses. What you lose is everything in the Vanguard Recon tree: Foxhole, Exposed, Friendly Hand, Combat Inspiration, Target Rich Environment. All of that is Recon-specific.
 
-On Aegis or Tech Operator with this gear, Smart Cover still transmits weapon damage and the set CDR still applies. You just don't have the passive health restore from Foxhole, the Exposed damage stacks, or the Sig charge generation from the Scout subclass. The build functions. It's less effective.
+On Aegis or Tech Operator with this gear, Smart Cover still transmits weapon damage and the set CDR still applies. You just don't have the passive health restore from Foxhole, the Exposed damage stacks, or the Sig charge generation from the Scout focus. The build functions. It's less effective.
 
 Run it on Vanguard Recon when your team coordinates around the cover. If your team scatters, the multipliers don't land and you'd get more value from a build that works independently.
 

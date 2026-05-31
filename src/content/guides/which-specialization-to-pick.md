@@ -48,7 +48,7 @@ Here's the short version. Skip to your personality type.
 
 ### Vanguard - The One Everyone Picks First
 
-**Subclasses:** Commando (aggressive assault), Recon (flanking and intel)
+**Focuses:** Commando (aggressive assault), Recon (flanking and intel)
 
 Vanguard is the spec for people who open every RPG and put all their points into strength. You want to be in the fight, you want to be the one pulling the trigger, and you want the game's camera to be pointing at you when something explodes. Vanguard obliges all of this.
 
@@ -68,9 +68,9 @@ Vanguard is never the wrong answer. It's also rarely a *surprising* answer. If y
 
 ### Demolitionist - A Gift to Men Who Failed Chemistry
 
-**Subclasses:** HE Grenade (area denial, explosive damage), Flashguard (utility, signature cooldown)
+**Focuses:** HE Grenade (area denial, explosive damage), Flashguard (utility, signature cooldown)
 
-The Demolitionist is for people who, upon receiving a problem, immediately think *what if I made this problem explode?* You have a grenade launcher signature. You have blast-radius skills. You have an entire subclass called HE Grenade which, refreshingly, means exactly what it sounds like.
+The Demolitionist is for people who, upon receiving a problem, immediately think *what if I made this problem explode?* You have a grenade launcher signature. You have blast-radius skills. You have an entire focus called HE Grenade which, refreshingly, means exactly what it sounds like.
 
 **HE Grenade** is the Demolitionist for people who took "area of effect" personally. You are not trying to kill one enemy. You are trying to make a zone of the map temporarily uninhabitable and then walk through it while everything inside it is on fire. This is a valid strategy and a valid personality.
 
@@ -90,7 +90,7 @@ Fair warning: you will also shoot yourself with it. At least once. Probably in a
 
 ### Bulwark - The Human Furniture
 
-**Subclasses:** Juggernaut (pure tank, Toughness-first), Breacher (shield-forward, push play)
+**Focuses:** Juggernaut (pure tank, Toughness-first), Breacher (shield-forward, push play)
 
 The Bulwark is for people who, in any group game, instinctively position themselves between their teammates and the thing trying to kill their teammates. You take the hit. You absorb the damage. You have approximately the same relationship to incoming fire that a parking garage has to rain: technically affected by it, fundamentally unbothered.
 
@@ -110,13 +110,13 @@ The Bulwark is the spec that experienced players suddenly appreciate after a ses
 
 ### Field Medic - A Spec for People Who Like Being Appreciated but Not Thanked
 
-**Subclasses:** Combat Medicine (direct healing, team survival), Tactical Pharma (Corrosion debuffs, offensive drone output)
+**Focuses:** Combat Medicine (direct healing, team survival), Tactical Pharma (Corrosion debuffs, offensive drone output)
 
 Let's be honest about who picks Field Medic. It's people who, in a past life, played a healer in some other game and carry the emotional damage of watching the tank die right after they threw a perfectly-timed heal that landed 0.3 seconds too late. You're back. You're doing it again. Godspeed.
 
 **Combat Medicine** is the classic support path , keeping teammates alive, applying healing through hives and skills, making sure the DPS player who refuses to use cover gets to keep making that mistake. The Healing Hive multi-tick bug was famously patched out in late April, which significantly reduced Combat Medicine healing output. The community noticed. The developers were unapologetic. The spec is still excellent.
 
-**Tactical Pharma** is the Field Medic for people who picked a healer and immediately resented being a healer. This subclass applies Corrosion debuffs , which make enemies take increased damage , and leans into offensive drone output. You're still technically the support, but you're the kind of support that takes credit for every kill that happened near your debuffed enemies.
+**Tactical Pharma** is the Field Medic for people who picked a healer and immediately resented being a healer. This focus applies Corrosion debuffs , which make enemies take increased damage , and leans into offensive drone output. You're still technically the support, but you're the kind of support that takes credit for every kill that happened near your debuffed enemies.
 
 **A real note:** Field Medic healing scales off **Toughness**, not Engineering. Engineering scales Aegis (the Tech Op's defensive shield). This is the most common wrong build the game produces and the devs confirmed it officially. Engineering on a Field Medic is money in a mattress.
 
@@ -129,11 +129,11 @@ Let's be honest about who picks Field Medic. It's people who, in a past life, pl
 
 ### Tech Operator - The One for People Who Minored in Engineering
 
-**Subclasses:** Offensive (drone DPS, skill damage focus), Aegis (defensive barriers, team protection)
+**Focuses:** Offensive (drone DPS, skill damage focus), Aegis (defensive barriers, team protection)
 
 The Tech Operator is for the player who looked at The Division Resurgence and thought: *what if I mostly delegated?* You're not killing enemies yourself. You're deploying systems that kill enemies on your behalf, which is both more efficient and, frankly, more prestigious.
 
-**Offensive Tech Operator** is the path for players who want their drone to do the work while they do something else, which in practice means spending skill cooldown cycles on a reload and watching the turret log a better K/D than they do. The Concerted Strike OS Protocol , which stacks +24% Damage from skill hits , was made for this subclass. Your drone pings, your numbers go up, you feel like a genius.
+**Offensive Tech Operator** is the path for players who want their drone to do the work while they do something else, which in practice means spending skill cooldown cycles on a reload and watching the turret log a better K/D than they do. The Concerted Strike OS Protocol , which stacks +24% Damage from skill hits , was made for this focus. Your drone pings, your numbers go up, you feel like a genius.
 
 **Aegis** is the path for players who want to contribute to group survival without becoming Bulwark. The Aegis is a personal defensive ability that scales off Engineering and creates a zone where your team is significantly harder to kill. At full build it produces uptime numbers that make PvP opponents check if there's a bug. There was one, actually , it was patched, then re-confirmed working correctly. We noted it. The spec is legitimate.
 
@@ -180,7 +180,7 @@ For solo PvE, **Vanguard** and **Demolitionist** are the path of least resistanc
 ## Frequently Asked Questions
 
 ### Can I switch specializations?
-Yes. You can switch your active specialization freely. Your subclass progress and chipset unlocks are tied to the individual specialization, not a global character level. Switching specs doesn't delete your progress on the original.
+Yes. You can switch your active specialization freely. Your focus progress and chipset unlocks are tied to the individual specialization, not a global character level. Switching specs doesn't delete your progress on the original.
 
 ### What is the best specialization for beginners in The Division Resurgence?
 **Vanguard**. It has the clearest damage loop, the most intuitive playstyle, and the most builds available to copy. You won't paint yourself into a corner and you'll understand the game's combat fundamentals before you start optimizing a harder spec.
@@ -189,7 +189,7 @@ Yes. You can switch your active specialization freely. Your subclass progress an
 Yes , when you purchase certain items from vendors like the **Warlord** exotic AR at the Dark Zone vendor, the rolls on that item are influenced by your active specialization's primary stat. This is not a tooltip. This is real. Switch to a **Vanguard or Firepower-focused spec** before buying from the DZ vendor or you will get Engineering rolls on a Firepower weapon and spend a lot of time processing that quietly.
 
 ### Is Tactical Pharma a specialization?
-Tactical Pharma is a **subclass of Field Medic**, not a standalone specialization. It's the offensive/Corrosion path of Field Medic. If you picked Field Medic and went Tactical Pharma, you picked Field Medic.
+Tactical Pharma is a **focus of Field Medic**, not a standalone specialization. It's the offensive/Corrosion path of Field Medic. If you picked Field Medic and went Tactical Pharma, you picked Field Medic.
 
 ### What is the best specialization for the Dark Zone?
 **Vanguard** with an aggressive build is the standard answer. The DZ rewards players who can win a 1v1 engagement fast, extract before Rogues arrive, and hold their own when things go wrong. Bulwark is a serious second option for players who'd rather survive than chase. Do not go into the Dark Zone on your first day as Tech Operator and wonder why the drones aren't keeping up.
