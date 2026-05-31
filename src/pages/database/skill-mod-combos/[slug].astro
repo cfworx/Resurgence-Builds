@@ -81,7 +81,7 @@ const specOverview: Record<string, string> = {
   'Tech Operator': 'Tech Operator builds live and die by the Striker Drone. Your drone is your primary damage source, your utility tool, and sometimes your healer all at once. Stack Engineering, Skill Crit, and drone-specific bonuses and watch it shred everything in the room before you finish reloading.',
   'Bulwark': 'Bulwark is the wall. Your entire kit revolves around the Ballistic Shield — absorbing hits, face-tanking bosses, and making your team feel safe enough to actually play the game. Toughness stacking is king, but the right mod combo can turn a pure tank into a surprisingly punchy brawler.',
   'Vanguard': 'Vanguard runs the show with Smart Cover, Scanning Pulse, and Tactical Link. You\'re the team\'s intel officer and force multiplier rolled into one. The best Vanguard builds balance personal firepower with team-wide buffs that make everyone hit harder and die less.',
-  'Field Medic': 'Field Medic keeps squads alive through Chemical Traps, Oxidizing Hives, Support Stations, and Healing Hives. The Combat Medic path can also deal serious damage by stacking Toughness with Defensive Measures. These mod combos determine whether you\'re a pure healer or a healer that also hurts.',
+  'Field Medic': 'Field Medic has two focuses: Combat Medicine (Healing Swarm, Healing Hive, Support Station) and Tactical Pharma (Oxidizing Swarm, Oxidizing Hive, Chemical Trap). The Combat Medicine path can also deal serious damage by stacking Toughness with Defensive Measures. These mod combos determine whether you are a pure healer or a corrosive area-pressure dealer.',
 };
 
 const specBuildGuide: Record<string, string> = {
@@ -89,7 +89,7 @@ const specBuildGuide: Record<string, string> = {
   'Tech Operator': `Tech Operator builds want Long-term Effect (4pc) for Skill Duration and Engineering, plus Jackpot (2pc) for Skill Crit. Brains Over Brawn OS Protocol is the gold standard here. Stack Engineering on every piece and let your Striker Drone become an autonomous killing machine. The EMCAT and Thermite Charge mods are particularly nasty for PvP.`,
   'Bulwark': `Bulwark builds run Fury Strike (4pc) for Crit stacking or Self-Propelled Shield (4pc) for pure tankiness. Pair with Death From Afar or Fearless Warrior OS Protocol depending on whether you want to deal damage or absorb it. Saiynergy's 334k DPS Breacher build proves that tanks don't have to be boring — the right mod combo makes you both unkillable and dangerous.`,
   'Vanguard': `Vanguard builds typically run Phalanx Attack (4pc) for sustained DPS or Fury Strike (4pc) for burst. Dominating Presence OS Protocol is the premium pick. Smart Cover and Scanning Pulse mods give you team-wide buffs that stack with your gear set bonuses — that multiplicative scaling is how top squads push Legendary content.`,
-  'Field Medic': `Field Medic builds have two paths: pure healing with Captain Cow (4pc) and Healing Elites, or Combat Medic with Defensive Measures and Toughness stacking. The mod combo you choose determines which path hits harder. Chemical Trap mods with Corrosive application are low-key strong in PvP — people don't expect the healer to melt them.`,
+  'Field Medic': `Field Medic builds have two paths: Combat Medicine with Captain Cow (4pc) and Toughness stacking for healing + Defensive Measures damage, or Tactical Pharma with Jackpot (4pc) and Engineering for Oxidizing Swarm corrosive pressure. The mod combo you choose determines which path hits harder. Chemical Trap mods with Corrosive application are strong in PvP.`,
 };
 
 // Generate synergies text based on specialization
@@ -98,7 +98,7 @@ const specSynergy: Record<string, string> = {
   'Tech Operator': 'Gear sets: Long-term Effect (Skill Duration/Engineering), Jackpot (Skill Crit). OS Protocols: Brains Over Brawn, Tech Supremacy. Weapon talents: In Sync, Spike. The Striker Drone benefits massively from Skill Crit Chance stacking — 50%+ Crit Chance on your drone turns every attack into a potential proc.',
   'Bulwark': 'Gear sets: Fury Strike (Crit stacking), Self-Propelled Shield (Armor/Toughness), Phalanx Attack (sustained DPS). OS Protocols: Death From Afar, Fearless Warrior. Weapon talents: Optimist, Killer. Toughness-stacked Bulwark with the right mod combo makes you the last person standing in every wipe scenario.',
   'Vanguard': 'Gear sets: Phalanx Attack (Rate of Fire/Multi-Shot), Fury Strike (Crit), Double Agent (hybrid). OS Protocols: Dominating Presence, Death From Afar. Weapon talents: Killer, Concentrated Fire. Smart Cover mods stack multiplicatively with cover-based gear set bonuses.',
-  'Field Medic': 'Gear sets: Captain Cow (Support Station duration), Healing Elites (T2 exclusive), Jackpot (for Combat Medic DPS variant). OS Protocols: Healing Touch, any Toughness protocol. The Defensive Measures mod combo turns your Healing Hive into an offensive weapon — enemies near your hive take bonus damage based on your Toughness.',
+  'Field Medic': 'Gear sets: Captain Cow (Support Station duration), Healing Elites (T2 exclusive), Jackpot (for Tactical Pharma DPS). OS Protocols: Medical Excellence (Combat Medicine cornerstone), Pressing Matter (Tactical Pharma CDR). The Defensive Measures mod combo turns your Healing Hive into an offensive weapon based on your Toughness.',
 };
 
 const faqs = [

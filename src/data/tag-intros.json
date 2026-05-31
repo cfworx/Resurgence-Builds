@@ -1,4 +1,4 @@
-﻿{
+{
   "glass-cannon": {
     "slug": "glass-cannon",
     "title": "Glass Cannon",
@@ -22,7 +22,7 @@
   "field-medic": {
     "slug": "field-medic",
     "title": "Field Medic",
-    "intro": "Field Medic is the healer that makes Legendary difficulty possible. Without one, your squad's Bulwark folds in 20 seconds and your DPS players spend more time respawning than shooting. The Combat Medic path stacks Toughness for both survival and Defensive Measures damage scaling - you're a healer that also deals damage. Restoration Specialist goes all-in on healing output with Deep Focus and Captain Cow gear for near-permanent Support Station uptime. In DZ PvP, a good Field Medic turns an average squad into an unkillable nightmare."
+    "intro": "Field Medic is the healer that makes Legendary difficulty possible. Without one, your squad's Bulwark folds in 20 seconds and your DPS players spend more time respawning than shooting. The Combat Medicine path stacks Toughness for both survival and Defensive Measures damage scaling - you're a healer that also deals damage. Tactical Pharma goes all-in on Oxidizing Swarm corrosive pressure with Jackpot 4pc and Boom-Shakalaka 2pc. In DZ PvP, a good Field Medic turns an average squad into an unkillable nightmare."
   },
   "tech-operator": {
     "slug": "tech-operator",

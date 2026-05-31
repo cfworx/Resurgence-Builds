@@ -1,9 +1,9 @@
 ---
-title: "Which Specialization to Pick � Division Resurgence"
+title: "Which Specialization to Pick — Division Resurgence"
 category: "Beginner"
 lastUpdated: 2026-05-20T12:00:00Z
 tags: ["specialization", "beginner", "vanguard", "demolitionist", "bulwark", "field-medic", "tech-operator", "best specialization"]
-description: "Vanguard, Demolitionist, Bulwark, Field Medic, or Tech Operator � how to pick the right specialization in Division Resurgence."
+description: "Vanguard, Demolitionist, Bulwark, Field Medic, or Tech Operator — how to pick the right specialization in Division Resurgence."
 author: "RapidF5"
 featuredImage: "/images/division-resurgence-which-specialization-to-pick-guide.jpg"
 imageAlt: "Which specialization to pick in The Division Resurgence , Vanguard, Demolitionist, Bulwark, Field Medic, Tech Operator comparison guide"
@@ -34,7 +34,7 @@ Here's the short version. Skip to your personality type.
 
 ## The 30-Second Version (If You Have the Attention Span of a Rogue Agent)
 
-| If you want to… | Pick this |
+| If you want toâ€¦ | Pick this |
 |---|---|
 | Shoot things in the face and feel like a main character | **Vanguard** |
 | Blow up rooms full of enemies and feel nothing | **Demolitionist** |
@@ -61,8 +61,8 @@ Vanguard is never the wrong answer. It's also rarely a *surprising* answer. If y
 **Best for:** Players who want to learn the game without fighting their spec at the same time. PvP players who want to understand why they keep winning or dying.
 
 **Builds on the site:**
-- Vanguard, The Dark Zone PvP Lady Death build — the DZ aggressor loadout
-- Vanguard, The PvE Shotgun Meta build — a surprisingly nasty close-range PvE option
+- Vanguard, The Dark Zone PvP Lady Death build â€” the DZ aggressor loadout
+- Vanguard, The PvE Shotgun Meta build â€” a surprisingly nasty close-range PvE option
 
 ---
 
@@ -83,8 +83,8 @@ Fair warning: you will also shoot yourself with it. At least once. Probably in a
 **Best for:** Players who like thinking in areas of effect rather than single-target math. Anyone who finds the meta builds too fiddly and wants to press a button and watch a room clear.
 
 **Builds on the site:**
-- Demolitionist, Explosive Chaos — the full grenade brain build
-- Demolitionist, The Strawberry Reaper — the off-meta DoT spreader using the Strawberry Milkshake exotic LMG
+- Demolitionist, Explosive Chaos â€” the full grenade brain build
+- Demolitionist, The Strawberry Reaper â€” the off-meta DoT spreader using the Strawberry Milkshake exotic LMG
 
 ---
 
@@ -103,8 +103,8 @@ The Bulwark is the spec that experienced players suddenly appreciate after a ses
 **Best for:** Players who don't care about kill counts. Experienced players who know what holds a group together. Anyone who has ever muttered "I'll just absorb everything" and meant it without sarcasm.
 
 **Builds on the site:**
-- Bulwark, The Unkillable Mosquito — the Vampire Tank that heals off Happy Survival and refuses to die
-- Conflict PvP, Fearless Warlord — the PvP monster that turns the Domination zone into a personal throne
+- Bulwark, The Unkillable Mosquito â€” the Vampire Tank that heals off Happy Survival and refuses to die
+- Conflict PvP, Fearless Warlord â€” the PvP monster that turns the Domination zone into a personal throne
 
 ---
 
@@ -114,7 +114,7 @@ The Bulwark is the spec that experienced players suddenly appreciate after a ses
 
 Let's be honest about who picks Field Medic. It's people who, in a past life, played a healer in some other game and carry the emotional damage of watching the tank die right after they threw a perfectly-timed heal that landed 0.3 seconds too late. You're back. You're doing it again. Godspeed.
 
-**Combat Medicine** is the classic support path , keeping teammates alive, applying healing through hives and skills, making sure the DPS player who refuses to use cover gets to keep making that mistake. The Healing Hive multi-tick bug was famously patched out in late April, which significantly reduced Combat Medic healing output. The community noticed. The developers were unapologetic. The spec is still excellent.
+**Combat Medicine** is the classic support path , keeping teammates alive, applying healing through hives and skills, making sure the DPS player who refuses to use cover gets to keep making that mistake. The Healing Hive multi-tick bug was famously patched out in late April, which significantly reduced Combat Medicine healing output. The community noticed. The developers were unapologetic. The spec is still excellent.
 
 **Tactical Pharma** is the Field Medic for people who picked a healer and immediately resented being a healer. This subclass applies Corrosion debuffs , which make enemies take increased damage , and leans into offensive drone output. You're still technically the support, but you're the kind of support that takes credit for every kill that happened near your debuffed enemies.
 
@@ -123,7 +123,7 @@ Let's be honest about who picks Field Medic. It's people who, in a past life, pl
 **Best for:** Players who want to enable a group rather than carry it. Solo players who want Corrosion debuffs stacking while drones handle the dirty work. Anyone who likes being indispensable without needing the kill feed to prove it.
 
 **Builds on the site:**
-- Field Medic, Legendary Healer — the full support build that keeps Legendary runs from becoming reload screens
+- Field Medic, Legendary Healer â€” the full support build that keeps Legendary runs from becoming reload screens
 
 ---
 
@@ -144,8 +144,8 @@ When it works, however, nobody looks cooler.
 **Best for:** Players who enjoy optimizing systems and watching them execute. Skill-damage theorycrafters. Anyone who has ever watched a YouTube video called "perfect drone rotation guide" without any irony.
 
 **Builds on the site:**
-- Tech Operator, Lockdown — zone control and skill damage
-- Tech Operator, Disorient Express — the disorientation stacking build that makes enemies temporarily useless
+- Tech Operator, Lockdown â€” zone control and skill damage
+- Tech Operator, Disorient Express â€” the disorientation stacking build that makes enemies temporarily useless
 
 ---
 
@@ -154,10 +154,10 @@ When it works, however, nobody looks cooler.
 | | Vanguard | Demolitionist | Bulwark | Field Medic | Tech Operator |
 |---|---|---|---|---|---|
 | **Role** | DPS / All-rounder | AOE DPS | Tank | Healer / Support | Skill damage / Control |
-| **Survivability** | Medium | Low–Medium | High | Medium | Low–Medium |
-| **Skill ceiling** | Medium | Medium | Low–Medium | Medium | High |
-| **Solo viability** | ✅ Excellent | ✅ Excellent | ✅ Excellent | ⚠️ Harder | ⚠️ Harder |
-| **PvP viability** | ✅ Strong | ⚠️ Situational | ✅ Strong | ⚠️ Situational | ⚠️ Situational |
+| **Survivability** | Medium | Lowâ€“Medium | High | Medium | Lowâ€“Medium |
+| **Skill ceiling** | Medium | Medium | Lowâ€“Medium | Medium | High |
+| **Solo viability** | âœ… Excellent | âœ… Excellent | âœ… Excellent | âš ï¸� Harder | âš ï¸� Harder |
+| **PvP viability** | âœ… Strong | âš ï¸� Situational | âœ… Strong | âš ï¸� Situational | âš ï¸� Situational |
 | **Carry potential** | Medium | Medium | Low | Low | Medium |
 | **Rage-quit risk** | Low | Medium (self-grenades) | Very Low | High (ingratitude) | High (drone betrayal) |
 
