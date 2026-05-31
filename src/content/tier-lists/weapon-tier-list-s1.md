@@ -33,7 +33,7 @@ These weapons dominate the current patch and should be the first choices for any
 
 | Weapon | Type | Why S Tier |
 |--------|------|-----------|
-| Police M4 | Assault Rifle | Best-in-class sustained DPS. Flatline talent synergy with pulse builds makes it untouchable. |
+| Police M4 | Assault Rifle | Best-in-class sustained DPS. In Sync talent synergy with pulse builds makes it untouchable. |
 | Vector SBR | SMG | Highest burst DPS for close-range. Strained + crit builds melt everything. |
 | M700 Carbon | Marksman Rifle | One-shot headshot potential on non-elites. Breadbasket talent is perfectly matched. |
 
@@ -43,10 +43,10 @@ Slightly behind S Tier but still top-performing. Viable in all content.
 
 | Weapon | Type | Notes |
 |--------|------|-------|
-| AK-47 | Assault Rifle | Slightly lower RPM than M4 but higher per-shot damage. Great with Ranger. |
-| MP5 | SMG | More forgiving than Vector with larger magazine. Close & Personal is excellent. |
-| RPK-74 | LMG | Measured talent turns this into a DPS monster. Slower handling is the tradeoff. |
-| Hunting M44 | Marksman Rifle | Higher damage than M700 but slower bolt action. Headhunter build staple. |
+| AK-47 | Assault Rifle | Slightly lower RPM than M4 but higher per-shot damage. Great with Concentrated Fire. |
+| MP5 | SMG | More forgiving than Vector with larger magazine. Killer talent is excellent. |
+| RPK-74 | LMG | Unhinged talent turns this into a DPS monster. Slower handling is the tradeoff. |
+| Hunting M44 | Marksman Rifle | Higher damage than M700 but slower bolt action. Head Collection build staple. |
 
 ## B Tier - Solid
 
@@ -80,5 +80,5 @@ These weapons are underperforming and need developer attention.
 
 ## Changelog
 
-- **April 18, 2026 (Patch 1.2.0):** Moved RPK-74 from B to A tier after Measured talent buff. Moved AUG from C to D tier.
+- **April 18, 2026 (Patch 1.2.0):** Moved RPK-74 from B to A tier after Unhinged talent buff. Moved AUG from C to D tier.
 - **March 5, 2026 (Patch 1.1.0):** Initial tier list.

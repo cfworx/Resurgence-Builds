@@ -52,7 +52,7 @@ const attrGuide: Record<string, AttrInfo> = {
   'Weapon Critical Hit Chance': {
     overview: 'Weapon Critical Hit Chance (CHC) is the probability that each bullet scores a critical hit. In Division Resurgence, crits aren\'t just "nice to have" — they\'re the entire foundation of DPS builds. Every percentage point of CHC you stack is a direct multiplier on your sustained damage output, especially when paired with high Critical Hit Damage.',
     whyItMatters: 'DPS builds want CHC maxed as close to 50-60% as possible. After that cap, you pivot to stacking Critical Hit Damage instead. Vanguard and Firepower-heavy builds treat this as the #1 priority stat. Fury Strike gear set synergizes perfectly — its 4-piece bonus gives you additional crit stacking. SMGs get innate CHC, which is why they\'re so dominant in PvP.',
-    howToGet: 'CHC can roll on gloves, mask, and weapon mods. Recalibrate it onto any gear piece that\'s missing it. The Recalibration Library stores your best roll permanently — extract a high CHC roll from a junk piece, then stamp it onto your endgame gear. Some OS Protocols also have CHC as a secondary stat.',
+    howToGet: 'CHC can roll on gloves, mask, and weapon mods. Recalibrate it onto any gear piece that\'s missing it at the recalibration station. Some OS Protocols also have CHC as a secondary stat.',
     bestBuilds: 'Every Firepower build in the game wants this. Vanguard DPS with Phalanx Attack 4pc, Bulwark Breacher with Fury Strike 4pc, any build using Killer or Concentrated Fire weapon talents. If your build fires bullets and wants them to hurt, CHC is non-negotiable.',
   },
   'Weapon Critical Hit Damage': {
@@ -70,7 +70,7 @@ const attrGuide: Record<string, AttrInfo> = {
   'Weapon Multi-Shot Chance': {
     overview: 'Weapon Multi-Shot Chance gives each bullet a probability of hitting the target multiple times. When it procs, your single shot effectively becomes multiple shots — stacking talent procs, dealing extra damage, and occasionally making enemies question their life choices. It\'s RNG-based chaos and it\'s glorious.',
     whyItMatters: 'Multi-Shot is the sleeper stat for sustained DPS builds. LMGs with their massive magazines get the most value — more bullets means more rolls of the dice, and when Multi-Shot procs on an LMG that\'s already firing 900 RPM, the DPS goes vertical. Phalanx Attack gear set has Multi-Shot synergies baked in.',
-    howToGet: 'Multi-Shot Chance appears on weapon mods and some gear pieces. Phalanx Attack gear set gives it as a set bonus. Certain skill mod combos also grant temporary Multi-Shot Chance. It\'s a rarer stat, so when you see a high roll, throw it in your Recalibration Library immediately.',
+    howToGet: 'Multi-Shot Chance appears on weapon mods and some gear pieces. Phalanx Attack gear set gives it as a set bonus. Certain skill mod combos also grant temporary Multi-Shot Chance. It\'s a rarer stat, so when you see a high roll, throw it in your recalibration station immediately.',
     bestBuilds: 'LMG builds with Phalanx Attack 4pc, any sustained-fire DPS build that wants to proc weapon talents faster. Multi-Shot turns In Sync and Killer into nearly permanent buffs on high-RPM weapons.',
   },
   'Headshot Damage': {
@@ -82,7 +82,7 @@ const attrGuide: Record<string, AttrInfo> = {
   'Weapon Blast Damage': {
     overview: 'Weapon Blast Damage increases the damage dealt by weapon blast effects. This applies to explosive rounds, certain weapon talents that deal AoE damage, and any weapon-based blast proc. It\'s a niche stat, but when your build uses blast mechanics, it hits different.',
     whyItMatters: 'Blast Damage is relevant for builds running explosive weapon mods or talents that create AoE damage. It\'s particularly valuable on shotgun builds and grenade launcher sidearms where the blast component is a significant portion of total damage. Most builds won\'t need this, but the ones that do really feel the difference.',
-    howToGet: 'Weapon Blast Damage rolls on specific gear pieces and weapon mods. It\'s one of the rarer bonus attributes, so high rolls are worth preserving in your Recalibration Library. Check your gear carefully — it\'s easy to overlook this stat when you\'re speed-looting after missions.',
+    howToGet: 'Weapon Blast Damage rolls on specific gear pieces and weapon mods. It\'s one of the rarer bonus attributes, so high rolls are worth preserving in your recalibration station. Check your gear carefully — it\'s easy to overlook this stat when you\'re speed-looting after missions.',
     bestBuilds: 'Shotgun builds, explosive weapon talent builds, and Demolitionist loadouts that use weapon-based blast damage. Niche but powerful in the right setup.',
   },
   'Weapon Piercing Damage': {
@@ -94,7 +94,7 @@ const attrGuide: Record<string, AttrInfo> = {
   'Weapon Shredding Damage': {
     overview: 'Weapon Shredding Damage boosts your damage against enemy armor specifically. When you\'re chewing through an elite enemy\'s armor bar, this stat accelerates the process. Think of it as anti-armor specialization — the stat that makes tanky enemies less tanky.',
     whyItMatters: 'In endgame content, enemies are basically walking armor bars with health bars hiding underneath. Shredding Damage makes the most painful part of the fight — breaking armor — go faster. It\'s especially relevant in Legendary and Heroic modes where enemy armor pools are absurd.',
-    howToGet: 'Shredding Damage appears on certain gear pieces and weapon mods. It\'s a specialized stat, so you won\'t see it on every drop. When you find a high roll, add it to your Recalibration Library for future use.',
+    howToGet: 'Shredding Damage appears on certain gear pieces and weapon mods. It\'s a specialized stat, so you won\'t see it on every drop. When you find a high roll, add it to your recalibration station for future use.',
     bestBuilds: 'PvE DPS builds focused on Heroic/Legendary content, armor-breaking support builds, and any loadout designed for time-attack content where speed-killing armored enemies is the goal.',
   },
   'Max Health': {
@@ -166,7 +166,7 @@ const attrGuide: Record<string, AttrInfo> = {
   'Skill Piercing Damage': {
     overview: 'Skill Piercing Damage boosts the piercing damage component of applicable skills. Similar to Weapon Piercing Damage but for skill-based attacks, this stat increases damage that bypasses enemy armor — particularly relevant for Striker Drone and certain turret configurations.',
     whyItMatters: 'Against heavily armored enemies in endgame content, skill piercing damage provides a meaningful DPS increase by partially bypassing damage reduction. It\'s most effective in Legendary content where enemy armor values are extreme and conventional damage gets absorbed.',
-    howToGet: 'Skill Piercing Damage appears on Engineering gear pieces and certain equipment slots. It\'s a specialized stat, so preserve any high rolls in your Recalibration Library.',
+    howToGet: 'Skill Piercing Damage appears on Engineering gear pieces and certain equipment slots. It\'s a specialized stat, so preserve any high rolls in your recalibration station.',
     bestBuilds: 'Tech Operator Striker Drone builds focused on single-target boss damage, Demolitionist builds for Legendary content, any Engineering build that needs to punch through high-armor targets.',
   },
   'Skill Shredding Damage': {
@@ -185,7 +185,7 @@ const attrGuide: Record<string, AttrInfo> = {
     overview: 'Damage to Elites (DtE) is a flat damage multiplier against elite-tier enemies — the gold and purple health bar enemies that make up most of endgame PvE. It doesn\'t work in PvP, but for PvE farming, it\'s one of the most efficient damage stats available.',
     whyItMatters: 'DtE is additive with other DtE sources but multiplicative with weapon damage and crit. In Heroic and Legendary content, virtually every enemy is elite-tier, which means DtE is essentially a permanent damage buff for PvE content. The stat is worthless in PvP and against normal/veteran enemies, so it\'s purely a PvE farming stat.',
     howToGet: 'Damage to Elites can roll on mask and certain other gear slots. It\'s a Universal stat that works regardless of your core attribute split. For dedicated PvE farmers, recalibrating DtE onto your mask is one of the highest-value changes you can make.',
-    bestBuilds: 'Every PvE build benefits. Especially valuable for Legendary mission farmers, Summit grinders, and anyone focused purely on PvE clear speed. Absolutely useless for PvP builds — if you\'re entering the Dark Zone, swap this stat out.',
+    bestBuilds: 'Every PvE build benefits. Especially valuable for Legendary mission farmers, weekly bounty grinders, and anyone focused purely on PvE clear speed. Absolutely useless for PvP builds — if you\'re entering the Dark Zone, swap this stat out.',
   },
   'Signature Ability Charge Efficiency': {
     overview: 'Signature Ability Charge Efficiency (SACE) increases the rate at which your Signature Ability charges. Your Signature is your ultimate - M32A1 Grenade Launcher for Demo, Tactical Link for Vanguard, Breach Combo for Bulwark, Healing Swarm or Oxidizing Swarm for Medic, Drone Overload or Defender Drone for Tech Op. Getting it faster means using it more often, and using it more often means more clutch plays.',
@@ -200,7 +200,7 @@ const attrKey = attribute as string;
 const info: AttrInfo = attrGuide[attrKey] || {
   overview: `${attribute} is a ${category} bonus attribute in Division Resurgence that directly affects your build's performance. It's a secondary stat that rolls on gear alongside your core attribute, and stacking it correctly is the difference between a functional loadout and a real build.`,
   whyItMatters: `${category === 'Firepower' ? 'As a Firepower stat, this directly impacts your weapon damage output. DPS builds — especially Vanguard and weapon-focused loadouts — should consider this stat when optimizing their gear rolls.' : category === 'Toughness' ? 'As a Toughness stat, this contributes to your survivability. Bulwark tanks and any build that needs to absorb damage should prioritize this alongside other defensive stats.' : category === 'Engineering' ? 'As an Engineering stat, this enhances your skill performance. Demolitionist, Tech Operator, and skill-focused Field Medic builds all benefit from stacking this stat.' : 'As a Universal stat, this works regardless of your core attribute focus. Any build can benefit, which makes it a versatile option for rounding out your loadout.'}`,
-  howToGet: `${attribute} can roll on certain gear pieces as a bonus attribute. Check your gear drops carefully — high rolls should go straight into your Recalibration Library. The Recalibration Station lets you swap one bonus attribute per gear piece, so you can stamp this stat onto any piece that's missing it.`,
+  howToGet: `${attribute} can roll on certain gear pieces as a bonus attribute. Check your gear drops carefully — high rolls should go straight into your recalibration station. The Recalibration Station lets you swap one bonus attribute per gear piece, so you can stamp this stat onto any piece that's missing it.`,
   bestBuilds: `Builds that stack ${category} benefit the most from ${attribute}. Check the gear set database and OS Protocol listings for synergies — the right combination of bonus attributes and set bonuses is where endgame optimization lives.`,
 };
 
@@ -251,7 +251,7 @@ const toAttrSlug = (name: string) => name.toLowerCase().replace(/[^a-z0-9]+/g, '
         </div>
         <div style="display: inline-flex; align-items: center; gap: 6px; font-family: var(--font-mono); font-size: var(--text-xs); color: #6DAA45; background: rgba(109, 170, 69, 0.1); border: 1px solid rgba(109, 170, 69, 0.25); padding: 6px 14px; border-radius: 999px; margin-top: var(--sp-4); letter-spacing: 0.02em;">
           <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
-          <span>Last verified for <strong>Patch 1.2.1</strong></span>
+          <span>Last verified for <strong>Patch 1.1.2.2</strong></span>
         </div>
       </div>
 
@@ -292,7 +292,7 @@ const toAttrSlug = (name: string) => name.toLowerCase().replace(/[^a-z0-9]+/g, '
         <h2 class="attr-section__title">Recalibration Strategy</h2>
         <div style="color: #c8c8d0; line-height: 1.75; font-size: var(--text-base);">
           <p>Bonus attributes in Division Resurgence stack <strong style="color: #fff;">multiplicatively</strong> with gear set bonuses, weapon talents, and OS Protocol talents — which means stacking {attribute} across multiple gear pieces compounds your total {category.toLowerCase()} output rather than just adding to it. A build optimized with {attribute} on every available slot outperforms a build with random bonus attributes by 20-40% in the stat it targets.</p>
-          <p>When recalibrating, prioritize the gear slots that can roll the <strong style="color: #fff;">highest values</strong> for {attribute}. Each piece only gets one recalibration slot, so you need to decide: swap the core stat, the bonus attribute, or the talent? For most builds, locking in the right talent and core stat first, then recalibrating the bonus attribute last, gives you the most flexibility. Extract high rolls of {attribute} from junk gear into your <strong style="color: var(--accent);">Recalibration Library</strong> — once stored, it's available permanently for any future gear piece.</p>
+          <p>When recalibrating, prioritize the gear slots that can roll the <strong style="color: #fff;">highest values</strong> for {attribute}. Each piece only gets one recalibration slot, so you need to decide: swap the core stat, the bonus attribute, or the talent? For most builds, locking in the right talent and core stat first, then recalibrating the bonus attribute last, gives you the most flexibility. Use junk gear with high rolls of {attribute} as a <strong style="color: var(--accent);">re-roll source</strong> at the recalibration station to transfer the stat onto your endgame pieces.</p>
         </div>
       </div>
 

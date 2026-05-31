@@ -14,21 +14,21 @@ export async function getStaticPaths() {
       id: 'vanguard',
       name: 'Vanguard',
       role: 'DPS / Team Utility',
-      description: 'A front-line attacker that bridges tanking and DPS. The Vanguard kit is built around Mobile Cover and Pulse-style scouting tools, giving the team both positional advantage and intel. The Commando focus centers on close-range burst damage with weapons like the Warlord and Lady Death, while the Scout Recon path provides high-impact team utility that the community consistently rates as one of the strongest endgame setups in Division Resurgence. Vanguard excels in both PvE and PvP, making it one of the most versatile specializations in the game. If you want a class that can flex between aggressive DPS and squad-wide support without swapping loadouts, the Vanguard delivers.',
+      description: 'A front-line attacker that bridges tanking and DPS. The Vanguard kit is built around Mobile Cover and Pulse-style scouting tools, giving the team both positional advantage and intel. The Commando focus centers on close-range burst damage with weapons like the Warlord and Lady Death, while the Recon path provides high-impact team utility that the community consistently rates as one of the strongest endgame setups in Division Resurgence. Vanguard excels in both PvE and PvP, making it one of the most versatile specializations in the game. If you want a class that can flex between aggressive DPS and squad-wide support without swapping loadouts, the Vanguard delivers.',
       signature: {
         name: 'Tactical Link',
         description: 'The Vanguard\'s iconic offensive team buff. Tactical Link provides a high-impact damage and tempo boost tied into the class\'s cover and scouting tools. When activated, your entire squad benefits from increased rate of fire and damage output for a limited window — making it the go-to signature for coordinated burst phases in Legendary missions and Dark Zone extractions.'
       },
-      perkOverview: 'Vanguard talents branch into Commando (Firepower-focused DPS with Warlord, Lady Death, and DBS builds) and Scout Recon (Engineering-focused team utility using Smart Cover and Scanning Pulse). Community builds rate Scout Recon as very strong in endgame group content.',
-      signatureTalents: 'The Vanguard talent tree splits into two distinct paths. **Commando** is pure DPS — stack Firepower, run Fury Strike 4pc or Phalanx Attack 4pc, and let your weapon talents do the heavy lifting. Commando Vanguards are the top of the damage charts in most squad compositions. **Scout Recon** flips the script entirely — you stack Engineering and run Smart Cover plus Scanning Pulse to buff the entire team\'s damage and survivability simultaneously. Scout Recon doesn\'t show up on the DPS meter, but experienced squads will tell you the Recon player is the reason they cleared.',
+      perkOverview: 'Vanguard talents branch into Commando (Firepower-focused DPS with Warlord, Lady Death, and DBS builds) and Recon (Engineering-focused team utility using Smart Cover and Scanning Pulse). Community builds rate Recon as very strong in endgame group content.',
+      signatureTalents: 'The Vanguard talent tree splits into two distinct paths. **Commando** is pure DPS — stack Firepower, run Fury Strike 4pc or Phalanx Attack 4pc, and let your weapon talents do the heavy lifting. Commando Vanguards are the top of the damage charts in most squad compositions. **Recon** flips the script entirely — you stack Engineering and run Smart Cover plus Scanning Pulse to buff the entire team\'s damage and survivability simultaneously. Recon doesn\'t show up on the DPS meter, but experienced squads will tell you the Recon player is the reason they cleared.',
       howToPlay: [
-        'Stack Firepower on Commando builds and Engineering on Scout Recon. Mixing the two will leave you mediocre at both — commit to one path.',
+        'Stack Firepower on Commando builds and Engineering on Recon. Mixing the two will leave you mediocre at both — commit to one path.',
         'In group content, deploy Mobile Cover before engagements and use it as your anchor point. Your team benefits from the cover bonuses and you control the fight\'s positioning.',
         'Tactical Link is a team resource. Don\'t blow it on trash mobs — save it for boss phases, extraction timers, and DZ PvP fights where the burst window decides who walks away.',
         'If you\'re running Commando with an LMG, the Strawberry Milkshake paired with Phalanx Attack is disgusting sustained DPS. Check the Milkshake Machine build for the exact setup.',
-        'Scout Recon players: your Scanning Pulse uptime matters more than your personal damage. Keep that pulse cycling and your squad\'s effective DPS doubles.'
+        'Recon players: your Scanning Pulse uptime matters more than your personal damage. Keep that pulse cycling and your squad\'s effective DPS doubles.'
       ],
-      bestWeapons: 'Assault Rifles (Warlord, StG 44) for Commando, LMGs (Strawberry Milkshake) for sustained DPS, and SMGs (Lady Death) for aggressive PvP pushes. Scout Recon can run any weapon since damage comes from team buffs.'
+      bestWeapons: 'Assault Rifles (Warlord, StG 44) for Commando, LMGs (Strawberry Milkshake) for sustained DPS, and SMGs (Lady Death) for aggressive PvP pushes. Recon can run any weapon since damage comes from team buffs.'
     },
     {
       id: 'field-medic',
@@ -151,7 +151,7 @@ const breadcrumbItems = [
 ];
 
 const title = `Best ${classData.name} Builds — Division Resurgence May 2026`;
-const description = `Top ${classData.name} builds for PvE and PvP in Division Resurgence. ${classData.role} loadouts with gear sets, talents, and OS Protocols. Updated for Patch 1.2.1.`;
+const description = `Top ${classData.name} builds for PvE and PvP in Division Resurgence. ${classData.role} loadouts with gear sets, talents, and OS Protocols. Updated for Patch 1.1.2.2.`;
 
 const faqs = [
   {
@@ -193,7 +193,7 @@ const faqs = [
     <Breadcrumbs items={breadcrumbItems} />
     <SectionTag label="Class Hub" />
     <div style="display: flex; flex-wrap: wrap; align-items: center; gap: var(--sp-2); margin-bottom: var(--sp-4); font-size: var(--text-sm);">
-      <span style="display: inline-flex; align-items: center; gap: 4px; padding: 4px 10px; background: rgba(34,197,94,0.12); border: 1px solid rgba(34,197,94,0.3); border-radius: 4px; color: #22c55e; font-family: var(--font-mono); font-size: var(--text-xs); font-weight: 600; letter-spacing: 0.03em;">✓ Verified for Patch 1.2.1</span>
+      <span style="display: inline-flex; align-items: center; gap: 4px; padding: 4px 10px; background: rgba(34,197,94,0.12); border: 1px solid rgba(34,197,94,0.3); border-radius: 4px; color: #22c55e; font-family: var(--font-mono); font-size: var(--text-xs); font-weight: 600; letter-spacing: 0.03em;">✓ Verified for Patch 1.1.2.2</span>
     </div>
     
     <div style="margin-bottom: var(--sp-8); padding-bottom: var(--sp-6); border-bottom: 1px solid var(--border);">

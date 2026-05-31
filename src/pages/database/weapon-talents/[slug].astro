@@ -44,16 +44,16 @@ function getBuildArchetype(description: string): { primary: string; label: strin
     return {
       primary: 'dps-crit',
       label: 'DPS / Crit Build',
-      prose: `This is a crit-focused talent — it wants you stacking Critical Hit Chance and Critical Hit Damage everywhere. The more crits you land, the harder it snowballs. On the right build, the damage output gets disgusting fast. On the wrong build (low crit chance), it's basically a dead talent slot.`,
-      builds: `SMG builds with innate Crit Chance love this. ARs with crit-stacked gear sets like Striker or Providence Defense are also prime candidates. If your build sheet shows 50%+ Crit Chance, this talent turns those orange numbers into real damage. Low-crit tank builds should look elsewhere.`
+      prose: `This is a crit-focused talent - it wants you stacking Critical Hit Chance and Critical Hit Damage everywhere. The more crits you land, the harder it snowballs. On the right build, the damage output gets disgusting fast. On the wrong build (low crit chance), it's basically a dead talent slot.`,
+      builds: `SMG builds with innate Crit Chance love this. ARs with crit-stacked gear sets like Fury Strike or Phalanx Attack are also prime candidates. If your build sheet shows 50%+ Crit Chance, this talent turns those orange numbers into real damage. Low-crit tank builds should look elsewhere.`
     };
   }
   if (d.includes('weapon damage') || d.includes('rate of fire') || d.includes('headshot')) {
     return {
       primary: 'dps',
       label: 'DPS / Firepower',
-      prose: `Pure damage talent. No gimmicks, no conditions you'll forget about mid-firefight — just more weapon damage. This is the kind of talent you slot when you want your bullets to hit harder and you don't want to think about it too much. Point, shoot, things die faster.`,
-      builds: `Any Firepower-stacked DPS build benefits from raw weapon damage. AR mains running Striker's Battlegear, LMG builds going for sustained damage, and Marksman Rifle users who want bigger headshot numbers. If your core attribute is Firepower and your job is killing things, this talent fits.`
+      prose: `Pure damage talent. No gimmicks, no conditions you'll forget about mid-firefight - just more weapon damage. This is the kind of talent you slot when you want your bullets to hit harder and you don't want to think about it too much. Point, shoot, things die faster.`,
+      builds: `Any Firepower-stacked DPS build benefits from raw weapon damage. AR mains running Fury Strike, LMG builds going for sustained damage, and Marksman Rifle users who want bigger headshot numbers. If your core attribute is Firepower and your job is killing things, this talent fits.`
     };
   }
   if (d.includes('armor') || d.includes('damage reduction') || d.includes('toughness') || d.includes('extra health') || d.includes('max health') || d.includes('incoming damage')) {
@@ -110,7 +110,7 @@ const faqs = [
   },
   {
     question: `How do I get the ${talent.name} talent in Division Resurgence?`,
-    answer: `${talent.name} rolls randomly on Tier 2 weapons. Farm T2 drops from Heroic missions, Summit, or Countdown and check each weapon's talent. Once you find it, extract it at the Recalibration Station to save it permanently in your Recalibration Library. Then you can apply it to any T2 weapon — just remember you only get one recalibration slot per weapon.`
+    answer: `${talent.name} rolls randomly on Tier 2 weapons. Farm T2 drops from Heroic missions, weekly bounties, or DZ extractions and check each weapon's talent. Once you find it, you can re-roll talents on other T2 weapons at the recalibration station to apply this talent. Just remember you only get one recalibration slot per weapon.`
   }
 ];
 
@@ -142,7 +142,7 @@ const talentLd = {
         </div>
         <div style="display: inline-flex; align-items: center; gap: 6px; font-family: var(--font-mono); font-size: var(--text-xs); color: #6DAA45; background: rgba(109, 170, 69, 0.1); border: 1px solid rgba(109, 170, 69, 0.25); padding: 6px 14px; border-radius: 999px; margin-top: var(--sp-4); letter-spacing: 0.02em;">
           <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
-          <span>Last verified for <strong>Patch 1.2.1</strong></span>
+          <span>Last verified for <strong>Patch 1.1.2.2</strong></span>
         </div>
       </div>
 
@@ -184,7 +184,7 @@ const talentLd = {
         <h2 style="font-family: var(--font-heading); font-size: var(--text-lg); font-weight: 800; color: #fff; margin: 0 0 var(--sp-4) 0; padding-bottom: var(--sp-2); border-bottom: 1px solid rgba(255,255,255,0.08);">How to Get {talent.name}</h2>
         <div style="color: #c8c8d0; line-height: 1.75; font-size: var(--text-base);">
           <p>Weapon talents roll randomly on <strong style="color: #fff;">Tier 2 weapons</strong> — any T2 drop has a chance to have {talent.name}. Your best farming spots are Heroic missions (guaranteed T2 drops on completion), the DZ (extracted weapons are frequently T2), and weekly bounties. Conflict reward caches also drop T2 weapons with random talents.</p>
-          <p>Once you find a weapon with {talent.name}, <strong style="color: #fff;">extract the talent</strong> at the Recalibration Station. It gets saved permanently in your Recalibration Library — you'll never need to farm it again. From there, you can apply it to any T2 weapon of your choice. Keep in mind: each weapon only gets <strong style="color: var(--accent);">one recalibration slot</strong>. If you recalibrated a stat on the weapon already, you can't also swap the talent. Plan your recalibrations before you commit. Check the <a href="/guides/division-resurgence-codes/" style="color: var(--accent);">active codes page</a> too — Ubisoft occasionally drops weapon caches during events that can have solid talent rolls.</p>
+          <p>Once you find a weapon with {talent.name}, you can use it as a source to <strong style="color: #fff;">re-roll the talent</strong> onto another weapon at the recalibration station. Keep in mind: each weapon only gets <strong style="color: var(--accent);">one recalibration slot</strong>. If you recalibrated a stat on the weapon already, you can't also swap the talent. Plan your recalibrations before you commit. Check the <a href="/guides/division-resurgence-codes/" style="color: var(--accent);">active codes page</a> too - Ubisoft occasionally drops weapon caches during events that can have solid talent rolls.</p>
         </div>
       </div>
 

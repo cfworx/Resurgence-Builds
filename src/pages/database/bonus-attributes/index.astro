@@ -23,7 +23,7 @@ const getCategoryColor = (cat: string) => {
 const faqs = [
   { question: "What are bonus attributes in Division Resurgence?", answer: "Bonus attributes are secondary stats that roll on your gear alongside the core attribute (Firepower, Toughness, or Engineering). They include things like Critical Hit Chance, Headshot Damage, Armor Regeneration, Skill Haste, and more. Every gear piece can roll one or two bonus attributes, and they stack across your loadout." },
   { question: "What bonus attributes should I prioritize in Division Resurgence?", answer: "For DPS builds: Critical Hit Chance and Critical Hit Damage until you cap CHC around 50-60%, then stack CHD and Headshot Damage. For tank builds: Armor Regeneration and Health. For skill builds: Skill Haste and Skill Damage. The right bonus attributes turn a mediocre build into something that actually melts." },
-  { question: "Can you recalibrate bonus attributes in Division Resurgence?", answer: "Yes. At the Recalibration Station, you can swap one bonus attribute per gear piece. You'll need to extract the stat you want from a donor item first, which stores it in your Recalibration Library permanently. Once it's in the library, you can apply it as many times as you want. Don't sleep on filling out that library early." },
+  { question: "Can you recalibrate bonus attributes in Division Resurgence?", answer: "Yes. At the recalibration station, you can swap one bonus attribute per gear piece. You need a donor item with the stat you want as a re-roll source. Each gear piece only gets one recalibration slot, so plan your recalibrations before you commit." },
 ];
 
 const allAttrs: Array<{name: string; category: string}> = [];
@@ -62,7 +62,7 @@ const itemListLd = {
   heading="Bonus Attributes"
   subheading="Every stat that can roll on your gear and weapons — organized by core function. Know your rolls, or suffer."
   jsonLd={itemListLd}
-  lastVerified="Patch 1.2.1"
+  lastVerified="Patch 1.1.2.2"
   {faqs}
 >
   <div class="db-grid" id="attributes-grid">

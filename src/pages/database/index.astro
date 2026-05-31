@@ -1,4 +1,4 @@
-﻿---
+---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import SectionTag from '../../components/SectionTag.astro';
@@ -15,7 +15,7 @@ import gearSetEffects from '../../data/gear-set-effects.json';
 import exoticWeapons from '../../data/exotic-weapons.json';
 
 const title = "The Division Resurgence Database";
-const description = "Complete Division Resurgence database - OS Protocols, weapons, gear sets, talents, skill mods, and bonus attributes. Every stat verified in-game for Patch 1.2.1.";
+const description = "Complete Division Resurgence database - OS Protocols, weapons, gear sets, talents, skill mods, and bonus attributes. Every stat verified in-game for Patch 1.1.2.2.";
 
 const breadcrumbs = [
   { name: 'Database', url: '/database/' }
@@ -27,7 +27,7 @@ const sections = [
     href: '/database/os-protocols/',
     count: osProtocols.length,
     description: 'Every OS Protocol in the game with stats, talents, and build recommendations. Your sixth gear slot.',
-    icon: '⬡',
+    icon: '?',
     color: '#F5CC45',
   },
   {
@@ -35,7 +35,7 @@ const sections = [
     href: '/database/skill-mod-combos/',
     count: skillModCombos.length,
     description: 'Firmware set bonuses for every skill. Stack the right mods and your skills hit twice as hard.',
-    icon: '⚙',
+    icon: '?',
     color: '#3b82f6',
   },
   {
@@ -43,7 +43,7 @@ const sections = [
     href: '/database/weapon-talents/',
     count: weaponTalents.length,
     description: 'Every weapon talent with proc conditions, damage values, and which builds they fit.',
-    icon: '⚔',
+    icon: '?',
     color: '#ef4444',
   },
   {
@@ -51,7 +51,7 @@ const sections = [
     href: '/database/weapons/',
     count: standardWeapons.length,
     description: 'Standard weapon stats - RPM, magazine, damage type. ARs, SMGs, LMGs, MMRs, and shotguns.',
-    icon: '🔫',
+    icon: '??',
     color: '#F26822',
   },
   {
@@ -59,7 +59,7 @@ const sections = [
     href: '/database/backpack-talents/',
     count: backpackTalents.length,
     description: 'Backpack talent breakdowns with tier comparisons and recommended gear set pairings.',
-    icon: '🎒',
+    icon: '??',
     color: '#6DAA45',
   },
   {
@@ -67,7 +67,7 @@ const sections = [
     href: '/database/body-armor-talents/',
     count: bodyArmorTalents.length,
     description: 'Chest piece talents ranked by archetype. Toymaker, Glass Cannon, Deep Focus, and more.',
-    icon: '🛡',
+    icon: '??',
     color: '#a855f7',
   },
   {
@@ -75,7 +75,7 @@ const sections = [
     href: '/database/bonus-attributes/',
     count: bonusAttributes.length,
     description: 'Every bonus attribute that can roll on gear. Know what to chase and what to trash.',
-    icon: '📊',
+    icon: '??',
     color: '#14b8a6',
   },
   {
@@ -83,7 +83,7 @@ const sections = [
     href: '/database/gear-set-effects/',
     count: gearSetEffects.length,
     description: 'Full breakdown of every gear set - 2pc through 4pc bonuses, best-in-slot combinations.',
-    icon: '🏆',
+    icon: '??',
     color: '#f59e0b',
   },
   {
@@ -91,7 +91,7 @@ const sections = [
     href: '/database/exotic-weapons/',
     count: exoticWeapons.length,
     description: 'Every exotic weapon with unique talents, stat ranges, and how to farm each one.',
-    icon: '💀',
+    icon: '??',
     color: '#F26822',
   },
 ];
@@ -135,7 +135,7 @@ const articleLd = {
 
     <div style="display: inline-flex; align-items: center; gap: 6px; font-family: var(--font-mono); font-size: var(--text-xs); color: #6DAA45; background: rgba(109, 170, 69, 0.1); border: 1px solid rgba(109, 170, 69, 0.25); padding: 6px 14px; border-radius: 999px; margin-bottom: var(--sp-6); letter-spacing: 0.02em;">
       <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
-      <span>Last verified for <strong>Patch 1.2.1</strong> · {totalItems} entries</span>
+      <span>Last verified for <strong>Patch 1.1.2.2</strong> � {totalItems} entries</span>
     </div>
 
     <p style="color: var(--ink-muted); margin-bottom: var(--sp-8); font-size: var(--text-base); max-width: 70ch; line-height: 1.7;">
@@ -155,7 +155,7 @@ const articleLd = {
             </div>
             <p class="db-index-card__desc">{section.description}</p>
           </div>
-          <span class="db-index-card__arrow">→</span>
+          <span class="db-index-card__arrow">?</span>
         </a>
       ))}
     </div>
@@ -306,8 +306,8 @@ const articleLd = {
     min-height: 48px;
   }
   .faq-question::-webkit-details-marker { display: none }
-  .faq-question::after { content: '＋'; font-size: var(--text-lg); color: var(--accent); transition: transform .2s }
-  .faq-item[open] .faq-question::after { content: '－' }
+  .faq-question::after { content: '+'; font-size: var(--text-lg); color: var(--accent); transition: transform .2s }
+  .faq-item[open] .faq-question::after { content: '-' }
   .faq-answer {
     padding: 0 var(--sp-4) var(--sp-4);
     font-size: var(--text-sm);

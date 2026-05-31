@@ -11,7 +11,7 @@ tags: ["Recon", "vanguard", "support", "engineering", "smart-cover", "tactical-l
 description: "The Vanguard Scout build that triples your team's DPS through Smart Cover, Scanning Pulse, and Fully Charged stacking."
 author: "RapidF5 via AgentHuntzman"
 featuredImage: "/images/division-resurgence-vanguard-scout-build.png"
-imageAlt: "Division Resurgence Vanguard Scout Recon build with Smart Cover and Scanning Pulse buffing team damage"
+imageAlt: "Division Resurgence Vanguard Recon build with Smart Cover and Scanning Pulse buffing team damage"
 shareTitle: "The Silent Carry Build"
 shareText: "Your DPS looks mid. Your team's DPS triples. The Vanguard Scout is the most impactful build in Resurgence and nobody is talking about it."
 sources:
@@ -27,7 +27,7 @@ faqs:
   - question: "Is the P90 actually better than an LMG for this build?"
     answer: "For this build, absolutely. The P90 fires at 900 RPM, which means you burn through magazines fast and trigger Fully Charged (+7.50% Engineering) on every empty reload. An LMG with a 100-round belt takes forever to empty, so you're waiting ages between Engineering stacks. But here's the real reason: the build needs BOTH Torrential Downpour and Fully Charged on the same weapon. Only two SMGs in the entire game can roll both talents: the P90 and the AUG A3 Para XS. The Vector fires at 1200 RPM but can't roll Fully Charged. The MP7 fires at 950 RPM but can't roll Torrential Downpour. The P90 is the fastest SMG that actually qualifies for both slots. AgentHuntzman didn't pick it randomly."
   - question: "What's the best Vanguard support build in Division Resurgence?"
-    answer: "You're looking at it. The Vanguard Scout Recon running 4pc Mechanical Expert + 2pc Boom Shakalaka is currently the highest-impact support build in the game. AgentHuntzman runs this and triples team DPS."
+    answer: "You're looking at it. The Vanguard Recon running 4pc Mechanical Expert + 2pc Boom Shakalaka is currently the highest-impact support build in the game. AgentHuntzman runs this and triples team DPS."
   - question: "Do I need Legendary drops for this build?"
     answer: "Nope. That's the beautiful part. This build already dramatically multiplies your team's damage output. Stop waiting for perfect drops and start running the build. Your squad will thank you immediately."
   - question: "Why Mechanical Expert over Long-Term Effect?"
@@ -42,7 +42,7 @@ videoChannel: "AgentHuntzman"
 > Build credit: [**AgentHuntzman**](https://www.youtube.com/watch?v=b1ZjnGeeRKI). Go watch his breakdown and drop a sub.
 
 > [!INFO] Support Build --- Low Personal DPS
-> Your personal DPS number will look embarrassing on this build. That's by design. Scout Recon buffs your entire squad's damage output instead. Judge this build by your team's total clear time, not your individual stats. If you need to see big personal numbers, this isn't the build for you.
+> Your personal DPS number will look embarrassing on this build. That's by design. Recon buffs your entire squad's damage output instead. Judge this build by your team's total clear time, not your individual stats. If you need to see big personal numbers, this isn't the build for you.
 
 This is the Vanguard Recon Scout, a full team-support build that triples your squad's damage output. You don't kill things. You make your entire team kill things three times faster.
 

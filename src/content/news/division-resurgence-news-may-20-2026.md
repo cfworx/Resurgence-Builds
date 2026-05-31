@@ -245,7 +245,7 @@ The Strawberry Milkshake buff confirmation is the most important content signal 
 
 Phase 3 in June is the next real milestone. If you've been on the fence about grinding the current Pass, 1.2.1 should make the vendor flow functional again. The Encrypted Data conversion on Tactical Aug dismantles is a quiet but meaningful long-term economy upgrade that rewards consistent grinders.
 
-We'll have a dedicated build post the moment the Strawberry Milkshake buff numbers land. Full Phase 3 preview drops in June. Until then: keep your inventory screenshotted, keep your recalibration mats saved, and remember that Outpost Annihilation is a warning , not a mission.
+We'll have a dedicated build post the moment the Strawberry Milkshake buff numbers land. Full Phase 3 preview drops in June. Until then: keep your inventory screenshotted, keep your recalibrations planned, and remember that Outpost Annihilation is a warning , not a mission.
 
 ---
 
