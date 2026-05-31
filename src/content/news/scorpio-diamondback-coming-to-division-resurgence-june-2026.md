@@ -20,6 +20,8 @@ faqs:
     answer: "They share the names, but they are not the same weapons. The Resurgence Scorpio is officially confirmed as an SMG, while the Division 2 Scorpio is a shotgun. The Resurgence Diamondback weapon class and talent are not confirmed at all yet. Treat them as separate weapons that share a name with their D2 counterparts."
   - question: "How do I get the Diamondback in Division Resurgence?"
     answer: "If the Reddit leak holds, the Diamondback will be a Weekly Bounty Key Reward from a new Clinton/Riker bounty dropping with Phase 3. The screenshot shows a Recommended Power Score of 19.2k, so most endgame players should already be geared for it. The Weekly Bounty cadence resets weekly, so stock up on Encrypted Data and be ready to run the bounty on Phase 3 launch day. Unlike the Scorpio, the Diamondback is not tied to the Classified Ops Pass, so you do not need to grind pass tiers to get it."
+  - question: "What is the best build for the Diamondback in Division Resurgence?"
+    answer: "The Diamondback weapon class and talent are not confirmed yet, so no verified builds exist. If it lands as a rifle similar to its Division 2 version, it would slot into marksman or semi-auto loadouts. We will publish a full Diamondback build guide with tested gear, talents, and OS Protocol pairings as soon as we can pull the in-game tooltip. Check our Exotic Weapons Database for updates the day Phase 3 goes live."
 ---
 
 ## TL;DR
