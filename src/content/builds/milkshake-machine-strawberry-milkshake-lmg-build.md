@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Milkshake Machine - Strawberry Milkshake LMG Build"
 specialization: "Vanguard"
 subclass: "Vanguard"
@@ -6,7 +6,7 @@ playstyle: DPS
 pve: true
 pvp: true
 lastUpdated: 2026-05-29T00:00:00Z
-patch: "Patch 1.1.2.2"
+patch: "1.1.2.2"
 plannerHash: "s=Vanguard&n=The+Milkshake+Machine&ms=gs-3&m1=Weapon+Critical+Hit+Chance&m2=Weapon+Critical+Hit+Damage&cs=gs-3&ct=ba-12&c1=Weapon+Critical+Hit+Damage&c2=Weapon+Damage&ps=gs-1&pt=bp-12&p1=Weapon+Critical+Hit+Damage&p2=Weapon+Damage&gs=gs-3&g1=Weapon+Critical+Hit+Chance&g2=Weapon+Critical+Hit+Damage&hs=gs-3&h1=Weapon+Critical+Hit+Damage&h2=Weapon+Damage&ks=gs-1&k1=Weapon+Critical+Hit+Damage&k2=Weapon+Critical+Hit+Damage&w1e=ew-3&w1t=wt-22&w1t2=wt-60&w2s=sw-13&w2tr=T2&w2t=wt-43&w2t2=wt-45&os=os-38&sm1=smc-89&sm2=smc-90&sm3=smc-91"
 tags: ["Builds", "Vanguard", "LMG", "Exotic", "Strawberry Milkshake", "Phalanx Attack", "In Sync", "Multi-Shot", "Dominating Presence"]
 description: "Vanguard Strawberry Milkshake LMG build: Phalanx Attack 4pc, In Sync double-dip, Dominating Presence OS. 118-round Multi-Shot crit avalanche."

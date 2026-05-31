@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Bulwark Breacher Build - 334k DPS Shield Wall"
 specialization: "Bulwark"
 subclass: "Breacher"
@@ -6,7 +6,7 @@ playstyle: DPS
 pve: true
 pvp: true
 lastUpdated: 2026-05-30T00:00:00Z
-patch: "Patch 1.1.2.2"
+patch: "1.1.2.2"
 tags: ["Breacher", "Shield", "Fury Strike", "Phalanx Attack", "Lightweight M4", "Vector 45 ACP", "Saiynergy", "ATLAS Division", "Bulwark", "Death From Afar"]
 description: "Saiynergy's Bulwark Breacher build: 334k DPS, 4pc Fury Strike, Ballistic Shield, Death From Afar OS. Full gear, talents, weapons, and loot routes."
 author: "RapidF5 (via Saiynergy)"

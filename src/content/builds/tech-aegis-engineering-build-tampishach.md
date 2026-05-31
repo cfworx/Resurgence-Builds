@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Tech Aegis Build - 237k DPS Skill Crit"
 specialization: "Tech Operator"
 subclass: "Tech Aegis"
@@ -6,7 +6,7 @@ playstyle: DPS
 pve: true
 pvp: true
 lastUpdated: 2026-05-30T00:00:00Z
-patch: "Patch 1.1.2.2"
+patch: "1.1.2.2"
 tags: ["Tech Aegis", "Aegis Operations", "Long-term Effect", "Jackpot", "MPX", "Copperhead", "Engineering", "Tampishach", "Brains Over Brawn", "Skill Crit"]
 description: "Tampishach's Tech Aegis build: 237k DPS, 53% Skill Crit, 4pc Long-term Effect, Brains Over Brawn OS. Full gear, talents, and weapons."
 author: "RapidF5 (via Tampishach)"
