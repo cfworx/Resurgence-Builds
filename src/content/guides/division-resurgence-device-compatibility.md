@@ -1,5 +1,5 @@
 ---
-title: "Device Compatibility — Division Resurgence 2026"
+title: "Device Compatibility - Division Resurgence 2026"
 category: "General"
 lastUpdated: 2026-05-03T12:00:00Z
 tags: ["device-compatibility", "supported-devices", "pc-requirements", "iphone", "android", "cross-play", "controller-support", "emulator"]

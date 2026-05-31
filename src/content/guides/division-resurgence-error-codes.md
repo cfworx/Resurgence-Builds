@@ -1,5 +1,5 @@
 ---
-title: "All Error Codes — Division Resurgence 2026"
+title: "All Error Codes - Division Resurgence 2026"
 category: "General"
 lastUpdated: 2026-05-28T12:00:00Z
 tags: ["error-codes", "troubleshooting", "network-error", "error-271581191", "error-6000010", "connection-error", "bug-fix", "division-resurgence-errors"]

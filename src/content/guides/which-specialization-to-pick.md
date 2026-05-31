@@ -156,8 +156,8 @@ When it works, however, nobody looks cooler.
 | **Role** | DPS / All-rounder | AOE DPS | Tank | Healer / Support | Skill damage / Control |
 | **Survivability** | Medium | Lowâ€“Medium | High | Medium | Lowâ€“Medium |
 | **Skill ceiling** | Medium | Medium | Lowâ€“Medium | Medium | High |
-| **Solo viability** | âœ… Excellent | âœ… Excellent | âœ… Excellent | âš ï¸� Harder | âš ï¸� Harder |
-| **PvP viability** | âœ… Strong | âš ï¸� Situational | âœ… Strong | âš ï¸� Situational | âš ï¸� Situational |
+| **Solo viability** | âœ… Excellent | âœ… Excellent | âœ… Excellent | âš ï¸- Harder | âš ï¸- Harder |
+| **PvP viability** | âœ… Strong | âš ï¸- Situational | âœ… Strong | âš ï¸- Situational | âš ï¸- Situational |
 | **Carry potential** | Medium | Medium | Low | Low | Medium |
 | **Rage-quit risk** | Low | Medium (self-grenades) | Very Low | High (ingratitude) | High (drone betrayal) |
 

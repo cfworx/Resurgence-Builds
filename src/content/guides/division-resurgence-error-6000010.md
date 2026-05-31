@@ -1,5 +1,5 @@
 ---
-title: "Error 6000010 Fix — Division Resurgence"
+title: "Error 6000010 Fix - Division Resurgence"
 category: "General"
 lastUpdated: 2026-05-06T12:00:00Z
 tags: ["error-codes", "troubleshooting", "error-6000010", "network-error", "connection-error", "division-resurgence-errors"]

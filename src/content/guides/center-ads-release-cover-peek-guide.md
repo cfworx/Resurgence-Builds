@@ -1,5 +1,5 @@
 ---
-title: "Cover-Peek Trick — Division Resurgence PvP"
+title: "Cover-Peek Trick - Division Resurgence PvP"
 category: "PvP"
 lastUpdated: 2026-05-23T14:30:00Z
 tags: ["pvp", "cover-peek", "center-ads-release", "conflict", "dark-zone", "settings-guide", "frame-tech", "aim-mode"]

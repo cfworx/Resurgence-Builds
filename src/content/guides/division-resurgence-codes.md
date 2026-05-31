@@ -1,5 +1,5 @@
 ---
-title: "Division Resurgence Codes — May 2026"
+title: "Division Resurgence Codes - May 2026"
 category: "General"
 lastUpdated: 2026-05-01T12:00:00Z
 tags: ["codes", "redeem-codes", "promo-codes", "backbone", "twitch-drops", "free-rewards", "ubisoft-connect", "division-resurgence-codes"]
