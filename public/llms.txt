@@ -11,8 +11,8 @@ ResurgenceBuilds.com is a community-driven wiki for The Division Resurgence (Ubi
 Fully optimized loadouts for all 5 specializations with complete gear breakdowns, stat allocations, talent selections, and gameplay rotations.
 
 **Active Build Guides:**
-- [Tactical Pharma 800K DPS Build](https://resurgencebuilds.com/builds/tactical-pharma-800k-dps-rank-1-global-build/) — Field Medic (Tactical Pharma subclass). 800K+ sustained DPS. Rank 1 global leaderboard build. Full gear table, skill mod combos, OS Protocol selection, and damage formula breakdown.
-- [AgentHuntzman's Vanguard Support Build](https://resurgencebuilds.com/builds/agenthuntzmans-leaderboard-ranking-vanguard-support-build/) — Vanguard (Recon Scout subclass). Full team-support build using Smart Cover, Scanning Pulse, and Tactical Link. Designed for Legendary mission carry and leaderboard ranking.
+- [Tactical Pharma 800K DPS Build](https://resurgencebuilds.com/builds/tactical-pharma-800k-dps-rank-1-global-build/) — Field Medic (Tactical Pharma focus). 800K+ sustained DPS. Rank 1 global leaderboard build. Full gear table, skill mod combos, OS Protocol selection, and damage formula breakdown.
+- [AgentHuntzman's Vanguard Support Build](https://resurgencebuilds.com/builds/agenthuntzmans-leaderboard-ranking-vanguard-support-build/) — Vanguard (Recon focus). Full team-support build using Smart Cover, Scanning Pulse, and Tactical Link. Designed for Legendary mission carry and leaderboard ranking.
 - [Geneva Suggestion Chemical Trap Build](https://resurgencebuilds.com/builds/geneva-suggestion-field-medic-12/) — Field Medic corrosive skill DPS using Chemical Trap and Oxidizing Swarm. Area denial and DOT stacking.
 
 ### Tactical Guides
@@ -46,7 +46,7 @@ Searchable, structured reference tables with complete data:
 - **Platforms:** iOS, Android, PC (Ubisoft Connect)
 - **Current Season:** Season 2
 - **Current Patch:** 1.3.0
-- **Specializations:** Vanguard (Commando, Recon Scout), Demolitionist (HE Grenade, Flashguard), Bulwark (Juggernaut, Breacher), Field Medic (Combat Medicine, Tactical Pharma), Tech Operator (Offensive, Aegis)
+- **Specializations:** Vanguard (Commando, Recon), Demolitionist (HE Munitions, Field Grenadier), Bulwark (Juggernaut, Breacher), Field Medic (Combat Medicine, Tactical Pharma), Tech Operator (Offensive Operations, Aegis Operations)
 - **Exotic Weapons:** Lady Death (SMG, talent: Breathe Free), Warlord (AR, talent: Play Rough), Strawberry Milkshake (LMG, talent: Anarchy)
 - **Key Gear Sets:** Jackpot, Fire Cycle, Socialite, Long-Term Effect, Mechanical Expert, Boom Shakalaka
 - **Game Modes:** Campaign, Hard/Challenging/Legendary Missions, Dark Zone (PvPvE), Conflict (PvP — Domination), Classified Ops

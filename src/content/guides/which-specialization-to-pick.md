@@ -68,13 +68,13 @@ Vanguard is never the wrong answer. It's also rarely a *surprising* answer. If y
 
 ### Demolitionist - A Gift to Men Who Failed Chemistry
 
-**Focuses:** HE Grenade (area denial, explosive damage), Flashguard (utility, signature cooldown)
+**Focuses:** HE Munitions (area denial, explosive damage), Field Grenadier (utility, signature cooldown)
 
-The Demolitionist is for people who, upon receiving a problem, immediately think *what if I made this problem explode?* You have a grenade launcher signature. You have blast-radius skills. You have an entire focus called HE Grenade which, refreshingly, means exactly what it sounds like.
+The Demolitionist is for people who, upon receiving a problem, immediately think *what if I made this problem explode?* You have a grenade launcher signature. You have blast-radius skills. You have an entire focus called HE Munitions which, refreshingly, means exactly what it sounds like.
 
-**HE Grenade** is the Demolitionist for people who took "area of effect" personally. You are not trying to kill one enemy. You are trying to make a zone of the map temporarily uninhabitable and then walk through it while everything inside it is on fire. This is a valid strategy and a valid personality.
+**HE Munitions** is the Demolitionist for people who took "area of effect" personally. You are not trying to kill one enemy. You are trying to make a zone of the map temporarily uninhabitable and then walk through it while everything inside it is on fire. This is a valid strategy and a valid personality.
 
-**Flashguard** leans into signature ability uptime and utility. Less "blow the room up," more "keep the C4 going and coordinate the blast timing like a professional." If Commando is the guy who kicks in the door, Flashguard is the guy who wired the building two days before you got there.
+**Field Grenadier** leans into signature ability uptime and utility. Less "blow the room up," more "keep the C4 going and coordinate the blast timing like a professional." If Commando is the guy who kicks in the door, Field Grenadier is the guy who wired the building two days before you got there.
 
 The Demolitionist's signature is the M32A1 grenade launcher. Five shots in rapid succession into a tight cluster of enemies is one of the most satisfying things you can do in this game without it being a disciplinary matter.
 
@@ -129,7 +129,7 @@ Let's be honest about who picks Field Medic. It's people who, in a past life, pl
 
 ### Tech Operator - The One for People Who Minored in Engineering
 
-**Focuses:** Offensive (drone DPS, skill damage focus), Aegis (defensive barriers, team protection)
+**Focuses:** Offensive Operations (drone DPS, skill damage focus), Aegis Operations (defensive barriers, team protection)
 
 The Tech Operator is for the player who looked at The Division Resurgence and thought: *what if I mostly delegated?* You're not killing enemies yourself. You're deploying systems that kill enemies on your behalf, which is both more efficient and, frankly, more prestigious.
 

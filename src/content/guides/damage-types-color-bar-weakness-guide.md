@@ -155,7 +155,7 @@ You have two weapon slots. Use them.
 
 Both your weapons are blast. We're not going to sugarcoat this. You will struggle in any mission with majority shredding or piercing-weakness enemies.
 
-Fix: lean on your skill kit for the missing damage types. Aegis Operator? Your skill damage scales off Engineering and bypasses the weapon-type tax entirely. Vanguard? Tactical Smart Cover routes Engineering into team weapon damage regardless of damage type.
+Fix: lean on your skill kit for the missing damage types. Aegis Operations? Your skill damage scales off Engineering and bypasses the weapon-type tax entirely. Vanguard? Tactical Smart Cover routes Engineering into team weapon damage regardless of damage type.
 
 Real fix: farm any AR or LMG with Weapon Shredding Damage rolled. Even a T1 shredding LMG will outperform Warlord on light-blue-bar missions. Yes, even a T1. The damage type match matters more than the gear tier in those encounters.
 
