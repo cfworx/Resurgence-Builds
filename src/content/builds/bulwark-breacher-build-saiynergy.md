@@ -51,16 +51,6 @@ This is a **Breacher shield build** that anchors a doorway and refuses to leave.
 
 ---
 
-## Saiynergy's Stats (23.17k Power Score)
-
-| Stat | Value |
-|---|---|
-| DPS | 334.07k |
-| Armor | 7,679 |
-| Power Score | 23.17k |
-
----
-
 ## Bulwark Breacher Gear and Loadout
 
 ### Gear
