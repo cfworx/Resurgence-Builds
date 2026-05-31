@@ -150,7 +150,7 @@
       const found = progress.has(poi.id);
       const icon = L.divIcon({
         html: `<div class="poi-dot" style="--poi-color:${cat.color}" data-found="${found}">
-                 <img src="${cat.icon}" alt="" class="poi-icon" />
+                 <img src="${cat.icon}" alt="${cat.label} map marker icon" class="poi-icon" />
                  ${found ? '<span class="poi-check">✓</span>' : ''}
                </div>`,
         className: 'poi-marker',
@@ -185,7 +185,7 @@
 
     return `<div class="map-popup">
       <div class="popup-header">
-        <img src="${cat.icon}" alt="" class="popup-cat-icon" style="color:${cat.color};filter:drop-shadow(0 0 4px ${cat.color}40)" />
+        <img src="${cat.icon}" alt="${cat.label} category icon" class="popup-cat-icon" style="color:${cat.color};filter:drop-shadow(0 0 4px ${cat.color}40)" />
         <div>
           <div class="popup-name">${poi.name}</div>
           <div class="popup-meta">${districtName} · ${cat.label}${levelStr}</div>
@@ -218,7 +218,7 @@
       const found = progress.has(poiId);
       marker.setIcon(L.divIcon({
         html: `<div class="poi-dot" style="--poi-color:${cat.color}" data-found="${found}">
-                 <img src="${cat.icon}" alt="" class="poi-icon" />
+                 <img src="${cat.icon}" alt="${cat.label} map marker icon" class="poi-icon" />
                  ${found ? '<span class="poi-check">✓</span>' : ''}
                </div>`,
         className: 'poi-marker',

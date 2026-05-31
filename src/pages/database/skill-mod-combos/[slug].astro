@@ -19,7 +19,7 @@ const { mod } = Astro.props;
 const slug = mod.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
 const siteUrl = 'https://resurgencebuilds.com';
 
-const title = `${mod.name} Skill Mod — ${mod.specialization} | Division Resurgence`;
+const title = `${mod.name} — ${mod.specialization} Skill Mod`;
 const description = `${mod.name} is a ${mod.specialization} Skill Mod Combo in Division Resurgence. 2pc: ${mod.bonus2}. 3pc: ${mod.bonus3.substring(0, 120)}…`;
 
 const breadcrumbs = [

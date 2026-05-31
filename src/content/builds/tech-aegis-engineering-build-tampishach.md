@@ -1,5 +1,5 @@
----
-title: "Tech Aegis Build � 237k DPS Skill Crit"
+﻿---
+title: "Tech Aegis Build - 237k DPS Skill Crit"
 specialization: "Tech Operator"
 subclass: "Tech Aegis"
 playstyle: DPS
@@ -19,7 +19,7 @@ sources:
   - 'In-game Division Resurgence Build Database, verified May 2026.'
 plannerHash: "s=Tech+Operator&sc=Aegis+Operations&n=Tech+Aegis+237k&ms=gs-7&m1=Signature+Ability+Charge+Efficiency&m2=Skill+Critical+Damage&cs=gs-8&ct=ba-14&c1=Skill+Radius&c2=Skill+Critical+Damage&ps=gs-8&pt=bp-19&p1=Damage+Reduction&p2=Skill+Critical+Chance&gs=gs-8&g1=Skill+Critical+Chance&g2=Skill+Critical+Damage&hs=gs-7&h1=Damage+Reduction&h2=Skill+Critical+Damage&ks=gs-8&k1=Skill+Critical+Chance&k2=Skill+Critical+Damage&w1s=sw-10&w1tr=T1&w1t=wt-22&w1t2=wt-60&w2s=sw-12&w2tr=T0&w2t=wt-66&w2t2=wt-42&os=os-20&sm1=smc-35&sm2=smc-29&sm3=smc-32"
 videoId: "bZA3H9f2ah0"
-videoTitle: "Tampishach — Tech Aegis Build Walkthrough"
+videoTitle: "Tampishach - Tech Aegis Build Walkthrough"
 videoChannel: "PowerfulJRE Clips"
 faqs:
   - question: "Is this build still good after Patch 1.1.2.2?"
@@ -42,7 +42,12 @@ faqs:
 
 > Build credit: **Tampishach** (posting on the PowerfulJRE Clips YouTube channel). He uploaded a tight walkthrough on his Tech Aegis setup back in late April, and the build still holds up after four patches. We grabbed every value off his in-game screens so nothing in this post is guessed. Watch his original walkthrough on [YouTube](https://www.youtube.com/watch?v=bZA3H9f2ah0).
 
-This is a **Tech Aegis Engineering build** that turns skill crit into a sledgehammer. Tampishach is running **18.70k Power Score, 237.52k DPS, 4,503 Armor, and 76,569 Health at Level 50**, with **53% Skill Crit Chance and 113% Skill Crit Damage** on the sheet. The 4pc Long-term Effect set is the engine — skill health, skill duration, and a flat +18% Engineering bonus that compounds with every drone, firefly, and stat roll on the kit. The 2pc Jackpot tops it off with skill crit damage. **Brains Over Brawn** OS Protocol gives you +21.60% Skill Crit Chance and tacks 48% of your Engineering onto every hit. The core loop: drop your Defender Drone, throw out a Mender Drone, pop a First-Aid Firefly, and watch the crit numbers stack.
+This is a **Tech Aegis Engineering build** that turns skill crit into a sledgehammer. Tampishach is running **18.70k Power Score, 237.52k DPS, 4,503 Armor, and 76,569 Health at Level 50**, with **53% Skill Crit Chance and 113% Skill Crit Damage** on the sheet. The 4pc Long-term Effect set is the engine - skill health, skill duration, and a flat +18% Engineering bonus that compounds with every drone, firefly, and stat roll on the kit. The 2pc Jackpot tops it off with skill crit damage. **Brains Over Brawn** OS Protocol gives you +21.60% Skill Crit Chance and tacks 48% of your Engineering onto every hit. The core loop: drop your Defender Drone, throw out a Mender Drone, pop a First-Aid Firefly, and watch the crit numbers stack.
+
+---
+
+> [!WARNING] Engineering, Not Firepower
+> The #1 mistake on Tech Aegis builds is stacking Firepower instead of Engineering. The shield pulse mechanic scales off Engineering. If you put Firepower cores on this build, your shield does nothing and your DPS craters. Stack Engineering on every gear piece, no exceptions.
 
 ---
 
@@ -77,7 +82,7 @@ This is a **Tech Aegis Engineering build** that turns skill crit into a sledgeha
 
 **Core roll philosophy:** Firepower cores across the board, with every sub-attribute pointed at Skill Critical Chance and Skill Critical Damage. Tampishach: *"Try to get as much engineering as you can."* Engineering is the multiplier on every skill, the Brains Over Brawn OS Protocol, and the Long-term Effect 4pc bonus. The gear modules on every slot should be rolled to Engineering and maxed out.
 
-**Set split:** 4pc Long-term Effect + 2pc Jackpot. The Long-term Effect 4-piece is non-negotiable. Drop one piece and you lose the +18% Engineering bonus. The 2pc Jackpot is flexible — any two Jackpot slots work.
+**Set split:** 4pc Long-term Effect + 2pc Jackpot. The Long-term Effect 4-piece is non-negotiable. Drop one piece and you lose the +18% Engineering bonus. The 2pc Jackpot is flexible - any two Jackpot slots work.
 
 **Recommended backpack swap:** Boom "Horo" CarryBack with **Prime Engineer** talent. Deploying a skill at full health grants +22.50% Engineering for 12 seconds. That talent pairs perfectly with the rotation since you are deploying drones constantly.
 

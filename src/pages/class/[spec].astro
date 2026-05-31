@@ -14,56 +14,101 @@ export async function getStaticPaths() {
       id: 'vanguard',
       name: 'Vanguard',
       role: 'DPS / Team Utility',
-      description: 'A front-line attacker that bridges tanking and DPS. The Vanguard kit is built around Mobile Cover and Pulse-style scouting tools, giving the team both positional advantage and intel. The Commando subclass focuses on close-range burst damage, while the Scout Recon path provides high-impact team utility that community builds frequently rate as one of the strongest endgame setups.',
+      description: 'A front-line attacker that bridges tanking and DPS. The Vanguard kit is built around Mobile Cover and Pulse-style scouting tools, giving the team both positional advantage and intel. The Commando subclass focuses on close-range burst damage with weapons like the Warlord and Lady Death, while the Scout Recon path provides high-impact team utility that the community consistently rates as one of the strongest endgame setups in Division Resurgence. Vanguard excels in both PvE and PvP, making it one of the most versatile specializations in the game. If you want a class that can flex between aggressive DPS and squad-wide support without swapping loadouts, the Vanguard delivers.',
       signature: {
         name: 'Tactical Link',
-        description: 'The Vanguard\'s iconic offensive team buff. Tactical Link provides a high-impact damage and tempo boost tied into the class\'s cover and scouting tools.'
+        description: 'The Vanguard\'s iconic offensive team buff. Tactical Link provides a high-impact damage and tempo boost tied into the class\'s cover and scouting tools. When activated, your entire squad benefits from increased rate of fire and damage output for a limited window — making it the go-to signature for coordinated burst phases in Legendary missions and Dark Zone extractions.'
       },
-      perkOverview: 'Vanguard talents branch into Commando (Firepower-focused DPS with Warlord, Lady Death, and DBS builds) and Scout Recon (Engineering-focused team utility using Smart Cover and Scanning Pulse). Community builds rate Scout Recon as very strong in endgame group content.'
+      perkOverview: 'Vanguard talents branch into Commando (Firepower-focused DPS with Warlord, Lady Death, and DBS builds) and Scout Recon (Engineering-focused team utility using Smart Cover and Scanning Pulse). Community builds rate Scout Recon as very strong in endgame group content.',
+      signatureTalents: 'The Vanguard talent tree splits into two distinct paths. **Commando** is pure DPS — stack Firepower, run Fury Strike 4pc or Phalanx Attack 4pc, and let your weapon talents do the heavy lifting. Commando Vanguards are the top of the damage charts in most squad compositions. **Scout Recon** flips the script entirely — you stack Engineering and run Smart Cover plus Scanning Pulse to buff the entire team\'s damage and survivability simultaneously. Scout Recon doesn\'t show up on the DPS meter, but experienced squads will tell you the Recon player is the reason they cleared.',
+      howToPlay: [
+        'Stack Firepower on Commando builds and Engineering on Scout Recon. Mixing the two will leave you mediocre at both — commit to one path.',
+        'In group content, deploy Mobile Cover before engagements and use it as your anchor point. Your team benefits from the cover bonuses and you control the fight\'s positioning.',
+        'Tactical Link is a team resource. Don\'t blow it on trash mobs — save it for boss phases, extraction timers, and DZ PvP fights where the burst window decides who walks away.',
+        'If you\'re running Commando with an LMG, the Strawberry Milkshake paired with Phalanx Attack is disgusting sustained DPS. Check the Milkshake Machine build for the exact setup.',
+        'Scout Recon players: your Scanning Pulse uptime matters more than your personal damage. Keep that pulse cycling and your squad\'s effective DPS doubles.'
+      ],
+      bestWeapons: 'Assault Rifles (Warlord, StG 44) for Commando, LMGs (Strawberry Milkshake) for sustained DPS, and SMGs (Lady Death) for aggressive PvP pushes. Scout Recon can run any weapon since damage comes from team buffs.'
     },
     {
       id: 'field-medic',
       name: 'Field Medic',
       role: 'Healer / Support',
-      description: 'The backbone of any Legendary mission or Dark Zone squad. The Field Medic keeps the team alive through healing skills, support tools, and a powerful burst-heal ultimate. The Combat Medic subclass can also deal meaningful damage by stacking Toughness with the Defensive Measures mod.',
+      description: 'The backbone of any Legendary mission or Dark Zone squad. The Field Medic keeps the team alive through healing skills, support tools, and a powerful burst-heal ultimate. The Combat Medicine focus runs Healing Swarm, Healing Hive, and Support Station to keep the squad standing while stacking Toughness with the Defensive Measures mod for off-tank damage. Tactical Pharma flips the script with Oxidizing Swarm, Oxidizing Hive, and Chemical Trap for corrosive area pressure. Field Medic is the class that makes Legendary content possible for most squads. In PvP, a good Field Medic turns a mediocre squad into an unkillable nightmare.',
       signature: {
-        name: 'Burst Heal',
-        description: 'A burst heal that restores health to the user and splashes healing to nearby allies. The Field Medic\'s emergency heal is the most impactful single-use recovery tool in the game.'
+        name: 'Emergency Healing',
+        description: 'A burst heal that restores health to the user and splashes healing to nearby allies at 50% of the self-heal value. Emergency Healing is the most impactful single-use recovery tool in the game. It can pull a squad from the brink of a wipe in a single activation. The heal radius covers a clustered squad, and per-target healing scales with your Toughness and Skill Power investment. The AoE radius is fixed and does not scale with Skill Radius or Skill Duration.'
       },
-      perkOverview: 'Community builds commonly prioritize Toughness (for survival and Defensive Measures damage scaling), followed by Skill Intensity, Skill Duration, and Skill CDR. Deep Focus chest talent and Captain Cow gear set extend Support Station uptime significantly.'
+      perkOverview: 'Community builds commonly prioritize Toughness (for survival and Defensive Measures damage scaling), followed by Skill Intensity, Skill Duration, and Skill CDR. Deep Focus chest talent and Captain Cow gear set extend Support Station uptime significantly.',
+      signatureTalents: 'Field Medic has two focuses: **Combat Medicine** and **Tactical Pharma (Oxi Medic)**. Combat Medicine is the hybrid path: you stack Toughness, which simultaneously makes you harder to kill AND boosts your Defensive Measures damage output. It\'s the most popular path because you contribute both healing and damage without sacrificing either. **Tactical Pharma** goes all-in on Oxidizing Swarm area pressure, stacking Skill Crit Chance and Skill Crit Damage with Jackpot 4pc + Boom-Shakalaka 2pc. The Oxi build is competitive in group play where the corrosive stacks soften up entire packs for your DPS teammates to finish off.',
+      howToPlay: [
+        'Your Support Station placement wins or loses fights. Put it behind solid cover where the squad naturally clusters — never in the open where it gets destroyed.',
+        'Stack Toughness first, then Skill Intensity. Toughness keeps you alive AND scales Defensive Measures damage on Combat Medicine builds.',
+        'Save Emergency Healing for emergencies. Do not pop it when your squad is at 80% health. Wait until someone is about to go down and the heal value is worth the cooldown.',
+        'In Dark Zone PvP, your survival is the squad\'s survival. If you go down, the team dies 15 seconds later. Play conservative and stay behind your Bulwark.',
+        'Deep Focus chest talent + Captain Cow gear set = near-permanent Support Station uptime. This combo is non-negotiable for Legendary difficulty.'
+      ],
+      bestWeapons: 'Any weapon works since your damage comes from Toughness scaling, but ARs (for range) and LMGs (for suppression) are the most common picks. SMGs work on aggressive Combat Medicine builds that play close to the Bulwark.'
     },
     {
       id: 'demolitionist',
       name: 'Demolitionist',
       role: 'AoE DPS / Explosive Specialist',
-      description: 'The Demolitionist excels at area denial and burst damage through grenades, artillery skills, and explosive chain reactions. The HE (High Explosive) subclass stacks Engineering and Skill Crit for devastating AoE output, while the Field Grenadier variant offers an alternative approach to explosive damage.',
+      description: 'The Demolitionist excels at area denial and burst damage through grenades, artillery skills, and explosive chain reactions. The HE (High Explosive) subclass stacks Engineering and Skill Crit for devastating AoE output, while the Field Grenadier variant offers an alternative approach to explosive damage. Demolitionist is the king of PvE add-clear — drop an Artillery Turret, toss an Explosive Seeker Mine, and watch the screen fill with damage numbers while you sit back at range. In Legendary content, a well-built Demolitionist competes with or exceeds pure weapon-DPS classes because the skill scaling with Engineering is multiplicative, not additive.',
       signature: {
         name: 'Grenade Launcher',
-        description: 'A heavy explosive launcher that deals massive area-of-effect damage. Mods can dramatically increase per-shot damage at the cost of magazine capacity. The signature synergizes with Engineering stacking and explosive OS Protocols.'
+        description: 'A heavy explosive launcher that deals massive area-of-effect damage. The M32A1 fires multiple rounds in rapid succession, each dealing splash damage across a wide radius. Mods can dramatically increase per-shot damage at the cost of magazine capacity. The signature synergizes with Engineering stacking and explosive OS Protocols, and the Frag Grenades firmware set accelerates charge recovery through Artillery Turret damage ticks.'
       },
-      perkOverview: 'Talent trees revolve around Engineering stacking, Skill Crit Chance, Skill Crit Damage, and Skill Intensity. Community builds commonly run Jackpot (4pc) with Fire Cycle or Boom-Shakalaka (2pc) for maximum skill crit output.'
+      perkOverview: 'Talent trees revolve around Engineering stacking, Skill Crit Chance, Skill Crit Damage, and Skill Intensity. Community builds commonly run Jackpot (4pc) with Fire Cycle or Boom-Shakalaka (2pc) for maximum skill crit output.',
+      signatureTalents: 'The Demolitionist talent tree splits into **HE Munitions** (High Explosive) and **Field Grenadier**. HE Munitions is the dominant path — you stack Engineering to the ceiling and let your skills scale multiplicatively. Fire Cycle T2 with Jackpot 2pc is the meta setup, running Toymaker II for the glass-cannon Skill Multi-Shot boost. PVE Enjoyer\'s 333k DPS build is the template everyone copies. **Field Grenadier** takes a more direct approach with grenade-centric damage, but the scaling doesn\'t match HE Munitions in current patch meta. Most experienced Demolitionist players run HE.',
+      howToPlay: [
+        'Engineering is your god stat. Stack it everywhere — gear cores, OS Protocol, weapon mods. Engineering multiplies every skill\'s damage, not just the ones you have equipped.',
+        'Artillery Turret placement is everything. Drop it on elevated terrain with line-of-sight to the engagement area. A badly placed turret is a wasted cooldown.',
+        'Toymaker II chest talent requires 20m distance from enemies. This isn\'t optional — it\'s a +21% Skill Multi-Shot Chance that disappears the moment a rusher closes the gap. Stay back.',
+        'If you don\'t have Fire Cycle T2 yet (requires Conflicts Level 100 or T2 PvE), run 4pc Jackpot as a bridge. The Skill Crit and Skill Radius bonuses still slap.',
+        'Pressing Matter OS Protocol is the standard pick for +24% Skill Intensity and +10% Skill CDR. Brains Over Brawn is the swap if you want Skill Crit Chance instead.'
+      ],
+      bestWeapons: 'Warlord (for the Engineering-scaled exotic talent) and StG 44 (for Skill Multi-Shot Chance weapon attribute). Your weapons are secondary — the real damage comes from Artillery Turret and Explosive Seeker Mine.'
     },
     {
       id: 'tech-operator',
       name: 'Tech Operator',
       role: 'Skill DPS / Utility',
-      description: 'The Tech Operator dominates through deployed skills and gadgetry. The Aegis Operator subclass uses a shield with a passive burst mechanic that deals significant damage when built around Engineering. The Offensive subclass uses Striker Drone crits to apply Disoriented status and chain skill damage.',
+      description: 'The Tech Operator dominates through deployed skills and gadgetry. The Aegis Operator subclass uses a shield with a passive burst mechanic that deals significant damage when built around Engineering — the shield pulse scales with your Engineering stat, not your Firepower, which catches a lot of new players off guard. The Offensive subclass uses Striker Drone crits to apply Disoriented status and chain skill damage across multiple targets. Tech Operator has one of the highest skill ceilings in Division Resurgence — in PvP, a skilled Tech Op with proper cooldown management can 1v2 or 1v3 consistently, per community assessment.',
       signature: {
         name: 'Skill Overcharge',
-        description: 'Overcharges deployed skills for a limited duration, increasing their damage output and effectiveness. Pairs with Engineering stacking for maximum burst potential.'
+        description: 'Overcharges deployed skills for a limited duration, increasing their damage output and effectiveness. During Overcharge, your Striker Drone hits harder, your shield pulse deals more damage, and all skill cooldowns are reduced. Pairs with Engineering stacking for maximum burst potential and can turn a losing fight into a team wipe in PvP.'
       },
-      perkOverview: 'Aegis builds prioritize Engineering, which benefits the passive burst mechanic significantly more than Skill Damage. Tampishach\'s 237k DPS Tech Aegis build runs Long-term Effect 4pc with Brains Over Brawn for 53% Skill Crit Chance. Striker Drone is standard for offensive builds. High skill ceiling in PvP per community assessment.'
+      perkOverview: 'Aegis builds prioritize Engineering, which benefits the passive burst mechanic significantly more than Skill Damage. Tampishach\'s 237k DPS Tech Aegis build runs Long-term Effect 4pc with Brains Over Brawn for 53% Skill Crit Chance. Striker Drone is standard for offensive builds. High skill ceiling in PvP per community assessment.',
+      signatureTalents: 'Tech Operator branches into **Aegis Operator** and **Offensive Operator**. Aegis Operator is the shield path — the passive burst mechanic scales off Engineering, dealing damage to nearby enemies on a timed pulse. This makes the Tech Aegis a tanky DPS hybrid that face-tanks while dealing competitive damage. Tampishach\'s 237k DPS build is the community reference. **Offensive Operator** runs Striker Drone with crit-focused gear to apply Disoriented status and chain skill damage. It\'s more of a utility/DPS role — the Disoriented debuff is incredibly strong in PvP, locking down enemy players for your team to focus fire.',
+      howToPlay: [
+        'Aegis builds: Engineering is your main stat, not Firepower and not Skill Damage. The shield pulse mechanic scales directly off Engineering — misattributing your stats is the #1 mistake new Tech Operators make.',
+        'Long-term Effect 4pc + Brains Over Brawn OS Protocol = 53% Skill Crit Chance. This is the proven Aegis combo. Don\'t reinvent the wheel.',
+        'Striker Drone needs line-of-sight to keep hitting. In urban map environments, it gets stuck on geometry constantly. Reposition to give your drone clean angles.',
+        'Skill Overcharge timing is crucial — pop it right before you engage, not mid-fight when your skills are on cooldown. The duration is short and every second counts.',
+        'In PvP, the Disoriented status from Offensive Operator Striker Drone crits is a death sentence for the enemy. Build for crit chance to ensure consistent procs.'
+      ],
+      bestWeapons: 'Any weapon class works since your damage comes from skills. ARs for general use, SMGs for Aegis builds that play in close (your shield keeps you alive), or LMGs for Offensive builds that want sustained suppression while the drone works.'
     },
     {
       id: 'bulwark',
       name: 'Bulwark',
       role: 'Tank / Frontline',
-      description: 'The immovable object. The Bulwark draws enemy fire, absorbs incoming damage, and anchors the team\'s position behind the Phalanx Shield. Shockwave Spike MK3 emits shockwaves that apply Shock status, immobilizing enemies for several seconds — making Bulwark the most feared PvP specialization in the current meta.',
+      description: 'The immovable object. The Bulwark draws enemy fire, absorbs incoming damage, and anchors the team\'s position behind the Phalanx Shield. Shockwave Spike MK3 emits shockwaves that apply Shock status, immobilizing enemies for several seconds — making Bulwark the most feared PvP specialization in the current meta. In PvE, the Bulwark turns Legendary missions from chaotic scrambles into controlled pushes where the squad moves behind the shield at the tank\'s pace. Without a Bulwark, most squads struggle with Legendary boss encounters because there\'s no one to hold aggro and soak damage.',
       signature: {
         name: 'Breach Combo',
-        description: 'Expands the Phalanx Shield and pairs it with a powerful shotgun for aggressive close-range engagements. The Bulwark\'s signature enables the class to push forward while maintaining full frontal protection.'
+        description: 'Expands the Phalanx Shield and pairs it with a powerful shotgun for aggressive close-range engagements. The Bulwark\'s signature enables the class to push forward while maintaining full frontal protection — you become a walking siege engine that absorbs damage, stuns enemies with Shockwave Spike procs, and blasts anything in shotgun range. In PvP, a Breach Combo push into an enemy position is almost impossible to stop without coordinated focus fire.'
       },
-      perkOverview: 'Juggernaut is the dominant Bulwark subclass for both PvP and endgame PvE. Shockwave Spike MK3 provides approximately 5-second stuns on a short cooldown per community observation. Build around Toughness to maximize shield HP. Breacher is a proven PvE DPS path — Saiynergy\'s 334k DPS shield build runs Fury Strike 4pc with Death From Afar.'
+      perkOverview: 'Juggernaut is the dominant Bulwark subclass for both PvP and endgame PvE. Shockwave Spike MK3 provides approximately 5-second stuns on a short cooldown per community observation. Build around Toughness to maximize shield HP. Breacher is a proven PvE DPS path — Saiynergy\'s 334k DPS shield build runs Fury Strike 4pc with Death From Afar.',
+      signatureTalents: 'Bulwark splits into **Juggernaut** and **Breacher**. Juggernaut is pure tank — Shockwave Spike MK3 stuns enemies for ~5 seconds on a short cooldown, which in PvP is an eternity. You stack Toughness, run Fearless Warrior or Self-Propelled Shield gear sets, and become the unkillable anchor the team plays behind. **Breacher** is the DPS tank path — Saiynergy\'s 334k DPS build proves that Bulwark can top damage charts while holding a shield. The trick is Fury Strike 4pc with Death From Afar OS Protocol, running a shotgun for devastating close-range burst. It\'s the class for players who want to tank AND do damage.',
+      howToPlay: [
+        'Toughness is everything for Juggernaut. Every point of Toughness directly increases your Phalanx Shield HP. A dead shield is a dead Bulwark is a dead squad.',
+        'Position your shield to create a choke point. In PvE, this means doorways and corridors where enemies funnel into your Shockwave Spike stuns. In PvP, this means blocking DZ extraction points.',
+        'Shockwave Spike MK3 has a ~5-second stun window. Communicate with your squad when you land a stun so they can burst the stunned targets. Uncoordinated stuns are wasted stuns.',
+        'Breacher Bulwarks: you are playing a melee DPS class with a shield. Push aggressively, get into shotgun range, and let Fury Strike crits carry your damage. If you\'re playing passive with a Breacher build, you\'re doing it wrong.',
+        'Always run a shotgun as your primary on Breacher builds. The Phalanx Shield restricts you to one-handed weapons, and shotguns deal the most damage per shot at the ranges you\'ll be fighting at.'
+      ],
+      bestWeapons: 'Shotguns for Breacher builds (mandatory — the Phalanx Shield requires one-handed weapons). For Juggernaut, any one-handed weapon works since your job is crowd control, not damage. Sidearms with utility talents are a common Juggernaut pick.'
     }
   ];
 
@@ -87,8 +132,8 @@ const breadcrumbItems = [
   { name: classData.name, url: `/class/${classData.id}/` }
 ];
 
-const title = `Best ${classData.name} Builds — Division Resurgence`;
-const description = `Top ${classData.name} builds for PvE and PvP in Division Resurgence. ${classData.role} loadouts with gear sets, talents, and OS Protocols.`;
+const title = `Best ${classData.name} Builds — Division Resurgence May 2026`;
+const description = `Top ${classData.name} builds for PvE and PvP in Division Resurgence. ${classData.role} loadouts with gear sets, talents, and OS Protocols. Updated for Patch 1.2.1.`;
 
 const faqs = [
   {
@@ -96,7 +141,7 @@ const faqs = [
     answer: classData.description
   },
   {
-    question: `What is the best ${classData.name} build?`,
+    question: `What is the best ${classData.name} build right now?`,
     answer: builds.length > 0
       ? `The top-rated ${classData.name} build on Resurgence Builds is ${builds[0].data.title}. ${classData.perkOverview}`
       : `${classData.name} builds focus on ${classData.role} playstyles. ${classData.perkOverview}`
@@ -104,11 +149,28 @@ const faqs = [
   {
     question: `What gear sets work best for ${classData.name}?`,
     answer: classData.perkOverview
+  },
+  {
+    question: `What's the best weapon for ${classData.name} in Division Resurgence?`,
+    answer: classData.bestWeapons
   }
 ];
 ---
 
-<BaseLayout title={title} description={description} breadcrumbs={breadcrumbItems} faqs={faqs} ogImage={builds.length > 0 && builds[0].data.featuredImage ? builds[0].data.featuredImage : '/images/best-pve-dps-builds-division-resurgence.png'}>
+<BaseLayout
+  title={title}
+  description={description}
+  breadcrumbs={breadcrumbItems}
+  faqs={faqs}
+  ogType="article"
+  article={{
+    publishDate: '2026-05-30T00:00:00Z',
+    modifiedDate: '2026-05-30T00:00:00Z',
+    author: 'RapidF5',
+    tags: [classData.name, 'builds', 'Division Resurgence', classData.role],
+  }}
+  ogImage={builds.length > 0 && builds[0].data.featuredImage ? builds[0].data.featuredImage : '/images/best-pve-dps-builds-division-resurgence.png'}
+>
   <div class="container section">
     <Breadcrumbs items={breadcrumbItems} />
     <SectionTag label="Class Hub" />
@@ -118,7 +180,7 @@ const faqs = [
     
     <div style="margin-bottom: var(--sp-8); padding-bottom: var(--sp-6); border-bottom: 1px solid var(--border);">
       <div style="display: flex; align-items: baseline; gap: var(--sp-3); margin-bottom: var(--sp-2);">
-        <h1 class="heading-accent" style="margin: 0;">{classData.name}</h1>
+        <h1 class="heading-accent" style="margin: 0;">Best {classData.name} Builds — May 2026</h1>
         <span class="tag tag--accent">{classData.role}</span>
       </div>
       
@@ -142,15 +204,33 @@ const faqs = [
       </div>
     </div>
 
+    <!-- Signature Talents Deep Dive -->
+    <div style="margin-bottom: var(--sp-8); padding: var(--sp-5); background: rgba(0,0,0,0.15); border: 1px solid var(--border); border-radius: var(--border-radius); max-width: 800px;">
+      <h2 style="font-family: var(--font-heading); font-size: var(--text-lg); font-weight: 800; color: #fff; margin: 0 0 var(--sp-3) 0;">{classData.name} Talent Breakdown</h2>
+      <p style="color: var(--ink-muted); font-size: var(--text-sm); line-height: 1.75; margin: 0;" set:html={classData.signatureTalents} />
+    </div>
+
+    <AdSenseUnit />
+
     <!-- Why Play section -->
     <div style="margin-bottom: var(--sp-8); padding: var(--sp-5); background: rgba(0,0,0,0.15); border: 1px solid var(--border); border-radius: var(--border-radius); max-width: 800px;">
       <h2 style="font-family: var(--font-heading); font-size: var(--text-lg); font-weight: 800; color: #fff; margin: 0 0 var(--sp-3) 0;">Why Play {classData.name}?</h2>
       <p style="color: var(--ink-muted); font-size: var(--text-sm); line-height: 1.75; margin: 0 0 var(--sp-3) 0;">
-        If you want to <strong style="color: var(--ink);">{classData.role}</strong> in Division Resurgence, this is your pick. {classData.description} Your signature move, <strong style="color: var(--accent);">{classData.signature.name}</strong>, {classData.signature.description.toLowerCase()} — and yeah, it's as good as it sounds.
+        If you want to <strong style="color: var(--ink);">{classData.role}</strong> in Division Resurgence, this is your pick. Your signature move, <strong style="color: var(--accent);">{classData.signature.name}</strong>, {classData.signature.description.toLowerCase().split('.')[0]} — and yeah, it's as good as it sounds.
       </p>
       <p style="color: var(--ink-muted); font-size: var(--text-sm); line-height: 1.75; margin: 0;">
-        Talent tree breakdown: {classData.perkOverview} Every build below has been run in-game and verified on the current patch — no theory-craft copium here.
+        Every build below has been run in-game and verified on the current patch — no theory-craft copium here.
       </p>
+    </div>
+
+    <!-- How to Play section -->
+    <div style="margin-bottom: var(--sp-8); max-width: 800px;">
+      <h2 style="font-family: var(--font-heading); font-size: var(--text-lg); font-weight: 800; color: #fff; margin: 0 0 var(--sp-4) 0;">How to Play {classData.name}</h2>
+      <ul style="color: var(--ink-muted); font-size: var(--text-sm); line-height: 1.75; padding-left: var(--sp-5); display: flex; flex-direction: column; gap: var(--sp-3);">
+        {classData.howToPlay.map(tip => (
+          <li>{tip}</li>
+        ))}
+      </ul>
     </div>
 
     <!-- Related resources -->

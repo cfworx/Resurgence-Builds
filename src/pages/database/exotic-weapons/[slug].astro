@@ -16,7 +16,7 @@ export function getStaticPaths() {
 
 const { weapon } = Astro.props;
 
-const title = `${weapon.name} — Exotic ${weapon.type} | Division Resurgence`;
+const title = `${weapon.name} — Exotic ${weapon.type}`;
 const description = `${weapon.name} exotic ${weapon.type}: ${weapon.damage} damage, ${weapon.rpm} RPM, talent "${weapon.talentName}". Full stats and build recommendations.`;
 
 const breadcrumbs = [

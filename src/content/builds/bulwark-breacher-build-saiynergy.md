@@ -1,5 +1,5 @@
----
-title: "Bulwark Breacher Build � 334k DPS Shield Wall"
+﻿---
+title: "Bulwark Breacher Build - 334k DPS Shield Wall"
 specialization: "Bulwark"
 subclass: "Breacher"
 playstyle: DPS
@@ -19,7 +19,7 @@ sources:
   - 'In-game Division Resurgence Build Database, verified May 2026.'
 plannerHash: "s=Bulwark&sc=Breacher&n=Bulwark+Breacher+334k&ms=gs-1&m1=Headshot+Damage&m2=Weapon+Critical+Hit+Chance&cs=gs-1&ct=ba-25&c1=Weapon+Critical+Hit+Chance&c2=Skill+Critical+Chance&ps=gs-1&pt=bp-10&p1=Skill+Critical+Chance&p2=Weapon+Critical+Hit+Damage&gs=gs-1&g1=Weapon+Critical+Hit+Chance&g2=Weapon+Critical+Hit+Damage&hs=gs-3&h1=Weapon+Critical+Hit+Damage&h2=Headshot+Damage&ks=gs-3&k1=Weapon+Critical+Hit+Damage&k2=Headshot+Damage&w1s=sw-2&w1tr=T2&w1t=wt-25&w1t2=wt-9&w2s=sw-11&w2tr=T2&w2t=wt-57&w2t2=wt-1&os=os-45&sm1=smc-52&sm2=smc-89&sm3=smc-90"
 videoId: "28lsRrnJ6Vg"
-videoTitle: "Saiynergy — Full Breacher Build Walkthrough"
+videoTitle: "Saiynergy - Full Breacher Build Walkthrough"
 videoChannel: "Saiynergy"
 faqs:
   - question: "What is the best Breacher build in Division Resurgence?"
@@ -44,7 +44,8 @@ faqs:
 
 > Build credit: **Saiynergy** of **ATLAS Division**. Full Breacher walkthrough covering every gear roll, weapon talent, skill firmware, and loot route. Watch his original walkthrough on [YouTube](https://www.youtube.com/watch?v=28lsRrnJ6Vg) and jump in the [ATLAS Division Discord](https://discord.gg/e7EUUBbBYa) if you want in on the clan.
 
-> **RapidF5 note:** We have tweaked the weapon talents on the Lightweight M4 from Saiynergy's original loadout. He runs Steady Hands and Medical Accuracy. We are recommending **Killer + Breadbasket** instead, because Killer is the strongest AR talent for crit builds and Breadbasket stacks Headshot Damage that feeds directly into Death From Afar. The rest of the build is Saiynergy's original.
+> [!INFO] Modified Weapon Talents
+> We have tweaked the weapon talents on the Lightweight M4 from Saiynergy's original loadout. He runs Steady Hands and Medical Accuracy. We recommend **Killer + Breadbasket** instead --- Killer is the strongest AR talent for crit builds and Breadbasket stacks Headshot Damage that feeds directly into Death From Afar. The rest of the build is Saiynergy's original.
 
 This is a **Breacher shield build** that anchors a doorway and refuses to leave. Saiynergy is sitting at **23.17k Power Score, 334.07k DPS, and 7,679 Armor**. The 4pc Fury Strike gives you the crit chance and crit damage backbone. The 2pc Phalanx Attack stacks magazine size so the Vector keeps firing past the point where most builds reload and die. The Ballistic Shield with **Intimidation** punishes anyone shooting your shield. The Shockwave Spike Mk.3 with **Attritional Charge** keeps your damage reduction and crit chance topped off. **Death From Afar** OS Protocol turns headshot damage into raw Firepower. The core loop is straightforward: shield up, walk forward, let the Vector pour rounds into whatever the M4 can't reach. Your job is to be the wall. Your fireteam's job is to be the people who do not have to be the wall.
 
@@ -211,7 +212,7 @@ Backup weapons for farming attachments and talents:
 | Backpack (any set) | Hidden Impact talent, Skill Crit Chance, Weapon Crit Hit Damage |
 | Lightweight M4 (AR) | Killer + Breadbasket talents |
 | Vector 45 ACP (SMG) | Strained + Adaptation talents |
-| Death From Afar OS | Any attribute — the talent is what matters |
+| Death From Afar OS | Any attribute - the talent is what matters |
 | Ballistic Shield mod | Provocateur firmware |
 | Shockwave Spike mod | Attritional Charge firmware |
 

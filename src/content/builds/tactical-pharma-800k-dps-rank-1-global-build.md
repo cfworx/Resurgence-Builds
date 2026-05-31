@@ -1,4 +1,4 @@
----
+﻿---
 title: "Tactical Pharma 800k DPS | Rank 1 Global Player Build"
 specialization: "Field Medic"
 subclass: "Tactical Pharma"
@@ -34,7 +34,7 @@ faqs:
   - question: "Is Division Resurgence pay-to-win?"
     answer: "No. Resurgence is free-to-play with optional convenience and cosmetic purchases. Every piece of gear in this build was earned through gameplay. Spending money can speed up your grind, but it can't buy positioning, game sense, or the knowledge to stack the right talents. A player who understands the mechanics will outperform a player who doesn't, regardless of spending. Your dad reflexes are still the bottleneck."
 videoId: "1dAkSWoR7co"
-videoTitle: "RogueMadras — Updated Tactical Pharma Build Guide"
+videoTitle: "RogueMadras - Updated Tactical Pharma Build Guide"
 videoChannel: "RogueMadras"
 ---
 
@@ -130,6 +130,9 @@ His actual in-game numbers for reference:
 
 Best-in-slot for maximum DPS. Glass Cannon increases all damage you deal, including skill damage, based on current community testing. Position 30 meters behind the fight to offset the squishiness.
 
+> [!WARNING] Glass Cannon Survivability
+> Glass Cannon T2 increases ALL incoming damage. If you're dying frequently, swap to Energize 2 until you learn the positioning. RogueMadras can run Glass Cannon because he maintains 30m distance religiously. If you can't do that consistently, Energize is the smarter choice - 95% of the damage, 0% of the random one-taps.
+
 **Alternative:** **Energize 2** (+25% Skill Damage for 8s on Medical Kit use, refreshed by Multi-Shot procs). Safer, less raw output. RogueMadras is currently running this but recommends Glass Cannon.
 
 ### Backpack: Prime Engineer 2
@@ -151,15 +154,15 @@ Through Tactical Augmentation you get 2 talents that boost Skill Multi-Shot dama
 
 RogueMadras recommends **Rampart** as the best OS Protocol. He is currently running Brains Over Brawn. Here are all viable options:
 
-### 1. Rampart (High-End / Gold) — RECOMMENDED BEST
+### 1. Rampart (High-End / Gold) - RECOMMENDED BEST
 
 *"While immobile, grants +5% Damage for 1 second, up to 6 stacks. This bonus resets upon moving."*
 
-"Immobile" means **not moving your character.** Just standing still. On a skill build where you position behind cover and deploy, this is a free +30% Damage with minimal effort. Rampart is recommended over alternatives because Glass Cannon and Prime Engineer already push your Engineering high enough that Rampart's flat +30% Damage acts as a multiplicative layer on top — rather than stacking more Engineering from the same additive pool.
+"Immobile" means **not moving your character.** Just standing still. On a skill build where you position behind cover and deploy, this is a free +30% Damage with minimal effort. Rampart is recommended over alternatives because Glass Cannon and Prime Engineer already push your Engineering high enough that Rampart's flat +30% Damage acts as a multiplicative layer on top - rather than stacking more Engineering from the same additive pool.
 
 **Stats:** Skill Critical Chance +18.00%, Engineering +97, Skill Damage +77, Health +2,554.
 
-### 2. Brains Over Brawn (Specialized / Blue) — What He's Currently Running
+### 2. Brains Over Brawn (Specialized / Blue) - What He's Currently Running
 
 *"Hits deal additional damage equal to 48% Engineering."* (at Level 50)
 
@@ -169,7 +172,7 @@ Every skill tick deals bonus damage equal to nearly half your Engineering stat. 
 
 +268 Engineering on a Blue OS is more than most High-End protocols give. Strong talent, strong stats, just not Rampart.
 
-### 3. Chain Reaction (Superior / Purple) — Strong Alternative
+### 3. Chain Reaction (Superior / Purple) - Strong Alternative
 
 *"Kills grant +7.50% Skill Intensity for 10 seconds, up to 2 stacks."* (+15% total)
 
@@ -179,7 +182,7 @@ Stays permanently active on a build that clears rooms every 10 seconds. Feeds di
 
 RogueMadras recommends at least **Talent Rank 3**. Below that, the bonus doesn't justify the slot.
 
-### 4. Tactical Layering (High-End / Gold) — Solid Option
+### 4. Tactical Layering (High-End / Gold) - Solid Option
 
 *"Deploying a Skill grants +15% Engineering, up to 3 stacks."* (+45% max)
 
@@ -187,7 +190,7 @@ Every Chemical Trap and Oxidizing Hive deployment stacks Engineering. Stays acti
 
 **Stats:** Skill Intensity +15.00%, Engineering +97, Skill Damage +77, Health +2,554.
 
-### 5. Ambusher (Superior / Purple) — Untested
+### 5. Ambusher (Superior / Purple) - Untested
 
 *"Being immobile for 3 seconds grants +22.50% Engineering."*
 
@@ -227,7 +230,7 @@ RogueMadras is running **Bloodlust 2 + Adaptation** on his MK16, which is not id
 
 All weapon attachments should be **Engineering.**
 
-**Tactical Augmentation:** If your weapon offers an augment that boosts **Skill Multi-Shot Damage**, prefer that option. Augmentation options vary by weapon type and rarity — not every weapon offers the same perks. Look for anything that increases Skill Multi-Shot Damage or Skill Intensity. The exact rolls depend on what's available for your specific weapon.
+**Tactical Augmentation:** If your weapon offers an augment that boosts **Skill Multi-Shot Damage**, prefer that option. Augmentation options vary by weapon type and rarity - not every weapon offers the same perks. Look for anything that increases Skill Multi-Shot Damage or Skill Intensity. The exact rolls depend on what's available for your specific weapon.
 
 ---
 

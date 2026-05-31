@@ -19,7 +19,7 @@ const { weapon } = Astro.props;
 const slug = weapon.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
 const siteUrl = 'https://resurgencebuilds.com';
 
-const title = `${weapon.name} — ${weapon.type} | Division Resurgence`;
+const title = `${weapon.name} — ${weapon.type}`;
 const description = `${weapon.name} ${weapon.type} stats: ${weapon.rpm} RPM, ${weapon.mag} magazine, ${weapon.dmgType} damage. Full breakdown for Division Resurgence.`;
 
 const breadcrumbs = [
@@ -136,6 +136,46 @@ const weaponLd = {
         </div>
       </div>
 
+      <!-- Recommended Bonus Attributes -->
+      <div style="margin-bottom: var(--sp-8);">
+        <h2 style="font-family: var(--font-heading); font-size: var(--text-lg); font-weight: 800; color: #fff; margin: 0 0 var(--sp-4) 0; padding-bottom: var(--sp-2); border-bottom: 1px solid rgba(255,255,255,0.08);">Recommended Bonus Attributes for {weapon.name}</h2>
+        <div style="color: #c8c8d0; line-height: 1.75; font-size: var(--text-base);">
+          <p>When rolling bonus attributes on gear for a {weapon.type} build using the {weapon.name}, prioritize in this order:</p>
+          <ol style="padding-left: var(--sp-5); margin-top: var(--sp-2);">
+            <li><strong style="color: var(--accent);">Weapon {weapon.dmgType} Damage</strong> — Direct multiplier for this weapon's damage output. This is your highest-impact single stat.</li>
+            {weapon.type === 'SMG' ? (
+              <li><strong style="color: #fff;">Crit Damage</strong> — SMGs already get built-in Crit Chance, so stacking Crit Damage gives you more per-crit bang.</li>
+            ) : weapon.type === 'Marksman Rifle' ? (
+              <li><strong style="color: #fff;">Headshot Damage</strong> — MMRs live on headshots. This stat scales the hardest on precision weapons.</li>
+            ) : (
+              <li><strong style="color: #fff;">Crit Chance</strong> — Until you hit the soft cap (~60%), Crit Chance is the most efficient damage stat.</li>
+            )}
+            <li><strong style="color: #fff;">{weapon.type === 'Marksman Rifle' ? 'Crit Damage' : 'Crit Damage'}</strong> — After Crit Chance is healthy, stack Crit Damage for bigger crits.</li>
+            <li><strong style="color: #fff;">Damage to Elites</strong> — For PvE, this stat is a flat multiplier on every named and elite enemy.</li>
+          </ol>
+          <p style="margin-top: var(--sp-3);">Check the <a href="/database/bonus-attributes/" style="color: var(--accent);">bonus attributes database</a> for exact values and which gear slots can roll each stat.</p>
+        </div>
+      </div>
+
+      <!-- PvE vs PvP Viability -->
+      <div style="margin-bottom: var(--sp-8);">
+        <h2 style="font-family: var(--font-heading); font-size: var(--text-lg); font-weight: 800; color: #fff; margin: 0 0 var(--sp-4) 0; padding-bottom: var(--sp-2); border-bottom: 1px solid rgba(255,255,255,0.08);">{weapon.name} in PvE vs PvP</h2>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--sp-4);">
+          <div style="padding: var(--sp-4); background: rgba(109,170,69,0.08); border: 1px solid rgba(109,170,69,0.2); border-radius: 8px;">
+            <h3 style="font-family: var(--font-mono); font-size: var(--text-xs); font-weight: 700; text-transform: uppercase; color: #6DAA45; margin: 0 0 var(--sp-2) 0;">PvE Rating</h3>
+            <p style="color: #c8c8d0; font-size: var(--text-sm); line-height: 1.6; margin: 0;">
+              {weapon.type === 'Assault Rifle' ? `Solid all-rounder. ARs work in every PvE scenario — story missions, Heroic, Legendary. The ${weapon.rpm} RPM fire rate gives you good sustained damage without burning through ammo.` : weapon.type === 'SMG' ? `Situational. SMGs need close range to perform, which puts you at risk in Heroic and Legendary content. Best paired with a shield or aggressive playstyle.` : weapon.type === 'LMG' ? `Excellent. The ${weapon.mag}-round magazine means you're firing longer than anyone else. In group PvE, LMGs are the sustained damage king.` : weapon.type === 'Marksman Rifle' ? `Strong if your aim is good. One-shot potential on standard enemies makes MMRs the fastest clearers in the game — but you need consistent headshots.` : weapon.type === 'Shotgun' ? `Niche. You need a shield to safely get into shotgun range in harder PvE content. Works great on Bulwark Breacher builds, risky on everything else.` : `Works in PvE content. Match it with appropriate gear and talents for best results.`}
+            </p>
+          </div>
+          <div style="padding: var(--sp-4); background: rgba(239,68,68,0.08); border: 1px solid rgba(239,68,68,0.2); border-radius: 8px;">
+            <h3 style="font-family: var(--font-mono); font-size: var(--text-xs); font-weight: 700; text-transform: uppercase; color: #ef4444; margin: 0 0 var(--sp-2) 0;">PvP Rating</h3>
+            <p style="color: #c8c8d0; font-size: var(--text-sm); line-height: 1.6; margin: 0;">
+              {weapon.type === 'Assault Rifle' ? `Good. ARs are the safe PvP pick — consistent damage at medium range, no hard counters. Not the fastest TTK but not the slowest either.` : weapon.type === 'SMG' ? `Excellent. Built-in Crit Chance + close-range damage bonuses make SMGs the fastest TTK weapons in PvP. Lady Death is the king, but any SMG with Killer talent shreds.` : weapon.type === 'LMG' ? `Decent for suppression. LMGs are better at zone control than dueling — pin enemies behind cover while your team flanks.` : weapon.type === 'Marksman Rifle' ? `High risk, high reward. If you can hit headshots under PvP pressure, MMRs can one-shot. If you miss, you're dead before the next shot chambers.` : weapon.type === 'Shotgun' ? `Strong in close quarters. Shotguns paired with a Bulwark shield are the ultimate "around the corner" PvP weapon. One blast at point-blank range can delete a player.` : `PvP viability depends on your build and playstyle.`}
+            </p>
+          </div>
+        </div>
+      </div>
+
       <!-- How to Farm -->
       <div style="margin-bottom: var(--sp-8);">
         <h2 style="font-family: var(--font-heading); font-size: var(--text-lg); font-weight: 800; color: #fff; margin: 0 0 var(--sp-4) 0; padding-bottom: var(--sp-2); border-bottom: 1px solid rgba(255,255,255,0.08);">How to Get {weapon.name}</h2>
@@ -158,3 +198,4 @@ const weaponLd = {
     <AdSenseUnit />
   </div>
 </BaseLayout>
+

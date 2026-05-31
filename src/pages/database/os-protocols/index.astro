@@ -44,7 +44,7 @@ const faqs = [
   { question: "How do OS Protocols work in Division Resurgence?", answer: "OS Protocols are unique gear-talent items that slot into your Operating System loadout. Each protocol provides a main stat, three sub-stats (a specialization rating, a damage modifier, and a Health value), and a unique Talent that triggers under specific combat conditions. You can swap OS Protocols freely at any safe house or Base of Operations." },
   { question: "Can you change OS Protocols mid-mission in Division Resurgence?", answer: "No. OS Protocols can only be swapped outside of combat, at a Base of Operations, safe house, or any non-combat area. Once you start a mission or enter the Dark Zone, your equipped protocol is locked in until you return to a safe location." },
   { question: "What is the best OS Protocol for Vanguard?", answer: "Strategic Assistance (Engineering, High-End) is the strongest pick for Vanguard builds. The assist-based Signature Ability Charge Efficiency and Skill Cooldown reduction directly amplify the class's reliance on Tactical Link and Scanning Pulse uptime." },
-  { question: "What is the best OS Protocol for Field Medic?", answer: "Concerted Strike (Firepower, High-End) is the best pick for Field Medic builds. Skill hits within 20 meters grant +8% Damage stacks, which the class triggers constantly through Oxidizing Swarm and Support Station." },
+  { question: "What is the best OS Protocol for Field Medic?", answer: "Medical Excellence (Toughness, Superior) is the cornerstone pick for Combat Medicine builds. Healing an ally above 50% HP grants the whole team additional healing equal to 5% Max Health, and healing an ally below 50% grants the target 12.5% Max Health. For Tactical Pharma (Oxi Medic) builds, Pressing Matter (Engineering, Superior) gives a flat +10% Skill Cooldown Recovery that keeps your Oxidizing Swarm cycling faster." },
   { question: "What is the best OS Protocol for Bulwark?", answer: "Pummeling Shield (Toughness, High-End) is the defining protocol for Bulwark. The Stun proc on every 10 hits and the Extra Health regen on damage makes the class viable at Heroic difficulty." },
   { question: "What is the best OS Protocol for Demolitionist?", answer: "Surgical Engineering (Engineering, High-End) is the strongest Demolitionist pick. The 60% chance of +16% Skill Critical Damage on Skill Crits scales with the class's natural skill crit chance from Artillery Turret and Explosive Seeker Mine." },
   { question: "What is the best OS Protocol for Tech Operator?", answer: "Tactical Layering (Engineering, High-End) is the best Tech Operator pick. The +15% Engineering per skill deployment (up to 3 stacks) scales perfectly with Striker Drone uptime and skill rotation." },
@@ -129,6 +129,18 @@ const faqs = [
     {osProtocols.map((protocol) => (
       <a href={`/database/os-protocols/${slugify(protocol.name)}/`} class="db-card-link" data-rarity={protocol.rarity} data-attr1={protocol.attr1} id={slugify(protocol.name)}>
         <article class={`db-card db-card--${protocol.rarity.toLowerCase().replace(' ', '-')}`}>
+          {protocol.image && (
+            <div class="db-card__image-banner">
+              <img
+                src={protocol.image}
+                alt={protocol.imageAlt || `${protocol.name} OS Protocol`}
+                width="400"
+                height="120"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+          )}
           <div class="db-card__header">
             <div>
               <h2 class="db-card__title">{protocol.name}</h2>
@@ -283,6 +295,20 @@ const faqs = [
     background: rgba(242,104,34,0.2);
     border: 1px solid rgba(242,104,34,0.4);
     border-radius: 8px;
+  }
+
+  /* Card image banner */
+  .db-card__image-banner {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 12px 12px 0 0;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+    background: rgba(0,0,0,0.3);
+  }
+  .db-card__image-banner img {
+    display: block;
+    width: 100%;
+    height: auto;
   }
 
   /* Clickable card wrapper */

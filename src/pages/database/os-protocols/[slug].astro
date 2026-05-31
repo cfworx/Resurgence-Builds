@@ -14,7 +14,7 @@ export function getStaticPaths() {
 
 const { protocol } = Astro.props;
 
-const title = `${protocol.name} OS Protocol — Division Resurgence`;
+const title = `${protocol.name} OS Protocol`;
 const description = `${protocol.name}: ${protocol.rarity} ${protocol.specialization} OS Protocol. ${protocol.mainStat} ${protocol.mainValue}. Talent and stats breakdown.`;
 
 const breadcrumbs = [
@@ -30,9 +30,9 @@ const rarityColor = protocol.rarity === 'High-End' ? '#F5CC45' :
                     protocol.rarity === 'Superior' ? '#a855f7' :
                     protocol.rarity === 'Specialized' ? '#3b82f6' : '#888';
 
-const specClass = protocol.specialization === 'Engineering' ? 'Demolitionist or Tech Operator' :
+const specClass = protocol.specialization === 'Engineering' ? 'Demolitionist, Tech Operator, or Tactical Pharma' :
                   protocol.specialization === 'Firepower' ? 'Vanguard' :
-                  protocol.specialization === 'Toughness' ? 'Bulwark or Field Medic' : 'any specialization';
+                  protocol.specialization === 'Toughness' ? 'Bulwark or Field Medic (Combat Medicine)' : 'any specialization';
 
 const faqs = [
   {
@@ -63,10 +63,13 @@ const protocolLd = {
   mainEntityOfPage: { '@type': 'WebPage', '@id': `${siteUrl}/database/os-protocols/${slug}/` },
   datePublished: '2026-05-27',
   dateModified: '2026-05-30',
+  ...(protocol.image ? { image: { '@type': 'ImageObject', url: `${siteUrl}${protocol.image}`, width: 620, height: 310 } } : {}),
 };
+
+const ogImage = protocol.image ? `${siteUrl}${protocol.image}` : undefined;
 ---
 
-<BaseLayout title={title} description={description} breadcrumbs={breadcrumbs} jsonLd={protocolLd} faqs={faqs}>
+<BaseLayout title={title} description={description} breadcrumbs={breadcrumbs} jsonLd={protocolLd} faqs={faqs} ogImage={ogImage}>
   <div class="container section">
     <Breadcrumbs items={breadcrumbs} />
     <SectionTag label="OS Protocol" />
@@ -93,6 +96,19 @@ const protocolLd = {
           <span>Last verified for <strong>Patch 1.1.2.2</strong></span>
         </div>
       </div>
+
+      <!-- Protocol Image (if available) -->
+      {protocol.image && (
+        <div class="protocol-image-container">
+          <img
+            src={protocol.image}
+            alt={protocol.imageAlt || `${protocol.name} OS Protocol in Division Resurgence`}
+            loading="eager"
+            decoding="async"
+            class="protocol-image"
+          />
+        </div>
+      )}
 
       <!-- Talent Section -->
       <div class="protocol-section">
@@ -410,6 +426,22 @@ const protocolLd = {
     flex-wrap: wrap;
     transition: all 200ms ease;
   }
+  /* Protocol image */
+  .protocol-image-container {
+    margin-bottom: var(--sp-8);
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,0.08);
+    background: rgba(0,0,0,0.3);
+    max-width: 500px;
+  }
+
+  .protocol-image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
   .protocol-build-link:hover {
     background: rgba(242,104,34,0.12);
     border-color: var(--accent);

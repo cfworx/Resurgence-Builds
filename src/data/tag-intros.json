@@ -1,0 +1,102 @@
+﻿{
+  "glass-cannon": {
+    "slug": "glass-cannon",
+    "title": "Glass Cannon",
+    "intro": "Glass cannon builds in Division Resurgence trade survivability for raw damage output - and the payoff is disgusting. The archetype revolves around staying at range (usually 20+ meters), stacking Skill Multi-Shot Chance and Skill Intensity, and letting your Artillery Turret and Seeker Mine do the killing while you sit behind cover pressing buttons. The Toymaker II chest talent is the linchpin: +21% Skill Multi-Shot Chance, but only while no enemies are within 20 meters. Break that range and your damage craters. If you have the positioning discipline, glass cannon is one of the highest-DPS archetypes in the game."
+  },
+  "demolitionist": {
+    "slug": "demolitionist",
+    "title": "Demolitionist",
+    "intro": "The Demolitionist specialization is Division Resurgence's answer to 'what if I never fired my gun and still topped the damage charts.' This class stacks Engineering to scale skill damage multiplicatively, runs Artillery Turret and Explosive Seeker Mine as primary damage dealers, and uses the M32A1 grenade launcher signature for burst clear. The meta path is HE Munitions with Fire Cycle T2 gear - PVE Enjoyer's 333k DPS build is the community reference point. Demolitionist excels in PvE add-clear and struggles in PvP due to the glass-cannon positioning requirements."
+  },
+  "vanguard": {
+    "slug": "vanguard",
+    "title": "Vanguard",
+    "intro": "Vanguard is the most versatile specialization in Division Resurgence. The Commando subclass is a weapon-focused DPS powerhouse - stack Firepower, run Fury Strike or Phalanx Attack gear sets, and out-damage everyone with your Warlord or Strawberry Milkshake LMG. Scout Recon takes the opposite approach: stack Engineering, deploy Smart Cover and Scanning Pulse, and turn your entire squad into a damage-dealing machine. Both paths are endgame viable. The Tactical Link signature is a team-wide offensive buff that can swing boss fights and DZ extractions."
+  },
+  "bulwark": {
+    "slug": "bulwark",
+    "title": "Bulwark",
+    "intro": "Bulwark is the tank class - Phalanx Shield out, Shockwave Spike stunning enemies for 5 seconds, and the entire squad playing behind your cover. The Juggernaut subclass is the PvP terror of Division Resurgence right now: those stuns in the Dark Zone are a death sentence for anyone without a cleanse. The Breacher path proves tanks can do damage too - Saiynergy's 334k DPS shield build runs Fury Strike with Death From Afar and tops damage charts while face-tanking Legendary content. Every serious squad needs a Bulwark."
+  },
+  "field-medic": {
+    "slug": "field-medic",
+    "title": "Field Medic",
+    "intro": "Field Medic is the healer that makes Legendary difficulty possible. Without one, your squad's Bulwark folds in 20 seconds and your DPS players spend more time respawning than shooting. The Combat Medic path stacks Toughness for both survival and Defensive Measures damage scaling - you're a healer that also deals damage. Restoration Specialist goes all-in on healing output with Deep Focus and Captain Cow gear for near-permanent Support Station uptime. In DZ PvP, a good Field Medic turns an average squad into an unkillable nightmare."
+  },
+  "tech-operator": {
+    "slug": "tech-operator",
+    "title": "Tech Operator",
+    "intro": "Tech Operator is the skill-ceiling class. The Aegis Operator shield build scales damage off Engineering through a passive burst mechanic - Tampishach's 237k DPS Tech Aegis build with Long-term Effect 4pc and Brains Over Brawn is the community reference. Offensive Operator uses Striker Drone crits to apply Disoriented status, locking down enemies in PvP. Tech Op rewards players who understand cooldown management and skill positioning. In the right hands, it's a 1v2 or 1v3 class in the Dark Zone."
+  },
+  "dps": {
+    "slug": "dps",
+    "title": "DPS",
+    "intro": "DPS builds in Division Resurgence come in two flavors: weapon-based and skill-based. Weapon DPS builds stack Firepower, run Fury Strike or Phalanx Attack gear sets, and use ARs, LMGs, or SMGs as primary damage dealers. Skill DPS builds stack Engineering and let Artillery Turrets, Seeker Mines, and Striker Drones do the work. Both paths can push 300k+ DPS in endgame content. The meta shifts between them with each patch - check the tier list for what's on top right now."
+  },
+  "skill-build": {
+    "slug": "skill-build",
+    "title": "Skill Build",
+    "intro": "Skill builds in Division Resurgence scale through Engineering rather than Firepower. Your weapons are secondary - damage comes from Artillery Turrets, Explosive Seeker Mines, Striker Drones, and other deployed skills. The key stats to stack: Engineering (multiplicative scaling), Skill Intensity, Skill Critical Chance, Skill Critical Damage, and Skill Multi-Shot Chance. Demolitionist and Tech Operator are the natural skill build classes, though any specialization can run skill-focused loadouts with the right gear."
+  },
+  "exotic": {
+    "slug": "exotic",
+    "title": "Exotic",
+    "intro": "Exotic weapons in Division Resurgence have unique talents that can't roll on standard weapons. The Warlord, Lady Death, Strawberry Milkshake, and other exotics are build-defining - the talent shapes your entire loadout around it. Exotics drop from the standard loot pool but are rare. When you find one, check the talent before scrapping anything else. Some exotics are BiS (best in slot) across multiple builds; others are niche. Our exotic weapon database has the full breakdown for each one."
+  },
+  "lady-death": {
+    "slug": "lady-death",
+    "title": "Lady Death",
+    "intro": "Lady Death is an exotic SMG that rewards aggressive, in-your-face playstyles. The unique talent grants stacking damage bonuses as you close distance with enemies - the closer you get, the harder you hit. It's the signature weapon for aggressive Vanguard Commando builds and Bulwark Breacher shield pushes. In DZ PvP, Lady Death is one of the most feared weapons because the close-range damage bonus stacks with SMG base crit chance for devastating burst. Farm it from the standard SMG loot pool."
+  },
+  "warlord": {
+    "slug": "warlord",
+    "title": "Warlord",
+    "intro": "The Warlord is an exotic Assault Rifle that scales with Engineering - making it the go-to primary for skill builds that still want to shoot things. It pairs naturally with Demolitionist and Tech Operator loadouts where your weapon acts as a stat stick while skills do the heavy lifting. PVE Enjoyer runs a Warlord on his 333k DPS Glass Cannon build, openly admitting his current roll has a bad main attribute and the build still destroys. That's how strong the Engineering synergy is."
+  },
+  "strawberry-milkshake": {
+    "slug": "strawberry-milkshake",
+    "title": "Strawberry Milkshake",
+    "intro": "The Strawberry Milkshake is an exotic LMG with a unique sustained-fire talent that rewards keeping the trigger held. The longer you fire without releasing, the stronger the damage buff stacks. Combined with Phalanx Attack gear set and a 100+ round magazine, this weapon turns Vanguard DPS builds into sustained-damage monsters. The Milkshake Machine build on this site is the community reference for how to maximize this exotic's potential."
+  },
+  "toymaker": {
+    "slug": "toymaker",
+    "title": "Toymaker",
+    "intro": "Toymaker is a chest piece body armor talent that grants +21% Skill Multi-Shot Chance - but only while no enemies are within 20 meters. This single talent defines the glass-cannon playstyle for skill builds in Division Resurgence. If you maintain range discipline, Toymaker is the highest single-source Skill Multi-Shot Chance in the game. Break the 20m rule and you lose it instantly. Every Demolitionist glass cannon build runs Toymaker or wishes they had the roll for it."
+  },
+  "fire-cycle": {
+    "slug": "fire-cycle",
+    "title": "Fire Cycle",
+    "intro": "Fire Cycle is a Tier 2 gear set that forms the backbone of the current Demolitionist meta. The 4-piece bonus grants +12% Skill Multi-Shot Chance passively - no conditions, no positioning requirements. Combined with Toymaker II and sub-attribute stacking, Fire Cycle pushes Skill Multi-Shot Chance into the 35-45% range. The set only drops from T2 content (requires Conflicts Level 100 or T2 PvE unlock). If you're not there yet, 4pc Jackpot is the bridge."
+  },
+  "pressing-matter": {
+    "slug": "pressing-matter",
+    "title": "Pressing Matter",
+    "intro": "Pressing Matter is an Engineering OS Protocol that grants +24% Skill Intensity and a talent providing +10% Skill Cooldown Recovery. It's the standard OS Protocol for Demolitionist glass cannon builds and most Engineering-stacking loadouts. The cooldown reduction means more skill casts per fight, which means more multi-shot triggers. PVE Enjoyer runs it on his 333k DPS build. Farm it from weekly bounties - multiple copies drop within a week or two of consistent bounty farming."
+  },
+  "jackpot": {
+    "slug": "jackpot",
+    "title": "Jackpot",
+    "intro": "Jackpot is a gear set that stacks Skill Critical stats. The 2-piece bonus gives +12% Skill Radius, the 3-piece bonus adds Signature Ability charge from defeated enemies, and the 4-piece grants Skill Damage to Elites and bonus Skill Critical Damage. It's the universal skill build gear set - works on every class, every skill archetype. 4pc Jackpot is the recommended bridge build for Demolitionist players who haven't unlocked Fire Cycle T2 yet."
+  },
+  "os-protocol": {
+    "slug": "os-protocol",
+    "title": "OS Protocol",
+    "intro": "OS Protocols are Division Resurgence's version of a sixth gear piece - a chip that provides a large stat bonus and a unique talent. They come in three specializations (Engineering, Firepower, Toughness) and three rarities (Specialized, Superior, High-End). The talent on your OS Protocol stacks multiplicatively with gear set bonuses and weapon talents, making it one of the most impactful single choices in your build. Our OS Protocol database has every protocol with stats, talents, and build recommendations."
+  },
+  "build-guide": {
+    "slug": "build-guide",
+    "title": "Build Guide",
+    "intro": "Every build guide on Resurgence Builds is verified in-game on the current patch. We don't publish theory-crafted loadouts from spreadsheets - if it's on this site, someone ran it in Legendary missions, Dark Zone PvP, or Conflicts and recorded the results. Each guide includes the full gear breakdown, talent choices, OS Protocol selection, skill mod setup, and farming path. Use the Build Planner at /builder/ to customize any loadout before you start farming."
+  },
+  "patch-1-2-1": {
+    "slug": "patch-1-2-1",
+    "title": "Patch 1.2.1",
+    "intro": "Patch 1.2.1 is the current live version of Division Resurgence. All builds and database entries on Resurgence Builds are verified against this patch. Key changes in 1.2.1 included balance adjustments to several gear sets and OS Protocols. Check our patch notes section for the full breakdown of what changed and how it affects the meta."
+  },
+  "beginner": {
+    "slug": "beginner",
+    "title": "Beginner",
+    "intro": "New to Division Resurgence? Start here. Our beginner-tagged content covers the fundamentals: how specializations work, what stats to prioritize on your first build, how gear sets and OS Protocols interact, and the fastest path to endgame. Don't worry about min-maxing your first loadout - focus on understanding the systems. Once you hit the endgame gear grind, come back and pick a build from the tier list."
+  }
+}

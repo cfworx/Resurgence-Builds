@@ -13,7 +13,9 @@
     "attr3": "Health",
     "val3": "+2,554",
     "talentDescription": "Shooting for 3 seconds enhances the next Skill for 8 seconds. Dealing damage with the Enhanced Skill creates an explosion with a radius of 5 meters around it that deals damage equal to 1600% Engineering.",
-    "cooldown": "5 seconds"
+    "cooldown": "5 seconds",
+    "image": "/images/os-protocols/explosive-charge-os-protocol-division-resurgence.png",
+    "imageAlt": "Explosive Charge OS Protocol in Division Resurgence showing the Engineering gear mod with orange glow effect and engineering class icon"
   },
   {
     "id": "os-2",
