@@ -57,7 +57,7 @@ The loop is simple: stack Engineering through Torrential Downpour and Fully Char
 | Slot | Set | Talent | Core | Attribute Bonus 1 | Attribute Bonus 2 |
 |---|---|---|---|---|---|
 | Mask | Boom Shakalaka | - | Engineering | Skill Cooldown Recovery | Skill Duration |
-| Chest | Mechanical Expert | **Socialite** | Engineering | Armor | Damage Reduction |
+| Body Armor | Mechanical Expert | **Socialite** | Engineering | Armor | Damage Reduction |
 | Backpack | Mechanical Expert | **Brainstorm** | Engineering | Skill Duration | Skill Cooldown Recovery |
 | Gloves | Mechanical Expert | - | Engineering | Skill Duration | Skill Cooldown Recovery |
 | Holster | Boom Shakalaka | - | Engineering | Sig. Ability Charge Efficiency | Skill Duration |
@@ -92,7 +92,7 @@ The loop is simple: stack Engineering through Torrential Downpour and Fully Char
 
 ### Engineering on Every Piece
 
-AgentHuntzman's video shows mixed cores (Toughness on chest, Firepower on backpack/gloves/kneepads). We recommend Engineering on every piece. More Engineering = more Smart Cover weapon damage for the whole team. That's the entire point of the build.
+AgentHuntzman's video shows mixed cores (Toughness on Body Armor, Firepower on backpack/gloves/kneepads). We recommend Engineering on every piece. More Engineering = more Smart Cover weapon damage for the whole team. That's the entire point of the build.
 
 ### Mechanical Expert 4-Piece
 
@@ -102,15 +102,15 @@ The 2pc (+9.6% Skill Duration) and 3pc (-9.0% CDR) keep your skills cycling with
 
 The 2pc (-6.0% CDR) stacks with Mechanical Expert's 3pc for even faster skill cycling. You only slot 2 pieces, so the 3pc and 4pc bonuses are not active.
 
-### Chest: Socialite (And Real Alternatives)
+### Body Armor: Socialite (And Real Alternatives)
 
 *"Grants +10% Movement Speed when there are no enemies within 20m. Grants +36% Armor while within 20m of an enemy."*
 
 You're sitting in your Smart Cover while enemies push toward you, and it rewards that with a massive armor boost at the moment of contact. Solid pick, and AgentHuntzman's choice.
 
-**Attribute bonuses on the chest:** Roll Armor and Damage Reduction here, not Duration or CDR. The chest is the one survivability slot in the build. Socialite's +36% Armor scales directly off your Armor stat, so more Armor in your bonus slots means a bigger shield when enemies close range. Damage Reduction stacks on top. The rest of your gear handles uptime. The chest handles keeping you alive long enough to use it.
+**Attribute bonuses on the Body Armor:** Roll Armor and Damage Reduction here, not Duration or CDR. The Body Armor is the one survivability slot in the build. Socialite's +36% Armor scales directly off your Armor stat, so more Armor in your bonus slots means a bigger shield when enemies close range. Damage Reduction stacks on top. The rest of your gear handles uptime. The Body Armor handles keeping you alive long enough to use it.
 
-But the chest slot has genuine competitors that are worth knowing:
+But the Body Armor slot has genuine competitors that are worth knowing:
 
 **Deep Focus:** *"Grants +28% Skill Duration but inflicts -10% Skill Radius."*
 
@@ -251,7 +251,7 @@ Run it on Vanguard Recon when your team coordinates around the cover. If your te
 | Drop | Must Have |
 |---|---|
 | Boom Shakalaka mask/holster | Engineering core + Skill CDR or Skill Duration |
-| Mechanical Expert chest | Engineering core + Socialite talent |
+| Mechanical Expert Body Armor | Engineering core + Socialite talent |
 | Mechanical Expert backpack | Engineering core + Brainstorm talent |
 | Mechanical Expert gloves/kneepads | Engineering core + Skill CDR or Skill Duration |
 | Police M4 | Torrential Downpour + Rapid Charge |

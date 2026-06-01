@@ -38,7 +38,7 @@ faqs:
     answer: "No. Resurgence is free-to-play with optional convenience and cosmetic purchases. Every piece of gear in this build was earned through gameplay. Spending money can speed up the grind, but it cannot buy positioning, game sense, or the knowledge to stack the right talents. Your dad reflexes are still the bottleneck."
 ---
 
-**By RapidF5 (via Saiynergy) ·** Patch 1.1.2.2 ·
+**By RapidF5 (via Saiynergy) Â·** Patch 1.1.2.2 Â·
 
 ## What This Build Does
 
@@ -58,13 +58,13 @@ This is a **Breacher shield build** that anchors a doorway and refuses to leave.
 | Slot | Set | Talent | Core | Attribute Bonus 1 | Attribute Bonus 2 |
 |---|---|---|---|---|---|
 | Mask | Fury Strike or Phalanx Attack | - | Firepower | Headshot Damage | Weapon Crit Hit Chance |
-| Chest | Fury Strike or Phalanx Attack | **Unflinching** | Armor | Weapon Crit Hit Chance | Skill Crit Chance |
+| Body Armor | Fury Strike or Phalanx Attack | **Unflinching** | Armor | Weapon Crit Hit Chance | Skill Crit Chance |
 | Backpack | Fury Strike ("Rally Point Secure Pack") | **Hidden Impact 2** | Firepower | Skill Crit Chance +5.17% | Weapon Crit Hit Damage +4.68% |
 | Gloves | Fury Strike ("Lochy" Hand Savers, T0) | - | Firepower | Weapon Crit Hit Chance +4.67% | Weapon Crit Hit Damage +8.89% |
 | Holster | Fury Strike or Phalanx Attack | - | Firepower | Weapon Crit Hit Damage | Headshot Damage |
 | Knee Pads | Phalanx Attack (Phalanx HX 02, T1) | - | Firepower | Weapon Crit Hit Damage +6.75% | Headshot Damage +10.72% |
 
-**Core roll philosophy:** Firepower on every slot except the chest, which rolls Armor. The chest is the survivability anchor so the Breacher can hold an angle other classes have to retreat from. Every other slot dumps Firepower into the M4 and Vector.
+**Core roll philosophy:** Firepower on every slot except the Body Armor, which rolls Armor. The Body Armor is the survivability anchor so the Breacher can hold an angle other classes have to retreat from. Every other slot dumps Firepower into the M4 and Vector.
 
 **Priority sub-attributes:** Weapon Crit Hit Damage, Headshot Damage, Weapon Crit Hit Chance. Saiynergy: *"What's really most important is you always want to look for something that has all weapon damage."*
 
@@ -72,8 +72,8 @@ This is a **Breacher shield build** that anchors a doorway and refuses to leave.
 
 | Slot | Item | Details |
 |---|---|---|
-| **Primary** | Lightweight M4 (T2, AR, Level 45) | **Killer + Breadbasket** (RapidF5 rec) · Long Range Scope · Suppressor · Extended Magazine · Vertical Grip |
-| **Secondary** | First Wave Vector 45 ACP (T2, SMG, Level 44) | **Strained + Adaptation** · Red Dot · Extended Magazine · Suppressor |
+| **Primary** | Lightweight M4 (T2, AR, Level 45) | **Killer + Breadbasket** (RapidF5 rec) Â· Long Range Scope Â· Suppressor Â· Extended Magazine Â· Vertical Grip |
+| **Secondary** | First Wave Vector 45 ACP (T2, SMG, Level 44) | **Strained + Adaptation** Â· Red Dot Â· Extended Magazine Â· Suppressor |
 | **OS Protocol** | **Death From Afar** (High-End) | Grants Firepower equal to 21.60% Headshot Damage, capped at 54% Firepower |
 | **Skill 1** | Ballistic Shield | Mobile cover, Breacher signature kit |
 | **Skill 2** | Shockwave Spike Mk.3 | AoE damage reduction debuff + crit chance refresh |
@@ -103,11 +103,11 @@ This is a **Breacher shield build** that anchors a doorway and refuses to leave.
 
 - **2pc:** Magazine Size +18.0%, Rate of Fire +18.0%. Combined with Strained on the Vector, the SMG fires through a full squad without a reload window for them to peek you.
 
-### Chest: Unflinching (Armor Roll)
+### Body Armor: Unflinching (Armor Roll)
 
 *Taking damage has a 70% chance of restoring Health equal to 300% Toughness. Talent Cooldown: 2 seconds.*
 
-The chest is the only Armor-rolled piece in the build, and Unflinching heals you off your own Toughness stat every two seconds. That is how Saiynergy holds angles other classes fall back from.
+The Body Armor is the only Armor-rolled piece in the build, and Unflinching heals you off your own Toughness stat every two seconds. That is how Saiynergy holds angles other classes fall back from.
 
 ### Backpack: Hidden Impact 2 ("Rally Point Secure Pack")
 
@@ -133,7 +133,7 @@ Saiynergy: *"If you max this out, it actually increases not only your power scor
 
 Saiynergy runs **Death From Afar** as his primary OS Protocol.
 
-### 1. Death From Afar (High-End) · RECOMMENDED
+### 1. Death From Afar (High-End) Â· RECOMMENDED
 
 *"Grants Firepower equal to 21.60% Headshot Damage, capped at 54% Firepower."*
 
@@ -141,19 +141,19 @@ Every piece of gear in the build pushes Headshot Damage, and Death From Afar con
 
 **Stats:** Weapon Damage +24.00%, Firepower +77, All Weapon Damage +62, Health +2,043.
 
-### 2. Tight Grouping (Superior) · Strong Alternative
+### 2. Tight Grouping (Superior) Â· Strong Alternative
 
 *"Grants +18% Weapon Damage. Weapon Critical Hits behind cover have a 5% chance of granting +10% Weapon Critical Hit Damage for 5 seconds, stacking up to 3 times."*
 
 Best stopgap if Death From Afar hasn't dropped. Flat +18% Weapon Damage baseline, behind-cover crit damage proc stacks with Hidden Impact 2.
 
-### 3. Trench Fighter (High-End) · Cover-Anchored Pick
+### 3. Trench Fighter (High-End) Â· Cover-Anchored Pick
 
 *"Grants +30% Weapon Critical Hit Damage when behind cover."*
 
 Flat +30% WCHD stacks with everything the Breacher is doing. Lower ceiling than Death From Afar because it doesn't scale off Headshot Damage, but consistent.
 
-### 4. Close Quarters Menace (High-End) · Close-Range Pivot
+### 4. Close Quarters Menace (High-End) Â· Close-Range Pivot
 
 *"Grants +15% Skill Intensity and Weapon Damage when there are enemies within 20 meters."*
 
@@ -198,7 +198,7 @@ Backup weapons for farming attachments and talents:
 |---|---|
 | Fury Strike gear (4pc) | Weapon Crit Hit Damage, Headshot Damage, Weapon Crit Hit Chance |
 | Phalanx Attack gear (2pc) | Weapon Crit Hit Damage, Headshot Damage |
-| Chest (any set) | Unflinching talent, Armor core |
+| Body Armor (any set) | Unflinching talent, Armor core |
 | Backpack (any set) | Hidden Impact talent, Skill Crit Chance, Weapon Crit Hit Damage |
 | Lightweight M4 (AR) | Killer + Breadbasket talents |
 | Vector 45 ACP (SMG) | Strained + Adaptation talents |
@@ -212,4 +212,4 @@ Backup weapons for farming attachments and talents:
 
 Send this to the buddy in your squad who keeps trying to push without cover. Tell him it's a healer build. Watch him salvage his Phalanx mask. The full walkthrough from Saiynergy is on [YouTube](https://www.youtube.com/watch?v=28lsRrnJ6Vg), and ATLAS Division is recruiting on American servers: [Discord](https://discord.gg/e7EUUBbBYa).
 
-Follow Saiynergy: [Twitter](https://twitter.com/Saiynergy) · [Twitch](https://twitch.tv/saiynergy) · [Kick](https://kick.com/saiynergy) · [YouTube](https://www.youtube.com/@Saiynergy)
+Follow Saiynergy: [Twitter](https://twitter.com/Saiynergy) Â· [Twitch](https://twitch.tv/saiynergy) Â· [Kick](https://kick.com/saiynergy) Â· [YouTube](https://www.youtube.com/@Saiynergy)

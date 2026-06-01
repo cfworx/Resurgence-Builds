@@ -17,11 +17,11 @@ faqs:
   - question: "Should I stack all Engineering or all Firepower on my build?"
     answer: "Pick ONE and go all in. The absolute worst thing you can do is split 50/50. A build with 1,700 Engineering and 400 Firepower is dramatically stronger than a build with 1,050 of each, because the damage formula multiplies your core stat at several stages. Splitting dilutes every multiplier. If you're a DPS build, go Firepower. If you're a support or skill build, go Engineering. If you're a tank, go Toughness. There is no such thing as a 'balanced' endgame build. There are only focused builds and weak ones."
   - question: "Why do I keep dying in Legendary missions?"
-    answer: "90% of the time it's positioning, not toughness. You're peeking too long, standing in the open, or fighting from angles that expose you to four enemies at once. Move to cover that only exposes you to one or two enemies at a time. Use Smart Cover. Let enemies come to your kill zone instead of running into theirs. The other 10% of the time, yes, your armor is too low. Run Socialite on chest. Destiny players had ten years to learn this. You get one paragraph."
+    answer: "90% of the time it's positioning, not toughness. You're peeking too long, standing in the open, or fighting from angles that expose you to four enemies at once. Move to cover that only exposes you to one or two enemies at a time. Use Smart Cover. Let enemies come to your kill zone instead of running into theirs. The other 10% of the time, yes, your armor is too low. Run Socialite on Body Armor. Destiny players had ten years to learn this. You get one paragraph."
   - question: "Does RPM actually matter more than damage per bullet?"
     answer: "For any build that relies on procs, stacks, or talent triggers: absolutely yes. A P90 firing 900 rounds per minute generates talent procs three times faster than a marksman rifle firing 300 RPM. If your build needs to hit enemies 10 times in 5 seconds to trigger Torrential Downpour, the P90 gets there in 0.67 seconds. The marksman rifle needs 2 seconds. In a game where buff windows are 12 seconds long, that speed difference is the entire build."
   - question: "What's the fastest way to fix a weak build in Division Resurgence?"
-    answer: "Step 1: Pick one core stat and put it on every piece. Step 2: Make sure your chest and backpack talents actually synergize with your playstyle, not just whatever dropped first. Step 3: Check if your weapon's damage type matches the content you're running. Step 4: Stop recalibrating for health and start recalibrating for damage or utility. You can do all four of these in about 20 minutes and your build will feel like a completely different character. Faster than waiting for Ubisoft to buff your favorite weapon, that's for sure."
+    answer: "Step 1: Pick one core stat and put it on every piece. Step 2: Make sure your Body Armor and backpack talents actually synergize with your playstyle, not just whatever dropped first. Step 3: Check if your weapon's damage type matches the content you're running. Step 4: Stop recalibrating for health and start recalibrating for damage or utility. You can do all four of these in about 20 minutes and your build will feel like a completely different character. Faster than waiting for Ubisoft to buff your favorite weapon, that's for sure."
   - question: "What are the hidden mechanics in Division Resurgence?"
     answer: "Division Resurgence has several undocumented mechanics including cover-to-cover damage reduction, weak point multipliers, status effect stacking rules, armor regeneration breakpoints, skill cooldown interactions, talent proc priorities, and hidden aim assist adjustments that significantly impact gameplay."
   - question: "Does cover-to-cover movement give damage reduction in Division Resurgence?"
@@ -139,7 +139,7 @@ The damage formula multiplies your core stat at several stages. If you have 1,70
 
 The math gets worse the more multipliers your build has. A support build with five different Engineering-scaling effects loses more from splitting stats than a DPS build with two Firepower-scaling effects. This is why the best builds in the game are absolute psychos about one stat and completely ignore the others.
 
-**The rule:** Pick ONE core stat and max it on every gear piece. Use your chest talent (Socialite for armor, Glass Cannon for damage) to cover survivability. Use weapon talents to cover whatever your core stat doesn't. Let set bonuses fill the gaps.
+**The rule:** Pick ONE core stat and max it on every gear piece. Use your Body Armor talent (Socialite for armor, Glass Cannon for damage) to cover survivability. Use weapon talents to cover whatever your core stat doesn't. Let set bonuses fill the gaps.
 
 A build with 1,700 Engineering and 400 Firepower will always outperform a build with 1,050 of each. Always. The focused build doesn't just hit harder per stat point. It multiplies harder per stat point. And in a game built on multipliers, that's everything.
 
@@ -153,7 +153,7 @@ Every recalibration slot spent on comfort (health, armor, damage reduction) is a
 
 **The uncomfortable truth:** If you're dying in Legendary, it's almost always positioning. You're peeking too long. You're standing in the open. You're fighting from an angle that exposes you to four enemies instead of one. Swapping a damage stat for a health stat doesn't fix bad positioning. It just lets you survive bad positioning slightly longer before dying anyway.
 
-The fix: Use your chest talent for survivability (Socialite gives +36% armor for free just by being near enemies, which you already are). Keep every other slot focused on damage or utility. If you're still dying after that, read Mechanic 4 again.
+The fix: Use your Body Armor talent for survivability (Socialite gives +36% armor for free just by being near enemies, which you already are). Keep every other slot focused on damage or utility. If you're still dying after that, read Mechanic 4 again.
 
 ---
 

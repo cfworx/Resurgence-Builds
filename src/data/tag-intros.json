@@ -2,7 +2,7 @@
   "glass-cannon": {
     "slug": "glass-cannon",
     "title": "Glass Cannon",
-    "intro": "Glass cannon builds in Division Resurgence trade survivability for raw damage output - and the payoff is disgusting. The archetype revolves around staying at range (usually 20+ meters), stacking Skill Multi-Shot Chance and Skill Intensity, and letting your Artillery Turret and Seeker Mine do the killing while you sit behind cover pressing buttons. The Toymaker II chest talent is the linchpin: +21% Skill Multi-Shot Chance, but only while no enemies are within 20 meters. Break that range and your damage craters. If you have the positioning discipline, glass cannon is one of the highest-DPS archetypes in the game."
+    "intro": "Glass cannon builds in Division Resurgence trade survivability for raw damage output - and the payoff is disgusting. The archetype revolves around staying at range (usually 20+ meters), stacking Skill Multi-Shot Chance and Skill Intensity, and letting your Artillery Turret and Seeker Mine do the killing while you sit behind cover pressing buttons. The Toymaker II Body Armor talent is the linchpin: +21% Skill Multi-Shot Chance, but only while no enemies are within 20 meters. Break that range and your damage craters. If you have the positioning discipline, glass cannon is one of the highest-DPS archetypes in the game."
   },
   "demolitionist": {
     "slug": "demolitionist",
@@ -62,7 +62,7 @@
   "toymaker": {
     "slug": "toymaker",
     "title": "Toymaker",
-    "intro": "Toymaker is a chest piece body armor talent that grants +21% Skill Multi-Shot Chance - but only while no enemies are within 20 meters. This single talent defines the glass-cannon playstyle for skill builds in Division Resurgence. If you maintain range discipline, Toymaker is the highest single-source Skill Multi-Shot Chance in the game. Break the 20m rule and you lose it instantly. Every Demolitionist glass cannon build runs Toymaker or wishes they had the roll for it."
+    "intro": "Toymaker is a Body Armor talent that grants +21% Skill Multi-Shot Chance - but only while no enemies are within 20 meters. This single talent defines the glass-cannon playstyle for skill builds in Division Resurgence. If you maintain range discipline, Toymaker is the highest single-source Skill Multi-Shot Chance in the game. Break the 20m rule and you lose it instantly. Every Demolitionist glass cannon build runs Toymaker or wishes they had the roll for it."
   },
   "fire-cycle": {
     "slug": "fire-cycle",

@@ -17,7 +17,7 @@ shareTitle: "Bring the blender"
 shareText: "118 rounds. 37% Multi-Shot. Glass Cannon justified. This is The Milkshake Machine."
 faqs:
   - question: "What is the best Strawberry Milkshake build in Division Resurgence?"
-    answer: "The Milkshake Machine. Phalanx Attack 4pc + Fury Strike 2pc, Vanguard class, with Glass Cannon on the chest and Inspiration on the backpack. Tactical Smart Cover and Scanning Pulse as the skills, Tactical Link as the signature. The build uses In Sync as the engine, double-dipping +18% Weapon Damage and +18% Skill Damage by chaining Scanning Pulse into Strawberry Milkshake fire. Swift Taunt's Extra Health buffer keeps Glass Cannon viable. Dominating Presence is the OS Protocol."
+    answer: "The Milkshake Machine. Phalanx Attack 4pc + Fury Strike 2pc, Vanguard class, with Glass Cannon on the Body Armor and Inspiration on the backpack. Tactical Smart Cover and Scanning Pulse as the skills, Tactical Link as the signature. The build uses In Sync as the engine, double-dipping +18% Weapon Damage and +18% Skill Damage by chaining Scanning Pulse into Strawberry Milkshake fire. Swift Taunt's Extra Health buffer keeps Glass Cannon viable. Dominating Presence is the OS Protocol."
   - question: "Why is Strawberry Milkshake so good with In Sync?"
     answer: "Because the cast itself does the work. Scanning Pulse counts as a skill hit. That activates In Sync's skill-side buff instantly. The first bullet of SM activates the weapon-side buff. Both buffs are live in the same moment. Both double. You go from +9% each to +18% each from the first bullet of every engagement. No ramp-up. No stacking window. Just immediate uptime."
   - question: "Is Glass Cannon safe to run on this build?"
@@ -34,11 +34,11 @@ faqs:
     answer: "Not for this build. Every piece of The Milkshake Machine drops from in-game content. Strawberry Milkshake is the only exotic gate, and exotics are farmable. The build scales through gear rolls and skill mod combo sets, not premium currency."
 ---
 
-**By RapidF5 ·** Patch 1.1.2.2 ·
+**By RapidF5 Â·** Patch 1.1.2.2 Â·
 
 > 118 rounds. ~37% Multi-Shot. In Sync double-dip from bullet one. Glass Cannon justified by Swift Taunt. Dominating Presence rewarding you for standing in the worst possible spot. We call it **The Milkshake Machine** because it shreds enemies the way a blender shreds ice - and because naming a build "Strawberry Milkshake Optimal" has the same energy as naming your fantasy football team "Team 1."
 
-> ⚡ **Not meta. Not trying to be.** This is a fun build. It won't top the leaderboard and it's not what you bring when your clan is actually trying. It's what you bring when you want to watch Multi-Shot crits turn a room into a smoothie while your wife asks why you're cackling at your phone at 11pm. Want meta? Check the [Build Tier List](/tier-list/). Want a good time? Keep reading.
+> âš¡ **Not meta. Not trying to be.** This is a fun build. It won't top the leaderboard and it's not what you bring when your clan is actually trying. It's what you bring when you want to watch Multi-Shot crits turn a room into a smoothie while your wife asks why you're cackling at your phone at 11pm. Want meta? Check the [Build Tier List](/tier-list/). Want a good time? Keep reading.
 
 The core loop: drop Smart Cover, cast Scanning Pulse (instant In Sync skill-side buff), fire Strawberry Milkshake (In Sync weapon-side buff on first hit). Both buffs double. **+18% Weapon Damage and +18% Skill Damage from bullet one**, into Pulsed enemies taking +20% vulnerability, every third-ish bullet firing twice via Multi-Shot, Glass Cannon adding +20% Damage, Inspiration granting +30% RoF. The 118-round mag and Field Supplies refilling on Pulsed kills means you almost never reload. A lot of moving parts - that's the whole point. This one rewards the kind of person who reads patch notes on the toilet.
 
@@ -86,7 +86,7 @@ This is not a glass-cannon-and-die build. The Extra Health from Swift Taunt is u
 | SLOT | SET | TALENT | CORE | BONUS 1 | BONUS 2 |
 |---|---|---|---|---|---|
 | Mask | Phalanx Attack | none | Firepower | WCHC | WCHD |
-| Chest | Phalanx Attack | **Glass Cannon** | Firepower | WCHD | Weapon Damage |
+| Body Armor | Phalanx Attack | **Glass Cannon** | Firepower | WCHD | Weapon Damage |
 | Backpack | Fury Strike | **Inspiration** | Firepower | WCHD | Weapon Damage |
 | Gloves | Phalanx Attack | none | Firepower | WCHC | WCHD |
 | Holster | Phalanx Attack | none | Firepower | WCHD | Weapon Damage |
@@ -124,7 +124,7 @@ Three skill mod combo sets, one per skill. All confirmed in-game on Patch 1.1.2.
 
 | SKILL | ALT MOD | WHEN TO USE IT |
 |---|---|---|
-| Scanning Pulse | **Tactical Insight** | Deploying Scanning Pulse restores 48 Signature Ability Charges, increased by 64 if there are more than 3 enemies within 70 meters. Swap Field Supplies for this if you want maximum Tactical Link uptime over mag sustain. Creates a Pulse → Link → kill → Commando WCHC → repeat loop. |
+| Scanning Pulse | **Tactical Insight** | Deploying Scanning Pulse restores 48 Signature Ability Charges, increased by 64 if there are more than 3 enemies within 70 meters. Swap Field Supplies for this if you want maximum Tactical Link uptime over mag sustain. Creates a Pulse â†’ Link â†’ kill â†’ Commando WCHC â†’ repeat loop. |
 
 **Alternative Link mod:**
 
@@ -136,7 +136,7 @@ Three skill mod combo sets, one per skill. All confirmed in-game on Patch 1.1.2.
 
 ## Why Each Gear Piece Matters in This Build
 
-**Chest: Glass Cannon (T2).** +20% Damage, -10% Damage Reduction. Yes, Glass Cannon. No, you won't die every 4 seconds. Swift Taunt grants 25% Max Health as Extra Health for 10 seconds every time you hit three enemies in five seconds. At 550 RPM into a crowd, that buff is basically a permanent force field. Your spouse will lose more health stepping on a LEGO than you'll notice from the -10% DR.
+**Body Armor: Glass Cannon (T2).** +20% Damage, -10% Damage Reduction. Yes, Glass Cannon. No, you won't die every 4 seconds. Swift Taunt grants 25% Max Health as Extra Health for 10 seconds every time you hit three enemies in five seconds. At 550 RPM into a crowd, that buff is basically a permanent force field. Your spouse will lose more health stepping on a LEGO than you'll notice from the -10% DR.
 
 **Backpack: Inspiration (Fury Strike).** +30% Rate of Fire while skills are deployed. Smart Cover is deployed essentially all the time. This is +30% RoF as a passive baseline the moment you press the skill button. Free damage. The kind of free that makes you suspicious, but it's real.
 
@@ -178,7 +178,7 @@ This is a survival swap, not a primary damage tool. Talents: **Revitalize** (kil
 | WCHC | 25%+ from gear rolls (Commando adds +10.20% during Link, Armored Train adds up to +6% passive) |
 | Multi-Shot Chance | 37%+ total (Phalanx +12% + Dominating Presence +20% + gear) |
 | Optimal Range | Extended via Fury Strike 2pc + kneepad roll on top of SM's 29m base |
-| Weapon Damage | Roll on chest, backpack, holster where WCHD is not primary |
+| Weapon Damage | Roll on Body Armor, backpack, holster where WCHD is not primary |
 | Avoid | Blast Damage, Piercing Damage. SM is Shredding only. |
 
 ---
@@ -188,7 +188,7 @@ This is a survival swap, not a primary damage tool. Talents: **Revitalize** (kil
 | ITEM | SET / TYPE | CORE | TARGET ROLLS | NOTES |
 |---|---|---|---|---|
 | Mask | Phalanx Attack | Firepower | WCHC + WCHD | Crit roll slot |
-| Chest | Phalanx Attack | Firepower | WCHD + WD | Glass Cannon talent |
+| Body Armor | Phalanx Attack | Firepower | WCHD + WD | Glass Cannon talent |
 | Backpack | Fury Strike | Firepower | WCHD + WD | Inspiration talent |
 | Gloves | Phalanx Attack | Firepower | WCHC + WCHD | Crit roll slot |
 | Holster | Phalanx Attack | Firepower | WCHD + WD | - |

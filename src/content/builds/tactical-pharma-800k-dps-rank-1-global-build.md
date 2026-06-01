@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Tactical Pharma 800k DPS | Rank 1 Global Player Build"
 specialization: "Field Medic"
 subclass: "Tactical Pharma"
@@ -77,14 +77,14 @@ His actual in-game numbers for reference:
 | Slot | Set | Talent | Core | Attribute Bonus 1 | Attribute Bonus 2 |
 |---|---|---|---|---|---|
 | Mask | Fire Cycle | - | Engineering | Skill Crit Damage | Skill Crit Chance |
-| Chest | Jackpot | **Glass Cannon (T2)** | Engineering | Skill Crit Chance | Skill Intensity |
+| Body Armor | Jackpot | **Glass Cannon (T2)** | Engineering | Skill Crit Chance | Skill Intensity |
 | Backpack | Fire Cycle | **Prime Engineer 2** | Engineering | Skill Multi-Shot Chance | Skill Crit Chance |
 | Gloves | Jackpot | - | Engineering | Skill Intensity | Skill Crit Chance |
 | Holster | Jackpot | - | Engineering | Skill Intensity | Skill Multi-Shot |
 | Kneepads | Jackpot | - | Engineering | Skill Crit Damage | Skill Crit Chance |
 
 **Where we differ from RogueMadras's current setup:**
-- **Chest:** He's running **Energize 2** (+25% Skill Damage for 8s on Medical Kit use; Multi-Shot refreshes duration) but recommends **Glass Cannon** as best-in-slot. T2 gives **+28% Damage**, T1 gives +20%.
+- **Body Armor:** He's running **Energize 2** (+25% Skill Damage for 8s on Medical Kit use; Multi-Shot refreshes duration) but recommends **Glass Cannon** as best-in-slot. T2 gives **+28% Damage**, T1 gives +20%.
 - **Backpack:** He has Skill Cooldown Recovery in one slot but doesn't recommend CDR. We use **Skill Crit Chance** instead. Alternative talent: **Minion Training** (+36% Skill Crit Hit Damage for 12s on skill crit kills).
 - **Gloves:** He has Skill Duration but says to swap it. We use **Skill Intensity** because higher damage per tick matters more than longer duration.
 
@@ -124,7 +124,7 @@ His actual in-game numbers for reference:
 
 - **2pc:** Skill Crit Damage +12.00%. Combined with Jackpot 4pc, that's **+36% Skill Crit Damage** from set bonuses alone, before any gear rolls or talents.
 
-### Chest: Glass Cannon (T2)
+### Body Armor: Glass Cannon (T2)
 
 *+28% Damage (T2) / +20% Damage (T1). Increases incoming damage as a tradeoff.*
 
@@ -238,7 +238,7 @@ All weapon attachments should be **Engineering.**
 
 | Drop | Must Have |
 |---|---|
-| Jackpot chest/gloves/holster/kneepads | Engineering core + Skill Crit Chance, Crit Damage, Intensity, or Multi-Shot |
+| Jackpot Body Armor/gloves/holster/kneepads | Engineering core + Skill Crit Chance, Crit Damage, Intensity, or Multi-Shot |
 | Fire Cycle mask | Engineering core + Skill Crit Damage + Skill Crit Chance |
 | Fire Cycle backpack | Engineering core + Prime Engineer 2 talent |
 | Vector 45 ACP (T2 SMG) | Engineering roll + Backup Battery + Backup Magazine |

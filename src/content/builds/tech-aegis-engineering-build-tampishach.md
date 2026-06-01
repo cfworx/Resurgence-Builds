@@ -26,8 +26,8 @@ faqs:
     answer: "Yes. The build was filmed in late April 2026. None of the patches since touched Long-term Effect, Jackpot, MPX, Copperhead, or Brains Over Brawn. The Performance Enhancer 3pc bug is still pending a fix, but the 2pc Engineering bonus still applies."
   - question: "Why Engineering and not Firepower as the priority stat?"
     answer: "Engineering scales every skill in the kit: Defender Drone damage, Mender Drone heal-to-damage conversion, Firefly Performance Enhancer bonus, and the Brains Over Brawn hit damage. The Long-term Effect 4pc also dumps +18% Engineering on top. Firepower scales gun damage in isolation. Engineering scales the whole build."
-  - question: "Can I run this without the Mechanized Infantry Arm chest?"
-    answer: "Any Long-term Effect chest works for the 4pc bonus. What you want is the Injured Concealment talent on whichever chest you find, because that stacking damage talent is a meaningful chunk of the build's damage output."
+  - question: "Can I run this without the Mechanized Infantry Arm Body Armor?"
+    answer: "Any Long-term Effect Body Armor works for the 4pc bonus. What you want is the Injured Concealment talent on whichever Body Armor you find, because that stacking damage talent is a meaningful chunk of the build's damage output."
   - question: "Is the Boom Horo CarryBack backpack required?"
     answer: "Not strictly required. The Prime Engineer talent is the upgrade you are working toward. Until then, any Long-term Effect backpack with Skill Crit Chance and Skill Crit Damage rolls keeps the 4pc bonus active."
   - question: "How do I get Skill Crit Chance and Skill Crit Damage that high?"
@@ -36,7 +36,7 @@ faqs:
     answer: "No. Resurgence is free-to-play with optional convenience and cosmetic purchases. Every piece of gear in this build was earned through gameplay. Spending money can speed up the grind, but it cannot buy positioning, game sense, or the knowledge to stack the right talents. Your dad reflexes are still the bottleneck."
 ---
 
-**By RapidF5 (via Tampishach) ·** Patch 1.1.2.2 ·
+**By RapidF5 (via Tampishach) Â·** Patch 1.1.2.2 Â·
 
 ## What This Build Does
 
@@ -74,7 +74,7 @@ This is a **Tech Aegis Engineering build** that turns skill crit into a sledgeha
 | Slot | Set | Talent | Core | Attribute Bonus 1 | Attribute Bonus 2 |
 |---|---|---|---|---|---|
 | Mask | Jackpot (Rapid Deployment Mask, T0) | - | Firepower | Sig Ability Charge Efficiency +9.78% | Skill Critical Damage +7.63% |
-| Chest | Long-term Effect (Mechanized Infantry Arm, T0) | **Injured Concealment** | Firepower | Skill Radius +4.61% | Skill Critical Damage +7.84% |
+| Body Armor | Long-term Effect (Mechanized Infantry Arm, T0) | **Injured Concealment** | Firepower | Skill Radius +4.61% | Skill Critical Damage +7.84% |
 | Backpack | Long-term Effect (Mountain Hiking Pack, T2) | **Prime Engineer** (recommended) | Firepower | Damage Reduction +3.1% | Skill Critical Chance +5.67% |
 | Gloves | Long-term Effect | - | Firepower | Skill Critical Chance | Skill Critical Damage |
 | Holster | Jackpot (Jags Sidearm Mount, T2) | - | Firepower | Damage Reduction +3.64% | Skill Critical Damage +8.62% |
@@ -90,8 +90,8 @@ This is a **Tech Aegis Engineering build** that turns skill crit into a sledgeha
 
 | Slot | Item | Details |
 |---|---|---|
-| **Primary** | Copperhead (T1, SMG, Level 40) | **In Sync + Swift Taunt** · Piercing Damage 800 |
-| **Secondary** | MPX (T0, SMG, Level 50) | **Torrential Downpour II + Rapid Charge** · Skill Multi-Shot Chance +8.09% |
+| **Primary** | Copperhead (T1, SMG, Level 40) | **In Sync + Swift Taunt** Â· Piercing Damage 800 |
+| **Secondary** | MPX (T0, SMG, Level 50) | **Torrential Downpour II + Rapid Charge** Â· Skill Multi-Shot Chance +8.09% |
 | **OS Protocol** | **Brains Over Brawn** (High-End, Level 50) | +21.60% Skill Crit Chance. Hits deal additional damage equal to 48% Engineering |
 | **Skill 1** | Defender Drone | Hazardous Area firmware 3pc |
 | **Skill 2** | Mender Drone | Team Backup firmware 3pc |
@@ -102,9 +102,9 @@ This is a **Tech Aegis Engineering build** that turns skill crit into a sledgeha
 
 | Skill | Firmware Set | Set Bonus | Stats |
 |---|---|---|---|
-| Defender Drone | Hazardous Area (3pc) | 2pc: +3% Engineering · 3pc: Defender Drone deals damage to enemies within its radius every second | Skill Crit Chance, Skill Duration, Skill Crit Damage |
-| Mender Drone | Team Backup (3pc) | 2pc: +6% Engineering · 3pc: healing grants bonus damage equal to 13.10% Engineering for 20s, up to 3 stacks | Skill Crit Chance, Skill Crit Damage |
-| First-Aid Firefly | Performance Enhancer (3pc) | 2pc: +4.5% Engineering · 3pc: hits deal additional damage equal to 120% Engineering for 8s | Skill Crit Chance, Skill Crit Damage |
+| Defender Drone | Hazardous Area (3pc) | 2pc: +3% Engineering Â· 3pc: Defender Drone deals damage to enemies within its radius every second | Skill Crit Chance, Skill Duration, Skill Crit Damage |
+| Mender Drone | Team Backup (3pc) | 2pc: +6% Engineering Â· 3pc: healing grants bonus damage equal to 13.10% Engineering for 20s, up to 3 stacks | Skill Crit Chance, Skill Crit Damage |
+| First-Aid Firefly | Performance Enhancer (3pc) | 2pc: +4.5% Engineering Â· 3pc: hits deal additional damage equal to 120% Engineering for 8s | Skill Crit Chance, Skill Crit Damage |
 
 > **Weapon mod stacking:** Every weapon mod slot on both the MPX and the Copperhead should roll Engineering. Tampishach: *"I stacked mods with engineering as it gives more and more engineering to your build, which enhances your damage."*
 
@@ -124,7 +124,7 @@ This is a **Tech Aegis Engineering build** that turns skill crit into a sledgeha
 
 The flex set. 2pc bonus: +12% Skill Radius. Tampishach uses the Rapid Deployment Mask and the Jags Sidearm Mount holster.
 
-### Chest: Injured Concealment (Firepower Core)
+### Body Armor: Injured Concealment (Firepower Core)
 
 *Hits taken grant +1.80% Damage for 10 seconds, up to 10 stacks.*
 
@@ -144,19 +144,19 @@ Max out gear modules to Engineering on every slot. Every +1 Engineering goes thr
 
 ## Best OS Protocol for Tech Aegis
 
-### 1. Brains Over Brawn (Specialized) · RECOMMENDED
+### 1. Brains Over Brawn (Specialized) Â· RECOMMENDED
 
-*+10.80% Skill Crit Chance · Hits deal additional damage equal to 24% Engineering*
+*+10.80% Skill Crit Chance Â· Hits deal additional damage equal to 24% Engineering*
 
 This is the entire reason the build hits 53% Skill Crit Chance. The on-hit bonus damage scales off Engineering, which the Long-term Effect 4pc just buffed by 18%. Tampishach: *"You need to farm weekly bounties to max it out."*
 
-### 2. Tactical Layering (High-End) · Skill Uptime Alternative
+### 2. Tactical Layering (High-End) Â· Skill Uptime Alternative
 
 *+15% Engineering per skill deployment, up to 3 stacks*
 
 For groups where you are the dedicated drone-spam role. Keeps all three skills on near-constant rotation.
 
-### 3. Surgical Engineering (High-End) · Crit Damage Alternative
+### 3. Surgical Engineering (High-End) Â· Crit Damage Alternative
 
 *60% chance of +16% Skill Critical Damage on Skill Crits*
 
@@ -200,7 +200,7 @@ Both guns should run **Engineering-stacked mods** in every slot:
 | Copperhead (Primary SMG) | In Sync or Torrential Downpour II, Skill Critical Damage, Armor |
 | MPX (Secondary SMG) | Torrential Downpour II, Rapid Charge, Skill Multi-Shot Chance |
 | Brains Over Brawn OS Protocol | Max to Level 50 for +21.60% Skill Crit Chance |
-| Chest talent | Injured Concealment (or Rank 2 for +28% Damage) |
+| Body Armor talent | Injured Concealment (or Rank 2 for +28% Damage) |
 | Backpack talent | Prime Engineer (+22.50% Engineering on skill deploy) |
 | Weapon mods (all slots) | Engineering, Skill Shredding Damage, Skill Blast Damage |
 

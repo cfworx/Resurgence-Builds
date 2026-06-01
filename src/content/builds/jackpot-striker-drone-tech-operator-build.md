@@ -21,7 +21,7 @@ imageAlt: "Tech Operator Striker Drone Build with Jackpot and Fire Cycle in Divi
 
 # Jackpot Striker Drone Tech Operator Build | Division Resurgence Engineering Build
 
-By RapidF5 · Patch 1.1.2.2 · Tech Operator · Updated June 1, 2026
+By RapidF5 Â· Patch 1.1.2.2 Â· Tech Operator Â· Updated June 1, 2026
 
 ## TL;DR
 
@@ -63,7 +63,7 @@ Tactical Pharma runs Chemical Trap and Oxidizing Hive on a Field Medic chassis. 
 | Slot | Item | Set | Roll | Attribute 1 | Attribute 2 | Talent |
 |------|------|-----|------|-------------|-------------|--------|
 | Mask | Jackpot | Jackpot | Engineering | Skill Critical Chance | Skill Critical Damage | n/a |
-| Chest | Jackpot | Jackpot | Engineering | Max Health | Skill Critical Damage | Injured Concealment 2 |
+| Body Armor | Jackpot | Jackpot | Engineering | Max Health | Skill Critical Damage | Injured Concealment 2 |
 | Backpack | Jackpot | Jackpot | Engineering | Skill Critical Chance | Skill Multi-Shot Chance | Overwatch 2 |
 | Gloves | Fire Cycle | Fire Cycle | Engineering | Skill Critical Chance | Skill Critical Damage | n/a |
 | Holster | Fire Cycle | Fire Cycle | Engineering | Skill Critical Chance | Skill Critical Damage | n/a |
@@ -84,9 +84,9 @@ If you do not have Rampart yet, **Surgical Engineering** is a serviceable fallba
 
 The skill mods are all built around the Striker Drone with a Drone Overload synergy:
 
-- **Stabilized Flight** · 2-piece +Skill Health 6.0%, 3-piece "Applying Drone Lock grants +9% Skill Critical Hit Chance for 20 seconds"
-- **Optimized Targeting** · 2-piece +Skill Health 8.0%, 3-piece "Within 30 seconds of activating Drone Overload, Striker Drone hits have a 10% chance of granting +21.80% Skill Critical Hit Chance for 20 seconds"
-- **Thermite Charge** · 2-piece +Skill Health 6.0%, 3-piece "Striker Drone Critical Hits have a 7.40% chance of exploding, dealing 300% damage"
+- **Stabilized Flight** Â· 2-piece +Skill Health 6.0%, 3-piece "Applying Drone Lock grants +9% Skill Critical Hit Chance for 20 seconds"
+- **Optimized Targeting** Â· 2-piece +Skill Health 8.0%, 3-piece "Within 30 seconds of activating Drone Overload, Striker Drone hits have a 10% chance of granting +21.80% Skill Critical Hit Chance for 20 seconds"
+- **Thermite Charge** Â· 2-piece +Skill Health 6.0%, 3-piece "Striker Drone Critical Hits have a 7.40% chance of exploding, dealing 300% damage"
 
 The reason these three sit together is the chain reaction they trigger. Activate Drone Overload, hit something with Drone Lock, and you stack a +9% Skill Crit Chance buff (Stabilized Flight) plus a chance at +21.80% Skill Crit Chance (Optimized Targeting). Once the drone is critting, Thermite Charge starts rolling for 7.40% explosion procs at 300% damage on every crit. It is a feedback loop built into the gear.
 
@@ -98,9 +98,9 @@ Skill Radius +12.0%, Skill Critical Chance +10.8%, Skill Critical Damage +24.0%.
 
 ### Fire Cycle 2-piece
 
-+12.0% Skill Critical Damage. The cleanest 2-piece for a skill crit build, period. Twelve percent Skill Crit Damage stacked on top of the Jackpot 4-piece's 24%, the Glass Cannon ratios from your gloves and holster, and the chest and mask crit damage rolls is what pushes the drone numbers past the threshold where Hostile Nest bosses start melting.
++12.0% Skill Critical Damage. The cleanest 2-piece for a skill crit build, period. Twelve percent Skill Crit Damage stacked on top of the Jackpot 4-piece's 24%, the Glass Cannon ratios from your gloves and holster, and the Body Armor and mask crit damage rolls is what pushes the drone numbers past the threshold where Hostile Nest bosses start melting.
 
-### Chest: Jackpot with Injured Concealment 2
+### Body Armor: Jackpot with Injured Concealment 2
 
 Max Health on the primary attribute is the only "defensive" line in the build, and Injured Concealment 2 turns getting shot into a damage buff. Hits taken grant +2.50% Damage for 10 seconds, up to 10 stacks. Ten stacks is +25% Damage just for getting tagged once a second for ten seconds, which is going to happen whether you want it to or not the moment you anchor for Rampart.
 
@@ -120,15 +120,15 @@ The fourth Jackpot piece. Skill Critical Chance and Skill Multi-Shot Chance get 
 
 ### Hunting M44 (T2 LMG) Talents
 
-- **Enhancement Trade 2** · "Grants +8.40% Skill Intensity for each 20% of the Magazine Size emptied for 8 seconds, up to 4 stacks. Talent Cooldown: 1 second." Empty 80% of the magazine, get +33.60% Skill Intensity for 8 seconds. That is a flat damage and effect amplifier on the drone every time you dump a mag.
-- **Ammo Supply** · "Shooting has a 54% chance of returning the bullet in the magazine if it contains less than 30% of its ammo." Once you are under 30% mag, you start getting bullets back at better than coin-flip odds, which lets you keep firing into the back of the magazine to extend the Enhancement Trade window.
+- **Enhancement Trade 2** Â· "Grants +8.40% Skill Intensity for each 20% of the Magazine Size emptied for 8 seconds, up to 4 stacks. Talent Cooldown: 1 second." Empty 80% of the magazine, get +33.60% Skill Intensity for 8 seconds. That is a flat damage and effect amplifier on the drone every time you dump a mag.
+- **Ammo Supply** Â· "Shooting has a 54% chance of returning the bullet in the magazine if it contains less than 30% of its ammo." Once you are under 30% mag, you start getting bullets back at better than coin-flip odds, which lets you keep firing into the back of the magazine to extend the Enhancement Trade window.
 
 The combo is intentional. Dump the front of the mag fast to ramp Enhancement Trade, then the back of the mag pays you back through Ammo Supply so the Skill Intensity buff stays live for longer.
 
 ### Mk16 (AR) Talents
 
-- **Torrential Downpour 2** · "Hitting enemies 10 times within 5 seconds grants +31.50% Engineering for 12 seconds." The Mk16 fires fast enough that ten hits in five seconds is easy on any close-range target. Twelve seconds of +31.50% Engineering covers an entire engagement.
-- **Rapid Charge** · "Hitting an enemy 5 times in 3 seconds grants 50 Signature Ability Charge." Free Signature charge for shooting things, which means Drone Overload comes back faster, which means Optimized Targeting's 30-second window keeps refreshing.
+- **Torrential Downpour 2** Â· "Hitting enemies 10 times within 5 seconds grants +31.50% Engineering for 12 seconds." The Mk16 fires fast enough that ten hits in five seconds is easy on any close-range target. Twelve seconds of +31.50% Engineering covers an entire engagement.
+- **Rapid Charge** Â· "Hitting an enemy 5 times in 3 seconds grants 50 Signature Ability Charge." Free Signature charge for shooting things, which means Drone Overload comes back faster, which means Optimized Targeting's 30-second window keeps refreshing.
 
 The Mk16 is your reposition weapon. Swap to it when you need to move, dump rounds into a target, get Torrential Downpour rolling, then go back to the M44 once you anchor for the next position.
 
@@ -149,10 +149,10 @@ When you need to reposition, swap to the Mk16, tag a target for Torrential Downp
 
 ## Where to Run This Build
 
-- **Hostile Nests** · The drone gets to chew on a packed room of targets, and the immobile playstyle suits a single anchored position behind cover
-- **Weekly Bounties** · Anchor on the boss, let the drone work the boss while you feed it Skill Intensity from the M44
-- **Conflicts (PvE side)** · Skill Crit builds scale with the higher Power Score brackets because Engineering rolls scale linearly while weapon damage hits soft caps
-- **Dark Zone PvE rooms** · As long as you have a corner, Rampart is going to sit at six stacks
+- **Hostile Nests** Â· The drone gets to chew on a packed room of targets, and the immobile playstyle suits a single anchored position behind cover
+- **Weekly Bounties** Â· Anchor on the boss, let the drone work the boss while you feed it Skill Intensity from the M44
+- **Conflicts (PvE side)** Â· Skill Crit builds scale with the higher Power Score brackets because Engineering rolls scale linearly while weapon damage hits soft caps
+- **Dark Zone PvE rooms** Â· As long as you have a corner, Rampart is going to sit at six stacks
 
 This is not a Dark Zone PvP build. Rampart's reset-on-move clause is a death sentence the moment another player breaks your line, and the build has zero burst damage outside the drone window.
 
@@ -160,9 +160,9 @@ This is not a Dark Zone PvP build. Rampart's reset-on-move clause is a death sen
 
 If you do not have Rampart yet:
 
-- **Surgical Engineering** (High-End) · Skill Critical Hits have a 60% chance of granting +16% Skill Critical Damage for 10 seconds, up to 3 stacks. This is the cleanest stand-in because it adds another Skill Crit Damage layer on a build that is already proccing Skill Crit constantly
-- **Tactical Layering** (High-End) · Deploying a Skill grants +15% Engineering, up to 3 stacks. Easier to maintain than Rampart, lower ceiling
-- **Ambusher** (Superior) · Being immobile for 3 seconds grants +22.50% Engineering. Same immobile-rewarding philosophy as Rampart at lower rarity
+- **Surgical Engineering** (High-End) Â· Skill Critical Hits have a 60% chance of granting +16% Skill Critical Damage for 10 seconds, up to 3 stacks. This is the cleanest stand-in because it adds another Skill Crit Damage layer on a build that is already proccing Skill Crit constantly
+- **Tactical Layering** (High-End) Â· Deploying a Skill grants +15% Engineering, up to 3 stacks. Easier to maintain than Rampart, lower ceiling
+- **Ambusher** (Superior) Â· Being immobile for 3 seconds grants +22.50% Engineering. Same immobile-rewarding philosophy as Rampart at lower rarity
 
 Rampart is the goal. Everything else is a placeholder until you roll it.
 

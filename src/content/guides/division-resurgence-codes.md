@@ -69,7 +69,7 @@ Quick answer:
 | Reward | Status | How to get it |
 |---|---|---|
 | Public redeem code (typed in) | **None active** | N/A |
-| Backbone collab bundle | **Active** | Backbone app → email → redeem page |
+| Backbone collab bundle | **Active** | Backbone app â†’ email â†’ redeem page |
 | Twitch Drops | None running today, more confirmed coming | Watch any Drops-enabled Resurgence stream |
 | Division 2 cross-game rewards | Active, auto-claim | Play Division 2 on same Ubisoft account |
 
@@ -81,7 +81,7 @@ If you only read one section, read the Backbone one below.
 
 Announced May 5, 2026 by Ubisoft and [covered by TechRadar](https://www.techradar.com/gaming/ubisoft-teams-up-with-backbone-to-offer-the-division-resurgence-players-exclusive-in-game-rewards-heres-how-you-can-claim-yours). This is the first real partner code drop since the global launch. Three Superior-tier perks, free to anyone with the Backbone app:
 
-- **Ericht Chest System**
+- **Ericht Body Armor System**
 - **Small Laser Pointer**
 - **Maxillan Respirator**
 
@@ -96,7 +96,7 @@ Announced May 5, 2026 by Ubisoft and [covered by TechRadar](https://www.techrada
 5. Open [redeem.ubisoft.com/thedivisionresurgence](https://redeem.ubisoft.com/thedivisionresurgence/) and sign in with the same Ubisoft account.
 6. Paste the code. Click **Submit My Code**.
 7. Relaunch Division Resurgence.
-8. **Event Center → Rewards Claim → Claim Now**.
+8. **Event Center â†’ Rewards Claim â†’ Claim Now**.
 9. Check your **Stash**.
 
 One-time per account. No expiration date has been published, but partner offers rotate, so don't sit on it.
@@ -112,7 +112,7 @@ This is the same flow for every code Ubisoft issues, current or future:
 3. Sign in with the **same Ubisoft Connect account** you play on.
 4. Enter the code, click **Submit My Code**.
 5. Relaunch Division Resurgence.
-6. **Event Center → Rewards Claim → Claim Now**, then grab the package from your **Stash**.
+6. **Event Center â†’ Rewards Claim â†’ Claim Now**, then grab the package from your **Stash**.
 
 Codes use a four-by-four format (`XXXX-XXXX-XXXX-XXXX`), same as other Ubisoft mobile titles. There is no in-game code entry box. The web page is the only way in.
 
@@ -162,7 +162,7 @@ Tied to the PC Early Access launch via Ubisoft Connect. Four watch-time tiers pe
 
 A second pass of launch-era Twitch Drops. The interesting wrinkle: anyone who already owned a drop outfit got **Outfit Fragments worth 10,000 credits each** instead. Players in the [r/thedivisionresurgence thread](https://www.reddit.com/r/thedivisionresurgence/comments/1t1ju0k/would_you_look_at_that/) reported clearing over a million credits from a single rerun.
 
-### Backbone Collab (May 5, 2026 → Ongoing)
+### Backbone Collab (May 5, 2026 â†’ Ongoing)
 
 Covered in detail above. The first individual-code partner promotion the game has done.
 
@@ -204,7 +204,7 @@ Credit where it's due: [BlueStacks](https://www.bluestacks.com/blog/redeem-codes
 ## Common Redemption Problems
 
 **"I redeemed the code, nothing's in my Stash."**
-Fully close and reopen the game. Then check **Event Center → Rewards Claim**. The package usually sits there waiting for one more tap.
+Fully close and reopen the game. Then check **Event Center â†’ Rewards Claim**. The package usually sits there waiting for one more tap.
 
 **"Code says 'already redeemed' but I never used it."**
 One-use-per-account. If it's been claimed on this Ubisoft account on any character, ever, it's spent.
@@ -223,11 +223,11 @@ No traditional text-entry "redeem codes" have ever been publicly released for Th
 
 | Promotion | Reward | Period | Status |
 |---|---|---|---|
-| Backbone One Collab (Superior Pack) | 3 Superior-rarity items | Launch — Ongoing | ✅ Active |
-| Backbone One Collab (Exotic Skin) | Exotic weapon skin | Launch — Ongoing | ✅ Active |
-| Twitch Drops — Phase 1 Launch | Cosmetic drops (banner, weapon skin) | May 2026 | ❌ Expired |
-| Pre-Registration Rewards | Starter resource bundle | Pre-launch — Launch | ❌ Expired |
-| Creator Code Rewards | Varies by creator | Periodic | ⏳ Varies |
+| Backbone One Collab (Superior Pack) | 3 Superior-rarity items | Launch â€” Ongoing | âœ… Active |
+| Backbone One Collab (Exotic Skin) | Exotic weapon skin | Launch â€” Ongoing | âœ… Active |
+| Twitch Drops â€” Phase 1 Launch | Cosmetic drops (banner, weapon skin) | May 2026 | âŒ Expired |
+| Pre-Registration Rewards | Starter resource bundle | Pre-launch â€” Launch | âŒ Expired |
+| Creator Code Rewards | Varies by creator | Periodic | â³ Varies |
 
 > [!WARNING]
 > Any website listing "active codes" like "DIVISION2026" or "FREECOINS" is lying. As of Patch 1.2.1, Ubisoft has not released any public text-entry redemption codes for The Division Resurgence. Don't fall for clickbait.
@@ -236,7 +236,7 @@ No traditional text-entry "redeem codes" have ever been publicly released for Th
 
 **Related Reading:**
 - [Patch 1.2.1 Notes](/patch-notes/patch-1-2-1/)
-- [Season 1–3 Roadmap](/news/season-1-2-3-roadmap/)
+- [Season 1â€“3 Roadmap](/news/season-1-2-3-roadmap/)
 - [Which Specialization Should You Pick?](/guides/which-specialization-to-pick/)
 
 **Sources:**
