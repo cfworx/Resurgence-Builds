@@ -107,6 +107,19 @@ const faqs = [
   <h2 style="font-family: var(--font-heading); font-size: var(--text-3xl); font-weight: 900; color: #fff; margin-bottom: var(--sp-3);">Full Protocol Database</h2>
   <p class="db-subheading">Every protocol, filterable by rarity and specialization. Click any card for full stats.</p>
 
+  <div class="os-disclaimer">
+    <div class="os-disclaimer__diamonds">
+      <div class="diamond"></div>
+      <div class="diamond"></div>
+      <div class="diamond"></div>
+      <div class="diamond"></div>
+      <div class="diamond"></div>
+    </div>
+    <div class="os-disclaimer__text">
+      <strong>Note:</strong> All OS Protocols listed below are at <strong>Base Level (0 Diamonds)</strong>. Their main stats, sub-stats, and talent values have the potential to get stronger with every diamond upgrade in-game.
+    </div>
+  </div>
+
   <!-- Existing filters + grid -->
   <div class="db-filters">
     <div class="filter-group" id="filter-rarity">
@@ -319,6 +332,50 @@ const faqs = [
   }
   .db-card-link .db-card {
     height: 100%;
+  }
+
+  /* OS Protocol Disclaimer */
+  .os-disclaimer {
+    display: flex;
+    align-items: center;
+    gap: var(--sp-5);
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px dashed rgba(255, 255, 255, 0.15);
+    border-radius: 8px;
+    padding: var(--sp-4) var(--sp-5);
+    margin: var(--sp-6) 0;
+  }
+  .os-disclaimer__diamonds {
+    display: flex;
+    gap: 10px;
+    padding-left: 6px;
+  }
+  .diamond {
+    width: 14px;
+    height: 14px;
+    background: #444444;
+    transform: rotate(45deg);
+    border: 1px solid rgba(0,0,0,0.5);
+    box-shadow: inset 0 0 0 1px rgba(255,255,255,0.05);
+  }
+  .os-disclaimer__text {
+    font-size: var(--text-sm);
+    color: #b8b8c0;
+    line-height: 1.5;
+  }
+  .os-disclaimer__text strong {
+    color: #fff;
+  }
+  
+  @media (max-width: 640px) {
+    .os-disclaimer {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: var(--sp-3);
+    }
+    .os-disclaimer__diamonds {
+      padding-left: 4px;
+    }
   }
 </style>
 
