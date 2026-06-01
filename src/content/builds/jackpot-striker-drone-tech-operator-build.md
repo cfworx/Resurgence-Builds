@@ -11,10 +11,10 @@ tags: [Tech Operator, Striker Drone, Jackpot, Fire Cycle, Engineering, Skill Cri
 lastUpdated: 2026-06-01
 specialization: "Tech Operator"
 subclass: "Offensive Operations"
-playstyle: "Skill DPS"
+playstyle: "DPS"
 patch: "1.1.2.2"
-pve: "S"
-pvp: "C"
+pve: true
+pvp: false
 featuredImage: "/images/builds/jackpot-striker-drone-hero.webp"
 imageAlt: "Tech Operator Striker Drone Build with Jackpot and Fire Cycle in Division Resurgence"
 ---
