@@ -193,7 +193,9 @@
     "attr3": "Health",
     "val3": "+2,043",
     "talentDescription": "Grants +9% Engineering for each ally within 30 meters who possesses a buff that was granted by the Agent.",
-    "cooldown": ""
+    "cooldown": "",
+    "image": "/images/os-protocols/close-and-personal-os-protocol-division-resurgence.webp",
+    "imageAlt": "Close and Personal OS Protocol in Division Resurgence showing the Skill Intensity gear mod with glow effect and skill intensity class icon"
   },
   {
     "id": "os-12",
@@ -209,7 +211,9 @@
     "attr3": "Health",
     "val3": "+2,043",
     "talentDescription": "Dealing damage to debuffed enemies who are 20 meters away has a 10% chance of granting +7.50% Engineering for 10 seconds, up to 3 stacks.",
-    "cooldown": ""
+    "cooldown": "",
+    "image": "/images/os-protocols/chase-the-weak-os-protocol-division-resurgence.webp",
+    "imageAlt": "Chase the Weak OS Protocol in Division Resurgence showing the Skill Intensity gear mod with glow effect and skill intensity class icon"
   },
   {
     "id": "os-13",
@@ -225,7 +229,9 @@
     "attr3": "Health",
     "val3": "+2,043",
     "talentDescription": "Grants +9% Engineering for each ally within 20 meters.",
-    "cooldown": ""
+    "cooldown": "",
+    "image": "/images/os-protocols/together-we-stand-os-protocol-division-resurgence.webp",
+    "imageAlt": "Together We Stand OS Protocol in Division Resurgence showing the Skill Intensity gear mod with glow effect and skill intensity class icon"
   },
   {
     "id": "os-14",
@@ -241,7 +247,9 @@
     "attr3": "Health",
     "val3": "+2,043",
     "talentDescription": "Grants +10% Skill Cooldown Recovery.",
-    "cooldown": ""
+    "cooldown": "",
+    "image": "/images/os-protocols/pressing-matter-os-protocol-division-resurgence.webp",
+    "imageAlt": "Pressing Matter OS Protocol in Division Resurgence showing the Skill Intensity gear mod with glow effect and skill intensity class icon"
   },
   {
     "id": "os-15",
@@ -257,7 +265,9 @@
     "attr3": "Health",
     "val3": "+2,043",
     "talentDescription": "Being immobile for 3 seconds grants +22.50% Engineering.",
-    "cooldown": ""
+    "cooldown": "",
+    "image": "/images/os-protocols/ambusher-os-protocol-division-resurgence.webp",
+    "imageAlt": "Ambusher OS Protocol in Division Resurgence showing the Skill Intensity gear mod with glow effect and skill intensity class icon"
   },
   {
     "id": "os-16",
@@ -273,7 +283,9 @@
     "attr3": "Health",
     "val3": "+2,043",
     "talentDescription": "Grants Weapon Damage equal to 50% Skill Critical Damage when there are no more than 1 bullets in the magazine, capped at 100% Weapon Damage.",
-    "cooldown": ""
+    "cooldown": "",
+    "image": "/images/os-protocols/cornered-animal-os-protocol-division-resurgence.webp",
+    "imageAlt": "Cornered Animal OS Protocol in Division Resurgence showing the Skill Critical Damage gear mod with glow effect and skill critical damage class icon"
   },
   {
     "id": "os-17",
@@ -289,7 +301,9 @@
     "attr3": "Health",
     "val3": "+1,532",
     "talentDescription": "Deploying a Skill grants +14.40% Skill Critical Hit Chance for 10 seconds.",
-    "cooldown": ""
+    "cooldown": "",
+    "image": "/images/os-protocols/rocket-science-os-protocol-division-resurgence.webp",
+    "imageAlt": "Rocket Science OS Protocol in Division Resurgence showing the Skill Intensity gear mod with glow effect and skill intensity class icon"
   },
   {
     "id": "os-18",
@@ -305,7 +319,9 @@
     "attr3": "Health",
     "val3": "+1,532",
     "talentDescription": "Deploying a Skill grants +24% Skill Critical Hit Damage for 10 seconds.",
-    "cooldown": ""
+    "cooldown": "",
+    "image": "/images/os-protocols/applied-demolition-os-protocol-division-resurgence.webp",
+    "imageAlt": "Applied Demolition OS Protocol in Division Resurgence showing the Skill Intensity gear mod with glow effect and skill intensity class icon"
   },
   {
     "id": "os-19",
@@ -321,7 +337,9 @@
     "attr3": "Health",
     "val3": "+1,532",
     "talentDescription": "Grants +24% Skill Critical Damage.",
-    "cooldown": ""
+    "cooldown": "",
+    "image": "/images/os-protocols/hardware-upgrade-os-protocol-division-resurgence.webp",
+    "imageAlt": "Hardware Upgrade OS Protocol in Division Resurgence showing the Skill Intensity gear mod with glow effect and skill intensity class icon"
   },
   {
     "id": "os-20",
@@ -337,7 +355,9 @@
     "attr3": "Health",
     "val3": "+1,532",
     "talentDescription": "Hits deal additional damage equal to 24% Engineering.",
-    "cooldown": ""
+    "cooldown": "",
+    "image": "/images/os-protocols/brains-over-brawn-os-protocol-division-resurgence.webp",
+    "imageAlt": "Brains Over Brawn OS Protocol in Division Resurgence showing the Skill Critical Chance gear mod with glow effect and skill critical chance class icon"
   },
   {
     "id": "os-21",
@@ -353,7 +373,9 @@
     "attr3": "Health",
     "val3": "+1,532",
     "talentDescription": "Grants +18% Engineering while located within 25 meters of a debuffed enemy.",
-    "cooldown": ""
+    "cooldown": "",
+    "image": "/images/os-protocols/running-around-os-protocol-division-resurgence.webp",
+    "imageAlt": "Running Around OS Protocol in Division Resurgence showing the Skill Intensity gear mod with glow effect and skill intensity class icon"
   },
   {
     "id": "os-22",
@@ -369,7 +391,9 @@
     "attr3": "Health",
     "val3": "+1,532",
     "talentDescription": "Taking damage grants +12% Skill Intensity for 5 seconds.",
-    "cooldown": ""
+    "cooldown": "",
+    "image": "/images/os-protocols/long-range-artillery-os-protocol-division-resurgence.webp",
+    "imageAlt": "Long-Range Artillery OS Protocol in Division Resurgence showing the Engineering gear mod with glow effect and engineering class icon"
   },
   {
     "id": "os-23",
@@ -385,7 +409,9 @@
     "attr3": "Health",
     "val3": "+1,021",
     "talentDescription": "Grants +9% Skill Multi-Shot Chance.",
-    "cooldown": ""
+    "cooldown": "",
+    "image": "/images/os-protocols/overclocking-os-protocol-division-resurgence.webp",
+    "imageAlt": "Overclocking OS Protocol in Division Resurgence showing the Skill Intensity gear mod with glow effect and skill intensity class icon"
   },
   {
     "id": "os-24",
@@ -401,7 +427,9 @@
     "attr3": "Health",
     "val3": "+1,021",
     "talentDescription": "Grants +10.80% Skill Critical Chance.",
-    "cooldown": ""
+    "cooldown": "",
+    "image": "/images/os-protocols/energizer-os-protocol-division-resurgence.webp",
+    "imageAlt": "Energizer OS Protocol in Division Resurgence showing the Skill Intensity gear mod with glow effect and skill intensity class icon"
   },
   {
     "id": "os-25",
@@ -417,7 +445,9 @@
     "attr3": "Health",
     "val3": "+1,021",
     "talentDescription": "Grants +9% Healing Intensity.",
-    "cooldown": ""
+    "cooldown": "",
+    "image": "/images/os-protocols/combat-doc-os-protocol-division-resurgence.webp",
+    "imageAlt": "Combat Doc OS Protocol in Division Resurgence showing the Skill Intensity gear mod with glow effect and skill intensity class icon"
   },
   {
     "id": "os-26",
@@ -433,7 +463,9 @@
     "attr3": "Health",
     "val3": "+1,021",
     "talentDescription": "Grants +9% Engineering and +4.80% Skill Duration.",
-    "cooldown": ""
+    "cooldown": "",
+    "image": "/images/os-protocols/genius-engineer-os-protocol-division-resurgence.webp",
+    "imageAlt": "Genius Engineer OS Protocol in Division Resurgence showing the Skill Intensity gear mod with glow effect and skill intensity class icon"
   },
   {
     "id": "os-27",
@@ -449,7 +481,9 @@
     "attr3": "Health",
     "val3": "+1,021",
     "talentDescription": "Grants +18% Signature Ability Charge Efficiency while located within 25 meters of an enemy.",
-    "cooldown": ""
+    "cooldown": "",
+    "image": "/images/os-protocols/inspiration-os-protocol-division-resurgence.webp",
+    "imageAlt": "Inspiration OS Protocol in Division Resurgence showing the Skill Intensity gear mod with glow effect and skill intensity class icon"
   },
   {
     "id": "os-28",
@@ -465,7 +499,9 @@
     "attr3": "Health",
     "val3": "+1,021",
     "talentDescription": "Grants +18% Signature Ability Charge Efficiency when no enemies are within 20 meters.",
-    "cooldown": ""
+    "cooldown": "",
+    "image": "/images/os-protocols/hermit-os-protocol-division-resurgence.webp",
+    "imageAlt": "Hermit OS Protocol in Division Resurgence showing the Skill Intensity gear mod with glow effect and skill intensity class icon"
   },
   {
     "id": "os-29",
