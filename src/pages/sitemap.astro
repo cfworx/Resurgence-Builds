@@ -1,0 +1,140 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+import osProtocols from '../data/os-protocols.json';
+import standardWeapons from '../data/standard-weapons.json';
+import weaponTalents from '../data/weapon-talents.json';
+import backpackTalents from '../data/backpack-talents.json';
+import bodyArmorTalents from '../data/body-armor-talents.json';
+import bonusAttributes from '../data/bonus-attributes.json';
+import exoticWeapons from '../data/exotic-weapons.json';
+import gearSetEffects from '../data/gear-set-effects.json';
+import skillModCombos from '../data/skill-mod-combos.json';
+
+const builds = await getCollection('builds');
+const guides = await getCollection('guides');
+const news = await getCollection('news');
+const patchNotes = await getCollection('patch-notes');
+
+const slugify = (str: string) => str.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+
+const staticPages = [
+  { title: "Home", url: "/" },
+  { title: "About", url: "/about/" },
+  { title: "Contact", url: "/contact/" },
+  { title: "Privacy Policy", url: "/privacy/" },
+  { title: "Terms of Service", url: "/terms/" },
+  { title: "DMCA", url: "/dmca/" },
+  { title: "Build Planner", url: "/builder/" },
+  { title: "Interactive Map", url: "/division-resurgence-interactive-map/" },
+  { title: "Database Index", url: "/database/" }
+];
+---
+<BaseLayout title="HTML Sitemap - Resurgence Builds" description="A complete HTML sitemap of every build, guide, database entry, and news post on Resurgence Builds for easy navigation.">
+  <div class="container section">
+    <h1 class="heading-accent">Site Archive (Sitemap)</h1>
+    <div class="prose" style="max-width: 900px;">
+      <p>This page contains a complete, flat index of every post, database entry, and guide on Resurgence Builds.</p>
+      
+      <h2>Core Pages</h2>
+      <ul style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 10px; list-style: none; padding: 0;">
+        {staticPages.map(page => (
+          <li><a href={page.url}>{page.title}</a></li>
+        ))}
+      </ul>
+
+      <h2>Builds</h2>
+      <ul>
+        {builds.map(post => (
+          <li><a href={`/builds/${post.slug}/`}>{post.data.title}</a></li>
+        ))}
+      </ul>
+
+      <h2>Guides</h2>
+      <ul>
+        {guides.map(post => (
+          <li><a href={`/guides/${post.slug}/`}>{post.data.title}</a></li>
+        ))}
+      </ul>
+
+      <h2>News</h2>
+      <ul>
+        {news.map(post => (
+          <li><a href={`/news/${post.slug}/`}>{post.data.title}</a></li>
+        ))}
+      </ul>
+
+      <h2>Patch Notes</h2>
+      <ul>
+        {patchNotes.map(post => (
+          <li><a href={`/patch-notes/${post.slug}/`}>{post.data.title}</a></li>
+        ))}
+      </ul>
+
+      <h2>Database: OS Protocols</h2>
+      <ul style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 10px; list-style: none; padding: 0;">
+        {osProtocols.map((item: any) => (
+          <li><a href={`/database/os-protocols/${slugify(item.name)}/`}>{item.name}</a></li>
+        ))}
+      </ul>
+
+      <h2>Database: Weapons</h2>
+      <ul style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 10px; list-style: none; padding: 0;">
+        {standardWeapons.map((item: any) => (
+          <li><a href={`/database/weapons/${slugify(item.name)}/`}>{item.name}</a></li>
+        ))}
+      </ul>
+
+      <h2>Database: Exotic Weapons</h2>
+      <ul>
+        {exoticWeapons.map((item: any) => (
+          <li><a href={`/database/exotic-weapons/${slugify(item.name)}/`}>{item.name}</a></li>
+        ))}
+      </ul>
+
+      <h2>Database: Weapon Talents</h2>
+      <ul style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 10px; list-style: none; padding: 0;">
+        {weaponTalents.map((item: any) => (
+          <li><a href={`/database/weapon-talents/${slugify(item.name)}/`}>{item.name}</a></li>
+        ))}
+      </ul>
+
+      <h2>Database: Gear Set Effects</h2>
+      <ul style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 10px; list-style: none; padding: 0;">
+        {gearSetEffects.map((item: any) => (
+          <li><a href={`/database/gear-set-effects/${slugify(item.name)}/`}>{item.name}</a></li>
+        ))}
+      </ul>
+
+      <h2>Database: Skill Mod Combos</h2>
+      <ul style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 10px; list-style: none; padding: 0;">
+        {skillModCombos.map((item: any) => (
+          <li><a href={`/database/skill-mod-combos/${slugify(item.name)}/`}>{item.name}</a></li>
+        ))}
+      </ul>
+
+      <h2>Database: Backpack Talents</h2>
+      <ul style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 10px; list-style: none; padding: 0;">
+        {backpackTalents.map((item: any) => (
+          <li><a href={`/database/backpack-talents/${slugify(item.name)}/`}>{item.name}</a></li>
+        ))}
+      </ul>
+
+      <h2>Database: Body Armor Talents</h2>
+      <ul style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 10px; list-style: none; padding: 0;">
+        {bodyArmorTalents.map((item: any) => (
+          <li><a href={`/database/body-armor-talents/${slugify(item.name)}/`}>{item.name}</a></li>
+        ))}
+      </ul>
+
+      <h2>Database: Bonus Attributes</h2>
+      <ul style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 10px; list-style: none; padding: 0;">
+        {bonusAttributes.map((item: any) => (
+          <li><a href={`/database/bonus-attributes/${slugify(item.name)}/`}>{item.name}</a></li>
+        ))}
+      </ul>
+
+    </div>
+  </div>
+</BaseLayout>
