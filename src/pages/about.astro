@@ -48,6 +48,11 @@ const faqs = [
     <div class="prose">
       <p><strong>Resurgence Builds</strong> is an independent, community-driven resource hub for <em>Tom Clancy's The Division Resurgence</em>. We publish in-game tested builds, weapon databases, gear set references, patch note analysis, and tactical guides. Every piece of content on this site is written by people who actually play the game.</p>
 
+      <div class="trust-strip">
+        <h2 style="margin-top: 0; color: var(--accent);">Why Trust Us?</h2>
+        <p style="margin-bottom: 0;">Every build on this site is tested in-game by RapidF5 or a credited community builder. We name the player who originated each build and link out where applicable. We publish patch notes within 48 hours of every patch and revisit older guides for accuracy. If a build is wrong or outdated, post in our <a href="https://discord.gg/t6GTR6tpd" target="_blank" rel="noopener noreferrer">Discord</a> and we will fix it.</p>
+      </div>
+
       <h2>Why We Built This</h2>
       <p>There's no shortage of Division Resurgence content on the internet. Most of it is recycled from other sites, based on outdated patch data, or written by people who haven't loaded into a Dark Zone since launch. We wanted something better: a single source where the builds are tested, the math is shown, and the information is current.</p>
 
@@ -139,6 +144,14 @@ const faqs = [
     padding: var(--sp-6);
     margin: var(--sp-6) 0;
     backdrop-filter: blur(8px);
+  }
+
+  .trust-strip {
+    background: rgba(242,104,34,0.06);
+    border-left: 4px solid var(--accent);
+    padding: var(--sp-5);
+    margin: var(--sp-6) 0;
+    border-radius: 0 8px 8px 0;
   }
 
   .founder-header {
