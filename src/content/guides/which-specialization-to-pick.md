@@ -26,15 +26,15 @@ faqs:
 
 There isn't one. There are five, and they're all good at something, which means one of them is perfect for how you specifically want to play and the other four will make you quietly furious every session.
 
-The bad news: nobody is going to tell you which one is "best" because the correct answer is *it depends on you.* The good news: this guide exists so you don't have to figure that out across 47 Reddit comments, three Discord arguments, and a YouTube video from someone who clearly hasn't patched the game since launch.
+The bad news: nobody is going to tell you which one is "best" because the correct answer is *it depends on you.* This guide breaks down each specialization to help you decide.
 
-Here's the short version. Skip to your personality type.
+Here's the short version. Skip to your playstyle.
 
 ---
 
-## The 30-Second Version (If You Have the Attention Span of a Rogue Agent)
+## The 30-Second Version
 
-| If you want toâ€¦ | Pick this |
+| If you want to... | Pick this |
 |---|---|
 | Shoot things in the face and feel like a main character | **Vanguard** |
 | Blow up rooms full of enemies and feel nothing | **Demolitionist** |
@@ -61,8 +61,8 @@ Vanguard is never the wrong answer. It's also rarely a *surprising* answer. If y
 **Best for:** Players who want to learn the game without fighting their spec at the same time. PvP players who want to understand why they keep winning or dying.
 
 **Builds on the site:**
-- Vanguard, The Dark Zone PvP Lady Death build â€” the DZ aggressor loadout
-- Vanguard, The PvE Shotgun Meta build â€” a surprisingly nasty close-range PvE option
+- Vanguard, The Dark Zone PvP Lady Death build - the DZ aggressor loadout
+- Vanguard, The PvE Shotgun Meta build - a surprisingly nasty close-range PvE option
 
 ---
 
@@ -83,8 +83,8 @@ Fair warning: you will also shoot yourself with it. At least once. Probably in a
 **Best for:** Players who like thinking in areas of effect rather than single-target math. Anyone who finds the meta builds too fiddly and wants to press a button and watch a room clear.
 
 **Builds on the site:**
-- Demolitionist, Explosive Chaos â€” the full grenade brain build
-- Demolitionist, The Strawberry Reaper â€” the off-meta DoT spreader using the Strawberry Milkshake exotic LMG
+- Demolitionist, Explosive Chaos - the full grenade brain build
+- Demolitionist, The Strawberry Reaper - the off-meta DoT spreader using the Strawberry Milkshake exotic LMG
 
 ---
 
@@ -103,8 +103,8 @@ The Bulwark is the spec that experienced players suddenly appreciate after a ses
 **Best for:** Players who don't care about kill counts. Experienced players who know what holds a group together. Anyone who has ever muttered "I'll just absorb everything" and meant it without sarcasm.
 
 **Builds on the site:**
-- Bulwark, The Unkillable Mosquito â€” the Vampire Tank that heals off Happy Survival and refuses to die
-- Conflict PvP, Fearless Warlord â€” the PvP monster that turns the Domination zone into a personal throne
+- Bulwark, The Unkillable Mosquito - the Vampire Tank that heals off Happy Survival and refuses to die
+- Conflict PvP, Fearless Warlord - the PvP monster that turns the Domination zone into a personal throne
 
 ---
 
@@ -123,7 +123,7 @@ Let's be honest about who picks Field Medic. It's people who, in a past life, pl
 **Best for:** Players who want to enable a group rather than carry it. Solo players who want Corrosion debuffs stacking while drones handle the dirty work. Anyone who likes being indispensable without needing the kill feed to prove it.
 
 **Builds on the site:**
-- Field Medic, Legendary Healer â€” the full support build that keeps Legendary runs from becoming reload screens
+- Field Medic, Legendary Healer - the full support build that keeps Legendary runs from becoming reload screens
 
 ---
 
@@ -144,8 +144,8 @@ When it works, however, nobody looks cooler.
 **Best for:** Players who enjoy optimizing systems and watching them execute. Skill-damage theorycrafters. Anyone who has ever watched a YouTube video called "perfect drone rotation guide" without any irony.
 
 **Builds on the site:**
-- Tech Operator, Lockdown â€” zone control and skill damage
-- Tech Operator, Disorient Express â€” the disorientation stacking build that makes enemies temporarily useless
+- Tech Operator, Lockdown - zone control and skill damage
+- Tech Operator, Disorient Express - the disorientation stacking build that makes enemies temporarily useless
 
 ---
 
@@ -154,10 +154,10 @@ When it works, however, nobody looks cooler.
 | | Vanguard | Demolitionist | Bulwark | Field Medic | Tech Operator |
 |---|---|---|---|---|---|
 | **Role** | DPS / All-rounder | AOE DPS | Tank | Healer / Support | Skill damage / Control |
-| **Survivability** | Medium | Lowâ€“Medium | High | Medium | Lowâ€“Medium |
-| **Skill ceiling** | Medium | Medium | Lowâ€“Medium | Medium | High |
-| **Solo viability** | âœ… Excellent | âœ… Excellent | âœ… Excellent | âš ï¸- Harder | âš ï¸- Harder |
-| **PvP viability** | âœ… Strong | âš ï¸- Situational | âœ… Strong | âš ï¸- Situational | âš ï¸- Situational |
+| **Survivability** | Medium | Low-Medium | High | Medium | Low-Medium |
+| **Skill ceiling** | Medium | Medium | Low-Medium | Medium | High |
+| **Solo viability** | ✅ Excellent | ✅ Excellent | ✅ Excellent | ⚠️ Harder | ⚠️ Harder |
+| **PvP viability** | ✅ Strong | ⚠️ Situational | ✅ Strong | ⚠️ Situational | ⚠️ Situational |
 | **Carry potential** | Medium | Medium | Low | Low | Medium |
 | **Rage-quit risk** | Low | Medium (self-grenades) | Very Low | High (ingratitude) | High (drone betrayal) |
 

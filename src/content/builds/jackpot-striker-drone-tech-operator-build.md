@@ -17,6 +17,8 @@ pve: true
 pvp: false
 featuredImage: "/images/builds/jackpot-striker-drone-hero.webp"
 imageAlt: "Tech Operator Striker Drone Build with Jackpot and Fire Cycle in Division Resurgence"
+shareTitle: "Share a Tech Operator violation"
+shareText: "Tag your worst Rampart reset (you know, the one where you stepped off cover for the loot crate and watched six stacks evaporate one second before the boss died)."
 faqs:
   - question: "What is the best Tech Operator build in Division Resurgence?"
     answer: "A Jackpot 4-piece plus Fire Cycle 2-piece Skill Crit build using Hunting M44 and Mk16 is currently one of the cleanest Tech Operator Offensive Operations setups. The Striker Drone scales with Engineering, Skill Critical Chance, and Skill Critical Damage, all of which the Jackpot and Fire Cycle sets stack natively, and Rampart adds another damage layer on top."
@@ -149,6 +151,12 @@ If you do not have Rampart yet:
 
 Rampart is the goal. Everything else is a placeholder until you roll it.
 
-### Share a Tech Operator violation
+## Loot Quick-Reference for Tech Operator
 
-Tag your worst Rampart reset (you know, the one where you stepped off cover for the loot crate and watched six stacks evaporate one second before the boss died) and send it our way. We will feature the best ones on the next patch round-up.
+| Drop | Must Have |
+|---|---|
+| Jackpot mask/Body Armor/backpack/kneepads | Engineering core + Skill Crit Chance + Skill Crit Damage or Multi-Shot + applicable talents (Injured Concealment 2, Overwatch 2) |
+| Fire Cycle gloves/holster | Engineering core + Skill Crit Chance + Skill Crit Damage |
+| Hunting M44 (T2 LMG) | Engineering roll + Enhancement Trade 2 + Ammo Supply |
+| Mk16 (AR) | Engineering roll + Torrential Downpour 2 + Rapid Charge |
+| Rampart OS Protocol (High-End) | Always keep |
