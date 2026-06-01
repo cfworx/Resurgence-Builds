@@ -30,6 +30,25 @@ const staticPages = [
   { title: "Interactive Map", url: "/division-resurgence-interactive-map/" },
   { title: "Database Index", url: "/database/" }
 ];
+
+const classes = ['vanguard', 'demolitionist', 'field-medic', 'tech-operator', 'bulwark'];
+
+const allTags = new Set<string>();
+const extractTags = (collection: any[]) => {
+  collection.forEach(item => {
+    if (item.data.tags) {
+      item.data.tags.forEach((tag: string) => allTags.add(tag));
+    }
+  });
+};
+extractTags(builds);
+extractTags(guides);
+extractTags(news);
+extractTags(patchNotes);
+
+const excludeTags = ['tag1', 'tag2'];
+const uniqueTags = Array.from(allTags).filter(t => !excludeTags.includes(t)).sort();
+const tagSlugify = (tag: string) => tag.toLowerCase().replace(/\s+/g, '-');
 ---
 <BaseLayout title="HTML Sitemap - Resurgence Builds" description="A complete HTML sitemap of every build, guide, database entry, and news post on Resurgence Builds for easy navigation.">
   <div class="container section">
@@ -41,6 +60,20 @@ const staticPages = [
       <ul style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 10px; list-style: none; padding: 0;">
         {staticPages.map(page => (
           <li><a href={page.url}>{page.title}</a></li>
+        ))}
+      </ul>
+
+      <h2>Classes</h2>
+      <ul style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 10px; list-style: none; padding: 0;">
+        {classes.map(c => (
+          <li><a href={`/class/${c}/`} style="text-transform: capitalize;">{c.replace('-', ' ')}</a></li>
+        ))}
+      </ul>
+
+      <h2>Tags</h2>
+      <ul style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 10px; list-style: none; padding: 0;">
+        {uniqueTags.map(tag => (
+          <li><a href={`/tag/${tagSlugify(tag)}/`}>{tag}</a></li>
         ))}
       </ul>
 
@@ -130,8 +163,8 @@ const staticPages = [
 
       <h2>Database: Bonus Attributes</h2>
       <ul style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 10px; list-style: none; padding: 0;">
-        {bonusAttributes.map((item: any) => (
-          <li><a href={`/database/bonus-attributes/${slugify(item.name)}/`}>{item.name}</a></li>
+        {bonusAttributes.flatMap((cat: any) => cat.attributes).map((attr: string) => (
+          <li><a href={`/database/bonus-attributes/${slugify(attr)}/`}>{attr}</a></li>
         ))}
       </ul>
 
