@@ -14,7 +14,7 @@
     "val3": "+2,554",
     "talentDescription": "Shooting for 3 seconds enhances the next Skill for 8 seconds. Dealing damage with the Enhanced Skill creates an explosion with a radius of 5 meters around it that deals damage equal to 1600% Engineering.",
     "cooldown": "5 seconds",
-    "image": "/images/os-protocols/explosive-charge-os-protocol-division-resurgence.png",
+    "image": "/images/os-protocols/explosive-charge-os-protocol-division-resurgence.webp",
     "imageAlt": "Explosive Charge OS Protocol in Division Resurgence showing the Engineering gear mod with orange glow effect and engineering class icon"
   },
   {
@@ -31,7 +31,9 @@
     "attr3": "Health",
     "val3": "+2,554",
     "talentDescription": "When dealing Skill Damage, also deal damage equal to 3000% Engineering to enemies within 5 meters of the target.",
-    "cooldown": "10 seconds"
+    "cooldown": "10 seconds",
+    "image": "/images/os-protocols/collateral-damage-os-protocol-division-resurgence.webp",
+    "imageAlt": "Collateral Damage OS Protocol in Division Resurgence showing the Engineering gear mod with glow effect and engineering class icon"
   },
   {
     "id": "os-3",
@@ -47,7 +49,9 @@
     "attr3": "Health",
     "val3": "+2,554",
     "talentDescription": "Deploying a Skill grants +15% Engineering, up to 3 stacks.",
-    "cooldown": ""
+    "cooldown": "",
+    "image": "/images/os-protocols/tactical-layering-os-protocol-division-resurgence.webp",
+    "imageAlt": "Tactical Layering OS Protocol in Division Resurgence showing the Skill Intensity gear mod with glow effect and skill intensity class icon"
   },
   {
     "id": "os-4",
@@ -63,7 +67,9 @@
     "attr3": "Health",
     "val3": "+2,554",
     "talentDescription": "For every 1 shots fired, grants +1.30% Weapon Damage for 5 seconds, up to 30 stacks. Loses 2 stacks per second.",
-    "cooldown": ""
+    "cooldown": "",
+    "image": "/images/os-protocols/relentless-assault-os-protocol-division-resurgence.webp",
+    "imageAlt": "Relentless Assault OS Protocol in Division Resurgence showing the Skill Critical Damage gear mod with glow effect and skill critical damage class icon"
   },
   {
     "id": "os-5",
@@ -79,7 +85,9 @@
     "attr3": "Health",
     "val3": "+2,554",
     "talentDescription": "Assists grant +4.80% Signature Ability Charge Efficiency for 10 seconds and reduce Skill Cooldown by 2.40%, up to 5 stacks.",
-    "cooldown": ""
+    "cooldown": "",
+    "image": "/images/os-protocols/strategic-assistance-os-protocol-division-resurgence.webp",
+    "imageAlt": "Strategic Assistance OS Protocol in Division Resurgence showing the Skill Intensity gear mod with glow effect and skill intensity class icon"
   },
   {
     "id": "os-6",
@@ -95,7 +103,9 @@
     "attr3": "Health",
     "val3": "+2,554",
     "talentDescription": "While immobile, grants +5% Damage for 1 seconds, up to 6 stacks. This bonus resets upon moving.",
-    "cooldown": ""
+    "cooldown": "",
+    "image": "/images/os-protocols/rampart-os-protocol-division-resurgence.webp",
+    "imageAlt": "Rampart OS Protocol in Division Resurgence showing the Skill Critical Chance gear mod with glow effect and skill critical chance class icon"
   },
   {
     "id": "os-7",
@@ -111,7 +121,9 @@
     "attr3": "Health",
     "val3": "+2,554",
     "talentDescription": "Skill Critical Hits have a 60% chance of granting +16% Skill Critical Damage for 10 seconds, up to 3 stacks.",
-    "cooldown": ""
+    "cooldown": "",
+    "image": "/images/os-protocols/surgical-engineering-os-protocol-division-resurgence.webp",
+    "imageAlt": "Surgical Engineering OS Protocol in Division Resurgence showing the Skill Intensity gear mod with glow effect and skill intensity class icon"
   },
   {
     "id": "os-8",
@@ -127,7 +139,9 @@
     "attr3": "Health",
     "val3": "+2,043",
     "talentDescription": "Kills grant +7.50% Skill Intensity for 10 seconds, up to 2 stacks.",
-    "cooldown": ""
+    "cooldown": "",
+    "image": "/images/os-protocols/chain-reaction-os-protocol-division-resurgence.webp",
+    "imageAlt": "Chain Reaction OS Protocol in Division Resurgence showing the Skill Critical Chance gear mod with glow effect and skill critical chance class icon"
   },
   {
     "id": "os-9",
@@ -143,7 +157,9 @@
     "attr3": "Health",
     "val3": "+2,043",
     "talentDescription": "Skill Hits have a 20% chance of granting +3% Skill Intensity for 5 seconds, up to 5 stacks.",
-    "cooldown": ""
+    "cooldown": "",
+    "image": "/images/os-protocols/tactical-persistence-os-protocol-division-resurgence.webp",
+    "imageAlt": "Tactical Persistence OS Protocol in Division Resurgence showing the Skill Critical Damage gear mod with glow effect and skill critical damage class icon"
   },
   {
     "id": "os-10",
@@ -159,7 +175,9 @@
     "attr3": "Health",
     "val3": "+2,043",
     "talentDescription": "Healing or granting Extra Health grants +20% Skill Intensity.",
-    "cooldown": ""
+    "cooldown": "",
+    "image": "/images/os-protocols/recursive-treatment-os-protocol-division-resurgence.webp",
+    "imageAlt": "Recursive Treatment OS Protocol in Division Resurgence showing the Engineering gear mod with glow effect and engineering class icon"
   },
   {
     "id": "os-11",
