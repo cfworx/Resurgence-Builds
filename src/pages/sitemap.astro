@@ -15,7 +15,7 @@ import skillModCombos from '../data/skill-mod-combos.json';
 const builds = await getCollection('builds');
 const guides = await getCollection('guides');
 const news = await getCollection('news');
-const patchNotes = await getCollection('patch-notes');
+const patchNotes = await getCollection('patchNotes');
 
 const slugify = (str: string) => str.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
 
@@ -28,7 +28,9 @@ const staticPages = [
   { title: "DMCA", url: "/dmca/" },
   { title: "Build Planner", url: "/builder/" },
   { title: "Interactive Map", url: "/division-resurgence-interactive-map/" },
-  { title: "Database Index", url: "/database/" }
+  { title: "Database Index", url: "/database/" },
+  { title: "Weapon Tier List", url: "/tier-list/" },
+  { title: "OS Protocols Tier List", url: "/tier-list/os-protocols/" }
 ];
 
 const classes = ['vanguard', 'demolitionist', 'field-medic', 'tech-operator', 'bulwark'];
