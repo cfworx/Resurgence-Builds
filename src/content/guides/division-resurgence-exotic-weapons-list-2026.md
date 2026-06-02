@@ -9,13 +9,13 @@ description: "Complete list of every Division Resurgence exotic weapon currently
 tags: ["exotic-weapons", "lady-death", "warlord", "strawberry-milkshake", "guide", "scorpio", "diamondback", "tier-list"]
 faqs:
   - question: "How many exotic weapons are in Division Resurgence?"
-    answer: "Three are currently live in Patch 1.1.2.2 (Lady Death SMG, Warlord AR, Strawberry Milkshake LMG). One more is officially confirmed for Phase 3 in June 2026 (Scorpio SMG). One more (Diamondback) has been leaked via a Reddit screenshot but not confirmed by Ubisoft. Total confirmed plus leaked is five."
+    answer: "Three are currently live in Patch 1.1.2.2 (Lady Death SMG, Warlord AR, Strawberry Milkshake LMG). One more is officially confirmed for Phase 3 in June 2026 (Scorpio Shotgun). One more (Diamondback) has been leaked via a Reddit screenshot but not confirmed by Ubisoft. Total confirmed plus leaked is five."
   - question: "When is the next exotic weapon coming to Division Resurgence?"
-    answer: "The Scorpio SMG is officially confirmed for Phase 3 of Season 1, which Ubisoft has scheduled for June 2026. Community trackers point at June 23, 2026 as the likely Phase 3 rollover date. June 23 is not an official Ubisoft date."
+    answer: "The Scorpio Shotgun is officially confirmed for Phase 3 of Season 1, which Ubisoft has scheduled for June 2026. Community trackers point at June 23, 2026 as the likely Phase 3 rollover date. June 23 is not an official Ubisoft date."
   - question: "Can I get the Warlord if I missed Phase 1?"
     answer: "The Warlord was the Phase 1 free exotic on the Classified Ops Pass. If you missed the Phase 1 free unlock, the standard exotic acquisition channels still apply (mission boss drops, Dark Zone, special events, Projects-tab quest lines), but the guaranteed free-pass unlock is no longer the path. Check the Projects tab in-game for any active Warlord-related quest, and check the Warlord database page for the latest acquisition notes."
   - question: "Is the Scorpio in Division Resurgence the same as the Scorpio in Division 2?"
-    answer: "No. The Division 2 Scorpio is an exotic shotgun on the SIX12 chassis with the Septic Shock talent. The Resurgence Scorpio is officially an SMG. They share the name and the franchise, but they are different weapon classes with different mechanics. Do not carry D2 build assumptions over to the Resurgence version."
+    answer: "Both the Division 2 and Resurgence Scorpio are exotic shotguns, but they are not identical. Talents, stats, and behavior will differ in Resurgence. Do not carry D2 build assumptions over to the Resurgence version."
   - question: "What is the best exotic for a beginner in Division Resurgence?"
     answer: "The Strawberry Milkshake LMG is the easiest exotic to use because the Anarchy talent works automatically every time you shoot something. You do not need to manage stacks, time skill deploys, or watch for damage windows. Hit things, stacks build, things die, stacks transfer. If the Phase 2 Classified Ops Pass is still active when you read this, the free track unlocks the Milkshake."
   - question: "Are exotic weapons better than High-End weapons?"
@@ -24,7 +24,7 @@ faqs:
     answer: "Every exotic listed here is either a free pass reward (Warlord, Strawberry Milkshake, Scorpio) or a free loot pool drop (Lady Death). None of the live exotic weapons in Division Resurgence are gated behind real money. The premium track of the Classified Ops Pass is cosmetics, not power. Welcome to the genre."
 ---
 
-Three exotic weapons are currently live in Division Resurgence as of Patch 1.1.2.2: **Lady Death** (SMG), **Warlord** (Assault Rifle), and **Strawberry Milkshake** (LMG). One more is officially confirmed for Phase 3 in June 2026: **Scorpio** (SMG). One more is leaked from a Reddit screenshot but not officially confirmed: **Diamondback** (class unconfirmed). This page is the single source of truth for every exotic in Resurgence, what it does, and how it stacks up against the rest.
+Three exotic weapons are currently live in Division Resurgence as of Patch 1.1.2.2: **Lady Death** (SMG), **Warlord** (Assault Rifle), and **Strawberry Milkshake** (LMG). One more is officially confirmed for Phase 3 in June 2026: **Scorpio** (Shotgun). One more is leaked from a Reddit screenshot but not officially confirmed: **Diamondback** (Rifle). This page is the single source of truth for every exotic in Resurgence, what it does, and how it stacks up against the rest.
 
 ## What Counts as an Exotic in Division Resurgence
 
@@ -105,23 +105,23 @@ This is the **Phase 2 free exotic** of the Classified Ops Pass. If you ran the P
 
 ## Confirmed Upcoming Exotics
 
-### Scorpio · Exotic SMG · Phase 3 (June 2026)
+### Scorpio · Exotic Shotgun · Phase 3 (June 2026)
 
-The Scorpio is the confirmed Phase 3 free exotic of Classified Ops Pass 1.3. Ubisoft put it on the official Phase 3 marketing alongside the Freemen apparel set and the Boombox weapon skin. The weapon class is confirmed as an **SMG**. The talent name, stat profile, and tooltip text have not been published yet.
+The Scorpio is the confirmed Phase 3 free exotic of Classified Ops Pass 1.3. Ubisoft put it on the official Phase 3 marketing alongside the Freemen apparel set and the Boombox weapon skin. The weapon class is confirmed as a **Shotgun**. The talent name, stat profile, and tooltip text have not been published yet.
 
 Phase 3 launches in **June 2026** per Ubisoft's official roadmap. Community trackers have been pointing at **June 23, 2026** as the rollover date based on the roughly six-week phase cadence the season has been holding to (Phase 1 ran from launch through May 11, Phase 2 kicked off May 12). June 23 is not an official Ubisoft date, just the cleanest community estimate.
 
-A quick word on the name. In Division 2 on PC and console, "Scorpio" is the name of an exotic shotgun built on the SIX12 chassis. The Resurgence Scorpio is a different weapon class (SMG), not the same weapon. Treat them as separate weapons that share a name.
+Both the Division 2 and Resurgence Scorpio are exotic shotguns, but they are not identical. Talents, stats, and behavior will differ in Resurgence. Do not carry D2 build assumptions over to the Resurgence version.
 
 [Full Scorpio + Diamondback news post →](/news/scorpio-diamondback-coming-to-division-resurgence-june-2026/)
 
 ## Leaked Exotics (Not Officially Confirmed)
 
-### Diamondback · Class Unconfirmed · Possibly Phase 3
+### Diamondback · Exotic Rifle · Possibly Phase 3
 
 The Diamondback is **not on Ubisoft's official roadmap**. The only evidence we have is a Reddit screenshot from r/thedivisionresurgence titled "So Diamondback and Scorpio are obtainable too." The screenshot shows a Weekly Bounty mission UI with two new weapon icons sitting in the Key Reward slots. The mission shown is set in **Clinton** at enemy Level 40 with a Recommended Power Score of 19.2k, with mission flavor text referencing an SHD and JTF joint attack on a Riker Compound. Agent Draper is named in the briefing.
 
-The leak community is reading the second icon silhouette as the Diamondback based on the visible weapon profile. Ubisoft has not commented, the weapon class is unconfirmed, and there is no published talent or stat profile. As of Patch 1.1.2.2, neither the Scorpio nor the Diamondback is obtainable in Division Resurgence.
+The leak community is reading the second icon silhouette as the Diamondback based on the visible weapon profile. Ubisoft has not commented, but the weapon class is expected to be a Rifle, and there is no published talent or stat profile. As of Patch 1.1.2.2, neither the Scorpio nor the Diamondback is obtainable in Division Resurgence.
 
 If the leak holds and the Diamondback ships alongside the Scorpio in Phase 3, it would be a Weekly Bounty Key Reward (separate from the pass), available to anyone who can clear the bounty regardless of pass ownership.
 
@@ -132,8 +132,8 @@ If the leak holds and the Diamondback ships alongside the Scorpio in Phase 3, it
 | Lady Death | SMG | 299 Blast | 900 | 10m | Movement-stack weapon damage | Live |
 | Warlord | AR | 324 Blast | 600 | 29m | Damage reduction + delayed return | Live (Phase 1 pass) |
 | Strawberry Milkshake | LMG | 300 Shredding | 550 | 29m | Stacking DoT with kill-transfer | Live (Phase 2 pass) |
-| Scorpio | SMG | TBD | TBD | TBD | Unknown | Phase 3 pass (June 2026) |
-| Diamondback | TBD | TBD | TBD | TBD | Unknown | Rumor / leak only |
+| Scorpio | Shotgun | TBD | TBD | TBD | Unknown | Phase 3 pass (June 2026) |
+| Diamondback | Rifle | TBD | TBD | TBD | Unknown | Rumor / leak only |
 
 ## How to Get Exotic Weapons in Division Resurgence
 
