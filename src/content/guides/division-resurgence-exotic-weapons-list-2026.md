@@ -28,7 +28,7 @@ Three exotic weapons are currently live in Division Resurgence as of Patch 1.1.2
 
 ## What Counts as an Exotic in Division Resurgence
 
-Exotic weapons are the rarest weapon rarity in Resurgence. Each one carries a fixed unique talent that cannot be recalibrated, which is what separates them from High-End weapons. The talent is the entire reason the exotic exists. The stats can be optimized at the Optimization Station, but the talent text is locked the moment the weapon drops. If you get a bad stat roll, you are farming another copy.
+Exotic weapons are the rarest weapon rarity in Resurgence. Each one carries a fixed unique talent that cannot be recalibrated, which is what separates them from High-End weapons. The talent is the entire reason the exotic exists. If you get a bad stat roll, you are farming another copy.
 
 Most exotics in Resurgence are designed to break a specific rule of the game. Some let you stack debuffs that transfer between enemies. Others let you stack damage reduction while firing. Others build movement-based stack systems that pay out raw weapon damage. They are not always the highest raw DPS weapon in the slot, but they are almost always the most build-defining.
 
