@@ -28,16 +28,17 @@ const sTier = buildsWithTers.filter(b => b.tier === 'S');
 const aTier = buildsWithTers.filter(b => b.tier === 'A');
 const bTier = buildsWithTers.filter(b => b.tier === 'B');
 const cTier = buildsWithTers.filter(b => b.tier === 'C');
+const dTier = buildsWithTers.filter(b => b.tier === 'D');
 
 const breadcrumbItems = [{ name: 'Tier List', url: '/tier-list/' }];
 
 const title = "Best Builds & Tier List - Division Resurgence";
-const description = "Best Division Resurgence builds ranked S through C tier. PvE Legendary, Dark Zone PvP, and Conflict meta loadouts. Updated for Patch 1.1.2.2.";
+const description = "Best Division Resurgence builds ranked S through D tier. PvE Legendary, Dark Zone PvP, and Conflict meta loadouts. Updated for Patch 1.1.2.2.";
 
 const siteUrl = 'https://resurgencebuilds.com';
 
 // ItemList schema for ranked builds
-const allRanked = [...sTier, ...aTier, ...bTier, ...cTier];
+const allRanked = [...sTier, ...aTier, ...bTier, ...cTier, ...dTier];
 const itemListLd = {
   '@type': 'ItemList',
   name: 'Division Resurgence Build Tier List - May 2026 Meta Rankings',
@@ -189,7 +190,29 @@ const faqs = [
               ))}
             </div>
           ) : (
-            <div class="tier-empty">No C-Tier builds. We have standards. Low ones, but standards.</div>
+            <div class="tier-empty">No C-Tier builds.</div>
+          )}
+        </div>
+      </div>
+
+      <!-- D-TIER -->
+      <div class="tier-row">
+        <div class="tier-label tier-d">D</div>
+        <div class="tier-content">
+          {dTier.length > 0 ? (
+            <div class="tier-grid">
+              {dTier.map(build => (
+                <a href={`/builds/${build.id}/`} class="tier-card">
+                  <div class="tier-card__img" style={`background-image: url('${build.data.featuredImage || '/images/default-cover.webp'}')`}></div>
+                  <div class="tier-card__info">
+                    <h4>{build.data.title.split(' - ')[0]}</h4>
+                    <span class="tier-card__spec">{build.data.specialization}{build.data.subclass ? ` - ${build.data.subclass}` : ''}</span>
+                  </div>
+                </a>
+              ))}
+            </div>
+          ) : (
+            <div class="tier-empty">No D-Tier builds. We have standards. Low ones, but standards.</div>
           )}
         </div>
       </div>
@@ -285,6 +308,7 @@ const faqs = [
   .tier-a { background: linear-gradient(135deg, #00d2ff, #3a7bd5); }
   .tier-b { background: linear-gradient(135deg, #28a745, #20c997); }
   .tier-c { background: linear-gradient(135deg, #6c757d, #adb5bd); }
+  .tier-d { background: linear-gradient(135deg, #495057, #343a40); }
 
   .tier-content {
     flex: 1;
