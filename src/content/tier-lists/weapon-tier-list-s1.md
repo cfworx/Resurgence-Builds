@@ -27,6 +27,9 @@ Rankings are based on:
 - **Ease of use** and consistency
 - **PvP viability** is noted but not weighted
 
+> [!NOTE]
+> This tier list primarily covers High-End weapons. For a complete ranking and guide of all Exotics, see our [Division Resurgence Exotic Weapons List 2026](/guides/division-resurgence-exotic-weapons-list-2026/).
+
 ## S Tier - Meta Defining
 
 These weapons dominate the current patch and should be the first choices for any serious build.
