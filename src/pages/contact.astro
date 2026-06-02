@@ -28,7 +28,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       <h2>Press &amp; Partnership Inquiries</h2>
       <p>For press coverage, content creator collaborations, or business inquiries, reach out to us via email:</p>
       <p style="margin: var(--sp-2) 0;">
-        <a href="mailto:p1@cfworx.tech" style="color: var(--accent); font-family: var(--font-mono); font-size: var(--text-sm);">p1@cfworx.tech</a>
+        <span id="contact-email" style="color: var(--accent); font-family: var(--font-mono); font-size: var(--text-sm); cursor: pointer; border-bottom: 1px dashed var(--accent);" title="Click to copy"></span>
+        <script>
+          (function(){var u='p1',d='cfworx.tech',e=document.getElementById('contact-email');if(e){e.textContent=u+'@'+d;e.addEventListener('click',function(){navigator.clipboard.writeText(u+'@'+d);e.textContent='Copied!';setTimeout(function(){e.textContent=u+'@'+d},2000)})}})();
+        </script>
       </p>
 
       <h2>Send Us a Message</h2>

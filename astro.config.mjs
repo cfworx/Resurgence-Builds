@@ -23,7 +23,12 @@ export default defineConfig({
   },
   integrations: [
     sitemap({
-      filter: (page) => !page.includes('/api/'),
+      filter: (page) =>
+        !page.includes('/api/') &&
+        !page.includes('/cdn-cgi/') &&
+        !page.includes('/build-planner/') &&
+        !/\/tag\/v\d/.test(page) &&
+        !page.includes('/tag/general/'),
       serialize(item) {
         const url = item.url;
 
