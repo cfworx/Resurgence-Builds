@@ -84,6 +84,12 @@ const productLd = {
         <span class="weapon-type-badge">{weapon.type}</span>
       </div>
 
+      {weapon.image && (
+        <div style="margin-bottom: var(--sp-6); border-radius: 8px; overflow: hidden; border: 1px solid var(--border);">
+          <img src={weapon.image} alt={weapon.name} style="width: 100%; height: auto; display: block;" />
+        </div>
+      )}
+
       <!-- Stats Grid -->
       <div class="weapon-stats">
         <h2 class="weapon-stats__heading">Weapon Stats</h2>

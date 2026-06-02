@@ -1,10 +1,8 @@
 ---
-import BaseLayout from '../../../layouts/BaseLayout.astro';
-import Breadcrumbs from '../../../components/Breadcrumbs.astro';
-import SectionTag from '../../../components/SectionTag.astro';
-import AdSenseUnit from '../../../components/AdSenseUnit.astro';
+import DatabaseLayout from '../../../layouts/DatabaseLayout.astro';
 import standardWeapons from '../../../data/standard-weapons.json';
 import exoticWeapons from '../../../data/exotic-weapons.json';
+import AdSenseUnit from '../../../components/AdSenseUnit.astro';
 
 const breadcrumbs = [
   { name: 'Database', url: '/database/' },
@@ -24,34 +22,95 @@ const faqs = [
 ];
 ---
 
-<BaseLayout {title} {description} {breadcrumbs} {faqs}>
-  <div class="container section">
-    <Breadcrumbs items={breadcrumbs} />
-    <SectionTag label="Weapon Database" />
-    <h1 class="heading-accent">All Weapons</h1>
-    <p style="color: var(--ink-muted); margin-bottom: var(--sp-6); max-width: 800px;">
-      Every standard weapon in Division Resurgence with stats and class breakdowns. Click any weapon for full details, or check the <a href="/database/exotic-weapons/" style="color: var(--accent);">Exotic Weapons</a> for unique talents.
-    </p>
-
-    {types.map((type: string) => (
-      <div style="margin-bottom: var(--sp-8);">
-        <h2 style="font-family: var(--font-heading); font-size: var(--text-xl); font-weight: 800; color: var(--accent); margin-bottom: var(--sp-4);">{type}s</h2>
-        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: var(--sp-3);">
-          {standardWeapons.filter((w: any) => w.type === type).map((w: any) => (
-            <a href={`/database/weapons/${w.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')}/`}
-               style="display: flex; justify-content: space-between; align-items: center; padding: var(--sp-4); background: rgba(0,0,0,0.2); border: 1px solid var(--border); border-radius: 8px; text-decoration: none; transition: all 0.2s; color: inherit;"
-            >
-              <div>
-                <strong style="color: #fff;">{w.name}</strong>
-                <span style="display: block; font-family: var(--font-mono); font-size: 10px; color: var(--ink-muted); text-transform: uppercase; margin-top: 2px;">{w.rpm} RPM · {w.mag} MAG · {w.dmgType}</span>
+<DatabaseLayout
+  {title}
+  {description}
+  {breadcrumbs}
+  heading="All Weapons"
+  subheading="Every standard weapon in Division Resurgence with stats and class breakdowns. Click any weapon for full details, or check the Exotic Weapons for unique talents."
+  {faqs}
+>
+  {exoticWeapons && exoticWeapons.length > 0 && (
+    <div style="margin-bottom: var(--sp-10);">
+      <h2 style="font-family: var(--font-heading); font-size: var(--text-2xl); font-weight: 800; color: #ff5100; margin-bottom: var(--sp-6);">Exotics</h2>
+      <div class="db-grid">
+        {exoticWeapons.map((w: any) => (
+          <a href={`/database/exotic-weapons/${w.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')}/`} class="db-card-link">
+            <article class="db-card exotic-card">
+              {w.image && (
+                <div class="db-card__image-banner" style="border-bottom: 1px solid rgba(255,81,0,0.2); margin-bottom: var(--sp-4);">
+                  <img src={w.image} alt={w.name} width="400" height="120" loading="lazy" decoding="async" />
+                </div>
+              )}
+              <div class="db-card__header">
+                <div>
+                  <h2 class="db-card__title" style="color: #ff5100;">{w.name}</h2>
+                  <div style="display:flex;gap:var(--sp-2);flex-wrap:wrap;margin-top:var(--sp-2);">
+                    <span class="weapon-type tag" style="background: rgba(255,81,0,0.1); border: 1px solid rgba(255,81,0,0.3); color: #ff5100; padding: 2px 8px; border-radius: 4px; font-size: 10px; font-weight: 800; text-transform: uppercase;">{w.type}</span>
+                  </div>
+                </div>
               </div>
-              <span style="color: var(--accent); font-size: var(--text-sm);">→</span>
-            </a>
-          ))}
-        </div>
+              
+              <div class="db-card__body">
+                <div class="db-card__talent" style="border-left-color: #ff5100;">
+                  <strong style="color: #ff5100;">{w.talentName}:</strong> {w.talentDescription}
+                </div>
+                
+                <ul class="attr-list" style="margin-top: var(--sp-2);">
+                  <li><span>Damage</span><span>{w.damage}</span></li>
+                  <li><span>RPM</span><span>{w.rpm}</span></li>
+                  <li><span>MAG</span><span>{w.mag}</span></li>
+                </ul>
+              </div>
+            </article>
+          </a>
+        ))}
       </div>
-    ))}
+    </div>
+  )}
 
-    <AdSenseUnit />
-  </div>
-</BaseLayout>
+  {types.map((type: string) => (
+    <div style="margin-bottom: var(--sp-8);">
+      <h2 style="font-family: var(--font-heading); font-size: var(--text-xl); font-weight: 800; color: var(--accent); margin-bottom: var(--sp-4);">{type}s</h2>
+      <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: var(--sp-3);">
+        {standardWeapons.filter((w: any) => w.type === type).map((w: any) => (
+          <a href={`/database/weapons/${w.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')}/`}
+             style="display: flex; justify-content: space-between; align-items: center; padding: var(--sp-4); background: rgba(0,0,0,0.2); border: 1px solid var(--border); border-radius: 8px; text-decoration: none; transition: all 0.2s; color: inherit;"
+          >
+            <div>
+              <strong style="color: #fff;">{w.name}</strong>
+              <span style="display: block; font-family: var(--font-mono); font-size: 10px; color: var(--ink-muted); text-transform: uppercase; margin-top: 2px;">{w.rpm} RPM · {w.mag} MAG · {w.dmgType}</span>
+            </div>
+            <span style="color: var(--accent); font-size: var(--text-sm);">→</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  ))}
+
+  <AdSenseUnit />
+</DatabaseLayout>
+
+<style is:global>
+  .db-card__image-banner {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 6px;
+    border: 1px solid rgba(255,255,255,0.06);
+    background: rgba(0,0,0,0.3);
+    margin-bottom: var(--sp-4);
+  }
+  .db-card__image-banner img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .db-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+  }
+  .db-card-link .db-card {
+    height: 100%;
+  }
+</style>

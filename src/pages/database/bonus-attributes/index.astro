@@ -3,10 +3,10 @@ import DatabaseLayout from '../../../layouts/DatabaseLayout.astro';
 import bonusAttributes from '../../../data/bonus-attributes.json';
 import AdSenseUnit from '../../../components/AdSenseUnit.astro';
 
-const title = "Division Resurgence Bonus Attributes & Gear Score Guide";
+const title = "Division Resurgence Weapon/Gear Bonus Attributes & Gear Score Guide";
 const description = "Every stat that can roll on your gear in Division Resurgence, organized by Firepower, Toughness, and Engineering. Know your rolls or suffer.";
 const breadcrumbs = [
-  { name: 'Bonus Attributes', url: '/database/bonus-attributes/' }
+  { name: 'Weapon/Gear Bonus Attributes', url: '/database/bonus-attributes/' }
 ];
 
 const toSlug = (name: string) => name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
@@ -36,7 +36,7 @@ bonusAttributes.forEach((cat: any) => {
 const itemListLd = {
   '@context': 'https://schema.org',
   '@type': 'ItemList',
-  name: 'The Division Resurgence Bonus Attributes',
+  name: 'The Division Resurgence Weapon/Gear Bonus Attributes',
   description: description,
   numberOfItems: allAttrs.length,
   itemListElement: allAttrs.map((item, i) => ({
@@ -59,7 +59,7 @@ const itemListLd = {
   {title}
   {description}
   {breadcrumbs}
-  heading="Bonus Attributes"
+  heading="Weapon/Gear Bonus Attributes"
   subheading="Every stat that can roll on your gear and weapons — organized by core function. Know your rolls, or suffer."
   jsonLd={itemListLd}
   lastVerified="Patch 1.1.2.2"
