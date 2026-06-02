@@ -21,7 +21,7 @@ faqs:
   - question: "Are exotic weapons better than High-End weapons?"
     answer: "Not always. Exotic weapons have unique talents that High-End weapons cannot match, but raw stat values on a well-rolled High-End weapon (especially T2 variants with cleanly rolled talents) can match or beat the exotic on pure DPS in certain builds. The exotic always wins on build-defining capability because the talent enables interactions you cannot get anywhere else. The High-End sometimes wins on raw damage output if the build is not specifically built around the exotic's talent."
   - question: "Can you recalibrate Exotic Weapons in Division Resurgence?"
-    answer: "No. Exotic weapons have fixed talents. You cannot recalibrate the unique ability. You can still optimize the base stats at the Optimization Station, but the talent text is locked. If you roll an exotic with bad stat lines, you are farming another copy to chase a cleaner roll."
+    answer: "Yes, partially. While you cannot modify the unique exotic talent that the weapon comes with, you can recalibrate the 2 bonus attributes and the 2 regular talents that roll on the weapon. To do this, you will need Exotic Weapon Recalibration Booklets and standard Weapon Recalibration Booklets."
 ---
 
 Three exotic weapons are currently live in Division Resurgence as of Patch 1.1.2.2: **Lady Death** (SMG), **Warlord** (Assault Rifle), and **Strawberry Milkshake** (LMG). One more is officially confirmed for Phase 3 in June 2026: **Scorpio** (Shotgun). One more is leaked from a Reddit screenshot but not officially confirmed: **Diamondback** (Rifle). This page is the single source of truth for every exotic in Resurgence, what it does, and how it stacks up against the rest.
@@ -143,7 +143,7 @@ The free exotics of the Classified Ops Pass (Warlord in Phase 1, Strawberry Milk
 
 ## Can You Recalibrate Exotic Weapons?
 
-No. Exotic weapons have fixed talents. You cannot recalibrate the unique ability. You can still optimize the base stats at the Optimization Station, but the talent text is locked. If you roll an exotic with bad stat lines, you are farming another copy to chase a cleaner roll.
+Yes, partially. While you cannot modify the unique exotic talent that the weapon comes with, you **can** recalibrate the 2 bonus attributes and the 2 regular talents that roll on the weapon. To do this, you will need Exotic Weapon Recalibration Booklets and standard Weapon Recalibration Booklets. Every exotic comes with 1 fixed exotic talent and 2 regular talents that are open for recalibration.
 
 ## What is the Best Exotic Weapon in Division Resurgence?
 
