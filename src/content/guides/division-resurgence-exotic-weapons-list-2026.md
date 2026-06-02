@@ -13,7 +13,7 @@ faqs:
   - question: "When is the next exotic weapon coming to Division Resurgence?"
     answer: "The Scorpio Shotgun is officially confirmed for Phase 3 of Season 1, which Ubisoft has scheduled for June 2026. Community trackers point at June 23, 2026 as the likely Phase 3 rollover date. June 23 is not an official Ubisoft date."
   - question: "Can I get the Warlord if I missed Phase 1?"
-    answer: "The Warlord was the Phase 1 free exotic on the Classified Ops Pass. If you missed the Phase 1 free unlock, the standard exotic acquisition channels still apply (mission boss drops, Dark Zone, special events, Projects-tab quest lines), but the guaranteed free-pass unlock is no longer the path. Check the Projects tab in-game for any active Warlord-related quest, and check the Warlord database page for the latest acquisition notes."
+    answer: "The Warlord was the Phase 1 free exotic on the Classified Ops Pass. If you missed the Phase 1 free unlock, the standard exotic acquisition channels still apply (mission boss drops, Dark Zone, special events), but the guaranteed free-pass unlock is no longer the path. Check the Warlord database page for the latest acquisition notes."
   - question: "Is the Scorpio in Division Resurgence the same as the Scorpio in Division 2?"
     answer: "Both the Division 2 and Resurgence Scorpio are exotic shotguns, but they are not identical. Talents, stats, and behavior will differ in Resurgence. Do not carry D2 build assumptions over to the Resurgence version."
   - question: "What is the best exotic for a beginner in Division Resurgence?"
@@ -137,7 +137,7 @@ If the leak holds and the Diamondback ships alongside the Scorpio in Phase 3, it
 
 ## How to Get Exotic Weapons in Division Resurgence
 
-Exotic weapons drop from specific activities. Some are tied to mission bosses, others come from the Dark Zone, others come from special events. Drop rates are low, so expect to grind for the ones not tied to a pass. A handful of exotics have dedicated quest lines you can track through the **Projects tab** in the menu, which is the cleanest way to figure out if a specific exotic has a guaranteed quest path or if you are running into RNG.
+Exotic weapons drop from specific activities. Some are tied to mission bosses, others come from the Dark Zone, others come from special events. Drop rates are low, so expect to grind for the ones not tied to a pass.
 
 The free exotics of the Classified Ops Pass (Warlord in Phase 1, Strawberry Milkshake in Phase 2, Scorpio in Phase 3) do not require Dark Zone runs or boss grinds. You unlock them by progressing the pass tiers, which any agent can do on the free track. The fastest known path to pass XP is the Weekly Bounty system at 120 SPXP per bounty and the Chinatown Rescue mission on Challenging at 210 SPXP per run.
 
