@@ -482,7 +482,7 @@ tbody tr:hover {
 .site-header {
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 9999;
   background: var(--bg);
   border-bottom: 1px solid var(--border);
   height: var(--nav-height);
@@ -586,7 +586,7 @@ tbody tr:hover {
   visibility: hidden;
   transition: all var(--transition-fast);
   box-shadow: 0 10px 25px rgba(0,0,0,0.5);
-  z-index: 100;
+  z-index: 10000;
 }
 
 .nav-dropdown:hover .nav-dropdown__menu {
@@ -638,7 +638,7 @@ tbody tr:hover {
   position: fixed;
   inset: 0;
   top: var(--nav-height);
-  z-index: 99;
+  z-index: 9998;
   background: var(--bg);
   padding: var(--sp-6) var(--sp-4);
   flex-direction: column;

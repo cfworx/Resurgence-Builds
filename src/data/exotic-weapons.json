@@ -11,7 +11,7 @@
     "talentDescription": "While moving, grants 4 stacks per second, or 8 stacks if sprinting, up to a maximum of 40 stacks. A stack is consumed with each round fired, granting +15% Weapon Damage. Deploying a Skill consumes 10 stacks and grants +15% Skill Damage. Kills grant +10% Movement Speed for 10 seconds.",
     "accuracy": "50",
     "reloadSpeed": "2.98s",
-    "optimalRange": "10m",
+    "optimalRange": "18m",
     "movementSpeed": "91",
     "stability": "50"
   },

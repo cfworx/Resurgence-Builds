@@ -1,0 +1,156 @@
+---
+import weaponTalents from '../data/weapon-talents.json';
+
+interface Props {
+  talentNames: string[];
+  gridTitle?: string;
+  isCard?: boolean;
+}
+
+const { talentNames, gridTitle, isCard = false } = Astro.props;
+
+const talentsData = talentNames.map(name => {
+  const t = weaponTalents.find(wt => wt.name === name);
+  const slug = t ? t.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '') : '#';
+  return { ...t, slug };
+});
+---
+
+{isCard ? (
+  <div class="tg-card-row">
+    {talentsData.map(talent => (
+      <>
+        <a href={`/database/weapon-talents/${talent.slug}/`} class="tg-button card-size" title={talent.name}>
+          {talent.icon ? (
+            <img src={talent.icon} alt={talent.name} class="tg-icon" />
+          ) : (
+            <div class="tg-placeholder"></div>
+          )}
+        </a>
+        {talent.upgradedName && (
+          <a href={`/database/weapon-talents/${talent.slug}/`} class="tg-button card-size" title={talent.upgradedName}>
+            {talent.icon ? (
+              <img src={talent.icon.replace('.webp', '2.webp')} alt={talent.upgradedName} class="tg-icon" onerror="this.src=this.src.replace('2.webp', '.webp')" />
+            ) : (
+              <div class="tg-placeholder"></div>
+            )}
+          </a>
+        )}
+      </>
+    ))}
+    {talentsData.length === 0 && Array.from({ length: 4 }).map(() => (
+      <div class="tg-button card-size empty"></div>
+    ))}
+  </div>
+) : (
+  <div class="talent-grid-container">
+    <div class="tg-header">
+      <span class="tg-dots">::</span> {gridTitle}
+    </div>
+    <div class="tg-grid">
+      {talentsData.map(talent => (
+        <>
+          <a href={`/database/weapon-talents/${talent.slug}/`} class="tg-button">
+            {talent.icon ? (
+              <img src={talent.icon} alt={talent.name} class="tg-icon" />
+            ) : (
+              <div class="tg-placeholder"></div>
+            )}
+          </a>
+          {talent.upgradedName && (
+            <a href={`/database/weapon-talents/${talent.slug}/`} class="tg-button">
+              {talent.icon ? (
+                <img src={talent.icon.replace('.webp', '2.webp')} alt={talent.upgradedName} class="tg-icon" onerror="this.src=this.src.replace('2.webp', '.webp')" />
+              ) : (
+                <div class="tg-placeholder"></div>
+              )}
+            </a>
+          )}
+        </>
+      ))}
+      <!-- Fill empty spaces to maintain a 4-column grid look if needed -->
+      {Array.from({ length: Math.max(0, 16 - (talentsData.length * 2)) }).map(() => (
+        <div class="tg-button empty"></div>
+      ))}
+    </div>
+  </div>
+)}
+
+<style>
+  .talent-grid-container {
+    margin-bottom: var(--sp-6);
+  }
+  .tg-header {
+    font-family: var(--font-heading);
+    font-size: var(--text-lg);
+    color: #fff;
+    margin-bottom: var(--sp-3);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .tg-dots {
+    letter-spacing: -2px;
+    color: #a0a0a0;
+  }
+  .tg-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4px;
+    background: #111;
+    padding: 4px;
+    border: 1px solid rgba(255,255,255,0.05);
+  }
+  .tg-button {
+    aspect-ratio: 1 / 1;
+    background: #2a2a2a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+    border: 1px solid transparent;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+  }
+  .tg-button:hover:not(.empty) {
+    background: #333;
+    border-color: var(--accent);
+    transform: scale(1.05);
+    z-index: 1;
+  }
+  .tg-icon {
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+    opacity: 0.9;
+  }
+  .tg-button:hover .tg-icon {
+    opacity: 1;
+  }
+  .tg-placeholder {
+    width: 60%;
+    height: 60%;
+    background: rgba(255,255,255,0.1);
+    border-radius: 4px;
+  }
+  .tg-button.empty {
+    background: #1a1a1a;
+  }
+  .tg-card-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+  .tg-button.card-size {
+    width: 30px;
+    height: 30px;
+    background: #111;
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 4px;
+  }
+  .tg-button.card-size:hover {
+    border-color: var(--accent);
+    transform: scale(1.1);
+  }
+</style>

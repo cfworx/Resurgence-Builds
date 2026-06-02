@@ -3,6 +3,7 @@ import BaseLayout from '../../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../../components/Breadcrumbs.astro';
 import SectionTag from '../../../components/SectionTag.astro';
 import AdSenseUnit from '../../../components/AdSenseUnit.astro';
+import WeaponAttributes from '../../../components/WeaponAttributes.astro';
 import exoticWeapons from '../../../data/exotic-weapons.json';
 
 export function getStaticPaths() {
@@ -86,7 +87,7 @@ const productLd = {
 
       {weapon.image && (
         <div style="margin-bottom: var(--sp-6); border-radius: 8px; overflow: hidden; border: 1px solid var(--border);">
-          <img src={weapon.image} alt={weapon.name} style="width: 100%; height: auto; display: block;" />
+          <img src={weapon.image} alt={`${weapon.name} Exotic ${weapon.type} in Division Resurgence`} style="width: 100%; height: auto; display: block;" />
         </div>
       )}
 
@@ -106,28 +107,16 @@ const productLd = {
             <span class="weapon-stat__label">MAG</span>
             <span class="weapon-stat__value">{weapon.mag}</span>
           </div>
-          <div class="weapon-stat">
-            <span class="weapon-stat__label">Accuracy</span>
-            <span class="weapon-stat__value">{weapon.accuracy}</span>
-          </div>
-          <div class="weapon-stat">
-            <span class="weapon-stat__label">Reload Speed</span>
-            <span class="weapon-stat__value">{weapon.reloadSpeed}</span>
-          </div>
-          <div class="weapon-stat">
-            <span class="weapon-stat__label">Optimal Range</span>
-            <span class="weapon-stat__value">{weapon.optimalRange}</span>
-          </div>
-          <div class="weapon-stat">
-            <span class="weapon-stat__label">Movement Speed</span>
-            <span class="weapon-stat__value">{weapon.movementSpeed}</span>
-          </div>
-          <div class="weapon-stat">
-            <span class="weapon-stat__label">Stability</span>
-            <span class="weapon-stat__value">{weapon.stability}</span>
-          </div>
         </div>
       </div>
+
+      <WeaponAttributes 
+        accuracy={weapon.accuracy} 
+        reloadSpeed={weapon.reloadSpeed} 
+        optimalRange={weapon.optimalRange} 
+        movementSpeed={weapon.movementSpeed} 
+        stability={weapon.stability} 
+      />
 
       <!-- Talent Section -->
       <div class="weapon-talent">

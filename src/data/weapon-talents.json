@@ -17,7 +17,10 @@
   {
     "id": "wt-4",
     "name": "Backup Battery",
-    "description": "Swapping to this weapon grants +22.50% Engineering for 8 seconds. Talent Cooldown: 8 seconds."
+    "description": "Swapping to this weapon grants +22.50% Engineering for 8 seconds. Talent Cooldown: 8 seconds.",
+    "upgradedName": "Backup Battery II",
+    "upgradedDescription": "Swapping to this weapon grants +31.50% Engineering for 8 seconds. Talent Cooldown: 8 seconds.",
+    "icon": "/images/ui/talents/backup-battery.webp"
   },
   {
     "id": "wt-5",
@@ -112,7 +115,10 @@
   {
     "id": "wt-23",
     "name": "In a Day's Work",
-    "description": "Headshot Kills grant +36% Reload Speed for 5 seconds."
+    "description": "Headshot Kills grant +36% Reload Speed for 5 seconds.",
+    "upgradedName": "In a Day's Work II",
+    "upgradedDescription": "Headshot Kills grant enhanced Reload Speed for 5 seconds.",
+    "icon": "/images/ui/talents/in-a-days-work.webp"
   },
   {
     "id": "wt-24",
@@ -197,7 +203,9 @@
   {
     "id": "wt-40",
     "name": "Proficient Reload",
-    "description": "Reloading grants +6% Reload Speed for 10 seconds, up to 5 stacks."
+    "description": "Reloading grants +6% Reload Speed for 10 seconds, up to 5 stacks.",
+    "upgradedName": "Proficient Reload II",
+    "icon": "/images/ui/talents/proficient-reload.webp"
   },
   {
     "id": "wt-41",
@@ -262,7 +270,9 @@
   {
     "id": "wt-53",
     "name": "Steady Hands",
-    "description": "Hip firing grants +20% Stability and +15% Weapon Damage."
+    "description": "Hip firing grants +20% Stability and +15% Weapon Damage.",
+    "upgradedName": "Steady Hands II",
+    "icon": "/images/ui/talents/steady-hands.webp"
   },
   {
     "id": "wt-54",
@@ -272,7 +282,9 @@
   {
     "id": "wt-55",
     "name": "Steady Suppression",
-    "description": "Grants +18% Damage Reduction while firing."
+    "description": "Grants +18% Damage Reduction while firing.",
+    "upgradedName": "Steady Suppression II",
+    "icon": "/images/ui/talents/steady-suppression.webp"
   },
   {
     "id": "wt-56",
@@ -292,7 +304,10 @@
   {
     "id": "wt-59",
     "name": "Swift Aim",
-    "description": "Hits while aiming reduce Skill Cooldown by 2%. Talent Cooldown: 2 seconds."
+    "description": "Hits while aiming reduce Skill Cooldown by 2%. Talent Cooldown: 2 seconds.",
+    "upgradedName": "Swift Aim II",
+    "upgradedDescription": "Hits while aiming reduce Skill Cooldown by 2.80%. Talent Cooldown: 2 seconds.",
+    "icon": "/images/ui/talents/swift-aim.webp"
   },
   {
     "id": "wt-60",

@@ -1,5 +1,7 @@
 ---
 import DatabaseLayout from '../../../layouts/DatabaseLayout.astro';
+import WeaponAttributes from '../../../components/WeaponAttributes.astro';
+import WeaponTalentsGrid from '../../../components/WeaponTalentsGrid.astro';
 import standardWeapons from '../../../data/standard-weapons.json';
 import exoticWeapons from '../../../data/exotic-weapons.json';
 import AdSenseUnit from '../../../components/AdSenseUnit.astro';
@@ -16,8 +18,8 @@ const description = "Complete Division Resurgence weapon database. Every Assault
 const types = [...new Set(standardWeapons.map((w: any) => w.type))];
 
 const faqs = [
-  { question: "How many weapons are in Division Resurgence?", answer: "Division Resurgence has dozens of weapons across multiple categories: Assault Rifles, SMGs, LMGs, Marksman Rifles, and Shotguns — plus a growing roster of Exotic weapons with unique talents. This page lists every standard weapon in the game with their RPM, magazine size, and damage type." },
-  { question: "What is the best weapon type in Division Resurgence?", answer: "Assault Rifles are the most versatile — good range, solid DPS, forgiving magazine sizes. SMGs dominate at close range, especially in Dark Zone PvP. LMGs are the sustained DPS kings for PvE. Marksman Rifles reward headshot accuracy with massive burst damage. There's no single best type — it depends on your range, your build, and honestly, what feels good in your hands." },
+  { question: "How many weapons are in Division Resurgence?", answer: "Division Resurgence has dozens of weapons across multiple categories: Assault Rifles, SMGs, LMGs, Marksman Rifles, and Shotguns plus a growing roster of Exotic weapons with unique talents. This page lists every standard weapon in the game with their RPM, magazine size, and damage type." },
+  { question: "What is the best weapon type in Division Resurgence?", answer: "Assault Rifles are the most versatile: good range, solid DPS, forgiving magazine sizes. SMGs dominate at close range, especially in Dark Zone PvP. LMGs are the sustained DPS kings for PvE. Marksman Rifles reward headshot accuracy with massive burst damage. There's no single best type, it depends on your range, your build, and honestly, what feels good in your hands." },
   { question: "How do weapon stats work in Division Resurgence?", answer: "Every weapon has base stats for Damage, RPM (rate of fire), Magazine size, Accuracy, Stability, Reload Speed, Optimal Range, and Movement Speed. These stats are fixed per weapon model but can be modified by weapon mods and attachments. The damage number scales with your Firepower core attribute and any weapon damage bonuses from gear." },
 ];
 ---
@@ -30,16 +32,29 @@ const faqs = [
   subheading="Every standard weapon in Division Resurgence with stats and class breakdowns. Click any weapon for full details, or check the Exotic Weapons for unique talents."
   {faqs}
 >
+  <div class="db-filters">
+    <div class="filter-group">
+      <span class="filter-label">Category:</span>
+      <div class="filter-bar" id="weapon-filters">
+        <button class="filter-btn is-active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="exotic">Exotic</button>
+        {types.map((type: string) => (
+          <button class="filter-btn" data-filter={type.toLowerCase()}>{type}</button>
+        ))}
+      </div>
+    </div>
+  </div>
+
   {exoticWeapons && exoticWeapons.length > 0 && (
-    <div style="margin-bottom: var(--sp-10);">
+    <div class="weapon-category" data-category="exotic" style="margin-bottom: var(--sp-10);">
       <h2 style="font-family: var(--font-heading); font-size: var(--text-2xl); font-weight: 800; color: #ff5100; margin-bottom: var(--sp-6);">Exotics</h2>
       <div class="db-grid">
         {exoticWeapons.map((w: any) => (
-          <a href={`/database/exotic-weapons/${w.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')}/`} class="db-card-link">
             <article class="db-card exotic-card">
+              <a href={`/database/exotic-weapons/${w.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')}/`} class="db-card-full-link"></a>
               {w.image && (
-                <div class="db-card__image-banner" style="border-bottom: 1px solid rgba(255,81,0,0.2); margin-bottom: var(--sp-4);">
-                  <img src={w.image} alt={w.name} width="400" height="120" loading="lazy" decoding="async" />
+                <div class="db-card__image-banner">
+                  <img src={w.image} alt={`${w.name} Exotic ${w.type} in Division Resurgence`} width="400" height="120" loading="lazy" decoding="async" />
                 </div>
               )}
               <div class="db-card__header">
@@ -56,33 +71,74 @@ const faqs = [
                   <strong style="color: #ff5100;">{w.talentName}:</strong> {w.talentDescription}
                 </div>
                 
-                <ul class="attr-list" style="margin-top: var(--sp-2);">
+                <WeaponAttributes 
+                  accuracy={w.accuracy} 
+                  reloadSpeed={w.reloadSpeed} 
+                  optimalRange={w.optimalRange} 
+                  movementSpeed={w.movementSpeed} 
+                  stability={w.stability} 
+                  isCard={true}
+                />
+                
+                <ul class="attr-list" style="margin-top: auto;">
                   <li><span>Damage</span><span>{w.damage}</span></li>
                   <li><span>RPM</span><span>{w.rpm}</span></li>
                   <li><span>MAG</span><span>{w.mag}</span></li>
                 </ul>
               </div>
             </article>
-          </a>
         ))}
       </div>
     </div>
   )}
 
   {types.map((type: string) => (
-    <div style="margin-bottom: var(--sp-8);">
+    <div class="weapon-category" data-category={type.toLowerCase()} style="margin-bottom: var(--sp-8);">
       <h2 style="font-family: var(--font-heading); font-size: var(--text-xl); font-weight: 800; color: var(--accent); margin-bottom: var(--sp-4);">{type}s</h2>
-      <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: var(--sp-3);">
+      <div class="db-grid">
         {standardWeapons.filter((w: any) => w.type === type).map((w: any) => (
-          <a href={`/database/weapons/${w.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')}/`}
-             style="display: flex; justify-content: space-between; align-items: center; padding: var(--sp-4); background: rgba(0,0,0,0.2); border: 1px solid var(--border); border-radius: 8px; text-decoration: none; transition: all 0.2s; color: inherit;"
-          >
-            <div>
-              <strong style="color: #fff;">{w.name}</strong>
-              <span style="display: block; font-family: var(--font-mono); font-size: 10px; color: var(--ink-muted); text-transform: uppercase; margin-top: 2px;">{w.rpm} RPM · {w.mag} MAG · {w.dmgType}</span>
-            </div>
-            <span style="color: var(--accent); font-size: var(--text-sm);">→</span>
-          </a>
+            <article class="db-card">
+              <a href={`/database/weapons/${w.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')}/`} class="db-card-full-link"></a>
+              {w.image && (
+                <div class="db-card__image-banner">
+                  <img src={w.image} alt={`${w.name} ${w.type} in Division Resurgence`} width="400" height="120" loading="lazy" decoding="async" />
+                </div>
+              )}
+              <div class="db-card__header">
+                <div>
+                  <h2 class="db-card__title" style="color: #fff;">{w.name}</h2>
+                  <div style="display:flex;gap:var(--sp-2);flex-wrap:wrap;margin-top:var(--sp-2);">
+                    <span class="weapon-type tag" style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); color: #fff; padding: 2px 8px; border-radius: 4px; font-size: 10px; font-weight: 800; text-transform: uppercase;">{w.type}</span>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="db-card__body" style="justify-content: flex-end;">
+                <WeaponAttributes 
+                  accuracy={w.accuracy} 
+                  reloadSpeed={w.reloadSpeed} 
+                  optimalRange={w.optimalRange} 
+                  movementSpeed={w.movementSpeed} 
+                  stability={w.stability} 
+                  isCard={true}
+                />
+                <div style="margin-top: var(--sp-2); padding-top: var(--sp-2); border-top: 1px solid rgba(255,255,255,0.05); display: flex; flex-direction: column; gap: var(--sp-2);">
+                  <div>
+                    <div style="font-size: 9px; font-weight: 800; color: var(--accent); text-transform: uppercase; margin-bottom: 4px; letter-spacing: 0.05em;">Talent 1</div>
+                    <WeaponTalentsGrid talentNames={w.talent1 || []} isCard={true} />
+                  </div>
+                  <div>
+                    <div style="font-size: 9px; font-weight: 800; color: var(--accent); text-transform: uppercase; margin-bottom: 4px; letter-spacing: 0.05em;">Talent 2</div>
+                    <WeaponTalentsGrid talentNames={w.talent2 || []} isCard={true} />
+                  </div>
+                </div>
+
+                <ul class="attr-list" style="margin-top: auto;">
+                  <li><span>RPM</span><span>{w.rpm}</span></li>
+                  <li><span>MAG</span><span>{w.mag}</span></li>
+                </ul>
+              </div>
+            </article>
         ))}
       </div>
     </div>
@@ -90,6 +146,32 @@ const faqs = [
 
   <AdSenseUnit />
 </DatabaseLayout>
+
+<script>
+  const filterBar = document.getElementById('weapon-filters');
+  const categories = document.querySelectorAll('.weapon-category');
+
+  if (filterBar) {
+    filterBar.addEventListener('click', (e) => {
+      const btn = (e.target as HTMLElement).closest('.filter-btn');
+      if (!btn) return;
+
+      const filterId = btn.getAttribute('data-filter');
+
+      filterBar.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('is-active'));
+      btn.classList.add('is-active');
+
+      categories.forEach(el => {
+        const cat = (el as HTMLElement).getAttribute('data-category');
+        if (filterId === 'all' || cat === filterId) {
+          (el as HTMLElement).style.display = '';
+        } else {
+          (el as HTMLElement).style.display = 'none';
+        }
+      });
+    });
+  }
+</script>
 
 <style is:global>
   .db-card__image-banner {
@@ -105,12 +187,9 @@ const faqs = [
     width: 100%;
     height: auto;
   }
-  .db-card-link {
-    text-decoration: none;
-    color: inherit;
-    display: block;
-  }
-  .db-card-link .db-card {
-    height: 100%;
+  .db-card-full-link {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
   }
 </style>

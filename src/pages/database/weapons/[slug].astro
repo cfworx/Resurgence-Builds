@@ -2,6 +2,9 @@
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../../components/Breadcrumbs.astro';
 import SectionTag from '../../../components/SectionTag.astro';
+import WeaponAttributes from '../../../components/WeaponAttributes.astro';
+import RandomizedAttributes from '../../../components/RandomizedAttributes.astro';
+import WeaponTalentsGrid from '../../../components/WeaponTalentsGrid.astro';
 import AdSenseUnit from '../../../components/AdSenseUnit.astro';
 import standardWeapons from '../../../data/standard-weapons.json';
 
@@ -101,6 +104,12 @@ const productLd = {
         </div>
       </div>
 
+      {weapon.image && (
+        <div style="margin-bottom: var(--sp-8); border-radius: 8px; overflow: hidden; border: 1px solid var(--border); background: rgba(0,0,0,0.3);">
+          <img src={weapon.image} alt={`${weapon.name} ${weapon.type} in Division Resurgence`} style="width: 100%; height: auto; display: block;" />
+        </div>
+      )}
+
       <!-- Overview -->
       <div style="margin-bottom: var(--sp-8);">
         <h2 style="font-family: var(--font-heading); font-size: var(--text-lg); font-weight: 800; color: #fff; margin: 0 0 var(--sp-4) 0; padding-bottom: var(--sp-2); border-bottom: 1px solid rgba(255,255,255,0.08);">Overview</h2>
@@ -112,7 +121,7 @@ const productLd = {
       <!-- Stats -->
       <div style="margin-bottom: var(--sp-8);">
         <h2 style="font-family: var(--font-heading); font-size: var(--text-lg); font-weight: 800; color: #fff; margin: 0 0 var(--sp-4) 0; padding-bottom: var(--sp-2); border-bottom: 1px solid rgba(255,255,255,0.08);">Stats</h2>
-        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--sp-3);">
+        <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--sp-3);">
           <div style="display: flex; flex-direction: column; gap: 4px; background: rgba(0,0,0,0.25); padding: var(--sp-4); border-radius: 8px; border: 1px solid rgba(255,255,255,0.05);">
             <span style="font-family: var(--font-mono); font-size: 10px; font-weight: 600; color: var(--ink-muted); text-transform: uppercase; letter-spacing: 0.06em;">RPM</span>
             <span style="font-size: var(--text-lg); font-weight: 700; color: #fff;">{weapon.rpm}</span>
@@ -121,12 +130,33 @@ const productLd = {
             <span style="font-family: var(--font-mono); font-size: 10px; font-weight: 600; color: var(--ink-muted); text-transform: uppercase; letter-spacing: 0.06em;">Magazine</span>
             <span style="font-size: var(--text-lg); font-weight: 700; color: #fff;">{weapon.mag}</span>
           </div>
-          <div style="display: flex; flex-direction: column; gap: 4px; background: rgba(0,0,0,0.25); padding: var(--sp-4); border-radius: 8px; border: 1px solid rgba(255,255,255,0.05);">
-            <span style="font-family: var(--font-mono); font-size: 10px; font-weight: 600; color: var(--ink-muted); text-transform: uppercase; letter-spacing: 0.06em;">Damage Type</span>
-            <span style="font-size: var(--text-lg); font-weight: 700; color: #fff;">{weapon.dmgType}</span>
-          </div>
         </div>
       </div>
+
+      <WeaponAttributes 
+        accuracy={weapon.accuracy} 
+        reloadSpeed={weapon.reloadSpeed} 
+        optimalRange={weapon.optimalRange} 
+        movementSpeed={weapon.movementSpeed} 
+        stability={weapon.stability} 
+      />
+
+      {weapon.randomizedAttributes && (
+        <RandomizedAttributes attributes={weapon.randomizedAttributes} />
+      )}
+
+      {(weapon.talent1 || weapon.talent2) && (
+        <div style="margin-bottom: var(--sp-8); background: #1a1a1a; padding: var(--sp-4); border-radius: 8px; border: 1px solid rgba(255,255,255,0.05);">
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: var(--sp-4);">
+            <h2 style="font-family: var(--font-heading); font-size: var(--text-xl); font-weight: 800; color: var(--accent); margin: 0; display: flex; align-items: center; gap: 8px;">
+              <span style="letter-spacing: -2px;">:::</span> Weapon Talents
+            </h2>
+            <svg style="color: #a0a0a0;" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+          </div>
+          {weapon.talent1 && <WeaponTalentsGrid talentNames={weapon.talent1} gridTitle="Talent 1" />}
+          {weapon.talent2 && <WeaponTalentsGrid talentNames={weapon.talent2} gridTitle="Talent 2" />}
+        </div>
+      )}
 
       <!-- Weapon class guide -->
       <div style="margin-bottom: var(--sp-8);">
