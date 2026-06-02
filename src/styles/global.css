@@ -1293,6 +1293,8 @@ tbody tr:hover {
   display: block;
   width: 100%;
   background: var(--surface);
+  max-height: 120px;
+  overflow: hidden;
 }
 
 /* --- Disclaimer / Humility Banner --- */
