@@ -19,7 +19,9 @@ export default defineConfig({
     '/tag/v1.1.2/': '/patch-notes/',
     '/tag/v1.2.0/': '/patch-notes/',
     '/tag/v1.1.2.2/': '/patch-notes/',
-    '/tag/v1.2.1/': '/patch-notes/'
+    '/tag/v1.2.1/': '/patch-notes/',
+    '/ai.txt': '/llms.txt',
+    '/.well-known/ai.txt': '/llms.txt',
   },
   integrations: [
     sitemap({

@@ -1,0 +1,604 @@
+# ResurgenceBuilds.com — Full Content for LLM Retrieval
+
+> This file contains the complete text of all weapon databases, gear references, talent tables, and game data from ResurgenceBuilds.com, optimized for LLM ingestion. All data is from Tom Clancy's The Division Resurgence (Ubisoft, 2025 mobile/PC game — not The Division 1, The Division 2, The Division Heartland, or The Division Survivors).
+
+> Last verified: 2026-06-02. Current patch: 1.1.2.2. Season: 1.
+
+---
+
+## Exotic Weapons
+
+There are 3 exotic weapons currently available in The Division Resurgence (Patch 1.1.2.2).
+
+### Lady Death (Exotic SMG)
+
+| Stat | Value |
+|---|---|
+| Weapon Class | SMG |
+| Damage | 299 Blast Damage |
+| RPM | 900 |
+| Magazine | 32 |
+| Accuracy | 50 |
+| Stability | 50 |
+| Reload Speed | 2.98s |
+| Optimal Range | 10m |
+| Movement Speed | 91 |
+
+**Exotic Talent: Breathe Free**
+While moving, grants 4 stacks per second, or 8 stacks if sprinting, up to a maximum of 40 stacks. A stack is consumed with each round fired, granting +15% Weapon Damage. Deploying a Skill consumes 10 stacks and grants +15% Skill Damage. Kills grant +10% Movement Speed for 10 seconds.
+
+Source: https://resurgencebuilds.com/database/exotic-weapons/lady-death/
+
+### Warlord (Exotic Assault Rifle)
+
+| Stat | Value |
+|---|---|
+| Weapon Class | Assault Rifle |
+| Damage | 324 Blast Damage |
+| RPM | 600 |
+| Magazine | 30 |
+| Accuracy | 68 |
+| Stability | 56 |
+| Reload Speed | 3.1s |
+| Optimal Range | 29m |
+| Movement Speed | 54 |
+
+**Exotic Talent: Play Rough**
+While firing, reduces Incoming Damage by 25%. When firing ceases, applies 60% of the reduced damage and grants +10% Skill Damage for 10 seconds.
+
+Source: https://resurgencebuilds.com/database/exotic-weapons/warlord/
+
+### Strawberry Milkshake (Exotic LMG)
+
+| Stat | Value |
+|---|---|
+| Weapon Class | LMG |
+| Damage | 300 Shredding Damage |
+| RPM | 550 |
+| Magazine | 100 |
+| Accuracy | 74 |
+| Stability | 50 |
+| Reload Speed | 5.6s |
+| Optimal Range | 29m |
+| Movement Speed | 19 |
+
+**Exotic Talent: Anarchy**
+Hits inflict a debuff, dealing 2.40% Weapon Damage over 4.50 seconds, up to 50 stacks. Enemies dying with this debuff transfer all stacks to a nearby enemy within 12 meters.
+
+Source: https://resurgencebuilds.com/database/exotic-weapons/strawberry-milkshake/
+
+---
+
+## Standard Weapons
+
+There are 34 standard weapons in The Division Resurgence.
+
+| Weapon | Class | RPM | Magazine | Damage | Damage Type |
+|---|---|---|---|---|---|
+| AK-47 | Assault Rifle | 600 | 30 | N/A | Physical |
+| Police M4 | Assault Rifle | 850 | 30 | N/A | Physical |
+| ACR | Assault Rifle | 700 | 30 | N/A | Physical |
+| AN-94 | Assault Rifle | 600 | 30 | N/A | Physical |
+| G36 | Assault Rifle | 750 | 30 | N/A | Physical |
+| FAMAS | Assault Rifle | 900 | 30 | N/A | Physical |
+| P416 | Assault Rifle | 750 | 30 | N/A | Physical |
+| Black Market AK-74 | Assault Rifle | 650 | 30 | N/A | Physical |
+| UMP-45 | SMG | 600 | 30 | N/A | Physical |
+| AUG A3 Para XS | SMG | 680 | 30 | N/A | Physical |
+| Vector | SMG | 1200 | 25 | N/A | Physical |
+| MP5 | SMG | 800 | 30 | N/A | Physical |
+| PPSH-41 | SMG | 900 | 71 | N/A | Physical |
+| T821 | SMG | 550 | 30 | N/A | Physical |
+| M60 | LMG | 500 | 100 | N/A | Physical |
+| MG5 | LMG | 800 | 50 | N/A | Physical |
+| Black Market RPK-74 | LMG | 650 | 45 | N/A | Physical |
+| L86 LSW | LMG | 610 | 30 | N/A | Physical |
+| Infantry MG5 | LMG | 800 | 50 | N/A | Physical |
+| M870 | Shotgun | 75 | 5 | N/A | Physical |
+| SASG-12 | Shotgun | 180 | 7 | N/A | Physical |
+| Double Barrel | Shotgun | 225 | 2 | N/A | Physical |
+| KSG | Shotgun | 90 | 14 | N/A | Physical |
+| M1A | Rifle | 300 | 10 | N/A | Physical |
+| SRS A1 | Marksman Rifle | 50 | 5 | N/A | Physical |
+| DSR-1 | Marksman Rifle | 50 | 5 | N/A | Physical |
+| M700 | Marksman Rifle | 54 | 5 | N/A | Physical |
+| SVD | Marksman Rifle | 260 | 10 | N/A | Physical |
+| Hunting M44 | Marksman Rifle | 40 | 5 | N/A | Physical |
+| Classic M1A | Rifle | 300 | 10 | N/A | Physical |
+| Urban MDR | Rifle | 350 | 20 | N/A | Physical |
+| ACR SS | Rifle | 360 | 20 | N/A | Physical |
+| Mk16 | Assault Rifle | 625 | 30 | N/A | Physical |
+| StG 44 | Assault Rifle | 600 | 30 | N/A | Physical |
+
+---
+
+## OS Protocols
+
+There are 66 OS Protocols in The Division Resurgence, categorized by specialization focus.
+
+### Engineering OS Protocols
+
+| Name | Rarity | Main Stat | Main Value | Talent |
+|---|---|---|---|---|
+| Explosive Charge | High-End | Engineering | +22.50% | Shooting for 3 seconds enhances the next Skill for 8 seconds. Dealing damage with the Enhanced Skill creates an explosio... |
+| Collateral Damage | High-End | Engineering | +22.50% | When dealing Skill Damage, also deal damage equal to 3000% Engineering to enemies within 5 meters of the target. |
+| Tactical Layering | High-End | Skill Intensity | +15.00% | Deploying a Skill grants +15% Engineering, up to 3 stacks. |
+| Relentless Assault | High-End | Skill Critical Damage | +30.00% | For every 1 shots fired, grants +1.30% Weapon Damage for 5 seconds, up to 30 stacks. Loses 2 stacks per second. |
+| Strategic Assistance | High-End | Skill Intensity | +15.00% | Assists grant +4.80% Signature Ability Charge Efficiency for 10 seconds and reduce Skill Cooldown by 2.40%, up to 5 stac... |
+| Rampart | High-End | Skill Critical Chance | +18.00% | While immobile, grants +5% Damage for 1 seconds, up to 6 stacks. This bonus resets upon moving. |
+| Surgical Engineering | High-End | Skill Intensity | +15.00% | Skill Critical Hits have a 60% chance of granting +16% Skill Critical Damage for 10 seconds, up to 3 stacks. |
+| Chain Reaction | Superior | Skill Critical Chance | +14.40% | Kills grant +7.50% Skill Intensity for 10 seconds, up to 2 stacks. |
+| Tactical Persistence | Superior | Skill Critical Damage | +24.00% | Skill Hits have a 20% chance of granting +3% Skill Intensity for 5 seconds, up to 5 stacks. |
+| Recursive Treatment | Superior | Engineering | +18.00% | Healing or granting Extra Health grants +20% Skill Intensity. |
+| Close and Personal | Superior | Skill Intensity | +12.00% | Grants +9% Engineering for each ally within 30 meters who possesses a buff that was granted by the Agent. |
+| Chase the Weak | Superior | Skill Intensity | +12.00% | Dealing damage to debuffed enemies who are 20 meters away has a 10% chance of granting +7.50% Engineering for 10 seconds... |
+| Together We Stand | Superior | Skill Intensity | +12.00% | Grants +9% Engineering for each ally within 20 meters. |
+| Pressing Matter | Superior | Skill Intensity | +12.00% | Grants +10% Skill Cooldown Recovery. |
+| Ambusher | Superior | Skill Intensity | +12.00% | Being immobile for 3 seconds grants +22.50% Engineering. |
+| Cornered Animal | Superior | Skill Critical Damage | +24.00% | Grants Weapon Damage equal to 50% Skill Critical Damage when there are no more than 1 bullets in the magazine, capped at... |
+| Rocket Science | Specialized | Skill Intensity | +9.00% | Deploying a Skill grants +14.40% Skill Critical Hit Chance for 10 seconds. |
+| Applied Demolition | Specialized | Skill Intensity | +9.00% | Deploying a Skill grants +24% Skill Critical Hit Damage for 10 seconds. |
+| Hardware Upgrade | Specialized | Skill Intensity | +9.00% | Grants +24% Skill Critical Damage. |
+| Brains Over Brawn | Specialized | Skill Critical Chance | +10.80% | Hits deal additional damage equal to 24% Engineering. |
+| Running Around | Specialized | Skill Intensity | +9.00% | Grants +18% Engineering while located within 25 meters of a debuffed enemy. |
+| Long-Range Artillery | Specialized | Engineering | +13.50% | Taking damage grants +12% Skill Intensity for 5 seconds. |
+| Overclocking | Standard | Skill Intensity | +6.00% | Grants +9% Skill Multi-Shot Chance. |
+| Energizer | Standard | Skill Intensity | +6.00% | Grants +10.80% Skill Critical Chance. |
+| Combat Doc | Standard | Skill Intensity | +6.00% | Grants +9% Healing Intensity. |
+| Genius Engineer | Standard | Skill Intensity | +6.00% | Grants +9% Engineering and +4.80% Skill Duration. |
+| Inspiration | Standard | Skill Intensity | +6.00% | Grants +18% Signature Ability Charge Efficiency while located within 25 meters of an enemy. |
+| Hermit | Standard | Skill Intensity | +6.00% | Grants +18% Signature Ability Charge Efficiency when no enemies are within 20 meters. |
+
+### Firepower OS Protocols
+
+| Name | Rarity | Main Stat | Main Value | Talent |
+|---|---|---|---|---|
+| Explosive Round | High-End | Firepower | +22.50% | Critical Hits performed during aiming create an explosion with a radius of 5 meters around the target that deals damage ... |
+| Overwhelming Power | High-End | Weapon Critical Hit Damage | +30.00% | Shooting grants +6% Weapon Damage for 2 seconds, up to 6 stacks. Shooting for 2 seconds grants +50% Damage Reduction for... |
+| Cover Shooter | High-End | Weapon Damage | +15.00% | Critical Hits behind cover have a 80% chance of granting +16% Weapon Critical Hit Damage for 5 seconds, up to 3 stacks. |
+| Assault Charge | High-End | Weapon Critical Hit Chance | +18.00% | Deploying the Signature Ability grants +30% Firepower and +20% Rate of Fire for 20 seconds. |
+| Concerted Strike | High-End | Weapon Damage | +15.00% | Skill Hits within 20 meters have a 100% chance of granting +8% Damage for 10 seconds, up to 3 stacks. |
+| Tactical Pistolero | Superior | Weapon Damage | +12.00% | Skill Hits grant +4.50% Firepower for 10 seconds, up to 5 stacks. |
+| Tight Grouping | Superior | Firepower | +18.00% | Weapon Critical Hits behind cover have a 5% chance of granting +10% Weapon Critical Hit Damage for 5 seconds, up to 3 st... |
+| Assisted Infantry | Superior | Weapon Critical Hit Chance | +14.40% | Shooting continuously grants +2.50% Weapon Damage every 1 seconds for 2 seconds, up to 6 stacks. |
+| Pressure Cooker | Superior | Weapon Critical Hit Damage | +24.00% | When taking damage, grants +6% Weapon Critical Hit Chance for 10 seconds, up to 3 stacks. |
+| Dominating Presence | Superior | Weapon Damage | +12.00% | Grants +5% Weapon Multi-Shot Chance for each enemy within 20 meters. |
+| Augmented Lethality | Superior | Firepower | +18.00% | Grants +4% Weapon Damage and +4% Incoming Healing for every 1 enemies who are within 20 meters. |
+| Deadly Accuracy | Superior | Weapon Damage | +12.00% | Headshots grant +3.25% Firepower for 7 seconds, up to 10 stacks. Stacks disappear over time, but body shots and missed s... |
+| Mechanized Support | Superior | Weapon Critical Hit Damage | +24.00% | Grants +15% Weapon Damage while located within 20 meters of a deployed Skill. |
+| Trench Fighter | Superior | Weapon Damage | +12.00% | Grants +30% Weapon Critical Hit Damage when behind cover. |
+| Close Quarters Menace | Superior | Firepower | +18.00% | Grants +15% Skill Intensity and Weapon Damage when there are enemies within 20 meters. |
+| Combat Reload | Superior | Firepower | +18.00% | Reloading grants +15% Weapon Damage for 5 seconds. |
+| Death From Afar | Superior | Weapon Damage | +12.00% | Grants Firepower equal to 12% Headshot Damage, capped at 54% Firepower. |
+| Hunting Season | Specialized | Weapon Critical Hit Chance | +10.80% | Grants +6% Firepower while located within 30 meters of a debuffed enemy. |
+| Side by Side | Specialized | Weapon Critical Hit Damage | +18.00% | Grants +6% Firepower while located within 30 meters of a deployed Skill. |
+| Suppressive Fire | Specialized | Firepower | +13.50% | Shooting grants +12% Weapon Damage. |
+| Resentful | Specialized | Weapon Damage | +9.00% | Taking damage grants +14.40% Weapon Critical Hit Chance for 5 seconds. |
+| Face-to-Face Advantage | Specialized | Weapon Damage | +9.00% | Grants +18% Firepower while located within 20 meters of an enemy. |
+| War Machine | Standard | Firepower | +9.00% | Grants +9% Weapon Damage. |
+| Seasoned Veteran | Standard | Weapon Damage | +6.00% | Grants +13.50% Firepower. |
+| Spray 'n' Pray | Standard | Weapon Damage | +6.00% | Grants +9% Weapon Multi-Shot Chance. |
+
+### Toughness OS Protocols
+
+| Name | Rarity | Main Stat | Main Value | Talent |
+|---|---|---|---|---|
+| Pummeling Shield | High-End | Toughness | +22.50% | While possessing Extra Health, apply Stun after every 10 hits performed. At Max Health, grants Extra Health equal to 240... |
+| Heavy Armor | High-End | Toughness | +22.50% | While possessing Extra Health, grants +14.40% Damage. Assists grant Extra Health equal to 16% Max Health for 10 seconds. |
+| Happy Survival | High-End | Max Health | +30.00% | Restore 0.50% Max Health for every 1 enemies within 10 meters, up to a maximum of 2.50%. Shooting consumes 2% Health and... |
+| Blitz Tactics | Superior | Toughness | +18.00% | Grants +12% Incoming Healing for each enemy within 20 meters who is targeting the Agent. Taking Weapon Damage restores 8... |
+| Last Resort | Superior | Skill Intensity | +12.00% | Grants +15% Toughness when an ally's Health reaches 50%, up to +100%. |
+| Medical Excellence | Superior | Healing Intensity | +20.00% | Restoring the Health of any ally whose Health is above 50% of their Current Health grants the ally team additional heali... |
+| Level-Headed | Superior | Armor | +28.00% | Taking damage has a 30% chance of granting +36% Incoming Healing for 5 seconds. |
+| Caretaker | Specialized | Toughness | +13.50% | Grants +12% Healing Intensity. |
+| Enduring | Specialized | Skill Intensity | +9.00% | Taking damage grants +10% Damage Reduction for 5 seconds. |
+| Steadfast | Specialized | Skill Intensity | +9.00% | Grants +18% Toughness while Health is above 50%. |
+| Plate Carrier | Standard | Toughness | +9.00% | Grants +21% Armor. |
+| Layered Defense | Standard | Armor | +14.00% | Grants +4.50% Weapon Damage and +4.50% Stamina. |
+| Physical Training | Standard | Weapon Damage | +6.00% | Grants +13.50% Toughness. |
+
+---
+
+## Gear Set Effects
+
+There are 16 gear sets in The Division Resurgence.
+
+### Fury Strike
+
+- **2-Piece:** Optimal Range +10.0%
+- **3-Piece:** Weapon Critical Hit Chance +10.8%
+- **4-Piece:** Weapon Critical Hit Damage +24.0%
+
+### Quick Draw
+
+- **2-Piece:** Reload Speed +12.0%
+- **3-Piece:** Magazine Size +27.0%
+- **4-Piece:** Headshot Damage +28.8%
+
+### Phalanx Attack
+
+- **2-Piece:** Magazine Size +18.0%
+- **3-Piece:** Rate of Fire +18.0%
+- **4-Piece:** Weapon Multi-Shot Chance +12.0%
+
+### One Shot One Kill
+
+- **2-Piece:** Accuracy +24.0%
+- **3-Piece:** Headshot Damage +21.6%
+- **4-Piece:** Firepower +18.0%
+
+### Gunny Johnny
+
+- **2-Piece:** Rate of Fire +12.0%
+- **3-Piece:** Reload Speed +18.0%
+- **4-Piece:** Weapon Damage +12.0%
+
+### Mechanical Enemy
+
+- **2-Piece:** Weapon Critical Hit Chance +7.2%
+- **3-Piece:** Optimal Range +15.0%
+- **4-Piece:** Skill Cooldown Recovery -12.0%
+
+### Jackpot
+
+- **2-Piece:** Skill Radius +12.0%
+- **3-Piece:** Skill Critical Chance +10.8%
+- **4-Piece:** Skill Critical Damage +24.0%
+
+### Long-term Effect
+
+- **2-Piece:** Skill Health +12.0%
+- **3-Piece:** Skill Duration +14.4%
+- **4-Piece:** Engineering +18.0%
+
+### Dr. Medic
+
+- **2-Piece:** Healing Intensity +10.0%
+- **3-Piece:** Skill Intensity +9.0%
+- **4-Piece:** Release Extra Protection +20.0%
+
+### Boom-Shakalaka
+
+- **2-Piece:** Skill Cooldown Recovery -6.0%
+- **3-Piece:** Skill Radius +18.0%
+- **4-Piece:** Skill Intensity +12.0%
+
+### Fire Cycle
+
+- **2-Piece:** Skill Critical Damage +12.0%
+- **3-Piece:** Signature Ability Charge Efficiency +18.0%
+- **4-Piece:** Skill Multi-Shot Chance +12.0%
+
+### Mechanical Expert
+
+- **2-Piece:** Skill Duration +9.6%
+- **3-Piece:** Skill Cooldown Recovery -9.0%
+- **4-Piece:** Signature Ability Charge Efficiency +24.0%
+
+### Captain Cow
+
+- **2-Piece:** Movement Speed +3.6%
+- **3-Piece:** Skill Duration +14.4%
+- **4-Piece:** Healing Intensity +20.0%
+
+### Healing Elites
+
+- **2-Piece:** Received Healing +14.4%
+- **3-Piece:** Release Extra Protection +15.0%
+- **4-Piece:** Armor +28.0%
+
+### Self-Propelled Shield
+
+- **2-Piece:** Armor +14.0%
+- **3-Piece:** Movement Speed +5.4%
+- **4-Piece:** Max Health +24.0%
+
+### Fearless Warrior
+
+- **2-Piece:** Damage Reduction +6.0%
+- **3-Piece:** Damage Bonus +9.0%
+- **4-Piece:** Toughness +18.0%
+
+---
+
+## Weapon Talents
+
+There are 69 weapon talents in The Division Resurgence.
+
+| Talent | Description |
+|---|---|
+| Adaptation | Body shots grant +4.80% Skill Duration for 8 seconds. Headshots grant +6% Skill Intensity for 8 seconds. |
+| Ammo Charge | Shooting has a 50% chance of granting +3.60% Skill Intensity for 10 seconds if the magazine contains less than 50% of its ammo, up to 5 stacks. |
+| Ammo Supply | Shooting has a 54% chance of returning the bullet in the magazine if it contains less than 30% of its ammo. |
+| Backup Battery | Swapping to this weapon grants +22.50% Engineering for 8 seconds. Talent Cooldown: 8 seconds. |
+| Backup Magazine | Swapping to this weapon reloads your second weapon after 4 seconds. |
+| Backup Protection | Swapping to this weapon grants Extra Health equal to 20% Max Health for 8 seconds. Talent Cooldown: 8 seconds. |
+| Blood for Blood | Kills and assists restore 4% Max Health. While above 50% Health, Weapon Hits consume 0.50% Max Health to deal additional damage equal to 0.50% Max Health. |
+| Bloodlust | Dealing 8 damage grants +4% Weapon Damage and +2% Damage Reduction for 5 seconds, up to 3 stacks. |
+| Breadbasket | Body shots grant +15% Headshot Damage for 8 seconds, up to 3 stacks. |
+| Breathe Free | While moving, grants 4 stacks per second, or 8 stacks if sprinting, up to a maximum of 40 stacks. A stack is consumed with each round fired, granting +15% Weapon Damage. Deploying a Skill consumes 10 stacks and grants +15% Skill Damage. Kills grant +10% Movement Speed for 10 seconds. |
+| Calm and Collected | Grants +30% Reload Speed while behind cover. |
+| Conceited | Kills and assists taunt enemies within 20 meters and grant +15% Damage Reduction for 10 seconds. |
+| Concentrated Fire | Hitting the same enemy multiple times grants +0.36% Weapon Critical Hit Damage for 5 seconds, up to 100 stacks. Stacks are reduced by half when switching to a new target. |
+| Crawl | Headshots grant +10% Damage Reduction for 3 seconds. |
+| Damage Trade | Grants +6% Weapon Damage for each 20% of the Magazine Size emptied, up to 4 stacks. Reloading removes all stacks. |
+| Death by Numbers | Critical Hit Kills grant +18% Weapon Multi-shot Chance for 8 seconds. |
+| Enhancement Trade | Grants +6% Skill Intensity for each 20% of the Magazine Size emptied for 8 seconds, up to 4 stacks. Talent Cooldown: 1 seconds. |
+| Ex Machina | Headshots grant +30% Skill Critical Hit Damage for 10 seconds. |
+| Fast Hands | Critical Hits grant +12% Reload Speed for 5 seconds, up to 3 stacks. |
+| Fully Charged | Reloading an empty magazine grants +7.50% Engineering for 12 seconds, up to 3 stacks. |
+| Head Collection | Headshots grant +6% Skill Critical Hit Chance for 10 seconds, up to 3 stacks. |
+| In Sync | Weapon Hits grant +9% Skill Damage for 8 seconds. Skill Hits grant +9% Weapon Damage for 8 seconds. Bonus is doubled when both buffs are active at the same time. |
+| In a Day's Work | Headshot Kills grant +36% Reload Speed for 5 seconds. |
+| Joint Strike | Headshots behind cover grant +15% Skill Intensity for 10 seconds. |
+| Killer | Critical Hit Kills grant +36% Critical Hit Damage for 10 seconds. |
+| Last Stand | Hits behind cover grant +24% Skill Duration for 10 seconds. |
+| Long-Distance Marking | Headshots grant +7.50% Skill Damage for 15 seconds, increasing by 1.50% for every 5 meters separating the Agent from the target (up to 18%). |
+| Medical Accuracy | Headshots grant +18% Healing Intensity for 10 seconds. |
+| Misdirection Insurance | Missing a shot has a 30% chance of returning the bullet to the magazine. |
+| Multi-Pronged Attack | Hits grant +3.60% Skill Multi-Shot Chance for 10 seconds, up to 5 stacks. Missed hits remove 1 stacks. |
+| Multitasking | Dealing damage to 3 enemies within 5 seconds grants +30% Skill Critical Damage for 12 seconds. Talent Cooldown: 8 seconds. |
+| Neverending | Kills have a 50% chance to refill the magazine and grant +40% Rate of Fire for 12 seconds. Talent Cooldown: 5 seconds. |
+| No Exit | Headshot Kills grant +21% Weapon Damage for 5 seconds. |
+| Performer | Grants +18% Weapon Damage on enemies within 20 meters. Inflicts -6% Weapon Damage on enemies farther than 20 meters away. |
+| Play Rough | While firing, reduces Incoming Damage by 25%. When firing ceases, applies 60% of the reduced damage and grants +10% Skill Damage for 10 seconds. |
+| Precise Crit | Hitting an enemy 10 times grants +15% Weapon & Skill Critical Damage to all allies within 40 meters for 10 seconds. |
+| Precise Trauma | Hits apply a debuff to enemies, dealing Skill Damage every second for 1 seconds, up to 10 stacks. Body shots apply 1 stack, headshots apply 2 stacks. |
+| Precision Support | Hitting an enemy 6 times grants +7% Armor and +40% Rescue Efficiency for 10 seconds, up to 5 stacks. |
+| Predatory Aura | Weapon kills within 20 meters restore (240 x Firepower)% Health for 3 seconds. |
+| Proficient Reload | Reloading grants +6% Reload Speed for 10 seconds, up to 5 stacks. |
+| Pummel | 10 consecutive kills or assists refills the magazine and grants +10% Weapon Damage for 12 seconds. Additional kills or assists refreshes the duration. |
+| Rapid Charge | Hitting an enemy 5 times in 3 seconds grants 50 Signature Ability Charge. |
+| Revitalize | Every 1 kills and assists restores 4.20% Max Health for 3 seconds. Talent Cooldown: 4 seconds. |
+| Sadistic Shield | Hitting an enemy 5 times grants 12.50% Extra Health for 10 seconds (based on Max Health). |
+| Sentinel Aura | Hits within 20 meters restore (600 x Toughness)% Health. Talent Cooldown: 5 seconds. |
+| Shooting Repair | Shooting 10 bullets restores 2.50% Missing Health of your deployed Skills. |
+| Slaughter Fortitude | Kills and assists grant +12% Armor for 10 seconds, up to 3 stacks. |
+| Slaughter Healing | Kills and assists grant +7% Incoming Healing for 10 seconds to all allies within 40 meters, up to 3 stacks. |
+| Spec-Ops | Hits within 20 meters grant +20% Rate of Fire and +5% Incoming Healing for 3 seconds. |
+| Spirited | Grants +9% Damage Reduction while below 75% Health. Grants +12% Damage Reduction while below 50% Health. Grants +15% Damage Reduction while below 25% Health. |
+| Steady Aim | Aiming grants +10% Weapon Damage and +5% Damage Reduction. |
+| Steady Handed | Hits grant +1.20% Accuracy and Stability, up to 30 stacks. At 30 stacks, consume them to refill the magazine. |
+| Steady Hands | Hip firing grants +20% Stability and +15% Weapon Damage. |
+| Steady Reload | Reloading grants +18% Weapon Damage for 5 seconds, up to 5 stacks. |
+| Steady Suppression | Grants +18% Damage Reduction while firing. |
+| Still Alive | Kills restore 30% of missing Health. Talent Cooldown: 10 seconds. |
+| Strained | Firing for 0.50 seconds grants +10% Critical Hit Damage for 5 seconds, up to 3 stacks. |
+| Surgical | Headshots grant +7% Weapon Critical Hit Damage for 5 seconds, up to 5 stacks. |
+| Swift Aim | Hits while aiming reduce Skill Cooldown by 2%. Talent Cooldown: 2 seconds. |
+| Swift Taunt | Hitting 3 enemies within 5 seconds taunts nearby enemies and grants Extra Health equal to 25% Max Health for 10 seconds. |
+| Tactical Reload | Reloading grants +2.60% Skill Cooldown Recovery for 10 seconds, up to 5 stacks. |
+| Tactical Targeting | Skill Hits apply a mark on the target for 10 seconds. Killing a marked enemy grants Extra Health for 10 seconds (based on Max Health). |
+| Take a Breath | Reloading an empty magazine grants +7.50% Toughness for 8 seconds, up to 3 stacks. |
+| Target Acquisition | Hitting an enemy 5 consecutive times inflicts +2.50% Incoming Damage on them for 5 seconds, up to 3 stacks. |
+| Thick Skin | Dealing damage grants +2.10% Armor for 5 seconds, up to 20 stacks. Kills grant 10 stacks. |
+| Torrential Downpour | Hitting enemies 10 times within 5 seconds grants +22.50% Engineering for 12 seconds. |
+| Unbreakable | Hits within 20 meters grant +36 Armor for 10 seconds. |
+| Unhinged | Grants +18% Weapon Damage. Inflicts -10% Stability and -10% Accuracy. |
+| Vibrant | Hits grant +15% Max Health for 10 seconds. |
+
+---
+
+## Body Armor Talents
+
+There are 25 body armor talents in The Division Resurgence.
+
+| Talent | Description |
+|---|---|
+| Accelerated Charge | Kills and assists behind cover grant +30% Signature Ability Charge Efficiency for 8 seconds. |
+| Battlelust | Taking damage has a 50% chance of granting +6% Weapon Damage for 5 seconds, up to 3 stacks. Talent Cooldown: 1 seconds. |
+| Boosted Shield | While possessing Extra Health, grants +7.50% Damage Reduction and reduces Skill Cooldown by 1.50%. |
+| Crossfire | Grants +15% Weapon Damage when Skills are deployed. |
+| Deep Focus | Grants +28% Skill Duration but also inflicts -10% Skill Radius. |
+| Defensive Charge | Gaining Extra Health grants +3% Skill Intensity for 10 seconds, up to 5 stacks. |
+| Duality | Grants +15% Weapon Damage when Health is above 50%. Grants +15% Damage Reduction when Health is below 50%. |
+| Emergency Retreat | Grants +10% Movement Speed and +37.50% Damage Reduction for 3 seconds while within 20 meters of an enemy. Talent Cooldown: 10 seconds. |
+| Energize | Using a Medical Kit grants +18% Skill Damage for 8 seconds. Triggering a Skill Multi-Shot refreshes the duration. |
+| Energy Drink | Using a Medical Kit grants +36% Weapon Critical Hit Chance for 8 seconds. |
+| Fearless Charge | Sprinting grants +21% Damage Reduction. |
+| Glass Cannon | Grants +20% Damage. Inflicts -10% Damage Reduction. |
+| Hypervigilant | Healing grants +5% Damage Reduction for 3 seconds, up to 3 stacks. |
+| Injured Concealment | Hits taken grant +1.80% Damage for 10 seconds, up to 10 stacks. |
+| Instant Triage | Downed allies within 30 meters grant +22.50% Damage Reduction and +50% Rescue Efficiency for 10 seconds. |
+| Nothing to Lose | Taking damage has a 50% chance of reducing Skill Cooldowns of Skills deployed within 5 seconds by 2%, up to 3 stacks. |
+| Recycling | Taking damage within 20 meters has a 80% chance to refill 4.50 bullets in the magazine (excluding Signature Ability weapons). Talent Cooldown: 1 seconds. |
+| Rescue Signal | Being downed grants all allies within 40 meters +10% Movement Speed and +100% Rescue Efficiency for 10 seconds. Talent Cooldown: 10 seconds. |
+| Second Wind | Reloading grants Extra Health equal to 600% Firepower for 5 seconds. Talent Cooldown: 5 seconds. |
+| Socialite | Grants +10% Movement Speed when there are no enemies within 20 meters. Grants +36% Armor while within 20 meters of an enemy. |
+| Suppression Rescue | Downed allies within 30 meters grant +22.50% Weapon Damage and +10% Movement Speed for 10 seconds. |
+| Suppressive Fire | Grants +18% Magazine Size. Reloading grants +6% Rate of Fire for 5 seconds, up to 3 stacks. |
+| Territory Expansion | Grants +30% Skill Radius while at full Health. |
+| Toymaker | Grants +15% Skill Multi-shot Chance when there are no enemies within 20 meters. |
+| Unflinching | Taking damage has a 70% chance of restoring Health equal to 300% Toughness. Talent Cooldown: 2 seconds. |
+
+---
+
+## Backpack Talents
+
+There are 25 backpack talents in The Division Resurgence.
+
+| Talent | Description |
+|---|---|
+| Assault Protection | Having Extra Health grants +1.80% Weapon Damage per second, up to 10 stacks. Losing all Extra Health removes all stacks. |
+| Brainstorm | Grants +15% Skill Duration. Grants an additional +15% Skill Duration when within 20 meters of an ally. |
+| Combat Inspiration | Weapon Critical Hits grant +3.60% Max Health for 10 seconds, up to 10 stacks. |
+| Defense Enhancement | Gaining Extra Health grants +7% Armor for 10 seconds, up to 5 stacks. |
+| Double-edged Bullet | Having Extra Health grants +18% Damage and -20% Damage Reduction. |
+| Electrical Protection | Having Extra Health grants +1.80% Skill Intensity per second, up to 10 stacks. Losing all Extra Health removes all stacks. |
+| Emergency Measures | Taking damage restores 50% Max Health when Health is below 20%. Talent Cooldown: 30 seconds. |
+| Explosive Burst | Throwing a Grenade grants +9% Skill Multi-shot Chance for 2 seconds, up to 10 stacks. Talent Cooldown: 3 seconds. |
+| Explosive Fury | Throwing a Grenade grants +18% Rate of Fire for 10 seconds, up to 2 stacks. Talent Cooldown: 3 seconds. |
+| Hidden Impact | Grants +18% Weapon Critical Hit Chance when behind cover for at least 3 seconds. |
+| Injured Taunt | Hits taken grant +1.80% Damage Reduction for 10 seconds, up to 10 stacks. |
+| Inspiration | Grants +30% Rate of Fire when Skills are deployed. |
+| Intense Performance | Grants +33% Skill Radius but also inflicts -5% Skill Duration. |
+| Meditation | Grants +3.60% Skill Critical Hit Chance per second while immobile, up to 5 stacks. Movement removes 1 stacks per second. |
+| Minion Training | Skill Critical Hit Kills grant +36% Skill Critical Hit Damage for 12 seconds. |
+| Open Fire | Deploying the Signature Ability grants +20% Optimal Range and +36% Magazine Size for 12 seconds. |
+| Overwatch | Grants +15% Skill Damage when behind cover for at least 3 seconds. |
+| Painkillers | Using a Medical Kit grants +9% Damage Reduction for 8 seconds, up to 2 stacks. |
+| Prime Engineer | Deploying a Skill at full Health grants +22.50% Engineering for 12 seconds. |
+| Rescue Protection | Rescuing a downed ally grants all allies within 40 meters Extra Health equal to 12.50% Max Health for 10 seconds. |
+| Rock Solid | Receiving Healing grants +15% Damage Reduction for 3 seconds. |
+| Siege | Grants Extra Health equal to 37.50% Max Health for 15 seconds when 2 enemies are within 20 meters. Talent Cooldown: 30 seconds. |
+| Simple Pleasures | Healing grants +4% Weapon Damage for 5 seconds, up to 3 stacks. |
+| Street Fighter | Grants +5% Damage Reduction while within 20 meters of an enemy. Grants +15% Weapon Critical Hit Chance for 5 seconds when an enemy dies within 20 meters. |
+| Unstoppable | Kills grant +5% Weapon Damage for 10 seconds, up to 3 stacks. |
+
+---
+
+## Bonus Attributes
+
+There are 4 bonus attribute categories in The Division Resurgence.
+
+### Firepower
+
+Available attributes: Weapon Critical Hit Chance, Weapon Critical Hit Damage, Weapon Damage, Weapon Multi-Shot Chance, Headshot Damage, Weapon Blast Damage, Weapon Piercing Damage, Weapon Shredding Damage
+
+### Toughness
+
+Available attributes: Max Health, Armor, Damage Reduction
+
+### Engineering
+
+Available attributes: Skill Critical Chance, Skill Critical Damage, Skill Intensity, Skill Multi-Shot Chance, Skill Duration, Skill Radius, Skill Cooldown Recovery, Skill Blast Damage, Skill Piercing Damage, Skill Shredding Damage
+
+### Universal
+
+Available attributes: Received Healing, Damage to Elites, Signature Ability Charge Efficiency
+
+---
+
+## Skill Mod Combos
+
+There are 94 skill mod combos in The Division Resurgence.
+
+### Demolitionist Skill Mods
+
+| Combo | 2-Piece Bonus | 3-Piece Bonus |
+|---|---|---|
+| Cooling System | Skill Health+[4.0%~8.0%] | Skill Critical Hits reduce Artillery Turret Cooldown by 1.20%. Talent Cooldown: 1 second. |
+| Area Suppression | Armor+[4.7%~9.3%] | Artillery Turret hits on up to 1 enemies have a 50% chance of granting +2% Skill Critical Damage for 10 second(s), up to 5 stack(s). Hits on more than 1 enemies have a guaranteed chance of granting the bonus. |
+| Frag Grenades | Max Health+[4.0%~8.0%] | Artillery Turret damage grants +1% Skill Multi-Shot Chance for 10 seconds, up to 5 stacks. |
+| Cooling Device | Skill Health+[4.0%~8.0%] | Explosive Seeker Mine Critical Hits reduce Explosive Seeker Mine Cooldown by 10%. Talent Cooldown: 3 seconds. |
+| Applied Demolitions | Armor+[4.7%~9.3%] | Explosive Seeker Mine hits on up to 1 enemies grant +3.20% Skill Critical Damage for 20 second(s), up to 3 stack(s). |
+| Fragmentation Charge | Max Health+[4.0%~8.0%] | Explosive Seeker Mine hits grant +6.40% Skill Multi-Shot Chance for 10 seconds. |
+| Fire Support | Skill Health+[4.0%~8.0%] | Skill Critical Hits grant +0.30% Signature Ability Charge. Talent Cooldown: 1 second. |
+| Airburst | Armor+[4.7%~9.3%] | M32A1 Grenade Launcher hits on up to 1 enemies grant +6% Skill Critical Damage until the next M32A1 Grenade Launcher hit. |
+| Concentrated Fire | Max Health+[4.0%~8.0%] | Dealing 5 M32A1 Grenade Launcher hits in 3 seconds grants +14.40% Skill Intensity for 15 seconds. |
+| Shaped Charge | Armor+[4.7%~9.3%] | Artillery Turret hits on enemies afflicted by Bleed or Vulnerable grant +1.44% Firepower for 10 seconds, up to 5 stacks. |
+| Optimized | Rate of Fire+[4.0%~8.0%] | Grants +8% Artillery Turret Rate of Fire. Artillery Turret hits on up to 2 enemies grant +0.50 second(s) to Artillery Turret duration (capped at 6 seconds). |
+| Enhanced Fire Control | Max Health+[4.0%~8.0%] | Artillery Turret hits grant +1.20% Weapon Critical Hit Chance for 10 seconds, up to 5 stacks. |
+| Multi-Directional Charge | Armor+[4.7%~9.3%] | Explosive Seeker Mine hits on enemies afflicted by Bleed or Vulnerable apply the same debuff to all enemies within 10 meter(s) and grant +7.20% Firepower for 10 second(s). |
+| Area Denial | Rate of Fire+[4.0%~8.0%] | Grants +8.60% Explosive Seeker Mine Radius. Explosive Seeker Mine hits grant +1.60 second(s) to the duration of deployed Artillery Turrets. |
+| Potent Composition | Max Health+[4.0%~8.0%] | Explosive Seeker Mine hits grant +7.20% Weapon Critical Hit Chance for 10 seconds. Talent Cooldown: 1 second. |
+| Field Mortar | Armor+[4.7%~9.3%] | Increases 9.60% Weapon Damage to enemies hit by M32A1 Grenade Launcher for 20s and extends the duration of Artillery Turret by 2s. |
+| Thermobaric Grenades | Rate of Fire+[4.0%~8.0%] | Reduces Grenades in Grenade Launcher to 1, expands the Explosion Radius by 100% and increases damage by 460%. |
+| Precision Fires | Max Health+[4.0%~8.0%] | Landing 3 M32A1 Grenade Launcher hits grants +8% Weapon Critical Hit Chance for 10 second(s). |
+
+### Tech Operator Skill Mods
+
+| Combo | 2-Piece Bonus | 3-Piece Bonus |
+|---|---|---|
+| Supercharged | Skill Cooldown Recovery-[2.0%~4.0%] | Deploying a Striker Drone restores Health equal to 5.60% Missing Health. Also grants +3% Movement Speed and +1% Skill Cooldown Recovery for 20 second(s), up to 3 stack(s). |
+| Thermite Charge | Skill Health+[4.0%~8.0%] | Striker Drone Critical Hits have a 5% chance of exploding, dealing 300% damage. |
+| Extermination | Skill Health+[4.0%~8.0%] | Hitting enemies who have less than 50% Health grants +9.60% Striker Drone Multi-Shot Chance. |
+| Precise Suppression | Skill Cooldown Recovery-[2.0%~4.0%] | Striker Drone hits on Drone Locked enemies have a 5% chance of granting 4.80% Damage Reduction from the targets for 10 second(s), up to 3 stack(s). Probability increases to 15% for targets who are at least 20 meter(s) away. |
+| Stabilized Flight | Skill Health+[4.0%~8.0%] | Applying Drone Lock grants +6% Skill Critical Hit Chance for 20 seconds. |
+| Area Sweep | Skill Health+[4.0%~8.0%] | Killing Drone Locked enemies grants +4.80% Skill Multi-Shot Chance for 10 seconds. |
+| Supply Line | Skill Cooldown Recovery-[2.0%~4.0%] | Within 30 second(s) of activating Drone Overload, Striker Drone hits have a 5% chance of restoring 2% Max Health. Probability increases to 10% for targets at least 20m away. |
+| Optimized Targeting | Skill Cooldown Recovery-[2.0%~4.0%] | Striker Drone hits on Drone Locked enemies grant bonus effect based on target distance. |
+| Lethal Sweep | Skill Health+[4.0%~8.0%] | Striker Drone Multi-Shot hits grant bonus Skill Critical Hit Chance stacks. |
+| Close Protection | Skill Cooldown Recovery-[2.0%~4.0%] | Striker Drone hits on enemies within 10 meter(s) grant bonus Damage Reduction. |
+| Team Backup | Skill Health+[4.0%~8.0%] | Striker Drone hits on enemies grant bonus effects to nearby allies. |
+| EMCAT | Skill Health+[4.0%~8.0%] | Striker Drone Critical Hits apply Disoriented to target enemies. |
+| Applied Treatment | Skill Cooldown Recovery-[2.0%~4.0%] | Deploying Striker Drone restores Health to nearby allies. |
+| Performance Enhancer | Skill Health+[4.0%~8.0%] | Striker Drone kills grant bonus Skill Intensity stacks to the player. |
+| Accelerated Healing | Skill Cooldown Recovery-[2.0%~4.0%] | Striker Drone hits restore small amounts of Health to the player. |
+| Support Pattern | Skill Cooldown Recovery-[2.0%~4.0%] | Striker Drone hits grant bonus Signature Ability Charge to the team. |
+| Hazardous Area | Skill Health+[4.0%~8.0%] | Striker Drone creates hazardous area on enemy kills, applying status effects to nearby enemies. |
+| Mutual Assist | Skill Cooldown Recovery-[2.0%~4.0%] | Striker Drone assists allies by providing bonus effects when they take damage. |
+
+### Bulwark Skill Mods
+
+| Combo | 2-Piece Bonus | 3-Piece Bonus |
+|---|---|---|
+| Bulwark Shield | Damage Reduction+[2.0%~4.0%] | Deploying Ballistic Shield grants bonus Armor and Toughness stacks. |
+| Protective Shield | Damage Reduction+[2.0%~4.0%] | Ballistic Shield absorbs bonus damage and grants resistance to status effects. |
+| Shield Bash | Damage Reduction+[2.0%~4.0%] | Shield Bash deals bonus damage and applies Disoriented to hit enemies. |
+| Cover Advance | Damage Reduction+[2.0%~4.0%] | Moving while using Ballistic Shield grants bonus Movement Speed and reduces incoming damage. |
+| Impact Resistance | Damage Reduction+[2.0%~4.0%] | Ballistic Shield provides bonus protection against explosive damage and staggers. |
+| Counter Attack | Damage Reduction+[2.0%~4.0%] | Taking damage while Ballistic Shield is deployed grants bonus Weapon Damage. |
+| Tactical Defense | Damage Reduction+[2.0%~4.0%] | Deploying Ballistic Shield reduces Skill Cooldowns and grants bonus Signature Ability Charge. |
+| Fortified Position | Damage Reduction+[2.0%~4.0%] | Stationary Ballistic Shield grants increasing Damage Reduction stacks over time. |
+| Reactive Plating | Damage Reduction+[2.0%~4.0%] | Ballistic Shield absorbs bonus elemental damage and converts it to Armor. |
+| Vanguard Push | Damage Reduction+[2.0%~4.0%] | Shield Bash knocks back enemies and grants bonus Movement Speed to the player. |
+| Guardian Protocol | Damage Reduction+[2.0%~4.0%] | Ballistic Shield protects nearby allies, reducing damage they take while the shield is deployed. |
+| Shield Mastery | Damage Reduction+[2.0%~4.0%] | Increases Ballistic Shield durability and reduces its deployment cooldown. |
+| Breach Protocol | Damage Reduction+[2.0%~4.0%] | Deploying Ballistic Shield and immediately firing grants bonus Weapon Damage. |
+| Shock Absorber | Damage Reduction+[2.0%~4.0%] | Ballistic Shield absorbs and stores damage, releasing it as bonus Weapon Damage on next attack. |
+| Iron Curtain | Damage Reduction+[2.0%~4.0%] | Ballistic Shield grants additional protection to the player's flanks while deployed. |
+| Intimidation | Damage Reduction+[2.0%~4.0%] | Enemies who attack the Ballistic Shield have reduced Weapon Damage for a duration. |
+| Sentinel | Damage Reduction+[2.0%~4.0%] | Ballistic Shield provides bonus protection in a wider arc, covering flanking attacks. |
+| Siege Mentality | Damage Reduction+[2.0%~4.0%] | Prolonged Ballistic Shield deployment grants increasing Weapon Damage stacks. |
+| Attritional Charge | Damage Reduction+[2.0%~4.0%] | Shockwave Spike Mk.3 grants Damage Reduction and Weapon Critical Hit Chance while deployed. Damage Reduction +3.66%, Weapon Critical Hit Chance +4.16%. |
+| Provocateur | Weapon Damage+[2.0%~4.0%] | Enemies within 20 meter(s) focus the Agent in priority when deploying the Phalanx Shield. Grants +3.20% Damage Reduction for 10 second(s) for each enemy who is targeting the Agent, up to 5 stack(s). |
+
+### Vanguard Skill Mods
+
+| Combo | 2-Piece Bonus | 3-Piece Bonus |
+|---|---|---|
+| Effective Deterrent | Skill Cooldown Recovery-[2.0%~4.0%] | While behind a Smart Cover, grants +1% Damage, up to 3 stack(s). Reaching maximum stacks grants +3% Signature Ability Charge Efficiency. This bonus resets upon leaving the Smart Cover. |
+| Pulse Enhancement | Damage Reduction+[2.0%~4.0%] | Deploying Scanning Pulse grants Pulsed allies Weapon Critical Hit Chance equal to 3.60% Engineering for 10 second(s). |
+| Scout | Signature Ability Charge Efficiency+[4.0%~8.0%] | Pulsed enemies grant +8 Signature Ability Charge to the ally team. |
+| Compound Effect | Skill Cooldown Recovery-[2.0%~4.0%] | Deploying Scanning Pulse while Fortified reduces the Skill Cooldown by 1.50 second(s). |
+| Bugle Call | Damage Reduction+[2.0%~4.0%] | Deploying Tactical Link grants +14.40% Rate of Fire, Damage Reduction, and Movement Speed for 15 second(s). |
+| Tactical Reinforcement | Damage Reduction+[2.0%~4.0%] | Increases Signature Ability Charge Efficiency of players applied with Tactical Link by 28.80%. |
+| Liquid Nitrogen | Skill Cooldown Recovery-[2.0%~4.0%] | Players with self-applied Tactical Link effect have a 10% chance to reduce all skill cooldowns by 0.80 seconds on each enemy hit, with a cooldown of 5 seconds between each trigger. |
+| Smart Cover Defense | Damage Reduction+[2.0%~4.0%] | Smart Cover provides bonus Damage Reduction and Weapon Damage to allies using it. |
+| Advanced Intel | Skill Cooldown Recovery-[2.0%~4.0%] | Scanning Pulse reveals additional enemy weaknesses, granting bonus Weapon Critical Hit Chance. |
+| Coordinated Strike | Damage Reduction+[2.0%~4.0%] | Tactical Link grants coordinated attack bonuses when multiple allies attack the same target. |
+| Suppression Field | Damage Reduction+[2.0%~4.0%] | Smart Cover generates a suppression field that slows enemies entering cover range. |
+| Overwatch | Skill Cooldown Recovery-[2.0%~4.0%] | Scanning Pulse marks enemies for allies, granting bonus Weapon Damage against marked targets. |
+| Link Booster | Damage Reduction+[2.0%~4.0%] | Tactical Link bonus effects are enhanced and have extended duration. |
+| Fortification | Damage Reduction+[2.0%~4.0%] | Smart Cover deployment grants Fortified status to allies within range. |
+| Signal Disruption | Skill Cooldown Recovery-[2.0%~4.0%] | Scanning Pulse disrupts enemy skills and electronics on Pulsed targets. |
+| Commando | Damage Reduction+[2.0%~4.0%] | Kills or assists while using Tactical Link grant +10.20% Weapon Critical Hit Chance for 10 second(s). |
+| Armored Train | Skill Cooldown Recovery-[2.0%~4.0%] | While behind a Smart Cover, weapon hits have a 5% chance of granting +2% Weapon Critical Hit Chance for 20 second(s), up to 3 stack(s). |
+| Field Supplies | Damage Reduction+[2.0%~4.0%] | Kills or assists on Pulsed enemies restore 6% Health and refill 6.40% of the current magazine. |
+| Tactical Insight | Signature Ability Charge Efficiency+[4.0%~8.0%] | Deploying Scanning Pulse restores 48 Signature Ability Charge, increased by 64 if there are more than 3 enemies within 70 meter(s). |
+
+### Field Medic Skill Mods
+
+| Combo | 2-Piece Bonus | 3-Piece Bonus |
+|---|---|---|
+| Armor Strengthening | Skill Duration+[3.2%~6.4%] | Grants +32.00% Armor while located within 20 meter(s) of a Chemical Trap. |
+| Lightweight | Damage Reduction+[2.0%~4.0%] | Chemical Trap can be deployed farther away. Hits on enemies inside Chemical Traps apply 1 stack(s) of Corrosive. Headshots apply 4 stacks instead. Talent Cooldown: 1.50 seconds. |
+| Siphon | Damage Reduction+[2.0%~4.0%] | Using a Chemical Trap to apply a stack of Corrosive has a 50% chance of restoring 4 Signature Ability Charge. Talent Cooldown: 0.50 seconds. |
+| Hereafter Resilience | Skill Intensity+[2.0%~4.0%] | When deploying Oxidizing Hive, you lose Health equal to 25% of your current Health but gain Extra Health equal to 35.00% of Max Health and 5% Armor for 20s. When Oxidizing Hive is attached to your backpack, it releases Micro Corrosive Drones to enemies within 15.00m every 1.60s. |
+| Improved Formula | Damage Reduction+[2.0%~4.0%] | If Oxidizing Hive is attached to your backpack and no enemy is hit by your weapon within 3s, hitting enemies with your weapon will trigger Oxidizing Hive to release 13 Mini Corrosive Drones flying towards the target and applying Corrosion to them. |
+| Generative Formula | Damage Reduction+[2.0%~4.0%] | While being assisted by the Oxidizing Hive, hits restore 8 Signature Ability Charge. Talent Cooldown: 2 seconds. |
+| Enhanced Formula | Skill Critical Damage+[4.0%~8.0%] | Oxidizing Swarm hits inflict -12% Damage for 20 seconds. Killing an enemy within 20 meter(s) who is also afflicted by this debuff restores Health equal to 8% Missing Health for 20 second(s). |
+| Augmented Range | Damage Reduction+[2.0%~4.0%] | Oxidizing Swarm can be thrown farther away. Oxidizing Swarm hits that are at least 20 meter(s) away inflict -14.40% Damage Reduction for 10 second(s). |
+| Harvest | Damage Reduction+[2.0%~4.0%] | Oxidizing Swarm hits reduce Skill Cooldown by 2.40 seconds. |
+| Detrimental Treatment | Damage Reduction+[2.0%~4.0%] | Support Station deals damage to enemies who are within its radius. Damage is increased by 25% while located within the radius of a Support Station. |
+| Auto Trauma Treatment | Healing Intensity+[3.3%~6.7%] | Grants +6% Incoming Healing and automatically revives any member of the ally team who is downed within the radius of a Support Station. |
+| Effective Triage | Healing Intensity+[3.3%~6.7%] | Grants +40% Incoming Healing to any ally below 50% Health who is located within the radius of a Support Station. |
+| Defensive Measures | Damage Reduction+[2.0%~4.0%] | When Healing Hive is active, hitting enemies within 20m with weapons deals additional damage equal to 240% of your Toughness. Trigger Interval: 2s. |
+| Buddy Treatment | Healing Intensity+[3.3%~6.7%] | When using Healing Hive, if your and your teammate's Health is below 50%, increases by 2.00%. Using it on you deploys micro Mender Drones to your teammates within 2 meters, restore a small amount of Health if deployed (It won't grant buffs of Specialization Focus). |
+| Mutual Support | Healing Intensity+[3.3%~6.7%] | While Healing Hive is deployed, grants +9.60% Skill Intensity when located within 20 meter(s) of an ally. While Healing Hive is deployed, grants +20% Movement Speed when located at least 20 meter(s) away from allies. |
+| Aggressive Drones | Damage Reduction+[2.0%~4.0%] | Instead of healing allies, Healing Swarm deals damage to enemies by releasing 16 nano-drones that target enemies every 1.50 second(s). |
+| Emergency Measures | Healing Intensity+[3.3%~6.7%] | Healing Swarm heals allies over 10 seconds. When an ally's Health drops to 0 during the healing process, restores Health equal to 16% Max Health to them for 5 second(s). |
+| Doom Dealer | Healing Intensity+[3.3%~6.7%] | For each ally healed by Healing Swarm, grants +1.20% Skill Intensity for 20 second(s), up to 16 stack(s). |
+| Chemical Recharge | Skill Cooldown Recovery-[2.0%~4.0%] | Killing an enemy affected by Chemical Trap reduces the cooldown of your second equipped ability by 4.80 seconds. |
+
+---
+
+## Source & License
+
+All data sourced from ResurgenceBuilds.com. Stats verified in-game on The Division Resurgence Patch 1.1.2.2.
+
+- Site: https://resurgencebuilds.com
+- Author: RapidF5
+- Sitemap: https://resurgencebuilds.com/sitemap-index.xml
+- Contact: https://resurgencebuilds.com/contact/

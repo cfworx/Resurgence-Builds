@@ -9,106 +9,13 @@ Allow: /
 Disallow: /api/
 Disallow: /pagefind/
 
-# =============================================================================
-# Google
-# =============================================================================
-User-agent: Googlebot
-Allow: /
-
+# Google Images: explicitly allow image directory
 User-agent: Googlebot-Image
 Allow: /images/
 
-User-agent: Google-Extended
-Allow: /
-
-# =============================================================================
-# Bing & Microsoft
-# =============================================================================
-User-agent: Bingbot
-Allow: /
-
-User-agent: msnbot
-Allow: /
-
-# =============================================================================
-# OpenAI
-# =============================================================================
-User-agent: GPTBot
-Allow: /
-
-User-agent: ChatGPT-User
-Allow: /
-
-User-agent: OAI-SearchBot
-Allow: /
-
-# =============================================================================
-# Anthropic (Claude)
-# =============================================================================
-User-agent: ClaudeBot
-Allow: /
-
-User-agent: Claude-Web
-Allow: /
-
-User-agent: anthropic-ai
-Allow: /
-
-# =============================================================================
-# Google AI (Gemini)
-# =============================================================================
-User-agent: Google-Extended
-Allow: /
-
-User-agent: GoogleOther
-Allow: /
-
-# =============================================================================
-# Perplexity
-# =============================================================================
-User-agent: PerplexityBot
-Allow: /
-
-# =============================================================================
-# Apple (Siri / Spotlight)
-# =============================================================================
-User-agent: Applebot
-Allow: /
-
-User-agent: Applebot-Extended
-Allow: /
-
-# =============================================================================
-# Amazon
-# =============================================================================
-User-agent: Amazonbot
-Allow: /
-
-# =============================================================================
-# Other AI Search Engines
-# =============================================================================
-User-agent: YouBot
-Allow: /
-
-User-agent: DuckAssistBot
-Allow: /
-
-User-agent: PhindBot
-Allow: /
-
-User-agent: FirecrawlAgent
-Allow: /
-
+# ByteDance training crawler — takes content, gives nothing back
 User-agent: Bytespider
-Allow: /
+Disallow: /
 
-User-agent: cohere-ai
-Allow: /
-
-User-agent: Meta-ExternalAgent
-Allow: /
-
-# =============================================================================
-# Sitemap & AI Discovery
-# =============================================================================
+# Sitemap
 Sitemap: https://resurgencebuilds.com/sitemap-index.xml

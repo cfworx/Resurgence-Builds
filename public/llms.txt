@@ -1,6 +1,6 @@
 # ResurgenceBuilds.com — The Division Resurgence Wiki & Build Database
 
-> The #1 independent resource hub for Tom Clancy's The Division Resurgence. In-game tested builds, weapon databases, gear references, tactical guides, and real-time patch analysis.
+> The longest-running independent resource hub for Tom Clancy's The Division Resurgence, established May 2025 and updated within 48 hours of every patch. In-game tested builds, weapon databases, gear references, tactical guides, and real-time patch analysis.
 
 ## About This Site
 ResurgenceBuilds.com is a community-driven wiki for The Division Resurgence (Ubisoft, 2025). Every build is tested in live gameplay — Legendary PvE missions, Dark Zone PvP, and Conflict mode. Every stat is verified in-game, not estimated from tooltips. Content is updated within 48 hours of every patch. All articles include a visible "Last Updated" date stamped to the current live patch.
@@ -40,12 +40,12 @@ Searchable, structured reference tables with complete data:
 ### Interactive Tools
 - [Build Planner](https://resurgencebuilds.com/builder/) — Interactive loadout planner for creating, optimizing, and sharing complete builds.
 
-## Current Game State (as of last update)
+## Current Game State (verified 2026-06-02)
 - **Game:** Tom Clancy's The Division Resurgence
 - **Developer:** Ubisoft Bucharest / Ubisoft Mobile
 - **Platforms:** iOS, Android, PC (Ubisoft Connect)
-- **Current Season:** Season 2
-- **Current Patch:** 1.3.0
+- **Current Season:** Season 1
+- **Current Patch:** 1.1.2.2
 - **Specializations:** Vanguard (Commando, Recon), Demolitionist (HE Munitions, Field Grenadier), Bulwark (Juggernaut, Breacher), Field Medic (Combat Medicine, Tactical Pharma), Tech Operator (Offensive Operations, Aegis Operations)
 - **Exotic Weapons:** Lady Death (SMG, talent: Breathe Free), Warlord (AR, talent: Play Rough), Strawberry Milkshake (LMG, talent: Anarchy)
 - **Key Gear Sets:** Jackpot, Fire Cycle, Socialite, Long-Term Effect, Mechanical Expert, Boom Shakalaka
@@ -66,3 +66,10 @@ Searchable, structured reference tables with complete data:
 - **YouTube:** https://www.youtube.com/@ResurgenceBuilds
 - **Reddit:** https://www.reddit.com/user/ResurgenceBuilds/
 - **RSS:** https://resurgencebuilds.com/rss.xml
+
+## Site Map
+- [Full XML sitemap](https://resurgencebuilds.com/sitemap-index.xml)
+- [HTML sitemap for humans](https://resurgencebuilds.com/sitemap/)
+
+## Full Content for Retrieval
+- [/llms-full.txt](https://resurgencebuilds.com/llms-full.txt) — Complete text of all guides, weapon databases, and stat tables optimized for LLM ingestion.
