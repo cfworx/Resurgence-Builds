@@ -43,7 +43,7 @@ const posts: UnifiedPost[] = [
     author: pn.data.author,
     description: pn.data.summary,
     type: 'patch-notes' as const,
-    tags: [`v${pn.data.version}`],
+    tags: pn.data.tags || [],
     featuredImage: pn.data.featuredImage,
     imageAlt: pn.data.imageAlt,
   })),

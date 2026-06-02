@@ -54,9 +54,26 @@ const weaponLd = {
   datePublished: '2026-05-29',
   dateModified: '2026-05-30',
 };
+
+const productLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Product',
+  '@id': `${siteUrl}/database/exotic-weapons/${slug}/#product`,
+  name: weapon.name,
+  category: `Exotic ${weapon.type}`,
+  description: `${weapon.name} exotic ${weapon.type} in Division Resurgence. ${weapon.damage} damage, ${weapon.rpm} RPM, ${weapon.mag} mag. Exotic talent: ${weapon.talentName}.`,
+  additionalProperty: [
+    { '@type': 'PropertyValue', name: 'Weapon Class', value: weapon.type },
+    { '@type': 'PropertyValue', name: 'Rarity', value: 'Exotic' },
+    { '@type': 'PropertyValue', name: 'Talent', value: weapon.talentName },
+    { '@type': 'PropertyValue', name: 'RPM', value: String(weapon.rpm) },
+    { '@type': 'PropertyValue', name: 'Magazine', value: String(weapon.mag) },
+    { '@type': 'PropertyValue', name: 'Damage', value: String(weapon.damage) },
+  ]
+};
 ---
 
-<BaseLayout {title} {description} {breadcrumbs} faqs={faqs} jsonLd={weaponLd}>
+<BaseLayout {title} {description} {breadcrumbs} faqs={faqs} jsonLd={[weaponLd, productLd]}>
   <div class="container section">
     <Breadcrumbs items={breadcrumbs} />
     <SectionTag label="Exotic Weapon" />

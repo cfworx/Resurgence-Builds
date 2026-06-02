@@ -65,9 +65,25 @@ const weaponLd = {
   datePublished: '2026-05-30',
   dateModified: '2026-05-30',
 };
+
+const productLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Product',
+  '@id': `${siteUrl}/database/weapons/${slug}/#product`,
+  name: weapon.name,
+  category: weapon.type,
+  description: `${weapon.name} ${weapon.type} in Division Resurgence. ${weapon.rpm} RPM, ${weapon.mag} magazine, ${weapon.dmgType} damage.`,
+  additionalProperty: [
+    { '@type': 'PropertyValue', name: 'Weapon Class', value: weapon.type },
+    { '@type': 'PropertyValue', name: 'Rarity', value: 'High-End' },
+    { '@type': 'PropertyValue', name: 'RPM', value: String(weapon.rpm) },
+    { '@type': 'PropertyValue', name: 'Magazine', value: String(weapon.mag) },
+    { '@type': 'PropertyValue', name: 'Damage Type', value: weapon.dmgType },
+  ]
+};
 ---
 
-<BaseLayout title={title} description={description} breadcrumbs={breadcrumbs} jsonLd={weaponLd} faqs={faqs}>
+<BaseLayout title={title} description={description} breadcrumbs={breadcrumbs} jsonLd={[weaponLd, productLd]} faqs={faqs}>
   <div class="container section">
     <Breadcrumbs items={breadcrumbs} />
     <SectionTag label="Weapon Database" />

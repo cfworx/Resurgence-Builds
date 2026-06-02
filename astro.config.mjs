@@ -11,6 +11,16 @@ const SITE_LAST_UPDATED = '2026-05-30';
 export default defineConfig({
   site: 'https://resurgencebuilds.com',
   output: 'static',
+  redirects: {
+    '/tag/general/': '/guides/',
+    '/build-planner/': '/builder/',
+    '/cdn-cgi/l/email-protection': '/',
+    '/tag/v1.1.1/': '/patch-notes/',
+    '/tag/v1.1.2/': '/patch-notes/',
+    '/tag/v1.2.0/': '/patch-notes/',
+    '/tag/v1.1.2.2/': '/patch-notes/',
+    '/tag/v1.2.1/': '/patch-notes/'
+  },
   integrations: [
     sitemap({
       filter: (page) => !page.includes('/api/'),

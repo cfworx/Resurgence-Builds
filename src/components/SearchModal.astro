@@ -273,15 +273,34 @@
       return;
     }
 
-    resultsContainer.innerHTML = matches.map(m => `
-      <a href="${esc(m.url)}" class="search-result-item">
-        <div class="search-result-item__header">
-          <h3 class="search-result-item__title">${esc(m.title)}</h3>
-          <span class="search-result-item__type">${esc(m.type)}</span>
-        </div>
-        <p class="search-result-item__desc">${esc(m.description)}</p>
-      </a>
-    `).join('');
+    resultsContainer.innerHTML = '';
+    matches.forEach(m => {
+      const a = document.createElement('a');
+      a.setAttribute('href', m.url);
+      a.className = 'search-result-item';
+
+      const header = document.createElement('div');
+      header.className = 'search-result-item__header';
+
+      const h3 = document.createElement('h3');
+      h3.className = 'search-result-item__title';
+      h3.textContent = m.title;
+
+      const span = document.createElement('span');
+      span.className = 'search-result-item__type';
+      span.textContent = m.type;
+
+      header.appendChild(h3);
+      header.appendChild(span);
+
+      const p = document.createElement('p');
+      p.className = 'search-result-item__desc';
+      p.textContent = m.description;
+
+      a.appendChild(header);
+      a.appendChild(p);
+      resultsContainer.appendChild(a);
+    });
   });
 
   // Auto-open search from ?q= URL parameter (enables Google SearchAction sitelinks)
