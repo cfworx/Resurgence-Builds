@@ -3,7 +3,7 @@ title: "Division Resurgence Exotic Weapons List 2026 (All Confirmed + Leaked)"
 category: "General"
 lastUpdated: 2026-06-02
 author: "RapidF5"
-featuredImage: "/images/guides/division-resurgence-exotic-weapons-list-2026.webp"
+featuredImage: "/images/guides/division-resurgence-exotic-weapons-list-2026-v2.webp"
 imageAlt: "A display of the Warlord, Lady Death, and Strawberry Milkshake exotic weapons in Division Resurgence"
 description: "Complete list of every Division Resurgence exotic weapon currently in the game plus every confirmed and leaked exotic coming next. Full talent text, base stats, weapon class, and where each exotic sits in the meta as of Patch 1.1.2.2."
 tags: ["exotic-weapons", "lady-death", "warlord", "strawberry-milkshake", "guide", "scorpio", "diamondback", "tier-list"]
