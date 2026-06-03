@@ -22,7 +22,7 @@ const talentsData = talentNames.map(name => {
       <>
         <a href={`/database/weapon-talents/${talent.slug}/`} class="tg-button card-size" title={talent.name}>
           {talent.icon ? (
-            <img src={talent.icon} alt={talent.name} class="tg-icon" />
+            <img src={talent.icon} alt={talent.name} class="tg-icon" width="48" height="48" loading="lazy" decoding="async" />
           ) : (
             <div class="tg-placeholder"></div>
           )}
@@ -30,7 +30,7 @@ const talentsData = talentNames.map(name => {
         {talent.upgradedName && (
           <a href={`/database/weapon-talents/${talent.slug}/`} class="tg-button card-size" title={talent.upgradedName}>
             {talent.icon ? (
-              <img src={talent.icon.replace('.webp', '2.webp')} alt={talent.upgradedName} class="tg-icon" onerror="this.src=this.src.replace('2.webp', '.webp')" />
+              <img src={talent.icon.replace('.webp', '2.webp')} alt={talent.upgradedName} class="tg-icon" width="48" height="48" loading="lazy" decoding="async" onerror="this.src=this.src.replace('2.webp', '.webp')" />
             ) : (
               <div class="tg-placeholder"></div>
             )}
@@ -52,7 +52,7 @@ const talentsData = talentNames.map(name => {
         <>
           <a href={`/database/weapon-talents/${talent.slug}/`} class="tg-button">
             {talent.icon ? (
-              <img src={talent.icon} alt={talent.name} class="tg-icon" />
+              <img src={talent.icon} alt={talent.name} class="tg-icon" width="48" height="48" loading="lazy" decoding="async" />
             ) : (
               <div class="tg-placeholder"></div>
             )}
@@ -60,7 +60,7 @@ const talentsData = talentNames.map(name => {
           {talent.upgradedName && (
             <a href={`/database/weapon-talents/${talent.slug}/`} class="tg-button">
               {talent.icon ? (
-                <img src={talent.icon.replace('.webp', '2.webp')} alt={talent.upgradedName} class="tg-icon" onerror="this.src=this.src.replace('2.webp', '.webp')" />
+                <img src={talent.icon.replace('.webp', '2.webp')} alt={talent.upgradedName} class="tg-icon" width="48" height="48" loading="lazy" decoding="async" onerror="this.src=this.src.replace('2.webp', '.webp')" />
               ) : (
                 <div class="tg-placeholder"></div>
               )}

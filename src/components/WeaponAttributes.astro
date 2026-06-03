@@ -1,5 +1,7 @@
 ---
 interface Props {
+  rpm?: string;
+  mag?: string;
   accuracy?: string;
   reloadSpeed?: string;
   optimalRange?: string;
@@ -8,7 +10,7 @@ interface Props {
   isCard?: boolean;
 }
 
-const { accuracy, reloadSpeed, optimalRange, movementSpeed, stability, isCard = false } = Astro.props;
+const { rpm, mag, accuracy, reloadSpeed, optimalRange, movementSpeed, stability, isCard = false } = Astro.props;
 
 // Helper to extract number from string like "3.7s" or "14m" or "53"
 const parseNum = (val: string | undefined): number => {
@@ -17,38 +19,42 @@ const parseNum = (val: string | undefined): number => {
   return match ? parseFloat(match[0]) : 0;
 };
 
-// Max values for calculating progress bar widths
-const MAX_ACCURACY = 100;
-const MAX_RELOAD = 10; // e.g. 10 seconds max
-const MAX_RANGE = 100; // e.g. 100 meters max
-const MAX_MOVEMENT = 100;
-const MAX_STABILITY = 100;
-
 const getPct = (val: number, max: number) => Math.min(100, Math.max(0, (val / max) * 100));
 
 const attributes = [
-  { label: 'Accuracy', value: accuracy, pct: getPct(parseNum(accuracy), MAX_ACCURACY) },
-  { label: 'Reload Speed', value: reloadSpeed, pct: getPct(parseNum(reloadSpeed), MAX_RELOAD) },
-  { label: 'Optimal Range', value: optimalRange, pct: getPct(parseNum(optimalRange), MAX_RANGE) },
-  { label: 'Movement Speed', value: movementSpeed, pct: getPct(parseNum(movementSpeed), MAX_MOVEMENT) },
-  { label: 'Stability', value: stability, pct: getPct(parseNum(stability), MAX_STABILITY) }
+  { label: 'RPM', value: rpm, hasBar: false },
+  { label: 'Magazine', value: mag, hasBar: false },
+  { label: 'Reload Speed', value: reloadSpeed, hasBar: false },
+  { label: 'Optimal Range', value: optimalRange, pct: getPct(parseNum(optimalRange), 100), hasBar: true },
+  { label: 'Movement Speed', value: movementSpeed, pct: getPct(parseNum(movementSpeed), 100), hasBar: true },
+  { label: 'Accuracy', value: accuracy, pct: getPct(parseNum(accuracy), 100), hasBar: true },
+  { label: 'Stability', value: stability, pct: getPct(parseNum(stability), 100), hasBar: true }
 ].filter(a => a.value); // Only show attributes that exist
 ---
 
 {attributes.length > 0 && (
   <div class={isCard ? 'weapon-attributes-card' : 'weapon-attributes'}>
-    {!isCard && <h2 class="wa-heading">Weapon Attributes</h2>}
+    {!isCard && (
+      <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: var(--sp-3); margin-bottom: var(--sp-4);">
+        <h2 class="wa-heading" style="margin: 0; border: none; padding: 0;">Weapon Attributes</h2>
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+      </div>
+    )}
     <div class="wa-list">
       {attributes.map(attr => (
         <div class="wa-row">
           <span class="wa-label">{attr.label}</span>
-          <div class="wa-bar-container">
-            <div class="wa-bar-bg">
-              <div class="wa-bar-fill" style={`width: ${attr.pct}%;`}></div>
+          {attr.hasBar ? (
+            <div class="wa-bar-container">
+              <div class="wa-bar-bg">
+                <div class="wa-bar-fill" style={`width: ${attr.pct}%;`}></div>
+              </div>
+              <div class="wa-bar-track-end"></div>
             </div>
-            <div class="wa-bar-track-end"></div>
-          </div>
-          <span class="wa-value">{attr.value}</span>
+          ) : (
+            <div></div>
+          )}
+          <span class="wa-value" style={attr.hasBar ? 'color: #ff851b;' : 'color: #e0e0e0; font-family: var(--font-body); font-weight: 500;'}>{attr.value}</span>
         </div>
       ))}
     </div>

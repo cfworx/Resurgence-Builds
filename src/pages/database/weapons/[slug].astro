@@ -118,26 +118,11 @@ const productLd = {
         </p>
       </div>
 
-      <!-- Stats -->
-      <div style="margin-bottom: var(--sp-8);">
-        <h2 style="font-family: var(--font-heading); font-size: var(--text-lg); font-weight: 800; color: #fff; margin: 0 0 var(--sp-4) 0; padding-bottom: var(--sp-2); border-bottom: 1px solid rgba(255,255,255,0.08);">Stats</h2>
-        <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--sp-3);">
-          <div style="display: flex; flex-direction: column; gap: 4px; background: rgba(0,0,0,0.25); padding: var(--sp-4); border-radius: 8px; border: 1px solid rgba(255,255,255,0.05);">
-            <span style="font-family: var(--font-mono); font-size: 10px; font-weight: 600; color: var(--ink-muted); text-transform: uppercase; letter-spacing: 0.06em;">RPM</span>
-            <span style="font-size: var(--text-lg); font-weight: 700; color: #fff;">{weapon.rpm}</span>
-          </div>
-          <div style="display: flex; flex-direction: column; gap: 4px; background: rgba(0,0,0,0.25); padding: var(--sp-4); border-radius: 8px; border: 1px solid rgba(255,255,255,0.05);">
-            <span style="font-family: var(--font-mono); font-size: 10px; font-weight: 600; color: var(--ink-muted); text-transform: uppercase; letter-spacing: 0.06em;">Magazine</span>
-            <span style="font-size: var(--text-lg); font-weight: 700; color: #fff;">{weapon.mag}</span>
-          </div>
-        </div>
-      </div>
-
       <WeaponAttributes 
+        rpm={weapon.rpm}
+        mag={weapon.mag}
         accuracy={weapon.accuracy} 
         reloadSpeed={weapon.reloadSpeed} 
-        optimalRange={weapon.optimalRange} 
-        movementSpeed={weapon.movementSpeed} 
         stability={weapon.stability} 
       />
 

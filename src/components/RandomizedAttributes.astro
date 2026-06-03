@@ -12,10 +12,10 @@ interface Props {
 const { attributes } = Astro.props;
 
 const attributeIcons: Record<string, string> = {
-  "Piercing Damage": `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>`, // generic placeholder
-  "Firepower": `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg>`,
-  "Toughness": `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M12 8v8M8 12h8"/></svg>`,
-  "Engineering": `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#eab308" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>`
+  "Piercing Damage": `<img src="/images/ui/attributes/piercing-damage.webp" alt="Piercing Damage icon" width="20" height="20" loading="lazy" decoding="async" style="display:block" />`,
+  "Firepower": `<img src="/images/ui/attributes/firepower.webp" alt="Firepower icon" width="20" height="20" loading="lazy" decoding="async" style="display:block" />`,
+  "Toughness": `<img src="/images/ui/attributes/toughness.webp" alt="Toughness icon" width="20" height="20" loading="lazy" decoding="async" style="display:block" />`,
+  "Engineering": `<img src="/images/ui/attributes/engineering.webp" alt="Engineering icon" width="20" height="20" loading="lazy" decoding="async" style="display:block" />`
 };
 ---
 

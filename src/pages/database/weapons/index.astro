@@ -115,10 +115,10 @@ const faqs = [
               
               <div class="db-card__body" style="justify-content: flex-end;">
                 <WeaponAttributes 
+                  rpm={w.rpm}
+                  mag={w.mag}
                   accuracy={w.accuracy} 
                   reloadSpeed={w.reloadSpeed} 
-                  optimalRange={w.optimalRange} 
-                  movementSpeed={w.movementSpeed} 
                   stability={w.stability} 
                   isCard={true}
                 />
@@ -132,11 +132,6 @@ const faqs = [
                     <WeaponTalentsGrid talentNames={w.talent2 || []} isCard={true} />
                   </div>
                 </div>
-
-                <ul class="attr-list" style="margin-top: auto;">
-                  <li><span>RPM</span><span>{w.rpm}</span></li>
-                  <li><span>MAG</span><span>{w.mag}</span></li>
-                </ul>
               </div>
             </article>
         ))}
