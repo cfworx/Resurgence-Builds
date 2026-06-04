@@ -69,13 +69,19 @@ const weaponLd = {
   dateModified: '2026-05-30',
 };
 
-const productLd = {
+const itemLd = {
   '@context': 'https://schema.org',
-  '@type': 'Product',
-  '@id': `${siteUrl}/database/weapons/${slug}/#product`,
-  name: weapon.name,
-  category: weapon.type,
+  '@type': 'CreativeWork',
+  '@id': `${siteUrl}/database/weapons/${slug}/#item`,
+  name: `${weapon.name} — ${weapon.type} in Division Resurgence`,
   description: `${weapon.name} ${weapon.type} in Division Resurgence. ${weapon.rpm} RPM, ${weapon.mag} magazine, ${weapon.dmgType} damage.`,
+  genre: 'Video Game Item Database',
+  isPartOf: {
+    '@type': 'VideoGame',
+    name: 'Tom Clancy\'s The Division Resurgence',
+    gamePlatform: ['iOS', 'Android'],
+    applicationCategory: 'Game',
+  },
   additionalProperty: [
     { '@type': 'PropertyValue', name: 'Weapon Class', value: weapon.type },
     { '@type': 'PropertyValue', name: 'Rarity', value: 'High-End' },
@@ -86,7 +92,7 @@ const productLd = {
 };
 ---
 
-<BaseLayout title={title} description={description} breadcrumbs={breadcrumbs} jsonLd={[weaponLd, productLd]} faqs={faqs}>
+<BaseLayout title={title} description={description} breadcrumbs={breadcrumbs} jsonLd={[weaponLd, itemLd]} faqs={faqs}>
   <div class="container section">
     <Breadcrumbs items={breadcrumbs} />
     <SectionTag label="Weapon Database" />
