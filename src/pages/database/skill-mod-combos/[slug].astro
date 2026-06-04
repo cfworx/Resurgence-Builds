@@ -63,7 +63,7 @@ const getSkillsFromBonus = (bonus3: string, spec: string): string => {
   if (b.includes('support station')) return 'Support Station';
   if (b.includes('healing hive') || b.includes('healing swarm')) return 'Healing Hive';
   if (b.includes('smart cover')) return 'Smart Cover';
-  if (b.includes('scanning pulse')) return 'Scanning Pulse';
+  if (b.includes('scanning pulse') || b.includes('scanned')) return 'Scanning Pulse';
   if (b.includes('tactical link')) return 'Tactical Link';
   if (spec === 'Demolitionist') return 'Demolitionist Skills';
   if (spec === 'Tech Operator') return 'Striker Drone';

@@ -656,5 +656,12 @@
     "specialization": "Bulwark",
     "bonus2": "Weapon Damage+[2.0%~4.0%]",
     "bonus3": "Enemies within 20 meter(s) focus the Agent in priority when deploying the Phalanx Shield. Grants +3.20% Damage Reduction for 10 second(s) for each enemy who is targeting the Agent, up to 5 stack(s)."
+  },
+  {
+    "id": "smc-93",
+    "name": "Optimal Awareness",
+    "specialization": "Vanguard",
+    "bonus2": "Armor+[4.7%~9.3%]",
+    "bonus3": "Each enemy scanned within 70 meter increases Weapon Critical Hit Chance by 1.40%, up to 8 times."
   }
 ]
