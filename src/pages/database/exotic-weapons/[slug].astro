@@ -56,13 +56,19 @@ const weaponLd = {
   dateModified: '2026-05-30',
 };
 
-const productLd = {
+const itemLd = {
   '@context': 'https://schema.org',
-  '@type': 'Product',
-  '@id': `${siteUrl}/database/exotic-weapons/${slug}/#product`,
-  name: weapon.name,
-  category: `Exotic ${weapon.type}`,
+  '@type': 'CreativeWork',
+  '@id': `${siteUrl}/database/exotic-weapons/${slug}/#item`,
+  name: `${weapon.name} — Exotic ${weapon.type} in Division Resurgence`,
   description: `${weapon.name} exotic ${weapon.type} in Division Resurgence. ${weapon.damage} damage, ${weapon.rpm} RPM, ${weapon.mag} mag. Exotic talent: ${weapon.talentName}.`,
+  genre: 'Video Game Item Database',
+  isPartOf: {
+    '@type': 'VideoGame',
+    name: 'Tom Clancy\'s The Division Resurgence',
+    gamePlatform: ['iOS', 'Android'],
+    applicationCategory: 'Game',
+  },
   additionalProperty: [
     { '@type': 'PropertyValue', name: 'Weapon Class', value: weapon.type },
     { '@type': 'PropertyValue', name: 'Rarity', value: 'Exotic' },
