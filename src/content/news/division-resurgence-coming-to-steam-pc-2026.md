@@ -165,10 +165,6 @@ For our [PC emulator comparison readers](/guide/pc-emulator-comparison/) who hav
 Being honest about what we do **not** know is part of the job. The Steam store page itself does not currently state any of the following for the Steam version specifically:
 
 - Specific release date (only "Coming soon" and "later this year" from the X post)
-- Price details beyond free to play (no premium pricing or starter pack info shown)
-- Age rating (the in-video PEGI 18 logo is visible in the announcement video, but the Steam page itself does not display a rating)
-- Whether the Steam version specifically will support the same Ubisoft Connect crossplay and cross-progression that the current Ubisoft Connect PC version supports (likely yes via Ubisoft Connect account integration, but not formally stated for Steam)
-- Cloud save support
 - Steam-specific controller support implementation (Steam Input, Steam Deck verification, etc.)
 
 If and when the team posts more on any of these, we will update this article.
