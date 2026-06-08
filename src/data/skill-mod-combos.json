@@ -663,5 +663,12 @@
     "specialization": "Vanguard",
     "bonus2": "Armor+[4.7%~9.3%]",
     "bonus3": "Each enemy scanned within 70 meter increases Weapon Critical Hit Chance by 1.40%, up to 8 times."
+  },
+  {
+    "id": "smc-94",
+    "name": "Ammo Refill",
+    "specialization": "Vanguard",
+    "bonus2": "Reload Speed+[4.0%~8.0%]",
+    "bonus3": "Every shot during the first 6 seconds of Tactical Link grants 29% chance of recovering 1 ammo. Duration resets at each kill."
   }
 ]

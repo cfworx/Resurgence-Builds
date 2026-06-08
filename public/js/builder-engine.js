@@ -151,7 +151,7 @@
       return (rarityOrder[a.rarity]||9) - (rarityOrder[b.rarity]||9);
     });
     
-    const catColors = {'Engineering':'#3b82f6','Firepower':'#f97316','Toughness':'#22c55e'};
+    const catColors = {'Firepower':'#e74c3c','Toughness':'#3b82f6','Engineering':'#f1c40f'};
     const groups = {};
     all.forEach(p => {
       const cat = p.specialization;
@@ -465,7 +465,7 @@
 
     // OS Protocol group
     if (osP) {
-      const osColor = osP.specialization === 'Engineering' ? '#3b82f6' : osP.specialization === 'Firepower' ? '#f97316' : '#22c55e';
+      const osColor = osP.specialization === 'Firepower' ? '#e74c3c' : osP.specialization === 'Toughness' ? '#3b82f6' : '#f1c40f';
       talentHTML += `<div class="sl-row sl-row--os"><span class="sl-icon">⚙️</span><div class="sl-body"><span class="sl-label">OS PROTOCOL</span><span class="sl-val">${osP.name} <span class="sl-pill" style="background:${osColor}22;color:${osColor};border-color:${osColor}44">${osP.specialization}</span></span></div></div>`;
     }
 
