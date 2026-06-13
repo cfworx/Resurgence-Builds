@@ -1,5 +1,5 @@
 ---
-title: "Asian Server Maintenance - May 26, 2026"
+title: "Division Resurgence Asian Server Maintenance - May 26"
 publishDate: "2026-05-25T18:57:00Z"
 author: "RapidF5"
 featuredImage: "/images/news/division-resurgence-asian-server-maintenance-may-26-2026.jpg"

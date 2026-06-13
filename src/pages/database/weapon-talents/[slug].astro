@@ -163,6 +163,14 @@ const talentLd = {
         </div>
       </div>
 
+      <!-- Combat Tips -->
+      <div style="margin-bottom: var(--sp-8);">
+        <h2 style="font-family: var(--font-heading); font-size: var(--text-lg); font-weight: 800; color: #fff; margin: 0 0 var(--sp-4) 0; padding-bottom: var(--sp-2); border-bottom: 1px solid rgba(255,255,255,0.08);">Combat Tips</h2>
+        <div style="color: #c8c8d0; line-height: 1.75; font-size: var(--text-base);">
+          <p>{archetype.label.includes('DPS') ? `To get the most out of ${talent.name}, pair it with high-RPM weapons like SMGs or LMGs that can trigger or stack the effect quickly. Weapon Critical Hit Chance and Weapon Critical Hit Damage bonus attributes amplify the payoff. In group content, position behind your tank and focus fire on priority targets during the buff window.` : archetype.label.includes('Tank') ? `${talent.name} rewards staying in the fight. Build around Toughness core stats with Max Health and Armor bonus attributes to extend your survivability while the talent does its work. In group content, draw aggro and hold position — your squad's DPS players will thank you for the stable target.` : archetype.label.includes('Support') ? `${talent.name} shines in group content where your healing and support actions can benefit the full squad. Run it alongside Healing Hive or Support Station for consistent proc uptime. Stack Received Healing bonus attributes on your team's builds to amplify the effect.` : archetype.label.includes('Engineering') ? `${talent.name} scales with skill deployment. Keep your skills active and cycling — Skill Cooldown Recovery bonus attributes are your friend. Tech Operator and Field Medic builds can maintain near-permanent uptime with the right gear set pairings.` : `${talent.name} offers flexibility across multiple build types. Test different weapon pairings to find the trigger cadence that matches your playstyle. Recalibrate at the Recalibration Station if your current weapon roll does not have this talent.`}</p>
+        </div>
+      </div>
+
       {talent.upgradedName && (
         <div style="margin-bottom: var(--sp-8);">
           <h2 style="font-family: var(--font-heading); font-size: var(--text-lg); font-weight: 800; color: var(--accent); margin: 0 0 var(--sp-4) 0; padding-bottom: var(--sp-2); border-bottom: 1px solid rgba(255,255,255,0.08); display: flex; align-items: center; gap: var(--sp-3);">

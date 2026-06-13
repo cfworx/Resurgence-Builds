@@ -19,6 +19,8 @@ const { mod } = Astro.props;
 const slug = mod.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
 const siteUrl = 'https://resurgencebuilds.com';
 
+const isVague = !mod.bonus3 || (mod.bonus3.length < 100 && !/\d/.test(mod.bonus3));
+
 const title = `${mod.name} — ${mod.specialization} Skill Mod`;
 const description = `${mod.name} is a ${mod.specialization} Skill Mod Combo in Division Resurgence. 2pc: ${mod.bonus2}. 3pc: ${mod.bonus3.substring(0, 120)}…`;
 
@@ -137,7 +139,7 @@ const relatedMods = skillMods
 const toModSlug = (name: string) => name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
 ---
 
-<BaseLayout title={title} description={description} breadcrumbs={breadcrumbs} jsonLd={modLd} faqs={faqs}>
+<BaseLayout title={title} description={description} breadcrumbs={breadcrumbs} jsonLd={modLd} faqs={faqs} noindex={isVague}>
   <div class="container section">
     <Breadcrumbs items={breadcrumbs} />
     <SectionTag label="Skill Mod" />
@@ -190,6 +192,21 @@ const toModSlug = (name: string) => name.toLowerCase().replace(/[^a-z0-9]+/g, '-
         </div>
       </div>
 
+      <!-- 3-Piece Bonus Analysis -->
+      <div class="smc-section">
+        <h2 class="smc-section__title">3-Piece Bonus Analysis</h2>
+        <div style="color: #c8c8d0; line-height: 1.75; font-size: var(--text-base);">
+          {isVague ? (
+            <p>The 3-piece set bonus for {mod.name} provides a specialization-specific enhancement for {mod.specialization} builds. Equipping all three matching skill mods from this combo set unlocks the full potential of the bonus, making it worth farming targeted loot to complete the set.</p>
+          ) : (
+            <Fragment>
+              <p>{mod.name}'s 3-piece bonus — <em>{mod.bonus3}</em> — is where this combo set earns its slot. {mod.bonus3.toLowerCase().includes('cooldown') ? `Cooldown reduction effects like this stack with Skill Cooldown Recovery bonus attributes and gear set bonuses, creating faster skill rotations that keep your abilities cycling during sustained fights.` : mod.bonus3.toLowerCase().includes('damage') || mod.bonus3.toLowerCase().includes('critical') ? `Damage amplification effects like this stack multiplicatively with Engineering core stats and Skill Intensity bonus attributes. The higher your base skill output, the more this bonus pays off — making it a priority for endgame min-maxing.` : mod.bonus3.toLowerCase().includes('health') || mod.bonus3.toLowerCase().includes('healing') || mod.bonus3.toLowerCase().includes('repair') ? `Healing and survivability bonuses like this scale with your existing sustain stats. Pair with Toughness core stats or Received Healing bonus attributes to push the effect further in endgame group content.` : `This effect layers on top of your existing build stats and stacks with gear set bonuses and OS Protocol effects. Completing the full 3-piece set is worth the investment for any dedicated ${mod.specialization} player.`}</p>
+              {mod.bonus3.toLowerCase().includes('cooldown') && <p>Pro tip: Talent cooldown timers on 3-piece bonuses are separate from skill cooldowns. You can reduce your skill cooldowns while the talent cooldown resets independently, giving you back-to-back procs in long engagements.</p>}
+            </Fragment>
+          )}
+        </div>
+      </div>
+
       <!-- Best Builds -->
       <div class="smc-section">
         <h2 class="smc-section__title">Best Builds</h2>
@@ -204,7 +221,7 @@ const toModSlug = (name: string) => name.toLowerCase().replace(/[^a-z0-9]+/g, '-
         <h2 class="smc-section__title">Synergies</h2>
         <div style="color: #c8c8d0; line-height: 1.75; font-size: var(--text-base);">
           <p>{specSynergy[mod.specialization] || `Look for gear sets and OS Protocols that stack ${mod.specialization} bonuses. The multiplicative interaction between mod combos and gear set bonuses is where endgame builds get their power.`}</p>
-          <p>Remember: skill mod combo bonuses are a separate layer from gear sets, brand sets, and OS Protocols. They all stack. That's how you go from "decent" to "everything dies before the animation finishes."</p>
+          <p>Remember: skill mod combo bonuses are a separate layer from gear sets and OS Protocols. They all stack. That's how you go from "decent" to "everything dies before the animation finishes."</p>
         </div>
       </div>
 
@@ -232,7 +249,7 @@ const toModSlug = (name: string) => name.toLowerCase().replace(/[^a-z0-9]+/g, '-
       </div>
     </div>
 
-    <AdSenseUnit />
+    {!isVague && <AdSenseUnit />}
   </div>
 </BaseLayout>
 

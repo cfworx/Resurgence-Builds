@@ -34,6 +34,7 @@ const faqs = [
   { question: "Will this Division Resurgence loadout tool guarantee I win in the Dark Zone?", answer: "No. If you have the spatial awareness of a concussed pigeon, panic-sprint directly into a brick wall while trying to reload, or throw a grenade only to have it bounce off cover right back at your feet, no loadout can save you. The tool optimizes the math, but it can't fix terminal brain-lag." },
   { question: "Why does the verified database contain exactly 69 weapon talents?", answer: "Nice. Also, because that's the exact number of verified weapon talents in the game. If you want us to add a 70th talent just to ruin the joke, write a complaint letter to Ubisoft and see if they answer it before the next decade." }
 ];
+const genuineFaqs = faqs.filter(f => f.question !== "Will my parents ever love me?");
 const jsonLd = {
   '@type': 'WebApplication',
   '@id': 'https://resurgencebuilds.com/builder/#app',
@@ -65,7 +66,7 @@ const dataPayload = JSON.stringify({ gearSets, weaponTalents, exoticWeapons, sta
   title="Build Planner"
   description={description}
   breadcrumbs={breadcrumbs}
-  faqs={faqs}
+  faqs={genuineFaqs}
   jsonLd={jsonLd}
   ogImage="/images/build-planner-og.png"
   keywords={["division resurgence build planner","division resurgence builder","division resurgence loadout tool","resurgence build maker"]}

@@ -168,11 +168,11 @@ For a video demonstration: [Nadie's gameplay video on Facebook](https://www.face
 
 ---
 
-## Honest Critique
+## Build Breakdown
 
 **What is brilliant:** The triple Extra Health feed (Backup Protection on weapon swap, Swift Taunt on FAMAS, set bonuses) means you basically never lose the Pummeling Shield stun condition. That is genuinely smart kit synergy.
 
-**What is worth knowing:** 60.26k DPS with 14.36% crit chance and 50% crit damage means you are leaving offensive potential on the table compared to dedicated damage Specializations. That is on purpose. This build does not want to be the top damage dealer. It wants to be the reason the top damage dealer is still alive.
+**What makes it unique:** 60.26k DPS with 14.36% crit chance and 50% crit damage tells you this build is deliberately trading offensive ceiling for something more valuable — permanent survivability. This build does not want to be the top damage dealer. It wants to be the reason the top damage dealer is still alive.
 
 **Where it shines:** Group play. Elite missions. Dark Zone. Anywhere you have a squad to provide the damage output while you provide the immortality and the stuns. This is a squad-anchor build.
 

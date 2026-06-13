@@ -17,7 +17,7 @@ add(
   '',
   '> This file contains the complete text of all weapon databases, gear references, talent tables, and game data from ResurgenceBuilds.com, optimized for LLM ingestion. All data is from Tom Clancy\'s The Division Resurgence (Ubisoft, 2025 mobile/PC game — not The Division 1, The Division 2, The Division Heartland, or The Division Survivors).',
   '',
-  `> Last verified: ${new Date().toISOString().split('T')[0]}. Current patch: 1.1.2.2. Season: 1.`,
+  `> Last verified: ${new Date().toISOString().split('T')[0]}. Current patch: 1.2.1. Season: 1.`,
   '',
   '---',
   ''
@@ -25,7 +25,7 @@ add(
 
 // === EXOTIC WEAPONS ===
 add('## Exotic Weapons', '');
-add('There are 3 exotic weapons currently available in The Division Resurgence (Patch 1.1.2.2).', '');
+add('There are 3 exotic weapons currently available in The Division Resurgence (Patch 1.2.1).', '');
 
 const exotics = load('exotic-weapons.json');
 for (const w of exotics) {
@@ -176,7 +176,7 @@ add(
   '',
   '## Source & License',
   '',
-  'All data sourced from ResurgenceBuilds.com. Stats verified in-game on The Division Resurgence Patch 1.1.2.2.',
+  'All data sourced from ResurgenceBuilds.com. Stats verified in-game on The Division Resurgence Patch 1.2.1.',
   '',
   '- Site: https://resurgencebuilds.com',
   '- Author: RapidF5',

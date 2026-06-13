@@ -2,7 +2,7 @@ import sharp from 'sharp';
 import { resolve } from 'path';
 
 // Use the image you just uploaded
-const INPUT = resolve('C:/Users/cfwor/.gemini/antigravity/brain/6edb1b9e-6450-4efc-bfe0-93536f8ff204/media__1779035316627.jpg');
+const INPUT = resolve('./input.jpg'); // Set input image path here
 const OUTPUT_HERO = resolve('public/images/legendary-healer-field-medic.webp');
 const OUTPUT_THUMB = resolve('public/images/legendary-healer-field-medic-thumb.webp');
 const OUTPUT_OG = resolve('public/images/legendary-healer-field-medic-og.jpg');

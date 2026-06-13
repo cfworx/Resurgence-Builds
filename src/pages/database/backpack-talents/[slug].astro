@@ -48,19 +48,16 @@ function getSynergies() {
   const synergies: string[] = [];
   if (isDPS) {
     synergies.push('Pairs well with Fury Strike gear set for stacking weapon damage.');
-    synergies.push('Strong with Gunslinger or Overcharge OS Protocols for burst windows.');
   }
   if (isSkill) {
-    synergies.push('Great with Mechanist gear set for maximum skill uptime.');
-    synergies.push('Combos with Tactical Link OS Protocol to push skill numbers even higher.');
+    synergies.push('Great with Mechanical Enemy gear set for maximum skill uptime.');
+    synergies.push('Pairs well with Vanguard builds running Tactical Link as their Signature Ability.');
   }
   if (isTank) {
-    synergies.push('Synergizes with Bulwark or Guardian gear sets for face-tanking.');
-    synergies.push('Works well with Fortify OS Protocol and Ballistic Shield builds.');
+    synergies.push('Synergizes with Self-Propelled Shield or Fearless Warrior gear sets for face-tanking.');
   }
   if (isTeam) {
-    synergies.push('Fits naturally in healer/support setups running Restorer Hive.');
-    synergies.push('Stacks nicely with team-oriented gear bonuses like Guardian 4-piece.');
+    synergies.push('Fits naturally in healer/support setups running Healing Hive.');
   }
   if (synergies.length === 0) {
     synergies.push('Flexible enough to slot into most gear set combos — experiment and find what clicks.');
@@ -156,6 +153,15 @@ const talentLd = {
         <h2 style="font-family: var(--font-heading); font-size: var(--text-lg); font-weight: 800; color: #fff; margin: 0 0 var(--sp-4) 0; padding-bottom: var(--sp-2); border-bottom: 1px solid rgba(255,255,255,0.08);">How It Works</h2>
         <div style="padding: var(--sp-5); background: rgba(0,0,0,0.25); border-left: 3px solid var(--accent); border-radius: 0 8px 8px 0;">
           <p style="margin: 0; color: #c8c8d0; line-height: 1.75; font-size: var(--text-base);">{talent.description}</p>
+        </div>
+      </div>
+
+      <!-- Activation Details -->
+      <div style="margin-bottom: var(--sp-8);">
+        <h2 style="font-family: var(--font-heading); font-size: var(--text-lg); font-weight: 800; color: #fff; margin: 0 0 var(--sp-4) 0; padding-bottom: var(--sp-2); border-bottom: 1px solid rgba(255,255,255,0.08);">Activation Details</h2>
+        <div style="color: #c8c8d0; line-height: 1.75; font-size: var(--text-base);">
+          <p>{isDPS && isSkill ? `${talent.name} bridges weapon damage and skill output, making it ideal for hybrid builds that leverage both Firepower and Engineering. Look for gear pieces that roll both weapon and skill bonus attributes to maximize the dual scaling. Tech Operator Offensive Operations builds or Demolitionist setups can take full advantage of this crossover potential.` : isDPS && isTank ? `${talent.name} sits at the intersection of damage and survivability. Bulwark builds running Firepower cores with a few Toughness pieces get the most out of this — you get offensive output without sacrificing the tankiness your squad depends on. The key is balancing enough Toughness to activate the defensive component without diluting your damage.` : isDPS ? `${talent.name} directly amplifies your damage output, making it a staple for Firepower-focused builds. Pair with Weapon Critical Hit Chance and Weapon Critical Hit Damage bonus attributes for maximum burst potential. High-RPM weapons like SMGs and LMGs proc the effect more frequently, giving you better uptime during sustained engagements.` : isSkill ? `${talent.name} rewards skill-focused gameplay, scaling naturally with Engineering core stats. Deploy your skills proactively and keep them cycling to maintain the buff. Skill Cooldown Recovery bonus attributes are your best friend here — faster rotations mean more procs and more impact per engagement.` : isTank ? `${talent.name} reinforces your role as the team's anchor. Stack Toughness core stats with Max Health and Armor bonus attributes to push the defensive scaling as far as it goes. In group content, position aggressively to draw aggro while your DPS players work safely behind you.` : isTeam ? `${talent.name} is built for team play. The effect benefits your squad, making it a natural fit for Field Medic or support-oriented Vanguard builds. Stay near your team and time your activations for high-pressure moments like boss encounters or Dark Zone extractions.` : `${talent.name} provides flexible utility that adapts to your build context. Test it across different loadouts to find where the activation condition aligns best with your playstyle and content type.`}</p>
+          <p>You can recalibrate backpack talents at the Recalibration Station if your drop did not roll {talent.name}. Focus on farming Tier 2 backpacks from endgame activities for the best base stats before recalibrating the talent slot.</p>
         </div>
       </div>
 

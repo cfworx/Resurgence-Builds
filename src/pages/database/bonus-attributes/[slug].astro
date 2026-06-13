@@ -204,6 +204,33 @@ const info: AttrInfo = attrGuide[attrKey] || {
   bestBuilds: `Builds that stack ${category} benefit the most from ${attribute}. Check the gear set database and OS Protocol listings for synergies — the right combination of bonus attributes and set bonuses is where endgame optimization lives.`,
 };
 
+const statInteraction: Record<string, string> = {
+  'weapon-critical-hit-chance': 'Weapon CHC works multiplicatively with Weapon Critical Hit Damage — both stats need investment for optimal crit builds. Stacking CHC alone without CHD gives frequent but weak crits, while CHD without CHC means you rarely crit at all. Balance both attributes across your gear pieces.',
+  'weapon-critical-hit-damage': 'Weapon CHD multiplies the damage of every critical hit. It scales best when paired with enough Weapon Critical Hit Chance to crit consistently. This is the highest-ceiling offensive stat for Firepower builds running crit-focused gear sets.',
+  'weapon-damage': 'Weapon Damage is a flat multiplier on all weapon hits, crits or not. It provides the most consistent damage increase because it does not depend on crit RNG. Stack this on builds that use talents or gear sets with non-crit damage amplification.',
+  'weapon-multi-shot-chance': 'Multi-Shot Chance gives a random extra projectile per hit. It stacks with the Overclocking OS Protocol and the Toymaker body armor talent for a skill-and-weapon hybrid engine. Each additional projectile can independently crit, making this stat scale exponentially with CHC.',
+  'headshot-damage': 'Headshot Damage amplifies precision shots. It rewards aim skill but has lower overall value in mobile gameplay where headshots are harder to land consistently. Most competitive builds prioritize CHC and CHD over Headshot Damage unless running a Marksman Rifle.',
+  'weapon-blast-damage': 'Weapon Blast Damage boosts Blast-type weapon hits. This damage type is effective against red-bar and purple-bar enemies. Check the color bars on enemy health to identify when Blast damage has an advantage.',
+  'weapon-piercing-damage': 'Weapon Piercing Damage increases Piercing-type weapon hits. Piercing is particularly effective against Dark Zone Hunters and certain elite enemy types. Stack it alongside Weapon Damage for maximum effect.',
+  'weapon-shredding-damage': 'Weapon Shredding Damage amplifies Shredding-type hits. Combined with Blast damage coverage, Shredding covers roughly 80% of endgame encounters. It is the most generally useful damage type stat.',
+  'max-health': 'Max Health directly increases your health pool, making every point of healing more effective. It pairs well with Received Healing bonus attributes — more health means each percentage of healing restores more absolute HP.',
+  'armor': 'Armor provides flat damage mitigation. Stacking Armor alongside Damage Reduction gives layered survivability that makes Bulwark and Vanguard tank builds extremely durable in group content.',
+  'damage-reduction': 'Damage Reduction is a percentage-based mitigation stat. It stacks additively with itself but multiplicatively with Armor, making the combination of both stats more effective than stacking either alone.',
+  'skill-critical-chance': 'Skill Crit Chance gives your skills a chance to critically hit. It scales particularly well with Tech Operator Striker Drone builds, where each drone hit can independently crit for massive burst damage.',
+  'skill-critical-damage': 'Skill Crit Damage multiplies damage when skills crit. Like weapon crits, you need enough Skill Crit Chance to make this stat worthwhile. Balance both for optimal skill DPS.',
+  'skill-intensity': 'Skill Intensity multiplies both skill damage AND healing output. It is the primary scaling stat for any skill-focused build and stacks multiplicatively with Engineering core stats. Engineering provides the base multiplier; Skill Intensity amplifies on top of it.',
+  'skill-multi-shot-chance': 'Skill Multi-Shot Chance gives skills a chance to fire extra projectiles. Combined with Overclocking OS Protocol and Toymaker talent, this creates an engine where skills chain-fire for devastating burst windows.',
+  'skill-duration': 'Skill Duration extends how long deployed skills stay active. Critical for Support Station healers and any build that relies on persistent skill effects. More duration means fewer redeployments and better cooldown management.',
+  'skill-radius': 'Skill Radius expands the area of effect for deployed skills. Important for AoE-focused builds like Demolitionist Artillery Turret or Field Medic Support Station builds where coverage matters.',
+  'skill-cooldown-recovery': 'Skill Cooldown Recovery reduces the time between skill uses. It stacks with Pressing Matter OS Protocol and Healing Elites gear set passives. For builds that rely on constant skill cycling, this is often the most impactful Engineering bonus attribute.',
+  'skill-blast-damage': 'Skill Blast Damage increases Blast-type damage from skills. Demolitionist builds running Artillery Turret benefit heavily. Check enemy weakness color bars to maximize the damage type advantage.',
+  'skill-piercing-damage': 'Skill Piercing Damage boosts Piercing-type skill hits. Less universally useful than Blast or Shredding, but valuable against specific enemy types in Dark Zone and Legendary difficulty.',
+  'skill-shredding-damage': 'Skill Shredding Damage amplifies Shredding-type skill hits. Like its weapon counterpart, Shredding covers a large portion of endgame enemies, making it a safe default choice.',
+  'received-healing': 'Received Healing amplifies all incoming healing — from medkits, skills, and teammate heals. It is a Universal attribute, meaning it rolls on any core type. Tank builds benefit enormously from stacking this alongside Max Health.',
+  'damage-to-elites': 'Damage to Elites provides a flat damage boost against Named and Elite enemies. It is the single most efficient stat for PvE endgame content where elite enemies are the primary threat. Universally useful across all build types.',
+  'signature-ability-charge-efficiency': 'Signature Ability Charge Efficiency makes your Signature Ability charge faster. It is a Universal attribute that benefits all specializations. Vanguard Tactical Link and Field Medic Emergency Healing builds see the biggest uptime improvement from stacking this.',
+};
+
 const faqs = [
   {
     question: `What does ${attribute} do in Division Resurgence?`,
@@ -287,12 +314,20 @@ const toAttrSlug = (name: string) => name.toLowerCase().replace(/[^a-z0-9]+/g, '
         </div>
       </div>
 
+      <!-- Stat Interactions -->
+      <div class="attr-section">
+        <h2 class="attr-section__title">Stat Interactions</h2>
+        <div style="color: #c8c8d0; line-height: 1.75; font-size: var(--text-base);">
+          <p>{statInteraction[slug] || `${attribute} interacts with your build's core stat system. Check which core stat your gear runs to ensure this attribute is available in the bonus attribute pool.`}</p>
+        </div>
+      </div>
+
       <!-- Recalibration Strategy -->
       <div class="attr-section">
         <h2 class="attr-section__title">Recalibration Strategy</h2>
         <div style="color: #c8c8d0; line-height: 1.75; font-size: var(--text-base);">
-          <p>Bonus attributes in Division Resurgence stack <strong style="color: #fff;">multiplicatively</strong> with gear set bonuses, weapon talents, and OS Protocol talents — which means stacking {attribute} across multiple gear pieces compounds your total {category.toLowerCase()} output rather than just adding to it. A build optimized with {attribute} on every available slot outperforms a build with random bonus attributes by 20-40% in the stat it targets.</p>
-          <p>When recalibrating, prioritize the gear slots that can roll the <strong style="color: #fff;">highest values</strong> for {attribute}. Each piece only gets one recalibration slot, so you need to decide: swap the core stat, the bonus attribute, or the talent? For most builds, locking in the right talent and core stat first, then recalibrating the bonus attribute last, gives you the most flexibility. Use junk gear with high rolls of {attribute} as a <strong style="color: var(--accent);">re-roll source</strong> at the recalibration station to transfer the stat onto your endgame pieces.</p>
+          <p>{attribute} can be recalibrated on any gear piece that rolls it as a bonus attribute. Visit the Recalibration Station and select the bonus attribute slot you want to change. Keep in mind that recalibrating one attribute locks the other bonus attributes on that gear piece — plan your recalibration priority carefully.</p>
+          <p>{category === 'Firepower' ? 'Firepower bonus attributes only appear on gear with a Firepower core stat. If your gear piece has a Toughness or Engineering core, you will not see Firepower pool attributes as recalibration options. Build around a single core stat for the most consistent attribute access.' : category === 'Toughness' ? 'Toughness bonus attributes roll on Toughness core gear. Since survivability attributes are in high demand for tank builds, consider saving your best Toughness gear pieces rather than recalibrating them — a natural roll with the right attributes saves resources.' : category === 'Engineering' ? 'Engineering bonus attributes are exclusive to Engineering core gear. Skill builds benefit from stacking multiple Engineering attributes on each piece, so look for gear that already rolls one Engineering attribute naturally before recalibrating the second slot.' : 'Universal bonus attributes can appear on any core type, making them the most flexible category for recalibration. This means you can slot them into Firepower, Toughness, or Engineering builds without restrictions.'}</p>
         </div>
       </div>
 

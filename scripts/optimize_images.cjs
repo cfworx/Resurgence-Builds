@@ -6,7 +6,7 @@ const sharp = require('sharp');
 
 const imagesDir = path.join(__dirname, '../public/images');
 const buildsDir = path.join(__dirname, '../src/content/builds');
-const newImagePath = 'C:\\Users\\cfwor\\.gemini\\antigravity\\brain\\6a3dc2a2-0dc6-4658-a973-08391388dc6c\\media__1779110542137.jpg';
+const newImagePath = './input.jpg'; // Set input image path here
 
 async function optimizeImages() {
   console.log("Starting image optimization...");

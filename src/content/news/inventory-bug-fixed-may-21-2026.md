@@ -1,5 +1,5 @@
 ---
-title: "Inventory Bug Fixed & Phase 3 News"
+title: "Division Resurgence Inventory Bug Fixed and Phase 3 News"
 publishDate: "2026-05-23T23:59:59Z"
 author: "RapidF5"
 featuredImage: "/images/news/inventory-wipe-bug-fixed.jpg"

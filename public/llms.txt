@@ -45,7 +45,7 @@ Searchable, structured reference tables with complete data:
 - **Developer:** Ubisoft Bucharest / Ubisoft Mobile
 - **Platforms:** iOS, Android, PC (Ubisoft Connect)
 - **Current Season:** Season 1
-- **Current Patch:** 1.1.2.2
+- **Current Patch:** 1.2.1
 - **Specializations:** Vanguard (Commando, Recon), Demolitionist (HE Munitions, Field Grenadier), Bulwark (Juggernaut, Breacher), Field Medic (Combat Medicine, Tactical Pharma), Tech Operator (Offensive Operations, Aegis Operations)
 - **Exotic Weapons:** Lady Death (SMG, talent: Breathe Free), Warlord (AR, talent: Play Rough), Strawberry Milkshake (LMG, talent: Anarchy)
 - **Key Gear Sets:** Jackpot, Fire Cycle, Socialite, Long-Term Effect, Mechanical Expert, Boom Shakalaka

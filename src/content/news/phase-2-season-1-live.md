@@ -1,5 +1,5 @@
 ---
-title: "Phase 2 Is Live - Free Exotic LMG and New Events"
+title: "Division Resurgence Phase 2 Is Live - Free Exotic LMG"
 publishDate: "2026-05-12"
 author: "RapidF5"
 description: "Ubisoft launches Phase 2 of Season 1 with a new Classified Ops Pass, free Strawberry Milkshake Exotic LMG, and new Dark Zone events."

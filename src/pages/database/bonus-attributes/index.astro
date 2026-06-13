@@ -3,8 +3,8 @@ import DatabaseLayout from '../../../layouts/DatabaseLayout.astro';
 import bonusAttributes from '../../../data/bonus-attributes.json';
 import AdSenseUnit from '../../../components/AdSenseUnit.astro';
 
-const title = "Division Resurgence Weapon/Gear Bonus Attributes & Gear Score Guide";
-const description = "Every stat that can roll on your gear in Division Resurgence, organized by Firepower, Toughness, and Engineering. Know your rolls or suffer.";
+const title = "Division Resurgence Bonus Attributes | All 24 Stats Explained";
+const description = "Every bonus attribute that can roll on your gear in Division Resurgence, organized by Firepower, Toughness, Engineering, and Universal pools. Know your rolls or suffer.";
 const breadcrumbs = [
   { name: 'Weapon/Gear Bonus Attributes', url: '/database/bonus-attributes/' }
 ];
@@ -21,9 +21,9 @@ const getCategoryColor = (cat: string) => {
 };
 
 const faqs = [
-  { question: "What are bonus attributes in Division Resurgence?", answer: "Bonus attributes are secondary stats that roll on your gear alongside the core attribute (Firepower, Toughness, or Engineering). They include things like Critical Hit Chance, Headshot Damage, Armor Regeneration, Skill Haste, and more. Every gear piece can roll one or two bonus attributes, and they stack across your loadout." },
-  { question: "What bonus attributes should I prioritize in Division Resurgence?", answer: "For DPS builds: Critical Hit Chance and Critical Hit Damage until you cap CHC around 50-60%, then stack CHD and Headshot Damage. For tank builds: Armor Regeneration and Health. For skill builds: Skill Haste and Skill Damage. The right bonus attributes turn a mediocre build into something that actually melts." },
-  { question: "Can you recalibrate bonus attributes in Division Resurgence?", answer: "Yes. At the recalibration station, you can swap one bonus attribute per gear piece. You need a donor item with the stat you want as a re-roll source. Each gear piece only gets one recalibration slot, so plan your recalibrations before you commit." },
+  { question: "What are bonus attributes in Division Resurgence?", answer: "Bonus attributes are secondary stats that roll on your gear alongside the core stat (Firepower, Toughness, or Engineering). They include Weapon Critical Hit Chance, Weapon Critical Hit Damage, Skill Intensity, Damage Reduction, and more. Each core stat type unlocks a specific pool of attributes, plus Universal attributes that can roll on any core." },
+  { question: "What bonus attributes should I prioritize in Division Resurgence?", answer: "For DPS builds: Weapon Critical Hit Chance and Weapon Critical Hit Damage are king. For tank builds: Max Health, Armor, and Damage Reduction. For skill builds: Skill Intensity and Skill Cooldown Recovery. Universal attributes like Damage to Elites and Received Healing fit any build. The right bonus attributes turn a mediocre build into something that actually melts." },
+  { question: "Can you recalibrate bonus attributes in Division Resurgence?", answer: "Yes. At the Recalibration Station, you can swap one bonus attribute per gear piece. You need a donor item with the stat you want. Each gear piece only gets one recalibration slot, so plan carefully before committing. Recalibrating one attribute locks the others on that piece permanently." },
 ];
 
 const allAttrs: Array<{name: string; category: string}> = [];
@@ -59,12 +59,17 @@ const itemListLd = {
   {title}
   {description}
   {breadcrumbs}
-  heading="Weapon/Gear Bonus Attributes"
-  subheading="Every stat that can roll on your gear and weapons — organized by core function. Know your rolls, or suffer."
+  heading="Bonus Attributes"
+  subheading={`All ${allAttrs.length} bonus attributes across ${bonusAttributes.length} stat pools — organized by core function. Know your rolls, or suffer.`}
   jsonLd={itemListLd}
-  lastVerified="Patch 1.1.2.2"
+  lastVerified="Patch 1.2.1"
   {faqs}
 >
+  <div style="color: #c8c8d0; line-height: 1.75; font-size: var(--text-base); margin-bottom: var(--sp-8); max-width: 72ch;">
+    <p>Bonus attributes are the secondary stats on every gear piece in Division Resurgence. They sit alongside your core stat — Firepower, Toughness, or Engineering — and provide specialized bonuses like Weapon Critical Hit Chance, Skill Intensity, or Damage Reduction. Each core stat type unlocks a specific pool of bonus attributes, so a Firepower-core vest will roll different options than an Engineering-core vest.</p>
+    <p>There are {allAttrs.length} bonus attributes across {bonusAttributes.length} pools: <strong>Firepower</strong> (offensive weapon stats), <strong>Toughness</strong> (survivability), <strong>Engineering</strong> (skill scaling), and <strong>Universal</strong> (attributes that roll on any core type). Universal attributes like Damage to Elites and Received Healing are the most flexible options for builds that need cross-category value.</p>
+    <p>You can recalibrate one bonus attribute per gear piece at the Recalibration Station, but doing so locks the other attributes on that piece. This means planning your recalibration targets before you commit is critical — especially on Tier 2 endgame gear that you cannot easily replace.</p>
+  </div>
   <div class="db-grid" id="attributes-grid">
     {bonusAttributes.map((category) => {
       const palette = getCategoryColor(category.category);

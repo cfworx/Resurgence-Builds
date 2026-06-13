@@ -1,5 +1,5 @@
 ---
-title: "Season 1–3 Roadmap - What's Coming in 2026"
+title: "Division Resurgence Season 1-3 Roadmap for 2026"
 publishDate: "2026-04-28"
 author: "RapidF5"
 description: "The full Division Resurgence seasonal roadmap. Phase 3 details, PC launch in Season 2, and new story missions in Season 3."

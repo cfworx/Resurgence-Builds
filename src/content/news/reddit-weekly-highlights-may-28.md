@@ -1,5 +1,5 @@
 ---
-title: "Reddit This Week - 10 Best Posts May 28"
+title: "Division Resurgence Reddit Highlights - 10 Best Posts May 28"
 publishDate: "2026-05-28T21:00:00Z"
 author: "RapidF5"
 featuredImage: "/images/news/reddit-weekly-highlights-may-28-hero.jpg"

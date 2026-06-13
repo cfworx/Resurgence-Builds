@@ -1,5 +1,5 @@
 ---
-title: "What the Community Is Saying"
+title: "Division Resurgence Community Feedback - What Players Are Saying"
 publishDate: "2026-05-17"
 author: "RapidF5"
 featuredImage: "/images/news/community-sentiment-pc.jpg"
