@@ -47,21 +47,9 @@ const suppressAds = noAds || noindex;
   <link rel="sitemap" href="/sitemap-index.xml" />
 
 
-  <!-- Google Fonts — preload for performance -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    rel="preload"
-    as="style"
-    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400&display=swap"
-    onload="this.onload=null;this.rel='stylesheet'"
-  />
-  <noscript>
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400&display=swap"
-    />
-  </noscript>
+  <!-- Self-hosted fonts (removes cross-origin latency) -->
+  <link rel="preload" as="font" type="font/woff2" href="/fonts/inter-400.woff2" crossorigin />
+  <link rel="stylesheet" href="/fonts/fonts.css" />
 
   <SEO
     title={title}

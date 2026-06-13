@@ -139,31 +139,85 @@ const faqs = [
     </div>
   ))}
 
+  <div class="load-more-wrap" id="load-more-wrap">
+    <button class="load-more-btn" id="load-more-weapons" type="button">
+      Load More Weapons
+    </button>
+    <p class="load-more-count" id="load-more-count"></p>
+  </div>
+
   <AdSenseUnit />
 </DatabaseLayout>
 
 <script>
   const filterBar = document.getElementById('weapon-filters');
   const categories = document.querySelectorAll('.weapon-category');
+  const allCards = document.querySelectorAll('.db-card');
+  const loadMoreBtn = document.getElementById('load-more-weapons');
+  const loadMoreWrap = document.getElementById('load-more-wrap');
+  const loadMoreCount = document.getElementById('load-more-count');
+  const BATCH = 20;
+  let shown = BATCH;
+  let activeFilter = 'all';
+
+  function updateLoadMore() {
+    if (activeFilter !== 'all') {
+      // When filtering by category, show all cards in that category
+      if (loadMoreWrap) (loadMoreWrap as HTMLElement).style.display = 'none';
+      return;
+    }
+    const total = allCards.length;
+    // Hide cards beyond the shown count
+    allCards.forEach((card, i) => {
+      (card as HTMLElement).style.display = i < shown ? '' : 'none';
+    });
+    // Also hide empty category headers
+    categories.forEach(cat => {
+      const visibleCards = cat.querySelectorAll('.db-card:not([style*="display: none"])');
+      (cat as HTMLElement).style.display = visibleCards.length > 0 ? '' : 'none';
+    });
+    if (loadMoreWrap) {
+      (loadMoreWrap as HTMLElement).style.display = shown >= total ? 'none' : '';
+    }
+    if (loadMoreCount) {
+      loadMoreCount.textContent = `Showing ${Math.min(shown, total)} of ${total} weapons`;
+    }
+  }
+
+  // Initial hide
+  updateLoadMore();
+
+  loadMoreBtn?.addEventListener('click', () => {
+    shown = Math.min(shown + BATCH, allCards.length);
+    updateLoadMore();
+  });
 
   if (filterBar) {
     filterBar.addEventListener('click', (e) => {
       const btn = (e.target as HTMLElement).closest('.filter-btn');
       if (!btn) return;
 
-      const filterId = btn.getAttribute('data-filter');
+      const filterId = btn.getAttribute('data-filter') || 'all';
+      activeFilter = filterId;
 
       filterBar.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('is-active'));
       btn.classList.add('is-active');
 
-      categories.forEach(el => {
-        const cat = (el as HTMLElement).getAttribute('data-category');
-        if (filterId === 'all' || cat === filterId) {
-          (el as HTMLElement).style.display = '';
-        } else {
-          (el as HTMLElement).style.display = 'none';
-        }
-      });
+      if (filterId === 'all') {
+        // Re-apply load more pagination
+        shown = BATCH;
+        categories.forEach(el => (el as HTMLElement).style.display = '');
+        allCards.forEach(card => (card as HTMLElement).style.display = '');
+        updateLoadMore();
+      } else {
+        // Show all cards in the filtered category, hide others
+        allCards.forEach(card => (card as HTMLElement).style.display = '');
+        categories.forEach(el => {
+          const cat = (el as HTMLElement).getAttribute('data-category');
+          (el as HTMLElement).style.display = (cat === filterId) ? '' : 'none';
+        });
+        if (loadMoreWrap) (loadMoreWrap as HTMLElement).style.display = 'none';
+      }
     });
   }
 </script>
@@ -186,5 +240,38 @@ const faqs = [
     position: absolute;
     inset: 0;
     z-index: 1;
+  }
+
+  /* Load More button */
+  .load-more-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--sp-3);
+    padding: var(--sp-8) 0;
+  }
+  .load-more-btn {
+    font-family: var(--font-mono);
+    font-size: var(--text-sm);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    padding: 12px 32px;
+    background: rgba(242, 104, 34, 0.12);
+    border: 1px solid rgba(242, 104, 34, 0.4);
+    border-radius: 8px;
+    color: var(--accent);
+    cursor: pointer;
+    transition: all 200ms ease;
+  }
+  .load-more-btn:hover {
+    background: rgba(242, 104, 34, 0.22);
+    border-color: var(--accent);
+    box-shadow: 0 0 16px rgba(242, 104, 34, 0.2);
+  }
+  .load-more-count {
+    font-size: var(--text-xs);
+    color: var(--ink-muted);
+    margin: 0;
   }
 </style>

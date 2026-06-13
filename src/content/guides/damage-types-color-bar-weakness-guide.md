@@ -27,7 +27,7 @@ faqs:
     answer: "Two weapons covering two different types. The easy version: Warlord (Blast) as primary for red-bar enemies, plus any AR or LMG with Weapon Shredding Damage rolled as secondary for everything else. You can't cover all three types with two guns, but Shredding and Blast cover roughly 80% of endgame encounters. Piercing is mostly for Dark Zone Hunters, and honestly, they deserve whatever damage type they get."
 ---
 
-## The Color Bar Above Enemy Health Is Telling You The Whole Game And You're Not Reading It
+## What Does the Color Bar Above Enemy Health Mean in Division Resurgence?
 
 There is a small colored bar sitting above the health of every elite, named, and yellow-bar enemy in The Division Resurgence. It is the single most useful piece of UI in the entire game. The game does not explain what it means. Not in the tutorial. Not in the SHD manual. Not in the journal. Not in the loading screen tips that you already skip anyway.
 
@@ -43,7 +43,7 @@ This was confirmed on camera by [AgentHuntzman in his SHD Manual video](https://
 
 ---
 
-## The Bar Nobody Told You About
+## Where Is the Damage Weakness Bar and Why Did Nobody Tell You?
 
 Open the game. Walk into any open-world hostile zone. Find a yellow-bar enemy. Look above their health bar.
 
@@ -57,7 +57,7 @@ Here is the part that should be in the tutorial but isn't:
 
 ---
 
-## Color to Damage Type Table
+## What Color Matches What Damage Type?
 
 | Color Above Health Bar | Enemy is Weak To | Best Weapon Attribute | Example Weapons |
 |---|---|---|---|
@@ -73,7 +73,7 @@ A few caveats before you grab this table and sprint to your loadout screen:
 
 ---
 
-## What Each Damage Type Actually Does
+## How Do Piercing, Shredding, and Blast Damage Work in Division Resurgence?
 
 These aren't cosmetic labels. Each type routes through a different damage equation and interacts with armor differently.
 
@@ -89,7 +89,7 @@ Here is the important part:
 
 ---
 
-## How to Check Your Own Weapon's Damage Type
+## How Do You Check Your Weapon's Damage Type?
 
 Open inventory. Pick your weapon. Look at the attributes panel on the right side. One of these three lines is your damage type:
 
@@ -103,7 +103,7 @@ Most weapons roll one of the three as their primary damage attribute. Some roll 
 
 ---
 
-## The Warlord Trap (And the Lady Death Trap)
+## Why Does the Warlord Feel Weak in Some Missions?
 
 This section is going to upset the Warlord truthers. Get it over with like ripping off a bandaid.
 
@@ -119,7 +119,7 @@ Warlord is not bad. It's mismatched in roughly half the missions you'll run it i
 
 ---
 
-## Mission-by-Mission Damage Type Guide
+## Which Damage Type Should You Bring to Each Mission?
 
 Broad-stroke field guidance. Specific rosters vary, but here's what community testing documents as the dominant bar color per content type:
 
@@ -136,7 +136,7 @@ The single biggest jump in clear time you can get today, for free, with zero cra
 
 ---
 
-## Build a Dual-Gun Loadout That Covers Every Color
+## How Do You Build a Loadout That Covers Every Damage Type?
 
 You have two weapon slots. Use them.
 
@@ -161,7 +161,7 @@ Real fix: farm any AR or LMG with Weapon Shredding Damage rolled. Even a T1 shre
 
 ---
 
-## Why This Gets Harder at Endgame
+## Why Does Damage Type Matching Matter More at Endgame in Division Resurgence?
 
 In the early game, most missions lean one direction. Story Hard mode is mostly red bars. The DCD missions are mostly light blue. You can run one weapon for entire content stretches because the mix is consistent.
 

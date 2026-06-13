@@ -32,7 +32,7 @@ faqs:
     answer: "Yes. The game applies hidden aim assist adjustments that vary by weapon type, range, and whether you are in ADS or hip-fire. These adjustments are not documented in-game but significantly affect which weapons feel better at different ranges."
 ---
 
-## The 7 Hidden Mechanics The Division Resurgence Refuses To Explain (And Why Your Build Feels Weak)
+## What Are the Hidden Mechanics in Division Resurgence That the Game Never Explains?
 
 This is the long-form follow-up to every player who has ever typed "is my build broken" into Reddit at 2 AM while staring at a character sheet that makes no sense.
 
@@ -54,7 +54,7 @@ If you understand all seven, you will outscale players in better gear. Pure math
 
 ---
 
-## Mechanic 1: Your Weapon Is a Trigger Engine, Not a Damage Source
+## Why Does RPM Matter More Than Damage Per Bullet in Division Resurgence?
 
 Most players look at a weapon and rank it by damage per bullet. Higher number = better gun. End of analysis. Close the menu. Go shoot things.
 
@@ -77,7 +77,7 @@ The character screen DPS does not show any of this. It calculates one bullet at 
 
 ---
 
-## Mechanic 2: DPS Amplification Multiplies. Raw Damage Only Adds.
+## How Does DPS Amplification Work vs. Raw Damage in Division Resurgence?
 
 This is the mechanic that separates "I understand my build" from "I equipped the highest number I found on the ground."
 
@@ -101,7 +101,7 @@ The support build creates more total damage. It just doesn't show up on the supp
 
 ---
 
-## Mechanic 3: Cooldown Reduction Has a Breaking Point
+## When Should You Stop Stacking Cooldown Reduction?
 
 Cooldown Reduction (CDR) follows diminishing returns. Going from 0% to 30% CDR saves way more real seconds than going from 30% to 60%. This is because CDR is calculated as a percentage of the REMAINING cooldown, not the original cooldown.
 
@@ -117,7 +117,7 @@ The exception is skills with no duration (one-shot abilities, grenades, etc.). T
 
 ---
 
-## Mechanic 4: Pressure Angles Win Fights the Loadout Screen Cannot
+## Why Does Positioning Matter More Than Gear in Legendary?
 
 This is the mechanic that has nothing to do with gear and everything to do with why some teams clear Legendary and some teams wipe at wave 2.
 
@@ -129,7 +129,7 @@ Support builds amplify this mechanic because they reposition the fight. Smart Co
 
 ---
 
-## Mechanic 5: Stat Spreading Kills Builds. Identity Is Power.
+## Why Does Splitting Stats Ruin Your Build?
 
 You have three core stats in Resurgence: Firepower, Toughness, and Engineering. The natural instinct is to spread them evenly. A little damage, a little survivability, a little skill power. Balanced build, right?
 
@@ -145,7 +145,7 @@ A build with 1,700 Engineering and 400 Firepower will always outperform a build 
 
 ---
 
-## Mechanic 6: Recalibrating for Comfort Instead of Impact Makes Your Build Worse
+## Should You Recalibrate for Survivability or Damage?
 
 Every veteran player has done this. You keep dying in Legendary, so you recalibrate your gloves from Skill Crit Chance to Health. You feel better. You die less. But your clear times get longer, your team carries harder, and you gradually slide from "contributor" to "passenger."
 
@@ -157,7 +157,7 @@ The fix: Use your Body Armor talent for survivability (Socialite gives +36% armo
 
 ---
 
-## Mechanic 7: Power Score Is Not Build Quality
+## Is Power Score Actually Meaningful for Build Quality?
 
 This is the one that triggers the most arguments and the one that matters most for players stuck on the progression wall.
 

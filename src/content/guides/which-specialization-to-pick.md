@@ -32,7 +32,7 @@ Here's the short version. Skip to your playstyle.
 
 ---
 
-## The 30-Second Version
+## Which Specialization Is Right for You? (30-Second Version)
 
 | If you want to... | Pick this |
 |---|---|
@@ -44,7 +44,7 @@ Here's the short version. Skip to your playstyle.
 
 ---
 
-## The Five Specializations - Actually Explained
+## What Does Each Division Resurgence Specialization Actually Do?
 
 ### Vanguard - The One Everyone Picks First
 
@@ -149,7 +149,7 @@ When it works, however, nobody looks cooler.
 
 ---
 
-## The Honest Specialization Comparison
+## How Do the Five Specializations Compare in Division Resurgence?
 
 | | Vanguard | Demolitionist | Bulwark | Field Medic | Tech Operator |
 |---|---|---|---|---|---|
@@ -196,7 +196,7 @@ Tactical Pharma is a **focus of Field Medic**, not a standalone specialization. 
 
 ---
 
-## The Bottom Line
+## So Which Specialization Should You Actually Pick?
 
 Pick the spec that matches how you actually want to play , not how you think you *should* play based on a tier list written by someone with 800 hours in the game. Vanguard is the safe first pick. Bulwark is the spec you secretly wish you'd started with after your first Legendary wipe. Field Medic is the spec that keeps the group alive and gets no credit. Demolitionist is the spec for people who treat "acceptable collateral damage" as a personal challenge. Tech Operator is for the player in your group who has strong opinions about cooldown management.
 
