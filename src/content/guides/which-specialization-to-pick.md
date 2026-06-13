@@ -151,15 +151,76 @@ When it works, however, nobody looks cooler.
 
 ## How Do the Five Specializations Compare in Division Resurgence?
 
-| | Vanguard | Demolitionist | Bulwark | Field Medic | Tech Operator |
-|---|---|---|---|---|---|
-| **Role** | DPS / All-rounder | AOE DPS | Tank | Healer / Support | Skill damage / Control |
-| **Survivability** | Medium | Low-Medium | High | Medium | Low-Medium |
-| **Skill ceiling** | Medium | Medium | Low-Medium | Medium | High |
-| **Solo viability** | ✅ Excellent | ✅ Excellent | ✅ Excellent | ⚠️ Harder | ⚠️ Harder |
-| **PvP viability** | ✅ Strong | ⚠️ Situational | ✅ Strong | ⚠️ Situational | ⚠️ Situational |
-| **Carry potential** | Medium | Medium | Low | Low | Medium |
-| **Rage-quit risk** | Low | Medium (self-grenades) | Very Low | High (ingratitude) | High (drone betrayal) |
+<table>
+  <thead>
+    <tr>
+      <th scope="col"></th>
+      <th scope="col">Vanguard</th>
+      <th scope="col">Demolitionist</th>
+      <th scope="col">Bulwark</th>
+      <th scope="col">Field Medic</th>
+      <th scope="col">Tech Operator</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row"><strong>Role</strong></th>
+      <td>DPS / All-rounder</td>
+      <td>AOE DPS</td>
+      <td>Tank</td>
+      <td>Healer / Support</td>
+      <td>Skill damage / Control</td>
+    </tr>
+    <tr>
+      <th scope="row"><strong>Survivability</strong></th>
+      <td>Medium</td>
+      <td>Low-Medium</td>
+      <td>High</td>
+      <td>Medium</td>
+      <td>Low-Medium</td>
+    </tr>
+    <tr>
+      <th scope="row"><strong>Skill ceiling</strong></th>
+      <td>Medium</td>
+      <td>Medium</td>
+      <td>Low-Medium</td>
+      <td>Medium</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <th scope="row"><strong>Solo viability</strong></th>
+      <td>✅ Excellent</td>
+      <td>✅ Excellent</td>
+      <td>✅ Excellent</td>
+      <td>⚠️ Harder</td>
+      <td>⚠️ Harder</td>
+    </tr>
+    <tr>
+      <th scope="row"><strong>PvP viability</strong></th>
+      <td>✅ Strong</td>
+      <td>⚠️ Situational</td>
+      <td>✅ Strong</td>
+      <td>⚠️ Situational</td>
+      <td>⚠️ Situational</td>
+    </tr>
+    <tr>
+      <th scope="row"><strong>Carry potential</strong></th>
+      <td>Medium</td>
+      <td>Medium</td>
+      <td>Low</td>
+      <td>Low</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <th scope="row"><strong>Rage-quit risk</strong></th>
+      <td>Low</td>
+      <td>Medium (self-grenades)</td>
+      <td>Very Low</td>
+      <td>High (ingratitude)</td>
+      <td>High (drone betrayal)</td>
+    </tr>
+  </tbody>
+</table>
 
 ---
 

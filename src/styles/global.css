@@ -308,12 +308,12 @@ pre code { background: none; padding: 0; }
 }
 
 .btn--primary {
-  background: var(--accent);
+  background: var(--accent-dim);
   color: #fff;
 }
 
 .btn--primary:hover {
-  background: var(--accent-dim);
+  background: #9C3E0F;
   color: #fff;
 }
 
