@@ -297,22 +297,22 @@
     "savings": "34%"
   },
   "legendary-healer-source.png": {
-    "mtime": 1779031929664.4375,
-    "originalSize": 173501,
-    "webpSize": 22830,
-    "width": 2560,
-    "height": 1305,
+    "mtime": 1781386178825,
+    "originalSize": 270706,
+    "webpSize": 22654,
+    "width": 1920,
+    "height": 979,
     "targetWidth": 1200,
-    "savings": "87%"
+    "savings": "92%"
   },
   "map/manhattan-base.jpg": {
-    "mtime": 1780157645453,
-    "originalSize": 327780,
-    "webpSize": 56672,
-    "width": 2190,
-    "height": 1920,
+    "mtime": 1781386178859,
+    "originalSize": 233008,
+    "webpSize": 57510,
+    "width": 1920,
+    "height": 1683,
     "targetWidth": 1200,
-    "savings": "83%"
+    "savings": "75%"
   },
   "news/community-sentiment-pc.jpg": {
     "mtime": 1779934070803,
@@ -414,13 +414,13 @@
     "savings": "36%"
   },
   "patch-notes/division-resurgence-patch-1-1-2-2-vendor-bug-hero.jpg": {
-    "mtime": 1780098011466.359,
-    "originalSize": 503689,
-    "webpSize": 98466,
-    "width": 2752,
-    "height": 2064,
+    "mtime": 1781386178811,
+    "originalSize": 326156,
+    "webpSize": 98734,
+    "width": 1920,
+    "height": 1440,
     "targetWidth": 1200,
-    "savings": "80%"
+    "savings": "70%"
   },
   "patch-notes/division-resurgence-patch-1-1-2-hero.jpg": {
     "mtime": 1779934071662,
