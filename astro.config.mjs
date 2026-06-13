@@ -1,12 +1,22 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
+import fs from 'node:fs';
+import { fileURLToPath } from 'node:url';
+import path from 'node:path';
 
 import rehypeExternalLinks from 'rehype-external-links';
 import rehypeCallouts from './scripts/rehype-callouts.mjs';
 import rehypeAdsense from './scripts/rehype-adsense.mjs';
 // Static fallback date — update this whenever you do a major site update
 const SITE_LAST_UPDATED = new Date().toISOString().slice(0, 10);
+
+// Build the set of indexed tag slugs from tag-intros.json
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const tagIntros = JSON.parse(
+  fs.readFileSync(path.join(__dirname, 'src', 'data', 'tag-intros.json'), 'utf-8')
+);
+const INDEXED_TAGS = new Set(Object.keys(tagIntros));
 
 export default defineConfig({
   site: 'https://resurgencebuilds.com',
@@ -26,13 +36,21 @@ export default defineConfig({
   },
   integrations: [
     sitemap({
-      filter: (page) =>
-        !page.includes('/api/') &&
-        !page.includes('/cdn-cgi/') &&
-        !page.includes('/build-planner/') &&
-        !page.includes('/map/') &&
-        !/\/tag\/v\d/.test(page) &&
-        !page.includes('/tag/general/'),
+      filter: (page) => {
+        // Exclude known non-content paths
+        if (
+          page.includes('/api/') ||
+          page.includes('/cdn-cgi/') ||
+          page.includes('/build-planner/') ||
+          page.includes('/map/')
+        ) return false;
+
+        // For /tag/ pages, only include if the slug is in tag-intros.json
+        const tagMatch = page.match(/\/tag\/([^/]+)\/?$/);
+        if (tagMatch) return INDEXED_TAGS.has(tagMatch[1]);
+
+        return true;
+      },
       serialize(item) {
         const url = item.url;
 

@@ -34,7 +34,7 @@ const typeLabel = typeLabels[type] || type;
 
 <article class={`card post-card ${featuredImage ? 'post-card--has-image' : ''}`} data-type={type} data-tags={JSON.stringify(tags)} style="position: relative;">
     {featuredImage && (
-      <div class="post-card__image" style={`background-image: url('${featuredImage}')`}>
+      <div class="post-card__image" data-bg={featuredImage}>
         <div class="post-card__image-blur"></div>
         <img
           src={featuredImage}
@@ -196,3 +196,20 @@ const typeLabel = typeLabels[type] || type;
     text-decoration: underline;
   }
 </style>
+
+<script>
+  // Lazy-load background images used for the blur effect
+  const bgEls = document.querySelectorAll<HTMLElement>('.post-card__image[data-bg]');
+  if (bgEls.length && 'IntersectionObserver' in window) {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const el = entry.target as HTMLElement;
+          el.style.backgroundImage = `url('${el.dataset.bg}')`;
+          io.unobserve(el);
+        }
+      });
+    }, { rootMargin: '200px' });
+    bgEls.forEach((el) => io.observe(el));
+  }
+</script>

@@ -30,7 +30,7 @@ const getSpecClass = (spec: string) => {
 <article class={`card ${featuredImage ? 'card--has-image' : ''}`} style="position: relative;">
 
     {featuredImage && (
-      <div class="build-card__image" style={`background-image: url('${featuredImage}')`}>
+      <div class="build-card__image" data-bg={featuredImage}>
         <div class="build-card__image-blur"></div>
         <img
           src={featuredImage}
@@ -132,3 +132,20 @@ const getSpecClass = (spec: string) => {
     z-index: 1;
   }
 </style>
+
+<script>
+  // Lazy-load background images used for the blur effect
+  const buildBgEls = document.querySelectorAll<HTMLElement>('.build-card__image[data-bg]');
+  if (buildBgEls.length && 'IntersectionObserver' in window) {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const el = entry.target as HTMLElement;
+          el.style.backgroundImage = `url('${el.dataset.bg}')`;
+          io.unobserve(el);
+        }
+      });
+    }, { rootMargin: '200px' });
+    buildBgEls.forEach((el) => io.observe(el));
+  }
+</script>

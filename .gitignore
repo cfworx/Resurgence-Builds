@@ -30,3 +30,11 @@ seo_knowledge/
 future_builds/
 images_to_grab/
 scratch_*.txt
+
+# loose utility / one-time scripts (keep local, don't track)
+fix.cjs
+fix2.cjs
+compress-talents.cjs
+optimize_images.cjs
+resize.ps1
+public/fonts/download-fonts.mjs
