@@ -48,3 +48,11 @@
 
 /ads.txt
   Cache-Control: public, max-age=86400
+
+# =============================================================================
+# HTML Page Caching — short cache + stale-while-revalidate for fast edge delivery
+# =============================================================================
+/*.html
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+/
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400

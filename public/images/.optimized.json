@@ -1,0 +1,479 @@
+{
+  "404-mj.png": {
+    "mtime": 1779934067449,
+    "originalSize": 634699,
+    "webpSize": 152810,
+    "width": 1024,
+    "height": 1024,
+    "targetWidth": 800,
+    "savings": "76%"
+  },
+  "april-dev-stream.jpg": {
+    "mtime": 1779052878317.9182,
+    "originalSize": 121409,
+    "webpSize": 47972,
+    "width": 1024,
+    "height": 571,
+    "targetWidth": 1024,
+    "savings": "60%"
+  },
+  "best-pve-dps-builds-division-resurgence.png": {
+    "mtime": 1779934067720,
+    "originalSize": 728536,
+    "webpSize": 173286,
+    "width": 1024,
+    "height": 1024,
+    "targetWidth": 1024,
+    "savings": "76%"
+  },
+  "build-planner-og.png": {
+    "mtime": 1780169520083.3062,
+    "originalSize": 510275,
+    "webpSize": 33436,
+    "width": 1200,
+    "height": 630,
+    "targetWidth": 1200,
+    "savings": "93%"
+  },
+  "builder-bg.png": {
+    "mtime": 1780168692016.0913,
+    "originalSize": 594146,
+    "webpSize": 59598,
+    "width": 1024,
+    "height": 1024,
+    "targetWidth": 1200,
+    "savings": "90%"
+  },
+  "builds/bulwark-breacher-build-saiynergy-hero.jpg": {
+    "mtime": 1780153579595,
+    "originalSize": 83075,
+    "webpSize": 51916,
+    "width": 1200,
+    "height": 549,
+    "targetWidth": 1200,
+    "savings": "38%"
+  },
+  "builds/milkshake-machine-hero.jpg": {
+    "mtime": 1780103081680.7625,
+    "originalSize": 125507,
+    "webpSize": 94010,
+    "width": 1200,
+    "height": 634,
+    "targetWidth": 1200,
+    "savings": "25%"
+  },
+  "builds/tech-aegis-engineering-build-tampishach-hero.jpg": {
+    "mtime": 1780155084984,
+    "originalSize": 81906,
+    "webpSize": 56026,
+    "width": 1200,
+    "height": 574,
+    "targetWidth": 1200,
+    "savings": "32%"
+  },
+  "cover-shooter-sniper.png": {
+    "mtime": 1779934068175,
+    "originalSize": 672928,
+    "webpSize": 151228,
+    "width": 1024,
+    "height": 1024,
+    "targetWidth": 1024,
+    "savings": "78%"
+  },
+  "division-resurgence-best-dark-zone-pvp-builds.jpg": {
+    "mtime": 1779934068284,
+    "originalSize": 122607,
+    "webpSize": 89326,
+    "width": 1200,
+    "height": 655,
+    "targetWidth": 1200,
+    "savings": "27%"
+  },
+  "division-resurgence-best-pve-dps-builds.jpg": {
+    "mtime": 1779934068350,
+    "originalSize": 84820,
+    "webpSize": 56392,
+    "width": 1200,
+    "height": 670,
+    "targetWidth": 1200,
+    "savings": "34%"
+  },
+  "division-resurgence-best-starter-builds.jpg": {
+    "mtime": 1779934068428,
+    "originalSize": 127489,
+    "webpSize": 97058,
+    "width": 1200,
+    "height": 670,
+    "targetWidth": 1200,
+    "savings": "24%"
+  },
+  "division-resurgence-center-ads-cover-peek-guide-hero.png": {
+    "mtime": 1779923125671.963,
+    "originalSize": 73642,
+    "webpSize": 23592,
+    "width": 1200,
+    "height": 630,
+    "targetWidth": 1200,
+    "savings": "68%"
+  },
+  "division-resurgence-center-ads-cover-peek.jpg": {
+    "mtime": 1779934068496,
+    "originalSize": 106292,
+    "webpSize": 74606,
+    "width": 1200,
+    "height": 634,
+    "targetWidth": 1200,
+    "savings": "30%"
+  },
+  "division-resurgence-damage-types-color-bar.png": {
+    "mtime": 1779934068750,
+    "originalSize": 252463,
+    "webpSize": 56294,
+    "width": 1200,
+    "height": 486,
+    "targetWidth": 1200,
+    "savings": "78%"
+  },
+  "division-resurgence-field-medic-geneva-suggestion-chemical-trap-build.png": {
+    "mtime": 1779934068844,
+    "originalSize": 237277,
+    "webpSize": 75254,
+    "width": 1200,
+    "height": 630,
+    "targetWidth": 1200,
+    "savings": "68%"
+  },
+  "division-resurgence-hidden-mechanics-guide.jpg": {
+    "mtime": 1779934068923,
+    "originalSize": 70021,
+    "webpSize": 48032,
+    "width": 1200,
+    "height": 634,
+    "targetWidth": 1200,
+    "savings": "31%"
+  },
+  "division-resurgence-hidden-mechanics.png": {
+    "mtime": 1779934069281,
+    "originalSize": 695237,
+    "webpSize": 156026,
+    "width": 1024,
+    "height": 1024,
+    "targetWidth": 1024,
+    "savings": "78%"
+  },
+  "division-resurgence-interactive-map-og.png": {
+    "mtime": 1780167463431.8103,
+    "originalSize": 909313,
+    "webpSize": 176040,
+    "width": 1024,
+    "height": 1024,
+    "targetWidth": 1200,
+    "savings": "81%"
+  },
+  "division-resurgence-panda-oxidizing-swarm-build.jpg": {
+    "mtime": 1779934069386,
+    "originalSize": 109320,
+    "webpSize": 78444,
+    "width": 1200,
+    "height": 655,
+    "targetWidth": 1200,
+    "savings": "28%"
+  },
+  "division-resurgence-shd-manual-progression-guide.png": {
+    "mtime": 1779934070264,
+    "originalSize": 474309,
+    "webpSize": 129800,
+    "width": 1200,
+    "height": 655,
+    "targetWidth": 1200,
+    "savings": "73%"
+  },
+  "division-resurgence-tactical-pharma-800k-dps-field-medic-build.png": {
+    "mtime": 1779934070354,
+    "originalSize": 270458,
+    "webpSize": 86350,
+    "width": 1200,
+    "height": 630,
+    "targetWidth": 1200,
+    "savings": "68%"
+  },
+  "division-resurgence-tech-op-disorient-express-build.jpg": {
+    "mtime": 1779934070487,
+    "originalSize": 198768,
+    "webpSize": 167986,
+    "width": 1200,
+    "height": 655,
+    "targetWidth": 1200,
+    "savings": "15%"
+  },
+  "division-resurgence-vanguard-scout-build.png": {
+    "mtime": 1779934070656,
+    "originalSize": 207446,
+    "webpSize": 57250,
+    "width": 1200,
+    "height": 569,
+    "targetWidth": 1200,
+    "savings": "72%"
+  },
+  "division-resurgence-which-specialization-to-pick-guide.jpg": {
+    "mtime": 1779934070737,
+    "originalSize": 96335,
+    "webpSize": 72288,
+    "width": 1200,
+    "height": 634,
+    "targetWidth": 1200,
+    "savings": "25%"
+  },
+  "guides/division-resurgence-codes-redeem-guide-hero.jpg": {
+    "mtime": 1780020819041,
+    "originalSize": 77398,
+    "webpSize": 51112,
+    "width": 1200,
+    "height": 630,
+    "targetWidth": 1200,
+    "savings": "34%"
+  },
+  "guides/division-resurgence-device-compatibility-guide-hero.jpg": {
+    "mtime": 1780021787926,
+    "originalSize": 79721,
+    "webpSize": 52896,
+    "width": 1200,
+    "height": 630,
+    "targetWidth": 1200,
+    "savings": "34%"
+  },
+  "guides/division-resurgence-error-271581191-fix-guide-hero.jpg": {
+    "mtime": 1780148392273,
+    "originalSize": 109626,
+    "webpSize": 75540,
+    "width": 1200,
+    "height": 634,
+    "targetWidth": 1200,
+    "savings": "31%"
+  },
+  "guides/division-resurgence-error-6000010-fix-guide-hero.jpg": {
+    "mtime": 1780148928697,
+    "originalSize": 101695,
+    "webpSize": 80028,
+    "width": 1200,
+    "height": 634,
+    "targetWidth": 1200,
+    "savings": "21%"
+  },
+  "guides/division-resurgence-error-codes-fix-guide-hero.jpg": {
+    "mtime": 1780021328296,
+    "originalSize": 74737,
+    "webpSize": 48476,
+    "width": 1200,
+    "height": 630,
+    "targetWidth": 1200,
+    "savings": "35%"
+  },
+  "guides/division-resurgence-pc-emulator-comparison-hero.jpg": {
+    "mtime": 1780024003715,
+    "originalSize": 70865,
+    "webpSize": 45132,
+    "width": 1200,
+    "height": 630,
+    "targetWidth": 1200,
+    "savings": "36%"
+  },
+  "guides/division-resurgence-safe-codes-encrypted-crates-hero.jpg": {
+    "mtime": 1780023273451,
+    "originalSize": 79432,
+    "webpSize": 56016,
+    "width": 1200,
+    "height": 630,
+    "targetWidth": 1200,
+    "savings": "29%"
+  },
+  "legendary-healer-field-medic-og.jpg": {
+    "mtime": 1779036390140,
+    "originalSize": 118405,
+    "webpSize": 77762,
+    "width": 1200,
+    "height": 630,
+    "targetWidth": 1200,
+    "savings": "34%"
+  },
+  "legendary-healer-source.png": {
+    "mtime": 1779031929664.4375,
+    "originalSize": 173501,
+    "webpSize": 22830,
+    "width": 2560,
+    "height": 1305,
+    "targetWidth": 1200,
+    "savings": "87%"
+  },
+  "map/manhattan-base.jpg": {
+    "mtime": 1780157645453,
+    "originalSize": 327780,
+    "webpSize": 56672,
+    "width": 2190,
+    "height": 1920,
+    "targetWidth": 1200,
+    "savings": "83%"
+  },
+  "news/community-sentiment-pc.jpg": {
+    "mtime": 1779934070803,
+    "originalSize": 125097,
+    "webpSize": 91030,
+    "width": 1200,
+    "height": 649,
+    "targetWidth": 1200,
+    "savings": "27%"
+  },
+  "news/division-resurgence-asian-server-maintenance-may-26-2026.jpg": {
+    "mtime": 1779934070878,
+    "originalSize": 76237,
+    "webpSize": 46190,
+    "width": 1200,
+    "height": 675,
+    "targetWidth": 1200,
+    "savings": "39%"
+  },
+  "news/division-resurgence-reddit-weekly-highlights-may-18.jpg": {
+    "mtime": 1779934071101,
+    "originalSize": 103153,
+    "webpSize": 61494,
+    "width": 1200,
+    "height": 1191,
+    "targetWidth": 1200,
+    "savings": "40%"
+  },
+  "news/division-resurgence-season-1-2-3-roadmap-hero.jpg": {
+    "mtime": 1779934071181,
+    "originalSize": 126320,
+    "webpSize": 97728,
+    "width": 1200,
+    "height": 634,
+    "targetWidth": 1200,
+    "savings": "23%"
+  },
+  "news/inventory-wipe-bug-fixed.jpg": {
+    "mtime": 1779934071249,
+    "originalSize": 112090,
+    "webpSize": 79038,
+    "width": 1200,
+    "height": 634,
+    "targetWidth": 1200,
+    "savings": "29%"
+  },
+  "news/reddit-weekly-highlights-may-28-hero.jpg": {
+    "mtime": 1780024364966,
+    "originalSize": 71331,
+    "webpSize": 44760,
+    "width": 1200,
+    "height": 630,
+    "targetWidth": 1200,
+    "savings": "37%"
+  },
+  "patch-1-1-1.jpg": {
+    "mtime": 1779052962708.6897,
+    "originalSize": 162130,
+    "webpSize": 72700,
+    "width": 1024,
+    "height": 558,
+    "targetWidth": 1024,
+    "savings": "55%"
+  },
+  "patch-1-1-2.jpg": {
+    "mtime": 1779052748107.4504,
+    "originalSize": 149764,
+    "webpSize": 65078,
+    "width": 1024,
+    "height": 558,
+    "targetWidth": 1024,
+    "savings": "57%"
+  },
+  "patch-notes/discord-ubiticksy-gm-confirm.jpg": {
+    "mtime": 1780099242476.5012,
+    "originalSize": 62951,
+    "webpSize": 37742,
+    "width": 1271,
+    "height": 557,
+    "targetWidth": 1200,
+    "savings": "40%"
+  },
+  "patch-notes/discord-ubiticksy-gm-easy-mistake.jpg": {
+    "mtime": 1780099242540.0676,
+    "originalSize": 48897,
+    "webpSize": 29826,
+    "width": 1272,
+    "height": 453,
+    "targetWidth": 1200,
+    "savings": "39%"
+  },
+  "patch-notes/division-resurgence-patch-1-1-2-2-gm-bug-hero.jpg": {
+    "mtime": 1780098384103.988,
+    "originalSize": 91462,
+    "webpSize": 58748,
+    "width": 1200,
+    "height": 634,
+    "targetWidth": 1200,
+    "savings": "36%"
+  },
+  "patch-notes/division-resurgence-patch-1-1-2-2-vendor-bug-hero.jpg": {
+    "mtime": 1780098011466.359,
+    "originalSize": 503689,
+    "webpSize": 98466,
+    "width": 2752,
+    "height": 2064,
+    "targetWidth": 1200,
+    "savings": "80%"
+  },
+  "patch-notes/division-resurgence-patch-1-1-2-hero.jpg": {
+    "mtime": 1779934071662,
+    "originalSize": 41996,
+    "webpSize": 22310,
+    "width": 1200,
+    "height": 634,
+    "targetWidth": 1200,
+    "savings": "47%"
+  },
+  "pc-early-access.jpg": {
+    "mtime": 1779052540870.5918,
+    "originalSize": 130699,
+    "webpSize": 52260,
+    "width": 1024,
+    "height": 558,
+    "targetWidth": 1024,
+    "savings": "60%"
+  },
+  "resurgence-builds-official-logo.png": {
+    "mtime": 1779934072152,
+    "originalSize": 559117,
+    "webpSize": 45214,
+    "width": 1024,
+    "height": 1024,
+    "targetWidth": 512,
+    "savings": "92%"
+  },
+  "resurgence-youtube-banner.png": {
+    "mtime": 1779934072556,
+    "originalSize": 523107,
+    "webpSize": 116806,
+    "width": 1200,
+    "height": 675,
+    "targetWidth": 1200,
+    "savings": "78%"
+  },
+  "season-roadmap.jpg": {
+    "mtime": 1779052680553.9778,
+    "originalSize": 179598,
+    "webpSize": 85276,
+    "width": 1024,
+    "height": 558,
+    "targetWidth": 1024,
+    "savings": "53%"
+  },
+  "workbench-bg.png": {
+    "mtime": 1780168865342.7864,
+    "originalSize": 934550,
+    "webpSize": 181306,
+    "width": 1024,
+    "height": 1024,
+    "targetWidth": 1200,
+    "savings": "81%"
+  }
+}

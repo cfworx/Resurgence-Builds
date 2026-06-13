@@ -11,7 +11,7 @@
   --surface-2: #1F1F22;
   --border: #2A2A2D;
   --ink: #C8C5BE;
-  --ink-muted: #8A8A8E;
+  --ink-muted: #A0A0A4;
   --ink-heading: #DAD8D2;
   --accent: #F26822;
   --accent-dim: #C04E14;
@@ -968,6 +968,12 @@ tbody tr:hover {
   height: auto;
 }
 
+/* Prevent CLS for images inside markdown/content bodies */
+.build-body img, .news-body img, .guide-body img, article img {
+  max-width: 100%;
+  height: auto;
+}
+
 /* --- Prose Tables (elevated card style) --- */
 .prose table {
   background: var(--surface);
@@ -1013,6 +1019,43 @@ tbody tr:hover {
 .prose em {
   color: rgba(242, 104, 34, 0.8);
   font-style: italic;
+}
+
+/* --- A6: Prose inline-link underlines (link-in-text-block) --- */
+/* Links inside article/prose content must be distinguishable by more than color */
+.prose a,
+article.build-article a,
+.faq-answer a {
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 255, 255, 0.3);
+  text-underline-offset: 2px;
+}
+.prose a:hover,
+article.build-article a:hover,
+.faq-answer a:hover {
+  text-decoration-color: var(--accent);
+}
+/* Exclude nav/toc/breadcrumb/button/card-overlay links from underline */
+.toc a,
+.breadcrumbs a,
+.btn,
+.btn--primary,
+.btn--outline,
+.db-card-full-link,
+.exotic-card-link,
+.explore-more a,
+.tag {
+  text-decoration: none;
+}
+
+/* --- A7: Markdown table header scope reinforcement --- */
+/* Astro renders markdown table first-row as <th>; these styles ensure
+   they are visually distinct as column headers.  Adding scope="col" via
+   a rehype plugin is recommended for full programmatic compliance but
+   is tracked separately (rehype-table-scope). */
+.prose th {
+  text-align: left;
+  font-weight: 700;
 }
 
 /* --- Two-column Layout --- */

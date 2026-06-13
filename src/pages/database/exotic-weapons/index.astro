@@ -60,7 +60,7 @@ const itemListLd = {
     <div class="db-grid" id="exotics-grid">
       {exoticWeapons.map((weapon) => (
         <article class="db-card exotic-card">
-          <a href={`/database/exotic-weapons/${slugify(weapon.name)}/`} class="exotic-card-link">
+          <a href={`/database/exotic-weapons/${slugify(weapon.name)}/`} class="exotic-card-link" aria-label={`${weapon.name} — View exotic weapon details`}>
             <div class="db-card__header">
               <div>
                 <h2 class="db-card__title">{weapon.name}</h2>

@@ -15,7 +15,7 @@ const clientID = "ca-pub-5813932024666862";
 const { slotId = "8102223000", className = '', format = 'horizontal' } = Astro.props;
 ---
 
-<div class={`ad-slot ${className}`} aria-label="Advertisement">
+<div class={`ad-slot ${className}`} role="complementary" aria-label="Advertisement">
   {ADSENSE_ENABLED ? (
     <>
       <ins class="adsbygoogle"

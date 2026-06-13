@@ -11,44 +11,65 @@
 
 <script is:inline>
   (function() {
-    var d = document, s = d.createElement('script');
-    s.src = 'https://giscus.app/client.js';
-    s.setAttribute('data-repo', 'cfworx/Resurgence-Builds');
-    s.setAttribute('data-repo-id', 'R_kgDOSgFl1w');
-    s.setAttribute('data-category', 'General');
-    s.setAttribute('data-category-id', 'DIC_kwDOSgFl184C-FVH');
-    s.setAttribute('data-mapping', 'pathname');
-    s.setAttribute('data-strict', '0');
-    s.setAttribute('data-reactions-enabled', '0');
-    s.setAttribute('data-emit-metadata', '0');
-    s.setAttribute('data-input-position', 'top');
-    s.setAttribute('data-theme', 'dark');
-    s.setAttribute('data-lang', 'en');
-    s.setAttribute('data-loading', 'lazy');
-    s.setAttribute('crossorigin', 'anonymous');
-    s.async = true;
-    var target = d.querySelector('.giscus');
-    if (target) target.appendChild(s);
+    try {
+      var d = document;
+      var container = d.getElementById('giscus-comments');
+      if (!container) return;
 
-    // Reposition: move comments above "Related Reading" or "Sources" if they exist in the markdown
-    var wrapper = d.getElementById('giscus-comments');
-    if (wrapper) {
-      var prose = wrapper.closest('.prose') || wrapper.parentElement;
+      // Reposition: move comments above "Related Reading" or "Sources" if they exist in the markdown
+      var prose = container.closest('.prose') || container.parentElement;
       if (prose) {
         var headings = prose.querySelectorAll('h2, h3, p > strong');
         for (var i = 0; i < headings.length; i++) {
           var txt = headings[i].textContent.trim().toLowerCase();
           if (txt === 'related reading:' || txt === 'related reading' || txt === 'sources:' || txt === 'sources') {
-            // Find the parent element to insert before
             var anchor = headings[i].tagName === 'STRONG' ? headings[i].closest('p') : headings[i];
-            // Also grab the <hr> above if present
             var prev = anchor.previousElementSibling;
             if (prev && prev.tagName === 'HR') anchor = prev;
-            anchor.parentNode.insertBefore(wrapper, anchor);
+            anchor.parentNode.insertBefore(container, anchor);
             break;
           }
         }
       }
+
+      // Lazy-load Giscus only when the comments section scrolls into view
+      function loadGiscus() {
+        var s = d.createElement('script');
+        s.src = 'https://giscus.app/client.js';
+        s.setAttribute('data-repo', 'cfworx/Resurgence-Builds');
+        s.setAttribute('data-repo-id', 'R_kgDOSgFl1w');
+        s.setAttribute('data-category', 'General');
+        s.setAttribute('data-category-id', 'DIC_kwDOSgFl184C-FVH');
+        s.setAttribute('data-mapping', 'pathname');
+        s.setAttribute('data-strict', '0');
+        s.setAttribute('data-reactions-enabled', '0');
+        s.setAttribute('data-emit-metadata', '0');
+        s.setAttribute('data-input-position', 'top');
+        s.setAttribute('data-theme', 'dark');
+        s.setAttribute('data-lang', 'en');
+        s.setAttribute('data-loading', 'lazy');
+        s.setAttribute('crossorigin', 'anonymous');
+        s.async = true;
+        var target = d.querySelector('.giscus');
+        if (target) target.appendChild(s);
+      }
+
+      if ('IntersectionObserver' in window) {
+        var observer = new IntersectionObserver(function(entries) {
+          entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+              loadGiscus();
+              observer.disconnect();
+            }
+          });
+        }, { rootMargin: '200px' });
+        observer.observe(container);
+      } else {
+        // Fallback for browsers without IntersectionObserver
+        loadGiscus();
+      }
+    } catch (e) {
+      console.warn('Giscus comments failed to initialize:', e);
     }
   })();
 </script>

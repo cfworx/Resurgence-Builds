@@ -69,6 +69,9 @@ const speakableLd = {
   faqs={faqs}
   jsonLd={speakableLd}
 >
+  {image && (
+    <link rel="preload" as="image" href={image} fetchpriority="high" slot="head" />
+  )}
   <div class="container section">
     <Breadcrumbs items={breadcrumbItems} />
 
@@ -83,7 +86,7 @@ const speakableLd = {
       </div>
 
       {image && (
-        <img src={image} alt={imageAlt || title} width="1200" height="630" style="width: 100%; height: auto; margin-top: var(--sp-4); margin-bottom: var(--sp-6); border-radius: 4px;" loading="eager" fetchpriority="high" decoding="sync" />
+        <img src={image} alt={imageAlt || title} width="1200" height="630" style="aspect-ratio:1200/630; width: 100%; height: auto; margin-top: var(--sp-4); margin-bottom: var(--sp-6); border-radius: 4px;" loading="eager" fetchpriority="high" decoding="async" />
       )}
 
       {tocItems.length > 0 && (

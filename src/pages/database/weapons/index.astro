@@ -51,7 +51,7 @@ const faqs = [
       <div class="db-grid">
         {exoticWeapons.map((w: any) => (
             <article class="db-card exotic-card">
-              <a href={`/database/exotic-weapons/${w.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')}/`} class="db-card-full-link"></a>
+              <a href={`/database/exotic-weapons/${w.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')}/`} class="db-card-full-link" aria-label={`${w.name} — View exotic weapon details`}></a>
               {w.image && (
                 <div class="db-card__image-banner">
                   <img src={w.image} alt={`${w.name} Exotic ${w.type} in Division Resurgence`} width="400" height="120" loading="lazy" decoding="async" />
@@ -98,7 +98,7 @@ const faqs = [
       <div class="db-grid">
         {standardWeapons.filter((w: any) => w.type === type).map((w: any) => (
             <article class="db-card">
-              <a href={`/database/weapons/${w.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')}/`} class="db-card-full-link"></a>
+              <a href={`/database/weapons/${w.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')}/`} class="db-card-full-link" aria-label={`${w.name} — View weapon details`}></a>
               {w.image && (
                 <div class="db-card__image-banner">
                   <img src={w.image} alt={`${w.name} ${w.type} in Division Resurgence`} width="400" height="120" loading="lazy" decoding="async" />

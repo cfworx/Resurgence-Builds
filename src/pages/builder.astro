@@ -93,7 +93,7 @@ const dataPayload = JSON.stringify({ gearSets, weaponTalents, exoticWeapons, sta
       <div class="quad" style="margin-bottom: 24px; border: 1px dashed var(--accent); background: rgba(0,0,0,0.15);">
         <h2 class="quad__heading" style="color: var(--accent); margin-bottom: 8px;">:: Build Templates (Starting Point)</h2>
         <div style="padding: var(--sp-3); display: flex; flex-direction: column; gap: var(--sp-2);">
-          <select class="slot-select" id="select-template" style="width: 100%; border: 1px solid var(--border); font-family: inherit; font-size: 0.95em; cursor: pointer;">
+          <select class="slot-select" id="select-template" aria-label="Select a build template" style="width: 100%; border: 1px solid var(--border); font-family: inherit; font-size: 0.95em; cursor: pointer;">
             <option value="">— Select a Verified Build Template to Populate the Planner —</option>
             {templates.map(t => (
               <option value={t.hash}>[{t.spec}] {t.title}</option>
@@ -116,7 +116,7 @@ const dataPayload = JSON.stringify({ gearSets, weaponTalents, exoticWeapons, sta
             <div class="quad__sub">
               <div class="sub-card">
                 <span class="sub-card__label">Specialization Focus</span>
-                <select class="slot-select" id="select-subclass">
+                <select class="slot-select" id="select-subclass" aria-label="Select specialization focus">
                   <option value="">— Choose spec first —</option>
                 </select>
               </div>
@@ -133,7 +133,7 @@ const dataPayload = JSON.stringify({ gearSets, weaponTalents, exoticWeapons, sta
                 <span class="slot-card__badge" id="badge-os"></span>
               </div>
               <div class="slot-card__body">
-                <select class="slot-select" id="select-os">
+                <select class="slot-select" id="select-os" aria-label="Select OS protocol">
                   <option value="">— Choose spec first —</option>
                 </select>
                 <div class="os-detail" id="os-detail"></div>
@@ -146,19 +146,19 @@ const dataPayload = JSON.stringify({ gearSets, weaponTalents, exoticWeapons, sta
               </div>
               <div class="slot-card__body" style="display:flex; flex-direction:column; gap: var(--sp-2);">
                 <div>
-                  <select class="slot-select" id="select-smc1">
+                  <select class="slot-select" id="select-smc1" aria-label="Select skill mod 1">
                     <option value="">— Choose spec first —</option>
                   </select>
                   <div class="smc-detail" id="smc-detail-1"></div>
                 </div>
                 <div>
-                  <select class="slot-select" id="select-smc2">
+                  <select class="slot-select" id="select-smc2" aria-label="Select skill mod 2">
                     <option value="">— Choose spec first —</option>
                   </select>
                   <div class="smc-detail" id="smc-detail-2"></div>
                 </div>
                 <div>
-                  <select class="slot-select" id="select-smc3">
+                  <select class="slot-select" id="select-smc3" aria-label="Select skill mod 3">
                     <option value="">— Choose spec first —</option>
                   </select>
                   <div class="smc-detail" id="smc-detail-3"></div>
@@ -329,13 +329,13 @@ const dataPayload = JSON.stringify({ gearSets, weaponTalents, exoticWeapons, sta
       <div class="summary-header">
         <h2 class="summary-title">Build Summary</h2>
         <div class="summary-actions-top">
-          <button class="btn-icon" id="btn-copy" type="button" title="Copy Build Link">🔗</button>
-          <button class="btn-icon btn-icon--danger" id="btn-reset" type="button" title="Reset Build">↺</button>
+          <button class="btn-icon" id="btn-copy" type="button" title="Copy Build Link" aria-label="Copy build link">🔗</button>
+          <button class="btn-icon btn-icon--danger" id="btn-reset" type="button" title="Reset Build" aria-label="Reset build">↺</button>
         </div>
       </div>
 
       <div class="summary-name-section">
-        <input type="text" id="input-build-name" class="summary-name-input" placeholder="Name your build..." />
+        <input type="text" id="input-build-name" class="summary-name-input" placeholder="Name your build..." aria-label="Build name" />
       </div>
 
       <!-- Build Quality Indicator -->
