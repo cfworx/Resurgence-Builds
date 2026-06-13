@@ -11,7 +11,7 @@ const allBuilds = await getCollection('builds');
 function assignTier(build) {
   const text = (build.data.title + ' ' + build.data.description + ' ' + (build.data.tags||[]).join(' ')).toLowerCase();
   
-  if (text.includes('roguemadras') || text.includes('tactical pharma') || text.includes('jackpot striker drone')) return 'S';
+  if (text.includes('roguemadras') || text.includes('tactical pharma') || text.includes('jackpot striker drone') || text.includes('sweet lullaby') || text.includes('nadie')) return 'S';
   if (text.includes('saiynergy') || text.includes('breacher')) return 'A';
   if (text.includes('tampishach') || text.includes('tech aegis')) return 'B';
   if (text.includes('milkshake') || text.includes('strawberry')) return 'B';
