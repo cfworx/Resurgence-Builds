@@ -1387,7 +1387,24 @@ article.build-article a:hover,
   background: #4752c4;
   transform: translateY(-1px);
 }
+.disclaimer-banner__actions {
+  display: flex;
+  gap: var(--sp-2);
+  flex-shrink: 0;
+  align-items: center;
+}
+.disclaimer-banner__btn--coffee {
+  background: #D4920B;
+  color: #fff;
+}
+.disclaimer-banner__btn--coffee:hover {
+  background: #B87A08;
+}
 @media (max-width: 767px) {
+  .disclaimer-banner__actions {
+    width: 100%;
+    flex-direction: column;
+  }
   .disclaimer-banner__btn {
     width: 100%;
     justify-content: center;

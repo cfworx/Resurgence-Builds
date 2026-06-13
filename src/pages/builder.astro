@@ -30,11 +30,10 @@ const breadcrumbs = [
 ];
 const faqs = [
   { question: "Why is this build planner faster than standard Ubisoft game servers?", answer: "Because we host it on a single potato running in a basement and even that has better uptime than Ubi's multi-million dollar infrastructure. While you wait for your next Delta-03 connection error to clear in Conflict, you can plan your gear sets and weapon talents here without getting booted back to the title screen." },
-  { question: "Will my parents ever love me?", answer: "Unlikely. But at least you can min-max your Division Resurgence builds here to make up for the crushing void of validation in your personal life." },
   { question: "Will this Division Resurgence loadout tool guarantee I win in the Dark Zone?", answer: "No. If you have the spatial awareness of a concussed pigeon, panic-sprint directly into a brick wall while trying to reload, or throw a grenade only to have it bounce off cover right back at your feet, no loadout can save you. The tool optimizes the math, but it can't fix terminal brain-lag." },
   { question: "Why does the verified database contain exactly 69 weapon talents?", answer: "Nice. Also, because that's the exact number of verified weapon talents in the game. If you want us to add a 70th talent just to ruin the joke, write a complaint letter to Ubisoft and see if they answer it before the next decade." }
 ];
-const genuineFaqs = faqs.filter(f => f.question !== "Will my parents ever love me?");
+const genuineFaqs = faqs;
 const jsonLd = {
   '@type': 'WebApplication',
   '@id': 'https://resurgencebuilds.com/builder/#app',
