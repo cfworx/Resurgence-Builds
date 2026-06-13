@@ -11,7 +11,7 @@
   --surface-2: #1F1F22;
   --border: #2A2A2D;
   --ink: #C8C5BE;
-  --ink-muted: #A0A0A4;
+  --ink-muted: #B0B0B4;
   --ink-heading: #DAD8D2;
   --accent: #F26822;
   --accent-dim: #C04E14;
@@ -1017,7 +1017,7 @@ tbody tr:hover {
 
 /* --- Prose emphasis/italic (talent descriptions) --- */
 .prose em {
-  color: rgba(242, 104, 34, 0.8);
+  color: #F28C50;
   font-style: italic;
 }
 
@@ -1394,11 +1394,11 @@ article.build-article a:hover,
   align-items: center;
 }
 .disclaimer-banner__btn--coffee {
-  background: #D4920B;
-  color: #fff;
+  background: #FFDD00;
+  color: #1A1A1A;
 }
 .disclaimer-banner__btn--coffee:hover {
-  background: #B87A08;
+  background: #E6C700;
 }
 @media (max-width: 767px) {
   .disclaimer-banner__actions {
