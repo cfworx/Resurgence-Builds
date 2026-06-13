@@ -8,6 +8,7 @@ import path from 'node:path';
 import rehypeExternalLinks from 'rehype-external-links';
 import rehypeCallouts from './scripts/rehype-callouts.mjs';
 import rehypeAdsense from './scripts/rehype-adsense.mjs';
+import rehypeTableA11y from './scripts/rehype-table-a11y.mjs';
 // Static fallback date — update this whenever you do a major site update
 const SITE_LAST_UPDATED = new Date().toISOString().slice(0, 10);
 
@@ -146,7 +147,8 @@ export default defineConfig({
     rehypePlugins: [
       [rehypeExternalLinks, { target: '_blank', rel: ['noopener', 'noreferrer'] }],
       rehypeCallouts,
-      rehypeAdsense
+      rehypeAdsense,
+      rehypeTableA11y
     ]
   },
 });
