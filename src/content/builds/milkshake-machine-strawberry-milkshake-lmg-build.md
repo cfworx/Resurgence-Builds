@@ -34,7 +34,7 @@ faqs:
     answer: "Not for this build. Every piece of The Milkshake Machine drops from in-game content. Strawberry Milkshake is the only exotic gate, and exotics are farmable. The build scales through gear rolls and skill mod combo sets, not premium currency."
 ---
 
-**By RapidF5 Â·** Patch 1.1.2.2 Â·
+**By RapidF5 ·** Patch 1.1.2.2 ·
 
 > 118 rounds. ~37% Multi-Shot. In Sync double-dip from bullet one. Glass Cannon justified by Swift Taunt. Dominating Presence rewarding you for standing in the worst possible spot. We call it **The Milkshake Machine** because it shreds enemies the way a blender shreds ice - and because naming a build "Strawberry Milkshake Optimal" has the same energy as naming your fantasy football team "Team 1."
 

@@ -158,7 +158,7 @@ Note: 64-bit processor and operating system required.
 
 The headline here is just how light the minimum spec is. The minimum graphics requirement is an integrated GPU. A GTX 1650 sits at the recommended tier. If your kid's hand-me-down gaming laptop can run Fortnite, it can probably run Division Resurgence. That is a very deliberate floor, and it tracks with the title's mobile-first heritage where the team has been targeting a wide hardware range.
 
-For our [PC emulator comparison readers](/guide/pc-emulator-comparison/) who have been running BlueStacks or Google Play Games Beta to play on PC: a native Steam client should make all of that unnecessary. No more emulator quirks, no more app store sign-ins, just a Steam library entry.
+For our [PC emulator comparison readers](/guides/pc-emulator-comparison/) who have been running BlueStacks or Google Play Games Beta to play on PC: a native Steam client should make all of that unnecessary. No more emulator quirks, no more app store sign-ins, just a Steam library entry.
 
 ## What the Steam Page Does Not Confirm
 
@@ -248,7 +248,7 @@ Whether the Steam version inherits the same Ubisoft Connect account linking and 
 - [Scorpio and Diamondback Coming to Division Resurgence](/news/scorpio-diamondback-coming-to-division-resurgence-june-2026/) — Phase 3 exotics preview
 - [Division Resurgence Known Issues Trello Board](/news/division-resurgence-known-issues-trello-board-breakdown/) — every card decoded
 - [Exotic Weapons Database](/database/exotic-weapons/) — every current exotic with stats and talents
-- [PC Emulator Comparison Guide](/guide/pc-emulator-comparison/) — current options until the Steam version drops
+- [PC Emulator Comparison Guide](/guides/pc-emulator-comparison/) — current options until the Steam version drops
 
 ---
 

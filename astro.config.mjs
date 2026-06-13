@@ -29,6 +29,7 @@ export default defineConfig({
         !page.includes('/api/') &&
         !page.includes('/cdn-cgi/') &&
         !page.includes('/build-planner/') &&
+        !page.includes('/map/') &&
         !/\/tag\/v\d/.test(page) &&
         !page.includes('/tag/general/'),
       serialize(item) {

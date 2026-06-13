@@ -3,7 +3,7 @@ title: "Patch 1.2.1 Notes — Division Resurgence"
 version: "1.2.1"
 patchDate: "2026-05-20"
 author: "RapidF5"
-summary: "Division Resurgence Patch 1.2.1 dropped May 20, 2026 , fixing the vendor sell bug, inventory disappearance, Classified Ops Pass delivery failures, Lone Wolf reset, and more. Plus 500,000 Basic Credits and 750 Phoenix Credits compensation for every account."
+summary: "Division Resurgence Patch 1.2.1 dropped May 20, 2026, fixing the vendor sell bug, inventory disappearance, Classified Ops Pass delivery failures, Lone Wolf reset, and more. Plus 500,000 Basic Credits and 750 Phoenix Credits compensation for every account."
 featuredImage: "/images/patch-notes/division-resurgence-patch-1-2-1-notes-hero.webp"
 imageAlt: "A Division SHD agent reading patch notes on a tactical tablet in a darkened command room surrounded by screens and maps"
 shareTitle: "Warn your squad"
@@ -18,7 +18,7 @@ faqs:
     answer: "The tooltip was fixed to show accurate numbers. The weapon itself is still terrible. The community has dubbed it the 'poor man's Pestilence' and Ubisoft has acknowledged a buff is coming. Do not spend recalibration materials on it until the buff arrives. The Milkshake brings nobody to the yard in its current state."
 ---
 
-Patch 1.2.1 deployed on **May 20, 2026**. This is a targeted hotfix , not a content drop , aimed at the vendor meltdown, inventory losses, and Classified Ops Pass chaos that followed the Phase 2 launch on May 11â€“12. It also includes a significant line about **Strawberry Milkshake** that every Phase 2 player needs to read. Source: [Ubisoft Mobile Help Center , Patch Note 1.2.1](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/section/539-patch-note/).
+Patch 1.2.1 deployed on **May 20, 2026**. This is a targeted hotfix, not a content drop, aimed at the vendor meltdown, inventory losses, and Classified Ops Pass chaos that followed the Phase 2 launch on May 11–12. It also includes a significant line about **Strawberry Milkshake** that every Phase 2 player needs to read. Source: [Ubisoft Mobile Help Center, Patch Note 1.2.1](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/section/539-patch-note/).
 
 ---
 
@@ -115,7 +115,7 @@ We'll have full coverage of Phase 3 the moment it drops.
 
 ## Player Impact
 
-Patch 1.2.1 is the trust patch. The 500K Basic Credits and 750 Phoenix Credits compensation acknowledges that Phase 2's launch was rough â€” and the transparency of listing known-but-unfixed issues in the official notes is unusual for a live-service studio. Most devs bury those acknowledgments. Ubisoft put them in bold.
+Patch 1.2.1 is the trust patch. The 500K Basic Credits and 750 Phoenix Credits compensation acknowledges that Phase 2’s launch was rough — and the transparency of listing known-but-unfixed issues in the official notes is unusual for a live-service studio. Most devs bury those acknowledgments. Ubisoft put them in bold.
 
 For build-focused players, the key takeaway is: **do not invest recalibration materials into the Strawberry Milkshake yet.** The buff confirmation is in writing, which means Ubisoft will change the numbers. Farm the Weekly Mission Exotic Manuals now so you're ready to recalibrate the moment the updated values drop.
 

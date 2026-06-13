@@ -26,7 +26,8 @@ const { Content, headings } = await render(guide);
   shareTitle={guide.data.shareTitle}
   shareText={guide.data.shareText}
   headings={headings}
-  faqs={guide.data.faqs}
+  faqs={guide.data.faqs || []}
+  sources={guide.data.sources || []}
   howTo={guide.data.howTo}
 >
   <Content />

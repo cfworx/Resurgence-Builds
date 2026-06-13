@@ -2,7 +2,6 @@
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../../components/Breadcrumbs.astro';
 import SectionTag from '../../../components/SectionTag.astro';
-import AdSenseUnit from '../../../components/AdSenseUnit.astro';
 
 const breadcrumbs = [
   { name: 'Database', url: '/database/' },
@@ -14,7 +13,7 @@ const description = "Complete Division Resurgence gear database. Every piece of 
 
 ---
 
-<BaseLayout {title} {description} {breadcrumbs}>
+<BaseLayout {title} {description} {breadcrumbs} noindex={true} noAds={true}>
   <div class="container section">
     <Breadcrumbs items={breadcrumbs} />
     <SectionTag label="Gear Database" />
@@ -27,7 +26,5 @@ const description = "Complete Division Resurgence gear database. Every piece of 
     <div style="min-height: 300px; display: flex; align-items: center; justify-content: center; border: 1px dashed var(--border); border-radius: 8px; background: rgba(0,0,0,0.1); margin-bottom: var(--sp-8);">
       <p style="color: var(--ink-muted); font-style: italic;">Gear data coming soon...</p>
     </div>
-
-    <AdSenseUnit />
   </div>
 </BaseLayout>

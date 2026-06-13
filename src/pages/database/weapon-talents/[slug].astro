@@ -48,14 +48,6 @@ function getBuildArchetype(description: string): { primary: string; label: strin
       builds: `SMG builds with innate Crit Chance love this. ARs with crit-stacked gear sets like Fury Strike or Phalanx Attack are also prime candidates. If your build sheet shows 50%+ Crit Chance, this talent turns those orange numbers into real damage. Low-crit tank builds should look elsewhere.`
     };
   }
-  if (d.includes('weapon damage') || d.includes('rate of fire') || d.includes('headshot')) {
-    return {
-      primary: 'dps',
-      label: 'DPS / Firepower',
-      prose: `Pure damage talent. No gimmicks, no conditions you'll forget about mid-firefight - just more weapon damage. This is the kind of talent you slot when you want your bullets to hit harder and you don't want to think about it too much. Point, shoot, things die faster.`,
-      builds: `Any Firepower-stacked DPS build benefits from raw weapon damage. AR mains running Fury Strike, LMG builds going for sustained damage, and Marksman Rifle users who want bigger headshot numbers. If your core attribute is Firepower and your job is killing things, this talent fits.`
-    };
-  }
   if (d.includes('armor') || d.includes('damage reduction') || d.includes('toughness') || d.includes('extra health') || d.includes('max health') || d.includes('incoming damage')) {
     return {
       primary: 'tank',
@@ -70,6 +62,14 @@ function getBuildArchetype(description: string): { primary: string; label: strin
       label: 'Support / Healer',
       prose: `This talent has healing or sustain baked in. It's for the agents who keep the squad alive, or for solo players who need to self-sustain through tough content. Not the flashiest talent in the list, but it's the difference between wiping and clutching.`,
       builds: `Tactical Medic builds stacking Incoming Healing and Repair Skills get the most value. Also works on solo players who don't have a dedicated healer and need passive sustain. If you're running Legendary missions solo, a talent like this can carry runs that would otherwise end at the revive screen.`
+    };
+  }
+  if (d.includes('weapon damage') || d.includes('rate of fire') || d.includes('headshot')) {
+    return {
+      primary: 'dps',
+      label: 'DPS / Firepower',
+      prose: `Pure damage talent. No gimmicks, no conditions you'll forget about mid-firefight - just more weapon damage. This is the kind of talent you slot when you want your bullets to hit harder and you don't want to think about it too much. Point, shoot, things die faster.`,
+      builds: `Any Firepower-stacked DPS build benefits from raw weapon damage. AR mains running Fury Strike, LMG builds going for sustained damage, and Marksman Rifle users who want bigger headshot numbers. If your core attribute is Firepower and your job is killing things, this talent fits.`
     };
   }
   if (d.includes('reload')) {

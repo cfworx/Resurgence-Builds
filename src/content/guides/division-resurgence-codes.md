@@ -223,11 +223,11 @@ No traditional text-entry "redeem codes" have ever been publicly released for Th
 
 | Promotion | Reward | Period | Status |
 |---|---|---|---|
-| Backbone One Collab (Superior Pack) | 3 Superior-rarity items | Launch â€” Ongoing | âœ… Active |
-| Backbone One Collab (Exotic Skin) | Exotic weapon skin | Launch â€” Ongoing | âœ… Active |
-| Twitch Drops â€” Phase 1 Launch | Cosmetic drops (banner, weapon skin) | May 2026 | âŒ Expired |
-| Pre-Registration Rewards | Starter resource bundle | Pre-launch â€” Launch | âŒ Expired |
-| Creator Code Rewards | Varies by creator | Periodic | â³ Varies |
+| Backbone One Collab (Superior Pack) | 3 Superior-rarity items | Launch — Ongoing | ✅ Active |
+| Backbone One Collab (Exotic Skin) | Exotic weapon skin | Launch — Ongoing | ✅ Active |
+| Twitch Drops — Phase 1 Launch | Cosmetic drops (banner, weapon skin) | May 2026 | ❌ Expired |
+| Pre-Registration Rewards | Starter resource bundle | Pre-launch — Launch | ❌ Expired |
+| Creator Code Rewards | Varies by creator | Periodic | ⏳ Varies |
 
 > [!WARNING]
 > Any website listing "active codes" like "DIVISION2026" or "FREECOINS" is lying. As of Patch 1.2.1, Ubisoft has not released any public text-entry redemption codes for The Division Resurgence. Don't fall for clickbait.
@@ -236,7 +236,7 @@ No traditional text-entry "redeem codes" have ever been publicly released for Th
 
 **Related Reading:**
 - [Patch 1.2.1 Notes](/patch-notes/patch-1-2-1/)
-- [Season 1â€“3 Roadmap](/news/season-1-2-3-roadmap/)
+- [Season 1–3 Roadmap](/news/season-1-2-3-roadmap/)
 - [Which Specialization Should You Pick?](/guides/which-specialization-to-pick/)
 
 **Sources:**

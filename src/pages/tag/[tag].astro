@@ -12,13 +12,27 @@ export async function getStaticPaths() {
   const allNews = await getCollection('news');
   const allPatchNotes = await getCollection('patchNotes');
 
-  // Collect every unique tag across all content
-  const tagMap = new Map<string, any[]>();
+  // Collect every unique tag across all content, keyed by normalized slug
+  // to avoid collisions when raw tags differ only in casing (e.g. "Jackpot" vs "jackpot")
+  const tagMap = new Map<string, { displayName: string; posts: any[] }>();
+
+  function toSlug(tag: string) {
+    return tag.toLowerCase().replace(/\s+/g, '-');
+  }
+
+  function addPost(tag: string, post: any) {
+    const slug = toSlug(tag);
+    if (!tagMap.has(slug)) {
+      // Display name: prefer tag-intros entry, otherwise use the first raw tag encountered
+      const introName = (tagIntros as Record<string, any>)[slug]?.name;
+      tagMap.set(slug, { displayName: introName || tag, posts: [] });
+    }
+    tagMap.get(slug)!.posts.push(post);
+  }
 
   allBuilds.forEach(post => {
     (post.data.tags || []).forEach((tag: string) => {
-      if (!tagMap.has(tag)) tagMap.set(tag, []);
-      tagMap.get(tag)!.push({
+      addPost(tag, {
         title: post.data.title,
         href: `/builds/${post.id}/`,
         date: post.data.lastUpdated,
@@ -34,8 +48,7 @@ export async function getStaticPaths() {
 
   allGuides.forEach(post => {
     (post.data.tags || []).forEach((tag: string) => {
-      if (!tagMap.has(tag)) tagMap.set(tag, []);
-      tagMap.get(tag)!.push({
+      addPost(tag, {
         title: post.data.title,
         href: `/guides/${post.id}/`,
         date: post.data.lastUpdated || post.data.publishDate,
@@ -51,8 +64,7 @@ export async function getStaticPaths() {
 
   allNews.forEach(post => {
     (post.data.tags || []).forEach((tag: string) => {
-      if (!tagMap.has(tag)) tagMap.set(tag, []);
-      tagMap.get(tag)!.push({
+      addPost(tag, {
         title: post.data.title,
         href: `/news/${post.id}/`,
         date: post.data.publishDate,
@@ -70,15 +82,22 @@ export async function getStaticPaths() {
   const excludeTags = ['tag1', 'tag2'];
   
   return [...tagMap.entries()]
-    .filter(([tag]) => !excludeTags.includes(tag))
-    .map(([tag, posts]) => {
+    .filter(([slug]) => !excludeTags.includes(slug))
+    .map(([slug, { displayName, posts }]) => {
+      // Deduplicate posts by href (a post may appear via multiple raw-tag variants)
+      const seen = new Set<string>();
+      const uniquePosts = posts.filter(p => {
+        if (seen.has(p.href)) return false;
+        seen.add(p.href);
+        return true;
+      });
       // Sort by date descending
-      posts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+      uniquePosts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
       return {
-        params: { tag: tag.toLowerCase().replace(/\s+/g, '-') },
+        params: { tag: slug },
         props: { 
-          tagName: tag,
-          posts,
+          tagName: displayName,
+          posts: uniquePosts,
         },
       };
     });

@@ -17,6 +17,7 @@ export interface Props {
   breadcrumbs?: { name: string; url: string }[];
   jsonLd?: Record<string, unknown> | Record<string, unknown>[];
   faqs?: { question: string; answer: string }[];
+  noindex?: boolean;
 }
 
 const {
@@ -30,6 +31,7 @@ const {
   breadcrumbs = [],
   jsonLd,
   faqs = [],
+  noindex = false,
 } = Astro.props;
 
 const siteName = 'Resurgence Builds';
@@ -103,9 +105,9 @@ graph.push({
   name: "Tom Clancy's The Division Resurgence",
   alternateName: ["Division Resurgence", "The Division Resurgence"],
   publisher: { '@type': 'Organization', name: 'Ubisoft' },
-  gamePlatform: ['iOS', 'Android'],
+  gamePlatform: ['iOS', 'Android', 'PC'],
   applicationCategory: 'Game',
-  operatingSystem: ['iOS 13+', 'Android 8+'],
+  operatingSystem: ['iOS 13+', 'Android 8+', 'Windows 11'],
   sameAs: [
     'https://en.wikipedia.org/wiki/Tom_Clancy%27s_The_Division_Resurgence',
     'https://www.ubisoft.com/en-us/game/the-division/resurgence'
@@ -235,6 +237,7 @@ const finalJsonLd = {
 <meta name="description" content={description} />
 {keywords.length > 0 && <meta name="keywords" content={keywords.join(', ')} />}
 <link rel="canonical" href={canonicalURL} />
+{noindex && <meta name="robots" content="noindex, nofollow" />}
 
 <!-- Open Graph -->
 <meta property="og:type" content={ogType} />

@@ -644,14 +644,14 @@
     "bonus3": "Killing an enemy affected by Chemical Trap reduces the cooldown of your second equipped ability by 4.80 seconds."
   },
   {
-    "id": "smc-89",
+    "id": "smc-95",
     "name": "Attritional Charge",
     "specialization": "Bulwark",
     "bonus2": "Damage Reduction+[2.0%~4.0%]",
     "bonus3": "Shockwave Spike Mk.3 grants Damage Reduction and Weapon Critical Hit Chance while deployed. Damage Reduction +3.66%, Weapon Critical Hit Chance +4.16%."
   },
   {
-    "id": "smc-90",
+    "id": "smc-96",
     "name": "Provocateur",
     "specialization": "Bulwark",
     "bonus2": "Weapon Damage+[2.0%~4.0%]",

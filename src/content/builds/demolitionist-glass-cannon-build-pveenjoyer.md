@@ -33,9 +33,9 @@ faqs:
   - question: "Is Division Resurgence pay-to-win?"
     answer: "No. Every piece in this build drops from in-game farming. The Warlord and StG 44 are standard loot. Fire Cycle and Jackpot drop from in-game content. The Pressing Matter OS Protocol comes from weekly bounties. The only thing you cannot rush with a credit card is the talent roll grind."
   - question: "How do I get my Skill Multi-Shot Chance that high?"
-    answer: "Stack the +12% from Fire Cycle 4pc, the +21% from Toymaker II while outside 20m, the +7.81% from the StG 44 weapon attribute, the +2.69% from the Javelina Mask, the +3.5% from the Ops Armor, the +2.47% from the Explosive Seeker Mine firmware, and the +1% per Artillery Turret tick (5 stack cap) from Frag Grenades firmware. Those all stack additively into a 35â€“45% Skill Multi-Shot Chance ceiling during active rotation."
+    answer: "Stack the +12% from Fire Cycle 4pc, the +21% from Toymaker II while outside 20m, the +7.81% from the StG 44 weapon attribute, the +2.69% from the Javelina Mask, the +3.5% from the Ops Armor, the +2.47% from the Explosive Seeker Mine firmware, and the +1% per Artillery Turret tick (5 stack cap) from Frag Grenades firmware. Those all stack additively into a 35–45% Skill Multi-Shot Chance ceiling during active rotation."
 videoId: "zJ5t0lGR1gU"
-videoTitle: "PVE Enjoyer â€” Demolitionist Build Guide"
+videoTitle: "PVE Enjoyer — Demolitionist Build Guide"
 videoChannel: "PVE Enjoyer"
 howTo:
   name: "How to Stack Skill Multi-Shot Chance on a Demolitionist Build"
@@ -98,8 +98,8 @@ His actual in-game numbers for reference:
 
 | Slot | Set | Talent | Core | Attribute Bonus 1 | Attribute Bonus 2 |
 |---|---|---|---|---|---|
-| Mask | Fire Cycle (Javelina Mask, T2 Level 50, 5.93k Health) | - | Firepower +43 Â· Armor +59 Â· Skill Power +172 | Skill Multi-Shot Chance +2.69% | Skill Intensity +4.69% |
-| Body Armor | Fire Cycle (Ops Armor, T2 Level 50, 1217 PS) | **Toymaker II** | Firepower +69 Â· Armor +59 Â· Skill Power +169 | Skill Multi-Shot Chance +3.5% | Damage to Elites +2.88% |
+| Mask | Fire Cycle (Javelina Mask, T2 Level 50, 5.93k Health) | - | Firepower +43 · Armor +59 · Skill Power +172 | Skill Multi-Shot Chance +2.69% | Skill Intensity +4.69% |
+| Body Armor | Fire Cycle (Ops Armor, T2 Level 50, 1217 PS) | **Toymaker II** | Firepower +69 · Armor +59 · Skill Power +169 | Skill Multi-Shot Chance +3.5% | Damage to Elites +2.88% |
 | Backpack | Fire Cycle (AMP24, T2 Level 50) | **Intense Performance II** | Firepower / Armor / Skill Power roll | Skill Critical Damage roll | Signature Charge roll |
 | Gloves | Fire Cycle (T2 Level 50) | - | Firepower / Armor / Skill Power roll | Skill Multi-Shot Chance | Skill Intensity |
 | Holster | Jackpot (Jags Sidearm Mount, T2 Level 50) | - | Skill Power | Max Health +9.42% | Skill Critical Chance roll |
@@ -128,20 +128,20 @@ That 4-piece +12% Skill Multi-Shot Chance is the single biggest reason your turr
 
 | Slot | Item | Details |
 |---|---|---|
-| **Primary** | Warlord (T1 Assault Rifle, Level 50, 2233 PS) | **Blast Damage 942** (he calls this a bad roll Â· he wanted Engineering as the main attribute) Â· RPM 600 Â· 30-round mag Â· Skill Intensity +9.8% Â· Skill Shredding Damage +6.35% |
-| **Secondary** | StG 44 (T1 Assault Rifle, Level 50) | **Backup Battery II** talent Â· Piercing Damage 913 Â· RPM 600 Â· 30-round mag Â· Skill Multi-Shot Chance +7.81% Â· Skill Piercing Damage +9.79% |
-| **OS Protocol** | **[Pressing Matter](/database/os-protocols/pressing-matter/)** (Purple, Level 50, 1,813 PS) | +24.00% Skill Intensity Â· Engineering +358 Â· Skill Damage +286 Â· Health +9,402 Â· Talent: Grants +10% Skill Cooldown Recovery. |
-| **Skill 1** | Artillery Turret | Frag Grenades firmware 3pc Â· Artillery Turret damage stacks Skill Multi-Shot Chance up to +5% |
-| **Skill 2** | Explosive Seeker Mine | Applied Demolitions firmware 3pc Â· 15.14s cooldown Â· pairs with the 4pc Skill Multi-Shot bonus |
-| **Signature** | M32A1 Grenade Launcher | Demolitionist specialization Â· Fire Support firmware 2pc currently Â· max out the tree |
+| **Primary** | Warlord (T1 Assault Rifle, Level 50, 2233 PS) | **Blast Damage 942** (he calls this a bad roll · he wanted Engineering as the main attribute) · RPM 600 · 30-round mag · Skill Intensity +9.8% · Skill Shredding Damage +6.35% |
+| **Secondary** | StG 44 (T1 Assault Rifle, Level 50) | **Backup Battery II** talent · Piercing Damage 913 · RPM 600 · 30-round mag · Skill Multi-Shot Chance +7.81% · Skill Piercing Damage +9.79% |
+| **OS Protocol** | **[Pressing Matter](/database/os-protocols/pressing-matter/)** (Purple, Level 50, 1,813 PS) | +24.00% Skill Intensity · Engineering +358 · Skill Damage +286 · Health +9,402 · Talent: Grants +10% Skill Cooldown Recovery. |
+| **Skill 1** | Artillery Turret | Frag Grenades firmware 3pc · Artillery Turret damage stacks Skill Multi-Shot Chance up to +5% |
+| **Skill 2** | Explosive Seeker Mine | Applied Demolitions firmware 3pc · 15.14s cooldown · pairs with the 4pc Skill Multi-Shot bonus |
+| **Signature** | M32A1 Grenade Launcher | Demolitionist specialization · Fire Support firmware 2pc currently · max out the tree |
 
 ### Skill Mods
 
 | Skill | Firmware Set | Set Bonus | Stats |
 |---|---|---|---|
-| Explosive Seeker Mine | Applied Demolitions (3pc) | 2pc: +7% Armor Â· 3pc: Explosive Seeker Mine hits on up to 1 enemy grant +4.80% Skill Critical Damage for 20s, up to 3 stacks | Mine Radius +9.69% Â· Max Health +4.59% Â· Skill Multi-Shot Chance +2.47% |
-| Artillery Turret | Frag Grenades (3pc) | 2pc: +4% Max Health Â· 3pc: Artillery Turret damage grants +1% Skill Multi-Shot Chance for 10s, up to 5 stacks | Artillery Turret Intensity +5.76% Â· Damage to Elites +1.81% Â· Max Health +3.59% |
-| M32A1 Grenade Launcher | Fire Support (2/3 currently) | 2pc: Skill Health +4% Â· 3pc bonus not yet active | M32A1 Grenade Launcher Damage +5.24% Â· Damage to Elites +2.00% Â· Skill Duration +2.71% |
+| Explosive Seeker Mine | Applied Demolitions (3pc) | 2pc: +7% Armor · 3pc: Explosive Seeker Mine hits on up to 1 enemy grant +4.80% Skill Critical Damage for 20s, up to 3 stacks | Mine Radius +9.69% · Max Health +4.59% · Skill Multi-Shot Chance +2.47% |
+| Artillery Turret | Frag Grenades (3pc) | 2pc: +4% Max Health · 3pc: Artillery Turret damage grants +1% Skill Multi-Shot Chance for 10s, up to 5 stacks | Artillery Turret Intensity +5.76% · Damage to Elites +1.81% · Max Health +3.59% |
+| M32A1 Grenade Launcher | Fire Support (2/3 currently) | 2pc: Skill Health +4% · 3pc bonus not yet active | M32A1 Grenade Launcher Damage +5.24% · Damage to Elites +2.00% · Skill Duration +2.71% |
 
 **Weapon mod stacking:** Both rifles should run **Engineering-stacked mods** on every available slot. PVE Enjoyer shows his current setup on camera: the Assault Rifle Quick Release Magazine Level 20 (+26 Firepower, +81 Weapon Shredding Damage, +81 All Weapon Damage, 16% Reload Speed) is one of his go-to mod picks, but he points out that mods rolled with Engineering as the main stat are what he is actively hunting. Anywhere there is an open slot, the goal is Engineering plus Skill Damage or Skill Multi-Shot Chance on the sub-rolls.
 
@@ -209,13 +209,13 @@ PVE Enjoyer is running [Pressing Matter](/database/os-protocols/pressing-matter/
 
 ### 1. Pressing Matter (his pick)
 
-*+24.00% Skill Intensity Â· Engineering +358 Â· Skill Damage +286 Â· Health +9,402 Â· Talent grants +10% Skill Cooldown Recovery at Level 50*
+*+24.00% Skill Intensity · Engineering +358 · Skill Damage +286 · Health +9,402 · Talent grants +10% Skill Cooldown Recovery at Level 50*
 
 This is the protocol locked into his chassis in the video. The +24% Skill Intensity is the single largest Skill Intensity roll on the build, which directly buffs the damage of every skill cast. The +10% Skill Cooldown Recovery on the talent line means the Artillery Turret and Explosive Seeker Mine are back online faster, which keeps the multi-shot stacking rotation going without dead air. As PVE Enjoyer puts it on camera, he picked up a few Pressing Matter copies in just one or two days of running weekly bounties, so the farm is reasonable.
 
 ### 2. Brains Over Brawn (alternative for skill crit)
 
-*+21.60% Skill Critical Chance Â· Hits deal additional damage equal to 48% Engineering at Level 50*
+*+21.60% Skill Critical Chance · Hits deal additional damage equal to 48% Engineering at Level 50*
 
 His backup gold-tier protocol, also Level 50 and sitting in his loadout. If you are pushing Skill Critical Chance as a primary stat instead of Skill Intensity, Brains Over Brawn is the swap. You lose some flat Skill Intensity, but you gain a huge Skill Crit Chance ceiling plus extra hit damage that scales with your already-buffed Engineering.
 
@@ -263,20 +263,20 @@ Use this table to judge whether a drop is worth keeping for this build.
 
 | Piece | What You Need | Where It Drops | Priority Rolls |
 |---|---|---|---|
-| **Mask** | Fire Cycle T2 | T2 PVE content / Conflicts 100+ | Skill Multi-Shot Chance Â· Skill Intensity |
-| **Body Armor** | Fire Cycle T2 + Toymaker II | T2 PVE content / Conflicts 100+ | Skill Multi-Shot Chance Â· Damage to Elites |
-| **Backpack** | Fire Cycle T2 + Intense Performance II | T2 PVE content / Conflicts 100+ | Skill Critical Damage Â· Signature Charge |
-| **Gloves** | Fire Cycle T2 | T2 PVE content / Conflicts 100+ | Skill Multi-Shot Chance Â· Skill Intensity |
-| **Holster** | Jackpot T2 | Open-world activities / Faction caches | Max Health Â· Skill Critical Chance |
-| **Knee Pads** | Jackpot T2 | Open-world activities / Faction caches | Skill Multi-Shot Chance Â· Skill Intensity |
-| **Warlord** | Exotic AR (Engineering main stat) | Assault Rifle loot pool | Skill Intensity Â· Skill Shredding Damage |
-| **StG 44** | Standard AR + Backup Battery II | Assault Rifle loot pool | Skill Multi-Shot Chance Â· Skill Piercing Damage |
-| **OS Protocol** | [Pressing Matter](/database/os-protocols/pressing-matter/) | Weekly bounty runs | +24% Skill Intensity Â· +10% Skill Cooldown Recovery |
-| **Seeker Mine Firmware** | Applied Demolitions 3pc | Hostile Nests (sub-rewards) | Mine Radius Â· Skill Multi-Shot Chance |
-| **Turret Firmware** | Frag Grenades 3pc | Hostile Nests (sub-rewards) | Turret Intensity Â· Damage to Elites |
-| **Signature Firmware** | Fire Support 3pc | Hostile Nests (sub-rewards) | M32A1 Damage Â· Damage to Elites |
+| **Mask** | Fire Cycle T2 | T2 PVE content / Conflicts 100+ | Skill Multi-Shot Chance · Skill Intensity |
+| **Body Armor** | Fire Cycle T2 + Toymaker II | T2 PVE content / Conflicts 100+ | Skill Multi-Shot Chance · Damage to Elites |
+| **Backpack** | Fire Cycle T2 + Intense Performance II | T2 PVE content / Conflicts 100+ | Skill Critical Damage · Signature Charge |
+| **Gloves** | Fire Cycle T2 | T2 PVE content / Conflicts 100+ | Skill Multi-Shot Chance · Skill Intensity |
+| **Holster** | Jackpot T2 | Open-world activities / Faction caches | Max Health · Skill Critical Chance |
+| **Knee Pads** | Jackpot T2 | Open-world activities / Faction caches | Skill Multi-Shot Chance · Skill Intensity |
+| **Warlord** | Exotic AR (Engineering main stat) | Assault Rifle loot pool | Skill Intensity · Skill Shredding Damage |
+| **StG 44** | Standard AR + Backup Battery II | Assault Rifle loot pool | Skill Multi-Shot Chance · Skill Piercing Damage |
+| **OS Protocol** | [Pressing Matter](/database/os-protocols/pressing-matter/) | Weekly bounty runs | +24% Skill Intensity · +10% Skill Cooldown Recovery |
+| **Seeker Mine Firmware** | Applied Demolitions 3pc | Hostile Nests (sub-rewards) | Mine Radius · Skill Multi-Shot Chance |
+| **Turret Firmware** | Frag Grenades 3pc | Hostile Nests (sub-rewards) | Turret Intensity · Damage to Elites |
+| **Signature Firmware** | Fire Support 3pc | Hostile Nests (sub-rewards) | M32A1 Damage · Damage to Elites |
 
-**Farm path:** Hostile Nests for gear mods and firmware, weekly bounties for OS Protocols. Fire Cycle T2 is gated behind Conflicts Level 100 or T2 PVE content. If you are not there yet, run 4pc Jackpot as a bridge build. The Warlord and StG 44 drop from the standard AR pool â€” the grind is talent and stat rolls, not the base weapon.
+**Farm path:** Hostile Nests for gear mods and firmware, weekly bounties for OS Protocols. Fire Cycle T2 is gated behind Conflicts Level 100 or T2 PVE content. If you are not there yet, run 4pc Jackpot as a bridge build. The Warlord and StG 44 drop from the standard AR pool — the grind is talent and stat rolls, not the base weapon.
 
 ---
 

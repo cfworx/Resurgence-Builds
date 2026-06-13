@@ -35,10 +35,6 @@ faqs:
     answer: "Every gear set used here drops in the field. Jackpot and Fire Cycle pieces come from the standard High-End loot pool and the appropriate vendors. The premium track of the Classified Ops Pass is cosmetics, not power. Welcome to the genre."
 ---
 
-# Jackpot Striker Drone Tech Operator Build | Division Resurgence Engineering Build
-
-By RapidF5 - Patch 1.1.2.2 - Tech Operator - Updated June 1, 2026
-
 ## What This Build Does
 
 This is a **Tech Operator Offensive Operations** build that pumps every roll into Engineering and lets a **Striker Drone** do the killing. Four pieces of **Jackpot** for the Skill Crit Chance and Skill Crit Damage stacking, two pieces of **Fire Cycle** for another +12% Skill Crit Damage on top, and the **[Rampart OS Protocol](/database/os-protocols/rampart/)** sitting on +10% Damage per stack while you hold a corner. **Hunting M44** is the primary, **Mk16** as the swap. The Hunting M44 talents feed Skill Intensity back into the drone every magazine, and the Mk16 talents top off Engineering and Signature charge while you reposition. Press the drone, hold the line, watch the numbers turn red.

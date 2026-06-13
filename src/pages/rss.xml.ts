@@ -3,10 +3,24 @@ import { getCollection } from 'astro:content';
 import type { APIContext } from 'astro';
 
 export async function GET(context: APIContext) {
+  const builds = await getCollection('builds');
+  const guides = await getCollection('guides');
   const news = await getCollection('news');
   const patchNotes = await getCollection('patchNotes');
 
   const allItems = [
+    ...builds.map((post) => ({
+      title: post.data.title,
+      pubDate: post.data.lastUpdated,
+      description: post.data.description,
+      link: `/builds/${post.id}/`,
+    })),
+    ...guides.map((post) => ({
+      title: post.data.title,
+      pubDate: post.data.lastUpdated,
+      description: post.data.description,
+      link: `/guides/${post.id}/`,
+    })),
     ...news.map((post) => ({
       title: post.data.title,
       pubDate: post.data.publishDate,
@@ -22,7 +36,7 @@ export async function GET(context: APIContext) {
   ].sort((a, b) => b.pubDate.getTime() - a.pubDate.getTime());
 
   return rss({
-    title: 'Resurgence Builds',
+    title: 'Resurgence Builds — Builds, Guides & News',
     description: 'Builds, guides, tier lists, and news for Tom Clancy\'s The Division Resurgence.',
     site: context.site!.toString(),
     items: allItems,

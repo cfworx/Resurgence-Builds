@@ -21,9 +21,11 @@ export interface Props {
   jsonLd?: Record<string, unknown>;
   faqs?: { question: string; answer: string }[];
   noAds?: boolean;
+  noindex?: boolean;
 }
 
-const { title, description, ogType, ogImage, article, keywords, breadcrumbs, jsonLd, faqs, noAds } = Astro.props;
+const { title, description, ogType, ogImage, article, keywords, breadcrumbs, jsonLd, faqs, noAds, noindex } = Astro.props;
+const suppressAds = noAds || noindex;
 ---
 
 <!DOCTYPE html>
@@ -71,9 +73,12 @@ const { title, description, ogType, ogImage, article, keywords, breadcrumbs, jso
     breadcrumbs={breadcrumbs}
     jsonLd={jsonLd}
     faqs={faqs}
+    noindex={noindex}
   />
 
-  {!noAds && (
+  <slot name="head" />
+
+  {!suppressAds && (
     <script is:inline async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5813932024666862" crossorigin="anonymous"></script>
   )}
 </head>
@@ -82,7 +87,7 @@ const { title, description, ogType, ogImage, article, keywords, breadcrumbs, jso
   <Header />
   <main id="main-content">
     <slot />
-    {!noAds && (
+    {!suppressAds && (
       <div class="container" style="padding-top: var(--sp-6); padding-bottom: var(--sp-4);">
         <AdSenseUnit />
       </div>

@@ -26,13 +26,13 @@ const itemListLd = {
   itemListElement: gearSets.map((item: any, i: number) => ({
     '@type': 'ListItem',
     position: i + 1,
-    url: Astro.url.href,
+    url: `${Astro.url.origin}/database/gear-set-effects/${slugify(item.name)}/`,
     item: {
       '@type': 'Thing',
       '@id': `${Astro.url.href}#item-${i}`,
       name: item.name || item.talent || item.attribute || item.protocolName || 'Item',
       description: item.description || item.talentDescription || item.effect || item.notes || `Details for ${item.name || item.talent || item.attribute || item.protocolName || 'item'}`,
-      url: Astro.url.href,
+      url: `${Astro.url.origin}/database/gear-set-effects/${slugify(item.name)}/`,
       subjectOf: { '@id': 'https://resurgencebuilds.com/#division-resurgence' }
     }
   })),
