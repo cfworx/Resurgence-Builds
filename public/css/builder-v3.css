@@ -635,7 +635,9 @@
   .gearslot__val{font-size:11px;max-width:none}
   .gearslot__lbl{font-size:8px}
   .gearslot__attrs{font-size:7px}
-  .rig__logo{width:60px;height:60px}
+  .rig__logo{width:60px;height:60px;
+    -webkit-mask-image:radial-gradient(circle,#fff 50%,transparent 75%);
+    mask-image:radial-gradient(circle,#fff 50%,transparent 75%)}
   .rig__score{font-size:26px}
   .rig__score-lbl{font-size:7px}
 

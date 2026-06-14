@@ -699,7 +699,8 @@ function openModal(title, items, renderFn, selectFn, current) {
   modalSearch.value = '';
   drawModal('');
   modal.classList.add('is-open');
-  setTimeout(() => modalSearch.focus(), 50);
+  // Only auto-focus search on desktop — prevents mobile keyboard from blocking the list
+  if (!('ontouchstart' in window)) setTimeout(() => modalSearch.focus(), 50);
 }
 function closeModal() { modal.classList.remove('is-open'); }
 function drawModal(q) {
