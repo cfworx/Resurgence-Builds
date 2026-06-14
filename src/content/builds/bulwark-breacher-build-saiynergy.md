@@ -47,7 +47,7 @@ faqs:
 > [!INFO] Modified Weapon Talents
 > We have tweaked the weapon talents on the Lightweight M4 from Saiynergy's original loadout. He runs Steady Hands and Medical Accuracy. We recommend **Killer + Breadbasket** instead --- Killer is the strongest AR talent for crit builds and Breadbasket stacks Headshot Damage that feeds directly into Death From Afar. The rest of the build is Saiynergy's original.
 
-This is a **Breacher shield build** that anchors a doorway and refuses to leave. Saiynergy is sitting at **23.17k Power Score, 334.07k DPS, and 7,679 Armor**. The 4pc Fury Strike gives you the crit chance and crit damage backbone. The 2pc Phalanx Attack stacks magazine size so the Vector keeps firing past the point where most builds reload and die. The Ballistic Shield with **Intimidation** punishes anyone shooting your shield. The Shockwave Spike Mk.3 with **Attritional Charge** keeps your damage reduction and crit chance topped off. **Death From Afar** OS Protocol turns headshot damage into raw Firepower. The core loop is straightforward: shield up, walk forward, let the Vector pour rounds into whatever the M4 can't reach. Your job is to be the wall. Your fireteam's job is to be the people who do not have to be the wall.
+This is a **Breacher shield build** that anchors a doorway and refuses to leave. Saiynergy is sitting at **23.17k Power Score, 334.07k DPS, and 7,679 Armor**. The 4pc Fury Strike gives you the crit chance and crit damage backbone. The 2pc Phalanx Attack stacks magazine size so the Vector keeps firing past the point where most builds reload and die. The Ballistic Shield with **Provocateur** draws enemy aggro so your team can work. The Breach Combo with **Positive Feedback** restores bullets on hits. The Shockwave Spike Mk.3 with **King of the Pit** keeps your crit chance topped off. **Death From Afar** OS Protocol turns headshot damage into raw Firepower. The core loop is straightforward: shield up, walk forward, let the Vector pour rounds into whatever the M4 can't reach. Your job is to be the wall. Your fireteam's job is to be the people who do not have to be the wall.
 
 ---
 
@@ -84,10 +84,10 @@ This is a **Breacher shield build** that anchors a doorway and refuses to leave.
 | Skill | Firmware | Quality | Stats |
 |---|---|---|---|
 | Ballistic Shield | **Provocateur** (3pc) | - | Weapon Damage +2.0%~4.0%. Enemies within 20m focus the Agent when deploying Phalanx Shield. +3.20% DR per targeting enemy, up to 5 stacks |
-| Breach Combo | **Intimidation** (3pc) | Purple | Skill Duration +5.74%, Weapon Crit Hit Damage +6.80% |
-| Shockwave Spike Mk.3 | **Attritional Charge** (3pc) | High-End | Damage Reduction +3.66%, Weapon Crit Hit Chance +4.16% |
+| Breach Combo | **Positive Feedback** (3pc) | Purple | Max Health +4.0%~8.0%. Within 6s of deploying the Breach Combo, hits have a 40% chance of restoring 1 bullet. Critical Hits increase duration to 0.50s (capped at 2s). |
+| Shockwave Spike Mk.3 | **King of the Pit** (3pc) | High-End | Weapon Damage +2.0%~4.0%. Shockwave Spike Mk.3 hits grant +4% Weapon Critical Hit Chance for 10s, up to 4 stacks. |
 
-> **Intimidation lowers Weapon Damage from anyone shooting your shield. Attritional Charge keeps DR and crit chance ticking while the Spike works.** Both firmwares feed the shield-anchor playstyle.
+> **Positive Feedback restores bullets mid-Breach Combo so you never have to reload. King of the Pit keeps crit chance ticking while the Spike works.** Both firmwares feed the shield-anchor playstyle.
 
 ---
 
@@ -204,7 +204,7 @@ Backup weapons for farming attachments and talents:
 | Vector 45 ACP (SMG) | Strained + Adaptation talents |
 | Death From Afar OS | Any attribute - the talent is what matters |
 | Ballistic Shield mod | Provocateur firmware |
-| Shockwave Spike mod | Attritional Charge firmware |
+| Shockwave Spike mod | King of the Pit firmware |
 
 ---
 

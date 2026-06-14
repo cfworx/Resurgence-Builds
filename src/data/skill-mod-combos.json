@@ -386,17 +386,17 @@
   },
   {
     "id": "smc-56",
-    "name": "Pulse Enhancement",
+    "name": "Targeted Surveillance",
     "specialization": "Vanguard",
     "bonus2": "Damage Reduction+[2.0%~4.0%]",
     "bonus3": "Deploying Scanning Pulse grants Pulsed allies Weapon Critical Hit Chance equal to 3.60% Engineering for 10 second(s)."
   },
   {
     "id": "smc-57",
-    "name": "Scout",
+    "name": "Pulse Feedback",
     "specialization": "Vanguard",
     "bonus2": "Signature Ability Charge Efficiency+[4.0%~8.0%]",
-    "bonus3": "Pulsed enemies grant +8 Signature Ability Charge to the ally team."
+    "bonus3": "Pulsed enemies grant +8 Signature Ability Charge(s) to the ally team."
   },
   {
     "id": "smc-58",
@@ -417,244 +417,216 @@
     "name": "Tactical Reinforcement",
     "specialization": "Vanguard",
     "bonus2": "Damage Reduction+[2.0%~4.0%]",
-    "bonus3": "Increases Signature Ability Charge Efficiency of players applied with Tactical Link by 28.80%."
+    "bonus3": "Deploying Tactical Link grants +28.80% Signature Ability Charge Efficiency."
   },
   {
     "id": "smc-61",
     "name": "Liquid Nitrogen",
     "specialization": "Vanguard",
     "bonus2": "Skill Cooldown Recovery-[2.0%~4.0%]",
-    "bonus3": "Players with self-applied Tactical Link effect have a 10% chance to reduce all skill cooldowns by 0.80 seconds on each enemy hit, with a cooldown of 5 seconds between each trigger."
+    "bonus3": "While using Tactical Link, hits have a 10% chance of reducing Skill Cooldown by 0.80 second(s). Talent Cooldown: 5 second(s)."
   },
   {
     "id": "smc-62",
-    "name": "Smart Cover Defense",
-    "specialization": "Vanguard",
-    "bonus2": "Damage Reduction+[2.0%~4.0%]",
-    "bonus3": "Smart Cover provides bonus Damage Reduction and Weapon Damage to allies using it."
-  },
-  {
-    "id": "smc-63",
-    "name": "Advanced Intel",
-    "specialization": "Vanguard",
-    "bonus2": "Skill Cooldown Recovery-[2.0%~4.0%]",
-    "bonus3": "Scanning Pulse reveals additional enemy weaknesses, granting bonus Weapon Critical Hit Chance."
-  },
-  {
-    "id": "smc-64",
-    "name": "Coordinated Strike",
-    "specialization": "Vanguard",
-    "bonus2": "Damage Reduction+[2.0%~4.0%]",
-    "bonus3": "Tactical Link grants coordinated attack bonuses when multiple allies attack the same target."
-  },
-  {
-    "id": "smc-65",
-    "name": "Suppression Field",
-    "specialization": "Vanguard",
-    "bonus2": "Damage Reduction+[2.0%~4.0%]",
-    "bonus3": "Smart Cover generates a suppression field that slows enemies entering cover range."
-  },
-  {
-    "id": "smc-66",
-    "name": "Overwatch",
-    "specialization": "Vanguard",
-    "bonus2": "Skill Cooldown Recovery-[2.0%~4.0%]",
-    "bonus3": "Scanning Pulse marks enemies for allies, granting bonus Weapon Damage against marked targets."
-  },
-  {
-    "id": "smc-67",
-    "name": "Link Booster",
-    "specialization": "Vanguard",
-    "bonus2": "Damage Reduction+[2.0%~4.0%]",
-    "bonus3": "Tactical Link bonus effects are enhanced and have extended duration."
-  },
-  {
-    "id": "smc-68",
-    "name": "Fortification",
-    "specialization": "Vanguard",
-    "bonus2": "Damage Reduction+[2.0%~4.0%]",
-    "bonus3": "Smart Cover deployment grants Fortified status to allies within range."
-  },
-  {
-    "id": "smc-69",
-    "name": "Signal Disruption",
-    "specialization": "Vanguard",
-    "bonus2": "Skill Cooldown Recovery-[2.0%~4.0%]",
-    "bonus3": "Scanning Pulse disrupts enemy skills and electronics on Pulsed targets."
-  },
-  {
-    "id": "smc-70",
-    "name": "Commando",
-    "specialization": "Vanguard",
-    "bonus2": "Damage Reduction+[2.0%~4.0%]",
-    "bonus3": "Kills or assists while using Tactical Link grant +10.20% Weapon Critical Hit Chance for 10 second(s)."
-  },
-  {
-    "id": "smc-71",
     "name": "Armored Train",
     "specialization": "Vanguard",
-    "bonus2": "Skill Cooldown Recovery-[2.0%~4.0%]",
+    "bonus2": "Armor+[4.7%~9.3%]",
     "bonus3": "While behind a Smart Cover, weapon hits have a 5% chance of granting +2% Weapon Critical Hit Chance for 20 second(s), up to 3 stack(s)."
   },
   {
-    "id": "smc-72",
+    "id": "smc-63",
+    "name": "Optimized Armor",
+    "specialization": "Vanguard",
+    "bonus2": "Reload Speed+[4.0%~8.0%]",
+    "bonus3": "While behind a Smart Cover, grants +3.20% Damage Reduction and hits have a 4.80% chance of restoring 1 bullet(s)."
+  },
+  {
+    "id": "smc-64",
+    "name": "Top Off",
+    "specialization": "Vanguard",
+    "bonus2": "Skill Cooldown Recovery-[2.0%~4.0%]",
+    "bonus3": "While behind a Smart Cover, grants +9.60% Signature Ability Charge Efficiency."
+  },
+  {
+    "id": "smc-65",
+    "name": "Commando",
+    "specialization": "Vanguard",
+    "bonus2": "Armor+[4.7%~9.3%]",
+    "bonus3": "When having the Tactical Link effect on self, every time you participate in killing an enemy, your weapon's Critical Hit Chance will be increased by 10.20% for 10 seconds."
+  },
+  {
+    "id": "smc-66",
     "name": "Field Supplies",
     "specialization": "Vanguard",
-    "bonus2": "Damage Reduction+[2.0%~4.0%]",
-    "bonus3": "Kills or assists on Pulsed enemies restore 6% Health and refill 6.40% of the current magazine."
+    "bonus2": "Reload Speed+[4.0%~8.0%]",
+    "bonus3": "Killing or assisting in killing the enemy scanned by you, restoring your Health by 6% of Health lost, and refilling the Magazine by 6.40%."
   },
   {
-    "id": "smc-73",
+    "id": "smc-67",
     "name": "Tactical Insight",
     "specialization": "Vanguard",
-    "bonus2": "Signature Ability Charge Efficiency+[4.0%~8.0%]",
-    "bonus3": "Deploying Scanning Pulse restores 48 Signature Ability Charge, increased by 64 if there are more than 3 enemies within 70 meter(s)."
-  },
-  {
-    "id": "smc-74",
-    "name": "Armor Strengthening",
-    "specialization": "Field Medic",
-    "bonus2": "Skill Duration+[3.2%~6.4%]",
-    "bonus3": "Grants +32.00% Armor while located within 20 meter(s) of a Chemical Trap."
-  },
-  {
-    "id": "smc-75",
-    "name": "Lightweight",
-    "specialization": "Field Medic",
-    "bonus2": "Damage Reduction+[2.0%~4.0%]",
-    "bonus3": "Chemical Trap can be deployed farther away. Hits on enemies inside Chemical Traps apply 1 stack(s) of Corrosive. Headshots apply 4 stacks instead. Talent Cooldown: 1.50 seconds."
-  },
-  {
-    "id": "smc-76",
-    "name": "Siphon",
-    "specialization": "Field Medic",
-    "bonus2": "Damage Reduction+[2.0%~4.0%]",
-    "bonus3": "Using a Chemical Trap to apply a stack of Corrosive has a 50% chance of restoring 4 Signature Ability Charge. Talent Cooldown: 0.50 seconds."
-  },
-  {
-    "id": "smc-77",
-    "name": "Hereafter Resilience",
-    "specialization": "Field Medic",
-    "bonus2": "Skill Intensity+[2.0%~4.0%]",
-    "bonus3": "When deploying Oxidizing Hive, you lose Health equal to 25% of your current Health but gain Extra Health equal to 35.00% of Max Health and 5% Armor for 20s. When Oxidizing Hive is attached to your backpack, it releases Micro Corrosive Drones to enemies within 15.00m every 1.60s."
-  },
-  {
-    "id": "smc-78",
-    "name": "Improved Formula",
-    "specialization": "Field Medic",
-    "bonus2": "Damage Reduction+[2.0%~4.0%]",
-    "bonus3": "If Oxidizing Hive is attached to your backpack and no enemy is hit by your weapon within 3s, hitting enemies with your weapon will trigger Oxidizing Hive to release 13 Mini Corrosive Drones flying towards the target and applying Corrosion to them."
-  },
-  {
-    "id": "smc-79",
-    "name": "Generative Formula",
-    "specialization": "Field Medic",
-    "bonus2": "Damage Reduction+[2.0%~4.0%]",
-    "bonus3": "While being assisted by the Oxidizing Hive, hits restore 8 Signature Ability Charge. Talent Cooldown: 2 seconds."
-  },
-  {
-    "id": "smc-80",
-    "name": "Enhanced Formula",
-    "specialization": "Field Medic",
-    "bonus2": "Skill Critical Damage+[4.0%~8.0%]",
-    "bonus3": "Oxidizing Swarm hits inflict -12% Damage for 20 seconds. Killing an enemy within 20 meter(s) who is also afflicted by this debuff restores Health equal to 8% Missing Health for 20 second(s)."
-  },
-  {
-    "id": "smc-81",
-    "name": "Augmented Range",
-    "specialization": "Field Medic",
-    "bonus2": "Damage Reduction+[2.0%~4.0%]",
-    "bonus3": "Oxidizing Swarm can be thrown farther away. Oxidizing Swarm hits that are at least 20 meter(s) away inflict -14.40% Damage Reduction for 10 second(s)."
-  },
-  {
-    "id": "smc-82",
-    "name": "Harvest",
-    "specialization": "Field Medic",
-    "bonus2": "Damage Reduction+[2.0%~4.0%]",
-    "bonus3": "Oxidizing Swarm hits reduce Skill Cooldown by 2.40 seconds."
-  },
-  {
-    "id": "smc-83",
-    "name": "Detrimental Treatment",
-    "specialization": "Field Medic",
-    "bonus2": "Damage Reduction+[2.0%~4.0%]",
-    "bonus3": "Support Station deals damage to enemies who are within its radius. Damage is increased by 25% while located within the radius of a Support Station."
-  },
-  {
-    "id": "smc-84",
-    "name": "Auto Trauma Treatment",
-    "specialization": "Field Medic",
-    "bonus2": "Healing Intensity+[3.3%~6.7%]",
-    "bonus3": "Grants +6% Incoming Healing and automatically revives any member of the ally team who is downed within the radius of a Support Station."
-  },
-  {
-    "id": "smc-85",
-    "name": "Effective Triage",
-    "specialization": "Field Medic",
-    "bonus2": "Healing Intensity+[3.3%~6.7%]",
-    "bonus3": "Grants +40% Incoming Healing to any ally below 50% Health who is located within the radius of a Support Station."
-  },
-  {
-    "id": "smc-86",
-    "name": "Defensive Measures",
-    "specialization": "Field Medic",
-    "bonus2": "Damage Reduction+[2.0%~4.0%]",
-    "bonus3": "When Healing Hive is active, hitting enemies within 20m with weapons deals additional damage equal to 240% of your Toughness. Trigger Interval: 2s."
-  },
-  {
-    "id": "smc-87",
-    "name": "Buddy Treatment",
-    "specialization": "Field Medic",
-    "bonus2": "Healing Intensity+[3.3%~6.7%]",
-    "bonus3": "When using Healing Hive, if your and your teammate's Health is below 50%, increases by 2.00%. Using it on you deploys micro Mender Drones to your teammates within 2 meters, restore a small amount of Health if deployed (It won't grant buffs of Specialization Focus)."
-  },
-  {
-    "id": "smc-88",
-    "name": "Mutual Support",
-    "specialization": "Field Medic",
-    "bonus2": "Healing Intensity+[3.3%~6.7%]",
-    "bonus3": "While Healing Hive is deployed, grants +9.60% Skill Intensity when located within 20 meter(s) of an ally. While Healing Hive is deployed, grants +20% Movement Speed when located at least 20 meter(s) away from allies."
-  },
-  {
-    "id": "smc-89",
-    "name": "Aggressive Drones",
-    "specialization": "Field Medic",
-    "bonus2": "Damage Reduction+[2.0%~4.0%]",
-    "bonus3": "Instead of healing allies, Healing Swarm deals damage to enemies by releasing 16 nano-drones that target enemies every 1.50 second(s)."
-  },
-  {
-    "id": "smc-90",
-    "name": "Emergency Measures",
-    "specialization": "Field Medic",
-    "bonus2": "Healing Intensity+[3.3%~6.7%]",
-    "bonus3": "Healing Swarm heals allies over 10 seconds. When an ally's Health drops to 0 during the healing process, restores Health equal to 16% Max Health to them for 5 second(s)."
-  },
-  {
-    "id": "smc-91",
-    "name": "Doom Dealer",
-    "specialization": "Field Medic",
-    "bonus2": "Healing Intensity+[3.3%~6.7%]",
-    "bonus3": "For each ally healed by Healing Swarm, grants +1.20% Skill Intensity for 20 second(s), up to 16 stack(s)."
-  },
-  {
-    "id": "smc-92",
-    "name": "Chemical Recharge",
-    "specialization": "Field Medic",
     "bonus2": "Skill Cooldown Recovery-[2.0%~4.0%]",
-    "bonus3": "Killing an enemy affected by Chemical Trap reduces the cooldown of your second equipped ability by 4.80 seconds."
+    "bonus3": "When releasing the Scanning Pulse, gain an additional 160 Signature Ability Charge. If there are more than 3 enemies within 70 meters, gain an increased charge of 200."
   },
   {
-    "id": "smc-93",
+    "id": "smc-68",
     "name": "Optimal Awareness",
     "specialization": "Vanguard",
     "bonus2": "Armor+[4.7%~9.3%]",
     "bonus3": "Each enemy scanned within 70 meter increases Weapon Critical Hit Chance by 1.40%, up to 8 times."
   },
   {
-    "id": "smc-94",
+    "id": "smc-69",
     "name": "Ammo Refill",
     "specialization": "Vanguard",
     "bonus2": "Reload Speed+[4.0%~8.0%]",
     "bonus3": "Every shot during the first 6 seconds of Tactical Link grants 29% chance of recovering 1 ammo. Duration resets at each kill."
+  },
+  {
+    "id": "smc-70",
+    "name": "Tactical Loop",
+    "specialization": "Vanguard",
+    "bonus2": "Skill Cooldown Recovery-[2.0%~4.0%]",
+    "bonus3": "While Tactical Link is active, hitting enemies has a 10% chance to extend its duration by 0.30s. This effect can stack up to 8 time(s) and start a 15s cooldown when reaches the maximun stacks."
+  },
+  {
+    "id": "smc-71",
+    "name": "Field Bastion",
+    "specialization": "Vanguard",
+    "bonus2": "Max Health+[4.0%~8.0%]",
+    "bonus3": "While behind a Smart Cover, kills or assists grant allies Extra Health equal to 120% Engineering for 10 second(s)."
+  },
+  {
+    "id": "smc-72",
+    "name": "Advanced Position",
+    "specialization": "Vanguard",
+    "bonus2": "Damage Reduction+[2.0%~4.0%]",
+    "bonus3": "While behind a Smart Cover, kills or assists grant 10 Signature Ability Charge(s). This effect also applies to allies."
+  },
+  {
+    "id": "smc-73",
+    "name": "Armor Strengthening",
+    "specialization": "Field Medic",
+    "bonus2": "Skill Duration+[3.2%~6.4%]",
+    "bonus3": "Grants +32.00% Armor while located within 20 meter(s) of a Chemical Trap."
+  },
+  {
+    "id": "smc-74",
+    "name": "Fly Trap",
+    "specialization": "Field Medic",
+    "bonus2": "Damage Reduction+[2.0%~4.0%]",
+    "bonus3": "Chemical Trap can be deployed farther away. Hits on enemies inside Chemical Traps apply 1 stack(s) of Corrosive. Headshots apply 4 stack(s) instead. Talent Cooldown: 1.50 second(s)."
+  },
+  {
+    "id": "smc-75",
+    "name": "Chemical Recharge",
+    "specialization": "Field Medic",
+    "bonus2": "Damage Reduction+[2.0%~4.0%]",
+    "bonus3": "Using a Chemical Trap to apply a stack of Corrosive has a 50% chance of restoring 4 Signature Ability Charge(s). Talent Cooldown: 0.50 second(s)."
+  },
+  {
+    "id": "smc-76",
+    "name": "Hereafter Resilience",
+    "specialization": "Field Medic",
+    "bonus2": "Skill Intensity+[2.0%~4.0%]",
+    "bonus3": "When deploying Oxidizing Hive, you lose Health equal to 25% of your current Health but gain Extra Health equal to 35.00% of Max Health and 5% Armor for 20 second(s). When Oxidizing Hive is attached to your backpack, it releases Micro Corrosive Drones to enemies within 15.00 meter(s) every 1.60 second(s)."
+  },
+  {
+    "id": "smc-77",
+    "name": "Corrosive Strike",
+    "specialization": "Field Medic",
+    "bonus2": "Damage Reduction+[2.0%~4.0%]",
+    "bonus3": "If Oxidizing Hive is attached to your backpack and no enemy is hit by your weapon within 3 second(s), hitting enemies with your weapon will trigger Oxidizing Hive to release 13 Micro Corrosive Drones flying towards the target and applying Corrosion to them."
+  },
+  {
+    "id": "smc-78",
+    "name": "Generative Formula",
+    "specialization": "Field Medic",
+    "bonus2": "Damage Reduction+[2.0%~4.0%]",
+    "bonus3": "While being assisted by the Oxidizing Hive, hits restore 8 Signature Ability Charge(s). Talent Cooldown: 2 second(s)."
+  },
+  {
+    "id": "smc-79",
+    "name": "Enhanced Formula",
+    "specialization": "Field Medic",
+    "bonus2": "Skill Critical Damage+[4.0%~8.0%]",
+    "bonus3": "Oxidizing Swarm hits inflict -12% Damage for 20 second(s). Killing an enemy within 20 meter(s) who is also afflicted by this debuff restores Health equal to 8% Missing Health for 20 second(s)."
+  },
+  {
+    "id": "smc-80",
+    "name": "Augmented Range",
+    "specialization": "Field Medic",
+    "bonus2": "Damage Reduction+[2.0%~4.0%]",
+    "bonus3": "Oxidizing Swarm can be thrown farther away. Oxidizing Swarm hits that are at least 20 meter(s) away inflict -14.40% Damage Reduction for 10 second(s)."
+  },
+  {
+    "id": "smc-81",
+    "name": "Harvest",
+    "specialization": "Field Medic",
+    "bonus2": "Damage Reduction+[2.0%~4.0%]",
+    "bonus3": "Oxidizing Swarm hits reduce Skill Cooldown by 2.40 second(s)."
+  },
+  {
+    "id": "smc-82",
+    "name": "Weaponized Treatment",
+    "specialization": "Field Medic",
+    "bonus2": "Damage Reduction+[2.0%~4.0%]",
+    "bonus3": "Support Station deals damage to enemies who are within its radius. Damage is increased by 25% while located within the radius of a Support Station."
+  },
+  {
+    "id": "smc-83",
+    "name": "Auto Trauma Treatment",
+    "specialization": "Field Medic",
+    "bonus2": "Healing Intensity+[3.3%~6.7%]",
+    "bonus3": "Grants +6% Incoming Healing and automatically revives any member of the ally team who is downed within the radius of a Support Station."
+  },
+  {
+    "id": "smc-84",
+    "name": "Effective Triage",
+    "specialization": "Field Medic",
+    "bonus2": "Healing Intensity+[3.3%~6.7%]",
+    "bonus3": "Grants +40% Incoming Healing to any ally below 50% Health who is located within the radius of a Support Station."
+  },
+  {
+    "id": "smc-85",
+    "name": "Offensive Defense",
+    "specialization": "Field Medic",
+    "bonus2": "Damage Reduction+[2.0%~4.0%]",
+    "bonus3": "While Healing Hive is deployed, hits on enemies within 20 meter(s) deal additional damage equal to 240% Weapon Damage."
+  },
+  {
+    "id": "smc-86",
+    "name": "Buddy Treatment",
+    "specialization": "Field Medic",
+    "bonus2": "Healing Intensity+[3.3%~6.7%]",
+    "bonus3": "While Healing Hive is deployed, grants +2.00% Incoming Healing to any ally who is below 50% Health. Self-targeting on the Healing Hive also deploys healing nano-drones to allies within 15 meter(s)."
+  },
+  {
+    "id": "smc-87",
+    "name": "Coordinated Strike",
+    "specialization": "Field Medic",
+    "bonus2": "Healing Intensity+[3.3%~6.7%]",
+    "bonus3": "While Healing Hive is deployed, grants +9.60% Skill Intensity when located within 20 meter(s) of an ally. While Healing Hive is deployed, grants +20% Movement Speed when located at least 20 meter(s) away from allies."
+  },
+  {
+    "id": "smc-88",
+    "name": "Aggressive Drones",
+    "specialization": "Field Medic",
+    "bonus2": "Damage Reduction+[2.0%~4.0%]",
+    "bonus3": "Instead of healing allies, Healing Swarm deals damage to enemies by releasing 16 micro-drones that target enemies every 1.50 second(s)."
+  },
+  {
+    "id": "smc-89",
+    "name": "Emergency Measures",
+    "specialization": "Field Medic",
+    "bonus2": "Healing Intensity+[3.3%~6.7%]",
+    "bonus3": "Healing Swarm heals allies over 10 second(s). When an ally's Health drops to 0 during the healing process, restores Health equal to 16% Max Health to them for 5 second(s)."
+  },
+  {
+    "id": "smc-90",
+    "name": "Beneficial Association",
+    "specialization": "Field Medic",
+    "bonus2": "Healing Intensity+[3.3%~6.7%]",
+    "bonus3": "For each ally healed by Healing Swarm, grants +1.20% Skill Intensity for 20 second(s), up to 16 stack(s)."
   }
 ]

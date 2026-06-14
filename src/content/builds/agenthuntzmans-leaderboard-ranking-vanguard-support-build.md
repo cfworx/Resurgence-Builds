@@ -79,7 +79,7 @@ The loop is simple: stack Engineering through Torrential Downpour and Fully Char
 | Skill | Mod | Effect |
 |---|---|---|
 | Tactical Smart Cover | **Mobile Bastion** | Kills/assists behind cover grant +10 Sig. Ability charge to the whole team |
-| Scanning Pulse | **Scout (C-Chip)** | Each pulse grants +8 Sig. Ability charge to the allied team |
+| Scanning Pulse | **Pulse Feedback (C-Chip)** | Each pulse grants +8 Sig. Ability charge to the allied team |
 | Tactical Link | **Bugle Call** | Deploying Link grants Rate of Fire, Damage Reduction, and Movement Speed buffs to the team (exact values vary by rank) |
 
 **Alternatives worth knowing:**
