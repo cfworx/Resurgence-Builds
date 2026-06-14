@@ -1,5 +1,5 @@
 ---
-title: "Sweet Lullaby Bulwark Juggernaut Build"
+title: "Involuntary Nap Time Bulwark Juggernaut Build"
 specialization: "Bulwark"
 subclass: "Juggernaut"
 playstyle: Tank
@@ -7,31 +7,31 @@ pve: true
 pvp: true
 lastUpdated: 2026-06-13T00:00:00Z
 patch: "1.2"
-tags: ["Juggernaut", "Shield", "Stun", "Pummeling Shield", "Healing Elites", "Self-Propelled Shield", "PPSH-41", "FAMAS", "Nadie", "Bulwark", "Tank", "Sweet Lullaby"]
+tags: ["Juggernaut", "Shield", "Stun", "Pummeling Shield", "Healing Elites", "Self-Propelled Shield", "PPSH-41", "FAMAS", "Nadie", "Bulwark", "Tank", "Involuntary Nap Time"]
 description: "Nadie's Immortal Stunner Bulwark Juggernaut build using the Pummeling Shield OS Protocol. Stun the biggest enemies, soak everything, and let your squad clean up. Asia Server Rank 16 Juggernaut. Full breakdown of gear, mods, weapons, skills, and stats."
 author: "RapidF5 (via Nadie)"
-featuredImage: "/images/builds/sweet-lullaby-immortal-stunner-bulwark-juggernaut-build.webp"
-imageAlt: "Division Resurgence Sweet Lullaby Immortal Stunner Bulwark Juggernaut build by Nadie showing 22.61k Power Score with Healing Elites gear and Pummeling Shield OS Protocol"
+featuredImage: "/images/builds/involuntary-nap-time-bulwark-juggernaut-build.webp"
+imageAlt: "Division Resurgence Involuntary Nap Time Bulwark Juggernaut build by Nadie showing 22.61k Power Score with Healing Elites gear and Pummeling Shield OS Protocol"
 shareTitle: "Put the elites to sleep"
 shareText: "Nadie's Rank 16 Bulwark Juggernaut stun-tank. 336k Health, Pummeling Shield, Healing Elites 4pc. You are the wall."
 sources:
   - 'All gear stats, weapon talents, OS Protocol details, combo set bonuses, and combat statistics sourced from in-game screenshots provided by Nadie, June 2026.'
   - '<a href="https://www.facebook.com/share/v/1GMpakHatx/">Nadie, Gameplay Demonstration Video</a>, June 2026.'
-plannerHash: "s=Bulwark&sc=Juggernaut&n=Sweet+Lullaby&ms=gs-14&m1=Damage+Reduction&m2=Armor&cs=gs-14&ct=ba-25&c1=Signature+Ability+Charge+Efficiency&c2=Max+Health&ps=gs-14&pt=bp-21&p1=Weapon+Critical+Hit+Chance&p2=Damage+Reduction&gs=gs-15&g1=Max+Health&g2=Armor&hs=gs-14&h1=Received+Healing&h2=Signature+Ability+Charge+Efficiency&ks=gs-15&k1=Received+Healing&k2=Skill+Duration&w1s=sw-13&w1tr=T2&w1t=wt-6&w1t2=wt-15&w2s=sw-6&w2tr=T2&w2t=wt-46&w2t2=wt-60&os=os-54&sm1=smc-37&sm2=smc-50&sm3=smc-51"
+plannerHash: "s=Bulwark&sc=Juggernaut&n=Involuntary+Nap+Time&ms=gs-14&m1=Damage+Reduction&m2=Armor&cs=gs-14&ct=ba-25&c1=Signature+Ability+Charge+Efficiency&c2=Max+Health&ps=gs-14&pt=bp-21&p1=Weapon+Critical+Hit+Chance&p2=Damage+Reduction&gs=gs-15&g1=Max+Health&g2=Armor&hs=gs-14&h1=Received+Healing&h2=Signature+Ability+Charge+Efficiency&ks=gs-15&k1=Received+Healing&k2=Skill+Duration&w1s=sw-13&w1tr=T2&w1t=wt-6&w1t2=wt-15&w2s=sw-6&w2tr=T2&w2t=wt-46&w2t2=wt-60&os=os-54&sm1=smc-37&sm2=smc-50&sm3=smc-51"
 faqs:
   - question: "What is the best Bulwark Juggernaut build in Division Resurgence?"
-    answer: "Nadie's Sweet Lullaby build runs 4pc Healing Elites, 2pc Self-Propelled Shield, PPSH-41 with Backup Protection and Damage Trade, FAMAS with Shooting Repair and Swift Taunt, and the Pummeling Shield OS Protocol. It sits at 336k Health, 13.2k Armor, and Rank 16 on the Asia Server Bulwark Juggernaut leaderboard."
+    answer: "Nadie's Involuntary Nap Time build runs 4pc Healing Elites, 2pc Self-Propelled Shield, PPSH-41 with Backup Protection and Damage Trade, FAMAS with Shooting Repair and Swift Taunt, and the Pummeling Shield OS Protocol. It sits at 336k Health, 13.2k Armor, and Rank 16 on the Asia Server Bulwark Juggernaut leaderboard."
   - question: "What is the Pummeling Shield OS Protocol in Division Resurgence?"
     answer: "Pummeling Shield is a High-End Toughness OS Protocol with the talent: While possessing Extra Health, apply Stun after every 10 hits performed. It adds Toughness, All Weapon Damage, and Health to your build."
-  - question: "What gear set does the Sweet Lullaby build use?"
+  - question: "What gear set does the Involuntary Nap Time build use?"
     answer: "4pc Healing Elites for Received Healing, Extra Protection, and Armor bonuses. 2pc Self-Propelled Shield for additional Armor. The combination creates a self-healing tank that gets tougher the more damage it takes."
-  - question: "What weapons does Nadie use on the Sweet Lullaby build?"
+  - question: "What weapons does Nadie use on the Involuntary Nap Time build?"
     answer: "Primary PPSH-41 SMG with Backup Protection and Damage Trade talents. Secondary FAMAS Assault Rifle with Shooting Repair and Swift Taunt talents. Both are standard T2 Level 50 weapons, no exotics required."
-  - question: "Is the Sweet Lullaby build viable in the Dark Zone?"
+  - question: "Is the Involuntary Nap Time build viable in the Dark Zone?"
     answer: "Yes. Per Nadie's submission, the build is specifically designed for group play in Elite Missions and the Dark Zone, where the tank-and-stun role pairs with squadmates dumping damage while you lock down the biggest threats."
   - question: "Can I run this build without exotic weapons?"
     answer: "Yes. Neither equipped weapon is exotic. The build runs entirely on standard T2 legendary gear, which is part of what makes it accessible for a build sitting at Rank 16 on the leaderboard."
-  - question: "What is the Power Score of the Sweet Lullaby build?"
+  - question: "What is the Power Score of the Involuntary Nap Time build?"
     answer: "22,610 in combat view and 23,176 on the leaderboard. Currently Rank 16 on the Asia Server Bulwark Juggernaut Power Score leaderboard."
   - question: "How does the stun loop work in this build?"
     answer: "The Pummeling Shield OS Protocol stuns every 10 hits while you have Extra Health. Backup Protection on the PPSH-41 grants Extra Health on weapon swap, and Swift Taunt on the FAMAS grants Extra Health when hitting 3 enemies. The 900 RPM fire rate on both weapons means stuns proc multiple times per magazine."
@@ -176,7 +176,7 @@ For a video demonstration: [Nadie's gameplay video on Facebook](https://www.face
 
 **Where it shines:** Group play. Elite missions. Dark Zone. Anywhere you have a squad to provide the damage output while you provide the immortality and the stuns. This is a squad-anchor build.
 
-**The cheeky observation:** Naming it "Sweet Lullaby" is on theme. You are literally putting elites to sleep with stuns. Whether the petting-zoo analogy or the lullaby metaphor sticks first, both work. Your squad is just standing there unloading into a stunned boss while you hold aggro and refuse to die. Main character energy, except the main character chose to be the bouncer.
+**The honest truth:** Somewhere on the Asia Server, there is an elite named enemy who loaded into a mission, saw Nadie's shield coming around the corner, and genuinely considered alt-tabbing. You are not killing anything fast. You are not topping the damage charts. What you are doing is walking into a room full of enemies who had plans and informing them that plans have been cancelled. Nap time is mandatory. Attendance is not optional. And no, they cannot speak to the manager.
 
 ---
 
