@@ -567,90 +567,190 @@ function setArmorTalentDesc(el, name, pool) {
   } else if (descEl) { descEl.remove(); }
 }
 
-/* ====================== SYNERGY MAP + LOOP ====================== */
+/* ====================== INTELLIGENT BUILD ANALYSIS ENGINE ====================== */
 function renderLoop() {
   const counts = setCounts();
   const topSets = Object.entries(counts).sort((a, b) => b[1] - a[1]);
-  const bt = S.gear.body.talent, kt = S.gear.backpack.talent;
+  const bt = S.gear.body.talent, bk = S.gear.backpack.talent;
   const os = osProto(S.os);
   const w1 = weapon(S.w1.id), w2 = weapon(S.w2.id);
   const focus = getEffectiveFocus();
   const stats = computeStats();
+  const score = buildScore();
+  const allTalents = [S.w1.t1, S.w1.t2, S.w2.t1, S.w2.t2].filter(Boolean);
 
-  // Build the overview sections
+  const pick = arr => arr[Math.floor(Math.random() * arr.length)];
+
+  const hasRH = (stats['Received Healing'] || 0) > 0;
+  const hasDR = (stats['Damage Reduction'] || 0) > 0;
+  const hasCHC = (stats['Weapon Critical Hit Chance'] || 0) > 0;
+  const hasCHD = (stats['Weapon Critical Hit Damage'] || 0) > 0;
+  const hasSCC = (stats['Skill Critical Chance'] || 0) > 0;
+  const hasSCD = (stats['Skill Critical Damage'] || 0) > 0;
+  const hasSMS = (stats['Skill Multi-Shot Chance'] || 0) > 0;
+  const hasSACE = (stats['Signature Ability Charge Efficiency'] || 0) > 0;
+
   const sections = [];
 
-  // 1) Build Identity
-  if (S.spec) {
-    let identity = `<b>${S.spec}${S.subclass ? ' / ' + S.subclass : ''}</b> loadout`;
-    if (focus) identity += ` focused on <b>${focus}</b>`;
-    identity += '.';
-    if (topSets.length && topSets[0][1] >= 2) {
-      const setDescs = topSets.filter(([,n]) => n >= 2).map(([name, n]) => `${name} (${Math.min(n,4)}pc)`);
-      identity += ` Core gear sets: ${setDescs.join(', ')}.`;
-    }
-    sections.push(identity);
+  if (!S.spec) {
+    sections.push('Equip gear, weapons, and select talents to generate your build analysis.');
+    const g = $('#loopGraph'); if (g) g.innerHTML = sections.map(s => '<p class="overview__p">' + s + '</p>').join('');
+    return;
   }
 
-  // 2) Weapon loadout
+  // 1. BUILD IDENTITY
+  const intros = [
+    '<b>' + S.spec + (S.subclass ? ' / ' + S.subclass : '') + '</b> loadout' + (focus ? ' built around <b>' + focus + '</b> scaling' : '') + '.',
+    '<b>' + S.spec + (S.subclass ? ' \u00b7 ' + S.subclass : '') + '</b> configuration' + (focus ? ' \u2014 investing in <b>' + focus + '</b>' : '') + '.',
+    'Running <b>' + S.spec + (S.subclass ? ' / ' + S.subclass : '') + '</b>' + (focus ? ' with a clear <b>' + focus + '</b> focus' : '') + '.',
+  ];
+  let id = pick(intros);
+  if (topSets.length && topSets[0][1] >= 2) {
+    id += ' Core: ' + topSets.filter(function(e){return e[1]>=2}).map(function(e){return e[0]+' ('+Math.min(e[1],4)+'pc)'}).join(' + ') + '.';
+  }
+  sections.push(id);
+
+  // 2. SYNERGY DETECTION
+  var syn = [];
+  var ehTalents = ['Backup Protection', 'Swift Taunt', 'Emergency Shield'];
+  var hasEH = allTalents.some(function(t){return ehTalents.indexOf(t)>=0});
+  if (hasEH && os && os.talentDescription && os.talentDescription.toLowerCase().indexOf('extra health') >= 0) {
+    syn.push(pick([
+      '<b>Extra Health loop detected.</b> Weapon talents feed Extra Health into ' + os.name + "'s proc condition \u2014 this is a self-sustaining combat engine.",
+      '<b>Core synergy: Extra Health chain.</b> Weapon talents generate Extra Health that ' + os.name + ' consumes for its effect. The loop feeds itself.',
+    ]));
+  }
+  if (hasCHC && hasCHD) {
+    syn.push(pick([
+      '<b>Weapon crit chain active</b> \u2014 ' + stats['Weapon Critical Hit Chance'].toFixed(1) + '% CHC paired with ' + stats['Weapon Critical Hit Damage'].toFixed(1) + '% CHD. Crits amplify real damage.',
+      'Crit investment is <b>balanced</b>: ' + stats['Weapon Critical Hit Chance'].toFixed(1) + '% chance \u00d7 ' + stats['Weapon Critical Hit Damage'].toFixed(1) + '% damage. Both sides of the equation covered.',
+    ]));
+  } else if (hasCHC && !hasCHD) {
+    syn.push('\u26a0 Crit Chance at ' + stats['Weapon Critical Hit Chance'].toFixed(1) + '% but <b>no Crit Damage</b> to capitalize \u2014 crits hitting soft.');
+  }
+  if (hasSCC && hasSCD) {
+    syn.push(pick([
+      '<b>Skill crit chain active</b> \u2014 ' + stats['Skill Critical Chance'].toFixed(1) + '% chance with ' + stats['Skill Critical Damage'].toFixed(1) + '% multiplier. Skills hit hard on crits.',
+      'Engineering crit pipeline live: <b>' + stats['Skill Critical Chance'].toFixed(1) + '% Skill CHC</b> feeding <b>' + stats['Skill Critical Damage'].toFixed(1) + '% Skill CHD</b>.',
+    ]));
+  }
+  if (hasSMS && (hasSCC || hasSCD)) {
+    syn.push(pick([
+      '<b>Skill Multi-Shot + Crit</b> combo \u2014 each multi-hit rolls crit independently, multiplying effective skill DPS.',
+      'Multi-shot rolls boost skill crit output. Each extra projectile crits independently \u2014 scales exponentially.',
+    ]));
+  }
+  if (hasRH && hasDR) {
+    syn.push(pick([
+      '<b>Sustain loop online</b> \u2014 ' + stats['Received Healing'].toFixed(1) + '% Received Healing with ' + stats['Damage Reduction'].toFixed(1) + '% DR. Healing is amplified while less damage gets through.',
+      '<b>Tank core solid.</b> ' + stats['Damage Reduction'].toFixed(1) + '% DR means lighter hits, ' + stats['Received Healing'].toFixed(1) + '% Received Healing means bigger heals. Hard to kill.',
+    ]));
+  }
+  if (hasSACE) {
+    syn.push('Signature Ability charges <b>' + stats['Signature Ability Charge Efficiency'].toFixed(1) + '% faster</b>. Tighter rotation windows and more frequent ultimates.');
+  }
+  if (w1 && w1.rpm >= 850 && hasEH) {
+    syn.push('<b>High RPM</b> \u2014 ' + w1.name + ' at ' + w1.rpm + ' RPM stacks hit-count conditions fast. Hit-based OS procs fire multiple times per magazine.');
+  }
+  if (os && focus) {
+    if (os.specialization === focus) {
+      syn.push('<b>OS Protocol aligned:</b> ' + os.name + ' scales with ' + os.specialization + ', matching your subclass focus. Stats pull double duty.');
+    }
+  }
+  if (allTalents.indexOf('Killer') >= 0) {
+    syn.push(pick([
+      'Killer active \u2014 <b>crit kills chain into more crit damage</b>. Snowball talent that rewards aggressive target priority.',
+      '<b>Killer rewards fast kills.</b> Chain crit kills in multi-enemy encounters to keep the damage buff rolling.',
+    ]));
+  }
+  if (allTalents.indexOf('Strained') >= 0) {
+    syn.push('<b>Strained wants sustained fire.</b> Longer trigger holds = more Crit Damage. Pair with high-mag weapons for max payoff.');
+  }
+  if (allTalents.indexOf('Rampart') >= 0) {
+    syn.push('<b>Rampart stacks on kill.</b> In target-rich environments each kill adds another damage layer. Keep the chain alive.');
+  }
+  if (allTalents.indexOf('Breadbasket') >= 0 && (stats['Headshot Damage'] || 0) > 0) {
+    syn.push('<b>Breadbasket + Headshot Damage</b> \u2014 body shots stack HSD, then the headshot cashes in. Escalating burst per magazine.');
+  }
+  if (bt === 'Unstoppable' && focus === 'Toughness') {
+    syn.push('<b>Unstoppable on Toughness</b> \u2014 taking damage procs healing equal to 300% Toughness. Primary sustain engine.');
+  }
+  syn.slice(0, 3).forEach(function(s){sections.push(s)});
+
+  // 3. WEAPONS
   if (w1 || w2) {
-    let wLine = 'Weapons: ';
-    if (w1) wLine += `<b>${w1.name}</b> (${w1.type})`;
-    if (w1 && w2) wLine += ' + ';
-    if (w2) wLine += `<b>${w2.name}</b> (${w2.type})`;
-    wLine += '.';
-    // Weapon talent synergies
-    const talents = [S.w1.t1, S.w1.t2, S.w2.t1, S.w2.t2].filter(Boolean);
-    if (talents.length) wLine += ` Key talents: ${talents.join(', ')}.`;
-    sections.push(wLine);
+    var wl = '<em>Weapons:</em> ';
+    if (w1) wl += '<b>' + w1.name + '</b> (' + w1.type + ' \u00b7 ' + w1.rpm + ' RPM \u00b7 ' + w1.mag + ' mag)';
+    if (w1 && w2) wl += ' \u00b7 ';
+    if (w2) wl += '<b>' + w2.name + '</b> (' + w2.type + ' \u00b7 ' + w2.rpm + ' RPM \u00b7 ' + w2.mag + ' mag)';
+    if (allTalents.length) wl += '. Talents: ' + allTalents.join(', ') + '.';
+    sections.push(wl);
   }
 
-  // 3) Armor talents
-  if (bt || kt) {
-    let tLine = '';
-    if (bt) {
-      const btData = GAME.bodyArmorTalents.find(t => t.name === bt);
-      tLine += `<b>${bt}</b> (Body)${btData ? ' — ' + btData.description : ''}`;
-    }
-    if (bt && kt) tLine += ' | ';
-    if (kt) {
-      const ktData = GAME.backpackTalents.find(t => t.name === kt);
-      tLine += `<b>${kt}</b> (Backpack)${ktData ? ' — ' + ktData.description : ''}`;
-    }
-    sections.push(tLine);
+  // 4. ARMOR TALENTS
+  if (bt || bk) {
+    var tl = '<em>Armor Talents:</em> ';
+    if (bt) { var bd = GAME.bodyArmorTalents.find(function(t){return t.name===bt}); tl += '<b>' + bt + '</b> (Body)' + (bd ? ' \u2014 ' + bd.description : ''); }
+    if (bt && bk) tl += ' | ';
+    if (bk) { var kd = GAME.backpackTalents.find(function(t){return t.name===bk}); tl += '<b>' + bk + '</b> (Backpack)' + (kd ? ' \u2014 ' + kd.description : ''); }
+    sections.push(tl);
   }
 
-  // 4) OS Protocol
-  if (os) {
-    sections.push(`OS Protocol: <b>${os.name}</b> (${os.specialization}) — ${os.talentDescription}`);
-  }
+  // 5. OS PROTOCOL
+  if (os) sections.push('<em>OS Protocol:</em> <b>' + os.name + '</b> (' + os.specialization + ') \u2014 ' + os.talentDescription);
 
-  // 5) Stat highlights
-  const statPairs = Object.entries(stats).filter(([,v]) => v > 0).sort((a,b) => b[1] - a[1]);
-  if (statPairs.length) {
-    const highlights = statPairs.slice(0, 4).map(([name, val]) => {
-      const pct = typeof val === 'number' && val < 50 ? val.toFixed(1) + '%' : val;
-      return `${name} <b>${pct}</b>`;
-    });
-    sections.push('Top stats: ' + highlights.join(' · '));
-  }
+  // 6. STAT PROFILE
+  var sp = Object.entries(stats).filter(function(e){return e[1]>0}).sort(function(a,b){return b[1]-a[1]});
+  if (sp.length) sections.push('<em>Top stats:</em> ' + sp.slice(0,5).map(function(e){return abbrevAttr(e[0])+' <b>+'+e[1].toFixed(1)+'%</b>'}).join(' \u00b7 '));
 
-  // 6) Playstyle tip
-  if (focus === 'Engineering') {
-    sections.push('<em>Playstyle:</em> Deploy skills aggressively to maximize Engineering scaling. Chain skill crits for cooldown reduction and keep pressure up with sustained skill coverage.');
-  } else if (focus === 'Firepower') {
-    sections.push('<em>Playstyle:</em> Maximize weapon uptime and chain critical hits to trigger damage amplification. Use cover transitions to maintain optimal range and burst windows.');
+  // 7. TACTICAL ASSESSMENT
+  if (focus === 'Toughness' && hasRH && hasDR) {
+    sections.push(pick([
+      '<em>Playstyle:</em> <b>Sustain tank.</b> Stay in the fight, absorb damage, let healing loops keep you alive while your squad capitalizes on the space you create.',
+      '<em>Playstyle:</em> <b>Frontline anchor.</b> Draw aggro, survive it, create openings. This build rewards controlled aggression, not passive play.',
+    ]));
+  } else if (focus === 'Firepower' && hasCHC) {
+    sections.push(pick([
+      '<em>Playstyle:</em> <b>Burst DPS.</b> Prioritize high-value targets, chain crits, use cover transitions to maintain your damage window.',
+      '<em>Playstyle:</em> <b>Pure damage dealer.</b> Position for optimal range, focus fire priority targets, let crit chains carry the DPS.',
+    ]));
+  } else if (focus === 'Engineering' && (hasSCC || hasSCD)) {
+    sections.push(pick([
+      '<em>Playstyle:</em> <b>Skill DPS.</b> Deploy aggressively, chain skill crits for CDR, maintain skill uptime above all else.',
+      '<em>Playstyle:</em> <b>Skill-centric.</b> Damage comes from abilities. Keep skills deployed, rotate cooldowns, maximize skill coverage.',
+    ]));
   } else if (focus === 'Toughness') {
-    sections.push('<em>Playstyle:</em> Anchor the fight with defensive positioning. Trigger Extra Health and damage reduction windows through talents. Keep armor topped through healing loops.');
+    sections.push('<em>Playstyle:</em> <b>Toughness build.</b> Absorb pressure, use defensive talent procs to stay in the fight.');
+  } else if (focus === 'Firepower') {
+    sections.push('<em>Playstyle:</em> <b>Firepower build.</b> Maximize weapon uptime, control engagements at optimal range, chain kills for momentum.');
+  } else if (focus === 'Engineering') {
+    sections.push('<em>Playstyle:</em> <b>Engineering loadout.</b> Skills are your primary weapon. Manage cooldowns aggressively.');
   }
 
-  if (!sections.length) {
-    sections.push('Equip gear, weapons, and select talents to generate your build overview.');
+  // 8. VERDICT
+  if (score >= 88) {
+    sections.push(pick([
+      '<em>Verdict:</em> <b>Elite-tier.</b> Gear, talents, stats, and OS are fully aligned. Ready for high-difficulty content.',
+      '<em>Verdict:</em> <b>Top-shelf synergy.</b> Every piece pulls its weight. This loadout is dialed in.',
+      '<em>Verdict:</em> <b>Fully optimized.</b> Synergy loops complete, investment focused, no dead weight.',
+    ]));
+  } else if (score >= 70) {
+    sections.push(pick([
+      '<em>Verdict:</em> <b>Strong foundation.</b> Core synergies online but room to tighten stat allocation.',
+      '<em>Verdict:</em> <b>Solid build.</b> Main loops work. Min-max attribute rolls and talent choices for the last 10%.',
+    ]));
+  } else if (score >= 50) {
+    sections.push(pick([
+      '<em>Verdict:</em> <b>Work in progress.</b> Has direction but some slots are unoptimized.',
+      '<em>Verdict:</em> <b>Operational but unfinished.</b> Fill remaining slots and align talents with gear set bonuses.',
+    ]));
+  } else if (score > 0) {
+    sections.push('<em>Verdict:</em> <b>Early stage.</b> Fill more slots and pick weapons to unlock the full analysis.');
   }
 
-  const graphEl = $('#loopGraph');
-  if (graphEl) graphEl.innerHTML = sections.map(s => `<p class="overview__p">${s}</p>`).join('');
-  const stepsEl = $('#loopSteps');
+  var graphEl = $('#loopGraph');
+  if (graphEl) graphEl.innerHTML = sections.map(function(s){return '<p class="overview__p">'+s+'</p>'}).join('');
+  var stepsEl = $('#loopSteps');
   if (stepsEl) stepsEl.innerHTML = '';
 }
 
