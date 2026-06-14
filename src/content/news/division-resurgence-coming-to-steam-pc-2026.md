@@ -1,10 +1,10 @@
 ---
-title: "Division Resurgence Is Coming to Steam: PC Launch Confirmed for Later This Year (Already Live on Ubisoft Connect)"
+title: "Division Resurgence Coming to Steam"
 publishDate: "2026-06-06"
 author: "RapidF5"
 featuredImage: "/images/news/division-resurgence-coming-to-steam-pc-2026.webp"
 imageAlt: "Official Division Resurgence Steam announcement post from the TheDivMobile X account confirming the game is coming to Steam for free later in 2026"
-description: "Division Resurgence is officially coming to Steam later in 2026 as a free-to-play title, and the PC version is already playable today through Ubisoft Connect with full crossplay and cross-progression. Here is everything confirmed, plus what the community is saying."
+description: "Division Resurgence is coming to Steam in 2026. The PC version is already live on Ubisoft Connect with crossplay. Everything confirmed so far."
 tags: ["News", "PC", "Steam", "Ubisoft Connect", "Launch", "PC Release", "Crossplay"]
 shareTitle: "Division Resurgence is coming to Steam — and already playable on PC"
 shareText: "Division Resurgence is officially coming to Steam later in 2026. The PC version is already live on Ubisoft Connect with full crossplay and cross-progression. Wishlist it now."

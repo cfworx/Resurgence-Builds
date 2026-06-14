@@ -19,9 +19,10 @@ export interface Props {
   shareTitle?: string;
   shareText?: string;
   faqs?: { question: string; answer: string }[];
+  wordCount?: number;
 }
 
-const { title, description, publishDate, author, tags, parentPath, parentLabel, image, imageAlt, shareTitle, shareText, headings = [], faqs = [] } = Astro.props;
+const { title, description, publishDate, author, tags, parentPath, parentLabel, image, imageAlt, shareTitle, shareText, headings = [], faqs = [], wordCount } = Astro.props;
 
 const twitterShareUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(title)}&url=${encodeURIComponent(Astro.url.href)}`;
 const redditShareUrl = `https://reddit.com/submit?url=${encodeURIComponent(Astro.url.href)}&title=${encodeURIComponent(title)}`;
@@ -65,6 +66,7 @@ const speakableLd = {
     modifiedDate: publishDate.toISOString(),
     author,
     tags,
+    ...(wordCount && { wordCount }),
   }}
   faqs={faqs}
   jsonLd={speakableLd}

@@ -1,5 +1,5 @@
 ---
-title: "Division Resurgence Reddit Highlights - 10 Top Posts This Week"
+title: "Reddit Highlights: Top Posts This Week"
 publishDate: "2026-05-18"
 author: "RapidF5"
 featuredImage: "/images/news/division-resurgence-reddit-weekly-highlights-may-18.jpg"

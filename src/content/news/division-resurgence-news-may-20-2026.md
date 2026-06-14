@@ -1,5 +1,5 @@
 ---
-title: "Division Resurgence Patch 1.2.1 - Milkshake Nerf, Phase 3 Coming"
+title: "Patch 1.2.1: Milkshake Nerf & Phase 3"
 publishDate: "2026-05-20"
 author: "RapidF5"
 featuredImage: "/images/news/division-resurgence-patch-121-cover.webp"

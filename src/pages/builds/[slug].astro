@@ -12,6 +12,7 @@ export async function getStaticPaths() {
 
 const { build } = Astro.props;
 const { Content, headings } = await render(build);
+const wordCount = build.body ? build.body.replace(/<[^>]+>/g, ' ').trim().split(/\s+/).filter(Boolean).length : 0;
 ---
 
 <BuildLayout
@@ -36,6 +37,7 @@ const { Content, headings } = await render(build);
   videoTitle={build.data.videoTitle}
   videoChannel={build.data.videoChannel}
   howTo={build.data.howTo}
+  wordCount={wordCount}
 >
   <Content />
 </BuildLayout>

@@ -12,6 +12,7 @@ export async function getStaticPaths() {
 
 const { guide } = Astro.props;
 const { Content, headings } = await render(guide);
+const wordCount = guide.body ? guide.body.replace(/<[^>]+>/g, ' ').trim().split(/\s+/).filter(Boolean).length : 0;
 ---
 
 <GuideLayout
@@ -29,6 +30,7 @@ const { Content, headings } = await render(guide);
   faqs={guide.data.faqs || []}
   sources={guide.data.sources || []}
   howTo={guide.data.howTo}
+  wordCount={wordCount}
 >
   <Content />
 </GuideLayout>

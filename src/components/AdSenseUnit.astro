@@ -3,6 +3,7 @@ export interface Props {
   slotId?: string;
   className?: string;
   format?: 'auto' | 'fluid' | 'rectangle' | 'horizontal';
+  label?: string;
 }
 
 // ─── ADSENSE SWITCH ───────────────────────────────────────────────────────────
@@ -12,10 +13,10 @@ const ADSENSE_ENABLED = true;
 // ─────────────────────────────────────────────────────────────────────────────
 
 const clientID = "ca-pub-5813932024666862";
-const { slotId = "8102223000", className = '', format = 'horizontal' } = Astro.props;
+const { slotId = "8102223000", className = '', format = 'horizontal', label = 'Advertisement' } = Astro.props;
 ---
 
-<div class={`ad-slot ${className}`} role="complementary" aria-label="Advertisement">
+<aside class={`ad-slot ${className}`} aria-label={label}>
   {ADSENSE_ENABLED ? (
     <>
       <ins class="adsbygoogle"
@@ -35,4 +36,4 @@ const { slotId = "8102223000", className = '', format = 'horizontal' } = Astro.p
   ) : (
     <div class="ad-slot__placeholder"></div>
   )}
-</div>
+</aside>

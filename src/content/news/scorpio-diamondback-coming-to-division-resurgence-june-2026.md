@@ -1,10 +1,10 @@
 ---
-title: "Scorpio Shotgun and Diamondback Coming to Division Resurgence | June 2026 Phase 3 Leak"
+title: "Scorpio & Diamondback Coming Soon"
 publishDate: "2026-05-31"
 author: "RapidF5"
 featuredImage: "/images/news/division-resurgence-scorpio-diamondback-phase-3-leak.webp"
 imageAlt: "Division Resurgence Weekly Bounty screenshot showing Scorpio and Diamondback exotic weapons as Key Rewards in a Clinton Riker Compound mission"
-description: "The Scorpio exotic shotgun is confirmed for Division Resurgence Classified Ops Pass 1.3 in June 2026. The Diamondback was spotted in a Weekly Bounty Key Reward leak on Reddit. Everything we know about both exotics, the rumored release window, and the prep work to do before they drop."
+description: "Scorpio shotgun and Diamondback rifle are confirmed for Division Resurgence Phase 3 Classified Ops. Stats, talents, and release info."
 tags: ["Scorpio", "Diamondback", "Phase 3", "Classified Ops Pass 1.3", "Leak", "Exotics", "News", "Weekly Bounty"]
 shareTitle: "Two new exotics incoming"
 shareText: "Scorpio shotgun confirmed for Phase 3. Diamondback spotted in a Weekly Bounty leak. Share this with your squad so they can prep."

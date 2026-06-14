@@ -105,6 +105,18 @@ const faqs = [
     answer: "Division Resurgence is available on iOS, Android, and PC (via early access). Cross-play is supported, so your mobile squad can run with your PC friends."
   },
 ];
+
+const itemListLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: 'Latest Division Resurgence Builds, Guides & News',
+  itemListElement: posts.slice(0, 12).map((p, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    url: `https://resurgencebuilds.com${p.href}`,
+    name: p.title,
+  })),
+};
 ---
 
 <BaseLayout
@@ -121,6 +133,7 @@ const faqs = [
     "division resurgence gear sets"
   ]}
   faqs={faqs}
+  jsonLd={itemListLd}
 >
   <!-- Hero -->
   <section class="hero-banner">
@@ -164,12 +177,12 @@ const faqs = [
   <hr class="divider" style="max-width:var(--max-width);margin:0 auto;" />
 
   <!-- Latest Posts Feed -->
-  <section class="section" id="latest-posts-section">
+  <section class="section" id="latest-posts-section" aria-labelledby="latest-posts">
     <div class="container">
       <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: var(--sp-6); margin-bottom: var(--sp-6);">
         <div>
           <SectionTag label="Latest" />
-          <h2 class="heading-accent">Latest Posts</h2>
+          <h2 class="heading-accent" id="latest-posts">Latest Posts</h2>
           <p style="color:var(--ink-muted);margin-bottom:var(--sp-4);">
             Builds, guides, news, and patch notes for The Division Resurgence.
           </p>

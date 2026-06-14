@@ -12,6 +12,7 @@ export interface Props {
     modifiedDate?: string;
     author: string;
     tags?: string[];
+    wordCount?: number;
   };
   keywords?: string[];
   breadcrumbs?: { name: string; url: string }[];
@@ -187,7 +188,8 @@ if (article) {
       url: `${siteUrl}/author/${getAuthorSlug(article.author)}/`,
     },
     publisher: { '@id': `${siteUrl}/#organization` },
-    about: { '@id': `${siteUrl}/#division-resurgence` }
+    about: { '@id': `${siteUrl}/#division-resurgence` },
+    ...(article.wordCount && { wordCount: article.wordCount }),
   };
 
   if (isPatchNote) {

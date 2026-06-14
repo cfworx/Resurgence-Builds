@@ -36,9 +36,10 @@ export interface Props {
     tool: string[];
     steps: { name: string; text: string }[];
   };
+  wordCount?: number;
 }
 
-const { title, description, specialization, playstyle, patch, lastUpdated, pve, pvp, tags, author, featuredImage, imageAlt, shareTitle, shareText, headings = [], faqs = [], sources = [], plannerHash, videoId, videoTitle, videoChannel, howTo } = Astro.props;
+const { title, description, specialization, playstyle, patch, lastUpdated, pve, pvp, tags, author, featuredImage, imageAlt, shareTitle, shareText, headings = [], faqs = [], sources = [], plannerHash, videoId, videoTitle, videoChannel, howTo, wordCount } = Astro.props;
 
 const siteUrl = 'https://resurgencebuilds.com';
 
@@ -95,6 +96,7 @@ const redditShareUrl = `https://reddit.com/submit?url=${encodeURIComponent(Astro
     modifiedDate: lastUpdated.toISOString(),
     author,
     tags,
+    ...(wordCount && { wordCount }),
   }}
   ogImage={featuredImage}
   keywords={[specialization, playstyle, ...(pve ? ['PVE'] : []), ...(pvp ? ['PVP'] : []), 'Division Resurgence', 'build guide', ...tags.slice(0, 5)]}

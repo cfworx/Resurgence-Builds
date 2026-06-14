@@ -1,5 +1,5 @@
 ---
-title: "Sweet Lullaby Immortal Stunner - Pummeling Shield Bulwark Juggernaut Build"
+title: "Sweet Lullaby Bulwark Juggernaut Build"
 specialization: "Bulwark"
 subclass: "Juggernaut"
 playstyle: Tank

@@ -1,10 +1,10 @@
 ---
-title: "Division Resurgence Known Issues Trello Board: Every Card Breakdown (June 2026)"
+title: "Known Issues Trello Board Breakdown"
 publishDate: "2026-06-04"
 author: "RapidF5"
 featuredImage: "/images/news/division-resurgence-trello-known-issues-board.webp"
 imageAlt: "The Division Resurgence Known Issues Trello board showing six columns: Reported, Investigating, In Progress, Fix Ready, Fix Live, and Backlog with all active bug cards"
-description: "The Division Resurgence team just launched a public Trello board tracking every known issue in the game. Here is a full breakdown of every card on every list, what it means, and what is actually getting fixed."
+description: "Division Resurgence public Trello board breakdown: every known bug, fix timeline, and what the dev team is actively working on."
 tags: ["News", "Known Issues", "Bugs", "Patch Notes", "Trello", "Community", "Lady Death", "Strawberry Milkshake", "Brain over Brawn", "Phase 3"]
 shareTitle: "Every bug on the board, decoded"
 shareText: "Division Resurgence just dropped a public Trello board tracking every known issue. Here is every card, every status, and what is actually getting fixed. Share this with your squad."

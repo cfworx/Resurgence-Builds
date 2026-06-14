@@ -1025,14 +1025,18 @@ tbody tr:hover {
 /* Links inside article/prose content must be distinguishable by more than color */
 .prose a,
 article.build-article a,
-.faq-answer a {
+.faq-answer a,
+main p a,
+main li a {
   text-decoration: underline;
   text-decoration-color: rgba(255, 255, 255, 0.3);
   text-underline-offset: 2px;
 }
 .prose a:hover,
 article.build-article a:hover,
-.faq-answer a:hover {
+.faq-answer a:hover,
+main p a:hover,
+main li a:hover {
   text-decoration-color: var(--accent);
 }
 /* Exclude nav/toc/breadcrumb/button/card-overlay links from underline */

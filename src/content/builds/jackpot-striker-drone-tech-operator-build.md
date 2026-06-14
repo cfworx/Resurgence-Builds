@@ -1,10 +1,10 @@
 ---
-title: "Jackpot Striker Drone Tech Operator Build | Division Resurgence Engineering Build"
+title: "Jackpot Striker Drone Tech Op Build"
 slug: jackpot-striker-drone-tech-operator-build
 type: build
 date: 2026-06-01
 author: RapidF5
-description: "Tech Operator Offensive Operations build for Division Resurgence using Jackpot 4-piece, Fire Cycle 2-piece, Hunting M44, and a Striker Drone tuned for skill crits. Rampart OS Protocol, full gear breakdown, weapon talents, and skill mods."
+description: "Tech Operator Offensive Ops build: Jackpot 4pc + Striker Drone crit explosions. 237k DPS with Engineering scaling and Thermite Charge procs."
 keywords: ["Division Resurgence Tech Operator build", "Division Resurgence Striker Drone build", "Division Resurgence Jackpot build", "Division Resurgence Engineering build", "Hunting M44 build Resurgence", "Fire Cycle Jackpot build", "Division Resurgence skill crit build", "Rampart OS Protocol build"]
 canonical: https://resurgencebuilds.com/builds/jackpot-striker-drone-tech-operator-build/
 tags: [Tech Operator, Striker Drone, Jackpot, Fire Cycle, Engineering, Skill Crit, Rampart, Build]
