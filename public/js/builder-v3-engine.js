@@ -149,6 +149,10 @@ function computeStats() {
   Object.values(S.gear).forEach(g => {
     [g.b1, g.b2].forEach(a => { if (a) add(a, repRoll(a)); });
   });
+  // Weapon bonus attributes
+  [S.w1, S.w2].forEach(w => {
+    if (w.bonus) add(w.bonus, repRoll(w.bonus));
+  });
   return totals;
 }
 function splitBonus(str) {
@@ -413,6 +417,11 @@ function renderWeapons() {
     }
     setTalent(`w${k}t1`, w.t1);
     setTalent(`w${k}t2`, w.t2);
+    // Weapon bonus attribute
+    const bonusEl = $(`#w${k}bonus`);
+    const bonusRow = $(`.weapon-bonus[data-wbonus="${k}"]`);
+    if (bonusEl) bonusEl.textContent = w.bonus ? w.bonus : '—';
+    if (bonusRow) bonusRow.classList.toggle('is-set', !!w.bonus);
   });
 }
 function setTalent(key, val) {
@@ -818,11 +827,24 @@ function wire() {
       },
       null);
   });
-  $$('.slot[data-wslot]').forEach(el => el.addEventListener('click', (e) => { if (e.target.closest('.picktag') || e.target.closest('.talent-pair')) return; openWeaponPicker(el.dataset.wslot); }));
+  $$('.slot[data-wslot]').forEach(el => el.addEventListener('click', (e) => { if (e.target.closest('.picktag') || e.target.closest('.talent-pair') || e.target.closest('.weapon-bonus')) return; openWeaponPicker(el.dataset.wslot); }));
   // Weapon talent pickers — direct binding
   $$('.picktag[data-talent]').forEach(el => {
     el.style.cursor = 'pointer';
     el.addEventListener('click', (e) => { e.preventDefault(); e.stopPropagation(); openWTalentPicker(el.dataset.talent); });
+  });
+  // Weapon bonus attribute pickers
+  $$('.weapon-bonus[data-wbonus]').forEach(el => {
+    el.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const k = el.dataset.wbonus;
+      const items = ALL_ATTRS.map(a => ({ id: a, name: a, cat: ATTR_CAT[a] }));
+      openModal('WEAPON ' + k + ' — BONUS ATTRIBUTE',
+        items,
+        a => ({ id: a.id, name: a.name, type: a.cat, desc: '' }),
+        attr => { S['w' + k].bonus = attr; afterChange(); },
+        S['w' + k].bonus);
+    });
   });
   const bodyTalent = $('.picktag[data-armortalent="body"]');
   const bpTalent = $('.picktag[data-armortalent="backpack"]');
