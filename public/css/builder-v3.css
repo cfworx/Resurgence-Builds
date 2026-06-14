@@ -346,12 +346,14 @@
   font-size:38px;color:var(--orange);line-height:1;
   text-shadow:0 0 18px rgba(255,138,46,.45),0 2px 10px rgba(5,7,11,.9)}
 
-/* weapon bonus attribute */
-.weapon-bonus{display:flex;align-items:center;gap:10px;padding:8px 11px;margin-top:8px;cursor:pointer;
+/* weapon bonus attributes */
+.weapon-bonuses{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px}
+.weapon-bonus{display:flex;flex-direction:column;gap:3px;padding:8px 11px;cursor:pointer;
   background:var(--panel);border:1px solid var(--line);transition:border-color var(--tin),background var(--tin)}
 .weapon-bonus:hover{border-color:var(--line-hot);background:var(--panel-hi)}
 .weapon-bonus .picktag__lbl{flex:none}
-.weapon-bonus .picktag__val{font-size:12.5px;font-weight:500;color:var(--text-2)}
+.weapon-bonus .picktag__val{font-size:12px;font-weight:500;color:var(--text-2);
+  overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .weapon-bonus.is-set .picktag__val{color:var(--orange)}
 
 /* weapons row */

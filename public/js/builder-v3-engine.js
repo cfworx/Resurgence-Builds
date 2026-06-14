@@ -66,8 +66,8 @@ function catClass(attr) {
 let S = {
   name: '', spec: null, subclass: '',
   gear: { mask: {}, gloves: {}, holster: {}, body: {}, backpack: {}, kneepads: {} },
-  w1: { id: '', t1: '', t2: '', tier: 'T2' },
-  w2: { id: '', t1: '', t2: '', tier: 'T2' },
+  w1: { id: '', t1: '', t2: '', tier: 'T2', bonus1: '', bonus2: '' },
+  w2: { id: '', t1: '', t2: '', tier: 'T2', bonus1: '', bonus2: '' },
   os: '', skills: [null, null, null]
 };
 
@@ -149,9 +149,10 @@ function computeStats() {
   Object.values(S.gear).forEach(g => {
     [g.b1, g.b2].forEach(a => { if (a) add(a, repRoll(a)); });
   });
-  // Weapon bonus attributes
+  // Weapon bonus attributes (2 per weapon)
   [S.w1, S.w2].forEach(w => {
-    if (w.bonus) add(w.bonus, repRoll(w.bonus));
+    if (w.bonus1) add(w.bonus1, repRoll(w.bonus1));
+    if (w.bonus2) add(w.bonus2, repRoll(w.bonus2));
   });
   return totals;
 }
@@ -417,11 +418,14 @@ function renderWeapons() {
     }
     setTalent(`w${k}t1`, w.t1);
     setTalent(`w${k}t2`, w.t2);
-    // Weapon bonus attribute
-    const bonusEl = $(`#w${k}bonus`);
-    const bonusRow = $(`.weapon-bonus[data-wbonus="${k}"]`);
-    if (bonusEl) bonusEl.textContent = w.bonus ? w.bonus : '—';
-    if (bonusRow) bonusRow.classList.toggle('is-set', !!w.bonus);
+    // Weapon bonus attributes (2 per weapon)
+    [1, 2].forEach(i => {
+      const bonusEl = $(`#w${k}bonus${i}`);
+      const bonusRow = $(`.weapon-bonus[data-wbonus="${k}"][data-wbidx="${i}"]`);
+      const val = w['bonus' + i];
+      if (bonusEl) bonusEl.textContent = val ? abbrevAttr(val) : '—';
+      if (bonusRow) bonusRow.classList.toggle('is-set', !!val);
+    });
   });
 }
 function setTalent(key, val) {
@@ -833,17 +837,18 @@ function wire() {
     el.style.cursor = 'pointer';
     el.addEventListener('click', (e) => { e.preventDefault(); e.stopPropagation(); openWTalentPicker(el.dataset.talent); });
   });
-  // Weapon bonus attribute pickers
+  // Weapon bonus attribute pickers (2 per weapon)
   $$('.weapon-bonus[data-wbonus]').forEach(el => {
     el.addEventListener('click', (e) => {
       e.stopPropagation();
       const k = el.dataset.wbonus;
+      const idx = el.dataset.wbidx; // "1" or "2"
       const items = ALL_ATTRS.map(a => ({ id: a, name: a, cat: ATTR_CAT[a] }));
-      openModal('WEAPON ' + k + ' — BONUS ATTRIBUTE',
+      openModal('WEAPON ' + k + ' — BONUS ' + idx,
         items,
         a => ({ id: a.id, name: a.name, type: a.cat, desc: '' }),
-        attr => { S['w' + k].bonus = attr; afterChange(); },
-        S['w' + k].bonus);
+        attr => { S['w' + k]['bonus' + idx] = attr; afterChange(); },
+        S['w' + k]['bonus' + idx]);
     });
   });
   const bodyTalent = $('.picktag[data-armortalent="body"]');
@@ -872,7 +877,7 @@ function wire() {
 function clearBuild() {
   S = { name: '', spec: null, subclass: '',
     gear: { mask: {}, gloves: {}, holster: {}, body: {}, backpack: {}, kneepads: {} },
-    w1: { id: '', t1: '', t2: '', tier: 'T2' }, w2: { id: '', t1: '', t2: '', tier: 'T2' },
+    w1: { id: '', t1: '', t2: '', tier: 'T2', bonus1: '', bonus2: '' }, w2: { id: '', t1: '', t2: '', tier: 'T2', bonus1: '', bonus2: '' },
     os: '', skills: [null, null, null] };
   prevStats = {};
 }
@@ -971,6 +976,8 @@ function buildHash() {
       const t = GAME.weaponTalents.find(x => x.name === w.t2);
       p.set(`w${n}t2`, t ? t.id : w.t2);
     }
+    if (w.bonus1) p.set(`w${n}b1`, w.bonus1);
+    if (w.bonus2) p.set(`w${n}b2`, w.bonus2);
   });
   if (S.os) p.set('os', S.os);
   S.skills.forEach((sm, i) => { if (sm) p.set('sm' + (i + 1), sm); });
@@ -1013,7 +1020,9 @@ function loadFromHash() {
       id: wId,
       t1: resolveWeaponTalent(p.get(`w${n}t`) || ''),
       t2: resolveWeaponTalent(p.get(`w${n}t2`) || ''),
-      tier: p.get(`w${n}tr`) || 'T2'
+      tier: p.get(`w${n}tr`) || 'T2',
+      bonus1: p.get(`w${n}b1`) || '',
+      bonus2: p.get(`w${n}b2`) || ''
     };
   });
 
