@@ -395,6 +395,7 @@ function renderWeapons() {
     }
     // Exotic fixed talent
     const fixedEl = $(`#w${k}fixed`);
+    const talentPair = fixedEl ? fixedEl.parentElement : null;
     if (fixedEl) {
       if (isExotic && exoticData) {
         fixedEl.style.display = '';
@@ -404,8 +405,10 @@ function renderWeapons() {
         if (!fixedDesc) { fixedDesc = document.createElement('span'); fixedDesc.className = 'picktag__desc'; fixedEl.appendChild(fixedDesc); }
         fixedDesc.textContent = exoticData.talentDescription;
         fixedEl.classList.add('is-set', 'is-fixed');
+        if (talentPair) talentPair.classList.add('has-exotic');
       } else {
         fixedEl.style.display = 'none';
+        if (talentPair) talentPair.classList.remove('has-exotic');
       }
     }
     setTalent(`w${k}t1`, w.t1);
@@ -815,11 +818,11 @@ function wire() {
       },
       null);
   });
-  $$('.slot[data-wslot]').forEach(el => el.addEventListener('click', (e) => { if (e.target.closest('.picktag')) return; openWeaponPicker(el.dataset.wslot); }));
-  // Use event delegation for weapon talent clicks (they must work through dynamic content)
-  document.addEventListener('click', (e) => {
-    const picktag = e.target.closest('.picktag[data-talent]');
-    if (picktag) { e.stopPropagation(); openWTalentPicker(picktag.dataset.talent); }
+  $$('.slot[data-wslot]').forEach(el => el.addEventListener('click', (e) => { if (e.target.closest('.picktag') || e.target.closest('.talent-pair')) return; openWeaponPicker(el.dataset.wslot); }));
+  // Weapon talent pickers — direct binding
+  $$('.picktag[data-talent]').forEach(el => {
+    el.style.cursor = 'pointer';
+    el.addEventListener('click', (e) => { e.preventDefault(); e.stopPropagation(); openWTalentPicker(el.dataset.talent); });
   });
   const bodyTalent = $('.picktag[data-armortalent="body"]');
   const bpTalent = $('.picktag[data-armortalent="backpack"]');

@@ -278,8 +278,7 @@
 
 /* talent pair */
 .talent-pair{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}
-.talent-pair:has(.is-fixed){grid-template-columns:1fr;gap:6px}
-.talent-pair:has(.is-fixed) .picktag:not(.is-fixed){display:flex}
+.talent-pair.has-exotic{grid-template-columns:1fr;gap:6px}
 .picktag{
   display:flex;flex-direction:column;gap:3px;padding:9px 11px;cursor:pointer;
   background:var(--panel);border:1px solid var(--line);
