@@ -289,10 +289,10 @@ function renderDiagnostics() {
     out.push(['warn', `No <b>Weapon Crit Damage</b> source despite a Crit Chance roll — crit value is being wasted.`]);
   if ((stats['Received Healing'] || 0) > 0 && (stats['Damage Reduction'] || 0) > 0)
     out.push(['ok', `<b>Received Healing → Damage Reduction</b> loop is online. Strong sustain core.`]);
-  const focus = GAME.specFocus[S.spec];
+  const focus = getEffectiveFocus();
   const os = osProto(S.os);
   if (os && os.specialization && focus && os.specialization !== focus)
-    out.push(['info', `OS Protocol scales with <b>${os.specialization}</b> but spec focus is <b>${focus}</b> — verify the stat investment lines up.`]);
+    out.push(['info', `OS Protocol scales with <b>${os.specialization}</b> but your subclass focus is <b>${focus}</b> — verify the stat investment lines up.`]);
   if (!out.length) out.push(['ok', `No conflicts detected. Loadout is internally consistent.`]);
 
   const ico = {
@@ -312,14 +312,29 @@ function renderGear() {
     const slot = el.dataset.slot;
     const g = S.gear[slot];
     const valEl = el.querySelector('.gearslot__val');
+    const txtEl = el.querySelector('.gearslot__txt');
+    let attrEl = el.querySelector('.gearslot__attrs');
     if (g && g.set) {
       filled++;
       valEl.textContent = g.set;
       el.classList.add('is-set');
       el.classList.toggle('is-bonus', counts[g.set] >= 2);
+      // Show abbreviated attributes inside the txt container
+      const attrs = [g.b1, g.b2].filter(Boolean);
+      if (attrs.length) {
+        if (!attrEl) {
+          attrEl = document.createElement('span');
+          attrEl.className = 'gearslot__attrs';
+          (txtEl || el).appendChild(attrEl);
+        }
+        attrEl.textContent = attrs.map(a => abbrevAttr(a)).join(' · ');
+      } else if (attrEl) {
+        attrEl.textContent = '';
+      }
     } else {
       valEl.textContent = 'Empty';
       el.classList.remove('is-set', 'is-bonus');
+      if (attrEl) attrEl.textContent = '';
     }
   });
   const gp = $('#gearPieces');
@@ -327,6 +342,38 @@ function renderGear() {
   const linked = Object.values(counts).some(n => n >= 2);
   const rig = $('#gearPanel .rig');
   if (rig) rig.classList.toggle('is-linked', linked);
+}
+/* Abbreviate long attribute names for compact gear slot display */
+function abbrevAttr(a) {
+  const map = {
+    'Weapon Critical Hit Chance': 'CHC',
+    'Weapon Critical Hit Damage': 'CHD',
+    'Headshot Damage': 'HSD',
+    'Weapon Damage': 'WD',
+    'Weapon Multi-Shot Chance': 'Multi-Shot',
+    'Max Health': 'Health',
+    'Damage Reduction': 'DR',
+    'Received Healing': 'Heal',
+    'Skill Cooldown Recovery': 'CDR',
+    'Skill Critical Chance': 'Skill CHC',
+    'Skill Critical Damage': 'Skill CHD',
+    'Skill Duration': 'Skill Dur',
+    'Skill Intensity': 'Intensity',
+    'Skill Multi-Shot Chance': 'Skill Multi',
+    'Healing Intensity': 'Heal Int',
+    'Signature Ability Charge Efficiency': 'Sig Charge',
+    'Release Extra Protection': 'Extra Prot',
+    'Magazine Size': 'Mag Size',
+    'Reload Speed': 'Reload',
+    'Optimal Range': 'Range',
+    'Rate of Fire': 'RoF',
+    'Movement Speed': 'Move Spd',
+    'Damage Bonus': 'Dmg Bonus',
+    'Skill Damage': 'Skill Dmg',
+    'Skill Health': 'Skill HP',
+    'Skill Radius': 'Skill Rad',
+  };
+  return map[a] || a;
 }
 
 /* ====================== RENDER: WEAPONS ====================== */
@@ -408,6 +455,7 @@ function renderSkills() {
       <div class="skill-slot__txt">
         <span class="skill-slot__nm">${sm ? sm.name : 'Select Skill Mod'}</span>
         <span class="skill-slot__sub">${sm ? sm.specialization + ' · ' + (sm.bonus2 || '') : '—'}</span>
+        ${sm && sm.bonus3 ? `<span class="skill-slot__desc">${sm.bonus3}</span>` : ''}
       </div>
     </div>`;
   }).join('');
@@ -567,8 +615,35 @@ function openGearPicker(slot) {
   openModal('SELECT GEAR SET — ' + slot.toUpperCase(),
     GAME.gearSets,
     g => ({ id: g.name, name: g.name, type: 'Gear Set', desc: `2pc: ${g.bonus2} · 4pc: ${g.bonus4}` }),
-    name => { S.gear[slot].set = name; afterChange($(`.gearslot[data-slot="${slot}"]`)); },
+    name => {
+      S.gear[slot].set = name;
+      // Now pick attribute 1
+      openAttrPicker(slot, 1);
+    },
     S.gear[slot].set);
+}
+/* All available minor attributes a player can roll on gear */
+const ALL_ATTRS = [
+  ...ATTR_CATEGORIES['Firepower'],
+  ...ATTR_CATEGORIES['Toughness'],
+  ...ATTR_CATEGORIES['Engineering']
+].filter((v, i, a) => a.indexOf(v) === i); // deduplicate
+
+function openAttrPicker(slot, num) {
+  const items = ALL_ATTRS.map(a => ({ id: a, name: a, cat: ATTR_CAT[a] }));
+  openModal(`${slot.toUpperCase()} — ATTRIBUTE ${num}`,
+    items,
+    a => ({ id: a.id, name: a.name, type: a.cat, desc: '' }),
+    attr => {
+      S.gear[slot]['b' + num] = attr;
+      if (num === 1) {
+        // Pick attribute 2
+        openAttrPicker(slot, 2);
+      } else {
+        afterChange($('.gearslot[data-slot="' + slot + '"]'));
+      }
+    },
+    S.gear[slot]['b' + num]);
 }
 function openTalentPicker(slot, isBody) {
   const pool = isBody ? GAME.bodyArmorTalents : GAME.backpackTalents;
