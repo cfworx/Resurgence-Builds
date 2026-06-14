@@ -1,5 +1,6 @@
 ---
 import SocialBar from './SocialBar.astro';
+import RelatedHub from './RelatedHub.astro';
 export interface Props {
   title?: string;
 }
@@ -9,6 +10,7 @@ const year = new Date().getFullYear();
 const isHome = Astro.url.pathname === '/' || Astro.url.pathname === '/index.html';
 ---
 
+<RelatedHub current={Astro.url.pathname} />
 <footer class="site-footer">
   <div class="footer-inner">
     <div class="footer-left">

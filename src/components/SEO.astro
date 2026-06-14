@@ -181,6 +181,7 @@ if (article) {
     },
     datePublished: article.publishDate,
     dateModified: article.modifiedDate || article.publishDate,
+    lastReviewed: article.modifiedDate || article.publishDate,
     author: {
       '@type': 'Person',
       name: article.author,
@@ -189,6 +190,7 @@ if (article) {
     },
     publisher: { '@id': `${siteUrl}/#organization` },
     about: { '@id': `${siteUrl}/#division-resurgence` },
+    inLanguage: 'en-US',
     ...(article.wordCount && { wordCount: article.wordCount }),
   };
 
@@ -205,6 +207,11 @@ if (faqs.length > 0) {
   graph.push({
     '@type': 'FAQPage',
     '@id': `${canonicalURL}#faq`,
+    inLanguage: 'en-US',
+    speakable: {
+      '@type': 'SpeakableSpecification',
+      cssSelector: ['.faq-question', '.faq-answer'],
+    },
     mainEntity: faqs.map(faq => ({
       '@type': 'Question',
       name: faq.question,
@@ -244,6 +251,8 @@ const finalJsonLd = {
 <meta name="description" content={description} />
 {keywords.length > 0 && <meta name="keywords" content={keywords.join(', ')} />}
 <link rel="canonical" href={canonicalURL} />
+<link rel="alternate" hreflang="en" href={canonicalURL} />
+<link rel="alternate" hreflang="x-default" href={canonicalURL} />
 {noindex && <meta name="robots" content="noindex, nofollow" />}
 
 <!-- Open Graph -->
