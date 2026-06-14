@@ -428,7 +428,7 @@
     // Spec group
     if (state.spec) {
       const specName = state.spec === 'Tech Operator' ? 'Tech Op' : state.spec === 'Field Medic' ? 'Medic' : state.spec;
-      talentHTML += `<div class="sl-row sl-row--spec"><span class="sl-icon"><img src="/images/icons/icon-spec.webp" alt="" class="sl-img" width="16" height="16"></span><div class="sl-body"><span class="sl-label">SPEC</span><span class="sl-val">${specName}${state.subclass ? ' <span class="sl-dim">/ ' + state.subclass + '</span>' : ''}</span></div></div>`;
+      talentHTML += `<div class="sl-row sl-row--spec"><span class="sl-icon"><img src="/images/icons/icon-spec.webp" alt="" class="sl-img" width="24" height="24"></span><div class="sl-body"><span class="sl-label">SPEC</span><span class="sl-val">${specName}${state.subclass ? ' <span class="sl-dim">/ ' + state.subclass + '</span>' : ''}</span></div></div>`;
     }
 
     // Primary Weapon group
@@ -440,7 +440,7 @@
       if (ex1) talents.push(`<span style="color:#f5a623">${ex1.talentName}</span>`);
       if (w1T) talents.push(w1T.name);
       if (w1T2) talents.push(w1T2.name);
-      talentHTML += `<div class="sl-row sl-row--weapon"><span class="sl-icon"><img src="/images/icons/icon-weapon.webp" alt="" class="sl-img" width="16" height="16"></span><div class="sl-body"><span class="sl-label">PRIMARY</span><span class="sl-val">${w1Name} ${tierTag}</span>${talents.length ? '<span class="sl-talents">' + talents.join(' · ') + '</span>' : ''}</div></div>`;
+      talentHTML += `<div class="sl-row sl-row--weapon"><span class="sl-icon"><img src="/images/icons/icon-weapon.webp" alt="" class="sl-img" width="24" height="24"></span><div class="sl-body"><span class="sl-label">PRIMARY</span><span class="sl-val">${w1Name} ${tierTag}</span>${talents.length ? '<span class="sl-talents">' + talents.join(' · ') + '</span>' : ''}</div></div>`;
     }
 
     // Secondary Weapon group
@@ -452,7 +452,7 @@
       if (ex2) talents.push(`<span style="color:#f5a623">${ex2.talentName}</span>`);
       if (w2T) talents.push(w2T.name);
       if (w2T2) talents.push(w2T2.name);
-      talentHTML += `<div class="sl-row sl-row--weapon"><span class="sl-icon"><img src="/images/icons/icon-weapon.webp" alt="" class="sl-img" width="16" height="16"></span><div class="sl-body"><span class="sl-label">SECONDARY</span><span class="sl-val">${w2Name} ${tierTag}</span>${talents.length ? '<span class="sl-talents">' + talents.join(' · ') + '</span>' : ''}</div></div>`;
+      talentHTML += `<div class="sl-row sl-row--weapon"><span class="sl-icon"><img src="/images/icons/icon-weapon.webp" alt="" class="sl-img" width="24" height="24"></span><div class="sl-body"><span class="sl-label">SECONDARY</span><span class="sl-val">${w2Name} ${tierTag}</span>${talents.length ? '<span class="sl-talents">' + talents.join(' · ') + '</span>' : ''}</div></div>`;
     }
 
     // Gear Talents group
@@ -460,13 +460,13 @@
       let gearParts = [];
       if (bodyT) gearParts.push(`<span class="sl-val">${bodyT.name} <span class="sl-dim">chest</span></span>`);
       if (bpT) gearParts.push(`<span class="sl-val">${bpT.name} <span class="sl-dim">pack</span></span>`);
-      talentHTML += `<div class="sl-row sl-row--gear"><span class="sl-icon"><img src="/images/icons/icon-shield.webp" alt="" class="sl-img" width="16" height="16"></span><div class="sl-body"><span class="sl-label">GEAR TALENTS</span>${gearParts.join('')}</div></div>`;
+      talentHTML += `<div class="sl-row sl-row--gear"><span class="sl-icon"><img src="/images/icons/icon-shield.webp" alt="" class="sl-img" width="24" height="24"></span><div class="sl-body"><span class="sl-label">GEAR TALENTS</span>${gearParts.join('')}</div></div>`;
     }
 
     // OS Protocol group
     if (osP) {
       const osColor = osP.specialization === 'Firepower' ? '#e74c3c' : osP.specialization === 'Toughness' ? '#3b82f6' : '#f1c40f';
-      talentHTML += `<div class="sl-row sl-row--os"><span class="sl-icon"><img src="/images/icons/icon-os.webp" alt="" class="sl-img" width="16" height="16"></span><div class="sl-body"><span class="sl-label">OS PROTOCOL</span><span class="sl-val">${osP.name} <span class="sl-pill" style="background:${osColor}22;color:${osColor};border-color:${osColor}44">${osP.specialization}</span></span></div></div>`;
+      talentHTML += `<div class="sl-row sl-row--os"><span class="sl-icon"><img src="/images/icons/icon-os.webp" alt="" class="sl-img" width="24" height="24"></span><div class="sl-body"><span class="sl-label">OS PROTOCOL</span><span class="sl-val">${osP.name} <span class="sl-pill" style="background:${osColor}22;color:${osColor};border-color:${osColor}44">${osP.specialization}</span></span></div></div>`;
     }
 
     // Skill Mods group
@@ -483,7 +483,7 @@
       }
     });
     if (hasChipsets) {
-      talentHTML += `<div class="sl-row sl-row--smc"><span class="sl-icon"><img src="/images/icons/icon-skillmod.webp" alt="" class="sl-img" width="16" height="16"></span><div class="sl-body"><span class="sl-label">SKILL MODS</span>${chipsetNames.map(n => '<span class="sl-val">' + n + '</span>').join('')}</div></div>`;
+      talentHTML += `<div class="sl-row sl-row--smc"><span class="sl-icon"><img src="/images/icons/icon-skillmod.webp" alt="" class="sl-img" width="24" height="24"></span><div class="sl-body"><span class="sl-label">SKILL MODS</span>${chipsetNames.map(n => '<span class="sl-val">' + n + '</span>').join('')}</div></div>`;
     }
 
     if(talentHTML){ talentsSection.style.display = 'block'; talentsEl.innerHTML = talentHTML; }
@@ -512,31 +512,31 @@
     
     if (qualityBadge && qualityText && qualityBox) {
       if (score === 0) {
-        qualityBadge.innerHTML = '<img src="/images/icons/icon-rank-trash.webp" alt="" class="sl-img" width="20" height="20"> FLAMING PILE OF GARBAGE';
+        qualityBadge.innerHTML = '<img src="/images/icons/icon-rank-trash.webp" alt="" class="sl-img" width="28" height="28"> FLAMING PILE OF GARBAGE';
         qualityBadge.style.color = '#e74c3c';
         qualityBox.style.background = 'rgba(231, 76, 60, 0.1)';
         qualityBox.style.borderColor = '#e74c3c';
         qualityText.textContent = "This build is an absolute dumpster fire. You're going to get spawn-trapped by a standard red-bar NPC in a level 1 tutorial zone. Select a spec and get some actual gear set bonuses or weapon talents before someone sees you like this.";
       } else if (score < 7) {
-        qualityBadge.innerHTML = '<img src="/images/icons/icon-rank-poor.webp" alt="" class="sl-img" width="20" height="20"> MILDLY PATHETIC';
+        qualityBadge.innerHTML = '<img src="/images/icons/icon-rank-poor.webp" alt="" class="sl-img" width="28" height="28"> MILDLY PATHETIC';
         qualityBadge.style.color = '#f1c40f';
         qualityBox.style.background = 'rgba(241, 196, 15, 0.1)';
         qualityBox.style.borderColor = '#f1c40f';
         qualityText.textContent = "You managed to find exactly one stat connection. Congratulations, you are now slightly more useful than a decorative traffic cone. Keep linking slots to get past this embarrassment.";
       } else if (score < 13) {
-        qualityBadge.innerHTML = '<img src="/images/icons/icon-rank-average.webp" alt="" class="sl-img" width="20" height="20"> SEMI-COMPETENT';
+        qualityBadge.innerHTML = '<img src="/images/icons/icon-rank-average.webp" alt="" class="sl-img" width="28" height="28"> SEMI-COMPETENT';
         qualityBadge.style.color = '#3498db';
         qualityBox.style.background = 'rgba(52, 152, 219, 0.1)';
         qualityBox.style.borderColor = '#3498db';
         qualityText.textContent = "Two synergies! You might not instantly explode the split second you step into the Dark Zone, but don't go challenging anyone who has a pulse or a working keyboard just yet.";
       } else if (score < 18) {
-        qualityBadge.innerHTML = '<img src="/images/icons/icon-rank-great.webp" alt="" class="sl-img" width="20" height="20"> CERTIFIED SWEATY';
+        qualityBadge.innerHTML = '<img src="/images/icons/icon-rank-great.webp" alt="" class="sl-img" width="28" height="28"> CERTIFIED SWEATY';
         qualityBadge.style.color = '#9b59b6';
         qualityBox.style.background = 'rgba(155, 89, 182, 0.1)';
         qualityBox.style.borderColor = '#9b59b6';
         qualityText.textContent = "Three synergies! Look at you go, you absolute tryhard. You're probably running around the house telling your dog about your optimal crit stacking. Go take a shower, you've earned it.";
       } else {
-        qualityBadge.innerHTML = '<img src="/images/icons/icon-rank-goat.webp" alt="" class="sl-img" width="20" height="20"> GOD-TIER CHAD LOADOUT';
+        qualityBadge.innerHTML = '<img src="/images/icons/icon-rank-goat.webp" alt="" class="sl-img" width="28" height="28"> GOD-TIER CHAD LOADOUT';
         qualityBadge.style.color = '#2ecc71';
         qualityBox.style.background = 'rgba(46, 204, 113, 0.1)';
         qualityBox.style.borderColor = '#2ecc71';

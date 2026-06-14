@@ -50,12 +50,12 @@ const jsonLd = {
 const allAttributes = bonusAttributes.flatMap(cat => cat.attributes);
 const SPECS = ['Demolitionist','Tech Operator','Bulwark','Vanguard','Field Medic'];
 const SLOTS = [
-  { key: 'mask', label: 'Mask', icon: '<img src="/images/icons/icon-mask.webp" alt="" class="slot-icon-img" width="18" height="18">', hasTalent: false },
-  { key: 'body', label: 'Body Armor', icon: '<img src="/images/icons/icon-shield.webp" alt="" class="slot-icon-img" width="18" height="18">', hasTalent: true, talentType: 'body' },
-  { key: 'backpack', label: 'Backpack', icon: '<img src="/images/icons/icon-backpack.webp" alt="" class="slot-icon-img" width="18" height="18">', hasTalent: true, talentType: 'backpack' },
-  { key: 'gloves', label: 'Gloves', icon: '<img src="/images/icons/icon-gloves.webp" alt="" class="slot-icon-img" width="18" height="18">', hasTalent: false },
-  { key: 'holster', label: 'Holster', icon: '<img src="/images/icons/icon-holster.webp" alt="" class="slot-icon-img" width="18" height="18">', hasTalent: false },
-  { key: 'kneepads', label: 'Kneepads', icon: '<img src="/images/icons/icon-kneepads.webp" alt="" class="slot-icon-img" width="18" height="18">', hasTalent: false },
+  { key: 'mask', label: 'Mask', icon: '<img src="/images/icons/icon-mask.webp" alt="" class="slot-icon-img" width="24" height="24">', hasTalent: false },
+  { key: 'body', label: 'Body Armor', icon: '<img src="/images/icons/icon-shield.webp" alt="" class="slot-icon-img" width="24" height="24">', hasTalent: true, talentType: 'body' },
+  { key: 'backpack', label: 'Backpack', icon: '<img src="/images/icons/icon-backpack.webp" alt="" class="slot-icon-img" width="24" height="24">', hasTalent: true, talentType: 'backpack' },
+  { key: 'gloves', label: 'Gloves', icon: '<img src="/images/icons/icon-gloves.webp" alt="" class="slot-icon-img" width="24" height="24">', hasTalent: false },
+  { key: 'holster', label: 'Holster', icon: '<img src="/images/icons/icon-holster.webp" alt="" class="slot-icon-img" width="24" height="24">', hasTalent: false },
+  { key: 'kneepads', label: 'Kneepads', icon: '<img src="/images/icons/icon-kneepads.webp" alt="" class="slot-icon-img" width="24" height="24">', hasTalent: false },
 ];
 
 const dataPayload = JSON.stringify({ gearSets, weaponTalents, exoticWeapons, standardWeapons, bodyArmorTalents, backpackTalents, osProtocols, skillModCombos, bonusAttributes, allAttributes });
@@ -127,7 +127,7 @@ const dataPayload = JSON.stringify({ gearSets, weaponTalents, exoticWeapons, sta
             <h2 class="quad__heading">:: OS Protocol</h2>
             <div class="slot-card" id="slot-os">
               <div class="slot-card__header">
-                <span class="slot-card__icon"><img src="/images/icons/icon-os.webp" alt="" class="slot-icon-img" width="18" height="18"></span>
+                <span class="slot-card__icon"><img src="/images/icons/icon-os.webp" alt="" class="slot-icon-img" width="24" height="24"></span>
                 <span class="slot-card__label">OS Protocol</span>
                 <span class="slot-card__badge" id="badge-os"></span>
               </div>
@@ -140,7 +140,7 @@ const dataPayload = JSON.stringify({ gearSets, weaponTalents, exoticWeapons, sta
             </div>
             <div class="slot-card" id="slot-chipset">
               <div class="slot-card__header">
-                <span class="slot-card__icon"><img src="/images/icons/icon-skillmod.webp" alt="" class="slot-icon-img" width="18" height="18"></span>
+                <span class="slot-card__icon"><img src="/images/icons/icon-skillmod.webp" alt="" class="slot-icon-img" width="24" height="24"></span>
                 <span class="slot-card__label">Skill Mods (Select 3)</span>
               </div>
               <div class="slot-card__body" style="display:flex; flex-direction:column; gap: var(--sp-2);">
@@ -173,7 +173,7 @@ const dataPayload = JSON.stringify({ gearSets, weaponTalents, exoticWeapons, sta
             <h2 class="quad__heading">:: Weapons</h2>
             <div class="slot-card" id="slot-weapon1">
               <div class="slot-card__header">
-                <span class="slot-card__icon"><img src="/images/icons/icon-weapon.webp" alt="" class="slot-icon-img" width="18" height="18"></span>
+                <span class="slot-card__icon"><img src="/images/icons/icon-weapon.webp" alt="" class="slot-icon-img" width="24" height="24"></span>
                 <span class="slot-card__label">Primary Weapon</span>
               </div>
               <div class="slot-card__body">
@@ -220,7 +220,7 @@ const dataPayload = JSON.stringify({ gearSets, weaponTalents, exoticWeapons, sta
             </div>
             <div class="slot-card" id="slot-weapon2">
               <div class="slot-card__header">
-                <span class="slot-card__icon"><img src="/images/icons/icon-weapon.webp" alt="" class="slot-icon-img" width="18" height="18"></span>
+                <span class="slot-card__icon"><img src="/images/icons/icon-weapon.webp" alt="" class="slot-icon-img" width="24" height="24"></span>
                 <span class="slot-card__label">Secondary Weapon</span>
               </div>
               <div class="slot-card__body">
@@ -328,7 +328,7 @@ const dataPayload = JSON.stringify({ gearSets, weaponTalents, exoticWeapons, sta
       <div class="summary-header">
         <h2 class="summary-title">Build Summary</h2>
         <div class="summary-actions-top">
-          <button class="btn-icon" id="btn-copy" type="button" title="Copy Build Link" aria-label="Copy build link"><img src="/images/icons/icon-link.webp" alt="" class="slot-icon-img" width="18" height="18"></button>
+          <button class="btn-icon" id="btn-copy" type="button" title="Copy Build Link" aria-label="Copy build link"><img src="/images/icons/icon-link.webp" alt="" class="slot-icon-img" width="24" height="24"></button>
           <button class="btn-icon btn-icon--danger" id="btn-reset" type="button" title="Reset Build" aria-label="Reset build">↺</button>
         </div>
       </div>
@@ -339,7 +339,7 @@ const dataPayload = JSON.stringify({ gearSets, weaponTalents, exoticWeapons, sta
 
       <!-- Build Quality Indicator -->
       <div id="build-quality-indicator" class="summary-quality">
-        <div id="build-quality-badge" class="summary-quality__badge"><img src="/images/icons/icon-rank-trash.webp" alt="" class="sl-img" width="20" height="20"> FLAMING PILE OF GARBAGE</div>
+        <div id="build-quality-badge" class="summary-quality__badge"><img src="/images/icons/icon-rank-trash.webp" alt="" class="sl-img" width="28" height="28"> FLAMING PILE OF GARBAGE</div>
         <p id="build-quality-text" class="summary-quality__text">This build is an absolute dumpster fire. Select a spec and get some gear.</p>
       </div>
 
@@ -347,30 +347,30 @@ const dataPayload = JSON.stringify({ gearSets, weaponTalents, exoticWeapons, sta
 
       <!-- Spec & Weapons -->
       <div id="summary-talents" class="summary-section" style="display:none">
-        <h3 class="summary-section__title"><span class="summary-section__icon"><img src="/images/icons/icon-loadout.webp" alt="" class="sl-img" width="16" height="16"></span> Loadout</h3>
+        <h3 class="summary-section__title"><span class="summary-section__icon"><img src="/images/icons/icon-loadout.webp" alt="" class="sl-img" width="22" height="22"></span> Loadout</h3>
         <div id="summary-talents-list" class="summary-section__body"></div>
       </div>
 
       <!-- Active Sets -->
       <div id="summary-sets" class="summary-section" style="display:none">
-        <h3 class="summary-section__title"><span class="summary-section__icon"><img src="/images/icons/icon-shield.webp" alt="" class="sl-img" width="16" height="16"></span> Active Set Bonuses</h3>
+        <h3 class="summary-section__title"><span class="summary-section__icon"><img src="/images/icons/icon-shield.webp" alt="" class="sl-img" width="22" height="22"></span> Active Set Bonuses</h3>
         <div id="summary-sets-list" class="summary-section__body"></div>
       </div>
 
       <!-- Synergies -->
       <div id="summary-synergies" class="summary-section" style="display:none">
-        <h3 class="summary-section__title"><span class="summary-section__icon"><img src="/images/icons/icon-synergy.webp" alt="" class="sl-img" width="16" height="16"></span> Synergies</h3>
+        <h3 class="summary-section__title"><span class="summary-section__icon"><img src="/images/icons/icon-synergy.webp" alt="" class="sl-img" width="22" height="22"></span> Synergies</h3>
         <div id="summary-synergies-list" class="summary-section__body"></div>
       </div>
 
       <!-- Warnings -->
       <div id="summary-conflicts" class="summary-section" style="display:none">
-        <h3 class="summary-section__title"><span class="summary-section__icon"><img src="/images/icons/icon-warning.webp" alt="" class="sl-img" width="16" height="16"></span> Warnings</h3>
+        <h3 class="summary-section__title"><span class="summary-section__icon"><img src="/images/icons/icon-warning.webp" alt="" class="sl-img" width="22" height="22"></span> Warnings</h3>
         <div id="summary-conflicts-list" class="summary-section__body"></div>
       </div>
 
       <div class="summary-actions">
-        <button class="btn btn--primary" id="btn-copy-bottom" type="button"><img src="/images/icons/icon-copy.webp" alt="" class="sl-img" width="16" height="16"> Copy Build Link</button>
+        <button class="btn btn--primary" id="btn-copy-bottom" type="button"><img src="/images/icons/icon-copy.webp" alt="" class="sl-img" width="22" height="22"> Copy Build Link</button>
         <button class="btn btn--outline" id="btn-reset-bottom" type="button">Reset</button>
       </div>
       <div id="copy-toast" class="copy-toast">Link copied!</div>
@@ -413,7 +413,7 @@ const dataPayload = JSON.stringify({ gearSets, weaponTalents, exoticWeapons, sta
 
 </BaseLayout>
 
-<style>
+<style is:global>
 /* ============================================================
    BUILD PLANNER — In-Game Equipment Screen Style
    Division Resurgence HUD-inspired dark tactical theme
@@ -1092,18 +1092,18 @@ const dataPayload = JSON.stringify({ gearSets, weaponTalents, exoticWeapons, sta
 .sl-row--gear { border-left-color: #22c55e; }
 .sl-row--os { border-left-color: #3b82f6; }
 .sl-row--smc { border-left-color: #a855f7; }
-.sl-icon { font-size: 14px; flex-shrink: 0; line-height: 1; margin-top: 1px; }
-.sl-body { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.sl-icon { flex-shrink: 0; line-height: 1; width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; }
+.sl-body { display: flex; flex-direction: column; gap: 3px; min-width: 0; }
 .sl-label {
   display: block;
   font-family: var(--font-mono);
-  font-size: 8px;
+  font-size: 9px;
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--ink-muted);
   opacity: 0.6;
-  margin-bottom: 1px;
+  margin-bottom: 2px;
 }
 .sl-row--spec .sl-label { color: var(--accent); opacity: 1; }
 .sl-row--weapon .sl-label { color: #f97316; opacity: 1; }
