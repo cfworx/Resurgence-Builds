@@ -519,40 +519,88 @@ function setArmorTalentDesc(el, name, pool) {
 /* ====================== SYNERGY MAP + LOOP ====================== */
 function renderLoop() {
   const counts = setCounts();
-  const top = Object.entries(counts).sort((a, b) => b[1] - a[1])[0];
+  const topSets = Object.entries(counts).sort((a, b) => b[1] - a[1]);
   const bt = S.gear.body.talent, kt = S.gear.backpack.talent;
-  const nodes = [];
-  if (top && top[1] >= 2) nodes.push(`<div class="loop__node"><b>${top[0]}</b> <span class="arrow">→</span> Set Bonus Active (${Math.min(top[1],4)}pc)</div>`);
-  if (kt) nodes.push(`<div class="loop__node"><b>${kt}</b> <span class="arrow">→</span> Backpack talent synergy</div>`);
-  if (bt) nodes.push(`<div class="loop__node"><b>${bt}</b> <span class="arrow">→</span> Body armor talent synergy</div>`);
   const os = osProto(S.os);
-  if (os) nodes.push(`<div class="loop__node"><b>${os.name}</b> <span class="arrow">→</span> ${os.specialization} focus</div>`);
-  if (!nodes.length) nodes.push('<div class="loop__node">Equip gear to map synergies.</div>');
-  const graphEl = $('#loopGraph');
-  if (graphEl) graphEl.innerHTML = nodes.join('');
+  const w1 = weapon(S.w1.id), w2 = weapon(S.w2.id);
+  const focus = getEffectiveFocus();
+  const stats = computeStats();
 
-  // Dynamic gameplay loop based on spec
-  const steps = [];
+  // Build the overview sections
+  const sections = [];
+
+  // 1) Build Identity
   if (S.spec) {
-    const focus = GAME.specFocus[S.spec];
-    if (focus === 'Toughness') {
-      steps.push('Anchor the fight with defensive positioning and sustain.');
-      steps.push('Trigger Extra Health and damage reduction windows through talents.');
-      steps.push('Maintain incoming healing loops to keep armor topped.');
-    } else if (focus === 'Firepower') {
-      steps.push('Maximize weapon uptime through reload and rate of fire bonuses.');
-      steps.push('Chain critical hits to trigger damage amplification talents.');
-      steps.push('Use cover transitions to maintain optimal range.');
-    } else if (focus === 'Engineering') {
-      steps.push('Deploy skills early to activate Engineering scaling.');
-      steps.push('Chain skill crits into cooldown reduction for sustained pressure.');
-      steps.push('Position to maximize skill radius and duration coverage.');
+    let identity = `<b>${S.spec}${S.subclass ? ' / ' + S.subclass : ''}</b> loadout`;
+    if (focus) identity += ` focused on <b>${focus}</b>`;
+    identity += '.';
+    if (topSets.length && topSets[0][1] >= 2) {
+      const setDescs = topSets.filter(([,n]) => n >= 2).map(([name, n]) => `${name} (${Math.min(n,4)}pc)`);
+      identity += ` Core gear sets: ${setDescs.join(', ')}.`;
     }
-    steps.push('Use OS Protocol windows to amplify your core stat loop.');
-    steps.push('Coordinate signature ability timing with team for maximum impact.');
+    sections.push(identity);
   }
+
+  // 2) Weapon loadout
+  if (w1 || w2) {
+    let wLine = 'Weapons: ';
+    if (w1) wLine += `<b>${w1.name}</b> (${w1.type})`;
+    if (w1 && w2) wLine += ' + ';
+    if (w2) wLine += `<b>${w2.name}</b> (${w2.type})`;
+    wLine += '.';
+    // Weapon talent synergies
+    const talents = [S.w1.t1, S.w1.t2, S.w2.t1, S.w2.t2].filter(Boolean);
+    if (talents.length) wLine += ` Key talents: ${talents.join(', ')}.`;
+    sections.push(wLine);
+  }
+
+  // 3) Armor talents
+  if (bt || kt) {
+    let tLine = '';
+    if (bt) {
+      const btData = GAME.bodyArmorTalents.find(t => t.name === bt);
+      tLine += `<b>${bt}</b> (Body)${btData ? ' — ' + btData.description.substring(0, 80) + (btData.description.length > 80 ? '…' : '') : ''}`;
+    }
+    if (bt && kt) tLine += ' | ';
+    if (kt) {
+      const ktData = GAME.backpackTalents.find(t => t.name === kt);
+      tLine += `<b>${kt}</b> (Backpack)${ktData ? ' — ' + ktData.description.substring(0, 80) + (ktData.description.length > 80 ? '…' : '') : ''}`;
+    }
+    sections.push(tLine);
+  }
+
+  // 4) OS Protocol
+  if (os) {
+    sections.push(`OS Protocol: <b>${os.name}</b> (${os.specialization}) — ${os.talentDescription.substring(0, 100)}${os.talentDescription.length > 100 ? '…' : ''}`);
+  }
+
+  // 5) Stat highlights
+  const statPairs = Object.entries(stats).filter(([,v]) => v > 0).sort((a,b) => b[1] - a[1]);
+  if (statPairs.length) {
+    const highlights = statPairs.slice(0, 4).map(([name, val]) => {
+      const pct = typeof val === 'number' && val < 50 ? val.toFixed(1) + '%' : val;
+      return `${name} <b>${pct}</b>`;
+    });
+    sections.push('Top stats: ' + highlights.join(' · '));
+  }
+
+  // 6) Playstyle tip
+  if (focus === 'Engineering') {
+    sections.push('<em>Playstyle:</em> Deploy skills aggressively to maximize Engineering scaling. Chain skill crits for cooldown reduction and keep pressure up with sustained skill coverage.');
+  } else if (focus === 'Firepower') {
+    sections.push('<em>Playstyle:</em> Maximize weapon uptime and chain critical hits to trigger damage amplification. Use cover transitions to maintain optimal range and burst windows.');
+  } else if (focus === 'Toughness') {
+    sections.push('<em>Playstyle:</em> Anchor the fight with defensive positioning. Trigger Extra Health and damage reduction windows through talents. Keep armor topped through healing loops.');
+  }
+
+  if (!sections.length) {
+    sections.push('Equip gear, weapons, and select talents to generate your build overview.');
+  }
+
+  const graphEl = $('#loopGraph');
+  if (graphEl) graphEl.innerHTML = sections.map(s => `<p class="overview__p">${s}</p>`).join('');
   const stepsEl = $('#loopSteps');
-  if (stepsEl) stepsEl.innerHTML = steps.map(s => `<li>${s}</li>`).join('');
+  if (stepsEl) stepsEl.innerHTML = '';
 }
 
 /* ====================== MASTER RENDER ====================== */
@@ -767,8 +815,8 @@ function wire() {
       },
       null);
   });
-  $$('.slot[data-wslot]').forEach(el => el.addEventListener('click', () => openWeaponPicker(el.dataset.wslot)));
-  $$('.picktag[data-talent]').forEach(el => el.addEventListener('click', () => openWTalentPicker(el.dataset.talent)));
+  $$('.slot[data-wslot]').forEach(el => el.addEventListener('click', (e) => { if (e.target.closest('.picktag')) return; openWeaponPicker(el.dataset.wslot); }));
+  $$('.picktag[data-talent]').forEach(el => el.addEventListener('click', (e) => { e.stopPropagation(); openWTalentPicker(el.dataset.talent); }));
   const bodyTalent = $('.picktag[data-armortalent="body"]');
   const bpTalent = $('.picktag[data-armortalent="backpack"]');
   if (bodyTalent) bodyTalent.addEventListener('click', () => openTalentPicker('body', true));
