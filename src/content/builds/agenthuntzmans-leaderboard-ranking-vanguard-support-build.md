@@ -83,8 +83,8 @@ The loop is simple: stack Engineering through Torrential Downpour and Fully Char
 | Tactical Link | **Bugle Call** | Deploying Link grants Rate of Fire, Damage Reduction, and Movement Speed buffs to the team (exact values vary by rank) |
 
 **Alternatives worth knowing:**
-- Smart Cover: **Hardened Casing** (+12% Armor to covered allies) if your team is dying before they can deal damage
-- Scanning Pulse: **Exposing Burst** (increases Exposed stack damage) for harder PvE content with tankier enemies
+- Smart Cover: **Field Bastion** (kills/assists grant allies Extra Health equal to 120% Engineering for 10s) if your team is dying before they can deal damage
+- Scanning Pulse: **Targeted Surveillance** (grants Pulsed allies Weapon Crit Hit Chance equal to 3.60% Engineering for 10s) for harder PvE content with tankier enemies
 
 ---
 
