@@ -154,6 +154,21 @@ function computeStats() {
     if (w.bonus1) add(w.bonus1, repRoll(w.bonus1));
     if (w.bonus2) add(w.bonus2, repRoll(w.bonus2));
   });
+  // OS Protocol stat contributions
+  const os = osProto(S.os);
+  if (os) {
+    if (os.mainStat && os.mainValue) {
+      const [s, v] = splitBonus(os.mainStat + ' ' + os.mainValue);
+      if (v) add(os.mainStat, v);
+    }
+    ['1','2','3'].forEach(i => {
+      const attr = os['attr' + i], val = os['val' + i];
+      if (attr && val) {
+        const num = parseFloat(val.replace(/[^0-9.]/g, ''));
+        if (num) add(attr, num);
+      }
+    });
+  }
   return totals;
 }
 function splitBonus(str) {
