@@ -197,7 +197,8 @@ function renderStats(flash) {
     const v = t[stat] || 0;
     const pv = prevStats[stat] || 0;
     const d = +(v - pv).toFixed(1);
-    const changed = flash && Math.abs(d) > 0.05;
+    const hadBefore = stat in prevStats;
+    const changed = flash && hadBefore && Math.abs(d) > 0.05;
     const deltaHtml = changed ? `<span class="delta${d < 0 ? ' neg' : ''}">${d > 0 ? '+' : ''}${d}</span>` : '';
     const cat = ATTR_CAT[stat] || 'Engineering';
     const iconSrc = statCatIcons[cat] || statCatIcons['Engineering'];
