@@ -57,6 +57,25 @@ const ATTR_CATEGORIES = {
   'Engineering': ['Skill Damage','Skill Duration','Skill Cooldown Recovery','Skill Critical Chance','Skill Critical Damage','Skill Intensity','Skill Radius','Skill Health','Skill Multi-Shot Chance','Healing Intensity','Signature Ability Charge Efficiency','Engineering','Release Extra Protection']
 };
 Object.entries(ATTR_CATEGORIES).forEach(([cat, attrs]) => attrs.forEach(a => ATTR_CAT[a] = cat));
+
+/* Short codes for URL compression — maps full attribute name ↔ 2-4 char code */
+const ATTR_SHORT = {
+  'Weapon Damage':'wd','Weapon Critical Hit Chance':'chc','Weapon Critical Hit Damage':'chd',
+  'Headshot Damage':'hsd','Weapon Multi-Shot Chance':'wms','Rate of Fire':'rof',
+  'Magazine Size':'mag','Reload Speed':'rls','Accuracy':'acc','Stability':'stb',
+  'Optimal Range':'opr','Firepower':'fp',
+  'Armor':'arm','Max Health':'mhp','Damage Reduction':'dr','Received Healing':'rh',
+  'Movement Speed':'ms','Toughness':'tgh','Damage Bonus':'db',
+  'Skill Damage':'sd','Skill Duration':'sdu','Skill Cooldown Recovery':'scr',
+  'Skill Critical Chance':'scc','Skill Critical Damage':'scd','Skill Intensity':'si',
+  'Skill Radius':'sr','Skill Health':'sh','Skill Multi-Shot Chance':'sms',
+  'Healing Intensity':'hi','Signature Ability Charge Efficiency':'sace',
+  'Engineering':'eng','Release Extra Protection':'rep'
+};
+const ATTR_LONG = Object.fromEntries(Object.entries(ATTR_SHORT).map(([k,v]) => [v,k]));
+function attrToCode(name) { return ATTR_SHORT[name] || name; }
+function codeToAttr(code) { return ATTR_LONG[code] || code; }
+
 function catClass(attr) {
   const c = ATTR_CAT[attr];
   return c === 'Firepower' ? 'cat-fp' : c === 'Toughness' ? 'cat-tough' : c === 'Engineering' ? 'cat-eng' : 'cat-uni';
@@ -975,10 +994,9 @@ function buildHash() {
       const t = pool.find(x => x.name === g.talent);
       p.set(key + 't', t ? t.id : g.talent);
     }
-    if (g.b1) p.set(key + '1', g.b1);
-    if (g.b2) p.set(key + '2', g.b2);
+    if (g.b1) p.set(key + '1', attrToCode(g.b1));
+    if (g.b2) p.set(key + '2', attrToCode(g.b2));
   });
-  // Weapons: w1s=standard weapon, w1e=exotic weapon, w1t=talent1, w1t2=talent2, w1tr=tier
   [['1', S.w1], ['2', S.w2]].forEach(([n, w]) => {
     if (!w.id) return;
     const isExotic = GAME.exoticWeapons.some(x => x.id === w.id);
@@ -992,8 +1010,8 @@ function buildHash() {
       const t = GAME.weaponTalents.find(x => x.name === w.t2);
       p.set(`w${n}t2`, t ? t.id : w.t2);
     }
-    if (w.bonus1) p.set(`w${n}b1`, w.bonus1);
-    if (w.bonus2) p.set(`w${n}b2`, w.bonus2);
+    if (w.bonus1) p.set(`w${n}b1`, attrToCode(w.bonus1));
+    if (w.bonus2) p.set(`w${n}b2`, attrToCode(w.bonus2));
   });
   if (S.os) p.set('os', S.os);
   S.skills.forEach((sm, i) => { if (sm) p.set('sm' + (i + 1), sm); });
@@ -1023,8 +1041,8 @@ function loadFromHash() {
       S.gear[slot] = {
         set: resolveGearSet(setVal),
         talent: isBody ? resolveBodyTalent(talent) : (slot === 'backpack' ? resolveBackpackTalent(talent) : ''),
-        b1: p.get(key + '1') || '',
-        b2: p.get(key + '2') || ''
+        b1: codeToAttr(p.get(key + '1') || ''),
+        b2: codeToAttr(p.get(key + '2') || '')
       };
     }
   });
@@ -1037,8 +1055,8 @@ function loadFromHash() {
       t1: resolveWeaponTalent(p.get(`w${n}t`) || ''),
       t2: resolveWeaponTalent(p.get(`w${n}t2`) || ''),
       tier: p.get(`w${n}tr`) || 'T2',
-      bonus1: p.get(`w${n}b1`) || '',
-      bonus2: p.get(`w${n}b2`) || ''
+      bonus1: codeToAttr(p.get(`w${n}b1`) || ''),
+      bonus2: codeToAttr(p.get(`w${n}b2`) || '')
     };
   });
 
