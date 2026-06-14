@@ -18,7 +18,7 @@ sources:
   - '<a href="https://www.youtube.com/watch?v=b1ZjnGeeRKI">AgentHuntzman, Best Scout Build in Division Resurgence (Vanguard Meta)</a>, April 26, 2026.'
   - 'In-game Division Resurgence Build Database, verified May 2026.'
   - 'The in-game Armory, community gear and talent reference.'
-plannerHash: "s=Vanguard&sc=Scout&n=Recon+Scout&ms=gs-9&m1=Skill+Cooldown+Recovery&m2=Skill+Intensity&cs=gs-3&ct=ba-16&c1=Armor&c2=Health&ps=gs-9&pt=bp-10&p1=Skill+Intensity&p2=Skill+Cooldown+Recovery&gs=gs-9&g1=Skill+Duration&g2=Skill+Cooldown+Recovery&hs=gs-9&h1=Signature+Ability+Charge+Efficiency&h2=Skill+Intensity&ks=gs-9&k1=Skill+Cooldown+Recovery&k2=Weapon+Damage&w1s=sw-3&w1tr=T1&w1t=wt-16&w1t2=wt-53&w2s=sw-11&w2tr=T1&w2t=wt-16&w2t2=wt-22&os=os-6&sm1=smc-50&sm2=smc-27&sm3=smc-8"
+plannerHash: "s=Vanguard&sc=Scout&n=Recon+Scout&ms=gs-9&m1=Skill+Cooldown+Recovery&m2=Skill+Intensity&cs=gs-3&ct=ba-16&c1=Armor&c2=Health&ps=gs-9&pt=bp-10&p1=Skill+Intensity&p2=Skill+Cooldown+Recovery&gs=gs-9&g1=Skill+Duration&g2=Skill+Cooldown+Recovery&hs=gs-9&h1=Signature+Ability+Charge+Efficiency&h2=Skill+Intensity&ks=gs-9&k1=Skill+Cooldown+Recovery&k2=Weapon+Damage&w1s=sw-3&w1tr=T1&w1t=wt-16&w1t2=wt-53&w2s=sw-11&w2tr=T1&w2t=wt-16&w2t2=wt-22&os=os-6&sm1=smc-72&sm2=smc-57&sm3=smc-59"
 faqs:
   - question: "Why does my DPS look terrible on this build?"
     answer: "Because you're reading the wrong number, champ. Your stats show YOUR damage. It does not show the Weapon Damage you're pumping into every teammate through Smart Cover, the +20% vulnerability from Scanning Pulse, or the rate-of-fire buff from Tactical Link. Your team's total DPS is tripling. Yours just isn't the one doing it. Think of yourself as the guy who brought the aux cord to the party. Nobody thanks the DJ, but the party dies without him."
@@ -78,7 +78,7 @@ The loop is simple: stack Engineering through Torrential Downpour and Fully Char
 
 | Skill | Mod | Effect |
 |---|---|---|
-| Tactical Smart Cover | **Mobile Bastion** | Kills/assists behind cover grant +10 Sig. Ability charge to the whole team |
+| Tactical Smart Cover | **Advanced Position** | Kills/assists behind cover grant +10 Sig. Ability charge to the whole team |
 | Scanning Pulse | **Pulse Feedback (C-Chip)** | Each pulse grants +8 Sig. Ability charge to the allied team |
 | Tactical Link | **Bugle Call** | Deploying Link grants Rate of Fire, Damage Reduction, and Movement Speed buffs to the team (exact values vary by rank) |
 
