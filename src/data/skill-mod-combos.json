@@ -109,7 +109,7 @@
     "name": "Field Mortar",
     "specialization": "Demolitionist",
     "bonus2": "Armor+[4.7%~9.3%]",
-    "bonus3": "Increases 9.60% Weapon Damage to enemies hit by M32A1 Grenade Launcher for 20s and extends the duration of Artillery Turret by 2s."
+    "bonus3": "Increases 9.60% Weapon Damage to enemies hit by M32A1 Grenade Launcher for 20 second(s) and extends the duration of Artillery Turret by 2 second(s)."
   },
   {
     "id": "smc-17",
@@ -253,129 +253,129 @@
   },
   {
     "id": "smc-37",
-    "name": "Bulwark Shield",
+    "name": "Reciprocal Charge",
     "specialization": "Bulwark",
-    "bonus2": "Damage Reduction+[2.0%~4.0%]",
-    "bonus3": "Deploying Ballistic Shield grants bonus Armor and Toughness stacks."
+    "bonus2": "Max Health+[4.0%~8.0%]",
+    "bonus3": "When Health is below 50%, Shockwave Spike Mk.3 hits restore Health equal to 0.80% Max Health. When Health is above 50%, Shockwave Spike Mk.3 hits grant +12% Weapon Critical Hit Damage."
   },
   {
     "id": "smc-38",
-    "name": "Protective Shield",
+    "name": "Pack-a-Punch",
     "specialization": "Bulwark",
-    "bonus2": "Damage Reduction+[2.0%~4.0%]",
-    "bonus3": "Ballistic Shield absorbs bonus damage and grants resistance to status effects."
+    "bonus2": "Max Health+[4.0%~8.0%]",
+    "bonus3": "Shockwave Spike Mk.3 hits grant +1.60% Weapon Damage for 5 second(s), up to 5 stack(s)."
   },
   {
     "id": "smc-39",
-    "name": "Shield Bash",
+    "name": "King of the Pit",
     "specialization": "Bulwark",
-    "bonus2": "Damage Reduction+[2.0%~4.0%]",
-    "bonus3": "Shield Bash deals bonus damage and applies Disoriented to hit enemies."
+    "bonus2": "Weapon Damage+[2.0%~4.0%]",
+    "bonus3": "Shockwave Spike Mk.3 hits grant +4% Weapon Critical Hit Chance for 10 second(s), up to 4 stack(s)."
   },
   {
     "id": "smc-40",
-    "name": "Cover Advance",
+    "name": "Field Repairs",
     "specialization": "Bulwark",
-    "bonus2": "Damage Reduction+[2.0%~4.0%]",
-    "bonus3": "Moving while using Ballistic Shield grants bonus Movement Speed and reduces incoming damage."
+    "bonus2": "Skill Health+[4.0%~8.0%]",
+    "bonus3": "Deploying the Phalanx Shield grants +4% Rate of Fire. Hits restore 0.60% Shield Health. Talent Cooldown: 1 second(s)."
   },
   {
     "id": "smc-41",
-    "name": "Impact Resistance",
+    "name": "Impenetrable Wall",
     "specialization": "Bulwark",
-    "bonus2": "Damage Reduction+[2.0%~4.0%]",
-    "bonus3": "Ballistic Shield provides bonus protection against explosive damage and staggers."
+    "bonus2": "Weapon Damage+[2.0%~4.0%]",
+    "bonus3": "Grants +12% Toughness while the Phalanx Shield is deployed."
   },
   {
     "id": "smc-42",
-    "name": "Counter Attack",
+    "name": "Positive Feedback",
     "specialization": "Bulwark",
-    "bonus2": "Damage Reduction+[2.0%~4.0%]",
-    "bonus3": "Taking damage while Ballistic Shield is deployed grants bonus Weapon Damage."
+    "bonus2": "Max Health+[4.0%~8.0%]",
+    "bonus3": "Within 6 second(s) of deploying the Breach Combo, hits have a 40% chance of restoring 1 bullet(s). Critical Hits increase duration to 0.50 second(s) (capped at 2 second(s))."
   },
   {
     "id": "smc-43",
-    "name": "Tactical Defense",
+    "name": "Optimal Range",
     "specialization": "Bulwark",
-    "bonus2": "Damage Reduction+[2.0%~4.0%]",
-    "bonus3": "Deploying Ballistic Shield reduces Skill Cooldowns and grants bonus Signature Ability Charge."
+    "bonus2": "Skill Health+[4.0%~8.0%]",
+    "bonus3": "Deploying the Breach Combo grants +12% Rate of Fire. Hits on enemies within 10 meter(s) restore 1 bullets (capped at 3 bullets). Talent Cooldown: 1 second(s)."
   },
   {
     "id": "smc-44",
-    "name": "Fortified Position",
+    "name": "Berserker",
     "specialization": "Bulwark",
-    "bonus2": "Damage Reduction+[2.0%~4.0%]",
-    "bonus3": "Stationary Ballistic Shield grants increasing Damage Reduction stacks over time."
+    "bonus2": "Weapon Damage+[2.0%~4.0%]",
+    "bonus3": "During Breach Combo, grants +100% Weapon Critical Hit Chance if there are at least 1 enemie(s) within 20 meter(s)."
   },
   {
     "id": "smc-45",
-    "name": "Reactive Plating",
+    "name": "Attention Seeker",
     "specialization": "Bulwark",
-    "bonus2": "Damage Reduction+[2.0%~4.0%]",
-    "bonus3": "Ballistic Shield absorbs bonus elemental damage and converts it to Armor."
+    "bonus2": "Weapon Damage+[2.0%~4.0%]",
+    "bonus3": "Shockwave Spike Mk.3 hits grant +1.20% Damage Reduction, up to 5 stack(s), but nearby enemies focus the Agent in priority."
   },
   {
     "id": "smc-46",
-    "name": "Vanguard Push",
+    "name": "Schadenfreude",
     "specialization": "Bulwark",
-    "bonus2": "Damage Reduction+[2.0%~4.0%]",
-    "bonus3": "Shield Bash knocks back enemies and grants bonus Movement Speed to the player."
+    "bonus2": "Skill Duration+[3.2%~6.4%]",
+    "bonus3": "Shockwave Spike Mk.3 hits grant +0.80% Max Health for 20 second(s), up to 5 stack(s). Shockwave Spike Mk.3 deals additional damage equal to 0.60% Max Health."
   },
   {
     "id": "smc-47",
-    "name": "Guardian Protocol",
+    "name": "Camp Fire",
     "specialization": "Bulwark",
-    "bonus2": "Damage Reduction+[2.0%~4.0%]",
-    "bonus3": "Ballistic Shield protects nearby allies, reducing damage they take while the shield is deployed."
+    "bonus2": "Skill Duration+[3.2%~6.4%]",
+    "bonus3": "Grants +14% Armor while located within 10 meter(s) of the Shockwave Spike Mk.3."
   },
   {
     "id": "smc-48",
-    "name": "Shield Mastery",
+    "name": "Provocateur",
     "specialization": "Bulwark",
-    "bonus2": "Damage Reduction+[2.0%~4.0%]",
-    "bonus3": "Increases Ballistic Shield durability and reduces its deployment cooldown."
+    "bonus2": "Weapon Damage+[2.0%~4.0%]",
+    "bonus3": "Enemies within 20 meter(s) focus the Agent in priority when deploying the Phalanx Shield. Grants +3.20% Damage Reduction for 10 second(s) for each enemy who is targeting the Agent, up to 5 stack(s). Talent Cooldown: 20 second(s)."
   },
   {
     "id": "smc-49",
-    "name": "Breach Protocol",
+    "name": "Rational Distribution",
     "specialization": "Bulwark",
-    "bonus2": "Damage Reduction+[2.0%~4.0%]",
-    "bonus3": "Deploying Ballistic Shield and immediately firing grants bonus Weapon Damage."
+    "bonus2": "Rate of Fire+[4.0%~8.0%]",
+    "bonus3": "Grants Extra Shield Health equal to 9.20% Max Health."
   },
   {
     "id": "smc-50",
-    "name": "Shock Absorber",
+    "name": "Last Moment",
     "specialization": "Bulwark",
-    "bonus2": "Damage Reduction+[2.0%~4.0%]",
-    "bonus3": "Ballistic Shield absorbs and stores damage, releasing it as bonus Weapon Damage on next attack."
+    "bonus2": "Skill Health+[4.0%~8.0%]",
+    "bonus3": "Reaching 10% Phalanx Shield Health restores 15% Max Shield Health. Talent Cooldown: 30 second(s)."
   },
   {
     "id": "smc-51",
-    "name": "Iron Curtain",
+    "name": "Anchored",
     "specialization": "Bulwark",
-    "bonus2": "Damage Reduction+[2.0%~4.0%]",
-    "bonus3": "Ballistic Shield grants additional protection to the player's flanks while deployed."
+    "bonus2": "Weapon Damage+[2.0%~4.0%]",
+    "bonus3": "Breach Combo hits restore Shield Health and Health equal to 4.20% Max Health."
   },
   {
     "id": "smc-52",
-    "name": "Intimidation",
+    "name": "Heavy Weight",
     "specialization": "Bulwark",
-    "bonus2": "Damage Reduction+[2.0%~4.0%]",
-    "bonus3": "Enemies who attack the Ballistic Shield have reduced Weapon Damage for a duration."
+    "bonus2": "Max Health+[4.0%~8.0%]",
+    "bonus3": "Breach Combo hits deal additional damage equal to 10% Max Health."
   },
   {
     "id": "smc-53",
-    "name": "Sentinel",
+    "name": "Tough Times",
     "specialization": "Bulwark",
-    "bonus2": "Damage Reduction+[2.0%~4.0%]",
-    "bonus3": "Ballistic Shield provides bonus protection in a wider arc, covering flanking attacks."
+    "bonus2": "Skill Health+[4.0%~8.0%]",
+    "bonus3": "Breach Combo hits grant +33.80% Armor for 15 second(s), up to 5 stack(s)."
   },
   {
     "id": "smc-54",
-    "name": "Siege Mentality",
+    "name": "Adaptive Armor",
     "specialization": "Bulwark",
-    "bonus2": "Damage Reduction+[2.0%~4.0%]",
-    "bonus3": "Prolonged Ballistic Shield deployment grants increasing Weapon Damage stacks."
+    "bonus2": "Skill Health+[4.0%~8.0%]",
+    "bonus3": "Grants +9.60% Weapon Critical Hit Damage when Shield Health is above 50%. Grants +4.80% Shield Damage Reduction when Shield Health is below 50%."
   },
   {
     "id": "smc-55",
@@ -483,179 +483,165 @@
     "bonus3": "Scanning Pulse disrupts enemy skills and electronics on Pulsed targets."
   },
   {
-    "id": "smc-89",
+    "id": "smc-70",
     "name": "Commando",
     "specialization": "Vanguard",
     "bonus2": "Damage Reduction+[2.0%~4.0%]",
     "bonus3": "Kills or assists while using Tactical Link grant +10.20% Weapon Critical Hit Chance for 10 second(s)."
   },
   {
-    "id": "smc-90",
+    "id": "smc-71",
     "name": "Armored Train",
     "specialization": "Vanguard",
     "bonus2": "Skill Cooldown Recovery-[2.0%~4.0%]",
     "bonus3": "While behind a Smart Cover, weapon hits have a 5% chance of granting +2% Weapon Critical Hit Chance for 20 second(s), up to 3 stack(s)."
   },
   {
-    "id": "smc-91",
+    "id": "smc-72",
     "name": "Field Supplies",
     "specialization": "Vanguard",
     "bonus2": "Damage Reduction+[2.0%~4.0%]",
     "bonus3": "Kills or assists on Pulsed enemies restore 6% Health and refill 6.40% of the current magazine."
   },
   {
-    "id": "smc-92",
+    "id": "smc-73",
     "name": "Tactical Insight",
     "specialization": "Vanguard",
     "bonus2": "Signature Ability Charge Efficiency+[4.0%~8.0%]",
     "bonus3": "Deploying Scanning Pulse restores 48 Signature Ability Charge, increased by 64 if there are more than 3 enemies within 70 meter(s)."
   },
   {
-    "id": "smc-70",
+    "id": "smc-74",
     "name": "Armor Strengthening",
     "specialization": "Field Medic",
     "bonus2": "Skill Duration+[3.2%~6.4%]",
     "bonus3": "Grants +32.00% Armor while located within 20 meter(s) of a Chemical Trap."
   },
   {
-    "id": "smc-71",
+    "id": "smc-75",
     "name": "Lightweight",
     "specialization": "Field Medic",
     "bonus2": "Damage Reduction+[2.0%~4.0%]",
     "bonus3": "Chemical Trap can be deployed farther away. Hits on enemies inside Chemical Traps apply 1 stack(s) of Corrosive. Headshots apply 4 stacks instead. Talent Cooldown: 1.50 seconds."
   },
   {
-    "id": "smc-72",
+    "id": "smc-76",
     "name": "Siphon",
     "specialization": "Field Medic",
     "bonus2": "Damage Reduction+[2.0%~4.0%]",
     "bonus3": "Using a Chemical Trap to apply a stack of Corrosive has a 50% chance of restoring 4 Signature Ability Charge. Talent Cooldown: 0.50 seconds."
   },
   {
-    "id": "smc-73",
+    "id": "smc-77",
     "name": "Hereafter Resilience",
     "specialization": "Field Medic",
     "bonus2": "Skill Intensity+[2.0%~4.0%]",
     "bonus3": "When deploying Oxidizing Hive, you lose Health equal to 25% of your current Health but gain Extra Health equal to 35.00% of Max Health and 5% Armor for 20s. When Oxidizing Hive is attached to your backpack, it releases Micro Corrosive Drones to enemies within 15.00m every 1.60s."
   },
   {
-    "id": "smc-74",
+    "id": "smc-78",
     "name": "Improved Formula",
     "specialization": "Field Medic",
     "bonus2": "Damage Reduction+[2.0%~4.0%]",
     "bonus3": "If Oxidizing Hive is attached to your backpack and no enemy is hit by your weapon within 3s, hitting enemies with your weapon will trigger Oxidizing Hive to release 13 Mini Corrosive Drones flying towards the target and applying Corrosion to them."
   },
   {
-    "id": "smc-75",
+    "id": "smc-79",
     "name": "Generative Formula",
     "specialization": "Field Medic",
     "bonus2": "Damage Reduction+[2.0%~4.0%]",
     "bonus3": "While being assisted by the Oxidizing Hive, hits restore 8 Signature Ability Charge. Talent Cooldown: 2 seconds."
   },
   {
-    "id": "smc-76",
+    "id": "smc-80",
     "name": "Enhanced Formula",
     "specialization": "Field Medic",
     "bonus2": "Skill Critical Damage+[4.0%~8.0%]",
     "bonus3": "Oxidizing Swarm hits inflict -12% Damage for 20 seconds. Killing an enemy within 20 meter(s) who is also afflicted by this debuff restores Health equal to 8% Missing Health for 20 second(s)."
   },
   {
-    "id": "smc-77",
+    "id": "smc-81",
     "name": "Augmented Range",
     "specialization": "Field Medic",
     "bonus2": "Damage Reduction+[2.0%~4.0%]",
     "bonus3": "Oxidizing Swarm can be thrown farther away. Oxidizing Swarm hits that are at least 20 meter(s) away inflict -14.40% Damage Reduction for 10 second(s)."
   },
   {
-    "id": "smc-78",
+    "id": "smc-82",
     "name": "Harvest",
     "specialization": "Field Medic",
     "bonus2": "Damage Reduction+[2.0%~4.0%]",
     "bonus3": "Oxidizing Swarm hits reduce Skill Cooldown by 2.40 seconds."
   },
   {
-    "id": "smc-79",
+    "id": "smc-83",
     "name": "Detrimental Treatment",
     "specialization": "Field Medic",
     "bonus2": "Damage Reduction+[2.0%~4.0%]",
     "bonus3": "Support Station deals damage to enemies who are within its radius. Damage is increased by 25% while located within the radius of a Support Station."
   },
   {
-    "id": "smc-80",
+    "id": "smc-84",
     "name": "Auto Trauma Treatment",
     "specialization": "Field Medic",
     "bonus2": "Healing Intensity+[3.3%~6.7%]",
     "bonus3": "Grants +6% Incoming Healing and automatically revives any member of the ally team who is downed within the radius of a Support Station."
   },
   {
-    "id": "smc-81",
+    "id": "smc-85",
     "name": "Effective Triage",
     "specialization": "Field Medic",
     "bonus2": "Healing Intensity+[3.3%~6.7%]",
     "bonus3": "Grants +40% Incoming Healing to any ally below 50% Health who is located within the radius of a Support Station."
   },
   {
-    "id": "smc-82",
+    "id": "smc-86",
     "name": "Defensive Measures",
     "specialization": "Field Medic",
     "bonus2": "Damage Reduction+[2.0%~4.0%]",
     "bonus3": "When Healing Hive is active, hitting enemies within 20m with weapons deals additional damage equal to 240% of your Toughness. Trigger Interval: 2s."
   },
   {
-    "id": "smc-83",
+    "id": "smc-87",
     "name": "Buddy Treatment",
     "specialization": "Field Medic",
     "bonus2": "Healing Intensity+[3.3%~6.7%]",
     "bonus3": "When using Healing Hive, if your and your teammate's Health is below 50%, increases by 2.00%. Using it on you deploys micro Mender Drones to your teammates within 2 meters, restore a small amount of Health if deployed (It won't grant buffs of Specialization Focus)."
   },
   {
-    "id": "smc-84",
+    "id": "smc-88",
     "name": "Mutual Support",
     "specialization": "Field Medic",
     "bonus2": "Healing Intensity+[3.3%~6.7%]",
     "bonus3": "While Healing Hive is deployed, grants +9.60% Skill Intensity when located within 20 meter(s) of an ally. While Healing Hive is deployed, grants +20% Movement Speed when located at least 20 meter(s) away from allies."
   },
   {
-    "id": "smc-85",
+    "id": "smc-89",
     "name": "Aggressive Drones",
     "specialization": "Field Medic",
     "bonus2": "Damage Reduction+[2.0%~4.0%]",
     "bonus3": "Instead of healing allies, Healing Swarm deals damage to enemies by releasing 16 nano-drones that target enemies every 1.50 second(s)."
   },
   {
-    "id": "smc-86",
+    "id": "smc-90",
     "name": "Emergency Measures",
     "specialization": "Field Medic",
     "bonus2": "Healing Intensity+[3.3%~6.7%]",
     "bonus3": "Healing Swarm heals allies over 10 seconds. When an ally's Health drops to 0 during the healing process, restores Health equal to 16% Max Health to them for 5 second(s)."
   },
   {
-    "id": "smc-87",
+    "id": "smc-91",
     "name": "Doom Dealer",
     "specialization": "Field Medic",
     "bonus2": "Healing Intensity+[3.3%~6.7%]",
     "bonus3": "For each ally healed by Healing Swarm, grants +1.20% Skill Intensity for 20 second(s), up to 16 stack(s)."
   },
   {
-    "id": "smc-88",
+    "id": "smc-92",
     "name": "Chemical Recharge",
     "specialization": "Field Medic",
     "bonus2": "Skill Cooldown Recovery-[2.0%~4.0%]",
     "bonus3": "Killing an enemy affected by Chemical Trap reduces the cooldown of your second equipped ability by 4.80 seconds."
-  },
-  {
-    "id": "smc-95",
-    "name": "Attritional Charge",
-    "specialization": "Bulwark",
-    "bonus2": "Damage Reduction+[2.0%~4.0%]",
-    "bonus3": "Shockwave Spike Mk.3 grants Damage Reduction and Weapon Critical Hit Chance while deployed. Damage Reduction +3.66%, Weapon Critical Hit Chance +4.16%."
-  },
-  {
-    "id": "smc-96",
-    "name": "Provocateur",
-    "specialization": "Bulwark",
-    "bonus2": "Weapon Damage+[2.0%~4.0%]",
-    "bonus3": "Enemies within 20 meter(s) focus the Agent in priority when deploying the Phalanx Shield. Grants +3.20% Damage Reduction for 10 second(s) for each enemy who is targeting the Agent, up to 5 stack(s)."
   },
   {
     "id": "smc-93",
