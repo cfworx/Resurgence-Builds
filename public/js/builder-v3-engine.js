@@ -591,19 +591,19 @@ function renderLoop() {
     let tLine = '';
     if (bt) {
       const btData = GAME.bodyArmorTalents.find(t => t.name === bt);
-      tLine += `<b>${bt}</b> (Body)${btData ? ' — ' + btData.description.substring(0, 80) + (btData.description.length > 80 ? '…' : '') : ''}`;
+      tLine += `<b>${bt}</b> (Body)${btData ? ' — ' + btData.description : ''}`;
     }
     if (bt && kt) tLine += ' | ';
     if (kt) {
       const ktData = GAME.backpackTalents.find(t => t.name === kt);
-      tLine += `<b>${kt}</b> (Backpack)${ktData ? ' — ' + ktData.description.substring(0, 80) + (ktData.description.length > 80 ? '…' : '') : ''}`;
+      tLine += `<b>${kt}</b> (Backpack)${ktData ? ' — ' + ktData.description : ''}`;
     }
     sections.push(tLine);
   }
 
   // 4) OS Protocol
   if (os) {
-    sections.push(`OS Protocol: <b>${os.name}</b> (${os.specialization}) — ${os.talentDescription.substring(0, 100)}${os.talentDescription.length > 100 ? '…' : ''}`);
+    sections.push(`OS Protocol: <b>${os.name}</b> (${os.specialization}) — ${os.talentDescription}`);
   }
 
   // 5) Stat highlights
