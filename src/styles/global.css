@@ -1320,7 +1320,6 @@ main li a:hover {
   margin: var(--sp-4) 0;
   border-radius: var(--border-radius);
   overflow: hidden;
-  animation: adFadeIn 0.6s ease;
 }
 
 /* Pre-approval placeholder: thin dark line, barely visible */
@@ -1335,13 +1334,29 @@ main li a:hover {
   margin: var(--sp-2) 0;
 }
 
-/* When real ads are live */
+/* ── Hide unfilled ad slots ──
+   AdSense sets data-ad-status="filled" once an ad loads.
+   Until then, collapse the slot so it's invisible.
+   Once approved, ads auto-appear — no code change needed. */
 .ad-slot .adsbygoogle {
   display: block;
   width: 100%;
-  background: var(--surface);
+  background: transparent;
   max-height: 120px;
   overflow: hidden;
+}
+
+/* Before AdSense fills, hide the slot completely.
+   The ins element starts with height:0 and no visible content.
+   We hide via CSS so there's no white flash — ads auto-appear when filled. */
+.ad-slot:not(.ad-filled) {
+  display: none;
+}
+
+/* Once JS detects an ad loaded, it adds .ad-filled → slot appears */
+.ad-slot.ad-filled {
+  display: block;
+  animation: adFadeIn 0.6s ease;
 }
 
 /* --- Disclaimer / Humility Banner --- */

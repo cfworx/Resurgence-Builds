@@ -26,11 +26,13 @@ const { slotId = "8102223000", className = '', format = 'horizontal', label = 'A
            data-ad-format={format}
            data-full-width-responsive="true"></ins>
       <script is:inline>
-        try {
-          (window.adsbygoogle = window.adsbygoogle || []).push({});
-        } catch (e) {
-          console.warn("AdSense failed to load:", e);
-        }
+        (function() {
+          try {
+            (window.adsbygoogle = window.adsbygoogle || []).push({});
+          } catch (e) {
+            console.warn("AdSense failed to load:", e);
+          }
+        })();
       </script>
     </>
   ) : (

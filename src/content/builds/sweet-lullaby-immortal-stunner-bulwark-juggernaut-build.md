@@ -17,7 +17,7 @@ shareText: "Nadie's Rank 16 Bulwark Juggernaut stun-tank. 336k Health, Pummeling
 sources:
   - 'All gear stats, weapon talents, OS Protocol details, combo set bonuses, and combat statistics sourced from in-game screenshots provided by Nadie, June 2026.'
   - '<a href="https://www.facebook.com/share/v/1GMpakHatx/">Nadie, Gameplay Demonstration Video</a>, June 2026.'
-plannerHash: "s=Bulwark&sc=Juggernaut&n=Sweet+Lullaby&ms=gs-14&m1=Damage+Reduction&m2=Armor&cs=gs-14&ct=ba-25&c1=Signature+Ability+Charge+Efficiency&c2=Max+Health&ps=gs-14&pt=bp-21&p1=Weapon+Critical+Hit+Chance&p2=Damage+Reduction&gs=gs-15&g1=Max+Health&g2=Armor&hs=gs-14&h1=Received+Healing&h2=Signature+Ability+Charge+Efficiency&ks=gs-15&k1=Received+Healing&k2=Skill+Duration&w1s=sw-13&w1tr=T2&w1t=wt-6&w1t2=wt-15&w2s=sw-6&w2tr=T2&w2t=wt-46&w2t2=wt-60&os=os-54"
+plannerHash: "s=Bulwark&sc=Juggernaut&n=Sweet+Lullaby&ms=gs-14&m1=Damage+Reduction&m2=Armor&cs=gs-14&ct=ba-25&c1=Signature+Ability+Charge+Efficiency&c2=Max+Health&ps=gs-14&pt=bp-21&p1=Weapon+Critical+Hit+Chance&p2=Damage+Reduction&gs=gs-15&g1=Max+Health&g2=Armor&hs=gs-14&h1=Received+Healing&h2=Signature+Ability+Charge+Efficiency&ks=gs-15&k1=Received+Healing&k2=Skill+Duration&w1s=sw-13&w1tr=T2&w1t=wt-6&w1t2=wt-15&w2s=sw-6&w2tr=T2&w2t=wt-46&w2t2=wt-60&os=os-54&sm1=smc-37&sm2=smc-50&sm3=smc-51"
 faqs:
   - question: "What is the best Bulwark Juggernaut build in Division Resurgence?"
     answer: "Nadie's Sweet Lullaby build runs 4pc Healing Elites, 2pc Self-Propelled Shield, PPSH-41 with Backup Protection and Damage Trade, FAMAS with Shooting Repair and Swift Taunt, and the Pummeling Shield OS Protocol. It sits at 336k Health, 13.2k Armor, and Rank 16 on the Asia Server Bulwark Juggernaut leaderboard."

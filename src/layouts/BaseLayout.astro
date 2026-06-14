@@ -96,5 +96,29 @@ const suppressAds = noAds || noindex;
       });
     });
   </script>
+  <!-- Ad reveal observer: watches for AdSense to fill slots, then shows them -->
+  <script is:inline>
+    (function() {
+      var obs = new MutationObserver(function(mutations) {
+        mutations.forEach(function(m) {
+          if (m.type === 'attributes' && m.attributeName === 'data-ad-status') {
+            var ins = m.target;
+            if (ins.getAttribute('data-ad-status') === 'filled') {
+              var slot = ins.closest('.ad-slot');
+              if (slot) slot.classList.add('ad-filled');
+            }
+          }
+        });
+      });
+      document.querySelectorAll('.adsbygoogle').forEach(function(ins) {
+        obs.observe(ins, { attributes: true, attributeFilter: ['data-ad-status'] });
+        // Check if already filled (race condition)
+        if (ins.getAttribute('data-ad-status') === 'filled') {
+          var slot = ins.closest('.ad-slot');
+          if (slot) slot.classList.add('ad-filled');
+        }
+      });
+    })();
+  </script>
 </body>
 </html>
