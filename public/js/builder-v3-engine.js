@@ -380,6 +380,8 @@ function abbrevAttr(a) {
 function renderWeapons() {
   [['1', S.w1], ['2', S.w2]].forEach(([k, w]) => {
     const wp = weapon(w.id);
+    const isExotic = wp && GAME.exoticWeapons.some(e => e.id === wp.id);
+    const exoticData = isExotic ? GAME.exoticWeapons.find(e => e.id === wp.id) : null;
     const nameEl = $(`#w${k}name`);
     const subEl = $(`#w${k}sub`);
     const tierEl = $(`#w${k}tier`);
@@ -387,7 +389,25 @@ function renderWeapons() {
     if (subEl) subEl.textContent = wp ? `${wp.type} · ${wp.rpm} RPM · ${wp.mag} mag` : '—';
     if (tierEl) tierEl.textContent = w.tier || 'T2';
     const slotEl = $(`.slot[data-wslot="${k}"]`);
-    if (slotEl) slotEl.classList.toggle('is-set', !!wp);
+    if (slotEl) {
+      slotEl.classList.toggle('is-set', !!wp);
+      slotEl.classList.toggle('is-exotic', isExotic);
+    }
+    // Exotic fixed talent
+    const fixedEl = $(`#w${k}fixed`);
+    if (fixedEl) {
+      if (isExotic && exoticData) {
+        fixedEl.style.display = '';
+        const fixedName = fixedEl.querySelector('.picktag__val');
+        if (fixedName) fixedName.textContent = exoticData.talentName;
+        let fixedDesc = fixedEl.querySelector('.picktag__desc');
+        if (!fixedDesc) { fixedDesc = document.createElement('span'); fixedDesc.className = 'picktag__desc'; fixedEl.appendChild(fixedDesc); }
+        fixedDesc.textContent = exoticData.talentDescription;
+        fixedEl.classList.add('is-set', 'is-fixed');
+      } else {
+        fixedEl.style.display = 'none';
+      }
+    }
     setTalent(`w${k}t1`, w.t1);
     setTalent(`w${k}t2`, w.t2);
   });
@@ -598,7 +618,7 @@ function drawModal(q) {
       ${r.desc ? `<div class="opt__desc">${highlight(r.desc, q)}</div>` : ''}
     </button>`;
   }).join('');
-  $$('.opt', modalList).forEach(b => b.addEventListener('click', () => { modalSelect(b.dataset.id); closeModal(); }));
+  $$('.opt', modalList).forEach(b => b.addEventListener('click', () => { closeModal(); setTimeout(() => modalSelect(b.dataset.id), 60); }));
 }
 function highlight(text, q) {
   if (!q) return text;

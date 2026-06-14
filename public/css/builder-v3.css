@@ -278,12 +278,18 @@
 
 /* talent pair */
 .talent-pair{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}
+.talent-pair:has(.is-fixed){grid-template-columns:1fr;gap:6px}
+.talent-pair:has(.is-fixed) .picktag:not(.is-fixed){display:flex}
 .picktag{
   display:flex;flex-direction:column;gap:3px;padding:9px 11px;cursor:pointer;
   background:var(--panel);border:1px solid var(--line);
   transition:border-color var(--tin),background var(--tin);
 }
 .picktag:hover{border-color:var(--line-hot);background:var(--panel-hi)}
+.picktag.is-fixed{cursor:default;border-color:rgba(255,195,94,.3);background:rgba(255,195,94,.04)}
+.picktag.is-fixed:hover{border-color:rgba(255,195,94,.3);background:rgba(255,195,94,.04)}
+.picktag.is-fixed .picktag__lbl{color:var(--amber)}
+.picktag.is-fixed .picktag__val{color:var(--amber)}
 .picktag__lbl{font-family:var(--font-mono);font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
 .picktag__val{font-size:12.5px;font-weight:500;color:var(--text-2);
   overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
