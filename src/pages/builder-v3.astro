@@ -25,13 +25,13 @@ const title = "SHD Build Lab — Division Resurgence Tactical Loadout Planner";
 const description = "Plan your Division Resurgence loadout with the SHD Build Lab. Configure gear sets, weapons, OS protocols, and skill mods with live ISAC diagnostics, synergy mapping, and shareable build links.";
 const breadcrumbs = [
   { name: 'Home', url: '/' },
-  { name: 'Build Lab', url: '/builder-v3/' }
+  { name: 'Build Lab', url: '/builder/' }
 ];
 const jsonLd = {
   '@type': 'WebApplication',
-  '@id': 'https://resurgencebuilds.com/builder-v3/#app',
+  '@id': 'https://resurgencebuilds.com/builder/#app',
   name: 'SHD Build Lab — Division Resurgence Loadout Planner',
-  url: 'https://resurgencebuilds.com/builder-v3/',
+  url: 'https://resurgencebuilds.com/builder/',
   applicationCategory: 'GameApplication',
   operatingSystem: 'Any (browser)',
   browserRequirements: 'Requires JavaScript. Modern evergreen browser.',
@@ -234,7 +234,7 @@ const smcCount = skillModCombos.length;
         <!-- Weapons -->
         <div class="weapon-row">
           <section class="panel" data-weapon="1">
-            <div class="panel__hd"><span class="kicker">// PRIMARY WEAPON</span><span class="tag" id="w1tier">T2</span></div>
+            <div class="panel__hd"><span class="kicker">// PRIMARY WEAPON</span></div>
             <div class="panel__bd">
               <div class="slot" data-wslot="1">
                 <div class="slot__icon"><img src="/images/icons/icon-weapon.webp" alt="Primary weapon" width="20" height="20" /></div>
@@ -258,7 +258,7 @@ const smcCount = skillModCombos.length;
             </div>
           </section>
           <section class="panel" data-weapon="2">
-            <div class="panel__hd"><span class="kicker">// SECONDARY WEAPON</span><span class="tag" id="w2tier">T2</span></div>
+            <div class="panel__hd"><span class="kicker">// SECONDARY WEAPON</span></div>
             <div class="panel__bd">
               <div class="slot" data-wslot="2">
                 <div class="slot__icon"><img src="/images/icons/icon-weapon.webp" alt="Secondary weapon" width="20" height="20" /></div>
@@ -329,17 +329,17 @@ const smcCount = skillModCombos.length;
         </div>
       </aside>
 
+      <!-- Build Overview (full-span row inside grid) -->
+      <section class="panel panel--overview" id="loopPanel">
+        <div class="panel__hd"><span class="kicker">// BUILD OVERVIEW</span></div>
+        <div class="panel__bd loop__bd">
+          <div class="loop__graph" id="loopGraph"></div>
+          <ol class="loop__steps" id="loopSteps"></ol>
+        </div>
+      </section>
+
     </div>
   </div>
-
-  <!-- Build Overview (full width, below grid) -->
-  <section class="panel panel--overview" id="loopPanel">
-    <div class="panel__hd"><span class="kicker">// BUILD OVERVIEW</span></div>
-    <div class="panel__bd loop__bd">
-      <div class="loop__graph" id="loopGraph"></div>
-      <ol class="loop__steps" id="loopSteps"></ol>
-    </div>
-  </section>
 
   <!-- Picker Modal -->
   <div class="modal" id="modal" aria-hidden="true">

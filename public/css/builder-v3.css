@@ -552,7 +552,7 @@
 @media (max-width:880px){.loop__bd{flex-direction:column}}
 
 /* full-width overview panel below grid */
-.panel--overview{max-width:var(--max-w);margin:0 auto var(--space-6);width:100%;padding:0 var(--space-6)}
+.panel--overview{grid-column:1/-1}
 
 /* skill list */
 .skill-list{display:flex;flex-direction:column;gap:8px}
