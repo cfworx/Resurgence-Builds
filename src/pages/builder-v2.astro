@@ -1,0 +1,1751 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import AdSenseUnit from '../components/AdSenseUnit.astro';
+import gearSets from '../data/gear-set-effects.json';
+import weaponTalents from '../data/weapon-talents.json';
+import exoticWeapons from '../data/exotic-weapons.json';
+import standardWeapons from '../data/standard-weapons.json';
+import bodyArmorTalents from '../data/body-armor-talents.json';
+import backpackTalents from '../data/backpack-talents.json';
+import osProtocols from '../data/os-protocols.json';
+import skillModCombos from '../data/skill-mod-combos.json';
+import bonusAttributes from '../data/bonus-attributes.json';
+import { getCollection } from 'astro:content';
+
+const allBuilds = await getCollection('builds');
+const templates = allBuilds
+  .filter(b => b.data.plannerHash)
+  .map(b => ({
+    id: b.id,
+    title: (b.data.title.split(' — ')[1] || b.data.title).trim(),
+    hash: b.data.plannerHash,
+    spec: b.data.specialization === 'Tech Operator' ? 'Tech Op' : b.data.specialization === 'Field Medic' ? 'Medic' : b.data.specialization
+  }));
+
+const title = "SHD Build Lab";
+const description = "Plan your Division Resurgence build with our free tool. Pick gear sets, talents, OS Protocols, and skill mods. See active set bonuses, synergies, and conflicts in real-time. Share builds via URL.";
+const breadcrumbs = [
+  { name: 'Home', url: '/' },
+  { name: 'SHD Build Lab', url: '/builder-v2/' }
+];
+const faqs = [
+  { question: "How does the build planner calculate synergies and set bonuses?", answer: "The planner cross-references your selected gear sets, weapon talents, OS protocols, and skill mods against the verified game database. When stat interactions are detected — such as Received Healing feeding into Damage Reduction via talent triggers — they're flagged as active synergies. Conflicts and inefficiencies are surfaced automatically." },
+  { question: "Is the loadout data verified and up-to-date?", answer: "Every gear set bonus, weapon talent, OS protocol, and skill mod combo is manually verified against the live game client each patch. The database currently contains 16 gear sets, 69 weapon talents, 66 OS protocols, and 90 skill mod combos — all confirmed accurate for the current patch." },
+  { question: "Can I share my builds with other players?", answer: "Every build state is encoded into the URL hash. Click Copy Build Link to generate a compressed shareable URL. Anyone who opens the link will see your exact loadout — gear sets, talents, weapons, OS protocol, skill mods, and bonus attributes. No account required." }
+];
+const genuineFaqs = faqs;
+const jsonLd = {
+  '@type': 'WebApplication',
+  '@id': 'https://resurgencebuilds.com/builder-v2/#app',
+  name: 'SHD Build Lab',
+  url: 'https://resurgencebuilds.com/builder-v2/',
+  applicationCategory: 'GameApplication',
+  operatingSystem: 'Any (browser)',
+  browserRequirements: 'Requires JavaScript. Modern evergreen browser.',
+  offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+  about: { '@id': 'https://resurgencebuilds.com/#division-resurgence' },
+  publisher: { '@id': 'https://resurgencebuilds.com/#organization' }
+};
+
+const allAttributes = bonusAttributes.flatMap(cat => cat.attributes);
+const SPECS = ['Demolitionist','Tech Operator','Bulwark','Vanguard','Field Medic'];
+const SLOTS = [
+  { key: 'mask', label: 'Mask', icon: '<img src="/images/icons/icon-mask.webp" alt="" class="slot-icon-img" width="24" height="24">', hasTalent: false },
+  { key: 'body', label: 'Body Armor', icon: '<img src="/images/icons/icon-shield.webp" alt="" class="slot-icon-img" width="24" height="24">', hasTalent: true, talentType: 'body' },
+  { key: 'backpack', label: 'Backpack', icon: '<img src="/images/icons/icon-backpack.webp" alt="" class="slot-icon-img" width="24" height="24">', hasTalent: true, talentType: 'backpack' },
+  { key: 'gloves', label: 'Gloves', icon: '<img src="/images/icons/icon-gloves.webp" alt="" class="slot-icon-img" width="24" height="24">', hasTalent: false },
+  { key: 'holster', label: 'Holster', icon: '<img src="/images/icons/icon-holster.webp" alt="" class="slot-icon-img" width="24" height="24">', hasTalent: false },
+  { key: 'kneepads', label: 'Kneepads', icon: '<img src="/images/icons/icon-kneepads.webp" alt="" class="slot-icon-img" width="24" height="24">', hasTalent: false },
+];
+
+const dataPayload = JSON.stringify({ gearSets, weaponTalents, exoticWeapons, standardWeapons, bodyArmorTalents, backpackTalents, osProtocols, skillModCombos, bonusAttributes, allAttributes });
+---
+
+<BaseLayout
+  title="SHD Build Lab"
+  description={description}
+  breadcrumbs={breadcrumbs}
+  faqs={genuineFaqs}
+  jsonLd={jsonLd}
+  ogImage="/images/build-planner-og.png"
+  keywords={["division resurgence build planner","division resurgence builder","division resurgence loadout tool","resurgence build maker"]}
+>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<section class="builder-hero shd-hero">
+  <div class="shd-hero__scan-line"></div>
+  <div class="container">
+    <span class="section-tag shd-tag">// SHD TERMINAL ACCESS</span>
+    <h1 class="builder-hero__title shd-hero__title">SHD BUILD LAB</h1>
+    <p class="builder-hero__sub shd-hero__sub">DIVISION RESURGENCE // TACTICAL LOADOUT TERMINAL</p>
+    <div class="shd-verified-badge">
+      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+      <span>Last verified for <strong>Patch 1.1.2.2</strong></span>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="builder-app container" id="builder-app" data-shd-mode>
+  <div class="builder-outer">
+    <div class="builder-main">
+      <!-- Build Templates (Starting Point) -->
+      <div class="quad shd-panel shd-panel--template" style="margin-bottom: 24px;">
+        <h2 class="quad__heading">:: Build Templates (Starting Point)</h2>
+        <div style="padding: var(--sp-3); display: flex; flex-direction: column; gap: var(--sp-2);">
+          <select class="slot-select" id="select-template" aria-label="Select a build template" style="width: 100%; border: 1px solid var(--shd-line); font-family: inherit; font-size: 0.95em; cursor: pointer;">
+            <option value="">— Select a Verified Build Template to Populate the Planner —</option>
+            {templates.map(t => (
+              <option value={t.hash}>[{t.spec}] {t.title}</option>
+            ))}
+          </select>
+          <span style="font-size: 0.85em; opacity: 0.8; color: var(--shd-muted); line-height: 1.4;">Selecting a template instantly pre-configures your entire gear, talents, weapons, and skill mod loadout. Customize it from there to theorycraft your own version!</span>
+        </div>
+      </div>
+      <div class="builder-grid">
+        <div class="builder-column builder-column--left">
+          <!-- Q1: Top-Left — Specialization + Focus -->
+          <div class="quad quad--spec shd-panel">
+            <h2 class="quad__heading">:: Specialization</h2>
+            <div class="spec-picker" id="spec-picker">
+              {SPECS.map(s => {
+                const cls = s === 'Demolitionist' ? 'demo' : s === 'Tech Operator' ? 'tech' : s === 'Bulwark' ? 'bulwark' : s === 'Vanguard' ? 'vanguard' : 'medic';
+                return <button class={`spec-btn spec-btn--${cls}`} data-spec={s} type="button">{s === 'Tech Operator' ? 'Tech Op' : s === 'Field Medic' ? 'Medic' : s}</button>;
+              })}
+            </div>
+            <div class="quad__sub">
+              <div class="sub-card">
+                <span class="sub-card__label">Specialization Focus</span>
+                <select class="slot-select" id="select-subclass" aria-label="Select specialization focus">
+                  <option value="">— Choose spec first —</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <!-- Q3: Bottom-Left — OS Protocol + Skill Mods -->
+          <div class="quad quad--os shd-panel">
+            <h2 class="quad__heading">:: OS Protocol</h2>
+            <div class="slot-card" id="slot-os">
+              <div class="slot-card__header">
+                <span class="slot-card__icon"><img src="/images/icons/icon-os.webp" alt="" class="slot-icon-img" width="24" height="24"></span>
+                <span class="slot-card__label">OS Protocol</span>
+                <span class="slot-card__badge" id="badge-os"></span>
+              </div>
+              <div class="slot-card__body">
+                <select class="slot-select" id="select-os" aria-label="Select OS protocol">
+                  <option value="">— Choose spec first —</option>
+                </select>
+                <div class="os-detail" id="os-detail"></div>
+              </div>
+            </div>
+            <div class="slot-card" id="slot-chipset">
+              <div class="slot-card__header">
+                <span class="slot-card__icon"><img src="/images/icons/icon-skillmod.webp" alt="" class="slot-icon-img" width="24" height="24"></span>
+                <span class="slot-card__label">Skill Mods (Select 3)</span>
+              </div>
+              <div class="slot-card__body" style="display:flex; flex-direction:column; gap: var(--sp-2);">
+                <div>
+                  <select class="slot-select" id="select-smc1" aria-label="Select skill mod 1">
+                    <option value="">— Choose spec first —</option>
+                  </select>
+                  <div class="smc-detail" id="smc-detail-1"></div>
+                </div>
+                <div>
+                  <select class="slot-select" id="select-smc2" aria-label="Select skill mod 2">
+                    <option value="">— Choose spec first —</option>
+                  </select>
+                  <div class="smc-detail" id="smc-detail-2"></div>
+                </div>
+                <div>
+                  <select class="slot-select" id="select-smc3" aria-label="Select skill mod 3">
+                    <option value="">— Choose spec first —</option>
+                  </select>
+                  <div class="smc-detail" id="smc-detail-3"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="builder-column builder-column--right">
+          <!-- Q2: Top-Right — Weapons (stacked) -->
+          <div class="quad quad--weapons shd-panel">
+            <h2 class="quad__heading">:: Weapons</h2>
+            <div class="slot-card" id="slot-weapon1">
+              <div class="slot-card__header">
+                <span class="slot-card__icon"><img src="/images/icons/icon-weapon.webp" alt="" class="slot-icon-img" width="24" height="24"></span>
+                <span class="slot-card__label">Primary Weapon</span>
+              </div>
+              <div class="slot-card__body">
+                <div class="slot-card__row">
+                  <label class="slot-label" for="weapon-w1">Weapon</label>
+                  <select class="slot-select select-weapon" id="weapon-w1" data-weapon="1">
+                    <option value="">— Select Weapon —</option>
+                    <optgroup label="Exotic Weapons">
+                      {exoticWeapons.map(e => <option value={`ex-${e.id}`} data-type="exotic">{e.name}</option>)}
+                    </optgroup>
+                    <optgroup label="Standard Weapons">
+                      {standardWeapons.map(w => <option value={`std-${w.id}`} data-type="standard">{w.name} ({w.type})</option>)}
+                    </optgroup>
+                  </select>
+                </div>
+                <div class="slot-card__row row-tier" id="row-tier-w1" style="display:none">
+                  <label class="slot-label" for="tier-w1">Tier</label>
+                  <select class="slot-select slot-select--sm select-tier" id="tier-w1" data-weapon="1">
+                    <option value="T2">Tier 2 (Endgame)</option>
+                    <option value="T1">Tier 1</option>
+                    <option value="T0">Tier 0 (Basic)</option>
+                  </select>
+                </div>
+                <div class="slot-card__row row-exotic-talent" id="row-exotic-w1" style="display:none">
+                  <label class="slot-label">Native Talent</label>
+                  <div class="exotic-talent-display" id="exotic-talent-w1"></div>
+                </div>
+                <div class="slot-card__row">
+                  <label class="slot-label" for="wtalent-w1">Talent 1</label>
+                  <select class="slot-select select-talent" id="wtalent-w1" data-weapon="1">
+                    <option value="">— None —</option>
+                    {weaponTalents.map(t => <option value={t.id}>{t.name}</option>)}
+                  </select>
+                </div>
+                <div class="slot-card__row">
+                  <label class="slot-label" for="wtalent2-w1">Talent 2</label>
+                  <select class="slot-select select-talent" id="wtalent2-w1" data-weapon="1">
+                    <option value="">— None —</option>
+                    {weaponTalents.map(t => <option value={t.id}>{t.name}</option>)}
+                  </select>
+                </div>
+                <div class="weapon-detail" id="w1-detail"></div>
+              </div>
+            </div>
+            <div class="slot-card" id="slot-weapon2">
+              <div class="slot-card__header">
+                <span class="slot-card__icon"><img src="/images/icons/icon-weapon.webp" alt="" class="slot-icon-img" width="24" height="24"></span>
+                <span class="slot-card__label">Secondary Weapon</span>
+              </div>
+              <div class="slot-card__body">
+                <div class="slot-card__row">
+                  <label class="slot-label" for="weapon-w2">Weapon</label>
+                  <select class="slot-select select-weapon" id="weapon-w2" data-weapon="2">
+                    <option value="">— Select Weapon —</option>
+                    <optgroup label="Exotic Weapons">
+                      {exoticWeapons.map(e => <option value={`ex-${e.id}`} data-type="exotic">{e.name}</option>)}
+                    </optgroup>
+                    <optgroup label="Standard Weapons">
+                      {standardWeapons.map(w => <option value={`std-${w.id}`} data-type="standard">{w.name} ({w.type})</option>)}
+                    </optgroup>
+                  </select>
+                </div>
+                <div class="slot-card__row row-tier" id="row-tier-w2" style="display:none">
+                  <label class="slot-label" for="tier-w2">Tier</label>
+                  <select class="slot-select slot-select--sm select-tier" id="tier-w2" data-weapon="2">
+                    <option value="T2">Tier 2 (Endgame)</option>
+                    <option value="T1">Tier 1</option>
+                    <option value="T0">Tier 0 (Basic)</option>
+                  </select>
+                </div>
+                <div class="slot-card__row row-exotic-talent" id="row-exotic-w2" style="display:none">
+                  <label class="slot-label">Native Talent</label>
+                  <div class="exotic-talent-display" id="exotic-talent-w2"></div>
+                </div>
+                <div class="slot-card__row">
+                  <label class="slot-label" for="wtalent-w2">Talent 1</label>
+                  <select class="slot-select select-talent" id="wtalent-w2" data-weapon="2">
+                    <option value="">— None —</option>
+                    {weaponTalents.map(t => <option value={t.id}>{t.name}</option>)}
+                  </select>
+                </div>
+                <div class="slot-card__row">
+                  <label class="slot-label" for="wtalent2-w2">Talent 2</label>
+                  <select class="slot-select select-talent" id="wtalent2-w2" data-weapon="2">
+                    <option value="">— None —</option>
+                    {weaponTalents.map(t => <option value={t.id}>{t.name}</option>)}
+                  </select>
+                </div>
+                <div class="weapon-detail" id="w2-detail"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Q4: Bottom-Right — Gear (3×2 grid) -->
+          <div class="quad quad--gear shd-panel">
+            <h2 class="quad__heading">:: Gear</h2>
+            <div class="gear-grid">
+              {SLOTS.map(slot => (
+                <div class="slot-card slot-card--gear" id={`slot-${slot.key}`}>
+                  <div class="slot-card__header">
+                    <span class="slot-card__icon" set:html={slot.icon}></span>
+                    <span class="slot-card__label">{slot.label}</span>
+                    <span class="slot-card__badge" id={`badge-${slot.key}`}></span>
+                  </div>
+                  <div class="slot-card__body">
+                    <div class="slot-card__row">
+                      <label class="slot-label" for={`set-${slot.key}`}>Set</label>
+                      <select class="slot-select" id={`set-${slot.key}`} data-slot={slot.key} data-field="set">
+                        <option value="">— None —</option>
+                        {gearSets.map(gs => <option value={gs.id}>{gs.name}</option>)}
+                      </select>
+                    </div>
+                    {slot.hasTalent && (
+                      <div class="slot-card__row">
+                        <label class="slot-label" for={`talent-${slot.key}`}>Talent</label>
+                        <select class="slot-select" id={`talent-${slot.key}`} data-slot={slot.key} data-field="talent">
+                          <option value="">— None —</option>
+                          {slot.talentType === 'body'
+                            ? bodyArmorTalents.map(t => <option value={t.id}>{t.name}</option>)
+                            : backpackTalents.map(t => <option value={t.id}>{t.name}</option>)
+                          }
+                        </select>
+                      </div>
+                    )}
+                    <div class="slot-card__row slot-card__row--attrs">
+                      <div class="slot-attr">
+                        <label class="slot-label" for={`attr1-${slot.key}`}>Bonus 1</label>
+                        <select class="slot-select slot-select--sm" id={`attr1-${slot.key}`} data-slot={slot.key} data-field="attr1">
+                          <option value="">—</option>
+                          {allAttributes.map(a => <option value={a}>{a}</option>)}
+                        </select>
+                      </div>
+                      <div class="slot-attr">
+                        <label class="slot-label" for={`attr2-${slot.key}`}>Bonus 2</label>
+                        <select class="slot-select slot-select--sm" id={`attr2-${slot.key}`} data-slot={slot.key} data-field="attr2">
+                          <option value="">—</option>
+                          {allAttributes.map(a => <option value={a}>{a}</option>)}
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div><!-- /builder-grid -->
+    </div><!-- /builder-main -->
+
+    <aside class="builder-summary" id="builder-summary">
+    <div class="summary-inner shd-panel shd-panel--summary">
+      <div class="summary-header">
+        <h2 class="summary-title">ISAC // BUILD ANALYSIS</h2>
+        <div class="summary-actions-top">
+          <button class="btn-icon" id="btn-copy" type="button" title="Copy Build Link" aria-label="Copy build link"><img src="/images/icons/icon-link.webp" alt="" class="slot-icon-img" width="24" height="24"></button>
+          <button class="btn-icon btn-icon--danger" id="btn-reset" type="button" title="Reset Build" aria-label="Reset build">↺</button>
+        </div>
+      </div>
+
+      <div class="summary-name-section">
+        <input type="text" id="input-build-name" class="summary-name-input" placeholder="Name your build..." aria-label="Build name" />
+      </div>
+
+      <!-- Build Quality Indicator -->
+      <div id="build-quality-indicator" class="summary-quality" data-tier="incomplete">
+        <div id="build-quality-badge" class="summary-quality__badge"><img src="/images/icons/icon-rank-trash.webp" alt="" class="sl-img" width="28" height="28"> INCOMPLETE LOADOUT</div>
+        <p id="build-quality-text" class="summary-quality__text">No active synergies detected. Select a specialization and configure gear sets to begin loadout analysis.</p>
+      </div>
+
+      <div id="summary-empty" class="summary-empty">Select a specialization and gear to see your build analysis.</div>
+
+      <!-- Spec & Weapons -->
+      <div id="summary-talents" class="summary-section" style="display:none">
+        <h3 class="summary-section__title"><span class="summary-section__icon"><img src="/images/icons/icon-loadout.webp" alt="" class="sl-img" width="22" height="22"></span> Loadout</h3>
+        <div id="summary-talents-list" class="summary-section__body"></div>
+      </div>
+
+      <!-- Active Sets -->
+      <div id="summary-sets" class="summary-section" style="display:none">
+        <h3 class="summary-section__title"><span class="summary-section__icon"><img src="/images/icons/icon-shield.webp" alt="" class="sl-img" width="22" height="22"></span> Active Set Bonuses</h3>
+        <div id="summary-sets-list" class="summary-section__body"></div>
+      </div>
+
+      <!-- Synergies -->
+      <div id="summary-synergies" class="summary-section" style="display:none">
+        <h3 class="summary-section__title"><span class="summary-section__icon"><img src="/images/icons/icon-synergy.webp" alt="" class="sl-img" width="22" height="22"></span> Synergies</h3>
+        <div id="summary-synergies-list" class="summary-section__body"></div>
+      </div>
+
+      <!-- Warnings -->
+      <div id="summary-conflicts" class="summary-section" style="display:none">
+        <h3 class="summary-section__title"><span class="summary-section__icon"><img src="/images/icons/icon-warning.webp" alt="" class="sl-img" width="22" height="22"></span> Warnings</h3>
+        <div id="summary-conflicts-list" class="summary-section__body"></div>
+      </div>
+
+      <div class="summary-actions">
+        <button class="btn btn--primary" id="btn-copy-bottom" type="button"><img src="/images/icons/icon-copy.webp" alt="" class="sl-img" width="22" height="22"> Copy Build Link</button>
+        <button class="btn btn--outline" id="btn-reset-bottom" type="button">Reset</button>
+      </div>
+      <div id="copy-toast" class="copy-toast">TRANSMISSION PACKAGED // LINK COPIED</div>
+    </div>
+    </aside>
+  </div><!-- /builder-outer -->
+</section>
+
+<section class="builder-about container">
+  <div class="builder-about__content">
+    <h2>SHD Build Lab — How It Works</h2>
+    <p>Select a specialization, configure your gear sets and weapon talents, assign bonus attributes, and choose your OS protocol and skill mods. The analysis engine cross-references your selections in real-time — detecting active set bonuses, flagging stat synergies, and warning about conflicts or inefficiencies. Every piece of data is verified against the live game client. Share your completed loadout with a single compressed URL.</p>
+
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-list">
+      {faqs.map(faq => (
+        <details class="faq-item">
+          <summary class="faq-question">{faq.question}</summary>
+          <p class="faq-answer">{faq.answer}</p>
+        </details>
+      ))}
+    </div>
+
+    <p class="builder-about__cta">Looking for pre-built loadouts? Browse our <a href="/builds/">verified build guides</a> with full gear breakdowns and gameplay analysis, or explore the <a href="/database/gear-set-effects/">gear set database</a> for detailed bonus data.</p>
+  </div>
+</section>
+
+<noscript>
+  <div class="container" style="padding: 3rem 0; text-align: center;">
+    <p>The Build Planner needs JavaScript to work. You've either disabled it on purpose (respect) or your browser is from 2003 (less respect).</p>
+    <p>Either way, check out our <a href="/builds/">pre-made build guides</a> while you sort that out.</p>
+  </div>
+</noscript>
+
+<script type="application/json" id="builder-data" is:inline set:html={dataPayload}></script>
+<script src="/js/lz-string.min.js" is:inline></script>
+<script src="/js/builder-engine.js?v=6" is:inline defer></script>
+
+<AdSenseUnit label="Advertisement — build planner" />
+
+</BaseLayout>
+
+<style is:global>
+/* ============================================================
+   SHD BUILD LAB — Division-Inspired Tactical Terminal
+   Angular panels · Scan line overlays · ISAC aesthetic
+   ============================================================ */
+
+/* --- SHD Color Tokens --- */
+:root {
+  --shd-bg-0: #07090c;
+  --shd-bg-1: #0d1117;
+  --shd-panel: rgba(16, 20, 26, .86);
+  --shd-panel-2: rgba(24, 29, 36, .92);
+  --shd-line: rgba(255, 255, 255, .11);
+  --shd-line-hot: rgba(255, 122, 24, .58);
+  --shd-orange: #ff7a18;
+  --shd-amber: #ffb13b;
+  --shd-blue: #4aa3ff;
+  --shd-green: #59d483;
+  --shd-red: #ff4d3d;
+  --shd-text: #e7e0d3;
+  --shd-muted: #9ea7ad;
+  --shd-dim: #68727a;
+  --shd-font-heading: 'Rajdhani', var(--font-heading), sans-serif;
+}
+
+/* NUCLEAR: Kill ALL border-radius from BaseLayout within builder scope */
+.builder-app *,
+.builder-app *::before,
+.builder-app *::after,
+.builder-summary *,
+.builder-summary *::before,
+.builder-summary *::after,
+.shd-hero *,
+.builder-about *,
+.builder-about *::before,
+.builder-about *::after {
+  border-radius: 0 !important;
+}
+
+/* Override entire page chrome to match terminal */
+.site-header,
+.site-nav,
+nav {
+  background: rgba(7,9,12,.95) !important;
+  border-bottom: 1px solid rgba(255,122,24,.1) !important;
+  backdrop-filter: blur(12px);
+}
+.site-footer,
+footer {
+  background: #050709 !important;
+  border-top: 1px solid rgba(255,122,24,.08) !important;
+}
+main {
+  background: transparent !important;
+}
+/* Breadcrumb area override */
+.breadcrumb, .breadcrumbs {
+  background: transparent !important;
+}
+
+/* --- SHD Angular Panel Base --- */
+.shd-panel {
+  background: linear-gradient(180deg, rgba(18,22,29,.92), rgba(10,13,18,.94)) !important;
+  border: 1px solid var(--shd-line) !important;
+  border-radius: 0 !important;
+  clip-path: polygon(0 0, calc(100% - 12px) 0, 100% 12px, 100% 100%, 12px 100%, 0 calc(100% - 12px));
+  box-shadow: inset 0 1px rgba(255,255,255,.06), 0 18px 50px rgba(0,0,0,.35);
+  position: relative;
+}
+
+/* Scan line texture on panels */
+.shd-panel::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+  background:
+    linear-gradient(90deg, transparent, rgba(255,122,24,.12), transparent) top / 100% 1px no-repeat,
+    repeating-linear-gradient(0deg, rgba(255,255,255,.015) 0 1px, transparent 1px 4px);
+}
+
+/* Template panel special dashed border */
+.shd-panel--template {
+  border: 1px dashed var(--shd-orange) !important;
+  background: linear-gradient(180deg, rgba(255,122,24,.04), rgba(10,13,18,.94)) !important;
+}
+
+
+/* ============================================================
+   HERO — SHD Terminal Header
+   ============================================================ */
+.shd-hero {
+  padding: var(--sp-10) 0 var(--sp-8);
+  background: linear-gradient(180deg, rgba(255,122,24,.04) 0%, var(--shd-bg-0) 100%);
+  border-bottom: 1px solid var(--shd-line);
+  position: relative;
+  overflow: hidden;
+}
+
+.shd-hero__scan-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  pointer-events: none;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255,122,24,.03) 25%,
+    rgba(255,122,24,.06) 50%,
+    rgba(255,122,24,.03) 75%,
+    transparent 100%
+  );
+  animation: shd-scan 6s linear infinite;
+}
+
+.shd-hero__title {
+  font-family: var(--shd-font-heading) !important;
+  font-size: clamp(2rem, 5vw, 3.5rem) !important;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  background: linear-gradient(135deg, var(--shd-orange) 0%, var(--shd-amber) 50%, var(--shd-orange) 100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+  margin-bottom: var(--sp-2) !important;
+  text-shadow: none;
+  position: relative;
+}
+
+.shd-hero__sub {
+  font-family: var(--shd-font-heading);
+  font-size: var(--text-base);
+  font-weight: 500;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--shd-muted) !important;
+  max-width: none;
+}
+
+.shd-tag {
+  font-family: 'JetBrains Mono', var(--font-mono), monospace;
+  color: var(--shd-orange) !important;
+  font-size: var(--text-xs);
+  letter-spacing: .1em;
+  opacity: .7;
+}
+
+.shd-verified-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: 'JetBrains Mono', var(--font-mono), monospace;
+  font-size: var(--text-xs);
+  color: var(--shd-green);
+  background: rgba(89,212,131,.08);
+  border: 1px solid rgba(89,212,131,.25);
+  padding: 6px 14px;
+  margin-top: var(--sp-4);
+  letter-spacing: .02em;
+  clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px));
+}
+
+@keyframes shd-scan {
+  from { transform: translateX(-100%); opacity: 0; }
+  15% { opacity: .85; }
+  to { transform: translateX(100%); opacity: 0; }
+}
+
+@media(min-width:768px) {
+  .shd-hero { padding: var(--sp-16) 0 var(--sp-10); }
+}
+
+
+/* ============================================================
+   PAGE BACKGROUND — Override BaseLayout body
+   ============================================================ */
+body {
+  background: var(--shd-bg-0) !important;
+  background-image:
+    radial-gradient(ellipse at 50% 0%, rgba(255,122,24,.03) 0%, transparent 60%),
+    linear-gradient(180deg, #07090c 0%, #0a0d12 100%) !important;
+}
+
+/* ============================================================
+   HERO — deeper terminal header with grid underlay
+   ============================================================ */
+.shd-hero {
+  background:
+    linear-gradient(180deg, rgba(255,122,24,.05) 0%, rgba(7,9,12,0) 40%, var(--shd-bg-0) 100%),
+    repeating-linear-gradient(0deg, rgba(255,255,255,.02) 0 1px, transparent 1px 60px),
+    repeating-linear-gradient(90deg, rgba(255,255,255,.02) 0 1px, transparent 1px 60px) !important;
+  border-bottom: 1px solid rgba(255,122,24,.15) !important;
+}
+
+/* ============================================================
+   BUILDER APP — Layout & Background
+   ============================================================ */
+.builder-app {
+  --flame-1: #c084fc;
+  --flame-2: #a855f7;
+  --flame-3: #7c3aed;
+  --flame-glow: rgba(168, 85, 247, 0.35);
+  --flame-glow-deep: rgba(124, 58, 237, 0.25);
+  --gold-rarity: #f5a623;
+  --gold-dim: #c4841a;
+  --card-bg: linear-gradient(180deg, rgba(16,20,26,.92) 0%, rgba(10,13,18,.94) 100%);
+  --card-bg-hover: linear-gradient(180deg, rgba(20,25,32,.94) 0%, rgba(14,17,22,.96) 100%);
+  --panel-border: rgba(255,255,255,.11);
+  --hud-glow: rgba(255,122,24,.08);
+
+  padding: var(--sp-6) 0;
+  max-width: 1440px;
+  position: relative;
+  /* Tactical grid background — NO wood texture */
+  background:
+    radial-gradient(ellipse at 50% 0%, rgba(255,122,24,.04) 0%, transparent 50%),
+    repeating-linear-gradient(0deg, rgba(255,255,255,.015) 0 1px, transparent 1px 80px),
+    repeating-linear-gradient(90deg, rgba(255,255,255,.015) 0 1px, transparent 1px 80px),
+    linear-gradient(180deg, rgba(7,9,12,.98) 0%, rgba(10,13,18,1) 100%) !important;
+}
+
+
+/* ============================================================
+   LAYOUT — Outer / Grid
+   ============================================================ */
+.builder-outer { display: flex; flex-direction: column; gap: var(--sp-4); }
+@media(min-width:1200px) {
+  .builder-outer { flex-direction: row; }
+  .builder-main { flex: 1; min-width: 0; }
+  .builder-summary { width: 300px; flex-shrink: 0; }
+}
+.builder-grid { display: flex; flex-direction: column; gap: var(--sp-4); }
+@media(min-width:1024px) {
+  .builder-grid { display: flex; flex-direction: row; gap: var(--sp-4); align-items: flex-start; }
+  .builder-column--left { width: 330px; flex-shrink: 0; }
+  .builder-column--right { flex: 1; min-width: 0; }
+}
+.builder-column { display: flex; flex-direction: column; gap: var(--sp-4); }
+
+
+/* ============================================================
+   QUAD PANELS — Section Containers (Angular SHD Style)
+   HUD corner markers, scan-line overlay, angular cuts
+   ============================================================ */
+.quad {
+  background: linear-gradient(180deg, rgba(18,22,29,.92) 0%, rgba(10,13,18,.96) 100%) !important;
+  border: 1px solid rgba(255,122,24,.18) !important;
+  border-radius: 0 !important;
+  padding: var(--sp-3);
+  position: relative;
+  clip-path: polygon(0 0, calc(100% - 16px) 0, 100% 16px, 100% 100%, 16px 100%, 0 calc(100% - 16px));
+  box-shadow:
+    inset 0 1px rgba(255,255,255,.08),
+    0 12px 40px rgba(0,0,0,.4),
+    0 0 1px rgba(255,122,24,.15);
+}
+/* Scan-line texture overlay — visible horizontal lines + amber top glow */
+.quad::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+  background:
+    linear-gradient(90deg, transparent 10%, rgba(255,122,24,.22), transparent 90%) top / 100% 1px no-repeat,
+    repeating-linear-gradient(0deg, rgba(255,255,255,.025) 0 1px, transparent 1px 3px);
+  opacity: .8;
+}
+/* HUD corner tick marks — the Division signature */
+.quad::after {
+  content: '';
+  position: absolute;
+  top: 6px; left: 6px;
+  width: 12px; height: 12px;
+  border-top: 2px solid var(--shd-orange);
+  border-left: 2px solid var(--shd-orange);
+  pointer-events: none;
+  z-index: 3;
+  opacity: .5;
+}
+.quad__heading {
+  font-family: var(--shd-font-heading);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: .14em;
+  color: var(--shd-orange);
+  margin-bottom: var(--sp-2);
+  padding-bottom: var(--sp-1);
+  padding-left: var(--sp-2);
+  border-bottom: 1px solid rgba(255,122,24,.15);
+  border-left: 2px solid var(--shd-orange);
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+  position: relative;
+  z-index: 2;
+  font-weight: 600;
+}
+.quad__heading::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: repeating-linear-gradient(90deg, rgba(255,122,24,.25) 0px, rgba(255,122,24,.25) 4px, transparent 4px, transparent 8px);
+  opacity: .6;
+}
+.quad__sub { display: flex; flex-direction: column; gap: var(--sp-2); position: relative; z-index: 2; }
+.sub-card {
+  background: rgba(0,0,0,.35);
+  border: 1px solid rgba(255,122,24,.1);
+  padding: var(--sp-2);
+  border-radius: 0 !important;
+  clip-path: polygon(0 0, calc(100% - 6px) 0, 100% 6px, 100% 100%, 6px 100%, 0 calc(100% - 6px));
+}
+.sub-card__label {
+  display: block;
+  font-family: 'JetBrains Mono', var(--font-mono), monospace;
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  color: var(--shd-muted);
+  margin-bottom: 4px;
+}
+
+
+/* ============================================================
+   SPEC PICKER — Angular Tactical Buttons
+   ============================================================ */
+.spec-picker {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-bottom: var(--sp-2);
+  position: relative;
+  z-index: 2;
+}
+.spec-btn {
+  font-family: var(--shd-font-heading);
+  font-weight: 700;
+  font-size: 11px;
+  padding: 5px var(--sp-2);
+  background: rgba(0,0,0,.4);
+  border: 1px solid var(--shd-line);
+  border-radius: 0;
+  clip-path: polygon(0 0, calc(100% - 6px) 0, 100% 6px, 100% 100%, 6px 100%, 0 calc(100% - 6px));
+  color: var(--shd-muted);
+  cursor: pointer;
+  transition: all 200ms ease;
+  min-height: 34px;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  position: relative;
+  overflow: hidden;
+}
+.spec-btn::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at center bottom, currentColor, transparent 70%);
+  opacity: 0;
+  transition: opacity 200ms ease;
+}
+.spec-btn:hover {
+  border-color: var(--shd-muted);
+  color: var(--shd-text);
+  box-shadow: 0 0 12px rgba(255,122,24,.08);
+}
+.spec-btn:hover::before { opacity: .08; }
+.spec-btn.is-active { color: #fff; }
+.spec-btn.is-active::before { opacity: .15; }
+.spec-btn--demo.is-active {
+  background: rgba(255,77,61,.12);
+  border-color: var(--shd-red);
+  color: var(--shd-red);
+  box-shadow: 0 0 16px rgba(255,77,61,.25), inset 0 0 12px rgba(255,77,61,.06);
+}
+.spec-btn--tech.is-active {
+  background: rgba(255,177,59,.10);
+  border-color: var(--shd-amber);
+  color: var(--shd-amber);
+  box-shadow: 0 0 16px rgba(255,177,59,.25), inset 0 0 12px rgba(255,177,59,.06);
+}
+.spec-btn--bulwark.is-active {
+  background: rgba(74,163,255,.12);
+  border-color: var(--shd-blue);
+  color: var(--shd-blue);
+  box-shadow: 0 0 16px rgba(74,163,255,.25), inset 0 0 12px rgba(74,163,255,.06);
+}
+.spec-btn--vanguard.is-active {
+  background: rgba(255,122,24,.12);
+  border-color: var(--shd-orange);
+  color: var(--shd-orange);
+  box-shadow: 0 0 16px rgba(255,122,24,.25), inset 0 0 12px rgba(255,122,24,.06);
+}
+.spec-btn--medic.is-active {
+  background: rgba(89,212,131,.10);
+  border-color: var(--shd-green);
+  color: var(--shd-green);
+  box-shadow: 0 0 16px rgba(89,212,131,.25), inset 0 0 12px rgba(89,212,131,.06);
+}
+
+/* --- Micro-interactions --- */
+
+/* Radial scan burst when spec is selected */
+@keyframes spec-activate {
+  0% { box-shadow: 0 0 0 0 currentColor; }
+  50% { box-shadow: 0 0 20px 4px currentColor; }
+  100% { box-shadow: 0 0 16px 0 currentColor; }
+}
+.spec-btn.is-active {
+  animation: spec-activate 400ms cubic-bezier(.2,.7,.2,1) 1;
+}
+
+/* Slot card update flash — applied by JS when a selection changes */
+@keyframes slot-flash {
+  0% { border-color: rgba(255,122,24,.6); box-shadow: 0 0 14px rgba(255,122,24,.25); }
+  100% { border-color: rgba(255,255,255,.08); box-shadow: 0 2px 10px rgba(0,0,0,.3); }
+}
+.slot-card.is-updated {
+  animation: slot-flash 600ms ease-out 1;
+}
+
+/* Build quality semantic glow by tier */
+.summary-quality[data-tier="elite"] {
+  border-color: rgba(89,212,131,.5) !important;
+  box-shadow: 0 0 20px rgba(89,212,131,.1), inset 0 0 30px rgba(89,212,131,.03);
+}
+.summary-quality[data-tier="optimized"] {
+  border-color: rgba(180,140,255,.4) !important;
+  box-shadow: 0 0 16px rgba(180,140,255,.08), inset 0 0 20px rgba(180,140,255,.03);
+}
+.summary-quality[data-tier="operational"] {
+  border-color: rgba(74,163,255,.4) !important;
+  box-shadow: 0 0 12px rgba(74,163,255,.06);
+}
+.summary-quality[data-tier="low"] {
+  border-color: rgba(255,177,59,.4) !important;
+}
+
+/* Summary section semantic colors */
+.summary-synergy {
+  border-left: 2px solid var(--shd-green) !important;
+  background: rgba(89,212,131,.04) !important;
+}
+.summary-conflict {
+  border-left: 2px solid var(--shd-red) !important;
+  background: rgba(255,77,61,.04) !important;
+}
+
+/* ============================================================
+   SLOT CARDS — Gear / Weapon / OS (Angular HUD Panels)
+   ============================================================ */
+.slot-card {
+  background: linear-gradient(180deg, rgba(16,20,26,.94) 0%, rgba(10,13,18,.97) 100%) !important;
+  border: 1px solid rgba(255,255,255,.08) !important;
+  border-radius: 0 !important;
+  clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 10px 100%, 0 calc(100% - 10px));
+  margin-bottom: var(--sp-2);
+  transition: border-color 250ms ease, box-shadow 250ms ease;
+  position: relative;
+  overflow: visible;
+  box-shadow: 0 2px 10px rgba(0,0,0,.3), inset 0 1px rgba(255,255,255,.04);
+}
+/* Bottom amber scan line */
+.slot-card::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255,122,24,.15), transparent);
+  transition: all 300ms ease;
+}
+.slot-card:hover {
+  border-color: rgba(255,122,24,.35) !important;
+  box-shadow: 0 4px 24px rgba(0,0,0,.4), 0 0 8px rgba(255,122,24,.1), inset 0 1px rgba(255,255,255,.06);
+}
+.slot-card:hover::after {
+  background: linear-gradient(90deg, rgba(255,122,24,.1), var(--shd-orange), rgba(255,122,24,.1));
+  height: 2px;
+  box-shadow: 0 0 6px rgba(255,122,24,.3);
+}
+.slot-card__header {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+  padding: var(--sp-2) var(--sp-3);
+  border-bottom: 1px solid rgba(255,255,255,.04);
+  font-family: var(--shd-font-heading);
+  font-weight: 600;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  background: rgba(0,0,0,.25);
+  min-width: 0;
+  position: relative;
+  z-index: 2;
+}
+.slot-card__icon { font-size: var(--text-sm); display: flex; align-items: center; }
+.slot-icon-img, .sl-img {
+  display: inline-block;
+  vertical-align: middle;
+  object-fit: contain;
+}
+.slot-card__label { flex: 1; color: var(--shd-muted); }
+
+/* --- Badges (Set count, Rarity) --- */
+.slot-card__badge {
+  font-family: 'JetBrains Mono', var(--font-mono), monospace;
+  font-size: 8px;
+  padding: 2px 6px;
+  background: rgba(0,0,0,.5);
+  color: var(--shd-muted);
+  display: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 140px;
+  border: 1px solid var(--shd-line);
+  clip-path: polygon(0 0, calc(100% - 4px) 0, 100% 4px, 100% 100%, 4px 100%, 0 calc(100% - 4px));
+}
+.slot-card__badge.has-set {
+  display: inline-block;
+  color: var(--shd-amber);
+  border-color: rgba(255,177,59,.35);
+  background: rgba(255,177,59,.1);
+}
+.slot-card__badge.full-bonus {
+  background: rgba(255,177,59,.2);
+  color: #fff;
+  border: 1px solid var(--shd-amber);
+  box-shadow: 0 0 10px rgba(255,177,59,.35);
+  animation: badge-pulse 2s ease-in-out infinite;
+}
+@keyframes badge-pulse {
+  0%, 100% { box-shadow: 0 0 8px rgba(255,177,59,.3); }
+  50% { box-shadow: 0 0 18px rgba(255,177,59,.55); }
+}
+
+.slot-card__body { padding: var(--sp-2) var(--sp-3); position: relative; z-index: 2; }
+.slot-card__row { margin-bottom: var(--sp-1); }
+.slot-card__row:last-child { margin-bottom: 0; }
+.slot-card__row--attrs { display: grid; grid-template-columns: 1fr 1fr; gap: var(--sp-1); }
+
+
+/* ============================================================
+   LABELS & DROPDOWNS — SHD Styled Selects
+   ============================================================ */
+.slot-label {
+  display: block;
+  font-family: 'JetBrains Mono', var(--font-mono), monospace;
+  font-size: 10px;
+  color: var(--shd-muted);
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  margin-bottom: 2px;
+}
+.slot-select {
+  width: 100%;
+  padding: var(--sp-1) var(--sp-2);
+  background: rgba(0,0,0,.45);
+  border: 1px solid var(--shd-line);
+  border-radius: 0 !important;
+  color: var(--shd-text);
+  font-size: var(--text-xs);
+  font-family: inherit;
+  min-height: 36px;
+  cursor: pointer;
+  transition: all 200ms ease;
+  appearance: none;
+  color-scheme: dark;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23ff7a18' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+  clip-path: polygon(0 0, calc(100% - 6px) 0, 100% 6px, 100% 100%, 6px 100%, 0 calc(100% - 6px));
+}
+.slot-select:focus {
+  border-color: var(--shd-orange);
+  outline: none;
+  box-shadow: 0 0 0 1px rgba(255,122,24,.3), 0 0 12px rgba(255,122,24,.12);
+}
+.slot-select--sm { font-size: 10px; min-height: 32px; padding: 2px var(--sp-2); }
+.slot-select option { background: #0d1117; color: var(--shd-text); }
+.slot-select optgroup { background: #07090c; color: var(--shd-muted); font-style: normal; padding: 4px 0; font-weight: 700; }
+.slot-select option:checked { background: #1a2030; }
+.slot-select option:disabled { color: #555; }
+
+
+/* ============================================================
+   WEAPON DETAIL PANE
+   ============================================================ */
+.weapon-detail {
+  margin-top: var(--sp-2);
+  padding: var(--sp-2);
+  background: rgba(0,0,0,.3);
+  border-left: 2px solid var(--shd-orange);
+  font-size: var(--text-xs);
+  line-height: 1.5;
+  display: none;
+  clip-path: polygon(0 0, calc(100% - 4px) 0, 100% 4px, 100% 100%, 4px 100%, 0 calc(100% - 4px));
+}
+.weapon-detail.is-visible { display: block; }
+.weapon-detail__stats {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: var(--sp-1);
+  margin-top: 4px;
+  border-top: 1px solid var(--shd-line);
+  padding-top: 4px;
+}
+.weapon-detail__stat { font-family: 'JetBrains Mono', var(--font-mono), monospace; font-size: 10px; color: var(--shd-muted); }
+.weapon-detail__stat strong { color: var(--shd-text); }
+
+
+/* ============================================================
+   EXOTIC NATIVE TALENT DISPLAY
+   ============================================================ */
+.exotic-talent-display {
+  padding: 8px 12px;
+  background: rgba(255,177,59,.06);
+  border: 1px solid rgba(255,177,59,.25);
+  color: var(--shd-amber);
+  font-family: var(--shd-font-heading);
+  font-size: var(--text-xs);
+  font-weight: 600;
+  letter-spacing: .03em;
+  clip-path: polygon(0 0, calc(100% - 6px) 0, 100% 6px, 100% 100%, 6px 100%, 0 calc(100% - 6px));
+}
+
+
+/* ============================================================
+   TEXT INPUTS
+   ============================================================ */
+.slot-input {
+  width: 100%;
+  padding: var(--sp-1) var(--sp-2);
+  background: rgba(0,0,0,.45);
+  border: 1px solid var(--shd-line);
+  border-radius: 0;
+  color: var(--shd-text);
+  font-size: var(--text-xs);
+  min-height: 36px;
+  transition: all 200ms ease;
+  box-sizing: border-box;
+  clip-path: polygon(0 0, calc(100% - 6px) 0, 100% 6px, 100% 100%, 6px 100%, 0 calc(100% - 6px));
+}
+.slot-input:focus { border-color: var(--shd-orange); outline: none; box-shadow: 0 0 0 1px rgba(255,122,24,.3); }
+.slot-input::placeholder { color: var(--shd-muted); opacity: .5; }
+
+
+/* ============================================================
+   GEAR GRID — 3×2 HUD Layout (Angular Cards)
+   ============================================================ */
+.gear-grid { display: flex; flex-direction: column; gap: var(--sp-2); }
+@media(min-width:600px) {
+  .gear-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--sp-2);
+  }
+}
+@media(min-width:1024px) {
+  .gear-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--sp-2);
+  }
+  .gear-grid .slot-card { margin-bottom: 0; }
+}
+
+/* Gear card bottom border — amber rarity line */
+.slot-card--gear::after {
+  height: 3px;
+  background: linear-gradient(90deg, rgba(255,122,24,.2) 0%, var(--shd-orange) 50%, rgba(255,122,24,.2) 100%);
+  opacity: .35;
+}
+.slot-card--gear:hover::after { opacity: 1; }
+
+
+/* ============================================================
+   OS / SMC DETAIL PANES
+   ============================================================ */
+.os-detail, .smc-detail {
+  margin-top: var(--sp-1);
+  padding: var(--sp-2);
+  background: rgba(0,0,0,.3);
+  border-left: 2px solid var(--shd-orange);
+  font-size: var(--text-xs);
+  color: var(--shd-text);
+  line-height: 1.6;
+  display: none;
+  clip-path: polygon(0 0, calc(100% - 4px) 0, 100% 4px, 100% 100%, 4px 100%, 0 calc(100% - 4px));
+}
+.os-detail.is-visible, .smc-detail.is-visible { display: block; }
+
+
+/* ============================================================
+   PURPLE FLAME ANIMATION — Set Completion Effects
+   2pc = subtle glow, 3pc = flame pulse, 4pc = full inferno
+   ============================================================ */
+
+/* --- 2-Piece: Subtle Border Glow --- */
+.slot-card--gear.set-active-2 {
+  border-color: rgba(168, 85, 247, .35);
+  box-shadow: 0 0 10px var(--flame-glow-deep), inset 0 0 8px rgba(168,85,247,.05);
+}
+.slot-card--gear.set-active-2::after {
+  background: linear-gradient(90deg, transparent 5%, var(--flame-2) 50%, transparent 95%);
+  opacity: .6;
+  height: 2px;
+  animation: flame-glow-subtle 3s ease-in-out infinite;
+}
+@keyframes flame-glow-subtle {
+  0%, 100% { opacity: .4; }
+  50% { opacity: .8; }
+}
+
+/* --- 3-Piece: Moderate Flame Pulse --- */
+.slot-card--gear.set-active-3 {
+  border-color: rgba(168, 85, 247, .5);
+  box-shadow:
+    0 0 14px var(--flame-glow),
+    0 0 4px var(--flame-glow-deep),
+    inset 0 0 10px rgba(168,85,247,.06);
+  animation: flame-card-3pc 3s ease-in-out infinite;
+}
+.slot-card--gear.set-active-3::after {
+  background: linear-gradient(90deg, var(--flame-3), var(--flame-1), var(--flame-2), var(--flame-3));
+  background-size: 200% 100%;
+  opacity: .9;
+  height: 3px;
+  animation: flame-sweep 2s linear infinite;
+}
+.slot-card--gear.set-active-3::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(168,85,247,.3), transparent);
+  z-index: 1;
+}
+@keyframes flame-card-3pc {
+  0%, 100% { box-shadow: 0 0 14px var(--flame-glow), 0 0 4px var(--flame-glow-deep), inset 0 0 10px rgba(168,85,247,.06); }
+  50% { box-shadow: 0 0 22px var(--flame-glow), 0 0 8px var(--flame-glow-deep), inset 0 0 14px rgba(168,85,247,.1); }
+}
+@keyframes flame-sweep {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* --- 4-Piece: FULL PURPLE INFERNO --- */
+.slot-card--gear.set-active-4 {
+  border-color: rgba(192, 132, 252, .6);
+  animation: flame-card-4pc 2s ease-in-out infinite;
+}
+.slot-card--gear.set-active-4::after {
+  background: linear-gradient(90deg, var(--flame-3), var(--flame-1), #e879f9, var(--flame-2), var(--flame-3));
+  background-size: 300% 100%;
+  opacity: 1;
+  height: 3px;
+  animation: flame-sweep-fast 1.5s linear infinite;
+  box-shadow: 0 0 8px var(--flame-glow), 0 -2px 6px var(--flame-glow);
+}
+.slot-card--gear.set-active-4::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 50% 100%, rgba(168,85,247,.12) 0%, transparent 60%),
+    radial-gradient(ellipse at 20% 100%, rgba(124,58,237,.08) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 100%, rgba(192,132,252,.08) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: 0;
+  animation: flame-bg-breathe 2.5s ease-in-out infinite;
+}
+@keyframes flame-card-4pc {
+  0%, 100% {
+    box-shadow:
+      0 0 18px var(--flame-glow),
+      0 0 6px var(--flame-glow-deep),
+      0 4px 24px rgba(124,58,237,.15),
+      inset 0 0 12px rgba(168,85,247,.08);
+  }
+  50% {
+    box-shadow:
+      0 0 28px var(--flame-glow),
+      0 0 10px var(--flame-glow-deep),
+      0 6px 36px rgba(124,58,237,.25),
+      inset 0 0 18px rgba(168,85,247,.12);
+  }
+}
+@keyframes flame-sweep-fast {
+  0% { background-position: 300% 0; }
+  100% { background-position: -300% 0; }
+}
+@keyframes flame-bg-breathe {
+  0%, 100% { opacity: .7; }
+  50% { opacity: 1; }
+}
+
+/* Flame cards raise their content above the ::before overlay */
+.slot-card--gear.set-active-3 .slot-card__header,
+.slot-card--gear.set-active-3 .slot-card__body,
+.slot-card--gear.set-active-4 .slot-card__header,
+.slot-card--gear.set-active-4 .slot-card__body {
+  position: relative;
+  z-index: 1;
+}
+
+
+/* ============================================================
+   SUMMARY SIDEBAR — ISAC Tactical Analysis Panel
+   ============================================================ */
+.builder-summary { margin-top: var(--sp-4); }
+
+.shd-panel--summary {
+  clip-path: polygon(0 0, calc(100% - 14px) 0, 100% 14px, 100% 100%, 14px 100%, 0 calc(100% - 14px)) !important;
+}
+.shd-panel--summary::before {
+  background:
+    linear-gradient(90deg, transparent, rgba(255,122,24,.18), transparent) top / 100% 1px no-repeat,
+    repeating-linear-gradient(0deg, rgba(255,255,255,.012) 0 1px, transparent 1px 4px) !important;
+}
+
+.summary-inner {
+  position: sticky;
+  top: calc(var(--nav-height, 60px) + var(--sp-3));
+  background: linear-gradient(180deg, rgba(16,20,26,.96) 0%, rgba(10,13,18,.98) 100%);
+  border: 1px solid var(--shd-line);
+  border-radius: 0;
+  padding: 0;
+  max-height: calc(100vh - var(--nav-height, 60px) - var(--sp-6));
+  overflow-y: auto;
+  box-shadow: 0 6px 30px rgba(0,0,0,.5), inset 0 1px rgba(255,255,255,.04);
+}
+.summary-inner::-webkit-scrollbar { width: 3px; }
+.summary-inner::-webkit-scrollbar-track { background: transparent; }
+.summary-inner::-webkit-scrollbar-thumb { background: var(--shd-orange); border-radius: 0; }
+
+.summary-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--sp-3) var(--sp-4);
+  border-bottom: 1px solid var(--shd-line);
+  background:
+    linear-gradient(90deg, rgba(255,122,24,.06) 0%, transparent 100%),
+    rgba(0,0,0,.2);
+  position: relative;
+}
+.summary-header::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, var(--shd-orange), transparent);
+  opacity: .4;
+}
+.summary-title {
+  font-size: 12px;
+  font-family: var(--shd-font-heading);
+  color: var(--shd-orange);
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: .14em;
+  font-weight: 700;
+}
+.summary-actions-top { display: flex; gap: 6px; }
+.btn-icon {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--shd-line);
+  border-radius: 0;
+  background: rgba(0,0,0,.4);
+  color: var(--shd-muted);
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 200ms ease;
+  clip-path: polygon(0 0, calc(100% - 4px) 0, 100% 4px, 100% 100%, 4px 100%, 0 calc(100% - 4px));
+}
+.btn-icon:hover { border-color: var(--shd-orange); color: var(--shd-orange); background: rgba(255,122,24,.08); }
+.btn-icon--danger:hover { border-color: var(--shd-red); color: var(--shd-red); background: rgba(255,77,61,.08); }
+
+.summary-name-section { padding: var(--sp-3) var(--sp-4); border-bottom: 1px solid var(--shd-line); }
+.summary-name-input {
+  width: 100%;
+  padding: 8px 12px;
+  background: rgba(0,0,0,.4);
+  border: 1px solid var(--shd-line);
+  border-radius: 0;
+  color: var(--shd-text);
+  font-family: var(--shd-font-heading);
+  font-size: var(--text-sm);
+  font-weight: 700;
+  letter-spacing: .04em;
+  transition: all 200ms ease;
+  box-sizing: border-box;
+  clip-path: polygon(0 0, calc(100% - 6px) 0, 100% 6px, 100% 100%, 6px 100%, 0 calc(100% - 6px));
+}
+.summary-name-input:focus { border-color: var(--shd-orange); outline: none; box-shadow: 0 0 0 2px rgba(255,122,24,.15); }
+.summary-name-input::placeholder { color: var(--shd-dim); opacity: .6; font-weight: 400; }
+
+/* --- Build Quality — Threat Assessment Readout --- */
+.summary-quality {
+  margin: var(--sp-3) var(--sp-4);
+  padding: var(--sp-3);
+  border: 1px solid var(--shd-red);
+  background: rgba(255,77,61,.05);
+  transition: all 300ms ease;
+  position: relative;
+  clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px));
+}
+.summary-quality::before {
+  content: '⚠ THREAT ASSESSMENT';
+  display: block;
+  font-family: 'JetBrains Mono', var(--font-mono), monospace;
+  font-size: 8px;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--shd-red);
+  opacity: .6;
+  margin-bottom: 6px;
+}
+.summary-quality__badge {
+  font-family: var(--shd-font-heading);
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--shd-red);
+  margin-bottom: 4px;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.summary-quality__text {
+  font-size: 11px;
+  line-height: 1.5;
+  color: var(--shd-muted);
+  margin: 0;
+}
+
+.summary-empty {
+  color: var(--shd-dim);
+  font-size: var(--text-xs);
+  text-align: center;
+  padding: var(--sp-6) var(--sp-4);
+  font-family: 'JetBrains Mono', var(--font-mono), monospace;
+  letter-spacing: .04em;
+  opacity: .6;
+}
+
+.summary-section {
+  padding: var(--sp-3) var(--sp-4);
+  border-top: 1px solid var(--shd-line);
+  position: relative;
+}
+.summary-section::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255,122,24,.2), transparent);
+}
+.summary-section__title {
+  font-family: var(--shd-font-heading);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: .14em;
+  color: var(--shd-orange);
+  margin-bottom: var(--sp-3);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding-bottom: 6px;
+  border-bottom: 1px dashed rgba(255,122,24,.2);
+}
+.summary-section__icon { font-size: 13px; }
+.summary-section__body { display: flex; flex-direction: column; gap: 6px; }
+
+
+/* ============================================================
+   LOADOUT ROWS — Compact Tactical HUD Readout
+   ============================================================ */
+.sl-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 8px 10px;
+  background: rgba(0,0,0,.35);
+  border-left: 2px solid var(--shd-line);
+  position: relative;
+  transition: border-color 200ms ease;
+  clip-path: polygon(0 0, calc(100% - 4px) 0, 100% 4px, 100% 100%, 4px 100%, 0 calc(100% - 4px));
+}
+.sl-row:hover { border-color: rgba(255,255,255,.2); }
+.sl-row--spec { border-left-color: var(--shd-orange); }
+.sl-row--weapon { border-left-color: var(--shd-amber); }
+.sl-row--gear { border-left-color: var(--shd-green); }
+.sl-row--os { border-left-color: var(--shd-blue); }
+.sl-row--smc { border-left-color: #a855f7; }
+.sl-icon { flex-shrink: 0; line-height: 1; width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; }
+.sl-body { display: flex; flex-direction: column; gap: 3px; min-width: 0; }
+.sl-label {
+  display: block;
+  font-family: 'JetBrains Mono', var(--font-mono), monospace;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--shd-muted);
+  opacity: .6;
+  margin-bottom: 2px;
+}
+.sl-row--spec .sl-label { color: var(--shd-orange); opacity: 1; }
+.sl-row--weapon .sl-label { color: var(--shd-amber); opacity: 1; }
+.sl-row--gear .sl-label { color: var(--shd-green); opacity: 1; }
+.sl-row--os .sl-label { color: var(--shd-blue); opacity: 1; }
+.sl-row--smc .sl-label { color: #a855f7; opacity: 1; }
+.sl-val {
+  display: block;
+  font-family: var(--shd-font-heading);
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.35;
+  letter-spacing: .01em;
+}
+.sl-dim { font-weight: 400; font-size: 10px; color: var(--shd-muted); }
+.sl-talents {
+  display: block;
+  font-size: 10px;
+  color: var(--shd-muted);
+  line-height: 1.4;
+}
+.sl-pill {
+  display: inline-block;
+  font-family: 'JetBrains Mono', var(--font-mono), monospace;
+  font-size: 8px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  padding: 1px 5px;
+  background: rgba(255,255,255,.06);
+  color: var(--shd-muted);
+  border: 1px solid rgba(255,255,255,.1);
+  vertical-align: middle;
+  margin-left: 4px;
+  clip-path: polygon(0 0, calc(100% - 3px) 0, 100% 3px, 100% 100%, 3px 100%, 0 calc(100% - 3px));
+}
+.sl-pill--exotic {
+  background: rgba(255,177,59,.12);
+  color: var(--shd-amber);
+  border-color: rgba(255,177,59,.3);
+}
+
+
+/* ============================================================
+   SET BONUS ITEMS — Tiered Glow Cards
+   ============================================================ */
+.summary-set-item {
+  padding: 0;
+  background: rgba(0,0,0,.35);
+  border: 1px solid rgba(255,255,255,.06);
+  overflow: hidden;
+  position: relative;
+  transition: all 200ms ease;
+  clip-path: polygon(0 0, calc(100% - 6px) 0, 100% 6px, 100% 100%, 6px 100%, 0 calc(100% - 6px));
+}
+.summary-set-item::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: var(--shd-line);
+}
+.summary-set-item.tier-2::before { background: linear-gradient(90deg, var(--shd-muted), rgba(158,167,173,.3)); }
+.summary-set-item.tier-3::before { background: linear-gradient(90deg, var(--flame-2), rgba(168,85,247,.3)); }
+.summary-set-item.tier-3 { border-color: rgba(168,85,247,.2); box-shadow: 0 0 10px rgba(168,85,247,.06); }
+.summary-set-item.tier-4::before { background: linear-gradient(90deg, var(--flame-1), var(--flame-3)); }
+.summary-set-item.tier-4 {
+  border-color: rgba(192,132,252,.3);
+  box-shadow: 0 0 14px rgba(168,85,247,.1), inset 0 0 14px rgba(168,85,247,.03);
+}
+.summary-set-name {
+  font-family: var(--shd-font-heading);
+  font-weight: 700;
+  font-size: 12px;
+  padding: 8px 10px 2px;
+  display: inline-block;
+}
+.summary-set-count {
+  font-family: 'JetBrains Mono', var(--font-mono), monospace;
+  font-size: 9px;
+  color: var(--flame-1);
+  background: rgba(168,85,247,.15);
+  padding: 1px 6px;
+  margin-left: 4px;
+  vertical-align: middle;
+  letter-spacing: .04em;
+}
+.summary-set-bonus {
+  font-size: 10px;
+  color: var(--shd-muted);
+  line-height: 1.5;
+  padding: 2px 10px 2px 18px;
+  position: relative;
+}
+.summary-set-bonus:last-child { padding-bottom: 8px; }
+.summary-set-bonus::before {
+  content: '›';
+  position: absolute;
+  left: 10px;
+  color: var(--shd-orange);
+  font-weight: 700;
+}
+
+
+/* ============================================================
+   SYNERGIES & CONFLICTS — ISAC Alert Cards
+   ============================================================ */
+.summary-synergy {
+  padding: 10px 10px 8px;
+  background: rgba(0,0,0,.35);
+  border: 1px solid rgba(89,212,131,.15);
+  font-size: 11px;
+  color: var(--shd-text);
+  line-height: 1.5;
+  overflow: hidden;
+  position: relative;
+  clip-path: polygon(0 0, calc(100% - 4px) 0, 100% 4px, 100% 100%, 4px 100%, 0 calc(100% - 4px));
+}
+.summary-synergy::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--shd-green), rgba(89,212,131,.3));
+}
+.summary-synergy strong { color: var(--shd-green); }
+
+.summary-conflict {
+  padding: 10px 10px 8px;
+  background: rgba(0,0,0,.35);
+  border: 1px solid rgba(255,77,61,.2);
+  font-size: 11px;
+  color: var(--shd-text);
+  line-height: 1.5;
+  overflow: hidden;
+  position: relative;
+  clip-path: polygon(0 0, calc(100% - 4px) 0, 100% 4px, 100% 100%, 4px 100%, 0 calc(100% - 4px));
+}
+.summary-conflict::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--shd-red), rgba(255,77,61,.3));
+}
+.summary-conflict strong { color: var(--shd-red); }
+
+
+/* ============================================================
+   BOTTOM ACTIONS & COPY TOAST
+   ============================================================ */
+.summary-actions {
+  display: flex;
+  gap: var(--sp-2);
+  padding: var(--sp-3) var(--sp-4);
+  border-top: 1px solid var(--shd-line);
+}
+.summary-actions .btn {
+  flex: 1;
+  font-size: var(--text-xs);
+  padding: var(--sp-2) var(--sp-3);
+  border-radius: 0;
+  clip-path: polygon(0 0, calc(100% - 6px) 0, 100% 6px, 100% 100%, 6px 100%, 0 calc(100% - 6px));
+}
+.copy-toast {
+  position: fixed;
+  bottom: var(--sp-4);
+  left: 50%;
+  transform: translateX(-50%) translateY(100px);
+  background: linear-gradient(135deg, var(--shd-orange), #e06610);
+  color: #fff;
+  padding: var(--sp-2) var(--sp-6);
+  border-radius: 0;
+  font-family: var(--shd-font-heading);
+  font-weight: 700;
+  font-size: var(--text-sm);
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  z-index: 200;
+  transition: transform .3s ease;
+  pointer-events: none;
+  box-shadow: 0 4px 24px rgba(255,122,24,.45), 0 0 40px rgba(255,122,24,.15);
+  clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px));
+}
+.copy-toast.is-visible { transform: translateX(-50%) translateY(0); }
+
+
+/* ============================================================
+   ABOUT / FAQ SECTION
+   ============================================================ */
+.builder-about {
+  padding: var(--sp-12) 0 var(--sp-8);
+  border-top: 1px solid rgba(255,122,24,.12);
+  margin-top: var(--sp-8);
+  background:
+    repeating-linear-gradient(0deg, rgba(255,255,255,.01) 0 1px, transparent 1px 80px),
+    repeating-linear-gradient(90deg, rgba(255,255,255,.01) 0 1px, transparent 1px 80px),
+    linear-gradient(180deg, rgba(7,9,12,1) 0%, rgba(10,13,18,1) 100%) !important;
+  position: relative;
+}
+.builder-about::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255,122,24,.3), transparent);
+}
+.builder-about__content { max-width: var(--content-width); margin: 0 auto; }
+.builder-about__content h2 {
+  margin-top: var(--sp-8);
+  padding-bottom: var(--sp-2);
+  padding-left: var(--sp-3);
+  border-bottom: 1px solid rgba(255,122,24,.15);
+  border-left: 2px solid var(--shd-orange);
+  font-family: var(--shd-font-heading);
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  color: var(--shd-text);
+  font-size: 1.1rem;
+}
+.builder-about__content h2:first-child { margin-top: 0; }
+.builder-about__content p { color: var(--shd-muted); line-height: 1.7; margin-bottom: var(--sp-4); }
+.builder-about__cta {
+  margin-top: var(--sp-6);
+  padding: var(--sp-4);
+  background: var(--card-bg);
+  border: 1px solid var(--shd-line);
+  clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 10px 100%, 0 calc(100% - 10px));
+}
+.faq-list { margin: var(--sp-4) 0; }
+.faq-item {
+  background: rgba(16,20,26,.9);
+  border: 1px solid var(--shd-line);
+  margin-bottom: var(--sp-2);
+  overflow: hidden;
+  transition: border-color 200ms ease;
+  clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px));
+}
+.faq-item:hover { border-color: rgba(255,122,24,.3); }
+.faq-item[open] { border-color: var(--shd-orange); }
+.faq-question {
+  padding: var(--sp-3) var(--sp-4);
+  font-family: var(--shd-font-heading);
+  font-weight: 700;
+  font-size: var(--text-sm);
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 48px;
+  color: var(--shd-text);
+  letter-spacing: .02em;
+}
+.faq-question::-webkit-details-marker { display: none; }
+.faq-question::after { content: '＋'; font-size: var(--text-lg); color: var(--shd-orange); transition: transform .2s; }
+.faq-item[open] .faq-question::after { content: '－'; }
+.faq-answer {
+  padding: 0 var(--sp-4) var(--sp-4);
+  font-size: var(--text-sm);
+  color: var(--shd-muted);
+  line-height: 1.6;
+}
+
+
+/* ============================================================
+   MOBILE RESPONSIVE
+   ============================================================ */
+@media(max-width:767px) {
+  .shd-hero__title { font-size: var(--text-2xl) !important; letter-spacing: .08em; }
+  .shd-hero__sub { font-size: var(--text-xs); letter-spacing: .1em; }
+  .spec-btn { font-size: var(--text-xs); padding: var(--sp-2) var(--sp-3); min-height: 42px; }
+  .slot-select { min-height: 44px; font-size: var(--text-sm); padding: var(--sp-2) var(--sp-3); }
+  .slot-select--sm { min-height: 40px; font-size: var(--text-xs); }
+  .slot-input { min-height: 44px; font-size: var(--text-sm); padding: var(--sp-2) var(--sp-3); }
+  .slot-card__header { padding: var(--sp-3) var(--sp-4); font-size: var(--text-sm); }
+  .slot-card__body { padding: var(--sp-3) var(--sp-4); }
+  .slot-card__row { margin-bottom: var(--sp-2); }
+  .slot-label { font-size: var(--text-xs); margin-bottom: var(--sp-1); }
+  .quad { padding: var(--sp-4); }
+  .quad__heading { font-size: var(--text-sm); }
+  .sub-card { padding: var(--sp-3); }
+  .sub-card__label { font-size: var(--text-xs); margin-bottom: 6px; }
+  .os-detail, .smc-detail { font-size: var(--text-sm); padding: var(--sp-3); }
+  .summary-inner { position: static; max-height: none; }
+  .builder-summary { width: 100% !important; }
+  .gear-grid { grid-template-columns: 1fr !important; }
+}
+
+@media(min-width:768px) and (max-width:1023px) {
+  .gear-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+
+/* ============================================================
+   REDUCED MOTION
+   ============================================================ */
+@media (prefers-reduced-motion: reduce) {
+  .shd-hero__scan-line,
+  .slot-card--gear.set-active-2::after,
+  .slot-card--gear.set-active-3::after,
+  .slot-card--gear.set-active-4::after,
+  .slot-card--gear.set-active-3,
+  .slot-card--gear.set-active-4,
+  .slot-card--gear.set-active-4::before,
+  .slot-card__badge.full-bonus {
+    animation: none !important;
+  }
+}
+</style>

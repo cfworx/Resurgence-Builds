@@ -86,15 +86,31 @@ body {
   font-size: var(--text-base);
   line-height: 1.7;
   color: var(--ink);
-  background-color: var(--bg);
+  background: radial-gradient(circle at 50% 0%, #0a0f17, #04060a 70%);
+  background-color: #04060a;
+  background-attachment: fixed;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   min-height: 100dvh;
   display: flex;
   flex-direction: column;
 }
+/* Tactical grid overlay — matches SHD boot screen */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  opacity: .4;
+  background:
+    linear-gradient(rgba(82,168,255,.06) 1px, transparent 1px) 0 0 / 100% 44px,
+    linear-gradient(90deg, rgba(82,168,255,.06) 1px, transparent 1px) 0 0 / 44px 100%;
+  mask: radial-gradient(ellipse at 50% 30%, #000 20%, transparent 70%);
+  -webkit-mask: radial-gradient(ellipse at 50% 30%, #000 20%, transparent 70%);
+}
 
-main { flex: 1; }
+main { flex: 1; position: relative; z-index: 1; }
 
 img, picture, video, canvas, svg { display: block; max-width: 100%; }
 input, button, textarea, select {

@@ -16,6 +16,14 @@
   };
   const GEAR_SLOTS = ['mask','gloves','holster','kneepads','body','backpack'];
 
+  // Build attribute name↔index lookup for compact URL encoding
+  const attrList = (DATA.allAttributes || []).map(a => typeof a === 'string' ? a : a.name || a);
+  const attrToIdx = {}; const idxToAttr = {};
+  attrList.forEach((name, i) => { attrToIdx[name] = 'a' + i; idxToAttr['a' + i] = name; });
+
+  // SHD mode: professional labels for v2 page, meme labels for original
+  const SHD_MODE = document.getElementById('builder-app')?.hasAttribute('data-shd-mode');
+
   let state = {spec:null, subclass:'', slots:{}, weapon1:{id:'',tier:'T2',talent:'',talent2:''}, weapon2:{id:'',tier:'T2',talent:'',talent2:''}, os:'', smc1:'', smc2:'', smc3:'', buildName:''};
   GEAR_SLOTS.forEach(s => state.slots[s] = {set:'',talent:'',attr1:'',attr2:''});
 
@@ -199,15 +207,19 @@
   }
 
   function populateSMCDropdowns(){
-    const filtered = state.spec ? skillModCombos.filter(s => s.specialization === state.spec) : skillModCombos;
-    
     ['1', '2', '3'].forEach(num => {
       const sel = document.getElementById(`select-smc${num}`);
       const val = state[`smc${num}`];
       
-      sel.innerHTML = state.spec
-        ? `<option value="">— Select Skill Mod ${num} —</option>`
-        : `<option value="">— Select Skill Mod ${num} (All) —</option>`;
+      if (!state.spec) {
+        // No spec selected — show placeholder only, no options
+        sel.innerHTML = `<option value="">— Choose spec first —</option>`;
+        state[`smc${num}`] = '';
+        return;
+      }
+
+      const filtered = skillModCombos.filter(s => s.specialization === state.spec);
+      sel.innerHTML = `<option value="">— Select Skill Mod ${num} —</option>`;
         
       const specColors = {'Demolitionist':'#3b82f6','Tech Operator':'#3b82f6','Vanguard':'#f97316','Bulwark':'#22c55e','Field Medic':'#a855f7'};
       filtered.forEach(s => {
@@ -511,36 +523,76 @@
     const qualityBox = document.getElementById('build-quality-indicator');
     
     if (qualityBadge && qualityText && qualityBox) {
-      if (score === 0) {
-        qualityBadge.innerHTML = '<img src="/images/icons/icon-rank-trash.webp" alt="" class="sl-img" width="28" height="28"> FLAMING PILE OF GARBAGE';
-        qualityBadge.style.color = '#e74c3c';
-        qualityBox.style.background = 'rgba(231, 76, 60, 0.1)';
-        qualityBox.style.borderColor = '#e74c3c';
-        qualityText.textContent = "This build is an absolute dumpster fire. You're going to get spawn-trapped by a standard red-bar NPC in a level 1 tutorial zone. Select a spec and get some actual gear set bonuses or weapon talents before someone sees you like this.";
-      } else if (score < 7) {
-        qualityBadge.innerHTML = '<img src="/images/icons/icon-rank-poor.webp" alt="" class="sl-img" width="28" height="28"> MILDLY PATHETIC';
-        qualityBadge.style.color = '#f1c40f';
-        qualityBox.style.background = 'rgba(241, 196, 15, 0.1)';
-        qualityBox.style.borderColor = '#f1c40f';
-        qualityText.textContent = "You managed to find exactly one stat connection. Congratulations, you are now slightly more useful than a decorative traffic cone. Keep linking slots to get past this embarrassment.";
-      } else if (score < 13) {
-        qualityBadge.innerHTML = '<img src="/images/icons/icon-rank-average.webp" alt="" class="sl-img" width="28" height="28"> SEMI-COMPETENT';
-        qualityBadge.style.color = '#3498db';
-        qualityBox.style.background = 'rgba(52, 152, 219, 0.1)';
-        qualityBox.style.borderColor = '#3498db';
-        qualityText.textContent = "Two synergies! You might not instantly explode the split second you step into the Dark Zone, but don't go challenging anyone who has a pulse or a working keyboard just yet.";
-      } else if (score < 18) {
-        qualityBadge.innerHTML = '<img src="/images/icons/icon-rank-great.webp" alt="" class="sl-img" width="28" height="28"> CERTIFIED SWEATY';
-        qualityBadge.style.color = '#9b59b6';
-        qualityBox.style.background = 'rgba(155, 89, 182, 0.1)';
-        qualityBox.style.borderColor = '#9b59b6';
-        qualityText.textContent = "Three synergies! Look at you go, you absolute tryhard. You're probably running around the house telling your dog about your optimal crit stacking. Go take a shower, you've earned it.";
+      // Set data-tier for CSS semantic glow
+      const tier = score === 0 ? 'incomplete' : score < 7 ? 'low' : score < 13 ? 'operational' : score < 18 ? 'optimized' : 'elite';
+      qualityBox.setAttribute('data-tier', tier);
+
+      if (SHD_MODE) {
+        // --- SHD MODE: Professional ISAC-style labels ---
+        if (score === 0) {
+          qualityBadge.innerHTML = '<img src="/images/icons/icon-rank-trash.webp" alt="" class="sl-img" width="28" height="28"> INCOMPLETE LOADOUT';
+          qualityBadge.style.color = '#ff4d3d';
+          qualityBox.style.background = 'rgba(255,77,61,0.08)';
+          qualityBox.style.borderColor = 'rgba(255,77,61,0.5)';
+          qualityText.textContent = 'No active synergies detected. Select a specialization and configure gear sets to begin loadout analysis.';
+        } else if (score < 7) {
+          qualityBadge.innerHTML = '<img src="/images/icons/icon-rank-poor.webp" alt="" class="sl-img" width="28" height="28"> LOW SYNERGY';
+          qualityBadge.style.color = '#ffb13b';
+          qualityBox.style.background = 'rgba(255,177,59,0.06)';
+          qualityBox.style.borderColor = 'rgba(255,177,59,0.4)';
+          qualityText.textContent = 'Minimal stat interaction detected. Additional gear set bonuses and talent alignment recommended to improve loadout efficiency.';
+        } else if (score < 13) {
+          qualityBadge.innerHTML = '<img src="/images/icons/icon-rank-average.webp" alt="" class="sl-img" width="28" height="28"> OPERATIONAL';
+          qualityBadge.style.color = '#4aa3ff';
+          qualityBox.style.background = 'rgba(74,163,255,0.06)';
+          qualityBox.style.borderColor = 'rgba(74,163,255,0.4)';
+          qualityText.textContent = 'Functional loadout with active synergies. Stat coverage is adequate for standard operations. Review warnings for optimization opportunities.';
+        } else if (score < 18) {
+          qualityBadge.innerHTML = '<img src="/images/icons/icon-rank-great.webp" alt="" class="sl-img" width="28" height="28"> OPTIMIZED';
+          qualityBadge.style.color = '#b48cff';
+          qualityBox.style.background = 'rgba(180,140,255,0.06)';
+          qualityBox.style.borderColor = 'rgba(180,140,255,0.4)';
+          qualityText.textContent = 'Strong synergy network detected. Gear sets, talents, and attributes are aligned. This loadout is viable for endgame content.';
+        } else {
+          qualityBadge.innerHTML = '<img src="/images/icons/icon-rank-goat.webp" alt="" class="sl-img" width="28" height="28"> ELITE SYNERGY';
+          qualityBadge.style.color = '#59d483';
+          qualityBox.style.background = 'rgba(89,212,131,0.06)';
+          qualityBox.style.borderColor = 'rgba(89,212,131,0.4)';
+          qualityText.textContent = 'Maximum synergy density achieved. All stat channels are reinforcing. This loadout is optimized for high-difficulty operations and competitive play.';
+        }
       } else {
-        qualityBadge.innerHTML = '<img src="/images/icons/icon-rank-goat.webp" alt="" class="sl-img" width="28" height="28"> GOD-TIER CHAD LOADOUT';
-        qualityBadge.style.color = '#2ecc71';
-        qualityBox.style.background = 'rgba(46, 204, 113, 0.1)';
-        qualityBox.style.borderColor = '#2ecc71';
-        qualityText.textContent = "Four or more synergies. Absolute theorycrafting perfection. This is so beautiful we might actually cry. Copy this link immediately, spam it in your clan Discord and watch the salt flow.";
+        // --- ORIGINAL MODE: Community meme labels ---
+        if (score === 0) {
+          qualityBadge.innerHTML = '<img src="/images/icons/icon-rank-trash.webp" alt="" class="sl-img" width="28" height="28"> FLAMING PILE OF GARBAGE';
+          qualityBadge.style.color = '#e74c3c';
+          qualityBox.style.background = 'rgba(231, 76, 60, 0.1)';
+          qualityBox.style.borderColor = '#e74c3c';
+          qualityText.textContent = "This build is an absolute dumpster fire. You're going to get spawn-trapped by a standard red-bar NPC in a level 1 tutorial zone. Select a spec and get some actual gear set bonuses or weapon talents before someone sees you like this.";
+        } else if (score < 7) {
+          qualityBadge.innerHTML = '<img src="/images/icons/icon-rank-poor.webp" alt="" class="sl-img" width="28" height="28"> MILDLY PATHETIC';
+          qualityBadge.style.color = '#f1c40f';
+          qualityBox.style.background = 'rgba(241, 196, 15, 0.1)';
+          qualityBox.style.borderColor = '#f1c40f';
+          qualityText.textContent = "You managed to find exactly one stat connection. Congratulations, you are now slightly more useful than a decorative traffic cone. Keep linking slots to get past this embarrassment.";
+        } else if (score < 13) {
+          qualityBadge.innerHTML = '<img src="/images/icons/icon-rank-average.webp" alt="" class="sl-img" width="28" height="28"> SEMI-COMPETENT';
+          qualityBadge.style.color = '#3498db';
+          qualityBox.style.background = 'rgba(52, 152, 219, 0.1)';
+          qualityBox.style.borderColor = '#3498db';
+          qualityText.textContent = "Two synergies! You might not instantly explode the split second you step into the Dark Zone, but don't go challenging anyone who has a pulse or a working keyboard just yet.";
+        } else if (score < 18) {
+          qualityBadge.innerHTML = '<img src="/images/icons/icon-rank-great.webp" alt="" class="sl-img" width="28" height="28"> CERTIFIED SWEATY';
+          qualityBadge.style.color = '#9b59b6';
+          qualityBox.style.background = 'rgba(155, 89, 182, 0.1)';
+          qualityBox.style.borderColor = '#9b59b6';
+          qualityText.textContent = "Three synergies! Look at you go, you absolute tryhard. You're probably running around the house telling your dog about your optimal crit stacking. Go take a shower, you've earned it.";
+        } else {
+          qualityBadge.innerHTML = '<img src="/images/icons/icon-rank-goat.webp" alt="" class="sl-img" width="28" height="28"> GOD-TIER CHAD LOADOUT';
+          qualityBadge.style.color = '#2ecc71';
+          qualityBox.style.background = 'rgba(46, 204, 113, 0.1)';
+          qualityBox.style.borderColor = '#2ecc71';
+          qualityText.textContent = "Four or more synergies. Absolute theorycrafting perfection. This is so beautiful we might actually cry. Copy this link immediately, spam it in your clan Discord and watch the salt flow.";
+        }
       }
     }
 
@@ -707,15 +759,95 @@
     }
     let rawHash = location.hash.slice(1);
     
-    // Detect compressed format: starts with 'c='
+    // Detect compact 'b=' format (newest, shortest)
+    if (rawHash.startsWith('b=')) {
+      try {
+        let compact = rawHash.slice(2);
+        // Try LZString decompression first
+        if (typeof LZString !== 'undefined') {
+          const decompressed = LZString.decompressFromEncodedURIComponent(compact);
+          if (decompressed) compact = decompressed;
+        }
+        const decoded = decodeCompact(compact);
+        if (decoded) {
+          // Apply decoded state
+          state.spec = decoded.spec;
+          state.subclass = decoded.subclass;
+          state.buildName = decoded.buildName;
+          state.os = decoded.os;
+          state.smc1 = decoded.smc1;
+          state.smc2 = decoded.smc2;
+          state.smc3 = decoded.smc3;
+          state.weapon1 = decoded.weapon1;
+          state.weapon2 = decoded.weapon2;
+          GEAR_SLOTS.forEach(slot => { state.slots[slot] = decoded.slots[slot]; });
+
+          // Sync UI
+          if (state.spec) {
+            const btn = document.querySelector(`.spec-btn[data-spec="${state.spec}"]`);
+            if(btn){ document.querySelectorAll('.spec-btn').forEach(b => b.classList.remove('is-active')); btn.classList.add('is-active'); }
+            populateOSDropdown();
+            populateSubclassDropdown();
+            populateSMCDropdowns();
+          }
+          GEAR_SLOTS.forEach(slot => {
+            const sl = state.slots[slot];
+            const setEl = document.getElementById(`set-${slot}`); if(setEl) setEl.value = sl.set;
+            const talEl = document.getElementById(`talent-${slot}`); if(talEl) talEl.value = sl.talent;
+            const a1El = document.getElementById(`attr1-${slot}`); if(a1El) a1El.value = sl.attr1;
+            const a2El = document.getElementById(`attr2-${slot}`); if(a2El) a2El.value = sl.attr2;
+          });
+          if(state.weapon1.id) {
+            document.getElementById('weapon-w1').value = state.weapon1.id;
+            if(state.weapon1.id.startsWith('ex-')) {
+              const ex1 = exoticWeapons.find(e => e.id === state.weapon1.id.substring(3));
+              const exRow1 = document.getElementById('row-exotic-w1');
+              const exDisp1 = document.getElementById('exotic-talent-w1');
+              if (ex1 && exRow1 && exDisp1) { exDisp1.textContent = ex1.talentName; exRow1.style.display = 'block'; }
+            } else {
+              document.getElementById('row-tier-w1').style.display = 'block';
+            }
+          }
+          if(state.weapon1.tier) document.getElementById('tier-w1').value = state.weapon1.tier;
+          if(state.weapon1.talent) document.getElementById('wtalent-w1').value = state.weapon1.talent;
+          if(state.weapon1.talent2) document.getElementById('wtalent2-w1').value = state.weapon1.talent2;
+          if(state.weapon2.id) {
+            document.getElementById('weapon-w2').value = state.weapon2.id;
+            if(state.weapon2.id.startsWith('ex-')) {
+              const ex2 = exoticWeapons.find(e => e.id === state.weapon2.id.substring(3));
+              const exRow2 = document.getElementById('row-exotic-w2');
+              const exDisp2 = document.getElementById('exotic-talent-w2');
+              if (ex2 && exRow2 && exDisp2) { exDisp2.textContent = ex2.talentName; exRow2.style.display = 'block'; }
+            } else {
+              document.getElementById('row-tier-w2').style.display = 'block';
+            }
+          }
+          if(state.weapon2.tier) document.getElementById('tier-w2').value = state.weapon2.tier;
+          if(state.weapon2.talent) document.getElementById('wtalent-w2').value = state.weapon2.talent;
+          if(state.weapon2.talent2) document.getElementById('wtalent2-w2').value = state.weapon2.talent2;
+          if(state.os) { document.getElementById('select-os').value = state.os; showOSDetail(); }
+          if(state.subclass) document.getElementById('select-subclass').value = state.subclass;
+          document.getElementById('input-build-name').value = state.buildName || '';
+          if(state.smc1) document.getElementById('smc-1').value = state.smc1;
+          if(state.smc2) document.getElementById('smc-2').value = state.smc2;
+          if(state.smc3) document.getElementById('smc-3').value = state.smc3;
+
+          showWeaponDetail(1);
+          showWeaponDetail(2);
+          enforceExoticRestriction();
+          update();
+          return; // Done — skip legacy parsing
+        }
+      } catch(e) { /* fallback to other formats */ }
+    }
+
+    // Detect old LZString compressed format: starts with 'c='
     if (rawHash.startsWith('c=')) {
       try {
         const compressed = rawHash.slice(2);
         const decompressed = LZString.decompressFromEncodedURIComponent(compressed);
         if (decompressed) {
           rawHash = decompressed;
-          // Update the address bar to verbose format for readability
-          history.replaceState(null, '', '#' + decompressed);
         }
       } catch(e) { /* fallback to raw hash */ }
     }
@@ -808,17 +940,8 @@
 
   function copyLink(){
     updateURL();
-    // Compress the hash for a much shorter share URL
-    const rawHash = location.hash.slice(1);
-    let shareUrl = location.href;
-    if (rawHash && typeof LZString !== 'undefined') {
-      try {
-        const compressed = LZString.compressToEncodedURIComponent(rawHash);
-        if (compressed && compressed.length < rawHash.length) {
-          shareUrl = location.origin + location.pathname + '#c=' + compressed;
-        }
-      } catch(e) { /* fallback to uncompressed */ }
-    }
+    // Address bar already has compact URL from updateURL()
+    const shareUrl = location.href;
     navigator.clipboard.writeText(shareUrl).then(() => {
       const toast = document.getElementById('copy-toast');
       toast.classList.add('is-visible');
@@ -862,6 +985,75 @@
     update();
   }
 
+  /**
+   * Compact build encoding — 'b=' format
+   * Attributes use short index codes (a0, a1…) instead of full names
+   * Layout: spec|sc|name|ms,m1,m2|gs,g1,g2|hs,h1,h2|ks,k1,k2|cs,ct,c1,c2|ps,pt,p1,p2|w1id,w1tier,w1t,w1t2|w2id,w2tier,w2t,w2t2|os|sm1,sm2,sm3
+   */
+  function encodeCompact() {
+    const a = (v) => attrToIdx[v] || v; // attr name → short code
+    const g = (slot) => {
+      const s = state.slots[slot] || {};
+      const parts = [s.set||'', a(s.attr1||''), a(s.attr2||'')];
+      if (slot === 'body' || slot === 'backpack') parts.splice(1, 0, s.talent||'');
+      return parts.join(',');
+    };
+    const w = (wState) => {
+      if (!wState.id) return ',,,';
+      const isExotic = wState.id.startsWith('ex-');
+      const id = isExotic ? 'x' + wState.id.substring(3) : wState.id.substring(4);
+      return [id, isExotic ? '' : (wState.tier||''), wState.talent||'', wState.talent2||''].join(',');
+    };
+    const parts = [
+      state.spec||'',
+      state.subclass||'',
+      state.buildName||'',
+      g('mask'), g('gloves'), g('holster'), g('kneepads'),
+      g('body'), g('backpack'),
+      w(state.weapon1), w(state.weapon2),
+      state.os||'',
+      [state.smc1||'', state.smc2||'', state.smc3||''].join(',')
+    ];
+    return parts.join('|');
+  }
+
+  function decodeCompact(str) {
+    const parts = str.split('|');
+    if (parts.length < 14) return null;
+    const [spec, sc, name, mask, gloves, holster, kneepads, body, backpack, w1, w2, os, smcs] = parts;
+
+    const da = (v) => idxToAttr[v] || v; // short code → attr name
+    const parseGear = (s, hasTalent) => {
+      const p = s.split(',');
+      if (hasTalent) return { set: p[0]||'', talent: p[1]||'', attr1: da(p[2]||''), attr2: da(p[3]||'') };
+      return { set: p[0]||'', talent: '', attr1: da(p[1]||''), attr2: da(p[2]||'') };
+    };
+    const parseWeapon = (s) => {
+      const p = s.split(',');
+      const raw = p[0]||'';
+      if (!raw) return { id: '', tier: 'T2', talent: '', talent2: '' };
+      const isExotic = raw.startsWith('x');
+      return {
+        id: isExotic ? 'ex-' + raw.substring(1) : 'std-' + raw,
+        tier: isExotic ? 'T2' : (p[1]||'T2'),
+        talent: p[2]||'',
+        talent2: p[3]||''
+      };
+    };
+    const smcParts = (smcs||'').split(',');
+
+    return {
+      spec: spec||null, subclass: sc||'', buildName: name||'',
+      slots: {
+        mask: parseGear(mask, false), gloves: parseGear(gloves, false),
+        holster: parseGear(holster, false), kneepads: parseGear(kneepads, false),
+        body: parseGear(body, true), backpack: parseGear(backpack, true)
+      },
+      weapon1: parseWeapon(w1), weapon2: parseWeapon(w2),
+      os: os||'', smc1: smcParts[0]||'', smc2: smcParts[1]||'', smc3: smcParts[2]||''
+    };
+  }
+
   function updateURL(){
     const p = new URLSearchParams();
     if(state.spec) p.set('s', state.spec);
@@ -902,8 +1094,15 @@
     if(state.smc3) p.set('sm3', state.smc3);
     if(state.buildName) p.set('n', state.buildName);
     
-    const hash = p.toString();
-    if(hash) history.replaceState(null, '', '#' + hash);
+    const rawHash = p.toString();
+    if(rawHash) {
+      // Use compact 'b=' encoding — much shorter than URLSearchParams
+      const compact = encodeCompact();
+      const encoded = typeof LZString !== 'undefined'
+        ? LZString.compressToEncodedURIComponent(compact)
+        : compact;
+      history.replaceState(null, '', '#b=' + encoded);
+    }
     else history.replaceState(null, '', location.pathname);
   }
 
