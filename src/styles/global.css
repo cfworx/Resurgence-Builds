@@ -165,7 +165,8 @@ pre code { background: none; padding: 0; }
   top: -40px;
   left: 0;
   background: var(--accent);
-  color: #fff;
+  color: #000;
+  font-weight: 800;
   padding: 8px;
   z-index: 1000;
   transition: top var(--transition-fast);
@@ -563,11 +564,13 @@ tbody tr:hover {
   transition: color var(--transition-fast);
 }
 
-.nav-dropdown:hover .nav-dropdown__btn {
+.nav-dropdown:hover .nav-dropdown__btn,
+.nav-dropdown:focus-within .nav-dropdown__btn {
   color: var(--accent);
 }
 
-.nav-dropdown:hover .nav-dropdown__btn svg {
+.nav-dropdown:hover .nav-dropdown__btn svg,
+.nav-dropdown:focus-within .nav-dropdown__btn svg {
   transform: rotate(180deg);
 }
 
@@ -589,7 +592,9 @@ tbody tr:hover {
   z-index: 10000;
 }
 
-.nav-dropdown:hover .nav-dropdown__menu {
+.nav-dropdown:hover .nav-dropdown__menu,
+.nav-dropdown:focus-within .nav-dropdown__menu,
+.nav-dropdown__menu.is-open {
   opacity: 1;
   visibility: visible;
   transform: translateX(-50%) translateY(0);
@@ -1092,7 +1097,8 @@ main li a:hover {
   top: -100%;
   left: var(--sp-4);
   background: var(--accent);
-  color: #fff;
+  color: #000;
+  font-weight: 800;
   padding: var(--sp-2) var(--sp-4);
   z-index: 200;
   border-radius: var(--border-radius);

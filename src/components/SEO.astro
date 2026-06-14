@@ -260,6 +260,7 @@ const finalJsonLd = {
 <meta property="og:title" content={fullTitle} />
 <meta property="og:description" content={description} />
 <meta property="og:image" content={ogImageUrl} />
+<meta property="og:image:alt" content={description} />
 <meta property="og:image:width" content={isDefaultOgImage ? "800" : "1200"} />
 <meta property="og:image:height" content={isDefaultOgImage ? "800" : "630"} />
 <meta property="og:url" content={canonicalURL} />
@@ -275,6 +276,7 @@ const finalJsonLd = {
 <meta name="twitter:title" content={fullTitle} />
 <meta name="twitter:description" content={description} />
 <meta name="twitter:image" content={ogImageUrl} />
+<meta name="twitter:image:alt" content={description} />
 <meta name="twitter:site" content="@ResurgenceBuild" />
 {article && <meta name="author" content={article.author} />}
 

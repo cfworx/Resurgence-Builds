@@ -705,7 +705,22 @@
       }
       return;
     }
-    const p = new URLSearchParams(location.hash.slice(1));
+    let rawHash = location.hash.slice(1);
+    
+    // Detect compressed format: starts with 'c='
+    if (rawHash.startsWith('c=')) {
+      try {
+        const compressed = rawHash.slice(2);
+        const decompressed = LZString.decompressFromEncodedURIComponent(compressed);
+        if (decompressed) {
+          rawHash = decompressed;
+          // Update the address bar to verbose format for readability
+          history.replaceState(null, '', '#' + decompressed);
+        }
+      } catch(e) { /* fallback to raw hash */ }
+    }
+    
+    const p = new URLSearchParams(rawHash);
     if(p.has('s')){
       state.spec = p.get('s');
       const btn = document.querySelector(`.spec-btn[data-spec="${state.spec}"]`);
@@ -793,14 +808,24 @@
 
   function copyLink(){
     updateURL();
-    const url = location.href;
-    navigator.clipboard.writeText(url).then(() => {
+    // Compress the hash for a much shorter share URL
+    const rawHash = location.hash.slice(1);
+    let shareUrl = location.href;
+    if (rawHash && typeof LZString !== 'undefined') {
+      try {
+        const compressed = LZString.compressToEncodedURIComponent(rawHash);
+        if (compressed && compressed.length < rawHash.length) {
+          shareUrl = location.origin + location.pathname + '#c=' + compressed;
+        }
+      } catch(e) { /* fallback to uncompressed */ }
+    }
+    navigator.clipboard.writeText(shareUrl).then(() => {
       const toast = document.getElementById('copy-toast');
       toast.classList.add('is-visible');
       setTimeout(() => toast.classList.remove('is-visible'), 2000);
     }).catch(() => {
       const ta = document.createElement('textarea');
-      ta.value = location.href; document.body.appendChild(ta); ta.select();
+      ta.value = shareUrl; document.body.appendChild(ta); ta.select();
       document.execCommand('copy'); document.body.removeChild(ta);
       const toast = document.getElementById('copy-toast');
       toast.classList.add('is-visible');

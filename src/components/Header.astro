@@ -167,4 +167,24 @@ const navItems = [
       nav.setAttribute('aria-hidden', String(!isOpen));
     });
   }
+
+  // Desktop dropdown keyboard support
+  document.querySelectorAll('.nav-dropdown').forEach(dropdown => {
+    const button = dropdown.querySelector('.nav-dropdown__btn');
+    const menu = dropdown.querySelector('.nav-dropdown__menu');
+    if (!button || !menu) return;
+
+    button.addEventListener('click', () => {
+      const open = button.getAttribute('aria-expanded') === 'true';
+      button.setAttribute('aria-expanded', String(!open));
+      menu.classList.toggle('is-open', !open);
+    });
+
+    dropdown.addEventListener('focusout', (event: FocusEvent) => {
+      if (!dropdown.contains(event.relatedTarget as Node)) {
+        button.setAttribute('aria-expanded', 'false');
+        menu.classList.remove('is-open');
+      }
+    });
+  });
 </script>

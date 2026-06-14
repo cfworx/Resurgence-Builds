@@ -10,8 +10,10 @@ import rehypeCallouts from './scripts/rehype-callouts.mjs';
 import rehypeAdsense from './scripts/rehype-adsense.mjs';
 import rehypeTableA11y from './scripts/rehype-table-a11y.mjs';
 import rehypeImgSize from 'rehype-img-size';
-// Static fallback date — update this whenever you do a major site update
-const SITE_LAST_UPDATED = new Date().toISOString().slice(0, 10);
+// Stable fallback date. Do NOT use new Date() here — it makes every URL look
+// modified on every deploy and creates noisy sitemap discovery hints.
+// Update manually only when you do a real content-wide revision.
+const SITE_LAST_UPDATED = '2026-06-14';
 
 // Build the set of indexed tag slugs from tag-intros.json
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -44,7 +46,8 @@ export default defineConfig({
           page.includes('/api/') ||
           page.includes('/cdn-cgi/') ||
           page.includes('/build-planner/') ||
-          page.includes('/map/')
+          page.includes('/map/') ||
+          page.includes('/database/gear/')
         ) return false;
 
         // For /tag/ pages, only include if the slug is in tag-intros.json
