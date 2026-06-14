@@ -30,6 +30,14 @@ const GAME = {
     'Demolitionist': 'Engineering', 'Tech Operator': 'Engineering',
     'Bulwark': 'Toughness', 'Vanguard': 'Firepower', 'Field Medic': 'Toughness'
   },
+  /* Subclass overrides — more accurate than spec-level focus */
+  subclassFocus: {
+    'HE Munitions': 'Engineering', 'Ordinance': 'Engineering',
+    'Offensive Operations': 'Engineering', 'Aegis Operations': 'Engineering',
+    'Juggernaut': 'Toughness', 'Breacher': 'Firepower',
+    'Commando': 'Firepower', 'Recon': 'Toughness',
+    'Tactical Pharma': 'Engineering', 'Combat Medicine': 'Toughness'
+  },
 };
 
 /* ---------- Spec icons (WebP from our verified assets) ---------- */
@@ -107,6 +115,10 @@ function renderSpecs() {
 }
 
 /* ====================== HELPERS ====================== */
+/* Returns the effective stat focus for the current build — subclass-level overrides spec-level */
+function getEffectiveFocus() {
+  return GAME.subclassFocus[S.subclass] || GAME.specFocus[S.spec] || '';
+}
 function gearSet(val) { return GAME.gearSets.find(g => g.name === val) || GAME.gearSets.find(g => g.id === val); }
 function weapon(id) { return GAME.standardWeapons.find(w => w.id === id) || GAME.exoticWeapons.find(w => w.id === id); }
 function osProto(id) { return GAME.osProtocols.find(o => o.id === id); }
@@ -338,6 +350,21 @@ function setTalent(key, val) {
   if (!el) return;
   el.querySelector('.picktag__val').textContent = val || '—';
   el.classList.toggle('is-set', !!val);
+  // Show talent description
+  let descEl = el.querySelector('.picktag__desc');
+  if (val) {
+    const talent = GAME.weaponTalents.find(t => t.name === val);
+    if (talent && talent.description) {
+      if (!descEl) {
+        descEl = document.createElement('span');
+        descEl.className = 'picktag__desc';
+        el.appendChild(descEl);
+      }
+      descEl.textContent = talent.description;
+    }
+  } else if (descEl) {
+    descEl.remove();
+  }
 }
 
 /* ====================== RENDER: OS + SKILLS ====================== */
@@ -401,8 +428,24 @@ function renderArmorTalents() {
   if (kEl) kEl.textContent = k || 'Select talent';
   const bodyTag = $('.picktag[data-armortalent="body"]');
   const bpTag = $('.picktag[data-armortalent="backpack"]');
-  if (bodyTag) bodyTag.classList.toggle('is-set', !!b);
-  if (bpTag) bpTag.classList.toggle('is-set', !!k);
+  if (bodyTag) {
+    bodyTag.classList.toggle('is-set', !!b);
+    setArmorTalentDesc(bodyTag, b, GAME.bodyArmorTalents);
+  }
+  if (bpTag) {
+    bpTag.classList.toggle('is-set', !!k);
+    setArmorTalentDesc(bpTag, k, GAME.backpackTalents);
+  }
+}
+function setArmorTalentDesc(el, name, pool) {
+  let descEl = el.querySelector('.picktag__desc');
+  if (name) {
+    const t = pool.find(x => x.name === name);
+    if (t && t.description) {
+      if (!descEl) { descEl = document.createElement('span'); descEl.className = 'picktag__desc'; el.appendChild(descEl); }
+      descEl.textContent = t.description;
+    }
+  } else if (descEl) { descEl.remove(); }
 }
 
 /* ====================== SYNERGY MAP + LOOP ====================== */
@@ -458,6 +501,9 @@ function renderAll(initial) {
   renderISAC();
   const tplLabel = $('#tplLabel');
   if (tplLabel) tplLabel.textContent = S.name ? `${S.name} — ${S.spec} ${S.subclass}` : 'Select a verified template…';
+  // Sync build name input
+  const nameInput = $('#buildNameInput');
+  if (nameInput && nameInput !== document.activeElement) nameInput.value = S.name || '';
   if (initial) {
     const rig = $('#gearPanel .rig');
     if (rig) rig.classList.add('is-active');
@@ -646,6 +692,9 @@ function wire() {
   if (cardClose) cardClose.addEventListener('click', () => { const cm = $('#cardModal'); if (cm) cm.classList.remove('is-open'); });
   const cardModal = $('#cardModal');
   if (cardModal) cardModal.addEventListener('click', e => { if (e.target === cardModal) cardModal.classList.remove('is-open'); });
+  // Build name input
+  const nameInput = $('#buildNameInput');
+  if (nameInput) nameInput.addEventListener('input', () => { S.name = nameInput.value; });
 }
 
 function clearBuild() {
@@ -701,7 +750,10 @@ function resolveWeaponTalent(val) {
 function resolveWeapon(val) {
   if (!val) return '';
   const w = weaponById(val);
-  return w ? val : ''; // weapons use IDs natively
+  if (w) return val;
+  // Try exotic weapons too
+  const ew = GAME.exoticWeapons.find(x => x.id === val);
+  return ew ? val : '';
 }
 function resolveOS(val) {
   if (!val) return '';
@@ -733,27 +785,21 @@ function buildHash() {
     if (g.b1) p.set(key + '1', g.b1);
     if (g.b2) p.set(key + '2', g.b2);
   });
-  // Weapons: w1s=weapon id, w1t=talent1, w1t2=talent2, w1tr=tier
-  if (S.w1.id) p.set('w1s', S.w1.id);
-  if (S.w1.tier) p.set('w1tr', S.w1.tier);
-  if (S.w1.t1) {
-    const t = GAME.weaponTalents.find(x => x.name === S.w1.t1);
-    p.set('w1t', t ? t.id : S.w1.t1);
-  }
-  if (S.w1.t2) {
-    const t = GAME.weaponTalents.find(x => x.name === S.w1.t2);
-    p.set('w1t2', t ? t.id : S.w1.t2);
-  }
-  if (S.w2.id) p.set('w2s', S.w2.id);
-  if (S.w2.tier) p.set('w2tr', S.w2.tier);
-  if (S.w2.t1) {
-    const t = GAME.weaponTalents.find(x => x.name === S.w2.t1);
-    p.set('w2t', t ? t.id : S.w2.t1);
-  }
-  if (S.w2.t2) {
-    const t = GAME.weaponTalents.find(x => x.name === S.w2.t2);
-    p.set('w2t2', t ? t.id : S.w2.t2);
-  }
+  // Weapons: w1s=standard weapon, w1e=exotic weapon, w1t=talent1, w1t2=talent2, w1tr=tier
+  [['1', S.w1], ['2', S.w2]].forEach(([n, w]) => {
+    if (!w.id) return;
+    const isExotic = GAME.exoticWeapons.some(x => x.id === w.id);
+    p.set(`w${n}${isExotic ? 'e' : 's'}`, w.id);
+    if (w.tier) p.set(`w${n}tr`, w.tier);
+    if (w.t1) {
+      const t = GAME.weaponTalents.find(x => x.name === w.t1);
+      p.set(`w${n}t`, t ? t.id : w.t1);
+    }
+    if (w.t2) {
+      const t = GAME.weaponTalents.find(x => x.name === w.t2);
+      p.set(`w${n}t2`, t ? t.id : w.t2);
+    }
+  });
   if (S.os) p.set('os', S.os);
   S.skills.forEach((sm, i) => { if (sm) p.set('sm' + (i + 1), sm); });
   return '#' + p.toString();
@@ -788,19 +834,16 @@ function loadFromHash() {
     }
   });
 
-  // Weapons: w1s=weapon, w1t=talent1, w1t2=talent2, w1tr=tier
-  S.w1 = {
-    id: resolveWeapon(p.get('w1s') || ''),
-    t1: resolveWeaponTalent(p.get('w1t') || ''),
-    t2: resolveWeaponTalent(p.get('w1t2') || ''),
-    tier: p.get('w1tr') || 'T2'
-  };
-  S.w2 = {
-    id: resolveWeapon(p.get('w2s') || ''),
-    t1: resolveWeaponTalent(p.get('w2t') || ''),
-    t2: resolveWeaponTalent(p.get('w2t2') || ''),
-    tier: p.get('w2tr') || 'T2'
-  };
+  // Weapons: w1s=standard, w1e=exotic, w1t=talent1, w1t2=talent2, w1tr=tier
+  ['1', '2'].forEach(n => {
+    const wId = resolveWeapon(p.get(`w${n}s`) || '') || resolveWeapon(p.get(`w${n}e`) || '');
+    S[`w${n}`] = {
+      id: wId,
+      t1: resolveWeaponTalent(p.get(`w${n}t`) || ''),
+      t2: resolveWeaponTalent(p.get(`w${n}t2`) || ''),
+      tier: p.get(`w${n}tr`) || 'T2'
+    };
+  });
 
   // OS + Skills
   S.os = resolveOS(p.get('os') || '');

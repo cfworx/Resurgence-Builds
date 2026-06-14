@@ -501,6 +501,25 @@
 .picktag--wide:last-child{margin-bottom:0}
 .picktag--wide .picktag__val{font-size:13.5px;white-space:normal}
 .picktag--wide.is-set .picktag__val{color:var(--orange)}
+/* talent perk descriptions */
+.picktag__desc{
+  display:block;width:100%;margin-top:4px;
+  font-family:var(--font-body);font-size:11px;font-weight:400;letter-spacing:0;
+  color:var(--text-3);line-height:1.45;opacity:.8;
+}
+.picktag.is-set .picktag__desc{opacity:1}
+/* build name input */
+.build-name{
+  display:flex;align-items:center;gap:10px;padding:0 var(--space-4);flex:1;
+}
+.build-name__input{
+  width:100%;background:transparent !important;border:none !important;border-bottom:1px solid var(--line) !important;
+  font-family:var(--font-display) !important;font-size:14px !important;font-weight:600 !important;
+  color:var(--text) !important;padding:6px 0 !important;letter-spacing:.02em;
+  transition:border-color .2s;
+}
+.build-name__input:focus{border-bottom-color:var(--orange) !important;outline:none !important}
+.build-name__input::placeholder{color:var(--text-3);opacity:.6}
 
 /* synergy map + gameplay loop */
 .loop__bd{display:grid;grid-template-columns:1fr 1fr;gap:var(--space-6)}
