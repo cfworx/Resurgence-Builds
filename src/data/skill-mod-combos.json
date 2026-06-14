@@ -43,7 +43,7 @@
   },
   {
     "id": "smc-7",
-    "name": "Fire Support",
+    "name": "Ace",
     "specialization": "Demolitionist",
     "bonus2": "Skill Health+[4.0%~8.0%]",
     "bonus3": "Skill Critical Hits grant +0.30% Signature Ability Charge. Talent Cooldown: 1 second."
@@ -64,7 +64,7 @@
   },
   {
     "id": "smc-10",
-    "name": "Shaped Charge",
+    "name": "Prioritized Targets",
     "specialization": "Demolitionist",
     "bonus2": "Armor+[4.7%~9.3%]",
     "bonus3": "Artillery Turret hits on enemies afflicted by Bleed or Vulnerable grant +1.44% Firepower for 10 seconds, up to 5 stacks."
@@ -78,14 +78,14 @@
   },
   {
     "id": "smc-12",
-    "name": "Enhanced Fire Control",
+    "name": "Wingman",
     "specialization": "Demolitionist",
     "bonus2": "Max Health+[4.0%~8.0%]",
     "bonus3": "Artillery Turret hits grant +1.20% Weapon Critical Hit Chance for 10 seconds, up to 5 stacks."
   },
   {
     "id": "smc-13",
-    "name": "Multi-Directional Charge",
+    "name": "Contagion",
     "specialization": "Demolitionist",
     "bonus2": "Armor+[4.7%~9.3%]",
     "bonus3": "Explosive Seeker Mine hits on enemies afflicted by Bleed or Vulnerable apply the same debuff to all enemies within 10 meter(s) and grant +7.20% Firepower for 10 second(s)."
@@ -99,7 +99,7 @@
   },
   {
     "id": "smc-15",
-    "name": "Potent Composition",
+    "name": "Surgical Strike",
     "specialization": "Demolitionist",
     "bonus2": "Max Health+[4.0%~8.0%]",
     "bonus3": "Explosive Seeker Mine hits grant +7.20% Weapon Critical Hit Chance for 10 seconds. Talent Cooldown: 1 second."
@@ -134,7 +134,7 @@
   },
   {
     "id": "smc-20",
-    "name": "Thermite Charge",
+    "name": "Thermal Charge",
     "specialization": "Tech Operator",
     "bonus2": "Skill Health+[4.0%~8.0%]",
     "bonus3": "Striker Drone Critical Hits have a 5% chance of exploding, dealing 300% damage."
@@ -148,7 +148,7 @@
   },
   {
     "id": "smc-22",
-    "name": "Precise Suppression",
+    "name": "Exhaustion",
     "specialization": "Tech Operator",
     "bonus2": "Skill Cooldown Recovery-[2.0%~4.0%]",
     "bonus3": "Striker Drone hits on Drone Locked enemies have a 5% chance of granting 4.80% Damage Reduction from the targets for 10 second(s), up to 3 stack(s). Probability increases to 15% for targets who are at least 20 meter(s) away."
@@ -197,35 +197,35 @@
   },
   {
     "id": "smc-29",
-    "name": "Team Backup",
+    "name": "Combat Enhancer",
     "specialization": "Tech Operator",
     "bonus2": "Skill Health+[4.0%~8.0%]",
     "bonus3": "Striker Drone hits on enemies grant bonus effects to nearby allies."
   },
   {
     "id": "smc-30",
-    "name": "EMCAT",
+    "name": "Enhanced Chip",
     "specialization": "Tech Operator",
     "bonus2": "Skill Health+[4.0%~8.0%]",
     "bonus3": "Striker Drone Critical Hits apply Disoriented to target enemies."
   },
   {
     "id": "smc-31",
-    "name": "Applied Treatment",
+    "name": "Reinforced Support",
     "specialization": "Tech Operator",
     "bonus2": "Skill Cooldown Recovery-[2.0%~4.0%]",
     "bonus3": "Deploying Striker Drone restores Health to nearby allies."
   },
   {
     "id": "smc-32",
-    "name": "Performance Enhancer",
+    "name": "TeamFight",
     "specialization": "Tech Operator",
     "bonus2": "Skill Health+[4.0%~8.0%]",
     "bonus3": "Striker Drone kills grant bonus Skill Intensity stacks to the player."
   },
   {
     "id": "smc-33",
-    "name": "Accelerated Healing",
+    "name": "Accelerated Deployment",
     "specialization": "Tech Operator",
     "bonus2": "Skill Cooldown Recovery-[2.0%~4.0%]",
     "bonus3": "Striker Drone hits restore small amounts of Health to the player."
@@ -241,12 +241,12 @@
     "id": "smc-35",
     "name": "Hazardous Area",
     "specialization": "Tech Operator",
-    "bonus2": "Skill Health+[4.0%~8.0%]",
-    "bonus3": "Striker Drone creates hazardous area on enemy kills, applying status effects to nearby enemies."
+    "bonus2": "Engineering+[3.0%~6.0%]",
+    "bonus3": "Defender Drone deals damage to enemies within its radius every second."
   },
   {
     "id": "smc-36",
-    "name": "Mutual Assist",
+    "name": "Magnetic Recharge",
     "specialization": "Tech Operator",
     "bonus2": "Skill Cooldown Recovery-[2.0%~4.0%]",
     "bonus3": "Striker Drone assists allies by providing bonus effects when they take damage."
