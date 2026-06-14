@@ -134,7 +134,7 @@
   },
   {
     "id": "smc-20",
-    "name": "Thermal Charge",
+    "name": "Thermite Charge",
     "specialization": "Tech Operator",
     "bonus2": "Skill Health+[4.0%~8.0%]",
     "bonus3": "Striker Drone Critical Hits have a 5% chance of exploding, dealing 300% damage."
@@ -172,70 +172,70 @@
     "name": "Supply Line",
     "specialization": "Tech Operator",
     "bonus2": "Skill Cooldown Recovery-[2.0%~4.0%]",
-    "bonus3": "Within 30 second(s) of activating Drone Overload, Striker Drone hits have a 5% chance of restoring 2% Max Health. Probability increases to 10% for targets at least 20m away."
+    "bonus3": "Within 30 second(s) of activating Drone Overload, Striker Drone hits have a 5% chance of restoring 2% Max Health. Probability increases to 10% for targets who are at least 20 meter(s) away."
   },
   {
     "id": "smc-26",
     "name": "Optimized Targeting",
     "specialization": "Tech Operator",
-    "bonus2": "Skill Cooldown Recovery-[2.0%~4.0%]",
-    "bonus3": "Striker Drone hits on Drone Locked enemies grant bonus effect based on target distance."
+    "bonus2": "Skill Health+[4.0%~8.0%]",
+    "bonus3": "Within 30 second(s) of activating Drone Overload, Striker Drone hits have a 10% chance of granting +10.80% Skill Critical Hit Chance for 20 second(s)."
   },
   {
     "id": "smc-27",
     "name": "Lethal Sweep",
     "specialization": "Tech Operator",
     "bonus2": "Skill Health+[4.0%~8.0%]",
-    "bonus3": "Striker Drone Multi-Shot hits grant bonus Skill Critical Hit Chance stacks."
+    "bonus3": "Within 20 second(s) of activating Drone Overload, kills grant +3.20% Skill Multi-Shot Chance for 20 second(s), up to 3 stack(s)."
   },
   {
     "id": "smc-28",
     "name": "Close Protection",
     "specialization": "Tech Operator",
     "bonus2": "Skill Cooldown Recovery-[2.0%~4.0%]",
-    "bonus3": "Striker Drone hits on enemies within 10 meter(s) grant bonus Damage Reduction."
+    "bonus3": "Mender Drone healing grants +2.00% Healing Intensity for 20 second(s), up to 6 stack(s). Grants an additional +3.20% Healing Intensity over 3 stack(s)."
   },
   {
     "id": "smc-29",
     "name": "Combat Enhancer",
     "specialization": "Tech Operator",
-    "bonus2": "Skill Health+[4.0%~8.0%]",
-    "bonus3": "Striker Drone hits on enemies grant bonus effects to nearby allies."
+    "bonus2": "Engineering+[3.0%~6.0%]",
+    "bonus3": "Mender Drone healing grants bonus damage equal to 6.60% Engineering for 20 second(s), up to 3 stack(s)."
   },
   {
     "id": "smc-30",
     "name": "Enhanced Chip",
     "specialization": "Tech Operator",
-    "bonus2": "Skill Health+[4.0%~8.0%]",
-    "bonus3": "Striker Drone Critical Hits apply Disoriented to target enemies."
+    "bonus2": "Healing Intensity+[3.3%~6.7%]",
+    "bonus3": "Deploying a Mender Drone grants +3.20% Signature Ability Charge Efficiency for 20 second(s), up to 3 stack(s)."
   },
   {
     "id": "smc-31",
     "name": "Reinforced Support",
     "specialization": "Tech Operator",
     "bonus2": "Skill Cooldown Recovery-[2.0%~4.0%]",
-    "bonus3": "Deploying Striker Drone restores Health to nearby allies."
+    "bonus3": "First-Aid Firefly healing restores additional Health over 20 second(s). During that time, First-Aid Firefly restores an additional 30.00% Health when healing the same target."
   },
   {
     "id": "smc-32",
-    "name": "TeamFight",
+    "name": "Teamfight",
     "specialization": "Tech Operator",
-    "bonus2": "Skill Health+[4.0%~8.0%]",
-    "bonus3": "Striker Drone kills grant bonus Skill Intensity stacks to the player."
+    "bonus2": "Engineering+[3.0%~6.0%]",
+    "bonus3": "Hits deal additional damage equal to 80% Engineering for 8 second(s) after deploying a First-Aid Firefly. This bonus is also granted to the ally who is targeted by the First-Aid Firefly."
   },
   {
     "id": "smc-33",
     "name": "Accelerated Deployment",
     "specialization": "Tech Operator",
-    "bonus2": "Skill Cooldown Recovery-[2.0%~4.0%]",
-    "bonus3": "Striker Drone hits restore small amounts of Health to the player."
+    "bonus2": "Healing Intensity+[3.3%~6.7%]",
+    "bonus3": "Deploying a First-Aid Firefly grants 32.00 Signature Ability Charge(s). Grants +40.00% Signature Ability Charge Efficiency if the target of the First-Aid Firefly has less than 50% Health."
   },
   {
     "id": "smc-34",
     "name": "Support Pattern",
     "specialization": "Tech Operator",
     "bonus2": "Skill Cooldown Recovery-[2.0%~4.0%]",
-    "bonus3": "Striker Drone hits grant bonus Signature Ability Charge to the team."
+    "bonus3": "Defender Drone can follow either the Agent or a group member, providing Extra Health to the target followed. Extra Health increases by 300% per second."
   },
   {
     "id": "smc-35",
@@ -248,8 +248,8 @@
     "id": "smc-36",
     "name": "Magnetic Recharge",
     "specialization": "Tech Operator",
-    "bonus2": "Skill Cooldown Recovery-[2.0%~4.0%]",
-    "bonus3": "Striker Drone assists allies by providing bonus effects when they take damage."
+    "bonus2": "Healing Intensity+[3.3%~6.7%]",
+    "bonus3": "When Defender Drone grants a Shield to either the Agent or a group member, increases Signature Ability Charge(s) by 2.00%."
   },
   {
     "id": "smc-37",
