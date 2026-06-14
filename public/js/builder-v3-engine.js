@@ -816,7 +816,11 @@ function wire() {
       null);
   });
   $$('.slot[data-wslot]').forEach(el => el.addEventListener('click', (e) => { if (e.target.closest('.picktag')) return; openWeaponPicker(el.dataset.wslot); }));
-  $$('.picktag[data-talent]').forEach(el => el.addEventListener('click', (e) => { e.stopPropagation(); openWTalentPicker(el.dataset.talent); }));
+  // Use event delegation for weapon talent clicks (they must work through dynamic content)
+  document.addEventListener('click', (e) => {
+    const picktag = e.target.closest('.picktag[data-talent]');
+    if (picktag) { e.stopPropagation(); openWTalentPicker(picktag.dataset.talent); }
+  });
   const bodyTalent = $('.picktag[data-armortalent="body"]');
   const bpTalent = $('.picktag[data-armortalent="backpack"]');
   if (bodyTalent) bodyTalent.addEventListener('click', () => openTalentPicker('body', true));

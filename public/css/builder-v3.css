@@ -331,14 +331,12 @@
 .gearslot.is-bonus{box-shadow:0 0 0 1px rgba(82,224,138,.4),0 0 16px rgba(82,224,138,.12)}
 .gearslot.is-bonus .gearslot__ico{color:var(--green);border-color:rgba(82,224,138,.3);background:rgba(82,224,138,.08)}
 
-/* center silhouette + score */
+/* center logo + score */
 .rig__core{display:grid;place-items:center;padding:0 var(--space-2)}
 .rig__silhouette{position:relative;display:grid;place-items:center;width:150px}
-.sil__body{stroke:rgba(150,170,190,.18);stroke-width:1.4;fill:rgba(255,255,255,.012)}
-.sil__pulse{stroke:var(--orange);stroke-width:1.6;fill:none;opacity:0;
-  stroke-dasharray:520;stroke-dashoffset:520}
-.rig.is-active .sil__pulse{opacity:.85;animation:silDraw 1.2s var(--ease-out) forwards}
-@keyframes silDraw{to{stroke-dashoffset:0}}
+.rig__logo{width:100px;height:100px;object-fit:contain;opacity:.7;
+  filter:drop-shadow(0 0 12px rgba(255,138,46,.25));transition:opacity .4s,filter .4s}
+.rig.is-active .rig__logo{opacity:1;filter:drop-shadow(0 0 20px rgba(255,138,46,.45))}
 .rig__score-lbl{position:absolute;top:38%;font-family:var(--font-mono);font-size:8.5px;
   letter-spacing:.2em;color:var(--muted);text-transform:uppercase;
   padding:2px 7px;border-radius:3px;background:rgba(5,7,11,.82);
