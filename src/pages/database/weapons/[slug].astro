@@ -6,6 +6,7 @@ import WeaponAttributes from '../../../components/WeaponAttributes.astro';
 import RandomizedAttributes from '../../../components/RandomizedAttributes.astro';
 import WeaponTalentsGrid from '../../../components/WeaponTalentsGrid.astro';
 import AdSenseUnit from '../../../components/AdSenseUnit.astro';
+import { truncateDesc } from '../../../utils/seo';
 import standardWeapons from '../../../data/standard-weapons.json';
 
 export function getStaticPaths() {
@@ -22,8 +23,8 @@ const { weapon } = Astro.props;
 const slug = weapon.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
 const siteUrl = 'https://resurgencebuilds.com';
 
-const title = `${weapon.name} — ${weapon.type}`;
-const description = `${weapon.name} ${weapon.type} stats: ${weapon.rpm} RPM, ${weapon.mag} magazine, ${weapon.dmgType} damage. Full breakdown for Division Resurgence.`;
+const title = `${weapon.name} — Division Resurgence ${weapon.type}`;
+const description = truncateDesc(`${weapon.name} ${weapon.type} stats: ${weapon.rpm} RPM, ${weapon.mag} magazine, ${weapon.dmgType} damage. Full breakdown for Division Resurgence.`);
 
 const breadcrumbs = [
   { name: 'Weapons', url: '/database/weapons/' },
@@ -67,6 +68,11 @@ const weaponLd = {
   mainEntityOfPage: { '@type': 'WebPage', '@id': `${siteUrl}/database/weapons/${slug}/` },
   datePublished: '2026-05-30',
   dateModified: '2026-05-30',
+  image: weapon.image ? { '@type': 'ImageObject', url: `${siteUrl}${weapon.image}`, width: 620, height: 310 } : { '@type': 'ImageObject', url: `${siteUrl}/images/resurgence-builds-official-logo.png`, width: 800, height: 800 },
+  inLanguage: 'en-US',
+  lastReviewed: '2026-05-30',
+  wordCount: 500,
+  about: { '@id': `${siteUrl}/#division-resurgence` },
 };
 
 const itemLd = {
@@ -232,7 +238,7 @@ const itemLd = {
       </div>
     </div>
 
-    <AdSenseUnit />
+    <AdSenseUnit label="Advertisement — database item" />
   </div>
 </BaseLayout>
 

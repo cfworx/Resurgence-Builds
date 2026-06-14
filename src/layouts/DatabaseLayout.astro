@@ -15,9 +15,18 @@ interface Props {
 }
 
 const { title, description, breadcrumbs, heading, subheading, jsonLd, lastVerified, faqs } = Astro.props;
+
+// Auto-generate article metadata for hub pages so they get Article JSON-LD
+const articleMeta = {
+  publishDate: '2026-05-29',
+  modifiedDate: '2026-06-10',
+  author: 'RapidF5',
+  tags: ['Division Resurgence', 'database', heading.toLowerCase()],
+  wordCount: 1000,
+};
 ---
 
-<BaseLayout {title} {description} {breadcrumbs} {jsonLd} {faqs}>
+<BaseLayout {title} {description} {breadcrumbs} {jsonLd} {faqs} article={articleMeta}>
   <div class="container section">
     <Breadcrumbs items={breadcrumbs} />
     <SectionTag label="Database" />

@@ -1,5 +1,5 @@
 ---
-title: "Division Resurgence April Dev Stream - Bugs, Fixes, and What's Next"
+title: "Division Resurgence April Dev Stream Summary"
 publishDate: "2026-04-18"
 author: "RapidF5"
 description: "A complete summary of the April 18 developer stream, covering the FPS cap, bug fixes, Exotic weapons per season, and crossplay."

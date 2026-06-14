@@ -22,7 +22,7 @@ Patch 1.2.1 deployed on **May 20, 2026**. This is a targeted hotfix, not a conte
 
 ---
 
-### Compensation - Sent to Every Account
+## Compensation - Sent to Every Account
 
 Ubisoft is mailing this directly to your in-game mailbox. No claim button, no timer, no special offer. Just open your mail.
 

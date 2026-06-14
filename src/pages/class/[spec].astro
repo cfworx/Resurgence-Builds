@@ -186,6 +186,7 @@ const faqs = [
     modifiedDate: new Date().toISOString(),
     author: 'RapidF5',
     tags: [classData.name, 'builds', 'Division Resurgence', classData.role],
+    wordCount: [classData.description, classData.perkOverview, classData.signatureTalents, classData.bestWeapons, ...(classData.howToPlay || [])].join(' ').split(/\s+/).filter(Boolean).length,
   }}
   ogImage={builds.length > 0 && builds[0].data.featuredImage ? builds[0].data.featuredImage : '/images/best-pve-dps-builds-division-resurgence.png'}
 >
@@ -210,7 +211,7 @@ const faqs = [
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--sp-4);">
           {classData.signatures.map((sig: any) => (
             <div style="background: rgba(0,0,0,0.2); padding: var(--sp-4); border: 1px solid var(--border); border-radius: var(--border-radius);">
-              <h3 style="color: var(--accent); margin-bottom: var(--sp-1); font-size: var(--text-sm); text-transform: uppercase; letter-spacing: 0.05em;">Signature Skill: {sig.name}</h3>
+              <p style="color: var(--accent); margin-bottom: var(--sp-1); font-size: var(--text-sm); text-transform: uppercase; letter-spacing: 0.05em; font-weight: 700;">Signature Skill: {sig.name}</p>
               <span style="display: inline-block; font-family: var(--font-mono); font-size: 10px; color: #a78bfa; background: rgba(167,139,250,0.12); border: 1px solid rgba(167,139,250,0.25); padding: 2px 8px; border-radius: 999px; margin-bottom: var(--sp-2); letter-spacing: 0.04em;">{sig.focus} Focus</span>
               <p style="color: var(--ink-muted); font-size: var(--text-sm); margin: 0;">
                 {sig.description}
@@ -227,7 +228,7 @@ const faqs = [
       ) : (
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--sp-4);">
           <div style="background: rgba(0,0,0,0.2); padding: var(--sp-4); border: 1px solid var(--border); border-radius: var(--border-radius);">
-            <h3 style="color: var(--accent); margin-bottom: var(--sp-2); font-size: var(--text-sm); text-transform: uppercase; letter-spacing: 0.05em;">Signature Skill: {classData.signature.name}</h3>
+            <p style="color: var(--accent); margin-bottom: var(--sp-2); font-size: var(--text-sm); text-transform: uppercase; letter-spacing: 0.05em; font-weight: 700;">Signature Skill: {classData.signature.name}</p>
             <p style="color: var(--ink-muted); font-size: var(--text-sm); margin: 0;">
               {classData.signature.description}
             </p>
@@ -248,7 +249,7 @@ const faqs = [
       <p style="color: var(--ink-muted); font-size: var(--text-sm); line-height: 1.75; margin: 0;" set:html={classData.signatureTalents} />
     </div>
 
-    <AdSenseUnit />
+    <AdSenseUnit label="Advertisement — class overview 1" />
 
     <!-- Why Play section -->
     <div style="margin-bottom: var(--sp-8); padding: var(--sp-5); background: rgba(0,0,0,0.15); border: 1px solid var(--border); border-radius: var(--border-radius); max-width: 800px;">
@@ -311,6 +312,6 @@ const faqs = [
       </div>
     )}
 
-    <AdSenseUnit />
+    <AdSenseUnit label="Advertisement — class overview 2" />
   </div>
 </BaseLayout>

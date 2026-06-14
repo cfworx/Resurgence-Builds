@@ -3,6 +3,7 @@ import BaseLayout from '../../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../../components/Breadcrumbs.astro';
 import SectionTag from '../../../components/SectionTag.astro';
 import AdSenseUnit from '../../../components/AdSenseUnit.astro';
+import { truncateDesc } from '../../../utils/seo';
 import osProtocols from '../../../data/os-protocols.json';
 
 export function getStaticPaths() {
@@ -15,7 +16,7 @@ export function getStaticPaths() {
 const { protocol } = Astro.props;
 
 const title = `${protocol.name} OS Protocol`;
-const description = `${protocol.name}: ${protocol.rarity} ${protocol.specialization} OS Protocol. ${protocol.mainStat} ${protocol.mainValue}. Talent and stats breakdown.`;
+const description = truncateDesc(`${protocol.name}: ${protocol.rarity} ${protocol.specialization} OS Protocol. ${protocol.mainStat} ${protocol.mainValue}. Talent and stats breakdown.`);
 
 const breadcrumbs = [
   { name: 'OS Protocols', url: '/database/os-protocols/' },
@@ -64,6 +65,10 @@ const protocolLd = {
   datePublished: '2026-05-27',
   dateModified: '2026-05-30',
   ...(protocol.image ? { image: { '@type': 'ImageObject', url: `${siteUrl}${protocol.image}`, width: 620, height: 310 } } : {}),
+  inLanguage: 'en-US',
+  lastReviewed: '2026-05-30',
+  wordCount: 600,
+  about: { '@id': `${siteUrl}/#division-resurgence` },
 };
 
 const ogImage = protocol.image ? `${siteUrl}${protocol.image}` : undefined;
@@ -248,7 +253,7 @@ const ogImage = protocol.image ? `${siteUrl}${protocol.image}` : undefined;
       </div>
     </div>
 
-    <AdSenseUnit />
+    <AdSenseUnit label="Advertisement — database item" />
   </div>
 </BaseLayout>
 

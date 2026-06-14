@@ -3,6 +3,7 @@ import BaseLayout from '../../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../../components/Breadcrumbs.astro';
 import SectionTag from '../../../components/SectionTag.astro';
 import AdSenseUnit from '../../../components/AdSenseUnit.astro';
+import { truncateDesc } from '../../../utils/seo';
 import weaponTalents from '../../../data/weapon-talents.json';
 
 export function getStaticPaths() {
@@ -92,7 +93,7 @@ function getBuildArchetype(description: string): { primary: string; label: strin
 const archetype = getBuildArchetype(talent.description);
 
 const title = `${talent.name} — Weapon Talent`;
-const description = `${talent.name} weapon talent in Division Resurgence: ${talent.description.substring(0, 120)}${talent.description.length > 120 ? '...' : ''} Full breakdown, best builds, and how to use it.`;
+const description = truncateDesc(`${talent.name} weapon talent in Division Resurgence: ${talent.description.substring(0, 120)}${talent.description.length > 120 ? '...' : ''} Full breakdown, best builds, and how to use it.`);
 
 const breadcrumbs = [
   { name: 'Weapon Talents', url: '/database/weapon-talents/' },
@@ -125,6 +126,11 @@ const talentLd = {
   mainEntityOfPage: { '@type': 'WebPage', '@id': `${siteUrl}/database/weapon-talents/${slug}/` },
   datePublished: '2026-05-30',
   dateModified: '2026-05-30',
+  image: { '@type': 'ImageObject', url: `${siteUrl}/images/resurgence-builds-official-logo.png`, width: 800, height: 800 },
+  inLanguage: 'en-US',
+  lastReviewed: '2026-05-30',
+  wordCount: 400,
+  about: { '@id': `${siteUrl}/#division-resurgence` },
 };
 ---
 
@@ -219,6 +225,6 @@ const talentLd = {
       </div>
     </div>
 
-    <AdSenseUnit />
+    <AdSenseUnit label="Advertisement — database item" />
   </div>
 </BaseLayout>

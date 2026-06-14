@@ -9,9 +9,10 @@ import { visit } from 'unist-util-visit';
 export default function rehypeAdsense() {
   return (tree) => {
     let pCount = 0;
+    let adIndex = 0;
 
-    const adHtml = `
-      <div class="ad-slot ad-slot--in-content" aria-label="Advertisement" style="margin: 32px 0;">
+    const makeAdHtml = (idx) => `
+      <aside class="ad-slot ad-slot--in-content" aria-label="Advertisement — in-content ${idx}" style="margin: 32px 0;">
         <ins class="adsbygoogle"
              style="display:block"
              data-ad-client="ca-pub-5813932024666862"
@@ -21,11 +22,8 @@ export default function rehypeAdsense() {
         <script>
           try { (window.adsbygoogle = window.adsbygoogle || []).push({}); } catch (e) { console.warn('AdSense block:', e) }
         </script>
-      </div>
+      </aside>
     `;
-
-    // AST node for raw HTML
-    const adNode = { type: 'raw', value: adHtml }; // Astro's rehype parser usually supports 'raw' or 'html'
 
     visit(tree, 'element', (node, index, parent) => {
       // We only want top-level paragraphs (direct children of the root document)
@@ -35,12 +33,16 @@ export default function rehypeAdsense() {
 
         // Inject after 3rd paragraph
         if (pCount === 3) {
+          adIndex++;
+          const adNode = { type: 'raw', value: makeAdHtml(adIndex) };
           parent.children.splice(index + 1, 0, adNode);
           return index + 2; // Skip over the newly inserted node to prevent infinite loops
         }
 
         // Inject after 8th paragraph (long pages)
         if (pCount === 8) {
+          adIndex++;
+          const adNode = { type: 'raw', value: makeAdHtml(adIndex) };
           parent.children.splice(index + 1, 0, adNode);
           return index + 2;
         }
@@ -48,3 +50,4 @@ export default function rehypeAdsense() {
     });
   };
 }
+

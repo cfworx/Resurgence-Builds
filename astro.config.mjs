@@ -9,6 +9,7 @@ import rehypeExternalLinks from 'rehype-external-links';
 import rehypeCallouts from './scripts/rehype-callouts.mjs';
 import rehypeAdsense from './scripts/rehype-adsense.mjs';
 import rehypeTableA11y from './scripts/rehype-table-a11y.mjs';
+import rehypeImgSize from 'rehype-img-size';
 // Static fallback date — update this whenever you do a major site update
 const SITE_LAST_UPDATED = new Date().toISOString().slice(0, 10);
 
@@ -87,7 +88,7 @@ export default defineConfig({
 
         // --- Individual build guides ---
         if (url.includes('/builds/')) {
-          return { ...item, priority: 0.8, changefreq: 'monthly' };
+          return { ...item, priority: 0.8, changefreq: 'monthly', lastmod: item.lastmod || SITE_LAST_UPDATED };
         }
 
         // --- Database pages ---
@@ -102,17 +103,17 @@ export default defineConfig({
 
         // --- News articles ---
         if (url.includes('/news/')) {
-          return { ...item, priority: 0.7, changefreq: 'never' };
+          return { ...item, priority: 0.7, changefreq: 'never', lastmod: item.lastmod || SITE_LAST_UPDATED };
         }
 
         // --- Patch notes ---
         if (url.includes('/patch-notes/')) {
-          return { ...item, priority: 0.6, changefreq: 'never' };
+          return { ...item, priority: 0.6, changefreq: 'never', lastmod: item.lastmod || SITE_LAST_UPDATED };
         }
 
         // --- Guides ---
         if (url.includes('/guides/')) {
-          return { ...item, priority: 0.7, changefreq: 'monthly' };
+          return { ...item, priority: 0.7, changefreq: 'monthly', lastmod: item.lastmod || SITE_LAST_UPDATED };
         }
 
         // --- Legal / utility pages ---
@@ -136,7 +137,7 @@ export default defineConfig({
         }
 
         // Fallback
-        return { ...item, priority: 0.5, changefreq: 'monthly' };
+        return { ...item, priority: 0.5, changefreq: 'monthly', lastmod: item.lastmod || SITE_LAST_UPDATED };
       },
     }),
   ],
@@ -148,7 +149,8 @@ export default defineConfig({
       [rehypeExternalLinks, { target: '_blank', rel: ['noopener', 'noreferrer'] }],
       rehypeCallouts,
       rehypeAdsense,
-      rehypeTableA11y
+      rehypeTableA11y,
+      [rehypeImgSize, { dir: 'public' }]
     ]
   },
 });

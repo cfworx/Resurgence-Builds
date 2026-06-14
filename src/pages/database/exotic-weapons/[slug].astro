@@ -4,6 +4,7 @@ import Breadcrumbs from '../../../components/Breadcrumbs.astro';
 import SectionTag from '../../../components/SectionTag.astro';
 import AdSenseUnit from '../../../components/AdSenseUnit.astro';
 import WeaponAttributes from '../../../components/WeaponAttributes.astro';
+import { truncateDesc } from '../../../utils/seo';
 import exoticWeapons from '../../../data/exotic-weapons.json';
 
 export function getStaticPaths() {
@@ -18,7 +19,7 @@ export function getStaticPaths() {
 const { weapon } = Astro.props;
 
 const title = `${weapon.name} — Exotic ${weapon.type}`;
-const description = `${weapon.name} exotic ${weapon.type}: ${weapon.damage} damage, ${weapon.rpm} RPM, talent "${weapon.talentName}". Full stats and build recommendations.`;
+const description = truncateDesc(`${weapon.name} exotic ${weapon.type}: ${weapon.damage} damage, ${weapon.rpm} RPM, talent "${weapon.talentName}". Full stats and build recommendations.`);
 
 const breadcrumbs = [
   { name: 'Exotic Weapons', url: '/database/exotic-weapons/' },
@@ -54,6 +55,11 @@ const weaponLd = {
   mainEntityOfPage: { '@type': 'WebPage', '@id': `${siteUrl}/database/exotic-weapons/${slug}/` },
   datePublished: '2026-05-29',
   dateModified: '2026-05-30',
+  image: weapon.image ? { '@type': 'ImageObject', url: `${siteUrl}${weapon.image}`, width: 620, height: 310 } : { '@type': 'ImageObject', url: `${siteUrl}/images/resurgence-builds-official-logo.png`, width: 800, height: 800 },
+  inLanguage: 'en-US',
+  lastReviewed: '2026-05-30',
+  wordCount: 800,
+  about: { '@id': `${siteUrl}/#division-resurgence` },
 };
 
 const itemLd = {
@@ -206,7 +212,7 @@ const itemLd = {
       </div>
     </div>
 
-    <AdSenseUnit />
+    <AdSenseUnit label="Advertisement — database item" />
   </div>
 </BaseLayout>
 
