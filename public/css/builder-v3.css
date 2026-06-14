@@ -583,7 +583,7 @@
 /* ---- Tablet & small desktop ---- */
 @media (max-width:880px){
   .nav__links{display:none}
-  .lab__grid{grid-template-columns:1fr;grid-template-areas:"right" "center" "left";padding:0 var(--space-3)}
+  .lab__grid{grid-template-columns:1fr;grid-template-areas:"left" "center" "right";padding:0 var(--space-3)}
   .col--right{grid-template-columns:1fr}
 
   /* Gear rig: stack vertically */
