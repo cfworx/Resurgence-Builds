@@ -867,25 +867,31 @@ function wire() {
       },
       null);
   });
-  $$('.slot[data-wslot]').forEach(el => el.addEventListener('click', (e) => { if (e.target.closest('.picktag') || e.target.closest('.talent-pair') || e.target.closest('.weapon-bonus')) return; openWeaponPicker(el.dataset.wslot); }));
-  // Weapon talent pickers — direct binding
-  $$('.picktag[data-talent]').forEach(el => {
-    el.style.cursor = 'pointer';
-    el.addEventListener('click', (e) => { e.preventDefault(); e.stopPropagation(); openWTalentPicker(el.dataset.talent); });
-  });
-  // Weapon bonus attribute pickers (2 per weapon)
-  $$('.weapon-bonus[data-wbonus]').forEach(el => {
-    el.addEventListener('click', (e) => {
-      e.stopPropagation();
-      const k = el.dataset.wbonus;
-      const idx = el.dataset.wbidx; // "1" or "2"
+  $$('.slot[data-wslot]').forEach(el => el.addEventListener('click', (e) => { if (e.target.closest('.picktag') || e.target.closest('.talent-pair') || e.target.closest('.weapon-bonus') || e.target.closest('.weapon-bonuses')) return; openWeaponPicker(el.dataset.wslot); }));
+
+  // Document-level delegation for weapon talents + bonuses (mobile-safe)
+  document.addEventListener('click', (e) => {
+    // Weapon talent click
+    const talentTag = e.target.closest('.picktag[data-talent]');
+    if (talentTag) {
+      e.preventDefault(); e.stopPropagation();
+      openWTalentPicker(talentTag.dataset.talent);
+      return;
+    }
+    // Weapon bonus attribute click
+    const bonusTag = e.target.closest('.weapon-bonus[data-wbonus]');
+    if (bonusTag) {
+      e.preventDefault(); e.stopPropagation();
+      const k = bonusTag.dataset.wbonus;
+      const idx = bonusTag.dataset.wbidx;
       const items = ALL_ATTRS.map(a => ({ id: a, name: a, cat: ATTR_CAT[a] }));
       openModal('WEAPON ' + k + ' — BONUS ' + idx,
         items,
         a => ({ id: a.id, name: a.name, type: a.cat, desc: '' }),
         attr => { S['w' + k]['bonus' + idx] = attr; afterChange(); },
         S['w' + k]['bonus' + idx]);
-    });
+      return;
+    }
   });
   const bodyTalent = $('.picktag[data-armortalent="body"]');
   const bpTalent = $('.picktag[data-armortalent="backpack"]');

@@ -551,6 +551,9 @@
 .loop__steps{display:none}
 @media (max-width:880px){.loop__bd{flex-direction:column}}
 
+/* full-width overview panel below grid */
+.panel--overview{max-width:var(--max-w);margin:0 auto var(--space-6);width:100%;padding:0 var(--space-6)}
+
 /* skill list */
 .skill-list{display:flex;flex-direction:column;gap:8px}
 .skill-slot{display:flex;align-items:center;gap:11px;padding:11px;cursor:pointer;
@@ -580,7 +583,7 @@
 /* ---- Tablet & small desktop ---- */
 @media (max-width:880px){
   .nav__links{display:none}
-  .lab__grid{grid-template-columns:1fr;grid-template-areas:"center" "left" "right";padding:0 var(--space-3)}
+  .lab__grid{grid-template-columns:1fr;grid-template-areas:"right" "center" "left";padding:0 var(--space-3)}
   .col--right{grid-template-columns:1fr}
 
   /* Gear rig: stack vertically */

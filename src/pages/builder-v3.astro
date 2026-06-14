@@ -282,15 +282,6 @@ const smcCount = skillModCombos.length;
             </div>
           </section>
         </div>
-
-        <!-- Synergy / Build Loop -->
-        <section class="panel" id="loopPanel">
-          <div class="panel__hd"><span class="kicker">// SYNERGY MAP &amp; GAMEPLAY LOOP</span></div>
-          <div class="panel__bd loop__bd">
-            <div class="loop__graph" id="loopGraph"></div>
-            <ol class="loop__steps" id="loopSteps"></ol>
-          </div>
-        </section>
       </div>
 
       <!-- RIGHT COLUMN: TELEMETRY -->
@@ -340,6 +331,15 @@ const smcCount = skillModCombos.length;
 
     </div>
   </div>
+
+  <!-- Build Overview (full width, below grid) -->
+  <section class="panel panel--overview" id="loopPanel">
+    <div class="panel__hd"><span class="kicker">// BUILD OVERVIEW</span></div>
+    <div class="panel__bd loop__bd">
+      <div class="loop__graph" id="loopGraph"></div>
+      <ol class="loop__steps" id="loopSteps"></ol>
+    </div>
+  </section>
 
   <!-- Picker Modal -->
   <div class="modal" id="modal" aria-hidden="true">
