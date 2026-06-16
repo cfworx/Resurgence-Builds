@@ -325,8 +325,7 @@ function renderDiagnostics() {
     if (n === 1) out.push(['warn', `<b>${name}</b> has only 1 piece — no set bonus active. Add a 2nd piece or replace it.`]);
   });
   const stats = computeStats();
-  if ((stats['Weapon Critical Hit Chance'] || 0) > 0 && !(stats['Weapon Critical Hit Damage'] || 0))
-    out.push(['warn', `No <b>Weapon Crit Damage</b> source despite a Crit Chance roll — crit value is being wasted.`]);
+
   if ((stats['Received Healing'] || 0) > 0 && (stats['Damage Reduction'] || 0) > 0)
     out.push(['ok', `<b>Received Healing → Damage Reduction</b> loop is online. Strong sustain core.`]);
   const focus = getEffectiveFocus();

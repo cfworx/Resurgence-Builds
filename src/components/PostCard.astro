@@ -139,7 +139,10 @@ const typeLabel = typeLabels[type] || type;
     background-size: cover;
     background-position: center;
     background-color: var(--surface);
-    max-height: 280px;
+    aspect-ratio: 16 / 9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .post-card__image-blur {
