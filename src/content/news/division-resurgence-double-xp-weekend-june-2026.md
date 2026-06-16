@@ -3,7 +3,7 @@ title: "Division Resurgence Double XP Weekend"
 publishDate: "2026-06-13"
 author: "RapidF5"
 featuredImage: "/images/news/division-resurgence-double-xp-weekend-june-2026.webp"
-imageAlt: "Division Resurgence in-game notification showing Double Experience Weekend Now Active with all regular and Specialization Experience gains doubled across all activities until Sunday at midnight"
+imageAlt: "Neon orange 2X XP Weekend sign glowing against a dark brick wall for Division Resurgence double experience event June 2026"
 description: "Division Resurgence Double XP weekend: 2x Regular XP and Specialization XP from June 12-14, 2026. How to maximize your gains."
 tags: ["News", "Events", "XP", "Specialization", "Weekend Event"]
 shareTitle: "Double XP Weekend is live in Division Resurgence"
