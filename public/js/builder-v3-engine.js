@@ -212,7 +212,7 @@ function renderStats(flash) {
     'Toughness': '/images/ui/attributes/toughness.webp',
     'Engineering': '/images/ui/attributes/engineering.webp'
   };
-  const rows = HEAD_STATS.map(stat => {
+  const rows = HEAD_STATS.filter(stat => (t[stat] || 0) !== 0).map(stat => {
     const v = t[stat] || 0;
     const pv = prevStats[stat] || 0;
     const d = +(v - pv).toFixed(1);
@@ -223,7 +223,7 @@ function renderStats(flash) {
     const iconSrc = statCatIcons[cat] || statCatIcons['Engineering'];
     return `<div class="stat-row ${changed ? 'is-flash' : ''}">
       <span class="stat-row__lbl ${catClass(stat)}"><img src="${iconSrc}" alt="${cat}" width="14" height="14" class="stat-ico">${stat}</span>
-      <span class="stat-row__val">${v ? '+' + v.toFixed(1) + '%' : '—'}${deltaHtml}</span>
+      <span class="stat-row__val">+${v.toFixed(1)}%${deltaHtml}</span>
     </div>`;
   }).join('');
   const el = $('#statList');
@@ -310,10 +310,10 @@ function isacAnalysis() {
   const hasRH = (stats['Received Healing'] || 0) > 0;
   const hasDR = (stats['Damage Reduction'] || 0) > 0;
   let txt = `<b>${S.spec} / ${S.subclass}.</b> `;
-  if (top[1] >= 4) txt += `${top[0]} 4-piece bonus active — build core is locked in. `;
+  if (top[1] >= 4) txt += `${top[0]} 4-piece bonus active. Build core is locked in. `;
   else if (top[1] >= 2) txt += `${top[0]} ${top[1]}-piece detected. `;
   if (hasRH && hasDR) txt += `Defensive synergy detected: incoming healing converts into sustained damage reduction. `;
-  if (focus === 'Toughness' && (stats['Max Health'] || 0) > 10) txt += `Toughness-focused — survivability scaling is strong. `;
+  if (focus === 'Toughness' && (stats['Max Health'] || 0) > 10) txt += `Toughness-focused. Survivability scaling is strong. `;
   if ((stats['Weapon Critical Hit Chance'] || 0) > 0 && !(stats['Weapon Critical Hit Damage'] || 0)) txt += `Note: Crit Chance present without Crit Damage to amplify it. `;
   return txt;
 }
@@ -322,7 +322,7 @@ function renderDiagnostics() {
   const out = [];
   const counts = setCounts();
   Object.entries(counts).forEach(([name, n]) => {
-    if (n === 1) out.push(['warn', `<b>${name}</b> has only 1 piece — no set bonus active. Add a 2nd piece or replace it.`]);
+    if (n === 1) out.push(['warn', `<b>${name}</b> has only 1 piece. No set bonus active. Add a 2nd piece or replace it.`]);
   });
   const stats = computeStats();
 
@@ -331,7 +331,7 @@ function renderDiagnostics() {
   const focus = getEffectiveFocus();
   const os = osProto(S.os);
   if (os && os.specialization && focus && os.specialization !== focus)
-    out.push(['info', `OS Protocol scales with <b>${os.specialization}</b> but your subclass focus is <b>${focus}</b> — verify the stat investment lines up.`]);
+    out.push(['info', `OS Protocol scales with <b>${os.specialization}</b> but your subclass focus is <b>${focus}</b>. Verify the stat investment lines up.`]);
   if (!out.length) out.push(['ok', `No conflicts detected. Loadout is internally consistent.`]);
 
   const ico = {
