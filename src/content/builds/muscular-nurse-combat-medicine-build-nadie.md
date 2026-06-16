@@ -264,23 +264,8 @@ Nadie called out what actually makes this build matter to him:
 
 This build lets a tank-medic carry under-geared teammates through content they could not otherwise clear. That is not a stat on a sheet. That is the point of a medic.
 
----
 
-## Honest Critique: Where This Falls Short
 
-Nadie himself called this out:
-
-> *"This build may not survive as good as my sweet lullaby build in Dark Zone, but in PvE this is a divine build."*
-
-The [Involuntary Nap Time](/builds/involuntary-nap-time-bulwark-juggernaut-build/) Bulwark Juggernaut has burst CC that deletes PvP opponents. Combat Medicine does not have the same stun-lock ceiling, so in Dark Zone PvP you are a tankier-than-average healer but you lack a "delete a Demolitionist mid-nuke" win condition. For PvE, none of that matters.
-
-Three other watch-outs:
-
-- **Teammates avoiding the healing ring is a real problem.** If your squad scatters, your healing output drops to self-only. Use comms when possible.
-- **Slow DPS clear.** 66k DPS is not a damage build. Elite Mission bosses take 15-20 minutes. You are a sustainer, not a speedrunner. Patience required.
-- **Power Score floor is high.** 24,410 PS needs the [Healing Elites](/database/gear-set-effects/healing-elites/) 4-piece (T2-only for the full set), Pummeling Shield maxed at Level 50, and the AUG with the right talent rolls. This is an endgame build, not a starter.
-
----
 
 ## Loot Quick-Reference
 
