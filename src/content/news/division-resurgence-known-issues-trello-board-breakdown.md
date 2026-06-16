@@ -26,6 +26,10 @@ faqs:
     answer: "The Trello board is view-only for the public. You cannot comment on or upvote cards directly. To report a bug, use the official Ubisoft support channels. The Investigating list notes that the team needs video, images, or reproduction steps to replicate bugs in their testing environment, so include as much detail as possible when reporting."
 ---
 
+On June 4, 2026, the Division Resurgence team dropped a [public Trello board](https://trello.com/b/qTP1a9cv) tracking every known issue in the game. The board is organized into six columns: Reported, Investigating, In Progress, Fix Ready, Fix Live, and Backlog. Anyone can view it without a Trello account. This is the full breakdown of every card on the board, what it means, and where each fix stands.
+
+---
+
 ## Reported
 
 This list is for issues that have been reported by players and recorded internally. The team is aware but has not started investigating yet.
