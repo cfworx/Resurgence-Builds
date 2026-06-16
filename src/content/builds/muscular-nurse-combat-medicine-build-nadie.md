@@ -35,8 +35,7 @@ faqs:
     answer: "Primary: AUG A3 Para XS (T2 SMG) with Steady Suppression and Precision Support II for team-oriented play. Secondary: M60 (T2 LMG) with Sadistic Shield II and Conceited II for solo boss tanking. Both are standard weapons, no exotics required."
   - question: "How does this build compare to Involuntary Nap Time?"
     answer: "Same Pummeling Shield OS Protocol, completely different role. Involuntary Nap Time is a Bulwark Juggernaut PvP stun-tank. The Muscular Nurse is a Combat Medicine PvE sustainer that heals the team while tanking bosses. Pick based on whether you want to stun players or keep your squad alive through Elite content."
-  - question: "Is Division Resurgence pay-to-win?"
-    answer: "No. Every piece in this build drops from gameplay. Healing Elites is a standard gear set. Self-Propelled Shield is a standard gear set. Pummeling Shield comes from weekly bounties. Both weapons are non-exotic. Nadie hit rank 7 Asia by playing the game, not by opening his wallet."
+
 ---
 
 **By RapidF5 (via Nadie) ·** Patch 1.1.2.2 ·

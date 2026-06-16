@@ -17,10 +17,10 @@ shareText: "LtFoe's Double Agent build: swap your chest and backpack, go from Gl
 sources:
   - 'LtFoe (LtFoe, Clan TruthAbove). Discord submission with 30+ in-game screenshots, June 2026.'
   - 'In-game Division Resurgence Build Database, verified June 2026.'
-plannerHash: "s=Tech+Operator&sc=Aegis+Operations&n=The+Double+Agent&ms=gs-7&m1=Skill+Critical+Chance&m2=Skill+Multi-Shot+Chance&cs=gs-7&ct=ba-12&c1=Skill+Multi-Shot+Chance&c2=Skill+Cooldown+Recovery&ps=gs-10&pt=bp-19&p1=Skill+Radius&p2=Skill+Multi-Shot+Chance&gs=gs-10&g1=Skill+Critical+Chance&g2=Skill+Critical+Damage&hs=gs-7&h1=Skill+Multi-Shot+Chance&h2=Skill+Critical+Chance&ks=gs-7&k1=Skill+Critical+Damage&k2=Damage+Reduction&w1s=sw-11&w1tr=T2&w1t=wt-22&w1t2=wt-20&w2e=ew-2&os=os-20&sm1=smc-32&sm2=smc-35&sm3=smc-29"
+plannerHash: "s=Tech+Operator&sc=Aegis+Operations&n=The+Double+Agent&ms=gs-7&m1=Skill+Critical+Chance&m2=Skill+Multi-Shot+Chance&cs=gs-7&ct=ba-12&c1=Skill+Multi-Shot+Chance&c2=Skill+Cooldown+Recovery&ps=gs-10&pt=bp-19&p1=Skill+Radius&p2=Skill+Multi-Shot+Chance&gs=gs-10&g1=Skill+Critical+Chance&g2=Skill+Critical+Damage&hs=gs-7&h1=Skill+Multi-Shot+Chance&h2=Skill+Critical+Chance&ks=gs-7&k1=Skill+Critical+Damage&k2=Damage+Reduction&w1s=sw-38&w1tr=T2&w1t=wt-22&w1t2=wt-20&w2e=ew-2&os=os-20&sm1=smc-32&sm2=smc-35&sm3=smc-29"
 faqs:
   - question: "Do I need exotic gear for The Double Agent build?"
-    answer: "No exotic gear pieces required. Every armor slot is standard legendary. The exotics are on the weapons: a Warlord (AR) and optionally a First Wave Vector 45 ACP (SMG). The Brains Over Brawn OS Protocol is the biggest chase item. If you have BoB and a Warlord, you have the offensive core."
+    answer: "No exotic gear pieces required. Every armor slot is standard legendary. The only exotic weapon is the Warlord (AR). The primary is an Enhanced ACR-E assault rifle. The Brains Over Brawn OS Protocol is the biggest chase item. If you have BoB and a Warlord, you have the offensive core."
   - question: "What if I do not have Brains Over Brawn?"
     answer: "Run a purple OS Protocol that rolls Skill Crit Chance or Skill Crit Damage as a stand-in. You will lose roughly 10-12% Skill Crit Chance and the Engineering scaling talent, which is a significant damage cut. BoB comes from weekly bounty first clears (guaranteed Gold OS on first clear). Worth chasing every week."
   - question: "Why Jackpot 4-piece plus Boom-Shakalaka 2-piece?"
@@ -151,20 +151,23 @@ The result holds its weight in Conflict, hot-drops into the Dark Zone for rogue 
 
 ## Weapons
 
-Both setups use the same two weapons. LtFoe runs the SMG as primary for most activities because of piercing damage, with the AR as secondary.
+Both setups use the same two weapons. LtFoe runs the Enhanced ACR-E as primary for most activities, with the Warlord exotic AR as secondary.
 
-### Primary: First Wave Vector 45 ACP (T2 SMG)
+### Primary: Enhanced ACR-E (T2 Assault Rifle)
 
 | Stat | Value |
 |---|---|
 | Tier | T2 |
-| Type | SMG |
+| Type | Assault Rifle |
 | Talent 1 | **[In Sync](/database/weapon-talents/in-sync/) II** |
 | Talent 2 | **[Fully Charged](/database/weapon-talents/fully-charged/) II** |
 
-**[In Sync](/database/weapon-talents/in-sync/)** is the single strongest talent for a hybrid weapon-and-skill build. Weapon Hits grant +9% Skill Damage for 8 seconds. Skill Hits grant +9% Weapon Damage for 8 seconds. When both buffs are active simultaneously, the bonus doubles — effectively +18% in both directions. The talent text does not state the double-dip. It is confirmed through community damage testing and still active post-May 2026.
+**[In Sync](/database/weapon-talents/in-sync/)** is the single strongest talent for a hybrid weapon-and-skill build. Weapon Hits grant +9% Skill Damage for 8 seconds. Skill Hits grant +9% Weapon Damage for 8 seconds. When both buffs are active simultaneously, the bonus doubles, effectively +18% in both directions. The talent text does not state the double-dip. It is confirmed through community damage testing and still active post-May 2026.
 
-**[Fully Charged](/database/weapon-talents/fully-charged/)** feeds Engineering on every empty-mag reload: +7.50% Engineering for 12 seconds, up to 3 stacks (+22.50% max). At 1,200 RPM with a 25-round magazine, you are burning through mags constantly and keeping Engineering elevated.
+**[Fully Charged](/database/weapon-talents/fully-charged/)** feeds Engineering on every empty-mag reload: +7.50% Engineering for 12 seconds, up to 3 stacks (+22.50% max). The ACR-E's 700 RPM and 30-round magazine keeps the reload cycle steady and Engineering elevated.
+
+> [!NOTE] SMG Alternative
+> LtFoe's preferred setup is double AR or AR + SMG. If you want to run an SMG in the second slot instead of the Warlord, his picks are the **Modified USC** (comes with Crit Chance as its TAM unlock) or the **Police UMP-45** (comes with Crit Damage as its TAM unlock). Both feed the Skill Crit stack this build lives on.
 
 ### Secondary: Warlord (Exotic Assault Rifle)
 

@@ -280,7 +280,7 @@ If Steam is going to be your entry point and this is your first time in Division
 
 **1. Pick a server region carefully.** North America, Europe, and Asia are isolated servers. You cannot transfer between them. Friends play together only when they are on the same regional server. Pick once, pick correctly.
 
-**2. Pick your specialization based on playstyle.** [Vanguard](/guides/which-specialization-to-pick/) is the weapon-and-support class. Demolitionist is the weapon-and-skill class. Field Medic is the healer-tank hybrid. Bulwark is the heavy frame. You can experiment with all of them in the early game before committing to a main.
+**2. Pick your specialization based on playstyle.** [Vanguard](/guides/which-specialization-to-pick/) is the damage-dealing weapon specialist. Demolitionist is the raw DPS powerhouse. Tech Operator is the skill-focused builder. Field Medic is the healer and skill DPS hybrid. Bulwark is the tank. You can experiment with all of them in the early game before committing to a main.
 
 **3. The main loop is daily quests, story missions, Dark Zone runs, and Conflicts PvP.** Dailies give the best XP-per-minute. Story missions unlock new zones. Dark Zone is the loot-extraction PvPvE area. Conflicts is structured PvP (Skirmish team deathmatch and Domination point capture).
 
@@ -302,9 +302,6 @@ This has not been formally confirmed for the Steam release, but every other Stea
 
 Almost certainly yes, because progression is tied to your Ubisoft Connect account rather than to the storefront you launched from. The Steam version is most likely a Ubisoft Connect game that you happen to start through Steam. We are waiting on an official statement before stating this as confirmed fact.
 
-### Is Division Resurgence pay-to-win on Steam?
-
-No. The monetization is cosmetic and battle-pass-driven. There is no paywall blocking power. You can fully build a top-tier character without spending a dollar. Skins, outfits, and the seasonal Classified Ops Pass premium track are optional purchases. The Steam version inherits the same model.
 
 ### Will Division Resurgence get a console release on PS5 or Switch 2?
 
@@ -338,9 +335,6 @@ Yes. Same game, same [build planner](/builder/), same gear, same patch (currentl
 
 Not officially confirmed yet. Steam Achievements are standard on Ubisoft titles launched on Steam, so the most likely outcome is yes. We are waiting on the formal Steam Achievements list.
 
-### Can I refund a free-to-play game on Steam?
-
-Free-to-play titles cannot really be "refunded" because there is no purchase. Any cosmetics or premium battle-pass purchases follow Steam's standard refund policy (under 2 hours played and within 14 days). Refunds on consumable currency are at Steam's discretion.
 
 ### Will the Steam version support ultrawide monitors?
 
