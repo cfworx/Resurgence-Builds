@@ -78,6 +78,21 @@ export async function getStaticPaths() {
     });
   });
 
+  allPatchNotes.forEach(post => {
+    const versionTag = post.data.version.match(/^[0-9]/) ? `v${post.data.version}` : post.data.version;
+    addPost(versionTag, {
+      title: post.data.title,
+      href: `/patch-notes/${post.id}/`,
+      date: post.data.patchDate,
+      author: post.data.author || 'RapidF5',
+      description: post.data.summary,
+      type: 'Patch Notes',
+      tags: [versionTag],
+      featuredImage: post.data.featuredImage,
+      imageAlt: post.data.imageAlt,
+    });
+  });
+
   // Filter out placeholder tags
   const excludeTags = ['tag1', 'tag2'];
   

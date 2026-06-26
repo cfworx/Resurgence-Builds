@@ -12,6 +12,6 @@ const { Content, headings } = await render(pn);
 const wordCount = pn.body ? pn.body.replace(/<[^>]+>/g, ' ').trim().split(/\s+/).filter(Boolean).length : 0;
 ---
 
-<NewsLayout title={pn.data.title} description={pn.data.summary} publishDate={pn.data.patchDate} author={pn.data.author} tags={[`v${pn.data.version}`]} image={pn.data.featuredImage} imageAlt={pn.data.imageAlt} headings={headings} parentPath="/patch-notes/" parentLabel="Patch Notes" shareTitle={pn.data.shareTitle} shareText={pn.data.shareText} faqs={pn.data.faqs} wordCount={wordCount}>
+<NewsLayout title={pn.data.title} description={pn.data.summary} publishDate={pn.data.patchDate} author={pn.data.author} tags={[pn.data.version.match(/^[0-9]/) ? `v${pn.data.version}` : pn.data.version]} image={pn.data.featuredImage} imageAlt={pn.data.imageAlt} headings={headings} parentPath="/patch-notes/" parentLabel="Patch Notes" shareTitle={pn.data.shareTitle} shareText={pn.data.shareText} faqs={pn.data.faqs} wordCount={wordCount}>
   <Content />
 </NewsLayout>

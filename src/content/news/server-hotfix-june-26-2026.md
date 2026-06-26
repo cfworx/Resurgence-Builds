@@ -1,9 +1,9 @@
 ---
 title: "Division Resurgence Server Hotfix Live (June 26, 2026)"
-version: "Hotfix June 26, 2026"
-patchDate: "2026-06-26"
+publishDate: "2026-06-26"
 author: "RapidF5"
-summary: "Division Resurgence server hotfix deployed June 26, 2026. iOS crash fix, server latency improvements, 80% damage reduction cap for PvP, Pummeling Shield stun nerfs, and General Chat progression gating activated."
+tags: ["Alert", "hotfix", "update"]
+description: "Division Resurgence server hotfix deployed June 26, 2026. iOS crash fix, server latency improvements, 80% damage reduction cap for PvP, Pummeling Shield stun nerfs, and General Chat progression gating activated."
 featuredImage: "/images/patch-notes/division-resurgence-server-hotfix-june-26-2026-hero.webp"
 imageAlt: "Division Resurgence agent looking down a burning New York City street with the text Hot Fix Incoming"
 shareTitle: "Server Hotfix is Live"
