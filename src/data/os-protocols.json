@@ -916,7 +916,7 @@
     "val2": "+77",
     "attr3": "Health",
     "val3": "+2,554",
-    "talentDescription": "While possessing Extra Health, apply Stun after every 10 hits performed. At Max Health, grants Extra Health equal to 2400% Firepower for 10 seconds when hit.",
+    "talentDescription": "While possessing Extra Health, apply a 1.5-second Stun after every 10 hits performed (10-second cooldown on Stun). At Max Health, grants Extra Health equal to 2400% Firepower for 10 seconds when hit.",
     "cooldown": "10 seconds"
   },
   {
