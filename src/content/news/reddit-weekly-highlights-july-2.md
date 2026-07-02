@@ -103,7 +103,7 @@ Twenty-five upvotes and forty comments say this one landed. The weekly reward sy
 
 **u/Blaistashen_Nein · June 21 · [Original post](https://www.reddit.com/r/thedivisionresurgence/comments/1uc3gzl/what_do_i_do_with_this_monstrosity/)**
 
-![Division Resurgence Strawberry Milkshake LMG talent screen showing Proficient Reload granting 6 percent reload speed and Calm and Collected granting 30 percent reload speed behind cover](/images/news/reddit-monstrosity-reload-speed-division-resurgence.webp)
+![Division Resurgence Strawberry Milkshake LMG stat screen showing 1667 Power Score with Shredding Damage 753 and Skill Shredding Damage and Skill Intensity attribute bonuses](/images/news/reddit-monstrosity-reload-speed-division-resurgence.webp)
 
 A gallery post with a caption that will make any theorycrafter blink twice:
 
@@ -121,7 +121,7 @@ Reloading grants reload speed. The weapon equivalent of a participation trophy t
 
 **u/Kochise120 · June 22 · [Original post](https://www.reddit.com/r/thedivisionresurgence/comments/1uctqky/now_that_aegis_is_dead_whats_a_good_pivot_class/)**
 
-![Division Resurgence OS Protocol inventory screen showing Relentless Assault with Skill Critical Damage stats and OS Protocol collection](/images/news/reddit-aegis-pivot-build-division-resurgence.webp)
+![Division Resurgence full build overview screen showing a 26.39k Power Score agent with 530k DPS and 4 Jackpot 2 Boom gear loadout after the Aegis nerf](/images/news/reddit-aegis-pivot-build-division-resurgence.webp)
 
 The Phase 3 maintenance on June 22 shipped the Aegis Burst and Medic Hypershot damage corrections, and the agents running those builds hit the drawing board before the servers even stabilized. This post is basically the group therapy project.
 
