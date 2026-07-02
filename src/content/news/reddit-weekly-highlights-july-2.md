@@ -25,7 +25,7 @@ The stretch between June 17 and July 2 covered anti-cheat rollouts, the Phase 3 
 
 ## 1. Anti-Cheat Improvements Land on June 17
 
-**u/TDResurgence · June 17 · Original post**
+**u/TDResurgence · June 17 · [Original post](https://www.reddit.com/r/thedivisionresurgence/comments/1u85bmj/anticheat_improvements/)**
 
 The developers kicked off the window with a PSA. In their own words:
 
@@ -37,7 +37,7 @@ The dev team also warned that some legitimate players might get caught in the sw
 
 ## 2. "OMG! OMG! They Fixed the Broken Outpost Annihilation Mission!"
 
-**u/mercury_1967 · June 27 · Original post**
+**u/mercury_1967 · June 27 · [Original post](https://www.reddit.com/r/thedivisionresurgence/comments/1uhh1pd/omg_omg_they_fixed_the_broken_outpost/)**
 
 Nothing in this subreddit hits quite like an agent finding out a mission they wrote off finally works. In their own words:
 
@@ -49,7 +49,7 @@ That is the sound of someone celebrating harder than a dad clearing the honey-do
 
 ## 3. "Good Game!" (Yes, Actually)
 
-**u/NukerBR1337 · June 29 · Original post**
+**u/NukerBR1337 · June 29 · [Original post](https://www.reddit.com/r/thedivisionresurgence/comments/1uj0bs5/good_game/)**
 
 Every so often someone posts about Resurgence without a complaint attached, and the whole sub does a double take. Mods probably checked if the account was hacked.
 
@@ -61,7 +61,7 @@ The rest of the post gets into how relaxing PvE runs are after work, and how Dar
 
 ## 4. Somebody Found a Story Mission That Was Not on the Mission List
 
-**u/AnthonyUK · June 24 · Original post**
+**u/AnthonyUK · June 24 · [Original post](https://www.reddit.com/r/thedivisionresurgence/comments/1uef2he/anyone_notice_the_new_story_mission/)**
 
 Right after the Phase 3 patch dropped, this quiet little discovery showed up. Full text:
 
@@ -71,25 +71,25 @@ That is it. That is the post. A brand new story mission called Kelly's Betrayal,
 
 ---
 
-## 5. The Kelly's Betrayal Bug Photo
+## 5. The Kelly's Betrayal Screenshot
 
-**u/TherionIV · June 25 · Original post**
+**u/TherionIV · June 25 · [Original post](https://www.reddit.com/r/thedivisionresurgence/comments/1uezi9n/kellys_betrayal/)**
 
-![Division Resurgence Team Finder matchmaking screen showing Kelly's Betrayal mission listed in the objectives menu](/images/news/reddit-kellys-betrayal-bug-division-resurgence.webp)
+![Division Resurgence Team Finder screen showing Kelly's Betrayal listed in the objectives sidebar alongside Precious Cargo and other mission categories](/images/news/reddit-kellys-betrayal-bug-division-resurgence.webp)
 
-One day later, someone else ran into Kelly's Betrayal and posted a screenshot of it showing up in the Team Finder with the simplest caption in the game:
+One day later, someone else spotted Kelly's Betrayal in the Team Finder and posted a screenshot with the simplest caption in the game:
 
 > "Any one know if this new or old bug?"
 
-Thirty-one upvotes, eighteen comments, and a photo asking a very small, very reasonable question. Kelly's Betrayal speedrun: discovered on Monday, bugged by Tuesday. Whatever is going on with Kelly, the whole squad is invited to the confusion.
+Thirty-one upvotes, eighteen comments, and a photo asking a very small, very reasonable question. Kelly's Betrayal speedrun: discovered on Monday, screenshot on Tuesday. Whatever is going on with Kelly, the whole squad is invited to the confusion.
 
 ---
 
 ## 6. "I Won This From the Weekly. Only Problem Is IM A HEALER."
 
-**u/Recycled_Michael · June 19 · Original post**
+**u/Recycled_Michael · June 19 · [Original post](https://www.reddit.com/r/thedivisionresurgence/comments/1u9q0s0/ugh/)**
 
-![Division Resurgence Explosive Round OS Protocol weekly reward screen showing a Firepower OS Protocol won by a healer main](/images/news/reddit-healer-dps-weekly-reward-division-resurgence.webp)
+![Division Resurgence OS Protocol reward screen showing Explosive Round Level 1 with 22.50 percent Firepower and Explosive Round talent](/images/news/reddit-healer-dps-weekly-reward-division-resurgence.webp)
 
 Reward drop RNG remains undefeated. The full complaint:
 
@@ -101,7 +101,7 @@ Twenty-five upvotes and forty comments say this one landed. The weekly reward sy
 
 ## 7. "What Do I Do With This Monstrosity?"
 
-**u/Blaistashen_Nein · June 21 · Original post**
+**u/Blaistashen_Nein · June 21 · [Original post](https://www.reddit.com/r/thedivisionresurgence/comments/1uc3gzl/what_do_i_do_with_this_monstrosity/)**
 
 ![Division Resurgence Strawberry Milkshake LMG talent screen showing Proficient Reload granting 6 percent reload speed and Calm and Collected granting 30 percent reload speed behind cover](/images/news/reddit-monstrosity-reload-speed-division-resurgence.webp)
 
@@ -119,7 +119,7 @@ Reloading grants reload speed. The weapon equivalent of a participation trophy t
 
 ## 8. "Now That Aegis Is Dead, What's a Good Pivot Class?"
 
-**u/Kochise120 · June 22 · Original post**
+**u/Kochise120 · June 22 · [Original post](https://www.reddit.com/r/thedivisionresurgence/comments/1uctqky/now_that_aegis_is_dead_whats_a_good_pivot_class/)**
 
 ![Division Resurgence OS Protocol inventory screen showing Relentless Assault with Skill Critical Damage stats and OS Protocol collection](/images/news/reddit-aegis-pivot-build-division-resurgence.webp)
 
@@ -133,7 +133,7 @@ They mentioned running 4 Jackpot / 2 Boom, a maxed Collateral Damage OS, a seemi
 
 ## 9. "Imagine Having an Update System So Bad That Players Need to Regularly Redownload the Whole Game"
 
-**u/JohnnyTest91 · June 26 · Original post**
+**u/JohnnyTest91 · June 26 · [Original post](https://www.reddit.com/r/thedivisionresurgence/comments/1ug1edy/imagine_having_an_update_system_so_bad_that/)**
 
 The highest scoring post in the window at 67 upvotes.
 
@@ -145,7 +145,7 @@ Twenty years of gaming, three full redownloads in one live-service mobile title,
 
 ## 10. "Why Are There No Free Skins?"
 
-**u/No_Transition_2879 · June 25 · Original post**
+**u/No_Transition_2879 · June 25 · [Original post](https://www.reddit.com/r/thedivisionresurgence/comments/1uf6u4m/why_are_there_no_free_skins/)**
 
 ![Division Resurgence weapon skin menu showing a G28 marksman rifle with exclusive locked skins in the shop](/images/news/reddit-free-skins-question-division-resurgence.webp)
 
@@ -161,8 +161,8 @@ It is not a rant. It is an actual pitch, backed up by a sister title. The man wr
 
 Two more posts landed with real engagement even if they did not make the top ten:
 
-- **"Silent Stash Nerf: 200 Max Down to 100"** by u/LT-Ghastly (June 23). Thirty-seven upvotes for a post asking about an unannounced stash cap change and calling for clearer patch note communication.
-- **"Elites Missions Feel Pointless"** by u/RogueBlue2164 (June 28). An Engineering main running 630 and 575 DPS builds, chasing a better chest piece across roughly 100 Elite missions and asking the community whether the loot tables need a rework.
+- **["Silent Stash Nerf: 200 Max Down to 100"](https://www.reddit.com/r/thedivisionresurgence/comments/1udhb6a/silent_stash_nerf_200_max_down_to_100/)** by u/LT-Ghastly (June 23). Thirty-seven upvotes for a post asking about an unannounced stash cap change and calling for clearer patch note communication.
+- **["Elites Missions Feel Pointless"](https://www.reddit.com/r/thedivisionresurgence/comments/1uhkmcz/elites_missions_feel_pointless/)** by u/RogueBlue2164 (June 28). An Engineering main running 630 and 575 DPS builds, chasing a better chest piece across roughly 100 Elite missions and asking the community whether the loot tables need a rework.
 
 ---
 
@@ -188,18 +188,18 @@ For context on what actually changed in Phase 3, our [A New Fire patch notes bre
 
 ## Sources
 
-- Anti-cheat PSA by u/TDResurgence, June 17 ([r/thedivisionresurgence](https://www.reddit.com/r/thedivisionresurgence/))
-- Outpost Annihilation Fixed by u/mercury_1967, June 27 ([r/thedivisionresurgence](https://www.reddit.com/r/thedivisionresurgence/))
-- Good Game by u/NukerBR1337, June 29 ([r/thedivisionresurgence](https://www.reddit.com/r/thedivisionresurgence/))
-- Kelly's Betrayal Discovery by u/AnthonyUK, June 24 ([r/thedivisionresurgence](https://www.reddit.com/r/thedivisionresurgence/))
-- Kelly's Betrayal Bug by u/TherionIV, June 25 ([r/thedivisionresurgence](https://www.reddit.com/r/thedivisionresurgence/))
-- [Healer Weekly Reward by u/Recycled_Michael, June 19](https://www.reddit.com/r/thedivisionresurgence/comments/1uak38i/)
-- [What Do I Do With This Monstrosity by u/Blaistashen_Nein, June 21](https://www.reddit.com/gallery/1uc3gzl)
-- [Aegis Pivot Class by u/Kochise120, June 22](https://www.reddit.com/gallery/1uctqky)
-- Update Download Complaint by u/JohnnyTest91, June 26 ([r/thedivisionresurgence](https://www.reddit.com/r/thedivisionresurgence/))
-- Free Skins Question by u/No_Transition_2879, June 25 ([r/thedivisionresurgence](https://www.reddit.com/r/thedivisionresurgence/))
-- Silent Stash Nerf by u/LT-Ghastly, June 23 ([r/thedivisionresurgence](https://www.reddit.com/r/thedivisionresurgence/))
-- Elite Missions Feedback by u/RogueBlue2164, June 28 ([r/thedivisionresurgence](https://www.reddit.com/r/thedivisionresurgence/))
+- [Anti-cheat Improvements](https://www.reddit.com/r/thedivisionresurgence/comments/1u85bmj/anticheat_improvements/) by u/TDResurgence, June 17
+- [OMG! They Fixed the Broken Outpost Annihilation](https://www.reddit.com/r/thedivisionresurgence/comments/1uhh1pd/omg_omg_they_fixed_the_broken_outpost/) by u/mercury_1967, June 27
+- [Good Game](https://www.reddit.com/r/thedivisionresurgence/comments/1uj0bs5/good_game/) by u/NukerBR1337, June 29
+- [Anyone Notice the New Story Mission?](https://www.reddit.com/r/thedivisionresurgence/comments/1uef2he/anyone_notice_the_new_story_mission/) by u/AnthonyUK, June 24
+- [Kellys Betrayal](https://www.reddit.com/r/thedivisionresurgence/comments/1uezi9n/kellys_betrayal/) by u/TherionIV, June 25
+- [Ugh...](https://www.reddit.com/r/thedivisionresurgence/comments/1u9q0s0/ugh/) by u/Recycled_Michael, June 19
+- [What Do I Do With This Monstrosity?](https://www.reddit.com/r/thedivisionresurgence/comments/1uc3gzl/what_do_i_do_with_this_monstrosity/) by u/Blaistashen_Nein, June 21
+- [Now That Aegis Is Dead, What's a Good Pivot Class?](https://www.reddit.com/r/thedivisionresurgence/comments/1uctqky/now_that_aegis_is_dead_whats_a_good_pivot_class/) by u/Kochise120, June 22
+- [Imagine Having an Update System So Bad](https://www.reddit.com/r/thedivisionresurgence/comments/1ug1edy/imagine_having_an_update_system_so_bad_that/) by u/JohnnyTest91, June 26
+- [Why Are There No Free Skins?](https://www.reddit.com/r/thedivisionresurgence/comments/1uf6u4m/why_are_there_no_free_skins/) by u/No_Transition_2879, June 25
+- [Silent Stash Nerf: 200 Max Down to 100](https://www.reddit.com/r/thedivisionresurgence/comments/1udhb6a/silent_stash_nerf_200_max_down_to_100/) by u/LT-Ghastly, June 23
+- [Elites Missions Feel Pointless](https://www.reddit.com/r/thedivisionresurgence/comments/1uhkmcz/elites_missions_feel_pointless/) by u/RogueBlue2164, June 28
 
 ---
 
