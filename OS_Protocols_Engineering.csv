@@ -1,0 +1,29 @@
+Protocol Name,Tier,Applicable To,Bonus Stat,Bonus Value,Engineering,Skill Damage,Health,Talent,Talent Description,Capture Status
+OS Protocol - Explosive Charge,High-End,Engineering,Engineering,+22.50%,97,77,2554,Explosive Charge,"Shooting for 3 seconds enhances the next Skill for 8 seconds. Dealing damage with the Enhanced Skill creates an explosion with a radius of 5 meters around it that deals damage equal to 1600% Engineering. Talent Cooldown: 5 seconds.",OK
+OS Protocol - Collateral Damage,High-End,Engineering,Engineering,+22.50%,97,77,2554,Collateral Damage,"When dealing Skill Damage, also deal damage equal to 3000% Engineering to enemies within 5 meters of the target.",OK
+OS Protocol - Tactical Layering,High-End,Engineering,Skill Intensity,+15.00%,97,77,2554,Tactical Layering,"Deploying a Skill grants +15% Engineering, up to 3 stacks.",OK
+OS Protocol - Relentless Assault,High-End,Engineering,Skill Critical Damage,+30.00%,97,77,2554,Relentless Assault,"For every 1 shots fired, grants +1.30% Weapon Damage for 5 seconds, up to 30 stacks. [final line cut off in video - appears to continue: 'loses X stacks per second']",RECAPTURE - text cut off
+OS Protocol - Strategic Assistance,High-End,Engineering,Skill Intensity,+15.00%,97,77,2554,Strategic Assistance,"Assists grant +4.80% Signature Ability Charge Efficiency for 10 seconds and reduce Skill Cooldown by 2.40%, up to 5 stacks.",OK
+OS Protocol - Rampart,High-End,Engineering,Skill Critical Chance,+18.00%,97,77,2554,Rampart,"While immobile, grants +5% Damage for 1 seconds, up to 6 stacks. This bonus resets upon moving.",OK
+OS Protocol - Surgical Engineering,High-End,Engineering,Skill Intensity,+15.00%,97,77,2554,Surgical Engineering,"Skill Critical Hits have a 60% chance of granting +16% Skill Critical Damage for 10 seconds, up to ? stacks.",RECAPTURE - stack count cut off
+OS Protocol - Chain Reaction,Superior,Engineering,Skill Critical Chance,+14.40%,77,62,2043,Chain Reaction,"Kills grant +7.50% Skill Intensity for 10 seconds, up to 2 stacks.",OK
+OS Protocol - Tactical Persistence,Superior,Engineering,Skill Critical Damage,+24.00%,77,62,2043,Tactical Persistence,"Skill Hits have a 20% chance of granting +3% Skill Intensity for 5 seconds, up to 5 stacks.",OK
+OS Protocol - Recursive Treatment,Superior,Engineering,Engineering,+18.00%,77,62,2043,Recursive Treatment,"Healing or granting Extra Health grants +20% Skill Intensity.",OK
+OS Protocol - Close and Personal,Superior,Engineering,Skill Intensity,+12.00%,77,62,2043,Close and Personal,"Grants +9% Engineering for each ally within 30 meters who possesses a buff that was granted by the Agent.",OK
+OS Protocol - Chase the Weak,Superior,Engineering,Skill Intensity,+12.00%,77,62,2043,Chase the Weak,"Dealing damage to debuffed enemies who are 20 meters away has a 10% chance of granting +7.50% Engineering for 10 seconds, up to 3 stacks.",OK
+OS Protocol - Together We Stand,Superior,Engineering,Skill Intensity,+12.00%,77,62,2043,Together We Stand,"Grants +9% Engineering for each ally within 20 meters.",OK
+OS Protocol - Pressing Matter,Superior,Engineering,Skill Intensity,+12.00%,77,62,2043,Pressing Matter,"Grants +10% Skill Cooldown Recovery.",OK
+OS Protocol - Ambusher,Superior,Engineering,Skill Intensity,+12.00%,77,62,2043,Ambusher,"Being immobile for 3 seconds grants +22.50% Engineering.",OK
+OS Protocol - Cornered Animal,Superior,Engineering,Skill Critical Damage,+24.00%,77,62,2043,Cornered Animal,"Grants Weapon Damage equal to 50% Skill Critical Damage when there are no more than 1 bullets in the magazine, capped at 100% Weapon Damage.",OK
+OS Protocol - Rocket Science,Specialized,Engineering,Skill Intensity,+9.00%,58,46,1532,Rocket Science,"Deploying a Skill grants +14.40% Skill Critical Hit Chance for 10 seconds.",OK
+OS Protocol - Applied Demolition,Specialized,Engineering,Skill Intensity,+9.00%,58,46,1532,Applied Demolition,"Deploying a Skill grants +43.20% Skill Critical Hit Damage for 10 seconds.",OK
+OS Protocol - Hardware Upgrade,Specialized,Engineering,,,58,46,1532,Hardware Upgrade,,MISSING - detail popup not opened in video
+OS Protocol - Brains Over Brawn,Specialized,Engineering,Skill Critical Chance,+10.80%,58,46,1532,Brains Over Brawn,"Hits deal additional damage equal to 24% Engineering.",OK
+OS Protocol - Running Around,Specialized,Engineering,Skill Intensity,+9.00%,58,46,1532,Running Around,"Grants +18% Engineering while located within 25 meters of a debuffed enemy.",OK
+OS Protocol - Long-Range Artillery,Specialized,Engineering,,,58,46,1532,Long-Range Artillery,,MISSING - detail popup not opened in video
+OS Protocol - Overclocking,Standard,Engineering,Skill Intensity,+6.00%,38,30,1021,Overclocking,"Grants +9% Skill Multi-Shot Chance.",OK
+OS Protocol - Energizer,Standard,Engineering,Skill Intensity,+6.00%,38,30,1021,Energizer,"Grants +10.80% Skill Critical Chance.",OK
+OS Protocol - Combat Doc,Standard,Engineering,Skill Intensity,+6.00%,38,30,1021,Combat Doc,"Grants +9% Healing Intensity.",OK
+OS Protocol - Genius Engineer,Standard,Engineering,Skill Intensity,+6.00%,38,30,1021,Genius Engineer,"Grants +9% Engineering and +4.80% Skill Duration.",OK
+OS Protocol - Inspiration,Standard,Engineering,,,38,30,1021,Inspiration,,MISSING - detail popup not opened in video
+OS Protocol - Hermit,Standard,Engineering,Skill Intensity,+6.00%,38,30,1021,Hermit,"Grants +18% Signature Ability Charge Efficiency when no enemies are within 20 meters.",OK

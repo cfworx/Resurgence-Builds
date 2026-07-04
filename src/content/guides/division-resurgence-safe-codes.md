@@ -3,7 +3,7 @@ title: "Safe Codes Master List — Division Resurgence"
 category: "General"
 lastUpdated: 2026-05-28T12:00:00Z
 tags: ["safe-codes", "encrypted-crates", "collectibles", "cryptic-clues", "exploration", "commendations", "safe-locations", "division-resurgence-safes"]
-description: "Every confirmed Division Resurgence safe code with location, combination, and reward. On-screen verified, updated May 2026."
+description: "Every confirmed Division Resurgence safe code with location, combination, and reward. All 21 combinations verified on-screen."
 author: "RapidF5"
 featuredImage: "/images/guides/division-resurgence-safe-codes-encrypted-crates-hero.jpg"
 imageAlt: "Division Resurgence encrypted crate safe codes master list showing all 21 confirmed locations and combinations for May 2026"
@@ -305,7 +305,7 @@ What we know is **not** the issue: Phase 2 of Season 1 (May 11, 2026) did not ad
 ---
 
 **Related Reading:**
-- [Division Resurgence Codes (May 2026)](/guides/division-resurgence-codes/)
+- [Division Resurgence Codes](/guides/division-resurgence-codes/)
 - [Division Resurgence Error Codes](/guides/division-resurgence-error-codes/)
 - [Division Resurgence Device Compatibility](/guides/division-resurgence-device-compatibility/)
 - [Patch 1.2.1 Notes](/patch-notes/patch-1-2-1/)

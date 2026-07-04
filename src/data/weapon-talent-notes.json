@@ -1,0 +1,171 @@
+{
+  "_comment": "Per-talent editorial content written by RapidF5. Keyed by talent slug. Items present here render unique Field Notes / Meta Builds / Patch History sections and become indexable once their unique text clears the thin-content threshold. Add entries only after verifying claims against build guides or patch notes.",
+  "in-sync": {
+    "usageNotes": "In Sync is the glue talent for hybrid loadouts: weapon hits buff your skills, skill hits buff your gun, and running both loops at once doubles the bonus to +18% each way. The discipline it demands is rotation — if you camp behind your drone and never fire, or mag-dump and forget your cooldowns, half the talent is dead weight. On drone and turret builds the skill-hit side has near-permanent uptime, so in practice you're maintaining the weapon buff by tagging targets between skill volleys. It's the most-used weapon talent across our published builds for a reason: four different metas run it, from LMG sustain to 800k-DPS skill burst.",
+    "metaBuilds": [
+      {
+        "title": "Tactical Pharma 800k DPS (Rank 1 Global)",
+        "url": "/builds/tactical-pharma-800k-dps-rank-1-global-build/"
+      },
+      {
+        "title": "The Double Agent Glass Cannon Tech Op",
+        "url": "/builds/aegis-chad-glass-cannon-tech-operator-build-ifozzy/"
+      },
+      {
+        "title": "Milkshake Machine — Strawberry Milkshake LMG",
+        "url": "/builds/milkshake-machine-strawberry-milkshake-lmg-build/"
+      },
+      {
+        "title": "Tech Aegis 237k DPS Skill Crit",
+        "url": "/builds/tech-aegis-engineering-build-tampishach/"
+      }
+    ]
+  },
+  "swift-taunt": {
+    "usageNotes": "Swift Taunt reads like a tank talent but it's really a controlled-aggro tool: hit 3 enemies within 5 seconds, and nearby enemies taunt onto you while you pocket Extra Health worth 25% of Max Health. High-Toughness builds convert that 25% into a huge buffer — on a 300k-health tank-medic that's a 75k shield on demand. The trigger condition wants AoE-capable weapons or dense packs; LMG sweeps and shield-brawler multi-tags proc it almost passively. Be deliberate in group play: pulling aggro on a squishy skill build that only took Swift Taunt for the Extra Health is how you donate loot. The Extra Health arrives as a buffer on top of your bar rather than a heal, so it can't be wasted by being at full health — pre-proc it off trash mobs right before a boss opener and you effectively walk in with a fourth armor plate.",
+    "metaBuilds": [
+      {
+        "title": "Involuntary Nap Time — Bulwark Juggernaut",
+        "url": "/builds/involuntary-nap-time-bulwark-juggernaut-build/"
+      },
+      {
+        "title": "Milkshake Machine — Strawberry Milkshake LMG",
+        "url": "/builds/milkshake-machine-strawberry-milkshake-lmg-build/"
+      },
+      {
+        "title": "Tactical Pharma 800k DPS (Rank 1 Global)",
+        "url": "/builds/tactical-pharma-800k-dps-rank-1-global-build/"
+      },
+      {
+        "title": "Tech Aegis 237k DPS Skill Crit",
+        "url": "/builds/tech-aegis-engineering-build-tampishach/"
+      }
+    ]
+  },
+  "rapid-charge": {
+    "usageNotes": "Rapid Charge is a Signature Ability battery: 5 hits inside 3 seconds banks 50 Signature charge, which any high-RPM weapon procs on essentially every trigger pull. Its value scales with how build-defining your Signature is — Vanguard support builds running Tactical Link treat it as the engine that keeps team-wide buffs cycling, and drone builds use it to get Drone Overload back before the fight moves on. Put it on the weapon you actually hold during ability downtime; a pocket SMG you never fire charges nothing. It's also one of the few talents whose value you can read directly off the UI: watch how much faster the Signature meter fills during sustained fire versus ability downtime, and you'll know within one mission whether your weapon's RPM is high enough to justify the slot.",
+    "metaBuilds": [
+      {
+        "title": "AgentHuntzman's Leaderboard Vanguard Support",
+        "url": "/builds/agenthuntzmans-leaderboard-ranking-vanguard-support-build/"
+      },
+      {
+        "title": "Jackpot Striker Drone Tech Op",
+        "url": "/builds/jackpot-striker-drone-tech-operator-build/"
+      },
+      {
+        "title": "Tech Aegis 237k DPS Skill Crit",
+        "url": "/builds/tech-aegis-engineering-build-tampishach/"
+      }
+    ]
+  },
+  "torrential-downpour": {
+    "usageNotes": "Torrential Downpour pays skill builds for shooting: 10 hits in 5 seconds converts into +22.50% Engineering for 12 seconds, and Engineering is the core stat every skill multiplier hangs off. The 10-hit window means fast-firing weapons keep the buff effectively permanent, which is why the top Engineering loadouts pair it with SMG-class primaries they can rake across trash mobs between drone cycles. Think of it as a conditional quarter-boost to your entire skill sheet — line up your biggest skill casts inside the 12-second window and the numbers jump visibly. Uptime math is the whole game here: 10 hits in 5 seconds is trivial for anything over 600 RPM and nearly impossible for bolt-actions, so this talent silently dictates your weapon class. Check your buff bar the first few runs — if the icon flickers, your gun is too slow for it.",
+    "metaBuilds": [
+      {
+        "title": "AgentHuntzman's Leaderboard Vanguard Support",
+        "url": "/builds/agenthuntzmans-leaderboard-ranking-vanguard-support-build/"
+      },
+      {
+        "title": "Jackpot Striker Drone Tech Op",
+        "url": "/builds/jackpot-striker-drone-tech-operator-build/"
+      },
+      {
+        "title": "Tech Aegis 237k DPS Skill Crit",
+        "url": "/builds/tech-aegis-engineering-build-tampishach/"
+      }
+    ]
+  },
+  "surgical": {
+    "usageNotes": "Surgical stacks +7% Weapon Critical Hit Damage per headshot, five deep, for a ceiling of +35% CHD that refreshes as long as you keep hitting heads. It rewards deliberate aim on stable platforms — rifles and accurate ARs hold stacks far better than spray weapons that shred body armor but rarely tag the head. The interesting wrinkle is that our two highest skill-crit builds run it on the *weapon* slot of Engineering loadouts: during drone downtime you're landing headshots anyway, so the CHD stacks make the gunplay half of the build carry its weight. Stack decay is the skill check: all five stacks ride on a 5-second timer, so one whiffed magazine resets your +35% back to zero. Marksman players who feather the trigger between guaranteed headshots hold max stacks far longer than spray-and-pray users ever will.",
+    "metaBuilds": [
+      {
+        "title": "Jackpot Striker Drone Tech Op",
+        "url": "/builds/jackpot-striker-drone-tech-operator-build/"
+      },
+      {
+        "title": "Tech Aegis 237k DPS Skill Crit",
+        "url": "/builds/tech-aegis-engineering-build-tampishach/"
+      }
+    ]
+  },
+  "backup-battery": {
+    "usageNotes": "Backup Battery turns a weapon swap into a skill steroid: pull this weapon out and you get +22.50% Engineering for 8 seconds, on an 8-second internal cooldown. In practice it lives on the secondary slot as a 'cast trigger' — swap, dump your Artillery Turret or Oxidizing Swarm inside the buff window, swap back. Because the swap itself is the proc, the weapon's own DPS barely matters; players pick whatever secondary has the best stat stick rolls. Three of our published metas, including the rank-1-global Tactical Pharma, use exactly this swap-cast-swap rhythm. Two practical notes: the 8-second internal cooldown matches the buff duration, so a disciplined swap rhythm keeps it live essentially full-time, and because the proc happens on swap rather than on hit, it works even while you're repositioning or breaking line of sight — cast windows you'd otherwise waste.",
+    "metaBuilds": [
+      {
+        "title": "Bulwark Breacher 334k DPS Shield Wall",
+        "url": "/builds/bulwark-breacher-build-saiynergy/"
+      },
+      {
+        "title": "Demolitionist Glass Cannon 333k DPS Fire Cycle",
+        "url": "/builds/demolitionist-glass-cannon-build-pveenjoyer/"
+      },
+      {
+        "title": "Tactical Pharma 800k DPS (Rank 1 Global)",
+        "url": "/builds/tactical-pharma-800k-dps-rank-1-global-build/"
+      }
+    ]
+  },
+  "adaptation": {
+    "usageNotes": "Adaptation splits its payout by where you land shots: body shots feed +4.80% Skill Duration, headshots feed +6% Skill Intensity, both on 8-second timers. Unlike stack-to-five talents you don't need perfect aim discipline — normal target-of-opportunity shooting keeps at least one buff rolling, and mixed fire keeps both. It suits skill builds whose deployables benefit from living longer *and* hitting harder, which is why it shows up in shield-turret and swarm loadouts rather than pure burst setups. If your skills are instant-cast nukes, the Duration half does little — pick a different talent. Roll priority is forgiving too: because both halves proc off ordinary hits, Adaptation performs on mid-tier weapon rolls where stack-dependent talents would underdeliver, making it a strong first recalibration for a fresh Engineering loadout before you've farmed a perfect stat stick.",
+    "metaBuilds": [
+      {
+        "title": "Bulwark Breacher 334k DPS Shield Wall",
+        "url": "/builds/bulwark-breacher-build-saiynergy/"
+      },
+      {
+        "title": "Tactical Pharma 800k DPS (Rank 1 Global)",
+        "url": "/builds/tactical-pharma-800k-dps-rank-1-global-build/"
+      }
+    ]
+  },
+  "steady-suppression": {
+    "usageNotes": "Steady Suppression is the simplest defensive talent in the game — +18% Damage Reduction while firing — and that simplicity is exactly why the Muscular Nurse tank-medic leans on it. No stacks, no ramp, no cooldown: the moment you hold the trigger you're 18% tankier, and LMGs let you hold that trigger for a very long time. It layers with heal-triggered DR procs (Hypervigilant, Rock Solid) into effective damage reduction that makes boss rooms survivable while you stand in your own healing station. The flip side: reloads and repositioning drop the buff at the exact moment you're most exposed, so mind the magazine. One more wrinkle worth knowing: the buff checks firing state, not accuracy, so suppressive spray at a doorway keeps the 18% live even when nothing's taking damage. That makes it uniquely good at covering revives — hold the trigger over your teammate and you're tanking with the same stat budget.",
+    "metaBuilds": [
+      {
+        "title": "The Muscular Nurse — Combat Medicine Tank-Medic",
+        "url": "/builds/muscular-nurse-combat-medicine-build-nadie/"
+      }
+    ]
+  },
+  "fully-charged": {
+    "usageNotes": "Fully Charged pays you for a habit most shooters punish: running the magazine completely dry. Each empty-mag reload grants +7.50% Engineering for 12 seconds, stacking three times to +22.5%. Small magazines cycle stacks fastest, which is why glass-cannon Tech Op setups treat the reload itself as part of the damage rotation — dump, reload, cast. The management cost is real: partial reloads do nothing, so the talent quietly rewires how you play your gun. If you can't break the tactical-reload habit, take Torrential Downpour instead. Magazine-size bonus attributes actively fight this talent — bigger mags mean slower stack cycling — so leave those rolls off the weapon carrying it. It also pairs oddly well with Backup Battery on the other weapon: one procs on swap, the other on the reload you were doing anyway.",
+    "metaBuilds": [
+      {
+        "title": "The Double Agent Glass Cannon Tech Op",
+        "url": "/builds/aegis-chad-glass-cannon-tech-operator-build-ifozzy/"
+      },
+      {
+        "title": "AgentHuntzman's Leaderboard Vanguard Support",
+        "url": "/builds/agenthuntzmans-leaderboard-ranking-vanguard-support-build/"
+      }
+    ]
+  },
+  "conceited": {
+    "usageNotes": "Conceited flips the usual tank trigger on its head: instead of proccing off taking hits, it procs off kills and assists, taunting everything within 20 meters and granting +15% Damage Reduction for 10 seconds. On a tank-medic that already wants enemies pointed at it, the assist clause is the quiet star — in group content you're 'participating' in nearly every kill, so the taunt-plus-DR loop is close to permanent. It effectively converts your team's kill feed into your personal aggro-and-armor engine. Solo, it's weaker: no assists means the loop only spins as fast as you can secure kills yourself. The 20-meter taunt also doubles as soft crowd control: enemies that turn toward you stop pressuring your healer's flank, which stabilizes pug groups more than the raw 15% DR suggests. In the Dark Zone, be aware the taunt does nothing to players — you're only buying the DR there.",
+    "metaBuilds": [
+      {
+        "title": "The Muscular Nurse — Combat Medicine Tank-Medic",
+        "url": "/builds/muscular-nurse-combat-medicine-build-nadie/"
+      }
+    ]
+  },
+  "sadistic-shield": {
+    "usageNotes": "Sadistic Shield converts sustained fire into a rolling overheal: every 5th hit on an enemy grants Extra Health equal to 12.50% of Max Health for 10 seconds. Because the grant scales off Max Health, it belongs on builds that stack health as their primary defensive layer — a 334k-health tank refreshes a ~42k buffer every few trigger pulls. High-RPM weapons re-proc it before the old buffer expires, so in practice you fight with a permanent health cushion that soaks the chip damage your healing doesn't need to cover. On low-health DPS frames the same talent barely registers. Because the buffer refreshes rather than stacks, there's no ramp to protect — dying and re-engaging gets you back to full value in five hits. Pair it with Received Healing rolls and the talent covers chip damage while your actual heals cover burst, a clean division of labor.",
+    "metaBuilds": [
+      {
+        "title": "The Muscular Nurse — Combat Medicine Tank-Medic",
+        "url": "/builds/muscular-nurse-combat-medicine-build-nadie/"
+      }
+    ]
+  },
+  "precision-support": {
+    "usageNotes": "Precision Support is the healer's weapon talent that nobody notices until the revives get fast: 6 hits grant +7% Armor and +40% Rescue Efficiency for 10 seconds, stacking five times. At full stacks that's +35% Armor and a triple-speed revive — on a combat medic that plans to pick teammates up mid-firefight, the Rescue Efficiency stacks are the difference between a safe pickup and trading a second body. Keep a fast-firing weapon so stacks are always topped before you commit to a revive, and treat the Armor as a bonus, not the point. The 6-hit trigger counts any weapon hit, so a fast SMG rebuilds all five stacks in under two seconds of contact — worth remembering after a death resets you. In Conflict, pre-stacking on the walk back to the objective means your first revive attempt is already at full speed.",
+    "metaBuilds": [
+      {
+        "title": "The Muscular Nurse — Combat Medicine Tank-Medic",
+        "url": "/builds/muscular-nurse-combat-medicine-build-nadie/"
+      }
+    ]
+  }
+}

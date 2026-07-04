@@ -3,7 +3,7 @@ title: "All Error Codes - Division Resurgence 2026"
 category: "General"
 lastUpdated: 2026-05-28T12:00:00Z
 tags: ["error-codes", "troubleshooting", "network-error", "error-271581191", "error-6000010", "connection-error", "bug-fix", "division-resurgence-errors"]
-description: "Every Division Resurgence error code and its fix. Error 271581191, 6000010, Network Failure, stuck at 99%, and more. Updated May 2026."
+description: "Every Division Resurgence error code and its fix. Error 271581191, 6000010, Network Failure, stuck at 99%, and more."
 author: "RapidF5"
 featuredImage: "/images/guides/division-resurgence-error-codes-fix-guide-hero.jpg"
 imageAlt: "Division Resurgence error codes troubleshooting guide covering error 271581191, 6000010, network failure, and common fixes"
@@ -280,7 +280,7 @@ Tickets with a screenshot and reproduction steps get triaged faster than tickets
 
 **Related Reading:**
 - [Patch 1.2.1 Notes](/patch-notes/patch-1-2-1/)
-- [Division Resurgence Codes (May 2026)](/guides/division-resurgence-codes/)
+- [Division Resurgence Codes](/guides/division-resurgence-codes/)
 - [Season 1-3 Roadmap](/news/season-1-2-3-roadmap/)
 
 **Sources:**

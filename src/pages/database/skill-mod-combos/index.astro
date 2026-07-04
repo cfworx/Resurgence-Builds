@@ -1,7 +1,10 @@
 ---
 import DatabaseLayout from '../../../layouts/DatabaseLayout.astro';
+import { fixPlurals } from '../../../utils/seo';
 import skillMods from '../../../data/skill-mod-combos.json';
 import AdSenseUnit from '../../../components/AdSenseUnit.astro';
+import { verifiedPatch } from '../../../data/site-config';
+const lastVerified = verifiedPatch('Patch 1.1.2.2'); // Bump: drop the arg ONLY after re-verifying this page's content in-game (CURRENT_PATCH is a ceiling, not an auto-bump)
 
 const title = "Division Resurgence Skill Mod Combos & Mods Guide";
 const description = "Every Skill Mod Combo in Division Resurgence and their 2-piece and 3-piece set bonuses. Pair them wrong and your build is a participation trophy.";
@@ -43,7 +46,7 @@ const itemListLd = {
       '@type': 'Thing',
       '@id': `https://resurgencebuilds.com/database/skill-mod-combos/${toSlug(item.name)}/`,
       name: item.name,
-      description: `${item.name} — ${item.specialization} Skill Mod Combo. 2pc: ${item.bonus2}. 3pc: ${item.bonus3}`,
+      description: `${item.name} — ${item.specialization} Skill Mod Combo. 2pc: ${fixPlurals(item.bonus2)}. 3pc: ${fixPlurals(item.bonus3)}`,
       url: `https://resurgencebuilds.com/database/skill-mod-combos/${toSlug(item.name)}/`,
       subjectOf: { '@id': 'https://resurgencebuilds.com/#division-resurgence' }
     }
@@ -58,7 +61,7 @@ const itemListLd = {
   heading="Skill Mod Combos"
   subheading="Pairing the right skill mods unlocks powerful synergy bonuses. Two pieces or three — know which combo fits your chaos."
   jsonLd={itemListLd}
-  lastVerified="Patch 1.1.2.2"
+  lastVerified={lastVerified}
   {faqs}
 >
   <div class="db-filters">
@@ -89,7 +92,7 @@ const itemListLd = {
                   <span class="bonus-badge bonus-badge-2">2</span>
                   Piece Bonus
                 </span>
-                <p class="bonus-text">{mod.bonus2}</p>
+                <p class="bonus-text">{fixPlurals(mod.bonus2)}</p>
               </div>
             </div>
 
@@ -99,7 +102,7 @@ const itemListLd = {
                   <span class="bonus-badge bonus-badge-3">3</span>
                   Piece Bonus
                 </span>
-                <p class="bonus-text">{mod.bonus3}</p>
+                <p class="bonus-text">{fixPlurals(mod.bonus3)}</p>
               </div>
             </div>
           </div>

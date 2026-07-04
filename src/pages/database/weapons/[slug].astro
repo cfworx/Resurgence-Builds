@@ -6,8 +6,10 @@ import WeaponAttributes from '../../../components/WeaponAttributes.astro';
 import RandomizedAttributes from '../../../components/RandomizedAttributes.astro';
 import WeaponTalentsGrid from '../../../components/WeaponTalentsGrid.astro';
 import AdSenseUnit from '../../../components/AdSenseUnit.astro';
-import { truncateDesc } from '../../../utils/seo';
+import { truncateDesc, metaDescription } from '../../../utils/seo';
 import standardWeapons from '../../../data/standard-weapons.json';
+import { verifiedPatch } from '../../../data/site-config';
+const lastVerified = verifiedPatch('Patch 1.1.2.2'); // Bump: drop the arg ONLY after re-verifying this page's content in-game (CURRENT_PATCH is a ceiling, not an auto-bump)
 
 export function getStaticPaths() {
   return standardWeapons.map((weapon: any) => ({
@@ -24,7 +26,7 @@ const slug = weapon.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|
 const siteUrl = 'https://resurgencebuilds.com';
 
 const title = `${weapon.name} — Division Resurgence ${weapon.type}`;
-const description = truncateDesc(`${weapon.name} ${weapon.type} stats: ${weapon.rpm} RPM, ${weapon.mag} magazine, ${weapon.dmgType} damage. Full breakdown for Division Resurgence.`);
+const description = metaDescription(weapon.summary, `${weapon.name} in The Division Resurgence: ${weapon.type} stats, best talents and builds, and how to farm it.`);
 
 const breadcrumbs = [
   { name: 'Weapons', url: '/database/weapons/' },
@@ -41,6 +43,25 @@ const typeGuide: Record<string, string> = {
 };
 
 const typeDesc = typeGuide[weapon.type] || `${weapon.type}s are a weapon category in Division Resurgence offering unique playstyle options depending on your build and specialization.`;
+
+// Weapon Attributes box only renders with 4+ populated stats (avoids near-empty stat boxes).
+const attributeStats = [weapon.rpm, weapon.mag, weapon.accuracy, weapon.reloadSpeed, weapon.stability];
+const populatedStatCount = attributeStats.filter((v: any) => v !== undefined && v !== null && v !== '').length;
+
+// Recommended bonus attributes, deduplicated by name (SMGs otherwise listed Crit Damage twice).
+type RecAttr = { name: string; note: string; accent?: boolean };
+const recommendedAttrsRaw: RecAttr[] = [
+  { name: `Weapon ${weapon.dmgType} Damage`, note: "Direct multiplier for this weapon's damage output. This is your highest-impact single stat.", accent: true },
+  weapon.type === 'SMG'
+    ? { name: 'Crit Damage', note: 'SMGs already get built-in Crit Chance, so stacking Crit Damage gives you more per-crit bang.' }
+    : weapon.type === 'Marksman Rifle'
+      ? { name: 'Headshot Damage', note: 'MMRs live on headshots. This stat scales the hardest on precision weapons.' }
+      : { name: 'Crit Chance', note: 'Until you hit the soft cap (~60%), Crit Chance is the most efficient damage stat.' },
+  { name: 'Crit Damage', note: 'After Crit Chance is healthy, stack Crit Damage for bigger crits.' },
+  { name: 'Damage to Elites', note: 'For PvE, this stat is a flat multiplier on every named and elite enemy.' },
+];
+const seenAttrs = new Set<string>();
+const recommendedAttrs = recommendedAttrsRaw.filter(a => !seenAttrs.has(a.name) && !!seenAttrs.add(a.name));
 
 const faqs = [
   {
@@ -98,7 +119,7 @@ const itemLd = {
 };
 ---
 
-<BaseLayout title={title} description={description} breadcrumbs={breadcrumbs} jsonLd={[weaponLd, itemLd]} faqs={faqs}>
+<BaseLayout title={title} description={description} breadcrumbs={breadcrumbs} jsonLd={[weaponLd, itemLd]} faqs={faqs} ogImage={weapon.image || undefined}>
   <div class="container section">
     <Breadcrumbs items={breadcrumbs} />
     <SectionTag label="Weapon Database" />
@@ -112,7 +133,7 @@ const itemLd = {
         </div>
         <div style="display: inline-flex; align-items: center; gap: 6px; font-family: var(--font-mono); font-size: var(--text-xs); color: #6DAA45; background: rgba(109, 170, 69, 0.1); border: 1px solid rgba(109, 170, 69, 0.25); padding: 6px 14px; border-radius: 999px; margin-top: var(--sp-4); letter-spacing: 0.02em;">
           <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
-          <span>Last verified for <strong>Patch 1.1.2.2</strong></span>
+          <span>Last verified for <strong>{lastVerified}</strong></span>
         </div>
       </div>
 
@@ -126,17 +147,19 @@ const itemLd = {
       <div style="margin-bottom: var(--sp-8);">
         <h2 style="font-family: var(--font-heading); font-size: var(--text-lg); font-weight: 800; color: #fff; margin: 0 0 var(--sp-4) 0; padding-bottom: var(--sp-2); border-bottom: 1px solid rgba(255,255,255,0.08);">Overview</h2>
         <p style="color: #c8c8d0; line-height: 1.75; font-size: var(--text-base);">
-          The <strong>{weapon.name}</strong> is a <strong>{weapon.type}</strong> in The Division Resurgence that fires at <strong>{weapon.rpm} RPM</strong> with a <strong>{weapon.mag}-round</strong> magazine and deals <strong>{weapon.dmgType}</strong> damage. {typeDesc}
+          The <strong>{weapon.name}</strong> is a <strong>{weapon.type}</strong> in The Division Resurgence that fires at <strong>{weapon.rpm} RPM</strong> with a <strong>{weapon.mag}-round</strong> magazine and deals <strong>{weapon.dmgType}</strong> damage. See the <a href={`#class-guide`} style="color: var(--accent);">{weapon.type} class guide</a> below for how this weapon class plays.
         </p>
       </div>
 
-      <WeaponAttributes 
-        rpm={weapon.rpm}
-        mag={weapon.mag}
-        accuracy={weapon.accuracy} 
-        reloadSpeed={weapon.reloadSpeed} 
-        stability={weapon.stability} 
-      />
+      {populatedStatCount >= 4 && (
+        <WeaponAttributes
+          rpm={weapon.rpm}
+          mag={weapon.mag}
+          accuracy={weapon.accuracy}
+          reloadSpeed={weapon.reloadSpeed}
+          stability={weapon.stability}
+        />
+      )}
 
       {weapon.randomizedAttributes && (
         <RandomizedAttributes attributes={weapon.randomizedAttributes} />
@@ -156,7 +179,7 @@ const itemLd = {
       )}
 
       <!-- Weapon class guide -->
-      <div style="margin-bottom: var(--sp-8);">
+      <div style="margin-bottom: var(--sp-8);" id="class-guide">
         <h2 style="font-family: var(--font-heading); font-size: var(--text-lg); font-weight: 800; color: #fff; margin: 0 0 var(--sp-4) 0; padding-bottom: var(--sp-2); border-bottom: 1px solid rgba(255,255,255,0.08);">{weapon.type} Class Guide</h2>
         <div style="padding: var(--sp-5); background: rgba(0,0,0,0.25); border-left: 3px solid var(--accent); border-radius: 0 8px 8px 0;">
           <p style="margin: 0; color: #c8c8d0; line-height: 1.75; font-size: var(--text-base);">{typeDesc}</p>
@@ -185,16 +208,9 @@ const itemLd = {
         <div style="color: #c8c8d0; line-height: 1.75; font-size: var(--text-base);">
           <p>When rolling bonus attributes on gear for a {weapon.type} build using the {weapon.name}, prioritize in this order:</p>
           <ol style="padding-left: var(--sp-5); margin-top: var(--sp-2);">
-            <li><strong style="color: var(--accent);">Weapon {weapon.dmgType} Damage</strong> — Direct multiplier for this weapon's damage output. This is your highest-impact single stat.</li>
-            {weapon.type === 'SMG' ? (
-              <li><strong style="color: #fff;">Crit Damage</strong> — SMGs already get built-in Crit Chance, so stacking Crit Damage gives you more per-crit bang.</li>
-            ) : weapon.type === 'Marksman Rifle' ? (
-              <li><strong style="color: #fff;">Headshot Damage</strong> — MMRs live on headshots. This stat scales the hardest on precision weapons.</li>
-            ) : (
-              <li><strong style="color: #fff;">Crit Chance</strong> — Until you hit the soft cap (~60%), Crit Chance is the most efficient damage stat.</li>
-            )}
-            <li><strong style="color: #fff;">{weapon.type === 'Marksman Rifle' ? 'Crit Damage' : 'Crit Damage'}</strong> — After Crit Chance is healthy, stack Crit Damage for bigger crits.</li>
-            <li><strong style="color: #fff;">Damage to Elites</strong> — For PvE, this stat is a flat multiplier on every named and elite enemy.</li>
+            {recommendedAttrs.map(attr => (
+              <li><strong style={attr.accent ? 'color: var(--accent);' : 'color: #fff;'}>{attr.name}</strong> — {attr.note}</li>
+            ))}
           </ol>
           <p style="margin-top: var(--sp-3);">Check the <a href="/database/bonus-attributes/" style="color: var(--accent);">bonus attributes database</a> for exact values and which gear slots can roll each stat.</p>
         </div>
@@ -241,4 +257,3 @@ const itemLd = {
     <AdSenseUnit label="Advertisement — database item" />
   </div>
 </BaseLayout>
-

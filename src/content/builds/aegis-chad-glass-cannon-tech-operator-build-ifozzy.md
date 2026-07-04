@@ -41,9 +41,9 @@ faqs:
 
 > Build credit: **LtFoe** (LtFoe in-game, Clan TruthAbove, Bloodhound title). Submitted via our Discord with 30+ in-game screenshots. Every stat, every talent, every gear piece in this post comes from his verified loadout. We just helped him write it down.
 
-Some builds are a scalpel. This one is two completely different weapons in the same toolbox, and you only have to swap two pieces to switch modes. LtFoe's **Aegis Operator** setup runs **24.80k Power Score** in Glass Cannon mode and **24.97k in durable mode**, and the trick is keeping four gear slots locked while hot-swapping the body armor and backpack between a [Glass Cannon](/database/body-armor-talents/glass-cannon/) DPS profile and a [Duality](/database/body-armor-talents/duality/) + [Injured Taunt](/database/backpack-talents/injured-taunt/) survivability profile.
+Some builds are a scalpel. This one is two completely different weapons in the same toolbox, and you only have to swap two pieces to switch modes. LtFoe's **Aegis Operator** setup runs **24.80k Power Score** in Glass Cannon mode and **24.97k in durable mode**, and the trick is keeping four gear slots locked while hot-swapping the body armor and backpack between a [Glass Cannon](/database/body-armor-talents/#glass-cannon) DPS profile and a [Duality](/database/body-armor-talents/#duality) + [Injured Taunt](/database/backpack-talents/#injured-taunt) survivability profile.
 
-The build philosophy is straightforward: max [Skill Crit Chance](/database/bonus-attributes/skill-critical-chance/), [Skill Crit Damage](/database/bonus-attributes/skill-critical-damage/), and [Skill Multi-Shot Chance](/database/bonus-attributes/skill-multi-shot-chance/), then layer Damage Reduction as the defensive stat because it scales better than raw Armor in endgame content. The numbers back it up — 66.27% Skill Crit Chance and 155.50% Skill Crit Damage on the DPS profile, with a verified 1.78 million damage hit on a bounty boss.
+The build philosophy is straightforward: max [Skill Crit Chance](/database/bonus-attributes/#skill-critical-chance), [Skill Crit Damage](/database/bonus-attributes/#skill-critical-damage), and [Skill Multi-Shot Chance](/database/bonus-attributes/#skill-multi-shot-chance), then layer Damage Reduction as the defensive stat because it scales better than raw Armor in endgame content. The numbers back it up — 66.27% Skill Crit Chance and 155.50% Skill Crit Damage on the DPS profile, with a verified 1.78 million damage hit on a bounty boss.
 
 > [!WARNING] Aegis Burst Scales Off Crit, Not Skill Intensity
 > The #1 mistake on Aegis Operator builds is stacking Skill Intensity. The Aegis 3-second burst scales with Skill Crit Chance, Skill Crit Damage, and Multishot. Skill Intensity provides minimal benefit. Engineering benefits Aegis burst 2.25× more than raw Skill Damage stat. Stack crit stats everywhere.
@@ -76,7 +76,7 @@ That is a permanent +10.8% Skill Crit Chance, +24% Skill Crit Damage, +12% Skill
 
 ## Setup 1: Glass Cannon + Prime Engineer (DPS Profile)
 
-This is the mode for bounty bosses, story content, and PvE where you have a Defender Drone to hide behind. It is a true glass cannon: absurd damage output, but you take 10% more incoming damage from the [Glass Cannon](/database/body-armor-talents/glass-cannon/) talent. Move with your drone up, do not get caught in the open, and you will see numbers most builds cannot reach.
+This is the mode for bounty bosses, story content, and PvE where you have a Defender Drone to hide behind. It is a true glass cannon: absurd damage output, but you take 10% more incoming damage from the [Glass Cannon](/database/body-armor-talents/#glass-cannon) talent. Move with your drone up, do not get caught in the open, and you will see numbers most builds cannot reach.
 
 ### Stats (Glass Cannon Active)
 
@@ -102,7 +102,7 @@ This is the mode for bounty bosses, story content, and PvE where you have a Defe
 |---|---|---|---|---|---|---|
 | Mask | Timeless Guardian Mask | T1 | Jackpot | Skill Crit Chance +3.45% | Multi-Shot +4.52% | — |
 | Body Armor | Chatzatz Chest | T2 | Jackpot | Multi-Shot +2.27% | Skill CDR -4.07% | **Glass Cannon II** |
-| Backpack | "Horo" CarryBack | T1 | Boom-Shakalaka | Skill Radius +9.87% | Multi-Shot +3.54% | **[Prime Engineer](/database/backpack-talents/prime-engineer/) II** |
+| Backpack | "Horo" CarryBack | T1 | Boom-Shakalaka | Skill Radius +9.87% | Multi-Shot +3.54% | **[Prime Engineer](/database/backpack-talents/#prime-engineer) II** |
 | Gloves | "Neptune" Protection Gloves | T2 | Boom-Shakalaka | Skill Crit Chance +5.52% | Skill Crit Damage +9.25% | — |
 | Holster | "Morar" Holster System | T1 | Jackpot | Multi-Shot +4.80% | Skill Crit Chance +5.72% | — |
 | Knee Guards | Sundown Knee Guards | T1 | Jackpot | Skill Crit Damage +9.34% | Damage Reduction +3.58% | — |
@@ -118,7 +118,7 @@ The combo: deploy your skills first while topped off to bank the +31.50% Enginee
 
 ## Setup 2: Duality + Injured Taunt (Durable / PvP Profile)
 
-This is the plug-and-play swap. Two slots change, nothing else. Keep your weapons, your mask, your holster, your gloves, your knee guards. Swap the body armor to a [Duality](/database/body-armor-talents/duality/) II Chatzatz, and the backpack to an [Injured Taunt](/database/backpack-talents/injured-taunt/) II AMP24.
+This is the plug-and-play swap. Two slots change, nothing else. Keep your weapons, your mask, your holster, your gloves, your knee guards. Swap the body armor to a [Duality](/database/body-armor-talents/#duality) II Chatzatz, and the backpack to an [Injured Taunt](/database/backpack-talents/#injured-taunt) II AMP24.
 
 The result holds its weight in Conflict, hot-drops into the Dark Zone for rogue mischief, and solos Elite missions by brute-forcing every encounter. LtFoe's words: *"I can just run an Elite mission solo using the durable setup. I've become accustomed to just brute forcing every encounter with it, even in the Dark Zone going rogue and having fun in general."*
 
@@ -233,7 +233,7 @@ The rotation is the same in both setups. The gear swap changes your damage ceili
 
 **In Glass Cannon mode:**
 
-1. **Pre-deploy skills at full health** to bank the [Prime Engineer](/database/backpack-talents/prime-engineer/) buff (+31.50% Engineering for 12s)
+1. **Pre-deploy skills at full health** to bank the [Prime Engineer](/database/backpack-talents/#prime-engineer) buff (+31.50% Engineering for 12s)
 2. **Open with the Vector** to trigger [In Sync](/database/weapon-talents/in-sync/) — weapon hits feed +9% Skill Damage, skill hits feed +9% Weapon Damage, doubled when both are active
 3. **Burn through magazines** to trigger Fully Charged stacks — each empty-mag reload adds +7.50% Engineering, up to 3 stacks
 4. **Let your drone and Firefly do the heavy lifting** — they are critting at 66%+ with 155% crit damage and scaling off your elevated Engineering

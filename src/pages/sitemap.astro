@@ -152,21 +152,21 @@ const tagSlugify = (tag: string) => tag.toLowerCase().replace(/\s+/g, '-');
       <h2>Database: Backpack Talents</h2>
       <ul style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 10px; list-style: none; padding: 0;">
         {backpackTalents.map((item: any) => (
-          <li><a href={`/database/backpack-talents/${slugify(item.name)}/`}>{item.name}</a></li>
+          <li><a href={`/database/backpack-talents/#${slugify(item.name)}`}>{item.name}</a></li>
         ))}
       </ul>
 
       <h2>Database: Body Armor Talents</h2>
       <ul style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 10px; list-style: none; padding: 0;">
         {bodyArmorTalents.map((item: any) => (
-          <li><a href={`/database/body-armor-talents/${slugify(item.name)}/`}>{item.name}</a></li>
+          <li><a href={`/database/body-armor-talents/#${slugify(item.name)}`}>{item.name}</a></li>
         ))}
       </ul>
 
       <h2>Database: Bonus Attributes</h2>
       <ul style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 10px; list-style: none; padding: 0;">
         {bonusAttributes.flatMap((cat: any) => cat.attributes).map((attr: string) => (
-          <li><a href={`/database/bonus-attributes/${slugify(attr)}/`}>{attr}</a></li>
+          <li><a href={`/database/bonus-attributes/#${slugify(attr)}`}>{attr}</a></li>
         ))}
       </ul>
 

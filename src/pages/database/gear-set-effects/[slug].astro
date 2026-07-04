@@ -3,8 +3,10 @@ import BaseLayout from '../../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../../components/Breadcrumbs.astro';
 import SectionTag from '../../../components/SectionTag.astro';
 import AdSenseUnit from '../../../components/AdSenseUnit.astro';
-import { truncateDesc } from '../../../utils/seo';
+import { truncateDesc, metaDescription } from '../../../utils/seo';
 import gearSets from '../../../data/gear-set-effects.json';
+import { verifiedPatch } from '../../../data/site-config';
+const lastVerified = verifiedPatch('Patch 1.1.2.2'); // Bump: drop the arg ONLY after re-verifying this page's content in-game (CURRENT_PATCH is a ceiling, not an auto-bump)
 
 export function getStaticPaths() {
   return gearSets.map((set: any) => ({
@@ -69,7 +71,7 @@ const overviewGuide: Record<string, string> = {
 const overview = overviewGuide[set.name] || `${set.name} gives you ${set.bonus2} at 2 pieces, ${set.bonus3} at 3 pieces, and ${set.bonus4} at 4 pieces. Build around the 4-piece bonus — that's where the real power spike lives.`;
 
 const title = `${set.name} Gear Set`;
-const description = truncateDesc(`${set.name} gear set bonuses: ${set.bonus2} (2pc), ${set.bonus3} (3pc), ${set.bonus4} (4pc). Best builds and farming guide for Division Resurgence.`);
+const description = metaDescription(set.summary, `${set.name} gear set in The Division Resurgence: 2, 3, and 4-piece bonuses, best builds, and how to farm the full set.`);
 
 const breadcrumbs = [
   { name: 'Gear Sets', url: '/database/gear-set-effects/' },
@@ -130,7 +132,7 @@ const bonuses = [
         </div>
         <div class="gearset-verified">
           <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
-          <span>Last verified for <strong>Patch 1.1.2.2</strong></span>
+          <span>Last verified for <strong>{lastVerified}</strong></span>
         </div>
       </div>
 

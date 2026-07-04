@@ -2,6 +2,8 @@
 import DatabaseLayout from '../../../layouts/DatabaseLayout.astro';
 import osProtocols from '../../../data/os-protocols.json';
 import AdSenseUnit from '../../../components/AdSenseUnit.astro';
+import { verifiedPatch } from '../../../data/site-config';
+const lastVerified = verifiedPatch('Patch 1.1.2.2'); // Bump: drop the arg ONLY after re-verifying this page's content in-game (CURRENT_PATCH is a ceiling, not an auto-bump)
 
 const slugify = (name: string) => name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
 
@@ -58,7 +60,7 @@ const faqs = [
   heading="OS Protocols"
   subheading="Your OS Protocol is the backbone of your specialization. Pick the wrong one and your entire build underperforms. No pressure."
   jsonLd={itemListLd}
-  lastVerified="Patch 1.1.2.2"
+  lastVerified={lastVerified}
   {faqs}
 >
   <!-- Guide content -->
@@ -87,7 +89,7 @@ const faqs = [
     <a href="/tier-list/os-protocols/" class="os-link-card">
       <div>
         <h3>Tier Rankings</h3>
-        <p>Every protocol ranked for Patch 1.1.2.2 with per-class best picks.</p>
+        <p>Every protocol ranked for {lastVerified} with per-class best picks.</p>
       </div>
       <span class="os-link-card__btn">View Tier List &rarr;</span>
     </a>

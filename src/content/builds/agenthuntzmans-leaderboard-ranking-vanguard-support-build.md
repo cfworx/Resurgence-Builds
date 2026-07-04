@@ -6,7 +6,7 @@ playstyle: "Support"
 pve: true
 pvp: false
 lastUpdated: 2026-05-24T11:00:00Z
-patch: "Season 2"
+patch: "Season 1 · Phase 3"
 tags: ["Recon", "vanguard", "support", "engineering", "smart-cover", "tactical-link", "scanning-pulse", "fully-charged", "team-dps"]
 description: "The Vanguard Scout build that triples your team's DPS through Smart Cover, Scanning Pulse, and Fully Charged stacking."
 author: "RapidF5 via AgentHuntzman"

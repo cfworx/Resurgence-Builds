@@ -10,6 +10,7 @@ import rehypeCallouts from './scripts/rehype-callouts.mjs';
 import rehypeAdsense from './scripts/rehype-adsense.mjs';
 import rehypeTableA11y from './scripts/rehype-table-a11y.mjs';
 import rehypeImgSize from 'rehype-img-size';
+import { getNoindexedDatabasePaths } from './src/utils/indexability.mjs';
 // Stable fallback date. Do NOT use new Date() here — it makes every URL look
 // modified on every deploy and creates noisy sitemap discovery hints.
 // Update manually only when you do a real content-wide revision.
@@ -21,6 +22,10 @@ const tagIntros = JSON.parse(
   fs.readFileSync(path.join(__dirname, 'src', 'data', 'tag-intros.json'), 'utf-8')
 );
 const INDEXED_TAGS = new Set(Object.keys(tagIntros));
+
+// Thin database item pages carry a noindex meta tag (see src/utils/indexability.mjs).
+// The sitemap must contain ONLY indexable pages, so exclude the same set here.
+const NOINDEXED_DB_PATHS = getNoindexedDatabasePaths();
 
 export default defineConfig({
   site: 'https://resurgencebuilds.com',
@@ -46,6 +51,9 @@ export default defineConfig({
           page.includes('/api/') ||
           page.includes('/cdn-cgi/') ||
           page.includes('/build-planner/') ||
+          page.includes('/builder-legacy/') ||
+          page.includes('/builder-v2/') ||
+          page.includes('/builder-v3/') ||
           page.includes('/map/') ||
           page.includes('/database/gear/')
         ) return false;
@@ -53,6 +61,10 @@ export default defineConfig({
         // For /tag/ pages, only include if the slug is in tag-intros.json
         const tagMatch = page.match(/\/tag\/([^/]+)\/?$/);
         if (tagMatch) return INDEXED_TAGS.has(tagMatch[1]);
+
+        // Exclude noindexed (thin) database item pages — sitemap must match robots meta.
+        const pathname = new URL(page).pathname;
+        if (NOINDEXED_DB_PATHS.has(pathname)) return false;
 
         return true;
       },

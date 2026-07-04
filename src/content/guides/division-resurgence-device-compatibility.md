@@ -3,7 +3,7 @@ title: "Device Compatibility - Division Resurgence 2026"
 category: "General"
 lastUpdated: 2026-05-03T12:00:00Z
 tags: ["device-compatibility", "supported-devices", "pc-requirements", "iphone", "android", "cross-play", "controller-support", "emulator"]
-description: "Official supported devices, minimum specs, PC requirements, and controller support for Division Resurgence. Updated May 2026."
+description: "Official supported devices, minimum specs, PC requirements, and controller support for Division Resurgence."
 author: "RapidF5"
 featuredImage: "/images/guides/division-resurgence-device-compatibility-guide-hero.jpg"
 imageAlt: "Division Resurgence device compatibility guide showing iPhone, Android, and PC platform support for May 2026"
@@ -213,7 +213,7 @@ We will update this page as Ubisoft expands the list or confirms more platforms.
 
 **Related Reading:**
 - [Division Resurgence Error Codes](/guides/division-resurgence-error-codes/)
-- [Division Resurgence Codes (May 2026)](/guides/division-resurgence-codes/)
+- [Division Resurgence Codes](/guides/division-resurgence-codes/)
 - [Patch 1.2.1 Notes](/patch-notes/patch-1-2-1/)
 - [Season 1-3 Roadmap](/news/season-1-2-3-roadmap/)
 

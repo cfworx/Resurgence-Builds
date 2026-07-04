@@ -3,8 +3,12 @@ import BaseLayout from '../../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../../components/Breadcrumbs.astro';
 import SectionTag from '../../../components/SectionTag.astro';
 import AdSenseUnit from '../../../components/AdSenseUnit.astro';
-import { truncateDesc } from '../../../utils/seo';
+import { truncateDesc, fixPlurals, metaDescription } from '../../../utils/seo';
 import skillMods from '../../../data/skill-mod-combos.json';
+import smcNotes from '../../../data/skill-mod-combo-notes.json';
+import { isSkillModIndexable } from '../../../utils/indexability.mjs';
+import { verifiedPatch } from '../../../data/site-config';
+const lastVerified = verifiedPatch('Patch 1.1.2.2'); // Bump: drop the arg ONLY after re-verifying this page's content in-game (CURRENT_PATCH is a ceiling, not an auto-bump)
 
 export function getStaticPaths() {
   return skillMods.map((mod: any) => ({
@@ -18,12 +22,23 @@ export function getStaticPaths() {
 const { mod } = Astro.props;
 
 const slug = mod.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+// Game data strings use raw forms like "1 enemies" / "20 second(s)" — normalize for display.
+const bonus2 = fixPlurals(mod.bonus2);
+const bonus3 = fixPlurals(mod.bonus3);
 const siteUrl = 'https://resurgencebuilds.com';
 
 const isVague = !mod.bonus3 || (mod.bonus3.length < 100 && !/\d/.test(mod.bonus3));
 
+// Per-item editorial content (usage notes, meta builds, patch history).
+// Pages WITH notes replace the shared spec blocks with unique fields and become
+// indexable once unique text clears the thin-content threshold. Pages WITHOUT
+// notes keep the generic spec copy but are noindexed. The same check drives the
+// sitemap filter via src/utils/indexability.mjs.
+const notes: any = (smcNotes as any)[slug];
+const indexable = isSkillModIndexable(mod, notes);
+
 const title = `${mod.name} — ${mod.specialization} Skill Mod`;
-const description = truncateDesc(`${mod.name} is a ${mod.specialization} Skill Mod Combo in Division Resurgence. 2pc: ${mod.bonus2}. 3pc: ${mod.bonus3.substring(0, 120)}…`);
+const description = metaDescription(notes?.usageNotes, `${mod.name} skill mod combo in The Division Resurgence: 2-piece and 3-piece bonuses, best builds, and how to farm the set.`);
 
 const breadcrumbs = [
   { name: 'Skill Mods', url: '/database/skill-mod-combos/' },
@@ -104,10 +119,23 @@ const specSynergy: Record<string, string> = {
   'Field Medic': 'Gear sets: Captain Cow (Support Station duration), Healing Elites (T2 exclusive), Jackpot (for Tactical Pharma DPS). OS Protocols: Medical Excellence (Combat Medicine cornerstone), Pressing Matter (Tactical Pharma CDR). The Defensive Measures mod combo turns your Healing Hive into an offensive weapon based on your Toughness.',
 };
 
-const faqs = [
+const faqs = notes ? [
   {
     question: `What does the ${mod.name} skill mod combo do in Division Resurgence?`,
-    answer: `${mod.name} is a ${mod.specialization} skill mod combo focused on ${targetSkill}. Equip 2 matching mods for the 2-piece bonus (${mod.bonus2}), or slot all 3 for the 3-piece: "${mod.bonus3}" — that 3-piece is where the real power is.`
+    answer: `${mod.name} is a ${mod.specialization} skill mod combo. 2-piece: ${bonus2}. 3-piece: "${bonus3}".`
+  },
+  {
+    question: `Is ${mod.name} worth farming in Division Resurgence?`,
+    answer: notes.usageNotes.split('. ').slice(0, 2).join('. ') + (notes.usageNotes.split('. ').length > 2 ? '.' : '')
+  },
+  ...(notes.metaBuilds?.length ? [{
+    question: `Which builds run ${mod.name} in Division Resurgence?`,
+    answer: `${mod.name} appears in ${notes.metaBuilds.length === 1 ? 'one' : notes.metaBuilds.length} of our published meta builds: ${notes.metaBuilds.map((b: any) => b.title).join('; ')}.`
+  }] : [])
+] : [
+  {
+    question: `What does the ${mod.name} skill mod combo do in Division Resurgence?`,
+    answer: `${mod.name} is a ${mod.specialization} skill mod combo focused on ${targetSkill}. Equip 2 matching mods for the 2-piece bonus (${bonus2}), or slot all 3 for the 3-piece: "${bonus3}" — that 3-piece is where the real power is.`
   },
   {
     question: `Which builds use ${mod.name} in Division Resurgence?`,
@@ -145,7 +173,7 @@ const relatedMods = skillMods
 const toModSlug = (name: string) => name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
 ---
 
-<BaseLayout title={title} description={description} breadcrumbs={breadcrumbs} jsonLd={modLd} faqs={faqs} noindex={isVague}>
+<BaseLayout title={title} description={description} breadcrumbs={breadcrumbs} jsonLd={modLd} faqs={faqs} noindex={!indexable}>
   <div class="container section">
     <Breadcrumbs items={breadcrumbs} />
     <SectionTag label="Skill Mod" />
@@ -162,7 +190,7 @@ const toModSlug = (name: string) => name.toLowerCase().replace(/[^a-z0-9]+/g, '-
         </div>
         <div style="display: inline-flex; align-items: center; gap: 6px; font-family: var(--font-mono); font-size: var(--text-xs); color: #6DAA45; background: rgba(109, 170, 69, 0.1); border: 1px solid rgba(109, 170, 69, 0.25); padding: 6px 14px; border-radius: 999px; margin-top: var(--sp-4); letter-spacing: 0.02em;">
           <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
-          <span>Last verified for <strong>Patch 1.1.2.2</strong></span>
+          <span>Last verified for <strong>{lastVerified}</strong></span>
         </div>
       </div>
 
@@ -171,7 +199,7 @@ const toModSlug = (name: string) => name.toLowerCase().replace(/[^a-z0-9]+/g, '-
         <h2 class="smc-section__title">Overview</h2>
         <div style="color: #c8c8d0; line-height: 1.75; font-size: var(--text-base);">
           <p><strong style="color: #fff;">{mod.name}</strong> is a <strong style="color: #fff;">{mod.specialization}</strong> Skill Mod Combo in Division Resurgence that buffs your <strong style="color: var(--accent);">{targetSkill}</strong>. Equip 2 mods from this set for a stat bump, or commit to all 3 for the real payoff — a talent-grade bonus that changes how your skill performs in combat.</p>
-          <p>{specOverview[mod.specialization] || `This mod combo is tied to the ${mod.specialization} specialization and enhances your skill builds when fully equipped.`}</p>
+          <p>{notes ? notes.usageNotes : (specOverview[mod.specialization] || `This mod combo is tied to the ${mod.specialization} specialization and enhances your skill builds when fully equipped.`)}</p>
         </div>
       </div>
 
@@ -184,8 +212,8 @@ const toModSlug = (name: string) => name.toLowerCase().replace(/[^a-z0-9]+/g, '-
             <span class="smc-bonus-badge smc-bonus-badge--2">2</span>
             <span class="smc-bonus-card__label">Piece Bonus</span>
           </div>
-          <p class="smc-bonus-card__text">{mod.bonus2}</p>
-          <p class="smc-bonus-card__note">A flat stat bump. Not exciting, but it adds up across your loadout. This kicks in just from equipping 2 mods from the {mod.name} set — no effort required.</p>
+          <p class="smc-bonus-card__text">{bonus2}</p>
+          {!notes && <p class="smc-bonus-card__note">A flat stat bump. Not exciting, but it adds up across your loadout. This kicks in just from equipping 2 mods from the {mod.name} set — no effort required.</p>}
         </div>
 
         <div class="smc-bonus-card smc-bonus-card--3pc">
@@ -193,12 +221,41 @@ const toModSlug = (name: string) => name.toLowerCase().replace(/[^a-z0-9]+/g, '-
             <span class="smc-bonus-badge smc-bonus-badge--3">3</span>
             <span class="smc-bonus-card__label">Piece Bonus</span>
           </div>
-          <p class="smc-bonus-card__text">{mod.bonus3}</p>
-          <p class="smc-bonus-card__note">This is the money shot. The 3-piece bonus is what you're farming for — it fundamentally changes how {targetSkill} interacts with your build and stacks with your gear set bonuses for multiplicative gains.</p>
+          <p class="smc-bonus-card__text">{bonus3}</p>
+          {!notes && <p class="smc-bonus-card__note">This is the money shot. The 3-piece bonus is what you're farming for — it fundamentally changes how {targetSkill} interacts with your build and stacks with your gear set bonuses for multiplicative gains.</p>}
         </div>
       </div>
 
-      <!-- 3-Piece Bonus Analysis -->
+      <!-- Meta Builds (unique per item — only for pages with editorial notes) -->
+      {notes && notes.metaBuilds?.length > 0 && (
+        <div class="smc-section">
+          <h2 class="smc-section__title">Meta Builds Running {mod.name}</h2>
+          <div class="smc-related-grid">
+            {notes.metaBuilds.map((b: any) => (
+              <a href={b.url} class="smc-related-card">
+                <strong style="color: #fff;">{b.title}</strong>
+                <span style="display: block; font-size: var(--text-sm); color: var(--ink-muted); margin-top: 2px;">Full loadout &rarr;</span>
+              </a>
+            ))}
+          </div>
+        </div>
+      )}
+
+      <!-- Patch History (unique per item) -->
+      {notes && notes.patchHistory?.length > 0 && (
+        <div class="smc-section">
+          <h2 class="smc-section__title">Patch History</h2>
+          {notes.patchHistory.map((p: any) => (
+            <div style="padding: var(--sp-4); background: rgba(0,0,0,0.25); border-left: 3px solid var(--accent); border-radius: 0 8px 8px 0; margin-bottom: var(--sp-3);">
+              <div style="font-family: var(--font-mono); font-size: var(--text-xs); color: var(--accent); margin-bottom: var(--sp-2);">{p.label} · {p.date}</div>
+              <p style="margin: 0; color: #c8c8d0; line-height: 1.7; font-size: var(--text-sm);">{p.note} {p.sourceUrl && <a href={p.sourceUrl} style="color: var(--accent);">Patch notes &rarr;</a>}</p>
+            </div>
+          ))}
+        </div>
+      )}
+
+      <!-- 3-Piece Bonus Analysis (templated copy — noindexed pages only) -->
+      {!notes && (
       <div class="smc-section">
         <h2 class="smc-section__title">3-Piece Bonus Analysis</h2>
         <div style="color: #c8c8d0; line-height: 1.75; font-size: var(--text-base);">
@@ -206,23 +263,27 @@ const toModSlug = (name: string) => name.toLowerCase().replace(/[^a-z0-9]+/g, '-
             <p>The 3-piece set bonus for {mod.name} provides a specialization-specific enhancement for {mod.specialization} builds. Equipping all three matching skill mods from this combo set unlocks the full potential of the bonus, making it worth farming targeted loot to complete the set.</p>
           ) : (
             <Fragment>
-              <p>{mod.name}'s 3-piece bonus — <em>{mod.bonus3}</em> — is where this combo set earns its slot. {mod.bonus3.toLowerCase().includes('cooldown') ? `Cooldown reduction effects like this stack with Skill Cooldown Recovery bonus attributes and gear set bonuses, creating faster skill rotations that keep your abilities cycling during sustained fights.` : mod.bonus3.toLowerCase().includes('damage') || mod.bonus3.toLowerCase().includes('critical') ? `Damage amplification effects like this stack multiplicatively with Engineering core stats and Skill Intensity bonus attributes. The higher your base skill output, the more this bonus pays off — making it a priority for endgame min-maxing.` : mod.bonus3.toLowerCase().includes('health') || mod.bonus3.toLowerCase().includes('healing') || mod.bonus3.toLowerCase().includes('repair') ? `Healing and survivability bonuses like this scale with your existing sustain stats. Pair with Toughness core stats or Received Healing bonus attributes to push the effect further in endgame group content.` : `This effect layers on top of your existing build stats and stacks with gear set bonuses and OS Protocol effects. Completing the full 3-piece set is worth the investment for any dedicated ${mod.specialization} player.`}</p>
+              <p>{mod.name}'s 3-piece bonus — <em>{bonus3}</em> — is where this combo set earns its slot. {mod.bonus3.toLowerCase().includes('cooldown') ? `Cooldown reduction effects like this stack with Skill Cooldown Recovery bonus attributes and gear set bonuses, creating faster skill rotations that keep your abilities cycling during sustained fights.` : mod.bonus3.toLowerCase().includes('damage') || mod.bonus3.toLowerCase().includes('critical') ? `Damage amplification effects like this stack multiplicatively with Engineering core stats and Skill Intensity bonus attributes. The higher your base skill output, the more this bonus pays off — making it a priority for endgame min-maxing.` : mod.bonus3.toLowerCase().includes('health') || mod.bonus3.toLowerCase().includes('healing') || mod.bonus3.toLowerCase().includes('repair') ? `Healing and survivability bonuses like this scale with your existing sustain stats. Pair with Toughness core stats or Received Healing bonus attributes to push the effect further in endgame group content.` : `This effect layers on top of your existing build stats and stacks with gear set bonuses and OS Protocol effects. Completing the full 3-piece set is worth the investment for any dedicated ${mod.specialization} player.`}</p>
               {mod.bonus3.toLowerCase().includes('cooldown') && <p>Pro tip: Talent cooldown timers on 3-piece bonuses are separate from skill cooldowns. You can reduce your skill cooldowns while the talent cooldown resets independently, giving you back-to-back procs in long engagements.</p>}
             </Fragment>
           )}
         </div>
       </div>
+      )}
 
-      <!-- Best Builds -->
+      <!-- Best Builds (shared spec copy — noindexed pages only) -->
+      {!notes && (
       <div class="smc-section">
         <h2 class="smc-section__title">Best Builds</h2>
         <div style="color: #c8c8d0; line-height: 1.75; font-size: var(--text-base);">
           <p>{specBuildGuide[mod.specialization] || `This mod combo fits into ${mod.specialization} builds that focus on ${targetSkill} performance. Match it with compatible gear sets and OS Protocols for the best results.`}</p>
-          <p>The 2-piece bonus (<strong style="color: #fff;">{mod.bonus2}</strong>) is a nice baseline stat, but the real build-defining synergy comes from the 3-piece. When you're theory-crafting, treat the 3-piece as a talent slot — if it doesn't synergize with your gear set 4-piece bonus, you're leaving damage on the table.</p>
+          <p>The 2-piece bonus (<strong style="color: #fff;">{bonus2}</strong>) is a nice baseline stat, but the real build-defining synergy comes from the 3-piece. When you're theory-crafting, treat the 3-piece as a talent slot — if it doesn't synergize with your gear set 4-piece bonus, you're leaving damage on the table.</p>
         </div>
       </div>
+      )}
 
-      <!-- Synergies -->
+      <!-- Synergies (shared spec copy — noindexed pages only) -->
+      {!notes && (
       <div class="smc-section">
         <h2 class="smc-section__title">Synergies</h2>
         <div style="color: #c8c8d0; line-height: 1.75; font-size: var(--text-base);">
@@ -230,6 +291,7 @@ const toModSlug = (name: string) => name.toLowerCase().replace(/[^a-z0-9]+/g, '-
           <p>Remember: skill mod combo bonuses are a separate layer from gear sets and OS Protocols. They all stack. That's how you go from "decent" to "everything dies before the animation finishes."</p>
         </div>
       </div>
+      )}
 
       <!-- Related Mods -->
       {relatedMods.length > 0 && (
@@ -239,7 +301,7 @@ const toModSlug = (name: string) => name.toLowerCase().replace(/[^a-z0-9]+/g, '-
             {relatedMods.map((related: any) => (
               <a href={`/database/skill-mod-combos/${toModSlug(related.name)}/`} class="smc-related-card">
                 <strong style="color: #fff;">{related.name}</strong>
-                <span style="display: block; font-size: var(--text-sm); color: var(--ink-muted); margin-top: 2px;">2pc: {related.bonus2}</span>
+                <span style="display: block; font-size: var(--text-sm); color: var(--ink-muted); margin-top: 2px;">2pc: {fixPlurals(related.bonus2)}</span>
               </a>
             ))}
           </div>
@@ -255,7 +317,7 @@ const toModSlug = (name: string) => name.toLowerCase().replace(/[^a-z0-9]+/g, '-
       </div>
     </div>
 
-    {!isVague && <AdSenseUnit label="Advertisement — database item" />}
+    {indexable && <AdSenseUnit label="Advertisement — database item" />}
   </div>
 </BaseLayout>
 

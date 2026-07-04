@@ -46,7 +46,7 @@ faqs:
 
 The first time Nadie shared a build with us, it was the [Involuntary Nap Time](/builds/involuntary-nap-time-bulwark-juggernaut-build/) Bulwark Juggernaut that immortal-stunned everything in PvP. Now he is back with the build he hinted at in that post: a Combat Medicine Field Medic he calls **The Muscular Nurse**, a tank-healer hybrid that runs the same [Pummeling Shield](/database/os-protocols/pummeling-shield/) OS Protocol but trades the Bulwark frame for a healing-focused playstyle that brutalizes Elite Missions.
 
-This is a **24,410 Power Score** build sitting at **334,193 Health, 15,760 Armor, and 20.01% base Damage Reduction** before any talent procs fire. The 4pc [Healing Elites](/database/gear-set-effects/healing-elites/) gives Received Healing, Release Extra Protection, and Armor stacking. The 2pc [Self-Propelled Shield](/database/gear-set-effects/self-propelled-shield/) adds flat Armor. The Pummeling Shield OS Protocol stuns anything you can keep hitting while you have Extra Health. [Hypervigilant](/database/body-armor-talents/hypervigilant/) on the body armor stacks Damage Reduction every time healing ticks. [Rock Solid](/database/backpack-talents/rock-solid/) on the backpack adds another DR layer every time you receive healing. The core loop is: throw a healing station, stand in it, hold the trigger, stun everything that gets close, and never die.
+This is a **24,410 Power Score** build sitting at **334,193 Health, 15,760 Armor, and 20.01% base Damage Reduction** before any talent procs fire. The 4pc [Healing Elites](/database/gear-set-effects/healing-elites/) gives Received Healing, Release Extra Protection, and Armor stacking. The 2pc [Self-Propelled Shield](/database/gear-set-effects/self-propelled-shield/) adds flat Armor. The Pummeling Shield OS Protocol stuns anything you can keep hitting while you have Extra Health. [Hypervigilant](/database/body-armor-talents/#hypervigilant) on the body armor stacks Damage Reduction every time healing ticks. [Rock Solid](/database/backpack-talents/#rock-solid) on the backpack adds another DR layer every time you receive healing. The core loop is: throw a healing station, stand in it, hold the trigger, stun everything that gets close, and never die.
 
 Nadie's pitch is one of the best build descriptions we have ever received:
 
@@ -80,7 +80,7 @@ Nadie's pitch is one of the best build descriptions we have ever received:
 | Received Healing | 59.93% |
 | Movement Speed | 4.00% |
 
-That **20.01% base Damage Reduction** is the floor. Once [Hypervigilant](/database/body-armor-talents/hypervigilant/) II (+7% DR per heal tick, 3 stacks = +21%), [Rock Solid](/database/backpack-talents/rock-solid/) II (+20% DR on receiving healing), and [Steady Suppression](/database/weapon-talents/steady-suppression/) (+18% DR while firing) start layering, the effective DR in an Elite Mission boss room is absurd. The **59.93% Received Healing** is the secret that keeps the Pummeling Shield full-health proc and Rock Solid II cycling consistently — every heal hits 60% harder.
+That **20.01% base Damage Reduction** is the floor. Once [Hypervigilant](/database/body-armor-talents/#hypervigilant) II (+7% DR per heal tick, 3 stacks = +21%), [Rock Solid](/database/backpack-talents/#rock-solid) II (+20% DR on receiving healing), and [Steady Suppression](/database/weapon-talents/steady-suppression/) (+18% DR while firing) start layering, the effective DR in an Elite Mission boss room is absurd. The **59.93% Received Healing** is the secret that keeps the Pummeling Shield full-health proc and Rock Solid II cycling consistently — every heal hits 60% harder.
 
 ---
 
@@ -111,8 +111,8 @@ Clean Armor without committing four slots to a second set.
 | Slot | Piece | Combo Set | Attribute 1 | Attribute 2 | Talent |
 |---|---|---|---|---|---|
 | Mask | Healing Elites | Healing Elites | Damage Reduction | Armor | — |
-| Body Armor | "Big Drum" (T2) | Self-Propelled Shield | Received Healing | Skill CDR | **[Hypervigilant](/database/body-armor-talents/hypervigilant/) II** |
-| Backpack | Healing Roamer Pack "Sow" (T2) | Healing Elites | Skill Crit Chance | Damage Reduction | **[Rock Solid](/database/backpack-talents/rock-solid/) II** |
+| Body Armor | "Big Drum" (T2) | Self-Propelled Shield | Received Healing | Skill CDR | **[Hypervigilant](/database/body-armor-talents/#hypervigilant) II** |
+| Backpack | Healing Roamer Pack "Sow" (T2) | Healing Elites | Skill Crit Chance | Damage Reduction | **[Rock Solid](/database/backpack-talents/#rock-solid) II** |
 | Gloves | Healing Elites | Healing Elites | Max Health | Damage Reduction | — |
 | Holster | Healing Elites | Healing Elites | Damage Reduction | Received Healing | — |
 | Knee Pads | Self-Propelled Shield | Self-Propelled Shield | Armor | Skill Crit Chance | — |
@@ -121,13 +121,13 @@ Clean Armor without committing four slots to a second set.
 
 *Healing grants +7% Damage Reduction for 3 seconds, up to 3 stacks.*
 
-Base [Hypervigilant](/database/body-armor-talents/hypervigilant/) grants +5% DR per stack. The II variant bumps it to +7%. At 3 stacks that is +21% Damage Reduction any time your healing station ticks — which is constantly, because you are standing in it.
+Base [Hypervigilant](/database/body-armor-talents/#hypervigilant) grants +5% DR per stack. The II variant bumps it to +7%. At 3 stacks that is +21% Damage Reduction any time your healing station ticks — which is constantly, because you are standing in it.
 
 ### Backpack Talent: Rock Solid II
 
 *Receiving Healing grants +20% Damage Reduction for 3 seconds.*
 
-Base [Rock Solid](/database/backpack-talents/rock-solid/) is +15% DR per heal proc. The II variant is +20%. Every time your healing station tops you off, you get a 3-second +20% DR window. Stack it with Hypervigilant II and you have **two separate heal-triggered DR procs running simultaneously**. This is the load-bearing piece of the entire build.
+Base [Rock Solid](/database/backpack-talents/#rock-solid) is +15% DR per heal proc. The II variant is +20%. Every time your healing station tops you off, you get a 3-second +20% DR window. Stack it with Hypervigilant II and you have **two separate heal-triggered DR procs running simultaneously**. This is the load-bearing piece of the entire build.
 
 ---
 

@@ -309,7 +309,14 @@
     }
     document.querySelectorAll('.filter-count').forEach(el => {
       const catId = el.dataset.countFor;
-      el.textContent = counts[catId] || '0';
+      const count = counts[catId] || 0;
+      if (count > 0) {
+        el.textContent = String(count);
+        el.hidden = false;
+      } else {
+        el.textContent = '';
+        el.hidden = true;
+      }
     });
   }
 

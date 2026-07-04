@@ -1,7 +1,10 @@
 ---
 import DatabaseLayout from '../../../layouts/DatabaseLayout.astro';
 import backpackTalents from '../../../data/backpack-talents.json';
+import TalentIndex from '../../../components/TalentIndex.astro';
 import AdSenseUnit from '../../../components/AdSenseUnit.astro';
+import { verifiedPatch } from '../../../data/site-config';
+const lastVerified = verifiedPatch('Patch 1.1.2.2'); // Bump: drop the arg ONLY after re-verifying this page's content in-game (CURRENT_PATCH is a ceiling, not an auto-bump)
 
 const title = "Division Resurgence Backpack Talents & Best Builds";
 const description = "Every Backpack Talent in Division Resurgence. The good, the bad, and the ones that make you wonder if anyone playtested them.";
@@ -15,6 +18,9 @@ const faqs = [
   { question: "Can you reroll backpack talents in Division Resurgence?", answer: "Yes. You can recalibrate one attribute or talent per gear piece at the Recalibration Station. If your backpack dropped with a garbage talent but great stats, you can swap the talent out. Just remember — you can only recalibrate one slot per item, so pick wisely." },
 ];
 
+const toSlug = (name: string) => name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+const siteUrl = 'https://resurgencebuilds.com';
+
 const itemListLd = {
   '@context': 'https://schema.org',
   '@type': 'ItemList',
@@ -24,13 +30,13 @@ const itemListLd = {
   itemListElement: backpackTalents.map((item: any, i: number) => ({
     '@type': 'ListItem',
     position: i + 1,
-    url: `${Astro.url.origin}/database/backpack-talents/${item.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')}/`,
+    url: `${siteUrl}/database/backpack-talents/#${toSlug(item.name)}`,
     item: {
       '@type': 'Thing',
-      '@id': `${Astro.url.href}#item-${i}`,
-      name: item.name || item.talent || item.attribute || item.protocolName || 'Item',
-      description: item.description || item.talentDescription || item.effect || item.notes || `Details for ${item.name || item.talent || item.attribute || item.protocolName || 'item'}`,
-      url: `${Astro.url.origin}/database/backpack-talents/${item.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')}/`,
+      '@id': `${siteUrl}/database/backpack-talents/#${toSlug(item.name)}`,
+      name: item.name,
+      description: item.description,
+      url: `${siteUrl}/database/backpack-talents/#${toSlug(item.name)}`,
       subjectOf: { '@id': 'https://resurgencebuilds.com/#division-resurgence' }
     }
   })),
@@ -42,37 +48,20 @@ const itemListLd = {
   {description}
   {breadcrumbs}
   heading="Backpack Talents"
-  subheading="Every backpack talent in the game. Most of them are mid. A few of them will change your life. We've sorted them so you don't have to."
+  subheading="Every backpack talent in the game on one page — full effects, roles, and anchors you can link straight to. Most of them are mid. A few of them will change your life."
   jsonLd={itemListLd}
-  lastVerified="Patch 1.1.2.2"
+  lastVerified={lastVerified}
   {faqs}
 >
-  <div class="db-grid" id="talents-grid">
-    {backpackTalents.map((talent) => {
-      const slug = talent.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
-      return (
-        <a href={`/database/backpack-talents/${slug}/`} class="db-card-link" style="text-decoration: none; color: inherit;">
-          <article class="db-card">
-            <div class="db-card__header">
-              <div>
-                <h2 class="db-card__title">{talent.name}</h2>
-              </div>
-            </div>
-            
-            <div class="db-card__body">
-              <div class="talent-desc">
-                <p>{talent.description}</p>
-              </div>
-              
-              <div class="source-section">
-                <span class="source-label">Source Backpack</span>
-                <p class="source-text">Rolls on T2 backpacks — equip via Build Planner</p>
-              </div>
-            </div>
-          </article>
-        </a>
-      );
-    })}
+  <div style="color: #c8c8d0; line-height: 1.75; font-size: var(--text-base); margin-bottom: var(--sp-6); max-width: 72ch;">
+    <p>Backpack talents roll on Tier 2 backpacks and are always active once equipped — no activation, no cooldown management. Your backpack talent stacks with your Body Armor talent, your weapon talents, and your gear set bonuses, so the right pick multiplies everything else your build is doing. If a drop comes with great stats but a dud talent, the Recalibration Station lets you swap the talent slot (one recalibration per piece).</p>
   </div>
+
+  <TalentIndex
+    talents={backpackTalents}
+    slot="backpack"
+    basePath="/database/backpack-talents/"
+  />
+
 <AdSenseUnit label="Advertisement — database category" />
 </DatabaseLayout>

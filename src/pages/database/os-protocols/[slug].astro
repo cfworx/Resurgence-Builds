@@ -3,8 +3,10 @@ import BaseLayout from '../../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../../components/Breadcrumbs.astro';
 import SectionTag from '../../../components/SectionTag.astro';
 import AdSenseUnit from '../../../components/AdSenseUnit.astro';
-import { truncateDesc } from '../../../utils/seo';
+import { truncateDesc, metaDescription } from '../../../utils/seo';
 import osProtocols from '../../../data/os-protocols.json';
+import { verifiedPatch } from '../../../data/site-config';
+const lastVerified = verifiedPatch('Patch 1.1.2.2'); // Bump: drop the arg ONLY after re-verifying this page's content in-game (CURRENT_PATCH is a ceiling, not an auto-bump)
 
 export function getStaticPaths() {
   return osProtocols.map((protocol: any) => ({
@@ -16,7 +18,7 @@ export function getStaticPaths() {
 const { protocol } = Astro.props;
 
 const title = `${protocol.name} OS Protocol`;
-const description = truncateDesc(`${protocol.name}: ${protocol.rarity} ${protocol.specialization} OS Protocol. ${protocol.mainStat} ${protocol.mainValue}. Talent and stats breakdown.`);
+const description = metaDescription(protocol.summary, `${protocol.name} OS Protocol in The Division Resurgence: stats, talent breakdown, and which builds run it.`);
 
 const breadcrumbs = [
   { name: 'OS Protocols', url: '/database/os-protocols/' },
@@ -98,7 +100,7 @@ const ogImage = protocol.image ? `${siteUrl}${protocol.image}` : undefined;
 
         <div style="display: inline-flex; align-items: center; gap: 6px; font-family: var(--font-mono); font-size: var(--text-xs); color: #6DAA45; background: rgba(109, 170, 69, 0.1); border: 1px solid rgba(109, 170, 69, 0.25); padding: 6px 14px; border-radius: 999px; margin-top: var(--sp-4); letter-spacing: 0.02em;">
           <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
-          <span>Last verified for <strong>Patch 1.1.2.2</strong></span>
+          <span>Last verified for <strong>{lastVerified}</strong></span>
         </div>
       </div>
 

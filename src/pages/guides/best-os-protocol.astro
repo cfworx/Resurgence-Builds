@@ -2,9 +2,11 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import SectionTag from '../../components/SectionTag.astro';
+import { verifiedPatch } from '../../data/site-config';
+const lastVerified = verifiedPatch('Patch 1.1.2.2'); // Bump: drop the arg ONLY after re-verifying this page's content in-game (CURRENT_PATCH is a ceiling, not an auto-bump)
 
 const title = "Best OS Protocol Per Class — Build Guide";
-const description = "Find the best OS Protocol for every class in Division Resurgence. Per-class primary and backup recommendations for Vanguard, Field Medic, Bulwark, Demolitionist, and Tech Operator at Patch 1.1.2.2.";
+const description = `Find the best OS Protocol for every class in Division Resurgence. Per-class primary and backup recommendations for Vanguard, Field Medic, Bulwark, Demolitionist, and Tech Operator at ${lastVerified}.`;
 
 const breadcrumbs = [
   { name: 'Guides', url: '/guides/' },
@@ -95,7 +97,7 @@ const classes = [
 ];
 
 const faqs = [
-  { question: "What is the best OS Protocol in Division Resurgence?", answer: "The strongest build-defining protocols are Explosive Charge (Engineering), Explosive Round (Firepower), and Pummeling Shield (Toughness). These three anchor the highest-performing builds in each specialization at Patch 1.1.2.2." },
+  { question: "What is the best OS Protocol in Division Resurgence?", answer: `The strongest build-defining protocols are Explosive Charge (Engineering), Explosive Round (Firepower), and Pummeling Shield (Toughness). These three anchor the highest-performing builds in each specialization at ${lastVerified}.` },
   { question: "How do OS Protocols work in Division Resurgence?", answer: "OS Protocols are unique gear-talent items that slot into your Operating System loadout. Each provides a main stat, three sub-stats, and a unique Talent that triggers under specific combat conditions. You can swap them freely at any safe house." },
   { question: "Can you change OS Protocols mid-mission?", answer: "No. OS Protocols can only be swapped outside of combat, at a Base of Operations, safe house, or any non-combat area. Plan your protocol for the encounter you're about to enter." },
   { question: "What is the best OS Protocol for Vanguard?", answer: "Strategic Assistance (Engineering, High-End). The assist-based Signature Ability Charge Efficiency and Skill Cooldown reduction directly amplify the class's reliance on Tactical Link and Scanning Pulse uptime." },
@@ -112,12 +114,12 @@ const faqs = [
     <SectionTag label="Guide" />
     <h1 class="heading-accent">Best OS Protocol Per Class</h1>
     <p style="color:var(--ink-muted);margin-bottom:var(--sp-3); max-width: 800px;">
-      The right OS Protocol turns a good build into a great one. Here's the best primary and backup protocol for every class in Division Resurgence, verified for Patch 1.1.2.2.
+      The right OS Protocol turns a good build into a great one. Here's the best primary and backup protocol for every class in Division Resurgence, verified for {lastVerified}.
     </p>
 
     <div style="display: inline-flex; align-items: center; gap: 6px; font-family: var(--font-mono); font-size: var(--text-xs); color: #6DAA45; background: rgba(109, 170, 69, 0.1); border: 1px solid rgba(109, 170, 69, 0.25); padding: 6px 14px; border-radius: 999px; margin-bottom: var(--sp-8); letter-spacing: 0.02em;">
       <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
-      <span>Last verified for <strong>Patch 1.1.2.2</strong></span>
+      <span>Last verified for <strong>{lastVerified}</strong></span>
     </div>
 
     <!-- Class Sections -->

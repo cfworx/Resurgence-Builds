@@ -19,6 +19,8 @@ export interface Props {
   jsonLd?: Record<string, unknown> | Record<string, unknown>[];
   faqs?: { question: string; answer: string }[];
   noindex?: boolean;
+  /** Override robots directive, e.g. "noindex, follow". Implies noindex behavior. */
+  robots?: string;
 }
 
 const {
@@ -33,6 +35,7 @@ const {
   jsonLd,
   faqs = [],
   noindex = false,
+  robots,
 } = Astro.props;
 
 const siteName = 'Resurgence Builds';
@@ -253,7 +256,7 @@ const finalJsonLd = {
 <link rel="canonical" href={canonicalURL} />
 <link rel="alternate" hreflang="en" href={canonicalURL} />
 <link rel="alternate" hreflang="x-default" href={canonicalURL} />
-{noindex && <meta name="robots" content="noindex, nofollow" />}
+{(noindex || robots) && <meta name="robots" content={robots || 'noindex, nofollow'} />}
 
 <!-- Open Graph -->
 <meta property="og:type" content={ogType} />

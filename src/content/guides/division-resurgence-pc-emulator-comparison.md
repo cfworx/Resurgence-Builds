@@ -238,7 +238,7 @@ If you have already tried an emulator and it crashed, here is what usually fixes
 **Related Reading:**
 - [Division Resurgence Device Compatibility](/guides/division-resurgence-device-compatibility/)
 - [Division Resurgence Error Codes](/guides/division-resurgence-error-codes/)
-- [Division Resurgence Codes (May 2026)](/guides/division-resurgence-codes/)
+- [Division Resurgence Codes](/guides/division-resurgence-codes/)
 - [Division Resurgence Safe Codes Master List](/guides/division-resurgence-safe-codes/)
 - [Patch 1.2.1 Notes](/patch-notes/patch-1-2-1/)
 - [Season 1-3 Roadmap](/news/season-1-2-3-roadmap/)

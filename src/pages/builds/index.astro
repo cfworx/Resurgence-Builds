@@ -4,6 +4,7 @@ import BuildCard from '../../components/BuildCard.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import SectionTag from '../../components/SectionTag.astro';
 import { getCollection } from 'astro:content';
+import { CURRENT_PATCH_PLAIN } from '../../data/site-config';
 
 const allBuilds = await getCollection('builds');
 const sorted = allBuilds.sort((a, b) => b.data.lastUpdated.getTime() - a.data.lastUpdated.getTime());
@@ -27,17 +28,17 @@ const itemListLd = {
 ---
 
 <BaseLayout
-  title="Division Resurgence Builds & Tier List"
-  description="Browse every Division Resurgence build guide, filtered by specialization and playstyle. Updated every patch with the latest PvE and PvP meta loadouts."
+  title={`Division Resurgence Builds — Every Meta Build (${CURRENT_PATCH_PLAIN})`}
+  description="Division Resurgence builds for every specialization — PvE and PvP meta loadouts with gear sets, talents, and OS Protocols, updated every patch."
   breadcrumbs={breadcrumbItems}
   jsonLd={itemListLd}
 >
   <div class="container section">
     <Breadcrumbs items={breadcrumbItems} />
     <SectionTag label="Builds" />
-    <h1 class="heading-accent">All Builds</h1>
+    <h1 class="heading-accent">Division Resurgence Builds</h1>
     <p style="color:var(--ink-muted);margin-bottom:var(--sp-6);">
-      Every build we've tested and haven't been embarrassed to publish. Updated every patch with the latest meta shifts and balance changes.
+      All the Division Resurgence builds we've tested and haven't been embarrassed to publish. Updated every patch with the latest meta shifts and balance changes.
     </p>
 
     <div class="filter-bar" id="build-filters">

@@ -11,6 +11,8 @@ import osProtocols from '../data/os-protocols.json';
 import skillModCombos from '../data/skill-mod-combos.json';
 import bonusAttributes from '../data/bonus-attributes.json';
 import { getCollection } from 'astro:content';
+import { verifiedPatch } from '../data/site-config';
+const lastVerified = verifiedPatch('Patch 1.1.2.2'); // Bump: drop the arg ONLY after re-verifying this page's content in-game (CURRENT_PATCH is a ceiling, not an auto-bump)
 
 const allBuilds = await getCollection('builds');
 const templates = allBuilds
@@ -65,10 +67,11 @@ const dataPayload = JSON.stringify({ gearSets, weaponTalents, exoticWeapons, sta
   title="SHD Build Lab"
   description={description}
   breadcrumbs={breadcrumbs}
-  faqs={genuineFaqs}
   jsonLd={jsonLd}
   ogImage="/images/build-planner-og.png"
   keywords={["division resurgence build planner","division resurgence builder","division resurgence loadout tool","resurgence build maker"]}
+  robots="noindex, follow"
+  canonical="https://resurgencebuilds.com/builder/"
 >
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -83,7 +86,7 @@ const dataPayload = JSON.stringify({ gearSets, weaponTalents, exoticWeapons, sta
     <p class="builder-hero__sub shd-hero__sub">DIVISION RESURGENCE // TACTICAL LOADOUT TERMINAL</p>
     <div class="shd-verified-badge">
       <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
-      <span>Last verified for <strong>Patch 1.1.2.2</strong></span>
+      <span>Last verified for <strong>{lastVerified}</strong></span>
     </div>
   </div>
 </section>
@@ -386,20 +389,7 @@ const dataPayload = JSON.stringify({ gearSets, weaponTalents, exoticWeapons, sta
 
 <section class="builder-about container">
   <div class="builder-about__content">
-    <h2>SHD Build Lab — How It Works</h2>
-    <p>Select a specialization, configure your gear sets and weapon talents, assign bonus attributes, and choose your OS protocol and skill mods. The analysis engine cross-references your selections in real-time — detecting active set bonuses, flagging stat synergies, and warning about conflicts or inefficiencies. Every piece of data is verified against the live game client. Share your completed loadout with a single compressed URL.</p>
-
-    <h2>Frequently Asked Questions</h2>
-    <div class="faq-list">
-      {faqs.map(faq => (
-        <details class="faq-item">
-          <summary class="faq-question">{faq.question}</summary>
-          <p class="faq-answer">{faq.answer}</p>
-        </details>
-      ))}
-    </div>
-
-    <p class="builder-about__cta">Looking for pre-built loadouts? Browse our <a href="/builds/">verified build guides</a> with full gear breakdowns and gameplay analysis, or explore the <a href="/database/gear-set-effects/">gear set database</a> for detailed bonus data.</p>
+    <p class="builder-about__cta">This is a previous version of the planner. The current <a href="/builder/">SHD Build Lab</a> has the latest data, build templates, and shareable build cards — or browse our <a href="/builds/">verified build guides</a> with full gear breakdowns.</p>
   </div>
 </section>
 

@@ -184,7 +184,7 @@ For full details on each of these, see the [Division Resurgence Error Codes guid
 
 - [Full Division Resurgence Error Codes Guide](/guides/division-resurgence-error-codes/)
 - [Patch 1.1.2.2 Notes](/patch-notes/patch-1-1-2-2/)
-- [Division Resurgence Codes (May 2026)](/guides/division-resurgence-codes/)
+- [Division Resurgence Codes](/guides/division-resurgence-codes/)
 
 **Sources:**
 

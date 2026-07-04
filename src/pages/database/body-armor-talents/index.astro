@@ -1,7 +1,10 @@
 ---
 import DatabaseLayout from '../../../layouts/DatabaseLayout.astro';
 import armorTalents from '../../../data/body-armor-talents.json';
+import TalentIndex from '../../../components/TalentIndex.astro';
 import AdSenseUnit from '../../../components/AdSenseUnit.astro';
+import { verifiedPatch } from '../../../data/site-config';
+const lastVerified = verifiedPatch('Patch 1.1.2.2'); // Bump: drop the arg ONLY after re-verifying this page's content in-game (CURRENT_PATCH is a ceiling, not an auto-bump)
 
 const title = "Division Resurgence Body Armor Talents & Best Builds";
 const description = "Every Body Armor (Body Armor) Talent in Division Resurgence. Pick the right one and you're unkillable. Pick the wrong one and you're a loot donation.";
@@ -15,6 +18,9 @@ const faqs = [
   { question: "What is the difference between backpack and body armor talents?", answer: "Backpack talents and body armor talents occupy separate gear slots and stack with each other. They’re different talent pools — you won’t find the same talent on both. Your Body Armor talent usually has a bigger impact on your build's identity, while backpack talents tend to provide sustain or utility bonuses. You want both working together." },
 ];
 
+const toSlug = (name: string) => name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+const siteUrl = 'https://resurgencebuilds.com';
+
 const itemListLd = {
   '@context': 'https://schema.org',
   '@type': 'ItemList',
@@ -24,21 +30,17 @@ const itemListLd = {
   itemListElement: armorTalents.map((item: any, i: number) => ({
     '@type': 'ListItem',
     position: i + 1,
-    url: `${Astro.url.origin}/database/body-armor-talents/${toSlug(item.name)}/`,
+    url: `${siteUrl}/database/body-armor-talents/#${toSlug(item.name)}`,
     item: {
       '@type': 'Thing',
-      '@id': `${Astro.url.href}#item-${i}`,
-      name: item.name || item.talent || item.attribute || item.protocolName || 'Item',
-      description: item.description || item.talentDescription || item.effect || item.notes || `Details for ${item.name || item.talent || item.attribute || item.protocolName || 'item'}`,
-      url: `${Astro.url.origin}/database/body-armor-talents/${toSlug(item.name)}/`,
+      '@id': `${siteUrl}/database/body-armor-talents/#${toSlug(item.name)}`,
+      name: item.name,
+      description: item.description,
+      url: `${siteUrl}/database/body-armor-talents/#${toSlug(item.name)}`,
       subjectOf: { '@id': 'https://resurgencebuilds.com/#division-resurgence' }
     }
   })),
 };
-
-function toSlug(name: string) {
-  return name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
-}
 ---
 
 <DatabaseLayout
@@ -46,34 +48,20 @@ function toSlug(name: string) {
   {description}
   {breadcrumbs}
   heading="Body Armor Talents"
-  subheading="The talent on your Body Armor piece is the most important decision you'll make in this game. Choose poorly and you're a walking loot piñata for Dark Zone rogues."
+  subheading="Every Body Armor talent on one page — full effects, roles, and direct anchors. The talent on your Body Armor piece is the most important decision you'll make in this game."
   jsonLd={itemListLd}
-  lastVerified="Patch 1.1.2.2"
+  lastVerified={lastVerified}
   {faqs}
 >
-  <div class="db-grid" id="talents-grid">
-    {armorTalents.map((talent) => (
-      <a href={`/database/body-armor-talents/${toSlug(talent.name)}/`} class="db-card-link" style="text-decoration: none; color: inherit;">
-        <article class="db-card">
-          <div class="db-card__header">
-            <div>
-              <h2 class="db-card__title">{talent.name}</h2>
-            </div>
-          </div>
-          
-          <div class="db-card__body">
-            <div class="talent-desc">
-              <p>{talent.description}</p>
-            </div>
-            
-            <div class="source-section">
-              <span class="source-label">Source Armor</span>
-              <p class="source-text">Rolls on T2 Body Armor pieces — equip via Build Planner</p>
-            </div>
-          </div>
-        </article>
-      </a>
-    ))}
+  <div style="color: #c8c8d0; line-height: 1.75; font-size: var(--text-base); margin-bottom: var(--sp-6); max-width: 72ch;">
+    <p>Body Armor is one of only two gear slots that carries a talent (the backpack is the other), and it's the one that defines your build's identity. These talents are always active once equipped and stack with your backpack talent, weapon talents, and gear set bonuses. A bad roll isn't the end — the Recalibration Station lets you swap the talent slot on a piece with otherwise great stats (one recalibration per piece).</p>
   </div>
+
+  <TalentIndex
+    talents={armorTalents}
+    slot="body armor"
+    basePath="/database/body-armor-talents/"
+  />
+
 <AdSenseUnit label="Advertisement — database category" />
 </DatabaseLayout>

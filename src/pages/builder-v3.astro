@@ -10,6 +10,8 @@ import osProtocols from '../data/os-protocols.json';
 import skillModCombos from '../data/skill-mod-combos.json';
 import bonusAttributes from '../data/bonus-attributes.json';
 import { getCollection } from 'astro:content';
+import { verifiedPatch } from '../data/site-config';
+const lastVerified = verifiedPatch('Patch 1.1.2.2'); // Bump: drop the arg ONLY after re-verifying this page's content in-game (CURRENT_PATCH is a ceiling, not an auto-bump)
 
 const allBuilds = await getCollection('builds');
 const templates = allBuilds
@@ -58,6 +60,8 @@ const smcCount = skillModCombos.length;
   breadcrumbs={breadcrumbs}
   jsonLd={jsonLd}
   noAds={true}
+  robots="noindex, follow"
+  canonical="https://resurgencebuilds.com/builder/"
 >
   <Fragment slot="head">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -95,7 +99,7 @@ const smcCount = skillModCombos.length;
       <h1 class="hero__title">SHD <em>BUILD LAB</em></h1>
       <p class="hero__sub">DIVISION RESURGENCE — TACTICAL LOADOUT TERMINAL</p>
       <div class="hero__meta">
-        <span class="chip chip--ok"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> Verified · Patch 1.1.2.2</span>
+        <span class="chip chip--ok"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> Verified · {lastVerified}</span>
       </div>
     </div>
   </section>

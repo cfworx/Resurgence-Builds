@@ -3,8 +3,12 @@ import BaseLayout from '../../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../../components/Breadcrumbs.astro';
 import SectionTag from '../../../components/SectionTag.astro';
 import AdSenseUnit from '../../../components/AdSenseUnit.astro';
-import { truncateDesc } from '../../../utils/seo';
+import { truncateDesc, metaDescription } from '../../../utils/seo';
 import weaponTalents from '../../../data/weapon-talents.json';
+import wtNotes from '../../../data/weapon-talent-notes.json';
+import { isWeaponTalentIndexable } from '../../../utils/indexability.mjs';
+import { verifiedPatch } from '../../../data/site-config';
+const lastVerified = verifiedPatch('Patch 1.1.2.2'); // Bump: drop the arg ONLY after re-verifying this page's content in-game (CURRENT_PATCH is a ceiling, not an auto-bump)
 
 export function getStaticPaths() {
   return weaponTalents.map((talent: any) => ({
@@ -92,15 +96,32 @@ function getBuildArchetype(description: string): { primary: string; label: strin
 
 const archetype = getBuildArchetype(talent.description);
 
+// Per-item editorial content (usage notes, meta builds, patch history).
+// Pages WITH notes replace the shared archetype blocks with unique fields and
+// become indexable once unique text clears the thin-content threshold.
+// Pages WITHOUT notes keep the generic archetype copy but are noindexed.
+// The same check drives the sitemap filter via src/utils/indexability.mjs.
+const notes: any = (wtNotes as any)[slug];
+const indexable = isWeaponTalentIndexable(talent, notes);
+
 const title = `${talent.name} — Weapon Talent`;
-const description = truncateDesc(`${talent.name} weapon talent in Division Resurgence: ${talent.description.substring(0, 120)}${talent.description.length > 120 ? '...' : ''} Full breakdown, best builds, and how to use it.`);
+const description = metaDescription(notes?.usageNotes, `${talent.name} weapon talent in The Division Resurgence: what it does, which builds run it, and how to get it.`);
 
 const breadcrumbs = [
   { name: 'Weapon Talents', url: '/database/weapon-talents/' },
   { name: talent.name, url: '#' }
 ];
 
-const faqs = [
+const faqs = notes ? [
+  {
+    question: `Is ${talent.name} a good weapon talent in Division Resurgence?`,
+    answer: notes.usageNotes.split('. ').slice(0, 2).join('. ') + (notes.usageNotes.split('. ').length > 2 ? '.' : '')
+  },
+  ...(notes.metaBuilds?.length ? [{
+    question: `Which builds run ${talent.name} in Division Resurgence?`,
+    answer: `${talent.name} appears in ${notes.metaBuilds.length === 1 ? 'one' : notes.metaBuilds.length} of our published meta builds: ${notes.metaBuilds.map((b: any) => b.title).join('; ')}.`
+  }] : [])
+] : [
   {
     question: `Is ${talent.name} a good weapon talent in Division Resurgence?`,
     answer: `${talent.name} is a ${archetype.label} talent. ${archetype.prose.split('.')[0]}. How good it is depends entirely on your build — if you're running a ${archetype.primary === 'dps' || archetype.primary === 'dps-crit' ? 'Firepower' : archetype.primary === 'engineering' ? 'Engineering' : archetype.primary === 'tank' ? 'Toughness' : archetype.primary === 'support' ? 'healer' : 'balanced'}-focused setup, it pulls its weight. On the wrong build, it's wasted potential.`
@@ -134,7 +155,7 @@ const talentLd = {
 };
 ---
 
-<BaseLayout title={title} description={description} breadcrumbs={breadcrumbs} jsonLd={talentLd} faqs={faqs}>
+<BaseLayout title={title} description={description} breadcrumbs={breadcrumbs} jsonLd={talentLd} faqs={faqs} noindex={!indexable}>
   <div class="container section">
     <Breadcrumbs items={breadcrumbs} />
     <SectionTag label="Weapon Talent" />
@@ -149,7 +170,7 @@ const talentLd = {
         </div>
         <div style="display: inline-flex; align-items: center; gap: 6px; font-family: var(--font-mono); font-size: var(--text-xs); color: #6DAA45; background: rgba(109, 170, 69, 0.1); border: 1px solid rgba(109, 170, 69, 0.25); padding: 6px 14px; border-radius: 999px; margin-top: var(--sp-4); letter-spacing: 0.02em;">
           <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
-          <span>Last verified for <strong>Patch 1.1.2.2</strong></span>
+          <span>Last verified for <strong>{lastVerified}</strong></span>
         </div>
       </div>
 
@@ -157,7 +178,7 @@ const talentLd = {
       <div style="margin-bottom: var(--sp-8);">
         <h2 style="font-family: var(--font-heading); font-size: var(--text-lg); font-weight: 800; color: #fff; margin: 0 0 var(--sp-4) 0; padding-bottom: var(--sp-2); border-bottom: 1px solid rgba(255,255,255,0.08);">Overview</h2>
         <p style="color: #c8c8d0; line-height: 1.75; font-size: var(--text-base);">
-          <strong>{talent.name}</strong> is a weapon talent in The Division Resurgence classified as a <strong>{archetype.label}</strong> talent. {archetype.prose}
+          <strong>{talent.name}</strong> is a weapon talent in The Division Resurgence classified as a <strong>{archetype.label}</strong> talent. {notes ? notes.usageNotes : archetype.prose}
         </p>
       </div>
 
@@ -169,13 +190,40 @@ const talentLd = {
         </div>
       </div>
 
-      <!-- Combat Tips -->
+      <!-- Meta Builds (unique per item — only for pages with editorial notes) -->
+      {notes && notes.metaBuilds?.length > 0 && (
+        <div style="margin-bottom: var(--sp-8);">
+          <h2 style="font-family: var(--font-heading); font-size: var(--text-lg); font-weight: 800; color: #fff; margin: 0 0 var(--sp-4) 0; padding-bottom: var(--sp-2); border-bottom: 1px solid rgba(255,255,255,0.08);">Meta Builds Running {talent.name}</h2>
+          <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: var(--sp-3);">
+            {notes.metaBuilds.map((b: any) => (
+              <a href={b.url} style="display: block; padding: var(--sp-4); background: rgba(0,0,0,0.2); border: 1px solid rgba(255,255,255,0.06); border-radius: 8px; text-decoration: none; color: #fff; font-weight: 600; transition: all 0.2s;">{b.title} &rarr;</a>
+            ))}
+          </div>
+        </div>
+      )}
+
+      <!-- Patch History (unique per item) -->
+      {notes && notes.patchHistory?.length > 0 && (
+        <div style="margin-bottom: var(--sp-8);">
+          <h2 style="font-family: var(--font-heading); font-size: var(--text-lg); font-weight: 800; color: #fff; margin: 0 0 var(--sp-4) 0; padding-bottom: var(--sp-2); border-bottom: 1px solid rgba(255,255,255,0.08);">Patch History</h2>
+          {notes.patchHistory.map((p: any) => (
+            <div style="padding: var(--sp-4); background: rgba(0,0,0,0.25); border-left: 3px solid var(--accent); border-radius: 0 8px 8px 0; margin-bottom: var(--sp-3);">
+              <div style="font-family: var(--font-mono); font-size: var(--text-xs); color: var(--accent); margin-bottom: var(--sp-2);">{p.label} · {p.date}</div>
+              <p style="margin: 0; color: #c8c8d0; line-height: 1.7; font-size: var(--text-sm);">{p.note} {p.sourceUrl && <a href={p.sourceUrl} style="color: var(--accent);">Patch notes &rarr;</a>}</p>
+            </div>
+          ))}
+        </div>
+      )}
+
+      <!-- Combat Tips (generic archetype copy — noindexed pages only) -->
+      {!notes && (
       <div style="margin-bottom: var(--sp-8);">
         <h2 style="font-family: var(--font-heading); font-size: var(--text-lg); font-weight: 800; color: #fff; margin: 0 0 var(--sp-4) 0; padding-bottom: var(--sp-2); border-bottom: 1px solid rgba(255,255,255,0.08);">Combat Tips</h2>
         <div style="color: #c8c8d0; line-height: 1.75; font-size: var(--text-base);">
           <p>{archetype.label.includes('DPS') ? `To get the most out of ${talent.name}, pair it with high-RPM weapons like SMGs or LMGs that can trigger or stack the effect quickly. Weapon Critical Hit Chance and Weapon Critical Hit Damage bonus attributes amplify the payoff. In group content, position behind your tank and focus fire on priority targets during the buff window.` : archetype.label.includes('Tank') ? `${talent.name} rewards staying in the fight. Build around Toughness core stats with Max Health and Armor bonus attributes to extend your survivability while the talent does its work. In group content, draw aggro and hold position — your squad's DPS players will thank you for the stable target.` : archetype.label.includes('Support') ? `${talent.name} shines in group content where your healing and support actions can benefit the full squad. Run it alongside Healing Hive or Support Station for consistent proc uptime. Stack Received Healing bonus attributes on your team's builds to amplify the effect.` : archetype.label.includes('Engineering') ? `${talent.name} scales with skill deployment. Keep your skills active and cycling — Skill Cooldown Recovery bonus attributes are your friend. Tech Operator and Field Medic builds can maintain near-permanent uptime with the right gear set pairings.` : `${talent.name} offers flexibility across multiple build types. Test different weapon pairings to find the trigger cadence that matches your playstyle. Recalibrate at the Recalibration Station if your current weapon roll does not have this talent.`}</p>
         </div>
       </div>
+      )}
 
       {talent.upgradedName && (
         <div style="margin-bottom: var(--sp-8);">
@@ -189,15 +237,18 @@ const talentLd = {
         </div>
       )}
 
-      <!-- Best Builds -->
+      <!-- Best Builds (generic archetype copy — noindexed pages only) -->
+      {!notes && (
       <div style="margin-bottom: var(--sp-8);">
         <h2 style="font-family: var(--font-heading); font-size: var(--text-lg); font-weight: 800; color: #fff; margin: 0 0 var(--sp-4) 0; padding-bottom: var(--sp-2); border-bottom: 1px solid rgba(255,255,255,0.08);">Best Builds for {talent.name}</h2>
         <p style="color: #c8c8d0; line-height: 1.75; font-size: var(--text-base);">
           {archetype.builds}
         </p>
       </div>
+      )}
 
-      <!-- Synergies & Stacking -->
+      <!-- Synergies & Stacking (shared copy — noindexed pages only) -->
+      {!notes && (
       <div style="margin-bottom: var(--sp-8);">
         <h2 style="font-family: var(--font-heading); font-size: var(--text-lg); font-weight: 800; color: #fff; margin: 0 0 var(--sp-4) 0; padding-bottom: var(--sp-2); border-bottom: 1px solid rgba(255,255,255,0.08);">Synergies &amp; Stacking</h2>
         <div style="color: #c8c8d0; line-height: 1.75; font-size: var(--text-base);">
@@ -205,8 +256,10 @@ const talentLd = {
           <p>{archetype.primary === 'dps' || archetype.primary === 'dps-crit' ? `For a DPS-oriented talent like ${talent.name}, stack it with Fury Strike (Crit builds) or Phalanx Attack (sustained fire). Your OS Protocol should be Firepower-specced — look for ones with Weapon Damage or Crit Damage main stats. The 4-piece gear set bonus multiplies on top of the weapon talent proc, so timing your talent activation with your gear set buff window is where the real damage lives.` : archetype.primary === 'engineering' ? `Skill-focused talents like ${talent.name} pair beautifully with Jackpot (Skill Crit) or Long-term Effect (Skill Duration). Your OS Protocol should stack Engineering — Skill Intensity or Skill Crit Damage main stats. The multiplicative stacking between your weapon talent, gear set 4pc, and OS Protocol talent is where skill builds go from "decent" to "everything dies before the cooldown resets."` : archetype.primary === 'tank' ? `Survivability talents like ${talent.name} get compounded by Fearless Warrior (Damage + DR) or Self-Propelled Shield (Armor/Health). Run a Toughness OS Protocol with Armor or Damage Reduction main stat. The multiplicative stacking means your effective HP can double compared to running unmatched gear — and in Legendary content or DZ PvP, that's the difference between clutching and spectating.` : archetype.primary === 'support' ? `Healing talents like ${talent.name} stack with Dr. Medic (Healing output) and Healing Elites (if you have access). Your OS Protocol should lean Engineering for Skill Intensity, which directly scales heal strength. The stacking makes your heals go from "nice" to "keeping the entire squad alive through a Legendary boss room."` : `${talent.name} has flexible synergies. Match it with gear sets that complement your primary playstyle — Fury Strike for DPS, Jackpot for skills, Fearless Warrior for tanking. Your OS Protocol should align with the same core attribute. The multiplicative stacking between all three layers (weapon talent + gear set 4pc + OS Protocol talent) is how you turn a build from functional to dominant.`}</p>
         </div>
       </div>
+      )}
 
-      <!-- How to Get -->
+      <!-- How to Get (shared copy — noindexed pages only) -->
+      {!notes && (
       <div style="margin-bottom: var(--sp-8);">
         <h2 style="font-family: var(--font-heading); font-size: var(--text-lg); font-weight: 800; color: #fff; margin: 0 0 var(--sp-4) 0; padding-bottom: var(--sp-2); border-bottom: 1px solid rgba(255,255,255,0.08);">How to Get {talent.name}</h2>
         <div style="color: #c8c8d0; line-height: 1.75; font-size: var(--text-base);">
@@ -214,6 +267,7 @@ const talentLd = {
           <p>Once you find a weapon with {talent.name}, you can use it as a source to <strong style="color: #fff;">re-roll the talent</strong> onto another weapon at the recalibration station. Keep in mind: each weapon only gets <strong style="color: var(--accent);">one recalibration slot</strong>. If you recalibrated a stat on the weapon already, you can't also swap the talent. Plan your recalibrations before you commit. Check the <a href="/guides/division-resurgence-codes/" style="color: var(--accent);">active codes page</a> too - Ubisoft occasionally drops weapon caches during events that can have solid talent rolls.</p>
         </div>
       </div>
+      )}
 
       <!-- Related links -->
       <div style="display: flex; flex-wrap: wrap; gap: var(--sp-3); padding-top: var(--sp-6); border-top: 1px solid rgba(255,255,255,0.08);">

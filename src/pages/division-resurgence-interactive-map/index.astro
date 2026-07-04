@@ -11,7 +11,7 @@ const breadcrumbs = [
 const faqs = [
   { question: "Where are the safe houses in Division Resurgence?", answer: "There are 9 safe houses across Manhattan: one each in Clinton, Hell's Kitchen, Times Square, Hudson Yards, Garment District, Tenderloin, and two in Chelsea. Each safe house has a stash, resupply box, and vendors. All locations are marked on the interactive map above." },
   { question: "What are the safe codes in Division Resurgence?", answer: "There are 33 encrypted crates (safes) in Division Resurgence, with 21 confirmed codes so far. Three of those codes are randomized per character. For the complete list, see our Safe Codes Master List." },
-  { question: "Where are all the echo locations in Division Resurgence?", answer: "Echo locations are scattered across every district in Manhattan. We are actively mapping every echo and will be adding them to this interactive map. Check back soon — echoes will be one of the first collectible layers we complete." },
+  { question: "Where are all the echo locations in Division Resurgence?", answer: "Echo locations are scattered across every district in Manhattan. We are actively mapping every echo and will be adding them to this interactive map. Echoes will be one of the first collectible layers we complete." },
   { question: "Where are the audio logs in Division Resurgence?", answer: "Audio logs can be found in buildings, safe houses, and hidden areas throughout Manhattan. We are cataloguing every audio log location and will add them as a toggleable layer on this map." },
   { question: "How do I find collectibles in Division Resurgence?", answer: "Collectibles include echoes, audio logs, cryptic clues, and code clue artifacts. Use Pulse Scanning to highlight interactive objects through walls. This map will eventually show every collectible location so you can track your progress toward the NYC Collector commendation." },
   { question: "Where is the Dark Zone in Division Resurgence?", answer: "The Dark Zone occupies the eastern portion of the Manhattan map, covering a large contaminated area marked by the purple biohazard symbol. Dark Zone gates provide entry points along the western border of the zone." }
@@ -36,7 +36,6 @@ const dataPayload = JSON.stringify(poisData);
       <span class="section-tag">// INTERACTIVE MAP</span>
       <h1 class="map-hero__title">Division Resurgence Interactive Manhattan Map</h1>
       <p class="map-hero__sub">Find every safe house, echo, lockbox, and mission across Manhattan. Click markers for details. <strong class="desktop-only">Shift+Click</strong><strong class="mobile-only">Long-press</strong> anywhere to copy coordinates for contributing new locations.</p>
-      <div class="map-wip">🚧 WORK IN PROGRESS — We are actively adding POI locations. Check back often as the map grows.</div>
     </div>
   </section>
 
@@ -69,7 +68,7 @@ const dataPayload = JSON.stringify(poisData);
                   />
                   <span class="filter-swatch" style={`background: ${cat.color};`}></span>
                   <span class="filter-label">{cat.label}</span>
-                  <span class="filter-count" data-count-for={cat.id}>0</span>
+                  <span class="filter-count" data-count-for={cat.id} hidden></span>
                 </label>
               ))}
             </div>
@@ -135,7 +134,7 @@ const dataPayload = JSON.stringify(poisData);
 <script type="application/json" id="map-data" is:inline set:html={dataPayload}></script>
 
 <!-- Map Engine -->
-<script is:inline src="/js/map-engine.js?v=9"></script>
+<script is:inline src="/js/map-engine.js?v=10"></script>
 
 </BaseLayout>
 
@@ -164,20 +163,6 @@ const dataPayload = JSON.stringify(poisData);
   font-size: var(--text-sm);
 }
 .map-hero__sub strong { color: var(--accent) }
-.map-wip {
-  margin-top: var(--sp-3);
-  padding: 10px 16px;
-  background: rgba(242,104,34,0.08);
-  border: 1px solid rgba(242,104,34,0.3);
-  border-left: 3px solid var(--accent);
-  border-radius: var(--border-radius);
-  font-family: var(--font-mono);
-  font-size: var(--text-xs);
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: var(--accent);
-}
 @media(min-width:768px) {
   .map-hero { padding: var(--sp-10) 0 var(--sp-6) }
   .map-hero__title { font-size: var(--text-4xl) }
@@ -610,7 +595,6 @@ const dataPayload = JSON.stringify(poisData);
   .map-hero { padding: var(--sp-6) 0 var(--sp-3) }
   .map-hero__title { font-size: var(--text-2xl) }
   .map-hero__sub { font-size: var(--text-xs) }
-  .map-wip { font-size: 10px; padding: 8px 12px }
 
   /* Layout goes vertical, sidebar becomes bottom sheet */
   .map-layout { flex-direction: column; margin-left: 0; margin-right: 0; }

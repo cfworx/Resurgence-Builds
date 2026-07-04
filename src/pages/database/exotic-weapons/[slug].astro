@@ -4,7 +4,7 @@ import Breadcrumbs from '../../../components/Breadcrumbs.astro';
 import SectionTag from '../../../components/SectionTag.astro';
 import AdSenseUnit from '../../../components/AdSenseUnit.astro';
 import WeaponAttributes from '../../../components/WeaponAttributes.astro';
-import { truncateDesc } from '../../../utils/seo';
+import { truncateDesc, metaDescription } from '../../../utils/seo';
 import exoticWeapons from '../../../data/exotic-weapons.json';
 
 export function getStaticPaths() {
@@ -19,7 +19,7 @@ export function getStaticPaths() {
 const { weapon } = Astro.props;
 
 const title = `${weapon.name} — Exotic ${weapon.type}`;
-const description = truncateDesc(`${weapon.name} exotic ${weapon.type}: ${weapon.damage} damage, ${weapon.rpm} RPM, talent "${weapon.talentName}". Full stats and build recommendations.`);
+const description = metaDescription(weapon.summary, `${weapon.name} exotic ${weapon.type} in The Division Resurgence: stats, the ${weapon.talentName} talent, and which builds use it.`);
 
 const breadcrumbs = [
   { name: 'Exotic Weapons', url: '/database/exotic-weapons/' },
@@ -86,7 +86,7 @@ const itemLd = {
 };
 ---
 
-<BaseLayout {title} {description} {breadcrumbs} faqs={faqs} jsonLd={[weaponLd, itemLd]}>
+<BaseLayout {title} {description} {breadcrumbs} faqs={faqs} jsonLd={[weaponLd, itemLd]} ogImage={weapon.image || undefined}>
   <div class="container section">
     <Breadcrumbs items={breadcrumbs} />
     <SectionTag label="Exotic Weapon" />

@@ -10,6 +10,8 @@ import osProtocols from '../data/os-protocols.json';
 import skillModCombos from '../data/skill-mod-combos.json';
 import bonusAttributes from '../data/bonus-attributes.json';
 import { getCollection } from 'astro:content';
+import { verifiedPatch } from '../data/site-config';
+const lastVerified = verifiedPatch('Patch 1.1.2.2'); // Bump: drop the arg ONLY after re-verifying this page's content in-game (CURRENT_PATCH is a ceiling, not an auto-bump)
 
 const allBuilds = await getCollection('builds');
 const templates = allBuilds
@@ -50,6 +52,13 @@ const dataPayload = JSON.stringify({
 const gearSetCount = gearSets.length;
 const osCount = osProtocols.length;
 const smcCount = skillModCombos.length;
+const wtCount = weaponTalents.length;
+
+const faqs = [
+  { question: "How does the Build Lab detect synergies and set bonuses?", answer: `Your selections are cross-referenced against the site's verified game database in real time. When the engine spots stat interactions — like Received Healing feeding Damage Reduction through a talent trigger, or a gear set 4-piece amplifying your OS Protocol — it flags them as active synergies. Conflicts and wasted stats are surfaced the same way, before you farm a single piece.` },
+  { question: "Is the loadout data verified and up to date?", answer: `Every entry is checked manually against the live game client, not scraped from wikis. The database behind the Lab currently holds ${gearSetCount} gear sets, ${wtCount} weapon talents, ${osCount} OS Protocols, and ${smcCount} skill mod combos, each carrying its own last-verified patch label.` },
+  { question: "Can I share my builds with other players?", answer: "Yes — the entire build state is compressed into the URL hash. Hit Copy Build Link and anyone who opens it sees your exact loadout: gear sets, talents, weapons, OS Protocol, skill mods, and bonus attributes. No account, no sign-up." }
+];
 ---
 
 <BaseLayout
@@ -57,6 +66,7 @@ const smcCount = skillModCombos.length;
   description={description}
   breadcrumbs={breadcrumbs}
   jsonLd={jsonLd}
+  faqs={faqs}
   noAds={true}
 >
   <Fragment slot="head">
@@ -95,7 +105,7 @@ const smcCount = skillModCombos.length;
       <h1 class="hero__title">SHD <em>BUILD LAB</em></h1>
       <p class="hero__sub">DIVISION RESURGENCE — TACTICAL LOADOUT TERMINAL</p>
       <div class="hero__meta">
-        <span class="chip chip--ok"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> Verified · Patch 1.1.2.2</span>
+        <span class="chip chip--ok"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> Verified · {lastVerified}</span>
       </div>
     </div>
   </section>
@@ -375,6 +385,27 @@ const smcCount = skillModCombos.length;
 
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
+  <!-- How it works + FAQ — indexable explanatory content for /builder/ -->
+  <section class="lab-about">
+    <h2>How the SHD Build Lab Works</h2>
+    <p>The Build Lab is a full loadout planner for Division Resurgence. Pick one of the five specializations, then work through your loadout the same way you would in-game: two weapons with their talents, six gear slots with set assignments and bonus attributes, an OS Protocol, and three skill mods. As you make selections, the ISAC analysis panel recalculates everything — active set bonuses at each piece threshold, stat synergies between your talents and protocols, and warnings when two choices fight each other or a stat is being wasted.</p>
+    <p>Everything the Lab knows comes from this site's own database: {gearSetCount} gear sets, {wtCount} weapon talents, {osCount} OS Protocols, and {smcCount} skill mod combos, each verified against the live game client rather than copied from wikis. That matters in a game where tooltip text is frequently wrong or vague — the numbers here reflect what the gear actually does in the field, and each database entry carries the patch it was last checked on.</p>
+    <p>If you don't want to start from an empty kit, load one of the build templates. These are the exact loadouts from our published build guides — the same builds you'll find on the <a href="/builds/">builds page</a> with full writeups — pre-filled into the planner so you can study how they're put together or fork them into your own variant. When you're done, one click packs the whole build into a shareable link, and the build card preview shows how it will look when you drop it in Discord or Reddit.</p>
+    <p>The build score in the analysis panel grades your loadout as you go. It isn't judging your taste in weapons — it's checking whether your set bonuses are actually active, whether your bonus attributes line up with your damage core, and whether your skill mods belong to your chosen specialization. A build that lights up every check is one you can farm for with confidence.</p>
+
+    <h2>Frequently Asked Questions</h2>
+    <div class="lab-about__faqs">
+      {faqs.map(faq => (
+        <details class="lab-about__faq">
+          <summary>{faq.question}</summary>
+          <p>{faq.answer}</p>
+        </details>
+      ))}
+    </div>
+
+    <p>Prefer something battle-tested? Browse the <a href="/builds/">verified build guides</a>, check the <a href="/tier-list/">current tier list</a>, or dig into the <a href="/database/">full database</a> for per-item stats and sourcing.</p>
+  </section>
+
   <!-- Data payload from verified Astro JSON files -->
   <script type="application/json" id="builder-data" set:html={dataPayload}></script>
   <script is:inline src="/js/builder-v3-engine.js"></script>
@@ -429,6 +460,36 @@ const smcCount = skillModCombos.length;
   .spec-btn.is-active .sigil {
     filter: drop-shadow(0 0 6px rgba(255,138,46,.7)) drop-shadow(0 0 12px rgba(255,138,46,.3));
   }
+  /* How-it-works + FAQ section below the tool */
+  .lab-about {
+    position: relative;
+    z-index: 2;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 48px 20px 64px;
+    color: #c8c8d0;
+    line-height: 1.75;
+  }
+  .lab-about h2 {
+    font-family: var(--font-heading);
+    font-size: var(--text-xl);
+    font-weight: 800;
+    color: #fff;
+    margin: 0 0 16px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(255,138,46,.25);
+  }
+  .lab-about h2:not(:first-child) { margin-top: 40px; }
+  .lab-about p { margin: 0 0 12px; }
+  .lab-about a { color: var(--accent, #ff8a2e); }
+  .lab-about__faq {
+    border: 1px solid rgba(255,255,255,.1);
+    background: rgba(0,0,0,.3);
+    padding: 12px 16px;
+    margin-bottom: 8px;
+  }
+  .lab-about__faq summary { cursor: pointer; color: #fff; font-weight: 600; }
+  .lab-about__faq p { margin: 10px 0 4px; }
   /* Stat icon in telemetry */
   .stat-ico {
     width: 14px;

@@ -6,7 +6,7 @@ playstyle: DPS
 pve: true
 pvp: true
 lastUpdated: 2026-05-28T00:00:00Z
-patch: "Season 2"
+patch: "Season 1 · Phase 3"
 tags: ["Tactical Pharma", "jackpot", "fire-cycle", "chemical-trap", "glass-cannon", "backup-battery", "roguemadras", "field-medic-build", "800k-dps", "skill-damage"]
 description: "RogueMadras's 800k DPS Tactical Pharma build: Chemical Trap + Oxidizing Hive, Jackpot 4pc, Fire Cycle 2pc. Full gear, talents, and skill mods."
 author: "RapidF5 (via RogueMadras)"
@@ -42,7 +42,7 @@ videoChannel: "RogueMadras"
 
 > Build credit: [**RogueMadras**](https://www.youtube.com/@RogueMadras). He just released an [updated build video](https://www.youtube.com/watch?v=1dAkSWoR7co) walking through his latest Tactical Pharma setup, the same build that pushed him to **Rank 1 Global**. You can also watch his [original gameplay breakdown](https://www.youtube.com/watch?v=orBlCP7ro4I&t=3351s).
 
-We originally covered this build as the "Geneva Suggestion." RogueMadras has since optimized it further for Division Resurgence Season 2, so we're updating everything. **800k+ DPS.** Rank 1 Global. On the Tactical Pharma specialization.
+We originally covered this build as the "Geneva Suggestion." RogueMadras has since optimized it further for Division Resurgence Season 1 Phase 3 (ahead of the Season 2 launch coming with the full PC release in August), so we're updating everything. **800k+ DPS.** Rank 1 Global. On the Tactical Pharma specialization.
 
 This is a skill-damage build that uses **Chemical Trap** and **Oxidizing Hive** as slotted skills, with **Oxidizing Swarm** as the signature ability providing automated corrosive pressure. Weapons exist to generate Engineering stacks, not to kill. The core loop is straightforward: throw Chemical Trap at a choke point, swap weapons to trigger Backup Battery (+22.50% Engineering) and Prime Engineer 2 (+31.50% Engineering), then deploy Oxidizing Hive for sustained corrosive damage. Pop Oxidizing Swarm (signature) when available for burst pressure. Swap to MK16 to stack Skill Multi-Shot, and repeat as cooldowns come back. The build scales entirely through Engineering, Skill Crit, and Skill Multi-Shot.
 

@@ -1,0 +1,240 @@
+---
+/**
+ * Consolidated, sortable talent index with per-item anchors.
+ * Replaces the former per-talent item pages for backpack-talents and
+ * body-armor-talents (those URLs 301 to anchors on the index).
+ */
+export interface Props {
+  talents: { id?: string; name: string; description: string }[];
+  /** "backpack" | "body armor" — used in copy only */
+  slot: string;
+  /** e.g. "/database/backpack-talents/" */
+  basePath: string;
+}
+
+const { talents, slot } = Astro.props;
+
+const toSlug = (name: string) => name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+
+// Role derivation — same keyword logic the old item pages used.
+const roleOf = (description: string): string[] => {
+  const roles: string[] = [];
+  if (/weapon damage|critical hit chance|critical hit damage|rate of fire|magazine size|optimal range|damage(?! reduction)/i.test(description)) roles.push('DPS');
+  if (/skill|engineering/i.test(description)) roles.push('Skill');
+  if (/armor|health|damage reduction|healing|medical kit|extra health/i.test(description)) roles.push('Tank/Sustain');
+  if (/ally|allies/i.test(description)) roles.push('Team');
+  if (roles.length === 0) roles.push('Utility');
+  return roles;
+};
+
+const roleColors: Record<string, string> = {
+  'DPS': '#f87171',
+  'Skill': '#facc15',
+  'Tank/Sustain': '#60a5fa',
+  'Team': '#22c55e',
+  'Utility': '#b8b8c0',
+};
+
+const entries = talents.map(t => ({
+  ...t,
+  slug: toSlug(t.name),
+  roles: roleOf(t.description),
+}));
+
+const allRoles = ['DPS', 'Skill', 'Tank/Sustain', 'Team', 'Utility'].filter(r => entries.some(e => e.roles.includes(r)));
+---
+
+<!-- Jump nav -->
+<nav class="ti-jumpnav" aria-label="Jump to talent">
+  {entries.map(e => (
+    <a href={`#${e.slug}`} class="ti-jumpnav__link">{e.name}</a>
+  ))}
+</nav>
+
+<!-- Controls -->
+<div class="ti-controls">
+  <div class="ti-sort" role="group" aria-label="Sort talents">
+    <span class="ti-controls__label">Sort:</span>
+    <button type="button" class="ti-sort__btn is-active" data-sort="az">A–Z</button>
+    <button type="button" class="ti-sort__btn" data-sort="role">By role</button>
+  </div>
+  <div class="ti-filter" role="group" aria-label="Filter by role">
+    <span class="ti-controls__label">Role:</span>
+    <button type="button" class="ti-filter__btn is-active" data-role="all">All</button>
+    {allRoles.map(r => (
+      <button type="button" class="ti-filter__btn" data-role={r} style={`--role-color:${roleColors[r]}`}>{r}</button>
+    ))}
+  </div>
+</div>
+
+<div class="ti-list" id="ti-list">
+  {entries.map(e => (
+    <article class="ti-entry" id={e.slug} data-name={e.name} data-roles={e.roles.join('|')}>
+      <h2 class="ti-entry__title">
+        <a href={`#${e.slug}`} class="ti-entry__anchor" aria-label={`Link to ${e.name}`}>#</a>
+        {e.name}
+        {e.roles.map(r => (
+          <span class="ti-entry__badge" style={`--role-color:${roleColors[r]}`}>{r}</span>
+        ))}
+      </h2>
+      <p class="ti-entry__desc">{e.description}</p>
+      <p class="ti-entry__source">Rolls on T2 {slot} pieces · always active once equipped · swappable at the Recalibration Station</p>
+    </article>
+  ))}
+</div>
+
+<style>
+  .ti-jumpnav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: var(--sp-5);
+    padding: var(--sp-4);
+    background: rgba(0,0,0,0.25);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 8px;
+  }
+  .ti-jumpnav__link {
+    font-size: var(--text-xs);
+    color: #b8b8c0;
+    text-decoration: none;
+    padding: 3px 8px;
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 6px;
+    transition: all 0.15s;
+  }
+  .ti-jumpnav__link:hover {
+    color: var(--accent);
+    border-color: var(--accent);
+  }
+  .ti-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--sp-4);
+    align-items: center;
+    margin-bottom: var(--sp-6);
+  }
+  .ti-sort, .ti-filter {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--sp-2);
+  }
+  .ti-controls__label {
+    font-family: var(--font-mono);
+    font-size: var(--text-xs);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #8888a0;
+  }
+  .ti-sort__btn, .ti-filter__btn {
+    font-family: var(--font-mono);
+    font-size: var(--text-xs);
+    color: #b8b8c0;
+    background: rgba(0,0,0,0.3);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 6px;
+    padding: 5px 12px;
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+  .ti-sort__btn.is-active, .ti-filter__btn.is-active {
+    color: var(--accent);
+    border-color: var(--accent);
+    background: rgba(242,104,34,0.08);
+  }
+  .ti-filter__btn[data-role]:not([data-role="all"]).is-active {
+    color: var(--role-color);
+    border-color: var(--role-color);
+    background: transparent;
+  }
+  .ti-entry {
+    max-width: 76ch;
+    margin-bottom: var(--sp-5);
+    padding: var(--sp-5);
+    background: rgba(0,0,0,0.2);
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 8px;
+    scroll-margin-top: 90px;
+  }
+  .ti-entry:target {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 1px rgba(242,104,34,0.3);
+  }
+  .ti-entry__title {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--sp-2);
+    font-family: var(--font-heading);
+    font-size: var(--text-lg);
+    font-weight: 800;
+    color: #fff;
+    margin: 0 0 var(--sp-3) 0;
+  }
+  .ti-entry__anchor {
+    color: rgba(255,255,255,0.25);
+    text-decoration: none;
+  }
+  .ti-entry__anchor:hover { color: var(--accent); }
+  .ti-entry__badge {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    padding: 2px 8px;
+    border: 1px solid var(--role-color);
+    color: var(--role-color);
+    border-radius: 999px;
+  }
+  .ti-entry__desc {
+    color: #c8c8d0;
+    line-height: 1.7;
+    font-size: var(--text-base);
+    margin: 0 0 var(--sp-3) 0;
+  }
+  .ti-entry__source {
+    font-family: var(--font-mono);
+    font-size: var(--text-xs);
+    color: #8888a0;
+    margin: 0;
+  }
+</style>
+
+<script>
+  const list = document.getElementById('ti-list');
+  if (list) {
+    const entries = Array.from(list.querySelectorAll<HTMLElement>('.ti-entry'));
+    const sortBtns = document.querySelectorAll<HTMLButtonElement>('.ti-sort__btn');
+    const filterBtns = document.querySelectorAll<HTMLButtonElement>('.ti-filter__btn');
+    const ROLE_ORDER = ['DPS', 'Skill', 'Tank/Sustain', 'Team', 'Utility'];
+
+    sortBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        sortBtns.forEach(b => b.classList.toggle('is-active', b === btn));
+        const mode = btn.dataset.sort;
+        const sorted = [...entries].sort((a, b) => {
+          if (mode === 'role') {
+            const ra = ROLE_ORDER.indexOf((a.dataset.roles || '').split('|')[0]);
+            const rb = ROLE_ORDER.indexOf((b.dataset.roles || '').split('|')[0]);
+            if (ra !== rb) return ra - rb;
+          }
+          return (a.dataset.name || '').localeCompare(b.dataset.name || '');
+        });
+        sorted.forEach(e => list.appendChild(e));
+      });
+    });
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.toggle('is-active', b === btn));
+        const role = btn.dataset.role;
+        entries.forEach(e => {
+          const roles = (e.dataset.roles || '').split('|');
+          e.style.display = (role === 'all' || roles.includes(role!)) ? '' : 'none';
+        });
+      });
+    });
+  }
+</script>

@@ -1,9 +1,9 @@
 ---
-title: "Division Resurgence Codes - May 2026"
+title: "Division Resurgence Codes - How to Redeem & What's Active"
 category: "General"
 lastUpdated: 2026-05-01T12:00:00Z
 tags: ["codes", "redeem-codes", "promo-codes", "backbone", "twitch-drops", "free-rewards", "ubisoft-connect", "division-resurgence-codes"]
-description: "Division Resurgence redeem codes for May 2026. Official Ubisoft redemption URL, Backbone collab, past Twitch Drops, and how to claim."
+description: "All active Division Resurgence redeem codes. Official Ubisoft redemption URL, Backbone collab, past Twitch Drops, and how to claim."
 author: "RapidF5"
 featuredImage: "/images/guides/division-resurgence-codes-redeem-guide-hero.jpg"
 imageAlt: "Division Resurgence codes redemption guide showing the Ubisoft code entry process for May 2026 rewards"
