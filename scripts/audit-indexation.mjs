@@ -196,7 +196,12 @@ if (fs.existsSync(llmsPath)) {
 /* ── 6. Internal inlink check (orphan detection) ─────────── */
 
 console.log('\n=== 6. Internal inlink check ===');
-const EXEMPT_PATHS = new Set(['/', '/privacy/', '/terms/', '/dmca/', '/contact/']);
+const EXEMPT_PATHS = new Set([
+  '/', '/privacy/', '/terms/', '/dmca/', '/contact/',
+  // Legacy builders: intentionally orphaned (noindexed + canonicaled to /builder/,
+  // kept alive only so old bookmarks/links don't 404). Zero inlinks is by design.
+  '/builder-legacy/', '/builder-v2/', '/builder-v3/',
+]);
 
 // Build inlink counts from pre-read HTML map
 const inlinkCount = new Map();
