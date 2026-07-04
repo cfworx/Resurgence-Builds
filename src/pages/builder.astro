@@ -385,6 +385,13 @@ const faqs = [
 
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
+  <!-- Mobile quick-status bar (phones only): live Build Score + ISAC grade mirror -->
+  <div class="mob-status" id="mobStatus">
+    <div class="mob-status__grp"><span class="mob-status__lbl">Build Score</span><span class="mob-status__val" id="mobScore">—</span></div>
+    <div class="mob-status__grp"><span class="mob-status__lbl">ISAC</span><span class="mob-status__val" id="mobGrade">STANDBY</span></div>
+    <button class="mob-status__go" id="mobStatusGo" type="button" aria-label="Scroll to ISAC analysis">ANALYSIS ↓</button>
+  </div>
+
   <!-- How it works + FAQ — indexable explanatory content for /builder/ -->
   <section class="lab-about">
     <h2>How the SHD Build Lab Works</h2>
@@ -409,6 +416,29 @@ const faqs = [
   <!-- Data payload from verified Astro JSON files -->
   <script type="application/json" id="builder-data" set:html={dataPayload}></script>
   <script is:inline src="/js/builder-v3-engine.js"></script>
+  <script is:inline>
+    // Mobile quick-status mirror — reads the engine's own outputs, changes nothing in the engine.
+    (function () {
+      var score = document.getElementById('rigScore');
+      var grade = document.getElementById('ratingGrade');
+      var ms = document.getElementById('mobScore');
+      var mg = document.getElementById('mobGrade');
+      var go = document.getElementById('mobStatusGo');
+      if (!score || !grade || !ms || !mg || !go) return;
+      function sync() {
+        ms.textContent = score.textContent;
+        mg.textContent = grade.textContent;
+      }
+      var opts = { childList: true, characterData: true, subtree: true };
+      new MutationObserver(sync).observe(score, opts);
+      new MutationObserver(sync).observe(grade, opts);
+      sync();
+      go.addEventListener('click', function () {
+        var target = document.getElementById('isacPanel');
+        if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    })();
+  </script>
 </BaseLayout>
 
 <style is:global>

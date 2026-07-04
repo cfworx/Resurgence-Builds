@@ -46,5 +46,21 @@
     "optimalRange": "29m",
     "movementSpeed": "19",
     "stability": "50"
+  },
+  {
+    "id": "ew-4",
+    "name": "Scorpio",
+    "type": "Shotgun",
+    "damage": "210 Piercing Damage",
+    "rpm": "130",
+    "mag": "7",
+    "talentName": "Septicemia",
+    "talentDescription": "Hitting an enemy inflicts Venom for 2.50 seconds, up to 7 stacks. The target receives a debuff increasing with Venom stacks: 1 - Inflicts Bleed for 10 seconds. 3 - Inflicts Confusion for 2 seconds. 6 - Inflicts Shock for 3 seconds. 7 - Deals additional damage equal to 10% of Damage Dealt for 10 seconds.",
+    "accuracy": "56",
+    "reloadSpeed": "2.34s",
+    "optimalRange": "16m",
+    "movementSpeed": "50",
+    "stability": "56",
+    "acquisition": "Classified Ops Pass 1.3 — premium track, tier 5"
   }
 ]

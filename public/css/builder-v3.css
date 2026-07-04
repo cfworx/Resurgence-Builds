@@ -690,3 +690,41 @@
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}
 }
+
+/* ==== MOBILE FLOW OVERHAUL (Jul 2026, owner-directed) =====================
+   On phones the three desktop columns used to stack whole, which scrambled
+   the workflow: OS Protocol and skill mods appeared before gear/weapons and
+   the score landed at the very bottom. display:contents releases the panels
+   from their columns so they can be ordered in actual build order.
+   Desktop (>880px) is untouched. */
+@media (max-width:880px){
+  .lab__grid{display:flex;flex-direction:column;gap:var(--space-6)}
+  .col,.col--left,.col--center,.col--right{display:contents}
+  #specPanel{order:1}
+  #gearPanel{order:2}
+  .weapon-row{order:3}
+  #talentPanel{order:4}
+  #skillPanel{order:5}
+  #osPanel{order:6}
+  #loopPanel{order:7}
+  #isacPanel{order:8}
+  #statsPanel{order:9}
+  #bonusPanel{order:10}
+  #diagPanel{order:11}
+  .share-row{order:12}
+  /* room for the fixed quick-status bar */
+  .lab-about{padding-bottom:120px}
+}
+@media (max-width:480px){
+  .lab__grid{gap:12px}
+}
+
+/* Mobile quick-status bar: mirrors Build Score + ISAC grade while you edit */
+.mob-status{display:none}
+@media (max-width:880px){
+  .mob-status{position:fixed;bottom:0;left:0;right:0;z-index:120;display:flex;align-items:center;gap:18px;padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));background:rgba(5,7,11,.94);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);border-top:1px solid rgba(255,138,46,.35)}
+  .mob-status__grp{display:flex;flex-direction:column;line-height:1.25;min-width:0}
+  .mob-status__lbl{font-size:9.5px;letter-spacing:.1em;color:#9aa3b2;text-transform:uppercase}
+  .mob-status__val{font-size:15px;font-weight:700;color:#ff8a2e;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:40vw}
+  .mob-status__go{margin-left:auto;flex:0 0 auto;border:1px solid rgba(255,138,46,.4);background:transparent;color:#ff8a2e;padding:7px 12px;font-size:11.5px;letter-spacing:.05em;border-radius:4px;cursor:pointer;font-family:inherit}
+}

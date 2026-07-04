@@ -3,16 +3,16 @@ title: "Season 1 Phase 3 Patch Notes - Division Resurgence"
 version: "Season 1 Phase 3"
 patchDate: "2026-06-24"
 author: "RapidF5"
-summary: "Division Resurgence Season 1 Phase 3 A New Fire patch notes: Scorpio exotic shotgun free in Classified Ops Pass, Applied Demolition buff doubled, Thermobaric Grenades nerf, Dark Zone spawn immunity, inventory bug fixed, Strawberry Milkshake reissue, and Sealed Crate drop rate improvements."
+summary: "Division Resurgence Season 1 Phase 3 A New Fire patch notes: Scorpio exotic shotgun in Classified Ops Pass 1.3, Applied Demolition buff doubled, Thermobaric Grenades nerf, Dark Zone spawn immunity, inventory bug fixed, Strawberry Milkshake reissue, and Sealed Crate drop rate improvements."
 featuredImage: "/images/patch-notes/division-resurgence-season-1-phase-3-a-new-fire-hero.webp"
 imageAlt: "Division Resurgence Season 1 Phase 3 loading screen showing SHD eagle logo with orange HUD ring at 100 percent and Phase 3 Is Live text"
 shareTitle: "Phase 3 just dropped everything"
-shareText: "Scorpio is free, Applied Demolition almost doubled, Thermobaric Grenades got humbled, and the inventory bug is finally dead. Share this with the clanmate still running a pre-nerf loadout."
+shareText: "Scorpio landed, Applied Demolition almost doubled, Thermobaric Grenades got humbled, and the inventory bug is finally dead. Share this with the clanmate still running a pre-nerf loadout."
 faqs:
   - question: "When did Division Resurgence Phase 3 go live?"
     answer: "Server maintenance ran on June 22, 2026. The Phase 3 store update went live on June 24, 2026 alongside the official launch tweet from @TheDivMobile at 3:00 PM. The patch is about 15 GB."
   - question: "Is the Scorpio exotic shotgun free in Division Resurgence?"
-    answer: "Yes. The Scorpio is free in the Classified Ops Pass for Phase 3, per the official Ubisoft Phase 3 announcement."
+    answer: "Not quite. The Scorpio weapon unlocks at tier 5 of the PREMIUM track of Classified Ops Pass 1.3 (verified in-game) — the free track carries its Tactical Augmentation module. Ubisoft's announcement phrase 'grabbed for free' referred to the module, which caused plenty of confusion."
   - question: "Is the inventory disappearance bug fixed in Division Resurgence?"
     answer: "Yes. The dev team confirmed in the official Phase 3 patch notes that the issue causing items to disappear from inventory has been resolved."
   - question: "What is the new Combat Medic Courage requirement in Division Resurgence?"
@@ -27,7 +27,7 @@ faqs:
 
 Phase 3 of Season 1 is live. The dev team shipped one of the chunkiest update lists Resurgence has seen since launch: a brand new exotic shotgun, a full Classified Ops Pass refresh, an OS Protocol buff that is going to flip the Demolitionist meta, a significant correction to several specialization damage profiles, and a long parade of bug fixes that finally close the door on cards the community has been watching on the [Trello board](https://trello.com/b/qTP1a9cv) for a month and a half.
 
-If you only have time for the headline: the Scorpio exotic shotgun is free in the new Ops Pass, the inventory disappearance bug is officially fixed, Dark Zone spawns now have a ten second immunity window, Applied Demolition almost doubled, and Thermobaric Grenades got brought back to earth. Now the rest.
+If you only have time for the headline: the Scorpio exotic shotgun headlines the new Ops Pass (premium track, tier 5 — details below), the inventory disappearance bug is officially fixed, Dark Zone spawns now have a ten second immunity window, Applied Demolition almost doubled, and Thermobaric Grenades got brought back to earth. Now the rest.
 
 ---
 
@@ -35,15 +35,15 @@ If you only have time for the headline: the Scorpio exotic shotgun is free in th
 
 ### The Scorpio Exotic Shotgun
 
-Pulled directly from the [official Ubisoft announcement](https://www.ubisoft.com/en-us/game/the-division/resurgence/news-updates/wE8oLT7RqyLCfnCJomXij/a-new-fire-season-1-phase-3): "The Scorpio exotic weapon can be grabbed for free in the Classified Ops Pass. This shotgun applies up to 7 stacks of Venom onto your target (lasting 2.5 seconds each) with extra bonuses for each new applied stack. This could be your next ally to take out beefy opponents!"
+Ubisoft's [official announcement](https://www.ubisoft.com/en-us/game/the-division/resurgence/news-updates/wE8oLT7RqyLCfnCJomXij/a-new-fire-season-1-phase-3) said: "The Scorpio exotic weapon can be grabbed for free in the Classified Ops Pass. This shotgun applies up to 7 stacks of Venom onto your target (lasting 2.5 seconds each) with extra bonuses for each new applied stack. This could be your next ally to take out beefy opponents!"
 
-In plain language: it stacks a damage over time poison, the dot lasts 2.5 seconds per stack, and the gun rewards you for keeping pressure up to seven stacks deep. We were tracking the Scorpio in our [Scorpio and Diamondback leak post](/news/scorpio-diamondback-coming-to-division-resurgence-june-2026/) earlier this season and it has now landed officially. Time to update your loadouts.
+**Correction, verified in-game (July 4):** the "for free" phrasing refers to the Scorpio's Tactical Augmentation module on the free track. The weapon itself unlocks at **tier 5 of the premium track**. Its talent is **Septicemia** — full stats, the complete Venom stack ladder (Bleed → Confusion → Shock → +10% damage taken), and acquisition math are on the [Scorpio database page](/database/exotic-weapons/scorpio/). We were tracking the Scorpio in our [Scorpio and Diamondback leak post](/news/scorpio-diamondback-coming-to-division-resurgence-june-2026/) earlier this season and it has now landed officially. Time to update your loadouts.
 
 If you want to give your Scorpio some flair, the **Lethal Stinger** exotic weapon skin is also in the Ops Pass.
 
 ### New Classified Ops Pass
 
-50 tier track. Free Scorpio at the headline. The new **Freemen Apparel Set** is the full cosmetic chase this phase.
+50 tier track. Scorpio at the headline (premium track, tier 5 — the free track gets its Tactical Augmentation module). The new **Freemen Apparel Set** is the full cosmetic chase this phase.
 
 ### Store Cosmetics
 
@@ -244,7 +244,7 @@ A few quick reads on how this patch moves the meta:
 - **Aegis Tech Operator builds need a retest.** The Aegis Burst correction is officially shipped. Your damage profile in elite content will look different starting today. See the [Aegis Tech Operator build](/builds/aegis-chad-glass-cannon-tech-operator-build-ifozzy/) for the baseline.
 - **Bulwark Juggernaut and Recon builds are slightly tamer.** The passive damage adjustment hits both. The [Involuntary Nap Time Bulwark Juggernaut build](/builds/involuntary-nap-time-bulwark-juggernaut-build/) is still strong because the build's identity is stun control and tankiness, not raw damage scaling.
 - **Combat Medic builds should reassess.** Medic Hypershot and Armor Strengthening proximity behavior both changed. The [Muscular Nurse Combat Medicine build](/builds/muscular-nurse-combat-medicine-build-nadie/) leans on Armor Strengthening, so retest it in your usual content.
-- **Scorpio is the new toy.** Free in the Ops Pass, stacks venom, scales with stack count. We are working on a dedicated build write-up.
+- **Scorpio is the new toy.** Premium-track tier 5 in the Ops Pass, stacks Venom, scales with stack count — [full breakdown here](/database/exotic-weapons/scorpio/). We are working on a dedicated build write-up.
 
 ---
 

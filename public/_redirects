@@ -162,3 +162,77 @@ http://resurgencebuilds.com/* https://resurgencebuilds.com/:splat 301
 /database/body-armor-talents/toymaker /database/body-armor-talents/#toymaker 301
 /database/body-armor-talents/unflinching/ /database/body-armor-talents/#unflinching 301
 /database/body-armor-talents/unflinching /database/body-armor-talents/#unflinching 301
+
+# 404 remediation — GSC "Not found (404)" export, mapped 2026-07-04 (ISAC)
+# Archived build slugs -> closest live successor
+/builds/conflict-pvp-fearless-warlord /database/exotic-weapons/warlord/ 301
+/builds/conflict-pvp-fearless-warlord/ /database/exotic-weapons/warlord/ 301
+/builds/cover-shooter-sniper /builds/ 301
+/builds/cover-shooter-sniper/ /builds/ 301
+/builds/cover-shooter-sniper-2 /builds/ 301
+/builds/cover-shooter-sniper-2/ /builds/ 301
+/builds/dark-zone-pvp-vanguard-lady-death /database/exotic-weapons/lady-death/ 301
+/builds/dark-zone-pvp-vanguard-lady-death/ /database/exotic-weapons/lady-death/ 301
+/builds/dark-zone-pvp-vanguard-lady-death-3 /database/exotic-weapons/lady-death/ 301
+/builds/dark-zone-pvp-vanguard-lady-death-3/ /database/exotic-weapons/lady-death/ 301
+/builds/demolitionist-explosive-chaos /builds/demolitionist-glass-cannon-build-pveenjoyer/ 301
+/builds/demolitionist-explosive-chaos/ /builds/demolitionist-glass-cannon-build-pveenjoyer/ 301
+/builds/demolitionist-explosive-chaos-4 /builds/demolitionist-glass-cannon-build-pveenjoyer/ 301
+/builds/demolitionist-explosive-chaos-4/ /builds/demolitionist-glass-cannon-build-pveenjoyer/ 301
+/builds/geneva-suggestion-field-medic-12 /builds/tactical-pharma-800k-dps-rank-1-global-build/ 301
+/builds/geneva-suggestion-field-medic-12/ /builds/tactical-pharma-800k-dps-rank-1-global-build/ 301
+/builds/legendary-healer-field-medic /builds/muscular-nurse-combat-medicine-build-nadie/ 301
+/builds/legendary-healer-field-medic/ /builds/muscular-nurse-combat-medicine-build-nadie/ 301
+/builds/legendary-healer-field-medic-5 /builds/muscular-nurse-combat-medicine-build-nadie/ 301
+/builds/legendary-healer-field-medic-5/ /builds/muscular-nurse-combat-medicine-build-nadie/ 301
+/builds/lockdown-tech-op /class/tech-operator/ 301
+/builds/lockdown-tech-op/ /class/tech-operator/ 301
+/builds/panda-oxidizing-swarm-medic-14 /builds/tactical-pharma-800k-dps-rank-1-global-build/ 301
+/builds/panda-oxidizing-swarm-medic-14/ /builds/tactical-pharma-800k-dps-rank-1-global-build/ 301
+/builds/pve-meta-vanguard-shotgun /class/vanguard/ 301
+/builds/pve-meta-vanguard-shotgun/ /class/vanguard/ 301
+/builds/pve-meta-vanguard-shotgun-7 /class/vanguard/ 301
+/builds/pve-meta-vanguard-shotgun-7/ /class/vanguard/ 301
+/builds/skill-meta-jackpot-chemical /builds/tactical-pharma-800k-dps-rank-1-global-build/ 301
+/builds/skill-meta-jackpot-chemical/ /builds/tactical-pharma-800k-dps-rank-1-global-build/ 301
+/builds/skill-meta-jackpot-chemical-8 /builds/tactical-pharma-800k-dps-rank-1-global-build/ 301
+/builds/skill-meta-jackpot-chemical-8/ /builds/tactical-pharma-800k-dps-rank-1-global-build/ 301
+/builds/strawberry-reaper-demolitionist-10 /builds/milkshake-machine-strawberry-milkshake-lmg-build/ 301
+/builds/strawberry-reaper-demolitionist-10/ /builds/milkshake-machine-strawberry-milkshake-lmg-build/ 301
+/builds/sweet-lullaby-immortal-stunner-bulwark-juggernaut-build/ /builds/involuntary-nap-time-bulwark-juggernaut-build/ 301
+/builds/tech-op-disorient-express /class/tech-operator/ 301
+/builds/tech-op-disorient-express/ /class/tech-operator/ 301
+/builds/tech-op-disorient-express-11 /class/tech-operator/ 301
+/builds/tech-op-disorient-express-11/ /class/tech-operator/ 301
+/builds/vampire-bulwark-tank /class/bulwark/ 301
+/builds/vampire-bulwark-tank/ /class/bulwark/ 301
+/builds/vampire-bulwark-tank-9 /class/bulwark/ 301
+/builds/vampire-bulwark-tank-9/ /class/bulwark/ 301
+/builds/vanguard-scout-recon-support-15/ /builds/agenthuntzmans-leaderboard-ranking-vanguard-support-build/ 301
+# Renamed/removed skill-mod-combo slugs -> category index
+/database/skill-mod-combos/counter-attack/ /database/skill-mod-combos/ 301
+/database/skill-mod-combos/doom-dealer/ /database/skill-mod-combos/ 301
+/database/skill-mod-combos/lightweight/ /database/skill-mod-combos/ 301
+/database/skill-mod-combos/reactive-plating/ /database/skill-mod-combos/ 301
+/database/skill-mod-combos/sentinel/ /database/skill-mod-combos/ 301
+/database/skill-mod-combos/shock-absorber/ /database/skill-mod-combos/ 301
+# Old guide slugs -> current equivalents
+/guides/beginners-endgame-checklist/ /guides/ 301
+/guides/best-dark-zone-pvp-builds/ /tier-list/ 301
+/guides/best-pve-dps-builds/ /tier-list/ 301
+/guides/best-starter-builds/ /builds/ 301
+/guides/dark-zone-beginner-guide/ /guides/ 301
+/guides/division-resurgence-os-protocols-guide/ /tier-list/os-protocols/ 301
+/guides/endgame-101-tier-2-gear/ /guides/ 301
+/guides/exotic-weapons-sources/ /guides/division-resurgence-exotic-weapons-list-2026/ 301
+/guides/gear-sets-combo-bonuses/ /database/gear-set-effects/ 301
+/guides/leveling-guide-1-30/ /guides/ 301
+/guides/pc-emulator-comparison/ /guides/division-resurgence-pc-emulator-comparison/ 301
+/guides/pc-setup-quick-guide/ /guides/division-resurgence-steam-pc-guide/ 301
+/guides/shd-manual-stop-sucking-at-progression-13/ /guides/ 301
+/guides/specializations-roles/ /guides/which-specialization-to-pick/ 301
+# Crawl artifacts and typos
+/guides/undefined/ /guides/ 301
+/news/undefined/ /news/ 301
+/tag/vseason-1-phase-3/ /patch-notes/season-1-phase-3-a-new-fire/ 301
+/news/division-resurgence-trello-known-issues-board-breakdown/ /news/division-resurgence-known-issues-trello-board-breakdown/ 301
