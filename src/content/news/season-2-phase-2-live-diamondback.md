@@ -13,14 +13,14 @@ faqs:
   - question: "Is the Diamondback free?"
     answer: "Yes. Ubisoft lists the Diamondback exotic on the free and the premium track of the Season 2 Phase 2 Classified Ops Pass. Its Tactical Augmentation Module was also an event reward this phase."
   - question: "What's on the Season 2 Phase 2 premium pass?"
-    answer: "The Football League apparel set and the Milky Way weapon cosmetic, per Ubisoft's article. Plus exotic mods, which moved into the pass because exotic weapons stopped shipping with them this phase."
+    answer: "The Football League apparel set and the Milky Way weapon cosmetic, per Ubisoft's article. Plus exotic mods, which Ubisoft added to the pass because exotic weapons stopped shipping with them this phase (the notes don't say which track)."
   - question: "Can I still get old exotics like the Strawberry Milkshake?"
     answer: "Yes, through the new Exotic Sealed Caches, which Ubisoft added as 'a new way to acquire Exotic Weapons from previous seasons.' Our caches guide has the official odds, and they are exactly as fun as you'd expect a 0.29% drop to be."
   - question: "What events are in Season 2 Phase 2?"
-    answer: "Trigger Happy (September 16 to October 13), a Challenging-difficulty run of the Derelict Store mission (September 18 to 21), an Exotic SHD Keys daily login event (September 16 to October 26), Wall Street Woes (October 2 to 5) and Liberty & Justice For All (October 16 to 19)."
+    answer: "Trigger Happy (September 16 to October 13), the 'Challenging' timed event at the Derelict Store (September 18 to 21), an Exotic SHD Keys daily login event (September 16 to October 26), Wall Street Woes (October 2 to 5) and Liberty & Justice For All (October 16 to 19)."
 ---
 
-**Season 2 Phase 2 is live** as of **Wednesday, September 16, 2026**. The new pass headliner is the **Diamondback** exotic, free on the free track. Old exotics are back in circulation through new **Exotic Sealed Caches**, **Demolitionist** got a long overdue buff list, the **daily XP cap is gone**, and brand-new agents get an easier first few missions.
+**Season 2 Phase 2 is live** as of **Wednesday, September 16, 2026**. The new pass headliner is the **Diamondback** exotic, free on the free track. Old exotics are back in circulation through new **Exotic Sealed Caches**, **Demolitionist** got a big buff list, the **daily XP cap is gone**, and brand-new agents get an easier first few missions.
 
 > [!INFO] Update (October 2026)
 > On October 21 Ubisoft extended Season 2 Phase 2 "until we are ready to release a much bigger update later this year." [Here's what that means](/news/season-2-phase-2-extended/).

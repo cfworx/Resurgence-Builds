@@ -27,7 +27,7 @@ faqs:
 **The Division Resurgence launches on Steam on Wednesday, August 5, 2026, and Season 2 starts the same day.** MassivelyOP reported Ubisoft's confirmation today, citing Ubisoft's press release and social posts, and Ubisoft's news hub lists two new videos dated July 31: a Steam Launch Trailer and "Season 2 Phase 1 is now live." The Steam version is free and supports cross-play and cross-progression with mobile. If you play on your phone, the one job before Wednesday: make sure your progress lives on a Ubisoft Connect account.
 
 > [!INFO] Update (October 2026)
-> It launched on schedule. Ubisoft's "Now available on Steam" post went up on August 5, the Steam store lists an August 5, 2026 release date, and Season 2 Phase 1, "The Call," started the same day ([our coverage](/news/season-2-the-call-live-bighorn/)). The launch post repeated the progress advice below (log into Ubisoft Connect on mobile first, then use the same account on Steam), and every player got launch gifts, detailed in [Steam launch rewards](/news/steam-launch-rewards-twitch-drops/). How Steam players received it is in [our review roundup](/news/steam-reviews-mixed-launch/).
+> It launched on schedule. Ubisoft's "Now available on Steam" post went up on August 5, the Steam store lists an August 5, 2026 release date, and Season 2 Phase 1, "The Call," started the same day ([our coverage](/news/season-2-the-call-live-bighorn/)). The launch post repeated the progress advice below (log into Ubisoft Connect on mobile first, then use the same account on Steam), and every player got launch gifts, detailed in [Steam launch rewards](/news/steam-launch-rewards-twitch-drops/). How Steam players received it is in [our review roundup](/news/steam-reviews-mixed-launch/). The Steam extras question below was answered too: Ubisoft's launch post confirmed Steam Trading Cards and Points Shop items, and the store page lists Steam Achievements.
 
 ## What's confirmed
 
@@ -46,7 +46,7 @@ Your progress belongs to your Ubisoft Connect account, not to your phone and not
 2. **On August 5, sign into that same Ubisoft Connect account on Steam.**
 3. **Can't remember the password?** If you created your Ubisoft Connect account through Google or Apple ID, the help article points you to "I have trouble logging in" on ubisoft.com.
 
-Playing with friends: the same article says you can play together on any device "as long as you are in the same regional server." Steam doesn't change which regional server you're on.
+Playing with friends: the same article says you can play together on any device "as long as you are in the same regional server." Ubisoft doesn't say Steam changes any of that, so plan your squad around regions, not storefronts.
 
 (Ubisoft has since updated that Help Center article for Steam. It now says Steam installs prompt you to add a light version of the Ubisoft Connect launcher, and that Steam purchases go through the Steam shop while staying linked to the Ubisoft Connect account you used.)
 

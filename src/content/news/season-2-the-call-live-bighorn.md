@@ -19,12 +19,12 @@ faqs:
   - question: "What's on the Season 2 Phase 1 premium pass?"
     answer: "The Vintage Elegance apparel set and the Antique Weaponry weapon skin. Ubisoft also offered an Elite Pass on top of Premium 'as an exclusive to The Call,' with a one-off pass progress boost and bonus items."
   - question: "What events are in Season 2 Phase 1?"
-    answer: "Four: High Caliber (August 5 to 31, assault rifle quests), Wall Street Woes (August 7 to 11), Take the Castle (August 21 to 25) and A New Enemy (September 4 to 8). The last three are timed mission runs with rewards that include the Lightspeed Agent title."
+    answer: "Four on Ubisoft's launch list: High Caliber (August 5 to 31, assault rifle quests), Wall Street Woes (August 7 to 11), Take the Castle (August 21 to 25) and A New Enemy (September 4 to 8). The last three are timed mission runs with rewards that include the Lightspeed Agent title. Ubisoft added a fifth later: the Bighorn headshot community weekend (August 28 to 30)."
 ---
 
 **Season 2 is live.** Phase 1, called **The Call**, started on **Wednesday, August 5, 2026**, the same day The Division Resurgence launched on Steam. The headline is a **free exotic assault rifle, The Bighorn**, on a new 50-tier Classified Ops Pass, plus four limited-time events and the biggest systems patch since launch.
 
-Ubisoft's launch trailer sets the mood: "We all swore an oath. Now we live by it." Very noble, for a season whose big event is making you speedrun Wall Street.
+Ubisoft's Season 2 trailer sets the mood: "We all swore an oath. Now we live by it." Very noble. Our oath mostly covers logging in before the dailies reset.
 
 > [!INFO] Update (October 2026)
 > Phase 1 ran until Season 2 Phase 2 started on September 16 ([what's new in Phase 2](/news/season-2-phase-2-live-diamondback/)), and Ubisoft later extended Phase 2 ([details](/news/season-2-phase-2-extended/)).
@@ -42,7 +42,7 @@ There's also an **Elite Pass**, which Premium owners could buy "as an exclusive 
 
 ## The Bighorn, in Ubisoft's words
 
-"Blast through your enemies in full auto, or aim down the sight for a semi-automatic experience, giving you a better chance of utilizing its special headshot damage-boosting ability. That's right, each headshot will add extra damage, and more headshots mean more stacked bonuses."
+"Blast through your enemies in full auto, or aim down the sight for a semi-automatic experience, giving you a better chance of utilizing its special headshot damage-boosting ability. That's right, each headshot will add extra damage, and more headshots mean more stacked bonuses for devastating strikes!"
 
 So: spray it like an assault rifle, or aim and turn it into a semi-auto headshot machine that gets stronger every time you land one. Ubisoft also put **The Bighorn Tactical Augmentation Module** in the Dark Zone vendor. Our [exotic weapons list](/guides/division-resurgence-exotic-weapons-list-2026/) tracks it alongside the other exotics, and the High Caliber event below is basically an excuse to level it.
 
@@ -59,7 +59,7 @@ High Caliber plus a free exotic assault rifle is not a coincidence. Equip the Bi
 
 ## The patch, in one breath
 
-Damage type bonus attributes (Blast, Shredding, Piercing) are gone from weapon rolls in favor of All Weapon Damage. Weapon mods were reworked (main stats up 100%, attribute bonuses down 25%). Exotic mods became removable and lootable. Crafting dropped from 24 to 15 hours. Shockwave Spike, Commando's Double Barrel engine, Ammo Refill, Steady Reload and Recycling got nerfed. PC players got a field of view slider, and mobile-only squads can stay in mobile Dark Zones.
+Damage type bonus attributes (Blast, Shredding, Piercing) are gone from weapon rolls in favor of All Weapon Damage or All Skill Damage. Weapon mods were reworked (main stats up 100%, attribute bonuses down 25%). Exotic mods became removable and lootable. Crafting dropped from 24 to 15 hours. Shockwave Spike, Commando's Double Barrel engine and Steady Reload were nerfed, while Ammo Refill (fewer procs, more bullets each) and Recycling (longer cooldown, bigger refill) were retuned. A field of view slider arrived, and mobile-only squads can stay in mobile Dark Zones.
 
 Every number, with what it means for your build: [Season 2 Phase 1 patch notes](/patch-notes/season-2-phase-1-the-call/).
 

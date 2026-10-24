@@ -15,7 +15,7 @@ faqs:
   - question: "Who is the enemy in the A New Enemy mission?"
     answer: "The Freemen. Ubisoft's Steam post says 'The Freemen are roaming the streets.' The mission title is not a riddle, and we're as relieved as you are."
   - question: "Was A New Enemy a speedrun before?"
-    answer: "Yes. It ran as the MM04 speedrun in Season 1 Phase 3, from July 10 to 15, 2026. Same mission, new season, and Season 2 Phase 1 changed a lot of builds in between, so your July strategy may need a refresh."
+    answer: "Yes, twice. Ubisoft's Season 1 Phase 3 list tags it MM04, and that run was July 10 to 15, 2026; an MM04 speedrun was also on the Season 1 Phase 2 schedule in May (May 15 to 19). Same mission, new season, and Season 2 Phase 1 changed a lot of builds in between, so your July strategy may need a refresh."
   - question: "When did Division Resurgence Season 2 Phase 2 start?"
     answer: "Wednesday, September 16, 2026, six weeks after Season 2 Phase 1, with the Diamondback exotic on the free and premium pass tracks. On September 4 that date was still just our calendar math; Ubisoft posted the Season 2 Phase 2 patch notes on September 15."
 ---
@@ -35,7 +35,7 @@ faqs:
 
 ## Been here before
 
-A New Enemy was also a Season 1 Phase 3 speedrun, tagged MM04, from July 10 to 15 ([our July post](/news/a-new-enemy-speedrun-july-2026/)). The mission is the same. Your build probably isn't.
+A New Enemy was also a Season 1 Phase 3 speedrun, tagged MM04, from July 10 to 15 ([our July post](/news/a-new-enemy-speedrun-july-2026/)), and an MM04 speedrun ran in May during Season 1 Phase 2 too. The mission is the same. Your build probably isn't.
 
 Season 2 Phase 1 reworked weapon mods (main stats up 100%, attribute bonuses down 25%), removed Blast, Shredding and Piercing bonus attributes from the weapon pool in favor of All Weapon Damage and All Skill Damage, and retuned several talents, skills and skill mod sets, including Steady Reload, Recycling, Shockwave Spike and the Ammo Refill combo set. If you cleared this in July and haven't touched your loadout since, run it once before you go for time.
 

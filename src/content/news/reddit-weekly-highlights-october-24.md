@@ -12,7 +12,7 @@ faqs:
   - question: "What was the top Division Resurgence Reddit post this month?"
     answer: "The 'Mitigation Update for Season 2 Phase 2' PSA on October 21, which shared Ubisoft's message that Season 2 Phase 2 is extended until a much bigger update later this year. It was the most upvoted post of the month on r/thedivisionresurgence when we pulled the data on October 24."
   - question: "Is the Division Resurgence revive bug fixed?"
-    answer: "Yes, in two steps. The developers' October 2 patch fixed players not being revivable in No Respawn Zones, and an October 6 client update fixed heart icons staying on screen after the first fix. If you still see revive problems, add details to the existing issue on Ubisoft's bug reporter."
+    answer: "Officially, yes, in two steps: the developers' October 2 patch fixed players not being revivable in No Respawn Zones, and an October 6 client update fixed heart icons staying on screen after the first fix. Some players still reported failed revives afterward. If you still see revive problems, add details to the existing issue on Ubisoft's bug reporter."
   - question: "Is Division Resurgence shutting down like Rainbow Six Mobile?"
     answer: "Nothing like that has been announced. Ubisoft announced in October that Rainbow Six Mobile will end service on January 15, 2027, which worried a lot of agents on the subreddit, but Ubisoft's latest Resurgence message is about a much bigger update coming later this year."
   - question: "Can you recalibrate mods in Division Resurgence?"
@@ -21,7 +21,7 @@ faqs:
     answer: "Scroll to Keep Reading at the bottom. Previous editions cover June 17 to July 2, June 16, May 28 and May 18. This edition picks up after our summer break, so think of it as the 'previously on' episode with extra hearts on screen."
 ---
 
-Our Reddit roundup is back after a summer off, and the subreddit did not take the summer off. Between **September 25 and October 24, 2026** the community on r/thedivisionresurgence lived through a revive bug that took two patches to put down, cheered a Heavy Weight nerf they'd campaigned for, digested the [Season 2 Phase 2 extension](/news/season-2-phase-2-extended/), and asked the most important lore question of the season. Here are the posts that defined the month.
+Our Reddit roundup is back after a summer off, and the subreddit did not take the summer off. Between **September 25 and October 24, 2026** the community on r/thedivisionresurgence lived through a revive bug that took two official fixes (and some players say still isn't fully gone), got the Heavy Weight nerf some players had campaigned for, digested the [Season 2 Phase 2 extension](/news/season-2-phase-2-extended/), and asked the most important lore question of the season. Here are the posts that defined the month.
 
 Scores and comment counts are as of October 24, when we pulled the subreddit's top and newest posts.
 
@@ -33,13 +33,13 @@ Scores and comment counts are as of October 24, when we pulled the subreddit's t
 
 The month's top post (75 upvotes, 36 comments) shared Ubisoft's video and message: "We have decided to extend Season 2 Phase 2 until we are ready to release a much bigger update later this year." No date, no Phase 3, and a lot of comment-section speculation about what "much bigger" means.
 
-**Our take:** we covered what the extension does and doesn't change in [our news post](/news/season-2-phase-2-extended/). Short version: the Diamondback pass sticks around longer and the next big thing is "later this year."
+**Our take:** we covered what the extension does and doesn't change in [our news post](/news/season-2-phase-2-extended/). Short version: the current phase, Diamondback pass included, should run longer (check the pass timer in game), and the next big thing is "later this year."
 
 ## 2. The Revive Bug, Act 1: "This Game Has Some of the Smartest Players in the World"
 
 **u/InternalDay3419 · September 27 · [Original post](https://www.reddit.com/r/thedivisionresurgence/comments/1wrl04z/this_game_has_some_of_the_smartest_players_in_the/)**
 
-The funniest way anyone described the bug: four groups in a row, downed agents waiting to be picked up, and nobody able to revive because the prompt simply wasn't there. Bug reports piled up the same weekend, including u/TheMobilecrafter listing [Chinatown, Take the Castle and On The Radio](https://www.reddit.com/r/thedivisionresurgence/comments/1wsq763/legendaryheroic_no_revive_bug/) and u/Immediate_Claim_1544 pointing at [elite mission boss rooms](https://www.reddit.com/r/thedivisionresurgence/comments/1wse2nc/revive_button_doesnt_show_up_in_elite_mission/).
+The funniest way anyone described the bug: four groups in a row, downed agents waiting to be picked up, and nobody able to revive because the prompt simply wasn't there. Bug reports piled up the next day, including u/TheMobilecrafter listing [Chinatown, Take the Castle and On The Radio](https://www.reddit.com/r/thedivisionresurgence/comments/1wsq763/legendaryheroic_no_revive_bug/) and u/Immediate_Claim_1544 pointing at [elite mission boss rooms](https://www.reddit.com/r/thedivisionresurgence/comments/1wse2nc/revive_button_doesnt_show_up_in_elite_mission/).
 
 **Our take:** the real heroes were the Field Medics, because the only workaround players found was getting picked up by a medic's skills before fully going down.
 
@@ -47,7 +47,7 @@ The funniest way anyone described the bug: four groups in a row, downed agents w
 
 **u/TDResurgence (Dev Team) · October 2 · [Original post](https://www.reddit.com/r/thedivisionresurgence/comments/1wvvgb2/patch_notes_revive_bug_fix/)**
 
-The developers posted the fix: "Fixed an issue preventing players from being revived while in a No Respawn Zone." The next day, players including u/sethboyardeeTV and u/Dbzsuxazz reported that revive heart icons were [sticking on screen](https://www.reddit.com/r/thedivisionresurgence/comments/1wws2cu/revive_bug_isnt_patched_and_icons_stay_on_screen/) and hurting frame rates. On October 6 a [client update](https://www.reddit.com/r/thedivisionresurgence/comments/1wzb767/client_update/), quoted from the official Discord, fixed the icons.
+The developers posted the fix: "Fixed an issue preventing players from being revived while in a No Respawn Zone." The next day, players including u/sethboyardeeTV and u/Dbzsuxazz reported revives still failing in some fights, plus revive heart icons [sticking on screen](https://www.reddit.com/r/thedivisionresurgence/comments/1wws2cu/revive_bug_isnt_patched_and_icons_stay_on_screen/) and costing frame rate. On October 6 a [client update](https://www.reddit.com/r/thedivisionresurgence/comments/1wzb767/client_update/), quoted from the official Discord, fixed the icons.
 
 **Our take:** report, patch, follow-up patch inside a week. That's the bug reporter loop working the way it should. Full details in our [October hotfixes](/patch-notes/october-2026-hotfixes/) and [revive bug](/news/revive-bug-no-respawn-zones-fixed/) posts.
 
@@ -55,9 +55,9 @@ The developers posted the fix: "Fixed an issue preventing players from being rev
 
 **u/Ticksyy · October 14 · [Original post](https://www.reddit.com/r/thedivisionresurgence/comments/1x5t0uj/14102026_patch_notes/)**
 
-The Heavy Weight skill mod combo set dropped from 25% to 5% of Max Health in additional damage, with Ubisoft explaining it let tanks deal "massive damage which was an issue in PvP." Back on September 28, u/Cultural-Clothes-432 had rallied players to [contribute to the Heavy Weight issue](https://www.reddit.com/r/thedivisionresurgence/comments/1wsmx9a/contribution_to_heavyweight_nerf_in_bug_reporter/) on the bug reporter, and the developers flagged the change on October 2 before shipping it.
+The Heavy Weight skill mod combo set dropped from 25% to 5% of Max Health in additional damage, with the October 14 notes (shared by u/Ticksyy) explaining that it let tanks deal "massive damage which was an issue in PvP." Back on September 28, u/Cultural-Clothes-432 had rallied players to [contribute to the Heavy Weight issue](https://www.reddit.com/r/thedivisionresurgence/comments/1wsmx9a/contribution_to_heavyweight_nerf_in_bug_reporter/) on the bug reporter, and the developers flagged the change on October 2 before shipping it.
 
-**Our take:** two weeks from community campaign to patch. If you want something changed, the bug reporter clearly gets read.
+**Our take:** two weeks from community campaign to patch. If you want something changed, the bug reporter seems to get read.
 
 ## 5. "Can We PLEASE Get Mod Recalibration? Our Sanity Depends on It."
 
@@ -71,7 +71,7 @@ A tidy, friendly campaign: let us recalibrate **one** attribute on mods, the way
 
 **u/PatanDeAcero · October 9 · [Original post](https://www.reddit.com/r/thedivisionresurgence/comments/1x1mixw/loadouts/)**
 
-Posted in Spanish: you join a mission, see your squad needs a healer or a tank, and there's no quick way to swap your whole build mid-instance. The ask is build slots, like the existing outfit loadouts, that swap your full setup when you're out of combat. u/Due_Treat_3938 asked the same thing on [October 6](https://www.reddit.com/r/thedivisionresurgence/comments/1wyy70u/is_there_any_news_about_the_possibility_of_saving/).
+Posted in Spanish: you join a mission, see your squad needs a healer or a tank, and there's no quick way to swap your whole build mid-instance. The ask is build slots, like the existing outfit loadouts, that swap your full setup when you're out of combat.
 
 **Our take:** until that exists, our [build planner](/builder/) saves any build as a shareable link, so at least your squad can see what you're supposed to be wearing.
 
@@ -83,7 +83,7 @@ The most important question of Season 2. Why isn't the cat an agent? Why can't t
 
 **Our take:** the cat is fine. The cat is always fine. The dog deserves pets and an achievement prompt.
 
-## 8. "Logged Over 300 Hours Since Steam Launch and Never Seen an 'Elite Patrols' Mission"
+## 8. 300 Hours Since the Steam Launch, Zero Elite Patrols
 
 **u/Rock3tPunch · September 28 · [Original post](https://www.reddit.com/r/thedivisionresurgence/comments/1ws41gs/logged_over_300_hours_since_steam_launch_i_had/)**
 
@@ -114,7 +114,7 @@ Peak theorycrafting: a player ran regressions on Engineering versus drone damage
 - **"First went. Rainbow Six Mobile shutting down."** u/Yarmak2099 · [Oct 8](https://www.reddit.com/r/thedivisionresurgence/comments/1x0wlr8/first_went_rainbow_six_mobile_shutting_down/). 44 comments of agents wondering about Resurgence after Ubisoft announced Rainbow Six Mobile will end service on January 15, 2027. Nothing similar has been announced for Resurgence, and Ubisoft's latest message points to a bigger update.
 - **"I think I'm finally done with this game."** u/RogueBlue2164 · [Oct 12](https://www.reddit.com/r/thedivisionresurgence/comments/1x3p3tp/i_think_im_finally_done_with_this_game/). The specific feedback is worth hearing: since Dark Zone daily quests started rewarding skill mods in Season 2 Phase 2, this Tactical Pharma player says most of their gold chips came for the other Field Medic focus. A good one to add to the bug reporter.
 - **"Gold chip exploit in DZ."** u/Mysterious_Layer1937 · [Oct 9](https://www.reddit.com/r/thedivisionresurgence/comments/1x1hgqh/gold_chip_exploit_in_dz/). Players reporting others trading kills to farm gold chips, and clans enforcing their own no-exploit rules. Report exploits; don't build your account on one.
-- **"Diamondback."** u/Randel_The_Vandel_ · [Oct 14](https://www.reddit.com/r/thedivisionresurgence/comments/1x5oyy7/diamondback/). Early impressions of the new exotic. Ubisoft's October 14 notes confirmed its talent name is Agonizing Bite; see the [exotic weapons list](/guides/division-resurgence-exotic-weapons-list-2026/).
+- **"Diamondback."** u/Randel_The_Vandel_ · [Oct 14](https://www.reddit.com/r/thedivisionresurgence/comments/1x5oyy7/diamondback/). A player who has the gun maxed finds it underwhelming in PvE. The October 14 notes (shared by u/Ticksyy) confirmed its talent name is Agonizing Bite; see the [exotic weapons list](/guides/division-resurgence-exotic-weapons-list-2026/).
 - **"New player!"** u/Strange_Pressure_546 · [Oct 1](https://www.reddit.com/r/thedivisionresurgence/comments/1wuudwa/new_player/). Welcome, agent. Start with [which specialization to pick](/guides/which-specialization-to-pick/) and our [endgame tips](/guides/division-resurgence-endgame-tips/).
 
 ## What This Month Says About the Community

@@ -23,7 +23,7 @@ faqs:
 **The MM04 speedrun, "A New Enemy," runs from Friday, July 10 to Wednesday, July 15, 2026.** Ubisoft's pitch: "Race the clock and beat the new threat." Short, clear, and exactly what it says on the tin. It's one of six limited-time events in Season 1 Phase 3, and July is where most of them pile up: the Cleaner faction hunt ends July 21, Trigger Happy starts the same day, Liberty and Justice for All runs July 24 to 29, and a Season 2 Countdown login event kicks off July 27. The full calendar, cosmetic draws included, is below.
 
 > [!INFO] Update (October 2026)
-> A New Enemy came back as a Season 2 Phase 1 speedrun weekend from September 4 to 8, with rewards including the "Lightspeed Agent" title ([our September post](/news/a-new-enemy-speedrun-september-2026/)). We also covered [Liberty and Justice for All](/news/liberty-and-justice-speedrun-july-2026/) and [the Season 2 Countdown](/news/season-2-countdown-login-event/) when they started.
+> A New Enemy came back as a Season 2 Phase 1 speedrun weekend from September 4 to 8, with rewards including the "Lightspeed Agent" title ([our September post](/news/a-new-enemy-speedrun-september-2026/)). We also covered [Liberty and Justice for All](/news/liberty-and-justice-speedrun-july-2026/) and [the Season 2 Countdown](/news/season-2-countdown-login-event/) when they started. The date question below got its answer on July 31: Ubisoft confirmed the Steam launch and Season 2 for August 5 ([details](/news/steam-release-date-august-5/)).
 
 ## A New Enemy speedrun: what we know
 

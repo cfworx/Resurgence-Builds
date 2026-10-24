@@ -38,9 +38,9 @@ Ubisoft's Steam post: "Help us get a collective 300 000 headshot kills ingame th
 
 ## What the Bighorn does, in Ubisoft's words
 
-From Ubisoft's Season 2 launch article: "Blast through your enemies in full auto, or aim down the sight for a semi-automatic experience, giving you a better chance of utilizing its special headshot damage-boosting ability. That's right, each headshot will add extra damage, and more headshots mean more stacked bonuses."
+From Ubisoft's Season 2 launch article: "Blast through your enemies in full auto, or aim down the sight for a semi-automatic experience, giving you a better chance of utilizing its special headshot damage-boosting ability. That's right, each headshot will add extra damage, and more headshots mean more stacked bonuses for devastating strikes!"
 
-Translation for this weekend: hip-fire is full auto, aiming down sights switches it to semi-auto, and every headshot stacks more damage. Ubisoft's own pitch says aiming down sights gives you a better chance at that headshot bonus, so for a headshot event the plan writes itself. Ubisoft's posts don't give the exact stack values or cap, and we're not going to guess them, so read the talent text in the Armory. Our [exotic weapons database](/database/exotic-weapons/) has what's verified.
+Translation for this weekend: hip-fire is full auto, aiming down sights switches it to semi-auto, and every headshot stacks more damage. Ubisoft's own pitch says aiming down sights gives you a better chance at that headshot bonus, so for a headshot event the plan writes itself. Ubisoft's posts don't give the exact stack values or cap, and we're not going to guess them, so read the talent text in the Armory. Our [exotic weapons list](/guides/division-resurgence-exotic-weapons-list-2026/) has everything Ubisoft has confirmed about the Bighorn so far; its stack values aren't verified yet.
 
 ## How to get the Bighorn
 
