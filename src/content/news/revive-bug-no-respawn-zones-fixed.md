@@ -23,7 +23,7 @@ faqs:
 Good news for anyone who spent last week face down in a boss room: Ubisoft has **patched the revive bug**. In a post on the official subreddit on **Friday, October 2**, the dev team announced a new game patch with this fix: "Fixed an issue preventing players from being revived while in a No Respawn Zone." The matching report on Ubisoft's bug reporter, **TDR-556**, "Cannot Revive Team Mates On No Respawn Zones (After The September 24 Patch)," was marked **Done** the same day, and so was **TDR-175**, "Can't Respawn In Dark Zone After Being Killed By Another Player Since The New Update Two Days Ago." Also starting today: the **Wall Street Woes** speedrun, running **October 2 to 5**.
 
 > [!INFO] Update (October 2026)
-> After the fix, players reported on October 3 that heart (revive) icons were staying stuck on screen, and some said it cost them frame rate. Ubisoft deployed a client update on October 6 that "should no longer display heart icons indefinitely on screen," and a related issue, TDR-493 "My F Key Will Not Revive A Player," went to Done on October 15. Some comments on TDR-556 still report revive trouble after the fix, so if that's you, add your details there: Ubisoft asks players to search the bug reporter and contribute to existing reports before filing new ones. The rest of October's fixes are in our [October hotfixes post](/patch-notes/october-2026-hotfixes/).
+> After the fix, players reported on October 3 that heart (revive) icons were staying stuck on screen, and some said it cost them frame rate. Ubisoft deployed a client update on October 6 that "should no longer display heart icons indefinitely on screen," and another revive report, TDR-493 "My F Key Will Not Revive A Player," went to Done on October 15. Some comments on TDR-556 still report revive trouble after the fix, so if that's you, add your details there: Ubisoft asks players to search the bug reporter and contribute to existing reports before filing new ones. The rest of October's fixes are in our [October hotfixes post](/patch-notes/october-2026-hotfixes/).
 
 ## The revive fix (TDR-556)
 
@@ -51,7 +51,7 @@ It's the players' name for it, straight from the TDR-556 title, and we couldn't 
 
 ## Also in the October 2 post
 
-The same post said Ubisoft is investigating a possible change to the **Heavy Weight** Skill Mod Combo Set for a future patch. Juggernaut players, our [October hotfixes post](/patch-notes/october-2026-hotfixes/) tracks where that lands.
+The same post said Ubisoft was investigating a possible change to the **Heavy Weight** Skill Mod Combo Set for a future patch. It landed on October 14: Heavy Weight's additional damage dropped from 25% to 5% of Max Health. Details in our [October hotfixes post](/patch-notes/october-2026-hotfixes/).
 
 ## Wall Street Woes speedrun: October 2 to 5
 
@@ -65,6 +65,7 @@ Season 2 Phase 2's event calendar:
 |---|---|
 | Trigger Happy (weapon training) | Sep 16 to Oct 13 |
 | Exotic SHD Keys (daily login) | Sep 16 to Oct 26 |
+| Derelict Store (Challenging speedrun) | Sep 18 to 21 |
 | Wall Street Woes (speedrun) | Oct 2 to 5 |
 | Liberty & Justice For All (speedrun) | Oct 16 to 19 |
 

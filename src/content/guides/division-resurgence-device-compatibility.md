@@ -20,7 +20,7 @@ faqs:
   - question: "Can I play Division Resurgence on PC?"
     answer: "Yes, and you no longer need an emulator or a very large phone. It's free on Steam and Ubisoft Connect (early access started on Ubisoft Connect on April 28, 2026; the full PC launch was August 5, 2026). Windows 11 only, around 17 GB installed, and Ubisoft recommends keeping at least 30 GB free."
   - question: "Is Division Resurgence on Steam?"
-    answer: "Yes, since August 5, 2026. It's free, it's fully cross-play and cross-progression with mobile through your Ubisoft Connect account, and Steam will prompt you to install a light version of the Ubisoft Connect launcher on the way in, because of course it will. One Ubisoft account, two launchers, zero surprises for anyone who has played a Ubisoft game on Steam before."
+    answer: "Yes, since August 5, 2026. It's free, it's fully cross-play and cross-progression with mobile through your Ubisoft Connect account, and Steam will prompt you to install a light version of the Ubisoft Connect launcher on the way in. One Ubisoft account, two launchers, zero surprises for anyone who has played a Ubisoft game on Steam before."
   - question: "Can I play Division Resurgence on an emulator?"
     answer: "Yes. Ubisoft officially allows it but does not provide technical support if you hit issues on emulator."
   - question: "Does it support controllers?"

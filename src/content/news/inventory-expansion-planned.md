@@ -32,7 +32,7 @@ Planned is one of the statuses Ubisoft sets on its tracker, alongside Done, In P
 
 On October 21 Ubisoft extended Season 2 Phase 2 "until we are ready to release a much bigger update later this year" ([our coverage](/news/season-2-phase-2-extended/)). Is inventory expansion part of that? Ubisoft hasn't said, so anyone who tells you it is, is guessing.
 
-Want to show support? Ubisoft has asked players to search for existing reports and contribute to them before filing new ones, so upvote TDR-537 rather than posting a duplicate ([how the tracker works](/news/bug-reporter-fixes-september-22/)). Other community suggestions on the tracker include mod recalibration (TDR-652).
+Want to show support? Ubisoft has asked players to search for existing reports and contribute to them before filing new ones, so upvote TDR-537 rather than posting a duplicate ([how the tracker works](/news/bug-reporter-fixes-september-22/)). Other community suggestions include mod recalibration, which a [community post](https://www.reddit.com/r/thedivisionresurgence/comments/1x5osoi/can_we_please_get_mod_recalibration_our_sanity/) on October 14 says is on the tracker as TDR-652.
 
 ## 34.5 million dismantles, in perspective
 
@@ -73,4 +73,4 @@ Twelve a second, around the clock, for a month. Somewhere right now, a dad is di
 - [Ubisoft Help Center: Patch Note, 1.2.1 Update (May 20, 2026)](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2513-patch-note---1-2-1-update-20-may-2026/)
 - [Oldfartsgaming: 7 Things I Wish I Knew Before Endgame (YouTube)](https://www.youtube.com/watch?v=7JtJCeEE8NI)
 - [TikTokAndy: UNLIMITED Purple & Gold Mods & Weapon Attachments (YouTube)](https://www.youtube.com/watch?v=UJTNo_5nQA0)
-- [GameJoy Explained: Should you play The Division Resurgence on Steam? (YouTube)](https://www.youtube.com/watch?v=mPqzSGmBlS0)
+- [GameJoy Explained: Only 3 Mins Needed To Decide If You Should Play The Division Resurgence on Steam! (YouTube)](https://www.youtube.com/watch?v=mPqzSGmBlS0)

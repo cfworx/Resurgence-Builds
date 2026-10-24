@@ -19,7 +19,7 @@ faqs:
   - question: "How do I get gold mods in Division Resurgence?"
     answer: "Volume, mostly. Ubisoft doesn't publish nest drop rates, but TikTokAndy reports roughly one gold in three runs on that Heroic named-boss nest, and says regular nests rarely give him even purple attachments. Ubisoft's patch notes call that rarity yellow, if you were wondering where the gold went. Gold is just yellow with a better agent."
   - question: "How do I get exotic mods now that exotics don't come with them?"
-    answer: "Since Season 2 Phase 2: the Classified Ops Pass, one random exotic mod from the Weekly Quest, one from the Elite Mission Challenge chest, a weekly crate per exotic at the Dark Zone vendor for 2,500 DZ Credits, and Weapon Mod Selections in Exotic Sealed Caches. Five sources, and somehow you'll still be one mod short."
+    answer: "Five places. Since Season 2 Phase 1: one random exotic mod from the Weekly Quest, one from the Elite Mission Challenge chest, and a weekly crate per exotic at the Dark Zone vendor for 2,500 DZ Credits. Since Season 2 Phase 2: the Classified Ops Pass and Weapon Mod Selections in Exotic Sealed Caches. Five sources, and somehow you'll still be one mod short."
   - question: "Should I upgrade every mod I find?"
     answer: "No. Oldfartsgaming maxes only the mods with the stats his build wants and saves materials for the next good one, and TikTokAndy says to spend upgrades on your best mods only. Upgrading a mediocre purple is how you end up broke and still mediocre."
   - question: "Can you solo the Heroic Hostile Nest?"

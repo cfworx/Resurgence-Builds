@@ -73,7 +73,7 @@ The April 19 developer stream was the most substantive Q&A the game has had post
 
 The team also opened a public question intake before the stream ([u/TDResurgence: share your questions](https://www.reddit.com/r/thedivisionresurgence/comments/1sl9h12/share_your_questions_for_our_upcoming_live_stream/)), and the PC early-access stream the following week was sponsored content with an actual community segment ([RogueGold: PC launch stream](https://www.youtube.com/watch?v=DzcW3j6rApw), April 28, 2026).
 
-What the subreddit is now asking for is a regular drumbeat: monthly Q&As, posted patch-note previews, and an in-game news ticker. Ubisoft has not committed to a public cadence, and the next "official" communication on the calendar is the Phase 3 marketing push.
+What the subreddit is now asking for is a regular drumbeat: monthly Q&As, posted patch-note previews, and an in-game news ticker. Ubisoft has not committed to a public cadence, and the next scheduled official update on the calendar was Phase 3.
 
 ## 6. What's coming next - and what is locked in
 

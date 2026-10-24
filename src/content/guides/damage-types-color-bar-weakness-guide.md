@@ -15,7 +15,7 @@ videoTitle: "SHD Agent Manual: Damage Types Explained"
 videoChannel: "AgentHuntzman"
 faqs:
   - question: "What do the colored bars above enemy health mean in Division Resurgence?"
-    answer: "They're the game's way of whispering 'hey, use this damage type.' Dark blue bar means the enemy is weak to Piercing damage. Light blue means weak to Shredding. Red means weak to Blast. The game put this information right on the screen and then decided telling you what it means was apparently optional. The tutorial team must have been on lunch that day. Or maybe they assumed everyone reads patch notes like scripture. Spoiler: nobody does."
+    answer: "They're the game's way of whispering 'hey, use this damage type.' Dark blue bar means the enemy is weak to Piercing damage. Light blue means weak to Shredding. Red means weak to Blast. The game puts the information right on the screen; reading it is on us. And let's be honest, most of us skipped the tutorial text to get to the shooting part."
   - question: "Does damage type affect headshot damage in Division Resurgence?"
     answer: "As far as community testing can tell, yes. Headshot multipliers appear to stack on top of your base damage, and the damage type match scales that base, so a headshot with the correct damage type hits harder than a headshot with the wrong one. It's like the difference between punching someone with brass knuckles versus a pool noodle. Same motion, dramatically different results. Ubisoft hasn't published the formula, but the advice holds either way: match your damage type first, THEN aim for the head."
   - question: "Does the damage type weakness bar appear on PvP players in Conflict?"

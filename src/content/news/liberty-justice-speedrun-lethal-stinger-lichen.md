@@ -9,7 +9,7 @@ shareTitle: "A speedrun, a skin and a letter"
 shareText: "Final call for the Liberty & Justice For All speedrun, plus a Lethal Stinger Lichen draw and a mysterious letter from the official account."
 faqs:
   - question: "When is the Liberty & Justice For All speedrun in Division Resurgence?"
-    answer: "October 16 to 19, 2026, according to Ubisoft's Season 2 Phase 2 article. Finish the mission within the time limit for rewards. Ubisoft's Steam reminder went up on the 19th, which is the final day on that schedule, so this is a tonight plan, not a next-weekend plan."
+    answer: "October 16 to 19, 2026, according to Ubisoft's Season 2 Phase 2 article. Finish the mission within the time limit for rewards. Ubisoft's Steam reminder went up on the 19th, the final day on that schedule, so it was a same-night plan, not a next-weekend plan. The event is over now."
   - question: "What is the Lethal Stinger Lichen cosmetic draw?"
     answer: "A cosmetic draw Ubisoft announced on Steam on October 19, pitched as a 'venomous look.' The post doesn't list the contents. The names go back to Season 1 Phase 3, when Lethal Stinger was an exotic skin for the Scorpio shotgun and Lichen was a weapon skin set. Pricing is shown on the draw screen in game, so look before you pull. Your wallet has no venom resistance."
   - question: "Is the Milky Way weapon skin in the battle pass or the store?"

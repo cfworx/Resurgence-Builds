@@ -104,7 +104,7 @@ Oldfartsgaming says upgrading a decent OS Protocol that fits his build as far as
 ### A second specialization
 
 - **Oldfartsgaming:** he capped Demolitionist, then started levelling Tech Operator (which he says overlaps a lot with his Engineering setup) and tried Bulwark, running his dailies on them while keeping his main for harder missions. He says the extra levels give skill points and push his SHD level, and that after 40 the game encourages you to go broad.
-- **Official:** Ubisoft's launch press release describes "the flexibility to switch roles at any time." Our [specialization guide](/guides/which-specialization-to-pick/) covers what each one does.
+- **Official:** Ubisoft's August 5 PC launch press release describes "the flexibility to switch roles at any time." Our [specialization guide](/guides/which-specialization-to-pick/) covers what each one does.
 
 He also says it took him a while to understand how his specialization's skill stacks work together, and that putting points into the skills that feed them made a big difference. Read your skill tree tooltips slowly; future you will thank you.
 

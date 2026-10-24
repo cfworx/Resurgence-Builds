@@ -4,7 +4,7 @@ publishDate: 2026-09-22
 updatedDate: 2026-10-24
 author: "RapidF5"
 tags: ["News", "Bugs", "Season 2", "Community"]
-description: "Ubisoft's bug reporter marked the Division Resurgence 30fps lock, Bighorn first person, blank exotic T2 window and proficiency bugs Done on Sep 22."
+description: "Ubisoft's bug reporter marked the Division Resurgence 30fps lock, Bighorn first person, blank exotic T2 window and a proficiency bug Done on Sep 22."
 featuredImage: "/images/patch-notes/division-resurgence-phase-2-patch-notes-hero.webp"
 imageAlt: "A Division agent stomping on cockroaches in the snow, our tribute to bugs going to Done"
 shareTitle: "Four bugs just went to Done"
@@ -17,7 +17,7 @@ faqs:
   - question: "How do I report a bug in Division Resurgence?"
     answer: "Use Ubisoft's official bug reporter. Ubisoft's Help Center says to upvote an existing issue, add details such as screenshots or videos, or report a new issue if yours isn't listed, and otherwise to contact Player Support through the in-game support icon. A one-star review might feel great, but it doesn't land on the bug list."
   - question: "Why did my Bighorn force first person?"
-    answer: "That was a bug, tracked as TDR-141 'Bighorn Forcing 1st Person,' and Ubisoft marked it Done on September 22. The Bighorn is meant to switch from full auto to semi-auto when you aim down sights and stack bonus damage on headshots, all from the usual third-person view. If it still flips your camera, add the details to the issue."
+    answer: "That was a bug, tracked as TDR-141 'Bighorn Forcing 1st Person,' and Ubisoft marked it Done on September 22. The Bighorn is meant to switch from full auto to semi-auto when you aim down sights and stack bonus damage on headshots; Ubisoft's description of it doesn't mention a camera change. If it still flips your camera, add the details to the issue."
   - question: "Did Ubisoft fix weapon proficiency not levelling up?"
     answer: "On the tracker, yes: TDR-100 'Weapon's Proficiency Is Broken And Not Levelling Up' went Done on August 27, and TDR-108 'Armory/Proficiency Not Counting And Progressing' followed on September 22. The Season 2 Phase 1 and Phase 2 patch notes also list proficiency and Armory progression fixes. If your bar still won't move, add the weapon and what you did to the issue."
 ---
@@ -45,7 +45,7 @@ The title says the frame rate got stuck at 30fps after a "recent BP patch fix," 
 
 ### The Bighorn forcing first person (TDR-141)
 
-The Bighorn, the free exotic assault rifle from the [Season 2 Phase 1](/patch-notes/season-2-phase-1-the-call/) pass, is designed to switch from full auto to semi-auto when you aim down sights, with each headshot stacking extra damage. Ubisoft's description doesn't mention first person, and TDR-141 tracked the camera switch as a bug. It's now Done, so Bighorn owners can go back to farming headshots from the usual third-person view. Our [exotic weapons list](/guides/division-resurgence-exotic-weapons-list-2026/) has more on the gun.
+The Bighorn, the free exotic assault rifle from the [Season 2 Phase 1](/patch-notes/season-2-phase-1-the-call/) pass, is designed to switch from full auto to semi-auto when you aim down sights, with each headshot stacking extra damage. Ubisoft's description doesn't mention first person, and TDR-141 tracked the camera switch as a bug. It's now Done, so if the camera still flips on you, add your details to the issue. Our [exotic weapons list](/guides/division-resurgence-exotic-weapons-list-2026/) has more on the gun.
 
 ### The blank exotic T2 upgrade window (TDR-104)
 
@@ -69,7 +69,7 @@ TDR-157 is marked Deprioritized, while TDR-111, a similar-sounding report, is In
 
 ## What the bug reporter is and how to use it
 
-The bug reporter is Ubisoft's public issue tracker for The Division Resurgence, on ubisoft.com. Each issue has a TDR number, a title and a status that Ubisoft updates. So far we've seen Done, In Progress and Deprioritized. Ubisoft's Help Center article on playing on PC (Steam or Ubisoft Connect) points players with PC issues to it, and the list covers plenty beyond PC settings: proficiency, exotic upgrades, the Bighorn.
+The bug reporter is Ubisoft's public issue tracker for The Division Resurgence, on ubisoft.com. Each issue has a TDR number, a title and a status that Ubisoft updates. So far we've seen Done, In Progress, Planned and Deprioritized. Ubisoft's Help Center article on playing on PC (Steam or Ubisoft Connect) points players with PC issues to it, and the list covers plenty beyond PC settings: proficiency, exotic upgrades, the Bighorn.
 
 What the Help Center tells you to do:
 

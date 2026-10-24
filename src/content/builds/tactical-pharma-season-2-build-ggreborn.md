@@ -25,7 +25,7 @@ faqs:
   - question: "How much Skill Crit Chance does Tactical Pharma need?"
     answer: "The creators don't agree, which is how you know it's a real question. GGReborn sits around 69% and wants to come down to 55 or 60% so he can push Skill Crit Damage and Skill Multi-Shot higher. TikTokAndy, at 55%, thinks the build gets good around 75%. GGReborn then ran 65.87%, 71.19% and 76.73% setups through Lone Wolf on October 22, told viewers to watch the damage numbers rather than the clock, and didn't name a winner, so we won't either."
   - question: "Is Glass Cannon worth it on Tactical Pharma?"
-    answer: "GGReborn runs it; our database lists the base version as +20% Damage in exchange for -10% Damage Reduction. TikTokAndy's version skips Glass Cannon for Toymaker II and he still calls it one of the squishiest builds he's ever made, which is why he rolled Damage Reduction onto several of his chips. If you wear Glass Cannon, wear it behind cover and a long way from anyone carrying a shotgun."
+    answer: "GGReborn runs it; our database lists the base version as +20% Damage in exchange for -10% Damage Reduction. TikTokAndy's chest has Toymaker II, the only good chest talent he could get, and he still calls it one of the squishiest builds he's ever made, which is why he rolled Damage Reduction onto several of his chips. If you wear Glass Cannon, wear it behind cover and a long way from anyone carrying a shotgun."
   - question: "How is this different from the Season 1 Tactical Pharma build?"
     answer: "Our older Tactical Pharma page is RogueMadras's May 2026 build: Rampart recommended as the OS Protocol, Prime Engineer on the backpack, and a Vector plus MK16 swap running Backup Battery, Backup Magazine, Multi-Pronged Attack and Multitasking. GGReborn keeps the Jackpot 4pc + Fire Cycle 2pc core and Glass Cannon, but runs Brains Over Brawn, Minion Training II and a Lightweight M4 plus First Wave Vector, and his weapon mods carry the Skill Intensity and Skill Critical Damage bonus rolls that Season 2 Phase 1 added to the weapon mod pool."
 videoId: "OVnksyrlj88"
@@ -107,7 +107,7 @@ In our reading of that text, the Vector is an Engineering battery: spray it to t
 GGReborn's stated focus: Intensity on the Swarm (with Multi-Shot and Crit Damage on the side), Duration and Intensity on the Hive, and Intensity plus Cooldown Recovery on the Trap, with Skill Critical Chance and Damage as secondaries everywhere. Full combo text and the alternatives are in our [skill mod combo database](/database/skill-mod-combos/).
 
 > [!INFO] The drop-rate table uses different names
-> Ubisoft's official drop-rate table lists nine Tactical Pharma combo sets in the Tactical Pharma Cache, the same count as our database, but five of its names (Lightweight, Siphon, Acidic Effect, Improved Formula and Feebleness) don't match the in-game names both creators read off their screens, such as Chemical Recharge, Hereafter Resilience and Enhanced Formula. Our read is that the table uses different names for some of the same sets, but we can't map them one to one, so check the effect text on whatever you pull. TikTokAndy says he farmed his chips in the Dark Zone, and Dark Zone daily quests pay skill mods since Season 2 Phase 2. Full odds are in our [drop rates database](/database/drop-rates/).
+> Ubisoft's official drop-rate table lists nine Tactical Pharma combo sets in the Tactical Pharma Cache, the same count as our database, but five of its names (Lightweight, Siphon, Acidic Effect, Improved Formula and Feebleness) don't match the in-game names both creators read off their screens, such as Chemical Recharge, Hereafter Resilience and Enhanced Formula. Our read is that the table uses different names for some of the same sets. On the Swarm, for example, the other two names match, so Feebleness is very likely Enhanced Formula (whose effect is a damage debuff). We can't map the Chemical Trap and Oxidizing Hive names one to one, so check the effect text on whatever you pull. TikTokAndy says he farmed his chips in the Dark Zone, and Dark Zone daily quests pay skill mods since Season 2 Phase 2. Full odds are in our [drop rates database](/database/drop-rates/).
 
 ---
 
@@ -164,7 +164,7 @@ He framed the test as higher crit chance versus lower crit chance with more mult
 - **Throw, then shoot.** TikTokAndy's in-mission rhythm is simple: throw the trap, drop the Hive, keep shooting. He calls Tactical Pharma "one of the least skill intensive builds" you'll make in this game.
 - **Play slower than a gun build.** "The name of the game is effectiveness," not speed, per TikTokAndy.
 - **Keep the Engineering buffs rolling.** Brains Over Brawn scales with Engineering, and both Vector talents pay out Engineering (our reading of the talent text above).
-- **Watch for rushers.** TikTokAndy called them the hardest part of his solo Legendary attempt. Hereafter Resilience's drones hit anything within 15 meters while the Hive rides on your backpack, and Enhanced Formula's -12% Damage debuff and kill heal give the Swarm some defensive value (database text).
+- **Watch for rushers.** TikTokAndy expected them to be the hardest part of his solo Legendary attempt (he also worried about boss damage, and a boss is where the run ended). Hereafter Resilience's drones hit anything within 15 meters while the Hive rides on your backpack, and Enhanced Formula's -12% Damage debuff and kill heal give the Swarm some defensive value (database text).
 - **Use cover.** Glass Cannon costs you Damage Reduction, and TikTokAndy's Overwatch backpack only pays out after 3 seconds behind cover.
 - **Slot your Tactical Augmentations.** TikTokAndy forgot them in a previous video and made a point of adding them this time, "especially with how squishy this build is."
 - **Let the signature cycle.** Chemical Recharge feeds Signature Ability Charges back on Corrosive applications, and TikTokAndy noticed his skills coming back quicker the more damage he did.
@@ -173,7 +173,7 @@ He framed the test as higher crit chance versus lower crit chance with more mult
 
 ## TikTokAndy's Variant
 
-TikTokAndy recorded his Tactical Pharma build a day before GGReborn's (October 15). Same sets, different priorities: more Signature charge and cooldown, more Damage Reduction, and a Toymaker II chest.
+TikTokAndy published his Tactical Pharma video a day before GGReborn's (October 15). Same sets, different priorities: more Signature charge and cooldown, more Damage Reduction, and a Toymaker II chest.
 
 | Piece | TikTokAndy | GGReborn |
 |---|---|---|
@@ -237,7 +237,7 @@ Going by the official notes, neither Season 2 patch changed Jackpot, Fire Cycle,
 - [GGReborn: BEST Tactical Pharma Build + Solo Legendary Gameplay (YouTube, October 16, 2026)](https://www.youtube.com/watch?v=OVnksyrlj88)
 - [GGReborn: How Stats REALLY Work, Testing 3 Builds (YouTube, October 22, 2026)](https://www.youtube.com/watch?v=f1q44KbdS6g)
 - [GGReborn: Which OS Protocol Is BEST? Testing 4 Protocols (YouTube, October 23, 2026)](https://www.youtube.com/watch?v=Kz9YlTUl_1s)
-- [TikTokAndy: Tactical Pharma build and Dark Zone PvP session (YouTube, October 15, 2026)](https://www.youtube.com/watch?v=f20v8_cv9Ls)
+- [TikTokAndy's October 15, 2026 Tactical Pharma and Dark Zone video (YouTube)](https://www.youtube.com/watch?v=f20v8_cv9Ls)
 - [Season 2 Phase 1 patch notes (The Division Wiki mirror of the official developer post)](https://thedivision.fandom.com/wiki/Season_2_Phase_1_-_Patch_Notes)
 - [Ubisoft Help Center: Patch Note, Season 2 Phase 2](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2566-patch-note---season-2-phase-2/)
 - [Ubisoft Help Center: Drop rates](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2522-drop-rates/)
