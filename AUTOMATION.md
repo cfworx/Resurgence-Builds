@@ -32,7 +32,7 @@ is post-worthy, write it up in the site's voice, update the live-state data, run
 ## 1. Setup
 
 ```bash
-git clone --depth 1 https://github.com/cfworx/resurgence-builds && cd resurgence-builds
+git clone --depth 1 https://github.com/cfworx/Resurgence-Builds resurgence-builds && cd resurgence-builds
 npm ci            # Node >= 22.12
 cat automation/state.json
 ```
