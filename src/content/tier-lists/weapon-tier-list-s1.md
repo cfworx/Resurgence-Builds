@@ -12,12 +12,15 @@ faqs:
   - question: "Is the tier list based on DPS numbers or actual gameplay?"
     answer: "Actual gameplay, community testing, and content creator analysis. DPS numbers in Division Resurgence are misleading because the character screen doesn't account for talent procs, set bonuses, or team buffs. Our rankings reflect how weapons perform in real endgame content (Legendary missions, Dark Zone PvP, Conflict) with optimized builds, not how they look on a stat screen that was clearly designed by someone who hates useful information."
   - question: "Why is the Strawberry Milkshake rated so low?"
-    answer: "Because it does 38 damage per DoT tick. That's not a typo. Thirty-eight. The Anarchy DoT is effectively non-functional in practice. A buff is confirmed coming, but until it arrives, the Strawberry Milkshake's value is in its massive magazine, Concentrated Fire stacking, and Swift Taunt combo — not the DoT. Save your recalibration materials until after the buff."
+    answer: "Because it did 38 damage per DoT tick when we ranked it. That's not a typo. Thirty-eight. The Anarchy DoT was effectively non-functional in practice. Ubisoft never actually confirmed a buff: the 1.2.1 notes only said it was looking into the underwhelming perks. What shipped since is a Shredding damage-type label fix and level 2 talents (Season 1 Phase 3) and a fix for the debuff being applied on heal (Season 2 Phase 1). No straight damage buff to Anarchy has shown up in the official notes, so the Milkshake's value is still its massive magazine, Concentrated Fire stacking, and Swift Taunt combo, not the DoT."
   - question: "How often is the Division Resurgence tier list updated?"
     answer: "After every major patch or when community testing reveals a significant meta shift. We don't update for minor hotfixes that don't affect weapon balance. If you're reading this and the 'last updated' date is more than a month old, yell at us on Twitter @ResurgenceBuild. We probably forgot. It happens."
   - question: "Does this tier list apply to PvP and PvE?"
     answer: "It's weighted toward PvE because that's where most players spend most of their time. PvP tier rankings can differ significantly. The Lady Death is a B-tier PvE weapon but an S-tier PvP weapon because SMG range isn't a limitation when you're 5 meters from another player. Check our PvP-specific build guides for Dark Zone and Conflict recommendations."
 ---
+
+> [!INFO] Update (October 2026)
+> This list hasn't been re-ranked since April 2026. Official changes since then that touch these weapons: Season 2 Phase 1 reworked weapon mods, stopped weapons rolling Blast, Piercing and Shredding damage (All Weapon Damage replaced them), raised Marksman Rifle ammo reserve from 120 to 200 and nerfed Steady Reload (18% to 5% Weapon Damage), and Season 2 Phase 2 corrected the Strained tooltip to its real 10%/14% values. Season 2 also added The Bighorn and The Diamondback exotics; see the [exotic weapons database](/database/exotic-weapons/).
 
 ## Methodology
 
@@ -32,7 +35,7 @@ Rankings are based on:
 
 ## S Tier - Meta Defining
 
-These weapons dominate the current patch and should be the first choices for any serious build.
+These weapons dominated the patch this list was built on and were the first choices for any serious build.
 
 | Weapon | Type | Why S Tier |
 |--------|------|-----------|
@@ -83,5 +86,6 @@ These weapons are underperforming and need developer attention.
 
 ## Changelog
 
-- **April 18, 2026 (Patch 1.2.0):** Moved RPK-74 from B to A tier after Unhinged talent buff. Moved AUG from C to D tier.
+- **October 24, 2026:** No re-ranking. Added an update note on the official changes since April (see top).
+- **April 18, 2026:** Moved RPK-74 from B to A tier (we credited an Unhinged talent buff at the time, but no official patch notes list one). Moved AUG from C to D tier.
 - **March 5, 2026 (Patch 1.1.0):** Initial tier list.

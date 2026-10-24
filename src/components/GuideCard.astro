@@ -11,7 +11,7 @@ export interface Props {
 }
 
 const { title, href, category, description, lastUpdated, tags = [], featuredImage, imageAlt } = Astro.props;
-const formattedDate = lastUpdated.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+const formattedDate = lastUpdated.toLocaleDateString('en-US', { timeZone: 'UTC', month: 'short', day: 'numeric', year: 'numeric' });
 ---
 
 <article class={`card ${featuredImage ? 'card--has-image' : ''}`} style="position: relative;">

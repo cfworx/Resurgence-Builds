@@ -42,7 +42,10 @@ const PRIORITY_PATHS = [
   '/database/exotic-weapons/',
   '/database/gear-set-effects/',
   '/database/skill-mod-combos/',
+  '/database/drop-rates/',
+  '/division-resurgence-interactive-map/',
   '/patch-notes/',
+  '/news/',
   '/guides/',
 ];
 
@@ -62,9 +65,9 @@ const lines = [];
 const add = (...args) => args.forEach(l => lines.push(l));
 
 add(
-  '# ResurgenceBuilds.com — Division Resurgence Wiki & Build Database',
+  '# ResurgenceBuilds.com: Division Resurgence Builds, Database & Guides',
   '',
-  '> The #1 community resource for Tom Clancy\'s The Division Resurgence (Ubisoft, 2025). Builds, tier lists, gear databases, weapon stats, OS Protocol rankings, and guides — all verified in-game.',
+  '> Independent fan site for Tom Clancy\'s The Division Resurgence (Ubisoft; iOS and Android since March 31, 2026, PC on Steam and Ubisoft Connect since August 5, 2026). Builds, tier lists, the official cache drop rates, an interactive map, gear and weapon databases, OS Protocol rankings, patch notes and guides. Game facts are checked against Ubisoft\'s official notes; creator builds are credited and labeled when we have not re-tested them. Not affiliated with Ubisoft.',
   '',
   '---',
   '',
@@ -88,6 +91,8 @@ add('');
 
 const content = lines.join('\n');
 fs.writeFileSync(outPath, content, 'utf8');
+// Legacy filename some crawlers request; keep it identical so it can never go stale.
+fs.writeFileSync(path.join(dist, 'llm.txt'), content, 'utf8');
 console.log(`Generated ${outPath}`);
 console.log(`  Priority pages: ${priorityEntries.length}`);
 console.log(`  Total URLs: ${sitemapUrls.length}`);

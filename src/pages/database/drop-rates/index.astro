@@ -1,0 +1,250 @@
+---
+import DatabaseLayout from '../../../layouts/DatabaseLayout.astro';
+import dropRates from '../../../data/drop-rates.json';
+
+type Item = { tier: string; item: string; amount: string; chance: string };
+type Cache = { name: string; tierRates: { S: string; A: string; B: string }; pity: { S: number; A: number }; items: Item[] };
+const caches = dropRates.caches as Cache[];
+
+const slugify = (name: string) => name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+const fmtDate = (iso: string) => new Date(iso + 'T12:00:00Z').toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC' });
+const checkedLabel = fmtDate(dropRates.checked);
+
+// Specialization focus caches, grouped by class (names are Ubisoft's).
+const FOCUS: Record<string, string[]> = {
+  Demolitionist: ['HE Munitions Cache', 'Field Grenadier Cache'],
+  'Field Medic': ['Tactical Pharma Cache', 'Combat Medicine Cache'],
+  Bulwark: ['Breacher Cache', 'Juggernaut Cache'],
+  'Tech Operator': ['Offensive Operations Cache', 'Aegis Operations Cache'],
+  Vanguard: ['Commando Cache', 'Recon Cache'],
+};
+const classOf = (cacheName: string) => Object.entries(FOCUS).find(([, list]) => list.includes(cacheName))?.[0];
+const general = caches.filter((c) => !classOf(c.name));
+const focus = caches.filter((c) => classOf(c.name));
+
+const tierSummary = (c: Cache) => (['S', 'A', 'B'] as const).map((t) => {
+  const items = c.items.filter((i) => i.tier === t);
+  const chances = [...new Set(items.map((i) => i.chance))];
+  return { tier: t, count: items.length, each: chances.length === 1 ? chances[0] : null };
+});
+const totalItems = caches.reduce((n, c) => n + c.items.length, 0);
+
+const exotic = caches.find((c) => c.name === 'Exotic Cache')!;
+const osCache = caches.find((c) => c.name === 'OS Protocol Cache')!;
+const osEach = tierSummary(osCache);
+
+const title = 'Division Resurgence Drop Rates (Official)';
+const description = 'Official Division Resurgence drop rates for every sealed cache: Standard, OS Protocol, all 10 specialization caches and Exotic, with pity timers.';
+const breadcrumbs = [
+  { name: 'Database', url: '/database/' },
+  { name: 'Drop Rates', url: '/database/drop-rates/' }
+];
+
+const faqs = [
+  {
+    question: 'Does Ubisoft publish Division Resurgence drop rates?',
+    answer: `Yes. Ubisoft's Help Center has a "Drop rates" article under Purchases and Monetization with the odds for every sealed cache, tier by tier and item by item. This page is that table, organized and searchable. We last checked it on ${checkedLabel}.`
+  },
+  {
+    question: 'What are the odds of a Tier S item from a sealed cache?',
+    answer: 'Every sealed cache in Ubisoft\'s table uses the same tiers: Tier S 2.00%, Tier A 10.00%, Tier B 88.00%. There are pity timers too: a Tier S result is guaranteed within 50 caches, and a Tier A result within 10.'
+  },
+  {
+    question: 'What are the odds of a specific OS Protocol?',
+    answer: `In the OS Protocol Cache, each Tier S protocol is ${osEach[0].each} (${osEach[0].count} of them), each Tier A protocol is ${osEach[1].each} (${osEach[1].count} of them), and Tier B items are ${osEach[2].each} each. If you're chasing one specific gold protocol, the pity timer guarantees you a Tier S result, not your Tier S result.`
+  },
+  {
+    question: 'What does [HE], [Su] and [Sp] mean in the drop rate table?',
+    answer: 'They are rarity prefixes on skill mod pieces in the specialization caches: [HE] is High-End (Tier S), [Su] is Superior (Tier A) and [Sp] is Specialized (Tier B). Each mod family comes in Firmware, Software and Chipset pieces.'
+  },
+  {
+    question: 'What is the Deadlock in the Exotic Cache?',
+    answer: 'A seventh exotic listed in Ubisoft\'s Exotic Cache table, with its own cache, Tactical Augmentation Module, mod selection and recalibration items. As of October 24, 2026 Ubisoft hasn\'t announced it anywhere else we can find, so its weapon type and talent are unknown.'
+  },
+];
+
+const datasetLd = {
+  '@type': 'Dataset',
+  name: 'The Division Resurgence sealed cache drop rates',
+  description,
+  url: new URL('/database/drop-rates/', Astro.site).href,
+  isBasedOn: dropRates.source,
+  dateModified: dropRates.checked,
+  keywords: ['Division Resurgence', 'drop rates', 'sealed cache', 'OS Protocol', 'exotic'],
+  creator: { '@type': 'Organization', name: 'Resurgence Builds', url: new URL('/', Astro.site).href },
+  variableMeasured: ['tier', 'item', 'amount', 'drop chance'],
+};
+---
+
+<DatabaseLayout
+  {title}
+  {description}
+  {breadcrumbs}
+  heading="Official Drop Rates"
+  subheading="Ubisoft's own sealed cache odds, all in one place. Read them before you open a cache, not after."
+  jsonLd={datasetLd}
+  lastVerified={`Ubisoft's table, checked ${checkedLabel}`}
+  {faqs}
+  published="2026-10-24"
+  modified={dropRates.checked}
+>
+  <div class="prose dr-intro">
+    <p>This is the closest thing to a live in-game loot database that Ubisoft publishes for The Division Resurgence: the <strong>official drop rates for every sealed cache</strong>, from the Help Center's <a href={dropRates.source} target="_blank" rel="noopener noreferrer">Drop rates article</a> (Purchases and Monetization). It covers <strong>{caches.length} caches and {totalItems} entries</strong>. We transcribed it, grouped it, and added a search box, because scrolling an 800-row table on a phone is a war crime.</p>
+    <p>Ubisoft's article showed "Last Updated: 45d" when we checked on {checkedLabel}, so the table dates from around early September 2026. It already includes the Season 2 Phase 2 Exotic Cache.</p>
+  </div>
+
+  <h2 id="summary" class="dr-h2">Every cache at a glance</h2>
+  <div class="dr-table-wrap">
+    <table class="dr-table">
+      <thead><tr><th>Cache</th><th>Tier S</th><th>Tier A</th><th>Tier B</th><th>S pity</th><th>A pity</th><th>Items</th></tr></thead>
+      <tbody>
+        {caches.map((c) => (
+          <tr>
+            <td><a href={`#${slugify(c.name)}`}>{c.name}</a>{classOf(c.name) && <span class="dr-class">{classOf(c.name)}</span>}</td>
+            <td>{c.tierRates.S}</td><td>{c.tierRates.A}</td><td>{c.tierRates.B}</td>
+            <td>{c.pity.S}</td><td>{c.pity.A}</td><td>{c.items.length}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+
+  <div class="dr-callouts">
+    <div class="dr-callout">
+      <strong>Same odds, different loot.</strong> Every cache uses 2% / 10% / 88% tiers with pity at 50 (S) and 10 (A). What changes is what sits inside each tier.
+    </div>
+    <div class="dr-callout">
+      <strong>Pity guarantees a tier, not an item.</strong> Hitting the 50-cache pity gives you <em>a</em> Tier S item. Which one is still random. Our <a href="/guides/exotic-sealed-caches/">Exotic Sealed Caches guide</a> does the math for one specific exotic (about 220 caches on average).
+    </div>
+    <div class="dr-callout">
+      <strong>The mystery seventh exotic.</strong> The Exotic Cache lists <strong>Deadlock</strong> next to the six live exotics. Ubisoft hasn't announced it anywhere else yet.
+    </div>
+  </div>
+
+  <h2 id="search" class="dr-h2">Search every item</h2>
+  <div class="dr-search">
+    <label class="sr-only" for="dr-search-input">Search drop rate items</label>
+    <input id="dr-search-input" type="search" placeholder="Try: Strawberry, Thermobaric, Encrypted Data, Cover Shooter..." autocomplete="off" />
+    <p class="dr-search-status" id="dr-search-status" aria-live="polite"></p>
+  </div>
+
+  <h2 id="general-caches" class="dr-h2">General caches</h2>
+  {general.map((c) => (
+    <details class="dr-cache" id={slugify(c.name)} open={c.name === 'Exotic Cache'}>
+      <summary>
+        <span class="dr-cache__name">{c.name}</span>
+        <span class="dr-cache__meta">{tierSummary(c).map((t) => `${t.tier}: ${t.count}${t.each ? ` × ${t.each}` : ''}`).join(' · ')}</span>
+      </summary>
+      <div class="dr-table-wrap">
+        <table class="dr-table dr-items">
+          <thead><tr><th>Tier</th><th>Item</th><th>Amount</th><th>Chance</th></tr></thead>
+          <tbody>
+            {c.items.map((i) => (
+              <tr data-item={i.item.toLowerCase()}>
+                <td><span class={`dr-tier dr-tier--${i.tier.toLowerCase()}`}>{i.tier}</span></td>
+                <td>{i.item}</td><td>{i.amount}</td><td>{i.chance}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </details>
+  ))}
+
+  <h2 id="specialization-caches" class="dr-h2">Specialization focus caches</h2>
+  <p class="dr-note">Each specialization has two focus caches, one per focus. Their Tier S items are High-End [HE] skill mod pieces at 0.07% each, Tier A are Superior [Su] pieces, and Tier B are Specialized [Sp] pieces and materials. Class hubs: <a href="/class/demolitionist/">Demolitionist</a>, <a href="/class/field-medic/">Field Medic</a>, <a href="/class/bulwark/">Bulwark</a>, <a href="/class/tech-operator/">Tech Operator</a>, <a href="/class/vanguard/">Vanguard</a>.</p>
+  <p class="dr-note"><strong>Heads up on set names:</strong> Ubisoft's table names some skill mod sets differently from the in-game tooltips. 31 of the 90 set names in the table don't match the names in our <a href="/database/skill-mod-combos/">skill mod combo database</a>, which uses the names players see in game. For example, the Tactical Pharma Cache lists Lightweight, Siphon, Acidic Effect, Improved Formula and Feebleness, while creators running Tactical Pharma read names like Chemical Recharge, Hereafter Resilience and Enhanced Formula off their screens. The skill in each row (Chemical Trap, Oxidizing Hive and so on) still tells you which skill a piece is for.</p>
+  {focus.map((c) => (
+    <details class="dr-cache" id={slugify(c.name)}>
+      <summary>
+        <span class="dr-cache__name">{c.name} <span class="dr-class">{classOf(c.name)}</span></span>
+        <span class="dr-cache__meta">{tierSummary(c).map((t) => `${t.tier}: ${t.count}${t.each ? ` × ${t.each}` : ''}`).join(' · ')}</span>
+      </summary>
+      <div class="dr-table-wrap">
+        <table class="dr-table dr-items">
+          <thead><tr><th>Tier</th><th>Item</th><th>Amount</th><th>Chance</th></tr></thead>
+          <tbody>
+            {c.items.map((i) => (
+              <tr data-item={i.item.toLowerCase()}>
+                <td><span class={`dr-tier dr-tier--${i.tier.toLowerCase()}`}>{i.tier}</span></td>
+                <td>{i.item}</td><td>{i.amount}</td><td>{i.chance}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </details>
+  ))}
+
+  <div class="prose dr-outro">
+    <h2 class="dr-h2">Related</h2>
+    <ul>
+      <li><a href="/guides/exotic-sealed-caches/">Exotic Sealed Caches: drop rates and odds</a></li>
+      <li><a href="/database/os-protocols/">OS Protocols database</a> and <a href="/tier-list/os-protocols/">OS Protocol tier list</a></li>
+      <li><a href="/database/skill-mod-combos/">Skill mod combos database</a></li>
+      <li><a href="/guides/division-resurgence-exotic-weapons-list-2026/">Exotic weapons list</a></li>
+    </ul>
+    <p class="dr-note">Source: <a href={dropRates.source} target="_blank" rel="noopener noreferrer">Ubisoft Help Center, "Drop rates"</a>. Item names are Ubisoft's, including spellings that differ from patch notes (for example "Brains Over Brawn"). If Ubisoft updates the table, we update this page.</p>
+  </div>
+
+  <script is:inline>
+    (function () {
+      var input = document.getElementById('dr-search-input');
+      var status = document.getElementById('dr-search-status');
+      if (!input) return;
+      var caches = Array.prototype.slice.call(document.querySelectorAll('.dr-cache'));
+      var t;
+      function run() {
+        var q = input.value.trim().toLowerCase();
+        var hits = 0;
+        caches.forEach(function (c) {
+          var rows = c.querySelectorAll('tr[data-item]');
+          var any = false;
+          rows.forEach(function (r) {
+            var show = !q || r.getAttribute('data-item').indexOf(q) !== -1;
+            r.hidden = !show;
+            if (show && q) { any = true; hits++; }
+          });
+          if (q) { c.hidden = !any; if (any) c.open = true; } else { c.hidden = false; }
+        });
+        status.textContent = q ? (hits ? hits + ' matching entries' : 'No matches') : '';
+      }
+      input.addEventListener('input', function () { clearTimeout(t); t = setTimeout(run, 120); });
+    })();
+  </script>
+</DatabaseLayout>
+
+<style>
+  .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; padding: 0; margin: -1px }
+  .dr-intro p, .dr-outro p { max-width: 70ch }
+  .dr-h2 { font-family: var(--font-heading); font-size: var(--text-xl); font-weight: 800; color: var(--ink-heading); margin: var(--sp-8) 0 var(--sp-3) }
+  .dr-table-wrap { overflow-x: auto; border: 1px solid var(--border); border-radius: 6px; background: var(--surface) }
+  .dr-table { width: 100%; border-collapse: collapse; font-size: var(--text-sm) }
+  .dr-table th { text-align: left; font-family: var(--font-mono); font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--ink-muted); padding: 10px 12px; border-bottom: 1px solid var(--border); white-space: nowrap }
+  .dr-table td { padding: 8px 12px; border-bottom: 1px solid rgba(255,255,255,0.04); color: var(--ink); vertical-align: top }
+  .dr-table tr:last-child td { border-bottom: none }
+  .dr-table td:last-child, .dr-table td:nth-last-child(2) { font-family: var(--font-mono); white-space: nowrap }
+  .dr-table a { color: var(--accent); text-decoration: none }
+  .dr-table a:hover { text-decoration: underline }
+  .dr-class { margin-left: 8px; font-family: var(--font-mono); font-size: 10px; text-transform: uppercase; color: var(--ink-muted); border: 1px solid var(--border); border-radius: 3px; padding: 1px 5px; white-space: nowrap }
+  .dr-callouts { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: var(--sp-3); margin: var(--sp-4) 0 }
+  .dr-callout { background: var(--surface); border: 1px solid var(--border); border-left: 3px solid var(--accent); border-radius: 0 6px 6px 0; padding: var(--sp-3) var(--sp-4); font-size: var(--text-sm); color: var(--ink-muted); line-height: 1.6 }
+  .dr-callout strong { color: var(--ink-heading) }
+  .dr-callout a { color: var(--accent) }
+  .dr-search input { width: 100%; max-width: 560px; padding: 10px 14px; font-size: var(--text-sm); color: var(--ink-heading); background: var(--surface); border: 1px solid var(--border); border-radius: var(--border-radius) }
+  .dr-search input:focus { outline: none; border-color: var(--accent) }
+  .dr-search-status { font-family: var(--font-mono); font-size: 12px; color: var(--ink-muted); margin: 6px 0 0; min-height: 1em }
+  .dr-cache { margin-bottom: var(--sp-2); border: 1px solid var(--border); border-radius: 6px; background: rgba(0,0,0,0.15) }
+  .dr-cache[open] { border-color: rgba(242,104,34,0.4) }
+  .dr-cache > summary { cursor: pointer; list-style: none; display: flex; flex-wrap: wrap; gap: 4px 12px; align-items: baseline; justify-content: space-between; padding: 12px 14px }
+  .dr-cache > summary::-webkit-details-marker { display: none }
+  .dr-cache__name { font-family: var(--font-heading); font-weight: 700; color: var(--ink-heading) }
+  .dr-cache__meta { font-family: var(--font-mono); font-size: 11px; color: var(--ink-muted) }
+  .dr-cache .dr-table-wrap { margin: 0 12px 12px; }
+  .dr-tier { display: inline-block; min-width: 20px; text-align: center; font-family: var(--font-mono); font-size: 11px; font-weight: 700; border-radius: 3px; padding: 1px 5px; color: #0b0e13 }
+  .dr-tier--s { background: #F5CC45 }
+  .dr-tier--a { background: #a855f7; color: #fff }
+  .dr-tier--b { background: #60a5fa }
+  .dr-note { font-size: var(--text-sm); color: var(--ink-muted); max-width: 75ch }
+  .dr-note a, .dr-outro a { color: var(--accent) }
+</style>

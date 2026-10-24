@@ -12,14 +12,17 @@ interface Props {
   jsonLd?: Record<string, unknown> | Record<string, unknown>[];
   lastVerified?: string;
   faqs?: { question: string; answer: string }[];
+  /** ISO dates for the Article JSON-LD; default to the original database launch dates. */
+  published?: string;
+  modified?: string;
 }
 
-const { title, description, breadcrumbs, heading, subheading, jsonLd, lastVerified, faqs } = Astro.props;
+const { title, description, breadcrumbs, heading, subheading, jsonLd, lastVerified, faqs, published, modified } = Astro.props;
 
 // Auto-generate article metadata for hub pages so they get Article JSON-LD
 const articleMeta = {
-  publishDate: '2026-05-29',
-  modifiedDate: '2026-06-10',
+  publishDate: published || '2026-05-29',
+  modifiedDate: modified || '2026-10-24',
   author: 'RapidF5',
   tags: ['Division Resurgence', 'database', heading.toLowerCase()],
   wordCount: 1000,

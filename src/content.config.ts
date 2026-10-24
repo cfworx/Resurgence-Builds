@@ -21,6 +21,8 @@ const builds = defineCollection({
     pvp: z.boolean(),
     lastUpdated: z.coerce.date(),
     patch: z.string(),
+    // false = a creator's build we have documented but not re-tested ourselves (no "Verified" badge, not ranked on the tier list)
+    verified: z.boolean().optional(),
     tags: z.array(z.string()),
     description: z.string(),
     featuredImage: z.string().optional(),
@@ -65,6 +67,8 @@ const guides = defineCollection({
       'Crafting',
       'General',
     ]),
+    // first published (used for datePublished and the homepage feed); lastUpdated = last material update
+    publishDate: z.coerce.date().optional(),
     lastUpdated: z.coerce.date(),
     tags: z.array(z.string()),
     description: z.string(),
@@ -99,6 +103,7 @@ const news = defineCollection({
   schema: z.object({
     title: z.string(),
     publishDate: z.coerce.date(),
+    updatedDate: z.coerce.date().optional(),
     author: z.string(),
     shareTitle: z.string().optional(),
     shareText: z.string().optional(),
@@ -110,6 +115,7 @@ const news = defineCollection({
       question: z.string(),
       answer: z.string(),
     })).optional(),
+    sources: z.array(z.string()).optional(),
   }),
 });
 
@@ -119,6 +125,7 @@ const patchNotes = defineCollection({
     title: z.string(),
     version: z.string(),
     patchDate: z.coerce.date(),
+    updatedDate: z.coerce.date().optional(),
     author: z.string(),
     shareTitle: z.string().optional(),
     shareText: z.string().optional(),
@@ -129,6 +136,7 @@ const patchNotes = defineCollection({
       question: z.string(),
       answer: z.string(),
     })).optional(),
+    sources: z.array(z.string()).optional(),
   }),
 });
 

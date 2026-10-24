@@ -1,6 +1,7 @@
 ---
 title: "Known Issues Trello Board Breakdown"
 publishDate: "2026-06-04"
+updatedDate: 2026-10-24
 author: "RapidF5"
 featuredImage: "/images/news/division-resurgence-trello-known-issues-board.webp"
 imageAlt: "The Division Resurgence Known Issues Trello board showing six columns: Reported, Investigating, In Progress, Fix Ready, Fix Live, and Backlog with all active bug cards"
@@ -11,22 +12,25 @@ shareText: "Division Resurgence just dropped a public Trello board tracking ever
 
 faqs:
   - question: "Where is the Division Resurgence known issues Trello board?"
-    answer: "The official Trello board is live at trello.com/b/qTP1a9cv. It is titled The Division Resurgence Known Issues and is publicly viewable without a Trello account. The board was announced on June 4, 2026 by the official @TheDivMobile account on X."
+    answer: "It's at trello.com/b/qTP1a9cv, titled The Division Resurgence Known Issues, and anyone can view it without a Trello account. The official @TheDivMobile account announced it on June 4, 2026. Heads up: the board stopped updating after July 2, 2026, and Ubisoft now tracks issues on its official bug reporter on ubisoft.com, which the Help Center points players to. Bookmark that one instead."
   - question: "What bugs are currently being fixed in Division Resurgence?"
-    answer: "As of June 4, 2026, the In Progress list includes the Outpost Annihilation mission bug, payment processing issues, the Network Failure login popup, Dark Zone Tactical Augmentation reward claiming (Shotgun TAM is fixed, Marksman Rifle and LMG TAMs still being worked on), missing Simplified Chinese translations, Thermobaric Barrel balance, and an anti-cheat tool for leaderboard cleanup."
+    answer: "For the live list, check Ubisoft's official bug reporter, which shows a status for every issue (on October 23, for example, 'Expand Inventory Capacity' was marked Planned). On this board's June 4 snapshot, the In Progress list included the Outpost Annihilation mission bug, payment processing issues, the Network Failure login popup, Dark Zone Tactical Augmentation reward claiming (Shotgun TAM fixed, Marksman Rifle and LMG TAMs still being worked on), missing Simplified Chinese translations, Thermobaric Barrel balance, and an anti-cheat tool for leaderboard cleanup. Outpost Annihilation got its fix in Season 1 Phase 3."
   - question: "Is the Lady Death bug fixed in Division Resurgence?"
-    answer: "Yes. The Lady Death exploit, which the team calls the LadyBug, is in the Fix Live column. The issue was that Optimal Range on some weapons could extend beyond the maximum bullet damage falloff range, creating an inverse effect on damage output. The fix is already live in the current patch."
+    answer: "Yes. The Lady Death exploit, which the team nicknamed the LadyBug, was already in the Fix Live column when the board went public on June 4, 2026. The issue was that Optimal Range on some weapons could extend beyond the maximum bullet damage falloff range, creating an inverse effect on damage output. RIP to every elite that melted faster than the math allowed."
   - question: "Is Brain over Brawn fixed in Division Resurgence?"
-    answer: "Yes. Brain over Brawn is in the Fix Live column. The team confirmed it was providing too much damage in some cases and has shipped a fix. The team also specifically asked the community not to share details about the specific interactions it could create."
+    answer: "Yes. Brains Over Brawn (the official spelling, though even Ubisoft's Phase 2 notes called it 'Brain over Brawns') was in the Fix Live column on June 4. The Season 1 Phase 2 notes list a fix for it scaling off the wrong stats, and the Trello card said it had been providing too much damage in some cases. The team also asked players not to share the specific interactions it could create, so please don't turn it into a YouTube short."
   - question: "What is the Strawberry Milkshake talent bug in Division Resurgence?"
-    answer: "There are two Strawberry Milkshake issues on the board. First, the LMG comes with level 1 talents while other exotics come with level 2 talents, which is in the Reported column. Second, the Anarchy talent is transferring stacks to allies under some conditions instead of only to enemies, which is in the Investigating column."
+    answer: "There were two Strawberry Milkshake cards: the LMG dropping with level 1 talents while other exotics get level 2 (Reported on June 4), and Anarchy transferring stacks to allies under some conditions (Investigating). Season 1 Phase 3 fixed the level 1 talents and promised owners an updated copy, and the board moved both cards to Fix Live on June 26. Season 2 Phase 1 later fixed a separate bug where its debuff was applied on heal."
   - question: "When will the Division Resurgence Medic Courage focus be fixed?"
-    answer: "The Trello board specifically states that the Medic Courage focus requirements fix will be implemented in the Season 1 Phase 3 update. Community trackers are pointing at June 23, 2026 as the Phase 3 start date."
+    answer: "It already was. Season 1 Phase 3 (June 24, 2026) cut the Medic Courage focus requirement from 3,000,000 Courage stacks to 5,000, and the Trello card moved to Fix Live on June 26. If you were already past 5,000, Ubisoft says you need to gain one new stack to refresh the task. Three million to five thousand is the biggest discount in the game's history."
   - question: "How do I report a bug in Division Resurgence?"
-    answer: "The Trello board is view-only for the public. You cannot comment on or upvote cards directly. To report a bug, use the official Ubisoft support channels. The Investigating list notes that the team needs video, images, or reproduction steps to replicate bugs in their testing environment, so include as much detail as possible when reporting."
+    answer: "Use Ubisoft's official bug reporter on ubisoft.com: search for your issue, upvote it, add details, screenshots or video, or report a new one. Otherwise, contact Player Support through the in-game support icon. The Trello board was view-only, but its advice still applies: the team needs video, images or reproduction steps to replicate a bug, so record it if you can."
 ---
 
 On June 4, 2026, the Division Resurgence team dropped a [public Trello board](https://trello.com/b/qTP1a9cv) tracking every known issue in the game. The board is organized into six columns: Reported, Investigating, In Progress, Fix Ready, Fix Live, and Backlog. Anyone can view it without a Trello account. This is the full breakdown of every card on the board, what it means, and where each fix stands.
+
+> [!INFO] Update (October 2026)
+> This board stopped updating after July 2, 2026, and Ubisoft now tracks issues on its [official bug reporter](https://www.ubisoft.com/en-us/game/the-division/the-division-resurgence/bug-reporter/issues), where you can upvote issues, add screenshots or video, and report new bugs. Before that, the board moved a big batch of the cards below to Fix Live on June 26 (including Aegis Burst, Medic Courage, both Strawberry Milkshake cards, Thermobaric, Healing Hive, vendors and locked items), with Applied Demolition following on July 2, in line with the [Season 1 Phase 3](/patch-notes/season-1-phase-3-a-new-fire/) and [June 26 hotfix](/news/server-hotfix-june-26-2026/) changes. Phase 3 also fixed Outpost Annihilation, and Season 2 Phase 2 fixed Armory and proficiency rewards that couldn't be claimed.
 
 ---
 
@@ -105,7 +109,7 @@ The card says the team is aware of missing texts and translations in the Simplif
 
 ### Thermobaric Barrel May Be Too Strong
 
-The card simply says: "We are looking into balancing this." Not a bug per se, more of a balance pass. If you have been printing damage with a Thermobaric Barrel build, enjoy it while it lasts. Also, if you have not seen what a properly tuned weapon mod can do, the [build database](/database/) covers what is meta and what is not.
+The card simply says: "We are looking into balancing this." Not a bug per se, more of a balance pass. If you have been printing damage with a Thermobaric Barrel build, enjoy it while it lasts. Our read is that this card is about the Field Grenadier "Thermobaric Grenades" skill mod combo set, which Season 1 Phase 3 cut from a 460-700% damage increase to 300-450% (and its range bonus from 100% to 30%); the card moved to Fix Live on June 26. The [database](/database/) covers what is meta and what is not.
 
 ### Anti-Cheat Tool to Ban Cheaters and Remove Them From Leaderboards
 
@@ -143,7 +147,7 @@ The [Lady Death database page](/database/exotic-weapons/lady-death/) has the pos
 
 ### Brain Over Brawn OS Protocol
 
-The card is direct about this one. The team was monitoring unusual effects from Brain over Brawn providing too much damage in some cases. Because Brain over Brawn is a standard OS Protocol for an Engineering build, the team specifically requested that players **do not share information about the specific interactions it can create** if they are aware of them. The fix has shipped so that Brain over Brawn behaves as intended.
+The card is direct about this one. The team was monitoring unusual effects from Brain over Brawn (officially spelled Brains Over Brawn) providing too much damage in some cases. Because Brain over Brawn is a standard OS Protocol for an Engineering build, the team specifically requested that players **do not share information about the specific interactions it can create** if they are aware of them. The fix has shipped so that Brain over Brawn behaves as intended.
 
 Translation: if you found the magic combo last patch, please do not turn it into a YouTube short. If you want a clean read on how Engineering builds actually function inside the OS Protocols system, the [OS Protocols database](/database/os-protocols/) covers the foundation.
 
@@ -171,27 +175,27 @@ First, the team is being unusually transparent about exactly what they know and 
 
 Second, the team is treating exploits and balance issues with the same process as bugs. Brain over Brawn is in Fix Live with a respectful ask to the community not to spread the interaction. Thermobaric Barrel is in In Progress under balance. Applied Demolition is in Fix Ready as a buff target. The leaderboard cheating problem is being addressed by building an actual in-game banning tool, not just patching one exploit at a time.
 
-Third, this board is a strong hint about what is landing in **Season 1 Phase 3**. We already know from the [Season 1, 2, 3 roadmap](/news/season-1-2-3-roadmap/) that Phase 3 is the next major drop with the Scorpio exotic shotgun arriving as the free Phase 3 exotic (see the [Scorpio and Diamondback coverage](/news/scorpio-diamondback-coming-to-division-resurgence-june-2026/) for context). The Trello board specifically calls out that the Medic Courage focus fix will ship in Phase 3. Expect more of the Fix Ready cards to clear out in that same patch window.
+Third, this board is a strong hint about what is landing in **Season 1 Phase 3**. We already know from the [Season 1, 2, 3 roadmap](/news/season-1-2-3-roadmap/) that Phase 3 is the next major drop with the Scorpio exotic shotgun arriving as the free Phase 3 exotic (per the roadmap; at launch the weapon sat on the premium track and the free track carried its Tactical Augmentation Module; see the [Scorpio and Diamondback coverage](/news/scorpio-diamondback-coming-to-division-resurgence-june-2026/) for context). The Trello board specifically calls out that the Medic Courage focus fix will ship in Phase 3. Expect more of the Fix Ready cards to clear out in that same patch window.
 
 ## How to Use This Board Going Forward
 
-Three habits that will save you time:
+Three habits that will save you time. (These days, apply them to Ubisoft's [official bug reporter](https://www.ubisoft.com/en-us/game/the-division/the-division-resurgence/bug-reporter/issues), which also lets you upvote and comment.)
 
 1. **Before reporting a bug, check the board.** The board is view-only for the public, so you cannot upvote or comment on cards. But you can confirm whether your issue is already logged. If it is, sit tight, it is already in the pipeline. If it is not, report it through the official support channels with as much detail as you can.
 2. **Record video when you hit a bug.** The Investigating list explicitly says the team needs video, images, or reproduction steps. Even 10 seconds of screen recording massively speeds up replication in their test environment.
 3. **Check Fix Live before you ragequit.** If you have not updated your client, you might be playing on a version that still has bugs the rest of us have already moved past.
 
-The full board is at [trello.com/b/qTP1a9cv](https://trello.com/b/qTP1a9cv). Bookmark it next to your favorite [build pages](/database/) and check it whenever something feels off.
+The full board is still viewable at [trello.com/b/qTP1a9cv](https://trello.com/b/qTP1a9cv), but for anything current, bookmark Ubisoft's [official bug reporter](https://www.ubisoft.com/en-us/game/the-division/the-division-resurgence/bug-reporter/issues) next to your favorite [build pages](/database/) and check it whenever something feels off.
 
 ---
 
 **Related Reading:**
-- [Season 1-2-3 Roadmap](/news/season-1-2-3-roadmap/) — the full roadmap breakdown
-- [Scorpio and Diamondback Coming to Division Resurgence](/news/scorpio-diamondback-coming-to-division-resurgence-june-2026/) — Phase 3 exotics preview
-- [Exotic Weapons Database](/database/exotic-weapons/) — every current exotic with stats and talents
-- [Strawberry Milkshake Database Page](/database/exotic-weapons/strawberry-milkshake/) — full talent text and stat block
-- [Lady Death Database Page](/database/exotic-weapons/lady-death/) — post-fix stats
-- [OS Protocols Database](/database/os-protocols/) — every OS Protocol in the game
+- [Season 1-2-3 Roadmap](/news/season-1-2-3-roadmap/): the full roadmap breakdown
+- [Scorpio and Diamondback Coming to Division Resurgence](/news/scorpio-diamondback-coming-to-division-resurgence-june-2026/): Phase 3 exotics preview
+- [Exotic Weapons Database](/database/exotic-weapons/): every current exotic with stats and talents
+- [Strawberry Milkshake Database Page](/database/exotic-weapons/strawberry-milkshake/): full talent text and stat block
+- [Lady Death Database Page](/database/exotic-weapons/lady-death/): post-fix stats
+- [OS Protocols Database](/database/os-protocols/): every OS Protocol in the game
 
 ---
 
@@ -200,3 +204,6 @@ The full board is at [trello.com/b/qTP1a9cv](https://trello.com/b/qTP1a9cv). Boo
 - The Division Resurgence on X: [@TheDivMobile, June 4, 2026](https://x.com/TheDivMobile/status/2062606335246553242)
 - Official Trello board: [The Division Resurgence Known Issues](https://trello.com/b/qTP1a9cv)
 - All card text quoted in this post is sourced verbatim from the public Trello board as of June 4, 2026
+- Official bug reporter: [The Division Resurgence bug reporter](https://www.ubisoft.com/en-us/game/the-division/the-division-resurgence/bug-reporter/issues)
+- Ubisoft Help Center: [Play on PC (Steam or Ubisoft Connect): all you need to know](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2509-play-on-pc-steam-or-ubisoft-connect-all-you-need-to-know/)
+- Ubisoft Help Center: [Season 1 Phase 3 patch notes](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2521-patch-note---season-1-phase-3/)

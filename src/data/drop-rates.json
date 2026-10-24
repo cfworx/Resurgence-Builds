@@ -1,0 +1,5056 @@
+{
+ "_about": "Official Ubisoft drop rates for The Division Resurgence sealed caches, transcribed from the Help Center 'Drop rates' article (Purchases and Monetization). Refresh per AUTOMATION.md when Ubisoft updates the article.",
+ "source": "https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2522-drop-rates/",
+ "checked": "2026-10-24",
+ "sourceUpdatedApprox": "2026-09-09",
+ "caches": [
+  {
+   "name": "Standard Sealed Cache",
+   "tierRates": {
+    "S": "2.00%",
+    "A": "10.00%",
+    "B": "88.00%"
+   },
+   "pity": {
+    "S": 50,
+    "A": 10
+   },
+   "items": [
+    {
+     "tier": "S",
+     "item": "Superior Metal Components",
+     "amount": "4",
+     "chance": "0.22%"
+    },
+    {
+     "tier": "S",
+     "item": "Superior Fabric",
+     "amount": "4",
+     "chance": "0.22%"
+    },
+    {
+     "tier": "S",
+     "item": "Superior Maintenance Lubricant",
+     "amount": "4",
+     "chance": "0.22%"
+    },
+    {
+     "tier": "S",
+     "item": "Superior Maintenance Tools",
+     "amount": "4",
+     "chance": "0.22%"
+    },
+    {
+     "tier": "S",
+     "item": "Superior Algorithm Data",
+     "amount": "4",
+     "chance": "0.22%"
+    },
+    {
+     "tier": "S",
+     "item": "Superior Weapon Parts",
+     "amount": "3",
+     "chance": "0.22%"
+    },
+    {
+     "tier": "S",
+     "item": "Superior Protective Plating",
+     "amount": "3",
+     "chance": "0.22%"
+    },
+    {
+     "tier": "S",
+     "item": "Basic Credits",
+     "amount": "50,000",
+     "chance": "0.22%"
+    },
+    {
+     "tier": "S",
+     "item": "Encrypted Data",
+     "amount": "50",
+     "chance": "0.22%"
+    },
+    {
+     "tier": "A",
+     "item": "Electronics Alpha Components",
+     "amount": "3",
+     "chance": "1.00%"
+    },
+    {
+     "tier": "A",
+     "item": "Electronics Beta Components",
+     "amount": "3",
+     "chance": "1.00%"
+    },
+    {
+     "tier": "A",
+     "item": "Electronics Gamma Components",
+     "amount": "3",
+     "chance": "1.00%"
+    },
+    {
+     "tier": "A",
+     "item": "Specialized Algorithm Data",
+     "amount": "5",
+     "chance": "1.00%"
+    },
+    {
+     "tier": "A",
+     "item": "Specialized Maintenance Lubricant",
+     "amount": "5",
+     "chance": "1.00%"
+    },
+    {
+     "tier": "A",
+     "item": "Specialized Maintenance Tools",
+     "amount": "5",
+     "chance": "1.00%"
+    },
+    {
+     "tier": "A",
+     "item": "Standard Metal Components",
+     "amount": "15",
+     "chance": "1.00%"
+    },
+    {
+     "tier": "A",
+     "item": "Standard Fabric",
+     "amount": "15",
+     "chance": "1.00%"
+    },
+    {
+     "tier": "A",
+     "item": "Basic Credits",
+     "amount": "40,000",
+     "chance": "1.00%"
+    },
+    {
+     "tier": "A",
+     "item": "Encrypted Data",
+     "amount": "25",
+     "chance": "1.00%"
+    },
+    {
+     "tier": "B",
+     "item": "Standard Maintenance Lubricant",
+     "amount": "2",
+     "chance": "9.78%"
+    },
+    {
+     "tier": "B",
+     "item": "Standard Maintenance Tools",
+     "amount": "2",
+     "chance": "9.78%"
+    },
+    {
+     "tier": "B",
+     "item": "Standard Algorithm Data",
+     "amount": "2",
+     "chance": "9.78%"
+    },
+    {
+     "tier": "B",
+     "item": "Standard Weapon Parts",
+     "amount": "5",
+     "chance": "9.78%"
+    },
+    {
+     "tier": "B",
+     "item": "Standard Protective Plating",
+     "amount": "5",
+     "chance": "9.78%"
+    },
+    {
+     "tier": "B",
+     "item": "Basic Credits",
+     "amount": "15,000",
+     "chance": "9.78%"
+    },
+    {
+     "tier": "B",
+     "item": "Basic Credits",
+     "amount": "10,000",
+     "chance": "9.78%"
+    },
+    {
+     "tier": "B",
+     "item": "Basic Credits",
+     "amount": "7,500",
+     "chance": "9.78%"
+    },
+    {
+     "tier": "B",
+     "item": "Encrypted Data",
+     "amount": "5",
+     "chance": "9.78%"
+    }
+   ]
+  },
+  {
+   "name": "OS Protocol Cache",
+   "tierRates": {
+    "S": "2.00%",
+    "A": "10.00%",
+    "B": "88.00%"
+   },
+   "pity": {
+    "S": 50,
+    "A": 10
+   },
+   "items": [
+    {
+     "tier": "S",
+     "item": "OS Protocol - Strategic Assistance",
+     "amount": "1",
+     "chance": "0.13%"
+    },
+    {
+     "tier": "S",
+     "item": "OS Protocol - Assault Charge",
+     "amount": "1",
+     "chance": "0.13%"
+    },
+    {
+     "tier": "S",
+     "item": "OS Protocol - Collateral Damage",
+     "amount": "1",
+     "chance": "0.13%"
+    },
+    {
+     "tier": "S",
+     "item": "OS Protocol - Cover Shooter",
+     "amount": "1",
+     "chance": "0.13%"
+    },
+    {
+     "tier": "S",
+     "item": "OS Protocol - Pummeling Shield",
+     "amount": "1",
+     "chance": "0.13%"
+    },
+    {
+     "tier": "S",
+     "item": "OS Protocol - Explosive Charge",
+     "amount": "1",
+     "chance": "0.13%"
+    },
+    {
+     "tier": "S",
+     "item": "OS Protocol - Explosive Round",
+     "amount": "1",
+     "chance": "0.13%"
+    },
+    {
+     "tier": "S",
+     "item": "OS Protocol - Concerted Strike",
+     "amount": "1",
+     "chance": "0.13%"
+    },
+    {
+     "tier": "S",
+     "item": "OS Protocol - Surgical Engineering",
+     "amount": "1",
+     "chance": "0.13%"
+    },
+    {
+     "tier": "S",
+     "item": "OS Protocol - Heavy Armor",
+     "amount": "1",
+     "chance": "0.13%"
+    },
+    {
+     "tier": "S",
+     "item": "OS Protocol - Rampart",
+     "amount": "1",
+     "chance": "0.13%"
+    },
+    {
+     "tier": "S",
+     "item": "OS Protocol - Overwhelming Power",
+     "amount": "1",
+     "chance": "0.13%"
+    },
+    {
+     "tier": "S",
+     "item": "OS Protocol - Relentless Assault",
+     "amount": "1",
+     "chance": "0.13%"
+    },
+    {
+     "tier": "S",
+     "item": "OS Protocol - Tactical Layering",
+     "amount": "1",
+     "chance": "0.13%"
+    },
+    {
+     "tier": "S",
+     "item": "OS Protocol - Happy Survival",
+     "amount": "1",
+     "chance": "0.13%"
+    },
+    {
+     "tier": "A",
+     "item": "OS Protocol - Ambusher",
+     "amount": "1",
+     "chance": "0.40%"
+    },
+    {
+     "tier": "A",
+     "item": "OS Protocol - Augmented Lethality",
+     "amount": "1",
+     "chance": "0.40%"
+    },
+    {
+     "tier": "A",
+     "item": "OS Protocol - Assisted Infantry",
+     "amount": "1",
+     "chance": "0.40%"
+    },
+    {
+     "tier": "A",
+     "item": "OS Protocol - Blitz Tactics",
+     "amount": "1",
+     "chance": "0.40%"
+    },
+    {
+     "tier": "A",
+     "item": "OS Protocol - Chain Reaction",
+     "amount": "1",
+     "chance": "0.40%"
+    },
+    {
+     "tier": "A",
+     "item": "OS Protocol - Close and Personal",
+     "amount": "1",
+     "chance": "0.40%"
+    },
+    {
+     "tier": "A",
+     "item": "OS Protocol - Close Quarters Menace",
+     "amount": "1",
+     "chance": "0.40%"
+    },
+    {
+     "tier": "A",
+     "item": "OS Protocol - Combat Reload",
+     "amount": "1",
+     "chance": "0.40%"
+    },
+    {
+     "tier": "A",
+     "item": "OS Protocol - Cornered Animal",
+     "amount": "1",
+     "chance": "0.40%"
+    },
+    {
+     "tier": "A",
+     "item": "OS Protocol - Dominating Presence",
+     "amount": "1",
+     "chance": "0.40%"
+    },
+    {
+     "tier": "A",
+     "item": "OS Protocol - Tactical Pistolero",
+     "amount": "1",
+     "chance": "0.40%"
+    },
+    {
+     "tier": "A",
+     "item": "OS Protocol - Level-Headed",
+     "amount": "1",
+     "chance": "0.40%"
+    },
+    {
+     "tier": "A",
+     "item": "OS Protocol - Last Resort",
+     "amount": "1",
+     "chance": "0.40%"
+    },
+    {
+     "tier": "A",
+     "item": "OS Protocol - Mechanized Support",
+     "amount": "1",
+     "chance": "0.40%"
+    },
+    {
+     "tier": "A",
+     "item": "OS Protocol - Medical Excellence",
+     "amount": "1",
+     "chance": "0.40%"
+    },
+    {
+     "tier": "A",
+     "item": "OS Protocol - Death From Afar",
+     "amount": "1",
+     "chance": "0.40%"
+    },
+    {
+     "tier": "A",
+     "item": "OS Protocol - Pressure Cooker",
+     "amount": "1",
+     "chance": "0.40%"
+    },
+    {
+     "tier": "A",
+     "item": "OS Protocol - Deadly Accuracy",
+     "amount": "1",
+     "chance": "0.40%"
+    },
+    {
+     "tier": "A",
+     "item": "OS Protocol - Recursive Treatment",
+     "amount": "1",
+     "chance": "0.40%"
+    },
+    {
+     "tier": "A",
+     "item": "OS Protocol - Chase the Weak",
+     "amount": "1",
+     "chance": "0.40%"
+    },
+    {
+     "tier": "A",
+     "item": "OS Protocol - Together We Stand",
+     "amount": "1",
+     "chance": "0.40%"
+    },
+    {
+     "tier": "A",
+     "item": "OS Protocol - Tactical Persistence",
+     "amount": "1",
+     "chance": "0.40%"
+    },
+    {
+     "tier": "A",
+     "item": "OS Protocol - Tight Grouping",
+     "amount": "1",
+     "chance": "0.40%"
+    },
+    {
+     "tier": "A",
+     "item": "OS Protocol - Pressing Matter",
+     "amount": "1",
+     "chance": "0.40%"
+    },
+    {
+     "tier": "A",
+     "item": "OS Protocol - Trench Fighter",
+     "amount": "1",
+     "chance": "0.40%"
+    },
+    {
+     "tier": "B",
+     "item": "OS Protocol - Suppressive Fire",
+     "amount": "1",
+     "chance": "3.14%"
+    },
+    {
+     "tier": "B",
+     "item": "OS Protocol - Hunting Season",
+     "amount": "1",
+     "chance": "3.14%"
+    },
+    {
+     "tier": "B",
+     "item": "OS Protocol - Side by Side",
+     "amount": "1",
+     "chance": "3.14%"
+    },
+    {
+     "tier": "B",
+     "item": "OS Protocol - Resentful",
+     "amount": "1",
+     "chance": "3.14%"
+    },
+    {
+     "tier": "B",
+     "item": "OS Protocol - Face-to-Face Advantage",
+     "amount": "1",
+     "chance": "3.14%"
+    },
+    {
+     "tier": "B",
+     "item": "OS Protocol - Applied Demolition",
+     "amount": "1",
+     "chance": "3.14%"
+    },
+    {
+     "tier": "B",
+     "item": "OS Protocol - Brains Over Brawn",
+     "amount": "1",
+     "chance": "3.14%"
+    },
+    {
+     "tier": "B",
+     "item": "OS Protocol - Caretaker",
+     "amount": "1",
+     "chance": "3.14%"
+    },
+    {
+     "tier": "B",
+     "item": "OS Protocol - Running Around",
+     "amount": "1",
+     "chance": "3.14%"
+    },
+    {
+     "tier": "B",
+     "item": "OS Protocol - Long-Range Artillery",
+     "amount": "1",
+     "chance": "3.14%"
+    },
+    {
+     "tier": "B",
+     "item": "OS Protocol - Rocket Science",
+     "amount": "1",
+     "chance": "3.14%"
+    },
+    {
+     "tier": "B",
+     "item": "OS Protocol - Steadfast",
+     "amount": "1",
+     "chance": "3.14%"
+    },
+    {
+     "tier": "B",
+     "item": "OS Protocol - Enduring",
+     "amount": "1",
+     "chance": "3.14%"
+    },
+    {
+     "tier": "B",
+     "item": "OS Protocol - Hardware Upgrade",
+     "amount": "1",
+     "chance": "3.14%"
+    },
+    {
+     "tier": "B",
+     "item": "OS Protocol - Seasoned Veteran",
+     "amount": "1",
+     "chance": "3.14%"
+    },
+    {
+     "tier": "B",
+     "item": "OS Protocol - Energizer",
+     "amount": "1",
+     "chance": "3.14%"
+    },
+    {
+     "tier": "B",
+     "item": "OS Protocol - Combat Doc",
+     "amount": "1",
+     "chance": "3.14%"
+    },
+    {
+     "tier": "B",
+     "item": "OS Protocol - Layered Defense",
+     "amount": "1",
+     "chance": "3.14%"
+    },
+    {
+     "tier": "B",
+     "item": "OS Protocol - Hermit",
+     "amount": "1",
+     "chance": "3.14%"
+    },
+    {
+     "tier": "B",
+     "item": "OS Protocol - Overclocking",
+     "amount": "1",
+     "chance": "3.14%"
+    },
+    {
+     "tier": "B",
+     "item": "OS Protocol - Physical Training",
+     "amount": "1",
+     "chance": "3.14%"
+    },
+    {
+     "tier": "B",
+     "item": "OS Protocol - Plate Carrier",
+     "amount": "1",
+     "chance": "3.14%"
+    },
+    {
+     "tier": "B",
+     "item": "OS Protocol - Genius Engineer",
+     "amount": "1",
+     "chance": "3.14%"
+    },
+    {
+     "tier": "B",
+     "item": "OS Protocol - Inspiration",
+     "amount": "1",
+     "chance": "3.14%"
+    },
+    {
+     "tier": "B",
+     "item": "OS Protocol - Spray 'n' Pray",
+     "amount": "1",
+     "chance": "3.14%"
+    },
+    {
+     "tier": "B",
+     "item": "OS Protocol - War Machine",
+     "amount": "1",
+     "chance": "3.14%"
+    },
+    {
+     "tier": "B",
+     "item": "Specialized Algorithm Data",
+     "amount": "2",
+     "chance": "3.14%"
+    },
+    {
+     "tier": "B",
+     "item": "Encrypted Data",
+     "amount": "100",
+     "chance": "3.14%"
+    }
+   ]
+  },
+  {
+   "name": "HE Munitions Cache",
+   "tierRates": {
+    "S": "2.00%",
+    "A": "10.00%",
+    "B": "88.00%"
+   },
+   "pity": {
+    "S": 50,
+    "A": 10
+   },
+   "items": [
+    {
+     "tier": "S",
+     "item": "[HE] Artillery Turret Firmware - Cooling System",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Artillery Turret Software - Cooling System",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Artillery Turret Chipset - Cooling System",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Artillery Turret Firmware - Area Suppression",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Artillery Turret Software - Area Suppression",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Artillery Turret Chipset - Area Suppression",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Artillery Turret Firmware - Frag Grenades",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Artillery Turret Software - Frag Grenades",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Artillery Turret Chipset - Frag Grenades",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Explosive Seeker Mine Firmware - Cooling Device",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Explosive Seeker Mine Software - Cooling Device",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Explosive Seeker Mine Chipset - Cooling Device",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Explosive Seeker Mine Firmware - Applied Demolitions",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Explosive Seeker Mine Software - Applied Demolitions",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Explosive Seeker Mine Chipset - Applied Demolitions",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Explosive Seeker Mine Firmware - Fragmentation Charge",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Explosive Seeker Mine Software - Fragmentation Charge",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Explosive Seeker Mine Chipset - Fragmentation Charge",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] M32A1 Grenade Launcher Firmware - Fire Support",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] M32A1 Grenade Launcher Software - Fire Support",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] M32A1 Grenade Launcher Chipset - Fire Support",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] M32A1 Grenade Launcher Firmware - Airburst",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] M32A1 Grenade Launcher Software - Airburst",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] M32A1 Grenade Launcher Chipset - Airburst",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] M32A1 Grenade Launcher Firmware - Concentrated Fire",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] M32A1 Grenade Launcher Software - Concentrated Fire",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] M32A1 Grenade Launcher Chipset - Concentrated Fire",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "A",
+     "item": "Electronics Omega Components",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Artillery Turret Firmware - Cooling System",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Artillery Turret Software - Cooling System",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Artillery Turret Chipset - Cooling System",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Artillery Turret Firmware - Area Suppression",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Artillery Turret Software - Area Suppression",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Artillery Turret Chipset - Area Suppression",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Artillery Turret Firmware - Frag Grenades",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Artillery Turret Software - Frag Grenades",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Artillery Turret Chipset - Frag Grenades",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Explosive Seeker Mine Firmware - Cooling Device",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Explosive Seeker Mine Software - Cooling Device",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Explosive Seeker Mine Chipset - Cooling Device",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Explosive Seeker Mine Firmware - Applied Demolitions",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Explosive Seeker Mine Software - Applied Demolitions",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Explosive Seeker Mine Chipset - Applied Demolitions",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Explosive Seeker Mine Firmware - Fragmentation Charge",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Explosive Seeker Mine Software - Fragmentation Charge",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Explosive Seeker Mine Chipset - Fragmentation Charge",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] M32A1 Grenade Launcher Firmware - Fire Support",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] M32A1 Grenade Launcher Software - Fire Support",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] M32A1 Grenade Launcher Chipset - Fire Support",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] M32A1 Grenade Launcher Firmware - Airburst",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] M32A1 Grenade Launcher Software - Airburst",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] M32A1 Grenade Launcher Chipset - Airburst",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] M32A1 Grenade Launcher Firmware - Concentrated Fire",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] M32A1 Grenade Launcher Software - Concentrated Fire",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] M32A1 Grenade Launcher Chipset - Concentrated Fire",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "B",
+     "item": "Encrypted Data",
+     "amount": "100",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "Electronics Alpha Components",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "Electronics Beta Components",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "Electronics Gamma Components",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "[Sp] Artillery Turret Firmware - Cooling System",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "[Sp] Artillery Turret Software - Cooling System",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "[Sp] Artillery Turret Chipset - Cooling System",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "[Sp] Explosive Seeker Mine Firmware - Cooling Device",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "[Sp] Explosive Seeker Mine Software - Cooling Device",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "[Sp] Explosive Seeker Mine Chipset - Cooling Device",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "[Sp] M32A1 Grenade Launcher Firmware - Fire Support",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "[Sp] M32A1 Grenade Launcher Software - Fire Support",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "[Sp] M32A1 Grenade Launcher Chipset - Fire Support",
+     "amount": "1",
+     "chance": "6.77%"
+    }
+   ]
+  },
+  {
+   "name": "Field Grenadier Cache",
+   "tierRates": {
+    "S": "2.00%",
+    "A": "10.00%",
+    "B": "88.00%"
+   },
+   "pity": {
+    "S": 50,
+    "A": 10
+   },
+   "items": [
+    {
+     "tier": "S",
+     "item": "[HE] Artillery Turret Firmware - Shaped Charge",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Artillery Turret Software - Shaped Charge",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Artillery Turret Chipset - Shaped Charge",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Artillery Turret Firmware - Optimized",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Artillery Turret Software - Optimized",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Artillery Turret Chipset - Optimized",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Artillery Turret Firmware - Enhanced Fire Control",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Artillery Turret Software - Enhanced Fire Control",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Artillery Turret Chipset - Enhanced Fire Control",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Explosive Seeker Mine Firmware - Multi-Directional Charge",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Explosive Seeker Mine Software - Multi-Directional Charge",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Explosive Seeker Mine Chipset - Multi-Directional Charge",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Explosive Seeker Mine Firmware - Area Denial",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Explosive Seeker Mine Software - Area Denial",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Explosive Seeker Mine Chipset - Area Denial",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Explosive Seeker Mine Firmware - Potent Composition",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Explosive Seeker Mine Software - Potent Composition",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Explosive Seeker Mine Chipset - Potent Composition",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] M32A1 Grenade Launcher Firmware - Field Mortar",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] M32A1 Grenade Launcher Software - Field Mortar",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] M32A1 Grenade Launcher Chipset - Field Mortar",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] M32A1 Grenade Launcher Firmware - Thermobaric Grenades",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] M32A1 Grenade Launcher Software - Thermobaric Grenades",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] M32A1 Grenade Launcher Chipset - Thermobaric Grenades",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] M32A1 Grenade Launcher Firmware - Precision Fires",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] M32A1 Grenade Launcher Software - Precision Fires",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] M32A1 Grenade Launcher Chipset - Precision Fires",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "A",
+     "item": "Electronics Omega Components",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Artillery Turret Firmware - Shaped Charge",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Artillery Turret Software - Shaped Charge",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Artillery Turret Chipset - Shaped Charge",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Artillery Turret Firmware - Optimized",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Artillery Turret Software - Optimized",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Artillery Turret Chipset - Optimized",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Artillery Turret Firmware - Enhanced Fire Control",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Artillery Turret Software - Enhanced Fire Control",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Artillery Turret Chipset - Enhanced Fire Control",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Explosive Seeker Mine Firmware - Multi-Directional Charge",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Explosive Seeker Mine Software - Multi-Directional Charge",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Explosive Seeker Mine Chipset - Multi-Directional Charge",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Explosive Seeker Mine Firmware - Area Denial",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Explosive Seeker Mine Software - Area Denial",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Explosive Seeker Mine Chipset - Area Denial",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Explosive Seeker Mine Firmware - Potent Composition",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Explosive Seeker Mine Software - Potent Composition",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Explosive Seeker Mine Chipset - Potent Composition",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] M32A1 Grenade Launcher Firmware - Field Mortar",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] M32A1 Grenade Launcher Software - Field Mortar",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] M32A1 Grenade Launcher Chipset - Field Mortar",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] M32A1 Grenade Launcher Firmware - Thermobaric Grenades",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] M32A1 Grenade Launcher Software - Thermobaric Grenades",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] M32A1 Grenade Launcher Chipset - Thermobaric Grenades",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] M32A1 Grenade Launcher Firmware - Precision Fires",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] M32A1 Grenade Launcher Software - Precision Fires",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] M32A1 Grenade Launcher Chipset - Precision Fires",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "B",
+     "item": "Encrypted Data",
+     "amount": "100",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "Electronics Alpha Components",
+     "amount": "4",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "Electronics Beta Components",
+     "amount": "4",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "Electronics Gamma Components",
+     "amount": "4",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "[Sp] Artillery Turret Firmware - Cooling System",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "[Sp] Artillery Turret Software - Cooling System",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "[Sp] Artillery Turret Chipset - Cooling System",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "[Sp] Explosive Seeker Mine Firmware - Cooling Device",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "[Sp] Explosive Seeker Mine Software - Cooling Device",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "[Sp] Explosive Seeker Mine Chipset - Cooling Device",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "[Sp] M32A1 Grenade Launcher Firmware - Fire Support",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "[Sp] M32A1 Grenade Launcher Software - Fire Support",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "[Sp] M32A1 Grenade Launcher Chipset - Fire Support",
+     "amount": "1",
+     "chance": "6.77%"
+    }
+   ]
+  },
+  {
+   "name": "Tactical Pharma Cache",
+   "tierRates": {
+    "S": "2.00%",
+    "A": "10.00%",
+    "B": "88.00%"
+   },
+   "pity": {
+    "S": 50,
+    "A": 10
+   },
+   "items": [
+    {
+     "tier": "S",
+     "item": "[HE] Chemical Trap Firmware - Armor Strengthening",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Chemical Trap Software - Armor Strengthening",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Chemical Trap Chipset - Armor Strengthening",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Chemical Trap Firmware - Lightweight",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Chemical Trap Software - Lightweight",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Chemical Trap Chipset - Lightweight",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Chemical Trap Firmware - Siphon",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Chemical Trap Software - Siphon",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Chemical Trap Chipset - Siphon",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Oxidizing Hive Firmware - Acidic Effect",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Oxidizing Hive Software - Acidic Effect",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Oxidizing Hive Chipset - Acidic Effect",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Oxidizing Hive Firmware - Improved Formula",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Oxidizing Hive Software - Improved Formula",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Oxidizing Hive Chipset - Improved Formula",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Oxidizing Hive Firmware - Generative Formula",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Oxidizing Hive Software - Generative Formula",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Oxidizing Hive Chipset - Generative Formula",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Oxidizing Swarm Firmware - Feebleness",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Oxidizing Swarm Software - Feebleness",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Oxidizing Swarm Chipset - Feebleness",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Oxidizing Swarm Firmware - Augmented Range",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Oxidizing Swarm Software - Augmented Range",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Oxidizing Swarm Chipset - Augmented Range",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Oxidizing Swarm Firmware - Harvest",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Oxidizing Swarm Software - Harvest",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Oxidizing Swarm Chipset - Harvest",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "A",
+     "item": "Electronics Omega Components",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Chemical Trap Firmware - Armor Strengthening",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Chemical Trap Software - Armor Strengthening",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Chemical Trap Chipset - Armor Strengthening",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Chemical Trap Firmware - Lightweight",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Chemical Trap Software - Lightweight",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Chemical Trap Chipset - Lightweight",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Chemical Trap Firmware - Siphon",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Chemical Trap Software - Siphon",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Chemical Trap Chipset - Siphon",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Oxidizing Hive Firmware - Acidic Effect",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Oxidizing Hive Software - Acidic Effect",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Oxidizing Hive Chipset - Acidic Effect",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Oxidizing Hive Firmware - Improved Formula",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Oxidizing Hive Software - Improved Formula",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Oxidizing Hive Chipset - Improved Formula",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Oxidizing Hive Firmware - Generative Formula",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Oxidizing Hive Software - Generative Formula",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Oxidizing Hive Chipset - Generative Formula",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Oxidizing Swarm Firmware - Feebleness",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Oxidizing Swarm Software - Feebleness",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Oxidizing Swarm Chipset - Feebleness",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Oxidizing Swarm Firmware - Augmented Range",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Oxidizing Swarm Software - Augmented Range",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Oxidizing Swarm Chipset - Augmented Range",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Oxidizing Swarm Firmware - Harvest",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Oxidizing Swarm Software - Harvest",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Oxidizing Swarm Chipset - Harvest",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "B",
+     "item": "Encrypted Data",
+     "amount": "100",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "Electronics Alpha Components",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "Electronics Beta Components",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "Electronics Gamma Components",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "[Sp] Chemical Trap Firmware - Armor Strengthening",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "[Sp] Chemical Trap Software - Armor Strengthening",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "[Sp] Chemical Trap Chipset - Armor Strengthening",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "[Sp] Oxidizing Hive Firmware - Acidic Effect",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "[Sp] Oxidizing Hive Software - Acidic Effect",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "[Sp] Oxidizing Hive Chipset - Acidic Effect",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "[Sp] Oxidizing Swarm Firmware - Feebleness",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "[Sp] Oxidizing Swarm Software - Feebleness",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "[Sp] Oxidizing Swarm Chipset - Feebleness",
+     "amount": "1",
+     "chance": "6.77%"
+    }
+   ]
+  },
+  {
+   "name": "Combat Medicine Cache",
+   "tierRates": {
+    "S": "2.00%",
+    "A": "10.00%",
+    "B": "88.00%"
+   },
+   "pity": {
+    "S": 50,
+    "A": 10
+   },
+   "items": [
+    {
+     "tier": "S",
+     "item": "[HE] Support Station Firmware - Detrimental Treatment",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Support Station Software - Detrimental Treatment",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Support Station Chipset - Detrimental Treatment",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Support Station Firmware - Auto Trauma Treatment",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Support Station Software - Auto Trauma Treatment",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Support Station Chipset - Auto Trauma Treatment",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Support Station Firmware - Effective Triage",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Support Station Software - Effective Triage",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Support Station Chipset - Effective Triage",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Healing Hive Firmware - Defensive Measures",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Healing Hive Software - Defensive Measures",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Healing Hive Chipset - Defensive Measures",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Healing Hive Firmware - Buddy Treatment",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Healing Hive Software - Buddy Treatment",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Healing Hive Chipset - Buddy Treatment",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Healing Hive Firmware - Mutual Support",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Healing Hive Software - Mutual Support",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Healing Hive Chipset - Mutual Support",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Healing Swarm Firmware - Aggressive Drones",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Healing Swarm Software - Aggressive Drones",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Healing Swarm Chipset - Aggressive Drones",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Healing Swarm Firmware - Emergency Measures",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Healing Swarm Software - Emergency Measures",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Healing Swarm Chipset - Emergency Measures",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Healing Swarm Firmware - Doom Dealer",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Healing Swarm Software - Doom Dealer",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Healing Swarm Chipset - Doom Dealer",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "A",
+     "item": "Electronics Omega Components",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Support Station Firmware - Detrimental Treatment",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Support Station Software - Detrimental Treatment",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Support Station Chipset - Detrimental Treatment",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Support Station Firmware - Auto Trauma Treatment",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Support Station Software - Auto Trauma Treatment",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Support Station Chipset - Auto Trauma Treatment",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Support Station Firmware - Effective Triage",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Support Station Software - Effective Triage",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Support Station Chipset - Effective Triage",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Healing Hive Firmware - Defensive Measures",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Healing Hive Software - Defensive Measures",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Healing Hive Chipset - Defensive Measures",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Healing Hive Firmware - Buddy Treatment",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Healing Hive Software - Buddy Treatment",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Healing Hive Chipset - Buddy Treatment",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Healing Hive Firmware - Mutual Support",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Healing Hive Software - Mutual Support",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Healing Hive Chipset - Mutual Support",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Healing Swarm Firmware - Aggressive Drones",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Healing Swarm Software - Aggressive Drones",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Healing Swarm Chipset - Aggressive Drones",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Healing Swarm Firmware - Emergency Measures",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Healing Swarm Software - Emergency Measures",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Healing Swarm Chipset - Emergency Measures",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Healing Swarm Firmware - Doom Dealer",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Healing Swarm Software - Doom Dealer",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Healing Swarm Chipset - Doom Dealer",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "B",
+     "item": "Encrypted Data",
+     "amount": "100",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "Electronics Alpha Components",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "Electronics Beta Components",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "Electronics Gamma Components",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "[Sp] Support Station Firmware - Detrimental Treatment",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "[Sp] Support Station Software - Detrimental Treatment",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "[Sp] Support Station Chipset - Detrimental Treatment",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "[Sp] Healing Hive Firmware - Defensive Measures",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "[Sp] Healing Hive Software - Defensive Measures",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "[Sp] Healing Hive Chipset - Defensive Measures",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "[Sp] Healing Swarm Firmware - Aggressive Drones",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "[Sp] Healing Swarm Software - Aggressive Drones",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "[Sp] Healing Swarm Chipset - Aggressive Drones",
+     "amount": "1",
+     "chance": "6.77%"
+    }
+   ]
+  },
+  {
+   "name": "Breacher Cache",
+   "tierRates": {
+    "S": "2.00%",
+    "A": "10.00%",
+    "B": "88.00%"
+   },
+   "pity": {
+    "S": 50,
+    "A": 10
+   },
+   "items": [
+    {
+     "tier": "S",
+     "item": "[HE] Shockwave Spike Mk.3 Firmware - Reciprocal Charge",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Shockwave Spike Mk.3 Software - Reciprocal Charge",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Shockwave Spike Mk.3 Chipset - Reciprocal Charge",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Shockwave Spike Mk.3 Firmware - Weakening Charge",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Shockwave Spike Mk.3 Software - Weakening Charge",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Shockwave Spike Mk.3 Chipset - Weakening Charge",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Shockwave Spike Mk.3 Firmware - Attritional Charge",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Shockwave Spike Mk.3 Software - Attritional Charge",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Shockwave Spike Mk.3 Chipset - Attritional Charge",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Phalanx Shield Firmware - Adaptive Armor",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Phalanx Shield Software - Adaptive Armor",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Phalanx Shield Chipset - Adaptive Armor",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Phalanx Shield Firmware - Field Repairs",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Phalanx Shield Software - Field Repairs",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Phalanx Shield Chipset - Field Repairs",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Phalanx Shield Firmware - Impenetrable Wall",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Phalanx Shield Software - Impenetrable Wall",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Phalanx Shield Chipset - Impenetrable Wall",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Breach Combo Firmware - Intimidation",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Breach Combo Software - Intimidation",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Breach Combo Chipset - Intimidation",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Breach Combo Firmware - Optimal Range",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Breach Combo Software - Optimal Range",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Breach Combo Chipset - Optimal Range",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Breach Combo Firmware - Combatives",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Breach Combo Software - Combatives",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Breach Combo Chipset - Combatives",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "A",
+     "item": "Electronics Omega Components",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Shockwave Spike Mk.3 Firmware - Reciprocal Charge",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Shockwave Spike Mk.3 Software - Reciprocal Charge",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Shockwave Spike Mk.3 Chipset - Reciprocal Charge",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Shockwave Spike Mk.3 Firmware - Weakening Charge",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Shockwave Spike Mk.3 Software - Weakening Charge",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Shockwave Spike Mk.3 Chipset - Weakening Charge",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Shockwave Spike Mk.3 Firmware - Attritional Charge",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Shockwave Spike Mk.3 Software - Attritional Charge",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Shockwave Spike Mk.3 Chipset - Attritional Charge",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Phalanx Shield Firmware - Adaptive Armor",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Phalanx Shield Software - Adaptive Armor",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Phalanx Shield Chipset - Adaptive Armor",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Phalanx Shield Firmware - Field Repairs",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Phalanx Shield Software - Field Repairs",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Phalanx Shield Chipset - Field Repairs",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Phalanx Shield Firmware - Impenetrable Wall",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Phalanx Shield Software - Impenetrable Wall",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Phalanx Shield Chipset - Impenetrable Wall",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Breach Combo Firmware - Intimidation",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Breach Combo Software - Intimidation",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Breach Combo Chipset - Intimidation",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Breach Combo Firmware - Optimal Range",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Breach Combo Software - Optimal Range",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Breach Combo Chipset - Optimal Range",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Breach Combo Firmware - Combatives",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Breach Combo Software - Combatives",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Breach Combo Chipset - Combatives",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "B",
+     "item": "Encrypted Data",
+     "amount": "100",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "Electronics Alpha Components",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "Electronics Beta Components",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "Electronics Gamma Components",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "[Sp] Shockwave Spike Mk.3 Firmware - Reciprocal Charge",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "[Sp] Shockwave Spike Mk.3 Software - Reciprocal Charge",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "[Sp] Shockwave Spike Mk.3 Chipset - Reciprocal Charge",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "[Sp] Phalanx Shield Firmware - Adaptive Armor",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "[Sp] Phalanx Shield Software - Adaptive Armor",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "[Sp] Phalanx Shield Chipset - Adaptive Armor",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "[Sp] Breach Combo Firmware - Intimidation",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "[Sp] Breach Combo Software - Intimidation",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "[Sp] Breach Combo Chipset - Intimidation",
+     "amount": "1",
+     "chance": "6.77%"
+    }
+   ]
+  },
+  {
+   "name": "Juggernaut Cache",
+   "tierRates": {
+    "S": "2.00%",
+    "A": "10.00%",
+    "B": "88.00%"
+   },
+   "pity": {
+    "S": 50,
+    "A": 10
+   },
+   "items": [
+    {
+     "tier": "S",
+     "item": "[HE] Shockwave Spike Mk.3 Firmware - Attention Seeker",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Shockwave Spike Mk.3 Software - Attention Seeker",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Shockwave Spike Mk.3 Chipset - Attention Seeker",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Shockwave Spike Mk.3 Firmware - Schadenfreude",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Shockwave Spike Mk.3 Software - Schadenfreude",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Shockwave Spike Mk.3 Chipset - Schadenfreude",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Shockwave Spike Mk.3 Firmware - Close Quarters",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Shockwave Spike Mk.3 Software - Close Quarters",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Shockwave Spike Mk.3 Chipset - Close Quarters",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Phalanx Shield Firmware - Provocateur",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Phalanx Shield Software - Provocateur",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Phalanx Shield Chipset - Provocateur",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Phalanx Shield Firmware - Rational Distribution",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Phalanx Shield Software - Rational Distribution",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Phalanx Shield Chipset - Rational Distribution",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Phalanx Shield Firmware - Last Moment",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Phalanx Shield Software - Last Moment",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Phalanx Shield Chipset - Last Moment",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Breach Combo Firmware - Mutual Benefits",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Breach Combo Software - Mutual Benefits",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Breach Combo Chipset - Mutual Benefits",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Breach Combo Firmware - Heavy Weight",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Breach Combo Software - Heavy Weight",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Breach Combo Chipset - Heavy Weight",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Breach Combo Firmware - Tough Times",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Breach Combo Software - Tough Times",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Breach Combo Chipset - Tough Times",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "A",
+     "item": "Electronics Omega Components",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Shockwave Spike Mk.3 Firmware - Attention Seeker",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Shockwave Spike Mk.3 Software - Attention Seeker",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Shockwave Spike Mk.3 Chipset - Attention Seeker",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Shockwave Spike Mk.3 Firmware - Schadenfreude",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Shockwave Spike Mk.3 Software - Schadenfreude",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Shockwave Spike Mk.3 Chipset - Schadenfreude",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Shockwave Spike Mk.3 Firmware - Close Quarters",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Shockwave Spike Mk.3 Software - Close Quarters",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Shockwave Spike Mk.3 Chipset - Close Quarters",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Phalanx Shield Firmware - Provocateur",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Phalanx Shield Software - Provocateur",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Phalanx Shield Chipset - Provocateur",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Phalanx Shield Firmware - Rational Distribution",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Phalanx Shield Software - Rational Distribution",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Phalanx Shield Chipset - Rational Distribution",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Phalanx Shield Firmware - Last Moment",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Phalanx Shield Software - Last Moment",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Phalanx Shield Chipset - Last Moment",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Breach Combo Firmware - Mutual Benefits",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Breach Combo Software - Mutual Benefits",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Breach Combo Chipset - Mutual Benefits",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Breach Combo Firmware - Heavy Weight",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Breach Combo Software - Heavy Weight",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Breach Combo Chipset - Heavy Weight",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Breach Combo Firmware - Tough Times",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Breach Combo Software - Tough Times",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Breach Combo Chipset - Tough Times",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "B",
+     "item": "Encrypted Data",
+     "amount": "100",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "Electronics Alpha Components",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "Electronics Beta Components",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "Electronics Gamma Components",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "[Sp] Shockwave Spike Mk.3 Firmware - Reciprocal Charge",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "[Sp] Shockwave Spike Mk.3 Software - Reciprocal Charge",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "[Sp] Shockwave Spike Mk.3 Chipset - Reciprocal Charge",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "[Sp] Phalanx Shield Firmware - Adaptive Armor",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "[Sp] Phalanx Shield Software - Adaptive Armor",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "[Sp] Phalanx Shield Chipset - Adaptive Armor",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "[Sp] Breach Combo Firmware - Intimidation",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "[Sp] Breach Combo Software - Intimidation",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "[Sp] Breach Combo Chipset - Intimidation",
+     "amount": "1",
+     "chance": "6.77%"
+    }
+   ]
+  },
+  {
+   "name": "Offensive Operations Cache",
+   "tierRates": {
+    "S": "2.00%",
+    "A": "10.00%",
+    "B": "88.00%"
+   },
+   "pity": {
+    "S": 50,
+    "A": 10
+   },
+   "items": [
+    {
+     "tier": "S",
+     "item": "[HE] Striker Drone Firmware - Supercharged",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Striker Drone Software - Supercharged",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Striker Drone Chipset - Supercharged",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Striker Drone Firmware - Thermite Charge",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Striker Drone Software - Thermite Charge",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Striker Drone Chipset - Thermite Charge",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Striker Drone Firmware - Extermination",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Striker Drone Software - Extermination",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Striker Drone Chipset - Extermination",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Drone Lock Firmware - Precise Suppression",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Drone Lock Software - Precise Suppression",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Drone Lock Chipset - Precise Suppression",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Drone Lock Firmware - Stabilized Flight",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Drone Lock Software - Stabilized Flight",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Drone Lock Chipset - Stabilized Flight",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Drone Lock Firmware - Area Sweep",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Drone Lock Software - Area Sweep",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Drone Lock Chipset - Area Sweep",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Drone Overload Firmware - Supply Line",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Drone Overload Software - Supply Line",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Drone Overload Chipset - Supply Line",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Drone Overload Firmware - Optimized Targeting",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Drone Overload Software - Optimized Targeting",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Drone Overload Chipset - Optimized Targeting",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Drone Overload Firmware - Lethal Sweep",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Drone Overload Software - Lethal Sweep",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Drone Overload Chipset - Lethal Sweep",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "A",
+     "item": "Electronics Omega Components",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Striker Drone Firmware - Supercharged",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Striker Drone Software - Supercharged",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Striker Drone Chipset - Supercharged",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Striker Drone Firmware - Thermite Charge",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Striker Drone Software - Thermite Charge",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Striker Drone Chipset - Thermite Charge",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Striker Drone Firmware - Extermination",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Striker Drone Software - Extermination",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Striker Drone Chipset - Extermination",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Drone Lock Firmware - Precise Suppression",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Drone Lock Software - Precise Suppression",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Drone Lock Chipset - Precise Suppression",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Drone Lock Firmware - Stabilized Flight",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Drone Lock Software - Stabilized Flight",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Drone Lock Chipset - Stabilized Flight",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Drone Lock Firmware - Area Sweep",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Drone Lock Software - Area Sweep",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Drone Lock Chipset - Area Sweep",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Drone Overload Firmware - Supply Line",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Drone Overload Software - Supply Line",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Drone Overload Chipset - Supply Line",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Drone Overload Firmware - Optimized Targeting",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Drone Overload Software - Optimized Targeting",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Drone Overload Chipset - Optimized Targeting",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Drone Overload Firmware - Lethal Sweep",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Drone Overload Software - Lethal Sweep",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Drone Overload Chipset - Lethal Sweep",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "B",
+     "item": "Encrypted Data",
+     "amount": "100",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "Electronics Alpha Components",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "Electronics Beta Components",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "Electronics Gamma Components",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "[Sp] Striker Drone Firmware - Supercharged",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "[Sp] Striker Drone Software - Supercharged",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "[Sp] Striker Drone Chipset - Supercharged",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "[Sp] Drone Lock Firmware - Precise Suppression",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "[Sp] Drone Lock Software - Precise Suppression",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "[Sp] Drone Lock Chipset - Precise Suppression",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "[Sp] Drone Overload Firmware - Supply Line",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "[Sp] Drone Overload Software - Supply Line",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "[Sp] Drone Overload Chipset - Supply Line",
+     "amount": "1",
+     "chance": "6.77%"
+    }
+   ]
+  },
+  {
+   "name": "Aegis Operations Cache",
+   "tierRates": {
+    "S": "2.00%",
+    "A": "10.00%",
+    "B": "88.00%"
+   },
+   "pity": {
+    "S": 50,
+    "A": 10
+   },
+   "items": [
+    {
+     "tier": "S",
+     "item": "[HE] Mender Drone Firmware - Close Protection",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Mender Drone Software - Close Protection",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Mender Drone Chipset - Close Protection",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Mender Drone Firmware - Team Backup",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Mender Drone Software - Team Backup",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Mender Drone Chipset - Team Backup",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Mender Drone Firmware - EMCAT",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Mender Drone Software - EMCAT",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Mender Drone Chipset - EMCAT",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] First-Aid Firefly Firmware - Applied Treatment",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] First-Aid Firefly Software - Applied Treatment",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] First-Aid Firefly Chipset - Applied Treatment",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] First-Aid Firefly Firmware - Performance Enhancer",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] First-Aid Firefly Software - Performance Enhancer",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] First-Aid Firefly Chipset - Performance Enhancer",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] First-Aid Firefly Firmware - Accelerated Healing",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] First-Aid Firefly Software - Accelerated Healing",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] First-Aid Firefly Chipset - Accelerated Healing",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Defender Drone Firmware - Support Pattern",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Defender Drone Software - Support Pattern",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Defender Drone Chipset - Support Pattern",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Defender Drone Firmware - Hazardous Area",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Defender Drone Software - Hazardous Area",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Defender Drone Chipset - Hazardous Area",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Defender Drone Firmware - Mutual Assist",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Defender Drone Software - Mutual Assist",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Defender Drone Chipset - Mutual Assist",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "A",
+     "item": "Electronics Omega Components",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Mender Drone Firmware - Close Protection",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Mender Drone Software - Close Protection",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Mender Drone Chipset - Close Protection",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Mender Drone Firmware - Team Backup",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Mender Drone Software - Team Backup",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Mender Drone Chipset - Team Backup",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Mender Drone Firmware - EMCAT",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Mender Drone Software - EMCAT",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Mender Drone Chipset - EMCAT",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] First-Aid Firefly Firmware - Applied Treatment",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] First-Aid Firefly Software - Applied Treatment",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] First-Aid Firefly Chipset - Applied Treatment",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] First-Aid Firefly Firmware - Performance Enhancer",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] First-Aid Firefly Software - Performance Enhancer",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] First-Aid Firefly Chipset - Performance Enhancer",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] First-Aid Firefly Firmware - Accelerated Healing",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] First-Aid Firefly Software - Accelerated Healing",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] First-Aid Firefly Chipset - Accelerated Healing",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Defender Drone Firmware - Support Pattern",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Defender Drone Software - Support Pattern",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Defender Drone Chipset - Support Pattern",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Defender Drone Firmware - Hazardous Area",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Defender Drone Software - Hazardous Area",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Defender Drone Chipset - Hazardous Area",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Defender Drone Firmware - Mutual Assist",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Defender Drone Software - Mutual Assist",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Defender Drone Chipset - Mutual Assist",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "B",
+     "item": "Encrypted Data",
+     "amount": "100",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "Electronics Alpha Components",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "Electronics Beta Components",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "Electronics Gamma Components",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "[Sp] Mender Drone Firmware - Close Protection",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "[Sp] Mender Drone Software - Close Protection",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "[Sp] Mender Drone Chipset - Close Protection",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "[Sp] First-Aid Firefly Firmware - Applied Treatment",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "[Sp] First-Aid Firefly Software - Applied Treatment",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "[Sp] First-Aid Firefly Chipset - Applied Treatment",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "[Sp] Defender Drone Firmware - Support Pattern",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "[Sp] Defender Drone Software - Support Pattern",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "[Sp] Defender Drone Chipset - Support Pattern",
+     "amount": "1",
+     "chance": "6.77%"
+    }
+   ]
+  },
+  {
+   "name": "Commando Cache",
+   "tierRates": {
+    "S": "2.00%",
+    "A": "10.00%",
+    "B": "88.00%"
+   },
+   "pity": {
+    "S": 50,
+    "A": 10
+   },
+   "items": [
+    {
+     "tier": "S",
+     "item": "[HE] Scanning Pulse Firmware - Optimal Awareness",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Scanning Pulse Software - Optimal Awareness",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Scanning Pulse Chipset - Optimal Awareness",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Scanning Pulse Firmware - Field Supplies",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Scanning Pulse Software - Field Supplies",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Scanning Pulse Chipset - Field Supplies",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Scanning Pulse Firmware - Tactical Insight",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Scanning Pulse Software - Tactical Insight",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Scanning Pulse Chipset - Tactical Insight",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Tactical Link Firmware - Commando",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Tactical Link Software - Commando",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Tactical Link Chipset - Commando",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Tactical Link Firmware - Ammo Refill",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Tactical Link Software - Ammo Refill",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Tactical Link Chipset - Ammo Refill",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Tactical Link Firmware - Tactical Loop",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Tactical Link Software - Tactical Loop",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Tactical Link Chipset - Tactical Loop",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Smart Cover Firmware - Armored Train",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Smart Cover Software - Armored Train",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Smart Cover Chipset - Armored Train",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Smart Cover Firmware - Optimized Armor",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Smart Cover Software - Optimized Armor",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Smart Cover Chipset - Optimized Armor",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Smart Cover Firmware - Top Off",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Smart Cover Software - Top Off",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Smart Cover Chipset - Top Off",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "A",
+     "item": "Electronics Omega Components",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Scanning Pulse Firmware - Optimal Awareness",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Scanning Pulse Software - Optimal Awareness",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Scanning Pulse Chipset - Optimal Awareness",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Scanning Pulse Firmware - Field Supplies",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Scanning Pulse Software - Field Supplies",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Scanning Pulse Chipset - Field Supplies",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Scanning Pulse Firmware - Tactical Insight",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Scanning Pulse Software - Tactical Insight",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Scanning Pulse Chipset - Tactical Insight",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Tactical Link Firmware - Commando",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Tactical Link Software - Commando",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Tactical Link Chipset - Commando",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Tactical Link Firmware - Ammo Refill",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Tactical Link Software - Ammo Refill",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Tactical Link Chipset - Ammo Refill",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Tactical Link Firmware - Tactical Loop",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Tactical Link Software - Tactical Loop",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Tactical Link Chipset - Tactical Loop",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Smart Cover Firmware - Armored Train",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Smart Cover Software - Armored Train",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Smart Cover Chipset - Armored Train",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Smart Cover Firmware - Optimized Armor",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Smart Cover Software - Optimized Armor",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Smart Cover Chipset - Optimized Armor",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Smart Cover Firmware - Top Off",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Smart Cover Software - Top Off",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Smart Cover Chipset - Top Off",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "B",
+     "item": "Encrypted Data",
+     "amount": "100",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "Electronics Alpha Components",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "Electronics Beta Components",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "Electronics Gamma Components",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "[Sp] Scanning Pulse Firmware - Optimal Awareness",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "[Sp] Scanning Pulse Software - Optimal Awareness",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "[Sp] Scanning Pulse Chipset - Optimal Awareness",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "[Sp] Tactical Link Firmware - Commando",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "[Sp] Tactical Link Software - Commando",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "[Sp] Tactical Link Chipset - Commando",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "[Sp] Smart Cover Firmware - Armored Train",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "[Sp] Smart Cover Software - Armored Train",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "[Sp] Smart Cover Chipset - Armored Train",
+     "amount": "1",
+     "chance": "6.77%"
+    }
+   ]
+  },
+  {
+   "name": "Recon Cache",
+   "tierRates": {
+    "S": "2.00%",
+    "A": "10.00%",
+    "B": "88.00%"
+   },
+   "pity": {
+    "S": 50,
+    "A": 10
+   },
+   "items": [
+    {
+     "tier": "S",
+     "item": "[HE] Scanning Pulse Firmware - Pulse Enhancement",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Scanning Pulse Software - Pulse Enhancement",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Scanning Pulse Chipset - Pulse Enhancement",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Scanning Pulse Firmware - Scout",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Scanning Pulse Software - Scout",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Scanning Pulse Chipset - Scout",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Scanning Pulse Firmware - Compound Effect",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Scanning Pulse Software - Compound Effect",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Scanning Pulse Chipset - Compound Effect",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Tactical Link Firmware - Bugle Call",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Tactical Link Software - Bugle Call",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Tactical Link Chipset - Bugle Call",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Tactical Link Firmware - Tactical Reinforcement",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Tactical Link Software - Tactical Reinforcement",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Tactical Link Chipset - Tactical Reinforcement",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Tactical Link Firmware - Liquid Nitrogen",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Tactical Link Software - Liquid Nitrogen",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Tactical Link Chipset - Liquid Nitrogen",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Smart Cover Firmware - Superior Position",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Smart Cover Software - Superior Position",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Smart Cover Chipset - Superior Position",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Smart Cover Firmware - Mobile Bastion",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Smart Cover Software - Mobile Bastion",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Smart Cover Chipset - Mobile Bastion",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Smart Cover Firmware - Effective Deterrent",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Smart Cover Software - Effective Deterrent",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "S",
+     "item": "[HE] Smart Cover Chipset - Effective Deterrent",
+     "amount": "1",
+     "chance": "0.07%"
+    },
+    {
+     "tier": "A",
+     "item": "Electronics Omega Components",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Scanning Pulse Firmware - Pulse Enhancement",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Scanning Pulse Software - Pulse Enhancement",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Scanning Pulse Chipset - Pulse Enhancement",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Scanning Pulse Firmware - Scout",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Scanning Pulse Software - Scout",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Scanning Pulse Chipset - Scout",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Scanning Pulse Firmware - Compound Effect",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Scanning Pulse Software - Compound Effect",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Scanning Pulse Chipset - Compound Effect",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Tactical Link Firmware - Bugle Call",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Tactical Link Software - Bugle Call",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Tactical Link Chipset - Bugle Call",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Tactical Link Firmware - Tactical Reinforcement",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Tactical Link Software - Tactical Reinforcement",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Tactical Link Chipset - Tactical Reinforcement",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Tactical Link Firmware - Liquid Nitrogen",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Tactical Link Software - Liquid Nitrogen",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Tactical Link Chipset - Liquid Nitrogen",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Smart Cover Firmware - Superior Position",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Smart Cover Software - Superior Position",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Smart Cover Chipset - Superior Position",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Smart Cover Firmware - Mobile Bastion",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Smart Cover Software - Mobile Bastion",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Smart Cover Chipset - Mobile Bastion",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Smart Cover Firmware - Effective Deterrent",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Smart Cover Software - Effective Deterrent",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "A",
+     "item": "[Su] Smart Cover Chipset - Effective Deterrent",
+     "amount": "1",
+     "chance": "0.36%"
+    },
+    {
+     "tier": "B",
+     "item": "Encrypted Data",
+     "amount": "100",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "Electronics Alpha Components",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "Electronics Beta Components",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "Electronics Gamma Components",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "[Sp] Scanning Pulse Firmware - Optimal Awareness",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "[Sp] Scanning Pulse Software - Optimal Awareness",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "[Sp] Scanning Pulse Chipset - Optimal Awareness",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "[Sp] Tactical Link Firmware - Commando",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "[Sp] Tactical Link Software - Commando",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "[Sp] Tactical Link Chipset - Commando",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "[Sp] Smart Cover Firmware - Armored Train",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "[Sp] Smart Cover Software - Armored Train",
+     "amount": "1",
+     "chance": "6.77%"
+    },
+    {
+     "tier": "B",
+     "item": "[Sp] Smart Cover Chipset - Armored Train",
+     "amount": "1",
+     "chance": "6.77%"
+    }
+   ]
+  },
+  {
+   "name": "Exotic Cache",
+   "tierRates": {
+    "S": "2.00%",
+    "A": "10.00%",
+    "B": "88.00%"
+   },
+   "pity": {
+    "S": 50,
+    "A": 10
+   },
+   "items": [
+    {
+     "tier": "S",
+     "item": "Lady Death Cache",
+     "amount": "1",
+     "chance": "0.29%"
+    },
+    {
+     "tier": "S",
+     "item": "Warlord Cache",
+     "amount": "1",
+     "chance": "0.29%"
+    },
+    {
+     "tier": "S",
+     "item": "Strawberry Milkshake Cache",
+     "amount": "1",
+     "chance": "0.29%"
+    },
+    {
+     "tier": "S",
+     "item": "Scorpio Cache",
+     "amount": "1",
+     "chance": "0.29%"
+    },
+    {
+     "tier": "S",
+     "item": "The Bighorn Cache",
+     "amount": "1",
+     "chance": "0.29%"
+    },
+    {
+     "tier": "S",
+     "item": "The Diamondback Cache",
+     "amount": "1",
+     "chance": "0.29%"
+    },
+    {
+     "tier": "S",
+     "item": "Deadlock Cache",
+     "amount": "1",
+     "chance": "0.29%"
+    },
+    {
+     "tier": "A",
+     "item": "Lady Death Tactical Augmentation Module",
+     "amount": "1",
+     "chance": "1.43%"
+    },
+    {
+     "tier": "A",
+     "item": "Warlord Tactical Augmentation Module",
+     "amount": "1",
+     "chance": "1.43%"
+    },
+    {
+     "tier": "A",
+     "item": "Strawberry Milkshake Tactical Augmentation Module",
+     "amount": "1",
+     "chance": "1.43%"
+    },
+    {
+     "tier": "A",
+     "item": "Scorpio Tactical Augmentation Module",
+     "amount": "1",
+     "chance": "1.43%"
+    },
+    {
+     "tier": "A",
+     "item": "The Bighorn Tactical Augmentation Module",
+     "amount": "1",
+     "chance": "1.43%"
+    },
+    {
+     "tier": "A",
+     "item": "The Diamondback Tactical Augmentation Module",
+     "amount": "1",
+     "chance": "1.43%"
+    },
+    {
+     "tier": "A",
+     "item": "Deadlock Tactical Augmentation Module",
+     "amount": "1",
+     "chance": "1.43%"
+    },
+    {
+     "tier": "B",
+     "item": "Weapon Mod Selection: Lady Death",
+     "amount": "1",
+     "chance": "4.19%"
+    },
+    {
+     "tier": "B",
+     "item": "Weapon Mod Selection: Warlord",
+     "amount": "1",
+     "chance": "4.19%"
+    },
+    {
+     "tier": "B",
+     "item": "Weapon Mod Selection: Strawberry Milkshake",
+     "amount": "1",
+     "chance": "4.19%"
+    },
+    {
+     "tier": "B",
+     "item": "Weapon Mod Selection: Scorpio",
+     "amount": "1",
+     "chance": "4.19%"
+    },
+    {
+     "tier": "B",
+     "item": "Weapon Mod Selection: The Bighorn",
+     "amount": "1",
+     "chance": "4.19%"
+    },
+    {
+     "tier": "B",
+     "item": "Weapon Mod Selection: The Diamondback",
+     "amount": "1",
+     "chance": "4.19%"
+    },
+    {
+     "tier": "B",
+     "item": "Weapon Mod Selection: Deadlock",
+     "amount": "1",
+     "chance": "4.19%"
+    },
+    {
+     "tier": "B",
+     "item": "Exotic Weapon Recalibration Booklet - Lady Death",
+     "amount": "3",
+     "chance": "4.19%"
+    },
+    {
+     "tier": "B",
+     "item": "Exotic Weapon Recalibration Manual - Lady Death",
+     "amount": "3",
+     "chance": "4.19%"
+    },
+    {
+     "tier": "B",
+     "item": "Exotic Weapon Recalibration Booklet - Warlord",
+     "amount": "3",
+     "chance": "4.19%"
+    },
+    {
+     "tier": "B",
+     "item": "Exotic Weapon Recalibration Manual - Warlord",
+     "amount": "3",
+     "chance": "4.19%"
+    },
+    {
+     "tier": "B",
+     "item": "Exotic Weapon Recalibration Booklet - Strawberry Milkshake",
+     "amount": "3",
+     "chance": "4.19%"
+    },
+    {
+     "tier": "B",
+     "item": "Exotic Weapon Recalibration Manual - Strawberry Milkshake",
+     "amount": "3",
+     "chance": "4.19%"
+    },
+    {
+     "tier": "B",
+     "item": "Exotic Weapon Recalibration Booklet - Scorpio",
+     "amount": "3",
+     "chance": "4.19%"
+    },
+    {
+     "tier": "B",
+     "item": "Exotic Weapon Recalibration Manual - Scorpio",
+     "amount": "3",
+     "chance": "4.19%"
+    },
+    {
+     "tier": "B",
+     "item": "Exotic Weapon Recalibration Booklet - The Bighorn",
+     "amount": "3",
+     "chance": "4.19%"
+    },
+    {
+     "tier": "B",
+     "item": "Exotic Weapon Recalibration Manual - The Bighorn",
+     "amount": "3",
+     "chance": "4.19%"
+    },
+    {
+     "tier": "B",
+     "item": "Exotic Weapon Recalibration Booklet - The Diamondback",
+     "amount": "3",
+     "chance": "4.19%"
+    },
+    {
+     "tier": "B",
+     "item": "Exotic Weapon Recalibration Manual - The Diamondback",
+     "amount": "3",
+     "chance": "4.19%"
+    },
+    {
+     "tier": "B",
+     "item": "Exotic Weapon Recalibration Booklet - Deadlock",
+     "amount": "3",
+     "chance": "4.19%"
+    },
+    {
+     "tier": "B",
+     "item": "Exotic Weapon Recalibration Manual - Deadlock",
+     "amount": "3",
+     "chance": "4.19%"
+    }
+   ]
+  }
+ ]
+}

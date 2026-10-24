@@ -1,14 +1,15 @@
 ---
 title: "Error 6000010 Fix - Division Resurgence"
 category: "General"
-lastUpdated: 2026-05-06T12:00:00Z
+publishDate: 2026-05-30
+lastUpdated: 2026-10-24T12:00:00Z
 tags: ["error-codes", "troubleshooting", "error-6000010", "network-error", "connection-error", "division-resurgence-errors"]
 description: "Fix Division Resurgence error 6000010 (Network connection error). 5 working fixes in order, plus server-side workarounds."
 author: "RapidF5"
 featuredImage: "/images/guides/division-resurgence-error-6000010-fix-guide-hero.jpg"
 imageAlt: "Division Resurgence error 6000010 network connection error troubleshooting guide"
 shareTitle: "It's not always your Wi-Fi"
-shareText: "Error 6000010 is the most common error in Division Resurgence. Five fixes, in order, plus when it's actually Ubisoft's fault."
+shareText: "Error 6000010 is the most common error in Division Resurgence. Five fixes, in order, plus how to tell when it's a server-side problem you can't fix yourself."
 howTo:
   name: "How to Fix Division Resurgence Error 6000010"
   description: "Step-by-step fixes for the 'Network connection error' in Tom Clancy's The Division Resurgence."
@@ -36,20 +37,23 @@ faqs:
   - question: "Is error 600100 the same as 6000010?"
     answer: "Yes. Error 600100 is the same code as 6000010 with one digit dropped in chat threads. Treat any 600100 report as 6000010 and apply the same fixes."
   - question: "Why does 6000010 happen?"
-    answer: "Four root causes: local network instability, geographic routing issues to Ubisoft's regional servers, cached connection state that survives a soft restart, and server-side outage or scheduled maintenance."
+    answer: "Ubisoft hasn't published a breakdown, but player reports point to four buckets: local network instability, bad routing to Ubisoft's regional servers, cached connection state that survives a soft restart, and server-side outages or scheduled maintenance. Three of those are fixable from your couch. The fourth is fixable with a sandwich and patience."
   - question: "Is using a VPN to fix 6000010 safe for my Ubisoft account?"
-    answer: "Yes. There are no confirmed bans for using a VPN solely to resolve a connection error. Division Resurgence is officially available in the UK, France, Germany, Netherlands, and US."
+    answer: "We haven't seen any confirmed bans for using a VPN solely to fix a connection error, but Ubisoft hasn't officially blessed it either, so use it as a workaround, not a lifestyle. The game launched globally on March 31, 2026, so routing through the UK, France, Germany, the Netherlands, or the US isn't dodging a geo-lock."
   - question: "How do I know if 6000010 is a Ubisoft server issue?"
-    answer: "Check the official @TheDivMobile X account for posted maintenance windows. If 6000010 is hitting every player in your region at the same time, it's a server issue and no client-side fix exists."
+    answer: "Check the official @TheDivMobile X account for posted maintenance windows, and Ubisoft's official bug reporter for known issues. If 6000010 is hitting every player in your region at the same time, it's a server issue and no client-side fix exists. Resetting your router for the fifth time is cardio, not troubleshooting."
   - question: "How much free storage do I need to avoid 6000010?"
     answer: "At least 5 GB of free space. Ubisoft's official help page recommends 17 GB total available space even though the install is around 10.5 GB."
   - question: "Why does 6000010 hit me specifically on mission entry?"
-    answer: "On older iOS devices (first-generation iPad Pro, iPhone 11 and earlier), instance-entry 6000010 can be a memory issue. Close all other background apps before launching."
+    answer: "On older supported iOS devices (the first-generation 11-inch iPad Pro, iPhone 11 and earlier), instance-entry 6000010 can be a memory issue. Close all other background apps before launching."
   - question: "Is 6000010 the same as Division 2 error codes?"
-    answer: "No. Division Resurgence is the mobile game. Error 6000010 is mobile-specific. The Division and The Division 2 on PC and console use entirely different error code formats."
+    answer: "No. Division Resurgence is the mobile-first spin-off (also on PC via Steam and Ubisoft Connect now) with its own error codes, and most 6000010 reports we've seen come from mobile. The Division and The Division 2 use entirely different error code formats, so their fixes won't help you here."
 ---
 
-**By RapidF5 ·** Patch 1.1.2.2 ·
+**By RapidF5 ·** Written during Season 1, updated for Season 2 · Phase 2 (extended) ·
+
+> [!INFO] Update (October 2026)
+> Since this was written, the game launched on Steam (August 5, 2026) alongside Ubisoft Connect, so we added a short PC section below. Ubisoft also now runs an official [bug reporter](https://www.ubisoft.com/en-us/game/the-division/the-division-resurgence/bug-reporter/issues), which its Help Center points PC players to. Nothing in the Season 2 patch notes changes the mobile fix flow.
 
 > Division Resurgence error **6000010** is the *"Network connection error. Please check your network connection and try again or exit the game."* popup. It is the single most reported error in the game, and it hits at every conceivable choke point: login, matchmaking, mission entry, randomly mid-fight. The good news is that the same five-step fix flow resolves it for the vast majority of players. The bad news is that sometimes it isn't you, it's Ubisoft, and the only fix is to wait.
 
@@ -75,7 +79,7 @@ faqs:
 Error 6000010 is the game's catch-all network error. It surfaces whenever the client can't establish or maintain a clean connection to Ubisoft's matchmaking and session services. The real root causes break down into four buckets:
 
 - **Local network instability.** Flaky Wi-Fi, ISP throttling, stale DNS, or a router that needs a power cycle. This is the most common cause.
-- **Geographic routing issues.** The game runs servers in the UK, France, Germany, Netherlands, and US. If your traffic is routing through a degraded peering point, you get 6000010 even though your local connection looks fine.
+- **Geographic routing issues.** The game runs on regional servers (the devs mentioned three in their April stream, and Ubisoft relocated the Asian server during a May 26 maintenance). If your traffic is routing through a degraded peering point, you get 6000010 even though your local connection looks fine.
 - **Cached connection state.** The game's network layer holds onto a bad connection state across soft restarts. A full force-close clears it, a background-and-resume doesn't.
 - **Server-side outage or maintenance.** When Ubisoft runs a maintenance window, every player in that region eats 6000010 at the same time. No client-side fix exists for this.
 
@@ -85,7 +89,7 @@ What it is **not**:
 - It's not always your fault. Sometimes Ubisoft has scheduled maintenance and 6000010 is the only signal you get.
 - It's not specific to one device or OS. It hits iOS, Android, flagships, and budget phones equally.
 
-> **Don't confuse this with The Division 2 error codes.** Division Resurgence is the mobile game. Error 6000010 is mobile-specific and has nothing to do with The Division or The Division 2 on PC and console.
+> **Don't confuse this with The Division 2 error codes.** Division Resurgence is the mobile-first one (it's on PC via Steam and Ubisoft Connect too now), and most 6000010 reports we've seen come from mobile. It has nothing to do with The Division or The Division 2 on PC and console.
 
 ---
 
@@ -114,9 +118,9 @@ If switching networks didn't help (or you only have one network available), forc
 
 This forces the device to release its current IP and grab a fresh one, which clears stale routing and any cached connection state at the OS level.
 
-### Fix 3: VPN to a supported region
+### Fix 3: VPN to a recommended region
 
-If your network is fine but the route to Ubisoft's servers is degraded, a VPN forces a clean exit. Connect to a server in one of the regions where Division Resurgence officially runs:
+If your network is fine but the route to Ubisoft's servers is degraded, a VPN forces a clean exit. Connect to a server in one of the regions the community fix threads recommend:
 
 - **United Kingdom**
 - **France**
@@ -128,7 +132,7 @@ Launch the game with the VPN active. Once you reach the main menu, you can usual
 
 Any reputable VPN works. Free tiers of ProtonVPN, Windscribe, and similar services all include servers in these regions.
 
-> **Is using a VPN safe for your account?** Yes. There are no confirmed bans for using a VPN solely to resolve a connection error. Division Resurgence is officially available worldwide in the supported regions, so connecting through one of them isn't circumventing geo-restrictions.
+> **Is using a VPN safe for your account?** We haven't seen any confirmed bans for using a VPN solely to resolve a connection error, but Ubisoft hasn't officially blessed it either, so use it to get connected and turn it off once you're in. The game launched globally on March 31, 2026, so connecting through one of these regions isn't circumventing a geo-restriction.
 
 ### Fix 4: Fully close the game first, then relaunch
 
@@ -162,14 +166,16 @@ It's probably not you.
 
 **Check [@TheDivMobile](https://x.com/TheDivMobile) on X first.** Ubisoft posts maintenance windows there before they happen and during outages. If there's an active maintenance window, no client-side fix exists. You wait.
 
-**Known maintenance windows so far in 2026:**
+**Known maintenance windows and big update days so far in 2026:**
 
 - April 15, 2026
-- May 12, 2026
-- May 26, 2026
-- Phase 3 launch in June (specific date not yet announced)
+- May 11-12, 2026 (Season 1 Phase 2)
+- May 26, 2026 (Asian servers)
+- June 23-24, 2026 (Season 1 Phase 3), plus a server hotfix on June 26
+- August 5, 2026 (Season 2 Phase 1 and the Steam launch)
+- September 16, 2026 (Season 2 Phase 2)
 
-For unscheduled outages, it's the same drill. Check social, wait, retry every 15 to 30 minutes.
+For unscheduled outages, it's the same drill. Check social, wait, retry every 15 to 30 minutes. Ubisoft's official [bug reporter](https://www.ubisoft.com/en-us/game/the-division/the-division-resurgence/bug-reporter/issues) is also worth a look to see whether a connection issue is already known.
 
 ---
 
@@ -189,13 +195,17 @@ Common during peak hours when the matchmaking service is under load. Force-close
 
 Reported on [April 6, 2026](https://www.reddit.com/r/thedivisionresurgence/comments/1sdt22h/connection_error/) by multiple players. Open world is fine, the moment you enter a mission or instance you get booted with 6000010 (or the "600100" misreport).
 
-The standard fix stack applies, but with one addition: **if you're on an older iOS device** (first-generation iPad Pro, iPhone 11 and earlier), this can also be a memory issue. Close every other background app before launching.
+The standard fix stack applies, but with one addition: **if you're on an older supported iOS device** (the first-generation 11-inch iPad Pro, iPhone 11 and earlier), this can also be a memory issue. Close every other background app before launching.
 
 Multiple players reported the issue cleared on its own within 12 to 24 hours when it was server-side congestion during peak hours.
 
 ### 6000010 Randomly Mid-Mission
 
 The most frustrating version. There's no preventive client-side fix beyond making sure your network is stable. If it happens repeatedly on the same network, switch to a different one for your next session. If it persists, VPN becomes the move.
+
+### 6000010 on PC (Steam or Ubisoft Connect)
+
+The phone tricks (mobile data, airplane mode) obviously don't apply, and we haven't seen a PC-specific fix from Ubisoft for this code. What we'd do: fully quit the game and the Ubisoft Connect launcher (Steam runs a light version of it alongside the game), restart your router or move to a wired connection, then check the official [bug reporter](https://www.ubisoft.com/en-us/game/the-division/the-division-resurgence/bug-reporter/issues), which is where Ubisoft's Help Center sends PC players first. Still broken? Contact Player Support through the in-game support icon. Full PC setup is in our [Steam PC guide](/guides/division-resurgence-steam-pc-guide/).
 
 ---
 
@@ -205,8 +215,8 @@ You've earned the right to a support ticket when **all of the following are true
 
 - You've tried all 5 fixes above.
 - You have at least 5 GB of free storage.
-- You've tested on a VPN connected to one of the five supported regions.
-- You've confirmed it isn't a maintenance window by checking [@TheDivMobile](https://x.com/TheDivMobile) on X.
+- You've tested on a VPN connected to one of the five regions above.
+- You've confirmed it isn't a maintenance window by checking [@TheDivMobile](https://x.com/TheDivMobile) on X, and it isn't already a known issue on Ubisoft's [bug reporter](https://www.ubisoft.com/en-us/game/the-division/the-division-resurgence/bug-reporter/issues).
 - 6000010 is hitting only your account, not everyone in your region.
 
 **File a support ticket:**
@@ -241,12 +251,15 @@ For full details on each of these, see the [Division Resurgence Error Codes guid
 
 - [Full Division Resurgence Error Codes Guide](/guides/division-resurgence-error-codes/)
 - [Division Resurgence Error 271581191 Fix Guide](/guides/division-resurgence-error-271581191/)
+- [Division Resurgence on Steam: PC Guide](/guides/division-resurgence-steam-pc-guide/)
 - [Patch 1.1.2.2 Notes](/patch-notes/patch-1-1-2-2/)
 - [Division Resurgence Codes](/guides/division-resurgence-codes/)
 
 **Sources:**
 
 - [Ubisoft Mobile Help Center for Division Resurgence](https://ubisoft-mobile.helpshift.com/hc/app/41-the-division-resurgence/)
+- [Ubisoft Help Center: Play on PC (Steam or Ubisoft Connect)](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2509-play-on-pc-steam-or-ubisoft-connect-all-you-need-to-know/)
+- [Ubisoft: The Division Resurgence bug reporter](https://www.ubisoft.com/en-us/game/the-division/the-division-resurgence/bug-reporter/issues)
 - [@TheDivMobile official X account](https://x.com/TheDivMobile)
 - [r/thedivisionresurgence Connection error thread (April 6, 2026)](https://www.reddit.com/r/thedivisionresurgence/comments/1sdt22h/connection_error/)
 - [r/thedivisionresurgence Ultimate Bug List (May 19, 2026)](https://www.reddit.com/r/thedivisionresurgence/comments/1thnk8e/ultimate_bug_list_at_the_moment/)

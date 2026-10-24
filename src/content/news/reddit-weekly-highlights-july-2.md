@@ -1,6 +1,7 @@
 ---
 title: "Reddit Highlights June 17 to July 2 - Division Resurgence"
 publishDate: "2026-07-02"
+updatedDate: 2026-10-24
 author: "RapidF5"
 description: "Best posts from r/thedivisionresurgence between June 17 and July 2, 2026. Phase 3 launch reactions, Kelly's Betrayal discovery, Outpost Annihilation relief, and a healer who won DPS gear."
 featuredImage: "/images/news/division-resurgence-reddit-highlights-july-2-2026-hero.webp"
@@ -10,9 +11,9 @@ shareTitle: "Two weeks of agent chaos"
 shareText: "Phase 3 dropped, a hidden mission appeared, Outpost Annihilation finally works, and a healer won DPS gear from the weekly. Here are ten posts from the sub."
 faqs:
   - question: "What is Kelly's Betrayal in Division Resurgence?"
-    answer: "Kelly's Betrayal is a story mission that quietly went live around the Phase 3 patch on June 24, 2026. Players first spotted it in the matchmaking screen rather than the standard mission list. It was discovered by u/AnthonyUK on Reddit before any official announcement."
+    answer: "It's a mission name players spotted in matchmaking and the Team Finder right after the Phase 3 patch on June 24, 2026, even though it didn't show up in the regular mission list. u/AnthonyUK flagged it on Reddit. Ubisoft's Phase 3 notes and announcements don't mention it, and the next day another player asked whether it was new content or a bug, so treat it as unannounced. Whatever Kelly did, she's keeping it to herself."
   - question: "Is the Outpost Annihilation bug fixed in Division Resurgence?"
-    answer: "Yes. The Phase 3 patch on June 24, 2026 resolved the Outpost Annihilation completion issue where objectives would fail to advance after defeating the Rikers. The Trello card for this bug had been open since May 19."
+    answer: "Yes. Ubisoft's Season 1 Phase 3 notes (June 24, 2026) list the fix for Outpost Annihilation objectives not advancing. Ubisoft had flagged it as a known issue back in the May 20 patch 1.2.1 notes, and it sat in the In Progress column of the Trello known-issues board until then. Go finish it. You've earned the closure."
   - question: "What was the anti-cheat update on June 17 in Division Resurgence?"
     answer: "The dev team upgraded the game security protection on June 17, 2026, targeting speed hacks, mods, and other hacking tools. They warned that some legitimate players might be flagged and directed them to contact support."
   - question: "Where can I read previous Division Resurgence Reddit highlights?"
@@ -43,7 +44,7 @@ Nothing in this subreddit hits quite like an agent finding out a mission they wr
 
 > "Was in some down time from my daily runs and thought, 'What the heck, I'll just check if they did anything with the mission.' And sure enough, I was able to complete it. FINALLY, devs!"
 
-That is the sound of someone celebrating harder than a dad clearing the honey-do list before kickoff. This person went back to a broken mission during downtime the way you open the fridge at 11 PM knowing nothing changed since 10. Not every post needs 500 upvotes to matter. Sometimes 22 upvotes and pure relief is the whole story. For context, the Outpost Annihilation card sat on the [Trello board](/news/division-resurgence-known-issues-trello-board-breakdown/) since May 19. Our [Phase 3 patch notes breakdown](/patch-notes/season-1-phase-3-a-new-fire/) confirms this fix.
+That is the sound of someone celebrating harder than a dad clearing the honey-do list before kickoff. This person went back to a broken mission during downtime the way you open the fridge at 11 PM knowing nothing changed since 10. Not every post needs 500 upvotes to matter. Sometimes 22 upvotes and pure relief is the whole story. For context, Ubisoft had listed Outpost Annihilation as a known issue since the May 20 patch notes, and it sat in the In Progress column of the [Trello board](/news/division-resurgence-known-issues-trello-board-breakdown/). Our [Phase 3 patch notes breakdown](/patch-notes/season-1-phase-3-a-new-fire/) confirms this fix.
 
 ---
 
@@ -81,7 +82,7 @@ One day later, someone else spotted Kelly's Betrayal in the Team Finder and post
 
 > "Any one know if this new or old bug?"
 
-Thirty-one upvotes, eighteen comments, and a photo asking a very small, very reasonable question. Kelly's Betrayal speedrun: discovered on Monday, screenshot on Tuesday. Whatever is going on with Kelly, the whole squad is invited to the confusion.
+Thirty-one upvotes, eighteen comments, and a photo asking a very small, very reasonable question. Kelly's Betrayal speedrun: discovered one day, screenshotted the next. Whatever is going on with Kelly, the whole squad is invited to the confusion.
 
 ---
 
@@ -127,19 +128,19 @@ The Phase 3 maintenance on June 22 shipped the Aegis Burst and Medic Hypershot d
 
 > "Aegis hyper shot is gone and I'm not trying to be a healer. My defender drone still does good AOE, but it's not the same."
 
-They mentioned running 4 Jackpot / 2 Boom, a maxed Collateral Damage OS, a seemingly useless Relentless Assault OS, and asked about Tactical Pharma and Demolitionist HE as options. Twenty-seven upvotes, thirty comments, and the energy of a man whose car just got totaled browsing Craigslist for a replacement before the tow truck even arrives. If you are rebuilding after Phase 3, this thread is a decent starting point. For a deeper dive on what actually changed, the [Phase 3 patch notes](/patch-notes/season-1-phase-3-a-new-fire/) cover the specialization damage corrections in detail.
+They mentioned running 4 Jackpot / 2 Boom, a maxed Collateral Damage OS, a seemingly useless Relentless Assault OS, and asked about Tactical Pharma and Demolitionist HE as options. (Footnote from October: Season 2 Phase 2 fixed Relentless Assault using the wrong damage type, so "seemingly useless" may have been partly a bug.) Twenty-seven upvotes, thirty comments, and the energy of a man whose car just got totaled browsing Craigslist for a replacement before the tow truck even arrives. If you are rebuilding after Phase 3, this thread is a decent starting point. For a deeper dive on what actually changed, the [Phase 3 patch notes](/patch-notes/season-1-phase-3-a-new-fire/) cover the specialization damage corrections in detail.
 
 ---
 
-## 9. "Imagine Having an Update System So Bad That Players Need to Regularly Redownload the Whole Game"
+## 9. The Full-Redownload Complaint
 
 **u/JohnnyTest91 · June 26 · [Original post](https://www.reddit.com/r/thedivisionresurgence/comments/1ug1edy/imagine_having_an_update_system_so_bad_that/)**
 
-The highest scoring post in the window at 67 upvotes.
+The highest scoring post in the window at 67 upvotes: a player pointing out that Resurgence had already asked for a full redownload three times since release, versus twice in their 20 years of playing everything else.
 
-> "That is just ridiculous. I have never seen something like that before. In 20 years of gaming, I recall two times where I had to redownload a whole game for an update (not the same game) and with Resurgence its now already the third time since release."
+> "In 20 years of gaming, I recall two times where I had to redownload a whole game for an update (not the same game) and with Resurgence its now already the third time since release."
 
-Twenty years of gaming, three full redownloads in one live-service mobile title, and the poster made peace with it long enough to write a very dry, very tired paragraph about it. At this point, some agents have downloaded more gigabytes of Division Resurgence than they have played. If you are on a metered mobile plan, this one hits different.
+It's fair, specific feedback, and it lands hardest on anyone playing on a metered mobile plan. If that's you, queue big updates for when you're on Wi-Fi.
 
 ---
 
@@ -161,16 +162,16 @@ It is not a rant. It is an actual pitch, backed up by a sister title. The man wr
 
 Two more posts landed with real engagement even if they did not make the top ten:
 
-- **["Silent Stash Nerf: 200 Max Down to 100"](https://www.reddit.com/r/thedivisionresurgence/comments/1udhb6a/silent_stash_nerf_200_max_down_to_100/)** by u/LT-Ghastly (June 23). Thirty-seven upvotes for a post asking about an unannounced stash cap change and calling for clearer patch note communication.
+- **["Silent Stash Nerf: 200 Max Down to 100"](https://www.reddit.com/r/thedivisionresurgence/comments/1udhb6a/silent_stash_nerf_200_max_down_to_100/)** by u/LT-Ghastly (June 23). Thirty-seven upvotes for a post asking about an unannounced stash cap change and calling for clearer patch note communication. Storage space is still a hot topic in October: an "Expand Inventory Capacity" request shows as Planned on Ubisoft's official bug reporter ([details](/news/inventory-expansion-planned/)).
 - **["Elites Missions Feel Pointless"](https://www.reddit.com/r/thedivisionresurgence/comments/1uhkmcz/elites_missions_feel_pointless/)** by u/RogueBlue2164 (June 28). An Engineering main running 630 and 575 DPS builds, chasing a better chest piece across roughly 100 Elite missions and asking the community whether the loot tables need a rework.
 
 ---
 
 ## What This Window Says About the Community
 
-The two weeks between Phase 3's launch and the [June 26 hotfix](/news/server-hotfix-june-26-2026/) were loud, but not one-note. Agents celebrated a fixed Outpost mission, discovered a hidden story mission on their own, praised the PvE core loop, and workshopped new builds together after the Aegis Burst correction shipped. There was frustration about patch downloads and stash space, and there were pointed but polite questions about skin economies. That is a subreddit doing its job: giving developers a live signal on what is landing and what needs another look.
+The two weeks around Phase 3's launch and the [June 26 hotfix](/news/server-hotfix-june-26-2026/) were loud, but not one-note. Agents celebrated a fixed Outpost mission, discovered a hidden story mission on their own, praised the PvE core loop, and workshopped new builds together after the Aegis Burst correction shipped. There was frustration about patch downloads and stash space, and there were pointed but polite questions about skin economies. That is a subreddit doing its job: giving developers a live signal on what is landing and what needs another look.
 
-For context on what actually changed in Phase 3, our [A New Fire patch notes breakdown](/patch-notes/season-1-phase-3-a-new-fire/) covers the specialization damage corrections, weapon adjustments, and the incoming damage reduction cap. The [June 26 hotfix alert](/news/server-hotfix-june-26-2026/) has details on the iOS crash fix, chat reactivation, and the Pummeling Shield tuning.
+For context on what actually changed in Phase 3, our [A New Fire patch notes breakdown](/patch-notes/season-1-phase-3-a-new-fire/) covers the specialization damage corrections, the Strawberry Milkshake fixes and the Sealed Cache odds. The 80% damage reduction cap came two days later, and the [June 26 hotfix alert](/news/server-hotfix-june-26-2026/) has that plus the iOS crash fix, chat reactivation, and the Pummeling Shield tuning.
 
 ---
 
@@ -182,7 +183,7 @@ For context on what actually changed in Phase 3, our [A New Fire patch notes bre
 - [Reddit Highlights: May 28 Edition](/news/reddit-weekly-highlights-may-28/) - Spiderman Resurgence, the NYC janitor, and ghost loot
 - [Build Tier List](/tier-list/)
 - [Exotic Weapons List 2026](/guides/division-resurgence-exotic-weapons-list-2026/)
-- [Steam PC Guide for the 2026 Launch](/news/division-resurgence-coming-to-steam-pc-2026/)
+- [Steam PC Guide](/guides/division-resurgence-steam-pc-guide/)
 
 ---
 

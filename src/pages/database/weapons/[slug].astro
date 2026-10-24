@@ -38,7 +38,7 @@ const typeGuide: Record<string, string> = {
   'SMG': 'SMGs are for players who like getting in people\'s faces. You give up range for insane RPM and built-in Crit Chance, which makes them absolute monsters in Dark Zone PvP and aggressive PvE runs. If you\'re not pushing forward, you\'re wasting the gun.',
   'LMG': 'LMGs let you hold the trigger and just keep shooting. Massive magazines mean you\'re stacking talents like Multi-Shot and In Sync without ever stopping to reload. Great for solo and group PvE — you become the team\'s damage printer.',
   'Marksman Rifle': 'Marksman Rifles hit the hardest per shot in Division Resurgence. If your aim is good, the headshot multipliers are disgusting. These are the backbone of sniper builds running Death From Afar OS Protocol.',
-  'Shotgun': 'Shotguns delete people up close. In Division Resurgence, they\'re best on Bulwark Breacher builds with a Ballistic Shield — walk up, blast, repeat. Not subtle, but extremely effective.',
+  'Shotgun': 'Shotguns delete people up close. In Division Resurgence, they\'re best on Bulwark Breacher builds with a Phalanx Shield — walk up, blast, repeat. Not subtle, but extremely effective.',
 
 };
 
@@ -48,10 +48,14 @@ const typeDesc = typeGuide[weapon.type] || `${weapon.type}s are a weapon categor
 const attributeStats = [weapon.rpm, weapon.mag, weapon.accuracy, weapon.reloadSpeed, weapon.stability];
 const populatedStatCount = attributeStats.filter((v: any) => v !== undefined && v !== null && v !== '').length;
 
+// The standard-weapons data only carries a placeholder "Physical" damage type, which is not a real
+// in-game damage type (Resurgence uses Blast, Shredding and Piercing). Only state a type when we know it.
+const knownDmgType: string | null = weapon.dmgType && weapon.dmgType !== 'Physical' ? weapon.dmgType : null;
+
 // Recommended bonus attributes, deduplicated by name (SMGs otherwise listed Crit Damage twice).
 type RecAttr = { name: string; note: string; accent?: boolean };
 const recommendedAttrsRaw: RecAttr[] = [
-  { name: `Weapon ${weapon.dmgType} Damage`, note: "Direct multiplier for this weapon's damage output. This is your highest-impact single stat.", accent: true },
+  { name: 'All Weapon Damage', note: "Season 2 Phase 1 removed the Blast, Shredding and Piercing damage bonuses from weapon rolls in favor of All Weapon Damage, so this is the flat damage stat to chase now.", accent: true },
   weapon.type === 'SMG'
     ? { name: 'Crit Damage', note: 'SMGs already get built-in Crit Chance, so stacking Crit Damage gives you more per-crit bang.' }
     : weapon.type === 'Marksman Rifle'
@@ -66,11 +70,13 @@ const recommendedAttrs = recommendedAttrsRaw.filter(a => !seenAttrs.has(a.name) 
 const faqs = [
   {
     question: `Is the ${weapon.name} good in Division Resurgence?`,
-    answer: `The ${weapon.name} is a ${weapon.type} — ${weapon.rpm} RPM, ${weapon.mag}-round mag, ${weapon.dmgType} damage. ${typeDesc.split('.')[0]}. How good it actually is depends on what weapon talents you roll and how well it fits your gear set combo.`
+    answer: `The ${weapon.name} is a ${weapon.type} with ${weapon.rpm} RPM and a ${weapon.mag}-round mag${knownDmgType ? `, dealing ${knownDmgType} damage` : ''}. ${typeDesc.split('.')[0]}. How good it actually is depends on what weapon talents you roll and how well it fits your gear set combo.`
   },
   {
     question: `What type of damage does the ${weapon.name} do?`,
-    answer: `${weapon.dmgType} damage. This actually matters — some gear sets, OS Protocols, and weapon talents give bonuses tied to specific damage types. Make sure your build isn't fighting against the damage type you're dealing.`
+    answer: knownDmgType
+      ? `${knownDmgType} damage. Enemies with a matching color bar take more of it, which still matters even though Season 2 Phase 1 removed damage-type bonus rolls from weapons.`
+      : `Check the weapon's details in the Armory: Resurgence weapons deal Blast, Shredding or Piercing damage, and we have not confirmed which one this weapon uses yet. Matching it to the enemy's color bar still matters, even though Season 2 Phase 1 removed damage-type bonus rolls from weapons.`
   },
   {
     question: `What builds use ${weapon.type}s in Division Resurgence?`,
@@ -101,12 +107,12 @@ const itemLd = {
   '@type': 'CreativeWork',
   '@id': `${siteUrl}/database/weapons/${slug}/#item`,
   name: `${weapon.name} — ${weapon.type} in Division Resurgence`,
-  description: `${weapon.name} ${weapon.type} in Division Resurgence. ${weapon.rpm} RPM, ${weapon.mag} magazine, ${weapon.dmgType} damage.`,
+  description: `${weapon.name} ${weapon.type} in Division Resurgence. ${weapon.rpm} RPM, ${weapon.mag} magazine${knownDmgType ? `, ${knownDmgType} damage` : ''}.`,
   genre: 'Video Game Item Database',
   isPartOf: {
     '@type': 'VideoGame',
     name: 'Tom Clancy\'s The Division Resurgence',
-    gamePlatform: ['iOS', 'Android'],
+    gamePlatform: ['iOS', 'Android', 'PC'],
     applicationCategory: 'Game',
   },
   additionalProperty: [
@@ -114,7 +120,7 @@ const itemLd = {
     { '@type': 'PropertyValue', name: 'Rarity', value: 'High-End' },
     { '@type': 'PropertyValue', name: 'RPM', value: String(weapon.rpm) },
     { '@type': 'PropertyValue', name: 'Magazine', value: String(weapon.mag) },
-    { '@type': 'PropertyValue', name: 'Damage Type', value: weapon.dmgType },
+    ...(knownDmgType ? [{ '@type': 'PropertyValue', name: 'Damage Type', value: knownDmgType }] : []),
   ]
 };
 ---
@@ -147,7 +153,7 @@ const itemLd = {
       <div style="margin-bottom: var(--sp-8);">
         <h2 style="font-family: var(--font-heading); font-size: var(--text-lg); font-weight: 800; color: #fff; margin: 0 0 var(--sp-4) 0; padding-bottom: var(--sp-2); border-bottom: 1px solid rgba(255,255,255,0.08);">Overview</h2>
         <p style="color: #c8c8d0; line-height: 1.75; font-size: var(--text-base);">
-          The <strong>{weapon.name}</strong> is a <strong>{weapon.type}</strong> in The Division Resurgence that fires at <strong>{weapon.rpm} RPM</strong> with a <strong>{weapon.mag}-round</strong> magazine and deals <strong>{weapon.dmgType}</strong> damage. See the <a href={`#class-guide`} style="color: var(--accent);">{weapon.type} class guide</a> below for how this weapon class plays.
+          The <strong>{weapon.name}</strong> is a <strong>{weapon.type}</strong> in The Division Resurgence that fires at <strong>{weapon.rpm} RPM</strong> with a <strong>{weapon.mag}-round</strong> magazine{knownDmgType && <> and deals <strong>{knownDmgType}</strong> damage</>}. See the <a href={`#class-guide`} style="color: var(--accent);">{weapon.type} class guide</a> below for how this weapon class plays.
         </p>
       </div>
 
@@ -190,7 +196,7 @@ const itemLd = {
       <div style="margin-bottom: var(--sp-8);">
         <h2 style="font-family: var(--font-heading); font-size: var(--text-lg); font-weight: 800; color: #fff; margin: 0 0 var(--sp-4) 0; padding-bottom: var(--sp-2); border-bottom: 1px solid rgba(255,255,255,0.08);">Best Builds for {weapon.name}</h2>
         <div style="color: #c8c8d0; line-height: 1.75; font-size: var(--text-base);">
-          <p>{weapon.type === 'Assault Rifle' ? `The ${weapon.name} at ${weapon.rpm} RPM fits best in Vanguard DPS or Bulwark Breacher builds. At this fire rate, you want gear sets that reward sustained damage — Fury Strike for crit-stacking or Phalanx Attack for Multi-Shot procs. Pair it with a Firepower OS Protocol and stack Weapon Damage, Crit Chance, and Crit Damage as your priority bonus attributes. ARs are versatile enough to work in PvE and PvP, making this gun a safe choice for any loadout.` : weapon.type === 'SMG' ? `The ${weapon.name} with its ${weapon.rpm} RPM fire rate is built for aggressive, in-your-face playstyles. SMGs get built-in Crit Chance, which means you can focus your gear on Crit Damage instead. Fury Strike 4pc is the natural gear set — the crit stacking synergy is disgusting. Run it on Vanguard with a mobility OS Protocol for DZ PvP, or pair it with a Bulwark Breacher shield build for close-range PvE domination.` : weapon.type === 'LMG' ? `The ${weapon.name} and its ${weapon.mag}-round magazine makes it a sustained DPS monster. With that many rounds, you're stacking weapon talents like In Sync and Multi-Shot procs before you ever need to reload. Phalanx Attack 4pc is the meta choice — Magazine Size, Rate of Fire, and Multi-Shot Chance all multiply your already-massive sustained damage. Vanguard DPS or Tech Operator hybrid builds get the most out of LMG primaries.` : weapon.type === 'Marksman Rifle' ? `The ${weapon.name} is a precision weapon — high damage per shot, low RPM. Sniper builds running Quick Draw or One Shot One Kill gear sets pair naturally with this gun. Stack Headshot Damage on your mask and Crit Damage everywhere else. Death From Afar OS Protocol turns this into a true one-shot build in Heroic content. If your aim is consistent, this gun outperforms any AR in raw per-shot damage.` : weapon.type === 'Shotgun' ? `The ${weapon.name} is a close-quarters brawler. Bulwark Breacher shield builds are the natural home — walk up with a Ballistic Shield, blast them point-blank, and let your Toughness handle the rest. Fearless Warrior gear set gives you the DR to survive the push. In PvP, shotguns are the ultimate "around the corner" weapon. Stack Weapon Damage and Armor for maximum aggression.` : `The ${weapon.name} is a solid weapon option. Check what weapon talents it can roll and match it with a gear set and OS Protocol that synergize with this weapon class for maximum output.`}</p>
+          <p>{weapon.type === 'Assault Rifle' ? `The ${weapon.name} at ${weapon.rpm} RPM fits best in Vanguard DPS or Bulwark Breacher builds. At this fire rate, you want gear sets that reward sustained damage — Fury Strike for crit-stacking or Phalanx Attack for Multi-Shot procs. Pair it with a Firepower OS Protocol and stack Weapon Damage, Crit Chance, and Crit Damage as your priority bonus attributes. ARs are versatile enough to work in PvE and PvP, making this gun a safe choice for any loadout.` : weapon.type === 'SMG' ? `The ${weapon.name} with its ${weapon.rpm} RPM fire rate is built for aggressive, in-your-face playstyles. SMGs get built-in Crit Chance, which means you can focus your gear on Crit Damage instead. Fury Strike 4pc is the natural gear set — the crit stacking synergy is disgusting. Run it on Vanguard with a mobility OS Protocol for DZ PvP, or pair it with a Bulwark Breacher shield build for close-range PvE domination.` : weapon.type === 'LMG' ? `The ${weapon.name} and its ${weapon.mag}-round magazine makes it a sustained DPS monster. With that many rounds, you're stacking weapon talents like In Sync and Multi-Shot procs before you ever need to reload. Phalanx Attack 4pc is the meta choice — Magazine Size, Rate of Fire, and Multi-Shot Chance all multiply your already-massive sustained damage. Vanguard DPS or Tech Operator hybrid builds get the most out of LMG primaries.` : weapon.type === 'Marksman Rifle' ? `The ${weapon.name} is a precision weapon — high damage per shot, low RPM. Sniper builds running Quick Draw or One Shot One Kill gear sets pair naturally with this gun. Stack Headshot Damage on your mask and Crit Damage everywhere else. Death From Afar OS Protocol turns this into a true one-shot build in Heroic content. If your aim is consistent, this gun outperforms any AR in raw per-shot damage.` : weapon.type === 'Shotgun' ? `The ${weapon.name} is a close-quarters brawler. Bulwark Breacher shield builds are the natural home — walk up with a Phalanx Shield, blast them point-blank, and let your Toughness handle the rest. Fearless Warrior gear set gives you the DR to survive the push. In PvP, shotguns are the ultimate "around the corner" weapon. Stack Weapon Damage and Armor for maximum aggression.` : `The ${weapon.name} is a solid weapon option. Check what weapon talents it can roll and match it with a gear set and OS Protocol that synergize with this weapon class for maximum output.`}</p>
         </div>
       </div>
 
@@ -198,7 +204,7 @@ const itemLd = {
       <div style="margin-bottom: var(--sp-8);">
         <h2 style="font-family: var(--font-heading); font-size: var(--text-lg); font-weight: 800; color: #fff; margin: 0 0 var(--sp-4) 0; padding-bottom: var(--sp-2); border-bottom: 1px solid rgba(255,255,255,0.08);">Best Weapon Talents for {weapon.name}</h2>
         <div style="color: #c8c8d0; line-height: 1.75; font-size: var(--text-base);">
-          <p>{weapon.type === 'Assault Rifle' ? `Top AR talents: **Killer** (kill → crit damage buff, snowballs in multi-enemy fights), **Concentrated Fire** (bonus damage ramps with consecutive hits on the same target - rewards accuracy), **In Sync** (if you use offensive skills alongside your AR). Breadbasket is solid for headshot chains. Avoid healing-focused talents - ARs should be all offense.` : weapon.type === 'SMG' ? `Best SMG talents: **Killer** (crits → more crit damage, and SMGs already crit constantly), **Strained** (crit damage scales as mag empties - timing reloads matters), **In Sync** (if you're also running offensive skills). Pummel works on aggressive Breacher builds where melee finishers are part of the rotation.` : weapon.type === 'LMG' ? `Best LMG talents: **Unhinged** (flat weapon damage boost with a handling trade-off - worth it on a bipod LMG), **In Sync** (pairing with Assault Turret means both buffs are always active), **Steady Handed** (kills extend your already-huge mag even further). Avoid talents that require kills to activate - LMGs are about sustained damage, not burst.` : weapon.type === 'Marksman Rifle' ? `Best MMR talents: **Concentrated Fire** (first shot bonus is massive on a bolt-action), **Head Collection** (headshot kill → next shot hits like a truck), **Killer** (if you're critting consistently). The talent should reward precision - if a talent procs on body shots the same as headshots, it's wasted on an MMR.` : weapon.type === 'Shotgun' ? `Best shotgun talents: **Pummel** (melee kills boost damage - Bulwark Breacher synergy), **Killer** (crits → more crit damage, shotgun headshots crit hard), **Strained** (crit damage scales as mag empties - every shell counts). Shotgun talent choice is about maximizing that one devastating blast.` : `Check the weapon talent database for the full list - the right talent depends entirely on your build's archetype and playstyle.`}</p>
+          <p>{weapon.type === 'Assault Rifle' ? `Top AR talents: **Killer** (kill → crit damage buff, snowballs in multi-enemy fights), **Concentrated Fire** (bonus damage ramps with consecutive hits on the same target - rewards accuracy), **In Sync** (if you use offensive skills alongside your AR). Breadbasket is solid for headshot chains. Avoid healing-focused talents - ARs should be all offense.` : weapon.type === 'SMG' ? `Best SMG talents: **Killer** (crits → more crit damage, and SMGs already crit constantly), **Strained** (crit damage scales as mag empties - timing reloads matters), **In Sync** (if you're also running offensive skills). Pummel works on aggressive Breacher builds where melee finishers are part of the rotation.` : weapon.type === 'LMG' ? `Best LMG talents: **Unhinged** (flat weapon damage boost with a handling trade-off - worth it on a bipod LMG), **In Sync** (pairing with Artillery Turret means both buffs are always active), **Steady Handed** (kills extend your already-huge mag even further). Avoid talents that require kills to activate - LMGs are about sustained damage, not burst.` : weapon.type === 'Marksman Rifle' ? `Best MMR talents: **Concentrated Fire** (first shot bonus is massive on a bolt-action), **Head Collection** (headshot kill → next shot hits like a truck), **Killer** (if you're critting consistently). The talent should reward precision - if a talent procs on body shots the same as headshots, it's wasted on an MMR.` : weapon.type === 'Shotgun' ? `Best shotgun talents: **Pummel** (melee kills boost damage - Bulwark Breacher synergy), **Killer** (crits → more crit damage, shotgun headshots crit hard), **Strained** (crit damage scales as mag empties - every shell counts). Shotgun talent choice is about maximizing that one devastating blast.` : `Check the weapon talent database for the full list - the right talent depends entirely on your build's archetype and playstyle.`}</p>
         </div>
       </div>
 
@@ -240,7 +246,7 @@ const itemLd = {
         <h2 style="font-family: var(--font-heading); font-size: var(--text-lg); font-weight: 800; color: #fff; margin: 0 0 var(--sp-4) 0; padding-bottom: var(--sp-2); border-bottom: 1px solid rgba(255,255,255,0.08);">How to Get {weapon.name}</h2>
         <div style="color: #c8c8d0; line-height: 1.75; font-size: var(--text-base);">
           <p>Standard weapons like the {weapon.name} drop from the general loot pool - any activity can drop it. <strong style="color: #fff;">Heroic missions</strong> and <strong style="color: #fff;">weekly bounties</strong> are your most consistent T2 weapon farms. DZ extractions also frequently drop T2 weapons with random talent rolls. When farming, you're looking for two things: the right weapon AND the right talent. If you find a {weapon.name} with a bad talent but great base stats, recalibrate the talent at the recalibration station.</p>
-          <p>Keep in mind: {weapon.dmgType} damage type means you should match your bonus attributes to this type. <strong style="color: var(--accent);">Weapon {weapon.dmgType} Damage</strong> as a bonus attribute on your gear will directly boost this gun's output. Check the <a href="/database/bonus-attributes/" style="color: var(--accent);">bonus attributes database</a> for the full list of damage-type specific stats.</p>
+          <p>Keep in mind: since Season 2 Phase 1, weapons no longer roll Blast, Piercing or Shredding damage bonuses (Ubisoft replaced them with <strong style="color: var(--accent);">All Weapon Damage</strong>), and newly dropped weapon mods don't roll them either. Check the <a href="/database/bonus-attributes/" style="color: var(--accent);">bonus attributes database</a> for the full list of damage-type stats and where they still apply.</p>
         </div>
       </div>
 

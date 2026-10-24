@@ -126,6 +126,13 @@
         "title": "The Muscular Nurse — Combat Medicine Tank-Medic",
         "url": "/builds/muscular-nurse-combat-medicine-build-nadie/"
       }
+    ],
+    "patchHistory": [
+      {
+        "label": "Server hotfix",
+        "date": "2026-06-26",
+        "note": "Ubisoft capped total damage reduction at 80%. Steady Suppression's +18% still counts, but stacking it with other damage reduction procs stops paying off once you hit the cap."
+      }
     ]
   },
   "fully-charged": {

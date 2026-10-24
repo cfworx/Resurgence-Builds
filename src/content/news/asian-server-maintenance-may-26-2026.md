@@ -1,6 +1,7 @@
 ---
 title: "Division Resurgence Asian Server Maintenance - May 26"
 publishDate: "2026-05-25T18:57:00Z"
+updatedDate: 2026-10-24
 author: "RapidF5"
 featuredImage: "/images/news/division-resurgence-asian-server-maintenance-may-26-2026.jpg"
 imageAlt: "Division Resurgence Asian server maintenance notice - servers going offline May 26 2026 starting 1PM CET for latency improvements"
@@ -10,14 +11,17 @@ shareTitle: "Asian Server Maintenance Tomorrow"
 shareText: "Division Resurgence Asian servers are going offline May 26 starting 1PM CET. Plan accordingly."
 faqs:
   - question: "When is the Asian server maintenance for Division Resurgence?"
-    answer: "May 26, 2026, starting at 1PM CET. The maintenance window is expected to last a couple of hours. If you are on the Asian server, plan your Dark Zone extractions accordingly."
+    answer: "It was scheduled for May 26, 2026, starting at 1PM CET, and Ubisoft expected it to last a couple of hours. The rule for any future maintenance on the Asian server stays the same: do not start a Dark Zone extraction ten minutes before downtime."
   - question: "Why are the Asian servers going down?"
-    answer: "The servers are being physically relocated closer to Asian players to reduce latency. This is infrastructure work, not a patch deployment. The result should be noticeably lower ping for players in the Asia-Pacific region."
+    answer: "Per Ubisoft's announcement, the servers were being moved closer to players in the region to reduce latency. This was infrastructure work, not a patch deployment. The goal was lower ping for Asia-Pacific players; we haven't seen Ubisoft publish before-and-after numbers, so your own ping is the best scoreboard."
   - question: "Will I lose progress during the maintenance?"
-    answer: "No. Your character data is saved server-side on your Ubisoft Connect account. Just make sure you are not mid-mission or mid-extraction when the servers go down, or you risk losing unsaved session progress like Dark Zone loot that has not been extracted yet."
+    answer: "No. Your character data is saved server-side (if you play as a guest, link the account to Ubisoft Connect so it's tied to something you can log back into). Just make sure you are not mid-mission or mid-extraction when the servers go down, or you risk losing unsaved session progress like Dark Zone loot that has not been extracted yet."
 ---
 
 Heads up, agents on Asian servers. The game is going down tomorrow.
+
+> [!INFO] Update (October 2026)
+> This maintenance was scheduled for May 26, 2026. We haven't seen Ubisoft publish before-and-after latency numbers, though its [June 26 hotfix](/news/server-hotfix-june-26-2026/) later fixed an issue that was causing server latency. Servers are still regional: per Ubisoft's Help Center you can play with friends on any device, PC via Steam or Ubisoft Connect included, as long as you're on the same regional server.
 
 The Division Resurgence team confirmed maintenance will begin **May 26 at 1PM CET**. Expect the Asian servers to be unavailable for a couple of hours.
 
@@ -27,9 +31,9 @@ Worth the wait if it smooths out the lag.
 
 ## Why This Matters
 
-Server relocation is a bigger deal than a standard maintenance window. Physical distance between you and the game server directly affects every combat interaction — hit registration, cover peek timing, Dark Zone PvP responsiveness, and matchmaking stability. Players on the Asian server have reported higher-than-average disconnection rates since the [Phase 2 launch](/news/phase-2-season-1-live/), and connection errors like [Error 6000010](/guides/division-resurgence-error-codes/) have been disproportionately common in the region.
+Server relocation is a bigger deal than a standard maintenance window. Physical distance between you and the game server directly affects every combat interaction: hit registration, cover peek timing, Dark Zone PvP responsiveness, and matchmaking stability. Players on the Asian server have been reporting frequent disconnects since the [Phase 2 launch](/news/phase-2-season-1-live/), and connection errors like [Error 6000010](/guides/division-resurgence-error-codes/) seem to come up a lot from the region (anecdotally; Ubisoft hasn't published numbers).
 
-If the relocation delivers the latency improvements Ubisoft is targeting, Asian server players should see fewer random disconnects, tighter hit registration, and more responsive cover mechanics — all of which directly impact build performance and PvP viability.
+If the relocation delivers the latency improvements Ubisoft is targeting, Asian server players should see fewer random disconnects, tighter hit registration, and more responsive cover mechanics, all of which directly impact build performance and PvP viability.
 
 Keep an eye on the [error codes guide](/guides/division-resurgence-error-codes/) if you hit connection issues after the maintenance window closes.
 

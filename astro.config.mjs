@@ -14,7 +14,7 @@ import { getNoindexedDatabasePaths } from './src/utils/indexability.mjs';
 // Stable fallback date. Do NOT use new Date() here — it makes every URL look
 // modified on every deploy and creates noisy sitemap discovery hints.
 // Update manually only when you do a real content-wide revision.
-const SITE_LAST_UPDATED = '2026-06-14';
+const SITE_LAST_UPDATED = '2026-10-24';
 
 // Build the set of indexed tag slugs from tag-intros.json
 const __dirname = path.dirname(fileURLToPath(import.meta.url));

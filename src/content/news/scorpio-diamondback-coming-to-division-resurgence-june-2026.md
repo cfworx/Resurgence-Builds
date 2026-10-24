@@ -1,28 +1,32 @@
 ---
 title: "Scorpio & Diamondback Coming Soon"
 publishDate: "2026-05-31"
+updatedDate: 2026-10-24
 author: "RapidF5"
 featuredImage: "/images/news/division-resurgence-scorpio-diamondback-phase-3-leak.webp"
 imageAlt: "Division Resurgence Weekly Bounty screenshot showing Scorpio and Diamondback exotic weapons as Key Rewards in a Clinton Riker Compound mission"
-description: "Scorpio shotgun and Diamondback rifle are confirmed for Division Resurgence Phase 3 Classified Ops. Stats, talents, and release info."
+description: "The Scorpio shotgun was confirmed for Phase 3 and a Diamondback leak followed. Here is what we knew in May, and when both exotics actually arrived."
 tags: ["Scorpio", "Diamondback", "Phase 3", "Classified Ops Pass 1.3", "Leak", "Exotics", "News", "Weekly Bounty"]
 shareTitle: "Two new exotics incoming"
 shareText: "Scorpio shotgun confirmed for Phase 3. Diamondback spotted in a Weekly Bounty leak. Share this with your squad so they can prep."
 
 faqs:
   - question: "When does the Scorpio come out in Division Resurgence?"
-    answer: "The Scorpio is officially confirmed for Classified Ops Pass 1.3, which ships with Phase 3 of Season 1 in June 2026. Ubisoft's roadmap article calls out June without naming a specific day. Community trackers and leak accounts have been converging on June 23, 2026 as the Phase 3 start date based on the roughly six-week phase cadence the season has been holding to. June 23 is not an official Ubisoft confirmation, just the cleanest date the leak community has converged on."
+    answer: "It already did. The Scorpio arrived with Season 1 Phase 3 'A New Fire' (Ubisoft's 'now live' video went up June 23, 2026 and its article June 24, so the community's June 23 guess was close). Ubisoft's article said it 'can be grabbed for free', but in-game the weapon sat at tier 5 of the premium track and the free track carried its Tactical Augmentation Module. Missed it? Season 2 Phase 1 added it to the Dark Zone vendor, and it's in the Exotic Sealed Cache pool since Season 2 Phase 2."
   - question: "Is the Diamondback confirmed for Division Resurgence?"
-    answer: "Not officially. The Scorpio is on the Phase 3 pass announcement, but the Diamondback is only known from a screenshot circulating on r/thedivisionresurgence that shows it in a Weekly Bounty Key Reward slot. The post title called both weapons obtainable, but neither is actually live in the patch 1.1.2.2 build. The leak is consistent with how supplementary exotics have shipped alongside pass exotics in previous phases, but until Ubisoft publishes patch notes or a Phase 3 trailer it stays in rumor territory."
+    answer: "Yes, eventually. It skipped Phase 3 and arrived with Season 2 Phase 2 on September 16, 2026, on both the free and premium tracks of that phase's Classified Ops Pass. The patch notes also added Diamondback rewards to Dark Zone vendors, reward caches and weekly reward pools, so the leak that showed it in a weekly reward slot named the right gun, about three and a half months early."
   - question: "What is the best build for the Scorpio shotgun in Division Resurgence?"
-    answer: "No one has the Scorpio yet, so there are no verified builds. Once the weapon goes live with Phase 3, we will publish a full build guide with tested gear sets, talents, and OS Protocol pairings. In the meantime, the closest shotgun-friendly chassis to prep with is the Milkshake Machine Vanguard build on this site. Stack Firepower cores and have a clean Commando or Recon loadout ready to swap the Scorpio in on day one."
+    answer: "We promised a full Scorpio build 'the day the tooltip lands.' The tooltip landed. The guide is still in the oven. What we can tell you: its Septicemia talent stacks Venom up to 7 times (2.5 seconds each), with Bleed at 1 stack, Confusion at 3, Shock at 6 and bonus damage at 7, which in our read makes it a close-range debuff tool rather than a spray gun. The full stat block is in our exotic weapons database."
   - question: "Are these the same as the Scorpio and Diamondback from Division 2?"
-    answer: "They share the names and the Resurgence Scorpio is a shotgun just like the Division 2 version, but they are not the same weapon. Talents, stats, and behavior will differ in Resurgence. The Resurgence Diamondback weapon class and talent are not confirmed at all yet. Treat them as separate weapons that share a name with their D2 counterparts."
+    answer: "They share names, and the Resurgence Scorpio is a shotgun like the Division 2 one, but treat them as separate weapons. The Resurgence Scorpio has its own numbers (Ubisoft: up to 7 stacks of Venom, 2.5 seconds each, with extra bonuses per stack), and Ubisoft's Diamondback announcements don't spell out its weapon class, so check the in-game Armory instead of a Division 2 wiki."
   - question: "How do I get the Diamondback in Division Resurgence?"
-    answer: "If the Reddit leak holds, the Diamondback will be a Weekly Bounty Key Reward from a new Clinton/Riker bounty dropping with Phase 3. The screenshot shows a Recommended Power Score of 19.2k, so most endgame players should already be geared for it. The Weekly Bounty cadence resets weekly, so stock up on Encrypted Data and be ready to run the bounty on Phase 3 launch day. Unlike the Scorpio, the Diamondback is not tied to the Classified Ops Pass, so you do not need to grind pass tiers to get it."
+    answer: "Through the Season 2 Phase 2 Classified Ops Pass, where Ubisoft lists it on the free track as well as the premium one, so no wallet required. Its Tactical Augmentation Module was an event reward that phase, the patch notes added Diamondback rewards to Dark Zone vendors, reward caches and weekly reward pools, and it's already in the Exotic Sealed Cache pool. Ubisoft extended Season 2 Phase 2 on October 21, so the phase runs until the next big update."
   - question: "What is the best build for the Diamondback in Division Resurgence?"
-    answer: "The Diamondback weapon class and talent are not confirmed yet, so no verified builds exist. If it lands as a rifle similar to its Division 2 version, it would slot into marksman or semi-auto loadouts. We will publish a full Diamondback build guide with tested gear, talents, and OS Protocol pairings as soon as we can pull the in-game tooltip. Check our Exotic Weapons Database for updates the day Phase 3 goes live."
+    answer: "It's live now, but we haven't published a tested Diamondback build yet, and we're not going to borrow one from The Division 2. When we do, it will be built from the in-game tooltip. Until then, our exotic weapons list covers how to get it, which is the part you can actually do today."
 ---
+
+> [!INFO] Update (October 2026)
+> Both guns shipped, just not together. The Scorpio arrived with Season 1 Phase 3 on June 24, but the weapon sat at tier 5 of the premium pass track (free players got its Tactical Augmentation Module), and it has been in the Dark Zone vendor since Season 2 Phase 1. The Diamondback skipped Phase 3 and landed in [Season 2 Phase 2](/news/season-2-phase-2-live-diamondback/) on September 16, on the free and premium tracks; how to get both today is in our [exotic weapons list](/guides/division-resurgence-exotic-weapons-list-2026/).
 
 ## TL;DR
 
@@ -42,7 +46,7 @@ The official Ubisoft roadmap reveal on April 28, 2026, listed Phase 3 of Season 
 - Freemen full apparel set
 - Boombox weapon skin
 
-That makes the Scorpio the headline free exotic of the Phase 3 Classified Ops Pass, slotted into the same delivery channel as the Strawberry Milkshake LMG from Phase 2 and the Warlord Assault Rifle from Phase 1. Community trackers have been pointing at **June 23, 2026** as the Phase 3 start date based on the roughly six-week phase cadence the season has been holding to (Phase 1 ran from launch through May 11, Phase 2 kicked off May 12). That matches up with the [resurgencebuilds.com roadmap page](https://resurgencebuilds.com/news/season-1-2-3-roadmap/) and the [X post from RovenOP](https://x.com/RovenOP/status/2049816677769154752) that called out the date back on April 30. June 23 is not an official Ubisoft confirmation, just the cleanest date the leak community has converged on.
+That makes the Scorpio the headline free exotic of the Phase 3 Classified Ops Pass, slotted into the same delivery channel as the Strawberry Milkshake LMG from Phase 2 and the Warlord Assault Rifle from Phase 1. Community trackers have been pointing at **June 23, 2026** as the Phase 3 start date based on the roughly six-week phase cadence the season has been holding to (Phase 1 ran from launch until Phase 2 kicked off on May 11-12). That matches up with the [resurgencebuilds.com roadmap page](https://resurgencebuilds.com/news/season-1-2-3-roadmap/) and the [X post from RovenOP](https://x.com/RovenOP/status/2049816677769154752) that called out the date back on April 30. June 23 is not an official Ubisoft confirmation, just the cleanest date the leak community has converged on.
 
 ### Diamondback is not confirmed, but the leak is real
 
@@ -57,6 +61,8 @@ Putting both pieces together, the working theory across the community is straigh
 1. **Scorpio** ships as the **free Classified Ops Pass 1.3 exotic** in Phase 3, expected June 23, 2026.
 2. **Diamondback** ships in the same content drop as a **Weekly Bounty Key Reward** for a new Clinton/Riker bounty, available to anyone running the bounty regardless of pass ownership.
 
+*October footnote: the Scorpio was right on time but landed on the premium track, and the Diamondback came about three months later, through the pass. See the update at the top.*
+
 That is consistent with how Phase 1 worked. The Warlord was the pass exotic, and a number of supplementary weapons and OS Protocols filtered in through bounties, hostile nests, and the Dark Zone vendor. Phase 2 followed the same pattern with the Strawberry Milkshake on the pass and a supporting wave of Dark Zone vendor adds. Phase 3 looks like more of the same, just with two exotics in the spotlight instead of one.
 
 ---
@@ -65,7 +71,7 @@ That is consistent with how Phase 1 worked. The Warlord was the pass exotic, and
 
 What is officially on record from Ubisoft is short and clean. The Scorpio is a **shotgun**, it ships as the **free exotic on Classified Ops Pass 1.3**, and it is part of Phase 3 of Season 1. The official talent name, stat profile, and tooltip text have not been published. There is no Ubisoft trailer for the Scorpio yet, no PTS footage on the live PC Early Access roadmap, and no community-confirmed damage numbers.
 
-A quick word on the name. In Division 2 on PC and console, the Scorpio name is attached to an exotic shotgun built on the SIX12 chassis. The Resurgence Scorpio is also a shotgun, so while the weapon class is the same, do not assume the D2 talent or stat profile carries over. Names and classes get reused across the franchise, mechanics do not have to.
+A quick word on the name. In Division 2 on PC and console, the Scorpio name is attached to an exotic shotgun. The Resurgence Scorpio is also a shotgun, so while the weapon class is the same, do not assume the D2 talent or stat profile carries over. Names and classes get reused across the franchise, mechanics do not have to.
 
 What we can reasonably say about a shotgun slot in the current Resurgence meta:
 
@@ -103,28 +109,32 @@ Phase 1 launched the Warlord Assault Rifle as the pass exotic. Phase 2 launched 
 
 Even though neither weapon is obtainable yet, the prep work for both is straightforward. The pass-side and bounty-side requirements are well understood at this point in the season.
 
-For the Scorpio specifically, the Classified Ops Pass 1.3 will go live with Phase 3 in June. The free track unlocks the Scorpio at a specific tier (likely in the mid-to-late tier range based on how Phase 1 and Phase 2 handled their free exotics). The fastest known path to grinding Classified Ops Pass tiers is the Weekly Bounty system, which awards 120 SPXP per bounty completion, and the Chinatown Rescue mission on Challenging difficulty for 210 SPXP per run if you want to spam mission XP between bounty resets.
+For the Scorpio specifically, the Classified Ops Pass 1.3 will go live with Phase 3 in June. The free track unlocks the Scorpio at a specific tier (likely in the mid-to-late tier range based on how Phase 1 and Phase 2 handled their free exotics). (It ended up at tier 5 of the premium track instead.) In our tracking at the time, the fastest path to grinding Classified Ops Pass tiers was the Weekly Bounty system, at roughly 120 SPXP per bounty completion, plus the Chinatown Rescue mission on Challenging difficulty at roughly 210 SPXP per run if you want to spam mission XP between bounty resets.
 
 For the Diamondback specifically, if the leak holds and it does end up as a Weekly Bounty Key Reward, the Clinton/Riker bounty in the leak screenshot is the one to watch when Phase 3 goes live. Recommended Power Score in the screenshot was 19.2k, which most players in the 22k Power Score range should already be set up to clear. Stock up on Encrypted Data, get a clean baseline build running, and be ready to spam the bounty refresh on Phase 3 launch day.
 
-If you do not yet have a working weapon-damage chassis to test the Diamondback with when it drops, the [Tactical Pharma 800k DPS Rank 1 Global Build](/builds/tactical-pharma-800k-dps-rank-1-global-build/) is the cleanest weapon-damage-scaling template currently published. Run that as the base and swap the new exotic in when the bounty unlocks. For a shotgun-friendly Vanguard chassis ready to absorb the Scorpio the day it lands, the [Milkshake Machine LMG build](/builds/milkshake-machine-strawberry-milkshake-lmg-build/) is the closest current reference for how a free-pass exotic plugs into a meta Vanguard setup.
+If you do not yet have a working weapon-damage chassis to test the Diamondback with when it drops, the [Milkshake Machine LMG build](/builds/milkshake-machine-strawberry-milkshake-lmg-build/) is the closest weapon-damage Vanguard template we have published (our [Tactical Pharma 800k DPS build](/builds/tactical-pharma-800k-dps-rank-1-global-build/) hits harder, but it scales skill damage, so it's the wrong base for a new gun). It doubles as the shotgun-friendly Vanguard chassis to absorb the Scorpio the day it lands, and it's the closest current reference for how a free-pass exotic plugs into a meta Vanguard setup.
 
 ---
 
 ## What to Watch For Next
 
-The next thing to watch for is the official Phase 3 trailer, which historically lands about a week before the phase goes live. If Ubisoft drops a Phase 3 trailer in mid-June and the Diamondback shows up alongside the Scorpio in the marketing reel, the leak is fully validated and we will publish a full preview the same day. If the trailer drops with just the Scorpio and no Diamondback footage, the rifle is either getting held for a later phase or the leak was a build artifact that never shipped. Either way, we will be watching.
+The next thing to watch for is the official Phase 3 trailer (Phase 2's "now live" video went up on launch day, so don't count on much warning). If Ubisoft drops a Phase 3 trailer in mid-June and the Diamondback shows up alongside the Scorpio in the marketing reel, the leak is fully validated and we will publish a full preview the same day. If the trailer drops with just the Scorpio and no Diamondback footage, the rifle is either getting held for a later phase or the leak was a build artifact that never shipped. Either way, we will be watching.
+
+*October footnote: Phase 3 shipped with the Scorpio and no Diamondback, which turned up in Season 2 Phase 2 instead. Held for a later phase it was.*
 
 Image credit on the leak screenshot: the r/thedivisionresurgence post titled "So Diamondback and Scorpio are obtainable too," which is what kicked this whole conversation off. Thanks to the OP for putting it out there.
 
 ---
 
 **Related Reading:**
+- [Season 2 Phase 2 Is Live: Diamondback](/news/season-2-phase-2-live-diamondback/) - the Diamondback's actual launch
+- [Season 1 Phase 3 "A New Fire" Patch Notes](/patch-notes/season-1-phase-3-a-new-fire/) - the Scorpio's actual launch
 - [Season 1-2-3 Roadmap](/news/season-1-2-3-roadmap/) - the full roadmap breakdown
 - [Which Specialization Should You Pick?](/guides/which-specialization-to-pick/) - prep your class before Phase 3
 - [Division Resurgence Exotic Weapons List 2026](/guides/division-resurgence-exotic-weapons-list-2026/) - complete tier list and guide to all exotics
 - [Exotic Weapons Database](/database/exotic-weapons/) - every current exotic with stats and talents
-- [Patch 1.2.1 Notes](/news/division-resurgence-news-may-20-2026/) - current live patch breakdown
+- [Patch 1.2.1 Notes](/news/division-resurgence-news-may-20-2026/) - the May 20 patch breakdown
 
 ---
 
@@ -134,3 +144,8 @@ Image credit on the leak screenshot: the r/thedivisionresurgence post titled "So
 - [r/thedivisionresurgence, "So Diamondback and Scorpio are obtainable too" (May 2026)](https://www.reddit.com/r/thedivisionresurgence/)
 - [@RovenOP, Phase 3 date estimate (April 30, 2026)](https://x.com/RovenOP/status/2049816677769154752)
 - [ResurgenceBuilds.com, Season 1-2-3 Roadmap](https://resurgencebuilds.com/news/season-1-2-3-roadmap/)
+- [Ubisoft, A New Fire: Season 1 Phase 3 (June 24, 2026)](https://www.ubisoft.com/en-us/game/the-division/resurgence/news-updates/wE8oLT7RqyLCfnCJomXij/a-new-fire-season-1-phase-3)
+- [Ubisoft News, Year 1 Phase 3 events and Classified Ops Pass (June 24, 2026)](https://news.ubisoft.com/en-us/article/48gDtCz7vtOCbF5JwskUPc/play-the-division-resurgence-year-1-phase-3-today-limitedtime-faction-and-speedrun-events-and-new-battle-pass)
+- [Season 2 Phase 1 patch notes (official dev post on r/thedivisionresurgence)](https://www.reddit.com/r/thedivisionresurgence/comments/1ve9ccz/season_2_phase_1_patch_notes/)
+- [Ubisoft News, Season 2 Phase 2 Is Out Now (September 16, 2026)](https://news.ubisoft.com/en-us/article/2vmOLuRVDMIMBxG3MZlPQX/the-division-resurgence-season-2-phase-2-is-out-now)
+- [Ubisoft Mobile Help Center, Season 2 Phase 2 Patch Notes](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2566-patch-note---season-2-phase-2/)

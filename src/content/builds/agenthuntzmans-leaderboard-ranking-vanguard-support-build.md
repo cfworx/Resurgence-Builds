@@ -6,7 +6,7 @@ playstyle: "Support"
 pve: true
 pvp: false
 lastUpdated: 2026-05-24T11:00:00Z
-patch: "Season 1 · Phase 3"
+patch: "1.2.1"
 tags: ["Recon", "vanguard", "support", "engineering", "smart-cover", "tactical-link", "scanning-pulse", "fully-charged", "team-dps"]
 description: "The Vanguard Scout build that triples your team's DPS through Smart Cover, Scanning Pulse, and Fully Charged stacking."
 author: "RapidF5 via AgentHuntzman"
@@ -21,13 +21,13 @@ sources:
 plannerHash: "s=Vanguard&sc=Scout&n=Recon+Scout&ms=gs-9&m1=Skill+Cooldown+Recovery&m2=Skill+Intensity&cs=gs-3&ct=ba-16&c1=Armor&c2=Health&ps=gs-9&pt=bp-10&p1=Skill+Intensity&p2=Skill+Cooldown+Recovery&gs=gs-9&g1=Skill+Duration&g2=Skill+Cooldown+Recovery&hs=gs-9&h1=Signature+Ability+Charge+Efficiency&h2=Skill+Intensity&ks=gs-9&k1=Skill+Cooldown+Recovery&k2=Weapon+Damage&w1s=sw-3&w1tr=T1&w1t=wt-16&w1t2=wt-53&w2s=sw-11&w2tr=T1&w2t=wt-16&w2t2=wt-22&os=os-6&sm1=smc-72&sm2=smc-57&sm3=smc-59"
 faqs:
   - question: "Why does my DPS look terrible on this build?"
-    answer: "Because you're reading the wrong number, champ. Your stats show YOUR damage. It does not show the Weapon Damage you're pumping into every teammate through Smart Cover, the +20% vulnerability from Scanning Pulse, or the rate-of-fire buff from Tactical Link. Your team's total DPS is tripling. Yours just isn't the one doing it. Think of yourself as the guy who brought the aux cord to the party. Nobody thanks the DJ, but the party dies without him."
+    answer: "Because you're reading the wrong number, champ. Your stats show YOUR damage. It does not show the Weapon Damage you're pumping into every teammate through Smart Cover, the roughly +20% vulnerability from Scanning Pulse, or the rate-of-fire buff from Tactical Link. Your team's total DPS is tripling. Yours just isn't the one doing it. Think of yourself as the guy who brought the aux cord to the party. Nobody thanks the DJ, but the party dies without him."
   - question: "Can I run this build solo?"
     answer: "You can also eat soup with a fork. Technically possible, practically miserable. This build is designed to multiply other people's damage. If there are no other people, you are multiplying zero. For solo content, run a Vanguard Commando DPS build instead and come back to Scout when you have friends. Or matchmake. We don't judge."
   - question: "Is the P90 actually better than an LMG for this build?"
-    answer: "For this build, absolutely. The P90 fires at 900 RPM, which means you burn through magazines fast and trigger Fully Charged (+7.50% Engineering) on every empty reload. An LMG with a 100-round belt takes forever to empty, so you're waiting ages between Engineering stacks. But here's the real reason: the build needs BOTH Torrential Downpour and Fully Charged on the same weapon. Only two SMGs in the entire game can roll both talents: the P90 and the AUG A3 Para XS. The Vector fires at 1200 RPM but can't roll Fully Charged. The MP7 fires at 950 RPM but can't roll Torrential Downpour. The P90 is the fastest SMG that actually qualifies for both slots. AgentHuntzman didn't pick it randomly."
+    answer: "For this build, absolutely. The P90 fires at 900 RPM, which means you burn through magazines fast and trigger Fully Charged (+7.50% Engineering) on every empty reload. An LMG with a 100-round belt takes forever to empty, so you're waiting ages between Engineering stacks. But here's the real reason: the build needs BOTH Torrential Downpour and Fully Charged on the same weapon. Based on community reports when this was written, only two SMGs could roll both talents: the P90 and the AUG A3 Para XS. The Vector fires at 1200 RPM but couldn't roll Fully Charged. The MP7 fires at 950 RPM but couldn't roll Torrential Downpour. The P90 was the fastest SMG that qualified for both slots. Season 2 Phase 1 fixed several weapons (a First Wave Vector among them) pulling recalibration talents from the wrong pool, so double-check in-game before you recal. AgentHuntzman didn't pick it randomly."
   - question: "What's the best Vanguard support build in Division Resurgence?"
-    answer: "You're looking at it. The Vanguard Recon running 4pc Mechanical Expert + 2pc Boom Shakalaka is currently the highest-impact support build in the game. AgentHuntzman runs this and triples team DPS."
+    answer: "You're looking at it, at least as of Season 1. The Vanguard Recon running 4pc Mechanical Expert + 2pc Boom Shakalaka was the highest-impact support build we'd found when this went up, and AgentHuntzman's pitch is that it triples team DPS. Nobody has been re-crowned in Season 2 yet, mostly because we haven't re-tested it. Until then it keeps the title by default, like the guy who holds the office fantasy trophy because nobody else showed up."
   - question: "Do I need Legendary drops for this build?"
     answer: "Nope. That's the beautiful part. This build already dramatically multiplies your team's damage output. Stop waiting for perfect drops and start running the build. Your squad will thank you immediately."
   - question: "Why Mechanical Expert over Long-Term Effect?"
@@ -41,12 +41,21 @@ videoChannel: "AgentHuntzman"
 
 > Build credit: [**AgentHuntzman**](https://www.youtube.com/watch?v=b1ZjnGeeRKI). Go watch his breakdown and drop a sub.
 
-> [!INFO] Support Build --- Low Personal DPS
+> [!INFO] Support Build: Low Personal DPS
 > Your personal DPS number will look embarrassing on this build. That's by design. Recon buffs your entire squad's damage output instead. Judge this build by your team's total clear time, not your individual stats. If you need to see big personal numbers, this isn't the build for you.
 
 This is the Vanguard Recon Scout, a full team-support build that triples your squad's damage output. You don't kill things. You make your entire team kill things three times faster.
 
 The loop is simple: stack Engineering through Torrential Downpour and Fully Charged, convert it into team-wide weapon damage through Tactical Smart Cover, debuff enemies with Scanning Pulse, and supercharge everyone's rate of fire with Tactical Link. Your personal DPS will look embarrassing. Your team's total output will be disgusting.
+
+> [!WARNING] Season 1 Phase 3 and Season 2 changes that affect this build
+> - **Recon (Season 1 Phase 3, June 24):** Ubisoft fixed Recon "passively dealing more damage than expected" without saying which effect. That patch went live after this page's May 24 update. This build lives on team buffs, so the hit is probably small, but retest.
+> - **Tactical Link (Season 2 Phase 1):** Recon's Tactical Link now gets improved auto-aim support. That's your signature, so if anything it should feel better.
+> - **Weapon attributes (Season 2 Phase 1):** Blast, Shredding and Piercing Weapon/Skill Damage were removed from the weapon attribute pool in favor of All Weapon Damage and All Skill Damage. The Weapon Blast Damage (M4) and Weapon Piercing Damage (P90) picks below can't roll on new drops anymore.
+> - **Weapon mods (Season 2 Phase 1):** New weapon mods get +100% main stat and -25% bonus attributes. The roughly 45% SMG tactical-mod reload figure below was measured on old mods, so retest it.
+> - **Vulnerability effects (Season 2 Phase 2):** Ubisoft fixed "some instance of 'Enemy take increased damage' effects not working properly" without naming them. Exposed and the Scanning Pulse vulnerability are that kind of effect, so your debuffs may land differently now. Retest before you trust the math below.
+>
+> This build has not been re-tested since its May 2026 update. Full details: [Season 1 Phase 3 patch notes](/patch-notes/season-1-phase-3-a-new-fire/), [Season 2 Phase 1 patch notes](/patch-notes/season-2-phase-1-the-call/) and [Season 2 Phase 2 patch notes](/patch-notes/season-2-phase-2/).
 
 ---
 
@@ -156,14 +165,14 @@ The one exception: if your rotations feel ragged in practice and Smart Cover is 
 
 ## Weapons Deep Dive
 
-All weapons below assume a **tactical mod is equipped**. SMG tactical mod reduces reload time by roughly 45% (community-tested). AR tactical mod improves stability and reduces recoil. These are not optional. Equip them.
+All weapons below assume a **tactical mod is equipped**. SMG tactical mod reduces reload time by roughly 45% (community-tested before the Season 2 weapon mod rework). AR tactical mod improves stability and reduces recoil. These are not optional. Equip them.
 
 ### Primary: Police M4 (AR)
 
 - **Torrential Downpour:** Hitting enemies 10 times within 5 seconds grants +22.5% Engineering for 12 seconds. This is your Engineering injection.
 - **Rapid Charge:** Hitting an enemy 5 times in 3 seconds grants +50 Signature Ability charge. This is how you get Tactical Link back fast.
 - **RPM: 850. Magazine: 30.** This is your proc weapon, not your sustained fire weapon. Land your hits, swap to P90.
-- **Ideal attributes:** Weapon Blast Damage + Weapon Damage.
+- **Ideal attributes:** Weapon Blast Damage + Weapon Damage. Season 2 Phase 1 removed Blast Damage from the weapon attribute pool, so on new drops look for All Weapon Damage in that slot.
 - Torrential Downpour and Rapid Charge can be recalibrated between compatible AR platforms. Whether a specific AR can accept a specific talent depends on its talent pool. Verify in-game before committing a recal.
 
 ### Secondary: P90 (SMG)
@@ -171,7 +180,7 @@ All weapons below assume a **tactical mod is equipped**. SMG tactical mod reduce
 - **Torrential Downpour:** Same talent, second copy. Different cooldown timer from the primary.
 - **Fully Charged:** Reloading an empty magazine grants +7.50% Engineering for 12 seconds, stacking up to 3 times (+22.50% total). This is the talent that makes the build tick.
 - **RPM: 900. Magazine: 50. Reload: 2.47s base.** With the SMG tactical mod, that reload gets significantly faster. You burn through the magazine in about 3.3 seconds. Every empty reload is a Fully Charged proc, and with the mod equipped the cycle feels near-continuous.
-- **Ideal attributes:** Weapon Piercing Damage + Weapon Damage.
+- **Ideal attributes:** Weapon Piercing Damage + Weapon Damage. Season 2 Phase 1 removed Piercing Damage from the weapon attribute pool, so on new drops look for All Weapon Damage in that slot.
 
 ### Why P90 Specifically
 

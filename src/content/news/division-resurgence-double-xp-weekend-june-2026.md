@@ -1,6 +1,7 @@
 ---
 title: "Division Resurgence Double XP Weekend"
 publishDate: "2026-06-13"
+updatedDate: 2026-10-24
 author: "RapidF5"
 featuredImage: "/images/news/division-resurgence-double-xp-weekend-june-2026.webp"
 imageAlt: "Neon orange 2X XP Weekend sign glowing against a dark brick wall for Division Resurgence double experience event June 2026"
@@ -11,22 +12,25 @@ shareText: "Division Resurgence just doubled all XP through Sunday at midnight. 
 
 faqs:
   - question: "When does the Division Resurgence Double XP weekend start and end?"
-    answer: "The event started on June 12, 2026 (announced at 9:00 AM in the official post) and runs until Sunday at midnight, meaning the end of Sunday, June 14, 2026. The official post does not specify the exact timezone for midnight."
+    answer: "It ran from June 12, 2026 (the official post went up at 9:00 AM) until Sunday at midnight, meaning the end of Sunday, June 14, 2026. The official post never specified the timezone for midnight. It's over now, so you can stop refreshing."
   - question: "What XP is doubled during this event?"
     answer: "Per the official announcement, both regular XP and Specialization XP are doubled. The in-game notification states all regular and Specialization Experience gains are doubled across all activities."
   - question: "Do I need to buy anything to get Double XP?"
     answer: "No. The official post does not mention any premium activation or purchase. It is a server-side weekend event applied to all players."
   - question: "Does the 2x multiplier stack with XP boost consumables or Classified Ops Pass bonuses?"
-    answer: "This has not been confirmed in the official post as of June 13, 2026. We will update this article if the team clarifies."
+    answer: "Ubisoft never clarified, and the event is long over, so we can't tell you. If another Double XP event shows up, read the announcement wording before you plan a weekend around stacking."
   - question: "What is the best activity to grind during Double XP?"
-    answer: "For raw XP per hour, weekly bounties and Hostile Nest runs are typically the most efficient. If you are pushing a specific Specialization track, lean into activities that match that Specialization's bonus conditions."
+    answer: "In our experience, weekly bounties and Hostile Nest runs are the most efficient for raw XP per hour. If you are pushing a specific Specialization, play it in whatever content you clear fastest with it. And since Season 2 Phase 2 removed the daily XP cap, long grind sessions no longer hit a wall, double XP or not."
   - question: "Will there be another Double XP weekend?"
-    answer: "The team has not announced any additional Double XP events as of June 13, 2026. Follow the official @TheDivMobile X account for future event announcements."
+    answer: "Nothing announced as of October 24, 2026: we haven't seen another Double XP weekend in Ubisoft's official news or Steam posts since this one. Follow the official @TheDivMobile X account, which is where this one was announced. Meanwhile, Season 2 Phase 2 removed the daily XP cap, which is the next best thing."
   - question: "Is this event running on both mobile and PC?"
-    answer: "The post does not specify platform restrictions. As both the mobile version and the Ubisoft Connect PC version share the same servers and progression, the event should apply across both. The team has not stated any platform exclusion."
+    answer: "The post didn't specify platform restrictions. Since mobile and PC share servers and progression through your Ubisoft Connect account, it should have applied across both, and the team never mentioned a platform exclusion."
 ---
 
 Division Resurgence is running a Double XP weekend right now. Both regular XP and Specialization XP are doubled, the event is already live, and it ends Sunday at midnight. If you have been sitting on a half-leveled Specialization or a build you have been meaning to push, this is your window.
+
+> [!INFO] Update (October 2026)
+> This event ended on Sunday, June 14, 2026, and Ubisoft never clarified the timezone or whether the multiplier stacked with other bonuses. We haven't seen another Double XP weekend in Ubisoft's official news or Steam posts since, but [Season 2 Phase 2](/patch-notes/season-2-phase-2/) (September 16) removed the daily XP cap entirely. For current events, check our [news page](/news/).
 
 ## The Official Announcement
 
@@ -58,7 +62,7 @@ We are not going to guess on either of those. If the team posts a clarification,
 
 This is the part that gets buried when people only read "Double XP" and move on. Specialization XP is the slower track. Hitting Specialization milestones unlocks the Specialization-tier passives and abilities that round out your build identity. Demolitionist, Tech Operator, Bulwark, Vanguard, Field Medic. Each one has its own Specialization track with its own XP requirements.
 
-When the team runs a regular Double XP weekend, that usually only juices your character level. This one juices both, which means it is uniquely good for:
+A plain Double XP event would only juice your character level. This one juices both, which means it is uniquely good for:
 
 - Players still climbing the main level cap
 - Players who maxed level but have a Specialization sitting at 60-70% completion
@@ -72,7 +76,7 @@ The official post asked "Where are you going to grind first?!" so we may as well
 
 ### 1. Weekly Bounties Before Reset
 
-Weekly bounties give some of the chunkiest XP rewards in the game per hour invested. Knock those out first while the multiplier is live.
+In our experience, weekly bounties give some of the chunkiest XP rewards in the game per hour invested. Knock those out first while the multiplier is live.
 
 ### 2. Hostile Nest Runs
 
@@ -80,7 +84,7 @@ Hostile Nests reward solid XP per clear and let you stack up loot at the same ti
 
 ### 3. Conflicts (PvP) for the PvP Crowd
 
-If you are one of those unhinged individuals who voluntarily queue into Conflicts on a Friday night instead of watching Netflix like a normal human being, congratulations: the weekend is your Super Bowl. XP from matches counts toward both tracks. Be mindful that match length varies, so XP per hour can swing.
+If you are one of those unhinged individuals who voluntarily queue into Conflicts on a Friday night instead of watching Netflix like a normal human being, congratulations: the weekend is your Super Bowl. XP from matches should count toward both tracks. Be mindful that match length varies, so XP per hour can swing.
 
 ### 4. Side Missions You Have Been Putting Off
 
@@ -108,7 +112,7 @@ A few things to keep in mind so you do not torch your weekend chasing the wrong 
 
 **Burnout is real.** Eight straight hours of Hostile Nests on a Saturday is how you learn to hate a game you love. Pace yourself. The multiplier is on for roughly 63 hours from announcement to Sunday midnight. You do not need to be online for all of them. Your kids and your spouse still remember what you look like. Probably.
 
-**Active bug awareness.** Before you commit a long session to a specific activity, glance at the public Trello known issues board linked above in this article. If items disappearing from inventory or specific mission progression bugs are live, you want to know before you waste 2x time on a broken loop.
+**Active bug awareness.** Before you commit a long session to a specific activity, glance at the public Trello known issues board linked above in this article. If items disappearing from inventory or specific mission progression bugs are live, you want to know before you waste 2x time on a broken loop. (These days, check Ubisoft's [official bug reporter](https://www.ubisoft.com/en-us/game/the-division/the-division-resurgence/bug-reporter/issues) instead; the Trello board stopped updating in July.)
 
 ## When Does the Double XP Weekend End?
 
@@ -117,11 +121,11 @@ The official post says "Sunday at midnight." The in-game notification confirms t
 ---
 
 **Related Reading:**
-- [Season 1-2-3 Roadmap](/news/season-1-2-3-roadmap/) — the full roadmap breakdown
-- [Division Resurgence Known Issues Trello Board](/news/division-resurgence-known-issues-trello-board-breakdown/) — every card decoded
-- [Division Resurgence Coming to Steam](/news/division-resurgence-coming-to-steam-pc-2026/) — PC launch and Ubisoft Connect details
-- [Exotic Weapons Database](/database/exotic-weapons/) — every current exotic with stats and talents
-- [Build Planner](/builder/) — plan your loadout for the grind
+- [Season 1-2-3 Roadmap](/news/season-1-2-3-roadmap/): the full roadmap breakdown
+- [Division Resurgence Known Issues Trello Board](/news/division-resurgence-known-issues-trello-board-breakdown/): every card decoded
+- [Division Resurgence Coming to Steam](/news/division-resurgence-coming-to-steam-pc-2026/): PC launch and Ubisoft Connect details
+- [Exotic Weapons Database](/database/exotic-weapons/): every current exotic with stats and talents
+- [Build Planner](/builder/): plan your loadout for the grind
 
 ---
 

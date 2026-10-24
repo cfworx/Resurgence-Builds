@@ -4,7 +4,7 @@ slug: jackpot-striker-drone-tech-operator-build
 type: build
 date: 2026-06-01
 author: RapidF5
-description: "Tech Operator Offensive Ops build: Jackpot 4pc + Striker Drone crit explosions. 237k DPS with Engineering scaling and Thermite Charge procs."
+description: "Tech Operator Offensive Ops build: Jackpot 4pc + Striker Drone crit explosions, with Engineering scaling and Thermite Charge procs."
 keywords: ["Division Resurgence Tech Operator build", "Division Resurgence Striker Drone build", "Division Resurgence Jackpot build", "Division Resurgence Engineering build", "Hunting M44 build Resurgence", "Fire Cycle Jackpot build", "Division Resurgence skill crit build", "Rampart OS Protocol build"]
 canonical: https://resurgencebuilds.com/builds/jackpot-striker-drone-tech-operator-build/
 tags: [Tech Operator, Striker Drone, Jackpot, Fire Cycle, Engineering, Skill Crit, Rampart, Build]
@@ -22,17 +22,17 @@ shareText: "Tag your worst Rampart reset (you know, the one where you stepped of
 plannerHash: "s=Tech+Operator&sc=Offensive+Operations&n=Jackpot+Striker+Drone&ms=gs-7&m1=Skill+Critical+Chance&m2=Skill+Critical+Damage&cs=gs-7&ct=ba-14&c1=Max+Health&c2=Skill+Critical+Damage&ps=gs-7&pt=bp-17&p1=Skill+Critical+Chance&p2=Skill+Multi-Shot+Chance&gs=gs-11&g1=Skill+Critical+Chance&g2=Skill+Critical+Damage&hs=gs-11&h1=Skill+Critical+Chance&h2=Skill+Critical+Damage&ks=gs-7&k1=Skill+Critical+Chance&k2=Skill+Multi-Shot+Chance&w1s=sw-29&w1tr=T2&w1t=wt-17&w1t2=wt-3&w2s=sw-33&w2tr=T1&w2t=wt-66&w2t2=wt-42&os=os-6&sm1=smc-23&sm2=smc-26&sm3=smc-20"
 faqs:
   - question: "What is the best Tech Operator build in Division Resurgence?"
-    answer: "A Jackpot 4-piece plus Fire Cycle 2-piece Skill Crit build using Hunting M44 and Mk16 is currently one of the cleanest Tech Operator Offensive Operations setups. The Striker Drone scales with Engineering, Skill Critical Chance, and Skill Critical Damage, all of which the Jackpot and Fire Cycle sets stack natively, and Rampart adds another damage layer on top."
+    answer: "A Jackpot 4-piece plus Fire Cycle 2-piece Skill Crit build using Hunting M44 and Mk16 was one of the cleanest Tech Operator Offensive Operations setups when we wrote it up on Patch 1.1.2.2, and Season 2 didn't touch its core pieces. The Striker Drone scales with Engineering, Skill Critical Chance, and Skill Critical Damage, all of which the Jackpot and Fire Cycle sets stack natively, and Rampart adds another damage layer on top."
   - question: "Why is this build using Hunting M44 instead of an exotic?"
-    answer: "Because the Hunting M44 T2 LMG carries Enhancement Trade 2 and Ammo Supply, which are the cleanest LMG talents for feeding Skill Intensity back into the Striker Drone every magazine. The exotic slot does not have a free-pass LMG yet that pulls double duty on Skill Intensity feeding the way this rifle does."
+    answer: "Because the Hunting M44 T2 marksman rifle carries Enhancement Trade 2 and Ammo Supply, the talent pair this build uses to feed Skill Intensity back into the Striker Drone every magazine. When this was written, no exotic pulled that double duty on Skill Intensity feeding. Season 2 has since added the Bighorn and Diamondback, which we haven't tried on this build. Exotics are shiny. This rifle is useful. You're a dad, you know the difference."
   - question: "Can I run this build without Rampart?"
     answer: "Yes, but the ceiling drops. Surgical Engineering is the cleanest stand-in until you roll Rampart, followed by Tactical Layering. Both keep the build functional. Neither hits the +60% Damage ceiling that six stacks of Rampart provides."
   - question: "Is the Mk16 better than the Vector for the secondary slot?"
     answer: "For this build, yes. The Mk16 with Torrential Downpour 2 gets to +31.50% Engineering after ten hits in five seconds, which is trivial at AR fire rates and stays up for twelve seconds. The Vector is faster to ramp talents but does not push the Engineering ceiling as hard. Mk16 is the right call when the goal is to feed the drone, not to gunfight."
   - question: "How important is Skill Multi-Shot Chance on this build?"
-    answer: "Skill Multi-Shot Chance is a free damage multiplier on the drone because each multi-shot proc fires another shot from the drone at no resource cost. The build runs Skill Multi-Shot Chance on the backpack and knee pads because they are slots where you do not need crit chance or crit damage on both attribute lines. Roughly 40% Skill Multi-Shot Chance is the sweet spot before diminishing returns kick in."
+    answer: "Skill Multi-Shot Chance is a free damage multiplier on the drone because each multi-shot proc fires another shot from the drone at no resource cost. The build runs Skill Multi-Shot Chance on the backpack and knee pads because they are slots where you do not need crit chance or crit damage on both attribute lines. From our understanding, roughly 40% Skill Multi-Shot Chance is the sweet spot before you start trading away crit rolls for less return."
   - question: "Is Division Resurgence pay-to-win?"
-    answer: "Every gear set used here drops in the field. Jackpot and Fire Cycle pieces come from the standard High-End loot pool and the appropriate vendors. The premium track of the Classified Ops Pass is cosmetics, not power. Welcome to the genre."
+    answer: "Mostly no. Every gear set used here drops in the field. Jackpot and Fire Cycle pieces come from the standard High-End loot pool and the appropriate vendors. The premium Classified Ops track leans cosmetic, but the shop also sells OS Protocol Sealed Caches, so you can technically pay to gamble for OS Protocols. Welcome to the genre."
 ---
 
 ## What This Build Does
@@ -51,12 +51,15 @@ A few things make this build tick:
 
 The role is Tech Operator Offensive Operations. You are the drone driver, not the gunfighter. Your rifle exists to feed the drone, not the other way around.
 
+> [!INFO] Season 2 check: core pieces untouched
+> The Season 2 Phase 1 and Phase 2 balance changes didn't touch Jackpot, Fire Cycle, Rampart, the three Striker Drone skill mods, or the Hunting M44 and Mk16 talents. Phase 1 did add Skill Crit Chance, Skill Crit Damage and Skill Multi-Shot Chance to the gear mod pool (more places to stack this build's stats) and reworked weapon mods, and Phase 2 added a clearer Tech Operator drone duration indicator. Still last verified on Patch 1.1.2.2. Full details: [Season 2 Phase 1 patch notes](/patch-notes/season-2-phase-1-the-call/) and [Season 2 Phase 2 patch notes](/patch-notes/season-2-phase-2/).
+
 ## Build Stats at a Glance
 
 | Stat | Value | Source |
 |------|-------|--------|
 | Build Role | Tech Operator (Offensive Operations) | Spec |
-| Primary | Hunting M44 (T2, LMG) | Engineering roll |
+| Primary | Hunting M44 (T2, Marksman Rifle) | Engineering roll |
 | Secondary | Mk16 (AR) | Engineering roll |
 | Gear Set | Jackpot 4-piece + Fire Cycle 2-piece | Skill Crit focus |
 | OS Protocol | Rampart | Engineering, immobile damage stacks |
@@ -77,7 +80,7 @@ The role is Tech Operator Offensive Operations. You are the drone driver, not th
 
 ### Loadout
 
-- **Primary:** Hunting M44 (T2, LMG) rolled Engineering, Attribute Bonuses: Skill Multi-Shot Chance + Skill Critical Damage. Talents: Enhancement Trade 2, Ammo Supply.
+- **Primary:** Hunting M44 (T2, Marksman Rifle) rolled Engineering, Attribute Bonuses: Skill Multi-Shot Chance + Skill Critical Damage. Talents: Enhancement Trade 2, Ammo Supply.
 - **Secondary:** Mk16 rolled Engineering, Attribute Bonuses: Skill Multi-Shot Chance + Received Healing. Talents: Torrential Downpour 2, Rapid Charge.
 
 ### OS Protocol
@@ -104,7 +107,7 @@ Skill Radius +12.0%, Skill Critical Chance +10.8%, Skill Critical Damage +24.0%.
 
 ### Fire Cycle 2-piece
 
-+12.0% Skill Critical Damage. The cleanest 2-piece for a skill crit build, period. Twelve percent Skill Crit Damage stacked on top of the Jackpot 4-piece's 24%, the Glass Cannon ratios from your gloves and holster, and the Body Armor and mask crit damage rolls is what pushes the drone numbers past the threshold where Hostile Nest bosses start melting.
++12.0% Skill Critical Damage. The cleanest 2-piece for a skill crit build, period. Twelve percent Skill Crit Damage stacked on top of the Jackpot 4-piece's 24%, the crit damage rolls on your gloves and holster, and the Body Armor and mask crit damage rolls is what pushes the drone numbers past the threshold where Hostile Nest bosses start melting.
 
 ### Body Armor: Jackpot with Injured Concealment 2
 
@@ -120,14 +123,16 @@ Both Fire Cycle pieces are rolled for the maximum amount of crit on each. There 
 
 ### Knee Pads: Jackpot, Engineering, Skill Crit Chance + Skill Multi-Shot Chance
 
-The fourth Jackpot piece. Skill Critical Chance and Skill Multi-Shot Chance get rolled here because the kneepads slot does not have a talent line, so you milk the attributes for crit on both lines.
+The fourth Jackpot piece. Skill Critical Chance and Skill Multi-Shot Chance get rolled here because the kneepads slot does not have a talent line, so you milk both attribute lines: crit chance on one, multi-shot on the other.
 
 ## Weapon Talents Explained
 
-### Hunting M44 (T2 LMG) Talents
+### Hunting M44 (T2 Marksman Rifle) Talents
 
 - **Enhancement Trade 2** - "Grants +8.40% Skill Intensity for each 20% of the Magazine Size emptied for 8 seconds, up to 4 stacks. Talent Cooldown: 1 second." Empty 80% of the magazine, get +33.60% Skill Intensity for 8 seconds. That is a flat damage and effect amplifier on the drone every time you dump a mag.
 - **Ammo Supply** - "Shooting has a 54% chance of returning the bullet in the magazine if it contains less than 30% of its ammo." Once you are under 30% mag, you start getting bullets back at better than coin-flip odds, which lets you keep firing into the back of the magazine to extend the Enhancement Trade window.
+
+(Our weapon database lists the Hunting M44 as a five-round marksman rifle, so each 20% of the magazine is one shot and "under 30%" means your last round.)
 
 The combo is intentional. Dump the front of the mag fast to ramp Enhancement Trade, then the back of the mag pays you back through Ammo Supply so the Skill Intensity buff stays live for longer.
 
@@ -154,6 +159,6 @@ Rampart is the goal. Everything else is a placeholder until you roll it.
 |---|---|
 | Jackpot mask/Body Armor/backpack/kneepads | Engineering core + Skill Crit Chance + Skill Crit Damage or Multi-Shot + applicable talents (Injured Concealment 2, Overwatch 2) |
 | Fire Cycle gloves/holster | Engineering core + Skill Crit Chance + Skill Crit Damage |
-| Hunting M44 (T2 LMG) | Engineering roll + Enhancement Trade 2 + Ammo Supply |
+| Hunting M44 (T2 Marksman Rifle) | Engineering roll + Enhancement Trade 2 + Ammo Supply |
 | Mk16 (AR) | Engineering roll + Torrential Downpour 2 + Rapid Charge |
 | Rampart OS Protocol (High-End) | Always keep |

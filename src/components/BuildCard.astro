@@ -66,7 +66,7 @@ const getSpecClass = (spec: string) => {
       <p class="card__title">
         <a href={href} class="card__link">{title}</a>
       </p>
-      <p class="card__meta">Patch {patch}</p>
+      <p class="card__meta">{/^\d/.test(patch) ? `Patch ${patch}` : patch}</p>
       <p class="card__description">{description}</p>
     </div>
 

@@ -34,7 +34,7 @@ function getBuildArchetype(description: string): { primary: string; label: strin
       primary: 'hybrid',
       label: 'Hybrid DPS / Engineering',
       prose: `This is a hybrid talent that bridges the gap between shooting and skill usage. It rewards agents who actively use both their weapons and skills in combat — not just sitting back lobbing turrets, and not just holding the trigger and ignoring your cooldowns. If you run a build that does both, this talent is basically free damage everywhere.`,
-      builds: `Hybrid builds that split between Firepower and Engineering get the most mileage here. Vanguard Operatives and Tactical Medics who actually shoot their guns (yes, you should be shooting) will love this. It's also solid on any DPS build that uses offensive skills like the Assault Turret or Striker Drone alongside their primary weapon.`
+      builds: `Hybrid builds that split between Firepower and Engineering get the most mileage here. Vanguards and Field Medics who actually shoot their guns (yes, you should be shooting) will love this. It's also solid on any DPS build that uses offensive skills like the Artillery Turret or Striker Drone alongside their primary weapon.`
     };
   }
   if (d.includes('engineering') || d.includes('skill intensity') || d.includes('skill cooldown') || d.includes('skill duration') || d.includes('skill critical') || d.includes('skill multi-shot') || d.includes('skill damage')) {
@@ -42,7 +42,7 @@ function getBuildArchetype(description: string): { primary: string; label: strin
       primary: 'engineering',
       label: 'Engineering / Skill Build',
       prose: `This talent is tailor-made for skill builds. If your playstyle is "deploy skills and let them do the work," this gives your abilities a serious boost. Your turrets hit harder, your drones last longer, and your cooldowns shrink. Stack it with Engineering gear and watch your skills do obscene things.`,
-      builds: `Engineer-focused builds running high Engineering attributes will squeeze the most out of this. Pathfinder Hunters running Assault Turret combos, Tactical Medics stacking skill haste, and anyone rocking the Cluster Seeker Mine as their main damage source. If your gear has more yellow than red, this talent wants to be on your weapon.`
+      builds: `Engineer-focused builds running high Engineering attributes will squeeze the most out of this. Demolitionists running Artillery Turret combos, Field Medics stacking skill haste, and anyone rocking the Explosive Seeker Mine as their main damage source. If your gear has more yellow than red, this talent wants to be on your weapon.`
     };
   }
   if (d.includes('critical hit') || d.includes('critical damage') || d.includes('crit')) {
@@ -58,7 +58,7 @@ function getBuildArchetype(description: string): { primary: string; label: strin
       primary: 'tank',
       label: 'Tank / Survivability',
       prose: `A survivability talent for agents who like staying alive. This won't win any DPS contests, but it keeps you in the fight when things get ugly. Pair it with Toughness-stacked gear and you become the agent who just won't go down — the cockroach of the squad, if you will.`,
-      builds: `Bulwark Breacher shield builds are the obvious pick. Any frontline tank running high Toughness with a Ballistic Shield or drawing aggro for the team. Also solid on solo players who need to facetank when there's no healer around. Dark Zone PvP builds that need to survive burst damage will consider this too.`
+      builds: `Bulwark Breacher shield builds are the obvious pick. Any frontline tank running high Toughness with a Phalanx Shield or drawing aggro for the team. Also solid on solo players who need to facetank when there's no healer around. Dark Zone PvP builds that need to survive burst damage will consider this too.`
     };
   }
   if (d.includes('healing') || d.includes('health') || d.includes('rescue') || d.includes('restore')) {
@@ -66,7 +66,7 @@ function getBuildArchetype(description: string): { primary: string; label: strin
       primary: 'support',
       label: 'Support / Healer',
       prose: `This talent has healing or sustain baked in. It's for the agents who keep the squad alive, or for solo players who need to self-sustain through tough content. Not the flashiest talent in the list, but it's the difference between wiping and clutching.`,
-      builds: `Tactical Medic builds stacking Incoming Healing and Repair Skills get the most value. Also works on solo players who don't have a dedicated healer and need passive sustain. If you're running Legendary missions solo, a talent like this can carry runs that would otherwise end at the revive screen.`
+      builds: `Field Medic builds stacking Incoming Healing and healing skills get the most value. Also works on solo players who don't have a dedicated healer and need passive sustain. If you're running Legendary missions solo, a talent like this can carry runs that would otherwise end at the revive screen.`
     };
   }
   if (d.includes('weapon damage') || d.includes('rate of fire') || d.includes('headshot')) {

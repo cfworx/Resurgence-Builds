@@ -23,15 +23,15 @@ videoTitle: "Tampishach - Tech Aegis Build Walkthrough"
 videoChannel: "PowerfulJRE Clips"
 faqs:
   - question: "Is this build still good after Patch 1.1.2.2?"
-    answer: "Yes. The build was filmed in late April 2026. None of the patches since touched Long-term Effect, Jackpot, MPX, Copperhead, or Brains Over Brawn. The Performance Enhancer 3pc bug is still pending a fix, but the 2pc Engineering bonus still applies."
+    answer: "Mostly, but the numbers are vintage. The build was filmed in late April 2026. Since then, Season 1 Phase 2 (May 11) fixed Brains Over Brawn 'scaling wrong stats,' Season 1 Phase 3 (June 24) fixed Aegis Burst dealing more damage than intended, and Season 2 Phase 1 reworked weapon mods so the Shredding and Blast attachment rolls below no longer drop. Long-term Effect, Jackpot, and the MPX and Copperhead talents weren't touched. No official patch notes through Season 2 Phase 2 mention a Performance Enhancer 3pc fix, but the 2pc Engineering bonus still applies. Expect lower damage than the 237k sheet and you won't be disappointed."
   - question: "Why Engineering and not Firepower as the priority stat?"
     answer: "Engineering scales every skill in the kit: Defender Drone damage, Mender Drone heal-to-damage conversion, Firefly Performance Enhancer bonus, and the Brains Over Brawn hit damage. The Long-term Effect 4pc also dumps +18% Engineering on top. Firepower scales gun damage in isolation. Engineering scales the whole build."
   - question: "Can I run this without the Mechanized Infantry Arm Body Armor?"
     answer: "Any Long-term Effect Body Armor works for the 4pc bonus. What you want is the Injured Concealment talent on whichever Body Armor you find, because that stacking damage talent is a meaningful chunk of the build's damage output."
   - question: "Is the Boom Horo CarryBack backpack required?"
-    answer: "Not strictly required. The Prime Engineer talent is the upgrade you are working toward. Until then, any Long-term Effect backpack with Skill Crit Chance and Skill Crit Damage rolls keeps the 4pc bonus active."
+    answer: "Not strictly required. The Prime Engineer talent is the upgrade you are working toward. Until then, any Long-term Effect backpack with Skill Crit Chance and Skill Crit Damage rolls keeps the 4pc bonus active. Just make sure whatever Prime Engineer backpack you land also rolls Long-term Effect, because a Boom-Shakalaka one breaks the 4pc in this layout and takes the +18% Engineering with it."
   - question: "How do I get Skill Crit Chance and Skill Crit Damage that high?"
-    answer: "Every sub-attribute on every gear piece rolling those two stats, plus +21.60% Skill Crit Chance from Brains Over Brawn, plus the Skill Crit Damage rolls on the weapons. Stack them everywhere they appear."
+    answer: "Every sub-attribute on every gear piece rolling those two stats, plus +21.60% Skill Crit Chance from Brains Over Brawn, plus the Skill Crit Damage rolls on the weapons. Since Season 2 Phase 1, gear mods can roll both stats too. Stack them everywhere they appear."
   - question: "Is Division Resurgence pay-to-win?"
     answer: "No. Resurgence is free-to-play with optional convenience and cosmetic purchases. Every piece of gear in this build was earned through gameplay. Spending money can speed up the grind, but it cannot buy positioning, game sense, or the knowledge to stack the right talents. Your dad reflexes are still the bottleneck."
 ---
@@ -42,12 +42,19 @@ faqs:
 
 > Build credit: **Tampishach** (posting on the PowerfulJRE Clips YouTube channel). He uploaded a tight walkthrough on his Tech Aegis setup back in late April, and the build still holds up after four patches. We grabbed every value off his in-game screens so nothing in this post is guessed. Watch his original walkthrough on [YouTube](https://www.youtube.com/watch?v=bZA3H9f2ah0).
 
-This is a **Tech Aegis Engineering build** that turns skill crit into a sledgehammer. Tampishach is running **18.70k Power Score, 237.52k DPS, 4,503 Armor, and 76,569 Health at Level 50**, with **53% Skill Crit Chance and 113% Skill Crit Damage** on the sheet. The 4pc Long-term Effect set is the engine - skill health, skill duration, and a flat +18% Engineering bonus that compounds with every drone, firefly, and stat roll on the kit. The 2pc Jackpot tops it off with skill crit damage. **Brains Over Brawn** OS Protocol gives you +21.60% Skill Crit Chance and tacks 48% of your Engineering onto every hit. The core loop: drop your Defender Drone, throw out a Mender Drone, pop a First-Aid Firefly, and watch the crit numbers stack.
+This is a **Tech Aegis Engineering build** that turns skill crit into a sledgehammer. Tampishach is running **18.70k Power Score, 237.52k DPS, 4,503 Armor, and 76,569 Health at Level 50**, with **53% Skill Crit Chance and 113% Skill Crit Damage** on the sheet. The 4pc Long-term Effect set is the engine - skill health, skill duration, and a flat +18% Engineering bonus that compounds with every drone, firefly, and stat roll on the kit. The 2pc Jackpot tops it off with +12% Skill Radius. **Brains Over Brawn** OS Protocol gives you +21.60% Skill Crit Chance and tacks 48% of your Engineering onto every hit. The core loop: drop your Defender Drone, throw out a Mender Drone, pop a First-Aid Firefly, and watch the crit numbers stack.
+
+> [!WARNING] Season 1 Phase 3 and Season 2 changes that affect this build
+> - **Aegis Burst (Season 1 Phase 3, June 24):** Ubisoft fixed Aegis Operation "dealing more damage than expected at regular intervals." Tampishach's 237k DPS was recorded in late April, before this fix and before the Season 1 Phase 2 fix to Brains Over Brawn "scaling wrong stats," so expect lower numbers.
+> - **Weapon mods (Season 2 Phase 1):** New weapon mods can no longer roll Skill Shredding, Skill Blast, Weapon Piercing or All Weapon Damage, so the Small Laser Pointer and SMG Extended Magazine rolls below are legacy. New mods get +100% main stat (bigger Engineering) and -25% bonus attributes, and can roll Skill Critical Damage % or Skill Intensity % instead.
+> - **Gear mods (Season 2 Phase 1):** The gear mod bonus pool now includes Skill Crit Chance and Skill Crit Damage, the two stats this build wants on every sub-roll. Your Engineering gear modules can now pull double duty.
+>
+> This build has not been re-tested since Patch 1.1.2.2. Full details: [Season 1 Phase 3 patch notes](/patch-notes/season-1-phase-3-a-new-fire/), [Season 2 Phase 1 patch notes](/patch-notes/season-2-phase-1-the-call/) and [Season 2 Phase 2 patch notes](/patch-notes/season-2-phase-2/).
 
 ---
 
 > [!WARNING] Engineering, Not Firepower
-> The #1 mistake on Tech Aegis builds is stacking Firepower instead of Engineering. The shield pulse mechanic scales off Engineering. If you put Firepower cores on this build, your shield does nothing and your DPS craters. Stack Engineering on every gear piece, no exceptions.
+> The #1 mistake on Tech Aegis builds is chasing Firepower instead of Engineering. From our understanding, the shield pulse mechanic scales off Engineering. Tampishach's gear cores happen to be Firepower (see the gear table), but every gear module and weapon mod is stacked with Engineering, and that's where his damage comes from. Skip the Engineering mods and your shield does nothing and your DPS craters.
 
 ---
 
@@ -84,7 +91,7 @@ This is a **Tech Aegis Engineering build** that turns skill crit into a sledgeha
 
 **Set split:** 4pc Long-term Effect + 2pc Jackpot. The Long-term Effect 4-piece is non-negotiable. Drop one piece and you lose the +18% Engineering bonus. The 2pc Jackpot is flexible - any two Jackpot slots work.
 
-**Recommended backpack swap:** Boom "Horo" CarryBack with **Prime Engineer** talent. Deploying a skill at full health grants +22.50% Engineering for 12 seconds. That talent pairs perfectly with the rotation since you are deploying drones constantly.
+**Recommended backpack swap:** Boom "Horo" CarryBack with **Prime Engineer** talent. Deploying a skill at full health grants +22.50% Engineering for 12 seconds. That talent pairs perfectly with the rotation since you are deploying drones constantly. Make sure the one you land rolls Long-term Effect, though: a Boom-Shakalaka backpack breaks the 4pc.
 
 ### Loadout
 
@@ -92,7 +99,7 @@ This is a **Tech Aegis Engineering build** that turns skill crit into a sledgeha
 |---|---|---|
 | **Primary** | Copperhead (T1, SMG, Level 40) | **In Sync + Swift Taunt** · Piercing Damage 800 |
 | **Secondary** | MPX (T0, SMG, Level 50) | **Torrential Downpour II + Rapid Charge** · Skill Multi-Shot Chance +8.09% |
-| **OS Protocol** | **Brains Over Brawn** (High-End, Level 50) | +21.60% Skill Crit Chance. Hits deal additional damage equal to 48% Engineering |
+| **OS Protocol** | **Brains Over Brawn** (Specialized, Level 50) | +21.60% Skill Crit Chance. Hits deal additional damage equal to 48% Engineering |
 | **Skill 1** | Defender Drone | Hazardous Area firmware 3pc |
 | **Skill 2** | Mender Drone | Team Backup firmware 3pc |
 | **Skill 3** | First-Aid Firefly | Performance Enhancer firmware 3pc |
@@ -108,7 +115,7 @@ This is a **Tech Aegis Engineering build** that turns skill crit into a sledgeha
 
 > **Weapon mod stacking:** Every weapon mod slot on both the MPX and the Copperhead should roll Engineering. Tampishach: *"I stacked mods with engineering as it gives more and more engineering to your build, which enhances your damage."*
 
-> **Note on Performance Enhancer 3pc:** Tampishach flagged a known issue with the 3pc bonus damage not firing correctly. A fix is expected in an upcoming patch. The 2pc Engineering bonus still applies.
+> **Note on Performance Enhancer 3pc:** Tampishach flagged a known issue with the 3pc bonus damage not firing correctly. A fix was expected in an upcoming patch. (Update, October 2026: none of the official patch notes through Season 2 Phase 2 mention a Performance Enhancer fix, so treat it as unconfirmed.) The 2pc Engineering bonus still applies.
 
 ---
 
@@ -128,7 +135,7 @@ The flex set. 2pc bonus: +12% Skill Radius. Tampishach uses the Rapid Deployment
 
 *Hits taken grant +1.80% Damage for 10 seconds, up to 10 stacks.*
 
-At full stacks that is +18% Damage. Tampishach also mentions **Injured Concealment II**, which stacks up to +28% Damage at Rank 2.
+At full stacks that is +18% Damage. Tampishach also mentions **Injured Concealment II**, which stacks up to +25% Damage at Rank 2 (+2.50% per stack, 10 stacks, matching the Injured Concealment II text on our other builds).
 
 ### Backpack: Prime Engineer (Recommended)
 
@@ -146,7 +153,7 @@ Max out gear modules to Engineering on every slot. Every +1 Engineering goes thr
 
 ### 1. Brains Over Brawn (Specialized) · RECOMMENDED
 
-*+10.80% Skill Crit Chance · Hits deal additional damage equal to 24% Engineering*
+*+10.80% Skill Crit Chance · Hits deal additional damage equal to 24% Engineering* (base values; +21.60% and 48% at Level 50)
 
 This is the entire reason the build hits 53% Skill Crit Chance. The on-hit bonus damage scales off Engineering, which the Long-term Effect 4pc just buffed by 18%. Tampishach: *"You need to farm weekly bounties to max it out."*
 
@@ -184,7 +191,7 @@ Tampishach recommends hunting for **Torrential Downpour II** or **In Sync II** a
 
 ### Attachments
 
-Both guns should run **Engineering-stacked mods** in every slot:
+Both guns should run **Engineering-stacked mods** in every slot. These two are pre-Season 2 mods; new ones can't roll the Shredding, Blast, Piercing or All Weapon Damage bonuses shown here (see the warning at the top):
 
 - **Small Laser Pointer** (Underbarrel): +25 Engineering, +80 Skill Shredding Damage, +80 Skill Blast Damage
 - **SMG Extended Magazine** (Magazine): +25 Engineering, +82 Weapon Piercing Damage, +82 All Weapon Damage
@@ -200,9 +207,9 @@ Both guns should run **Engineering-stacked mods** in every slot:
 | Copperhead (Primary SMG) | In Sync or Torrential Downpour II, Skill Critical Damage, Armor |
 | MPX (Secondary SMG) | Torrential Downpour II, Rapid Charge, Skill Multi-Shot Chance |
 | Brains Over Brawn OS Protocol | Max to Level 50 for +21.60% Skill Crit Chance |
-| Body Armor talent | Injured Concealment (or Rank 2 for +28% Damage) |
+| Body Armor talent | Injured Concealment (or Rank 2 for +25% Damage) |
 | Backpack talent | Prime Engineer (+22.50% Engineering on skill deploy) |
-| Weapon mods (all slots) | Engineering, Skill Shredding Damage, Skill Blast Damage |
+| Weapon mods (all slots) | Engineering main stat. On new mods, Skill Critical Damage % or Skill Intensity % (Shredding and Blast rolls were removed in Season 2 Phase 1) |
 
 ---
 

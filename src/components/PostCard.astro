@@ -11,11 +11,13 @@ export interface Props {
   tags?: string[];
   featuredImage?: string;
   imageAlt?: string;
+  /** false = show tags as plain labels (e.g. patch versions that have no tag page) */
+  tagLinks?: boolean;
 }
 
-const { title, href, date, author, description, type, tags = [], featuredImage, imageAlt } = Astro.props;
+const { title, href, date, author, description, type, tags = [], featuredImage, imageAlt, tagLinks = true } = Astro.props;
 
-const formattedDate = date.toLocaleDateString('en-US', {
+const formattedDate = date.toLocaleDateString('en-US', { timeZone: 'UTC',
   month: 'short',
   day: 'numeric',
   year: 'numeric',
@@ -56,7 +58,9 @@ const typeLabel = typeLabels[type] || type;
       <p class="card__description">{description}</p>
       {tags.length > 0 && (
         <div class="post-card__tags">
-          {tags.slice(0, 4).map(tag => <a href={`/tag/${tag.toLowerCase().replace(/\s+/g, '-')}/`} class="tag" style="text-decoration:none;">{tag}</a>)}
+          {tags.slice(0, 4).map(tag => tagLinks
+            ? <a href={`/tag/${tag.toLowerCase().replace(/\s+/g, '-')}/`} class="tag" style="text-decoration:none;">{tag}</a>
+            : <span class="tag">{tag}</span>)}
         </div>
       )}
     </div>

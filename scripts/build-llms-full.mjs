@@ -2,7 +2,8 @@ import fs from 'fs';
 import path from 'path';
 
 const DATA = 'src/data';
-const OUT = 'public/llms-full.txt';
+// Written straight into the build output (run after `astro build`), so it is regenerated on every deploy.
+const OUT = 'dist/llms-full.txt';
 
 function load(file) {
   return JSON.parse(fs.readFileSync(path.join(DATA, file), 'utf8'));
@@ -12,12 +13,13 @@ const lines = [];
 const add = (...args) => args.forEach(l => lines.push(l));
 
 // Header
+const status = load('season-status.json');
 add(
-  '# ResurgenceBuilds.com — Full Content for LLM Retrieval',
+  '# ResurgenceBuilds.com: Full Database Text for LLM Retrieval',
   '',
-  '> This file contains the complete text of all weapon databases, gear references, talent tables, and game data from ResurgenceBuilds.com, optimized for LLM ingestion. All data is from Tom Clancy\'s The Division Resurgence (Ubisoft, 2025 mobile/PC game — not The Division 1, The Division 2, The Division Heartland, or The Division Survivors).',
+  '> The text of the weapon, gear, talent, OS Protocol and skill mod databases on ResurgenceBuilds.com, an independent fan site (not affiliated with Ubisoft). All data is for Tom Clancy\'s The Division Resurgence (Ubisoft; iOS and Android since March 31, 2026, PC on Steam and Ubisoft Connect since August 5, 2026). It is NOT data for The Division (2016), The Division 2, The Division Heartland or The Division Survivors, even where item names match.',
   '',
-  `> Last verified: ${new Date().toISOString().split('T')[0]}. Current patch: 1.2.1. Season: 1.`,
+  `> Generated: ${new Date().toISOString().split('T')[0]}. Live game state: ${status.season} (since ${status.since}). ${status.headline} Each database page on the site shows when its values were last verified in game; official patch changes are applied from Ubisoft\'s notes.`,
   '',
   '---',
   ''
@@ -25,22 +27,16 @@ add(
 
 // === EXOTIC WEAPONS ===
 add('## Exotic Weapons', '');
-add('There are 3 exotic weapons currently available in The Division Resurgence (Patch 1.2.1).', '');
+add('Exotic weapons with full stat entries in our database (newer exotics such as The Bighorn and The Diamondback are covered in the exotic weapons list at https://resurgencebuilds.com/guides/division-resurgence-exotic-weapons-list-2026/ until their stats are verified):', '');
 
 const exotics = load('exotic-weapons.json');
 for (const w of exotics) {
   add(`### ${w.name} (Exotic ${w.type})`, '');
   add(`| Stat | Value |`);
   add(`|---|---|`);
-  add(`| Weapon Class | ${w.type} |`);
-  add(`| Damage | ${w.damage} |`);
-  add(`| RPM | ${w.rpm} |`);
-  add(`| Magazine | ${w.mag} |`);
-  add(`| Accuracy | ${w.accuracy} |`);
-  add(`| Stability | ${w.stability} |`);
-  add(`| Reload Speed | ${w.reloadSpeed} |`);
-  add(`| Optimal Range | ${w.optimalRange} |`);
-  add(`| Movement Speed | ${w.movementSpeed} |`);
+  for (const [label, val] of [['Weapon Class', w.type], ['Damage', w.damage], ['RPM', w.rpm], ['Magazine', w.mag], ['Accuracy', w.accuracy], ['Stability', w.stability], ['Reload Speed', w.reloadSpeed], ['Optimal Range', w.optimalRange], ['Movement Speed', w.movementSpeed]]) {
+    if (val !== undefined && val !== null && String(val).trim() !== '') add(`| ${label} | ${val} |`);
+  }
   add('');
   add(`**Exotic Talent: ${w.talentName}**`);
   add(w.talentDescription, '');
@@ -176,7 +172,7 @@ add(
   '',
   '## Source & License',
   '',
-  'All data sourced from ResurgenceBuilds.com. Stats verified in-game on The Division Resurgence Patch 1.2.1.',
+  'All data from ResurgenceBuilds.com databases. Official cache odds: https://resurgencebuilds.com/database/drop-rates/ (transcribed from Ubisoft\'s Help Center).',
   '',
   '- Site: https://resurgencebuilds.com',
   '- Author: RapidF5',

@@ -13,29 +13,29 @@ const { pathname = '/' } = Astro.props;
 
 // --- Funny, keyword-rich headings by content category ---
 const buildHeadings = [
-  "Your build is mid. Our Discord will fix that.",
-  "Stop running random gear. We have a Discord for that.",
+  "Your build is mid. Following us will fix that.",
+  "Stop running random gear. We have a database for that.",
   "You didn't farm 47 Legendary runs to NOT share your drops.",
   "Your DPS is lacking and so is your friend list.",
   "This build slaps harder with a squad. Find one.",
   "Solo queue is just suffering with extra steps.",
   "Your loadout is ready. Your squad isn't. Fix that.",
   "Nobody cares about your Power Score. We care about your vibes.",
-  "LFG posts are cringe. Discord lobbies are not.",
+  "LFG posts are cringe. Clans are not. Go find one.",
   "You read the whole build guide. You're one of us now.",
   "Your Warlord deserves better teammates than matchmaking randoms.",
   "Don't let your god roll rot in solo queue.",
   "The real endgame is the friends you farm Legendaries with.",
   "Your build is optimized. Your social life isn't.",
   "Matchmaking gave you 4 DPS players and zero heals. We can help.",
-  "Your recalibration bench can't fix loneliness. Discord can.",
+  "Your recalibration bench can't fix loneliness. A clan can.",
   "This build melts. Your squad should too. Not literally.",
-  "They made the game. We made it make sense. Join us.",
+  "The game is deep. Our guides are deeper. Join us.",
   "Dark Zone extractions are easier with friends who won't betray you. Probably.",
   "You just min-maxed a mobile game. You belong here.",
-  "Destiny died so we could thrive. Come thrive with us.",
+  "Destiny stopped getting updates. We did not. Follow along.",
   "Your gear score is temporary. Our community is forever.",
-  "Congrats, you can read stat sheets. Now read our Discord.",
+  "Congrats, you can read stat sheets. Now read our patch notes.",
   "The DZ rogues have a squad. You should too.",
   "Your build didn't get you killed. Your lack of callouts did.",
   "Your loadout just leveled up. Tell your squad about it.",
@@ -43,24 +43,24 @@ const buildHeadings = [
   "The inventory bug took your gear. We'll help you rebuild.",
   "This build guide is free. Therapy for your RNG luck is not.",
   "Four randoms in Legendary is a war crime. Squad up.",
-  "Your talent synergies are chef's kiss. Your Discord activity is not.",
+  "Your talent synergies are chef's kiss. Your follow count is not.",
   "If you're reading footnotes on a build guide, you're our people.",
   "The meta changes every patch. The homies are forever.",
   "You theorycrafted a build at work. Don't pretend you didn't.",
   "Your Engineering stat is maxed. Your networking stat is zero.",
   "Still using the recommended loadout? We need to talk.",
-  "The small indie company won't help you. We will.",
+  "Your build has questions. We have spreadsheets.",
 ];
 
 const guideHeadings = [
   "You just read a 2,000 word guide. You're already in too deep.",
-  "Knowledge is power. Discord is where the knowledge lives.",
+  "Knowledge is power. Following us is free.",
   "You learned something. Now argue about it with strangers.",
-  "This guide was free. So is joining our Discord.",
+  "This guide was free. So is following us.",
   "The game won't explain its own mechanics. We will. Join us.",
   "The real hidden mechanic is having friends who play this game.",
   "You scrolled past the FAQ. You're basically family now.",
-  "Still confused? Our Discord has people even more confused than you.",
+  "Still confused? So is half the community. Follow along anyway.",
   "The game won't teach you this. We gotchu.",
   "You now know more than 90% of matchmaking randoms. Celebrate with us.",
   "Free knowledge, zero microtransactions. Just pure Division strategy.",
@@ -69,7 +69,7 @@ const guideHeadings = [
 
 const newsHeadings = [
   "Stay ahead of the patch notes. Follow us before the meta shifts.",
-  "Breaking news travels fast. Our Discord travels faster.",
+  "Breaking news travels fast. Our X feed travels faster.",
   "Patch drops. We translate. Follow along.",
   "The next balance patch will ruin your build. We'll warn you first.",
   "Patch notes are our love language. Subscribe to ours.",
@@ -79,16 +79,16 @@ const newsHeadings = [
 ];
 
 const patchHeadings = [
-  "Your build just got patched. Our Discord is already theorycrafting the fix.",
+  "Your build just got patched. We are already theorycrafting the fix.",
   "The meta giveth and the meta taketh away. We document both.",
-  "RIP to whatever got nerfed. Pour one out in our Discord.",
+  "RIP to whatever got nerfed. Pour one out with us.",
   "Every patch breaks something new. We find it first.",
   "Patch notes: the scariest content drop in any live service game.",
   "Another patch, another reason to check if your build still works.",
 ];
 
 const tierListHeadings = [
-  "Disagree with our tier list? Argue about it in Discord.",
+  "Disagree with our tier list? Tell us why. Politely.",
   "Your favorite weapon is B-tier. Cope with us.",
   "S-tier builds. S-tier community. D-tier reflexes.",
   "The meta shifts. Our tier list shifts. Your copium shouldn't.",
@@ -96,7 +96,7 @@ const tierListHeadings = [
 ];
 
 const homeHeadings = [
-  "Join the Discord. Come argue with strangers about math in a mobile game.",
+  "Follow along. Come argue with strangers about math in a looter shooter.",
   "The Division Resurgence community that actually explains the game.",
   "Builds, guides, and shitposts. The holy trinity.",
   "Where endgame players go when matchmaking lets them down.",
@@ -107,9 +107,9 @@ const homeHeadings = [
 const fallbackHeadings = [
   "You're still here? Might as well follow us.",
   "The algorithm brought you here. Free will keeps you.",
-  "If you read this far, you legally have to join our Discord.",
+  "If you read this far, you legally have to follow us.",
   "Follow us or don't. But you'll be back.",
-  "Our content is free. Our Discord is free. Your excuses aren't.",
+  "Our content is free. Following us is free. Your excuses aren't.",
   "You miss 100% of the builds you don't see. Follow us.",
 ];
 
@@ -191,12 +191,6 @@ const heading = headings[index % headings.length];
   <p class="social-bar__heading">{heading}</p>
   <div class="social-bar__links">
 
-    <a href="https://discord.gg/t6GTR6tpd" target="_blank" rel="noopener noreferrer" class="social-btn social-btn--discord" aria-label="Discord — Join our server">
-      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
-        <path d="M13.545 2.907a13.2 13.2 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.2 12.2 0 0 0-3.658 0 8 8 0 0 0-.412-.833.05.05 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.04.04 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032q.003.022.021.037a13.3 13.3 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019q.463-.63.818-1.329a.05.05 0 0 0-.01-.053.1.1 0 0 0-.027-.016 8.8 8.8 0 0 1-1.249-.595.05.05 0 0 1-.004-.083q.124-.093.248-.19a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.05.05 0 0 1 .053.007q.121.1.248.19a.05.05 0 0 1-.004.083 8.3 8.3 0 0 1-1.249.594.05.05 0 0 0-.03.053.1.1 0 0 0 .004.016q.36.698.818 1.329a.05.05 0 0 0 .056.019 13.2 13.2 0 0 0 4-2.02.05.05 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.03.03 0 0 0-.02-.019m-8.198 7.307c-.789 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612m5.316 0c-.788 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612"/>
-      </svg>
-      <span>Discord</span>
-    </a>
 
     <a href="https://x.com/ResurgenceBuild" target="_blank" rel="noopener noreferrer" class="social-btn social-btn--x" aria-label="Follow on X — @ResurgenceBuild">
       <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
@@ -244,10 +238,10 @@ const heading = headings[index % headings.length];
   }
   .social-bar__links {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 10px;
     width: 100%;
-    max-width: 400px;
+    max-width: 480px;
   }
 
   /* Base button style */
@@ -282,14 +276,6 @@ const heading = headings[index % headings.length];
   }
 
   /* Brand colors */
-  .social-btn--discord {
-    background: #5865F2;
-    border-color: rgba(88,101,242,0.3);
-    box-shadow: 0 2px 8px rgba(88,101,242,0.25);
-  }
-  .social-btn--discord:hover {
-    box-shadow: 0 4px 16px rgba(88,101,242,0.4);
-  }
 
   .social-btn--x {
     background: #000;

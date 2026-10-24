@@ -14,6 +14,7 @@ export interface Props {
   specialization: string;
   playstyle: string;
   patch: string;
+  verified?: boolean;
   lastUpdated: Date;
   pve: boolean;
   pvp: boolean;
@@ -39,7 +40,7 @@ export interface Props {
   wordCount?: number;
 }
 
-const { title, description, specialization, playstyle, patch, lastUpdated, pve, pvp, tags, author, featuredImage, imageAlt, shareTitle, shareText, headings = [], faqs = [], sources = [], plannerHash, videoId, videoTitle, videoChannel, howTo, wordCount } = Astro.props;
+const { title, description, specialization, playstyle, patch, verified = true, lastUpdated, pve, pvp, tags, author, featuredImage, imageAlt, shareTitle, shareText, headings = [], faqs = [], sources = [], plannerHash, videoId, videoTitle, videoChannel, howTo, wordCount } = Astro.props;
 
 const siteUrl = 'https://resurgencebuilds.com';
 
@@ -68,7 +69,7 @@ const classSlug = specialization.toLowerCase().replace(/\s+/g, '-');
 
 const tocItems = headings.filter(h => h.depth <= 3);
 
-const formattedDate = lastUpdated.toLocaleDateString('en-US', {
+const formattedDate = lastUpdated.toLocaleDateString('en-US', { timeZone: 'UTC',
   month: 'long',
   day: 'numeric',
   year: 'numeric',
@@ -154,9 +155,15 @@ const redditShareUrl = `https://reddit.com/submit?url=${encodeURIComponent(Astro
         </div>
 
         <div style="display: flex; flex-wrap: wrap; align-items: center; gap: var(--sp-2); margin-bottom: var(--sp-4); font-size: var(--text-sm);">
-          <span style="display: inline-flex; align-items: center; gap: 4px; padding: 4px 10px; background: rgba(34,197,94,0.12); border: 1px solid rgba(34,197,94,0.3); border-radius: 4px; color: #22c55e; font-family: var(--font-mono); font-size: var(--text-xs); font-weight: 600; letter-spacing: 0.03em;">
-            ✓ Verified for {patchLabel}
-          </span>
+          {verified ? (
+            <span style="display: inline-flex; align-items: center; gap: 4px; padding: 4px 10px; background: rgba(34,197,94,0.12); border: 1px solid rgba(34,197,94,0.3); border-radius: 4px; color: #22c55e; font-family: var(--font-mono); font-size: var(--text-xs); font-weight: 600; letter-spacing: 0.03em;">
+              ✓ Verified for {patchLabel}
+            </span>
+          ) : (
+            <span title="We documented this creator's build from their videos but haven't re-tested it ourselves" style="display: inline-flex; align-items: center; gap: 4px; padding: 4px 10px; background: rgba(252,211,77,0.08); border: 1px solid rgba(252,211,77,0.3); border-radius: 4px; color: #FCD34D; font-family: var(--font-mono); font-size: var(--text-xs); font-weight: 600; letter-spacing: 0.03em;">
+              Creator build · {patchLabel} · not re-tested by us
+            </span>
+          )}
           <span style="color: var(--ink-muted);">·</span>
           <span style="color: var(--ink-muted);">Part of our <a href={`/class/${classSlug}/`} style="color: var(--accent); text-decoration: none;">{specialization} build collection</a></span>
         </div>

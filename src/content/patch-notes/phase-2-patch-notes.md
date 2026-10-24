@@ -2,38 +2,42 @@
 title: "Phase 2 Patch Notes (Season 1, Phase 2)"
 version: "1.2.0"
 patchDate: "2026-05-12"
+updatedDate: 2026-10-24
 author: "RapidF5"
-summary: "The official Division Resurgence patch notes for Season 1 Phase 2. Featuring new events, the free Strawberry Milkshake exotic weapon, and Dark Zone rogue mechanic updates."
+summary: "The official Division Resurgence patch notes for Season 1 Phase 2. Featuring new events, the free Strawberry Milkshake exotic weapon, and Dark Zone vendor updates."
 featuredImage: "/images/patch-notes/division-resurgence-phase-2-patch-notes-hero.jpg"
-imageAlt: "A male Division agent slamming the ground in a snowy New York City street with cockroaches scattering from a manhole cover"
+imageAlt: "A Division agent pulling a goofy face with his tongue out while holding a rifle"
 shareTitle: "Save them from reading"
 shareText: "Tweet this summary so your friends don't have to read a 10-page novel."
 
 faqs:
   - question: "What's new in Division Resurgence Phase 2?"
-    answer: "Everything. New gear sets (Mechanical Expert, Boom Shakalaka, Long-Term Effect), new exotic weapons, the Aegis system rework, new missions, expanded Dark Zone, and quality-of-life updates. Phase 2 is effectively the game's second launch. If you bounced off Phase 1, this is where it gets good. If you stayed through Phase 1, congratulations on your patience. It was rewarded."
+    answer: "Per the official notes: a new 50-tier Classified Ops Pass with the free Strawberry Milkshake exotic LMG, the Hot Rod weapon skin and the Pyromaniac apparel set; three new cosmetic draw sets; four time-limited events (one Dark Zone event, three speedruns of story missions on Challenging); Warlord added to the Dark Zone vendor; Tactical Augmentation Modules dismantling into Encrypted Data; more Dark Zone Credits from dismantling skill mods; and up to 60 FPS on some high-end devices. No new gear sets, no Aegis rework, no new missions. If a site told you otherwise, that site was writing fan fiction. Possibly this one, before we fixed it."
   - question: "Is Phase 2 the biggest update Division Resurgence has had?"
-    answer: "By a significant margin, yes. Phase 1 was the foundation. Phase 2 is the actual house. New endgame systems, new gear to chase, new reasons to log in daily. It's the update that separates 'I played for a week' players from 'I've been playing for six months' players. If Ubisoft can maintain this cadence, Resurgence has a real shot at being the definitive mobile looter shooter. No pressure."
+    answer: "It was the first big one, but later phases went bigger. Phase 2 was one exotic, cosmetics, four events and some economy tweaks. Season 1 Phase 3 (June 24) brought larger balance work (an Applied Demolition buff, a Thermobaric Grenades nerf, specialization damage fixes, better Sealed Cache rates), and Season 2 Phase 1 (August 5) arrived with the Steam launch, a crossplay matchmaking selector and a weapon mod rework. Phase 2 was the warm-up act. We still remember where we were when the Milkshake dropped."
   - question: "Should I start playing Division Resurgence now or wait for Phase 3?"
-    answer: "Start now. Phase 2 has enough content to keep you busy for months, and starting now means you'll be geared and ready when Phase 3 drops in June. Waiting for Phase 3 means you'll be undergeared while everyone else is farming the new content. Don't be the person who shows up to the expansion launch in tutorial gear. That person dies first and gets zero loot."
+    answer: "No need to wait: Phase 3 arrived on June 24 and Season 2 launched on August 5. As of October 2026 the live phase is Season 2 Phase 2, extended until 'a much bigger update later this year'. Starting now is easier than ever, since Season 2 Phase 2 reduced enemy health in the tutorial and the first playthrough of Main Missions 1 to 3 and removed the daily XP cap. Don't be the person who shows up to the next big update in tutorial gear. That person dies first and gets zero loot."
 ---
 
 The Phase 2 update for Season 1 went live on May 12. This is the official patch note as published by Ubisoft, organized by category.
+
+> [!INFO] Update (October 2026)
+> A few things here have moved on. The Strawberry Milkshake got its Shredding and LVL2-talent fixes in [Season 1 Phase 3](/patch-notes/season-1-phase-3-a-new-fire/), and [Exotic Sealed Caches](/guides/exotic-sealed-caches/) (Season 2 Phase 2) added a new way to get previous-season exotics like it. Dark Zone vendor exotics have cost 15,000 DZ Credits since Season 2 Phase 2 (down from 17,500) and no longer come with pre-equipped exotic mods.
 
 ### What's New
 
 **New Classified Ops Pass**
 - 50 tiers of exclusive rewards
-- "Strawberry Milkshake" , free new Exotic Weapon (LMG)
-- "Hot Rod" , Superior Weapon Skin
-- "Pyromaniac" , Apparel Set
+- "Strawberry Milkshake": free new Exotic Weapon (LMG)
+- "Hot Rod": Superior Weapon Skin
+- "Pyromaniac": Apparel Set
 
 **New Cosmetic Draw Sets**
 - Eradication Exotic Weapon Skin + Battle-worn Metal Weapon Skin Set
 - Special Forces Apparel Set + Battle-Hardened Weapon Skin Set
 - Ken Ito Apparel Set + Rikers Unchained Weapon Skin Set
 
-**Time-Limited Events** , Four new events
+**Time-Limited Events**: four new events
 - 1 Dark Zone event
 - 3 speed-run challenges (revisiting main-story missions on Challenging difficulty)
 
@@ -47,15 +51,15 @@ The Phase 2 update for Season 1 went live on May 12. This is the official patch 
 - Added one additional Exotic Weapon Enhancement Kit to the Dark Zone Vendor
 - Added a weekly Random Tactical Augmentation Module Crate to the Dark Zone Vendor
 - Tactical Augmentation Modules for Weapon / Gear / Exotic Weapons now grant **Encrypted Data** on dismantle (previously Clan Credits)
-- **Skill Mod dismantle yields increased:** Blue 10 → 15 · Purple 50 → 75 · Yellow 450 → 750
+- **Dark Zone Credits from dismantling Skill Mods increased:** Blue 10 → 15 · Purple 50 → 75 · Yellow 450 → 750
 - Added one more copy of each regular Weapon and Gear Tactical Augmentation Module to the Clan Vendor
 
 ### Performance & Visual Improvements
-- High-end devices can now run with expanded graphics settings, with smoother performance up to 60 FPS (device-dependent)
+- Some high-end devices can now run with expanded graphics settings, with smoother performance up to 60 FPS (device-dependent)
 - General improvements to visual quality and device stability
 
 ### Bug Fixes & Stability
-- Fixed **Brain over Brawns** scaling the wrong stats in some situations
+- Fixed **Brains Over Brawn** (spelled "Brain over Brawns" in the notes) scaling the wrong stats in some situations
 - Fixed a crash when opening certain mod-related screens
 - Resolved multiple errors that could occur during gameplay
 - Improved overall stability across all platforms
@@ -69,10 +73,15 @@ The Phase 2 update for Season 1 went live on May 12. This is the official patch 
 
 ## Player Impact
 
-Phase 2 is the update that turned Division Resurgence from a promising mobile launch into a real endgame grind. The Strawberry Milkshake exotic is the headline, but the economy changes matter more long-term — Tactical Augmentation Modules giving Encrypted Data instead of Clan Credits fundamentally changes how you value dismantle decisions, and the Skill Mod dismantle yield increase makes every Blue/Purple/Yellow mod worth breaking down instead of ignoring.
+Phase 2 is the update that turned Division Resurgence from a promising mobile launch into a real endgame grind. The Strawberry Milkshake exotic is the headline, but the economy changes matter more long-term: Tactical Augmentation Modules giving Encrypted Data instead of Clan Credits fundamentally changes how you value dismantle decisions, and the bigger Dark Zone Credit payout for dismantled skill mods makes every Blue/Purple/Yellow mod worth breaking down instead of ignoring.
 
-The [Warlord](/database/exotic-weapons/) being added to the Dark Zone Vendor is the most requested change from Phase 1. Previously, the only path to this [exotic AR](/database/exotic-weapons/) was RNG from Dark Zone caches. Now you can buy it directly — but remember to switch to your [Vanguard specialization](/guides/which-specialization-to-pick/) before purchasing so the rolls land on Firepower stats.
+The [Warlord](/database/exotic-weapons/) being added to the Dark Zone Vendor was, from what we saw, the most requested change from Phase 1. Previously, from our understanding, the main path to this [exotic AR](/database/exotic-weapons/) was RNG from Dark Zone caches. Now you can buy it directly, but in our experience you should switch to your [Vanguard specialization](/guides/which-specialization-to-pick/) before purchasing so the rolls land on Firepower stats.
 
-The 60 FPS unlock on select devices changes how the game feels at endgame. If your [device supports it](/guides/division-resurgence-device-compatibility/), the cover-peek timing and hit registration improvements are immediately noticeable. Check our [cover-peek guide](/guides/center-ads-release-cover-peek-guide/) for the full settings breakdown.
+The 60 FPS unlock on select devices changes how the game feels at endgame. If your [device supports it](/guides/division-resurgence-device-compatibility/), in our experience cover-peek timing and hit registration feel noticeably better. Check our [cover-peek guide](/guides/center-ads-release-cover-peek-guide/) for the full settings breakdown.
 
-For the full list of what's still broken after this patch, see the [Patch 1.2.1 hotfix notes](/patch-notes/patch-1-2-1/) that followed nine days later.
+For the full list of what was still broken after this patch, see the [Patch 1.2.1 hotfix notes](/patch-notes/patch-1-2-1/) that followed on May 20.
+
+## Sources
+
+- [Patch Note, Season 1 Phase 2, Ubisoft Help Center](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2511-patch-note---season-1-phase-2/)
+- [Patch Note, Season 2 Phase 2, Ubisoft Help Center](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2566-patch-note---season-2-phase-2/) (Dark Zone vendor exotic price and Exotic Sealed Caches)

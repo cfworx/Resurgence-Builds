@@ -21,6 +21,7 @@ const wordCount = build.body ? build.body.replace(/<[^>]+>/g, ' ').trim().split(
   specialization={build.data.specialization}
   playstyle={build.data.playstyle}
   patch={build.data.patch}
+  verified={build.data.verified !== false}
   lastUpdated={build.data.lastUpdated}
   pve={build.data.pve}
   pvp={build.data.pvp}

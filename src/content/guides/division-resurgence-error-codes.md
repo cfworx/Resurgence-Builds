@@ -1,7 +1,8 @@
 ---
 title: "All Error Codes - Division Resurgence 2026"
 category: "General"
-lastUpdated: 2026-05-28T12:00:00Z
+publishDate: 2026-05-28
+lastUpdated: 2026-10-24T12:00:00Z
 tags: ["error-codes", "troubleshooting", "network-error", "error-271581191", "error-6000010", "connection-error", "bug-fix", "division-resurgence-errors"]
 description: "Every Division Resurgence error code and its fix. Error 271581191, 6000010, Network Failure, stuck at 99%, and more."
 author: "RapidF5"
@@ -34,26 +35,30 @@ faqs:
   - question: "What is the most common Division Resurgence error code?"
     answer: "Error 6000010 (Network connection error) is the most reported error. It hits at login, during matchmaking, and inside instances. The fix is almost always a network switch or VPN connection."
   - question: "How do I fix error 271581191 in Division Resurgence?"
-    answer: "Spam the retry button, switch between Wi-Fi and mobile data, or connect to a VPN in a region the game officially runs in (UK, France, Germany, Netherlands, or US). One of those three resolves it for the vast majority of players."
+    answer: "Spam the retry button, switch between Wi-Fi and mobile data, or connect to a VPN in the UK, France, Germany, the Netherlands, or the US (the regions the community fix thread recommends). One of those three resolves it for the vast majority of players. Reinstalling is not one of the three, no matter what your gut says."
   - question: "Why does Division Resurgence keep disconnecting me in missions?"
     answer: "Most likely error 6000010. Switch networks, toggle airplane mode, or use a VPN. If everyone in your region is reporting it, it's a Ubisoft server issue and you just wait it out."
   - question: "Is there an in-game error code lookup in Division Resurgence?"
-    answer: "No. Errors display a numeric code in the popup, but the game does not link out to documentation. The in-game Support button is the closest thing, and it routes you to a chat ticket system."
+    answer: "No. Errors display a numeric code in the popup, but the game does not link out to documentation. The in-game Support button is the closest thing, and it routes you to a chat ticket system. Ubisoft's official bug reporter website is the other place to check whether your problem is already a known issue. Or you can keep this page open, which is what it's for."
   - question: "Will Ubisoft refund items lost to bugs?"
-    answer: "Sometimes. The Patch 1.2.1 compensation included 500,000 Basic Credits and 750 Phoenix Credits to every account as a blanket apology for the Phase 2 inventory and vendor bugs. For individual item losses, file a support ticket with screenshots and a description."
+    answer: "Sometimes. Patch 1.2.1 (May 20) came with 500,000 Basic Credits and 750 Phoenix Credits for every account, alongside fixes for vendor, inventory, and Ops Pass purchase bugs. For individual item losses, file a support ticket with screenshots and a description. Screenshots are your receipts. No receipts, no refund, same as at the hardware store."
   - question: "Does using a VPN get my account banned?"
-    answer: "There are no confirmed bans for using a VPN solely to resolve connection errors. The game is officially available worldwide in the supported regions, so connecting through one of them isn't circumventing geo-restrictions."
+    answer: "We haven't seen any confirmed bans for using a VPN solely to resolve connection errors, but Ubisoft hasn't officially blessed it either, so treat it as a workaround and turn it off once you're connected. The game launched globally on March 31, 2026, so you're not sneaking past a geo-lock."
   - question: "How do I avoid losing my progress when reinstalling?"
-    answer: "Your character and progress live on your Ubisoft Connect account, not the local install. As long as you log back into the same Ubisoft account, everything comes back. The only thing you lose on a reinstall is the download time."
+    answer: "Your character and progress live on your Ubisoft Connect account, not the local install. As long as you log back into the same Ubisoft account, everything comes back. The one exception is an unlinked guest account: Ubisoft tells guests to link to Ubisoft Connect ('Link to Ubisoft Connect' in the options), so do that before you reinstall or switch devices. Otherwise the only thing you lose is the download time."
 ---
+
+> [!INFO] Update (October 2026)
+> Since this page was last updated, Patch 1.1.2.2 (May 29) fixed the "Network Failure" popup for roaming accounts and the missing Shotgun TAM reward from the Dark Zone "Ringleaders" mission, the game launched on Steam (August 5) alongside Ubisoft Connect, and Ubisoft opened an official [bug reporter](https://www.ubisoft.com/en-us/game/the-division/the-division-resurgence/bug-reporter/issues) that its Help Center points PC players to. The sections below are updated where those changes matter, including a new PC section.
 
 Quick answer:
 
 - **Error 271581191** ("Dynamic batch download failed") happens during install or major patch downloads. Fix: spam retry, switch network, or use a VPN.
 - **Error 6000010** ("Network connection error") happens at login or during instances. Fix: switch between Wi-Fi and mobile data, toggle airplane mode, or use a VPN.
-- **"Network Failure" popup** at launch is a known issue Ubisoft is tracking. Fix: full app close, switch network, relaunch.
+- **"Network Failure" popup** at launch: Patch 1.1.2.2 fixed it for roaming accounts, but Ubisoft says other issues can still cause it. Fix: full app close, switch network, relaunch.
 - **Stuck at 99%** on the program update bar is a verification hang. Fix: free up 5+ GB of storage and switch to mobile data for the final stretch.
 - **No sound on Android or iOS** has an official Ubisoft workaround. We have the steps below.
+- **Playing on PC (Steam or Ubisoft Connect)?** The phone tricks don't apply. See the [PC section](#playing-on-pc-steam-or-ubisoft-connect) below.
 
 The full list, with verified fixes, is below. This page updates whenever Ubisoft documents a new code or the community confirms a new fix.
 
@@ -67,11 +72,11 @@ The full list, with verified fixes, is below. This page updates whenever Ubisoft
 | **6000010** | Network connection error at login or during instances | Toggle Wi-Fi / mobile data, airplane mode reset, VPN |
 | **Network Failure popup** | Login failure on relaunch | Force close, switch network, relaunch |
 | **Stuck at 99%** | Patch verification hanging | Free up 5+ GB storage, switch to mobile data for final 1% |
-| **Connection error in instances** | Drops you when entering missions | Same as 6000010, also confirmed on first generation iPad Pro models |
+| **Connection error in instances** | Drops you when entering missions | Same as 6000010, also reported on the first-gen 11-inch iPad Pro |
 | **No audio (Android)** | Silent gameplay | Use the in-game Mic / Speaker toggle workaround |
 | **No audio (iOS)** | Silent gameplay | Disable the iPhone hardware mute switch |
 | **Hitbar / damage not registering** | Bullets visibly hit but no damage applies | Full app close and relogin |
-| **Cannot claim DZ Augmentation reward** | Reward stuck in claim screen | Do not claim, wait for fix |
+| **Cannot claim DZ Augmentation reward** | Reward stuck in claim screen | Ringleaders TAM reward fixed in 1.1.2.2; file a ticket if still stuck |
 | **Locked Golden OS icon** | OS appears locked but works fine | Visual only, no fix needed |
 | **iOS gamepad UI broken** | Controller binds and overlay disappear | Log into PC client once, return to iOS |
 
@@ -110,13 +115,13 @@ The most common error in Division Resurgence. Happens at login, during matchmaki
 
 1. **Switch between Wi-Fi and mobile data.** Same logic as 271581191. If you're on Wi-Fi, kill the app, switch to data, relaunch. Most fixes start here.
 2. **Airplane mode reset.** Toggle airplane mode on for 30 seconds, off, relaunch. Forces your device to grab a fresh IP and clear stale routing.
-3. **VPN.** Connect to a server in the US, France, Germany, Netherlands, or the UK. The game runs in these regions officially, so traffic routed through them is treated as native. After the game reaches the main menu, you can usually disconnect.
+3. **VPN.** Connect to a server in the US, France, Germany, Netherlands, or the UK. Those are the regions the community fix threads recommend. After the game reaches the main menu, you can usually disconnect.
 4. **Fully close the game first.** Not just background it. Swipe it out of recent apps. Then relaunch. The connection state gets cached and a soft restart often won't clear it.
 5. **Check your free storage.** This error can also trigger when the game can't write session data. Make sure you have at least **5 GB of free space** on your device.
 
 ### When It Isn't Your Network
 
-If 6000010 hits everyone at the same time and the official [@TheDivMobile](https://x.com/TheDivMobile) X account has posted maintenance windows, it's a server issue. Ubisoft has run scheduled maintenance windows on **April 15, May 12, and May 26, 2026** so far, and Phase 3 in June will almost certainly bring another. Check the social channels before you reset your router for the fourth time.
+If 6000010 hits everyone at the same time and the official [@TheDivMobile](https://x.com/TheDivMobile) X account has posted maintenance windows, it's a server issue. Ubisoft ran scheduled maintenance windows on **April 15, May 12, and May 26, 2026**, and the big update days since (Season 1 Phase 3 in late June, Season 2 Phase 1 and the Steam launch on August 5, Season 2 Phase 2 on September 16) are the usual suspects for downtime. Check the social channels before you reset your router for the fourth time.
 
 ---
 
@@ -131,20 +136,20 @@ This is the one the [Ultimate Bug List on r/thedivisionresurgence](https://www.r
 3. Switch between Wi-Fi and data if step 2 didn't work.
 4. Relaunch.
 
-If it persists after three retries, restart the device entirely. Ubisoft has not confirmed a permanent fix yet.
+If it persists after three retries, restart the device entirely. Patch 1.1.2.2 (May 29) fixed the version of this popup that hit roaming accounts, but Ubisoft's note says other issues can still cause it, so if it keeps happening after the steps above, contact support.
 
 ---
 
 ## Stuck at 99% on the Program Update
 
-Most reported during launch week and again right after Phase 2 dropped on May 11. The bar inches up, hits 99%, and refuses to finish.
+Most reported during launch week and again right after Phase 2 dropped in mid-May. The bar inches up, hits 99%, and refuses to finish.
 
 ### Verified Fixes
 
 1. **Free up at least 5 GB of storage.** The game needs buffer space to write final verification files. Ubisoft's own help page recommends **17 GB total available space** even though the game is around 10.5 GB.
 2. **Switch to mobile data for the final 1%.** Wi-Fi networks sometimes drop the small verification packets the game needs to confirm the install. Mobile data tends to push them through.
 3. **Restart the device** if step 2 fails. Reboot, relaunch the App Store or Play Store, and let the update resume.
-4. **Reinstall as a last resort.** Painful, but it works when nothing else does. You will not lose your account because progress is tied to Ubisoft Connect, not the local install. Just log back in.
+4. **Reinstall as a last resort.** Painful, but it works when nothing else does. You will not lose your account because progress is tied to Ubisoft Connect, not the local install. Just log back in. (Still on an unlinked guest account? Link it to Ubisoft Connect from the options menu first.)
 
 ---
 
@@ -155,7 +160,7 @@ Reported on [April 6, 2026](https://www.reddit.com/r/thedivisionresurgence/comme
 ### Verified Fixes
 
 1. The standard 6000010 stack: switch network, airplane mode, VPN.
-2. If you're on an older iOS device (first generation iPad Pro, iPhone 11 and earlier), this can also be a memory issue. Close background apps before launching.
+2. If you're on an older supported iOS device (the first-gen 11-inch iPad Pro, iPhone 11 and earlier), this can also be a memory issue. Close background apps before launching.
 3. Multiple players reported the issue cleared on its own within 12 to 24 hours when it was a server-side congestion problem during peak hours.
 
 If you're getting kicked specifically out of the Dark Zone after looting, that's a different known issue tracked separately. Do not extract until you're confident your connection is stable, or that god roll goes into the void.
@@ -164,7 +169,7 @@ If you're getting kicked specifically out of the Dark Zone after looting, that's
 
 ## No Audio on Android
 
-Ubisoft has [confirmed this in their Help Center](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2492-why-is-there-no-sound-audio-on-my-android-device/). It's actively under investigation.
+Ubisoft has [confirmed this in their Help Center](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2492-why-is-there-no-sound-audio-on-my-android-device/). It was listed as under investigation when we wrote this section.
 
 ### Official Workaround
 
@@ -180,7 +185,7 @@ Once you've reached multiplayer:
 
 If audio still doesn't return, **minimize the app and reopen it**. This has restored sound for several players per Ubisoft's note.
 
-[Patch 1.1.2 on April 28](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2508-patch-note---1-1-2-update-28-apr-2026/) addressed audio issues for most devices. If you're still affected after that patch, report it through the in-game support button so Ubisoft can log your device details.
+[Hotfix 1.1.1 on April 13](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2494-patch-note---1-1-1-hotfix-13-apr-2026/) fixed a sound issue on many devices (often VIVO phones), and Season 1 Phase 3 added a proper audio settings menu with toggles and sliders, so check that menu before anything else. If you're still affected, report it through the in-game support button so Ubisoft can log your device details.
 
 ---
 
@@ -208,11 +213,11 @@ You'll be on a fresh session and damage will register correctly. It's the closes
 
 ## Cannot Claim Dark Zone Augmentation Reward
 
-Confirmed in the [Patch 1.2.1 notes](/patch-notes/patch-1-2-1/) as a known issue still not fixed. The DZ quest reward for the Tactical Augmentation Module cannot be claimed.
+Confirmed in the [Patch 1.2.1 notes](/patch-notes/patch-1-2-1/) (May 20) as a known issue: the DZ quest reward for the Tactical Augmentation Module could not be claimed.
 
 ### What to Do
 
-**Do not press claim.** Leave the reward sitting in the quest screen until Ubisoft ships the fix. Claiming the bugged version has resulted in lost rewards for some players, and recovery requires a support ticket. Wait for Phase 3 or the next hotfix.
+The next hotfix looks like the fix. [Patch 1.1.2.2](/patch-notes/patch-1-1-2-2/) (May 29) fixed players not receiving the Shotgun Tactical Augmentation reward for the Dark Zone "Ringleaders" mission, and Ubisoft said the reward would be sent in-game. The same note says Ubisoft was aware of more DZ mission issues. If a DZ reward is still stuck for you, file a support ticket with screenshots instead of waiting it out. (Back when this was unfixed, some players who pressed claim on the bugged version lost the reward, which is why we used to say leave it alone.)
 
 ---
 
@@ -224,7 +229,7 @@ You equip a Golden OS Protocol and the icon shows as locked in the Character Men
 
 ## iOS Gamepad / Controller UI Broken
 
-Patch 1.2.1 explicitly listed this as still under investigation. Players using controllers on iOS lose the dedicated controller UI and the input wheel after the update.
+Patch 1.2.1 explicitly listed this as still under investigation. Players using controllers on iOS lose the dedicated controller UI and the input wheel after the update. Later patches improved controller navigation (Season 2 Phase 2 lists controller navigation and Steam Deck configuration work), but we haven't seen a patch note that explicitly closes the iOS issue. Check the official [bug reporter](https://www.ubisoft.com/en-us/game/the-division/the-division-resurgence/bug-reporter/issues) for its current status.
 
 ### Community Workaround
 
@@ -236,19 +241,22 @@ You can also blur unused on-screen controls and rearrange icons in the in-game s
 
 ## When the Error Isn't Your Fault: Server Maintenance
 
-Some "errors" are just Ubisoft taking the servers down on purpose. Confirmed maintenance windows so far in 2026:
+Some "errors" are just Ubisoft taking the servers down on purpose. Confirmed maintenance windows and big update days so far in 2026:
 
 - **April 15, 2026** at 9 AM CET, all servers, 30 minutes
 - **May 12, 2026** at launch of Phase 2
 - **May 26, 2026** at 1 PM CET, Asian servers only (server relocation to reduce latency)
+- **June 23-24, 2026** Season 1 Phase 3 update, plus a **June 26** [server hotfix](/news/server-hotfix-june-26-2026/)
+- **August 5, 2026** Season 2 Phase 1 and the Steam launch
+- **September 16, 2026** Season 2 Phase 2
 
-Before you reset your router, check the official [@TheDivMobile](https://x.com/TheDivMobile) X account and the [Resurgence Discord](https://www.ubisoft.com/en-us/game/the-division/resurgence). If a maintenance is in progress, no fix on your end will change anything. Make a sandwich and check back in an hour.
+Before you reset your router, check the official [@TheDivMobile](https://x.com/TheDivMobile) X account, the [Resurgence Discord](https://www.ubisoft.com/en-us/game/the-division/resurgence), and Ubisoft's [bug reporter](https://www.ubisoft.com/en-us/game/the-division/the-division-resurgence/bug-reporter/issues). If a maintenance is in progress, no fix on your end will change anything. Make a sandwich and check back in an hour.
 
 ---
 
 ## General Troubleshooting Stack (When You Don't Know the Code)
 
-If you're getting an error message that doesn't show a number, work through these in order. Eight out of ten connectivity issues clear on one of the first three steps.
+If you're getting an error message that doesn't show a number, work through these in order. In our experience, most connectivity issues clear on one of the first three steps.
 
 1. **Fully close the game.** Swipe it out of recent apps, not just background it.
 2. **Toggle airplane mode** for 30 seconds.
@@ -261,9 +269,23 @@ If you're getting an error message that doesn't show a number, work through thes
 
 ---
 
+## Playing on PC (Steam or Ubisoft Connect)
+
+The phone tricks above (mobile data, airplane mode) don't translate to a desktop. Here's what Ubisoft's [Help Center PC article](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2509-play-on-pc-steam-or-ubisoft-connect-all-you-need-to-know/) says, plus one PC bug worth knowing about:
+
+- **Steam installs a sidekick.** Install the game normally and you'll be prompted to add a light version of the Ubisoft Connect launcher. That's expected.
+- **Storage:** the PC version is around 17 GB, and Ubisoft recommends keeping at least 30 GB free.
+- **Missing progress?** You need the same Ubisoft Connect account you used on mobile. If you started on mobile, log into Ubisoft Connect there first, then sign into that same account on PC.
+- **PC bugs:** check the official [bug reporter](https://www.ubisoft.com/en-us/game/the-division/the-division-resurgence/bug-reporter/issues) first. Upvote an existing issue, add details, screenshots, or video, or report a new one. If that doesn't cover it, contact Player Support through the in-game support icon.
+- **Stuck at 30 FPS?** Season 1 Phase 3 fixed a 30 FPS cap in windowed mode, and a "Framerate locked to 30fps after recent BP patch fix" issue on the bug reporter was marked Done on September 22. If you're still capped, update the game and check the bug reporter.
+
+Full setup walkthrough: our [Steam PC guide](/guides/division-resurgence-steam-pc-guide/).
+
+---
+
 ## How to File a Bug or Error Report That Ubisoft Will Actually Read
 
-The in-game **Support** button is the only reliable route. Don't post on Reddit and hope. Ubisoft's [bug report guidelines](https://www.reddit.com/r/thedivisionresurgence/comments/1s86hpn/the_division_resurgence_bug_report_feedback/) ask for:
+There are two official routes now. The in-game **Support** button gets you Player Support (tickets), and Ubisoft's official [Resurgence bug reporter](https://www.ubisoft.com/en-us/game/the-division/the-division-resurgence/bug-reporter/issues) lets you upvote known issues, add details, screenshots, or video, and report new ones. Ubisoft's Help Center points PC players to the bug reporter first. (Ubisoft's June [Trello known-issues board](/news/division-resurgence-known-issues-trello-board-breakdown/) came first; the Help Center now points to the bug reporter instead.) Don't post on Reddit and hope. Ubisoft's [bug report guidelines](https://www.reddit.com/r/thedivisionresurgence/comments/1s86hpn/the_division_resurgence_bug_report_feedback/) ask for:
 
 - **Type of bug**
 - **Description**
@@ -279,12 +301,19 @@ Tickets with a screenshot and reproduction steps get triaged faster than tickets
 ---
 
 **Related Reading:**
+- [Division Resurgence on Steam: PC Guide](/guides/division-resurgence-steam-pc-guide/)
+- [Patch 1.1.2.2 Notes](/patch-notes/patch-1-1-2-2/)
 - [Patch 1.2.1 Notes](/patch-notes/patch-1-2-1/)
+- [Season 2 Phase 2 Patch Notes](/patch-notes/season-2-phase-2/)
 - [Division Resurgence Codes](/guides/division-resurgence-codes/)
 - [Season 1-3 Roadmap](/news/season-1-2-3-roadmap/)
 
 **Sources:**
 - [Ubisoft Mobile Help Center for Division Resurgence](https://ubisoft-mobile.helpshift.com/hc/app/41-the-division-resurgence/)
+- [Ubisoft Help Center: Play on PC (Steam or Ubisoft Connect)](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2509-play-on-pc-steam-or-ubisoft-connect-all-you-need-to-know/)
+- [Ubisoft: The Division Resurgence bug reporter](https://www.ubisoft.com/en-us/game/the-division/the-division-resurgence/bug-reporter/issues)
+- [Ubisoft Hotfix 1.1.1 (April 13, 2026)](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2494-patch-note---1-1-1-hotfix-13-apr-2026/)
+- [Ubisoft Patch Note 1.1.2.2 (May 29, 2026)](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2517-patch-note---1-1-2-2-update-29-may-2026/)
 - [Ubisoft Patch Note 1.1.2 (April 28, 2026)](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2508-patch-note---1-1-2-update-28-apr-2026/)
 - [Ubisoft No Audio Android workaround](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2492-why-is-there-no-sound-audio-on-my-android-device/)
 - [r/thedivisionresurgence Ultimate Bug List (May 19, 2026)](https://www.reddit.com/r/thedivisionresurgence/comments/1thnk8e/ultimate_bug_list_at_the_moment/)

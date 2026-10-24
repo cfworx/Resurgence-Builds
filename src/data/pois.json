@@ -1,90 +1,3341 @@
 {
-  "version": 1,
-  "image": { "width": 2190, "height": 1920 },
-  "districts": [
-    { "id": "hells_kitchen", "name": "Hell's Kitchen", "level": "1-5", "bbox": [340, 340, 720, 620] },
-    { "id": "clinton", "name": "Clinton", "level": "3-7", "bbox": [450, 100, 830, 340] },
-    { "id": "times_square", "name": "Times Square", "level": "5-10", "bbox": [720, 250, 1050, 520] },
-    { "id": "hudson_yards", "name": "Hudson Yards", "level": "5-10", "bbox": [180, 520, 600, 850] },
-    { "id": "garment_district", "name": "Garment District", "level": "8-12", "bbox": [650, 520, 1050, 830] },
-    { "id": "pennsylvania_plaza", "name": "Pennsylvania Plaza", "level": "10-14", "bbox": [500, 830, 950, 1150] },
-    { "id": "tenderloin", "name": "Tenderloin", "level": "12-16", "bbox": [850, 1100, 1250, 1450] },
-    { "id": "chelsea", "name": "Chelsea", "level": "12-16", "bbox": [350, 1150, 850, 1550] },
-    { "id": "dark_zone", "name": "Dark Zone", "level": "DZ", "bbox": [1050, 100, 1850, 1000], "contaminated": true }
+ "version": 2,
+ "generated": "2026-10-24",
+ "image": {
+  "width": 2190,
+  "height": 1920
+ },
+ "attribution": {
+  "text": "Marker locations adapted from The Division Wiki community maps (Fandom), CC BY-SA 3.0. Encrypted crate codes from our Safe Codes guide.",
+  "sources": [
+   "https://thedivision.fandom.com/wiki/Map:Tom_Clancy%27s_The_Division_Resurgence/New_York_City",
+   "https://thedivision.fandom.com/wiki/Map:Tom_Clancy%27s_The_Division_Resurgence/N.Y.C._Dark_Zone"
   ],
-  "categories": [
-    { "id": "safe_house", "label": "Safe Houses", "icon": "/icons/map/safehouse.svg", "color": "#F26822", "group": "World", "defaultOn": true }
-  ],
-  "pois": [
+  "license": "https://creativecommons.org/licenses/by-sa/3.0/"
+ },
+ "categories": [
+  {
+   "id": "safe_house",
+   "label": "Safe Houses",
+   "group": "Hubs",
+   "color": "#F26822",
+   "icon": "house",
+   "defaultOn": true,
+   "count": 11
+  },
+  {
+   "id": "base",
+   "label": "Base of Operations",
+   "group": "Hubs",
+   "color": "#FFB020",
+   "icon": "base",
+   "defaultOn": true,
+   "count": 1
+  },
+  {
+   "id": "settlement",
+   "label": "Settlements",
+   "group": "Hubs",
+   "color": "#34D399",
+   "icon": "tent",
+   "defaultOn": true,
+   "count": 1
+  },
+  {
+   "id": "clan_fob",
+   "label": "Clan FOB",
+   "group": "Hubs",
+   "color": "#A78BFA",
+   "icon": "flag",
+   "defaultOn": true,
+   "count": 1
+  },
+  {
+   "id": "services",
+   "label": "Vendors & Stations",
+   "group": "Hubs",
+   "color": "#60A5FA",
+   "icon": "wrench",
+   "defaultOn": false,
+   "count": 2
+  },
+  {
+   "id": "landmark",
+   "label": "Landmarks",
+   "group": "Hubs",
+   "color": "#E5E7EB",
+   "icon": "landmark",
+   "defaultOn": false,
+   "count": 4
+  },
+  {
+   "id": "main_mission",
+   "label": "Main Missions",
+   "group": "Missions & Activities",
+   "color": "#F87171",
+   "icon": "star",
+   "defaultOn": true,
+   "count": 7
+  },
+  {
+   "id": "side_mission",
+   "label": "Side Missions",
+   "group": "Missions & Activities",
+   "color": "#FBBF24",
+   "icon": "side",
+   "defaultOn": false,
+   "count": 19
+  },
+  {
+   "id": "instance",
+   "label": "Mission Instances",
+   "group": "Missions & Activities",
+   "color": "#F472B6",
+   "icon": "portal",
+   "defaultOn": true,
+   "count": 5
+  },
+  {
+   "id": "world_event",
+   "label": "World Events",
+   "group": "Missions & Activities",
+   "color": "#FB923C",
+   "icon": "alert",
+   "defaultOn": false,
+   "wip": true,
+   "count": 32
+  },
+  {
+   "id": "nest",
+   "label": "Hostile Nests",
+   "group": "Missions & Activities",
+   "color": "#EF4444",
+   "icon": "nest",
+   "defaultOn": false,
+   "wip": true,
+   "count": 7
+  },
+  {
+   "id": "nest_investigation",
+   "label": "Nest Investigations",
+   "group": "Missions & Activities",
+   "color": "#FCA5A5",
+   "icon": "search",
+   "defaultOn": false,
+   "wip": true,
+   "count": 8
+  },
+  {
+   "id": "missing_signal",
+   "label": "Missing Signals",
+   "group": "Missions & Activities",
+   "color": "#22D3EE",
+   "icon": "radar",
+   "defaultOn": false,
+   "wip": true,
+   "count": 12
+  },
+  {
+   "id": "encrypted_crate",
+   "label": "Encrypted Crates",
+   "group": "Collectibles",
+   "color": "#F59E0B",
+   "icon": "lock",
+   "defaultOn": true,
+   "trackable": true,
+   "count": 21
+  },
+  {
+   "id": "shd_crate",
+   "label": "SHD Crates",
+   "group": "Collectibles",
+   "color": "#10B981",
+   "icon": "crate",
+   "defaultOn": false,
+   "trackable": true,
+   "count": 13
+  },
+  {
+   "id": "echo",
+   "label": "ECHOs",
+   "group": "Collectibles",
+   "color": "#38BDF8",
+   "icon": "echo",
+   "defaultOn": false,
+   "trackable": true,
+   "count": 21
+  },
+  {
+   "id": "artifact",
+   "label": "Artifacts",
+   "group": "Collectibles",
+   "color": "#FDE047",
+   "icon": "gem",
+   "defaultOn": false,
+   "trackable": true,
+   "count": 53
+  },
+  {
+   "id": "audio_log",
+   "label": "Audio Logs",
+   "group": "Collectibles",
+   "color": "#C084FC",
+   "icon": "audio",
+   "defaultOn": false,
+   "trackable": true,
+   "count": 51
+  },
+  {
+   "id": "ammo",
+   "label": "Ammo Crates",
+   "group": "Collectibles",
+   "color": "#94A3B8",
+   "icon": "ammo",
+   "defaultOn": false,
+   "count": 28
+  },
+  {
+   "id": "dz_extraction",
+   "label": "Extraction Zones",
+   "group": "Dark Zone",
+   "color": "#2DD4BF",
+   "icon": "extract",
+   "defaultOn": true,
+   "approx": true,
+   "count": 8
+  },
+  {
+   "id": "dz_landmark",
+   "label": "DZ Landmarks",
+   "group": "Dark Zone",
+   "color": "#FACC15",
+   "icon": "landmark",
+   "defaultOn": true,
+   "approx": true,
+   "count": 12
+  },
+  {
+   "id": "dz_gate",
+   "label": "DZ Gates",
+   "group": "Dark Zone",
+   "color": "#E879F9",
+   "icon": "gate",
+   "defaultOn": false,
+   "approx": true,
+   "count": 13
+  },
+  {
+   "id": "dz_leader",
+   "label": "DZ Enemy Leaders",
+   "group": "Dark Zone",
+   "color": "#DC2626",
+   "icon": "skull",
+   "defaultOn": false,
+   "approx": true,
+   "count": 5
+  },
+  {
+   "id": "dz_contaminated",
+   "label": "Extremely Contaminated",
+   "group": "Dark Zone",
+   "color": "#84CC16",
+   "icon": "bio",
+   "defaultOn": false,
+   "approx": true,
+   "count": 23
+  }
+ ],
+ "offMap": [
+  {
+   "type": "Mission instance",
+   "name": "Chinatown Rescue",
+   "note": "Instanced mission outside the open-world map. Launch it from its bubble on the edge of the in-game map."
+  },
+  {
+   "type": "Mission instance",
+   "name": "Wall Street Woes",
+   "note": "Instanced mission outside the open-world map. Launch it from its bubble on the edge of the in-game map."
+  },
+  {
+   "type": "Mission instance",
+   "name": "Liberty and Justice for All",
+   "note": "Instanced mission outside the open-world map. Launch it from its bubble on the edge of the in-game map."
+  },
+  {
+   "type": "Main mission",
+   "name": "Hard Target",
+   "note": "Unlocks at level 33."
+  }
+ ],
+ "pois": [
+  {
+   "id": "safe_house-the-cavern",
+   "category": "safe_house",
+   "name": "The Cavern",
+   "x": 1263,
+   "y": 962,
+   "amenities": [
+    "Ammo Crate",
+    "Stash"
+   ]
+  },
+  {
+   "id": "safe_house-the-meat-locker",
+   "category": "safe_house",
+   "name": "The Meat Locker",
+   "x": 1336,
+   "y": 1445,
+   "amenities": [
+    "Ammo Crate",
+    "Stash"
+   ]
+  },
+  {
+   "id": "safe_house-camp-hudson",
+   "category": "safe_house",
+   "name": "Camp Hudson",
+   "x": 254,
+   "y": 1613,
+   "amenities": [
+    "Ammo Crate",
+    "Stash"
+   ]
+  },
+  {
+   "id": "safe_house-kerman-station",
+   "category": "safe_house",
+   "name": "Kerman Station",
+   "x": 445,
+   "y": 1013,
+   "amenities": [
+    "Ammo Crate",
+    "Stash"
+   ]
+  },
+  {
+   "id": "safe_house-dante-s-run",
+   "category": "safe_house",
+   "name": "Dante's Run",
+   "x": 680,
+   "y": 660,
+   "amenities": [
+    "Ammo Crate",
+    "Stash"
+   ]
+  },
+  {
+   "id": "safe_house-lazarus-rest",
+   "category": "safe_house",
+   "name": "Lazarus Rest",
+   "x": 963,
+   "y": 462,
+   "amenities": [
+    "Ammo Crate",
+    "Stash"
+   ]
+  },
+  {
+   "id": "safe_house-autumn-s-hope",
+   "category": "safe_house",
+   "name": "Autumn's Hope",
+   "x": 1234,
+   "y": 413,
+   "amenities": [
+    "Ammo Crate",
+    "Stash"
+   ]
+  },
+  {
+   "id": "base-nyc-base-of-operations",
+   "category": "base",
+   "name": "NYC Base of Operations",
+   "x": 1030,
+   "y": 1171,
+   "amenities": [
+    "Dark Zone Vendor",
+    "Specialization Quartermaster",
+    "Ammo Crate",
+    "Stash",
+    "Equipment Improvement Station",
+    "Gear Crafting Station",
+    "Weapon Crafting Station",
+    "Vendor"
+   ]
+  },
+  {
+   "id": "landmark-south-entrance-of-times-square",
+   "category": "landmark",
+   "name": "South Entrance of Times Square",
+   "x": 1369,
+   "y": 628
+  },
+  {
+   "id": "landmark-hearst-tower",
+   "category": "landmark",
+   "name": "Hearst Tower",
+   "x": 1186,
+   "y": 256
+  },
+  {
+   "id": "landmark-disaster-recovery-center",
+   "category": "landmark",
+   "name": "Disaster Recovery Center",
+   "x": 903,
+   "y": 1719
+  },
+  {
+   "id": "landmark-hudson-river-pier",
+   "category": "landmark",
+   "name": "Hudson River Pier",
+   "x": 219,
+   "y": 1326
+  },
+  {
+   "id": "settlement-spring-blossom-settlement",
+   "category": "settlement",
+   "name": "Spring Blossom Settlement",
+   "x": 878,
+   "y": 954,
+   "amenities": [
+    "Gear Crafting Station",
+    "Weapon Crafting Station",
+    "Equipment Improvement Station",
+    "Stash",
+    "Ammo Crate"
+   ]
+  },
+  {
+   "id": "instance-take-the-castle",
+   "category": "instance",
+   "name": "Take The Castle",
+   "x": 715,
+   "y": 425,
+   "description": "Unlocks at level 19.",
+   "inside": [
     {
-      "id": "sh_autumns_hope",
-      "category": "safe_house",
-      "district": "times_square",
-      "name": "Autumn's Hope",
-      "x": 1248,
-      "y": 415,
-      "description": "Safe house in the Times Square area. Encrypted crate inside (Code: 1883).",
-      "amenities": ["Stash", "Resupply", "Vendor"]
+     "type": "ECHO",
+     "name": "Triage"
     },
     {
-      "id": "sh_lazarus_rest",
-      "category": "safe_house",
-      "district": "clinton",
-      "name": "Lazarus Rest",
-      "x": 972,
-      "y": 451,
-      "description": "Clinton district safe house near several encrypted crates.",
-      "amenities": ["Stash", "Resupply", "Vendor"]
+     "type": "Audio log",
+     "name": "Simple Pleasures"
     },
     {
-      "id": "sh_dantes_run",
-      "category": "safe_house",
-      "district": "hells_kitchen",
-      "name": "Dante's Run",
-      "x": 694,
-      "y": 603,
-      "description": "Hell's Kitchen district safe house. Encrypted crate inside clothing store (Code: 7716).",
-      "amenities": ["Stash", "Resupply", "Vendor"]
-    },
-    {
-      "id": "sh_kerman_station",
-      "category": "safe_house",
-      "district": "hudson_yards",
-      "name": "Kerman Station",
-      "x": 450,
-      "y": 1011,
-      "description": "Hudson Yards district safe house. Encrypted crate inside locker area (Code: 7069).",
-      "amenities": ["Stash", "Resupply", "Vendor"]
-    },
-    {
-      "id": "sh_the_cavern",
-      "category": "safe_house",
-      "district": "garment_district",
-      "name": "The Cavern",
-      "x": 1282,
-      "y": 939,
-      "description": "Garment District safe house. Encrypted crate inside (Code is randomized).",
-      "amenities": ["Stash", "Resupply", "Vendor"]
-    },
-    {
-      "id": "sh_the_meat_locker",
-      "category": "safe_house",
-      "district": "tenderloin",
-      "name": "The Meat Locker",
-      "x": 1354,
-      "y": 1435,
-      "description": "Tenderloin district safe house.",
-      "amenities": ["Stash", "Resupply", "Vendor"]
-    },
-    {
-      "id": "sh_camp_hudson",
-      "category": "safe_house",
-      "district": "chelsea",
-      "name": "Camp Hudson",
-      "x": 274,
-      "y": 1657,
-      "description": "Chelsea district safe house.",
-      "amenities": ["Stash", "Resupply", "Vendor"]
+     "type": "Audio log",
+     "name": "Bargaining Chips"
     }
-  ]
+   ]
+  },
+  {
+   "id": "instance-precious-cargo",
+   "category": "instance",
+   "name": "Precious Cargo",
+   "x": 382,
+   "y": 1816,
+   "description": "Unlocked at level 31.",
+   "inside": [
+    {
+     "type": "ECHO",
+     "name": "Kidnapped"
+    },
+    {
+     "type": "Audio log",
+     "name": "Incompetent"
+    },
+    {
+     "type": "Audio log",
+     "name": "Glad To Be Freemen"
+    },
+    {
+     "type": "Audio log",
+     "name": "Rust Bucket"
+    }
+   ]
+  },
+  {
+   "id": "instance-on-the-radio",
+   "category": "instance",
+   "name": "On The Radio",
+   "x": 671,
+   "y": 1386,
+   "description": "Unlocks at level 24.",
+   "inside": [
+    {
+     "type": "Audio log",
+     "name": "Know-how"
+    }
+   ]
+  },
+  {
+   "id": "instance-water-is-life",
+   "category": "instance",
+   "name": "Water is Life",
+   "x": 1302,
+   "y": 1705,
+   "inside": [
+    {
+     "type": "Audio log",
+     "name": "Priorities"
+    }
+   ]
+  },
+  {
+   "id": "instance-a-new-enemy",
+   "category": "instance",
+   "name": "A New Enemy",
+   "x": 902,
+   "y": 911
+  },
+  {
+   "id": "clan_fob-clan-fob",
+   "category": "clan_fob",
+   "name": "Clan FOB",
+   "x": 1526,
+   "y": 81,
+   "description": "Instanced clan hub. On the in-game map it appears as a bubble at the top edge."
+  },
+  {
+   "id": "main_mission-main-missions-at-spring-blossom-settlement",
+   "category": "main_mission",
+   "name": "Main missions at Spring Blossom Settlement",
+   "x": 893,
+   "y": 948,
+   "description": "9 missions start here. Unlock levels per the community map.",
+   "missions": [
+    {
+     "name": "Scavenger Type",
+     "level": 17
+    },
+    {
+     "name": "Party Time",
+     "level": 19
+    },
+    {
+     "name": "Celebrations",
+     "level": 19
+    },
+    {
+     "name": "Logistics",
+     "level": 21
+    },
+    {
+     "name": "Duty Calls",
+     "level": 23
+    },
+    {
+     "name": "A New Home",
+     "level": 24
+    },
+    {
+     "name": "Humble Pie",
+     "level": 28
+    },
+    {
+     "name": "Elite Mission Challenge Instance",
+     "level": 31
+    },
+    {
+     "name": "Assistant Healer",
+     "level": 32
+    }
+   ]
+  },
+  {
+   "id": "main_mission-riker-raiders",
+   "category": "main_mission",
+   "name": "Riker Raiders",
+   "x": 997,
+   "y": 680,
+   "description": "Unlocks at level 18 (per the community map).",
+   "level": 18
+  },
+  {
+   "id": "main_mission-take-the-castle",
+   "category": "main_mission",
+   "name": "Take The Castle",
+   "x": 1132,
+   "y": 472
+  },
+  {
+   "id": "main_mission-main-missions-at-nyc-base-of-operations",
+   "category": "main_mission",
+   "name": "Main missions at NYC Base of Operations",
+   "x": 1005,
+   "y": 1164,
+   "description": "2 missions start here. Unlock levels per the community map.",
+   "missions": [
+    {
+     "name": "Debrief",
+     "level": 19
+    },
+    {
+     "name": "Blood Work",
+     "level": 30
+    }
+   ]
+  },
+  {
+   "id": "main_mission-clear-out-the-convicts",
+   "category": "main_mission",
+   "name": "Clear Out the Convicts",
+   "x": 819,
+   "y": 426,
+   "description": "Unlocks at level 21 (per the community map).",
+   "level": 21
+  },
+  {
+   "id": "main_mission-main-missions-to-be-furnished-on-the-radio-nowhere-to-hide",
+   "category": "main_mission",
+   "name": "Main missions: To Be Furnished, On The Radio, Nowhere to Hide",
+   "x": 1363,
+   "y": 458,
+   "description": "3 missions start here. Unlock levels per the community map.",
+   "missions": [
+    {
+     "name": "To Be Furnished",
+     "level": 24
+    },
+    {
+     "name": "On The Radio",
+     "level": 24
+    },
+    {
+     "name": "Nowhere to Hide",
+     "level": 29
+    }
+   ]
+  },
+  {
+   "id": "side_mission-side-missions-at-kerman-station",
+   "category": "side_mission",
+   "name": "Side missions at Kerman Station",
+   "x": 450,
+   "y": 1008,
+   "description": "4 missions start here. Unlock levels per the community map.",
+   "missions": [
+    {
+     "name": "Signal Boost",
+     "level": 17
+    },
+    {
+     "name": "Scorched Earth",
+     "level": 21
+    },
+    {
+     "name": "Line Patency",
+     "level": 27
+    },
+    {
+     "name": "The Mob",
+     "level": 32
+    }
+   ]
+  },
+  {
+   "id": "side_mission-side-missions-at-dante-s-run",
+   "category": "side_mission",
+   "name": "Side missions at Dante's Run",
+   "x": 684,
+   "y": 655,
+   "description": "3 missions start here. Unlock levels per the community map.",
+   "missions": [
+    {
+     "name": "Electricity Supply",
+     "level": 18
+    },
+    {
+     "name": "No Coincidence",
+     "level": 18
+    },
+    {
+     "name": "Remnants",
+     "level": 21
+    }
+   ]
+  },
+  {
+   "id": "side_mission-throat-slitter",
+   "category": "side_mission",
+   "name": "Throat Slitter",
+   "x": 273,
+   "y": 765,
+   "description": "Unlocks at level 18 (per the community map).",
+   "level": 18
+  },
+  {
+   "id": "side_mission-crazy-stalker",
+   "category": "side_mission",
+   "name": "Crazy Stalker",
+   "x": 973,
+   "y": 1696,
+   "description": "Unlocks at level 20 (per the community map).",
+   "level": 20
+  },
+  {
+   "id": "side_mission-pour-oil-on-the-fire",
+   "category": "side_mission",
+   "name": "Pour Oil on the Fire",
+   "x": 715,
+   "y": 1795,
+   "description": "Unlocks at level 20 (per the community map).",
+   "level": 20
+  },
+  {
+   "id": "side_mission-aftermath",
+   "category": "side_mission",
+   "name": "Aftermath",
+   "x": 443,
+   "y": 979,
+   "description": "Unlocks at level 21 (per the community map).",
+   "level": 21
+  },
+  {
+   "id": "side_mission-outpost-annihilation",
+   "category": "side_mission",
+   "name": "Outpost Annihilation",
+   "x": 596,
+   "y": 577,
+   "description": "Unlocks at level 22 (per the community map).",
+   "level": 22
+  },
+  {
+   "id": "side_mission-kill-shot-competition",
+   "category": "side_mission",
+   "name": "Kill-ShoT Competition",
+   "x": 958,
+   "y": 501,
+   "description": "Unlocks at level 22 (per the community map).",
+   "level": 22
+  },
+  {
+   "id": "side_mission-side-missions-at-lazarus-rest",
+   "category": "side_mission",
+   "name": "Side missions at Lazarus Rest",
+   "x": 966,
+   "y": 458,
+   "description": "2 missions start here. Unlock levels per the community map.",
+   "missions": [
+    {
+     "name": "Little Sister",
+     "level": 23
+    },
+    {
+     "name": "New Shelter",
+     "level": 32
+    }
+   ]
+  },
+  {
+   "id": "side_mission-side-missions-near-lazarus-rest",
+   "category": "side_mission",
+   "name": "Side missions near Lazarus Rest",
+   "x": 895,
+   "y": 410,
+   "description": "2 missions start here. Unlock levels per the community map.",
+   "missions": [
+    {
+     "name": "Street Justice",
+     "level": 23
+    },
+    {
+     "name": "Eliminate Threats",
+     "level": 23
+    }
+   ]
+  },
+  {
+   "id": "side_mission-side-missions-at-nyc-base-of-operations",
+   "category": "side_mission",
+   "name": "Side missions at NYC Base of Operations",
+   "x": 1011,
+   "y": 1159,
+   "description": "4 missions start here. Unlock levels per the community map.",
+   "missions": [
+    {
+     "name": "Weapon Crafting",
+     "level": null
+    },
+    {
+     "name": "Home Away From Home",
+     "level": null
+    },
+    {
+     "name": "Lost Lambs",
+     "level": null
+    },
+    {
+     "name": "Road Blockers",
+     "level": 25
+    }
+   ]
+  },
+  {
+   "id": "side_mission-side-missions-at-spring-blossom-settlement",
+   "category": "side_mission",
+   "name": "Side missions at Spring Blossom Settlement",
+   "x": 881,
+   "y": 951,
+   "description": "2 missions start here. Unlock levels per the community map.",
+   "missions": [
+    {
+     "name": "Taken",
+     "level": 25
+    },
+    {
+     "name": "The Girls",
+     "level": 27
+    }
+   ]
+  },
+  {
+   "id": "side_mission-transport-dark-zone-equipment",
+   "category": "side_mission",
+   "name": "Transport Dark Zone Equipment",
+   "x": 1743,
+   "y": 516,
+   "description": "Unlocks at level 10 (per the community map).",
+   "level": 10
+  },
+  {
+   "id": "side_mission-side-missions-at-the-meat-locker",
+   "category": "side_mission",
+   "name": "Side missions at The Meat Locker",
+   "x": 1339,
+   "y": 1440,
+   "description": "2 missions start here. Unlock levels per the community map.",
+   "missions": [
+    {
+     "name": "Cell Tower Repair",
+     "level": null
+    },
+    {
+     "name": "Warzone Cleanup",
+     "level": null
+    }
+   ]
+  },
+  {
+   "id": "echo-street-justice-echo-13",
+   "category": "echo",
+   "name": "Street Justice (ECHO 13)",
+   "x": 1252,
+   "y": 299
+  },
+  {
+   "id": "artifact-black-jade-cat",
+   "category": "artifact",
+   "name": "Black Jade Cat",
+   "x": 1129,
+   "y": 296,
+   "description": "Collection: Mysteries"
+  },
+  {
+   "id": "audio_log-the-worst-of-the-worst",
+   "category": "audio_log",
+   "name": "The Worst of the Worst",
+   "x": 1203,
+   "y": 301,
+   "description": "Collection: JTF"
+  },
+  {
+   "id": "encrypted_crate-encrypted-crate-1",
+   "category": "encrypted_crate",
+   "name": "Encrypted Crate 1",
+   "x": 999,
+   "y": 358,
+   "description": "Location: Track the nearby artifact. Safe is IN the lobby on the right side of building with Green sign DINER. In front of christmas tree. Solution: Code Clue 05 \"Love at first sight\"",
+   "code": "0115",
+   "crateNumber": 1
+  },
+  {
+   "id": "shd_crate-shd-crate-1",
+   "category": "shd_crate",
+   "name": "SHD Crate 1",
+   "x": 964,
+   "y": 609
+  },
+  {
+   "id": "shd_crate-shd-crate-2",
+   "category": "shd_crate",
+   "name": "SHD Crate 2",
+   "x": 583,
+   "y": 625
+  },
+  {
+   "id": "shd_crate-shd-crate-3",
+   "category": "shd_crate",
+   "name": "SHD Crate 3",
+   "x": 1233,
+   "y": 741
+  },
+  {
+   "id": "shd_crate-shd-crate-5",
+   "category": "shd_crate",
+   "name": "SHD Crate 5",
+   "x": 1402,
+   "y": 1082
+  },
+  {
+   "id": "shd_crate-shd-crate-6",
+   "category": "shd_crate",
+   "name": "SHD Crate 6",
+   "x": 1082,
+   "y": 1124,
+   "description": "Location: Behind the CERA sign, accessible by climbing over the forklift and the containers."
+  },
+  {
+   "id": "shd_crate-shd-crate-9",
+   "category": "shd_crate",
+   "name": "SHD Crate 9",
+   "x": 995,
+   "y": 1268
+  },
+  {
+   "id": "shd_crate-shd-crate-7",
+   "category": "shd_crate",
+   "name": "SHD Crate 7",
+   "x": 689,
+   "y": 1263
+  },
+  {
+   "id": "shd_crate-shd-crate-8",
+   "category": "shd_crate",
+   "name": "SHD Crate 8",
+   "x": 783,
+   "y": 1262
+  },
+  {
+   "id": "shd_crate-shd-crate-10",
+   "category": "shd_crate",
+   "name": "SHD Crate 10",
+   "x": 481,
+   "y": 1329,
+   "description": "Location: In the construction yard, on top of a detached building."
+  },
+  {
+   "id": "shd_crate-shd-crate-11",
+   "category": "shd_crate",
+   "name": "SHD Crate 11",
+   "x": 1534,
+   "y": 1385,
+   "description": "Location: Top of storage containers in 'Outpost Restoration' area."
+  },
+  {
+   "id": "shd_crate-shd-crate-12",
+   "category": "shd_crate",
+   "name": "SHD Crate 12",
+   "x": 932,
+   "y": 1668,
+   "description": "Location: East end of the courtyard between the buildings."
+  },
+  {
+   "id": "shd_crate-shd-crate-13",
+   "category": "shd_crate",
+   "name": "SHD Crate 13",
+   "x": 804,
+   "y": 1746,
+   "description": "Location: On the roof, accessible via ladder in the alley."
+  },
+  {
+   "id": "shd_crate-shd-crate-4",
+   "category": "shd_crate",
+   "name": "SHD Crate 4",
+   "x": 346,
+   "y": 820
+  },
+  {
+   "id": "encrypted_crate-encrypted-crate-2",
+   "category": "encrypted_crate",
+   "name": "Encrypted Crate 2",
+   "x": 887,
+   "y": 407,
+   "description": "Location: Inside the school gym Solution: Note on the board",
+   "codeNote": "Code not listed: community sources disagree on this crate. Read the clue in-game.",
+   "crateNumber": 2
+  },
+  {
+   "id": "encrypted_crate-encrypted-crate-3",
+   "category": "encrypted_crate",
+   "name": "Encrypted Crate 3",
+   "x": 896,
+   "y": 407,
+   "description": "Location: On the school roof. Track the nearby artifact. · Solution: Code Clue 11 \"Secret message\"",
+   "code": "Randomized (read Code Clue 11)",
+   "crateNumber": 3
+  },
+  {
+   "id": "encrypted_crate-encrypted-crate-4",
+   "category": "encrypted_crate",
+   "name": "Encrypted Crate 4",
+   "x": 1234,
+   "y": 409,
+   "description": "Location: Inside Autumn's Hope safe house · Solution: On the bar neon sign",
+   "code": "1883",
+   "crateNumber": 4
+  },
+  {
+   "id": "encrypted_crate-encrypted-crate-5",
+   "category": "encrypted_crate",
+   "name": "Encrypted Crate 5",
+   "x": 958,
+   "y": 497,
+   "description": "Location: Inside the apartment building, which you can enter from the north or south side. Track the nearby artifact. · Solution: Code Clue 07 \"Memory helper\"",
+   "code": "0616",
+   "crateNumber": 5
+  },
+  {
+   "id": "encrypted_crate-encrypted-crate-6",
+   "category": "encrypted_crate",
+   "name": "Encrypted Crate 6",
+   "x": 652,
+   "y": 655,
+   "description": "Location: Left side of Dante's Run safe house, inside the store · Solution: Ad on a pillar",
+   "code": "7716",
+   "crateNumber": 6
+  },
+  {
+   "id": "encrypted_crate-encrypted-crate-7",
+   "category": "encrypted_crate",
+   "name": "Encrypted Crate 7",
+   "x": 1381,
+   "y": 635,
+   "description": "Location: Police Station in the corner · Solution: Written on the whiteboard",
+   "code": "1450",
+   "crateNumber": 7
+  },
+  {
+   "id": "encrypted_crate-encrypted-crate-8",
+   "category": "encrypted_crate",
+   "name": "Encrypted Crate 8",
+   "x": 838,
+   "y": 768,
+   "description": "Location: Under the bridge, a pathway to an underground garage · Solution: Spray painted on the wall above",
+   "code": "1845",
+   "crateNumber": 8
+  },
+  {
+   "id": "encrypted_crate-encrypted-crate-9",
+   "category": "encrypted_crate",
+   "name": "Encrypted Crate 9",
+   "x": 471,
+   "y": 880,
+   "description": "Location: Railroad below street level. Inside a green train car. Track the nearby artifact. · Solution: Code Clue 09 \"Order at disposal\"",
+   "code": "1124",
+   "crateNumber": 9
+  },
+  {
+   "id": "encrypted_crate-encrypted-crate-11",
+   "category": "encrypted_crate",
+   "name": "Encrypted Crate 11",
+   "x": 879,
+   "y": 945,
+   "description": "Location: At Spring Blossom Settlement, inside the room at the top · Solution: Written on the whiteboard",
+   "code": "3580",
+   "crateNumber": 11
+  },
+  {
+   "id": "encrypted_crate-encrypted-crate-10",
+   "category": "encrypted_crate",
+   "name": "Encrypted Crate 10",
+   "x": 1317,
+   "y": 883,
+   "description": "Location: Inside the apartment building, which you can enter from the east side. Track the nearby artifact. · Solution: Code Clue 02 \"Wedding invitation card\"",
+   "codeNote": "Code not listed: community sources disagree on this crate. Read the clue in-game.",
+   "crateNumber": 10
+  },
+  {
+   "id": "encrypted_crate-encrypted-crate-12",
+   "category": "encrypted_crate",
+   "name": "Encrypted Crate 12",
+   "x": 1264,
+   "y": 958,
+   "description": "Location: Inside The Cavern safe house · Solution: Code Clue 08 \"Missing daughter\"",
+   "code": "Randomized (read Code Clue 08)",
+   "crateNumber": 12
+  },
+  {
+   "id": "encrypted_crate-encrypted-crate-13",
+   "category": "encrypted_crate",
+   "name": "Encrypted Crate 13",
+   "x": 446,
+   "y": 1003,
+   "description": "Location: Inside Kerman Station safe house · Solution: Note on the notice board",
+   "code": "7069",
+   "crateNumber": 13
+  },
+  {
+   "id": "encrypted_crate-encrypted-crate-14",
+   "category": "encrypted_crate",
+   "name": "Encrypted Crate 14",
+   "x": 1036,
+   "y": 1085,
+   "description": "Location: Inside the coffee shop with sofas · Solution: Ad on a wall",
+   "codeNote": "Code not listed: community sources disagree on this crate. Read the clue in-game.",
+   "crateNumber": 14
+  },
+  {
+   "id": "encrypted_crate-encrypted-crate-15",
+   "category": "encrypted_crate",
+   "name": "Encrypted Crate 15",
+   "x": 1080,
+   "y": 1086,
+   "description": "Location: Inside the supermarket · Solution: Ad on a wall",
+   "code": "1987",
+   "crateNumber": 15
+  },
+  {
+   "id": "encrypted_crate-encrypted-crate-16",
+   "category": "encrypted_crate",
+   "name": "Encrypted Crate 16",
+   "x": 1001,
+   "y": 1170,
+   "description": "Location: Inside N.Y.C. Base of Operations near the bunk beds to the left · Solution: Note on the notice board",
+   "code": "1350",
+   "crateNumber": 16
+  },
+  {
+   "id": "encrypted_crate-encrypted-crate-17",
+   "category": "encrypted_crate",
+   "name": "Encrypted Crate 17",
+   "x": 1421,
+   "y": 1194,
+   "description": "Location: Right next to the Squab echo, next to the statue. Track the nearby echo. · Solution: On the cover of the book on the statue",
+   "code": "2010",
+   "crateNumber": 17
+  },
+  {
+   "id": "encrypted_crate-encrypted-crate-18",
+   "category": "encrypted_crate",
+   "name": "Encrypted Crate 18",
+   "x": 1480,
+   "y": 1194,
+   "description": "Location: Inside the lobby. Track the nearby artifact. · Solution: Code Clue 01 \"Insurance\", open locker on the left",
+   "code": "0078",
+   "crateNumber": 18
+  },
+  {
+   "id": "encrypted_crate-encrypted-crate-19",
+   "category": "encrypted_crate",
+   "name": "Encrypted Crate 19",
+   "x": 1201,
+   "y": 1247,
+   "description": "Location: Inside the tent · Solution: Code Clue 10 \"Birthday gift\"",
+   "code": "1105",
+   "crateNumber": 19
+  },
+  {
+   "id": "encrypted_crate-encrypted-crate-20",
+   "category": "encrypted_crate",
+   "name": "Encrypted Crate 20",
+   "x": 1157,
+   "y": 1335,
+   "description": "Location: Inside the store · Solution: Code Clue 04 \"Missing boss\"",
+   "code": "Randomized (read Code Clue 04)",
+   "crateNumber": 20
+  },
+  {
+   "id": "encrypted_crate-encrypted-crate-21",
+   "category": "encrypted_crate",
+   "name": "Encrypted Crate 21",
+   "x": 1861,
+   "y": 1609,
+   "description": "Location: Inside OAK LOCH restaurant near Handshake sign hanging over street. 3 right bottom blocks on map are sealed off. Entrance is the first street from bottom of map where Hostile nest spawns. Track the nearby artifact. · Solution: Code Clue 06 \"Closed restaurant\"",
+   "code": "0123",
+   "crateNumber": 21
+  },
+  {
+   "id": "echo-clearing-out-the-cleaners-echo-16",
+   "category": "echo",
+   "name": "Clearing out the Cleaners (ECHO 16)",
+   "x": 932,
+   "y": 340
+  },
+  {
+   "id": "echo-lambs-to-slaughter-echo-19",
+   "category": "echo",
+   "name": "Lambs to Slaughter (ECHO 19)",
+   "x": 770,
+   "y": 408
+  },
+  {
+   "id": "echo-hope-echo-07",
+   "category": "echo",
+   "name": "Hope (ECHO 07)",
+   "x": 787,
+   "y": 592
+  },
+  {
+   "id": "echo-happy-birthday-echo-06",
+   "category": "echo",
+   "name": "Happy Birthday (ECHO 06)",
+   "x": 1088,
+   "y": 605
+  },
+  {
+   "id": "echo-survival-of-the-fittest-echo-15",
+   "category": "echo",
+   "name": "Survival of the Fittest (ECHO 15)",
+   "x": 479,
+   "y": 716
+  },
+  {
+   "id": "echo-ambush-echo-21",
+   "category": "echo",
+   "name": "Ambush (ECHO 21)",
+   "x": 247,
+   "y": 888
+  },
+  {
+   "id": "echo-slave-trade-echo-10",
+   "category": "echo",
+   "name": "Slave Trade (ECHO 10)",
+   "x": 412,
+   "y": 1046
+  },
+  {
+   "id": "echo-false-leads-echo-01",
+   "category": "echo",
+   "name": "False Leads (ECHO 01)",
+   "x": 875,
+   "y": 1101,
+   "description": "Side Mission: Desperate Measures"
+  },
+  {
+   "id": "echo-building-spring-blossom-echo-03",
+   "category": "echo",
+   "name": "Building Spring Blossom (ECHO 03)",
+   "x": 1025,
+   "y": 1164,
+   "description": "Location: Outside the N.Y.C. Base of Operations"
+  },
+  {
+   "id": "echo-a-difference-of-opinion-echo-23",
+   "category": "echo",
+   "name": "A Difference of Opinion (ECHO 23)",
+   "x": 1452,
+   "y": 1039
+  },
+  {
+   "id": "echo-squab-echo-02",
+   "category": "echo",
+   "name": "Squab (ECHO 02)",
+   "x": 1424,
+   "y": 1189
+  },
+  {
+   "id": "echo-baby-echo-22",
+   "category": "echo",
+   "name": "Baby (ECHO 22)",
+   "x": 451,
+   "y": 1299
+  },
+  {
+   "id": "echo-no-escape-echo-12",
+   "category": "echo",
+   "name": "No Escape (ECHO 12)",
+   "x": 250,
+   "y": 1441
+  },
+  {
+   "id": "echo-deadly-confrontation-echo-18",
+   "category": "echo",
+   "name": "Deadly Confrontation (ECHO 18)",
+   "x": 548,
+   "y": 1676
+  },
+  {
+   "id": "echo-run-echo-20",
+   "category": "echo",
+   "name": "Run! (ECHO 20)",
+   "x": 828,
+   "y": 1550
+  },
+  {
+   "id": "echo-up-close-and-personal-echo-24",
+   "category": "echo",
+   "name": "Up Close and Personal (ECHO 24)",
+   "x": 781,
+   "y": 1584
+  },
+  {
+   "id": "echo-begging-for-mercy-echo-04",
+   "category": "echo",
+   "name": "Begging for Mercy (ECHO 04)",
+   "x": 1279,
+   "y": 1603,
+   "description": "Side Mission: Father And Son"
+  },
+  {
+   "id": "echo-cleaners-on-the-ropes-echo-05",
+   "category": "echo",
+   "name": "Cleaners on the Ropes (ECHO 05)",
+   "x": 1382,
+   "y": 1704
+  },
+  {
+   "id": "echo-little-boy-lost-echo-09",
+   "category": "echo",
+   "name": "Little Boy Lost (ECHO 09)",
+   "x": 904,
+   "y": 433,
+   "description": "Side Mission: New Shelter"
+  },
+  {
+   "id": "echo-power-struggle-echo-17",
+   "category": "echo",
+   "name": "Power Struggle (ECHO 17)",
+   "x": 672,
+   "y": 1224,
+   "description": "Side Mission: Competition For Power"
+  },
+  {
+   "id": "artifact-antique-bird-call",
+   "category": "artifact",
+   "name": "Antique bird call",
+   "x": 1201,
+   "y": 312,
+   "description": "Collection: Mysteries"
+  },
+  {
+   "id": "artifact-handmade-dreamcatcher",
+   "category": "artifact",
+   "name": "Handmade dreamcatcher",
+   "x": 503,
+   "y": 847,
+   "description": "Collection: Mysteries"
+  },
+  {
+   "id": "artifact-wishbone",
+   "category": "artifact",
+   "name": "Wishbone",
+   "x": 1716,
+   "y": 1364,
+   "description": "Collection: Mysteries"
+  },
+  {
+   "id": "artifact-medicinal-plants-book",
+   "category": "artifact",
+   "name": "Medicinal Plants Book",
+   "x": 794,
+   "y": 1756,
+   "description": "Collection: Mysteries · Location: In the back alley."
+  },
+  {
+   "id": "artifact-cryptex-and-secret-recipe",
+   "category": "artifact",
+   "name": "Cryptex and secret recipe",
+   "x": 1256,
+   "y": 1661,
+   "description": "Collection: Signature item"
+  },
+  {
+   "id": "artifact-a-pair-of-ice-skates",
+   "category": "artifact",
+   "name": "A pair of ice skates",
+   "x": 1029,
+   "y": 1674,
+   "description": "Collection: Abandoned objects"
+  },
+  {
+   "id": "artifact-a-family-photo",
+   "category": "artifact",
+   "name": "A family photo",
+   "x": 782,
+   "y": 1054,
+   "description": "Collection: Abandoned objects"
+  },
+  {
+   "id": "artifact-a-spring-blossom-restaurant-menu",
+   "category": "artifact",
+   "name": "A Spring Blossom Restaurant menu",
+   "x": 880,
+   "y": 942,
+   "description": "Collection: Abandoned objects"
+  },
+  {
+   "id": "artifact-a-map-of-the-metropolitan-museum",
+   "category": "artifact",
+   "name": "A map of the Metropolitan Museum",
+   "x": 1036,
+   "y": 728,
+   "description": "Collection: Abandoned objects"
+  },
+  {
+   "id": "artifact-the-grown-man",
+   "category": "artifact",
+   "name": "The Grown Man",
+   "x": 1222,
+   "y": 556,
+   "description": "Collection: Stolen treasure"
+  },
+  {
+   "id": "artifact-the-archaic-crown",
+   "category": "artifact",
+   "name": "The Archaic Crown",
+   "x": 1161,
+   "y": 727,
+   "description": "Collection: Stolen treasure"
+  },
+  {
+   "id": "artifact-washington-crossing-the-delaware",
+   "category": "artifact",
+   "name": "Washington Crossing the Delaware",
+   "x": 1205,
+   "y": 1336,
+   "description": "Collection: Stolen treasure"
+  },
+  {
+   "id": "artifact-an-antique-kaleidoscope",
+   "category": "artifact",
+   "name": "An antique kaleidoscope",
+   "x": 1635,
+   "y": 1715,
+   "description": "Collection: Stolen treasure"
+  },
+  {
+   "id": "artifact-presidential-prophet",
+   "category": "artifact",
+   "name": "Presidential Prophet",
+   "x": 1035,
+   "y": 421,
+   "description": "Collection: New York souvenirs"
+  },
+  {
+   "id": "artifact-a-bridge-model",
+   "category": "artifact",
+   "name": "A bridge model",
+   "x": 1400,
+   "y": 786,
+   "description": "Collection: New York souvenirs"
+  },
+  {
+   "id": "artifact-a-taxi-toy",
+   "category": "artifact",
+   "name": "A taxi toy",
+   "x": 1276,
+   "y": 977,
+   "description": "Collection: New York souvenirs"
+  },
+  {
+   "id": "artifact-a-cruise-ship-model",
+   "category": "artifact",
+   "name": "A cruise ship model",
+   "x": 1389,
+   "y": 1294,
+   "description": "Collection: New York souvenirs"
+  },
+  {
+   "id": "artifact-fireman-santa",
+   "category": "artifact",
+   "name": "Fireman Santa",
+   "x": 737,
+   "y": 656,
+   "description": "Collection: New York souvenirs"
+  },
+  {
+   "id": "artifact-daily-meditation",
+   "category": "artifact",
+   "name": "Daily Meditation",
+   "x": 954,
+   "y": 527,
+   "description": "Collection: Enemy notes"
+  },
+  {
+   "id": "artifact-a-prepper-old-letter",
+   "category": "artifact",
+   "name": "A prepper old letter",
+   "x": 1228,
+   "y": 556,
+   "description": "Collection: Enemy notes"
+  },
+  {
+   "id": "artifact-fitting-for-the-job",
+   "category": "artifact",
+   "name": "Fitting for the job",
+   "x": 1272,
+   "y": 731,
+   "description": "Collection: Enemy notes"
+  },
+  {
+   "id": "artifact-a-historical-purpose",
+   "category": "artifact",
+   "name": "A historical purpose",
+   "x": 1526,
+   "y": 850,
+   "description": "Although it seems like it is inside the Dark Zone on the map, it is not. · Collection: Enemy notes"
+  },
+  {
+   "id": "artifact-payback-time",
+   "category": "artifact",
+   "name": "Payback time",
+   "x": 715,
+   "y": 967,
+   "description": "Collection: Enemy notes"
+  },
+  {
+   "id": "artifact-a-cleaner-motivation",
+   "category": "artifact",
+   "name": "A Cleaner motivation",
+   "x": 1456,
+   "y": 1312,
+   "description": "Collection: Enemy notes"
+  },
+  {
+   "id": "artifact-freemen-instructions",
+   "category": "artifact",
+   "name": "Freemen instructions",
+   "x": 475,
+   "y": 1620,
+   "description": "Collection: Enemy notes · Location: On the first accessible roof nearby the Supply Run location."
+  },
+  {
+   "id": "artifact-maintenance-instruction-wind-turbines",
+   "category": "artifact",
+   "name": "Maintenance Instruction - Wind Turbines",
+   "x": 1524,
+   "y": 101,
+   "description": "Collection: JTF notes · Location: Inside Clan FOB, northwest of the Main Power Generator, on top of the green shipping containers."
+  },
+  {
+   "id": "artifact-mission-brief",
+   "category": "artifact",
+   "name": "Mission Brief",
+   "x": 857,
+   "y": 452,
+   "description": "Collection: JTF notes"
+  },
+  {
+   "id": "artifact-psychological-report",
+   "category": "artifact",
+   "name": "Psychological Report",
+   "x": 682,
+   "y": 646,
+   "description": "Collection: JTF notes"
+  },
+  {
+   "id": "artifact-complaint-report-grim-business",
+   "category": "artifact",
+   "name": "Complaint Report - Grim business",
+   "x": 589,
+   "y": 678,
+   "description": "Collection: JTF notes"
+  },
+  {
+   "id": "artifact-security-instruction-dark-zone",
+   "category": "artifact",
+   "name": "Security Instruction - Dark Zone",
+   "x": 1583,
+   "y": 1000,
+   "description": "Collection: JTF notes"
+  },
+  {
+   "id": "artifact-liability-report-agent-kelly",
+   "category": "artifact",
+   "name": "Liability Report - Agent Kelly",
+   "x": 1225,
+   "y": 1247,
+   "description": "Collection: JTF notes"
+  },
+  {
+   "id": "artifact-progress-report-public-health-protocols",
+   "category": "artifact",
+   "name": "Progress Report - Public Health Protocols",
+   "x": 766,
+   "y": 1463,
+   "description": "Collection: JTF notes"
+  },
+  {
+   "id": "artifact-medical-vocation",
+   "category": "artifact",
+   "name": "Medical vocation",
+   "x": 1905,
+   "y": 1629,
+   "description": "Collection: JTF notes"
+  },
+  {
+   "id": "artifact-moral-conflict",
+   "category": "artifact",
+   "name": "Moral conflict",
+   "x": 1209,
+   "y": 500,
+   "description": "Collection: Citizen Notes"
+  },
+  {
+   "id": "artifact-christmas-list",
+   "category": "artifact",
+   "name": "Christmas List",
+   "x": 1325,
+   "y": 621,
+   "description": "Collection: Citizen Notes"
+  },
+  {
+   "id": "artifact-scam-warning",
+   "category": "artifact",
+   "name": "Scam warning",
+   "x": 961,
+   "y": 883,
+   "description": "Collection: Citizen Notes"
+  },
+  {
+   "id": "artifact-to-do-list-spring-blossom",
+   "category": "artifact",
+   "name": "TO DO LIST - SPRING BLOSSOM",
+   "x": 883,
+   "y": 942,
+   "description": "Collection: Citizen Notes"
+  },
+  {
+   "id": "artifact-a-daughter-s-letter",
+   "category": "artifact",
+   "name": "A daughter's letter",
+   "x": 1000,
+   "y": 1176,
+   "description": "Collection: Citizen Notes"
+  },
+  {
+   "id": "artifact-thank-you-note",
+   "category": "artifact",
+   "name": "Thank you note",
+   "x": 1338,
+   "y": 1435,
+   "description": "Collection: Citizen Notes"
+  },
+  {
+   "id": "artifact-supreme-jewelry-store-order-receipt",
+   "category": "artifact",
+   "name": "Supreme Jewelry Store - Order Receipt",
+   "x": 636,
+   "y": 1624,
+   "description": "Collection: Citizen Notes"
+  },
+  {
+   "id": "artifact-mouse-chili",
+   "category": "artifact",
+   "name": "Mouse chili",
+   "x": 1272,
+   "y": 1751,
+   "description": "Collection: Citizen Notes"
+  },
+  {
+   "id": "artifact-love-at-first-sight",
+   "category": "artifact",
+   "name": "Love at first sight",
+   "x": 999,
+   "y": 356,
+   "description": "Collection: Cryptic Clues"
+  },
+  {
+   "id": "artifact-secret-message",
+   "category": "artifact",
+   "name": "Secret message",
+   "x": 896,
+   "y": 403,
+   "description": "Collection: Cryptic Clues"
+  },
+  {
+   "id": "artifact-memory-helper",
+   "category": "artifact",
+   "name": "Memory helper",
+   "x": 959,
+   "y": 492,
+   "description": "Collection: Cryptic Clues"
+  },
+  {
+   "id": "artifact-order-at-disposal",
+   "category": "artifact",
+   "name": "Order at disposal",
+   "x": 472,
+   "y": 874,
+   "description": "Location: Next to train car · Collection: Cryptic Clues"
+  },
+  {
+   "id": "artifact-wedding-invitation-card",
+   "category": "artifact",
+   "name": "Wedding Invitation Card",
+   "x": 1317,
+   "y": 880,
+   "description": "Collection: Cryptic Clues"
+  },
+  {
+   "id": "artifact-couple-reminder",
+   "category": "artifact",
+   "name": "Couple Reminder",
+   "x": 1320,
+   "y": 879,
+   "description": "Collection: Cryptic Clues"
+  },
+  {
+   "id": "artifact-missing-daughter",
+   "category": "artifact",
+   "name": "Missing daughter",
+   "x": 1243,
+   "y": 392,
+   "description": "Collection: Cryptic Clues"
+  },
+  {
+   "id": "artifact-insurance",
+   "category": "artifact",
+   "name": "Insurance",
+   "x": 1480,
+   "y": 1189,
+   "description": "Collection: Cryptic Clues"
+  },
+  {
+   "id": "artifact-birthday-gift",
+   "category": "artifact",
+   "name": "Birthday Gift",
+   "x": 1202,
+   "y": 1241,
+   "description": "Collection: Cryptic Clues"
+  },
+  {
+   "id": "artifact-missing-boss",
+   "category": "artifact",
+   "name": "Missing boss",
+   "x": 1158,
+   "y": 1328,
+   "description": "Collection: Cryptic Clues"
+  },
+  {
+   "id": "artifact-closed-restaurant",
+   "category": "artifact",
+   "name": "Closed restaurant",
+   "x": 1862,
+   "y": 1598,
+   "description": "Collection: Cryptic Clues"
+  },
+  {
+   "id": "audio_log-top-dog",
+   "category": "audio_log",
+   "name": "Top Dog",
+   "x": 959,
+   "y": 488,
+   "description": "Collection: Sarah Kelly"
+  },
+  {
+   "id": "audio_log-a-complete-failure-of-governance",
+   "category": "audio_log",
+   "name": "A Complete Failure of Governance",
+   "x": 952,
+   "y": 730,
+   "description": "Collection: Sarah Kelly"
+  },
+  {
+   "id": "audio_log-shared-sentiments",
+   "category": "audio_log",
+   "name": "Shared Sentiments",
+   "x": 444,
+   "y": 897,
+   "description": "Collection: Sarah Kelly"
+  },
+  {
+   "id": "audio_log-doctor-s-orders",
+   "category": "audio_log",
+   "name": "Doctor's Orders",
+   "x": 1214,
+   "y": 1118,
+   "description": "Collection: Sarah Kelly"
+  },
+  {
+   "id": "audio_log-pick-a-side",
+   "category": "audio_log",
+   "name": "Pick a Side",
+   "x": 626,
+   "y": 599,
+   "description": "Collection: Raiders"
+  },
+  {
+   "id": "audio_log-apologies",
+   "category": "audio_log",
+   "name": "Apologies",
+   "x": 496,
+   "y": 1262,
+   "description": "Collection: Raiders"
+  },
+  {
+   "id": "audio_log-hey-douchebag",
+   "category": "audio_log",
+   "name": "Hey Douchebag",
+   "x": 963,
+   "y": 1279,
+   "description": "Collection: Raiders"
+  },
+  {
+   "id": "audio_log-law-of-the-jungle",
+   "category": "audio_log",
+   "name": "Law of the Jungle",
+   "x": 1012,
+   "y": 1436,
+   "description": "Collection: Raiders"
+  },
+  {
+   "id": "audio_log-the-man-the-myth",
+   "category": "audio_log",
+   "name": "The Man, the Myth",
+   "x": 946,
+   "y": 1746,
+   "description": "Collection: Raiders · Location: Corner of the wall."
+  },
+  {
+   "id": "audio_log-family-first",
+   "category": "audio_log",
+   "name": "Family First",
+   "x": 1143,
+   "y": 280,
+   "description": "Collection: Rikers"
+  },
+  {
+   "id": "audio_log-trapped",
+   "category": "audio_log",
+   "name": "Trapped",
+   "x": 632,
+   "y": 577,
+   "description": "Collection: Rikers"
+  },
+  {
+   "id": "audio_log-enemy-informant",
+   "category": "audio_log",
+   "name": "Enemy Informant",
+   "x": 767,
+   "y": 684,
+   "description": "Side Mission: No Coincidence · Collection: Rikers"
+  },
+  {
+   "id": "audio_log-a-glimmer-of-hope",
+   "category": "audio_log",
+   "name": "A Glimmer of Hope",
+   "x": 249,
+   "y": 742,
+   "description": "Side Mission: Throat Slitter · Collection: Rikers"
+  },
+  {
+   "id": "audio_log-heading-downtown",
+   "category": "audio_log",
+   "name": "Heading Downtown",
+   "x": 495,
+   "y": 1282,
+   "description": "Side Mission: Resurgence Of Flame · Collection: Cleaners"
+  },
+  {
+   "id": "audio_log-don-t-alert-the-cleaners",
+   "category": "audio_log",
+   "name": "Don't Alert the Cleaners",
+   "x": 848,
+   "y": 699,
+   "description": "Collection: Cleaners"
+  },
+  {
+   "id": "audio_log-exterminators",
+   "category": "audio_log",
+   "name": "Exterminators",
+   "x": 580,
+   "y": 1586,
+   "description": "Collection: Cleaners · Location: In a pile of garbage at an alley east of the nearby Supply Run location."
+  },
+  {
+   "id": "audio_log-cleaners-vs-freemen",
+   "category": "audio_log",
+   "name": "Cleaners vs Freemen",
+   "x": 1026,
+   "y": 1689,
+   "description": "Collection: Cleaners"
+  },
+  {
+   "id": "audio_log-power-struggle",
+   "category": "audio_log",
+   "name": "Power Struggle",
+   "x": 1613,
+   "y": 1491,
+   "description": "Collection: Cleaners"
+  },
+  {
+   "id": "audio_log-the-old-days",
+   "category": "audio_log",
+   "name": "The Old Days",
+   "x": 1335,
+   "y": 1670,
+   "description": "Collection: Cleaners"
+  },
+  {
+   "id": "audio_log-hard-choices",
+   "category": "audio_log",
+   "name": "Hard Choices",
+   "x": 1722,
+   "y": 1720,
+   "description": "Collection: Cleaners"
+  },
+  {
+   "id": "audio_log-gift-exchange",
+   "category": "audio_log",
+   "name": "Gift Exchange",
+   "x": 1031,
+   "y": 453,
+   "description": "Collection: Civilians"
+  },
+  {
+   "id": "audio_log-down-comforter",
+   "category": "audio_log",
+   "name": "Down Comforter",
+   "x": 777,
+   "y": 591,
+   "description": "Collection: Civilians"
+  },
+  {
+   "id": "audio_log-chopin",
+   "category": "audio_log",
+   "name": "Chopin",
+   "x": 1235,
+   "y": 404,
+   "description": "Collection: Civilians"
+  },
+  {
+   "id": "audio_log-creepy-calls",
+   "category": "audio_log",
+   "name": "Creepy Calls",
+   "x": 809,
+   "y": 824,
+   "description": "Collection: Civilians"
+  },
+  {
+   "id": "audio_log-a-question-of-defense",
+   "category": "audio_log",
+   "name": "A Question of Defense",
+   "x": 798,
+   "y": 876,
+   "description": "Collection: Civilians"
+  },
+  {
+   "id": "audio_log-knicks-tickets",
+   "category": "audio_log",
+   "name": "Knicks Tickets",
+   "x": 1117,
+   "y": 897,
+   "description": "Collection: Civilians"
+  },
+  {
+   "id": "audio_log-whiners",
+   "category": "audio_log",
+   "name": "Whiners",
+   "x": 880,
+   "y": 938,
+   "description": "Collection: Civilians"
+  },
+  {
+   "id": "audio_log-chicken-vs-chicken",
+   "category": "audio_log",
+   "name": "Chicken vs Chicken",
+   "x": 883,
+   "y": 938,
+   "description": "Collection: Civilians"
+  },
+  {
+   "id": "audio_log-the-essentials",
+   "category": "audio_log",
+   "name": "The Essentials",
+   "x": 815,
+   "y": 1276,
+   "description": "Collection: Civilians"
+  },
+  {
+   "id": "audio_log-missing",
+   "category": "audio_log",
+   "name": "Missing",
+   "x": 1579,
+   "y": 1138,
+   "description": "Collection: Civilians"
+  },
+  {
+   "id": "audio_log-bedtime-story",
+   "category": "audio_log",
+   "name": "Bedtime Story",
+   "x": 1265,
+   "y": 951,
+   "description": "Collection: Civilians"
+  },
+  {
+   "id": "audio_log-goodbye-mom",
+   "category": "audio_log",
+   "name": "Goodbye Mom",
+   "x": 168,
+   "y": 1706,
+   "description": "Collection: Civilians"
+  },
+  {
+   "id": "audio_log-first-date",
+   "category": "audio_log",
+   "name": "First Date",
+   "x": 1058,
+   "y": 1542,
+   "description": "Collection: Civilians"
+  },
+  {
+   "id": "audio_log-on-your-own",
+   "category": "audio_log",
+   "name": "On Your Own",
+   "x": 1240,
+   "y": 404,
+   "description": "Collection: JTF"
+  },
+  {
+   "id": "audio_log-fools",
+   "category": "audio_log",
+   "name": "Fools",
+   "x": 964,
+   "y": 453,
+   "description": "Collection: JTF"
+  },
+  {
+   "id": "audio_log-daughters",
+   "category": "audio_log",
+   "name": "Daughters",
+   "x": 384,
+   "y": 774,
+   "description": "Collection: JTF"
+  },
+  {
+   "id": "audio_log-that-agent",
+   "category": "audio_log",
+   "name": "That Agent",
+   "x": 1017,
+   "y": 1189,
+   "description": "Location: Outside the N.Y.C. Base of Operations · Collection: JTF"
+  },
+  {
+   "id": "audio_log-the-liberty-island-debacle",
+   "category": "audio_log",
+   "name": "The Liberty Island Debacle",
+   "x": 480,
+   "y": 1342,
+   "description": "Collection: JTF"
+  },
+  {
+   "id": "audio_log-broken-watch",
+   "category": "audio_log",
+   "name": "Broken Watch",
+   "x": 1421,
+   "y": 1363,
+   "description": "Collection: JTF"
+  },
+  {
+   "id": "audio_log-saved",
+   "category": "audio_log",
+   "name": "Saved",
+   "x": 1339,
+   "y": 1431,
+   "description": "Collection: JTF"
+  },
+  {
+   "id": "audio_log-under-heavy-fire",
+   "category": "audio_log",
+   "name": "Under Heavy Fire",
+   "x": 1292,
+   "y": 1642,
+   "description": "Collection: JTF"
+  },
+  {
+   "id": "audio_log-happy-birthday",
+   "category": "audio_log",
+   "name": "Happy Birthday",
+   "x": 899,
+   "y": 1748,
+   "description": "Collection: JTF · Location: On the table, inside of the tent."
+  },
+  {
+   "id": "audio_log-backed-into-a-corner",
+   "category": "audio_log",
+   "name": "Backed into a Corner",
+   "x": 713,
+   "y": 1791,
+   "description": "Side Mission: Pour Oil on the Fire · Collection: Freemen"
+  },
+  {
+   "id": "audio_log-heated-debate",
+   "category": "audio_log",
+   "name": "Heated Debate",
+   "x": 1583,
+   "y": 1043,
+   "description": "Collection: Freemen"
+  },
+  {
+   "id": "audio_log-pecking-order",
+   "category": "audio_log",
+   "name": "Pecking Order",
+   "x": 678,
+   "y": 1262,
+   "description": "Collection: Freemen"
+  },
+  {
+   "id": "audio_log-voluntary-resignation",
+   "category": "audio_log",
+   "name": "Voluntary Resignation",
+   "x": 243,
+   "y": 1375,
+   "description": "Collection: Freemen · Location: Behind the truck, southeast of Hudson River Pier Landmark."
+  },
+  {
+   "id": "audio_log-fighting-for-scraps",
+   "category": "audio_log",
+   "name": "Fighting for Scraps",
+   "x": 404,
+   "y": 1009,
+   "description": "Collection: Freemen"
+  },
+  {
+   "id": "audio_log-vandals",
+   "category": "audio_log",
+   "name": "Vandals",
+   "x": 495,
+   "y": 883,
+   "description": "Collection: Freemen"
+  },
+  {
+   "id": "audio_log-homemade-weapon",
+   "category": "audio_log",
+   "name": "Homemade Weapon",
+   "x": 516,
+   "y": 931,
+   "description": "Collection: Freemen"
+  },
+  {
+   "id": "side_mission-clinic-under-fire",
+   "category": "side_mission",
+   "name": "Clinic Under Fire",
+   "x": 1009,
+   "y": 1555,
+   "description": "Unlocks at level 26 (per the community map).",
+   "level": 26
+  },
+  {
+   "id": "audio_log-jtf-communication",
+   "category": "audio_log",
+   "name": "JTF Communication",
+   "x": 1010,
+   "y": 1549,
+   "description": "Side Mission: Clinic Under Fire · Collection: JTF"
+  },
+  {
+   "id": "side_mission-lord-of-street",
+   "category": "side_mission",
+   "name": "Lord of Street",
+   "x": 161,
+   "y": 1723,
+   "description": "Unlocks at level 27 (per the community map).",
+   "level": 27
+  },
+  {
+   "id": "side_mission-rogue-elimination",
+   "category": "side_mission",
+   "name": "Rogue Elimination",
+   "x": 878,
+   "y": 1228,
+   "description": "Unlocks at level 27 (per the community map).",
+   "level": 27
+  },
+  {
+   "id": "main_mission-relay-ready",
+   "category": "main_mission",
+   "name": "Relay Ready",
+   "x": 776,
+   "y": 701,
+   "description": "Unlocks at level 27 (per the community map).",
+   "level": 27
+  },
+  {
+   "id": "ammo-nyc-248",
+   "category": "ammo",
+   "name": "Ammo Crate",
+   "x": 914,
+   "y": 922
+  },
+  {
+   "id": "services-nyc-259",
+   "category": "services",
+   "name": "Stash",
+   "x": 896,
+   "y": 401,
+   "amenities": [
+    "Stash"
+   ]
+  },
+  {
+   "id": "ammo-nyc-264",
+   "category": "ammo",
+   "name": "Ammo Crate",
+   "x": 788,
+   "y": 496
+  },
+  {
+   "id": "services-nyc-265",
+   "category": "services",
+   "name": "Stash",
+   "x": 794,
+   "y": 495,
+   "amenities": [
+    "Stash"
+   ]
+  },
+  {
+   "id": "ammo-nyc-266",
+   "category": "ammo",
+   "name": "Ammo Crate",
+   "x": 1009,
+   "y": 320
+  },
+  {
+   "id": "ammo-nyc-267",
+   "category": "ammo",
+   "name": "Ammo Crate",
+   "x": 702,
+   "y": 480
+  },
+  {
+   "id": "ammo-nyc-268",
+   "category": "ammo",
+   "name": "Ammo Crate",
+   "x": 590,
+   "y": 625
+  },
+  {
+   "id": "ammo-nyc-269",
+   "category": "ammo",
+   "name": "Ammo Crate",
+   "x": 1222,
+   "y": 601
+  },
+  {
+   "id": "ammo-nyc-270",
+   "category": "ammo",
+   "name": "Ammo Crate",
+   "x": 813,
+   "y": 732
+  },
+  {
+   "id": "ammo-nyc-271",
+   "category": "ammo",
+   "name": "Ammo Crate",
+   "x": 1265,
+   "y": 732
+  },
+  {
+   "id": "ammo-nyc-272",
+   "category": "ammo",
+   "name": "Ammo Crate",
+   "x": 974,
+   "y": 804
+  },
+  {
+   "id": "ammo-nyc-273",
+   "category": "ammo",
+   "name": "Ammo Crate",
+   "x": 1331,
+   "y": 905
+  },
+  {
+   "id": "ammo-nyc-274",
+   "category": "ammo",
+   "name": "Ammo Crate",
+   "x": 1218,
+   "y": 883
+  },
+  {
+   "id": "ammo-nyc-275",
+   "category": "ammo",
+   "name": "Ammo Crate",
+   "x": 1276,
+   "y": 1138
+  },
+  {
+   "id": "ammo-nyc-276",
+   "category": "ammo",
+   "name": "Ammo Crate",
+   "x": 1571,
+   "y": 1138
+  },
+  {
+   "id": "ammo-nyc-277",
+   "category": "ammo",
+   "name": "Ammo Crate",
+   "x": 926,
+   "y": 1059
+  },
+  {
+   "id": "ammo-nyc-278",
+   "category": "ammo",
+   "name": "Ammo Crate",
+   "x": 760,
+   "y": 1055
+  },
+  {
+   "id": "ammo-nyc-279",
+   "category": "ammo",
+   "name": "Ammo Crate",
+   "x": 527,
+   "y": 909
+  },
+  {
+   "id": "ammo-nyc-280",
+   "category": "ammo",
+   "name": "Ammo Crate",
+   "x": 711,
+   "y": 978
+  },
+  {
+   "id": "ammo-nyc-281",
+   "category": "ammo",
+   "name": "Ammo Crate",
+   "x": 759,
+   "y": 1268
+  },
+  {
+   "id": "ammo-nyc-282",
+   "category": "ammo",
+   "name": "Ammo Crate",
+   "x": 494,
+   "y": 1589
+  },
+  {
+   "id": "ammo-nyc-283",
+   "category": "ammo",
+   "name": "Ammo Crate",
+   "x": 309,
+   "y": 1357
+  },
+  {
+   "id": "ammo-nyc-284",
+   "category": "ammo",
+   "name": "Ammo Crate",
+   "x": 771,
+   "y": 1457
+  },
+  {
+   "id": "ammo-nyc-285",
+   "category": "ammo",
+   "name": "Ammo Crate",
+   "x": 1203,
+   "y": 1353
+  },
+  {
+   "id": "ammo-nyc-286",
+   "category": "ammo",
+   "name": "Ammo Crate",
+   "x": 1188,
+   "y": 1584
+  },
+  {
+   "id": "ammo-nyc-287",
+   "category": "ammo",
+   "name": "Ammo Crate",
+   "x": 1041,
+   "y": 1616
+  },
+  {
+   "id": "ammo-nyc-288",
+   "category": "ammo",
+   "name": "Ammo Crate",
+   "x": 1462,
+   "y": 1578
+  },
+  {
+   "id": "ammo-nyc-289",
+   "category": "ammo",
+   "name": "Ammo Crate",
+   "x": 1645,
+   "y": 1370
+  },
+  {
+   "id": "ammo-nyc-290",
+   "category": "ammo",
+   "name": "Ammo Crate",
+   "x": 1486,
+   "y": 1379
+  },
+  {
+   "id": "ammo-nyc-291",
+   "category": "ammo",
+   "name": "Ammo Crate",
+   "x": 878,
+   "y": 337
+  },
+  {
+   "id": "nest_investigation-nyc-292",
+   "category": "nest_investigation",
+   "name": "Hostile Nest Investigation",
+   "x": 1228,
+   "y": 351,
+   "description": "Entrance: In the alley past the two ambulances."
+  },
+  {
+   "id": "nest_investigation-nyc-293",
+   "category": "nest_investigation",
+   "name": "Hostile Nest Investigation",
+   "x": 1099,
+   "y": 533,
+   "description": "Entrance: Second gray door of building with Mini Storage sign."
+  },
+  {
+   "id": "nest_investigation-nyc-294",
+   "category": "nest_investigation",
+   "name": "Hostile Nest Investigation",
+   "x": 703,
+   "y": 572,
+   "description": "Entrance: Next to boarded window and door."
+  },
+  {
+   "id": "nest_investigation-nyc-295",
+   "category": "nest_investigation",
+   "name": "Hostile Nest Investigation",
+   "x": 1596,
+   "y": 1419,
+   "description": "Entrance: 'Cameras & Computer' store entrance."
+  },
+  {
+   "id": "nest_investigation-nyc-296",
+   "category": "nest_investigation",
+   "name": "Hostile Nest Investigation",
+   "x": 1897,
+   "y": 1656
+  },
+  {
+   "id": "nest-nyc-297",
+   "category": "nest",
+   "name": "Hostile Nest",
+   "x": 977,
+   "y": 422
+  },
+  {
+   "id": "nest-nyc-298",
+   "category": "nest",
+   "name": "Hostile Nest",
+   "x": 1017,
+   "y": 1553
+  },
+  {
+   "id": "nest-nyc-299",
+   "category": "nest",
+   "name": "Hostile Nest",
+   "x": 1523,
+   "y": 932
+  },
+  {
+   "id": "missing_signal-nyc-300",
+   "category": "missing_signal",
+   "name": "Missing JTF Personnel Signal",
+   "x": 221,
+   "y": 1672,
+   "description": "Start: Southwest of Camp Hudson fast travel. End: Underneath the flag (note the orange highlight in the bush)."
+  },
+  {
+   "id": "missing_signal-nyc-301",
+   "category": "missing_signal",
+   "name": "Missing Drone Signal",
+   "x": 1018,
+   "y": 288
+  },
+  {
+   "id": "world_event-nyc-302",
+   "category": "world_event",
+   "name": "Hostage Rescue",
+   "x": 1178,
+   "y": 1590
+  },
+  {
+   "id": "world_event-nyc-303",
+   "category": "world_event",
+   "name": "Hostage Rescue",
+   "x": 1192,
+   "y": 1345
+  },
+  {
+   "id": "world_event-nyc-304",
+   "category": "world_event",
+   "name": "Hostage Rescue",
+   "x": 1209,
+   "y": 602
+  },
+  {
+   "id": "world_event-nyc-305",
+   "category": "world_event",
+   "name": "Arms Deal Disruption",
+   "x": 1196,
+   "y": 401
+  },
+  {
+   "id": "world_event-nyc-306",
+   "category": "world_event",
+   "name": "Outpost Restoration",
+   "x": 1246,
+   "y": 737
+  },
+  {
+   "id": "world_event-nyc-307",
+   "category": "world_event",
+   "name": "Supply Run",
+   "x": 1341,
+   "y": 909
+  },
+  {
+   "id": "world_event-nyc-308",
+   "category": "world_event",
+   "name": "Arms Deal Disruption",
+   "x": 1457,
+   "y": 819
+  },
+  {
+   "id": "world_event-nyc-309",
+   "category": "world_event",
+   "name": "Outpost Restoration",
+   "x": 1508,
+   "y": 1382
+  },
+  {
+   "id": "world_event-nyc-310",
+   "category": "world_event",
+   "name": "Arms Deal Disruption",
+   "x": 1815,
+   "y": 1380
+  },
+  {
+   "id": "world_event-nyc-311",
+   "category": "world_event",
+   "name": "Hostage Rescue",
+   "x": 1468,
+   "y": 1555
+  },
+  {
+   "id": "world_event-nyc-312",
+   "category": "world_event",
+   "name": "Supply Run",
+   "x": 1298,
+   "y": 1121
+  },
+  {
+   "id": "world_event-nyc-313",
+   "category": "world_event",
+   "name": "Outpost Restoration",
+   "x": 764,
+   "y": 1462
+  },
+  {
+   "id": "nest-nyc-314",
+   "category": "nest",
+   "name": "Hostile Nest",
+   "x": 1068,
+   "y": 741
+  },
+  {
+   "id": "nest-nyc-315",
+   "category": "nest",
+   "name": "Hostile Nest",
+   "x": 1057,
+   "y": 631
+  },
+  {
+   "id": "world_event-nyc-316",
+   "category": "world_event",
+   "name": "Supply Run",
+   "x": 1114,
+   "y": 458
+  },
+  {
+   "id": "world_event-nyc-317",
+   "category": "world_event",
+   "name": "Arms Deal Disruption",
+   "x": 1135,
+   "y": 363
+  },
+  {
+   "id": "world_event-nyc-318",
+   "category": "world_event",
+   "name": "Hostage Rescue",
+   "x": 1005,
+   "y": 313
+  },
+  {
+   "id": "world_event-nyc-319",
+   "category": "world_event",
+   "name": "Supply Run",
+   "x": 477,
+   "y": 1595
+  },
+  {
+   "id": "world_event-nyc-320",
+   "category": "world_event",
+   "name": "Hostage Rescue",
+   "x": 520,
+   "y": 909
+  },
+  {
+   "id": "world_event-nyc-321",
+   "category": "world_event",
+   "name": "Outpost Restoration",
+   "x": 572,
+   "y": 628
+  },
+  {
+   "id": "world_event-nyc-322",
+   "category": "world_event",
+   "name": "Arms Deal Disruption",
+   "x": 320,
+   "y": 1323
+  },
+  {
+   "id": "world_event-nyc-323",
+   "category": "world_event",
+   "name": "Arms Deal Disruption",
+   "x": 757,
+   "y": 1072
+  },
+  {
+   "id": "world_event-nyc-324",
+   "category": "world_event",
+   "name": "Supply Run",
+   "x": 1233,
+   "y": 682
+  },
+  {
+   "id": "world_event-nyc-325",
+   "category": "world_event",
+   "name": "Supply Run",
+   "x": 1075,
+   "y": 661
+  },
+  {
+   "id": "world_event-nyc-326",
+   "category": "world_event",
+   "name": "Supply Run",
+   "x": 591,
+   "y": 835
+  },
+  {
+   "id": "world_event-nyc-327",
+   "category": "world_event",
+   "name": "Hostage Rescue",
+   "x": 936,
+   "y": 1042
+  },
+  {
+   "id": "world_event-nyc-328",
+   "category": "world_event",
+   "name": "Arms Deal Disruption",
+   "x": 900,
+   "y": 1369
+  },
+  {
+   "id": "nest-nyc-329",
+   "category": "nest",
+   "name": "Hostile Nest",
+   "x": 1587,
+   "y": 1750
+  },
+  {
+   "id": "world_event-nyc-330",
+   "category": "world_event",
+   "name": "Outpost Restoration",
+   "x": 715,
+   "y": 975
+  },
+  {
+   "id": "world_event-nyc-331",
+   "category": "world_event",
+   "name": "Outpost Restoration",
+   "x": 1019,
+   "y": 1621
+  },
+  {
+   "id": "world_event-nyc-332",
+   "category": "world_event",
+   "name": "Supply Run",
+   "x": 1837,
+   "y": 1686
+  },
+  {
+   "id": "nest-nyc-333",
+   "category": "nest",
+   "name": "Hostile Nest",
+   "x": 1026,
+   "y": 1469
+  },
+  {
+   "id": "world_event-nyc-334",
+   "category": "world_event",
+   "name": "Hostage Rescue",
+   "x": 808,
+   "y": 735
+  },
+  {
+   "id": "world_event-nyc-335",
+   "category": "world_event",
+   "name": "Outpost Restoration",
+   "x": 1586,
+   "y": 1138
+  },
+  {
+   "id": "world_event-nyc-336",
+   "category": "world_event",
+   "name": "Outpost Restoration",
+   "x": 879,
+   "y": 333
+  },
+  {
+   "id": "world_event-nyc-337",
+   "category": "world_event",
+   "name": "Arms Deal Disruption",
+   "x": 717,
+   "y": 781
+  },
+  {
+   "id": "nest_investigation-nyc-338",
+   "category": "nest_investigation",
+   "name": "Hostile Nest Investigation",
+   "x": 1821,
+   "y": 1611
+  },
+  {
+   "id": "missing_signal-nyc-342",
+   "category": "missing_signal",
+   "name": "Missing JTF Personnel Signal",
+   "x": 427,
+   "y": 1657,
+   "description": "Start: In the center of three buses. · End Point: In a small alcove northwest of the Precious Cargo mission marker."
+  },
+  {
+   "id": "side_mission-race-for-supplies",
+   "category": "side_mission",
+   "name": "Race for Supplies",
+   "x": 224,
+   "y": 1638,
+   "description": "Unlocks at level 32 (per the community map).",
+   "level": 32
+  },
+  {
+   "id": "side_mission-competition-for-power",
+   "category": "side_mission",
+   "name": "Competition For Power",
+   "x": 633,
+   "y": 1194,
+   "description": "Unlocks at level 33 (per the community map).",
+   "level": 33
+  },
+  {
+   "id": "nest_investigation-nyc-349",
+   "category": "nest_investigation",
+   "name": "Hostile Nest Investigation",
+   "x": 695,
+   "y": 1703,
+   "description": "Entrance: Revolving door on the building."
+  },
+  {
+   "id": "missing_signal-nyc-350",
+   "category": "missing_signal",
+   "name": "Missing JTF Personnel Signal",
+   "x": 206,
+   "y": 1018
+  },
+  {
+   "id": "missing_signal-nyc-351",
+   "category": "missing_signal",
+   "name": "Missing JTF Personnel Signal",
+   "x": 1591,
+   "y": 1641
+  },
+  {
+   "id": "missing_signal-nyc-352",
+   "category": "missing_signal",
+   "name": "Missing Agent Signal",
+   "x": 205,
+   "y": 1306,
+   "description": "Start: Sidewalk, beside the police car. · End: Beside the grey car in the alley southeast of the starting point."
+  },
+  {
+   "id": "missing_signal-nyc-353",
+   "category": "missing_signal",
+   "name": "Missing Agent Signal",
+   "x": 496,
+   "y": 1057
+  },
+  {
+   "id": "missing_signal-nyc-354",
+   "category": "missing_signal",
+   "name": "Missing Signals (WIP)",
+   "x": 1149,
+   "y": 1463,
+   "description": "Location of the recording"
+  },
+  {
+   "id": "missing_signal-nyc-355",
+   "category": "missing_signal",
+   "name": "Missing Signals (WIP)",
+   "x": 1769,
+   "y": 1380,
+   "description": "Start: Corner of church sidewalk · End: Front of quarantine sign, north of church."
+  },
+  {
+   "id": "nest_investigation-nyc-356",
+   "category": "nest_investigation",
+   "name": "Hostile Nest Investigation",
+   "x": 835,
+   "y": 490,
+   "description": "Entrance: Door of the red apartment building."
+  },
+  {
+   "id": "missing_signal-nyc-357",
+   "category": "missing_signal",
+   "name": "Missing Signals (WIP)",
+   "x": 802,
+   "y": 473,
+   "description": "Dead JTF Officer"
+  },
+  {
+   "id": "missing_signal-nyc-358",
+   "category": "missing_signal",
+   "name": "Missing Drone Signal",
+   "x": 667,
+   "y": 1716,
+   "description": "Start: Corner of 9th Ave and 21st St · End: Below a tree in a nearby courtyard. Entrance north of start point."
+  },
+  {
+   "id": "missing_signal-nyc-359",
+   "category": "missing_signal",
+   "name": "Missing JTF Personnel Signal",
+   "x": 674,
+   "y": 1333
+  },
+  {
+   "id": "safe_house-dark-zone-safe-house-3",
+   "category": "safe_house",
+   "name": "Dark Zone Safe House 3",
+   "x": 1635,
+   "y": 817,
+   "approx": true
+  },
+  {
+   "id": "safe_house-dark-zone-safe-house-1",
+   "category": "safe_house",
+   "name": "Dark Zone Safe House 1",
+   "x": 1740,
+   "y": 408,
+   "approx": true
+  },
+  {
+   "id": "safe_house-dark-zone-safe-house-4",
+   "category": "safe_house",
+   "name": "Dark Zone Safe House 4",
+   "x": 1698,
+   "y": 553,
+   "approx": true
+  },
+  {
+   "id": "safe_house-dark-zone-safe-house-2",
+   "category": "safe_house",
+   "name": "Dark Zone Safe House 2",
+   "x": 1972,
+   "y": 883,
+   "approx": true
+  },
+  {
+   "id": "dz_gate-dz-dz-gate-3-515-49",
+   "category": "dz_gate",
+   "name": "DZ Gate 3",
+   "x": 1595,
+   "y": 1248,
+   "approx": true
+  },
+  {
+   "id": "dz_gate-dz-dz-gate-1-697-18",
+   "category": "dz_gate",
+   "name": "DZ Gate 1",
+   "x": 1887,
+   "y": 1301,
+   "approx": true
+  },
+  {
+   "id": "dz_gate-dz-dz-gate-2-879-49",
+   "category": "dz_gate",
+   "name": "DZ Gate 2",
+   "x": 2168,
+   "y": 1248,
+   "approx": true
+  },
+  {
+   "id": "dz_gate-dz-dz-gate-4-538-191",
+   "category": "dz_gate",
+   "name": "DZ Gate 4",
+   "x": 1643,
+   "y": 1022,
+   "approx": true
+  },
+  {
+   "id": "dz_gate-dz-dz-gate-5-880-191",
+   "category": "dz_gate",
+   "name": "DZ Gate 5",
+   "x": 2145,
+   "y": 1026,
+   "approx": true
+  },
+  {
+   "id": "dz_gate-dz-dz-gate-6-435-331",
+   "category": "dz_gate",
+   "name": "DZ Gate 6",
+   "x": 1507,
+   "y": 822,
+   "approx": true
+  },
+  {
+   "id": "dz_gate-dz-dz-gate-7-880-377",
+   "category": "dz_gate",
+   "name": "DZ Gate 7",
+   "x": 2119,
+   "y": 774,
+   "approx": true
+  },
+  {
+   "id": "dz_gate-dz-dz-gate-9-392-475",
+   "category": "dz_gate",
+   "name": "DZ Gate 9",
+   "x": 1464,
+   "y": 641,
+   "approx": true
+  },
+  {
+   "id": "dz_gate-dz-dz-gate-8-833-474",
+   "category": "dz_gate",
+   "name": "DZ Gate 8",
+   "x": 2047,
+   "y": 656,
+   "approx": true
+  },
+  {
+   "id": "dz_gate-dz-dz-gate-11-347-613",
+   "category": "dz_gate",
+   "name": "DZ Gate 11",
+   "x": 1424,
+   "y": 484,
+   "approx": true
+  },
+  {
+   "id": "dz_gate-dz-dz-gate-10-687-613",
+   "category": "dz_gate",
+   "name": "DZ Gate 10",
+   "x": 1854,
+   "y": 498,
+   "approx": true
+  },
+  {
+   "id": "dz_gate-dz-dz-gate-13-288-803",
+   "category": "dz_gate",
+   "name": "DZ Gate 13",
+   "x": 1379,
+   "y": 293,
+   "approx": true
+  },
+  {
+   "id": "dz_gate-dz-dz-gate-12-688-803",
+   "category": "dz_gate",
+   "name": "DZ Gate 12",
+   "x": 1851,
+   "y": 312,
+   "approx": true
+  },
+  {
+   "id": "dz_contaminated-dz-extremely-contaminated-area-297-849",
+   "category": "dz_contaminated",
+   "name": "Extremely Contaminated Area",
+   "x": 1396,
+   "y": 252,
+   "approx": true
+  },
+  {
+   "id": "dz_contaminated-dz-extremely-contaminated-area-618-824",
+   "category": "dz_contaminated",
+   "name": "Extremely Contaminated Area",
+   "x": 1770,
+   "y": 289,
+   "approx": true
+  },
+  {
+   "id": "dz_contaminated-dz-extremely-contaminated-area-383-783",
+   "category": "dz_contaminated",
+   "name": "Extremely Contaminated Area",
+   "x": 1490,
+   "y": 316,
+   "approx": true
+  },
+  {
+   "id": "dz_contaminated-dz-extremely-contaminated-area-322-752",
+   "category": "dz_contaminated",
+   "name": "Extremely Contaminated Area",
+   "x": 1412,
+   "y": 343,
+   "approx": true
+  },
+  {
+   "id": "dz_contaminated-dz-extremely-contaminated-area-673-758",
+   "category": "dz_contaminated",
+   "name": "Extremely Contaminated Area",
+   "x": 1835,
+   "y": 352,
+   "approx": true
+  },
+  {
+   "id": "dz_contaminated-dz-extremely-contaminated-area-365-687",
+   "category": "dz_contaminated",
+   "name": "Extremely Contaminated Area",
+   "x": 1456,
+   "y": 409,
+   "approx": true
+  },
+  {
+   "id": "dz_contaminated-dz-extremely-contaminated-area-673-700",
+   "category": "dz_contaminated",
+   "name": "Extremely Contaminated Area",
+   "x": 1835,
+   "y": 409,
+   "approx": true
+  },
+  {
+   "id": "dz_contaminated-dz-extremely-contaminated-area-638-630",
+   "category": "dz_contaminated",
+   "name": "Extremely Contaminated Area",
+   "x": 1793,
+   "y": 478,
+   "approx": true
+  },
+  {
+   "id": "dz_contaminated-dz-extremely-contaminated-area-638-592",
+   "category": "dz_contaminated",
+   "name": "Extremely Contaminated Area",
+   "x": 1794,
+   "y": 518,
+   "approx": true
+  },
+  {
+   "id": "dz_contaminated-dz-extremely-contaminated-area-801-568",
+   "category": "dz_contaminated",
+   "name": "Extremely Contaminated Area",
+   "x": 1999,
+   "y": 550,
+   "approx": true
+  },
+  {
+   "id": "dz_contaminated-dz-extremely-contaminated-area-606-536",
+   "category": "dz_contaminated",
+   "name": "Extremely Contaminated Area",
+   "x": 1752,
+   "y": 578,
+   "approx": true
+  },
+  {
+   "id": "dz_contaminated-dz-extremely-contaminated-area-554-424",
+   "category": "dz_contaminated",
+   "name": "Extremely Contaminated Area",
+   "x": 1679,
+   "y": 707,
+   "approx": true
+  },
+  {
+   "id": "dz_contaminated-dz-extremely-contaminated-area-750-384",
+   "category": "dz_contaminated",
+   "name": "Extremely Contaminated Area",
+   "x": 1944,
+   "y": 763,
+   "approx": true
+  },
+  {
+   "id": "dz_contaminated-dz-extremely-contaminated-area-724-344",
+   "category": "dz_contaminated",
+   "name": "Extremely Contaminated Area",
+   "x": 1912,
+   "y": 813,
+   "approx": true
+  },
+  {
+   "id": "dz_contaminated-dz-extremely-contaminated-area-574-344",
+   "category": "dz_contaminated",
+   "name": "Extremely Contaminated Area",
+   "x": 1704,
+   "y": 809,
+   "approx": true
+  },
+  {
+   "id": "dz_contaminated-dz-extremely-contaminated-area-593-306",
+   "category": "dz_contaminated",
+   "name": "Extremely Contaminated Area",
+   "x": 1729,
+   "y": 860,
+   "approx": true
+  },
+  {
+   "id": "dz_contaminated-dz-extremely-contaminated-area-497-283",
+   "category": "dz_contaminated",
+   "name": "Extremely Contaminated Area",
+   "x": 1591,
+   "y": 888,
+   "approx": true
+  },
+  {
+   "id": "dz_contaminated-dz-extremely-contaminated-area-665-261",
+   "category": "dz_contaminated",
+   "name": "Extremely Contaminated Area",
+   "x": 1831,
+   "y": 923,
+   "approx": true
+  },
+  {
+   "id": "dz_contaminated-dz-extremely-contaminated-area-850-215",
+   "category": "dz_contaminated",
+   "name": "Extremely Contaminated Area",
+   "x": 2100,
+   "y": 991,
+   "approx": true
+  },
+  {
+   "id": "dz_contaminated-dz-extremely-contaminated-area-734-119",
+   "category": "dz_contaminated",
+   "name": "Extremely Contaminated Area",
+   "x": 1939,
+   "y": 1134,
+   "approx": true
+  },
+  {
+   "id": "dz_contaminated-dz-extremely-contaminated-area-667-119",
+   "category": "dz_contaminated",
+   "name": "Extremely Contaminated Area",
+   "x": 1836,
+   "y": 1134,
+   "approx": true
+  },
+  {
+   "id": "dz_contaminated-dz-extremely-contaminated-area-673-58",
+   "category": "dz_contaminated",
+   "name": "Extremely Contaminated Area",
+   "x": 1848,
+   "y": 1234,
+   "approx": true
+  },
+  {
+   "id": "dz_contaminated-dz-extremely-contaminated-area-586-208",
+   "category": "dz_contaminated",
+   "name": "Extremely Contaminated Area",
+   "x": 1716,
+   "y": 997,
+   "approx": true
+  },
+  {
+   "id": "dz_extraction-45st-extraction-zone",
+   "category": "dz_extraction",
+   "name": "45st Extraction Zone",
+   "x": 2070,
+   "y": 1132,
+   "approx": true
+  },
+  {
+   "id": "dz_extraction-36st-extraction-zone",
+   "category": "dz_extraction",
+   "name": "36st Extraction Zone",
+   "x": 1647,
+   "y": 1178,
+   "approx": true
+  },
+  {
+   "id": "dz_extraction-46st-extraction-zone",
+   "category": "dz_extraction",
+   "name": "46st Extraction Zone",
+   "x": 1728,
+   "y": 921,
+   "approx": true
+  },
+  {
+   "id": "dz_extraction-47st-extraction-zone",
+   "category": "dz_extraction",
+   "name": "47st Extraction Zone",
+   "x": 1678,
+   "y": 720,
+   "approx": true
+  },
+  {
+   "id": "dz_extraction-park-extraction-zone",
+   "category": "dz_extraction",
+   "name": "Park Extraction Zone",
+   "x": 1940,
+   "y": 542,
+   "approx": true
+  },
+  {
+   "id": "dz_extraction-extraction-zone-f",
+   "category": "dz_extraction",
+   "name": "Extraction Zone F",
+   "x": 1704,
+   "y": 478,
+   "approx": true
+  },
+  {
+   "id": "dz_extraction-extraction-zone-g",
+   "category": "dz_extraction",
+   "name": "Extraction Zone G",
+   "x": 1504,
+   "y": 421,
+   "approx": true
+  },
+  {
+   "id": "dz_extraction-extraction-zone-h",
+   "category": "dz_extraction",
+   "name": "Extraction Zone H",
+   "x": 1594,
+   "y": 289,
+   "approx": true
+  },
+  {
+   "id": "dz_landmark-q-building",
+   "category": "dz_landmark",
+   "name": "Q Building",
+   "x": 1747,
+   "y": 288,
+   "difficulty": "Heroic",
+   "approx": true
+  },
+  {
+   "id": "dz_landmark-the-pit",
+   "category": "dz_landmark",
+   "name": "The Pit",
+   "x": 1803,
+   "y": 377,
+   "difficulty": "Normal",
+   "approx": true
+  },
+  {
+   "id": "dz_landmark-midtown-music",
+   "category": "dz_landmark",
+   "name": "Midtown Music",
+   "x": 1652,
+   "y": 335,
+   "difficulty": "Hard",
+   "approx": true
+  },
+  {
+   "id": "dz_landmark-arch-plaza",
+   "category": "dz_landmark",
+   "name": "Arch Plaza",
+   "x": 1694,
+   "y": 632,
+   "difficulty": "Normal",
+   "approx": true
+  },
+  {
+   "id": "dz_landmark-abandoned-office",
+   "category": "dz_landmark",
+   "name": "Abandoned Office",
+   "x": 1986,
+   "y": 644,
+   "difficulty": "Hard",
+   "approx": true
+  },
+  {
+   "id": "dz_landmark-refueling-station",
+   "category": "dz_landmark",
+   "name": "Refueling Station",
+   "x": 1879,
+   "y": 719,
+   "difficulty": "Hard",
+   "approx": true
+  },
+  {
+   "id": "dz_landmark-garden-war",
+   "category": "dz_landmark",
+   "name": "Garden War",
+   "x": 1772,
+   "y": 792,
+   "difficulty": "Normal",
+   "approx": true
+  },
+  {
+   "id": "dz_landmark-kalkesse-sports-store",
+   "category": "dz_landmark",
+   "name": "Kalkesse Sports Store",
+   "x": 1845,
+   "y": 863,
+   "difficulty": "Challenging",
+   "approx": true
+  },
+  {
+   "id": "dz_landmark-construction-site",
+   "category": "dz_landmark",
+   "name": "Construction Site",
+   "x": 1970,
+   "y": 995,
+   "difficulty": "Challenging",
+   "approx": true
+  },
+  {
+   "id": "dz_landmark-blockade",
+   "category": "dz_landmark",
+   "name": "Blockade",
+   "x": 1880,
+   "y": 1069,
+   "difficulty": "Normal",
+   "approx": true
+  },
+  {
+   "id": "dz_landmark-korean-shopping-street",
+   "category": "dz_landmark",
+   "name": "Korean Shopping Street",
+   "x": 1763,
+   "y": 1181,
+   "difficulty": "Normal",
+   "approx": true
+  },
+  {
+   "id": "dz_landmark-the-library",
+   "category": "dz_landmark",
+   "name": "The Library",
+   "x": 2080,
+   "y": 870,
+   "difficulty": "Normal",
+   "approx": true
+  },
+  {
+   "id": "dz_leader-dz-dz-enemy-leader-challenging-503-841",
+   "category": "dz_leader",
+   "name": "DZ Enemy Leader",
+   "x": 1637,
+   "y": 269,
+   "difficulty": "Challenging",
+   "approx": true
+  },
+  {
+   "id": "dz_leader-dz-dz-enemy-leader-challenging-484-628",
+   "category": "dz_leader",
+   "name": "DZ Enemy Leader",
+   "x": 1600,
+   "y": 474,
+   "difficulty": "Challenging",
+   "approx": true
+  },
+  {
+   "id": "dz_leader-dz-dz-enemy-leader-heroic-545-418",
+   "category": "dz_leader",
+   "name": "DZ Enemy Leader",
+   "x": 1667,
+   "y": 714,
+   "difficulty": "Heroic",
+   "approx": true
+  },
+  {
+   "id": "dz_leader-dz-dz-enemy-leader-challenging-700-226",
+   "category": "dz_leader",
+   "name": "DZ Enemy Leader",
+   "x": 1883,
+   "y": 972,
+   "difficulty": "Challenging",
+   "approx": true
+  },
+  {
+   "id": "dz_leader-dz-dz-enemy-leader-challenging-760-66",
+   "category": "dz_leader",
+   "name": "DZ Enemy Leader",
+   "x": 1983,
+   "y": 1220,
+   "difficulty": "Challenging",
+   "approx": true
+  }
+ ]
 }

@@ -12,6 +12,6 @@ const { Content, headings } = await render(post);
 const wordCount = post.body ? post.body.replace(/<[^>]+>/g, ' ').trim().split(/\s+/).filter(Boolean).length : 0;
 ---
 
-<NewsLayout title={post.data.title} description={post.data.description} publishDate={post.data.publishDate} author={post.data.author} tags={post.data.tags} image={post.data.featuredImage} imageAlt={post.data.imageAlt} parentPath="/news/" parentLabel="News" headings={headings} shareTitle={post.data.shareTitle} shareText={post.data.shareText} faqs={post.data.faqs} wordCount={wordCount}>
+<NewsLayout title={post.data.title} description={post.data.description} publishDate={post.data.publishDate} updatedDate={post.data.updatedDate} author={post.data.author} tags={post.data.tags} image={post.data.featuredImage} imageAlt={post.data.imageAlt} parentPath="/news/" parentLabel="News" headings={headings} shareTitle={post.data.shareTitle} shareText={post.data.shareText} faqs={post.data.faqs} wordCount={wordCount}>
   <Content />
 </NewsLayout>

@@ -1,0 +1,12 @@
+{
+  "_about": "Drives the 'Live now' strip on the homepage. Update when a new season or phase goes live (see AUTOMATION.md). Every claim here must match an official Ubisoft source.",
+  "season": "Season 2 Phase 2",
+  "since": "2026-09-16",
+  "headline": "Diamondback exotic on the Classified Ops pass. Ubisoft extended this phase until a much bigger update later this year.",
+  "links": [
+    { "label": "Patch notes", "href": "/patch-notes/season-2-phase-2/" },
+    { "label": "Why it was extended", "href": "/news/season-2-phase-2-extended/" },
+    { "label": "Interactive map", "href": "/division-resurgence-interactive-map/" }
+  ],
+  "checked": "2026-10-24"
+}

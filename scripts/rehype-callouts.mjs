@@ -15,7 +15,11 @@ import { visit } from 'unist-util-visit';
  *   > Critical information here.
  */
 
-const CALLOUT_RE = /^\[!(INFO|WARNING|DANGER)\]\s*(.*)/;
+// [ \t]* (not \s*) so an untitled callout never swallows the first body line as its title.
+const CALLOUT_RE = /^\s*\[!(INFO|WARNING|DANGER|NOTE|TIP|IMPORTANT|CAUTION)\][ \t]*(.*)/;
+
+// GitHub-style aliases map onto the three styled variants.
+const ALIASES = { NOTE: 'INFO', TIP: 'INFO', IMPORTANT: 'WARNING', CAUTION: 'WARNING' };
 
 const DEFAULT_TITLES = {
   INFO: 'Info',
@@ -46,7 +50,11 @@ function findFirstTextNode(node) {
   if (node.type === 'text') return { textNode: node, parent: null };
   if (node.children) {
     for (const child of node.children) {
-      if (child.type === 'text') return { textNode: child, parent: node };
+      if (child.type === 'text') {
+        // Skip whitespace-only nodes (the newline at the start of every blockquote).
+        if (!child.value.trim()) continue;
+        return { textNode: child, parent: node };
+      }
       const deeper = findFirstTextNode(child);
       if (deeper) return deeper;
     }
@@ -67,7 +75,7 @@ export default function rehypeCallouts() {
       const match = textNode.value.match(CALLOUT_RE);
       if (!match) return;
 
-      const calloutType = match[1]; // INFO | WARNING | DANGER
+      const calloutType = ALIASES[match[1]] || match[1]; // INFO | WARNING | DANGER
       const customTitle = match[2].trim();
       const title = customTitle || DEFAULT_TITLES[calloutType];
       const typeLower = calloutType.toLowerCase();
@@ -77,7 +85,7 @@ export default function rehypeCallouts() {
       // remove it.
       textNode.value = textNode.value
         .replace(CALLOUT_RE, '')
-        .replace(/^\n/, '');
+        .replace(/^\r?\n/, '');
 
       // Build the body children — reuse the blockquote's existing children
       // (which now have the tag line stripped).

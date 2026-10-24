@@ -277,7 +277,7 @@
   {
     "id": "wt-54",
     "name": "Steady Reload",
-    "description": "Reloading grants +18% Weapon Damage for 5 seconds, up to 5 stacks."
+    "description": "Reloading grants +5% Weapon Damage for 10 seconds, up to 5 stacks. (Season 2 Phase 1: 18% → 5% Weapon Damage, duration 5s → 10s, and the hidden bonus some weapons got from bolting was removed.)"
   },
   {
     "id": "wt-55",
@@ -294,7 +294,7 @@
   {
     "id": "wt-57",
     "name": "Strained",
-    "description": "Firing for 0.50 seconds grants +10% Critical Hit Damage for 5 seconds, up to 3 stacks."
+    "description": "Firing for 0.50 seconds grants +10% Critical Hit Damage for 5 seconds, up to 3 stacks. (Season 2 Phase 2 tooltip fix: the in-game text said 7.3% for tier 1 and 10.2% for tier 2; the real values are 10% and 14%.)"
   },
   {
     "id": "wt-58",
@@ -332,7 +332,7 @@
   {
     "id": "wt-64",
     "name": "Target Acquisition",
-    "description": "Hitting an enemy 5 consecutive times inflicts +2.50% Incoming Damage on them for 5 seconds, up to 3 stacks."
+    "description": "Hitting an enemy 5 consecutive times inflicts +2.50% Incoming Damage on them for 5 seconds, up to 3 stacks. (Not the Commando specialization talent of the same name that Season 2 Phase 1 nerfed.)"
   },
   {
     "id": "wt-65",

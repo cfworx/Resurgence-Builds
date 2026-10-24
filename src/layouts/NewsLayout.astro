@@ -9,6 +9,8 @@ export interface Props {
   title: string;
   description: string;
   publishDate: Date;
+  /** Set when a published post is materially corrected or updated. */
+  updatedDate?: Date;
   author: string;
   tags: string[];
   parentPath: string;
@@ -22,19 +24,17 @@ export interface Props {
   wordCount?: number;
 }
 
-const { title, description, publishDate, author, tags, parentPath, parentLabel, image, imageAlt, shareTitle, shareText, headings = [], faqs = [], wordCount } = Astro.props;
+const { title, description, publishDate, updatedDate, author, tags, parentPath, parentLabel, image, imageAlt, shareTitle, shareText, headings = [], faqs = [], wordCount } = Astro.props;
 
 const twitterShareUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(title)}&url=${encodeURIComponent(Astro.url.href)}`;
 const redditShareUrl = `https://reddit.com/submit?url=${encodeURIComponent(Astro.url.href)}&title=${encodeURIComponent(title)}`;
 
 const tocItems = headings.filter(h => h.depth <= 3);
 
-const formattedDate = publishDate.toLocaleDateString('en-US', {
-  weekday: 'long',
-  month: 'long',
-  day: 'numeric',
-  year: 'numeric',
-});
+const dateFmt: Intl.DateTimeFormatOptions = { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC' };
+const formattedDate = publishDate.toLocaleDateString('en-US', dateFmt);
+const showUpdated = !!updatedDate && updatedDate.getTime() - publishDate.getTime() > 24 * 3600 * 1000;
+const formattedUpdated = showUpdated ? updatedDate!.toLocaleDateString('en-US', dateFmt) : '';
 
 const breadcrumbItems = [
   { name: parentLabel, url: parentPath },
@@ -63,7 +63,7 @@ const speakableLd = {
   ogImage={image}
   article={{
     publishDate: publishDate.toISOString(),
-    modifiedDate: publishDate.toISOString(),
+    modifiedDate: (showUpdated ? updatedDate! : publishDate).toISOString(),
     author,
     tags,
     ...(wordCount && { wordCount }),
@@ -85,6 +85,7 @@ const speakableLd = {
         <span>By <a href={getAuthorUrl(author)} style="color: var(--accent); text-decoration: none;">{author}</a></span>
         <span>·</span>
         <time datetime={publishDate.toISOString()}><strong>Published:</strong> {formattedDate}</time>
+        {showUpdated && (<><span>·</span><time datetime={updatedDate!.toISOString()}><strong>Updated:</strong> {formattedUpdated}</time></>)}
       </div>
 
       {image && (

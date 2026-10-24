@@ -13,11 +13,12 @@ import bodyArmorTalents from '../../data/body-armor-talents.json';
 import bonusAttributes from '../../data/bonus-attributes.json';
 import gearSetEffects from '../../data/gear-set-effects.json';
 import exoticWeapons from '../../data/exotic-weapons.json';
+import dropRates from '../../data/drop-rates.json';
 import { verifiedPatch } from '../../data/site-config';
 const lastVerified = verifiedPatch('Patch 1.1.2.2'); // Bump: drop the arg ONLY after re-verifying this page's content in-game (CURRENT_PATCH is a ceiling, not an auto-bump)
 
 const title = "The Division Resurgence Database";
-const description = `Complete Division Resurgence database - OS Protocols, weapons, gear sets, talents, skill mods, and bonus attributes. Every stat verified in-game for ${lastVerified}.`;
+const description = `Division Resurgence database: OS Protocols, weapons, gear sets, talents, skill mods and bonus attributes, updated for the Season 2 Phase 2 patch notes.`;
 
 const breadcrumbs = [
   { name: 'Database', url: '/database/' }
@@ -29,7 +30,7 @@ const sections = [
     href: '/database/os-protocols/',
     count: osProtocols.length,
     description: 'Every OS Protocol in the game with stats, talents, and build recommendations. Your sixth gear slot.',
-    icon: '?',
+    icon: 'chip',
     color: '#F5CC45',
   },
   {
@@ -37,7 +38,7 @@ const sections = [
     href: '/database/skill-mod-combos/',
     count: skillModCombos.length,
     description: 'Firmware set bonuses for every skill. Stack the right mods and your skills hit twice as hard.',
-    icon: '?',
+    icon: 'layers',
     color: '#3b82f6',
   },
   {
@@ -45,15 +46,15 @@ const sections = [
     href: '/database/weapon-talents/',
     count: weaponTalents.length,
     description: 'Every weapon talent with proc conditions, damage values, and which builds they fit.',
-    icon: '?',
+    icon: 'bolt',
     color: '#ef4444',
   },
   {
     title: 'Weapons',
     href: '/database/weapons/',
     count: standardWeapons.length,
-    description: 'Standard weapon stats - RPM, magazine, damage type. ARs, SMGs, LMGs, MMRs, and shotguns.',
-    icon: '??',
+    description: 'Standard weapon stats: RPM, magazine and talents. ARs, SMGs, LMGs, MMRs, rifles and shotguns.',
+    icon: 'crosshair',
     color: '#F26822',
   },
   {
@@ -61,7 +62,7 @@ const sections = [
     href: '/database/backpack-talents/',
     count: backpackTalents.length,
     description: 'Backpack talent breakdowns with tier comparisons and recommended gear set pairings.',
-    icon: '??',
+    icon: 'backpack',
     color: '#6DAA45',
   },
   {
@@ -69,7 +70,7 @@ const sections = [
     href: '/database/body-armor-talents/',
     count: bodyArmorTalents.length,
     description: 'Body Armor piece talents ranked by archetype. Toymaker, Glass Cannon, Deep Focus, and more.',
-    icon: '??',
+    icon: 'shield',
     color: '#a855f7',
   },
   {
@@ -77,7 +78,7 @@ const sections = [
     href: '/database/bonus-attributes/',
     count: bonusAttributes.length,
     description: 'Every bonus attribute that can roll on gear. Know what to chase and what to trash.',
-    icon: '??',
+    icon: 'sliders',
     color: '#14b8a6',
   },
   {
@@ -85,7 +86,7 @@ const sections = [
     href: '/database/gear-set-effects/',
     count: gearSetEffects.length,
     description: 'Full breakdown of every gear set - 2pc through 4pc bonuses, best-in-slot combinations.',
-    icon: '??',
+    icon: 'grid',
     color: '#f59e0b',
   },
   {
@@ -93,21 +94,42 @@ const sections = [
     href: '/database/exotic-weapons/',
     count: exoticWeapons.length,
     description: 'Every exotic weapon with unique talents, stat ranges, and how to farm each one.',
-    icon: '??',
+    icon: 'star',
     color: '#F26822',
   },
+  {
+    title: 'Official Drop Rates',
+    href: '/database/drop-rates/',
+    count: dropRates.caches.length,
+    description: "Ubisoft's own sealed cache odds: every cache, every item, every pity timer. Including the mystery exotic.",
+    icon: 'dice',
+    color: '#22d3ee',
+  },
 ];
+
+const ICON_SVG: Record<string, string> = {
+  chip: '<rect x="7" y="7" width="10" height="10" rx="1"/><path d="M9 3v4M15 3v4M9 17v4M15 17v4M3 9h4M3 15h4M17 9h4M17 15h4"/>',
+  layers: '<path d="M12 3l9 5-9 5-9-5z"/><path d="M3 13l9 5 9-5"/>',
+  bolt: '<path d="M13 2L4 14h7l-1 8 9-12h-7z"/>',
+  crosshair: '<circle cx="12" cy="12" r="8"/><path d="M12 2v5M12 17v5M2 12h5M17 12h5"/>',
+  backpack: '<path d="M6 8a6 6 0 0 1 12 0v12H6z"/><path d="M9 8V6a3 3 0 0 1 6 0v2M9 14h6"/>',
+  shield: '<path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/>',
+  sliders: '<path d="M4 6h10M18 6h2M4 12h4M12 12h8M4 18h12M20 18h0"/><circle cx="16" cy="6" r="2"/><circle cx="10" cy="12" r="2"/><circle cx="18" cy="18" r="2"/>',
+  grid: '<rect x="4" y="4" width="7" height="7" rx="1"/><rect x="13" y="4" width="7" height="7" rx="1"/><rect x="4" y="13" width="7" height="7" rx="1"/><rect x="13" y="13" width="7" height="7" rx="1"/>',
+  star: '<path d="M12 3l2.6 5.6 6.1.7-4.5 4.2 1.2 6L12 16.9l-5.4 2.6 1.2-6-4.5-4.2 6.1-.7z"/>',
+  dice: '<rect x="4" y="4" width="16" height="16" rx="3"/><circle cx="9" cy="9" r="1.2"/><circle cx="15" cy="15" r="1.2"/><circle cx="15" cy="9" r="1.2"/><circle cx="9" cy="15" r="1.2"/>',
+};
 
 const totalItems = sections.reduce((sum, s) => sum + s.count, 0);
 
 const faqs = [
   {
     question: "How is the Resurgence Builds database different from a wiki?",
-    answer: "Every entry in our database is verified in-game on the current patch. We don't copy-paste data mines or rely on beta information that's been wrong for six months. When a stat says +24% Skill Intensity, someone on our team has opened the tooltip and confirmed it. The wiki can't say that."
+    answer: "We actually open the tooltips. Every entry was checked in-game for the patch on its 'Last verified' stamp, and when Ubisoft's official patch notes change a number after that (Season 1 Phase 3 through Season 2 Phase 2 so far), we update it from the notes and flag the change on the entry instead of pretending we re-tested it. We don't copy-paste data mines or rely on beta information that's been wrong for six months."
   },
   {
     question: "How often is the database updated?",
-    answer: "We update within 48 hours of every patch and hotfix. When Ubisoft changes a talent, a gear set bonus, or a weapon stat, we verify the new values in-game and update the database before publishing. Every page has a 'Last verified for Patch X.X.X' stamp so you know exactly how fresh the data is."
+    answer: "Less often than our old FAQ bragged. The site went quiet after July 4, 2026, and the October 2026 refresh applied the official changes from Season 1 Phase 3 through Season 2 Phase 2 that touch our entries, straight from Ubisoft's patch notes. Every page keeps its 'Last verified for Patch X.X.X' stamp so you know when we last checked it in-game, and entries a later patch changed carry a note saying so."
   },
   {
     question: "Can I use this database with the Build Planner?",
@@ -125,7 +147,7 @@ const articleLd = {
   publisher: { '@type': 'Organization', '@id': `${siteUrl}/#organization`, name: 'Resurgence Builds' },
   mainEntityOfPage: { '@type': 'WebPage', '@id': `${siteUrl}/database/` },
   datePublished: '2026-05-30',
-  dateModified: '2026-05-31',
+  dateModified: '2026-10-24',
 };
 ---
 
@@ -141,14 +163,14 @@ const articleLd = {
     </div>
 
     <p style="color: var(--ink-muted); margin-bottom: var(--sp-8); font-size: var(--text-base); max-width: 70ch; line-height: 1.7;">
-      Every stat, talent, and gear set bonus in Division Resurgence - verified in-game and updated within 48 hours of every patch. This isn't a data mine dump from six months ago. If it's in this database, someone on the team opened the tooltip and confirmed it on the current live build. Use it to plan your loadouts, check talent interactions, and stop guessing whether that Reddit post from March is still accurate. Spoiler: it's not.
+      Every stat, talent, and gear set bonus in Division Resurgence, checked in-game for the patch on each page's stamp. This isn't a data mine dump from six months ago. When Ubisoft's official patch notes changed a value later (Season 1 Phase 3 through Season 2 Phase 2), we updated it from those notes and flagged it on the entry. Use it to plan your loadouts, check talent interactions, and stop guessing whether that Reddit post from March is still accurate. Spoiler: it's not.
     </p>
 
     <div class="db-index-grid">
       {sections.map(section => (
         <a href={section.href} class="db-index-card">
           <div class="db-index-card__icon" style={`color: ${section.color}; border-color: ${section.color};`}>
-            <span>{section.icon}</span>
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" set:html={ICON_SVG[section.icon] || ICON_SVG.grid}></svg>
           </div>
           <div class="db-index-card__body">
             <div style="display: flex; align-items: baseline; gap: var(--sp-2); margin-bottom: var(--sp-1);">
@@ -157,7 +179,7 @@ const articleLd = {
             </div>
             <p class="db-index-card__desc">{section.description}</p>
           </div>
-          <span class="db-index-card__arrow">?</span>
+          <span class="db-index-card__arrow" aria-hidden="true">→</span>
         </a>
       ))}
     </div>

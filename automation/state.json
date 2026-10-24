@@ -1,0 +1,122 @@
+{
+  "_readme": "Memory for the daily content run. See AUTOMATION.md. Add every source item you evaluate (published or not) so the next run skips it. Dates are UTC.",
+  "lastRun": "2026-10-24",
+  "lastRunSummary": "Initial state written during the October 2026 site revamp. Everything below was already covered on the site.",
+  "season": {
+    "current": "Season 2 Phase 2",
+    "liveSince": "2026-09-16",
+    "note": "Extended on 2026-10-21 'until we are ready to release a much bigger update later this year'. No Season 2 Phase 3 or Season 3 date announced as of 2026-10-24."
+  },
+  "steam": {
+    "appId": 3749720,
+    "latestDate": "2026-10-19T16:00:00Z",
+    "seen": [
+      "2026-10-19 Lethal Stinger Lichen & New Speedrun Challenge",
+      "2026-09-18 Save 40% on this exclusive Starter Pack for a limited time only!",
+      "2026-09-16 Victory Favors the Prepared",
+      "2026-09-15 Season 2 Phase 2 - PATCH NOTES",
+      "2026-09-04 Weekend event - Speedrun the mission 'A New Enemy' for extra rewards",
+      "2026-08-27 BIGHORN Special weekend event!",
+      "2026-08-21 Paratroopers storm the Castle in Division Resurgence",
+      "2026-08-10 PC Gamer: Free-to-play Division game launches on Steam to mixed reviews",
+      "2026-08-06 The Call has gone out",
+      "2026-08-05 The Division Resurgence Is Now Available on Steam",
+      "2026-06-05 PC Gamer: Ubisoft's free-to-play Division shooter is coming to Steam",
+      "2026-06-05 Wishlist Available Now!"
+    ]
+  },
+  "helpCenterPatchNotes": {
+    "section": "https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/section/539-patch-notes/",
+    "seenArticleIds": [2566, 2521, 2517, 2513, 2511, 2508, 2494],
+    "note": "Season 2 Phase 1 notes were never posted here (Reddit only, mirrored on The Division Wiki). October 2026 hotfix notes were posted on the official subreddit only."
+  },
+  "subredditPatchPosts": {
+    "note": "Only knowable from owner-provided Reddit exports. Seen so far:",
+    "seen": [
+      "1wvvgb2 Patch notes - Revive bug fix! (2026-10-02, u/TDResurgence)",
+      "1wzb767 Client Update (2026-10-06, u/JokerUnique)",
+      "1x5t0uj 14/10/2026 - Patch Notes (2026-10-14, u/Ticksyy)",
+      "1xbs571 Mitigation Update for Season 2 Phase 2 (2026-10-21, u/Ticksyy)"
+    ]
+  },
+  "ubisoftNews": {
+    "page": "https://www.ubisoft.com/en-us/game/the-division/resurgence/news-updates",
+    "seenIds": ["1R5zWiBS0MQZNcWGYkroYT", "1dqH85Pad1ydYGwCOdlDp7", "wE8oLT7RqyLCfnCJomXij", "5LqRsprrdgtEnUmStmBi0d", "3ygDDXxg6dv6aQD5MJvbKv"]
+  },
+  "newsUbisoftCom": {
+    "seenIds": ["2vmOLuRVDMIMBxG3MZlPQX", "7MMMG14zd82UNs7zcmOv6t", "48gDtCz7vtOCbF5JwskUPc", "9ZzMWcx5ADnaxAiOO3e0w"]
+  },
+  "x": {
+    "account": "TheDivMobile",
+    "latestSeenStatusId": "2113661727141495079",
+    "latestSeenDate": "2026-10-23",
+    "seen": [
+      "2113661727141495079 Fun Fact Friday: 34.5 million dismantled (2026-10-23)",
+      "2112936959467561123 Season 2 Phase 2 extended (2026-10-21)",
+      "2112212178132447234 We have a letter for you! (2026-10-19)",
+      "2111487408558444785 Liberty & Justice for All reminder (2026-10-17)",
+      "2111125021636669911 Milky Way Weapon Cosmetic now available (2026-10-16)"
+    ]
+  },
+  "bugReporter": {
+    "url": "https://www.ubisoft.com/en-us/game/the-division/the-division-resurgence/bug-reporter/issues",
+    "lastRoundupPost": "2026-09-22",
+    "statuses": {
+      "TDR-67": "Done (2026-10-15)",
+      "TDR-81": "In Progress (2026-09-17)",
+      "TDR-99": "Done (2026-09-29)",
+      "TDR-100": "Done (2026-08-27)",
+      "TDR-104": "Done (2026-09-22)",
+      "TDR-108": "Done (2026-09-22)",
+      "TDR-111": "In Progress (2026-08-26)",
+      "TDR-115": "In Progress (2026-10-23)",
+      "TDR-135": "Done (2026-09-22)",
+      "TDR-141": "Done (2026-09-22)",
+      "TDR-157": "Deprioritized (2026-09-03)",
+      "TDR-175": "Done (2026-10-02)",
+      "TDR-479": "In Progress (2026-09-25)",
+      "TDR-493": "Done (2026-10-15)",
+      "TDR-537": "Planned (2026-10-23)",
+      "TDR-556": "Done (2026-10-02)",
+      "TDR-652": "unknown (community suggestion: recalibrate one attribute on mods)"
+    }
+  },
+  "dropRates": {
+    "url": "https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2522-drop-rates/",
+    "checked": "2026-10-24",
+    "sourceUpdatedApprox": "2026-09-09",
+    "dataFile": "src/data/drop-rates.json"
+  },
+  "codesGuide": {
+    "file": "src/content/guides/division-resurgence-codes.md",
+    "titleMonth": "October 2026",
+    "publicCodesKnown": false
+  },
+  "ownerFiles": {
+    "transcripts": [
+      "Dem_2x - ITS JUST NOT FAIR",
+      "GGReborn - BEST Tactical Pharma Build + Solo Legendary Gameplay",
+      "GGReborn - BEST VANGUARD BUILD Legendary Gameplay High DPS",
+      "GGReborn - How Good Is Collateral Damage OS for SOLO LEGENDARY",
+      "GGReborn - How Stats REALLY Work, Testing 3 Builds",
+      "GGReborn - Is This the Easiest Solo Build for On The Radio Legendary",
+      "GGReborn - SOLO LEGENDARY with VANGUARD! Full Build & Gameplay",
+      "GGReborn - This Tactical Pharma Build with Chain Reaction OS Is INSANE",
+      "GGReborn - Which OS Protocol Is BEST? Testing 4 Protocols",
+      "GGReborn - Why Your Division Resurgence Gear Build Is Failing You",
+      "GameJoy Explained - Only 3 Mins Needed To Decide If You Should Play The Division Resurgence on Steam",
+      "Oldfartsgaming - 7 Things I Wish I Knew Before Endgame",
+      "SperoPatria - my Offensive Operations build",
+      "TikTokAndy - Best Automatic Double Barrel Shotgun Build",
+      "TikTokAndy - Tactical Pharma build and Dark Zone PvP (Oct 15)",
+      "TikTokAndy - UNLIMITED Purple & Gold Mods & Weapon Attachments",
+      "Ubisoft - Season 2 Phase 1 is now live",
+      "Vacantknight - Is The Division Resurgence Actually Worth Playing?"
+    ],
+    "redditExports": ["top_month-2026-10-24.json", "new-2026-10-24.json"],
+    "unusedLeads": [
+      "GGReborn's Vanguard Legendary build, On The Radio solo build and Collateral Damage OS test (possible future build posts)",
+      "SperoPatria's Offensive Operations (Tech Operator) build (possible future build post)"
+    ]
+  }
+}

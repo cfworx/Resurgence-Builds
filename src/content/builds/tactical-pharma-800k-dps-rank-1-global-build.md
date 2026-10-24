@@ -6,7 +6,7 @@ playstyle: DPS
 pve: true
 pvp: true
 lastUpdated: 2026-05-28T00:00:00Z
-patch: "Season 1 · Phase 3"
+patch: "1.2.1"
 tags: ["Tactical Pharma", "jackpot", "fire-cycle", "chemical-trap", "glass-cannon", "backup-battery", "roguemadras", "field-medic-build", "800k-dps", "skill-damage"]
 description: "RogueMadras's 800k DPS Tactical Pharma build: Chemical Trap + Oxidizing Hive, Jackpot 4pc, Fire Cycle 2pc. Full gear, talents, and skill mods."
 author: "RapidF5 (via RogueMadras)"
@@ -22,7 +22,7 @@ sources:
 plannerHash: "s=Field+Medic&sc=Tactical+Pharma&n=Tactical+Pharma+800k&ms=gs-7&m1=Skill+Critical+Damage&m2=Skill+Critical+Chance&cs=gs-11&ct=ba-12&c1=Skill+Critical+Chance&c2=Skill+Intensity&ps=gs-7&pt=bp-19&p1=Skill+Multi-Shot+Chance&p2=Skill+Critical+Chance&gs=gs-11&g1=Skill+Intensity&g2=Skill+Critical+Chance&hs=gs-11&h1=Skill+Intensity&h2=Skill+Multi-Shot+Chance&ks=gs-11&k1=Skill+Critical+Damage&k2=Skill+Critical+Chance&w1s=sw-11&w1tr=T2&w1t=wt-4&w1t2=wt-5&w2s=sw-33&w2tr=T1&w2t=wt-30&w2t2=wt-31&os=os-20&sm1=smc-75&sm2=smc-79&sm3=smc-76"
 faqs:
   - question: "What is the best Field Medic build in Division Resurgence?"
-    answer: "You're reading it. RogueMadras's Tactical Pharma build is the highest-DPS skill build in the game right now, pushing 800k+ DPS with optimized gear. It uses Chemical Trap and Oxidizing Hive as slotted skills, with Oxidizing Swarm as the signature ability, to dissolve entire rooms while your guns sit there collecting Engineering stacks like participation trophies. If your idea of 'healing' is making sure the enemies die before your teammates need healing, welcome home."
+    answer: "You're reading it. RogueMadras's Tactical Pharma build was the highest-DPS skill build we'd seen when this was written in Season 1, pushing 800k+ DPS with optimized gear. It uses Chemical Trap and Oxidizing Hive as slotted skills, with Oxidizing Swarm as the signature ability, to dissolve entire rooms while your guns sit there collecting Engineering stacks like participation trophies. If your idea of 'healing' is making sure the enemies die before your teammates need healing, welcome home."
   - question: "Can I run this Tactical Pharma build in the Dark Zone?"
     answer: "You can, and it's actually hilarious for area denial at extractions. Drop a chemical trap on the rope, watch rogues walk into it, and type 'Geneva was a suggestion' in chat. The downside is that if someone rushes you with a Lady Death, your chemical cloud won't save you from the burst damage. Keep distance. You're a war criminal, not a brawler."
   - question: "Is Glass Cannon worth the risk on this Tactical Pharma build?"
@@ -42,9 +42,16 @@ videoChannel: "RogueMadras"
 
 > Build credit: [**RogueMadras**](https://www.youtube.com/@RogueMadras). He just released an [updated build video](https://www.youtube.com/watch?v=1dAkSWoR7co) walking through his latest Tactical Pharma setup, the same build that pushed him to **Rank 1 Global**. You can also watch his [original gameplay breakdown](https://www.youtube.com/watch?v=orBlCP7ro4I&t=3351s).
 
-We originally covered this build as the "Geneva Suggestion." RogueMadras has since optimized it further for Division Resurgence Season 1 Phase 3 (ahead of the Season 2 launch coming with the full PC release in August), so we're updating everything. **800k+ DPS.** Rank 1 Global. On the Tactical Pharma specialization.
+We originally covered this build as the "Geneva Suggestion." RogueMadras has since optimized it further during Season 1 Phase 2 (ahead of the Season 2 launch, which arrived alongside the Steam release on August 5, 2026), so we're updating everything. **800k+ DPS.** Rank 1 Global. On the Tactical Pharma specialization.
 
 This is a skill-damage build that uses **Chemical Trap** and **Oxidizing Hive** as slotted skills, with **Oxidizing Swarm** as the signature ability providing automated corrosive pressure. Weapons exist to generate Engineering stacks, not to kill. The core loop is straightforward: throw Chemical Trap at a choke point, swap weapons to trigger Backup Battery (+22.50% Engineering) and Prime Engineer 2 (+31.50% Engineering), then deploy Oxidizing Hive for sustained corrosive damage. Pop Oxidizing Swarm (signature) when available for burst pressure. Swap to MK16 to stack Skill Multi-Shot, and repeat as cooldowns come back. The build scales entirely through Engineering, Skill Crit, and Skill Multi-Shot.
+
+> [!WARNING] Season 2 changes that affect this build
+> - **Weapon mods (Season 2 Phase 1):** New weapon mods get +100% main stat (bigger Engineering on your attachments) and -25% bonus attributes, and their bonus pool now includes Skill Intensity % and Skill Critical Damage %. Old mods keep their rolls; leveling them updates their growth to the new values.
+> - **Gear mods (Season 2 Phase 1):** The gear mod bonus pool now includes Skill Crit Chance, Skill Crit Damage, Skill Multi-Shot Chance and Skill Intensity, so the sub-rolls on those 12 Engineering mods can finally carry this build's stats.
+> - Everything else named here (Jackpot, Fire Cycle, Rampart and the other OS picks, the weapon and gear talents, and the three Tactical Pharma skill mods) wasn't changed by either Season 2 patch.
+>
+> This build has not been re-tested since its May 2026 update. Full details: [Season 2 Phase 1 patch notes](/patch-notes/season-2-phase-1-the-call/) and [Season 2 Phase 2 patch notes](/patch-notes/season-2-phase-2/).
 
 ---
 
@@ -105,8 +112,8 @@ His actual in-game numbers for reference:
 | Skill | Mod | Preferred Firmware |
 |---|---|---|
 | Chemical Trap | **Chemical Recharge** | **Chemical Trap Intensity** |
-| Oxidizing Hive | **Enhanced Formula** | **Oxidizing Hive Intensity** |
-| Oxidizing Swarm (Sig) | **Hereafter Resilience** | **Oxidizing Intensity** |
+| Oxidizing Hive | **Hereafter Resilience** | **Oxidizing Hive Intensity** |
+| Oxidizing Swarm (Sig) | **Enhanced Formula** | **Oxidizing Intensity** |
 
 > **Use Intensity, not Radius.** Radius increases area coverage. Intensity increases damage per tick. Intensity on all skills, always.
 
@@ -158,7 +165,7 @@ RogueMadras recommends **Rampart** as the best OS Protocol. He is currently runn
 
 *"While immobile, grants +5% Damage for 1 second, up to 6 stacks. This bonus resets upon moving."*
 
-"Immobile" means **not moving your character.** Just standing still. On a skill build where you position behind cover and deploy, this is a free +30% Damage with minimal effort. Rampart is recommended over alternatives because Glass Cannon and Prime Engineer already push your Engineering high enough that Rampart's flat +30% Damage acts as a multiplicative layer on top - rather than stacking more Engineering from the same additive pool.
+"Immobile" means **not moving your character.** Just standing still. On a skill build where you position behind cover and deploy, this is a free +30% Damage with minimal effort. Rampart is recommended over alternatives because Backup Battery and Prime Engineer already push your Engineering high enough that Rampart's flat +30% Damage acts as a multiplicative layer on top - rather than stacking more Engineering from the same additive pool.
 
 **Stats:** Skill Critical Chance +18.00%, Engineering +97, Skill Damage +77, Health +2,554.
 

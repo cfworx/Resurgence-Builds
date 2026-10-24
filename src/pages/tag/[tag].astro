@@ -72,7 +72,7 @@ export async function getStaticPaths() {
         description: post.data.description,
         type: 'News',
         tags: post.data.tags || [],
-        featuredImage: post.data.image,
+        featuredImage: post.data.featuredImage,
         imageAlt: post.data.imageAlt,
       });
     });

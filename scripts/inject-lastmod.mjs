@@ -54,7 +54,7 @@ try {
         if (filePathToRead) {
           const mdContent = fs.readFileSync(filePathToRead, 'utf8');
           // Match various date fields in frontmatter
-          const dateMatch = mdContent.match(/(?:lastUpdated|publishDate|patchDate|date):\s*"?(\d{4}-\d{2}-\d{2})/);
+          const dateMatch = mdContent.match(/^updatedDate:\s*"?(\d{4}-\d{2}-\d{2})/m) || mdContent.match(/(?:lastUpdated|publishDate|patchDate|date):\s*"?(\d{4}-\d{2}-\d{2})/);
           if (dateMatch && dateMatch[1]) {
             const lastmod = dateMatch[1];
             const replacement = `<url><loc>${url}</loc><lastmod>${lastmod}</lastmod>`;

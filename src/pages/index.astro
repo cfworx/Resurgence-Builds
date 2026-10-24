@@ -4,6 +4,7 @@ import SectionTag from '../components/SectionTag.astro';
 import PostCard from '../components/PostCard.astro';
 import AdSenseUnit from '../components/AdSenseUnit.astro';
 import { getCollection } from 'astro:content';
+import seasonStatus from '../data/season-status.json';
 
 // Fetch all content collections
 const allNews = await getCollection('news');
@@ -50,7 +51,8 @@ const posts: UnifiedPost[] = [
   ...allGuides.map((guide) => ({
     title: guide.data.title,
     href: `/guides/${guide.id}/`,
-    date: guide.data.lastUpdated,
+    // first-published date keeps refreshed evergreen guides from burying new posts
+    date: guide.data.publishDate ?? guide.data.lastUpdated,
     author: guide.data.author || 'Resurgence Builds',
     description: guide.data.description,
     type: 'guide' as const,
@@ -86,23 +88,23 @@ const filterTags = [
 const faqs = [
   {
     question: "What is Resurgence Builds?",
-    answer: "Resurgence Builds is an independent fan site for The Division Resurgence. We publish in-game tested builds, weapon tier lists, gear databases, patch note breakdowns, and guides. Everything is written by players who actually grind the game — no recycled wiki filler."
+    answer: "Resurgence Builds is an independent fan site for The Division Resurgence. We publish community builds, tier lists, a game database, an interactive map, patch note breakdowns and guides, and we check our claims against Ubisoft's official patch notes instead of recycling wiki filler."
   },
   {
     question: "What is The Division Resurgence?",
-    answer: "The Division Resurgence is a free-to-play open-world RPG shooter from Ubisoft, available on mobile and PC. It's set in the Division universe with five specializations, Dark Zone PvP, Legendary PvE missions, and a loot grind that will consume your free time like a black hole."
+    answer: "The Division Resurgence is Ubisoft's free-to-play open-world RPG shooter, set in post-crisis New York with its own storyline, separate from The Division and The Division 2. It launched on iOS and Android on March 31, 2026 and on PC through Steam and Ubisoft Connect on August 5, 2026. Expect five specializations, the Dark Zone, and a loot grind that will eat your free time like a black hole."
   },
   {
     question: "How often are builds and guides updated?",
-    answer: "We update builds and guides within 48 hours of major patches. Every piece of content has a Last Updated date so you can tell at a glance if it's current or ancient history."
+    answer: "Patch notes get covered as soon as Ubisoft publishes them. Builds and guides get re-checked when a patch touches them, and every page shows its Last Updated date and the patch it was checked against, so you can tell at a glance whether it is current or ancient history."
   },
   {
     question: "Is Division Resurgence free to play?",
-    answer: "Yes. The Division Resurgence is completely free to play on both mobile and PC. There are optional in-app purchases, but nothing on this site is paywalled either — all our builds and guides are free."
+    answer: "Yes, on mobile and PC. There are optional purchases, like the premium track of the Classified Ops pass and store cosmetics, but nothing on this site is paywalled either. All our builds and guides are free."
   },
   {
     question: "What platforms is Division Resurgence on?",
-    answer: "Division Resurgence is available on iOS, Android, and PC (via early access). Cross-play is supported, so your mobile squad can run with your PC friends."
+    answer: "iOS, Android and PC. The PC version left early access and launched on Steam and Ubisoft Connect on August 5, 2026. Mobile and PC players can play together on the same regional server, and since Season 2 Phase 1 there is a crossplay matchmaking selector, plus mobile-only groups can stay in mobile Dark Zone instances."
   },
 ];
 
@@ -121,10 +123,12 @@ const itemListLd = {
 
 <BaseLayout
   title="Division Resurgence Builds, Tier Lists & Guides"
-  description="The top independent wiki for The Division Resurgence. Discover the best mobile builds, weapon tier lists, patch notes, and class guides."
+  description="Independent Division Resurgence site for mobile and PC: builds, tier lists, patch notes, an interactive map and a game database."
   keywords={[
     "the division resurgence",
     "division resurgence mobile",
+    "division resurgence pc",
+    "division resurgence patch notes",
     "division resurgence guide",
     "division resurgence tier list",
     "division resurgence builds",
@@ -150,26 +154,33 @@ const itemListLd = {
         </p>
         <div class="hero__actions">
           <a href="/builds/" class="btn btn--primary">Browse Division Resurgence Builds</a>
+          <a href="/division-resurgence-interactive-map/" class="btn btn--outline">Open the Interactive Map</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Humility / Discord CTA Banner -->
+  <!-- Live season strip (data: src/data/season-status.json) -->
+  <section class="now-live" aria-label="What is live in The Division Resurgence right now">
+    <div class="now-live__inner container">
+      <span class="now-live__badge"><span class="now-live__dot" aria-hidden="true"></span>Live now</span>
+      <strong class="now-live__season">{seasonStatus.season}</strong>
+      <span class="now-live__headline">{seasonStatus.headline}</span>
+      <span class="now-live__links">
+        {seasonStatus.links.map((l) => <a href={l.href}>{l.label}</a>)}
+      </span>
+    </div>
+  </section>
+
+  <!-- Humility banner -->
   <div class="disclaimer-banner">
     <div class="disclaimer-banner__inner container">
       <div class="disclaimer-banner__icon">⚠️</div>
       <div class="disclaimer-banner__text">
-        <strong>Heads up, Agent.</strong> The Division Resurgence has approximately zero official documentation, the meta changes every patch, new information gets discovered daily, and half the community is still arguing about numbers from three updates ago. We try to test everything ourselves, but "we" is a middle-aged dad with a gut, a full-time job, and a bedtime of 10pm. This is a hobby. If you catch a mistake, a stale stat, or something that's just straight-up broken, drop it in <strong>#report-website-issues</strong> on our Discord.
+        <strong>Heads up, Agent.</strong> The Division Resurgence has very little official documentation beyond patch notes, the meta changes every patch, new information gets discovered daily, and half the community is still arguing about numbers from three updates ago. We try to test everything ourselves, but "we" is a middle-aged dad with a gut, a full-time job, and a bedtime of 10pm. This is a hobby. If you catch a mistake, a stale stat, or something that's just straight-up broken, tell us through the <a href="/contact/">contact page</a> and we will fix it.
       </div>
       <div class="disclaimer-banner__actions">
-        <a href="https://discord.gg/t6GTR6tpd" target="_blank" rel="noopener noreferrer" class="disclaimer-banner__btn">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true"><path d="M13.545 2.907a13.2 13.2 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.2 12.2 0 0 0-3.658 0 8 8 0 0 0-.412-.833.05.05 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.04.04 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032q.003.022.021.037a13.3 13.3 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019q.463-.63.818-1.329a.05.05 0 0 0-.01-.059l-.018-.011a9 9 0 0 1-1.248-.595.05.05 0 0 1-.02-.066l.015-.019q.127-.095.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.05.05 0 0 1 .053.007q.121.1.248.195a.05.05 0 0 1-.004.085 8 8 0 0 1-1.249.594.05.05 0 0 0-.03.03.05.05 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.2 13.2 0 0 0 4.001-2.02.05.05 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.03.03 0 0 0-.02-.019m-8.198 7.307c-.789 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612m5.316 0c-.788 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612"/></svg>
-          Report in Discord
-        </a>
-        <a href="https://buymeacoffee.com/resurgencebuilds" target="_blank" rel="noopener noreferrer" class="disclaimer-banner__btn disclaimer-banner__btn--coffee">
-          ☕ Buy me a coffee
-        </a>
+        <a href="/contact/" class="disclaimer-banner__btn">Report a mistake</a>
       </div>
     </div>
   </div>

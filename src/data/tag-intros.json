@@ -17,17 +17,17 @@
   "bulwark": {
     "slug": "bulwark",
     "title": "Bulwark",
-    "intro": "Bulwark is the tank class - Phalanx Shield out, Shockwave Spike stunning enemies for 5 seconds, and the entire squad playing behind your cover. The Juggernaut focus is the PvP terror of Division Resurgence right now: those stuns in the Dark Zone are a death sentence for anyone without a cleanse. The Breacher path proves tanks can do damage too - Saiynergy's 334k DPS shield build runs Fury Strike with Death From Afar and tops damage charts while face-tanking Legendary content. Every serious squad needs a Bulwark."
+    "intro": "Bulwark is the tank class - Phalanx Shield out, Shockwave Spike stunning enemies, and the entire squad playing behind your cover. The Juggernaut focus was the PvP terror of Division Resurgence, and those Dark Zone stuns were a death sentence for anyone without a cleanse, until Season 2 Phase 1 cut Shockwave Spike's stun from 3.5 to 2 seconds and raised its cooldown from 12 to 14 seconds. The Breacher path proves tanks can do damage too - Saiynergy's 334k DPS shield build runs Fury Strike with Death From Afar and tops damage charts while face-tanking Legendary content. Every serious squad needs a Bulwark."
   },
   "field-medic": {
     "slug": "field-medic",
     "title": "Field Medic",
-    "intro": "Field Medic is the healer that makes Legendary difficulty possible. Without one, your squad's Bulwark folds in 20 seconds and your DPS players spend more time respawning than shooting. The Combat Medicine path stacks Toughness for both survival and Offensive Defense damage scaling - you're a healer that also deals damage. Tactical Pharma goes all-in on Oxidizing Swarm corrosive pressure with Jackpot 4pc and Boom-Shakalaka 2pc. In DZ PvP, a good Field Medic turns an average squad into an unkillable nightmare."
+    "intro": "Field Medic is the healer that makes Legendary difficulty possible. Without one, your squad's Bulwark folds in 20 seconds and your DPS players spend more time respawning than shooting. The Combat Medicine path stacks Toughness for both survival and Defensive Measures damage scaling - you're a healer that also deals damage. Tactical Pharma goes all-in on Oxidizing Swarm corrosive pressure with Jackpot 4pc and Boom-Shakalaka 2pc. In DZ PvP, a good Field Medic turns an average squad into an unkillable nightmare."
   },
   "tech-operator": {
     "slug": "tech-operator",
     "title": "Tech Operator",
-    "intro": "Tech Operator is the skill-ceiling class. The Aegis Operations shield build scales damage off Engineering through a passive burst mechanic - Tampishach's 237k DPS Tech Aegis build with Long-term Effect 4pc and Brains Over Brawn is the community reference. Offensive Operations uses Striker Drone crits to apply Disoriented status, locking down enemies in PvP. Tech Op rewards players who understand cooldown management and skill positioning. In the right hands, it's a 1v2 or 1v3 class in the Dark Zone."
+    "intro": "Tech Operator is the skill-ceiling class. The Aegis Operations shield build scales damage off Engineering through a passive burst mechanic - Tampishach's 237k DPS Tech Aegis build with Long-term Effect 4pc and Brains Over Brawn is the community reference, though Season 1 Phase 3 fixed Aegis Burst dealing more damage than Ubisoft intended, so treat pre-patch DPS numbers as a ceiling. Offensive Operations uses Striker Drone crits to apply Disoriented status, locking down enemies in PvP. Tech Op rewards players who understand cooldown management and skill positioning. In the right hands, it's a 1v2 or 1v3 class in the Dark Zone."
   },
   "dps": {
     "slug": "dps",
@@ -42,12 +42,12 @@
   "exotic": {
     "slug": "exotic",
     "title": "Exotic",
-    "intro": "Exotic weapons in Division Resurgence have unique talents that can't roll on standard weapons. The Warlord, Lady Death, Strawberry Milkshake, and other exotics are build-defining - the talent shapes your entire loadout around it. Exotics drop from the standard loot pool but are rare. When you find one, check the talent before scrapping anything else. Some exotics are BiS (best in slot) across multiple builds; others are niche. Our exotic weapon database has the full breakdown for each one."
+    "intro": "Exotic weapons in Division Resurgence have unique talents that can't roll on standard weapons. The Warlord, Lady Death, Strawberry Milkshake, and other exotics are build-defining - the talent shapes your entire loadout around it. Every Classified Ops Pass phase since Season 1 Phase 2 has added a new exotic, the Dark Zone vendor sells some of the older ones, and since Season 2 Phase 2 Exotic Sealed Caches can drop exotics from previous seasons. When you find one, check the talent before scrapping anything else. Some exotics are BiS (best in slot) across multiple builds; others are niche. Our exotic weapon database has the full breakdown for each one."
   },
   "lady-death": {
     "slug": "lady-death",
     "title": "Lady Death",
-    "intro": "Lady Death is an exotic SMG that rewards aggressive, in-your-face playstyles. The unique talent grants stacking damage bonuses as you close distance with enemies - the closer you get, the harder you hit. It's the signature weapon for aggressive Vanguard Commando builds and Bulwark Breacher shield pushes. In DZ PvP, Lady Death is one of the most feared weapons because the close-range damage bonus stacks with SMG base crit chance for devastating burst. Farm it from the standard SMG loot pool."
+    "intro": "Lady Death is an exotic SMG that rewards aggressive, never-stop-moving playstyles. Its Breathe Free talent builds stacks while you move (twice as fast while sprinting), and every round fired spends one for +15% Weapon Damage. It's the signature weapon for aggressive Vanguard Commando builds and Bulwark Breacher shield pushes. In DZ PvP, Lady Death is one of the most feared weapons because that stacked damage bonus lands on top of SMG base crit chance for devastating burst. Missed it? Ubisoft's Exotic Sealed Caches (added in Season 2 Phase 2) include it."
   },
   "warlord": {
     "slug": "warlord",
@@ -57,7 +57,7 @@
   "strawberry-milkshake": {
     "slug": "strawberry-milkshake",
     "title": "Strawberry Milkshake",
-    "intro": "The Strawberry Milkshake is an exotic LMG with a unique sustained-fire talent that rewards keeping the trigger held. The longer you fire without releasing, the stronger the damage buff stacks. Combined with Phalanx Attack gear set and a 100+ round magazine, this weapon turns Vanguard DPS builds into sustained-damage monsters. The Milkshake Machine build on this site is the community reference for how to maximize this exotic's potential."
+    "intro": "The Strawberry Milkshake is an exotic LMG that rewards keeping the trigger held. Its Anarchy talent stacks a damage-over-time debuff on every hit (up to 50 stacks) and hands the stacks to a nearby enemy when the target dies. Combined with Phalanx Attack gear set and a 100-round magazine, this weapon turns Vanguard DPS builds into sustained-damage monsters. The Milkshake Machine build on this site is the community reference for how to maximize this exotic's potential."
   },
   "toymaker": {
     "slug": "toymaker",
@@ -67,7 +67,7 @@
   "fire-cycle": {
     "slug": "fire-cycle",
     "title": "Fire Cycle",
-    "intro": "Fire Cycle is a Tier 2 gear set that forms the backbone of the current Demolitionist meta. The 4-piece bonus grants +12% Skill Multi-Shot Chance passively - no conditions, no positioning requirements. Combined with Toymaker II and sub-attribute stacking, Fire Cycle pushes Skill Multi-Shot Chance into the 35-45% range. The set only drops from T2 content (requires Conflicts Level 100 or T2 PvE unlock). If you're not there yet, 4pc Jackpot is the bridge."
+    "intro": "Fire Cycle is a Tier 2 gear set that formed the backbone of the Demolitionist meta when we last tested it (Patch 1.1.2.2). The 4-piece bonus grants +12% Skill Multi-Shot Chance passively - no conditions, no positioning requirements. Combined with Toymaker II and sub-attribute stacking, Fire Cycle pushes Skill Multi-Shot Chance into the 35-45% range. The set only drops from T2 content (requires Conflicts Level 100 or T2 PvE unlock). If you're not there yet, 4pc Jackpot is the bridge."
   },
   "pressing-matter": {
     "slug": "pressing-matter",
@@ -77,22 +77,22 @@
   "jackpot": {
     "slug": "jackpot",
     "title": "Jackpot",
-    "intro": "Jackpot is a gear set that stacks Skill Critical stats. The 2-piece bonus gives +12% Skill Radius, the 3-piece bonus adds Signature Ability charge from defeated enemies, and the 4-piece grants Skill Damage to Elites and bonus Skill Critical Damage. It's the universal skill build gear set - works on every class, every skill archetype. 4pc Jackpot is the recommended bridge build for Demolitionist players who haven't unlocked Fire Cycle T2 yet."
+    "intro": "Jackpot is a gear set that stacks Skill Critical stats. The 2-piece bonus gives +12% Skill Radius, the 3-piece adds +10.8% Skill Critical Chance, and the 4-piece grants +24% Skill Critical Damage. It's the universal skill build gear set - works on every class, every skill archetype. 4pc Jackpot is the recommended bridge build for Demolitionist players who haven't unlocked Fire Cycle T2 yet."
   },
   "os-protocol": {
     "slug": "os-protocol",
     "title": "OS Protocol",
-    "intro": "OS Protocols are Division Resurgence's version of a sixth gear piece - a chip that provides a large stat bonus and a unique talent. They come in three specializations (Engineering, Firepower, Toughness) and three rarities (Specialized, Superior, High-End). The talent on your OS Protocol stacks multiplicatively with gear set bonuses and weapon talents, making it one of the most impactful single choices in your build. Our OS Protocol database has every protocol with stats, talents, and build recommendations."
+    "intro": "OS Protocols are Division Resurgence's version of a sixth gear piece - a chip that provides a large stat bonus and a unique talent. They come in three specializations (Engineering, Firepower, Toughness) and four rarities (Standard, Specialized, Superior, High-End). The talent on your OS Protocol stacks multiplicatively with gear set bonuses and weapon talents, making it one of the most impactful single choices in your build. Our OS Protocol database has every protocol with stats, talents, and build recommendations."
   },
   "build-guide": {
     "slug": "build-guide",
     "title": "Build Guide",
-    "intro": "Every build guide on Resurgence Builds is verified in-game on the current patch. We don't publish theory-crafted loadouts from spreadsheets - if it's on this site, someone ran it in Legendary missions, Dark Zone PvP, or Conflicts and recorded the results. Each guide includes the full gear breakdown, talent choices, OS Protocol selection, skill mod setup, and farming path. Use the Build Planner at /builder/ to customize any loadout before you start farming."
+    "intro": "Every build guide on Resurgence Builds was verified in-game on the patch shown on its card, and several balance patches have landed since, so check that label before you farm. We don't publish theory-crafted loadouts from spreadsheets - if it's on this site, someone ran it in Legendary missions, Dark Zone PvP, or Conflicts and recorded the results. Each guide includes the full gear breakdown, talent choices, OS Protocol selection, skill mod setup, and farming path. Use the Build Planner at /builder/ to customize any loadout before you start farming."
   },
   "patch-1-2-1": {
     "slug": "patch-1-2-1",
     "title": "Patch 1.2.1",
-    "intro": "Patch 1.2.1 is the current live version of Division Resurgence. All builds and database entries on Resurgence Builds are verified against this patch. Key changes in 1.2.1 included balance adjustments to several gear sets and OS Protocols. Check our patch notes section for the full breakdown of what changed and how it affects the meta."
+    "intro": "Patch 1.2.1 (May 20, 2026) was a cleanup patch, not a balance patch: vendor and inventory fixes, Classified Ops Pass purchase fixes, a Lone Wolf reset fix, and a corrected Anarchy talent description on the Strawberry Milkshake. Ubisoft also sent every player 500,000 Basic Credits and 750 Phoenix Credits as an apology. It stopped being the live version a long time ago; the game is now on Season 2 Phase 2. Check our patch notes section for the full breakdown."
   },
   "beginner": {
     "slug": "beginner",

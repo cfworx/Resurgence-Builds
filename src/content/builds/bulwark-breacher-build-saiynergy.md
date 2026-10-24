@@ -23,15 +23,15 @@ videoTitle: "Saiynergy - Full Breacher Build Walkthrough"
 videoChannel: "Saiynergy"
 faqs:
   - question: "What is the best Breacher build in Division Resurgence?"
-    answer: "Saiynergy's Bulwark Breacher build runs 4pc Fury Strike, 2pc Phalanx Attack, Lightweight M4 with Killer, Vector 45 ACP with Strained and Adaptation, and Death From Afar to weaponize Headshot Damage. It sits at 334k DPS with 7,679 Armor at Level 50."
+    answer: "Saiynergy's Bulwark Breacher build runs 4pc Fury Strike, 2pc Phalanx Attack, Lightweight M4 with Killer, Vector 45 ACP with Strained and Adaptation, and Death From Afar to weaponize Headshot Damage. It sat at 334k DPS with 7,679 Armor at Level 50 when Saiynergy recorded it on Patch 1.1.2.2."
   - question: "Can I run this Breacher build in the Dark Zone?"
-    answer: "Yes. The shield holds the choke, Strained converts your Armor pool into damage, and Unflinching keeps you healing through the trade. Q Building heroic and 47th Street Extraction are where you farm the mods to push it further."
+    answer: "Yes. The shield holds the choke, Strained stacks crit damage while you keep the trigger down, and Unflinching keeps you healing through the trade. Just know Shockwave Spike's stun dropped to 2 seconds in Season 2 Phase 1, so your lockdowns are shorter than they used to be. Q Building heroic and 47th Street Extraction are where you farm the mods to push it further."
   - question: "Why Fury Strike over a pure DPS set?"
     answer: "Fury Strike's Optimal Range and crit chance scale cleaner with the Vector and M4 than most pure offense sets. 4pc Fury is the cleanest path to triple-digit crit damage scaling. Look at the leaderboard players' gear choices, not their power score."
   - question: "Can I run this without T1 and T2 pieces?"
     answer: "Yes. Saiynergy himself runs a T0 glove because the rolls are right. The set bonus and the attribute trio (WCHD, Headshot Damage, WCHC) matter more than the tier number."
   - question: "Does this Breacher build still work after Patch 1.1.2.2?"
-    answer: "Every set bonus, talent, and skill firmware in this build matches the current database as of May 30, 2026. We have flagged it as RapidF5-verified at the structural level."
+    answer: "Structurally, yes, but Season 2 moved some furniture. Every set bonus, talent, and skill firmware matched our database on May 30, 2026 (Patch 1.1.2.2), and it hasn't been re-verified since. Since then Shockwave Spike's stun dropped from 3.5s to 2s with a 14s cooldown (less King of the Pit uptime), weapon mods were reworked, and Strained's tooltip was corrected to show its real 10%/14% values. The sets, Death From Afar and the other talents were not touched. Still a wall. Just a wall that stuns a little less."
   - question: "What weapons does Saiynergy use on his Breacher?"
     answer: "Lightweight M4 (T2, Level 45) as the primary with Killer and Breadbasket (RapidF5 recommendation over the original Steady Hands + Medical Accuracy). First Wave Vector 45 ACP (T2, Level 44) as the secondary with Strained and Adaptation."
   - question: "Is Division Resurgence pay-to-win?"
@@ -45,9 +45,17 @@ faqs:
 > Build credit: **Saiynergy** of **ATLAS Division**. Full Breacher walkthrough covering every gear roll, weapon talent, skill firmware, and loot route. Watch his original walkthrough on [YouTube](https://www.youtube.com/watch?v=28lsRrnJ6Vg) and jump in the [ATLAS Division Discord](https://discord.gg/e7EUUBbBYa) if you want in on the clan.
 
 > [!INFO] Modified Weapon Talents
-> We have tweaked the weapon talents on the Lightweight M4 from Saiynergy's original loadout. He runs Steady Hands and Medical Accuracy. We recommend **Killer + Breadbasket** instead --- Killer is the strongest AR talent for crit builds and Breadbasket stacks Headshot Damage that feeds directly into Death From Afar. The rest of the build is Saiynergy's original.
+> We have tweaked the weapon talents on the Lightweight M4 from Saiynergy's original loadout. He runs Steady Hands and Medical Accuracy. We recommend **Killer + Breadbasket** instead. Killer is the strongest AR talent for crit builds and Breadbasket stacks Headshot Damage that feeds directly into Death From Afar. The rest of the build is Saiynergy's original.
 
 This is a **Breacher shield build** that anchors a doorway and refuses to leave. Saiynergy is sitting at **23.17k Power Score, 334.07k DPS, and 7,679 Armor**. The 4pc Fury Strike gives you the crit chance and crit damage backbone. The 2pc Phalanx Attack stacks magazine size so the Vector keeps firing past the point where most builds reload and die. The Ballistic Shield with **Provocateur** draws enemy aggro so your team can work. The Breach Combo with **Positive Feedback** restores bullets on hits. The Shockwave Spike Mk.3 with **King of the Pit** keeps your crit chance topped off. **Death From Afar** OS Protocol turns headshot damage into raw Firepower. The core loop is straightforward: shield up, walk forward, let the Vector pour rounds into whatever the M4 can't reach. Your job is to be the wall. Your fireteam's job is to be the people who do not have to be the wall.
+
+> [!WARNING] Season 2 changes that affect this build
+> - **Shockwave Spike (Season 2 Phase 1):** Stun cut from 3.5s to 2s and cooldown raised from 12s to 14s. Fewer Spikes per fight means less King of the Pit crit chance uptime. Season 2 Phase 2 also closed some cover-transition edge cases where Spike could be used when it shouldn't.
+> - **Strained (Season 2 Phase 2):** Only the tooltip changed. It used to read 7.3% (tier 1) and 10.2% (tier 2); the real values are 10% and 14%. Your Vector didn't get stronger, the description just stopped lowballing it.
+> - **Weapon mods (Season 2 Phase 1):** New mods get +100% main stat and -25% bonus attributes, and they can no longer roll Shredding or All Weapon Damage. They can roll Weapon Damage %, Headshot Damage % and Weapon Crit Hit Damage % instead, which happen to be this build's priority stats. Old mods keep their rolls.
+> - **Gear mods (Season 2 Phase 1):** Gear mods can now roll Weapon Crit Hit Chance, Weapon Crit Hit Damage, Headshot Damage and Weapon Damage. More room for the trio this build stacks.
+>
+> This build has not been re-tested since Patch 1.1.2.2. Full details: [Season 2 Phase 1 patch notes](/patch-notes/season-2-phase-1-the-call/) and [Season 2 Phase 2 patch notes](/patch-notes/season-2-phase-2/).
 
 ---
 
@@ -101,7 +109,7 @@ This is a **Breacher shield build** that anchors a doorway and refuses to leave.
 
 ### Phalanx Attack 2-Piece
 
-- **2pc:** Magazine Size +18.0%, Rate of Fire +18.0%. Combined with Strained on the Vector, the SMG fires through a full squad without a reload window for them to peek you.
+- **2pc:** Magazine Size +18.0%. (Rate of Fire +18.0% is the 3pc bonus per our set database, so a 2pc split doesn't get it.) Combined with Strained on the Vector, the SMG fires through a full squad without a reload window for them to peek you.
 
 ### Body Armor: Unflinching (Armor Roll)
 
@@ -174,14 +182,14 @@ Saiynergy runs Steady Hands and Medical Accuracy on his M4. We are recommending 
 
 ### Secondary: First Wave Vector 45 ACP (T2, SMG, Level 44)
 
-- **Strained:** Converts Armor into Weapon Damage. With 7,679 Armor backing it, the conversion is significant.
-- **Adaptation:** Keeps you alive while Strained is stripping that armor.
+- **Strained:** Firing for 0.5 seconds grants +10% Critical Hit Damage for 5 seconds, stacking up to 3 times, per the talent text in our database. That 10% is the tier 1 value; Season 2 Phase 2 confirmed tier 2 is 14%, so this T2 Vector gets the bigger number. Hold the trigger and the stacks hold with you, which is why the Phalanx mag size matters.
+- **Adaptation:** Body shots grant +4.80% Skill Duration for 8 seconds and headshots grant +6% Skill Intensity for 8 seconds (tier 1 values from our talent database). That's skill-side value for the Shield and Spike, not a survival talent.
 
 **Attachments:** Red Dot, Extended Magazine, Suppressor.
 
 ### Attachments & Farming Subs
 
-All weapon attachments should roll for **all weapon damage** or **weapon shredding damage**. Saiynergy: *"You always want to look for something that has all weapon damage."*
+All weapon attachments should roll for **all weapon damage** or **weapon shredding damage**. Saiynergy: *"You always want to look for something that has all weapon damage."* That advice predates Season 2 Phase 1: new weapon mods can't roll All Weapon Damage or Shredding anymore, so look for Weapon Damage %, Headshot Damage % or Weapon Crit Hit Damage % on fresh mods instead.
 
 Backup weapons for farming attachments and talents:
 

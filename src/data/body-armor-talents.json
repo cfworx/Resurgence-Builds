@@ -82,7 +82,7 @@
   {
     "id": "ba-17",
     "name": "Recycling",
-    "description": "Taking damage within 20 meters has a 80% chance to refill 4.50 bullets in the magazine (excluding Signature Ability weapons). Talent Cooldown: 1 seconds."
+    "description": "Taking damage within 20 meters has a 80% chance to refill 20% of the magazine (excluding Signature Ability weapons). Talent Cooldown: 5 seconds. (Season 2 Phase 1: refill 4.5% → 20% of the magazine, cooldown 1s → 5s. The old tooltip wrongly said bullets instead of %.)"
   },
   {
     "id": "ba-18",

@@ -116,7 +116,7 @@
     "name": "Thermobaric Grenades",
     "specialization": "Demolitionist",
     "bonus2": "Rate of Fire+[4.0%~8.0%]",
-    "bonus3": "Reduces Grenades in Grenade Launcher to 1, expands the Explosion Radius by 100% and increases damage by 460%."
+    "bonus3": "Reduces Grenades in Grenade Launcher to 1, expands the Explosion Radius by 30% and increases damage by 300%."
   },
   {
     "id": "smc-18",
@@ -277,7 +277,7 @@
     "name": "Field Repairs",
     "specialization": "Bulwark",
     "bonus2": "Skill Health+[4.0%~8.0%]",
-    "bonus3": "Deploying the Phalanx Shield grants +4% Rate of Fire. Hits restore 0.60% Shield Health. Talent Cooldown: 1 second(s)."
+    "bonus3": "Deploying the Phalanx Shield grants +4% Rate of Fire. Hits restore 0.60% Shield Health. Talent Cooldown: 1 second(s). (Season 2 Phase 1 fixed the Rate of Fire bonus, which had been granting the wrong stat.)"
   },
   {
     "id": "smc-41",
@@ -305,7 +305,7 @@
     "name": "Berserker",
     "specialization": "Bulwark",
     "bonus2": "Weapon Damage+[2.0%~4.0%]",
-    "bonus3": "During Breach Combo, grants +100% Weapon Critical Hit Chance if there are at least 1 enemie(s) within 20 meter(s)."
+    "bonus3": "During Breach Combo, grants +100% Weapon Critical Hit Chance if there are at least 1 enemie(s) within 20 meter(s). (Season 2 Phase 2 fixed this set not granting its bonus. Ubisoft's note calls it a crit damage bonus while this tooltip says crit chance; we haven't re-checked which is right.)"
   },
   {
     "id": "smc-45",
@@ -361,7 +361,7 @@
     "name": "Heavy Weight",
     "specialization": "Bulwark",
     "bonus2": "Max Health+[4.0%~8.0%]",
-    "bonus3": "Breach Combo hits deal additional damage equal to 10% Max Health."
+    "bonus3": "Breach Combo hits deal additional damage equal to 2% Max Health (after the October 14, 2026 nerf; Ubisoft listed the change as 10/15/20/25% to 2/3/4/5% of Max Health)."
   },
   {
     "id": "smc-53",
@@ -480,7 +480,7 @@
     "name": "Ammo Refill",
     "specialization": "Vanguard",
     "bonus2": "Reload Speed+[4.0%~8.0%]",
-    "bonus3": "Every shot during the first 6 seconds of Tactical Link grants 29% chance of recovering 1 ammo. Duration resets at each kill."
+    "bonus3": "Every shot during the first 6 seconds of Tactical Link grants 18% chance of recovering 4 ammo. Duration resets at each kill. (Season 2 Phase 1: trigger chance cut to 18% and ammo returned raised from 1 to 4. Ubisoft lists the old chance as 72%; our old listing said 29%, so the exact chance may vary by mod rarity.)"
   },
   {
     "id": "smc-70",

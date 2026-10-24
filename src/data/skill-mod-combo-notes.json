@@ -72,6 +72,14 @@
         "title": "Bulwark Breacher 334k DPS Shield Wall",
         "url": "/builds/bulwark-breacher-build-saiynergy/"
       }
+    ],
+    "patchHistory": [
+      {
+        "label": "Season 2 · Phase 1",
+        "date": "2026-08-05",
+        "note": "Shockwave Spike itself was nerfed: stun duration 3.5s → 2s, cooldown 12s → 14s. The set's numbers didn't change, but on paper the gap between your 10-second stacks expiring and the next Spike being ready grows from about 2 seconds to about 4 (before any cooldown reduction).",
+        "sourceUrl": "https://www.reddit.com/r/thedivisionresurgence/comments/1ve9ccz/season_2_phase_1_patch_notes/"
+      }
     ]
   },
   "applied-demolitions": {
@@ -127,6 +135,24 @@
         "date": "2026-06-24",
         "note": "Fixed: the combo set was not detecting proximity to the Chemical Trap, so the +32% Armor bonus frequently failed to apply. Marked fix-ready on the known-issues Trello since June 9; now live.",
         "sourceUrl": "/patch-notes/season-1-phase-3-a-new-fire/"
+      }
+    ]
+  },
+  "heavy-weight": {
+    "usageNotes": "Heavy Weight is a Juggernaut Breach Combo set: its 3-piece adds damage to Breach Combo hits based on your Max Health, which is why it turned tanky Bulwarks into tanky Bulwarks that also hit hard. Ubisoft said exactly that when it nerfed the set on October 14, 2026: the set 'allowed to focus solely on tanking while still dealing massive damage which was an issue in PvP.' Ubisoft added that it still wants Heavy Weight to be a possible option in PvE, just not on par with DPS builds. Treat older Heavy Weight damage numbers as outdated.",
+    "metaBuilds": [],
+    "patchHistory": [
+      {
+        "label": "October 2, 2026 announcement",
+        "date": "2026-10-02",
+        "note": "Ubisoft said it was investigating a change for a future patch: additional damage from 10/15/20/25% to 2/3/4/5% of Max Health.",
+        "sourceUrl": "https://www.reddit.com/r/thedivisionresurgence/comments/1wvvgb2/patch_notes_revive_bug_fix/"
+      },
+      {
+        "label": "October 14, 2026 patch",
+        "date": "2026-10-14",
+        "note": "Nerfed: additional damage decreased from 25% to 5% of Max Health (top value), to stop it matching DPS builds while tanking, which Ubisoft called an issue in PvP.",
+        "sourceUrl": "https://www.reddit.com/r/thedivisionresurgence/comments/1x5t0uj/14102026_patch_notes/"
       }
     ]
   }

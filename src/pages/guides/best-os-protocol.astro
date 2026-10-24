@@ -37,7 +37,7 @@ const classes = [
       name: 'Concerted Strike',
       spec: 'Firepower',
       slug: 'concerted-strike',
-      explanation: 'Concerted Strike makes the Field Medic a genuine hybrid threat. Skill hits within 20 meters grant +8% Damage stacks, which the class triggers constantly through Oxidizing Swarm and Support Station. You maintain healing uptime while passively stacking a serious damage buff that makes your weapon hits count.'
+      explanation: 'Concerted Strike makes the Field Medic a genuine hybrid threat. Skill hits within 20 meters grant +8% Damage stacks, which the class triggers constantly through Oxidizing Swarm and Support Station (Season 2 Phase 2 fixed its 20-meter range check). You maintain healing uptime while passively stacking a serious damage buff that makes your weapon hits count.'
     },
     backup: {
       name: 'Medical Excellence',
@@ -53,7 +53,7 @@ const classes = [
       name: 'Pummeling Shield',
       spec: 'Toughness',
       slug: 'pummeling-shield',
-      explanation: 'Pummeling Shield defines the Bulwark class. The stun proc on every 10 hits and the extra health regeneration on damage taken makes Heroic content viable. Without this protocol, the Bulwark loses its core identity as the team\'s immovable anchor. There is no real second choice for serious play.'
+      explanation: 'Pummeling Shield defines the Bulwark class. The stun proc on every 10 hits and the extra health regeneration on damage taken makes Heroic content viable. Since the June 26, 2026 hotfix the stun lasts 1.5 seconds (down from 2) and has a 10-second cooldown, so it interrupts instead of stun-locking. Without this protocol, the Bulwark loses its core identity as the team\'s immovable anchor. There is no real second choice for serious play.'
     },
     backup: {
       name: 'Heavy Armor',
@@ -101,8 +101,8 @@ const faqs = [
   { question: "How do OS Protocols work in Division Resurgence?", answer: "OS Protocols are unique gear-talent items that slot into your Operating System loadout. Each provides a main stat, three sub-stats, and a unique Talent that triggers under specific combat conditions. You can swap them freely at any safe house." },
   { question: "Can you change OS Protocols mid-mission?", answer: "No. OS Protocols can only be swapped outside of combat, at a Base of Operations, safe house, or any non-combat area. Plan your protocol for the encounter you're about to enter." },
   { question: "What is the best OS Protocol for Vanguard?", answer: "Strategic Assistance (Engineering, High-End). The assist-based Signature Ability Charge Efficiency and Skill Cooldown reduction directly amplify the class's reliance on Tactical Link and Scanning Pulse uptime." },
-  { question: "What is the best OS Protocol for Field Medic?", answer: "Concerted Strike (Firepower, High-End). Skill hits within 20 meters grant +8% Damage stacks, which the class triggers constantly through Oxidizing Swarm and Support Station." },
-  { question: "What is the best OS Protocol for Bulwark?", answer: "Pummeling Shield (Toughness, High-End). The Stun proc on every 10 hits and the Extra Health regen on damage makes the class viable at Heroic difficulty." },
+  { question: "What is the best OS Protocol for Field Medic?", answer: "Concerted Strike (Firepower, High-End). Skill hits within 20 meters grant +8% Damage stacks, which the class triggers constantly through Oxidizing Swarm and Support Station. Season 2 Phase 2 fixed its 20-meter range check." },
+  { question: "What is the best OS Protocol for Bulwark?", answer: "Pummeling Shield (Toughness, High-End). The Stun proc on every 10 hits and the Extra Health regen on damage makes the class viable at Heroic difficulty. Since the June 26, 2026 hotfix the stun lasts 1.5 seconds and has a 10-second cooldown." },
   { question: "What is the best OS Protocol for Demolitionist?", answer: "Surgical Engineering (Engineering, High-End). The 60% chance of +16% Skill Critical Damage on Skill Crits scales perfectly with the class's natural skill crit chance." },
   { question: "What is the best OS Protocol for Tech Operator?", answer: "Tactical Layering (Engineering, High-End). +15% Engineering per skill deployment (up to 3 stacks) scales perfectly with Striker Drone uptime and skill rotation." },
 ];
@@ -115,6 +115,9 @@ const faqs = [
     <h1 class="heading-accent">Best OS Protocol Per Class</h1>
     <p style="color:var(--ink-muted);margin-bottom:var(--sp-3); max-width: 800px;">
       The right OS Protocol turns a good build into a great one. Here's the best primary and backup protocol for every class in Division Resurgence, verified for {lastVerified}.
+    </p>
+    <p style="color:var(--ink-muted);margin-bottom:var(--sp-3); max-width: 800px;">
+      <strong>Update (October 2026):</strong> we haven't re-tested these picks since {lastVerified}. Two of them changed on paper: Pummeling Shield's stun got a 10-second cooldown (and dropped from 2s to 1.5s) in the June 26 hotfix, and Concerted Strike's 20-meter range check was fixed in Season 2 Phase 2. Full values are on each protocol's <a href="/database/os-protocols/" style="color: var(--accent);">database page</a>.
     </p>
 
     <div style="display: inline-flex; align-items: center; gap: 6px; font-family: var(--font-mono); font-size: var(--text-xs); color: #6DAA45; background: rgba(109, 170, 69, 0.1); border: 1px solid rgba(109, 170, 69, 0.25); padding: 6px 14px; border-radius: 999px; margin-bottom: var(--sp-8); letter-spacing: 0.02em;">

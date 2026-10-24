@@ -197,7 +197,8 @@ Before publishing ANY post (build, guide, or news), every item below must be che
 ### Build-Specific Requirements
 
 - [ ] **`plannerHash`** - URL parameter string for the "Open in Build Planner" button
-- [ ] **Tier List Override** - Add the build name to `src/pages/tier-list.astro` in the `assignTier()` function
+- [ ] **Tier List Override** - Add the build name to `src/pages/tier-list/index.astro` in the `assignTier()` function (only for builds we've actually tested)
+- [ ] **`verified: false`** - Set this on a creator's build we documented from their videos but haven't re-tested ourselves. It swaps the green "Verified" badge for a "Creator build" badge and lists the build under "not ranked yet" on the tier list instead of auto-ranking it.
 - [ ] **`specialization`** - Must match one of: Demolitionist, Tech Operator, Bulwark, Vanguard, Field Medic
 - [ ] **`playstyle`** - Must match one of: DPS, Tank, Support, Hybrid, Solo
 
@@ -211,6 +212,9 @@ Before publishing ANY post (build, guide, or news), every item below must be che
 ### Style Rules
 
 - [ ] **NO em dashes** (the — character). Use commas, periods, or rewrite the sentence
+- [ ] **Never bash Ubisoft.** No jokes or lines that mock, insult or blame Ubisoft or its developers, and nothing that could hurt a partnership with them. Aim the humor at ourselves, the grind, RNG and players. Report bugs and community frustration neutrally and say what Ubisoft fixed or is doing about it. Don't amplify insulting quotes from reviews, press or Reddit.
+- [ ] **Accuracy first.** Every game fact must trace to an official Ubisoft source (patch notes, Help Center, Ubisoft news, Steam announcements, @TheDivMobile, the official bug reporter) or be clearly attributed to a creator or community post and hedged. Never borrow mechanics, numbers or names from The Division 1 or 2.
+- [ ] **Sources section.** News, patch notes and guides end with a `## Sources` list of the links used.
 - [ ] Voice matches site tone: sarcastic, data-driven, funny. Think "Reddit shitposter with a journalism degree"
 - [ ] All game mechanic claims are cited or hedged ("from our understanding" / "community testing suggests")
 - [ ] Cross-links to related posts on the site (internal linking for SEO)

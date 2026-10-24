@@ -50,7 +50,8 @@ const itemListLd = {
           author={pn.data.author}
           description={pn.data.summary}
           type="patch-notes"
-          tags={[`v${pn.data.version}`]}
+          tags={[/^\d/.test(pn.data.version) ? `v${pn.data.version}` : pn.data.version]}
+          tagLinks={false}
           featuredImage={pn.data.featuredImage}
           imageAlt={pn.data.imageAlt}
         />

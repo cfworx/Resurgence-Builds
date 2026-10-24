@@ -11,6 +11,7 @@ export interface Props {
   description: string;
   category: string;
   lastUpdated: Date;
+  publishDate?: Date;
   tags: string[];
   author?: string;
   featuredImage?: string;
@@ -38,6 +39,7 @@ const {
   description,
   category,
   lastUpdated,
+  publishDate,
   tags,
   author = 'RapidF5',
   featuredImage,
@@ -57,7 +59,7 @@ const {
 const twitterShareUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText || `Check out this Division Resurgence guide: ${title}`)}&url=${encodeURIComponent(Astro.url.toString())}`;
 const redditShareUrl = `https://reddit.com/submit?url=${encodeURIComponent(Astro.url.toString())}&title=${encodeURIComponent(title)}`;
 
-const formattedDate = lastUpdated.toLocaleDateString('en-US', {
+const formattedDate = lastUpdated.toLocaleDateString('en-US', { timeZone: 'UTC',
   month: 'long',
   day: 'numeric',
   year: 'numeric',
@@ -95,7 +97,7 @@ const howToLd = howTo ? {
   ogType="article"
   ogImage={featuredImage}
   article={{
-    publishDate: lastUpdated.toISOString(),
+    publishDate: (publishDate ?? lastUpdated).toISOString(),
     modifiedDate: lastUpdated.toISOString(),
     author,
     tags,

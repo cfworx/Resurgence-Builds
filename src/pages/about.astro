@@ -21,7 +21,7 @@ const breadcrumbItems = [
 const faqs = [
   {
     question: "Who runs Resurgence Builds?",
-    answer: "The site is run by RapidF5, a longtime Division franchise player who got tired of outdated, copy-paste content for The Division Resurgence. It's a one-man passion project backed by a Discord community of players who help test builds and catch mistakes."
+    answer: "The site is run by RapidF5, a longtime Division franchise player who got tired of outdated, copy-paste content for The Division Resurgence. It's a one-man passion project, helped by community builders who submit their loadouts and players who send in corrections."
   },
   {
     question: "Is Resurgence Builds affiliated with Ubisoft?",
@@ -29,7 +29,7 @@ const faqs = [
   },
   {
     question: "How can I contribute or report an error?",
-    answer: "Join our Discord and drop your feedback in the #report-website-issues channel. Got a build you think deserves coverage? Post it in #builds with your stats and gameplay clips. We read everything and credit contributors."
+    answer: "Use the contact page. Pick Bug Report for a mistake or Build Suggestion for a loadout, and include the page URL, your stats and screenshots or clips. We read everything and credit contributors."
   },
 ];
 ---
@@ -50,7 +50,7 @@ const faqs = [
 
       <div class="trust-strip">
         <h2 style="margin-top: 0; color: var(--accent);">Why Trust Us?</h2>
-        <p style="margin-bottom: 0;">Every build on this site is tested in-game by RapidF5 or a credited community builder. We name the player who originated each build and link out where applicable. We publish patch notes within 48 hours of every patch and revisit older guides for accuracy. If a build is wrong or outdated, post in our <a href="https://discord.gg/t6GTR6tpd" target="_blank" rel="noopener noreferrer">Discord</a> and we will fix it.</p>
+        <p style="margin-bottom: 0;">Every build on this site is tested in-game by RapidF5 or a credited community builder. We name the player who originated each build and link out where applicable. We cover every official patch, check our claims against Ubisoft's own patch notes, and revisit older guides when the game changes under them. If a build is wrong or outdated, tell us through the <a href="/contact/">contact page</a> and we will fix it.</p>
       </div>
 
       <h2>Why We Built This</h2>
@@ -109,7 +109,7 @@ const faqs = [
         <li>All builds tested on the current live patch before publishing</li>
         <li>Stats and damage numbers verified in-game, not estimated</li>
         <li>Sources cited for community-contributed data</li>
-        <li>Content updated within 48 hours of major patches</li>
+        <li>Patch notes covered from Ubisoft's official notes, with a Last Updated date on every guide</li>
         <li>No paywalls, no gated content, no "subscribe for the real build"</li>
       </ul>
 
@@ -117,13 +117,9 @@ const faqs = [
       <p>Resurgence Builds is a passion project, but hosting and development cost real money. We run non-intrusive ads through Google AdSense to keep the lights on. We will never gate content behind a paywall, run pop-up ads, or prioritize revenue over user experience. The site is free and will stay free.</p>
 
       <h2>Get Involved</h2>
-      <p>Have a build that's shredding the Dark Zone? Found a typo? Disagree with a tier list ranking? We're always looking for feedback. Join our Discord community or <a href="/contact/">reach out via our contact page</a> we read everything and fix what needs fixing.</p>
+      <p>Have a build that's shredding the Dark Zone? Found a typo? Disagree with a tier list ranking? We're always looking for feedback. <a href="/contact/">Reach out via our contact page</a>: we read everything and fix what needs fixing.</p>
       
       <div style="display: flex; gap: var(--sp-3); flex-wrap: wrap; margin-top: var(--sp-4);">
-        <a href="https://discord.gg/t6GTR6tpd" target="_blank" rel="noopener noreferrer" class="btn btn--primary" style="display: inline-flex; align-items: center; gap: 8px;">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true"><path d="M13.545 2.907a13.2 13.2 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.2 12.2 0 0 0-3.658 0 8 8 0 0 0-.412-.833.05.05 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.04.04 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032q.003.022.021.037a13.3 13.3 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019q.463-.63.818-1.329a.05.05 0 0 0-.01-.059l-.018-.011a9 9 0 0 1-1.248-.595.05.05 0 0 1-.02-.066l.015-.019q.127-.095.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.05.05 0 0 1 .053.007q.121.1.248.195a.05.05 0 0 1-.004.085 8 8 0 0 1-1.249.594.05.05 0 0 0-.03.03.05.05 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.2 13.2 0 0 0 4.001-2.02.05.05 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.03.03 0 0 0-.02-.019m-8.198 7.307c-.789 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612m5.316 0c-.788 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612"/></svg>
-          Join Our Discord
-        </a>
         <a href="https://x.com/ResurgenceBuild" target="_blank" rel="noopener noreferrer" class="btn btn--outline" style="display: inline-flex; align-items: center; gap: 8px;">
           <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16"><path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z"/></svg>
           Follow on X

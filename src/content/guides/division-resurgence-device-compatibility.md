@@ -1,7 +1,8 @@
 ---
 title: "Device Compatibility - Division Resurgence 2026"
 category: "General"
-lastUpdated: 2026-05-03T12:00:00Z
+publishDate: 2026-05-28
+lastUpdated: 2026-10-24T12:00:00Z
 tags: ["device-compatibility", "supported-devices", "pc-requirements", "iphone", "android", "cross-play", "controller-support", "emulator"]
 description: "Official supported devices, minimum specs, PC requirements, and controller support for Division Resurgence."
 author: "RapidF5"
@@ -17,15 +18,15 @@ faqs:
   - question: "Does Division Resurgence work on iPad?"
     answer: "Yes, on iPads with an A12 Bionic chip or newer running iPadOS 14 or later. That covers the iPad Pro from 2018 onward, every iPad Air from the 3rd gen, every iPad mini from the 5th gen, and standard iPads from the 8th gen up."
   - question: "Can I play Division Resurgence on PC?"
-    answer: "Yes. It is free on Ubisoft Connect, Windows 11 only, around 17 GB download."
+    answer: "Yes, and you no longer need an emulator or a very large phone. It's free on Steam and Ubisoft Connect (early access started on Ubisoft Connect on April 28, 2026; the full PC launch was August 5, 2026). Windows 11 only, around 17 GB installed, and Ubisoft recommends keeping at least 30 GB free."
   - question: "Is Division Resurgence on Steam?"
-    answer: "Not yet. The only official PC version is on Ubisoft Connect."
+    answer: "Yes, since August 5, 2026. It's free, it's fully cross-play and cross-progression with mobile through your Ubisoft Connect account, and Steam will prompt you to install a light version of the Ubisoft Connect launcher on the way in, because of course it will. One Ubisoft account, two launchers, zero surprises for anyone who has played a Ubisoft game on Steam before."
   - question: "Can I play Division Resurgence on an emulator?"
     answer: "Yes. Ubisoft officially allows it but does not provide technical support if you hit issues on emulator."
   - question: "Does it support controllers?"
-    answer: "Yes. PlayStation 5, Xbox, and Backbone controllers are officially supported on iOS and Android. Any controller of your choice works on PC."
+    answer: "Yes. PlayStation 5, Xbox, and Backbone controllers are officially supported on iOS and Android. On PC, Ubisoft just says mouse and keyboard or controller, and Season 2 Phase 2 improved controller navigation and Steam Deck control configuration. Your thumbs will thank you. Your aim may not."
   - question: "Is there cross-play and cross-progression?"
-    answer: "Yes. Full cross-play and cross-progression between iOS, Android, and PC, as long as you use the same Ubisoft Connect account and the same regional server."
+    answer: "Yes. Full cross-play and cross-progression between iOS, Android, and PC (Steam and Ubisoft Connect), as long as you use the same Ubisoft Connect account and the same regional server. Playing as a guest? Link the guest account to Ubisoft Connect before you log into an existing Ubisoft Connect account on another device, or you'll be explaining to support where your character went."
   - question: "My phone is on the list but the installer says incompatible. What do I do?"
     answer: "Update your OS, clear your store cache, restart, and try again. If it still fails, file a support ticket through the in-game Support button with your exact device model and chipset."
 ---
@@ -34,13 +35,16 @@ If you are trying to figure out whether your phone, tablet, or PC can actually r
 
 If Ubisoft has not confirmed something, we will say so.
 
+> [!INFO] Update (October 2026)
+> The full PC launch happened on August 5, 2026: the game is now free on Steam as well as Ubisoft Connect, with full cross-play and cross-progression through your Ubisoft Connect account. On Steam you'll be prompted to install a light version of the Ubisoft Connect launcher. The PC sections below are updated; our [Steam PC guide](/guides/division-resurgence-steam-pc-guide/) has the full setup.
+
 ## Quick Answer
 
 - **Minimum RAM (mobile):** 4 GB. ([Ubisoft Help Center](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2456-the-division-resurgence-compatible-device-list/))
 - **Minimum iOS:** iOS 14, with an **A12 Bionic** chip or newer. That means **iPhone XS, XR, iPhone SE 2nd gen, or anything newer**. ([App Store](https://apps.apple.com/us/app/the-division-resurgence/id1606349410))
 - **Minimum Android:** Android 6. Your specific phone or tablet has to be on Ubisoft's compatibility list. ([Ubisoft Help Center](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2456-the-division-resurgence-compatible-device-list/))
-- **PC:** Windows 11, free on Ubisoft Connect, around **17 GB download** (Ubisoft recommends **30 GB free** on an SSD). ([Ubisoft](https://www.ubisoft.com/en-gb/game/the-division/resurgence/news-updates/1rUYWPgMV9hXYZ6FcLOkpX/play-resurgence-on-pc-all-you-need-to-know))
-- **Cross-play and cross-progression:** Fully supported between iOS, Android, and PC, as long as you use the same Ubisoft Connect account and the same regional server. ([Ubisoft](https://www.ubisoft.com/en-gb/game/the-division/resurgence/news-updates/1rUYWPgMV9hXYZ6FcLOkpX/play-resurgence-on-pc-all-you-need-to-know))
+- **PC:** Windows 11, free on **Steam and Ubisoft Connect**, around **17 GB** installed (Ubisoft recommends at least **30 GB free**, on an SSD per the Ubisoft Store spec sheet). ([Ubisoft Help Center](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2509-play-on-pc-steam-or-ubisoft-connect-all-you-need-to-know/))
+- **Cross-play and cross-progression:** Fully supported between iOS, Android, and PC (Steam included), as long as you use the same Ubisoft Connect account and the same regional server. ([Ubisoft Help Center](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2509-play-on-pc-steam-or-ubisoft-connect-all-you-need-to-know/))
 
 ---
 
@@ -74,7 +78,7 @@ The entire iPad Pro lineup back to the original 11-inch and the 3rd gen 12.9-inc
 A few things worth knowing if you are on iOS:
 
 - Apple devices run the game through the **Metal graphics API only**, while Android can use Vulkan or OpenGL. That is a real engine-level limitation, not a setting you can change.
-- The iOS controller UI has been intermittently broken since the late April update. Workarounds exist (covered in our [error codes guide](/guides/division-resurgence-error-codes/)) but Ubisoft is still working on the proper fix.
+- The iOS controller UI broke in the late April update, and Ubisoft's 1.2.1 notes (May 20) listed iOS gamepad support as under investigation. Later patches improved controller navigation, but we haven't seen a patch note that explicitly calls the iOS issue fixed. Workarounds are in our [error codes guide](/guides/division-resurgence-error-codes/), and Ubisoft's official [bug reporter](https://www.ubisoft.com/en-us/game/the-division/the-division-resurgence/bug-reporter/issues) is the place to check current status.
 - The audio bug where iOS players get no game sound is tied to your physical silent switch and your input audio device. Toggle the side switch and unplug Bluetooth earbuds before launching if you hit it.
 
 ---
@@ -123,7 +127,7 @@ Yes, a chunk of the list is industrial scanners, kiosk displays, and budget tabl
 
 ## PC: Official Specs and Caveats
 
-PC early access launched April 28, 2026, on Ubisoft Connect. The full launch is planned for later in 2026. Here is the spec table directly from the [Ubisoft Store listing](https://store.ubisoft.com/ie/the-division-resurgence/62e7cc7251f14849aaca73c8.html):
+PC early access launched April 28, 2026, on Ubisoft Connect, and the full PC launch landed on August 5, 2026, on Steam and Ubisoft Connect. Here is the spec table directly from the [Ubisoft Store listing](https://store.ubisoft.com/ie/the-division-resurgence/62e7cc7251f14849aaca73c8.html):
 
 | Tier | OS | CPU | GPU | RAM | Storage | Target |
 |---|---|---|---|---|---|---|
@@ -134,10 +138,13 @@ PC early access launched April 28, 2026, on Ubisoft Connect. The full launch is 
 
 A few things to flag:
 
-- The actual game install is around **17 GB**. Ubisoft asks you to keep **30 GB free** on an SSD for headroom, updates, and cache. If you try to run this off a spinning hard drive, do not call us.
+- The [Steam store page](https://store.steampowered.com/app/3749720/The_Division_Resurgence/) lists the same Minimum and Recommended tiers, with one difference: it names an **AMD Ryzen 3 3100** (not a Ryzen 5 5500) as the Recommended AMD CPU, and it asks for DirectX 11. Steam doesn't list the High or Ultra tiers.
+- The actual game install is around **17 GB**. Ubisoft asks you to keep at least **30 GB free** (on an SSD, per the Ubisoft Store spec sheet) for headroom, updates, and cache. If you try to run this off a spinning hard drive, do not call us.
 - Windows 11 is required across all tiers. **Windows 10 is not officially supported.**
-- The PC version is currently **only on Ubisoft Connect**. No Steam or Epic Games Store version has been announced.
-- You can play with mouse and keyboard or any supported controller.
+- The PC version is on **Steam and Ubisoft Connect**. On Steam you install it like any other game and get prompted to add a light version of the Ubisoft Connect launcher. Ubisoft only lists those two PC storefronts; no Epic Games Store version has been announced.
+- Purchases made on Steam go through the Steam shop, but they're tied to the Ubisoft Connect account you were logged into, so they follow you to mobile.
+- You can play with mouse and keyboard or a controller.
+- PC-specific bugs: Ubisoft's Help Center points PC players to the official [bug reporter](https://www.ubisoft.com/en-us/game/the-division/the-division-resurgence/bug-reporter/issues) first, then to Player Support through the in-game support icon.
 - Ubisoft has not published a Mac (macOS) build. M-series Macs that can sideload iPad apps may technically be able to run the iPad version, but this is not officially supported and we have not personally tested it.
 
 ---
@@ -149,11 +156,12 @@ Officially supported, confirmed by Ubisoft:
 - **PlayStation 5 (DualSense) controllers** on iOS and Android. ([Ubisoft news](https://www.ubisoft.com/en-ca/game/the-division/resurgence/news-updates/1wetWFRDXzvICd2JuTQwBO/controller-layout-update))
 - **Xbox controllers** on iOS and Android.
 - **Backbone controllers** on iOS and Android. There is even a [Backbone partnership reward set](/guides/division-resurgence-codes/) you can claim if you connect one.
-- **Mouse and keyboard** on PC, and on Android per a recent patch.
+- **Mouse and keyboard** on PC, and on Android per an earlier patch.
+- **Steam Deck controls** got a configuration pass in Season 2 Phase 2, alongside better controller navigation and Android back-button behavior.
 
 Less officially supported but worth knowing:
 
-- Mouse and keyboard on iOS broke in late April and has been intermittent since. If precision aiming on iOS matters to you, hold off until Ubisoft locks down the input layer again.
+- Mouse and keyboard on iOS broke in late April and was still intermittent when we last checked. If precision aiming on iOS matters to you, hold off until Ubisoft locks down the input layer again.
 - The Android manual cover input has been disappearing for some players after a single use. Reopening the touch customization screen brings it back temporarily.
 
 ---
@@ -166,7 +174,7 @@ Ubisoft put out a clear, official statement on this. From the [Emulator FAQ](htt
 
 > "Please note that we cannot guarantee your playing experience on emulator. If you encounter issues or bugs while playing on emulator our teams will not be able to provide assistance."
 
-Translation: it is not against the rules, your progress carries over through Ubisoft Connect, but if it crashes you are on your own. Now that the proper **PC client is out for free on Ubisoft Connect**, most players are migrating off emulators anyway, since you get cleaner performance and actual support.
+Translation: it is not against the rules, your progress carries over through Ubisoft Connect, but if it crashes you are on your own. Now that the proper **PC client is free on Steam and Ubisoft Connect**, there's little reason to emulate on a Windows PC that meets the specs: you get cleaner performance and actual support. Our [emulator comparison](/guides/division-resurgence-pc-emulator-comparison/) covers the cases where an emulator still makes sense.
 
 ---
 
@@ -181,6 +189,11 @@ That means you can:
 - Use an emulator as a backup if your phone is being repaired.
 
 If you accidentally pick the wrong region on a second device, your character will look like it does not exist. Switch the server in the region selector at startup, you will be fine.
+
+Two more rules from Ubisoft's Help Center that save a lot of panic:
+
+- **Guest accounts:** link your guest account to Ubisoft Connect first ("Link to Ubisoft Connect" in the options), *before* you log into an existing Ubisoft Connect account on another device.
+- **Moving from mobile to Steam:** log into a Ubisoft Connect account on mobile first to link your progress, then launch on PC through Steam and sign in with that same account.
 
 ---
 
@@ -205,22 +218,27 @@ In the spirit of not making things up, here is what we are honestly unsure about
 - **Apple Silicon Macs** (M1, M2, M3, M4, M5) running the iPad app. Theoretically possible, not officially supported, and we have not personally verified that it works well.
 - **Logitech G Cloud.** A 2024 closed beta forum post said it was incompatible, but that was before the global launch. We have not confirmed the current status.
 - **Most Chromebooks** outside the specific Intel and AMD models Ubisoft has named.
-- **Steam Deck** and other handheld PCs running SteamOS. The PC version is Windows 11 only right now, so the standard SteamOS install will not run it. Players who installed Windows on their Deck have reported it works, but we are not going to call that officially supported.
+- **Steam Deck** and other handheld PCs. Since the Steam launch, Ubisoft's Season 2 Phase 2 patch notes have mentioned improved "Steam Deck control configuration," so Deck players clearly exist. We haven't checked the game's official Steam Deck compatibility rating, and the store page still lists Windows 11 as the minimum OS, so we're not calling it officially supported. Earlier, players who installed Windows on their Deck reported it works.
 
 We will update this page as Ubisoft expands the list or confirms more platforms.
 
 ---
 
 **Related Reading:**
+- [Division Resurgence on Steam: PC Guide](/guides/division-resurgence-steam-pc-guide/)
+- [PC Emulator Comparison](/guides/division-resurgence-pc-emulator-comparison/)
 - [Division Resurgence Error Codes](/guides/division-resurgence-error-codes/)
 - [Division Resurgence Codes](/guides/division-resurgence-codes/)
 - [Patch 1.2.1 Notes](/patch-notes/patch-1-2-1/)
+- [Season 2 Phase 2 Patch Notes](/patch-notes/season-2-phase-2/)
 - [Season 1-3 Roadmap](/news/season-1-2-3-roadmap/)
 
 **Sources:**
 - [Ubisoft Help Center: The Division Resurgence Compatible Device List](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2456-the-division-resurgence-compatible-device-list/)
+- [Ubisoft Help Center: Play on PC (Steam or Ubisoft Connect), All You Need to Know](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2509-play-on-pc-steam-or-ubisoft-connect-all-you-need-to-know/)
+- [Steam: The Division Resurgence store page](https://store.steampowered.com/app/3749720/The_Division_Resurgence/)
 - [App Store: The Division Resurgence](https://apps.apple.com/us/app/the-division-resurgence/id1606349410)
-- [Ubisoft: Play Resurgence on PC — All You Need to Know](https://www.ubisoft.com/en-gb/game/the-division/resurgence/news-updates/1rUYWPgMV9hXYZ6FcLOkpX/play-resurgence-on-pc-all-you-need-to-know)
+- [Ubisoft: Play Resurgence on PC: All You Need to Know](https://www.ubisoft.com/en-gb/game/the-division/resurgence/news-updates/1rUYWPgMV9hXYZ6FcLOkpX/play-resurgence-on-pc-all-you-need-to-know)
 - [Ubisoft Store: The Division Resurgence Early Access](https://store.ubisoft.com/ie/the-division-resurgence/62e7cc7251f14849aaca73c8.html)
 - [Ubisoft Help Center: Can I play this on an emulator?](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2469-can-i-play-this-on-an-emulator/)
 - [Ubisoft News: Controller Layout Update](https://www.ubisoft.com/en-ca/game/the-division/resurgence/news-updates/1wetWFRDXzvICd2JuTQwBO/controller-layout-update)

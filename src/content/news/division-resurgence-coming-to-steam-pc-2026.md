@@ -1,46 +1,50 @@
 ---
 title: "Division Resurgence Coming to Steam"
 publishDate: "2026-06-06"
+updatedDate: 2026-10-24
 author: "RapidF5"
 featuredImage: "/images/news/division-resurgence-coming-to-steam-pc-2026.webp"
-imageAlt: "Official Division Resurgence Steam announcement post from the TheDivMobile X account confirming the game is coming to Steam for free later in 2026"
+imageAlt: "A Division agent riding a wrecking ball with a Steam logo through a safe house"
 description: "Division Resurgence is coming to Steam in 2026. The PC version is already live on Ubisoft Connect with crossplay. Everything confirmed so far."
 tags: ["News", "PC", "Steam", "Ubisoft Connect", "Launch", "PC Release", "Crossplay"]
-shareTitle: "Division Resurgence is coming to Steam — and already playable on PC"
+shareTitle: "Division Resurgence is coming to Steam, and already playable on PC"
 shareText: "Division Resurgence is officially coming to Steam later in 2026. The PC version is already live on Ubisoft Connect with full crossplay and cross-progression. Wishlist it now."
 
 faqs:
   - question: "Is Division Resurgence coming to PC?"
-    answer: "Yes. The official Division Resurgence team announced on June 5, 2026 that the game is coming to Steam later in 2026. The Steam page at store.steampowered.com/app/3749720 is live now and accepting wishlists. The PC version is also already playable for free through the Ubisoft Connect launcher since April 2026."
+    answer: "It's already here, twice over. PC early access opened on Ubisoft Connect on April 28, 2026, and the full PC launch on Steam and Ubisoft Connect happened on August 5, 2026, alongside Season 2. Both versions are free. Your phone battery is relieved."
   - question: "When does Division Resurgence release on Steam?"
-    answer: "Steam lists the release as Coming soon. The official X post says later this year, meaning later in 2026. A specific date has not been announced."
+    answer: "It released on August 5, 2026. Ubisoft confirmed the date at the end of July, and the Steam store lists August 5, 2026 as the release date. The 'later this year' from the June announcement turned out to be about two months."
   - question: "Is Division Resurgence free to play on PC?"
-    answer: "Yes. The Steam page describes it as a free-to-play looter-shooter RPG. The Ubisoft Connect PC version is also free to play. Same free-to-play model as the mobile version."
+    answer: "Yes. The Steam page describes it as a free-to-play looter-shooter RPG, and the Ubisoft Connect version is free too. Same free-to-play model as the mobile version, in-app purchases included."
   - question: "Can I play Division Resurgence on PC right now?"
-    answer: "Yes. Division Resurgence has been available to play for free on PC via the Ubisoft Connect launcher since April 2026. The Steam release announced for later in 2026 is an additional platform, not the first PC release. To play today, log into the Ubisoft Connect launcher, search for The Division Resurgence in the Ubisoft games store, and download it."
+    answer: "Yes, on Steam or Ubisoft Connect, both free. On Steam you install it like any other game and get prompted to install a light version of the Ubisoft Connect launcher. On Ubisoft Connect, search for The Division Resurgence in the store; the game downloads a launcher first, then the game files."
   - question: "What are the PC system requirements for Division Resurgence?"
-    answer: "Minimum: Windows 11, Intel i5-8400 or AMD Ryzen 5 3400G, 8 GB RAM, Intel UHD 630 or AMD Vega 11 integrated graphics, DirectX 11, 30 GB storage. Recommended: Windows 11, Intel i5-8400 or AMD Ryzen 3 3100, 8 GB RAM, Nvidia GTX 1650 4GB or AMD RX 5500 4GB or Intel ARC A380 6GB, DirectX 11, 30 GB storage."
+    answer: "Minimum: 64-bit Windows 11, Intel i5-8400 or AMD Ryzen 5 3400G, 8 GB RAM, Intel UHD 630 or AMD Vega 11 integrated graphics, DirectX 11, 30 GB storage. Recommended: Windows 11, Intel i5-8400 or AMD Ryzen 3 3100, 8 GB RAM, Nvidia GTX 1650 4GB or AMD RX 5500 4GB or Intel ARC A380 6GB, DirectX 11, 30 GB storage. The Steam page still listed the same specs in October 2026."
   - question: "How big is the Division Resurgence PC download?"
-    answer: "The Ubisoft Connect PC version is around 17GB. Ubisoft recommends having at least 30GB free on your computer. The Steam page lists 30GB of available storage as both the minimum and recommended requirement."
+    answer: "Ubisoft's Help Center puts the PC version at around 17GB and recommends at least 30GB free. The Steam page lists 30GB of available storage as both the minimum and recommended requirement."
   - question: "Does Division Resurgence have crossplay between PC and mobile?"
-    answer: "Yes, on Ubisoft Connect PC. Per the official Ubisoft PC info page, The Division Resurgence is fully cross-play on PC and mobile (iOS and Android). You can play with friends on any device as long as you are in the same regional server. Crossplay between the Steam version specifically and mobile has not been individually confirmed yet."
+    answer: "Yes, on Steam and Ubisoft Connect. Ubisoft's Help Center says the game is fully cross-play on PC and mobile (iOS and Android), as long as you and your friends are on the same regional server. Season 2 Phase 1 also added a crossplay matchmaking selector, and mobile-only groups can now stay in mobile Dark Zone instances."
   - question: "Does Division Resurgence have cross-progression between PC and mobile?"
-    answer: "Yes, on Ubisoft Connect PC. Per the official Ubisoft PC info page, using the same Ubisoft Connect account, you can continue your progression in the game from any device. The same is most likely true on Steam through Ubisoft Connect account integration, but has not been formally confirmed for the Steam release."
+    answer: "Yes, Steam included: your progression lives on your Ubisoft Connect account. If you started on mobile, Ubisoft says to log into a Ubisoft Connect account on mobile first, then launch on PC and sign in with the same account. Guest players need to link their guest account to Ubisoft Connect before logging in on another device."
   - question: "Can I use mouse and keyboard on PC?"
     answer: "Yes. Per the official Ubisoft PC info page, you can use your usual inputs to enjoy the game: either mouse and keyboard or a controller of your choice."
   - question: "Which languages will Division Resurgence support on PC?"
-    answer: "According to the Steam page, the game supports English, French, Italian, German, and Spanish (Spain) at launch. Only English has full audio. The other four languages have interface and subtitles only."
+    answer: "When we wrote this in June, the Steam page listed English, French, Italian, German, and Spanish (Spain), with full audio only in English. By October 2026 the Steam page listed 11 supported languages, with full audio in English and interface plus subtitles for French, Italian, German and Spanish."
   - question: "Where can I wishlist Division Resurgence on Steam?"
-    answer: "Direct Steam page: store.steampowered.com/app/3749720. Click Add to your wishlist once signed into Steam."
+    answer: "No need anymore: it's out. Same Steam page, store.steampowered.com/app/3749720, just install it. The wishlist push paid off, by the way: Ubisoft said the wishlist goal was reached and gave every player the FYNC Parade Apparel Set plus 10 Exclusive and 10 Regular SHD Keys."
   - question: "Is Division Resurgence coming to consoles like PS5 or Switch 2?"
-    answer: "No console release has been announced as of June 6, 2026. The current confirmed platforms are mobile (iOS and Android), PC via Ubisoft Connect, and PC via Steam later in 2026. Console requests are common in the community replies, but the team has not commented on a console version."
+    answer: "Still no, as of October 24, 2026. No console version has been announced; the platforms are iOS, Android, and PC through Steam and Ubisoft Connect. Console requests are common in the community replies, but the team has not commented on a console version."
   - question: "Will my Ubisoft Connect PC progress carry over to the Steam version?"
-    answer: "This has not been formally addressed for the Steam release as of June 6, 2026. Cross-progression between Ubisoft Connect PC and mobile is already confirmed through Ubisoft Connect accounts. Most Steam-published Ubisoft titles integrate with Ubisoft Connect accounts, so the most likely outcome is yes, but we are waiting on official confirmation."
+    answer: "Yes. Progress is tied to your Ubisoft Connect account, so signing into the same account on Steam picks up where you left off, and Ubisoft's roadmap promised that early access progress would carry over to the full PC launch. No restart, no stat wipe, no tears."
   - question: "How can I follow updates on the PC release?"
-    answer: "Follow the official @TheDivMobile X account and keep an eye on the official public Trello board at trello.com/b/qTP1a9cv for known issues and updates. We will keep covering every confirmed update on this site."
+    answer: "Follow the official @TheDivMobile X account, the game's Steam news feed, and Ubisoft's official bug reporter for known issues (it replaced the old public Trello board as the place to check). We keep covering every confirmed update on this site."
 ---
 
 Division Resurgence is officially coming to PC through Steam later in 2026. The official Division Resurgence account on X confirmed it on June 5, 2026, the Steam store page is already live, and the title is wishlist-ready right now.
+
+> [!INFO] Update (October 2026)
+> It's out. The Division Resurgence launched free on Steam on August 5, 2026, alongside Season 2 "The Call", with full cross-play and cross-progression with mobile and Ubisoft Connect through your Ubisoft Connect account (Steam prompts you to install a light version of the Ubisoft Connect launcher). The date story is in our [Steam release date post](/news/steam-release-date-august-5/), and setup, specs and Steam Deck tips are in the [Steam PC guide](/guides/division-resurgence-steam-pc-guide/).
 
 Here is the part most people are missing: **the PC version is already playable today**. Since April 2026, you can download Division Resurgence for free through the Ubisoft Connect launcher with full crossplay and cross-progression with mobile. The Steam release is the next platform expansion, not the first PC release.
 
@@ -122,7 +126,7 @@ Both listed as **Ubisoft** on the Steam page.
 | German | Yes | No | Yes |
 | Spanish (Spain) | Yes | No | Yes |
 
-English is the only language with full voice audio at launch on the Steam page. The other four languages get subtitles only.
+English is the only language with full voice audio at launch on the Steam page. The other four languages get subtitles only. (By October 2026 the Steam page listed 11 supported languages.)
 
 ## System Requirements
 
@@ -158,7 +162,7 @@ Note: 64-bit processor and operating system required.
 
 The headline here is just how light the minimum spec is. The minimum graphics requirement is an integrated GPU. A GTX 1650 sits at the recommended tier. If your kid's hand-me-down gaming laptop can run Fortnite, it can probably run Division Resurgence. That is a very deliberate floor, and it tracks with the title's mobile-first heritage where the team has been targeting a wide hardware range.
 
-For our [PC emulator comparison readers](/guides/pc-emulator-comparison/) who have been running BlueStacks or Google Play Games Beta to play on PC: a native Steam client should make all of that unnecessary. No more emulator quirks, no more app store sign-ins, just a Steam library entry.
+For our [PC emulator comparison readers](/guides/division-resurgence-pc-emulator-comparison/) who have been running BlueStacks or Google Play Games Beta to play on PC: a native Steam client should make all of that unnecessary. No more emulator quirks, no more app store sign-ins, just a Steam library entry.
 
 ## What the Steam Page Does Not Confirm
 
@@ -191,7 +195,7 @@ Plenty of straight-up enthusiasm. **@FalcoInAshes** summed up the PC crowd's rea
 
 ### The Real Question Everyone Is Asking
 
-The single most important question in the replies came from **@CharlesHarr80**: "Do we have to start over on steam if we are already playing on PC through Ubisoft Connect?" This is the question. Cross-progression between Ubisoft Connect PC and mobile is already confirmed (covered above), but whether the Steam release inherits the same Ubisoft Connect account integration has not been formally addressed yet. **@GottaWatchMe** and **@hmgamesnsoftwa1** raised the related point about whether the Steam version will still require the Ubisoft Connect launcher to run in the background, which is common for Steam-published Ubisoft titles.
+The single most important question in the replies came from **@CharlesHarr80**: "Do we have to start over on steam if we are already playing on PC through Ubisoft Connect?" This is the question. Cross-progression between Ubisoft Connect PC and mobile is already confirmed (covered above), but whether the Steam release inherits the same Ubisoft Connect account integration has not been formally addressed yet. **@GottaWatchMe** and **@hmgamesnsoftwa1** raised the related point about whether the Steam version will still require the Ubisoft Connect launcher to run in the background, which is common for Steam-published Ubisoft titles. (Answer, as of launch: Steam prompts you to install a light version of the Ubisoft Connect launcher.)
 
 If you are sitting on a Ubisoft Connect account with progression already in flight, you are not the only one waiting on the official word.
 
@@ -205,11 +209,11 @@ No surprise here, the replies also functioned as an impromptu bug tracker. **@JC
 
 Most of these align with active cards on the [public Trello known issues board](/news/division-resurgence-known-issues-trello-board-breakdown/), including the items-disappearing-from-inventory investigation and the Outpost Annihilation side mission fix that is currently In Progress. If you have not seen the Trello board yet, that is the right place to track whether your favorite bug is already logged.
 
-The team also has gameplay polish requests landing in the same comment thread. **@ChitoGamingLive** asked for better graphics and optimization. **@Houseofwrynn81** asked for QoL changes like auto-skip cutscenes and a smoother chock-running input. **@Born2beSlicker** asked for continued attention to the mobile build alongside the PC push: "Can you improve it for mobile too? It's been quite a mess on mobile since the 1.2 update". Fair ask, and worth flagging given that the title was mobile-first and the mobile player base is still the foundation of the game.
+The team also has gameplay polish requests landing in the same comment thread. **@ChitoGamingLive** asked for better graphics and optimization. **@Houseofwrynn81** asked for QoL changes like auto-skip cutscenes and a smoother chock-running input. **@Born2beSlicker** asked for continued attention to the mobile build alongside the PC push ("Can you improve it for mobile too?"), saying mobile had been rough since the 1.2 update. Fair ask, and worth flagging given that the title was mobile-first and the mobile player base is still the foundation of the game. (Mobile did get attention: the June 26 hotfix fixed an iOS crash, and Season 1 Phase 3 fixed crashes across platforms.)
 
 ### Regional Access Concerns
 
-A few replies raised regional and language access. **@8o_pt** asked for Arabic language support to be added. **@yahya_heja9813** raised broader access concerns for players in restricted regions. The current Steam page lists English, French, Italian, German, and Spanish (Spain) at launch, with full audio only for English. Additional language support has not been announced.
+A few replies raised regional and language access. **@8o_pt** asked for Arabic language support to be added. **@yahya_heja9813** raised broader access concerns for players in restricted regions. At the time, the Steam page listed English, French, Italian, German, and Spanish (Spain), with full audio only for English. By October 2026 it listed 11 supported languages.
 
 ### Division 2 Comparisons
 
@@ -235,20 +239,26 @@ It takes 10 seconds.
 
 Wishlists actually matter for Steam launches. They drive the algorithm, drive the launch-day notifications, and signal demand to Steam. If you want this title to land with momentum on Steam, wishlisting is the single most useful free thing you can do.
 
+(Moot now that the game is out, but it worked: Ubisoft said the wishlist goal was reached and gave every player the FYNC Parade Apparel Set plus 10 Exclusive and 10 Regular SHD Keys.)
+
 ## What This Means for Your Mobile Builds
 
 Good news: crossplay and cross-progression are already live between Ubisoft Connect PC and mobile, per Ubisoft's official PC info page. Using the same Ubisoft Connect account, your progression carries between devices. Your [Tactical Pharma build](/builds/tactical-pharma-800k-dps-rank-1-global-build/), your [Milkshake Machine LMG build](/builds/milkshake-machine-strawberry-milkshake-lmg-build/), and your hard-farmed exotics travel with you. The [exotic weapons list](/guides/division-resurgence-exotic-weapons-list-2026/) and the [build database](/database/) remain the source of truth for what works in the current patch on either platform.
 
 Whether the Steam version inherits the same Ubisoft Connect account linking and crossplay setup has not been formally stated for the Steam release specifically. Given that Ubisoft Connect cross-progression already exists for the current PC version, and Steam Ubisoft titles typically integrate with Ubisoft Connect accounts, the most likely outcome is yes. We will update this article when it is officially confirmed for the Steam release.
 
+Confirmed since: the Steam version uses your Ubisoft Connect account, so progression and crossplay carry across Steam, Ubisoft Connect and mobile.
+
 ---
 
 **Related Reading:**
-- [Season 1-2-3 Roadmap](/news/season-1-2-3-roadmap/) — the full roadmap breakdown
-- [Scorpio and Diamondback Coming to Division Resurgence](/news/scorpio-diamondback-coming-to-division-resurgence-june-2026/) — Phase 3 exotics preview
-- [Division Resurgence Known Issues Trello Board](/news/division-resurgence-known-issues-trello-board-breakdown/) — every card decoded
-- [Exotic Weapons Database](/database/exotic-weapons/) — every current exotic with stats and talents
-- [PC Emulator Comparison Guide](/guides/pc-emulator-comparison/) — current options until the Steam version drops
+- [Division Resurgence Steam & PC Guide](/guides/division-resurgence-steam-pc-guide/): setup, specs, crossplay and Steam Deck, post-launch
+- [Steam Release Date: August 5](/news/steam-release-date-august-5/): the launch date news
+- [Season 1-2-3 Roadmap](/news/season-1-2-3-roadmap/): the full roadmap breakdown
+- [Scorpio and Diamondback Coming to Division Resurgence](/news/scorpio-diamondback-coming-to-division-resurgence-june-2026/): Phase 3 exotics preview
+- [Division Resurgence Known Issues Trello Board](/news/division-resurgence-known-issues-trello-board-breakdown/): every card decoded
+- [Exotic Weapons Database](/database/exotic-weapons/): every current exotic with stats and talents
+- [PC Emulator Comparison Guide](/guides/division-resurgence-pc-emulator-comparison/): the emulator options people used before the Steam version
 
 ---
 
@@ -258,4 +268,7 @@ Whether the Steam version inherits the same Ubisoft Connect account linking and 
 - Official Steam page: [Division Resurgence on Steam](https://store.steampowered.com/app/3749720)
 - Official Ubisoft PC info page: [Play Resurgence on PC: All You Need to Know](https://www.ubisoft.com/en-us/game/the-division/resurgence/news-updates/1rUYWPgMV9hXYZ6FcLOkpX/play-resurgence-on-pc-all-you-need-to-know) (published April 28, 2026)
 - Official Ubisoft game page: [The Division Resurgence](https://www.ubisoft.com/en-us/game/the-division/resurgence)
+- Ubisoft, [Now Available on Steam (August 5, 2026)](https://www.ubisoft.com/en-us/game/the-division/resurgence/news-updates/1dqH85Pad1ydYGwCOdlDp7/now-available-on-steam)
+- Ubisoft Help Center, [Play on PC (Steam or Ubisoft Connect): all you need to know](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2509-play-on-pc-steam-or-ubisoft-connect-all-you-need-to-know/)
+- MassivelyOP, [Steam release date confirmed (July 31, 2026)](https://massivelyop.com/2026/07/31/mobile-looter-shooter-the-division-resurgence-locks-down-a-full-pc-release-date-of-august-5/)
 - All system requirements, language support, genre tags, and free-to-play status quoted in this article are sourced directly from the official Steam store page as of June 6, 2026. All Ubisoft Connect PC version facts (crossplay, cross-progression, download size, input support, installation steps) are sourced verbatim from the official Ubisoft PC info page.

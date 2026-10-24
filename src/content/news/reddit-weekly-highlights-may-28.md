@@ -1,6 +1,7 @@
 ---
 title: "Division Resurgence Reddit Highlights - 10 Best Posts May 28"
 publishDate: "2026-05-28T21:00:00Z"
+updatedDate: 2026-10-24
 author: "RapidF5"
 featuredImage: "/images/news/reddit-weekly-highlights-may-28-hero.jpg"
 imageAlt: "Division Resurgence Reddit weekly community highlights for late May 2026 featuring vendor fixes, compensation, and Dark Zone drama"
@@ -10,11 +11,11 @@ shareTitle: "Share the chaos"
 shareText: "The 10 funniest Reddit posts from the last 10 days of Division Resurgence. Your clan needs to see this."
 faqs:
   - question: "Is the vendor working again in Division Resurgence?"
-    answer: "Yes. The vendor is back. He has been through a lot. Please do not sell him 47 grey drops at once, the man just got back on his feet. Give him a minute."
+    answer: "Yes. Patch 1.2.1 on May 20 fixed vendors not showing the items you could sell, plus the bug that let you sell locked or favorited items. The vendor has been through a lot, though. Please do not sell him 47 grey drops at once, the man just got back on his feet. Give him a minute."
   - question: "Why do I keep getting shotgun augments?"
-    answer: "Because the RNG sees your carefully optimized AR build and has chosen violence. There is no fix. There is only acceptance. You are a shotgun main now. Embrace it."
+    answer: "Because the RNG sees your carefully optimized AR build and has chosen violence. The less dramatic answer: Ubisoft's official drop-rate page doesn't cover those augment crates, so nobody can prove they're weighted, and a pile of shotgun TAMs is most likely a bad streak. Since Season 1 Phase 2, unwanted Tactical Augmentation Modules dismantle into Encrypted Data, so at least the shotguns pay rent. You are a shotgun main now. Embrace it."
   - question: "Did the NYC base janitor ever get a break?"
-    answer: "No. He is still sweeping. He has been sweeping since launch. Multiple agents have offered to help. He declined. This is his burden. He will carry it alone."
+    answer: "No. He is still sweeping. He has been sweeping since launch. Multiple agents have offered to help. He declined. He has never appeared in a patch note, which means he isn't a bug. He's just dedicated. This is his burden. He will carry it alone."
   - question: "Should I read the gear descriptions in Division Resurgence?"
     answer: "Technically yes. Realistically, you are going to look at Crit Chance, Crit Damage, and maybe the color of the icon, and that is fine. Somebody wrote all those descriptions and they know we skip them. We are sorry."
 ---
@@ -29,9 +30,9 @@ This week on r/thedivisionresurgence: a Cleaner defied gravity and moved to the 
 
 ![NPC lying motionless on the floor of the Base of Operations while two agents stand nearby](https://i.redd.it/gdxfc2u0nz1h1.jpeg)
 
-The caption was just "Sad day for deceased agent." Six words. NPC face-down in the Base of Operations like he saw the patch notes and gave up on the spot.
+The caption was just "Sad day for deceased agent." Five words. NPC face-down in the Base of Operations like he just saw his 24-hour crafting timer and gave up on the spot.
 
-Pour one out. He died doing what he loved, which was waiting.
+Pour one out. He died doing what he loved, which was waiting. Good news, buddy: patch 1.2.1 landed the next day.
 
 ---
 
@@ -44,7 +45,7 @@ Pour one out. He died doing what he loved, which was waiting.
 
 The physics engine had a moment. A Cleaner took one shotgun blast, slingshotted into low earth orbit, and landed feet-first on the ceiling like he was auditioning for the next Marvel movie. The agent in the foreground is just staring at him. No reaction. No prompt. Just two coworkers acknowledging that one of them is now on the roof and neither knows what to do about it.
 
-This is the Division Resurgence experience in one screenshot. The game will throw a thousand enemies at you and one of them will end up hanging from the lights, and you'll keep playing because what else are you going to do.
+This is the Division Resurgence experience in one screenshot: the game will throw a thousand enemies at you, one of them will end up hanging from the lights, and you'll screenshot it and keep playing.
 
 ---
 
@@ -104,6 +105,8 @@ A 470-word conspiracy thesis. The author mapped out the entire Phoenix Credits t
 
 Key evidence: the vendor still let you *buy*, just not *sell*. If it was a real bug, both should have gone down. Therefore, conspiracy. The comments alternate between "you might be onto something" and "you need to log off."
 
+For the record, it was a bug: Ubisoft's [patch 1.2.1 notes](/news/division-resurgence-news-may-20-2026/) the next day listed the fix for vendors not showing sellable items. Case closed, corkboard retired.
+
 ---
 
 ## 8. 📦 "These Augment Crates Have to Be Weighted, Right?"
@@ -145,7 +148,7 @@ We needed this post.
 
 ## What This Means
 
-Two weeks ago this community was writing eulogies. This week it's writing punchlines. That's a real turn. The dev team came back with 500K credits, fixed the vendor, patched the inventory loss bug, and earned themselves some serious goodwill in the process. The energy in the subreddit is back to "I love this dumb game" and that matters more than any patch note.
+Two weeks ago this community was writing eulogies. This week it's writing punchlines. That's a real turn. The dev team came back with 500K Basic Credits and 750 Phoenix Credits for everyone, fixed the vendor, patched the inventory loss bug (Season 1 Phase 3 shipped another fix for disappearing items in June), and earned themselves some serious goodwill in the process. The energy in the subreddit is back to "I love this dumb game" and that matters more than any patch note.
 
 We'll be back next week with more. Until then, keep your inventory screenshotted, keep your jokes ready, and tip the NYC base janitor.
 

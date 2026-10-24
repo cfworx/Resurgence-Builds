@@ -10,13 +10,12 @@
  * actually been re-checked in-game (per the Operating Manual). Pages that
  * haven't been re-verified pass their own older label to verifiedPatch().
  */
-// NOTE: Season 2 status unconfirmed as of 2026-07-04. Two build articles carry
-// their own "Season 2" patch labels (left untouched). Bump this constant once
-// the season is confirmed live.
-export const CURRENT_PATCH = 'Season 1 · Phase 3';
+// Live as of 2026-10-24: Season 2 Phase 2 (launched 2026-09-16, extended by Ubisoft on 2026-10-21
+// "until we are ready to release a much bigger update later this year").
+export const CURRENT_PATCH = 'Season 2 · Phase 2';
 
 /** Plain variant for use inside <title> tags (no interpunct). */
-export const CURRENT_PATCH_PLAIN = 'Season 1 Phase 3';
+export const CURRENT_PATCH_PLAIN = 'Season 2 Phase 2';
 
 /**
  * Label for a "Last verified" badge.

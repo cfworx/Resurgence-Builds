@@ -12,7 +12,7 @@ tags: ["Builds", "Vanguard", "LMG", "Exotic", "Strawberry Milkshake", "Phalanx A
 description: "Vanguard Strawberry Milkshake LMG build: Phalanx Attack 4pc, In Sync double-dip, Dominating Presence OS. 118-round Multi-Shot crit avalanche."
 author: "RapidF5"
 featuredImage: "/images/builds/milkshake-machine-hero.jpg"
-imageAlt: "Division Resurgence Strawberry Milkshake exotic LMG build guide hero image showing the Strawberry Milkshake weapon on a billboard in a snowy city environment with ISAC intel overlay"
+imageAlt: "A man holding a strawberry milkshake and a Strawberry Milkshake LMG with a nice speech bubble on a snowy New York street"
 shareTitle: "Bring the blender"
 shareText: "118 rounds. 37% Multi-Shot. Glass Cannon justified. This is The Milkshake Machine."
 faqs:
@@ -23,24 +23,33 @@ faqs:
   - question: "Is Glass Cannon safe to run on this build?"
     answer: "Yes, because Swift Taunt is permanently active. At 550 RPM you hit three enemies inside five seconds without trying. That triggers Swift Taunt, which grants Extra Health equal to 25% Max Health for 10 seconds. That Extra Health buffer absorbs the -10% Damage Reduction penalty from Glass Cannon many times over. If you ever lose Swift Taunt uptime (solo content with single targets), you'll feel the squish. In group content and any crowd fight, Glass Cannon is a free +20% Damage."
   - question: "What OS Protocol should I use for The Milkshake Machine?"
-    answer: "Dominating Presence. +12% Weapon Damage flat, plus +5% Weapon Multi-Shot Chance per enemy within 20 meters up to +20%. The build wants you fighting close anyway because SM's confirmed Optimal Range is 29m. Dominating Presence rewards exactly that aggressive positioning. Combined with Phalanx 4pc's +12% Multi-Shot and gear rolls, you can hit ~37-40% Multi-Shot Chance in any real crowd fight."
+    answer: "Dominating Presence. +12% Weapon Damage flat, plus +5% Weapon Multi-Shot Chance per enemy within 20 meters (we originally read the cap as +20%). Big asterisk: Season 2 Phase 1 fixed a bug where it granted Armor instead of Weapon Multi-Shot Chance, and Season 2 Phase 2 reduced its maximum scaling to 35/42/49/56/63/70%. The ~37-40% Multi-Shot math in this guide predates both, so retest it. It's still the pick, because The Milkshake Machine wants you in the middle of the crowd and Dominating Presence rewards exactly that kind of poor life choice."
   - question: "What's the godroll for Strawberry Milkshake?"
-    answer: "Weapon Damage + Weapon Critical Hit Damage on the attribute rolls. T2 rarity. In Sync + Swift Taunt as the rolled talents. SM is Shredding damage only, so do not roll Blast or Piercing. If you currently have Piercing Damage + Skill Intensity rolls (a common stock drop), this is your priority upgrade target."
+    answer: "Weapon Damage + Weapon Critical Hit Damage on the attribute rolls. T2 rarity. In Sync + Swift Taunt as the rolled talents. SM is Shredding damage (Season 1 Phase 3 fixed the Armory wrongly showing it as Piercing). Season 2 Phase 1 removed Blast, Shredding and Piercing damage bonuses from the weapon attribute pool in favor of All Weapon Damage, so new rolls can't brick that way anymore. If your copy still carries the old Piercing Damage + Skill Intensity rolls (a common stock drop back then), it's still your priority upgrade target."
   - question: "Can I run this build without Strawberry Milkshake?"
-    answer: "You can run a Phalanx Attack 4pc + Fury Strike 2pc Vanguard build with a different LMG and most of the engine still works. You lose the In Sync + Swift Taunt combo on the weapon slot itself, which is the build's biggest single-piece synergy. If you're farming toward The Milkshake Machine, run an LMG with In Sync and Swift Taunt available in the talent pool while you wait for SM to drop or get the rolls you want."
+    answer: "You can run a Phalanx Attack 4pc + Fury Strike 2pc Vanguard build with a different LMG and most of the engine still works. You lose the In Sync + Swift Taunt combo on the weapon slot itself, which is the build's biggest single-piece synergy. If you're farming toward The Milkshake Machine, run an LMG with In Sync and Swift Taunt available in the talent pool while you track down SM (Season 2 Phase 2's Exotic Sealed Caches are the official route to previous-season exotics) or chase the rolls you want."
   - question: "Why not pick Bugle Call instead of Commando for Tactical Link?"
     answer: "Bugle Call is a valid pick. It grants +14.40% Rate of Fire, Damage Reduction, and Movement Speed for 15 seconds on deploy, which is broad and defensive. Commando is the higher-ceiling pick for this specific build because the kit is already overflowing with RoF (Phalanx 3pc +18%, Inspiration +30%) and is built around Multi-Shot and crits. Commando's +10.20% WCHC on kills during Link directly amplifies the build's crit avalanche. If you want a more defensive signature window, Bugle Call is fine. If you want maximum damage, Commando."
   - question: "Is Division Resurgence pay-to-win?"
-    answer: "Not for this build. Every piece of The Milkshake Machine drops from in-game content. Strawberry Milkshake is the only exotic gate, and exotics are farmable. The build scales through gear rolls and skill mod combo sets, not premium currency."
+    answer: "Mostly not for this build. Every piece of The Milkshake Machine except the gun drops from in-game content. Strawberry Milkshake was the free exotic on the Season 1 Phase 2 Classified Ops Pass; if you missed it, Season 2 Phase 2's Exotic Sealed Caches are the official route to previous-season exotics. The build scales through gear rolls and skill mod combo sets, not premium currency."
 ---
 
 **By RapidF5 ·** Patch 1.1.2.2 ·
 
 > 118 rounds. ~37% Multi-Shot. In Sync double-dip from bullet one. Glass Cannon justified by Swift Taunt. Dominating Presence rewarding you for standing in the worst possible spot. We call it **The Milkshake Machine** because it shreds enemies the way a blender shreds ice - and because naming a build "Strawberry Milkshake Optimal" has the same energy as naming your fantasy football team "Team 1."
 
-> âš¡ **Not meta. Not trying to be.** This is a fun build. It won't top the leaderboard and it's not what you bring when your clan is actually trying. It's what you bring when you want to watch Multi-Shot crits turn a room into a smoothie while your wife asks why you're cackling at your phone at 11pm. Want meta? Check the [Build Tier List](/tier-list/). Want a good time? Keep reading.
+> **Not meta. Not trying to be.** This is a fun build. It won't top the leaderboard and it's not what you bring when your clan is actually trying. It's what you bring when you want to watch Multi-Shot crits turn a room into a smoothie while your wife asks why you're cackling at your phone at 11pm. Want meta? Check the [Build Tier List](/tier-list/). Want a good time? Keep reading.
 
 The core loop: drop Smart Cover, cast Scanning Pulse (instant In Sync skill-side buff), fire Strawberry Milkshake (In Sync weapon-side buff on first hit). Both buffs double. **+18% Weapon Damage and +18% Skill Damage from bullet one**, into Pulsed enemies taking +20% vulnerability, every third-ish bullet firing twice via Multi-Shot, Glass Cannon adding +20% Damage, Inspiration granting +30% RoF. The 118-round mag and Field Supplies refilling on Pulsed kills means you almost never reload. A lot of moving parts - that's the whole point. This one rewards the kind of person who reads patch notes on the toilet.
+
+> [!WARNING] Season 1 Phase 3 and Season 2 changes that affect this build
+> - **Strawberry Milkshake (Season 1 Phase 3, June 24):** Fixed SM showing as Piercing instead of Shredding in the Armory and dropping with LVL1 talents instead of LVL2 like other exotics. Ubisoft said everyone who had unlocked it would get an updated copy (one per owned copy). Season 2 Phase 1 then fixed Anarchy's debuff being applied on heal.
+> - **Dominating Presence (Season 2):** Phase 1 fixed a bug where it granted Armor instead of Weapon Multi-Shot Chance, so its Multi-Shot likely wasn't applying when we wrote this. Phase 2 then reduced its maximum scaling to 35/42/49/56/63/70%. The "+20% at 4 enemies" and ~37-40% Multi-Shot math below predate both changes, so retest your total.
+> - **Weapon rolls (Season 2 Phase 1):** Blast, Shredding and Piercing damage bonuses were removed from the weapon attribute pool in favor of All Weapon Damage, so the "don't roll Piercing on SM" problem only applies to old copies.
+> - **Exotic mods (Season 2):** Phase 1 reworked exotic mods (they can now be unequipped, drop from weekly quests and Elite Mission chests, and sell as weekly DZ vendor crates for 2,500 DZ Credits), and since Phase 2 exotic weapons no longer ship with their exotic mods pre-equipped.
+> - **Gear mods (Season 2 Phase 1):** The gear mod pool now includes Weapon Crit Hit Chance, Weapon Crit Hit Damage, Weapon Multi-Shot Chance and Weapon Damage. That's this build's whole stat line.
+>
+> This build has not been re-tested since Patch 1.1.2.2. Full details: [Season 1 Phase 3 patch notes](/patch-notes/season-1-phase-3-a-new-fire/), [Season 2 Phase 1 patch notes](/patch-notes/season-2-phase-1-the-call/) and [Season 2 Phase 2 patch notes](/patch-notes/season-2-phase-2/).
 
 ---
 
@@ -105,7 +114,7 @@ This is not a glass-cannon-and-die build. The Extra Health from Swift Taunt is u
 |---|---|---|
 | Primary | **Strawberry Milkshake** (T1) | In Sync + Swift Taunt. Shredding damage. Upgrade target: T2 + WD/WCHD rolls. |
 | Secondary | **PPSH-41** (T2) | Revitalize + Sentinel Aura. Survival swap only. |
-| OS Protocol | **Dominating Presence** | +12% Weapon Damage. +5% Multi-Shot per enemy within 20m (max +20% at 4 enemies). |
+| OS Protocol | **Dominating Presence** | +12% Weapon Damage. +5% Multi-Shot per enemy within 20m (max +20% at 4 enemies). Pre-Season 2 numbers, see the warning at the top. |
 | Skill 1 | **Tactical Smart Cover** | Triggers In Sync skill-side buff. Armored Train mod active behind it. |
 | Skill 2 | **Scanning Pulse** | +20% Target Vulnerability. Triggers In Sync skill-side buff instantly. Field Supplies refills mag on Pulsed kills. |
 | Signature | **Tactical Link** | Commando mod: +10.20% WCHC on kills during Link. |
@@ -117,14 +126,14 @@ Three skill mod combo sets, one per skill. All confirmed in-game on Patch 1.1.2.
 | SKILL | MOD (3PC) | WHY THIS MOD |
 |---|---|---|
 | Tactical Link | **Commando** | Kills or assists while using Tactical Link grant +10.20% Weapon Critical Hit Chance for 10 seconds. At 550 RPM you are killing constantly during Link. Every signature window becomes a crit avalanche. |
-| Commando Smart Cover | **Armored Train** | While behind a Smart Cover, weapon hits have a 5% chance of granting +2% Weapon Critical Hit Chance for 20 seconds, up to 3 stacks. Passive crit accumulation during the only moment you're not shooting, which is your reload window. |
+| Tactical Smart Cover | **Armored Train** | While behind a Smart Cover, weapon hits have a 5% chance of granting +2% Weapon Critical Hit Chance for 20 seconds, up to 3 stacks. Passive crit accumulation during the only moment you're not shooting, which is your reload window. |
 | Scanning Pulse | **Field Supplies** | Kills or assists on Pulsed enemies restore 6% Health and refill 6.40% of the current magazine. Every kill in a crowd extends the mag. More mag time means more In Sync uptime means more Multi-Shot procs. |
 
 **Alternative Pulse mod:**
 
 | SKILL | ALT MOD | WHEN TO USE IT |
 |---|---|---|
-| Scanning Pulse | **Tactical Insight** | Deploying Scanning Pulse restores 48 Signature Ability Charges, increased by 64 if there are more than 3 enemies within 70 meters. Swap Field Supplies for this if you want maximum Tactical Link uptime over mag sustain. Creates a Pulse â†’ Link â†’ kill â†’ Commando WCHC â†’ repeat loop. |
+| Scanning Pulse | **Tactical Insight** | Deploying Scanning Pulse restores 48 Signature Ability Charges, increased by 64 if there are more than 3 enemies within 70 meters. Swap Field Supplies for this if you want maximum Tactical Link uptime over mag sustain. Creates a Pulse → Link → kill → Commando WCHC → repeat loop. |
 
 **Alternative Link mod:**
 
@@ -136,7 +145,7 @@ Three skill mod combo sets, one per skill. All confirmed in-game on Patch 1.1.2.
 
 ## Why Each Gear Piece Matters in This Build
 
-**Body Armor: Glass Cannon (T2).** +20% Damage, -10% Damage Reduction. Yes, Glass Cannon. No, you won't die every 4 seconds. Swift Taunt grants 25% Max Health as Extra Health for 10 seconds every time you hit three enemies in five seconds. At 550 RPM into a crowd, that buff is basically a permanent force field. Your spouse will lose more health stepping on a LEGO than you'll notice from the -10% DR.
+**Body Armor: Glass Cannon.** +20% Damage, -10% Damage Reduction (tier 1 values; Glass Cannon II is +28%). Yes, Glass Cannon. No, you won't die every 4 seconds. Swift Taunt grants 25% Max Health as Extra Health for 10 seconds every time you hit three enemies in five seconds. At 550 RPM into a crowd, that buff is basically a permanent force field. Your spouse will lose more health stepping on a LEGO than you'll notice from the -10% DR.
 
 **Backpack: Inspiration (Fury Strike).** +30% Rate of Fire while skills are deployed. Smart Cover is deployed essentially all the time. This is +30% RoF as a passive baseline the moment you press the skill button. Free damage. The kind of free that makes you suspicious, but it's real.
 
@@ -148,7 +157,7 @@ Three skill mod combo sets, one per skill. All confirmed in-game on Patch 1.1.2.
 
 ## Best OS Protocol for Strawberry Milkshake in Division Resurgence
 
-**Dominating Presence** is the pick. +12% Weapon Damage as a flat baseline, plus +5% Weapon Multi-Shot Chance per enemy within 20 meters, capped at +20% with 4 enemies. This OS Protocol literally rewards you for standing in a bad place, which is exactly where The Milkshake Machine wants to be. Combined with Phalanx 4pc's +12% Multi-Shot and gear rolls, you can comfortably hit ~37-40% Multi-Shot Chance in the middle of a crowd fight. That means every third-ish bullet fires twice. Onto Pulsed enemies. With In Sync's +18% WD active. While Glass Cannon adds +20% Damage. While Inspiration adds +30% RoF.
+**Dominating Presence** is the pick. +12% Weapon Damage as a flat baseline, plus +5% Weapon Multi-Shot Chance per enemy within 20 meters, capped at +20% with 4 enemies. (Both numbers predate Season 2's Dominating Presence fixes; see the warning at the top.) This OS Protocol literally rewards you for standing in a bad place, which is exactly where The Milkshake Machine wants to be. Combined with Phalanx 4pc's +12% Multi-Shot and gear rolls, you can comfortably hit ~37-40% Multi-Shot Chance in the middle of a crowd fight. That means every third-ish bullet fires twice. Onto Pulsed enemies. With In Sync's +18% WD active. While Glass Cannon adds +20% Damage. While Inspiration adds +30% RoF.
 
 
 ---
@@ -157,7 +166,7 @@ Three skill mod combo sets, one per skill. All confirmed in-game on Patch 1.1.2.
 
 ### Primary: Strawberry Milkshake (Exotic LMG)
 
-The talents you want on Strawberry Milkshake are **In Sync (slot 1)** and **Swift Taunt (slot 2)**. Anarchy is locked as the exotic talent and is currently a non-factor.
+The talents you want on Strawberry Milkshake are **In Sync (slot 1)** and **Swift Taunt (slot 2)**. Anarchy is locked as the exotic talent and was a non-factor on Patch 1.1.2.2 (Season 2 Phase 1 later fixed its debuff being applied on heal).
 
 - **In Sync:** Weapon hits grant +9% Skill Damage for 8 seconds. Skill hits grant +9% Weapon Damage for 8 seconds. Bonus is doubled when both buffs are active simultaneously. Cast Scanning Pulse first. Pulse counts as a skill hit. Skill-side buff activates instantly. Fire SM. Weapon-side buff activates on the first hit. Both active. Both doubled. **+18% Weapon Damage and +18% Skill Damage from bullet one.**
 - **Swift Taunt:** Hitting 3 enemies within 5 seconds taunts nearby enemies and grants Extra Health equal to 25% Max Health for 10 seconds. At 550 RPM, this is trivially always on. This is what justifies Glass Cannon.
@@ -179,7 +188,7 @@ This is a survival swap, not a primary damage tool. Talents: **Revitalize** (kil
 | Multi-Shot Chance | 37%+ total (Phalanx +12% + Dominating Presence +20% + gear) |
 | Optimal Range | Extended via Fury Strike 2pc + kneepad roll on top of SM's 29m base |
 | Weapon Damage | Roll on Body Armor, backpack, holster where WCHD is not primary |
-| Avoid | Blast Damage, Piercing Damage. SM is Shredding only. |
+| Avoid | Blast Damage, Piercing Damage on old rolls. SM is Shredding only (and since Season 2 Phase 1, new weapon rolls use All Weapon Damage instead). |
 
 ---
 

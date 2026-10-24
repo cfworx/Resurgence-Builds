@@ -17,7 +17,8 @@ export async function GET(context: APIContext) {
     })),
     ...guides.map((post) => ({
       title: post.data.title,
-      pubDate: post.data.lastUpdated,
+      // first-published date, so refreshing an evergreen guide doesn't re-announce it to every subscriber
+      pubDate: post.data.publishDate ?? post.data.lastUpdated,
       description: post.data.description,
       link: `/guides/${post.id}/`,
     })),

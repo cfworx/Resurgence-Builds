@@ -68,24 +68,33 @@ const classHubSlug = specClassId[mod.specialization] || mod.specialization.toLow
 // Determine which skills this mod is for based on the 3pc description
 const getSkillsFromBonus = (bonus3: string, spec: string): string => {
   const b = bonus3.toLowerCase();
-  if (b.includes('artillery turret')) return 'Artillery Turret';
-  if (b.includes('explosive seeker mine')) return 'Explosive Seeker Mine';
+  // Order matters: some 3pc texts mention a second skill (e.g. Area Denial, Field Mortar).
+  // Skill names follow Ubisoft's official drop-rate tables.
   if (b.includes('m32a1') || b.includes('grenade launcher')) return 'M32A1 Grenade Launcher';
+  if (b.includes('explosive seeker mine')) return 'Explosive Seeker Mine';
+  if (b.includes('artillery turret')) return 'Artillery Turret';
+  if (b.includes('drone overload')) return 'Drone Overload';
+  if (b.includes('drone lock')) return 'Drone Lock';
   if (b.includes('striker drone')) return 'Striker Drone';
-  if (b.includes('drone lock') || b.includes('drone overload')) return 'Striker Drone';
-  if (b.includes('ballistic shield') || b.includes('phalanx shield')) return 'Ballistic Shield';
-  if (b.includes('shield bash')) return 'Ballistic Shield';
+  if (b.includes('mender drone')) return 'Mender Drone';
+  if (b.includes('first-aid firefly')) return 'First-Aid Firefly';
+  if (b.includes('defender drone')) return 'Defender Drone';
+  if (b.includes('breach combo')) return 'Breach Combo';
+  if (b.includes('ballistic shield') || b.includes('phalanx shield')) return 'Phalanx Shield';
+  if (b.includes('shield bash')) return 'Phalanx Shield';
   if (b.includes('shockwave spike')) return 'Shockwave Spike';
   if (b.includes('chemical trap')) return 'Chemical Trap';
-  if (b.includes('oxidizing hive') || b.includes('oxidizing swarm')) return 'Oxidizing Hive';
+  if (b.includes('oxidizing swarm')) return 'Oxidizing Swarm';
+  if (b.includes('oxidizing hive')) return 'Oxidizing Hive';
   if (b.includes('support station')) return 'Support Station';
-  if (b.includes('healing hive') || b.includes('healing swarm')) return 'Healing Hive';
+  if (b.includes('healing swarm')) return 'Healing Swarm';
+  if (b.includes('healing hive')) return 'Healing Hive';
   if (b.includes('smart cover')) return 'Smart Cover';
-  if (b.includes('scanning pulse') || b.includes('scanned')) return 'Scanning Pulse';
+  if (b.includes('scanning pulse') || b.includes('scanned') || b.includes('pulsed')) return 'Scanning Pulse';
   if (b.includes('tactical link')) return 'Tactical Link';
   if (spec === 'Demolitionist') return 'Demolitionist Skills';
   if (spec === 'Tech Operator') return 'Striker Drone';
-  if (spec === 'Bulwark') return 'Ballistic Shield';
+  if (spec === 'Bulwark') return 'Phalanx Shield';
   if (spec === 'Vanguard') return 'Vanguard Skills';
   if (spec === 'Field Medic') return 'Field Medic Skills';
   return 'Specialization Skills';
@@ -97,7 +106,7 @@ const targetSkill = getSkillsFromBonus(mod.bonus3, mod.specialization);
 const specOverview: Record<string, string> = {
   'Demolitionist': 'Demolitionist builds revolve around explosive AoE damage — Artillery Turrets, Seeker Mines, and the M32A1 Grenade Launcher. This spec stacks Engineering and Skill Crit to turn skills into room-clearing nukes. Pair the right mod combo with Jackpot or Fire Cycle gear sets and the numbers get silly fast.',
   'Tech Operator': 'Tech Operator builds live and die by the Striker Drone. Your drone is your primary damage source, your utility tool, and sometimes your healer all at once. Stack Engineering, Skill Crit, and drone-specific bonuses and watch it shred everything in the room before you finish reloading.',
-  'Bulwark': 'Bulwark is the wall. Your entire kit revolves around the Ballistic Shield — absorbing hits, face-tanking bosses, and making your team feel safe enough to actually play the game. Toughness stacking is king, but the right mod combo can turn a pure tank into a surprisingly punchy brawler.',
+  'Bulwark': 'Bulwark is the wall. Your entire kit revolves around the Phalanx Shield — absorbing hits, face-tanking bosses, and making your team feel safe enough to actually play the game. Toughness stacking is king, but the right mod combo can turn a pure tank into a surprisingly punchy brawler.',
   'Vanguard': 'Vanguard runs the show with Smart Cover, Scanning Pulse, and Tactical Link. You\'re the team\'s intel officer and force multiplier rolled into one. The best Vanguard builds balance personal firepower with team-wide buffs that make everyone hit harder and die less.',
   'Field Medic': 'Field Medic has two focuses: Combat Medicine (Healing Swarm, Healing Hive, Support Station) and Tactical Pharma (Oxidizing Swarm, Oxidizing Hive, Chemical Trap). The Combat Medicine path can also deal serious damage by stacking Toughness with Defensive Measures. These mod combos determine whether you are a pure healer or a corrosive area-pressure dealer.',
 };
@@ -105,7 +114,7 @@ const specOverview: Record<string, string> = {
 const specBuildGuide: Record<string, string> = {
   'Demolitionist': `For Demolitionist, this mod combo pairs well with Engineering-stacking gear sets like Jackpot (Skill Crit) and Fire Cycle (Skill Damage loops). Running Pressing Matter or Brains Over Brawn as your OS Protocol gives you multiplicative bonuses on top of whatever the 3-piece talent is doing. The Demolitionist Glass Cannon archetype — running all-in on Engineering with zero survivability — is the highest DPS ceiling in the game for skill builds.`,
   'Tech Operator': `Tech Operator builds want Long-term Effect (4pc) for Skill Duration and Engineering, plus Jackpot (2pc) for Skill Crit. Brains Over Brawn OS Protocol is the gold standard here. Stack Engineering on every piece and let your Striker Drone become an autonomous killing machine. The EMCAT and Thermite Charge mods are particularly nasty for PvP.`,
-  'Bulwark': `Bulwark builds run Fury Strike (4pc) for Crit stacking or Self-Propelled Shield (4pc) for pure tankiness. Pair with Death From Afar or Fearless Warrior OS Protocol depending on whether you want to deal damage or absorb it. Saiynergy's 334k DPS Breacher build proves that tanks don't have to be boring — the right mod combo makes you both unkillable and dangerous.`,
+  'Bulwark': `Bulwark builds run Fury Strike (4pc) for Crit stacking or Self-Propelled Shield (4pc) for pure tankiness. Pair with the Death From Afar or Pummeling Shield OS Protocol depending on whether you want to deal damage or absorb it. Saiynergy's 334k DPS Breacher build proves that tanks don't have to be boring — the right mod combo makes you both unkillable and dangerous.`,
   'Vanguard': `Vanguard builds typically run Phalanx Attack (4pc) for sustained DPS or Fury Strike (4pc) for burst. Dominating Presence OS Protocol is the premium pick. Smart Cover and Scanning Pulse mods give you team-wide buffs that stack with your gear set bonuses — that multiplicative scaling is how top squads push Legendary content.`,
   'Field Medic': `Field Medic builds have two paths: Combat Medicine with Captain Cow (4pc) and Toughness stacking for healing + Defensive Measures damage, or Tactical Pharma with Jackpot (4pc) and Engineering for Oxidizing Swarm corrosive pressure. The mod combo you choose determines which path hits harder. Chemical Trap mods with Corrosive application are strong in PvP.`,
 };
@@ -113,8 +122,8 @@ const specBuildGuide: Record<string, string> = {
 // Generate synergies text based on specialization
 const specSynergy: Record<string, string> = {
   'Demolitionist': 'Gear sets: Jackpot (Skill Crit stacking), Fire Cycle (skill damage loops), Boom-Shakalaka (explosive radius). OS Protocols: Pressing Matter, Brains Over Brawn, any Engineering protocol. Weapon talents: In Sync (skill+weapon damage loop), Surgical (skill crit on headshot).',
-  'Tech Operator': 'Gear sets: Long-term Effect (Skill Duration/Engineering), Jackpot (Skill Crit). OS Protocols: Brains Over Brawn, Tech Supremacy. Weapon talents: In Sync, Surgical. The Striker Drone benefits massively from Skill Crit Chance stacking - 50%+ Crit Chance on your drone turns every attack into a potential proc.',
-  'Bulwark': 'Gear sets: Fury Strike (Crit stacking), Self-Propelled Shield (Armor/Toughness), Phalanx Attack (sustained DPS). OS Protocols: Death From Afar, Fearless Warrior. Weapon talents: Concentrated Fire, Killer. Toughness-stacked Bulwark with the right mod combo makes you the last person standing in every wipe scenario.',
+  'Tech Operator': 'Gear sets: Long-term Effect (Skill Duration/Engineering), Jackpot (Skill Crit). OS Protocols: Brains Over Brawn, Tactical Layering. Weapon talents: In Sync, Surgical. The Striker Drone benefits massively from Skill Crit Chance stacking - 50%+ Crit Chance on your drone turns every attack into a potential proc.',
+  'Bulwark': 'Gear sets: Fury Strike (Crit stacking), Self-Propelled Shield (Armor/Toughness), Phalanx Attack (sustained DPS). OS Protocols: Death From Afar, Pummeling Shield. Weapon talents: Concentrated Fire, Killer. Toughness-stacked Bulwark with the right mod combo makes you the last person standing in every wipe scenario.',
   'Vanguard': 'Gear sets: Phalanx Attack (Rate of Fire/Multi-Shot), Fury Strike (Crit), Double Agent (hybrid). OS Protocols: Dominating Presence, Death From Afar. Weapon talents: Killer, Concentrated Fire. Smart Cover mods stack multiplicatively with cover-based gear set bonuses.',
   'Field Medic': 'Gear sets: Captain Cow (Support Station duration), Healing Elites (T2 exclusive), Jackpot (for Tactical Pharma DPS). OS Protocols: Medical Excellence (Combat Medicine cornerstone), Pressing Matter (Tactical Pharma CDR). The Defensive Measures mod combo turns your Healing Hive into an offensive weapon based on your Toughness.',
 };
@@ -143,7 +152,7 @@ const faqs = notes ? [
   },
   {
     question: `How do I get ${mod.name} skill mods in Division Resurgence?`,
-    answer: `Skill mods drop from endgame activities - missions, Dark Zone, weekly bounties, and open world events. Higher difficulty means better quality rolls. You can also craft them at the Crafting Station if you have the blueprint. Farm ${mod.specialization}-targeted loot zones for the best odds of getting this specific combo.`
+    answer: `Since Season 2 Phase 2, Dark Zone daily quests reward Skill Mods, and each ${mod.specialization} focus has its own Sealed Cache of skill mod pieces with official odds on our drop rates page. Heads up: Ubisoft's drop-rate table uses different names for some sets than the in-game tooltips, so match pieces by skill and effect text. Spares dismantle for 15, 75 or 750 Dark Zone Credits (blue, purple, yellow).`
   }
 ];
 
