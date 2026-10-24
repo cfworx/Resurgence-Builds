@@ -33,7 +33,7 @@ howTo:
       text: "Go to Event Center, then Rewards Claim, then tap Claim Now. Grab the package from your Stash."
 faqs:
   - question: "Are there any active Division Resurgence codes right now?"
-    answer: "No public text codes. As of October 24, 2026, Ubisoft still hasn't released a single type-it-in redeem code for The Division Resurgence. The real freebies have been account-wide gifts (like the Steam launch SHD Keys), Twitch Drops and partner offers like the Backbone bundle. If a site shows you a list of 'active codes', close the tab."
+    answer: "No public text codes. As of October 24, 2026, Ubisoft still hasn't released a single public type-it-in redeem code for The Division Resurgence. The real freebies have been account-wide gifts (like the Steam launch SHD Keys), Twitch Drops and partner offers like the Backbone bundle. If a site shows you a list of 'active codes', close the tab."
   - question: "What is the official Division Resurgence code redemption URL?"
     answer: "redeem.ubisoft.com/thedivisionresurgence. It's the only Ubisoft-operated redemption page for the game, and there's no in-game code box."
   - question: "How do I redeem a code in Division Resurgence?"
@@ -41,7 +41,7 @@ faqs:
   - question: "What free rewards came with the Steam launch?"
     answer: "Ubisoft gave every player 5 Regular and 5 Exclusive SHD Keys for the August 5 Steam launch, and the wishlist goal unlocked the FYNC Parade apparel set plus 10 Exclusive and 10 Regular SHD Keys for everyone. Twitch Drops returned too, with the Red Puffer Jacket as the final tier."
   - question: "Do Division 2 codes work in Division Resurgence?"
-    answer: "No. Separate games, separate redemption portals, separate entitlements. What does carry over is Ubisoft's cross-game rewards: Division 2 and Heartland items you can claim in Resurgence's Events tab if you played them on the same Ubisoft account."
+    answer: "No. Separate games, separate redemption portals, separate entitlements. What does carry over is Ubisoft's cross-game rewards: items for having played The Division 2 on the same Ubisoft account (Ubisoft's page also lists a Heartland cap), claimed in Resurgence's Events tab."
   - question: "When will new Division Resurgence codes drop?"
     answer: "Nobody outside Ubisoft knows until it's announced. Watch the official @TheDivMobile X account, the official Discord and Twitch streams. We check official channels every morning and update this page when a real code or giveaway goes live."
 ---
@@ -52,7 +52,7 @@ faqs:
 Quick answer:
 
 - **No public redeem codes are active for Division Resurgence right now.**
-- **The Backbone x Division Resurgence collab** is the only live, code-style reward bundle. Three Superior perks, free, takes five minutes.
+- **The Backbone x Division Resurgence collab** was the only code-style reward bundle when we last checked it in May. Three Superior perks, free, takes five minutes if it's still running.
 - **The official redemption page** is [redeem.ubisoft.com/thedivisionresurgence](https://redeem.ubisoft.com/thedivisionresurgence/). Anything else is third-party.
 - **The Steam launch (August 5, 2026) brought account-wide gifts**, not codes: SHD Keys for everyone, a wishlist-goal apparel set, and a new Twitch Drops campaign.
 - **Twitch Drops have run several times** since launch. We track every one of them below.
@@ -76,15 +76,15 @@ If you only read one section, read the Backbone one below.
 
 ---
 
-## The Only Live Reward Code Right Now: Backbone Collab
+## The Partner Reward Code: Backbone Collab (Last Checked May 2026)
 
 Announced May 5, 2026 by Ubisoft and [covered by TechRadar](https://www.techradar.com/gaming/ubisoft-teams-up-with-backbone-to-offer-the-division-resurgence-players-exclusive-in-game-rewards-heres-how-you-can-claim-yours). This is the first real partner code drop since the global launch. Three Superior-tier perks, free to anyone with the Backbone app:
 
-- **Ericht Body Armor System**
+- **Ericht Chest System**
 - **Small Laser Pointer**
 - **Maxillan Respirator**
 
-**You do not need a paid Backbone+ subscription or a Backbone controller to claim it.** The app is free. The reward is on your Ubisoft account, not on the hardware. (Yes, it's a little weird that a controller company is the cleanest free-loot source for a mobile shooter. We don't make the rules.)
+Per TechRadar, you claim it through the Backbone app and then use the rewards in the mobile game. Partner offers change, so check the Backbone app for the current requirements before you count on it.
 
 ### How to Claim the Backbone Bundle
 
@@ -132,7 +132,7 @@ Live during the global launch window. Watch-time tiers, claimed through Twitch a
 | 90 min | Canadian Tuxedo Top, SU Lock and Load Holster, SRS-A1 Weapon, Phoenix Credits |
 | 120 min | Canadian Tuxedo Outerwear, High-End T0 Weapon Cache, Phoenix Credits, Ranger Ballistic Vest |
 
-### Pre-Registration Auto-Grant (Launch Week)
+### Launch Week Auto-Grant
 
 Granted automatically to any account that logged in during launch week per Ubisoft's [official launch update](https://www.ubisoft.com/en-us/game/the-division/resurgence/news-updates/0OaDLfM9lS5xceFt1lRDA/resurgence-launch-community-update):
 
@@ -161,7 +161,7 @@ Tied to the PC Early Access launch via Ubisoft Connect. Four watch-time tiers pe
 
 A second pass of launch-era Twitch Drops. The interesting wrinkle: anyone who already owned a drop outfit got **Outfit Fragments worth 10,000 credits each** instead. Players in the [r/thedivisionresurgence thread](https://www.reddit.com/r/thedivisionresurgence/comments/1t1ju0k/would_you_look_at_that/) reported clearing over a million credits from a single rerun.
 
-### Backbone Collab (May 5, 2026 → Ongoing)
+### Backbone Collab (May 5, 2026; Last Checked in May)
 
 Covered in detail above. The first individual-code partner promotion the game has done.
 
@@ -211,7 +211,7 @@ We monitor all of them. **The moment a new public code is live, this page update
 
 ## Why Other Sites' "Active Codes" Lists Are Fake
 
-If you've already seen another guide claiming codes like `4HKSFXV7INY` expired November 7, 2024, save yourself a tab. The game launched globally on **March 31, 2026**. A 2024 expiration date is impossible. The strings also don't match Ubisoft's real four-by-four code format. We tested them anyway. Nothing.
+If you've already seen another guide claiming codes like `4HKSFXV7INY` expired November 7, 2024, save yourself a tab. The game launched globally on **March 31, 2026**. A 2024 expiration date makes no sense for a public code. The strings also don't match Ubisoft's real four-by-four code format. We tested them anyway. Nothing.
 
 Credit where it's due: [BlueStacks](https://www.bluestacks.com/blog/redeem-codes/the-division-resurgence-redeem-codes-en.html) and [MobileMatters](https://mobilematters.gg/guides/redeem-codes/the-division-resurgence-redeem-codes) correctly report no active codes. The other lists are SEO filler. Don't waste your time typing them.
 
@@ -243,7 +243,7 @@ No traditional text-entry redeem codes have ever been publicly released for The 
 | Launch week login | NYC Firefighter Set, Pure Gold weapon skins | Launch week 2026 | Ended |
 | PC Early Access Twitch Drops | Activated, Field, Veteran and Elite Agent tiers | From April 28, 2026 | Ended |
 | Twitch Drops rerun | Launch-era drops, duplicates converted to Outfit Fragments | Early May 2026 | Ended |
-| Backbone collab | Ericht Body Armor System, Small Laser Pointer, Maxillan Respirator | From May 5, 2026 | Active when last checked (May) |
+| Backbone collab | Ericht Chest System, Small Laser Pointer, Maxillan Respirator | From May 5, 2026 | Active when last checked (May) |
 | Steam launch gifts | 5 Regular + 5 Exclusive SHD Keys; FYNC Parade set + 10 + 10 SHD Keys | August 5, 2026 | Granted to all players |
 | Steam launch Twitch Drops | Drops campaign ending in the Red Puffer Jacket | August 2026 | Ended |
 

@@ -47,7 +47,7 @@ These tier rates and pity timers are identical to every other sealed cache in th
 - The Diamondback Cache
 - **Deadlock Cache** (more on this mystery below)
 
-Ubisoft writes the newer two as "The Bighorn" and "The Diamondback," so we do too in this table. Want to know what each gun actually does before you gamble for it? Our [exotic weapons list](/guides/division-resurgence-exotic-weapons-list-2026/) has the talents and stats.
+Ubisoft writes the newer two as "The Bighorn" and "The Diamondback," so we do too in this table. Want to know what each gun actually does before you gamble for it? Our [exotic weapons list](/guides/division-resurgence-exotic-weapons-list-2026/) has what's confirmed about each one.
 
 ### Tier A (1.43% each)
 
@@ -58,11 +58,11 @@ One **Tactical Augmentation Module** for each of the same seven exotics: Lady De
 - **Weapon Mod Selection** for each of the seven exotics (from the name, a pick of that exotic's mod).
 - **Exotic Weapon Recalibration Booklets (x3)** and **Exotic Weapon Recalibration Manuals (x3)** for each exotic.
 
-The copy of the table we captured cuts off after The Diamondback's booklet, but 21 items at 4.19% each add up to exactly 88%, which only works if Deadlock gets a booklet and manual entry too.
+Ubisoft's table lists a booklet and a manual (3 of each) for all seven exotics, Deadlock included: 21 items at 4.19% each, about 88% in total.
 
 ## How many caches for the exotic you actually want?
 
-This is the part nobody puts on the store page. The per-cache chance of one specific exotic is **0.29%, roughly 1 in 345** if there were no pity at all. The pity timer helps, but only with getting *an* S result, not *your* S result.
+This is the part a per-item percentage doesn't show you. The per-cache chance of one specific exotic is **0.29%, roughly 1 in 345** if there were no pity at all. The pity timer helps, but only with getting *an* S result, not *your* S result.
 
 Our math, assuming duplicates can drop and the pity resets after any S result (the table doesn't say otherwise):
 
@@ -85,9 +85,9 @@ Two things are worth noting without turning them into a rumor:
 
 Ubisoft's patch notes don't spell out every source, so here's only what's on the record:
 
-- Ubisoft's Season 2 Phase 2 article lists an **Exotic SHD Keys** daily login event from September 16 to October 26, which by name pairs with these caches.
+- Ubisoft's Season 2 Phase 2 article lists an **Exotic SHD Keys** daily login event from September 16 to October 26. By name those keys sound like they go with these caches, but Ubisoft doesn't say so outright.
 - Season 2 Phase 1 added **SHD Keys and Exclusive SHD Keys to Weekly Rewards**, and Phase 2 event rewards include Regular and Exclusive SHD Keys.
-- Ubisoft's drop rate article lives under **Purchases and Monetization**, and premium currency can buy keys, per creators like GameJoy Explained.
+- Ubisoft's drop rate article lives under **Purchases and Monetization**. In his August 5 Steam overview (before these caches existed), GameJoy Explained said premium currency can buy cache keys; we haven't confirmed which keys open Exotic Sealed Caches, so check the cache screen in game.
 
 If you've seen a cache source we haven't, [tell us](/contact/) and we'll add it after we verify it.
 
@@ -105,7 +105,7 @@ Full details are in the [Season 2 Phase 1](/patch-notes/season-2-phase-1-the-cal
 
 ## Our take
 
-Exotic Sealed Caches are good news for collectors and a trap for people chasing one gun. If you want the Warlord or the Scorpio, grind DZ Credits instead. If you want Lady Death or the Strawberry Milkshake, caches are now the official route, and the honest expectation is "hundreds of caches," not "a few lucky pulls." And if you crack a Deadlock cache before Ubisoft tells anyone what it is, please, for the love of all that is holy, send us a screenshot.
+Exotic Sealed Caches are good news for collectors and a long shot for people chasing one gun. If you want the Warlord or the Scorpio, grind DZ Credits instead. If you want Lady Death or the Strawberry Milkshake, caches are now the official route, and the honest expectation is "hundreds of caches," not "a few lucky pulls." And if you crack a Deadlock cache before Ubisoft tells anyone what it is, please, for the love of all that is holy, send us a screenshot.
 
 ## Sources
 

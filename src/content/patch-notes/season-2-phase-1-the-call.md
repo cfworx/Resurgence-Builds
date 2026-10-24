@@ -13,7 +13,7 @@ faqs:
   - question: "When did Division Resurgence Season 2 Phase 1 go live?"
     answer: "August 5, 2026, the same day the game launched on Steam. The developers posted the full patch notes on the official subreddit a couple of days earlier, and Ubisoft's own 'Season 2 has just begun' article went up on launch day. So yes, your PC friends and your Season 2 grind started on the same Wednesday."
   - question: "Did Season 2 remove Blast, Shredding and Piercing damage?"
-    answer: "No. The damage types still exist, and enemy color bars still care about them. What Season 2 Phase 1 removed is the damage type BONUS attributes (Blast, Shredding and Piercing Weapon or Skill Damage) from the weapon attribute pool and from new weapon mods, in favor of All Weapon Damage and All Skill Damage. The notes describe a change to the roll pool, not a conversion of rolls you already own."
+    answer: "No. The damage types still exist, and enemy color bars still care about them. What Season 2 Phase 1 removed is the damage type BONUS attributes (Blast, Shredding and Piercing Weapon or Skill Damage). On weapons they were replaced by All Weapon Damage and All Skill Damage. New weapon mods lost them too, along with All Damage, and gained Weapon Damage, Skill Intensity, Headshot Damage, Weapon Critical Hit Damage and Skill Critical Damage. The notes describe a change to the roll pools, not a conversion of rolls you already own."
   - question: "Did the Double Barrel shotgun get nerfed in Season 2?"
     answer: "Yes, through Commando instead of the gun. Target Acquisition's signature charge dropped from 30% to 5% and its cap from 90% to 20%, and Concerted Strike now triggers on shots instead of hits. Ubisoft said outright it wanted the 'Bullet Back' mechanic to be less reliable on the Double Barrel while keeping it similar for bigger magazines. Creators still run the gun, just with a different engine (see our Double Barrel build)."
   - question: "How long does crafting take after Season 2 Phase 1?"
@@ -24,7 +24,7 @@ faqs:
     answer: "Yes. Exotic mods can now be unequipped from exotic weapons, and they can be looted: one random exotic mod from the Weekly Quest, one random from the Elite Mission Challenge chest, and a weekly exotic mod crate per exotic weapon at the Dark Zone vendor for 2,500 DZ Credits each."
 ---
 
-Season 2 is here, and it arrived the same day the game launched on Steam: **Wednesday, August 5, 2026**. Phase 1 is called **The Call**, and under the new Classified Ops Pass and the free Bighorn assault rifle sits the biggest systems patch Resurgence has had since launch. Damage type bonus rolls are gone, weapon mods were rebuilt from the stat pool up, exotic mods are now loot, crafting got nine hours faster, and the Commando Double Barrel shotgun finally got the nerf the Dark Zone was praying for.
+Season 2 is here, and it arrived the same day the game launched on Steam: **Wednesday, August 5, 2026**. Phase 1 is called **The Call**, and under the new Classified Ops Pass and the free Bighorn assault rifle sits the biggest systems patch Resurgence has had since launch. Damage type bonus rolls are gone, weapon mods were rebuilt from the stat pool up, exotic mods are now loot, base crafting time dropped nine hours, and the Commando Double Barrel shotgun finally got the nerf the Dark Zone was praying for.
 
 Everything below comes from the official patch notes the developers posted on Reddit (mirrored on The Division Wiki) and Ubisoft's Season 2 articles. Where we add our read on what a change means, we say so.
 
@@ -33,13 +33,14 @@ Everything below comes from the official patch notes the developers posted on Re
 
 ## The short version
 
-- **New Classified Ops Pass (50 tiers):** The Bighorn exotic assault rifle and its Tactical Augmentation Module are free. Premium adds the Vintage Elegance apparel set and Antique Weaponry skin. An optional Elite Pass was sold "as an exclusive to The Call."
-- **Damage type bonus attributes removed** from weapon rolls and new weapon mods, replaced by All Weapon Damage and All Skill Damage.
+- **New Classified Ops Pass (50 tiers):** The Bighorn exotic assault rifle and its Tactical Augmentation Module are free. Premium adds the Vintage Elegance apparel set and Antique Weaponry skin. An optional Elite Pass was sold "as an exclusive to The Call" (Ubisoft's wording; an Elite Pass was also offered in Season 1 Phase 3).
+- **Damage type bonus attributes removed:** weapons now roll All Weapon Damage or All Skill Damage instead, and new weapon mods dropped them (plus All Damage) for Weapon Damage, Skill Intensity, Headshot Damage and crit damage stats.
 - **Weapon mod rework:** main stats up 100%, attribute bonuses down 25%, new attribute pool.
 - **Exotic mods rework:** removable, lootable, and sold in weekly Dark Zone crates.
 - **Gear mod pool expanded** with offensive and defensive stats.
 - **Crafting:** 24 hours to 15 hours base, clan reduction 54% to 50%.
-- **Nerfs:** Shockwave Spike (stun 3.5s to 2s, cooldown 12s to 14s), Commando Target Acquisition and Concerted Strike, Ammo Refill, Steady Reload, Recycling.
+- **Nerfs:** Shockwave Spike (stun 3.5s to 2s, cooldown 12s to 14s), Commando Target Acquisition and Concerted Strike, Steady Reload.
+- **Reworked:** Ammo Refill (18% chance for 4 bullets instead of 72% for 1: the same average, less reliable) and Recycling (longer cooldown, bigger refill).
 - **Quality of life:** a field of view slider, crossplay matchmaking selector, mobile-only Dark Zone instances, SHD Keys in weekly rewards, and the Scorpio added to the Dark Zone vendor.
 
 ## New content in The Call
@@ -101,7 +102,7 @@ Ubisoft's stated goal was to "make the primary stat more important, increase the
 - Leveling a legacy mod updates its growth to the new values. Otherwise old mods are unchanged.
 - **New weapon mod attribute pool:** Weapon and Skill Piercing, Blast, Shredding and All Damage were removed. Added: Weapon Damage %, Skill Intensity %, Headshot Damage %, Weapon Critical Hit Damage % and Skill Critical Damage %. This only affects new weapon mods.
 
-Our read: if your build leaned on flat bonuses from old mods on a high-RPM SMG or LMG, expect it to feel different, and every reload or fire-rate figure in an older guide (ours included) needs a re-check. Every [build on the site](/builds/) now carries a Season 2 change note for exactly this reason.
+Our read: legacy mods keep their values unless you level them, but if your build leaned on flat bonuses on a high-RPM SMG or LMG, new mods will feel different, and every reload or fire-rate figure in an older guide (ours included) needs a re-check. Every [build on the site](/builds/) now carries a Season 2 change note for exactly this reason.
 
 ## Exotic mods rework
 
@@ -131,7 +132,7 @@ The clan nerf is smaller than the base-time buff: a fully boosted craft goes fro
 - Stun duration: **3.5s to 2s**.
 - Cooldown: **12s to 14s**.
 
-After the June 26 hotfix put Pummeling Shield's stun on a cooldown, this is the second hit to stun-lock Bulwark builds. If you run [Involuntary Nap Time](/builds/involuntary-nap-time-bulwark-juggernaut-build/) or the [Breacher build](/builds/bulwark-breacher-build-saiynergy/), read their Season 2 notes before your next Dark Zone trip.
+After the June 26 hotfix put a cooldown on the Pummeling Shield OS Protocol's stun, this is the second hit to stun-lock builds, and Bulwark feels it most. If you run [Involuntary Nap Time](/builds/involuntary-nap-time-bulwark-juggernaut-build/) or the [Breacher build](/builds/bulwark-breacher-build-saiynergy/), read their Season 2 notes before your next Dark Zone trip.
 
 ### Vanguard: Commando and the Double Barrel
 
@@ -142,7 +143,7 @@ Ubisoft went after the Double Barrel Shotgun's use of the "Bullet Back" mechanic
 The changes:
 
 - **Target Acquisition** (Commando talent): signature ability charge **30% to 5%**, cap **90% to 20%**.
-- **Concerted Strike** (Commando talent): now triggers off **shots** rather than hits. Ubisoft noted the text was only updated in English, with other languages fixed next phase.
+- **Concerted Strike** (Commando talent): now triggers off **shots** rather than hits. Ubisoft noted the text was only updated in English, with other languages fixed next phase. (These notes call it a Commando talent; the Season 2 Phase 2 notes and the drop-rate table list a Concerted Strike OS Protocol, so check which one your build uses.)
 
 The Double Barrel didn't die, it changed engines. Creators rebuilt it around Misdirection Insurance and ammo restores, which is what our [Double Barrel Commando build](/builds/misdirection-double-barrel-commando-build-tiktokandy/) covers.
 

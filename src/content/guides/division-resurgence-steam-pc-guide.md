@@ -78,7 +78,7 @@ Launch day also brought Season 2 Phase 1, with the free **Bighorn** exotic on th
 | Network | Broadband internet connection |
 | Storage | 30 GB available space |
 
-The headline: the minimum graphics floor is an integrated GPU, and a GTX 1650 is "recommended." That's one of the lightest spec sheets on any Ubisoft live-service game, which makes sense for a game that also runs on phones. If the family PC can run a modern free-to-play shooter, it can probably run this. Ubisoft's Help Center puts the PC version at **around 17 GB** and recommends **at least 30 GB free**, which leaves room for seasonal patches.
+The headline: the minimum graphics floor is an integrated GPU, and a GTX 1650 is "recommended." That's a light spec sheet, which makes sense for a game that also runs on phones. If the family PC can run a modern free-to-play shooter, it can probably run this. Ubisoft's Help Center puts the PC version at **around 17 GB** and recommends **at least 30 GB free**, which leaves room for seasonal patches.
 
 ## How to install
 
@@ -136,7 +136,7 @@ Our [center-ADS peek guide](/guides/center-ads-release-cover-peek-guide/) covers
 
 ## Controllers, mouse and keyboard
 
-Ubisoft's Help Center says you can play with **mouse and keyboard or a controller** on PC, without listing specific pads. (On phones, Ubisoft officially supports PlayStation, Xbox and Backbone controllers; see the [device compatibility guide](/guides/division-resurgence-device-compatibility/).) The UI was designed for touch first, so some menus feel chunky on a monitor, but combat, inventory and the map all work fine on mouse and keyboard.
+Ubisoft's Help Center says you can play with **mouse and keyboard or a controller** on PC, without listing specific pads. (On phones, Ubisoft officially supports PlayStation, Xbox and Backbone controllers; see the [device compatibility guide](/guides/division-resurgence-device-compatibility/).) The UI was designed for touch first, so some menus feel chunky on a monitor, but in our play, combat, inventory and the map work fine on mouse and keyboard (some Steam reviewers did report mouse bugs; see below).
 
 ## Steam Deck
 

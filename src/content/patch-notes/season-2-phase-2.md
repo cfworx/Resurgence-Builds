@@ -154,9 +154,9 @@ Strong Arm going from a 30 second cooldown to 6 seconds is the eye-catcher, even
 
 ## Follow-up patches in October
 
-Phase 2 got three rounds of fixes after launch, all posted on the official subreddit:
+Phase 2 got three rounds of posted fixes in October, all shared on the official subreddit:
 
-- **October 2:** fixed players not being revivable in No Respawn Zones, and flagged a coming Heavy Weight change.
+- **October 2:** fixed players not being revivable in No Respawn Zones, and flagged a possible Heavy Weight change Ubisoft was investigating.
 - **October 6:** a client update fixed revive heart icons staying on screen.
 - **October 14:** the **Heavy Weight** skill mod combo set's additional damage dropped from 25% to 5% of Max Health, plus an Armory reward display fix and a build database fix that names the Diamondback's talent, **Agonizing Bite**.
 
