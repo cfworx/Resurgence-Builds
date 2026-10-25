@@ -27,7 +27,15 @@
   },
   "helpCenterPatchNotes": {
     "section": "https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/section/539-patch-notes/",
-    "seenArticleIds": [2566, 2521, 2517, 2513, 2511, 2508, 2494],
+    "seenArticleIds": [
+      2566,
+      2521,
+      2517,
+      2513,
+      2511,
+      2508,
+      2494
+    ],
     "note": "Season 2 Phase 1 notes were never posted here (Reddit only, mirrored on The Division Wiki). October 2026 hotfix notes were posted on the official subreddit only."
   },
   "subredditPatchPosts": {
@@ -41,10 +49,21 @@
   },
   "ubisoftNews": {
     "page": "https://www.ubisoft.com/en-us/game/the-division/resurgence/news-updates",
-    "seenIds": ["1R5zWiBS0MQZNcWGYkroYT", "1dqH85Pad1ydYGwCOdlDp7", "wE8oLT7RqyLCfnCJomXij", "5LqRsprrdgtEnUmStmBi0d", "3ygDDXxg6dv6aQD5MJvbKv"]
+    "seenIds": [
+      "1R5zWiBS0MQZNcWGYkroYT",
+      "1dqH85Pad1ydYGwCOdlDp7",
+      "wE8oLT7RqyLCfnCJomXij",
+      "5LqRsprrdgtEnUmStmBi0d",
+      "3ygDDXxg6dv6aQD5MJvbKv"
+    ]
   },
   "newsUbisoftCom": {
-    "seenIds": ["2vmOLuRVDMIMBxG3MZlPQX", "7MMMG14zd82UNs7zcmOv6t", "48gDtCz7vtOCbF5JwskUPc", "9ZzMWcx5ADnaxAiOO3e0w"]
+    "seenIds": [
+      "2vmOLuRVDMIMBxG3MZlPQX",
+      "7MMMG14zd82UNs7zcmOv6t",
+      "48gDtCz7vtOCbF5JwskUPc",
+      "9ZzMWcx5ADnaxAiOO3e0w"
+    ]
   },
   "x": {
     "account": "TheDivMobile",
@@ -94,29 +113,308 @@
   },
   "ownerFiles": {
     "transcripts": [
-      "Dem_2x - ITS JUST NOT FAIR",
-      "GGReborn - BEST Tactical Pharma Build + Solo Legendary Gameplay",
-      "GGReborn - BEST VANGUARD BUILD Legendary Gameplay High DPS",
-      "GGReborn - How Good Is Collateral Damage OS for SOLO LEGENDARY",
-      "GGReborn - How Stats REALLY Work, Testing 3 Builds",
-      "GGReborn - Is This the Easiest Solo Build for On The Radio Legendary",
-      "GGReborn - SOLO LEGENDARY with VANGUARD! Full Build & Gameplay",
-      "GGReborn - This Tactical Pharma Build with Chain Reaction OS Is INSANE",
-      "GGReborn - Which OS Protocol Is BEST? Testing 4 Protocols",
+      "Dem_2x - BEST HE-MUNITION DEMOLITIONIST BUILD THE DIVISION RESURGENCE",
+      "Dem_2x - BEST TAC PHARMA BUILD FOR PVE-PVP THE DIVISION RESURGENCE",
+      "Dem_2x - ITS JUST NOT FAIR THE DIVISION RESURGENCE",
+      "GGReborn - BEST Tactical Pharma Build Solo Legendary Gameplay The Division Resurgence",
+      "GGReborn - BEST VANGUARD BUILD Legendary Gameplay High DPS The Division Resurgence",
+      "GGReborn - How Good Is Collateral Damage OS for SOLO LEGENDARY The Division Resurgence",
+      "GGReborn - How Stats REALLY Work Testing 3 Builds The Division Resurgence",
+      "GGReborn - Is This the Easiest Solo Build for On The Radio Legendary The Division Resurgence",
+      "GGReborn - SOLO LEGENDARY with VANGUARD Full Build Gameplay The Division Resurgence",
+      "GGReborn - TOO MUCH TO HANDLE The Division Resurgence DARK ZONE Gameplay",
+      "GGReborn - The Division Resurgence Gameplay Walkthrough Part-1 Android iOS",
+      "GGReborn - The Division Resurgence Gameplay Walkthrough Part-2",
+      "GGReborn - This Mobile Game Looks Like Console The Division Resurgence Android iOS gameplay",
+      "GGReborn - This Tactical Pharma Build with Chain Reaction OS Is INSANE The Division Resurgence",
+      "GGReborn - Which OS Protocol Is BEST Testing 4 Protocols The Division Resurgence",
       "GGReborn - Why Your Division Resurgence Gear Build Is Failing You",
       "GameJoy Explained - Only 3 Mins Needed To Decide If You Should Play The Division Resurgence on Steam",
-      "Oldfartsgaming - 7 Things I Wish I Knew Before Endgame",
-      "SperoPatria - my Offensive Operations build",
-      "TikTokAndy - Best Automatic Double Barrel Shotgun Build",
-      "TikTokAndy - Tactical Pharma build and Dark Zone PvP (Oct 15)",
-      "TikTokAndy - UNLIMITED Purple & Gold Mods & Weapon Attachments",
-      "Ubisoft - Season 2 Phase 1 is now live",
-      "Vacantknight - Is The Division Resurgence Actually Worth Playing?"
+      "Oldfartsgaming - 7 Things I Wish I Knew Before Endgame The Division Resurgence",
+      "The division resurgence SperoPatria - The Division Resurgence - my Offensive Operations build",
+      "TikTokAndy - 11 Kill P90-Lightweight M4 Solo Manhunt Division Resurgence",
+      "TikTokAndy - BEGINNER Vanguard DPS Build W- Any Weapon The Division Resurgence 1.2",
+      "TikTokAndy - Best Automatic Double Barrel Shotgun Build Division Resurgence",
+      "TikTokAndy - Lone Star Stage 20 Complete The Division Resurgence",
+      "TikTokAndy - Most Overpowered Team Healer Build - Striker - Aegis Division Resurgence",
+      "TikTokAndy - My First Time In The Level 40 Dark Zone The Division Resurgence",
+      "TikTokAndy - Precious Cargo Legendary Difficulty But I m Solo Division Resurgence",
+      "TikTokAndy - SOLO Heroic Chinatown This Vanguard Build Is INSANE The Division Resurgence",
+      "TikTokAndy - Silence of Death A Division Resurgence Montage Toxic Pharma Solo vs. Squads Dark Zone Gameplay",
+      "TikTokAndy - They NEED To Re-Add This Area IMMEDIATELY Tom Clancy s The Division Resurgence Mobile",
+      "TikTokAndy - Toxic Pharma Sucks...PvP Is Even Worse... The Division Resurgence",
+      "TikTokAndy - UNLIMITED Purple Gold Mods Weapon Attachments The Division Resurgence",
+      "TikTokAndy - Why Is The Dark Zone So Dead The Division Resurgence Gameplay",
+      "Ubisoft - The Division Resurgence Season 2 Phase 1 is now live",
+      "Vacantknight - Is The Division Resurgence Actually Worth Playing"
     ],
-    "redditExports": ["top_month-2026-10-24.json", "new-2026-10-24.json"],
+    "redditExports": [
+      "top_month-2026-10-24.json",
+      "new-2026-10-24.json"
+    ],
     "unusedLeads": [
-      "GGReborn's Vanguard Legendary build, On The Radio solo build and Collateral Damage OS test (possible future build posts)",
-      "SperoPatria's Offensive Operations (Tech Operator) build (possible future build post)"
+      "GGReborn 'Back to BOB! Tactical Pharma DUO Legendary' (2026-10-25): a transcript would show whether his Tactical Pharma setup changed again (Brains Over Brawn)",
+      "Build screenshots for the commentary-free build videos (Dem_2x HE Munitions Demolitionist, GGReborn Vanguard, SperoPatria Offensive Operations) would make them usable"
+    ],
+    "transcriptsNote": "File names as shared by the owner (34 transcripts by 2026-10-25). Twelve are gameplay audio with no commentary, so there was nothing to extract: Dem_2x's HE Munitions and Tac Pharma build videos and ITS JUST NOT FAIR; GGReborn's BEST VANGUARD BUILD, On The Radio, Collateral Damage OS and Chain Reaction videos, his Dark Zone gameplay video, his two walkthrough parts and This Mobile Game Looks Like Console; and SperoPatria's Offensive Operations build."
+  },
+  "sources": {
+    "steam-reviews": {
+      "lastChecked": "2026-10-25",
+      "lastSeen": "2026-10-25: Mixed. 64% of 215 recent and 47% of 1,403 all-time (English reviews)",
+      "status": "ok",
+      "failStreak": 0
+    },
+    "apkmirror": {
+      "lastChecked": "2026-10-25",
+      "lastSeen": "v1.66724.0 (2026-10-06)",
+      "status": "ok",
+      "failStreak": 0
+    },
+    "steamdb": {
+      "lastChecked": "2026-10-25",
+      "lastSeen": "Last record update 2026-10-22",
+      "status": "ok",
+      "failStreak": 0
+    },
+    "raijin": {
+      "lastChecked": "2026-10-25",
+      "lastSeen": "2026-10-25: 387 in game; October avg 363, peak 554; September avg 505, peak 840; all-time peak 4,046 (August)",
+      "status": "ok",
+      "failStreak": 0
+    },
+    "discord-counts": {
+      "lastChecked": "2026-10-25",
+      "lastSeen": "2026-10-25: 19,364 members, 2,847 online",
+      "status": "ok",
+      "failStreak": 0
+    },
+    "steam-discussions": {
+      "lastChecked": "2026-10-25",
+      "lastSeen": "2026-10-25: threads up to 2026-10-24 (e.g. 'Credits shortage', 'Halloween event', 'pve only dz')",
+      "status": "ok",
+      "failStreak": 0
+    },
+    "reddit": {
+      "lastChecked": "2026-10-25",
+      "lastSeen": "Latest official post known: 2026-10-21 'Mitigation Update for Season 2 Phase 2' (u/Ticksyy)",
+      "status": "ok",
+      "failStreak": 0
+    },
+    "twitch-category": {
+      "lastChecked": "2026-10-25",
+      "lastSeen": "No Twitch Drops since the August 5-23 campaign",
+      "status": "ok",
+      "failStreak": 0
+    },
+    "streamscharts": {
+      "lastChecked": "2026-10-25",
+      "lastSeen": "Not yet checked by the daily run",
+      "status": "ok",
+      "failStreak": 0
+    },
+    "sullygnome": {
+      "lastChecked": "2026-10-25",
+      "lastSeen": "30 days to 2026-10-25: 2.5K hours watched (-73%), 904 hours streamed by 205 streamers, avg 3 / peak 114 viewers",
+      "status": "ok",
+      "failStreak": 0
+    },
+    "kick-category": {
+      "lastChecked": "2026-10-25",
+      "lastSeen": "2026-10-25: 271 followers, nobody live",
+      "status": "ok",
+      "failStreak": 0
+    },
+    "idc-games": {
+      "lastChecked": "2026-10-25",
+      "lastSeen": "2026-09-17 Season 2 Phase 2 Goes Live With the Free Diamondback Exotic Rifle",
+      "status": "ok",
+      "failStreak": 0
+    },
+    "jeu-video": {
+      "lastChecked": "2026-10-25",
+      "lastSeen": "2026-09-18 The Division Resurgence: Belohnungen Phase 2 verfügbar",
+      "status": "ok",
+      "failStreak": 0
+    },
+    "axyo": {
+      "lastChecked": "2026-10-25",
+      "lastSeen": "2026-09-16 Season 2 Phase 2 article",
+      "status": "ok",
+      "failStreak": 0
+    },
+    "toptechnews": {
+      "lastChecked": "2026-10-25",
+      "lastSeen": "2026-09-16 Phase 2 bringt neuen Spielschub: The Division Resurgence aktualisiert Season",
+      "status": "ok",
+      "failStreak": 0
+    },
+    "247videogame": {
+      "lastChecked": "2026-10-25",
+      "lastSeen": "2026-09-16 The Division Resurgence - Official Season 2 Phase 2 Launch Trailer",
+      "status": "ok",
+      "failStreak": 0
+    },
+    "ldplayer": {
+      "lastChecked": "2026-10-25",
+      "lastSeen": "2026-10-20 The Division Resurgence Specialization Tier List for Latest 2026 (re-dated)",
+      "status": "ok",
+      "failStreak": 0
+    },
+    "_readme": "One entry per id in automation/sources.json (plus search: the catch-all searches). lastSeen = the newest item or value seen, so the next run only evaluates newer things. status: ok | unreachable | blocked. failStreak counts consecutive failed runs; mention a source in the summary once it reaches 3.",
+    "official-website": {
+      "lastChecked": "2026-10-25",
+      "lastSeen": "Season banner: 'Season 2: The Call'",
+      "status": "ok",
+      "failStreak": 0
+    },
+    "ubisoft-youtube": {
+      "lastChecked": "2026-10-25",
+      "lastSeen": "2026-09-16 'Season 2 Phase 2 is now Live' (on @Ubisoft)",
+      "status": "ok",
+      "failStreak": 0
+    }
+  },
+  "searches": {
+    "lastChecked": "2026-10-25",
+    "seenHeadlines": []
+  },
+  "leads": [],
+  "leadsReadme": "Claims found only in non-official sources, newest first (keep the last 50): {date, source, claim, status: unverified | verified | dismissed, note}. Re-check unverified leads against official sources on later runs.",
+  "snapshots": {
+    "_readme": "Daily numbers for a future monthly roundup, newest last (keep the last 60 per list).",
+    "steamReviews": [
+      {
+        "date": "2026-10-25",
+        "label": "Mixed",
+        "recentPct": 64,
+        "recentCount": 215,
+        "allTimePct": 47,
+        "allTimeCount": 1403,
+        "note": "English reviews, from the owner's spreadsheet"
+      }
+    ],
+    "steamPlayers": [
+      {
+        "date": "2026-10-25",
+        "current": 387,
+        "monthAvg": 363,
+        "monthPeak": 554,
+        "source": "raijin.gg"
+      }
+    ],
+    "discord": [
+      {
+        "date": "2026-10-25",
+        "members": 19364,
+        "online": 2847
+      }
+    ],
+    "twitch": [
+      {
+        "date": "2026-10-25",
+        "hoursWatched30d": 2500,
+        "streamers30d": 205,
+        "avgViewers": 3,
+        "peakViewers30d": 114,
+        "source": "SullyGnome"
+      }
     ]
+  },
+  "youtube": {
+    "_readme": "Watch-list channels (watch: true in automation/sources.json). The owner pulls transcripts; the run only lists new videos. suggested = video IDs already listed to the owner, so they aren't listed twice.",
+    "channels": {
+      "UC0jHX5wSx5KUsjC2vQhMYyw": {
+        "name": "GGReborn",
+        "latestSeenVideoId": "DOm-5ee97BA",
+        "latestSeenDate": "2026-10-25",
+        "latestSeenTitle": "Back to BOB! Tactical Pharma DUO Legendary | The Division Resurgence"
+      },
+      "UCSFoN2M0wk-IRM5W_zT0hRQ": {
+        "name": "Nub_M4ster",
+        "latestSeenVideoId": "XjV-qg6GdJA",
+        "latestSeenDate": "2026-10-24",
+        "latestSeenTitle": "디비전 리서전스 분쇄속성 무기중 가장 좋은 총?"
+      },
+      "UCc2Gw0goUxR9o0LzE5ES5BQ": {
+        "name": "Андрей Сергеевич",
+        "latestSeenVideoId": "8eil9G7aajU",
+        "latestSeenDate": "2026-10-19",
+        "latestSeenTitle": "Liberty and Justice team run/legendary/Division resurgence"
+      },
+      "UCrlQj7sr1g2I-JC4UXqxK0w": {
+        "name": "TikTokAndy",
+        "latestSeenVideoId": "lbk6aUoOtds",
+        "latestSeenDate": "2026-10-22",
+        "latestSeenTitle": "Silence of Death | A Division Resurgence Montage | Toxic Pharma Solo vs. Squads Dark Zone Gameplay"
+      },
+      "UCZYEqBLJrRcRMusTTRwS6Yw": {
+        "name": "Amrul Ismail",
+        "latestSeenVideoId": "Pcw8uruV3Is",
+        "latestSeenDate": "2026-10-19",
+        "latestSeenTitle": "The Division Resurgence, Liberty & Justice for All (Elite), Tank DPS PoV"
+      },
+      "UCiTZFGbNfFHAGOM_QDyx38w": {
+        "name": "AbahKucingT",
+        "latestSeenVideoId": "mHM-DZcuPWo",
+        "latestSeenDate": "2026-10-16",
+        "latestSeenTitle": "The Division Resurgence: Another Gold OS from the weekly bounty - Week 42 2026"
+      },
+      "UCFaard15UOmRQ-6Kw5f9Y2A": {
+        "name": "The division resurgence SperoPatria",
+        "latestSeenVideoId": "n5-3F19kzvU",
+        "latestSeenDate": "2026-10-18",
+        "latestSeenTitle": "The Division Resurgence - DOUBLE reward from Main Target - Stone Cold (Weekly bounties)"
+      },
+      "UCyHyKopedQpbRxovG4WGJiw": {
+        "name": "Demø2x",
+        "latestSeenVideoId": "ojXBzo968FI",
+        "latestSeenDate": "2026-10-21",
+        "latestSeenTitle": "ITS JUST NOT FAIR | THE DIVISION RESURGENCE"
+      },
+      "UCflbi5-mPBYOru4AFVuu48A": {
+        "name": "Oldfartsgaming",
+        "latestSeenVideoId": "7JtJCeEE8NI",
+        "latestSeenDate": "2026-10-11",
+        "latestSeenTitle": "7 Things I Wish I Knew Before Endgame | The Division Resurgence"
+      },
+      "UChcht3-3Qqn7hnya8-nrI-w": {
+        "name": "Pocket Resurgence",
+        "latestSeenVideoId": "ldMK9-sGedI",
+        "latestSeenDate": "2026-10-22",
+        "latestSeenTitle": "Tom Clancy's :The Division Resurgence / Lone Wolf Stage 20"
+      },
+      "UCPXhAEaShOXmNhvQAjUFZmw": {
+        "name": "AgentHuntzman",
+        "latestSeenVideoId": "tOufaAxhmuE",
+        "latestSeenDate": "2026-10-11",
+        "latestSeenTitle": "The Grind Just Got Delayed Not Deleted | The Division Resurgence P2."
+      },
+      "UCxY0D5Kv17ikrxPFnBQ3mCw": {
+        "name": "WarDaddy",
+        "latestSeenVideoId": "1Rhfp3KS1xk",
+        "latestSeenDate": "2026-10-07",
+        "latestSeenTitle": "The Division Resurgence Precious Cargo Legendary Solo"
+      },
+      "UCrK99e79TwSpgElDb-r-Lpg": {
+        "name": "Died Again Gaming",
+        "latestSeenVideoId": "gcoI2lCW6mc",
+        "latestSeenDate": "2026-10-05",
+        "latestSeenTitle": "Catching Up Before Weekly Reset | PC | DAG LIVE | Division Resurgence"
+      },
+      "UCjsu4o-e5BkA41TnzTssegQ": {
+        "name": "bobz highlightz",
+        "latestSeenVideoId": "RfoGqme8t6Q",
+        "latestSeenDate": "2026-10-03",
+        "latestSeenTitle": "The Division Resurgence - Solo Legendary - On the Radio - Vanguard Commando"
+      },
+      "UCPNocL8KedAe2qxv0vlCS7A": {
+        "name": "RebornH LifeAfter",
+        "latestSeenVideoId": "Bg7K3wYu1uA",
+        "latestSeenDate": "2026-09-26",
+        "latestSeenTitle": "Is the KSG still good after the nerf? - Take the castle Legendary - The Division Resurgence"
+      }
+    },
+    "suggested": []
   }
 }

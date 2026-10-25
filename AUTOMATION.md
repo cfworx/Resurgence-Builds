@@ -3,9 +3,10 @@
 This is the procedure the scheduled **morning run** follows every day. It is written for an AI agent (or a human) starting
 from a fresh clone with no memory of earlier runs. Everything it needs to remember lives in `automation/state.json`.
 
-Goal: each morning, check the official sources for anything new about **Tom Clancy's The Division Resurgence**. If something
-is post-worthy, write it up in the site's voice, update the live-state data, run every quality gate, and push to `main`
-(Cloudflare Pages deploys `main` automatically). If nothing is post-worthy, change nothing and push nothing.
+Goal: each morning, check the official sources and every active source in `automation/sources.json` for anything new
+about **Tom Clancy's The Division Resurgence**. If something is post-worthy and verified, write it up in the site's voice,
+update the live-state data, run every quality gate, and push to `main` (Cloudflare Pages deploys `main` automatically).
+Either way, save what you checked to `automation/state.json` (section 7 explains how to do that without a deploy).
 
 ---
 
@@ -44,6 +45,8 @@ The container's shell usually can't reach websites (only package registries and 
 
 ## 2. Sources to check (in this order)
 
+### 2a. Official sources (Tier A: the only sources that can carry a game fact on their own)
+
 | # | Source | URL | What to compare |
 |---|---|---|---|
 | 1 | Steam announcements (official) | Steam News API: `https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=3749720&count=20&maxlength=0&format=json` (human page: `https://store.steampowered.com/news/app/3749720`) | items newer than `state.steam.latestDate` / not in `state.steam.seen` |
@@ -53,7 +56,12 @@ The container's shell usually can't reach websites (only package registries and 
 | 5 | Official X account | `https://x.com/TheDivMobile` (logged-out view shows ~5 latest posts; WebSearch "TheDivMobile" as fallback) | status IDs greater than `state.x.latestSeenStatusId` |
 | 6 | Official bug reporter | `https://www.ubisoft.com/en-us/game/the-division/the-division-resurgence/bug-reporter/issues` | status changes vs `state.bugReporter` (Planned, In Progress, Done) |
 | 7 | Help Center drop rates | `https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2522-drop-rates/` | the "Last Updated" age vs `state.dropRates` |
-| 8 | Owner-provided files | `game_knowledge/transcripts/`, `game_knowledge/reddit/` (gitignored, only present when the owner shares them in a session) | files not in `state.ownerFiles` |
+| 8 | Official website | `https://www.ubisoft.com/en-us/game/the-division/resurgence` | the season banner (it showed "Season 2: The Call" on 2026-10-25); a new season or phase banner is news |
+| 9 | Ubisoft's YouTube trailers | WebSearch `"Division Resurgence" trailer Ubisoft` (Resurgence has no channel of its own; trailers go on @Ubisoft, and `@TheDivisionResurgence` is **not** official) | a trailer newer than the last one in `state.sources` |
+| 10 | Owner-provided files | `game_knowledge/transcripts/`, `game_knowledge/reddit/` (gitignored, only present when the owner shares them in a session) | files not in `state.ownerFiles` |
+
+Ubisoft's Instagram (`@thedivmobile`), TikTok (`@thedivmobile`) and the TDResurgenceSEA Facebook page can't be read by our
+tools. Don't try to get around that; if WebSearch surfaces a post from them, treat it like an X post found by search.
 
 Notes:
 - Season patch notes have appeared in the Help Center (most phases), on Steam, and on the official subreddit
@@ -63,6 +71,57 @@ Notes:
 - Fandom wiki pages for Resurgence weapons are often contaminated with Division 2 data. Use Fandom only for mirrors of
   official text or the community map, never for stats.
 - Third-party "codes" and "tier list" sites are mostly SEO filler. Don't use them as sources.
+
+### 2b. Everything else: `automation/sources.json`
+
+Work through every group in the file, every run. Each entry has the URL to check and what to look for; compare with
+`state.sources.<id>.lastSeen` and only evaluate newer items.
+
+| Group | What you're doing | Trust |
+|---|---|---|
+| `data` (Steam reviews, APKMirror, SteamDB, Raijin.gg, Discord counts) | Record today's numbers and versions in `state.snapshots` / `state.sources`. A new Android or PC build is a **lead** that a patch shipped: go look for notes in 2a. | data |
+| `community` (Steam discussions, the subreddit via search) | New threads, official replies, problems many players report. Leads only. For the subreddit, only spot new official posts with WebSearch and ask the owner for an export. | community |
+| `news` (third-party news, guide and blog sites) | New Resurgence articles since `lastSeen`. Run the checks in 2c on each one. Leads only, never a source. | unverified |
+| `streaming` (Twitch, Streams Charts, SullyGnome, Kick, plus the streamers listed) | Check the aggregate pages; they cover every listed streamer. Note Drops campaigns, developer streams and who streamed since the last run. | community |
+| `searches` (catch-all WebSearch, including big outlets that block automated reads) | New headlines about the game from anyone. Leads only. | unverified |
+| `youtube` (channels with `watch: true`) | See 2d. | community |
+
+If a source won't load, try once more, then mark it (`status: unreachable` or `blocked`, `failStreak` + 1) and move on.
+Never use mirrors, caches, archives or scraping services to get around a block.
+
+### 2c. Trust and verification
+
+- **official** (2a): can be published as fact, cited directly.
+- **data** (trackers and Steam's own numbers): fine for their own numbers (player counts, review scores, build or version
+  numbers, member counts), with the date and the source named. Never for game mechanics.
+- **community** (players, streamers, creators, Reddit exports, Steam threads): only as attributed, hedged creator or
+  community claims, the way the build pages credit creators. Never as fact.
+- **unverified** (everything in `news` and anything found by `searches`): a **lead**, never a source. Don't cite it,
+  link it as a source or copy its numbers. Before using anything it reports, find the same thing in a 2a source; if you
+  find it there, cite the official source. If you can't, don't publish it: add it to `state.leads` and list it in the
+  summary under "Unverified leads". Re-check open leads on later runs.
+
+Third-party pages vary a lot, and some are written automatically. Treat a page as unreliable (a weak lead at best) if
+any of these are true:
+
+- It mixes in The Division (2016) or The Division 2: modes like Summit, Countdown or Descent, gear score numbers,
+  Division 2 brand sets, or an exotic described with its Division 2 talent and numbers (several exotics share names
+  across the games, so check against our database).
+- Its numbers disagree with the official patch notes or with our database (`src/data/*.json`).
+- It lists "codes" no official channel posted, or a tier list that changes its title month without changing content.
+- It's re-dated: a fresh date on content that doesn't mention the current season, Steam or recent patches.
+- It's generic: no specific dates, versions or sources; the same text on several sites; a byline that leads nowhere.
+- It announces things no official source has (a Season 3 date, new exotics, a shutdown) without linking Ubisoft.
+
+Never criticize or mock another site or creator on resurgencebuilds.com. If a source is unreliable, just don't use it.
+
+### 2d. YouTube (the owner pulls transcripts)
+
+Don't fetch transcripts or scrape YouTube pages. For each channel with `watch: true` in `automation/sources.json`, read
+its `rss` feed and compare with `state.youtube.channels.<channelId>`. List new videos whose titles suggest a build, a
+test, a guide, tips, or update news (skip livestreams, walkthrough parts and Shorts) in the summary under
+"Transcripts worth pulling", with title, date and link, and add their IDs to `state.youtube.suggested` so they're not
+listed twice. A video title is not a source for anything you publish.
 
 ---
 
@@ -77,6 +136,9 @@ Notes:
 | Bug reporter: a major issue marked Done, or a feature marked Planned | Add to a **weekly bug-reporter roundup** (max one per week), not a daily post. |
 | Store offers with no free reward, cosmetic draws alone, generic hype posts | **Not post-worthy** on their own. Mention inside a roundup if one is being written anyway. |
 | Anything you can't verify from an official source | **Not post-worthy.** Note it in the run summary for the owner. |
+| A claim only a `news`/`searches` site makes | **Not post-worthy** until a 2a source confirms it. Add it to `state.leads`. |
+| New numbers from the `data` group (players, reviews, builds, Discord) | **Not post-worthy** on their own. Record them in `state.snapshots`; they can feed a monthly "state of the game" roundup. |
+| Streams, Shorts, a creator's take | **Not post-worthy** on their own. A creator transcript the owner shares is (see the last row). |
 | Owner-provided Reddit export | A **community roundup** in the "Reddit Highlights" series (see `src/content/news/reddit-weekly-highlights-october-24.md` for the format). Feature constructive, funny and useful posts; skip pure rants; link the threads. |
 | Owner-provided creator transcript with a build | A **build post** in `src/content/builds/` crediting the creator (see `misdirection-double-barrel-commando-build-tiktokandy.md`), names verified against `src/data/*.json`. Set `verified: false` (we haven't re-tested it), which shows a "Creator build" badge and keeps it off the ranked tiers. |
 
@@ -148,11 +210,32 @@ git push origin HEAD:main
 ```
 
 Update `automation/state.json` in the same commit: add every source item you looked at (published or not) so the next run
-doesn't re-evaluate it, and set `lastRun`. If nothing was post-worthy, **don't commit** (no empty deploys).
+doesn't re-evaluate it, and set `lastRun` and `lastRunSummary`.
+
+If nothing was post-worthy, still save the state, alone, with a commit message that **starts with `[CF-Pages-Skip]`**
+(Cloudflare Pages then skips the deploy, so there's no empty deploy):
+
+```bash
+git add automation/state.json
+git commit -m "[CF-Pages-Skip] state: daily source check YYYY-MM-DD"
+git push origin HEAD:main
+```
+
+Keep the lists in `state.json` from growing forever: the last 60 entries per `snapshots` list, the last 50 `leads`, the
+last 200 `youtube.suggested` IDs.
 
 ---
 
 ## 8. Run summary
 
-End every run with a short summary for the owner: what was published (with URLs), what was skipped and why, and anything
-that needs a human (unverifiable claims, sources that wouldn't load, Reddit or transcript files worth sharing).
+End every run with a short summary for the owner (it goes to their phone, so keep it scannable):
+
+1. **Published:** titles and live URLs, or "No new post today".
+2. **New since last run:** one line per source that had something new, and what you did with it.
+3. **Unverified leads:** claims seen only on non-official sites, and whether any official source confirms them yet.
+4. **Transcripts worth pulling:** new build, test, guide and tips videos from the watch list (title, channel, date, link).
+5. **Numbers:** today's Steam players, review summary and Discord members, with the change since the last snapshot.
+6. **Needs the owner:** sources that wouldn't load (and how many runs in a row), official Reddit posts to export,
+   anything worth checking in game, and active sources that look like they've gone quiet or new ones worth adding.
+
+Then one line: how many sources you checked out of how many.

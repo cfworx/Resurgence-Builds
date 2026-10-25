@@ -1,0 +1,1277 @@
+{
+  "_readme": "Every active source the daily run checks, besides the official Ubisoft channels in AUTOMATION.md section 2a. Built from the owner's 'Active Sources' spreadsheet (as of 2026-10-25). Trust levels are defined in AUTOMATION.md section 2c: only 'official' sources can carry a game fact on their own. The owner curates this list; the daily run records what it saw in automation/state.json (sources.<id>) and suggests additions or removals in its summary instead of editing this file.",
+  "asOf": "2026-10-25",
+  "data": [
+    {
+      "id": "steam-reviews",
+      "name": "Steam review summary",
+      "trust": "data",
+      "check": "https://store.steampowered.com/appreviews/3749720?json=1&language=all&purchase_type=all&num_per_page=0 (query_summary: review_score_desc, total_positive, total_reviews); human page https://store.steampowered.com/app/3749720/",
+      "lookFor": "Record the summary label and counts. A change of label (for example Mixed to Mostly Positive) is worth a line in a future roundup, not a post on its own."
+    },
+    {
+      "id": "apkmirror",
+      "name": "APKMirror: Android builds",
+      "trust": "data",
+      "check": "https://www.apkmirror.com/apk/ubisoft-entertainment/the-division-resurgence/",
+      "lookFor": "A version newer than the one in state. A new client build is a lead that a patch shipped: look for notes on Steam, the Help Center and @TheDivMobile. Never post from a version number alone."
+    },
+    {
+      "id": "steamdb",
+      "name": "SteamDB: PC builds and store changes",
+      "trust": "data",
+      "check": "https://steamdb.info/app/3749720/ and https://steamdb.info/app/3749720/patchnotes/",
+      "lookFor": "A new public build or depot update since the last run (a lead, same rule as APKMirror). SteamDB often refuses automated reads: if it does, mark it blocked and move on; never use mirrors or caches."
+    },
+    {
+      "id": "raijin",
+      "name": "Raijin.gg: Steam player counts",
+      "trust": "data",
+      "check": "https://raijin.gg/app/3749720/The_Division_Resurgence",
+      "lookFor": "Record players in game, this month's average and peak. Numbers for a future monthly roundup; not post-worthy on their own."
+    },
+    {
+      "id": "discord-counts",
+      "name": "Official Discord member counts",
+      "trust": "data",
+      "check": "https://discord.com/api/v9/invites/tdresurgence?with_counts=true (approximate_member_count, approximate_presence_count)",
+      "lookFor": "Record the two counts. The channels themselves can't be read; Discord announcements also go out on X or Steam."
+    }
+  ],
+  "community": [
+    {
+      "id": "steam-discussions",
+      "name": "Steam Community discussions",
+      "trust": "community",
+      "check": "https://steamcommunity.com/app/3749720/discussions/0/",
+      "lookFor": "New threads since the last run. Highlight replies from Ubisoft or developer accounts, event announcements, and problems many players report (leads to check against the bug reporter and patch notes). Player posts are never facts; don't quote insults."
+    },
+    {
+      "id": "reddit",
+      "name": "r/thedivisionresurgence",
+      "trust": "community",
+      "check": "Do not open Reddit (blocked for our tools; never use mirrors, archives or proxies). Use WebSearch only to spot a new official post, e.g. \"thedivisionresurgence reddit patch notes\" or \"TDResurgence reddit\".",
+      "lookFor": "A new post by an official account (u/TDResurgence, u/Ticksyy, u/JokerUnique). If you see one, list its title and date in the summary and ask the owner for a Reddit export. Never publish from a search snippet. Content comes only from owner exports in game_knowledge/reddit/."
+    }
+  ],
+  "news": [
+    {
+      "id": "idc-games",
+      "name": "IDC Games: Resurgence news",
+      "language": "English",
+      "trust": "unverified",
+      "check": "https://idcgames.com/en/tom-clancys-the-division-resurgence/news/",
+      "lastSeenAsOf": "2026-09-17 Season 2 Phase 2 Goes Live With the Free Diamondback Exotic Rifle"
+    },
+    {
+      "id": "jeu-video",
+      "name": "JEU.VIDEO (DE/FR/ES/PT/IT editions)",
+      "language": "German",
+      "trust": "unverified",
+      "check": "https://jeu.video/de/tags/the-division-resurgence",
+      "lastSeenAsOf": "2026-09-18 The Division Resurgence: Belohnungen Phase 2 verfügbar"
+    },
+    {
+      "id": "axyo",
+      "name": "axyo.de",
+      "language": "German",
+      "trust": "unverified",
+      "check": "https://axyo.de/tag/the-division-resurgence/",
+      "lastSeenAsOf": "2026-09-16 Season 2 Phase 2 article"
+    },
+    {
+      "id": "toptechnews",
+      "name": "TopTechNews.de",
+      "language": "German",
+      "trust": "unverified",
+      "check": "https://www.toptechnews.de/?s=Division+Resurgence (site search), or WebSearch site:toptechnews.de \"Division Resurgence\"",
+      "lastSeenAsOf": "2026-09-16 Phase 2 bringt neuen Spielschub: The Division Resurgence aktualisiert Season"
+    },
+    {
+      "id": "247videogame",
+      "name": "247videogame.com (trailer reposts)",
+      "language": "English",
+      "trust": "unverified",
+      "check": "https://247videogame.com/?s=Division+Resurgence (site search)",
+      "lookFor": "A new trailer repost means Ubisoft may have released a trailer: confirm it on Ubisoft's YouTube or Steam before mentioning it.",
+      "lastSeenAsOf": "2026-09-16 The Division Resurgence - Official Season 2 Phase 2 Launch Trailer"
+    },
+    {
+      "id": "ldplayer",
+      "name": "LDPlayer blog",
+      "language": "English",
+      "trust": "unverified",
+      "check": "https://www.ldplayer.net/games/the-division-resurgence-on-pc.html",
+      "lookFor": "Pages carry fresh dates while the content looks old (no Season 2 or Steam mentions). Note genuinely new content only; never use it as a source.",
+      "lastSeenAsOf": "2026-10-20 The Division Resurgence Specialization Tier List for Latest 2026 (re-dated)"
+    }
+  ],
+  "streaming": {
+    "note": "Streams are context, never a source of game facts. Check the aggregate pages first; they cover every streamer below. Open an individual channel only when an aggregate page can't be read or shows something unusual (a developer stream, a Drops campaign, an event).",
+    "aggregates": [
+      {
+        "id": "twitch-category",
+        "name": "Twitch: game category",
+        "check": "https://www.twitch.tv/directory/category/tom-clancys-the-division-resurgence",
+        "lookFor": "Drops campaigns (Drops Enabled tags) and official Ubisoft channel streams. Twitch pages often don't render for automated reads; fall back to WebSearch \"Division Resurgence Twitch Drops\". Drops are post-worthy only when an official source confirms them."
+      },
+      {
+        "id": "streamscharts",
+        "name": "Streams Charts: who streamed it (30 days)",
+        "check": "https://streamscharts.com/channels?game=tom-clancys-the-division-resurgence&time=30-days",
+        "lookFor": "Which listed streamers streamed since the last run, and any new channel with a real audience."
+      },
+      {
+        "id": "sullygnome",
+        "name": "SullyGnome: game stats",
+        "check": "https://sullygnome.com/game/Tom_Clancys_The_Division_Resurgence",
+        "lookFor": "Record 30-day hours watched, streamers and peak viewers (for a future monthly roundup)."
+      },
+      {
+        "id": "kick-category",
+        "name": "Kick: game category",
+        "check": "https://kick.com/category/tom-clancys-the-division-resurgence",
+        "lookFor": "Anyone live or notable; Kick often blocks automated reads, so mark it and move on."
+      }
+    ],
+    "streamers": [
+      {
+        "name": "JanoWuytss",
+        "platform": "Twitch",
+        "language": "Spanish",
+        "url": "https://www.twitch.tv/janowuytss",
+        "statusAsOf": "Active",
+        "latestSeen": "2026-10-24",
+        "notes": "Same creator as YouTube 'Jano Wuyts'. Daily ~2-3 hr streams."
+      },
+      {
+        "name": "SFT__",
+        "platform": "Twitch",
+        "language": "English",
+        "url": "https://www.twitch.tv/sft__",
+        "statusAsOf": "Active",
+        "latestSeen": "2026-10-16",
+        "notes": "Bio: 'Low budget streamer, Division agent'. 5-9 avg viewers. Most consistent English Twitch streamer of the game."
+      },
+      {
+        "name": "Dreadlord7741",
+        "platform": "Twitch",
+        "language": "English",
+        "url": "https://www.twitch.tv/dreadlord7741",
+        "statusAsOf": "Occasional",
+        "latestSeen": "2026-10-23",
+        "notes": "Also uploads to YouTube."
+      },
+      {
+        "name": "godly2tymez",
+        "platform": "Twitch",
+        "language": "English",
+        "url": "https://www.twitch.tv/godly2tymez",
+        "statusAsOf": "Occasional",
+        "latestSeen": "2026-10-22",
+        "notes": null
+      },
+      {
+        "name": "jrespawns",
+        "platform": "Twitch",
+        "language": "English",
+        "url": "https://www.twitch.tv/jrespawns",
+        "statusAsOf": "Occasional",
+        "latestSeen": "2026-10-20",
+        "notes": null
+      },
+      {
+        "name": "STREIKAUT",
+        "platform": "Twitch",
+        "language": "Dutch",
+        "url": "https://www.twitch.tv/streikaut",
+        "statusAsOf": "Occasional",
+        "latestSeen": "2026-10-22",
+        "notes": null
+      },
+      {
+        "name": "Atenation_",
+        "platform": "Twitch",
+        "language": "English",
+        "url": "https://www.twitch.tv/atenation_",
+        "statusAsOf": "Occasional",
+        "latestSeen": "2026-10-18",
+        "notes": "Variety streamer."
+      },
+      {
+        "name": "FoY_76",
+        "platform": "Twitch",
+        "language": "Spanish",
+        "url": "https://www.twitch.tv/foy_76",
+        "statusAsOf": "Occasional",
+        "latestSeen": "2026-10-18",
+        "notes": "Same creator as YouTube 'Antonio Sanchez Villalobos (FoY_76)'."
+      },
+      {
+        "name": "gg2002pt",
+        "platform": "Kick",
+        "language": "Portuguese",
+        "url": "https://kick.com/gg2002pt",
+        "statusAsOf": "Occasional",
+        "latestSeen": "2026-10-13",
+        "notes": null
+      },
+      {
+        "name": "TristanLucario666",
+        "platform": "Twitch",
+        "language": "English",
+        "url": "https://www.twitch.tv/tristanlucario666",
+        "statusAsOf": "Occasional",
+        "latestSeen": "2026-10-20",
+        "notes": null
+      },
+      {
+        "name": "wikid889772",
+        "platform": "Twitch",
+        "language": "English",
+        "url": "https://www.twitch.tv/wikid889772",
+        "statusAsOf": "Occasional",
+        "latestSeen": "2026-10-22",
+        "notes": "Mostly Total War and Skyrim."
+      },
+      {
+        "name": "ishowguygamer",
+        "platform": "Twitch",
+        "language": "English",
+        "url": "https://www.twitch.tv/ishowguygamer",
+        "statusAsOf": "Slowing down",
+        "latestSeen": "2026-10-05",
+        "notes": "Top channel for the game on TwitchMetrics (21 avg / 43 peak viewers). Variety streamer."
+      },
+      {
+        "name": "lilyvonwolf",
+        "platform": "Kick",
+        "language": "English",
+        "url": "https://kick.com/lilyvonwolf",
+        "statusAsOf": "Slowing down",
+        "latestSeen": "2026-10-03",
+        "notes": null
+      },
+      {
+        "name": "utgkieros89",
+        "platform": "Twitch",
+        "language": "English",
+        "url": "https://www.twitch.tv/utgkieros89",
+        "statusAsOf": "Slowing down",
+        "latestSeen": "2026-09-25",
+        "notes": "73 avg viewers on this game over 30 days."
+      },
+      {
+        "name": "virulentwaif",
+        "platform": "Kick",
+        "language": "English",
+        "url": "https://kick.com/virulentwaif",
+        "statusAsOf": "Slowing down",
+        "latestSeen": "2026-10-03",
+        "notes": "Appears to co-stream with lilyvonwolf."
+      },
+      {
+        "name": "rikgamer",
+        "platform": "Kick",
+        "language": "Portuguese",
+        "url": "https://kick.com/rikgamer",
+        "statusAsOf": "Not verifiable",
+        "latestSeen": null,
+        "notes": "Biggest audience for the game in the last 30 days (1,742 hours watched)."
+      }
+    ]
+  },
+  "searches": {
+    "note": "Catch-all WebSearch queries for news from outlets that aren't listed or that block automated reads. Search only; never fetch a site that refuses automated reads, and never use mirrors or caches. Everything found this way is 'unverified' until an official source confirms it.",
+    "daily": [
+      "\"The Division Resurgence\" news",
+      "\"Division Resurgence\" update OR patch OR season",
+      "\"Division Resurgence\" Season 3",
+      "TheDivMobile"
+    ],
+    "outletsSearchOnly": [
+      "gamerant.com",
+      "thegamer.com",
+      "game8.co",
+      "ign.com",
+      "pcgamesn.com",
+      "screenrant.com",
+      "sportskeeda.com",
+      "dexerto.com",
+      "destructoid.com",
+      "gamespot.com",
+      "eurogamer.net",
+      "vg247.com",
+      "pocketgamer.com",
+      "pockettactics.com",
+      "pcgamer.com",
+      "dotesports.com"
+    ],
+    "outletsHowTo": "Daily, run one or two combined searches such as \"Division Resurgence\" site:gamerant.com OR site:thegamer.com OR site:ign.com (split the list across a few queries). List new headlines in the summary; treat them as leads."
+  },
+  "youtube": {
+    "note": "The owner pulls transcripts; never try to fetch transcripts or scrape YouTube pages. Each run reads the RSS feed of every channel with watch: true and lists new videos whose titles suggest a build, test, guide, tips or update news (skip livestreams, walkthrough parts and Shorts) under 'Transcripts worth pulling' in the summary. The other channels are listed for reference.",
+    "channels": [
+      {
+        "name": "Jano Wuyts",
+        "watch": false,
+        "language": "Spanish",
+        "focus": "Daily stream series (#105 and counting)",
+        "channelType": "Resurgence-dedicated",
+        "statusAsOf": "Very active",
+        "url": "https://www.youtube.com/@janowuyts",
+        "channelId": "UCEU9Ai9LIIdYf4xa14kEaQg",
+        "rss": "https://www.youtube.com/feeds/videos.xml?channel_id=UCEU9Ai9LIIdYf4xa14kEaQg",
+        "latestSeen": {
+          "date": "2026-10-24",
+          "title": "The Division Resurgence +18#105- Dificultades",
+          "videoId": "iDTrtDDdDzY"
+        }
+      },
+      {
+        "name": "GGReborn",
+        "watch": true,
+        "language": "English",
+        "focus": "Build & OS Protocol testing, Legendary runs, farming/XP guides, Shorts",
+        "channelType": "Resurgence-dedicated",
+        "statusAsOf": "Very active",
+        "url": "https://www.youtube.com/@GGReborn",
+        "channelId": "UC0jHX5wSx5KUsjC2vQhMYyw",
+        "rss": "https://www.youtube.com/feeds/videos.xml?channel_id=UC0jHX5wSx5KUsjC2vQhMYyw",
+        "latestSeen": {
+          "date": "2026-10-25",
+          "title": "Back to BOB! Tactical Pharma DUO Legendary | The Division Resurgence",
+          "videoId": "DOm-5ee97BA"
+        }
+      },
+      {
+        "name": "droW esreveR",
+        "watch": false,
+        "language": "English",
+        "focus": "Mission-by-mission gameplay series (hostile nests, DZ extractions)",
+        "channelType": "Multi-game",
+        "statusAsOf": "Very active",
+        "url": "https://www.youtube.com/@DroWesreveR",
+        "channelId": "UCLN96f7k7TIZOidEObIqD6A",
+        "rss": "https://www.youtube.com/feeds/videos.xml?channel_id=UCLN96f7k7TIZOidEObIqD6A",
+        "latestSeen": {
+          "date": "2026-10-23",
+          "title": "Arms Deal Disruption - PT.9 | The Division Resurgence - Gameplay",
+          "videoId": null
+        }
+      },
+      {
+        "name": "PYM GameCat",
+        "watch": false,
+        "language": "Thai (English titles)",
+        "focus": "Solo Elite Mission Challenge series, weekly bounty bosses, farming spots",
+        "channelType": "Resurgence-dedicated",
+        "statusAsOf": "Very active",
+        "url": "https://www.youtube.com/@PYM70621",
+        "channelId": "UCLjjKej-PXBB-JmVhM4eZKg",
+        "rss": "https://www.youtube.com/feeds/videos.xml?channel_id=UCLjjKej-PXBB-JmVhM4eZKg",
+        "latestSeen": {
+          "date": "2026-10-24",
+          "title": "The Division Resurgence Solo Elite Mission Challenge EP.22",
+          "videoId": "lMj9r9E5hCE"
+        }
+      },
+      {
+        "name": "Nub_M4ster",
+        "watch": true,
+        "language": "Korean",
+        "focus": "Weapon/talent damage tests, builds",
+        "channelType": "Resurgence-dedicated",
+        "statusAsOf": "Very active",
+        "url": "https://www.youtube.com/@Nub_M4ster",
+        "channelId": "UCSFoN2M0wk-IRM5W_zT0hRQ",
+        "rss": "https://www.youtube.com/feeds/videos.xml?channel_id=UCSFoN2M0wk-IRM5W_zT0hRQ",
+        "latestSeen": {
+          "date": "2026-10-24",
+          "title": "디비전 리서전스 분쇄속성 무기중 가장 좋은 총?",
+          "videoId": "XjV-qg6GdJA"
+        }
+      },
+      {
+        "name": "Cheese Gaming",
+        "watch": false,
+        "language": "Hindi",
+        "focus": "Livestream series (Part 17+)",
+        "channelType": "Mostly Resurgence",
+        "statusAsOf": "Very active",
+        "url": "https://www.youtube.com/@GAMEO211",
+        "channelId": "UCcmvY_ENbYOqYf7OspEs-TQ",
+        "rss": "https://www.youtube.com/feeds/videos.xml?channel_id=UCcmvY_ENbYOqYf7OspEs-TQ",
+        "latestSeen": {
+          "date": "2026-10-24",
+          "title": "The Division Resurgence || LIVE🔴 || PART- 17",
+          "videoId": "-dnIYqadRaM"
+        }
+      },
+      {
+        "name": "Dreadlord7741",
+        "watch": false,
+        "language": "English",
+        "focus": "Solo farming livestreams",
+        "channelType": "Multi-game",
+        "statusAsOf": "Very active",
+        "url": "https://www.youtube.com/@dreadlord7741",
+        "channelId": "UCGrpXsQePtVzkXZ2Tqo5Qjg",
+        "rss": "https://www.youtube.com/feeds/videos.xml?channel_id=UCGrpXsQePtVzkXZ2Tqo5Qjg",
+        "latestSeen": {
+          "date": "2026-10-24",
+          "title": "Tom Clancy's The Division Resurgence [Season 2 - Phase 2] [Solo Farming]",
+          "videoId": "_pUvffvQhpI"
+        }
+      },
+      {
+        "name": "MrZicu",
+        "watch": false,
+        "language": "English (no commentary)",
+        "focus": "No-commentary walkthrough series (Part 18+)",
+        "channelType": "Multi-game",
+        "statusAsOf": "Very active",
+        "url": "https://www.youtube.com/@mrzicu",
+        "channelId": "UCifufMIuEnjr7cfdSMkfsIg",
+        "rss": "https://www.youtube.com/feeds/videos.xml?channel_id=UCifufMIuEnjr7cfdSMkfsIg",
+        "latestSeen": {
+          "date": "2026-10-22",
+          "title": "Tom Clancy's The Division Resurgence - Gameplay Walkthrough (No Commentary) Part 18",
+          "videoId": "1G_A_3Skvvg"
+        }
+      },
+      {
+        "name": "Андрей Сергеевич",
+        "watch": true,
+        "language": "Russian (English titles)",
+        "focus": "Tactical Pharma PvP builds, Legendary team/solo runs",
+        "channelType": "Resurgence-dedicated",
+        "statusAsOf": "Very active",
+        "url": "https://www.youtube.com/channel/UCc2Gw0goUxR9o0LzE5ES5BQ",
+        "channelId": "UCc2Gw0goUxR9o0LzE5ES5BQ",
+        "rss": "https://www.youtube.com/feeds/videos.xml?channel_id=UCc2Gw0goUxR9o0LzE5ES5BQ",
+        "latestSeen": {
+          "date": "2026-10-19",
+          "title": "Liberty and Justice team run/legendary/Division resurgence",
+          "videoId": "8eil9G7aajU"
+        }
+      },
+      {
+        "name": "TikTokAndy",
+        "watch": true,
+        "language": "English",
+        "focus": "Dark Zone PvP, build guides, solo Legendary/Heroic, livestreams",
+        "channelType": "Resurgence-dedicated",
+        "statusAsOf": "Very active",
+        "url": "https://www.youtube.com/@TikTokAndy",
+        "channelId": "UCrlQj7sr1g2I-JC4UXqxK0w",
+        "rss": "https://www.youtube.com/feeds/videos.xml?channel_id=UCrlQj7sr1g2I-JC4UXqxK0w",
+        "latestSeen": {
+          "date": "2026-10-22",
+          "title": "Silence of Death | A Division Resurgence Montage | Toxic Pharma Solo vs. Squads Dark Zone Gameplay",
+          "videoId": "lbk6aUoOtds"
+        }
+      },
+      {
+        "name": "DerivedWhale45",
+        "watch": false,
+        "language": "English",
+        "focus": "Walkthrough series (Part 11+)",
+        "channelType": "Multi-game",
+        "statusAsOf": "Very active",
+        "url": "https://www.youtube.com/@Derivedwhale45",
+        "channelId": "UCGPc1gEb52hKfuYClZvx5wA",
+        "rss": "https://www.youtube.com/feeds/videos.xml?channel_id=UCGPc1gEb52hKfuYClZvx5wA",
+        "latestSeen": {
+          "date": "2026-10-25",
+          "title": "The Division Resurgence Walkthrough Part 11",
+          "videoId": "bkomOjPnPvQ"
+        }
+      },
+      {
+        "name": "Antonio Sánchez Villalobos (FoY_76)",
+        "watch": false,
+        "language": "Spanish",
+        "focus": "Android let's-play series (#69+)",
+        "channelType": "Resurgence-dedicated",
+        "statusAsOf": "Very active",
+        "url": "https://www.youtube.com/@7FoY6",
+        "channelId": "UCrSYA2lgOfYep4lgrBeDRmQ",
+        "rss": "https://www.youtube.com/feeds/videos.xml?channel_id=UCrSYA2lgOfYep4lgrBeDRmQ",
+        "latestSeen": {
+          "date": "2026-10-23",
+          "title": "Tom Clancy's The Division: Resurgence | Español | 2026 | ANDROID | #69",
+          "videoId": "I1cxKZSBWaY"
+        }
+      },
+      {
+        "name": "AApnaBhaii",
+        "watch": false,
+        "language": "English/Hindi",
+        "focus": "Livestreams: missions, Dark Zone",
+        "channelType": "Multi-game",
+        "statusAsOf": "Very active",
+        "url": "https://www.youtube.com/@aapnabhai-m8c",
+        "channelId": "UCJzxYGEHHMEB1_KE8AtLUrA",
+        "rss": "https://www.youtube.com/feeds/videos.xml?channel_id=UCJzxYGEHHMEB1_KE8AtLUrA",
+        "latestSeen": {
+          "date": "2026-10-17",
+          "title": "LIVE | Tom Clancy’s The Division Resurgence | Into The Dark Zone | Gameplay & Missions",
+          "videoId": "MSSFE1m6qIE"
+        }
+      },
+      {
+        "name": "Eduardz420",
+        "watch": false,
+        "language": "Spanish",
+        "focus": "Dark Zone crates, Legendary squads, PvP",
+        "channelType": "Resurgence-dedicated",
+        "statusAsOf": "Very active",
+        "url": "https://www.youtube.com/@Eduardo.indomable33",
+        "channelId": "UC_7ABabdtC4PuBlPRNtInYw",
+        "rss": "https://www.youtube.com/feeds/videos.xml?channel_id=UC_7ABabdtC4PuBlPRNtInYw",
+        "latestSeen": {
+          "date": "2026-10-16",
+          "title": "ABRIENDO TODAS LAS CAJAS DE ZONA OSCURA// THE DIVISION RESURGENCE",
+          "videoId": "_807cGD0S5Y"
+        }
+      },
+      {
+        "name": "Benyi Escobar",
+        "watch": false,
+        "language": "Spanish",
+        "focus": "Short raw gameplay uploads",
+        "channelType": "Multi-game",
+        "statusAsOf": "Active",
+        "url": "https://www.youtube.com/@benyiescobar6573",
+        "channelId": "UClVW5ULGgcKLaSQZy-7Agvg",
+        "rss": "https://www.youtube.com/feeds/videos.xml?channel_id=UClVW5ULGgcKLaSQZy-7Agvg",
+        "latestSeen": {
+          "date": "2026-10-24",
+          "title": "The Division Resurgence",
+          "videoId": "MWSenbSk5wE"
+        }
+      },
+      {
+        "name": "CachorroTV",
+        "watch": false,
+        "language": "Spanish",
+        "focus": "Livestreams: missions + gear farming",
+        "channelType": "Mostly Resurgence",
+        "statusAsOf": "Active",
+        "url": "https://www.youtube.com/@CachorroTV-Oficial",
+        "channelId": "UC3FeefluVm1a5ccquxbXraA",
+        "rss": "https://www.youtube.com/feeds/videos.xml?channel_id=UC3FeefluVm1a5ccquxbXraA",
+        "latestSeen": {
+          "date": "2026-10-23",
+          "title": "🔴 EN VIVO | 🎮 THE DIVISION RESURGENCE | MISIONES + FARME DE EQUIPO 🔥",
+          "videoId": "MIPOU2Vkyoo"
+        }
+      },
+      {
+        "name": "槍文兩光遊戲頻道",
+        "watch": false,
+        "language": "Chinese (Traditional)",
+        "focus": "Shorts: Dark Zone, hostile nests",
+        "channelType": "Resurgence-dedicated",
+        "statusAsOf": "Active",
+        "url": "https://www.youtube.com/@gun-text",
+        "channelId": "UCgOXMTIukNjHmetBzenTyMg",
+        "rss": "https://www.youtube.com/feeds/videos.xml?channel_id=UCgOXMTIukNjHmetBzenTyMg",
+        "latestSeen": {
+          "date": "2026-10-23",
+          "title": "我是善良的 但這個寶箱我是要定了😂 #全境封鎖 #曙光",
+          "videoId": "6dnqjJuV8D8"
+        }
+      },
+      {
+        "name": "えむわいけいてぃ",
+        "watch": false,
+        "language": "Japanese",
+        "focus": "Solo Elite Mission Challenge runs",
+        "channelType": "Resurgence-dedicated",
+        "statusAsOf": "Active",
+        "url": "https://www.youtube.com/channel/UCtdW4a0h6o-n2-V33-zxyXw",
+        "channelId": "UCtdW4a0h6o-n2-V33-zxyXw",
+        "rss": "https://www.youtube.com/feeds/videos.xml?channel_id=UCtdW4a0h6o-n2-V33-zxyXw",
+        "latestSeen": {
+          "date": "2026-10-20",
+          "title": "【ディビジョン リサージェンス】エリートミッションチャレンジ-平等たる自由と正義 ※ソロ_腐食メディック",
+          "videoId": "b7PG1SDdmxY"
+        }
+      },
+      {
+        "name": "Tempestade YT",
+        "watch": false,
+        "language": "Portuguese (BR)",
+        "focus": "Livestreams",
+        "channelType": "Multi-game",
+        "statusAsOf": "Active",
+        "url": "https://www.youtube.com/@TempestadeYT",
+        "channelId": "UCWIphvDrb4EI9p6hbtQV4tA",
+        "rss": "https://www.youtube.com/feeds/videos.xml?channel_id=UCWIphvDrb4EI9p6hbtQV4tA",
+        "latestSeen": {
+          "date": "2026-10-17",
+          "title": "The Division Resurgence 💥 #livestream #live",
+          "videoId": "sITD3Y8Xxkg"
+        }
+      },
+      {
+        "name": "갓아지 (GOD_AJI)",
+        "watch": false,
+        "language": "Korean",
+        "focus": "Elite Mission Challenge runs",
+        "channelType": "Multi-game",
+        "statusAsOf": "Active",
+        "url": "https://www.youtube.com/@GOD_AJI",
+        "channelId": "UCZoNWMxTRviz3XxtzKGc0EQ",
+        "rss": "https://www.youtube.com/feeds/videos.xml?channel_id=UCZoNWMxTRviz3XxtzKGc0EQ",
+        "latestSeen": {
+          "date": "2026-10-21",
+          "title": "정예 임무 챌린지-만인을 위한 자유 와 정의 선봉장(Vanguard) 더 디비전 리서전스",
+          "videoId": "WWh6fuYco_A"
+        }
+      },
+      {
+        "name": "BellionXlive",
+        "watch": false,
+        "language": "English (titles)",
+        "focus": "Mobile livestreams, update reactions",
+        "channelType": "Multi-game",
+        "statusAsOf": "Active",
+        "url": "https://www.youtube.com/@Bellionxlive",
+        "channelId": "UCTVnmnA-hL-tqnsmNj8a2UA",
+        "rss": "https://www.youtube.com/feeds/videos.xml?channel_id=UCTVnmnA-hL-tqnsmNj8a2UA",
+        "latestSeen": {
+          "date": "2026-10-16",
+          "title": "THE DIVISION RESURGENCE | NEW UPDATE IS HERE 🤯",
+          "videoId": "l-on7FTjBYE"
+        }
+      },
+      {
+        "name": "Amrul Ismail",
+        "watch": true,
+        "language": "English",
+        "focus": "Elite/Legendary runs (tank POV), solo Dark Zone guide",
+        "channelType": "Resurgence-dedicated",
+        "statusAsOf": "Active",
+        "url": "https://www.youtube.com/@armrule",
+        "channelId": "UCZYEqBLJrRcRMusTTRwS6Yw",
+        "rss": "https://www.youtube.com/feeds/videos.xml?channel_id=UCZYEqBLJrRcRMusTTRwS6Yw",
+        "latestSeen": {
+          "date": "2026-10-19",
+          "title": "The Division Resurgence, Liberty & Justice for All (Elite), Tank DPS PoV",
+          "videoId": "Pcw8uruV3Is"
+        }
+      },
+      {
+        "name": "DEMONICORN",
+        "watch": false,
+        "language": "English",
+        "focus": "Mobile playthrough series (Part 5+)",
+        "channelType": "Multi-game",
+        "statusAsOf": "Active",
+        "url": "https://www.youtube.com/@DEMONICORN-yt",
+        "channelId": "UCQFMtHiIgyx4VS5kUtPvIzA",
+        "rss": "https://www.youtube.com/feeds/videos.xml?channel_id=UCQFMtHiIgyx4VS5kUtPvIzA",
+        "latestSeen": {
+          "date": "2026-10-22",
+          "title": "The Division Resurgence Part 5 🔥 | The Battle Gets INTENSE! 😱 | DEMONICORN",
+          "videoId": "eWeSnZdnUx4"
+        }
+      },
+      {
+        "name": "DEM1AN DARK",
+        "watch": false,
+        "language": "Russian",
+        "focus": "Story playthrough series (Ep 13+)",
+        "channelType": "Multi-game",
+        "statusAsOf": "Active",
+        "url": "https://www.youtube.com/@dem1andark",
+        "channelId": "UC8XTDVeBGWvuPP78rbQFoPw",
+        "rss": "https://www.youtube.com/feeds/videos.xml?channel_id=UC8XTDVeBGWvuPP78rbQFoPw",
+        "latestSeen": {
+          "date": "2026-10-23",
+          "title": "The Division Resurgence Ер 13 Новая База под землей",
+          "videoId": "kzAhaA7HA1c"
+        }
+      },
+      {
+        "name": "KRYPTXCK",
+        "watch": false,
+        "language": "English",
+        "focus": "Mobile progression gameplay & Shorts",
+        "channelType": "Resurgence-dedicated",
+        "statusAsOf": "Active",
+        "url": "https://www.youtube.com/@KRYPTXCK",
+        "channelId": "UCdTzXq6zML6vP_UNpC9isfA",
+        "rss": "https://www.youtube.com/feeds/videos.xml?channel_id=UCdTzXq6zML6vP_UNpC9isfA",
+        "latestSeen": {
+          "date": "2026-10-24",
+          "title": "Agent Kxn Gets Weapon Upgrades 🔫 🔥 | The Division Resurgence",
+          "videoId": "R958DefyCWQ"
+        }
+      },
+      {
+        "name": "random guy",
+        "watch": false,
+        "language": "English (no commentary)",
+        "focus": "No-commentary walkthrough series",
+        "channelType": "Multi-game",
+        "statusAsOf": "Active",
+        "url": "https://www.youtube.com/@Random_Guy3000",
+        "channelId": "UCFZQSf1o421fuybQu-pJ46w",
+        "rss": "https://www.youtube.com/feeds/videos.xml?channel_id=UCFZQSf1o421fuybQu-pJ46w",
+        "latestSeen": {
+          "date": "2026-10-23",
+          "title": "The Division Resurgence - Gameplay Walkthrough Part 5 [No Commentary]",
+          "videoId": "xUUGvBuV1yA"
+        }
+      },
+      {
+        "name": "STRAY PLAYER",
+        "watch": false,
+        "language": "English",
+        "focus": "Mobile gameplay series + performance tests",
+        "channelType": "Multi-game",
+        "statusAsOf": "Active",
+        "url": "https://www.youtube.com/@StrayPlayerOfficial",
+        "channelId": "UC1spFBBORxskQfE9TTWQYzw",
+        "rss": "https://www.youtube.com/feeds/videos.xml?channel_id=UC1spFBBORxskQfE9TTWQYzw",
+        "latestSeen": {
+          "date": "2026-10-15",
+          "title": "The Division Resurgence : Gameplay Part - 9 | Helio G99 Performance Test",
+          "videoId": "4dWbgoS0sKw"
+        }
+      },
+      {
+        "name": "クニクニゲエム",
+        "watch": false,
+        "language": "Japanese",
+        "focus": "PC livestreams",
+        "channelType": "Division franchise",
+        "statusAsOf": "Active",
+        "url": "https://www.youtube.com/@kunikunigame",
+        "channelId": "UCsRqSR7hHQpp0JJGS4LpirA",
+        "rss": "https://www.youtube.com/feeds/videos.xml?channel_id=UCsRqSR7hHQpp0JJGS4LpirA",
+        "latestSeen": {
+          "date": "2026-10-23",
+          "title": "【The Division Resurgence PC版】遅くなりました ディビジョンリサージェンス 【LIVE】",
+          "videoId": "fDdY14e0Vcs"
+        }
+      },
+      {
+        "name": "遊戲視頻觀賞",
+        "watch": false,
+        "language": "Chinese (Traditional)",
+        "focus": "Steam playthrough (side missions)",
+        "channelType": "Multi-game",
+        "statusAsOf": "Active",
+        "url": "https://www.youtube.com/@piyr11",
+        "channelId": "UC8lferGOHf2eMP8qaZed4Gg",
+        "rss": "https://www.youtube.com/feeds/videos.xml?channel_id=UC8lferGOHf2eMP8qaZed4Gg",
+        "latestSeen": {
+          "date": "2026-10-18",
+          "title": "《Steam》2026-10-18 全境封鎖曙光 / The Division Resurgence - [支線任務-4]",
+          "videoId": "FipV-4oNxLo"
+        }
+      },
+      {
+        "name": "Shubh Stark",
+        "watch": false,
+        "language": "English (titles)",
+        "focus": "Livestreams",
+        "channelType": "Multi-game",
+        "statusAsOf": "Active",
+        "url": "https://www.youtube.com/@shubh_stark3000",
+        "channelId": "UC3gcQeKBH5351SxbFRVu62w",
+        "rss": "https://www.youtube.com/feeds/videos.xml?channel_id=UC3gcQeKBH5351SxbFRVu62w",
+        "latestSeen": {
+          "date": "2026-10-14",
+          "title": "LIVE | The Division Resurgence - First-Wave Agent on the Hunt! 🗽🔥",
+          "videoId": "A2pKAV2xuSM"
+        }
+      },
+      {
+        "name": "AbahKucingT",
+        "watch": true,
+        "language": "English (titles)",
+        "focus": "Weekly bounty OS Protocol drops (weekly series)",
+        "channelType": "Multi-game",
+        "statusAsOf": "Active",
+        "url": "https://www.youtube.com/@AbahKucingT",
+        "channelId": "UCiTZFGbNfFHAGOM_QDyx38w",
+        "rss": "https://www.youtube.com/feeds/videos.xml?channel_id=UCiTZFGbNfFHAGOM_QDyx38w",
+        "latestSeen": {
+          "date": "2026-10-16",
+          "title": "The Division Resurgence: Another Gold OS from the weekly bounty - Week 42 2026",
+          "videoId": "mHM-DZcuPWo"
+        }
+      },
+      {
+        "name": "The division resurgence SperoPatria",
+        "watch": true,
+        "language": "English",
+        "focus": "Tips & tricks (weekly bounties, hostile nests), builds, solo DZ",
+        "channelType": "Resurgence-dedicated",
+        "statusAsOf": "Active",
+        "url": "https://www.youtube.com/@SperoPatria13",
+        "channelId": "UCFaard15UOmRQ-6Kw5f9Y2A",
+        "rss": "https://www.youtube.com/feeds/videos.xml?channel_id=UCFaard15UOmRQ-6Kw5f9Y2A",
+        "latestSeen": {
+          "date": "2026-10-18",
+          "title": "The Division Resurgence - DOUBLE reward from Main Target - Stone Cold (Weekly bounties)",
+          "videoId": "n5-3F19kzvU"
+        }
+      },
+      {
+        "name": "Sendy",
+        "watch": false,
+        "language": "English (titles)",
+        "focus": "Open world / DZ / Conflict livestreams",
+        "channelType": "Division franchise",
+        "statusAsOf": "Active",
+        "url": "https://www.youtube.com/@Sendy7",
+        "channelId": "UCDJoD6SZAJLAXx0sF0tQJCQ",
+        "rss": "https://www.youtube.com/feeds/videos.xml?channel_id=UCDJoD6SZAJLAXx0sF0tQJCQ",
+        "latestSeen": {
+          "date": "2026-10-19",
+          "title": "The Division Resurgence - Open World Exploration- Quest- Bounty- DZ- Conflict- Matchmake - 18102026",
+          "videoId": "V3N164PAZnI"
+        }
+      },
+      {
+        "name": "gocalibergaming",
+        "watch": false,
+        "language": "English (no commentary)",
+        "focus": "iOS walkthrough series (Part 15) + Elite missions",
+        "channelType": "Multi-game",
+        "statusAsOf": "Active",
+        "url": "https://www.youtube.com/@gocalibergaming",
+        "channelId": "UCnEHONZHlNBlNgCO4v0FEqw",
+        "rss": "https://www.youtube.com/feeds/videos.xml?channel_id=UCnEHONZHlNBlNgCO4v0FEqw",
+        "latestSeen": {
+          "date": "2026-10-16",
+          "title": "Tom Clancy's The Division Resurgence Gameplay - Elite Mission: Wall Street Woes",
+          "videoId": "iPD1C_iiies"
+        }
+      },
+      {
+        "name": "cJIoKouHblu",
+        "watch": false,
+        "language": "Russian",
+        "focus": "Mobile let's-play series (#1-#3)",
+        "channelType": "Multi-game",
+        "statusAsOf": "Active",
+        "url": "https://www.youtube.com/@cJIoKouHblu",
+        "channelId": "UCqxWmZOLTABMNvJ5Buw_lqQ",
+        "rss": "https://www.youtube.com/feeds/videos.xml?channel_id=UCqxWmZOLTABMNvJ5Buw_lqQ",
+        "latestSeen": {
+          "date": "2026-10-11",
+          "title": "Tom Clancy's The Division Resurgence: Достигните 16го уровня #3",
+          "videoId": "xO5k2mHNoaE"
+        }
+      },
+      {
+        "name": "Bill Games",
+        "watch": false,
+        "language": "Portuguese (BR)",
+        "focus": "PC livestreams (spec tests, T2 farming)",
+        "channelType": "Multi-game",
+        "statusAsOf": "Active",
+        "url": "https://www.youtube.com/@BillGames123",
+        "channelId": "UCU4fWwh0ZLxss3d6kLMqpcw",
+        "rss": "https://www.youtube.com/feeds/videos.xml?channel_id=UCU4fWwh0ZLxss3d6kLMqpcw",
+        "latestSeen": {
+          "date": "2026-10-17",
+          "title": "Hoje é dia de testar a classe VANGUARDA no THE DIVISION RESURGENCE PC!",
+          "videoId": "5OKa_qmecIk"
+        }
+      },
+      {
+        "name": "Demø2x",
+        "watch": true,
+        "language": "English",
+        "focus": "Builds (Tech Operator, Tactical Pharma), Dark Zone PvP",
+        "channelType": "Resurgence-dedicated",
+        "statusAsOf": "Active",
+        "url": "https://www.youtube.com/@Demo2xGaming",
+        "channelId": "UCyHyKopedQpbRxovG4WGJiw",
+        "rss": "https://www.youtube.com/feeds/videos.xml?channel_id=UCyHyKopedQpbRxovG4WGJiw",
+        "latestSeen": {
+          "date": "2026-10-21",
+          "title": "ITS JUST NOT FAIR | THE DIVISION RESURGENCE",
+          "videoId": "ojXBzo968FI"
+        }
+      },
+      {
+        "name": "Oldfartsgaming",
+        "watch": true,
+        "language": "English",
+        "focus": "Endgame tips, progression advice, co-op",
+        "channelType": "Multi-game",
+        "statusAsOf": "Active",
+        "url": "https://www.youtube.com/@Oldfartsgaming-real",
+        "channelId": "UCflbi5-mPBYOru4AFVuu48A",
+        "rss": "https://www.youtube.com/feeds/videos.xml?channel_id=UCflbi5-mPBYOru4AFVuu48A",
+        "latestSeen": {
+          "date": "2026-10-11",
+          "title": "7 Things I Wish I Knew Before Endgame | The Division Resurgence",
+          "videoId": "7JtJCeEE8NI"
+        }
+      },
+      {
+        "name": "ALMERDA",
+        "watch": false,
+        "language": "Portuguese (BR)",
+        "focus": "PvP clips",
+        "channelType": "Mostly Resurgence",
+        "statusAsOf": "Active",
+        "url": "https://www.youtube.com/@almerda",
+        "channelId": "UCi8sCMCBASTNePXkPTBlDyA",
+        "rss": "https://www.youtube.com/feeds/videos.xml?channel_id=UCi8sCMCBASTNePXkPTBlDyA",
+        "latestSeen": {
+          "date": "2026-10-19",
+          "title": "The Division Resurgence Chuva de estalinhos vs Medico",
+          "videoId": "9EYd_Ij5eD8"
+        }
+      },
+      {
+        "name": "Pocket Resurgence",
+        "watch": true,
+        "language": "English",
+        "focus": "Legendary / Lone Wolf runs",
+        "channelType": "Resurgence-dedicated",
+        "statusAsOf": "Active",
+        "url": "https://www.youtube.com/@PocketResurgence",
+        "channelId": "UChcht3-3Qqn7hnya8-nrI-w",
+        "rss": "https://www.youtube.com/feeds/videos.xml?channel_id=UChcht3-3Qqn7hnya8-nrI-w",
+        "latestSeen": {
+          "date": "2026-10-22",
+          "title": "Tom Clancy's :The Division Resurgence / Lone Wolf Stage 20",
+          "videoId": "ldMK9-sGedI"
+        }
+      },
+      {
+        "name": "Terengineer",
+        "watch": false,
+        "language": "English",
+        "focus": "New-player story let's play",
+        "channelType": "Multi-game",
+        "statusAsOf": "Occasional",
+        "url": "https://www.youtube.com/@Terengineer",
+        "channelId": "UCLxNMvxjmMc5wKBOYISc_qA",
+        "rss": "https://www.youtube.com/feeds/videos.xml?channel_id=UCLxNMvxjmMc5wKBOYISc_qA",
+        "latestSeen": {
+          "date": "2026-10-24",
+          "title": "Continue the story mission, and got stuck on the server record | The Division Resurgence",
+          "videoId": "rRdEiLnn9Rw"
+        }
+      },
+      {
+        "name": "AgentHuntzman",
+        "watch": true,
+        "language": "English",
+        "focus": "Update commentary, build advice, streams",
+        "channelType": "Division franchise",
+        "statusAsOf": "Occasional",
+        "url": "https://www.youtube.com/@AgentHuntzman",
+        "channelId": "UCPXhAEaShOXmNhvQAjUFZmw",
+        "rss": "https://www.youtube.com/feeds/videos.xml?channel_id=UCPXhAEaShOXmNhvQAjUFZmw",
+        "latestSeen": {
+          "date": "2026-10-11",
+          "title": "The Grind Just Got Delayed Not Deleted | The Division Resurgence P2.",
+          "videoId": "tOufaAxhmuE"
+        }
+      },
+      {
+        "name": "AimersX Remanzo",
+        "watch": false,
+        "language": "English/Hindi",
+        "focus": "Livestreams: Legendary runs, build tests",
+        "channelType": "Multi-game",
+        "statusAsOf": "Occasional",
+        "url": "https://www.youtube.com/@AimersXRemanzo",
+        "channelId": "UCCQCyt_CUa6JmhFZcd0Uq-Q",
+        "rss": "https://www.youtube.com/feeds/videos.xml?channel_id=UCCQCyt_CUa6JmhFZcd0Uq-Q",
+        "latestSeen": {
+          "date": "2026-10-21",
+          "title": "🔴The Division Resurgence Live | Happy Dussehra Viewers | Legendary Duo Runs | #thedivision",
+          "videoId": "YAeYiYBphCM"
+        }
+      },
+      {
+        "name": "Haleem",
+        "watch": false,
+        "language": "English",
+        "focus": "Dark Zone gameplay & livestreams",
+        "channelType": "Multi-game",
+        "statusAsOf": "Occasional",
+        "url": "https://www.youtube.com/@Haalieim",
+        "channelId": "UC6_I7VIgipkmA93QFh9qWWQ",
+        "rss": "https://www.youtube.com/feeds/videos.xml?channel_id=UC6_I7VIgipkmA93QFh9qWWQ",
+        "latestSeen": {
+          "date": "2026-10-24",
+          "title": "The Division Resurgence Gameplay – Dark Zone Extractions & Intense Cover Shooter Action",
+          "videoId": "EuvyjG3rAtc"
+        }
+      },
+      {
+        "name": "GAMING GURU SHUBHAM",
+        "watch": false,
+        "language": "English (titles)",
+        "focus": "Android story-mission gameplay",
+        "channelType": "Multi-game",
+        "statusAsOf": "Occasional",
+        "url": "https://www.youtube.com/@GamingGuruShubham",
+        "channelId": "UCSaM-sfnnG9NTRMfFS241Ww",
+        "rss": "https://www.youtube.com/feeds/videos.xml?channel_id=UCSaM-sfnnG9NTRMfFS241Ww",
+        "latestSeen": {
+          "date": "2026-10-17",
+          "title": "The Division Resurgence - End the Freemen Invasion - Neutralize Trent \"Tin Man\" Hollister",
+          "videoId": "fPoAtbxeiZM"
+        }
+      },
+      {
+        "name": "Xenonz",
+        "watch": false,
+        "language": "English",
+        "focus": "PC performance / benchmark",
+        "channelType": "Multi-game",
+        "statusAsOf": "Occasional",
+        "url": "https://www.youtube.com/@XenonzYT",
+        "channelId": "UCytQwS9n1BH_YODWJrb7vlg",
+        "rss": "https://www.youtube.com/feeds/videos.xml?channel_id=UCytQwS9n1BH_YODWJrb7vlg",
+        "latestSeen": {
+          "date": "2026-10-18",
+          "title": "The Division Resurgence | RTX 3060 Ti + i5-11400 | GAMEPLAY | 1080p 60FPS",
+          "videoId": "zKjFcP5ZjeY"
+        }
+      },
+      {
+        "name": "KorkiGames",
+        "watch": false,
+        "language": "English (no commentary)",
+        "focus": "No-commentary free-to-play showcases",
+        "channelType": "Multi-game",
+        "statusAsOf": "Occasional",
+        "url": "https://www.youtube.com/@korkigames",
+        "channelId": "UCb5GE6aUn--OpxKsu_UnoTw",
+        "rss": "https://www.youtube.com/feeds/videos.xml?channel_id=UCb5GE6aUn--OpxKsu_UnoTw",
+        "latestSeen": {
+          "date": "2026-10-14",
+          "title": "The Division Resurgence Gameplay (No commentary) (Steam) [Free Games]",
+          "videoId": "I29BhgSRZSM"
+        }
+      },
+      {
+        "name": "LizXP Archives",
+        "watch": false,
+        "language": "English",
+        "focus": "Twitch VOD archive (variety streamer)",
+        "channelType": "Multi-game",
+        "statusAsOf": "Occasional",
+        "url": "https://www.youtube.com/@lizxparchives",
+        "channelId": "UC5etfxc1qB-6MErhvGME4HA",
+        "rss": "https://www.youtube.com/feeds/videos.xml?channel_id=UC5etfxc1qB-6MErhvGME4HA",
+        "latestSeen": {
+          "date": "2026-10-20",
+          "title": "Tom Clancy's The Division Resurgence | @LizXP",
+          "videoId": "jXnWQ1ni93s"
+        }
+      },
+      {
+        "name": "that guy geezo",
+        "watch": false,
+        "language": "English",
+        "focus": "PC/handheld gameplay impressions",
+        "channelType": "Multi-game",
+        "statusAsOf": "Occasional",
+        "url": "https://www.youtube.com/@Thatguygeezo",
+        "channelId": "UCEYh18skYUMtK_SkUd06l0A",
+        "rss": "https://www.youtube.com/feeds/videos.xml?channel_id=UCEYh18skYUMtK_SkUd06l0A",
+        "latestSeen": {
+          "date": "2026-10-21",
+          "title": "The Division Resurgence on PC is INSANE! (Gameplay)",
+          "videoId": "D6ZTHWIhmQM"
+        }
+      },
+      {
+        "name": "Gaming80LP",
+        "watch": false,
+        "language": "German",
+        "focus": "Let's Play (just started)",
+        "channelType": "Division franchise",
+        "statusAsOf": "Occasional",
+        "url": "https://www.youtube.com/@gaming80lp",
+        "channelId": "UCloJcw4uC2ykxypYBMge2TA",
+        "rss": "https://www.youtube.com/feeds/videos.xml?channel_id=UCloJcw4uC2ykxypYBMge2TA",
+        "latestSeen": {
+          "date": "2026-10-16",
+          "title": "Let´s Play the Division Resurgence | Deutsch | Part #001",
+          "videoId": "5PhyBi-PvBY"
+        }
+      },
+      {
+        "name": "KHGK-007",
+        "watch": false,
+        "language": "English",
+        "focus": "Mobile livestreams (PvE/PvP)",
+        "channelType": "Multi-game",
+        "statusAsOf": "Slowing down",
+        "url": "https://www.youtube.com/@KHGK-007",
+        "channelId": "UCwifvllaBEmP9YUHNPdV0EQ",
+        "rss": "https://www.youtube.com/feeds/videos.xml?channel_id=UCwifvllaBEmP9YUHNPdV0EQ",
+        "latestSeen": {
+          "date": "2026-10-07",
+          "title": "🔴 LIVE NOW! THE DIVISION RESURGENCE Mobile Gameplay 🔥 High Action & PvP!",
+          "videoId": "VbtojADfy1I"
+        }
+      },
+      {
+        "name": "光兔游戏视频",
+        "watch": false,
+        "language": "Chinese (Simplified)",
+        "focus": "Dark Zone & weekly bounty videos",
+        "channelType": "Multi-game",
+        "statusAsOf": "Slowing down",
+        "url": "https://www.youtube.com/@guantuvdo",
+        "channelId": "UCQCJTCoLYzxlwGaUwXx3hgg",
+        "rss": "https://www.youtube.com/feeds/videos.xml?channel_id=UCQCJTCoLYzxlwGaUwXx3hgg",
+        "latestSeen": {
+          "date": "2026-10-09",
+          "title": "The Division Resurgence : Darkzone《全境封锁：曙光》对抗区生死一秒钟！",
+          "videoId": "aayMjqGYM1w"
+        }
+      },
+      {
+        "name": "WarDaddy",
+        "watch": true,
+        "language": "English (titles)",
+        "focus": "Solo Legendary runs (Vanguard)",
+        "channelType": "Mostly Resurgence",
+        "statusAsOf": "Slowing down",
+        "url": "https://www.youtube.com/@WarDaddy91",
+        "channelId": "UCxY0D5Kv17ikrxPFnBQ3mCw",
+        "rss": "https://www.youtube.com/feeds/videos.xml?channel_id=UCxY0D5Kv17ikrxPFnBQ3mCw",
+        "latestSeen": {
+          "date": "2026-10-07",
+          "title": "The Division Resurgence Precious Cargo Legendary Solo",
+          "videoId": "1Rhfp3KS1xk"
+        }
+      },
+      {
+        "name": "xMikegTTV",
+        "watch": false,
+        "language": "English",
+        "focus": "Gearing/role livestreams (healer, tank, demo)",
+        "channelType": "Multi-game",
+        "statusAsOf": "Slowing down",
+        "url": "https://www.youtube.com/@xMikegTTV",
+        "channelId": "UCBPt91ok02ygjk8xtwVVGyA",
+        "rss": "https://www.youtube.com/feeds/videos.xml?channel_id=UCBPt91ok02ygjk8xtwVVGyA",
+        "latestSeen": {
+          "date": "2026-10-07",
+          "title": "Division Resurgence: Gearing Heals! May play DPS or Tank later!",
+          "videoId": "ZGv2qLr2SLU"
+        }
+      },
+      {
+        "name": "Funny Dictator",
+        "watch": false,
+        "language": "Hindi",
+        "focus": "Livestreams & highlight cuts",
+        "channelType": "Multi-game",
+        "statusAsOf": "Slowing down",
+        "url": "https://www.youtube.com/@funnydictatorofficial",
+        "channelId": "UCZAidb3NJwtuGDQKntm4VhA",
+        "rss": "https://www.youtube.com/feeds/videos.xml?channel_id=UCZAidb3NJwtuGDQKntm4VhA",
+        "latestSeen": {
+          "date": "2026-09-26",
+          "title": "THE DIVISION RESURGENCE LIVE 🔥 Gameplay highlights | Open World NYC",
+          "videoId": "cUknRH-XuIw"
+        }
+      },
+      {
+        "name": "Died Again Gaming",
+        "watch": true,
+        "language": "English",
+        "focus": "PC livestreams, build videos",
+        "channelType": "Division franchise",
+        "statusAsOf": "Slowing down",
+        "url": "https://www.youtube.com/@DiedAgainGaming",
+        "channelId": "UCrK99e79TwSpgElDb-r-Lpg",
+        "rss": "https://www.youtube.com/feeds/videos.xml?channel_id=UCrK99e79TwSpgElDb-r-Lpg",
+        "latestSeen": {
+          "date": "2026-10-05",
+          "title": "Catching Up Before Weekly Reset | PC | DAG LIVE | Division Resurgence",
+          "videoId": "gcoI2lCW6mc"
+        }
+      },
+      {
+        "name": "bobz highlightz",
+        "watch": true,
+        "language": "English",
+        "focus": "Lone Wolf leaderboard runs (Global Top 10), solo Legendary",
+        "channelType": "Mostly Resurgence",
+        "statusAsOf": "Slowing down",
+        "url": "https://www.youtube.com/@bobzhighlightz",
+        "channelId": "UCjsu4o-e5BkA41TnzTssegQ",
+        "rss": "https://www.youtube.com/feeds/videos.xml?channel_id=UCjsu4o-e5BkA41TnzTssegQ",
+        "latestSeen": {
+          "date": "2026-10-03",
+          "title": "The Division Resurgence - Solo Legendary - On the Radio - Vanguard Commando",
+          "videoId": "RfoGqme8t6Q"
+        }
+      },
+      {
+        "name": "Põe Pra 2 Co-op Gaming",
+        "watch": false,
+        "language": "Portuguese (BR) / no commentary",
+        "focus": "Co-op no-commentary gameplay",
+        "channelType": "Multi-game",
+        "statusAsOf": "Slowing down",
+        "url": "https://www.youtube.com/channel/UCQ05ziqtAGawBhrO7ba1Jpw",
+        "channelId": "UCQ05ziqtAGawBhrO7ba1Jpw",
+        "rss": "https://www.youtube.com/feeds/videos.xml?channel_id=UCQ05ziqtAGawBhrO7ba1Jpw",
+        "latestSeen": {
+          "date": "2026-09-26",
+          "title": "The Division Resurgence - Co-Op Gameplay (No Commentary)",
+          "videoId": "LAir-zYpRd8"
+        }
+      },
+      {
+        "name": "CANAL73 GAMER",
+        "watch": false,
+        "language": "Portuguese (BR)",
+        "focus": "\"Is it still worth playing?\" review",
+        "channelType": "Multi-game",
+        "statusAsOf": "Slowing down",
+        "url": "https://www.youtube.com/@CANAL73GAMER",
+        "channelId": "UCpV29cIoll08xOH5UiqyHzQ",
+        "rss": "https://www.youtube.com/feeds/videos.xml?channel_id=UCpV29cIoll08xOH5UiqyHzQ",
+        "latestSeen": {
+          "date": "2026-09-30",
+          "title": "VALE A PENA JOGAR THE DIVISION RESURGENCE AINDA ?",
+          "videoId": "uOSD2kz4aKA"
+        }
+      },
+      {
+        "name": "RebornH LifeAfter",
+        "watch": true,
+        "language": "English",
+        "focus": "Weapon comparisons, Legendary runs",
+        "channelType": "Resurgence-dedicated",
+        "statusAsOf": "Slowing down",
+        "url": "https://www.youtube.com/@rebornhlifeafter3691",
+        "channelId": "UCPNocL8KedAe2qxv0vlCS7A",
+        "rss": "https://www.youtube.com/feeds/videos.xml?channel_id=UCPNocL8KedAe2qxv0vlCS7A",
+        "latestSeen": {
+          "date": "2026-09-26",
+          "title": "Is the KSG still good after the nerf? - Take the castle Legendary - The Division Resurgence",
+          "videoId": "Bg7K3wYu1uA"
+        }
+      }
+    ]
+  }
+}
