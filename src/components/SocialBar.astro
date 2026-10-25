@@ -238,7 +238,8 @@ const heading = headings[index % headings.length];
   }
   .social-bar__links {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    /* three exactly equal thirds: with plain 1fr a column can't shrink below its label, so "YouTube" got wider */
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 10px;
     width: 100%;
     max-width: 480px;
@@ -247,10 +248,12 @@ const heading = headings[index % headings.length];
   /* Base button style */
   .social-btn {
     display: flex;
+    flex-wrap: wrap; /* with very large text settings the label drops under its icon instead of spilling out */
     align-items: center;
     justify-content: center;
-    gap: 8px;
-    padding: 12px 16px;
+    gap: 4px 6px;
+    padding: 12px 8px; /* the content is centred, so the side padding only has to leave room for "YouTube" */
+    min-width: 0;
     border-radius: 8px;
     font-family: var(--font-heading);
     font-weight: 700;
@@ -305,24 +308,23 @@ const heading = headings[index % headings.length];
     box-shadow: 0 4px 16px rgba(255,0,0,0.35);
   }
 
-  /* Narrowest phones: tighter buttons so the three still fit side by side at 320px */
+  /* Under 360px a third is too narrow for an icon beside "YouTube": the icon sits above the label on all three */
   @media (max-width: 22.49em) {
     .social-bar__links { gap: 8px; }
-    .social-btn { padding-inline: 8px; gap: 6px; }
+    .social-btn { flex-direction: column; padding: 10px 8px; }
   }
 
   /* Tablet and up: single row */
   @media (min-width: 35em) {
+    /* one centred row of three equal buttons */
     .social-bar__links {
-      display: flex;
-      align-items: center;
+      grid-template-columns: repeat(3, 10rem);
       justify-content: center;
-      gap: 10px;
-      flex-wrap: wrap;
       max-width: none;
     }
     .social-btn {
       padding: 10px 20px;
+      gap: 8px;
     }
   }
 
