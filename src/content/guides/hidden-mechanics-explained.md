@@ -42,7 +42,7 @@ This is the long-form follow-up to every player who has ever typed "is my build 
 
 The answer is almost never "your gear is bad." The answer is that the game ships with at least seven systems that quietly decide whether you feel powerful or feel useless, and the in-game tooltips don't mention any of them. Not one. It's like buying a car that comes with an engine manual written entirely in emoji.
 
-We're pulling this together from community testing, our own build sessions, and hundreds of hours of endgame play. Several of these mechanics are also the subject of AgentHuntzman's guide videos from April and May 2026, which explain them better than the game does, so we credit him wherever his examples shaped ours. Every claim is cited at the bottom. Where we're confident, we say so. Where the community is still testing, we hedge.
+We're pulling this together from community testing, our own build sessions, and hundreds of hours of endgame play. Several of these mechanics are also the subject of AgentHuntzman's guide videos from April and May 2026, which go into more depth than the in-game tooltips, so we credit him wherever his examples shaped ours. Every claim is cited at the bottom. Where we're confident, we say so. Where the community is still testing, we hedge.
 
 The seven mechanics, ranked by how much they'll change your game:
 
@@ -77,7 +77,7 @@ The math, simplified:
 
 The character screen DPS does not show any of this. It calculates one bullet at one base damage value. It doesn't know that your build wants to trigger Torrential Downpour as often as humanly possible.
 
-AgentHuntzman's version of this, from his May 2 video on mechanics the game never explains: on a hit-based build, "your weapon stops being just a gun, and becomes a triggered engine." It's why he runs a P90 on his Scout build. He adds the other half of the lesson: if a build feeds on hits, playing it cautiously works against it, because every time you stop shooting, your stacks and buffs start dropping.
+AgentHuntzman's version of this, from his May 2 video ("The Game NEVER Properly Explains These Mechanics"): on a hit-based build, "your weapon stops being just a gun, and becomes a triggered engine." It's why he runs a P90 on his Scout build. He adds the other half of the lesson: "If you stop shooting, your build actually becomes weaker." (His May 6 video puts it another way: "playing too cautiously works against you.")
 
 **The takeaway:** Before you pick a weapon, ask what your build wants from your weapon. If the answer is "land hits to trigger procs and stacks," pick the highest-RPM weapon in that weapon class. If the answer is "deliver one large damage instance per shot," then yes, pick the hard-hitter. Most builds want the first answer. That's why the P90 shows up in builds where it has no business being based on raw damage alone.
 
@@ -115,7 +115,7 @@ Cooldown Reduction (CDR) follows diminishing returns, at least according to comm
 
 Here's the practical example that matters:
 
-Say Scanning Pulse has a 15-second base cooldown and a 17-second duration at your current Skill Duration. (That's not a made-up example: AgentHuntzman's April Scout build showed Scanning Pulse at 17.44 seconds of duration on a 14.94-second cooldown, and Smart Cover at 41.20 seconds on 35.59.) You already have permanent uptime. The skill comes back before it even expires. Stacking more CDR at this point saves you... nothing. The skill was already ready before you needed it.
+Say Scanning Pulse has a 15-second base cooldown and a 17-second duration at your current Skill Duration. (Close to a real one: AgentHuntzman's April Scout build sheet showed Scanning Pulse at 17.44 seconds of duration on a 14.94-second cooldown after his cooldown recovery, and Smart Cover at 41.20 seconds on 35.59.) You already have permanent uptime. The skill comes back before it even expires. Stacking more CDR at this point saves you... nothing. The skill was already ready before you needed it.
 
 Every CDR point spent past your "permanent uptime breakpoint" is a stat point that could have gone into Skill Duration (making the skill stronger while it's up), Skill Intensity (making it hit harder), or Skill Crit Chance (making it crit more often).
 
@@ -190,7 +190,7 @@ A T1 Mechanical Expert mask with perfect Engineering core and Skill CDR rolls wi
 
 Players who chase Power Score end up in mismatched loadouts full of T2 gear with garbage rolls. They technically meet the Power Score "requirement" for Legendary content. They then get absolutely destroyed in Legendary content because their build has no identity, no synergy, and no focused stat scaling. They blame the difficulty. They should blame the Power Score.
 
-AgentHuntzman's May 15 video on endgame mistakes says it bluntly: "a properly optimized low-score build can outperform a random high score setup." He also lists the habit that wastes the most materials: switching classes every few days, which resets your farming priorities and your gear needs each time. He says he has more wasted recalibrations than he can count.
+AgentHuntzman's May 15 video on endgame mistakes says it bluntly: "a properly optimized low-score build can outperform a random high score setup." He also calls switching classes every few days "probably one of the biggest progression traps in the entire game right now," because your farming priorities and gear needs change each time. He says he has more wasted recalibrations than he can count.
 
 **The diagnostic question:** If someone asked you "what does your build do?", could you answer in one sentence? "I stack Engineering and convert it into team weapon damage through Smart Cover" is a build identity. "I have high Power Score" is not.
 

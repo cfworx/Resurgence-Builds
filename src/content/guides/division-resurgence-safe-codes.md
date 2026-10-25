@@ -11,7 +11,7 @@ imageAlt: "An encrypted crate code lock next to a Missing poster clue in Divisio
 shareTitle: "Stop typing wrong safe codes"
 shareText: "Every verified encrypted crate code in Division Resurgence. Three are randomized per character and most guides get them wrong."
 videoId: "ljFeKCV0ZII"
-videoTitle: "Safe Codes Locations Walkthrough"
+videoTitle: "All 21 Found Encrypted Crates walkthrough"
 videoChannel: "GooHootGaming"
 faqs:
   - question: "How many safes are there in Division Resurgence?"

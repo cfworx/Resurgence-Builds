@@ -31,6 +31,9 @@ const wordCount = guide.body ? guide.body.replace(/<[^>]+>/g, ' ').trim().split(
   faqs={guide.data.faqs || []}
   sources={guide.data.sources || []}
   howTo={guide.data.howTo}
+  videoId={guide.data.videoId}
+  videoTitle={guide.data.videoTitle}
+  videoChannel={guide.data.videoChannel}
   wordCount={wordCount}
 >
   <Content />

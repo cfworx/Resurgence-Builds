@@ -11,7 +11,7 @@ imageAlt: "Division Resurgence damage type weakness color bars above enemy healt
 shareTitle: "You're Ignoring The Most Useful UI Element"
 shareText: "There's a colored bar above every elite enemy telling you what damage type to use. Most players have 80 hours in and never noticed it."
 videoId: "Mt3E4A0l0Zk"
-videoTitle: "SHD Agent Manual: Damage Types Explained"
+videoTitle: "SHD Manual: How Progression ACTUALLY Works | The Division Resurgence"
 videoChannel: "AgentHuntzman"
 faqs:
   - question: "What do the colored bars above enemy health mean in Division Resurgence?"

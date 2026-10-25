@@ -135,12 +135,14 @@ const howToLd = howTo ? {
     )}
 
     {videoId && (
-      <YouTubeEmbed
-        videoId={videoId}
-        title={videoTitle || `${title} — Video Guide`}
-        description={description}
-        channelName={videoChannel}
-      />
+      <div class="content-width">
+        <YouTubeEmbed
+          videoId={videoId}
+          title={videoTitle || `${title} — Video Guide`}
+          description={description}
+          channelName={videoChannel}
+        />
+      </div>
     )}
 
     {tocItems.length > 0 && (
