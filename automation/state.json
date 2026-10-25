@@ -1,7 +1,7 @@
 {
   "_readme": "Memory for the daily content run. See AUTOMATION.md. Add every source item you evaluate (published or not) so the next run skips it. Dates are UTC.",
   "lastRun": "2026-10-25",
-  "lastRunSummary": "2026-10-25 (3 runs). No new post. Run 3: WebFetch was blocked for every direct source URL by an unanswered permission prompt (PROVENANCE_REQUIRED), so only WebSearch checks ran: nothing newer than state on Steam, Help Center, Ubisoft news, news.ubisoft.com, X, Reddit, trailers, Twitch Drops or outlets. YouTube RSS still robots_disallowed. Halloween lead still unverified. Numbers not refreshed this run (earlier run today has them).",
+  "lastRunSummary": "2026-10-25 (4 runs). Run 4 (owner follow-up): Steam announcements read via RSS fallback, nothing newer than 2026-10-19 Lethal Stinger Lichen. Halloween lead re-checked against Steam RSS, official site and X search: still unverified. No new post. Run 3 earlier had WebFetch blocked by an unanswered permission prompt (search-only).",
   "season": {
     "current": "Season 2 Phase 2",
     "liveSince": "2026-09-16",
@@ -25,9 +25,9 @@
       "2026-06-05 Wishlist Available Now!"
     ],
     "lastChecked": "2026-10-25",
-    "status": "unreachable",
-    "failStreak": 1,
-    "note": "Steam News API is robots_disallowed for WebFetch and the news hub renders with JS, so neither can be read; WebSearch showed nothing newer than state. Run 3 (2026-10-25 ~14:46 UTC): WebFetch refused every non-search URL with a permission prompt nobody could answer (PROVENANCE_REQUIRED) in the unattended run; not re-read."
+    "status": "ok",
+    "failStreak": 0,
+    "note": "Steam RSS feed (store.steampowered.com/feeds/news/app/3749720/) reads fine as of run 4, 2026-10-25: newest item 2026-10-19 Lethal Stinger Lichen & New Speedrun Challenge. The feed omits the PC Gamer press items. Community announcements page renders without content; News API robots_disallowed."
   },
   "helpCenterPatchNotes": {
     "section": "https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/section/539-patch-notes/",
@@ -301,7 +301,7 @@
       "lastSeen": "Season banner: 'Season 2: The Call'",
       "status": "ok",
       "failStreak": 0,
-      "note": "Run 3 (2026-10-25 ~14:46 UTC): WebFetch refused every non-search URL with a permission prompt nobody could answer (PROVENANCE_REQUIRED) in the unattended run; not re-read. lastSeen kept from earlier run today."
+      "note": "Run 4 (2026-10-25): re-read OK, banner \"New season: The Call\" (Season 2), no Halloween mention."
     },
     "ubisoft-youtube": {
       "lastChecked": "2026-10-25",
@@ -337,7 +337,7 @@
       "source": "Steam discussions 'Halloween event' thread + toptechnews.de 'Ubisoft feiert Halloween' (2026-10-24)",
       "claim": "A Halloween event may be coming to Resurgence",
       "status": "unverified",
-      "note": "No official Resurgence Halloween announcement found (searched). Re-check official channels next run. Extra run 2026-10-25: searches only surfaced The Division 2's Red Moon Unleashed Halloween event (a different game, not Resurgence); still nothing official for Resurgence. Run 3: Halloween search only returned The Division (2016) Halloween Event 2025; still nothing official for Resurgence."
+      "note": "No official Resurgence Halloween announcement found (searched). Re-check official channels next run. Extra run 2026-10-25: searches only surfaced The Division 2's Red Moon Unleashed Halloween event (a different game, not Resurgence); still nothing official for Resurgence. Run 3: Halloween search only returned The Division (2016) Halloween Event 2025; still nothing official for Resurgence. Run 4 (2026-10-25): Steam RSS (newest 2026-10-19) and official website checked; no Halloween event mentioned. Search for TheDivMobile Halloween found nothing. Still unverified."
     }
   ],
   "leadsReadme": "Claims found only in non-official sources, newest first (keep the last 50): {date, source, claim, status: unverified | verified | dismissed, note}. Re-check unverified leads against official sources on later runs.",
