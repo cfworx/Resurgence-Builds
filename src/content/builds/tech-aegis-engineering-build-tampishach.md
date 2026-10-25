@@ -36,7 +36,7 @@ faqs:
     answer: "No. Resurgence is free-to-play with optional convenience and cosmetic purchases. Every piece of gear in this build was earned through gameplay. Spending money can speed up the grind, but it cannot buy positioning, game sense, or the knowledge to stack the right talents. Your dad reflexes are still the bottleneck."
 ---
 
-**By RapidF5 (via Tampishach) ·** Patch 1.1.2.2 ·
+**By RapidF5 (via Tampishach) ·** Patch 1.1.2.2
 
 ## What This Build Does
 

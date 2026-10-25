@@ -38,7 +38,7 @@ faqs:
 
 ---
 
-**By RapidF5 (via Nadie) ·** Patch 1.1.2.2 ·
+**By RapidF5 (via Nadie) ·** Patch 1.1.2.2
 
 ## What This Build Does
 

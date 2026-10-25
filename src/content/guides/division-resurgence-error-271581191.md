@@ -48,7 +48,7 @@ faqs:
     answer: "No. Division Resurgence is the mobile-first spin-off (it's also on PC via Steam and Ubisoft Connect now) with its own error codes. As far as we've seen, 271581191 is a mobile download error; on PC the game installs through Steam or Ubisoft Connect instead. The Division and The Division 2 use entirely different error code formats, so their fixes won't help you here."
 ---
 
-**By RapidF5 ·** Written during Season 1 ·
+**By RapidF5 ·** Written during Season 1
 
 > Division Resurgence error **271581191** means *"Dynamic batch download failed. Please check the network environment or restart the client."* It hits during the initial install or any major patch download. The good news: it's almost always a network-routing issue, not a corrupted install. Below are the five fixes that resolve it for the vast majority of players.
 

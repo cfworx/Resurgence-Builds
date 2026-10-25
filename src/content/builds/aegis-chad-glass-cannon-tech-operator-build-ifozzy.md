@@ -35,7 +35,7 @@ faqs:
     answer: "No. Every piece in this build drops from gameplay. The Warlord comes from the DZ vendor. Brains Over Brawn comes from weekly bounties. All gear sets are standard loot pool drops. The only thing money cannot buy is the talent roll grind and the game sense to not stand in the open with Glass Cannon active."
 ---
 
-**By RapidF5 (via LtFoe) ·** Patch 1.1.2.2 ·
+**By RapidF5 (via LtFoe) ·** Patch 1.1.2.2
 
 ## What This Build Does
 

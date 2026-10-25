@@ -50,7 +50,7 @@ faqs:
     answer: "No. Division Resurgence is the mobile-first spin-off (also on PC via Steam and Ubisoft Connect now) with its own error codes, and most 6000010 reports we've seen come from mobile. The Division and The Division 2 use entirely different error code formats, so their fixes won't help you here."
 ---
 
-**By RapidF5 ·** Written during Season 1, updated for Season 2 · Phase 2 (extended) ·
+**By RapidF5 ·** Written during Season 1, updated for Season 2 · Phase 2 (extended)
 
 > [!INFO] Update (October 2026)
 > Since this was written, the game launched on Steam (August 5, 2026) alongside Ubisoft Connect, so we added a short PC section below. Ubisoft also now runs an official [bug reporter](https://www.ubisoft.com/en-us/game/the-division/the-division-resurgence/bug-reporter/issues), which its Help Center points PC players to. Nothing in the Season 2 patch notes changes the mobile fix flow.

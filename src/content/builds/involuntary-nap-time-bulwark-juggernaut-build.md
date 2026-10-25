@@ -37,7 +37,7 @@ faqs:
     answer: "The Pummeling Shield OS Protocol stuns every 10 hits while you have Extra Health. Backup Protection on the PPSH-41 grants Extra Health on weapon swap, and Swift Taunt on the FAMAS grants Extra Health when hitting 3 enemies. The 900 RPM fire rate on both weapons used to mean multiple stuns per magazine. Since the June 26, 2026 hotfix the stun has a 10-second cooldown and lasts 1.5 seconds, so it's one nap per 10 seconds, max. Still a nap. Just a shorter one with a waiting list."
 ---
 
-**By RapidF5 (via Nadie) ·** Patch 1.2 ·
+**By RapidF5 (via Nadie) ·** Patch 1.2
 
 ## What This Build Does
 

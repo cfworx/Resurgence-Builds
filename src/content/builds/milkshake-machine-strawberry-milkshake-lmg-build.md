@@ -34,7 +34,7 @@ faqs:
     answer: "Mostly not for this build. Every piece of The Milkshake Machine except the gun drops from in-game content. Strawberry Milkshake was the free exotic on the Season 1 Phase 2 Classified Ops Pass; if you missed it, Season 2 Phase 2's Exotic Sealed Caches are the official route to previous-season exotics. The build scales through gear rolls and skill mod combo sets, not premium currency."
 ---
 
-**By RapidF5 ·** Patch 1.1.2.2 ·
+**By RapidF5 ·** Patch 1.1.2.2
 
 > 118 rounds. ~37% Multi-Shot. In Sync double-dip from bullet one. Glass Cannon justified by Swift Taunt. Dominating Presence rewarding you for standing in the worst possible spot. We call it **The Milkshake Machine** because it shreds enemies the way a blender shreds ice - and because naming a build "Strawberry Milkshake Optimal" has the same energy as naming your fantasy football team "Team 1."
 
