@@ -69,7 +69,7 @@ Vanguard is never the wrong answer. It's also rarely a *surprising* answer. If y
 **Builds on the site:**
 - [AgentHuntzman's Leaderboard Ranking Vanguard Support Build](/builds/agenthuntzmans-leaderboard-ranking-vanguard-support-build/) - the Recon support build that makes everyone else's numbers go up
 - [Milkshake Machine](/builds/milkshake-machine-strawberry-milkshake-lmg-build/) - Strawberry Milkshake LMG DPS on Dominating Presence (whose max scaling Season 2 Phase 2 reduced)
-- [Any-Weapon Commando](/builds/any-weapon-commando-beginner-vanguard-build-tiktokandy/) - TikTokAndy's beginner Commando build that works with whatever gun you have, and soloes Heroic Chinatown
+- [Any-Weapon Commando](/builds/any-weapon-commando-beginner-vanguard-build-tiktokandy/) - TikTokAndy's beginner Commando build that works with whatever gun you have, and solos Heroic Chinatown
 - [Misdirection Double Barrel Commando](/builds/misdirection-double-barrel-commando-build-tiktokandy/) - TikTokAndy's Season 2 shotgun build, taken solo into Legendary Precious Cargo
 
 ---
@@ -262,7 +262,7 @@ For solo PvE, **Vanguard** and **Demolitionist** are the path of least resistanc
 ### Can I switch specializations?
 Yes. You can switch your active specialization freely. Your focus progress and chipset unlocks are tied to the individual specialization, not a global character level. Switching specs doesn't delete your progress on the original.
 
-Leveling a second one isn't wasted time, either. Oldfartsgaming capped Demolitionist, then started running his dailies on Tech Operator and Bulwark, and says the extra levels give skill points and push up your SHD level. By the time he recorded his October 11 video he had almost every node on his Demolitionist tree, so your early point choices aren't a life sentence. More in our [endgame tips](/guides/division-resurgence-endgame-tips/).
+Leveling a second one isn't wasted time, either. Oldfartsgaming capped Demolitionist, then started running his dailies on Tech Operator and trying out Bulwark, and says the extra levels give skill points and push up your SHD level. By the time he recorded his October 11 video he had almost every node on his Demolitionist tree, so your early point choices aren't a life sentence. More in our [endgame tips](/guides/division-resurgence-endgame-tips/).
 
 ### What is the best specialization for beginners in The Division Resurgence?
 **Vanguard**. It has the clearest damage loop, the most intuitive playstyle, and plenty of builds available to copy. You won't paint yourself into a corner and you'll understand the game's combat fundamentals before you start optimizing a harder spec. Whatever you pick, the opening hours are friendlier than they used to be: Season 2 Phase 2 reduced enemy health in the tutorial and in your first playthrough of Main Missions 1 to 3. For a first build, TikTokAndy's [Any-Weapon Commando](/builds/any-weapon-commando-beginner-vanguard-build-tiktokandy/) is made for whatever gun you happen to have.

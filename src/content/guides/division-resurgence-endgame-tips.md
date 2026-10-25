@@ -144,7 +144,7 @@ GGReborn's other gear mistakes deserve a line each: judging gear by level and ra
 
 ## Rule 8: learn the missions you'll farm
 
-Some missions you'll run dozens of times, so a few creator notes go a long way. These come from TikTokAndy's runs; the full routes are on the build pages linked below.
+Some missions you'll run dozens of times, so a few creator notes go a long way. Most of these come from TikTokAndy's runs (the Lone Wolf notes add Ubisoft's patch notes and GGReborn's tests); the full routes are on the build pages linked below.
 
 ### Chinatown (Heroic)
 
@@ -158,7 +158,7 @@ He calls about 6,300 Armor and 100,000 Health the bare minimum to solo it. His b
 
 ### Precious Cargo (Legendary)
 
-TikTokAndy calls Precious Cargo the final mission in the game and, from his experience, the one that pays out the most gear, a lot of it T2. He soloed it on Legendary in October:
+TikTokAndy calls Precious Cargo the final mission in the game and, from his experience, the one that pays out the most gear, a lot of it T2. His solo Legendary run went up on October 6:
 
 - **Snipers first, then the Grenadier.**
 - **Save Tactical Link for the second wave,** which comes out of the door on your left.
@@ -170,7 +170,7 @@ For the finale his two videos disagree: solo with a shotgun he fights from a noo
 ### Lone Wolf Challenge
 
 - **The format:** TikTokAndy counts 20 floors with up to six stars each, 120 stars in all. Officially, it refreshes every three weeks (Ubisoft fixed the schedule in [patch 1.2.1](/patch-notes/patch-1-2-1/)), and since a [June 26 hotfix](/news/server-hotfix-june-26-2026/) the timer starts as soon as an enemy takes damage, even if the doors are still closed.
-- **There's a leaderboard:** TikTokAndy says his floor 20 run placed third in NA, and he didn't know the leaderboard existed until someone told him.
+- **There's a leaderboard:** TikTokAndy says his floor 20 run (his video calls it "Lone Star Stage 20") placed third in NA, and he didn't know the leaderboard existed until someone told him.
 - **His floor 20 tip:** the boss sometimes parks at one spot (about one run in ten, he estimates). When it does, crouch on the boxes beside it, go for headshots, and save Tactical Link for the wave that follows.
 - **A good test bench:** GGReborn uses Lone Wolf runs to compare builds, which is how he tested stat setups and OS Protocols on our [Tactical Pharma Season 2](/builds/tactical-pharma-season-2-build-ggreborn/) page.
 
@@ -200,3 +200,6 @@ The Heroic Hostile Nest with a named boss is the mod farm in our [mod farming gu
 - [TikTokAndy: 11 Kill P90/Lightweight M4 Solo Manhunt (YouTube, September 27, 2026)](https://www.youtube.com/watch?v=oJ_iNQqTL9g)
 - [TikTokAndy: Lone Star Stage 20 Complete (YouTube, October 2, 2026)](https://www.youtube.com/watch?v=9nQ-jGnc7gU)
 - [TikTokAndy: Precious Cargo Legendary Difficulty But I'm Solo (YouTube, October 6, 2026)](https://www.youtube.com/watch?v=D3yrRSUwhq0)
+- [TikTokAndy: Most Overpowered Team Healer Build, Striker + Aegis (YouTube, October 10, 2026)](https://www.youtube.com/watch?v=VHKfmW4BtEk)
+- [GGReborn: How Stats REALLY Work, Testing 3 Builds (YouTube, October 22, 2026)](https://www.youtube.com/watch?v=f1q44KbdS6g)
+- [GGReborn: Which OS Protocol Is BEST? Testing 4 Protocols (YouTube, October 23, 2026)](https://www.youtube.com/watch?v=Kz9YlTUl_1s)

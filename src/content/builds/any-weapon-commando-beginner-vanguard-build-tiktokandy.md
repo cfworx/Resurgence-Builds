@@ -20,11 +20,11 @@ faqs:
   - question: "What is a good beginner Vanguard build in Division Resurgence?"
     answer: "TikTokAndy's any-weapon Commando is a solid template: 4-piece Fury Strike plus 2-piece Phalanx Attack, Injured Concealment II on the body armor, Siege II on the backpack, Augmented Lethality as the OS Protocol, and Commando, Optimized Armor and Targeted Surveillance on the skills. The idea is to stack Weapon Critical Hit Chance so Tactical Link takes you close to 100%. He ran it about two weeks into the game, and later moved on to his Double Barrel build once he found the shotgun."
   - question: "Should beginners level more than one specialization?"
-    answer: "Not at first, says TikTokAndy. Unless you're spending a lot of money, stick to one specialization, farm chips for it and master it, then farm for your second build while you play the first. Spreading your materials across several builds early just makes all of them worse."
+    answer: "Not at first, says TikTokAndy. Unless you're spending a lot of money, stick to one specialization, farm chips for it and master it, then farm for your second build while you play the first, instead of making the second build first and farming with it."
   - question: "How do you get 100% crit chance on Vanguard?"
-    answer: "TikTokAndy's ladder: about 60% Weapon Critical Hit Chance on the sheet, around +10% while Scanning Pulse with Targeted Surveillance is up, then +20% from Tactical Link and another +10% from a Commando talent during Tactical Link. That's 100%, which is also why he started swapping the Commando combo set (another +10.20% per kill) for Bugle Call: past 100%, extra crit chance does nothing."
+    answer: "TikTokAndy's ladder: about 60% Weapon Critical Hit Chance on the sheet, around +10% while Scanning Pulse with Targeted Surveillance is up, then +20% from Tactical Link and another +10% from a talent he shows on screen that works during Tactical Link. That's 100%, which is also why he started swapping the Commando combo set (another +10.20% per kill or assist) for Bugle Call: past 100%, extra crit chance does nothing."
   - question: "Commando or Bugle Call on Tactical Link?"
-    answer: "Commando early, Bugle Call once your crit chance is high, per TikTokAndy. Commando adds +10.20% Weapon Critical Hit Chance for 10 seconds per kill during Tactical Link; Bugle Call gives +14.40% Rate of Fire, Damage Reduction and Movement Speed for 15 seconds when you deploy Tactical Link. He thinks Bugle Call might be the better pick for any build once the crit is covered."
+    answer: "Commando early, Bugle Call once your crit chance is high, per TikTokAndy. Commando adds +10.20% Weapon Critical Hit Chance for 10 seconds per kill or assist during Tactical Link; Bugle Call gives +14.40% Rate of Fire, Damage Reduction and Movement Speed for 15 seconds when you deploy Tactical Link. He goes further than that, too: 'I think bugle call is actually a better idea for any build.'"
   - question: "Targeted Surveillance, Field Supplies or Optimal Awareness?"
     answer: "TikTokAndy ranks Targeted Surveillance first, Field Supplies second and Optimal Awareness third for this build. Targeted Surveillance gives Pulsed allies Weapon Critical Hit Chance equal to 3.60% of your Engineering, so it gets better the more Engineering you carry; he says it beats Optimal Awareness once you're at around 300 Engineering."
   - question: "Can this build solo Heroic Chinatown?"
@@ -35,7 +35,7 @@ faqs:
 
 > Build credit: [**TikTokAndy**](https://www.youtube.com/watch?v=vtsTpS78aTA) for the walkthrough (September 19, 2026) and his [solo Heroic Chinatown run](https://www.youtube.com/watch?v=6dGaisNKCyE) with an updated version (September 24, 2026). This is the build he ran before he found a Double Barrel shotgun; his later build is our [Misdirection Double Barrel Commando](/builds/misdirection-double-barrel-commando-build-tiktokandy/). Every stat below is his own reading unless we say it came from our database. We haven't re-tested this build ourselves.
 
-This is a Vanguard Commando DPS build that doesn't care which gun you have. The engine is **Weapon Critical Hit Chance**: get the sheet to about 60%, let Scanning Pulse and Tactical Link stack the rest, and spend most fights critting. **Fury Strike 4pc** turns all those crits into damage, **Injured Concealment II** turns getting shot into damage, and **Siege II** and **Augmented Lethality** keep you alive when the room fills up.
+This is a Vanguard Commando DPS build that doesn't care which gun you have. The engine is **Weapon Critical Hit Chance**: get the sheet to about 60%, let Scanning Pulse and Tactical Link stack the rest, and spend most fights critting. **Fury Strike 4pc** turns all those crits into damage, **Injured Concealment II** turns getting shot into damage, **Siege II** keeps you alive when the room fills up, and **Augmented Lethality** turns the crowd into extra Weapon Damage.
 
 TikTokAndy is upfront about the downsides: it's "very squishy," and in his words "really slow." His other advice is the most beginner-friendly line in the video: "you don't need to be perfect in this game, you just need to have something you're working toward."
 
@@ -73,9 +73,9 @@ TikTokAndy's math from his September 24 video, step by step:
 |---|---|---|
 | Out of combat | about 60% | Gear and mod rolls. He says he wouldn't go much higher than his 62%. |
 | Scanning Pulse up | about 70% | **Targeted Surveillance**: Pulsed allies get Weapon Critical Hit Chance equal to 3.60% of your Engineering for 10 seconds (our database). He says that's "over 12%" at around 400 Engineering. |
-| Tactical Link up | about 100% | Tactical Link's own +20%, plus a Commando talent he shows on screen that adds another 10% during Tactical Link |
+| Tactical Link up | about 100% | Tactical Link's own +20%, plus a talent he shows on screen that adds another 10% during Tactical Link |
 
-At that point the **Commando** combo set (+10.20% Weapon Critical Hit Chance for 10 seconds per kill during Tactical Link, our database) is mostly wasted, which is why he was switching Tactical Link to **Bugle Call** (+14.40% Rate of Fire, Damage Reduction and Movement Speed for 15 seconds on deploy). His advice for newer players: start on Commando while your crit chance is low, and move to Bugle Call once the ladder reaches the top without it. He also notes that 60 to 70% crit chance all the time matters, because Tactical Link isn't always up.
+At that point the **Commando** combo set (+10.20% Weapon Critical Hit Chance for 10 seconds per kill or assist during Tactical Link, our database) is mostly wasted, which is why he was switching Tactical Link to **Bugle Call** (+14.40% Rate of Fire, Damage Reduction and Movement Speed for 15 seconds on deploy). His advice for newer players: start on Commando while your crit chance is low, and move to Bugle Call once the ladder reaches the top without it. He also notes that 60 to 70% crit chance all the time matters, because Tactical Link isn't always up.
 
 ---
 
@@ -111,10 +111,10 @@ His September 24 pieces (he describes two of them as kneepads, so we can't say w
 
 **The two talents (our database, base versions; his readings for rank II):**
 
-- **Injured Concealment:** hits taken grant +1.80% Damage for 10 seconds, up to 10 stacks. He reads Injured Concealment II as up to +25% after 10 hits, which is the "I'll kill you in one clip or die trying" talent.
-- **Siege:** Extra Health equal to 37.50% Max Health for 15 seconds when 2 or more enemies are within 20 meters, 30-second cooldown. His Siege II reads 52%, and he says it took him from about 81,000 to about 120,000 Health when it popped. If you want a PvP version, he suggests swapping it for the backpack talent that heals you when you drop below 20% Health (Emergency Measures in our database).
+- **Injured Concealment:** hits taken grant +1.80% Damage for 10 seconds, up to 10 stacks. He reads Injured Concealment II as up to +25% after 10 hits, and pitches it as the "super glass cannon-y" pick: "I'm gonna kill you in one clip and that's it."
+- **Siege:** Extra Health equal to 37.50% Max Health for 15 seconds when 2 or more enemies are within 20 meters, 30-second cooldown. His Siege II reads 52%, and on September 19 he worked out that it would take his roughly 81,000 Health to about 120,000 when it procs. If you want a PvP version, he suggests swapping it for the backpack talent that heals you when you drop below 20% Health (Emergency Measures in our database).
 
-**Stats to chase:** Firepower first, then Critical Hit Chance, Critical Hit Damage, Multi-Shot Chance and Headshot Damage. His mod rule: any mod with Critical Hit Chance or Weapon Damage goes straight to level 20 and gets locked. Armor mods are fine too. And slot your **Tactical Augmentation Manuals**, which he calls "the easiest stat gain you're ever gonna get," then check them again every time you change gear, because he forgot once and paid for it.
+**Stats to chase:** Firepower first, then Critical Hit Chance, Critical Hit Damage, Multi-Shot Chance and Headshot Damage. His mod rule: any mod with Critical Hit Chance or Weapon Damage goes straight to level 20 and gets locked. Armor mods are fine too. And slot your **Tactical Augmentation Modules** ("manuals" in his video), which he calls "the easiest stat gain you're ever gonna get," then check them again every time you change gear, because he forgot once and paid for it.
 
 ---
 
@@ -132,7 +132,7 @@ The build works with any weapon because the crit, damage and survival all come f
 | **Precise Crit** | 10 hits on an enemy grant +15% Weapon & Skill Critical Damage to all allies within 40 meters for 10 seconds | Helps the whole team, not just you |
 | **Performer** | +18% Weapon Damage on enemies within 20 meters, -6% beyond | He reads Performer II as +25%, and says it's "why the gun is melting like it is" |
 | **Strained** | Firing for 0.5 seconds grants Critical Hit Damage for 5 seconds, up to 3 stacks (10% per stack at tier 1, 14% at tier 2, after a Season 2 Phase 2 tooltip fix) | On his ACR |
-| **Swift Taunt** | Hitting 3 enemies within 5 seconds taunts nearby enemies and grants Extra Health equal to 25% Max Health | "More of a PvE talent" |
+| **Swift Taunt** | Hitting 3 enemies within 5 seconds taunts nearby enemies and grants Extra Health equal to 25% Max Health for 10 seconds | "More of a PvE talent" |
 | **Unhinged** | +18% Weapon Damage, -10% Stability and Accuracy | On a laser like the Lightweight M4, he says you won't notice the penalty |
 | **Steady Handed** | Hits build Accuracy and Stability stacks; at 30 stacks they're consumed to refill the magazine | He suspects his is bugged, because he's sat on 30 stacks without seeing a refill |
 
@@ -148,11 +148,11 @@ The build works with any weapon because the crit, damage and survival all come f
 
 | Skill | Combo set | 3pc effect (our database) | His notes |
 |---|---|---|---|
-| Tactical Link (signature) | **Commando**, later **Bugle Call** | Commando: +10.20% Weapon Critical Hit Chance for 10 seconds per kill during Tactical Link. Bugle Call: +14.40% Rate of Fire, Damage Reduction and Movement Speed for 15 seconds on deploy. | Put Tactical Link Duration on every chip you can, then Critical Hit Chance, Critical Hit Damage, Weapon Damage or Intensity. |
+| Tactical Link (signature) | **Commando**, later **Bugle Call** | Commando: +10.20% Weapon Critical Hit Chance for 10 seconds per kill or assist during Tactical Link. Bugle Call: +14.40% Rate of Fire, Damage Reduction and Movement Speed for 15 seconds on deploy. | Put Tactical Link Duration on every chip you can, then Critical Hit Chance, Critical Hit Damage, Weapon Damage or Intensity. |
 | Smart Cover | **Optimized Armor** | Behind Smart Cover: +3.20% Damage Reduction, and hits have a 4.80% chance of restoring 1 bullet | He thinks it's the best one. **Armored Train** (hits behind Smart Cover have a 5% chance of granting +2% Weapon Critical Hit Chance for 20 seconds, up to 3 stacks) is his pick if your crit chance is still low. |
-| Scanning Pulse | **Targeted Surveillance** | Pulsed allies get Weapon Critical Hit Chance equal to 3.60% of your Engineering for 10 seconds | His ranking: Targeted Surveillance, then Field Supplies, then Optimal Awareness (+1.40% per scanned enemy within 70 meters, up to 8 times). |
+| Scanning Pulse | **Targeted Surveillance** | Pulsed allies get Weapon Critical Hit Chance equal to 3.60% of your Engineering for 10 seconds | His ranking: Targeted Surveillance, then Field Supplies, then Optimal Awareness (our database: +1.40% per scanned enemy within 70 meters, up to 8 times, so 11.2% at most; he reads it as capping at 8%). |
 
-**OS Protocol: Augmented Lethality.** Our database lists it as a Superior Firepower protocol whose talent grants +4% Weapon Damage and +4% Incoming Healing for every enemy within 20 meters. His upgraded copy reads about 32 to 35% Firepower, and he says the stacking has no limit, so a crowded room is a buff. He tested a level 1 **Cover Shooter** against his level 42 Augmented Lethality and kept Augmented Lethality. **Assisted Infantry** is his other suggestion if you'd rather trade some crit chance for Weapon Damage from sustained fire.
+**OS Protocol: Augmented Lethality.** Our database lists it as a Superior Firepower protocol whose talent grants +4% Weapon Damage and +4% Incoming Healing for every enemy within 20 meters. His upgraded copy reads about 32 to 35% Firepower, and he says the stacking has no limit, so a crowded room is a buff. He tested a level 1 **Cover Shooter** against his level 42 Augmented Lethality and kept Augmented Lethality. **Assisted Infantry** is his other suggestion. Its main stat is Weapon Critical Hit Chance (+14.40% in our database) and its talent adds +2.50% Weapon Damage per second of continuous fire, up to 6 stacks, so he says you could move some crit chance off your gear onto other stats.
 
 ---
 
@@ -176,11 +176,11 @@ The rewards are why you'll run it a lot: Superior Fabric, random T1 gear and wea
 
 1. **Pick one specialization and master it** before you build a second one, unless you're spending a lot of money.
 2. **Lock the gear you use.** Deleted gear doesn't come back, he warns, and he locks everything he's wearing.
-3. **Slot Tactical Augmentation Manuals** and re-check them after every gear swap.
+3. **Slot your Tactical Augmentation Modules** and re-check them after every gear swap.
 4. **Don't expect perfection.** On September 19 he called his build "so far from being min max" and said it still did okay; five days later an updated version soloed Heroic Chinatown.
-5. **Don't spend much money on it.** He says playing the game gets you "so much free stuff," and the money he spent barely moved his build.
+5. **Don't spend much money on it.** He says he wouldn't recommend paying for much, because just playing the game gets you "so much free stuff."
 
-When you find a Double Barrel shotgun, his next stop is our [Misdirection Double Barrel Commando](/builds/misdirection-double-barrel-commando-build-tiktokandy/) build, which keeps the same Commando kit and Phalanx Attack set and changes almost everything else.
+When you find a Double Barrel shotgun, his next stop is our [Misdirection Double Barrel Commando](/builds/misdirection-double-barrel-commando-build-tiktokandy/) build, which stays on Vanguard Commando with Optimized Armor and Phalanx Attack (he recommends the 4-piece), but moves Tactical Link to Ammo Refill and Scanning Pulse to Field Supplies, swaps Fury Strike for Gunny Johnny and Injured Concealment for Suppressive Fire II, and by October had changed its OS Protocol and backpack talent too.
 
 ---
 

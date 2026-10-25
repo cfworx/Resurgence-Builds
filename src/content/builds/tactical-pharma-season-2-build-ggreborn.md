@@ -136,7 +136,7 @@ Talents (our database, base versions): **Collateral Damage** makes Skill Damage 
 
 That's from Ubisoft's official drop-rate table (cache tier odds are S 2%, A 10% and B 88%, with pity at 50 pulls for S and 10 for A). The blue protocol finished two seconds behind a gold one that's roughly 24 times rarer. RNG giveth, mostly in blue.
 
-The day after the test (October 24), GGReborn posted a gameplay video of the build on Chain Reaction, titled ["This Tactical Pharma Build with Chain Reaction OS Is INSANE!"](https://www.youtube.com/watch?v=yR7YWOzqVlA). The title is about as close to a verdict as he's given. It's a gameplay video rather than another test, so it doesn't add numbers to the table above.
+The day after the test (October 24), GGReborn posted a Tactical Pharma gameplay video on Chain Reaction, titled ["This Tactical Pharma Build with Chain Reaction OS Is INSANE!"](https://www.youtube.com/watch?v=yR7YWOzqVlA). The title is about as close to a verdict as he's given. It's a gameplay video rather than another test, so it doesn't add numbers to the test results above.
 
 TikTokAndy is working his **Tactical Persistence** up to level 50 and thinks that's where his build "will eventually land"; his fallback is **Recursive Treatment** for its flat Engineering (his copy reads 36%), which he says would cost a little Skill Critical Damage. For the wider picture, see our [OS Protocol tier list](/tier-list/os-protocols/).
 
