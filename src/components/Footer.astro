@@ -32,12 +32,14 @@ const isHome = Astro.url.pathname === '/' || Astro.url.pathname === '/index.html
   <SocialBar pathname={Astro.url.pathname} />
 
   <div class="footer-notes">
-    <p class="footer-disclaimer footer-disclaimer--about">
-      Resurgence Builds covers The Division Resurgence, <a href="https://www.ubisoft.com/en-us/game/the-division/resurgence" target="_blank" rel="noopener noreferrer">Ubisoft's</a> free-to-play RPG shooter on PC, iOS, and Android. We write build guides, gear set breakdowns, weapon tier lists, class guides, and patch notes for people who actually want to understand why their build works (or doesn't). PvE, Dark Zone PvP, Conflict, Legendary missions, exotic weapons, gear sets, SHD agents, OS Protocols, the Cleaners, the Rikers, the Freemen, solo builds, team builds, meme builds that shouldn't work but somehow do. If it's in the game, we've probably argued about it and then written it up here. Updated every patch because the meta waits for nobody.
-    </p>
-    <p class="footer-disclaimer footer-disclaimer--legal">
-      Resurgence Builds is an independent fan site. We are not affiliated with, endorsed by, or sponsored by Ubisoft Entertainment SA. Tom Clancy's The Division, The Division Resurgence, and all related characters, logos, and game assets are trademarks and copyrights of Ubisoft Entertainment SA. Game screenshots and footage are used under fair use for commentary, criticism, and news reporting.
-    </p>
+    <div class="footer-notes__inner">
+      <p class="footer-about">
+        Resurgence Builds covers The Division Resurgence, <a href="https://www.ubisoft.com/en-us/game/the-division/resurgence" target="_blank" rel="noopener noreferrer">Ubisoft's</a> free-to-play RPG shooter on PC, iOS, and Android. We write build guides, gear set breakdowns, weapon tier lists, class guides, and patch notes for people who actually want to understand why their build works (or doesn't). PvE, Dark Zone PvP, Conflict, Legendary missions, exotic weapons, gear sets, SHD agents, OS Protocols, the Cleaners, the Rikers, the Freemen, solo builds, team builds, meme builds that shouldn't work but somehow do. If it's in the game, we've probably argued about it and then written it up here. Updated every patch because the meta waits for nobody.
+      </p>
+      <p class="footer-legal">
+        Resurgence Builds is an independent fan site. We are not affiliated with, endorsed by, or sponsored by Ubisoft Entertainment SA. Tom Clancy's The Division, The Division Resurgence, and all related characters, logos, and game assets are trademarks and copyrights of Ubisoft Entertainment SA. Game screenshots and footage are used under fair use for commentary, criticism, and news reporting.
+      </p>
+    </div>
   </div>
 </footer>
 
@@ -46,7 +48,7 @@ const isHome = Astro.url.pathname === '/' || Astro.url.pathname === '/index.html
     background: var(--surface);
     border-top: 1px solid var(--border);
     margin-top: var(--sp-16);
-    padding: var(--sp-4) 0 var(--sp-3);
+    padding: var(--sp-4) 0 var(--sp-6);
   }
   .footer-inner {
     max-width: var(--max-width);
@@ -100,22 +102,43 @@ const isHome = Astro.url.pathname === '/' || Astro.url.pathname === '/index.html
   }
   .footer-nav a:hover { color: var(--accent); }
 
-  /* Left-aligned on the container's edge: long text is hard to read centered */
+  /* About text and legal line under one divider. Phones: full width.
+     Tablets: a centred reading-width column under the centred social bar.
+     Wide screens: two columns that run from the logo's edge to the nav's edge. */
   .footer-notes {
     max-width: var(--max-width);
     margin: 0 auto;
-    padding: var(--sp-3) var(--sp-4) 0;
+    padding: var(--sp-5) var(--sp-4) 0;
     border-top: 1px solid var(--border);
   }
+  .footer-notes__inner {
+    display: grid;
+    gap: var(--sp-3);
+    max-width: 34rem; /* about 75 characters of the 15px about text */
+    margin-inline: auto;
+  }
+  .footer-about,
+  .footer-legal {
+    max-width: none; /* the column sets the line length */
+    margin: 0;
+    color: var(--ink-muted);
+    text-align: left; /* long text stays left-aligned; the column itself is what's centred */
+    line-height: var(--lh-small);
+  }
+  .footer-about { font-size: var(--step--1); }
+  .footer-about a { color: var(--accent); text-decoration: none; }
+  .footer-about a:hover { text-decoration: underline; }
+  .footer-legal { font-size: var(--step--2); }
   @media (min-width: 45em) {
     .footer-notes { padding-inline: var(--sp-8); }
   }
-  .footer-disclaimer {
-    color: var(--ink-muted);
-    text-align: left;
-    line-height: var(--lh-small);
+  @media (min-width: 60em) {
+    .footer-notes__inner {
+      max-width: none;
+      grid-template-columns: minmax(0, 34rem) minmax(0, 30rem);
+      justify-content: space-between;
+      align-items: start;
+      gap: var(--sp-10);
+    }
   }
-  .footer-disclaimer--about { font-size: var(--step--1); margin-bottom: var(--sp-2); }
-  .footer-disclaimer--about a { color: var(--accent); text-decoration: none; }
-  .footer-disclaimer--legal { font-size: var(--step--2); margin-bottom: 0; }
 </style>
