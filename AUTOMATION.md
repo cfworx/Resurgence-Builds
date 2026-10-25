@@ -49,7 +49,7 @@ The container's shell usually can't reach websites (only package registries and 
 
 | # | Source | URL | What to compare |
 |---|---|---|---|
-| 1 | Steam announcements (official) | Try the RSS feed `https://store.steampowered.com/feeds/news/app/3749720/`, then the Steam Community announcements page `https://steamcommunity.com/games/3749720/announcements/`, then WebSearch. Don't fetch the Steam News API (`api.steampowered.com`): our fetch tool refuses it (robots rules). The store's news page needs JavaScript and comes back empty. | items newer than `state.steam.latestDate` / not in `state.steam.seen` |
+| 1 | Steam announcements (official) | The RSS feed `https://store.steampowered.com/feeds/news/app/3749720/` (it read fine on 2026-10-25; it leaves out the reposted press articles), then WebSearch. Don't fetch the Steam News API (`api.steampowered.com`, refused by our fetch tool), the store's news page or the Steam Community announcements page (both come back empty without JavaScript). | items newer than `state.steam.latestDate` / not in `state.steam.seen` |
 | 2 | Ubisoft Help Center, Patch Notes section | `https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/section/539-patch-notes/` | article IDs not in `state.helpCenterPatchNotes` |
 | 3 | Ubisoft game news | `https://www.ubisoft.com/en-us/game/the-division/resurgence/news-updates` (a JavaScript page our fetch tool often can't read; fall back to WebSearch `"Division Resurgence" site:ubisoft.com news`) | entries not in `state.ubisoftNews` |
 | 4 | Ubisoft News articles | search: `The Division Resurgence site:news.ubisoft.com` | articles not in `state.newsUbisoftCom` |
@@ -93,9 +93,9 @@ Never use mirrors, caches, archives or scraping services to get around a block.
 the owner's approval on every link (`PROVENANCE_REQUIRED`), and nobody is there at 6:30 AM to give it. So:
 
 - Never fetch a source already known to be refused: the Steam News API, `x.com`, YouTube RSS feeds.
-- Open the sources that usually load first (Help Center, official site, APKMirror, SteamDB, Raijin.gg, the Discord
-  counts, the Steam store and discussions, the news sites), then the Steam announcement fallbacks and the JavaScript
-  pages (Ubisoft news, bug reporter), then the streaming aggregates.
+- Open the sources that usually load first (the Steam RSS feed, Help Center, official site, APKMirror, SteamDB,
+  Raijin.gg, the Discord counts, the Steam store and discussions, the news sites), then the JavaScript pages (Ubisoft
+  news, bug reporter), then the streaming aggregates.
 - Individual streamer channels are listed in `sources.json` for reference; the aggregates cover them, so don't open them.
 - If a fetch asks for approval or returns `PROVENANCE_REQUIRED`, stop fetching for the rest of the run, finish with the
   WebSearch checks, and say so in the summary ("couldn't open links directly today").
@@ -131,10 +131,8 @@ Never criticize or mock another site or creator on resurgencebuilds.com. If a so
 Don't fetch transcripts, YouTube pages or YouTube RSS feeds: our fetch tool refuses YouTube (robots rules, confirmed on
 2026-10-25), and refused fetches count against the run. The owner follows the watch-list channels directly (the `rss`
 links in `sources.json` work in any feed reader) and shares transcripts. Never work around the refusal. If the owner
-shares a list of new videos instead, treat it like the transcripts: compare with `state.youtube.channels.<channelId>`. List new videos whose titles suggest a build, a
-test, a guide, tips, or update news (skip livestreams, walkthrough parts and Shorts) in the summary under
-"Transcripts worth pulling", with title, date and link, and add their IDs to `state.youtube.suggested` so they're not
-listed twice. A video title is not a source for anything you publish.
+shares a list of new videos instead, compare it with `state.youtube.channels.<channelId>` and record what you used. A
+video title is not a source for anything you publish.
 
 ---
 
