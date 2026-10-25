@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { GA4_ID } from '../data/site-config';
 ---
 
 <BaseLayout noAds title="Privacy Policy" description="Privacy Policy for Resurgence Builds — how we handle your data, cookies, and third-party advertising." breadcrumbs={[{ name: 'Privacy Policy', url: '/privacy/' }]}>
@@ -29,6 +30,13 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       <p>You can opt out of personalized advertising by visiting <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener noreferrer">Google's Ads Settings</a>. You may also opt out of third-party vendor cookies by visiting the <a href="https://optout.networkadvertising.org/" target="_blank" rel="noopener noreferrer">Network Advertising Initiative opt-out page</a>.</p>
       <p>For more information about how Google uses data when you use our site, visit <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener noreferrer">Google's partner sites policy</a>.</p>
 
+      {GA4_ID && (
+        <>
+          <h2>Analytics</h2>
+          <p>We use <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener noreferrer"><strong>Google Analytics</strong></a> to count visits and see which pages are read, so we know what to update. It sets cookies that record pages viewed, time on the site, device type and approximate location. We don't send Google your name or email. You can opt out with <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer">Google's opt-out browser add-on</a>.</p>
+        </>
+      )}
+
       <h2>Cookies</h2>
       <p>Our site uses cookies from the following categories:</p>
       <h3>Essential Cookies</h3>
@@ -44,6 +52,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       <ul>
         <li><strong>Cloudflare:</strong> Hosting, CDN, and security</li>
         <li><strong>Google AdSense:</strong> Advertising (<a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener noreferrer">Google's privacy policy</a>)</li>
+        {GA4_ID && <li><strong>Google Analytics:</strong> Visit counts and page reports (<a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google's privacy policy</a>)</li>}
         <li><strong>Google Fonts:</strong> Typography</li>
         <li><strong>Giscus:</strong> Comments on build and guide pages are powered by Giscus, which uses GitHub Discussions. When you post a comment, your interaction is processed through GitHub. GitHub may collect your IP address, browser information, and other data as described in their <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener noreferrer">privacy policy</a>.</li>
       </ul>

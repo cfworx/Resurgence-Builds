@@ -32,3 +32,11 @@ export function verifiedPatch(pageVerified?: string): string {
  * badge still follows verifiedPatch() above. Bump it when the templates change.
  */
 export const DATABASE_UPDATED = '2026-10-25';
+
+/**
+ * Google Analytics 4 measurement ID ("G-XXXXXXXXXX"). Empty means no analytics tag on any page.
+ * Mediavine's application (Journey included) reads traffic from Google Analytics, so the site
+ * needs GA4 running about 30 days before applying. Paste the ID from the GA4 property's
+ * Admin > Data streams > Web stream; set the property's time zone to New York, as Mediavine asks.
+ */
+export const GA4_ID = '';
