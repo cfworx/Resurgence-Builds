@@ -51,7 +51,7 @@
 .lab button,.hero button,.modal button{cursor:pointer;background:none;border:none;font:inherit;color:inherit}
 .lab input,.modal input{font:inherit;color:inherit}
 .lab ::selection,.hero ::selection{background:rgba(255,138,46,.28);color:#fff}
-.lab :focus-visible{outline:2px solid var(--orange);outline-offset:2px}
+.lab :focus-visible{outline:3px solid var(--accent,#f26822);outline-offset:2px} /* the site's focus ring */
 
 .kicker{
   font-family:var(--font-mono);font-size:13px;letter-spacing:.16em;
@@ -156,8 +156,9 @@
   text-shadow:0 0 28px rgba(255,138,46,.4);
 }
 .hero__sub{font-family:var(--font-mono);font-size:13px;letter-spacing:.18em;
-  color:var(--text-2);text-transform:uppercase;margin-bottom:var(--space-6)}
-.hero__meta{display:flex;flex-wrap:wrap;gap:8px}
+  color:var(--text-2);text-transform:uppercase;margin-bottom:var(--space-6);margin-left:auto;margin-right:auto}
+/* centred under the title like the rest of the hero (the site's .hero centres its text) */
+.hero__meta{display:flex;flex-wrap:wrap;gap:8px;justify-content:center}
 .chip{
   display:inline-flex;align-items:center;gap:6px;
   font-family:var(--font-mono);font-size:13px;letter-spacing:.06em;
@@ -248,14 +249,14 @@
 /* ---------- PICKER BUTTONS ---------- */
 .picker__btn{
   width:100%;display:flex;align-items:center;justify-content:space-between;gap:10px;
-  padding:11px 14px;text-align:left;
+  padding:0 14px;min-height:48px;text-align:left;
   background:var(--panel);border:1px solid var(--line);color:var(--text);
   font-size:15px;
   transition:border-color var(--tin),background var(--tin);
 }
 .picker__btn:hover{border-color:var(--line-hot);background:var(--panel-hi)}
 .picker__btn svg{color:var(--muted);flex:none}
-.picker__btn--sm{padding:9px 12px;font-size:13px}
+.picker__btn--sm{padding:0 12px;min-height:44px;font-size:13px}
 .picker__btn span{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 
 /* ---------- SLOTS ---------- */
@@ -431,7 +432,7 @@
   display:inline-flex !important;align-items:center;justify-content:center;gap:8px;
   font-family:var(--font-display) !important;font-weight:700 !important;font-size:15px !important;letter-spacing:.08em;
   color:#05070b !important;background:linear-gradient(135deg,var(--orange),var(--orange-deep)) !important;
-  padding:13px 18px !important;border:none !important;border-radius:4px;
+  padding:0 18px !important;min-height:48px;border:none !important;border-radius:4px;
   transition:transform var(--tin),box-shadow var(--tin),filter var(--tin);cursor:pointer;
 }
 .btn-primary:hover{transform:translateY(-1px);filter:brightness(1.08);box-shadow:0 8px 24px rgba(255,138,46,.3)}
@@ -439,11 +440,11 @@
 .btn-ghost{
   display:inline-flex !important;align-items:center;gap:7px;
   font-family:var(--font-display) !important;font-weight:600 !important;font-size:13px !important;letter-spacing:.04em;
-  color:var(--text-2) !important;background:var(--panel) !important;border:1px solid var(--line) !important;padding:11px 14px !important;
+  color:var(--text-2) !important;background:var(--panel) !important;border:1px solid var(--line) !important;padding:0 14px !important;min-height:44px;
   border-radius:4px;transition:border-color var(--tin),color var(--tin),background var(--tin);cursor:pointer;
 }
 .btn-ghost:hover{border-color:var(--line-hot) !important;color:var(--text) !important;background:var(--panel-hi) !important}
-.btn-ghost--card{padding:13px 14px !important}
+.btn-ghost--card{min-height:48px} /* same height as the main button beside it */
 
 /* ============================================================
    MODALS
@@ -587,7 +588,7 @@
 /* ---- Tablet & small desktop ---- */
 @media (max-width:880px){
   .nav__links{display:none}
-  .lab__grid{grid-template-columns:1fr;grid-template-areas:"left" "center" "right";padding:0 var(--space-3)}
+  .lab__grid{grid-template-columns:1fr;grid-template-areas:"left" "center" "right";padding:0}
   .col--right{grid-template-columns:1fr}
 
   /* Gear rig: stack vertically */
@@ -627,7 +628,7 @@
 
 /* ---- Phone ---- */
 @media (max-width:480px){
-  .lab__grid{padding:0 8px;gap:12px}
+  .lab__grid{padding:0;gap:12px}
   .col{gap:12px}
 
   /* Spec buttons */
@@ -732,4 +733,9 @@
   .mob-status__lbl{font-size:13px;letter-spacing:.1em;color:#9aa3b2;text-transform:uppercase}
   .mob-status__val{font-size:15px;font-weight:700;color:#ff8a2e;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:40vw}
   .mob-status__go{margin-left:auto;flex:0 0 auto;border:1px solid rgba(255,138,46,.4);background:transparent;color:#ff8a2e;padding:7px 12px;min-height:44px;font-size:13px;letter-spacing:.05em;border-radius:4px;cursor:pointer;font-family:inherit}
+}
+
+/* Phones: the same 16px side margins as the site header, so the planner's edges line up with the logo */
+@media (max-width:719.98px){
+  .lab,.hero__inner{padding-left:16px;padding-right:16px}
 }

@@ -74,8 +74,8 @@
   }
 
   /* --- Popup sizing ---
-     A popup has to fit inside the map with its close button showing. On phones the map is only about 340px tall,
-     so the popup's height is capped (its middle scrolls) and it keeps clear of the zoom buttons on the right. */
+     A popup has to fit inside the map with its close button showing. On small phones the map can be only about
+     320px tall, so the popup's height is capped (its middle scrolls) and it keeps clear of the zoom buttons. */
   function popupLayout() {
     var el = map.getContainer();
     var phone = PHONE.matches;
@@ -195,10 +195,17 @@
 
     function fit() {
       map.invalidateSize();
-      var z = map.getBoundsZoom(bounds, false, [0, 0]);
+      var z = map.getBoundsZoom(bounds, false, [0, 0]);   // the whole map in view
       map.setMinZoom(z - 0.25);
       map.setMaxZoom(z + 3);
-      map.fitBounds(bounds, { padding: [0, 0], animate: false });
+      if (PHONE.matches) {
+        // Phones: the map box is taller than the image at full width, so start zoomed in to fill it (no empty bands
+        // above and below); pinch out to see the whole map.
+        var cover = map.getBoundsZoom(bounds, true);
+        map.setView(bounds.getCenter(), Math.min(cover, z + 3), { animate: false });
+      } else {
+        map.fitBounds(bounds, { padding: [0, 0], animate: false });
+      }
     }
     fit();
     var softBounds = bounds.pad(0.12);

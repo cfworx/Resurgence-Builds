@@ -33,7 +33,10 @@ Rules of thumb:
   `padding-block: 10px; margin-block: -10px;`.
 - Form fields: 16px text or larger (smaller makes iPhones zoom the page), 44px tall, a visible label (`sr-only` is
   fine), `--line-strong` border.
-- Focus: the global 3px ring (`:focus-visible`). Don't remove outlines; inside scrolling lists use `outline-offset: -3px`.
+- Focus: the global 3px ring (`:focus-visible`). Don't remove outlines. Anything that fills a box with
+  `overflow: hidden` (FAQ rows, whole-card links, the video button, the map) or sits in a scrolling list uses
+  `outline-offset: -3px`, or the box cuts the ring off; controls in scrolling panels get `scroll-margin` too.
+- The phone menu marks the rest of the page `inert` while it's open, so Tab can't wander behind it.
 - The header is sticky: `html { scroll-padding-top }` keeps focused things and `#anchors` clear of it. Don't add
   `scroll-margin-top` on top of that (they add up).
 - Cards that are links use one stretched link (`.card__link::after`). Any other link inside the card needs
@@ -45,7 +48,7 @@ Rules of thumb:
 
 ## Breakpoints
 
-Five, in `em`, each `min-width` paired with a `max-width` 0.01em smaller:
+Six, in `em`, each `min-width` paired with a `max-width` 0.01em smaller:
 
 | Width | Query | Used for |
 |---|---|---|
@@ -53,7 +56,8 @@ Five, in `em`, each `min-width` paired with a `max-width` 0.01em smaller:
 | 560px | `35em` / `34.99em` | small tweaks (social buttons in one row, form padding) |
 | 720px | `45em` / `44.99em` | phone layout vs. wider: 2-column grids, 32px gutters, the map's sidebar |
 | 960px | `60em` / `59.99em` | 3-column grids, build page sidebar |
-| 1100px | `68.75em` / `68.74em` | the one-row desktop menu (it needs about 1,060px), 3-column database grids |
+| 1100px | `68.75em` / `68.74em` | 3-column database grids |
+| 1152px | `72em` / `71.99em` | the one-row desktop menu (from here the logo is as far from the menu as the menu items are from each other) |
 
 `map-engine.js` uses the same 44.99em query for its phone behaviour. The build planner (`public/css/builder-v3.css`)
 has its own layout breakpoints (480, 880 and 1240px) and is left as an app of its own.

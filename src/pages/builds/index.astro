@@ -245,4 +245,8 @@ const itemListLd = {
   .class-hubs__link:hover { color: var(--accent); border-color: var(--accent); }
   @media (pointer: coarse) { .class-hubs__link { min-height: var(--control); } }
   .filter-separator { width: 1px; height: 1.5rem; background: var(--border); margin: 0 var(--sp-2); align-self: center; }
+  /* phones: two columns until there's room for three (class names like "Demolitionist" need about 8.5rem) */
+  @media (max-width: 44.99em) {
+    #build-filters.filter-bar--grid { grid-template-columns: repeat(auto-fill, minmax(min(100%, 8.5rem), 1fr)); }
+  }
 </style>

@@ -73,7 +73,7 @@ const faqs = [
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="/css/builder-v3.css?v=3" />
+    <link rel="stylesheet" href="/css/builder-v3.css?v=5" />
   </Fragment>
 
   <!-- Boot / Scan Overlay -->
@@ -496,7 +496,7 @@ const faqs = [
     z-index: 2;
     max-width: 860px;
     margin: 0 auto;
-    padding: 48px 20px 64px;
+    padding: 48px 16px 64px;
     color: #c8c8d0;
     line-height: 1.75;
   }
@@ -515,11 +515,12 @@ const faqs = [
   .lab-about__faq {
     border: 1px solid rgba(255,255,255,.1);
     background: rgba(0,0,0,.3);
-    padding: 12px 16px;
     margin-bottom: 8px;
   }
-  .lab-about__faq summary { cursor: pointer; color: #fff; font-weight: 600; }
-  .lab-about__faq p { margin: 10px 0 4px; }
+  /* the whole question row is the tap target (at least 44px), not just its line of text */
+  .lab-about__faq summary { cursor: pointer; color: #fff; font-weight: 600; padding: 10px 16px; min-height: 44px; }
+  .lab-about__faq summary:focus-visible { outline-offset: -3px; }
+  .lab-about__faq p { margin: 0 16px 12px; }
   /* Stat icon in telemetry */
   .stat-ico {
     width: 14px;

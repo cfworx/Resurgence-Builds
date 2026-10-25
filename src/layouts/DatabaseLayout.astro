@@ -161,18 +161,19 @@ const articleMeta = {
   }
 
   /* --- Grid --- */
+  /* minmax(0, 1fr): a card with a long unbreakable word can't widen its column past the screen */
   .db-grid {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     gap: var(--sp-5);
   }
 
   @media (min-width: 45em) {
-    .db-grid { grid-template-columns: repeat(2, 1fr); }
+    .db-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   }
 
   @media (min-width: 68.75em) {
-    .db-grid { grid-template-columns: repeat(3, 1fr); }
+    .db-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   }
 
   /* --- Base Card --- */
@@ -217,6 +218,7 @@ const articleMeta = {
   /* --- Card Header --- */
   .db-card__header {
     display: flex;
+    flex-wrap: wrap; /* the badge drops under a long name instead of pushing the card wider */
     justify-content: space-between;
     align-items: flex-start;
     gap: var(--sp-3);

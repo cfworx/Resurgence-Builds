@@ -208,7 +208,7 @@ const dataPayload = JSON.stringify(poisData);
 (function(f){if(typeof define==="function"&&define.amd){define(["leaflet"],f)}else{f(L)}})(function(L){L.RasterCoords=function(map,imgSize,tileSize){this.map=map;this.width=imgSize[0];this.height=imgSize[1];this.tileSize=tileSize||256;this.zoom=this.zoomLevel()};L.RasterCoords.prototype={zoomLevel:function(){return Math.ceil(Math.log(Math.max(this.width,this.height)/this.tileSize)/Math.log(2))},unproject:function(coords){return this.map.unproject(coords,this.zoom)},project:function(coords){return this.map.project(coords,this.zoom)},getMaxBounds:function(){var southWest=this.unproject([0,this.height]);var northEast=this.unproject([this.width,0]);return new L.LatLngBounds(southWest,northEast)},setMaxBounds:function(){var bounds=this.getMaxBounds();this.map.setMaxBounds(bounds)}}});
 </script>
 <script type="application/json" id="map-data" is:inline set:html={dataPayload}></script>
-<script is:inline src="/js/map-engine.js?v=22"></script>
+<script is:inline src="/js/map-engine.js?v=23"></script>
 
 </BaseLayout>
 
@@ -226,7 +226,7 @@ const dataPayload = JSON.stringify(poisData);
 }
 .map-hero__inner { display: flex; flex-direction: column; align-items: center; text-align: center }
 .map-hero__title {
-  font-size: var(--text-3xl);
+  font-size: var(--step-4); /* the same page-title size as every other page */
   margin-bottom: var(--sp-2);
   background: linear-gradient(135deg, var(--ink) 60%, var(--accent) 100%);
   -webkit-background-clip: text;
@@ -243,7 +243,6 @@ const dataPayload = JSON.stringify(poisData);
 .map-stats strong { color: var(--ink-heading) }
 @media (min-width: 45em) {
   .map-hero { padding: var(--sp-10) 0 var(--sp-6) }
-  .map-hero__title { font-size: var(--text-4xl) }
 }
 
 /* --- Toolbar (search + progress) --- */
@@ -320,9 +319,11 @@ const dataPayload = JSON.stringify(poisData);
 }
 .filter-checkbox:checked { background: var(--accent); border-color: var(--accent) }
 .filter-checkbox:checked::after { content: '✓'; position: absolute; top: -2px; left: 2px; font-size: 11px; font-weight: bold; color: #fff }
-.filter-checkbox:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px }
+.filter-checkbox:focus-visible { outline: 3px solid var(--accent); outline-offset: 0 }
+.filter-checkbox { scroll-margin-block: 8px } /* when focus scrolls the panel, the ring stays inside it */
+.leaflet-control-attribution a:focus-visible { outline-offset: -3px } /* sits on the map's bottom edge */
 .filter-swatch { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0 }
-.filter-label { flex: 1; min-width: 0; font-size: 0.875rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis }
+.filter-label { flex: 1; min-width: 0; font-size: var(--step--1); white-space: nowrap; overflow: hidden; text-overflow: ellipsis }
 .filter-flag { margin-left: 4px; font-family: var(--font-mono); font-size: 0.8125rem; color: #FCD34D }
 .filter-legend { margin: var(--sp-2) var(--sp-4) 0; font-family: var(--font-mono); font-size: 0.8125rem; line-height: 1.6; color: var(--ink-muted) }
 .filter-legend span { color: #FCD34D; display: inline-block; width: 12px }
@@ -493,7 +494,6 @@ const dataPayload = JSON.stringify(poisData);
 /* --- Phones (the same width map-engine.js treats as a phone) --- */
 @media (max-width: 44.99em) {
   .map-hero { padding: var(--sp-6) 0 var(--sp-3) }
-  .map-hero__title { font-size: var(--text-2xl) }
   .map-toolbar { margin: var(--sp-3) var(--sp-4) 0; gap: var(--sp-2) }
   .map-search { flex-basis: 100%; max-width: none }
   .map-layout { flex-direction: column; margin: var(--sp-2) 0 0 }
@@ -518,8 +518,13 @@ const dataPayload = JSON.stringify(poisData);
   .filter-group__actions button { min-height: 44px; padding: 0 10px }
 
   .map-canvas-wrap { border-radius: 0; border-left: none; border-right: none }
-  /* Match the base image's aspect ratio so the map fills the screen width with no dead bands. */
-  #map-canvas { height: auto; min-height: 320px; aspect-ratio: 2190 / 1920 }
+  /* At least the base image's height at full width, and on taller phones up to 60% of the screen (520px at most), so
+     a popup has room to show its text. map-engine.js starts zoomed to fill the box, so there are no empty bands. */
+  #map-canvas {
+    height: max(calc(100vw * 1920 / 2190), min(60vh, 520px));
+    height: max(calc(100vw * 1920 / 2190), min(60svh, 520px));
+    min-height: 320px;
+  }
   .map-seo, .map-faq { padding-left: var(--sp-4); padding-right: var(--sp-4) }
   .mobile-only { display: inline }
   .desktop-only { display: none }

@@ -142,10 +142,12 @@ const faqs = [
     backdrop-filter: blur(8px);
   }
 
+  /* the box is already the highlight, so its heading is plain (no second heading bar inside it) */
+  .trust-strip h2 { padding: 0; background: none; border: 0; border-radius: 0; }
   .trust-strip {
     background: rgba(242,104,34,0.06);
     border-left: 4px solid var(--accent);
-    padding: var(--sp-5);
+    padding: var(--sp-5) var(--sp-5) var(--sp-5) calc(var(--inset) - 4px); /* text on the shared inset */
     margin: var(--sp-6) 0;
     border-radius: 0 8px 8px 0;
   }

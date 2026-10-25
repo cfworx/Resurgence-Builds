@@ -147,7 +147,7 @@ const navItems = [
   .site-header__actions {
     display: flex;
     align-items: center;
-    gap: var(--sp-1);
+    gap: var(--sp-2); /* 8px between the two buttons */
     margin-right: calc(-1 * var(--sp-2)); /* the buttons' own padding lines the icons up with the gutter */
   }
   .search-btn {
@@ -174,6 +174,7 @@ const navItems = [
   const nav = document.getElementById('mobile-nav');
   if (btn && nav) {
     const label = btn.querySelector('.hamburger__label');
+    const header = document.getElementById('site-header');
     const setOpen = (open: boolean) => {
       nav.classList.toggle('is-open', open);
       btn.setAttribute('aria-expanded', String(open));
@@ -181,6 +182,11 @@ const navItems = [
       nav.setAttribute('aria-hidden', String(!open));
       // the page behind the full-screen menu shouldn't scroll
       document.documentElement.classList.toggle('mobile-nav-open', open);
+      // ...or take keyboard focus: Tab stays in the header and the menu (the search dialog stays usable)
+      for (const el of Array.from(document.body.children)) {
+        if (el === header || el.tagName === 'SCRIPT' || el.tagName === 'DIALOG') continue;
+        if (open) el.setAttribute('inert', ''); else el.removeAttribute('inert');
+      }
     };
     btn.addEventListener('click', () => setOpen(!nav.classList.contains('is-open')));
     // Escape closes the menu and puts focus back on its button
@@ -190,7 +196,7 @@ const navItems = [
     // following a link (including #anchors on the same page) closes it
     nav.addEventListener('click', (e) => { if ((e.target as HTMLElement).closest('a')) setOpen(false); });
     // and so does growing the window to the desktop layout
-    window.matchMedia('(min-width: 68.75em)').addEventListener('change', (m) => { if (m.matches) setOpen(false); });
+    window.matchMedia('(min-width: 72em)').addEventListener('change', (m) => { if (m.matches) setOpen(false); });
   }
 
   // Desktop dropdown keyboard support
