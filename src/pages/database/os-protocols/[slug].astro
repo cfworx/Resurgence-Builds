@@ -5,7 +5,9 @@ import SectionTag from '../../../components/SectionTag.astro';
 import AdSenseUnit from '../../../components/AdSenseUnit.astro';
 import { truncateDesc, metaDescription } from '../../../utils/seo';
 import osProtocols from '../../../data/os-protocols.json';
-import { verifiedPatch } from '../../../data/site-config';
+import { dropRowsFor } from '../../../utils/db-enrich';
+import DbItemExtras from '../../../components/DbItemExtras.astro';
+import { verifiedPatch, DATABASE_UPDATED } from '../../../data/site-config';
 const lastVerified = verifiedPatch('Patch 1.1.2.2'); // Bump: drop the arg ONLY after re-verifying this page's content in-game (CURRENT_PATCH is a ceiling, not an auto-bump)
 
 export function getStaticPaths() {
@@ -37,18 +39,20 @@ const specClass = protocol.specialization === 'Engineering' ? 'Demolitionist, Te
                   protocol.specialization === 'Firepower' ? 'Vanguard' :
                   protocol.specialization === 'Toughness' ? 'Bulwark or Field Medic (Combat Medicine)' : 'any specialization';
 
+const osDrop = dropRowsFor('os-protocol', protocol.name)[0];
+
 const faqs = [
   {
     question: `Is ${protocol.name} a good OS Protocol in Division Resurgence?`,
-    answer: `${protocol.name} is a ${protocol.rarity} ${protocol.specialization} OS Protocol that gives you ${protocol.mainStat} ${protocol.mainValue} plus ${protocol.attr1} ${protocol.val1}, ${protocol.attr2} ${protocol.val2}, and ${protocol.attr3} ${protocol.val3}. The talent — "${protocol.talentDescription.substring(0, 150)}${protocol.talentDescription.length > 150 ? '...' : ''}" — is the real reason you want this thing. If your build stacks ${protocol.specialization}, it slaps.`
+    answer: `${protocol.name} is a ${protocol.rarity} ${protocol.specialization} OS Protocol that gives you ${protocol.mainStat} ${protocol.mainValue} plus ${protocol.attr1} ${protocol.val1}, ${protocol.attr2} ${protocol.val2}, and ${protocol.attr3} ${protocol.val3}. The talent, "${protocol.talentDescription.substring(0, 150)}${protocol.talentDescription.length > 150 ? '...' : ''}", is the real reason you want this thing. If your build stacks ${protocol.specialization}, it slaps.`
   },
   {
     question: `Which specialization uses ${protocol.name}?`,
-    answer: `${protocol.name} is a ${protocol.specialization} protocol, so it fits best on ${specClass} builds. You get ${protocol.mainStat} ${protocol.mainValue} as your main stat — plug it into any ${protocol.specialization}-stacking loadout and you'll feel the difference immediately.`
+    answer: `${protocol.name} is a ${protocol.specialization} protocol, so it fits best on ${specClass} builds. You get ${protocol.mainStat} ${protocol.mainValue} as your main stat. Plug it into any ${protocol.specialization}-stacking loadout and you'll feel the difference immediately.`
   },
   {
     question: `How do I get ${protocol.name} in Division Resurgence?`,
-    answer: `${protocol.name} drops from weekly bounties, Conflicts, and endgame PvE. ${protocol.rarity === 'High-End' ? 'Fair warning — Gold protocols are rare as hell. You\'re grinding weekly bounties for multiple cycles before one shows up.' : protocol.rarity === 'Superior' ? 'Purple protocols drop pretty regularly from weekly bounties and endgame content. You won\'t be waiting forever.' : 'Blue protocols drop like candy from basically any endgame activity. You\'ll have a stack of these in no time.'} Weekly bounties are your most consistent farm.`
+    answer: `${protocol.name} is in the OS Protocol Sealed Cache, where Ubisoft lists it as a ${osDrop ? osDrop.tier + ' entry at ' + osDrop.chance + ' per cache' : 'possible result'}. Every sealed cache guarantees a Tier S result within 50 pulls and a Tier A result within 10, but not a specific protocol. Protocols also drop from regular play, though Ubisoft doesn't publish those odds.`
   }
 ];
 
@@ -58,14 +62,14 @@ const siteUrl = 'https://resurgencebuilds.com';
 const protocolLd = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: `${protocol.name} OS Protocol — Division Resurgence`,
+  headline: `${protocol.name} OS Protocol, Division Resurgence`,
   description: description,
   url: `${siteUrl}/database/os-protocols/${slug}/`,
   author: { '@type': 'Person', '@id': `${siteUrl}/author/rapidf5/#person`, name: 'RapidF5' },
   publisher: { '@type': 'Organization', '@id': `${siteUrl}/#organization`, name: 'Resurgence Builds' },
   mainEntityOfPage: { '@type': 'WebPage', '@id': `${siteUrl}/database/os-protocols/${slug}/` },
   datePublished: '2026-05-27',
-  dateModified: '2026-05-30',
+  dateModified: DATABASE_UPDATED,
   ...(protocol.image ? { image: { '@type': 'ImageObject', url: `${siteUrl}${protocol.image}`, width: 620, height: 310 } } : {}),
   inLanguage: 'en-US',
   lastReviewed: '2026-05-30',
@@ -157,8 +161,8 @@ const ogImage = protocol.image ? `${siteUrl}${protocol.image}` : undefined;
       <div class="protocol-section">
         <h2 class="protocol-section__title">Overview</h2>
         <div style="color: #c8c8d0; line-height: 1.75; font-size: var(--text-base);">
-          <p>{protocol.name} is a <strong style="color: #fff;">{protocol.rarity}</strong> OS Protocol in the <strong style="color: #fff;">{protocol.specialization}</strong> tree. If you're not familiar, OS Protocols are basically the sixth gear piece in your loadout — a chip that gives you a fat stat bonus and a unique talent that can make or break your build. {protocol.name} hands you <strong style="color: var(--accent);">{protocol.mainStat} {protocol.mainValue}</strong>, plus {protocol.attr1} ({protocol.val1}), {protocol.attr2} ({protocol.val2}), and {protocol.attr3} ({protocol.val3}) on top.</p>
-          <p>But the talent is why you're here: <em>"{protocol.talentDescription}"</em> — that's the part that actually shapes how you play. {protocol.specialization === 'Engineering' ? 'As an Engineering protocol, this one is built for Demolitionist, Tech Operator, and Field Medic setups where your skills are doing the heavy lifting — damage or healing.' : protocol.specialization === 'Firepower' ? 'This is a Firepower protocol, so it\'s all about making your guns hit harder. Vanguard DPS mains, this is your lane. Works on any spec that leads with bullets.' : 'Toughness protocol = you\'re the wall. Core pick for Bulwark tank builds, Field Medic face-tankers, and anyone who needs to eat shots in Legendary or Dark Zone PvP without folding.'}</p>
+          <p>{protocol.name} is a <strong style="color: #fff;">{protocol.rarity}</strong> OS Protocol in the <strong style="color: #fff;">{protocol.specialization}</strong> tree. If you're not familiar, OS Protocols are basically the sixth gear piece in your loadout, a chip that gives you a fat stat bonus and a unique talent that can make or break your build. {protocol.name} hands you <strong style="color: var(--accent);">{protocol.mainStat} {protocol.mainValue}</strong>, plus {protocol.attr1} ({protocol.val1}), {protocol.attr2} ({protocol.val2}), and {protocol.attr3} ({protocol.val3}) on top.</p>
+          <p>But the talent is why you're here: <em>"{protocol.talentDescription}"</em>. That's the part that actually shapes how you play. {protocol.specialization === 'Engineering' ? 'As an Engineering protocol, this one is built for Demolitionist, Tech Operator, and Field Medic setups where your skills are doing the heavy lifting: damage or healing.' : protocol.specialization === 'Firepower' ? 'This is a Firepower protocol, so it\'s all about making your guns hit harder. Vanguard DPS mains, this is your lane. Works on any spec that leads with bullets.' : 'Toughness protocol = you\'re the wall. Core pick for Bulwark tank builds, Field Medic face-tankers, and anyone who needs to eat shots in Legendary or Dark Zone PvP without folding.'}</p>
         </div>
       </div>
 
@@ -167,16 +171,16 @@ const ogImage = protocol.image ? `${siteUrl}${protocol.image}` : undefined;
         <h2 class="protocol-section__title">Best Builds & Playstyles</h2>
         <div style="color: #c8c8d0; line-height: 1.75; font-size: var(--text-base);">
           <p>{protocol.name} belongs on <strong style="color: #fff;">{specClass}</strong> builds that are going all-in on {protocol.specialization}. That {protocol.mainStat} {protocol.mainValue} main stat is a straight multiplier on your build's core, and the talent kicks in when you're actually playing the way the build wants you to.</p>
-          <p>{protocol.specialization === 'Engineering' ? 'Pair this with Jackpot (Skill Crit) or Long-term Effect (Skill Duration/Engineering) and your skills start hitting like trucks. The 4pc gear set bonus stacks multiplicatively with the OS Protocol talent — so together, they punch way harder than either one solo.' : protocol.specialization === 'Firepower' ? 'Run this alongside Fury Strike (Crit) if you want big per-shot numbers, or Phalanx Attack (Multi-Shot/Rate of Fire) if sustained DPS is your thing. Weapon talent choice matters too — In Sync, Concentrated Fire, or Killer on your primary all stack nicely with this OS bonus.' : 'Slap this on with Fearless Warrior (DR/Damage) or Self-Propelled Shield (Armor/Health) and you become unkillable. If you\'ve got access to Healing Elites (T2-only), that\'s the premium combo — disgusting survivability on top of your OS Protocol talent.'}</p>
+          <p>{protocol.specialization === 'Engineering' ? 'Pair this with Jackpot (Skill Crit) or Long-term Effect (Skill Duration/Engineering) and your skills start hitting like trucks.' : protocol.specialization === 'Firepower' ? 'Run this alongside Fury Strike (Crit) if you want big per-shot numbers, or Phalanx Attack (Multi-Shot/Rate of Fire) if sustained DPS is your thing. Weapon talent choice matters too: In Sync, Concentrated Fire, or Killer on your primary all stack nicely with this OS bonus.' : 'Slap this on with Fearless Warrior (DR/Damage) or Self-Propelled Shield (Armor/Health) and you become unkillable. If you\'ve got access to Healing Elites (T2-only), that\'s the premium combo: disgusting survivability on top of your OS Protocol talent.'}</p>
         </div>
       </div>
 
       <!-- Stacking & Synergies -->
       <div class="protocol-section">
-        <h2 class="protocol-section__title">Stacking & Synergies</h2>
+        <h2 class="protocol-section__title">Choosing a Protocol</h2>
         <div style="color: #c8c8d0; line-height: 1.75; font-size: var(--text-base);">
-          <p>Here's why OS Protocol choice matters so much: the talent stacks <strong style="color: #fff;">multiplicatively</strong> with gear set bonuses and weapon talents. It's not an additive bonus — it multiplies your total output. Pick the right OS Protocol and you're looking at 30-50% more effective DPS or healing compared to running a mismatched one. Your build lives and dies by this choice.</p>
-          <p>{protocol.rarity === 'High-End' ? protocol.name + ' is a Gold (High-End) protocol — the top of the food chain. These have the fattest stat bonuses in the game and are what you\'re grinding toward at endgame. The jump from Purple to Gold is noticeable.' : protocol.rarity === 'Superior' ? protocol.name + ' is a Purple (Superior) protocol — solid and way easier to farm than Gold ones. The raw stats are a step below High-End, but the talent hits just as hard in the right build. Great to run while you\'re hunting for the Gold version.' : protocol.name + ' is a Blue (Specialized) protocol — a perfectly fine placeholder that still gives you a real talent while you grind for the Purple or Gold upgrade.'} Check the <a href="/tier-list/os-protocols/" style="color: var(--accent);">OS Protocol Tier List</a> to see where {protocol.name} stacks up.</p>
+          <p>OS Protocol choice matters because the talent is the one effect in your loadout that no gear piece can copy. Pick the one whose trigger matches how the build actually plays, then check the numbers in the <a href="/builder/" style="color: var(--accent);">Build Planner</a>.</p>
+          <p>{protocol.rarity === 'High-End' ? protocol.name + ' is a Gold (High-End) protocol, the top of the food chain. These have the fattest stat bonuses in the game and are what you\'re grinding toward at endgame. The jump from Purple to Gold is noticeable.' : protocol.rarity === 'Superior' ? protocol.name + ' is a Purple (Superior) protocol, solid and way easier to farm than Gold ones. The raw stats are a step below High-End, but the talent hits just as hard in the right build. Great to run while you\'re hunting for the Gold version.' : protocol.name + ' is a Blue (Specialized) protocol, a perfectly fine placeholder that still gives you a real talent while you grind for the Purple or Gold upgrade.'} Check the <a href="/tier-list/os-protocols/" style="color: var(--accent);">OS Protocol Tier List</a> to see where {protocol.name} stacks up.</p>
         </div>
       </div>
 
@@ -184,70 +188,11 @@ const ogImage = protocol.image ? `${siteUrl}${protocol.image}` : undefined;
       <div class="protocol-section">
         <h2 class="protocol-section__title">How to Get {protocol.name}</h2>
         <div style="color: #c8c8d0; line-height: 1.75; font-size: var(--text-base);">
-          <p>OS Protocols drop from a handful of endgame sources. {protocol.rarity === 'High-End' ? 'Gold protocols are the rarest drops in the game, full stop. Your best bets: the DZ vendor (costs DZ Credits — you can earn 20,000 per week from DZ quests), the premium gacha (the OS Protocol Sealed Cache: since Season 1 Phase 3, a 2% chance per pull at a High-End protocol, up from 0.5%, and a guaranteed one within 50 pulls instead of 90), and the occasional miracle drop from Legendary/Elite missions. If you\'re F2P, the DZ vendor is your lifeline.' : protocol.rarity === 'Superior' ? 'Purple protocols show up pretty regularly from weekly bounties, Heroic mission rewards, and Conflicts reward tracks. DZ vendor stocks them too. You\'ll see one every few Heroic runs — not too painful.' : 'Blue protocols rain from the sky. Challenging missions, weekly bounties, standard reward tracks — you\'ll be swimming in these early in your endgame grind.'}</p>
-          <p>Where to focus your time: <strong style="color: #fff;">Weekly Bounties</strong> (guaranteed protocol-eligible loot), <strong style="color: #fff;">Dark Zone vendor</strong> (check the rotation for {protocol.specialization} protocols), and <strong style="color: #fff;">Legendary missions</strong> (best quality drops, but you need decent gear to clear them). Also keep an eye on the <a href="/guides/division-resurgence-codes/" style="color: var(--accent);">active codes page</a> — Ubisoft drops OS Protocol selection boxes during events sometimes, and you don't want to miss those.</p>
+          <p>The one source with published odds is the <strong style="color: #fff;">OS Protocol Sealed Cache</strong>: Ubisoft lists {protocol.name} {osDrop ? <>as a <strong style="color: var(--accent);">{osDrop.tier}</strong> entry at <strong style="color: var(--accent);">{osDrop.chance}</strong> per cache</> : 'in the cache table'} (see Official Drop Odds below). Since Season 1 Phase 3, a Tier S result comes up 2% of the time, up from 0.5%, and is guaranteed within 50 pulls instead of 90, per the <a href="/patch-notes/season-1-phase-3-a-new-fire/" style="color: var(--accent);">Season 1 Phase 3 patch notes</a>. That guarantee is for any Tier S result, not this protocol.</p>
+          <p>Protocols also drop from regular play, and Ubisoft doesn't publish odds for those. {protocol.rarity === 'High-End' ? 'Gold ones are the rare ones, so endgame content and the Dark Zone vendor rotation are worth checking.' : protocol.rarity === 'Superior' ? 'Purple ones turn up regularly once you are in endgame content.' : 'Blue ones are common from early endgame on.'} Keep an eye on the <a href="/guides/division-resurgence-codes/" style="color: var(--accent);">active codes page</a> too, since event rewards sometimes include protocol selection boxes.</p>
         </div>
       </div>
-      {protocol.name === 'Dominating Presence' && (
-        <div class="protocol-section">
-          <h2 class="protocol-section__title">Featured Build</h2>
-          <a href="/builds/milkshake-machine-strawberry-milkshake-lmg-build/" class="protocol-build-link">
-            <div>
-              <strong style="color: #fff;">The Milkshake Machine</strong>
-              <span style="display: block; font-size: var(--text-sm); color: var(--ink-muted); margin-top: 2px;">Strawberry Milkshake LMG · Vanguard · Phalanx Attack 4pc + Fury Strike 2pc</span>
-            </div>
-            <span style="font-family: var(--font-mono); font-size: var(--text-xs); font-weight: 700; text-transform: uppercase; color: #fff; background: rgba(242,104,34,0.2); border: 1px solid rgba(242,104,34,0.4); padding: 8px 16px; border-radius: 6px; white-space: nowrap;">View Build →</span>
-          </a>
-        </div>
-      )}
-      {protocol.name === 'Death From Afar' && (
-        <div class="protocol-section">
-          <h2 class="protocol-section__title">Featured Build</h2>
-          <a href="/builds/bulwark-breacher-build-saiynergy/" class="protocol-build-link">
-            <div>
-              <strong style="color: #fff;">Bulwark Breacher · 334k DPS Shield Wall</strong>
-              <span style="display: block; font-size: var(--text-sm); color: var(--ink-muted); margin-top: 2px;">Saiynergy · Breacher · Fury Strike 4pc + Phalanx Attack 2pc</span>
-            </div>
-            <span style="font-family: var(--font-mono); font-size: var(--text-xs); font-weight: 700; text-transform: uppercase; color: #fff; background: rgba(242,104,34,0.2); border: 1px solid rgba(242,104,34,0.4); padding: 8px 16px; border-radius: 6px; white-space: nowrap;">View Build →</span>
-          </a>
-        </div>
-      )}
-      {protocol.name === 'Brains Over Brawn' && (
-        <div class="protocol-section">
-          <h2 class="protocol-section__title">Featured Build</h2>
-          <a href="/builds/tech-aegis-engineering-build-tampishach/" class="protocol-build-link">
-            <div>
-              <strong style="color: #fff;">Tech Aegis · 237k DPS Skill Crit</strong>
-              <span style="display: block; font-size: var(--text-sm); color: var(--ink-muted); margin-top: 2px;">Tampishach · Tech Aegis · Long-term Effect 4pc + Jackpot 2pc</span>
-            </div>
-            <span style="font-family: var(--font-mono); font-size: var(--text-xs); font-weight: 700; text-transform: uppercase; color: #fff; background: rgba(242,104,34,0.2); border: 1px solid rgba(242,104,34,0.4); padding: 8px 16px; border-radius: 6px; white-space: nowrap;">View Build →</span>
-          </a>
-        </div>
-      )}
-      {protocol.name === 'Pressing Matter' && (
-        <div class="protocol-section">
-          <h2 class="protocol-section__title">Featured Build</h2>
-          <a href="/builds/demolitionist-glass-cannon-build-pveenjoyer/" class="protocol-build-link">
-            <div>
-              <strong style="color: #fff;">Demolitionist Glass Cannon · 333k DPS</strong>
-              <span style="display: block; font-size: var(--text-sm); color: var(--ink-muted); margin-top: 2px;">PVE Enjoyer · Demolitionist · Fire Cycle 4pc + Jackpot 2pc · Toymaker II</span>
-            </div>
-            <span style="font-family: var(--font-mono); font-size: var(--text-xs); font-weight: 700; text-transform: uppercase; color: #fff; background: rgba(242,104,34,0.2); border: 1px solid rgba(242,104,34,0.4); padding: 8px 16px; border-radius: 6px; white-space: nowrap;">View Build →</span>
-          </a>
-        </div>
-      )}
-      {protocol.name === 'Rampart' && (
-        <div class="protocol-section">
-          <h2 class="protocol-section__title">Featured Build</h2>
-          <a href="/builds/jackpot-striker-drone-tech-operator-build/" class="protocol-build-link">
-            <div>
-              <strong style="color: #fff;">Jackpot Striker Drone · Tech Operator</strong>
-              <span style="display: block; font-size: var(--text-sm); color: var(--ink-muted); margin-top: 2px;">RapidF5 · Tech Operator · Jackpot 4pc + Fire Cycle 2pc</span>
-            </div>
-            <span style="font-family: var(--font-mono); font-size: var(--text-xs); font-weight: 700; text-transform: uppercase; color: #fff; background: rgba(242,104,34,0.2); border: 1px solid rgba(242,104,34,0.4); padding: 8px 16px; border-radius: 6px; white-space: nowrap;">View Build →</span>
-          </a>
-        </div>
-      )}
+      <DbItemExtras kind="os-protocol" name={protocol.name} />
 
       <!-- Related Links -->
       <div class="protocol-related">

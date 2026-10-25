@@ -25,3 +25,10 @@ export const CURRENT_PATCH_PLAIN = 'Season 2 Phase 2';
 export function verifiedPatch(pageVerified?: string): string {
   return pageVerified || CURRENT_PATCH;
 }
+
+/**
+ * Date the database item templates were last edited (drop odds, build links,
+ * copy fixes). This is NOT an in-game re-verification: the "Last verified"
+ * badge still follows verifiedPatch() above. Bump it when the templates change.
+ */
+export const DATABASE_UPDATED = '2026-10-25';

@@ -1,0 +1,85 @@
+---
+// Official drop odds + "builds that mention this" + page dates, shared by every
+// database item template. Data: src/data/drop-rates.json and the builds collection.
+import { dropRowsFor, cacheRules, buildsMentioning, dropSource, dropChecked, fmtDate, type DbKind } from '../utils/db-enrich';
+import { DATABASE_UPDATED } from '../data/site-config';
+
+interface Props {
+  kind: DbKind;
+  name: string;
+  /** Show the drop odds block (off for item types Ubisoft's cache table doesn't cover). */
+  drops?: boolean;
+  /** Build URLs the page already lists in a curated section, so they aren't repeated. */
+  exclude?: string[];
+}
+const { kind, name, drops = true, exclude = [] } = Astro.props;
+
+const rows = drops ? dropRowsFor(kind, name) : [];
+const rules = cacheRules(rows);
+const norm = (u: string) => u.replace(/\/?$/, '/');
+const excluded = new Set(exclude.map(norm));
+const builds = (await buildsMentioning(kind, name)).filter((b) => !excluded.has(norm(b.url)));
+const showBuilds = builds.length > 0 || excluded.size === 0;
+const cacheIds = [...new Set(rows.map((r) => r.cacheId))];
+---
+
+{rows.length > 0 && (
+  <section class="dbx-section" aria-labelledby="dbx-drops">
+    <h2 id="dbx-drops" class="dbx-title">Official Drop Odds</h2>
+    <p>Ubisoft publishes the odds for every sealed cache in its Help Center. These are all the entries for <strong>{name}</strong>, as a chance per cache opened.{rules && <> Every pull rolls a tier first (Tier S {rules.tierRates.S}, Tier A {rules.tierRates.A}, Tier B {rules.tierRates.B}), with a Tier S result guaranteed within {rules.pity.S} pulls and a Tier A result within {rules.pity.A}. The pity guarantees a Tier S item, not this one.</>}</p>
+    <div class="dbx-table-wrap">
+      <table class="dbx-table">
+        <thead><tr><th scope="col">Cache</th><th scope="col">Entry</th><th scope="col">Tier</th><th scope="col">Chance</th></tr></thead>
+        <tbody>
+          {rows.map((r) => (
+            <tr><td><a href={`/database/drop-rates/#${r.cacheId}`}>{r.cache}</a></td><td>{r.label}</td><td>{r.tier}</td><td class="dbx-num">{r.chance}</td></tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+    <p class="dbx-note">Source: <a href={dropSource} target="_blank" rel="noopener noreferrer">Ubisoft Help Center, "Drop rates"</a>, checked {fmtDate(dropChecked)}. Full table{cacheIds.length > 1 ? 's' : ''} on our <a href={`/database/drop-rates/#${cacheIds[0]}`}>drop rates page</a>. Caches are one way to get it, not the only one.</p>
+  </section>
+)}
+
+{showBuilds && (
+<section class="dbx-section" aria-labelledby="dbx-builds">
+  <h2 id="dbx-builds" class="dbx-title">{excluded.size > 0 ? 'Other Builds' : 'Builds'} That Mention {name}</h2>
+  {builds.length > 0 ? (
+    <>
+      <p>Build guides on this site that name {name}, as a core piece or as an alternative. Open the guide to see how it is used.</p>
+      <ul class="dbx-builds">
+        {builds.map((b) => (
+          <li>
+            <a href={b.url}>{b.title}</a>
+            <span class="dbx-meta">{b.specialization} · {b.patch}{!b.verified && ' · creator build, not ranked yet'}</span>
+          </li>
+        ))}
+      </ul>
+    </>
+  ) : (
+    <p>None of our build guides mention {name} yet. Browse the <a href="/builds/">builds database</a> or try it in the <a href="/builder/">Build Planner</a>.</p>
+  )}
+</section>
+)}
+
+<p class="dbx-dates">Page updated <time datetime={DATABASE_UPDATED}>{fmtDate(DATABASE_UPDATED)}</time>.{rows.length > 0 && <> Drop odds checked <time datetime={dropChecked}>{fmtDate(dropChecked)}</time>.</>}</p>
+
+<style>
+  .dbx-section { margin-bottom: var(--sp-8); color: #c8c8d0; line-height: 1.75; font-size: var(--text-base); }
+  .dbx-section a { color: var(--accent); }
+  .dbx-title {
+    font-family: var(--font-heading); font-size: var(--text-lg); font-weight: 800; color: #fff;
+    margin: 0 0 var(--sp-4) 0; padding-bottom: var(--sp-2); border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+  .dbx-table-wrap { overflow-x: auto; margin: var(--sp-4) 0; }
+  .dbx-table { width: 100%; border-collapse: collapse; font-size: var(--text-sm); }
+  .dbx-table th, .dbx-table td { text-align: left; padding: 8px 10px; border-bottom: 1px solid rgba(255,255,255,0.06); vertical-align: top; }
+  .dbx-table th { font-family: var(--font-mono); font-size: var(--text-xs); text-transform: uppercase; letter-spacing: 0.06em; color: var(--ink-muted); }
+  .dbx-num { font-family: var(--font-mono); white-space: nowrap; color: #fff; }
+  .dbx-note { font-size: var(--text-sm); color: var(--ink-muted); }
+  .dbx-builds { list-style: none; padding: 0; margin: var(--sp-4) 0 0; display: flex; flex-direction: column; gap: 8px; }
+  .dbx-builds li { padding: var(--sp-3) var(--sp-4); background: rgba(0,0,0,0.2); border: 1px solid rgba(255,255,255,0.05); border-radius: 8px; }
+  .dbx-builds a { font-weight: 700; text-decoration: none; }
+  .dbx-meta { display: block; font-size: var(--text-sm); color: var(--ink-muted); }
+  .dbx-dates { font-family: var(--font-mono); font-size: var(--text-xs); color: var(--ink-muted); margin: 0 0 var(--sp-6); }
+</style>

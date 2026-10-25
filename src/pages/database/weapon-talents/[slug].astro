@@ -7,7 +7,8 @@ import { truncateDesc, metaDescription } from '../../../utils/seo';
 import weaponTalents from '../../../data/weapon-talents.json';
 import wtNotes from '../../../data/weapon-talent-notes.json';
 import { isWeaponTalentIndexable } from '../../../utils/indexability.mjs';
-import { verifiedPatch } from '../../../data/site-config';
+import DbItemExtras from '../../../components/DbItemExtras.astro';
+import { verifiedPatch, DATABASE_UPDATED } from '../../../data/site-config';
 const lastVerified = verifiedPatch('Patch 1.1.2.2'); // Bump: drop the arg ONLY after re-verifying this page's content in-game (CURRENT_PATCH is a ceiling, not an auto-bump)
 
 export function getStaticPaths() {
@@ -33,7 +34,7 @@ function getBuildArchetype(description: string): { primary: string; label: strin
     return {
       primary: 'hybrid',
       label: 'Hybrid DPS / Engineering',
-      prose: `This is a hybrid talent that bridges the gap between shooting and skill usage. It rewards agents who actively use both their weapons and skills in combat — not just sitting back lobbing turrets, and not just holding the trigger and ignoring your cooldowns. If you run a build that does both, this talent is basically free damage everywhere.`,
+      prose: `This is a hybrid talent that bridges the gap between shooting and skill usage. It rewards agents who actively use both their weapons and skills in combat: not just sitting back lobbing turrets, and not just holding the trigger and ignoring your cooldowns. If you run a build that does both, this talent is basically free damage everywhere.`,
       builds: `Hybrid builds that split between Firepower and Engineering get the most mileage here. Vanguards and Field Medics who actually shoot their guns (yes, you should be shooting) will love this. It's also solid on any DPS build that uses offensive skills like the Artillery Turret or Striker Drone alongside their primary weapon.`
     };
   }
@@ -57,7 +58,7 @@ function getBuildArchetype(description: string): { primary: string; label: strin
     return {
       primary: 'tank',
       label: 'Tank / Survivability',
-      prose: `A survivability talent for agents who like staying alive. This won't win any DPS contests, but it keeps you in the fight when things get ugly. Pair it with Toughness-stacked gear and you become the agent who just won't go down — the cockroach of the squad, if you will.`,
+      prose: `A survivability talent for agents who like staying alive. This won't win any DPS contests, but it keeps you in the fight when things get ugly. Pair it with Toughness-stacked gear and you become the agent who just won't go down: the cockroach of the squad, if you will.`,
       builds: `Bulwark Breacher shield builds are the obvious pick. Any frontline tank running high Toughness with a Phalanx Shield or drawing aggro for the team. Also solid on solo players who need to facetank when there's no healer around. Dark Zone PvP builds that need to survive burst damage will consider this too.`
     };
   }
@@ -82,7 +83,7 @@ function getBuildArchetype(description: string): { primary: string; label: strin
       primary: 'utility',
       label: 'Utility / Quality of Life',
       prose: `A utility talent focused on reload speed. Faster reloads mean less downtime, more damage uptime, and fewer awkward moments where you're stuck in a reload animation while a rusher is in your face. It's not glamorous, but time-spent-not-shooting is time-spent-dying.`,
-      builds: `LMG builds benefit the most since their base reload speed is glacial. AR and SMG builds that burn through mags quickly also appreciate the smoother flow. Any build where you find yourself dying during reloads should consider this — it's a QoL boost that translates directly to DPS uptime.`
+      builds: `LMG builds benefit the most since their base reload speed is glacial. AR and SMG builds that burn through mags quickly also appreciate the smoother flow. Any build where you find yourself dying during reloads should consider this: it's a QoL boost that translates directly to DPS uptime.`
     };
   }
 
@@ -104,7 +105,7 @@ const archetype = getBuildArchetype(talent.description);
 const notes: any = (wtNotes as any)[slug];
 const indexable = isWeaponTalentIndexable(talent, notes);
 
-const title = `${talent.name} — Weapon Talent`;
+const title = `${talent.name}: Weapon Talent`;
 const description = metaDescription(notes?.usageNotes, `${talent.name} weapon talent in The Division Resurgence: what it does, which builds run it, and how to get it.`);
 
 const breadcrumbs = [
@@ -124,7 +125,7 @@ const faqs = notes ? [
 ] : [
   {
     question: `Is ${talent.name} a good weapon talent in Division Resurgence?`,
-    answer: `${talent.name} is a ${archetype.label} talent. ${archetype.prose.split('.')[0]}. How good it is depends entirely on your build — if you're running a ${archetype.primary === 'dps' || archetype.primary === 'dps-crit' ? 'Firepower' : archetype.primary === 'engineering' ? 'Engineering' : archetype.primary === 'tank' ? 'Toughness' : archetype.primary === 'support' ? 'healer' : 'balanced'}-focused setup, it pulls its weight. On the wrong build, it's wasted potential.`
+    answer: `${talent.name} is a ${archetype.label} talent. ${archetype.prose.split('.')[0]}. How good it is depends entirely on your build: if you're running a ${archetype.primary === 'dps' || archetype.primary === 'dps-crit' ? 'Firepower' : archetype.primary === 'engineering' ? 'Engineering' : archetype.primary === 'tank' ? 'Toughness' : archetype.primary === 'support' ? 'healer' : 'balanced'}-focused setup, it pulls its weight. On the wrong build, it's wasted potential.`
   },
   {
     question: `What builds should use ${talent.name} in Division Resurgence?`,
@@ -146,7 +147,7 @@ const talentLd = {
   publisher: { '@type': 'Organization', '@id': `${siteUrl}/#organization`, name: 'Resurgence Builds' },
   mainEntityOfPage: { '@type': 'WebPage', '@id': `${siteUrl}/database/weapon-talents/${slug}/` },
   datePublished: '2026-05-30',
-  dateModified: '2026-05-30',
+  dateModified: DATABASE_UPDATED,
   image: { '@type': 'ImageObject', url: `${siteUrl}/images/resurgence-builds-official-logo.png`, width: 800, height: 800 },
   inLanguage: 'en-US',
   lastReviewed: '2026-05-30',
@@ -220,7 +221,7 @@ const talentLd = {
       <div style="margin-bottom: var(--sp-8);">
         <h2 style="font-family: var(--font-heading); font-size: var(--text-lg); font-weight: 800; color: #fff; margin: 0 0 var(--sp-4) 0; padding-bottom: var(--sp-2); border-bottom: 1px solid rgba(255,255,255,0.08);">Combat Tips</h2>
         <div style="color: #c8c8d0; line-height: 1.75; font-size: var(--text-base);">
-          <p>{archetype.label.includes('DPS') ? `To get the most out of ${talent.name}, pair it with high-RPM weapons like SMGs or LMGs that can trigger or stack the effect quickly. Weapon Critical Hit Chance and Weapon Critical Hit Damage bonus attributes amplify the payoff. In group content, position behind your tank and focus fire on priority targets during the buff window.` : archetype.label.includes('Tank') ? `${talent.name} rewards staying in the fight. Build around Toughness core stats with Max Health and Armor bonus attributes to extend your survivability while the talent does its work. In group content, draw aggro and hold position — your squad's DPS players will thank you for the stable target.` : archetype.label.includes('Support') ? `${talent.name} shines in group content where your healing and support actions can benefit the full squad. Run it alongside Healing Hive or Support Station for consistent proc uptime. Stack Received Healing bonus attributes on your team's builds to amplify the effect.` : archetype.label.includes('Engineering') ? `${talent.name} scales with skill deployment. Keep your skills active and cycling — Skill Cooldown Recovery bonus attributes are your friend. Tech Operator and Field Medic builds can maintain near-permanent uptime with the right gear set pairings.` : `${talent.name} offers flexibility across multiple build types. Test different weapon pairings to find the trigger cadence that matches your playstyle. Recalibrate at the Recalibration Station if your current weapon roll does not have this talent.`}</p>
+          <p>{archetype.label.includes('DPS') ? `To get the most out of ${talent.name}, pair it with high-RPM weapons like SMGs or LMGs that can trigger or stack the effect quickly. Weapon Critical Hit Chance and Weapon Critical Hit Damage bonus attributes amplify the payoff. In group content, position behind your tank and focus fire on priority targets during the buff window.` : archetype.label.includes('Tank') ? `${talent.name} rewards staying in the fight. Build around Toughness core stats with Max Health and Armor bonus attributes to extend your survivability while the talent does its work. In group content, draw aggro and hold position: your squad's DPS players will thank you for the stable target.` : archetype.label.includes('Support') ? `${talent.name} shines in group content where your healing and support actions can benefit the full squad. Run it alongside Healing Hive or Support Station for consistent proc uptime. Stack Received Healing bonus attributes on your team's builds to amplify the effect.` : archetype.label.includes('Engineering') ? `${talent.name} scales with skill deployment. Keep your skills active and cycling: Skill Cooldown Recovery bonus attributes are your friend. Tech Operator and Field Medic builds can maintain near-permanent uptime with the right gear set pairings.` : `${talent.name} offers flexibility across multiple build types. Test different weapon pairings to find the trigger cadence that matches your playstyle. Recalibrate at the Recalibration Station if your current weapon roll does not have this talent.`}</p>
         </div>
       </div>
       )}
@@ -252,8 +253,8 @@ const talentLd = {
       <div style="margin-bottom: var(--sp-8);">
         <h2 style="font-family: var(--font-heading); font-size: var(--text-lg); font-weight: 800; color: #fff; margin: 0 0 var(--sp-4) 0; padding-bottom: var(--sp-2); border-bottom: 1px solid rgba(255,255,255,0.08);">Synergies &amp; Stacking</h2>
         <div style="color: #c8c8d0; line-height: 1.75; font-size: var(--text-base);">
-          <p>Weapon talents in Division Resurgence stack <strong style="color: #fff;">multiplicatively</strong> with gear set bonuses and OS Protocol talents — meaning the right combo doesn't just add damage, it multiplies your total output. {talent.name} paired with a matching gear set and OS Protocol can push your effective damage or survivability 30-50% higher than running mismatched pieces.</p>
-          <p>{archetype.primary === 'dps' || archetype.primary === 'dps-crit' ? `For a DPS-oriented talent like ${talent.name}, stack it with Fury Strike (Crit builds) or Phalanx Attack (sustained fire). Your OS Protocol should be Firepower-specced — look for ones with Weapon Damage or Crit Damage main stats. The 4-piece gear set bonus multiplies on top of the weapon talent proc, so timing your talent activation with your gear set buff window is where the real damage lives.` : archetype.primary === 'engineering' ? `Skill-focused talents like ${talent.name} pair beautifully with Jackpot (Skill Crit) or Long-term Effect (Skill Duration). Your OS Protocol should stack Engineering — Skill Intensity or Skill Crit Damage main stats. The multiplicative stacking between your weapon talent, gear set 4pc, and OS Protocol talent is where skill builds go from "decent" to "everything dies before the cooldown resets."` : archetype.primary === 'tank' ? `Survivability talents like ${talent.name} get compounded by Fearless Warrior (Damage + DR) or Self-Propelled Shield (Armor/Health). Run a Toughness OS Protocol with Armor or Damage Reduction main stat. The multiplicative stacking means your effective HP can double compared to running unmatched gear — and in Legendary content or DZ PvP, that's the difference between clutching and spectating.` : archetype.primary === 'support' ? `Healing talents like ${talent.name} stack with Dr. Medic (Healing output) and Healing Elites (if you have access). Your OS Protocol should lean Engineering for Skill Intensity, which directly scales heal strength. The stacking makes your heals go from "nice" to "keeping the entire squad alive through a Legendary boss room."` : `${talent.name} has flexible synergies. Match it with gear sets that complement your primary playstyle — Fury Strike for DPS, Jackpot for skills, Fearless Warrior for tanking. Your OS Protocol should align with the same core attribute. The multiplicative stacking between all three layers (weapon talent + gear set 4pc + OS Protocol talent) is how you turn a build from functional to dominant.`}</p>
+          <p>{talent.name} works best when your gear set and OS Protocol push the same stats the talent rewards. Check the combination in the <a href="/builder/" style="color: var(--accent);">Build Planner</a> before you commit materials to it.</p>
+          <p>{archetype.primary === 'dps' || archetype.primary === 'dps-crit' ? `For a DPS-oriented talent like ${talent.name}, stack it with Fury Strike (Crit builds) or Phalanx Attack (sustained fire). Your OS Protocol should be Firepower-specced: look for ones with Weapon Damage or Crit Damage main stats. The 4-piece gear set bonus multiplies on top of the weapon talent proc, so timing your talent activation with your gear set buff window is where the real damage lives.` : archetype.primary === 'engineering' ? `Skill-focused talents like ${talent.name} pair beautifully with Jackpot (Skill Crit) or Long-term Effect (Skill Duration). Your OS Protocol should stack Engineering: Skill Intensity or Skill Crit Damage main stats. The multiplicative stacking between your weapon talent, gear set 4pc, and OS Protocol talent is where skill builds go from "decent" to "everything dies before the cooldown resets."` : archetype.primary === 'tank' ? `Survivability talents like ${talent.name} get compounded by Fearless Warrior (Damage + DR) or Self-Propelled Shield (Armor/Health). Run a Toughness OS Protocol with Armor or Damage Reduction main stat. The multiplicative stacking means your effective HP can double compared to running unmatched gear: and in Legendary content or DZ PvP, that's the difference between clutching and spectating.` : archetype.primary === 'support' ? `Healing talents like ${talent.name} stack with Dr. Medic (Healing output) and Healing Elites (if you have access). Your OS Protocol should lean Engineering for Skill Intensity, which directly scales heal strength. The stacking makes your heals go from "nice" to "keeping the entire squad alive through a Legendary boss room."` : `${talent.name} has flexible synergies. Match it with gear sets that complement your primary playstyle: Fury Strike for DPS, Jackpot for skills, Fearless Warrior for tanking. Your OS Protocol should align with the same core attribute. The multiplicative stacking between all three layers (weapon talent + gear set 4pc + OS Protocol talent) is how you turn a build from functional to dominant.`}</p>
         </div>
       </div>
       )}
@@ -263,11 +264,13 @@ const talentLd = {
       <div style="margin-bottom: var(--sp-8);">
         <h2 style="font-family: var(--font-heading); font-size: var(--text-lg); font-weight: 800; color: #fff; margin: 0 0 var(--sp-4) 0; padding-bottom: var(--sp-2); border-bottom: 1px solid rgba(255,255,255,0.08);">How to Get {talent.name}</h2>
         <div style="color: #c8c8d0; line-height: 1.75; font-size: var(--text-base);">
-          <p>Weapon talents roll randomly on <strong style="color: #fff;">Tier 2 weapons</strong> — any T2 drop has a chance to have {talent.name}. Your best farming spots are Heroic missions (guaranteed T2 drops on completion), the DZ (extracted weapons are frequently T2), and weekly bounties. Conflict reward caches also drop T2 weapons with random talents.</p>
+          <p>Weapon talents roll randomly on <strong style="color: #fff;">Tier 2 weapons</strong>: any T2 drop has a chance to have {talent.name}. Your best farming spots are Heroic missions (guaranteed T2 drops on completion), the DZ (extracted weapons are frequently T2), and weekly bounties. Conflict reward caches also drop T2 weapons with random talents.</p>
           <p>Once you find a weapon with {talent.name}, you can use it as a source to <strong style="color: #fff;">re-roll the talent</strong> onto another weapon at the recalibration station. Keep in mind: each weapon only gets <strong style="color: var(--accent);">one recalibration slot</strong>. If you recalibrated a stat on the weapon already, you can't also swap the talent. Plan your recalibrations before you commit. Check the <a href="/guides/division-resurgence-codes/" style="color: var(--accent);">active codes page</a> too - Ubisoft occasionally drops weapon caches during events that can have solid talent rolls.</p>
         </div>
       </div>
       )}
+
+      <DbItemExtras kind="weapon-talent" name={talent.name} drops={false} exclude={notes?.metaBuilds?.map((b: any) => b.url) ?? []} />
 
       <!-- Related links -->
       <div style="display: flex; flex-wrap: wrap; gap: var(--sp-3); padding-top: var(--sp-6); border-top: 1px solid rgba(255,255,255,0.08);">

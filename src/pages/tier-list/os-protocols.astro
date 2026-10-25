@@ -3,7 +3,10 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import SectionTag from '../../components/SectionTag.astro';
 import { verifiedPatch } from '../../data/site-config';
-const lastVerified = verifiedPatch('Patch 1.1.2.2'); // Bump: drop the arg ONLY after re-verifying this page's content in-game (CURRENT_PATCH is a ceiling, not an auto-bump)
+const lastVerified = verifiedPatch('Patch 1.1.2.2');
+// Date the Update note below was last checked against the official patch notes (not an in-game re-rank).
+const NOTES_CHECKED = '2026-10-25';
+const notesCheckedLabel = new Date(NOTES_CHECKED + 'T12:00:00Z').toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC' }); // Bump: drop the arg ONLY after re-verifying this page's content in-game (CURRENT_PATCH is a ceiling, not an auto-bump)
 
 const breadcrumbItems = [{ name: 'Tier Lists', url: '/tier-list/' }, { name: 'OS Protocol Tier List', url: '/tier-list/os-protocols/' }];
 
@@ -120,11 +123,12 @@ const faqs = [
     <SectionTag label="Meta Ranking" />
     <h1 class="heading-accent">OS Protocol Tier List</h1>
     <p style="color:var(--ink-muted);margin-bottom:var(--sp-3);">
-      Every OS Protocol ranked for {lastVerified}. <strong>S-Tier</strong> protocols are the best in the game — equip these and don't look back. <strong>A-Tier</strong> protocols are strong class-specific picks that anchor endgame builds. <strong>B-Tier</strong> protocols are solid placeholders while you farm for the good stuff. <strong>C-Tier</strong> protocols get replaced as soon as something better drops. <strong>D-Tier</strong> protocols are basically empty slots.
+      Every OS Protocol ranked for {lastVerified}. <strong>S-Tier</strong> protocols are the best in the game. Equip these and don't look back. <strong>A-Tier</strong> protocols are strong class-specific picks that anchor endgame builds. <strong>B-Tier</strong> protocols are solid placeholders while you farm for the good stuff. <strong>C-Tier</strong> protocols get replaced as soon as something better drops. <strong>D-Tier</strong> protocols are basically empty slots.
     </p>
 
     <p style="color:var(--ink-muted);margin-bottom:var(--sp-3);">
-      <strong>Update (October 2026):</strong> these tiers have not been re-ranked since {lastVerified}. Official changes since then: Applied Demolition was buffed in Season 1 Phase 3 (Skill Crit Damage 24% to 43.2% at base), Pummeling Shield's stun got a 10-second cooldown and dropped from 2s to 1.5s in the June 26 hotfix, Dominating Presence started granting the Multi-Shot it promised in Season 2 Phase 1 and had its maximum cut in Phase 2, and Concerted Strike (range check) and Relentless Assault (damage type) were fixed in Season 2 Phase 2. Treat the placements of those five as the most likely to be off. One creator data point since: in GGReborn's October 23 Lone Wolf test on his Tactical Pharma build, Chain Reaction, Collateral Damage, Tactical Persistence and Brains Over Brawn finished within five seconds of each other (<a href="/builds/tactical-pharma-season-2-build-ggreborn/" style="color: var(--accent); text-decoration: underline;">details</a>).
+      <strong>Update (October 2026):</strong> these tiers have not been re-ranked since {lastVerified}. Official changes since then: Applied Demolition was buffed in Season 1 Phase 3 (Skill Crit Damage 24% to 43.2% at base), Pummeling Shield's stun got a 10-second cooldown and dropped from 2s to 1.5s in the June 26 hotfix, Dominating Presence started granting the Multi-Shot it promised in Season 2 Phase 1 and had its maximum cut in Phase 2, and Concerted Strike (range check) and Relentless Assault (damage type) were fixed in Season 2 Phase 2. Season 2 Phase 1 also made a Concerted Strike trigger on shots instead of hits, though Ubisoft's notes file that one under Commando, so it may not be this protocol (<a href="/patch-notes/season-2-phase-1-the-call/" style="color: var(--accent); text-decoration: underline;">patch notes</a>). Treat the placements of those five as the most likely to be off. One creator data point since: in GGReborn's October 23 Lone Wolf test on his Tactical Pharma build, Chain Reaction, Collateral Damage, Tactical Persistence and Brains Over Brawn finished within five seconds of each other (<a href="/builds/tactical-pharma-season-2-build-ggreborn/" style="color: var(--accent); text-decoration: underline;">details</a>).
+     Notes checked against the official patch notes on <time datetime={NOTES_CHECKED}>{notesCheckedLabel}</time>.
     </p>
 
     <div style="display: inline-flex; align-items: center; gap: 6px; font-family: var(--font-mono); font-size: var(--text-xs); color: #6DAA45; background: rgba(109, 170, 69, 0.1); border: 1px solid rgba(109, 170, 69, 0.25); padding: 6px 14px; border-radius: 999px; margin-bottom: var(--sp-6); letter-spacing: 0.02em;">

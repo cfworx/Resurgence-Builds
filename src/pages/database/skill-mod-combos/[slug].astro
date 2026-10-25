@@ -7,7 +7,8 @@ import { truncateDesc, fixPlurals, metaDescription } from '../../../utils/seo';
 import skillMods from '../../../data/skill-mod-combos.json';
 import smcNotes from '../../../data/skill-mod-combo-notes.json';
 import { isSkillModIndexable } from '../../../utils/indexability.mjs';
-import { verifiedPatch } from '../../../data/site-config';
+import DbItemExtras from '../../../components/DbItemExtras.astro';
+import { verifiedPatch, DATABASE_UPDATED } from '../../../data/site-config';
 const lastVerified = verifiedPatch('Patch 1.1.2.2'); // Bump: drop the arg ONLY after re-verifying this page's content in-game (CURRENT_PATCH is a ceiling, not an auto-bump)
 
 export function getStaticPaths() {
@@ -37,7 +38,7 @@ const isVague = !mod.bonus3 || (mod.bonus3.length < 100 && !/\d/.test(mod.bonus3
 const notes: any = (smcNotes as any)[slug];
 const indexable = isSkillModIndexable(mod, notes);
 
-const title = `${mod.name} — ${mod.specialization} Skill Mod`;
+const title = `${mod.name}: ${mod.specialization} Skill Mod`;
 const description = metaDescription(notes?.usageNotes, `${mod.name} skill mod combo in The Division Resurgence: 2-piece and 3-piece bonuses, best builds, and how to farm the set.`);
 
 const breadcrumbs = [
@@ -104,18 +105,18 @@ const targetSkill = getSkillsFromBonus(mod.bonus3, mod.specialization);
 
 // Build context based on specialization
 const specOverview: Record<string, string> = {
-  'Demolitionist': 'Demolitionist builds revolve around explosive AoE damage — Artillery Turrets, Seeker Mines, and the M32A1 Grenade Launcher. This spec stacks Engineering and Skill Crit to turn skills into room-clearing nukes. Pair the right mod combo with Jackpot or Fire Cycle gear sets and the numbers get silly fast.',
+  'Demolitionist': 'Demolitionist builds revolve around explosive AoE damage: Artillery Turrets, Seeker Mines, and the M32A1 Grenade Launcher. This spec stacks Engineering and Skill Crit to turn skills into room-clearing nukes. Pair the right mod combo with Jackpot or Fire Cycle gear sets and the numbers get silly fast.',
   'Tech Operator': 'Tech Operator builds live and die by the Striker Drone. Your drone is your primary damage source, your utility tool, and sometimes your healer all at once. Stack Engineering, Skill Crit, and drone-specific bonuses and watch it shred everything in the room before you finish reloading.',
-  'Bulwark': 'Bulwark is the wall. Your entire kit revolves around the Phalanx Shield — absorbing hits, face-tanking bosses, and making your team feel safe enough to actually play the game. Toughness stacking is king, but the right mod combo can turn a pure tank into a surprisingly punchy brawler.',
+  'Bulwark': 'Bulwark is the wall. Your entire kit revolves around the Phalanx Shield: absorbing hits, face-tanking bosses, and making your team feel safe enough to actually play the game. Toughness stacking is king, but the right mod combo can turn a pure tank into a surprisingly punchy brawler.',
   'Vanguard': 'Vanguard runs the show with Smart Cover, Scanning Pulse, and Tactical Link. You\'re the team\'s intel officer and force multiplier rolled into one. The best Vanguard builds balance personal firepower with team-wide buffs that make everyone hit harder and die less.',
   'Field Medic': 'Field Medic has two focuses: Combat Medicine (Healing Swarm, Healing Hive, Support Station) and Tactical Pharma (Oxidizing Swarm, Oxidizing Hive, Chemical Trap). The Combat Medicine path can also deal serious damage by stacking Toughness with Defensive Measures. These mod combos determine whether you are a pure healer or a corrosive area-pressure dealer.',
 };
 
 const specBuildGuide: Record<string, string> = {
-  'Demolitionist': `For Demolitionist, this mod combo pairs well with Engineering-stacking gear sets like Jackpot (Skill Crit) and Fire Cycle (Skill Damage loops). Running Pressing Matter or Brains Over Brawn as your OS Protocol gives you multiplicative bonuses on top of whatever the 3-piece talent is doing. The Demolitionist Glass Cannon archetype — running all-in on Engineering with zero survivability — is the highest DPS ceiling in the game for skill builds.`,
+  'Demolitionist': `For Demolitionist, this mod combo pairs well with Engineering-stacking gear sets like Jackpot (Skill Crit) and Fire Cycle (Skill Damage loops). Running Pressing Matter or Brains Over Brawn as your OS Protocol gives you multiplicative bonuses on top of whatever the 3-piece talent is doing. The Demolitionist Glass Cannon archetype, running all-in on Engineering with zero survivability, is the highest DPS ceiling in the game for skill builds.`,
   'Tech Operator': `Tech Operator builds want Long-term Effect (4pc) for Skill Duration and Engineering, plus Jackpot (2pc) for Skill Crit. Brains Over Brawn OS Protocol is the gold standard here. Stack Engineering on every piece and let your Striker Drone become an autonomous killing machine. The EMCAT and Thermite Charge mods are particularly nasty for PvP.`,
-  'Bulwark': `Bulwark builds run Fury Strike (4pc) for Crit stacking or Self-Propelled Shield (4pc) for pure tankiness. Pair with the Death From Afar or Pummeling Shield OS Protocol depending on whether you want to deal damage or absorb it. Saiynergy's 334k DPS Breacher build proves that tanks don't have to be boring — the right mod combo makes you both unkillable and dangerous.`,
-  'Vanguard': `Vanguard builds typically run Phalanx Attack (4pc) for sustained DPS or Fury Strike (4pc) for burst. Dominating Presence OS Protocol is the premium pick. Smart Cover and Scanning Pulse mods give you team-wide buffs that stack with your gear set bonuses — that multiplicative scaling is how top squads push Legendary content.`,
+  'Bulwark': `Bulwark builds run Fury Strike (4pc) for Crit stacking or Self-Propelled Shield (4pc) for pure tankiness. Pair with the Death From Afar or Pummeling Shield OS Protocol depending on whether you want to deal damage or absorb it. Saiynergy's 334k DPS Breacher build proves that tanks don't have to be boring: the right mod combo makes you both unkillable and dangerous.`,
+  'Vanguard': `Vanguard builds typically run Phalanx Attack (4pc) for sustained DPS or Fury Strike (4pc) for burst. Dominating Presence OS Protocol is the premium pick. Smart Cover and Scanning Pulse mods give you team-wide buffs that stack with your gear set bonuses: that multiplicative scaling is how top squads push Legendary content.`,
   'Field Medic': `Field Medic builds have two paths: Combat Medicine with Captain Cow (4pc) and Toughness stacking for healing + Defensive Measures damage, or Tactical Pharma with Jackpot (4pc) and Engineering for Oxidizing Swarm corrosive pressure. The mod combo you choose determines which path hits harder. Chemical Trap mods with Corrosive application are strong in PvP.`,
 };
 
@@ -144,7 +145,7 @@ const faqs = notes ? [
 ] : [
   {
     question: `What does the ${mod.name} skill mod combo do in Division Resurgence?`,
-    answer: `${mod.name} is a ${mod.specialization} skill mod combo focused on ${targetSkill}. Equip 2 matching mods for the 2-piece bonus (${bonus2}), or slot all 3 for the 3-piece: "${bonus3}" — that 3-piece is where the real power is.`
+    answer: `${mod.name} is a ${mod.specialization} skill mod combo focused on ${targetSkill}. Equip 2 matching mods for the 2-piece bonus (${bonus2}), or slot all 3 for the 3-piece: "${bonus3}": that 3-piece is where the real power is.`
   },
   {
     question: `Which builds use ${mod.name} in Division Resurgence?`,
@@ -166,7 +167,7 @@ const modLd = {
   publisher: { '@type': 'Organization', '@id': `${siteUrl}/#organization`, name: 'Resurgence Builds' },
   mainEntityOfPage: { '@type': 'WebPage', '@id': `${siteUrl}/database/skill-mod-combos/${slug}/` },
   datePublished: '2026-05-30',
-  dateModified: '2026-05-30',
+  dateModified: DATABASE_UPDATED,
   image: { '@type': 'ImageObject', url: `${siteUrl}/images/resurgence-builds-official-logo.png`, width: 800, height: 800 },
   inLanguage: 'en-US',
   lastReviewed: '2026-05-30',
@@ -207,7 +208,7 @@ const toModSlug = (name: string) => name.toLowerCase().replace(/[^a-z0-9]+/g, '-
       <div class="smc-section">
         <h2 class="smc-section__title">Overview</h2>
         <div style="color: #c8c8d0; line-height: 1.75; font-size: var(--text-base);">
-          <p><strong style="color: #fff;">{mod.name}</strong> is a <strong style="color: #fff;">{mod.specialization}</strong> Skill Mod Combo in Division Resurgence that buffs your <strong style="color: var(--accent);">{targetSkill}</strong>. Equip 2 mods from this set for a stat bump, or commit to all 3 for the real payoff — a talent-grade bonus that changes how your skill performs in combat.</p>
+          <p><strong style="color: #fff;">{mod.name}</strong> is a <strong style="color: #fff;">{mod.specialization}</strong> Skill Mod Combo in Division Resurgence that buffs your <strong style="color: var(--accent);">{targetSkill}</strong>. Equip 2 mods from this set for a stat bump, or commit to all 3 for the real payoff: a talent-grade bonus that changes how your skill performs in combat.</p>
           <p>{notes ? notes.usageNotes : (specOverview[mod.specialization] || `This mod combo is tied to the ${mod.specialization} specialization and enhances your skill builds when fully equipped.`)}</p>
         </div>
       </div>
@@ -222,7 +223,7 @@ const toModSlug = (name: string) => name.toLowerCase().replace(/[^a-z0-9]+/g, '-
             <span class="smc-bonus-card__label">Piece Bonus</span>
           </div>
           <p class="smc-bonus-card__text">{bonus2}</p>
-          {!notes && <p class="smc-bonus-card__note">A flat stat bump. Not exciting, but it adds up across your loadout. This kicks in just from equipping 2 mods from the {mod.name} set — no effort required.</p>}
+          {!notes && <p class="smc-bonus-card__note">A flat stat bump. Not exciting, but it adds up across your loadout. This kicks in just from equipping 2 mods from the {mod.name} set: no effort required.</p>}
         </div>
 
         <div class="smc-bonus-card smc-bonus-card--3pc">
@@ -231,7 +232,7 @@ const toModSlug = (name: string) => name.toLowerCase().replace(/[^a-z0-9]+/g, '-
             <span class="smc-bonus-card__label">Piece Bonus</span>
           </div>
           <p class="smc-bonus-card__text">{bonus3}</p>
-          {!notes && <p class="smc-bonus-card__note">This is the money shot. The 3-piece bonus is what you're farming for — it fundamentally changes how {targetSkill} interacts with your build and stacks with your gear set bonuses for multiplicative gains.</p>}
+          {!notes && <p class="smc-bonus-card__note">This is the money shot. The 3-piece bonus is what you're farming for: it fundamentally changes how {targetSkill} interacts with your build and stacks with your gear set bonuses for multiplicative gains.</p>}
         </div>
       </div>
 
@@ -272,7 +273,7 @@ const toModSlug = (name: string) => name.toLowerCase().replace(/[^a-z0-9]+/g, '-
             <p>The 3-piece set bonus for {mod.name} provides a specialization-specific enhancement for {mod.specialization} builds. Equipping all three matching skill mods from this combo set unlocks the full potential of the bonus, making it worth farming targeted loot to complete the set.</p>
           ) : (
             <Fragment>
-              <p>{mod.name}'s 3-piece bonus — <em>{bonus3}</em> — is where this combo set earns its slot. {mod.bonus3.toLowerCase().includes('cooldown') ? `Cooldown reduction effects like this stack with Skill Cooldown Recovery bonus attributes and gear set bonuses, creating faster skill rotations that keep your abilities cycling during sustained fights.` : mod.bonus3.toLowerCase().includes('damage') || mod.bonus3.toLowerCase().includes('critical') ? `Damage amplification effects like this stack multiplicatively with Engineering core stats and Skill Intensity bonus attributes. The higher your base skill output, the more this bonus pays off — making it a priority for endgame min-maxing.` : mod.bonus3.toLowerCase().includes('health') || mod.bonus3.toLowerCase().includes('healing') || mod.bonus3.toLowerCase().includes('repair') ? `Healing and survivability bonuses like this scale with your existing sustain stats. Pair with Toughness core stats or Received Healing bonus attributes to push the effect further in endgame group content.` : `This effect layers on top of your existing build stats and stacks with gear set bonuses and OS Protocol effects. Completing the full 3-piece set is worth the investment for any dedicated ${mod.specialization} player.`}</p>
+              <p>{mod.name}'s 3-piece bonus, <em>{bonus3}</em>, is where this combo set earns its slot. {mod.bonus3.toLowerCase().includes('cooldown') ? `Cooldown reduction effects like this stack with Skill Cooldown Recovery bonus attributes and gear set bonuses, creating faster skill rotations that keep your abilities cycling during sustained fights.` : mod.bonus3.toLowerCase().includes('damage') || mod.bonus3.toLowerCase().includes('critical') ? `Damage amplification effects like this stack multiplicatively with Engineering core stats and Skill Intensity bonus attributes. The higher your base skill output, the more this bonus pays off: making it a priority for endgame min-maxing.` : mod.bonus3.toLowerCase().includes('health') || mod.bonus3.toLowerCase().includes('healing') || mod.bonus3.toLowerCase().includes('repair') ? `Healing and survivability bonuses like this scale with your existing sustain stats. Pair with Toughness core stats or Received Healing bonus attributes to push the effect further in endgame group content.` : `This effect layers on top of your existing build stats and stacks with gear set bonuses and OS Protocol effects. Completing the full 3-piece set is worth the investment for any dedicated ${mod.specialization} player.`}</p>
               {mod.bonus3.toLowerCase().includes('cooldown') && <p>Pro tip: Talent cooldown timers on 3-piece bonuses are separate from skill cooldowns. You can reduce your skill cooldowns while the talent cooldown resets independently, giving you back-to-back procs in long engagements.</p>}
             </Fragment>
           )}
@@ -286,7 +287,7 @@ const toModSlug = (name: string) => name.toLowerCase().replace(/[^a-z0-9]+/g, '-
         <h2 class="smc-section__title">Best Builds</h2>
         <div style="color: #c8c8d0; line-height: 1.75; font-size: var(--text-base);">
           <p>{specBuildGuide[mod.specialization] || `This mod combo fits into ${mod.specialization} builds that focus on ${targetSkill} performance. Match it with compatible gear sets and OS Protocols for the best results.`}</p>
-          <p>The 2-piece bonus (<strong style="color: #fff;">{bonus2}</strong>) is a nice baseline stat, but the real build-defining synergy comes from the 3-piece. When you're theory-crafting, treat the 3-piece as a talent slot — if it doesn't synergize with your gear set 4-piece bonus, you're leaving damage on the table.</p>
+          <p>The 2-piece bonus (<strong style="color: #fff;">{bonus2}</strong>) is a nice baseline stat, but the real build-defining synergy comes from the 3-piece. When you're theory-crafting, treat the 3-piece as a talent slot: if it doesn't synergize with your gear set 4-piece bonus, you're leaving damage on the table.</p>
         </div>
       </div>
       )}
@@ -296,11 +297,13 @@ const toModSlug = (name: string) => name.toLowerCase().replace(/[^a-z0-9]+/g, '-
       <div class="smc-section">
         <h2 class="smc-section__title">Synergies</h2>
         <div style="color: #c8c8d0; line-height: 1.75; font-size: var(--text-base);">
-          <p>{specSynergy[mod.specialization] || `Look for gear sets and OS Protocols that stack ${mod.specialization} bonuses. The multiplicative interaction between mod combos and gear set bonuses is where endgame builds get their power.`}</p>
+          <p>{specSynergy[mod.specialization] || `Look for gear sets and OS Protocols that stack ${mod.specialization} bonuses.`}</p>
           <p>Remember: skill mod combo bonuses are a separate layer from gear sets and OS Protocols. They all stack. That's how you go from "decent" to "everything dies before the animation finishes."</p>
         </div>
       </div>
       )}
+
+      <DbItemExtras kind="skill-mod" name={mod.name} exclude={notes?.metaBuilds?.map((b: any) => b.url) ?? []} />
 
       <!-- Related Mods -->
       {relatedMods.length > 0 && (

@@ -2,7 +2,7 @@
 title: "Division Resurgence Codes: October 2026"
 category: "General"
 publishDate: 2026-05-28
-lastUpdated: 2026-10-24T12:00:00Z
+lastUpdated: 2026-10-25T12:00:00Z
 tags: ["codes", "redeem-codes", "promo-codes", "backbone", "twitch-drops", "free-rewards", "ubisoft-connect", "division-resurgence-codes"]
 description: "Division Resurgence codes for October 2026: what is actually active, the official redeem page, Steam launch rewards, Twitch Drops and how to claim."
 author: "RapidF5"
@@ -52,7 +52,7 @@ faqs:
 Quick answer:
 
 - **No public redeem codes are active for Division Resurgence right now.**
-- **The Backbone x Division Resurgence collab** was the only code-style reward bundle when we last checked it in May. Three Superior perks, free, takes five minutes if it's still running.
+- **The Backbone x Division Resurgence collab** is still the only code-style reward bundle. We rechecked it on October 25: [Backbone's own announcement](https://backbone.com/blogs/news/backbone-x-the-division-resurgence-exclusive-in-game-rewards) is still up, says the code works "for a limited time" and gives no end date. Three Superior perks, free, takes five minutes if it's still running.
 - **The official redemption page** is [redeem.ubisoft.com/thedivisionresurgence](https://redeem.ubisoft.com/thedivisionresurgence/). Anything else is third-party.
 - **The Steam launch (August 5, 2026) brought account-wide gifts**, not codes: SHD Keys for everyone, a wishlist-goal apparel set, and a new Twitch Drops campaign.
 - **Twitch Drops have run several times** since launch. We track every one of them below.
@@ -68,7 +68,7 @@ Quick answer:
 | Reward | Status | How to get it |
 |---|---|---|
 | Public redeem code (typed in) | **None, ever** | N/A |
-| Backbone collab bundle | Active when we last checked in May; partner offers rotate | Backbone app → email → redeem page |
+| Backbone collab bundle | Backbone's post still up on October 25, no end date given; confirm in the app | Backbone app → email → redeem page |
 | Twitch Drops | No campaign running that we know of | Watch a Drops-enabled Resurgence stream when one is announced |
 | Division 2 cross-game rewards | Listed on Ubisoft's cross-game rewards page | Play Division 2 on the same Ubisoft account, then claim in the Events tab |
 
@@ -76,7 +76,7 @@ If you only read one section, read the Backbone one below.
 
 ---
 
-## The Partner Reward Code: Backbone Collab (Last Checked May 2026)
+## The Partner Reward Code: Backbone Collab (Last Checked October 2026)
 
 Announced May 5, 2026 by Ubisoft and [covered by TechRadar](https://www.techradar.com/gaming/ubisoft-teams-up-with-backbone-to-offer-the-division-resurgence-players-exclusive-in-game-rewards-heres-how-you-can-claim-yours). This is the first real partner code drop since the global launch. Three Superior-tier perks, free to anyone with the Backbone app:
 
@@ -84,7 +84,7 @@ Announced May 5, 2026 by Ubisoft and [covered by TechRadar](https://www.techrada
 - **Small Laser Pointer**
 - **Maxillan Respirator**
 
-Per TechRadar, you claim it through the Backbone app and then use the rewards in the mobile game. Partner offers change, so check the Backbone app for the current requirements before you count on it.
+Per TechRadar, you claim it through the Backbone app and then use the rewards in the mobile game. When we rechecked on October 25, 2026, [Backbone's own announcement](https://backbone.com/blogs/news/backbone-x-the-division-resurgence-exclusive-in-game-rewards) was still live with the same claim steps, and its fine print says the code is redeemable once per account "for a limited time" without naming an end date. We can't see inside the Backbone app, so we can't confirm the perk is still listed there. Check the app before you count on it.
 
 ### How to Claim the Backbone Bundle
 
@@ -161,7 +161,7 @@ Tied to the PC Early Access launch via Ubisoft Connect. Four watch-time tiers pe
 
 A second pass of launch-era Twitch Drops. The interesting wrinkle: anyone who already owned a drop outfit got **Outfit Fragments worth 10,000 credits each** instead. Players in the [r/thedivisionresurgence thread](https://www.reddit.com/r/thedivisionresurgence/comments/1t1ju0k/would_you_look_at_that/) reported clearing over a million credits from a single rerun.
 
-### Backbone Collab (May 5, 2026; Last Checked in May)
+### Backbone Collab (May 5, 2026; Last Checked October 25)
 
 Covered in detail above. The first individual-code partner promotion the game has done.
 
@@ -243,7 +243,7 @@ No traditional text-entry redeem codes have ever been publicly released for The 
 | Launch week login | NYC Firefighter Set, Pure Gold weapon skins | Launch week 2026 | Ended |
 | PC Early Access Twitch Drops | Activated, Field, Veteran and Elite Agent tiers | From April 28, 2026 | Ended |
 | Twitch Drops rerun | Launch-era drops, duplicates converted to Outfit Fragments | Early May 2026 | Ended |
-| Backbone collab | Ericht Chest System, Small Laser Pointer, Maxillan Respirator | From May 5, 2026 | Active when last checked (May) |
+| Backbone collab | Ericht Chest System, Small Laser Pointer, Maxillan Respirator | From May 5, 2026 | Backbone's post still up on October 25, 2026; no end date given |
 | Steam launch gifts | 5 Regular + 5 Exclusive SHD Keys; FYNC Parade set + 10 + 10 SHD Keys | August 5, 2026 | Granted to all players |
 | Steam launch Twitch Drops | Drops campaign ending in the Red Puffer Jacket | August 2026 | Ended |
 
@@ -264,6 +264,7 @@ No traditional text-entry redeem codes have ever been publicly released for The 
 - [Ubisoft Division Resurgence Launch Community Update](https://www.ubisoft.com/en-us/game/the-division/resurgence/news-updates/0OaDLfM9lS5xceFt1lRDA/resurgence-launch-community-update)
 - [Ubisoft Mobile Help Center for Division Resurgence](https://ubisoft-mobile.helpshift.com/hc/app/41-the-division-resurgence/)
 - [Ubisoft Cross-Game Rewards](https://www.ubisoft.com/en-gb/game/the-division/the-division-2/news-updates/4229WaoLUUKfcDVenaSlcX/the-division-crossgame-rewards)
+- [Backbone: Backbone x The Division Resurgence, claim steps and fine print](https://backbone.com/blogs/news/backbone-x-the-division-resurgence-exclusive-in-game-rewards)
 - [TechRadar coverage of the Backbone x Division Resurgence collab (May 5, 2026)](https://www.techradar.com/gaming/ubisoft-teams-up-with-backbone-to-offer-the-division-resurgence-players-exclusive-in-game-rewards-heres-how-you-can-claim-yours)
 - [GamingonPhone launch rewards breakdown](https://gamingonphone.com/news/all-the-rewards-coming-with-the-division-resurgence-global-launch/)
 - [twitchdrops.app Division Resurgence campaign history](https://twitchdrops.app/game/tom-clancys-the-division-resurgence)

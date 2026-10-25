@@ -5,7 +5,8 @@ import SectionTag from '../../../components/SectionTag.astro';
 import AdSenseUnit from '../../../components/AdSenseUnit.astro';
 import { truncateDesc, metaDescription } from '../../../utils/seo';
 import gearSets from '../../../data/gear-set-effects.json';
-import { verifiedPatch } from '../../../data/site-config';
+import DbItemExtras from '../../../components/DbItemExtras.astro';
+import { verifiedPatch, DATABASE_UPDATED } from '../../../data/site-config';
 const lastVerified = verifiedPatch('Patch 1.1.2.2'); // Bump: drop the arg ONLY after re-verifying this page's content in-game (CURRENT_PATCH is a ceiling, not an auto-bump)
 
 export function getStaticPaths() {
@@ -41,34 +42,34 @@ const archetype = isHealer ? 'Healer/Support' :
 
 const specRecommendation: Record<string, string> = {
   'Weapon DPS': 'Vanguard and Breacher builds that lead with bullets. Stack this with a Firepower OS Protocol and weapon talents like Killer, Concentrated Fire, or In Sync.',
-  'Skill DPS / Engineering': 'Demolitionist and Tech Operator builds where your skills are doing the real work. Pair with an Engineering OS Protocol — Surgical Engineering or Tactical Layering are the move.',
+  'Skill DPS / Engineering': 'Demolitionist and Tech Operator builds where your skills are doing the real work. Pair with an Engineering OS Protocol: Surgical Engineering or Tactical Layering are the move.',
   'Tank': 'Bulwark builds and face-tanking Field Medics. Run a Toughness OS Protocol like Pummeling Shield or Heavy Armor and become the team\'s human shield.',
-  'Healer/Support': 'Field Medic and support-focused builds. Your job is keeping everyone alive — stack Healing Intensity and pair with Captain Cow or Dr. Medic pieces for maximum healing output.',
+  'Healer/Support': 'Field Medic and support-focused builds. Your job is keeping everyone alive: stack Healing Intensity and pair with Captain Cow or Dr. Medic pieces for maximum healing output.',
   'Hybrid DPS/Skill': 'Builds that want their guns AND skills hitting hard. Tech Operators running Striker Drone + an AR, or Vanguards who lean on Scanning Pulse for crit buffs.',
-  'Hybrid DPS/Tank': 'Bruiser builds — you want to deal damage AND eat shots. Bulwark Breachers or Vanguards who push aggressively into enemies.',
+  'Hybrid DPS/Tank': 'Bruiser builds: you want to deal damage AND eat shots. Bulwark Breachers or Vanguards who push aggressively into enemies.',
   'Versatile': 'Flexible enough to slot into multiple build types. Check what your 4-piece bonus actually does and build around that specific stat.',
 };
 
 const overviewGuide: Record<string, string> = {
-  'Fury Strike': `Fury Strike is the go-to crit set in Division Resurgence. The 2-piece gives you extra range, the 3-piece adds Crit Chance, and the 4-piece stacks Crit Damage on top. If you're building a Vanguard or Breacher DPS that wants every shot to potentially delete something, this is your set. It's currently one of the most-used sets in endgame for good reason — raw multiplicative crit scaling is hard to beat.`,
-  'Quick Draw': `Quick Draw is built for marksmen and headshot hunters. Reload Speed and Magazine Size at 2 and 3 pieces keep you in the fight, and the 4-piece bonus is a fat Headshot Damage boost. Pair this with a Marksman Rifle and the One Shot One Kill playstyle or run it on an AR build where you're consistently landing heads. If your aim is mid, skip this — the set does nothing for body-shot builds.`,
-  'Phalanx Attack': `Phalanx Attack is the sustained DPS king. Magazine Size, Rate of Fire, and Multi-Shot Chance — this set wants you to never stop shooting. It's the backbone of LMG builds running Strawberry Milkshake and a staple in any build that values total damage output over burst. Multi-Shot Chance at 4 pieces means every bullet has a chance to hit twice. On an LMG with 100-round mags, that's disgusting.`,
+  'Fury Strike': `Fury Strike is the go-to crit set in Division Resurgence. The 2-piece gives you extra range, the 3-piece adds Crit Chance, and the 4-piece stacks Crit Damage on top. If you're building a Vanguard or Breacher DPS that wants every shot to potentially delete something, this is your set. It's currently one of the most-used sets in endgame for good reason: raw multiplicative crit scaling is hard to beat.`,
+  'Quick Draw': `Quick Draw is built for marksmen and headshot hunters. Reload Speed and Magazine Size at 2 and 3 pieces keep you in the fight, and the 4-piece bonus is a fat Headshot Damage boost. Pair this with a Marksman Rifle and the One Shot One Kill playstyle or run it on an AR build where you're consistently landing heads. If your aim is mid, skip this: the set does nothing for body-shot builds.`,
+  'Phalanx Attack': `Phalanx Attack is the sustained DPS king. Magazine Size, Rate of Fire, and Multi-Shot Chance: this set wants you to never stop shooting. It's the backbone of LMG builds running Strawberry Milkshake and a staple in any build that values total damage output over burst. Multi-Shot Chance at 4 pieces means every bullet has a chance to hit twice. On an LMG with 100-round mags, that's disgusting.`,
   'One Shot One Kill': `One Shot One Kill is a precision set for agents with good aim. Accuracy and Headshot Damage bonuses feed directly into Marksman Rifle and Rifle builds. The 4-piece Firepower bonus is a universal damage multiplier that scales everything. If you're hitting heads consistently, this set competes with Fury Strike for raw output.`,
-  'Gunny Johnny': `Gunny Johnny is a workhorse DPS set that buffs your gun from every angle — Rate of Fire, Reload Speed, and flat Weapon Damage. It doesn't specialize in crits or headshots, which makes it a solid generalist choice if your RNG hasn't blessed you with Fury Strike pieces yet. Good starter set, but gets outscaled at endgame by more focused options.`,
-  'Mechanical Enemy': `Mechanical Enemy bridges the gap between weapon DPS and skill builds. Crit Chance and Optimal Range for your guns, plus Skill Cooldown Recovery for your skills. It's an oddball hybrid set — great for Tech Operators who shoot between skill deployments or Vanguards who want their Scanning Pulse back faster. Not best-in-slot for either role, but solid if you're juggling both.`,
-  'Jackpot': `Jackpot is THE skill crit set. Skill Radius, Skill Crit Chance, and Skill Crit Damage — the entire set exists to make your skills crit harder. Demolitionist Artillery Turret builds and Tech Operator Striker Drone builds both love this. Run 2 pieces of Jackpot with 4 pieces of another Engineering set, or go full 4-piece if you want maximum skill crit scaling.`,
-  'Long-term Effect': `Long-term Effect is the core Engineering set. Skill Health keeps your deployables alive, Skill Duration extends their uptime, and the 4-piece gives you +18% Engineering — a massive multiplier on everything skill-related. This is the most-used skill set in endgame because Engineering scales multiplicatively with other bonuses. Four pieces of this plus two Jackpot pieces is the meta Engineering loadout right now.`,
-  'Dr. Medic': `Dr. Medic is a dedicated healer set. Healing Intensity, Skill Intensity, and Release Extra Protection — everything here is about keeping your team alive. Field Medic mains who run Support Station or Healing Hive should have this on their radar. It's not flashy, but when your squad survives a Legendary wipe because your heals actually chunked, you'll appreciate it.`,
-  'Boom-Shakalaka': `Boom-Shakalaka is a skill utility set focused on cooldowns, radius, and intensity. The 4-piece Skill Intensity bonus amplifies everything your skills do — damage, healing, CC effects. It's most at home on Demolitionist builds that want their Seeker Mines and Turrets to cover more ground and cycle faster. The name alone is worth running this set.`,
-  'Fire Cycle': `Fire Cycle is for skill builds that want Signature Ability uptime and Multi-Shot procs. Skill Crit Damage at 2 pieces, Signature Ability Charge Efficiency at 3, and Skill Multi-Shot at 4. This set turns your skills into a machine gun — every skill hit has a chance to fire twice. Demolitionist Artillery Turret and Explosive Seeker Mine builds get absurd value from this.`,
-  'Mechanical Expert': `Mechanical Expert is all about Signature Ability uptime. Skill Duration and Cooldown Recovery keep your skills deployed, and the 4-piece gives you +24% Signature Ability Charge Efficiency — the highest single-source Sig charge bonus in the game. Run this if your build revolves around getting your Signature Ability as fast as possible, especially on Demolitionist or Vanguard.`,
-  'Captain Cow': `Captain Cow is a healer/support hybrid with a funny name and serious utility. Movement Speed for repositioning, Skill Duration for keeping your heals active longer, and Healing Intensity at 4 pieces for fat heals. Field Medic mains love this set for Support Station builds — the longer your station stays deployed, the more healing it pumps out. Don't let the name fool you, this set slaps.`,
+  'Gunny Johnny': `Gunny Johnny is a workhorse DPS set that buffs your gun from every angle: Rate of Fire, Reload Speed, and flat Weapon Damage. It doesn't specialize in crits or headshots, which makes it a solid generalist choice if your RNG hasn't blessed you with Fury Strike pieces yet. Good starter set, but gets outscaled at endgame by more focused options.`,
+  'Mechanical Enemy': `Mechanical Enemy bridges the gap between weapon DPS and skill builds. Crit Chance and Optimal Range for your guns, plus Skill Cooldown Recovery for your skills. It's an oddball hybrid set: great for Tech Operators who shoot between skill deployments or Vanguards who want their Scanning Pulse back faster. Not best-in-slot for either role, but solid if you're juggling both.`,
+  'Jackpot': `Jackpot is THE skill crit set. Skill Radius, Skill Crit Chance, and Skill Crit Damage: the entire set exists to make your skills crit harder. Demolitionist Artillery Turret builds and Tech Operator Striker Drone builds both love this. Run 2 pieces of Jackpot with 4 pieces of another Engineering set, or go full 4-piece if you want maximum skill crit scaling.`,
+  'Long-term Effect': `Long-term Effect is the core Engineering set. Skill Health keeps your deployables alive, Skill Duration extends their uptime, and the 4-piece gives you +18% Engineering: a massive multiplier on everything skill-related. This is the most-used skill set in endgame because Engineering scales multiplicatively with other bonuses. Four pieces of this plus two Jackpot pieces is the meta Engineering loadout right now.`,
+  'Dr. Medic': `Dr. Medic is a dedicated healer set. Healing Intensity, Skill Intensity, and Release Extra Protection: everything here is about keeping your team alive. Field Medic mains who run Support Station or Healing Hive should have this on their radar. It's not flashy, but when your squad survives a Legendary wipe because your heals actually chunked, you'll appreciate it.`,
+  'Boom-Shakalaka': `Boom-Shakalaka is a skill utility set focused on cooldowns, radius, and intensity. The 4-piece Skill Intensity bonus amplifies everything your skills do: damage, healing, CC effects. It's most at home on Demolitionist builds that want their Seeker Mines and Turrets to cover more ground and cycle faster. The name alone is worth running this set.`,
+  'Fire Cycle': `Fire Cycle is for skill builds that want Signature Ability uptime and Multi-Shot procs. Skill Crit Damage at 2 pieces, Signature Ability Charge Efficiency at 3, and Skill Multi-Shot at 4. This set turns your skills into a machine gun: every skill hit has a chance to fire twice. Demolitionist Artillery Turret and Explosive Seeker Mine builds get absurd value from this.`,
+  'Mechanical Expert': `Mechanical Expert is all about Signature Ability uptime. Skill Duration and Cooldown Recovery keep your skills deployed, and the 4-piece gives you +24% Signature Ability Charge Efficiency: the highest single-source Sig charge bonus in the game. Run this if your build revolves around getting your Signature Ability as fast as possible, especially on Demolitionist or Vanguard.`,
+  'Captain Cow': `Captain Cow is a healer/support hybrid with a funny name and serious utility. Movement Speed for repositioning, Skill Duration for keeping your heals active longer, and Healing Intensity at 4 pieces for fat heals. Field Medic mains love this set for Support Station builds: the longer your station stays deployed, the more healing it pumps out. Don't let the name fool you, this set slaps.`,
   'Healing Elites': `Healing Elites is a tank/healer hybrid set that makes you nearly impossible to kill. Received Healing, Release Extra Protection, and a massive +28% Armor at 4 pieces. Bulwark builds running a Phalanx Shield become actual walls with this set. If your team's Field Medic is good, Healing Elites turns you into an unkillable raid boss.`,
-  'Self-Propelled Shield': `Self-Propelled Shield is a pure survivability set — Armor, Movement Speed, and Max Health. No damage bonuses, just raw stats that keep you alive. This is a tank set for Bulwark agents who want to push aggressively with a Phalanx Shield without getting melted. The Movement Speed bonus is underrated — a tank that can actually reposition is way more useful than a stationary one.`,
-  'Fearless Warrior': `Fearless Warrior is the bruiser's gear set. Damage Reduction, Damage Bonus, and Toughness — it makes you tanky AND makes you hit harder. This is the go-to for Bulwark Breachers who want to deal damage while absorbing hits, or any frontline build that refuses to choose between offense and defense. Pair with a Toughness OS Protocol for disgusting survivability.`,
+  'Self-Propelled Shield': `Self-Propelled Shield is a pure survivability set: Armor, Movement Speed, and Max Health. No damage bonuses, just raw stats that keep you alive. This is a tank set for Bulwark agents who want to push aggressively with a Phalanx Shield without getting melted. The Movement Speed bonus is underrated: a tank that can actually reposition is way more useful than a stationary one.`,
+  'Fearless Warrior': `Fearless Warrior is the bruiser's gear set. Damage Reduction, Damage Bonus, and Toughness: it makes you tanky AND makes you hit harder. This is the go-to for Bulwark Breachers who want to deal damage while absorbing hits, or any frontline build that refuses to choose between offense and defense. Pair with a Toughness OS Protocol for disgusting survivability.`,
 };
 
-const overview = overviewGuide[set.name] || `${set.name} gives you ${set.bonus2} at 2 pieces, ${set.bonus3} at 3 pieces, and ${set.bonus4} at 4 pieces. Build around the 4-piece bonus — that's where the real power spike lives.`;
+const overview = overviewGuide[set.name] || `${set.name} gives you ${set.bonus2} at 2 pieces, ${set.bonus3} at 3 pieces, and ${set.bonus4} at 4 pieces. Build around the 4-piece bonus: that's where the real power spike lives.`;
 
 const title = `${set.name} Gear Set`;
 const description = metaDescription(set.summary, `${set.name} gear set in The Division Resurgence: 2, 3, and 4-piece bonuses, best builds, and how to farm the full set.`);
@@ -89,7 +90,7 @@ const faqs = [
   },
   {
     question: `How do I farm ${set.name} in Division Resurgence?`,
-    answer: `Gear set pieces drop from endgame activities — Heroic and Legendary missions, weekly bounties, Conflicts reward tracks, and Dark Zone. There's no guaranteed source for specific sets, so you're at the mercy of RNG. Weekly bounties are your most consistent farm. Dismantle or sell pieces from sets you don't need and keep grinding.`
+    answer: `Gear set pieces drop from endgame activities: Heroic and Legendary missions, weekly bounties, Conflicts reward tracks, and Dark Zone. There's no guaranteed source for specific sets, so you're at the mercy of RNG. Weekly bounties are your most consistent farm. Dismantle or sell pieces from sets you don't need and keep grinding.`
   }
 ];
 
@@ -103,7 +104,7 @@ const setLd = {
   publisher: { '@type': 'Organization', '@id': `${siteUrl}/#organization`, name: 'Resurgence Builds' },
   mainEntityOfPage: { '@type': 'WebPage', '@id': `${siteUrl}/database/gear-set-effects/${slug}/` },
   datePublished: '2026-05-30',
-  dateModified: '2026-05-30',
+  dateModified: DATABASE_UPDATED,
   image: { '@type': 'ImageObject', url: `${siteUrl}/images/resurgence-builds-official-logo.png`, width: 800, height: 800 },
   inLanguage: 'en-US',
   lastReviewed: '2026-05-30',
@@ -166,8 +167,7 @@ const bonuses = [
         <div class="gearset-prose">
           <p><strong style="color: #fff;">Build Archetype:</strong> <span style={`color: ${isDPS ? 'var(--accent)' : isSkill ? '#F5CC45' : isTank ? '#3a7bd5' : '#6DAA45'};`}>{archetype}</span></p>
           <p>{specRecommendation[archetype] || 'This set works best when you build around the 4-piece bonus. Check what stat it provides and pick a specialization, OS Protocol, and weapon talents that multiply that stat.'}</p>
-          <p>Most endgame builds run a 4-piece gear set core with 2 pieces from a complementary set. {isDPS ? `For ${set.name}, common combos include 4pc ${set.name} + 2pc Phalanx Attack (Magazine/RoF) or 2pc Fury Strike (Range/Crit).` : isSkill ? `For ${set.name}, try 4pc ${set.name} + 2pc Jackpot (Skill Radius) or 2pc Long-term Effect (Skill Health).` : isTank ? `For ${set.name}, pair with 2pc Fearless Warrior (DR) or 2pc Self-Propelled Shield (Armor) for the tankiest build possible.` : `For ${set.name}, mix and match based on your team role — 2pc from a complementary set fills in the gaps.`}</p>
-          <p>Gear set bonuses in Division Resurgence stack <strong style="color: #fff;">multiplicatively</strong> with weapon talents, Body Armor/backpack talents, and OS Protocol talents. That means your 4-piece set bonus doesn't just add to your weapon talent proc — it multiplies it. A fully synergized build (matching set + weapon talent + Body Armor talent + backpack talent + OS Protocol) can output 40-60% more effective damage or survivability compared to a build with random, mismatched pieces. This is why chasing the right gear set pieces is worth the grind — the multiplicative scaling is where endgame builds go from "I can clear Heroic" to "I'm farming Legendary without breaking a sweat."</p>
+          <p>Most endgame builds run a 4-piece gear set core with 2 pieces from a complementary set. {isDPS ? `For ${set.name}, common combos include 4pc ${set.name} + 2pc Phalanx Attack (Magazine/RoF) or 2pc Fury Strike (Range/Crit).` : isSkill ? `For ${set.name}, try 4pc ${set.name} + 2pc Jackpot (Skill Radius) or 2pc Long-term Effect (Skill Health).` : isTank ? `For ${set.name}, pair with 2pc Fearless Warrior (DR) or 2pc Self-Propelled Shield (Armor) for the tankiest build possible.` : `For ${set.name}, mix and match based on your team role: 2pc from a complementary set fills in the gaps.`}</p>
         </div>
       </div>
 
@@ -175,7 +175,7 @@ const bonuses = [
       <div class="gearset-section">
         <h2 class="gearset-section__title">Talent &amp; OS Protocol Combos</h2>
         <div class="gearset-prose">
-          <p>Your gear set doesn't exist in a vacuum — the real power comes from layering it with the right weapon talent, Body Armor talent, backpack talent, and OS Protocol. Here's what to pair with {set.name}:</p>
+          <p>Your gear set doesn't exist in a vacuum: the real power comes from layering it with the right weapon talent, Body Armor talent, backpack talent, and OS Protocol. Here's what to pair with {set.name}:</p>
           <p>{isDPS ? `Weapon talents: Killer (crit chain DPS), Concentrated Fire (sustained accuracy), Unhinged (flat damage boost), or In Sync if you use offensive skills too. Body Armor talent: Glass Cannon if you can avoid getting hit, or Duality for a safety net. Backpack talent: Combat Inspiration for the damage buff. OS Protocol: pick one with Weapon Damage, Crit Chance, or Crit Damage as the main stat - Pressing Matter and Relentless Assault are strong options.` : isSkill ? `Weapon talents: In Sync (bridges gun damage into skill buffs), Surgical (skill crit on headshot), or Multitasking (skill boost on kills). Body Armor talent: Glass Cannon for max skill damage if you play safe, or Energize for skill burst windows. Backpack talent: Prime Engineer or Brainstorm. OS Protocol: Surgical Engineering, Tactical Layering, or any Engineering-specced protocol that stacks Skill Intensity or Skill Crit.` : isTank ? `Weapon talents: Slaughter Fortitude (kill sustain), Steady Handed (sustained fire while face-tanking), or Sadistic Shield. Body Armor talent: Duality or Unflinching for maximum survivability. Backpack talent: Rock Solid or Rescue Protection for group utility. OS Protocol: Pummeling Shield, Heavy Armor, or any Toughness protocol that stacks Armor and Damage Reduction.` : isHealer ? `Weapon talents: Shooting Repair (hits heal allies), In Sync, or Revitalize. Body Armor talent: Instant Triage for team healing buffs. Backpack talent: Painkillers or Rescue Protection. OS Protocol: any Engineering-specced protocol that boosts Skill Intensity and Healing Intensity.` : `Weapon talents: depends on your role - check the weapon talent database for options that match your playstyle. Body Armor and backpack talents should align with the same archetype as your gear set. OS Protocol: pick one that stacks the same core attribute your gear set favors.`}</p>
         </div>
       </div>
@@ -184,16 +184,18 @@ const bonuses = [
       <div class="gearset-section">
         <h2 class="gearset-section__title">How to Farm {set.name}</h2>
         <div class="gearset-prose">
-          <p>Gear set pieces in Division Resurgence don't have a dedicated farm — they drop from the general endgame loot pool. That means you're running the same activities and praying to RNG. Here's where to focus your time:</p>
+          <p>Gear set pieces in Division Resurgence don't have a dedicated farm: they drop from the general endgame loot pool. That means you're running the same activities and praying to RNG. Here's where to focus your time:</p>
           <ul>
-            <li><strong style="color: #fff;">Weekly Bounties</strong> — Most consistent source. Do all of them, every week. The reward pool includes gear set pieces.</li>
-            <li><strong style="color: #fff;">Heroic & Legendary Missions</strong> — Higher difficulty = better loot quality. Legendary has the best drop rates but requires a solid build to clear.</li>
-            <li><strong style="color: #fff;">Conflicts</strong> — PvP reward tracks drop gear set pieces. If you enjoy PvP, this is efficient farming.</li>
-            <li><strong style="color: #fff;">Dark Zone</strong> — Contaminated gear drops can roll as gear set pieces. High risk, high reward. Extract carefully.</li>
+            <li><strong style="color: #fff;">Weekly Bounties</strong>: Most consistent source. Do all of them, every week. The reward pool includes gear set pieces.</li>
+            <li><strong style="color: #fff;">Heroic & Legendary Missions</strong>: Higher difficulty = better loot quality. Legendary has the best drop rates but requires a solid build to clear.</li>
+            <li><strong style="color: #fff;">Conflicts</strong>: PvP reward tracks drop gear set pieces. If you enjoy PvP, this is efficient farming.</li>
+            <li><strong style="color: #fff;">Dark Zone</strong>: Contaminated gear drops can roll as gear set pieces. High risk, high reward. Extract carefully.</li>
           </ul>
-          <p>Tier matters too — T2 pieces have the best stat rolls, but T0 and T1 set pieces still activate set bonuses. A full 4-piece set in T0 is better than 2 random T2 pieces with no synergy. Get the set bonus first, then upgrade individual pieces over time. Use the <a href="/guides/division-resurgence-codes/" style="color: var(--accent);">active codes page</a> to check for free gear caches — Ubisoft sometimes drops event rewards that include set pieces.</p>
+          <p>Tier matters too: T2 pieces have the best stat rolls, but T0 and T1 set pieces still activate set bonuses. A full 4-piece set in T0 is better than 2 random T2 pieces with no synergy. Get the set bonus first, then upgrade individual pieces over time. Use the <a href="/guides/division-resurgence-codes/" style="color: var(--accent);">active codes page</a> to check for free gear caches: Ubisoft sometimes drops event rewards that include set pieces.</p>
         </div>
       </div>
+
+      <DbItemExtras kind="gear-set" name={set.name} drops={false} />
 
       <!-- Related Links -->
       <div class="gearset-related">

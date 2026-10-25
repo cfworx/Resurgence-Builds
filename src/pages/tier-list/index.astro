@@ -121,6 +121,7 @@ const faqs = [
     <div style="background: rgba(242,104,34,0.06); border: 1px solid rgba(242,104,34,0.2); border-radius: 8px; padding: var(--sp-4) var(--sp-5) var(--sp-4) calc(var(--inset) - 1px); margin-bottom: var(--sp-6); max-width: 800px;">
       <p style="color: var(--ink-muted); font-size: var(--text-sm); line-height: 1.7; margin: 0;">
         <strong style="color: var(--accent);">Update (October 2026):</strong> these tiers have not been re-tested since {lastVerified}. Since then Ubisoft shipped Season 1 Phase 3 (Thermobaric Grenades nerf, plus fixes to Aegis Burst, Medic Hypershot, Juggernaut and Recon dealing more damage than intended), a June 26 hotfix (80% damage reduction cap, Pummeling Shield stun cooldown), and two Season 2 phases (Shockwave Spike, Steady Reload and Commando Double Barrel nerfs, a Recycling rework, plus weapon and gear mod reworks). Stun-based Bulwark builds like Involuntary Nap Time and anything leaning on Aegis Burst are the most likely to have slipped. Check each build's patch label.
+       Season 2 notes updated <time datetime={TIER_NOTES_UPDATED}>{new Date(TIER_NOTES_UPDATED + 'T12:00:00Z').toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC' })}</time>.
       </p>
     </div>
 
