@@ -3,37 +3,42 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import SectionTag from '../../components/SectionTag.astro';
 import { verifiedPatch } from '../../data/site-config';
-const lastVerified = verifiedPatch('Patch 1.1.2.2');
-// Date the Update note below was last checked against the official patch notes (not an in-game re-rank).
-const NOTES_CHECKED = '2026-10-25';
-const notesCheckedLabel = new Date(NOTES_CHECKED + 'T12:00:00Z').toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC' }); // Bump: drop the arg ONLY after re-verifying this page's content in-game (CURRENT_PATCH is a ceiling, not an auto-bump)
+const lastVerified = verifiedPatch('Patch 1.1.2.2'); // Our own last in-game ranking. The current tiers come from creator results (Cory's call, October 2026), so don't bump this without an in-game re-test.
+// Date of the Season 2 Phase 2 creator-results re-rank.
+const TIER_UPDATED = '2026-10-25';
+const tierUpdatedLabel = new Date(TIER_UPDATED + 'T12:00:00Z').toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC' });
 
 const breadcrumbItems = [{ name: 'Tier Lists', url: '/tier-list/' }, { name: 'OS Protocol Tier List', url: '/tier-list/os-protocols/' }];
 
-const title = "OS Protocol Tier List — S to D Rankings";
-const description = "The definitive OS Protocol tier list for Division Resurgence. Every protocol ranked S to D for PvE, Dark Zone, and Outpost content. Best picks per class included.";
+const title = "OS Protocol Tier List: S to D Rankings";
+const description = "Division Resurgence OS Protocol tier list for Season 2 Phase 2, ranked S to D from creator results (not our own in-game tests), with sources and best picks per class.";
+
+// Season 2 Phase 2 re-rank (2026-10-25) from creator results, not our own in-game tests.
+// Rules (also stated on the page): a protocol that a Season 2 creator build runs in its endgame results ranks highest;
+// one with no Season 2 creator evidence keeps its old tier but caps at A; one nerfed since the old ranking drops a tier.
+// `was` marks a protocol whose tier changed in this update; `cr` is the Season 2 creator evidence shown on its card.
 
 // S Tier
 const sTier = [
-  { name: 'Explosive Round', spec: 'Firepower', rarity: 'High-End', note: 'Best raw weapon damage protocol, free AoE on aimed crits' },
-  { name: 'Explosive Charge', spec: 'Engineering', rarity: 'High-End', note: 'Highest skill damage ceiling, AoE on enhanced skill hits (5s cooldown)' },
-  { name: 'Pummeling Shield', spec: 'Toughness', rarity: 'High-End', note: "Bulwark's defining protocol: stuns + extra health. Since the June 26 hotfix the stun is 1.5s with a 10s cooldown" },
-  { name: 'Collateral Damage', spec: 'Engineering', rarity: 'High-End', note: '3000% Engineering AoE around whatever your skills hit, no condition beyond a 10s cooldown' },
-  { name: 'Heavy Armor', spec: 'Toughness', rarity: 'High-End', note: '+14.4% Damage while Extra Health is up, assist-triggered survivability' },
+  { name: 'Brains Over Brawn', spec: 'Engineering', rarity: 'Specialized', was: 'A', cr: "GGReborn's Season 2 Tactical Pharma pick", note: 'Skill Crit Chance plus extra damage from Engineering. Also the pick on two older Tech Op creator builds' },
+  { name: 'Cover Shooter', spec: 'Firepower', rarity: 'High-End', was: 'A', cr: "TikTokAndy's Double Barrel pick since October", note: 'Weapon Damage plus stacking Crit Damage behind cover. He calls it second to none for PvE with the Double Barrel' },
 ];
 
 // A Tier
 const aTier = [
-  { name: 'Concerted Strike', spec: 'Firepower', rarity: 'High-End', note: '+24% Damage at 3 stacks, 100% proc rate. Meta drone build cornerstone. 20m range check fixed in Season 2 Phase 2.' },
+  { name: 'Collateral Damage', spec: 'Engineering', rarity: 'High-End', was: 'S', cr: 'Tied in GGReborn\'s Oct 23 Lone Wolf test', note: '3000% Engineering AoE around whatever your skills hit, no condition beyond a 10s cooldown' },
+  { name: 'Explosive Round', spec: 'Firepower', rarity: 'High-End', was: 'S', note: 'Free AoE on aimed crits. No Season 2 creator results yet, so it caps at A' },
+  { name: 'Explosive Charge', spec: 'Engineering', rarity: 'High-End', was: 'S', note: 'AoE on enhanced skill hits (5s cooldown). No Season 2 creator results yet, so it caps at A' },
+  { name: 'Pummeling Shield', spec: 'Toughness', rarity: 'High-End', was: 'S', note: "Bulwark's defining protocol, but the June 26 hotfix cut the stun to 1.5s on a 10s cooldown" },
+  { name: 'Heavy Armor', spec: 'Toughness', rarity: 'High-End', was: 'S', note: '+14.4% Damage while Extra Health is up. No Season 2 creator results yet, so it caps at A' },
+  { name: 'Concerted Strike', spec: 'Firepower', rarity: 'High-End', note: '+24% Damage at 3 stacks. 20m range check fixed in Season 2 Phase 2' },
   { name: 'Surgical Engineering', spec: 'Engineering', rarity: 'High-End', note: 'Skill crit damage stacking, Demolitionist' },
   { name: 'Tactical Layering', spec: 'Engineering', rarity: 'High-End', note: 'Engineering stacking, most reliable scaling skill builds' },
-  { name: 'Strategic Assistance', spec: 'Engineering', rarity: 'High-End', note: 'Signature charge generation, Vanguard team play' },
+  { name: 'Strategic Assistance', spec: 'Engineering', rarity: 'High-End', note: 'Signature charge generation, Vanguard team play. TikTokAndy also makes a case for it on an Aegis healer' },
   { name: 'Overwhelming Power', spec: 'Firepower', rarity: 'High-End', note: 'Sustained DPS, 50% damage reduction window' },
-  { name: 'Cover Shooter', spec: 'Firepower', rarity: 'High-End', note: 'Cover-based DPS, marksman and rifle builds' },
   { name: 'Assault Charge', spec: 'Firepower', rarity: 'High-End', note: 'Signature burst windows, Tech Operator and Vanguard' },
   { name: 'Relentless Assault', spec: 'Engineering', rarity: 'High-End', note: 'Sustained-fire skill builds, LMG hybrids. Damage type fixed to Weapon Damage in Season 2 Phase 2' },
   { name: 'Happy Survival', spec: 'Toughness', rarity: 'High-End', note: 'Close-range, shotgun and SMG mains' },
-  { name: 'Brains Over Brawn', spec: 'Engineering', rarity: 'Specialized', note: 'Engineering scaling, Specialized-rarity outlier that punches above its weight' },
 ];
 
 // B Tier
@@ -98,6 +103,22 @@ const cTier = [
 // D Tier
 const dTier = [];
 
+const GG = { label: "GGReborn's Tactical Pharma guide", href: '/builds/tactical-pharma-season-2-build-ggreborn/' };
+const DB = { label: "TikTokAndy's Double Barrel guide", href: '/builds/misdirection-double-barrel-commando-build-tiktokandy/' };
+const osChanges = [
+  { name: 'Brains Over Brawn', was: 'A', now: 'S', why: "GGReborn runs it on his Season 2 Tactical Pharma build (October 16, solo Legendary gameplay) and finished his October 23 Lone Wolf run with 802 seconds left on it.", source: GG },
+  { name: 'Cover Shooter', was: 'A', now: 'S', why: "TikTokAndy switched his Double Barrel Commando to it in early October and soloed Precious Cargo on Legendary with it on October 6.", source: DB },
+  { name: 'Chain Reaction', was: 'B', now: 'A', why: "Fastest of four in GGReborn's October 23 Lone Wolf test (807 seconds left), and the protocol in his October 24 gameplay video. Three seconds is a narrow margin, so not S.", source: GG },
+  { name: 'Tactical Persistence', was: 'B', now: 'A', why: "804 seconds left in GGReborn's October 23 Lone Wolf test, level with Collateral Damage.", source: GG },
+  { name: 'Collateral Damage', was: 'S', now: 'A', why: "804 seconds left in GGReborn's October 23 Lone Wolf test, within a few seconds of three lower-rarity protocols, so the test gives no reason to keep it above them.", source: GG },
+  { name: 'Recursive Treatment', was: 'B', now: 'A', why: "TikTokAndy's pick on his October 10 Aegis Team Healer build, his favorite PvE build right now.", source: { label: 'Aegis Team Healer guide', href: '/builds/aegis-team-healer-tech-operator-build-tiktokandy/' } },
+  { name: 'Augmented Lethality', was: 'B', now: 'A', why: "TikTokAndy ran it on his Double Barrel build through early October, including the floor 20 run he says placed third in NA, and on his beginner Commando build.", source: DB },
+  { name: 'Pummeling Shield', was: 'S', now: 'A', why: "Nerfed since our last ranking: the June 26 hotfix cut the stun from 2 to 1.5 seconds and added a 10-second cooldown.", source: { label: 'June 26 hotfix', href: '/news/server-hotfix-june-26-2026/' } },
+  { name: 'Explosive Round', was: 'S', now: 'A', why: "Not changed by any patch, but none of the Season 2 creator builds we cover runs it, so it caps at A." },
+  { name: 'Explosive Charge', was: 'S', now: 'A', why: "Not changed by any patch, but none of the Season 2 creator builds we cover runs it, so it caps at A." },
+  { name: 'Heavy Armor', was: 'S', now: 'A', why: "Not changed by any patch, but none of the Season 2 creator builds we cover runs it, so it caps at A." },
+];
+
 const specColor = (spec: string) => {
   if (spec === 'Engineering') return '#F5CC45';
   if (spec === 'Firepower') return '#F26822';
@@ -106,14 +127,15 @@ const specColor = (spec: string) => {
 };
 
 const faqs = [
-  { question: "What is the best OS Protocol in Division Resurgence?", answer: `The strongest build-defining protocols are Explosive Charge (Engineering), Explosive Round (Firepower), and Pummeling Shield (Toughness). These three anchor the highest-performing builds in each specialization at ${lastVerified}.` },
+  { question: "What is the best OS Protocol in Division Resurgence?", answer: "Going by creator results in Season 2 Phase 2, Brains Over Brawn and Cover Shooter. Brains Over Brawn is the pick on GGReborn's Season 2 Tactical Pharma build, and Cover Shooter is what TikTokAndy ran when he soloed Precious Cargo on Legendary with his Double Barrel Commando on October 6. In GGReborn's October 23 Lone Wolf test, Chain Reaction, Collateral Damage and Tactical Persistence finished within five seconds of Brains Over Brawn, so on that build the choice matters less than your stats. These ranks come from creator results, not our own in-game tests." },
   { question: "How do OS Protocols work in Division Resurgence?", answer: "OS Protocols are unique gear-talent items that slot into your Operating System loadout. Each provides a main stat, three sub-stats, and a unique Talent that triggers under specific combat conditions. You can swap them freely at any safe house." },
   { question: "Can you change OS Protocols mid-mission?", answer: "No. OS Protocols can only be swapped outside of combat, at a Base of Operations, safe house, or any non-combat area. Plan your protocol for the encounter you're about to enter." },
-  { question: "What is the best OS Protocol for Vanguard?", answer: "Strategic Assistance (Engineering, High-End). The assist-based Signature Ability Charge Efficiency and Skill Cooldown reduction directly amplify the class's reliance on Tactical Link and Scanning Pulse uptime." },
-  { question: "What is the best OS Protocol for Field Medic?", answer: "Concerted Strike (Firepower, High-End). Skill hits within 20 meters grant +8% Damage stacks, which the class triggers constantly through Oxidizing Swarm and Support Station. Season 2 Phase 2 fixed its 20-meter range check." },
-  { question: "What is the best OS Protocol for Bulwark?", answer: "Pummeling Shield (Toughness, High-End). The Stun proc on every 10 hits and the Extra Health regen on damage makes the class viable at Heroic difficulty. Since the June 26, 2026 hotfix the stun lasts 1.5 seconds (was 2) and has a 10-second cooldown, so it's a periodic interrupt, not a stun-lock." },
-  { question: "What is the best OS Protocol for Demolitionist?", answer: "Surgical Engineering (Engineering, High-End). The 60% chance of +16% Skill Critical Damage on Skill Crits scales perfectly with the class's natural skill crit chance." },
-  { question: "What is the best OS Protocol for Tech Operator?", answer: "Tactical Layering (Engineering, High-End). +15% Engineering per skill deployment (up to 3 stacks) scales perfectly with Striker Drone uptime and skill rotation." },
+  { question: "What is the best OS Protocol for Vanguard?", answer: "For a Commando damage build, Cover Shooter (Firepower, High-End). TikTokAndy switched his Double Barrel build to it in early October and calls it second to none for PvE with that gun; before that he ran Augmented Lethality. For team support, Strategic Assistance is still the pick from our earlier ranking: its assist-based Signature Ability Charge Efficiency and Skill Cooldown reduction feed Tactical Link and Scanning Pulse uptime." },
+  { question: "What is the best OS Protocol for Field Medic?", answer: "For Tactical Pharma, Brains Over Brawn (Engineering, Specialized), which GGReborn runs on his Season 2 build. His October 23 Lone Wolf test had Chain Reaction, Collateral Damage and Tactical Persistence within five seconds of it, so use whichever of those you own. Concerted Strike (Firepower, High-End) remains a good hybrid pick, and Season 2 Phase 2 fixed its 20-meter range check." },
+  { question: "What is the best OS Protocol for Bulwark?", answer: "Pummeling Shield (Toughness, High-End). The Stun proc on every 10 hits and the Extra Health regen on damage still define the class, and Nadie runs it on both of his creator builds here. Since the June 26, 2026 hotfix the stun lasts 1.5 seconds (was 2) and has a 10-second cooldown, so it's a periodic interrupt, not a stun-lock, which is why it moved from S to A." },
+  { question: "What is the best OS Protocol for Demolitionist?", answer: "Surgical Engineering (Engineering, High-End), from our earlier ranking. The 60% chance of +16% Skill Critical Damage on Skill Crits scales with the class's natural skill crit chance. We haven't found a Season 2 creator result for Demolitionist yet; PVE Enjoyer's pre-Season 2 Glass Cannon build runs Pressing Matter." },
+  { question: "What is the best OS Protocol for Tech Operator?", answer: "For an Aegis healer, Recursive Treatment, which TikTokAndy runs on his October Aegis Team Healer build. For skill damage, Brains Over Brawn is the pick on LtFoe's and Tampishach's Tech Op builds (both from before Season 2), and Tactical Layering (+15% Engineering per skill deployment, up to 3 stacks) suits Striker Drone rotations." },
+  { question: "Are these OS Protocol ranks from your own testing?", answer: "No. This Season 2 Phase 2 update ranks protocols from creator results: the protocols that Season 2 creator builds run in their endgame results rank highest, protocols with no Season 2 creator evidence keep their old tier but cap at A, and a protocol nerfed since our last ranking drops a tier. Our own in-game ranking was last done on Patch 1.1.2.2. The table under the tiers lists what each change rests on." },
 ];
 ---
 
@@ -123,29 +145,28 @@ const faqs = [
     <SectionTag label="Meta Ranking" />
     <h1 class="heading-accent">OS Protocol Tier List</h1>
     <p style="color:var(--ink-muted);margin-bottom:var(--sp-3);">
-      Every OS Protocol ranked for {lastVerified}. <strong>S-Tier</strong> protocols are the best in the game. Equip these and don't look back. <strong>A-Tier</strong> protocols are strong class-specific picks that anchor endgame builds. <strong>B-Tier</strong> protocols are solid placeholders while you farm for the good stuff. <strong>C-Tier</strong> protocols get replaced as soon as something better drops. <strong>D-Tier</strong> protocols are basically empty slots.
+      Every OS Protocol ranked for Season 2 Phase 2. <strong>These ranks come from creator results, not our own in-game tests</strong>, and <a href="#os-tier-changes" style="color: var(--accent); text-decoration: underline;">the table under the tiers</a> says what each change rests on. <strong>S-Tier</strong> protocols are what the top Season 2 creator builds run. <strong>A-Tier</strong> protocols are strong class-specific picks that anchor endgame builds. <strong>B-Tier</strong> protocols are solid placeholders while you farm for the good stuff. <strong>C-Tier</strong> protocols get replaced as soon as something better drops. <strong>D-Tier</strong> protocols are basically empty slots.
     </p>
 
     <p style="color:var(--ink-muted);margin-bottom:var(--sp-3);">
-      <strong>Update (October 2026):</strong> these tiers have not been re-ranked since {lastVerified}. Official changes since then: Applied Demolition was buffed in Season 1 Phase 3 (Skill Crit Damage 24% to 43.2% at base), Pummeling Shield's stun got a 10-second cooldown and dropped from 2s to 1.5s in the June 26 hotfix, Dominating Presence started granting the Multi-Shot it promised in Season 2 Phase 1 and had its maximum cut in Phase 2, and Concerted Strike (range check) and Relentless Assault (damage type) were fixed in Season 2 Phase 2. Season 2 Phase 1 also made a Concerted Strike trigger on shots instead of hits, though Ubisoft's notes file that one under Commando, so it may not be this protocol (<a href="/patch-notes/season-2-phase-1-the-call/" style="color: var(--accent); text-decoration: underline;">patch notes</a>). Treat the placements of those five as the most likely to be off. One creator data point since: in GGReborn's October 23 Lone Wolf test on his Tactical Pharma build, Chain Reaction, Collateral Damage, Tactical Persistence and Brains Over Brawn finished within five seconds of each other (<a href="/builds/tactical-pharma-season-2-build-ggreborn/" style="color: var(--accent); text-decoration: underline;">details</a>).
-     Notes checked against the official patch notes on <time datetime={NOTES_CHECKED}>{notesCheckedLabel}</time>.
+      <strong>Update (<time datetime={TIER_UPDATED}>{tierUpdatedLabel}</time>):</strong> re-ranked for Season 2 Phase 2 from creator results. A protocol that a Season 2 creator build runs in its endgame results ranks highest. One with no Season 2 creator evidence keeps its old tier but caps at A, and one nerfed since our last ranking ({lastVerified}) drops a tier. Official changes since then: Applied Demolition was buffed in Season 1 Phase 3 (Skill Crit Damage 24% to 43.2% at base), Pummeling Shield's stun got a 10-second cooldown and dropped from 2s to 1.5s in the June 26 hotfix, Dominating Presence started granting the Multi-Shot it promised in Season 2 Phase 1 and had its maximum cut in Phase 2, and Concerted Strike (range check) and Relentless Assault (damage type) were fixed in Season 2 Phase 2. Season 2 Phase 1 also made a Concerted Strike trigger on shots instead of hits, though Ubisoft's notes file that one under Commando, so it may not be this protocol (<a href="/patch-notes/season-2-phase-1-the-call/" style="color: var(--accent); text-decoration: underline;">patch notes</a>).
     </p>
 
-    <div style="display: inline-flex; align-items: center; gap: 6px; font-family: var(--font-mono); font-size: var(--text-xs); color: #6DAA45; background: rgba(109, 170, 69, 0.1); border: 1px solid rgba(109, 170, 69, 0.25); padding: 6px 14px; border-radius: 999px; margin-bottom: var(--sp-6); letter-spacing: 0.02em;">
-      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
-      <span>Last verified for <strong>{lastVerified}</strong></span>
+    <div style="display: inline-flex; align-items: center; gap: 6px; font-family: var(--font-mono); font-size: var(--text-xs); color: #FCD34D; background: rgba(252, 211, 77, 0.08); border: 1px solid rgba(252, 211, 77, 0.3); padding: 6px 14px; border-radius: 999px; margin-bottom: var(--sp-6); letter-spacing: 0.02em;">
+      <span>Season 2 Phase 2, ranked from creator results · updated <time datetime={TIER_UPDATED}>{tierUpdatedLabel}</time></span>
     </div>
 
     <!-- Best per class quick links -->
     <div class="class-quick-picks">
       <h2 style="font-size: var(--text-lg); margin-bottom: var(--sp-2);">Best Protocol Per Class</h2>
-      <p style="color: var(--ink-muted); font-size: var(--text-sm); margin-bottom: var(--sp-4);"><a href="/guides/best-os-protocol/" style="color: var(--accent); text-decoration: underline;">Read the full per-class guide &rarr;</a></p>
+      <p style="color: var(--ink-muted); font-size: var(--text-sm); margin-bottom: var(--sp-2);">Season 2 creator picks where we have them. Demolitionist has no Season 2 creator result yet, so it keeps our earlier pick.</p>
+      <p style="color: var(--ink-muted); font-size: var(--text-sm); margin-bottom: var(--sp-4);"><a href="/guides/best-os-protocol/" style="color: var(--accent); text-decoration: underline;">Read the full per-class guide (written for {lastVerified}) &rarr;</a></p>
       <div class="quick-picks-grid">
-        <div class="quick-pick"><span class="quick-pick__class">Vanguard</span><a href="/database/os-protocols/#strategic-assistance">Strategic Assistance</a></div>
-        <div class="quick-pick"><span class="quick-pick__class">Field Medic</span><a href="/database/os-protocols/#concerted-strike">Concerted Strike</a></div>
+        <div class="quick-pick"><span class="quick-pick__class">Vanguard (Commando)</span><a href="/database/os-protocols/#cover-shooter">Cover Shooter</a></div>
+        <div class="quick-pick"><span class="quick-pick__class">Field Medic (Tactical Pharma)</span><a href="/database/os-protocols/#brains-over-brawn">Brains Over Brawn</a></div>
         <div class="quick-pick"><span class="quick-pick__class">Bulwark</span><a href="/database/os-protocols/#pummeling-shield">Pummeling Shield</a></div>
         <div class="quick-pick"><span class="quick-pick__class">Demolitionist</span><a href="/database/os-protocols/#surgical-engineering">Surgical Engineering</a></div>
-        <div class="quick-pick"><span class="quick-pick__class">Tech Operator</span><a href="/database/os-protocols/#tactical-layering">Tactical Layering</a></div>
+        <div class="quick-pick"><span class="quick-pick__class">Tech Operator (Aegis healer)</span><a href="/database/os-protocols/#recursive-treatment">Recursive Treatment</a></div>
       </div>
     </div>
 
@@ -163,6 +184,7 @@ const faqs = [
                 <div class="tier-card__info">
                   <h3>{p.name}</h3>
                   <span class="tier-card__spec">{p.spec} · {p.rarity}</span>
+                  {p.cr && <span class="tier-card__cr">{p.cr}</span>}
                   {p.note && <span class="tier-card__note">{p.note}</span>}
                 </div>
               </a>
@@ -182,6 +204,7 @@ const faqs = [
                 <div class="tier-card__info">
                   <h3>{p.name}</h3>
                   <span class="tier-card__spec">{p.spec} · {p.rarity}</span>
+                  {p.cr && <span class="tier-card__cr">{p.cr}</span>}
                   {p.note && <span class="tier-card__note">{p.note}</span>}
                 </div>
               </a>
@@ -201,6 +224,7 @@ const faqs = [
                 <div class="tier-card__info">
                   <h3>{p.name}</h3>
                   <span class="tier-card__spec">{p.spec} · {p.rarity}</span>
+                  {p.cr && <span class="tier-card__cr">{p.cr}</span>}
                   {p.note && <span class="tier-card__note">{p.note}</span>}
                 </div>
               </a>
@@ -250,6 +274,26 @@ const faqs = [
       </div>
 
     </div>
+
+    <section class="os-changes" id="os-tier-changes" aria-labelledby="os-tier-changes-heading">
+      <h2 id="os-tier-changes-heading">What Changed in This Update, and Why</h2>
+      <p>Ranked from creator results, not our own in-game tests. Every protocol not listed here kept its tier.</p>
+      <div class="os-changes__scroll">
+        <table>
+          <thead><tr><th scope="col">Protocol</th><th scope="col">Was</th><th scope="col">Now</th><th scope="col">What the rank rests on</th></tr></thead>
+          <tbody>
+            {osChanges.map(c => (
+              <tr>
+                <th scope="row"><a href={`/database/os-protocols/${c.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')}/`}>{c.name}</a></th>
+                <td>{c.was}</td>
+                <td>{c.now}</td>
+                <td>{c.why} {c.source && <a href={c.source.href}>{c.source.label}</a>}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
 
     <!-- FAQ -->
     <div class="faq-section" style="margin-top: var(--sp-8);">
@@ -430,4 +474,21 @@ const faqs = [
   .quick-pick a:hover {
     text-decoration: underline;
   }
+  .tier-card__cr {
+    display: block;
+    font-size: var(--step--2);
+    color: #FCD34D;
+    margin-top: 4px;
+  }
+  .os-changes { margin-top: var(--sp-8); max-width: 960px; }
+  .os-changes h2 { font-size: var(--text-lg); margin-bottom: var(--sp-2); }
+  .os-changes p { color: var(--ink-muted); font-size: var(--text-sm); margin-bottom: var(--sp-3); }
+  .os-changes__scroll { overflow-x: auto; }
+  .os-changes table { width: 100%; border-collapse: collapse; font-size: var(--text-sm); color: var(--ink-muted); }
+  .os-changes th, .os-changes td { text-align: left; vertical-align: top; padding: var(--sp-2); border-bottom: 1px solid var(--border); line-height: 1.6; }
+  .os-changes thead th { color: var(--ink); font-family: var(--font-mono); font-size: var(--text-xs); text-transform: uppercase; }
+  .os-changes tbody th { color: var(--ink); font-weight: 600; min-width: 150px; }
+  .os-changes tbody th a, .os-changes td a { color: var(--accent); }
+  .os-changes td:nth-child(2), .os-changes td:nth-child(3) { font-family: var(--font-mono); }
+  .os-changes td:last-child { min-width: 280px; }
 </style>

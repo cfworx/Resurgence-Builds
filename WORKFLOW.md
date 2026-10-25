@@ -198,7 +198,7 @@ Before publishing ANY post (build, guide, or news), every item below must be che
 
 - [ ] **`plannerHash`** - URL parameter string for the "Open in Build Planner" button
 - [ ] **Tier List Override** - Add the build name to `src/pages/tier-list/index.astro` in the `assignTier()` function (only for builds we've actually tested)
-- [ ] **`verified: false`** - Set this on a creator's build we documented from their videos but haven't re-tested ourselves. It swaps the green "Verified" badge for a "Creator build" badge and lists the build under "not ranked yet" on the tier list instead of auto-ranking it.
+- [ ] **`verified: false`** - Set this on a creator's build we documented from their videos but haven't re-tested ourselves. It swaps the green "Verified" badge for a "Creator build" badge and labels it as a creator build on database pages. Tiers are set by hand in the `RANKS` map in `src/pages/tier-list/index.astro` (ranked from creator results since October 2026, with the reason and sources shown on the page); a build with no `RANKS` entry shows under "not ranked yet".
 - [ ] **`specialization`** - Must match one of: Demolitionist, Tech Operator, Bulwark, Vanguard, Field Medic
 - [ ] **`playstyle`** - Must match one of: DPS, Tank, Support, Hybrid, Solo
 

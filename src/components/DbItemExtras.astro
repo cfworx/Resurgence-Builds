@@ -51,7 +51,7 @@ const cacheIds = [...new Set(rows.map((r) => r.cacheId))];
         {builds.map((b) => (
           <li>
             <a href={b.url}>{b.title}</a>
-            <span class="dbx-meta">{b.specialization} · {b.patch}{!b.verified && ' · creator build, not ranked yet'}</span>
+            <span class="dbx-meta">{b.specialization} · {b.patch}{!b.verified && ' · creator build, not re-tested by us'}</span>
           </li>
         ))}
       </ul>

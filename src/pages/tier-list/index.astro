@@ -1,63 +1,135 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import BuildCard from '../../components/BuildCard.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import SectionTag from '../../components/SectionTag.astro';
 import AdSenseUnit from '../../components/AdSenseUnit.astro';
 import { getCollection } from 'astro:content';
 import { verifiedPatch } from '../../data/site-config';
-const lastVerified = verifiedPatch('Patch 1.1.2.2'); // Bump: drop the arg ONLY after re-verifying this page's content in-game (CURRENT_PATCH is a ceiling, not an auto-bump)
+const lastVerified = verifiedPatch('Patch 1.1.2.2'); // Our own last in-game ranking. The current tiers come from creator results (Cory's call, October 2026), so don't bump this without an in-game re-test.
 
 const allBuilds = await getCollection('builds');
 
-function assignTier(build) {
-  const text = (build.data.title + ' ' + build.data.description + ' ' + (build.data.tags||[]).join(' ')).toLowerCase();
-  
-  if (text.includes('roguemadras') || text.includes('tactical pharma') || text.includes('jackpot striker drone') || text.includes('involuntary nap time')) return 'S';
-  if (text.includes('saiynergy') || text.includes('breacher')) return 'A';
-  if (text.includes('tampishach') || text.includes('tech aegis')) return 'B';
-  if (text.includes('milkshake') || text.includes('strawberry')) return 'B';
-  if (text.includes('disorient') || text.includes('tech-op')) return 'A';
-  if (text.includes('nadie') || text.includes('muscular nurse')) return 'A';
-  if (text.includes('ltfoe') || text.includes('double agent')) return 'A';
-  if (text.includes('agenthuntzman') || (text.includes('vanguard') && text.includes('recon'))) return 'A';
-  if (text.includes('pve enjoyer') || (text.includes('demolitionist') && text.includes('glass cannon'))) return 'A';
+// Season 2 Phase 2 re-rank from creator results, not our own in-game tests.
+// Rules (also stated on the page): Season 2 creator results in endgame count most; builds whose only
+// results predate Season 2 cap at A; a core piece nerfed since the old rank drops the build one tier.
+// `was` is the tier the old text-matching ranker gave it ('New' = listed but unranked before).
+const RANKS = {
+  'tactical-pharma-season-2-build-ggreborn': {
+    tier: 'S', was: 'New', evidence: 'Creator tests, Oct 2026',
+    why: "GGReborn's October 16 setup comes with solo Legendary gameplay, then Lone Wolf Challenge runs on October 22 and 23 comparing three stat setups and four OS Protocols. TikTokAndy rates his own version probably the best PvP build other than Bulwark.",
+    sources: [
+      { label: 'GGReborn, Oct 16', href: 'https://www.youtube.com/watch?v=OVnksyrlj88' },
+      { label: 'GGReborn OS test, Oct 23', href: 'https://www.youtube.com/watch?v=Kz9YlTUl_1s' },
+      { label: 'TikTokAndy, Oct 15', href: 'https://www.youtube.com/watch?v=f20v8_cv9Ls' },
+    ],
+  },
+  'misdirection-double-barrel-commando-build-tiktokandy': {
+    tier: 'S', was: 'New', evidence: 'Creator tests, Sep to Oct 2026',
+    why: "Every video was recorded after the Season 2 Phase 1 Commando changes. TikTokAndy showed a floor 20 run he says placed third in NA (published October 2) and soloed Precious Cargo on Legendary on October 6. GGReborn used it for his first solo Legendary on Vanguard on September 23.",
+    sources: [
+      { label: 'TikTokAndy, Oct 6', href: 'https://www.youtube.com/watch?v=D3yrRSUwhq0' },
+      { label: 'TikTokAndy, Oct 2', href: 'https://www.youtube.com/watch?v=9nQ-jGnc7gU' },
+      { label: 'GGReborn, Sep 23', href: 'https://www.youtube.com/watch?v=bltLVzptY0U' },
+    ],
+  },
+  'aegis-team-healer-tech-operator-build-tiktokandy': {
+    tier: 'A', was: 'New', evidence: 'Creator gameplay, Oct 2026',
+    why: "TikTokAndy's October 10 walkthrough. He calls it his favorite PvE build and says it's viable again now that revives work in No Respawn Zones. It's PvE only and, in his words, squishy, and his video is gameplay rather than a timed test, so it sits below the two S picks.",
+    sources: [{ label: 'TikTokAndy, Oct 10', href: 'https://www.youtube.com/watch?v=VHKfmW4BtEk' }],
+  },
+  'tactical-pharma-800k-dps-rank-1-global-build': {
+    tier: 'A', was: 'S', evidence: 'Pre-Season 2 results',
+    why: "RogueMadras's May 2026 setup, recorded before Season 2 reworked weapon and gear mods. None of its core pieces were nerfed, but GGReborn's Season 2 version has replaced it, and results from before Season 2 cap at A.",
+    sources: [],
+  },
+  'jackpot-striker-drone-tech-operator-build': {
+    tier: 'A', was: 'S', evidence: 'Our 1.1.2.2 write-up',
+    why: "Season 2 didn't touch Jackpot, Fire Cycle, Rampart, the three Striker Drone mods or the gun talents, but we haven't found Season 2 results for it, so it caps at A.",
+    sources: [],
+  },
+  'involuntary-nap-time-bulwark-juggernaut-build': {
+    tier: 'A', was: 'S', evidence: 'Pre-Season 2 results',
+    why: "Nadie's stun Bulwark took the biggest hits: the June 26 hotfix put Pummeling Shield's stun on a 10-second cooldown, and Season 2 Phase 1 cut Shockwave Spike's stun from 3.5 to 2 seconds and raised its cooldown from 12 to 14. It drops one tier. Bulwark in general is still what TikTokAndy says usually wins Dark Zone fights.",
+    sources: [],
+  },
+  'aegis-chad-glass-cannon-tech-operator-build-ifozzy': {
+    tier: 'A', was: 'A', evidence: 'Pre-Season 2 results',
+    why: "LtFoe's skill crit Tech Op from June. Season 2 helped it, since gear mods can now roll Skill Crit Chance and Skill Crit Damage, and nothing it relies on was nerfed. It keeps A.",
+    sources: [],
+  },
+  'muscular-nurse-combat-medicine-build-nadie': {
+    tier: 'A', was: 'A', evidence: 'Pre-Season 2 results',
+    why: "Nadie's tank medic from June. The Season 2 gear mod changes help it and nothing it relies on was nerfed. It keeps A.",
+    sources: [],
+  },
+  'agenthuntzmans-leaderboard-ranking-vanguard-support-build': {
+    tier: 'A', was: 'A', evidence: 'Pre-Season 2 results',
+    why: "Mixed changes: Season 1 Phase 3 fixed Recon passively dealing more damage than intended, and Season 2 Phase 1 improved Recon's Tactical Link auto-aim. It keeps A.",
+    sources: [],
+  },
+  'demolitionist-glass-cannon-build-pveenjoyer': {
+    tier: 'A', was: 'A', evidence: 'Pre-Season 2 results',
+    why: "Mixed changes: Season 2 Phase 1 removed the Skill Shredding and Piercing weapon rolls it used, and Season 2 Phase 2 cut Explosive Seeker Mine's cooldown from 18 to 14 seconds and buffed other Demolitionist nodes. It keeps A.",
+    sources: [],
+  },
+  'bulwark-breacher-build-saiynergy': {
+    tier: 'B', was: 'A', evidence: 'Pre-Season 2 results',
+    why: "Saiynergy's shield build runs Shockwave Spike, and the Season 2 Phase 1 stun and cooldown nerf means fewer Spikes per fight and less King of the Pit crit uptime. It drops one tier.",
+    sources: [],
+  },
+  'milkshake-machine-strawberry-milkshake-lmg-build': {
+    tier: 'B', was: 'B', evidence: 'Our 1.1.2.2 write-up',
+    why: "Mixed changes: Season 2 Phase 1 fixed Dominating Presence granting Armor instead of Weapon Multi-Shot Chance, then Phase 2 capped its scaling. It keeps B.",
+    sources: [],
+  },
+  'any-weapon-commando-beginner-vanguard-build-tiktokandy': {
+    tier: 'B', was: 'New', evidence: 'Creator gameplay, Sep 2026',
+    why: "TikTokAndy's beginner build, with a solo Heroic Chinatown run on September 24. It's the starting point he moved on from once he had a Double Barrel, and its best run is Heroic rather than Legendary.",
+    sources: [{ label: 'TikTokAndy, Sep 24', href: 'https://www.youtube.com/watch?v=6dGaisNKCyE' }],
+  },
+  'tech-aegis-engineering-build-tampishach': {
+    tier: 'C', was: 'B', evidence: 'Pre-Season 2 results',
+    why: "Tampishach's 237k DPS was recorded in late April, before Season 1 Phase 3 fixed Aegis Burst dealing more damage than intended. It drops one tier.",
+    sources: [],
+  },
+};
 
-  return 'B';
-}
-
-// Creator builds we documented but haven't re-tested (verified: false) are listed separately, never auto-ranked.
-const rankedBuilds = allBuilds.filter(b => b.data.verified !== false);
+const TIER_ORDER = ['S', 'A', 'B', 'C', 'D'];
+// Builds missing from RANKS (new guides added later) are listed below the tiers, never auto-ranked.
+const rankedBuilds = allBuilds
+  .filter(b => RANKS[b.id])
+  .map(b => ({ ...b, rank: RANKS[b.id] }))
+  .sort((a, b) => TIER_ORDER.indexOf(a.rank.tier) - TIER_ORDER.indexOf(b.rank.tier));
 const unrankedBuilds = allBuilds
-  .filter(b => b.data.verified === false)
+  .filter(b => !RANKS[b.id])
   .sort((a, b) => b.data.lastUpdated.getTime() - a.data.lastUpdated.getTime());
-const buildsWithTiers = rankedBuilds.map(b => ({ ...b, tier: assignTier(b) }));
 
-const sTier = buildsWithTiers.filter(b => b.tier === 'S');
-const aTier = buildsWithTiers.filter(b => b.tier === 'A');
-const bTier = buildsWithTiers.filter(b => b.tier === 'B');
-const cTier = buildsWithTiers.filter(b => b.tier === 'C');
-const dTier = buildsWithTiers.filter(b => b.tier === 'D');
+const tierRows = [
+  { tier: 'S', css: 'tier-s', empty: 'Nothing here yet.' },
+  { tier: 'A', css: 'tier-a', empty: 'Nothing here yet.' },
+  { tier: 'B', css: 'tier-b', empty: 'B-Tier is empty. Which is weird because most of us live here.' },
+  { tier: 'C', css: 'tier-c', empty: 'No C-Tier builds.' },
+  { tier: 'D', css: 'tier-d', empty: 'No D-Tier builds. We have standards. Low ones, but standards.' },
+].map(row => ({ ...row, builds: rankedBuilds.filter(b => b.rank.tier === row.tier) }));
 
 const breadcrumbItems = [{ name: 'Tier List', url: '/tier-list/' }];
 
 const title = "Best Builds & Tier List - Division Resurgence";
-// Fixed dates on purpose: the rankings were last re-tested for lastVerified, and the Season 2 notes were added on TIER_NOTES_UPDATED.
+// Fixed dates on purpose: TIER_UPDATED is the day of the Season 2 Phase 2 creator-results re-rank.
 const TIER_PUBLISHED = '2026-05-29';
-const TIER_NOTES_UPDATED = '2026-10-24';
-const description = `Best Division Resurgence builds ranked S through D tier for PvE, Dark Zone PvP and Conflict. Ranked on ${lastVerified}, with Season 2 notes.`;
+const TIER_UPDATED = '2026-10-25';
+const tierUpdatedLabel = new Date(TIER_UPDATED + 'T12:00:00Z').toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC' });
+const description = "Best Division Resurgence builds ranked S through D for Season 2 Phase 2, from creator test results (not our own in-game tests), with sources.";
 
 const siteUrl = 'https://resurgencebuilds.com';
 
-// ItemList schema for ranked builds
-const allRanked = [...sTier, ...aTier, ...bTier, ...cTier, ...dTier];
 const itemListLd = {
   '@type': 'ItemList',
-  name: `Division Resurgence Build Tier List (${lastVerified} rankings)`,
+  name: 'Division Resurgence Build Tier List (Season 2 Phase 2, ranked from creator results)',
   description: description,
   itemListOrder: 'https://schema.org/ItemListOrderDescending',
-  numberOfItems: allRanked.length,
-  itemListElement: allRanked.map((build, i) => ({
+  numberOfItems: rankedBuilds.length,
+  itemListElement: rankedBuilds.map((build, i) => ({
     '@type': 'ListItem',
     position: i + 1,
     name: build.data.title,
@@ -68,23 +140,23 @@ const itemListLd = {
 const faqs = [
   {
     question: "How do you rank builds on the tier list?",
-    answer: "Every build is tested in live gameplay: Legendary missions, Dark Zone PvP, and Conflict. We look at raw DPS output, survivability, team utility, and how forgiving the build is if you mess up a rotation. No theory-crafting from spreadsheets. If it doesn't perform in-game, it doesn't rank high."
+    answer: "This Season 2 Phase 2 list is ranked from creator results, not our own in-game tests. Season 2 results from creators in endgame content (Legendary missions, the Lone Wolf Challenge, the Dark Zone) count most. Builds whose only results come from before Season 2 can reach A at most, because Season 2 reworked weapon and gear mods. If an official patch nerfed a core piece of a build since its old rank, it drops one tier. The table under the tiers gives the reason and the sources for every build."
   },
   {
     question: "How often is the tier list updated?",
-    answer: "In theory, after every major patch. In practice, this list was last re-evaluated for Patch 1.1.2.2 and hasn't been re-tested since, even though Season 1 Phase 3, a June 26 hotfix and both Season 2 phases all shipped balance changes. Each build card links to a full guide with its own patch label and Last Updated date, so you can see exactly how stale it is before you farm anything."
+    answer: "We re-rank when a new phase or a balance hotfix lands, or when creators post new test results. This version is dated October 25, 2026, for Season 2 Phase 2, which Ubisoft extended on October 21. Our own in-game ranking was last done on Patch 1.1.2.2."
   },
   {
     question: "I think my build is ranked too low. What do I do?",
-    answer: "Send it through our contact page (pick Build Suggestion) with your loadout, stats, and gameplay clips. If your build is putting up numbers we can't argue with, we'll re-test it and adjust the ranking. We've moved builds up before - prove it and we'll own the mistake."
+    answer: "Send it through our contact page (pick Build Suggestion) with your loadout, stats and gameplay clips. We rank from published results, so a video with clear numbers in endgame content is the fastest way to move a build up."
   },
   {
     question: "What's the best build for PvE in Division Resurgence?",
-    answer: "For pure PvE damage, S-Tier builds like Tactical Pharma dominate Legendary content. The Demolitionist Glass Cannon build from PVE Enjoyer is also a top performer at 333k DPS with Fire Cycle T2. For group play, pair a DPS build with a Bulwark tank and Field Medic healer for the safest clears."
+    answer: "Going by creator results in Season 2 Phase 2, GGReborn's Tactical Pharma, which he ran solo on Legendary and through the Lone Wolf Challenge in October, and TikTokAndy's Misdirection Double Barrel Commando, which he took solo through Precious Cargo on Legendary on October 6. For a group healer, TikTokAndy's Aegis Team Healer is his favorite PvE build right now."
   },
   {
     question: "What's the best PvP build in the Dark Zone?",
-    answer: "When we ranked this list, Bulwark Juggernaut builds with Shockwave Spike MK3 were the most feared PvP archetype because the stuns were borderline broken. Then the June 26 hotfix put Pummeling Shield's stun on a 10-second cooldown, and Season 2 Phase 1 cut Shockwave Spike's stun from 3.5 to 2 seconds and raised its cooldown from 12 to 14 seconds. For damage-focused PvP, SMG Lady Death builds on Vanguard Commando had the fastest TTK at close range. We haven't re-ranked PvP since those nerfs, so treat this as history, not gospel."
+    answer: "In TikTokAndy's experience, Dark Zone fights mostly come down to Tactical Pharma against Bulwark, and Bulwark usually comes out on top. Stun Bulwarks aren't what they were, though: the June 26 hotfix put Pummeling Shield's stun on a 10-second cooldown, and Season 2 Phase 1 cut Shockwave Spike's stun from 3.5 to 2 seconds and raised its cooldown from 12 to 14 seconds, which is why Involuntary Nap Time moved from S to A. None of the builds here has a timed Season 2 PvP test."
   },
 ];
 ---
@@ -92,7 +164,7 @@ const faqs = [
 <BaseLayout title={title} description={description} breadcrumbs={breadcrumbItems} ogImage="/images/best-pve-dps-builds-division-resurgence.png" faqs={faqs} jsonLd={itemListLd}
   article={{
     publishDate: new Date(TIER_PUBLISHED + 'T12:00:00Z').toISOString(),
-    modifiedDate: new Date(TIER_NOTES_UPDATED + 'T12:00:00Z').toISOString(),
+    modifiedDate: new Date(TIER_UPDATED + 'T12:00:00Z').toISOString(),
     author: 'RapidF5',
     tags: ['tier list', 'best builds', 'meta', 'Division Resurgence'],
   }}
@@ -102,147 +174,64 @@ const faqs = [
     <SectionTag label="Meta Ranking" />
     <h1 class="heading-accent">Division Resurgence Build Tier List</h1>
     <div style="display: flex; flex-wrap: wrap; align-items: center; gap: var(--sp-2); margin-bottom: var(--sp-4); font-size: var(--text-sm);">
-      <span style="display: inline-flex; align-items: center; gap: 4px; padding: 4px 10px; background: rgba(34,197,94,0.12); border: 1px solid rgba(34,197,94,0.3); border-radius: 4px; color: #22c55e; font-family: var(--font-mono); font-size: var(--text-xs); font-weight: 600; letter-spacing: 0.03em;">&#9989; Ranked on {lastVerified}</span>
-      <span style="display: inline-flex; align-items: center; gap: 4px; padding: 4px 10px; background: rgba(252,211,77,0.08); border: 1px solid rgba(252,211,77,0.3); border-radius: 4px; color: #FCD34D; font-family: var(--font-mono); font-size: var(--text-xs); font-weight: 600;">Season 2 notes added Oct 2026</span>
-      <span style="display: inline-flex; align-items: center; gap: 4px; padding: 4px 10px; background: rgba(242,104,34,0.08); border: 1px solid rgba(242,104,34,0.2); border-radius: 4px; color: var(--accent); font-family: var(--font-mono); font-size: var(--text-xs); font-weight: 600;">{allRanked.length} builds ranked</span>
+      <span style="display: inline-flex; align-items: center; gap: 4px; padding: 4px 10px; background: rgba(252,211,77,0.08); border: 1px solid rgba(252,211,77,0.3); border-radius: 4px; color: #FCD34D; font-family: var(--font-mono); font-size: var(--text-xs); font-weight: 600; letter-spacing: 0.03em;">Season 2 Phase 2, ranked from creator results</span>
+      <span style="display: inline-flex; align-items: center; gap: 4px; padding: 4px 10px; background: rgba(34,197,94,0.12); border: 1px solid rgba(34,197,94,0.3); border-radius: 4px; color: #22c55e; font-family: var(--font-mono); font-size: var(--text-xs); font-weight: 600;">Updated <time datetime={TIER_UPDATED}>{tierUpdatedLabel}</time></span>
+      <span style="display: inline-flex; align-items: center; gap: 4px; padding: 4px 10px; background: rgba(242,104,34,0.08); border: 1px solid rgba(242,104,34,0.2); border-radius: 4px; color: var(--accent); font-family: var(--font-mono); font-size: var(--text-xs); font-weight: 600;">{rankedBuilds.length} builds ranked</span>
     </div>
     <p style="color:var(--ink-muted);margin-bottom:var(--sp-4); line-height: 1.7;">
-      Every build on this list was in-game verified and ranked by real endgame performance for {lastVerified}. <strong>S-Tier</strong> builds are the best builds in Division Resurgence right now - so overtuned that running them feels like cheating and we respect that. <strong>A-Tier</strong> builds will carry you through anything if you have a functioning thumb. <strong>B-Tier</strong> builds work great but your teammates will still blame you when you wipe. <strong>C-Tier</strong> builds are for people who enjoy suffering. We don't judge. Much.
+      These tiers are ranked for Season 2 Phase 2 from the creators' own published results, not from our own in-game testing. Every build links to its guide, and <a href="#why-each-tier">the table below the tiers</a> says what each rank rests on. <strong>S-Tier</strong> builds have the strongest Season 2 endgame results right now. <strong>A-Tier</strong> builds will carry you through anything if you have a functioning thumb. <strong>B-Tier</strong> builds work great but your teammates will still blame you when you wipe. <strong>C-Tier</strong> builds are for people who enjoy suffering. We don't judge. Much.
     </p>
 
     <!-- Methodology -->
     <div style="background: rgba(0,0,0,0.15); border: 1px solid var(--border); border-left: 3px solid var(--accent); border-radius: 0 8px 8px 0; padding: var(--sp-5) var(--sp-5) var(--sp-5) calc(var(--inset) - 3px); margin-bottom: var(--sp-6); max-width: 800px;">
-      <h2 style="font-family: var(--font-heading); font-size: var(--text-base); font-weight: 800; color: #fff; margin: 0 0 var(--sp-2) 0;">How We Rank Builds</h2>
-      <p style="color: var(--ink-muted); font-size: var(--text-sm); line-height: 1.7; margin: 0;">
-        Every build is run in three scenarios: <strong style="color: var(--ink);">Legendary missions</strong> (sustained DPS and survivability), <strong style="color: var(--ink);">Dark Zone PvP</strong> (TTK and positioning), and <strong style="color: var(--ink);">Conflicts</strong> (team composition impact). We measure DPS output, clear times, death count, and team contribution across multiple runs. Builds that perform consistently across all three contexts rank higher than one-trick setups. These rankings were last re-tested for {lastVerified}; the update note below covers the official balance changes since.
+      <h2 style="font-family: var(--font-heading); font-size: var(--text-base); font-weight: 800; color: #fff; margin: 0 0 var(--sp-2) 0;">How We Ranked This Update</h2>
+      <p style="color: var(--ink-muted); font-size: var(--text-sm); line-height: 1.7; margin: 0 0 var(--sp-2) 0;">
+        <strong style="color: var(--ink);">These ranks come from creator results, not our own in-game tests.</strong> We haven't re-run any of these builds ourselves since {lastVerified}. Four rules decide each tier:
       </p>
+      <ul style="color: var(--ink-muted); font-size: var(--text-sm); line-height: 1.7; padding-left: var(--inset); margin: 0;">
+        <li>Season 2 results from creators in endgame content (Legendary missions, the Lone Wolf Challenge, the Dark Zone) count most.</li>
+        <li>A build whose only results come from before Season 2 can reach A at most, because Season 2 reworked weapon and gear mods.</li>
+        <li>If an official patch nerfed a core piece since the build's old rank, it drops one tier.</li>
+        <li>Untouched, buffed or mixed builds keep their old tier, within that A cap.</li>
+      </ul>
     </div>
 
     <div style="background: rgba(242,104,34,0.06); border: 1px solid rgba(242,104,34,0.2); border-radius: 8px; padding: var(--sp-4) var(--sp-5) var(--sp-4) calc(var(--inset) - 1px); margin-bottom: var(--sp-6); max-width: 800px;">
       <p style="color: var(--ink-muted); font-size: var(--text-sm); line-height: 1.7; margin: 0;">
-        <strong style="color: var(--accent);">Update (October 2026):</strong> these tiers have not been re-tested since {lastVerified}. Since then Ubisoft shipped Season 1 Phase 3 (Thermobaric Grenades nerf, plus fixes to Aegis Burst, Medic Hypershot, Juggernaut and Recon dealing more damage than intended), a June 26 hotfix (80% damage reduction cap, Pummeling Shield stun cooldown), and two Season 2 phases (Shockwave Spike, Steady Reload and Commando Double Barrel nerfs, a Recycling rework, plus weapon and gear mod reworks). Stun-based Bulwark builds like Involuntary Nap Time and anything leaning on Aegis Burst are the most likely to have slipped. Check each build's patch label.
-       Season 2 notes updated <time datetime={TIER_NOTES_UPDATED}>{new Date(TIER_NOTES_UPDATED + 'T12:00:00Z').toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC' })}</time>.
+        <strong style="color: var(--accent);">Update (<time datetime={TIER_UPDATED}>{tierUpdatedLabel}</time>):</strong> re-ranked for Season 2 Phase 2. The four Season 2 creator builds are now ranked, and the older builds were checked against every balance change since {lastVerified}: Season 1 Phase 3 (Thermobaric Grenades nerf, plus fixes to Aegis Burst, Medic Hypershot, Juggernaut and Recon dealing more damage than intended), the June 26 hotfix (80% damage reduction cap, Pummeling Shield stun cooldown), two Season 2 phases (Shockwave Spike, Steady Reload and Commando Double Barrel nerfs, a Recycling rework, plus weapon and gear mod reworks) and the October 14 Heavy Weight nerf, which none of these builds use.
       </p>
     </div>
 
     <div class="tier-list">
-      
-      <!-- S-TIER -->
-      <div class="tier-row">
-        <div class="tier-label tier-s">S</div>
-        <div class="tier-content">
-          {sTier.length > 0 ? (
-            <div class="tier-grid">
-              {sTier.map(build => (
-                <a href={`/builds/${build.id}/`} class="tier-card">
-                  <div class="tier-card__img" style={`background-image: url('${build.data.featuredImage || '/images/default-cover.webp'}')`}></div>
-                  <div class="tier-card__info">
-                    <h3>{build.data.title.split(' - ')[0]}</h3>
-                    <span class="tier-card__spec">{build.data.specialization}{build.data.subclass ? ` - ${build.data.subclass}` : ''}</span>
-                  </div>
-                </a>
-              ))}
-            </div>
-          ) : (
-            <div class="tier-empty">Nothing here yet. If your build belongs in S-Tier, prove it. <a href="/contact/">Send it in</a>.</div>
-          )}
+      {tierRows.map(row => (
+        <div class="tier-row">
+          <div class={`tier-label ${row.css}`}>{row.tier}</div>
+          <div class="tier-content">
+            {row.builds.length > 0 ? (
+              <div class="tier-grid">
+                {row.builds.map(build => (
+                  <a href={`/builds/${build.id}/`} class="tier-card">
+                    <div class="tier-card__img" style={`background-image: url('${build.data.featuredImage || '/images/default-cover.webp'}')`}></div>
+                    <div class="tier-card__info">
+                      <h3>{build.data.title.split(' - ')[0]}</h3>
+                      <span class="tier-card__spec">{build.data.specialization}{build.data.subclass ? ` - ${build.data.subclass}` : ''}</span>
+                      <span class="tier-card__basis">{build.rank.evidence}</span>
+                    </div>
+                  </a>
+                ))}
+              </div>
+            ) : (
+              <div class="tier-empty">{row.empty}</div>
+            )}
+          </div>
         </div>
-      </div>
-
-      <!-- A-TIER -->
-      <div class="tier-row">
-        <div class="tier-label tier-a">A</div>
-        <div class="tier-content">
-          {aTier.length > 0 ? (
-            <div class="tier-grid">
-              {aTier.map(build => (
-                <a href={`/builds/${build.id}/`} class="tier-card">
-                  <div class="tier-card__img" style={`background-image: url('${build.data.featuredImage || '/images/default-cover.webp'}')`}></div>
-                  <div class="tier-card__info">
-                    <h3>{build.data.title.split(' - ')[0]}</h3>
-                    <span class="tier-card__spec">{build.data.specialization}{build.data.subclass ? ` - ${build.data.subclass}` : ''}</span>
-                  </div>
-                </a>
-              ))}
-            </div>
-          ) : (
-            <div class="tier-empty"></div>
-          )}
-        </div>
-      </div>
-
-      <!-- B-TIER -->
-      <div class="tier-row">
-        <div class="tier-label tier-b">B</div>
-        <div class="tier-content">
-          {bTier.length > 0 ? (
-            <div class="tier-grid">
-              {bTier.map(build => (
-                <a href={`/builds/${build.id}/`} class="tier-card">
-                  <div class="tier-card__img" style={`background-image: url('${build.data.featuredImage || '/images/default-cover.webp'}')`}></div>
-                  <div class="tier-card__info">
-                    <h3>{build.data.title.split(' - ')[0]}</h3>
-                    <span class="tier-card__spec">{build.data.specialization}{build.data.subclass ? ` - ${build.data.subclass}` : ''}</span>
-                  </div>
-                </a>
-              ))}
-            </div>
-          ) : (
-            <div class="tier-empty">B-Tier is empty. Which is weird because most of us live here.</div>
-          )}
-        </div>
-      </div>
-
-      <!-- C-TIER -->
-      <div class="tier-row">
-        <div class="tier-label tier-c">C</div>
-        <div class="tier-content">
-          {cTier.length > 0 ? (
-            <div class="tier-grid">
-              {cTier.map(build => (
-                <a href={`/builds/${build.id}/`} class="tier-card">
-                  <div class="tier-card__img" style={`background-image: url('${build.data.featuredImage || '/images/default-cover.webp'}')`}></div>
-                  <div class="tier-card__info">
-                    <h3>{build.data.title.split(' - ')[0]}</h3>
-                    <span class="tier-card__spec">{build.data.specialization}{build.data.subclass ? ` - ${build.data.subclass}` : ''}</span>
-                  </div>
-                </a>
-              ))}
-            </div>
-          ) : (
-            <div class="tier-empty">No C-Tier builds.</div>
-          )}
-        </div>
-      </div>
-
-      <!-- D-TIER -->
-      <div class="tier-row">
-        <div class="tier-label tier-d">D</div>
-        <div class="tier-content">
-          {dTier.length > 0 ? (
-            <div class="tier-grid">
-              {dTier.map(build => (
-                <a href={`/builds/${build.id}/`} class="tier-card">
-                  <div class="tier-card__img" style={`background-image: url('${build.data.featuredImage || '/images/default-cover.webp'}')`}></div>
-                  <div class="tier-card__info">
-                    <h3>{build.data.title.split(' - ')[0]}</h3>
-                    <span class="tier-card__spec">{build.data.specialization}{build.data.subclass ? ` - ${build.data.subclass}` : ''}</span>
-                  </div>
-                </a>
-              ))}
-            </div>
-          ) : (
-            <div class="tier-empty">No D-Tier builds. We have standards. Low ones, but standards.</div>
-          )}
-        </div>
-      </div>
-
+      ))}
     </div>
 
     {unrankedBuilds.length > 0 && (
       <section class="unranked-builds" aria-labelledby="unranked-heading">
-        <h2 id="unranked-heading">New Season 2 creator builds (not ranked yet)</h2>
-        <p>We document these from the creators' own videos, but we haven't run them through our ranking tests, so they don't get a tier. Yet. Each page says exactly whose numbers are whose.</p>
+        <h2 id="unranked-heading">New builds (not ranked yet)</h2>
+        <p>These guides went up after the last re-rank, so they don't have a tier yet. Each page says exactly whose numbers are whose.</p>
         <div class="tier-grid">
           {unrankedBuilds.map(build => (
             <a href={`/builds/${build.id}/`} class="tier-card">
@@ -257,30 +246,67 @@ const faqs = [
       </section>
     )}
 
+    <section class="rank-basis" id="why-each-tier" aria-labelledby="why-each-tier-heading">
+      <h2 id="why-each-tier-heading">Why Each Build Sits Where It Does</h2>
+      <p>Ranked from creator results, not our own in-game tests. "Was" is the build's tier before this update. Each guide lists all of its videos and the patch notes behind it.</p>
+      <div class="rank-basis__scroll">
+        <table>
+          <thead>
+            <tr><th scope="col">Build</th><th scope="col">Tier</th><th scope="col">Was</th><th scope="col">What the rank rests on</th></tr>
+          </thead>
+          <tbody>
+            {rankedBuilds.map(build => (
+              <tr>
+                <th scope="row"><a href={`/builds/${build.id}/`}>{build.data.title.split(' - ')[0]}</a></th>
+                <td>{build.rank.tier}</td>
+                <td>{build.rank.was}</td>
+                <td>
+                  {build.rank.why}
+                  {build.rank.sources.length > 0 && (
+                    <span class="rank-basis__sources"> Sources: {build.rank.sources.map((s, i) => (
+                      <>{i > 0 && ', '}<a href={s.href} rel="noopener" target="_blank">{s.label}</a></>
+                    ))}.</span>
+                  )}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p class="rank-basis__patches">Balance changes come from our write-ups of the official notes: <a href="/patch-notes/season-1-phase-3-a-new-fire/">Season 1 Phase 3</a>, <a href="/patch-notes/season-2-phase-1-the-call/">Season 2 Phase 1</a>, <a href="/patch-notes/season-2-phase-2/">Season 2 Phase 2</a> and the <a href="/patch-notes/october-2026-hotfixes/">October 2026 hotfixes</a>.</p>
+    </section>
+
     <AdSenseUnit label="Advertisement — tier list 1" />
 
     <!-- Per-Tier Analysis -->
     <div style="max-width: 800px; margin-top: var(--sp-6);">
-      <h2 style="font-family: var(--font-heading); font-size: var(--text-xl); font-weight: 800; color: #fff; margin: 0 0 var(--sp-4) 0;">Tier Breakdown - {lastVerified} Meta</h2>
+      <h2 style="font-family: var(--font-heading); font-size: var(--text-xl); font-weight: 800; color: #fff; margin: 0 0 var(--sp-4) 0;">Tier Breakdown, Season 2 Phase 2</h2>
 
       <div style="margin-bottom: var(--sp-6);">
-        <h3 style="font-family: var(--font-heading); font-size: var(--text-lg); font-weight: 800; color: #ff7b00; margin: 0 0 var(--sp-2) 0;">S-Tier - The Untouchables</h3>
+        <h3 style="font-family: var(--font-heading); font-size: var(--text-lg); font-weight: 800; color: #ff7b00; margin: 0 0 var(--sp-2) 0;">S-Tier: The Untouchables</h3>
         <p style="color: var(--ink-muted); font-size: var(--text-sm); line-height: 1.75;">
-          S-Tier is reserved for builds that break the game in their favor. As of our last ranking, that's Tactical Pharma - RogueMadras put together a setup that pushes 800k+ effective DPS with healing output that keeps the squad alive through damage checks that should be wiping you. It's the kind of build where teammates type "what are you running" in chat after the first boss melts in 8 seconds. If you want to clear Legendary content on autopilot, these are the loadouts that do it.
+          Two builds have the strongest Season 2 endgame results from the creators. GGReborn's Tactical Pharma is an Engineering skill build that he ran solo on Legendary and then put through the Lone Wolf Challenge, where four different OS Protocols finished within five seconds of each other. TikTokAndy's Misdirection Double Barrel Commando proved the shotgun survived the Season 2 Commando nerf: it changed engines, and he soloed Precious Cargo on Legendary with it.
         </p>
       </div>
 
       <div style="margin-bottom: var(--sp-6);">
-        <h3 style="font-family: var(--font-heading); font-size: var(--text-lg); font-weight: 800; color: #3a7bd5; margin: 0 0 var(--sp-2) 0;">A-Tier - Endgame Ready</h3>
+        <h3 style="font-family: var(--font-heading); font-size: var(--text-lg); font-weight: 800; color: #3a7bd5; margin: 0 0 var(--sp-2) 0;">A-Tier: Endgame Ready</h3>
         <p style="color: var(--ink-muted); font-size: var(--text-sm); line-height: 1.75;">
-          A-Tier builds are what most experienced players run. The Bulwark Breacher from Saiynergy (334k DPS while holding a shield), PVE Enjoyer's Demolitionist Glass Cannon (333k DPS at 20m range), and AgentHuntzman's Vanguard Recon (team damage multiplier that doesn't show on your own DPS meter but carries the squad). These builds clear all content comfortably and are competitive in Dark Zone PvP. The difference between A-Tier and S-Tier is usually one stat check or one gear piece - if you're running A-Tier, you're doing endgame right.
+          A-Tier is where most of the old list lives now. RogueMadras's 800k Tactical Pharma and the Jackpot Striker Drone weren't nerfed, but their results predate Season 2, so they cap here. Involuntary Nap Time slid from S after the Pummeling Shield and Shockwave Spike stun nerfs. TikTokAndy's Aegis Team Healer joins as the support pick for groups, alongside Nadie's Muscular Nurse, LtFoe's Double Agent, AgentHuntzman's Recon and PVE Enjoyer's Demolitionist.
         </p>
       </div>
 
       <div style="margin-bottom: var(--sp-6);">
-        <h3 style="font-family: var(--font-heading); font-size: var(--text-lg); font-weight: 800; color: #28a745; margin: 0 0 var(--sp-2) 0;">B-Tier - Solid Picks</h3>
+        <h3 style="font-family: var(--font-heading); font-size: var(--text-lg); font-weight: 800; color: #28a745; margin: 0 0 var(--sp-2) 0;">B-Tier: Solid Picks</h3>
         <p style="color: var(--ink-muted); font-size: var(--text-sm); line-height: 1.75;">
-          B-Tier builds work. Period. The Milkshake Machine (Strawberry Milkshake LMG with Phalanx Attack) is disgusting sustained DPS that just keeps firing. Tampishach's Tech Aegis (237k DPS shield pulse) is a tanky DPS hybrid with one of the highest skill ceilings in the game. These builds won't top the damage charts against an optimized S-Tier or A-Tier setup, but they'll clear every piece of content in the game and they're often more forgiving to play. If you're still farming for that perfect Fire Cycle T2 roll, B-Tier is where you live - and it's comfortable.
+          B-Tier builds work. Period. The Milkshake Machine keeps firing, though its Dominating Presence was fixed and then capped in Season 2. Saiynergy's Bulwark Breacher dropped here because fewer Shockwave Spikes per fight means less crit uptime. TikTokAndy's Any-Weapon Commando is the build to run while you farm for a Double Barrel.
+        </p>
+      </div>
+
+      <div style="margin-bottom: var(--sp-6);">
+        <h3 style="font-family: var(--font-heading); font-size: var(--text-lg); font-weight: 800; color: #adb5bd; margin: 0 0 var(--sp-2) 0;">C-Tier: Needs a Rebuild</h3>
+        <p style="color: var(--ink-muted); font-size: var(--text-sm); line-height: 1.75;">
+          Tampishach's Tech Aegis still has one of the highest skill ceilings in the game, but its 237k DPS was recorded before Season 1 Phase 3 fixed Aegis Burst dealing more damage than intended. Until someone posts new numbers, treat it as a project.
         </p>
       </div>
     </div>
@@ -438,4 +464,46 @@ const faqs = [
     font-size: var(--text-sm);
     margin: 0 0 var(--sp-4) 0;
   }
+  .tier-card__basis {
+    font-size: var(--step--2);
+    color: #FCD34D;
+    margin-top: 2px;
+  }
+  .rank-basis {
+    margin: var(--sp-8) 0;
+    max-width: 960px;
+  }
+  .rank-basis h2 {
+    font-family: var(--font-heading);
+    font-size: var(--text-lg);
+    font-weight: 800;
+    color: #fff;
+    margin: 0 0 var(--sp-2) 0;
+  }
+  .rank-basis p {
+    color: var(--ink-muted);
+    font-size: var(--text-sm);
+    line-height: 1.7;
+    margin: 0 0 var(--sp-3) 0;
+  }
+  .rank-basis__scroll { overflow-x: auto; }
+  .rank-basis table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: var(--text-sm);
+    color: var(--ink-muted);
+  }
+  .rank-basis th, .rank-basis td {
+    text-align: left;
+    vertical-align: top;
+    padding: var(--sp-2);
+    border-bottom: 1px solid var(--border);
+    line-height: 1.6;
+  }
+  .rank-basis thead th { color: var(--ink); font-family: var(--font-mono); font-size: var(--text-xs); text-transform: uppercase; }
+  .rank-basis tbody th { color: var(--ink); font-weight: 600; min-width: 160px; }
+  .rank-basis td:nth-child(2), .rank-basis td:nth-child(3) { font-family: var(--font-mono); white-space: nowrap; }
+  .rank-basis td:last-child { min-width: 280px; }
+  .rank-basis__sources { color: var(--ink-muted); }
+  .rank-basis p.rank-basis__patches { margin-top: var(--sp-3); }
 </style>
