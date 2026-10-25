@@ -22,7 +22,7 @@ sources:
 plannerHash: "s=Field+Medic&sc=Tactical+Pharma&n=Tactical+Pharma+800k&ms=gs-7&m1=Skill+Critical+Damage&m2=Skill+Critical+Chance&cs=gs-11&ct=ba-12&c1=Skill+Critical+Chance&c2=Skill+Intensity&ps=gs-7&pt=bp-19&p1=Skill+Multi-Shot+Chance&p2=Skill+Critical+Chance&gs=gs-11&g1=Skill+Intensity&g2=Skill+Critical+Chance&hs=gs-11&h1=Skill+Intensity&h2=Skill+Multi-Shot+Chance&ks=gs-11&k1=Skill+Critical+Damage&k2=Skill+Critical+Chance&w1s=sw-11&w1tr=T2&w1t=wt-4&w1t2=wt-5&w2s=sw-33&w2tr=T1&w2t=wt-30&w2t2=wt-31&os=os-20&sm1=smc-75&sm2=smc-79&sm3=smc-76"
 faqs:
   - question: "What is the best Field Medic build in Division Resurgence?"
-    answer: "You're reading it. RogueMadras's Tactical Pharma build was the highest-DPS skill build we'd seen when this was written in Season 1, pushing 800k+ DPS with optimized gear. It uses Chemical Trap and Oxidizing Hive as slotted skills, with Oxidizing Swarm as the signature ability, to dissolve entire rooms while your guns sit there collecting Engineering stacks like participation trophies. If your idea of 'healing' is making sure the enemies die before your teammates need healing, welcome home."
+    answer: "For Season 2, start with GGReborn's Season 2 Tactical Pharma build on this site. This one, RogueMadras's Tactical Pharma build, was the highest-DPS skill build we'd seen when it was written in Season 1, pushing 800k+ DPS with optimized gear. It uses Chemical Trap and Oxidizing Hive as slotted skills, with Oxidizing Swarm as the signature ability, to dissolve entire rooms while your guns sit there collecting Engineering stacks like participation trophies. If your idea of 'healing' is making sure the enemies die before your teammates need healing, welcome home."
   - question: "Can I run this Tactical Pharma build in the Dark Zone?"
     answer: "You can, and it's actually hilarious for area denial at extractions. Drop a chemical trap on the rope, watch rogues walk into it, and type 'Geneva was a suggestion' in chat. The downside is that if someone rushes you with a Lady Death, your chemical cloud won't save you from the burst damage. Keep distance. You're a war criminal, not a brawler."
   - question: "Is Glass Cannon worth the risk on this Tactical Pharma build?"
@@ -39,6 +39,9 @@ videoChannel: "RogueMadras"
 ---
 
 ## What This Build Does
+
+> [!INFO] Playing Season 2? Start with the newer build
+> GGReborn's [Season 2 Tactical Pharma build](/builds/tactical-pharma-season-2-build-ggreborn/) was recorded in October 2026 on Season 2 Phase 2, with the reworked mods. This page is RogueMadras's May 2026 setup from Season 1, here for anyone who already built it.
 
 > Build credit: [**RogueMadras**](https://www.youtube.com/@RogueMadras). He just released an [updated build video](https://www.youtube.com/watch?v=1dAkSWoR7co) walking through his latest Tactical Pharma setup, the same build that pushed him to **Rank 1 Global**. You can also watch his [original gameplay breakdown](https://www.youtube.com/watch?v=orBlCP7ro4I&t=3351s).
 

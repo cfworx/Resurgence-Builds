@@ -26,8 +26,8 @@ faqs:
     answer: "The creators don't agree, which is how you know it's a real question. GGReborn sits around 69% and wants to come down to 55 or 60% so he can push Skill Crit Damage and Skill Multi-Shot higher. TikTokAndy, at 55%, thinks the build gets good around 75%. GGReborn then ran 65.87%, 71.19% and 76.73% setups through Lone Wolf on October 22, told viewers to watch the damage numbers rather than the clock, and didn't name a winner, so we won't either."
   - question: "Is Glass Cannon worth it on Tactical Pharma?"
     answer: "GGReborn runs it; our database lists the base version as +20% Damage in exchange for -10% Damage Reduction. TikTokAndy's chest has Toymaker II, the only good chest talent he could get, and he still calls it one of the squishiest builds he's ever made, which is why he rolled Damage Reduction onto several of his chips. If you wear Glass Cannon, wear it behind cover and a long way from anyone carrying a shotgun."
-  - question: "How is this different from the Season 1 Tactical Pharma build?"
-    answer: "Our older Tactical Pharma page is RogueMadras's May 2026 build: Rampart recommended as the OS Protocol, Prime Engineer on the backpack, and a Vector plus MK16 swap running Backup Battery, Backup Magazine, Multi-Pronged Attack and Multitasking. GGReborn keeps the Jackpot 4pc + Fire Cycle 2pc core and Glass Cannon, but runs Brains Over Brawn, Minion Training II and a Lightweight M4 plus First Wave Vector, and his weapon mods carry the Skill Intensity and Skill Critical Damage bonus rolls that Season 2 Phase 1 added to the weapon mod pool."
+  - question: "I'm still on my Season 1 Tactical Pharma build. What should I change?"
+    answer: "Start with the weapon mods. Season 2 Phase 1 added Skill Intensity and Skill Critical Damage to their bonus pool, old mods keep their old rolls, and GGReborn's mods carry the new ones. He keeps the Jackpot 4pc + Fire Cycle 2pc core and the Glass Cannon chest from our Season 1 page, but runs Brains Over Brawn where that page recommends Rampart, Minion Training II instead of Prime Engineer, and a Lightweight M4 plus First Wave Vector instead of the Vector and MK16 swap. Rampart wasn't in his OS Protocol test, but the four he did test finished within five seconds of each other, so don't burn a month of caches on the OS before the mods are sorted."
 videoId: "OVnksyrlj88"
 videoTitle: "GGReborn - BEST Tactical Pharma Build + Solo Legendary Gameplay"
 videoChannel: "GGReborn"
@@ -48,9 +48,6 @@ The short answers: four OS Protocols finished **within five seconds** of each ot
 - **Skills:** Oxidizing Swarm with **Enhanced Formula**, Oxidizing Hive with **Hereafter Resilience**, Chemical Trap with **Chemical Recharge**.
 - **Weapons:** Lightweight M4 (**In Sync** + **Revitalize**), First Wave Vector (**Torrential Downpour** + **Fully Charged**).
 - **Stat focus:** Engineering-heavy mods, then Skill Intensity, Skill Critical Damage and Skill Multi-Shot Chance.
-
-> [!INFO] Looking for the Season 1 version?
-> Our [Tactical Pharma 800k DPS build](/builds/tactical-pharma-800k-dps-rank-1-global-build/) is RogueMadras's May 2026 setup (Rampart recommended, Vector and MK16 swap), written before Season 2's mod reworks. This page is the Season 2 Phase 2 version, recorded by creators in October.
 
 ---
 
