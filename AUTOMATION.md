@@ -49,11 +49,11 @@ The container's shell usually can't reach websites (only package registries and 
 
 | # | Source | URL | What to compare |
 |---|---|---|---|
-| 1 | Steam announcements (official) | Try in this order until one reads: the Steam News API `https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=3749720&count=20&maxlength=0&format=json`, the RSS feed `https://store.steampowered.com/feeds/news/app/3749720/`, the Steam Community announcements page `https://steamcommunity.com/games/3749720/announcements/`, then WebSearch. (On 2026-10-25 our fetch tool refused the API and couldn't render `https://store.steampowered.com/news/app/3749720`.) | items newer than `state.steam.latestDate` / not in `state.steam.seen` |
+| 1 | Steam announcements (official) | Try the RSS feed `https://store.steampowered.com/feeds/news/app/3749720/`, then the Steam Community announcements page `https://steamcommunity.com/games/3749720/announcements/`, then WebSearch. Don't fetch the Steam News API (`api.steampowered.com`): our fetch tool refuses it (robots rules). The store's news page needs JavaScript and comes back empty. | items newer than `state.steam.latestDate` / not in `state.steam.seen` |
 | 2 | Ubisoft Help Center, Patch Notes section | `https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/section/539-patch-notes/` | article IDs not in `state.helpCenterPatchNotes` |
 | 3 | Ubisoft game news | `https://www.ubisoft.com/en-us/game/the-division/resurgence/news-updates` (a JavaScript page our fetch tool often can't read; fall back to WebSearch `"Division Resurgence" site:ubisoft.com news`) | entries not in `state.ubisoftNews` |
 | 4 | Ubisoft News articles | search: `The Division Resurgence site:news.ubisoft.com` | articles not in `state.newsUbisoftCom` |
-| 5 | Official X account | `https://x.com/TheDivMobile` (logged-out view shows ~5 latest posts; WebSearch "TheDivMobile" as fallback) | status IDs greater than `state.x.latestSeenStatusId` |
+| 5 | Official X account | WebSearch `TheDivMobile` (our fetch tool refuses `x.com`, so don't fetch it) | status IDs greater than `state.x.latestSeenStatusId` |
 | 6 | Official bug reporter | `https://www.ubisoft.com/en-us/game/the-division/the-division-resurgence/bug-reporter/issues` (JavaScript only: try once; if it doesn't render, it's a **manual** source the owner or an interactive session checks with a browser, so don't count it as a failure) | status changes vs `state.bugReporter` (Planned, In Progress, Done) |
 | 7 | Help Center drop rates | `https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2522-drop-rates/` | the "Last Updated" age vs `state.dropRates` |
 | 8 | Official website | `https://www.ubisoft.com/en-us/game/the-division/resurgence` | the season banner (it showed "Season 2: The Call" on 2026-10-25); a new season or phase banner is news |
@@ -89,6 +89,17 @@ Work through every group in the file, every run. Each entry has the URL to check
 If a source won't load, try once more, then mark it (`status: unreachable` or `blocked`, `failStreak` + 1) and move on.
 Never use mirrors, caches, archives or scraping services to get around a block.
 
+**Fetch order matters in an unattended run.** Several refused fetches in a row can make the fetch tool start asking for
+the owner's approval on every link (`PROVENANCE_REQUIRED`), and nobody is there at 6:30 AM to give it. So:
+
+- Never fetch a source already known to be refused: the Steam News API, `x.com`, YouTube RSS feeds.
+- Open the sources that usually load first (Help Center, official site, APKMirror, SteamDB, Raijin.gg, the Discord
+  counts, the Steam store and discussions, the news sites), then the Steam announcement fallbacks and the JavaScript
+  pages (Ubisoft news, bug reporter), then the streaming aggregates.
+- Individual streamer channels are listed in `sources.json` for reference; the aggregates cover them, so don't open them.
+- If a fetch asks for approval or returns `PROVENANCE_REQUIRED`, stop fetching for the rest of the run, finish with the
+  WebSearch checks, and say so in the summary ("couldn't open links directly today").
+
 ### 2c. Trust and verification
 
 - **official** (2a): can be published as fact, cited directly.
@@ -117,11 +128,10 @@ Never criticize or mock another site or creator on resurgencebuilds.com. If a so
 
 ### 2d. YouTube (the owner pulls transcripts)
 
-Don't fetch transcripts or scrape YouTube pages. On 2026-10-25 our fetch tool refused every YouTube RSS feed (YouTube's
-robots rules), so each run tries **one** watch-list feed; if it's still refused, skip the rest and say so in one line of
-the summary (the owner follows the channels directly). Never work around the refusal. If the feeds do load: for each
-channel with `watch: true` in `automation/sources.json`, read its `rss` feed and compare with
-`state.youtube.channels.<channelId>`. List new videos whose titles suggest a build, a
+Don't fetch transcripts, YouTube pages or YouTube RSS feeds: our fetch tool refuses YouTube (robots rules, confirmed on
+2026-10-25), and refused fetches count against the run. The owner follows the watch-list channels directly (the `rss`
+links in `sources.json` work in any feed reader) and shares transcripts. Never work around the refusal. If the owner
+shares a list of new videos instead, treat it like the transcripts: compare with `state.youtube.channels.<channelId>`. List new videos whose titles suggest a build, a
 test, a guide, tips, or update news (skip livestreams, walkthrough parts and Shorts) in the summary under
 "Transcripts worth pulling", with title, date and link, and add their IDs to `state.youtube.suggested` so they're not
 listed twice. A video title is not a source for anything you publish.
@@ -236,7 +246,7 @@ End every run with a short summary for the owner (it goes to their phone, so kee
 1. **Published:** titles and live URLs, or "No new post today".
 2. **New since last run:** one line per source that had something new, and what you did with it.
 3. **Unverified leads:** claims seen only on non-official sites, and whether any official source confirms them yet.
-4. **Transcripts worth pulling:** new build, test, guide and tips videos from the watch list (title, channel, date, link).
+4. **Transcripts:** only when the owner shared transcripts or a list of new videos: what you did with them. Otherwise leave this line out.
 5. **Numbers:** today's Steam players, review summary and Discord members, with the change since the last snapshot.
 6. **Needs the owner:** sources that wouldn't load (and how many runs in a row), official Reddit posts to export,
    anything worth checking in game, and active sources that look like they've gone quiet or new ones worth adding.

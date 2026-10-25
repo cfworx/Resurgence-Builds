@@ -107,7 +107,7 @@
     }
   ],
   "streaming": {
-    "note": "Streams are context, never a source of game facts. Check the aggregate pages first; they cover every streamer below. Open an individual channel only when an aggregate page can't be read or shows something unusual (a developer stream, a Drops campaign, an event).",
+    "note": "Streams are context, never a source of game facts. Check the aggregate pages; they cover every streamer below. The individual channels are listed for reference only: don't open them in the daily run (Twitch and Kick pages don't load for our fetch tool, and refused fetches count against the run).",
     "aggregates": [
       {
         "id": "twitch-category",
@@ -310,7 +310,7 @@
     "outletsHowTo": "Daily, run one or two combined searches such as \"Division Resurgence\" site:gamerant.com OR site:thegamer.com OR site:ign.com (split the list across a few queries). List new headlines in the summary; treat them as leads."
   },
   "youtube": {
-    "note": "The owner pulls transcripts; never try to fetch transcripts or scrape YouTube pages. On 2026-10-25 our fetch tool refused every RSS feed here (YouTube's robots rules), so each run tries one watch-list feed and skips the rest if it's still refused (AUTOMATION.md 2d). If the feeds load, list new videos whose titles suggest a build, test, guide, tips or update news (skip livestreams, walkthrough parts and Shorts) under 'Transcripts worth pulling'. The other channels are listed for reference.",
+    "note": "The owner follows these channels (the rss links work in any feed reader) and pulls transcripts. The daily run doesn't fetch YouTube at all: our fetch tool refuses it (robots rules, confirmed 2026-10-25). watch: true marks the build, test and guide channels most worth following.",
     "channels": [
       {
         "name": "Jano Wuyts",

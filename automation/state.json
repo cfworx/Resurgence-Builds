@@ -314,7 +314,7 @@
       "lastChecked": "2026-10-25",
       "lastSeen": "2026-10-25 run 3: GGReborn feed still robots_disallowed; rest skipped",
       "status": "blocked",
-      "note": "YouTube's robots rules make our fetch tool refuse the RSS feeds; probe one feed per run (AUTOMATION.md 2d)."
+      "note": "YouTube refuses our fetch tool (robots rules). The daily run doesn't fetch YouTube; the owner follows the channels."
     },
     "bug-reporter": {
       "lastChecked": "2026-10-25",
