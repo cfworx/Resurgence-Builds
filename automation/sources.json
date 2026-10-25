@@ -6,7 +6,7 @@
       "id": "steam-reviews",
       "name": "Steam review summary",
       "trust": "data",
-      "check": "https://store.steampowered.com/appreviews/3749720?json=1&language=all&purchase_type=all&num_per_page=0 (query_summary: review_score_desc, total_positive, total_reviews); human page https://store.steampowered.com/app/3749720/",
+      "check": "https://store.steampowered.com/app/3749720/ (the review summary near the top: recent and all-time label, percentage and count). The appreviews JSON endpoint redirected to the store homepage on 2026-10-25, so don't rely on it.",
       "lookFor": "Record the summary label and counts. A change of label (for example Mixed to Mostly Positive) is worth a line in a future roundup, not a post on its own."
     },
     {
@@ -310,7 +310,7 @@
     "outletsHowTo": "Daily, run one or two combined searches such as \"Division Resurgence\" site:gamerant.com OR site:thegamer.com OR site:ign.com (split the list across a few queries). List new headlines in the summary; treat them as leads."
   },
   "youtube": {
-    "note": "The owner pulls transcripts; never try to fetch transcripts or scrape YouTube pages. Each run reads the RSS feed of every channel with watch: true and lists new videos whose titles suggest a build, test, guide, tips or update news (skip livestreams, walkthrough parts and Shorts) under 'Transcripts worth pulling' in the summary. The other channels are listed for reference.",
+    "note": "The owner pulls transcripts; never try to fetch transcripts or scrape YouTube pages. On 2026-10-25 our fetch tool refused every RSS feed here (YouTube's robots rules), so each run tries one watch-list feed and skips the rest if it's still refused (AUTOMATION.md 2d). If the feeds load, list new videos whose titles suggest a build, test, guide, tips or update news (skip livestreams, walkthrough parts and Shorts) under 'Transcripts worth pulling'. The other channels are listed for reference.",
     "channels": [
       {
         "name": "Jano Wuyts",

@@ -49,12 +49,12 @@ The container's shell usually can't reach websites (only package registries and 
 
 | # | Source | URL | What to compare |
 |---|---|---|---|
-| 1 | Steam announcements (official) | Steam News API: `https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=3749720&count=20&maxlength=0&format=json` (human page: `https://store.steampowered.com/news/app/3749720`) | items newer than `state.steam.latestDate` / not in `state.steam.seen` |
+| 1 | Steam announcements (official) | Try in this order until one reads: the Steam News API `https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=3749720&count=20&maxlength=0&format=json`, the RSS feed `https://store.steampowered.com/feeds/news/app/3749720/`, the Steam Community announcements page `https://steamcommunity.com/games/3749720/announcements/`, then WebSearch. (On 2026-10-25 our fetch tool refused the API and couldn't render `https://store.steampowered.com/news/app/3749720`.) | items newer than `state.steam.latestDate` / not in `state.steam.seen` |
 | 2 | Ubisoft Help Center, Patch Notes section | `https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/section/539-patch-notes/` | article IDs not in `state.helpCenterPatchNotes` |
-| 3 | Ubisoft game news | `https://www.ubisoft.com/en-us/game/the-division/resurgence/news-updates` | entries not in `state.ubisoftNews` |
+| 3 | Ubisoft game news | `https://www.ubisoft.com/en-us/game/the-division/resurgence/news-updates` (a JavaScript page our fetch tool often can't read; fall back to WebSearch `"Division Resurgence" site:ubisoft.com news`) | entries not in `state.ubisoftNews` |
 | 4 | Ubisoft News articles | search: `The Division Resurgence site:news.ubisoft.com` | articles not in `state.newsUbisoftCom` |
 | 5 | Official X account | `https://x.com/TheDivMobile` (logged-out view shows ~5 latest posts; WebSearch "TheDivMobile" as fallback) | status IDs greater than `state.x.latestSeenStatusId` |
-| 6 | Official bug reporter | `https://www.ubisoft.com/en-us/game/the-division/the-division-resurgence/bug-reporter/issues` | status changes vs `state.bugReporter` (Planned, In Progress, Done) |
+| 6 | Official bug reporter | `https://www.ubisoft.com/en-us/game/the-division/the-division-resurgence/bug-reporter/issues` (JavaScript only: try once; if it doesn't render, it's a **manual** source the owner or an interactive session checks with a browser, so don't count it as a failure) | status changes vs `state.bugReporter` (Planned, In Progress, Done) |
 | 7 | Help Center drop rates | `https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2522-drop-rates/` | the "Last Updated" age vs `state.dropRates` |
 | 8 | Official website | `https://www.ubisoft.com/en-us/game/the-division/resurgence` | the season banner (it showed "Season 2: The Call" on 2026-10-25); a new season or phase banner is news |
 | 9 | Ubisoft's YouTube trailers | WebSearch `"Division Resurgence" trailer Ubisoft` (Resurgence has no channel of its own; trailers go on @Ubisoft, and `@TheDivisionResurgence` is **not** official) | a trailer newer than the last one in `state.sources` |
@@ -117,8 +117,11 @@ Never criticize or mock another site or creator on resurgencebuilds.com. If a so
 
 ### 2d. YouTube (the owner pulls transcripts)
 
-Don't fetch transcripts or scrape YouTube pages. For each channel with `watch: true` in `automation/sources.json`, read
-its `rss` feed and compare with `state.youtube.channels.<channelId>`. List new videos whose titles suggest a build, a
+Don't fetch transcripts or scrape YouTube pages. On 2026-10-25 our fetch tool refused every YouTube RSS feed (YouTube's
+robots rules), so each run tries **one** watch-list feed; if it's still refused, skip the rest and say so in one line of
+the summary (the owner follows the channels directly). Never work around the refusal. If the feeds do load: for each
+channel with `watch: true` in `automation/sources.json`, read its `rss` feed and compare with
+`state.youtube.channels.<channelId>`. List new videos whose titles suggest a build, a
 test, a guide, tips, or update news (skip livestreams, walkthrough parts and Shorts) in the summary under
 "Transcripts worth pulling", with title, date and link, and add their IDs to `state.youtube.suggested` so they're not
 listed twice. A video title is not a source for anything you publish.
@@ -221,8 +224,8 @@ git commit -m "[CF-Pages-Skip] state: daily source check YYYY-MM-DD"
 git push origin HEAD:main
 ```
 
-Keep the lists in `state.json` from growing forever: the last 60 entries per `snapshots` list, the last 50 `leads`, the
-last 200 `youtube.suggested` IDs.
+Keep the lists in `state.json` from growing forever: one `snapshots` entry per list per date (replace today's if you run
+twice), the last 60 entries per list, the last 50 `leads`, the last 200 `youtube.suggested` IDs.
 
 ---
 

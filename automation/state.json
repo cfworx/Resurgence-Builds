@@ -296,7 +296,15 @@
       "failStreak": 1,
       "lastChecked": "2026-10-25",
       "lastSeen": "All watch-list RSS feeds robots_disallowed for WebFetch on 2026-10-25 (8 tried, same domain)",
-      "status": "blocked"
+      "status": "blocked",
+      "note": "YouTube's robots rules make our fetch tool refuse the RSS feeds; probe one feed per run (AUTOMATION.md 2d)."
+    },
+    "bug-reporter": {
+      "lastChecked": "2026-10-25",
+      "lastSeen": "See bugReporter.statuses (last updated from an interactive session on 2026-10-23)",
+      "status": "manual",
+      "failStreak": 0,
+      "note": "JavaScript-only page; our fetch tool can't render it. Checked by the owner or in an interactive session with a browser."
     }
   },
   "searches": {
@@ -325,26 +333,10 @@
         "recentCount": 215,
         "allTimePct": 47,
         "allTimeCount": 1403,
-        "note": "English reviews, from the owner's spreadsheet"
-      },
-      {
-        "date": "2026-10-25",
-        "label": "Mixed",
-        "recentPct": 64,
-        "recentCount": 215,
-        "allTimePct": 47,
-        "allTimeCount": 1403,
         "note": "store page, run 2026-10-25"
       }
     ],
     "steamPlayers": [
-      {
-        "date": "2026-10-25",
-        "current": 387,
-        "monthAvg": 363,
-        "monthPeak": 554,
-        "source": "raijin.gg"
-      },
       {
         "date": "2026-10-25",
         "current": 387,
@@ -359,22 +351,9 @@
         "date": "2026-10-25",
         "members": 19364,
         "online": 2847
-      },
-      {
-        "date": "2026-10-25",
-        "members": 19364,
-        "online": 2847
       }
     ],
     "twitch": [
-      {
-        "date": "2026-10-25",
-        "hoursWatched30d": 2500,
-        "streamers30d": 205,
-        "avgViewers": 3,
-        "peakViewers30d": 114,
-        "source": "SullyGnome"
-      },
       {
         "date": "2026-10-25",
         "hoursWatched30d": 2500,
