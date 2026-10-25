@@ -126,7 +126,7 @@ Our suggestion, built from the official sources above plus the creator tips:
 
 **Every day**
 
-- Run your Hostile Nest daily (weapon and gear mods) and Dark Zone daily (skill mods).
+- Run your Hostile Nest daily (weapon and gear mods) and Dark Zone daily (skill mods). First time in the Dark Zone? Our [Dark Zone guide](/guides/division-resurgence-dark-zone-guide/) covers contamination, extraction and going Rogue.
 - If the Heroic named-boss nest is up, farm it through team matchmaking until your backpack begs for mercy.
 - Empty your stash.
 

@@ -2,7 +2,7 @@
 title: "Which Specialization to Pick - Division Resurgence"
 category: "Beginner"
 publishDate: 2026-05-20
-lastUpdated: 2026-10-24T12:00:00Z
+lastUpdated: 2026-10-25T12:00:00Z
 tags: ["specialization", "beginner", "vanguard", "demolitionist", "bulwark", "field-medic", "tech-operator", "best specialization"]
 description: "Vanguard, Demolitionist, Bulwark, Field Medic, or Tech Operator: how to pick the right specialization in Division Resurgence."
 author: "RapidF5"
@@ -69,6 +69,8 @@ Vanguard is never the wrong answer. It's also rarely a *surprising* answer. If y
 **Builds on the site:**
 - [AgentHuntzman's Leaderboard Ranking Vanguard Support Build](/builds/agenthuntzmans-leaderboard-ranking-vanguard-support-build/) - the Recon support build that makes everyone else's numbers go up
 - [Milkshake Machine](/builds/milkshake-machine-strawberry-milkshake-lmg-build/) - Strawberry Milkshake LMG DPS on Dominating Presence (whose max scaling Season 2 Phase 2 reduced)
+- [Any-Weapon Commando](/builds/any-weapon-commando-beginner-vanguard-build-tiktokandy/) - TikTokAndy's beginner Commando build that works with whatever gun you have, and soloes Heroic Chinatown
+- [Misdirection Double Barrel Commando](/builds/misdirection-double-barrel-commando-build-tiktokandy/) - TikTokAndy's Season 2 shotgun build, taken solo into Legendary Precious Cargo
 
 ---
 
@@ -136,6 +138,7 @@ Let's be honest about who picks Field Medic. It's people who, in a past life, pl
 **Builds on the site:**
 - [The Muscular Nurse](/builds/muscular-nurse-combat-medicine-build-nadie/) - Nadie's Combat Medicine tank-medic (runs Pummeling Shield, written before its June 26 nerf)
 - [Tactical Pharma 800k DPS](/builds/tactical-pharma-800k-dps-rank-1-global-build/) - RogueMadras's rank 1 global Chemical Trap build
+- [Tactical Pharma Season 2](/builds/tactical-pharma-season-2-build-ggreborn/) - GGReborn's solo Legendary setup, his OS Protocol test, and TikTokAndy's Dark Zone take
 
 ---
 
@@ -259,8 +262,10 @@ For solo PvE, **Vanguard** and **Demolitionist** are the path of least resistanc
 ### Can I switch specializations?
 Yes. You can switch your active specialization freely. Your focus progress and chipset unlocks are tied to the individual specialization, not a global character level. Switching specs doesn't delete your progress on the original.
 
+Leveling a second one isn't wasted time, either. Oldfartsgaming capped Demolitionist, then started running his dailies on Tech Operator and Bulwark, and says the extra levels give skill points and push up your SHD level. By the time he recorded his October 11 video he had almost every node on his Demolitionist tree, so your early point choices aren't a life sentence. More in our [endgame tips](/guides/division-resurgence-endgame-tips/).
+
 ### What is the best specialization for beginners in The Division Resurgence?
-**Vanguard**. It has the clearest damage loop, the most intuitive playstyle, and plenty of builds available to copy. You won't paint yourself into a corner and you'll understand the game's combat fundamentals before you start optimizing a harder spec. Whatever you pick, the opening hours are friendlier than they used to be: Season 2 Phase 2 reduced enemy health in the tutorial and in your first playthrough of Main Missions 1 to 3.
+**Vanguard**. It has the clearest damage loop, the most intuitive playstyle, and plenty of builds available to copy. You won't paint yourself into a corner and you'll understand the game's combat fundamentals before you start optimizing a harder spec. Whatever you pick, the opening hours are friendlier than they used to be: Season 2 Phase 2 reduced enemy health in the tutorial and in your first playthrough of Main Missions 1 to 3. For a first build, TikTokAndy's [Any-Weapon Commando](/builds/any-weapon-commando-beginner-vanguard-build-tiktokandy/) is made for whatever gun you happen to have.
 
 ### Does specialization affect my gear drops?
 Yes, as far as we can tell: when you purchase certain items from vendors like the **Warlord** exotic AR at the Dark Zone vendor, the rolls on that item are influenced by your active specialization's primary stat. It isn't in any tooltip and Ubisoft hasn't documented it, but that's what we saw when we wrote this. Switch to a **Vanguard or Firepower-focused spec** before buying from the DZ vendor or you will get Engineering rolls on a Firepower weapon and spend a lot of time processing that quietly. The DZ vendor's exotic shelf has changed since, too: Scorpio joined in Season 2 Phase 1, and Season 2 Phase 2 cut DZ vendor exotics from 17,500 to 15,000 DZ Credits because they no longer ship with pre-equipped exotic mods.
@@ -269,7 +274,7 @@ Yes, as far as we can tell: when you purchase certain items from vendors like th
 Tactical Pharma is a **focus of Field Medic**, not a standalone specialization. It's the offensive/Corrosion path of Field Medic. If you picked Field Medic and went Tactical Pharma, you picked Field Medic. Don't let the mod menu confuse you either: Ubisoft's patch notes also use "Tactical Pharma" as the name of a Skill Mod Combo Set family (Armor Strengthening is one of them).
 
 ### What is the best specialization for the Dark Zone?
-**Vanguard** with an aggressive build is the standard answer. The DZ rewards players who can win a 1v1 engagement fast, extract before Rogues arrive, and hold their own when things go wrong. Bulwark is a serious second option for players who'd rather survive than chase. Do not go into the Dark Zone on your first day as Tech Operator and wonder why the drones aren't keeping up.
+**Vanguard** with an aggressive build is the standard answer. The DZ rewards players who can win a 1v1 engagement fast, extract before Rogues arrive, and hold their own when things go wrong. Bulwark is a serious second option for players who'd rather survive than chase. Do not go into the Dark Zone on your first day as Tech Operator and wonder why the drones aren't keeping up. Before you go in, read our [Dark Zone guide](/guides/division-resurgence-dark-zone-guide/), which covers contamination, extraction and what going Rogue costs you.
 
 ---
 

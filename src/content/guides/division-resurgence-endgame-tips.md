@@ -2,7 +2,7 @@
 title: "Endgame Tips: What to Do After Level 40"
 category: "Endgame"
 publishDate: 2026-10-24
-lastUpdated: 2026-10-24T12:00:00Z
+lastUpdated: 2026-10-25T12:00:00Z
 tags: ["endgame", "Season 2", "farming", "build-guide", "os-protocol"]
 description: "What to do after level 40 in Division Resurgence Season 2: daily quest rewards, upgrade rules, SHD level, proficiency, crafting and creator tips."
 featuredImage: "/images/division-resurgence-shd-manual-progression-guide.webp"
@@ -50,7 +50,7 @@ Below, Ubisoft's confirmed changes come first. Then the best advice from Oldfart
 |---|---|---|
 | Weapon Kill | Weapons of the quest's weapon type, chance of T2 at level 40 | Targeted Tier 2 weapon rolls |
 | Main Mission | Random weapons and gear, chance of T2 at level 40 | Tier 2 lottery tickets |
-| Dark Zone | Skill Mods | Skill builds, plus dismantle fodder for DZ Credits |
+| Dark Zone | Skill Mods | Skill builds, plus dismantle fodder for DZ Credits ([our Dark Zone guide](/guides/division-resurgence-dark-zone-guide/)) |
 | Hostile Nest | Weapon and Gear Mods | The mod farm ([our guide](/guides/how-to-farm-purple-gold-mods/)) |
 | World Event | Upgrade Materials | Fuel for upgrading keepers |
 
@@ -103,7 +103,7 @@ Oldfartsgaming says upgrading a decent OS Protocol that fits his build as far as
 
 ### A second specialization
 
-- **Oldfartsgaming:** he capped Demolitionist, then started levelling Tech Operator (which he says overlaps a lot with his Engineering setup) and tried Bulwark, running his dailies on them while keeping his main for harder missions. He says the extra levels give skill points and push his SHD level, and that after 40 the game encourages you to go broad.
+- **Oldfartsgaming:** he capped Demolitionist, then started leveling Tech Operator (which he says overlaps a lot with his Engineering setup) and tried Bulwark, running his dailies on them while keeping his main for harder missions. He says the extra levels give skill points and push his SHD level, and that after 40 the game encourages you to go broad.
 - **Official:** Ubisoft's August 5 PC launch press release describes "the flexibility to switch roles at any time." Our [specialization guide](/guides/which-specialization-to-pick/) covers what each one does.
 
 He also says it took him a while to understand how his specialization's skill stacks work together, and that putting points into the skills that feed them made a big difference. Read your skill tree tooltips slowly; future you will thank you.
@@ -142,6 +142,42 @@ One creator addition: TikTokAndy says Elite missions are where he farms T2 guns.
 
 GGReborn's other gear mistakes deserve a line each: judging gear by level and rarity instead of its set, talents and attributes, and not checking the character stats screen to see whether your build actually gets what you think it does. A higher Power Score isn't the same as a better build, which our [hidden mechanics guide](/guides/hidden-mechanics-explained/) explains at length.
 
+## Rule 8: learn the missions you'll farm
+
+Some missions you'll run dozens of times, so a few creator notes go a long way. These come from TikTokAndy's runs; the full routes are on the build pages linked below.
+
+### Chinatown (Heroic)
+
+TikTokAndy calls Chinatown the main mission you'll want to be able to solo, "because you're probably going to have to run this mission a lot." The payout he names: Superior Fabric, random T1 gear and weapon components to take your weapons to level 50. From his solo Heroic run:
+
+- **Bring two damage types:** Piercing for most of the mission, Blast for the final boss.
+- **Kill the Grenadier first,** keep everything in front of you, and watch the minimap.
+- **Leave the truck alone during the final boss.** He says you get more Tactical Link headshots without blowing it up.
+
+He calls about 6,300 Armor and 100,000 Health the bare minimum to solo it. His build for it: [Any-Weapon Commando](/builds/any-weapon-commando-beginner-vanguard-build-tiktokandy/).
+
+### Precious Cargo (Legendary)
+
+TikTokAndy calls Precious Cargo the final mission in the game and, from his experience, the one that pays out the most gear, a lot of it T2. He soloed it on Legendary in October:
+
+- **Snipers first, then the Grenadier.**
+- **Save Tactical Link for the second wave,** which comes out of the door on your left.
+- **Don't count on Kevin.** The NPC who comes along with you likes to take the lead, and your cover.
+- **The mission ends as soon as all four bosses are down.**
+
+For the finale his two videos disagree: solo with a shotgun he fights from a nook by the shipping container, and as a team healer he prefers the bridge you start on. Full routes: the [Double Barrel Commando](/builds/misdirection-double-barrel-commando-build-tiktokandy/) and the [Aegis Team Healer](/builds/aegis-team-healer-tech-operator-build-tiktokandy/).
+
+### Lone Wolf Challenge
+
+- **The format:** TikTokAndy counts 20 floors with up to six stars each, 120 stars in all. Officially, it refreshes every three weeks (Ubisoft fixed the schedule in [patch 1.2.1](/patch-notes/patch-1-2-1/)), and since a [June 26 hotfix](/news/server-hotfix-june-26-2026/) the timer starts as soon as an enemy takes damage, even if the doors are still closed.
+- **There's a leaderboard:** TikTokAndy says his floor 20 run placed third in NA, and he didn't know the leaderboard existed until someone told him.
+- **His floor 20 tip:** the boss sometimes parks at one spot (about one run in ten, he estimates). When it does, crouch on the boxes beside it, go for headshots, and save Tactical Link for the wave that follows.
+- **A good test bench:** GGReborn uses Lone Wolf runs to compare builds, which is how he tested stat setups and OS Protocols on our [Tactical Pharma Season 2](/builds/tactical-pharma-season-2-build-ggreborn/) page.
+
+### Heroic Hostile Nests and the Dark Zone
+
+The Heroic Hostile Nest with a named boss is the mod farm in our [mod farming guide](/guides/how-to-farm-purple-gold-mods/). For the Dark Zone (20-minute runs, contamination, extraction and Rogues), read our [Dark Zone guide](/guides/division-resurgence-dark-zone-guide/) before you go in with anything you'd mind losing.
+
 ## Our post-40 routine
 
 **Every day:** all your dailies (reroll for a Hostile Nest one), start a craft, empty your stash, and put proficiency tasks on a weapon you don't usually use.
@@ -160,3 +196,7 @@ GGReborn's other gear mistakes deserve a line each: judging gear by level and ra
 - [Oldfartsgaming: 7 Things I Wish I Knew Before Endgame (YouTube, October 11, 2026)](https://www.youtube.com/watch?v=7JtJCeEE8NI)
 - [GGReborn: Why Your Division Resurgence Gear Build Is Failing You (YouTube, September 29, 2026)](https://www.youtube.com/watch?v=wFqepeXdCTs)
 - [TikTokAndy: Best "Automatic" Double Barrel Shotgun Build (YouTube, September 30, 2026)](https://www.youtube.com/watch?v=ITIJB2nj3zg)
+- [TikTokAndy: SOLO Heroic Chinatown, This Vanguard Build Is INSANE (YouTube, September 24, 2026)](https://www.youtube.com/watch?v=6dGaisNKCyE)
+- [TikTokAndy: 11 Kill P90/Lightweight M4 Solo Manhunt (YouTube, September 27, 2026)](https://www.youtube.com/watch?v=oJ_iNQqTL9g)
+- [TikTokAndy: Lone Star Stage 20 Complete (YouTube, October 2, 2026)](https://www.youtube.com/watch?v=9nQ-jGnc7gU)
+- [TikTokAndy: Precious Cargo Legendary Difficulty But I'm Solo (YouTube, October 6, 2026)](https://www.youtube.com/watch?v=D3yrRSUwhq0)

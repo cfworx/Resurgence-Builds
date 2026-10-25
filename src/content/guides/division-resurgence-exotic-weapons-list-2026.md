@@ -2,7 +2,7 @@
 title: "Division Resurgence Exotic Weapons List"
 category: "General"
 publishDate: 2026-06-02
-lastUpdated: 2026-10-24T12:00:00Z
+lastUpdated: 2026-10-25T12:00:00Z
 author: "RapidF5"
 featuredImage: "/images/guides/division-resurgence-exotic-weapons-list-2026-v2.webp"
 imageAlt: "A Division agent in a red jacket standing beside a red Exotic sign in a dark brick corridor"
@@ -147,7 +147,7 @@ Translation: hip-fire it like an assault rifle, or aim down sights and it turns 
 - **Known fixes:** a bug that forced first person on the Bighorn was marked Done on Ubisoft's official bug reporter on September 22 ([details](/news/bug-reporter-fixes-september-22/)).
 - **How to get it now:** each phase gets its own pass, and The Call's pass made way for Phase 2's on September 16, so the Exotic Sealed Caches are the route now.
 
-We haven't published verified stat lines or the talent's exact numbers yet, so we're not listing them. Ubisoft also ran a [Bighorn headshot community event](/news/bighorn-headshot-weekend-event/) in August.
+We haven't verified its stat lines ourselves, but one creator has read them off his screen. In his September 16 video, TikTokAndy reads the talent as **Big Game Hunter**: headshots grant +3.3% Headshot Damage for 20 seconds, up to 50 stacks. His copy dealt **Piercing** damage and held 47 rounds before he'd added an extended magazine, and he was landing headshots of 7,000 to about 17,000 at level 40. He says his first Bighorn Tactical Augmentation Module added +20% damage, and that the next level (+40%) needs a second module. Treat all of that as one player's reading until we've checked it. Ubisoft also ran a [Bighorn headshot community event](/news/bighorn-headshot-weekend-event/) in August.
 
 ### The Diamondback
 
@@ -170,7 +170,7 @@ Ubisoft's official Exotic Cache drop table includes a **Deadlock Cache**, a **De
 | Warlord | AR | 324 Blast | 600 | 29m | Damage reduction while firing, delayed return | DZ vendor (15,000 DZ Credits), caches |
 | Strawberry Milkshake | LMG | 300 Shredding | 550 | 29m | Stacking DoT with kill-transfer | Exotic Sealed Caches |
 | Scorpio | Shotgun | 210 Piercing | 130 | 16m | Venom debuff ladder | DZ vendor (15,000 DZ Credits), caches |
-| The Bighorn | AR | Not verified | Not verified | Not verified | Full auto, semi-auto ADS headshot stacks | Exotic Sealed Caches |
+| The Bighorn | AR | Piercing (amount not verified) | Not verified | Not verified | Big Game Hunter: headshots stack Headshot Damage (creator reading) | Exotic Sealed Caches |
 | The Diamondback | Not stated by Ubisoft | Not verified | Not verified | Not verified | Agonizing Bite (numbers not verified) | Current pass (free and premium track) |
 | Deadlock | Unknown | Unknown | Unknown | Unknown | Unknown | Only listed in the drop table |
 
@@ -220,3 +220,4 @@ We update this page every phase. If a new exotic ships, shows up in a drop table
 - [Ubisoft: Season 2 has just begun](https://www.ubisoft.com/en-us/game/the-division/resurgence/news-updates/1R5zWiBS0MQZNcWGYkroYT/season-2-has-just-begun)
 - [Ubisoft News: Season 2 Phase 2 is out now](https://news.ubisoft.com/en-us/article/2vmOLuRVDMIMBxG3MZlPQX/the-division-resurgence-season-2-phase-2-is-out-now)
 - [Ubisoft: A New Fire, Season 1 Phase 3](https://www.ubisoft.com/en-us/game/the-division/resurgence/news-updates/wE8oLT7RqyLCfnCJomXij/a-new-fire-season-1-phase-3)
+- [TikTokAndy: My First Time In The Level 40 Dark Zone (YouTube, September 16, 2026)](https://www.youtube.com/watch?v=lBIQT-SeBZg) (The Bighorn readings)

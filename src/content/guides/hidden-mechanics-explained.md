@@ -2,7 +2,7 @@
 title: "7 Hidden Mechanics Explained"
 category: "Endgame"
 publishDate: 2026-05-27
-lastUpdated: 2026-10-24T12:00:00Z
+lastUpdated: 2026-10-25T12:00:00Z
 tags: ["mechanics", "hidden-systems", "optimization", "rpm", "amplification", "cooldown", "recalibration", "power-score", "endgame", "build-guide"]
 description: "Your DPS number is lying. Power score is a trap. Here are the 7 hidden mechanics that separate struggling players from consistent Legendary clearers."
 author: "RapidF5"
@@ -145,6 +145,8 @@ The math gets worse the more multipliers your build has. A support build with fi
 
 **The rule:** Pick ONE core stat and max it on every gear piece. Use your Body Armor talent (Socialite for armor, Glass Cannon for damage) to cover survivability. Use weapon talents to cover whatever your core stat doesn't. Let set bonuses fill the gaps.
 
+**A shortcut for sorting drops,** from Oldfartsgaming's October 11 endgame video: offensive builds look for the red icon, tanky builds the blue one, and an Engineering build like his Demolitionist looks for Engineering. Once the core stat matches, check the set and the secondary stats before you spend a single purple material on it.
+
 A build with 1,700 Engineering and 400 Firepower will always outperform a build with 1,050 of each. Always. The focused build doesn't just hit harder per stat point. It multiplies harder per stat point. And in a game built on multipliers, that's everything.
 
 ---
@@ -194,4 +196,5 @@ If you answered "no" to all five: congratulations. You're building correctly. Th
 
 - Community testing via [r/thedivisionresurgence](https://reddit.com/r/thedivisionresurgence). Cooldown breakpoint analysis, Engineering-to-Weapon-Damage conversion, and Power Score vs. build quality debates.
 - Internal Resurgence Builds knowledge base: damage formula stages, CDR diminishing returns modeling, and stat-splitting damage loss calculations.
+- [Oldfartsgaming: 7 Things I Wish I Knew Before Endgame (YouTube, October 11, 2026)](https://www.youtube.com/watch?v=7JtJCeEE8NI) (the core-stat icon shortcut)
 - Ubisoft patch notes: [Season 2 Phase 1](/patch-notes/season-2-phase-1-the-call/) (weapon mod rework, Concerted Strike, Tactical Link auto-aim, Power Score fixes), [Season 2 Phase 2](/patch-notes/season-2-phase-2/) ("enemy takes increased damage" fixes), [Season 1 Phase 3](/patch-notes/season-1-phase-3-a-new-fire/) (Dark Zone spawn immunity, Recon damage fix), and the [June 26 server hotfix](/news/server-hotfix-june-26-2026/) (80% damage reduction cap).

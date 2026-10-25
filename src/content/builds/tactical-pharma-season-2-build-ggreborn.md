@@ -19,7 +19,7 @@ faqs:
   - question: "What is the best Tactical Pharma build in Season 2?"
     answer: "GGReborn's October 16 setup is a strong current template: Jackpot 4-piece plus Fire Cycle 2-piece, Glass Cannon on the body armor, Minion Training II on the backpack, Brains Over Brawn as the OS Protocol, Enhanced Formula on Oxidizing Swarm, Hereafter Resilience on Oxidizing Hive and Chemical Recharge on Chemical Trap, with a Lightweight M4 (In Sync + Revitalize) and a First Wave Vector (Torrential Downpour + Fully Charged). 'BEST' is his video title rather than a lab result, but it's the build he took into a solo Legendary run, which is more than most of us manage before the kids wake up."
   - question: "Which OS Protocol is best for Tactical Pharma?"
-    answer: "The one you already own, if GGReborn's October 23 test is anything to go by. Running the Lone Wolf Challenge with stats kept as close as he could manage, he finished with 807 seconds left on Chain Reaction, 804 on Collateral Damage, 804 on Tactical Persistence and 802 on Brains Over Brawn. That's five seconds across four runs, and he didn't crown a winner. Brains Over Brawn is also by far the easiest to get: Ubisoft's drop-rate table lists it at 3.14% in the OS Protocol Cache, versus 0.40% for Chain Reaction or Tactical Persistence and 0.13% for Collateral Damage."
+    answer: "The one you already own, if GGReborn's October 23 test is anything to go by. Running the Lone Wolf Challenge with stats kept as close as he could manage, he finished with 807 seconds left on Chain Reaction, 804 on Collateral Damage, 804 on Tactical Persistence and 802 on Brains Over Brawn. That's five seconds across four runs, and he didn't crown a winner, though a day later he posted a gameplay video titled 'This Tactical Pharma Build with Chain Reaction OS Is INSANE!' Brains Over Brawn is also by far the easiest to get: Ubisoft's drop-rate table lists it at 3.14% in the OS Protocol Cache, versus 0.40% for Chain Reaction or Tactical Persistence and 0.13% for Collateral Damage."
   - question: "Is Tactical Pharma good in PvP and the Dark Zone?"
     answer: "TikTokAndy took his version rogue, solo, into the crossplay team Dark Zone and says it melts real players faster than NPCs, rating it probably the best PvP build other than Bulwark. His caveats: a properly built Bulwark shrugs it off, Dark Zone fights in his experience mostly come down to Tactical Pharma versus Bulwark with Bulwark usually on top, and he personally finds it less fun than gun builds. He also has reservations about PvP balance at the moment. Whether you enjoy being the person everyone in the Dark Zone is hunting is between you and your clan chat."
   - question: "How much Skill Crit Chance does Tactical Pharma need?"
@@ -136,6 +136,8 @@ Talents (our database, base versions): **Collateral Damage** makes Skill Damage 
 
 That's from Ubisoft's official drop-rate table (cache tier odds are S 2%, A 10% and B 88%, with pity at 50 pulls for S and 10 for A). The blue protocol finished two seconds behind a gold one that's roughly 24 times rarer. RNG giveth, mostly in blue.
 
+The day after the test (October 24), GGReborn posted a gameplay video of the build on Chain Reaction, titled ["This Tactical Pharma Build with Chain Reaction OS Is INSANE!"](https://www.youtube.com/watch?v=yR7YWOzqVlA). The title is about as close to a verdict as he's given. It's a gameplay video rather than another test, so it doesn't add numbers to the table above.
+
 TikTokAndy is working his **Tactical Persistence** up to level 50 and thinks that's where his build "will eventually land"; his fallback is **Recursive Treatment** for its flat Engineering (his copy reads 36%), which he says would cost a little Skill Critical Damage. For the wider picture, see our [OS Protocol tier list](/tier-list/os-protocols/).
 
 ---
@@ -235,6 +237,7 @@ Going by the official notes, neither Season 2 patch changed Jackpot, Fire Cycle,
 - [GGReborn: BEST Tactical Pharma Build + Solo Legendary Gameplay (YouTube, October 16, 2026)](https://www.youtube.com/watch?v=OVnksyrlj88)
 - [GGReborn: How Stats REALLY Work, Testing 3 Builds (YouTube, October 22, 2026)](https://www.youtube.com/watch?v=f1q44KbdS6g)
 - [GGReborn: Which OS Protocol Is BEST? Testing 4 Protocols (YouTube, October 23, 2026)](https://www.youtube.com/watch?v=Kz9YlTUl_1s)
+- [GGReborn: This Tactical Pharma Build with Chain Reaction OS Is INSANE! (YouTube, October 24, 2026)](https://www.youtube.com/watch?v=yR7YWOzqVlA)
 - [TikTokAndy's October 15, 2026 Tactical Pharma and Dark Zone video (YouTube)](https://www.youtube.com/watch?v=f20v8_cv9Ls)
 - [TikTokAndy: Silence of Death, Toxic Pharma Solo vs. Squads Dark Zone montage (YouTube, October 22, 2026)](https://www.youtube.com/watch?v=lbk6aUoOtds)
 - [Season 2 Phase 1 patch notes (The Division Wiki mirror of the official developer post)](https://thedivision.fandom.com/wiki/Season_2_Phase_1_-_Patch_Notes)
