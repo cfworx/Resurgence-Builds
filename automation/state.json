@@ -1,7 +1,7 @@
 {
   "_readme": "Memory for the daily content run. See AUTOMATION.md. Add every source item you evaluate (published or not) so the next run skips it. Dates are UTC.",
   "lastRun": "2026-10-25",
-  "lastRunSummary": "2026-10-25 (2 runs: scheduled morning run + owner-requested extra run). No new post. Help Center patch notes (7 articles), drop rates (45d), official site banner (Season 2: The Call), X via search, news.ubisoft.com, APKMirror (1.66724.0), SteamDB (2026-10-22), Steam reviews, Raijin, Discord, Steam discussions, news sites and streaming aggregates all unchanged. Unreadable: Steam News API (robots) and Steam news hub (JS), Ubisoft news page and bug reporter (JS), X (robots), IDC Games (client error), all YouTube RSS feeds (robots). failStreaks counted once per day.",
+  "lastRunSummary": "2026-10-25 (3 runs). No new post. Run 3: WebFetch was blocked for every direct source URL by an unanswered permission prompt (PROVENANCE_REQUIRED), so only WebSearch checks ran: nothing newer than state on Steam, Help Center, Ubisoft news, news.ubisoft.com, X, Reddit, trailers, Twitch Drops or outlets. YouTube RSS still robots_disallowed. Halloween lead still unverified. Numbers not refreshed this run (earlier run today has them).",
   "season": {
     "current": "Season 2 Phase 2",
     "liveSince": "2026-09-16",
@@ -27,7 +27,7 @@
     "lastChecked": "2026-10-25",
     "status": "unreachable",
     "failStreak": 1,
-    "note": "Steam News API is robots_disallowed for WebFetch and the news hub renders with JS, so neither can be read; WebSearch showed nothing newer than state."
+    "note": "Steam News API is robots_disallowed for WebFetch and the news hub renders with JS, so neither can be read; WebSearch showed nothing newer than state. Run 3 (2026-10-25 ~14:46 UTC): WebFetch refused every non-search URL with a permission prompt nobody could answer (PROVENANCE_REQUIRED) in the unattended run; not re-read."
   },
   "helpCenterPatchNotes": {
     "section": "https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/section/539-patch-notes/",
@@ -40,7 +40,7 @@
       2508,
       2494
     ],
-    "note": "Season 2 Phase 1 notes were never posted here (Reddit only, mirrored on The Division Wiki). October 2026 hotfix notes were posted on the official subreddit only.",
+    "note": "Season 2 Phase 1 notes were never posted here (Reddit only, mirrored on The Division Wiki). October 2026 hotfix notes were posted on the official subreddit only. Run 3 (2026-10-25 ~14:46 UTC): WebFetch refused every non-search URL with a permission prompt nobody could answer (PROVENANCE_REQUIRED) in the unattended run; not re-read.",
     "lastChecked": "2026-10-25"
   },
   "subredditPatchPosts": {
@@ -64,7 +64,7 @@
     "lastChecked": "2026-10-25",
     "status": "unreachable",
     "failStreak": 1,
-    "note": "Page needs JavaScript; WebFetch sees an empty NEWS list."
+    "note": "Page needs JavaScript; WebFetch sees an empty NEWS list. Run 3 (2026-10-25 ~14:46 UTC): WebFetch refused every non-search URL with a permission prompt nobody could answer (PROVENANCE_REQUIRED) in the unattended run; not re-read."
   },
   "newsUbisoftCom": {
     "seenIds": [
@@ -115,7 +115,7 @@
     "lastChecked": "2026-10-25",
     "status": "unreachable",
     "failStreak": 1,
-    "note": "Page needs JavaScript; no issue list visible to WebFetch."
+    "note": "Page needs JavaScript; no issue list visible to WebFetch. Run 3 (2026-10-25 ~14:46 UTC): WebFetch refused every non-search URL with a permission prompt nobody could answer (PROVENANCE_REQUIRED) in the unattended run; not re-read."
   },
   "dropRates": {
     "url": "https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2522-drop-rates/",
@@ -181,37 +181,43 @@
       "lastChecked": "2026-10-25",
       "lastSeen": "2026-10-25: Mixed. 64% of 215 recent (30 days) and 47% of 1,403 all-time English reviews; appreviews JSON endpoint redirected to the store homepage, store page used",
       "status": "ok",
-      "failStreak": 0
+      "failStreak": 0,
+      "note": "Run 3 (2026-10-25 ~14:46 UTC): WebFetch refused every non-search URL with a permission prompt nobody could answer (PROVENANCE_REQUIRED) in the unattended run; not re-read. lastSeen kept from earlier run today."
     },
     "apkmirror": {
       "lastChecked": "2026-10-25",
       "lastSeen": "v1.66724.0 (2026-10-06), no newer build",
       "status": "ok",
-      "failStreak": 0
+      "failStreak": 0,
+      "note": "Run 3 (2026-10-25 ~14:46 UTC): WebFetch refused every non-search URL with a permission prompt nobody could answer (PROVENANCE_REQUIRED) in the unattended run; not re-read. lastSeen kept from earlier run today."
     },
     "steamdb": {
       "lastChecked": "2026-10-25",
       "lastSeen": "Last record update 2026-10-22 07:42 UTC (change 40118417); 24h peak 476; build list did not render",
       "status": "ok",
-      "failStreak": 0
+      "failStreak": 0,
+      "note": "Run 3 (2026-10-25 ~14:46 UTC): WebFetch refused every non-search URL with a permission prompt nobody could answer (PROVENANCE_REQUIRED) in the unattended run; not re-read. lastSeen kept from earlier run today."
     },
     "raijin": {
       "lastChecked": "2026-10-25",
       "lastSeen": "2026-10-25: 387 in game; October avg 363, peak 554; September avg 505, peak 840; all-time peak 4,046 (August)",
       "status": "ok",
-      "failStreak": 0
+      "failStreak": 0,
+      "note": "Run 3 (2026-10-25 ~14:46 UTC): WebFetch refused every non-search URL with a permission prompt nobody could answer (PROVENANCE_REQUIRED) in the unattended run; not re-read. lastSeen kept from earlier run today."
     },
     "discord-counts": {
       "lastChecked": "2026-10-25",
       "lastSeen": "2026-10-25: 19,364 members, 2,847 online",
       "status": "ok",
-      "failStreak": 0
+      "failStreak": 0,
+      "note": "Run 3 (2026-10-25 ~14:46 UTC): WebFetch refused every non-search URL with a permission prompt nobody could answer (PROVENANCE_REQUIRED) in the unattended run; not re-read. lastSeen kept from earlier run today."
     },
     "steam-discussions": {
       "lastChecked": "2026-10-25",
       "lastSeen": "2026-10-25: newest thread activity 'Credits shortage' (~2026-10-24); no developer replies or new announcements",
       "status": "ok",
-      "failStreak": 0
+      "failStreak": 0,
+      "note": "Run 3 (2026-10-25 ~14:46 UTC): WebFetch refused every non-search URL with a permission prompt nobody could answer (PROVENANCE_REQUIRED) in the unattended run; not re-read. lastSeen kept from earlier run today."
     },
     "reddit": {
       "lastChecked": "2026-10-25",
@@ -223,68 +229,79 @@
       "lastChecked": "2026-10-25",
       "lastSeen": "Category page renders without live data; no Drops mentioned",
       "status": "ok",
-      "failStreak": 0
+      "failStreak": 0,
+      "note": "Run 3 (2026-10-25 ~14:46 UTC): WebFetch refused every non-search URL with a permission prompt nobody could answer (PROVENANCE_REQUIRED) in the unattended run; not re-read. lastSeen kept from earlier run today."
     },
     "streamscharts": {
       "lastChecked": "2026-10-25",
       "lastSeen": "30 days to 2026-10-25: top rikgamer (Kick) 1,742 h watched / 7h airtime; virulentwaif 241; utgkieros89 121; gg2002pt 67; ishowguy 46; lilyvonwolf 41",
       "status": "ok",
-      "failStreak": 0
+      "failStreak": 0,
+      "note": "Run 3 (2026-10-25 ~14:46 UTC): WebFetch refused every non-search URL with a permission prompt nobody could answer (PROVENANCE_REQUIRED) in the unattended run; not re-read. lastSeen kept from earlier run today."
     },
     "sullygnome": {
       "lastChecked": "2026-10-25",
       "lastSeen": "30 days to 2026-10-25: 2.5K hours watched (-73%), 904 hours streamed by 205 streamers, avg 3 / peak 114 viewers",
       "status": "ok",
-      "failStreak": 0
+      "failStreak": 0,
+      "note": "Run 3 (2026-10-25 ~14:46 UTC): WebFetch refused every non-search URL with a permission prompt nobody could answer (PROVENANCE_REQUIRED) in the unattended run; not re-read. lastSeen kept from earlier run today."
     },
     "kick-category": {
       "lastChecked": "2026-10-25",
       "lastSeen": "2026-10-25: 271 followers, nobody live",
       "status": "ok",
-      "failStreak": 0
+      "failStreak": 0,
+      "note": "Run 3 (2026-10-25 ~14:46 UTC): WebFetch refused every non-search URL with a permission prompt nobody could answer (PROVENANCE_REQUIRED) in the unattended run; not re-read. lastSeen kept from earlier run today."
     },
     "idc-games": {
       "lastChecked": "2026-10-25",
       "lastSeen": "2026-09-17 Season 2 Phase 2 Goes Live With the Free Diamondback Exotic Rifle",
       "status": "unreachable",
-      "failStreak": 1
+      "failStreak": 1,
+      "note": "Run 3 (2026-10-25 ~14:46 UTC): WebFetch refused every non-search URL with a permission prompt nobody could answer (PROVENANCE_REQUIRED) in the unattended run; not re-read. lastSeen kept from earlier run today."
     },
     "jeu-video": {
       "lastChecked": "2026-10-25",
       "lastSeen": "2026-09-18 Season 2 Phase 2 mit 50 Pass-Stufen verfügbar (nothing newer)",
       "status": "ok",
-      "failStreak": 0
+      "failStreak": 0,
+      "note": "Run 3 (2026-10-25 ~14:46 UTC): WebFetch refused every non-search URL with a permission prompt nobody could answer (PROVENANCE_REQUIRED) in the unattended run; not re-read. lastSeen kept from earlier run today."
     },
     "axyo": {
       "lastChecked": "2026-10-25",
       "lastSeen": "2026-09-16 Season 2 Phase 2 article (nothing newer)",
       "status": "ok",
-      "failStreak": 0
+      "failStreak": 0,
+      "note": "Run 3 (2026-10-25 ~14:46 UTC): WebFetch refused every non-search URL with a permission prompt nobody could answer (PROVENANCE_REQUIRED) in the unattended run; not re-read. lastSeen kept from earlier run today."
     },
     "toptechnews": {
       "lastChecked": "2026-10-25",
       "lastSeen": "2026-10-24 Ubisoft feiert Halloween (general Ubisoft Halloween events article; Resurgence mention not confirmed)",
       "status": "ok",
-      "failStreak": 0
+      "failStreak": 0,
+      "note": "Run 3 (2026-10-25 ~14:46 UTC): WebFetch refused every non-search URL with a permission prompt nobody could answer (PROVENANCE_REQUIRED) in the unattended run; not re-read. lastSeen kept from earlier run today."
     },
     "247videogame": {
       "lastChecked": "2026-10-25",
       "lastSeen": "2026-09-16 Season 2 Phase 2 Launch Trailer (nothing newer)",
       "status": "ok",
-      "failStreak": 0
+      "failStreak": 0,
+      "note": "Run 3 (2026-10-25 ~14:46 UTC): WebFetch refused every non-search URL with a permission prompt nobody could answer (PROVENANCE_REQUIRED) in the unattended run; not re-read. lastSeen kept from earlier run today."
     },
     "ldplayer": {
       "lastChecked": "2026-10-25",
       "lastSeen": "2026-10-20 The Division Resurgence Specialization Tier List for Latest 2026 (re-dated)",
       "status": "ok",
-      "failStreak": 0
+      "failStreak": 0,
+      "note": "Run 3 (2026-10-25 ~14:46 UTC): WebFetch refused every non-search URL with a permission prompt nobody could answer (PROVENANCE_REQUIRED) in the unattended run; not re-read. lastSeen kept from earlier run today."
     },
     "_readme": "One entry per id in automation/sources.json (plus search: the catch-all searches). lastSeen = the newest item or value seen, so the next run only evaluates newer things. status: ok | unreachable | blocked. failStreak counts consecutive failed runs; mention a source in the summary once it reaches 3.",
     "official-website": {
       "lastChecked": "2026-10-25",
       "lastSeen": "Season banner: 'Season 2: The Call'",
       "status": "ok",
-      "failStreak": 0
+      "failStreak": 0,
+      "note": "Run 3 (2026-10-25 ~14:46 UTC): WebFetch refused every non-search URL with a permission prompt nobody could answer (PROVENANCE_REQUIRED) in the unattended run; not re-read. lastSeen kept from earlier run today."
     },
     "ubisoft-youtube": {
       "lastChecked": "2026-10-25",
@@ -295,7 +312,7 @@
     "youtube-rss": {
       "failStreak": 1,
       "lastChecked": "2026-10-25",
-      "lastSeen": "All watch-list RSS feeds robots_disallowed for WebFetch on 2026-10-25 (8 tried, same domain)",
+      "lastSeen": "2026-10-25 run 3: GGReborn feed still robots_disallowed; rest skipped",
       "status": "blocked",
       "note": "YouTube's robots rules make our fetch tool refuse the RSS feeds; probe one feed per run (AUTOMATION.md 2d)."
     },
@@ -310,7 +327,8 @@
   "searches": {
     "lastChecked": "2026-10-25",
     "seenHeadlines": [
-      "2026-10-25: catch-all and outlet searches returned only older coverage (launch, roadmap, Steam release); nothing new"
+      "2026-10-25: catch-all and outlet searches returned only older coverage (launch, roadmap, Steam release); nothing new",
+      "2026-10-25 run 3: daily catch-all, Season 3, Halloween, Twitch Drops, trailer, news.ubisoft.com and outlet searches returned only older coverage or other Division games; nothing new"
     ]
   },
   "leads": [
@@ -319,7 +337,7 @@
       "source": "Steam discussions 'Halloween event' thread + toptechnews.de 'Ubisoft feiert Halloween' (2026-10-24)",
       "claim": "A Halloween event may be coming to Resurgence",
       "status": "unverified",
-      "note": "No official Resurgence Halloween announcement found (searched). Re-check official channels next run. Extra run 2026-10-25: searches only surfaced The Division 2's Red Moon Unleashed Halloween event (a different game, not Resurgence); still nothing official for Resurgence."
+      "note": "No official Resurgence Halloween announcement found (searched). Re-check official channels next run. Extra run 2026-10-25: searches only surfaced The Division 2's Red Moon Unleashed Halloween event (a different game, not Resurgence); still nothing official for Resurgence. Run 3: Halloween search only returned The Division (2016) Halloween Event 2025; still nothing official for Resurgence."
     }
   ],
   "leadsReadme": "Claims found only in non-official sources, newest first (keep the last 50): {date, source, claim, status: unverified | verified | dismissed, note}. Re-check unverified leads against official sources on later runs.",
