@@ -1,7 +1,7 @@
 {
   "_readme": "Memory for the daily content run. See AUTOMATION.md. Add every source item you evaluate (published or not) so the next run skips it. Dates are UTC.",
   "lastRun": "2026-10-25",
-  "lastRunSummary": "2026-10-25 daily run: no new post. Nothing new in any official source readable today (Help Center patch notes unchanged at 7 articles; drop rates 'Last Updated: 45d', unchanged; official site banner still Season 2: The Call; no new @TheDivMobile post found by search; no new news.ubisoft.com article). Steam News API (robots) and the JS-rendered Steam news page, Ubisoft news page and bug reporter could not be read by the agent's fetch tool; X blocked (robots). All YouTube RSS feeds blocked (robots_disallowed). IDC Games returned a client error twice. Numbers unchanged from the 2026-10-25 baseline.",
+  "lastRunSummary": "2026-10-25 (2 runs: scheduled morning run + owner-requested extra run). No new post. Help Center patch notes (7 articles), drop rates (45d), official site banner (Season 2: The Call), X via search, news.ubisoft.com, APKMirror (1.66724.0), SteamDB (2026-10-22), Steam reviews, Raijin, Discord, Steam discussions, news sites and streaming aggregates all unchanged. Unreadable: Steam News API (robots) and Steam news hub (JS), Ubisoft news page and bug reporter (JS), X (robots), IDC Games (client error), all YouTube RSS feeds (robots). failStreaks counted once per day.",
   "season": {
     "current": "Season 2 Phase 2",
     "liveSince": "2026-09-16",
@@ -311,7 +311,7 @@
       "source": "Steam discussions 'Halloween event' thread + toptechnews.de 'Ubisoft feiert Halloween' (2026-10-24)",
       "claim": "A Halloween event may be coming to Resurgence",
       "status": "unverified",
-      "note": "No official Resurgence Halloween announcement found (searched). Re-check official channels next run."
+      "note": "No official Resurgence Halloween announcement found (searched). Re-check official channels next run. Extra run 2026-10-25: searches only surfaced The Division 2's Red Moon Unleashed Halloween event (a different game, not Resurgence); still nothing official for Resurgence."
     }
   ],
   "leadsReadme": "Claims found only in non-official sources, newest first (keep the last 50): {date, source, claim, status: unverified | verified | dismissed, note}. Re-check unverified leads against official sources on later runs.",
