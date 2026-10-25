@@ -119,7 +119,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
       <h2>Social Media</h2>
       <p>Follow us for build updates, patch analysis, and community highlights:</p>
-      <div style="display: flex; gap: var(--sp-3); flex-wrap: wrap; margin-top: var(--sp-4);">
+      <div class="contact-social">
         <a href="https://x.com/ResurgenceBuild" target="_blank" rel="noopener noreferrer" class="btn btn--outline" style="display: inline-flex; align-items: center; gap: 8px;">
           <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16"><path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z"/></svg>
           X / Twitter
@@ -254,9 +254,20 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   }
 
   /* Mobile responsive */
-  @media (max-width: 600px) {
+  @media (max-width: 34.99em) {
     .contact-form {
       padding: var(--sp-4);
     }
+  }
+  /* three buttons in a row where they fit; stacked full width on phones rather than two plus one */
+  .contact-social {
+    display: flex;
+    gap: var(--sp-3);
+    flex-wrap: wrap;
+    margin-top: var(--sp-4);
+  }
+  @media (max-width: 44.99em) {
+    .contact-social { flex-direction: column; }
+    .contact-social .btn { width: 100%; }
   }
 </style>

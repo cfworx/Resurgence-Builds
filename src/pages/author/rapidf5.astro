@@ -215,7 +215,7 @@ const authorSchema = {
     margin-bottom: var(--sp-8);
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 45em) {
     .author-header {
       flex-direction: row;
       align-items: flex-start;
@@ -269,7 +269,7 @@ const authorSchema = {
     color: var(--ink-muted);
     font-size: var(--text-base);
     line-height: 1.7;
-    max-width: 65ch;
+    max-width: var(--measure);
   }
 
   /* Stats Row */
@@ -333,7 +333,7 @@ const authorSchema = {
   .author-disclaimer p {
     font-size: var(--text-xs);
     color: var(--ink-muted);
-    max-width: none;
+    max-width: var(--measure);
     margin: 0 auto;
   }
 </style>

@@ -83,7 +83,8 @@ const CHECKS = String.raw`
 window.__audit = (() => {
   const name = el => el.tagName.toLowerCase() + (el.id ? '#' + el.id : '') + [...el.classList].slice(0, 3).map(c => '.' + c).join('');
   const where = el => { const parts = []; for (let a = el, i = 0; a && a !== document.body && i < 4; a = a.parentElement, i++) parts.unshift(name(a)); return parts.join(' > '); };
-  const shown = el => { const r = el.getBoundingClientRect(), s = getComputedStyle(el); return r.width >= 2 && r.height >= 2 && s.visibility !== 'hidden' && +s.opacity > 0; };
+  // (the inside of a closed <details> still reports a size, but nobody can see or tap it)
+  const shown = el => { if (el.closest('details:not([open]) > :not(summary)')) return false; const r = el.getBoundingClientRect(), s = getComputedStyle(el); return r.width >= 2 && r.height >= 2 && s.visibility !== 'hidden' && +s.opacity > 0; };
 
   function overflow() {
     const vw = document.documentElement.clientWidth, undo = [], rows = [];
@@ -148,13 +149,28 @@ window.__audit = (() => {
     const targets = [...document.querySelectorAll('a[href], button, input:not([type=hidden]), select, textarea, summary, [role=button], [tabindex]:not([tabindex="-1"])')]
       .filter(el => shown(el) && !inSentence(el) && !el.closest('.leaflet-marker-pane'));
     const stretched = el => {
+      // the stretched-link pattern: an absolutely positioned ::after that covers the whole card
       const a = getComputedStyle(el, '::after');
-      if (a.content === 'none' || a.position !== 'absolute') return null;
+      if (a.content === 'none' || a.position !== 'absolute' || getComputedStyle(el).position !== 'static') return null;
       for (let p = el.parentElement; p && p !== document.body; p = p.parentElement) if (getComputedStyle(p).position !== 'static') return p.getBoundingClientRect();
       return null;
     };
+    const grown = el => {
+      // a tap area grown with an invisible pseudo-element on the element itself (e.g. ::before { inset: -6px 0 })
+      if (getComputedStyle(el).position === 'static') return null;
+      const r = el.getBoundingClientRect(), px = v => (/px$/.test(v) ? parseFloat(v) : NaN);
+      for (const pe of ['::before', '::after']) {
+        const s = getComputedStyle(el, pe);
+        if (s.content === 'none' || s.position !== 'absolute') continue;
+        const [t, rt, b, l] = [s.top, s.right, s.bottom, s.left].map(px);
+        if ([t, rt, b, l].some(Number.isNaN) || (t >= 0 && rt >= 0 && b >= 0 && l >= 0)) continue;
+        const left = Math.min(r.left, r.left + l), top = Math.min(r.top, r.top + t), right = Math.max(r.right, r.right - rt), bottom = Math.max(r.bottom, r.bottom - b);
+        return { left, top, right, bottom, width: right - left, height: bottom - top };
+      }
+      return null;
+    };
     const viaLabel = el => (el.matches('input[type=checkbox], input[type=radio]') && el.closest('label')) ? el.closest('label').getBoundingClientRect() : null;
-    const box = new Map(targets.map(el => [el, stretched(el) || viaLabel(el) || el.getBoundingClientRect()]));
+    const box = new Map(targets.map(el => [el, grown(el) || stretched(el) || viaLabel(el) || el.getBoundingClientRect()]));
     const small = r => r.width < 24 || r.height < 24;
     const centre = r => [r.left + r.width / 2, r.top + r.height / 2];
     const distanceToBox = ([x, y], r) => Math.hypot(Math.max(r.left - x, 0, x - r.right), Math.max(r.top - y, 0, y - r.bottom));
@@ -188,13 +204,18 @@ window.__audit = (() => {
       if (text.length < 80 || !el.getClientRects().length) continue;
       const range = document.createRange(); range.selectNodeContents(el);
       const lh = parseFloat(s.lineHeight) || parseFloat(s.fontSize) * 1.4;
-      const tops = [...range.getClientRects()].filter(q => q.width > 1).map(q => q.top).sort((a, b) => a - b);
-      let lines = 0, last = -Infinity;
-      for (const top of tops) if (top - last > lh / 2) { lines++; last = top; }
+      // the real lines: text fragments grouped by their top, so the widest line is measured, not the box
+      const lineBoxes = [];
+      for (const q of [...range.getClientRects()].filter(q => q.width > 1).sort((a, b) => a.top - b.top)) {
+        const line = lineBoxes.find(l => Math.abs(l.top - q.top) < lh / 2);
+        if (line) { line.left = Math.min(line.left, q.left); line.right = Math.max(line.right, q.right); }
+        else lineBoxes.push({ top: q.top, left: q.left, right: q.right });
+      }
+      const lines = lineBoxes.length;
       if (lines < 2) continue;
       ctx.font = s.fontStyle + ' ' + s.fontWeight + ' ' + s.fontSize + ' ' + s.fontFamily;
       const per = ctx.measureText(text).width / text.length;
-      const width = el.clientWidth - parseFloat(s.paddingLeft) - parseFloat(s.paddingRight);
+      const width = Math.max(...lineBoxes.map(l => l.right - l.left));
       const perLine = Math.round(width / per);
       if (perLine > 80) rows.push({ chars: perLine, lines, text: text.slice(0, 50), where: where(el) });
     }
@@ -206,7 +227,7 @@ window.__audit = (() => {
     const edges = new Map();
     for (const el of document.querySelectorAll('main :is(h1, h2, h3, h4, h5, p, li, dt, dd, label, th, td, figcaption, blockquote)')) {
       const align = getComputedStyle(el).textAlign;
-      if (el.closest(skip) || ['center', 'right', 'end'].includes(align)) continue;
+      if (el.closest(skip) || ['center', 'right', 'end'].includes(align) || !(el.innerText || '').trim()) continue;
       const range = document.createRange(); range.selectNodeContents(el);
       const first = [...range.getClientRects()].find(q => q.width > 1 && q.height > 1);
       if (!first) continue;
@@ -405,15 +426,30 @@ window.__audit = (() => {
   }
 
   function pageEdges() {
-    const h = document.querySelector('.site-header'), f = document.querySelector('.site-footer, footer'), main = document.querySelector('main');
+    // Distance from the header to the first thing you see in <main> (a line of text, an image, a filled box), and
+    // from the last one to whatever follows <main> (the related-links strip or the footer)
+    const h = document.querySelector('.site-header'), main = document.querySelector('main');
     if (!h || !main) return null;
-    const visibleKids = el => [...el.querySelectorAll('*')].filter(k => { const r = k.getBoundingClientRect(); return r.height > 0 && r.width > 0 && getComputedStyle(k).visibility !== 'hidden' && (k.innerText || '').trim().length > 0; });
-    const kids = visibleKids(main);
-    if (!kids.length) return null;
-    const top = Math.min(...kids.map(k => k.getBoundingClientRect().top + scrollY));
-    const bottom = Math.max(...kids.map(k => k.getBoundingClientRect().bottom + scrollY));
-    const hb = h.getBoundingClientRect().bottom + scrollY;
-    return { start: Math.round(top - hb), end: f ? Math.round(f.getBoundingClientRect().top + scrollY - bottom) : null };
+    const ownText = el => [...el.childNodes].some(n => n.nodeType === 3 && n.textContent.trim());
+    const filled = s => s.backgroundColor !== 'rgba(0, 0, 0, 0)' || s.backgroundImage !== 'none' || parseFloat(s.borderTopWidth) > 0;
+    const pinned = el => { for (let a = el; a && a !== main; a = a.parentElement) if (/fixed|sticky/.test(getComputedStyle(a).position)) return true; return false; };
+    // text counts from its glyphs, not its box (a link padded out to 44px for tapping isn't where the text is)
+    const boxes = [];
+    for (const k of main.querySelectorAll('*')) {
+      if (!shown(k) || pinned(k) || k.closest('.sr-only, .skip-link')) continue;
+      const s = getComputedStyle(k);
+      if (/^(IMG|VIDEO|IFRAME|CANVAS|PICTURE)$/.test(k.tagName) || filled(s)) { boxes.push([k.getBoundingClientRect(), k]); continue; }
+      for (const n of k.childNodes) if (n.nodeType === 3 && n.textContent.trim()) {
+        const rg = document.createRange(); rg.selectNodeContents(n);
+        for (const q of rg.getClientRects()) if (q.width > 1 && q.height > 1) boxes.push([q, k]);
+      }
+    }
+    if (!boxes.length) return null;
+    const firstBox = boxes.reduce((a, b) => (b[0].top < a[0].top ? b : a)), lastBox = boxes.reduce((a, b) => (b[0].bottom > a[0].bottom ? b : a));
+    const hb = h.getBoundingClientRect().bottom;
+    let next = main.nextElementSibling;
+    while (next && (/^(SCRIPT|STYLE|TEMPLATE)$/.test(next.tagName) || next.getBoundingClientRect().height === 0 || /fixed|absolute/.test(getComputedStyle(next).position))) next = next.nextElementSibling;
+    return { start: Math.round(firstBox[0].top - hb), end: next ? Math.round(next.getBoundingClientRect().top - lastBox[0].bottom) : null, first: name(firstBox[1]), last: name(lastBox[1]), next: next ? name(next) : null };
   }
 
   function clipped() {
@@ -439,6 +475,9 @@ async function load(page, path) {
   const res = await page.goto(BASE + path, { waitUntil: 'networkidle', timeout: 45000 }).catch(e => ({ status: () => 'ERR ' + e.message }));
   await page.addScriptTag({ content: CHECKS });
   await page.evaluate(() => document.fonts && document.fonts.ready);
+  // the build planner shows a ~2s boot screen over everything; measure the page under it
+  await page.waitForFunction(() => { const b = document.getElementById('boot'); return !b || b.classList.contains('is-done'); }, null, { timeout: 8000 }).catch(() => {});
+  if (await page.$('#boot')) await page.waitForTimeout(600);
   await page.waitForTimeout(150);
   return res && res.status ? res.status() : null;
 }
@@ -574,6 +613,9 @@ const run = (page, fn, ...a) => page.evaluate(([f, a]) => window.__audit[f](...a
   }
   const first = Object.values(report.pages)[0];
   if (first && first.widths[1440] && first.widths[1440].breakpoints) L(`\nBreakpoints (from ${Object.keys(report.pages)[0]}): ${first.widths[1440].breakpoints.map(b => b.px + 'px(' + b.uses + ')').join(' ')}`);
+  // The guide wants every page to start and end the same distance from the header and footer (within 4px)
+  const edgeRows = Object.entries(report.pages).map(([l, pr]) => [l, (pr.widths[390] || {}).edges, (pr.widths[1440] || {}).edges]).filter(([, a, b]) => a || b);
+  if (edgeRows.length) L('\nPage start/end in px (header to first content / last content to what follows <main>), 390 | 1440:\n' + edgeRows.map(([l, a, b]) => `  ${l}: ${a ? a.start + '/' + a.end : '-'} | ${b ? b.start + '/' + b.end : '-'}`).join('\n'));
   L('\nTOTALS ' + JSON.stringify(totals));
   if (errors.length) L('\nPAGE ERRORS: ' + errors.join(' | '));
   const summary = lines.join('\n');

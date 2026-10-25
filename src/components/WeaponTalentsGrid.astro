@@ -153,4 +153,10 @@ const talentsData = talentNames.map(name => {
     border-color: var(--accent);
     transform: scale(1.1);
   }
+  /* touch screens: 8px between the icons, and each icon's tap area reaches halfway into the gap (38px) */
+  @media (pointer: coarse) {
+    .tg-card-row { gap: 8px; }
+    .tg-button.card-size { overflow: visible; }
+    .tg-button.card-size::before { content: ''; position: absolute; inset: -4px; }
+  }
 </style>

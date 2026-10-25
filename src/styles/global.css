@@ -86,17 +86,22 @@
   --control-lg: 48px;  /* the main action, and anything in the same row */
 
   /* Cards and panels */
-  --pad-card: 1rem;    /* every ordinary card: 16px on phones, 20px from 720px */
+  --pad-card: 1rem;    /* every ordinary card: 16px on phones, 24px from 720px */
 
   /* Line length: about 80 characters of Inter body text (Inter fits ~1.4 characters per ch) */
   --measure: 58ch;
+
+  /* Text inside boxes (article headings, callouts, quotes, table cells, contents, FAQ, share box) starts this far
+     in from the box's outer edge, borders included. It's the card padding, and lists indent by the same amount,
+     so text in cards, boxes and lists shares one edge instead of sitting a few px apart (16px phones, 24px wider) */
+  --inset: var(--pad-card);
 
   /* Transitions */
   --transition-fast: 150ms ease;
   --transition-base: 250ms ease;
 }
 
-@media (min-width: 45em) { :root { --pad-card: 1.25rem; } }
+@media (min-width: 45em) { :root { --pad-card: 1.5rem; } }
 
 /* --- Reset --- */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -125,6 +130,7 @@ body {
   font-weight: 400;
   font-size: var(--step-0);
   line-height: var(--lh-body);
+  overflow-wrap: break-word; /* a long URL or code breaks instead of pushing the page sideways */
   color: var(--ink);
   background: radial-gradient(circle at 50% 0%, #0a0f17, #04060a 70%);
   background-color: #04060a;
@@ -158,6 +164,8 @@ input, button, textarea, select {
   font-size: 16px; /* Prevent mobile auto-zoom on focus */
   touch-action: manipulation;
 }
+/* Search fields look like the site's other fields, not iOS's rounded search box */
+input[type="search"] { -webkit-appearance: none; appearance: none; }
 a { color: var(--accent); text-decoration: none; transition: color var(--transition-fast); }
 a:hover { color: var(--ink); }
 
@@ -180,6 +188,8 @@ h4 { font-size: var(--step-0); margin-bottom: var(--sp-2); line-height: var(--lh
 
 /* About 80 characters a line */
 p { margin-bottom: var(--sp-4); max-width: var(--measure); }
+/* no single word left alone on the last line of a paragraph (browsers without it wrap as before) */
+p, li, dd, figcaption { text-wrap: pretty; }
 
 strong { font-weight: 500; }
 
@@ -219,7 +229,7 @@ pre code { background: none; padding: 0; }
   padding: 0 var(--sp-4);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 45em) {
   .container { padding: 0 var(--sp-8); }
 }
 
@@ -230,7 +240,7 @@ pre code { background: none; padding: 0; }
   padding-block: var(--sp-12);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 45em) {
   .section { padding-block: var(--sp-16); }
 }
 
@@ -316,12 +326,12 @@ pre code { background: none; padding: 0; }
 .grid--2 { grid-template-columns: 1fr; }
 .grid--3 { grid-template-columns: 1fr; }
 
-@media (min-width: 768px) {
+@media (min-width: 45em) {
   .grid--2 { grid-template-columns: repeat(2, 1fr); }
   .grid--3 { grid-template-columns: repeat(2, 1fr); }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 60em) {
   .grid--3 { grid-template-columns: repeat(3, 1fr); }
 }
 
@@ -336,13 +346,15 @@ pre code { background: none; padding: 0; }
   font-size: var(--text-sm);
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  padding: var(--sp-3) var(--sp-6);
+  line-height: 1.2;
+  /* min-height sets the height (48px, the main-action size), so padding and text size can't change it */
+  padding: var(--sp-2) var(--sp-6);
   border-radius: var(--border-radius);
   border: none;
   cursor: pointer;
   transition: all var(--transition-fast);
-  min-height: 48px;
-  min-width: 48px;
+  min-height: var(--control-lg);
+  min-width: var(--control-lg);
 }
 
 .btn--primary {
@@ -379,10 +391,14 @@ pre code { background: none; padding: 0; }
 }
 
 /* --- Tags / Badges --- */
+/* One look for every tag: 32px tall. Linked tags get a 44px tap area on touch screens without looking bigger. */
 .tag {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  min-height: 32px;
   font-family: var(--font-mono);
   font-size: var(--text-xs);
+  line-height: 1.2;
   padding: var(--sp-1) var(--sp-2);
   border: 1px solid var(--border);
   border-radius: var(--border-radius);
@@ -392,10 +408,11 @@ pre code { background: none; padding: 0; }
 }
 
 a.tag {
-  min-height: 44px;
-  display: inline-flex;
-  align-items: center;
-  padding: var(--sp-2) var(--sp-3);
+  position: relative;
+  padding: var(--sp-1) var(--sp-3);
+}
+@media (pointer: coarse) {
+  a.tag::before { content: ''; position: absolute; inset: -6px 0; }
 }
 
 .tag--accent {
@@ -551,7 +568,7 @@ tbody tr:hover {
   padding: 0 var(--sp-4);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 45em) {
   .site-header__inner { padding: 0 var(--sp-8); }
 }
 
@@ -561,6 +578,9 @@ tbody tr:hover {
   font-size: var(--text-lg);
   color: var(--ink);
   letter-spacing: -0.02em;
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
 }
 
 .site-logo:hover { color: var(--ink); }
@@ -790,7 +810,7 @@ html.mobile-nav-open { overflow: hidden; }
   grid-template-columns: 1fr;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 45em) {
   .footer-grid { grid-template-columns: 2fr 1fr 1fr 1fr; }
 }
 
@@ -858,8 +878,8 @@ html.mobile-nav-open { overflow: hidden; }
   color: var(--ink-muted);
   /* a 44px tap area without moving anything */
   display: inline-block;
-  padding-block: 10px;
-  margin-block: -10px;
+  padding: 10px 4px;
+  margin: -10px -4px;
 }
 .breadcrumbs a:hover { color: var(--accent); }
 .breadcrumbs__separator { margin: 0 var(--sp-1); }
@@ -915,7 +935,7 @@ html.mobile-nav-open { overflow: hidden; }
   color: var(--ink-muted);
   cursor: pointer;
   transition: all var(--transition-fast);
-  min-height: 48px;
+  min-height: var(--control);
   display: inline-flex;
   align-items: center;
 }
@@ -955,7 +975,7 @@ html.mobile-nav-open { overflow: hidden; }
 .prose h2 {
   margin-top: var(--sp-12);  /* at least 1.5x the space below: a heading belongs to what follows it */
   margin-bottom: var(--sp-4);
-  padding: var(--sp-4) var(--sp-5);
+  padding: var(--sp-4) var(--sp-5) var(--sp-4) calc(var(--inset) - 3px);
   background: linear-gradient(135deg, rgba(242, 104, 34, 0.08) 0%, rgba(23, 23, 26, 0.9) 100%);
   border-left: 3px solid var(--accent);
   border-radius: 0 var(--border-radius) var(--border-radius) 0;
@@ -966,7 +986,7 @@ html.mobile-nav-open { overflow: hidden; }
 .prose h3 {
   margin-top: var(--sp-8);
   margin-bottom: var(--sp-3);
-  padding-left: var(--sp-4);
+  padding-left: var(--inset);
   position: relative;
   color: var(--ink);
 }
@@ -974,7 +994,7 @@ html.mobile-nav-open { overflow: hidden; }
 .prose h3::before {
   content: '';
   position: absolute;
-  left: 0;
+  left: calc(var(--inset) - 16px);
   top: 50%;
   transform: translateY(-50%);
   width: 6px;
@@ -995,8 +1015,10 @@ html.mobile-nav-open { overflow: hidden; }
 
 .prose ul, .prose ol {
   margin-bottom: var(--sp-4);
-  padding-left: var(--sp-6);
+  padding-left: var(--inset);
 }
+/* two-digit numbers need a little more room than the shared indent */
+.prose ol:has(> li:nth-child(10)) { padding-left: calc(var(--inset) + 0.6em); }
 
 .prose ul { list-style: disc; }
 .prose ol { list-style: decimal; }
@@ -1010,8 +1032,13 @@ html.mobile-nav-open { overflow: hidden; }
 .prose li,
 .prose dd { max-width: var(--measure); }
 /* Boxes of running text end on the same right edge as the paragraphs */
-.prose blockquote { max-width: calc(var(--measure) + 2 * var(--sp-5) + 3px); }
-.prose .callout { max-width: calc(var(--measure) + 2 * var(--sp-4) + 3px); }
+.prose blockquote { max-width: calc(var(--measure) + var(--inset) + var(--sp-5)); }
+.prose .callout { max-width: calc(var(--measure) + var(--inset) + var(--sp-4)); }
+/* The last block of an article ends flush, so every page ends one section padding above what follows it */
+.prose > :last-child,
+.prose > :is(ul, ol):last-child > li:last-child,
+.explore-more > :last-child,
+.explore-more li:last-child { margin-bottom: 0; }
 
 .prose li::marker { color: var(--accent); }
 
@@ -1022,7 +1049,7 @@ html.mobile-nav-open { overflow: hidden; }
 .prose blockquote {
   border-left: 3px solid var(--accent);
   background: linear-gradient(135deg, rgba(242, 104, 34, 0.06) 0%, var(--surface) 100%);
-  padding: var(--sp-4) var(--sp-5);
+  padding: var(--sp-4) var(--sp-5) var(--sp-4) calc(var(--inset) - 3px);
   margin: var(--sp-4) 0;
   color: var(--ink-muted);
   font-style: italic;
@@ -1084,6 +1111,9 @@ html.mobile-nav-open { overflow: hidden; }
   border-bottom: 1px solid rgba(42, 42, 45, 0.6);
   color: var(--ink-muted);
 }
+/* first column on the shared inset (the table has a 1px border) */
+.prose th:first-child,
+.prose td:first-child { padding-left: calc(var(--inset) - 1px); }
 
 .prose tbody tr {
   transition: background var(--transition-fast);
@@ -1121,9 +1151,11 @@ main p a:hover,
 main li a:hover {
   text-decoration-color: var(--accent);
 }
-/* Exclude nav/toc/breadcrumb/button/card-overlay links from underline */
+/* Exclude nav/toc/breadcrumb/button/card-overlay links from underline (as specific as the rule above, so
+   a button inside .prose isn't underlined) */
 .toc a,
 .breadcrumbs a,
+:is(.prose, article.build-article, main) :is(.btn, .btn--primary, .btn--outline, .tag),
 .btn,
 .btn--primary,
 .btn--outline,
@@ -1152,10 +1184,10 @@ main li a:hover {
   gap: var(--sp-6);
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 60em) {
   .layout-sidebar {
     display: grid;
-    grid-template-columns: 1fr var(--sidebar-width);
+    grid-template-columns: minmax(0, 1fr) var(--sidebar-width);
     gap: var(--sp-8);
   }
 }
@@ -1197,7 +1229,7 @@ main li a:hover {
   text-align: center;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 45em) {
   .hero { padding: var(--sp-24) 0; }
 }
 
@@ -1206,7 +1238,7 @@ main li a:hover {
   margin-bottom: var(--sp-4);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 45em) {
   .hero__title { font-size: var(--text-5xl); }
 }
 
@@ -1249,7 +1281,7 @@ main li a:hover {
   display: flex;
   align-items: center;
 }
-@media (min-width: 768px) {
+@media (min-width: 45em) {
   .hero-banner { min-height: 28rem; padding: var(--sp-24) 0; }
 }
 .hero-banner__img {
@@ -1288,7 +1320,7 @@ main li a:hover {
   display: inline-block;
   text-align: center;
 }
-@media (min-width: 768px) {
+@media (min-width: 45em) {
   .hero-box { padding: var(--sp-16) var(--sp-24); }
 }
 
@@ -1311,17 +1343,19 @@ main li a:hover {
   margin-block: -6px;
   min-width: 0;
 }
+/* Separators are sized in rem, not em: items can differ in size (the footer's logo), and the first separator
+   has to be exactly as wide as the negative margin that hides it, or it clips the first item's text */
 .meta-line {
   display: flex;
   flex-wrap: wrap;
   align-items: baseline;
   row-gap: var(--sp-1);
-  margin-left: -1.25em;
+  margin-left: -1.25rem;
 }
 .meta-line > *::before {
   content: '·';
   display: inline-block;
-  width: 1.25em;
+  width: 1.25rem;
   text-align: center;
   color: var(--ink-muted);
 }
@@ -1332,7 +1366,7 @@ main li a:hover {
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--border-radius);
-  padding: var(--sp-4) var(--sp-6);
+  padding: var(--sp-4) var(--sp-6) var(--sp-4) calc(var(--inset) - 1px);
   margin-bottom: var(--sp-8);
 }
 
@@ -1353,7 +1387,7 @@ main li a:hover {
   padding: var(--sp-1) 0;
 }
 @media (pointer: coarse) {
-  .toc a { padding-block: 10px; }
+  .toc a { padding-block: 11px; }
 }
 /* Contents as a fold: closed on phones (a long list of links), opened on wider screens by a script */
 details.toc > summary {
@@ -1381,7 +1415,7 @@ details.toc[open] > summary { margin-bottom: var(--sp-2); }
   }
 
   .prose h2 {
-    padding: var(--sp-3) var(--sp-4);
+    padding: var(--sp-3) var(--sp-4) var(--sp-3) calc(var(--inset) - 3px);
   }
 
   .prose hr {
@@ -1395,18 +1429,21 @@ details.toc[open] > summary { margin-bottom: var(--sp-2); }
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(6.5rem, 1fr));
   }
-  .filter-bar--grid .filter-btn { justify-content: center; }
+  .filter-bar--grid .filter-btn { justify-content: center; text-align: center; }
+  .filter-bar--grid .filter-separator { display: none; }
 
   th, td {
     padding: var(--sp-2) var(--sp-3);
   }
+  .prose th:first-child,
+  .prose td:first-child { padding-left: calc(var(--inset) - 1px); }
 
   .article-meta {
     gap: var(--sp-2);
   }
 
   .toc {
-    padding: var(--sp-3) var(--sp-4);
+    padding: var(--sp-3) var(--sp-4) var(--sp-3) calc(var(--inset) - 1px);
   }
 
   .hero-box {
@@ -1427,7 +1464,33 @@ details.toc[open] > summary { margin-bottom: var(--sp-2); }
   border-width: 0;
 }
 
+/* --- Share box (end of articles) --- */
+.share-box {
+  margin-top: var(--sp-8);
+  padding: var(--sp-5) var(--sp-5) var(--sp-5) calc(var(--inset) - 1px);
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--border);
+  border-radius: var(--border-radius);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--sp-4);
+}
+.share-box .share-box__title { margin: 0 0 var(--sp-1); padding-left: 0; font-size: var(--text-lg); }
+.share-box .share-box__title::before { content: none; }
+.share-box__text { margin: 0; color: var(--ink-muted); font-size: var(--text-sm); }
+.share-box__actions { display: flex; flex-wrap: wrap; gap: var(--sp-2); }
+.share-box__actions .btn { display: inline-flex; align-items: center; gap: var(--sp-2); color: #fff; }
+.share-box__actions .share-box__x, .share-box__actions .share-box__x:hover { background: #000; border: 1px solid #333; }
+.share-box__actions .share-box__reddit, .share-box__actions .share-box__reddit:hover { background: #CC3700; border: 1px solid #CC3700; }
+
 /* --- AdSense Slots --- */
+/* The footer ad's wrapper only takes up room once an ad is showing (no 40px gap above the footer before then).
+   Browsers without :has() keep the padding, as before. */
+.ad-footer { padding-block: var(--sp-6) var(--sp-4); }
+.ad-footer:not(:has(.ad-slot.ad-filled)) { display: none; }
+
 @keyframes adFadeIn {
   from { opacity: 0; }
   to   { opacity: 1; }
@@ -1577,7 +1640,7 @@ details.toc[open] > summary { margin-bottom: var(--sp-2); }
   flex-shrink: 0;
   align-items: center;
 }
-@media (max-width: 767px) {
+@media (max-width: 44.99em) {
   .disclaimer-banner__actions {
     width: 100%;
     flex-direction: column;
@@ -1590,6 +1653,7 @@ details.toc[open] > summary { margin-bottom: var(--sp-2); }
 
 /* --- FAQ Dropdowns (Global) --- */
 .faq-list { margin: var(--sp-4) 0 }
+.faq-item:last-child, .faq-list:last-child { margin-bottom: 0 }
 .faq-item {
   background: var(--surface);
   border: 1px solid var(--border);
@@ -1601,7 +1665,7 @@ details.toc[open] > summary { margin-bottom: var(--sp-2); }
 .faq-item:hover { border-color: rgba(242,104,34,0.3) }
 .faq-item[open] { border-color: var(--accent) }
 .faq-question {
-  padding: var(--sp-3) var(--sp-4);
+  padding: var(--sp-3) var(--sp-4) var(--sp-3) calc(var(--inset) - 1px);
   font-family: var(--font-heading);
   font-weight: 700;
   font-size: var(--step-0);
@@ -1619,7 +1683,7 @@ details.toc[open] > summary { margin-bottom: var(--sp-2); }
 .faq-question::after { content: '＋'; flex-shrink: 0; font-size: var(--step-1); line-height: 1; color: var(--accent); transition: transform .2s }
 .faq-item[open] .faq-question::after { content: '－' }
 .faq-answer {
-  padding: 0 var(--sp-4) var(--sp-4);
+  padding: 0 var(--sp-4) var(--sp-4) calc(var(--inset) - 1px);
   font-size: var(--step-0);
   color: var(--ink-muted);
   line-height: var(--lh-body);
@@ -1629,7 +1693,7 @@ details.toc[open] > summary { margin-bottom: var(--sp-2); }
 /* --- Callouts / Admonitions (rehype-callouts output) --- */
 .callout {
   margin: var(--sp-6) 0;
-  padding: var(--sp-4);
+  padding: var(--sp-4) var(--sp-4) var(--sp-4) calc(var(--inset) - 3px);
   border-left: 3px solid var(--callout-accent);
   border-radius: 0 var(--border-radius) var(--border-radius) 0;
   background: var(--callout-bg);
@@ -1681,7 +1745,7 @@ details.toc[open] > summary { margin-bottom: var(--sp-2); }
 
 @media (max-width: 44.99em) {
   .callout {
-    padding: var(--sp-3) var(--sp-4);
+    padding: var(--sp-3) var(--sp-4) var(--sp-3) calc(var(--inset) - 3px);
     margin: var(--sp-4) 0;
   }
 }

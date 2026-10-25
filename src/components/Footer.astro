@@ -13,13 +13,11 @@ const isHome = Astro.url.pathname === '/' || Astro.url.pathname === '/index.html
 <RelatedHub current={Astro.url.pathname} />
 <footer class="site-footer">
   <div class="footer-inner">
-    <div class="footer-left">
+    <div class="footer-left meta-line-wrap"><div class="meta-line">
       <a href="/" class="footer-logo">Resurgence<span>Builds</span></a>
-      <span class="footer-sep" aria-hidden="true">&middot;</span>
       <span class="footer-copy">&copy; {year}</span>
-      <span class="footer-sep" aria-hidden="true">&middot;</span>
       <span class="footer-copy">CC BY-SA 4.0</span>
-    </div>
+    </div></div>
     <nav class="footer-nav" aria-label="Footer navigation">
       <a href="/about/">About</a>
       <a href="/contact/">Contact</a>
@@ -60,16 +58,11 @@ const isHome = Astro.url.pathname === '/' || Astro.url.pathname === '/index.html
     flex-wrap: wrap;
     gap: var(--sp-3);
   }
-  @media (min-width: 768px) {
+  @media (min-width: 45em) {
     .footer-inner { padding: 0 var(--sp-8); }
   }
 
-  .footer-left {
-    display: flex;
-    align-items: center;
-    gap: var(--sp-2);
-    flex-wrap: wrap;
-  }
+  .footer-left .meta-line { align-items: center; }
   .footer-logo {
     font-family: var(--font-heading);
     font-weight: 700;
@@ -77,10 +70,12 @@ const isHome = Astro.url.pathname === '/' || Astro.url.pathname === '/index.html
     color: var(--ink);
     letter-spacing: -0.02em;
     text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
   }
   .footer-logo:hover { color: var(--ink); }
   .footer-logo span { color: var(--accent); }
-  .footer-sep { color: var(--ink-muted); }
   .footer-copy {
     font-size: var(--text-xs);
     color: var(--ink-muted);
@@ -88,15 +83,18 @@ const isHome = Astro.url.pathname === '/' || Astro.url.pathname === '/index.html
 
   .footer-nav {
     display: flex;
-    gap: var(--sp-4);
+    gap: 0 var(--sp-2);
     flex-wrap: wrap;
+    margin-inline: calc(-1 * var(--sp-2));
   }
   .footer-nav a {
     font-size: var(--step--1);
     color: var(--ink-muted);
     transition: color var(--transition-fast);
-    padding: var(--sp-2) 0;
+    padding: var(--sp-2);
     min-height: 44px;
+    min-width: 44px;
+    justify-content: center;
     display: inline-flex;
     align-items: center;
   }
@@ -109,7 +107,7 @@ const isHome = Astro.url.pathname === '/' || Astro.url.pathname === '/index.html
     padding: var(--sp-3) var(--sp-4) 0;
     border-top: 1px solid var(--border);
   }
-  @media (min-width: 768px) {
+  @media (min-width: 45em) {
     .footer-notes { padding-inline: var(--sp-8); }
   }
   .footer-disclaimer {

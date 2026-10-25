@@ -6,19 +6,49 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   title="404 - Page Not Found"
   description="The page you are looking for does not exist on Resurgence Builds."
 >
-  <div class="container section text-center" style="padding-top: 10vh; padding-bottom: 10vh; display: flex; flex-direction: column; align-items: center;">
-    <img src="/images/404-mj.webp" alt="Tactical Agent doing the moonwalk" style="max-width: 400px; width: 100%; border-radius: 12px; margin-bottom: var(--sp-6); box-shadow: 0 10px 30px rgba(255, 109, 16, 0.2);" />
-    <h1 style="font-size: 5rem; color: var(--accent); margin-bottom: var(--sp-2); text-transform: uppercase; letter-spacing: -2px;">404</h1>
-    <h2 class="heading-accent" style="margin-bottom: var(--sp-4);">Annie, Are You OK?</h2>
-    <p style="color: var(--ink-muted); font-size: var(--text-lg); max-width: 600px; margin: 0 auto var(--sp-8);">
-      Because this page isn't. It's been hit by, it's been struck by, a smooth 404 error. You've moonwalked straight out of the playable area. 
+  <div class="container section err">
+    <img src="/images/404-mj.webp" alt="Tactical Agent doing the moonwalk" width="800" height="800" class="err__img" />
+    <p class="err__code">404</p>
+    <h1 class="heading-accent err__title">Annie, Are You OK?</h1>
+    <p class="err__text">
+      Because this page isn't. It's been hit by, it's been struck by, a smooth 404 error. You've moonwalked straight out of the playable area.
     </p>
-    <a href="/" class="btn btn--primary" style="font-size: var(--text-lg); padding: var(--sp-3) var(--sp-8);">Hee-Hee Your Way Home</a>
+    <a href="/" class="btn btn--primary err__home">Hee-Hee Your Way Home</a>
   </div>
 </BaseLayout>
 
 <style>
-  .text-center {
+  /* Same top and bottom spacing as every other page (the standard .section padding), everything centered */
+  .err {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
   }
+  .err__img {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: var(--sp-6);
+    box-shadow: 0 10px 30px rgba(255, 109, 16, 0.2);
+  }
+  /* the big number is decoration for the heading below it, so it isn't the page's h1 */
+  .err__code {
+    font-family: var(--font-heading);
+    font-weight: 800;
+    font-size: 5rem;
+    line-height: 1;
+    letter-spacing: -2px;
+    color: var(--accent);
+    margin: 0 0 var(--sp-6);
+  }
+  .err__title { margin-bottom: var(--sp-3); }
+  .err__text {
+    color: var(--ink-muted);
+    font-size: var(--text-lg);
+    max-width: 600px;
+    margin: 0 auto var(--sp-8);
+  }
+  .err__home { font-size: var(--text-lg); padding-inline: var(--sp-8); }
 </style>

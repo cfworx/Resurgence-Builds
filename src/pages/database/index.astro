@@ -162,7 +162,7 @@ const articleLd = {
       <span>Last verified for <strong>{lastVerified}</strong> - {totalItems} entries</span>
     </div>
 
-    <p style="color: var(--ink-muted); margin-bottom: var(--sp-8); font-size: var(--text-base); max-width: 70ch; line-height: 1.7;">
+    <p style="color: var(--ink-muted); margin-bottom: var(--sp-8); font-size: var(--text-base); max-width: var(--measure); line-height: 1.7;">
       Every stat, talent, and gear set bonus in Division Resurgence, checked in-game for the patch on each page's stamp. This isn't a data mine dump from six months ago. When Ubisoft's official patch notes changed a value later (Season 1 Phase 3 through Season 2 Phase 2), we updated it from those notes and flagged it on the entry. Use it to plan your loadouts, check talent interactions, and stop guessing whether that Reddit post from March is still accurate. Spoiler: it's not.
     </p>
 
@@ -210,11 +210,11 @@ const articleLd = {
     margin-bottom: var(--sp-8);
   }
 
-  @media (min-width: 640px) {
+  @media (min-width: 45em) {
     .db-index-grid { grid-template-columns: repeat(2, 1fr); }
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: 60em) {
     .db-index-grid { grid-template-columns: repeat(3, 1fr); }
   }
 

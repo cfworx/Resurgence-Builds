@@ -275,7 +275,7 @@ const faqs = [
     align-items: center;
     justify-content: space-between;
     gap: var(--sp-4);
-    padding: var(--sp-5);
+    padding: var(--sp-5) var(--sp-5) var(--sp-5) calc(var(--inset) - 1px); /* text on the article inset */
     background: rgba(242,104,34,0.06);
     border: 1px solid rgba(242,104,34,0.2);
     border-radius: 12px;
@@ -371,7 +371,7 @@ const faqs = [
     color: #fff;
   }
   
-  @media (max-width: 640px) {
+  @media (max-width: 44.99em) {
     .os-disclaimer {
       flex-direction: column;
       align-items: flex-start;

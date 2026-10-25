@@ -89,16 +89,16 @@ const displayTitle = title || defaults[type];
   }
 
   .callout__body {
-    font-size: var(--text-sm);
+    font-size: var(--step-0);
     color: var(--ink-muted);
-    line-height: 1.7;
+    line-height: var(--lh-body);
   }
 
   .callout__body :global(p:last-child) {
     margin-bottom: 0;
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 34.99em) {
     .callout {
       padding: var(--sp-3);
       margin: var(--sp-4) 0;
@@ -108,12 +108,5 @@ const displayTitle = title || defaults[type];
       gap: var(--sp-1);
     }
 
-    .callout__title {
-      font-size: var(--text-sm);
-    }
-
-    .callout__body {
-      font-size: var(--text-xs);
-    }
   }
 </style>

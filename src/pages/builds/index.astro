@@ -41,23 +41,23 @@ const itemListLd = {
       All the Division Resurgence builds we've tested and haven't been embarrassed to publish. Each card shows the patch the build was verified on, and every guide opens with a list of what Season 2 changed for it, so you know what to re-check before you farm.
     </p>
 
-    <div class="filter-bar" id="build-filters">
+    <div class="filter-bar filter-bar--grid" id="build-filters" role="group" aria-label="Filter builds">
       <button class="filter-btn is-active" data-filter="all">All</button>
-      <div class="filter-separator" style="width: 1px; height: 1.5rem; background: var(--border); margin: 0 var(--sp-2);"></div>
+      <div class="filter-separator" aria-hidden="true"></div>
       <button class="filter-btn" data-filter="pve">PvE</button>
       <button class="filter-btn" data-filter="pvp">PvP</button>
       <button class="filter-btn" data-filter="pvepvp">PvE/PvP</button>
-      <div class="filter-separator" style="width: 1px; height: 1.5rem; background: var(--border); margin: 0 var(--sp-2);"></div>
+      <div class="filter-separator" aria-hidden="true"></div>
       {specs.map(s => <button class="filter-btn" data-filter={s}>{s}</button>)}
     </div>
 
-    <div style="display: flex; flex-wrap: wrap; gap: var(--sp-2); margin-bottom: var(--sp-8);">
-      <span style="font-family: var(--font-mono); font-size: var(--text-xs); color: var(--ink-muted); text-transform: uppercase; letter-spacing: 0.08em; align-self: center; margin-right: var(--sp-1);">Class Hubs</span>
-      <a href="/class/vanguard/" style="font-size: var(--text-xs); padding: 4px 12px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1); border-radius: 999px; color: var(--ink-muted); transition: all 200ms ease; text-decoration: none;">Vanguard</a>
-      <a href="/class/field-medic/" style="font-size: var(--text-xs); padding: 4px 12px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1); border-radius: 999px; color: var(--ink-muted); transition: all 200ms ease; text-decoration: none;">Field Medic</a>
-      <a href="/class/demolitionist/" style="font-size: var(--text-xs); padding: 4px 12px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1); border-radius: 999px; color: var(--ink-muted); transition: all 200ms ease; text-decoration: none;">Demolitionist</a>
-      <a href="/class/tech-operator/" style="font-size: var(--text-xs); padding: 4px 12px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1); border-radius: 999px; color: var(--ink-muted); transition: all 200ms ease; text-decoration: none;">Tech Operator</a>
-      <a href="/class/bulwark/" style="font-size: var(--text-xs); padding: 4px 12px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1); border-radius: 999px; color: var(--ink-muted); transition: all 200ms ease; text-decoration: none;">Bulwark</a>
+    <div class="class-hubs">
+      <span class="class-hubs__label">Class Hubs</span>
+      <a href="/class/vanguard/" class="class-hubs__link">Vanguard</a>
+      <a href="/class/field-medic/" class="class-hubs__link">Field Medic</a>
+      <a href="/class/demolitionist/" class="class-hubs__link">Demolitionist</a>
+      <a href="/class/tech-operator/" class="class-hubs__link">Tech Operator</a>
+      <a href="/class/bulwark/" class="class-hubs__link">Bulwark</a>
     </div>
 
     <div class="grid grid--3" id="builds-grid">
@@ -231,3 +231,18 @@ const itemListLd = {
 
   filterBuilds();
 </script>
+
+<style>
+  /* class hub links: 36px chips (44px on touch screens) */
+  .class-hubs { display: flex; flex-wrap: wrap; align-items: center; gap: var(--sp-2); margin-bottom: var(--sp-8); }
+  .class-hubs__label { font-family: var(--font-mono); font-size: var(--step--2); color: var(--ink-muted); text-transform: uppercase; letter-spacing: 0.08em; margin-right: var(--sp-1); }
+  .class-hubs__link {
+    display: inline-flex; align-items: center; min-height: var(--control-sm); padding: 0 var(--sp-3);
+    font-size: var(--step--2); color: var(--ink-muted); text-decoration: none;
+    background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1); border-radius: 999px;
+    transition: all 200ms ease;
+  }
+  .class-hubs__link:hover { color: var(--accent); border-color: var(--accent); }
+  @media (pointer: coarse) { .class-hubs__link { min-height: var(--control); } }
+  .filter-separator { width: 1px; height: 1.5rem; background: var(--border); margin: 0 var(--sp-2); align-self: center; }
+</style>

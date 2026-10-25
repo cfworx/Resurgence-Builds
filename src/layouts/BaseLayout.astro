@@ -86,7 +86,7 @@ const suppressAds = noAds || noindex || !!robots;
   <main id="main-content">
     <slot />
     {!suppressAds && (
-      <div class="container" style="padding-top: var(--sp-6); padding-bottom: var(--sp-4);">
+      <div class="container ad-footer">
         <AdSenseUnit label="Advertisement — footer" />
       </div>
     )}
@@ -122,6 +122,15 @@ const suppressAds = noAds || noindex || !!robots;
       let t: number | undefined;
       window.addEventListener('resize', () => { clearTimeout(t); t = window.setTimeout(() => boxes.forEach(update), 150); });
     });
+  </script>
+  <script>
+    // Filter buttons only toggle an .is-active class; mirror it to aria-pressed for screen readers
+    const syncPressed = (b: Element) => b.setAttribute('aria-pressed', String(b.classList.contains('is-active')));
+    document.querySelectorAll('.filter-btn').forEach(syncPressed);
+    const pressedObserver = new MutationObserver((ms) => ms.forEach((m) => {
+      if (m.target instanceof HTMLElement && m.target.classList.contains('filter-btn')) syncPressed(m.target);
+    }));
+    document.querySelectorAll('.filter-btn').forEach((b) => b.parentElement && pressedObserver.observe(b.parentElement, { attributes: true, attributeFilter: ['class'], subtree: true }));
   </script>
   <!-- Ad reveal observer: watches for AdSense to fill slots, then shows them -->
   <script is:inline>

@@ -450,8 +450,17 @@
     backdrop.className = 'map-filters-backdrop';
     // Same parent as the panel, so both share one stacking context and the sheet stays above its backdrop.
     panel.parentNode.insertBefore(backdrop, panel);
-    function open() { panel.classList.add('is-open'); backdrop.classList.add('is-open'); toggle.setAttribute('aria-expanded', 'true'); }
-    function shut() { panel.classList.remove('is-open'); backdrop.classList.remove('is-open'); toggle.setAttribute('aria-expanded', 'false'); }
+    // Opening moves focus into the sheet; closing hands it back to the Layers button.
+    function open() {
+      panel.classList.add('is-open'); backdrop.classList.add('is-open'); toggle.setAttribute('aria-expanded', 'true');
+      if (close && PHONE.matches) setTimeout(function () { close.focus({ preventScroll: true }); }, 50);
+    }
+    function shut() {
+      if (!panel.classList.contains('is-open')) return;
+      var hadFocus = panel.contains(document.activeElement);
+      panel.classList.remove('is-open'); backdrop.classList.remove('is-open'); toggle.setAttribute('aria-expanded', 'false');
+      if (hadFocus) toggle.focus({ preventScroll: true });
+    }
     toggle.addEventListener('click', function () { panel.classList.contains('is-open') ? shut() : open(); });
     if (close) close.addEventListener('click', shut);
     backdrop.addEventListener('click', shut);

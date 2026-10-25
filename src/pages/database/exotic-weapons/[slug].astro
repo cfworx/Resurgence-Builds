@@ -101,7 +101,7 @@ const itemLd = {
 
       {weapon.image && (
         <div style="margin-bottom: var(--sp-6); border-radius: 8px; overflow: hidden; border: 1px solid var(--border);">
-          <img src={weapon.image} alt={`${weapon.name} Exotic ${weapon.type} in Division Resurgence`} style="width: 100%; height: auto; display: block;" />
+          <img src={weapon.image} alt={`${weapon.name} Exotic ${weapon.type} in Division Resurgence`} width="1200" height="583" style="width: 100%; height: auto; display: block;" />
         </div>
       )}
 
@@ -263,7 +263,7 @@ const itemLd = {
     background-clip: text;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 45em) {
     .weapon-detail__name {
       font-size: var(--text-5xl);
     }
@@ -303,7 +303,7 @@ const itemLd = {
     gap: var(--sp-3);
   }
 
-  @media (min-width: 640px) {
+  @media (min-width: 45em) {
     .weapon-stats__grid {
       grid-template-columns: repeat(4, 1fr);
     }
@@ -348,7 +348,7 @@ const itemLd = {
   }
 
   .weapon-talent__card {
-    padding: var(--sp-6);
+    padding: var(--sp-6) calc(var(--inset) - 1px);
     background: rgba(245, 204, 69, 0.05);
     border: 1px solid rgba(245, 204, 69, 0.2);
     border-radius: 12px;

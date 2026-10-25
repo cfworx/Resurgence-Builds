@@ -49,12 +49,12 @@ const faqs = [
     <div class="weapon-category" data-category="exotic" style="margin-bottom: var(--sp-10);">
       <h2 style="font-family: var(--font-heading); font-size: var(--text-2xl); font-weight: 800; color: #ff5100; margin-bottom: var(--sp-4);">Exotics</h2>
       <div class="db-grid">
-        {exoticWeapons.map((w: any) => (
+        {exoticWeapons.map((w: any, i: number) => (
             <article class="db-card exotic-card">
               <a href={`/database/exotic-weapons/${w.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')}/`} class="db-card-full-link" aria-label={`${w.name} — View exotic weapon details`}></a>
               {w.image && (
                 <div class="db-card__image-banner">
-                  <img src={w.image} alt={`${w.name} Exotic ${w.type} in Division Resurgence`} width="400" height="120" loading="lazy" decoding="async" />
+                  <img src={w.image} alt={`${w.name} Exotic ${w.type} in Division Resurgence`} width="400" height="120" loading={i < 3 ? 'eager' : 'lazy'} decoding="async" />
                 </div>
               )}
               <div class="db-card__header">

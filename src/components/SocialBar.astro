@@ -305,8 +305,14 @@ const heading = headings[index % headings.length];
     box-shadow: 0 4px 16px rgba(255,0,0,0.35);
   }
 
+  /* Narrowest phones: tighter buttons so the three still fit side by side at 320px */
+  @media (max-width: 22.49em) {
+    .social-bar__links { gap: 8px; }
+    .social-btn { padding-inline: 8px; gap: 6px; }
+  }
+
   /* Tablet and up: single row */
-  @media (min-width: 600px) {
+  @media (min-width: 35em) {
     .social-bar__links {
       display: flex;
       align-items: center;
@@ -321,7 +327,7 @@ const heading = headings[index % headings.length];
   }
 
   /* Large screens */
-  @media (min-width: 768px) {
+  @media (min-width: 45em) {
     .social-bar {
       padding: var(--sp-5) var(--sp-8);
     }

@@ -40,7 +40,7 @@ const itemListLd = {
       Essential knowledge for mastering Manhattan. Discover tips for leveling, farming strategies, PvP techniques, and game mechanics.
     </p>
 
-    <div class="filter-bar" id="guide-filters">
+    <div class="filter-bar filter-bar--grid" id="guide-filters" role="group" aria-label="Filter guides">
       <button class="filter-btn is-active" data-filter="all">All</button>
       <div class="filter-separator" style="width: 1px; height: 1.5rem; background: var(--border); margin: 0 var(--sp-2);"></div>
       {categories.map(c => <button class="filter-btn" data-filter={c}>{c}</button>)}

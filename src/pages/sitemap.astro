@@ -59,21 +59,21 @@ const tagSlugify = (tag: string) => tag.toLowerCase().replace(/\s+/g, '-');
       <p>This page contains a complete, flat index of every post, database entry, and guide on Resurgence Builds.</p>
       
       <h2>Core Pages</h2>
-      <ul style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 10px; list-style: none; padding: 0;">
+      <ul class="sitemap-list">
         {staticPages.map(page => (
           <li><a href={page.url}>{page.title}</a></li>
         ))}
       </ul>
 
       <h2>Classes</h2>
-      <ul style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 10px; list-style: none; padding: 0;">
+      <ul class="sitemap-list">
         {classes.map(c => (
           <li><a href={`/class/${c}/`} style="text-transform: capitalize;">{c.replace('-', ' ')}</a></li>
         ))}
       </ul>
 
       <h2>Tags</h2>
-      <ul style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 10px; list-style: none; padding: 0;">
+      <ul class="sitemap-list">
         {uniqueTags.map(tag => (
           <li><a href={`/tag/${tagSlugify(tag)}/`}>{tag}</a></li>
         ))}
@@ -173,3 +173,19 @@ const tagSlugify = (tag: string) => tag.toLowerCase().replace(/\s+/g, '-');
     </div>
   </div>
 </BaseLayout>
+
+<style>
+  /* Long lists of links: a grid of 28px-tall rows, one column on phones */
+  .sitemap-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 200px), 1fr));
+    gap: var(--sp-4);
+    list-style: none;
+    padding: 0;
+  }
+  .sitemap-list li { margin-bottom: 0; } /* the grid's gap spaces the rows */
+  .sitemap-list a {
+    display: block;
+    padding-block: var(--sp-1);
+  }
+</style>

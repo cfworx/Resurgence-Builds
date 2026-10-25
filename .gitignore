@@ -38,3 +38,7 @@ compress-talents.cjs
 optimize_images.cjs
 resize.ps1
 public/fonts/download-fonts.mjs
+
+# design audit output (scripts/design-audit.cjs)
+design-audit*.json
+design-audit*-summary.txt
