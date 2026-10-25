@@ -62,6 +62,14 @@ How Oldfartsgaming runs his dailies:
 - He rerolls ("recycles") dailies until he has a Hostile Nest quest.
 - For Dark Zone dailies, he teams up and says higher-level players often carry him through quickly.
 
+How AgentHuntzman ran his in April, before Season 2 (check that the rewards still match):
+
+- **Dailies first:** he checks them, rerolls the ones he doesn't want, and knocks out the quick kill and vendor quests.
+- **Then the map:** if a Heroic Hostile Nest is up, he runs it for gear and weapon mods (golds included) and the materials to upgrade them.
+- **Then the clan:** the daily donation at the clan counter, and clan nests if the clan still needs them, for clan currency.
+- **Then world events:** he says they reset daily and pay out for up to 10 completions each. He does three each of Arms Deal Disruption, Hostage Rescue and Supply Run for Electronics Alpha, Beta and Gamma Components, which he calls the most needed materials for upgrading a specialization.
+- **Weekly Bounties** reset on Sundays, and he farms them for OS Protocols: blue and purple, with a chance of gold.
+
 ## Your weekly checklist
 
 From Ubisoft's Season 1 Phase 2, Season 2 Phase 1 and Season 2 Phase 2 notes:
@@ -83,9 +91,20 @@ This was Oldfartsgaming's first point, and it's the one that saves the most mate
 - **His regret:** spending purple materials on set pieces that weren't keepers while he was stuck between levels 30 and 40. He says he didn't need to.
 - **Same rule for mods:** max the ones with the right stats and skip the rest.
 
+### Credits run out before anything else
+
+AgentHuntzman's April video on credits ("Money making 101") is old, but the habits hold up:
+
+- **Repeat missions.** Every activity pays something. In April, a Heroic run paid him 8,000 credits and story mode 3,500 to 4,000, and story is fast enough to spam.
+- **Dismantle, don't sell, gear you might use.** Dismantling gives the components every upgrade eats. He only sells gear no build of his could use.
+- **Sell the white junk.** The plain white items from open-world caches stack up fast. He sold about half his stack every Friday, at 150 credits each by his count.
+- **Don't upgrade everything at once.** Credits are the first thing new players run out of, he says, and he admits he still hadn't upgraded everything because he'd switched classes a few times.
+
+Check today's numbers in game: Season 2 has changed rewards since then. Where the gear itself drops is in our [gear farming guide](/guides/division-resurgence-gear-farming-guide/).
+
 ## Rule 2: max one good OS Protocol
 
-Oldfartsgaming says upgrading a decent OS Protocol that fits his build as far as it would go was one of his biggest boosts in the late mid-game. On his Demolitionist it added a large Engineering bonus, some skill damage and a good chunk of health, and he did it even though he later found a better protocol. Not sure which one fits your build? Start with our [OS Protocol tier list](/tier-list/os-protocols/).
+Oldfartsgaming says upgrading a decent OS Protocol that fits his build as far as it would go was one of his biggest boosts in the late mid-game. AgentHuntzman's caveat from his SHD Manual video: OS upgrades need duplicates, so this is a long-term project, not a weekend. On his Demolitionist it added a large Engineering bonus, some skill damage and a good chunk of health, and he did it even though he later found a better protocol. Not sure which one fits your build? Start with our [OS Protocol tier list](/tier-list/os-protocols/).
 
 ## Rule 3: level the side systems
 
@@ -104,6 +123,7 @@ Oldfartsgaming says upgrading a decent OS Protocol that fits his build as far as
 ### A second specialization
 
 - **Oldfartsgaming:** he capped Demolitionist, then started leveling Tech Operator (which he says overlaps a lot with his Engineering setup) and tried Bulwark, running his dailies on them while keeping his main for harder missions. He says the extra levels give skill points and push his SHD level, and that after 40 the game encourages you to go broad.
+- **AgentHuntzman's counterpoint:** switching your *main* every few days is, in his words, one of the biggest progression traps, because your farming priorities, gear and stats reset each time, and he has more wasted recalibrations than he can count. Level a second specialization on the side if you like, but commit your materials to one.
 - **Official:** Ubisoft's August 5 PC launch press release describes "the flexibility to switch roles at any time." Our [specialization guide](/guides/which-specialization-to-pick/) covers what each one does.
 
 He also says it took him a while to understand how his specialization's skill stacks work together, and that putting points into the skills that feed them made a big difference. Read your skill tree tooltips slowly; future you will thank you.
@@ -130,7 +150,7 @@ GGReborn's list closes with the one we'd tattoo on every fresh level 40: ask you
 
 | You need | Where Ubisoft says it comes from |
 |---|---|
-| Weapon and gear mods | Hostile Nests and Hostile Nest dailies |
+| Weapon and gear mods | Hostile Nests and Hostile Nest dailies (AgentHuntzman's tip: run a Heroic nest again right after you finish it) |
 | Skill mods | Dark Zone dailies |
 | Tier 2 weapons and gear | Weapon Kill and Main Mission dailies (a chance at level 40) |
 | Upgrade materials | World Event dailies |
@@ -138,7 +158,7 @@ GGReborn's list closes with the one we'd tattoo on every fresh level 40: ask you
 | Exotics from earlier seasons | Exotic Sealed Caches; the DZ vendor added the Warlord (Season 1 Phase 2) and the Scorpio (Season 2 Phase 1), so check its current stock |
 | SHD Keys | Weekly Rewards and Season 2 Phase 2 event rewards |
 
-One creator addition: TikTokAndy says Elite missions are where he farms T2 guns.
+One creator addition: TikTokAndy says Elite missions are where he farms T2 guns. Which mission leans toward which gear slot, and every other T2 source we know of, is in our [gear farming guide](/guides/division-resurgence-gear-farming-guide/).
 
 GGReborn's other gear mistakes deserve a line each: judging gear by level and rarity instead of its set, talents and attributes, and not checking the character stats screen to see whether your build actually gets what you think it does. A higher Power Score isn't the same as a better build, which our [hidden mechanics guide](/guides/hidden-mechanics-explained/) explains at length.
 
@@ -194,6 +214,11 @@ The Heroic Hostile Nest with a named boss is the mod farm in our [mod farming gu
 - [Ubisoft Help Center: Patch Note, Season 1 Phase 3](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2521-patch-note---season-1-phase-3/)
 - [Ubisoft press release via Game Developer: The Division Resurgence is now available on PC (August 5, 2026)](https://www.gamedeveloper.com/press-release/tom-clancy-s-the-division-resurgence-is-now-available-on-pc-via-ubisoft-connect-and-steam)
 - [Oldfartsgaming: 7 Things I Wish I Knew Before Endgame (YouTube, October 11, 2026)](https://www.youtube.com/watch?v=7JtJCeEE8NI)
+- [AgentHuntzman: My dailies 101 (YouTube, April 19, 2026)](https://www.youtube.com/watch?v=FrZXSqcRTFU)
+- [AgentHuntzman: Money making 101 (YouTube, April 19, 2026)](https://www.youtube.com/watch?v=ramrwvtxS4o)
+- [AgentHuntzman: The Endgame Mistakes Slowing Your Progress (YouTube, May 15, 2026)](https://www.youtube.com/watch?v=jO-1mbahPec)
+- [AgentHuntzman: SHD Manual, How Progression ACTUALLY Works (YouTube, May 22, 2026)](https://www.youtube.com/watch?v=Mt3E4A0l0Zk)
+- [AgentHuntzman: Gear Farming Made EASY (YouTube, June 3, 2026)](https://www.youtube.com/watch?v=m5a01nBqv_U)
 - [GGReborn: Why Your Division Resurgence Gear Build Is Failing You (YouTube, September 29, 2026)](https://www.youtube.com/watch?v=wFqepeXdCTs)
 - [TikTokAndy: Best "Automatic" Double Barrel Shotgun Build (YouTube, September 30, 2026)](https://www.youtube.com/watch?v=ITIJB2nj3zg)
 - [TikTokAndy: SOLO Heroic Chinatown, This Vanguard Build Is INSANE (YouTube, September 24, 2026)](https://www.youtube.com/watch?v=6dGaisNKCyE)

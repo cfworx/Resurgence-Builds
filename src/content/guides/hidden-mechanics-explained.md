@@ -42,7 +42,7 @@ This is the long-form follow-up to every player who has ever typed "is my build 
 
 The answer is almost never "your gear is bad." The answer is that the game ships with at least seven systems that quietly decide whether you feel powerful or feel useless, and the in-game tooltips don't mention any of them. Not one. It's like buying a car that comes with an engine manual written entirely in emoji.
 
-We're pulling this together from community testing, our own build sessions, and hundreds of hours of endgame play. Every claim is cited at the bottom. Where we're confident, we say so. Where the community is still testing, we hedge.
+We're pulling this together from community testing, our own build sessions, and hundreds of hours of endgame play. Several of these mechanics are also the subject of AgentHuntzman's guide videos from April and May 2026, which explain them better than the game does, so we credit him wherever his examples shaped ours. Every claim is cited at the bottom. Where we're confident, we say so. Where the community is still testing, we hedge.
 
 The seven mechanics, ranked by how much they'll change your game:
 
@@ -77,6 +77,8 @@ The math, simplified:
 
 The character screen DPS does not show any of this. It calculates one bullet at one base damage value. It doesn't know that your build wants to trigger Torrential Downpour as often as humanly possible.
 
+AgentHuntzman's version of this, from his May 2 video on mechanics the game never explains: on a hit-based build, "your weapon stops being just a gun, and becomes a triggered engine." It's why he runs a P90 on his Scout build. He adds the other half of the lesson: if a build feeds on hits, playing it cautiously works against it, because every time you stop shooting, your stacks and buffs start dropping.
+
 **The takeaway:** Before you pick a weapon, ask what your build wants from your weapon. If the answer is "land hits to trigger procs and stacks," pick the highest-RPM weapon in that weapon class. If the answer is "deliver one large damage instance per shot," then yes, pick the hard-hitter. Most builds want the first answer. That's why the P90 shows up in builds where it has no business being based on raw damage alone.
 
 ---
@@ -95,13 +97,15 @@ If you have a +50% buff at Stage A and a +100% buff at Stage B, you don't get +1
 
 That's a 200% increase, not 150%. And that's with only two buffs. Stack a third buff at a third stage and the multiplication goes nuclear.
 
-This is exactly what the [AgentHuntzman's Leaderboard Ranking Vanguard Support Build](/builds/agenthuntzmans-leaderboard-ranking-vanguard-support-build/) does. Tactical Smart Cover adds weapon damage (Stage 1). Scanning Pulse adds vulnerability and exposure (Stage 2). Tactical Link adds rate of fire (Stage 3). Each one feeds a different stage. Each one multiplies the others.
+This is exactly what the [AgentHuntzman's Leaderboard Ranking Vanguard Support Build](/builds/agenthuntzmans-leaderboard-ranking-vanguard-support-build/) does. Tactical Smart Cover adds weapon damage (Stage 1). Scanning Pulse adds vulnerability and exposure (Stage 2). Tactical Link adds rate of fire (Stage 3). Each one feeds a different stage. Each one multiplies the others. His sheet showed 142.11k DPS when he filmed it in April, and he says the build takes his team "from 100,000 to almost 200,000. Almost 300,000." That's his reading, not our test, but it's the whole point of this section in one sentence.
 
 A solo DPS build that stacks +100% weapon damage at a single stage gets... +100% damage. A support build that stacks +30% at three different stages gets:
 
 > 1.3 x 1.3 x 1.3 = 2.197 = roughly +120% damage for the ENTIRE TEAM
 
 The support build creates more total damage. It just doesn't show up on the support player's scoreboard. Which is why support players get zero credit and DPS players get all the praise, despite contributing less to the actual clear. Life isn't fair. Neither is the scoreboard.
+
+AgentHuntzman's May 8 video on why pros value support builds makes the same case from the squad's side: support "scales directly with the squad quality," so the better your teammates are, the more a support build is worth to them.
 
 ---
 
@@ -111,7 +115,7 @@ Cooldown Reduction (CDR) follows diminishing returns, at least according to comm
 
 Here's the practical example that matters:
 
-Say Scanning Pulse has a 15-second base cooldown and a 17-second duration at your current Skill Duration. You already have permanent uptime. The skill comes back before it even expires. Stacking more CDR at this point saves you... nothing. The skill was already ready before you needed it.
+Say Scanning Pulse has a 15-second base cooldown and a 17-second duration at your current Skill Duration. (That's not a made-up example: AgentHuntzman's April Scout build showed Scanning Pulse at 17.44 seconds of duration on a 14.94-second cooldown, and Smart Cover at 41.20 seconds on 35.59.) You already have permanent uptime. The skill comes back before it even expires. Stacking more CDR at this point saves you... nothing. The skill was already ready before you needed it.
 
 Every CDR point spent past your "permanent uptime breakpoint" is a stat point that could have gone into Skill Duration (making the skill stronger while it's up), Skill Intensity (making it hit harder), or Skill Crit Chance (making it crit more often).
 
@@ -129,6 +133,13 @@ Positioning and timing win more encounters than equipment. A team of four player
 
 In Legendary, the team that manages aggro angles clears faster than the team with higher combined DPS every single time. This is measurable. Run the same mission twice with the same squad. First time, stack together. Second time, spread to three positions. Time both. The spread run will be faster even if you all have worse gear the second time.
 
+AgentHuntzman's May 13 video on why good players "never fight fair" is the best breakdown of this we've seen. His points, in short:
+
+- **Enemy AI settles when all the pressure comes from one direction.** It holds cover and keeps formation. Add a second angle and enemies start rotating cover, leaving it early and exposing weak points while they move.
+- **Repositioning isn't retreating.** The best spot is the one that gives your team the most control, not always the safest one. Stay still too long and you become predictable.
+- **Front-line pressure changes enemy behavior.** A Bulwark pushing up front makes enemies split their fire and fall back, and crowd control breaks their rhythm.
+- **Aggression needs timing.** Push when enemies are distracted, buffs are up and teammates can follow, not just because you can.
+
 Support builds amplify this mechanic because they reposition the fight. Smart Cover placement dictates where teammates stand. Scanning Pulse radius dictates how wide the engagement zone spreads. A well-placed Smart Cover that forces the team to spread across two lanes creates more damage than a perfectly rolled weapon attribute, and it costs zero recalibration materials.
 
 ---
@@ -143,9 +154,13 @@ As far as community testing can tell, the damage formula multiplies your core st
 
 The math gets worse the more multipliers your build has. A support build with five different Engineering-scaling effects loses more from splitting stats than a DPS build with two Firepower-scaling effects. This is why the best builds in the game are absolute psychos about one stat and completely ignore the others.
 
+AgentHuntzman put it simply in his May 6 video on why builds feel weak: builds in this game "don't reward balance. They reward focus." Even support builds commit.
+
 **The rule:** Pick ONE core stat and max it on every gear piece. Use your Body Armor talent (Socialite for armor, Glass Cannon for damage) to cover survivability. Use weapon talents to cover whatever your core stat doesn't. Let set bonuses fill the gaps.
 
 **A shortcut for sorting drops,** from Oldfartsgaming's October 11 endgame video: offensive builds look for the red icon, tanky builds the blue one, and an Engineering build like his Demolitionist looks for Engineering. Once the core stat matches, check the set and the secondary stats before you spend a single purple material on it.
+
+**But the core stat isn't the whole build.** AgentHuntzman's May 27 follow-up ("Main Stats Are LYING To You") makes the point the rule above can hide: Engineering won't carry a skill build without Skill Damage, Skill Crit Chance, Skill Crit Damage or Healing Intensity behind it, and Firepower won't carry a gun build without Weapon Damage and crits. His rule of thumb for weapon Vanguards: get to at least 50% Weapon Critical Hit Chance before you pour everything into Critical Hit Damage, because huge crit damage at 1% crit chance lands once every hundred shots. And for tanks, health alone isn't enough: with low armor, he says, you still die fast. His tip for checking all of it: the attributes list on your character screen shows every stat and buff you actually have.
 
 A build with 1,700 Engineering and 400 Firepower will always outperform a build with 1,050 of each. Always. The focused build doesn't just hit harder per stat point. It multiplies harder per stat point. And in a game built on multipliers, that's everything.
 
@@ -156,6 +171,8 @@ A build with 1,700 Engineering and 400 Firepower will always outperform a build 
 Every veteran player has done this. You keep dying in Legendary, so you recalibrate your gloves from Skill Crit Chance to Health. You feel better. You die less. But your clear times get longer, your team carries harder, and you gradually slide from "contributor" to "passenger."
 
 Every recalibration slot spent on comfort (health, armor, damage reduction) is a slot not spent on impact (crit chance, crit damage, skill CDR, weapon damage, skill intensity). The math is unforgiving: a single Health roll on gloves might give you +15,000 HP. That's roughly one extra bullet's worth of survivability. A Skill Crit Chance roll on those same gloves might give you +5% crit chance on every skill activation for the rest of the mission. One saves you once. The other makes you stronger forever.
+
+AgentHuntzman calls this choosing "comfort over impact," and he admits he's done it more than once. His rule: the best recalibrations reinforce what your build is for (buffs, pressure, uptime) instead of patching its weaknesses. Survivability, he says, doesn't make you strong. It just keeps you alive longer.
 
 **The uncomfortable truth:** If you're dying in Legendary, it's almost always positioning. You're peeking too long. You're standing in the open. You're fighting from an angle that exposes you to four enemies instead of one. Swapping a damage stat for a health stat doesn't fix bad positioning. It just lets you survive bad positioning slightly longer before dying anyway.
 
@@ -172,6 +189,8 @@ Power Score goes up when you equip higher-tier gear with bigger raw stats. It's 
 A T1 Mechanical Expert mask with perfect Engineering core and Skill CDR rolls will outperform a T2 generic mask with Toughness core and Weapon Damage secondary in every measurable way for a support build. But the T2 mask has a higher Power Score, so the game encourages you to equip it. This is a trap.
 
 Players who chase Power Score end up in mismatched loadouts full of T2 gear with garbage rolls. They technically meet the Power Score "requirement" for Legendary content. They then get absolutely destroyed in Legendary content because their build has no identity, no synergy, and no focused stat scaling. They blame the difficulty. They should blame the Power Score.
+
+AgentHuntzman's May 15 video on endgame mistakes says it bluntly: "a properly optimized low-score build can outperform a random high score setup." He also lists the habit that wastes the most materials: switching classes every few days, which resets your farming priorities and your gear needs each time. He says he has more wasted recalibrations than he can count.
 
 **The diagnostic question:** If someone asked you "what does your build do?", could you answer in one sentence? "I stack Engineering and convert it into team weapon damage through Smart Cover" is a build identity. "I have high Power Score" is not.
 
@@ -196,5 +215,12 @@ If you answered "no" to all five: congratulations. You're building correctly. Th
 
 - Community testing via [r/thedivisionresurgence](https://reddit.com/r/thedivisionresurgence). Cooldown breakpoint analysis, Engineering-to-Weapon-Damage conversion, and Power Score vs. build quality debates.
 - Internal Resurgence Builds knowledge base: damage formula stages, CDR diminishing returns modeling, and stat-splitting damage loss calculations.
+- [AgentHuntzman: Best Scout Build in Division Resurgence (YouTube, April 26, 2026)](https://www.youtube.com/watch?v=b1ZjnGeeRKI) (the 142.11k DPS sheet and the uptime numbers)
+- [AgentHuntzman: The Game NEVER Properly Explains These Mechanics (YouTube, May 2, 2026)](https://www.youtube.com/watch?v=EflBC5vKwT0) (hit-based builds, amplification, cooldown breakpoints)
+- [AgentHuntzman: Why Your Build Feels WEAK (And How to Fix It) (YouTube, May 6, 2026)](https://www.youtube.com/watch?v=8n9wQDmZN4o) (focus over balance, comfort over impact)
+- [AgentHuntzman: Why Pros ALWAYS Value Support Builds (YouTube, May 8, 2026)](https://www.youtube.com/watch?v=kl_bGvFy96A) (support scaling with the squad)
+- [AgentHuntzman: Why Good Players NEVER Fight Fair (YouTube, May 13, 2026)](https://www.youtube.com/watch?v=E6msESpjVq4) (pressure angles and enemy AI)
+- [AgentHuntzman: The Endgame Mistakes Slowing Your Progress (YouTube, May 15, 2026)](https://www.youtube.com/watch?v=jO-1mbahPec) (Power Score and class switching)
+- [AgentHuntzman: Main Stats Are LYING To You (YouTube, May 27, 2026)](https://www.youtube.com/watch?v=tjo7oBeX3Fk) (secondary stats and the 50% crit rule of thumb)
 - [Oldfartsgaming: 7 Things I Wish I Knew Before Endgame (YouTube, October 11, 2026)](https://www.youtube.com/watch?v=7JtJCeEE8NI) (the core-stat icon shortcut)
 - Ubisoft patch notes: [Season 2 Phase 1](/patch-notes/season-2-phase-1-the-call/) (weapon mod rework, Concerted Strike, Tactical Link auto-aim, Power Score fixes), [Season 2 Phase 2](/patch-notes/season-2-phase-2/) ("enemy takes increased damage" fixes), [Season 1 Phase 3](/patch-notes/season-1-phase-3-a-new-fire/) (Dark Zone spawn immunity, Recon damage fix), and the [June 26 server hotfix](/news/server-hotfix-june-26-2026/) (80% damage reduction cap).
