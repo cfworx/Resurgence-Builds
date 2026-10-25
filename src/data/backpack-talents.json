@@ -107,7 +107,7 @@
   {
     "id": "bp-22",
     "name": "Siege",
-    "description": "Grants Extra Health equal to 37.50% Max Health for 15 seconds when 2 enemies are within 20 meters. Talent Cooldown: 30 seconds."
+    "description": "Grants Extra Health equal to 37.50% Max Health for 15 seconds when 2 or more enemies are within 20 meters. Talent Cooldown: 30 seconds."
   },
   {
     "id": "bp-23",

@@ -91,12 +91,12 @@ export async function getStaticPaths() {
         {
           focus: 'Offensive Operations',
           name: 'Drone Overload',
-          description: 'Overloads deployed drones and turrets for a limited duration, dramatically increasing their damage output and effectiveness. During Drone Overload, your Striker Drone hits harder, turret fire rate increases, and all skill cooldowns are reduced. Pairs with Engineering stacking for maximum burst potential.'
+          description: 'Temporarily boosts your Striker Drones\' damage, and deploys a Striker Drone if none are out, so it doubles as an emergency drone. The window is short, which is why you pop it right before you engage. Pairs with Engineering stacking for maximum burst potential.'
         },
         {
           focus: 'Aegis Operations',
           name: 'Defender Drone',
-          description: 'Deploys a defensive drone that protects the user and nearby allies by intercepting incoming projectiles. The Defender Drone scales with Engineering and creates a protective zone where your team is significantly harder to kill. At full build it produces uptime numbers that make PvP opponents check if there is a bug.'
+          description: 'Deploys a drone whose field protects every ally inside it. It can follow you or hold a set spot, and on TikTokAndy\'s October tooltip it keeps granting Extra Health to everyone in the field plus +30% Weapon and Skill Damage. Combo sets change its job: Support Pattern lets it follow a group member, Hazardous Area makes it damage enemies inside its radius. It scales with Engineering, and at full build it produces uptime numbers that make PvP opponents check if there is a bug.'
         }
       ],
       perkOverview: 'Aegis builds prioritize Engineering, which benefits the passive burst mechanic significantly more than Skill Damage. Tampishach\'s 237k DPS Tech Aegis build runs Long-term Effect 4pc with Brains Over Brawn for 53% Skill Crit Chance. Striker Drone is standard for offensive builds. High skill ceiling in PvP per community assessment.',
@@ -104,6 +104,7 @@ export async function getStaticPaths() {
       howToPlay: [
         'Aegis builds: Engineering is your main stat, not Firepower and not Skill Damage. The shield pulse mechanic scales directly off Engineering - misattributing your stats is the #1 mistake new Tech Operators make.',
         'Long-term Effect 4pc + Brains Over Brawn OS Protocol = 53% Skill Crit Chance. This is the proven Aegis combo. Don\'t reinvent the wheel.',
+        'Healing as Aegis: tap a teammate\'s name, then cast Mender Drone or First-Aid Firefly to send it to them, and keep one Mender Drone on yourself. Don\'t recast the Defender Drone while it\'s still up: pressing it again ends it and starts the cooldown (per TikTokAndy, whose four-drone team healer build is in the list below).',
         'Striker Drone needs line-of-sight to keep hitting. In urban map environments, it gets stuck on geometry constantly. Reposition to give your drone clean angles.',
         'Drone Overload timing is crucial - pop it right before you engage, not mid-fight when your skills are on cooldown. The duration is short and every second counts.',
         'In PvP, the Disoriented status from Offensive Operations Striker Drone crits is a death sentence for the enemy. Build for crit chance to ensure consistent procs.'

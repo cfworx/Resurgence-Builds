@@ -5,7 +5,7 @@ subclass: "Tactical Pharma"
 playstyle: DPS
 pve: true
 pvp: true
-lastUpdated: 2026-10-24T12:00:00Z
+lastUpdated: 2026-10-25T12:00:00Z
 patch: "Season 2 · Phase 2"
 verified: false
 tags: ["field-medic", "Tactical Pharma", "build-guide", "Season 2", "jackpot", "Dark Zone"]
@@ -206,7 +206,7 @@ On his solo Legendary attempt, he said getting through it would be his first sol
 
 ### Dark Zone PvP: TikTokAndy's Experience
 
-GGReborn's videos don't cover PvP, so everything here is TikTokAndy's experience and opinion from one Dark Zone session:
+GGReborn's videos don't cover PvP, so everything here is TikTokAndy's experience and opinion, from his October 15 Dark Zone session plus a montage a week later:
 
 - **The setup:** he queued into the crossplay team Dark Zone solo, went rogue, and says roughly two full teams showed up within about 30 seconds.
 - **The damage:** he says the build "will melt real players way faster than it'll melt an NPC," and he says he took out a team from the level below them, a spot he recommends for Tactical Pharma. He rates it "probably the best PvP build other than Bulwark."
@@ -214,6 +214,7 @@ GGReborn's videos don't cover PvP, so everything here is TikTokAndy's experience
 - **Other threats he calls out:** Demolitionist Explosive Seeker Mines, which he says can one-shot you (for context, Season 2 Phase 2 reduced Explosive Seeker Mine's cooldown from 18 to 14 seconds as part of a set of Demolitionist buffs), and Striker Drones, which he rates as manageable because "all you got to do is shoot the striker drone." Vanguard, he says, is "okay sometimes."
 - **The weapon he'd pair with it:** a shotgun that confuses and then stuns or shocks its target. He couldn't remember its name. That description matches Scorpio's Septicemia talent in our database (Confusion at 3 Venom stacks, Shock at 6), but that's our guess, not his.
 - **His overall take:** it works, but it isn't his kind of fun. He calls himself an old-school Division player who likes using his gun, and he has reservations about current PvP balance, including how quickly he thinks a free-to-play player can farm a build like this (a couple of days, by his estimate).
+- **A week later:** his October 22 montage shows him still running it solo against squads in the Dark Zone, and Bulwark players were still the ones giving him the most trouble. Not his kind of fun, apparently, but not uninstalled either.
 
 ---
 
@@ -235,6 +236,7 @@ Going by the official notes, neither Season 2 patch changed Jackpot, Fire Cycle,
 - [GGReborn: How Stats REALLY Work, Testing 3 Builds (YouTube, October 22, 2026)](https://www.youtube.com/watch?v=f1q44KbdS6g)
 - [GGReborn: Which OS Protocol Is BEST? Testing 4 Protocols (YouTube, October 23, 2026)](https://www.youtube.com/watch?v=Kz9YlTUl_1s)
 - [TikTokAndy's October 15, 2026 Tactical Pharma and Dark Zone video (YouTube)](https://www.youtube.com/watch?v=f20v8_cv9Ls)
+- [TikTokAndy: Silence of Death, Toxic Pharma Solo vs. Squads Dark Zone montage (YouTube, October 22, 2026)](https://www.youtube.com/watch?v=lbk6aUoOtds)
 - [Season 2 Phase 1 patch notes (The Division Wiki mirror of the official developer post)](https://thedivision.fandom.com/wiki/Season_2_Phase_1_-_Patch_Notes)
 - [Ubisoft Help Center: Patch Note, Season 2 Phase 2](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2566-patch-note---season-2-phase-2/)
 - [Ubisoft Help Center: Drop rates](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2522-drop-rates/)

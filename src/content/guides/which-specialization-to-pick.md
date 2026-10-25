@@ -161,6 +161,7 @@ When it works, however, nobody looks cooler.
 - [The Double Agent Glass Cannon Tech Op](/builds/aegis-chad-glass-cannon-tech-operator-build-ifozzy/) - LtFoe's two-setup Aegis Burst build (check it against the Season 1 Phase 3 Aegis Burst fix)
 - [Jackpot Striker Drone Tech Op](/builds/jackpot-striker-drone-tech-operator-build/) - Offensive Ops drone crit explosions
 - [Tech Aegis Build](/builds/tech-aegis-engineering-build-tampishach/) - Tampishach's skill crit Aegis build
+- [Aegis Team Healer](/builds/aegis-team-healer-tech-operator-build-tiktokandy/) - TikTokAndy's four-drone PvE healer for teams that bring the damage
 
 ---
 

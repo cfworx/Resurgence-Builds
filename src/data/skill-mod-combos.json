@@ -480,7 +480,7 @@
     "name": "Ammo Refill",
     "specialization": "Vanguard",
     "bonus2": "Reload Speed+[4.0%~8.0%]",
-    "bonus3": "Every shot during the first 6 seconds of Tactical Link grants 18% chance of recovering 4 ammo. Duration resets at each kill. (Season 2 Phase 1: trigger chance cut to 18% and ammo returned raised from 1 to 4. Ubisoft lists the old chance as 72%; our old listing said 29%, so the exact chance may vary by mod rarity.)"
+    "bonus3": "Every shot during the first 6 seconds of Tactical Link grants 18% chance of recovering 4 ammo. Duration resets at each kill. (Season 2 Phase 1: trigger chance cut to 18% and ammo returned raised from 1 to 4. Ubisoft lists the old chance as 72%; our old listing said 29%, so the exact chance may vary by mod rarity. TikTokAndy's set, which he says isn't maxed, read 7% in late September: a quarter of our old 29%, which fits that.)"
   },
   {
     "id": "smc-70",
