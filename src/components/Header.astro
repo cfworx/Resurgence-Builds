@@ -78,7 +78,7 @@ const navItems = [
       ))}
     </nav>
 
-    <div style="display: flex; align-items: center; gap: var(--sp-2);">
+    <div class="site-header__actions">
       <button class="search-btn" onclick="window.openSearch && window.openSearch()" aria-label="Search">
         <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <circle cx="11" cy="11" r="8"></circle>
@@ -88,15 +88,19 @@ const navItems = [
       <button
         class="hamburger"
         id="hamburger-btn"
-        aria-label="Open menu"
         aria-expanded="false"
         aria-controls="mobile-nav"
       >
-        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <svg class="hamburger__open" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <line x1="3" y1="6" x2="21" y2="6"/>
           <line x1="3" y1="12" x2="21" y2="12"/>
           <line x1="3" y1="18" x2="21" y2="18"/>
         </svg>
+        <svg class="hamburger__close" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="5" y1="5" x2="19" y2="19"/>
+          <line x1="19" y1="5" x2="5" y2="19"/>
+        </svg>
+        <span class="hamburger__label">Menu</span>
       </button>
     </div>
   </div>
@@ -140,6 +144,12 @@ const navItems = [
 <SearchModal />
 
 <style>
+  .site-header__actions {
+    display: flex;
+    align-items: center;
+    gap: var(--sp-1);
+    margin-right: calc(-1 * var(--sp-2)); /* the buttons' own padding lines the icons up with the gutter */
+  }
   .search-btn {
     background: transparent;
     border: none;
@@ -148,7 +158,10 @@ const navItems = [
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: var(--sp-1);
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    border-radius: var(--border-radius);
     transition: color 0.2s;
   }
   .search-btn:hover {
@@ -160,12 +173,24 @@ const navItems = [
   const btn = document.getElementById('hamburger-btn');
   const nav = document.getElementById('mobile-nav');
   if (btn && nav) {
-    btn.addEventListener('click', () => {
-      const isOpen = nav.classList.toggle('is-open');
-      btn.setAttribute('aria-expanded', String(isOpen));
-      btn.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
-      nav.setAttribute('aria-hidden', String(!isOpen));
+    const label = btn.querySelector('.hamburger__label');
+    const setOpen = (open: boolean) => {
+      nav.classList.toggle('is-open', open);
+      btn.setAttribute('aria-expanded', String(open));
+      if (label) label.textContent = open ? 'Close' : 'Menu';
+      nav.setAttribute('aria-hidden', String(!open));
+      // the page behind the full-screen menu shouldn't scroll
+      document.documentElement.classList.toggle('mobile-nav-open', open);
+    };
+    btn.addEventListener('click', () => setOpen(!nav.classList.contains('is-open')));
+    // Escape closes the menu and puts focus back on its button
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && nav.classList.contains('is-open')) { setOpen(false); btn.focus(); }
     });
+    // following a link (including #anchors on the same page) closes it
+    nav.addEventListener('click', (e) => { if ((e.target as HTMLElement).closest('a')) setOpen(false); });
+    // and so does growing the window to the desktop layout
+    window.matchMedia('(min-width: 68.75em)').addEventListener('change', (m) => { if (m.matches) setOpen(false); });
   }
 
   // Desktop dropdown keyboard support

@@ -47,7 +47,7 @@ const faqs = [
 
   {exoticWeapons && exoticWeapons.length > 0 && (
     <div class="weapon-category" data-category="exotic" style="margin-bottom: var(--sp-10);">
-      <h2 style="font-family: var(--font-heading); font-size: var(--text-2xl); font-weight: 800; color: #ff5100; margin-bottom: var(--sp-6);">Exotics</h2>
+      <h2 style="font-family: var(--font-heading); font-size: var(--text-2xl); font-weight: 800; color: #ff5100; margin-bottom: var(--sp-4);">Exotics</h2>
       <div class="db-grid">
         {exoticWeapons.map((w: any) => (
             <article class="db-card exotic-card">
@@ -61,7 +61,7 @@ const faqs = [
                 <div>
                   <h2 class="db-card__title" style="color: #ff5100;">{w.name}</h2>
                   <div style="display:flex;gap:var(--sp-2);flex-wrap:wrap;margin-top:var(--sp-2);">
-                    <span class="weapon-type tag" style="background: rgba(255,81,0,0.1); border: 1px solid rgba(255,81,0,0.3); color: #ff5100; padding: 2px 8px; border-radius: 4px; font-size: 10px; font-weight: 800; text-transform: uppercase;">{w.type}</span>
+                    <span class="weapon-type tag" style="background: rgba(255,81,0,0.1); border: 1px solid rgba(255,81,0,0.3); color: #ff5100; padding: 2px 8px; border-radius: 4px; font-size: var(--step--2); font-weight: 800; text-transform: uppercase;">{w.type}</span>
                   </div>
                 </div>
               </div>
@@ -93,7 +93,7 @@ const faqs = [
   )}
 
   {types.map((type: string) => (
-    <div class="weapon-category" data-category={type.toLowerCase()} style="margin-bottom: var(--sp-8);">
+    <div class="weapon-category" data-category={type.toLowerCase()} style="margin-bottom: var(--sp-10);">
       <h2 style="font-family: var(--font-heading); font-size: var(--text-xl); font-weight: 800; color: var(--accent); margin-bottom: var(--sp-4);">{type}s</h2>
       <div class="db-grid">
         {standardWeapons.filter((w: any) => w.type === type).map((w: any) => (
@@ -108,7 +108,7 @@ const faqs = [
                 <div>
                   <h2 class="db-card__title" style="color: #fff;">{w.name}</h2>
                   <div style="display:flex;gap:var(--sp-2);flex-wrap:wrap;margin-top:var(--sp-2);">
-                    <span class="weapon-type tag" style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); color: #fff; padding: 2px 8px; border-radius: 4px; font-size: 10px; font-weight: 800; text-transform: uppercase;">{w.type}</span>
+                    <span class="weapon-type tag" style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); color: #fff; padding: 2px 8px; border-radius: 4px; font-size: var(--step--2); font-weight: 800; text-transform: uppercase;">{w.type}</span>
                   </div>
                 </div>
               </div>
@@ -124,11 +124,11 @@ const faqs = [
                 />
                 <div style="margin-top: var(--sp-2); padding-top: var(--sp-2); border-top: 1px solid rgba(255,255,255,0.05); display: flex; flex-direction: column; gap: var(--sp-2);">
                   <div>
-                    <div style="font-size: 9px; font-weight: 800; color: var(--accent); text-transform: uppercase; margin-bottom: 4px; letter-spacing: 0.05em;">Talent 1</div>
+                    <div style="font-size: var(--step--2); font-weight: 800; color: var(--accent); text-transform: uppercase; margin-bottom: 4px; letter-spacing: 0.05em;">Talent 1</div>
                     <WeaponTalentsGrid talentNames={w.talent1 || []} isCard={true} />
                   </div>
                   <div>
-                    <div style="font-size: 9px; font-weight: 800; color: var(--accent); text-transform: uppercase; margin-bottom: 4px; letter-spacing: 0.05em;">Talent 2</div>
+                    <div style="font-size: var(--step--2); font-weight: 800; color: var(--accent); text-transform: uppercase; margin-bottom: 4px; letter-spacing: 0.05em;">Talent 2</div>
                     <WeaponTalentsGrid talentNames={w.talent2 || []} isCard={true} />
                   </div>
                 </div>

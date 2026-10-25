@@ -220,7 +220,7 @@ const itemListLd = {
     background: rgba(242,104,34,0.08);
   }
   .attr-pool {
-    margin-bottom: var(--sp-10);
+    margin-bottom: var(--sp-12);
   }
   .attr-pool__title {
     font-family: var(--font-heading);
@@ -229,7 +229,6 @@ const itemListLd = {
     margin: 0 0 var(--sp-5) 0;
     padding-bottom: var(--sp-2);
     border-bottom: 2px solid;
-    scroll-margin-top: 90px;
   }
   .attr-pool__count {
     font-family: var(--font-mono);
@@ -239,13 +238,12 @@ const itemListLd = {
     margin-left: var(--sp-2);
   }
   .attr-entry {
-    max-width: 76ch;
+    max-width: calc(var(--measure) + 2 * var(--sp-5));
     margin-bottom: var(--sp-6);
     padding: var(--sp-5);
     background: rgba(0,0,0,0.2);
     border: 1px solid rgba(255,255,255,0.06);
     border-radius: 8px;
-    scroll-margin-top: 90px;
   }
   .attr-entry:target {
     border-color: var(--accent);
@@ -269,7 +267,7 @@ const itemListLd = {
   .attr-entry__anchor:hover { color: var(--accent); }
   .attr-entry__badge {
     font-family: var(--font-mono);
-    font-size: 10px;
+    font-size: var(--step--2);
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.06em;

@@ -179,8 +179,9 @@ const authorSchema = {
 
     {posts.length > 0 ? (
       <div class="grid grid--3">
-        {posts.map((post) => (
+        {posts.map((post, i) => (
           <PostCard
+            eager={i < 3}
             title={post.title}
             href={post.href}
             date={post.date}

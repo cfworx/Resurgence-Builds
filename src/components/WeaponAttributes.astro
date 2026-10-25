@@ -91,11 +91,12 @@ const attributes = [
     gap: var(--sp-3);
   }
 
+  /* label | bar | value: the value column sizes to its text ("2.98s" no longer spills out of a fixed 40px) */
   .wa-row {
     display: grid;
-    grid-template-columns: 140px 1fr 40px;
+    grid-template-columns: minmax(7rem, 9rem) minmax(0, 1fr) minmax(3.5rem, auto);
     align-items: center;
-    gap: var(--sp-4);
+    gap: var(--sp-3);
   }
 
   .wa-label {
@@ -139,5 +140,6 @@ const attributes = [
     font-size: var(--text-base);
     color: #ff851b; /* Orange color from screenshot */
     text-align: right;
+    white-space: nowrap;
   }
 </style>

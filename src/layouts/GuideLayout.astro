@@ -113,10 +113,11 @@ const howToLd = howTo ? {
     <h1 class="heading-accent">{title}</h1>
 
     <div class="article-meta">
-          <a href={`/tag/${category.toLowerCase().replace(/\s+/g, '-')}/`} class="tag">{category}</a>
-      <span>By <a href={getAuthorUrl(author)} style="color: var(--accent); text-decoration: none;">{author}</a></span>
-      <span>·</span>
-      <time datetime={lastUpdated.toISOString()}><strong>Last updated:</strong> {formattedDate}</time>
+      <a href={`/tag/${category.toLowerCase().replace(/\s+/g, '-')}/`} class="tag">{category}</a>
+      <div class="meta-line-wrap"><div class="meta-line">
+        <span>By <a href={getAuthorUrl(author)} style="color: var(--accent); text-decoration: none;">{author}</a></span>
+        <time datetime={lastUpdated.toISOString()}><strong>Last updated:</strong> {formattedDate}</time>
+      </div></div>
     </div>
 
     {featuredImage && (
@@ -143,14 +144,19 @@ const howToLd = howTo ? {
     )}
 
     {tocItems.length > 0 && (
-      <nav class="toc" aria-label="Table of contents">
-        <p class="toc__title">Contents</p>
-        {tocItems.map(h => (
-          <a href={`#${h.slug}`} style={`padding-left:${(h.depth - 2) * 1}rem;`}>
-            {h.text}
-          </a>
-        ))}
-      </nav>
+      <>
+        <details class="toc" data-toc>
+          <summary><span class="toc__title">Contents</span></summary>
+          <nav aria-label="Table of contents">
+            {tocItems.map(h => (
+              <a href={`#${h.slug}`} style={`padding-left:${(h.depth - 2) * 1}rem;`}>
+                {h.text}
+              </a>
+            ))}
+          </nav>
+        </details>
+        <script is:inline>document.querySelectorAll("details[data-toc]").forEach(function (d) { if (window.matchMedia("(min-width: 45em)").matches) d.open = true; });</script>
+      </>
     )}
 
     <article class="prose content-width">
@@ -236,37 +242,5 @@ const howToLd = howTo ? {
     object-fit: contain;
   }
 
-  /* --- FAQ Dropdowns --- */
-  .faq-list { margin: var(--sp-4) 0 }
-  .faq-item {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 6px;
-    margin-bottom: var(--sp-2);
-    overflow: hidden;
-    transition: border-color 200ms ease;
-  }
-  .faq-item:hover { border-color: rgba(242,104,34,0.3) }
-  .faq-item[open] { border-color: var(--accent) }
-  .faq-question {
-    padding: var(--sp-3) var(--sp-4);
-    font-family: var(--font-heading);
-    font-weight: 700;
-    font-size: var(--text-sm);
-    cursor: pointer;
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    min-height: 48px;
-  }
-  .faq-question::-webkit-details-marker { display: none }
-  .faq-question::after { content: '＋'; font-size: var(--text-lg); color: var(--accent); transition: transform .2s }
-  .faq-item[open] .faq-question::after { content: '－' }
-  .faq-answer {
-    padding: 0 var(--sp-4) var(--sp-4);
-    font-size: var(--text-sm);
-    color: var(--ink-muted);
-    line-height: 1.6;
-  }
+  /* FAQ styles live in global.css */
 </style>

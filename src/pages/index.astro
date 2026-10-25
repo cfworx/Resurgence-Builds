@@ -149,7 +149,7 @@ const itemListLd = {
           Division Resurgence Builds, Guides <span style="color:var(--accent);">&amp;</span> Patch Notes
           <span class="hero__subtitle">The #1 Independent Source for The Division Resurgence</span>
         </h1>
-        <p style="color: var(--ink-muted); font-size: 1.1rem; line-height: 1.6; max-width: 600px; margin: 0 auto var(--sp-6);">
+        <p class="hero__lede">
           We love The Division Resurgence and do our best to put out the best builds, guides, and news on the internet. We actually play the game and do our best to make sure all of our content is accurate and useful. Bookmark our page, we are always improving and we want to be your source of all things The Division Resurgence.
         </p>
         <div class="hero__actions">
@@ -199,10 +199,10 @@ const itemListLd = {
           </p>
 
           <!-- Tag Filter Bar -->
-          <div class="filter-bar" id="tag-filters" style="margin-bottom: 0;">
-            <button class="filter-btn is-active" data-tag="all">All</button>
+          <div class="filter-bar filter-bar--grid" id="tag-filters" style="margin-bottom: 0;" role="group" aria-label="Filter posts">
+            <button class="filter-btn is-active" data-tag="all" aria-pressed="true">All</button>
             {filterTags.map((tag) => (
-              <button class="filter-btn" data-tag={tag.value}>{tag.label}</button>
+              <button class="filter-btn" data-tag={tag.value} aria-pressed="false">{tag.label}</button>
             ))}
           </div>
         </div>
@@ -210,8 +210,9 @@ const itemListLd = {
 
       <!-- Posts Grid -->
       <div class="grid grid--3" id="posts-grid">
-        {posts.map((post) => (
+        {posts.map((post, i) => (
           <PostCard
+            eager={i < 3}
             title={post.title}
             href={post.href}
             date={post.date}
@@ -324,8 +325,9 @@ const itemListLd = {
   }
 
   function setActiveButton(activeBtn: Element) {
-    filterBar?.querySelectorAll('.filter-btn').forEach((b) => b.classList.remove('is-active'));
+    filterBar?.querySelectorAll('.filter-btn').forEach((b) => { b.classList.remove('is-active'); b.setAttribute('aria-pressed', 'false'); });
     activeBtn.classList.add('is-active');
+    activeBtn.setAttribute('aria-pressed', 'true');
   }
 
   if (filterBar) {

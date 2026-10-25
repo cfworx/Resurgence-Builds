@@ -47,7 +47,7 @@ const itemListLd = {
     </div>
 
     <div class="grid grid--3" id="guides-grid">
-      {sorted.map((guide) => (
+      {sorted.map((guide, i) => (
         <div 
           style="display: flex; height: 100%;"
           data-category={guide.data.category} 
@@ -62,6 +62,7 @@ const itemListLd = {
             tags={guide.data.tags}
             featuredImage={guide.data.featuredImage}
             imageAlt={guide.data.imageAlt}
+            eager={i < 3}
           />
         </div>
       ))}

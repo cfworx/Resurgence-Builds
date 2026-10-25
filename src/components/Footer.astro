@@ -15,9 +15,9 @@ const isHome = Astro.url.pathname === '/' || Astro.url.pathname === '/index.html
   <div class="footer-inner">
     <div class="footer-left">
       <a href="/" class="footer-logo">Resurgence<span>Builds</span></a>
-      <span class="footer-sep">&middot;</span>
+      <span class="footer-sep" aria-hidden="true">&middot;</span>
       <span class="footer-copy">&copy; {year}</span>
-      <span class="footer-sep">&middot;</span>
+      <span class="footer-sep" aria-hidden="true">&middot;</span>
       <span class="footer-copy">CC BY-SA 4.0</span>
     </div>
     <nav class="footer-nav" aria-label="Footer navigation">
@@ -28,20 +28,19 @@ const isHome = Astro.url.pathname === '/' || Astro.url.pathname === '/index.html
       <a href="/dmca/">DMCA</a>
       <a href="/sitemap/">Sitemap</a>
       <a href="/rss.xml">RSS</a>
-      <a href="https://x.com/ResurgenceBuild" target="_blank" rel="noopener noreferrer">X / Twitter</a>
-      <a href="https://www.youtube.com/@ResurgenceBuilds" target="_blank" rel="noopener noreferrer">YouTube</a>
-      <a href="https://www.reddit.com/user/ResurgenceBuilds/" target="_blank" rel="noopener noreferrer">Reddit</a>
     </nav>
   </div>
 
   <SocialBar pathname={Astro.url.pathname} />
 
-  <p class="footer-disclaimer" style="margin-top: 1rem; color: var(--ink-muted); font-size: 0.85rem; line-height: 1.5;">
-    Resurgence Builds covers The Division Resurgence, <a href="https://www.ubisoft.com/en-us/game/the-division/resurgence" target="_blank" rel="noopener noreferrer" style="color: #F59A63; text-decoration: none;">Ubisoft's</a> free-to-play RPG shooter on PC, iOS, and Android. We write build guides, gear set breakdowns, weapon tier lists, class guides, and patch notes for people who actually want to understand why their build works (or doesn't). PvE, Dark Zone PvP, Conflict, Legendary missions, exotic weapons, gear sets, SHD agents, OS Protocols, the Cleaners, the Rikers, the Freemen, solo builds, team builds, meme builds that shouldn't work but somehow do. If it's in the game, we've probably argued about it and then written it up here. Updated every patch because the meta waits for nobody.
-  </p>
-  <p class="footer-disclaimer" style="margin-top: 0.5rem; color: var(--ink-muted); font-size: 0.75rem;">
-    Resurgence Builds is an independent fan site. We are not affiliated with, endorsed by, or sponsored by Ubisoft Entertainment SA. Tom Clancy's The Division, The Division Resurgence, and all related characters, logos, and game assets are trademarks and copyrights of Ubisoft Entertainment SA. Game screenshots and footage are used under fair use for commentary, criticism, and news reporting.
-  </p>
+  <div class="footer-notes">
+    <p class="footer-disclaimer footer-disclaimer--about">
+      Resurgence Builds covers The Division Resurgence, <a href="https://www.ubisoft.com/en-us/game/the-division/resurgence" target="_blank" rel="noopener noreferrer">Ubisoft's</a> free-to-play RPG shooter on PC, iOS, and Android. We write build guides, gear set breakdowns, weapon tier lists, class guides, and patch notes for people who actually want to understand why their build works (or doesn't). PvE, Dark Zone PvP, Conflict, Legendary missions, exotic weapons, gear sets, SHD agents, OS Protocols, the Cleaners, the Rikers, the Freemen, solo builds, team builds, meme builds that shouldn't work but somehow do. If it's in the game, we've probably argued about it and then written it up here. Updated every patch because the meta waits for nobody.
+    </p>
+    <p class="footer-disclaimer footer-disclaimer--legal">
+      Resurgence Builds is an independent fan site. We are not affiliated with, endorsed by, or sponsored by Ubisoft Entertainment SA. Tom Clancy's The Division, The Division Resurgence, and all related characters, logos, and game assets are trademarks and copyrights of Ubisoft Entertainment SA. Game screenshots and footage are used under fair use for commentary, criticism, and news reporting.
+    </p>
+  </div>
 </footer>
 
 <style>
@@ -81,7 +80,7 @@ const isHome = Astro.url.pathname === '/' || Astro.url.pathname === '/index.html
   }
   .footer-logo:hover { color: var(--ink); }
   .footer-logo span { color: var(--accent); }
-  .footer-sep { color: var(--border); }
+  .footer-sep { color: var(--ink-muted); }
   .footer-copy {
     font-size: var(--text-xs);
     color: var(--ink-muted);
@@ -93,7 +92,7 @@ const isHome = Astro.url.pathname === '/' || Astro.url.pathname === '/index.html
     flex-wrap: wrap;
   }
   .footer-nav a {
-    font-size: var(--text-xs);
+    font-size: var(--step--1);
     color: var(--ink-muted);
     transition: color var(--transition-fast);
     padding: var(--sp-2) 0;
@@ -103,17 +102,22 @@ const isHome = Astro.url.pathname === '/' || Astro.url.pathname === '/index.html
   }
   .footer-nav a:hover { color: var(--accent); }
 
-  .footer-disclaimer {
+  /* Left-aligned on the container's edge: long text is hard to read centered */
+  .footer-notes {
     max-width: var(--max-width);
-    margin: var(--sp-3) auto 0;
-    padding: var(--sp-2) var(--sp-4) 0;
+    margin: 0 auto;
+    padding: var(--sp-3) var(--sp-4) 0;
     border-top: 1px solid var(--border);
-    font-size: 0.75rem;
-    color: var(--ink-muted);
-    text-align: center;
-    opacity: 0.7;
   }
   @media (min-width: 768px) {
-    .footer-disclaimer { padding: var(--sp-2) var(--sp-8) 0; }
+    .footer-notes { padding-inline: var(--sp-8); }
   }
+  .footer-disclaimer {
+    color: var(--ink-muted);
+    text-align: left;
+    line-height: var(--lh-small);
+  }
+  .footer-disclaimer--about { font-size: var(--step--1); margin-bottom: var(--sp-2); }
+  .footer-disclaimer--about a { color: var(--accent); text-decoration: none; }
+  .footer-disclaimer--legal { font-size: var(--step--2); margin-bottom: 0; }
 </style>

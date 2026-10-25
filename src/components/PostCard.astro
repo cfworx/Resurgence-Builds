@@ -13,9 +13,11 @@ export interface Props {
   imageAlt?: string;
   /** false = show tags as plain labels (e.g. patch versions that have no tag page) */
   tagLinks?: boolean;
+  /** true for the first cards on a listing, which are on the first screen and shouldn't wait to load */
+  eager?: boolean;
 }
 
-const { title, href, date, author, description, type, tags = [], featuredImage, imageAlt, tagLinks = true } = Astro.props;
+const { title, href, date, author, description, type, tags = [], featuredImage, imageAlt, tagLinks = true, eager = false } = Astro.props;
 
 const formattedDate = date.toLocaleDateString('en-US', { timeZone: 'UTC',
   month: 'short',
@@ -41,7 +43,7 @@ const typeLabel = typeLabels[type] || type;
         <img
           src={featuredImage}
           alt={imageAlt || `Featured image for ${title}`}
-          loading="lazy"
+          loading={eager ? 'eager' : 'lazy'}
           decoding="async"
           width="600"
           height="315"
@@ -129,13 +131,22 @@ const typeLabel = typeLabels[type] || type;
 
   .post-card__tags {
     display: flex;
-    gap: var(--sp-1);
+    gap: var(--sp-2);
     flex-wrap: wrap;
     margin-top: var(--sp-3);
   }
+  /* Above the card's stretched link (z-index 1), or they can't be clicked. Secondary links on a card:
+     32px tall chips with 8px between them (the whole card is the main 44px+ target). */
+  .post-card__tags a,
+  .post-card__tags .tag {
+    position: relative;
+    z-index: 2;
+    min-height: 32px;
+    padding: var(--sp-1) var(--sp-2);
+  }
 
   .post-card__image {
-    margin: calc(-1 * var(--sp-4));
+    margin: calc(-1 * var(--pad-card));
     margin-bottom: 0;
     overflow: hidden;
     border-radius: var(--border-radius) var(--border-radius) 0 0;
@@ -197,6 +208,9 @@ const typeLabel = typeLabels[type] || type;
     text-decoration: none;
     position: relative;
     z-index: 2;
+    display: inline-block;
+    padding-block: 8px;   /* a 33px-tall target without moving the line */
+    margin-block: -8px;
   }
 
   .card__author-link:hover {

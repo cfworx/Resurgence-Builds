@@ -93,15 +93,34 @@ const suppressAds = noAds || noindex || !!robots;
   </main>
 <Footer title={title} />
   <script>
-    // Wrap all prose/content tables in a scrollable div for mobile
+    // Wrap all prose/content tables in a scrollable box for phones, and fade the edge that has more to scroll to
     document.addEventListener('DOMContentLoaded', () => {
+      const boxes: HTMLElement[] = [];
       document.querySelectorAll('.prose table, main table').forEach(table => {
-        if (table.parentElement?.classList.contains('table-scroll')) return;
-        const wrapper = document.createElement('div');
-        wrapper.className = 'table-scroll';
-        table.parentNode?.insertBefore(wrapper, table);
-        wrapper.appendChild(table);
+        let wrapper = table.parentElement as HTMLElement | null;
+        if (!wrapper?.classList.contains('table-scroll')) {
+          wrapper = document.createElement('div');
+          wrapper.className = 'table-scroll';
+          table.parentNode?.insertBefore(wrapper, table);
+          wrapper.appendChild(table);
+        }
+        boxes.push(wrapper);
       });
+      const update = (box: HTMLElement) => {
+        const more = box.scrollWidth - box.clientWidth > 2;
+        box.classList.toggle('is-scrollable', more);
+        box.classList.toggle('is-at-start', box.scrollLeft <= 2);
+        box.classList.toggle('is-at-end', box.scrollLeft + box.clientWidth >= box.scrollWidth - 2);
+        if (more && !box.hasAttribute('tabindex')) {
+          // keyboard users can scroll it too
+          box.setAttribute('tabindex', '0');
+          box.setAttribute('role', 'region');
+          box.setAttribute('aria-label', 'Table, scrolls sideways');
+        }
+      };
+      boxes.forEach(box => { update(box); box.addEventListener('scroll', () => update(box), { passive: true }); });
+      let t: number | undefined;
+      window.addEventListener('resize', () => { clearTimeout(t); t = window.setTimeout(() => boxes.forEach(update), 150); });
     });
   </script>
   <!-- Ad reveal observer: watches for AdSense to fill slots, then shows them -->

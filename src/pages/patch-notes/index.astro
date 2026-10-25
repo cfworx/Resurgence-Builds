@@ -42,8 +42,9 @@ const itemListLd = {
     </div>
 
     <div class="grid grid--3">
-      {sorted.map((pn) => (
+      {sorted.map((pn, i) => (
         <PostCard
+            eager={i < 3}
           title={pn.data.title}
           href={`/patch-notes/${pn.id}/`}
           date={pn.data.patchDate}
