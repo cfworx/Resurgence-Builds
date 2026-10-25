@@ -214,7 +214,7 @@ GGReborn's videos don't cover PvP, so everything here is TikTokAndy's experience
 - **Other threats he calls out:** Demolitionist Explosive Seeker Mines, which he says can one-shot you (for context, Season 2 Phase 2 reduced Explosive Seeker Mine's cooldown from 18 to 14 seconds as part of a set of Demolitionist buffs), and Striker Drones, which he rates as manageable because "all you got to do is shoot the striker drone." Vanguard, he says, is "okay sometimes."
 - **The weapon he'd pair with it:** a shotgun that confuses and then stuns or shocks its target. He couldn't remember its name. That description matches Scorpio's Septicemia talent in our database (Confusion at 3 Venom stacks, Shock at 6), but that's our guess, not his.
 - **His overall take:** it works, but it isn't his kind of fun. He calls himself an old-school Division player who likes using his gun, and he has reservations about current PvP balance, including how quickly he thinks a free-to-play player can farm a build like this (a couple of days, by his estimate).
-- **A week later:** his October 22 montage shows him still running it solo against squads in the Dark Zone, and Bulwark players were still the ones giving him the most trouble. Not his kind of fun, apparently, but not uninstalled either.
+- **A week later:** his October 22 montage shows him still running it solo against squads in the Dark Zone, still grumbling about Bulwarks. For a build he says isn't his kind of fun, he sounds very happy with the quiet once a server is cleared.
 
 ---
 

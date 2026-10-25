@@ -96,7 +96,7 @@ export async function getStaticPaths() {
         {
           focus: 'Aegis Operations',
           name: 'Defender Drone',
-          description: 'Deploys a drone whose field protects every ally inside it. It can follow you or hold a set spot, and on TikTokAndy\'s October tooltip it keeps granting Extra Health to everyone in the field plus +30% Weapon and Skill Damage. Combo sets change its job: Support Pattern lets it follow a group member, Hazardous Area makes it damage enemies inside its radius. It scales with Engineering, and at full build it produces uptime numbers that make PvP opponents check if there is a bug.'
+          description: 'Deploys a drone whose field protects every ally inside it. It can follow you or hold a set spot, and on TikTokAndy\'s October tooltip it keeps granting Extra Health to everyone in the field plus +30% Weapon and Skill Damage. Combo sets change its job: Support Pattern lets it follow a group member, Hazardous Area makes it damage enemies inside its radius. It scales with Engineering, and in TikTokAndy\'s PvE runs a team that keeps killing kept it up for minutes at a time.'
         }
       ],
       perkOverview: 'Aegis builds prioritize Engineering, which benefits the passive burst mechanic significantly more than Skill Damage. Tampishach\'s 237k DPS Tech Aegis build runs Long-term Effect 4pc with Brains Over Brawn for 53% Skill Crit Chance. Striker Drone is standard for offensive builds. High skill ceiling in PvP per community assessment.',
@@ -156,6 +156,8 @@ const breadcrumbItems = [
 const title = `Best ${classData.name} Builds — Division Resurgence`;
 const description = `Top ${classData.name} builds for PvE and PvP in Division Resurgence. ${classData.role} loadouts with gear sets, talents, and OS Protocols. Updated for ${lastVerified}.`;
 
+const verifiedBuilds = builds.filter(b => b.data.verified !== false);
+
 const faqs = [
   {
     question: `Is ${classData.name} good in Division Resurgence?`,
@@ -163,9 +165,12 @@ const faqs = [
   },
   {
     question: `What is the best ${classData.name} build right now?`,
-    answer: builds.length > 0
-      ? `The top-rated ${classData.name} build on Resurgence Builds is ${builds[0].data.title}. ${classData.perkOverview}`
-      : `${classData.name} builds focus on ${classData.role} playstyles. ${classData.perkOverview}`
+    // builds are newest first; name a build we verified before a creator build we haven't re-tested
+    answer: verifiedBuilds.length > 0
+      ? `The newest ${classData.name} build we've verified on Resurgence Builds is ${verifiedBuilds[0].data.title}. ${classData.perkOverview}`
+      : builds.length > 0
+        ? `The newest ${classData.name} build on Resurgence Builds is ${builds[0].data.title}, a creator build we haven't re-tested. ${classData.perkOverview}`
+        : `${classData.name} builds focus on ${classData.role} playstyles. ${classData.perkOverview}`
   },
   {
     question: `What gear sets work best for ${classData.name}?`,
@@ -271,7 +276,7 @@ const boldStars = (t: string) => t
         }
       </p>
       <p style="color: var(--ink-muted); font-size: var(--text-sm); line-height: 1.75; margin: 0;">
-        Every build below was run in-game and verified on the patch shown on its card - no theory-craft copium here. Several balance patches have landed since some of them were written, so check that label before you farm.
+        Our own builds below were run in-game and verified on the patch shown on their card - no theory-craft copium here. Creator builds are documented from the creator's own video, and their pages say we haven't re-tested them. Several balance patches have landed since some of these were written, so check the patch label before you farm.
       </p>
     </div>
 

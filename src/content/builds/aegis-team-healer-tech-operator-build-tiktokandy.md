@@ -12,18 +12,18 @@ tags: ["tech-operator", "Aegis Operations", "healer", "support", "build-guide", 
 description: "TikTokAndy's Aegis Operations team healer: Defender Drone, four Mender Drones, Long-term Effect 4pc + Mechanical Expert 2pc, Recursive Treatment, Brainstorm."
 author: "RapidF5 (via TikTokAndy)"
 shareTitle: "Your DPS player's favorite teammate"
-shareText: "A Defender Drone, four Mender Drones and a Firefly that never seems to be on cooldown. TikTokAndy's Aegis team healer, explained."
+shareText: "A Defender Drone, four Mender Drones that never seem to run out, and heals every few seconds. TikTokAndy's Aegis team healer, explained."
 faqs:
   - question: "Is the Aegis team healer build good in Season 2?"
     answer: "TikTokAndy calls it his personal favorite PvE build right now and says it's 'definitely viable again' now that downed teammates can be revived properly. That lines up with Ubisoft's October 2 patch, which fixed players not being revivable in No Respawn Zones. His video went up on October 10, during Season 2 Phase 2, and he says the build isn't finished: he still needs Electronics Omega Components to complete the talent tree. We haven't re-tested it ourselves."
   - question: "How do you give a Mender Drone to a teammate?"
-    answer: "Tap the teammate's name so it highlights, then press the Mender Drone skill and the drone goes to them. First-Aid Firefly targets the same way. TikTokAndy says the most common mistake he sees from drone players is keeping every drone for themselves, which he says helps nobody. His one exception: always keep at least one Mender Drone on yourself, because a healer who goes down can take the whole team with them."
+    answer: "Tap the teammate's name so it highlights, then press the Mender Drone skill and the drone goes to them. First-Aid Firefly targets the same way. Keeping every drone for yourself is 'a big mistake,' says TikTokAndy, and one he sees from too many drone players: it helps nobody. His one exception: always keep at least one Mender Drone on yourself, because a healer who goes down can take the whole team with them."
   - question: "What gear sets does the Aegis healer build use?"
     answer: "4-piece Long-term Effect plus 2-piece Mechanical Expert. In our database that's Skill Health +12%, Skill Duration +14.4% and Engineering +18% from Long-term Effect, plus Skill Duration +9.6% from Mechanical Expert. TikTokAndy's pieces are all T2 except a T1 body armor, and he says his gear mods still need work."
   - question: "What OS Protocol is best for an Aegis healer?"
     answer: "TikTokAndy runs Recursive Treatment: his copy reads +32% Engineering, and healing or granting Extra Health grants +28% Skill Intensity (our database lists the base talent at +20%). He also makes a case for Strategic Assistance, which trades Engineering for Skill Intensity plus faster skills and signature charge on assists. He'd pass on Last Resort, because he'd rather have Engineering than Toughness on this build."
   - question: "Why does my Defender Drone disappear early?"
-    answer: "Three usual suspects. Explosions destroy drones, so grenades and rockets are the threat (TikTokAndy says regular gunfire from NPCs generally leaves them alone). Pressing the skill again while the Defender Drone is still up ends it and starts the cooldown, which he did by accident mid-fight. And he says the duration sometimes behaves oddly, lasting much longer than the tooltip one fight and dropping early the next, which he suspects is a bug."
+    answer: "Three usual suspects. Explosions destroy drones, so grenades and rockets are the threat (TikTokAndy says NPCs generally don't shoot them). Pressing the skill again while the Defender Drone is still up ends it and starts the cooldown, which he did by accident mid-fight. And he says the duration sometimes behaves oddly, lasting much longer than the tooltip one fight and dropping early the next, which he suspects is a bug."
   - question: "Can I use the Aegis healer build in the Dark Zone?"
     answer: "TikTokAndy calls it a PvE build. In his experience the kill-driven duration extensions that keep the drones up don't work quite the same in the Dark Zone, so he only uses it in PvE."
 videoId: "VHKfmW4BtEk"
@@ -41,7 +41,7 @@ TikTokAndy calls it his personal favorite PvE build and "the perfect complement 
 
 **The build in one breath:**
 
-- **Kit:** Defender Drone (signature), Mender Drone and First-Aid Firefly, with every drone you can field handed to your teammates.
+- **Kit:** Defender Drone (signature), Mender Drone and First-Aid Firefly, with most of your drones handed to your teammates.
 - **Gear:** Long-term Effect 4pc + Mechanical Expert 2pc, Engineering and Toughness main rolls, **Brainstorm** on the backpack.
 - **Combo sets:** **Magnetic Recharge** (Defender Drone), **Combat Enhancer** (Mender Drone), **Reinforced Support** (First-Aid Firefly).
 - **Weapons:** an MP7 with **Enhancement Trade II** and **Adaptation II** to pump Skill Intensity, and a Vector with **Torrential Downpour II** for Engineering.
@@ -78,9 +78,9 @@ He forgot to slot his Tactical Augmentations for the gameplay and only noticed w
 
 Aegis Operations gives the Tech Operator the [Defender Drone](/class/tech-operator/) as its signature, with Mender Drone and First-Aid Firefly as its two skills. What each one does here:
 
-- **Defender Drone (signature):** a field around you, with a 12.5-meter radius on his screen, that keeps giving everyone inside Extra Health ("three bars," as he puts it) and, per his tooltip, +30% Weapon and Skill Damage. It ticks every second. You can leave it at a fixed spot, but he keeps it on himself so it moves with him. His screen shows a 39.55-second cooldown and a 31.5-second duration, but he says it often lasts much longer in practice because your team's kills extend it.
-- **Mender Drone:** follows the ally you target and heals them continuously, or you if nobody is targeted. His tree lets him run four at once.
-- **First-Aid Firefly:** a heal you throw at a targeted ally, or at yourself.
+- **Defender Drone (signature):** a field around you, with a 12.5-meter radius on his screen, that keeps giving everyone inside Extra Health ("three bars," as he puts it) and, per his tooltip, +30% Weapon and Skill Damage. It ticks every second. You can leave it at a fixed spot, but he keeps it on himself so it moves with him. His screen shows a 39.55-second cooldown and a 31.5-second duration, but he says it often lasts much longer in practice. He thinks your team's kills are what extend it, though he admits he doesn't know exactly how.
+- **Mender Drone:** goes to the ally you target and keeps healing them. A specialization overview we checked says it heals you when nobody is targeted; TikTokAndy keeps one on himself either way. His tree lets him run four at once.
+- **First-Aid Firefly:** a heal you send to a targeted ally (the same overview says it heals you when there's no target).
 
 Two more things on the screen that matter:
 
@@ -154,10 +154,10 @@ He says those set bonuses aren't included in the attribute numbers on his stat s
 |---|---|---|
 | **Enhancement Trade** | +6% Skill Intensity for each 20% of the magazine emptied, for 8 seconds, up to 4 stacks; 1-second cooldown | II: +8.4% per stack |
 | **Adaptation** | Body shots +4.80% Skill Duration, headshots +6% Skill Intensity, each for 8 seconds | II: +6.2% and +8.4%. He has seen three Adaptation stacks active at once and isn't sure how. |
-| **Torrential Downpour** | 10 hits within 5 seconds grant +22.50% Engineering for 12 seconds | II: +31% |
+| **Torrential Downpour** | 10 hits within 5 seconds grant +22.50% Engineering for 12 seconds | II: he reads +31% here (the II value is +31.50% on our other builds) |
 | **Last Stand** | Hits behind cover grant +24% Skill Duration for 10 seconds | Same 24% |
 
-**His MP7 trick:** he empties the magazine down to about 15 rounds, then fires single shots inside the last 20% of the magazine to build Enhancement Trade stacks, and says it sends his Skill Intensity "through the roof." Our database's tooltip ties stacks to each 20% of the magazine you empty, so we can't promise single shots beat steady fire. "Prepping my gun," as he calls it, means building Adaptation and Enhancement Trade stacks first, then casting every skill while they're active.
+**His MP7 trick:** he empties the magazine down to about 15 rounds, then fires single shots inside the last 20% of the magazine to build Enhancement Trade stacks, and says it "jacks up the skill intensity" by a lot. Our database's tooltip ties stacks to each 20% of the magazine you empty, so we can't promise single shots beat steady fire. "Prepping my gun," as he calls it, means building Adaptation and Enhancement Trade stacks first, then casting every skill while they're active.
 
 **The duration test:** he timed a Mender Drone on camera. Cast cold, it lasted 44 seconds. Cast after prepping the MP7 and picking up a couple of kills, it was still going past a minute, roughly double by his count. That was with Brainstorm only half active, because no ally was within 20 meters.
 
@@ -178,13 +178,13 @@ Talent text is from our [OS Protocol database](/database/os-protocols/); the opi
 ## How to Play It
 
 1. **Hand out the drones.** Tap a teammate's name, then press the skill. Give your DPS players the Mender Drones and keep at least one on yourself.
-2. **Prep, then cast.** Build Adaptation and Enhancement Trade stacks with the MP7 (and Torrential Downpour with the Vector) before a fight, then cast while the bonuses are up.
-3. **Stay 15 to 20 meters back.** Close enough to keep an eye on everyone's Health, never in front of your DPS player's shots. With two teammates, stand in the middle so both stay inside the field.
+2. **Prep, then cast.** Build Adaptation and Enhancement Trade stacks with the MP7 before a fight, then cast while the bonuses are up.
+3. **Hang back, but keep your team in the field.** He sits 15 to 20 meters behind his DPS player, close enough to watch everyone's Health and never in front of their shots. When the Defender Drone is up, remember its radius is about 12.5 meters on his screen; with two teammates he stands in the middle so both stay inside it.
 4. **Keep enemies out of your Aegis field.** Fight in open space at mid to long range. He calls corners the worst place for this build.
 5. **Don't recast the Defender Drone early.** Pressing it again ends the active one and starts the cooldown. Wait until it has actually expired.
 6. **Save the Defender Drone for the fights that need it.** If your DPS has a room handled, keep it for the next one. When your team is killing a lot, he has seen it last around five minutes.
-7. **Watch for explosives.** Grenades and rockets kill drones. Gunfire from NPCs, he says, generally doesn't.
-8. **Pick the field for boss fights.** On Precious Cargo's final boss he prefers fighting from the bridge you start on, rather than the corner many teams pick, where enemies crowd into your Aegis field and explosives take out the Defender Drone. He says he's never died on the bridge. (That's healer logic. His solo [Double Barrel run](/builds/misdirection-double-barrel-commando-build-tiktokandy/) fought that ending up close instead, because a shotgun wants the enemies near.)
+7. **Watch for explosives.** Grenades and rockets kill drones. NPCs, he says, generally don't shoot them.
+8. **Pick your spot for boss fights.** On Precious Cargo's final boss he prefers the bridge you start on to the corner many teams pick, where enemies crowd into your Aegis field and the boss's explosives take out the Defender Drone. He says he's never died on the bridge. Heads up: his solo [Double Barrel video](/builds/misdirection-double-barrel-commando-build-tiktokandy/) gives the opposite advice for that ending (stay off the bridge, fight from a nook on the right), so his two videos disagree. Our guess is that it depends on the build: a healer wants open space, a shotgun wants enemies close.
 
 **Team composition:** it's better with a full team of four, and better still if everyone else does serious damage. His examples: two Vanguards with a Tactical Pharma or a Bulwark. He also played it as a duo with a Double Barrel player at 30,000 Power Score, which is about the best-case scenario. For the gun side of that pairing, see our [Misdirection Double Barrel Commando build](/builds/misdirection-double-barrel-commando-build-tiktokandy/). If you'd rather heal off Toughness than Engineering, the Field Medic's [Muscular Nurse](/builds/muscular-nurse-combat-medicine-build-nadie/) is the other healer on the site, and our [Tech Aegis build](/builds/tech-aegis-engineering-build-tampishach/) is the Aegis Operations take for players who want the drones to hit things.
 
@@ -193,6 +193,7 @@ Talent text is from our [OS Protocol database](/database/os-protocols/); the opi
 ## Sources
 
 - [TikTokAndy: Most Overpowered Team Healer Build - Striker - Aegis | Division Resurgence (YouTube, October 10, 2026)](https://www.youtube.com/watch?v=VHKfmW4BtEk)
+- [inkl: All specializations and specialization focuses in The Division Resurgence](https://www.inkl.com/news/all-specializations-and-specialization-focuses-in-the-division-resurgence) (what each Aegis Operations skill does)
 - [Ubisoft Help Center: Drop rates](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2522-drop-rates/) (lists Electronics Omega Components)
 - [Our coverage of the October 2 revive fix](/news/revive-bug-no-respawn-zones-fixed/)
 - [Our Season 1 Phase 3 patch notes](/patch-notes/season-1-phase-3-a-new-fire/) (the Focused Defense cooldown fix)
