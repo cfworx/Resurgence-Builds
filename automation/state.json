@@ -1,7 +1,7 @@
 {
   "_readme": "Memory for the daily content run. See AUTOMATION.md. Add every source item you evaluate (published or not) so the next run skips it. Dates are UTC.",
-  "lastRun": "2026-10-24",
-  "lastRunSummary": "Initial state written during the October 2026 site revamp. Everything below was already covered on the site.",
+  "lastRun": "2026-10-25",
+  "lastRunSummary": "2026-10-25 daily run: no new post. Nothing new in any official source readable today (Help Center patch notes unchanged at 7 articles; drop rates 'Last Updated: 45d', unchanged; official site banner still Season 2: The Call; no new @TheDivMobile post found by search; no new news.ubisoft.com article). Steam News API (robots) and the JS-rendered Steam news page, Ubisoft news page and bug reporter could not be read by the agent's fetch tool; X blocked (robots). All YouTube RSS feeds blocked (robots_disallowed). IDC Games returned a client error twice. Numbers unchanged from the 2026-10-25 baseline.",
   "season": {
     "current": "Season 2 Phase 2",
     "liveSince": "2026-09-16",
@@ -23,7 +23,11 @@
       "2026-08-05 The Division Resurgence Is Now Available on Steam",
       "2026-06-05 PC Gamer: Ubisoft's free-to-play Division shooter is coming to Steam",
       "2026-06-05 Wishlist Available Now!"
-    ]
+    ],
+    "lastChecked": "2026-10-25",
+    "status": "unreachable",
+    "failStreak": 1,
+    "note": "Steam News API is robots_disallowed for WebFetch and the news hub renders with JS, so neither can be read; WebSearch showed nothing newer than state."
   },
   "helpCenterPatchNotes": {
     "section": "https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/section/539-patch-notes/",
@@ -36,7 +40,8 @@
       2508,
       2494
     ],
-    "note": "Season 2 Phase 1 notes were never posted here (Reddit only, mirrored on The Division Wiki). October 2026 hotfix notes were posted on the official subreddit only."
+    "note": "Season 2 Phase 1 notes were never posted here (Reddit only, mirrored on The Division Wiki). October 2026 hotfix notes were posted on the official subreddit only.",
+    "lastChecked": "2026-10-25"
   },
   "subredditPatchPosts": {
     "note": "Only knowable from owner-provided Reddit exports. Seen so far:",
@@ -55,7 +60,11 @@
       "wE8oLT7RqyLCfnCJomXij",
       "5LqRsprrdgtEnUmStmBi0d",
       "3ygDDXxg6dv6aQD5MJvbKv"
-    ]
+    ],
+    "lastChecked": "2026-10-25",
+    "status": "unreachable",
+    "failStreak": 1,
+    "note": "Page needs JavaScript; WebFetch sees an empty NEWS list."
   },
   "newsUbisoftCom": {
     "seenIds": [
@@ -63,7 +72,8 @@
       "7MMMG14zd82UNs7zcmOv6t",
       "48gDtCz7vtOCbF5JwskUPc",
       "9ZzMWcx5ADnaxAiOO3e0w"
-    ]
+    ],
+    "lastChecked": "2026-10-25"
   },
   "x": {
     "account": "TheDivMobile",
@@ -75,7 +85,10 @@
       "2112212178132447234 We have a letter for you! (2026-10-19)",
       "2111487408558444785 Liberty & Justice for All reminder (2026-10-17)",
       "2111125021636669911 Milky Way Weapon Cosmetic now available (2026-10-16)"
-    ]
+    ],
+    "lastChecked": "2026-10-25",
+    "status": "blocked",
+    "note": "Direct fetch robots_disallowed; WebSearch fallback found nothing newer than 2113661727141495079."
   },
   "bugReporter": {
     "url": "https://www.ubisoft.com/en-us/game/the-division/the-division-resurgence/bug-reporter/issues",
@@ -98,13 +111,18 @@
       "TDR-537": "Planned (2026-10-23)",
       "TDR-556": "Done (2026-10-02)",
       "TDR-652": "unknown (community suggestion: recalibrate one attribute on mods)"
-    }
+    },
+    "lastChecked": "2026-10-25",
+    "status": "unreachable",
+    "failStreak": 1,
+    "note": "Page needs JavaScript; no issue list visible to WebFetch."
   },
   "dropRates": {
     "url": "https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2522-drop-rates/",
-    "checked": "2026-10-24",
+    "checked": "2026-10-25",
     "sourceUpdatedApprox": "2026-09-09",
-    "dataFile": "src/data/drop-rates.json"
+    "dataFile": "src/data/drop-rates.json",
+    "lastUpdatedLabel": "45d (2026-10-25), consistent with ~2026-09-09"
   },
   "codesGuide": {
     "file": "src/content/guides/division-resurgence-codes.md",
@@ -161,19 +179,19 @@
   "sources": {
     "steam-reviews": {
       "lastChecked": "2026-10-25",
-      "lastSeen": "2026-10-25: Mixed. 64% of 215 recent and 47% of 1,403 all-time (English reviews)",
+      "lastSeen": "2026-10-25: Mixed. 64% of 215 recent (30 days) and 47% of 1,403 all-time English reviews; appreviews JSON endpoint redirected to the store homepage, store page used",
       "status": "ok",
       "failStreak": 0
     },
     "apkmirror": {
       "lastChecked": "2026-10-25",
-      "lastSeen": "v1.66724.0 (2026-10-06)",
+      "lastSeen": "v1.66724.0 (2026-10-06), no newer build",
       "status": "ok",
       "failStreak": 0
     },
     "steamdb": {
       "lastChecked": "2026-10-25",
-      "lastSeen": "Last record update 2026-10-22",
+      "lastSeen": "Last record update 2026-10-22 07:42 UTC (change 40118417); 24h peak 476; build list did not render",
       "status": "ok",
       "failStreak": 0
     },
@@ -191,25 +209,25 @@
     },
     "steam-discussions": {
       "lastChecked": "2026-10-25",
-      "lastSeen": "2026-10-25: threads up to 2026-10-24 (e.g. 'Credits shortage', 'Halloween event', 'pve only dz')",
+      "lastSeen": "2026-10-25: newest thread activity 'Credits shortage' (~2026-10-24); no developer replies or new announcements",
       "status": "ok",
       "failStreak": 0
     },
     "reddit": {
       "lastChecked": "2026-10-25",
-      "lastSeen": "Latest official post known: 2026-10-21 'Mitigation Update for Season 2 Phase 2' (u/Ticksyy)",
+      "lastSeen": "No new official post found by search; latest known 2026-10-21 Mitigation Update (u/Ticksyy)",
       "status": "ok",
       "failStreak": 0
     },
     "twitch-category": {
       "lastChecked": "2026-10-25",
-      "lastSeen": "No Twitch Drops since the August 5-23 campaign",
+      "lastSeen": "Category page renders without live data; no Drops mentioned",
       "status": "ok",
       "failStreak": 0
     },
     "streamscharts": {
       "lastChecked": "2026-10-25",
-      "lastSeen": "Not yet checked by the daily run",
+      "lastSeen": "30 days to 2026-10-25: top rikgamer (Kick) 1,742 h watched / 7h airtime; virulentwaif 241; utgkieros89 121; gg2002pt 67; ishowguy 46; lilyvonwolf 41",
       "status": "ok",
       "failStreak": 0
     },
@@ -228,30 +246,30 @@
     "idc-games": {
       "lastChecked": "2026-10-25",
       "lastSeen": "2026-09-17 Season 2 Phase 2 Goes Live With the Free Diamondback Exotic Rifle",
-      "status": "ok",
-      "failStreak": 0
+      "status": "unreachable",
+      "failStreak": 1
     },
     "jeu-video": {
       "lastChecked": "2026-10-25",
-      "lastSeen": "2026-09-18 The Division Resurgence: Belohnungen Phase 2 verfügbar",
+      "lastSeen": "2026-09-18 Season 2 Phase 2 mit 50 Pass-Stufen verfügbar (nothing newer)",
       "status": "ok",
       "failStreak": 0
     },
     "axyo": {
       "lastChecked": "2026-10-25",
-      "lastSeen": "2026-09-16 Season 2 Phase 2 article",
+      "lastSeen": "2026-09-16 Season 2 Phase 2 article (nothing newer)",
       "status": "ok",
       "failStreak": 0
     },
     "toptechnews": {
       "lastChecked": "2026-10-25",
-      "lastSeen": "2026-09-16 Phase 2 bringt neuen Spielschub: The Division Resurgence aktualisiert Season",
+      "lastSeen": "2026-10-24 Ubisoft feiert Halloween (general Ubisoft Halloween events article; Resurgence mention not confirmed)",
       "status": "ok",
       "failStreak": 0
     },
     "247videogame": {
       "lastChecked": "2026-10-25",
-      "lastSeen": "2026-09-16 The Division Resurgence - Official Season 2 Phase 2 Launch Trailer",
+      "lastSeen": "2026-09-16 Season 2 Phase 2 Launch Trailer (nothing newer)",
       "status": "ok",
       "failStreak": 0
     },
@@ -270,16 +288,32 @@
     },
     "ubisoft-youtube": {
       "lastChecked": "2026-10-25",
-      "lastSeen": "2026-09-16 'Season 2 Phase 2 is now Live' (on @Ubisoft)",
+      "lastSeen": "No trailer newer than 2026-09-16 found by search",
       "status": "ok",
       "failStreak": 0
+    },
+    "youtube-rss": {
+      "failStreak": 1,
+      "lastChecked": "2026-10-25",
+      "lastSeen": "All watch-list RSS feeds robots_disallowed for WebFetch on 2026-10-25 (8 tried, same domain)",
+      "status": "blocked"
     }
   },
   "searches": {
     "lastChecked": "2026-10-25",
-    "seenHeadlines": []
+    "seenHeadlines": [
+      "2026-10-25: catch-all and outlet searches returned only older coverage (launch, roadmap, Steam release); nothing new"
+    ]
   },
-  "leads": [],
+  "leads": [
+    {
+      "date": "2026-10-25",
+      "source": "Steam discussions 'Halloween event' thread + toptechnews.de 'Ubisoft feiert Halloween' (2026-10-24)",
+      "claim": "A Halloween event may be coming to Resurgence",
+      "status": "unverified",
+      "note": "No official Resurgence Halloween announcement found (searched). Re-check official channels next run."
+    }
+  ],
   "leadsReadme": "Claims found only in non-official sources, newest first (keep the last 50): {date, source, claim, status: unverified | verified | dismissed, note}. Re-check unverified leads against official sources on later runs.",
   "snapshots": {
     "_readme": "Daily numbers for a future monthly roundup, newest last (keep the last 60 per list).",
@@ -292,6 +326,15 @@
         "allTimePct": 47,
         "allTimeCount": 1403,
         "note": "English reviews, from the owner's spreadsheet"
+      },
+      {
+        "date": "2026-10-25",
+        "label": "Mixed",
+        "recentPct": 64,
+        "recentCount": 215,
+        "allTimePct": 47,
+        "allTimeCount": 1403,
+        "note": "store page, run 2026-10-25"
       }
     ],
     "steamPlayers": [
@@ -301,9 +344,22 @@
         "monthAvg": 363,
         "monthPeak": 554,
         "source": "raijin.gg"
+      },
+      {
+        "date": "2026-10-25",
+        "current": 387,
+        "monthAvg": 363,
+        "monthPeak": 554,
+        "steamdb24hPeak": 476,
+        "source": "raijin.gg + SteamDB, run 2026-10-25"
       }
     ],
     "discord": [
+      {
+        "date": "2026-10-25",
+        "members": 19364,
+        "online": 2847
+      },
       {
         "date": "2026-10-25",
         "members": 19364,
@@ -318,6 +374,14 @@
         "avgViewers": 3,
         "peakViewers30d": 114,
         "source": "SullyGnome"
+      },
+      {
+        "date": "2026-10-25",
+        "hoursWatched30d": 2500,
+        "streamers30d": 205,
+        "avgViewers": 3,
+        "peakViewers30d": 114,
+        "source": "SullyGnome, run 2026-10-25"
       }
     ]
   },
@@ -415,6 +479,9 @@
         "latestSeenTitle": "Is the KSG still good after the nerf? - Take the castle Legendary - The Division Resurgence"
       }
     },
-    "suggested": []
+    "suggested": [],
+    "lastChecked": "2026-10-25",
+    "status": "blocked",
+    "note": "RSS feeds returned robots_disallowed to WebFetch on 2026-10-25; per rules no other way was tried."
   }
 }
