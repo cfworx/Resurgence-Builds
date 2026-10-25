@@ -216,7 +216,7 @@ const boldStars = (t: string) => t
       </p>
 
       {classData.signatures ? (
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--sp-4);">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: var(--sp-6);">
           {classData.signatures.map((sig: any) => (
             <div style="background: rgba(0,0,0,0.2); padding: var(--sp-4) var(--sp-4) var(--sp-4) calc(var(--inset) - 1px); border: 1px solid var(--border); border-radius: var(--border-radius);">
               <p style="color: var(--accent); margin-bottom: var(--sp-1); font-size: var(--text-sm); text-transform: uppercase; letter-spacing: 0.05em; font-weight: 700;">Signature Skill: {sig.name}</p>
@@ -234,7 +234,7 @@ const boldStars = (t: string) => t
           </div>
         </div>
       ) : (
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--sp-4);">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: var(--sp-6);">
           <div style="background: rgba(0,0,0,0.2); padding: var(--sp-4) var(--sp-4) var(--sp-4) calc(var(--inset) - 1px); border: 1px solid var(--border); border-radius: var(--border-radius);">
             <p style="color: var(--accent); margin-bottom: var(--sp-2); font-size: var(--text-sm); text-transform: uppercase; letter-spacing: 0.05em; font-weight: 700;">Signature Skill: {classData.signature.name}</p>
             <p style="color: var(--ink-muted); font-size: var(--text-sm); margin: 0;">

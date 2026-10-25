@@ -162,7 +162,7 @@ const faqs = [
     <p style="color:var(--ink-muted);margin-bottom:var(--sp-6);">
       {posts.length} {posts.length === 1 ? 'article' : 'articles'} tagged <strong style="color:var(--accent);">{displayTag}</strong> in Division Resurgence.
     </p>
-    <div style="background: rgba(0,0,0,0.15); border: 1px solid var(--border); border-radius: var(--border-radius); padding: var(--sp-5); margin-bottom: var(--sp-6); max-width: 800px;">
+    <div style="background: rgba(0,0,0,0.15); border: 1px solid var(--border); border-radius: var(--border-radius); padding: var(--sp-5) var(--sp-5) var(--sp-5) calc(var(--inset) - 1px); margin-bottom: var(--sp-6); max-width: 800px;">
       <p style="color: var(--ink-muted); font-size: var(--text-sm); line-height: 1.7; margin: 0;">
         {hasCustomIntro ? tagIntro.intro : (
           <>Here's every <strong style="color: var(--ink);">{displayTag}</strong> article we've put out — builds, gear breakdowns, patch notes, the works. All tested in-game, all kept current so you're not running yesterday's meta. Click any card to jump in, or use the tags to rabbit-hole into related topics. Want the short version of what's good right now? Hit the <a href="/tier-list/" style="color: var(--accent);">Tier List</a>. Want to theorycraft your own loadout? The <a href="/builder/" style="color: var(--accent);">Build Planner</a> is right there.</>

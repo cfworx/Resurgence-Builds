@@ -190,6 +190,8 @@ h4 { font-size: var(--step-0); margin-bottom: var(--sp-2); line-height: var(--lh
 p { margin-bottom: var(--sp-4); max-width: var(--measure); }
 /* no single word left alone on the last line of a paragraph (browsers without it wrap as before) */
 p, li, dd, figcaption { text-wrap: pretty; }
+/* plain content lists (no class: not a menu or a component) keep the same line length as paragraphs */
+main :is(ul, ol):not([class]) > li { max-width: var(--measure); }
 
 strong { font-weight: 500; }
 
@@ -1034,7 +1036,9 @@ html.mobile-nav-open { overflow: hidden; }
 /* Boxes of running text end on the same right edge as the paragraphs */
 .prose blockquote { max-width: calc(var(--measure) + var(--inset) + var(--sp-5)); }
 .prose .callout { max-width: calc(var(--measure) + var(--inset) + var(--sp-4)); }
-/* The last block of an article ends flush, so every page ends one section padding above what follows it */
+/* The last block of an article or page ends flush, so every page ends one section padding above what follows it */
+main > .section > :last-child,
+main > .section > :last-child > :last-child { margin-bottom: 0; }
 .prose > :last-child,
 .prose > :is(ul, ol):last-child > li:last-child,
 .explore-more > :last-child,

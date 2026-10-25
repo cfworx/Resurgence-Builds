@@ -108,14 +108,14 @@ const tagSlugify = (tag: string) => tag.toLowerCase().replace(/\s+/g, '-');
       </ul>
 
       <h2>Database: OS Protocols</h2>
-      <ul style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 10px; list-style: none; padding: 0;">
+      <ul class="sitemap-list sitemap-list--wide">
         {osProtocols.map((item: any) => (
           <li><a href={`/database/os-protocols/${slugify(item.name)}/`}>{item.name}</a></li>
         ))}
       </ul>
 
       <h2>Database: Weapons</h2>
-      <ul style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 10px; list-style: none; padding: 0;">
+      <ul class="sitemap-list sitemap-list--wide">
         {standardWeapons.map((item: any) => (
           <li><a href={`/database/weapons/${slugify(item.name)}/`}>{item.name}</a></li>
         ))}
@@ -129,42 +129,42 @@ const tagSlugify = (tag: string) => tag.toLowerCase().replace(/\s+/g, '-');
       </ul>
 
       <h2>Database: Weapon Talents</h2>
-      <ul style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 10px; list-style: none; padding: 0;">
+      <ul class="sitemap-list sitemap-list--wide">
         {weaponTalents.map((item: any) => (
           <li><a href={`/database/weapon-talents/${slugify(item.name)}/`}>{item.name}</a></li>
         ))}
       </ul>
 
       <h2>Database: Gear Set Effects</h2>
-      <ul style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 10px; list-style: none; padding: 0;">
+      <ul class="sitemap-list sitemap-list--wide">
         {gearSetEffects.map((item: any) => (
           <li><a href={`/database/gear-set-effects/${slugify(item.name)}/`}>{item.name}</a></li>
         ))}
       </ul>
 
       <h2>Database: Skill Mod Combos</h2>
-      <ul style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 10px; list-style: none; padding: 0;">
+      <ul class="sitemap-list sitemap-list--wide">
         {skillModCombos.map((item: any) => (
           <li><a href={`/database/skill-mod-combos/${slugify(item.name)}/`}>{item.name}</a></li>
         ))}
       </ul>
 
       <h2>Database: Backpack Talents</h2>
-      <ul style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 10px; list-style: none; padding: 0;">
+      <ul class="sitemap-list sitemap-list--wide">
         {backpackTalents.map((item: any) => (
           <li><a href={`/database/backpack-talents/#${slugify(item.name)}`}>{item.name}</a></li>
         ))}
       </ul>
 
       <h2>Database: Body Armor Talents</h2>
-      <ul style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 10px; list-style: none; padding: 0;">
+      <ul class="sitemap-list sitemap-list--wide">
         {bodyArmorTalents.map((item: any) => (
           <li><a href={`/database/body-armor-talents/#${slugify(item.name)}`}>{item.name}</a></li>
         ))}
       </ul>
 
       <h2>Database: Bonus Attributes</h2>
-      <ul style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 10px; list-style: none; padding: 0;">
+      <ul class="sitemap-list sitemap-list--wide">
         {bonusAttributes.flatMap((cat: any) => cat.attributes).map((attr: string) => (
           <li><a href={`/database/bonus-attributes/#${slugify(attr)}`}>{attr}</a></li>
         ))}
@@ -175,7 +175,7 @@ const tagSlugify = (tag: string) => tag.toLowerCase().replace(/\s+/g, '-');
 </BaseLayout>
 
 <style>
-  /* Long lists of links: a grid of 28px-tall rows, one column on phones */
+  /* Long lists of links: a grid (one column on the narrowest phones), rows spaced by the gap */
   .sitemap-list {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(min(100%, 200px), 1fr));
@@ -183,9 +183,11 @@ const tagSlugify = (tag: string) => tag.toLowerCase().replace(/\s+/g, '-');
     list-style: none;
     padding: 0;
   }
+  .sitemap-list--wide { grid-template-columns: repeat(auto-fill, minmax(min(100%, 250px), 1fr)); }
   .sitemap-list li { margin-bottom: 0; } /* the grid's gap spaces the rows */
   .sitemap-list a {
     display: block;
-    padding-block: var(--sp-1);
+    padding-block: var(--sp-1); /* a taller tap area that reaches into the gap without moving anything */
+    margin-block: calc(-1 * var(--sp-1));
   }
 </style>
