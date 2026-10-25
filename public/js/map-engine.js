@@ -9,6 +9,13 @@
   var PROGRESS_KEY = 'rb-map-progress-v1';
   var FILTER_KEY = 'rb-map-filters-v2';
 
+  // Same width as the page's phone layout (the CSS uses this query too).
+  var PHONE = window.matchMedia('(max-width: 44.99em)');
+  // Name tooltips only where a mouse can hover. On touch screens they pile up and never close.
+  var CAN_HOVER = window.matchMedia('(hover: hover)');
+  var REDUCED_MOTION = window.matchMedia('(prefers-reduced-motion: reduce)');
+  var COARSE = window.matchMedia('(pointer: coarse)');
+
   /* --- Safe storage (private windows, blocked storage, previews) --- */
   var store = {
     get: function (k, fallback) {
@@ -66,15 +73,69 @@
     return w <= 480 ? 18 : w <= 767 ? 20 : 24;
   }
 
+  /* --- Popup sizing ---
+     A popup has to fit inside the map with its close button showing. On phones the map is only about 340px tall,
+     so the popup's height is capped (its middle scrolls) and it keeps clear of the zoom buttons on the right. */
+  function popupLayout() {
+    var el = map.getContainer();
+    var phone = PHONE.matches;
+    var edge = phone ? 12 : 24;
+    // Keep popups out of the strip on the right where the zoom buttons sit (they draw above popups), and above the
+    // attribution line at the bottom.
+    var zoom = el.querySelector('.leaflet-control-zoom');
+    var attr = el.querySelector('.leaflet-control-attribution');
+    var padTL = [edge, edge];
+    var padBR = [Math.max(edge, (zoom ? zoom.offsetWidth : 40) + 20), Math.max(edge, (attr ? attr.offsetHeight : 18) + 8)];
+    // 72px covers the popup's margin, border, tip and the marker offset; 36px its side margins and border.
+    var maxH = Math.max(150, el.clientHeight - padTL[1] - padBR[1] - 72);
+    var maxW = Math.max(180, Math.min(phone ? 300 : 320, el.clientWidth - padTL[0] - padBR[0] - 36));
+    return {
+      maxWidth: maxW,
+      minWidth: Math.min(200, maxW),
+      maxHeight: maxH,
+      autoPanPaddingTopLeft: padTL,
+      autoPanPaddingBottomRight: padBR
+    };
+  }
+
+  function applyPopupLayout() {
+    var o = popupLayout();
+    map.getContainer().style.setProperty('--popup-max-h', o.maxHeight + 'px');
+    Object.keys(markersById).forEach(function (id) {
+      var p = markersById[id].getPopup();
+      if (p) L.setOptions(p, { maxWidth: o.maxWidth, minWidth: o.minWidth, autoPanPaddingTopLeft: o.autoPanPaddingTopLeft, autoPanPaddingBottomRight: o.autoPanPaddingBottomRight });
+    });
+  }
+
+  // After the map pans to fit a popup, make sure the page shows it too: not under the sticky header, not under the
+  // floating Layers button, not off screen.
+  function keepPopupOnScreen(popup) {
+    var el = popup.getElement && popup.getElement();
+    if (!el || !el.isConnected) return;
+    var r = el.getBoundingClientRect();
+    var top = 0;
+    var header = document.querySelector('.site-header');
+    if (header && /sticky|fixed/.test(getComputedStyle(header).position)) top = Math.max(0, header.getBoundingClientRect().bottom);
+    var bottom = window.innerHeight;
+    var toggle = document.getElementById('filters-toggle');
+    if (toggle && getComputedStyle(toggle).display !== 'none' && !toggle.classList.contains('is-hidden')) bottom = toggle.getBoundingClientRect().top;
+    var dy = 0;
+    if (r.top < top + 8) dy = r.top - top - 8;
+    else if (r.bottom > bottom - 8) dy = Math.min(r.bottom - bottom + 8, r.top - top - 8);
+    if (Math.abs(dy) > 1) window.scrollBy({ top: dy, behavior: REDUCED_MOTION.matches ? 'auto' : 'smooth' });
+  }
+
   function iconFor(cat, found) {
     var s = badgeSize();
+    // On touch screens the tappable area is 28px even where the dot is drawn smaller.
+    var hit = COARSE.matches ? Math.max(s, 28) : s;
     return L.divIcon({
       className: 'poi-marker',
-      html: '<div class="poi-dot' + (found ? ' is-found' : '') + '" style="--poi-color:' + cat.color + '">' +
+      html: '<div class="poi-dot' + (found ? ' is-found' : '') + '" style="--poi-color:' + cat.color + ';width:' + s + 'px;height:' + s + 'px">' +
         '<svg class="poi-glyph" viewBox="0 0 24 24" aria-hidden="true">' + (ICONS[cat.icon] || ICONS.pin) + '</svg>' +
         (found ? '<span class="poi-check" aria-hidden="true">✓</span>' : '') + '</div>',
-      iconSize: [s, s],
-      iconAnchor: [s / 2, s / 2],
+      iconSize: [hit, hit],
+      iconAnchor: [hit / 2, hit / 2],
       popupAnchor: [0, -s / 2]
     });
   }
@@ -117,15 +178,18 @@
       zoomSnap: 0.25,
       zoomDelta: 0.5,
       wheelPxPerZoomLevel: 140,
-      maxBoundsViscosity: 0.9,
-      tap: true
+      maxBoundsViscosity: 0.9
     });
     rc = new L.RasterCoords(map, [W, H]);
     var bounds = rc.getMaxBounds();
     L.imageOverlay(base, bounds, { alt: 'Division Resurgence in-game map of Midtown Manhattan' }).addTo(map);
 
     map.attributionControl.setPrefix(false);
-    map.attributionControl.addAttribution('Locations: <a href="https://thedivision.fandom.com/wiki/Map:Tom_Clancy%27s_The_Division_Resurgence/New_York_City" target="_blank" rel="noopener noreferrer">The Division Wiki community map</a> (CC BY-SA)');
+    // Short on phones so it stays on one line; the full credit is in the paragraph under the map.
+    var wiki = '<a href="https://thedivision.fandom.com/wiki/Map:Tom_Clancy%27s_The_Division_Resurgence/New_York_City" target="_blank" rel="noopener noreferrer">';
+    map.attributionControl.addAttribution(PHONE.matches
+      ? 'Locations: ' + wiki + 'Division Wiki</a> (CC BY-SA)'
+      : 'Locations: ' + wiki + 'The Division Wiki community map</a> (CC BY-SA)');
 
     L.control.zoom({ position: 'topright' }).addTo(map);
 
@@ -137,8 +201,67 @@
       map.fitBounds(bounds, { padding: [0, 0], animate: false });
     }
     fit();
-    map.setMaxBounds(bounds.pad(0.12));
+    var softBounds = bounds.pad(0.12);
+    map.setMaxBounds(softBounds);
     requestAnimationFrame(fit);
+
+    // Re-fit only when the map's width changes (phones fire resize events while the toolbars slide in and out).
+    var lastW = el.clientWidth;
+    var resizeT;
+    window.addEventListener('resize', function () {
+      clearTimeout(resizeT);
+      resizeT = setTimeout(function () {
+        if (el.clientWidth !== lastW) {
+          lastW = el.clientWidth;
+          if (!openPopup) fit();
+        }
+        applyPopupLayout();
+      }, 150);
+    });
+
+    // The max bounds would undo the pan that brings a popup near the map's edge into view (its close button ended up
+    // above the top of the map on phones). Lift them while a popup is open. When it closes, go back to the view from
+    // before the popup panned the map, unless the visitor dragged or zoomed in the meantime.
+    var openPopup = null;
+    var autopanning = false;
+    var viewBeforePopup = null;
+    map.on('autopanstart', function () {
+      autopanning = true;
+      if (!viewBeforePopup) viewBeforePopup = map.getCenter();
+    });
+    map.on('dragstart zoomstart', function () { if (openPopup) viewBeforePopup = null; });
+    map.on('popupopen', function (e) {
+      openPopup = e.popup;
+      map.setMaxBounds(null);
+      // Fade the bottom edge of a popup whose middle scrolls, until it's scrolled to the end.
+      var body = e.popup.getElement() && e.popup.getElement().querySelector('.popup-body');
+      if (body && body.scrollHeight > body.clientHeight + 2) {
+        body.classList.add('is-scrollable');
+        body.addEventListener('scroll', function () {
+          body.classList.toggle('is-at-end', body.scrollTop + body.clientHeight >= body.scrollHeight - 2);
+        }, { passive: true });
+      }
+      var settle = function () { keepPopupOnScreen(e.popup); };
+      if (autopanning) { autopanning = false; map.once('moveend', settle); }
+      else requestAnimationFrame(settle);
+    });
+    map.on('popupclose', function (e) {
+      if (openPopup === e.popup) openPopup = null;
+      // Deferred: when another marker is tapped, the old popup closes and the new one opens in the same tick.
+      setTimeout(function () {
+        if (openPopup) return;
+        var back = viewBeforePopup;
+        viewBeforePopup = null;
+        if (back) {
+          map.once('moveend', function () { if (!openPopup) map.setMaxBounds(softBounds); });
+          map.panTo(back, { animate: !REDUCED_MOTION.matches, duration: 0.3 });
+        } else {
+          map.setMaxBounds(softBounds);
+        }
+      }, 0);
+    });
+    // Escape closes the popup even when focus is inside it (Leaflet only listens while the map itself has focus).
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && openPopup) map.closePopup(); });
 
     // Scroll-wheel zoom only after the map is clicked, so the page still scrolls normally.
     var hint = document.getElementById('map-zoom-hint');
@@ -164,6 +287,8 @@
 
   /* --- Markers --- */
   function buildMarkers() {
+    var o = popupLayout();
+    map.getContainer().style.setProperty('--popup-max-h', o.maxHeight + 'px');
     data.categories.forEach(function (c) { layers[c.id] = L.layerGroup(); });
     data.pois.forEach(function (poi) {
       var cat = catById[poi.category];
@@ -172,14 +297,25 @@
         icon: iconFor(cat, progress.has(poi.id)),
         title: poi.name,
         keyboard: true,
-        riseOnHover: true
+        riseOnHover: CAN_HOVER.matches
       });
       m.bindPopup(function () { return buildPopup(poi, cat); }, {
-        maxWidth: window.innerWidth <= 767 ? 230 : 300,
-        minWidth: 180,
-        autoPanPadding: [24, 24]
+        maxWidth: o.maxWidth,
+        minWidth: o.minWidth,
+        autoPanPaddingTopLeft: o.autoPanPaddingTopLeft,
+        autoPanPaddingBottomRight: o.autoPanPaddingBottomRight
       });
-      m.bindTooltip(esc(poi.name), { direction: 'top', offset: [0, -badgeSize() / 2], className: 'map-tooltip' });
+      if (CAN_HOVER.matches) {
+        m.bindTooltip(esc(poi.name), { direction: 'top', offset: [0, -badgeSize() / 2], className: 'map-tooltip' });
+      }
+      // The name tooltip would sit under the popup that just opened (deferred: the same click also reopens it).
+      m.on('popupopen', function () { setTimeout(function () { if (m.getTooltip() && m.isTooltipOpen()) m.closeTooltip(); }, 0); });
+      // Hand keyboard focus back to the marker when its popup closes, instead of dropping it on the page.
+      m.on('popupclose', function (e) {
+        var pop = e.popup.getElement();
+        var icon = m.getElement();
+        if (pop && icon && pop.contains(document.activeElement)) icon.focus({ preventScroll: true });
+      });
       m.poi = poi;
       markersById[poi.id] = m;
       layers[cat.id].addLayer(m);
@@ -192,10 +328,12 @@
     var flags = [];
     if (poi.approx) flags.push('<span class="popup-flag" title="Dark Zone positions are converted from a schematic map and may be off by up to half a block.">≈ approximate</span>');
     if (cat.wip) flags.push('<span class="popup-flag" title="The community is still mapping this category.">partial layer</span>');
+    // Header and buttons stay put; only the middle scrolls when a popup is taller than the map allows.
     var h = '<div class="map-popup">';
     h += '<div class="popup-header"><span class="popup-badge" style="--poi-color:' + cat.color + '"><svg viewBox="0 0 24 24" aria-hidden="true">' + (ICONS[cat.icon] || ICONS.pin) + '</svg></span>';
     h += '<div><div class="popup-name">' + esc(poi.name) + '</div><div class="popup-meta">' + esc(cat.label) +
       (poi.difficulty ? ' · ' + esc(poi.difficulty) : '') + (poi.level ? ' · Lv ' + esc(poi.level) : '') + '</div></div></div>';
+    h += '<div class="popup-body">';
     if (flags.length) h += '<div class="popup-flags">' + flags.join('') + '</div>';
     if (poi.code) {
       var isRandom = /random/i.test(poi.code);
@@ -216,6 +354,7 @@
     if (poi.amenities && poi.amenities.length) {
       h += '<div class="popup-amenities">' + poi.amenities.map(function (a) { return '<span class="popup-tag">' + esc(a) + '</span>'; }).join('') + '</div>';
     }
+    h += '</div>';
     h += '<div class="popup-actions">';
     if (cat.trackable) {
       h += '<button type="button" class="popup-btn' + (found ? ' popup-btn--found' : '') + '" data-toggle-found="' + esc(poi.id) + '">' + (found ? '✓ Found' : 'Mark as found') + '</button>';
