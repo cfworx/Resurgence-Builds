@@ -1359,9 +1359,11 @@ main li a:hover {
    so when the items wrap no dot is left stranded at the end or start of a line */
 .meta-line-wrap {
   overflow: hidden;
-  /* room for focus rings, which the clipping would otherwise cut (6px still hides the first item's dot) */
-  padding: 6px;
-  margin: -6px;
+  /* room for focus rings, which the clipping would otherwise cut: above, below and on the left, where a line's
+     first item starts (6px still hides that item's dot). Not on the right: that would make the box wider than its
+     row. */
+  padding: 6px 0 6px 6px;
+  margin: -6px 0 -6px -6px;
   min-width: 0;
 }
 /* Separators are sized in rem, not em: items can differ in size (the footer's logo), and the first separator
