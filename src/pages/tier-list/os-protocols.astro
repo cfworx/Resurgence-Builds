@@ -27,6 +27,10 @@ const sTier = [
 // A Tier
 const aTier = [
   { name: 'Collateral Damage', spec: 'Engineering', rarity: 'High-End', was: 'S', cr: 'Tied in GGReborn\'s Oct 23 Lone Wolf test', note: '3000% Engineering AoE around whatever your skills hit, no condition beyond a 10s cooldown' },
+  { name: 'Chain Reaction', spec: 'Engineering', rarity: 'Superior', was: 'B', cr: 'Fastest by 3s in GGReborn\'s Oct 23 Lone Wolf test', note: 'Add-clearing skill builds' },
+  { name: 'Tactical Persistence', spec: 'Engineering', rarity: 'Superior', was: 'B', cr: 'Tied in GGReborn\'s Oct 23 Lone Wolf test', note: 'Sustained skill DPS' },
+  { name: 'Recursive Treatment', spec: 'Engineering', rarity: 'Superior', was: 'B', cr: "TikTokAndy's Aegis Team Healer pick", note: 'Engineering plus Skill Intensity when you heal or grant Extra Health' },
+  { name: 'Augmented Lethality', spec: 'Firepower', rarity: 'Superior', was: 'B', cr: "TikTokAndy's Commando pick through early October", note: 'Weapon Damage and Incoming Healing per enemy within 20m' },
   { name: 'Explosive Round', spec: 'Firepower', rarity: 'High-End', was: 'S', note: 'Free AoE on aimed crits. No Season 2 creator results yet, so it caps at A' },
   { name: 'Explosive Charge', spec: 'Engineering', rarity: 'High-End', was: 'S', note: 'AoE on enhanced skill hits (5s cooldown). No Season 2 creator results yet, so it caps at A' },
   { name: 'Pummeling Shield', spec: 'Toughness', rarity: 'High-End', was: 'S', note: "Bulwark's defining protocol, but the June 26 hotfix cut the stun to 1.5s on a 10s cooldown" },
@@ -44,9 +48,6 @@ const aTier = [
 // B Tier
 const bTier = [
   { name: 'Rampart', spec: 'Engineering', rarity: 'High-End', note: 'Stationary turret play, resets on movement' },
-  { name: 'Chain Reaction', spec: 'Engineering', rarity: 'Superior', note: 'Add-clearing builds' },
-  { name: 'Tactical Persistence', spec: 'Engineering', rarity: 'Superior', note: 'Sustained skill DPS' },
-  { name: 'Recursive Treatment', spec: 'Engineering', rarity: 'Superior', note: 'Field Medic skill hybrid' },
   { name: 'Close and Personal', spec: 'Engineering', rarity: 'Superior', note: 'Vanguard buff-team play' },
   { name: 'Pressing Matter', spec: 'Engineering', rarity: 'Superior', note: 'Universal cooldown recovery' },
   { name: 'Ambusher', spec: 'Engineering', rarity: 'Superior', note: 'Stationary marksman-skill hybrids' },
@@ -61,7 +62,6 @@ const bTier = [
   { name: 'Tight Grouping', spec: 'Firepower', rarity: 'Superior', note: 'High rate of fire cover builds' },
   { name: 'Assisted Infantry', spec: 'Firepower', rarity: 'Superior', note: 'LMG sustained-fire' },
   { name: 'Death From Afar', spec: 'Firepower', rarity: 'Superior', note: 'Headshot-stacking marksman' },
-  { name: 'Augmented Lethality', spec: 'Firepower', rarity: 'Superior', note: 'Aggressive frontline damage per nearby enemy' },
   { name: 'Dominating Presence', spec: 'Firepower', rarity: 'Superior', note: 'Shotgun crowd-clear Multi-Shot. Only granted Multi-Shot after a Season 2 Phase 1 fix; Phase 2 capped it at 35% (base)' },
   { name: 'Close Quarters Menace', spec: 'Firepower', rarity: 'Superior', note: 'Aggressive Field Medic shotgun' },
   { name: 'Deadly Accuracy', spec: 'Firepower', rarity: 'Superior', note: 'Marksman precision, punishes missed shots' },
