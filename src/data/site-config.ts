@@ -44,12 +44,13 @@ export const GA4_ID = 'G-HWT2GX34EX'; // live since 2026-10-26
 /**
  * Email signup for Resurgence Builds (separate from Inland Care Jobs' list). Works with any provider
  * whose form posts an email address to a URL. Empty action means no signup box anywhere.
- * When set, a box shows on build guides and tier list pages.
+ * When set, a box shows on build guides and tier list pages. Resurgence uses Kit's free plan: set KIT_FORM_ID.
  *   Kit (free plan):  action 'https://app.kit.com/forms/<FORM_ID>/subscriptions', emailField 'email_address'
  *   Buttondown:       action 'https://buttondown.com/api/emails/embed-subscribe/<USERNAME>', emailField 'email', hidden { embed: '1' }
  * public/_headers form-action must allow the action's origin (Kit and Buttondown already are).
  */
+export const KIT_FORM_ID = ''; // Kit (kit.com) form ID: the number in the form's embed code. Empty keeps the box hidden.
 export const NEWSLETTER_FORM: { action: string; emailField: string; hidden?: Record<string, string> } = {
-  action: '',
-  emailField: 'email',
+  action: KIT_FORM_ID ? `https://app.kit.com/forms/${KIT_FORM_ID}/subscriptions` : '',
+  emailField: 'email_address',
 };
