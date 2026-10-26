@@ -157,33 +157,6 @@ const ogImage = protocol.image ? `${siteUrl}${protocol.image}` : undefined;
         </div>
       </div>
 
-      <!-- Overview -->
-      <div class="protocol-section">
-        <h2 class="protocol-section__title">Overview</h2>
-        <div style="color: #c8c8d0; line-height: 1.75; font-size: var(--text-base);">
-          <p>{protocol.name} is a <strong style="color: #fff;">{protocol.rarity}</strong> OS Protocol in the <strong style="color: #fff;">{protocol.specialization}</strong> tree. If you're not familiar, OS Protocols are basically the sixth gear piece in your loadout, a chip that gives you a fat stat bonus and a unique talent that can make or break your build. {protocol.name} hands you <strong style="color: var(--accent);">{protocol.mainStat} {protocol.mainValue}</strong>, plus {protocol.attr1} ({protocol.val1}), {protocol.attr2} ({protocol.val2}), and {protocol.attr3} ({protocol.val3}) on top.</p>
-          <p>But the talent is why you're here: <em>"{protocol.talentDescription}"</em>. That's the part that actually shapes how you play. {protocol.specialization === 'Engineering' ? 'As an Engineering protocol, this one is built for Demolitionist, Tech Operator, and Field Medic setups where your skills are doing the heavy lifting: damage or healing.' : protocol.specialization === 'Firepower' ? 'This is a Firepower protocol, so it\'s all about making your guns hit harder. Vanguard DPS mains, this is your lane. Works on any spec that leads with bullets.' : 'Toughness protocol = you\'re the wall. Core pick for Bulwark tank builds, Field Medic face-tankers, and anyone who needs to eat shots in Legendary or Dark Zone PvP without folding.'}</p>
-        </div>
-      </div>
-
-      <!-- Build Use Cases -->
-      <div class="protocol-section">
-        <h2 class="protocol-section__title">Best Builds & Playstyles</h2>
-        <div style="color: #c8c8d0; line-height: 1.75; font-size: var(--text-base);">
-          <p>{protocol.name} belongs on <strong style="color: #fff;">{specClass}</strong> builds that are going all-in on {protocol.specialization}. That {protocol.mainStat} {protocol.mainValue} main stat is a straight multiplier on your build's core, and the talent kicks in when you're actually playing the way the build wants you to.</p>
-          <p>{protocol.specialization === 'Engineering' ? 'Pair this with Jackpot (Skill Crit) or Long-term Effect (Skill Duration/Engineering) and your skills start hitting like trucks.' : protocol.specialization === 'Firepower' ? 'Run this alongside Fury Strike (Crit) if you want big per-shot numbers, or Phalanx Attack (Multi-Shot/Rate of Fire) if sustained DPS is your thing. Weapon talent choice matters too: In Sync, Concentrated Fire, or Killer on your primary all stack nicely with this OS bonus.' : 'Slap this on with Fearless Warrior (DR/Damage) or Self-Propelled Shield (Armor/Health) and you become unkillable. If you\'ve got access to Healing Elites (T2-only), that\'s the premium combo: disgusting survivability on top of your OS Protocol talent.'}</p>
-        </div>
-      </div>
-
-      <!-- Stacking & Synergies -->
-      <div class="protocol-section">
-        <h2 class="protocol-section__title">Choosing a Protocol</h2>
-        <div style="color: #c8c8d0; line-height: 1.75; font-size: var(--text-base);">
-          <p>OS Protocol choice matters because the talent is the one effect in your loadout that no gear piece can copy. Pick the one whose trigger matches how the build actually plays, then check the numbers in the <a href="/builder/" style="color: var(--accent);">Build Planner</a>.</p>
-          <p>{protocol.rarity === 'High-End' ? protocol.name + ' is a Gold (High-End) protocol, the top of the food chain. These have the fattest stat bonuses in the game and are what you\'re grinding toward at endgame. The jump from Purple to Gold is noticeable.' : protocol.rarity === 'Superior' ? protocol.name + ' is a Purple (Superior) protocol, solid and way easier to farm than Gold ones. The raw stats are a step below High-End, but the talent hits just as hard in the right build. Great to run while you\'re hunting for the Gold version.' : protocol.name + ' is a Blue (Specialized) protocol, a perfectly fine placeholder that still gives you a real talent while you grind for the Purple or Gold upgrade.'} Check the <a href="/tier-list/os-protocols/" style="color: var(--accent);">OS Protocol Tier List</a> to see where {protocol.name} stacks up.</p>
-        </div>
-      </div>
-
       <!-- How to Get -->
       <div class="protocol-section">
         <h2 class="protocol-section__title">How to Get {protocol.name}</h2>

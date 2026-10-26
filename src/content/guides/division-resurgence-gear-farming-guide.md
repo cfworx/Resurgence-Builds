@@ -38,8 +38,6 @@ You hit level 40, your gear is a patchwork quilt of blues and yellows, and the g
 4. **Upgrade keepers only.** Level 40 to 50 costs purple materials, which Oldfartsgaming found hard to come by.
 5. **Mods are Power Score you're leaving on the table.** Run Heroic Hostile Nests, then run them again.
 
-> **How we put this together:** Ubisoft's patch notes for everything official, AgentHuntzman's "Gear Farming Made EASY" (June 3, embedded above) for the farm itself, plus notes from TikTokAndy, Oldfartsgaming, GGReborn and Died Again Gaming. Ubisoft doesn't publish mission loot tables, so the mission list below is one creator's experience from June, before Season 2. If a mission's reward preview says something different today, the preview wins.
-
 ---
 
 ## T0, T1, T2: What Each Tier Is For
@@ -58,7 +56,7 @@ Don't judge any of it by the number on the item. A T1 piece from the right set w
 
 ## Where to Farm T1: Missions by Gear Slot
 
-According to AgentHuntzman, most repeatable missions lean toward certain weapons and gear slots (two hand out random gear). His list from June, farmed on Heroic:
+According to AgentHuntzman, most repeatable missions lean toward certain weapons and gear slots (two hand out random gear). His list from June, before Season 2, farmed on Heroic (if a mission's reward preview says otherwise today, the preview wins):
 
 | Mission | Leans toward |
 |---|---|

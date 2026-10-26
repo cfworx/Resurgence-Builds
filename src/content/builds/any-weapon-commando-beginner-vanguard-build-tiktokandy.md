@@ -33,7 +33,7 @@ faqs:
 
 ## What This Build Does
 
-> Build credit: [**TikTokAndy**](https://www.youtube.com/watch?v=vtsTpS78aTA) for the walkthrough (September 19, 2026) and his [solo Heroic Chinatown run](https://www.youtube.com/watch?v=6dGaisNKCyE) with an updated version (September 24, 2026). This is the build he ran before he found a Double Barrel shotgun; his later build is our [Misdirection Double Barrel Commando](/builds/misdirection-double-barrel-commando-build-tiktokandy/). Every stat below is his own reading unless we say it came from our database. We haven't re-tested this build ourselves.
+> Build credit: [**TikTokAndy**](https://www.youtube.com/watch?v=vtsTpS78aTA) for the walkthrough (September 19, 2026) and his [solo Heroic Chinatown run](https://www.youtube.com/watch?v=6dGaisNKCyE) with an updated version (September 24, 2026). This is the build he ran before he found a Double Barrel shotgun; his later build is our [Misdirection Double Barrel Commando](/builds/misdirection-double-barrel-commando-build-tiktokandy/). Every stat below is his own reading unless we say it came from our database.
 
 This is a Vanguard Commando DPS build that doesn't care which gun you have. The engine is **Weapon Critical Hit Chance**: get the sheet to about 60%, let Scanning Pulse and Tactical Link stack the rest, and spend most fights critting. **Fury Strike 4pc** turns all those crits into damage, **Injured Concealment II** turns getting shot into damage, **Siege II** keeps you alive when the room fills up, and **Augmented Lethality** turns the crowd into extra Weapon Damage.
 
@@ -93,7 +93,7 @@ His point about the numbers: with a crit chance under 100%, Weapon Damage is wor
 
 ## Gear: Fury Strike 4pc + Phalanx Attack 2pc
 
-**Set bonuses (our database):**
+**Set bonuses:**
 
 - **Fury Strike:** 2pc Optimal Range +10%, 3pc Weapon Critical Hit Chance +10.8%, 4pc Weapon Critical Hit Damage +24%. With crits landing most of the time, he says the 4pc "basically just works out to a 24% damage boost."
 - **Phalanx Attack:** 2pc Magazine Size +18%.
@@ -109,7 +109,7 @@ His September 24 pieces (he describes two of them as kneepads, so we can't say w
 | Holster or kneepads | Phalanx Attack | none | Weapon Damage and Critical Hit Damage |
 | Holster or kneepads | Fury Strike (T1) | none | A high Firepower roll, Critical Hit Damage and Armor |
 
-**The two talents (our database, base versions; his readings for rank II):**
+**The two talents (base versions; his readings for rank II):**
 
 - **Injured Concealment:** hits taken grant +1.80% Damage for 10 seconds, up to 10 stacks. He reads Injured Concealment II as up to +25% after 10 hits, and pitches it as the "super glass cannon-y" pick: "I'm gonna kill you in one clip and that's it."
 - **Siege:** Extra Health equal to 37.50% Max Health for 15 seconds when 2 or more enemies are within 20 meters, 30-second cooldown. His Siege II reads 52%, and on September 19 he worked out that it would take his roughly 81,000 Health to about 120,000 when it procs. If you want a PvP version, he suggests swapping it for the backpack talent that heals you when you drop below 20% Health (Emergency Measures in our database).
@@ -127,7 +127,7 @@ The build works with any weapon because the crit, damage and survival all come f
 | September 19 | **Enhanced ACR** (T1; our database lists it as the Enhanced ACR-E): Critical Hit Damage (near max) and Weapon Damage, **Strained II** + **Swift Taunt**, proficiency 9 of 10, two Tactical Augmentations | **P90**: **Precise Crit** + **Performer II**, Weapon Damage, a high rate of fire and a big magazine |
 | September 24 | **Lightweight M4**: Critical Hit Damage and Headshot Damage, **Unhinged** + **Steady Handed II**, two Tactical Augmentations | The same **P90**, which he calls his real primary and a "god rolled" one |
 
-| Talent | Base version (our database) | His notes |
+| Talent | Base version | His notes |
 |---|---|---|
 | **Precise Crit** | 10 hits on an enemy grant +15% Weapon & Skill Critical Damage to all allies within 40 meters for 10 seconds | Helps the whole team, not just you |
 | **Performer** | +18% Weapon Damage on enemies within 20 meters, -6% beyond | He reads Performer II as +25%, and says it's "why the gun is melting like it is" |
@@ -146,7 +146,7 @@ The build works with any weapon because the crit, damage and survival all come f
 
 ## Skills, Combo Sets and OS Protocol
 
-| Skill | Combo set | 3pc effect (our database) | His notes |
+| Skill | Combo set | 3pc effect | His notes |
 |---|---|---|---|
 | Tactical Link (signature) | **Commando**, later **Bugle Call** | Commando: +10.20% Weapon Critical Hit Chance for 10 seconds per kill or assist during Tactical Link. Bugle Call: +14.40% Rate of Fire, Damage Reduction and Movement Speed for 15 seconds on deploy. | Put Tactical Link Duration on every chip you can, then Critical Hit Chance, Critical Hit Damage, Weapon Damage or Intensity. |
 | Smart Cover | **Optimized Armor** | Behind Smart Cover: +3.20% Damage Reduction, and hits have a 4.80% chance of restoring 1 bullet | He thinks it's the best one. **Armored Train** (hits behind Smart Cover have a 5% chance of granting +2% Weapon Critical Hit Chance for 20 seconds, up to 3 stacks) is his pick if your crit chance is still low. |

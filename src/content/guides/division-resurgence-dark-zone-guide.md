@@ -38,8 +38,6 @@ Ubisoft calls the Dark Zone a "PvPvE extraction mode": you fight NPCs for loot, 
 - **The danger:** NPCs, contamination, and any agent who decides to go **Rogue**. PvP is off until someone does.
 - **The payoff:** gear, skill mods (creators call them chips, and the gold ones are the prize), and **DZ Credits** for the Dark Zone vendor, which sells exotics.
 
-> **How we put this together:** Ubisoft's patch notes (linked to our patch note pages), two written guides from the week Season 2 and the PC version launched in August ([Dot Esports](https://dotesports.com/mobile/guides/the-division-resurgence-pvp) and [AllThings.How](https://allthings.how/the-division-resurgence-how-to-farm-the-dark-zone-solo/)), seven of TikTokAndy's videos from September and October, from his very first day in the Dark Zone to his October Rogue runs, one tip from Oldfartsgaming, and a few from Died Again Gaming's October 25 live stream. When a number comes from just one of them, we say whose it is.
-
 ---
 
 ## How a Run Starts
