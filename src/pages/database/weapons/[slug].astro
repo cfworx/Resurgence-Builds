@@ -13,7 +13,8 @@ import { verifiedPatch, DATABASE_UPDATED } from '../../../data/site-config';
 const lastVerified = verifiedPatch('Patch 1.1.2.2'); // Bump: drop the arg ONLY after re-verifying this page's content in-game (CURRENT_PATCH is a ceiling, not an auto-bump)
 
 export function getStaticPaths() {
-  return standardWeapons.map((weapon: any) => ({
+  // Weapons with statsVerified: false are in the build planner only.
+  return standardWeapons.filter((w: any) => w.statsVerified !== false).map((weapon: any) => ({
     params: {
       slug: weapon.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')
     },

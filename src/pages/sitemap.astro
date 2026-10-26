@@ -3,7 +3,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
 
 import osProtocols from '../data/os-protocols.json';
-import standardWeapons from '../data/standard-weapons.json';
+import allStandardWeapons from '../data/standard-weapons.json';
+// Weapons with statsVerified: false are in the build planner only until their stats are checked in game.
+const standardWeapons = allStandardWeapons.filter((w: any) => w.statsVerified !== false);
 import weaponTalents from '../data/weapon-talents.json';
 import backpackTalents from '../data/backpack-talents.json';
 import bodyArmorTalents from '../data/body-armor-talents.json';

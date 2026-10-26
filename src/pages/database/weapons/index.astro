@@ -2,7 +2,9 @@
 import DatabaseLayout from '../../../layouts/DatabaseLayout.astro';
 import WeaponAttributes from '../../../components/WeaponAttributes.astro';
 import WeaponTalentsGrid from '../../../components/WeaponTalentsGrid.astro';
-import standardWeapons from '../../../data/standard-weapons.json';
+import allStandardWeapons from '../../../data/standard-weapons.json';
+// Weapons with statsVerified: false are in the build planner only until their stats are checked in game.
+const standardWeapons = allStandardWeapons.filter((w: any) => w.statsVerified !== false);
 import allExoticWeapons from '../../../data/exotic-weapons.json';
 // Exotics with unverified stat lines (statsVerified: false) are in the planner only, not the database.
 const exoticWeapons = allExoticWeapons.filter((w: any) => w.statsVerified !== false);

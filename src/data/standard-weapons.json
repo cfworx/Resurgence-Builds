@@ -305,5 +305,299 @@
     "type": "Rifle",
     "rpm": "360",
     "mag": "20"
+  },
+  {
+    "id": "sw-42",
+    "name": "Converted SMG-9",
+    "type": "SMG",
+    "statsVerified": false
+  },
+  {
+    "id": "sw-43",
+    "name": "PP-19",
+    "type": "SMG",
+    "statsVerified": false
+  },
+  {
+    "id": "sw-44",
+    "name": "MPX",
+    "type": "SMG",
+    "statsVerified": false
+  },
+  {
+    "id": "sw-45",
+    "name": "P90",
+    "type": "SMG",
+    "statsVerified": false
+  },
+  {
+    "id": "sw-46",
+    "name": "MP40",
+    "type": "SMG",
+    "statsVerified": false
+  },
+  {
+    "id": "sw-47",
+    "name": "Converted SMG-9 A2",
+    "type": "SMG",
+    "statsVerified": false
+  },
+  {
+    "id": "sw-48",
+    "name": "Copperhead",
+    "type": "SMG",
+    "statsVerified": false
+  },
+  {
+    "id": "sw-49",
+    "name": "Enhanced AUG A3P",
+    "type": "SMG",
+    "statsVerified": false
+  },
+  {
+    "id": "sw-50",
+    "name": "First Wave Vector 45 ACP",
+    "type": "SMG",
+    "statsVerified": false
+  },
+  {
+    "id": "sw-51",
+    "name": "Modified USC",
+    "type": "SMG",
+    "statsVerified": false
+  },
+  {
+    "id": "sw-52",
+    "name": "MP7",
+    "type": "SMG",
+    "statsVerified": false
+  },
+  {
+    "id": "sw-53",
+    "name": "Classic RPK 74",
+    "type": "LMG",
+    "statsVerified": false
+  },
+  {
+    "id": "sw-54",
+    "name": "Lewis Gun",
+    "type": "LMG",
+    "statsVerified": false
+  },
+  {
+    "id": "sw-55",
+    "name": "UMAX100",
+    "type": "LMG",
+    "statsVerified": false
+  },
+  {
+    "id": "sw-56",
+    "name": "RPD",
+    "type": "LMG",
+    "statsVerified": false
+  },
+  {
+    "id": "sw-57",
+    "name": "NEGEV",
+    "type": "LMG",
+    "statsVerified": false
+  },
+  {
+    "id": "sw-58",
+    "name": "Black Market M60 E6",
+    "type": "LMG",
+    "statsVerified": false
+  },
+  {
+    "id": "sw-59",
+    "name": "Stoner LAMG",
+    "type": "LMG",
+    "statsVerified": false
+  },
+  {
+    "id": "sw-60",
+    "name": "PKM",
+    "type": "LMG",
+    "statsVerified": false
+  },
+  {
+    "id": "sw-61",
+    "name": "M249",
+    "type": "LMG",
+    "statsVerified": false
+  },
+  {
+    "id": "sw-62",
+    "name": "Military M60 E4",
+    "type": "LMG",
+    "statsVerified": false
+  },
+  {
+    "id": "sw-63",
+    "name": "Military MK46",
+    "type": "LMG",
+    "statsVerified": false
+  },
+  {
+    "id": "sw-64",
+    "name": "Super 90",
+    "type": "Shotgun",
+    "statsVerified": false
+  },
+  {
+    "id": "sw-65",
+    "name": "ACS-12",
+    "type": "Shotgun",
+    "statsVerified": false
+  },
+  {
+    "id": "sw-66",
+    "name": "Tavor TS12",
+    "type": "Shotgun",
+    "statsVerified": false
+  },
+  {
+    "id": "sw-67",
+    "name": "SPAS-12",
+    "type": "Shotgun",
+    "statsVerified": false
+  },
+  {
+    "id": "sw-68",
+    "name": "RU12SG",
+    "type": "Shotgun",
+    "statsVerified": false
+  },
+  {
+    "id": "sw-69",
+    "name": "M12",
+    "type": "Shotgun",
+    "statsVerified": false
+  },
+  {
+    "id": "sw-70",
+    "name": "SG16-12G",
+    "type": "Shotgun",
+    "statsVerified": false
+  },
+  {
+    "id": "sw-71",
+    "name": "RMB-93",
+    "type": "Shotgun",
+    "statsVerified": false
+  },
+  {
+    "id": "sw-72",
+    "name": "MK 20 SSR",
+    "type": "Marksman Rifle",
+    "statsVerified": false
+  },
+  {
+    "id": "sw-73",
+    "name": "Classic M44",
+    "type": "Marksman Rifle",
+    "statsVerified": false
+  },
+  {
+    "id": "sw-74",
+    "name": "Tactical .308",
+    "type": "Marksman Rifle",
+    "statsVerified": false
+  },
+  {
+    "id": "sw-75",
+    "name": "G28",
+    "type": "Marksman Rifle",
+    "statsVerified": false
+  },
+  {
+    "id": "sw-76",
+    "name": "Converted SRS",
+    "type": "Marksman Rifle",
+    "statsVerified": false
+  },
+  {
+    "id": "sw-77",
+    "name": "L115A3",
+    "type": "Marksman Rifle",
+    "statsVerified": false
+  },
+  {
+    "id": "sw-78",
+    "name": "M700 Carbon",
+    "type": "Marksman Rifle",
+    "statsVerified": false
+  },
+  {
+    "id": "sw-79",
+    "name": "Paratrooper SVD",
+    "type": "Marksman Rifle",
+    "statsVerified": false
+  },
+  {
+    "id": "sw-80",
+    "name": "Surplus SVD",
+    "type": "Marksman Rifle",
+    "statsVerified": false
+  },
+  {
+    "id": "sw-81",
+    "name": "Police Mk17",
+    "type": "Rifle",
+    "statsVerified": false
+  },
+  {
+    "id": "sw-82",
+    "name": "Gewehr 43",
+    "type": "Rifle",
+    "statsVerified": false
+  },
+  {
+    "id": "sw-83",
+    "name": "Winchester 1886",
+    "type": "Rifle",
+    "statsVerified": false
+  },
+  {
+    "id": "sw-84",
+    "name": "M-16",
+    "type": "Rifle",
+    "statsVerified": false
+  },
+  {
+    "id": "sw-85",
+    "name": "Avtomat",
+    "type": "Rifle",
+    "statsVerified": false
+  },
+  {
+    "id": "sw-86",
+    "name": "G3",
+    "type": "Rifle",
+    "statsVerified": false
+  },
+  {
+    "id": "sw-87",
+    "name": "UIC15 MOD2",
+    "type": "Rifle",
+    "statsVerified": false
+  },
+  {
+    "id": "sw-88",
+    "name": "ACE 52",
+    "type": "Rifle",
+    "statsVerified": false
+  },
+  {
+    "id": "sw-89",
+    "name": "M1",
+    "type": "Rifle",
+    "statsVerified": false
+  },
+  {
+    "id": "sw-90",
+    "name": "FG 42",
+    "type": "Rifle",
+    "statsVerified": false
   }
 ]
