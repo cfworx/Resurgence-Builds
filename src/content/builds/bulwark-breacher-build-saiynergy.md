@@ -82,7 +82,7 @@ This is a **Breacher shield build** that anchors a doorway and refuses to leave.
 |---|---|---|
 | **Primary** | Lightweight M4 (T2, AR, Level 45) | **Killer + Breadbasket** (RapidF5 rec) · Long Range Scope · Suppressor · Extended Magazine · Vertical Grip |
 | **Secondary** | First Wave Vector 45 ACP (T2, SMG, Level 44) | **Strained + Adaptation** · Red Dot · Extended Magazine · Suppressor |
-| **OS Protocol** | **Death From Afar** (High-End) | Grants Firepower equal to 21.60% Headshot Damage, capped at 54% Firepower |
+| **OS Protocol** | **Death From Afar** (Superior) | Grants Firepower equal to 21.60% Headshot Damage, capped at 54% Firepower |
 | **Skill 1** | Ballistic Shield | Mobile cover, Breacher signature kit |
 | **Skill 2** | Shockwave Spike Mk.3 | AoE damage reduction debuff + crit chance refresh |
 | **Signature** | Breach Combo | Breacher specialization ability |
@@ -141,7 +141,7 @@ Saiynergy: *"If you max this out, it actually increases not only your power scor
 
 Saiynergy runs **Death From Afar** as his primary OS Protocol.
 
-### 1. Death From Afar (High-End) · RECOMMENDED
+### 1. Death From Afar (Superior) · RECOMMENDED
 
 *"Grants Firepower equal to 21.60% Headshot Damage, capped at 54% Firepower."*
 

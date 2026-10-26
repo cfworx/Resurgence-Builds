@@ -1,8 +1,5 @@
 {
   "_comment": "Notes the build planner shows while a build guide's template is loaded unchanged. Keyed by build id (the file name in src/content/builds). 'text' is shown as written. Optional 'missingWeapons' lists weapons a guide uses that aren't in standard-weapons.json yet, as [name, slot]: write the weapon's name in the plannerHash (for example w2s=P90) and the planner fills that slot as soon as a weapon with that name exists; the note only mentions the ones still missing.",
-  "tech-aegis-engineering-build-tampishach": {
-    "text": "Team Backup and Performance Enhancer show here under their in-game names, Combat Enhancer and Teamfight."
-  },
   "tactical-pharma-season-2-build-ggreborn": {
     "text": "GGReborn doesn't say which two pieces are Fire Cycle, so this uses TikTokAndy's split from the same guide: body armor and holster."
   },

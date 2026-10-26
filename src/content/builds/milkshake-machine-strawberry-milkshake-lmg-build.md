@@ -7,7 +7,7 @@ pve: true
 pvp: true
 lastUpdated: 2026-05-29T00:00:00Z
 patch: "1.1.2.2"
-plannerHash: "s=Vanguard&sc=Commando&n=The+Milkshake+Machine&ms=gs-3&m1=chc&m2=chd&gs=gs-3&g1=chc&g2=chd&hs=gs-3&h1=chd&h2=wd&cs=gs-3&ct=ba-12&c1=chd&c2=wd&ps=gs-1&pt=bp-12&p1=chd&p2=wd&ks=gs-1&k1=chd&k2=opr&w1e=ew-3&w1tr=T1&w1t=wt-22&w1t2=wt-60&w1b1=wd&w1b2=chd&w2s=sw-13&w2tr=T2&w2t=wt-43&w2t2=wt-45&os=os-38&sm1=smc-62&sm2=smc-66&sm3=smc-65"
+plannerHash: "s=Vanguard&sc=Commando&n=The+Milkshake+Machine&ms=gs-3&m1=chc&m2=chd&gs=gs-3&g1=chc&g2=chd&hs=gs-3&h1=chd&h2=wd&cs=gs-3&ct=ba-12&c1=chd&c2=wd&ps=gs-1&pt=bp-12&p1=chd&p2=wd&ks=gs-1&k1=chd&k2=chc&w1e=ew-3&w1tr=T1&w1t=wt-22&w1t2=wt-60&w1b1=wd&w1b2=chd&w2s=sw-13&w2tr=T2&w2t=wt-43&w2t2=wt-45&os=os-38&sm1=smc-62&sm2=smc-66&sm3=smc-65"
 tags: ["Builds", "Vanguard", "LMG", "Exotic", "Strawberry Milkshake", "Phalanx Attack", "In Sync", "Multi-Shot", "Dominating Presence"]
 description: "Vanguard Strawberry Milkshake LMG build: Phalanx Attack 4pc, In Sync double-dip, Dominating Presence OS. 118-round Multi-Shot crit avalanche."
 author: "RapidF5"
@@ -99,7 +99,7 @@ This is not a glass-cannon-and-die build. The Extra Health from Swift Taunt is u
 | Backpack | Fury Strike | **Inspiration** | Firepower | WCHD | Weapon Damage |
 | Gloves | Phalanx Attack | none | Firepower | WCHC | WCHD |
 | Holster | Phalanx Attack | none | Firepower | WCHD | Weapon Damage |
-| Kneepads | Fury Strike | none | Firepower | WCHD | Optimal Range |
+| Kneepads | Fury Strike | none | Firepower | WCHD | WCHC |
 
 **Set Bonuses:**
 
@@ -151,7 +151,7 @@ Three skill mod combo sets, one per skill. All confirmed in-game on Patch 1.1.2.
 
 **Mask, Gloves, Holster: Phalanx Attack (Firepower core).** These are your crit roll slots. Stack WCHC on the mask and gloves, WCHD on the holster. The Phalanx 4pc set bonus is the entire reason this build exists, and these three slots round out the 4pc count. If RNG gives you bad rolls, welcome to the club. We meet on Tuesdays.
 
-**Kneepads: Fury Strike with Optimal Range secondary.** Fury Strike 2pc gives you +10% Optimal Range, stacking on Strawberry Milkshake's 29m base. Optimal Range roll on the kneepads pushes it further. The goal: delete things before they get close enough to remind you that Glass Cannon exists and your reflexes aren't what they were in 2008.
+**Kneepads: Fury Strike, crit rolls.** Fury Strike 2pc gives you +10% Optimal Range, stacking on Strawberry Milkshake's 29m base. Optimal Range isn't in the gear roll pool, so more range has to come from weapon mods. The goal: delete things before they get close enough to remind you that Glass Cannon exists and your reflexes aren't what they were in 2008.
 
 ---
 
@@ -186,7 +186,7 @@ This is a survival swap, not a primary damage tool. Talents: **Revitalize** (kil
 | WCHD | 60%+ from gear rolls |
 | WCHC | 25%+ from gear rolls (Commando adds +10.20% during Link, Armored Train adds up to +6% passive) |
 | Multi-Shot Chance | 37%+ total (Phalanx +12% + Dominating Presence +20% + gear) |
-| Optimal Range | Extended via Fury Strike 2pc + kneepad roll on top of SM's 29m base |
+| Optimal Range | Extended via Fury Strike 2pc and weapon mods on top of SM's 29m base |
 | Weapon Damage | Roll on Body Armor, backpack, holster where WCHD is not primary |
 | Avoid | Blast Damage, Piercing Damage on old rolls. SM is Shredding only (and since Season 2 Phase 1, new weapon rolls use All Weapon Damage instead). |
 
@@ -201,7 +201,7 @@ This is a survival swap, not a primary damage tool. Talents: **Revitalize** (kil
 | Backpack | Fury Strike | Firepower | WCHD + WD | Inspiration talent |
 | Gloves | Phalanx Attack | Firepower | WCHC + WCHD | Crit roll slot |
 | Holster | Phalanx Attack | Firepower | WCHD + WD | - |
-| Kneepads | Fury Strike | Firepower | WCHD + Optimal Range | - |
+| Kneepads | Fury Strike | Firepower | WCHD + WCHC | - |
 | Primary | Strawberry Milkshake | Exotic LMG | WD + WCHD | In Sync + Swift Taunt |
 | Secondary | PPSH-41 (T2) | SMG | - | Revitalize + Sentinel Aura |
 | OS Protocol | Dominating Presence | - | Any | Multi-Shot talent is what matters |
