@@ -18,7 +18,7 @@ sources:
   - '<a href="https://www.youtube.com/watch?v=b1ZjnGeeRKI">AgentHuntzman, Best Scout Build in Division Resurgence (Vanguard Meta)</a>, April 26, 2026.'
   - 'In-game Division Resurgence Build Database, verified May 2026.'
   - 'The in-game Armory, community gear and talent reference.'
-plannerHash: "s=Vanguard&sc=Recon&n=Vanguard+Recon+Support&ms=gs-10&m1=scr&m2=sdu&gs=gs-12&g1=sdu&g2=scr&hs=gs-10&h1=sace&h2=sdu&cs=gs-12&ct=ba-20&c1=arm&c2=dr&ps=gs-12&pt=bp-2&p1=sdu&p2=scr&ks=gs-12&k1=scr&k2=wd&w1s=sw-2&w1t=wt-66&w1t2=wt-42&w1b1=awd&w1b2=wd&w2s=P90&w2t=wt-66&w2t2=wt-20&w2b1=awd&w2b2=wd&os=os-14&sm1=smc-72&sm2=smc-57&sm3=smc-59"
+plannerHash: "s=Vanguard&sc=Recon&n=Vanguard+Recon+Support&ms=gs-10&m1=scr&m2=sdu&gs=gs-12&g1=sdu&g2=scr&hs=gs-10&h1=sace&h2=sdu&cs=gs-12&ct=ba-20&c1=arm&c2=dr&ps=gs-12&pt=bp-2&p1=sdu&p2=scr&ks=gs-12&k1=scr&k2=wd&w1s=sw-2&w1t=wt-66&w1t2=wt-42&w1b1=awd&w1b2=wd&w2s=sw-45&w2t=wt-66&w2t2=wt-20&w2b1=awd&w2b2=wd&os=os-14&sm1=smc-72&sm2=smc-57&sm3=smc-59"
 faqs:
   - question: "Why does my DPS look terrible on this build?"
     answer: "Because you're reading the wrong number, champ. Your stats show YOUR damage. It does not show the Weapon Damage you're pumping into every teammate through Smart Cover, the roughly +20% vulnerability from Scanning Pulse, or the rate-of-fire buff from Tactical Link. Your team's total DPS is tripling. Yours just isn't the one doing it. Think of yourself as the guy who brought the aux cord to the party. Nobody thanks the DJ, but the party dies without him."

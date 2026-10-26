@@ -19,7 +19,7 @@ featuredImage: "/images/builds/jackpot-striker-drone-hero.webp"
 imageAlt: "Tech Operator Striker Drone Build with Jackpot and Fire Cycle in Division Resurgence"
 shareTitle: "Share a Tech Operator violation"
 shareText: "Tag your worst Rampart reset (you know, the one where you stepped off cover for the loot crate and watched six stacks evaporate one second before the boss died)."
-plannerHash: "s=Tech+Operator&sc=Offensive+Operations&n=Jackpot+Striker+Drone&ms=gs-7&m1=scc&m2=scd&gs=gs-11&g1=scc&g2=scd&hs=gs-11&h1=scc&h2=scd&cs=gs-7&ct=ba-14&c1=mhp&c2=scd&ps=gs-7&pt=bp-17&p1=scc&p2=sms&ks=gs-7&k1=scc&k2=sms&w1s=sw-29&w1tr=T2&w1t=wt-17&w1t2=wt-3&w1b1=sms&w1b2=scd&w2s=sw-33&w2t=wt-66&w2t2=wt-42&w2b1=sms&w2b2=rh&os=os-6&sm1=smc-23&sm2=smc-26&sm3=smc-20"
+plannerHash: "s=Tech+Operator&sc=Offensive+Operations&n=Jackpot+Striker+Drone&ms=gs-7&m1=scc&m2=scd&gs=gs-11&g1=scc&g2=scd&hs=gs-11&h1=scc&h2=scd&cs=gs-7&ct=ba-14&c1=mhp&c2=scd&ps=gs-7&pt=bp-17&p1=scc&p2=sms&ks=gs-7&k1=scc&k2=sms&w1s=sw-29&w1tr=T2&w1t=wt-17&w1t2=wt-3&w1b1=sms&w1b2=scd&w2s=sw-33&w2t=wt-66&w2t2=wt-42&w2b1=sms&w2b2=rh&os=os-6&sm1=smc-20&sm2=smc-23&sm3=smc-26"
 faqs:
   - question: "What is the best Tech Operator build in Division Resurgence?"
     answer: "A Jackpot 4-piece plus Fire Cycle 2-piece Skill Crit build using Hunting M44 and Mk16 was one of the cleanest Tech Operator Offensive Operations setups when we wrote it up on Patch 1.1.2.2, and Season 2 didn't touch its core pieces. The Striker Drone scales with Engineering, Skill Critical Chance, and Skill Critical Damage, all of which the Jackpot and Fire Cycle sets stack natively, and Rampart adds another damage layer on top."
