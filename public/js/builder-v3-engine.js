@@ -1035,9 +1035,34 @@
     return out;
   }
 
+  /* How closely a search matches an option: the exact name, then names that start with it, then a
+     word in the name that starts with it, then anywhere in the name, then other names, then the
+     rest of the option's text. */
+  function matchRank(it, q) {
+    const n = key(it.name);
+    if (n === q) return 0;
+    let at = n.indexOf(q);
+    if (at === 0) return 1;
+    if (at > 0) {
+      while (at > 0 && /[a-z0-9]/.test(n[at - 1])) at = n.indexOf(q, at + 1);
+      return at > 0 ? 2 : 3;
+    }
+    return key(it.alias).includes(q) ? 4 : 5;
+  }
+
   function drawList(query) {
     const q = key(query);
-    const items = listCtx.items.filter((it) => !q || it.none || key(`${it.name} ${it.tag || ''} ${it.desc || ''} ${it.group || ''} ${it.alias || ''}`).includes(q));
+    let items = listCtx.items.filter((it) => !q || it.none || key(`${it.name} ${it.tag || ''} ${it.desc || ''} ${it.group || ''} ${it.alias || ''}`).includes(q));
+    if (q) {
+      // closest matches first; groups stay together, the group with the closest match goes first
+      const order = new Map();
+      for (const it of listCtx.items) if (!order.has(it.group || '')) order.set(it.group || '', order.size);
+      const ranked = items.map((it, i) => ({ it, i, g: it.group || '', r: it.none ? -1 : matchRank(it, q) }));
+      const best = new Map();
+      for (const x of ranked) if (!best.has(x.g) || x.r < best.get(x.g)) best.set(x.g, x.r);
+      ranked.sort((a, b) => best.get(a.g) - best.get(b.g) || order.get(a.g) - order.get(b.g) || a.r - b.r || a.i - b.i);
+      items = ranked.map((x) => x.it);
+    }
     const nodes = [];
     let group = '';
     for (const it of items) {
