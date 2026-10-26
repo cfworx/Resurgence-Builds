@@ -1,5 +1,5 @@
 ---
-title: "Division Resurgence Reddit Highlights - 10 Best Posts May 28"
+title: "Division Resurgence Reddit Highlights: 10 Best Posts May 28"
 publishDate: "2026-05-28T21:00:00Z"
 updatedDate: 2026-10-24
 author: "RapidF5"
@@ -158,13 +158,13 @@ Want to make sure your build keeps up with the Phase 2 meta shifts? Check out ou
 ---
 
 **Sources:**
-- [Somebody Passed Out in Main HQ - u/Bruce_wayne____](https://www.reddit.com/r/thedivisionresurgence/comments/1th6iwh/somebody_passed_out_in_main_hq_waiting_for_fixes/)
-- [Spiderman Resurgence - u/craig_cloud](https://www.reddit.com/r/thedivisionresurgence/comments/1tpy3xu/spiderman_resurgence/)
-- [NYC Base Janitor Deserves Hazard Pay - u/JA_Guyyy](https://www.reddit.com/r/thedivisionresurgence/comments/1tmnffz/nyc_base_janitor_deserves_hazard_pay_at_this_point/)
-- [Vendor Got Tired of Buying From Me - u/NoPart7463](https://www.reddit.com/r/thedivisionresurgence/comments/1tj8azi/vendor_got_tired_of_buying_from_me/)
-- [Why Are They Offering Me So Much for My Old Gun - u/Recycled_Michael](https://www.reddit.com/r/thedivisionresurgence/comments/1the6bx/why_are_they_offering_me_so_much_for_my_old_gun/)
-- [Devs Can You Please Fix the Exposed Neck - u/MuffDivers2_](https://www.reddit.com/r/thedivisionresurgence/comments/1tn41h3/devs_can_you_please_fix_the_exposed_neck_the/)
-- [Is It a Bug or They Saw an Opportunity - u/Gullible_Secret8109](https://www.reddit.com/r/thedivisionresurgence/comments/1thnifd/is_it_a_bugg_or_they_saw_an_opportunity/)
-- [These Augment Crates Have to Be Weighted - u/X_CLOWNEY_X](https://www.reddit.com/r/thedivisionresurgence/comments/1tns80a/these_augment_crates_have_to_be_weighted_right/)
-- [Reading Simulator - u/NoPart7463](https://www.reddit.com/r/thedivisionresurgence/comments/1tnzvbo/this_game_should_be_called_reading_simulator/)
-- [4 Years Down the Drain - u/BusinessCultural3831](https://www.reddit.com/r/thedivisionresurgence/comments/1thrm5a/4_years_down_the_drain/)
+- [Somebody Passed Out in Main HQ, by u/Bruce_wayne____](https://www.reddit.com/r/thedivisionresurgence/comments/1th6iwh/somebody_passed_out_in_main_hq_waiting_for_fixes/)
+- [Spiderman Resurgence, by u/craig_cloud](https://www.reddit.com/r/thedivisionresurgence/comments/1tpy3xu/spiderman_resurgence/)
+- [NYC Base Janitor Deserves Hazard Pay, by u/JA_Guyyy](https://www.reddit.com/r/thedivisionresurgence/comments/1tmnffz/nyc_base_janitor_deserves_hazard_pay_at_this_point/)
+- [Vendor Got Tired of Buying From Me, by u/NoPart7463](https://www.reddit.com/r/thedivisionresurgence/comments/1tj8azi/vendor_got_tired_of_buying_from_me/)
+- [Why Are They Offering Me So Much for My Old Gun, by u/Recycled_Michael](https://www.reddit.com/r/thedivisionresurgence/comments/1the6bx/why_are_they_offering_me_so_much_for_my_old_gun/)
+- [Devs Can You Please Fix the Exposed Neck, by u/MuffDivers2_](https://www.reddit.com/r/thedivisionresurgence/comments/1tn41h3/devs_can_you_please_fix_the_exposed_neck_the/)
+- [Is It a Bug or They Saw an Opportunity, by u/Gullible_Secret8109](https://www.reddit.com/r/thedivisionresurgence/comments/1thnifd/is_it_a_bugg_or_they_saw_an_opportunity/)
+- [These Augment Crates Have to Be Weighted, by u/X_CLOWNEY_X](https://www.reddit.com/r/thedivisionresurgence/comments/1tns80a/these_augment_crates_have_to_be_weighted_right/)
+- [Reading Simulator, by u/NoPart7463](https://www.reddit.com/r/thedivisionresurgence/comments/1tnzvbo/this_game_should_be_called_reading_simulator/)
+- [4 Years Down the Drain, by u/BusinessCultural3831](https://www.reddit.com/r/thedivisionresurgence/comments/1thrm5a/4_years_down_the_drain/)

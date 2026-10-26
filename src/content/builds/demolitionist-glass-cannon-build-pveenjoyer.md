@@ -1,5 +1,5 @@
 ---
-title: "Demolitionist Glass Cannon - 333k DPS Fire Cycle T2"
+title: "Demolitionist Glass Cannon: 333k DPS Fire Cycle T2"
 specialization: "Demolitionist"
 subclass: "Glass Cannon"
 playstyle: DPS
@@ -35,7 +35,7 @@ faqs:
   - question: "How do I get my Skill Multi-Shot Chance that high?"
     answer: "Stack the +12% from Fire Cycle 4pc, the +21% from Toymaker II while outside 20m, the +7.81% from the StG 44 weapon attribute, the +2.69% from the Javelina Mask, the +3.5% from the Ops Armor, the +2.47% from the Explosive Seeker Mine firmware, and the +1% per Artillery Turret tick (5 stack cap) from Frag Grenades firmware. If those all stack additively, every source live at once is about 54% on paper, more if your gloves and knee pads roll it too. In a normal rotation, with turret stacks and Toymaker's 20m condition dropping in and out, expect something closer to 35-45%."
 videoId: "zJ5t0lGR1gU"
-videoTitle: "PVE Enjoyer - Demolitionist Build Guide"
+videoTitle: "PVE Enjoyer: Demolitionist Build Guide"
 videoChannel: "PVE Enjoyer"
 howTo:
   name: "How to Stack Skill Multi-Shot Chance on a Demolitionist Build"

@@ -29,7 +29,7 @@ faqs:
   - question: "I'm running the older May Tactical Pharma build. What should I change?"
     answer: "Start with the weapon mods. Season 2 Phase 1 added Skill Intensity and Skill Critical Damage to their bonus pool, old mods keep their old rolls, and GGReborn's mods carry the new ones. He keeps the Jackpot 4pc + Fire Cycle 2pc core and the Glass Cannon chest from our May build page, but runs Brains Over Brawn where that page recommends Rampart, Minion Training II instead of Prime Engineer, and a Lightweight M4 plus First Wave Vector instead of the Vector and MK16 swap. Rampart wasn't in his OS Protocol test, but the four he did test finished within five seconds of each other, so don't burn a month of caches on the OS before the mods are sorted."
 videoId: "OVnksyrlj88"
-videoTitle: "GGReborn - BEST Tactical Pharma Build + Solo Legendary Gameplay"
+videoTitle: "GGReborn: BEST Tactical Pharma Build + Solo Legendary Gameplay"
 videoChannel: "GGReborn"
 ---
 

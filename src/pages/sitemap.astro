@@ -52,7 +52,7 @@ const excludeTags = ['tag1', 'tag2'];
 const uniqueTags = Array.from(allTags).filter(t => !excludeTags.includes(t)).sort();
 const tagSlugify = (tag: string) => tag.toLowerCase().replace(/\s+/g, '-');
 ---
-<BaseLayout noAds title="HTML Sitemap - Resurgence Builds" description="A complete HTML sitemap of every build, guide, database entry, and news post on Resurgence Builds for easy navigation.">
+<BaseLayout noAds title="HTML Sitemap" description="A complete HTML sitemap of every build, guide, database entry, and news post on Resurgence Builds for easy navigation.">
   <div class="container section">
     <h1 class="heading-accent">Site Archive (Sitemap)</h1>
     <div class="prose" style="max-width: 900px;">

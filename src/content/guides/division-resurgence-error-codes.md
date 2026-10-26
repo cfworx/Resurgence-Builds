@@ -1,5 +1,5 @@
 ---
-title: "All Error Codes - Division Resurgence 2026"
+title: "All Error Codes | Division Resurgence 2026"
 category: "General"
 publishDate: 2026-05-28
 lastUpdated: 2026-10-24T12:00:00Z

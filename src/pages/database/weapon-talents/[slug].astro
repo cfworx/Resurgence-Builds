@@ -50,7 +50,7 @@ function getBuildArchetype(description: string): { primary: string; label: strin
     return {
       primary: 'dps-crit',
       label: 'DPS / Crit Build',
-      prose: `This is a crit-focused talent - it wants you stacking Critical Hit Chance and Critical Hit Damage everywhere. The more crits you land, the harder it snowballs. On the right build, the damage output gets disgusting fast. On the wrong build (low crit chance), it's basically a dead talent slot.`,
+      prose: `This is a crit-focused talent: it wants you stacking Critical Hit Chance and Critical Hit Damage everywhere. The more crits you land, the harder it snowballs. On the right build, the damage output gets disgusting fast. On the wrong build (low crit chance), it's basically a dead talent slot.`,
       builds: `SMG builds with innate Crit Chance love this. ARs with crit-stacked gear sets like Fury Strike or Phalanx Attack are also prime candidates. If your build sheet shows 50%+ Crit Chance, this talent turns those orange numbers into real damage. Low-crit tank builds should look elsewhere.`
     };
   }
@@ -74,7 +74,7 @@ function getBuildArchetype(description: string): { primary: string; label: strin
     return {
       primary: 'dps',
       label: 'DPS / Firepower',
-      prose: `Pure damage talent. No gimmicks, no conditions you'll forget about mid-firefight - just more weapon damage. This is the kind of talent you slot when you want your bullets to hit harder and you don't want to think about it too much. Point, shoot, things die faster.`,
+      prose: `Pure damage talent. No gimmicks, no conditions you'll forget about mid-firefight. Just more weapon damage. This is the kind of talent you slot when you want your bullets to hit harder and you don't want to think about it too much. Point, shoot, things die faster.`,
       builds: `Any Firepower-stacked DPS build benefits from raw weapon damage. AR mains running Fury Strike, LMG builds going for sustained damage, and Marksman Rifle users who want bigger headshot numbers. If your core attribute is Firepower and your job is killing things, this talent fits.`
     };
   }
@@ -265,7 +265,7 @@ const talentLd = {
         <h2 style="font-family: var(--font-heading); font-size: var(--text-lg); font-weight: 800; color: #fff; margin: 0 0 var(--sp-4) 0; padding-bottom: var(--sp-2); border-bottom: 1px solid rgba(255,255,255,0.08);">How to Get {talent.name}</h2>
         <div style="color: #c8c8d0; line-height: 1.75; font-size: var(--text-base);">
           <p>Weapon talents roll randomly on <strong style="color: #fff;">Tier 2 weapons</strong>: any T2 drop has a chance to have {talent.name}. Your best farming spots are Heroic missions (guaranteed T2 drops on completion), the DZ (extracted weapons are frequently T2), and weekly bounties. Conflict reward caches also drop T2 weapons with random talents.</p>
-          <p>Once you find a weapon with {talent.name}, you can use it as a source to <strong style="color: #fff;">re-roll the talent</strong> onto another weapon at the recalibration station. Keep in mind: each weapon only gets <strong style="color: var(--accent);">one recalibration slot</strong>. If you recalibrated a stat on the weapon already, you can't also swap the talent. Plan your recalibrations before you commit. Check the <a href="/guides/division-resurgence-codes/" style="color: var(--accent);">active codes page</a> too - Ubisoft occasionally drops weapon caches during events that can have solid talent rolls.</p>
+          <p>Once you find a weapon with {talent.name}, you can use it as a source to <strong style="color: #fff;">re-roll the talent</strong> onto another weapon at the recalibration station. Keep in mind: each weapon only gets <strong style="color: var(--accent);">one recalibration slot</strong>. If you recalibrated a stat on the weapon already, you can't also swap the talent. Plan your recalibrations before you commit. Check the <a href="/guides/division-resurgence-codes/" style="color: var(--accent);">active codes page</a> too, since Ubisoft occasionally drops weapon caches during events that can have solid talent rolls.</p>
         </div>
       </div>
       )}

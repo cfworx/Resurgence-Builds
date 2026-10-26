@@ -1,10 +1,10 @@
 ---
-title: "Division Resurgence Asian Server Maintenance - May 26"
+title: "Division Resurgence Asian Server Maintenance, May 26"
 publishDate: "2026-05-25T18:57:00Z"
 updatedDate: 2026-10-24
 author: "RapidF5"
 featuredImage: "/images/news/division-resurgence-asian-server-maintenance-may-26-2026.jpg"
-imageAlt: "Division Resurgence Asian server maintenance notice - servers going offline May 26 2026 starting 1PM CET for latency improvements"
+imageAlt: "Division Resurgence Asian server maintenance notice: servers going offline May 26 2026 starting 1PM CET for latency improvements"
 description: "Asian servers are going down tomorrow, May 26, starting at 1PM CET for a couple of hours. They are being moved closer to players to reduce latency."
 tags: ["Alert", "Maintenance", "Asian Servers", "Server Update"]
 shareTitle: "Asian Server Maintenance Tomorrow"

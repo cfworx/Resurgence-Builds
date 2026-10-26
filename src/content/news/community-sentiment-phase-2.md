@@ -75,7 +75,7 @@ The team also opened a public question intake before the stream ([u/TDResurgence
 
 What the subreddit is now asking for is a regular drumbeat: monthly Q&As, posted patch-note previews, and an in-game news ticker. Ubisoft has not committed to a public cadence, and the next scheduled official update on the calendar was Phase 3.
 
-## 6. What's coming next - and what is locked in
+## 6. What's coming next, and what is locked in
 
 The 2026 roadmap is the clearest forward picture players have ever had of this game:
 

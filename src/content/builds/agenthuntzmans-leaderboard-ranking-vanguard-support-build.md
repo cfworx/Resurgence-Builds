@@ -33,7 +33,7 @@ faqs:
   - question: "Why Mechanical Expert over Long-Term Effect?"
     answer: "Mechanical Expert is the correct choice because the 2pc Skill Duration and 3pc CDR keep your Smart Cover and Scanning Pulse cycling with near-permanent uptime. The 4pc SAC Efficiency bonus means your Tactical Link charges faster. You need permanent skill uptime before you need bigger numbers. A buff that's down for 5 seconds between casts is doing zero damage during those 5 seconds, no matter how large the number is."
 videoId: "b1ZjnGeeRKI"
-videoTitle: "AgentHuntzman - Best Scout Build in Division Resurgence"
+videoTitle: "AgentHuntzman: Best Scout Build in Division Resurgence"
 videoChannel: "AgentHuntzman"
 ---
 
@@ -105,7 +105,7 @@ AgentHuntzman's video shows mixed cores (Toughness on Body Armor, Firepower on b
 
 ### Mechanical Expert 4-Piece
 
-The 2pc (+9.6% Skill Duration) and 3pc (-9.0% CDR) keep your skills cycling with near-permanent uptime. The 4pc boosts SAC Efficiency, meaning your Tactical Link charges faster from all sources. Exact set bonus values are build-specific and depend on gear level - treat any percentages here as approximate.
+The 2pc (+9.6% Skill Duration) and 3pc (-9.0% CDR) keep your skills cycling with near-permanent uptime. The 4pc boosts SAC Efficiency, meaning your Tactical Link charges faster from all sources. Exact set bonus values are build-specific and depend on gear level, so treat any percentages here as approximate.
 
 ### Boom-Shakalaka 2-Piece
 
@@ -123,7 +123,7 @@ But the Body Armor slot has genuine competitors that are worth knowing:
 
 **Deep Focus:** *"Grants +28% Skill Duration but inflicts -10% Skill Radius."*
 
-This might actually be the better pick for this build. +28% Skill Duration directly extends your Smart Cover uptime and your Scanning Pulse vulnerability window. The -10% Skill Radius penalty sounds scary but does nothing meaningful here: based on current testing, Skill Radius provides minimal benefit to this build - your Smart Cover is placed on a specific piece of cover and your Scanning Pulse already fills a room at base range. If you care more about uptime than staying alive, Deep Focus is worth testing over Socialite.
+This might actually be the better pick for this build. +28% Skill Duration directly extends your Smart Cover uptime and your Scanning Pulse vulnerability window. The -10% Skill Radius penalty sounds scary but does nothing meaningful here: based on current testing, Skill Radius provides minimal benefit to this build: your Smart Cover is placed on a specific piece of cover and your Scanning Pulse already fills a room at base range. If you care more about uptime than staying alive, Deep Focus is worth testing over Socialite.
 
 **Accelerated Charge:** *"Kills and assists behind cover grant +30% Signature Ability Charge Efficiency for 8 seconds."*
 
@@ -219,7 +219,7 @@ What it doesn't say upfront: the **Foxhole** specialization node (3/3) grants **
 
 **Scanning Pulse** applies Target Vulnerability and Exposed stacks to enemies. In testing with this gear setup, duration runs roughly 17 seconds with cooldown around 15 seconds, giving near-permanent uptime. Every enemy your Pulse touches takes significantly more damage from your entire team.
 
-**Tactical Link (Bugle Call)** buffs the team with increased Rate of Fire, Damage Reduction, and Movement Speed (exact values vary by mod rank - approximate figures from community testing suggest roughly 14% RoF, with DR and Movement Speed buffs on top). Duration runs approximately 22 seconds in this setup. Every shot fires faster. Every shot hits enemies who are already debuffed. Every shot is boosted by Smart Cover. Plus Target Rich Environment grants Accuracy, Stability, and Reload Speed during Link.
+**Tactical Link (Bugle Call)** buffs the team with increased Rate of Fire, Damage Reduction, and Movement Speed (exact values vary by mod rank; approximate figures from community testing suggest roughly 14% RoF, with DR and Movement Speed buffs on top). Duration runs approximately 22 seconds in this setup. Every shot fires faster. Every shot hits enemies who are already debuffed. Every shot is boosted by Smart Cover. Plus Target Rich Environment grants Accuracy, Stability, and Reload Speed during Link.
 
 The team's DPS doesn't just go up. It multiplies across three separate buff stages.
 

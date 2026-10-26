@@ -14,7 +14,7 @@ author: "RapidF5 (via TikTokAndy)"
 shareTitle: "Crit until it gets boring"
 shareText: "About 60% crit out of combat, close to 100% inside Tactical Link. TikTokAndy's beginner Commando build works with whatever gun you have."
 videoId: "vtsTpS78aTA"
-videoTitle: "TikTokAndy - BEGINNER Vanguard DPS Build (W/ Any Weapon)"
+videoTitle: "TikTokAndy: BEGINNER Vanguard DPS Build (W/ Any Weapon)"
 videoChannel: "TikTokAndy"
 faqs:
   - question: "What is a good beginner Vanguard build in Division Resurgence?"

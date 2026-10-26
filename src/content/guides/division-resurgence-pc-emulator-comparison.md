@@ -1,5 +1,5 @@
 ---
-title: "PC Emulator Comparison - Division Resurgence"
+title: "PC Emulator Comparison | Division Resurgence"
 category: "General"
 publishDate: 2026-05-28
 lastUpdated: 2026-10-24T12:00:00Z

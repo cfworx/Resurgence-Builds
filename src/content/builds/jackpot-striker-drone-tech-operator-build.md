@@ -93,9 +93,9 @@ If you do not have Rampart yet, **Surgical Engineering** is a serviceable fallba
 
 The skill mods are all built around the Striker Drone with a Drone Overload synergy:
 
-- **Stabilized Flight** - 2-piece +Skill Health 6.0%, 3-piece "Applying Drone Lock grants +9% Skill Critical Hit Chance for 20 seconds"
-- **Optimized Targeting** - 2-piece +Skill Health 8.0%, 3-piece "Within 30 seconds of activating Drone Overload, Striker Drone hits have a 10% chance of granting +21.80% Skill Critical Hit Chance for 20 seconds"
-- **Thermite Charge** - 2-piece +Skill Health 6.0%, 3-piece "Striker Drone Critical Hits have a 7.40% chance of exploding, dealing 300% damage"
+- **Stabilized Flight**: 2-piece +Skill Health 6.0%, 3-piece "Applying Drone Lock grants +9% Skill Critical Hit Chance for 20 seconds"
+- **Optimized Targeting**: 2-piece +Skill Health 8.0%, 3-piece "Within 30 seconds of activating Drone Overload, Striker Drone hits have a 10% chance of granting +21.80% Skill Critical Hit Chance for 20 seconds"
+- **Thermite Charge**: 2-piece +Skill Health 6.0%, 3-piece "Striker Drone Critical Hits have a 7.40% chance of exploding, dealing 300% damage"
 
 The reason these three sit together is the chain reaction they trigger. Activate Drone Overload, hit something with Drone Lock, and you stack a +9% Skill Crit Chance buff (Stabilized Flight) plus a chance at +21.80% Skill Crit Chance (Optimized Targeting). Once the drone is critting, Thermite Charge starts rolling for 7.40% explosion procs at 300% damage on every crit. It is a feedback loop built into the gear.
 
@@ -129,8 +129,8 @@ The fourth Jackpot piece. Skill Critical Chance and Skill Multi-Shot Chance get 
 
 ### Hunting M44 (T2 Marksman Rifle) Talents
 
-- **Enhancement Trade 2** - "Grants +8.40% Skill Intensity for each 20% of the Magazine Size emptied for 8 seconds, up to 4 stacks. Talent Cooldown: 1 second." Empty 80% of the magazine, get +33.60% Skill Intensity for 8 seconds. That is a flat damage and effect amplifier on the drone every time you dump a mag.
-- **Ammo Supply** - "Shooting has a 54% chance of returning the bullet in the magazine if it contains less than 30% of its ammo." Once you are under 30% mag, you start getting bullets back at better than coin-flip odds, which lets you keep firing into the back of the magazine to extend the Enhancement Trade window.
+- **Enhancement Trade 2**: "Grants +8.40% Skill Intensity for each 20% of the Magazine Size emptied for 8 seconds, up to 4 stacks. Talent Cooldown: 1 second." Empty 80% of the magazine, get +33.60% Skill Intensity for 8 seconds. That is a flat damage and effect amplifier on the drone every time you dump a mag.
+- **Ammo Supply**: "Shooting has a 54% chance of returning the bullet in the magazine if it contains less than 30% of its ammo." Once you are under 30% mag, you start getting bullets back at better than coin-flip odds, which lets you keep firing into the back of the magazine to extend the Enhancement Trade window.
 
 (Our weapon database lists the Hunting M44 as a five-round marksman rifle, so each 20% of the magazine is one shot and "under 30%" means your last round.)
 
@@ -138,8 +138,8 @@ The combo is intentional. Dump the front of the mag fast to ramp Enhancement Tra
 
 ### Mk16 (AR) Talents
 
-- **Torrential Downpour 2** - "Hitting enemies 10 times within 5 seconds grants +31.50% Engineering for 12 seconds." The Mk16 fires fast enough that ten hits in five seconds is easy on any close-range target. Twelve seconds of +31.50% Engineering covers an entire engagement.
-- **Rapid Charge** - "Hitting an enemy 5 times in 3 seconds grants 50 Signature Ability Charge." Free Signature charge for shooting things, which means Drone Overload comes back faster, which means Optimized Targeting's 30-second window keeps refreshing.
+- **Torrential Downpour 2**: "Hitting enemies 10 times within 5 seconds grants +31.50% Engineering for 12 seconds." The Mk16 fires fast enough that ten hits in five seconds is easy on any close-range target. Twelve seconds of +31.50% Engineering covers an entire engagement.
+- **Rapid Charge**: "Hitting an enemy 5 times in 3 seconds grants 50 Signature Ability Charge." Free Signature charge for shooting things, which means Drone Overload comes back faster, which means Optimized Targeting's 30-second window keeps refreshing.
 
 The Mk16 is your reposition weapon. Swap to it when you need to move, dump rounds into a target, get Torrential Downpour rolling, then go back to the M44 once you anchor for the next position.
 
@@ -147,9 +147,9 @@ The Mk16 is your reposition weapon. Swap to it when you need to move, dump round
 
 If you do not have Rampart yet:
 
-- **Surgical Engineering** (High-End) - Skill Critical Hits have a 60% chance of granting +16% Skill Critical Damage for 10 seconds, up to 3 stacks. This is the cleanest stand-in because it adds another Skill Crit Damage layer on a build that is already proccing Skill Crit constantly
-- **Tactical Layering** (High-End) - Deploying a Skill grants +15% Engineering, up to 3 stacks. Easier to maintain than Rampart, lower ceiling
-- **Ambusher** (Superior) - Being immobile for 3 seconds grants +22.50% Engineering. Same immobile-rewarding philosophy as Rampart at lower rarity
+- **Surgical Engineering** (High-End): Skill Critical Hits have a 60% chance of granting +16% Skill Critical Damage for 10 seconds, up to 3 stacks. This is the cleanest stand-in because it adds another Skill Crit Damage layer on a build that is already proccing Skill Crit constantly
+- **Tactical Layering** (High-End): Deploying a Skill grants +15% Engineering, up to 3 stacks. Easier to maintain than Rampart, lower ceiling
+- **Ambusher** (Superior): Being immobile for 3 seconds grants +22.50% Engineering. Same immobile-rewarding philosophy as Rampart at lower rarity
 
 Rampart is the goal. Everything else is a placeholder until you roll it.
 

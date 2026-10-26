@@ -1,5 +1,5 @@
 ---
-title: "Reddit Highlights June 17 to July 2 - Division Resurgence"
+title: "Reddit Highlights June 17 to July 2 | Division Resurgence"
 publishDate: "2026-07-02"
 updatedDate: 2026-10-24
 author: "RapidF5"
@@ -177,10 +177,10 @@ For context on what actually changed in Phase 3, our [A New Fire patch notes bre
 
 ## Keep Reading
 
-- [Phase 3 "A New Fire" Patch Notes Breakdown](/patch-notes/season-1-phase-3-a-new-fire/) - the full class changes, Scorpio, and sealed crate improvements
-- [Server Hotfix Alert: June 26, 2026](/news/server-hotfix-june-26-2026/) - damage reduction cap, Pummeling Shield nerf, and iOS crash fix
-- [Reddit Highlights: June 16 Edition](/news/reddit-weekly-highlights-june-16/) - Fly Boi, locked crates, and the PKM reload prayer circle
-- [Reddit Highlights: May 28 Edition](/news/reddit-weekly-highlights-may-28/) - Spiderman Resurgence, the NYC janitor, and ghost loot
+- [Phase 3 "A New Fire" Patch Notes Breakdown](/patch-notes/season-1-phase-3-a-new-fire/): the full class changes, Scorpio, and sealed crate improvements
+- [Server Hotfix Alert: June 26, 2026](/news/server-hotfix-june-26-2026/): damage reduction cap, Pummeling Shield nerf, and iOS crash fix
+- [Reddit Highlights: June 16 Edition](/news/reddit-weekly-highlights-june-16/): Fly Boi, locked crates, and the PKM reload prayer circle
+- [Reddit Highlights: May 28 Edition](/news/reddit-weekly-highlights-may-28/): Spiderman Resurgence, the NYC janitor, and ghost loot
 - [Build Tier List](/tier-list/)
 - [Exotic Weapons List 2026](/guides/division-resurgence-exotic-weapons-list-2026/)
 - [Steam PC Guide](/guides/division-resurgence-steam-pc-guide/)

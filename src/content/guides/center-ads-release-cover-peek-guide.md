@@ -1,5 +1,5 @@
 ---
-title: "Cover-Peek Trick - Division Resurgence PvP"
+title: "Cover-Peek Trick | Division Resurgence PvP"
 category: "PvP"
 publishDate: 2026-05-23
 lastUpdated: 2026-10-24T12:00:00Z

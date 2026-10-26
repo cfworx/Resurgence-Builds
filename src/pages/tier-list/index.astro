@@ -213,8 +213,8 @@ const faqs = [
                   <a href={`/builds/${build.id}/`} class="tier-card">
                     <div class="tier-card__img" style={`background-image: url('${build.data.featuredImage || '/images/default-cover.webp'}')`}></div>
                     <div class="tier-card__info">
-                      <h3>{build.data.title.split(' - ')[0]}</h3>
-                      <span class="tier-card__spec">{build.data.specialization}{build.data.subclass ? ` - ${build.data.subclass}` : ''}</span>
+                      <h3>{build.data.title.split(/: | \| | - /)[0]}</h3>
+                      <span class="tier-card__spec">{build.data.specialization}{build.data.subclass ? ` · ${build.data.subclass}` : ''}</span>
                       <span class="tier-card__basis">{build.rank.evidence}</span>
                     </div>
                   </a>
@@ -237,8 +237,8 @@ const faqs = [
             <a href={`/builds/${build.id}/`} class="tier-card">
               <div class="tier-card__img" style={`background-image: url('${build.data.featuredImage || '/images/default-cover.webp'}')`}></div>
               <div class="tier-card__info">
-                <h3>{build.data.title.split(' - ')[0]}</h3>
-                <span class="tier-card__spec">{build.data.specialization}{build.data.subclass ? ` - ${build.data.subclass}` : ''} · {build.data.patch}</span>
+                <h3>{build.data.title.split(/: | \| | - /)[0]}</h3>
+                <span class="tier-card__spec">{build.data.specialization}{build.data.subclass ? ` · ${build.data.subclass}` : ''} · {build.data.patch}</span>
               </div>
             </a>
           ))}
@@ -257,7 +257,7 @@ const faqs = [
           <tbody>
             {rankedBuilds.map(build => (
               <tr>
-                <th scope="row"><a href={`/builds/${build.id}/`}>{build.data.title.split(' - ')[0]}</a></th>
+                <th scope="row"><a href={`/builds/${build.id}/`}>{build.data.title.split(/: | \| | - /)[0]}</a></th>
                 <td>{build.rank.tier}</td>
                 <td>{build.rank.was}</td>
                 <td>

@@ -1,5 +1,5 @@
 ---
-title: "Division Resurgence Reddit Highlights - 10 Best Posts June 16"
+title: "Division Resurgence Reddit Highlights: 10 Best Posts June 16"
 publishDate: "2026-06-16T12:00:00Z"
 updatedDate: 2026-10-24
 author: "RapidF5"
@@ -180,7 +180,7 @@ We will be back next week. Until then, keep your loot screenshotted, keep your s
 
 ## Keep Reading
 
-- [Reddit Highlights: May 28 Edition](/news/reddit-weekly-highlights-may-28/) - last week's chaos including Spiderman Resurgence, the NYC janitor folklore, and the vendor's mental health leave
+- [Reddit Highlights: May 28 Edition](/news/reddit-weekly-highlights-may-28/): last week's chaos including Spiderman Resurgence, the NYC janitor folklore, and the vendor's mental health leave
 - [Steam PC Guide for the 2026 Launch](/guides/division-resurgence-steam-pc-guide/)
 - [Patch 1.1.2.2 Notes Breakdown](/patch-notes/patch-1-1-2-2/)
 - [Build Tier List](/tier-list/)

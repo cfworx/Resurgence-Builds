@@ -33,7 +33,7 @@ Rankings are based on:
 > [!NOTE]
 > This tier list primarily covers High-End weapons. For a complete ranking and guide of all Exotics, see our [Division Resurgence Exotic Weapons List 2026](/guides/division-resurgence-exotic-weapons-list-2026/).
 
-## S Tier - Meta Defining
+## S Tier: Meta Defining
 
 These weapons dominated the patch this list was built on and were the first choices for any serious build.
 
@@ -43,7 +43,7 @@ These weapons dominated the patch this list was built on and were the first choi
 | Vector SBR | SMG | Highest burst DPS for close-range. Strained + crit builds melt everything. |
 | M700 Carbon | Marksman Rifle | One-shot headshot potential on non-elites. Breadbasket talent is perfectly matched. |
 
-## A Tier - Excellent
+## A Tier: Excellent
 
 Slightly behind S Tier but still top-performing. Viable in all content.
 
@@ -54,7 +54,7 @@ Slightly behind S Tier but still top-performing. Viable in all content.
 | RPK-74 | LMG | Unhinged talent turns this into a DPS monster. Slower handling is the tradeoff. |
 | Hunting M44 | Marksman Rifle | Higher damage than M700 but slower bolt action. Head Collection build staple. |
 
-## B Tier - Solid
+## B Tier: Solid
 
 Good weapons that work in most content but aren't optimal.
 
@@ -65,7 +65,7 @@ Good weapons that work in most content but aren't optimal.
 | L86 LSW | LMG | Good all-rounder LMG, just outclassed by RPK-74 in raw damage. |
 | SRS | Marksman Rifle | Consistent but lacks the punch of M700/M44. |
 
-## C Tier - Niche
+## C Tier: Niche
 
 Usable in specific builds or activities but generally outperformed.
 
@@ -75,7 +75,7 @@ Usable in specific builds or activities but generally outperformed.
 | T821 | SMG | Low RPM for an SMG. Killer talent is its only saving grace. |
 | M60 | LMG | Huge magazine but terrible handling. PvP suppression use only. |
 
-## D Tier - Needs Buffs
+## D Tier: Needs Buffs
 
 These weapons are underperforming and need developer attention.
 

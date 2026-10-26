@@ -1,5 +1,5 @@
 ---
-title: "Division Resurgence Phase 2 Is Live - Free Exotic LMG"
+title: "Division Resurgence Phase 2 Is Live: Free Exotic LMG"
 publishDate: "2026-05-12"
 updatedDate: 2026-10-24
 author: "RapidF5"

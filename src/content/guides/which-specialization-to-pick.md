@@ -1,5 +1,5 @@
 ---
-title: "Which Specialization to Pick - Division Resurgence"
+title: "Which Specialization to Pick | Division Resurgence"
 category: "Beginner"
 publishDate: 2026-05-20
 lastUpdated: 2026-10-26T12:00:00Z
@@ -50,7 +50,7 @@ Here's the short version. Skip to your playstyle.
 
 ## What Does Each Division Resurgence Specialization Actually Do?
 
-### Vanguard - The One Everyone Picks First
+### Vanguard: The One Everyone Picks First
 
 **Focuses:** Commando (aggressive assault), Recon (flanking and intel)
 
@@ -67,14 +67,14 @@ Vanguard is never the wrong answer. It's also rarely a *surprising* answer. If y
 **Best for:** Players who want to learn the game without fighting their spec at the same time. PvP players who want to understand why they keep winning or dying.
 
 **Builds on the site:**
-- [AgentHuntzman's Leaderboard Ranking Vanguard Support Build](/builds/agenthuntzmans-leaderboard-ranking-vanguard-support-build/) - the Recon support build that makes everyone else's numbers go up
-- [Milkshake Machine](/builds/milkshake-machine-strawberry-milkshake-lmg-build/) - Strawberry Milkshake LMG DPS on Dominating Presence (whose max scaling Season 2 Phase 2 reduced)
-- [Any-Weapon Commando](/builds/any-weapon-commando-beginner-vanguard-build-tiktokandy/) - TikTokAndy's beginner Commando build that works with whatever gun you have, and solos Heroic Chinatown
-- [Misdirection Double Barrel Commando](/builds/misdirection-double-barrel-commando-build-tiktokandy/) - TikTokAndy's Season 2 shotgun build, taken solo into Legendary Precious Cargo
+- [AgentHuntzman's Leaderboard Ranking Vanguard Support Build](/builds/agenthuntzmans-leaderboard-ranking-vanguard-support-build/): the Recon support build that makes everyone else's numbers go up
+- [Milkshake Machine](/builds/milkshake-machine-strawberry-milkshake-lmg-build/): Strawberry Milkshake LMG DPS on Dominating Presence (whose max scaling Season 2 Phase 2 reduced)
+- [Any-Weapon Commando](/builds/any-weapon-commando-beginner-vanguard-build-tiktokandy/): TikTokAndy's beginner Commando build that works with whatever gun you have, and solos Heroic Chinatown
+- [Misdirection Double Barrel Commando](/builds/misdirection-double-barrel-commando-build-tiktokandy/): TikTokAndy's Season 2 shotgun build, taken solo into Legendary Precious Cargo
 
 ---
 
-### Demolitionist - A Gift to Men Who Failed Chemistry
+### Demolitionist: A Gift to Men Who Failed Chemistry
 
 **Focuses:** HE Munitions (area denial, explosive damage), Field Grenadier (utility, signature cooldown)
 
@@ -93,11 +93,11 @@ Fair warning: you will also shoot yourself with it. At least once. Probably in a
 **Best for:** Players who like thinking in areas of effect rather than single-target math. Anyone who finds the meta builds too fiddly and wants to press a button and watch a room clear.
 
 **Builds on the site:**
-- [Demolitionist Glass Cannon](/builds/demolitionist-glass-cannon-build-pveenjoyer/) - PVE Enjoyer's Fire Cycle T2 build on Pressing Matter (written before the Season 2 Phase 2 buffs)
+- [Demolitionist Glass Cannon](/builds/demolitionist-glass-cannon-build-pveenjoyer/): PVE Enjoyer's Fire Cycle T2 build on Pressing Matter (written before the Season 2 Phase 2 buffs)
 
 ---
 
-### Bulwark - The Human Furniture
+### Bulwark: The Human Furniture
 
 **Focuses:** Juggernaut (pure tank, Toughness-first), Breacher (shield-forward, push play)
 
@@ -114,12 +114,12 @@ The Bulwark is the spec that experienced players suddenly appreciate after a ses
 **Best for:** Players who don't care about kill counts. Experienced players who know what holds a group together. Anyone who has ever muttered "I'll just absorb everything" and meant it without sarcasm.
 
 **Builds on the site:**
-- [Bulwark Breacher Build](/builds/bulwark-breacher-build-saiynergy/) - Saiynergy's 334k DPS shield wall (written before the Shockwave Spike nerf)
-- [Involuntary Nap Time](/builds/involuntary-nap-time-bulwark-juggernaut-build/) - the Pummeling Shield stun tank (written before the June 26 Pummeling Shield nerf)
+- [Bulwark Breacher Build](/builds/bulwark-breacher-build-saiynergy/): Saiynergy's 334k DPS shield wall (written before the Shockwave Spike nerf)
+- [Involuntary Nap Time](/builds/involuntary-nap-time-bulwark-juggernaut-build/): the Pummeling Shield stun tank (written before the June 26 Pummeling Shield nerf)
 
 ---
 
-### Field Medic - A Spec for People Who Like Being Appreciated but Not Thanked
+### Field Medic: A Spec for People Who Like Being Appreciated but Not Thanked
 
 **Focuses:** Combat Medicine (direct healing, team survival), Tactical Pharma (Corrosion debuffs, offensive drone output)
 
@@ -136,13 +136,13 @@ Who picks Field Medic? People who, in a past life, played a healer in some other
 **Best for:** Players who want to enable a group rather than carry it. Solo players who want Corrosion debuffs stacking while drones handle the dirty work. Anyone who likes being indispensable without needing the kill feed to prove it.
 
 **Builds on the site:**
-- [The Muscular Nurse](/builds/muscular-nurse-combat-medicine-build-nadie/) - Nadie's Combat Medicine tank-medic (runs Pummeling Shield, written before its June 26 nerf)
-- [Tactical Pharma 800k DPS](/builds/tactical-pharma-800k-dps-rank-1-global-build/) - RogueMadras's rank 1 global Chemical Trap build
-- [Tactical Pharma Season 2](/builds/tactical-pharma-season-2-build-ggreborn/) - GGReborn's solo Legendary setup, his OS Protocol test, and TikTokAndy's Dark Zone take
+- [The Muscular Nurse](/builds/muscular-nurse-combat-medicine-build-nadie/): Nadie's Combat Medicine tank-medic (runs Pummeling Shield, written before its June 26 nerf)
+- [Tactical Pharma 800k DPS](/builds/tactical-pharma-800k-dps-rank-1-global-build/): RogueMadras's rank 1 global Chemical Trap build
+- [Tactical Pharma Season 2](/builds/tactical-pharma-season-2-build-ggreborn/): GGReborn's solo Legendary setup, his OS Protocol test, and TikTokAndy's Dark Zone take
 
 ---
 
-### Tech Operator - The One for People Who Minored in Engineering
+### Tech Operator: The One for People Who Minored in Engineering
 
 **Focuses:** Offensive Operations (drone DPS, skill damage focus), Aegis Operations (defensive barriers, team protection)
 
@@ -161,10 +161,10 @@ When it works, however, nobody looks cooler.
 **Best for:** Players who enjoy optimizing systems and watching them execute. Skill-damage theorycrafters. Anyone who has ever watched a YouTube video called "perfect drone rotation guide" without any irony.
 
 **Builds on the site:**
-- [The Double Agent Glass Cannon Tech Op](/builds/aegis-chad-glass-cannon-tech-operator-build-ifozzy/) - LtFoe's two-setup Aegis Burst build (check it against the Season 1 Phase 3 Aegis Burst fix)
-- [Jackpot Striker Drone Tech Op](/builds/jackpot-striker-drone-tech-operator-build/) - Offensive Ops drone crit explosions
-- [Tech Aegis Build](/builds/tech-aegis-engineering-build-tampishach/) - Tampishach's skill crit Aegis build
-- [Aegis Team Healer](/builds/aegis-team-healer-tech-operator-build-tiktokandy/) - TikTokAndy's four-drone PvE healer for teams that bring the damage
+- [The Double Agent Glass Cannon Tech Op](/builds/aegis-chad-glass-cannon-tech-operator-build-ifozzy/): LtFoe's two-setup Aegis Burst build (check it against the Season 1 Phase 3 Aegis Burst fix)
+- [Jackpot Striker Drone Tech Op](/builds/jackpot-striker-drone-tech-operator-build/): Offensive Ops drone crit explosions
+- [Tech Aegis Build](/builds/tech-aegis-engineering-build-tampishach/): Tampishach's skill crit Aegis build
+- [Aegis Team Healer](/builds/aegis-team-healer-tech-operator-build-tiktokandy/): TikTokAndy's four-drone PvE healer for teams that bring the damage
 
 ---
 

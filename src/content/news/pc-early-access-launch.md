@@ -1,5 +1,5 @@
 ---
-title: "Division Resurgence Hits PC - Free, Cross-Play, Cross-Save"
+title: "Division Resurgence Hits PC: Free, Cross-Play, Cross-Save"
 publishDate: "2026-04-28"
 updatedDate: 2026-10-24
 author: "RapidF5"

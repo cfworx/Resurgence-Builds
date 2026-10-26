@@ -27,11 +27,11 @@ Agents, a lot has happened in the last 48 hours. Ubisoft rolled out **Patch 1.2.
 ---
 
 
-## Patch 1.2.1 - Full Breakdown
+## Patch 1.2.1: Full Breakdown
 
 Patch 1.2.1 is a hotfix, not a content drop. It cleans up the issues that came with Phase 2's May 11 and 12 launch, and it contains no balance changes at all. Full source: [Ubisoft Mobile Help Center, Patch Note 1.2.1](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2513-patch-note---1-2-1-update-20-may-2026/).
 
-### Compensation Package (Everyone Gets It - Yes, Even You)
+### Compensation Package (Everyone Gets It. Yes, Even You)
 
 Ubisoft is mailing this to every account automatically. Check your in-game mail:
 
@@ -48,7 +48,7 @@ The vendor had several issues. Here's what's now fixed:
 - Fixed players being able to sell locked or favored items. (Your god roll thanks you.)
 - Fixed the Dark Zone vendor missing item-name text. (How do you sell a gun with no name? You don't. That's the bug.)
 
-### Strawberry Milkshake - Fixes and the Big Admission
+### Strawberry Milkshake: Fixes and the Big Admission
 
 This is the section you've been waiting for. Directly from the patch notes, verbatim:
 
@@ -103,7 +103,7 @@ Players say Outpost Annihilation has been broken since beta, so seeing it on an 
 
 ---
 
-## Phase 2 Recap - In Case You Missed the Chaos
+## Phase 2 Recap: In Case You Missed the Chaos
 
 Phase 2 of Season 1 went live around **May 11 and 12, 2026** ([Ubisoft, Phase 2 Starts Now](https://www.ubisoft.com/en-us/game/the-division/resurgence/news-updates/3ygDDXxg6dv6aQD5MJvbKv/phase-2-starts-now-whats-new)). The big-ticket items are still active right now.
 
@@ -146,7 +146,7 @@ These are not in 1.2.1; these came in Phase 2 itself and are still in effect:
 
 ---
 
-## Strawberry Milkshake - Weapon Watch
+## Strawberry Milkshake: Weapon Watch
 
 The Phase 2 free exotic LMG is the dominant conversation in the community right now, and for good reason. Let's break down what's actually confirmed vs. what's Reddit math.
 
@@ -185,7 +185,7 @@ The Phase 2 free exotic LMG is the dominant conversation in the community right 
 
 ---
 
-## Roadmap - What's Coming Next
+## Roadmap: What's Coming Next
 
 Source: [The Division Resurgence Roadmap: PC Launch, Story Expansion, and More](https://news.ubisoft.com/en-us/article/9ZzMWcx5ADnaxAiOO3e0w/the-division-resurgence-roadmap-pc-launch-story-expansion-and-more) (Ubisoft, April 28, 2026).
 
@@ -196,7 +196,7 @@ Source: [The Division Resurgence Roadmap: PC Launch, Story Expansion, and More](
 
 Simple enough. Now let's talk about what's actually coming.
 
-### Phase 3 - June 2026
+### Phase 3: June 2026
 
 The next real milestone. Per the official roadmap, Phase 3 brings:
 
@@ -216,13 +216,13 @@ Expect new time-limited events, a refreshed Classified Ops Pass, and almost cert
 
 *Sources: [Techmash Phase 2 recap](https://techmash.co.uk/2026/05/13/agents-back-to-manhattan-the-division-resurgence-season-1-phase-2-is-live/), cross-checked against Ubisoft Phase 2 notes.*
 
-### Season 2 - August 2026
+### Season 2: August 2026
 
 - **Full PC launch** on Ubisoft Connect. (It ended up launching on Steam and Ubisoft Connect together on August 5.)
 - Cross-progression and cross-platform play confirmed.
 - Your current PC early access save carries over. No restart. No stat wipe.
 
-### Season 3 - Winter 2026
+### Season 3: Winter 2026
 
 A major story expansion is coming. No mission details, no new exotics announced, no new specializations confirmed yet. We'll cover it the moment Ubisoft says anything. Set your expectations to "intrigued but cautious," which is exactly where they should be for a live service in its first year. (As of October 24 there's still no Season 3 date; Ubisoft extended Season 2 Phase 2 on October 21 until a "much bigger update later this year.")
 

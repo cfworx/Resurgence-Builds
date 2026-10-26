@@ -1,5 +1,5 @@
 ---
-title: "Season 1 Phase 3 Patch Notes - Division Resurgence"
+title: "Season 1 Phase 3 Patch Notes | Division Resurgence"
 version: "Season 1 Phase 3"
 patchDate: "2026-06-24"
 updatedDate: 2026-10-24

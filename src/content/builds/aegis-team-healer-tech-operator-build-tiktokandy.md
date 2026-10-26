@@ -27,7 +27,7 @@ faqs:
   - question: "Can I use the Aegis healer build in the Dark Zone?"
     answer: "TikTokAndy calls it a PvE build. In his experience the kill-driven duration extensions that keep the drones up don't work quite the same in the Dark Zone, so he only uses it in PvE."
 videoId: "VHKfmW4BtEk"
-videoTitle: "TikTokAndy - Most Overpowered Team Healer Build - Striker - Aegis"
+videoTitle: "TikTokAndy: Most Overpowered Team Healer Build - Striker - Aegis"
 videoChannel: "TikTokAndy"
 ---
 

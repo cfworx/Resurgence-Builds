@@ -78,7 +78,7 @@ Fair point at the time. Ubisoft listed Outpost Annihilation as a known issue in 
 
 ---
 
-## 6. "What Does Bro See?" - The NPC That Stares Into Your Soul
+## 6. "What Does Bro See?": The NPC That Stares Into Your Soul
 
 **u/Whole_Entrepreneur23** · [Score: 67](https://www.reddit.com/r/thedivisionresurgence/comments/1tb2z55/what_does_bro_see/) · May 12
 
@@ -98,7 +98,7 @@ When someone titles their post with a date range like a tombstone inscription, y
 
 ---
 
-## 8. "Retired from the Game" - The Account Giveaway
+## 8. "Retired from the Game": The Account Giveaway
 
 **u/Comfortable-Bar-3965** · [Score: 60](https://www.reddit.com/r/thedivisionresurgence/comments/1tesqqc/retired_from_the_game/) · May 16
 

@@ -1,5 +1,5 @@
 ---
-title: "Patch 1.2.1 Notes - Division Resurgence"
+title: "Patch 1.2.1 Notes | Division Resurgence"
 version: "1.2.1"
 patchDate: "2026-05-20"
 updatedDate: 2026-10-24
@@ -26,7 +26,7 @@ Patch 1.2.1 deployed on **May 20, 2026**. This is a targeted hotfix, not a conte
 
 ---
 
-## Compensation - Sent to Every Account
+## Compensation: Sent to Every Account
 
 Ubisoft is mailing this directly to your in-game mailbox. No claim button, no timer, no special offer. Just open your mail.
 
@@ -47,7 +47,7 @@ The vendor had several issues after Phase 2 launched. Here's the cleanup:
 
 ---
 
-### Strawberry Milkshake - Fixes and an Official "Looking Into It"
+### Strawberry Milkshake: Fixes and an Official "Looking Into It"
 
 This is the section everyone's been waiting for.
 
@@ -99,7 +99,7 @@ Not glamorous, but real, especially for non-English players who have been starin
 
 ---
 
-### Known Issues - Still Not Fixed
+### Known Issues: Still Not Fixed
 
 Ubisoft explicitly acknowledges the following are **not resolved** in this patch. This list is in the official patch notes, unusually transparently:
 

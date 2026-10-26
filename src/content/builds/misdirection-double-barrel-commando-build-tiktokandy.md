@@ -29,7 +29,7 @@ faqs:
   - question: "Where do you farm a Double Barrel with Misdirection Insurance?"
     answer: "TikTokAndy says Double Barrels come from daily missions and Elite missions, and that the Elite Legendary instance that week was dropping T2 guns quite regularly (he also warns it's extremely difficult, so bring a full team at first). Season 2 Phase 2 reworked daily quests so Weapon Kill quests reward weapons matching the quest's weapon type, with a chance of T2 at level 40. After that it's recalibration until Misdirection Insurance shows up, which is the part of this build that tests your patience more than your aim."
 videoId: "ITIJB2nj3zg"
-videoTitle: 'TikTokAndy - Best "Automatic" Double Barrel Shotgun Build'
+videoTitle: 'TikTokAndy: Best "Automatic" Double Barrel Shotgun Build'
 videoChannel: "TikTokAndy"
 ---
 

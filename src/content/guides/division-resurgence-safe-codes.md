@@ -1,5 +1,5 @@
 ---
-title: "Safe Codes Master List - Division Resurgence"
+title: "Safe Codes Master List | Division Resurgence"
 category: "General"
 publishDate: 2026-05-28
 lastUpdated: 2026-10-24T12:00:00Z
@@ -328,8 +328,8 @@ What we know is **not** the issue: Phase 2 of Season 1 (May 11, 2026) did not ad
 - [Reddit: Safe Codes I've found so far (NoInteraction6701)](https://www.reddit.com/r/thedivisionresurgence/comments/1sc4h27/safe_codes_ive_found_so_far/)
 - [Reddit: Safe code near Echo 02 (MMX statue)](https://www.reddit.com/r/thedivisionresurgence/comments/1sd1k3i/safe_code_near_echo_02/)
 - [Reddit: What is the password for this safe in Autumn's Hope](https://www.reddit.com/r/thedivisionresurgence/comments/1pego13/what_is_the_password_for_this_safe_in_the_autumn/)
-- [YouTube: GooHootGaming - All 21 Found Encrypted Crates (May 9, 2026)](https://www.youtube.com/watch?v=ljFeKCV0ZII)
-- [YouTube: GCROCK - ALL Locked Safe Locations & Codes](https://www.youtube.com/watch?v=HjXUKlklXNE)
+- [YouTube: GooHootGaming, All 21 Found Encrypted Crates (May 9, 2026)](https://www.youtube.com/watch?v=ljFeKCV0ZII)
+- [YouTube: GCROCK, ALL Locked Safe Locations & Codes](https://www.youtube.com/watch?v=HjXUKlklXNE)
 - [YouTube: Spring Blossom School Safe Code](https://www.youtube.com/watch?v=zkkHRCH9yk4)
 - [GamingOnPhone: Division Resurgence Safes Guide](https://gamingonphone.com/guides/the-division-resurgence-safes-guide-all-safe-locations-and-codes-to-open-them/)
 - [Ubisoft: Phase 2 Starts Now - What's New](https://www.ubisoft.com/en-us/game/the-division/resurgence/news-updates/3ygDDXxg6dv6aQD5MJvbKv/phase-2-starts-now-whats-new)

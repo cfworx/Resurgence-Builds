@@ -128,13 +128,13 @@ Image credit on the leak screenshot: the r/thedivisionresurgence post titled "So
 ---
 
 **Related Reading:**
-- [Season 2 Phase 2 Is Live: Diamondback](/news/season-2-phase-2-live-diamondback/) - the Diamondback's actual launch
-- [Season 1 Phase 3 "A New Fire" Patch Notes](/patch-notes/season-1-phase-3-a-new-fire/) - the Scorpio's actual launch
-- [Season 1-2-3 Roadmap](/news/season-1-2-3-roadmap/) - the full roadmap breakdown
-- [Which Specialization Should You Pick?](/guides/which-specialization-to-pick/) - prep your class before Phase 3
-- [Division Resurgence Exotic Weapons List 2026](/guides/division-resurgence-exotic-weapons-list-2026/) - complete tier list and guide to all exotics
-- [Exotic Weapons Database](/database/exotic-weapons/) - every current exotic with stats and talents
-- [Patch 1.2.1 Notes](/news/division-resurgence-news-may-20-2026/) - the May 20 patch breakdown
+- [Season 2 Phase 2 Is Live: Diamondback](/news/season-2-phase-2-live-diamondback/): the Diamondback's actual launch
+- [Season 1 Phase 3 "A New Fire" Patch Notes](/patch-notes/season-1-phase-3-a-new-fire/): the Scorpio's actual launch
+- [Season 1-2-3 Roadmap](/news/season-1-2-3-roadmap/): the full roadmap breakdown
+- [Which Specialization Should You Pick?](/guides/which-specialization-to-pick/): prep your class before Phase 3
+- [Division Resurgence Exotic Weapons List 2026](/guides/division-resurgence-exotic-weapons-list-2026/): complete tier list and guide to all exotics
+- [Exotic Weapons Database](/database/exotic-weapons/): every current exotic with stats and talents
+- [Patch 1.2.1 Notes](/news/division-resurgence-news-may-20-2026/): the May 20 patch breakdown
 
 ---
 

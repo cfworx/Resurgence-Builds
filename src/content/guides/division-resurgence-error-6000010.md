@@ -1,5 +1,5 @@
 ---
-title: "Error 6000010 Fix - Division Resurgence"
+title: "Error 6000010 Fix | Division Resurgence"
 category: "General"
 publishDate: 2026-05-30
 lastUpdated: 2026-10-24T12:00:00Z
