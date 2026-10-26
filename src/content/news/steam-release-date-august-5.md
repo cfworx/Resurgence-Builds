@@ -1,7 +1,7 @@
 ---
 title: "Steam Release Date Confirmed: August 5"
 publishDate: 2026-07-31
-updatedDate: 2026-10-24
+updatedDate: 2026-10-26
 author: "RapidF5"
 tags: ["News", "Steam", "PC", "Season 2", "Crossplay", "Ubisoft Connect"]
 description: "Division Resurgence hits Steam Wednesday, Aug 5, with Season 2. Free, cross-play and cross-progression, PC specs, and how to keep your progress."
@@ -11,7 +11,7 @@ shareTitle: "Steam date locked: August 5"
 shareText: "Division Resurgence hits Steam on Wednesday, August 5, the same day as Season 2. Here's how to bring your phone progress along without losing it."
 faqs:
   - question: "When does Division Resurgence release on Steam?"
-    answer: "It launched on Steam on Wednesday, August 5, 2026, the same day Season 2 started. Ubisoft confirmed the date on July 31. A midweek launch, which means the dads among us got to 'test our home internet' on a Wednesday night."
+    answer: "It launched on Steam on Wednesday, August 5, 2026, the same day Season 2 started. Ubisoft announced the date in a developer diary on July 30, and the press coverage followed on July 31. A midweek launch, which means the dads among us got to 'test our home internet' on a Wednesday night."
   - question: "Is Division Resurgence free on Steam?"
     answer: "Yes, it's free to play on Steam, just like on mobile and Ubisoft Connect. The only up-front cost is about 30 GB of drive space, which for some of us meant finally uninstalling the game we swore we'd finish in 2019."
   - question: "Will my mobile progress carry over to Steam?"
@@ -67,9 +67,20 @@ Two things jump out. First, the minimum graphics are integrated GPUs, which is g
 
 **Storage:** Ubisoft's PC help article says the PC version is around 17GB and recommends at least 30GB available, in line with the Steam page's 30 GB. Inputs are mouse and keyboard or a controller. Our [Steam PC guide](/guides/division-resurgence-steam-pc-guide/) has the full setup walkthrough.
 
+## Also announced: the July 30 developer diary
+
+We missed this one when we wrote the post. The date was first revealed a day earlier, in a developer diary Ubisoft streamed on Twitch on July 30 (Died Again Gaming [replayed it in full](https://www.youtube.com/watch?v=UVtGdT0p3Uo)). It covered a lot more than the date:
+
+- **Season 2 on August 5:** new limited-time events, a new Classified Ops Pass, and new weapons and cosmetics, led by **The Bighorn**, an automatic assault rifle that gains damage on headshots and switches to semi-auto while you aim.
+- **Steam extras:** trading cards and Points Shop items (animated backgrounds, avatar frames), and the 100,000-wishlist goal rewards: an apparel set plus regular and exclusive SHD Keys. What actually landed is in [Steam launch rewards](/news/steam-launch-rewards-twitch-drops/).
+- **Twitch Drops** from August 5 for two weeks, with a red puffer jacket, as long as your Twitch account is linked to the Ubisoft account you play on.
+- **Agent Care Protocol:** the executive producer described a new approach to fixes. When players report an issue, the team first checks how long the fix will take, and if it's quick, pushes it live as soon as possible instead of waiting to package it into a bigger update.
+- **A new bug tracker** was taking over from the Trello board, as a place to report issues, suggest improvements and add to existing reports.
+- **Ubisoft Singapore**, a development partner studio, talked through the PC port (mouse and keyboard, anti-cheat, cross-play through Ubisoft Connect), said the team was working on letting players turn cross-play on and off by platform, and was exploring Steam Deck compatibility.
+
 ## Not announced yet
 
-As of July 31, we haven't seen Ubisoft detail what's in Season 2 Phase 1 (new pass, new exotic, events) or any Steam-specific extras such as achievements or trading cards. We'll cover them the moment they're posted.
+As of July 31, we haven't seen Ubisoft detail what's in Season 2 Phase 1 (new pass, new exotic, events) or any Steam-specific extras such as achievements or trading cards. We'll cover them the moment they're posted. (The developer diary above had already covered most of that. We just hadn't watched it yet.)
 
 Meanwhile, the [Season 2 Countdown](/news/season-2-countdown-login-event/) daily login event keeps going until August 10, and Trigger Happy weapon training runs until August 5.
 
@@ -82,3 +93,4 @@ Meanwhile, the [Season 2 Countdown](/news/season-2-countdown-login-event/) daily
 - [Ubisoft News: The Division Resurgence Roadmap (April 28, 2026)](https://news.ubisoft.com/en-us/article/9ZzMWcx5ADnaxAiOO3e0w/the-division-resurgence-roadmap-pc-launch-story-expansion-and-more) (early access as technical testing before the August launch)
 - [Ubisoft Help Center: Patch Note, 1.1.2.2 (May 29, 2026)](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2517-patch-note---1-1-2-2-update-29-may-2026/) and [Patch Note, Season 1 Phase 3](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2521-patch-note---season-1-phase-3/) (guest account fixes)
 - [Ubisoft: Now Available on Steam (August 5, 2026)](https://www.ubisoft.com/en-us/game/the-division/resurgence/news-updates/1dqH85Pad1ydYGwCOdlDp7/now-available-on-steam) (for the update)
+- Ubisoft's July 30 developer diary, as replayed in [Died Again Gaming: The Big Horn Is Coming, Steam Launch Update, Twitch Drops (YouTube, July 30, 2026)](https://www.youtube.com/watch?v=UVtGdT0p3Uo) (for the update)

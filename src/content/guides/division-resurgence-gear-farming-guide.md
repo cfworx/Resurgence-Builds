@@ -2,7 +2,7 @@
 title: "Gear Farming Guide: T0, T1 and T2"
 category: "Farming"
 publishDate: 2026-10-25
-lastUpdated: 2026-10-25T12:00:00Z
+lastUpdated: 2026-10-26T12:00:00Z
 tags: ["farming", "gear", "Tier 2", "endgame", "Season 2", "build-guide"]
 description: "Where to farm T1 and T2 gear in Division Resurgence: which missions lean to which slots, Elite missions, level 40 dailies, the Dark Zone, mods."
 featuredImage: "/images/division-resurgence-best-pve-dps-builds.webp"
@@ -91,7 +91,7 @@ Season 2 Phase 2 helps here too: Ubisoft increased the weapon and gear rewards f
 | Dark Zone Heroic landmarks | Rare. AgentHuntzman says the Q Building, the Heroic landmark, gives the most, and by June he'd had two T2 pieces from it |
 | Dark Zone enemy leaders | AgentHuntzman calls the Heroic enemy leader and his cache the best Dark Zone farm for it |
 
-**About that Power Score requirement.** AgentHuntzman worked from a recommended 19.2k Power Score for Elite missions in June. The game's own tooltip explains what the number means: below the recommended score, an activity is very hard; above it, it plays at the expected difficulty; far above it, it gets much easier. You can go in under, he says, but only with your stats close to perfect.
+**About that Power Score requirement.** AgentHuntzman worked from a recommended 19.2k Power Score for Elite missions in June. Died Again Gaming put Elites at "at least 19.2" in early July, and Heroic missions at about 15,000 to 16,000. The game's own tooltip explains what the number means: below the recommended score, an activity is very hard; above it, it plays at the expected difficulty; far above it, it gets much easier. You can go in under, he says, but only with your stats close to perfect.
 
 The Dark Zone side of this (contamination, extraction, what the Q Building is) is in our [Dark Zone guide](/guides/division-resurgence-dark-zone-guide/). TikTokAndy says the level 40 Dark Zone is where he got access to T0, T1 and T2 gear.
 
@@ -148,3 +148,4 @@ Where to get them: Heroic Hostile Nests. His trick is to run the nest again as s
 - [TikTokAndy: My First Time In The Level 40 Dark Zone (YouTube, September 16, 2026)](https://www.youtube.com/watch?v=lBIQT-SeBZg)
 - [Oldfartsgaming: 7 Things I Wish I Knew Before Endgame (YouTube, October 11, 2026)](https://www.youtube.com/watch?v=7JtJCeEE8NI)
 - [GGReborn: Why Your Division Resurgence Gear Build Is Failing You (YouTube, September 29, 2026)](https://www.youtube.com/watch?v=wFqepeXdCTs)
+- [Died Again Gaming: Nightmare Boss Event, Heroic Bosses Drop T2 Gear (YouTube, July 3, 2026)](https://www.youtube.com/watch?v=ZUGova0fSPs) (Power Score for Heroic and Elite missions)

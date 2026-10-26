@@ -2,7 +2,7 @@
 title: "Division Resurgence Steam & PC Guide"
 category: "General"
 publishDate: 2026-06-15
-lastUpdated: 2026-10-24T12:00:00Z
+lastUpdated: 2026-10-26T12:00:00Z
 tags: ["Steam", "PC", "Steam Deck", "Ubisoft Connect", "Crossplay", "Cross-Progression", "System Requirements", "Controller", "Free to Play", "division-resurgence-steam", "division-resurgence-pc"]
 description: "Division Resurgence on Steam and PC: launch date, specs, moving your mobile progress, crossplay, controllers, Steam Deck and launch rewards."
 author: "RapidF5"
@@ -140,7 +140,7 @@ Ubisoft's Help Center says you can play with **mouse and keyboard or a controlle
 
 ## Steam Deck
 
-The Steam release ended the old Ubisoft Connect workaround on Deck (NonSteamLaunchers plus Proton-GE) that the community used in the spring. **Season 2 Phase 2 improved the Steam Deck control configuration.** We haven't tested the game on a Deck ourselves and we don't have Valve's compatibility rating on record, so check the badge on the Steam store page before you buy, er, download.
+The Steam release ended the old Ubisoft Connect workaround on Deck (NonSteamLaunchers plus Proton-GE) that the community used in the spring. Ubisoft had the Deck on its radar before launch: in a July 30 developer diary, Ubisoft Singapore said the team was exploring Steam Deck compatibility ([replayed by Died Again Gaming](https://www.youtube.com/watch?v=UVtGdT0p3Uo)). **Season 2 Phase 2 then improved the Steam Deck control configuration.** We haven't tested the game on a Deck ourselves and we don't have Valve's compatibility rating on record, so check the badge on the Steam store page before you buy, er, download.
 
 ## Steam achievements, trading cards and Points Shop
 
@@ -205,3 +205,4 @@ Steam lists 11 supported languages, with full audio in English. French, Italian,
 - [Ubisoft Help Center: Patch Note, Season 2 Phase 2](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2566-patch-note---season-2-phase-2/)
 - [PC Gamer: Free-to-play Division game launches on Steam to mixed reviews](https://www.pcgamer.com/games/third-person-shooter/free-to-play-division-game-launches-on-steam-to-mixed-reviews-calling-it-slop-disrespects-actual-slop/)
 - [Ubisoft official PC info page (April 2026)](https://www.ubisoft.com/en-gb/game/the-division/resurgence/news-updates/1rUYWPgMV9hXYZ6FcLOkpX/play-resurgence-on-pc-all-you-need-to-know)
+- Ubisoft's July 30 developer diary, as replayed in [Died Again Gaming: The Big Horn Is Coming, Steam Launch Update, Twitch Drops (YouTube, July 30, 2026)](https://www.youtube.com/watch?v=UVtGdT0p3Uo) (Steam Deck)

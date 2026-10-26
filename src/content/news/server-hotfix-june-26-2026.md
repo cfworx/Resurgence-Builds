@@ -1,7 +1,7 @@
 ---
 title: "Division Resurgence Server Hotfix Live (June 26, 2026)"
 publishDate: "2026-06-26"
-updatedDate: 2026-10-24
+updatedDate: 2026-10-26
 author: "RapidF5"
 tags: ["Alert", "hotfix", "update"]
 description: "Division Resurgence June 26, 2026 server hotfix: iOS crash fix, latency fix, 80% damage reduction cap, Pummeling Shield stun nerf, General Chat back."
@@ -81,6 +81,10 @@ For anyone who has been building tank specializations to the absolute limit, thi
 
 **10 second cooldown added to the stun effect.** **Stun duration cut from 2 seconds to 1.5 seconds.** Together this is a significant correction to the Pummeling Shield OS Protocol, the Toughness protocol that stuns after every 10 hits while you have Extra Health. Builds that were chaining stun lock, like Bulwark Juggernaut setups, are losing the chain. Our [Involuntary Nap Time Bulwark Juggernaut build](/builds/involuntary-nap-time-bulwark-juggernaut-build/) is built around stun control and survival; the build still has identity, but the rotation needs a refresh. Builders, update accordingly.
 
+### Also New: A Dark Zone Event
+
+The hotfix post didn't mention it, but the same update started a Dark Zone event that Died Again Gaming calls "Threat Level Increased." Going by his reading of the event text, it worked like a nightmare mode for bosses: double health, double damage and double equipment rewards. He read that as more gear, not better odds on gold skill mods, and warned that double the loot meant double the Rogue agents.
+
 ---
 
 ## Connection Loss Window
@@ -94,6 +98,7 @@ Per the dev team, expect to reconnect once or twice over the next few hours as t
 - [Official @TheDivMobile hotfix tweet (June 26, 2026 12:27 PM UTC)](https://x.com/TheDivMobile/status/2070483985642197252)
 - [Phase 3 "A New Fire" Patch Notes (June 24 launch)](/patch-notes/season-1-phase-3-a-new-fire/)
 - [Official Known Issues Trello Board](https://trello.com/b/qTP1a9cv)
+- [Died Again Gaming: Dark Zone Event, Nerfed Pummeling Shield and DR (YouTube, June 26, 2026)](https://www.youtube.com/watch?v=mR_j5pyXx3o) (the Dark Zone event)
 - [Season 2 Phase 1 patch notes (official dev post on r/thedivisionresurgence)](https://www.reddit.com/r/thedivisionresurgence/comments/1ve9ccz/season_2_phase_1_patch_notes/)
 - [Ubisoft Mobile Help Center, Season 2 Phase 2 Patch Notes](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2566-patch-note---season-2-phase-2/)
 
