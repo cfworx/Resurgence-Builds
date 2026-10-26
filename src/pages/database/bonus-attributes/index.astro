@@ -6,7 +6,8 @@ import { verifiedPatch } from '../../../data/site-config';
 import { attrGuide, statInteraction } from '../../../data/bonus-attribute-guides';
 const lastVerified = verifiedPatch('Patch 1.2.1'); // Bump: drop the arg ONLY after re-verifying this page's content in-game (CURRENT_PATCH is a ceiling, not an auto-bump)
 
-const title = "Bonus Attributes: All 24 Stats Explained";
+const attrCount = bonusAttributes.reduce((n: number, c: any) => n + c.attributes.length, 0);
+const title = `Bonus Attributes: All ${attrCount} Stats Explained`;
 const description = "Every bonus attribute that can roll on your gear in Division Resurgence, organized by Firepower, Toughness, Engineering, and Universal pools. Know your rolls or suffer.";
 const breadcrumbs = [
   { name: 'Weapon/Gear Bonus Attributes', url: '/database/bonus-attributes/' }
@@ -74,10 +75,10 @@ const itemListLd = {
     <p>Bonus attributes are the secondary stats on every gear piece in Division Resurgence. They sit alongside your core stat (Firepower, Toughness or Engineering) and provide specialized bonuses like Weapon Critical Hit Chance, Skill Intensity, or Damage Reduction. Each core stat type unlocks a specific pool of bonus attributes, so a Firepower-core vest will roll different options than an Engineering-core vest.</p>
     <p>There are {allAttrs.length} bonus attributes across {bonusAttributes.length} pools: <strong>Firepower</strong> (offensive weapon stats), <strong>Toughness</strong> (survivability), <strong>Engineering</strong> (skill scaling), and <strong>Universal</strong> (attributes that roll on any core type). Universal attributes like Damage to Elites and Received Healing are the most flexible options for builds that need cross-category value.</p>
     <p>You can recalibrate one bonus attribute per gear piece at the Recalibration Station, but doing so locks the other attributes on that piece. This means planning your recalibration targets before you commit matters, especially on Tier 2 endgame gear that you cannot easily replace.</p>
-    <p><strong>Update (October 2026):</strong> Season 2 Phase 1 reshuffled the pools. Weapons no longer roll Blast, Piercing or Shredding Weapon/Skill Damage; Ubisoft replaced them with All Weapon Damage and All Skill Damage. Weapon mods were reworked (main stat +100%, attribute bonuses -25%), and newly dropped weapon mods lost the damage-type and All Damage rolls in exchange for Weapon Damage, Skill Intensity, Headshot Damage, Weapon Critical Hit Damage and Skill Critical Damage. Mods you already own keep their rolls. Gear mods lost Elite Enemy and Enemy Leader Resistance and can now roll Max Health, Armor, Received Healing, weapon and skill crit chance, crit damage and multi-shot, Weapon Damage, Skill Intensity, Headshot Damage and Signature Ability Charge Efficiency. The per-stat notes below were written before that patch unless they say otherwise.</p>
+    <p><strong>Update (October 2026):</strong> Season 2 Phase 1 reshuffled the pools. Ubisoft removed the Blast, Piercing and Shredding Weapon and Skill Damage bonuses in favor of All Weapon Damage and All Skill Damage, so this list no longer includes them. Older weapons may still carry them, so check yours in the Armory. Weapon mods were reworked (main stat +100%, attribute bonuses -25%), and newly dropped weapon mods lost the damage-type and All Damage rolls in exchange for Weapon Damage, Skill Intensity, Headshot Damage, Weapon Critical Hit Damage and Skill Critical Damage. Mods you already own keep their rolls. Gear mods lost Elite Enemy and Enemy Leader Resistance and can now roll Max Health, Armor, Received Healing, weapon and skill crit chance, crit damage and multi-shot, Weapon Damage, Skill Intensity, Headshot Damage and Signature Ability Charge Efficiency. The per-stat notes below were written before that patch unless they say otherwise.</p>
   </div>
 
-  <!-- Jump nav: a fold, closed on phones (24 links at 44px would be a long block before the content), open wider -->
+  <!-- Jump nav: a fold, closed on phones (20+ links at 44px would be a long block before the content), open wider -->
   <details class="attr-jumpnav" data-jumpnav>
   <summary class="attr-jumpnav__summary">Jump to an attribute</summary>
   <nav class="attr-jumpnav__groups" aria-label="Jump to attribute">

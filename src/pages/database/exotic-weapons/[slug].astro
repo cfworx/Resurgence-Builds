@@ -10,7 +10,8 @@ import { truncateDesc, metaDescription } from '../../../utils/seo';
 import exoticWeapons from '../../../data/exotic-weapons.json';
 
 export function getStaticPaths() {
-  return exoticWeapons.map((weapon: any) => ({
+  // Exotics with unverified stat lines (statsVerified: false) are in the planner only.
+  return exoticWeapons.filter((w: any) => w.statsVerified !== false).map((weapon: any) => ({
     params: {
       slug: weapon.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')
     },

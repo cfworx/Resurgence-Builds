@@ -1,6 +1,7 @@
 ---
 import DatabaseLayout from '../../../layouts/DatabaseLayout.astro';
 import dropRates from '../../../data/drop-rates.json';
+import skillMods from '../../../data/skill-mod-combos.json';
 
 type Item = { tier: string; item: string; amount: string; chance: string };
 type Cache = { name: string; tierRates: { S: string; A: string; B: string }; pity: { S: number; A: number }; items: Item[] };
@@ -17,6 +18,14 @@ const FOCUS: Record<string, string[]> = {
   Bulwark: ['Breacher Cache', 'Juggernaut Cache'],
   'Tech Operator': ['Offensive Operations Cache', 'Aegis Operations Cache'],
   Vanguard: ['Commando Cache', 'Recon Cache'],
+};
+// Ubisoft's table still uses older names for some skill mod sets. Map each older name we've matched
+// (the `aliases` field in skill-mod-combos.json) to the set's current in-game name.
+const inGameName = new Map<string, string>();
+(skillMods as any[]).forEach((m) => (m.aliases || []).forEach((a: string) => inGameName.set(a, m.name)));
+const currentNameOf = (item: string) => {
+  const set = item.match(/(?:Firmware|Software|Chipset) - (.+)$/)?.[1];
+  return set ? inGameName.get(set) : undefined;
 };
 const classOf = (cacheName: string) => Object.entries(FOCUS).find(([, list]) => list.includes(cacheName))?.[0];
 const general = caches.filter((c) => !classOf(c.name));
@@ -140,9 +149,9 @@ const datasetLd = {
           <thead><tr><th>Tier</th><th>Item</th><th>Amount</th><th>Chance</th></tr></thead>
           <tbody>
             {c.items.map((i) => (
-              <tr data-item={i.item.toLowerCase()}>
+              <tr data-item={`${i.item} ${currentNameOf(i.item) || ''}`.trim().toLowerCase()}>
                 <td><span class={`dr-tier dr-tier--${i.tier.toLowerCase()}`}>{i.tier}</span></td>
-                <td>{i.item}</td><td>{i.amount}</td><td>{i.chance}</td>
+                <td>{i.item}{currentNameOf(i.item) && <span class="dr-now"> (in game: <a href={`/database/skill-mod-combos/${slugify(currentNameOf(i.item)!)}/`}>{currentNameOf(i.item)}</a>)</span>}</td><td>{i.amount}</td><td>{i.chance}</td>
               </tr>
             ))}
           </tbody>
@@ -153,7 +162,7 @@ const datasetLd = {
 
   <h2 id="specialization-caches" class="dr-h2">Specialization focus caches</h2>
   <p class="dr-note">Each specialization has two focus caches, one per focus. Their Tier S items are High-End [HE] skill mod pieces at 0.07% each, Tier A are Superior [Su] pieces (plus Electronics Omega Components), and Tier B are Specialized [Sp] pieces and materials. Class hubs: <a href="/class/demolitionist/">Demolitionist</a>, <a href="/class/field-medic/">Field Medic</a>, <a href="/class/bulwark/">Bulwark</a>, <a href="/class/tech-operator/">Tech Operator</a>, <a href="/class/vanguard/">Vanguard</a>.</p>
-  <p class="dr-note"><strong>Heads up on set names:</strong> Ubisoft's table names some skill mod sets differently from the in-game tooltips. 31 of the 90 set names in the table don't match the names in our <a href="/database/skill-mod-combos/">skill mod combo database</a>, which uses the names players see in game. For example, the Tactical Pharma Cache lists Lightweight, Siphon, Acidic Effect, Improved Formula and Feebleness, while creators running Tactical Pharma read names like Chemical Recharge, Hereafter Resilience and Enhanced Formula off their screens. The skill in each row (Chemical Trap, Oxidizing Hive and so on) still tells you which skill a piece is for.</p>
+  <p class="dr-note"><strong>Heads up on set names:</strong> Ubisoft's table uses older names for 31 of the 90 skill mod sets. Where we've matched one to the name the game shows now, it's next to the item. The skill in each row (Chemical Trap, Oxidizing Hive and so on) still tells you which skill a piece is for.</p>
   {focus.map((c) => (
     <details class="dr-cache" id={slugify(c.name)}>
       <summary>
@@ -165,9 +174,9 @@ const datasetLd = {
           <thead><tr><th>Tier</th><th>Item</th><th>Amount</th><th>Chance</th></tr></thead>
           <tbody>
             {c.items.map((i) => (
-              <tr data-item={i.item.toLowerCase()}>
+              <tr data-item={`${i.item} ${currentNameOf(i.item) || ''}`.trim().toLowerCase()}>
                 <td><span class={`dr-tier dr-tier--${i.tier.toLowerCase()}`}>{i.tier}</span></td>
-                <td>{i.item}</td><td>{i.amount}</td><td>{i.chance}</td>
+                <td>{i.item}{currentNameOf(i.item) && <span class="dr-now"> (in game: <a href={`/database/skill-mod-combos/${slugify(currentNameOf(i.item)!)}/`}>{currentNameOf(i.item)}</a>)</span>}</td><td>{i.amount}</td><td>{i.chance}</td>
               </tr>
             ))}
           </tbody>
@@ -265,4 +274,6 @@ const datasetLd = {
   .dr-tier--b { background: #60a5fa }
   .dr-note { font-size: var(--text-sm); color: var(--ink-muted); max-width: var(--measure) }
   .dr-note a, .dr-outro a { color: var(--accent) }
+  .dr-now { color: var(--ink-muted) }
+  .dr-now a { color: var(--accent) }
 </style>

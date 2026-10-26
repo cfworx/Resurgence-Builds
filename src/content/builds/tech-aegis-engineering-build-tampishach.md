@@ -23,9 +23,9 @@ videoTitle: "Tampishach: Tech Aegis Build Walkthrough"
 videoChannel: "PowerfulJRE Clips"
 faqs:
   - question: "Is this build still good after Patch 1.1.2.2?"
-    answer: "Mostly, but the numbers are vintage. The build was filmed in late April 2026. Since then, Season 1 Phase 2 (May 11) fixed Brains Over Brawn 'scaling wrong stats,' Season 1 Phase 3 (June 24) fixed Aegis Burst dealing more damage than intended, and Season 2 Phase 1 reworked weapon mods so the Shredding and Blast attachment rolls below no longer drop. Long-term Effect, Jackpot, and the MPX and Copperhead talents weren't touched. No official patch notes through Season 2 Phase 2 mention a Performance Enhancer 3pc fix, but the 2pc Engineering bonus still applies. Expect lower damage than the 237k sheet and you won't be disappointed."
+    answer: "Mostly, but the numbers are vintage. The build was filmed in late April 2026. Since then, Season 1 Phase 2 (May 11) fixed Brains Over Brawn 'scaling wrong stats,' Season 1 Phase 3 (June 24) fixed Aegis Burst dealing more damage than intended, and Season 2 Phase 1 reworked weapon mods so the Shredding and Blast attachment rolls below no longer drop. Long-term Effect, Jackpot, and the MPX and Copperhead talents weren't touched. No official patch notes through Season 2 Phase 2 mention a fix for the Teamfight (formerly Performance Enhancer) 3pc, but the 2pc Engineering bonus still applies. Expect lower damage than the 237k sheet and you won't be disappointed."
   - question: "Why Engineering and not Firepower as the priority stat?"
-    answer: "Engineering scales every skill in the kit: Defender Drone damage, Mender Drone heal-to-damage conversion, Firefly Performance Enhancer bonus, and the Brains Over Brawn hit damage. The Long-term Effect 4pc also dumps +18% Engineering on top. Firepower scales gun damage in isolation. Engineering scales the whole build."
+    answer: "Engineering scales every skill in the kit: Defender Drone damage, Mender Drone heal-to-damage conversion, Firefly Teamfight bonus, and the Brains Over Brawn hit damage. The Long-term Effect 4pc also dumps +18% Engineering on top. Firepower scales gun damage in isolation. Engineering scales the whole build."
   - question: "Can I run this without the Mechanized Infantry Arm Body Armor?"
     answer: "Any Long-term Effect Body Armor works for the 4pc bonus. What you want is the Injured Concealment talent on whichever Body Armor you find, because that stacking damage talent is a meaningful chunk of the build's damage output."
   - question: "Is the Boom Horo CarryBack backpack required?"
@@ -101,8 +101,8 @@ This is a **Tech Aegis Engineering build** that turns skill crit into a sledgeha
 | **Secondary** | MPX (T0, SMG, Level 50) | **Torrential Downpour II + Rapid Charge** · Skill Multi-Shot Chance +8.09% |
 | **OS Protocol** | **Brains Over Brawn** (Specialized, Level 50) | +21.60% Skill Crit Chance. Hits deal additional damage equal to 48% Engineering |
 | **Skill 1** | Defender Drone | Hazardous Area firmware 3pc |
-| **Skill 2** | Mender Drone | Team Backup firmware 3pc |
-| **Skill 3** | First-Aid Firefly | Performance Enhancer firmware 3pc |
+| **Skill 2** | Mender Drone | Combat Enhancer (formerly Team Backup) firmware 3pc |
+| **Skill 3** | First-Aid Firefly | Teamfight (formerly Performance Enhancer) firmware 3pc |
 | **Signature** | Aegis Operations | Tech Aegis specialization |
 
 ### Skill Mods
@@ -110,12 +110,12 @@ This is a **Tech Aegis Engineering build** that turns skill crit into a sledgeha
 | Skill | Firmware Set | Set Bonus | Stats |
 |---|---|---|---|
 | Defender Drone | Hazardous Area (3pc) | 2pc: +3% Engineering · 3pc: Defender Drone deals damage to enemies within its radius every second | Skill Crit Chance, Skill Duration, Skill Crit Damage |
-| Mender Drone | Team Backup (3pc) | 2pc: +6% Engineering · 3pc: healing grants bonus damage equal to 13.10% Engineering for 20s, up to 3 stacks | Skill Crit Chance, Skill Crit Damage |
-| First-Aid Firefly | Performance Enhancer (3pc) | 2pc: +4.5% Engineering · 3pc: hits deal additional damage equal to 120% Engineering for 8s | Skill Crit Chance, Skill Crit Damage |
+| Mender Drone | Combat Enhancer (3pc) | 2pc: +6% Engineering · 3pc: healing grants bonus damage equal to 13.10% Engineering for 20s, up to 3 stacks | Skill Crit Chance, Skill Crit Damage |
+| First-Aid Firefly | Teamfight (3pc) | 2pc: +4.5% Engineering · 3pc: hits deal additional damage equal to 120% Engineering for 8s | Skill Crit Chance, Skill Crit Damage |
 
 > **Weapon mod stacking:** Every weapon mod slot on both the MPX and the Copperhead should roll Engineering. Tampishach: *"I stacked mods with engineering as it gives more and more engineering to your build, which enhances your damage."*
 
-> **Note on Performance Enhancer 3pc:** Tampishach flagged a known issue with the 3pc bonus damage not firing correctly. A fix was expected in an upcoming patch. (Update, October 2026: none of the official patch notes through Season 2 Phase 2 mention a Performance Enhancer fix, so treat it as unconfirmed.) The 2pc Engineering bonus still applies.
+> **Note on the Teamfight 3pc:** Tampishach flagged a known issue with the 3pc bonus damage not firing correctly. A fix was expected in an upcoming patch. (Update, October 2026: none of the official patch notes through Season 2 Phase 2 mention a fix under either name, so treat it as unconfirmed.) The 2pc Engineering bonus still applies.
 
 ---
 

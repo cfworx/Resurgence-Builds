@@ -22,7 +22,7 @@
   "field-medic": {
     "slug": "field-medic",
     "title": "Field Medic",
-    "intro": "Field Medic is the healer that makes Legendary difficulty possible. Without one, your squad's Bulwark folds in 20 seconds and your DPS players spend more time respawning than shooting. The Combat Medicine path stacks Toughness for both survival and Defensive Measures damage scaling, so you're a healer that also deals damage. Tactical Pharma goes all-in on Oxidizing Swarm corrosive pressure with Jackpot 4pc and Boom-Shakalaka 2pc. In DZ PvP, a good Field Medic turns an average squad into an unkillable nightmare."
+    "intro": "Field Medic is the healer that makes Legendary difficulty possible. Without one, your squad's Bulwark folds in 20 seconds and your DPS players spend more time respawning than shooting. The Combat Medicine path stacks Toughness to stay alive and can still deal damage through skill mods like Offensive Defense. Tactical Pharma goes all-in on Oxidizing Swarm corrosive pressure with Jackpot 4pc and Boom-Shakalaka 2pc. In DZ PvP, a good Field Medic turns an average squad into an unkillable nightmare."
   },
   "tech-operator": {
     "slug": "tech-operator",
@@ -62,7 +62,7 @@
   "toymaker": {
     "slug": "toymaker",
     "title": "Toymaker",
-    "intro": "Toymaker is a Body Armor talent that grants +21% Skill Multi-Shot Chance, but only while no enemies are within 20 meters. This single talent defines the glass-cannon playstyle for skill builds in Division Resurgence. If you maintain range discipline, Toymaker is the highest single-source Skill Multi-Shot Chance in the game. Break the 20m rule and you lose it instantly. Every Demolitionist glass cannon build runs Toymaker or wishes they had the roll for it."
+    "intro": "Toymaker is a Body Armor talent that grants +15% Skill Multi-Shot Chance (+21% on Toymaker II), but only while no enemies are within 20 meters. This single talent defines the glass-cannon playstyle for skill builds in Division Resurgence. If you maintain range discipline, Toymaker is the highest single-source Skill Multi-Shot Chance in the game. Break the 20m rule and you lose it instantly. Every Demolitionist glass cannon build runs Toymaker or wishes they had the roll for it."
   },
   "fire-cycle": {
     "slug": "fire-cycle",
@@ -72,7 +72,7 @@
   "pressing-matter": {
     "slug": "pressing-matter",
     "title": "Pressing Matter",
-    "intro": "Pressing Matter is an Engineering OS Protocol that grants +24% Skill Intensity and a talent providing +10% Skill Cooldown Recovery. It's the standard OS Protocol for Demolitionist glass cannon builds and most Engineering-stacking loadouts. The cooldown reduction means more skill casts per fight, which means more multi-shot triggers. PVE Enjoyer runs it on his 333k DPS build. Farm it from weekly bounties: multiple copies drop within a week or two of consistent bounty farming."
+    "intro": "Pressing Matter is an Engineering OS Protocol that grants +12% Skill Intensity at base level (+24% at level 50) and a talent providing +10% Skill Cooldown Recovery. It's the standard OS Protocol for Demolitionist glass cannon builds and most Engineering-stacking loadouts. The cooldown reduction means more skill casts per fight, which means more multi-shot triggers. PVE Enjoyer runs it on his 333k DPS build. Farm it from weekly bounties: multiple copies drop within a week or two of consistent bounty farming."
   },
   "jackpot": {
     "slug": "jackpot",

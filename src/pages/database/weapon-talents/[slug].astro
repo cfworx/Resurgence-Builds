@@ -191,6 +191,7 @@ const talentLd = {
         <div style="padding: var(--sp-5); background: rgba(0,0,0,0.25); border-left: 3px solid var(--accent); border-radius: 0 8px 8px 0;">
           <p style="margin: 0; color: #e8e8f0; line-height: 1.75; font-size: var(--text-base); font-weight: 500;">{talent.description}</p>
         </div>
+        {talent.note && <p class="item-note">{talent.note}</p>}
       </div>
 
       <!-- Meta Builds (unique per item, only for pages with editorial notes) -->
@@ -225,7 +226,7 @@ const talentLd = {
             Upgraded: {talent.upgradedName}
           </h2>
           <div style="padding: var(--sp-5); background: rgba(242,104,34,0.05); border-left: 3px solid var(--accent); border-radius: 0 8px 8px 0;">
-            <p style="margin: 0; color: #e8e8f0; line-height: 1.75; font-size: var(--text-base); font-weight: 500;">{talent.upgradedDescription || 'Detailed stats currently unavailable. Scales base talent effects.'}</p>
+            <p style="margin: 0; color: #e8e8f0; line-height: 1.75; font-size: var(--text-base); font-weight: 500;">{talent.upgradedDescription || 'Tier II values not recorded yet.'}</p>
           </div>
         </div>
       )}

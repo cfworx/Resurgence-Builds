@@ -66,7 +66,8 @@
     "val2": "+77",
     "attr3": "Health",
     "val3": "+2,554",
-    "talentDescription": "For every 1 shots fired, grants +1.30% Weapon Damage for 5 seconds, up to 30 stacks. Loses 2 stacks per second. (Season 2 Phase 2 fixed it applying the wrong damage type; the in-game tooltip now says Weapon Damage too.)",
+    "talentDescription": "For every 1 shots fired, grants +1.30% Weapon Damage for 5 seconds, up to 30 stacks. Loses 2 stacks per second.",
+    "note": "Season 2 Phase 2 fixed it applying the wrong damage type; the tooltip now says Weapon Damage too.",
     "cooldown": "",
     "image": "/images/os-protocols/relentless-assault-os-protocol-division-resurgence.webp",
     "imageAlt": "Relentless Assault OS Protocol in Division Resurgence showing the Skill Critical Damage gear mod with glow effect and skill critical damage class icon"
@@ -318,7 +319,8 @@
     "val2": "+46",
     "attr3": "Health",
     "val3": "+1,532",
-    "talentDescription": "Deploying a Skill grants +43.20% Skill Critical Hit Damage for 10 seconds. (Season 1 Phase 3 buff: 24% → 43.2% at base level, 48% → 86.2% fully upgraded.)",
+    "talentDescription": "Deploying a Skill grants +43.20% Skill Critical Hit Damage for 10 seconds.",
+    "note": "Season 1 Phase 3 buffed it from 24% to 43.2% at base level, and from 48% to 86.2% fully upgraded.",
     "cooldown": "",
     "image": "/images/os-protocols/applied-demolition-os-protocol-division-resurgence.webp",
     "imageAlt": "Applied Demolition OS Protocol in Division Resurgence showing the Skill Intensity gear mod with glow effect and skill intensity class icon"
@@ -580,7 +582,8 @@
     "val2": "+77",
     "attr3": "Health",
     "val3": "+2,554",
-    "talentDescription": "Skill Hits within 20 meters have a 100% chance of granting +8% Damage for 10 seconds, up to 3 stacks. (Season 2 Phase 2 fixed the 20-meter range check.)",
+    "talentDescription": "Skill Hits within 20 meters have a 100% chance of granting +8% Damage for 10 seconds, up to 3 stacks.",
+    "note": "Season 2 Phase 2 fixed the 20-meter range check.",
     "cooldown": "1 seconds"
   },
   {
@@ -660,7 +663,8 @@
     "val2": "+62",
     "attr3": "Health",
     "val3": "+2,043",
-    "talentDescription": "Grants +5% Weapon Multi-Shot Chance for each enemy within 20 meters, up to 35% at base level (70% fully upgraded). (Season 2 Phase 1 fixed it granting the wrong stat; Season 2 Phase 2 cut the maximum to 35/42/49/56/63/70% by upgrade level.)",
+    "talentDescription": "Grants +5% Weapon Multi-Shot Chance for each enemy within 20 meters, up to 35% at base level (70% fully upgraded).",
+    "note": "The +5% per enemy is the tooltip from before Season 2 Phase 2, which updated the per-enemy scaling without publishing the new numbers and cut the maximum to 35/42/49/56/63/70% by upgrade level. Season 2 Phase 1 fixed it granting Armor instead of Multi-Shot.",
     "cooldown": ""
   },
   {
