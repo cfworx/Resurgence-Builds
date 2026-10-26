@@ -29,6 +29,7 @@ faqs:
     answer: "TikTokAndy ranks Targeted Surveillance first, Field Supplies second and Optimal Awareness third for this build. Targeted Surveillance gives Pulsed allies Weapon Critical Hit Chance equal to 3.60% of your Engineering, so it gets better the more Engineering you carry; he says it beats Optimal Awareness once you're at around 300 Engineering."
   - question: "Can this build solo Heroic Chinatown?"
     answer: "TikTokAndy soloed Chinatown on Heroic with it at about 6,300 Armor and 100,000 Health, which he calls about the bare minimum, and says he was barely getting through. Bring a Blast damage weapon for the final boss; he used a Piercing P90 for most of the mission."
+plannerHash: "s=Vanguard&sc=Commando&n=Any-Weapon+Commando&ms=gs-3&m1=chd&m2=wms&gs=gs-1&g1=chc&g2=wms&hs=gs-3&h1=wd&h2=chd&cs=gs-1&ct=ba-14&c1=scr&c2=chd&ps=gs-1&pt=bp-22&p1=chc&p2=wms&ks=gs-1&k1=chd&k2=arm&w1s=sw-41&w1t=wt-68&w1t2=wt-52&w1b1=chd&w1b2=hsd&w2s=sw-45&w2t=wt-36&w2t2=wt-34&w2b1=wd&os=os-39&sm1=smc-63&sm2=smc-56&sm3=smc-65"
 ---
 
 ## What This Build Does

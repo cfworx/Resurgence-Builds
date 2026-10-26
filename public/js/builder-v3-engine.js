@@ -1,1218 +1,1570 @@
-/* ============================================================
-   SHD BUILD LAB v3 — Engine (adapted for Astro integration)
-   Reads verified data from #builder-data JSON payload.
-   ============================================================ */
-'use strict';
+/* Build Planner engine for /builder/.
+   Game data comes from the #builder-data JSON that src/pages/builder.astro writes from src/data.
+   Share links are untrusted input: every value in a link is matched against that data before it
+   is used, and text reaches the page only through textContent and setAttribute, never innerHTML. */
+(() => {
+  'use strict';
 
-const $ = (s, r = document) => r.querySelector(s);
-const $$ = (s, r = document) => [...r.querySelectorAll(s)];
+  const doc = document;
+  const $ = (sel, root = doc) => root.querySelector(sel);
+  const $$ = (sel, root = doc) => Array.from(root.querySelectorAll(sel));
+  const lab = $('#lab');
+  if (!lab) return;
 
-/* ---------- Load verified data from Astro ---------- */
-const DATA = JSON.parse(document.getElementById('builder-data').textContent);
-const GAME = {
-  gearSets: DATA.gearSets,
-  weaponTalents: DATA.weaponTalents,
-  bodyArmorTalents: DATA.bodyArmorTalents,
-  backpackTalents: DATA.backpackTalents,
-  osProtocols: DATA.osProtocols,
-  skillModCombos: DATA.skillModCombos,
-  standardWeapons: DATA.standardWeapons,
-  exoticWeapons: DATA.exoticWeapons,
-  templates: DATA.templates || [],
-  specSubclasses: {
-    'Demolitionist': ['HE Munitions', 'Field Grenadier'],
-    'Tech Operator': ['Offensive Operations', 'Aegis Operations'],
-    'Bulwark': ['Juggernaut', 'Breacher'],
-    'Vanguard': ['Commando', 'Recon'],
-    'Field Medic': ['Tactical Pharma', 'Combat Medicine']
-  },
-  specFocus: {
-    'Demolitionist': 'Engineering', 'Tech Operator': 'Engineering',
-    'Bulwark': 'Toughness', 'Vanguard': 'Firepower', 'Field Medic': 'Toughness'
-  },
-  /* Subclass overrides — more accurate than spec-level focus */
-  subclassFocus: {
-    'HE Munitions': 'Engineering', 'Ordinance': 'Engineering',
-    'Offensive Operations': 'Engineering', 'Aegis Operations': 'Engineering',
-    'Juggernaut': 'Toughness', 'Breacher': 'Firepower',
-    'Commando': 'Firepower', 'Recon': 'Toughness',
-    'Tactical Pharma': 'Engineering', 'Combat Medicine': 'Toughness'
-  },
-};
+  /* ---------- small helpers ---------- */
+  const arr = (v) => (Array.isArray(v) ? v : []);
+  const str = (v) => (typeof v === 'string' ? v : v == null ? '' : String(v));
+  const key = (v) => str(v).trim().toLowerCase();
+  const byName = (a, b) => str(a.name).localeCompare(str(b.name));
+  const reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-/* ---------- Spec icons (WebP from our verified assets) ---------- */
-const SPEC_ICONS = {
-  'Demolitionist': '<img src="/images/ui/specializations/demolitionist.webp" alt="Demolitionist specialization" class="sigil" width="32" height="32">',
-  'Tech Operator': '<img src="/images/ui/specializations/tech-operator.webp" alt="Tech Operator specialization" class="sigil" width="32" height="32">',
-  'Bulwark':       '<img src="/images/ui/specializations/bulwark.webp" alt="Bulwark specialization" class="sigil" width="32" height="32">',
-  'Vanguard':      '<img src="/images/ui/specializations/vanguard.webp" alt="Vanguard specialization" class="sigil" width="32" height="32">',
-  'Field Medic':   '<img src="/images/ui/specializations/field-medic.webp" alt="Field Medic specialization" class="sigil" width="32" height="32">',
-};
-
-/* ---------- Attribute category mapping ---------- */
-const ATTR_CAT = {};
-const ATTR_CATEGORIES = {
-  'Firepower': ['Weapon Damage','Weapon Critical Hit Chance','Weapon Critical Hit Damage','Headshot Damage','Weapon Multi-Shot Chance','Rate of Fire','Magazine Size','Reload Speed','Accuracy','Stability','Optimal Range','Firepower'],
-  'Toughness': ['Armor','Max Health','Damage Reduction','Received Healing','Movement Speed','Toughness','Damage Bonus'],
-  'Engineering': ['Skill Damage','Skill Duration','Skill Cooldown Recovery','Skill Critical Chance','Skill Critical Damage','Skill Intensity','Skill Radius','Skill Health','Skill Multi-Shot Chance','Healing Intensity','Signature Ability Charge Efficiency','Engineering','Release Extra Protection']
-};
-Object.entries(ATTR_CATEGORIES).forEach(([cat, attrs]) => attrs.forEach(a => ATTR_CAT[a] = cat));
-
-/* Short codes for URL compression — maps full attribute name ↔ 2-4 char code */
-const ATTR_SHORT = {
-  'Weapon Damage':'wd','Weapon Critical Hit Chance':'chc','Weapon Critical Hit Damage':'chd',
-  'Headshot Damage':'hsd','Weapon Multi-Shot Chance':'wms','Rate of Fire':'rof',
-  'Magazine Size':'mag','Reload Speed':'rls','Accuracy':'acc','Stability':'stb',
-  'Optimal Range':'opr','Firepower':'fp',
-  'Armor':'arm','Max Health':'mhp','Damage Reduction':'dr','Received Healing':'rh',
-  'Movement Speed':'ms','Toughness':'tgh','Damage Bonus':'db',
-  'Skill Damage':'sd','Skill Duration':'sdu','Skill Cooldown Recovery':'scr',
-  'Skill Critical Chance':'scc','Skill Critical Damage':'scd','Skill Intensity':'si',
-  'Skill Radius':'sr','Skill Health':'sh','Skill Multi-Shot Chance':'sms',
-  'Healing Intensity':'hi','Signature Ability Charge Efficiency':'sace',
-  'Engineering':'eng','Release Extra Protection':'rep'
-};
-const ATTR_LONG = Object.fromEntries(Object.entries(ATTR_SHORT).map(([k,v]) => [v,k]));
-function attrToCode(name) { return ATTR_SHORT[name] || name; }
-function codeToAttr(code) { return ATTR_LONG[code] || code; }
-
-function catClass(attr) {
-  const c = ATTR_CAT[attr];
-  return c === 'Firepower' ? 'cat-fp' : c === 'Toughness' ? 'cat-tough' : c === 'Engineering' ? 'cat-eng' : 'cat-uni';
-}
-
-/* ---------- State: start empty ---------- */
-let S = {
-  name: '', spec: null, subclass: '',
-  gear: { mask: {}, gloves: {}, holster: {}, body: {}, backpack: {}, kneepads: {} },
-  w1: { id: '', t1: '', t2: '', tier: 'T2', bonus1: '', bonus2: '' },
-  w2: { id: '', t1: '', t2: '', tier: 'T2', bonus1: '', bonus2: '' },
-  os: '', skills: [null, null, null]
-};
-
-/* ====================== BOOT SEQUENCE ====================== */
-(function boot() {
-  const bootEl = $('#boot');
-  if (!bootEl) { renderAll(true); return; }
-  const steps = ['ESTABLISHING UPLINK', 'DECRYPTING SHD CACHE', 'LOADING AGENT PROFILE', 'TERMINAL ONLINE'];
-  let i = 0;
-  const st = $('#bootStatus');
-  if (!st) { renderAll(true); return; }
-  const tick = setInterval(() => { i++; if (steps[i]) st.textContent = steps[i]; }, 430);
-  setTimeout(() => {
-    clearInterval(tick);
-    bootEl.classList.add('is-done');
-    renderAll(true);
-  }, 1850);
-})();
-
-/* ====================== RENDER: SPEC GRID ====================== */
-function renderSpecs() {
-  const specs = Object.keys(GAME.specSubclasses);
-  const grid = $('#specGrid');
-  if (!grid) return;
-  grid.innerHTML = specs.map((sp, idx) => `
-    <button class="spec-btn${sp === S.spec ? ' is-active' : ''}${idx === specs.length - 1 ? ' spec-btn--full' : ''}" data-spec="${sp}">
-      ${SPEC_ICONS[sp]}<span class="nm">${sp}</span>
-    </button>`).join('');
-  $$('.spec-btn').forEach(b => b.addEventListener('click', () => {
-    if (S.spec === b.dataset.spec) return;
-    S.spec = b.dataset.spec;
-    S.subclass = GAME.specSubclasses[S.spec][0];
-    let dropped = 0;
-    S.skills = S.skills.map(id => {
-      const sm = skillMod(id);
-      if (sm && sm.specialization !== S.spec) { dropped++; return null; }
-      return id;
+  /* Element builder: props are attributes (class, text, dataset and on* listeners are special);
+     children are nodes or plain strings, which become text nodes. */
+  function h(tag, props, ...kids) {
+    const node = doc.createElement(tag);
+    if (props) {
+      for (const [k, v] of Object.entries(props)) {
+        if (v == null || v === false) continue;
+        if (k === 'class') node.className = v;
+        else if (k === 'text') node.textContent = v;
+        else if (k === 'dataset') Object.assign(node.dataset, v);
+        else if (k.startsWith('on') && typeof v === 'function') node.addEventListener(k.slice(2), v);
+        else node.setAttribute(k, v === true ? '' : str(v));
+      }
+    }
+    for (const kid of kids.flat(3)) {
+      if (kid == null || kid === false || kid === '') continue;
+      node.append(kid instanceof Node ? kid : doc.createTextNode(str(kid)));
+    }
+    return node;
+  }
+  const B = (text) => h('b', null, text);
+  /* "a", "a and b", "a, b and c" (strings or nodes) */
+  function joined(items) {
+    const out = [];
+    items.forEach((it, i) => {
+      if (i > 0) out.push(i === items.length - 1 ? ' and ' : ', ');
+      out.push(it);
     });
-    scanPulse();
-    renderAll();
-    if (dropped) toast(`${S.spec.toUpperCase()} SELECTED — ${dropped} INCOMPATIBLE SKILL MOD${dropped > 1 ? 'S' : ''} CLEARED`);
-  }));
-  const subLabel = $('#subLabel');
-  if (subLabel) subLabel.textContent = S.subclass || '—';
-}
+    return out;
+  }
+  const plural = (n, one, many) => (n === 1 ? one : many);
 
-/* ====================== HELPERS ====================== */
-/* Returns the effective stat focus for the current build — subclass-level overrides spec-level */
-function getEffectiveFocus() {
-  return GAME.subclassFocus[S.subclass] || GAME.specFocus[S.spec] || '';
-}
-function gearSet(val) { return GAME.gearSets.find(g => g.name === val) || GAME.gearSets.find(g => g.id === val); }
-function weapon(id) { return GAME.standardWeapons.find(w => w.id === id) || GAME.exoticWeapons.find(w => w.id === id); }
-function osProto(id) { return GAME.osProtocols.find(o => o.id === id); }
-function skillMod(id) { return GAME.skillModCombos.find(s => s.id === id); }
-function setCounts() {
-  const c = {};
-  Object.values(S.gear).forEach(g => { if (g.set) c[g.set] = (c[g.set] || 0) + 1; });
-  return c;
-}
+  /* ---------- data ---------- */
+  let DATA = null;
+  try { DATA = JSON.parse($('#builder-data').textContent); } catch (e) { DATA = null; }
+  if (!DATA || typeof DATA !== 'object') return; // the check after this script shows the error line
 
-/* ====================== STAT MATH ====================== */
-function parsePct(str) {
-  if (!str) return 0;
-  const m = String(str).match(/([\d.]+)/);
-  return m ? parseFloat(m[1]) : 0;
-}
-function computeStats() {
-  const totals = {};
-  const add = (stat, v) => { totals[stat] = (totals[stat] || 0) + v; };
-  const counts = setCounts();
-  Object.entries(counts).forEach(([name, n]) => {
-    const set = gearSet(name);
-    if (!set) return;
-    if (n >= 2 && set.bonus2) { const [s, v] = splitBonus(set.bonus2); add(s, v); }
-    if (n >= 3 && set.bonus3) { const [s, v] = splitBonus(set.bonus3); add(s, v); }
-    if (n >= 4 && set.bonus4) { const [s, v] = splitBonus(set.bonus4); add(s, v); }
-  });
-  Object.values(S.gear).forEach(g => {
-    [g.b1, g.b2].forEach(a => { if (a) add(a, repRoll(a)); });
-  });
-  // Weapon bonus attributes (2 per weapon)
-  [S.w1, S.w2].forEach(w => {
-    if (w.bonus1) add(w.bonus1, repRoll(w.bonus1));
-    if (w.bonus2) add(w.bonus2, repRoll(w.bonus2));
-  });
-  // OS Protocol stat contributions
-  const os = osProto(S.os);
-  if (os) {
-    if (os.mainStat && os.mainValue) {
-      const [s, v] = splitBonus(os.mainStat + ' ' + os.mainValue);
-      if (v) add(os.mainStat, v);
+  /* Items by id, by name and by any `aliases` (older names, such as the drop table's skill mod names) */
+  function pool(list) {
+    const items = arr(list).filter((x) => x && x.id != null && str(x.name));
+    const ids = new Map();
+    const names = new Map();
+    for (const x of items) {
+      ids.set(str(x.id), x);
+      if (!names.has(key(x.name))) names.set(key(x.name), x);
     }
-    ['1','2','3'].forEach(i => {
-      const attr = os['attr' + i], val = os['val' + i];
-      if (attr && val) {
-        const num = parseFloat(val.replace(/[^0-9.]/g, ''));
-        if (num) add(attr, num);
-      }
-    });
-  }
-  return totals;
-}
-function splitBonus(str) {
-  const m = str.match(/^(.*?)\s*\+?([\d.]+)/);
-  return m ? [m[1].trim(), parseFloat(m[2])] : [str, 0];
-}
-function repRoll(attr) {
-  const cat = ATTR_CAT[attr];
-  if (cat === 'Toughness') return attr === 'Max Health' ? 6 : attr === 'Armor' ? 8.5 : 4.2;
-  if (cat === 'Firepower') return 5.5;
-  if (cat === 'Engineering') return 7;
-  return 5;
-}
-
-const HEAD_STATS = ['Max Health', 'Armor', 'Damage Reduction', 'Weapon Critical Hit Chance', 'Skill Duration', 'Received Healing', 'Signature Ability Charge Efficiency'];
-let prevStats = {};
-
-function renderStats(flash) {
-  const t = computeStats();
-  const statCatIcons = {
-    'Firepower': '/images/ui/attributes/firepower.webp',
-    'Toughness': '/images/ui/attributes/toughness.webp',
-    'Engineering': '/images/ui/attributes/engineering.webp'
-  };
-  const rows = HEAD_STATS.filter(stat => (t[stat] || 0) !== 0).map(stat => {
-    const v = t[stat] || 0;
-    const pv = prevStats[stat] || 0;
-    const d = +(v - pv).toFixed(1);
-    const hadBefore = stat in prevStats;
-    const changed = flash && hadBefore && Math.abs(d) > 0.05;
-    const deltaHtml = changed ? `<span class="delta${d < 0 ? ' neg' : ''}">${d > 0 ? '+' : ''}${d}</span>` : '';
-    const cat = ATTR_CAT[stat] || 'Engineering';
-    const iconSrc = statCatIcons[cat] || statCatIcons['Engineering'];
-    return `<div class="stat-row ${changed ? 'is-flash' : ''}">
-      <span class="stat-row__lbl ${catClass(stat)}"><img src="${iconSrc}" alt="${cat}" width="14" height="14" class="stat-ico">${stat}</span>
-      <span class="stat-row__val">+${v.toFixed(1)}%${deltaHtml}</span>
-    </div>`;
-  }).join('');
-  const el = $('#statList');
-  if (el) el.innerHTML = rows;
-  if (flash) setTimeout(() => $$('.stat-row').forEach(r => r.classList.remove('is-flash')), 700);
-  prevStats = t;
-}
-
-/* ====================== SET BONUSES ====================== */
-function renderBonuses() {
-  const counts = setCounts();
-  const active = Object.entries(counts).filter(([, n]) => n >= 2);
-  const el = $('#bonusList');
-  if (!el) return;
-  if (!active.length) { el.innerHTML = '<p class="empty">No active set bonuses. Equip 2+ matching pieces.</p>'; return; }
-  el.innerHTML = active.map(([name, n]) => {
-    const set = gearSet(name); if (!set) return '';
-    const lines = [];
-    if (n >= 2 && set.bonus2) lines.push(set.bonus2);
-    if (n >= 3 && set.bonus3) lines.push(set.bonus3);
-    if (n >= 4 && set.bonus4) lines.push(set.bonus4);
-    return `<div class="bonus">
-      <div class="bonus__hd"><span class="bonus__nm">${name}</span><span class="bonus__pc">${Math.min(n,4)}PC</span></div>
-      ${lines.map(l => `<div class="bonus__line">${l}</div>`).join('')}
-    </div>`;
-  }).join('');
-}
-
-/* ====================== ISAC DIAGNOSTICS ====================== */
-function buildScore() {
-  const counts = setCounts();
-  const filledGear = Object.values(S.gear).filter(x => x.set).length;
-  let completion = 0;
-  completion += filledGear * 4;
-  [S.w1, S.w2].forEach(w => { if (w.id) completion += 3; });
-  if (S.os) completion += 4;
-  completion += S.skills.filter(Boolean).length * 2;
-  completion = Math.min(40, completion);
-
-  let synergy = 0;
-  Object.values(counts).forEach(n => {
-    if (n >= 4) synergy += 24;
-    else if (n === 3) synergy += 14;
-    else if (n === 2) synergy += 8;
-  });
-  if (S.gear.body.talent) synergy += 5;
-  if (S.gear.backpack.talent) synergy += 5;
-  [S.w1, S.w2].forEach(w => { if (w.t1) synergy += 3; if (w.t2) synergy += 3; });
-  const focus = GAME.specFocus[S.spec];
-  const os = osProto(S.os);
-  if (os && focus && (os.specialization === focus)) synergy += 4;
-  synergy = Math.min(60, synergy);
-  return Math.round(completion + synergy);
-}
-
-function renderISAC() {
-  const score = buildScore();
-  const rigScore = $('#rigScore');
-  if (rigScore) rigScore.textContent = score || '—';
-  const meter = $('#ratingMeter');
-  if (meter) meter.style.width = score + '%';
-
-  let grade, cls, mColor;
-  if (score < 30) { grade = 'INCOMPLETE LOADOUT'; cls = 'g-incomplete'; mColor = 'linear-gradient(90deg,#5a6570,#8a96a2)'; }
-  else if (score < 50) { grade = 'LOW SYNERGY'; cls = 'g-low'; mColor = 'linear-gradient(90deg,#e8631a,#ff5347)'; }
-  else if (score < 70) { grade = 'OPERATIONAL'; cls = 'g-op'; mColor = 'linear-gradient(90deg,#e8631a,#ffc35e)'; }
-  else if (score < 88) { grade = 'OPTIMIZED'; cls = 'g-opt'; mColor = 'linear-gradient(90deg,#52a8ff,#52e08a)'; }
-  else { grade = 'ELITE SYNERGY'; cls = 'g-elite'; mColor = 'linear-gradient(90deg,#52e08a,#ffd84d)'; }
-  const gradeEl = $('#ratingGrade');
-  if (gradeEl) { gradeEl.textContent = grade; gradeEl.className = 'rating__grade ' + cls; }
-  if (meter) meter.style.background = mColor;
-  const isacEl = $('#isacText');
-  if (isacEl) isacEl.innerHTML = isacAnalysis();
-  renderDiagnostics();
-}
-
-function isacAnalysis() {
-  const counts = setCounts();
-  const top = Object.entries(counts).sort((a, b) => b[1] - a[1])[0];
-  if (!S.spec) return 'Awaiting agent configuration. Select a specialization to initialize loadout diagnostics.';
-  if (!top) return `<b>${S.spec} / ${S.subclass}</b> selected. Configure gear sets to begin loadout analysis.`;
-  const focus = GAME.specFocus[S.spec];
-  const stats = computeStats();
-  const hasRH = (stats['Received Healing'] || 0) > 0;
-  const hasDR = (stats['Damage Reduction'] || 0) > 0;
-  let txt = `<b>${S.spec} / ${S.subclass}.</b> `;
-  if (top[1] >= 4) txt += `${top[0]} 4-piece bonus active. Build core is locked in. `;
-  else if (top[1] >= 2) txt += `${top[0]} ${top[1]}-piece detected. `;
-  if (hasRH && hasDR) txt += `Defensive synergy detected: incoming healing converts into sustained damage reduction. `;
-  if (focus === 'Toughness' && (stats['Max Health'] || 0) > 10) txt += `Toughness-focused. Survivability scaling is strong. `;
-  if ((stats['Weapon Critical Hit Chance'] || 0) > 0 && !(stats['Weapon Critical Hit Damage'] || 0)) txt += `Note: Crit Chance present without Crit Damage to amplify it. `;
-  return txt;
-}
-
-function renderDiagnostics() {
-  const out = [];
-  const counts = setCounts();
-  Object.entries(counts).forEach(([name, n]) => {
-    if (n === 1) out.push(['warn', `<b>${name}</b> has only 1 piece. No set bonus active. Add a 2nd piece or replace it.`]);
-  });
-  const stats = computeStats();
-
-  if ((stats['Received Healing'] || 0) > 0 && (stats['Damage Reduction'] || 0) > 0)
-    out.push(['ok', `<b>Received Healing → Damage Reduction</b> loop is online. Strong sustain core.`]);
-  const focus = getEffectiveFocus();
-  const os = osProto(S.os);
-  if (os && os.specialization && focus && os.specialization !== focus)
-    out.push(['info', `OS Protocol scales with <b>${os.specialization}</b> but your subclass focus is <b>${focus}</b>. Verify the stat investment lines up.`]);
-  if (!out.length) out.push(['ok', `No conflicts detected. Loadout is internally consistent.`]);
-
-  const ico = {
-    warn: '<svg class="diag__ico" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 20h20z"/><path d="M12 9v5M12 17h.01"/></svg>',
-    ok: '<svg class="diag__ico" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>',
-    info: '<svg class="diag__ico" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v4h1"/></svg>',
-  };
-  const el = $('#diagList');
-  if (el) el.innerHTML = out.map(([t, m]) => `<div class="diag diag--${t}">${ico[t]}<span class="diag__txt">${m}</span></div>`).join('');
-}
-
-/* ====================== RENDER: GEAR RIG ====================== */
-function renderGear() {
-  const counts = setCounts();
-  let filled = 0;
-  $$('.gearslot').forEach(el => {
-    const slot = el.dataset.slot;
-    const g = S.gear[slot];
-    const valEl = el.querySelector('.gearslot__val');
-    const txtEl = el.querySelector('.gearslot__txt');
-    let attrEl = el.querySelector('.gearslot__attrs');
-    if (g && g.set) {
-      filled++;
-      valEl.textContent = g.set;
-      el.classList.add('is-set');
-      el.classList.toggle('is-bonus', counts[g.set] >= 2);
-      // Show abbreviated attributes inside the txt container
-      const attrs = [g.b1, g.b2].filter(Boolean);
-      if (attrs.length) {
-        if (!attrEl) {
-          attrEl = document.createElement('span');
-          attrEl.className = 'gearslot__attrs';
-          (txtEl || el).appendChild(attrEl);
-        }
-        attrEl.textContent = attrs.map(a => abbrevAttr(a)).join(' · ');
-      } else if (attrEl) {
-        attrEl.textContent = '';
-      }
-    } else {
-      valEl.textContent = 'Empty';
-      el.classList.remove('is-set', 'is-bonus');
-      if (attrEl) attrEl.textContent = '';
+    for (const x of items) {
+      for (const a of arr(x.aliases)) if (str(a).trim() && !names.has(key(a))) names.set(key(a), x);
     }
-  });
-  const gp = $('#gearPieces');
-  if (gp) gp.textContent = `${filled} / 6 SLOTS`;
-  const linked = Object.values(counts).some(n => n >= 2);
-  const rig = $('#gearPanel .rig');
-  if (rig) rig.classList.toggle('is-linked', linked);
-}
-/* Abbreviate long attribute names for compact gear slot display */
-function abbrevAttr(a) {
-  const map = {
-    'Weapon Critical Hit Chance': 'CHC',
-    'Weapon Critical Hit Damage': 'CHD',
-    'Headshot Damage': 'HSD',
-    'Weapon Damage': 'WD',
-    'Weapon Multi-Shot Chance': 'Multi-Shot',
-    'Max Health': 'Health',
-    'Damage Reduction': 'DR',
-    'Received Healing': 'Heal',
-    'Skill Cooldown Recovery': 'CDR',
-    'Skill Critical Chance': 'Skill CHC',
-    'Skill Critical Damage': 'Skill CHD',
-    'Skill Duration': 'Skill Dur',
-    'Skill Intensity': 'Intensity',
-    'Skill Multi-Shot Chance': 'Skill Multi',
-    'Healing Intensity': 'Heal Int',
-    'Signature Ability Charge Efficiency': 'Sig Charge',
-    'Release Extra Protection': 'Extra Prot',
-    'Magazine Size': 'Mag Size',
-    'Reload Speed': 'Reload',
-    'Optimal Range': 'Range',
-    'Rate of Fire': 'RoF',
-    'Movement Speed': 'Move Spd',
-    'Damage Bonus': 'Dmg Bonus',
-    'Skill Damage': 'Skill Dmg',
-    'Skill Health': 'Skill HP',
-    'Skill Radius': 'Skill Rad',
-  };
-  return map[a] || a;
-}
-
-/* ====================== RENDER: WEAPONS ====================== */
-function renderWeapons() {
-  [['1', S.w1], ['2', S.w2]].forEach(([k, w]) => {
-    const wp = weapon(w.id);
-    const isExotic = wp && GAME.exoticWeapons.some(e => e.id === wp.id);
-    const exoticData = isExotic ? GAME.exoticWeapons.find(e => e.id === wp.id) : null;
-    const nameEl = $(`#w${k}name`);
-    const subEl = $(`#w${k}sub`);
-    const tierEl = $(`#w${k}tier`);
-    if (nameEl) nameEl.textContent = wp ? wp.name : `Select ${k === '1' ? 'Primary' : 'Secondary'}`;
-    if (subEl) subEl.textContent = wp ? `${wp.type} · ${wp.rpm} RPM · ${wp.mag} mag` : '—';
-    if (tierEl) tierEl.textContent = w.tier || 'T2';
-    const slotEl = $(`.slot[data-wslot="${k}"]`);
-    if (slotEl) {
-      slotEl.classList.toggle('is-set', !!wp);
-      slotEl.classList.toggle('is-exotic', isExotic);
-    }
-    // Exotic fixed talent
-    const fixedEl = $(`#w${k}fixed`);
-    const talentPair = fixedEl ? fixedEl.parentElement : null;
-    if (fixedEl) {
-      if (isExotic && exoticData) {
-        fixedEl.style.display = '';
-        const fixedName = fixedEl.querySelector('.picktag__val');
-        if (fixedName) fixedName.textContent = exoticData.talentName;
-        let fixedDesc = fixedEl.querySelector('.picktag__desc');
-        if (!fixedDesc) { fixedDesc = document.createElement('span'); fixedDesc.className = 'picktag__desc'; fixedEl.appendChild(fixedDesc); }
-        fixedDesc.textContent = exoticData.talentDescription;
-        fixedEl.classList.add('is-set', 'is-fixed');
-        if (talentPair) talentPair.classList.add('has-exotic');
-      } else {
-        fixedEl.style.display = 'none';
-        if (talentPair) talentPair.classList.remove('has-exotic');
-      }
-    }
-    setTalent(`w${k}t1`, w.t1);
-    setTalent(`w${k}t2`, w.t2);
-    // Weapon bonus attributes (2 per weapon)
-    [1, 2].forEach(i => {
-      const bonusEl = $(`#w${k}bonus${i}`);
-      const bonusRow = $(`.weapon-bonus[data-wbonus="${k}"][data-wbidx="${i}"]`);
-      const val = w['bonus' + i];
-      if (bonusEl) bonusEl.textContent = val ? abbrevAttr(val) : '—';
-      if (bonusRow) bonusRow.classList.toggle('is-set', !!val);
-    });
-  });
-}
-function setTalent(key, val) {
-  const el = $(`.picktag[data-talent="${key}"]`);
-  if (!el) return;
-  el.querySelector('.picktag__val').textContent = val || '—';
-  el.classList.toggle('is-set', !!val);
-  // Show talent description
-  let descEl = el.querySelector('.picktag__desc');
-  if (val) {
-    const talent = GAME.weaponTalents.find(t => t.name === val);
-    if (talent && talent.description) {
-      if (!descEl) {
-        descEl = document.createElement('span');
-        descEl.className = 'picktag__desc';
-        el.appendChild(descEl);
-      }
-      descEl.textContent = talent.description;
-    }
-  } else if (descEl) {
-    descEl.remove();
-  }
-}
-
-/* ====================== RENDER: OS + SKILLS ====================== */
-function renderOS() {
-  const os = osProto(S.os);
-  const nameEl = $('#osName');
-  const subEl = $('#osSub');
-  const slotEl = $('#osSlot');
-  const focusTag = $('#osFocusTag');
-  if (nameEl) nameEl.textContent = os ? os.name : 'Select OS Protocol';
-  if (subEl) subEl.textContent = os ? `${os.specialization} · ${os.mainStat} ${os.mainValue}` : 'Choose a protocol matched to your focus';
-  if (slotEl) slotEl.classList.toggle('is-set', !!os);
-  if (focusTag) {
-    const label = os ? os.specialization : (GAME.specFocus[S.spec] || 'SELECT SPEC');
-    focusTag.textContent = label.toUpperCase();
-    // Color the tag based on focus
-    focusTag.className = 'tag';
-    if (os) {
-      if (os.specialization === 'Firepower') focusTag.classList.add('tag--red');
-      else if (os.specialization === 'Toughness') focusTag.classList.add('tag--blue');
-      else if (os.specialization === 'Engineering') focusTag.classList.add('tag--purple');
-    } else {
-      focusTag.classList.add('tag--blue');
-    }
-  }
-}
-
-function renderSkills() {
-  const el = $('#skillList');
-  if (!el) return;
-  if (!S.spec) {
-    el.innerHTML = '<div class="skill-slot"><span class="skill-slot__n">—</span><div class="skill-slot__txt"><span class="skill-slot__nm">Choose spec first</span><span class="skill-slot__sub">Skill mods are specialization-locked</span></div></div>';
-    const countEl = $('#skillCount');
-    if (countEl) countEl.textContent = '0 / 3';
-    return;
-  }
-  const html = [0, 1, 2].map(i => {
-    const sm = skillMod(S.skills[i]);
-    return `<div class="skill-slot${sm ? ' is-set' : ''}" data-skill="${i}">
-      <span class="skill-slot__n">${i + 1}</span>
-      <div class="skill-slot__txt">
-        <span class="skill-slot__nm">${sm ? sm.name : 'Select Skill Mod'}</span>
-        <span class="skill-slot__sub">${sm ? sm.specialization + ' · ' + (sm.bonus2 || '') : '—'}</span>
-        ${sm && sm.bonus3 ? `<span class="skill-slot__desc">${sm.bonus3}</span>` : ''}
-      </div>
-    </div>`;
-  }).join('');
-  el.innerHTML = html;
-  const countEl = $('#skillCount');
-  if (countEl) countEl.textContent = `${S.skills.filter(Boolean).length} / 3`;
-  $$('.skill-slot').forEach(el => el.addEventListener('click', () => {
-    if (!S.spec) return;
-    openSkillPicker(+el.dataset.skill);
-  }));
-}
-
-/* ====================== ARMOR TALENTS ====================== */
-function renderArmorTalents() {
-  const b = S.gear.body.talent, k = S.gear.backpack.talent;
-  const bEl = $('#bodyTalentVal'), kEl = $('#backTalentVal');
-  if (bEl) bEl.textContent = b || 'Select talent';
-  if (kEl) kEl.textContent = k || 'Select talent';
-  const bodyTag = $('.picktag[data-armortalent="body"]');
-  const bpTag = $('.picktag[data-armortalent="backpack"]');
-  if (bodyTag) {
-    bodyTag.classList.toggle('is-set', !!b);
-    setArmorTalentDesc(bodyTag, b, GAME.bodyArmorTalents);
-  }
-  if (bpTag) {
-    bpTag.classList.toggle('is-set', !!k);
-    setArmorTalentDesc(bpTag, k, GAME.backpackTalents);
-  }
-}
-function setArmorTalentDesc(el, name, pool) {
-  let descEl = el.querySelector('.picktag__desc');
-  if (name) {
-    const t = pool.find(x => x.name === name);
-    if (t && t.description) {
-      if (!descEl) { descEl = document.createElement('span'); descEl.className = 'picktag__desc'; el.appendChild(descEl); }
-      descEl.textContent = t.description;
-    }
-  } else if (descEl) { descEl.remove(); }
-}
-
-/* ====================== INTELLIGENT BUILD ANALYSIS ENGINE ====================== */
-function renderLoop() {
-  const counts = setCounts();
-  const topSets = Object.entries(counts).sort((a, b) => b[1] - a[1]);
-  const bt = S.gear.body.talent, bk = S.gear.backpack.talent;
-  const os = osProto(S.os);
-  const w1 = weapon(S.w1.id), w2 = weapon(S.w2.id);
-  const focus = getEffectiveFocus();
-  const stats = computeStats();
-  const score = buildScore();
-  const allTalents = [S.w1.t1, S.w1.t2, S.w2.t1, S.w2.t2].filter(Boolean);
-
-  const pick = arr => arr[Math.floor(Math.random() * arr.length)];
-
-  const hasRH = (stats['Received Healing'] || 0) > 0;
-  const hasDR = (stats['Damage Reduction'] || 0) > 0;
-  const hasCHC = (stats['Weapon Critical Hit Chance'] || 0) > 0;
-  const hasCHD = (stats['Weapon Critical Hit Damage'] || 0) > 0;
-  const hasSCC = (stats['Skill Critical Chance'] || 0) > 0;
-  const hasSCD = (stats['Skill Critical Damage'] || 0) > 0;
-  const hasSMS = (stats['Skill Multi-Shot Chance'] || 0) > 0;
-  const hasSACE = (stats['Signature Ability Charge Efficiency'] || 0) > 0;
-
-  const sections = [];
-
-  if (!S.spec) {
-    sections.push('Equip gear, weapons, and select talents to generate your build analysis.');
-    const g = $('#loopGraph'); if (g) g.innerHTML = sections.map(s => '<p class="overview__p">' + s + '</p>').join('');
-    return;
-  }
-
-  // 1. BUILD IDENTITY
-  const intros = [
-    '<b>' + S.spec + (S.subclass ? ' / ' + S.subclass : '') + '</b> loadout' + (focus ? ' built around <b>' + focus + '</b> scaling' : '') + '.',
-    '<b>' + S.spec + (S.subclass ? ' \u00b7 ' + S.subclass : '') + '</b> configuration' + (focus ? ' \u2014 investing in <b>' + focus + '</b>' : '') + '.',
-    'Running <b>' + S.spec + (S.subclass ? ' / ' + S.subclass : '') + '</b>' + (focus ? ' with a clear <b>' + focus + '</b> focus' : '') + '.',
-  ];
-  let id = pick(intros);
-  if (topSets.length && topSets[0][1] >= 2) {
-    id += ' Core: ' + topSets.filter(function(e){return e[1]>=2}).map(function(e){return e[0]+' ('+Math.min(e[1],4)+'pc)'}).join(' + ') + '.';
-  }
-  sections.push(id);
-
-  // 2. SYNERGY DETECTION
-  var syn = [];
-  var ehTalents = ['Backup Protection', 'Swift Taunt', 'Emergency Shield'];
-  var hasEH = allTalents.some(function(t){return ehTalents.indexOf(t)>=0});
-  if (hasEH && os && os.talentDescription && os.talentDescription.toLowerCase().indexOf('extra health') >= 0) {
-    syn.push(pick([
-      '<b>Extra Health loop detected.</b> Weapon talents feed Extra Health into ' + os.name + "'s proc condition \u2014 this is a self-sustaining combat engine.",
-      '<b>Core synergy: Extra Health chain.</b> Weapon talents generate Extra Health that ' + os.name + ' consumes for its effect. The loop feeds itself.',
-    ]));
-  }
-  if (hasCHC && hasCHD) {
-    syn.push(pick([
-      '<b>Weapon crit chain active</b> \u2014 ' + stats['Weapon Critical Hit Chance'].toFixed(1) + '% CHC paired with ' + stats['Weapon Critical Hit Damage'].toFixed(1) + '% CHD. Crits amplify real damage.',
-      'Crit investment is <b>balanced</b>: ' + stats['Weapon Critical Hit Chance'].toFixed(1) + '% chance \u00d7 ' + stats['Weapon Critical Hit Damage'].toFixed(1) + '% damage. Both sides of the equation covered.',
-    ]));
-  } else if (hasCHC && !hasCHD) {
-    syn.push('\u26a0 Crit Chance at ' + stats['Weapon Critical Hit Chance'].toFixed(1) + '% but <b>no Crit Damage</b> to capitalize \u2014 crits hitting soft.');
-  }
-  if (hasSCC && hasSCD) {
-    syn.push(pick([
-      '<b>Skill crit chain active</b> \u2014 ' + stats['Skill Critical Chance'].toFixed(1) + '% chance with ' + stats['Skill Critical Damage'].toFixed(1) + '% multiplier. Skills hit hard on crits.',
-      'Engineering crit pipeline live: <b>' + stats['Skill Critical Chance'].toFixed(1) + '% Skill CHC</b> feeding <b>' + stats['Skill Critical Damage'].toFixed(1) + '% Skill CHD</b>.',
-    ]));
-  }
-  if (hasSMS && (hasSCC || hasSCD)) {
-    syn.push(pick([
-      '<b>Skill Multi-Shot + Crit</b> combo \u2014 each multi-hit rolls crit independently, multiplying effective skill DPS.',
-      'Multi-shot rolls boost skill crit output. Each extra projectile crits independently \u2014 scales exponentially.',
-    ]));
-  }
-  if (hasRH && hasDR) {
-    syn.push(pick([
-      '<b>Sustain loop online</b> \u2014 ' + stats['Received Healing'].toFixed(1) + '% Received Healing with ' + stats['Damage Reduction'].toFixed(1) + '% DR. Healing is amplified while less damage gets through.',
-      '<b>Tank core solid.</b> ' + stats['Damage Reduction'].toFixed(1) + '% DR means lighter hits, ' + stats['Received Healing'].toFixed(1) + '% Received Healing means bigger heals. Hard to kill.',
-    ]));
-  }
-  if (hasSACE) {
-    syn.push('Signature Ability charges <b>' + stats['Signature Ability Charge Efficiency'].toFixed(1) + '% faster</b>. Tighter rotation windows and more frequent ultimates.');
-  }
-  if (w1 && w1.rpm >= 850 && hasEH) {
-    syn.push('<b>High RPM</b> \u2014 ' + w1.name + ' at ' + w1.rpm + ' RPM stacks hit-count conditions fast. Hit-based OS procs fire multiple times per magazine.');
-  }
-  if (os && focus) {
-    if (os.specialization === focus) {
-      syn.push('<b>OS Protocol aligned:</b> ' + os.name + ' scales with ' + os.specialization + ', matching your subclass focus. Stats pull double duty.');
-    }
-  }
-  if (allTalents.indexOf('Killer') >= 0) {
-    syn.push(pick([
-      'Killer active \u2014 <b>crit kills chain into more crit damage</b>. Snowball talent that rewards aggressive target priority.',
-      '<b>Killer rewards fast kills.</b> Chain crit kills in multi-enemy encounters to keep the damage buff rolling.',
-    ]));
-  }
-  if (allTalents.indexOf('Strained') >= 0) {
-    syn.push('<b>Strained wants sustained fire.</b> Longer trigger holds = more Crit Damage. Pair with high-mag weapons for max payoff.');
-  }
-  if (allTalents.indexOf('Rampart') >= 0) {
-    syn.push('<b>Rampart stacks on kill.</b> In target-rich environments each kill adds another damage layer. Keep the chain alive.');
-  }
-  if (allTalents.indexOf('Breadbasket') >= 0 && (stats['Headshot Damage'] || 0) > 0) {
-    syn.push('<b>Breadbasket + Headshot Damage</b> \u2014 body shots stack HSD, then the headshot cashes in. Escalating burst per magazine.');
-  }
-  if (bt === 'Unstoppable' && focus === 'Toughness') {
-    syn.push('<b>Unstoppable on Toughness</b> \u2014 taking damage procs healing equal to 300% Toughness. Primary sustain engine.');
-  }
-  syn.slice(0, 3).forEach(function(s){sections.push(s)});
-
-  // 3. WEAPONS
-  if (w1 || w2) {
-    var wl = '<em>Weapons:</em> ';
-    if (w1) wl += '<b>' + w1.name + '</b> (' + w1.type + ' \u00b7 ' + w1.rpm + ' RPM \u00b7 ' + w1.mag + ' mag)';
-    if (w1 && w2) wl += ' \u00b7 ';
-    if (w2) wl += '<b>' + w2.name + '</b> (' + w2.type + ' \u00b7 ' + w2.rpm + ' RPM \u00b7 ' + w2.mag + ' mag)';
-    if (allTalents.length) wl += '. Talents: ' + allTalents.join(', ') + '.';
-    sections.push(wl);
-  }
-
-  // 4. ARMOR TALENTS
-  if (bt || bk) {
-    var tl = '<em>Armor Talents:</em> ';
-    if (bt) { var bd = GAME.bodyArmorTalents.find(function(t){return t.name===bt}); tl += '<b>' + bt + '</b> (Body)' + (bd ? ' \u2014 ' + bd.description : ''); }
-    if (bt && bk) tl += ' | ';
-    if (bk) { var kd = GAME.backpackTalents.find(function(t){return t.name===bk}); tl += '<b>' + bk + '</b> (Backpack)' + (kd ? ' \u2014 ' + kd.description : ''); }
-    sections.push(tl);
-  }
-
-  // 5. OS PROTOCOL
-  if (os) sections.push('<em>OS Protocol:</em> <b>' + os.name + '</b> (' + os.specialization + ') \u2014 ' + os.talentDescription);
-
-  // 6. STAT PROFILE
-  var sp = Object.entries(stats).filter(function(e){return e[1]>0}).sort(function(a,b){return b[1]-a[1]});
-  if (sp.length) sections.push('<em>Top stats:</em> ' + sp.slice(0,5).map(function(e){return abbrevAttr(e[0])+' <b>+'+e[1].toFixed(1)+'%</b>'}).join(' \u00b7 '));
-
-  // 7. TACTICAL ASSESSMENT
-  if (focus === 'Toughness' && hasRH && hasDR) {
-    sections.push(pick([
-      '<em>Playstyle:</em> <b>Sustain tank.</b> Stay in the fight, absorb damage, let healing loops keep you alive while your squad capitalizes on the space you create.',
-      '<em>Playstyle:</em> <b>Frontline anchor.</b> Draw aggro, survive it, create openings. This build rewards controlled aggression, not passive play.',
-    ]));
-  } else if (focus === 'Firepower' && hasCHC) {
-    sections.push(pick([
-      '<em>Playstyle:</em> <b>Burst DPS.</b> Prioritize high-value targets, chain crits, use cover transitions to maintain your damage window.',
-      '<em>Playstyle:</em> <b>Pure damage dealer.</b> Position for optimal range, focus fire priority targets, let crit chains carry the DPS.',
-    ]));
-  } else if (focus === 'Engineering' && (hasSCC || hasSCD)) {
-    sections.push(pick([
-      '<em>Playstyle:</em> <b>Skill DPS.</b> Deploy aggressively, chain skill crits for CDR, maintain skill uptime above all else.',
-      '<em>Playstyle:</em> <b>Skill-centric.</b> Damage comes from abilities. Keep skills deployed, rotate cooldowns, maximize skill coverage.',
-    ]));
-  } else if (focus === 'Toughness') {
-    sections.push('<em>Playstyle:</em> <b>Toughness build.</b> Absorb pressure, use defensive talent procs to stay in the fight.');
-  } else if (focus === 'Firepower') {
-    sections.push('<em>Playstyle:</em> <b>Firepower build.</b> Maximize weapon uptime, control engagements at optimal range, chain kills for momentum.');
-  } else if (focus === 'Engineering') {
-    sections.push('<em>Playstyle:</em> <b>Engineering loadout.</b> Skills are your primary weapon. Manage cooldowns aggressively.');
-  }
-
-  // 8. VERDICT
-  if (score >= 88) {
-    sections.push(pick([
-      '<em>Verdict:</em> <b>Elite-tier.</b> Gear, talents, stats, and OS are fully aligned. Ready for high-difficulty content.',
-      '<em>Verdict:</em> <b>Top-shelf synergy.</b> Every piece pulls its weight. This loadout is dialed in.',
-      '<em>Verdict:</em> <b>Fully optimized.</b> Synergy loops complete, investment focused, no dead weight.',
-    ]));
-  } else if (score >= 70) {
-    sections.push(pick([
-      '<em>Verdict:</em> <b>Strong foundation.</b> Core synergies online but room to tighten stat allocation.',
-      '<em>Verdict:</em> <b>Solid build.</b> Main loops work. Min-max attribute rolls and talent choices for the last 10%.',
-    ]));
-  } else if (score >= 50) {
-    sections.push(pick([
-      '<em>Verdict:</em> <b>Work in progress.</b> Has direction but some slots are unoptimized.',
-      '<em>Verdict:</em> <b>Operational but unfinished.</b> Fill remaining slots and align talents with gear set bonuses.',
-    ]));
-  } else if (score > 0) {
-    sections.push('<em>Verdict:</em> <b>Early stage.</b> Fill more slots and pick weapons to unlock the full analysis.');
-  }
-
-  var graphEl = $('#loopGraph');
-  if (graphEl) graphEl.innerHTML = sections.map(function(s){return '<p class="overview__p">'+s+'</p>'}).join('');
-  var stepsEl = $('#loopSteps');
-  if (stepsEl) stepsEl.innerHTML = '';
-}
-
-/* ====================== MASTER RENDER ====================== */
-function renderAll(initial) {
-  renderSpecs();
-  renderGear();
-  renderArmorTalents();
-  renderWeapons();
-  renderOS();
-  renderSkills();
-  renderBonuses();
-  renderLoop();
-  renderStats(!initial);
-  renderISAC();
-  const tplLabel = $('#tplLabel');
-  if (tplLabel) tplLabel.textContent = S.name ? `${S.name} — ${S.spec} ${S.subclass}` : 'Select a verified template…';
-  // Sync build name input
-  const nameInput = $('#buildNameInput');
-  if (nameInput && nameInput !== document.activeElement) nameInput.value = S.name || '';
-  if (initial) {
-    const rig = $('#gearPanel .rig');
-    if (rig) rig.classList.add('is-active');
-  }
-}
-
-/* ====================== MICRO-INTERACTIONS ====================== */
-function scanPulse() {
-  const rig = $('#gearPanel .rig');
-  if (!rig) return;
-  rig.classList.remove('is-active'); void rig.offsetWidth; rig.classList.add('is-active');
-}
-function flashSlot(el) {
-  if (!el) return;
-  el.style.transition = 'none'; el.style.boxShadow = '0 0 0 1px var(--amber),0 0 20px rgba(255,195,94,.4)';
-  setTimeout(() => { el.style.transition = ''; el.style.boxShadow = ''; }, 300);
-}
-
-/* ====================== PICKER MODAL ====================== */
-const modal = $('#modal'), modalList = $('#modalList'), modalSearch = $('#modalSearch'), modalTitle = $('#modalTitle');
-let modalData = [], modalRender = null, modalSelect = null, modalCurrent = null;
-
-function openModal(title, items, renderFn, selectFn, current) {
-  modalTitle.textContent = '// ' + title;
-  modalData = items; modalRender = renderFn; modalSelect = selectFn; modalCurrent = current;
-  modalSearch.value = '';
-  drawModal('');
-  modal.classList.add('is-open');
-  // Only auto-focus search on desktop — prevents mobile keyboard from blocking the list
-  if (!('ontouchstart' in window)) setTimeout(() => modalSearch.focus(), 50);
-}
-function closeModal() { modal.classList.remove('is-open'); }
-function drawModal(q) {
-  q = q.toLowerCase();
-  const items = modalData.filter(it => {
-    const r = modalRender(it);
-    return ((r.name || '') + ' ' + (r.type || '') + ' ' + (r.desc || '')).toLowerCase().includes(q);
-  });
-  if (!items.length) { modalList.innerHTML = '<div class="opt-empty">No matches found.</div>'; return; }
-  modalList.innerHTML = items.map(it => {
-    const r = modalRender(it);
-    const cur = modalCurrent && r.id === modalCurrent ? ' is-current' : '';
-    return `<button class="opt${cur}" data-id="${r.id}">
-      <div class="opt__top"><span class="opt__nm">${r.name}</span>${r.type ? `<span class="opt__type">${r.type}</span>` : ''}</div>
-      ${r.desc ? `<div class="opt__desc">${highlight(r.desc, q)}</div>` : ''}
-    </button>`;
-  }).join('');
-  $$('.opt', modalList).forEach(b => b.addEventListener('click', () => { closeModal(); setTimeout(() => modalSelect(b.dataset.id), 60); }));
-}
-function highlight(text, q) {
-  if (!q) return text;
-  try { return text.replace(new RegExp(`(${q.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})`, 'ig'), '<span class="stat-hit">$1</span>'); }
-  catch { return text; }
-}
-modalSearch.addEventListener('input', e => drawModal(e.target.value));
-$('#modalClose').addEventListener('click', closeModal);
-modal.addEventListener('click', e => { if (e.target === modal) closeModal(); });
-document.addEventListener('keydown', e => { if (e.key === 'Escape') { closeModal(); const cm = $('#cardModal'); if (cm) cm.classList.remove('is-open'); } });
-
-/* ---------- Specific pickers ---------- */
-function openGearPicker(slot) {
-  openModal('SELECT GEAR SET — ' + slot.toUpperCase(),
-    GAME.gearSets,
-    g => ({ id: g.name, name: g.name, type: 'Gear Set', desc: `2pc: ${g.bonus2} · 4pc: ${g.bonus4}` }),
-    name => {
-      S.gear[slot].set = name;
-      // Now pick attribute 1
-      openAttrPicker(slot, 1);
-    },
-    S.gear[slot].set);
-}
-/* All available minor attributes a player can roll on gear */
-const ALL_ATTRS = [
-  ...ATTR_CATEGORIES['Firepower'],
-  ...ATTR_CATEGORIES['Toughness'],
-  ...ATTR_CATEGORIES['Engineering']
-].filter((v, i, a) => a.indexOf(v) === i); // deduplicate
-
-function openAttrPicker(slot, num) {
-  const items = ALL_ATTRS.map(a => ({ id: a, name: a, cat: ATTR_CAT[a] }));
-  openModal(`${slot.toUpperCase()} — ATTRIBUTE ${num}`,
-    items,
-    a => ({ id: a.id, name: a.name, type: a.cat, desc: '' }),
-    attr => {
-      S.gear[slot]['b' + num] = attr;
-      if (num === 1) {
-        // Pick attribute 2
-        openAttrPicker(slot, 2);
-      } else {
-        afterChange($('.gearslot[data-slot="' + slot + '"]'));
-      }
-    },
-    S.gear[slot]['b' + num]);
-}
-function openTalentPicker(slot, isBody) {
-  const pool = isBody ? GAME.bodyArmorTalents : GAME.backpackTalents;
-  openModal((isBody ? 'BODY' : 'BACKPACK') + ' TALENT',
-    pool,
-    t => ({ id: t.name, name: t.name, type: 'Talent', desc: t.description }),
-    name => { S.gear[slot].talent = name; afterChange(); },
-    S.gear[slot].talent);
-}
-function openWeaponPicker(k) {
-  const items = [...GAME.exoticWeapons.map(w => ({ ...w, exotic: true })), ...GAME.standardWeapons];
-  openModal('SELECT WEAPON ' + (k === '1' ? '(PRIMARY)' : '(SECONDARY)'),
-    items,
-    w => ({ id: w.id, name: w.name, type: w.exotic ? 'EXOTIC · ' + w.type : w.type, desc: w.exotic ? w.talentDescription : `${w.rpm} RPM · ${w.mag} mag · ${w.dmgType || ''}` }),
-    id => {
-      // Exotic restriction: can't equip 2 exotics
-      const isExotic = GAME.exoticWeapons.some(e => e.id === id);
-      const otherKey = k === '1' ? 'w2' : 'w1';
-      const otherIsExotic = GAME.exoticWeapons.some(e => e.id === S[otherKey].id);
-      if (isExotic && otherIsExotic) {
-        S[otherKey] = { id: '', t1: '', t2: '', tier: 'T2' };
-        toast('EXOTIC RESTRICTION: Only 1 exotic weapon permitted. Other slot cleared.');
-      }
-      S['w' + k].id = id;
-      afterChange($(`.slot[data-wslot="${k}"]`));
-    },
-    S['w' + k].id);
-}
-function openWTalentPicker(key) {
-  openModal('WEAPON TALENT',
-    GAME.weaponTalents,
-    t => ({ id: t.name, name: t.name, type: 'Talent', desc: t.description }),
-    name => {
-      const k = key[1]; const slot = key.endsWith('t1') ? 't1' : 't2';
-      S['w' + k][slot] = name; afterChange();
-    },
-    (() => { const k = key[1]; const slot = key.endsWith('t1') ? 't1' : 't2'; return S['w' + k][slot]; })());
-}
-function openOSPicker() {
-  // Sort: recommended focus first
-  const focus = GAME.specFocus[S.spec] || '';
-  const sorted = [...GAME.osProtocols].sort((a, b) => {
-    const aRec = a.specialization === focus ? 0 : 1;
-    const bRec = b.specialization === focus ? 0 : 1;
-    return aRec - bRec;
-  });
-  openModal('SELECT OS PROTOCOL',
-    sorted,
-    o => ({ id: o.id, name: o.name, type: o.specialization + (o.specialization === focus ? ' ★' : ''), desc: `${o.mainStat} ${o.mainValue} — ${o.talentDescription}` }),
-    id => { S.os = id; afterChange($('#osSlot')); },
-    S.os);
-}
-function openSkillPicker(idx) {
-  if (!S.spec) return;
-  const pool = GAME.skillModCombos.filter(s => s.specialization === S.spec);
-  openModal('SELECT SKILL MOD ' + (idx + 1) + ' — ' + S.spec.toUpperCase(),
-    pool,
-    s => ({ id: s.id, name: s.name, type: s.specialization, desc: `${s.bonus2} · ${s.bonus3}` }),
-    id => { S.skills[idx] = id; afterChange(); },
-    S.skills[idx]);
-}
-
-function afterChange(flashEl) {
-  flashSlot(flashEl);
-  renderAll();
-}
-
-/* ====================== WIRE UP CLICKS ====================== */
-function wire() {
-  $$('.gearslot').forEach(el => el.addEventListener('click', () => openGearPicker(el.dataset.slot)));
-  const subBtn = $('#subBtn');
-  if (subBtn) subBtn.addEventListener('click', () => {
-    if (!S.spec) return;
-    openModal('SPECIALIZATION FOCUS',
-      GAME.specSubclasses[S.spec].map(n => ({ n })),
-      x => ({ id: x.n, name: x.n, type: GAME.specFocus[S.spec], desc: '' }),
-      n => { S.subclass = n; renderAll(); },
-      S.subclass);
-  });
-  const tplBtn = $('#tplBtn');
-  if (tplBtn) tplBtn.addEventListener('click', () => {
-    const items = [{ k: 'reset', n: 'Empty Loadout', d: 'Start from a blank agent profile.' }];
-    // Add verified build templates from Astro
-    GAME.templates.forEach(t => {
-      items.push({ k: 'tpl:' + t.hash, n: t.name, d: t.spec + ' build template' });
-    });
-    openModal('LOADOUT TEMPLATE',
+    return {
       items,
-      x => ({ id: x.k, name: x.n, type: 'Template', desc: x.d }),
-      k => {
-        if (k === 'reset') { clearBuild(); }
-        else if (k.startsWith('tpl:')) {
-          // Load from template hash
-          clearBuild();
-          const hash = k.substring(4);
-          // Set hash with # prefix if needed
-          location.hash = hash.startsWith('#') ? hash : '#' + hash;
-          loadFromHash();
-        }
-        scanPulse(); renderAll();
+      get(v) {
+        const s = str(v).trim();
+        if (!s || s.length > 80) return null;
+        return ids.get(s) || names.get(s.toLowerCase()) || null;
       },
-      null);
-  });
-  $$('.slot[data-wslot]').forEach(el => el.addEventListener('click', (e) => { if (e.target.closest('.picktag') || e.target.closest('.talent-pair') || e.target.closest('.weapon-bonus') || e.target.closest('.weapon-bonuses')) return; openWeaponPicker(el.dataset.wslot); }));
-
-  // Document-level delegation for weapon talents + bonuses (mobile-safe)
-  document.addEventListener('click', (e) => {
-    // Weapon talent click
-    const talentTag = e.target.closest('.picktag[data-talent]');
-    if (talentTag) {
-      e.preventDefault(); e.stopPropagation();
-      openWTalentPicker(talentTag.dataset.talent);
-      return;
-    }
-    // Weapon bonus attribute click
-    const bonusTag = e.target.closest('.weapon-bonus[data-wbonus]');
-    if (bonusTag) {
-      e.preventDefault(); e.stopPropagation();
-      const k = bonusTag.dataset.wbonus;
-      const idx = bonusTag.dataset.wbidx;
-      const items = ALL_ATTRS.map(a => ({ id: a, name: a, cat: ATTR_CAT[a] }));
-      openModal('WEAPON ' + k + ' — BONUS ' + idx,
-        items,
-        a => ({ id: a.id, name: a.name, type: a.cat, desc: '' }),
-        attr => { S['w' + k]['bonus' + idx] = attr; afterChange(); },
-        S['w' + k]['bonus' + idx]);
-      return;
-    }
-  });
-  const bodyTalent = $('.picktag[data-armortalent="body"]');
-  const bpTalent = $('.picktag[data-armortalent="backpack"]');
-  if (bodyTalent) bodyTalent.addEventListener('click', () => openTalentPicker('body', true));
-  if (bpTalent) bpTalent.addEventListener('click', () => openTalentPicker('backpack', false));
-  const osSlot = $('#osSlot');
-  if (osSlot) osSlot.addEventListener('click', openOSPicker);
-  const resetBtn = $('#resetBtn');
-  if (resetBtn) resetBtn.addEventListener('click', () => { clearBuild(); scanPulse(); renderAll(); });
-  const shareBtn = $('#shareBtn');
-  if (shareBtn) shareBtn.addEventListener('click', shareBuild);
-  const topShare = $('#topShare');
-  if (topShare) topShare.addEventListener('click', shareBuild);
-  const cardBtn = $('#cardBtn');
-  if (cardBtn) cardBtn.addEventListener('click', openCard);
-  const cardClose = $('#cardClose');
-  if (cardClose) cardClose.addEventListener('click', () => { const cm = $('#cardModal'); if (cm) cm.classList.remove('is-open'); });
-  const cardModal = $('#cardModal');
-  if (cardModal) cardModal.addEventListener('click', e => { if (e.target === cardModal) cardModal.classList.remove('is-open'); });
-  // Build name input
-  const nameInput = $('#buildNameInput');
-  if (nameInput) nameInput.addEventListener('input', () => { S.name = nameInput.value; });
-}
-
-function clearBuild() {
-  S = { name: '', spec: null, subclass: '',
-    gear: { mask: {}, gloves: {}, holster: {}, body: {}, backpack: {}, kneepads: {} },
-    w1: { id: '', t1: '', t2: '', tier: 'T2', bonus1: '', bonus2: '' }, w2: { id: '', t1: '', t2: '', tier: 'T2', bonus1: '', bonus2: '' },
-    os: '', skills: [null, null, null] };
-  prevStats = {};
-}
-
-/* ====================== SHARE + CARD ====================== */
-/* Hash key mapping matching the production builder:
-   m=mask, g=gloves, h=holster, c=chest(body), p=pack(backpack), k=kneepads
-   suffix: s=set(id), t=talent(name), 1=attr1, 2=attr2 */
-const SLOT_KEYS = {
-  mask: 'm', gloves: 'g', holster: 'h', body: 'c', backpack: 'p', kneepads: 'k'
-};
-const KEY_SLOTS = {};
-Object.entries(SLOT_KEYS).forEach(([slot, key]) => KEY_SLOTS[key] = slot);
-
-function gearSetById(id) { return GAME.gearSets.find(g => g.id === id); }
-function gearSetByName(name) { return GAME.gearSets.find(g => g.name === name); }
-function weaponById(id) { return GAME.standardWeapons.find(w => w.id === id) || GAME.exoticWeapons.find(w => w.id === id); }
-function osById(id) { return GAME.osProtocols.find(o => o.id === id); }
-function skillModById(id) { return GAME.skillModCombos.find(s => s.id === id); }
-
-/* Resolve: if value looks like an ID (e.g. "gs-14"), resolve to name; otherwise keep name */
-function resolveGearSet(val) {
-  if (!val) return '';
-  // Try as ID first
-  const byId = gearSetById(val);
-  if (byId) return byId.name;
-  // Try as name
-  const byName = gearSetByName(val);
-  if (byName) return val;
-  return val;
-}
-function resolveBodyTalent(val) {
-  if (!val) return '';
-  const byId = GAME.bodyArmorTalents.find(t => t.id === val);
-  return byId ? byId.name : val;
-}
-function resolveBackpackTalent(val) {
-  if (!val) return '';
-  const byId = GAME.backpackTalents.find(t => t.id === val);
-  return byId ? byId.name : val;
-}
-function resolveWeaponTalent(val) {
-  if (!val) return '';
-  const byId = GAME.weaponTalents.find(t => t.id === val);
-  return byId ? byId.name : val;
-}
-function resolveWeapon(val) {
-  if (!val) return '';
-  const w = weaponById(val);
-  if (w) return val;
-  // Try exotic weapons too
-  const ew = GAME.exoticWeapons.find(x => x.id === val);
-  return ew ? val : '';
-}
-function resolveOS(val) {
-  if (!val) return '';
-  const o = osById(val);
-  return o ? val : ''; // OS uses IDs natively
-}
-function resolveSkillMod(val) {
-  if (!val) return null;
-  const s = skillModById(val);
-  return s ? val : null;
-}
-
-function buildHash() {
-  const p = new URLSearchParams();
-  if (S.spec) p.set('s', S.spec);
-  if (S.subclass) p.set('sc', S.subclass);
-  if (S.name) p.set('n', S.name);
-  Object.entries(S.gear).forEach(([slot, g]) => {
-    const key = SLOT_KEYS[slot];
-    if (g.set) {
-      const gs = gearSetByName(g.set);
-      p.set(key + 's', gs ? gs.id : g.set);
-    }
-    if (g.talent) {
-      const pool = slot === 'body' ? GAME.bodyArmorTalents : GAME.backpackTalents;
-      const t = pool.find(x => x.name === g.talent);
-      p.set(key + 't', t ? t.id : g.talent);
-    }
-    if (g.b1) p.set(key + '1', attrToCode(g.b1));
-    if (g.b2) p.set(key + '2', attrToCode(g.b2));
-  });
-  [['1', S.w1], ['2', S.w2]].forEach(([n, w]) => {
-    if (!w.id) return;
-    const isExotic = GAME.exoticWeapons.some(x => x.id === w.id);
-    p.set(`w${n}${isExotic ? 'e' : 's'}`, w.id);
-    if (w.tier) p.set(`w${n}tr`, w.tier);
-    if (w.t1) {
-      const t = GAME.weaponTalents.find(x => x.name === w.t1);
-      p.set(`w${n}t`, t ? t.id : w.t1);
-    }
-    if (w.t2) {
-      const t = GAME.weaponTalents.find(x => x.name === w.t2);
-      p.set(`w${n}t2`, t ? t.id : w.t2);
-    }
-    if (w.bonus1) p.set(`w${n}b1`, attrToCode(w.bonus1));
-    if (w.bonus2) p.set(`w${n}b2`, attrToCode(w.bonus2));
-  });
-  if (S.os) p.set('os', S.os);
-  S.skills.forEach((sm, i) => { if (sm) p.set('sm' + (i + 1), sm); });
-  return '#' + p.toString();
-}
-
-function loadFromHash() {
-  const hash = location.hash.slice(1);
-  if (!hash) return false;
-  const p = new URLSearchParams(hash);
-  if (!p.get('s')) return false;
-
-  // Always start fresh
-  clearBuild();
-
-  S.spec = p.get('s');
-  S.subclass = p.get('sc') || GAME.specSubclasses[S.spec]?.[0] || '';
-  S.name = p.get('n') || '';
-
-  // Gear slots: m=mask, g=gloves, h=holster, c=body(chest), p=backpack(pack), k=kneepads
-  Object.entries(KEY_SLOTS).forEach(([key, slot]) => {
-    const setVal = p.get(key + 's');
-    if (setVal) {
-      const talentKey = key + 't';
-      const isBody = slot === 'body';
-      const talent = p.get(talentKey) || '';
-      S.gear[slot] = {
-        set: resolveGearSet(setVal),
-        talent: isBody ? resolveBodyTalent(talent) : (slot === 'backpack' ? resolveBackpackTalent(talent) : ''),
-        b1: codeToAttr(p.get(key + '1') || ''),
-        b2: codeToAttr(p.get(key + '2') || '')
-      };
-    }
-  });
-
-  // Weapons: w1s=standard, w1e=exotic, w1t=talent1, w1t2=talent2, w1tr=tier
-  ['1', '2'].forEach(n => {
-    const wId = resolveWeapon(p.get(`w${n}s`) || '') || resolveWeapon(p.get(`w${n}e`) || '');
-    S[`w${n}`] = {
-      id: wId,
-      t1: resolveWeaponTalent(p.get(`w${n}t`) || ''),
-      t2: resolveWeaponTalent(p.get(`w${n}t2`) || ''),
-      tier: p.get(`w${n}tr`) || 'T2',
-      bonus1: codeToAttr(p.get(`w${n}b1`) || ''),
-      bonus2: codeToAttr(p.get(`w${n}b2`) || '')
     };
+  }
+
+  const SPECS = arr(DATA.specs && DATA.specs.specs).filter((s) => s && s.name && arr(s.focuses).length);
+  const specOf = (name) => SPECS.find((s) => key(s.name) === key(name)) || null;
+  function focusOf(spec, name) {
+    const k = key(name);
+    if (!spec || !k) return null;
+    return spec.focuses.find((f) => key(f.name) === k || arr(f.aliases).some((a) => key(a) === k)) || null;
+  }
+  const focusStat = (st) => {
+    const f = focusOf(specOf(st.spec), st.focus);
+    return f ? str(f.stat) : '';
+  };
+
+  const STD = pool(DATA.standardWeapons);
+  const EXO = pool(DATA.exoticWeapons);
+  const getWeapon = (v) => EXO.get(v) || STD.get(v);
+  const isExotic = (w) => !!w && EXO.items.includes(w);
+  /* Talents that belong to an exotic (Breathe Free, Play Rough...) never roll on other guns:
+     leave out anything marked exoticOnly, or named like an exotic's own talent. */
+  const exoticTalents = new Set(EXO.items.map((e) => key(e.talentName)).filter(Boolean));
+  const WT = pool(arr(DATA.weaponTalents).filter((t) => t && t.exoticOnly !== true && !exoticTalents.has(key(t.name))));
+  /* Other names. Ones worked out by elimination (aliasBasis "elimination") aren't confirmed: links
+     and search still match them, but they aren't shown as the item's other name. */
+  const aliasList = (x) => arr(x && x.aliases).map(str).filter(Boolean).join(', ');
+  const aliasText = (x) => (x && x.aliasBasis === 'elimination' ? '' : aliasList(x));
+  const guessedAliases = (x) => (x && x.aliasBasis === 'elimination' ? aliasList(x) : '');
+  /* A note marked caveat: true qualifies the item's effect text, so it is shown as small print
+     wherever that text is shown. Other notes are patch history and stay out. Notes are never parsed. */
+  const caveatOf = (x) => (x && x.caveat === true ? str(x.note).trim() : '');
+  const BODY = pool(DATA.bodyArmorTalents);
+  const PACK = pool(DATA.backpackTalents);
+  const SETS = pool(DATA.gearSets);
+  const OSP = pool(DATA.osProtocols);
+  const MODS = pool(DATA.skillModCombos);
+  const TEMPLATES = arr(DATA.templates).filter((t) => t && t.hash && t.name);
+
+  /* ---------- attributes ---------- */
+  const CATS = ['Firepower', 'Toughness', 'Engineering', 'Universal'];
+  function attrPool(groups) {
+    const list = [];
+    const byKey = new Map();
+    for (const g of arr(groups)) {
+      const cat = str(g && g.category) || 'Universal';
+      for (const n of arr(g && g.attributes)) {
+        const name = str(n).trim();
+        if (!name || byKey.has(key(name))) continue;
+        const rec = { name, cat };
+        byKey.set(key(name), rec);
+        list.push(rec);
+      }
+    }
+    return { list, byKey, has: (n) => byKey.has(key(n)) };
+  }
+  const GEAR_ATTRS = attrPool(DATA.bonusAttributes);
+  const WEAPON_ATTRS = attrPool(DATA.weaponBonusAttributes && DATA.weaponBonusAttributes.categories);
+  const REMOVED_WEAPON_ATTRS = new Map();
+  for (const r of arr(DATA.weaponBonusAttributes && DATA.weaponBonusAttributes.removed)) {
+    for (const n of arr(r && r.attributes)) REMOVED_WEAPON_ATTRS.set(key(n), str(r.note));
+  }
+
+  /* Short codes keep links short. The first rows are the old planner's codes, so its links still
+     open; an attribute without a code goes into the link by its full name. */
+  const CODES = {
+    'Weapon Damage': 'wd', 'Weapon Critical Hit Chance': 'chc', 'Weapon Critical Hit Damage': 'chd',
+    'Headshot Damage': 'hsd', 'Weapon Multi-Shot Chance': 'wms', 'Rate of Fire': 'rof', 'Magazine Size': 'mag',
+    'Reload Speed': 'rls', 'Accuracy': 'acc', 'Stability': 'stb', 'Optimal Range': 'opr', 'Firepower': 'fp',
+    'Armor': 'arm', 'Max Health': 'mhp', 'Damage Reduction': 'dr', 'Received Healing': 'rh', 'Movement Speed': 'ms',
+    'Toughness': 'tgh', 'Damage Bonus': 'db', 'Skill Damage': 'sd', 'Skill Duration': 'sdu',
+    'Skill Cooldown Recovery': 'scr', 'Skill Critical Chance': 'scc', 'Skill Critical Damage': 'scd',
+    'Skill Intensity': 'si', 'Skill Radius': 'sr', 'Skill Health': 'sh', 'Skill Multi-Shot Chance': 'sms',
+    'Healing Intensity': 'hi', 'Signature Ability Charge Efficiency': 'sace', 'Engineering': 'eng',
+    'Release Extra Protection': 'rep',
+    'Damage to Elites': 'dte', 'All Weapon Damage': 'awd', 'All Skill Damage': 'asd',
+    'Weapon Blast Damage': 'wbd', 'Weapon Piercing Damage': 'wpd', 'Weapon Shredding Damage': 'wsd',
+    'Skill Blast Damage': 'sbd', 'Skill Piercing Damage': 'spd', 'Skill Shredding Damage': 'ssd',
+  };
+  const CODE_NAMES = new Map(Object.entries(CODES).map(([n, c]) => [c, n]));
+  const KNOWN_NAMES = new Map(Object.keys(CODES).map((n) => [key(n), n]));
+
+  /* Turns a link value (code or name) into an attribute name, or '' when it isn't one we know. */
+  function canonicalAttr(v) {
+    const s = str(v).trim();
+    if (!s || s.length > 64) return '';
+    const k = s.toLowerCase();
+    if (CODE_NAMES.has(k)) return CODE_NAMES.get(k);
+    const rec = GEAR_ATTRS.byKey.get(k) || WEAPON_ATTRS.byKey.get(k);
+    if (rec) return rec.name;
+    return KNOWN_NAMES.get(k) || '';
+  }
+
+  /* Category for stats that only come from set bonuses, OS stats, skill mods or old links */
+  const OTHER_CATS = {
+    'Optimal Range': 'Firepower', 'Rate of Fire': 'Firepower', 'Magazine Size': 'Firepower', 'Reload Speed': 'Firepower',
+    'Accuracy': 'Firepower', 'Stability': 'Firepower', 'Firepower': 'Firepower', 'All Weapon Damage': 'Firepower',
+    'Weapon Blast Damage': 'Firepower', 'Weapon Piercing Damage': 'Firepower', 'Weapon Shredding Damage': 'Firepower',
+    'Health': 'Toughness', 'Toughness': 'Toughness', 'Release Extra Protection': 'Toughness',
+    'Engineering': 'Engineering', 'Skill Damage': 'Engineering', 'All Skill Damage': 'Engineering',
+    'Skill Health': 'Engineering', 'Healing Intensity': 'Engineering', 'Skill Blast Damage': 'Engineering',
+    'Skill Piercing Damage': 'Engineering', 'Skill Shredding Damage': 'Engineering',
+  };
+  function statCat(name) {
+    const rec = GEAR_ATTRS.byKey.get(key(name)) || WEAPON_ATTRS.byKey.get(key(name));
+    return rec ? rec.cat : OTHER_CATS[name] || 'Universal';
+  }
+  const catClass = (c) => ({ Firepower: 'cat-fp', Toughness: 'cat-tough', Engineering: 'cat-eng' }[c] || 'cat-uni');
+
+  /* Labels short enough for the gear cards; everything else uses full names */
+  const SHORT = {
+    'Weapon Critical Hit Chance': 'CHC', 'Weapon Critical Hit Damage': 'CHD', 'Weapon Damage': 'Weapon Dmg',
+    'All Weapon Damage': 'All Weapon Dmg', 'Weapon Multi-Shot Chance': 'Multi-Shot', 'Headshot Damage': 'Headshot Dmg',
+    'Damage Reduction': 'Dmg Reduction', 'Skill Critical Chance': 'Skill CHC', 'Skill Critical Damage': 'Skill CHD',
+    'All Skill Damage': 'All Skill Dmg', 'Skill Multi-Shot Chance': 'Skill Multi-Shot', 'Skill Cooldown Recovery': 'Skill CDR',
+    'Signature Ability Charge Efficiency': 'Signature Charge', 'Damage to Elites': 'Dmg to Elites',
+    'Weapon Blast Damage': 'Blast Dmg', 'Weapon Piercing Damage': 'Piercing Dmg', 'Weapon Shredding Damage': 'Shredding Dmg',
+    'Skill Blast Damage': 'Skill Blast Dmg', 'Skill Piercing Damage': 'Skill Piercing Dmg',
+    'Skill Shredding Damage': 'Skill Shredding Dmg', 'Magazine Size': 'Magazine', 'Movement Speed': 'Move Speed',
+    'Release Extra Protection': 'Extra Protection', 'Skill Damage': 'Skill Dmg', 'Damage Bonus': 'Dmg Bonus',
+  };
+  const short = (n) => SHORT[n] || n;
+  /* Shown as a negative number in game (a shorter cooldown) */
+  const NEGATIVE = new Set(['skill cooldown recovery']);
+
+  /* ---------- numbers ---------- */
+  function parseVal(v) {
+    const s = str(v).trim().replace(',', '.');
+    if (!s || s.length > 12 || !/^[+-]?(\d+\.?\d*|\.\d+)$/.test(s)) return null;
+    const n = Math.round(parseFloat(s) * 100) / 100;
+    return Number.isFinite(n) && Math.abs(n) <= 9999 ? n : null;
+  }
+  const normVal = (attr, v) => (v == null ? null : NEGATIVE.has(key(attr)) ? -Math.abs(v) : v);
+  const linkNum = (v) => String(Math.round(v * 100) / 100);
+  function fmt(n, pct) {
+    const r = Math.round(n * 100) / 100;
+    const a = Math.abs(r);
+    const body = pct ? (Number.isInteger(a) ? a.toFixed(1) : String(a)) : a.toLocaleString('en-US', { maximumFractionDigits: 2 });
+    return (r < 0 ? '-' : '+') + body + (pct ? '%' : '');
+  }
+  /* "+4.0% to +8.0%"; negative ranges read from small to large too: "-2.0% to -4.0%" */
+  const fmtRange = (min, max, pct) => (min === max ? fmt(min, pct)
+    : max <= 0 ? `${fmt(max, pct)} to ${fmt(min, pct)}` : `${fmt(min, pct)} to ${fmt(max, pct)}`);
+  const an = (word) => (/^[aeiou]/i.test(word) ? 'an' : 'a');
+  const num = (s) => parseFloat(str(s).replace(/,/g, ''));
+
+  /* "Skill Cooldown Recovery -6.0%", "Optimal Range +10.0%", "Skill Health+[4.0%~8.0%]" */
+  function parseBonus(text) {
+    const s = str(text).trim();
+    let m = s.match(/^(.*?)\s*([+-])?\s*\[\s*([\d.,]+)\s*(%?)\s*~\s*([\d.,]+)\s*(%?)\s*\]$/);
+    if (m && m[1]) {
+      const sign = m[2] === '-' ? -1 : 1;
+      const a = num(m[3]) * sign;
+      const b = num(m[5]) * sign;
+      if (Number.isFinite(a) && Number.isFinite(b)) return { stat: m[1].trim(), min: Math.min(a, b), max: Math.max(a, b), pct: !!(m[4] || m[6]) };
+    }
+    m = s.match(/^(.*?)\s*([+-])\s*([\d.,]+)\s*(%?)$/) || s.match(/^(.*?)\s+()([\d.,]+)\s*(%?)$/);
+    if (m && m[1]) {
+      const v = num(m[3]) * (m[2] === '-' ? -1 : 1);
+      if (Number.isFinite(v)) return { stat: m[1].trim(), min: v, max: v, pct: !!m[4] };
+    }
+    return null;
+  }
+  /* "+22.50%" or "+2,554" */
+  function parseAmount(text) {
+    const m = str(text).trim().match(/^([+-])?\s*([\d.,]+)\s*(%?)$/);
+    if (!m) return null;
+    const v = num(m[2]) * (m[1] === '-' ? -1 : 1);
+    return Number.isFinite(v) ? { min: v, max: v, pct: !!m[3] } : null;
+  }
+  function bonusText(text) {
+    const b = parseBonus(text);
+    return b ? `${b.stat} ${fmtRange(b.min, b.max, b.pct)}` : str(text);
+  }
+  /* Set bonus tiers from bonus2, bonus3, bonus4 (any bonusN the data has) */
+  function setTiers(set) {
+    return Object.keys(set)
+      .map((k) => ({ k, m: k.match(/^bonus(\d)$/) }))
+      .filter((x) => x.m && str(set[x.k]).trim())
+      .map((x) => ({ pieces: +x.m[1], text: str(set[x.k]) }))
+      .sort((a, b) => a.pieces - b.pieces);
+  }
+
+  /* ---------- state ---------- */
+  const SLOTS = [
+    { id: 'mask', key: 'm', label: 'Mask' },
+    { id: 'gloves', key: 'g', label: 'Gloves' },
+    { id: 'holster', key: 'h', label: 'Holster' },
+    { id: 'body', key: 'c', label: 'Body armor', talents: BODY },
+    { id: 'backpack', key: 'p', label: 'Backpack', talents: PACK },
+    { id: 'kneepads', key: 'k', label: 'Kneepads' },
+  ];
+  const SLOT = Object.fromEntries(SLOTS.map((s) => [s.id, s]));
+  const WEAPON_LABEL = ['Primary', 'Secondary'];
+  const emptyPiece = () => ({ set: '', talent: '', attrs: [{ a: '', v: null }, { a: '', v: null }] });
+  const emptyWeapon = () => ({ id: '', tier: '', t: ['', ''], attrs: [{ a: '', v: null }, { a: '', v: null }] });
+  const emptyState = () => ({
+    name: '', spec: '', focus: '',
+    gear: Object.fromEntries(SLOTS.map((s) => [s.id, emptyPiece()])),
+    w: [emptyWeapon(), emptyWeapon()],
+    os: '', mods: ['', '', ''],
+  });
+  /* Build names: no control or text-direction characters, 60 characters at most */
+  const cleanName = (v) => str(v).replace(/[\u0000-\u001f\u007f-\u009f‎‏‪-‮⁦-⁩]/g, ' ').replace(/\s+/g, ' ').trim().slice(0, 60);
+
+  let S = emptyState();
+  let loadedTemplate = -1; // index of the last template loaded, for the template label
+  let notice = ''; // one-line message about the last link that was loaded
+
+  /* Skill mods: when the data says which skill each set is for, the three slots are the focus's
+     three skills (planner-specs.json). Without that field they are three plain slots. */
+  function focusSkills(st) {
+    const f = focusOf(specOf(st.spec), st.focus);
+    const skills = f ? arr(f.skills).map(str).filter(Boolean) : [];
+    if (skills.length !== 3) return null;
+    const mods = MODS.items.filter((m) => key(m.specialization) === key(st.spec));
+    return mods.length && mods.every((m) => str(m.skill)) ? skills : null;
+  }
+  /* Puts skill mod ids into their slots (by skill, or by position without skill data) and returns
+     how many were left out: another specialization, another focus's skill, or a slot taken twice. */
+  function placeMods(st, ids) {
+    const skills = focusSkills(st);
+    const out = ['', '', ''];
+    let left = 0;
+    ids.forEach((id, i) => {
+      if (!id) return;
+      const m = MODS.get(id);
+      if (!m || key(m.specialization) !== key(st.spec) || out.includes(str(m.id))) { left++; return; }
+      const at = skills ? skills.findIndex((s) => key(s) === key(m.skill)) : i;
+      if (at < 0 || at > 2 || out[at]) { left++; return; }
+      out[at] = str(m.id);
+    });
+    st.mods = out;
+    return left;
+  }
+
+  /* ---------- share links ----------
+     Format (unchanged keys, so older links keep working):
+     s=spec, sc=focus, n=name; gear prefix m g h c p k (mask, gloves, holster, body armor, backpack,
+     kneepads) + s=set id, t=talent id, 1 and 2=attributes, 1v and 2v=roll values;
+     w1s or w1e=weapon id (standard or exotic), w1tr=tier, w1t and w1t2=talents, w1b1 and w1b2=attributes,
+     w1b1v and w1b2v=roll values; os=OS Protocol id; sm1 to sm3=skill mod ids. */
+  const attrCode = (n) => CODES[n] || n;
+  function encode(st) {
+    if (!st.spec) return '';
+    const p = new URLSearchParams();
+    p.set('s', st.spec);
+    if (st.focus) p.set('sc', st.focus);
+    if (st.name) p.set('n', st.name);
+    for (const s of SLOTS) {
+      const g = st.gear[s.id];
+      if (g.set) p.set(s.key + 's', g.set);
+      if (g.talent) p.set(s.key + 't', g.talent);
+      g.attrs.forEach((x, i) => {
+        if (!x.a) return;
+        p.set(s.key + (i + 1), attrCode(x.a));
+        if (x.v != null) p.set(s.key + (i + 1) + 'v', linkNum(x.v));
+      });
+    }
+    st.w.forEach((w, i) => {
+      const n = i + 1;
+      const wp = getWeapon(w.id);
+      if (!wp) return;
+      p.set('w' + n + (isExotic(wp) ? 'e' : 's'), str(wp.id));
+      if (w.tier) p.set('w' + n + 'tr', w.tier);
+      if (w.t[0]) p.set('w' + n + 't', w.t[0]);
+      if (w.t[1]) p.set('w' + n + 't2', w.t[1]);
+      w.attrs.forEach((x, j) => {
+        if (!x.a) return;
+        p.set('w' + n + 'b' + (j + 1), attrCode(x.a));
+        if (x.v != null) p.set('w' + n + 'b' + (j + 1) + 'v', linkNum(x.v));
+      });
+    });
+    if (st.os) p.set('os', st.os);
+    st.mods.forEach((m, i) => { if (m) p.set('sm' + (i + 1), m); });
+    return p.toString();
+  }
+
+  /* Reads a link. Anything that doesn't match the data is left out and counted in `dropped`. */
+  function decode(raw) {
+    const out = { state: null, dropped: 0, legacy: false };
+    const text = str(raw).replace(/^#/, '');
+    if (/^[bc]=/.test(text)) { out.legacy = true; return out; } // compressed links from the retired planners
+    let p;
+    try { p = new URLSearchParams(text); } catch (e) { return out; }
+    const sp = specOf(p.get('s'));
+    if (!sp) return out;
+    const st = emptyState();
+    let dropped = 0;
+    const take = (k) => str(p.get(k)).trim();
+    const miss = (v) => { if (v) dropped++; return ''; };
+    const readAttrs = (prefix, attrs) => {
+      for (let i = 0; i < 2; i++) {
+        const raw1 = take(prefix + (i + 1));
+        const rawV = take(prefix + (i + 1) + 'v');
+        const a = canonicalAttr(raw1);
+        if (!a || attrs.some((x) => x.a === a)) { miss(raw1); miss(rawV); continue; }
+        const v = parseVal(rawV);
+        if (rawV && v == null) dropped++;
+        attrs[i].a = a;
+        attrs[i].v = normVal(a, v);
+      }
+    };
+
+    st.spec = sp.name;
+    const fv = take('sc');
+    const f = focusOf(sp, fv);
+    st.focus = f ? f.name : (miss(fv), sp.focuses[0].name);
+    st.name = cleanName(p.get('n'));
+
+    for (const s of SLOTS) {
+      const g = st.gear[s.id];
+      const setV = take(s.key + 's');
+      const set = SETS.get(setV);
+      g.set = set ? str(set.id) : miss(setV);
+      const talV = take(s.key + 't');
+      const tal = s.talents ? s.talents.get(talV) : null;
+      g.talent = tal ? str(tal.id) : miss(talV);
+      readAttrs(s.key, g.attrs);
+    }
+
+    let exotics = 0;
+    for (let i = 0; i < 2; i++) {
+      const n = i + 1;
+      const w = st.w[i];
+      const sv = take('w' + n + 's');
+      const ev = take('w' + n + 'e');
+      const wp = getWeapon(ev) || getWeapon(sv);
+      if (!wp || (isExotic(wp) && exotics > 0)) {
+        // one exotic at a time, and a slot without a weapon keeps nothing else
+        miss(sv); miss(ev);
+        for (const k of ['tr', 't', 't2', 'b1', 'b1v', 'b2', 'b2v']) miss(take('w' + n + k));
+        continue;
+      }
+      if (isExotic(wp)) exotics++;
+      w.id = str(wp.id);
+      const tier = take('w' + n + 'tr').toUpperCase();
+      if (/^T[012]$/.test(tier)) w.tier = tier;
+      else miss(tier);
+      ['t', 't2'].forEach((k, j) => {
+        const tv = take('w' + n + k);
+        const t = WT.get(tv);
+        if (!t || w.t.includes(str(t.id))) return miss(tv);
+        w.t[j] = str(t.id);
+      });
+      readAttrs('w' + n + 'b', w.attrs);
+    }
+
+    const ov = take('os');
+    const os = OSP.get(ov);
+    st.os = os ? str(os.id) : miss(ov);
+    const mv = ['sm1', 'sm2', 'sm3'].map(take);
+    if (!mv[0] && take('smc')) mv[0] = take('smc'); // oldest links used smc for the first mod
+    dropped += placeMods(st, mv.map((v) => { const m = MODS.get(v); if (!m) { miss(v); return ''; } return str(m.id); }));
+
+    out.state = st;
+    out.dropped = Math.max(0, dropped);
+    return out;
+  }
+
+  /* Templates in their canonical link form, to tell when the build is an unchanged template */
+  const TEMPLATE_KEYS = TEMPLATES.map((t) => {
+    const r = decode(t.hash);
+    return r.state ? encode(r.state) : '';
+  });
+  function activeTemplate() {
+    if (!S.spec) return -1;
+    return TEMPLATE_KEYS.indexOf(encode(S));
+  }
+  /* A template's note: its text, plus the guide's weapons that aren't in the weapon list yet */
+  function templateNote(t) {
+    const n = t && t.note;
+    if (!n) return '';
+    if (typeof n === 'string') return n;
+    const missing = arr(n.missingWeapons).filter((x) => Array.isArray(x) && x[0] && !getWeapon(x[0]));
+    const parts = [];
+    if (missing.length) {
+      const names = joined(missing.map(([name, slot]) => `${name} (${str(slot)} weapon)`)).join('');
+      parts.push(`The ${names} ${missing.length === 1 ? "isn't" : "aren't"} in the planner's weapon list yet, so ${missing.length === 1 ? 'that slot is' : 'those slots are'} empty.`);
+    }
+    if (n.text) parts.push(str(n.text));
+    return parts.join(' ');
+  }
+
+  /* ---------- totals ---------- */
+  function setCounts(st) {
+    const counts = new Map();
+    for (const s of SLOTS) {
+      const id = st.gear[s.id].set;
+      if (id) counts.set(id, (counts.get(id) || 0) + 1);
+    }
+    return counts;
+  }
+
+  /* Each stat collects { pct, flat } ranges, the rolls without a value, and where it all came from.
+     Talent effects are conditional, so they are not added. */
+  function computeStats(st) {
+    const rows = new Map();
+    const row = (stat) => {
+      if (!rows.has(stat)) rows.set(stat, { stat, pct: null, flat: null, unvalued: 0, sources: [] });
+      return rows.get(stat);
+    };
+    const add = (stat, part, src) => {
+      const name = str(stat).trim();
+      if (!name) return;
+      const r = row(name);
+      if (!part) {
+        r.unvalued++;
+        r.sources.push({ src, text: 'No value entered' });
+        return;
+      }
+      const bucket = part.pct ? 'pct' : 'flat';
+      const cur = r[bucket] || { min: 0, max: 0 };
+      r[bucket] = { min: cur.min + part.min, max: cur.max + part.max };
+      r.sources.push({ src, text: fmtRange(part.min, part.max, part.pct) });
+    };
+
+    for (const [id, n] of setCounts(st)) {
+      const set = SETS.get(id);
+      if (!set) continue;
+      for (const t of setTiers(set)) {
+        if (n < t.pieces) continue;
+        const b = parseBonus(t.text);
+        if (b) add(b.stat, b, `${set.name} ${t.pieces}pc`);
+      }
+    }
+    for (const s of SLOTS) {
+      for (const x of st.gear[s.id].attrs) {
+        if (x.a) add(x.a, x.v == null ? null : { min: x.v, max: x.v, pct: true }, s.label);
+      }
+    }
+    st.w.forEach((w, i) => {
+      const wp = getWeapon(w.id);
+      if (!wp) return;
+      for (const x of w.attrs) {
+        if (x.a) add(x.a, x.v == null ? null : { min: x.v, max: x.v, pct: true }, `${WEAPON_LABEL[i]}: ${wp.name}`);
+      }
+    });
+    const os = OSP.get(st.os);
+    if (os) {
+      const main = parseAmount(os.mainValue);
+      if (os.mainStat && main) add(os.mainStat, main, os.name);
+      for (const i of [1, 2, 3]) {
+        const amount = parseAmount(os['val' + i]);
+        if (os['attr' + i] && amount) add(os['attr' + i], amount, os.name);
+      }
+    }
+    for (const id of st.mods) {
+      const m = MODS.get(id);
+      const b = m && parseBonus(m.bonus2);
+      if (b) add(b.stat, b, `${m.name} 2pc`);
+    }
+    return rows;
+  }
+
+  /* ---------- checks and score ---------- */
+  const EH_GIVE = /\bgrants?\b[^.]*\bextra health\b/i;
+  const EH_USE = /\b(while possessing|having|gaining) extra health\b/i;
+
+  function analyze(st, stats) {
+    const res = { checks: [], score: 0, grade: 'Not started', cls: 'g-incomplete' };
+    if (!st.spec) {
+      res.checks.push(['info', ['Pick a specialization to start.']]);
+      return res;
+    }
+    const stat = focusStat(st);
+    const warns = [];
+    const infos = [];
+    const oks = [];
+
+    // Sets: pieces that don't reach a bonus, and pieces past the last bonus
+    let contributing = 0;
+    for (const [id, n] of setCounts(st)) {
+      const set = SETS.get(id);
+      const tiers = set ? setTiers(set) : [];
+      if (!tiers.length) continue;
+      const min = tiers[0].pieces;
+      const max = tiers[tiers.length - 1].pieces;
+      if (n < min) {
+        warns.push([B(set.name), `: ${n} ${plural(n, 'piece', 'pieces')}, so no set bonus yet.`]);
+      } else {
+        contributing += Math.min(n, max);
+        if (n > max) warns.push([B(set.name), `: ${n} pieces. Its bonuses stop at ${max}, so ${n - max} ${plural(n - max, 'piece adds', 'pieces add')} nothing.`]);
+      }
+    }
+
+    // Attributes: offense stats from the other offense tree, and rolls that aren't current
+    const picked = [];
+    for (const s of SLOTS) for (const x of st.gear[s.id].attrs) if (x.a) picked.push({ a: x.a, where: s.label.toLowerCase(), weapon: false });
+    st.w.forEach((w) => {
+      const wp = getWeapon(w.id);
+      if (wp) for (const x of w.attrs) if (x.a) picked.push({ a: x.a, where: wp.name, weapon: true });
+    });
+    const offCat = stat === 'Firepower' ? 'Engineering' : stat === 'Engineering' ? 'Firepower' : '';
+    const off = new Map();
+    let fitting = 0;
+    for (const x of picked) {
+      if (offCat && statCat(x.a) === offCat) {
+        if (!off.has(x.a)) off.set(x.a, []);
+        off.get(x.a).push(x.where);
+      } else fitting++;
+      if (!x.weapon && !GEAR_ATTRS.has(x.a)) infos.push([B(x.a), ` on the ${x.where} isn't in our gear attribute list.`]);
+      if (x.weapon && !WEAPON_ATTRS.has(x.a)) {
+        const note = REMOVED_WEAPON_ATTRS.get(key(x.a));
+        infos.push([B(x.a), ` on the ${x.where} ${note || "isn't in our weapon attribute list"}.`]);
+      }
+    }
+    if (off.size) {
+      infos.push([`${offCat} stats on ${an(stat)} ${stat} build: `, joined([...off].map(([a, where]) => [B(a), ` (${joined(where).join('')})`])), '.']);
+    }
+
+    // OS Protocol against the focus
+    const os = OSP.get(st.os);
+    if (os && stat && os.specialization && key(os.specialization) !== key(stat)) {
+      infos.push([B(os.name), ` is a ${os.specialization} protocol; ${st.focus} builds around ${stat}.`]);
+    }
+
+    // Crit chance with nothing to multiply it (not for the tree already flagged as off focus)
+    if (offCat !== 'Firepower' && stats.has('Weapon Critical Hit Chance') && !stats.has('Weapon Critical Hit Damage')) {
+      infos.push(['Weapon Critical Hit Chance with no Weapon Critical Hit Damage to go with it.']);
+    }
+    if (offCat !== 'Engineering' && stats.has('Skill Critical Chance') && !stats.has('Skill Critical Damage')) {
+      infos.push(['Skill Critical Chance with no Skill Critical Damage to go with it.']);
+    }
+
+    // Extra Health: talents and protocols that need it, and what grants it
+    const effects = [];
+    st.w.forEach((w) => {
+      const wp = getWeapon(w.id);
+      if (!wp) return;
+      if (isExotic(wp) && wp.talentName) effects.push({ name: str(wp.talentName), text: str(wp.talentDescription) });
+      for (const id of w.t) { const t = WT.get(id); if (t) effects.push({ name: t.name, text: str(t.description) }); }
+    });
+    for (const s of SLOTS) {
+      const t = s.talents && s.talents.get(st.gear[s.id].talent);
+      if (t) effects.push({ name: t.name, text: str(t.description) });
+    }
+    if (os) effects.push({ name: os.name, text: str(os.talentDescription) });
+    for (const id of st.mods) { const m = MODS.get(id); if (m) effects.push({ name: m.name, text: str(m.bonus3) }); }
+    const givers = effects.filter((e) => EH_GIVE.test(e.text));
+    for (const user of effects.filter((e) => EH_USE.test(e.text))) {
+      const others = givers.filter((g) => g !== user && g.name !== user.name);
+      if (others.length) oks.push([B(user.name), ' gets its Extra Health from ', joined(others.map((g) => B(g.name))), '.']);
+      else if (!givers.includes(user)) infos.push([B(user.name), ' needs Extra Health, and nothing picked here grants it (some skills do).']);
+    }
+
+    // What is still to pick
+    const empty = [];
+    const noSet = SLOTS.filter((s) => !st.gear[s.id].set).map((s) => s.label.toLowerCase());
+    if (noSet.length === SLOTS.length) empty.push('gear sets');
+    else empty.push(...noSet.map((l) => `${l} set`));
+    st.w.forEach((w, i) => { if (!getWeapon(w.id)) empty.push(WEAPON_LABEL[i].toLowerCase() + ' weapon'); });
+    if (!os) empty.push('OS Protocol');
+    const skills = focusSkills(st);
+    const noMods = st.mods.filter((m) => !m).length;
+    if (skills) st.mods.forEach((m, i) => { if (!m) empty.push(`${skills[i]} mod`); });
+    else if (noMods) empty.push(noMods === 1 ? '1 skill mod' : `${noMods} skill mods`);
+
+    // Score: 40 for completeness, 30 for pieces inside an active set bonus, 20 for attributes that fit
+    // the focus, 10 for the OS Protocol, minus 5 for each warning
+    let have = 0;
+    let total = 0;
+    const weigh = (cond, w) => { total += w; if (cond) have += w; };
+    for (const s of SLOTS) {
+      const g = st.gear[s.id];
+      weigh(!!g.set, 3);
+      g.attrs.forEach((x) => weigh(!!x.a, 1));
+      if (s.talents) weigh(!!g.talent, 2);
+    }
+    st.w.forEach((w) => {
+      const ok = !!getWeapon(w.id);
+      weigh(ok, 3);
+      w.t.forEach((t) => weigh(ok && !!t, 1));
+      w.attrs.forEach((x) => weigh(ok && !!x.a, 0.5));
+    });
+    weigh(!!os, 4);
+    st.mods.forEach((m) => weigh(!!m, 2));
+    const complete = total ? have / total : 0;
+    const osFit = os ? (stat && key(os.specialization) === key(stat) ? 1 : 0.5) : 0;
+    let score = 40 * complete + 30 * (contributing / SLOTS.length) + 20 * Math.min(1, fitting / 16) + 10 * osFit - 5 * warns.length;
+    score = Math.max(0, Math.min(100, Math.round(score)));
+
+    if (complete < 0.5) { res.grade = 'Incomplete'; res.cls = 'g-incomplete'; }
+    else if (score >= 85 && complete >= 0.9) { res.grade = 'Strong'; res.cls = 'g-elite'; }
+    else if (score >= 70) { res.grade = 'Good'; res.cls = 'g-opt'; }
+    else { res.grade = 'Needs work'; res.cls = 'g-low'; }
+    res.score = score;
+
+    res.checks.push(...warns.map((p) => ['warn', p]), ...infos.map((p) => ['info', p]), ...oks.map((p) => ['ok', p]));
+    if (empty.length) res.checks.push(['info', ['Still to pick: ', joined(empty), '.']]);
+    else if (!warns.length && !infos.length) res.checks.push(['ok', ['No issues found.']]);
+    return res;
+  }
+
+  /* ---------- rendering ---------- */
+  const setText = (sel, text, root) => { const n = typeof sel === 'string' ? $(sel, root) : sel; if (n) n.textContent = text; };
+  /* An effect line, with the item's caveat note (if it has one) as small print under it */
+  function effectText(el, text, item) {
+    if (!el) return;
+    const c = caveatOf(item);
+    el.replaceChildren(...[text || null, c ? h('span', { class: 'caveat' }, c) : null].filter(Boolean));
+    el.hidden = !text && !c;
+  }
+  const weaponLine = (wp) => [
+    isExotic(wp) ? `Exotic ${str(wp.type)}`.trim() : str(wp.type),
+    wp.rpm ? `${wp.rpm} RPM` : '',
+    wp.mag ? `${wp.mag} mag` : '',
+  ].filter(Boolean).join(' · ');
+  const attrLabel = (x) => (x.v == null ? x.a : `${x.a} ${fmt(x.v, true)}`);
+
+  function renderSpec() {
+    for (const b of $$('.spec-btn')) {
+      const on = b.dataset.spec === S.spec;
+      b.classList.toggle('is-active', on);
+      b.setAttribute('aria-pressed', on ? 'true' : 'false');
+    }
+    const btn = $('#subBtn');
+    btn.disabled = !S.spec;
+    setText('#subLabel', S.spec ? `${S.focus} (${focusStat(S)})` : 'Pick a specialization');
+  }
+
+  function renderGear(counts) {
+    let filled = 0;
+    for (const btn of $$('.gearslot')) {
+      const s = SLOT[btn.dataset.slot];
+      if (!s) continue;
+      const g = S.gear[s.id];
+      const set = SETS.get(g.set);
+      const tiers = set ? setTiers(set) : [];
+      const active = !!set && tiers.length > 0 && counts.get(str(set.id)) >= tiers[0].pieces;
+      const attrs = g.attrs.filter((x) => x.a);
+      if (set) filled++;
+      btn.classList.toggle('is-set', !!set || attrs.length > 0);
+      btn.classList.toggle('is-bonus', active);
+      setText('.gearslot__val', set ? set.name : attrs.length ? 'No set' : 'Empty', btn);
+      $('.gearslot__attrs', btn).replaceChildren(...attrs.map((x) => h('span', {
+        class: 'gearslot__attr' + (GEAR_ATTRS.has(x.a) ? '' : ' is-legacy'),
+      }, short(x.a) + (x.v == null ? '' : ' ' + fmt(x.v, true)))));
+      btn.setAttribute('aria-label', `${s.label}: ${set ? set.name : 'no set'}${attrs.length ? ', ' + attrs.map(attrLabel).join(', ') : ''}`);
+    }
+    setText('#gearPieces', `${filled} / 6`);
+    const rig = $('#gearPanel .rig');
+    if (rig) rig.classList.toggle('is-linked', [...counts].some(([id, n]) => { const set = SETS.get(id); const t = set ? setTiers(set) : []; return t.length && n >= t[0].pieces; }));
+  }
+
+  function renderArmorTalents() {
+    for (const btn of $$('[data-armortalent]')) {
+      const s = SLOT[btn.dataset.armortalent];
+      const t = s && s.talents.get(S.gear[s.id].talent);
+      setText('.picktag__val', t ? t.name : 'Not set', btn);
+      effectText($('.picktag__desc', btn), t ? str(t.description) : '', t);
+      btn.classList.toggle('is-set', !!t);
+    }
+  }
+
+  function renderWeapons() {
+    S.w.forEach((w, i) => {
+      const n = i + 1;
+      const wp = getWeapon(w.id);
+      const exo = isExotic(wp);
+      setText(`#w${n}name`, wp ? wp.name : 'Select weapon');
+      setText(`#w${n}sub`, wp ? weaponLine(wp) : 'Not set');
+      const btn = $(`#w${n}btn`);
+      btn.classList.toggle('is-set', !!wp);
+      btn.classList.toggle('is-exotic', exo);
+      btn.setAttribute('aria-label', `${WEAPON_LABEL[i]} weapon: ${wp ? wp.name : 'not set'}`);
+      const tier = $(`#w${n}tier`);
+      tier.disabled = !wp;
+      tier.value = wp ? w.tier : '';
+      const fixed = $(`#w${n}fixed`);
+      fixed.hidden = !exo;
+      if (exo) {
+        setText('.picktag__val', str(wp.talentName) || 'Exotic talent', fixed);
+        effectText($('.picktag__desc', fixed), str(wp.talentDescription), wp);
+      }
+      [0, 1].forEach((j) => {
+        const tb = $(`[data-talent="w${n}t${j + 1}"]`);
+        const t = WT.get(w.t[j]);
+        tb.disabled = !wp;
+        tb.classList.toggle('is-set', !!t);
+        setText('.picktag__val', t ? t.name : wp ? 'Not set' : 'Pick a weapon first', tb);
+        effectText($('.picktag__desc', tb), t ? str(t.description) : '', t);
+        tb.setAttribute('aria-label', `${WEAPON_LABEL[i]} talent ${j + 1}: ${t ? t.name : 'not set'}`);
+      });
+      [0, 1].forEach((j) => {
+        const bb = $(`[data-wbonus="${n}"][data-wbidx="${j + 1}"]`);
+        const x = w.attrs[j];
+        bb.disabled = !wp;
+        bb.classList.toggle('is-set', !!x.a);
+        bb.classList.toggle('is-legacy', !!x.a && !WEAPON_ATTRS.has(x.a));
+        setText('.picktag__val', x.a ? short(x.a) + (x.v == null ? '' : ' ' + fmt(x.v, true)) : wp ? 'Not set' : 'Pick a weapon first', bb);
+        bb.setAttribute('aria-label', `${WEAPON_LABEL[i]} weapon attribute ${j + 1}: ${x.a ? attrLabel(x) : 'not set'}`);
+      });
+    });
+  }
+
+  function renderOS() {
+    const os = OSP.get(S.os);
+    setText('#osName', os ? os.name : 'Select OS Protocol');
+    setText('#osSub', os ? [os.specialization, os.rarity, os.mainStat && os.mainValue ? `${os.mainStat} ${os.mainValue}` : ''].filter(Boolean).join(' · ') : 'Not set');
+    effectText($('#osDesc'), os ? str(os.talentDescription) : '', os);
+    const slot = $('#osSlot');
+    slot.classList.toggle('is-set', !!os);
+    slot.setAttribute('aria-label', `OS Protocol: ${os ? os.name : 'not set'}`);
+  }
+
+  function renderMods() {
+    const skills = S.spec ? focusSkills(S) : null;
+    $$('.skill-slot').forEach((btn, i) => {
+      const m = MODS.get(S.mods[i]);
+      const skill = skills ? skills[i] : '';
+      btn.disabled = !S.spec;
+      btn.classList.toggle('is-set', !!m);
+      setText('.skill-slot__skill', skill, btn);
+      setText('.skill-slot__nm', m ? m.name : S.spec ? 'Select skill mod' : 'Pick a specialization first', btn);
+      setText('.skill-slot__sub', m ? [!skill && m.skill ? str(m.skill) : '', `2pc: ${bonusText(m.bonus2)}`].filter(Boolean).join(' · ') : '', btn);
+      effectText($('.skill-slot__desc', btn), m ? `3pc: ${str(m.bonus3)}` : '', m);
+      btn.setAttribute('aria-label', `${skill ? skill + ' mod' : 'Skill mod ' + (i + 1)}: ${m ? m.name : 'not set'}`);
+    });
+    setText('#skillCount', `${S.mods.filter(Boolean).length} / 3`);
+  }
+
+  function renderBonuses(counts) {
+    const box = $('#bonusList');
+    const active = [...counts]
+      .map(([id, n]) => ({ set: SETS.get(id), n }))
+      .filter((x) => x.set && setTiers(x.set).some((t) => x.n >= t.pieces));
+    if (!active.length) {
+      box.replaceChildren(h('p', { class: 'empty' }, 'Equip 2 pieces of a set to activate it.'));
+      return;
+    }
+    box.replaceChildren(...active.map(({ set, n }) => h('div', { class: 'bonus' },
+      h('div', { class: 'bonus__hd' }, h('span', { class: 'bonus__nm' }, set.name), h('span', { class: 'bonus__pc' }, `${n} pc`)),
+      setTiers(set).filter((t) => n >= t.pieces).map((t) => h('div', { class: 'bonus__line' }, `${t.pieces}pc: ${t.text}`)),
+      caveatOf(set) ? h('div', { class: 'caveat' }, caveatOf(set)) : null,
+    )));
+  }
+
+  /* Caps on totals, in percent. Damage Reduction: 80% since Ubisoft's June 26, 2026 server hotfix. */
+  const CAPS = { 'Damage Reduction': 80 };
+  const capOf = (r) => (r.pct && CAPS[r.stat] != null && r.pct.max > CAPS[r.stat] ? CAPS[r.stat] : null);
+  function totalText(r) {
+    const parts = [];
+    if (r.pct) {
+      const cap = capOf(r);
+      parts.push(cap == null ? fmtRange(r.pct.min, r.pct.max, true)
+        : `${fmtRange(Math.min(r.pct.min, cap), cap, true)} (capped at ${cap}%)`);
+    }
+    if (r.flat) parts.push(fmtRange(r.flat.min, r.flat.max, false));
+    return parts.join(' · ');
+  }
+
+  function renderStats(stats) {
+    const box = $('#statList');
+    const open = new Set($$('details[open]', box).map((d) => d.dataset.stat));
+    if (!stats.size) {
+      box.replaceChildren(h('p', { class: 'empty' }, 'Nothing to add up yet.'));
+      return;
+    }
+    const groups = new Map();
+    for (const r of stats.values()) {
+      const c = statCat(r.stat);
+      if (!groups.has(c)) groups.set(c, []);
+      groups.get(c).push(r);
+    }
+    const order = [...CATS, ...[...groups.keys()].filter((c) => !CATS.includes(c))];
+    const nodes = [];
+    for (const c of order) {
+      const rows = groups.get(c);
+      if (!rows) continue;
+      rows.sort((a, b) => a.stat.localeCompare(b.stat));
+      nodes.push(h('div', { class: 'stat-group' },
+        h('h3', { class: 'stat-group__hd ' + catClass(c) }, c),
+        rows.map((r) => {
+          const total = totalText(r);
+          const extra = r.unvalued ? `${total ? '+' : ''}${r.unvalued} ${plural(r.unvalued, 'roll', 'rolls')}` : '';
+          return h('details', { class: 'stat-row', 'data-stat': r.stat, open: open.has(r.stat) },
+            h('summary', null,
+              h('span', { class: 'stat-row__lbl' }, r.stat),
+              h('span', { class: 'stat-row__val' }, total, extra ? h('span', { class: 'stat-row__more' }, (total ? ' ' : '') + extra) : null)),
+            h('ul', { class: 'stat-src' },
+              r.sources.map((s) => h('li', null, h('span', null, s.src), h('span', null, s.text))),
+              capOf(r) != null ? h('li', { class: 'stat-src__cap' }, h('span', null, 'Sum before the cap'), h('span', null, fmtRange(r.pct.min, r.pct.max, true))) : null));
+        })));
+    }
+    box.replaceChildren(...nodes);
+  }
+
+  const CHECK_WORD = { warn: 'Warning: ', info: 'Note: ', ok: 'Good: ' };
+  function renderChecks(a) {
+    const grade = $('#ratingGrade');
+    grade.textContent = a.grade;
+    grade.className = 'rating__grade ' + a.cls;
+    setText('#ratingScore', S.spec ? `${a.score} / 100` : '');
+    setText('#rigScore', String(a.score));
+    const meter = $('#ratingMeter');
+    if (meter) meter.style.width = a.score + '%';
+    $('#diagList').replaceChildren(...a.checks.map(([level, parts]) => h('li', { class: `diag diag--${level}` },
+      h('span', { class: 'sr-only' }, CHECK_WORD[level] || ''),
+      h('span', { class: 'diag__txt' }, parts))));
+    setText('#mobScore', String(a.score));
+    setText('#mobGrade', a.grade);
+  }
+
+  function renderTemplateBar() {
+    const ti = activeTemplate();
+    const label = ti >= 0 ? TEMPLATES[ti].name
+      : loadedTemplate >= 0 && S.spec ? `${TEMPLATES[loadedTemplate].name} (edited)` : 'Load a build guide';
+    setText('#tplLabel', label);
+    const lines = [];
+    if (ti >= 0 && templateNote(TEMPLATES[ti])) lines.push(templateNote(TEMPLATES[ti]));
+    if (notice) lines.push(notice);
+    const note = $('#labNote');
+    note.textContent = lines.join(' ');
+    note.hidden = !lines.length;
+    const input = $('#buildNameInput');
+    if (input && input !== doc.activeElement && cleanName(input.value) !== S.name) input.value = S.name;
+  }
+
+  function renderAll() {
+    const counts = setCounts(S);
+    const stats = computeStats(S);
+    renderSpec();
+    renderGear(counts);
+    renderArmorTalents();
+    renderWeapons();
+    renderOS();
+    renderMods();
+    renderBonuses(counts);
+    renderStats(stats);
+    renderChecks(analyze(S, stats));
+    renderTemplateBar();
+  }
+
+  /* ---------- URL ---------- */
+  let urlTimer = 0;
+  function writeUrl() {
+    clearTimeout(urlTimer);
+    const want = S.spec ? '#' + encode(S) : '';
+    if (location.hash === want) return;
+    try {
+      history.replaceState(history.state, '', location.pathname + location.search + want);
+    } catch (e) { /* some browsers limit how often this may run; the next change writes it */ }
+  }
+  function changed() {
+    notice = '';
+    hideShareLink();
+    renderAll();
+    writeUrl();
+  }
+
+  /* A build link always has "=" in it; plain #fragments (the skip link) are left alone. */
+  const isBuildHash = (raw) => raw.includes('=');
+  function loadFromLocation() {
+    const raw = location.hash.slice(1);
+    if (raw && !isBuildHash(raw)) return false;
+    loadedTemplate = -1;
+    notice = '';
+    if (!raw) { S = emptyState(); return true; }
+    const r = decode(raw);
+    if (!r.state) {
+      S = emptyState();
+      notice = r.legacy ? 'That link is from an older version of the planner and can\'t be opened here.' : 'That link doesn\'t hold a build the planner can read.';
+      writeUrl();
+      return true;
+    }
+    S = r.state;
+    loadedTemplate = TEMPLATE_KEYS.indexOf(encode(S));
+    // a template's own link can name weapons that aren't in the data yet; its note explains that
+    const isTemplateLink = TEMPLATES.some((t) => t.hash === raw);
+    if (r.dropped && !isTemplateLink) notice = `${r.dropped} ${plural(r.dropped, 'item', 'items')} in that link didn't match our database and ${plural(r.dropped, 'was', 'were')} left out.`;
+    writeUrl();
+    return true;
+  }
+
+  function resetBuild() {
+    S = emptyState();
+    loadedTemplate = -1;
+    notice = '';
+    hideShareLink();
+    renderAll();
+    writeUrl();
+  }
+
+  function loadTemplate(i) {
+    const t = TEMPLATES[i];
+    const r = t && decode(t.hash);
+    if (!r || !r.state) return;
+    S = r.state;
+    loadedTemplate = i;
+    notice = '';
+    hideShareLink();
+    renderAll();
+    writeUrl();
+  }
+
+  /* ---------- dialogs ---------- */
+  let dialog = null; // { el, opener, onClose }
+  const INERT_TARGETS = () => [$('.skip-link'), $('#site-header'), $('.hero'), lab, $('.lab-about'), $('.site-footer'), $('#mobStatus')].filter(Boolean);
+  const focusables = (root) => $$('button, [href], input, select, textarea, summary, [tabindex]:not([tabindex="-1"])', root)
+    .filter((n) => !n.disabled && !n.hidden && n.getClientRects().length > 0);
+
+  function openDialog(el, initial, onClose) {
+    if (dialog) closeDialog(true);
+    dialog = { el, opener: doc.activeElement, onClose };
+    el.hidden = false;
+    el.classList.add('is-open');
+    for (const n of INERT_TARGETS()) n.inert = true;
+    doc.body.classList.add('has-dialog');
+    const target = initial && !initial.disabled ? initial : focusables(el)[0];
+    if (target) target.focus();
+  }
+  function closeDialog(silent) {
+    if (!dialog) return;
+    const { el, opener, onClose } = dialog;
+    dialog = null;
+    el.classList.remove('is-open');
+    el.hidden = true;
+    for (const n of INERT_TARGETS()) n.inert = false;
+    doc.body.classList.remove('has-dialog');
+    if (onClose) onClose();
+    if (!silent && opener && opener.isConnected && typeof opener.focus === 'function') {
+      if (opener.disabled) { const panel = opener.closest('section, .panel'); if (panel) { panel.setAttribute('tabindex', '-1'); panel.focus(); } }
+      else opener.focus();
+    }
+  }
+  doc.addEventListener('keydown', (e) => {
+    if (!dialog) return;
+    if (e.key === 'Escape') {
+      e.preventDefault();
+      closeDialog();
+      return;
+    }
+    if (e.key === 'Tab') {
+      const list = focusables(dialog.el);
+      if (!list.length) return;
+      const first = list[0];
+      const last = list[list.length - 1];
+      if (e.shiftKey && (doc.activeElement === first || !dialog.el.contains(doc.activeElement))) { e.preventDefault(); last.focus(); }
+      else if (!e.shiftKey && (doc.activeElement === last || !dialog.el.contains(doc.activeElement))) { e.preventDefault(); first.focus(); }
+    }
+  });
+  for (const m of $$('.modal')) {
+    m.addEventListener('click', (e) => {
+      if (e.target === m || e.target.closest('[data-close]')) closeDialog();
+    });
+  }
+
+  /* List picker: searchable list of options, with an optional "None" row */
+  let listCtx = null;
+  const isTouch = window.matchMedia && window.matchMedia('(hover: none)').matches;
+
+  function marked(text, q) {
+    const s = str(text);
+    if (!q) return [s];
+    const out = [];
+    const low = s.toLowerCase();
+    let i = 0;
+    for (;;) {
+      const at = low.indexOf(q, i);
+      if (at < 0) break;
+      if (at > i) out.push(s.slice(i, at));
+      out.push(h('mark', { class: 'stat-hit' }, s.slice(at, at + q.length)));
+      i = at + q.length;
+    }
+    if (i < s.length) out.push(s.slice(i));
+    return out;
+  }
+
+  /* How closely a search matches an option: the exact name, then names that start with it, then a
+     word in the name that starts with it, then anywhere in the name, then other names, then the
+     rest of the option's text. */
+  function matchRank(it, q) {
+    const n = key(it.name);
+    if (n === q) return 0;
+    let at = n.indexOf(q);
+    if (at === 0) return 1;
+    if (at > 0) {
+      while (at > 0 && /[a-z0-9]/.test(n[at - 1])) at = n.indexOf(q, at + 1);
+      return at > 0 ? 2 : 3;
+    }
+    return key(it.alias).includes(q) || key(it.find).includes(q) ? 4 : 5;
+  }
+
+  function drawList(query) {
+    const q = key(query);
+    let items = listCtx.items.filter((it) => !q || it.none || key(`${it.name} ${it.tag || ''} ${it.desc || ''} ${it.group || ''} ${it.alias || ''} ${it.find || ''}`).includes(q));
+    if (q) {
+      // closest matches first; groups stay together, the group with the closest match goes first
+      const order = new Map();
+      for (const it of listCtx.items) if (!order.has(it.group || '')) order.set(it.group || '', order.size);
+      const ranked = items.map((it, i) => ({ it, i, g: it.group || '', r: it.none ? -1 : matchRank(it, q) }));
+      const best = new Map();
+      for (const x of ranked) if (!best.has(x.g) || x.r < best.get(x.g)) best.set(x.g, x.r);
+      ranked.sort((a, b) => best.get(a.g) - best.get(b.g) || order.get(a.g) - order.get(b.g) || a.r - b.r || a.i - b.i);
+      items = ranked.map((x) => x.it);
+    }
+    const nodes = [];
+    let group = '';
+    for (const it of items) {
+      if (it.group && it.group !== group) {
+        group = it.group;
+        nodes.push(h('p', { class: 'opt-group' }, group));
+      }
+      const cur = !it.none && it.id === listCtx.current;
+      const btn = h('button', {
+        type: 'button',
+        class: 'opt' + (cur ? ' is-current' : '') + (it.none ? ' opt--none' : ''),
+        'data-id': it.id,
+        disabled: !!it.disabled,
+        'aria-current': cur ? 'true' : null,
+      },
+      h('span', { class: 'opt__top' }, h('span', { class: 'opt__nm' }, marked(it.name, q)), it.tag ? h('span', { class: 'opt__type' }, it.tag) : null),
+      it.desc ? h('span', { class: 'opt__desc' }, marked(it.desc, q)) : null,
+      it.alias ? h('span', { class: 'opt__note' }, 'Also called ', marked(it.alias, q)) : null,
+      q && it.find && key(it.find).includes(q) ? h('span', { class: 'opt__note' }, 'Possibly once called ', marked(it.find, q), '.') : null,
+      it.note ? h('span', { class: 'opt__note' }, it.note) : null,
+      it.disabled && it.why ? h('span', { class: 'opt__why' }, it.why) : null);
+      btn.addEventListener('click', () => {
+        const pick = listCtx.onPick;
+        closeDialog();
+        pick(it.id);
+      });
+      nodes.push(btn);
+    }
+    if (!items.some((it) => !it.none)) nodes.push(h('p', { class: 'opt-empty' }, 'No matches.'));
+    $('#modalList').replaceChildren(...nodes);
+  }
+
+  function openList({ title, items, current, onPick, none }) {
+    const list = none && current ? [{ id: '', name: none, none: true }, ...items] : items;
+    listCtx = { items: list, current: current || '', onPick };
+    setText('#modalTitle', title);
+    const searchable = items.length > 8;
+    const wrap = $('#modalSearchWrap');
+    const input = $('#modalSearch');
+    wrap.hidden = !searchable;
+    input.value = '';
+    drawList('');
+    const box = $('#modalList');
+    const cur = $('.opt.is-current', box);
+    const first = $('.opt:not(:disabled)', box);
+    openDialog($('#modal'), searchable && !isTouch ? input : cur || first);
+    if (cur && typeof cur.scrollIntoView === 'function') cur.scrollIntoView({ block: 'nearest' });
+  }
+
+  $('#modalSearch').addEventListener('input', (e) => drawList(e.target.value));
+  $('#modalSearch').addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowDown') {
+      const first = $('#modalList .opt:not(:disabled)');
+      if (first) { e.preventDefault(); first.focus(); }
+    } else if (e.key === 'Enter') {
+      const first = $('#modalList .opt:not(.opt--none):not(:disabled)');
+      if (first) { e.preventDefault(); first.click(); }
+    }
+  });
+  $('#modalList').addEventListener('keydown', (e) => {
+    if (!['ArrowDown', 'ArrowUp', 'Home', 'End'].includes(e.key)) return;
+    const opts = $$('#modalList .opt:not(:disabled)');
+    const i = opts.indexOf(doc.activeElement);
+    if (i < 0) return;
+    e.preventDefault();
+    let next = i;
+    if (e.key === 'ArrowDown') next = Math.min(opts.length - 1, i + 1);
+    else if (e.key === 'ArrowUp') {
+      if (i === 0 && !$('#modalSearchWrap').hidden) { $('#modalSearch').focus(); return; }
+      next = Math.max(0, i - 1);
+    } else if (e.key === 'Home') next = 0;
+    else next = opts.length - 1;
+    opts[next].focus();
   });
 
-  // OS + Skills
-  S.os = resolveOS(p.get('os') || '');
-  S.skills = [
-    resolveSkillMod(p.get('sm1')),
-    resolveSkillMod(p.get('sm2')),
-    resolveSkillMod(p.get('sm3'))
-  ];
+  /* ---------- pickers ---------- */
+  function openTemplates() {
+    const items = [{ id: 'empty', name: 'Empty loadout', desc: 'Clear everything and start over.' }];
+    TEMPLATES.forEach((t, i) => {
+      const r = decode(t.hash);
+      items.push({ id: String(i), name: str(t.name), tag: r.state ? r.state.focus : '', group: str(t.spec) });
+    });
+    const ti = activeTemplate();
+    openList({
+      title: 'Load a template',
+      items,
+      current: ti >= 0 ? String(ti) : '',
+      onPick: (id) => (id === 'empty' ? resetBuild() : loadTemplate(+id)),
+    });
+  }
 
-  return true;
-}
+  function openFocusPicker() {
+    const sp = specOf(S.spec);
+    if (!sp) return;
+    openList({
+      title: `${sp.name} focus`,
+      items: sp.focuses.map((f) => ({ id: f.name, name: f.name, tag: str(f.stat), desc: arr(f.skills).join(', ') })),
+      current: S.focus,
+      onPick: (id) => {
+        const f = focusOf(sp, id);
+        if (!f || f.name === S.focus) return;
+        S.focus = f.name;
+        const lost = placeMods(S, S.mods);
+        changed();
+        if (lost) toast(`${lost} skill ${plural(lost, "mod doesn't", "mods don't")} fit ${S.focus} and ${plural(lost, 'was', 'were')} removed.`);
+      },
+    });
+  }
 
-function shareBuild() {
-  const url = location.origin + location.pathname + buildHash();
-  navigator.clipboard?.writeText(url).catch(() => {});
-  toast('TRANSMISSION PACKAGED — LINK COPIED');
-}
+  function openWeaponPicker(n) {
+    const w = S.w[n - 1];
+    const items = EXO.items.slice().sort(byName).map((wp) => ({
+      id: str(wp.id), name: wp.name, tag: str(wp.type), group: 'Exotic',
+      desc: [weaponLine(wp), wp.talentName ? `Talent: ${wp.talentName}` : ''].filter(Boolean).join('. '),
+      note: caveatOf(wp),
+    }));
+    const types = [];
+    for (const wp of STD.items) if (!types.includes(str(wp.type))) types.push(str(wp.type));
+    for (const type of types) {
+      STD.items.filter((wp) => str(wp.type) === type).sort(byName).forEach((wp) => items.push({
+        id: str(wp.id), name: wp.name, group: type || 'Other',
+        desc: [wp.rpm ? `${wp.rpm} RPM` : '', wp.mag ? `${wp.mag} mag` : ''].filter(Boolean).join(' · '),
+        note: caveatOf(wp),
+      }));
+    }
+    openList({
+      title: `${WEAPON_LABEL[n - 1]} weapon`,
+      items,
+      current: w.id,
+      none: 'No weapon',
+      onPick: (id) => {
+        const wp = getWeapon(id);
+        let cleared = false;
+        if (!wp) S.w[n - 1] = emptyWeapon();
+        else {
+          w.id = str(wp.id);
+          // One exotic at a time: equipping a second one empties the other slot completely
+          if (isExotic(wp) && isExotic(getWeapon(S.w[2 - n].id))) { S.w[2 - n] = emptyWeapon(); cleared = true; }
+        }
+        changed();
+        if (cleared) toast('Only one exotic can be equipped at a time, so the other weapon slot was cleared.');
+      },
+    });
+  }
 
-function toast(msg) {
-  const t = $('#toast'); if (!t) return;
-  t.textContent = msg; t.classList.add('is-show');
-  clearTimeout(t._timer); t._timer = setTimeout(() => t.classList.remove('is-show'), 2400);
-}
+  function openWeaponTalentPicker(n, j) {
+    const w = S.w[n - 1];
+    const wp = getWeapon(w.id);
+    if (!wp) return;
+    const other = w.t[1 - j];
+    openList({
+      title: `${wp.name}: talent ${j + 1}`,
+      items: WT.items.slice().sort(byName).map((t) => ({
+        id: str(t.id), name: t.name, desc: str(t.description), note: caveatOf(t), alias: aliasText(t), find: guessedAliases(t),
+        disabled: str(t.id) === other, why: 'Already on this weapon.',
+      })),
+      current: w.t[j],
+      none: 'No talent',
+      onPick: (id) => { w.t[j] = WT.get(id) ? id : ''; changed(); },
+    });
+  }
 
-function openCard() {
-  const counts = setCounts();
-  const sets = Object.entries(counts).filter(([, n]) => n >= 2).map(([n, c]) => `${Math.min(c,4)}× ${n}`).join('  ·  ') || 'No active sets';
-  const w1 = weapon(S.w1.id), w2 = weapon(S.w2.id), os = osProto(S.os);
-  const score = buildScore();
-  const gradeEl = $('#ratingGrade');
-  const grade = gradeEl ? gradeEl.textContent : '';
-  const preview = $('#cardPreview');
-  if (preview) preview.innerHTML = `<div class="cardx">
-    <span class="cardx__brand">// ResurgenceBuilds · SHD Build Lab</span>
-    <h3 class="cardx__name">${S.name || 'Untitled Loadout'}</h3>
-    <span class="cardx__spec">${S.spec || 'No Spec'} · ${S.subclass || ''}</span>
-    <div class="cardx__row">
-      <div class="cardx__col"><span class="cardx__k">Gear Sets</span><span class="cardx__v">${sets}</span></div>
-      <div class="cardx__col"><span class="cardx__k">Weapons</span><span class="cardx__v">${(w1?w1.name:'—')} · ${(w2?w2.name:'—')}</span></div>
-      <div class="cardx__col"><span class="cardx__k">OS Protocol</span><span class="cardx__v">${os?os.name:'—'}</span></div>
-      <div class="cardx__col cardx__score"><span class="cardx__k">${grade}</span><b>${score}</b></div>
-    </div>
-  </div>`;
-  const cm = $('#cardModal');
-  if (cm) cm.classList.add('is-open');
-}
+  function openArmorTalentPicker(slotId) {
+    const s = SLOT[slotId];
+    if (!s || !s.talents) return;
+    const g = S.gear[s.id];
+    openList({
+      title: `${s.label} talent`,
+      items: s.talents.items.slice().sort(byName).map((t) => ({ id: str(t.id), name: t.name, desc: str(t.description), note: caveatOf(t), alias: aliasText(t), find: guessedAliases(t) })),
+      current: g.talent,
+      none: 'No talent',
+      onPick: (id) => { g.talent = s.talents.get(id) ? id : ''; changed(); },
+    });
+  }
 
-/* ====================== INIT ====================== */
-// Load from URL hash if present
-loadFromHash();
-wire();
+  function openOSPicker() {
+    const stat = focusStat(S);
+    const rank = { 'high-end': 0, superior: 1, specialized: 2, standard: 3 };
+    const fits = (o) => !!stat && key(o.specialization) === key(stat);
+    const items = OSP.items.slice()
+      .sort((a, b) => (fits(b) - fits(a)) || ((rank[key(a.rarity)] ?? 9) - (rank[key(b.rarity)] ?? 9)) || byName(a, b))
+      .map((o) => ({
+        id: str(o.id), name: o.name,
+        tag: [o.specialization, o.rarity].filter(Boolean).join(' · '),
+        desc: [o.mainStat && o.mainValue ? `${o.mainStat} ${o.mainValue}.` : '', str(o.talentDescription)].filter(Boolean).join(' '),
+        note: caveatOf(o), alias: aliasText(o), find: guessedAliases(o),
+        group: stat ? (fits(o) ? `${stat}, matches ${S.focus}` : 'Other protocols') : '',
+      }));
+    openList({ title: 'OS Protocol', items, current: S.os, none: 'No OS Protocol', onPick: (id) => { S.os = OSP.get(id) ? id : ''; changed(); } });
+  }
+
+  function openModPicker(i) {
+    if (!S.spec) return;
+    const skills = focusSkills(S);
+    const skill = skills ? skills[i] : '';
+    // a skill's slot lists that skill's sets; plain slots list all of the spec's sets, by skill if known
+    const mine = MODS.items.filter((m) => key(m.specialization) === key(S.spec) && (!skill || key(m.skill) === key(skill)));
+    const hasSkill = !skill && mine.some((m) => m.skill);
+    if (hasSkill) mine.sort((a, b) => str(a.skill).localeCompare(str(b.skill)));
+    openList({
+      title: skill ? `${skill} mod` : `Skill mod ${i + 1}`,
+      items: mine.map((m) => {
+        const used = S.mods.indexOf(str(m.id));
+        return {
+          id: str(m.id), name: m.name, tag: '', group: hasSkill ? str(m.skill) || 'Other' : '',
+          desc: `2pc: ${bonusText(m.bonus2)}. 3pc: ${str(m.bonus3)}`,
+          alias: aliasText(m), find: guessedAliases(m), note: caveatOf(m),
+          disabled: used >= 0 && used !== i, why: `Already in slot ${used + 1}.`,
+        };
+      }),
+      current: S.mods[i],
+      none: 'No skill mod',
+      onPick: (id) => { S.mods[i] = MODS.get(id) ? id : ''; changed(); },
+    });
+  }
+
+  /* Editor dialog: gear pieces (set, two attributes with values, talent) and weapon attributes */
+  let editorCtx = null;
+
+  function attrSelect(id, attrs, i, list, legacyLabel) {
+    const sel = h('select', { id, class: 'ed-select' });
+    const fill = () => {
+      const other = attrs[1 - i].a;
+      const cur = attrs[i].a;
+      const groups = new Map();
+      for (const rec of list.list) {
+        if (!groups.has(rec.cat)) groups.set(rec.cat, []);
+        groups.get(rec.cat).push(rec);
+      }
+      const order = [...CATS.filter((c) => groups.has(c)), ...[...groups.keys()].filter((c) => !CATS.includes(c))];
+      const opts = [h('option', { value: '' }, 'None')];
+      for (const c of order) {
+        opts.push(h('optgroup', { label: c }, groups.get(c).map((rec) => h('option', { value: rec.name, disabled: rec.name === other }, rec.name))));
+      }
+      if (cur && !list.has(cur)) opts.push(h('optgroup', { label: legacyLabel(cur) }, h('option', { value: cur }, cur)));
+      sel.replaceChildren(...opts);
+      sel.value = cur;
+    };
+    fill();
+    sel._fill = fill;
+    return sel;
+  }
+
+  function attrField(n, attrs, i, list, legacyLabel, onChange) {
+    const sel = attrSelect(`ed-a${n}`, attrs, i, list, legacyLabel);
+    const input = h('input', {
+      id: `ed-v${n}`, class: 'ed-input', type: 'text', inputmode: 'decimal', autocomplete: 'off', spellcheck: 'false',
+      placeholder: 'Value', 'aria-label': `Attribute ${n} roll value, percent`, maxlength: '9',
+    });
+    const hint = h('p', { class: 'ed-help', id: `ed-h${n}` });
+    input.setAttribute('aria-describedby', hint.id);
+    const sync = () => {
+      const x = attrs[i];
+      input.disabled = !x.a;
+      if (doc.activeElement !== input) input.value = x.v == null ? '' : linkNum(x.v);
+      input.removeAttribute('aria-invalid');
+      hint.textContent = x.a && NEGATIVE.has(key(x.a)) ? 'Shows as a negative number in game.' : '';
+      hint.hidden = !hint.textContent;
+    };
+    sel.addEventListener('change', () => {
+      attrs[i].a = sel.value;
+      if (!sel.value) attrs[i].v = null;
+      else attrs[i].v = normVal(sel.value, attrs[i].v);
+      onChange();
+      sync();
+    });
+    input.addEventListener('input', () => {
+      const raw = input.value.trim();
+      const v = parseVal(raw);
+      if (raw && v == null) { input.setAttribute('aria-invalid', 'true'); return; }
+      input.removeAttribute('aria-invalid');
+      attrs[i].v = normVal(attrs[i].a, v);
+      onChange();
+    });
+    input.addEventListener('change', sync);
+    sync();
+    return {
+      node: h('div', { class: 'ed-field' },
+        h('label', { class: 'ed-label', for: sel.id }, `Attribute ${n}`),
+        h('div', { class: 'ed-row' }, sel, h('span', { class: 'ed-val' }, input, h('span', { class: 'ed-unit', 'aria-hidden': 'true' }, '%'))),
+        hint),
+      sel, sync,
+    };
+  }
+
+  function openGearEditor(slotId) {
+    const first = buildGearEditor(slotId);
+    if (first) openDialog($('#editor'), first);
+  }
+  /* Fills the editor for a gear slot and returns the control to focus first */
+  function buildGearEditor(slotId) {
+    const s = SLOT[slotId];
+    if (!s) return null;
+    const g = S.gear[s.id];
+    editorCtx = { kind: 'gear', slot: s.id };
+    setText('#editorTitle', s.label);
+    setText('#editorClear', `Clear ${s.label.toLowerCase()}`);
+    const fields = [];
+    const update = () => { for (const f of fields) f.sel._fill && f.sel._fill(); changed(); };
+
+    // "Jackpot: Skill Radius / Skill CHC / Skill CHD", so the list shows what each set gives
+    const setLabel = (x) => {
+      const stats = setTiers(x).map((t) => { const b = parseBonus(t.text); return b ? short(b.stat) : ''; }).filter(Boolean);
+      return stats.length ? `${x.name}: ${stats.join(' / ')}` : x.name;
+    };
+    const setSel = h('select', { id: 'ed-set', class: 'ed-select', 'aria-describedby': 'ed-set-help' },
+      h('option', { value: '' }, 'No set'),
+      SETS.items.slice().sort(byName).map((x) => h('option', { value: str(x.id) }, setLabel(x))));
+    setSel.value = g.set;
+    const setHelp = h('p', { class: 'ed-help', id: 'ed-set-help' });
+    const fillSetHelp = () => {
+      const set = SETS.get(g.set);
+      effectText(setHelp, set ? setTiers(set).map((t) => `${t.pieces}pc: ${t.text}`).join(' · ') : '', set);
+    };
+    setSel.addEventListener('change', () => { g.set = SETS.get(setSel.value) ? setSel.value : ''; fillSetHelp(); changed(); });
+    fillSetHelp();
+
+    const body = [h('div', { class: 'ed-field' }, h('label', { class: 'ed-label', for: 'ed-set' }, 'Gear set'), setSel, setHelp)];
+    for (let i = 0; i < 2; i++) {
+      const f = attrField(i + 1, g.attrs, i, GEAR_ATTRS, () => 'Not in our gear attribute list', update);
+      fields.push(f);
+      body.push(f.node);
+    }
+    if (s.talents) {
+      const talSel = h('select', { id: 'ed-talent', class: 'ed-select', 'aria-describedby': 'ed-talent-help' },
+        h('option', { value: '' }, 'No talent'),
+        s.talents.items.slice().sort(byName).map((t) => h('option', { value: str(t.id) }, t.name)));
+      talSel.value = g.talent;
+      const talHelp = h('p', { class: 'ed-help', id: 'ed-talent-help' });
+      const fillTal = () => {
+        const t = s.talents.get(g.talent);
+        effectText(talHelp, t ? str(t.description) : '', t);
+      };
+      talSel.addEventListener('change', () => { g.talent = s.talents.get(talSel.value) ? talSel.value : ''; fillTal(); changed(); });
+      fillTal();
+      body.push(h('div', { class: 'ed-field' }, h('label', { class: 'ed-label', for: 'ed-talent' }, 'Talent'), talSel, talHelp));
+    }
+    $('#editorBody').replaceChildren(...body);
+    return setSel;
+  }
+
+  function openWeaponAttrEditor(n, idx) {
+    const first = buildWeaponAttrEditor(n, idx);
+    if (first) openDialog($('#editor'), first);
+  }
+  function buildWeaponAttrEditor(n, idx) {
+    const w = S.w[n - 1];
+    const wp = getWeapon(w.id);
+    if (!wp) return null;
+    editorCtx = { kind: 'weapon', n };
+    setText('#editorTitle', `${wp.name} attributes`);
+    setText('#editorClear', 'Clear attributes');
+    const fields = [];
+    const update = () => { for (const f of fields) f.sel._fill && f.sel._fill(); changed(); };
+    const legacy = (a) => (REMOVED_WEAPON_ATTRS.has(key(a)) ? 'No longer rolls on weapons' : 'Not in our weapon attribute list');
+    for (let i = 0; i < 2; i++) fields.push(attrField(i + 1, w.attrs, i, WEAPON_ATTRS, legacy, update));
+    $('#editorBody').replaceChildren(...fields.map((f) => f.node));
+    return fields[idx] ? fields[idx].sel : fields[0].sel;
+  }
+
+  $('#editorClear').addEventListener('click', () => {
+    if (!editorCtx) return;
+    let first = null;
+    if (editorCtx.kind === 'gear') {
+      S.gear[editorCtx.slot] = emptyPiece();
+      changed();
+      first = buildGearEditor(editorCtx.slot);
+    } else {
+      S.w[editorCtx.n - 1].attrs = [{ a: '', v: null }, { a: '', v: null }];
+      changed();
+      first = buildWeaponAttrEditor(editorCtx.n, 0);
+    }
+    if (first) first.focus();
+    toast('Cleared.');
+  });
+
+  /* ---------- share and card ---------- */
+  let toastTimer = 0;
+  function toast(msg) {
+    const t = $('#toast');
+    t.textContent = msg;
+    t.classList.add('is-show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => t.classList.remove('is-show'), 2600);
+  }
+  function hideShareLink() {
+    const box = $('#shareLink');
+    if (box) box.hidden = true;
+  }
+  async function copyText(text) {
+    try {
+      if (navigator.clipboard && window.isSecureContext) {
+        await navigator.clipboard.writeText(text);
+        return true;
+      }
+    } catch (e) { /* fall through to the manual field */ }
+    return false;
+  }
+  async function shareBuild() {
+    if (!S.spec) { toast('Pick a specialization first.'); return; }
+    writeUrl();
+    const url = location.origin + location.pathname + '#' + encode(S);
+    const box = $('#shareLink');
+    const field = $('#shareLinkField');
+    field.value = url;
+    if (await copyText(url)) {
+      box.hidden = true;
+      toast('Link copied.');
+      return;
+    }
+    box.hidden = false;
+    field.focus();
+    field.select();
+    toast('Couldn\'t copy automatically. Copy the link below.');
+  }
+
+  function openCard() {
+    const a = analyze(S, computeStats(S));
+    const sets = [...setCounts(S)]
+      .map(([id, n]) => ({ set: SETS.get(id), n }))
+      .filter((x) => x.set && setTiers(x.set).some((t) => x.n >= t.pieces))
+      .map((x) => `${x.n}pc ${x.set.name}`).join(' · ') || 'None active';
+    const weapons = S.w.map((w) => getWeapon(w.id)).filter(Boolean).map((w) => w.name).join(' · ') || 'None';
+    const os = OSP.get(S.os);
+    const col = (k, v) => h('div', { class: 'cardx__col' }, h('span', { class: 'cardx__k' }, k), h('span', { class: 'cardx__v' }, v));
+    $('#cardPreview').replaceChildren(h('div', { class: 'cardx' },
+      h('span', { class: 'cardx__brand' }, 'Resurgence Builds · Build Planner'),
+      h('p', { class: 'cardx__name' }, S.name || 'Untitled build'),
+      h('span', { class: 'cardx__spec' }, S.spec ? `${S.spec} · ${S.focus}` : 'No specialization'),
+      h('div', { class: 'cardx__row' },
+        col('Gear sets', sets), col('Weapons', weapons), col('OS Protocol', os ? os.name : 'None'),
+        h('div', { class: 'cardx__col cardx__score' }, h('span', { class: 'cardx__k' }, a.grade), h('b', null, String(a.score))))));
+    openDialog($('#cardModal'), $('#cardModal .modal__x'));
+  }
+
+  /* ---------- wiring ---------- */
+  function chooseSpec(name) {
+    const sp = specOf(name);
+    if (!sp || S.spec === sp.name) return;
+    S.spec = sp.name;
+    S.focus = sp.focuses[0].name;
+    const removed = placeMods(S, S.mods); // skill mods belong to one specialization
+    changed();
+    if (removed) toast(`${removed} ${plural(removed, 'skill mod belongs', 'skill mods belong')} to another specialization and ${plural(removed, 'was', 'were')} removed.`);
+  }
+
+  for (const b of $$('.spec-btn')) b.addEventListener('click', () => chooseSpec(b.dataset.spec));
+  $('#subBtn').addEventListener('click', openFocusPicker);
+  $('#tplBtn').addEventListener('click', openTemplates);
+  $('#resetBtn').addEventListener('click', () => { resetBuild(); toast('Build cleared.'); });
+  for (const b of $$('.gearslot')) b.addEventListener('click', () => openGearEditor(b.dataset.slot));
+  for (const b of $$('[data-armortalent]')) b.addEventListener('click', () => openArmorTalentPicker(b.dataset.armortalent));
+  $('#osSlot').addEventListener('click', openOSPicker);
+  $$('.skill-slot').forEach((b, i) => b.addEventListener('click', () => openModPicker(i)));
+  [1, 2].forEach((n) => {
+    $(`#w${n}btn`).addEventListener('click', () => openWeaponPicker(n));
+    $(`#w${n}tier`).addEventListener('change', (e) => {
+      const v = str(e.target.value).toUpperCase();
+      S.w[n - 1].tier = /^T[012]$/.test(v) ? v : '';
+      changed();
+    });
+    [1, 2].forEach((j) => {
+      $(`[data-talent="w${n}t${j}"]`).addEventListener('click', () => openWeaponTalentPicker(n, j - 1));
+      $(`[data-wbonus="${n}"][data-wbidx="${j}"]`).addEventListener('click', () => openWeaponAttrEditor(n, j - 1));
+    });
+  });
+  $('#shareBtn').addEventListener('click', shareBuild);
+  $('#cardBtn').addEventListener('click', openCard);
+  $('#shareLinkField').addEventListener('focus', (e) => e.target.select());
+  const nameInput = $('#buildNameInput');
+  nameInput.addEventListener('input', () => {
+    S.name = cleanName(nameInput.value);
+    notice = '';
+    renderTemplateBar();
+    clearTimeout(urlTimer);
+    urlTimer = setTimeout(writeUrl, 300);
+  });
+  $('#mobStatusGo').addEventListener('click', () => {
+    const p = $('#checksPanel');
+    p.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'start' });
+    p.focus({ preventScroll: true });
+  });
+  window.addEventListener('hashchange', () => {
+    if (!isBuildHash(location.hash.slice(1)) && location.hash) return;
+    clearTimeout(urlTimer);
+    if (dialog) closeDialog(true);
+    hideShareLink();
+    loadFromLocation();
+    renderAll();
+  });
+
+  /* ---------- start ---------- */
+  loadFromLocation();
+  renderAll();
+  const rig = $('#gearPanel .rig');
+  if (rig) rig.classList.add('is-active');
+  lab.setAttribute('data-ready', '');
+})();

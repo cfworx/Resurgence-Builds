@@ -18,7 +18,7 @@ sources:
   - 'LtFoe (LtFoe, Clan TruthAbove). Discord submission with 30+ in-game screenshots, June 2026.'
   - 'In-game Division Resurgence Build Database, verified June 2026.'
   - '<a href="https://www.youtube.com/watch?v=tn4ME4MVGyY">Died Again Gaming, Catching Up Before Weekly Reset (DAG LIVE)</a>, October 25, 2026 (the weekly gold OS Protocol).'
-plannerHash: "s=Tech+Operator&sc=Aegis+Operations&n=The+Double+Agent&ms=gs-7&m1=Skill+Critical+Chance&m2=Skill+Multi-Shot+Chance&cs=gs-7&ct=ba-12&c1=Skill+Multi-Shot+Chance&c2=Skill+Cooldown+Recovery&ps=gs-10&pt=bp-19&p1=Skill+Radius&p2=Skill+Multi-Shot+Chance&gs=gs-10&g1=Skill+Critical+Chance&g2=Skill+Critical+Damage&hs=gs-7&h1=Skill+Multi-Shot+Chance&h2=Skill+Critical+Chance&ks=gs-7&k1=Skill+Critical+Damage&k2=Damage+Reduction&w1s=sw-38&w1tr=T2&w1t=wt-22&w1t2=wt-20&w2e=ew-2&os=os-20&sm1=smc-32&sm2=smc-35&sm3=smc-29"
+plannerHash: "s=Tech+Operator&sc=Aegis+Operations&n=The+Double+Agent&ms=gs-7&m1=scc&m1v=3.45&m2=sms&m2v=4.52&gs=gs-10&g1=scc&g1v=5.52&g2=scd&g2v=9.25&hs=gs-7&h1=sms&h1v=4.8&h2=scc&h2v=5.72&cs=gs-7&ct=ba-12&c1=sms&c1v=2.27&c2=scr&c2v=-4.07&ps=gs-10&pt=bp-19&p1=sr&p1v=9.87&p2=sms&p2v=3.54&ks=gs-7&k1=scd&k1v=9.34&k2=dr&k2v=3.58&w1s=sw-38&w1tr=T2&w1t=wt-22&w1t2=wt-20&w2e=ew-2&w2b1=sms&w2b1v=5.84&w2b2=scd&w2b2v=18.54&os=os-20&sm1=smc-29&sm2=smc-32&sm3=smc-35"
 faqs:
   - question: "Do I need exotic gear for The Double Agent build?"
     answer: "No exotic gear pieces required. Every armor slot is standard legendary. The only exotic weapon is the Warlord (AR). The primary is an Enhanced ACR-E assault rifle. The Brains Over Brawn OS Protocol is the biggest chase item. If you have BoB and a Warlord, you have the offensive core."

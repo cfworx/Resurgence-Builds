@@ -29,6 +29,7 @@ faqs:
 videoId: "VHKfmW4BtEk"
 videoTitle: "TikTokAndy: Most Overpowered Team Healer Build - Striker - Aegis"
 videoChannel: "TikTokAndy"
+plannerHash: "s=Tech+Operator&sc=Aegis+Operations&n=Aegis+Team+Healer&ms=gs-8&m1=rh&m2=dte&gs=gs-12&g1=rh&g2=si&hs=gs-12&h1=sdu&h2=scr&cs=gs-8&ct=ba-11&c1=scr&ps=gs-8&pt=bp-2&p1=rh&p2=arm&ks=gs-8&k1=si&k2=sr&w1s=sw-52&w1t=wt-17&w1t2=wt-1&w1b1=si&w1b2=mhp&w2s=sw-11&w2t=wt-66&w2t2=wt-26&w2b1=si&os=os-10&sm1=smc-29&sm2=smc-31&sm3=smc-36"
 ---
 
 ## What This Build Does
