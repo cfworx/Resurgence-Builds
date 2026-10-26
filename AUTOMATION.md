@@ -49,7 +49,7 @@ The container's shell usually can't reach websites (only package registries and 
 
 | # | Source | URL | What to compare |
 |---|---|---|---|
-| 1 | Steam announcements (official) | The RSS feed `https://store.steampowered.com/feeds/news/app/3749720/` (it read fine on 2026-10-25; it leaves out the reposted press articles), then WebSearch. Don't fetch the Steam News API (`api.steampowered.com`, refused by our fetch tool), the store's news page or the Steam Community announcements page (both come back empty without JavaScript). | items newer than `state.steam.latestDate` / not in `state.steam.seen` |
+| 1 | Steam announcements (official) | The RSS feed `https://store.steampowered.com/feeds/news/app/3749720/` (it leaves out the reposted press articles; an unattended run can't open it directly, see "Reach links through search" in 2b), then WebSearch. Don't fetch the Steam News API (`api.steampowered.com`, refused by our fetch tool), the store's news page or the Steam Community announcements page (both come back empty without JavaScript). | items newer than `state.steam.latestDate` / not in `state.steam.seen` |
 | 2 | Ubisoft Help Center, Patch Notes section | `https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/section/539-patch-notes/` | article IDs not in `state.helpCenterPatchNotes` |
 | 3 | Ubisoft game news | `https://www.ubisoft.com/en-us/game/the-division/resurgence/news-updates` (a JavaScript page our fetch tool often can't read; fall back to WebSearch `"Division Resurgence" site:ubisoft.com news`) | entries not in `state.ubisoftNews` |
 | 4 | Ubisoft News articles | search: `The Division Resurgence site:news.ubisoft.com` | articles not in `state.newsUbisoftCom` |
@@ -89,16 +89,27 @@ Work through every group in the file, every run. Each entry has the URL to check
 If a source won't load, try once more, then mark it (`status: unreachable` or `blocked`, `failStreak` + 1) and move on.
 Never use mirrors, caches, archives or scraping services to get around a block.
 
-**Fetch order matters in an unattended run.** Several refused fetches in a row can make the fetch tool start asking for
-the owner's approval on every link (`PROVENANCE_REQUIRED`), and nobody is there at 6:30 AM to give it. So:
+**Reach links through search in an unattended run.** At 6:30 AM nobody is there to approve a fetch, and the fetch tool
+only opens a link without approval when it came from this run's own search results or from a page the run already
+opened. A link typed into the task prompt, copied from this file or `sources.json`, or built by hand waits for an
+approval that never comes (`PROVENANCE_REQUIRED`). That is what happened on 2026-10-26: the first fetch, the Steam RSS
+feed, stopped the run's direct reads. So:
 
-- Never fetch a source already known to be refused: the Steam News API, `x.com`, YouTube RSS feeds.
-- Open the sources that usually load first (the Steam RSS feed, Help Center, official site, APKMirror, SteamDB,
-  Raijin.gg, the Discord counts, the Steam store and discussions, the news sites), then the JavaScript pages (Ubisoft
-  news, bug reporter), then the streaming aggregates.
-- Individual streamer channels are listed in `sources.json` for reference; the aggregates cover them, so don't open them.
-- If a fetch asks for approval or returns `PROVENANCE_REQUIRED`, stop fetching for the rest of the run, finish with the
-  WebSearch checks, and say so in the summary ("couldn't open links directly today").
+- For each source, run a WebSearch that surfaces it, then fetch the matching URL **from the results**. The URLs in this
+  file and in `sources.json` tell you which page is the right one; never fetch them by typing them in.
+- Links inside a page you fetched (an article on a Help Center section page, say) can be followed the same way.
+  Never type, build or edit a URL yourself.
+- Queries that usually surface the official pages: `"The Division Resurgence" site:store.steampowered.com/news`
+  (individual Steam announcements), `"Division Resurgence" site:ubisoft-mobile.helpshift.com patch note` (Help Center
+  articles), `"Division Resurgence" site:ubisoft-mobile.helpshift.com drop rates`, `"The Division Resurgence"
+  site:ubisoft.com` (official site and news). For the data and news sites, search the site name plus
+  `"Division Resurgence"`.
+- Some sources never show up in search results (the Steam RSS feed, the Discord invite API). Skip them in an unattended
+  run and list them in the summary as "needs a direct link"; an interactive session can open them.
+- Never fetch a source already known to be refused: the Steam News API, `x.com`, YouTube RSS feeds. Individual streamer
+  channels are listed in `sources.json` for reference; the aggregates cover them, so don't open them.
+- If even a link from your own search results asks for approval or returns `PROVENANCE_REQUIRED`, stop fetching for
+  the rest of the run, finish with the WebSearch checks, and say so in the summary ("couldn't open links today").
 
 ### 2c. Trust and verification
 
