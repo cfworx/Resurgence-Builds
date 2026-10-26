@@ -2,7 +2,7 @@
 title: "Which Specialization to Pick - Division Resurgence"
 category: "Beginner"
 publishDate: 2026-05-20
-lastUpdated: 2026-10-25T12:00:00Z
+lastUpdated: 2026-10-26T12:00:00Z
 tags: ["specialization", "beginner", "vanguard", "demolitionist", "bulwark", "field-medic", "tech-operator", "best specialization"]
 description: "Vanguard, Demolitionist, Bulwark, Field Medic, or Tech Operator: how to pick the right specialization in Division Resurgence."
 author: "RapidF5"
@@ -265,10 +265,12 @@ Yes. You can switch your active specialization freely. Your focus progress and c
 Leveling a second one isn't wasted time, either. Oldfartsgaming capped Demolitionist, then started running his dailies on Tech Operator and trying out Bulwark, and says the extra levels give skill points and push up your SHD level. By the time he recorded his October 11 video he had almost every node on his Demolitionist tree, so your early point choices aren't a life sentence. In [an April video](https://www.youtube.com/watch?v=phHiYGujrRQ), AgentHuntzman showed that the tree had a reset button that refunded everything he'd put in, credits and materials included, so trying a different path cost him nothing. More in our [endgame tips](/guides/division-resurgence-endgame-tips/).
 
 ### What is the best specialization for beginners in The Division Resurgence?
-**Vanguard**. It has the clearest damage loop, the most intuitive playstyle, and plenty of builds available to copy. You won't paint yourself into a corner and you'll understand the game's combat fundamentals before you start optimizing a harder spec. Whatever you pick, the opening hours are friendlier than they used to be: Season 2 Phase 2 reduced enemy health in the tutorial and in your first playthrough of Main Missions 1 to 3. For a first build, TikTokAndy's [Any-Weapon Commando](/builds/any-weapon-commando-beginner-vanguard-build-tiktokandy/) is made for whatever gun you happen to have.
+**Vanguard**. It has the clearest damage loop, the most intuitive playstyle, and plenty of builds available to copy. You won't paint yourself into a corner and you'll understand the game's combat fundamentals before you start optimizing a harder spec. Whatever you pick, the opening hours are friendlier than they used to be: Season 2 Phase 2 reduced enemy health in the tutorial and in your first playthrough of Main Missions 1 to 3. For a first build, TikTokAndy's [Any-Weapon Commando](/builds/any-weapon-commando-beginner-vanguard-build-tiktokandy/) is made for whatever gun you happen to have. Died Again Gaming's advice on his [October 25 stream](https://www.youtube.com/watch?v=tn4ME4MVGyY) points the same way: don't sweat your weapons early. He says the gun only starts to matter on Heroic and Legendary, so until then use whatever has good attributes and talents, and even a tank or skill spec does fine on a full Firepower build while you level.
 
 ### Does specialization affect my gear drops?
 Yes, as far as we can tell: when you purchase certain items from vendors like the **Warlord** exotic AR at the Dark Zone vendor, the rolls on that item are influenced by your active specialization's primary stat. It isn't in any tooltip and Ubisoft hasn't documented it, but that's what we saw when we wrote this. Switch to a **Vanguard or Firepower-focused spec** before buying from the DZ vendor or you will get Engineering rolls on a Firepower weapon and spend a lot of time processing that quietly. The DZ vendor's exotic shelf has changed since, too: Scorpio joined in Season 2 Phase 1, and Season 2 Phase 2 cut DZ vendor exotics from 17,500 to 15,000 DZ Credits because they no longer ship with pre-equipped exotic mods.
+
+Skill mods follow your spec as well. Died Again Gaming says the Dark Zone daily's skill mods mostly come for the specialization you have equipped, and that the skill mods from Lone Wolf rewards go to whichever spec is equipped when you claim them. Switch first, then collect. Details in our [Dark Zone guide](/guides/division-resurgence-dark-zone-guide/) and [endgame tips](/guides/division-resurgence-endgame-tips/).
 
 ### Is Tactical Pharma a specialization?
 Tactical Pharma is a **focus of Field Medic**, not a standalone specialization. It's the offensive/Corrosion path of Field Medic. If you picked Field Medic and went Tactical Pharma, you picked Field Medic. Don't let the mod menu confuse you either: Ubisoft's patch notes also use "Tactical Pharma" as the name of a Skill Mod Combo Set family (Armor Strengthening is one of them).

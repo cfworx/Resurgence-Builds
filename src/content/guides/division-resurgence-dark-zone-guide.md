@@ -2,7 +2,7 @@
 title: "Division Resurgence Dark Zone Guide"
 category: "PvP"
 publishDate: 2026-10-25
-lastUpdated: 2026-10-25T12:00:00Z
+lastUpdated: 2026-10-26T12:00:00Z
 tags: ["Dark Zone", "PvP", "extraction", "Rogue", "Season 2"]
 description: "How the Division Resurgence Dark Zone works in Season 2: 20-minute runs, contamination, extraction and the Smuggler, going Rogue, landmarks, DZ Credits and the vendor."
 featuredImage: "/images/season-roadmap.webp"
@@ -71,7 +71,7 @@ Contamination is the Dark Zone's way of saying "hurry up."
 - **Contaminated means unusable.** Dark Zone items can't be used on the regular map until they're extracted (AllThings.How).
 - **Die and you drop it.** Your backpack stays where you fell, and anyone can loot it.
 - **Loot is shared.** TikTokAndy says that when someone on your team opens a crate, everyone gets something, and ammo boxes refill the whole team.
-- **Mods follow your specialization.** AllThings.How says most of the skill mods that drop in the Dark Zone are tied to the specialization you have active, so switch before you go in.
+- **Mods follow your specialization.** AllThings.How says most of the skill mods that drop in the Dark Zone are tied to the specialization you have active, so switch before you go in. Died Again Gaming believes it's around 80 to 90 percent for the daily's skill mods, and switches to the spec he's leveling first.
 - **Tiers:** TikTokAndy says the level 40 Dark Zone gave him access to T0, T1 and T2 gear.
 - **North beats south.** In his experience the good loot is up north, and "you don't really get good stuff" in the south. The Q Building is "really all I want to be farming," he says.
 
@@ -97,6 +97,8 @@ The catch: **Rogue agents can cut the rope** and take what's on it. TikTokAndy g
 - **Take the second rope at the end.** AllThings.How says that if you don't extract yourself, you earn less DZ Intel and fewer DZ Credits from the run. So once your last bag is out late in the run, the ride home is worth taking.
 - **Avoid zones next to an active boss.** AllThings.How says players who missed the boss tend to camp nearby extractions.
 - **Turn on the turrets.** Extraction zones have turrets you can activate (AllThings.How lists DZ Intel as their cost), and TikTokAndy flips them on "just in case anybody rolls up on us."
+- **Use the wait.** Died Again Gaming's routine on his October 25 stream: fire the flare, then clear a nearby landmark while the helicopter is on its way, for a few extra DZ Credits and the occasional purple.
+- **Don't grab one more thing on your way out.** On the same stream he picked up an item right before taking the rope, and says the game won't let you extract yourself while you're carrying contaminated gear. Once your last bag is on the rope, the shiny thing on the floor stays on the floor.
 
 ---
 
@@ -133,7 +135,7 @@ The Q Building is the one TikTokAndy keeps coming back to; in his September 19 b
 
 ## DZ Credits, DZ Intel and the Vendor
 
-**DZ Credits**, per AllThings.How, come from killing NPCs, bosses, landmarks, looting and the small containers on the streets near landmarks, and you keep what you gathered even if you die. There's a weekly cap, and dismantling extracted skill mods adds credits on top of it. Since [Season 1 Phase 2](/patch-notes/phase-2-patch-notes/), dismantling a skill mod pays **15, 75 or 750 DZ Credits** for blue, purple or gold.
+**DZ Credits**, per AllThings.How, come from killing NPCs, bosses, landmarks, looting and the small containers on the streets near landmarks, and you keep what you gathered even if you die. There's a weekly cap, and dismantling extracted skill mods adds credits on top of it. Since [Season 1 Phase 2](/patch-notes/phase-2-patch-notes/), dismantling a skill mod pays **15, 75 or 750 DZ Credits** for blue, purple or gold. The word that matters is extracted: Died Again Gaming notes that breaking skill mods down inside the Dark Zone doesn't pay out.
 
 **DZ Intel** is spent inside the Dark Zone: on extraction turrets, the Smuggler and the hacked terminal (AllThings.How).
 
@@ -147,7 +149,7 @@ The Q Building is the one TikTokAndy keeps coming back to; in his September 19 b
 
 Our [exotic weapons list](/guides/division-resurgence-exotic-weapons-list-2026/) tracks which exotics the vendor sells.
 
-**Dark Zone quests:** Dark Zone daily quests reward skill mods since Season 2 Phase 2, which makes the Dark Zone the skill mod farm (more in our [mod farming guide](/guides/how-to-farm-purple-gold-mods/)). Oldfartsgaming's tip for the daily: team up. In his experience a lot of the players you group with are further along than you and carry the run at a high pace, and before you know it you're extracting with decent gear and a daily ticked off. His full routine is in our [endgame tips](/guides/division-resurgence-endgame-tips/). Some Dark Zone missions pay Tactical Augmentations too: patch [1.1.2.2](/patch-notes/patch-1-1-2-2/) fixed the Shotgun Tactical Augmentation reward for the "Ringleaders" mission.
+**Dark Zone quests:** Dark Zone daily quests reward skill mods since Season 2 Phase 2, which makes the Dark Zone the skill mod farm (more in our [mod farming guide](/guides/how-to-farm-purple-gold-mods/)). Died Again Gaming says the daily guarantees one gold and one purple skill mod, so seven of each a week if you never skip it, and that you don't need loot to finish it: fire the flare, leave once the helicopter gets there, and it counts. Oldfartsgaming's tip for the daily: team up. In his experience a lot of the players you group with are further along than you and carry the run at a high pace, and before you know it you're extracting with decent gear and a daily ticked off. His full routine is in our [endgame tips](/guides/division-resurgence-endgame-tips/). Some Dark Zone missions pay Tactical Augmentations too: patch [1.1.2.2](/patch-notes/patch-1-1-2-2/) fixed the Shotgun Tactical Augmentation reward for the "Ringleaders" mission.
 
 ---
 
@@ -193,3 +195,4 @@ For the tanky side of that meta, see our [Bulwark Breacher](/builds/bulwark-brea
 - [TikTokAndy: Toxic Pharma Sucks...PvP Is Even Worse... (YouTube, October 15, 2026)](https://www.youtube.com/watch?v=f20v8_cv9Ls)
 - [TikTokAndy: Silence of Death, Toxic Pharma Solo vs. Squads (YouTube, October 22, 2026)](https://www.youtube.com/watch?v=lbk6aUoOtds)
 - [Oldfartsgaming: 7 Things I Wish I Knew Before Endgame (YouTube, October 11, 2026)](https://www.youtube.com/watch?v=7JtJCeEE8NI)
+- [Died Again Gaming: Catching Up Before Weekly Reset, DAG LIVE (YouTube, October 25, 2026)](https://www.youtube.com/watch?v=tn4ME4MVGyY)
