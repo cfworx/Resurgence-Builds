@@ -2,7 +2,7 @@
 title: "Endgame Tips: What to Do After Level 40"
 category: "Endgame"
 publishDate: 2026-10-24
-lastUpdated: 2026-10-25T12:00:00Z
+lastUpdated: 2026-10-26T12:00:00Z
 tags: ["endgame", "Season 2", "farming", "build-guide", "os-protocol"]
 description: "What to do after level 40 in Division Resurgence Season 2: daily quest rewards, upgrade rules, SHD level, proficiency, crafting and creator tips."
 featuredImage: "/images/division-resurgence-shd-manual-progression-guide.webp"
@@ -56,6 +56,8 @@ Below, Ubisoft's confirmed changes come first. Then the best advice from Oldfart
 
 Phase 2 also increased weapon and gear rewards from replaying Main Missions, which makes the Main Mission daily a little sweeter.
 
+What the dailies pay in practice, going by Died Again Gaming's [October 25 stream](https://www.youtube.com/watch?v=tn4ME4MVGyY): the **Hostile Nest** daily guarantees **two gold weapon or gear mods**, the **Main Mission** daily gives **three items** and a **Weapon Kill** daily **two weapons** of the quest's type (two assault rifles for an AR quest), any of which can be T2, and the **Dark Zone** daily guarantees **one gold and one purple skill mod**. That's seven gold skill mods a week for the price of showing up.
+
 How Oldfartsgaming runs his dailies:
 
 - He does them every day and says they feed his weekly quests too, so he lines up activities like mission replays, Dark Zone missions and Hostile Nests to tick daily and weekly boxes at once.
@@ -79,7 +81,7 @@ From Ubisoft's Season 1 Phase 2, Season 2 Phase 1 and Season 2 Phase 2 notes:
 - **Dark Zone vendor:** a random exotic mod crate for each exotic weapon every week (2,500 DZ Credits each), exotic weapons at 15,000 DZ Credits (down from 17,500), the Scorpio (added in Season 2 Phase 1) and a weekly Random Tactical Augmentation Module Crate (added in Season 1 Phase 2).
 - **Weekly Bounties:** new mission sets arrived with Season 2 Phase 1.
 
-Creator layer: Oldfartsgaming buys the vendor's weekly upgrade materials every week, both purple items included, plus the maximum of everything else, even the green stuff. He says you'll need all of it.
+Creator layer: Oldfartsgaming buys the vendor's weekly upgrade materials every week, both purple items included, plus the maximum of everything else, even the green stuff. He says you'll need all of it. And the Weekly Bounty looks better than it did in April, when AgentHuntzman described a chance of gold: Died Again Gaming says the key rewards for the fourth boss now guarantee a **gold OS Protocol**, so that's one a week. He calls it a really good change, and we're not going to argue with a free gold.
 
 ## Rule 1: stop upgrading everything
 
@@ -164,7 +166,7 @@ GGReborn's other gear mistakes deserve a line each: judging gear by level and ra
 
 ## Rule 8: learn the missions you'll farm
 
-Some missions you'll run dozens of times, so a few creator notes go a long way. Most of these come from TikTokAndy's runs (the Lone Wolf notes add Ubisoft's patch notes and GGReborn's tests); the full routes are on the build pages linked below.
+Some missions you'll run dozens of times, so a few creator notes go a long way. Most of these come from TikTokAndy's runs (the Lone Wolf notes add Ubisoft's patch notes, GGReborn's tests and a Died Again Gaming tip); the full routes are on the build pages linked below.
 
 ### Chinatown (Heroic)
 
@@ -192,6 +194,7 @@ For the finale his two videos disagree: solo with a shotgun he fights from a noo
 - **The format:** TikTokAndy counts 20 floors with up to six stars each, 120 stars in all. Officially, it refreshes every three weeks (Ubisoft fixed the schedule in [patch 1.2.1](/patch-notes/patch-1-2-1/)), and since a [June 26 hotfix](/news/server-hotfix-june-26-2026/) the timer starts as soon as an enemy takes damage, even if the doors are still closed.
 - **There's a leaderboard:** TikTokAndy says his floor 20 run (his video calls it "Lone Star Stage 20") placed third in NA, and he didn't know the leaderboard existed until someone told him.
 - **His floor 20 tip:** the boss sometimes parks at one spot (about one run in ten, he estimates). When it does, crouch on the boxes beside it, go for headshots, and save Tactical Link for the wave that follows.
+- **Claim on the spec you want:** the floor rewards include gold skill mods (Died Again Gaming counts two, one of them on floor 16), and he says they come for whichever specialization you have equipped when you claim them. So clear the floors on whatever you play best, then switch to the spec whose skill mods you need before you collect.
 - **A good test bench:** GGReborn uses Lone Wolf runs to compare builds, which is how he tested stat setups and OS Protocols on our [Tactical Pharma Season 2](/builds/tactical-pharma-season-2-build-ggreborn/) page.
 
 ### Heroic Hostile Nests and the Dark Zone
@@ -229,3 +232,4 @@ The Heroic Hostile Nest with a named boss is the mod farm in our [mod farming gu
 - [TikTokAndy: Most Overpowered Team Healer Build, Striker + Aegis (YouTube, October 10, 2026)](https://www.youtube.com/watch?v=VHKfmW4BtEk)
 - [GGReborn: How Stats REALLY Work, Testing 3 Builds (YouTube, October 22, 2026)](https://www.youtube.com/watch?v=f1q44KbdS6g)
 - [GGReborn: Which OS Protocol Is BEST? Testing 4 Protocols (YouTube, October 23, 2026)](https://www.youtube.com/watch?v=Kz9YlTUl_1s)
+- [Died Again Gaming: Catching Up Before Weekly Reset, DAG LIVE (YouTube, October 25, 2026)](https://www.youtube.com/watch?v=tn4ME4MVGyY)
