@@ -284,7 +284,7 @@ This build lets a tank-medic carry under-geared teammates through content they c
 | Backpack talent | Rock Solid (II preferred). +15-20% DR on receiving healing. |
 | AUG A3 Para XS (T2 SMG) | Steady Suppression + Precision Support. Received Healing + Skill Multi-Shot bonus attributes. |
 | M60 (T2 LMG) | Sadistic Shield + Conceited. Max Health + Armor bonus attributes. |
-| Pummeling Shield OS | Weekly bounty first clear (Gold OS guaranteed). Max to Level 50 for +45% Toughness. |
+| Pummeling Shield OS | Weekly Bounties or the OS Protocol Sealed Cache. When this was written, a gold from the bounties was rare (Died Again Gaming guessed under 5 percent in June); by October he says the fourth boss's Key Rewards guarantee a random gold each week. Max to Level 50 for +45% Toughness. |
 
 ---
 

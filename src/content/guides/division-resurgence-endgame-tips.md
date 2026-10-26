@@ -44,6 +44,8 @@ Below, Ubisoft's confirmed changes come first. Then the best advice from Oldfart
 - **Tier 2 chances on dailies:** Weapon Kill quests reward weapons matching the quest's weapon type, and Main Mission quests reward random weapons and gear, both "with chances of T2 at level 40" (Season 2 Phase 2).
 - **No daily XP cap:** Phase 2 removed it "to support longer progression sessions."
 
+One unofficial extra: Died Again Gaming says XP past 40 fills a gauge that pays out a Field Proficiency Cache, with two items and some resources. His were T0 in June, and he didn't know whether they can roll T2. With the daily XP cap gone you'll open more of them, so let us know if one ever does.
+
 ## Your daily routine
 
 | Daily quest | Reward (Season 2 Phase 2) | Why you care at 40 |
@@ -119,8 +121,19 @@ Oldfartsgaming says upgrading a decent OS Protocol that fits his build as far as
 ### Weapon proficiency
 
 - **Oldfartsgaming:** each proficiency level a weapon earns in the Armory adds a little weapon damage and skill intensity on his account, from tasks like neutralizing enemies shortly after hitting weak points. Using a weapon for your dailies counts toward its tasks, he says, so the game rewards rotating weapons.
+- **Died Again Gaming:** the payoff has a number. In his June 15 video the Armory shows its own proficiency level out of 100, and he says each level adds **0.2% Weapon Damage and 0.2% Skill Intensity**, so maxing it is worth 20% of each (he was at level 88, on 17.6%). Proficiency also gates Tier 2 upgrades: see [turning a T0 or T1 weapon into T2](/guides/division-resurgence-gear-farming-guide/).
 - **GGReborn:** not focusing on proficiency from the beginning is the second mistake on his list.
 - **Official:** Ubisoft has fixed several proficiency bugs. Season 2 Phase 2 fixed LMG Proficiency Quests counting kills from any weapon and Armory progression levels staying locked, and the bug reporter marked two proficiency reports Done in August and September ([details](/news/bug-reporter-fixes-september-22/)).
+
+Died Again Gaming's grinding tips, from June. Task wording may have moved since, so read each task in the Armory:
+
+- **Farm with the gun you're leveling.** Run nests, world activities and bounties with a weapon that still needs levels, then swap. Rifles and marksman rifles suit open world activities, where you get the range their tasks want. He says enemies five or more levels below you don't count.
+- **Assists count.** Most tasks take a kill or an assist, so in a group, tag every enemy you can before going for kills.
+- **Hip fire includes cover and shields.** Shooting from cover without aiming, or with a Bulwark shield up, counted as hip fire for him.
+- **Aim tasks mean the scope.** For rifles and marksman rifles, only first-person scope view with a 2x or stronger optic (4x for marksman rifles) counted reliably for him. Third-person aiming was hit and miss.
+- **Weak points include damage type.** Headshots and the satchels, gas cans and ammo pouches enemies carry count, and so does hitting an armor bar with the matching damage type. He saves those tasks for Challenging or higher, where armor bars with a weakness show up.
+- **Do level 3 early.** On most weapon classes it asks you to upgrade the weapon. Below 40 that costs common materials. At 40 the next upgrade wants a Superior (purple) component, so his workaround is to craft a level 1 copy and upgrade that. Slow, since crafts take hours, but it saves the purple.
+- **Exotics have their own tasks.** His examples: Lady Death wants 10,000 Breathe Free stacks (swap away and back to rebuild them), the Strawberry Milkshake wants Anarchy triggered 1,000 times, and the Warlord's level 8 wants agent kills or assists, which means PvP.
 
 ### A second specialization
 
@@ -138,7 +151,7 @@ GGReborn's list includes treating his clan as a purely social thing and ignoring
 
 - Base crafting time is **15 hours** since Season 2 Phase 1 (down from 24), and the clan duration reduction tops out at **50%**, so a fully boosted craft takes **7.5 hours**.
 - Crafting levels now come faster early and slower later, with fewer crafts needed overall to reach max level, and rarities per level went up slightly, so purple items show up earlier (Season 2 Phase 1).
-- Oldfartsgaming points out that crafting high-end items also earns commendations toward your SHD level.
+- Oldfartsgaming points out that crafting high-end items also earns commendations toward your SHD level. Died Again Gaming's May checklist for those: take at least one item in every weapon class and gear slot to crafting rank 10, which a clan bench makes much quicker. The pure-luck one is crafting three high-end items in a row. Season 2 Phase 1 says fewer crafts are now needed to reach max crafting level, so it may go faster than it did for him.
 
 Our tip: start a craft before bed and let the bench take the night shift.
 
@@ -161,6 +174,8 @@ GGReborn's list closes with the one we'd tattoo on every fresh level 40: ask you
 | SHD Keys | Weekly Rewards and Season 2 Phase 2 event rewards |
 
 One creator addition each: TikTokAndy says Elite missions are where he farms T2 guns, and AgentHuntzman runs a Heroic nest again right after he finishes it. Which mission leans toward which gear slot, and every other T2 source we know of, is in our [gear farming guide](/guides/division-resurgence-gear-farming-guide/).
+
+Not sure where something comes from? Highlight it and tap **Find**. Died Again Gaming uses it for everything from specialization upgrade materials to Enhancement Kits. Treat it as a lead, not gospel: Ubisoft fixed some incorrect Find entries in [Season 1 Phase 2](/patch-notes/phase-2-patch-notes/).
 
 GGReborn's other gear mistakes deserve a line each: judging gear by level and rarity instead of its set, talents and attributes, and not checking the character stats screen to see whether your build actually gets what you think it does. A higher Power Score isn't the same as a better build, which our [hidden mechanics guide](/guides/hidden-mechanics-explained/) explains at length.
 
@@ -233,4 +248,8 @@ The Heroic Hostile Nest with a named boss is the mod farm in our [mod farming gu
 - [GGReborn: How Stats REALLY Work, Testing 3 Builds (YouTube, October 22, 2026)](https://www.youtube.com/watch?v=f1q44KbdS6g)
 - [GGReborn: Which OS Protocol Is BEST? Testing 4 Protocols (YouTube, October 23, 2026)](https://www.youtube.com/watch?v=Kz9YlTUl_1s)
 - [Died Again Gaming: Nightmare Boss Event, Heroic Bosses Drop T2 Gear (YouTube, July 3, 2026)](https://www.youtube.com/watch?v=ZUGova0fSPs) (SHD Keys and OS Protocol caches)
+- [Died Again Gaming: Join a Clan Now (YouTube, May 28, 2026)](https://www.youtube.com/watch?v=R7MWFt4rSVM) (crafting commendations)
+- [Died Again Gaming: How to Farm, New Agent Guide to Level Up Fast (YouTube, June 4, 2026)](https://www.youtube.com/watch?v=OLJPNceH_jo)
+- [Died Again Gaming: Unlock 20% Damage, New Agent Guide to Proficiency (YouTube, June 15, 2026)](https://www.youtube.com/watch?v=p64B2L1FWDg)
+- [Died Again Gaming: T2 Gear, How To Get End Game Gear (YouTube, June 29, 2026)](https://www.youtube.com/watch?v=hUYSQNVTrDY) (Find, Field Proficiency Cache)
 - [Died Again Gaming: Catching Up Before Weekly Reset, DAG LIVE (YouTube, October 25, 2026)](https://www.youtube.com/watch?v=tn4ME4MVGyY)

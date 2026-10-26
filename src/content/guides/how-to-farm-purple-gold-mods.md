@@ -2,7 +2,7 @@
 title: "How to Farm Purple and Gold Mods"
 category: "Farming"
 publishDate: 2026-10-24
-lastUpdated: 2026-10-24T12:00:00Z
+lastUpdated: 2026-10-26T12:00:00Z
 tags: ["farming", "mods", "Season 2", "Exotic", "build-guide"]
 description: "Farm purple and gold weapon and gear mods in Division Resurgence Season 2: Hostile Nests, daily quests, exotic mod sources and TikTokAndy's method."
 featuredImage: "/images/division-resurgence-best-starter-builds.webp"
@@ -92,6 +92,16 @@ His loadout in the video is a Lightweight M4 with Vanguard's Tactical Link doing
 
 TikTokAndy names the nest but doesn't give a map spot, and since it comes and goes, we can't pin it for you. Our [interactive map](/division-resurgence-interactive-map/) has a **Hostile Nests** layer and a **Nest Investigations** layer: open Layers and tick both (they're off by default). Both are flagged as partial layers because the community is still mapping them, and neither shows which nest is Heroic on a given day. Use the map to learn the regular nest locations, and keep an eye out for the named-boss version.
 
+## Work the nest clock
+
+Regular nests run on a timer, and knowing it is most of the farm. This is from Died Again Gaming's June videos, recorded before Season 2 Phase 2 raised nest mod rewards, so the loot may be better now and the timers could have moved too:
+
+- **15-minute rotation.** Each nest pays its Key Rewards once, then not again until it respawns about 15 minutes later. Watch for the exclamation mark that shows they've reset.
+- **20 a day.** He says nest Key Rewards cap at 20 clears a day (open world activities cap at 10).
+- **His loop:** clear both active nests, do a few open world activities while they cool down, then go back. Normal nests take him under two minutes each.
+- **Challenging and Heroic nests** turn up some days and stay for 24 hours. Their Key Rewards pay once, but the cache at the end pays every run, so keep repeating them. In June the Challenging cache topped out at purple; the Heroic cache, and the bags and crates inside the Heroic nest, could drop gold.
+- **Bring Blast to Challenging nests.** Their enemies were usually Blast-weak for him, which fits TikTokAndy's Blast advice for his Heroic nest above.
+
 ## Stack the daily quest on top
 
 Since Phase 2, **Hostile Nest daily quests reward weapon and gear mods**. Creator Oldfartsgaming says he always makes sure he has a Hostile Nest quest in his dailies, rerolling ("recycling") quests until one shows up. Do that, and a nest run pays out the nest's own loot plus the quest reward. While you're in the quest menu: Dark Zone dailies pay skill mods, and World Event dailies pay upgrade materials, which you'll need for the upgrade section below.
@@ -114,6 +124,7 @@ Farming purples is the easy part. Not wasting them is the skill. From Oldfartsga
 - **Max only the keepers.** He fully upgrades a mod when it has the stats his build wants (for his Engineering build, things like Skill Critical Damage plus Engineering) and skips the rest, saving materials for the next really good one.
 - **Save purple materials.** On gear, he says upgrading to level 40 is cheap, but going from 40 to 50 needs purple materials that are hard to find, and he regrets spending them on set pieces that weren't keepers.
 - **Dismantle, don't sell.** He dismantles mods instead of selling them, because you'll want the materials.
+- **Dismantle, don't feed.** Died Again Gaming (June 7) breaks spare mods down instead of feeding them straight into an upgrade, because a maxed clan dismantling machine raises the chance of extra materials by 60% (more in our [clan guide](/guides/division-resurgence-clan-guide/)). He also says dismantling a mod you've leveled gave back about 90% of what you put in, so leveling a purple with the right stats while you wait for its gold version doesn't cost much. We haven't checked that 90%, so test it on a cheap mod first.
 - **Buy the weekly materials.** He buys the vendor's weekly upgrade materials every week, in every rarity.
 
 TikTokAndy makes the same point in fewer words: spend your upgrades on your best mods and attachments. And one official footnote: if you love a weapon mod from before August 5, leveling it updates its growth to the new Season 2 values, per Ubisoft's rework notes.
@@ -148,5 +159,7 @@ Our suggestion, built from the official sources above plus the creator tips:
 - [Ubisoft Help Center: Patch Note, Season 1 Phase 2](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2511-patch-note---season-1-phase-2/)
 - [Ubisoft Help Center: Drop rates](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2522-drop-rates/)
 - [TikTokAndy: UNLIMITED Purple & Gold Mods & Weapon Attachments (YouTube, September 26, 2026)](https://www.youtube.com/watch?v=UJTNo_5nQA0)
+- [Died Again Gaming: How to Farm, New Agent Guide to Level Up Fast (YouTube, June 4, 2026)](https://www.youtube.com/watch?v=OLJPNceH_jo) (the nest clock)
+- [Died Again Gaming: Gear and Weapon Mods, New Agent Guide (YouTube, June 7, 2026)](https://www.youtube.com/watch?v=uUt10JSnr7Q)
 - [Oldfartsgaming: 7 Things I Wish I Knew Before Endgame (YouTube, October 11, 2026)](https://www.youtube.com/watch?v=7JtJCeEE8NI)
 - [The Division Wiki: New York City community map](https://thedivision.fandom.com/wiki/Map:Tom_Clancy%27s_The_Division_Resurgence/New_York_City) (source of our map's nest markers, CC BY-SA 3.0)

@@ -16,6 +16,8 @@ videoChannel: "AgentHuntzman"
 faqs:
   - question: "Where do you farm Tier 2 gear in Division Resurgence?"
     answer: "At level 40, in a few places. Ubisoft's Season 2 Phase 2 notes give Weapon Kill and Main Mission daily quests a chance of T2. Creators point at Elite missions (AgentHuntzman calls them the best place, and TikTokAndy says the week's Elite Legendary mission drops T2 guns quite regularly), the weekly Elite Mission Challenge chest, and Legendary Precious Cargo. In the Dark Zone, AgentHuntzman calls the Heroic landmarks rare for T2 but rates the Heroic enemy leader's cache as the best spot there. RNG keeps its own schedule."
+  - question: "Can you upgrade a T1 weapon to T2 in Division Resurgence?"
+    answer: "Yes, with an Enhancement Kit in the Armory's Power Tier Enhancement screen. Died Again Gaming says you first need six weapons of the target tier at max proficiency, and that one kit covers any jump, even T0 to T2. Exotics take an Exotic Weapon Enhancement Kit, which Ubisoft stocks at the Dark Zone vendor. Proficiency grind first, shiny T2 second."
   - question: "When do you start getting Tier 1 gear?"
     answer: "Around Challenging difficulty, according to AgentHuntzman, who guesses that's somewhere near level 30 to 36, and more often once you can run Heroic missions. Story missions mostly hand out T0. Oldfartsgaming says upgrading to item level 40 is cheap; save the purple materials for pieces you'll keep."
   - question: "Which mission drops which gear in Division Resurgence?"
@@ -47,6 +49,8 @@ AgentHuntzman's rule of thumb for the climb:
 - **T0** comes from the story. It's not the worst gear in the game, he says, just not what you want to keep. It gets replaced constantly while you level, so don't invest in it.
 - **T1** starts dropping around Challenging difficulty (he puts that near level 30 to 36, by his own estimate) and turns up much more often on Heroic. This is the tier to build your first real set on.
 - **T2** is the final tier for now, and it's what endgame builds are made of. His advice: get your build working on T1 before you start chasing T2.
+
+One difference the tooltip won't shout about: mod slots. Died Again Gaming (June 7) counts one mod slot on T0 gear and two from T1 up, and four on T0 weapons against five on T1 and T2. So a T0 piece with slightly better stats usually loses to a T1 once that extra slot is filled.
 
 Don't judge any of it by the number on the item. A T1 piece from the right set with the right stats beats a T2 piece with the wrong ones, which our [hidden mechanics guide](/guides/hidden-mechanics-explained/) explains at length.
 
@@ -86,14 +90,29 @@ Season 2 Phase 2 helps here too: Ubisoft increased the weapon and gear rewards f
 | Weapon Kill daily quests | Official (Season 2 Phase 2): weapons of the quest's weapon type, "with chances of T2 at level 40" |
 | Main Mission daily quests | Official (Season 2 Phase 2): random weapons and gear, same T2 chance at level 40 |
 | Elite missions | "The best place" for T2, per AgentHuntzman. TikTokAndy says the week's Elite Legendary mission drops T2 guns "quite regularly" |
-| Elite Mission Challenge chest (weekly) | Official: High-End Gear and Weapon Selection Crates (Season 1 Phase 3 notes), plus one random exotic mod since Season 2 Phase 1. AgentHuntzman said in June that you can claim it twice a week by finishing the mission twice, for two T2 pieces in all |
+| Elite Mission Challenge chest (weekly) | Official: High-End Gear and Weapon Selection Crates (Season 1 Phase 3 notes), plus one random exotic mod since Season 2 Phase 1. AgentHuntzman and Died Again Gaming both said in June that you can claim it twice a week by finishing the mission twice, and Died Again Gaming says each chest holds two T2 pieces, so that's four a week. He also says the Elite reward pool is T2 only, and that regular enemies in the mission can drop it too, not just the bosses |
 | Legendary missions | TikTokAndy's solo Legendary Precious Cargo run ended with "a bunch of T2 gear" |
-| Dark Zone Heroic landmarks | Rare. AgentHuntzman says the Q Building, the Heroic landmark, gives the most, and by June he'd had two T2 pieces from it |
+| Lone Wolf Challenge | One-time floor rewards. Died Again Gaming spotted random T2 gear among them in June and again on his October 25 stream. Officially the challenge refreshes every three weeks ([patch 1.2.1](/patch-notes/patch-1-2-1/)), so it's a top-up, not a farm |
+| Dark Zone Heroic landmarks | Rare. AgentHuntzman says the Q Building, the Heroic landmark, gives the most, and by June he'd had two T2 pieces from it. Died Again Gaming (June) calls it a very small chance |
 | Dark Zone enemy leaders | AgentHuntzman calls the Heroic enemy leader and his cache the best Dark Zone farm for it |
 
 **About that Power Score requirement.** AgentHuntzman worked from a recommended 19.2k Power Score for Elite missions in June. Died Again Gaming put Elites at "at least 19.2" in early July, and Heroic missions at about 15,000 to 16,000. The game's own tooltip explains what the number means: below the recommended score, an activity is very hard; above it, it plays at the expected difficulty; far above it, it gets much easier. You can go in under, AgentHuntzman says, but only with your stats close to perfect.
 
 The Dark Zone side of this (contamination, extraction, what the Q Building is) is in our [Dark Zone guide](/guides/division-resurgence-dark-zone-guide/). TikTokAndy says the level 40 Dark Zone is where he got access to T0, T1 and T2 gear.
+
+---
+
+## Turning a T0 or T1 Weapon Into T2
+
+You don't have to wait for a T2 copy of your favorite gun to drop. The Armory can raise a weapon's tier with an **Enhancement Kit**. Ubisoft's own fixes confirm the pieces exist: Armory levels hand out enhancement kits (the [October 14 hotfix](/patch-notes/october-2026-hotfixes/) fixed levels that displayed two but gave one), and the official bug reporter tracked a blank "T2 Upgrade Window For Exotic Weapons" until marking it Done on September 22. The rules below come from Died Again Gaming's June 29 walkthrough, so they're one creator's reading from before Season 2:
+
+- **Where:** open the weapon in the Armory and go to **Power Tier Enhancement**. One kit does the job, he says, whether you're going T0 to T1, T1 to T2 or T0 straight to T2.
+- **The gate:** first you need **six weapons of the target tier at max proficiency (level 10)**. Six maxed T1 guns open T0 to T1, and six maxed T2 guns open T2. Any weapon class counts, so keep the T2 guns that drop, even the ugly ones, and level them.
+- **The bonus:** once you enhance a weapon, he says future drops of that gun come at the new tier. His advice is to spend kits on your favorite guns instead of hoarding them.
+- **Kits:** he gets them from the weekly quest and from the Armory proficiency level rewards. In June he read the later Armory levels as paying two kits each, but Ubisoft's October 14 fix says some levels displayed 2 while giving 1, so plan on one.
+- **Exotics:** he believes they all drop as T1 (his Scorpio did in June). They need an **Exotic Weapon Enhancement Kit** plus the same six maxed T2 guns, and Ubisoft's notes list those kits in the Dark Zone vendor's stock (one added in Season 1 Phase 2, another in Season 2 Phase 1). Enhance an exotic, he says, and later copies drop at T2 too.
+
+Short version: proficiency isn't only a damage bonus, it's the key to the T2 door. Our [endgame tips](/guides/division-resurgence-endgame-tips/) cover the proficiency grind.
 
 ---
 
@@ -149,3 +168,7 @@ Where to get them: Heroic Hostile Nests. His trick is to run the nest again as s
 - [Oldfartsgaming: 7 Things I Wish I Knew Before Endgame (YouTube, October 11, 2026)](https://www.youtube.com/watch?v=7JtJCeEE8NI)
 - [GGReborn: Why Your Division Resurgence Gear Build Is Failing You (YouTube, September 29, 2026)](https://www.youtube.com/watch?v=wFqepeXdCTs)
 - [Died Again Gaming: Nightmare Boss Event, Heroic Bosses Drop T2 Gear (YouTube, July 3, 2026)](https://www.youtube.com/watch?v=ZUGova0fSPs) (Power Score for Heroic and Elite missions)
+- [Died Again Gaming: Gear and Weapon Mods, New Agent Guide (YouTube, June 7, 2026)](https://www.youtube.com/watch?v=uUt10JSnr7Q) (mod slots by tier)
+- [Died Again Gaming: T2 Gear, How To Get End Game Gear (YouTube, June 29, 2026)](https://www.youtube.com/watch?v=hUYSQNVTrDY) (Elite chests, enhancement kits)
+- [Died Again Gaming: Catching Up Before Weekly Reset, DAG LIVE (YouTube, October 25, 2026)](https://www.youtube.com/watch?v=tn4ME4MVGyY) (Lone Wolf rewards)
+- Our [October 2026 hotfixes](/patch-notes/october-2026-hotfixes/) (Armory enhancement kit display) and [bug reporter fixes](/news/bug-reporter-fixes-september-22/) (T2 upgrade window for exotics)
