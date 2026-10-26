@@ -40,6 +40,16 @@ const suppressAds = noAds || noindex || !!robots;
   <meta charset="utf-8" />
   <meta name="msvalidate.01" content="BE91A714DA465B973961FB903E416D0B" />
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, shrink-to-fit=no" />
+  {GA4_ID && (
+    <>
+      {/* Google tag (gtag.js), as Google gives it: high in <head>, gtag() global so consent mode and events can call it. */}
+      <script is:inline async src={`https://www.googletagmanager.com/gtag/js?id=${GA4_ID}`}></script>
+      <script is:inline set:html={`window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', '${GA4_ID}');`}></script>
+    </>
+  )}
   <meta name="theme-color" content="#0D0D0F" />
   <meta name="color-scheme" content="dark" />
   <meta name="format-detection" content="telephone=no" />
@@ -76,18 +86,6 @@ const suppressAds = noAds || noindex || !!robots;
   />
 
   <slot name="head" />
-
-  {GA4_ID && (
-    <>
-      <script is:inline async src={`https://www.googletagmanager.com/gtag/js?id=${GA4_ID}`}></script>
-      <script is:inline define:vars={{ GA4_ID }}>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){ dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', GA4_ID);
-      </script>
-    </>
-  )}
 
   {!suppressAds && (
     <script is:inline async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5813932024666862" crossorigin="anonymous"></script>

@@ -39,4 +39,4 @@ export const DATABASE_UPDATED = '2026-10-25';
  * needs GA4 running about 30 days before applying. Paste the ID from the GA4 property's
  * Admin > Data streams > Web stream; set the property's time zone to New York, as Mediavine asks.
  */
-export const GA4_ID = '';
+export const GA4_ID = 'G-HWT2GX34EX'; // live since 2026-10-26

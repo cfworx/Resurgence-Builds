@@ -6,7 +6,7 @@ import { GA4_ID } from '../data/site-config';
 <BaseLayout noAds title="Privacy Policy" description="Privacy Policy for Resurgence Builds — how we handle your data, cookies, and third-party advertising." breadcrumbs={[{ name: 'Privacy Policy', url: '/privacy/' }]}>
   <div class="container section content-width">
     <h1 class="heading-accent">Privacy Policy</h1>
-    <p style="color:var(--ink-muted);">Last updated: May 29, 2026</p>
+    <p style="color:var(--ink-muted);">Last updated: {GA4_ID ? 'October 26, 2026' : 'May 29, 2026'}</p>
     <div class="prose">
       <h2>Introduction</h2>
       <p>Resurgence Builds ("we," "our," or "us") operates the website resurgencebuilds.com. This Privacy Policy explains how we collect, use, and protect your information when you visit our site.</p>
@@ -14,7 +14,7 @@ import { GA4_ID } from '../data/site-config';
       <h2>Information We Collect</h2>
       <p>We do not directly collect personal data or require user accounts. However, third-party services integrated into our site may collect certain information automatically, including:</p>
       <ul>
-        <li>IP address and general location data (via Cloudflare and Google AdSense)</li>
+        <li>IP address and general location data (via {GA4_ID ? 'Cloudflare, Google AdSense and Google Analytics' : 'Cloudflare and Google AdSense'})</li>
         <li>Browser type, device type, and operating system</li>
         <li>Pages visited and time spent on the site</li>
         <li>Advertising interaction data (via Google AdSense)</li>
@@ -47,6 +47,14 @@ import { GA4_ID } from '../data/site-config';
       <ul>
         <li><strong>Google AdSense:</strong> Tracking cookies used to serve personalized advertisements based on your browsing history. These cookies may track your activity across multiple websites. You can manage your ad personalization preferences at <a href="https://adssettings.google.com" target="_blank" rel="noopener noreferrer">Google Ads Settings</a>.</li>
       </ul>
+      {GA4_ID && (
+        <>
+          <h3>Analytics Cookies</h3>
+          <ul>
+            <li><strong>Google Analytics:</strong> Cookies that tell one visit from another and group page views into sessions, so we can count readers and see which pages they use. You can opt out with <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer">Google's opt-out browser add-on</a>.</li>
+          </ul>
+        </>
+      )}
 
       <h2>Third-Party Services</h2>
       <ul>
