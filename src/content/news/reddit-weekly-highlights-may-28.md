@@ -24,7 +24,7 @@ This week on r/thedivisionresurgence: a Cleaner defied gravity and moved to the 
 
 ---
 
-## 1. 💀 "Somebody Passed Out in Main HQ Waiting for Fixes"
+## 1. "Somebody Passed Out in Main HQ Waiting for Fixes"
 
 **u/Bruce_wayne____** · [Original post](https://www.reddit.com/r/thedivisionresurgence/comments/1th6iwh/somebody_passed_out_in_main_hq_waiting_for_fixes/) · May 19
 
@@ -36,7 +36,7 @@ Pour one out. He died doing what he loved, which was waiting. Good news, buddy: 
 
 ---
 
-## 2. 🕷️ "Spiderman Resurgence"
+## 2. "Spiderman Resurgence"
 
 **u/craig_cloud** · May 28
 
@@ -49,7 +49,7 @@ This is the Division Resurgence experience in one screenshot: the game will thro
 
 ---
 
-## 3. 🧹 "NYC Base Janitor Deserves Hazard Pay at This Point"
+## 3. "NYC Base Janitor Deserves Hazard Pay at This Point"
 
 **u/JA_Guyyy** · [Original post](https://www.reddit.com/r/thedivisionresurgence/comments/1tmnffz/nyc_base_janitor_deserves_hazard_pay_at_this_point/) · May 24
 
@@ -61,7 +61,7 @@ This NPC has been sweeping the same patch of concrete since launch day. He did n
 
 ---
 
-## 4. 📦 "Vendor Got Tired of Buying From Me"
+## 4. "Vendor Got Tired of Buying From Me"
 
 **u/NoPart7463** · [Original post](https://www.reddit.com/r/thedivisionresurgence/comments/1tj8azi/vendor_got_tired_of_buying_from_me/)
 
@@ -71,7 +71,7 @@ The vendor finally comes back online, and within minutes it throws up a popup as
 
 ---
 
-## 5. 🎰 "Why Are They Offering Me So Much for My Old Gun?"
+## 5. "Why Are They Offering Me So Much for My Old Gun?"
 
 **u/Recycled_Michael** · [Original post](https://www.reddit.com/r/thedivisionresurgence/comments/1the6bx/why_are_they_offering_me_so_much_for_my_old_gun/) · May 19
 
@@ -83,7 +83,7 @@ Nobody reported it. Nobody filed a ticket. We all just took the money and walked
 
 ---
 
-## 6. 🤖 "Devs, Can You Please Fix the Exposed Neck"
+## 6. "Devs, Can You Please Fix the Exposed Neck"
 
 **u/MuffDivers2_** · [Original post](https://www.reddit.com/r/thedivisionresurgence/comments/1tn41h3/devs_can_you_please_fix_the_exposed_neck_the/) · May 25
 
@@ -95,7 +95,7 @@ Forensic-level dad energy. He has a folder somewhere called "neck evidence" and 
 
 ---
 
-## 7. 🕵️ "Is It a Bug? Or They Saw an Opportunity?"
+## 7. "Is It a Bug? Or They Saw an Opportunity?"
 
 **u/Gullible_Secret8109** · [Original post](https://www.reddit.com/r/thedivisionresurgence/comments/1thnifd/is_it_a_bugg_or_they_saw_an_opportunity/) · May 19
 
@@ -109,7 +109,7 @@ For the record, it was a bug: Ubisoft's [patch 1.2.1 notes](/news/division-resur
 
 ---
 
-## 8. 📦 "These Augment Crates Have to Be Weighted, Right?"
+## 8. "These Augment Crates Have to Be Weighted, Right?"
 
 **u/X_CLOWNEY_X** · [Original post](https://www.reddit.com/r/thedivisionresurgence/comments/1tns80a/these_augment_crates_have_to_be_weighted_right/) · May 26
 
@@ -121,7 +121,7 @@ Five shotgun Tactical Augmentation Modules. Two of everything else. The RNG look
 
 ---
 
-## 9. 📖 "This Game Should Be Called Reading Simulator"
+## 9. "This Game Should Be Called Reading Simulator"
 
 **u/NoPart7463** · [Original post](https://www.reddit.com/r/thedivisionresurgence/comments/1tnzvbo/this_game_should_be_called_reading_simulator/) · May 26
 

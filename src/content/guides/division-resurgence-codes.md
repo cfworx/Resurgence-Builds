@@ -256,7 +256,7 @@ No traditional text-entry redeem codes have ever been publicly released for The 
 - [Steam launch rewards and Twitch Drops](/news/steam-launch-rewards-twitch-drops/)
 - [Season 2 Phase 2 patch notes](/patch-notes/season-2-phase-2/)
 - [Patch 1.2.1 Notes](/patch-notes/patch-1-2-1/)
-- [Season 1–3 Roadmap](/news/season-1-2-3-roadmap/)
+- [Season 1 to 3 Roadmap](/news/season-1-2-3-roadmap/)
 - [Which Specialization Should You Pick?](/guides/which-specialization-to-pick/)
 
 **Sources:**

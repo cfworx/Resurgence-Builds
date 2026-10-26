@@ -1,7 +1,7 @@
 ---
 title: "A New Enemy Speedrun and July Event Schedule"
 publishDate: 2026-07-10
-updatedDate: 2026-10-24
+updatedDate: 2026-10-26
 author: "RapidF5"
 tags: ["News", "Events", "Season 1", "Phase 3"]
 description: "Division Resurgence A New Enemy speedrun runs July 10 to 15, plus every Season 1 Phase 3 event and cosmetic draw live or coming in July 2026."
@@ -23,7 +23,7 @@ faqs:
 **The MM04 speedrun, "A New Enemy," runs from Friday, July 10 to Wednesday, July 15, 2026.** Ubisoft's pitch: "Race the clock and beat the new threat." Short, clear, and exactly what it says on the tin. It's one of six limited-time events in Season 1 Phase 3, and July is where most of them pile up: the Cleaner faction hunt ends July 21, Trigger Happy starts the same day, Liberty and Justice for All runs July 24 to 29, and a Season 2 Countdown login event kicks off July 27. The full calendar, cosmetic draws included, is below.
 
 > [!INFO] Update (October 2026)
-> A New Enemy came back as a Season 2 Phase 1 speedrun weekend from September 4 to 8, with rewards including the "Lightspeed Agent" title ([our September post](/news/a-new-enemy-speedrun-september-2026/)). We also covered [Liberty and Justice for All](/news/liberty-and-justice-speedrun-july-2026/) and [the Season 2 Countdown](/news/season-2-countdown-login-event/) when they started. The date question below got its answer on July 31: Ubisoft confirmed the Steam launch and Season 2 for August 5 ([details](/news/steam-release-date-august-5/)).
+> A New Enemy came back as a Season 2 Phase 1 speedrun weekend from September 4 to 8, with rewards including the "Lightspeed Agent" title ([our September post](/news/a-new-enemy-speedrun-september-2026/)). We also covered [Liberty and Justice for All](/news/liberty-and-justice-speedrun-july-2026/) and [the Season 2 Countdown](/news/season-2-countdown-login-event/) when they started. The date question below got its answer on July 30: Ubisoft announced the Steam launch and Season 2 for August 5 ([details](/news/steam-release-date-august-5/)).
 
 ## A New Enemy speedrun: what we know
 
@@ -81,7 +81,7 @@ If you only get weeknights, these are the dates that matter:
 
 We haven't timed A New Enemy ourselves, so there's no secret route in this post. The boring advice still works:
 
-- **Bring a build you already know.** A timed run is the worst place to learn a new rotation. Pick something from our [builds page](/builds/) that you can pilot half asleep, which, let's be honest, is how most of us play after 10 PM.
+- **Bring a build you already know.** A timed run is the worst place to learn a new rotation. Pick something from our [builds page](/builds/) that you can pilot half asleep, which is how most of us play after 10 PM anyway.
 - **Do a practice lap.** Learn where the fights are before the clock matters.
 - **Pick your squad and stick with it,** since squad-hopping for extra leaderboard rewards no longer works.
 

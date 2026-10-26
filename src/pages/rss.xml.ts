@@ -37,7 +37,7 @@ export async function GET(context: APIContext) {
   ].sort((a, b) => b.pubDate.getTime() - a.pubDate.getTime());
 
   return rss({
-    title: 'Resurgence Builds — Builds, Guides & News',
+    title: 'Resurgence Builds: Builds, Guides & News',
     description: 'Builds, guides, tier lists, and news for Tom Clancy\'s The Division Resurgence.',
     site: context.site!.toString(),
     items: allItems,

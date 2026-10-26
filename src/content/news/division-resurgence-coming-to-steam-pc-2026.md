@@ -217,7 +217,7 @@ A few replies raised regional and language access. **@8o_pt** asked for Arabic l
 
 ### Division 2 Comparisons
 
-**@Sr_Heretic** raised a thoughtful concern: "I hope this doesn't cause issues with Both Resurgence and The Division 2 being on the same platform and split players." Worth noting that these are different titles with different progression systems and player bases, so the overlap on Steam is more catalog adjacency than direct competition for shared progression. We will keep an eye on whether the team comments on this.
+**@Sr_Heretic** raised a thoughtful concern: "I hope this doesn't cause issues with Both Resurgence and The Division 2 being on the same platform and split players." These are different titles with different progression systems and player bases, so the overlap on Steam is more catalog adjacency than direct competition for shared progression. We will keep an eye on whether the team comments on this.
 
 ### Best One-Liner of the Thread
 

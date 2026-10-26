@@ -138,7 +138,7 @@ const howToLd = howTo ? {
       <div class="content-width">
         <YouTubeEmbed
           videoId={videoId}
-          title={videoTitle || `${title} — Video Guide`}
+          title={videoTitle || `${title}: Video Guide`}
           description={description}
           channelName={videoChannel}
         />
@@ -164,7 +164,7 @@ const howToLd = howTo ? {
     <article class="prose content-width">
       <slot />
 
-      <AdSenseUnit slotId="8102223000" label="Advertisement — in-article" />
+      <AdSenseUnit slotId="8102223000" label="Advertisement (in-article)" />
 
       <!-- 1. Share -->
       <div class="share-box">

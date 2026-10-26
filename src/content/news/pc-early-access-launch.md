@@ -40,7 +40,7 @@ Until April 28, the only routes to play on PC were unofficial emulators. As far 
 **Related Reading:**
 - [PC Emulator Comparison](/guides/division-resurgence-pc-emulator-comparison/): still relevant if you're on Mac
 - [Device Compatibility Guide](/guides/division-resurgence-device-compatibility/): full PC system requirements
-- [Season 1–3 Roadmap](/news/season-1-2-3-roadmap/): the full PC launch arrived with Season 2 on August 5
+- [Season 1 to 3 Roadmap](/news/season-1-2-3-roadmap/): the full PC launch arrived with Season 2 on August 5
 - [Patch 1.1.2 Notes](/patch-notes/patch-1-1-2/): the patch that shipped alongside this PC launch
 
 ## Sources

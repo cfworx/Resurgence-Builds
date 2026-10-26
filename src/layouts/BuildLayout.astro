@@ -155,7 +155,7 @@ const redditShareUrl = `https://reddit.com/submit?url=${encodeURIComponent(Astro
           {plannerHash && (
             <div style="margin-top: var(--sp-4); margin-bottom: var(--sp-2);">
               <a href={`/builder/#${plannerHash}`} class="btn btn--accent" style="width: 100%; text-align: center; justify-content: center; display: flex; font-weight: bold; font-size: 0.9em; padding: 10px; text-transform: uppercase; letter-spacing: 0.05em; background-color: var(--accent); color: #000; border-radius: 4px; box-shadow: 0 4px 12px rgba(255, 109, 16, 0.25); text-decoration: none;">
-                🛠️ Open in Build Planner
+                Open in Build Planner
               </a>
             </div>
           )}
@@ -186,7 +186,7 @@ const redditShareUrl = `https://reddit.com/submit?url=${encodeURIComponent(Astro
         {videoId && (
           <YouTubeEmbed
             videoId={videoId}
-            title={videoTitle || `${title} — Video Guide`}
+            title={videoTitle || `${title}: Video Guide`}
             description={description}
             channelName={videoChannel}
           />
@@ -212,7 +212,7 @@ const redditShareUrl = `https://reddit.com/submit?url=${encodeURIComponent(Astro
 
         <NewsletterSignup source="build" />
 
-        <AdSenseUnit slotId="8102223000" label="Advertisement — in-article" />
+        <AdSenseUnit slotId="8102223000" label="Advertisement (in-article)" />
 
         <GiscusComments />
 
@@ -237,7 +237,7 @@ const redditShareUrl = `https://reddit.com/submit?url=${encodeURIComponent(Astro
               <h2 style="font-size: var(--text-xl); margin-bottom: var(--sp-4);">Related Builds</h2>
               <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: var(--sp-2);">
                 {otherBuilds.map(build => (
-                  <li><a href={`/builds/${build.id}/`}>{build.data.title.split(' — ')[0]}</a> {build.data.title.includes(' — ') && <span style="color: var(--ink-muted); font-weight: 400;">— {build.data.title.split(' — ').slice(1).join(' — ')}</span>}</li>
+                  <li><a href={`/builds/${build.id}/`}>{build.data.title}</a></li>
                 ))}
               </ul>
             </nav>

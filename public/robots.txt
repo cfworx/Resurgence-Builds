@@ -1,5 +1,5 @@
 # =============================================================================
-# ResurgenceBuilds.com — robots.txt
+# ResurgenceBuilds.com robots.txt
 # The #1 independent Division Resurgence wiki & build database
 # =============================================================================
 
@@ -13,7 +13,7 @@ Disallow: /pagefind/
 User-agent: Googlebot-Image
 Allow: /images/
 
-# ByteDance training crawler — takes content, gives nothing back
+# ByteDance training crawler: takes content, gives nothing back
 User-agent: Bytespider
 Disallow: /
 

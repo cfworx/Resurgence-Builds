@@ -11,7 +11,7 @@ const breadcrumbs = [
   { name: 'Weapons', url: '/database/weapons/' }
 ];
 
-const title = "All Weapons — Division Resurgence Database";
+const title = "All Weapons: Division Resurgence Database";
 const description = "Complete Division Resurgence weapon database. Every Assault Rifle, SMG, LMG, Marksman Rifle, and Shotgun with RPM, magazine size, and damage type.";
 
 // Group by type
@@ -51,7 +51,7 @@ const faqs = [
       <div class="db-grid">
         {exoticWeapons.map((w: any, i: number) => (
             <article class="db-card exotic-card">
-              <a href={`/database/exotic-weapons/${w.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')}/`} class="db-card-full-link" aria-label={`${w.name} — View exotic weapon details`}></a>
+              <a href={`/database/exotic-weapons/${w.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')}/`} class="db-card-full-link" aria-label={`View ${w.name} exotic weapon details`}></a>
               {w.image && (
                 <div class="db-card__image-banner">
                   <img src={w.image} alt={`${w.name} Exotic ${w.type} in Division Resurgence`} width="400" height="120" loading={i < 3 ? 'eager' : 'lazy'} decoding="async" />
@@ -98,7 +98,7 @@ const faqs = [
       <div class="db-grid">
         {standardWeapons.filter((w: any) => w.type === type).map((w: any) => (
             <article class="db-card">
-              <a href={`/database/weapons/${w.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')}/`} class="db-card-full-link" aria-label={`${w.name} — View weapon details`}></a>
+              <a href={`/database/weapons/${w.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')}/`} class="db-card-full-link" aria-label={`View ${w.name} weapon details`}></a>
               {w.image && (
                 <div class="db-card__image-banner">
                   <img src={w.image} alt={`${w.name} ${w.type} in Division Resurgence`} width="400" height="120" loading="lazy" decoding="async" />
@@ -146,7 +146,7 @@ const faqs = [
     <p class="load-more-count" id="load-more-count"></p>
   </div>
 
-  <AdSenseUnit label="Advertisement — database category" />
+  <AdSenseUnit label="Advertisement (database category)" />
 </DatabaseLayout>
 
 <script>

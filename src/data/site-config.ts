@@ -1,5 +1,5 @@
 /**
- * Site-wide configuration — single source of truth for the current game
+ * Site-wide configuration: single source of truth for the current game
  * version label.
  *
  * NAMING RULE: Use Season/Phase naming ("Season 2", "Season 1 · Phase 3").

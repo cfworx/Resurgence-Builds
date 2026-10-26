@@ -1,5 +1,5 @@
 /* ============================================================
-   RESURGENCE MAP ENGINE — Interactive Manhattan Companion Map
+   RESURGENCE MAP ENGINE: Interactive Manhattan Companion Map
    Division Resurgence · resurgencebuilds.com
    Data: src/data/pois.json (built by scripts/build-map-data.mjs)
    ============================================================ */

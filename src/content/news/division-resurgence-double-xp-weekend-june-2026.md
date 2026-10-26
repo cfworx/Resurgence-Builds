@@ -40,7 +40,7 @@ The Division Resurgence team posted the following on X on June 12, 2026 at 9:00 
 
 The [announcement post](https://x.com/TheDivMobile/status/2065464140706038216) includes a promotional image showing agents walking through a New York street with a burning storefront in the background.
 
-The in-game notification (screenshot above) confirms the details directly: "From now until Sunday at midnight, all regular and Specialization Experience gains are doubled across all activities. Prepare your loadout and take full advantage of the increased experience — every activity counts!"
+The in-game notification (screenshot above) confirms the details directly: "From now until Sunday at midnight, all regular and Specialization Experience gains are doubled across all activities. Prepare your loadout and take full advantage of the increased experience." It signs off with "every activity counts!"
 
 ## What Is Confirmed
 
@@ -88,7 +88,7 @@ If you are one of those unhinged individuals who voluntarily queue into Conflict
 
 ### 4. Side Missions You Have Been Putting Off
 
-If you have stalled side missions in your log, this is the weekend to clean them up. Side mission XP is reliable and predictable. Worth noting: there are active bugs on the [public Trello known issues board](/news/division-resurgence-known-issues-trello-board-breakdown/) for certain side missions, including the Outpost Annihilation issue. If a mission stalls, do not bash your head on it. Pick a different one.
+If you have stalled side missions in your log, this is the weekend to clean them up. Side mission XP is reliable and predictable. One catch: there are active bugs on the [public Trello known issues board](/news/division-resurgence-known-issues-trello-board-breakdown/) for certain side missions, including the Outpost Annihilation issue. If a mission stalls, do not bash your head on it. Pick a different one.
 
 ### 5. Specialization-Tied Activities
 

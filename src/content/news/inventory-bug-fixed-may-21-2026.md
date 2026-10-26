@@ -31,7 +31,7 @@ Meanwhile, the community has gotten its hands on the new [exotic LMG](/database/
 
 ---
 
-## 🔧 LEAD STORY: The Inventory Bug Was an "Index-Out-of-Bounds" Error
+## LEAD STORY: The Inventory Bug Was an "Index-Out-of-Bounds" Error
 
 The symptom was terrifying: log in, open your inventory, and watch your god-rolled Lady Death simply cease to exist. 
 
@@ -49,7 +49,7 @@ If you lost a max-rolled Warlord last week, you'll need a support ticket for it.
 
 ---
 
-## 🍓 STRAWBERRY MILKSHAKE: The Pestilence Comparisons
+## STRAWBERRY MILKSHAKE: The Pestilence Comparisons
 
 With the tooltip finally fixed to show the accurate numbers (2.40% Weapon Damage DoT over 4.50 seconds), the community math guys got to work. The verdict? Underwhelming.
 
@@ -59,7 +59,7 @@ Players are reporting the Anarchy DoT ticking for ~38 damage per tick, and compa
 
 ---
 
-## 📢 OFFICIAL COMMS
+## OFFICIAL COMMS
 
 Aside from the inventory fix, it's been a quieter 48 hours on the official channels. The developer account u/TDResurgence on Reddit made two community comments:
 1. Confirming they love a "Fashion Friday" idea.
@@ -69,7 +69,7 @@ By our rough count they post a major communication every 5 to 10 days, so we exp
 
 ---
 
-## 🎯 WHAT THE COMMUNITY IS ACTUALLY GRINDING
+## WHAT THE COMMUNITY IS ACTUALLY GRINDING
 
 If you look past the bug reports, the endgame players are hyper-focused on three things right now:
 
@@ -88,7 +88,7 @@ Community reports say maxing your crafting bench to level 10 gives roughly a 25%
 
 ---
 
-## 🩹 KNOWN ISSUES (As of May 23)
+## KNOWN ISSUES (As of May 23)
 
 Don't adjust your routers; these are the live issues players were reporting as of May 23:
 *   **DZ Leaders Not Dropping Loot:** Reports of boss kills resulting in zero drops (no chipsets, no equipment).
@@ -98,7 +98,7 @@ Don't adjust your routers; these are the live issues players were reporting as o
 
 ---
 
-## 💬 THE PVP META FRUSTRATION CYCLE
+## THE PVP META FRUSTRATION CYCLE
 
 The Dark Zone remains a terrifying place. The current complaints revolve entirely around **Bulwark Tanks** and the **Double-Barrel Shotgun**. 
 
@@ -106,7 +106,7 @@ When a player with 150k health and 5,000 armor can still be two-tapped by a shot
 
 ---
 
-## 🗓️ COMING UP: DERELICT STORE SPEEDRUN
+## COMING UP: DERELICT STORE SPEEDRUN
 
 Take a breath, because next week the grind continues. 
 *   **OW Nest Speedrun (Derelict Store):** Starts May 29 through June 2. 

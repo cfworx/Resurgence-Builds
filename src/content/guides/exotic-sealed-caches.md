@@ -76,7 +76,7 @@ If you already own most of the pool, the math gets a little better in spirit but
 
 The Exotic Cache table lists a **seventh exotic, Deadlock**, with its own cache, its own Tactical Augmentation Module and its own mod selection. As of October 24, 2026, Ubisoft hasn't announced a Deadlock in any patch note, article, Steam post or X post we've checked. We don't know its weapon type, its talent or when it arrives.
 
-Two things are worth noting without turning them into a rumor:
+Two things we can say without turning them into a rumor:
 
 - Every other exotic in the table is already in the game, so a listed-but-unannounced weapon is unusual.
 - On October 21 Ubisoft extended Season 2 Phase 2 "until we are ready to release a much bigger update later this year" ([our coverage](/news/season-2-phase-2-extended/)). Whether Deadlock belongs to that update is anyone's guess, including ours.

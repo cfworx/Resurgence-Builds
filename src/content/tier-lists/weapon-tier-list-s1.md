@@ -3,7 +3,7 @@ title: "Season 1 Weapon Tier List"
 type: weapon
 patch: "1.2.0"
 lastUpdated: 2026-04-18
-description: "Comprehensive weapon tier list for The Division Resurgence Season 1. Rankings based on endgame PvE viability, DPS output, and talent synergy."
+description: "Weapon tier list for The Division Resurgence Season 1. Rankings based on endgame PvE viability, DPS output, and talent synergy."
 author: "RapidF5"
 
 faqs:

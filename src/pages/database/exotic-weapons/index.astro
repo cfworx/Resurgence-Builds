@@ -5,7 +5,7 @@ import AdSenseUnit from '../../../components/AdSenseUnit.astro';
 import { verifiedPatch } from '../../../data/site-config';
 const lastVerified = verifiedPatch('Patch 1.1.2.2'); // Bump: drop the arg ONLY after re-verifying this page's content in-game (CURRENT_PATCH is a ceiling, not an auto-bump)
 
-const title = "Exotic Weapons — Full List & Stats";
+const title = "Exotic Weapons: Full List & Stats";
 const description = "Division Resurgence exotic weapons with stats and talents. Each one bends the rules differently. Most are broken. That's the point.";
 const breadcrumbs = [
   { name: 'Exotic Weapons', url: '/database/exotic-weapons/' }
@@ -56,7 +56,7 @@ const itemListLd = {
   <div class="db-grid" id="exotics-grid">
       {exoticWeapons.map((weapon) => (
         <article class="db-card exotic-card">
-          <a href={`/database/exotic-weapons/${slugify(weapon.name)}/`} class="exotic-card-link" aria-label={`${weapon.name} — View exotic weapon details`}>
+          <a href={`/database/exotic-weapons/${slugify(weapon.name)}/`} class="exotic-card-link" aria-label={`View ${weapon.name} exotic weapon details`}>
             <div class="db-card__header">
               <div>
                 <h2 class="db-card__title">{weapon.name}</h2>
@@ -109,7 +109,7 @@ const itemListLd = {
         </article>
       ))}
     </div>
-<AdSenseUnit label="Advertisement — database category" />
+<AdSenseUnit label="Advertisement (database category)" />
 </DatabaseLayout>
 
 <style is:global>

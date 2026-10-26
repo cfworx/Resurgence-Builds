@@ -1,7 +1,7 @@
 {
   "_comment": "Per-combo editorial content written by RapidF5. Keyed by combo slug. Items present here render unique Field Notes / Meta Builds / Patch History sections and become indexable once their unique text clears the thin-content threshold. Patch history entries must be sourced from published patch notes.",
   "hazardous-area": {
-    "usageNotes": "Hazardous Area turns the Defender Drone from a bodyguard into a slow cooker: with the 3-piece equipped, everything inside the drone's radius takes damage every second. Glass-cannon Tech Op builds love it because the drone is already glued to you for the damage-soak — the mod set makes your personal safety bubble double as a DoT aura, so kiting melee rushers through your own drone radius becomes a damage rotation. The 2-piece Engineering roll is exactly what a skill build wants anyway, so nothing in the set feels like a tax. The aura also solves the Defender Drone's oldest complaint — that a defensive skill contributes nothing to clear speed. With this set, tanking mode and farming mode are the same loadout, which is exactly what a two-slot mobile player wants.",
+    "usageNotes": "Hazardous Area turns the Defender Drone from a bodyguard into a slow cooker: with the 3-piece equipped, everything inside the drone's radius takes damage every second. Glass-cannon Tech Op builds love it because the drone is already glued to you for the damage-soak, and the mod set makes your personal safety bubble double as a DoT aura, so kiting melee rushers through your own drone radius becomes a damage rotation. The 2-piece Engineering roll is exactly what a skill build wants anyway, so nothing in the set feels like a tax. The aura also solves the Defender Drone's oldest complaint: that a defensive skill contributes nothing to clear speed. With this set, tanking mode and farming mode are the same loadout, which is exactly what a two-slot mobile player wants.",
     "metaBuilds": [
       {
         "title": "The Double Agent Glass Cannon Tech Op",
@@ -14,59 +14,59 @@
     ]
   },
   "anchored": {
-    "usageNotes": "Anchored is the sustain layer for Breach Combo brawlers: every Breach Combo hit restores Shield Health and Health equal to 4.20% of Max Health. That per-hit trigger means the more aggressively you breach into packs, the faster your shield regenerates — the opposite incentive of turtling. Both of our published Bulwark metas run it, and both stack Max Health specifically so each 4.20% tick restores a meaningful chunk. It's the difference between a shield that needs cover rotations and a shield that repairs itself mid-push. Note the double restore: Shield Health and body Health tick together, so the set keeps working even after your shield breaks — often enough sustain to walk the broken shield back to cover instead of dying with it.",
+    "usageNotes": "Anchored is the sustain layer for Breach Combo brawlers: every Breach Combo hit restores Shield Health and Health equal to 4.20% of Max Health. That per-hit trigger means the more aggressively you breach into packs, the faster your shield regenerates, the opposite incentive of turtling. Both of our published Bulwark metas run it, and both stack Max Health specifically so each 4.20% tick restores a meaningful chunk. It's the difference between a shield that needs cover rotations and a shield that repairs itself mid-push. Note the double restore: Shield Health and body Health tick together, so the set keeps working even after your shield breaks, often with enough sustain to walk the broken shield back to cover instead of dying with it.",
     "metaBuilds": [
       {
         "title": "Bulwark Breacher 334k DPS Shield Wall",
         "url": "/builds/bulwark-breacher-build-saiynergy/"
       },
       {
-        "title": "Involuntary Nap Time — Bulwark Juggernaut",
+        "title": "Involuntary Nap Time: Bulwark Juggernaut",
         "url": "/builds/involuntary-nap-time-bulwark-juggernaut-build/"
       }
     ]
   },
   "optimal-range": {
-    "usageNotes": "Optimal Range rewards fighting inside 10 meters, which sounds suicidal until you're behind a shield or an LMG bipod: deploying Breach Combo grants +12% Rate of Fire, and close-range hits refund bullets (1 per second, capped at 3). The bullet refund is deceptively strong on high-RPM weapons — it stretches magazines through the exact face-range brawls where reloading gets you killed. Bulwark shield-wall builds treat it as their DPS set, and the Milkshake LMG build borrows it for the same reason: sustained fire lives and dies by time-between-reloads. The 10-meter check is measured per hit, not per activation, so backpedaling out of range mid-mag silently turns the refund off — hold your ground behind the shield or the set stops paying you.",
+    "usageNotes": "Optimal Range rewards fighting inside 10 meters, which sounds suicidal until you're behind a shield or an LMG bipod: deploying Breach Combo grants +12% Rate of Fire, and close-range hits refund bullets (1 per second, capped at 3). The bullet refund is deceptively strong on high-RPM weapons: it stretches magazines through the exact face-range brawls where reloading gets you killed. Bulwark shield-wall builds treat it as their DPS set, and the Milkshake LMG build borrows it for the same reason: sustained fire lives and dies by time-between-reloads. The 10-meter check is measured per hit, not per activation, so backpedaling out of range mid-mag silently turns the refund off. Hold your ground behind the shield or the set stops paying you.",
     "metaBuilds": [
       {
         "title": "Bulwark Breacher 334k DPS Shield Wall",
         "url": "/builds/bulwark-breacher-build-saiynergy/"
       },
       {
-        "title": "Milkshake Machine — Strawberry Milkshake LMG",
+        "title": "Milkshake Machine: Strawberry Milkshake LMG",
         "url": "/builds/milkshake-machine-strawberry-milkshake-lmg-build/"
       }
     ]
   },
   "bugle-call": {
-    "usageNotes": "Bugle Call is the opening horn for Tactical Link squads: dropping the link grants +14.40% Rate of Fire, Damage Reduction, and Movement Speed for 15 seconds — offense, defense, and mobility in one proc. Vanguard support players time it as an engage button: link up, call the push, and the whole window your squad is fighting with the buff you're personally faster, tougher, and shooting quicker. The 2-piece Damage Reduction roll makes it one of the rare Vanguard sets that helps you survive being the obvious priority target. Fifteen seconds is longer than most engagements, so the real skill is not stacking casts — it's saving the next Tactical Link for the next fight instead of doubling up on a fight you're already winning.",
+    "usageNotes": "Bugle Call is the opening horn for Tactical Link squads: dropping the link grants +14.40% Rate of Fire, Damage Reduction, and Movement Speed for 15 seconds: offense, defense, and mobility in one proc. Vanguard support players time it as an engage button: link up, call the push, and the whole window your squad is fighting with the buff you're personally faster, tougher, and shooting quicker. The 2-piece Damage Reduction roll makes it one of the rare Vanguard sets that helps you survive being the obvious priority target. Fifteen seconds is longer than most engagements, so the real skill is not stacking casts. It's saving the next Tactical Link for the next fight instead of doubling up on a fight you're already winning.",
     "metaBuilds": [
       {
         "title": "AgentHuntzman's Leaderboard Vanguard Support",
         "url": "/builds/agenthuntzmans-leaderboard-ranking-vanguard-support-build/"
       },
       {
-        "title": "Milkshake Machine — Strawberry Milkshake LMG",
+        "title": "Milkshake Machine: Strawberry Milkshake LMG",
         "url": "/builds/milkshake-machine-strawberry-milkshake-lmg-build/"
       }
     ]
   },
   "commando": {
-    "usageNotes": "Commando converts Tactical Link uptime into a crit engine: while the link is on you, every kill you participate in adds +10.20% Weapon Critical Hit Chance for 10 seconds. The 'participate' wording is the key — assists count, so in group fights the stacks arrive from your teammates' kill feed as much as your own. On a leaderboard Vanguard build the loop is self-reinforcing: link buffs the squad, the squad kills faster, and your CHC climbs, which is why it pairs so naturally with Bugle Call in the same loadout. The 10-second stack window is refreshed by each participating kill, so in wave content the crit chance effectively never falls off — it's in dead periods between waves where you decide whether to re-link or hold.",
+    "usageNotes": "Commando converts Tactical Link uptime into a crit engine: while the link is on you, every kill you participate in adds +10.20% Weapon Critical Hit Chance for 10 seconds. The 'participate' wording is the key: assists count, so in group fights the stacks arrive from your teammates' kill feed as much as your own. On a leaderboard Vanguard build the loop is self-reinforcing: link buffs the squad, the squad kills faster, and your CHC climbs, which is why it pairs so naturally with Bugle Call in the same loadout. The 10-second stack window is refreshed by each participating kill, so in wave content the crit chance effectively never falls off. It's in dead periods between waves where you decide whether to re-link or hold.",
     "metaBuilds": [
       {
         "title": "AgentHuntzman's Leaderboard Vanguard Support",
         "url": "/builds/agenthuntzmans-leaderboard-ranking-vanguard-support-build/"
       },
       {
-        "title": "Milkshake Machine — Strawberry Milkshake LMG",
+        "title": "Milkshake Machine: Strawberry Milkshake LMG",
         "url": "/builds/milkshake-machine-strawberry-milkshake-lmg-build/"
       }
     ]
   },
   "king-of-the-pit": {
-    "usageNotes": "King of the Pit makes the Shockwave Spike Mk.3 pull double duty: each spike hit grants +4% Weapon Critical Hit Chance for 10 seconds, up to 4 stacks. A well-placed spike into a pack instantly banks most of the +16% ceiling, which the 334k-DPS Breacher build converts directly into shield-brawl gun damage — the spike is cast on cooldown not for its own damage but as a crit primer before the push. If your Bulwark loadout doesn't slot Shockwave Spike, the entire 3-piece is dead weight; this set is a commitment to the skill, not a generic stat stick. Watch the stack timer against the Spike's cooldown: there's a gap where stacks expire before the next cast is ready, and the difference between a good and great Breacher player is filling that gap with a fight instead of a hallway.",
+    "usageNotes": "King of the Pit makes the Shockwave Spike Mk.3 pull double duty: each spike hit grants +4% Weapon Critical Hit Chance for 10 seconds, up to 4 stacks. A well-placed spike into a pack instantly banks most of the +16% ceiling, which the 334k-DPS Breacher build converts directly into shield-brawl gun damage: the spike is cast on cooldown not for its own damage but as a crit primer before the push. If your Bulwark loadout doesn't slot Shockwave Spike, the entire 3-piece is dead weight; this set is a commitment to the skill, not a generic stat stick. Watch the stack timer against the Spike's cooldown: there's a gap where stacks expire before the next cast is ready, and the difference between a good and great Breacher player is filling that gap with a fight instead of a hallway.",
     "metaBuilds": [
       {
         "title": "Bulwark Breacher 334k DPS Shield Wall",
@@ -83,7 +83,7 @@
     ]
   },
   "applied-demolitions": {
-    "usageNotes": "Applied Demolitions is the Seeker Mine specialist's crit ramp: Explosive Seeker Mine hits grant +3.20% Skill Critical Damage for 20 seconds, stacking three times. The 20-second window is generous enough that a normal mine rotation holds all three stacks, quietly adding ~10% Skill Crit Damage to everything else your build throws — which is why the Fire Cycle glass cannon runs it as a background amplifier rather than a centerpiece. The 2-piece Armor roll is a welcome bit of chunk on a build archetype that otherwise dies to a stiff breeze. Because the stacks key off Seeker Mine hits rather than kills, even a mine that lands on an armored elite for minimal damage still banks the full crit-damage stack — cast it into the toughest target on the field, not the easiest.",
+    "usageNotes": "Applied Demolitions is the Seeker Mine specialist's crit ramp: Explosive Seeker Mine hits grant +3.20% Skill Critical Damage for 20 seconds, stacking three times. The 20-second window is generous enough that a normal mine rotation holds all three stacks, quietly adding ~10% Skill Crit Damage to everything else your build throws, which is why the Fire Cycle glass cannon runs it as a background amplifier rather than a centerpiece. The 2-piece Armor roll is a welcome bit of chunk on a build archetype that otherwise dies to a stiff breeze. Because the stacks key off Seeker Mine hits rather than kills, even a mine that lands on an armored elite for minimal damage still banks the full crit-damage stack, so cast it into the toughest target on the field, not the easiest.",
     "metaBuilds": [
       {
         "title": "Demolitionist Glass Cannon 333k DPS Fire Cycle",
@@ -92,7 +92,7 @@
     ]
   },
   "thermobaric-grenades": {
-    "usageNotes": "Thermobaric Grenades is the all-in single-shell conversion for the Grenade Launcher: your magazine drops to one grenade, but that grenade gets a massively expanded blast radius and a damage multiplier in the hundreds of percent. It was the poster child of Demolitionist burst before Phase 3 brought both numbers down — post-nerf it still deletes packs, but it no longer carries a build by itself. If you ran it as your entire damage plan, the current meta answer is pivoting toward Skill Crit scaling instead of raw shell damage. The one-grenade magazine also changes your Signature economy: every shell is now a committed decision, so pair it with Signature charge generation and treat the launcher like a boss-phase button rather than a rotation filler.",
+    "usageNotes": "Thermobaric Grenades is the all-in single-shell conversion for the Grenade Launcher: your magazine drops to one grenade, but that grenade gets a massively expanded blast radius and a damage multiplier in the hundreds of percent. It was the poster child of Demolitionist burst before Phase 3 brought both numbers down. Post-nerf it still deletes packs, but it no longer carries a build by itself. If you ran it as your entire damage plan, the current meta answer is pivoting toward Skill Crit scaling instead of raw shell damage. The one-grenade magazine also changes your Signature economy: every shell is now a committed decision, so pair it with Signature charge generation and treat the launcher like a boss-phase button rather than a rotation filler.",
     "metaBuilds": [],
     "patchHistory": [
       {
@@ -104,7 +104,7 @@
     ]
   },
   "optimized-targeting": {
-    "usageNotes": "Optimized Targeting is a burst-window amplifier keyed to Drone Overload: for 30 seconds after activation, Striker Drone hits have a 10% chance to grant +10.80% Skill Critical Hit Chance for 20 seconds. Because the drone attacks so frequently during Overload, that 10% chance is a near-certainty early in the window — meaning your ultimate opens with a crit-chance spike layered on top of the Overload damage itself. The Jackpot Striker build stacks it with Jackpot's own Skill Crit bonuses to push drone crit rates into the 'every other hit' range during burst phases. Sequence matters: activate Drone Overload first, let the crit-chance proc land inside the opening seconds, and your remaining Overload window rides the buffed rate. Activating skills in the wrong order wastes the set's entire reason for existing.",
+    "usageNotes": "Optimized Targeting is a burst-window amplifier keyed to Drone Overload: for 30 seconds after activation, Striker Drone hits have a 10% chance to grant +10.80% Skill Critical Hit Chance for 20 seconds. Because the drone attacks so frequently during Overload, that 10% chance is a near-certainty early in the window, meaning your ultimate opens with a crit-chance spike layered on top of the Overload damage itself. The Jackpot Striker build stacks it with Jackpot's own Skill Crit bonuses to push drone crit rates into the 'every other hit' range during burst phases. Sequence matters: activate Drone Overload first, let the crit-chance proc land inside the opening seconds, and your remaining Overload window rides the buffed rate. Activating skills in the wrong order wastes the set's entire reason for existing.",
     "metaBuilds": [
       {
         "title": "Jackpot Striker Drone Tech Op",
@@ -113,7 +113,7 @@
     ]
   },
   "enhanced-formula": {
-    "usageNotes": "Enhanced Formula is the Tactical Pharma keystone that turns Oxidizing Swarm into both a debuff and a lifeline: swarm hits inflict −12% Damage on enemies for 20 seconds, and killing a debuffed enemy within 20 meters restores Health equal to 8% of your Missing Health over 20 seconds. The rank-1-global 800k build wraps its whole loop around this — swarm the room, and every kill inside the cloud both weakens the survivors and drip-heals you back up. Note the Missing Health scaling: the lower you are, the harder the heal works, which makes the set feel strongest exactly when fights go wrong. In group play, call your swarm targets — the −12% damage debuff applies to everything the cloud touches, so aiming it at the enemies shooting your tank is a defensive play disguised as a DPS cooldown.",
+    "usageNotes": "Enhanced Formula is the Tactical Pharma keystone that turns Oxidizing Swarm into both a debuff and a lifeline: swarm hits inflict −12% Damage on enemies for 20 seconds, and killing a debuffed enemy within 20 meters restores Health equal to 8% of your Missing Health over 20 seconds. The rank-1-global 800k build wraps its whole loop around this: swarm the room, and every kill inside the cloud both weakens the survivors and drip-heals you back up. Note the Missing Health scaling: the lower you are, the harder the heal works, which makes the set feel strongest exactly when fights go wrong. In group play, call your swarm targets, because the −12% damage debuff applies to everything the cloud touches, so aiming it at the enemies shooting your tank is a defensive play disguised as a DPS cooldown.",
     "metaBuilds": [
       {
         "title": "Tactical Pharma 800k DPS (Rank 1 Global)",
@@ -122,10 +122,10 @@
     ]
   },
   "armor-strengthening": {
-    "usageNotes": "Armor Strengthening grants a flat +32% Armor while you're within 20 meters of your Chemical Trap — a zone-control tank set that says 'this room is mine.' The catch for months was that the proximity check was bugged and the bonus often simply didn't apply; Phase 3 finally fixed the detection, so the set now does what the tooltip promises. The Muscular Nurse tank-medic anchors on it: drop the trap where you plan to hold, stand your ground inside the circle, and layer the +32% Armor under its heal-triggered Damage Reduction procs. Placement discipline is everything: the trap defines a 20-meter circle you have to fight inside, so drop it at the choke point you intend to hold, not reactively at your feet after the push has already started.",
+    "usageNotes": "Armor Strengthening grants a flat +32% Armor while you're within 20 meters of your Chemical Trap, a zone-control tank set that says 'this room is mine.' The catch for months was that the proximity check was bugged and the bonus often simply didn't apply; Phase 3 finally fixed the detection, so the set now does what the tooltip promises. The Muscular Nurse tank-medic anchors on it: drop the trap where you plan to hold, stand your ground inside the circle, and layer the +32% Armor under its heal-triggered Damage Reduction procs. Placement discipline is everything: the trap defines a 20-meter circle you have to fight inside, so drop it at the choke point you intend to hold, not reactively at your feet after the push has already started.",
     "metaBuilds": [
       {
-        "title": "The Muscular Nurse — Combat Medicine Tank-Medic",
+        "title": "The Muscular Nurse: Combat Medicine Tank-Medic",
         "url": "/builds/muscular-nurse-combat-medicine-build-nadie/"
       }
     ],

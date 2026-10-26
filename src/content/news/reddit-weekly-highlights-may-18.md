@@ -26,7 +26,7 @@ Every week, the Division Resurgence subreddit delivers a masterclass in communal
 
 ---
 
-## 1. 🏆 The Daily-Grind Fatigue Post
+## 1. The Daily-Grind Fatigue Post
 
 **u/starzwillsucceed** · [Score: 94](https://www.reddit.com/r/thedivisionresurgence/comments/1tegzmt/i_want_to_thank_the_devs_they_are_truly_a/) · May 16
 
@@ -36,7 +36,7 @@ For the record, the grind did get lighter later: Season 2 Phase 2 removed the da
 
 ---
 
-## 2. 🫠 The Before-and-After Inventory Screenshot
+## 2. The Before-and-After Inventory Screenshot
 
 **u/CommunityLeather3564** · [Score: 89](https://www.reddit.com/r/thedivisionresurgence/comments/1tb08uh/thanks_ubisoft/) · May 12
 
@@ -46,7 +46,7 @@ The workaround? **u/VegetableTea4447** casually drops: *"All it took to fix it f
 
 ---
 
-## 3. 😤 "Unacceptable": The Lost Account Post
+## 3. "Unacceptable": The Lost Account Post
 
 **u/Iamonslaughtt** · [Score: 87](https://www.reddit.com/r/thedivisionresurgence/comments/1tdwcn3/unacceptable/) · May 15
 
@@ -56,7 +56,7 @@ If this ever happens to you, contact Player Support through the in-game support 
 
 ---
 
-## 4. 🔫 "Cursed Gun": The Strawberry Milkshake Design Debate
+## 4. "Cursed Gun": The Strawberry Milkshake Design Debate
 
 **u/StryangeFox** · [Score: 76](https://www.reddit.com/r/thedivisionresurgence/comments/1td38s9/cursed_gun/) · May 14
 
@@ -68,7 +68,7 @@ We built an [entire build](/builds/milkshake-machine-strawberry-milkshake-lmg-bu
 
 ---
 
-## 5. 📨 The Support Ticket Screenshot
+## 5. The Support Ticket Screenshot
 
 **u/harmundo** · [Score: 65](https://www.reddit.com/r/thedivisionresurgence/comments/1tclvcg/everythings_cool_they_understand_the_frustration/) · May 14
 
@@ -78,7 +78,7 @@ Fair point at the time. Ubisoft listed Outpost Annihilation as a known issue in 
 
 ---
 
-## 6. 👻 "What Does Bro See?" - The NPC That Stares Into Your Soul
+## 6. "What Does Bro See?" - The NPC That Stares Into Your Soul
 
 **u/Whole_Entrepreneur23** · [Score: 67](https://www.reddit.com/r/thedivisionresurgence/comments/1tb2z55/what_does_bro_see/) · May 12
 
@@ -88,7 +88,7 @@ The OP also flagged that updates were making the game re-download resources from
 
 ---
 
-## 7. 💀 "TDR 31.03.2026 - 15.05.2026": The Rage-Quit Post
+## 7. "TDR 31.03.2026 - 15.05.2026": The Rage-Quit Post
 
 **u/noun1t** · [Score: 64](https://www.reddit.com/r/thedivisionresurgence/comments/1tdks6y/tdr_31032026_15052026/) · May 15
 
@@ -98,7 +98,7 @@ When someone titles their post with a date range like a tombstone inscription, y
 
 ---
 
-## 8. 🎰 "Retired from the Game" - The Account Giveaway
+## 8. "Retired from the Game" - The Account Giveaway
 
 **u/Comfortable-Bar-3965** · [Score: 60](https://www.reddit.com/r/thedivisionresurgence/comments/1tesqqc/retired_from_the_game/) · May 16
 
@@ -108,7 +108,7 @@ The replies, including **u/NecessaryComputer450** and **u/X_CLOWNEY_X**, turned 
 
 ---
 
-## 9. 💰 "Compensation": The 300-Credit Ticket
+## 9. "Compensation": The 300-Credit Ticket
 
 **u/DunBrun** · [Score: 51](https://www.reddit.com/r/thedivisionresurgence/comments/1teq6tl/compensation/) · May 16
 
@@ -118,11 +118,11 @@ The bigger answer came four days later: patch 1.2.1 sent every player 500,000 Ba
 
 ---
 
-## 10. 🔥 The Bug List Post
+## 10. The Bug List Post
 
 **u/Inevitable-Poem-8227** · [Score: 40](https://www.reddit.com/r/thedivisionresurgence/comments/1teh0o5/game_is_unplayable_dont_even_bother/) · May 16
 
-A comprehensive list of every bug the poster was hitting, from the lock glitch that deleted weapons, to the DZ vendor bug, to the vendor sell bug. It reads like a bug report and a breakup letter at the same time.
+A long list of every bug the poster was hitting, from the lock glitch that deleted weapons, to the DZ vendor bug, to the vendor sell bug. It reads like a bug report and a breakup letter at the same time.
 
 Four days later, patch 1.2.1 fixed the vendor display bugs and the one that let locked or favorited items be sold.
 

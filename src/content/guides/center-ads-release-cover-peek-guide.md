@@ -120,7 +120,7 @@ Once your settings are right, the input itself is dead simple. The difficulty is
 4. **Fire on release.** Your shot lands during the release frames, not the press frames. This is the part everyone gets backwards on their first 50 tries.
 5. **Already back in cover.** Because you released ADS instead of holding, your character animates back into cover automatically. The enemy sees: nothing, muzzle flash, nothing. They type "hacker" in chat. You type nothing, because you're already aiming at the next target.
 
-That's the whole tech. If steps 2–4 feel like they need to happen in a single motion, that's because they do. Think of it as one input with a beat in the middle.
+That's the whole tech. If steps 2 to 4 feel like they need to happen in a single motion, that's because they do. Think of it as one input with a beat in the middle.
 
 ---
 
@@ -128,8 +128,8 @@ That's the whole tech. If steps 2–4 feel like they need to happen in a single 
 
 Go to any Hostile Nest on Normal. Find a piece of waist-high cover with a clear sightline to a spawn point. Sit on it. Tell your clan you're "theory-crafting."
 
-- **Minute 1–2:** Just tap ADS in and out from cover. No shooting. Get used to the camera not fighting you. This is also when you'll catch any settings you missed: if the camera feels like it's wrestling you, something from the checklist is still on default.
-- **Minute 3–4:** Pre-aim at a spawning enemy's head height, tap-release, fire on release. Don't aim adjust mid-peek. That's what sensitivity acceleration was for, and you turned it off, so trust the pre-aim.
+- **Minutes 1 to 2:** Just tap ADS in and out from cover. No shooting. Get used to the camera not fighting you. This is also when you'll catch any settings you missed: if the camera feels like it's wrestling you, something from the checklist is still on default.
+- **Minutes 3 to 4:** Pre-aim at a spawning enemy's head height, tap-release, fire on release. Don't aim adjust mid-peek. That's what sensitivity acceleration was for, and you turned it off, so trust the pre-aim.
 - **Minute 5:** Chain three peeks in a row on three different enemies without leaving cover. If you can do this consistently, you have the tech. If you can do it while your kid asks you what's for dinner, you have mastery.
 
 You will miss a lot on the first day. That's fine. The settings are the actual unlock. Once those are right, the input is just reps. It's like learning to ride a bike, except the bike is your phone and the pavement is the Conflict leaderboard.
@@ -141,7 +141,7 @@ You will miss a lot on the first day. That's fine. The settings are the actual u
 Center-ADS Release is weapon-agnostic in theory, but in practice the payoff scales hard with damage-per-shot. You only get one or two bullets per peek, so make them count.
 
 - **Bolt-action snipers and DMRs** are the perfect home for this tech. One shot, one peek, one kill. Look for weapons with the **Cover Shooter** talent (per the tooltip when we wrote this: cover crits grant +16% CHD up to 3 stacks at an 80% proc rate) and pair with the **Cover Shooter Gold Firepower OS** for a +15% Weapon Damage baseline.
-- **High-damage ARs** like the Warlord work if you can discipline yourself to fire 2–3 round bursts instead of holding the trigger. The peek is too short for sustained fire anyway. Trigger discipline is the real endgame boss. The **Bighorn** (Season 2 Phase 1's exotic AR) looks made for this on paper: Ubisoft says it switches to semi-auto when you aim down sights and stacks a damage bonus with every headshot. We haven't tested it with the peek yet.
+- **High-damage ARs** like the Warlord work if you can discipline yourself to fire two- to three-round bursts instead of holding the trigger. The peek is too short for sustained fire anyway. Trigger discipline is the real endgame boss. The **Bighorn** (Season 2 Phase 1's exotic AR) looks made for this on paper: Ubisoft says it switches to semi-auto when you aim down sights and stacks a damage bonus with every headshot. We haven't tested it with the peek yet.
 - **Shotguns** are the wildcard. Double Barrel in particular benefits because the entire payload lands in the release window, but only at close-to-mid range, which means you're picking your cover spots carefully.
 
 Avoid full-auto LMGs and SMGs for this specifically. Their DPS is in sustained fire, and sustained fire is what Center-ADS Release explicitly avoids. If you're holding the trigger down, you're not peeking. You're posing.

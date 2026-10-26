@@ -191,7 +191,7 @@ const talentLd = {
         </div>
       </div>
 
-      <!-- Meta Builds (unique per item — only for pages with editorial notes) -->
+      <!-- Meta Builds (unique per item, only for pages with editorial notes) -->
       {notes && notes.metaBuilds?.length > 0 && (
         <div style="margin-bottom: var(--sp-8);">
           <h2 style="font-family: var(--font-heading); font-size: var(--text-lg); font-weight: 800; color: #fff; margin: 0 0 var(--sp-4) 0; padding-bottom: var(--sp-2); border-bottom: 1px solid rgba(255,255,255,0.08);">Meta Builds Running {talent.name}</h2>
@@ -216,7 +216,7 @@ const talentLd = {
         </div>
       )}
 
-      <!-- Combat Tips (generic archetype copy — noindexed pages only) -->
+      <!-- Combat Tips (generic archetype copy, noindexed pages only) -->
       {!notes && (
       <div style="margin-bottom: var(--sp-8);">
         <h2 style="font-family: var(--font-heading); font-size: var(--text-lg); font-weight: 800; color: #fff; margin: 0 0 var(--sp-4) 0; padding-bottom: var(--sp-2); border-bottom: 1px solid rgba(255,255,255,0.08);">Combat Tips</h2>
@@ -238,7 +238,7 @@ const talentLd = {
         </div>
       )}
 
-      <!-- Best Builds (generic archetype copy — noindexed pages only) -->
+      <!-- Best Builds (generic archetype copy, noindexed pages only) -->
       {!notes && (
       <div style="margin-bottom: var(--sp-8);">
         <h2 style="font-family: var(--font-heading); font-size: var(--text-lg); font-weight: 800; color: #fff; margin: 0 0 var(--sp-4) 0; padding-bottom: var(--sp-2); border-bottom: 1px solid rgba(255,255,255,0.08);">Best Builds for {talent.name}</h2>
@@ -248,7 +248,7 @@ const talentLd = {
       </div>
       )}
 
-      <!-- Synergies & Stacking (shared copy — noindexed pages only) -->
+      <!-- Synergies & Stacking (shared copy, noindexed pages only) -->
       {!notes && (
       <div style="margin-bottom: var(--sp-8);">
         <h2 style="font-family: var(--font-heading); font-size: var(--text-lg); font-weight: 800; color: #fff; margin: 0 0 var(--sp-4) 0; padding-bottom: var(--sp-2); border-bottom: 1px solid rgba(255,255,255,0.08);">Synergies &amp; Stacking</h2>
@@ -259,7 +259,7 @@ const talentLd = {
       </div>
       )}
 
-      <!-- How to Get (shared copy — noindexed pages only) -->
+      <!-- How to Get (shared copy, noindexed pages only) -->
       {!notes && (
       <div style="margin-bottom: var(--sp-8);">
         <h2 style="font-family: var(--font-heading); font-size: var(--text-lg); font-weight: 800; color: #fff; margin: 0 0 var(--sp-4) 0; padding-bottom: var(--sp-2); border-bottom: 1px solid rgba(255,255,255,0.08);">How to Get {talent.name}</h2>
@@ -282,6 +282,6 @@ const talentLd = {
       </div>
     </div>
 
-    <AdSenseUnit label="Advertisement — database item" />
+    <AdSenseUnit label="Advertisement (database item)" />
   </div>
 </BaseLayout>

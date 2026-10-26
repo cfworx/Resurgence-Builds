@@ -12,7 +12,7 @@ export default function rehypeAdsense() {
     let adIndex = 0;
 
     const makeAdHtml = (idx) => `
-      <aside class="ad-slot ad-slot--in-content" aria-label="Advertisement — in-content ${idx}" style="margin: 32px 0;">
+      <aside class="ad-slot ad-slot--in-content" aria-label="Advertisement (in-content ${idx})" style="margin: 32px 0;">
         <ins class="adsbygoogle"
              style="display:block"
              data-ad-client="ca-pub-5813932024666862"

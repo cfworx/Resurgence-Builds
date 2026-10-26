@@ -23,7 +23,7 @@ export function getStaticPaths() {
 const { mod } = Astro.props;
 
 const slug = mod.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
-// Game data strings use raw forms like "1 enemies" / "20 second(s)" — normalize for display.
+// Game data strings use raw forms like "1 enemies" / "20 second(s)": normalize for display.
 const bonus2 = fixPlurals(mod.bonus2);
 const bonus3 = fixPlurals(mod.bonus3);
 const siteUrl = 'https://resurgencebuilds.com';
@@ -236,7 +236,7 @@ const toModSlug = (name: string) => name.toLowerCase().replace(/[^a-z0-9]+/g, '-
         </div>
       </div>
 
-      <!-- Meta Builds (unique per item — only for pages with editorial notes) -->
+      <!-- Meta Builds (unique per item, only for pages with editorial notes) -->
       {notes && notes.metaBuilds?.length > 0 && (
         <div class="smc-section">
           <h2 class="smc-section__title">Meta Builds Running {mod.name}</h2>
@@ -264,7 +264,7 @@ const toModSlug = (name: string) => name.toLowerCase().replace(/[^a-z0-9]+/g, '-
         </div>
       )}
 
-      <!-- 3-Piece Bonus Analysis (templated copy — noindexed pages only) -->
+      <!-- 3-Piece Bonus Analysis (templated copy, noindexed pages only) -->
       {!notes && (
       <div class="smc-section">
         <h2 class="smc-section__title">3-Piece Bonus Analysis</h2>
@@ -281,7 +281,7 @@ const toModSlug = (name: string) => name.toLowerCase().replace(/[^a-z0-9]+/g, '-
       </div>
       )}
 
-      <!-- Best Builds (shared spec copy — noindexed pages only) -->
+      <!-- Best Builds (shared spec copy, noindexed pages only) -->
       {!notes && (
       <div class="smc-section">
         <h2 class="smc-section__title">Best Builds</h2>
@@ -292,7 +292,7 @@ const toModSlug = (name: string) => name.toLowerCase().replace(/[^a-z0-9]+/g, '-
       </div>
       )}
 
-      <!-- Synergies (shared spec copy — noindexed pages only) -->
+      <!-- Synergies (shared spec copy, noindexed pages only) -->
       {!notes && (
       <div class="smc-section">
         <h2 class="smc-section__title">Synergies</h2>
@@ -329,7 +329,7 @@ const toModSlug = (name: string) => name.toLowerCase().replace(/[^a-z0-9]+/g, '-
       </div>
     </div>
 
-    {indexable && <AdSenseUnit label="Advertisement — database item" />}
+    {indexable && <AdSenseUnit label="Advertisement (database item)" />}
   </div>
 </BaseLayout>
 

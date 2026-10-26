@@ -19,7 +19,7 @@ faqs:
     answer: "It already came and went. Season 1 Phase 3 'A New Fire' launched June 24, 2026 with the Scorpio exotic shotgun (on the premium pass track; the free track had its Tactical Augmentation Module), the Freemen apparel set and the Boombox skin. No new PvP mode, whatever we guessed back in May. The game is now on Season 2 Phase 2, which Ubisoft extended on October 21 until a 'much bigger update later this year'."
 ---
 
-Agents, a lot has happened in the last 48 hours. Ubisoft rolled out **Patch 1.2.1** earlier today, the Phase 2 Classified Ops Pass exotic (Strawberry Milkshake) is officially on Ubisoft's "looking into it" list, the subreddit has been loudly documenting disappearing inventory, and Phase 3 is just around the corner. Here's everything you need to know, with zero spin and exactly the right amount of suffering.
+Agents, a lot has happened in the last 48 hours. Ubisoft rolled out **Patch 1.2.1** earlier today, the Phase 2 Classified Ops Pass exotic (Strawberry Milkshake) is officially on Ubisoft's "looking into it" list, the subreddit has been loudly documenting disappearing inventory, and Phase 3 is just around the corner. Here's what happened, with zero spin and exactly the right amount of suffering.
 
 > [!INFO] Update (October 2026)
 > Patch 1.2.1 never changed the Strawberry Milkshake's numbers, and no straight buff followed: [Season 1 Phase 3](/patch-notes/season-1-phase-3-a-new-fire/) (June 24) fixed it dropping with level 1 talents instead of level 2 and showing as Piercing instead of Shredding (owners were promised an updated copy), and Season 2 Phase 1 fixed its debuff applying on heal. Phase 3 also fixed Outpost Annihilation and brought the Scorpio, on the premium track (free players got its Tactical Augmentation Module). The game is now on [Season 2 Phase 2](/patch-notes/season-2-phase-2/), which Ubisoft has [extended](/news/season-2-phase-2-extended/).
@@ -29,7 +29,7 @@ Agents, a lot has happened in the last 48 hours. Ubisoft rolled out **Patch 1.2.
 
 ## Patch 1.2.1 - Full Breakdown
 
-Patch 1.2.1 is a hotfix, not a content drop. It cleans up the issues that came with Phase 2's May 11–12 launch, and it contains no balance changes at all. Full source: [Ubisoft Mobile Help Center, Patch Note 1.2.1](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2513-patch-note---1-2-1-update-20-may-2026/).
+Patch 1.2.1 is a hotfix, not a content drop. It cleans up the issues that came with Phase 2's May 11 and 12 launch, and it contains no balance changes at all. Full source: [Ubisoft Mobile Help Center, Patch Note 1.2.1](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2513-patch-note---1-2-1-update-20-may-2026/).
 
 ### Compensation Package (Everyone Gets It - Yes, Even You)
 
@@ -105,7 +105,7 @@ Players say Outpost Annihilation has been broken since beta, so seeing it on an 
 
 ## Phase 2 Recap - In Case You Missed the Chaos
 
-Phase 2 of Season 1 went live around **May 11–12, 2026** ([Ubisoft, Phase 2 Starts Now](https://www.ubisoft.com/en-us/game/the-division/resurgence/news-updates/3ygDDXxg6dv6aQD5MJvbKv/phase-2-starts-now-whats-new)). The big-ticket items are still active right now.
+Phase 2 of Season 1 went live around **May 11 and 12, 2026** ([Ubisoft, Phase 2 Starts Now](https://www.ubisoft.com/en-us/game/the-division/resurgence/news-updates/3ygDDXxg6dv6aQD5MJvbKv/phase-2-starts-now-whats-new)). The big-ticket items are still active right now.
 
 ### Classified Ops Pass 1.2
 
@@ -124,11 +124,11 @@ Phase 2 of Season 1 went live around **May 11–12, 2026** ([Ubisoft, Phase 2 St
 
 | Event | Location | Dates |
 | --- | --- | --- |
-| Dark Zone Quest | Dark Zone | May 12 – June 7 |
-| OW Nest – Derelict Store (Speedrun) | Open World Nest | May 29 – June 2 |
-| MM06 – Take the Castle (Speedrun) | Main Mission 06 | June 12 – June 16 |
+| Dark Zone Quest | Dark Zone | May 12 to June 7 |
+| OW Nest: Derelict Store (Speedrun) | Open World Nest | May 29 to June 2 |
+| MM06: Take the Castle (Speedrun) | Main Mission 06 | June 12 to June 16 |
 
-The MM04 speedrun (May 15–19) has already ended. Don't worry about it. Grieve privately.
+The MM04 speedrun (May 15 to 19) has already ended. Don't worry about it. Grieve privately.
 
 ### Phase 2 Balance Changes Worth Knowing
 
@@ -210,9 +210,9 @@ Expect new time-limited events, a refreshed Classified Ops Pass, and almost cert
 
 | Event | Mission | Dates |
 | --- | --- | --- |
-| OW Nest – Derelict Store | Open World Nest | May 29 – June 2 |
-| MM06 – Take the Castle | Main Mission 06 | June 12 – June 16 |
-| Dark Zone Quest | Dark Zone | May 12 – June 7 |
+| OW Nest: Derelict Store | Open World Nest | May 29 to June 2 |
+| MM06: Take the Castle | Main Mission 06 | June 12 to June 16 |
+| Dark Zone Quest | Dark Zone | May 12 to June 7 |
 
 *Sources: [Techmash Phase 2 recap](https://techmash.co.uk/2026/05/13/agents-back-to-manhattan-the-division-resurgence-season-1-phase-2-is-live/), cross-checked against Ubisoft Phase 2 notes.*
 

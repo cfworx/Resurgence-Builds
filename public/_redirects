@@ -163,7 +163,7 @@ http://resurgencebuilds.com/* https://resurgencebuilds.com/:splat 301
 /database/body-armor-talents/unflinching/ /database/body-armor-talents/#unflinching 301
 /database/body-armor-talents/unflinching /database/body-armor-talents/#unflinching 301
 
-# 404 remediation — GSC "Not found (404)" export, mapped 2026-07-04 (ISAC)
+# 404 remediation: GSC "Not found (404)" export, mapped 2026-07-04 (ISAC)
 # Archived build slugs -> closest live successor
 /builds/conflict-pvp-fearless-warlord /database/exotic-weapons/warlord/ 301
 /builds/conflict-pvp-fearless-warlord/ /database/exotic-weapons/warlord/ 301

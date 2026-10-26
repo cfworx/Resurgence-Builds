@@ -1,5 +1,5 @@
 /* ============================================================
-   RESURGENCE BUILDS — Design System
+   RESURGENCE BUILDS: Design System
    Division-inspired dark tactical theme
    ============================================================ */
 
@@ -141,7 +141,7 @@ body {
   display: flex;
   flex-direction: column;
 }
-/* Tactical grid overlay — matches SHD boot screen */
+/* Tactical grid overlay: matches SHD boot screen */
 body::before {
   content: "";
   position: fixed;
@@ -475,7 +475,7 @@ table {
   margin-bottom: var(--sp-8);
 }
 
-/* Table scroll wrapper — added by JS in BuildLayout */
+/* Table scroll wrapper, added by JS in BuildLayout */
 .table-scroll {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
@@ -1530,7 +1530,7 @@ details.toc[open] > summary { margin-bottom: var(--sp-2); }
 /* ── Hide unfilled ad slots ──
    AdSense sets data-ad-status="filled" once an ad loads.
    Until then, collapse the slot so it's invisible.
-   Once approved, ads auto-appear — no code change needed. */
+   Once approved, ads auto-appear; no code change needed. */
 .ad-slot .adsbygoogle {
   display: block;
   width: 100%;
@@ -1541,7 +1541,7 @@ details.toc[open] > summary { margin-bottom: var(--sp-2); }
 
 /* Before AdSense fills, hide the slot completely.
    The ins element starts with height:0 and no visible content.
-   We hide via CSS so there's no white flash — ads auto-appear when filled. */
+   We hide via CSS so there's no white flash; ads auto-appear when filled. */
 .ad-slot:not(.ad-filled) {
   display: none;
 }

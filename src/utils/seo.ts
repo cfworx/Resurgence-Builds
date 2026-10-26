@@ -43,7 +43,7 @@ export function fixPlurals(text) {
 
 /**
  * Builds a meta description from a dedicated summary, capped at `max` chars
- * and always ending on a complete clause (sentence or semicolon boundary) —
+ * and always ending on a complete clause (sentence or semicolon boundary),
  * never mid-stat-string. Falls back to `fallback` when no summary exists.
  * @param {string|undefined} summary - Hand-written summary field
  * @param {string} fallback - Complete-sentence fallback pattern
@@ -57,6 +57,6 @@ export function metaDescription(summary, fallback, max = 155) {
   const slice = source.slice(0, max);
   const lastEnd = Math.max(slice.lastIndexOf('. '), slice.lastIndexOf('! '), slice.lastIndexOf('? '), slice.lastIndexOf('; '));
   if (lastEnd > 40) return slice.slice(0, lastEnd + 1).trim();
-  // No clause boundary fits — use the fallback (guaranteed short & complete).
+  // No clause boundary fits: use the fallback (guaranteed short & complete).
   return fallback.length <= max ? fallback : truncateDesc(fallback, max);
 }

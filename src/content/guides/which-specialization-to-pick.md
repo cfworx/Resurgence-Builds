@@ -123,7 +123,7 @@ The Bulwark is the spec that experienced players suddenly appreciate after a ses
 
 **Focuses:** Combat Medicine (direct healing, team survival), Tactical Pharma (Corrosion debuffs, offensive drone output)
 
-Let's be honest about who picks Field Medic. It's people who, in a past life, played a healer in some other game and carry the emotional damage of watching the tank die right after they threw a perfectly-timed heal that landed 0.3 seconds too late. You're back. You're doing it again. Godspeed.
+Who picks Field Medic? People who, in a past life, played a healer in some other game and carry the emotional damage of watching the tank die right after they threw a perfectly-timed heal that landed 0.3 seconds too late. You're back. You're doing it again. Godspeed.
 
 **Combat Medicine** is the classic support path: keeping teammates alive, applying healing through hives and skills, making sure the DPS player who refuses to use cover gets to keep making that mistake. The Healing Hive multi-tick bug was famously patched out in late April, which significantly reduced Combat Medicine healing output. The community noticed. The fix never made Ubisoft's official patch notes, so that timeline comes from player reports. The spec is still excellent.
 
@@ -208,19 +208,19 @@ When it works, however, nobody looks cooler.
     </tr>
     <tr>
       <th scope="row"><strong>Solo viability</strong></th>
-      <td>✅ Excellent</td>
-      <td>✅ Excellent</td>
-      <td>✅ Excellent</td>
-      <td>⚠️ Harder</td>
-      <td>⚠️ Harder</td>
+      <td>Excellent</td>
+      <td>Excellent</td>
+      <td>Excellent</td>
+      <td>Harder</td>
+      <td>Harder</td>
     </tr>
     <tr>
       <th scope="row"><strong>PvP viability</strong></th>
-      <td>✅ Strong</td>
-      <td>⚠️ Situational</td>
-      <td>✅ Strong</td>
-      <td>⚠️ Situational</td>
-      <td>⚠️ Situational</td>
+      <td>Strong</td>
+      <td>Situational</td>
+      <td>Strong</td>
+      <td>Situational</td>
+      <td>Situational</td>
     </tr>
     <tr>
       <th scope="row"><strong>Carry potential</strong></th>
@@ -270,7 +270,7 @@ Leveling a second one isn't wasted time, either. Oldfartsgaming capped Demolitio
 ### Does specialization affect my gear drops?
 Yes, as far as we can tell: when you purchase certain items from vendors like the **Warlord** exotic AR at the Dark Zone vendor, the rolls on that item are influenced by your active specialization's primary stat. It isn't in any tooltip and Ubisoft hasn't documented it, but that's what we saw when we wrote this. Switch to a **Vanguard or Firepower-focused spec** before buying from the DZ vendor or you will get Engineering rolls on a Firepower weapon and spend a lot of time processing that quietly. The DZ vendor's exotic shelf has changed since, too: Scorpio joined in Season 2 Phase 1, and Season 2 Phase 2 cut DZ vendor exotics from 17,500 to 15,000 DZ Credits because they no longer ship with pre-equipped exotic mods.
 
-Skill mods follow your spec as well. Died Again Gaming says the Dark Zone daily's skill mods mostly come for the specialization you have equipped, and that the skill mods from Lone Wolf rewards go to whichever spec is equipped when you claim them. Switch first, then collect. Details in our [Dark Zone guide](/guides/division-resurgence-dark-zone-guide/) and [endgame tips](/guides/division-resurgence-endgame-tips/).
+Creators say skill mods follow your spec too. Died Again Gaming says the Dark Zone daily's skill mods mostly come for the specialization you have equipped, and that the skill mods from Lone Wolf rewards go to whichever spec is equipped when you claim them. Switch first, then collect. Details in our [Dark Zone guide](/guides/division-resurgence-dark-zone-guide/) and [endgame tips](/guides/division-resurgence-endgame-tips/).
 
 ### Is Tactical Pharma a specialization?
 Tactical Pharma is a **focus of Field Medic**, not a standalone specialization. It's the offensive/Corrosion path of Field Medic. If you picked Field Medic and went Tactical Pharma, you picked Field Medic. Don't let the mod menu confuse you either: Ubisoft's patch notes also use "Tactical Pharma" as the name of a Skill Mod Combo Set family (Armor Strengthening is one of them).

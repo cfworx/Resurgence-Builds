@@ -6,7 +6,7 @@
  */
 export interface Props {
   talents: { id?: string; name: string; description: string }[];
-  /** "backpack" | "body armor" — used in copy only */
+  /** "backpack" | "body armor", used in copy only */
   slot: string;
   /** e.g. "/database/backpack-talents/" */
   basePath: string;
@@ -16,7 +16,7 @@ const { talents, slot } = Astro.props;
 
 const toSlug = (name: string) => name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
 
-// Role derivation — same keyword logic the old item pages used.
+// Role derivation: same keyword logic the old item pages used.
 const roleOf = (description: string): string[] => {
   const roles: string[] = [];
   if (/weapon damage|critical hit chance|critical hit damage|rate of fire|magazine size|optimal range|damage(?! reduction)/i.test(description)) roles.push('DPS');
@@ -55,7 +55,7 @@ const allRoles = ['DPS', 'Skill', 'Tank/Sustain', 'Team', 'Utility'].filter(r =>
 <div class="ti-controls">
   <div class="ti-sort" role="group" aria-label="Sort talents">
     <span class="ti-controls__label">Sort:</span>
-    <button type="button" class="ti-sort__btn is-active" data-sort="az">A–Z</button>
+    <button type="button" class="ti-sort__btn is-active" data-sort="az">A to Z</button>
     <button type="button" class="ti-sort__btn" data-sort="role">By role</button>
   </div>
   <div class="ti-filter" role="group" aria-label="Filter by role">

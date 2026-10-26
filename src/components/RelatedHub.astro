@@ -1,6 +1,6 @@
 ---
 /**
- * RelatedHub — contextual internal links shown above the footer.
+ * RelatedHub: contextual internal links shown above the footer.
  * Renders 3 hub links (excluding the current page) to boost interlinking
  * between high-value pages: codes, safe codes, tier list, build planner, error codes.
  */
@@ -11,17 +11,24 @@ export interface Props {
 const { current = '' } = Astro.props;
 
 const hubs = [
-  { href: '/guides/division-resurgence-codes/', label: 'Redeem Codes', icon: '🎁', desc: 'All active codes' },
-  { href: '/guides/division-resurgence-safe-codes/', label: 'Safe Codes', icon: '🔐', desc: 'Every safe location' },
-  { href: '/tier-list/', label: 'Build Tier List', icon: '🏆', desc: 'Meta rankings' },
-  { href: '/builder/', label: 'Build Planner', icon: '🔧', desc: 'Plan your loadout' },
-  { href: '/guides/division-resurgence-error-codes/', label: 'Error Codes', icon: '⚠️', desc: 'Fixes & workarounds' },
+  { href: '/guides/division-resurgence-codes/', label: 'Redeem Codes', icon: 'gift', desc: 'All active codes' },
+  { href: '/guides/division-resurgence-safe-codes/', label: 'Safe Codes', icon: 'lock', desc: 'Every safe location' },
+  { href: '/tier-list/', label: 'Build Tier List', icon: 'trophy', desc: 'Meta rankings' },
+  { href: '/builder/', label: 'Build Planner', icon: 'wrench', desc: 'Plan your loadout' },
+  { href: '/guides/division-resurgence-error-codes/', label: 'Error Codes', icon: 'alert', desc: 'Fixes & workarounds' },
 ];
 
 // Filter out the current page and pick 3
 const links = hubs
   .filter(h => !current.includes(h.href.replace(/\/$/, '')))
   .slice(0, 3);
+const ICONS: Record<string, string> = {
+  gift: '<rect x="3" y="8" width="18" height="4" rx="1"/><path d="M12 8v13M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7"/><path d="M7.5 8a2.5 2.5 0 0 1 0-5C10 3 12 8 12 8s2-5 4.5-5a2.5 2.5 0 0 1 0 5"/>',
+  lock: '<rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/>',
+  trophy: '<path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0V4z"/><path d="M17 5h3v2a3 3 0 0 1-3 3M7 5H4v2a3 3 0 0 0 3 3"/>',
+  wrench: '<path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.4-.6-.6-2.4 2.5-2.5z"/>',
+  alert: '<path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 17h.01"/>',
+};
 ---
 
 {links.length > 0 && (
@@ -30,7 +37,7 @@ const links = hubs
     <div class="related-hubs__links">
       {links.map(link => (
         <a href={link.href} class="related-hubs__link">
-          <span class="related-hubs__icon">{link.icon}</span>
+          <span class="related-hubs__icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" set:html={ICONS[link.icon] || ICONS.wrench}></svg></span>
           <span class="related-hubs__text">
             <strong>{link.label}</strong>
             <small>{link.desc}</small>
@@ -83,7 +90,8 @@ const links = hubs
     background: rgba(242, 104, 34, 0.05);
   }
   .related-hubs__icon {
-    font-size: 1.25rem;
+    display: inline-flex;
+    color: var(--accent);
     flex-shrink: 0;
   }
   .related-hubs__text {

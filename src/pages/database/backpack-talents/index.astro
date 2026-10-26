@@ -13,9 +13,9 @@ const breadcrumbs = [
 ];
 
 const faqs = [
-  { question: "What are backpack talents in Division Resurgence?", answer: "Backpack talents are passive abilities that roll on Tier 2 backpacks. Each backpack can have one talent, and it activates automatically — no button press needed. They affect things like healing, ammo management, and damage output. You equip them through the Build Planner." },
+  { question: "What are backpack talents in Division Resurgence?", answer: "Backpack talents are passive abilities that roll on Tier 2 backpacks. Each backpack can have one talent, and it activates automatically, no button press needed. They affect things like healing, ammo management, and damage output. You equip them through the Build Planner." },
   { question: "What is the best backpack talent in Division Resurgence?", answer: "It depends on your build, but the most universally strong backpack talents buff sustain or amplify your main damage source. DPS players usually want talents that boost weapon damage on kill or after using skills. Tank and healer builds lean toward talents that regenerate armor or extend skill effects. Check the individual talent descriptions on this page to match one to your playstyle." },
-  { question: "Can you reroll backpack talents in Division Resurgence?", answer: "Yes. You can recalibrate one attribute or talent per gear piece at the Recalibration Station. If your backpack dropped with a garbage talent but great stats, you can swap the talent out. Just remember — you can only recalibrate one slot per item, so pick wisely." },
+  { question: "Can you reroll backpack talents in Division Resurgence?", answer: "Yes. You can recalibrate one attribute or talent per gear piece at the Recalibration Station. If your backpack dropped with a garbage talent but great stats, you can swap the talent out. Just remember, you can only recalibrate one slot per item, so pick wisely." },
 ];
 
 const toSlug = (name: string) => name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
@@ -48,13 +48,13 @@ const itemListLd = {
   {description}
   {breadcrumbs}
   heading="Backpack Talents"
-  subheading="Every backpack talent in the game on one page — full effects, roles, and anchors you can link straight to. Most of them are mid. A few of them will change your life."
+  subheading="Every backpack talent in the game on one page: full effects, roles, and anchors you can link straight to. Most of them are mid. A few of them will change your life."
   jsonLd={itemListLd}
   lastVerified={lastVerified}
   {faqs}
 >
   <div style="color: #c8c8d0; line-height: 1.75; font-size: var(--text-base); margin-bottom: var(--sp-6); max-width: 72ch;">
-    <p>Backpack talents roll on Tier 2 backpacks and are always active once equipped — no activation, no cooldown management. Your backpack talent stacks with your Body Armor talent, your weapon talents, and your gear set bonuses, so the right pick multiplies everything else your build is doing. If a drop comes with great stats but a dud talent, the Recalibration Station lets you swap the talent slot (one recalibration per piece).</p>
+    <p>Backpack talents roll on Tier 2 backpacks and are always active once equipped. No activation, no cooldown management. Your backpack talent stacks with your Body Armor talent, your weapon talents, and your gear set bonuses, so the right pick multiplies everything else your build is doing. If a drop comes with great stats but a dud talent, the Recalibration Station lets you swap the talent slot (one recalibration per piece).</p>
   </div>
 
   <TalentIndex
@@ -63,5 +63,5 @@ const itemListLd = {
     basePath="/database/backpack-talents/"
   />
 
-<AdSenseUnit label="Advertisement — database category" />
+<AdSenseUnit label="Advertisement (database category)" />
 </DatabaseLayout>

@@ -71,7 +71,7 @@ Patch 1.1.2 deployed alongside the PC Early Access launch. The update was a stab
 
 Patch 1.1.2 was a foundation patch, not a flashy one. The real story here is the mouse and keyboard work: this update shipped alongside the [PC Early Access launch](/news/pc-early-access-launch/), which meant Ubisoft had to make sure the input layer worked on day one for an entirely new platform. The non-QWERTY keyboard improvements matter more than they look, because the game launched globally and a significant chunk of the PC player base is on AZERTY, QWERTZ, or other regional layouts.
 
-The Dark Zone box deal being temporarily disabled is worth noting. Ubisoft's wording was "to prevent incorrect or confusing behavior", and some players reportedly read that behavior as being charged twice. Ubisoft pulled it rather than risk more trust damage, which was the right call after the early launch bugs.
+The Dark Zone box deal was also temporarily disabled. Ubisoft's wording was "to prevent incorrect or confusing behavior", and some players reportedly read that behavior as being charged twice. Ubisoft pulled it rather than risk more trust damage, which was the right call after the early launch bugs.
 
 If you're experiencing remaining issues after this patch, check the [error codes guide](/guides/division-resurgence-error-codes/) for current workarounds, or browse the [Phase 2 patch notes](/patch-notes/phase-2-patch-notes/) for what came next.
 

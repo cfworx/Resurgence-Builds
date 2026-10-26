@@ -40,7 +40,7 @@ Mixed-to-frustrated. Multiple top comments described the answers as light on com
 **Related Reading:**
 - [Which Specialization Should You Pick?](/guides/which-specialization-to-pick/)
 - [Safe Codes Master List](/guides/division-resurgence-safe-codes/): the 33 encrypted crates mentioned in the stream
-- [Season 1–3 Roadmap](/news/season-1-2-3-roadmap/)
+- [Season 1 to 3 Roadmap](/news/season-1-2-3-roadmap/)
 - [Error Codes Guide](/guides/division-resurgence-error-codes/)
 
 ## Sources

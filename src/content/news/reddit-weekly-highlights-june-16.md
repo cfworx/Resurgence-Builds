@@ -29,7 +29,7 @@ We sifted through 400 posts on r/thedivisionresurgence from the last 19 days and
 
 ---
 
-## 1. 🪂 "Fly Boi"
+## 1. "Fly Boi"
 
 **u/Valapul · June 8 · [Original post](https://www.reddit.com/r/thedivisionresurgence/comments/1u08jov/fly_boi/)**
 
@@ -45,7 +45,7 @@ Honestly that is the most exciting patch note none of us asked for.
 
 ---
 
-## 2. 🧱 "Found a Cool Glitch, Lagged Off the Edge and Could Walk the Whole Ledge"
+## 2. "Found a Cool Glitch, Lagged Off the Edge and Could Walk the Whole Ledge"
 
 **u/PsychologicalAd4696 · June 1 · [Original post](https://www.reddit.com/r/thedivisionresurgence/comments/1ttv9hw/found_a_cool_glitch_lagged_off_the_edge_before_i/)**
 
@@ -57,7 +57,7 @@ The fact that some of us legitimately enjoy hunting these moments is part of the
 
 ---
 
-## 3. 📦 "Is There a Way to Open This Crate?"
+## 3. "Is There a Way to Open This Crate?"
 
 **u/MINIVV · June 8 · [Original post](https://www.reddit.com/r/thedivisionresurgence/comments/1u0hu1l/is_there_a_way_to_open_this_crate/)**
 
@@ -69,7 +69,7 @@ If you have been playing long enough you have stood in front of one of these thi
 
 ---
 
-## 4. 🔴 "What Are These Red Pillars in Dark Zone???"
+## 4. "What Are These Red Pillars in Dark Zone???"
 
 **u/Minimum-Ad4294 · June 6 · [Original post](https://www.reddit.com/r/thedivisionresurgence/comments/1tym4d0/what_are_these_red_pillars_in_dark_zone/)**
 
@@ -81,7 +81,7 @@ The community's answer is that they mark active landmark engagements, but preten
 
 ---
 
-## 5. 🥪 "What????"
+## 5. "What????"
 
 **u/Whole_Ad_1550 · June 6 · [Original post](https://www.reddit.com/r/thedivisionresurgence/comments/1ty4efm/what/)**
 
@@ -93,7 +93,7 @@ This is the universal looter shooter mood compressed to its purest form. The com
 
 ---
 
-## 6. 💵 "I Wonder How Much Was Spent to Upgrade This"
+## 6. "I Wonder How Much Was Spent to Upgrade This"
 
 **u/OMNOMNOM_BURP · June 11 · [Original post](https://www.reddit.com/r/thedivisionresurgence/comments/1u35x8q/i_wonder_how_much_was_spent_to_upgrade_this/)**
 
@@ -105,7 +105,7 @@ That sigh is doing a lot. Sixty-five comments later the thread is half awe and h
 
 ---
 
-## 7. 🎨 "Fanart of My Favorite Character"
+## 7. "Fanart of My Favorite Character"
 
 **u/StryangeFox · June 1 · [Original post](https://www.reddit.com/r/thedivisionresurgence/comments/1ttcit0/fanart_of_my_favorite_character_from_the_division/)**
 
@@ -117,7 +117,7 @@ This is the post nobody talks about but everyone needs. The whole community spen
 
 ---
 
-## 8. 🤿 "Came Across an Unmarked Lost Signal"
+## 8. "Came Across an Unmarked Lost Signal"
 
 **u/NoPart7463 · June 8 · [Original post](https://www.reddit.com/r/thedivisionresurgence/comments/1tzumpx/came_across_a_unmarked_lost_signal/)**
 
@@ -129,7 +129,7 @@ This community discovers things the documentation does not list, and that is the
 
 ---
 
-## 9. 🏷️ "How Did He Get That Title?"
+## 9. "How Did He Get That Title?"
 
 **u/Important-Papaya756 · June 9 · [Original post](https://www.reddit.com/r/thedivisionresurgence/comments/1u1hrdd/how_did_he_get_that_title/)**
 
@@ -143,7 +143,7 @@ Pair this one with the SHD Recruiter sighting from u/A_M_R_Egypt the same week (
 
 ---
 
-## 10. ⚙️ "PKM Needs a Buff"
+## 10. "PKM Needs a Buff"
 
 **u/rinzu24 · June 8 · [Original post](https://www.reddit.com/r/thedivisionresurgence/comments/1u0of7i/pkm_needs_a_buff/)**
 

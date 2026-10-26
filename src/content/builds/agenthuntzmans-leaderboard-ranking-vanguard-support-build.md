@@ -46,7 +46,7 @@ videoChannel: "AgentHuntzman"
 
 This is the Vanguard Recon Scout, a full team-support build that triples your squad's damage output. You don't kill things. You make your entire team kill things three times faster.
 
-The loop is simple: stack Engineering through Torrential Downpour and Fully Charged, convert it into team-wide weapon damage through Tactical Smart Cover, debuff enemies with Scanning Pulse, and supercharge everyone's rate of fire with Tactical Link. Your personal DPS will look embarrassing. Your team's total output will be disgusting.
+The loop is simple: stack Engineering through Torrential Downpour and Fully Charged, convert it into team-wide weapon damage through Tactical Smart Cover, debuff enemies with Scanning Pulse, and boost everyone's rate of fire with Tactical Link. Your personal DPS will look embarrassing. Your team's total output will be disgusting.
 
 > [!WARNING] Season 1 Phase 3 and Season 2 changes that affect this build
 > - **Recon (Season 1 Phase 3, June 24):** Ubisoft fixed Recon "passively dealing more damage than expected" without saying which effect. That patch went live after this page's May 24 update. This build lives on team buffs, so the hit is probably small, but retest.
@@ -163,7 +163,7 @@ The one exception: if your rotations feel ragged in practice and Smart Cover is 
 
 ---
 
-## Weapons Deep Dive
+## Weapons in Detail
 
 All weapons below assume a **tactical mod is equipped**. SMG tactical mod reduces reload time by roughly 45% (community-tested before the Season 2 weapon mod rework). AR tactical mod improves stability and reduces recoil. These are not optional. Equip them.
 

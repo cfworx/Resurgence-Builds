@@ -46,7 +46,7 @@ const itemListLd = {
       '@type': 'Thing',
       '@id': `https://resurgencebuilds.com/database/skill-mod-combos/${toSlug(item.name)}/`,
       name: item.name,
-      description: `${item.name} — ${item.specialization} Skill Mod Combo. 2pc: ${fixPlurals(item.bonus2)}. 3pc: ${fixPlurals(item.bonus3)}`,
+      description: `${item.name}, ${item.specialization} Skill Mod Combo. 2pc: ${fixPlurals(item.bonus2)}. 3pc: ${fixPlurals(item.bonus3)}`,
       url: `https://resurgencebuilds.com/database/skill-mod-combos/${toSlug(item.name)}/`,
       subjectOf: { '@id': 'https://resurgencebuilds.com/#division-resurgence' }
     }
@@ -112,7 +112,7 @@ const itemListLd = {
       </a>
     ))}
   </div>
-<AdSenseUnit label="Advertisement — database category" />
+<AdSenseUnit label="Advertisement (database category)" />
 </DatabaseLayout>
 
 <script>
