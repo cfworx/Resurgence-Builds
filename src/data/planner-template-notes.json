@@ -1,0 +1,21 @@
+{
+  "_comment": "Notes the build planner shows while a build guide's template is loaded unchanged. Keyed by build id (the file name in src/content/builds). 'text' is shown as written. 'missingWeapons' lists weapons the guide uses that may not be in standard-weapons.json yet, as [name, slot]: the template's plannerHash names them (for example w2s=P90), the planner fills the slot as soon as a weapon with that name exists, and the note only mentions the ones still missing.",
+  "agenthuntzmans-leaderboard-ranking-vanguard-support-build": {
+    "missingWeapons": [["P90", "secondary"]]
+  },
+  "tech-aegis-engineering-build-tampishach": {
+    "missingWeapons": [["Copperhead", "primary"], ["MPX", "secondary"]],
+    "text": "Team Backup and Performance Enhancer show here under their in-game names, Combat Enhancer and Teamfight."
+  },
+  "tactical-pharma-season-2-build-ggreborn": {
+    "text": "GGReborn doesn't say which two pieces are Fire Cycle, so this uses TikTokAndy's split from the same guide: body armor and holster."
+  },
+  "aegis-team-healer-tech-operator-build-tiktokandy": {
+    "missingWeapons": [["MP7", "primary"]],
+    "text": "The guide doesn't say which two of backpack, gloves and holster are Mechanical Expert; this puts it on gloves and holster."
+  },
+  "any-weapon-commando-beginner-vanguard-build-tiktokandy": {
+    "missingWeapons": [["P90", "secondary"]],
+    "text": "The guide doesn't say which of the last two pieces is the holster; this puts the Phalanx Attack piece there."
+  }
+}

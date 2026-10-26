@@ -1,0 +1,58 @@
+{
+  "_comment": "Bonus attributes a weapon can roll, for the build planner's weapon attribute picker. It is the gear attribute list (bonus-attributes.json) with the Season 2 Phase 1 change applied: Ubisoft removed the damage type bonuses (Blast, Piercing and Shredding Weapon and Skill Damage) from weapon rolls 'in favor of All Weapon Damage or All Skill Damage' (see src/content/patch-notes/season-2-phase-1-the-call.md). The new weapon MOD pool from the same patch (Weapon Damage %, Skill Intensity %, Headshot Damage %, Weapon and Skill Critical Damage %) is a different thing: those are mod rolls, not weapon rolls, and all five are already in this list. 'removed' keeps the old rolls so share links that use them still open; the planner marks them instead of counting them as current.",
+  "categories": [
+    {
+      "category": "Firepower",
+      "attributes": [
+        "Weapon Critical Hit Chance",
+        "Weapon Critical Hit Damage",
+        "Weapon Damage",
+        "All Weapon Damage",
+        "Weapon Multi-Shot Chance",
+        "Headshot Damage"
+      ]
+    },
+    {
+      "category": "Toughness",
+      "attributes": [
+        "Max Health",
+        "Armor",
+        "Damage Reduction"
+      ]
+    },
+    {
+      "category": "Engineering",
+      "attributes": [
+        "Skill Critical Chance",
+        "Skill Critical Damage",
+        "Skill Intensity",
+        "All Skill Damage",
+        "Skill Multi-Shot Chance",
+        "Skill Duration",
+        "Skill Radius",
+        "Skill Cooldown Recovery"
+      ]
+    },
+    {
+      "category": "Universal",
+      "attributes": [
+        "Received Healing",
+        "Damage to Elites",
+        "Signature Ability Charge Efficiency"
+      ]
+    }
+  ],
+  "removed": [
+    {
+      "note": "no longer rolls on weapons since Season 2 Phase 1",
+      "attributes": [
+        "Weapon Blast Damage",
+        "Weapon Piercing Damage",
+        "Weapon Shredding Damage",
+        "Skill Blast Damage",
+        "Skill Piercing Damage",
+        "Skill Shredding Damage"
+      ]
+    }
+  ]
+}
