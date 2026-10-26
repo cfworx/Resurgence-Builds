@@ -42,8 +42,14 @@ export const DATABASE_UPDATED = '2026-10-25';
 export const GA4_ID = 'G-HWT2GX34EX'; // live since 2026-10-26
 
 /**
- * Buttondown username for the Resurgence Builds email list (separate from Inland Care Jobs' list).
- * Empty means no signup box anywhere. When set, a box shows on build guides and tier list pages,
- * posting to Buttondown's embed endpoint, and public/_headers already allows https://buttondown.com in form-action.
+ * Email signup for Resurgence Builds (separate from Inland Care Jobs' list). Works with any provider
+ * whose form posts an email address to a URL. Empty action means no signup box anywhere.
+ * When set, a box shows on build guides and tier list pages.
+ *   Kit (free plan):  action 'https://app.kit.com/forms/<FORM_ID>/subscriptions', emailField 'email_address'
+ *   Buttondown:       action 'https://buttondown.com/api/emails/embed-subscribe/<USERNAME>', emailField 'email', hidden { embed: '1' }
+ * public/_headers form-action must allow the action's origin (Kit and Buttondown already are).
  */
-export const BUTTONDOWN_USERNAME = '';
+export const NEWSLETTER_FORM: { action: string; emailField: string; hidden?: Record<string, string> } = {
+  action: '',
+  emailField: 'email',
+};

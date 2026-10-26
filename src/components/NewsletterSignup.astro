@@ -1,28 +1,29 @@
 ---
-import { BUTTONDOWN_USERNAME } from '../data/site-config';
+import { NEWSLETTER_FORM } from '../data/site-config';
 
 export interface Props {
-  /** Where the box sits, so Buttondown can tell signups apart by source page. */
+  /** Where the box sits; keeps the input ids unique. */
   source: string;
 }
 
 const { source } = Astro.props;
 const id = `nl-email-${source}`;
+const { action, emailField, hidden = {} } = NEWSLETTER_FORM;
 ---
 
-{BUTTONDOWN_USERNAME && (
+{action && (
   <aside class="newsletter" aria-labelledby={`${id}-heading`}>
     <h2 id={`${id}-heading`} class="newsletter__heading">Get the new tier list the day it drops</h2>
     <p class="newsletter__text">One email when each season's rankings and top builds change. No spam, no "you won't believe this loadout." Unsubscribe in one click.</p>
     <form
       class="newsletter__form"
-      action={`https://buttondown.com/api/emails/embed-subscribe/${BUTTONDOWN_USERNAME}`}
+      action={action}
       method="post"
       target="_blank"
     >
       <label for={id} class="newsletter__label">Email address</label>
-      <input type="email" name="email" id={id} class="newsletter__input" placeholder="agent@example.com" autocomplete="email" required />
-      <input type="hidden" name="embed" value="1" />
+      <input type="email" name={emailField} id={id} class="newsletter__input" placeholder="agent@example.com" autocomplete="email" required />
+      {Object.entries(hidden).map(([name, value]) => <input type="hidden" name={name} value={value} />)}
       <button type="submit" class="newsletter__button">Notify me</button>
     </form>
   </aside>
