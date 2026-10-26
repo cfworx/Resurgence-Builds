@@ -17,7 +17,7 @@ shareText: "Nadie's Rank 16 Bulwark Juggernaut stun-tank. 336k Health, Pummeling
 sources:
   - 'All gear stats, weapon talents, OS Protocol details, combo set bonuses, and combat statistics sourced from in-game screenshots provided by Nadie, June 2026.'
   - '<a href="https://www.facebook.com/share/v/1GMpakHatx/">Nadie, Gameplay Demonstration Video</a>, June 2026.'
-plannerHash: "s=Bulwark&sc=Juggernaut&n=Involuntary+Nap+Time&ms=gs-14&m1=dr&m2=arm&cs=gs-14&ct=ba-25&c1=sace&c2=mhp&ps=gs-14&pt=bp-21&p1=chc&p2=dr&gs=gs-15&g1=mhp&g2=arm&hs=gs-14&h1=rh&h2=sace&ks=gs-15&k1=rh&k2=sdu&w1s=sw-13&w1tr=T2&w1t=wt-6&w1t2=wt-15&w1b1=rh&w1b2=wms&w2s=sw-6&w2tr=T2&w2t=wt-46&w2t2=wt-60&w2b1=mhp&w2b2=rh&os=os-54&sm1=smc-37&sm2=smc-50&sm3=smc-51"
+plannerHash: "s=Bulwark&sc=Juggernaut&n=Involuntary+Nap+Time&ms=gs-14&m1=dr&m2=arm&gs=gs-15&g1=mhp&g2=arm&hs=gs-14&h1=rh&h2=sace&cs=gs-14&ct=ba-25&c1=sace&c2=mhp&ps=gs-14&pt=bp-21&p1=chc&p2=dr&ks=gs-15&k1=rh&k2=sdu&w1s=sw-13&w1tr=T2&w1t=wt-6&w1t2=wt-15&w1b1=rh&w1b1v=19.28&w1b2=wms&w1b2v=4.26&w2s=sw-6&w2tr=T2&w2t=wt-46&w2t2=wt-60&w2b1=mhp&w2b1v=16.47&w2b2=rh&w2b2v=16.37&os=os-54&sm1=smc-37&sm2=smc-50&sm3=smc-51"
 faqs:
   - question: "What is the best Bulwark Juggernaut build in Division Resurgence?"
     answer: "Nadie's Involuntary Nap Time build runs 4pc Healing Elites, 2pc Self-Propelled Shield, PPSH-41 with Backup Protection and Damage Trade, FAMAS with Shooting Repair and Swift Taunt, and the Pummeling Shield OS Protocol. It sat at 336k Health, 13.2k Armor, and Rank 16 on the Asia Server Bulwark Juggernaut leaderboard when Nadie sent it in (June 2026). The June 26 hotfix later put a 10-second cooldown on Pummeling Shield's stun, so the stun-lock is weaker than it was."

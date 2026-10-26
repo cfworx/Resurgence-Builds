@@ -31,6 +31,7 @@ faqs:
 videoId: "ITIJB2nj3zg"
 videoTitle: 'TikTokAndy: Best "Automatic" Double Barrel Shotgun Build'
 videoChannel: "TikTokAndy"
+plannerHash: "s=Vanguard&sc=Commando&n=Misdirection+Double+Barrel&ms=gs-3&gs=gs-3&g1=hsd&hs=gs-3&cs=gs-5&ct=ba-22&ps=gs-5&pt=bp-7&ks=gs-3&w1s=sw-22&w1t=wt-29&w1t2=wt-56&w1b1=wd&w1b2=chd&w2s=sw-11&w2tr=T0&w2t=wt-66&w2t2=wt-26&w2b1=mhp&os=os-31&sm1=smc-69&sm2=smc-63&sm3=smc-66"
 ---
 
 ## What This Build Does
