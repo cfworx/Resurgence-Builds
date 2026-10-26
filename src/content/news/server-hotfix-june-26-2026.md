@@ -83,7 +83,7 @@ For anyone who has been building tank specializations to the absolute limit, thi
 
 ### Also New: A Dark Zone Event
 
-The hotfix post didn't mention it, but the same update started a Dark Zone event that Died Again Gaming calls "Threat Level Increased." Going by his reading of the event text, it worked like a nightmare mode for bosses: double health, double damage and double equipment rewards. He read that as more gear, not better odds on gold skill mods, and warned that double the loot meant double the Rogue agents.
+The hotfix post didn't mention it, but according to Died Again Gaming the same update also brought a new Dark Zone event, which he calls "Threat Level Increased." He compared it to a nightmare mode: going by the event text, bosses had double health, double damage and double equipment rewards. He read that as more gear, not better odds on gold skill mods, and warned that double the loot meant double the Rogue agents.
 
 ---
 

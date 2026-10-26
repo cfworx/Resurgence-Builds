@@ -1,7 +1,7 @@
 ---
 title: "Season 2 Countdown Daily Login Event"
 publishDate: 2026-07-27
-updatedDate: 2026-10-24
+updatedDate: 2026-10-26
 author: "RapidF5"
 tags: ["News", "Events", "Season 2", "Roadmap", "Steam"]
 description: "Division Resurgence Season 2 Countdown login event runs July 27 to Aug 10. Plus what Ubisoft has said so far about Season 2, the PC launch and Steam."
@@ -13,7 +13,7 @@ faqs:
   - question: "What rewards does the Season 2 Countdown give?"
     answer: "Ubisoft's announcement describes it as 'Log in every day to begin Season 2 with a Head Start' and doesn't list the individual rewards, so the event screen in-game is where to check them day by day."
   - question: "When did Division Resurgence Season 2 start?"
-    answer: "Season 2 Phase 1, 'The Call,' started on Wednesday, August 5, 2026, the same day as the Steam launch. When this countdown began on July 27, the exact date hadn't been announced yet; Ubisoft confirmed it on July 31. Our six-weeks-after-Phase-3 math landed on the same Wednesday, which we will be bringing up at parties."
+    answer: "Season 2 Phase 1, 'The Call,' started on Wednesday, August 5, 2026, the same day as the Steam launch. When this countdown began on July 27, the exact date hadn't been announced yet; Ubisoft announced it in a July 30 developer diary, and the press release followed on July 31. Our six-weeks-after-Phase-3 math landed on the same Wednesday, which we will be bringing up at parties."
   - question: "Will my Division Resurgence progress carry over to Steam?"
     answer: "Yes, through your Ubisoft Connect account. Ubisoft's April roadmap said early access progress carries over to the official PC launch, and its PC guidance ties progression to your Ubisoft Connect account, not the device. If you play as a guest on mobile, link to Ubisoft Connect first, before logging into an existing Ubisoft Connect account anywhere else."
   - question: "Is Division Resurgence Season 3 still coming this winter?"
@@ -23,7 +23,7 @@ faqs:
 **The Season 2 Countdown daily login event runs from Monday, July 27 to Monday, August 10, 2026.** Ubisoft's description: "Log in every day to begin Season 2 with a Head Start." The announcement doesn't list the daily rewards, so the plan is simple: open the game once a day for the next two weeks, even if it's just to claim the reward and go to bed. Your login record is only as good as your worst Tuesday.
 
 > [!INFO] Update (October 2026)
-> Ubisoft confirmed on July 31 that the Steam launch and Season 2 would both arrive on Wednesday, August 5 ([our report](/news/steam-release-date-august-5/)). Season 2 Phase 1, "The Call," went live that day with the free Bighorn exotic ([our coverage](/news/season-2-the-call-live-bighorn/)), so this countdown kept running for five days into Season 2.
+> Ubisoft announced in a July 30 developer diary that the Steam launch and Season 2 would both arrive on Wednesday, August 5 ([our report](/news/steam-release-date-august-5/)). Season 2 Phase 1, "The Call," went live that day with the free Bighorn exotic ([our coverage](/news/season-2-the-call-live-bighorn/)), so this countdown kept running for five days into Season 2.
 
 ## The event, at a glance
 

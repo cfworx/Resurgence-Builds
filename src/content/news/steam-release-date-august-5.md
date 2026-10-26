@@ -11,7 +11,7 @@ shareTitle: "Steam date locked: August 5"
 shareText: "Division Resurgence hits Steam on Wednesday, August 5, the same day as Season 2. Here's how to bring your phone progress along without losing it."
 faqs:
   - question: "When does Division Resurgence release on Steam?"
-    answer: "It launched on Steam on Wednesday, August 5, 2026, the same day Season 2 started. Ubisoft announced the date in a developer diary on July 30, and the press coverage followed on July 31. A midweek launch, which means the dads among us got to 'test our home internet' on a Wednesday night."
+    answer: "It launched on Steam on Wednesday, August 5, 2026, the same day Season 2 started. Ubisoft first announced the date in a developer diary streamed on Twitch on July 30, and MassivelyOP reported it on July 31, citing Ubisoft's press release and social posts. A midweek launch, which means the dads among us got to 'test our home internet' on a Wednesday night."
   - question: "Is Division Resurgence free on Steam?"
     answer: "Yes, it's free to play on Steam, just like on mobile and Ubisoft Connect. The only up-front cost is about 30 GB of drive space, which for some of us meant finally uninstalling the game we swore we'd finish in 2019."
   - question: "Will my mobile progress carry over to Steam?"
@@ -72,15 +72,16 @@ Two things jump out. First, the minimum graphics are integrated GPUs, which is g
 We missed this one when we wrote the post. The date was first revealed a day earlier, in a developer diary Ubisoft streamed on Twitch on July 30 (Died Again Gaming [replayed it in full](https://www.youtube.com/watch?v=UVtGdT0p3Uo)). It covered a lot more than the date:
 
 - **Season 2 on August 5:** new limited-time events, a new Classified Ops Pass, and new weapons and cosmetics, led by **The Bighorn**, an automatic assault rifle that gains damage on headshots and switches to semi-auto while you aim.
-- **Steam extras:** trading cards and Points Shop items (animated backgrounds, avatar frames), and the 100,000-wishlist goal rewards: an apparel set plus regular and exclusive SHD Keys. What actually landed is in [Steam launch rewards](/news/steam-launch-rewards-twitch-drops/).
+- **Steam extras:** trading cards and Points Shop items (animated backgrounds, avatar frames).
+- **Wishlist goal:** at 100,000 Steam wishlists, an apparel set plus regular and exclusive SHD Keys for all players, on any platform. What actually landed is in [Steam launch rewards](/news/steam-launch-rewards-twitch-drops/).
 - **Twitch Drops** from August 5 for two weeks, with a red puffer jacket, as long as your Twitch account is linked to the Ubisoft account you play on.
-- **Agent Care Protocol:** the executive producer described a new approach to fixes. When players report an issue, the team first checks how long the fix will take, and if it's quick, pushes it live as soon as possible instead of waiting to package it into a bigger update.
+- **Agent Care Protocol:** the executive producer described a new approach to fixes. When players report an issue, the team first checks how long the fix will take, and if it's quick, pushes it live as soon as possible instead of waiting to package it into an update.
 - **A new bug tracker** was taking over from the Trello board, as a place to report issues, suggest improvements and add to existing reports.
-- **Ubisoft Singapore**, a development partner studio, talked through the PC port (mouse and keyboard, anti-cheat, cross-play through Ubisoft Connect), said the team was working on letting players turn cross-play on and off by platform, and was exploring Steam Deck compatibility.
+- **Ubisoft Singapore**, a development partner studio, talked through the PC port (mouse and keyboard, anti-cheat, cross-play through Ubisoft Connect), said the team was working on letting players turn cross-play on and off by platform, and was exploring the possibility of making the game Steam Deck compatible.
 
 ## Not announced yet
 
-As of July 31, we haven't seen Ubisoft detail what's in Season 2 Phase 1 (new pass, new exotic, events) or any Steam-specific extras such as achievements or trading cards. We'll cover them the moment they're posted. (The developer diary above had already covered most of that. We just hadn't watched it yet.)
+As of July 31, we haven't seen Ubisoft detail what's in Season 2 Phase 1 (new pass, new exotic, events) or any Steam-specific extras such as achievements or trading cards. We'll cover them the moment they're posted. (The developer diary above had already touched on some of it: the Bighorn, a new pass, new events, trading cards and Points Shop items, though not achievements. We just hadn't watched it yet.)
 
 Meanwhile, the [Season 2 Countdown](/news/season-2-countdown-login-event/) daily login event keeps going until August 10, and Trigger Happy weapon training runs until August 5.
 

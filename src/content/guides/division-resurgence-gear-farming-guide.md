@@ -36,7 +36,7 @@ You hit level 40, your gear is a patchwork quilt of blues and yellows, and the g
 4. **Upgrade keepers only.** Level 40 to 50 costs purple materials, which Oldfartsgaming found hard to come by.
 5. **Mods are Power Score you're leaving on the table.** Run Heroic Hostile Nests, then run them again.
 
-> **How we put this together:** Ubisoft's patch notes for everything official, AgentHuntzman's "Gear Farming Made EASY" (June 3, embedded above) for the farm itself, plus notes from TikTokAndy and Oldfartsgaming. Ubisoft doesn't publish mission loot tables, so the mission list below is one creator's experience from June, before Season 2. If a mission's reward preview says something different today, the preview wins.
+> **How we put this together:** Ubisoft's patch notes for everything official, AgentHuntzman's "Gear Farming Made EASY" (June 3, embedded above) for the farm itself, plus notes from TikTokAndy, Oldfartsgaming, GGReborn and Died Again Gaming. Ubisoft doesn't publish mission loot tables, so the mission list below is one creator's experience from June, before Season 2. If a mission's reward preview says something different today, the preview wins.
 
 ---
 
@@ -91,7 +91,7 @@ Season 2 Phase 2 helps here too: Ubisoft increased the weapon and gear rewards f
 | Dark Zone Heroic landmarks | Rare. AgentHuntzman says the Q Building, the Heroic landmark, gives the most, and by June he'd had two T2 pieces from it |
 | Dark Zone enemy leaders | AgentHuntzman calls the Heroic enemy leader and his cache the best Dark Zone farm for it |
 
-**About that Power Score requirement.** AgentHuntzman worked from a recommended 19.2k Power Score for Elite missions in June. Died Again Gaming put Elites at "at least 19.2" in early July, and Heroic missions at about 15,000 to 16,000. The game's own tooltip explains what the number means: below the recommended score, an activity is very hard; above it, it plays at the expected difficulty; far above it, it gets much easier. You can go in under, he says, but only with your stats close to perfect.
+**About that Power Score requirement.** AgentHuntzman worked from a recommended 19.2k Power Score for Elite missions in June. Died Again Gaming put Elites at "at least 19.2" in early July, and Heroic missions at about 15,000 to 16,000. The game's own tooltip explains what the number means: below the recommended score, an activity is very hard; above it, it plays at the expected difficulty; far above it, it gets much easier. You can go in under, AgentHuntzman says, but only with your stats close to perfect.
 
 The Dark Zone side of this (contamination, extraction, what the Q Building is) is in our [Dark Zone guide](/guides/division-resurgence-dark-zone-guide/). TikTokAndy says the level 40 Dark Zone is where he got access to T0, T1 and T2 gear.
 

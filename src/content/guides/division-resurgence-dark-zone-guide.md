@@ -38,7 +38,7 @@ Ubisoft calls the Dark Zone a "PvPvE extraction mode": you fight NPCs for loot, 
 - **The danger:** NPCs, contamination, and any agent who decides to go **Rogue**. PvP is off until someone does.
 - **The payoff:** gear, skill mods (creators call them chips, and the gold ones are the prize), and **DZ Credits** for the Dark Zone vendor, which sells exotics.
 
-> **How we put this together:** Ubisoft's patch notes (linked to our patch note pages), two written guides from the week Season 2 and the PC version launched in August ([Dot Esports](https://dotesports.com/mobile/guides/the-division-resurgence-pvp) and [AllThings.How](https://allthings.how/the-division-resurgence-how-to-farm-the-dark-zone-solo/)), seven of TikTokAndy's videos from September and October, from his very first day in the Dark Zone to his October Rogue runs, and one tip from Oldfartsgaming. When a number comes from just one of them, we say whose it is.
+> **How we put this together:** Ubisoft's patch notes (linked to our patch note pages), two written guides from the week Season 2 and the PC version launched in August ([Dot Esports](https://dotesports.com/mobile/guides/the-division-resurgence-pvp) and [AllThings.How](https://allthings.how/the-division-resurgence-how-to-farm-the-dark-zone-solo/)), seven of TikTokAndy's videos from September and October, from his very first day in the Dark Zone to his October Rogue runs, one tip from Oldfartsgaming, and a few from Died Again Gaming's October 25 live stream. When a number comes from just one of them, we say whose it is.
 
 ---
 
@@ -71,7 +71,7 @@ Contamination is the Dark Zone's way of saying "hurry up."
 - **Contaminated means unusable.** Dark Zone items can't be used on the regular map until they're extracted (AllThings.How).
 - **Die and you drop it.** Your backpack stays where you fell, and anyone can loot it.
 - **Loot is shared.** TikTokAndy says that when someone on your team opens a crate, everyone gets something, and ammo boxes refill the whole team.
-- **Mods follow your specialization.** AllThings.How says most of the skill mods that drop in the Dark Zone are tied to the specialization you have active, so switch before you go in. Died Again Gaming believes it's around 80 to 90 percent for the daily's skill mods, and switches to the spec he's leveling first.
+- **Mods follow your specialization.** AllThings.How says most of the skill mods that drop in the Dark Zone are tied to the specialization you have active, so switch before you go in. Died Again Gaming believes it's around 80 to 90 percent for the daily's skill mods, and his advice is to swap to the specialization you want to level up first.
 - **Tiers:** TikTokAndy says the level 40 Dark Zone gave him access to T0, T1 and T2 gear.
 - **North beats south.** In his experience the good loot is up north, and "you don't really get good stuff" in the south. The Q Building is "really all I want to be farming," he says.
 
@@ -97,8 +97,8 @@ The catch: **Rogue agents can cut the rope** and take what's on it. TikTokAndy g
 - **Take the second rope at the end.** AllThings.How says that if you don't extract yourself, you earn less DZ Intel and fewer DZ Credits from the run. So once your last bag is out late in the run, the ride home is worth taking.
 - **Avoid zones next to an active boss.** AllThings.How says players who missed the boss tend to camp nearby extractions.
 - **Turn on the turrets.** Extraction zones have turrets you can activate (AllThings.How lists DZ Intel as their cost), and TikTokAndy flips them on "just in case anybody rolls up on us."
-- **Use the wait.** Died Again Gaming's routine on his October 25 stream: fire the flare, then clear a nearby landmark while the helicopter is on its way, for a few extra DZ Credits and the occasional purple.
-- **Don't grab one more thing on your way out.** On the same stream he picked up an item right before taking the rope, and says the game won't let you extract yourself while you're carrying contaminated gear. Once your last bag is on the rope, the shiny thing on the floor stays on the floor.
+- **Use the wait, if the lobby is quiet.** Died Again Gaming's routine on his October 25 stream: fire the flare, then clear a nearby landmark while the helicopter is on its way, for a few extra DZ Credits and the occasional purple. He was in a quiet lobby, on a Normal landmark right next to the extraction, by his description. With Rogues around, holding cover at the zone is the safer call.
+- **Watch what you pick up on your way out.** On the same stream he picked up an item by accident just as he went for the rope, and it cost him the ride: he says the game won't let you extract yourself while you're carrying contaminated gear. Once your last bag is on the rope, the shiny thing on the floor stays on the floor.
 
 ---
 
@@ -135,7 +135,7 @@ The Q Building is the one TikTokAndy keeps coming back to; in his September 19 b
 
 ## DZ Credits, DZ Intel and the Vendor
 
-**DZ Credits**, per AllThings.How, come from killing NPCs, bosses, landmarks, looting and the small containers on the streets near landmarks, and you keep what you gathered even if you die. There's a weekly cap, and dismantling extracted skill mods adds credits on top of it. Since [Season 1 Phase 2](/patch-notes/phase-2-patch-notes/), dismantling a skill mod pays **15, 75 or 750 DZ Credits** for blue, purple or gold. The word that matters is extracted: Died Again Gaming notes that breaking skill mods down inside the Dark Zone doesn't pay out.
+**DZ Credits**, per AllThings.How, come from killing NPCs, bosses, landmarks, looting and the small containers on the streets near landmarks, and you keep what you gathered even if you die. There's a weekly cap, and dismantling extracted skill mods adds credits on top of it. Since [Season 1 Phase 2](/patch-notes/phase-2-patch-notes/), dismantling a skill mod pays **15, 75 or 750 DZ Credits** for blue, purple or gold. Died Again Gaming says the "extracted" part matters: in his experience, breaking skill mods down inside the Dark Zone doesn't pay out.
 
 **DZ Intel** is spent inside the Dark Zone: on extraction turrets, the Smuggler and the hacked terminal (AllThings.How).
 

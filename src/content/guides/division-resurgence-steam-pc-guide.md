@@ -48,7 +48,7 @@ faqs:
 
 ## Release date and what launched with it
 
-Ubisoft confirmed the Steam date on July 31 ([our coverage](/news/steam-release-date-august-5/)) and the game went live on **August 5, 2026**. Ubisoft's launch article: "Starting today you can download and play The Division Resurgence for free on Steam!" The press release added that it was now available worldwide on Steam and Ubisoft Connect "following its early-access period on the platform."
+Ubisoft announced the Steam date in a July 30 developer diary ([our coverage](/news/steam-release-date-august-5/)) and the game went live on **August 5, 2026**. Ubisoft's launch article: "Starting today you can download and play The Division Resurgence for free on Steam!" The press release added that it was now available worldwide on Steam and Ubisoft Connect "following its early-access period on the platform."
 
 Launch day also brought Season 2 Phase 1, with the free **Bighorn** exotic on the new pass ([patch notes](/patch-notes/season-2-phase-1-the-call/)), plus launch gifts for everyone: 5 Regular and 5 Exclusive SHD Keys, and a wishlist-goal reward of the FYNC Parade apparel set with 10 Exclusive and 10 Regular SHD Keys. Twitch Drops returned too. Details in the [launch rewards post](/news/steam-launch-rewards-twitch-drops/).
 
@@ -140,7 +140,7 @@ Ubisoft's Help Center says you can play with **mouse and keyboard or a controlle
 
 ## Steam Deck
 
-The Steam release ended the old Ubisoft Connect workaround on Deck (NonSteamLaunchers plus Proton-GE) that the community used in the spring. Ubisoft had the Deck on its radar before launch: in a July 30 developer diary, Ubisoft Singapore said the team was exploring Steam Deck compatibility ([replayed by Died Again Gaming](https://www.youtube.com/watch?v=UVtGdT0p3Uo)). **Season 2 Phase 2 then improved the Steam Deck control configuration.** We haven't tested the game on a Deck ourselves and we don't have Valve's compatibility rating on record, so check the badge on the Steam store page before you buy, er, download.
+The Steam release ended the old Ubisoft Connect workaround on Deck (NonSteamLaunchers plus Proton-GE) that the community used in the spring. Ubisoft had the Deck on its radar before launch: in a July 30 developer diary, Ubisoft Singapore said the team was exploring the possibility of making the game Steam Deck compatible ([replayed by Died Again Gaming](https://www.youtube.com/watch?v=UVtGdT0p3Uo)). **Season 2 Phase 2 then improved the Steam Deck control configuration.** We haven't tested the game on a Deck ourselves and we don't have Valve's compatibility rating on record, so check the badge on the Steam store page before you buy, er, download.
 
 ## Steam achievements, trading cards and Points Shop
 
@@ -188,7 +188,7 @@ Steam lists 11 supported languages, with full audio in English. French, Italian,
 
 ## Related reading
 
-- [Steam release date confirmed (July 31)](/news/steam-release-date-august-5/)
+- [Steam release date confirmed (July 30 and 31)](/news/steam-release-date-august-5/)
 - [Steam launch rewards and Twitch Drops](/news/steam-launch-rewards-twitch-drops/)
 - [Steam reviews: what players said](/news/steam-reviews-mixed-launch/)
 - [PC emulator comparison](/guides/division-resurgence-pc-emulator-comparison/), now mostly history
