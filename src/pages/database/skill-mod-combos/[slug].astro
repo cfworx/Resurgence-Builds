@@ -101,7 +101,8 @@ const getSkillsFromBonus = (bonus3: string, spec: string): string => {
   return 'Specialization Skills';
 };
 
-const targetSkill = getSkillsFromBonus(mod.bonus3, mod.specialization);
+// The data names each set's skill (from Ubisoft's drop-rate table); the text match is a fallback.
+const targetSkill = mod.skill || getSkillsFromBonus(mod.bonus3, mod.specialization);
 
 // Build context based on specialization
 const specOverview: Record<string, string> = {
