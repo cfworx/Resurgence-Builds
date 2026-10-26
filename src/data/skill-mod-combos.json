@@ -46,7 +46,10 @@
     "name": "Ace",
     "specialization": "Demolitionist",
     "bonus2": "Skill Health+[4.0%~8.0%]",
-    "bonus3": "Skill Critical Hits grant +0.30% Signature Ability Charge. Talent Cooldown: 1 second."
+    "bonus3": "Skill Critical Hits grant +0.30% Signature Ability Charge. Talent Cooldown: 1 second.",
+    "aliases": [
+      "Fire Support"
+    ]
   },
   {
     "id": "smc-8",
@@ -67,7 +70,10 @@
     "name": "Prioritized Targets",
     "specialization": "Demolitionist",
     "bonus2": "Armor+[4.7%~9.3%]",
-    "bonus3": "Artillery Turret hits on enemies afflicted by Bleed or Vulnerable grant +1.44% Firepower for 10 seconds, up to 5 stacks."
+    "bonus3": "Artillery Turret hits on enemies afflicted by Bleed or Vulnerable grant +1.44% Firepower for 10 seconds, up to 5 stacks.",
+    "aliases": [
+      "Shaped Charge"
+    ]
   },
   {
     "id": "smc-11",
@@ -81,14 +87,20 @@
     "name": "Wingman",
     "specialization": "Demolitionist",
     "bonus2": "Max Health+[4.0%~8.0%]",
-    "bonus3": "Artillery Turret hits grant +1.20% Weapon Critical Hit Chance for 10 seconds, up to 5 stacks."
+    "bonus3": "Artillery Turret hits grant +1.20% Weapon Critical Hit Chance for 10 seconds, up to 5 stacks.",
+    "aliases": [
+      "Enhanced Fire Control"
+    ]
   },
   {
     "id": "smc-13",
     "name": "Contagion",
     "specialization": "Demolitionist",
     "bonus2": "Armor+[4.7%~9.3%]",
-    "bonus3": "Explosive Seeker Mine hits on enemies afflicted by Bleed or Vulnerable apply the same debuff to all enemies within 10 meter(s) and grant +7.20% Firepower for 10 second(s)."
+    "bonus3": "Explosive Seeker Mine hits on enemies afflicted by Bleed or Vulnerable apply the same debuff to all enemies within 10 meter(s) and grant +7.20% Firepower for 10 second(s).",
+    "aliases": [
+      "Multi-Directional Charge"
+    ]
   },
   {
     "id": "smc-14",
@@ -102,7 +114,10 @@
     "name": "Surgical Strike",
     "specialization": "Demolitionist",
     "bonus2": "Max Health+[4.0%~8.0%]",
-    "bonus3": "Explosive Seeker Mine hits grant +7.20% Weapon Critical Hit Chance for 10 seconds. Talent Cooldown: 1 second."
+    "bonus3": "Explosive Seeker Mine hits grant +7.20% Weapon Critical Hit Chance for 10 seconds. Talent Cooldown: 1 second.",
+    "aliases": [
+      "Potent Composition"
+    ]
   },
   {
     "id": "smc-16",
@@ -151,7 +166,10 @@
     "name": "Exhaustion",
     "specialization": "Tech Operator",
     "bonus2": "Skill Cooldown Recovery-[2.0%~4.0%]",
-    "bonus3": "Striker Drone hits on Drone Locked enemies have a 5% chance of granting 4.80% Damage Reduction from the targets for 10 second(s), up to 3 stack(s). Probability increases to 15% for targets who are at least 20 meter(s) away."
+    "bonus3": "Striker Drone hits on Drone Locked enemies have a 5% chance of granting 4.80% Damage Reduction from the targets for 10 second(s), up to 3 stack(s). Probability increases to 15% for targets who are at least 20 meter(s) away.",
+    "aliases": [
+      "Precise Suppression"
+    ]
   },
   {
     "id": "smc-23",
@@ -200,14 +218,20 @@
     "name": "Combat Enhancer",
     "specialization": "Tech Operator",
     "bonus2": "Engineering+[3.0%~6.0%]",
-    "bonus3": "Mender Drone healing grants bonus damage equal to 6.60% Engineering for 20 second(s), up to 3 stack(s)."
+    "bonus3": "Mender Drone healing grants bonus damage equal to 6.60% Engineering for 20 second(s), up to 3 stack(s).",
+    "aliases": [
+      "Team Backup"
+    ]
   },
   {
     "id": "smc-30",
     "name": "Enhanced Chip",
     "specialization": "Tech Operator",
     "bonus2": "Healing Intensity+[3.3%~6.7%]",
-    "bonus3": "Deploying a Mender Drone grants +3.20% Signature Ability Charge Efficiency for 20 second(s), up to 3 stack(s)."
+    "bonus3": "Deploying a Mender Drone grants +3.20% Signature Ability Charge Efficiency for 20 second(s), up to 3 stack(s).",
+    "aliases": [
+      "EMCAT"
+    ]
   },
   {
     "id": "smc-31",
@@ -221,7 +245,10 @@
     "name": "Teamfight",
     "specialization": "Tech Operator",
     "bonus2": "Engineering+[3.0%~6.0%]",
-    "bonus3": "Hits deal additional damage equal to 80% Engineering for 8 second(s) after deploying a First-Aid Firefly. This bonus is also granted to the ally who is targeted by the First-Aid Firefly."
+    "bonus3": "Hits deal additional damage equal to 80% Engineering for 8 second(s) after deploying a First-Aid Firefly. This bonus is also granted to the ally who is targeted by the First-Aid Firefly.",
+    "aliases": [
+      "Performance Enhancer"
+    ]
   },
   {
     "id": "smc-33",
@@ -249,7 +276,10 @@
     "name": "Magnetic Recharge",
     "specialization": "Tech Operator",
     "bonus2": "Healing Intensity+[3.3%~6.7%]",
-    "bonus3": "When Defender Drone grants a Shield to either the Agent or a group member, increases Signature Ability Charge(s) by 2.00%."
+    "bonus3": "When Defender Drone grants a Shield to either the Agent or a group member, increases Signature Ability Charge(s) by 2.00%.",
+    "aliases": [
+      "Mutual Assist"
+    ]
   },
   {
     "id": "smc-37",
@@ -277,7 +307,8 @@
     "name": "Field Repairs",
     "specialization": "Bulwark",
     "bonus2": "Skill Health+[4.0%~8.0%]",
-    "bonus3": "Deploying the Phalanx Shield grants +4% Rate of Fire. Hits restore 0.60% Shield Health. Talent Cooldown: 1 second(s). (Season 2 Phase 1 fixed the Rate of Fire bonus, which had been granting the wrong stat.)"
+    "bonus3": "Deploying the Phalanx Shield grants +4% Rate of Fire. Hits restore 0.60% Shield Health. Talent Cooldown: 1 second(s).",
+    "note": "Season 2 Phase 1 fixed the Rate of Fire bonus, which had been granting Weapon Damage instead."
   },
   {
     "id": "smc-41",
@@ -305,7 +336,8 @@
     "name": "Berserker",
     "specialization": "Bulwark",
     "bonus2": "Weapon Damage+[2.0%~4.0%]",
-    "bonus3": "During Breach Combo, grants +100% Weapon Critical Hit Chance if there are at least 1 enemie(s) within 20 meter(s). (Season 2 Phase 2 fixed this set not granting its bonus. Ubisoft's note calls it a crit damage bonus while this tooltip says crit chance; we haven't re-checked which is right.)"
+    "bonus3": "During Breach Combo, grants +100% Weapon Critical Hit Damage if there are at least 1 enemie(s) within 20 meter(s).",
+    "note": "Season 2 Phase 2 fixed this set \"not granting its intended weapon critical hit damage bonus,\" in Ubisoft's words. The tooltip we recorded in June said Weapon Critical Hit Chance, so the +100% figure comes from that older tooltip."
   },
   {
     "id": "smc-45",
@@ -361,7 +393,8 @@
     "name": "Heavy Weight",
     "specialization": "Bulwark",
     "bonus2": "Max Health+[4.0%~8.0%]",
-    "bonus3": "Breach Combo hits deal additional damage equal to 2% Max Health (after the October 14, 2026 nerf; Ubisoft listed the change as 10/15/20/25% to 2/3/4/5% of Max Health)."
+    "bonus3": "Breach Combo hits deal additional damage equal to 2% Max Health.",
+    "note": "The October 14, 2026 hotfix cut this from 10/15/20/25% to 2/3/4/5% of Max Health, depending on tier."
   },
   {
     "id": "smc-53",
@@ -389,14 +422,20 @@
     "name": "Targeted Surveillance",
     "specialization": "Vanguard",
     "bonus2": "Damage Reduction+[2.0%~4.0%]",
-    "bonus3": "Deploying Scanning Pulse grants Pulsed allies Weapon Critical Hit Chance equal to 3.60% Engineering for 10 second(s)."
+    "bonus3": "Deploying Scanning Pulse grants Pulsed allies Weapon Critical Hit Chance equal to 3.60% Engineering for 10 second(s).",
+    "aliases": [
+      "Pulse Enhancement"
+    ]
   },
   {
     "id": "smc-57",
     "name": "Pulse Feedback",
     "specialization": "Vanguard",
     "bonus2": "Signature Ability Charge Efficiency+[4.0%~8.0%]",
-    "bonus3": "Pulsed enemies grant +8 Signature Ability Charge(s) to the ally team."
+    "bonus3": "Pulsed enemies grant +8 Signature Ability Charge(s) to the ally team.",
+    "aliases": [
+      "Scout"
+    ]
   },
   {
     "id": "smc-58",
@@ -480,7 +519,8 @@
     "name": "Ammo Refill",
     "specialization": "Vanguard",
     "bonus2": "Reload Speed+[4.0%~8.0%]",
-    "bonus3": "Every shot during the first 6 seconds of Tactical Link grants 18% chance of recovering 4 ammo. Duration resets at each kill. (Season 2 Phase 1: trigger chance cut to 18% and ammo returned raised from 1 to 4. Ubisoft lists the old chance as 72%; our old listing said 29%, so the exact chance may vary by mod rarity. TikTokAndy's tooltip read 7% on September 30: a quarter of our old 29%, which fits that.)"
+    "bonus3": "Every shot during the first 6 seconds of Tactical Link grants a 7% chance of recovering 4 ammo. Duration resets at each kill.",
+    "note": "Season 2 Phase 1 raised the ammo returned from 1 to 4 and cut the trigger chance; Ubisoft's notes give the cut as 72% to 18%, which looks like the top-rarity figure. TikTokAndy's purple chip read 7% on September 30, 2026."
   },
   {
     "id": "smc-70",
@@ -515,28 +555,40 @@
     "name": "Fly Trap",
     "specialization": "Field Medic",
     "bonus2": "Damage Reduction+[2.0%~4.0%]",
-    "bonus3": "Chemical Trap can be deployed farther away. Hits on enemies inside Chemical Traps apply 1 stack(s) of Corrosive. Headshots apply 4 stack(s) instead. Talent Cooldown: 1.50 second(s)."
+    "bonus3": "Chemical Trap can be deployed farther away. Hits on enemies inside Chemical Traps apply 1 stack(s) of Corrosive. Headshots apply 4 stack(s) instead. Talent Cooldown: 1.50 second(s).",
+    "aliases": [
+      "Lightweight"
+    ]
   },
   {
     "id": "smc-75",
     "name": "Chemical Recharge",
     "specialization": "Field Medic",
     "bonus2": "Damage Reduction+[2.0%~4.0%]",
-    "bonus3": "Using a Chemical Trap to apply a stack of Corrosive has a 50% chance of restoring 4 Signature Ability Charge(s). Talent Cooldown: 0.50 second(s)."
+    "bonus3": "Using a Chemical Trap to apply a stack of Corrosive has a 50% chance of restoring 4 Signature Ability Charge(s). Talent Cooldown: 0.50 second(s).",
+    "aliases": [
+      "Siphon"
+    ]
   },
   {
     "id": "smc-76",
     "name": "Hereafter Resilience",
     "specialization": "Field Medic",
     "bonus2": "Skill Intensity+[2.0%~4.0%]",
-    "bonus3": "When deploying Oxidizing Hive, you lose Health equal to 25% of your current Health but gain Extra Health equal to 35.00% of Max Health and 5% Armor for 20 second(s). When Oxidizing Hive is attached to your backpack, it releases Micro Corrosive Drones to enemies within 15.00 meter(s) every 1.60 second(s)."
+    "bonus3": "When deploying Oxidizing Hive, you lose Health equal to 25% of your current Health but gain Extra Health equal to 35.00% of Max Health and 5% Armor for 20 second(s). When Oxidizing Hive is attached to your backpack, it releases Micro Corrosive Drones to enemies within 15.00 meter(s) every 1.60 second(s).",
+    "aliases": [
+      "Acidic Effect"
+    ]
   },
   {
     "id": "smc-77",
     "name": "Corrosive Strike",
     "specialization": "Field Medic",
     "bonus2": "Damage Reduction+[2.0%~4.0%]",
-    "bonus3": "If Oxidizing Hive is attached to your backpack and no enemy is hit by your weapon within 3 second(s), hitting enemies with your weapon will trigger Oxidizing Hive to release 13 Micro Corrosive Drones flying towards the target and applying Corrosion to them."
+    "bonus3": "If Oxidizing Hive is attached to your backpack and no enemy is hit by your weapon within 3 second(s), hitting enemies with your weapon will trigger Oxidizing Hive to release 13 Micro Corrosive Drones flying towards the target and applying Corrosion to them.",
+    "aliases": [
+      "Improved Formula"
+    ]
   },
   {
     "id": "smc-78",
@@ -550,7 +602,10 @@
     "name": "Enhanced Formula",
     "specialization": "Field Medic",
     "bonus2": "Skill Critical Damage+[4.0%~8.0%]",
-    "bonus3": "Oxidizing Swarm hits inflict -12% Damage for 20 second(s). Killing an enemy within 20 meter(s) who is also afflicted by this debuff restores Health equal to 8% Missing Health for 20 second(s)."
+    "bonus3": "Oxidizing Swarm hits inflict -12% Damage for 20 second(s). Killing an enemy within 20 meter(s) who is also afflicted by this debuff restores Health equal to 8% Missing Health for 20 second(s).",
+    "aliases": [
+      "Feebleness"
+    ]
   },
   {
     "id": "smc-80",
@@ -571,7 +626,10 @@
     "name": "Weaponized Treatment",
     "specialization": "Field Medic",
     "bonus2": "Damage Reduction+[2.0%~4.0%]",
-    "bonus3": "Support Station deals damage to enemies who are within its radius. Damage is increased by 25% while located within the radius of a Support Station."
+    "bonus3": "Support Station deals damage to enemies who are within its radius. Damage is increased by 25% while located within the radius of a Support Station.",
+    "aliases": [
+      "Detrimental Treatment"
+    ]
   },
   {
     "id": "smc-83",
@@ -592,7 +650,10 @@
     "name": "Offensive Defense",
     "specialization": "Field Medic",
     "bonus2": "Damage Reduction+[2.0%~4.0%]",
-    "bonus3": "While Healing Hive is deployed, hits on enemies within 20 meter(s) deal additional damage equal to 240% Weapon Damage."
+    "bonus3": "While Healing Hive is deployed, hits on enemies within 20 meter(s) deal additional damage equal to 240% Weapon Damage.",
+    "aliases": [
+      "Defensive Measures"
+    ]
   },
   {
     "id": "smc-86",
@@ -606,7 +667,10 @@
     "name": "Coordinated Strike",
     "specialization": "Field Medic",
     "bonus2": "Healing Intensity+[3.3%~6.7%]",
-    "bonus3": "While Healing Hive is deployed, grants +9.60% Skill Intensity when located within 20 meter(s) of an ally. While Healing Hive is deployed, grants +20% Movement Speed when located at least 20 meter(s) away from allies."
+    "bonus3": "While Healing Hive is deployed, grants +9.60% Skill Intensity when located within 20 meter(s) of an ally. While Healing Hive is deployed, grants +20% Movement Speed when located at least 20 meter(s) away from allies.",
+    "aliases": [
+      "Mutual Support"
+    ]
   },
   {
     "id": "smc-88",
@@ -627,6 +691,9 @@
     "name": "Beneficial Association",
     "specialization": "Field Medic",
     "bonus2": "Healing Intensity+[3.3%~6.7%]",
-    "bonus3": "For each ally healed by Healing Swarm, grants +1.20% Skill Intensity for 20 second(s), up to 16 stack(s)."
+    "bonus3": "For each ally healed by Healing Swarm, grants +1.20% Skill Intensity for 20 second(s), up to 16 stack(s).",
+    "aliases": [
+      "Doom Dealer"
+    ]
   }
 ]

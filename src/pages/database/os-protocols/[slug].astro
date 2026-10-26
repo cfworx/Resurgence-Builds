@@ -129,6 +129,7 @@ const ogImage = protocol.image ? `${siteUrl}${protocol.image}` : undefined;
         <div class="protocol-talent-block">
           <p>{protocol.talentDescription}</p>
         </div>
+        {protocol.note && <p class="item-note">{protocol.note}</p>}
       </div>
 
       <!-- Stats Section -->

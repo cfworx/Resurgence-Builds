@@ -27,6 +27,12 @@ export const attrGuide: Record<string, AttrInfo> = {
     howToGet: 'Weapon Damage rolls on gloves and some Body Armor/backpack pieces. Most Firepower OS Protocols have it as a main stat. The Provocateur Bulwark mod combo also gives bonus Weapon Damage. Recalibrate it onto any piece that can roll it, especially gloves, which are your primary Weapon Damage slot.',
     bestBuilds: 'Bulwark Breacher shield builds that need reliable per-shot damage, LMG sustained DPS builds, any non-crit loadout. Also valuable as a secondary stat on crit builds that already have CHC/CHD covered elsewhere.',
   },
+  'All Weapon Damage': {
+    overview: 'All Weapon Damage raises weapon damage whatever the damage type. Season 2 Phase 1 brought it in to replace the Blast, Piercing and Shredding Weapon Damage rolls, which did nothing on a weapon of a different damage type.',
+    whyItMatters: 'It works on any gun, so the roll is never wasted the way a mismatched damage-type bonus used to be. Your weapon\'s own damage type still decides which enemy armor bars it hits hardest.',
+    howToGet: 'It rolls on weapons since Season 2 Phase 1. The same patch took All Damage out of the pool for newly dropped weapon mods, so only mods from before that patch can carry it.',
+    bestBuilds: 'Any weapon build. It is the damage-type-free replacement for the old Blast, Piercing and Shredding rolls.',
+  },
   'Weapon Multi-Shot Chance': {
     overview: 'Weapon Multi-Shot Chance gives each bullet a probability of hitting the target multiple times. When it procs, your single shot effectively becomes multiple shots, stacking talent procs, dealing extra damage, and occasionally making enemies question their life choices. It\'s RNG-based chaos and it\'s glorious.',
     whyItMatters: 'Multi-Shot is the sleeper stat for sustained DPS builds. LMGs with their massive magazines get the most value: more bullets means more rolls of the dice, and when Multi-Shot procs on an LMG that\'s already firing 900 RPM, the DPS goes vertical. Phalanx Attack gear set has Multi-Shot synergies baked in.',
@@ -61,7 +67,7 @@ export const attrGuide: Record<string, AttrInfo> = {
     overview: 'Max Health is your total health pool: the green bar that sits behind your armor. When your armor breaks, this is all that\'s left between you and the respawn screen. More Max Health means more margin for error, more time for your healer to save you, and more face-tanking before things go sideways.',
     whyItMatters: 'Tank builds and Field Medic Combat Medicine builds stack Max Health alongside Armor for raw survivability. In PvP, the difference between 80k and 120k Health is the difference between getting two-tapped and having time to pop a medkit. Several skill mod combos also give bonuses based on your Max Health or Missing Health.',
     howToGet: 'Max Health rolls on kneepads and some other gear slots. Toughness OS Protocols have it as a secondary stat. Some skill mod combos (like Frag Grenades and Cooling Device) grant Max Health as their 2-piece bonus. Recalibrate it onto your kneepads for the biggest impact.',
-    bestBuilds: 'Bulwark tank builds, Field Medic Combat Medicine with Defensive Measures (damage scales on Toughness), any PvP build that needs to survive burst damage. Also important for solo players who can\'t rely on a healer.',
+    bestBuilds: 'Bulwark tank builds, Field Medic Combat Medicine, any PvP build that needs to survive burst damage. Also important for solo players who can\'t rely on a healer.',
   },
   'Armor': {
     overview: 'Armor is your first line of defense: the blue bar that takes hits before your health does. In Division Resurgence, armor damage reduction is percentage-based, meaning more armor gives you multiplicatively more effective HP. It\'s the single most important survivability stat for tank builds.',
@@ -90,8 +96,14 @@ export const attrGuide: Record<string, AttrInfo> = {
   'Skill Intensity': {
     overview: 'Skill Intensity is a universal multiplier for skill effectiveness. It increases damage for offensive skills, healing for support skills, and buff strength for utility skills. It\'s the one stat that makes everything about your skills better, regardless of what those skills actually do.',
     whyItMatters: 'Skill Intensity is multiplicative with other skill bonuses, which is why it\'s so valuable. A 10% increase in Skill Intensity isn\'t just 10% more damage. It\'s 10% more on top of all your other multipliers. Field Medic healing builds stack this for bigger heals, Demolitionist builds stack it for bigger explosions, and Tech Operator builds use it for nastier drone attacks.',
-    howToGet: 'Skill Intensity can roll on multiple gear slots. Several skill mod combos grant Skill Intensity as stacking bonuses (Concentrated Fire, Mutual Support, Doom Dealer). Brains Over Brawn OS Protocol and Long-term Effect gear set both synergize with Skill Intensity stacking.',
+    howToGet: 'Skill Intensity can roll on multiple gear slots. Several skill mod combos grant Skill Intensity as stacking bonuses (Concentrated Fire, Coordinated Strike, Beneficial Association). Brains Over Brawn OS Protocol and Long-term Effect gear set both synergize with Skill Intensity stacking.',
     bestBuilds: 'Field Medic healing builds (Support Station and Healing Hive), Demolitionist AoE builds, Tech Operator drone builds, any Engineering-focused loadout that wants a flat boost to everything their skills do.',
+  },
+  'All Skill Damage': {
+    overview: 'All Skill Damage raises skill damage whatever the damage type. Season 2 Phase 1 brought it in to replace the Blast, Piercing and Shredding Skill Damage rolls.',
+    whyItMatters: 'Skill builds no longer need a damage-type roll that matches their skills: one stat covers every skill hit.',
+    howToGet: 'It rolls on weapons since Season 2 Phase 1, in place of the old skill damage-type bonuses. Newly dropped weapon mods can\'t roll it.',
+    bestBuilds: 'Engineering skill builds: Demolitionist, Tech Operator and Tactical Pharma setups that lean on skill hits.',
   },
   'Skill Multi-Shot Chance': {
     overview: 'Skill Multi-Shot Chance gives your skills a probability of hitting the same target multiple times per attack. When your Artillery Turret or Striker Drone procs Multi-Shot, each individual hit can crit separately and trigger talent effects independently. It\'s RNG on top of RNG, and when it lines up, the DPS goes crazy.',

@@ -1,6 +1,8 @@
 ---
 import DatabaseLayout from '../../../layouts/DatabaseLayout.astro';
-import exoticWeapons from '../../../data/exotic-weapons.json';
+import allExoticWeapons from '../../../data/exotic-weapons.json';
+// Exotics with unverified stat lines (statsVerified: false) are in the planner only, not the database.
+const exoticWeapons = allExoticWeapons.filter((w: any) => w.statsVerified !== false);
 import AdSenseUnit from '../../../components/AdSenseUnit.astro';
 import { verifiedPatch } from '../../../data/site-config';
 const lastVerified = verifiedPatch('Patch 1.1.2.2'); // Bump: drop the arg ONLY after re-verifying this page's content in-game (CURRENT_PATCH is a ceiling, not an auto-bump)

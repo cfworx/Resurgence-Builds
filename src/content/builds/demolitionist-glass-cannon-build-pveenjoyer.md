@@ -142,7 +142,7 @@ That 4-piece +12% Skill Multi-Shot Chance is the single biggest reason your turr
 | **OS Protocol** | **[Pressing Matter](/database/os-protocols/pressing-matter/)** (Purple, Level 50, 1,813 PS) | +24.00% Skill Intensity · Engineering +358 · Skill Damage +286 · Health +9,402 · Talent: Grants +10% Skill Cooldown Recovery. |
 | **Skill 1** | Artillery Turret | Frag Grenades firmware 3pc · Artillery Turret damage stacks Skill Multi-Shot Chance up to +5% |
 | **Skill 2** | Explosive Seeker Mine | Applied Demolitions firmware 3pc · 15.14s cooldown · pairs with the 4pc Skill Multi-Shot bonus |
-| **Signature** | M32A1 Grenade Launcher | Demolitionist specialization · Fire Support firmware 2pc currently · max out the tree |
+| **Signature** | M32A1 Grenade Launcher | Demolitionist specialization · Ace (Fire Support in the video) firmware 2pc currently · max out the tree |
 
 ### Skill Mods
 
@@ -150,11 +150,11 @@ That 4-piece +12% Skill Multi-Shot Chance is the single biggest reason your turr
 |---|---|---|---|
 | Explosive Seeker Mine | Applied Demolitions (3pc) | 2pc: +7% Armor · 3pc: Explosive Seeker Mine hits on up to 1 enemy grant +4.80% Skill Critical Damage for 20s, up to 3 stacks | Mine Radius +9.69% · Max Health +4.59% · Skill Multi-Shot Chance +2.47% |
 | Artillery Turret | Frag Grenades (3pc) | 2pc: +4% Max Health · 3pc: Artillery Turret damage grants +1% Skill Multi-Shot Chance for 10s, up to 5 stacks | Artillery Turret Intensity +5.76% · Damage to Elites +1.81% · Max Health +3.59% |
-| M32A1 Grenade Launcher | Fire Support (2/3 currently) | 2pc: Skill Health +4% · 3pc bonus not yet active | M32A1 Grenade Launcher Damage +5.24% · Damage to Elites +2.00% · Skill Duration +2.71% |
+| M32A1 Grenade Launcher | Ace, formerly Fire Support (2/3 currently) | 2pc: Skill Health +4% · 3pc bonus not yet active | M32A1 Grenade Launcher Damage +5.24% · Damage to Elites +2.00% · Skill Duration +2.71% |
 
 **Weapon mod stacking:** Both rifles should run **Engineering-stacked mods** on every available slot. PVE Enjoyer shows his current setup on camera: the Assault Rifle Quick Release Magazine Level 20 (+26 Firepower, +81 Weapon Shredding Damage, +81 All Weapon Damage, 16% Reload Speed) is one of his go-to mod picks, but he points out that mods rolled with Engineering as the main stat are what he is actively hunting. Anywhere there is an open slot, the goal is Engineering plus Skill Damage or Skill Multi-Shot Chance on the sub-rolls.
 
-**Note on the Fire Support 3pc:** PVE Enjoyer is only running 2 out of 3 Fire Support firmware pieces in the video. The 3pc bonus is on his upgrade list. If you can land all three Fire Support firmwares the signature uptime climbs noticeably, which means more M32A1 volleys per fight.
+**Note on the Ace 3pc:** PVE Enjoyer is only running 2 out of 3 pieces of the set in the video, where it's still called Fire Support (the game now calls it Ace). The 3pc bonus is on his upgrade list. If you can land all three, the signature uptime climbs noticeably, which means more M32A1 volleys per fight.
 
 ---
 
@@ -285,7 +285,7 @@ Use this table to judge whether a drop is worth keeping for this build.
 | **OS Protocol** | [Pressing Matter](/database/os-protocols/pressing-matter/) | Weekly bounty runs | +24% Skill Intensity · +10% Skill Cooldown Recovery |
 | **Seeker Mine Firmware** | Applied Demolitions 3pc | Hostile Nests (sub-rewards) | Mine Radius · Skill Multi-Shot Chance |
 | **Turret Firmware** | Frag Grenades 3pc | Hostile Nests (sub-rewards) | Turret Intensity · Damage to Elites |
-| **Signature Firmware** | Fire Support 3pc | Hostile Nests (sub-rewards) | M32A1 Damage · Damage to Elites |
+| **Signature Firmware** | Ace (formerly Fire Support) 3pc | Hostile Nests (sub-rewards) | M32A1 Damage · Damage to Elites |
 
 **Farm path:** Hostile Nests for gear mods and firmware, weekly bounties for OS Protocols. Fire Cycle T2 is gated behind Conflicts Level 100 or T2 PVE content. If you are not there yet, run 4pc Jackpot as a bridge build. The StG 44 drops from the standard AR pool and the Warlord comes from the Dark Zone vendor. Either way, the grind is talent and stat rolls, not the base weapon.
 

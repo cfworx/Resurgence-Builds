@@ -62,5 +62,16 @@
     "movementSpeed": "50",
     "stability": "56",
     "acquisition": "Classified Ops Pass 1.3 (premium track, tier 5) in Season 1 Phase 3. Since then: the Dark Zone vendor (added in Season 2 Phase 1) and Exotic Sealed Caches (added in Season 2 Phase 2), which can grant exotics from previous seasons"
+  },
+  {
+    "id": "ew-5",
+    "name": "The Bighorn",
+    "type": "Assault Rifle",
+    "damage": "Piercing Damage",
+    "talentName": "Big Game Hunter",
+    "talentDescription": "Fires fully automatic, and semi-automatic while aiming down sights. Headshots grant +3.3% Headshot Damage for 20 seconds, up to 50 stacks.",
+    "note": "Fire modes from Ubisoft's August 5, 2026 announcement. Talent name, stack values and Piercing damage are TikTokAndy's reading of his copy on September 16, 2026. Its stat lines aren't verified yet.",
+    "acquisition": "Season 2 Phase 1 Classified Ops Pass (free and premium track). Since Season 2 Phase 2, Exotic Sealed Caches can grant exotics from previous seasons.",
+    "statsVerified": false
   }
 ]

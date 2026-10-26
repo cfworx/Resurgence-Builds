@@ -3,7 +3,9 @@ import DatabaseLayout from '../../../layouts/DatabaseLayout.astro';
 import WeaponAttributes from '../../../components/WeaponAttributes.astro';
 import WeaponTalentsGrid from '../../../components/WeaponTalentsGrid.astro';
 import standardWeapons from '../../../data/standard-weapons.json';
-import exoticWeapons from '../../../data/exotic-weapons.json';
+import allExoticWeapons from '../../../data/exotic-weapons.json';
+// Exotics with unverified stat lines (statsVerified: false) are in the planner only, not the database.
+const exoticWeapons = allExoticWeapons.filter((w: any) => w.statsVerified !== false);
 import AdSenseUnit from '../../../components/AdSenseUnit.astro';
 
 const breadcrumbs = [

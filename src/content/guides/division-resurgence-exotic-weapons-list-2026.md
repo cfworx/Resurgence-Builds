@@ -154,7 +154,7 @@ We haven't verified its stat lines ourselves, but one creator has read some of t
 - **Released:** Season 2 Phase 2, September 16, 2026.
 - **Source:** the **free and premium track** of the current Classified Ops Pass. Ubisoft also added Diamondback rewards to Dark Zone vendors, reward caches, weekly reward pools and exotic mod sources, and the Diamondback Tactical Augmentation Module was a Season 2 Phase 2 event reward.
 - **Talent:** **Agonizing Bite.** Ubisoft named it in the [October 14, 2026 patch notes](/patch-notes/october-2026-hotfixes/), while fixing the Build Making Database's weapon talent list, where Agonizing Bite had been missing.
-- **Weapon class and numbers:** Ubisoft's patch notes and article don't spell them out. One player on the official subreddit describes a 5-round magazine and a skill critical chance bonus in the talent, but we haven't verified those numbers. The Division 2 has a lever-action rifle with the same name, and we're not going to copy its stats into a different game.
+- **Weapon class and numbers:** Ubisoft's Season 2 Phase 2 article calls it an assault rifle in its page summary and lists no numbers. One player on the official subreddit describes a 5-round magazine and a skill critical chance bonus in the talent, which sits oddly with "assault rifle", and we haven't verified either. The Division 2 has a lever-action rifle with the same name, and we're not going to copy its stats into a different game.
 
 Since Season 2 Phase 2 is extended "until we are ready to release a much bigger update later this year," the Diamondback pass is sticking around longer than usual. If you want a free exotic right now, this is it.
 
@@ -171,7 +171,7 @@ Ubisoft's official Exotic Cache drop table includes a **Deadlock Cache**, a **De
 | Strawberry Milkshake | LMG | 300 Shredding | 550 | 29m | Stacking DoT with kill-transfer | Exotic Sealed Caches |
 | Scorpio | Shotgun | 210 Piercing | 130 | 16m | Venom debuff ladder | DZ vendor (15,000 DZ Credits), caches |
 | The Bighorn | AR | Piercing (amount not verified) | Not verified | Not verified | Big Game Hunter: headshots stack Headshot Damage (creator reading) | Exotic Sealed Caches |
-| The Diamondback | Not stated by Ubisoft | Not verified | Not verified | Not verified | Agonizing Bite (numbers not verified) | Current pass (free and premium track) |
+| The Diamondback | AR per Ubisoft's article (unconfirmed) | Not verified | Not verified | Not verified | Agonizing Bite (numbers not verified) | Current pass (free and premium track) |
 | Deadlock | Unknown | Unknown | Unknown | Unknown | Unknown | Only listed in the drop table |
 
 ## How to get exotic weapons in Season 2

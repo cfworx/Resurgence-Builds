@@ -5,11 +5,9 @@
       "Weapon Critical Hit Chance",
       "Weapon Critical Hit Damage",
       "Weapon Damage",
+      "All Weapon Damage",
       "Weapon Multi-Shot Chance",
-      "Headshot Damage",
-      "Weapon Blast Damage",
-      "Weapon Piercing Damage",
-      "Weapon Shredding Damage"
+      "Headshot Damage"
     ]
   },
   {
@@ -26,13 +24,11 @@
       "Skill Critical Chance",
       "Skill Critical Damage",
       "Skill Intensity",
+      "All Skill Damage",
       "Skill Multi-Shot Chance",
       "Skill Duration",
       "Skill Radius",
-      "Skill Cooldown Recovery",
-      "Skill Blast Damage",
-      "Skill Piercing Damage",
-      "Skill Shredding Damage"
+      "Skill Cooldown Recovery"
     ]
   },
   {

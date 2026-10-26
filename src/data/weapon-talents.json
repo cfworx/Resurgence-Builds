@@ -50,7 +50,8 @@
   {
     "id": "wt-10",
     "name": "Breathe Free",
-    "description": "While moving, grants 4 stacks per second, or 8 stacks if sprinting, up to a maximum of 40 stacks. A stack is consumed with each round fired, granting +15% Weapon Damage. Deploying a Skill consumes 10 stacks and grants +15% Skill Damage. Kills grant +10% Movement Speed for 10 seconds."
+    "description": "While moving, grants 4 stacks per second, or 8 stacks if sprinting, up to a maximum of 40 stacks. A stack is consumed with each round fired, granting +15% Weapon Damage. Deploying a Skill consumes 10 stacks and grants +15% Skill Damage. Kills grant +10% Movement Speed for 10 seconds.",
+    "exoticOnly": true
   },
   {
     "id": "wt-11",
@@ -117,7 +118,6 @@
     "name": "In a Day's Work",
     "description": "Headshot Kills grant +36% Reload Speed for 5 seconds.",
     "upgradedName": "In a Day's Work II",
-    "upgradedDescription": "Headshot Kills grant enhanced Reload Speed for 5 seconds.",
     "icon": "/images/ui/talents/in-a-days-work.webp"
   },
   {
@@ -178,7 +178,8 @@
   {
     "id": "wt-35",
     "name": "Play Rough",
-    "description": "While firing, reduces Incoming Damage by 25%. When firing ceases, applies 60% of the reduced damage and grants +10% Skill Damage for 10 seconds."
+    "description": "While firing, reduces Incoming Damage by 25%. When firing ceases, applies 60% of the reduced damage and grants +10% Skill Damage for 10 seconds.",
+    "exoticOnly": true
   },
   {
     "id": "wt-36",
@@ -277,7 +278,8 @@
   {
     "id": "wt-54",
     "name": "Steady Reload",
-    "description": "Reloading grants +5% Weapon Damage for 10 seconds, up to 5 stacks. (Season 2 Phase 1: 18% → 5% Weapon Damage, duration 5s → 10s, and the hidden bonus some weapons got from bolting was removed.)"
+    "description": "Reloading grants +5% Weapon Damage for 10 seconds, up to 5 stacks.",
+    "note": "Season 2 Phase 1 cut this from 18% to 5% Weapon Damage, raised the duration from 5 to 10 seconds, and removed a hidden bonus some weapons got from bolting."
   },
   {
     "id": "wt-55",
@@ -294,7 +296,8 @@
   {
     "id": "wt-57",
     "name": "Strained",
-    "description": "Firing for 0.50 seconds grants +10% Critical Hit Damage for 5 seconds, up to 3 stacks. (Season 2 Phase 2 tooltip fix: the in-game text said 7.3% for tier 1 and 10.2% for tier 2; the real values are 10% and 14%.)"
+    "description": "Firing for 0.50 seconds grants +10% Critical Hit Damage for 5 seconds, up to 3 stacks.",
+    "note": "Season 2 Phase 2 fixed the tooltip: it said 7.3% for tier 1 and 10.2% for tier 2, and Ubisoft says the real values are 10% and 14%."
   },
   {
     "id": "wt-58",
@@ -332,7 +335,8 @@
   {
     "id": "wt-64",
     "name": "Target Acquisition",
-    "description": "Hitting an enemy 5 consecutive times inflicts +2.50% Incoming Damage on them for 5 seconds, up to 3 stacks. (Not the Commando specialization talent of the same name that Season 2 Phase 1 nerfed.)"
+    "description": "Hitting an enemy 5 consecutive times inflicts +2.50% Incoming Damage on them for 5 seconds, up to 3 stacks.",
+    "note": "Not the Commando specialization talent of the same name that Season 2 Phase 1 nerfed."
   },
   {
     "id": "wt-65",

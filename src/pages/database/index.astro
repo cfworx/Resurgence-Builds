@@ -12,7 +12,9 @@ import backpackTalents from '../../data/backpack-talents.json';
 import bodyArmorTalents from '../../data/body-armor-talents.json';
 import bonusAttributes from '../../data/bonus-attributes.json';
 import gearSetEffects from '../../data/gear-set-effects.json';
-import exoticWeapons from '../../data/exotic-weapons.json';
+import allExoticWeapons from '../../data/exotic-weapons.json';
+// Exotics with unverified stat lines (statsVerified: false) are in the planner only, not the database.
+const exoticWeapons = allExoticWeapons.filter((w: any) => w.statsVerified !== false);
 import dropRates from '../../data/drop-rates.json';
 import { verifiedPatch } from '../../data/site-config';
 const lastVerified = verifiedPatch('Patch 1.1.2.2'); // Bump: drop the arg ONLY after re-verifying this page's content in-game (CURRENT_PATCH is a ceiling, not an auto-bump)

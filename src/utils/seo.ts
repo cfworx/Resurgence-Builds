@@ -38,6 +38,7 @@ export function fixPlurals(text) {
     .replace(/\b1 seconds\b/g, '1 second')
     .replace(/\b1 stacks\b/g, '1 stack')
     .replace(/\b1 meters\b/g, '1 meter')
+    .replace(/\b(\d+(?:\.\d+)?) enemie\(s\)/g, (_m, n) => `${n} ${parseFloat(n) === 1 ? 'enemy' : 'enemies'}`)
     .replace(/\b(\d+(?:\.\d+)?) ([A-Za-z]+)\(s\)/g, (_m, n, w) => `${n} ${w}${parseFloat(n) === 1 ? '' : 's'}`);
 }
 
