@@ -34,7 +34,7 @@ faqs:
   - question: "What is the Power Score of the Involuntary Nap Time build?"
     answer: "22,610 in combat view and 23,176 on the leaderboard. That was Rank 16 on the Asia Server Bulwark Juggernaut Power Score leaderboard at the time of submission (June 2026)."
   - question: "How does the stun loop work in this build?"
-    answer: "The Pummeling Shield OS Protocol stuns every 10 hits while you have Extra Health. Backup Protection on the PPSH-41 grants Extra Health on weapon swap, and Swift Taunt on the FAMAS grants Extra Health when hitting 3 enemies. The 900 RPM fire rate on both weapons used to mean multiple stuns per magazine. Since the June 26, 2026 hotfix the stun has a 10-second cooldown and lasts 1.5 seconds, so it's one nap per 10 seconds, max. Still a nap. Just a shorter one with a waiting list."
+    answer: "The Pummeling Shield OS Protocol stuns every 10 hits while you have Extra Health. Backup Protection on the PPSH-41 grants Extra Health on weapon swap, and Swift Taunt on the FAMAS grants Extra Health when hitting 3 enemies. The high fire rate on both weapons used to mean multiple stuns per magazine. Since the June 26, 2026 hotfix the stun has a 10-second cooldown and lasts 1.5 seconds, so it's one nap per 10 seconds, max. Still a nap. Just a shorter one with a waiting list."
 ---
 
 **By RapidF5 (via Nadie) ·** Patch 1.2
@@ -103,9 +103,9 @@ The weapon selections are not random. Each one exists to trigger and maintain th
 
 **Backup Protection:** "Swapping to this weapon grants Extra Health equal to 20% Max Health for 8 seconds."
 
-Every time Nadie swaps to the PPSH, they get a chunk of Extra Health. That is the exact condition the Pummeling Shield needs to start stunning. Swap, get Extra Health, start spraying, stack hits, trigger stuns. 900 RPM with a 71-round magazine means hits stack fast. The Pummeling Shield stuns every 10 hits while you have Extra Health, so a single PPSH magazine used to be multiple stuns worth of work. Since the June 26 hotfix the stun has a 10-second cooldown, so it's one stun per 10 seconds at most now.
+Every time Nadie swaps to the PPSH, they get a chunk of Extra Health. That is the exact condition the Pummeling Shield needs to start stunning. Swap, get Extra Health, start spraying, stack hits, trigger stuns. A fast fire rate and a drum magazine mean hits stack fast. The Pummeling Shield stuns every 10 hits while you have Extra Health, so a single PPSH magazine used to be multiple stuns worth of work. Since the June 26 hotfix the stun has a 10-second cooldown, so it's one stun per 10 seconds at most now.
 
-**Damage Trade:** "+8.40% Weapon Damage for each 20% of the Magazine Size emptied, up to 4 stacks." With a 71-round mag, the damage ramps as the magazine drains. By the time you are hitting the last 15 rounds, you are swinging with meaningful bonus damage on top of the stuns.
+**Damage Trade:** "+8.40% Weapon Damage for each 20% of the Magazine Size emptied, up to 4 stacks." With a drum magazine, the damage ramps as it drains. By the time you are hitting the last 15 rounds, you are swinging with meaningful bonus damage on top of the stuns.
 
 ### Secondary: FAMAS
 

@@ -184,7 +184,7 @@ Tampishach recommends hunting for **Torrential Downpour II** or **In Sync II** a
 
 ### Secondary: MPX (T0, SMG, Level 50)
 
-- **Torrential Downpour II:** Hitting enemies 10 times within 5 seconds grants +31.50% Engineering for 12 seconds. With an 850 RPM SMG, hitting that window is trivial.
+- **Torrential Downpour II:** Hitting enemies 10 times within 5 seconds grants +31.50% Engineering for 12 seconds. With a fast-firing SMG, hitting that window is trivial.
 - **Rapid Charge:** Hitting an enemy 5 times in 3 seconds grants 50 Signature Ability Charge. Faster Aegis Operations uptime.
 
 **Headline attribute:** Skill Multi-Shot Chance +8.09%.

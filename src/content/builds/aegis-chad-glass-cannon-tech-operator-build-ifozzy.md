@@ -173,7 +173,7 @@ Both setups use the same two weapons. LtFoe runs the Enhanced ACR-E as primary f
 
 **[In Sync](/database/weapon-talents/in-sync/)** is the single strongest talent for a hybrid weapon-and-skill build. Weapon Hits grant +9% Skill Damage for 8 seconds. Skill Hits grant +9% Weapon Damage for 8 seconds. When both buffs are active simultaneously, the bonus doubles, effectively +18% in both directions. The talent text does not state the double-dip. It is confirmed through community damage testing and still active post-May 2026.
 
-**[Fully Charged](/database/weapon-talents/fully-charged/)** feeds Engineering on every empty-mag reload: +7.50% Engineering for 12 seconds, up to 3 stacks (+22.50% max). The ACR-E's 700 RPM and 30-round magazine keeps the reload cycle steady and Engineering elevated.
+**[Fully Charged](/database/weapon-talents/fully-charged/)** feeds Engineering on every empty-mag reload: +7.50% Engineering for 12 seconds, up to 3 stacks (+22.50% max). The ACR-E's steady reload cycle keeps Engineering elevated.
 
 > [!INFO] SMG Alternative
 > LtFoe's preferred setup is double AR or AR + SMG. If you want to run an SMG in the second slot instead of the Warlord, his picks are the **Modified USC** (comes with Crit Chance as its TAM unlock) or the **Police UMP-45** (comes with Crit Damage as its TAM unlock). Both feed the Skill Crit stack this build lives on.

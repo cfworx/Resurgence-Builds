@@ -35,7 +35,7 @@ export const attrGuide: Record<string, AttrInfo> = {
   },
   'Weapon Multi-Shot Chance': {
     overview: 'Weapon Multi-Shot Chance gives each bullet a probability of hitting the target multiple times. When it procs, your single shot effectively becomes multiple shots, stacking talent procs, dealing extra damage, and occasionally making enemies question their life choices. It\'s RNG-based chaos and it\'s glorious.',
-    whyItMatters: 'Multi-Shot is the sleeper stat for sustained DPS builds. LMGs with their massive magazines get the most value: more bullets means more rolls of the dice, and when Multi-Shot procs on an LMG that\'s already firing 900 RPM, the DPS goes vertical. Phalanx Attack gear set has Multi-Shot synergies baked in.',
+    whyItMatters: 'Multi-Shot is the sleeper stat for sustained DPS builds. LMGs with their massive magazines get the most value: more bullets means more rolls of the dice, and when Multi-Shot procs on a fast-firing LMG, the DPS goes vertical. Phalanx Attack gear set has Multi-Shot synergies baked in.',
     howToGet: 'Multi-Shot Chance appears on weapon mods and some gear pieces. Phalanx Attack gear set gives it as a set bonus. Certain skill mod combos also grant temporary Multi-Shot Chance. It\'s a rarer stat, so when you see a high roll, throw it in your recalibration station immediately.',
     bestBuilds: 'LMG builds with Phalanx Attack 4pc, any sustained-fire DPS build that wants to proc weapon talents faster. Multi-Shot turns In Sync and Killer into nearly permanent buffs on high-RPM weapons.',
   },

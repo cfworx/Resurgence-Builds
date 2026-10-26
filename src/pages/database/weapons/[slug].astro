@@ -23,6 +23,8 @@ export function getStaticPaths() {
 }
 
 const { weapon } = Astro.props;
+// "an SMG", "an LMG", "an Assault Rifle", "a Shotgun"
+const typeArticle = /^(SMG|LMG|[AEIOU])/.test(weapon.type) ? 'an' : 'a';
 
 const slug = weapon.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
 const siteUrl = 'https://resurgencebuilds.com';
@@ -72,7 +74,7 @@ const recommendedAttrs = recommendedAttrsRaw.filter(a => !seenAttrs.has(a.name) 
 const faqs = [
   {
     question: `Is the ${weapon.name} good in Division Resurgence?`,
-    answer: `The ${weapon.name} is a ${weapon.type} with ${weapon.rpm} RPM and a ${weapon.mag}-round mag${knownDmgType ? `, dealing ${knownDmgType} damage` : ''}. ${typeDesc.split('.')[0]}. How good it actually is depends on what weapon talents you roll and how well it fits your gear set combo.`
+    answer: `The ${weapon.name} is ${typeArticle} ${weapon.type}${weapon.rpm && weapon.mag ? ` with ${weapon.rpm} RPM and a ${weapon.mag}-round mag` : ''}${knownDmgType ? `, dealing ${knownDmgType} damage` : ''}. ${typeDesc.split('.')[0]}. How good it actually is depends on what weapon talents you roll and how well it fits your gear set combo.`
   },
   {
     question: `What type of damage does the ${weapon.name} do?`,
@@ -109,7 +111,7 @@ const itemLd = {
   '@type': 'CreativeWork',
   '@id': `${siteUrl}/database/weapons/${slug}/#item`,
   name: `${weapon.name}: ${weapon.type} in Division Resurgence`,
-  description: `${weapon.name} ${weapon.type} in Division Resurgence. ${weapon.rpm} RPM, ${weapon.mag} magazine${knownDmgType ? `, ${knownDmgType} damage` : ''}.`,
+  description: `${weapon.name} ${weapon.type} in Division Resurgence.${weapon.rpm && weapon.mag ? ` ${weapon.rpm} RPM, ${weapon.mag} magazine${knownDmgType ? `, ${knownDmgType} damage` : ''}.` : ''}`,
   genre: 'Video Game Item Database',
   isPartOf: {
     '@type': 'VideoGame',
@@ -120,8 +122,8 @@ const itemLd = {
   additionalProperty: [
     { '@type': 'PropertyValue', name: 'Weapon Class', value: weapon.type },
     { '@type': 'PropertyValue', name: 'Rarity', value: 'High-End' },
-    { '@type': 'PropertyValue', name: 'RPM', value: String(weapon.rpm) },
-    { '@type': 'PropertyValue', name: 'Magazine', value: String(weapon.mag) },
+    ...(weapon.rpm ? [{ '@type': 'PropertyValue', name: 'RPM', value: String(weapon.rpm) }] : []),
+    ...(weapon.mag ? [{ '@type': 'PropertyValue', name: 'Magazine', value: String(weapon.mag) }] : []),
     ...(knownDmgType ? [{ '@type': 'PropertyValue', name: 'Damage Type', value: knownDmgType }] : []),
   ]
 };
@@ -160,7 +162,7 @@ const boldStars = (t: string) => t
       <div style="margin-bottom: var(--sp-8);">
         <h2 style="font-family: var(--font-heading); font-size: var(--text-lg); font-weight: 800; color: #fff; margin: 0 0 var(--sp-4) 0; padding-bottom: var(--sp-2); border-bottom: 1px solid rgba(255,255,255,0.08);">Overview</h2>
         <p style="color: #c8c8d0; line-height: 1.75; font-size: var(--text-base);">
-          The <strong>{weapon.name}</strong> is a <strong>{weapon.type}</strong> in The Division Resurgence that fires at <strong>{weapon.rpm} RPM</strong> with a <strong>{weapon.mag}-round</strong> magazine{knownDmgType && <> and deals <strong>{knownDmgType}</strong> damage</>}. See the <a href={`#class-guide`} style="color: var(--accent);">{weapon.type} class guide</a> below for how this weapon class plays.
+          The <strong>{weapon.name}</strong> is {typeArticle} <strong>{weapon.type}</strong> in The Division Resurgence{weapon.rpm && weapon.mag && <> that fires at <strong>{weapon.rpm} RPM</strong> with a <strong>{weapon.mag}-round</strong> magazine</>}{knownDmgType && <> and deals <strong>{knownDmgType}</strong> damage</>}.
         </p>
       </div>
 
@@ -203,7 +205,7 @@ const boldStars = (t: string) => t
       <div style="margin-bottom: var(--sp-8);">
         <h2 style="font-family: var(--font-heading); font-size: var(--text-lg); font-weight: 800; color: #fff; margin: 0 0 var(--sp-4) 0; padding-bottom: var(--sp-2); border-bottom: 1px solid rgba(255,255,255,0.08);">Recommended Bonus Attributes for {weapon.name}</h2>
         <div style="color: #c8c8d0; line-height: 1.75; font-size: var(--text-base);">
-          <p>When rolling bonus attributes on gear for a {weapon.type} build using the {weapon.name}, prioritize in this order:</p>
+          <p>When rolling bonus attributes on gear for {typeArticle} {weapon.type} build using the {weapon.name}, prioritize in this order:</p>
           <ol style="padding-left: var(--inset); margin-top: var(--sp-2);">
             {recommendedAttrs.map(attr => (
               <li><strong style={attr.accent ? 'color: var(--accent);' : 'color: #fff;'}>{attr.name}</strong>: {attr.note}</li>

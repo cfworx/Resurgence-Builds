@@ -53,7 +53,7 @@ add(`There are ${weapons.length} standard weapons in The Division Resurgence.`, 
 add('| Weapon | Class | RPM | Magazine | Damage | Damage Type |');
 add('|---|---|---|---|---|---|');
 for (const w of weapons) {
-  add(`| ${w.name} | ${w.type} | ${w.rpm} | ${w.mag} | ${w.damage || 'N/A'} | ${w.dmgType || 'N/A'} |`);
+  add(`| ${w.name} | ${w.type} | ${w.rpm || 'Not verified'} | ${w.mag || 'Not verified'} | ${w.damage || 'N/A'} | ${w.dmgType || 'N/A'} |`);
 }
 add('');
 

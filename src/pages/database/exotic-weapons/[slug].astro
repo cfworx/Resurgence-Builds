@@ -20,6 +20,7 @@ export function getStaticPaths() {
 }
 
 const { weapon } = Astro.props;
+const typeArticle = /^(SMG|LMG|[AEIOU])/.test(weapon.type) ? 'an' : 'a';
 
 const title = `${weapon.name}: Exotic ${weapon.type}`;
 const description = metaDescription(weapon.summary, `${weapon.name} exotic ${weapon.type} in The Division Resurgence: stats, the ${weapon.talentName} talent, and which builds use it.`);
@@ -36,7 +37,7 @@ const faqs = [
   },
   {
     question: `What builds use ${weapon.name}?`,
-    answer: `You want to build entirely around the "${weapon.talentName}" talent: that's the whole point of running an exotic. As a ${weapon.type}, pair it with specs that stack the matching core stat, then find gear sets and OS Protocols that feed into what the talent does. Don't just slap it on any random loadout.`
+    answer: `You want to build entirely around the "${weapon.talentName}" talent: that's the whole point of running an exotic. As ${typeArticle} ${weapon.type}, pair it with specs that stack the matching core stat, then find gear sets and OS Protocols that feed into what the talent does. Don't just slap it on any random loadout.`
   },
   {
     question: `How do I get ${weapon.name} in Division Resurgence?`,

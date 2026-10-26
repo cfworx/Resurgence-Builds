@@ -210,7 +210,7 @@ On survivability, TikTokAndy found the build "very squishy" in September, which 
 
 | Slot | Weapon | Talents | Rolls and attachments |
 |---|---|---|---|
-| Primary | **Double Barrel** (Shotgun; 225 RPM and a 2-round magazine in our database) | **Misdirection Insurance** + **Still Alive II** | TikTokAndy: Weapon Damage (close to a max roll) and Critical Hit Damage, with mostly Firepower attributes plus some Toughness. Attachments: Optimal Range and Reload Speed, plus an extended magazine. GGReborn: a 30% extended magazine and a barrel attachment, with Firepower and Critical Hit Damage rolls. |
+| Primary | **Double Barrel** (Shotgun) | **Misdirection Insurance** + **Still Alive II** | TikTokAndy: Weapon Damage (close to a max roll) and Critical Hit Damage, with mostly Firepower attributes plus some Toughness. Attachments: Optimal Range and Reload Speed, plus an extended magazine. GGReborn: a 30% extended magazine and a barrel attachment, with Firepower and Critical Hit Damage rolls. |
 | Secondary | **Vector** (TikTokAndy, October); MP7 before that | **Torrential Downpour** + **Last Stand** | In September he carried an MP7 because "you need a secondary" and floated an Engineering-boosting one. By October he was doing it: a T0 Vector (121 Firepower, 23 Toughness, 285 Engineering on his screen) that he fires from cover before casting. He'd rather its Max Health roll were Skill Intensity or Skill Duration. |
 
 His copy reads about 16,000 Blast damage, and he has seen copies above 20,000. It's a close-range gun ("you can't be beaming guys from across the board"), so Optimal Range is the attachment stat he chases first, then Reload Speed. Accuracy, he says, isn't super important.

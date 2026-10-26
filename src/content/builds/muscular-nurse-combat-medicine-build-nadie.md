@@ -30,7 +30,7 @@ faqs:
   - question: "Does Combat Medicine scale off Toughness or Engineering?"
     answer: "Toughness, from our understanding. This is the single biggest mistake on Combat Medicine builds. The tooltips imply Engineering affects heal output, but that doesn't seem to hold for the Combat Medic subclass. Toughness is the stat to stack. Nadie stacks 2,410 Toughness for 334k Health, and that Health pool directly drives the healing output."
   - question: "Is Pummeling Shield good on a Field Medic?"
-    answer: "Yes, with an asterisk. The Extra Health proc triggers when you get hit at max health, which a healing station keeps you at constantly. The stun proc triggers every 10 hits while you have Extra Health, but since the June 26, 2026 hotfix it has a 10-second cooldown and only lasts 1.5 seconds (down from 2). So a Field Medic with a 100-round M60 still stays topped up and still stuns things, just one nap every 10 seconds instead of a stun-lock. The OS Protocol is not Bulwark-exclusive."
+    answer: "Yes, with an asterisk. The Extra Health proc triggers when you get hit at max health, which a healing station keeps you at constantly. The stun proc triggers every 10 hits while you have Extra Health, but since the June 26, 2026 hotfix it has a 10-second cooldown and only lasts 1.5 seconds (down from 2). So a Field Medic with an M60 still stays topped up and still stuns things, just one nap every 10 seconds instead of a stun-lock. The OS Protocol is not Bulwark-exclusive."
   - question: "Can I solo Elite Missions with this build?"
     answer: "Yes, but slowly. Nadie's DPS is 66k, not a damage build. Elite Mission bosses take a long time at that DPS (call it 15-20 minutes, give or take your patience). The trade-off is that you will not die. If patience is not a problem, this build clears everything in the game."
   - question: "What weapons does The Muscular Nurse use?"
@@ -246,7 +246,7 @@ The detailed loop:
 2. **Stand in it**: your healing keeps you at full health, which primes Pummeling Shield's Extra Health proc
 3. **Hold the trigger**: Steady Suppression gives +18% DR while firing. Precision Support stacks Armor and Rescue Efficiency per 6 hits. Pummeling Shield stuns every 10 hits (once per 10 seconds since the June 26 hotfix).
 4. **Take hits freely**: at full health, Pummeling Shield generates Extra Health equal to 2400% Firepower. Hypervigilant II and Rock Solid II both trigger from the healing ticks, stacking DR.
-5. **Swap to M60 for boss solo**: 100-round magazine, Sadistic Shield II generates Extra Health every 5 hits, Conceited II adds DR on every kill
+5. **Swap to M60 for boss solo**: big magazine, Sadistic Shield II generates Extra Health every 5 hits, Conceited II adds DR on every kill
 6. **Deploy Combat Medicine signature** on whoever needs emergency healing or on unlucky enemies
 
 The entire art of this build is **positioning your healing station where your team will actually stand in it**. If your teammates avoid the ring, swap to the M60 and solo-tank the boss yourself.
