@@ -275,6 +275,33 @@
   let loadedTemplate = -1; // index of the last template loaded, for the template label
   let notice = ''; // one-line message about the last link that was loaded
 
+  /* Skill mods: when the data says which skill each set is for, the three slots are the focus's
+     three skills (planner-specs.json). Without that field they are three plain slots. */
+  function focusSkills(st) {
+    const f = focusOf(specOf(st.spec), st.focus);
+    const skills = f ? arr(f.skills).map(str).filter(Boolean) : [];
+    if (skills.length !== 3) return null;
+    const mods = MODS.items.filter((m) => key(m.specialization) === key(st.spec));
+    return mods.length && mods.every((m) => str(m.skill)) ? skills : null;
+  }
+  /* Puts skill mod ids into their slots (by skill, or by position without skill data) and returns
+     how many were left out: another specialization, another focus's skill, or a slot taken twice. */
+  function placeMods(st, ids) {
+    const skills = focusSkills(st);
+    const out = ['', '', ''];
+    let left = 0;
+    ids.forEach((id, i) => {
+      if (!id) return;
+      const m = MODS.get(id);
+      if (!m || key(m.specialization) !== key(st.spec) || out.includes(str(m.id))) { left++; return; }
+      const at = skills ? skills.findIndex((s) => key(s) === key(m.skill)) : i;
+      if (at < 0 || at > 2 || out[at]) { left++; return; }
+      out[at] = str(m.id);
+    });
+    st.mods = out;
+    return left;
+  }
+
   /* ---------- share links ----------
      Format (unchanged keys, so older links keep working):
      s=spec, sc=focus, n=name; gear prefix m g h c p k (mask, gloves, holster, body armor, backpack,
@@ -392,11 +419,7 @@
     st.os = os ? str(os.id) : miss(ov);
     const mv = ['sm1', 'sm2', 'sm3'].map(take);
     if (!mv[0] && take('smc')) mv[0] = take('smc'); // oldest links used smc for the first mod
-    mv.forEach((v, i) => {
-      const m = MODS.get(v);
-      if (!m || key(m.specialization) !== key(sp.name) || st.mods.includes(str(m.id))) return miss(v);
-      st.mods[i] = str(m.id);
-    });
+    dropped += placeMods(st, mv.map((v) => { const m = MODS.get(v); if (!m) { miss(v); return ''; } return str(m.id); }));
 
     out.state = st;
     out.dropped = Math.max(0, dropped);
@@ -596,8 +619,10 @@
     else empty.push(...noSet.map((l) => `${l} set`));
     st.w.forEach((w, i) => { if (!getWeapon(w.id)) empty.push(WEAPON_LABEL[i].toLowerCase() + ' weapon'); });
     if (!os) empty.push('OS Protocol');
+    const skills = focusSkills(st);
     const noMods = st.mods.filter((m) => !m).length;
-    if (noMods) empty.push(noMods === 1 ? '1 skill mod' : `${noMods} skill mods`);
+    if (skills) st.mods.forEach((m, i) => { if (!m) empty.push(`${skills[i]} mod`); });
+    else if (noMods) empty.push(noMods === 1 ? '1 skill mod' : `${noMods} skill mods`);
 
     // Score: 40 for completeness, 30 for pieces inside an active set bonus, 20 for attributes that fit
     // the focus, 10 for the OS Protocol, minus 5 for each warning
@@ -749,14 +774,17 @@
   }
 
   function renderMods() {
+    const skills = S.spec ? focusSkills(S) : null;
     $$('.skill-slot').forEach((btn, i) => {
       const m = MODS.get(S.mods[i]);
+      const skill = skills ? skills[i] : '';
       btn.disabled = !S.spec;
       btn.classList.toggle('is-set', !!m);
+      setText('.skill-slot__skill', skill, btn);
       setText('.skill-slot__nm', m ? m.name : S.spec ? 'Select skill mod' : 'Pick a specialization first', btn);
-      setText('.skill-slot__sub', m ? [m.skill ? str(m.skill) : '', `2pc: ${bonusText(m.bonus2)}`].filter(Boolean).join(' · ') : '', btn);
+      setText('.skill-slot__sub', m ? [!skill && m.skill ? str(m.skill) : '', `2pc: ${bonusText(m.bonus2)}`].filter(Boolean).join(' · ') : '', btn);
       setText('.skill-slot__desc', m ? `3pc: ${str(m.bonus3)}` : '', btn);
-      btn.setAttribute('aria-label', `Skill mod ${i + 1}: ${m ? m.name : 'not set'}`);
+      btn.setAttribute('aria-label', `${skill ? skill + ' mod' : 'Skill mod ' + (i + 1)}: ${m ? m.name : 'not set'}`);
     });
     setText('#skillCount', `${S.mods.filter(Boolean).length} / 3`);
   }
@@ -1105,9 +1133,16 @@
     if (!sp) return;
     openList({
       title: `${sp.name} focus`,
-      items: sp.focuses.map((f) => ({ id: f.name, name: f.name, tag: str(f.stat) })),
+      items: sp.focuses.map((f) => ({ id: f.name, name: f.name, tag: str(f.stat), desc: arr(f.skills).join(', ') })),
       current: S.focus,
-      onPick: (id) => { if (focusOf(sp, id)) { S.focus = focusOf(sp, id).name; changed(); } },
+      onPick: (id) => {
+        const f = focusOf(sp, id);
+        if (!f || f.name === S.focus) return;
+        S.focus = f.name;
+        const lost = placeMods(S, S.mods);
+        changed();
+        if (lost) toast(`${lost} skill ${plural(lost, "mod doesn't", "mods don't")} fit ${S.focus} and ${plural(lost, 'was', 'were')} removed.`);
+      },
     });
   }
 
@@ -1193,11 +1228,14 @@
 
   function openModPicker(i) {
     if (!S.spec) return;
-    const mine = MODS.items.filter((m) => key(m.specialization) === key(S.spec));
-    const hasSkill = mine.some((m) => m.skill);
+    const skills = focusSkills(S);
+    const skill = skills ? skills[i] : '';
+    // a skill's slot lists that skill's sets; plain slots list all of the spec's sets, by skill if known
+    const mine = MODS.items.filter((m) => key(m.specialization) === key(S.spec) && (!skill || key(m.skill) === key(skill)));
+    const hasSkill = !skill && mine.some((m) => m.skill);
     if (hasSkill) mine.sort((a, b) => str(a.skill).localeCompare(str(b.skill)));
     openList({
-      title: `Skill mod ${i + 1}`,
+      title: skill ? `${skill} mod` : `Skill mod ${i + 1}`,
       items: mine.map((m) => {
         const used = S.mods.indexOf(str(m.id));
         return {
@@ -1440,12 +1478,7 @@
     if (!sp || S.spec === sp.name) return;
     S.spec = sp.name;
     S.focus = sp.focuses[0].name;
-    let removed = 0;
-    S.mods = S.mods.map((id) => {
-      const m = MODS.get(id);
-      if (m && key(m.specialization) !== key(sp.name)) { removed++; return ''; }
-      return id;
-    });
+    const removed = placeMods(S, S.mods); // skill mods belong to one specialization
     changed();
     if (removed) toast(`${removed} ${plural(removed, 'skill mod belongs', 'skill mods belong')} to another specialization and ${plural(removed, 'was', 'were')} removed.`);
   }

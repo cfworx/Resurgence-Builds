@@ -1,44 +1,44 @@
 {
-  "_comment": "Specializations and focuses for the build planner (/builder/). 'stat' is the core stat a focus builds around, the same reading as the class pages: Recon is the Engineering team-utility path, Breacher the Firepower path. The planner uses it for the OS Protocol sort, the score and the checks. 'aliases' are older names that share links may still carry.",
+  "_comment": "Specializations and focuses for the build planner (/builder/). 'stat' is the core stat a focus builds around, the same reading as the class pages: Recon is the Engineering team-utility path, Breacher the Firepower path. The planner uses it for the OS Protocol sort, the score and the checks. 'skills' are the focus's three skills, signature last, spelled as the 'skill' field in skill-mod-combos.json (Ubisoft's drop-rate table names); when that field is present, each of the planner's three skill mod slots is one of these skills. 'aliases' are older names that share links may still carry.",
   "specs": [
     {
       "name": "Demolitionist",
       "icon": "/images/ui/specializations/demolitionist.webp",
       "focuses": [
-        { "name": "HE Munitions", "stat": "Engineering" },
-        { "name": "Field Grenadier", "stat": "Engineering", "aliases": ["Ordinance", "Ordnance"] }
+        { "name": "HE Munitions", "stat": "Engineering", "skills": ["Artillery Turret", "Explosive Seeker Mine", "M32A1 Grenade Launcher"] },
+        { "name": "Field Grenadier", "stat": "Engineering", "skills": ["Artillery Turret", "Explosive Seeker Mine", "M32A1 Grenade Launcher"], "aliases": ["Ordinance", "Ordnance"] }
       ]
     },
     {
       "name": "Tech Operator",
       "icon": "/images/ui/specializations/tech-operator.webp",
       "focuses": [
-        { "name": "Offensive Operations", "stat": "Engineering" },
-        { "name": "Aegis Operations", "stat": "Engineering", "aliases": ["Tech Aegis", "Aegis"] }
+        { "name": "Offensive Operations", "stat": "Engineering", "skills": ["Striker Drone", "Drone Lock", "Drone Overload"] },
+        { "name": "Aegis Operations", "stat": "Engineering", "skills": ["Mender Drone", "First-Aid Firefly", "Defender Drone"], "aliases": ["Tech Aegis", "Aegis"] }
       ]
     },
     {
       "name": "Bulwark",
       "icon": "/images/ui/specializations/bulwark.webp",
       "focuses": [
-        { "name": "Juggernaut", "stat": "Toughness" },
-        { "name": "Breacher", "stat": "Firepower" }
+        { "name": "Juggernaut", "stat": "Toughness", "skills": ["Phalanx Shield", "Shockwave Spike Mk.3", "Breach Combo"] },
+        { "name": "Breacher", "stat": "Firepower", "skills": ["Phalanx Shield", "Shockwave Spike Mk.3", "Breach Combo"] }
       ]
     },
     {
       "name": "Vanguard",
       "icon": "/images/ui/specializations/vanguard.webp",
       "focuses": [
-        { "name": "Commando", "stat": "Firepower" },
-        { "name": "Recon", "stat": "Engineering", "aliases": ["Scout"] }
+        { "name": "Commando", "stat": "Firepower", "skills": ["Smart Cover", "Scanning Pulse", "Tactical Link"] },
+        { "name": "Recon", "stat": "Engineering", "skills": ["Smart Cover", "Scanning Pulse", "Tactical Link"], "aliases": ["Scout"] }
       ]
     },
     {
       "name": "Field Medic",
       "icon": "/images/ui/specializations/field-medic.webp",
       "focuses": [
-        { "name": "Tactical Pharma", "stat": "Engineering" },
-        { "name": "Combat Medicine", "stat": "Toughness" }
+        { "name": "Tactical Pharma", "stat": "Engineering", "skills": ["Chemical Trap", "Oxidizing Hive", "Oxidizing Swarm"] },
+        { "name": "Combat Medicine", "stat": "Toughness", "skills": ["Support Station", "Healing Hive", "Healing Swarm"] }
       ]
     }
   ]

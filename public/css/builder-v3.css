@@ -388,6 +388,8 @@ button.picktag:hover:not(:disabled){border-color:var(--line-hot);background:var(
   font-family:var(--font-mono);font-size:13px;color:var(--purple);
   border:1px solid rgba(176,123,255,.3);background:rgba(176,123,255,.08)}
 .skill-slot__txt{display:flex;flex-direction:column;gap:2px;min-width:0}
+.skill-slot__skill{font-family:var(--font-mono);font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--purple)}
+.skill-slot__skill:empty{display:none}
 .skill-slot__nm{font-family:var(--font-display);font-weight:600;font-size:15px;line-height:1.25;color:var(--muted);overflow-wrap:anywhere}
 .skill-slot.is-set .skill-slot__nm{color:var(--text)}
 .skill-slot__sub{font-size:13px;color:var(--text-2);line-height:1.4}
