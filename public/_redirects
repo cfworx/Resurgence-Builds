@@ -6,6 +6,15 @@ http://resurgencebuilds.com/* https://resurgencebuilds.com/:splat 301
 /guides/hidden-mechanics-build-optimization/ /guides/hidden-mechanics-explained/ 301
 /sitemap.xml /sitemap-index.xml 301
 
+# Retired build planner versions. A real 301 keeps the #build part of old share links,
+# which the meta refresh pages from astro.config.mjs would drop.
+/builder-v2/      /builder/  301
+/builder-v2       /builder/  301
+/builder-v3/      /builder/  301
+/builder-v3       /builder/  301
+/builder-legacy/  /builder/  301
+/builder-legacy   /builder/  301
+
 # Legacy policy page redirects
 /privacy-policy        /privacy   301
 /privacy-policy/       /privacy/  301

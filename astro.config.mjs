@@ -34,6 +34,10 @@ export default defineConfig({
   redirects: {
     '/tag/general/': '/guides/',
     '/build-planner/': '/builder/',
+    // retired planner versions
+    '/builder-v2/': '/builder/',
+    '/builder-v3/': '/builder/',
+    '/builder-legacy/': '/builder/',
     '/cdn-cgi/l/email-protection': '/',
     '/tag/v1.1.1/': '/patch-notes/',
     '/tag/v1.1.2/': '/patch-notes/',
@@ -51,9 +55,6 @@ export default defineConfig({
           page.includes('/api/') ||
           page.includes('/cdn-cgi/') ||
           page.includes('/build-planner/') ||
-          page.includes('/builder-legacy/') ||
-          page.includes('/builder-v2/') ||
-          page.includes('/builder-v3/') ||
           page.includes('/map/') ||
           page.includes('/database/gear/')
         ) return false;
