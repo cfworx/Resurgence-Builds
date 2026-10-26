@@ -170,7 +170,7 @@ const faqs = [
     answer: verifiedBuilds.length > 0
       ? `The newest ${classData.name} build we've verified on Resurgence Builds is ${verifiedBuilds[0].data.title}. ${classData.perkOverview}`
       : builds.length > 0
-        ? `The newest ${classData.name} build on Resurgence Builds is ${builds[0].data.title}, a creator build we haven't re-tested. ${classData.perkOverview}`
+        ? `The newest ${classData.name} build on Resurgence Builds is ${builds[0].data.title}, a creator build. ${classData.perkOverview}`
         : `${classData.name} builds focus on ${classData.role} playstyles. ${classData.perkOverview}`
   },
   {
@@ -275,9 +275,6 @@ const boldStars = (t: string) => t
           ? <>{' '}Each focus has its own signature skill: <strong style="color: var(--accent);">{classData.signatures[0].name}</strong> for {classData.signatures[0].focus} and <strong style="color: var(--accent);">{classData.signatures[1].name}</strong> for {classData.signatures[1].focus}. Pick the path that matches your playstyle.</>
           : <>{' '}Your signature move, <strong style="color: var(--accent);">{classData.signature.name}</strong>, {classData.signature.description.toLowerCase().split('.')[0]}, and yeah, it's as good as it sounds.</>
         }
-      </p>
-      <p style="color: var(--ink-muted); font-size: var(--text-sm); line-height: 1.75; margin: 0;">
-        Our own builds below were run in-game and verified on the patch shown on their card. No theory-craft copium here. Creator builds are documented from the creator's own video, and their pages say we haven't re-tested them. Several balance patches have landed since some of these were written, so check the patch label before you farm.
       </p>
     </div>
 

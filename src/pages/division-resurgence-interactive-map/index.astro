@@ -25,7 +25,6 @@ const disputedCrates = crates.filter((p) => !p.code).map((p) => p.crateNumber!).
 const trackableTotal = pois.filter((p) => catById[p.category]?.trackable).length;
 const wipLabels = categories.filter((c) => c.wip && c.id !== 'encrypted_crate').map((c) => c.label.toLowerCase());
 const offMap = poisData.offMap as { type: string; name: string; note: string }[];
-const offMapInstances = offMap.filter((o) => /instance/i.test(o.type)).map((o) => o.name);
 
 const groups: Record<string, Cat[]> = {};
 for (const cat of categories) (groups[cat.group] ||= []).push(cat);
@@ -54,14 +53,6 @@ const faqs = [
     question: 'Where is the Dark Zone on the map?',
     answer: `The Dark Zone is the eastern section of the map. We plot its ${n('dz_gate')} gates, ${n('dz_extraction')} extraction zones, ${dzSafeHouses} safe houses, ${n('dz_landmark')} landmarks, enemy leaders and extremely contaminated areas. Those markers are converted from a schematic community map, so they can sit slightly off from the in-game icon. Close enough to navigate by, not close enough to stand on.`
   },
-  {
-    question: 'Why are some missions not on the map?',
-    answer: `${listJoin(offMapInstances)} are instanced missions that take place outside the open-world map, so we list them under the map instead of inventing a pin for them. Everything else with a known position is plotted.`
-  },
-  {
-    question: 'Is this an official Ubisoft map?',
-    answer: 'No. Resurgence Builds is an independent fan site. Marker positions are adapted from The Division Wiki community maps (CC BY-SA 3.0), fitted onto the in-game map image, and cross-checked against our own guides. If a pin is wrong, tell us through the contact page and we will move it.'
-  }
 ];
 
 const mapLd = {
@@ -161,19 +152,16 @@ const dataPayload = JSON.stringify(poisData);
 
   <section class="map-seo">
     <h2>Instanced missions (not on the open-world map)</h2>
-    <p>These missions launch from a bubble at the edge of the in-game map and play out somewhere else, so there is nothing honest to pin:</p>
+    <p>These launch from a bubble at the edge of the in-game map, so they have no pin:</p>
     <ul class="offmap-list">
       {offMap.map((o) => (
-        <li><strong>{o.name}</strong> <span class="offmap-type">{o.type}</span>. {o.note}</li>
+        <li><strong>{o.name}</strong></li>
       ))}
     </ul>
 
     <h2>About this map</h2>
-    <p>This is a free interactive map for Tom Clancy's The Division Resurgence, drawn on the in-game map of Midtown Manhattan. It plots {total} locations across {categories.length} layers: hubs and safe houses, main and side missions, open-world activities, every mapped collectible, and the Dark Zone. It works in the browser on phones and PC, with no login.</p>
-    <p>How we built it: the positions come from The Division Wiki's community maps of <a href={poisData.attribution.sources[0]} target="_blank" rel="noopener noreferrer">New York City</a> and <a href={poisData.attribution.sources[1]} target="_blank" rel="noopener noreferrer">the Dark Zone</a> (Fandom, licensed <a href={poisData.attribution.license} target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a>), which players have been filling in since launch. We converted them onto our base map with a perspective fit anchored on building outlines, so open-world markers land within a few pixels of the in-game icons. The Dark Zone layer comes from a separate schematic map, which is why those markers carry an "approximate" flag. Our <a href="/guides/division-resurgence-dark-zone-guide/">Dark Zone guide</a> covers what to do once you are in there: contamination, extraction, the Smuggler and going Rogue.</p>
-    <p>What is still partial: {listJoin(wipLabels)} are flagged as partial layers because the community has not finished mapping them. Encrypted crates are flagged too, because not every crate in the game has been located. The <a href="/guides/division-resurgence-safe-codes/">Safe Codes Master List</a> explains which codes are confirmed, which are randomized per player, and which are disputed.</p>
-    <p>Spotted a wrong pin or a missing location? <a href="/contact/">Send it to us</a> with the in-game spot (Shift+Click on desktop copies coordinates) and we will fix it. For gear once you have looted the place clean, see the <a href="/builds/">builds database</a> and the <a href="/guides/division-resurgence-exotic-weapons-list-2026/">exotic weapons list</a>, and check the <a href="/patch-notes/">patch notes</a> for what changed this season.</p>
-    <p class="map-disclaimer"><em>Resurgence Builds is an independent fan site. We are not affiliated with, endorsed by, or sponsored by Ubisoft Entertainment SA. Tom Clancy's The Division, The Division Resurgence, and all related characters, logos, and game assets are trademarks and copyrights of Ubisoft Entertainment SA.</em></p>
+    <p>{total} locations across {categories.length} layers, drawn on the in-game map of Midtown Manhattan. Positions come from The Division Wiki's community maps of <a href={poisData.attribution.sources[0]} target="_blank" rel="noopener noreferrer">New York City</a> and <a href={poisData.attribution.sources[1]} target="_blank" rel="noopener noreferrer">the Dark Zone</a> (Fandom, <a href={poisData.attribution.license} target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a>). Dark Zone markers are approximate. Still partial: {listJoin(wipLabels)}, plus encrypted crates.</p>
+    <p>Spotted a wrong pin? <a href="/contact/">Tell us</a> (Shift+Click on desktop copies the coordinates).</p>
   </section>
 
   <section class="map-faq">
@@ -456,8 +444,6 @@ const dataPayload = JSON.stringify(poisData);
 .offmap-list { margin: 0 0 var(--sp-4); padding-left: var(--sp-5) }
 .offmap-list li { margin-bottom: 4px; max-width: var(--measure) }
 .offmap-list strong { color: var(--ink-heading) }
-.offmap-type { font-family: var(--font-mono); font-size: 0.8125rem; text-transform: uppercase; color: var(--ink-muted); border: 1px solid var(--border); border-radius: 3px; padding: 0 4px }
-.map-disclaimer em { font-size: var(--text-xs) }
 
 /* --- FAQ --- */
 .map-faq { padding: var(--sp-6) var(--sp-4) var(--sp-10); max-width: var(--content-width); margin: 0 auto; text-align: left }

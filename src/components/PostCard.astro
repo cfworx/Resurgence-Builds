@@ -1,5 +1,4 @@
 ---
-import { getAuthorUrl } from '../utils/author';
 
 export interface Props {
   title: string;
@@ -34,6 +33,8 @@ const typeLabels: Record<string, string> = {
 };
 
 const typeLabel = typeLabels[type] || type;
+// Every post is ours; only credit the creator when the build is theirs ("RapidF5 (via TikTokAndy)").
+const creator = (author.match(/via\s+([^)]+)\)?\s*$/) || [])[1]?.trim();
 ---
 
 <article class={`card post-card ${featuredImage ? 'post-card--has-image' : ''}`} data-type={type} data-tags={JSON.stringify(tags)} style="position: relative;">
@@ -56,7 +57,7 @@ const typeLabel = typeLabels[type] || type;
         <span class="post-card__date">{formattedDate}</span>
       </div>
       <p class="card__title"><a href={href} class="card__link">{title}</a></p>
-      <p class="card__meta">By <a href={getAuthorUrl(author)} class="card__author-link">{author}</a></p>
+      {creator && <p class="card__meta">Build by {creator}</p>}
       <p class="card__description">{description}</p>
       {tags.length > 0 && (
         <div class="post-card__tags">

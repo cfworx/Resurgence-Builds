@@ -35,7 +35,7 @@ videoChannel: "GGReborn"
 
 ## What This Build Does
 
-> Build credit: [**GGReborn**](https://www.youtube.com/watch?v=OVnksyrlj88) for the build (October 16, 2026) and two follow-up tests in the Lone Wolf Challenge: [three stat setups](https://www.youtube.com/watch?v=f1q44KbdS6g) (October 22) and [four OS Protocols](https://www.youtube.com/watch?v=Kz9YlTUl_1s) (October 23). The variant and the Dark Zone notes come from [**TikTokAndy's**](https://www.youtube.com/watch?v=f20v8_cv9Ls) October 15 Tactical Pharma video. Every number is the creator's own reading unless we say it came from our database or Ubisoft. We haven't re-tested any of it ourselves.
+> Build credit: [**GGReborn**](https://www.youtube.com/watch?v=OVnksyrlj88) for the build (October 16, 2026) and two follow-up tests in the Lone Wolf Challenge: [three stat setups](https://www.youtube.com/watch?v=f1q44KbdS6g) (October 22) and [four OS Protocols](https://www.youtube.com/watch?v=Kz9YlTUl_1s) (October 23). The variant and the Dark Zone notes come from [**TikTokAndy's**](https://www.youtube.com/watch?v=f20v8_cv9Ls) October 15 Tactical Pharma video.
 
 Tactical Pharma is the [Field Medic](/class/field-medic/) focus that read the word "medic" and chose violence. GGReborn's Season 2 Phase 2 version is an Engineering skill build: **Jackpot 4pc + Fire Cycle 2pc**, **Glass Cannon** on the body armor, **Minion Training II** on the backpack, and **Brains Over Brawn**, a blue OS Protocol whose talent makes hits deal bonus damage equal to a share of your Engineering (48% on his level 50 copy). **Chemical Trap**, **Oxidizing Hive** and the **Oxidizing Swarm** signature do the killing. In our reading, the Lightweight M4 and First Wave Vector mostly exist to switch on Skill Damage and Engineering buffs. He shows it off in a solo Legendary run, then went back to Lone Wolf to test two of the build's big open questions.
 
@@ -64,12 +64,12 @@ Four pieces of Jackpot and two of Fire Cycle. He doesn't say out loud which two 
 | Holster | none | Skill Critical Damage, Skill Cooldown Recovery |
 | Kneepads | none | Skill Intensity, Skill Multi-Shot Chance |
 
-**Set bonuses (our database):**
+**Set bonuses:**
 
 - **Jackpot:** 2pc Skill Radius +12%, 3pc Skill Critical Chance +10.8%, 4pc Skill Critical Damage +24%.
 - **Fire Cycle:** 2pc Skill Critical Damage +12%.
 
-**Talents (our database, base versions):** Glass Cannon grants +20% Damage and inflicts -10% Damage Reduction. Minion Training makes Skill Critical Hit kills grant +36% Skill Critical Hit Damage for 12 seconds; his is the upgraded II, and he doesn't read out its numbers.
+**Talents (base versions):** Glass Cannon grants +20% Damage and inflicts -10% Damage Reduction. Minion Training makes Skill Critical Hit kills grant +36% Skill Critical Hit Damage for 12 seconds; his is the upgraded II, and he doesn't read out its numbers.
 
 **Gear mods:** his purple and gold mods mix Engineering with Skill Critical Damage, Skill Multi-Shot Chance and Skill Intensity, with Armor and Health rolls in a few slots. Those skill sub-rolls on gear mods arrived with Season 2 Phase 1's gear mod rework.
 
@@ -82,7 +82,7 @@ Four pieces of Jackpot and two of Fire Cycle. He doesn't say out loud which two 
 | Primary | **Lightweight M4** (Assault Rifle) | **In Sync** + **Revitalize** | Skill Multi-Shot Chance; Engineering attachments with Skill Critical Damage |
 | Secondary | **First Wave Vector** (SMG) | **Torrential Downpour** + **Fully Charged** | Engineering attachments with Skill Intensity and Skill Critical Damage |
 
-What the talents do (our database, base versions):
+What the talents do (base versions):
 
 - **In Sync:** weapon hits grant +9% Skill Damage for 8 seconds, skill hits grant +9% Weapon Damage for 8 seconds, and both double while they're active together.
 - **Revitalize:** every kill or assist restores 4.20% Max Health for 3 seconds (4-second cooldown). GGReborn says it helps him survive the run.
@@ -95,7 +95,7 @@ In our reading of that text, the Vector is an Engineering battery: spray it to t
 
 ## Skills, Chips and Combo Sets
 
-| Skill | Combo set (3pc) | What it does (our database) | GGReborn's chips (talent line, then attributes) |
+| Skill | Combo set (3pc) | What it does | GGReborn's chips (talent line, then attributes) |
 |---|---|---|---|
 | Oxidizing Swarm (signature) | **Enhanced Formula** | Swarm hits inflict -12% Damage for 20 seconds; killing a debuffed enemy within 20 meters restores Health equal to 8% of Missing Health for 20 seconds. 2pc: Skill Critical Damage. | Firmware: 11.42% Skill Intensity (Skill Multi-Shot Chance, Skill Intensity). Software: 12.6% Skill Intensity (Skill Critical Chance). Chipset: Skill Radius, which he'd swap for Skill Intensity if he had the right chip (Skill Cooldown Recovery, Skill Critical Chance). |
 | Oxidizing Hive | **Hereafter Resilience** | Deploying the Hive costs 25% of your current Health but grants Extra Health equal to 35% of Max Health and 5% Armor for 20 seconds; while the Hive is attached to your backpack, it releases Micro Corrosive Drones at enemies within 15 meters every 1.60 seconds. 2pc: Skill Intensity. | Firmware: 11.76% Skill Intensity (Skill Radius, Skill Critical Chance). Software: 14.18% Skill Duration (Skill Multi-Shot Chance, Skill Duration). Chipset: 14.68% Skill Intensity (Skill Critical Damage). |
@@ -121,9 +121,9 @@ On October 23 he put four protocols through the Lone Wolf Challenge, keeping his
 | Tactical Persistence | Superior (purple) | 48.00% Skill Critical Damage | 60% / 243.37% | 804 seconds |
 | Chain Reaction | Superior (purple) | 28.8% Skill Critical Chance | 67.96% / 233.15%* | 807 seconds |
 
-*The captions render Chain Reaction's crit damage as "233 points. 15%," which we read as 233.15%. He also says the Collateral Damage run had slightly lower crit stats because that's all he could stack with the gear he had.
+*He says the Collateral Damage run had slightly lower crit stats because that's all he could stack with the gear he had.
 
-Talents (our database, base versions): **Collateral Damage** makes Skill Damage also hit enemies within 5 meters of the target for damage equal to 3000% Engineering (10-second cooldown). **Tactical Persistence** gives Skill Hits a 20% chance of +3% Skill Intensity for 5 seconds, up to 5 stacks. **Chain Reaction** makes kills grant +7.50% Skill Intensity for 10 seconds, up to 2 stacks.
+Talents (base versions): **Collateral Damage** makes Skill Damage also hit enemies within 5 meters of the target for damage equal to 3000% Engineering (10-second cooldown). **Tactical Persistence** gives Skill Hits a 20% chance of +3% Skill Intensity for 5 seconds, up to 5 stacks. **Chain Reaction** makes kills grant +7.50% Skill Intensity for 10 seconds, up to 2 stacks.
 
 **Our read:** Chain Reaction technically finished first, three seconds ahead of the next two and five ahead of Brains Over Brawn, on the setup with the most crit chance. GGReborn didn't crown a winner, and in his stat test the day before he said completion time can vary with enemy positioning and movement. Five seconds on a Lone Wolf run is a rounding error with a mortgage. Run whichever of these you own, and note that they aren't equally easy to own:
 
@@ -144,15 +144,13 @@ TikTokAndy is working his **Tactical Persistence** up to level 50 and thinks tha
 
 ## How Much Skill Crit Chance? GGReborn's Stat Test
 
-The creators split on this one. GGReborn's build sits around 69% Skill Critical Chance (the auto-captions render it as "69 153 percent," so check his stat screen), and he says he's trying to bring it down to 60 or 55% while pushing Skill Critical Damage and Skill Multi-Shot Chance as high as he can. TikTokAndy, at 55%, thinks the build gets good "once you get to like 75 percent." On October 22 GGReborn tested three setups in Lone Wolf:
+The creators split on this one. GGReborn's build sits around 69% Skill Critical Chance, and he says he's trying to bring it down to 60 or 55% while pushing Skill Critical Damage and Skill Multi-Shot Chance as high as he can. TikTokAndy, at 55%, thinks the build gets good "once you get to like 75 percent." On October 22 GGReborn tested three setups in Lone Wolf:
 
 | Setup | Skill Crit Chance | Skill Crit Damage | Skill Multi-Shot Chance | Skill Intensity |
 |---|---|---|---|---|
 | 1 | 65.87% | 217.55% | 37.61% | 36.73% |
-| 2 | 71.19% | 219.55% | 37.61%* | 36.73%* |
+| 2 | 71.19% | 219.55% | 37.61% | 36.73% |
 | 3 | 76.73% | 217.23% | 33.69% | 36.73% |
-
-*His readout for setup 2 is muddled in the captions (a 33.69% appears between the multi-shot and intensity numbers), so check the video.
 
 He framed the test as higher crit chance versus lower crit chance with more multi-shot, warned that the differences were small, and asked viewers to watch the on-screen damage numbers rather than the completion times. The transcript ends on the finishing times without him naming a winner, so we're not naming one either.
 
@@ -200,7 +198,7 @@ His stat sheet (his readings):
 | Signature Charge Efficiency | 41% |
 | Damage to Elites | 14% |
 | Armor / Health | 9,700 / 105,000 |
-| Engineering | He calls it too low (the captions catch "1.67") |
+| Engineering | He calls it too low |
 
 His gear rolls, briefly: Jackpot mask with Skill Critical Chance and Armor (he wants to reroll the Armor into Skill Critical Damage or Multi-Shot), Fire Cycle body armor with Skill Cooldown Recovery and Skill Critical Damage, a Jackpot backpack with a max Engineering roll (263), Damage to Elites and Skill Radius, Jackpot gloves and kneepads with Skill Critical Chance and Signature Charge Efficiency, and a Fire Cycle holster with Skill Critical Damage and Skill Multi-Shot Chance.
 

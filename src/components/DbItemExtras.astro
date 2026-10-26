@@ -26,7 +26,7 @@ const cacheIds = [...new Set(rows.map((r) => r.cacheId))];
 {rows.length > 0 && (
   <section class="dbx-section" aria-labelledby="dbx-drops">
     <h2 id="dbx-drops" class="dbx-title">Official Drop Odds</h2>
-    <p>Ubisoft publishes the odds for every sealed cache in its Help Center. These are all the entries for <strong>{name}</strong>, as a chance per cache opened.{rules && <> Every pull rolls a tier first (Tier S {rules.tierRates.S}, Tier A {rules.tierRates.A}, Tier B {rules.tierRates.B}), with a Tier S result guaranteed within {rules.pity.S} pulls and a Tier A result within {rules.pity.A}. The pity guarantees a Tier S item, not this one.</>}</p>
+    <p>Chance per cache opened, from Ubisoft's published odds.{rules && <> Pity guarantees a Tier S result within {rules.pity.S} pulls and Tier A within {rules.pity.A}, not this specific item.</>}</p>
     <div class="dbx-table-wrap">
       <table class="dbx-table">
         <thead><tr><th scope="col">Cache</th><th scope="col">Entry</th><th scope="col">Tier</th><th scope="col">Chance</th></tr></thead>
@@ -46,18 +46,17 @@ const cacheIds = [...new Set(rows.map((r) => r.cacheId))];
   <h2 id="dbx-builds" class="dbx-title">{excluded.size > 0 ? 'Other Builds' : 'Builds'} That Mention {name}</h2>
   {builds.length > 0 ? (
     <>
-      <p>Build guides on this site that name {name}, as a core piece or as an alternative. Open the guide to see how it is used.</p>
       <ul class="dbx-builds">
         {builds.map((b) => (
           <li>
             <a href={b.url}>{b.title}</a>
-            <span class="dbx-meta">{b.specialization} · {b.patch}{!b.verified && ' · creator build, not re-tested by us'}</span>
+            <span class="dbx-meta">{b.specialization} · {b.patch}{!b.verified && ' · creator build'}</span>
           </li>
         ))}
       </ul>
     </>
   ) : (
-    <p>None of our build guides mention {name} yet. Browse the <a href="/builds/">builds database</a> or try it in the <a href="/builder/">Build Planner</a>.</p>
+    <p>No build guides mention {name} yet.</p>
   )}
 </section>
 )}

@@ -35,7 +35,7 @@ videoChannel: "TikTokAndy"
 
 ## What This Build Does
 
-> Build credit: [**TikTokAndy**](https://www.youtube.com/watch?v=ITIJB2nj3zg) for the full walkthrough (September 30, 2026) and two later videos, a [floor 20 run on his original two-shell build](https://www.youtube.com/watch?v=9nQ-jGnc7gU) (published October 2) and a [solo Legendary Precious Cargo run](https://www.youtube.com/watch?v=D3yrRSUwhq0) with his updated build (October 6), and [**GGReborn**](https://www.youtube.com/watch?v=bltLVzptY0U), whose version carried him through his first solo Legendary on Vanguard (September 23, 2026). TikTokAndy credits GGReborn for "bringing this build to the table," specifically the Gunny Johnny setup that got him a third shell. Every stat below is the creator's own reading from their video unless we say it came from our database or Ubisoft's patch notes. We haven't re-tested this build ourselves.
+> Build credit: [**TikTokAndy**](https://www.youtube.com/watch?v=ITIJB2nj3zg) for the full walkthrough (September 30, 2026) and two later videos, a [floor 20 run on his original two-shell build](https://www.youtube.com/watch?v=9nQ-jGnc7gU) (published October 2) and a [solo Legendary Precious Cargo run](https://www.youtube.com/watch?v=D3yrRSUwhq0) with his updated build (October 6), and [**GGReborn**](https://www.youtube.com/watch?v=bltLVzptY0U), whose version carried him through his first solo Legendary on Vanguard (September 23, 2026). TikTokAndy credits GGReborn for "bringing this build to the table," specifically the Gunny Johnny setup that got him a third shell. Every stat below is the creator's own reading from their video unless we say it came from our database or Ubisoft's patch notes.
 
 The Double Barrel holds two shells. This build's whole personality is refusing to accept that. You stack Magazine Size until the gun holds **three**, then pile every bullet refund in the Vanguard Commando kit on top: **Misdirection Insurance** can put missed shots back, **Smart Cover** and **Optimized Armor** refund bullets on hits, **Ammo Refill** pays out during Tactical Link, and **Field Supplies** tops you up on Pulsed kills. Add the 30% Rate of Fire from **Phalanx Attack 4pc + Gunny Johnny 2pc** and the two-shell shotgun starts living up to the "Automatic" in TikTokAndy's video title.
 
@@ -189,7 +189,7 @@ TikTokAndy calls 4pc Phalanx Attack + 2pc Gunny Johnny "probably the most ideal 
 | Holster | Phalanx Attack | none | GGReborn keeps a Skill Duration roll here because it helps during Tactical Link |
 | Kneepads | Phalanx Attack | none | |
 
-**Set bonuses (our database):**
+**Set bonuses:**
 
 - **Phalanx Attack:** 2pc Magazine Size +18%, 3pc Rate of Fire +18%, 4pc Weapon Multi-Shot Chance +12%.
 - **Gunny Johnny:** 2pc Rate of Fire +12%. (3pc is Reload Speed +18% and 4pc is Weapon Damage +12%, if you lean harder on it.)
@@ -229,7 +229,7 @@ TikTokAndy also mentions players who swap Still Alive for a reload-triggered tal
 
 The [Vanguard](/class/vanguard/) Commando kit is Smart Cover, Scanning Pulse and the Tactical Link signature, and TikTokAndy says that kit is why he picked Vanguard Commando for this gun, pointing to Smart Cover and to Tactical Link's auto aim. Both creators use the same three combo sets (full text in our [skill mod combo database](/database/skill-mod-combos/)):
 
-| Skill | Combo set | 3pc effect (our database) | Chip rolls TikTokAndy likes |
+| Skill | Combo set | 3pc effect | Chip rolls TikTokAndy likes |
 |---|---|---|---|
 | Tactical Link (signature) | **Ammo Refill** | Every shot in the first 6 seconds of Tactical Link has a chance to recover 4 ammo (18% in Ubisoft's notes); kills reset the duration. 2pc: Reload Speed. | Tactical Link Duration on the firmware, with Skill Cooldown Recovery, Skill Intensity and Weapon Critical Hit Chance or Damage as secondaries |
 | Smart Cover | **Optimized Armor** | While behind a Smart Cover, +3.20% Damage Reduction, and hits have a 4.80% chance of restoring 1 bullet. 2pc: Reload Speed. | Intensity and Cooldown Recovery, plus Weapon Damage, Critical Hit Chance and Critical Hit Damage |
@@ -249,7 +249,7 @@ What TikTokAndy's skill screens show (base skills, his numbers):
 
 TikTokAndy's rule of thumb is to stick to Firepower protocols. He switched from Augmented Lethality to Cover Shooter in early October. Talent text below is from our database; the opinions are his.
 
-| OS Protocol | Rarity | Talent (our database) | TikTokAndy's take |
+| OS Protocol | Rarity | Talent | TikTokAndy's take |
 |---|---|---|---|
 | **Cover Shooter** | High-End | Critical Hits behind cover have an 80% chance of granting +16% Weapon Critical Hit Damage for 5 seconds, up to 3 stacks | His pick since early October: "second to none" for PvE with the Double Barrel. His copy reads +30% Weapon Damage, and he counts three stacks as +48% Critical Hit Damage behind cover. On September 30 it was his only gold protocol and he was "dying to try" it. |
 | **Augmented Lethality** | Superior | +4% Weapon Damage and +4% Incoming Healing for every enemy within 20 meters | His pick "for a very long time," and he still preferred it on October 2 because Cover Shooter cost him too much Firepower. He thinks it's made for shotgun builds. His upgraded copy reads 36% Firepower, +358 Firepower, +286 All Weapon Damage and about 9,000 Health. |
@@ -290,7 +290,7 @@ GGReborn's September 23 video is the version that got him his first solo Legenda
 | OS Protocol | Augmented Lethality, then Cover Shooter from October | Shown on screen, not named |
 | Stats read out | 5,200 to 5,300 Armor (September 30); 10,000 Armor, 131,000 Health, 57% Weapon Critical Hit Chance, 135% Critical Hit Damage (October 6) | 51.8% Weapon Critical Hit Chance, 138.49% Critical Hit Damage |
 
-The rest of GGReborn's readout (multi-shot, headshot damage, weapon damage, rate of fire and reload speed) is too garbled in the auto-captions to trust, so pause his stat screen instead. The one real fork between the two versions is the backpack: Inspiration is the greedy pick, while TikTokAndy went for survival because he found the build squishy, Siege II in September and Emergency Measures by October.
+The rest of GGReborn's readout (multi-shot, headshot damage, weapon damage, rate of fire and reload speed) isn't clear in the video, so pause his stat screen instead. The one real fork between the two versions is the backpack: Inspiration is the greedy pick, while TikTokAndy went for survival because he found the build squishy, Siege II in September and Emergency Measures by October.
 
 ---
 

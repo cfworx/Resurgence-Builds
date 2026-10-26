@@ -33,7 +33,7 @@ videoChannel: "TikTokAndy"
 
 ## What This Build Does
 
-> Build credit: [**TikTokAndy**](https://www.youtube.com/watch?v=VHKfmW4BtEk) for the full walkthrough and gameplay (October 10, 2026). He calls it "Striker Aegis"; in game it's the [Tech Operator](/class/tech-operator/) with the Aegis Operations focus. Every stat below is his own reading from the video unless we say it came from our database or Ubisoft's patch notes. We haven't re-tested this build ourselves.
+> Build credit: [**TikTokAndy**](https://www.youtube.com/watch?v=VHKfmW4BtEk) for the full walkthrough and gameplay (October 10, 2026). He calls it "Striker Aegis"; in game it's the [Tech Operator](/class/tech-operator/) with the Aegis Operations focus. Every stat below is his own reading from the video unless we say it came from our database or Ubisoft's patch notes.
 
 This is a healer that barely shoots. The Defender Drone hangs a field over your team that keeps topping everyone up with Extra Health and, on TikTokAndy's tooltip, gives them +30% Weapon and Skill Damage. Four Mender Drones follow your teammates around healing them, a First-Aid Firefly covers emergencies, and the talent tree turns your team's kills into longer drone timers and shorter cooldowns. The better your DPS players are, the longer everything stays up.
 
@@ -113,7 +113,7 @@ TikTokAndy says he took the tree as far as he could before it started asking for
 
 Full set text is in our [skill mod combo database](/database/skill-mod-combos/). Effects below are our database's; the chip notes are his.
 
-| Skill | Combo set | 3pc effect (our database) | His chips and notes |
+| Skill | Combo set | 3pc effect | His chips and notes |
 |---|---|---|---|
 | Defender Drone | **Magnetic Recharge** | When the Defender Drone grants a Shield to you or a group member, it increases your Signature Ability Charge by 2.00%. 2pc: Healing Intensity. | Drone Duration as the main stat, with Received Healing, Damage Reduction and Skill Radius. He calls it "the best way to go." He tried **Support Pattern**, which lets the drone follow a group member, and dropped it because it only covers that one ally. |
 | Mender Drone | **Combat Enhancer** | Mender Drone healing grants bonus damage equal to 6.60% Engineering for 20 seconds, up to 3 stacks. 2pc: Engineering. | Healing Intensity, Drone Intensity and Drone Duration, plus Max Health, Skill Intensity, Signature Charge Efficiency and Skill Duration. He isn't sure Combat Enhancer is the best pick, but at this point any damage he can hand his teammates goes on. **Close Protection** (more Healing Intensity) is the alternative he skipped, because the healing already feels fine to him. |
@@ -123,7 +123,7 @@ Full set text is in our [skill mod combo database](/database/skill-mod-combos/).
 
 ## Gear: Long-term Effect 4pc + Mechanical Expert 2pc
 
-**Set bonuses (our database):**
+**Set bonuses:**
 
 - **Long-term Effect:** 2pc Skill Health +12%, 3pc Skill Duration +14.4%, 4pc Engineering +18%. TikTokAndy reads the same three numbers.
 - **Mechanical Expert:** 2pc Skill Duration +9.6%.
@@ -150,7 +150,7 @@ He says those set bonuses aren't included in the attribute numbers on his stat s
 | Primary | **MP7** (SMG) | **Enhancement Trade II** + **Adaptation II** | High Engineering and Toughness, a near-max Skill Intensity roll and a max Max Health roll. Every attachment rolls Engineering and Skill Intensity ("I don't care about anything else"): a red dot with Optimal Range, a barrel with Optimal Range and Skill Radius, and a Quick Release Magazine because he wants a small magazine that reloads fast. He says one Tactical Augmentation on the MP7 grants +10% Skill Intensity. |
 | Secondary | **Vector** (SMG) | **Torrential Downpour II**, plus a skill-duration-on-cover talent that matches Last Stand | A Skill Intensity roll and a high Engineering roll. He says you could run it as your primary and do just fine. |
 
-| Talent | Base version (our database) | His reading |
+| Talent | Base version | His reading |
 |---|---|---|
 | **Enhancement Trade** | +6% Skill Intensity for each 20% of the magazine emptied, for 8 seconds, up to 4 stacks; 1-second cooldown | II: +8.4% per stack |
 | **Adaptation** | Body shots +4.80% Skill Duration, headshots +6% Skill Intensity, each for 8 seconds | II: +6.2% and +8.4%. He has seen three Adaptation stacks active at once and isn't sure how. |
@@ -167,7 +167,7 @@ He says those set bonuses aren't included in the attribute numbers on his stat s
 
 Talent text is from our [OS Protocol database](/database/os-protocols/); the opinions and upgraded numbers are his.
 
-| OS Protocol | Rarity | Talent (our database) | TikTokAndy's take |
+| OS Protocol | Rarity | Talent | TikTokAndy's take |
 |---|---|---|---|
 | **Recursive Treatment** | Superior | Main stat Engineering. Healing or granting Extra Health grants +20% Skill Intensity. | His pick. His copy reads +32% Engineering and +28% Skill Intensity on the talent, and he wants to take it to level 50. "This is right up our alley." |
 | **Strategic Assistance** | High-End | Main stat Skill Intensity. Assists grant +4.80% Signature Ability Charge Efficiency for 10 seconds and reduce Skill Cooldown by 2.40%, up to 5 stacks. | No Engineering, but he says a maxed one gives 45% Skill Intensity, and five stacks add up to 12% faster skills and +24% signature charge. He thinks it gets better once your Engineering is high enough that you can spare it. |
