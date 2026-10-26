@@ -97,7 +97,14 @@
      leave out anything marked exoticOnly, or named like an exotic's own talent. */
   const exoticTalents = new Set(EXO.items.map((e) => key(e.talentName)).filter(Boolean));
   const WT = pool(arr(DATA.weaponTalents).filter((t) => t && t.exoticOnly !== true && !exoticTalents.has(key(t.name))));
-  const aliasText = (x) => arr(x && x.aliases).map(str).filter(Boolean).join(', ');
+  /* Other names. Ones worked out by elimination (aliasBasis "elimination") aren't confirmed: links
+     and search still match them, but they aren't shown as the item's other name. */
+  const aliasList = (x) => arr(x && x.aliases).map(str).filter(Boolean).join(', ');
+  const aliasText = (x) => (x && x.aliasBasis === 'elimination' ? '' : aliasList(x));
+  const guessedAliases = (x) => (x && x.aliasBasis === 'elimination' ? aliasList(x) : '');
+  /* A note marked caveat: true qualifies the item's effect text, so it is shown as small print
+     wherever that text is shown. Other notes are patch history and stay out. Notes are never parsed. */
+  const caveatOf = (x) => (x && x.caveat === true ? str(x.note).trim() : '');
   const BODY = pool(DATA.bodyArmorTalents);
   const PACK = pool(DATA.backpackTalents);
   const SETS = pool(DATA.gearSets);
@@ -662,6 +669,13 @@
 
   /* ---------- rendering ---------- */
   const setText = (sel, text, root) => { const n = typeof sel === 'string' ? $(sel, root) : sel; if (n) n.textContent = text; };
+  /* An effect line, with the item's caveat note (if it has one) as small print under it */
+  function effectText(el, text, item) {
+    if (!el) return;
+    const c = caveatOf(item);
+    el.replaceChildren(...[text || null, c ? h('span', { class: 'caveat' }, c) : null].filter(Boolean));
+    el.hidden = !text && !c;
+  }
   const weaponLine = (wp) => [
     isExotic(wp) ? `Exotic ${str(wp.type)}`.trim() : str(wp.type),
     wp.rpm ? `${wp.rpm} RPM` : '',
@@ -709,9 +723,7 @@
       const s = SLOT[btn.dataset.armortalent];
       const t = s && s.talents.get(S.gear[s.id].talent);
       setText('.picktag__val', t ? t.name : 'Not set', btn);
-      const d = $('.picktag__desc', btn);
-      d.textContent = t ? str(t.description) : '';
-      d.hidden = !t || !t.description;
+      effectText($('.picktag__desc', btn), t ? str(t.description) : '', t);
       btn.classList.toggle('is-set', !!t);
     }
   }
@@ -734,9 +746,7 @@
       fixed.hidden = !exo;
       if (exo) {
         setText('.picktag__val', str(wp.talentName) || 'Exotic talent', fixed);
-        const d = $('.picktag__desc', fixed);
-        d.textContent = str(wp.talentDescription);
-        d.hidden = !wp.talentDescription;
+        effectText($('.picktag__desc', fixed), str(wp.talentDescription), wp);
       }
       [0, 1].forEach((j) => {
         const tb = $(`[data-talent="w${n}t${j + 1}"]`);
@@ -744,9 +754,7 @@
         tb.disabled = !wp;
         tb.classList.toggle('is-set', !!t);
         setText('.picktag__val', t ? t.name : wp ? 'Not set' : 'Pick a weapon first', tb);
-        const d = $('.picktag__desc', tb);
-        d.textContent = t ? str(t.description) : '';
-        d.hidden = !t || !t.description;
+        effectText($('.picktag__desc', tb), t ? str(t.description) : '', t);
         tb.setAttribute('aria-label', `${WEAPON_LABEL[i]} talent ${j + 1}: ${t ? t.name : 'not set'}`);
       });
       [0, 1].forEach((j) => {
@@ -765,9 +773,7 @@
     const os = OSP.get(S.os);
     setText('#osName', os ? os.name : 'Select OS Protocol');
     setText('#osSub', os ? [os.specialization, os.rarity, os.mainStat && os.mainValue ? `${os.mainStat} ${os.mainValue}` : ''].filter(Boolean).join(' · ') : 'Not set');
-    const d = $('#osDesc');
-    d.textContent = os ? str(os.talentDescription) : '';
-    d.hidden = !os || !os.talentDescription;
+    effectText($('#osDesc'), os ? str(os.talentDescription) : '', os);
     const slot = $('#osSlot');
     slot.classList.toggle('is-set', !!os);
     slot.setAttribute('aria-label', `OS Protocol: ${os ? os.name : 'not set'}`);
@@ -783,7 +789,7 @@
       setText('.skill-slot__skill', skill, btn);
       setText('.skill-slot__nm', m ? m.name : S.spec ? 'Select skill mod' : 'Pick a specialization first', btn);
       setText('.skill-slot__sub', m ? [!skill && m.skill ? str(m.skill) : '', `2pc: ${bonusText(m.bonus2)}`].filter(Boolean).join(' · ') : '', btn);
-      setText('.skill-slot__desc', m ? `3pc: ${str(m.bonus3)}` : '', btn);
+      effectText($('.skill-slot__desc', btn), m ? `3pc: ${str(m.bonus3)}` : '', m);
       btn.setAttribute('aria-label', `${skill ? skill + ' mod' : 'Skill mod ' + (i + 1)}: ${m ? m.name : 'not set'}`);
     });
     setText('#skillCount', `${S.mods.filter(Boolean).length} / 3`);
@@ -801,6 +807,7 @@
     box.replaceChildren(...active.map(({ set, n }) => h('div', { class: 'bonus' },
       h('div', { class: 'bonus__hd' }, h('span', { class: 'bonus__nm' }, set.name), h('span', { class: 'bonus__pc' }, `${n} pc`)),
       setTiers(set).filter((t) => n >= t.pieces).map((t) => h('div', { class: 'bonus__line' }, `${t.pieces}pc: ${t.text}`)),
+      caveatOf(set) ? h('div', { class: 'caveat' }, caveatOf(set)) : null,
     )));
   }
 
@@ -1047,12 +1054,12 @@
       while (at > 0 && /[a-z0-9]/.test(n[at - 1])) at = n.indexOf(q, at + 1);
       return at > 0 ? 2 : 3;
     }
-    return key(it.alias).includes(q) ? 4 : 5;
+    return key(it.alias).includes(q) || key(it.find).includes(q) ? 4 : 5;
   }
 
   function drawList(query) {
     const q = key(query);
-    let items = listCtx.items.filter((it) => !q || it.none || key(`${it.name} ${it.tag || ''} ${it.desc || ''} ${it.group || ''} ${it.alias || ''}`).includes(q));
+    let items = listCtx.items.filter((it) => !q || it.none || key(`${it.name} ${it.tag || ''} ${it.desc || ''} ${it.group || ''} ${it.alias || ''} ${it.find || ''}`).includes(q));
     if (q) {
       // closest matches first; groups stay together, the group with the closest match goes first
       const order = new Map();
@@ -1081,6 +1088,7 @@
       h('span', { class: 'opt__top' }, h('span', { class: 'opt__nm' }, marked(it.name, q)), it.tag ? h('span', { class: 'opt__type' }, it.tag) : null),
       it.desc ? h('span', { class: 'opt__desc' }, marked(it.desc, q)) : null,
       it.alias ? h('span', { class: 'opt__note' }, 'Also called ', marked(it.alias, q)) : null,
+      q && it.find && key(it.find).includes(q) ? h('span', { class: 'opt__note' }, 'Possibly once called ', marked(it.find, q), '.') : null,
       it.note ? h('span', { class: 'opt__note' }, it.note) : null,
       it.disabled && it.why ? h('span', { class: 'opt__why' }, it.why) : null);
       btn.addEventListener('click', () => {
@@ -1176,6 +1184,7 @@
     const items = EXO.items.slice().sort(byName).map((wp) => ({
       id: str(wp.id), name: wp.name, tag: str(wp.type), group: 'Exotic',
       desc: [weaponLine(wp), wp.talentName ? `Talent: ${wp.talentName}` : ''].filter(Boolean).join('. '),
+      note: caveatOf(wp),
     }));
     const types = [];
     for (const wp of STD.items) if (!types.includes(str(wp.type))) types.push(str(wp.type));
@@ -1183,6 +1192,7 @@
       STD.items.filter((wp) => str(wp.type) === type).sort(byName).forEach((wp) => items.push({
         id: str(wp.id), name: wp.name, group: type || 'Other',
         desc: [wp.rpm ? `${wp.rpm} RPM` : '', wp.mag ? `${wp.mag} mag` : ''].filter(Boolean).join(' · '),
+        note: caveatOf(wp),
       }));
     }
     openList({
@@ -1213,7 +1223,7 @@
     openList({
       title: `${wp.name}: talent ${j + 1}`,
       items: WT.items.slice().sort(byName).map((t) => ({
-        id: str(t.id), name: t.name, desc: str(t.description), note: str(t.note), alias: aliasText(t),
+        id: str(t.id), name: t.name, desc: str(t.description), note: caveatOf(t), alias: aliasText(t), find: guessedAliases(t),
         disabled: str(t.id) === other, why: 'Already on this weapon.',
       })),
       current: w.t[j],
@@ -1228,7 +1238,7 @@
     const g = S.gear[s.id];
     openList({
       title: `${s.label} talent`,
-      items: s.talents.items.slice().sort(byName).map((t) => ({ id: str(t.id), name: t.name, desc: str(t.description), note: str(t.note), alias: aliasText(t) })),
+      items: s.talents.items.slice().sort(byName).map((t) => ({ id: str(t.id), name: t.name, desc: str(t.description), note: caveatOf(t), alias: aliasText(t), find: guessedAliases(t) })),
       current: g.talent,
       none: 'No talent',
       onPick: (id) => { g.talent = s.talents.get(id) ? id : ''; changed(); },
@@ -1245,7 +1255,7 @@
         id: str(o.id), name: o.name,
         tag: [o.specialization, o.rarity].filter(Boolean).join(' · '),
         desc: [o.mainStat && o.mainValue ? `${o.mainStat} ${o.mainValue}.` : '', str(o.talentDescription)].filter(Boolean).join(' '),
-        note: str(o.note), alias: aliasText(o),
+        note: caveatOf(o), alias: aliasText(o), find: guessedAliases(o),
         group: stat ? (fits(o) ? `${stat}, matches ${S.focus}` : 'Other protocols') : '',
       }));
     openList({ title: 'OS Protocol', items, current: S.os, none: 'No OS Protocol', onPick: (id) => { S.os = OSP.get(id) ? id : ''; changed(); } });
@@ -1266,7 +1276,7 @@
         return {
           id: str(m.id), name: m.name, tag: '', group: hasSkill ? str(m.skill) || 'Other' : '',
           desc: `2pc: ${bonusText(m.bonus2)}. 3pc: ${str(m.bonus3)}`,
-          alias: aliasText(m), note: str(m.note),
+          alias: aliasText(m), find: guessedAliases(m), note: caveatOf(m),
           disabled: used >= 0 && used !== i, why: `Already in slot ${used + 1}.`,
         };
       }),
@@ -1372,8 +1382,7 @@
     const setHelp = h('p', { class: 'ed-help', id: 'ed-set-help' });
     const fillSetHelp = () => {
       const set = SETS.get(g.set);
-      setHelp.textContent = set ? setTiers(set).map((t) => `${t.pieces}pc: ${t.text}`).join(' · ') : '';
-      setHelp.hidden = !set;
+      effectText(setHelp, set ? setTiers(set).map((t) => `${t.pieces}pc: ${t.text}`).join(' · ') : '', set);
     };
     setSel.addEventListener('change', () => { g.set = SETS.get(setSel.value) ? setSel.value : ''; fillSetHelp(); changed(); });
     fillSetHelp();
@@ -1392,8 +1401,7 @@
       const talHelp = h('p', { class: 'ed-help', id: 'ed-talent-help' });
       const fillTal = () => {
         const t = s.talents.get(g.talent);
-        talHelp.textContent = t ? str(t.description) : '';
-        talHelp.hidden = !talHelp.textContent;
+        effectText(talHelp, t ? str(t.description) : '', t);
       };
       talSel.addEventListener('change', () => { g.talent = s.talents.get(talSel.value) ? talSel.value : ''; fillTal(); changed(); });
       fillTal();

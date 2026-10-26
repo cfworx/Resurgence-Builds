@@ -235,6 +235,8 @@ button.picktag:hover:not(:disabled){border-color:var(--line-hot);background:var(
 .picktag__val{font-size:15px;font-weight:500;line-height:1.3;color:var(--text-2);overflow-wrap:anywhere}
 .picktag.is-set .picktag__val{color:var(--orange)}
 .picktag__desc{display:block;margin-top:2px;font-size:13px;line-height:1.45;color:var(--text-3)}
+/* small print under an effect whose data entry carries a caveat note */
+.caveat{display:block;margin-top:4px;font-size:13px;line-height:1.45;color:var(--muted);font-weight:400;letter-spacing:0;text-transform:none}
 .picktag--wide{width:100%;margin-bottom:8px}
 .picktag--wide:last-child{margin-bottom:0}
 
