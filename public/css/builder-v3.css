@@ -250,6 +250,11 @@ button.picktag:hover:not(:disabled){border-color:var(--line-hot);background:var(
 .weapon-bonus:disabled .picktag__val{color:var(--muted)}
 
 .weapon-row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:var(--space-6)}
+/* narrow weapon cards: one attribute per row so "Attribute 1" stays on one line */
+.weapon-row > .panel{container-type:inline-size}
+@container (max-width:300px){
+  .weapon-bonuses{grid-template-columns:minmax(0,1fr)}
+}
 
 /* ============================================================
    GEAR RIG
