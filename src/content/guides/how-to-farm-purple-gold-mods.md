@@ -99,7 +99,7 @@ Regular nests run on a timer, and knowing it is most of the farm. This is from D
 - **15-minute rotation.** Each nest pays its Key Rewards once, then not again until it respawns about 15 minutes later. Watch for the exclamation mark that shows they've reset.
 - **20 a day.** He says nest Key Rewards cap at 20 clears a day (open world activities cap at 10).
 - **His loop:** clear both active nests, do a few open world activities while they cool down, then go back. Normal nests take him under two minutes each.
-- **Challenging and Heroic nests** turn up some days and stay for 24 hours. Their Key Rewards pay once, but the cache at the end pays every run, so keep repeating them. In June the Challenging cache topped out at purple; the Heroic cache, and the bags and crates inside the Heroic nest, could drop gold.
+- **Challenging and Heroic nests** turn up some days and stay for 24 hours. Their Key Rewards pay once, but the cache at the end can be looted every run, so keep repeating them. In June the Challenging cache topped out at purple; the Heroic cache, and the bags and crates inside the Heroic nest, could drop gold.
 - **Bring Blast to Challenging nests.** Their enemies were usually Blast-weak for him, which fits TikTokAndy's Blast advice for his Heroic nest above.
 
 ## Stack the daily quest on top
@@ -161,5 +161,6 @@ Our suggestion, built from the official sources above plus the creator tips:
 - [TikTokAndy: UNLIMITED Purple & Gold Mods & Weapon Attachments (YouTube, September 26, 2026)](https://www.youtube.com/watch?v=UJTNo_5nQA0)
 - [Died Again Gaming: How to Farm, New Agent Guide to Level Up Fast (YouTube, June 4, 2026)](https://www.youtube.com/watch?v=OLJPNceH_jo) (the nest clock)
 - [Died Again Gaming: Gear and Weapon Mods, New Agent Guide (YouTube, June 7, 2026)](https://www.youtube.com/watch?v=uUt10JSnr7Q)
+- [Died Again Gaming: Unlock 20% Damage, New Agent Guide to Proficiency (YouTube, June 15, 2026)](https://www.youtube.com/watch?v=p64B2L1FWDg) (Blast for Challenging nests)
 - [Oldfartsgaming: 7 Things I Wish I Knew Before Endgame (YouTube, October 11, 2026)](https://www.youtube.com/watch?v=7JtJCeEE8NI)
 - [The Division Wiki: New York City community map](https://thedivision.fandom.com/wiki/Map:Tom_Clancy%27s_The_Division_Resurgence/New_York_City) (source of our map's nest markers, CC BY-SA 3.0)

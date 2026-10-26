@@ -44,11 +44,11 @@ From Ubisoft's [What advantages do clans offer?](https://ubisoft-mobile.helpshif
 | **Weekly clan projects** | Reward gear, materials and currencies |
 | **Shared progress** | Upgrades are shared, so coordinated play moves everyone forward |
 
-The two that matter most for your build, in our experience of reading too many patch notes:
+The three that matter most for your build, in our experience of reading too many patch notes:
 
 - **The clan vendor.** It sells Tactical Augmentation Modules for weapons and gear, and Ubisoft's Season 1 Phase 2 notes added one more copy of each regular Weapon and Gear module to it. Creator GGReborn lists ignoring clan credits as one of his biggest early mistakes, which we cover in our [endgame tips](/guides/division-resurgence-endgame-tips/).
-- **The crafting bonus.** Season 2 Phase 1 cut base crafting time from 24 hours to **15 hours** and set the maximum clan duration reduction at **50%**. A fully boosted craft takes **7.5 hours**. That's two crafts a day instead of one, which is the difference between "eventually" and "this week" on a gold roll. Died Again Gaming adds that a fully upgraded clan crafting station runs two crafts at once, which the Base of Operations bench can't. Full details are in our [Season 2 Phase 1 patch notes](/patch-notes/season-2-phase-1-the-call/).
-- **The dismantling machine.** At max level, Died Again Gaming's raised the chance of extra items when dismantling by 60% (June), which is why he breaks spare mods down instead of feeding them straight into upgrades.
+- **The crafting bonus.** Season 2 Phase 1 cut base crafting time from 24 hours to **15 hours** and set the maximum clan duration reduction at **50%**. A fully boosted craft takes **7.5 hours**. That's two crafts a day instead of one, which is the difference between "eventually" and "this week" on a gold roll. Died Again Gaming added in May that a fully upgraded clan crafting station runs two crafts at once (the Base of Operations bench can't), which would double that again. Full details are in our [Season 2 Phase 1 patch notes](/patch-notes/season-2-phase-1-the-call/).
+- **The dismantling machine.** In Died Again Gaming's June video, his clan's maxed dismantling machine raised the chance of extra items when dismantling by 60%, which is why he breaks spare mods down instead of feeding them straight into upgrades.
 
 ## How to join a clan
 
@@ -104,16 +104,16 @@ Ubisoft's disband page explains how the two currencies fit together: **supplies*
 
 One economy note from the patch notes: since Season 1 Phase 2, Tactical Augmentation Modules dismantle into **Encrypted Data** instead of clan credits. So don't dismantle a module expecting a clan credit refund.
 
-What that looks like in practice, per Died Again Gaming's May 28 video: you contribute your clan supplies at the Clan Base, and in May each one came back as two clan credits (his 700 supplies paid 1,400). Until you do, they just sit in your pocket. The vendor's big-ticket items are the weapon and armor Tactical Augmentation Modules: an armor line and one per weapon class, each with stages whose bonuses grow as you add modules. He put one weapon module at about three weeks of credits.
+Ubisoft's points page calls basic income automatic, but in Died Again Gaming's May 28 video he hands the clan supplies he picked up in at the Clan Base, and that's where they turn into credits: in May each one came back as two clan credits (his 700 supplies paid 1,400). The vendor's big-ticket items are the weapon and armor Tactical Augmentation Modules: an armor line and one per weapon class, each with stages whose bonuses grow as you add modules. He put one weapon module at about three weeks of credits.
 
 ## Clan Hostile Nest Investigations
 
 The clan's own nests, and in Died Again Gaming's May 28 video one of the easiest ways to farm clan supplies. How he runs them:
 
-1. Pick up a clue from the intel officer at the Clan Base. He says you can hold up to four at once.
+1. Pick up a clue from the intel officer at the Clan Base. He says you can have up to four clues going at once.
 2. Go to the spot, solo or with clanmates. Investigations sit in fixed locations, and our [interactive map](/division-resurgence-interactive-map/) has a **Nest Investigations** layer (still partial). He says a beam marks the entrance as you get close.
 3. Open every supply bag inside as well as the cache at the end. The supplies are the point of the run.
-4. Back at the Clan Base, the investigation board shows progress, and the clan collects its own reward when one completes.
+4. Check the investigation board at the Clan Base. When the clan finishes an investigation, he says, you get a batch of resources and more clan credits.
 
 His target was at least four a week, which is what it took to hit the weekly cap on clan supplies from investigations. Those numbers are from May (Ubisoft's last word on clan nests was a reward fix in Season 1 Phase 2), so check the reward screen before you plan your week around it.
 

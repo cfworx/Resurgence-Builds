@@ -128,10 +128,10 @@ Oldfartsgaming says upgrading a decent OS Protocol that fits his build as far as
 Died Again Gaming's grinding tips, from June. Task wording may have moved since, so read each task in the Armory:
 
 - **Farm with the gun you're leveling.** Run nests, world activities and bounties with a weapon that still needs levels, then swap. Rifles and marksman rifles suit open world activities, where you get the range their tasks want. He says enemies five or more levels below you don't count.
-- **Assists count.** Most tasks take a kill or an assist, so in a group, tag every enemy you can before going for kills.
+- **Assists count.** Many tasks take a kill or an assist, so in a group, tag every enemy you can before going for kills.
 - **Hip fire includes cover and shields.** Shooting from cover without aiming, or with a Bulwark shield up, counted as hip fire for him.
 - **Aim tasks mean the scope.** For rifles and marksman rifles, only first-person scope view with a 2x or stronger optic (4x for marksman rifles) counted reliably for him. Third-person aiming was hit and miss.
-- **Weak points include damage type.** Headshots and the satchels, gas cans and ammo pouches enemies carry count, and so does hitting an armor bar with the matching damage type. He saves those tasks for Challenging or higher, where armor bars with a weakness show up.
+- **Weak points include damage type.** Headshots and the satchels, gas cans and ammo pouches enemies carry count, and so does hitting an armor bar with the matching damage type. The separate task that needs a matching damage type takes longest, so he saves it for Challenging or higher, where armor bars with a weakness show up.
 - **Do level 3 early.** On most weapon classes it asks you to upgrade the weapon. Below 40 that costs common materials. At 40 the next upgrade wants a Superior (purple) component, so his workaround is to craft a level 1 copy and upgrade that. Slow, since crafts take hours, but it saves the purple.
 - **Exotics have their own tasks.** His examples: Lady Death wants 10,000 Breathe Free stacks (swap away and back to rebuild them), the Strawberry Milkshake wants Anarchy triggered 1,000 times, and the Warlord's level 8 wants agent kills or assists, which means PvP.
 

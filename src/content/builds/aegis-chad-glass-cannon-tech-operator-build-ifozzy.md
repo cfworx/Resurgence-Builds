@@ -17,12 +17,13 @@ shareText: "LtFoe's Double Agent build: swap your chest and backpack, go from Gl
 sources:
   - 'LtFoe (LtFoe, Clan TruthAbove). Discord submission with 30+ in-game screenshots, June 2026.'
   - 'In-game Division Resurgence Build Database, verified June 2026.'
+  - '<a href="https://www.youtube.com/watch?v=tn4ME4MVGyY">Died Again Gaming, Catching Up Before Weekly Reset (DAG LIVE)</a>, October 25, 2026 (the weekly gold OS Protocol).'
 plannerHash: "s=Tech+Operator&sc=Aegis+Operations&n=The+Double+Agent&ms=gs-7&m1=Skill+Critical+Chance&m2=Skill+Multi-Shot+Chance&cs=gs-7&ct=ba-12&c1=Skill+Multi-Shot+Chance&c2=Skill+Cooldown+Recovery&ps=gs-10&pt=bp-19&p1=Skill+Radius&p2=Skill+Multi-Shot+Chance&gs=gs-10&g1=Skill+Critical+Chance&g2=Skill+Critical+Damage&hs=gs-7&h1=Skill+Multi-Shot+Chance&h2=Skill+Critical+Chance&ks=gs-7&k1=Skill+Critical+Damage&k2=Damage+Reduction&w1s=sw-38&w1tr=T2&w1t=wt-22&w1t2=wt-20&w2e=ew-2&os=os-20&sm1=smc-32&sm2=smc-35&sm3=smc-29"
 faqs:
   - question: "Do I need exotic gear for The Double Agent build?"
     answer: "No exotic gear pieces required. Every armor slot is standard legendary. The only exotic weapon is the Warlord (AR). The primary is an Enhanced ACR-E assault rifle. The Brains Over Brawn OS Protocol is the biggest chase item. If you have BoB and a Warlord, you have the offensive core."
   - question: "What if I do not have Brains Over Brawn?"
-    answer: "Run a purple OS Protocol that rolls Skill Crit Chance or Skill Crit Damage as a stand-in. You will lose roughly 10-12% Skill Crit Chance and the Engineering scaling talent, which is a significant damage cut. When this was written, BoB came from the Weekly Bounties. It's a blue (Specialized) protocol, and the OS Protocol Sealed Cache lists it in its common tier, so it's one of the easier ones to land. Season 2 Phase 1 refreshed the Weekly Bounty sets and adjusted their rewards, so check what the current ones pay out. Still worth chasing every week."
+    answer: "Run a purple OS Protocol that rolls Skill Crit Chance or Skill Crit Damage as a stand-in. You will lose roughly 10-12% Skill Crit Chance and the Engineering scaling talent, which is a significant damage cut. When this was written, BoB came from the Weekly Bounties. It's a blue (Specialized) protocol, and Ubisoft's drop table puts it in Tier B of the OS Protocol Sealed Cache, at 3.14% per cache, so it's one of the easier ones to land. Season 2 Phase 1 refreshed the Weekly Bounty sets and adjusted their rewards, so check what the current ones pay out. Still worth chasing every week."
   - question: "Why Jackpot 4-piece plus Boom-Shakalaka 2-piece?"
     answer: "Jackpot 4-piece gives +10.8% Skill Crit Chance, +24% Skill Crit Damage, and +12% Skill Radius. Boom-Shakalaka 2-piece adds -6% Skill Cooldown Recovery for better skill uptime. The key insight is that when LtFoe swaps his chest and backpack between DPS and durable mode, both replacement pieces stay in the same combo sets, so the bonuses never break."
   - question: "Can I PvP with the Glass Cannon profile?"
@@ -287,7 +288,7 @@ The man has been through the grind. Trust the work.
 | Boom-Shakalaka Gloves | Skill Crit Chance + Skill Crit Damage |
 | Enhanced ACR-E (T2 AR) | In Sync II + Fully Charged II |
 | Warlord (Exotic AR) | DZ vendor: 15,000 DZ Credits since Season 2 Phase 2 (was ~17,500), and exotic mods no longer come pre-equipped. Buy while in Engineering spec for correct attribute rolls. |
-| Brains Over Brawn OS Protocol | Weekly Bounties when this was written, or the OS Protocol Sealed Cache. It's a blue protocol, so the weekly gold doesn't cover it. Max to Level 50 for +21.60% Skill Crit Chance. |
+| Brains Over Brawn OS Protocol | Weekly Bounties when this was written, or the OS Protocol Sealed Cache. It's a blue protocol, so it can't come from the random gold that Died Again Gaming says the fourth Weekly Bounty boss guarantees each week (October 2026). Max to Level 50 for +21.60% Skill Crit Chance. |
 | Skill mods | Teamfight (First-Aid Firefly), Hazardous Area (Defender Drone), Combat Enhancer (Mender Drone) |
 
 ---

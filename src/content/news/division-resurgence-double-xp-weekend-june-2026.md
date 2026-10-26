@@ -20,7 +20,7 @@ faqs:
   - question: "Does the 2x multiplier stack with XP boost consumables or Classified Ops Pass bonuses?"
     answer: "Ubisoft never clarified, and the event is long over, so we can't tell you. If another Double XP event shows up, read the announcement wording before you plan a weekend around stacking."
   - question: "What is the best activity to grind during Double XP?"
-    answer: "In our experience, weekly bounties and Hostile Nest runs are among the most efficient for raw XP per hour, and Died Again Gaming's pick for XP per run is Chinatown Rescue on Normal. If you are pushing a specific Specialization, play it in whatever content you clear fastest with it. And since Season 2 Phase 2 removed the daily XP cap, long grind sessions no longer hit a wall, double XP or not."
+    answer: "In our experience, weekly bounties and Hostile Nest runs are among the most efficient for raw XP per hour, and Died Again Gaming's June pick for XP per run was Chinatown Rescue on Normal. If you are pushing a specific Specialization, play it in whatever content you clear fastest with it. And since Season 2 Phase 2 removed the daily XP cap, long grind sessions no longer hit a wall, double XP or not."
   - question: "Will there be another Double XP weekend?"
     answer: "Nothing announced as of October 24, 2026: we haven't seen another Double XP weekend in Ubisoft's official news or Steam posts since this one. Follow the official @TheDivMobile X account, which is where this one was announced. Meanwhile, Season 2 Phase 2 removed the daily XP cap, which is the next best thing."
   - question: "Is this event running on both mobile and PC?"
@@ -132,5 +132,6 @@ The official post says "Sunday at midnight." The in-game notification confirms t
 ## Sources
 
 - The Division Resurgence on X: [@TheDivMobile, June 12, 2026](https://x.com/TheDivMobile/status/2065464140706038216)
+- [Died Again Gaming: How to Farm, New Agent Guide to Level Up Fast (YouTube, June 4, 2026)](https://www.youtube.com/watch?v=OLJPNceH_jo)
 
 - All event details quoted in this article are sourced verbatim from the official X announcement post and in-game notification as of June 13, 2026

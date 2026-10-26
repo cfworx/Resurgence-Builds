@@ -18,6 +18,8 @@ sources:
   - 'Nadie (Asia Server, Rank 7 Combat Medicine). Discord submission with in-game screenshots, leaderboard proof, and gameplay video, June 2026.'
   - '<a href="https://www.youtube.com/watch?v=fSv46i-qtjw">Nadie, The Muscular Nurse Gameplay Walkthrough</a>, June 2026.'
   - 'In-game Division Resurgence Build Database, verified June 2026.'
+  - '<a href="https://www.youtube.com/watch?v=OLJPNceH_jo">Died Again Gaming, How to Farm, New Agent Guide</a>, June 4, 2026 (gold OS Protocol odds).'
+  - '<a href="https://www.youtube.com/watch?v=tn4ME4MVGyY">Died Again Gaming, Catching Up Before Weekly Reset (DAG LIVE)</a>, October 25, 2026 (the weekly gold OS Protocol).'
 plannerHash: "s=Field+Medic&sc=Combat+Medicine&n=The+Muscular+Nurse&ms=gs-14&m1=dr&m2=arm&gs=gs-14&g1=mhp&g2=dr&hs=gs-14&h1=dr&h2=rh&cs=gs-15&ct=ba-13&c1=rh&c2=scr&ps=gs-14&pt=bp-21&p1=chc&p2=dr&ks=gs-15&k1=arm&k2=chc&w1s=sw-10&w1tr=T2&w1t=wt-55&w1t2=wt-38&w1b1=sms&w1b2=rh&w2s=sw-15&w2tr=T2&w2t=wt-44&w2t2=wt-12&w2b1=mhp&w2b2=arm&os=os-54&sm1=smc-89&sm2=smc-86&sm3=smc-83"
 videoId: "fSv46i-qtjw"
 videoTitle: "Nadie: The Muscular Nurse Combat Medicine Build"
