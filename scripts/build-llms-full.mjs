@@ -29,7 +29,8 @@ add(
 add('## Exotic Weapons', '');
 add('Exotic weapons with full stat entries in our database (newer exotics such as The Bighorn and The Diamondback are covered in the exotic weapons list at https://resurgencebuilds.com/guides/division-resurgence-exotic-weapons-list-2026/ until their stats are verified):', '');
 
-const exotics = load('exotic-weapons.json');
+// Entries with statsVerified: false are planner-only and have no database page.
+const exotics = load('exotic-weapons.json').filter((w) => w.statsVerified !== false);
 for (const w of exotics) {
   add(`### ${w.name} (Exotic ${w.type})`, '');
   add(`| Stat | Value |`);
@@ -40,13 +41,14 @@ for (const w of exotics) {
   add('');
   add(`**Exotic Talent: ${w.talentName}**`);
   add(w.talentDescription, '');
+  if (w.note) add(`Note: ${w.note}`, '');
   add(`Source: https://resurgencebuilds.com/database/exotic-weapons/${w.name.toLowerCase().replace(/\s+/g, '-')}/`, '');
 }
 
 // === STANDARD WEAPONS ===
 add('---', '', '## Standard Weapons', '');
 
-const weapons = load('standard-weapons.json');
+const weapons = load('standard-weapons.json').filter((w) => w.statsVerified !== false);
 add(`There are ${weapons.length} standard weapons in The Division Resurgence.`, '');
 add('| Weapon | Class | RPM | Magazine | Damage | Damage Type |');
 add('|---|---|---|---|---|---|');
@@ -73,7 +75,7 @@ for (const [spec, protocols] of Object.entries(osBySpec)) {
   add('| Name | Rarity | Main Stat | Main Value | Talent |');
   add('|---|---|---|---|---|');
   for (const os of protocols) {
-    const talent = os.talentDescription.substring(0, 120) + (os.talentDescription.length > 120 ? '...' : '');
+    const talent = os.talentDescription.substring(0, 120) + (os.talentDescription.length > 120 ? '...' : '') + (os.note ? ` (Note: ${os.note})` : '');
     add(`| ${os.name} | ${os.rarity} | ${os.mainStat} | ${os.mainValue} | ${talent} |`);
   }
   add('');
@@ -101,7 +103,7 @@ add(`There are ${weaponTalents.length} weapon talents in The Division Resurgence
 add('| Talent | Description |');
 add('|---|---|');
 for (const t of weaponTalents) {
-  add(`| ${t.name} | ${t.description || t.talentDescription || 'N/A'} |`);
+  add(`| ${t.name} | ${t.description || t.talentDescription || 'N/A'}${t.note ? ` (Note: ${t.note})` : ''} |`);
 }
 add('');
 
@@ -113,7 +115,7 @@ add(`There are ${bodyTalents.length} body armor talents in The Division Resurgen
 add('| Talent | Description |');
 add('|---|---|');
 for (const t of bodyTalents) {
-  add(`| ${t.name} | ${t.description || t.talentDescription || 'N/A'} |`);
+  add(`| ${t.name} | ${t.description || t.talentDescription || 'N/A'}${t.note ? ` (Note: ${t.note})` : ''} |`);
 }
 add('');
 
@@ -125,7 +127,7 @@ add(`There are ${backpackTalents.length} backpack talents in The Division Resurg
 add('| Talent | Description |');
 add('|---|---|');
 for (const t of backpackTalents) {
-  add(`| ${t.name} | ${t.description || t.talentDescription || 'N/A'} |`);
+  add(`| ${t.name} | ${t.description || t.talentDescription || 'N/A'}${t.note ? ` (Note: ${t.note})` : ''} |`);
 }
 add('');
 
@@ -160,7 +162,7 @@ if (fs.existsSync(path.join(DATA, 'skill-mod-combos.json'))) {
     add('| Combo | 2-Piece Bonus | 3-Piece Bonus |');
     add('|---|---|---|');
     for (const c of mods) {
-      add(`| ${c.name} | ${c.bonus2 || 'N/A'} | ${c.bonus3 || 'N/A'} |`);
+      add(`| ${c.name} | ${c.bonus2 || 'N/A'} | ${c.bonus3 || 'N/A'}${c.note ? ` (Note: ${c.note})` : ''} |`);
     }
     add('');
   }

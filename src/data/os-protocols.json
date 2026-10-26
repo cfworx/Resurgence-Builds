@@ -665,6 +665,7 @@
     "val3": "+2,043",
     "talentDescription": "Grants +5% Weapon Multi-Shot Chance for each enemy within 20 meters, up to 35% at base level (70% fully upgraded).",
     "note": "The +5% per enemy is the tooltip from before Season 2 Phase 2, which updated the per-enemy scaling without publishing the new numbers and cut the maximum to 35/42/49/56/63/70% by upgrade level. Season 2 Phase 1 fixed it granting Armor instead of Multi-Shot.",
+    "caveat": true,
     "cooldown": ""
   },
   {

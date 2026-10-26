@@ -28,9 +28,9 @@ export const attrGuide: Record<string, AttrInfo> = {
     bestBuilds: 'Bulwark Breacher shield builds that need reliable per-shot damage, LMG sustained DPS builds, any non-crit loadout. Also valuable as a secondary stat on crit builds that already have CHC/CHD covered elsewhere.',
   },
   'All Weapon Damage': {
-    overview: 'All Weapon Damage raises weapon damage whatever the damage type. Season 2 Phase 1 brought it in to replace the Blast, Piercing and Shredding Weapon Damage rolls, which did nothing on a weapon of a different damage type.',
+    overview: 'All Weapon Damage raises weapon damage whatever the damage type. Since Season 2 Phase 1, weapons roll it where they used to roll Blast, Piercing or Shredding Weapon Damage, which did nothing on a weapon of a different damage type.',
     whyItMatters: 'It works on any gun, so the roll is never wasted the way a mismatched damage-type bonus used to be. Your weapon\'s own damage type still decides which enemy armor bars it hits hardest.',
-    howToGet: 'It rolls on weapons since Season 2 Phase 1. The same patch took All Damage out of the pool for newly dropped weapon mods, so only mods from before that patch can carry it.',
+    howToGet: 'Weapons roll it since Season 2 Phase 1, and many Firepower and Toughness OS Protocols carry it as a fixed stat (Augmented Lethality, for one). The same patch took All Damage out of the pool for newly dropped weapon mods, so only older weapon mods carry it.',
     bestBuilds: 'Any weapon build. It is the damage-type-free replacement for the old Blast, Piercing and Shredding rolls.',
   },
   'Weapon Multi-Shot Chance': {
@@ -100,7 +100,7 @@ export const attrGuide: Record<string, AttrInfo> = {
     bestBuilds: 'Field Medic healing builds (Support Station and Healing Hive), Demolitionist AoE builds, Tech Operator drone builds, any Engineering-focused loadout that wants a flat boost to everything their skills do.',
   },
   'All Skill Damage': {
-    overview: 'All Skill Damage raises skill damage whatever the damage type. Season 2 Phase 1 brought it in to replace the Blast, Piercing and Shredding Skill Damage rolls.',
+    overview: 'All Skill Damage raises skill damage whatever the damage type. Since Season 2 Phase 1, weapons roll it where they used to roll Blast, Piercing or Shredding Skill Damage.',
     whyItMatters: 'Skill builds no longer need a damage-type roll that matches their skills: one stat covers every skill hit.',
     howToGet: 'It rolls on weapons since Season 2 Phase 1, in place of the old skill damage-type bonuses. Newly dropped weapon mods can\'t roll it.',
     bestBuilds: 'Engineering skill builds: Demolitionist, Tech Operator and Tactical Pharma setups that lean on skill hits.',

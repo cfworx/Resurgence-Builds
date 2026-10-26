@@ -35,7 +35,7 @@ Per Ubisoft's article, it's 50 tiers with a free and a paid track:
 | **Football League** apparel set | Premium |
 | **Milky Way** weapon cosmetic | Premium |
 
-Ubisoft's notes also say the Diamondback got rewards across Dark Zone vendors, reward caches, weekly reward pools and exotic mod sources. Ubisoft hasn't spelled out the weapon class in the patch notes or article, and The Division 2's Diamondback is a different gun in a different game, so we're not borrowing its stats. We'll add verified numbers to the [exotic weapons list](/guides/division-resurgence-exotic-weapons-list-2026/) as soon as we have them.
+Ubisoft's notes also say the Diamondback got rewards across Dark Zone vendors, reward caches, weekly reward pools and exotic mod sources. Ubisoft's patch notes don't name the weapon class (the article's page summary calls it an assault rifle, while one player reports a 5-round magazine), and The Division 2's Diamondback is a different gun in a different game, so we're not borrowing its stats. We'll add verified numbers to the [exotic weapons list](/guides/division-resurgence-exotic-weapons-list-2026/) as soon as we have them.
 
 ## Exotic Sealed Caches
 

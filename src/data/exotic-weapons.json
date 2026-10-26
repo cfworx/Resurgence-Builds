@@ -69,8 +69,9 @@
     "type": "Assault Rifle",
     "damage": "Piercing Damage",
     "talentName": "Big Game Hunter",
-    "talentDescription": "Fires fully automatic, and semi-automatic while aiming down sights. Headshots grant +3.3% Headshot Damage for 20 seconds, up to 50 stacks.",
-    "note": "Fire modes from Ubisoft's August 5, 2026 announcement. Talent name, stack values and Piercing damage are TikTokAndy's reading of his copy on September 16, 2026. Its stat lines aren't verified yet.",
+    "talentDescription": "Headshots grant +3.3% Headshot Damage for 20 seconds, up to 50 stacks.",
+    "note": "Talent name, values and Piercing damage are TikTokAndy's reading of his level 1, T1 copy in his September 16, 2026 video. Ubisoft's August 5, 2026 announcement says it fires full auto, or semi-automatic when you aim down sights. Its stat lines aren't verified yet.",
+    "caveat": true,
     "acquisition": "Season 2 Phase 1 Classified Ops Pass (free and premium track). Since Season 2 Phase 2, Exotic Sealed Caches can grant exotics from previous seasons.",
     "statsVerified": false
   }

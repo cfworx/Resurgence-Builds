@@ -177,6 +177,7 @@ const faqs = [
           <div class="db-card__body">
             <div class="db-card__talent">
               <strong>Talent:</strong> {protocol.talentDescription}
+              {protocol.caveat && protocol.note && <p class="item-note">{protocol.note}</p>}
             </div>
 
             <div>

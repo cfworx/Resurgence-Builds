@@ -261,7 +261,8 @@
     "bonus3": "Deploying a Mender Drone grants +3.20% Signature Ability Charge Efficiency for 20 second(s), up to 3 stack(s).",
     "aliases": [
       "EMCAT"
-    ]
+    ],
+    "aliasBasis": "elimination"
   },
   {
     "id": "smc-31",
@@ -315,7 +316,8 @@
     "bonus3": "When Defender Drone grants a Shield to either the Agent or a group member, increases Signature Ability Charge(s) by 2.00%.",
     "aliases": [
       "Mutual Assist"
-    ]
+    ],
+    "aliasBasis": "elimination"
   },
   {
     "id": "smc-37",
@@ -380,8 +382,9 @@
     "specialization": "Bulwark",
     "skill": "Breach Combo",
     "bonus2": "Weapon Damage+[2.0%~4.0%]",
-    "bonus3": "During Breach Combo, grants +100% Weapon Critical Hit Damage if there are at least 1 enemie(s) within 20 meter(s).",
-    "note": "Season 2 Phase 2 fixed this set \"not granting its intended weapon critical hit damage bonus,\" in Ubisoft's words. The tooltip we recorded in June said Weapon Critical Hit Chance, so the +100% figure comes from that older tooltip."
+    "bonus3": "During Breach Combo, grants +100% Weapon Critical Hit Chance if there are at least 1 enemie(s) within 20 meter(s).",
+    "note": "This is the tooltip we recorded in June. Season 2 Phase 2 fixed this set \"not granting its intended weapon critical hit damage bonus,\" in Ubisoft's words, so the bonus may be crit damage, at a value we haven't checked.",
+    "caveat": true
   },
   {
     "id": "smc-45",
@@ -446,7 +449,7 @@
     "skill": "Breach Combo",
     "bonus2": "Max Health+[4.0%~8.0%]",
     "bonus3": "Breach Combo hits deal additional damage equal to 2% Max Health.",
-    "note": "The October 14, 2026 hotfix cut this from 10/15/20/25% to 2/3/4/5% of Max Health, depending on tier."
+    "note": "Ubisoft's October 14, 2026 notes cut this from 25% to 5% of Max Health. Its October 2 preview gave the full change as 10/15/20/25% to 2/3/4/5%, and this page lists the lowest value."
   },
   {
     "id": "smc-53",
@@ -589,7 +592,7 @@
     "skill": "Tactical Link",
     "bonus2": "Reload Speed+[4.0%~8.0%]",
     "bonus3": "Every shot during the first 6 seconds of Tactical Link grants a 7% chance of recovering 4 ammo. Duration resets at each kill.",
-    "note": "Season 2 Phase 1 raised the ammo returned from 1 to 4 and cut the trigger chance; Ubisoft's notes give the cut as 72% to 18%, which looks like the top-rarity figure. TikTokAndy's purple chip read 7% on September 30, 2026."
+    "note": "Season 2 Phase 1 raised the ammo returned from 1 to 4 and cut the chance, from 72% to 18% in Ubisoft's notes, which looks like the highest tier. Like the rest of this file, this entry lists the lowest tier: it read 29% before the patch, and TikTokAndy's set read 7% on September 30, 2026 (he said on October 2 that it isn't maxed)."
   },
   {
     "id": "smc-70",
@@ -736,6 +739,8 @@
     "skill": "Healing Hive",
     "bonus2": "Damage Reduction+[2.0%~4.0%]",
     "bonus3": "While Healing Hive is deployed, hits on enemies within 20 meter(s) deal additional damage equal to 240% Weapon Damage.",
+    "note": "Our data before June read 240% of Toughness with a 2 second trigger interval, and AgentHuntzman said in his May 22, 2026 video that the tooltip switched between Weapon Damage and Toughness. We haven't confirmed which applies now.",
+    "caveat": true,
     "aliases": [
       "Defensive Measures"
     ]

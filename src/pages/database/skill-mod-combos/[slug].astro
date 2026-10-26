@@ -226,7 +226,9 @@ const toModSlug = (name: string) => name.toLowerCase().replace(/[^a-z0-9]+/g, '-
           <p class="smc-bonus-card__text">{bonus3}</p>
         </div>
         {mod.note && <p class="item-note">{mod.note}</p>}
-        {mod.aliases?.length > 0 && <p class="item-note">Ubisoft's <a href="/database/drop-rates/">drop-rate table</a> lists this set as {mod.aliases.join(' or ')}, its earlier name.</p>}
+        {mod.aliases?.length > 0 && (mod.aliasBasis === 'elimination'
+          ? <p class="item-note">Ubisoft's <a href="/database/drop-rates/">drop-rate table</a> probably lists this set as {mod.aliases.join(' or ')}: it's the only {mod.skill} set there we can't match by name or effect.</p>
+          : <p class="item-note">Ubisoft's <a href="/database/drop-rates/">drop-rate table</a> lists this set as {mod.aliases.join(' or ')}, its earlier name.</p>)}
       </div>
 
       <!-- Meta Builds (unique per item, only for pages with editorial notes) -->
