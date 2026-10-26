@@ -3,6 +3,7 @@ import SEO from '../components/SEO.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import AdSenseUnit from '../components/AdSenseUnit.astro';
+import NewsletterSignup from '../components/NewsletterSignup.astro';
 import { GA4_ID } from '../data/site-config';
 import '../styles/global.css';
 
@@ -96,6 +97,12 @@ gtag('config', '${GA4_ID}');`}></script>
   <Header />
   <main id="main-content">
     <slot />
+    {/* Tier list pages get the email signup here, so the tier list files themselves stay untouched. */}
+    {Astro.url.pathname.startsWith('/tier-list') && (
+      <div class="container">
+        <NewsletterSignup source="tier-list" />
+      </div>
+    )}
     {!suppressAds && (
       <div class="container ad-footer">
         <AdSenseUnit label="Advertisement — footer" />

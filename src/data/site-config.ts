@@ -40,3 +40,10 @@ export const DATABASE_UPDATED = '2026-10-25';
  * Admin > Data streams > Web stream; set the property's time zone to New York, as Mediavine asks.
  */
 export const GA4_ID = 'G-HWT2GX34EX'; // live since 2026-10-26
+
+/**
+ * Buttondown username for the Resurgence Builds email list (separate from Inland Care Jobs' list).
+ * Empty means no signup box anywhere. When set, a box shows on build guides and tier list pages,
+ * posting to Buttondown's embed endpoint, and public/_headers already allows https://buttondown.com in form-action.
+ */
+export const BUTTONDOWN_USERNAME = '';

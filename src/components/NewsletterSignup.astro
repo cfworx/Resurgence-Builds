@@ -1,0 +1,86 @@
+---
+import { BUTTONDOWN_USERNAME } from '../data/site-config';
+
+export interface Props {
+  /** Where the box sits, so Buttondown can tell signups apart by source page. */
+  source: string;
+}
+
+const { source } = Astro.props;
+const id = `nl-email-${source}`;
+---
+
+{BUTTONDOWN_USERNAME && (
+  <aside class="newsletter" aria-labelledby={`${id}-heading`}>
+    <h2 id={`${id}-heading`} class="newsletter__heading">Get the new tier list the day it drops</h2>
+    <p class="newsletter__text">One email when each season's rankings and top builds change. No spam, no "you won't believe this loadout." Unsubscribe in one click.</p>
+    <form
+      class="newsletter__form"
+      action={`https://buttondown.com/api/emails/embed-subscribe/${BUTTONDOWN_USERNAME}`}
+      method="post"
+      target="_blank"
+    >
+      <label for={id} class="newsletter__label">Email address</label>
+      <input type="email" name="email" id={id} class="newsletter__input" placeholder="agent@example.com" autocomplete="email" required />
+      <input type="hidden" name="embed" value="1" />
+      <button type="submit" class="newsletter__button">Notify me</button>
+    </form>
+  </aside>
+)}
+
+<style>
+  .newsletter {
+    margin: var(--sp-8) 0;
+    padding: var(--sp-5);
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--accent);
+    border-radius: var(--border-radius);
+    background: var(--surface);
+  }
+  .newsletter__heading {
+    font-family: var(--font-heading);
+    font-size: var(--text-xl, 1.25rem);
+    margin: 0 0 var(--sp-2);
+  }
+  .newsletter__text {
+    color: var(--ink-muted);
+    margin: 0 0 var(--sp-4);
+  }
+  .newsletter__form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--sp-2);
+    align-items: center;
+  }
+  .newsletter__label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+  .newsletter__input {
+    flex: 1 1 14rem;
+    min-width: 0;
+    padding: var(--sp-2) var(--sp-3);
+    border: 1px solid var(--border);
+    border-radius: var(--border-radius);
+    background: var(--inset, transparent);
+    color: var(--ink);
+    font: inherit;
+  }
+  .newsletter__button {
+    flex: 0 0 auto;
+    padding: var(--sp-2) var(--sp-4);
+    border: 0;
+    border-radius: var(--border-radius);
+    background: var(--accent);
+    color: #fff;
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+    transition: opacity var(--transition-fast, 150ms);
+  }
+  .newsletter__button:hover { opacity: 0.9; }
+</style>
