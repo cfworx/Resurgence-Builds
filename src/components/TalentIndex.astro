@@ -5,14 +5,14 @@
  * body-armor-talents (those URLs 301 to anchors on the index).
  */
 export interface Props {
-  talents: { id?: string; name: string; description: string }[];
-  /** "backpack" | "body armor", used in copy only */
-  slot: string;
+  talents: { id?: string; name: string; description: string; note?: string }[];
   /** e.g. "/database/backpack-talents/" */
   basePath: string;
 }
 
-const { talents, slot } = Astro.props;
+// Never name a prop `slot` here: Astro reads slot="..." on a component as a named-slot target
+// and silently drops the component when the parent has no slot by that name.
+const { talents } = Astro.props;
 
 const toSlug = (name: string) => name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
 
@@ -78,7 +78,7 @@ const allRoles = ['DPS', 'Skill', 'Tank/Sustain', 'Team', 'Utility'].filter(r =>
         ))}
       </h2>
       <p class="ti-entry__desc">{e.description}</p>
-      <p class="ti-entry__source">Rolls on T2 {slot} pieces · always active once equipped · swappable at the Recalibration Station</p>
+      {e.note && <p class="item-note">{e.note}</p>}
     </article>
   ))}
 </div>
@@ -191,12 +191,6 @@ const allRoles = ['DPS', 'Skill', 'Tank/Sustain', 'Team', 'Utility'].filter(r =>
     color: #c8c8d0;
     line-height: 1.7;
     font-size: var(--text-base);
-    margin: 0 0 var(--sp-3) 0;
-  }
-  .ti-entry__source {
-    font-family: var(--font-mono);
-    font-size: var(--text-xs);
-    color: #8888a0;
     margin: 0;
   }
 </style>
