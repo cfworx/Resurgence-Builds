@@ -159,10 +159,6 @@ const dataPayload = JSON.stringify(poisData);
     </button>
   </div>
 
-  <p class="map-attribution"><span class="map-attribution__text">
-    Marker locations adapted from <a href={poisData.attribution.sources[0]} target="_blank" rel="noopener noreferrer">The Division Wiki community maps</a> (Fandom), licensed <a href={poisData.attribution.license} target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a>, fitted to the in-game map by Resurgence Builds. Dark Zone markers are approximate. <span class="desktop-only">Contributors: Shift+Click copies map coordinates.</span>
-  </span></p>
-
   <section class="map-seo">
     <h2>Instanced missions (not on the open-world map)</h2>
     <p>These missions launch from a bubble at the edge of the in-game map and play out somewhere else, so there is nothing honest to pin:</p>
@@ -174,7 +170,7 @@ const dataPayload = JSON.stringify(poisData);
 
     <h2>About this map</h2>
     <p>This is a free interactive map for Tom Clancy's The Division Resurgence, drawn on the in-game map of Midtown Manhattan. It plots {total} locations across {categories.length} layers: hubs and safe houses, main and side missions, open-world activities, every mapped collectible, and the Dark Zone. It works in the browser on phones and PC, with no login.</p>
-    <p>How we built it: the positions come from The Division Wiki's community maps, which players have been filling in since launch. We converted them onto our base map with a perspective fit anchored on building outlines, so open-world markers land within a few pixels of the in-game icons. The Dark Zone layer comes from a separate schematic map, which is why those markers carry an "approximate" flag. Our <a href="/guides/division-resurgence-dark-zone-guide/">Dark Zone guide</a> covers what to do once you are in there: contamination, extraction, the Smuggler and going Rogue.</p>
+    <p>How we built it: the positions come from The Division Wiki's community maps of <a href={poisData.attribution.sources[0]} target="_blank" rel="noopener noreferrer">New York City</a> and <a href={poisData.attribution.sources[1]} target="_blank" rel="noopener noreferrer">the Dark Zone</a> (Fandom, licensed <a href={poisData.attribution.license} target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a>), which players have been filling in since launch. We converted them onto our base map with a perspective fit anchored on building outlines, so open-world markers land within a few pixels of the in-game icons. The Dark Zone layer comes from a separate schematic map, which is why those markers carry an "approximate" flag. Our <a href="/guides/division-resurgence-dark-zone-guide/">Dark Zone guide</a> covers what to do once you are in there: contamination, extraction, the Smuggler and going Rogue.</p>
     <p>What is still partial: {listJoin(wipLabels)} are flagged as partial layers because the community has not finished mapping them. Encrypted crates are flagged too, because not every crate in the game has been located. The <a href="/guides/division-resurgence-safe-codes/">Safe Codes Master List</a> explains which codes are confirmed, which are randomized per player, and which are disputed.</p>
     <p>Spotted a wrong pin or a missing location? <a href="/contact/">Send it to us</a> with the in-game spot (Shift+Click on desktop copies coordinates) and we will fix it. For gear once you have looted the place clean, see the <a href="/builds/">builds database</a> and the <a href="/guides/division-resurgence-exotic-weapons-list-2026/">exotic weapons list</a>, and check the <a href="/patch-notes/">patch notes</a> for what changed this season.</p>
     <p class="map-disclaimer"><em>Resurgence Builds is an independent fan site. We are not affiliated with, endorsed by, or sponsored by Ubisoft Entertainment SA. Tom Clancy's The Division, The Division Resurgence, and all related characters, logos, and game assets are trademarks and copyrights of Ubisoft Entertainment SA.</em></p>
@@ -353,10 +349,6 @@ const dataPayload = JSON.stringify(poisData);
   background: rgba(10,13,18,0.85); border: 1px solid var(--border); color: var(--ink-heading); font-size: var(--text-xs); font-family: var(--font-mono);
 }
 .map-noscript { padding: var(--sp-4); color: var(--ink-muted) }
-.map-attribution { max-width: var(--max-width); margin: var(--sp-2) auto 0; font-size: 0.8125rem; color: var(--ink-muted) }
-.map-attribution__text { display: block; max-width: var(--measure) }
-.map-attribution a { color: var(--ink-muted); text-decoration: underline; text-underline-offset: 2px }
-.map-attribution a:hover { color: var(--accent) }
 
 /* --- Leaflet chrome --- */
 .leaflet-container { font-family: inherit }
@@ -474,12 +466,9 @@ const dataPayload = JSON.stringify(poisData);
 .faq-answer a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px }
 .faq-answer a:hover { color: #fff }
 
-.mobile-only { display: none }
-.desktop-only { display: inline }
-
 /* --- Up to small laptops: side margins --- */
 @media (max-width: 68.74em) {
-  .map-toolbar, .map-layout, .map-attribution { margin-left: var(--sp-4); margin-right: var(--sp-4) }
+  .map-toolbar, .map-layout { margin-left: var(--sp-4); margin-right: var(--sp-4) }
 }
 
 /* --- Touch screens: 44px targets for the controls people tap most --- */
@@ -497,7 +486,6 @@ const dataPayload = JSON.stringify(poisData);
   .map-toolbar { margin: var(--sp-3) var(--sp-4) 0; gap: var(--sp-2) }
   .map-search { flex-basis: 100%; max-width: none }
   .map-layout { flex-direction: column; margin: var(--sp-2) 0 0 }
-  .map-attribution { margin: var(--sp-2) var(--sp-4) 0 }
 
   .map-filters {
     position: fixed; bottom: 0; left: 0; right: 0; width: 100%; max-height: 70vh; max-height: 70svh; min-height: unset;
@@ -526,7 +514,5 @@ const dataPayload = JSON.stringify(poisData);
     min-height: 320px;
   }
   .map-seo, .map-faq { padding-left: var(--sp-4); padding-right: var(--sp-4) }
-  .mobile-only { display: inline }
-  .desktop-only { display: none }
 }
 </style>

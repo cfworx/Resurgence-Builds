@@ -185,7 +185,7 @@
     L.imageOverlay(base, bounds, { alt: 'Division Resurgence in-game map of Midtown Manhattan' }).addTo(map);
 
     map.attributionControl.setPrefix(false);
-    // Short on phones so it stays on one line; the full credit is in the paragraph under the map.
+    // Short on phones so it stays on one line; the full credit and license link are in "About this map".
     var wiki = '<a href="https://thedivision.fandom.com/wiki/Map:Tom_Clancy%27s_The_Division_Resurgence/New_York_City" target="_blank" rel="noopener noreferrer">';
     map.attributionControl.addAttribution(PHONE.matches
       ? 'Locations: ' + wiki + 'Division Wiki</a> (CC BY-SA)'
