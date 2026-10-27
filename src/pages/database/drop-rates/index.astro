@@ -78,6 +78,8 @@ const datasetLd = {
   description,
   url: new URL('/database/drop-rates/', Astro.site).href,
   isBasedOn: dropRates.source,
+  // The odds are Ubisoft's game data; our terms say how it's reproduced here (Search Console wants a license).
+  license: new URL('/terms/#content-ownership', Astro.site).href,
   dateModified: dropRates.checked,
   keywords: ['Division Resurgence', 'drop rates', 'sealed cache', 'OS Protocol', 'exotic'],
   creator: { '@type': 'Organization', name: 'Resurgence Builds', url: new URL('/', Astro.site).href },
