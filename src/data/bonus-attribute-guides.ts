@@ -14,7 +14,7 @@ export type AttrInfo = {
 export const attrGuide: Record<string, AttrInfo> = {
   'Weapon Critical Hit Chance': {
     overview: 'Weapon Critical Hit Chance (CHC) is the probability that each bullet scores a critical hit. In Division Resurgence, crits aren\'t just "nice to have." They\'re the foundation of most Firepower builds, and every point of CHC makes your Critical Hit Damage pay off more often.',
-    whyItMatters: 'Crit Chance decides how often you crit and Crit Damage decides what each crit is worth, so the two want to rise together. Ubisoft hasn\'t published a cap, and buffs stack on top of your sheet: TikTokAndy\'s Lightweight M4 shows 51% on its own, 70% with Scanning Pulse up and 90% with Pulse and Tactical Link together. Count your buffs before you spend every roll on more. The Fury Strike gear set adds Crit Chance at 3 pieces and Crit Damage at 4.',
+    whyItMatters: 'Crit Chance decides how often you crit and Crit Damage decides what each crit is worth, so the two want to rise together. Ubisoft hasn\'t published a cap, and buffs stack on top of your sheet: TikTokAndy\'s character sheet with his Lightweight M4 equipped shows 51%, then 70% with Scanning Pulse up and 90% with Pulse and Tactical Link together. Count your buffs before you spend every roll on more. The Fury Strike gear set adds Crit Chance at 3 pieces and Crit Damage at 4.',
     howToGet: 'CHC rolls on gear and weapons (TikTokAndy\'s October Double Barrel gear has it on the mask), gear mods can roll it since Season 2 Phase 1, and weapon attachments carry it too. Fury Strike (3pc +10.8%) and Mechanical Enemy (2pc +7.2%) add it as set bonuses, and Assisted Infantry is an OS Protocol with CHC as its main stat. Recalibration rerolls a line at random, so treat it as a gamble, not a transfer.',
     bestBuilds: 'Every Firepower build in the game wants this. Vanguard Commando with Phalanx Attack 4pc, Bulwark Breacher with Fury Strike 4pc, any build using Killer or Concentrated Fire weapon talents. If your build fires bullets and wants them to hurt, CHC is non-negotiable.',
   },
@@ -33,7 +33,7 @@ export const attrGuide: Record<string, AttrInfo> = {
   'All Weapon Damage': {
     overview: 'All Weapon Damage raises weapon damage whatever the damage type. Since Season 2 Phase 1, weapons roll it where they used to roll Blast, Piercing or Shredding Weapon Damage, which did nothing on a weapon of a different damage type.',
     whyItMatters: 'It works on any gun, so the roll is never wasted the way a mismatched damage-type bonus used to be. Your weapon\'s own damage type still decides which enemy armor bars it hits hardest.',
-    howToGet: 'Weapons roll it since Season 2 Phase 1, and many Firepower and Toughness OS Protocols carry it as a fixed stat (Augmented Lethality, for one). The same patch took All Damage out of the pool for newly dropped weapon mods, so only older weapon mods carry it.',
+    howToGet: 'Weapons roll it since Season 2 Phase 1, and many Firepower and Toughness OS Protocols carry it as a fixed stat (Augmented Lethality, for one). Separately, the same patch took the damage-type and "All Damage" rolls out of the pool for newly dropped weapon mods, so mods you already own are the only place those old mod rolls survive.',
     bestBuilds: 'Any weapon build. It is the damage-type-free replacement for the old Blast, Piercing and Shredding rolls.',
   },
   'Weapon Multi-Shot Chance': {
@@ -74,7 +74,7 @@ export const attrGuide: Record<string, AttrInfo> = {
   },
   'Armor': {
     overview: 'Armor is one of the two big defensive numbers on your sheet, next to Health. AgentHuntzman\'s rule for Resurgence is that you need both: "No matter how big your health may be, you will still die very fast if your armor is extremely low." It\'s the core survivability stat for tank builds.',
-    whyItMatters: 'Armor % bonuses scale the Armor you already have, which is why TikTokAndy\'s Precision Support stacks took him from about 10,000 to about 14,000 Armor, and why he likes Armor mods on that build. Bulwark builds lean on it hardest. In PvP, high Armor plus Damage Reduction makes you extremely annoying to kill.',
+    whyItMatters: 'TikTokAndy\'s readings suggest Armor % bonuses scale the Armor you already have: his Precision Support stacks took him from about 10,000 to about 14,000 Armor, and he likes Armor mods on that build for the same reason. Bulwark builds lean on it hardest. In PvP, high Armor plus Damage Reduction makes you extremely annoying to kill.',
     howToGet: 'Every gear piece carries a flat Armor value, gear mods can roll Armor since Season 2 Phase 1, and Tactical Augmentation Modules add the biggest late-game jumps. Self-Propelled Shield (2pc +14%) and Healing Elites (4pc +28%) are the Armor gear sets, and several skill mod combos give Armor as their 2-piece bonus (Area Suppression, Applied Demolitions, Airburst and Commando among them).',
     bestBuilds: 'Bulwark tank builds (mandatory), Field Medic survival builds, any PvP loadout that needs to face-tank. Also useful as a secondary stat on DPS builds for Dark Zone survival. Dead DPS does zero damage.',
   },
@@ -116,7 +116,7 @@ export const attrGuide: Record<string, AttrInfo> = {
   },
   'Skill Duration': {
     overview: 'Skill Duration extends how long your deployed skills stay active before expiring. Those extra seconds on your Artillery Turret or Healing Hive can be the difference between clearing the room and watching your skill poof right when you needed it most.',
-    whyItMatters: 'Skill Duration is effectively a damage multiplier for time-limited skills: an Artillery Turret that lasts 30 seconds instead of 20 gets 50% more time to shoot. Long-term Effect gear set is built around it. For Field Medic builds, longer Support Station uptime means more healing without having to worry about cooldowns.',
+    whyItMatters: 'Skill Duration is effectively a damage multiplier for time-limited skills: an Artillery Turret that lasts 30 seconds instead of 20 gets 50% more time to shoot. Long-term Effect\'s 3-piece adds it (+14.4%). For Field Medic builds, longer Support Station uptime means more healing without having to worry about cooldowns.',
     howToGet: 'It rolls as a gear attribute. Long-term Effect (3pc +14.4%), Captain Cow (3pc +14.4%) and Mechanical Expert (2pc +9.6%) add it as set bonuses, and some skill mod combos extend specific skills as their 3-piece bonus (Optimized extends the Artillery Turret, Area Denial extends deployed turrets). The Adaptation and Last Stand weapon talents grant it conditionally.',
     bestBuilds: 'Long-term Effect 4pc Engineering builds, Field Medic Support Station healer builds, any build running deployable skills that benefit from longer uptime. Less useful for instant-use skills like Seeker Mines.',
   },
@@ -134,7 +134,7 @@ export const attrGuide: Record<string, AttrInfo> = {
   },
   'Skill Blast Damage': {
     overview: 'Skill Blast Damage boosted skill hits of the Blast damage type, the type red-bar enemies are weak to. Season 2 Phase 1 retired it from weapon rolls along with the other damage-type bonuses.',
-    whyItMatters: 'A damage-type bonus only helps when the damage type matches, which is the mismatch Ubisoft called frustrating when it replaced these rolls with All Skill Damage. If an old roll still sits on your gear or mods, it only counts on Blast-type skill hits.',
+    whyItMatters: 'A damage-type bonus only helps when the damage type matches, which is the mismatch Ubisoft called frustrating when it replaced these rolls with All Skill Damage. If an old roll still sits on a weapon or weapon mod, it only counts on Blast-type skill hits.',
     howToGet: 'Season 2 Phase 1 removed it from the weapon bonus attribute pool (All Skill Damage replaced it) and from newly dropped weapon mods; mods you already own keep their rolls. For raw explosive power now, look at Skill Intensity, skill crit stats and combos like Thermobaric Grenades, which still multiplies Grenade Launcher damage (Season 1 Phase 3 cut it from +460% to +300%).',
     bestBuilds: 'Demolitionist explosive builds that still carry old rolls. For new gear, chase All Skill Damage and skill crit instead.',
   },
@@ -180,7 +180,7 @@ export const statInteraction: Record<string, string> = {
   'weapon-piercing-damage': 'Weapon Piercing Damage only counted on Piercing-type weapon hits, and Piercing is what dark-blue-bar enemies are weak to. Since Season 2 Phase 1, weapons roll All Weapon Damage instead.',
   'weapon-shredding-damage': 'Weapon Shredding Damage only counted on Shredding-type weapon hits, and Shredding is what light-blue-bar enemies are weak to. Since Season 2 Phase 1, weapons roll All Weapon Damage instead.',
   'max-health': 'Max Health directly increases your health pool, and every Extra Health effect that grants a percentage of Max Health grows with it. It pairs well with Received Healing: more health means each percentage of healing restores more absolute HP.',
-  'armor': 'Armor provides layered survivability alongside Health and Damage Reduction, and Armor % bonuses scale whatever Armor your gear already gives you. That combination is what makes Bulwark and Vanguard tank builds extremely durable in group content.',
+  'armor': 'Armor provides layered survivability alongside Health and Damage Reduction, and creator readings suggest Armor % bonuses scale whatever Armor your gear already gives you. That combination is what makes Bulwark and Vanguard tank builds extremely durable in group content.',
   'damage-reduction': 'Damage Reduction is a percentage-based mitigation stat, and it pairs with Armor and Health for layered survivability. Total damage reduction has been capped at 80% since the June 26, 2026 hotfix, so rolls past the cap are wasted.',
   'skill-critical-chance': 'Skill Crit Chance gives your skills a chance to critically hit. It scales particularly well with Tech Operator Striker Drone and Tactical Pharma builds, where each skill hit can crit for big burst damage.',
   'skill-critical-damage': 'Skill Crit Damage multiplies damage when skills crit. Like weapon crits, you need enough Skill Crit Chance to make this stat worthwhile. Balance both for optimal skill DPS.',

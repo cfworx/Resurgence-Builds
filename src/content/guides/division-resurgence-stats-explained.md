@@ -12,9 +12,9 @@ shareTitle: "Your stat sheet, translated"
 shareText: "Firepower, Toughness, Engineering, multi-shot, the 80% damage reduction cap and the 1.4x rule for talent ranks. Every stat in Division Resurgence, explained."
 faqs:
   - question: "What does Firepower do in Division Resurgence?"
-    answer: "Firepower is the main attribute for weapon damage, the stat gun builds like Vanguard Commando stack. Toughness is the survivability stat and Engineering powers skills, healing and buffs. If a YouTuber says 'firearms' or 'electronics,' those are The Division 2's names for Firepower and Engineering; same idea, different game."
+    answer: "Firepower is the main attribute for weapon damage, the stat gun builds like Vanguard Commando stack. Toughness is the survivability stat and Engineering powers skills, healing and buffs. If a YouTuber says 'firearms' or 'electronics,' those are the original Division's (2016) names for Firepower and Engineering; same idea, older game."
   - question: "What is multi-shot chance in Division Resurgence?"
-    answer: "TikTokAndy's explanation: when multi-shot triggers, one bullet 'actually hits the enemy 2 times instead of 1.' Weapon Multi-Shot Chance does it for bullets and Skill Multi-Shot Chance for skill hits. It's the closest thing this game has to a buy-one-get-one deal."
+    answer: "TikTokAndy's explanation of Weapon Multi-Shot Chance: when it triggers, one bullet 'actually hits the enemy 2 times instead of 1.' Skill Multi-Shot Chance is the skill-side version of the same idea. It's the closest thing this game has to a buy-one-get-one deal."
   - question: "Is there a damage reduction cap in Division Resurgence?"
     answer: "Yes. Ubisoft's June 26, 2026 hotfix capped damage reduction at a maximum of 80%, as a server-side change, with the visual feedback on your stats screen 'to be added at a later date.' So your sheet can show more than 80%, but the server stops counting there. Stacking past it is like adding a fourth lock to a screen door."
   - question: "Should I stack crit chance or crit damage first?"
@@ -32,15 +32,15 @@ One warning before you read any build advice on the internet: this is **not** Th
 
 ## The three main attributes
 
-Every piece of gear rolls a main attribute, and every specialization leans on one:
+Every gear piece carries Firepower, Toughness and Engineering values in different amounts (TikTokAndy's T2 Phalanx holster reads 200, 33 and 64), and every specialization focus leans on one of them:
 
 | Attribute | What it powers | Who stacks it | Also called |
 |---|---|---|---|
-| **Firepower** | Weapon damage | Vanguard Commando, Bulwark Breacher, any gun build | "firearms" by creators who came from The Division 2 |
+| **Firepower** | Weapon damage | Vanguard Commando, Bulwark Breacher, any gun build | "firearms," the original Division's (2016) name, still used by some creators |
 | **Toughness** | Health and survivability (and, on a Toughness medic, healing) | Bulwark Juggernaut, Combat Medicine | |
-| **Engineering** | Skill damage, healing and buffs | Demolitionist, Tech Operator, Tactical Pharma, Vanguard Recon | "electronics" |
+| **Engineering** | Skill damage, healing and buffs | Demolitionist, Tech Operator, Tactical Pharma, Vanguard Recon | "electronics," the same habit |
 
-Ubisoft's patch notes use Firepower, Toughness and Engineering, for example in the Season 2 Phase 1 mod rework. A few things creators have measured:
+The game's own tooltips use Firepower, Toughness and Engineering: Explosive Round's explosion deals "2000% Firepower" (TikTokAndy reads it out), and Collateral Damage's talent text reads "3000% Engineering." A few things creators have measured:
 
 - **Engineering feeds buffs, not just damage.** AgentHuntzman's Recon build shows Smart Cover granting allies weapon damage equal to 24% of his Engineering, which is why support Vanguards stack it.
 - **Toughness medics heal off their Health.** On AgentHuntzman's Toughness Field Medic in May, 0.46% of his Health was converted into each heal, so more Health meant bigger heals.
@@ -58,11 +58,11 @@ AgentHuntzman calls the character Attributes screen "your best friend throughout
 
 ### What the less obvious ones mean
 
-- **Multi-Shot Chance:** when it triggers, a bullet "actually hits the enemy 2 times instead of 1," as TikTokAndy puts it. Skill Multi-Shot Chance does the same for skill hits.
+- **Multi-Shot Chance:** when it triggers, a bullet "actually hits the enemy 2 times instead of 1," as TikTokAndy puts it. Skill Multi-Shot Chance is the skill-side version; TikTokAndy only explained the weapon one.
 - **Skill Intensity:** makes a skill's effects stronger, its healing and buffs included, not just its damage. TikTokAndy's Aegis healer leans on it for that reason.
-- **Skill Duration vs Cooldown Recovery:** AgentHuntzman's "breaking point": once a skill lasts longer than its cooldown, you have permanent uptime, and more cooldown recovery is wasted. Our [hidden mechanics guide](/guides/hidden-mechanics-explained/) has the full explanation.
+- **Skill Duration vs Cooldown Recovery:** AgentHuntzman's "breaking point": once a skill lasts longer than its cooldown, you have permanent uptime, and more cooldown recovery becomes less valuable. Our [hidden mechanics guide](/guides/hidden-mechanics-explained/) has the full explanation.
 - **Signature Ability Charge Efficiency:** how fast your specialization's signature ability (the "super") fills.
-- **Healing Intensity vs Received Healing:** Healing Intensity boosts the heals you give; Received Healing boosts the heals you get, your own included. AgentHuntzman showed both raising his medic's heals in his May video.
+- **Healing Intensity vs Received Healing:** Healing Intensity boosts the heals you give; Received Healing boosts the heals you get, your own included. AgentHuntzman tested Received Healing on his medic in his May video, and his heals jumped from about 3,400 to about 5,000.
 - **All Weapon Damage vs damage types:** since Season 2 Phase 1, weapons no longer roll Blast, Shredding or Piercing damage bonuses. Ubisoft replaced them "in favor of All Weapon Damage or All Skill Damage" because a damage-type bonus on a gun of another type "didn't bring any benefits and was frustrating."
 
 ## Health, Armor and the 80% cap
@@ -81,7 +81,7 @@ These are creator opinions, not game rules, but they come up in almost every bui
 
 1. **50% crit chance before crit damage.** AgentHuntzman's rule for gun builds. Count your skills: TikTokAndy's Commando reads 51% on the sheet, about 70% with Scanning Pulse and about 90% with Pulse and Tactical Link together ([his build](/builds/lightweight-m4-commando-vanguard-build-tiktokandy/)).
 2. **The stat sheet doesn't show everything.** TikTokAndy points out that his Overwatch backpack talent's extra Skill Damage wasn't counted on the sheet. Some talent bonuses only apply when their condition is met, so test in a fight, not in the menu.
-3. **Recalibrate for the build's job.** AgentHuntzman says to reroll toward what the build needs (crit chance on a crit build), not comfort stats like extra Armor on a damage piece.
+3. **Recalibrate for the build's job.** AgentHuntzman's example: a build meant to buff, apply pressure and keep uptime should recalibrate for that, and "not turn you into a tank" with comfort stats like extra Armor.
 4. **Power Score isn't build strength.** Every creator we follow says it. Power Score tells you whether you meet an activity's recommended level; sets, talents and attributes decide whether the build works. AgentHuntzman notes that mods alone inflate it a lot: his level 20 weapon mods added roughly 350 to 500 Power Score each.
 
 ## How talent ranks scale: the 1.4x rule
@@ -94,7 +94,7 @@ Talents come in ranks, written as "II" (or "2") after the name. Ubisoft doesn't 
 | Siege | 37.50% Extra Health | about 52% (TikTokAndy) | about 1.4x |
 | Toymaker | +15% Skill Multi-Shot Chance | +21% (TikTokAndy) | 1.4x |
 | Suppressive Fire | +18% Magazine Size, +6% Rate of Fire | +25%, +8.4% (TikTokAndy) | about 1.4x |
-| Precision Support | +7% Armor per stack | +9.80% (Nadie's screen) | 1.4x |
+| Precision Support | +7% Armor per stack | +9.80% (Nadie's screenshots, from his build submission); "10" (TikTokAndy) | 1.4x |
 | Still Alive | 30% of missing Health | 42% (TikTokAndy) | 1.4x |
 | Torrential Downpour | +22.50% Engineering | +31.50% (TikTokAndy) | 1.4x |
 
@@ -107,14 +107,14 @@ OS Protocols grow two ways, and Ubisoft's own patch notes show the pattern for o
 **Talent Upgrades (from duplicates).** When Ubisoft printed full talent ladders, each step added **20% of the base value**, five times, ending at **double** the base:
 
 - **Applied Demolition** (Season 1 Phase 3 buff): 43.2%, 51.84%, 60.48%, 69.12%, 77.76%, then 86.2% (as printed; the pattern says 86.4) of Skill Critical Damage.
-- **Dominating Presence** (Season 2 Phase 2): maximum Multi-Shot scaling of 35, 42, 49, 56, 63 and 70%.
+- **Dominating Presence** (Season 2 Phase 2): maximum scaling reduced to 35, 42, 49, 56, 63 and 70%.
 
 **Levels (up to 50).** Creator readings say a protocol's percentage main stat doubles by level 50:
 
 | Protocol | Base main stat (our database) | Creator reading | Source |
 |---|---|---|---|
-| Augmented Lethality | +18% Firepower | 36% Firepower on his upgraded copy | TikTokAndy, September 30 |
-| Explosive Round | +22.50% Firepower | 42.75% just short of level 50, "45" at max | TikTokAndy, October 27 |
+| Augmented Lethality | +18% Firepower | 36% Firepower on the copy he'd used "for a very long time" | TikTokAndy, September 30 |
+| Explosive Round | +22.50% Firepower | 42.75% below level 50, "45" at max | TikTokAndy, October 27 |
 
 So when you compare two protocols, compare them at the same level and upgrade step, or you're comparing a puppy to a dog. The [OS Protocol database](/database/os-protocols/) lists base values; the [tier list](/tier-list/os-protocols/) ranks them from creator results.
 
@@ -126,7 +126,7 @@ Weapons deal **Blast, Shredding or Piercing** damage, and enemies with colored a
 
 - **Tiers:** T0 (story gear), T1 (the main build tier) and T2 (endgame) are separate from rarity and level. Our [gear farming guide](/guides/division-resurgence-gear-farming-guide/) covers where each drops.
 - **Item level:** your agent caps at 40, but gear can be upgraded up to 10 levels above you (AgentHuntzman), so item level 50 at 40. The last ten levels need purple Superior materials.
-- **Mods:** since Season 2 Phase 1, new weapon mods have **+100% main stat** and **-25% bonus attributes**, and their bonus pool includes Weapon Damage, Skill Intensity, Headshot Damage and Weapon and Skill Critical Damage. Gear mods gained Health, Armor, crit, multi-shot and skill rolls in the same patch. Our [mod farming guide](/guides/how-to-farm-purple-gold-mods/) has the details.
+- **Mods:** since Season 2 Phase 1, new weapon mods have their **main stat values increased by 100%** and **attribute bonus values reduced by 25%**, and their bonus pool includes Weapon Damage, Skill Intensity, Headshot Damage and Weapon and Skill Critical Damage. Gear mods gained Health, Armor, crit, multi-shot and skill rolls in the same patch. Our [mod farming guide](/guides/how-to-farm-purple-gold-mods/) has the details.
 - **Tactical Augmentation Modules** add the biggest late-game stat jumps, up to +100% Health and Armor on a gear piece by creator readings. See our [Tactical Augmentation Modules guide](/guides/tactical-augmentation-modules-guide/).
 
 ## Where to read the exact numbers
@@ -143,9 +143,13 @@ For browsing outside the game, our [database](/database/) collects gear sets, ta
 - [AgentHuntzman: Best Scout Build (YouTube, April 26, 2026)](https://www.youtube.com/watch?v=b1ZjnGeeRKI)
 - [AgentHuntzman: How to start your build (YouTube, April 12, 2026)](https://www.youtube.com/watch?v=phHiYGujrRQ)
 - [AgentHuntzman: Gear Farming Made EASY (YouTube, June 3, 2026)](https://www.youtube.com/watch?v=m5a01nBqv_U)
+- [AgentHuntzman: SHD Manual, How Progression ACTUALLY Works (YouTube, May 22, 2026)](https://www.youtube.com/watch?v=Mt3E4A0l0Zk) (damage type color key)
 - [TikTokAndy: SOLO Heroic Chinatown (YouTube, September 24, 2026)](https://www.youtube.com/watch?v=6dGaisNKCyE) (multi-shot)
 - [TikTokAndy: Best "Automatic" Double Barrel Shotgun Build (YouTube, September 30, 2026)](https://www.youtube.com/watch?v=ITIJB2nj3zg)
+- [TikTokAndy: Precious Cargo Legendary Difficulty But I'm Solo (YouTube, October 6, 2026)](https://www.youtube.com/watch?v=D3yrRSUwhq0) (Torrential Downpour 31.5%)
+- [TikTokAndy: Most Overpowered Team Healer Build (YouTube, October 10, 2026)](https://www.youtube.com/watch?v=VHKfmW4BtEk) (Skill Intensity on an Aegis healer)
 - [TikTokAndy: Toxic Pharma Sucks...PvP Is Even Worse (YouTube, October 15, 2026)](https://www.youtube.com/watch?v=f20v8_cv9Ls)
+- Our [Muscular Nurse build](/builds/muscular-nurse-combat-medicine-build-nadie/) (Nadie's Precision Support II screenshots)
 - [TikTokAndy: Vanguard - Commando With A Lightweight M4 (YouTube, October 27, 2026)](https://www.youtube.com/watch?v=RYtZyN_0P0Y)
 - [@TheDivMobile: June 26, 2026 server hotfix](https://x.com/TheDivMobile/status/2070483985642197252) (80% damage reduction cap)
 - [Ubisoft Help Center: Patch Note, Season 1 Phase 3](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2521-patch-note---season-1-phase-3/) (Applied Demolition values)

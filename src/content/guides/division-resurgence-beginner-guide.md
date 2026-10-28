@@ -12,18 +12,18 @@ shareTitle: "Level 1 to 40 without the regrets"
 shareText: "Every veteran wishes someone had told them this on day one: what to upgrade, what to save, and the in-game menu that shows every talent's real numbers."
 faqs:
   - question: "What should a beginner do first in Division Resurgence?"
-    answer: "Pick one specialization and stick with it, learn which main stat it uses (Firepower, Toughness or Engineering), and stop upgrading every piece of gear that drops. Creators agree the game 'only truly starts at level 40,' so the early levels are for learning systems, not for spending every material you own. Your future self wants those purple materials. Listen to him."
+    answer: "Pick one specialization and stick with it, learn which main stat it uses (Firepower, Toughness or Engineering), and stop upgrading every piece of gear that drops. AgentHuntzman says the game 'only truly starts at level 40,' so the early levels are for learning systems, not for spending every material you own. Your future self wants those purple materials. Listen to him."
   - question: "What is the max level in Division Resurgence?"
     answer: "Level 40 for your agent. Gear goes higher: AgentHuntzman says you can upgrade items up to 10 levels above your own level, so at 40 your gear and weapons can reach item level 50. The last ten item levels need scarce purple Superior materials, which is why everyone tells you to save them."
   - question: "Can I change my specialization in Division Resurgence?"
-    answer: "Yes. Ubisoft's August 5 PC launch release describes 'the flexibility to switch roles at any time,' and AgentHuntzman points out that the specialization screen has a reset button that refunds the credits and items you spent. Gear, upgrade materials and recalibrations don't come back, though, which is why creators warn against hopping every few days."
+    answer: "Yes. Ubisoft's August 5 PC launch release describes 'the flexibility to switch roles at any time,' and AgentHuntzman points out that the specialization screen has a reset button that refunds the credits and items you spent. What it can't give back is the upgrade materials and recalibrations you spent on gear for the old build, which is why creators warn against hopping every few days."
   - question: "Where can I see exact talent and gear set numbers in game?"
     answer: "Open the menu, go to Agent Career and pick Build Database. AgentHuntzman showed it listing weapons, gear sets and talents with their full text, including what a talent does at level two. It's the most accurate reference in the game, and it doesn't need a Wi-Fi password from your teenager."
   - question: "Is Division Resurgence easier for new players now?"
     answer: "A bit. Season 2 Phase 2 (September 16, 2026) reduced enemy health in the tutorial and in the first playthrough of Main Missions 1, 2 and 3, removed the daily XP cap and increased the rewards for replaying Main Missions. The Dark Zone is still the Dark Zone, so don't take that as a promise."
 ---
 
-Welcome, agent. The Division Resurgence is Ubisoft's free-to-play Division game for iOS, Android and PC: it launched on mobile on **March 31, 2026**, came to PC through Ubisoft Connect on **April 28** and to Steam on **August 5**, with cross-play and cross-progression on one Ubisoft Connect account ([our accounts and servers guide](/guides/division-resurgence-account-server-guide/) has the fine print). It plays like a Division game, and it is **not** The Division 2: different specializations, different gear sets, different talents, different math. Advice written for the other games will lie to you here.
+Welcome, agent. The Division Resurgence is Ubisoft's free-to-play Division game for iOS, Android and PC: it launched on mobile on **March 31, 2026**, opened PC early access on Ubisoft Connect on **April 28** and launched in full on PC, Steam included, on **August 5**, with cross-play and cross-progression on one Ubisoft Connect account ([our accounts and servers guide](/guides/division-resurgence-account-server-guide/) has the fine print). It plays like a Division game, and it is **not** The Division 2: different specializations, different gear sets, different talents, different math. Advice written for the other games will lie to you here.
 
 This guide is the order of operations from level 1 to your first real build at level 40. It pulls together what creators who have played since launch wish they'd known, plus the official changes Ubisoft has made for new players since. Creator advice is labeled as theirs.
 
@@ -49,11 +49,11 @@ There are five specializations: **Vanguard, Demolitionist, Bulwark, Field Medic 
 
 Our [specialization guide](/guides/which-specialization-to-pick/) covers each one, and the [build tier list](/tier-list/) shows what creators are winning with in Season 2.
 
-Then commit. AgentHuntzman calls switching your main every few days one of the biggest progression traps: your farming targets, gear and stat needs change every time, and he says he has wasted more recalibrations than he can count. Switching itself is easy, and the specialization screen's reset button refunds what you spent on skills. What you can't refund is gear, materials and recalibrations.
+Then commit. AgentHuntzman calls switching your main every few days one of the biggest progression traps: your farming targets, gear and stat needs change every time, and he says he has wasted more recalibrations than he can count. Switching itself is easy, and the specialization screen's reset button refunds what you spent on skills. What you can't refund is the materials and recalibrations you put into gear for the old build.
 
 ## 2. Learn your main stat
 
-Every piece of gear rolls a main attribute, and each specialization leans on one:
+Every gear piece carries Firepower, Toughness and Engineering in different amounts, and each specialization leans on one of them:
 
 | Main stat | What it powers | Who stacks it |
 |---|---|---|
@@ -61,7 +61,7 @@ Every piece of gear rolls a main attribute, and each specialization leans on one
 | **Toughness** | Health and survivability | Bulwark Juggernaut, Combat Medicine |
 | **Engineering** | Skill damage, healing and buffs | Demolitionist, Tech Operator, Tactical Pharma, Vanguard Recon |
 
-AgentHuntzman's rule from his May videos: builds that put "a bit of everything" everywhere feel weak, so pick the stat your specialization uses and lean into it. Oldfartsgaming adds a shortcut: the stat icons are color-coded, red for offensive and blue for tank or healer. Full details, crit rules and what every secondary stat does are in our [stats guide](/guides/division-resurgence-stats-explained/).
+AgentHuntzman's rule from his May videos: builds that put "a little bit of everything" everywhere feel weak, so pick the stat your specialization uses and lean into it. Oldfartsgaming adds a shortcut: the stat icons are color-coded, red for offensive and blue for tank or healer. Full details, crit rules and what every secondary stat does are in our [stats guide](/guides/division-resurgence-stats-explained/).
 
 ## 3. Levels 1 to 30: don't upgrade everything
 
@@ -73,11 +73,11 @@ Gear drops constantly while you level, and almost all of it will be replaced. Ag
 
 He also points out that you can upgrade gear and weapons **up to 10 levels above your own level**. At level 30, that means item level 40, which is a nice boost in the early stages if you do it once, on the set you're actually wearing.
 
-Credits are the other early bottleneck. In his April credits video he called running out of credits "the easiest thing to happen," and his habits still hold: repeat missions, dismantle gear you might use (for the components), and sell the white junk. Our [endgame tips](/guides/division-resurgence-endgame-tips/) have his full list.
+Credits are the other early bottleneck. In his April 12 build video he called running out of credits "the easiest thing to happen," and the habits from his April 19 credits video still hold: repeat missions, dismantle (don't sell) gear a build of yours could use, for the components, and sell the white junk. Our [endgame tips](/guides/division-resurgence-endgame-tips/) have his full list.
 
 ## 4. Levels 30 to 40: save the purple materials
 
-Oldfartsgaming's biggest regret from his October endgame video is the one to avoid:
+The first point in Oldfartsgaming's October endgame video is the one to avoid:
 
 - Upgrading to **item level 40** uses common materials, and there are plenty.
 - **From 40 to 50**, you need purple **Superior** materials: Superior Fabric for gear and Superior Metal Components for weapons, according to AgentHuntzman, mostly from Heroic missions.
@@ -97,11 +97,11 @@ One Season 2 change to know: since Season 2 Phase 1 (August 5), weapons no longe
 
 ## 7. Max one OS Protocol that fits
 
-The OS Protocol is your "watch" slot: one module with main-stat bonuses and a unique talent. Oldfartsgaming calls upgrading a decent protocol that fits his build, as far as it would go, one of his biggest boosts in the late mid-game, even though he found a better one later. AgentHuntzman's caveat: upgrades need duplicates, so it's a slow, long-term project. Start with our [OS Protocol tier list](/tier-list/os-protocols/) and the [OS Protocol database](/database/os-protocols/).
+The OS Protocol is your "watch" slot: one module with main-stat bonuses and a unique talent. Oldfartsgaming calls upgrading a decent protocol that fits his build, as far as it would go, one of his biggest boosts in the late mid-game, even though he found a better one later. AgentHuntzman's caveat: upgrades need duplicates, so it's a slow, long-term project. (Strictly, it's the Talent Upgrade that eats duplicates of the same protocol; levels take Algorithm Data.) Start with our [OS Protocol tier list](/tier-list/os-protocols/) and the [OS Protocol database](/database/os-protocols/).
 
 ## 8. Start weapon proficiency on day one
 
-Every weapon model has a proficiency track in the **Armory**, with challenges like kill counts and weak-point hits. GGReborn lists ignoring it early as one of his biggest mistakes, and Died Again Gaming put a number on it in June: every proficiency level raises your account's Armory proficiency level, and each of those levels added **0.2% Weapon Damage and 0.2% Skill Intensity** on his screen, up to **+20% each** at 100. That's free damage for every build you'll ever play, so rotate weapon types in your dailies. The full grinding tips are in our [endgame tips](/guides/division-resurgence-endgame-tips/).
+Every weapon model has a proficiency track in the **Armory**, with challenges like kill counts and weak-point hits. GGReborn lists ignoring it early as one of his biggest mistakes, and Died Again Gaming put a number on it in June: leveling weapon proficiency raises your Armory Proficiency level, and each of those levels added **0.2% Weapon Damage and 0.2% Skill Intensity** on his screen, up to **+20% each** at 100. That's free damage for every build you'll ever play, so rotate weapon types in your dailies. The full grinding tips are in our [endgame tips](/guides/division-resurgence-endgame-tips/).
 
 ## 9. Join a clan at level 10
 
@@ -109,7 +109,7 @@ Clans unlock at **level 10**, per Ubisoft's Help Center, and they're a progressi
 
 ## 10. Lock what you want to keep
 
-TikTokAndy had a scare on his first level 40 night when he couldn't find his Fury Strike pieces, and his reminder is worth repeating: if you delete gear in this game, there's no getting it back. He locks everything he's using. Do the same for the pieces you're wearing and anything you might want later. While you're in the inventory, empty your **stash** every session: TikTokAndy says stash items are deleted after 48 hours if you don't collect them. We haven't verified that timer, but checking the stash costs nothing.
+TikTokAndy had a scare in his September 16 Dark Zone video when he switched back from a healer test build and couldn't find his Fury Strike pieces, and his reminder is worth repeating: if you delete gear in this game, there's no getting it back. He locks everything he's using. Do the same for the pieces you're wearing and anything you might want later. While you're in the inventory, empty your **stash** every session: TikTokAndy says stash items are deleted after 48 hours if you don't collect them. We haven't verified that timer, but checking the stash costs nothing.
 
 ## 11. Read the real numbers: the Build Database
 
@@ -119,16 +119,16 @@ There's also the **Armory**, which Ubisoft described in 2023 as "a catalog of al
 
 ## 12. At level 40: the real game starts
 
-AgentHuntzman's line from his first video is the one everyone repeats: "the game only truly starts at level 40." Since Season 2 Phase 1, hitting 40 also unlocks the **Legendary Agent** achievement. Then:
+AgentHuntzman's line from his April 12 build video is the one to remember: "the game only truly starts at level 40." Since Season 2 Phase 1, hitting 40 also unlocks the **Legendary Agent** achievement. Then:
 
 - **Farm a full Tier 1 set,** backpack and chest first, because those two carry the strongest talents (AgentHuntzman). Heroic missions are the main source. Our [gear farming guide](/guides/division-resurgence-gear-farming-guide/) lists which mission favors which slot.
 - **Run your daily quests every day.** Since Season 2 Phase 2, Weapon Kill and Main Mission dailies have a chance of **Tier 2** loot at level 40.
-- **Start on Tactical Augmentation Modules.** Creators call them the biggest stat gap between a fresh level 40 and a veteran. Our [Tactical Augmentation Modules guide](/guides/tactical-augmentation-modules-guide/) covers where they come from.
+- **Start on Tactical Augmentation Modules.** In his September 16 video on the level 40 Dark Zone, TikTokAndy called modules "the most important thing" for getting his health and damage up. Our [Tactical Augmentation Modules guide](/guides/tactical-augmentation-modules-guide/) covers where they come from.
 - **Farm mods with a plan.** Our [mod farming guide](/guides/how-to-farm-purple-gold-mods/) has the Hostile Nest route.
 
 ## A starter build that works with whatever you've got
 
-If you want a template rather than a theory lesson, TikTokAndy's [Any-Weapon Commando](/builds/any-weapon-commando-beginner-vanguard-build-tiktokandy/) is built for exactly this stage: Vanguard Commando, a Fury Strike and Phalanx Attack gear split and any assault rifle or SMG you have. When you outgrow it, his [Double Barrel](/builds/misdirection-double-barrel-commando-build-tiktokandy/) and [Lightweight M4](/builds/lightweight-m4-commando-vanguard-build-tiktokandy/) builds use the same kit. Prefer skills to guns? GGReborn's [Tactical Pharma](/builds/tactical-pharma-season-2-build-ggreborn/) is the creator favorite on the Engineering side.
+If you want a template rather than a theory lesson, TikTokAndy's [Any-Weapon Commando](/builds/any-weapon-commando-beginner-vanguard-build-tiktokandy/) is built for exactly this stage: Vanguard Commando, a Fury Strike and Phalanx Attack gear split and any assault rifle or SMG you have. When you outgrow it, his [Double Barrel](/builds/misdirection-double-barrel-commando-build-tiktokandy/) and [Lightweight M4](/builds/lightweight-m4-commando-vanguard-build-tiktokandy/) builds keep the same three Vanguard Commando skills, swap two of the combo sets and move to Phalanx Attack 4pc + Gunny Johnny 2pc. Prefer skills to guns? GGReborn's [Tactical Pharma](/builds/tactical-pharma-season-2-build-ggreborn/) is the creator favorite on the Engineering side.
 
 ## What Season 2 changed for new players
 

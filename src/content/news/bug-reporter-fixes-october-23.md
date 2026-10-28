@@ -9,13 +9,13 @@ shareTitle: "13 bugs marked Done in two days"
 shareText: "Concerted Strike, the stuck Warlord proficiency, the heart-icon lag and a pile of controller bugs all went to Done on Ubisoft's tracker. Mod recalibration didn't make the cut."
 faqs:
   - question: "Is Concerted Strike fixed in Division Resurgence?"
-    answer: "Officially, yes. Ubisoft's Season 2 Phase 2 notes (September 16) say it 'Fixed Concerted Strike so it correctly functions within its intended 20 meter range,' and on October 23 the matching bug report, TDR-58, was marked Done. If your skill hits still don't stack it, add details to TDR-58 rather than filing a new report."
+    answer: "Officially, yes. Ubisoft's Season 2 Phase 2 notes (posted September 15 for the September 16 update) say it 'Fixed Concerted Strike so it correctly functions within its intended 20 meter range,' and on October 23 the matching bug report, TDR-58, was marked Done. If your skill hits still don't stack it, add details to TDR-58 rather than filing a new report."
   - question: "Is the Warlord proficiency level 8 bug fixed?"
     answer: "Ubisoft's bug reporter marked TDR-183, 'Warlord Proficiency Tier 8 not progressing,' as Done on October 23. Players reported being stuck on its agent kill task in the Dark Zone and Conflict since August. If yours still won't count, the tracker's 'Is this issue fixed for you?' buttons are the fastest way to tell Ubisoft. Shooting more agents out of spite is the slowest."
   - question: "Can you recalibrate mods in Division Resurgence?"
     answer: "No, and not soon. The community request to reroll one line on a mod (TDR-652) was set to Deprioritized on October 22. Separately, TDR-75 reports that old Blast, Piercing and Shredding damage rolls on weapons can't be recalibrated at all since Season 2 removed them, and Ubisoft set that one to Open on October 23."
   - question: "What does Done mean on the Division Resurgence bug reporter?"
-    answer: "It's the status Ubisoft sets when it considers an issue resolved. Several of these were closed weeks after the fix shipped (Concerted Strike's fix was in the September 16 notes), so Done tells you the tracker caught up, not necessarily that a new patch dropped that day."
+    answer: "It's the status Ubisoft sets when it considers an issue resolved. Several of these were closed weeks after the fix shipped (Concerted Strike's fix was in the notes for the September 16 update), so Done tells you the tracker caught up, not necessarily that a new patch dropped that day."
 ---
 
 Ubisoft's official bug reporter for The Division Resurgence had a busy end to the week: on **October 22 and 23** it marked **13 issues Done**, among them the **Concerted Strike** OS Protocol range bug, the **Warlord proficiency** task that wouldn't count past level 8, and the heart icons that tanked frame rates after revives. It also gave a firm "not now" to **mod recalibration**, opened a report about **legacy weapon rolls** that can't be recalibrated, and put three new reports **Under Review**.
@@ -47,8 +47,8 @@ The low numbers are a clue: TDR-30 through TDR-66 were filed in the tracker's fi
 
 ### The ones that matter for your build
 
-- **Concerted Strike (TDR-58).** The report said the protocol only stacked when enemies were *outside* 20 meters, the opposite of its "Skill Hits within 20 meters" tooltip. Ubisoft's [Season 2 Phase 2 notes](/patch-notes/season-2-phase-2/) on September 16 already listed: "Fixed 'Concerted Strike' so it correctly functions within its intended 20 meter range." The tracker entry was closed on October 23. Don't confuse it with the Commando talent also called Concerted Strike, which Season 2 Phase 1 changed to trigger off shots instead of hits. Full protocol text: [Concerted Strike in our database](/database/os-protocols/concerted-strike/).
-- **Warlord proficiency (TDR-183).** The Warlord's level 8 proficiency task asks for agent kills or assists, which means PvP, and players reported it stuck in the Dark Zone and Conflict since early August. One player tied it to the Armory proficiency fixes in September. Proficiency matters because every level feeds your account-wide bonus, which Died Again Gaming measured at +0.2% Weapon Damage and Skill Intensity per level ([endgame tips](/guides/division-resurgence-endgame-tips/)).
+- **Concerted Strike (TDR-58).** The report said the protocol only stacked when enemies were *outside* 20 meters, the opposite of its "Skill Hits within 20 meters" tooltip. Ubisoft's [Season 2 Phase 2 notes](/patch-notes/season-2-phase-2/), posted September 15 for the next day's update, already listed: "Fixed 'Concerted Strike' so it correctly functions within its intended 20 meter range." The tracker entry was closed on October 23. Don't confuse it with the Commando talent also called Concerted Strike, which Season 2 Phase 1 changed to trigger off shots instead of hits. Full protocol text: [Concerted Strike in our database](/database/os-protocols/concerted-strike/).
+- **Warlord proficiency (TDR-183).** The Warlord's level 8 proficiency task asks for agent kills or assists, which means PvP, and players reported it stuck in the Dark Zone and Conflict since early August. One player tied it to the Armory proficiency fixes in September. Proficiency matters because the Armory turns it into a bonus: Died Again Gaming says each Armory Proficiency level adds +0.2% Weapon Damage and Skill Intensity, up to 20% at level 100 ([endgame tips](/guides/division-resurgence-endgame-tips/)).
 - **The heart icons (TDR-593).** This is the frame-rate tank from revive hearts piling up on screen "with the new patch," as the report put it. Ubisoft's [October 6 client update](/patch-notes/october-2026-hotfixes/) addressed the hearts, and the tracker entry is now closed.
 
 ## Status changes worth knowing
@@ -72,14 +72,14 @@ The low numbers are a clue: TDR-30 through TDR-66 were filed in the tracker's fi
 
 A few player reports filed between October 24 and 27 haven't been reviewed yet, so treat them as claims, not confirmed bugs:
 
-- **TDR-679:** a player says part of the **Bugle Call** skill mod's text (extra damage converted from the Vanguard's Engineering) doesn't work when Tactical Link is granted to a teammate.
+- **TDR-679:** a player says one line of the **Bugle Call** effect text, "Every shot deals extra damage converted from the Vanguard's Engineering," doesn't work when Tactical Link is granted to a teammate, and asks Ubisoft to say so in the tooltip.
 - **TDR-686:** a report that you can't place more than 11 **Artillery Turrets**.
 - **TDR-683:** a report that critical hits apply to status effects.
 - **TDR-687:** a player asks why the daily login rewards option disappeared. For context, Ubisoft's Season 2 Phase 2 article listed the Exotic SHD Keys daily login reward as running from September 16 to October 26.
 
 ## How to help the fixes along
 
-Ubisoft's ask, repeated in its October patch posts: search for an existing report and contribute to it before filing a new one. Each report needs five confirmations before it's "confirmed for review" (the heart icon report had eight), the "Is this issue fixed for you?" buttons tell Ubisoft whether a fix landed, and duplicates just split the votes. Twelve copies of the same complaint are just twelve lonely reports.
+Ubisoft's ask, from its October 6 client-update post: search for an existing report and contribute to it before filing a new one. Each report needs five confirmations before it's "confirmed for review" (the heart icon report had eight), the "Is this issue fixed for you?" buttons tell Ubisoft whether a fix landed, and duplicates just split the votes. Twelve copies of the same complaint are just twelve lonely reports.
 
 ## Sources
 

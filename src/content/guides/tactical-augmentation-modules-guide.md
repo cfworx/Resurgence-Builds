@@ -20,7 +20,7 @@ faqs:
   - question: "Are tactical augmentation manuals the same as modules?"
     answer: "Creators treat them as separate items. TikTokAndy says manuals can be swapped between pieces for free and calls them 'the easiest stat gain you're ever gonna get': his gave +10% Health on a piece he had forgotten to fill. His advice is to re-check them every time you change gear, which he learned the hard way. We all have."
   - question: "Are Tactical Augmentation Modules pay to win?"
-    answer: "Ubisoft's Help Center says players can't directly buy weapons, gear, abilities or upgrades that give an advantage over players who don't pay. The free routes are real (clan credits, Dark Zone Credits, the free pass track, events), but they're slow, and creators agree the module gap is the biggest difference between a fresh level 40 and a veteran. Patience is free. It's just priced in weeks."
+    answer: "Ubisoft's Help Center says players can't directly buy weapons, gear, abilities or upgrades that give an advantage over players who don't pay. The free routes are real (clan credits, Dark Zone Credits, the free pass track, events), but they're slow, and in his September 16 video on the level 40 Dark Zone, TikTokAndy called modules 'the most important thing' for getting his health and damage up. Patience is free. It's just priced in weeks."
 ---
 
 **Tactical Augmentation Modules** (TAMs, or "augments" if you're in a hurry) are the upgrade most new level 40 agents don't notice until they get flattened in the Dark Zone by someone with the same gear and twice the Health. They're long-term upgrades applied through the **Armory**, they exist for weapons, gear and every exotic, and the module for a gun is worth it even before you find the perfect copy of that gun.
@@ -57,9 +57,9 @@ Ubisoft doesn't publish a table of module stages, so everything in this section 
 | 3 | 70% Health and Armor | Died Again Gaming, May 28 |
 | 4 | 100% Health and Armor | Died Again Gaming, May 28; TikTokAndy, September 16 ("if you level it up to 4") |
 
-TikTokAndy's October readings line up: a vest with "all the tactical augmentations" for **+100% Health and Armor** (October 6), and on his October 27 Lightweight M4 build, four modules on the chest piece plus a few Armor mods put him at about **10,000 Armor**. One wrinkle: on October 10 he described two modules on a gear piece as "50 health and armor," which doesn't match the stage table above. Our guess is a rounding or reading difference, so trust your own screen.
+TikTokAndy's October readings mostly line up: a vest with "all the tactical augmentations" for **+100% Health and Armor** (October 6), and on his October 27 Lightweight M4 build, four modules on the chest piece plus a few Armor mods put him at about **10,000 Armor**. Two wrinkles: on October 10 he described two modules on a gear piece as "50 health and armor," which doesn't match the stage table above, and on October 6 "one augmentation" on his mask read **+5% Damage Reduction**, not Health (he doesn't say whether that one is a module or a manual). So gear pieces may not all share one track. Trust your own screen.
 
-TikTokAndy's back-of-the-envelope math on his first level 40 Dark Zone night: +100% on each of six pieces is "an extra 600%." Ubisoft hasn't said how the bonuses stack, so we wouldn't put that number on a T-shirt, but the direction is right: maxed gear modules are the reason veterans feel unkillable.
+TikTokAndy's back-of-the-envelope math, the day after his first trip into the level 40 Dark Zone: +100% on each of six pieces is "an extra 600%." Ubisoft hasn't said how the bonuses stack, so we wouldn't put that number on a T-shirt, but the direction is right: maxed gear modules are the reason veterans feel unkillable.
 
 ### Weapon modules
 
@@ -68,12 +68,11 @@ TikTokAndy's back-of-the-envelope math on his first level 40 Dark Zone night: +1
 | The Bighorn | +20% damage from the first module | TikTokAndy, September 16 |
 | Enhanced ACR | Two modules: +20% damage, +18% damage to elites, +20% accuracy | TikTokAndy, September 19 |
 | Double Barrel | +12% Critical Hit Chance from the first module; +40% damage once he slotted his third | TikTokAndy, October 6 and October 2 |
-| An SMG | First stage: Magazine Size +45 and vertical stability +40, as he read them; later stages add damage | Died Again Gaming, May 28 |
+| An SMG | First stage: Magazine Size +45 and vertical stability +40, as he read them, "and so on and so forth" from there | Died Again Gaming, May 28 |
 | Another weapon | First stage: +30% Signature Ability Charge Efficiency, then damage | Died Again Gaming, May 28 |
 | MP7 | +10% Skill Intensity from one module | TikTokAndy, October 10 |
-| Vector | One module: +5% Damage Reduction | TikTokAndy, October 6 |
 
-Two patterns stand out. First, each model has its own track: the MP7's Skill Intensity is why TikTokAndy carries it as a secondary on skill builds. Second, the big damage stages don't always come first. On the Bighorn, his first module gave +20% damage and the screen showed +40% for the next stage, which he found out "you need two to activate." On the Double Barrel, the first module gave +12% Critical Hit Chance and the +40% damage arrived with his third. Same creator, two guns, two tracks, so read the Armory screen for your own weapon before you spend.
+Two patterns stand out. First, each model has its own track: on his Aegis healer, where the MP7 is his primary for its Enhancement Trade II and Adaptation II talents, TikTokAndy points out as a fun fact that one module on it adds +10% Skill Intensity. Second, the big damage stages don't always come first. On the Bighorn, his first module gave +20% damage and the screen showed +40% for the next stage, which he found out "you need two to activate." On the Double Barrel, the first module gave +12% Critical Hit Chance and the +40% damage arrived with his third. Same creator, two guns, two tracks, so read the Armory screen for your own weapon before you spend.
 
 ## Where to get them
 
@@ -85,7 +84,7 @@ Two patterns stand out. First, each model has its own track: the MP7's Skill Int
 | **Events** | The Diamondback module was a Season 2 Phase 2 event reward; the August Bighorn community challenge promised "an extra Tactical Augmentation for all participants" | Official (Ubisoft News, Steam) |
 | **Exotic Sealed Caches** | Every exotic's module at **1.43%** per cache, in the Tier A pool | Official (Help Center drop table) |
 | **Encrypted Data store** | An **Exotic TAM Selection Cache** for 1,200 Encrypted Data, where you pick the gun | Creator reading (Died Again Gaming, June 24) |
-| **Dark Zone quests** | Weapon-type modules; patch 1.1.2.2 fixed the shotgun one from "Ringleaders" not being granted | Official (notes) |
+| **Dark Zone quests** | Tactical Augmentation rewards: patch 1.1.2.2 fixed the Shotgun module from the "Ringleaders" mission not being granted, and patch 1.2.1 still listed another Dark Zone quest's module as unclaimable | Official (notes) |
 
 ### What a clan vendor module costs
 
@@ -118,9 +117,9 @@ Ubisoft's notes don't describe manuals separately, so we can't tell you the full
 Creator consensus, from the builds on this site:
 
 1. **Your main weapon's model.** Because modules apply to the model, augmenting the gun you'll keep using pays off on every future copy. TikTokAndy's Bighorn felt different with one module ("20% extra damage is crazy").
-2. **The chest piece.** TikTokAndy's October builds (October 6, 10 and 27) all max the chest first, and on his Lightweight M4 build he pairs those chest modules with Armor mods and the Precision Support weapon talent to reach about 10,000 Armor.
+2. **The chest piece.** TikTokAndy's October builds (October 6, 10 and 27) all max the chest first. On his Lightweight M4 build, four chest modules plus Armor mods put him at about 10,000 Armor, and full Precision Support II stacks then take it to about 14,000.
 3. **The rest of the gear, for Health and Armor.** After his build went from fine in the level 39 Dark Zone to "it ain't the same" in the level 40 one, TikTokAndy named modules "the most important thing" to fix.
-4. **Secondaries with odd tracks.** An MP7 with Skill Intensity modules is a skill-build trick worth knowing.
+4. **Check odd tracks before you buy.** Not every model's first module is damage: the MP7's is Skill Intensity on TikTokAndy's Aegis healer, and one augmentation on his mask gave Damage Reduction.
 
 Clan credits are the slowest but steadiest route, which is why GGReborn put "not focusing on clan credits" on his list of mistakes, calling the modules "very very important for your build."
 
@@ -128,7 +127,7 @@ Clan credits are the slowest but steadiest route, which is why GGReborn put "not
 
 - [Lightweight M4 Commando](/builds/lightweight-m4-commando-vanguard-build-tiktokandy/): four chest modules and Armor mods feeding Precision Support
 - [Misdirection Double Barrel Commando](/builds/misdirection-double-barrel-commando-build-tiktokandy/): +40% damage on the shotgun at three modules
-- [Aegis Team Healer](/builds/aegis-team-healer-tech-operator-build-tiktokandy/): MP7 Skill Intensity modules on a healer
+- [Aegis Team Healer](/builds/aegis-team-healer-tech-operator-build-tiktokandy/): an MP7 primary whose module adds Skill Intensity
 
 ## Related guides
 
@@ -145,6 +144,8 @@ Clan credits are the slowest but steadiest route, which is why GGReborn put "not
 - [Ubisoft Help Center: Patch Note, 1.1.2.2 Update (May 29, 2026)](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2517-patch-note---1-1-2-2-update-29-may-2026/)
 - [Season 2 Phase 1 patch notes (The Division Wiki mirror of the official developer post)](https://thedivision.fandom.com/wiki/Season_2_Phase_1_-_Patch_Notes)
 - [Ubisoft News: Season 2 Phase 2 is out now (September 16, 2026)](https://news.ubisoft.com/en-us/article/2vmOLuRVDMIMBxG3MZlPQX/the-division-resurgence-season-2-phase-2-is-out-now)
+- [Steam news for The Division Resurgence](https://store.steampowered.com/news/app/3749720): "BIGHORN Special weekend event!" (August 27, 2026), the community challenge reward
+- Our [patch 1.2.1 notes](/patch-notes/patch-1-2-1/) (known issue: a Dark Zone quest's Tactical Augmentation reward)
 - [Ubisoft Help Center: Drop rates](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2522-drop-rates/)
 - [Ubisoft Help Center: Is the game pay to win?](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2473-is-the-game-pay-to-win/?p=all)
 - [Died Again Gaming: JOIN A CLAN NOW | Farm Easy TAM's | Faster Crafting Times (YouTube, May 28, 2026)](https://www.youtube.com/watch?v=R7MWFt4rSVM)

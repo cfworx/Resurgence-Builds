@@ -19,9 +19,9 @@ faqs:
   - question: "Is the Lightweight M4 good in Division Resurgence?"
     answer: "TikTokAndy thinks so. In his October 27 video his Tier 2 copy took him to six stars on Lone Wolf Challenge floor 20 on the first attempt, and he says it 'might be better than the double barrel shotgun' for consistency. His screen shows 850 RPM and a 53-round magazine, which most likely include his gear's Rate of Fire and Magazine Size bonuses, so don't expect those on a bare gun. The catch: you move slower carrying it, and unlike the shotgun you have to actually aim. Tragic, we know."
   - question: "What talents should a Lightweight M4 have?"
-    answer: "Unhinged and Precision Support II on TikTokAndy's copy. Unhinged is +18% Weapon Damage for -10% Stability and Accuracy in our database, which he says you barely notice on a gun this accurate. Precision Support II stacks Armor every 6 hits: he reads +10% Armor and +40% Rescue Efficiency for 10 seconds, up to 5 stacks, and his Armor went from about 10,000 to about 14,000 at full stacks. He rerolled hoping for something better and never found it, which is the most honest sentence in this game."
+    answer: "Unhinged and Precision Support II on TikTokAndy's copy. Unhinged is +18% Weapon Damage for -10% Stability and Accuracy in our database, which he says you barely notice on a gun this accurate. Precision Support II stacks Armor every 6 hits: he reads +10% Armor and +40% Rescue Efficiency for 10 seconds, up to 5 stacks, and his Armor went from about 10,000 to about 14,000 at full stacks. (The 40% is the same as our base value, so only the Armor part seems to grow with rank.) He rerolled hoping for something better and never found it, which is the most honest sentence in this game."
   - question: "What OS Protocol does the Lightweight M4 Commando build use?"
-    answer: "Explosive Round, a High-End Firepower protocol: Critical Hits performed while aiming create a 5-meter explosion that deals 2000% of your Firepower, on a 5-second cooldown in our database. TikTokAndy calls it the Firepower version of Collateral Damage. His single copy read +42.75% Firepower and +389 Firepower just short of level 50, and he gives honorable mentions to Augmented Lethality and Dominating Presence."
+    answer: "Explosive Round, a High-End Firepower protocol: Critical Hits performed while aiming create a 5-meter explosion that deals 2000% of your Firepower, on a 5-second cooldown in our database. TikTokAndy calls it the Firepower version of Collateral Damage. His single copy read +42.75% Firepower and +389 Firepower below level 50, and he gives honorable mentions to Augmented Lethality and Dominating Presence."
   - question: "Is the Lightweight M4 build better than the Double Barrel build?"
     answer: "Different jobs. TikTokAndy says the M4 wins on range and consistency, while the Double Barrel is still the gun he'd want for a record attempt: when the floor 20 boss spawned in the perfect spot, he said that was where the shotgun could have set one. He carries the Double Barrel as the secondary here, and both builds share Phalanx Attack and Gunny Johnny, so you can own both without starting over. Commitment issues, solved."
 videoId: "RYtZyN_0P0Y"
@@ -36,7 +36,7 @@ plannerHash: "s=Vanguard&sc=Commando&n=Lightweight+M4+Commando&ms=gs-5&gs=gs-3&h
 
 TikTokAndy went back to his original Vanguard Commando build to see whether it still holds up, and swapped the star of the show. Instead of the [Double Barrel](/builds/misdirection-double-barrel-commando-build-tiktokandy/), the primary is a **Tier 2 Lightweight M4** he found and couldn't stop praising: "this gun's kind of broken." Then he took it into the Lone Wolf Challenge, which had refreshed that day, and cleared **floor 20 with six stars on the first try**.
 
-He calls the build a spin-off of his Double Barrel setup, and it shows: same gear sets, same three skill combo sets, same Firepower plan. What changes is the gun, two weapon talents and the OS Protocol.
+He calls the build a spin-off of his Double Barrel setup, and it shows: same gear sets, same three skill combo sets, same Firepower plan. What changes is the weapons (the M4 takes the primary slot and the Double Barrel moves to secondary, with Precise Crit in place of Still Alive) and the OS Protocol.
 
 **The build in one breath:**
 
@@ -48,7 +48,7 @@ He calls the build a spin-off of his Double Barrel setup, and it shows: same gea
 - **The goal:** crit stacking, roughly 30% bonus Rate of Fire, and enough Armor to stand in the open when Smart Cover is on cooldown.
 
 > [!INFO] Two things to know about the video
-> TikTokAndy shows his build as a one-page diagram and says ChatGPT made it for him, then corrects some of its numbers out loud. We use his spoken numbers, not the diagram. He also calls Suppressive Fire his backpack talent and Emergency Measures his chest talent in this video. In his September 30 and October 6 videos, and in our talent lists, it's the other way around (Suppressive Fire on the body armor, Emergency Measures on the backpack), so that's how we list them.
+> TikTokAndy shows his build as a one-page diagram and says ChatGPT made it for him, then corrects some of its numbers out loud. We use his spoken numbers, not the diagram. He also calls Suppressive Fire his backpack talent and Emergency Measures his chest talent in this video. His earlier videos put them the other way around: on September 30 Suppressive Fire II is on his chest, and on October 6 Emergency Measures is on his backpack. Our talent lists agree, so that's how we list them.
 
 ---
 
@@ -92,7 +92,7 @@ He doesn't say which two pieces are Gunny Johnny this time. In his October 6 vid
 
 **Attributes:** Weapon Critical Hit Chance, Weapon Critical Hit Damage and Headshot Damage across the gear. "Simple stuff like that," in his words.
 
-**Mods:** mostly Firepower with Weapon Multi-Shot Chance, Weapon Critical Hit Damage or Weapon Critical Hit Chance, plus a couple of Armor mods. He has four Tactical Augmentation Modules on his chest piece and says Armor mods make even more sense once you do, because of Precision Support (below). Our [Tactical Augmentation Modules guide](/guides/tactical-augmentation-modules-guide/) explains where those come from.
+**Mods:** mostly Firepower with Weapon Multi-Shot Chance, Weapon Critical Hit Damage or Weapon Critical Hit Chance, plus a couple of Armor mods. He has four Tactical Augmentation Modules on his chest piece and says that's when a couple of Armor mods start to make sense; later in the video, Precision Support (below) gives him another reason. Our [Tactical Augmentation Modules guide](/guides/tactical-augmentation-modules-guide/) explains where those come from.
 
 ---
 
@@ -108,13 +108,13 @@ His Lightweight M4 shows **850 RPM** and a **53-round magazine**. Those readings
 | Talent | Our database (base version) | What TikTokAndy says |
 |---|---|---|
 | **Unhinged** | +18% Weapon Damage, -10% Stability and -10% Accuracy | A good trade on the M4 "because it's a laser beam to begin with." In September he added that raising weapon proficiency to level 5 or 6 wins the accuracy back. |
-| **Precision Support** | Hitting an enemy 6 times grants +7% Armor and +40% Rescue Efficiency for 10 seconds, up to 5 stacks | He runs Precision Support II and reads +10% Armor per stack (+50% at five). He calls it "a really underrated talent." |
+| **Precision Support** | Hitting an enemy 6 times grants +7% Armor and +40% Rescue Efficiency for 10 seconds, up to 5 stacks | He runs Precision Support II and reads +10% Armor per stack (+50% at five), with the Rescue Efficiency still at 40%. He calls it "a really underrated talent." |
 | **Misdirection Insurance** | A missed shot has a 30% chance of returning the bullet to the magazine | On the shotgun, as in his Double Barrel build |
 | **Precise Crit** | Hitting an enemy 10 times grants +15% Weapon and Skill Critical Damage to all allies within 40 meters for 10 seconds | On the shotgun |
 
 ### Why Precision Support II is the sleeper pick
 
-Armor percentages scale whatever Armor you already have. TikTokAndy sits around 10,000 Armor thanks to his chest-piece modules and Armor mods, and with five Precision Support stacks his sheet climbed to about 13,700 and then 14,000 during the run. "We weren't even taking damage there," he said after one floor. The +40% Rescue Efficiency is the team bonus (he counts it once rather than per stack): faster revives for whoever went down trying to melee a Rikers heavy.
+TikTokAndy's readings suggest Armor percentages scale whatever Armor you already have. He sits around 10,000 Armor thanks to his chest-piece modules and Armor mods, and with five Precision Support stacks his sheet climbed to about 13,700 and then 14,000 during the run. "We weren't even taking damage there," he said after one floor. The +40% Rescue Efficiency is the team bonus (he counts it once rather than per stack): faster revives for whoever went down trying to melee a Rikers heavy.
 
 His takeaway, and ours: the more Armor you build in, the better this talent gets, so "two or three fully maxed armor mods" on your gear aren't a mistake on this build. Another Precision Support II reading, from Nadie's [tank medic build](/builds/muscular-nurse-combat-medicine-build-nadie/), is +9.80% Armor, so TikTokAndy's "10%" is that number rounded.
 
@@ -124,9 +124,9 @@ His takeaway, and ours: the more Armor you build in, the better this talent gets
 
 | OS Protocol | Rarity | Talent (our database) | TikTokAndy's reading |
 |---|---|---|---|
-| **Explosive Round** | High-End | Critical Hits performed while aiming create an explosion with a radius of 5 meters around the target that deals 2000% of your Firepower. 5-second cooldown. | His only copy, just short of level 50: +42.75% Firepower (45% at max, he says) and +389 Firepower, plus All Weapon Damage and Health |
+| **Explosive Round** | High-End | Critical Hits performed while aiming create an explosion with a radius of 5 meters around the target that deals 2000% of your Firepower. 5-second cooldown. | His only copy, below level 50: +42.75% Firepower (45% at max, he says) and +389 Firepower, plus All Weapon Damage and Health |
 
-He calls it "the Firepower version of Collateral Damage," and he's testing it because he spent the previous week taking a **Collateral Damage** to level 50 instead. His expectation: the Firepower alone should beat **Augmented Lethality** in a lot of situations, and the explosion is a free grenade on every aimed crit, better the more enemies stand in a clump. With a 51 to 90% crit chance, the 5-second cooldown is the only thing slowing it down.
+He calls it "the Firepower version of Collateral Damage," and his copy isn't at level 50 yet because he spent the previous week taking a **Collateral Damage** there instead. His expectation: the Firepower alone should beat **Augmented Lethality** in a lot of situations, and the explosion is a free grenade on every aimed crit, better the more enemies stand in a clump. With a 51 to 90% crit chance, the 5-second cooldown is the only thing slowing it down.
 
 Honorable mentions from the same video:
 
@@ -156,7 +156,7 @@ Two numbers from his skill screens:
 
 ## The Lone Wolf Run: Floors 14 to 20
 
-The Lone Wolf Challenge had refreshed the day he recorded, and he played it from floor 14 to floor 20 with the M4 as his primary. (His title and narration also call it "Lone Star"; he says "Lone Wolf Challenge" too, and that's the mode.) Each floor offers a pick of temporary buffs, and his picks show what the build wants:
+The Lone Wolf Challenge had refreshed the day he recorded, and he played it from floor 14 to floor 20 with the M4 as his primary. (His narration also calls it "Lone Star"; he says "Lone Wolf Challenge" too, and that's the mode.) Each floor offers a pick of temporary buffs, and his picks show what the build wants:
 
 | Floor | Buff he took | Why |
 |---|---|---|
@@ -174,7 +174,7 @@ His floor notes:
 - **Use the M4's range.** He says it beats the Double Barrel there, and "accuracy is pretty nice."
 - **The floor 20 boss sometimes parks.** It spawned somewhere it barely moved, which he calls the perfect spawn for a fast time. His floor 20 tips from an earlier run are in our [endgame tips guide](/guides/division-resurgence-endgame-tips/).
 
-Result: **six stars on floor 20, first try.** His rewards included skill mod chips (one gold), Phoenix Credits in 90-credit payouts, a Tactical Augmentation Manual, gear recalibration manuals, credits and more T2 gear. Our [Phoenix Credits guide](/guides/division-resurgence-phoenix-credits-guide/) has the other free sources.
+Result: **six stars on floor 20, first try.** His rewards included skill mod chips (at least one gold), Phoenix Credits in 90-credit payouts, a Tactical Augmentation Manual, gear recalibration manuals, credits and more T2 gear. Our [Phoenix Credits guide](/guides/division-resurgence-phoenix-credits-guide/) has the other free sources.
 
 ---
 
@@ -187,7 +187,7 @@ Result: **six stars on floor 20, first try.** His rewards included skill mod chi
 5. **Reload on purpose.** Suppressive Fire II stacks Rate of Fire on every reload, up to three times.
 6. **Swap to the Double Barrel for the close stuff.** Rushers and a boss that walks into your face are what the secondary is for.
 
-**Who should run it:** Commando players who already own the Double Barrel build's gear and want something that works at range, or anyone whose aim is better than their patience for three-shell reload dances. **Who shouldn't:** players who rely on the shotgun's forgiveness. TikTokAndy says himself that the M4 lacks the burst for a record attempt. You'll still clear the floor. You just won't brag about the time.
+**Who should run it:** Commando players who already own the Double Barrel build's gear and want something that works at range, or anyone whose aim is better than their patience for three-shell reload dances. **Who shouldn't:** players who rely on the shotgun's forgiveness. TikTokAndy says himself that the floor 20 boss spawned exactly where the Double Barrel could have set a world record. You'll still clear the floor. You just won't brag about the time.
 
 ---
 
