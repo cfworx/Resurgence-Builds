@@ -1,7 +1,7 @@
 {
   "_readme": "Memory for the daily content run. See AUTOMATION.md. Add every source item you evaluate (published or not) so the next run skips it. Dates are UTC.",
-  "lastRun": "2026-10-27",
-  "lastRunSummary": "2026-10-27: first direct fetch (Steam RSS) returned PROVENANCE_REQUIRED again (third run in a row), so the run was search-only. 15 WebSearch checks (Steam news, Help Center patch notes and drop rates, ubisoft.com, news.ubisoft.com, official X, reddit official posts, trailers, Twitch Drops, Season 3, Halloween, daily catch-alls, listed news sites, both outlet groups) found nothing new for Resurgence. The Help Center Patch Notes section did surface in search results but was not opened because fetching had already stopped. Halloween lead still unverified. No new post; no new snapshots.",
+  "lastRun": "2026-10-28",
+  "lastRunSummary": "2026-10-28: search-first run. Fetches of search-result links worked this time (Help Center Patch Notes section and drop rates, Raijin, SteamDB patchnotes, Steam Community hub and discussions) until a SteamDB history link returned PROVENANCE_REQUIRED, after which the run was search-only. Help Center still lists the same 7 patch-note articles; drop rates 'Last Updated: 47d' (unchanged, ~2026-09-11). SteamDB shows a new record update on 2026-10-28 08:02 UTC (change 40329337, previous 2026-10-22) but no notes or announcement found anywhere: lead only. Raijin 302 in game, October avg 344. No new official Steam, Ubisoft, X, Reddit or Halloween post found. No new post.",
   "season": {
     "current": "Season 2 Phase 2",
     "liveSince": "2026-09-16",
@@ -24,10 +24,10 @@
       "2026-06-05 PC Gamer: Ubisoft's free-to-play Division shooter is coming to Steam",
       "2026-06-05 Wishlist Available Now!"
     ],
-    "lastChecked": "2026-10-27",
+    "lastChecked": "2026-10-28",
     "status": "ok",
     "failStreak": 0,
-    "note": "Run 2026-10-27: RSS fetch returned PROVENANCE_REQUIRED; WebSearch found nothing newer than 2026-10-19 Lethal Stinger Lichen. Run 2026-10-26: RSS fetch returned PROVENANCE_REQUIRED (unanswered approval prompt). WebSearch fallback found nothing newer than 2026-10-19 Lethal Stinger Lichen. Steam RSS feed (store.steampowered.com/feeds/news/app/3749720/) reads fine as of run 4, 2026-10-25: newest item 2026-10-19 Lethal Stinger Lichen & New Speedrun Challenge. The feed omits the PC Gamer press items. Community announcements page renders without content; News API robots_disallowed."
+    "note": "Run 2026-10-28: Steam Community hub (from search) lists nothing newer than the Aug 6 'The Call has gone out' in its announcements block; WebSearch found no Steam news item newer than 2026-10-19. RSS feed not opened (needs a direct link). Run 2026-10-27: RSS fetch returned PROVENANCE_REQUIRED; WebSearch found nothing newer than 2026-10-19 Lethal Stinger Lichen. Run 2026-10-26: RSS fetch returned PROVENANCE_REQUIRED (unanswered approval prompt). WebSearch fallback found nothing newer than 2026-10-19 Lethal Stinger Lichen. Steam RSS feed (store.steampowered.com/feeds/news/app/3749720/) reads fine as of run 4, 2026-10-25: newest item 2026-10-19 Lethal Stinger Lichen & New Speedrun Challenge. The feed omits the PC Gamer press items. Community announcements page renders without content; News API robots_disallowed."
   },
   "helpCenterPatchNotes": {
     "section": "https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/section/539-patch-notes/",
@@ -40,8 +40,8 @@
       2508,
       2494
     ],
-    "note": "Season 2 Phase 1 notes were never posted here (Reddit only, mirrored on The Division Wiki). October 2026 hotfix notes were posted on the official subreddit only. Run 3 (2026-10-25 ~14:46 UTC): WebFetch refused every non-search URL with a permission prompt nobody could answer (PROVENANCE_REQUIRED) in the unattended run; not re-read. Run 2026-10-26: not fetched (PROVENANCE_REQUIRED on first fetch); searches surfaced no new Resurgence patch notes. Run 2026-10-27: section URL appeared in WebSearch results but was not fetched (fetching stopped after PROVENANCE_REQUIRED); no new Resurgence patch notes surfaced in search.",
-    "lastChecked": "2026-10-25"
+    "note": "Season 2 Phase 1 notes were never posted here (Reddit only, mirrored on The Division Wiki). October 2026 hotfix notes were posted on the official subreddit only. Run 3 (2026-10-25 ~14:46 UTC): WebFetch refused every non-search URL with a permission prompt nobody could answer (PROVENANCE_REQUIRED) in the unattended run; not re-read. Run 2026-10-26: not fetched (PROVENANCE_REQUIRED on first fetch); searches surfaced no new Resurgence patch notes. Run 2026-10-27: section URL appeared in WebSearch results but was not fetched (fetching stopped after PROVENANCE_REQUIRED); no new Resurgence patch notes surfaced in search. Run 2026-10-28: section fetched from search results; same 7 articles (2566 newest), nothing new.",
+    "lastChecked": "2026-10-28"
   },
   "subredditPatchPosts": {
     "note": "Only knowable from owner-provided Reddit exports. Seen so far:",
@@ -61,19 +61,21 @@
       "5LqRsprrdgtEnUmStmBi0d",
       "3ygDDXxg6dv6aQD5MJvbKv"
     ],
-    "lastChecked": "2026-10-27",
+    "lastChecked": "2026-10-28",
     "status": "unreachable",
-    "failStreak": 2,
-    "note": "Page needs JavaScript; WebFetch sees an empty NEWS list. Run 3 (2026-10-25 ~14:46 UTC): WebFetch refused every non-search URL with a permission prompt nobody could answer (PROVENANCE_REQUIRED) in the unattended run; not re-read. Run 2026-10-26: WebSearch only; newest Resurgence entry still 3ygDDXxg6dv6aQD5MJvbKv (Phase 2 starts now). Run 2026-10-27: WebSearch only; newest Resurgence entry still 3ygDDXxg6dv6aQD5MJvbKv."
+    "failStreak": 3,
+    "note": "Page needs JavaScript; WebFetch sees an empty NEWS list. Run 3 (2026-10-25 ~14:46 UTC): WebFetch refused every non-search URL with a permission prompt nobody could answer (PROVENANCE_REQUIRED) in the unattended run; not re-read. Run 2026-10-26: WebSearch only; newest Resurgence entry still 3ygDDXxg6dv6aQD5MJvbKv (Phase 2 starts now). Run 2026-10-27: WebSearch only; newest Resurgence entry still 3ygDDXxg6dv6aQD5MJvbKv. Run 2026-10-28: WebSearch only; newest Resurgence entry still 3ygDDXxg6dv6aQD5MJvbKv."
   },
   "newsUbisoftCom": {
     "seenIds": [
       "2vmOLuRVDMIMBxG3MZlPQX",
       "7MMMG14zd82UNs7zcmOv6t",
       "48gDtCz7vtOCbF5JwskUPc",
-      "9ZzMWcx5ADnaxAiOO3e0w"
+      "9ZzMWcx5ADnaxAiOO3e0w",
+      "4eNUMUE7VfZPTfev7pbsuM"
     ],
-    "lastChecked": "2026-10-27"
+    "lastChecked": "2026-10-28",
+    "note": "Run 2026-10-28: search surfaced only older articles (4eNUMUE7VfZPTfev7pbsuM = March 2026 'Out Now on Android and iOS', recorded as seen; 2022 announce articles; 9ZzMWcx5ADnaxAiOO3e0w roadmap)."
   },
   "x": {
     "account": "TheDivMobile",
@@ -86,9 +88,9 @@
       "2111487408558444785 Liberty & Justice for All reminder (2026-10-17)",
       "2111125021636669911 Milky Way Weapon Cosmetic now available (2026-10-16)"
     ],
-    "lastChecked": "2026-10-27",
+    "lastChecked": "2026-10-28",
     "status": "blocked",
-    "note": "Direct fetch robots_disallowed; WebSearch fallback (2026-10-27) found nothing newer than 2113661727141495079 (only older posts such as the Season 2 crossplay announcement)."
+    "note": "Direct fetch robots_disallowed; WebSearch fallback (2026-10-28) surfaced only older posts (PC launch, Season 2 crossplay, Season 1 Phase 3, roadmap); nothing newer than 2113661727141495079."
   },
   "bugReporter": {
     "url": "https://www.ubisoft.com/en-us/game/the-division/the-division-resurgence/bug-reporter/issues",
@@ -115,15 +117,15 @@
     "lastChecked": "2026-10-25",
     "status": "unreachable",
     "failStreak": 1,
-    "note": "Page needs JavaScript; no issue list visible to WebFetch. Run 3 (2026-10-25 ~14:46 UTC): WebFetch refused every non-search URL with a permission prompt nobody could answer (PROVENANCE_REQUIRED) in the unattended run; not re-read. Run 2026-10-26: not fetched (no direct fetches this run). Run 2026-10-27: not fetched."
+    "note": "Page needs JavaScript; no issue list visible to WebFetch. Run 3 (2026-10-25 ~14:46 UTC): WebFetch refused every non-search URL with a permission prompt nobody could answer (PROVENANCE_REQUIRED) in the unattended run; not re-read. Run 2026-10-26: not fetched (no direct fetches this run). Run 2026-10-27: not fetched. Run 2026-10-28: not fetched (manual source)."
   },
   "dropRates": {
     "url": "https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2522-drop-rates/",
-    "checked": "2026-10-25",
+    "checked": "2026-10-28",
     "sourceUpdatedApprox": "2026-09-09",
     "dataFile": "src/data/drop-rates.json",
-    "lastUpdatedLabel": "45d (2026-10-25), consistent with ~2026-09-09",
-    "note": "2026-10-27: not re-read (search did not surface the article; fetching stopped)."
+    "lastUpdatedLabel": "47d (2026-10-28), consistent with ~2026-09-09/11",
+    "note": "2026-10-28: fetched via the Help Center Purchases and Monetization section; 13 caches, all S 2% / A 10% / B 88%, pity 50/10; unchanged, data file not touched."
   },
   "codesGuide": {
     "file": "src/content/guides/division-resurgence-codes.md",
@@ -209,46 +211,46 @@
       "lastSeen": "2026-10-25: Mixed. 64% of 215 recent (30 days) and 47% of 1,403 all-time English reviews; appreviews JSON endpoint redirected to the store homepage, store page used",
       "status": "ok",
       "failStreak": 0,
-      "note": "Run 2026-10-27 (13:56 UTC): the first fetch (Steam RSS, typed from the task prompt) returned PROVENANCE_REQUIRED, so no direct fetches were made this run; not re-read. lastSeen and lastChecked kept."
+      "note": "Run 2026-10-28: not reached (no search result surfaced the page, and direct fetching stopped after a PROVENANCE_REQUIRED on a SteamDB history link); lastSeen kept."
     },
     "apkmirror": {
       "lastChecked": "2026-10-25",
       "lastSeen": "v1.66724.0 (2026-10-06), no newer build",
       "status": "ok",
       "failStreak": 0,
-      "note": "Run 2026-10-27 (13:56 UTC): the first fetch (Steam RSS, typed from the task prompt) returned PROVENANCE_REQUIRED, so no direct fetches were made this run; not re-read. lastSeen and lastChecked kept."
+      "note": "Run 2026-10-28: not reached (no search result surfaced the page, and direct fetching stopped after a PROVENANCE_REQUIRED on a SteamDB history link); lastSeen kept."
     },
     "steamdb": {
-      "lastChecked": "2026-10-25",
-      "lastSeen": "Last record update 2026-10-22 07:42 UTC (change 40118417); 24h peak 476; build list did not render",
+      "lastChecked": "2026-10-28",
+      "lastSeen": "Last record update 2026-10-28 08:02 UTC (change 40329337); 303 in game; build list did not render",
       "status": "ok",
       "failStreak": 0,
-      "note": "Run 2026-10-27 (13:56 UTC): the first fetch (Steam RSS, typed from the task prompt) returned PROVENANCE_REQUIRED, so no direct fetches were made this run; not re-read. lastSeen and lastChecked kept."
+      "note": "Run 2026-10-28: patchnotes page fetched from search results; builds list showed 'Loading'. The history page link returned PROVENANCE_REQUIRED, so what changed on 2026-10-28 is unknown (lead)."
     },
     "raijin": {
-      "lastChecked": "2026-10-25",
-      "lastSeen": "2026-10-25: 387 in game; October avg 363, peak 554; September avg 505, peak 840; all-time peak 4,046 (August)",
+      "lastChecked": "2026-10-28",
+      "lastSeen": "2026-10-28: 302 in game; October (to date) avg 344, peak 554; September avg 505, peak 840; all-time peak 4,046 (August)",
       "status": "ok",
       "failStreak": 0,
-      "note": "Run 2026-10-27 (13:56 UTC): the first fetch (Steam RSS, typed from the task prompt) returned PROVENANCE_REQUIRED, so no direct fetches were made this run; not re-read. lastSeen and lastChecked kept."
+      "note": "Run 2026-10-28: fetched from search results."
     },
     "discord-counts": {
       "lastChecked": "2026-10-25",
       "lastSeen": "2026-10-25: 19,364 members, 2,847 online",
       "status": "ok",
       "failStreak": 0,
-      "note": "Run 2026-10-27 (13:56 UTC): the first fetch (Steam RSS, typed from the task prompt) returned PROVENANCE_REQUIRED, so no direct fetches were made this run; not re-read. lastSeen and lastChecked kept."
+      "note": "Run 2026-10-28: not reached (no search result surfaced the page, and direct fetching stopped after a PROVENANCE_REQUIRED on a SteamDB history link); lastSeen kept."
     },
     "steam-discussions": {
-      "lastChecked": "2026-10-25",
-      "lastSeen": "2026-10-25: newest thread activity 'Credits shortage' (~2026-10-24); no developer replies or new announcements",
+      "lastChecked": "2026-10-28",
+      "lastSeen": "2026-10-28: newest threads 'Overpowered axe guys...' (~2026-10-27) and 'Demand open matchmaking on elite challenge'; hub also shows '80 Hours Later' impressions and an achievement-manager thread; no developer posts, nothing about patches, Halloween or Season 3",
       "status": "ok",
       "failStreak": 0,
-      "note": "Run 2026-10-27 (13:56 UTC): the first fetch (Steam RSS, typed from the task prompt) returned PROVENANCE_REQUIRED, so no direct fetches were made this run; not re-read. lastSeen and lastChecked kept."
+      "note": "Run 2026-10-28: hub and discussions fetched from search results."
     },
     "reddit": {
-      "lastChecked": "2026-10-27",
-      "lastSeen": "2026-10-27: no new official post found by search; latest known 2026-10-21 Mitigation Update (u/Ticksyy)",
+      "lastChecked": "2026-10-28",
+      "lastSeen": "2026-10-28: no new official post found by search; latest known 2026-10-21 Mitigation Update (u/Ticksyy)",
       "status": "ok",
       "failStreak": 0
     },
@@ -257,70 +259,70 @@
       "lastSeen": "Category page renders without live data; no Drops mentioned",
       "status": "ok",
       "failStreak": 0,
-      "note": "Run 2026-10-27 (13:56 UTC): the first fetch (Steam RSS, typed from the task prompt) returned PROVENANCE_REQUIRED, so no direct fetches were made this run; not re-read. lastSeen and lastChecked kept."
+      "note": "Run 2026-10-28: 'Division Resurgence Twitch Drops' search returned only TD1/TD2 Drops pages and an old Prima guide; no Resurgence Drops."
     },
     "streamscharts": {
       "lastChecked": "2026-10-25",
       "lastSeen": "30 days to 2026-10-25: top rikgamer (Kick) 1,742 h watched / 7h airtime; virulentwaif 241; utgkieros89 121; gg2002pt 67; ishowguy 46; lilyvonwolf 41",
       "status": "ok",
       "failStreak": 0,
-      "note": "Run 2026-10-27 (13:56 UTC): the first fetch (Steam RSS, typed from the task prompt) returned PROVENANCE_REQUIRED, so no direct fetches were made this run; not re-read. lastSeen and lastChecked kept."
+      "note": "Run 2026-10-28: not reached (no search result surfaced the page, and direct fetching stopped after a PROVENANCE_REQUIRED on a SteamDB history link); lastSeen kept."
     },
     "sullygnome": {
       "lastChecked": "2026-10-25",
       "lastSeen": "30 days to 2026-10-25: 2.5K hours watched (-73%), 904 hours streamed by 205 streamers, avg 3 / peak 114 viewers",
       "status": "ok",
       "failStreak": 0,
-      "note": "Run 2026-10-27 (13:56 UTC): the first fetch (Steam RSS, typed from the task prompt) returned PROVENANCE_REQUIRED, so no direct fetches were made this run; not re-read. lastSeen and lastChecked kept."
+      "note": "Run 2026-10-28: not reached (no search result surfaced the page, and direct fetching stopped after a PROVENANCE_REQUIRED on a SteamDB history link); lastSeen kept."
     },
     "kick-category": {
       "lastChecked": "2026-10-25",
       "lastSeen": "2026-10-25: 271 followers, nobody live",
       "status": "ok",
       "failStreak": 0,
-      "note": "Run 2026-10-27 (13:56 UTC): the first fetch (Steam RSS, typed from the task prompt) returned PROVENANCE_REQUIRED, so no direct fetches were made this run; not re-read. lastSeen and lastChecked kept."
+      "note": "Run 2026-10-28: not reached (no search result surfaced the page, and direct fetching stopped after a PROVENANCE_REQUIRED on a SteamDB history link); lastSeen kept."
     },
     "idc-games": {
       "lastChecked": "2026-10-25",
       "lastSeen": "2026-09-17 Season 2 Phase 2 Goes Live With the Free Diamondback Exotic Rifle",
       "status": "unreachable",
       "failStreak": 1,
-      "note": "Run 2026-10-27 (13:56 UTC): the first fetch (Steam RSS, typed from the task prompt) returned PROVENANCE_REQUIRED, so no direct fetches were made this run; not re-read. lastSeen and lastChecked kept. Still marked unreachable from 2026-10-25."
+      "note": "Run 2026-10-28: search returned nothing from this site; not fetched. Still marked unreachable from 2026-10-25."
     },
     "jeu-video": {
-      "lastChecked": "2026-10-25",
+      "lastChecked": "2026-10-28",
       "lastSeen": "2026-09-18 Season 2 Phase 2 mit 50 Pass-Stufen verfügbar (nothing newer)",
       "status": "ok",
       "failStreak": 0,
-      "note": "Run 2026-10-27 (13:56 UTC): the first fetch (Steam RSS, typed from the task prompt) returned PROVENANCE_REQUIRED, so no direct fetches were made this run; not re-read. lastSeen and lastChecked kept."
+      "note": "Run 2026-10-28: search only; surfaced nothing newer than lastSeen."
     },
     "axyo": {
       "lastChecked": "2026-10-25",
       "lastSeen": "2026-09-16 Season 2 Phase 2 article (nothing newer)",
       "status": "ok",
       "failStreak": 0,
-      "note": "Run 2026-10-27 (13:56 UTC): the first fetch (Steam RSS, typed from the task prompt) returned PROVENANCE_REQUIRED, so no direct fetches were made this run; not re-read. lastSeen and lastChecked kept."
+      "note": "Run 2026-10-28: search returned nothing from this site; not fetched. "
     },
     "toptechnews": {
-      "lastChecked": "2026-10-25",
+      "lastChecked": "2026-10-28",
       "lastSeen": "2026-10-24 Ubisoft feiert Halloween (general Ubisoft Halloween events article; Resurgence mention not confirmed)",
       "status": "ok",
       "failStreak": 0,
-      "note": "Run 2026-10-27 (13:56 UTC): the first fetch (Steam RSS, typed from the task prompt) returned PROVENANCE_REQUIRED, so no direct fetches were made this run; not re-read. lastSeen and lastChecked kept."
+      "note": "Run 2026-10-28: search only; surfaced nothing newer than lastSeen."
     },
     "247videogame": {
       "lastChecked": "2026-10-25",
       "lastSeen": "2026-09-16 Season 2 Phase 2 Launch Trailer (nothing newer)",
       "status": "ok",
       "failStreak": 0,
-      "note": "Run 2026-10-27 (13:56 UTC): the first fetch (Steam RSS, typed from the task prompt) returned PROVENANCE_REQUIRED, so no direct fetches were made this run; not re-read. lastSeen and lastChecked kept."
+      "note": "Run 2026-10-28: search returned nothing from this site; not fetched. "
     },
     "ldplayer": {
       "lastChecked": "2026-10-25",
       "lastSeen": "2026-10-20 The Division Resurgence Specialization Tier List for Latest 2026 (re-dated)",
       "status": "ok",
       "failStreak": 0,
-      "note": "Run 2026-10-27 (13:56 UTC): the first fetch (Steam RSS, typed from the task prompt) returned PROVENANCE_REQUIRED, so no direct fetches were made this run; not re-read. lastSeen and lastChecked kept."
+      "note": "Run 2026-10-28: search returned nothing from this site; not fetched. "
     },
     "_readme": "One entry per id in automation/sources.json (plus search: the catch-all searches). lastSeen = the newest item or value seen, so the next run only evaluates newer things. status: ok | unreachable | blocked. failStreak counts consecutive failed runs; mention a source in the summary once it reaches 3.",
     "official-website": {
@@ -328,11 +330,11 @@
       "lastSeen": "Season banner: 'Season 2: The Call'",
       "status": "ok",
       "failStreak": 0,
-      "note": "Run 2026-10-27 (13:56 UTC): the first fetch (Steam RSS, typed from the task prompt) returned PROVENANCE_REQUIRED, so no direct fetches were made this run; not re-read. lastSeen and lastChecked kept."
+      "note": "Run 2026-10-28: not reached (no search result surfaced the page, and direct fetching stopped after a PROVENANCE_REQUIRED on a SteamDB history link); lastSeen kept."
     },
     "ubisoft-youtube": {
-      "lastChecked": "2026-10-27",
-      "lastSeen": "No trailer newer than 2026-09-16 found by search (2026-10-27)",
+      "lastChecked": "2026-10-28",
+      "lastSeen": "No trailer newer than 2026-09-16 found by search (2026-10-28)",
       "status": "ok",
       "failStreak": 0
     },
@@ -341,7 +343,7 @@
       "lastChecked": "2026-10-25",
       "lastSeen": "2026-10-25 run 3: GGReborn feed still robots_disallowed; rest skipped",
       "status": "blocked",
-      "note": "YouTube refuses our fetch tool (robots rules). The daily run doesn't fetch YouTube; the owner follows the channels. 2026-10-26 and 2026-10-27: not fetched."
+      "note": "YouTube refuses our fetch tool (robots rules). The daily run doesn't fetch YouTube; the owner follows the channels. 2026-10-26 to 2026-10-28: not fetched."
     },
     "bug-reporter": {
       "lastChecked": "2026-10-27",
@@ -352,21 +354,29 @@
     }
   },
   "searches": {
-    "lastChecked": "2026-10-27",
+    "lastChecked": "2026-10-28",
     "seenHeadlines": [
       "2026-10-25: catch-all and outlet searches returned only older coverage (launch, roadmap, Steam release); nothing new",
       "2026-10-25 run 3: daily catch-all, Season 3, Halloween, Twitch Drops, trailer, news.ubisoft.com and outlet searches returned only older coverage or other Division games; nothing new",
       "2026-10-26: daily catch-all, Season 3, Halloween, Twitch Drops, trailer, reddit, news.ubisoft.com, Phase 3/hotfix, listed news sites and both outlet groups searched; only older coverage or other Division games (The Division Season 3 Concealed Agenda, The Division Halloween Event 2025, TD1 Twitch Drops pages). Nothing new for Resurgence.",
-      "2026-10-27: daily catch-alls, Season 3, Halloween, Twitch Drops, trailer, reddit, news.ubisoft.com, Help Center, listed news sites and both outlet groups searched; only older coverage (roadmap, Phase 2 news, Steam launch reviews) or other Division games (TD1 Halloween Event 2025, TD1 Season 3 Concealed Agenda, TD2 Twitch Drops). Nothing new for Resurgence."
+      "2026-10-27: daily catch-alls, Season 3, Halloween, Twitch Drops, trailer, reddit, news.ubisoft.com, Help Center, listed news sites and both outlet groups searched; only older coverage (roadmap, Phase 2 news, Steam launch reviews) or other Division games (TD1 Halloween Event 2025, TD1 Season 3 Concealed Agenda, TD2 Twitch Drops). Nothing new for Resurgence.",
+      "2026-10-28: daily catch-alls, Season 3, Halloween, Twitch Drops, trailer, reddit, news.ubisoft.com, Help Center, patch notes Oct 28, listed news sites and both outlet groups searched; only older coverage or other Division games (TD1 Season 3 Concealed Agenda, TD1 Halloween 2025, TD1/TD2 Twitch Drops). thedivisionresurgence.wiki 'Anniversary Update' patch-notes pages look like generated filler (ignored). Nothing new for Resurgence."
     ]
   },
   "leads": [
+    {
+      "date": "2026-10-28",
+      "source": "SteamDB record update 2026-10-28 08:02 UTC (change 40329337)",
+      "claim": "Something changed on the Steam app record on 2026-10-28 (possibly a build or store update)",
+      "status": "unverified",
+      "note": "Data lead only. Builds list did not render and the history page could not be opened. No patch notes, maintenance notice or announcement found in official sources. Re-check SteamDB, Help Center and Steam news next run."
+    },
     {
       "date": "2026-10-25",
       "source": "Steam discussions 'Halloween event' thread + toptechnews.de 'Ubisoft feiert Halloween' (2026-10-24)",
       "claim": "A Halloween event may be coming to Resurgence",
       "status": "unverified",
-      "note": "No official Resurgence Halloween announcement found (searched). Re-check official channels next run. Extra run 2026-10-25: searches only surfaced The Division 2's Red Moon Unleashed Halloween event (a different game, not Resurgence); still nothing official for Resurgence. Run 3: Halloween search only returned The Division (2016) Halloween Event 2025; still nothing official for Resurgence. Run 4 (2026-10-25): Steam RSS (newest 2026-10-19) and official website checked; no Halloween event mentioned. Search for TheDivMobile Halloween found nothing. Still unverified. Run 2026-10-26: Halloween search again only returned The Division (2016) Halloween Event 2025; no official Resurgence Halloween post found. Still unverified. Run 2026-10-27: Halloween search again only returned The Division (2016) Halloween Event 2025; nothing official for Resurgence with four days to go. Still unverified."
+      "note": "No official Resurgence Halloween announcement found (searched). Re-check official channels next run. Extra run 2026-10-25: searches only surfaced The Division 2's Red Moon Unleashed Halloween event (a different game, not Resurgence); still nothing official for Resurgence. Run 3: Halloween search only returned The Division (2016) Halloween Event 2025; still nothing official for Resurgence. Run 4 (2026-10-25): Steam RSS (newest 2026-10-19) and official website checked; no Halloween event mentioned. Search for TheDivMobile Halloween found nothing. Still unverified. Run 2026-10-26: Halloween search again only returned The Division (2016) Halloween Event 2025; no official Resurgence Halloween post found. Still unverified. Run 2026-10-27: Halloween search again only returned The Division (2016) Halloween Event 2025; nothing official for Resurgence with four days to go. Still unverified. Run 2026-10-28: Halloween search again only returned The Division (2016) Halloween Event 2025 and a TD1 X post; nothing official for Resurgence. Still unverified."
     }
   ],
   "leadsReadme": "Claims found only in non-official sources, newest first (keep the last 50): {date, source, claim, status: unverified | verified | dismissed, note}. Re-check unverified leads against official sources on later runs.",
@@ -391,6 +401,14 @@
         "monthPeak": 554,
         "steamdb24hPeak": 476,
         "source": "raijin.gg + SteamDB, run 2026-10-25"
+      },
+      {
+        "date": "2026-10-28",
+        "current": 302,
+        "monthAvg": 344,
+        "monthPeak": 554,
+        "steamdbInGame": 303,
+        "source": "raijin.gg + SteamDB, run 2026-10-28"
       }
     ],
     "discord": [
@@ -506,7 +524,7 @@
       }
     },
     "suggested": [],
-    "lastChecked": "2026-10-27",
+    "lastChecked": "2026-10-28",
     "status": "blocked",
     "note": "RSS feeds returned robots_disallowed to WebFetch on 2026-10-25; per rules no other way was tried."
   }
