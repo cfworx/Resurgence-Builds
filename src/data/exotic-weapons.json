@@ -10,10 +10,11 @@
     "talentName": "Breathe Free",
     "talentDescription": "While moving, grants 4 stacks per second, or 8 stacks if sprinting, up to a maximum of 40 stacks. A stack is consumed with each round fired, granting +15% Weapon Damage. Deploying a Skill consumes 10 stacks and grants +15% Skill Damage. Kills grant +10% Movement Speed for 10 seconds.",
     "accuracy": "50",
-    "reloadSpeed": "2.98s",
-    "optimalRange": "18m",
+    "reloadSpeed": "2.4s",
+    "optimalRange": "16m",
     "movementSpeed": "91",
-    "stability": "50"
+    "stability": "50",
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "ew-2",
@@ -25,11 +26,12 @@
     "mag": "30",
     "talentName": "Play Rough",
     "talentDescription": "While firing, reduces Incoming Damage by 25%. When firing ceases, applies 60% of the reduced damage and grants +10% Skill Damage for 10 seconds.",
-    "accuracy": "68",
-    "reloadSpeed": "3.1s",
-    "optimalRange": "29m",
+    "accuracy": "50",
+    "reloadSpeed": "2.5s",
+    "optimalRange": "25m",
     "movementSpeed": "54",
-    "stability": "56"
+    "stability": "50",
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "ew-3",
@@ -40,51 +42,70 @@
     "rpm": "550",
     "mag": "100",
     "talentName": "Anarchy",
-    "talentDescription": "Hits inflict a debuff, dealing 2.40% Weapon Damage over 4.50 seconds, up to 50 stacks. Enemies dying with this debuff transfer all stacks to a nearby enemy within 12 meters.",
-    "accuracy": "74",
+    "talentDescription": "Weapon hits inflict a debuff, dealing 2.40% Weapon Damage over 4.50 seconds, up to 50 stacks. Enemies dying with this debuff transfer all stacks to a nearby enemy within 12 meters.",
+    "accuracy": "50",
     "reloadSpeed": "5.6s",
-    "optimalRange": "29m",
+    "optimalRange": "25m",
     "movementSpeed": "19",
-    "stability": "50"
+    "stability": "50",
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "ew-4",
     "name": "Scorpio",
     "type": "Shotgun",
-    "damage": "210 Piercing Damage",
+    "damage": "1.68k Piercing Damage",
     "rpm": "130",
     "mag": "7",
     "talentName": "Septicemia",
-    "talentDescription": "Hitting an enemy inflicts Venom for 2.50 seconds, up to 7 stacks. The target receives a debuff increasing with Venom stacks: 1 - Inflicts Bleed for 10 seconds. 3 - Inflicts Confusion for 2 seconds. 6 - Inflicts Shock for 3 seconds. 7 - Deals additional damage equal to 10% of Damage Dealt for 10 seconds.",
-    "accuracy": "56",
-    "reloadSpeed": "2.34s",
+    "talentDescription": "Hitting an enemy inflicts Venom for 2.50 seconds, up to 7 stacks. The target receives a debuff increasing in severity based on their number of Venom stacks: 1 - Inflicts Bleed for 10 seconds. 3 - Inflicts Confusion for 2 seconds. 6 - Inflicts Shock for 3 seconds. 7 - Deals additional damage equal to 10% of Damage Dealt for 10 seconds.",
+    "accuracy": "50",
+    "reloadSpeed": "1.8s",
     "optimalRange": "16m",
     "movementSpeed": "50",
-    "stability": "56",
-    "acquisition": "Classified Ops Pass 1.3 (premium track, tier 5) in Season 1 Phase 3. Since then: the Dark Zone vendor (added in Season 2 Phase 1) and Exotic Sealed Caches (added in Season 2 Phase 2), which can grant exotics from previous seasons"
+    "stability": "50",
+    "acquisition": "Classified Ops Pass 1.3 (premium track, tier 5) in Season 1 Phase 3. Since then: the Dark Zone vendor (added in Season 2 Phase 1) and Exotic Sealed Caches (added in Season 2 Phase 2), which can grant exotics from previous seasons",
+    "note": "The card reads 1,68k (about 1,680 damage). We listed it as 210 until October 28, 2026.",
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "ew-5",
     "name": "The Bighorn",
     "type": "Assault Rifle",
-    "damage": "Piercing Damage",
+    "damage": "216 Shredding Damage",
+    "rpm": "800",
+    "mag": "40",
     "talentName": "Big Game Hunter",
     "talentDescription": "Aiming switches the weapon to semi-auto firing mode, dealing an extra 300% Weapon Damage per shot. Headshots grant +3.30% Headshot Damage for 20 seconds, up to 50 stacks. On max stacks, loses 10 stacks every 4 seconds. Headshots prevent from losing stacks.",
-    "note": "Talent text, class and Piercing damage are read off the tooltip of TikTokAndy's Level 1, T1 copy in his September 16, 2026 video (13:00). The same card shows 800 RPM, a 47-round magazine (he was wearing two Phalanx Attack pieces, +18% Magazine Size), Accuracy 62, Reload Speed 2.36s, Optimal Range 27m, Movement Speed 44 and Stability 62 with five level 1 mods fitted, so we aren't treating those as base stats yet.",
-    "caveat": true,
+    "accuracy": "50",
+    "reloadSpeed": "1.9s",
+    "optimalRange": "23m",
+    "movementSpeed": "44",
+    "stability": "50",
     "acquisition": "Season 2 Phase 1 Classified Ops Pass (free and premium track). Since Season 2 Phase 2, Exotic Sealed Caches can grant exotics from previous seasons.",
-    "statsVerified": false
+    "note": "Damage type is unsettled: the in-game Build-Making Database card says Shredding (checked October 28, 2026), but TikTokAndy's Armory card for his own copy read Piercing in his September 16, 2026 video. Season 2 Phase 2, which went live that day, fixed \"incorrect damage type information shown for certain weapons\" in the Armory, so his card may predate the fix. We listed it as Piercing until October 28.",
+    "caveat": true,
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "ew-6",
-    "name": "The Diamondback",
+    "name": "Diamondback",
+    "aliases": [
+      "The Diamondback"
+    ],
     "type": "Rifle",
-    "damage": "Shredding Damage",
+    "damage": "1.95k Shredding Damage",
+    "rpm": "100",
+    "mag": "5",
     "talentName": "Agonizing Bite",
-    "talentDescription": "Marks a random enemy. Hitting that enemy is a guaranteed critical hit and consumes the mark. After you hit a marked target, all shots are critical hits and grant +10% Skill Critical Hit Chance for 5 seconds. A new random enemy is marked after that and whenever you reload.",
-    "note": "Class, damage type and talent come from the in-game card in Capitão Wasabi's September 23, 2026 video, recorded on a Portuguese-language client: it reads Rifle, Shredding damage (\"Dano de trituração\"), 100 RPM and a 5-round magazine on a Level 1, T1 copy. The talent text is our translation of the Portuguese tooltip, so the English wording in game may differ. Ubisoft's Season 2 Phase 2 article calls it an assault rifle in its page summary, but the card says Rifle. Don't borrow numbers from The Division 2's Diamondback, which is a different game's gun.",
-    "caveat": true,
+    "talentDescription": "The Diamondback randomly marks an enemy. Hitting that enemy guarantees a Critical Hit but also consumes the mark. After hitting a marked target, all shots fired are guaranteed to be Critical Hits and also grant +10% Skill Critical Hit Chance for 5 seconds. A new enemy is randomly marked afterward and each time you reload.",
+    "accuracy": "50",
+    "reloadSpeed": "0.5s",
+    "optimalRange": "31m",
+    "movementSpeed": "26",
+    "stability": "50",
     "acquisition": "Season 2 Phase 2 Classified Ops Pass (free and premium track). Ubisoft also added Diamondback rewards to Dark Zone vendors, reward caches, weekly reward pools and exotic mod sources, and The Diamondback Cache is one of the Exotic Sealed Cache rewards.",
-    "statsVerified": false
+    "note": "The in-game card names it Diamondback; Ubisoft's reward lists say The Diamondback Cache. Ubisoft's Season 2 Phase 2 article calls it an assault rifle in its page summary, but the card says Rifle. Don't borrow numbers from The Division 2's Diamondback, which is a different game's gun.",
+    "verifiedInGame": "2026-10-28"
   }
 ]

@@ -21,6 +21,7 @@ export function getStaticPaths() {
 
 const { weapon } = Astro.props;
 const typeArticle = /^(SMG|LMG|[AEIOU])/.test(weapon.type) ? 'an' : 'a';
+const theName = weapon.name.startsWith('The ') ? weapon.name : `The ${weapon.name}`;
 
 const title = `${weapon.name}: Exotic ${weapon.type}`;
 const description = metaDescription(weapon.summary, `${weapon.name} exotic ${weapon.type} in The Division Resurgence: stats, the ${weapon.talentName} talent, and which builds use it.`);
@@ -63,7 +64,7 @@ const weaponLd = {
   dateModified: DATABASE_UPDATED,
   image: weapon.image ? { '@type': 'ImageObject', url: `${siteUrl}${weapon.image}`, width: 620, height: 310 } : { '@type': 'ImageObject', url: `${siteUrl}/images/resurgence-builds-official-logo.png`, width: 800, height: 800 },
   inLanguage: 'en-US',
-  lastReviewed: '2026-05-30',
+  lastReviewed: weapon.verifiedInGame || '2026-05-30',
   wordCount: 800,
   about: { '@id': `${siteUrl}/#division-resurgence` },
 };
@@ -128,6 +129,8 @@ const itemLd = {
         </div>
       </div>
 
+      {weapon.caveat && weapon.note && <p class="item-note">{weapon.note}</p>}
+
       <WeaponAttributes 
         accuracy={weapon.accuracy} 
         reloadSpeed={weapon.reloadSpeed} 
@@ -149,7 +152,7 @@ const itemLd = {
       <div style="margin-bottom: var(--sp-8);">
         <h2 class="weapon-stats__heading">Overview</h2>
         <div style="color: #c8c8d0; line-height: 1.75; font-size: var(--text-base);">
-          <p>The <strong style="color: #fff;">{weapon.name}</strong> is one of the few exotics in Division Resurgence (Season 2 added The Bighorn and The Diamondback, which this database doesn't cover yet), so yeah, it's kind of a big deal. The whole reason you run an exotic over a regular {weapon.type} is the talent: <strong style="color: #F5CC45;">{weapon.talentName}</strong> completely changes how you play. Stat-wise, you're looking at {weapon.damage} base damage, {weapon.rpm} RPM, and a {weapon.mag}-round mag. {weapon.type === 'Shotgun' ? 'Low RPM, small mag: every trigger pull is a deliberate decision, and the talent is doing as much work as the pellets.' : weapon.rpm >= 800 ? 'That high fire rate means you\'re getting up close and proccing talent effects as fast as possible.' : weapon.rpm >= 600 ? 'It sits in a sweet spot between sustained DPS and burst: works at most ranges without feeling awkward.' : 'Big magazine, steady damage: this thing rewards you for holding the trigger and letting talents stack up over long engagements.'}</p>
+          <p><strong style="color: #fff;">{theName}</strong> is one of only six exotics in Division Resurgence so far, so yeah, it's kind of a big deal. The whole reason you run an exotic over a regular {weapon.type} is the talent: <strong style="color: #F5CC45;">{weapon.talentName}</strong> completely changes how you play. Stat-wise, you're looking at {weapon.damage} base damage, {weapon.rpm} RPM, and a {weapon.mag}-round mag. {weapon.type === 'Shotgun' ? 'Low RPM, small mag: every trigger pull is a deliberate decision, and the talent is doing as much work as the pellets.' : weapon.name === 'The Bighorn' ? 'It fires full-auto from the hip, but aiming switches it to semi-auto with a big damage bonus on every shot, so it plays like two guns in one.' : weapon.type === 'Rifle' ? 'At 100 RPM with a 5-round magazine, every shot counts, and the talent decides which ones crit.' : weapon.rpm >= 800 ? 'That high fire rate means you\'re getting up close and proccing talent effects as fast as possible.' : weapon.rpm >= 600 ? 'It sits in a sweet spot between sustained DPS and burst: works at most ranges without feeling awkward.' : 'Big magazine, steady damage: this thing rewards you for holding the trigger and letting talents stack up over long engagements.'}</p>
         </div>
       </div>
 
@@ -183,6 +186,18 @@ const itemLd = {
               <p><strong style="color: #F5CC45;">Update (October 2026):</strong> Ubisoft has since fixed the Milkshake dropping with level 1 talents instead of level 2 (Season 1 Phase 3, with Ubisoft promising an updated copy for existing owners) and a bug where Anarchy's debuff was applied on heal (Season 2 Phase 1). We haven't re-tested the DoT since, so the reality check above is the pre-fix read.</p>
             </Fragment>
           )}
+          {weapon.name === 'The Bighorn' && (
+            <Fragment>
+              <p><strong style="color: #fff;">Big Game Hunter</strong> splits the gun in two. From the hip it's an 800 RPM assault rifle. Aim down sights and it switches to semi-auto, and every aimed shot deals an extra <strong style="color: var(--accent);">300% Weapon Damage</strong>. Headshots then stack <strong style="color: var(--accent);">+3.30% Headshot Damage for 20 seconds, up to 50 stacks</strong>, which is +165% at the cap. Once you're at max stacks you lose 10 stacks every 4 seconds, and only more headshots stop the decay.</p>
+              <p>TikTokAndy's first look, in his September 16 video, showed what the stacks do: headshots of about 7,000 to 11,000 just before he hit level 40, then 15,000 to 17,000 in the level 40 Dark Zone. That's one player's copy with mods fitted, not a benchmark.</p>
+            </Fragment>
+          )}
+          {weapon.name === 'Diamondback' && (
+            <Fragment>
+              <p><strong style="color: #fff;">Agonizing Bite</strong> marks one random enemy. Hitting that enemy is a guaranteed <strong style="color: var(--accent);">Critical Hit</strong> and uses up the mark. After you hit a marked target, all your shots are guaranteed Critical Hits and grant <strong style="color: var(--accent);">+10% Skill Critical Hit Chance for 5 seconds</strong>. A new enemy is marked afterward, and every reload marks a new one too.</p>
+              <p>The catch is the gun around it. At 100 RPM with a 5-round magazine, five seconds of guaranteed crits doesn't cover many shots, which is the complaint Brazilian creator Capitão Wasabi pinned under his September 23 video.</p>
+            </Fragment>
+          )}
         </div>
       </div>
 
@@ -190,7 +205,7 @@ const itemLd = {
       <div style="margin-bottom: var(--sp-8);">
         <h2 class="weapon-stats__heading">Build Strategy</h2>
         <div style="color: #c8c8d0; line-height: 1.75; font-size: var(--text-base);">
-          <p>With exotics, the talent IS the build. Everything else revolves around it. {weapon.name === 'Scorpio' ? 'Scorpio wants to live in shotgun range, which points straight at Bulwark Breacher (shield brawling keeps you alive at 16 meters) or any close-range Firepower loadout. Build for sustained target focus: the Venom ladder resets if you spray between targets, so single-target discipline beats spread damage. The Shock at 6 stacks and the 10% damage amp at 7 also make it a genuinely interesting team-support pick against bosses: you soften the target while the DPS players collect the credit. Verified builds running Scorpio will show up here as the community settles the meta.' : weapon.name === 'Lady Death' ?'Lady Death builds go hard on Firepower and Weapon Damage so every stack of that +15% WD bonus hits like a freight train. Vanguard for Tactical Link synergy, or Bulwark Breacher if you like the aggressive shield-rush playstyle. Gear sets: Fury Strike 4pc (Crit) for fat per-shot damage, or Quick Draw 4pc for Headshot Damage if your aim is cracked.' : weapon.name === 'Warlord' ? 'Warlord turns you into a tank-DPS hybrid. Stack Toughness if you want to be unkillable, Firepower if you want to deal more: either works. That 25% DR while firing is nuts for Legendary missions where adds are constantly shooting at you. Pair with Fearless Warrior if you want to face-tank everything, or Fury Strike if you\'d rather crit harder.' : 'Strawberry Milkshake is all about never stopping shooting. That 100-round mag means Concentrated Fire hits max stacks, Multi-Shot keeps proccing, and you just don\'t reload. Run Phalanx Attack 4pc for +18% Mag Size and +12% Multi-Shot, Fury Strike 2pc for Crit Chance, Glass Cannon Body Armor for +20% damage, and Dominating Presence OS for even more Multi-Shot per enemy in range (it only started granting Multi-Shot after a Season 2 Phase 1 fix, and Phase 2 capped it at 35% at base level). It\'s a machine.'}</p>
+          <p>With exotics, the talent IS the build. Everything else revolves around it. {weapon.name === 'Scorpio' ? 'Scorpio wants to live in shotgun range, which points straight at Bulwark Breacher (shield brawling keeps you alive at 16 meters) or any close-range Firepower loadout. Build for sustained target focus: the Venom ladder resets if you spray between targets, so single-target discipline beats spread damage. The Shock at 6 stacks and the 10% damage amp at 7 also make it a genuinely interesting team-support pick against bosses: you soften the target while the DPS players collect the credit. Verified builds running Scorpio will show up here as the community settles the meta.' : weapon.name === 'Lady Death' ?'Lady Death builds go hard on Firepower and Weapon Damage so every stack of that +15% WD bonus hits like a freight train. Vanguard for Tactical Link synergy, or Bulwark Breacher if you like the aggressive shield-rush playstyle. Gear sets: Fury Strike 4pc (Crit) for fat per-shot damage, or Quick Draw 4pc for Headshot Damage if your aim is cracked.' : weapon.name === 'The Bighorn' ? 'The Bighorn rewards aim more than any other exotic: aimed shots carry the +300% Weapon Damage, and only headshots build and keep its stacks. That points at Firepower specs (Vanguard Commando or Bulwark Breacher) and at stats that help headshots land and hit harder: Headshot Damage, Accuracy and Stability.' : weapon.name === 'Diamondback' ? 'The Diamondback is a mark-and-burst rifle: hit the marked enemy, make the 5-second crit window count, and reload when you want a fresh mark. Weapon Critical Hit Damage turns those guaranteed crits into damage, and the +10% Skill Critical Hit Chance gives a hybrid build with damaging skills a second reason to run it.' : weapon.name === 'Warlord' ? 'Warlord turns you into a tank-DPS hybrid. Stack Toughness if you want to be unkillable, Firepower if you want to deal more: either works. That 25% DR while firing is nuts for Legendary missions where adds are constantly shooting at you. Pair with Fearless Warrior if you want to face-tank everything, or Fury Strike if you\'d rather crit harder.' : 'Strawberry Milkshake is all about never stopping shooting. That 100-round mag means Concentrated Fire hits max stacks, Multi-Shot keeps proccing, and you just don\'t reload. Run Phalanx Attack 4pc for +18% Mag Size and +12% Multi-Shot, Fury Strike 2pc for Crit Chance, Glass Cannon Body Armor for +20% damage, and Dominating Presence OS for even more Multi-Shot per enemy in range (it only started granting Multi-Shot after a Season 2 Phase 1 fix, and Phase 2 capped it at 35% at base level). It\'s a machine.'}</p>
           <p>Hit the <a href="/tier-list/" style="color: var(--accent);">Build Tier List</a> for verified loadouts running {weapon.name}, or use the <a href="/builder/" style="color: var(--accent);">Build Planner</a> to cook up your own.</p>
         </div>
       </div>
@@ -204,6 +219,15 @@ const itemLd = {
               <p><strong style="color: #F5CC45;">Update (October 2026):</strong> the Phase 3 pass is long gone, but Scorpio isn't. Ubisoft added it to the <strong style="color: #fff;">Dark Zone vendor</strong> in Season 2 Phase 1, cut the vendor's exotic price from 17,500 to 15,000 DZ Credits in Season 2 Phase 2, and added <strong style="color: #fff;">Exotic Sealed Caches</strong> in Season 2 Phase 2 as a way to get exotics from previous seasons. Since Phase 2, exotics no longer come with exotic mods pre-installed. Exotic mods can be swapped off since Season 2 Phase 1 and now come from the pass, weekly quests, Elite Mission challenge chests and the DZ vendor's weekly exotic mod crates (2,500 DZ Credits each).</p>
               <p>Scorpio launched as a <strong style="color: #fff;">Classified Ops Pass 1.3 exclusive</strong>: it unlocked at <strong style="color: var(--accent);">tier 5 of the premium track</strong> (the free track carried its Tactical Augmentation module instead). Tier 5 was an easy climb, so buying the Premium Pass ($9.99) effectively got you the gun within your first session or two of pass play; the Elite Pass ($19.99) instantly completed 10 tiers, which meant Scorpio the moment the purchase cleared.</p>
               <p>About the confusion at launch: Ubisoft's Phase 3 announcement said the Scorpio "can be grabbed for free", but that wording referred to the Tactical Augmentation module on the free track, not the weapon. We verified the weapon's premium tier 5 placement in-game.</p>
+            </Fragment>
+          ) : (weapon.name === 'The Bighorn' || weapon.name === 'Diamondback') ? (
+            <Fragment>
+              {weapon.name === 'The Bighorn' ? (
+                <p>The Bighorn was the <strong style="color: #fff;">Season 2 Phase 1 Classified Ops Pass</strong> exotic, on the free and premium track. That pass ended when Phase 2 began on September 16, 2026, so <strong style="color: #fff;">Exotic Sealed Caches</strong> are the way to get it now: Ubisoft added them in Season 2 Phase 2 to hand out exotics from previous seasons.</p>
+              ) : (
+                <p>The Diamondback is on the <strong style="color: #fff;">free and premium track</strong> of the current Season 2 Phase 2 Classified Ops Pass, which Ubisoft extended on October 21, 2026 "until we are ready to release a much bigger update later this year." Ubisoft also added Diamondback rewards to Dark Zone vendors, reward caches, weekly reward pools and exotic mod sources, and The Diamondback Cache is one of the Exotic Sealed Cache rewards.</p>
+              )}
+              <p>Since Season 2 Phase 2, exotics no longer come with exotic mods pre-installed. Those mods now come from the pass, weekly quests, Elite Mission challenge chests and the Dark Zone vendor's weekly exotic mod crates (2,500 DZ Credits each). The full rundown is in our <a href="/guides/division-resurgence-exotic-weapons-list-2026/" style="color: var(--accent);">exotic weapons list</a>.</p>
             </Fragment>
           ) : (
             <Fragment>

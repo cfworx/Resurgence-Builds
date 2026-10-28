@@ -5,7 +5,8 @@ import allExoticWeapons from '../../../data/exotic-weapons.json';
 const exoticWeapons = allExoticWeapons.filter((w: any) => w.statsVerified !== false);
 import AdSenseUnit from '../../../components/AdSenseUnit.astro';
 import { verifiedPatch } from '../../../data/site-config';
-const lastVerified = verifiedPatch('Patch 1.1.2.2'); // Bump: drop the arg ONLY after re-verifying this page's content in-game (CURRENT_PATCH is a ceiling, not an auto-bump)
+// All six exotics were re-checked in the in-game Build-Making Database on 2026-10-28 (Season 2 Phase 2).
+const lastVerified = verifiedPatch();
 
 const title = "Exotic Weapons: Full List & Stats";
 const description = "Division Resurgence exotic weapons with stats and talents. Each one bends the rules differently. Most are broken. That's the point.";
@@ -16,7 +17,7 @@ const breadcrumbs = [
 const slugify = (name: string) => name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
 
 const faqs = [
-  { question: "How do you get exotic weapons in Division Resurgence?", answer: "Mostly by paying attention to the pass. Each Classified Ops Pass phase since Season 1 Phase 2 has shipped a new exotic (Strawberry Milkshake, Scorpio, The Bighorn, The Diamondback), the Dark Zone vendor sells some older ones (Warlord since Season 1 Phase 2, Scorpio since Season 2 Phase 1) for 15,000 DZ Credits, and since Season 2 Phase 2 Exotic Sealed Caches can drop exotics from previous seasons. Check each exotic's detail page on this site for its specific source." },
+  { question: "How do you get exotic weapons in Division Resurgence?", answer: "Mostly by paying attention to the pass. Each Classified Ops Pass phase since Season 1 Phase 2 has shipped a new exotic (Strawberry Milkshake, Scorpio, The Bighorn, Diamondback), the Dark Zone vendor sells some older ones (Warlord since Season 1 Phase 2, Scorpio since Season 2 Phase 1) for 15,000 DZ Credits, and since Season 2 Phase 2 Exotic Sealed Caches can drop exotics from previous seasons. Check each exotic's detail page on this site for its specific source." },
   { question: "What is the best exotic weapon in Division Resurgence?", answer: "It shifts with every patch, but the strongest exotics are the ones whose unique talent synergizes with a specific build archetype. An exotic with a mediocre talent on paper can be S-tier if it enables a broken combo with certain gear sets or skills." },
   { question: "Can you recalibrate exotic weapons in Division Resurgence?", answer: "Partly. The unique exotic talent is fixed, so you can't reroll the thing that makes the gun special. Exotics do have their own recalibration materials, though: Exotic Weapon Recalibration Manuals and Booklets, which come from weekly rewards, the Dark Zone (their drops there were fixed in Season 2 Phase 1) and Exotic Sealed Caches. Exotic mods can also be swapped off since Season 2 Phase 1. That's the exotic life." },
 ];
@@ -53,7 +54,7 @@ const itemListLd = {
   lastVerified={lastVerified}
   {faqs}
 >
-  <p style="color: #c8c8d0; line-height: 1.7; font-size: var(--text-sm); max-width: var(--measure); margin-bottom: var(--sp-6);"><strong style="color: #F5CC45;">Update (October 2026):</strong> Season 2 added two exotics whose full stat lines we haven't verified yet, so they aren't in this database: The Bighorn (an Assault Rifle from the Season 2 Phase 1 pass that goes semi-auto with +300% Weapon Damage per shot when you aim down sights and stacks Headshot Damage on headshots) and The Diamondback (the Season 2 Phase 2 pass exotic, a Rifle that deals Shredding damage according to its in-game card, whose Agonizing Bite talent marks an enemy and turns your shots into guaranteed crits after you hit the mark). Both are covered in our <a href="/guides/division-resurgence-exotic-weapons-list-2026/" style="color: var(--accent);">exotic weapons list</a>. Since Season 2 Phase 2, exotics no longer ship with exotic mods pre-installed.</p>
+  <p style="color: #c8c8d0; line-height: 1.7; font-size: var(--text-sm); max-width: var(--measure); margin-bottom: var(--sp-6);"><strong style="color: #F5CC45;">Update (October 28, 2026):</strong> every stat line on this page now comes from the in-game Build-Making Database: Level 1, T1 base values with no mods. That put The Bighorn and the Diamondback in the database and corrected numbers we had taken from creators' cards with mods fitted: Lady Death's reload and range, Warlord's accuracy, reload, range and stability, Strawberry Milkshake's accuracy and range, and Scorpio's accuracy, reload, stability and damage. The full list of changes is in our <a href="/guides/division-resurgence-exotic-weapons-list-2026/" style="color: var(--accent);">exotic weapons list</a>. Since Season 2 Phase 2, exotics no longer ship with exotic mods pre-installed.</p>
 
   <div class="db-grid" id="exotics-grid">
       {exoticWeapons.map((weapon) => (
@@ -105,6 +106,7 @@ const itemListLd = {
               <div class="talent-section">
                 <h3 class="talent-name">{weapon.talentName}</h3>
                 <p class="talent-desc-text">{weapon.talentDescription}</p>
+                {weapon.caveat && weapon.note && <p class="item-note">{weapon.note}</p>}
               </div>
             </div>
           </a>

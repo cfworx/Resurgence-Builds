@@ -1,0 +1,212 @@
+[
+  {
+    "name": "Lady Death",
+    "siteId": "ew-1",
+    "class": "SMG",
+    "shownAt": "Level 1, T1",
+    "damageType": "Blast",
+    "damage": "299",
+    "rpm": "900",
+    "magazine": "32",
+    "talentName": "Breathe Free",
+    "talentText": "While moving, grants 4 stacks per second, or 8 stacks if sprinting, up to a maximum of 40 stacks. A stack is consumed with each round fired, granting +15% Weapon Damage. Deploying a Skill consumes 10 stacks and grants +15% Skill Damage. Kills grant +10% Movement Speed for 10 seconds.",
+    "weaponAttributes": {
+      "accuracy": "50",
+      "reloadSpeed": "2.4s",
+      "optimalRange": "16m",
+      "movementSpeed": "91",
+      "stability": "50"
+    },
+    "coreAttributesShown": "Firepower +0, Toughness +0, Engineering +0",
+    "attributeBonuses": "2 x Random Bonus Attribute (---%)",
+    "possibleTalentCount": 18,
+    "modSlots": 5,
+    "modSlotsShown": "locked",
+    "tamSlots": "0/6",
+    "description": "\"Your freedom can't be taken, you say? That's a lie. Your freedom can always be taken. After all, the only thing that stands between you and tyranny is the barrel of your gun.\" - 2A enthusiast.",
+    "source": {
+      "recording": "Screen_Recording_20261028_155256_The_Division_Resurgence.mp4",
+      "seconds": [
+        1.0,
+        22.5
+      ]
+    },
+    "evidence": "evidence/exotic-weapons/lady-death.webp",
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "Warlord",
+    "siteId": "ew-2",
+    "class": "Assault Rifle",
+    "shownAt": "Level 1, T1",
+    "damageType": "Blast",
+    "damage": "324",
+    "rpm": "600",
+    "magazine": "30",
+    "talentName": "Play Rough",
+    "talentText": "While firing, reduces Incoming Damage by 25%. When firing ceases, applies 60% of the reduced damage and grants +10% Skill Damage for 10 seconds.",
+    "weaponAttributes": {
+      "accuracy": "50",
+      "reloadSpeed": "2.5s",
+      "optimalRange": "25m",
+      "movementSpeed": "54",
+      "stability": "50"
+    },
+    "coreAttributesShown": "Firepower +0, Toughness +0, Engineering +0",
+    "attributeBonuses": "2 x Random Bonus Attribute (---%)",
+    "possibleTalentCount": 18,
+    "modSlots": 5,
+    "modSlotsShown": "unlocked",
+    "tamSlots": "0/6",
+    "description": null,
+    "source": {
+      "recording": "Screen_Recording_20261028_155256_The_Division_Resurgence.mp4",
+      "seconds": [
+        24.0,
+        38.25
+      ]
+    },
+    "evidence": "evidence/exotic-weapons/warlord.webp",
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "Strawberry Milkshake",
+    "siteId": "ew-3",
+    "class": "LMG",
+    "shownAt": "Level 1, T1",
+    "damageType": "Shredding",
+    "damage": "300",
+    "rpm": "550",
+    "magazine": "100",
+    "talentName": "Anarchy",
+    "talentText": "Weapon hits inflict a debuff, dealing 2.40% Weapon Damage over 4.50 seconds, up to 50 stacks. Enemies dying with this debuff transfer all stacks to a nearby enemy within 12 meters.",
+    "weaponAttributes": {
+      "accuracy": "50",
+      "reloadSpeed": "5.6s",
+      "optimalRange": "25m",
+      "movementSpeed": "19",
+      "stability": "50"
+    },
+    "coreAttributesShown": "Firepower +0, Toughness +0, Engineering +0",
+    "attributeBonuses": "2 x Random Bonus Attribute (---%)",
+    "possibleTalentCount": 18,
+    "modSlots": 5,
+    "modSlotsShown": "unlocked",
+    "tamSlots": "0/6",
+    "description": "\"You will suffer as we suffered.\"",
+    "source": {
+      "recording": "Screen_Recording_20261028_155256_The_Division_Resurgence.mp4",
+      "seconds": [
+        39.5,
+        55.25
+      ]
+    },
+    "evidence": "evidence/exotic-weapons/strawberry-milkshake.webp",
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "Scorpio",
+    "siteId": "ew-4",
+    "class": "Shotgun",
+    "shownAt": "Level 1, T1",
+    "damageType": "Piercing",
+    "damage": "1,68k",
+    "rpm": "130",
+    "magazine": "7",
+    "talentName": "Septicemia",
+    "talentText": "Hitting an enemy inflicts Venom for 2.50 seconds, up to 7 stacks. The target receives a debuff increasing in severity based on their number of Venom stacks: 1 - Inflicts Bleed for 10 seconds. 3 - Inflicts Confusion for 2 seconds. 6 - Inflicts Shock for 3 seconds. 7 - Deals additional damage equal to 10% of Damage Dealt for 10 seconds.",
+    "weaponAttributes": {
+      "accuracy": "50",
+      "reloadSpeed": "1.8s",
+      "optimalRange": "16m",
+      "movementSpeed": "50",
+      "stability": "50"
+    },
+    "coreAttributesShown": "Firepower +0, Toughness +0, Engineering +0",
+    "attributeBonuses": "2 x Random Bonus Attribute (---%)",
+    "possibleTalentCount": 18,
+    "modSlots": 5,
+    "modSlotsShown": "locked",
+    "tamSlots": "0/6",
+    "description": "This weapon fires debilitating venomous rounds inspired by the scorpion (specifically Hottentotta). The weapon developed in conjunction with DARPA failed to get approval due to being in contravention of the Hague Convention of 1899.",
+    "source": {
+      "recording": "Screen_Recording_20261028_155256_The_Division_Resurgence.mp4",
+      "seconds": [
+        56.25,
+        78.75
+      ]
+    },
+    "evidence": "evidence/exotic-weapons/scorpio.webp",
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "The Bighorn",
+    "siteId": "ew-5",
+    "class": "Assault Rifle",
+    "shownAt": "Level 1, T1",
+    "damageType": "Shredding",
+    "damage": "216",
+    "rpm": "800",
+    "magazine": "40",
+    "talentName": "Big Game Hunter",
+    "talentText": "Aiming switches the weapon to semi-auto firing mode, dealing an extra 300% Weapon Damage per shot. Headshots grant +3.30% Headshot Damage for 20 seconds, up to 50 stacks. On max stacks, loses 10 stacks every 4 seconds. Headshots prevent from losing stacks.",
+    "weaponAttributes": {
+      "accuracy": "50",
+      "reloadSpeed": "1.9s",
+      "optimalRange": "23m",
+      "movementSpeed": "44",
+      "stability": "50"
+    },
+    "coreAttributesShown": "Firepower +0, Toughness +0, Engineering +0",
+    "attributeBonuses": "2 x Random Bonus Attribute (---%)",
+    "possibleTalentCount": 18,
+    "modSlots": 5,
+    "modSlotsShown": "locked",
+    "tamSlots": "0/6",
+    "description": null,
+    "source": {
+      "recording": "Screen_Recording_20261028_155256_The_Division_Resurgence.mp4",
+      "seconds": [
+        79.75,
+        97.0
+      ]
+    },
+    "evidence": "evidence/exotic-weapons/the-bighorn.webp",
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "Diamondback",
+    "siteId": "ew-6",
+    "class": "Rifle",
+    "shownAt": "Level 1, T1",
+    "damageType": "Shredding",
+    "damage": "1,95k",
+    "rpm": "100",
+    "magazine": "5",
+    "talentName": "Agonizing Bite",
+    "talentText": "The Diamondback randomly marks an enemy. Hitting that enemy guarantees a Critical Hit but also consumes the mark. After hitting a marked target, all shots fired are guaranteed to be Critical Hits and also grant +10% Skill Critical Hit Chance for 5 seconds. A new enemy is randomly marked afterward and each time you reload.",
+    "weaponAttributes": {
+      "accuracy": "50",
+      "reloadSpeed": "0.5s",
+      "optimalRange": "31m",
+      "movementSpeed": "26",
+      "stability": "50"
+    },
+    "coreAttributesShown": "Firepower +0, Toughness +0, Engineering +0",
+    "attributeBonuses": "2 x Random Bonus Attribute (---%)",
+    "possibleTalentCount": 18,
+    "modSlots": 5,
+    "modSlotsShown": "locked",
+    "tamSlots": "0/6",
+    "description": "\"I don't give a damn whether it's an actual Diamondback or not. I'll call it whatever I want and I happen to like the name.\" - Manning National Zoo Reptile Keeper",
+    "source": {
+      "recording": "Screen_Recording_20261028_155256_The_Division_Resurgence.mp4",
+      "seconds": [
+        98.0,
+        115.5
+      ]
+    },
+    "evidence": "evidence/exotic-weapons/diamondback.webp",
+    "checked": "2026-10-28"
+  }
+]

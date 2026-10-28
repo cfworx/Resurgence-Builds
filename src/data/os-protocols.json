@@ -547,7 +547,8 @@
     "attr3": "Health",
     "val3": "+2,554",
     "talentDescription": "Critical Hits performed during aiming create an explosion with a radius of 5 meters around the target that deals damage equal to 2000% Firepower to them.",
-    "cooldown": "5 seconds"
+    "cooldown": "5 seconds",
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "os-30",
@@ -563,7 +564,8 @@
     "attr3": "Health",
     "val3": "+2,554",
     "talentDescription": "Shooting grants +6% Weapon Damage for 2 seconds, up to 6 stacks. Shooting for 2 seconds grants +50% Damage Reduction for 2 seconds.",
-    "cooldown": ""
+    "cooldown": "",
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "os-31",
@@ -579,7 +581,8 @@
     "attr3": "Health",
     "val3": "+2,554",
     "talentDescription": "Critical Hits behind cover have a 80% chance of granting +16% Weapon Critical Hit Damage for 5 seconds, up to 3 stacks.",
-    "cooldown": ""
+    "cooldown": "",
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "os-32",
@@ -595,7 +598,8 @@
     "attr3": "Health",
     "val3": "+2,554",
     "talentDescription": "Deploying the Signature Ability grants +30% Firepower and +20% Rate of Fire for 20 seconds.",
-    "cooldown": ""
+    "cooldown": "",
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "os-33",
@@ -612,7 +616,8 @@
     "val3": "+2,554",
     "talentDescription": "Skill Hits within 20 meters have a 100% chance of granting +8% Damage for 10 seconds, up to 3 stacks.",
     "note": "Season 2 Phase 2 fixed the 20-meter range check, and Ubisoft's bug reporter marked the matching report (TDR-58) Done on October 23, 2026. The Concerted Strike that Season 2 Phase 1 changed to trigger off shots instead of hits is a Commando talent with the same name, not this protocol.",
-    "cooldown": "1 seconds"
+    "cooldown": "1 seconds",
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "os-34",
@@ -628,7 +633,8 @@
     "attr3": "Health",
     "val3": "+2,043",
     "talentDescription": "Skill Hits grant +4.50% Firepower for 10 seconds, up to 5 stacks.",
-    "cooldown": ""
+    "cooldown": "",
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "os-35",
@@ -644,7 +650,8 @@
     "attr3": "Health",
     "val3": "+2,043",
     "talentDescription": "Weapon Critical Hits behind cover have a 5% chance of granting +10% Weapon Critical Hit Damage for 5 seconds, up to 3 stacks.",
-    "cooldown": ""
+    "cooldown": "",
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "os-36",
@@ -660,7 +667,8 @@
     "attr3": "Health",
     "val3": "+2,043",
     "talentDescription": "Shooting continuously grants +2.50% Weapon Damage every 1 seconds for 2 seconds, up to 6 stacks.",
-    "cooldown": ""
+    "cooldown": "",
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "os-37",
@@ -676,7 +684,8 @@
     "attr3": "Health",
     "val3": "+2,043",
     "talentDescription": "When taking damage, grants +6% Weapon Critical Hit Chance for 10 seconds, up to 3 stacks.",
-    "cooldown": "3 seconds"
+    "cooldown": "3 seconds",
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "os-38",
@@ -691,10 +700,10 @@
     "val2": "+62",
     "attr3": "Health",
     "val3": "+2,043",
-    "talentDescription": "Grants +5% Weapon Multi-Shot Chance for each enemy within 20 meters, up to 35% at base level (70% fully upgraded).",
-    "note": "The +5% per enemy is the tooltip from before Season 2 Phase 2, which updated the per-enemy scaling without publishing the new numbers and cut the maximum to 35/42/49/56/63/70% by upgrade level. TikTokAndy read +10% per enemy on his copy on October 27, 2026, without saying its upgrade level. Season 2 Phase 1 fixed it granting Armor instead of Multi-Shot.",
-    "caveat": true,
-    "cooldown": ""
+    "talentDescription": "Grants +5% Weapon Multi-Shot Chance for each enemy within 20 meters.",
+    "note": "Season 2 Phase 2 capped it at 35% at base level, rising to 70% fully upgraded (35/42/49/56/63/70% by upgrade level); the tooltip doesn't show the cap. TikTokAndy read +10% per enemy on his copy on October 27, 2026, without saying its upgrade level. Season 2 Phase 1 fixed it granting Armor instead of Multi-Shot.",
+    "cooldown": "",
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "os-39",
@@ -710,7 +719,8 @@
     "attr3": "Health",
     "val3": "+2,043",
     "talentDescription": "Grants +4% Weapon Damage and +4% Incoming Healing for every 1 enemies who are within 20 meters.",
-    "cooldown": ""
+    "cooldown": "",
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "os-40",
@@ -726,7 +736,8 @@
     "attr3": "Health",
     "val3": "+2,043",
     "talentDescription": "Headshots grant +3.25% Firepower for 7 seconds, up to 10 stacks. Stacks disappear over time, but body shots and missed shots remove a stack instantly.",
-    "cooldown": ""
+    "cooldown": "",
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "os-41",
@@ -742,7 +753,8 @@
     "attr3": "Health",
     "val3": "+2,043",
     "talentDescription": "Grants +15% Weapon Damage while located within 20 meters of a deployed Skill.",
-    "cooldown": ""
+    "cooldown": "",
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "os-42",
@@ -758,7 +770,8 @@
     "attr3": "Health",
     "val3": "+2,043",
     "talentDescription": "Grants +30% Weapon Critical Hit Damage when behind cover.",
-    "cooldown": ""
+    "cooldown": "",
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "os-43",
@@ -774,7 +787,8 @@
     "attr3": "Health",
     "val3": "+2,043",
     "talentDescription": "Grants +15% Skill Intensity and Weapon Damage when there are enemies within 20 meters.",
-    "cooldown": ""
+    "cooldown": "",
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "os-44",
@@ -790,7 +804,8 @@
     "attr3": "Health",
     "val3": "+2,043",
     "talentDescription": "Reloading grants +15% Weapon Damage for 5 seconds.",
-    "cooldown": ""
+    "cooldown": "5 seconds",
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "os-45",
@@ -806,7 +821,8 @@
     "attr3": "Health",
     "val3": "+2,043",
     "talentDescription": "Grants Firepower equal to 12% Headshot Damage, capped at 54% Firepower.",
-    "cooldown": ""
+    "cooldown": "",
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "os-46",
@@ -822,7 +838,8 @@
     "attr3": "Health",
     "val3": "+1,532",
     "talentDescription": "Grants +6% Firepower while located within 30 meters of a debuffed enemy.",
-    "cooldown": ""
+    "cooldown": "",
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "os-47",
@@ -838,7 +855,8 @@
     "attr3": "Health",
     "val3": "+1,532",
     "talentDescription": "Grants +6% Firepower while located within 30 meters of a deployed Skill.",
-    "cooldown": ""
+    "cooldown": "",
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "os-48",
@@ -854,7 +872,8 @@
     "attr3": "Health",
     "val3": "+1,532",
     "talentDescription": "Shooting grants +12% Weapon Damage.",
-    "cooldown": ""
+    "cooldown": "",
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "os-49",
@@ -870,7 +889,8 @@
     "attr3": "Health",
     "val3": "+1,532",
     "talentDescription": "Taking damage grants +14.40% Weapon Critical Hit Chance for 5 seconds.",
-    "cooldown": ""
+    "cooldown": "5 seconds",
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "os-50",
@@ -886,7 +906,8 @@
     "attr3": "Health",
     "val3": "+1,532",
     "talentDescription": "Grants +18% Firepower while located within 20 meters of an enemy.",
-    "cooldown": ""
+    "cooldown": "",
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "os-51",
@@ -902,7 +923,8 @@
     "attr3": "Health",
     "val3": "+1,021",
     "talentDescription": "Grants +9% Weapon Damage.",
-    "cooldown": ""
+    "cooldown": "",
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "os-52",
@@ -918,7 +940,8 @@
     "attr3": "Health",
     "val3": "+1,021",
     "talentDescription": "Grants +13.50% Firepower.",
-    "cooldown": ""
+    "cooldown": "",
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "os-53",
@@ -934,7 +957,8 @@
     "attr3": "Health",
     "val3": "+1,021",
     "talentDescription": "Grants +9% Weapon Multi-Shot Chance.",
-    "cooldown": ""
+    "cooldown": "",
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "os-54",
@@ -949,8 +973,10 @@
     "val2": "+77",
     "attr3": "Health",
     "val3": "+2,554",
-    "talentDescription": "While possessing Extra Health, apply a 1.5-second Stun after every 10 hits performed (10-second cooldown on Stun). At Max Health, grants Extra Health equal to 2400% Firepower for 10 seconds when hit.",
-    "cooldown": "10 seconds"
+    "talentDescription": "While possessing Extra Health, apply Stun after every 10 hits performed. At Max Health, grants Extra Health equal to 2400% Firepower for 10 seconds when hit.",
+    "cooldown": "10 seconds",
+    "verifiedInGame": "2026-10-28",
+    "note": "The June 26, 2026 hotfix shortened the stun from 2 seconds to 1.5 and gave it the 10-second cooldown. The tooltip shows the cooldown but not the stun's length."
   },
   {
     "id": "os-55",
@@ -966,7 +992,8 @@
     "attr3": "Health",
     "val3": "+2,554",
     "talentDescription": "While possessing Extra Health, grants +14.40% Damage. Assists grant Extra Health equal to 16% Max Health for 10 seconds.",
-    "cooldown": ""
+    "cooldown": "",
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "os-56",
@@ -982,7 +1009,8 @@
     "attr3": "Health",
     "val3": "+2,554",
     "talentDescription": "Restore 0.50% Max Health for every 1 enemies within 10 meters, up to a maximum of 2.50%. Shooting consumes 2% Health and deals additional damage equal to 0.60% Current Health.",
-    "cooldown": ""
+    "cooldown": "",
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "os-57",
@@ -998,7 +1026,8 @@
     "attr3": "Health",
     "val3": "+2,043",
     "talentDescription": "Grants +12% Incoming Healing for each enemy within 20 meters who is targeting the Agent. Taking Weapon Damage restores 8% Max Health.",
-    "cooldown": "5 seconds"
+    "cooldown": "5 seconds",
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "os-58",
@@ -1014,7 +1043,8 @@
     "attr3": "Health",
     "val3": "+2,043",
     "talentDescription": "Grants +15% Toughness when an ally's Health reaches 50%, up to +100%.",
-    "cooldown": ""
+    "cooldown": "",
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "os-59",
@@ -1030,7 +1060,8 @@
     "attr3": "Health",
     "val3": "+2,043",
     "talentDescription": "Restoring the Health of any ally whose Health is above 50% of their Current Health grants the ally team additional healing equal to 5% Max Health. Restoring the Health of any ally whose Health is below 50% of their Current Health grants the target additional healing equal to 12.50% Max Health.",
-    "cooldown": "5 seconds"
+    "cooldown": "5 seconds",
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "os-60",
@@ -1046,7 +1077,8 @@
     "attr3": "Health",
     "val3": "+2,043",
     "talentDescription": "Taking damage has a 30% chance of granting +36% Incoming Healing for 5 seconds.",
-    "cooldown": ""
+    "cooldown": "5 seconds",
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "os-61",
@@ -1062,7 +1094,8 @@
     "attr3": "Health",
     "val3": "+1,532",
     "talentDescription": "Grants +12% Healing Intensity.",
-    "cooldown": ""
+    "cooldown": "",
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "os-62",
@@ -1078,7 +1111,8 @@
     "attr3": "Health",
     "val3": "+1,532",
     "talentDescription": "Taking damage grants +10% Damage Reduction for 5 seconds.",
-    "cooldown": ""
+    "cooldown": "10 seconds",
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "os-63",
@@ -1094,7 +1128,8 @@
     "attr3": "Health",
     "val3": "+1,532",
     "talentDescription": "Grants +18% Toughness while Health is above 50%.",
-    "cooldown": ""
+    "cooldown": "",
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "os-64",
@@ -1110,7 +1145,8 @@
     "attr3": "Health",
     "val3": "+1,021",
     "talentDescription": "Grants +21% Armor.",
-    "cooldown": ""
+    "cooldown": "",
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "os-65",
@@ -1126,7 +1162,8 @@
     "attr3": "Health",
     "val3": "+1,021",
     "talentDescription": "Grants +4.50% Weapon Damage and +4.50% Stamina.",
-    "cooldown": ""
+    "cooldown": "",
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "os-66",
@@ -1142,6 +1179,7 @@
     "attr3": "Health",
     "val3": "+1,021",
     "talentDescription": "Grants +13.50% Toughness.",
-    "cooldown": ""
+    "cooldown": "",
+    "verifiedInGame": "2026-10-28"
   }
 ]

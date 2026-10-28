@@ -39,6 +39,18 @@ The tier lists are pages, not content files:
 4. Leave the `verifiedPatch(...)` "last verified" stamp alone unless you re-tested in game.
 5. Save and deploy
 
+## How to Check the Database Against the Game
+
+The in-game Build-Making Database is the source of truth for item stats and talent text. Our transcription of it lives in
+`research/build-database/` (JSON and CSV per section, one evidence image per entry, and a README with what's covered so far).
+
+1. Screen-record one Build-Making Database section in the game: open each entry, hold about two seconds, scroll long text to
+   the bottom and hold about a second, then close it. Record every tab.
+2. Transcribe it into `research/build-database/` in the same shape as the existing files, and update the README's coverage table.
+3. Compare it with `src/data/` and fix what differs. Mark checked OS Protocols and exotics with `verifiedInGame` (the date);
+   their pages then show "Last verified" for the current patch.
+4. Re-read the builds and guides that use anything that changed.
+
 ## How to Publish Patch Notes
 
 1. Copy `src/content/patch-notes/_template.md` → `patch-X-Y-Z.md` (use dashes, e.g., `patch-1-3-0.md`)
