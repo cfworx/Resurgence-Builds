@@ -1,7 +1,7 @@
 ---
 title: "Inventory Expansion Planned, No Date Yet"
 publishDate: 2026-10-23
-updatedDate: 2026-10-24
+updatedDate: 2026-10-28
 author: "RapidF5"
 tags: ["News", "Community", "Bugs", "Season 2"]
 description: "Ubisoft's bug reporter lists Division Resurgence inventory expansion (TDR-537) as Planned, no date yet. Plus 34.5M dismantles and inventory tips."
@@ -32,7 +32,7 @@ Planned is one of the statuses Ubisoft sets on its tracker, alongside Done, In P
 
 On October 21 Ubisoft extended Season 2 Phase 2 "until we are ready to release a much bigger update later this year" ([our coverage](/news/season-2-phase-2-extended/)). Is inventory expansion part of that? Ubisoft hasn't said, so anyone who tells you it is, is guessing.
 
-Want to show support? Ubisoft has asked players to search for existing reports and contribute to them before filing new ones, so upvote TDR-537 rather than posting a duplicate ([how the tracker works](/news/bug-reporter-fixes-september-22/)). Other community suggestions include mod recalibration, which a [community post](https://www.reddit.com/r/thedivisionresurgence/comments/1x5osoi/can_we_please_get_mod_recalibration_our_sanity/) on October 14 says is on the tracker as TDR-652.
+Want to show support? Ubisoft has asked players to search for existing reports and contribute to them before filing new ones, so upvote TDR-537 rather than posting a duplicate ([how the tracker works](/news/bug-reporter-fixes-september-22/)). Other community suggestions include mod recalibration, which a [community post](https://www.reddit.com/r/thedivisionresurgence/comments/1x5osoi/can_we_please_get_mod_recalibration_our_sanity/) on October 14 pointed to on the tracker as TDR-652. That one didn't get the same news: Ubisoft set it to Deprioritized on October 22 ([our bug reporter roundup](/news/bug-reporter-fixes-october-23/)).
 
 ## 34.5 million dismantles, in perspective
 

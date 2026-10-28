@@ -74,5 +74,16 @@
     "caveat": true,
     "acquisition": "Season 2 Phase 1 Classified Ops Pass (free and premium track). Since Season 2 Phase 2, Exotic Sealed Caches can grant exotics from previous seasons.",
     "statsVerified": false
+  },
+  {
+    "id": "ew-6",
+    "name": "The Diamondback",
+    "type": "",
+    "talentName": "Agonizing Bite",
+    "talentDescription": "",
+    "note": "Ubisoft names the talent, Agonizing Bite, in its October 14, 2026 notes, but we haven't verified its effect text, weapon class or stats. Ubisoft's Season 2 Phase 2 article calls it an assault rifle in its page summary. Don't borrow numbers from The Division 2's Diamondback, which is a different game's gun.",
+    "caveat": true,
+    "acquisition": "Season 2 Phase 2 Classified Ops Pass (free and premium track). Ubisoft also added Diamondback rewards to Dark Zone vendors, reward caches, weekly reward pools and exotic mod sources, and The Diamondback Cache is one of the Exotic Sealed Cache rewards.",
+    "statsVerified": false
   }
 ]

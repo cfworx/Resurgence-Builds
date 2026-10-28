@@ -12,7 +12,9 @@
   {
     "id": "wt-3",
     "name": "Ammo Supply",
-    "description": "Shooting has a 54% chance of returning the bullet in the magazine if it contains less than 30% of its ammo."
+    "description": "Shooting has a 54% chance of returning the bullet in the magazine if it contains less than 30% of its ammo.",
+    "note": "TikTokAndy read an Ammo Supply 2 as a 65% chance in his September 16, 2026 video. Rank II talents usually run about 1.4 times rank I, which would put it near 75%, so one of the two numbers may be off; we haven't re-checked it in game.",
+    "caveat": true
   },
   {
     "id": "wt-4",
@@ -40,7 +42,9 @@
   {
     "id": "wt-8",
     "name": "Bloodlust",
-    "description": "Dealing 8 damage grants +4% Weapon Damage and +2% Damage Reduction for 5 seconds, up to 3 stacks."
+    "description": "Dealing 8 damage grants +4% Weapon Damage and +2% Damage Reduction for 5 seconds, up to 3 stacks.",
+    "note": "The tooltip text in our capture reads 'Dealing 8 damage,' which looks garbled; check the wording on your own copy.",
+    "caveat": true
   },
   {
     "id": "wt-9",
@@ -241,7 +245,9 @@
   {
     "id": "wt-47",
     "name": "Slaughter Fortitude",
-    "description": "Kills and assists grant +12% Armor for 10 seconds, up to 3 stacks."
+    "description": "Kills and assists grant +12% Armor for 10 seconds, up to 3 stacks.",
+    "note": "TikTokAndy read this as +18% Armor per stack on his SMG in his September 16, 2026 video (Season 2 Phase 2 launch day), without naming a rank. That's more than a rank II copy of our 12% would give, so the value may have changed; we haven't re-checked it in game.",
+    "caveat": true
   },
   {
     "id": "wt-48",
@@ -351,7 +357,9 @@
   {
     "id": "wt-67",
     "name": "Unbreakable",
-    "description": "Hits within 20 meters grant +36 Armor for 10 seconds."
+    "description": "Hits within 20 meters grant +36 Armor for 10 seconds.",
+    "note": "Our capture shows a flat +36 Armor, which would be tiny next to the thousands of Armor endgame gear gives, so it may be a percentage the capture lost; check your own copy.",
+    "caveat": true
   },
   {
     "id": "wt-68",

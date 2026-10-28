@@ -54,7 +54,7 @@ This is a **Tech Aegis Engineering build** that turns skill crit into a sledgeha
 ---
 
 > [!WARNING] Engineering, Not Firepower
-> The #1 mistake on Tech Aegis builds is chasing Firepower instead of Engineering. From our understanding, the shield pulse mechanic scales off Engineering. Tampishach's gear cores happen to be Firepower (see the gear table), but every gear module and weapon mod is stacked with Engineering, and that's where his damage comes from. Skip the Engineering mods and your shield does nothing and your DPS craters.
+> The #1 mistake on Tech Aegis builds is chasing Firepower instead of Engineering. The Aegis kit (Mender Drone, First-Aid Firefly and the Defender Drone signature) runs on Engineering, and so did the Aegis Burst damage this build leaned on before Season 1 Phase 3 toned it down. Tampishach's gear cores happen to be Firepower (see the gear table), but every gear module and weapon mod is stacked with Engineering, and that's where his damage comes from. Skip the Engineering mods and your drones do nothing and your DPS craters.
 
 ---
 

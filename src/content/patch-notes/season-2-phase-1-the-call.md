@@ -165,7 +165,7 @@ The Double Barrel didn't die, it changed engines. Creators rebuilt it around Mis
 
 ## Bug fixes worth knowing
 
-- **Classic AK-47 recalibration** only gave LVL2 talents, and a few other weapons rolled talents from the wrong pool on recalibration (First Wave Vector 42 ACP, RPD, M700 Carbon, M700). Fixed.
+- **Classic AK-47 recalibration** only gave LVL2 talents, and a few other weapons rolled talents from the wrong pool on recalibration (First Wave Vector 45 ACP, RPD, M700 Carbon, M700). Fixed.
 - **Stability on mods:** the VX1, ACOG and CQBSS scopes plus three exotic mods (Pincer & Claw grip on the Scorpio, Kiss of Death on Lady Death, Bladed Underbarrel on the Strawberry Milkshake) weren't counting Stability in the mod's Power Score. Fixed.
 - **Field Repair** (Skill Mod Combo Set) gave Weapon Damage instead of Fire Rate. Fixed.
 - **Dominating Presence** (OS Protocol) gave Armor instead of Weapon Multi-Shot Chance. Fixed. This one affects the [Milkshake Machine build](/builds/milkshake-machine-strawberry-milkshake-lmg-build/), whose Multi-Shot math predates the fix.

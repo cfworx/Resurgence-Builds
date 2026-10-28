@@ -67,7 +67,8 @@
     "attr3": "Health",
     "val3": "+2,554",
     "talentDescription": "For every 1 shots fired, grants +1.30% Weapon Damage for 5 seconds, up to 30 stacks. Loses 2 stacks per second.",
-    "note": "Season 2 Phase 2 fixed it applying the wrong damage type; the tooltip now says Weapon Damage too.",
+    "note": "Season 2 Phase 2 fixed it applying the wrong damage type; the tooltip now says Weapon Damage too. The last line of the tooltip was cut off in our source capture, so treat the 'loses 2 stacks per second' figure as unconfirmed until we re-check it in game.",
+    "caveat": true,
     "cooldown": "",
     "image": "/images/os-protocols/relentless-assault-os-protocol-division-resurgence.webp",
     "imageAlt": "Relentless Assault OS Protocol in Division Resurgence showing the Skill Critical Damage gear mod with glow effect and skill critical damage class icon"
@@ -122,6 +123,8 @@
     "attr3": "Health",
     "val3": "+2,554",
     "talentDescription": "Skill Critical Hits have a 60% chance of granting +16% Skill Critical Damage for 10 seconds, up to 3 stacks.",
+    "note": "The stack cap was cut off in our source capture, so treat 'up to 3 stacks' as unconfirmed until we re-check it in game.",
+    "caveat": true,
     "cooldown": "",
     "image": "/images/os-protocols/surgical-engineering-os-protocol-division-resurgence.webp",
     "imageAlt": "Surgical Engineering OS Protocol in Division Resurgence showing the Skill Intensity gear mod with glow effect and skill intensity class icon"
@@ -339,6 +342,8 @@
     "attr3": "Health",
     "val3": "+1,532",
     "talentDescription": "Grants +24% Skill Critical Damage.",
+    "note": "Our source capture didn't include this protocol's detail screen, so treat its main stat and talent text as unconfirmed until we re-check it in game.",
+    "caveat": true,
     "cooldown": "",
     "image": "/images/os-protocols/hardware-upgrade-os-protocol-division-resurgence.webp",
     "imageAlt": "Hardware Upgrade OS Protocol in Division Resurgence showing the Skill Intensity gear mod with glow effect and skill intensity class icon"
@@ -393,6 +398,8 @@
     "attr3": "Health",
     "val3": "+1,532",
     "talentDescription": "Taking damage grants +12% Skill Intensity for 5 seconds.",
+    "note": "Our source capture didn't include this protocol's detail screen, so treat its main stat and talent text as unconfirmed until we re-check it in game.",
+    "caveat": true,
     "cooldown": "",
     "image": "/images/os-protocols/long-range-artillery-os-protocol-division-resurgence.webp",
     "imageAlt": "Long-Range Artillery OS Protocol in Division Resurgence showing the Engineering gear mod with glow effect and engineering class icon"
@@ -483,6 +490,8 @@
     "attr3": "Health",
     "val3": "+1,021",
     "talentDescription": "Grants +18% Signature Ability Charge Efficiency while located within 25 meters of an enemy.",
+    "note": "Our source capture didn't include this protocol's detail screen, so treat its main stat and talent text as unconfirmed until we re-check it in game.",
+    "caveat": true,
     "cooldown": "",
     "image": "/images/os-protocols/inspiration-os-protocol-division-resurgence.webp",
     "imageAlt": "Inspiration OS Protocol in Division Resurgence showing the Skill Intensity gear mod with glow effect and skill intensity class icon"
@@ -583,7 +592,7 @@
     "attr3": "Health",
     "val3": "+2,554",
     "talentDescription": "Skill Hits within 20 meters have a 100% chance of granting +8% Damage for 10 seconds, up to 3 stacks.",
-    "note": "Season 2 Phase 2 fixed the 20-meter range check.",
+    "note": "Season 2 Phase 2 fixed the 20-meter range check, and Ubisoft's bug reporter marked the matching report (TDR-58) Done on October 23, 2026. The Concerted Strike that Season 2 Phase 1 changed to trigger off shots instead of hits is a Commando talent with the same name, not this protocol.",
     "cooldown": "1 seconds"
   },
   {
@@ -664,7 +673,7 @@
     "attr3": "Health",
     "val3": "+2,043",
     "talentDescription": "Grants +5% Weapon Multi-Shot Chance for each enemy within 20 meters, up to 35% at base level (70% fully upgraded).",
-    "note": "The +5% per enemy is the tooltip from before Season 2 Phase 2, which updated the per-enemy scaling without publishing the new numbers and cut the maximum to 35/42/49/56/63/70% by upgrade level. Season 2 Phase 1 fixed it granting Armor instead of Multi-Shot.",
+    "note": "The +5% per enemy is the tooltip from before Season 2 Phase 2, which updated the per-enemy scaling without publishing the new numbers and cut the maximum to 35/42/49/56/63/70% by upgrade level. TikTokAndy read +10% per enemy on his copy on October 27, 2026, without saying its upgrade level. Season 2 Phase 1 fixed it granting Armor instead of Multi-Shot.",
     "caveat": true,
     "cooldown": ""
   },

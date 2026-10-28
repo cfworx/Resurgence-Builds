@@ -28,7 +28,7 @@ faqs:
     answer: "Creators split on this. Oldfartsgaming (October) says the materials to take items to level 40 are plentiful, so upgrade freely to 40, then save the hard-to-find purple materials for keepers going from 40 to 50. AgentHuntzman, who ran out of resources in the pre-launch beta, said in April that he upgrades a set once, when it gives him the bonus he needs. Either way, items only go up to 10 levels above your own level, he says."
 ---
 
-You hit level 40, your gear is a patchwork quilt of blues and yellows, and the game says "go farm." Farm what, where, and for how long? Here's the map: what each tier is for, which missions lean toward which gear slots, where Tier 2 actually drops, and what's worth upgrading on the way.
+You hit level 40, your gear is a patchwork quilt of blues and yellows, and the game says "go farm." (Not there yet? Our [beginner guide](/guides/division-resurgence-beginner-guide/) gets you to 40 first.) Farm what, where, and for how long? Here's the map: what each tier is for, which missions lean toward which gear slots, where Tier 2 actually drops, and what's worth upgrading on the way.
 
 **The short version:**
 

@@ -123,6 +123,8 @@
   {
     "id": "ba-25",
     "name": "Unflinching",
-    "description": "Taking damage has a 70% chance of restoring Health equal to 300% Toughness. Talent Cooldown: 2 seconds."
+    "description": "Taking damage has a 70% chance of restoring Health equal to 300% Toughness. Talent Cooldown: 2 seconds.",
+    "note": "TikTokAndy read this tooltip as a 30% chance in his September 11, 2026 video. Higher talent ranks only raise the number, so his reading and our 70% can't both be right, and we haven't re-checked it in game yet.",
+    "caveat": true
   }
 ]

@@ -184,7 +184,7 @@ Nadie called these out explicitly: *"I have found 2 sexy stuff that I think Imma
 - **Steady Suppression:** Grants +18% Damage Reduction while firing.
 - **Precision Support II:** Hitting an enemy 6 times grants +9.80% Armor and +40% Rescue Efficiency for 10 seconds, up to 5 stacks.
 
-Base [Precision Support](/database/weapon-talents/precision-support/) grants +7% Armor and +40% Rescue Efficiency per stack. The II variant bumps Armor to +9.80%. At 5 stacks: **+49% Armor and +200% Rescue Efficiency**, a triple-speed revive while shooting. You can revive a downed teammate while suppressing the enemy that downed them. The Steady Suppression +18% DR while firing means you never stop pulling the trigger. The moment you do, defense layers start falling.
+Base [Precision Support](/database/weapon-talents/precision-support/) grants +7% Armor and +40% Rescue Efficiency, up to 5 stacks. The II variant bumps Armor to +9.80%, so 5 stacks is **+49% Armor**. Whether the Rescue Efficiency stacks too isn't settled: TikTokAndy, reading his own rank II copy in October, counts it as a flat +40% while the Armor climbs to about +50%. Either way you revive faster while shooting. You can revive a downed teammate while suppressing the enemy that downed them. The Steady Suppression +18% DR while firing means you never stop pulling the trigger. The moment you do, defense layers start falling.
 
 Nadie's take: *"Keep me in one piece and revive my poor teammates before realizing they were saved."*
 
@@ -244,7 +244,7 @@ The detailed loop:
 
 1. **Throw your healing station** in the fight zone where your team will stack
 2. **Stand in it**: your healing keeps you at full health, which primes Pummeling Shield's Extra Health proc
-3. **Hold the trigger**: Steady Suppression gives +18% DR while firing. Precision Support stacks Armor and Rescue Efficiency per 6 hits. Pummeling Shield stuns every 10 hits (once per 10 seconds since the June 26 hotfix).
+3. **Hold the trigger**: Steady Suppression gives +18% DR while firing. Precision Support adds an Armor stack (and Rescue Efficiency) every 6 hits. Pummeling Shield stuns every 10 hits (once per 10 seconds since the June 26 hotfix).
 4. **Take hits freely**: at full health, Pummeling Shield generates Extra Health equal to 2400% Firepower. Hypervigilant II and Rock Solid II both trigger from the healing ticks, stacking DR.
 5. **Swap to M60 for boss solo**: big magazine, Sadistic Shield II generates Extra Health every 5 hits, Conceited II adds DR on every kill
 6. **Deploy Combat Medicine signature** on whoever needs emergency healing or on unlucky enemies

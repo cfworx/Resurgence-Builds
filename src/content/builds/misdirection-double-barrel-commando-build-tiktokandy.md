@@ -295,6 +295,10 @@ The rest of GGReborn's readout (multi-shot, headshot damage, weapon damage, rate
 
 ---
 
+
+> [!TIP] The October 27 spin-off
+> TikTokAndy later swapped the Double Barrel to the secondary slot and built the same sets around a Tier 2 Lightweight M4 with Explosive Round, then six-starred Lone Wolf floor 20 on his first try. That version is our [Lightweight M4 Commando build](/builds/lightweight-m4-commando-vanguard-build-tiktokandy/).
+
 ## Sources
 
 - [TikTokAndy: Best "Automatic" Double Barrel Shotgun Build | Division Resurgence (YouTube, September 30, 2026)](https://www.youtube.com/watch?v=ITIJB2nj3zg)

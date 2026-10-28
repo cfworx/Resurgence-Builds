@@ -36,6 +36,8 @@ faqs:
 > [!INFO] Update (October 2026)
 > Season 2 moved a few numbers under these mechanics. The Season 2 Phase 1 weapon mod rework doubled mod main stats and cut attribute bonuses by 25%, explicitly to move away from flat bonuses that "were more impactful for high RPM weapons than low RPM weapons," so Mechanic 1 still holds, but Ubisoft is deliberately narrowing the gap. Season 2 Phase 2 fixed some "enemy takes increased damage" effects that weren't working, which matters for the amplification math in Mechanic 2. Details: [Season 2 Phase 1](/patch-notes/season-2-phase-1-the-call/) and [Season 2 Phase 2](/patch-notes/season-2-phase-2/).
 
+For the basics underneath these mechanics (what Firepower, Toughness and Engineering do, how talent ranks scale and where the 80% damage reduction cap sits), start with our [stats guide](/guides/division-resurgence-stats-explained/).
+
 ## What Are the Hidden Mechanics in Division Resurgence That the Game Never Explains?
 
 This is the long-form follow-up to every player who has ever typed "is my build broken" into Reddit at 2 AM while staring at a character sheet that makes no sense.

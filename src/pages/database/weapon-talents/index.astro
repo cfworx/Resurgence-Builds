@@ -12,9 +12,9 @@ const breadcrumbs = [
 ];
 
 const faqs = [
-  { question: "What are weapon talents in Division Resurgence?", answer: "Weapon talents are passive or conditional abilities that roll on Tier 2 weapons. Each weapon gets one talent, and it can dramatically change how the gun performs, from boosting damage on consecutive hits to refilling your magazine on kills. The talent is often more important than the weapon's base stats." },
+  { question: "What are weapon talents in Division Resurgence?", answer: "Weapon talents are passive or conditional bonuses that roll on weapons, and they can change how a gun performs, from stacking damage on consecutive hits to returning bullets to the magazine. A weapon carries two rolled talent lines (Died Again Gaming's Scorpio breakdown shows each line drawing from its own list), and exotics add their own fixed talent on top. Talents roll on tier 0 and tier 1 guns too, not just Tier 2, and they come in ranks: a rank II talent is about 1.4 times rank I, like Strained's 10% and 14% in Ubisoft's Season 2 Phase 2 notes. The talents are often more important than the base stats." },
   { question: "What is the best weapon talent in Division Resurgence?", answer: "The best weapon talent depends on your weapon type and build. For sustained DPS with ARs and LMGs, talents that ramp damage on hits are king. For burst damage with Marksman Rifles, look for talents that reward precision. SMG builds love anything that procs on close-range kills. Read the talent descriptions below and match one to how you actually play, not what sounds cool on paper." },
-  { question: "Can you change weapon talents in Division Resurgence?", answer: "Yes. You can recalibrate the talent on any Tier 2 weapon at the recalibration station. You need a donor weapon with the talent you want as a re-roll source. One recalibration slot per weapon, so if you already recalibrated a stat, you can't also swap the talent on that same gun." },
+  { question: "Can you change weapon talents in Division Resurgence?", answer: "Yes, through recalibration, but it's a reroll, not a pick: the talent line comes back as a random talent from its pool. TikTokAndy landed Misdirection Insurance on his Double Barrel 'after like the third or the fourth roll' and called that insanely lucky, while the last talent on his Lightweight M4 kept coming out wrong roll after roll. Budget your materials before you chase one specific talent." },
 ];
 
 function toSlug(name: string) {
@@ -70,7 +70,7 @@ const itemListLd = {
             
             <div class="source-section">
               <span class="source-label">Source Weapons</span>
-              <p class="source-text">Rolls on T2 standard and exotic weapons. Equip it in the Build Planner.</p>
+              <p class="source-text">Rolls on standard and exotic weapons of any tier. Equip it in the Build Planner.</p>
             </div>
           </div>
         </article>

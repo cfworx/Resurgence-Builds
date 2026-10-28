@@ -60,7 +60,7 @@ The core loop: drop Smart Cover, cast Scanning Pulse (instant In Sync skill-side
 
 - **~118-round magazine** at 550 RPM with Phalanx Attack 4pc.
 - **In Sync double-dip:** +18% Weapon Damage and +18% Skill Damage simultaneously, from the first bullet of every engagement.
-- **~37-40% Multi-Shot Chance** stacked from Phalanx 4pc (+12%), Dominating Presence OS (+20% at 4+ enemies), and gear rolls.
+- **~37-40% Multi-Shot Chance** stacked from Phalanx 4pc (+12%), Dominating Presence OS (+20% with 4 enemies in range, at the old +5% per enemy), and gear rolls.
 - **Glass Cannon (+20% Damage)** running permanently, balanced by Swift Taunt's 25% Max Health Extra Health buffer.
 - **Inspiration backpack** grants +30% RoF whenever Smart Cover is deployed, which is basically always.
 - **Field Supplies skill mod** refills 6.40% of your current magazine on every Pulsed-enemy kill, so the mag effectively never runs out in crowd fights.
@@ -114,7 +114,7 @@ This is not a glass-cannon-and-die build. The Extra Health from Swift Taunt is u
 |---|---|---|
 | Primary | **Strawberry Milkshake** (T1) | In Sync + Swift Taunt. Shredding damage. Upgrade target: T2 + WD/WCHD rolls. |
 | Secondary | **PPSH-41** (T2) | Revitalize + Sentinel Aura. Survival swap only. |
-| OS Protocol | **Dominating Presence** | +12% Weapon Damage. +5% Multi-Shot per enemy within 20m (max +20% at 4 enemies). Pre-Season 2 numbers, see the warning at the top. |
+| OS Protocol | **Dominating Presence** | +12% Weapon Damage. +5% Multi-Shot per enemy within 20m, so +20% with 4 enemies in range (Season 2 Phase 2 set the maximum at 35% at base). Pre-Season 2 numbers, see the warning at the top. |
 | Skill 1 | **Tactical Smart Cover** | Triggers In Sync skill-side buff. Armored Train mod active behind it. |
 | Skill 2 | **Scanning Pulse** | +20% Target Vulnerability. Triggers In Sync skill-side buff instantly. Field Supplies refills mag on Pulsed kills. |
 | Signature | **Tactical Link** | Commando mod: +10.20% WCHC on kills during Link. |
@@ -157,7 +157,7 @@ Three skill mod combo sets, one per skill. All confirmed in-game on Patch 1.1.2.
 
 ## Best OS Protocol for Strawberry Milkshake in Division Resurgence
 
-**Dominating Presence** is the pick. +12% Weapon Damage as a flat baseline, plus +5% Weapon Multi-Shot Chance per enemy within 20 meters, capped at +20% with 4 enemies. (Both numbers predate Season 2's Dominating Presence fixes; see the warning at the top.) This OS Protocol literally rewards you for standing in a bad place, which is exactly where The Milkshake Machine wants to be. Combined with Phalanx 4pc's +12% Multi-Shot and gear rolls, you can comfortably hit ~37-40% Multi-Shot Chance in the middle of a crowd fight. That means every third-ish bullet fires twice. Onto Pulsed enemies. With In Sync's +18% WD active. While Glass Cannon adds +20% Damage. While Inspiration adds +30% RoF.
+**Dominating Presence** is the pick. +12% Weapon Damage as a flat baseline, plus +5% Weapon Multi-Shot Chance per enemy within 20 meters, so +20% with 4 enemies in range. (Both numbers predate Season 2's Dominating Presence fixes; see the warning at the top.) This OS Protocol literally rewards you for standing in a bad place, which is exactly where The Milkshake Machine wants to be. Combined with Phalanx 4pc's +12% Multi-Shot and gear rolls, you can comfortably hit ~37-40% Multi-Shot Chance in the middle of a crowd fight. That means every third-ish bullet fires twice. Onto Pulsed enemies. With In Sync's +18% WD active. While Glass Cannon adds +20% Damage. While Inspiration adds +30% RoF.
 
 
 ---
@@ -185,7 +185,7 @@ This is a survival swap, not a primary damage tool. Talents: **Revitalize** (kil
 | Core (all 6 pieces) | Firepower. No exceptions. |
 | WCHD | 60%+ from gear rolls |
 | WCHC | 25%+ from gear rolls (Commando adds +10.20% during Link, Armored Train adds up to +6% passive) |
-| Multi-Shot Chance | 37%+ total (Phalanx +12% + Dominating Presence +20% + gear) |
+| Multi-Shot Chance | 37%+ total (Phalanx +12% + Dominating Presence +20% at 4 enemies + gear) |
 | Optimal Range | Extended via Fury Strike 2pc and weapon mods on top of SM's 29m base |
 | Weapon Damage | Roll on Body Armor, backpack, holster where WCHD is not primary |
 | Avoid | Blast Damage, Piercing Damage on old rolls. SM is Shredding only (and since Season 2 Phase 1, new weapon rolls use All Weapon Damage instead). |

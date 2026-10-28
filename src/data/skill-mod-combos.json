@@ -608,7 +608,11 @@
     "specialization": "Vanguard",
     "skill": "Smart Cover",
     "bonus2": "Max Health+[4.0%~8.0%]",
-    "bonus3": "While behind a Smart Cover, kills or assists grant allies Extra Health equal to 120% Engineering for 10 second(s)."
+    "bonus3": "While behind a Smart Cover, kills or assists grant allies Extra Health equal to 120% Engineering for 10 second(s).",
+    "aliases": [
+      "Superior Position"
+    ],
+    "aliasBasis": "elimination"
   },
   {
     "id": "smc-72",
@@ -616,7 +620,10 @@
     "specialization": "Vanguard",
     "skill": "Smart Cover",
     "bonus2": "Damage Reduction+[2.0%~4.0%]",
-    "bonus3": "While behind a Smart Cover, kills or assists grant 10 Signature Ability Charge(s). This effect also applies to allies."
+    "bonus3": "While behind a Smart Cover, kills or assists grant 10 Signature Ability Charge(s). This effect also applies to allies.",
+    "aliases": [
+      "Mobile Bastion"
+    ]
   },
   {
     "id": "smc-73",

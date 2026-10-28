@@ -2,7 +2,7 @@
 title: "October 2026 Hotfixes: Heavy Weight Nerf"
 version: "October 2026 hotfixes"
 patchDate: 2026-10-14
-updatedDate: 2026-10-24
+updatedDate: 2026-10-28
 author: "RapidF5"
 summary: "Division Resurgence October 2026 hotfixes: revive fix in No Respawn Zones, stuck heart icons fixed, and Heavy Weight nerfed from 25% to 5%."
 featuredImage: "/images/patch-notes/division-resurgence-server-hotfix-june-26-2026-hero.webp"
@@ -17,12 +17,12 @@ faqs:
   - question: "Is the revive bug in No Respawn Zones fixed?"
     answer: "Officially, yes. Ubisoft's October 2 patch fixed players not being revivable in No Respawn Zones, and an October 6 client update fixed the follow-up issue where heart icons stayed on screen. Some players still reported failed revives afterward. If you still hit a revive problem, Ubisoft asks you to add details to the existing issue on its bug reporter instead of filing a new one."
   - question: "Where were these patch notes posted?"
-    answer: "On the official r/thedivisionresurgence subreddit: the October 2 notes by the developer account (u/TDResurgence, Dev Team), the October 6 client update quoted from the official Discord, and the October 14 notes by u/Ticksyy, who shares Ubisoft's updates there. We didn't find them on Steam or in the Help Center patch notes section."
+    answer: "On the official r/thedivisionresurgence subreddit: the October 2 notes by the developer account (u/TDResurgence, Dev Team), the October 6 client update quoted from the official Discord, and the October 14 notes by u/Ticksyy, who shares Ubisoft's updates there. The October 14 notes also went out on the official @TheDivMobile account on X. We didn't find them on Steam or in the Help Center patch notes section."
   - question: "What is the Diamondback's talent called?"
     answer: "Agonizing Bite. The October 14 notes mention it by name while fixing the Build Making Database's weapon talent list, which had a 'Bullet Hell' talent added by mistake and was missing Agonizing Bite."
 ---
 
-Season 2 Phase 2 didn't get a new phase in October, but it did get three rounds of posted fixes. In order: **October 2** fixed revives in No Respawn Zones and flagged a possible **Heavy Weight** change Ubisoft was investigating, **October 6** cleaned up the heart icons that fix left behind, and **October 14** delivered the Heavy Weight nerf plus two smaller fixes. Everything here comes from the developers' and community team's posts on the official subreddit, which is where these notes appeared.
+Season 2 Phase 2 didn't get a new phase in October, but it did get three rounds of posted fixes. In order: **October 2** fixed revives in No Respawn Zones and flagged a possible **Heavy Weight** change Ubisoft was investigating, **October 6** cleaned up the heart icons that fix left behind, and **October 14** delivered the Heavy Weight nerf plus two smaller fixes. Everything here comes from the developers' and community team's posts on the official subreddit, and the October 14 notes also went out on Ubisoft's official @TheDivMobile account on X.
 
 > [!INFO] Update (October 2026)
 > On October 21 Ubisoft extended Season 2 Phase 2 until "a much bigger update later this year" ([details](/news/season-2-phase-2-extended/)). Our coverage of the revive bug as it happened is [here](/news/revive-bug-no-respawn-zones-fixed/).
@@ -45,7 +45,7 @@ After the October 2 fix, players reported revive heart icons sticking on screen 
 
 > "A client update has been deployed to fix the 'revive bug' which should no longer display heart icons indefinitely on screen."
 
-The same post asked players to report any further issues through the [official bug reporter](https://www.ubisoft.com/en-us/game/the-division/the-division-resurgence/bug-reporter), and to search and add to existing reports before filing new ones, which helps the team prioritize. Fair request. Nobody wants to triage forty copies of "hearts???".
+The same post asked players to report any further issues through the [official bug reporter](https://www.ubisoft.com/en-us/game/the-division/the-division-resurgence/bug-reporter), and to search and add to existing reports before filing new ones, which helps the team prioritize. The tracker's heart-icon report (TDR-593) was marked Done on October 22, along with a dozen other fixes in our [October 23 bug reporter roundup](/news/bug-reporter-fixes-october-23/). Fair request. Nobody wants to triage forty copies of "hearts???".
 
 ## October 14: Heavy Weight nerf and two fixes
 
@@ -74,4 +74,5 @@ The Build Making Database's weapon talent list included a **"Bullet Hell"** tale
 - [Official subreddit, Dev Team: Patch notes, revive bug fix (October 2, 2026)](https://www.reddit.com/r/thedivisionresurgence/comments/1wvvgb2/patch_notes_revive_bug_fix/)
 - [Official subreddit: Client Update (October 6, 2026)](https://www.reddit.com/r/thedivisionresurgence/comments/1wzb767/client_update/)
 - [Official subreddit: 14/10/2026 Patch Notes](https://www.reddit.com/r/thedivisionresurgence/comments/1x5t0uj/14102026_patch_notes/)
+- [@TheDivMobile on X: October 14, 2026 server patch](https://x.com/TheDivMobile/status/2110388123712561180)
 - [Ubisoft: The Division Resurgence bug reporter](https://www.ubisoft.com/en-us/game/the-division/the-division-resurgence/bug-reporter/issues)

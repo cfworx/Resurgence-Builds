@@ -13,9 +13,9 @@ const breadcrumbs = [
 ];
 
 const faqs = [
-  { question: "What are backpack talents in Division Resurgence?", answer: "Backpack talents are passive abilities that roll on Tier 2 backpacks. Each backpack can have one talent, and it activates automatically, no button press needed. They affect things like healing, ammo management, and damage output. You equip them through the Build Planner." },
+  { question: "What are backpack talents in Division Resurgence?", answer: "Backpack talents are passive abilities that roll on backpacks, and not only Tier 2 ones: TikTokAndy's Overwatch roll came on a T1 Jackpot backpack. Each backpack carries one talent, and it activates automatically, no button press needed. They affect things like healing, ammo management, and damage output. You can try them in the Build Planner." },
   { question: "What is the best backpack talent in Division Resurgence?", answer: "It depends on your build, but the most universally strong backpack talents buff sustain or amplify your main damage source. DPS players usually want talents that boost weapon damage on kill or after using skills. Tank and healer builds lean toward talents that regenerate armor or extend skill effects. Check the individual talent descriptions on this page to match one to your playstyle." },
-  { question: "Can you reroll backpack talents in Division Resurgence?", answer: "Yes. You can recalibrate one attribute or talent per gear piece at the Recalibration Station. If your backpack dropped with a garbage talent but great stats, you can swap the talent out. Just remember, you can only recalibrate one slot per item, so pick wisely." },
+  { question: "What does the II after a backpack talent mean?", answer: "It's the talent's rank, and rank II is about 1.4 times rank I. Creator readings line up with our base values: TikTokAndy's Siege II reads 52% Extra Health against the 37.5% base, his Overwatch II reads 21% Skill Damage against 15%, and his description of Emergency Measures, 'like an extra 70 percent health,' is what a rank II copy of our 50% would give. The values on this page are rank I unless a note says otherwise, so a II on your screen is the good news kind of discrepancy." },
 ];
 
 const toSlug = (name: string) => name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
@@ -54,7 +54,7 @@ const itemListLd = {
   {faqs}
 >
   <div style="color: #c8c8d0; line-height: 1.75; font-size: var(--text-base); margin-bottom: var(--sp-6); max-width: 72ch;">
-    <p>Backpack talents roll on Tier 2 backpacks and are always active once equipped. No activation, no cooldown management. Your backpack talent stacks with your Body Armor talent, your weapon talents, and your gear set bonuses, so the right pick multiplies everything else your build is doing. If a drop comes with great stats but a dud talent, the Recalibration Station lets you swap the talent slot (one recalibration per piece).</p>
+    <p>Backpack talents roll on backpacks of every tier we've seen creators use, T1 included, and are always active once equipped. No activation, no cooldown management. Your backpack talent stacks with your Body Armor talent, your weapon talents, and your gear set bonuses, so the right pick multiplies everything else your build is doing. Talents come in ranks, and rank II is about 1.4 times the rank I values listed here.</p>
   </div>
 
   <TalentIndex

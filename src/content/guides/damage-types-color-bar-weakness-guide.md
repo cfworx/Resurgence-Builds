@@ -25,7 +25,7 @@ faqs:
   - question: "Why does my Warlord feel weak in some missions?"
     answer: "Because the enemies in those missions are showing light blue or dark blue bars, meaning they're weak to Shredding or Piercing, not Blast. Your Warlord is doing reduced damage against them. It's not broken. It's mismatched. Bring a second weapon of a different damage type and swap when the bar color changes. Your Warlord isn't bad. It's just on the wrong shift. Even the best employee underperforms when you schedule them for a job they weren't hired to do."
   - question: "What's the best weapon loadout for covering all damage types?"
-    answer: "Two weapons covering two different types. The easy version: Warlord (Blast) as primary for red-bar enemies, plus an AR or LMG whose own damage type is Shredding as secondary for everything else. Since Season 2 Phase 1 you can't paper over a mismatch with a 'Weapon Shredding Damage' roll anymore (Ubisoft removed the damage-type bonus attributes from weapons), so check the weapon's type in the Armory. You can't cover all three types with two guns, but in our experience Shredding and Blast handle the bulk of endgame encounters. Piercing is mostly for Dark Zone Hunters, and honestly, they deserve whatever damage type they get."
+    answer: "Two weapons covering two different types. The easy version: Warlord (Blast) as primary for red-bar enemies, plus an AR or LMG whose own damage type is Shredding as secondary for everything else. Since Season 2 Phase 1 you can't paper over a mismatch with a 'Weapon Shredding Damage' roll anymore (Ubisoft removed the damage-type bonus attributes from weapons), so check the weapon's type in the Armory. You can't cover all three types with two guns, but in our experience Shredding and Blast handle the bulk of endgame encounters. Piercing earns its slot against armored, dark-blue-bar enemies, which AgentHuntzman says it handles 'extremely well.'"
 ---
 
 > [!INFO] Update (October 2026)
@@ -83,7 +83,7 @@ A few caveats before you grab this table and sprint to your loadout screen:
 
 These aren't cosmetic labels. As far as community testing can tell, each type routes through a different damage equation and interacts with armor differently.
 
-**Piercing.** The anti-armor tool. Piercing performs best against armored enemies. Dark blue bar = the game flagged this enemy's armor as vulnerable to piercing. Think heavy gunners, named elites with extra armor layers, certain Hunters in DZ. Bring a sniper or a Piercing-type AR and watch the armor plates peel off.
+**Piercing.** The anti-armor tool. Piercing performs best against armored enemies. Dark blue bar = the game flagged this enemy's armor as vulnerable to piercing. Think heavy gunners and named elites with extra armor layers. AgentHuntzman's summary: Piercing "performs extremely well against armored enemies." Bring a sniper or a Piercing-type AR and watch the armor plates peel off.
 
 **Shredding.** The sustained pressure tool. Shredding scales well against enemies with thick HP pools but lighter armor. Light blue bar = strip them with continuous fire. LMGs and high-RPM weapons love this damage type because shredding rewards holding the trigger, not one-tap bursts. If your play style is "hold left click and pray," shredding is your damage type.
 
@@ -117,7 +117,7 @@ This section is going to upset the Warlord truthers. Get it over with like rippi
 
 Warlord is a powerful Blast exotic AR. It deletes red-bar elites. It also underperforms significantly against shredding-weakness and piercing-weakness enemies. In any mission where the enemy mix is mostly light-blue or dark-blue, our rough estimate is that your Warlord is doing something like 60 to 70 percent of the damage it does on a perfect red-bar Hard mission. You have not been imagining the inconsistency. You've been ignoring the color bar.
 
-Same logic for Lady Death. The 870 Weapon Blast Damage stat it showed in spring looked impressive on paper. It's doing real work on red-bar Hunters in DZ. It's doing noticeably less work on the shredding-weakness Cleaners in late campaign content.
+Same logic for Lady Death. The 870 Weapon Blast Damage stat it showed in spring looked impressive on paper. It's doing real work on red-bar enemies. It's doing noticeably less work on the shredding-weakness Cleaners in late campaign content.
 
 The community read:
 
@@ -129,7 +129,7 @@ Warlord is not bad. It's mismatched in a big chunk of the missions you'll run it
 
 ## Which Damage Type Should You Bring to Each Mission?
 
-Broad-stroke field guidance. Specific rosters vary, but here's what community testing documents as the dominant bar color per content type:
+Broad-stroke field guidance. Specific rosters vary, and nobody has published an enemy-by-enemy chart, so treat this as a starting point and trust the bar on your screen over the table:
 
 | Content | Dominant Bar Color | Bring | Skip |
 |---|---|---|---|
@@ -138,7 +138,6 @@ Broad-stroke field guidance. Specific rosters vary, but here's what community te
 | Legendary content | Heavy mix of all three | Dual-type loadout (see below) | Any mono-type build |
 | Dark Zone (PvE) | Mixed with light blue lean | Shredding primary, blast secondary | Mono-piercing |
 | Conflict (PvP) | No weakness bars on players | Whatever you shoot best | Building around damage type vs players is a waste |
-| Hunters and DZ Leaders | Mostly dark blue (Piercing) + some red | Piercing AR or sniper as primary | Pure shredding |
 
 The single biggest jump in clear time you can get today, for free, with zero crafting: **bring a second weapon of a different damage type to every mission.** If your primary is blast, your secondary should be shredding or piercing. Period.
 

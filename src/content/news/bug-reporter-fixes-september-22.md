@@ -26,6 +26,7 @@ On **Tuesday, September 22**, Ubisoft's official Division Resurgence bug reporte
 
 > [!INFO] Update (October 2026)
 > TDR-99, "The 'High Caliber' Event Is Not Appearing," went to Done on September 29 (the event itself ran August 5 to 31). In early October Ubisoft patched the [revive bug in no-respawn zones](/news/revive-bug-no-respawn-zones-fixed/) and asked players to search for and add to existing reports before filing new ones, and the tracker now lists [inventory expansion as Planned](/news/inventory-expansion-planned/). The rest of October's fixes are in our [October hotfixes post](/patch-notes/october-2026-hotfixes/).
+> The next big batch landed on October 22 and 23, when Ubisoft marked 13 more issues Done, including Concerted Strike and the Warlord proficiency task: our [October 23 roundup](/news/bug-reporter-fixes-october-23/).
 
 ## What got marked Done
 

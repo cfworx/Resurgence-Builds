@@ -51,7 +51,7 @@ Ubisoft writes the newer two as "The Bighorn" and "The Diamondback," so we do to
 
 ### Tier A (1.43% each)
 
-One **Tactical Augmentation Module** for each of the same seven exotics: Lady Death, Warlord, Strawberry Milkshake, Scorpio, The Bighorn, The Diamondback and Deadlock.
+One **Tactical Augmentation Module** for each of the same seven exotics: Lady Death, Warlord, Strawberry Milkshake, Scorpio, The Bighorn, The Diamondback and Deadlock. What a TAM does once you have it is in our [Tactical Augmentation Modules guide](/guides/tactical-augmentation-modules-guide/).
 
 ### Tier B (4.19% each)
 

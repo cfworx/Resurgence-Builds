@@ -36,7 +36,7 @@ You hit **level 40**. Congratulations: that's the **Legendary Agent** achievemen
 4. **Keep the crafting bench busy:** 15 hours base since Season 2 Phase 1.
 5. **Farm with a plan:** mods from Hostile Nests, skill mods from the Dark Zone, exotics from the vendor, the pass or Exotic Sealed Caches.
 
-Below, Ubisoft's confirmed changes come first. Then the best advice from Oldfartsgaming's "7 Things I Wish I Knew Before Endgame" (October 11, embedded above) and GGReborn's video on the seven mistakes he made (September 29), labeled as creator advice, because that's what it is.
+Not at 40 yet? Our [beginner guide](/guides/division-resurgence-beginner-guide/) covers the road there, and our [stats guide](/guides/division-resurgence-stats-explained/) explains the numbers you'll be optimizing once you arrive. Below, Ubisoft's confirmed changes come first. Then the best advice from Oldfartsgaming's "7 Things I Wish I Knew Before Endgame" (October 11, embedded above) and GGReborn's video on the seven mistakes he made (September 29), labeled as creator advice, because that's what it is.
 
 ## What changes at level 40, officially
 

@@ -26,7 +26,7 @@ faqs:
   - question: "Why is this build using Hunting M44 instead of an exotic?"
     answer: "Because the Hunting M44 T2 marksman rifle carries Enhancement Trade 2 and Ammo Supply, the talent pair this build uses to feed Skill Intensity back into the Striker Drone every magazine. When this was written, no exotic pulled that double duty on Skill Intensity feeding. Season 2 has since added the Bighorn and Diamondback, which we haven't tried on this build. Exotics are shiny. This rifle is useful. You're a dad, you know the difference."
   - question: "Can I run this build without Rampart?"
-    answer: "Yes, but the ceiling drops. Surgical Engineering is the cleanest stand-in until you roll Rampart, followed by Tactical Layering. Both keep the build functional. Neither hits the +60% Damage ceiling that six stacks of Rampart provides."
+    answer: "Yes, but the ceiling drops. Surgical Engineering is the cleanest stand-in until you roll Rampart, followed by Tactical Layering. Both keep the build functional. Neither matches six stacks of Rampart: +30% Damage at base, and up to +60% on a fully upgraded copy."
   - question: "Is the Mk16 better than the Vector for the secondary slot?"
     answer: "For this build, yes. The Mk16 with Torrential Downpour 2 gets to +31.50% Engineering after ten hits in five seconds, which is trivial at AR fire rates and stays up for twelve seconds. The Vector is faster to ramp talents but does not push the Engineering ceiling as hard. Mk16 is the right call when the goal is to feed the drone, not to gunfight."
   - question: "How important is Skill Multi-Shot Chance on this build?"
@@ -37,9 +37,9 @@ faqs:
 
 ## What This Build Does
 
-This is a **Tech Operator Offensive Operations** build that pumps every roll into Engineering and lets a **Striker Drone** do the killing. Four pieces of **Jackpot** for the Skill Crit Chance and Skill Crit Damage stacking, two pieces of **Fire Cycle** for another +12% Skill Crit Damage on top, and the **[Rampart OS Protocol](/database/os-protocols/rampart/)** sitting on +10% Damage per stack while you hold a corner. **Hunting M44** is the primary, **Mk16** as the swap. The Hunting M44 talents feed Skill Intensity back into the drone every magazine, and the Mk16 talents top off Engineering and Signature charge while you reposition. Press the drone, hold the line, watch the numbers turn red.
+This is a **Tech Operator Offensive Operations** build that pumps every roll into Engineering and lets a **Striker Drone** do the killing. Four pieces of **Jackpot** for the Skill Crit Chance and Skill Crit Damage stacking, two pieces of **Fire Cycle** for another +12% Skill Crit Damage on top, and the **[Rampart OS Protocol](/database/os-protocols/rampart/)** sitting on +5% Damage per stack (+10% on a fully upgraded copy) while you hold a corner. **Hunting M44** is the primary, **Mk16** as the swap. The Hunting M44 talents feed Skill Intensity back into the drone every magazine, and the Mk16 talents top off Engineering and Signature charge while you reposition. Press the drone, hold the line, watch the numbers turn red.
 
-The whole build is wired around one question: how do you make a Striker Drone hit like a freight train? The answer is stacking Skill Critical Hit Chance and Skill Critical Hit Damage to the point that the drone is critting on most shots, and those crits are landing for absurd numbers. Then you turn the Tech Operator into a stationary turret yourself so Rampart pumps another +10% per stack of Damage on top of that.
+The whole build is wired around one question: how do you make a Striker Drone hit like a freight train? The answer is stacking Skill Critical Hit Chance and Skill Critical Hit Damage to the point that the drone is critting on most shots, and those crits are landing for absurd numbers. Then you turn the Tech Operator into a stationary turret yourself so Rampart pumps another +5% Damage per stack (double that on a fully upgraded copy) on top of that.
 
 A few things make this build tick:
 
@@ -85,7 +85,7 @@ The role is Tech Operator Offensive Operations. You are the drone driver, not th
 
 ### OS Protocol
 
-**Rampart** is the only choice that matters for this build. While immobile, grants +10% Damage for 1 second, up to 6 stacks. The bonus resets the moment you move. On a Tech Operator running a stationary drone, you are immobile by default while you direct the drone, so Rampart sits at or near six stacks during every fight. That is +60% Damage stacked on top of everything else.
+**Rampart** is the only choice that matters for this build. While immobile, grants +5% Damage for 1 second, up to 6 stacks, per our database's base value; Talent Upgrades from duplicate copies raise it in steps up to +10% ([how the upgrades scale](/guides/division-resurgence-stats-explained/)). The bonus resets the moment you move. On a Tech Operator running a stationary drone, you are immobile by default while you direct the drone, so Rampart sits at or near six stacks during every fight. That is +30% Damage at base, or +60% on a fully upgraded copy, stacked on top of everything else.
 
 If you do not have Rampart yet, **Surgical Engineering** is a serviceable fallback because it adds another Skill Critical Damage layer when your Skill Crit Hits proc. It will not match Rampart's ceiling, but it keeps the build functional while you grind.
 

@@ -14,12 +14,8 @@
     ]
   },
   "anchored": {
-    "usageNotes": "Anchored is the sustain layer for Breach Combo brawlers: every Breach Combo hit restores Shield Health and Health equal to 4.20% of Max Health. That per-hit trigger means the more aggressively you breach into packs, the faster your shield regenerates, the opposite incentive of turtling. Both of our published Bulwark metas run it, and both stack Max Health specifically so each 4.20% tick restores a meaningful chunk. It's the difference between a shield that needs cover rotations and a shield that repairs itself mid-push. Note the double restore: Shield Health and body Health tick together, so the set keeps working even after your shield breaks, often with enough sustain to walk the broken shield back to cover instead of dying with it.",
+    "usageNotes": "Anchored is the sustain layer for Breach Combo brawlers: every Breach Combo hit restores Shield Health and Health equal to 4.20% of Max Health. That per-hit trigger means the more aggressively you breach into packs, the faster your shield regenerates, the opposite incentive of turtling. Nadie's Involuntary Nap Time Juggernaut runs it (Saiynergy's Breacher takes Positive Feedback instead), and stacking Max Health makes each 4.20% tick restore a meaningful chunk. It's the difference between a shield that needs cover rotations and a shield that repairs itself mid-push. Note the double restore: Shield Health and body Health tick together, so the set keeps working even after your shield breaks, often with enough sustain to walk the broken shield back to cover instead of dying with it.",
     "metaBuilds": [
-      {
-        "title": "Bulwark Breacher 334k DPS Shield Wall",
-        "url": "/builds/bulwark-breacher-build-saiynergy/"
-      },
       {
         "title": "Involuntary Nap Time: Bulwark Juggernaut",
         "url": "/builds/involuntary-nap-time-bulwark-juggernaut-build/"
@@ -27,17 +23,8 @@
     ]
   },
   "optimal-range": {
-    "usageNotes": "Optimal Range rewards fighting inside 10 meters, which sounds suicidal until you're behind a shield or an LMG bipod: deploying Breach Combo grants +12% Rate of Fire, and close-range hits refund bullets (1 per second, capped at 3). The bullet refund is deceptively strong on high-RPM weapons: it stretches magazines through the exact face-range brawls where reloading gets you killed. Bulwark shield-wall builds treat it as their DPS set, and the Milkshake LMG build borrows it for the same reason: sustained fire lives and dies by time-between-reloads. The 10-meter check is measured per hit, not per activation, so backpedaling out of range mid-mag silently turns the refund off. Hold your ground behind the shield or the set stops paying you.",
-    "metaBuilds": [
-      {
-        "title": "Bulwark Breacher 334k DPS Shield Wall",
-        "url": "/builds/bulwark-breacher-build-saiynergy/"
-      },
-      {
-        "title": "Milkshake Machine: Strawberry Milkshake LMG",
-        "url": "/builds/milkshake-machine-strawberry-milkshake-lmg-build/"
-      }
-    ]
+    "usageNotes": "Optimal Range rewards fighting inside 10 meters, which sounds suicidal until you're behind a shield: deploying Breach Combo grants +12% Rate of Fire, and close-range hits refund bullets (1 per second, capped at 3). The bullet refund is deceptively strong on high-RPM weapons: it stretches magazines through the exact face-range brawls where reloading gets you killed. None of our published builds runs it right now (Saiynergy's Breacher puts Positive Feedback on its Breach Combo and Nadie's Juggernaut takes Anchored), but the logic is sound for any Bulwark that fights at shield distance: sustained fire lives and dies by time-between-reloads. Don't confuse it with the Optimal Range stat that the Fury Strike gear set grants; that's a different thing with the same name. The 10-meter check is measured per hit, not per activation, so backpedaling out of range mid-mag silently turns the refund off. Hold your ground behind the shield or the set stops paying you.",
+    "metaBuilds": []
   },
   "bugle-call": {
     "usageNotes": "Bugle Call is the opening horn for Tactical Link squads: dropping the link grants +14.40% Rate of Fire, Damage Reduction, and Movement Speed for 15 seconds: offense, defense, and mobility in one proc. Vanguard support players time it as an engage button: link up, call the push, and the whole window your squad is fighting with the buff you're personally faster, tougher, and shooting quicker. The 2-piece Damage Reduction roll makes it one of the rare Vanguard sets that helps you survive being the obvious priority target. Fifteen seconds is longer than most engagements, so the real skill is not stacking casts. It's saving the next Tactical Link for the next fight instead of doubling up on a fight you're already winning.",
@@ -47,17 +34,17 @@
         "url": "/builds/agenthuntzmans-leaderboard-ranking-vanguard-support-build/"
       },
       {
-        "title": "Milkshake Machine: Strawberry Milkshake LMG",
+        "title": "Milkshake Machine: Strawberry Milkshake LMG (as the defensive alternative)",
         "url": "/builds/milkshake-machine-strawberry-milkshake-lmg-build/"
       }
     ]
   },
   "commando": {
-    "usageNotes": "Commando converts Tactical Link uptime into a crit engine: while the link is on you, every kill you participate in adds +10.20% Weapon Critical Hit Chance for 10 seconds. The 'participate' wording is the key: assists count, so in group fights the stacks arrive from your teammates' kill feed as much as your own. On a leaderboard Vanguard build the loop is self-reinforcing: link buffs the squad, the squad kills faster, and your CHC climbs, which is why it pairs so naturally with Bugle Call in the same loadout. The 10-second stack window is refreshed by each participating kill, so in wave content the crit chance effectively never falls off. It's in dead periods between waves where you decide whether to re-link or hold.",
+    "usageNotes": "Commando converts Tactical Link uptime into a crit engine: while the link is on you, every kill you participate in adds +10.20% Weapon Critical Hit Chance for 10 seconds. The 'participate' wording is the key: assists count, so in group fights the stacks arrive from your teammates' kill feed as much as your own. On a Vanguard damage build the loop is self-reinforcing: link buffs the squad, the squad kills faster, and your CHC climbs. It competes with Bugle Call for the Tactical Link slot, since a skill holds one three-piece set, and support builds like AgentHuntzman's take Bugle Call for the team buffs instead. The 10-second stack window is refreshed by each participating kill, so in wave content the crit chance effectively never falls off. It's in dead periods between waves where you decide whether to re-link or hold.",
     "metaBuilds": [
       {
-        "title": "AgentHuntzman's Leaderboard Vanguard Support",
-        "url": "/builds/agenthuntzmans-leaderboard-ranking-vanguard-support-build/"
+        "title": "Any-Weapon Commando Beginner Vanguard (TikTokAndy)",
+        "url": "/builds/any-weapon-commando-beginner-vanguard-build-tiktokandy/"
       },
       {
         "title": "Milkshake Machine: Strawberry Milkshake LMG",
@@ -118,17 +105,16 @@
       {
         "title": "Tactical Pharma 800k DPS (Rank 1 Global)",
         "url": "/builds/tactical-pharma-800k-dps-rank-1-global-build/"
+      },
+      {
+        "title": "Tactical Pharma Season 2 (GGReborn)",
+        "url": "/builds/tactical-pharma-season-2-build-ggreborn/"
       }
     ]
   },
   "armor-strengthening": {
-    "usageNotes": "Armor Strengthening grants a flat +32% Armor while you're within 20 meters of your Chemical Trap, a zone-control tank set that says 'this room is mine.' The catch for months was that the proximity check was bugged and the bonus often simply didn't apply; Phase 3 finally fixed the detection, so the set now does what the tooltip promises. The Muscular Nurse tank-medic anchors on it: drop the trap where you plan to hold, stand your ground inside the circle, and layer the +32% Armor under its heal-triggered Damage Reduction procs. Placement discipline is everything: the trap defines a 20-meter circle you have to fight inside, so drop it at the choke point you intend to hold, not reactively at your feet after the push has already started.",
-    "metaBuilds": [
-      {
-        "title": "The Muscular Nurse: Combat Medicine Tank-Medic",
-        "url": "/builds/muscular-nurse-combat-medicine-build-nadie/"
-      }
-    ],
+    "usageNotes": "Armor Strengthening grants a flat +32% Armor while you're within 20 meters of your Chemical Trap, a zone-control tank set that says 'this room is mine.' The catch for months was that the proximity check was bugged and the bonus often simply didn't apply; Phase 3 finally fixed the detection, so the set now does what the tooltip promises. It's a Tactical Pharma set, since the Chemical Trap is a Tactical Pharma skill, and none of our published builds runs it right now: both of our Tactical Pharma builds put Chemical Recharge on the trap instead. Placement discipline is everything: the trap defines a 20-meter circle you have to fight inside, so drop it at the choke point you intend to hold, not reactively at your feet after the push has already started.",
+    "metaBuilds": [],
     "patchHistory": [
       {
         "label": "Season 1 · Phase 3",

@@ -6,7 +6,7 @@ import { verifiedPatch } from '../../data/site-config';
 const lastVerified = verifiedPatch('Patch 1.1.2.2'); // Bump: drop the arg ONLY after re-verifying this page's content in-game (CURRENT_PATCH is a ceiling, not an auto-bump)
 
 const title = "Best OS Protocol Per Class: Build Guide";
-const description = `Find the best OS Protocol for every class in Division Resurgence. Per-class primary and backup recommendations for Vanguard, Field Medic, Bulwark, Demolitionist, and Tech Operator at ${lastVerified}.`;
+const description = "The best OS Protocol for every class in Division Resurgence for Season 2 Phase 2, with primary and backup picks from creator builds and results.";
 
 const breadcrumbs = [
   { name: 'Guides', url: '/guides/' },
@@ -18,32 +18,32 @@ const classes = [
     name: 'Vanguard',
     tagClass: 'tag--vanguard',
     primary: {
+      name: 'Cover Shooter',
+      spec: 'Firepower',
+      slug: 'cover-shooter',
+      explanation: 'Cover Shooter is the Season 2 creator pick for Commando damage. TikTokAndy switched his Double Barrel build to it in early October, soloed Precious Cargo on Legendary with it on October 6, and calls it second to none for PvE with that gun. It adds +15% Weapon Damage, and Critical Hits from behind cover have an 80% chance of granting +16% Weapon Critical Hit Damage, stacking 3 times. His October 27 Lightweight M4 build tries Explosive Round instead and took it to six stars on Lone Wolf floor 20, so aimers have a second option.'
+    },
+    backup: {
       name: 'Strategic Assistance',
       spec: 'Engineering',
       slug: 'strategic-assistance',
-      explanation: 'Strategic Assistance is the Vanguard\'s best OS Protocol because it generates Signature Ability Charge Efficiency and Skill Cooldown reduction through assists. The Vanguard thrives on Tactical Link and Scanning Pulse uptime, and this protocol directly amplifies both. Every assist you land accelerates your team\'s tempo, making this a must-have for group content.'
-    },
-    backup: {
-      name: 'Concerted Strike',
-      spec: 'Firepower',
-      slug: 'concerted-strike',
-      explanation: 'Concerted Strike is the backup for hybrid skill-weapon Vanguards using Scanning Pulse to set up team damage windows.'
+      explanation: 'For a support Vanguard, Strategic Assistance is our earlier pick: assists grant Signature Ability Charge Efficiency and reduce Skill Cooldown, which feeds Tactical Link and Scanning Pulse uptime. AgentHuntzman\'s Recon support build does the same cooldown job with Pressing Matter.'
     }
   },
   {
     name: 'Field Medic',
     tagClass: 'tag--medic',
     primary: {
-      name: 'Concerted Strike',
-      spec: 'Firepower',
-      slug: 'concerted-strike',
-      explanation: 'Concerted Strike makes the Field Medic a genuine hybrid threat. Skill hits within 20 meters grant +8% Damage stacks, which the class triggers constantly through Oxidizing Swarm and Support Station (Season 2 Phase 2 fixed its 20-meter range check). You maintain healing uptime while passively stacking a serious damage buff that makes your weapon hits count.'
+      name: 'Brains Over Brawn',
+      spec: 'Engineering',
+      slug: 'brains-over-brawn',
+      explanation: 'Brains Over Brawn is the pick on GGReborn\'s Season 2 Tactical Pharma build: Skill Critical Chance as the main stat, and hits deal extra damage equal to 24% of your Engineering. It\'s only a Specialized (blue) protocol, which is good news for your Phoenix Credits. In his October 23 Lone Wolf test, Chain Reaction, Collateral Damage and Tactical Persistence all finished within five seconds of it, so if you already own one of those, keep it.'
     },
     backup: {
       name: 'Medical Excellence',
       spec: 'Toughness',
       slug: 'medical-excellence',
-      explanation: 'Medical Excellence is the backup for dedicated team-keeper Medics running Heroic Nest extractions where someone has to survive at all costs.'
+      explanation: 'For a Combat Medicine healer, Medical Excellence: healing an ally above half Health gives the team extra healing equal to 5% Max Health, and healing one below half gives the target 12.5% Max Health. Nadie\'s tank-medic build runs Pummeling Shield instead, because a medic who can\'t die heals for longer.'
     }
   },
   {
@@ -53,13 +53,13 @@ const classes = [
       name: 'Pummeling Shield',
       spec: 'Toughness',
       slug: 'pummeling-shield',
-      explanation: 'Pummeling Shield defines the Bulwark class. The stun proc on every 10 hits and the extra health regeneration on damage taken makes Heroic content viable. Since the June 26, 2026 hotfix the stun lasts 1.5 seconds (down from 2) and has a 10-second cooldown, so it interrupts instead of stun-locking. Without this protocol, the Bulwark loses its core identity as the team\'s immovable anchor. There is no real second choice for serious play.'
+      explanation: 'Pummeling Shield is still the Bulwark protocol, and Nadie runs it on both of his creator builds here. While you have Extra Health, every 10 hits apply a stun, and at Max Health getting hit grants Extra Health equal to 2400% of your Firepower. Since the June 26, 2026 hotfix the stun lasts 1.5 seconds (down from 2) on a 10-second cooldown, so it interrupts instead of stun-locking, which is why it dropped from S to A on our tier list.'
     },
     backup: {
       name: 'Heavy Armor',
       spec: 'Toughness',
       slug: 'heavy-armor',
-      explanation: 'Heavy Armor provides a damage bonus plus assist-triggered survivability, a solid option while farming for Pummeling Shield. For DPS Breacher builds, Death From Afar converts Headshot Damage into raw Firepower (see Saiynergy\'s 334k DPS Breacher build).'
+      explanation: 'Heavy Armor grants +14.4% Damage while you have Extra Health, and assists grant Extra Health worth 16% of Max Health, a solid option while you farm for Pummeling Shield. For DPS Breacher builds, Death From Afar converts Headshot Damage into Firepower (see Saiynergy\'s 334k DPS Breacher build).'
     }
   },
   {
@@ -69,42 +69,42 @@ const classes = [
       name: 'Surgical Engineering',
       spec: 'Engineering',
       slug: 'surgical-engineering',
-      explanation: 'Surgical Engineering is the Demolitionist\'s best protocol because of the 60% chance to gain +16% Skill Critical Damage on every Skill Crit. The Demolitionist has naturally high skill crit chance, so this proc triggers constantly. The stacking damage amplification pushes your explosive skills into one-shot territory on elites.'
+      explanation: 'Surgical Engineering is our earlier pick: Skill Critical Hits have a 60% chance of granting +16% Skill Critical Damage for 10 seconds, stacking, so it pays off on a build that already stacks Skill Crit Chance. We haven\'t found a Season 2 creator result for Demolitionist yet, and PVE Enjoyer\'s pre-Season 2 Glass Cannon build runs Pressing Matter for cooldowns instead.'
     },
     backup: {
       name: 'Collateral Damage',
       spec: 'Engineering',
       slug: 'collateral-damage',
-      explanation: 'Collateral Damage adds damage equal to 3000% Engineering to enemies within 5 meters of whatever your skills hit, on a 10-second cooldown. Pick this if you want AoE coverage rather than crit damage.'
+      explanation: 'Collateral Damage adds damage equal to 3000% Engineering to enemies within 5 meters of whatever your skills hit, on a 10-second cooldown. Pick this if you want AoE coverage rather than crit damage. It tied for second in GGReborn\'s October 23 test on a Tactical Pharma build, so the explosion math holds up.'
     }
   },
   {
     name: 'Tech Operator',
     tagClass: 'tag--tech',
     primary: {
-      name: 'Tactical Layering',
+      name: 'Recursive Treatment',
       spec: 'Engineering',
-      slug: 'tactical-layering',
-      explanation: 'Tactical Layering gives +15% Engineering per skill deployment, stacking up to 3 times. The Tech Operator\'s Striker Drone uptime and frequent skill rotation means you hit max stacks quickly and keep them. This scales perfectly with the class\'s design and keeps your Engineering stat compounding throughout encounters.'
+      slug: 'recursive-treatment',
+      explanation: 'For an Aegis healer, Recursive Treatment is TikTokAndy\'s pick on his October 10 Aegis Team Healer build, his favorite PvE build right now. Healing or granting Extra Health grants +20% Skill Intensity, on top of an Engineering main stat, and an Aegis kit is built around healing.'
     },
     backup: {
-      name: 'Concerted Strike',
-      spec: 'Firepower',
-      slug: 'concerted-strike',
-      explanation: 'Concerted Strike is the community consensus pick for Drone-Overload focused builds. The drone\'s constant skill hits keep the buff active without player effort.'
+      name: 'Brains Over Brawn',
+      spec: 'Engineering',
+      slug: 'brains-over-brawn',
+      explanation: 'For Offensive Operations drone damage, Brains Over Brawn is the pick on LtFoe\'s and Tampishach\'s Tech Op builds (both from before Season 2). Tactical Layering (+15% Engineering per skill deployment, up to 3 stacks) also suits Striker Drone rotations if that\'s what you own.'
     }
   }
 ];
 
 const faqs = [
-  { question: "What is the best OS Protocol in Division Resurgence?", answer: `The strongest build-defining protocols are Explosive Charge (Engineering), Explosive Round (Firepower), and Pummeling Shield (Toughness). These three anchor the highest-performing builds in each specialization at ${lastVerified}.` },
-  { question: "How do OS Protocols work in Division Resurgence?", answer: "OS Protocols are unique gear-talent items that slot into your Operating System loadout. Each provides a main stat, three sub-stats, and a unique Talent that triggers under specific combat conditions. You can swap them freely at any safe house." },
-  { question: "Can you change OS Protocols mid-mission?", answer: "No. OS Protocols can only be swapped outside of combat, at a Base of Operations, safe house, or any non-combat area. Plan your protocol for the encounter you're about to enter." },
-  { question: "What is the best OS Protocol for Vanguard?", answer: "Strategic Assistance (Engineering, High-End). The assist-based Signature Ability Charge Efficiency and Skill Cooldown reduction directly amplify the class's reliance on Tactical Link and Scanning Pulse uptime." },
-  { question: "What is the best OS Protocol for Field Medic?", answer: "Concerted Strike (Firepower, High-End). Skill hits within 20 meters grant +8% Damage stacks, which the class triggers constantly through Oxidizing Swarm and Support Station. Season 2 Phase 2 fixed its 20-meter range check." },
-  { question: "What is the best OS Protocol for Bulwark?", answer: "Pummeling Shield (Toughness, High-End). The Stun proc on every 10 hits and the Extra Health regen on damage makes the class viable at Heroic difficulty. Since the June 26, 2026 hotfix the stun lasts 1.5 seconds and has a 10-second cooldown." },
-  { question: "What is the best OS Protocol for Demolitionist?", answer: "Surgical Engineering (Engineering, High-End). The 60% chance of +16% Skill Critical Damage on Skill Crits scales perfectly with the class's natural skill crit chance." },
-  { question: "What is the best OS Protocol for Tech Operator?", answer: "Tactical Layering (Engineering, High-End). +15% Engineering per skill deployment (up to 3 stacks) scales perfectly with Striker Drone uptime and skill rotation." },
+  { question: "What is the best OS Protocol in Division Resurgence?", answer: "Going by Season 2 Phase 2 creator results, Brains Over Brawn and Cover Shooter, the two S picks on our OS Protocol tier list. Brains Over Brawn is on GGReborn's Season 2 Tactical Pharma build, and Cover Shooter is what TikTokAndy ran when he soloed Precious Cargo on Legendary with his Double Barrel Commando. The best one for you still depends on your class, which is what the picks above are for." },
+  { question: "How do OS Protocols work in Division Resurgence?", answer: "OS Protocols are unique gear-talent items that slot into your Operating System loadout. Each provides a main stat, three sub-stats, and a unique Talent that triggers under specific combat conditions. Died Again Gaming points out that any agent level can equip any rarity; higher rarities just roll bigger stats and better talents." },
+  { question: "How do you upgrade OS Protocols?", answer: "Two separate ways. Leveling raises the stats: you feed a protocol Algorithm Data from bounties and open-world activities, or spare protocols, and creator readings show level 50 doubling the percentage main stat. Talent Upgrade raises the talent: you donate duplicates of the same protocol, and Ubisoft's published ladders climb in five steps of 20% of the base value, ending at double. Purple duplicates are far easier to find than gold ones, so a purple you can actually max is often the better bet." },
+  { question: "What is the best OS Protocol for Vanguard?", answer: "For a Commando damage build, Cover Shooter (Firepower, High-End), TikTokAndy's Double Barrel pick since early October; his October 27 Lightweight M4 build runs Explosive Round instead. For team support, Strategic Assistance from our earlier ranking: its assists feed Signature Ability Charge Efficiency and Skill Cooldown reduction." },
+  { question: "What is the best OS Protocol for Field Medic?", answer: "For Tactical Pharma, Brains Over Brawn (Engineering, Specialized), which GGReborn runs on his Season 2 build; Chain Reaction, Collateral Damage and Tactical Persistence finished within five seconds of it in his October 23 Lone Wolf test. For a Combat Medicine healer, Medical Excellence, while Nadie's tank medic runs Pummeling Shield." },
+  { question: "What is the best OS Protocol for Bulwark?", answer: "Pummeling Shield (Toughness, High-End). The stun every 10 hits while you have Extra Health still defines the class. Since the June 26, 2026 hotfix the stun lasts 1.5 seconds and has a 10-second cooldown, so it's an interrupt, not a stun-lock." },
+  { question: "What is the best OS Protocol for Demolitionist?", answer: "Surgical Engineering (Engineering, High-End), from our earlier ranking: a 60% chance of +16% Skill Critical Damage on Skill Crits. We haven't found a Season 2 creator result for Demolitionist yet." },
+  { question: "What is the best OS Protocol for Tech Operator?", answer: "For an Aegis healer, Recursive Treatment, TikTokAndy's pick on his October Aegis Team Healer build. For drone damage, Brains Over Brawn, the pick on two Tech Op creator builds from before Season 2, with Tactical Layering as the alternative." },
 ];
 ---
 
@@ -114,11 +114,10 @@ const faqs = [
     <SectionTag label="Guide" />
     <h1 class="heading-accent">Best OS Protocol Per Class</h1>
     <p style="color:var(--ink-muted);margin-bottom:var(--sp-3);">
-      The right OS Protocol turns a good build into a great one. Here's the best primary and backup protocol for every class in Division Resurgence, verified for {lastVerified}.
+      The right OS Protocol turns a good build into a great one. Here's a primary and backup protocol for every class in Division Resurgence, matched to our <a href="/tier-list/os-protocols/" style="color: var(--accent);">OS Protocol tier list</a> and the Season 2 creator builds behind it.
     </p>
     <p style="color:var(--ink-muted);margin-bottom:var(--sp-3);">
-      <strong>Update (October 2026):</strong> we haven't re-tested these picks since {lastVerified}. Two of them changed on paper: Pummeling Shield's stun got a 10-second cooldown (and dropped from 2s to 1.5s) in the June 26 hotfix, and Concerted Strike's 20-meter range check was fixed in Season 2 Phase 2. Full values are on each protocol's <a href="/database/os-protocols/" style="color: var(--accent);">database page</a>. Playing Tactical Pharma? The newest creator testing is on the Engineering side: in GGReborn's October 23 Lone Wolf test, Chain Reaction, Collateral Damage, Tactical Persistence and Brains Over Brawn finished within five seconds of each other (<a href="/builds/tactical-pharma-season-2-build-ggreborn/" style="color: var(--accent);">details</a>).
-    </p>
+      <strong>Update (October 28, 2026):</strong> these picks now follow our <a href="/tier-list/os-protocols/" style="color: var(--accent);">OS Protocol tier list</a>, which ranks protocols from Season 2 Phase 2 creator results; our own last in-game check was {lastVerified}. Two protocols changed on paper since then: Pummeling Shield's stun got a 10-second cooldown (and dropped from 2s to 1.5s) in the June 26 hotfix, and Concerted Strike's 20-meter range check was fixed in Season 2 Phase 2, with Ubisoft's bug reporter closing the matching report on October 23. Full values are on each protocol's <a href="/database/os-protocols/" style="color: var(--accent);">database page</a>.</p>
 
     <div style="display: inline-flex; align-items: center; gap: 6px; font-family: var(--font-mono); font-size: var(--text-xs); color: #6DAA45; background: rgba(109, 170, 69, 0.1); border: 1px solid rgba(109, 170, 69, 0.25); padding: 6px 14px; border-radius: 999px; margin-bottom: var(--sp-8); letter-spacing: 0.02em;">
       <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>

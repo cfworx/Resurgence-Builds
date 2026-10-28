@@ -108,7 +108,7 @@ If you're freshly level 40, our [endgame tips guide](/guides/division-resurgence
 ### OS Protocols
 
 - **Dominating Presence:** scaling values updated and maximum scaling reduced to **35/42/49/56/63/70%**. The [Milkshake Machine](/builds/milkshake-machine-strawberry-milkshake-lmg-build/) build is the one on our site that cares most.
-- **Concerted Strike:** fixed so it works within its intended **20 meter range**.
+- **Concerted Strike:** fixed so it works within its intended **20 meter range**. Ubisoft's bug reporter closed the matching report on October 23 ([our roundup](/news/bug-reporter-fixes-october-23/)).
 - **Relentless Assault:** fixed using the wrong damage type, and its tooltip now correctly references Weapon Damage.
 
 Our [OS Protocol tier list](/tier-list/os-protocols/) and the [OS Protocol database](/database/os-protocols/) carry these notes.

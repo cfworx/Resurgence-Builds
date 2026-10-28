@@ -35,9 +35,11 @@ const rarityColor = protocol.rarity === 'High-End' ? '#F5CC45' :
                     protocol.rarity === 'Superior' ? '#a855f7' :
                     protocol.rarity === 'Specialized' ? '#3b82f6' : '#888';
 
-const specClass = protocol.specialization === 'Engineering' ? 'Demolitionist, Tech Operator, or Tactical Pharma' :
-                  protocol.specialization === 'Firepower' ? 'Vanguard' :
-                  protocol.specialization === 'Toughness' ? 'Bulwark or Field Medic (Combat Medicine)' : 'any specialization';
+// Focus core stats as in planner-specs.json: Commando and Breacher build Firepower, Juggernaut and
+// Combat Medicine build Toughness, and the other six focuses build Engineering.
+const specClass = protocol.specialization === 'Engineering' ? 'Demolitionist, Tech Operator, Tactical Pharma, or Vanguard Recon' :
+                  protocol.specialization === 'Firepower' ? 'Vanguard Commando or Bulwark Breacher' :
+                  protocol.specialization === 'Toughness' ? 'Bulwark Juggernaut or Field Medic (Combat Medicine)' : 'any specialization';
 
 const osDrop = dropRowsFor('os-protocol', protocol.name)[0];
 

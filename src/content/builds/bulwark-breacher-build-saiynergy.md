@@ -8,7 +8,7 @@ pvp: true
 lastUpdated: 2026-05-30T00:00:00Z
 patch: "1.1.2.2"
 tags: ["Breacher", "Shield", "Fury Strike", "Phalanx Attack", "Lightweight M4", "Vector 45 ACP", "Saiynergy", "ATLAS Division", "Bulwark", "Death From Afar"]
-description: "Saiynergy's Bulwark Breacher build: 334k DPS, 4pc Fury Strike, Ballistic Shield, Death From Afar OS. Full gear, talents, weapons, and loot routes."
+description: "Saiynergy's Bulwark Breacher build: 334k DPS, 4pc Fury Strike, Phalanx Shield, Death From Afar OS. Full gear, talents, weapons, and loot routes."
 author: "RapidF5 (via Saiynergy)"
 featuredImage: "/images/builds/bulwark-breacher-build-saiynergy-hero.jpg"
 imageAlt: "Division Resurgence Bulwark Breacher build 334k DPS shield wall by Saiynergy showing 23.17k Power Score with Fury Strike and Phalanx Attack gear"
@@ -47,7 +47,7 @@ faqs:
 > [!INFO] Modified Weapon Talents
 > We have tweaked the weapon talents on the Lightweight M4 from Saiynergy's original loadout. He runs Steady Hands and Medical Accuracy. We recommend **Killer + Breadbasket** instead. Killer is the strongest AR talent for crit builds and Breadbasket stacks Headshot Damage that feeds directly into Death From Afar. The rest of the build is Saiynergy's original.
 
-This is a **Breacher shield build** that anchors a doorway and refuses to leave. Saiynergy is sitting at **23.17k Power Score, 334.07k DPS, and 7,679 Armor**. The 4pc Fury Strike gives you the crit chance and crit damage backbone. The 2pc Phalanx Attack stacks magazine size so the Vector keeps firing past the point where most builds reload and die. The Ballistic Shield with **Provocateur** draws enemy aggro so your team can work. The Breach Combo with **Positive Feedback** restores bullets on hits. The Shockwave Spike Mk.3 with **King of the Pit** keeps your crit chance topped off. **Death From Afar** OS Protocol turns headshot damage into raw Firepower. The core loop is straightforward: shield up, walk forward, let the Vector pour rounds into whatever the M4 can't reach. Your job is to be the wall. Your fireteam's job is to be the people who do not have to be the wall.
+This is a **Breacher shield build** that anchors a doorway and refuses to leave. Saiynergy is sitting at **23.17k Power Score, 334.07k DPS, and 7,679 Armor**. The 4pc Fury Strike gives you the crit chance and crit damage backbone. The 2pc Phalanx Attack stacks magazine size so the Vector keeps firing past the point where most builds reload and die. The Phalanx Shield with **Provocateur** draws enemy aggro so your team can work. The Breach Combo with **Positive Feedback** restores bullets on hits. The Shockwave Spike Mk.3 with **King of the Pit** keeps your crit chance topped off. **Death From Afar** OS Protocol turns headshot damage into raw Firepower. The core loop is straightforward: shield up, walk forward, let the Vector pour rounds into whatever the M4 can't reach. Your job is to be the wall. Your fireteam's job is to be the people who do not have to be the wall.
 
 > [!WARNING] Season 2 changes that affect this build
 > - **Shockwave Spike (Season 2 Phase 1):** Stun cut from 3.5s to 2s and cooldown raised from 12s to 14s. Fewer Spikes per fight means less King of the Pit crit chance uptime. Season 2 Phase 2 also closed some cover-transition edge cases where Spike could be used when it shouldn't.
@@ -83,7 +83,7 @@ This is a **Breacher shield build** that anchors a doorway and refuses to leave.
 | **Primary** | Lightweight M4 (T2, AR, Level 45) | **Killer + Breadbasket** (RapidF5 rec) · Long Range Scope · Suppressor · Extended Magazine · Vertical Grip |
 | **Secondary** | First Wave Vector 45 ACP (T2, SMG, Level 44) | **Strained + Adaptation** · Red Dot · Extended Magazine · Suppressor |
 | **OS Protocol** | **Death From Afar** (Superior) | Grants Firepower equal to 21.60% Headshot Damage, capped at 54% Firepower |
-| **Skill 1** | Ballistic Shield | Mobile cover, Breacher signature kit |
+| **Skill 1** | Phalanx Shield | Mobile cover, the Bulwark's core skill (Breach Combo is the signature) |
 | **Skill 2** | Shockwave Spike Mk.3 | AoE damage reduction debuff + crit chance refresh |
 | **Signature** | Breach Combo | Breacher specialization ability |
 
@@ -91,7 +91,7 @@ This is a **Breacher shield build** that anchors a doorway and refuses to leave.
 
 | Skill | Firmware | Quality | Stats |
 |---|---|---|---|
-| Ballistic Shield | **Provocateur** (3pc) | - | Weapon Damage +2.0%~4.0%. Enemies within 20m focus the Agent when deploying Phalanx Shield. +3.20% DR per targeting enemy, up to 5 stacks |
+| Phalanx Shield | **Provocateur** (3pc) | - | Weapon Damage +2.0%~4.0%. Enemies within 20m focus the Agent when deploying Phalanx Shield. +3.20% DR per targeting enemy, up to 5 stacks |
 | Breach Combo | **Positive Feedback** (3pc) | Purple | Max Health +4.0%~8.0%. Within 6s of deploying the Breach Combo, hits have a 40% chance of restoring 1 bullet. Critical Hits increase duration to 0.50s (capped at 2s). |
 | Shockwave Spike Mk.3 | **King of the Pit** (3pc) | High-End | Weapon Damage +2.0%~4.0%. Shockwave Spike Mk.3 hits grant +4% Weapon Critical Hit Chance for 10s, up to 4 stacks. |
 
@@ -149,6 +149,8 @@ Every piece of gear in the build pushes Headshot Damage, and Death From Afar con
 
 **Stats:** Weapon Damage +24.00%, Firepower +77, All Weapon Damage +62, Health +2,043.
 
+Those numbers mix levels: the +24% Weapon Damage is a level 50 main stat (leveling doubles it from +12%) and the 21.60% talent is an upgraded copy, while the sub-stats are our database's base values. A fresh Death From Afar reads +12% Weapon Damage and Firepower equal to 12% Headshot Damage.
+
 ### 2. Tight Grouping (Superior) · Strong Alternative
 
 *"Grants +18% Weapon Damage. Weapon Critical Hits behind cover have a 5% chance of granting +10% Weapon Critical Hit Damage for 5 seconds, stacking up to 3 times."*
@@ -182,8 +184,8 @@ Saiynergy runs Steady Hands and Medical Accuracy on his M4. We are recommending 
 
 ### Secondary: First Wave Vector 45 ACP (T2, SMG, Level 44)
 
-- **Strained:** Firing for 0.5 seconds grants +10% Critical Hit Damage for 5 seconds, stacking up to 3 times, per the talent text in our database. That 10% is the tier 1 value; Season 2 Phase 2 confirmed tier 2 is 14%, so this T2 Vector gets the bigger number. Hold the trigger and the stacks hold with you, which is why the Phalanx mag size matters.
-- **Adaptation:** Body shots grant +4.80% Skill Duration for 8 seconds and headshots grant +6% Skill Intensity for 8 seconds (tier 1 values from our talent database). That's skill-side value for the Shield and Spike, not a survival talent.
+- **Strained:** Firing for 0.5 seconds grants +10% Critical Hit Damage for 5 seconds, stacking up to 3 times, per the talent text in our database. That 10% is the rank I value; Season 2 Phase 2's notes put the next rank (Strained II) at 14%. Talent rank isn't the weapon's T2 tier, since creators find rank II talents on tier 0 and tier 1 guns too, so check whether your Vector's line reads Strained or Strained II. Hold the trigger and the stacks hold with you, which is why the Phalanx mag size matters.
+- **Adaptation:** Body shots grant +4.80% Skill Duration for 8 seconds and headshots grant +6% Skill Intensity for 8 seconds (rank I values from our talent database). That's skill-side value for the Shield and Spike, not a survival talent.
 
 **Attachments:** Red Dot, Extended Magazine, Suppressor.
 
@@ -196,7 +198,7 @@ Backup weapons for farming attachments and talents:
 | Weapon | Talents |
 |---|---|
 | Police M4 (AR) | Backup Battery + Thick Skin |
-| Enhanced ACR-E (AR) | Thick Skin + Enhanced Trade |
+| Enhanced ACR-E (AR) | Thick Skin + Enhancement Trade |
 
 ---
 
@@ -211,7 +213,7 @@ Backup weapons for farming attachments and talents:
 | Lightweight M4 (AR) | Killer + Breadbasket talents |
 | Vector 45 ACP (SMG) | Strained + Adaptation talents |
 | Death From Afar OS | Any attribute; the talent is what matters |
-| Ballistic Shield mod | Provocateur firmware |
+| Phalanx Shield mod | Provocateur firmware |
 | Shockwave Spike mod | King of the Pit firmware |
 
 ---

@@ -171,7 +171,7 @@ Talent text is from our [OS Protocol database](/database/os-protocols/); the opi
 | OS Protocol | Rarity | Talent | TikTokAndy's take |
 |---|---|---|---|
 | **Recursive Treatment** | Superior | Main stat Engineering. Healing or granting Extra Health grants +20% Skill Intensity. | His pick. His copy reads +32% Engineering and +28% Skill Intensity on the talent, and he wants to take it to level 50. "This is right up our alley." |
-| **Strategic Assistance** | High-End | Main stat Skill Intensity. Assists grant +4.80% Signature Ability Charge Efficiency for 10 seconds and reduce Skill Cooldown by 2.40%, up to 5 stacks. | No Engineering, but he says a maxed one gives 45% Skill Intensity, and five stacks add up to 12% faster skills and +24% signature charge. He thinks it gets better once your Engineering is high enough that you can spare it. |
+| **Strategic Assistance** | High-End | Main stat Skill Intensity. Assists grant +4.80% Signature Ability Charge Efficiency for 10 seconds and reduce Skill Cooldown by 2.40%, up to 5 stacks. | No Engineering, but he says a maxed one gives 45% Skill Intensity (by our database's +15% base and the level 50 doubling creators read on other protocols, a maxed copy should show about 30%, so treat the 45 as a possible slip), and five stacks add up to 12% faster skills and +24% signature charge. He thinks it gets better once your Engineering is high enough that you can spare it. |
 | **Last Resort** | Superior | Main stat Skill Intensity. Grants +15% Toughness when an ally's Health reaches 50%, up to +100%. | Not for him: he'd rather have Engineering than Toughness on this build. |
 
 ---

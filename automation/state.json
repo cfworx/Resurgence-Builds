@@ -86,7 +86,8 @@
       "2112936959467561123 Season 2 Phase 2 extended (2026-10-21)",
       "2112212178132447234 We have a letter for you! (2026-10-19)",
       "2111487408558444785 Liberty & Justice for All reminder (2026-10-17)",
-      "2111125021636669911 Milky Way Weapon Cosmetic now available (2026-10-16)"
+      "2111125021636669911 Milky Way Weapon Cosmetic now available (2026-10-16)",
+      "2110388123712561180 October 14 server patch notes: Heavy Weight 25% to 5%, Armory reward display, Build Making Database adds Diamondback 'Agonizing Bite' (2026-10-14)"
     ],
     "lastChecked": "2026-10-28",
     "status": "blocked",
@@ -94,9 +95,20 @@
   },
   "bugReporter": {
     "url": "https://www.ubisoft.com/en-us/game/the-division/the-division-resurgence/bug-reporter/issues",
-    "lastRoundupPost": "2026-09-22",
+    "lastRoundupPost": "2026-10-23",
     "statuses": {
+      "TDR-30": "Done (2026-10-23)",
+      "TDR-31": "Done (2026-10-23)",
+      "TDR-33": "Done (2026-10-23)",
+      "TDR-38": "Done (2026-10-23)",
+      "TDR-39": "Done (2026-10-23)",
+      "TDR-43": "Done (2026-10-23)",
+      "TDR-48": "Done (2026-10-23)",
+      "TDR-52": "Done (2026-10-23)",
+      "TDR-58": "Done (2026-10-23)",
+      "TDR-66": "Done (2026-10-23)",
       "TDR-67": "Done (2026-10-15)",
+      "TDR-75": "Open (2026-10-23)",
       "TDR-81": "In Progress (2026-09-17)",
       "TDR-99": "Done (2026-09-29)",
       "TDR-100": "Done (2026-08-27)",
@@ -108,16 +120,26 @@
       "TDR-141": "Done (2026-09-22)",
       "TDR-157": "Deprioritized (2026-09-03)",
       "TDR-175": "Done (2026-10-02)",
+      "TDR-183": "Done (2026-10-23)",
       "TDR-479": "In Progress (2026-09-25)",
       "TDR-493": "Done (2026-10-15)",
       "TDR-537": "Planned (2026-10-23)",
       "TDR-556": "Done (2026-10-02)",
-      "TDR-652": "unknown (community suggestion: recalibrate one attribute on mods)"
+      "TDR-593": "Done (2026-10-22)",
+      "TDR-608": "Under Review (2026-10-22)",
+      "TDR-621": "Done (2026-10-22)",
+      "TDR-635": "Under Review (2026-10-22)",
+      "TDR-652": "Deprioritized (2026-10-22)",
+      "TDR-662": "Under Review (2026-10-22)",
+      "TDR-679": "Pending Review (filed 2026-10-24 to 27)",
+      "TDR-683": "Pending Review (filed 2026-10-24 to 27)",
+      "TDR-686": "Pending Review (filed 2026-10-24 to 27)",
+      "TDR-687": "Pending Review (filed 2026-10-24 to 27)"
     },
-    "lastChecked": "2026-10-25",
-    "status": "unreachable",
-    "failStreak": 1,
-    "note": "Page needs JavaScript; no issue list visible to WebFetch. Run 3 (2026-10-25 ~14:46 UTC): WebFetch refused every non-search URL with a permission prompt nobody could answer (PROVENANCE_REQUIRED) in the unattended run; not re-read. Run 2026-10-26: not fetched (no direct fetches this run). Run 2026-10-27: not fetched. Run 2026-10-28: not fetched (manual source)."
+    "lastChecked": "2026-10-28",
+    "status": "ok",
+    "failStreak": 0,
+    "note": "Page needs JavaScript; no issue list visible to WebFetch. Interactive session 2026-10-28 read it in a real browser: statuses above are current as of that check (nothing newer than 2026-10-23), and the October 23 roundup post covers them. Each report needs five confirmations to be 'confirmed for review'. Run 3 (2026-10-25 ~14:46 UTC): WebFetch refused every non-search URL with a permission prompt nobody could answer (PROVENANCE_REQUIRED) in the unattended run; not re-read. Run 2026-10-26: not fetched (no direct fetches this run). Run 2026-10-27: not fetched. Run 2026-10-28: not fetched (manual source)."
   },
   "dropRates": {
     "url": "https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2522-drop-rates/",
