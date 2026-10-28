@@ -68,7 +68,7 @@ const faqs = [
 
     <p>OS Protocols are the single highest-impact gear slot in the game. Every protocol carries a unique talent that can completely reshape your build, plus a main stat roll and three sub-stat rolls. There are <strong>{osProtocols.length} distinct protocols across three specializations</strong>: Engineering, Firepower, and Toughness. This guide breaks down every single one, ranks them in a tier list, and tells you exactly which to chase for each of the five class archetypes.</p>
 
-    <p><strong>Update (October 2026):</strong> talent values below include the official changes since our last in-game check: the Applied Demolition buff (Season 1 Phase 3), the Dominating Presence fix and lower cap (Season 2 Phases 1 and 2), and the Concerted Strike and Relentless Assault fixes (Season 2 Phase 2). Pummeling Shield's stun has had a 10-second cooldown since the June 26 hotfix. Rankings and per-class picks were last checked in-game for {lastVerified}.</p>
+    <p><strong>Update (October 28, 2026):</strong> we re-checked all 28 Engineering protocols against the in-game Build-Making Database. Every main stat, sub-stat and talent matched our listings, including the Applied Demolition buff (Season 1 Phase 3) and the Relentless Assault fix (Season 2 Phase 2). The five Engineering protocols we had flagged as unconfirmed are confirmed now, and Long-Range Artillery gained the 5-second talent cooldown we were missing. The Firepower and Toughness values include the official changes since our last in-game check of those protocols: the Dominating Presence fix and lower cap (Season 2 Phases 1 and 2), the Concerted Strike fix (Season 2 Phase 2) and the 10-second cooldown on Pummeling Shield's stun (June 26 hotfix). Rankings and per-class picks were last checked in-game for {lastVerified}.</p>
 
     <p>If you just want the answer: check the <a href="/tier-list/os-protocols/">Tier Rankings</a> or the <a href="/guides/best-os-protocol/">Best Protocol Per Class</a> guide. If you want the receipts, every protocol has its own page with full stats and a use-case recommendation below.</p>
 
@@ -83,6 +83,24 @@ const faqs = [
       <li>A <strong>unique Talent</strong> that triggers under specific combat conditions</li>
       <li>For active-effect protocols, a <strong>Cooldown</strong> in seconds</li>
     </ul>
+
+    <h3 id="stats-by-rarity">Base stats by rarity</h3>
+
+    <p>The in-game Build-Making Database lists every protocol at level 1 with no talent upgrades. In the 28 Engineering protocols we checked there on October 28, 2026, the three sub-stats depend only on rarity, and so does the main stat for each stat type:</p>
+
+    <table>
+      <thead>
+        <tr><th>Rarity</th><th>Engineering</th><th>Skill Damage</th><th>Health</th><th>Main stat at level 1</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>High-End</td><td>+97</td><td>+77</td><td>+2,554</td><td>Engineering 22.50%, Skill Critical Damage 30%, Skill Critical Chance 18% or Skill Intensity 15%</td></tr>
+        <tr><td>Superior</td><td>+77</td><td>+62</td><td>+2,043</td><td>Engineering 18%, Skill Critical Damage 24%, Skill Critical Chance 14.40% or Skill Intensity 12%</td></tr>
+        <tr><td>Specialized</td><td>+58</td><td>+46</td><td>+1,532</td><td>Engineering 13.50%, Skill Critical Chance 10.80% or Skill Intensity 9%</td></tr>
+        <tr><td>Standard</td><td>+38</td><td>+30</td><td>+1,021</td><td>Skill Intensity 6%</td></tr>
+      </tbody>
+    </table>
+
+    <p>In other words, a Superior protocol starts at 80% of the High-End numbers, a Specialized one at 60% and a Standard one at 40% (the flat stats round a little differently). Leveling raises them from there; the upgrade question in the FAQ below has the details.</p>
 
   </div> <!-- close .os-guide -->
 

@@ -8,7 +8,6 @@ import osProtocols from '../../../data/os-protocols.json';
 import { dropRowsFor } from '../../../utils/db-enrich';
 import DbItemExtras from '../../../components/DbItemExtras.astro';
 import { verifiedPatch, DATABASE_UPDATED } from '../../../data/site-config';
-const lastVerified = verifiedPatch('Patch 1.1.2.2'); // Bump: drop the arg ONLY after re-verifying this page's content in-game (CURRENT_PATCH is a ceiling, not an auto-bump)
 
 export function getStaticPaths() {
   return osProtocols.map((protocol: any) => ({
@@ -18,6 +17,11 @@ export function getStaticPaths() {
 }
 
 const { protocol } = Astro.props;
+
+// "Last verified" follows an in-game check of this protocol's stats and talent text. Protocols with
+// `verifiedInGame` (a date) were re-checked in the in-game Build-Making Database for CURRENT_PATCH;
+// the rest keep the older label. Set `verifiedInGame` only after an actual in-game check.
+const lastVerified = protocol.verifiedInGame ? verifiedPatch() : verifiedPatch('Patch 1.1.2.2');
 
 const title = `${protocol.name} OS Protocol`;
 const description = metaDescription(protocol.summary, `${protocol.name} OS Protocol in The Division Resurgence: stats, talent breakdown, and which builds run it.`);
@@ -74,7 +78,7 @@ const protocolLd = {
   dateModified: DATABASE_UPDATED,
   ...(protocol.image ? { image: { '@type': 'ImageObject', url: `${siteUrl}${protocol.image}`, width: 620, height: 310 } } : {}),
   inLanguage: 'en-US',
-  lastReviewed: '2026-05-30',
+  lastReviewed: protocol.verifiedInGame || '2026-05-30',
   wordCount: 600,
   about: { '@id': `${siteUrl}/#division-resurgence` },
 };

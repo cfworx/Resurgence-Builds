@@ -198,7 +198,9 @@ Update these when a source changes them (and only then):
   if still no public codes, bump the month in the title and in "Active Codes: <Month Year>", and set `lastUpdated`.
 - Database JSON (`src/data/os-protocols.json`, `weapon-talents.json`, `skill-mod-combos.json`, notes files): when patch
   notes change a value, update it and add a `patchHistory` note where that file supports one. Keep "Last verified" stamps
-  as they are (they mean in-game verification, which an automated run can't do).
+  as they are (they mean in-game verification, which an automated run can't do). The same goes for `verifiedInGame` in
+  `os-protocols.json`: it records an in-game check (Cory's Build-Making Database recording of October 28, 2026), so when
+  patch notes change a protocol's value, delete that protocol's `verifiedInGame` instead of leaving it on.
 - Interactive map (`src/data/pois.json` via `scripts/build-map-data.mjs`): only when official sources announce new map content.
 
 ---
