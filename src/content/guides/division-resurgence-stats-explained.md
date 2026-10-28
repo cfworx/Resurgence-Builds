@@ -9,7 +9,7 @@ featuredImage: "/images/division-resurgence-best-pve-dps-builds.webp"
 imageAlt: "A surreal portrait of an agent whose face breaks apart into body armor, weapon parts and floating stat numbers"
 author: "RapidF5"
 shareTitle: "Your stat sheet, translated"
-shareText: "Firepower, Toughness, Engineering, multi-shot, the 80% damage reduction cap and the 1.4x rule for talent ranks. Every stat in Division Resurgence, explained."
+shareText: "Firepower, Toughness, Engineering, multi-shot, the 80% damage reduction cap and how talent ranks scale. Every stat in Division Resurgence, explained."
 faqs:
   - question: "What does Firepower do in Division Resurgence?"
     answer: "Firepower is the main attribute for weapon damage, the stat gun builds like Vanguard Commando stack. Toughness is the survivability stat and Engineering powers skills, healing and buffs. If a YouTuber says 'firearms' or 'electronics,' those are the original Division's (2016) names for Firepower and Engineering; same idea, older game."
@@ -20,7 +20,7 @@ faqs:
   - question: "Should I stack crit chance or crit damage first?"
     answer: "Crit chance first. AgentHuntzman's rule is at least 50% Critical Hit Chance before you invest everything into Critical Hit Damage, because a thousand percent crit damage at one percent crit chance only matters once every hundred shots. Remember that skills and buffs add crit chance during fights: TikTokAndy's Commando sits at 51% on the sheet and about 90% with Scanning Pulse and Tactical Link up."
   - question: "What's the difference between a talent and its II version?"
-    answer: "The II version is the same effect at a higher rank, and in every case we've checked it's about 1.4 times the base value. Ubisoft's own Season 2 Phase 2 notes give the cleanest example: the Strained talent is 10% at tier 1 and 14% at tier 2. Creator readings follow the same pattern, for example Siege at 37.5% Extra Health and Siege II at about 52%."
+    answer: "The II version is the same effect at a higher rank, and in most cases we've checked it's about 1.4 times the base value. Ubisoft's own Season 2 Phase 2 notes give the cleanest example: the Strained talent is 10% at tier 1 and 14% at tier 2. Creator readings mostly follow the same pattern, for example Siege at 37.5% Extra Health and Siege II at about 52%. Two on-screen tooltips don't fit, Slaughter Fortitude II and Ammo Supply II, so check the tooltip before you do the math."
 ---
 
 Your stat sheet in The Division Resurgence is long, and about half of it sounds the same. This guide translates it: the three main attributes, what every secondary stat actually does, the rules of thumb creators swear by, the official caps and changes, and the math behind talent ranks and OS Protocol upgrades, which nobody in the game explains.
@@ -84,9 +84,9 @@ These are creator opinions, not game rules, but they come up in almost every bui
 3. **Recalibrate for the build's job.** AgentHuntzman's example: a build meant to buff, apply pressure and keep uptime should recalibrate for that, and "not turn you into a tank" with comfort stats like extra Armor.
 4. **Power Score isn't build strength.** Every creator we follow says it. Power Score tells you whether you meet an activity's recommended level; sets, talents and attributes decide whether the build works. AgentHuntzman notes that mods alone inflate it a lot: his level 20 weapon mods added roughly 350 to 500 Power Score each.
 
-## How talent ranks scale: the 1.4x rule
+## How talent ranks scale: usually 1.4x
 
-Talents come in ranks, written as "II" (or "2") after the name. Ubisoft doesn't publish a rank table, but its Season 2 Phase 2 notes give one clean example while fixing a tooltip: the **Strained** weapon talent is **10% at tier 1 and 14% at tier 2**. That's exactly 1.4 times, and every creator reading we've compared to our database follows the same pattern:
+Talents come in ranks, written as "II" (or "2") after the name. Ubisoft doesn't publish a rank table, but its Season 2 Phase 2 notes give one clean example while fixing a tooltip: the **Strained** weapon talent is **10% at tier 1 and 14% at tier 2**. That's exactly 1.4 times, and most creator readings we've compared to our database follow the same pattern:
 
 | Talent | Rank I (our database) | Rank II (reading) | Ratio |
 |---|---|---|---|
@@ -94,11 +94,13 @@ Talents come in ranks, written as "II" (or "2") after the name. Ubisoft doesn't 
 | Siege | 37.50% Extra Health | about 52% (TikTokAndy) | about 1.4x |
 | Toymaker | +15% Skill Multi-Shot Chance | +21% (TikTokAndy) | 1.4x |
 | Suppressive Fire | +18% Magazine Size, +6% Rate of Fire | +25%, +8.4% (TikTokAndy) | about 1.4x |
-| Precision Support | +7% Armor per stack | +9.80% (Nadie's screenshots, from his build submission); "10" (TikTokAndy) | 1.4x |
+| Precise Support | +7% Armor per stack | +9.80% (TikTokAndy's tooltip, October 27; Nadie's screenshots, from his build submission) | 1.4x |
 | Still Alive | 30% of missing Health | 42% (TikTokAndy) | 1.4x |
 | Torrential Downpour | +22.50% Engineering | +31.50% (TikTokAndy) | 1.4x |
+| Slaughter Fortitude | +12% Armor per stack | +18% (TikTokAndy's tooltip, September 16) | 1.5x |
+| Ammo Supply | 54% chance | 65% (TikTokAndy's tooltip, September 16) | 1.2x |
 
-AgentHuntzman shows the same thing on another talent in the Build Database: Blood for Blood's bonus damage goes from 0.50% of max Health to 0.70% at level two. So when you see a II talent on a drop, expect about 40% more of whatever the base version does. Our database lists base (rank I) text unless it says otherwise.
+AgentHuntzman shows the same thing on another talent in the Build Database: Blood for Blood's bonus damage goes from 0.50% of max Health to 0.70% at level two. The last two rows are the exceptions: both are read straight off TikTokAndy's tooltips, and they come out at 1.5 and 1.2 times our rank I numbers. Either those talents scale differently or our rank I captures are off, and we're re-checking them. So when you see a II talent on a drop, expect about 40% more of whatever the base version does, then check the tooltip. Our database lists base (rank I) text unless it says otherwise.
 
 ## How OS Protocols scale
 
@@ -108,13 +110,18 @@ OS Protocols grow two ways, and Ubisoft's own patch notes show the pattern for o
 
 - **Applied Demolition** (Season 1 Phase 3 buff): 43.2%, 51.84%, 60.48%, 69.12%, 77.76%, then 86.2% (as printed; the pattern says 86.4) of Skill Critical Damage.
 - **Dominating Presence** (Season 2 Phase 2): maximum scaling reduced to 35, 42, 49, 56, 63 and 70%.
+- **Recursive Treatment** on screen: TikTokAndy's copy with two of five upgrade diamonds reads +28% Skill Intensity on a +20% base, two steps of 4 (his October 10 video).
 
-**Levels (up to 50).** Creator readings say a protocol's percentage main stat doubles by level 50:
+**Levels (up to 50).** Creator readings say a protocol's percentage main stat doubles by level 50, and the on-screen ones in between fit a simple ladder: **+10% of the base every 5 levels**. That's our reading of the screenshots below, not a rule Ubisoft has published:
 
-| Protocol | Base main stat (our database) | Creator reading | Source |
-|---|---|---|---|
-| Augmented Lethality | +18% Firepower | 36% Firepower on the copy he'd used "for a very long time" | TikTokAndy, September 30 |
-| Explosive Round | +22.50% Firepower | 42.75% below level 50, "45" at max | TikTokAndy, October 27 |
+| Protocol | Base main stat (our database) | Creator reading | Multiplier | Source |
+|---|---|---|---|---|
+| Pressing Matter | +12% Skill Intensity | 24% at level 50 | 2x | AgentHuntzman, April 26 |
+| Augmented Lethality | +18% Firepower | 36% Firepower on the copy he'd used "for a very long time" | 2x | TikTokAndy, September 30 |
+| Recursive Treatment | +18% Engineering | 32.40% at level 42 (on screen) | 1.8x | TikTokAndy, October 10 |
+| Explosive Round | +22.50% Firepower | 42.75% at level 45 (on screen), "45" at max | 1.9x | TikTokAndy, October 27 |
+
+The flat attributes climb much faster than the percentage: the same level 42 Recursive Treatment shows +285 Engineering against the +77 in our level 1 data, about 3.7 times, and AgentHuntzman's level 50 Pressing Matter shows +358 Engineering, about 4.6 times.
 
 So when you compare two protocols, compare them at the same level and upgrade step, or you're comparing a puppy to a dog. The [OS Protocol database](/database/os-protocols/) lists base values; the [tier list](/tier-list/os-protocols/) ranks them from creator results.
 
@@ -140,17 +147,18 @@ For browsing outside the game, our [database](/database/) collects gear sets, ta
 - [AgentHuntzman: Main Stats Are LYING To You (YouTube, May 27, 2026)](https://www.youtube.com/watch?v=tjo7oBeX3Fk)
 - [AgentHuntzman: The Game NEVER Properly Explains These Mechanics (YouTube, May 2, 2026)](https://www.youtube.com/watch?v=EflBC5vKwT0)
 - [AgentHuntzman: Why Your Build Feels WEAK (YouTube, May 6, 2026)](https://www.youtube.com/watch?v=8n9wQDmZN4o)
-- [AgentHuntzman: Best Scout Build (YouTube, April 26, 2026)](https://www.youtube.com/watch?v=b1ZjnGeeRKI)
+- [AgentHuntzman: Best Scout Build (YouTube, April 26, 2026)](https://www.youtube.com/watch?v=b1ZjnGeeRKI) (Pressing Matter at level 50)
 - [AgentHuntzman: How to start your build (YouTube, April 12, 2026)](https://www.youtube.com/watch?v=phHiYGujrRQ)
 - [AgentHuntzman: Gear Farming Made EASY (YouTube, June 3, 2026)](https://www.youtube.com/watch?v=m5a01nBqv_U)
 - [AgentHuntzman: SHD Manual, How Progression ACTUALLY Works (YouTube, May 22, 2026)](https://www.youtube.com/watch?v=Mt3E4A0l0Zk) (damage type color key)
+- [TikTokAndy: My First Time In The Level 40 Dark Zone (YouTube, September 16, 2026)](https://www.youtube.com/watch?v=lBIQT-SeBZg) (Slaughter Fortitude II and Ammo Supply II tooltips, at 15:40 and 13:30)
 - [TikTokAndy: SOLO Heroic Chinatown (YouTube, September 24, 2026)](https://www.youtube.com/watch?v=6dGaisNKCyE) (multi-shot)
 - [TikTokAndy: Best "Automatic" Double Barrel Shotgun Build (YouTube, September 30, 2026)](https://www.youtube.com/watch?v=ITIJB2nj3zg)
 - [TikTokAndy: Precious Cargo Legendary Difficulty But I'm Solo (YouTube, October 6, 2026)](https://www.youtube.com/watch?v=D3yrRSUwhq0) (Torrential Downpour 31.5%)
-- [TikTokAndy: Most Overpowered Team Healer Build (YouTube, October 10, 2026)](https://www.youtube.com/watch?v=VHKfmW4BtEk) (Skill Intensity on an Aegis healer)
+- [TikTokAndy: Most Overpowered Team Healer Build (YouTube, October 10, 2026)](https://www.youtube.com/watch?v=VHKfmW4BtEk) (Skill Intensity on an Aegis healer; Recursive Treatment at level 42, at 21:28)
 - [TikTokAndy: Toxic Pharma Sucks...PvP Is Even Worse (YouTube, October 15, 2026)](https://www.youtube.com/watch?v=f20v8_cv9Ls)
-- Our [Muscular Nurse build](/builds/muscular-nurse-combat-medicine-build-nadie/) (Nadie's Precision Support II screenshots)
-- [TikTokAndy: Vanguard - Commando With A Lightweight M4 (YouTube, October 27, 2026)](https://www.youtube.com/watch?v=RYtZyN_0P0Y)
+- Our [Muscular Nurse build](/builds/muscular-nurse-combat-medicine-build-nadie/) (Nadie's Precise Support II screenshots)
+- [TikTokAndy: Vanguard - Commando With A Lightweight M4 (YouTube, October 27, 2026)](https://www.youtube.com/watch?v=RYtZyN_0P0Y) (Precise Support II tooltip at 1:00, Explosive Round at level 45 at 6:47)
 - [@TheDivMobile: June 26, 2026 server hotfix](https://x.com/TheDivMobile/status/2070483985642197252) (80% damage reduction cap)
 - [Ubisoft Help Center: Patch Note, Season 1 Phase 3](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2521-patch-note---season-1-phase-3/) (Applied Demolition values)
 - [Ubisoft Help Center: Patch Note, Season 2 Phase 2](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2566-patch-note---season-2-phase-2/) (Strained, Dominating Presence)

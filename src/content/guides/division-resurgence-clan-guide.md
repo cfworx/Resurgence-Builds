@@ -67,7 +67,7 @@ Membership is **character specific**, so if you run an alt, it joins (or doesn't
 
 Per Ubisoft's [How do I create a clan?](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2500-how-do-i-create-a-clan/?p=all):
 
-1. Reach level 10.
+1. Reach level 10. Ubisoft's page says clans unlock in the early campaign, at the Base of Operations with Roy Benitez.
 2. Open the Clan menu and choose **Create Clan**.
 3. Pay the one-time fee, which the Help Center lists as **300 Phoenix Credits**. Check the in-game price before you confirm.
 4. Set a **name** (letters only, no numbers or symbols), a **description**, an **emblem**, and whether people can **join freely or need your approval**.
@@ -76,7 +76,7 @@ You become the **Clan Leader** automatically, which means every complaint about 
 
 ## Running a clan
 
-Ubisoft's [How do I manage a clan?](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2501-how-do-i-manage-a-clan/?p=all) says only the Clan Leader (and promoted officers) can manage it. That covers:
+Ubisoft's [How do I manage a clan?](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2501-how-do-i-manage-a-clan/?p=all) says only the Clan Leader (and promoted officers, "if added later") can manage it, so don't count on officer ranks existing yet. That covers:
 
 - Approving or declining join requests
 - Promoting or removing members

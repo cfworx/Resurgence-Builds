@@ -117,7 +117,7 @@ Ubisoft's notes don't describe manuals separately, so we can't tell you the full
 Creator consensus, from the builds on this site:
 
 1. **Your main weapon's model.** Because modules apply to the model, augmenting the gun you'll keep using pays off on every future copy. TikTokAndy's Bighorn felt different with one module ("20% extra damage is crazy").
-2. **The chest piece.** TikTokAndy's October builds (October 6, 10 and 27) all max the chest first. On his Lightweight M4 build, four chest modules plus Armor mods put him at about 10,000 Armor, and full Precision Support II stacks then take it to about 14,000.
+2. **The chest piece.** TikTokAndy's October builds (October 6, 10 and 27) all max the chest first. On his Lightweight M4 build, four chest modules plus Armor mods put him at about 10,000 Armor, and full Precise Support II stacks then take it to about 14,000.
 3. **The rest of the gear, for Health and Armor.** After his build went from fine in the level 39 Dark Zone to "it ain't the same" in the level 40 one, TikTokAndy named modules "the most important thing" to fix.
 4. **Check odd tracks before you buy.** Not every model's first module is damage: the MP7's is Skill Intensity on TikTokAndy's Aegis healer, and one augmentation on his mask gave Damage Reduction.
 
@@ -125,7 +125,7 @@ Clan credits are the slowest but steadiest route, which is why GGReborn put "not
 
 ## Builds that lean on modules
 
-- [Lightweight M4 Commando](/builds/lightweight-m4-commando-vanguard-build-tiktokandy/): four chest modules and Armor mods feeding Precision Support
+- [Lightweight M4 Commando](/builds/lightweight-m4-commando-vanguard-build-tiktokandy/): four chest modules and Armor mods feeding Precise Support
 - [Misdirection Double Barrel Commando](/builds/misdirection-double-barrel-commando-build-tiktokandy/): +40% damage on the shotgun at three modules
 - [Aegis Team Healer](/builds/aegis-team-healer-tech-operator-build-tiktokandy/): an MP7 primary whose module adds Skill Intensity
 

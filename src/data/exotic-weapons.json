@@ -69,8 +69,8 @@
     "type": "Assault Rifle",
     "damage": "Piercing Damage",
     "talentName": "Big Game Hunter",
-    "talentDescription": "Headshots grant +3.3% Headshot Damage for 20 seconds, up to 50 stacks.",
-    "note": "Talent name, values and Piercing damage are TikTokAndy's reading of his level 1, T1 copy in his September 16, 2026 video. Ubisoft's August 5, 2026 announcement says it fires full auto, or semi-automatic when you aim down sights. Its stat lines aren't verified yet.",
+    "talentDescription": "Aiming switches the weapon to semi-auto firing mode, dealing an extra 300% Weapon Damage per shot. Headshots grant +3.30% Headshot Damage for 20 seconds, up to 50 stacks. On max stacks, loses 10 stacks every 4 seconds. Headshots prevent from losing stacks.",
+    "note": "Talent text, class and Piercing damage are read off the tooltip of TikTokAndy's Level 1, T1 copy in his September 16, 2026 video (13:00). The same card shows 800 RPM, a 47-round magazine (he was wearing two Phalanx Attack pieces, +18% Magazine Size), Accuracy 62, Reload Speed 2.36s, Optimal Range 27m, Movement Speed 44 and Stability 62 with five level 1 mods fitted, so we aren't treating those as base stats yet.",
     "caveat": true,
     "acquisition": "Season 2 Phase 1 Classified Ops Pass (free and premium track). Since Season 2 Phase 2, Exotic Sealed Caches can grant exotics from previous seasons.",
     "statsVerified": false
@@ -78,10 +78,11 @@
   {
     "id": "ew-6",
     "name": "The Diamondback",
-    "type": "",
+    "type": "Rifle",
+    "damage": "Shredding Damage",
     "talentName": "Agonizing Bite",
-    "talentDescription": "",
-    "note": "Ubisoft names the talent, Agonizing Bite, in its October 14, 2026 notes, but we haven't verified its effect text, weapon class or stats. Ubisoft's Season 2 Phase 2 article calls it an assault rifle in its page summary. Don't borrow numbers from The Division 2's Diamondback, which is a different game's gun.",
+    "talentDescription": "Marks a random enemy. Hitting that enemy is a guaranteed critical hit and consumes the mark. After you hit a marked target, all shots are critical hits and grant +10% Skill Critical Hit Chance for 5 seconds. A new random enemy is marked after that and whenever you reload.",
+    "note": "Class, damage type and talent come from the in-game card in Capitão Wasabi's September 23, 2026 video, recorded on a Portuguese-language client: it reads Rifle, Shredding damage (\"Dano de trituração\"), 100 RPM and a 5-round magazine on a Level 1, T1 copy. The talent text is our translation of the Portuguese tooltip, so the English wording in game may differ. Ubisoft's Season 2 Phase 2 article calls it an assault rifle in its page summary, but the card says Rifle. Don't borrow numbers from The Division 2's Diamondback, which is a different game's gun.",
     "caveat": true,
     "acquisition": "Season 2 Phase 2 Classified Ops Pass (free and premium track). Ubisoft also added Diamondback rewards to Dark Zone vendors, reward caches, weekly reward pools and exotic mod sources, and The Diamondback Cache is one of the Exotic Sealed Cache rewards.",
     "statsVerified": false

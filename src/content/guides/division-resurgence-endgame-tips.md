@@ -2,7 +2,7 @@
 title: "Endgame Tips: What to Do After Level 40"
 category: "Endgame"
 publishDate: 2026-10-24
-lastUpdated: 2026-10-26T12:00:00Z
+lastUpdated: 2026-10-28T12:00:00Z
 tags: ["endgame", "Season 2", "farming", "build-guide", "os-protocol"]
 description: "What to do after level 40 in Division Resurgence Season 2: daily quest rewards, upgrade rules, SHD level, proficiency, crafting and creator tips."
 featuredImage: "/images/division-resurgence-shd-manual-progression-guide.webp"
@@ -206,7 +206,7 @@ For the finale his two videos disagree: solo with a shotgun he fights from a noo
 
 ### Lone Wolf Challenge
 
-- **The format:** TikTokAndy counts 20 floors with up to six stars each, 120 stars in all. Officially, it refreshes every three weeks (Ubisoft fixed the schedule in [patch 1.2.1](/patch-notes/patch-1-2-1/)), and since a [June 26 hotfix](/news/server-hotfix-june-26-2026/) the timer starts as soon as an enemy takes damage, even if the doors are still closed.
+- **The format:** Ubisoft's launch article calls it "a series of training stages that increase in difficulty" (and describes its sibling, the Legendary Challenge, as "a random main mission set to Ultimate difficulty level"). TikTokAndy counts 20 floors with up to six stars each, 120 stars in all. Officially, it refreshes every three weeks (the Season 1 Phase 2 notes fixed it to refresh on that schedule, and [patch 1.2.1](/patch-notes/patch-1-2-1/) fixed the reset schedule again), and since a [June 26 hotfix](/news/server-hotfix-june-26-2026/) the timer starts as soon as an enemy takes damage, even if the doors are still closed.
 - **There's a leaderboard:** TikTokAndy says his floor 20 run (his video calls it "Lone Star Stage 20") placed third in NA, and he didn't know the leaderboard existed until someone told him.
 - **His floor 20 tip:** the boss sometimes parks at one spot (about one run in ten, he estimates). When it does, crouch on the boxes beside it, go for headshots, and save Tactical Link for the wave that follows.
 - **Claim on the spec you want:** Died Again Gaming says the rewards include two gold skill mods, and that they come for whichever specialization you have equipped when you claim them. So clear the floors on whatever you play best, then switch to the spec whose skill mods you need before you collect.
@@ -227,6 +227,7 @@ The Heroic Hostile Nest with a named boss is the mod farm in our [mod farming gu
 ## Sources
 
 - [Ubisoft Help Center: Patch Note, Season 2 Phase 2](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2566-patch-note---season-2-phase-2/)
+- [Ubisoft News: The Division Resurgence out now on Android and iOS (March 31, 2026)](https://news.ubisoft.com/en-us/article/4eNUMUE7VfZPTfev7pbsuM) (Lone Wolf and Legendary Challenge descriptions)
 - [Season 2 Phase 1 patch notes (The Division Wiki mirror of the official developer post)](https://thedivision.fandom.com/wiki/Season_2_Phase_1_-_Patch_Notes)
 - [Ubisoft Help Center: Patch Note, Season 1 Phase 2](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2511-patch-note---season-1-phase-2/)
 - [Ubisoft Help Center: Patch Note, Season 1 Phase 3](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2521-patch-note---season-1-phase-3/)

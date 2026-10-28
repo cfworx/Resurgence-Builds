@@ -72,7 +72,7 @@ If you find one we missed, tell us and we will get it on here.
 - **Three of those 21 have codes that are randomized per character.** Always read your own Code Clue collectible in the **Cryptic Clues** tab.
 - The other **18 codes are static** and should work for everyone, but three of them (**Crates 02, 10, and 14**) are flagged as unconfirmed because community sources disagree on the location or clue.
 - Rewards include **superior gear, crafting components, Phoenix Credits, and progress toward four exploration commendations** (Code Tracker, Detective's Journey, Decipherer, NYC Collector).
-- Season 1 Phase 2 (May 11, 2026) did not add new encrypted crates per the [official Ubisoft patch notes](https://www.ubisoft.com/en-us/game/the-division/resurgence/news-updates/3ygDDXxg6dv6aQD5MJvbKv/phase-2-starts-now-whats-new), and none of the patch notes since (through Season 2 Phase 2) mention new crates either. We haven't re-walked the map since May, so treat the list as current-as-far-as-we-know.
+- Season 1 Phase 2 (May 12, 2026) did not add new encrypted crates per the [official Ubisoft patch notes](https://www.ubisoft.com/en-us/game/the-division/resurgence/news-updates/3ygDDXxg6dv6aQD5MJvbKv/phase-2-starts-now-whats-new), and none of the patch notes since (through Season 2 Phase 2) mention new crates either. We haven't re-walked the map since May, so treat the list as current-as-far-as-we-know.
 
 ---
 
@@ -298,7 +298,7 @@ What we suspect but cannot confirm:
 - Some crates may unlock with later mission progression or future patches.
 - Crates may be tied to seasonal areas not yet released. The [Season 1-3 Roadmap](/news/season-1-2-3-roadmap/) promised a major story expansion with Season 3 "this winter," and on October 21 Ubisoft [extended Season 2 Phase 2](/news/season-2-phase-2-extended/) until a "much bigger update later this year." That bigger update is the next place to look.
 
-What we know is **not** the issue: Phase 2 of Season 1 (May 11, 2026) did not add encrypted crates, per [Ubisoft's Phase 2 patch notes](https://www.ubisoft.com/en-us/game/the-division/resurgence/news-updates/3ygDDXxg6dv6aQD5MJvbKv/phase-2-starts-now-whats-new), and none of the patch notes since (Season 1 Phase 3, Season 2 Phase 1, Season 2 Phase 2) mention new crates either. As far as we know, the 21 of 33 split is still the live state of the game.
+What we know is **not** the issue: Phase 2 of Season 1 (May 12, 2026) did not add encrypted crates, per [Ubisoft's Phase 2 patch notes](https://www.ubisoft.com/en-us/game/the-division/resurgence/news-updates/3ygDDXxg6dv6aQD5MJvbKv/phase-2-starts-now-whats-new), and none of the patch notes since (Season 1 Phase 3, Season 2 Phase 1, Season 2 Phase 2) mention new crates either. As far as we know, the 21 of 33 split is still the live state of the game.
 
 **If you find a crate that is not on this list, share the location and code in the [r/thedivisionresurgence subreddit](https://www.reddit.com/r/thedivisionresurgence/) or tag us so we can verify and update.**
 

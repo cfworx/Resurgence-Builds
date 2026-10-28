@@ -19,7 +19,7 @@ faqs:
     answer: "Partly. 1.2.1 fixed the Anarchy talent description (it wasn't showing the proper effect value) and let Weekly mission Exotic Manual and Booklet rewards drop its recalibration material. On the 'underwhelming perks' feedback, Ubisoft said it was 'looking into how this may be addressed', which is an acknowledgement, not a buff. What followed: Season 1 Phase 3 fixed it showing Piercing instead of Shredding in the Armory and dropping with LVL1 talents instead of LVL2 (owners got an updated copy), and Season 2 Phase 1 fixed its talent debuff being applied on heal. Back then the Milkshake brought nobody to the yard. The fixes at least got it into the driveway."
 ---
 
-Patch 1.2.1 deployed on **May 20, 2026**. This is a targeted hotfix, not a content drop, aimed at the vendor bugs, inventory losses, and Classified Ops Pass purchase problems that followed the Phase 2 launch on May 11 and 12. It also includes a significant line about **Strawberry Milkshake** that every Phase 2 player needs to read. Source: [Ubisoft Mobile Help Center, Patch Note 1.2.1](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2513-patch-note---1-2-1-update-20-may-2026/).
+Patch 1.2.1 deployed on **May 20, 2026**. This is a targeted hotfix, not a content drop, aimed at the vendor bugs, inventory losses, and Classified Ops Pass purchase problems that followed the Phase 2 launch on May 12. It also includes a significant line about **Strawberry Milkshake** that every Phase 2 player needs to read. Source: [Ubisoft Mobile Help Center, Patch Note 1.2.1](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2513-patch-note---1-2-1-update-20-may-2026/).
 
 > [!INFO] Update (October 2026)
 > None of the official patch notes since list a stat buff for Strawberry Milkshake. What Ubisoft did ship: [Season 1 Phase 3](/patch-notes/season-1-phase-3-a-new-fire/) (June 24) fixed it showing Piercing instead of Shredding in the Armory and dropping with LVL1 talents instead of LVL2, sent owners an updated copy, and fixed Outpost Annihilation. [Season 2 Phase 1](/patch-notes/season-2-phase-1-the-call/) then fixed its talent debuff being applied on heal.
@@ -65,7 +65,7 @@ Additional Strawberry Milkshake changes in 1.2.1:
 
 ### Lone Wolf Challenge
 
-- Fixed the reset schedule. Lone Wolf now refreshes every 3 weeks as originally intended
+- "Fixed the Lone Wolf Challenge reset schedule." These notes don't give the schedule; the Season 1 Phase 2 notes had already fixed it to refresh every 3 weeks.
 
 ---
 
@@ -82,7 +82,7 @@ If you were hit by either of these bugs, Ubisoft says to contact support via the
 
 - Fixed the bug where items would randomly disappear when inventory was full
 
-Ubisoft notes that **edge cases may still exist**. Their recommendation: if it happens again, submit a support ticket immediately. Our recommendation: screenshot your inventory before and after every patch until this is fully stable.
+Ubisoft's caveat: "While this should be fixed for most players, other issues may have a similar effect." Their recommendation: if it happens again, contact customer support through the in-game support button. Our recommendation: screenshot your inventory before and after every patch until this is fully stable.
 
 Items lost before this patch are being handled case by case through support tickets. Community reports put some pre-1.2.1 support offers as low as 300 credits for lost god-rolls, so the 500K/750 Phoenix Credits blanket payout today is a clear step up.
 

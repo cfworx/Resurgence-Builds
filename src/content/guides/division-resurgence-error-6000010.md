@@ -154,7 +154,7 @@ Less obvious, but documented. Error 6000010 can also trigger when the game can't
 3. If you're under 5 GB, clear out old apps, photos, or cached files until you're above the threshold.
 4. Relaunch the game.
 
-Ubisoft's own help page recommends **17 GB total available space** even though the install itself is around 10.5 GB.
+[Ubisoft's own help page](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2468-how-much-storage-space-do-i-need-on-my-device/) recommends **17 GB total available space** even though the install itself is around 10.5 GB.
 
 ---
 
@@ -169,7 +169,7 @@ It's probably not you.
 **Known maintenance windows and big update days so far in 2026:**
 
 - April 15, 2026
-- May 11-12, 2026 (Season 1 Phase 2)
+- May 12, 2026 (Season 1 Phase 2)
 - May 26, 2026 (Asian servers)
 - June 23-24, 2026 (Season 1 Phase 3), plus a server hotfix on June 26
 - August 5, 2026 (Season 2 Phase 1 and the Steam launch)

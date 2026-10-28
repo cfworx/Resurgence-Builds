@@ -21,6 +21,10 @@ http://resurgencebuilds.com/* https://resurgencebuilds.com/:splat 301
 /terms-of-service      /terms     301
 /terms-of-service/     /terms/    301
 
+# Weapon talent renamed to its in-game name (2026-10-28): Precision Support is Precise Support.
+/database/weapon-talents/precision-support/ /database/weapon-talents/precise-support/ 301
+/database/weapon-talents/precision-support /database/weapon-talents/precise-support/ 301
+
 # Consolidated database collections (2026-07-04): item pages merged into
 # sortable index pages with per-item anchors. 301 old item URLs.
 /database/bonus-attributes/weapon-critical-hit-chance/ /database/bonus-attributes/#weapon-critical-hit-chance 301

@@ -225,7 +225,7 @@ If you have already tried an emulator and it crashed, here is what usually fixes
 - **"Flying textures or untextured characters."** You are on DirectX. Switch to Vulkan in the emulator's device settings.
 - **"60 FPS option is grayed out."** Your emulated phone profile is too old. Switch to Galaxy S25 Ultra or the latest available flagship.
 - **"Game runs but controller button prompts are wrong."** Either you are on BlueStacks with a PS pad (switch to MuMu) or you need to manually rebind the prompts in the in-game controller settings.
-- **"Random crashes during Dark Zone extractions."** This is a known game-level instability not specific to emulators. Patches since launch, starting with the [Phase 2 patch on May 11, 2026](https://www.ubisoft.com/en-us/game/the-division/resurgence/news-updates/3ygDDXxg6dv6aQD5MJvbKv/phase-2-starts-now-whats-new), have shipped general stability and crash fixes. Make sure you are on the latest version.
+- **"Random crashes during Dark Zone extractions."** This is a known game-level instability not specific to emulators. Patches since launch, starting with the [Phase 2 patch on May 12, 2026](https://www.ubisoft.com/en-us/game/the-division/resurgence/news-updates/3ygDDXxg6dv6aQD5MJvbKv/phase-2-starts-now-whats-new), have shipped general stability and crash fixes. Make sure you are on the latest version.
 
 ---
 
@@ -252,7 +252,7 @@ If you have already tried an emulator and it crashed, here is what usually fixes
 - [Ubisoft Help Center: Play on PC (Steam or Ubisoft Connect)](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2509-play-on-pc-steam-or-ubisoft-connect-all-you-need-to-know/)
 - [Steam: The Division Resurgence store page](https://store.steampowered.com/app/3749720/The_Division_Resurgence/)
 - [Ubisoft Help Center: Can I play this on an emulator?](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2469-can-i-play-this-on-an-emulator/)
-- [Ubisoft: Phase 2 patch notes (May 11, 2026)](https://www.ubisoft.com/en-us/game/the-division/resurgence/news-updates/3ygDDXxg6dv6aQD5MJvbKv/phase-2-starts-now-whats-new)
+- [Ubisoft: Phase 2 patch notes (May 12, 2026)](https://www.ubisoft.com/en-us/game/the-division/resurgence/news-updates/3ygDDXxg6dv6aQD5MJvbKv/phase-2-starts-now-whats-new)
 - [DSOGaming: PC system requirements](https://www.dsogaming.com/news/the-division-resurgence-has-been-released-on-pc-in-early-access/)
 - [App Store: The Division Resurgence device compatibility](https://apps.apple.com/us/app/the-division-resurgence/id1606349410)
 - [Reddit: MacOS Emulating community testing](https://www.reddit.com/r/thedivisionresurgence/comments/1sbavdy/macos_emulating/)

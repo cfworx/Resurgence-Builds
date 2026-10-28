@@ -74,7 +74,7 @@ export const attrGuide: Record<string, AttrInfo> = {
   },
   'Armor': {
     overview: 'Armor is one of the two big defensive numbers on your sheet, next to Health. AgentHuntzman\'s rule for Resurgence is that you need both: "No matter how big your health may be, you will still die very fast if your armor is extremely low." It\'s the core survivability stat for tank builds.',
-    whyItMatters: 'TikTokAndy\'s readings suggest Armor % bonuses scale the Armor you already have: his Precision Support stacks took him from about 10,000 to about 14,000 Armor, and he likes Armor mods on that build for the same reason. Bulwark builds lean on it hardest. In PvP, high Armor plus Damage Reduction makes you extremely annoying to kill.',
+    whyItMatters: 'TikTokAndy\'s readings suggest Armor % bonuses scale the Armor you already have: his Precise Support stacks took him from about 10,000 to about 14,000 Armor, and he likes Armor mods on that build for the same reason. Bulwark builds lean on it hardest. In PvP, high Armor plus Damage Reduction makes you extremely annoying to kill.',
     howToGet: 'Every gear piece carries a flat Armor value, gear mods can roll Armor since Season 2 Phase 1, and Tactical Augmentation Modules add the biggest late-game jumps. Self-Propelled Shield (2pc +14%) and Healing Elites (4pc +28%) are the Armor gear sets, and several skill mod combos give Armor as their 2-piece bonus (Area Suppression, Applied Demolitions, Airburst and Commando among them).',
     bestBuilds: 'Bulwark tank builds (mandatory), Field Medic survival builds, any PvP loadout that needs to face-tank. Also useful as a secondary stat on DPS builds for Dark Zone survival. Dead DPS does zero damage.',
   },

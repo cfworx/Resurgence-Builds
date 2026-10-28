@@ -109,7 +109,7 @@ Clans unlock at **level 10**, per Ubisoft's Help Center, and they're a progressi
 
 ## 10. Lock what you want to keep
 
-TikTokAndy had a scare in his September 16 Dark Zone video when he switched back from a healer test build and couldn't find his Fury Strike pieces, and his reminder is worth repeating: if you delete gear in this game, there's no getting it back. He locks everything he's using. Do the same for the pieces you're wearing and anything you might want later. While you're in the inventory, empty your **stash** every session: TikTokAndy says stash items are deleted after 48 hours if you don't collect them. We haven't verified that timer, but checking the stash costs nothing.
+TikTokAndy had a scare in his September 16 Dark Zone video when he switched back from a healer test build and couldn't find his Fury Strike pieces, and his reminder is worth repeating: if you delete gear in this game, there's no getting it back. He locks everything he's using. Do the same for the pieces you're wearing and anything you might want later. While you're in the inventory, empty your **stash** every session: TikTokAndy says stash items are deleted after 48 hours if you don't collect them. We haven't verified that timer (a player's report on Ubisoft's bug tracker does describe a stash package about to expire), but checking the stash costs nothing.
 
 ## 11. Read the real numbers: the Build Database
 

@@ -72,7 +72,7 @@ The low numbers are a clue: TDR-30 through TDR-66 were filed in the tracker's fi
 
 A few player reports filed between October 24 and 27 haven't been reviewed yet, so treat them as claims, not confirmed bugs:
 
-- **TDR-679:** a player says one line of the **Bugle Call** effect text, "Every shot deals extra damage converted from the Vanguard's Engineering," doesn't work when Tactical Link is granted to a teammate, and asks Ubisoft to say so in the tooltip.
+- **TDR-679:** a player says one line of the **Bugle Call** effect text, "Every shot deals extra damage converted from the Vanguard's Engineering," doesn't work when Tactical Link is granted to a teammate, and asks Ubisoft to say so in the tooltip. That line isn't in the Bugle Call set text in TikTokAndy's September 24 footage, which lists only the Rate of Fire, Damage Reduction and Movement Speed bonus (our [skill mod database](/database/skill-mod-combos/) matches it word for word), so it may be newer or come from another part of the skill's description.
 - **TDR-686:** a report that you can't place more than 11 **Artillery Turrets**.
 - **TDR-683:** a report that critical hits apply to status effects.
 - **TDR-687:** a player asks why the daily login rewards option disappeared. For context, Ubisoft's Season 2 Phase 2 article listed the Exotic SHD Keys daily login reward as running from September 16 to October 26.

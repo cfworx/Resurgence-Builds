@@ -29,7 +29,7 @@ Agents, a lot has happened in the last 48 hours. Ubisoft rolled out **Patch 1.2.
 
 ## Patch 1.2.1: Full Breakdown
 
-Patch 1.2.1 is a hotfix, not a content drop. It cleans up the issues that came with Phase 2's May 11 and 12 launch, and it contains no balance changes at all. Full source: [Ubisoft Mobile Help Center, Patch Note 1.2.1](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2513-patch-note---1-2-1-update-20-may-2026/).
+Patch 1.2.1 is a hotfix, not a content drop. It cleans up the issues that came with Phase 2's May 12 launch, and it contains no balance changes at all. Full source: [Ubisoft Mobile Help Center, Patch Note 1.2.1](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2513-patch-note---1-2-1-update-20-may-2026/).
 
 ### Compensation Package (Everyone Gets It. Yes, Even You)
 
@@ -105,7 +105,7 @@ Players say Outpost Annihilation has been broken since beta, so seeing it on an 
 
 ## Phase 2 Recap: In Case You Missed the Chaos
 
-Phase 2 of Season 1 went live around **May 11 and 12, 2026** ([Ubisoft, Phase 2 Starts Now](https://www.ubisoft.com/en-us/game/the-division/resurgence/news-updates/3ygDDXxg6dv6aQD5MJvbKv/phase-2-starts-now-whats-new)). The big-ticket items are still active right now.
+Phase 2 of Season 1 went live on **May 12, 2026** at 3:00 PM PDT ([Ubisoft, Phase 2 Starts Now](https://www.ubisoft.com/en-us/game/the-division/resurgence/news-updates/3ygDDXxg6dv6aQD5MJvbKv/phase-2-starts-now-whats-new)). The big-ticket items are still active right now.
 
 ### Classified Ops Pass 1.2
 
@@ -236,7 +236,7 @@ Keep these bookmarked. If something drops, it drops here first:
 - **[@TheDivisionGame](https://x.com/TheDivisionGame)** on X: franchise-wide, cross-posts Resurgence news.
 - **[@UbisoftMobile](https://x.com/UbisoftMobile)** on X: Ubisoft's mobile-publishing arm.
 - **[Ubisoft Resurgence News Hub](https://www.ubisoft.com/en-us/game/the-division/resurgence/news-updates)**
-- **[Patch Notes Help Center](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/section/539-patch-note/)**
+- **[Patch Notes Help Center](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/section/539-patch-notes/)**
 - **r/thedivisionresurgence**: the community pulse, bug-report hub, and occasional tragedy museum.
 
 ---
@@ -264,7 +264,7 @@ We'll update our Milkshake build the moment Ubisoft changes the numbers. Full Ph
 ## Sources
 
 - [Ubisoft Mobile Help Center, Patch Note 1.2.1 (May 20, 2026)](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2513-patch-note---1-2-1-update-20-may-2026/)
-- [Ubisoft, Phase 2 Starts Now: What's New (May 11, 2026)](https://www.ubisoft.com/en-us/game/the-division/resurgence/news-updates/3ygDDXxg6dv6aQD5MJvbKv/phase-2-starts-now-whats-new)
+- [Ubisoft, Phase 2 Starts Now: What's New (May 12, 2026)](https://www.ubisoft.com/en-us/game/the-division/resurgence/news-updates/3ygDDXxg6dv6aQD5MJvbKv/phase-2-starts-now-whats-new)
 - [Ubisoft News, Division Resurgence Roadmap (April 28, 2026)](https://news.ubisoft.com/en-us/article/9ZzMWcx5ADnaxAiOO3e0w/the-division-resurgence-roadmap-pc-launch-story-expansion-and-more)
 - [Ubisoft Mobile Help Center, Patch Note 1.1.2.2 (May 29, 2026)](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2517-patch-note---1-1-2-2-update-29-may-2026/)
 - [Ubisoft Mobile Help Center, Season 1 Phase 3 Patch Notes](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2521-patch-note---season-1-phase-3/)

@@ -185,7 +185,7 @@ When you find a Double Barrel shotgun, his next stop is our [Misdirection Double
 
 ---
 
-And if the Lightweight M4 from this build is the gun you fell for, TikTokAndy came back to it in October: our [Lightweight M4 Commando build](/builds/lightweight-m4-commando-vanguard-build-tiktokandy/) pairs it with Unhinged, Precision Support II and the Explosive Round OS Protocol.
+And if the Lightweight M4 from this build is the gun you fell for, TikTokAndy came back to it in October: our [Lightweight M4 Commando build](/builds/lightweight-m4-commando-vanguard-build-tiktokandy/) pairs it with Unhinged, Precise Support II and the Explosive Round OS Protocol.
 
 ## Sources
 

@@ -15,7 +15,7 @@ faqs:
   - question: "Should I sell or dismantle mods in Division Resurgence?"
     answer: "Creator Oldfartsgaming says dismantle, because you'll want the materials to upgrade the mods worth keeping. For skill mods, Ubisoft's notes say dismantling pays Dark Zone Credits: 15, 75 or 750 for blue, purple or yellow. Selling feels productive. So does reorganizing the garage."
   - question: "Do items in the stash expire in Division Resurgence?"
-    answer: "TikTokAndy says stash items are deleted after 48 hours if you don't collect them. We haven't verified that timer or found it in Ubisoft's notes, so the safe move is to empty your stash every session. Treat it like the office fridge."
+    answer: "TikTokAndy says stash items are deleted after 48 hours if you don't collect them. We haven't verified that timer or found it in Ubisoft's notes, but stash packages do expire: a player's report on Ubisoft's bug tracker (TDR-600) describes a package he couldn't claim that was 'about to expire.' So the safe move is to empty your stash every session. Treat it like the office fridge."
   - question: "How many items have Division Resurgence players dismantled?"
     answer: "34.5 million weapons and gear pieces in the first 33 days, according to Ubisoft's October 23 Fun Fact Friday. That's roughly 1.05 million a day, or about 12 every second. The dismantle button has seen things."
 ---
@@ -59,7 +59,7 @@ Twelve a second, around the clock, for a month. Somewhere right now, a dad is di
 ### What creators recommend
 
 - **Dismantle mods, don't sell them.** That's Oldfartsgaming's advice in his October 11 endgame video: you'll want the materials to upgrade the mods worth keeping. More of his rules are in our [endgame tips guide](/guides/division-resurgence-endgame-tips/).
-- **Empty your stash.** TikTokAndy says that when his backpack was full, loot from his Hostile Nest runs went to his stash, and that stash items are deleted after 48 hours if you don't collect them. We haven't verified that timer or found it in Ubisoft's notes, so treat it as "check the stash every session" rather than gospel. His nest farm, which fills a backpack fast, is in our [mod farming guide](/guides/how-to-farm-purple-gold-mods/).
+- **Empty your stash.** TikTokAndy says that when his backpack was full, loot from his Hostile Nest runs went to his stash, and that stash items are deleted after 48 hours if you don't collect them. We haven't verified that timer or found it in Ubisoft's notes, though a player's report on the official bug tracker ([TDR-600](https://www.ubisoft.com/en-us/game/the-division/the-division-resurgence/bug-reporter/issues/TDR-600)) confirms packages can expire: he couldn't claim one because of a false "inventory full" error, and he wrote that it was about to expire. Treat it as "check the stash every session" rather than gospel. His nest farm, which fills a backpack fast, is in our [mod farming guide](/guides/how-to-farm-purple-gold-mods/).
 - **There's a paid option.** GameJoy Explained's Steam overview says the monthly subscription adds inventory space, among other perks. We haven't confirmed the details, and we're not telling you to buy it, only that the creator describes it.
 
 ## Sources

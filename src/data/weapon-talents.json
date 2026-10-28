@@ -13,7 +13,7 @@
     "id": "wt-3",
     "name": "Ammo Supply",
     "description": "Shooting has a 54% chance of returning the bullet in the magazine if it contains less than 30% of its ammo.",
-    "note": "TikTokAndy read an Ammo Supply 2 as a 65% chance in his September 16, 2026 video. Rank II talents usually run about 1.4 times rank I, which would put it near 75%, so one of the two numbers may be off; we haven't re-checked it in game.",
+    "note": "Rank II reads a 65% chance on screen: TikTokAndy's Level 1 Bighorn in his September 16, 2026 video (13:30). That's 1.2 times our 54%, where most talents step up 1.4 times, so our rank I number may be off; we haven't re-checked it in game.",
     "caveat": true
   },
   {
@@ -197,8 +197,9 @@
   },
   {
     "id": "wt-38",
-    "name": "Precision Support",
-    "description": "Hitting an enemy 6 times grants +7% Armor and +40% Rescue Efficiency for 10 seconds, up to 5 stacks."
+    "name": "Precise Support",
+    "description": "Hitting an enemy 6 times grants +7% Armor and +40% Rescue Efficiency for 10 seconds, up to 5 stacks.",
+    "note": "The in-game name is Precise Support; we listed it as Precision Support until October 2026. Rank II reads +9.80% Armor and +40% Rescue Efficiency on TikTokAndy's Lightweight M4 tooltip (October 27, 2026)."
   },
   {
     "id": "wt-39",
@@ -246,7 +247,7 @@
     "id": "wt-47",
     "name": "Slaughter Fortitude",
     "description": "Kills and assists grant +12% Armor for 10 seconds, up to 3 stacks.",
-    "note": "TikTokAndy read this as +18% Armor per stack on his SMG in his September 16, 2026 video (Season 2 Phase 2 launch day), without naming a rank. That's more than a rank II copy of our 12% would give, so the value may have changed; we haven't re-checked it in game.",
+    "note": "Rank II reads +18% Armor per stack on screen: TikTokAndy's Level 40 MP40 in his September 16, 2026 video (15:40). That's 1.5 times our 12%, where most talents step up 1.4 times, so our rank I number may be off; we haven't re-checked it in game.",
     "caveat": true
   },
   {

@@ -32,7 +32,7 @@ Since April, Resurgence has run on a tight clock. Ubisoft's roadmap promised "fr
 
 | Phase | Started |
 |---|---|
-| Season 1 Phase 2 | May 11, 2026 |
+| Season 1 Phase 2 | May 12, 2026 |
 | Season 1 Phase 3 "A New Fire" | June 24, 2026 |
 | Season 2 Phase 1 "The Call" | August 5, 2026 |
 | Season 2 Phase 2 | September 16, 2026 |

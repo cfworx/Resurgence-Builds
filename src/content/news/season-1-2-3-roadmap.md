@@ -1,7 +1,7 @@
 ---
 title: "Division Resurgence Season 1-3 Roadmap for 2026"
 publishDate: "2026-04-28"
-updatedDate: 2026-10-24
+updatedDate: 2026-10-28
 author: "RapidF5"
 description: "The full Division Resurgence seasonal roadmap. Phase 3 details, PC launch in Season 2, and new story missions in Season 3."
 tags: ["Roadmap", "Season 1", "Season 2", "Season 3"]
@@ -34,7 +34,7 @@ Ubisoft published the full seasonal roadmap on April 28. New seasons land every 
 | **Season 3** | Winter 2026 | Major story expansion: deeper backstory on the factions and characters introduced in Season 1 |
 
 ## A Note on Steam
-No Steam release date has been officially confirmed. The August Season 2 target is for Ubisoft Connect. Some creator coverage (RogueGold) referenced "Steam later this summer" based on the Ubisoft Creator Program preview, but this should be treated as **[LIKELY but UNCONFIRMED]** until Ubisoft posts it officially.
+The roadmap didn't name Steam. Ubisoft's April 28 post only said Season 2 would bring the full PC launch "to even more distribution platforms," and the one Steam mention we found was creator coverage (RogueGold's "Steam later this summer," from the Ubisoft Creator Program preview). Ubisoft settled it on August 5, 2026: The Division Resurgence launched on Steam, free, alongside Season 2 ([Ubisoft's announcement](https://www.ubisoft.com/en-us/game/the-division/resurgence/news-updates/1dqH85Pad1ydYGwCOdlDp7/now-available-on-steam)).
 
 ---
 
@@ -47,5 +47,6 @@ No Steam release date has been officially confirmed. The August Season 2 target 
 ## Sources
 
 - [Roadmap: PC launch, story expansion and more, Ubisoft News](https://news.ubisoft.com/en-us/article/9ZzMWcx5ADnaxAiOO3e0w/the-division-resurgence-roadmap-pc-launch-story-expansion-and-more) (April 28, 2026)
+- [PC Early Access & Game Roadmap, Ubisoft](https://www.ubisoft.com/en-us/game/the-division/resurgence/news-updates/5LqRsprrdgtEnUmStmBi0d/pc-early-access-game-roadmap) (April 28, 2026): Season 3 will let you "learn more about the people and factions you have been introduced to"
 - [Now Available on Steam, Ubisoft](https://www.ubisoft.com/en-us/game/the-division/resurgence/news-updates/1dqH85Pad1ydYGwCOdlDp7/now-available-on-steam) (August 5, 2026)
 - [@TheDivMobile on X: Season 2 Phase 2 extension](https://x.com/TheDivMobile/status/2112936959467561123) (October 21, 2026)

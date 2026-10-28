@@ -2,7 +2,7 @@
 title: "Device Compatibility | Division Resurgence 2026"
 category: "General"
 publishDate: 2026-05-28
-lastUpdated: 2026-10-24T12:00:00Z
+lastUpdated: 2026-10-28T12:00:00Z
 tags: ["device-compatibility", "supported-devices", "pc-requirements", "iphone", "android", "cross-play", "controller-support", "emulator"]
 description: "Official supported devices, minimum specs, PC requirements, and controller support for Division Resurgence."
 author: "RapidF5"
@@ -43,6 +43,8 @@ If Ubisoft has not confirmed something, we will say so.
 - **Minimum RAM (mobile):** 4 GB. ([Ubisoft Help Center](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2456-the-division-resurgence-compatible-device-list/))
 - **Minimum iOS:** iOS 14, with an **A12 Bionic** chip or newer. That means **iPhone XS, XR, iPhone SE 2nd gen, or anything newer**. ([App Store](https://apps.apple.com/us/app/the-division-resurgence/id1606349410))
 - **Minimum Android:** Android 6. Your specific phone or tablet has to be on Ubisoft's compatibility list. ([Ubisoft Help Center](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2456-the-division-resurgence-compatible-device-list/))
+- **Storage (mobile):** about **10.5 GB** for the game, and Ubisoft recommends **17 GB free** on your device. ([Ubisoft Help Center](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2468-how-much-storage-space-do-i-need-on-my-device/))
+- **Internet:** required. "As it includes multiplayer, an internet connection is required to play the game," so there's no offline mode. ([Ubisoft Help Center](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2466-what-kind-of-internet-connection-is-required-to-play-the-game/))
 - **PC:** Windows 11, free on **Steam and Ubisoft Connect**, around **17 GB** installed (Ubisoft recommends at least **30 GB free**, on an SSD per the Ubisoft Store spec sheet). ([Ubisoft Help Center](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2509-play-on-pc-steam-or-ubisoft-connect-all-you-need-to-know/))
 - **Cross-play and cross-progression:** Fully supported between iOS, Android, and PC (Steam included), as long as you use the same Ubisoft Connect account and the same regional server. ([Ubisoft Help Center](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2509-play-on-pc-steam-or-ubisoft-connect-all-you-need-to-know/))
 

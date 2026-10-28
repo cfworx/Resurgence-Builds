@@ -2,7 +2,7 @@
 title: "Division Resurgence Season 2 Phase 2 Patch Notes"
 version: "Season 2 Phase 2"
 patchDate: 2026-09-16
-updatedDate: 2026-10-24
+updatedDate: 2026-10-28
 author: "RapidF5"
 summary: "Season 2 Phase 2 patch notes: Diamondback exotic, Exotic Sealed Caches, big Demolitionist buffs, no daily XP cap and cheaper Dark Zone exotics."
 featuredImage: "/images/division-resurgence-demolitionist-explosive-solo-build.webp"
@@ -67,6 +67,8 @@ Ubisoft's notes add the Diamondback "to the Armory" without spelling out its wea
 | Sep 16 to Oct 26 | Exotic SHD Keys | Daily login reward event |
 | Oct 2 to 5 | Wall Street Woes | Speedrun the mission inside the time limit |
 | Oct 16 to 19 | Liberty & Justice For All | Speedrun the mission inside the time limit |
+
+Ubisoft's [ubisoft.com version](https://www.ubisoft.com/en-us/game/the-division/resurgence/news-updates/6AHbjOjyQdOayRzdUyQQn8/season-2-phase-2-has-begun) of the same announcement lists each weekend run one day longer (September 18 to 22, October 2 to 6 and October 16 to 20), probably because it counts the day each run closed.
 
 Event rewards include the **Diamondback Tactical Augmentation Module**, Regular and Exclusive SHD Keys, Electronic components and Encrypted Data. We covered the [Wall Street Woes run](/news/revive-bug-no-respawn-zones-fixed/) and the [Liberty & Justice speedrun](/news/liberty-justice-speedrun-lethal-stinger-lichen/) as they happened.
 
@@ -174,5 +176,6 @@ Full details: [October 2026 hotfixes](/patch-notes/october-2026-hotfixes/).
 - [Ubisoft Help Center: Patch Note, Season 2 Phase 2](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2566-patch-note---season-2-phase-2/)
 - [Steam: Season 2 Phase 2 patch notes (The Division Resurgence news)](https://store.steampowered.com/news/app/3749720)
 - [Ubisoft News: The Division Resurgence Season 2 Phase 2 is out now](https://news.ubisoft.com/en-us/article/2vmOLuRVDMIMBxG3MZlPQX/the-division-resurgence-season-2-phase-2-is-out-now)
+- [Ubisoft: Season 2 Phase 2 has begun! (September 16, 2026)](https://www.ubisoft.com/en-us/game/the-division/resurgence/news-updates/6AHbjOjyQdOayRzdUyQQn8/season-2-phase-2-has-begun)
 - [Ubisoft Help Center: Drop rates](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2522-drop-rates/)
 - [@TheDivMobile: Season 2 Phase 2 extension announcement](https://x.com/TheDivMobile/status/2112936959467561123)

@@ -84,9 +84,9 @@ Thermobaric Grenades is a Field Grenadier skill mod combo set. The numbers:
 | Stat | Old Values | New Values |
 |---|---|---|
 | Damage | 460 / 540 / 620 / 700% | 300 / 350 / 400 / 450% |
-| Radius Increase | 100% | 30% |
+| Range increase | 100% | 30% |
 
-The Trello board had a "Thermobaric Barrel" balance card in progress earlier this month, and this looks like the follow-through (the notes name the Field Grenadier set's Thermobaric Grenades). The damage cut is substantial and the radius got brought way down. If your build was carried mostly by Thermobaric output, it is time to pivot toward Applied Demolition crit damage scaling.
+The Trello board had a "Thermobaric Barrel" balance card in progress earlier this month, and this looks like the follow-through (the notes name the Field Grenadier set's Thermobaric Grenades). The damage cut is substantial and the range bonus got brought way down. If your build was carried mostly by Thermobaric output, it is time to pivot toward Applied Demolition crit damage scaling.
 
 ### Armor Strengthening Mod Set
 

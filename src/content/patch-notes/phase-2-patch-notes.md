@@ -2,7 +2,7 @@
 title: "Phase 2 Patch Notes (Season 1, Phase 2)"
 version: "1.2.0"
 patchDate: "2026-05-12"
-updatedDate: 2026-10-24
+updatedDate: 2026-10-28
 author: "RapidF5"
 summary: "The official Division Resurgence patch notes for Season 1 Phase 2. Featuring new events, the free Strawberry Milkshake exotic weapon, and Dark Zone vendor updates."
 featuredImage: "/images/patch-notes/division-resurgence-phase-2-patch-notes-hero.jpg"
@@ -37,9 +37,13 @@ The Phase 2 update for Season 1 went live on May 12. This is the official patch 
 - Special Forces Apparel Set + Battle-Hardened Weapon Skin Set
 - Ken Ito Apparel Set + Rikers Unchained Weapon Skin Set
 
-**Time-Limited Events**: four new events
-- 1 Dark Zone event
-- 3 speed-run challenges (revisiting main-story missions on Challenging difficulty)
+**Time-Limited Events**: four new events. The patch notes don't name them, but Ubisoft's [launch-day article](https://news.ubisoft.com/en-us/article/1ukeTnWBDV4vJfLjei6w4W) does:
+- **Dark Zone Quest**, May 12 to June 7: "bonus challenges in this fan-favorite PvPvE mode"
+- **MM04, A New Enemy** speedrun, May 15 to 19
+- **OW Nest, Derelict Store** speedrun, May 29 to June 2
+- **MM06, Take the Castle** speedrun, June 12 to 16
+
+The notes describe the three speedruns as revisits of main-story missions on Challenging difficulty, although the Derelict Store run is an open-world nest. Ubisoft's article says rewards depended on your clear-time ranking.
 
 ### Gameplay & Features
 - Fixed mods sometimes breaking or not displaying correctly due to missing data
@@ -84,4 +88,5 @@ For the full list of what was still broken after this patch, see the [Patch 1.2.
 ## Sources
 
 - [Patch Note, Season 1 Phase 2, Ubisoft Help Center](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2511-patch-note---season-1-phase-2/)
+- [Ubisoft News: Play The Division Resurgence Season 1 Phase 2 Today (May 12, 2026)](https://news.ubisoft.com/en-us/article/1ukeTnWBDV4vJfLjei6w4W) (event names and dates, 3:00 PM PDT start)
 - [Patch Note, Season 2 Phase 2, Ubisoft Help Center](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2566-patch-note---season-2-phase-2/) (Dark Zone vendor exotic price and Exotic Sealed Caches)

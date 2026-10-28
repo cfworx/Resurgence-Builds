@@ -2,7 +2,7 @@
 title: "Division Resurgence Dark Zone Guide"
 category: "PvP"
 publishDate: 2026-10-25
-lastUpdated: 2026-10-26T12:00:00Z
+lastUpdated: 2026-10-28T12:00:00Z
 tags: ["Dark Zone", "PvP", "extraction", "Rogue", "Season 2"]
 description: "How the Division Resurgence Dark Zone works in Season 2: 20-minute runs, contamination, extraction and the Smuggler, going Rogue, landmarks, DZ Credits and the vendor."
 featuredImage: "/images/season-roadmap.webp"
@@ -15,7 +15,7 @@ videoTitle: "My First Time In The Level 40 Dark Zone | The Division Resurgence"
 videoChannel: "TikTokAndy"
 faqs:
   - question: "How long is a Dark Zone run in Division Resurgence?"
-    answer: "Twenty minutes, with up to 20 agents on the map, according to both Dot Esports and AllThings.How. When the timer runs out, AllThings.How says a short countdown starts and contamination then kills you within about five to seven seconds, so anything still in your backpack at that point is gone unless you extracted it."
+    answer: "Twenty minutes, with up to 20 agents on the map. Ubisoft's own 2023 preview described it that way ('up to 19 other players' and '20 minutes to find and extract as much loot as you can'), and Dot Esports and AllThings.How report the same for the live game. When the timer runs out, AllThings.How says a short countdown starts and contamination then kills you within about five to seven seconds, so anything still in your backpack at that point is gone unless you extracted it."
   - question: "How do you extract loot from the Dark Zone?"
     answer: "Two ways. At an extraction zone, fire the flare: AllThings.How says the helicopter arrives about a minute later and you have roughly a minute to hook your contaminated backpack to the rope. The items land in your storage, and Rogue agents can cut the rope to steal them. Or pay the Smuggler in a safe house to send your loot to storage without a helicopter; AllThings.How says he does that three times a day, for DZ Intel."
   - question: "How do you go Rogue, and how do you clear it?"
@@ -32,7 +32,7 @@ faqs:
 
 Ubisoft calls the Dark Zone a "PvPvE extraction mode": you fight NPCs for loot, and other agents may fight you for it. The short version:
 
-- **The format:** a **20-minute** run with up to **20 agents** on the map.
+- **The format:** a **20-minute** run with up to **20 agents** on the map. Ubisoft's 2023 preview put it as "up to 19 other players" and "20 minutes to find and extract as much loot as you can," and added that if you die, you can respawn and keep looting.
 - **The loot:** everything you pick up is contaminated until you extract it, and it rides in a backpack you drop if you die.
 - **The way out:** a helicopter at an extraction zone, or the **Smuggler** in a safe house.
 - **The danger:** NPCs, contamination, and any agent who decides to go **Rogue**. PvP is off until someone does.
@@ -125,6 +125,7 @@ The Q Building is the one TikTokAndy keeps coming back to; in his September 19 b
 - **Who can shoot whom:** agents who aren't Rogue can only damage Rogues, and a Rogue can attack anyone.
 - **If you die while Rogue:** AllThings.How says you drop only about 30 to 40% of your loot, three or four items at most. A normal death drops the whole backpack, so the real cost of going Rogue is being everyone's target.
 - **Clearing it:** the hacked terminal in a safe house removes your Rogue status. TikTokAndy found it on his first day ("you can actually take your rogue status off with that"), and AllThings.How says it costs DZ Intel.
+- **Reporting cheaters or harassment:** Ubisoft's Help Center says to use the dedicated in-game report buttons, which open a report that goes straight to its support team ([Ubisoft Help Center](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2490-how-can-i-report-a-player-for-breaking-the-game-s-terms-and-conditions-harassment-inappropriate-conduct-or-other-offenses/)).
 - **Being hunted:** in TikTokAndy's experience, a long Rogue streak doesn't trigger a Manhunt-style status or put a marker on you. Other agents can still find you: AllThings.How says the Smuggler in a safe house will reveal every agent's position for 200 DZ Credits, though TikTokAndy points out it's only a snapshot, because a player can be anywhere by the time you get there. He also says players can tell when a Rogue is coming.
 
 **If you go Rogue, pick your fights.** On his 11-kill solo run, several of TikTokAndy's kills were players who weren't paying attention, and he's blunt about it: why would you be in your menu in a PvP zone?
@@ -182,6 +183,8 @@ For the tanky side of that meta, see our [Bulwark Breacher](/builds/bulwark-brea
 ## Sources
 
 - [Ubisoft: The Division Resurgence is out now on Android and iOS](https://www.ubisoft.com/pt-br/game/the-division/news-updates/6jthFjnz4FcXBGUVQUCrlt/the-division-resurgence-out-now-on-android-and-ios-play-for-free-today) (game modes)
+- [Ubisoft News: The Division Resurgence amps up specializations (June 12, 2023)](https://news.ubisoft.com/en-us/article/6Jn7afkUJmUJR14VMbv5VK/the-division-resurgence-amps-up-specializations-launch-slated-for-fall-2023) (the 2023 preview's Dark Zone format)
+- [Ubisoft Help Center: How can I report a player?](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2490-how-can-i-report-a-player-for-breaking-the-game-s-terms-and-conditions-harassment-inappropriate-conduct-or-other-offenses/)
 - [Dot Esports: All PvP activities in The Division Resurgence](https://dotesports.com/mobile/guides/the-division-resurgence-pvp) (August 5, 2026, updated August 6)
 - [AllThings.How: How to farm the Dark Zone solo](https://allthings.how/the-division-resurgence-how-to-farm-the-dark-zone-solo/) (updated August 7, 2026)
 - Our patch notes for [Season 1 Phase 2](/patch-notes/phase-2-patch-notes/), [Season 1 Phase 3](/patch-notes/season-1-phase-3-a-new-fire/), [Season 2 Phase 1](/patch-notes/season-2-phase-1-the-call/), [Season 2 Phase 2](/patch-notes/season-2-phase-2/) and [1.1.2.2](/patch-notes/patch-1-1-2-2/), each with links to its sources

@@ -2,7 +2,7 @@
 title: "Division Resurgence Exotic Weapons List"
 category: "General"
 publishDate: 2026-06-02
-lastUpdated: 2026-10-25T12:00:00Z
+lastUpdated: 2026-10-28T12:00:00Z
 author: "RapidF5"
 featuredImage: "/images/guides/division-resurgence-exotic-weapons-list-2026-v2.webp"
 imageAlt: "A Division agent in a red jacket standing beside a red Exotic sign in a dark brick corridor"
@@ -12,7 +12,7 @@ shareTitle: "Every exotic, one page"
 shareText: "Six live exotics, one mystery seventh in Ubisoft's own drop table, and the cheapest way to get each one in Season 2."
 faqs:
   - question: "How many exotic weapons are in Division Resurgence?"
-    answer: "Six are live as of October 24, 2026: Lady Death (SMG), Warlord (assault rifle), Strawberry Milkshake (LMG), Scorpio (shotgun), The Bighorn (assault rifle, Season 2 Phase 1) and The Diamondback (Season 2 Phase 2). A seventh, Deadlock, appears in Ubisoft's official Exotic Cache drop table but hasn't been announced anywhere else."
+    answer: "Six are live as of October 24, 2026: Lady Death (SMG), Warlord (assault rifle), Strawberry Milkshake (LMG), Scorpio (shotgun), The Bighorn (assault rifle, Season 2 Phase 1) and The Diamondback (rifle, Season 2 Phase 2). A seventh, Deadlock, appears in Ubisoft's official Exotic Cache drop table but hasn't been announced anywhere else."
   - question: "When is the next exotic weapon coming to Division Resurgence?"
     answer: "Nothing is announced. Ubisoft extended Season 2 Phase 2 on October 21 'until we are ready to release a much bigger update later this year,' which pauses the one-exotic-per-phase rhythm. Deadlock sitting in the official drop table is the only breadcrumb, and we're not going to dress a breadcrumb up as a loaf."
   - question: "Can I get the Warlord if I missed it?"
@@ -25,7 +25,7 @@ faqs:
     answer: "Partially, as far as we can tell. The unique exotic talent is fixed; Exotic Weapon Recalibration Booklets and Manuals are the materials for recalibrating the rest of the gun. Season 2 Phase 1 fixed them so they can be looted in the Dark Zone as intended, and they're also in the bottom tier of Exotic Sealed Caches."
 ---
 
-Six exotic weapons are live in Division Resurgence as of **October 24, 2026 (Season 2 Phase 2)**: **Lady Death** (SMG), **Warlord** (assault rifle), **Strawberry Milkshake** (LMG), **Scorpio** (shotgun), **The Bighorn** (assault rifle) and **The Diamondback**. A seventh name, **Deadlock**, sits in Ubisoft's official drop table and nowhere else. This page is our single source of truth for every exotic: what it does, how to get it today, and what's still unconfirmed.
+Six exotic weapons are live in Division Resurgence as of **October 24, 2026 (Season 2 Phase 2)**: **Lady Death** (SMG), **Warlord** (assault rifle), **Strawberry Milkshake** (LMG), **Scorpio** (shotgun), **The Bighorn** (assault rifle) and **The Diamondback** (rifle). A seventh name, **Deadlock**, sits in Ubisoft's official drop table and nowhere else. This page is our single source of truth for every exotic: what it does, how to get it today, and what's still unconfirmed.
 
 > [!INFO] Update (October 2026)
 > Rewritten for Season 2. The Bighorn (Season 2 Phase 1) and The Diamondback (Season 2 Phase 2) are live, the old Diamondback "leak" section is gone because the gun is real now, and every exotic's acquisition route is updated for the Dark Zone vendor changes and the new [Exotic Sealed Caches](/guides/exotic-sealed-caches/). We also corrected Lady Death's optimal range to the 18m in our database.
@@ -147,14 +147,19 @@ Translation: hip-fire it like an assault rifle, or aim down sights and it turns 
 - **Known fixes:** a bug that forced first person on the Bighorn was marked Done on Ubisoft's official bug reporter on September 22 ([details](/news/bug-reporter-fixes-september-22/)).
 - **How to get it now:** each phase gets its own pass, and The Call's pass made way for Phase 2's on September 16, so the Exotic Sealed Caches are the route now.
 
-We haven't verified its stat lines ourselves, but one creator has read some of them off his screen. In his September 16 video, TikTokAndy reads the talent as **Big Game Hunter**: headshots grant +3.3% Headshot Damage for 20 seconds, up to 50 stacks. His copy dealt **Piercing** damage and showed a 47-round magazine with no extended mag fitted (his gear added +18% Magazine Size, so that may not be the base), and he landed headshots of about 7,000 to 11,000 just before he hit level 40, then mentions 15,000 to 17,000 in the level 40 Dark Zone. He says his first Bighorn Tactical Augmentation Module added +20% damage, and that the next level (+40%) needs a second module. How TAMs work for every exotic is in our [Tactical Augmentation Modules guide](/guides/tactical-augmentation-modules-guide/). Treat all of that as one player's reading until we've checked it. Ubisoft also ran a [Bighorn headshot community event](/news/bighorn-headshot-weekend-event/) in August.
+We haven't verified its stat lines ourselves, but TikTokAndy shows its full card in his September 16 video (at 13:00). The talent, **Big Game Hunter**, reads in full: "Aiming switches the weapon to semi-auto firing mode, dealing an extra 300% Weapon Damage per shot. Headshots grant +3.30% Headshot Damage for 20 seconds, up to 50 stacks. On max stacks, loses 10 stacks every 4 seconds. Headshots prevent from losing stacks." So the semi-auto mode isn't just a fire-rate switch: every aimed shot carries +300% Weapon Damage. His Level 1, T1 copy is an **Assault Rifle** dealing **Piercing** damage (259 on his card), with 800 RPM, Accuracy 62, Reload Speed 2.36s, Optimal Range 27m, Movement Speed 44 and Stability 62 with five level 1 mods fitted, and a 47-round magazine with no extended mag (his gear added +18% Magazine Size, so that may not be the base), and he landed headshots of about 7,000 to 11,000 just before he hit level 40, then mentions 15,000 to 17,000 in the level 40 Dark Zone. He says his first Bighorn Tactical Augmentation Module added +20% damage, and that the next level (+40%) needs a second module. How TAMs work for every exotic is in our [Tactical Augmentation Modules guide](/guides/tactical-augmentation-modules-guide/). Treat all of that as one player's reading until we've checked it. Ubisoft also ran a [Bighorn headshot community event](/news/bighorn-headshot-weekend-event/) in August.
 
 ### The Diamondback
 
 - **Released:** Season 2 Phase 2, September 16, 2026.
 - **Source:** the **free and premium track** of the current Classified Ops Pass. Ubisoft also added Diamondback rewards to Dark Zone vendors, reward caches, weekly reward pools and exotic mod sources, and the Diamondback Tactical Augmentation Module was a Season 2 Phase 2 event reward.
 - **Talent:** **Agonizing Bite.** Ubisoft named it in the [October 14, 2026 patch notes](/patch-notes/october-2026-hotfixes/), while fixing the Build Making Database's weapon talent list, where Agonizing Bite had been missing.
-- **Weapon class and numbers:** not confirmed. The patch notes don't name a class, and Ubisoft's [Season 2 Phase 2 article](https://news.ubisoft.com/en-us/article/2vmOLuRVDMIMBxG3MZlPQX/the-division-resurgence-season-2-phase-2-is-out-now) only calls it an assault rifle in its page summary. One player on the official subreddit describes a 5-round magazine and a skill critical chance bonus in the talent, and we haven't verified either. The Division 2 has a lever-action rifle with the same name, and we're not going to copy its stats into a different game.
+- **Weapon class:** **Rifle**, dealing **Shredding** damage, according to its in-game card. Ubisoft's [Season 2 Phase 2 article](https://news.ubisoft.com/en-us/article/2vmOLuRVDMIMBxG3MZlPQX/the-division-resurgence-season-2-phase-2-is-out-now) calls it an assault rifle in its page summary, but the card says Rifle.
+- **What the card shows:** Brazilian creator Capitão Wasabi unlocked it on camera on September 23 ([video](https://www.youtube.com/watch?v=cwmO9_0k8Fc), Portuguese-language client). His Level 1, T1 copy shows **100 RPM**, a **5-round magazine** and 1.95k Shredding damage, plus a rolled second talent, "Sincronizado II" (In Sync II in English, as far as we can tell).
+- **What Agonizing Bite does,** in our translation of his Portuguese tooltip: the Diamondback marks a random enemy. Hitting that enemy is a guaranteed critical hit and consumes the mark. After you hit a marked target, all your shots are critical hits and grant **+10% Skill Critical Hit Chance for 5 seconds**. Then a new random enemy is marked, and a new mark also appears whenever you reload. The English wording in game may differ slightly; the numbers won't.
+- **The catch,** in Capitão Wasabi's own pinned comment: five seconds of guaranteed crits on the slowest-firing weapon class. He'd rather the buff carried over to an SMG or shotgun after a swap.
+
+The Division 2 has a lever-action rifle with the same name, and we're not going to copy its stats into a different game. That earlier subreddit report of a 5-round magazine and a skill critical chance bonus turned out to be right.
 
 Since Season 2 Phase 2 is extended "until we are ready to release a much bigger update later this year," the Diamondback pass is sticking around longer than usual. If you want a free exotic right now, this is it.
 
@@ -170,8 +175,8 @@ Ubisoft's official Exotic Cache drop table includes a **Deadlock Cache**, a **De
 | Warlord | AR | 324 Blast | 600 | 29m | Damage reduction while firing, delayed return | DZ vendor (15,000 DZ Credits), caches |
 | Strawberry Milkshake | LMG | 300 Shredding | 550 | 29m | Stacking DoT with kill-transfer | Exotic Sealed Caches |
 | Scorpio | Shotgun | 210 Piercing | 130 | 16m | Venom debuff ladder | DZ vendor (15,000 DZ Credits), caches |
-| The Bighorn | AR | Piercing (amount not verified) | Not verified | Not verified | Big Game Hunter: headshots stack Headshot Damage (creator reading) | Exotic Sealed Caches |
-| The Diamondback | Not confirmed | Not verified | Not verified | Not verified | Agonizing Bite (numbers not verified) | Current pass (free and premium track) |
+| The Bighorn | AR | 259 Piercing (Level 1 card) | 800 (card) | 27m (card) | Big Game Hunter: aimed semi-auto shots deal +300% Weapon Damage, headshots stack Headshot Damage | Exotic Sealed Caches |
+| The Diamondback | Rifle | Shredding (amount not verified) | 100 (card) | Not verified | Agonizing Bite: hit the marked enemy, then every shot crits for 5 seconds | Current pass (free and premium track) |
 | Deadlock | Unknown | Unknown | Unknown | Unknown | Unknown | Only listed in the drop table |
 
 ## How to get exotic weapons in Season 2
@@ -220,4 +225,5 @@ We update this page every phase. If a new exotic ships, shows up in a drop table
 - [Ubisoft: Season 2 has just begun](https://www.ubisoft.com/en-us/game/the-division/resurgence/news-updates/1R5zWiBS0MQZNcWGYkroYT/season-2-has-just-begun)
 - [Ubisoft News: Season 2 Phase 2 is out now](https://news.ubisoft.com/en-us/article/2vmOLuRVDMIMBxG3MZlPQX/the-division-resurgence-season-2-phase-2-is-out-now)
 - [Ubisoft: A New Fire, Season 1 Phase 3](https://www.ubisoft.com/en-us/game/the-division/resurgence/news-updates/wE8oLT7RqyLCfnCJomXij/a-new-fire-season-1-phase-3)
-- [TikTokAndy: My First Time In The Level 40 Dark Zone (YouTube, September 16, 2026)](https://www.youtube.com/watch?v=lBIQT-SeBZg) (The Bighorn readings)
+- [TikTokAndy: My First Time In The Level 40 Dark Zone (YouTube, September 16, 2026)](https://www.youtube.com/watch?v=lBIQT-SeBZg) (The Bighorn's card and talent, at 13:00)
+- [Capitão Wasabi: Liberei a nova exótica "Diamondback" (YouTube, September 23, 2026)](https://www.youtube.com/watch?v=cwmO9_0k8Fc) (The Diamondback's card and talent, Portuguese client, at 1:28 and 2:10)

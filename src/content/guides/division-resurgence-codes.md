@@ -2,7 +2,7 @@
 title: "Division Resurgence Codes: October 2026"
 category: "General"
 publishDate: 2026-05-28
-lastUpdated: 2026-10-25T12:00:00Z
+lastUpdated: 2026-10-28T12:00:00Z
 tags: ["codes", "redeem-codes", "promo-codes", "backbone", "twitch-drops", "free-rewards", "ubisoft-connect", "division-resurgence-codes"]
 description: "Division Resurgence codes for October 2026: what is actually active, the official redeem page, Steam launch rewards, Twitch Drops and how to claim."
 author: "RapidF5"
@@ -41,7 +41,7 @@ faqs:
   - question: "What free rewards came with the Steam launch?"
     answer: "Ubisoft gave every player 5 Regular and 5 Exclusive SHD Keys for the August 5 Steam launch, and the wishlist goal unlocked the FYNC Parade apparel set plus 10 Exclusive and 10 Regular SHD Keys for everyone. Twitch Drops returned too, with the Red Puffer Jacket as the final tier."
   - question: "Do Division 2 codes work in Division Resurgence?"
-    answer: "No. Separate games, separate redemption portals, separate entitlements. What does carry over is Ubisoft's cross-game rewards: items for having played The Division 2 on the same Ubisoft account (Ubisoft's page also lists a Heartland cap), claimed in Resurgence's Events tab."
+    answer: "No. Separate games, separate redemption portals, separate entitlements. What does carry over is Ubisoft's cross-game rewards: items for having played The Division 2 on the same Ubisoft account (the Trekking Elite Pack, Legacy Jacket and Washington D.C. Cap), claimed in Resurgence's Events tab."
   - question: "When will new Division Resurgence codes drop?"
     answer: "Nobody outside Ubisoft knows until it's announced. Watch the official @TheDivMobile X account, the official Discord and Twitch streams. We check official channels every morning and update this page when a real code or giveaway goes live."
 ---
@@ -134,7 +134,7 @@ Live during the global launch window. Watch-time tiers, claimed through Twitch a
 
 ### Launch Week Auto-Grant
 
-Granted automatically to any account that logged in during launch week per Ubisoft's [official launch update](https://www.ubisoft.com/en-us/game/the-division/resurgence/news-updates/0OaDLfM9lS5xceFt1lRDA/resurgence-launch-community-update):
+Ubisoft's [launch community update](https://www.ubisoft.com/en-us/game/the-division/resurgence/news-updates/0OaDLfM9lS5xceFt1lRDA/resurgence-launch-community-update) (March 28) says the pre-registration goal was met, so the **NYC Firefighter Set** went to every account that connected during launch week. The **Pure Gold weapon skins** come from its March 3 [launch date reveal](https://www.ubisoft.com/en-us/game/the-division/resurgence/news-updates/5yf33HSkMvuEiahlTmocOu), which listed them next to the Firefighter set as pre-registration rewards "at launch":
 
 - **NYC Firefighter Set**
 - **Pure Gold Weapon Skins**
@@ -177,7 +177,7 @@ More in our [Steam launch rewards post](/news/steam-launch-rewards-twitch-drops/
 
 ### Steam Launch Twitch Drops (August 2026)
 
-Ubisoft brought Twitch Drops back for the Steam launch. Link your Twitch account to Ubisoft Connect and watch Drops-enabled creators. Two details from Ubisoft's post:
+Ubisoft brought Twitch Drops back for the Steam launch. Link your Twitch account to Ubisoft Connect and watch Drops-enabled creators. Ubisoft's [Help Center steps](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2491-how-do-i-link-my-twitch-account/) for linking: on the Ubisoft Drops website, select "Get Started," choose "Login with Twitch," log in to Twitch in the pop-up, then log in to your Ubisoft account. To unlink later, use the Linked accounts section of your Ubisoft account information page. Two details from Ubisoft's post:
 
 - If you already collected an item in a previous Drops campaign, you can grab it again and **dismantle duplicates for Cosmetic Shards**.
 - The final tier was the **Red Puffer Jacket**, which Ubisoft says isn't obtainable any other way in the game.
@@ -188,8 +188,8 @@ Ubisoft brought Twitch Drops back for the Steam launch. Link your Twitch account
 
 If you've played *The Division 2* on the same Ubisoft account, you have unclaimed items waiting in Resurgence right now. Per [Ubisoft's cross-game rewards page](https://www.ubisoft.com/en-gb/game/the-division/the-division-2/news-updates/4229WaoLUUKfcDVenaSlcX/the-division-crossgame-rewards):
 
-- **From Division 2:** Trekking Elite Pack, Legacy Jacket, Washington D.C. Cap, Vest + Cap
-- **From Heartland:** Cap
+- **From The Division 2:** Trekking Elite Pack, Legacy Jacket and Washington D.C. Cap. That's the whole list on Ubisoft's page.
+- **Going the other way:** logging in to Resurgence unlocks a Resurgence Jacket, Resurgence Shirt, Resurgence Hat and a Level 40 boost in The Division 2.
 
 Open Division Resurgence, go to the **Events** tab, then **Claim your rewards**. Same character-lock rule applies. Be on the right agent first.
 

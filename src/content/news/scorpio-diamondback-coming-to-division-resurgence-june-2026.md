@@ -46,7 +46,7 @@ The official Ubisoft roadmap reveal on April 28, 2026, listed Phase 3 of Season 
 - Freemen full apparel set
 - Boombox weapon skin
 
-That makes the Scorpio the headline free exotic of the Phase 3 Classified Ops Pass, slotted into the same delivery channel as the Strawberry Milkshake LMG from Phase 2 and the Warlord Assault Rifle from Phase 1. Community trackers have been pointing at **June 23, 2026** as the Phase 3 start date based on the roughly six-week phase cadence the season has been holding to (Phase 1 ran from launch until Phase 2 kicked off on May 11-12). That matches up with the [resurgencebuilds.com roadmap page](https://resurgencebuilds.com/news/season-1-2-3-roadmap/) and the [X post from RovenOP](https://x.com/RovenOP/status/2049816677769154752) that called out the date back on April 30. June 23 is not an official Ubisoft confirmation, just the cleanest date the leak community has converged on.
+That makes the Scorpio the headline free exotic of the Phase 3 Classified Ops Pass, slotted into the same delivery channel as the Strawberry Milkshake LMG from Phase 2 and the Warlord Assault Rifle from Phase 1. Community trackers have been pointing at **June 23, 2026** as the Phase 3 start date based on the roughly six-week phase cadence the season has been holding to (Phase 1 ran from launch until Phase 2 kicked off on May 12). That matches up with the [resurgencebuilds.com roadmap page](https://resurgencebuilds.com/news/season-1-2-3-roadmap/) and the [X post from RovenOP](https://x.com/RovenOP/status/2049816677769154752) that called out the date back on April 30. June 23 is not an official Ubisoft confirmation, just the cleanest date the leak community has converged on.
 
 ### Diamondback is not confirmed, but the leak is real
 

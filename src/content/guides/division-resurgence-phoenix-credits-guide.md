@@ -2,7 +2,7 @@
 title: "Phoenix Credits Guide: Earn and Spend Them"
 category: "Beginner"
 publishDate: 2026-10-25
-lastUpdated: 2026-10-25T23:59:00Z
+lastUpdated: 2026-10-28T12:00:00Z
 tags: ["phoenix-credits", "currency", "sealed-caches", "free-to-play", "beginner", "Season 2"]
 description: "How to earn Phoenix Credits free in Division Resurgence, what they buy, what Sealed Caches cost, and what to spend them on first."
 author: "RapidF5"
@@ -48,7 +48,7 @@ Keep an eye on our [codes page](/guides/division-resurgence-codes/) too. When Ub
 
 - **Sealed Caches.** The gacha boxes with published odds. More on cost and odds below.
 - **Store bundles.** Dotesports lists upgrade and material bundles in the store.
-- **Cosmetic draws.** Since Season 2 Phase 1, cosmetic draw screens show detailed pricing in game ([patch notes](/patch-notes/season-2-phase-1-the-call/)), so the cost is on screen before you tap.
+- **Cosmetic draws.** Since Season 2 Phase 1, cosmetic draw screens show detailed pricing in game ([patch notes](/patch-notes/season-2-phase-1-the-call/)), so the cost is on screen before you tap. Some apparel and weapon skins come only from draws: Ubisoft's Help Center says they "may appear in the shop" but "you will not be able to purchase them at this time" ([Help Center](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2475-why-can-i-see-some-apparel-and-weapon-skins-in-the-store-but-can-t-purchase-them/)).
 - **Creating a clan.** Ubisoft's Help Center lists a one-time **300 Phoenix Credits**. Our [clan guide](/guides/division-resurgence-clan-guide/) covers whether you should found one or just join one.
 
 ## What a Sealed Cache costs, and what you get

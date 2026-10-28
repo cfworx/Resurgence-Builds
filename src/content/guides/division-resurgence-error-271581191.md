@@ -138,7 +138,7 @@ Any reputable VPN works. Free tiers of ProtonVPN, Windscribe, and similar servic
 If you've burned through Fixes 1 through 4, do one final environment reset before escalating.
 
 1. **Restart the device fully.** Power off, wait 30 seconds, power back on.
-2. **Free up at least 5 GB of storage.** Ubisoft's own help page recommends **17 GB total available space** even though the game install is around 10.5 GB.
+2. **Free up at least 5 GB of storage.** [Ubisoft's own help page](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2468-how-much-storage-space-do-i-need-on-my-device/) recommends **17 GB total available space** even though the game install is around 10.5 GB.
 3. **Relaunch and try Fixes 1 through 4 again.**
 
 If you still get 271581191 after a device restart with 5+ GB of free space and a VPN connection, you're looking at a deeper issue. Time to escalate.

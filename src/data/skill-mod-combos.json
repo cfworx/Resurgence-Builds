@@ -559,7 +559,7 @@
     "specialization": "Vanguard",
     "skill": "Tactical Link",
     "bonus2": "Armor+[4.7%~9.3%]",
-    "bonus3": "When having the Tactical Link effect on self, every time you participate in killing an enemy, your weapon's Critical Hit Chance will be increased by 10.20% for 10 seconds."
+    "bonus3": "Kills or assists while using Tactical Link grant +10.20% Weapon Critical Hit Chance for 10 second(s)."
   },
   {
     "id": "smc-66",
@@ -609,10 +609,8 @@
     "skill": "Smart Cover",
     "bonus2": "Max Health+[4.0%~8.0%]",
     "bonus3": "While behind a Smart Cover, kills or assists grant allies Extra Health equal to 120% Engineering for 10 second(s).",
-    "aliases": [
-      "Superior Position"
-    ],
-    "aliasBasis": "elimination"
+    "aliases": ["Superior Position"],
+    "note": "Superior Position was this set's name in the 2023 regional beta: a fan list of beta data (zilliongamer) gives it the same 2-piece Health bonus and the same effect, Extra Health for allies on kills from Smart Cover."
   },
   {
     "id": "smc-72",

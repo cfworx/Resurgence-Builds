@@ -59,12 +59,15 @@
       "1dqH85Pad1ydYGwCOdlDp7",
       "wE8oLT7RqyLCfnCJomXij",
       "5LqRsprrdgtEnUmStmBi0d",
-      "3ygDDXxg6dv6aQD5MJvbKv"
+      "3ygDDXxg6dv6aQD5MJvbKv",
+      "6AHbjOjyQdOayRzdUyQQn8",
+      "46SouhJisMOerDaIq04T4Y",
+      "719dybE7YToT3yuzln9KrD"
     ],
     "lastChecked": "2026-10-28",
     "status": "unreachable",
     "failStreak": 3,
-    "note": "Page needs JavaScript; WebFetch sees an empty NEWS list. Run 3 (2026-10-25 ~14:46 UTC): WebFetch refused every non-search URL with a permission prompt nobody could answer (PROVENANCE_REQUIRED) in the unattended run; not re-read. Run 2026-10-26: WebSearch only; newest Resurgence entry still 3ygDDXxg6dv6aQD5MJvbKv (Phase 2 starts now). Run 2026-10-27: WebSearch only; newest Resurgence entry still 3ygDDXxg6dv6aQD5MJvbKv. Run 2026-10-28: WebSearch only; newest Resurgence entry still 3ygDDXxg6dv6aQD5MJvbKv."
+    "note": "Page needs JavaScript; WebFetch sees an empty NEWS list. Run 3 (2026-10-25 ~14:46 UTC): WebFetch refused every non-search URL with a permission prompt nobody could answer (PROVENANCE_REQUIRED) in the unattended run; not re-read. Run 2026-10-26: WebSearch only; newest Resurgence entry still 3ygDDXxg6dv6aQD5MJvbKv (Phase 2 starts now). Run 2026-10-27: WebSearch only; newest Resurgence entry still 3ygDDXxg6dv6aQD5MJvbKv. Run 2026-10-28: WebSearch only; newest Resurgence entry still 3ygDDXxg6dv6aQD5MJvbKv. Interactive session 2026-10-28 read the page in a real browser: newest entries are 6AHbjOjyQdOayRzdUyQQn8 (Sept 16, Season 2 Phase 2 has begun; its speedrun end dates are one day later than news.ubisoft.com's) and 46SouhJisMOerDaIq04T4Y (May 16, 2023 PvP Activities article, listed first). Nothing newer than Sept 16, 2026."
   },
   "newsUbisoftCom": {
     "seenIds": [
@@ -72,16 +75,18 @@
       "7MMMG14zd82UNs7zcmOv6t",
       "48gDtCz7vtOCbF5JwskUPc",
       "9ZzMWcx5ADnaxAiOO3e0w",
-      "4eNUMUE7VfZPTfev7pbsuM"
+      "4eNUMUE7VfZPTfev7pbsuM",
+      "1ukeTnWBDV4vJfLjei6w4W"
     ],
     "lastChecked": "2026-10-28",
     "note": "Run 2026-10-28: search surfaced only older articles (4eNUMUE7VfZPTfev7pbsuM = March 2026 'Out Now on Android and iOS', recorded as seen; 2022 announce articles; 9ZzMWcx5ADnaxAiOO3e0w roadmap)."
   },
   "x": {
     "account": "TheDivMobile",
-    "latestSeenStatusId": "2113661727141495079",
-    "latestSeenDate": "2026-10-23",
+    "latestSeenStatusId": "2115126383202467904",
+    "latestSeenDate": "2026-10-27",
     "seen": [
+      "2115126383202467904 Meet Chloé Aguilar, NYC comms expert character file (2026-10-27)",
       "2113661727141495079 Fun Fact Friday: 34.5 million dismantled (2026-10-23)",
       "2112936959467561123 Season 2 Phase 2 extended (2026-10-21)",
       "2112212178132447234 We have a letter for you! (2026-10-19)",
@@ -91,7 +96,7 @@
     ],
     "lastChecked": "2026-10-28",
     "status": "blocked",
-    "note": "Direct fetch robots_disallowed; WebSearch fallback (2026-10-28) surfaced only older posts (PC launch, Season 2 crossplay, Season 1 Phase 3, roadmap); nothing newer than 2113661727141495079."
+    "note": "Interactive session 2026-10-28: the profile and posts render in a real browser while logged out (newest: 2115126383202467904, Oct 27 character file). Direct fetch from the daily run is still robots_disallowed."
   },
   "bugReporter": {
     "url": "https://www.ubisoft.com/en-us/game/the-division/the-division-resurgence/bug-reporter/issues",
@@ -134,12 +139,14 @@
       "TDR-679": "Pending Review (filed 2026-10-24 to 27)",
       "TDR-683": "Pending Review (filed 2026-10-24 to 27)",
       "TDR-686": "Pending Review (filed 2026-10-24 to 27)",
-      "TDR-687": "Pending Review (filed 2026-10-24 to 27)"
+      "TDR-687": "Pending Review (filed 2026-10-24 to 27)",
+      "TDR-688": "Pending Review (filed 2026-10-27: stash items from Oct 7 can't be claimed, 'inventory full')",
+      "TDR-600": "Pending Review (last updated 2026-10-04; stash package 'about to expire', inventory-full error)"
     },
     "lastChecked": "2026-10-28",
     "status": "ok",
     "failStreak": 0,
-    "note": "Page needs JavaScript; no issue list visible to WebFetch. Interactive session 2026-10-28 read it in a real browser: statuses above are current as of that check (nothing newer than 2026-10-23), and the October 23 roundup post covers them. Each report needs five confirmations to be 'confirmed for review'. Run 3 (2026-10-25 ~14:46 UTC): WebFetch refused every non-search URL with a permission prompt nobody could answer (PROVENANCE_REQUIRED) in the unattended run; not re-read. Run 2026-10-26: not fetched (no direct fetches this run). Run 2026-10-27: not fetched. Run 2026-10-28: not fetched (manual source)."
+    "note": "Interactive session 2026-10-28 (sorted by Last updated): no Ubisoft status change since 2026-10-23; newest items are player reports Pending Review from 2026-10-23 to 2026-10-27 (TDR-679, 683, 686, 687, 688 and a few untitled cosmetic/transaction reports)."
   },
   "dropRates": {
     "url": "https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2522-drop-rates/",
@@ -391,7 +398,7 @@
       "source": "SteamDB record update 2026-10-28 08:02 UTC (change 40329337)",
       "claim": "Something changed on the Steam app record on 2026-10-28 (possibly a build or store update)",
       "status": "unverified",
-      "note": "Data lead only. Builds list did not render and the history page could not be opened. No patch notes, maintenance notice or announcement found in official sources. Re-check SteamDB, Help Center and Steam news next run."
+      "note": "Data lead only. Builds list did not render and the history page could not be opened. No patch notes, maintenance notice or announcement found in official sources. Re-check SteamDB, Help Center and Steam news next run. Interactive session 2026-10-28: SteamDB shows a bot check to automated browsers (not bypassed); Steam's news RSS (generated Oct 28) still ends at Oct 19 and the Help Center has no new patch note, so nothing official yet."
     },
     {
       "date": "2026-10-25",

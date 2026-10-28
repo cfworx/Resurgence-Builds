@@ -2,7 +2,7 @@
 title: "Damage Types & Color Bar Guide"
 category: "General"
 publishDate: 2026-05-24
-lastUpdated: 2026-10-24T12:00:00Z
+lastUpdated: 2026-10-28T12:00:00Z
 tags: ["damage-types", "piercing", "shredding", "blast", "mechanics", "beginner", "warlord", "lady-death", "color-bar"]
 description: "The colored bar above elite enemies tells you their damage weakness. Dark blue = piercing, light blue = shredding, red = blast. Here's the full breakdown."
 author: "RapidF5"
@@ -107,7 +107,7 @@ Check the weapon in the **Armory**. That's where Ubisoft's patch notes say the d
 
 That shortcut was always a trap, because a weapon could roll a damage-type bonus that didn't match its own type. The Police M4 was spotted rolling Weapon Blast Damage even though community testing shows it deals Shredding on impact. Ubisoft confirmed the problem in the Season 2 Phase 1 notes (a mismatched bonus "didn't bring any benefits"), then removed all damage-type bonuses from the weapon attribute pool in favor of All Weapon Damage or All Skill Damage. New weapons won't roll them. The notes don't spell out what happened to rolls already sitting on old weapons, so if one of yours still shows a mismatched type bonus, treat it as dead weight.
 
-**Exotics are locked to one damage type.** Warlord = Blast. Lady Death = Blast. Strawberry Milkshake = Shredding. Scorpio = Piercing (Died Again Gaming read it off the weapon card in June), and TikTokAndy's Bighorn showed Piercing in his September 16, 2026 video. You cannot reroll any of them. The two Blast exotics shine against red-bar enemies and tax you against everything else. Strawberry Milkshake has the opposite profile, strong against light-blue-bar enemies. We haven't confirmed the Diamondback's type yet, so check the Armory or our [exotic weapons list](/guides/division-resurgence-exotic-weapons-list-2026/).
+**Exotics are locked to one damage type.** Warlord = Blast. Lady Death = Blast. Strawberry Milkshake = Shredding. Scorpio = Piercing (Died Again Gaming read it off the weapon card in June), and TikTokAndy's Bighorn showed Piercing in his September 16, 2026 video. You cannot reroll any of them. The two Blast exotics shine against red-bar enemies and tax you against everything else. Strawberry Milkshake has the opposite profile, strong against light-blue-bar enemies. The Diamondback is Shredding: Capitão Wasabi's in-game card (September 23, Portuguese client) labels its damage "Dano de trituração" with the claw icon, which isn't the Blast or Piercing icon, so it pairs with light-blue-bar enemies like the Milkshake. Details in our [exotic weapons list](/guides/division-resurgence-exotic-weapons-list-2026/).
 
 ---
 
@@ -186,4 +186,4 @@ This is where the dual-type loadout stops being optional and starts being the pr
 - Internal Resurgence Builds testing on damage types, weapon attribute panels, and exotic damage-type locking.
 - [Season 2 Phase 1 patch notes](/patch-notes/season-2-phase-1-the-call/): removal of damage-type bonus attributes from weapons and weapon mods.
 - Ubisoft Help Center patch notes for [Season 1 Phase 3](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2521-patch-note---season-1-phase-3/) (Strawberry Milkshake listed as Shredding in the Armory) and [Season 2 Phase 2](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2566-patch-note---season-2-phase-2/) (Armory damage-type display fixes).
-- [Died Again Gaming: The New Scorpio Meta (YouTube, June 24, 2026)](https://www.youtube.com/watch?v=7gCYlURiDhc) (Scorpio's damage type) and [TikTokAndy: My First Time In The Level 40 Dark Zone (YouTube, September 16, 2026)](https://www.youtube.com/watch?v=lBIQT-SeBZg) (the Bighorn's)
+- [Died Again Gaming: The New Scorpio Meta (YouTube, June 24, 2026)](https://www.youtube.com/watch?v=7gCYlURiDhc) (Scorpio's damage type), [TikTokAndy: My First Time In The Level 40 Dark Zone (YouTube, September 16, 2026)](https://www.youtube.com/watch?v=lBIQT-SeBZg) (the Bighorn's) and [Capitão Wasabi: Liberei a nova exótica "Diamondback" (YouTube, September 23, 2026)](https://www.youtube.com/watch?v=cwmO9_0k8Fc) (the Diamondback's)

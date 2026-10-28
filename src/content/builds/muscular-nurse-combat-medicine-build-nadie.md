@@ -34,7 +34,7 @@ faqs:
   - question: "Can I solo Elite Missions with this build?"
     answer: "Yes, but slowly. Nadie's DPS is 66k, not a damage build. Elite Mission bosses take a long time at that DPS (call it 15-20 minutes, give or take your patience). The trade-off is that you will not die. If patience is not a problem, this build clears everything in the game."
   - question: "What weapons does The Muscular Nurse use?"
-    answer: "Primary: AUG A3 Para XS (T2 SMG) with Steady Suppression and Precision Support II for team-oriented play. Secondary: M60 (T2 LMG) with Sadistic Shield II and Conceited II for solo boss tanking. Both are standard weapons, no exotics required."
+    answer: "Primary: AUG A3 Para XS (T2 SMG) with Steady Suppression and Precise Support II for team-oriented play. Secondary: M60 (T2 LMG) with Sadistic Shield II and Conceited II for solo boss tanking. Both are standard weapons, no exotics required."
   - question: "How does this build compare to Involuntary Nap Time?"
     answer: "Same Pummeling Shield OS Protocol (and the same June 26 stun cooldown nerf), completely different role. Involuntary Nap Time is a Bulwark Juggernaut stun-tank for Elite Missions and the Dark Zone. The Muscular Nurse is a Combat Medicine PvE sustainer that heals the team while tanking bosses. Pick based on whether you want to put things to sleep or keep your squad alive through Elite content."
 
@@ -177,14 +177,14 @@ Nadie called these out explicitly: *"I have found 2 sexy stuff that I think Imma
 | Skill Multi-Shot Chance | +8.46% |
 | Received Healing | +22.23% |
 | Talent 1 | **[Steady Suppression](/database/weapon-talents/steady-suppression/)** |
-| Talent 2 | **Precision Support II** |
+| Talent 2 | **Precise Support II** |
 
 #### Talents
 
 - **Steady Suppression:** Grants +18% Damage Reduction while firing.
-- **Precision Support II:** Hitting an enemy 6 times grants +9.80% Armor and +40% Rescue Efficiency for 10 seconds, up to 5 stacks.
+- **Precise Support II:** Hitting an enemy 6 times grants +9.80% Armor and +40% Rescue Efficiency for 10 seconds, up to 5 stacks.
 
-Base [Precision Support](/database/weapon-talents/precision-support/) grants +7% Armor and +40% Rescue Efficiency, up to 5 stacks. The II variant bumps Armor to +9.80%, so 5 stacks is **+49% Armor**. Whether the Rescue Efficiency stacks too isn't settled: TikTokAndy, reading his own rank II copy in October, counts it as a flat +40% while the Armor climbs to about +50%. Either way you revive faster while shooting. You can revive a downed teammate while suppressing the enemy that downed them. The Steady Suppression +18% DR while firing means you never stop pulling the trigger. The moment you do, defense layers start falling.
+Base [Precise Support](/database/weapon-talents/precise-support/) grants +7% Armor and +40% Rescue Efficiency, up to 5 stacks. The II variant bumps Armor to +9.80%, so 5 stacks is **+49% Armor**. Whether the Rescue Efficiency stacks too isn't settled: TikTokAndy, reading his own rank II copy in October, counts it as a flat +40% while the Armor climbs to about +50%. Either way you revive faster while shooting. You can revive a downed teammate while suppressing the enemy that downed them. The Steady Suppression +18% DR while firing means you never stop pulling the trigger. The moment you do, defense layers start falling.
 
 Nadie's take: *"Keep me in one piece and revive my poor teammates before realizing they were saved."*
 
@@ -244,7 +244,7 @@ The detailed loop:
 
 1. **Throw your healing station** in the fight zone where your team will stack
 2. **Stand in it**: your healing keeps you at full health, which primes Pummeling Shield's Extra Health proc
-3. **Hold the trigger**: Steady Suppression gives +18% DR while firing. Precision Support adds an Armor stack (and Rescue Efficiency) every 6 hits. Pummeling Shield stuns every 10 hits (once per 10 seconds since the June 26 hotfix).
+3. **Hold the trigger**: Steady Suppression gives +18% DR while firing. Precise Support adds an Armor stack (and Rescue Efficiency) every 6 hits. Pummeling Shield stuns every 10 hits (once per 10 seconds since the June 26 hotfix).
 4. **Take hits freely**: at full health, Pummeling Shield generates Extra Health equal to 2400% Firepower. Hypervigilant II and Rock Solid II both trigger from the healing ticks, stacking DR.
 5. **Swap to M60 for boss solo**: big magazine, Sadistic Shield II generates Extra Health every 5 hits, Conceited II adds DR on every kill
 6. **Deploy Combat Medicine signature** on whoever needs emergency healing or on unlucky enemies
@@ -259,7 +259,7 @@ Three structural reasons this build crushes Elite Missions:
 
 **1. Pummeling Shield's full-health Extra Health proc loops infinitely.** Take a hit → get massive Extra Health from the OS talent → healing station tops you back to full while Extra Health is still active → next hit triggers it again. You essentially never leave the proc state during sustained fights.
 
-**2. The two-weapon roles are properly separated.** AUG is for keeping the team alive (Precision Support's Rescue Efficiency is a built-in revive multiplier). M60 is for solo boss tanking or duo-carrying lower-PS teammates. Pick the weapon based on team composition, not what feels good.
+**2. The two-weapon roles are properly separated.** AUG is for keeping the team alive (Precise Support's Rescue Efficiency is a built-in revive multiplier). M60 is for solo boss tanking or duo-carrying lower-PS teammates. Pick the weapon based on team composition, not what feels good.
 
 **3. Healing Elites 4pc + Pummeling Shield stack vertically, not horizontally.** Most builds compete with themselves for stat budget. This one stacks Armor (combo set), Toughness (OS Protocol), Extra Health (weapon talents + OS), and Received Healing (combo set) on completely separate axes. No overlap means every stat investment pays out fully.
 
@@ -284,7 +284,7 @@ This build lets a tank-medic carry under-geared teammates through content they c
 | 2pc Self-Propelled Shield (Body, Kneepads) | Received Healing + Skill CDR on body. Armor + Skill Crit Chance on kneepads. |
 | Body armor talent | Hypervigilant (II preferred). +5-7% DR per heal tick, 3 stacks. |
 | Backpack talent | Rock Solid (II preferred). +15-20% DR on receiving healing. |
-| AUG A3 Para XS (T2 SMG) | Steady Suppression + Precision Support. Received Healing + Skill Multi-Shot bonus attributes. |
+| AUG A3 Para XS (T2 SMG) | Steady Suppression + Precise Support. Received Healing + Skill Multi-Shot bonus attributes. |
 | M60 (T2 LMG) | Sadistic Shield + Conceited. Max Health + Armor bonus attributes. |
 | Pummeling Shield OS | Weekly Bounties or the OS Protocol Sealed Cache. When this was written, a gold from the bounties was rare (Died Again Gaming guessed under 5 percent in June); by October he says the fourth boss's Key Rewards guarantee a random gold each week. Max to Level 50 for +45% Toughness. |
 
