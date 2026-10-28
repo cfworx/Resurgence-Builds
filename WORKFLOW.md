@@ -31,15 +31,13 @@ You need:
 
 ## How to Update a Tier List After a Patch
 
-1. Open the tier list file in `src/content/tier-lists/` (e.g., `weapon-tier-list-s1.md`)
-2. Move weapons/items between tiers as needed
-3. Update the `lastUpdated` field in the frontmatter to today's date
-4. Update the `patch` field to the new patch version
-5. Add a note to the **Changelog** section at the bottom of the file:
-   ```
-   - **April 20, 2026 (Patch 1.3.0):** Moved X from B to A tier after buff. Added Y to S tier.
-   ```
-6. Save and deploy
+The tier lists are pages, not content files:
+
+1. **Build tier list:** edit the `RANKS` map in `src/pages/tier-list/index.astro`. Each entry is keyed by the build's slug (its file name) and has `tier`, `was` (the previous tier), `evidence`, `why` and `sources`. A build with no entry shows under "not ranked yet".
+2. **OS Protocol tier list:** move entries between the `sTier` through `dTier` arrays in `src/pages/tier-list/os-protocols.astro` and set `was` to the old tier.
+3. Update `TIER_UPDATED` at the top of whichever page you changed.
+4. Leave the `verifiedPatch(...)` "last verified" stamp alone unless you re-tested in game.
+5. Save and deploy
 
 ## How to Publish Patch Notes
 
@@ -197,7 +195,7 @@ Before publishing ANY post (build, guide, or news), every item below must be che
 ### Build-Specific Requirements
 
 - [ ] **`plannerHash`** - URL parameter string for the "Open in Build Planner" button
-- [ ] **Tier List Override** - Add the build name to `src/pages/tier-list/index.astro` in the `assignTier()` function (only for builds we've actually tested)
+- [ ] **Tier list** - Decide whether the build gets a tier. Ranks are set by hand in the `RANKS` map in `src/pages/tier-list/index.astro`; without an entry it shows under "not ranked yet".
 - [ ] **`verified: false`** - Set this on a creator's build we documented from their videos but haven't re-tested ourselves. It swaps the green "Verified" badge for a "Creator build" badge and labels it as a creator build on database pages. Tiers are set by hand in the `RANKS` map in `src/pages/tier-list/index.astro` (ranked from creator results since October 2026, with the reason and sources shown on the page); a build with no `RANKS` entry shows under "not ranked yet".
 - [ ] **`specialization`** - Must match one of: Demolitionist, Tech Operator, Bulwark, Vanguard, Field Medic
 - [ ] **`playstyle`** - Must match one of: DPS, Tank, Support, Hybrid, Solo
