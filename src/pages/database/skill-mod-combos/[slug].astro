@@ -12,6 +12,7 @@ import DbFaq from '../../../components/DbFaq.astro';
 import { verifiedPatch, DATABASE_UPDATED } from '../../../data/site-config';
 import GameImage from '../../../components/GameImage.astro';
 import { dbImage, imageObject, CARDS_RECORDED } from '../../../utils/db-images';
+import DbIcon from '../../../components/DbIcon.astro';
 
 export function getStaticPaths() {
   return skillMods.map((mod: any) => ({
@@ -193,7 +194,10 @@ const toModSlug = (name: string) => name.toLowerCase().replace(/[^a-z0-9]+/g, '-
       <!-- Header -->
       <div class="smc-header">
         <div class="smc-header__top">
-          <h1 class="smc-title">{mod.name}</h1>
+          <div class="smc-title-row">
+            <DbIcon id={`skill-mod-combos/${slug}`} size={64} alt={`${mod.name} skill mod combo icon in The Division Resurgence`} eager />
+            <h1 class="smc-title">{mod.name}</h1>
+          </div>
           <div class="smc-badges">
             <span class="smc-badge" style={`border-color: ${specBadgeColor}; color: ${specBadgeColor};`}>{mod.specialization}</span>
             <span class="smc-badge smc-badge--skill" style="border-color: #b8b8c0; color: #b8b8c0;">{targetSkill}</span>
@@ -332,6 +336,8 @@ const toModSlug = (name: string) => name.toLowerCase().replace(/[^a-z0-9]+/g, '-
     flex-direction: column;
     gap: var(--sp-3);
   }
+
+  .smc-title-row { display: flex; align-items: center; gap: var(--sp-4); }
 
   .smc-title {
     font-family: var(--font-heading);

@@ -10,6 +10,7 @@ import { isWeaponTalentIndexable } from '../../../utils/indexability.mjs';
 import DbItemExtras from '../../../components/DbItemExtras.astro';
 import DbFaq from '../../../components/DbFaq.astro';
 import { verifiedPatch, DATABASE_UPDATED } from '../../../data/site-config';
+import DbIcon from '../../../components/DbIcon.astro';
 import GameImage from '../../../components/GameImage.astro';
 import { dbImage, imageObject, CARDS_RECORDED } from '../../../utils/db-images';
 import talentSources from '../../../data/weapon-talent-sources.json';
@@ -192,7 +193,7 @@ const talentLd = {
       <!-- Header -->
       <div style="margin-bottom: var(--sp-8); padding-bottom: var(--sp-6); border-bottom: 1px solid rgba(255,255,255,0.08);">
         <div style="display: flex; flex-wrap: wrap; align-items: center; gap: var(--sp-4);">
-          {talent.icon && <img src={talent.icon} alt={talent.name} style="width: 48px; height: 48px; border-radius: 4px; object-fit: contain;" />}
+          <DbIcon id={`weapon-talents/${slug}`} size={64} alt={`${talent.name} weapon talent icon in The Division Resurgence`} eager />
           <h1 style="font-family: var(--font-heading); font-size: var(--text-4xl); font-weight: 900; letter-spacing: -0.03em; margin: 0; background: linear-gradient(135deg, #fff 60%, var(--accent)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">{talent.name}</h1>
           <span style="display: inline-flex; align-items: center; font-family: var(--font-mono); font-size: var(--step--2); font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent); background: rgba(242,104,34,0.12); border: 1px solid rgba(242,104,34,0.25); padding: 5px 14px; border-radius: 999px;">{archetype.label}</span>
         </div>
@@ -221,6 +222,18 @@ const talentLd = {
         {talent.note && <p class="item-note">{talent.note}</p>}
       </div>
 
+      {cardImage && (
+        <figure class="game-figure game-figure--wide">
+          <GameImage
+            image={cardImage}
+            eager
+            alt={`${talent.name} weapon talent card in The Division Resurgence, with the weapons that can roll it`}
+            sizes="(max-width: 760px) calc(100vw - 32px), 720px"
+          />
+          <figcaption>{talent.name} in the game's Build-Making Database, recorded {CARDS_RECORDED}. The Source list shows the weapons that can roll it, with their tier.</figcaption>
+        </figure>
+      )}
+
       {sources ? (
         <section class="talent-sources" aria-labelledby="talent-sources-title">
           <h2 id="talent-sources-title" class="talent-sources__title">Weapons That Can Roll {talent.name}</h2>
@@ -247,17 +260,6 @@ const talentLd = {
       ) : exoticOf ? (
         <p class="item-note">{talent.name} is the <a href={`/database/exotic-weapons/${exoticOf.slug}/`}>{exoticOf.name}</a>'s own talent: it comes fixed on that exotic and never rolls on a standard weapon.</p>
       ) : null}
-
-      {cardImage && (
-        <figure class="game-figure game-figure--wide">
-          <GameImage
-            image={cardImage}
-            alt={`${talent.name} weapon talent card in The Division Resurgence, with the weapons that can roll it`}
-            sizes="(max-width: 760px) calc(100vw - 32px), 720px"
-          />
-          <figcaption>{talent.name} in the game's Build-Making Database, recorded {CARDS_RECORDED}. The Source list shows the weapons that can roll it, with their tier.</figcaption>
-        </figure>
-      )}
 
       <!-- Meta Builds (unique per item, only for pages with editorial notes) -->
       {notes && notes.metaBuilds?.length > 0 && (

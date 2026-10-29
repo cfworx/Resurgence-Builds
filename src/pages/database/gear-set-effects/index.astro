@@ -2,6 +2,7 @@
 import DatabaseLayout from '../../../layouts/DatabaseLayout.astro';
 import gearSets from '../../../data/gear-set-effects.json';
 import AdSenseUnit from '../../../components/AdSenseUnit.astro';
+import DbIcon from '../../../components/DbIcon.astro';
 import { verifiedPatch } from '../../../data/site-config';
 import { buildSetLoadouts } from '../../../utils/db-enrich';
 const lastVerified = verifiedPatch(); // All 16 sets, their bonuses and the tiers they roll on re-checked in game on 2026-10-28 (Season 2 Phase 2)
@@ -75,8 +76,9 @@ const itemListLd = {
     {gearSets.map((gear) => (
       <a href={`/database/gear-set-effects/${slugify(gear.name)}/`} class="db-card-link">
         <article class="db-card">
-          <div class="db-card__header">
-            <div>
+          <div class="db-card__header gs-head">
+            <div class="gs-head__name">
+              <DbIcon id={`gear-set-effects/${slugify(gear.name)}`} size={52} />
               <h2 class="db-card__title">{gear.name}</h2>
             </div>
             {tierTag(gear) && <span class={`gs-tier gs-tier--${gear.tiers[0].toLowerCase()}`} title={`Rolls on ${gear.tiers.join(', ')} gear`}>{tierTag(gear)}</span>}
@@ -134,6 +136,9 @@ const itemListLd = {
     border-color: rgba(242,104,34,0.4);
     box-shadow: 0 0 20px rgba(242,104,34,0.08);
   }
+  .gs-head { align-items: center; }
+  .gs-head__name { display: flex; align-items: center; gap: var(--sp-3); min-width: 0; }
+  .gs-head__name .db-card__title { margin: 0; }
   .gs-tier {
     flex-shrink: 0;
     font-family: var(--font-mono);

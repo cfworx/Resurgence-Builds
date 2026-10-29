@@ -14,6 +14,7 @@ export interface Props {
 // and silently drops the component when the parent has no slot by that name.
 import GameImage from './GameImage.astro';
 import { dbImage, CARDS_RECORDED } from '../utils/db-images';
+import DbIcon from './DbIcon.astro';
 import { piecesFor, pieceSets, GEAR_SOURCES_RECORDED } from '../utils/rolls';
 const { talents, basePath } = Astro.props;
 // "/database/backpack-talents/" -> "backpack-talents": the folder of the in-game card images.
@@ -82,6 +83,7 @@ const allRoles = ['DPS', 'Skill', 'Tank/Sustain', 'Team', 'Utility'].filter(r =>
     <article class="ti-entry" id={e.slug} data-name={e.name} data-roles={e.roles.join('|')}>
       <h2 class="ti-entry__title">
         <a href={`#${e.slug}`} class="ti-entry__anchor" aria-label={`Link to ${e.name}`}>#</a>
+        <DbIcon id={`${section}/${e.slug}`} size={44} alt={`${e.name} ${kind.talent} icon`} />
         {e.name}
         {e.roles.map(r => (
           <span class="ti-entry__badge" style={`--role-color:${roleColors[r]}`}>{r}</span>

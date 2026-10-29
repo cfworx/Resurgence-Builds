@@ -33,6 +33,12 @@ const TRIM = {
   armory: { left: 0, right: 0, top: 120, bottom: 0 }, // 1700 px Armory screens
 };
 
+// The talent, gear set and skill mod cards all show the item's own white icon at the top of the
+// card's left panel, centred near (219, 124) on the stitched frames and never wider than 133 px
+// (measured on all 229 cards, Oct 29, 2026). A 160 px square around it is the item's icon picture
+// for the database lists and page headers, on the card's own grey.
+const ICON = { left: 139, top: 44, size: 160, widths: [80, 160] };
+
 // kind: words for the file name. widths: target widths (capped at the source width).
 const SECTIONS = {
   // hero: the card's top (name bar, weapon art and the attribute bar the weapon tucks under),
@@ -41,19 +47,20 @@ const SECTIONS = {
   // clean: use evidence/<section>/clean/<file> when it exists (see research/build-database/tools/).
   // seeThrough: the popup is see-through in game; clearSeeThrough() takes the list behind it out.
   'os-protocols': { kind: 'os-protocol-card', widths: [290, 580], trim: TRIM.narrowCard, clean: true, seeThrough: true },
-  'gear-set-effects': { kind: 'gear-set', widths: [640, 960, 1305], trim: TRIM.gearSet },
+  'gear-set-effects': { kind: 'gear-set', widths: [640, 960, 1305], trim: TRIM.gearSet, icon: 'gear-set-icon' },
   // Evidence files keep the slug from when they were recorded; the page slug is on the right.
   'weapon-talents': {
     kind: 'weapon-talent-card',
     widths: [480, 969],
     trim: TRIM.wideCard,
+    icon: 'weapon-talent-icon',
     rename: { 'precision-support': 'precise-support' },
     // Exotic-only talents: no weapon talent page; the exotic's own card shows them.
     skip: ['agonizing-bite', 'anarchy', 'big-game-hunter', 'septicemia'],
   },
-  'skill-mod-combos': { kind: 'skill-mod-combo-card', widths: [480, 969], trim: TRIM.wideCard },
-  'backpack-talents': { kind: 'backpack-talent-card', widths: [480, 969], trim: TRIM.wideCard },
-  'body-armor-talents': { kind: 'body-armor-talent-card', widths: [480, 969], trim: TRIM.wideCard },
+  'skill-mod-combos': { kind: 'skill-mod-combo-card', widths: [480, 969], trim: TRIM.wideCard, icon: 'skill-mod-combo-icon' },
+  'backpack-talents': { kind: 'backpack-talent-card', widths: [480, 969], trim: TRIM.wideCard, icon: 'backpack-talent-icon' },
+  'body-armor-talents': { kind: 'body-armor-talent-card', widths: [480, 969], trim: TRIM.wideCard, icon: 'body-armor-talent-icon' },
   // Armory screens, one per weapon class and tier (the gear screens have no pages to go on).
   // Each weapon page shows the screen it sits on; the manifest lists the weapons on each.
   armory: {
@@ -317,6 +324,12 @@ async function main() {
       if (hero) {
         entry.hero = await writeVariants(hero, outDir, `${slug}-exotic-weapon-division-resurgence${suffix}`, cfg.widths, width);
         files += entry.hero.srcset.length;
+      }
+      if (cfg.icon) {
+        // From the raw stitched frame (ICON is measured on it, before the trim).
+        const icon = await sharp(input).extract({ left: ICON.left, top: ICON.top, width: ICON.size, height: ICON.size }).toBuffer();
+        entry.icon = await writeVariants(icon, outDir, `${slug}-${cfg.icon}-division-resurgence`, ICON.widths, ICON.size);
+        files += entry.icon.srcset.length;
       }
       if (cfg.names) entry.names = names[evidenceSlug] || [];
       manifest[`${section}/${slug}`] = entry;

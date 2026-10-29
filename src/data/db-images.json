@@ -210,6 +210,21 @@
      "/images/db/gear-set-effects/boom-shakalaka-gear-set-division-resurgence-v2-1287.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/gear-set-effects/boom-shakalaka-gear-set-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/gear-set-effects/boom-shakalaka-gear-set-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/gear-set-effects/boom-shakalaka-gear-set-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "gear-set-effects/captain-cow": {
@@ -229,6 +244,21 @@
     [
      1287,
      "/images/db/gear-set-effects/captain-cow-gear-set-division-resurgence-v2-1287.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/gear-set-effects/captain-cow-gear-set-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/gear-set-effects/captain-cow-gear-set-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/gear-set-effects/captain-cow-gear-set-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -252,6 +282,21 @@
      "/images/db/gear-set-effects/dr-medic-gear-set-division-resurgence-v2-1287.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/gear-set-effects/dr-medic-gear-set-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/gear-set-effects/dr-medic-gear-set-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/gear-set-effects/dr-medic-gear-set-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "gear-set-effects/fearless-warrior": {
@@ -271,6 +316,21 @@
     [
      1287,
      "/images/db/gear-set-effects/fearless-warrior-gear-set-division-resurgence-v2-1287.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/gear-set-effects/fearless-warrior-gear-set-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/gear-set-effects/fearless-warrior-gear-set-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/gear-set-effects/fearless-warrior-gear-set-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -294,6 +354,21 @@
      "/images/db/gear-set-effects/fire-cycle-gear-set-division-resurgence-v2-1287.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/gear-set-effects/fire-cycle-gear-set-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/gear-set-effects/fire-cycle-gear-set-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/gear-set-effects/fire-cycle-gear-set-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "gear-set-effects/fury-strike": {
@@ -313,6 +388,21 @@
     [
      1287,
      "/images/db/gear-set-effects/fury-strike-gear-set-division-resurgence-v2-1287.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/gear-set-effects/fury-strike-gear-set-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/gear-set-effects/fury-strike-gear-set-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/gear-set-effects/fury-strike-gear-set-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -336,6 +426,21 @@
      "/images/db/gear-set-effects/gunny-johnny-gear-set-division-resurgence-v2-1287.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/gear-set-effects/gunny-johnny-gear-set-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/gear-set-effects/gunny-johnny-gear-set-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/gear-set-effects/gunny-johnny-gear-set-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "gear-set-effects/healing-elites": {
@@ -355,6 +460,21 @@
     [
      1287,
      "/images/db/gear-set-effects/healing-elites-gear-set-division-resurgence-v2-1287.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/gear-set-effects/healing-elites-gear-set-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/gear-set-effects/healing-elites-gear-set-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/gear-set-effects/healing-elites-gear-set-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -378,6 +498,21 @@
      "/images/db/gear-set-effects/jackpot-gear-set-division-resurgence-v2-1287.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/gear-set-effects/jackpot-gear-set-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/gear-set-effects/jackpot-gear-set-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/gear-set-effects/jackpot-gear-set-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "gear-set-effects/long-term-effect": {
@@ -397,6 +532,21 @@
     [
      1287,
      "/images/db/gear-set-effects/long-term-effect-gear-set-division-resurgence-v2-1287.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/gear-set-effects/long-term-effect-gear-set-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/gear-set-effects/long-term-effect-gear-set-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/gear-set-effects/long-term-effect-gear-set-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -420,6 +570,21 @@
      "/images/db/gear-set-effects/mechanical-enemy-gear-set-division-resurgence-v2-1287.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/gear-set-effects/mechanical-enemy-gear-set-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/gear-set-effects/mechanical-enemy-gear-set-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/gear-set-effects/mechanical-enemy-gear-set-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "gear-set-effects/mechanical-expert": {
@@ -439,6 +604,21 @@
     [
      1287,
      "/images/db/gear-set-effects/mechanical-expert-gear-set-division-resurgence-v2-1287.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/gear-set-effects/mechanical-expert-gear-set-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/gear-set-effects/mechanical-expert-gear-set-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/gear-set-effects/mechanical-expert-gear-set-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -462,6 +642,21 @@
      "/images/db/gear-set-effects/one-shot-one-kill-gear-set-division-resurgence-v2-1287.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/gear-set-effects/one-shot-one-kill-gear-set-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/gear-set-effects/one-shot-one-kill-gear-set-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/gear-set-effects/one-shot-one-kill-gear-set-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "gear-set-effects/phalanx-attack": {
@@ -481,6 +676,21 @@
     [
      1287,
      "/images/db/gear-set-effects/phalanx-attack-gear-set-division-resurgence-v2-1287.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/gear-set-effects/phalanx-attack-gear-set-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/gear-set-effects/phalanx-attack-gear-set-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/gear-set-effects/phalanx-attack-gear-set-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -504,6 +714,21 @@
      "/images/db/gear-set-effects/quick-draw-gear-set-division-resurgence-v2-1287.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/gear-set-effects/quick-draw-gear-set-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/gear-set-effects/quick-draw-gear-set-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/gear-set-effects/quick-draw-gear-set-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "gear-set-effects/self-propelled-shield": {
@@ -525,6 +750,21 @@
      "/images/db/gear-set-effects/self-propelled-shield-gear-set-division-resurgence-v2-1287.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/gear-set-effects/self-propelled-shield-gear-set-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/gear-set-effects/self-propelled-shield-gear-set-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/gear-set-effects/self-propelled-shield-gear-set-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "weapon-talents/adaptation": {
@@ -540,6 +780,21 @@
     [
      955,
      "/images/db/weapon-talents/adaptation-weapon-talent-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/weapon-talents/adaptation-weapon-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/weapon-talents/adaptation-weapon-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/weapon-talents/adaptation-weapon-talent-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -559,6 +814,21 @@
      "/images/db/weapon-talents/ammo-charge-weapon-talent-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/weapon-talents/ammo-charge-weapon-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/weapon-talents/ammo-charge-weapon-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/weapon-talents/ammo-charge-weapon-talent-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "weapon-talents/ammo-supply": {
@@ -574,6 +844,21 @@
     [
      955,
      "/images/db/weapon-talents/ammo-supply-weapon-talent-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/weapon-talents/ammo-supply-weapon-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/weapon-talents/ammo-supply-weapon-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/weapon-talents/ammo-supply-weapon-talent-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -593,6 +878,21 @@
      "/images/db/weapon-talents/backup-battery-weapon-talent-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/weapon-talents/backup-battery-weapon-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/weapon-talents/backup-battery-weapon-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/weapon-talents/backup-battery-weapon-talent-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "weapon-talents/backup-magazine": {
@@ -608,6 +908,21 @@
     [
      955,
      "/images/db/weapon-talents/backup-magazine-weapon-talent-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/weapon-talents/backup-magazine-weapon-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/weapon-talents/backup-magazine-weapon-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/weapon-talents/backup-magazine-weapon-talent-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -627,6 +942,21 @@
      "/images/db/weapon-talents/backup-protection-weapon-talent-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/weapon-talents/backup-protection-weapon-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/weapon-talents/backup-protection-weapon-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/weapon-talents/backup-protection-weapon-talent-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "weapon-talents/blood-for-blood": {
@@ -642,6 +972,21 @@
     [
      955,
      "/images/db/weapon-talents/blood-for-blood-weapon-talent-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/weapon-talents/blood-for-blood-weapon-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/weapon-talents/blood-for-blood-weapon-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/weapon-talents/blood-for-blood-weapon-talent-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -661,6 +1006,21 @@
      "/images/db/weapon-talents/bloodlust-weapon-talent-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/weapon-talents/bloodlust-weapon-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/weapon-talents/bloodlust-weapon-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/weapon-talents/bloodlust-weapon-talent-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "weapon-talents/breadbasket": {
@@ -676,6 +1036,21 @@
     [
      955,
      "/images/db/weapon-talents/breadbasket-weapon-talent-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/weapon-talents/breadbasket-weapon-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/weapon-talents/breadbasket-weapon-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/weapon-talents/breadbasket-weapon-talent-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -695,6 +1070,21 @@
      "/images/db/weapon-talents/breathe-free-weapon-talent-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/weapon-talents/breathe-free-weapon-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/weapon-talents/breathe-free-weapon-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/weapon-talents/breathe-free-weapon-talent-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "weapon-talents/calm-and-collected": {
@@ -710,6 +1100,21 @@
     [
      955,
      "/images/db/weapon-talents/calm-and-collected-weapon-talent-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/weapon-talents/calm-and-collected-weapon-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/weapon-talents/calm-and-collected-weapon-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/weapon-talents/calm-and-collected-weapon-talent-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -729,6 +1134,21 @@
      "/images/db/weapon-talents/conceited-weapon-talent-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/weapon-talents/conceited-weapon-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/weapon-talents/conceited-weapon-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/weapon-talents/conceited-weapon-talent-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "weapon-talents/concentrated-fire": {
@@ -744,6 +1164,21 @@
     [
      955,
      "/images/db/weapon-talents/concentrated-fire-weapon-talent-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/weapon-talents/concentrated-fire-weapon-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/weapon-talents/concentrated-fire-weapon-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/weapon-talents/concentrated-fire-weapon-talent-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -763,6 +1198,21 @@
      "/images/db/weapon-talents/crawl-weapon-talent-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/weapon-talents/crawl-weapon-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/weapon-talents/crawl-weapon-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/weapon-talents/crawl-weapon-talent-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "weapon-talents/damage-trade": {
@@ -778,6 +1228,21 @@
     [
      955,
      "/images/db/weapon-talents/damage-trade-weapon-talent-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/weapon-talents/damage-trade-weapon-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/weapon-talents/damage-trade-weapon-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/weapon-talents/damage-trade-weapon-talent-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -797,6 +1262,21 @@
      "/images/db/weapon-talents/death-by-numbers-weapon-talent-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/weapon-talents/death-by-numbers-weapon-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/weapon-talents/death-by-numbers-weapon-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/weapon-talents/death-by-numbers-weapon-talent-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "weapon-talents/enhancement-trade": {
@@ -812,6 +1292,21 @@
     [
      955,
      "/images/db/weapon-talents/enhancement-trade-weapon-talent-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/weapon-talents/enhancement-trade-weapon-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/weapon-talents/enhancement-trade-weapon-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/weapon-talents/enhancement-trade-weapon-talent-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -831,6 +1326,21 @@
      "/images/db/weapon-talents/ex-machina-weapon-talent-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/weapon-talents/ex-machina-weapon-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/weapon-talents/ex-machina-weapon-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/weapon-talents/ex-machina-weapon-talent-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "weapon-talents/fast-hands": {
@@ -846,6 +1356,21 @@
     [
      955,
      "/images/db/weapon-talents/fast-hands-weapon-talent-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/weapon-talents/fast-hands-weapon-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/weapon-talents/fast-hands-weapon-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/weapon-talents/fast-hands-weapon-talent-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -865,6 +1390,21 @@
      "/images/db/weapon-talents/fully-charged-weapon-talent-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/weapon-talents/fully-charged-weapon-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/weapon-talents/fully-charged-weapon-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/weapon-talents/fully-charged-weapon-talent-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "weapon-talents/head-collection": {
@@ -880,6 +1420,21 @@
     [
      955,
      "/images/db/weapon-talents/head-collection-weapon-talent-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/weapon-talents/head-collection-weapon-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/weapon-talents/head-collection-weapon-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/weapon-talents/head-collection-weapon-talent-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -899,6 +1454,21 @@
      "/images/db/weapon-talents/in-a-day-s-work-weapon-talent-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/weapon-talents/in-a-day-s-work-weapon-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/weapon-talents/in-a-day-s-work-weapon-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/weapon-talents/in-a-day-s-work-weapon-talent-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "weapon-talents/in-sync": {
@@ -914,6 +1484,21 @@
     [
      955,
      "/images/db/weapon-talents/in-sync-weapon-talent-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/weapon-talents/in-sync-weapon-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/weapon-talents/in-sync-weapon-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/weapon-talents/in-sync-weapon-talent-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -933,6 +1518,21 @@
      "/images/db/weapon-talents/joint-strike-weapon-talent-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/weapon-talents/joint-strike-weapon-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/weapon-talents/joint-strike-weapon-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/weapon-talents/joint-strike-weapon-talent-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "weapon-talents/killer": {
@@ -948,6 +1548,21 @@
     [
      955,
      "/images/db/weapon-talents/killer-weapon-talent-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/weapon-talents/killer-weapon-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/weapon-talents/killer-weapon-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/weapon-talents/killer-weapon-talent-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -967,6 +1582,21 @@
      "/images/db/weapon-talents/last-stand-weapon-talent-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/weapon-talents/last-stand-weapon-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/weapon-talents/last-stand-weapon-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/weapon-talents/last-stand-weapon-talent-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "weapon-talents/long-distance-marking": {
@@ -982,6 +1612,21 @@
     [
      955,
      "/images/db/weapon-talents/long-distance-marking-weapon-talent-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/weapon-talents/long-distance-marking-weapon-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/weapon-talents/long-distance-marking-weapon-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/weapon-talents/long-distance-marking-weapon-talent-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -1001,6 +1646,21 @@
      "/images/db/weapon-talents/medical-accuracy-weapon-talent-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/weapon-talents/medical-accuracy-weapon-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/weapon-talents/medical-accuracy-weapon-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/weapon-talents/medical-accuracy-weapon-talent-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "weapon-talents/misdirection-insurance": {
@@ -1016,6 +1676,21 @@
     [
      955,
      "/images/db/weapon-talents/misdirection-insurance-weapon-talent-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/weapon-talents/misdirection-insurance-weapon-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/weapon-talents/misdirection-insurance-weapon-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/weapon-talents/misdirection-insurance-weapon-talent-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -1035,6 +1710,21 @@
      "/images/db/weapon-talents/multi-pronged-attack-weapon-talent-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/weapon-talents/multi-pronged-attack-weapon-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/weapon-talents/multi-pronged-attack-weapon-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/weapon-talents/multi-pronged-attack-weapon-talent-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "weapon-talents/multitasking": {
@@ -1050,6 +1740,21 @@
     [
      955,
      "/images/db/weapon-talents/multitasking-weapon-talent-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/weapon-talents/multitasking-weapon-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/weapon-talents/multitasking-weapon-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/weapon-talents/multitasking-weapon-talent-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -1069,6 +1774,21 @@
      "/images/db/weapon-talents/neverending-weapon-talent-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/weapon-talents/neverending-weapon-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/weapon-talents/neverending-weapon-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/weapon-talents/neverending-weapon-talent-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "weapon-talents/no-exit": {
@@ -1084,6 +1804,21 @@
     [
      955,
      "/images/db/weapon-talents/no-exit-weapon-talent-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/weapon-talents/no-exit-weapon-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/weapon-talents/no-exit-weapon-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/weapon-talents/no-exit-weapon-talent-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -1103,6 +1838,21 @@
      "/images/db/weapon-talents/performer-weapon-talent-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/weapon-talents/performer-weapon-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/weapon-talents/performer-weapon-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/weapon-talents/performer-weapon-talent-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "weapon-talents/play-rough": {
@@ -1118,6 +1868,21 @@
     [
      955,
      "/images/db/weapon-talents/play-rough-weapon-talent-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/weapon-talents/play-rough-weapon-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/weapon-talents/play-rough-weapon-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/weapon-talents/play-rough-weapon-talent-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -1137,6 +1902,21 @@
      "/images/db/weapon-talents/precise-crit-weapon-talent-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/weapon-talents/precise-crit-weapon-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/weapon-talents/precise-crit-weapon-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/weapon-talents/precise-crit-weapon-talent-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "weapon-talents/precise-trauma": {
@@ -1152,6 +1932,21 @@
     [
      955,
      "/images/db/weapon-talents/precise-trauma-weapon-talent-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/weapon-talents/precise-trauma-weapon-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/weapon-talents/precise-trauma-weapon-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/weapon-talents/precise-trauma-weapon-talent-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -1171,6 +1966,21 @@
      "/images/db/weapon-talents/precise-support-weapon-talent-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/weapon-talents/precise-support-weapon-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/weapon-talents/precise-support-weapon-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/weapon-talents/precise-support-weapon-talent-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "weapon-talents/predatory-aura": {
@@ -1186,6 +1996,21 @@
     [
      955,
      "/images/db/weapon-talents/predatory-aura-weapon-talent-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/weapon-talents/predatory-aura-weapon-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/weapon-talents/predatory-aura-weapon-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/weapon-talents/predatory-aura-weapon-talent-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -1205,6 +2030,21 @@
      "/images/db/weapon-talents/proficient-reload-weapon-talent-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/weapon-talents/proficient-reload-weapon-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/weapon-talents/proficient-reload-weapon-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/weapon-talents/proficient-reload-weapon-talent-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "weapon-talents/pummel": {
@@ -1220,6 +2060,21 @@
     [
      955,
      "/images/db/weapon-talents/pummel-weapon-talent-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/weapon-talents/pummel-weapon-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/weapon-talents/pummel-weapon-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/weapon-talents/pummel-weapon-talent-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -1239,6 +2094,21 @@
      "/images/db/weapon-talents/rapid-charge-weapon-talent-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/weapon-talents/rapid-charge-weapon-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/weapon-talents/rapid-charge-weapon-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/weapon-talents/rapid-charge-weapon-talent-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "weapon-talents/revitalize": {
@@ -1254,6 +2124,21 @@
     [
      955,
      "/images/db/weapon-talents/revitalize-weapon-talent-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/weapon-talents/revitalize-weapon-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/weapon-talents/revitalize-weapon-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/weapon-talents/revitalize-weapon-talent-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -1273,6 +2158,21 @@
      "/images/db/weapon-talents/sadistic-shield-weapon-talent-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/weapon-talents/sadistic-shield-weapon-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/weapon-talents/sadistic-shield-weapon-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/weapon-talents/sadistic-shield-weapon-talent-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "weapon-talents/sentinel-aura": {
@@ -1288,6 +2188,21 @@
     [
      955,
      "/images/db/weapon-talents/sentinel-aura-weapon-talent-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/weapon-talents/sentinel-aura-weapon-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/weapon-talents/sentinel-aura-weapon-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/weapon-talents/sentinel-aura-weapon-talent-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -1307,6 +2222,21 @@
      "/images/db/weapon-talents/shooting-repair-weapon-talent-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/weapon-talents/shooting-repair-weapon-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/weapon-talents/shooting-repair-weapon-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/weapon-talents/shooting-repair-weapon-talent-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "weapon-talents/slaughter-fortitude": {
@@ -1322,6 +2252,21 @@
     [
      955,
      "/images/db/weapon-talents/slaughter-fortitude-weapon-talent-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/weapon-talents/slaughter-fortitude-weapon-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/weapon-talents/slaughter-fortitude-weapon-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/weapon-talents/slaughter-fortitude-weapon-talent-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -1341,6 +2286,21 @@
      "/images/db/weapon-talents/slaughter-healing-weapon-talent-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/weapon-talents/slaughter-healing-weapon-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/weapon-talents/slaughter-healing-weapon-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/weapon-talents/slaughter-healing-weapon-talent-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "weapon-talents/spec-ops": {
@@ -1356,6 +2316,21 @@
     [
      955,
      "/images/db/weapon-talents/spec-ops-weapon-talent-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/weapon-talents/spec-ops-weapon-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/weapon-talents/spec-ops-weapon-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/weapon-talents/spec-ops-weapon-talent-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -1375,6 +2350,21 @@
      "/images/db/weapon-talents/spirited-weapon-talent-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/weapon-talents/spirited-weapon-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/weapon-talents/spirited-weapon-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/weapon-talents/spirited-weapon-talent-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "weapon-talents/steady-aim": {
@@ -1390,6 +2380,21 @@
     [
      955,
      "/images/db/weapon-talents/steady-aim-weapon-talent-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/weapon-talents/steady-aim-weapon-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/weapon-talents/steady-aim-weapon-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/weapon-talents/steady-aim-weapon-talent-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -1409,6 +2414,21 @@
      "/images/db/weapon-talents/steady-handed-weapon-talent-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/weapon-talents/steady-handed-weapon-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/weapon-talents/steady-handed-weapon-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/weapon-talents/steady-handed-weapon-talent-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "weapon-talents/steady-hands": {
@@ -1424,6 +2444,21 @@
     [
      955,
      "/images/db/weapon-talents/steady-hands-weapon-talent-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/weapon-talents/steady-hands-weapon-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/weapon-talents/steady-hands-weapon-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/weapon-talents/steady-hands-weapon-talent-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -1443,6 +2478,21 @@
      "/images/db/weapon-talents/steady-reload-weapon-talent-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/weapon-talents/steady-reload-weapon-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/weapon-talents/steady-reload-weapon-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/weapon-talents/steady-reload-weapon-talent-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "weapon-talents/steady-suppression": {
@@ -1458,6 +2508,21 @@
     [
      955,
      "/images/db/weapon-talents/steady-suppression-weapon-talent-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/weapon-talents/steady-suppression-weapon-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/weapon-talents/steady-suppression-weapon-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/weapon-talents/steady-suppression-weapon-talent-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -1477,6 +2542,21 @@
      "/images/db/weapon-talents/still-alive-weapon-talent-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/weapon-talents/still-alive-weapon-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/weapon-talents/still-alive-weapon-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/weapon-talents/still-alive-weapon-talent-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "weapon-talents/strained": {
@@ -1492,6 +2572,21 @@
     [
      955,
      "/images/db/weapon-talents/strained-weapon-talent-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/weapon-talents/strained-weapon-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/weapon-talents/strained-weapon-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/weapon-talents/strained-weapon-talent-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -1511,6 +2606,21 @@
      "/images/db/weapon-talents/surgical-weapon-talent-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/weapon-talents/surgical-weapon-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/weapon-talents/surgical-weapon-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/weapon-talents/surgical-weapon-talent-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "weapon-talents/swift-aim": {
@@ -1526,6 +2636,21 @@
     [
      955,
      "/images/db/weapon-talents/swift-aim-weapon-talent-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/weapon-talents/swift-aim-weapon-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/weapon-talents/swift-aim-weapon-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/weapon-talents/swift-aim-weapon-talent-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -1545,6 +2670,21 @@
      "/images/db/weapon-talents/swift-taunt-weapon-talent-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/weapon-talents/swift-taunt-weapon-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/weapon-talents/swift-taunt-weapon-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/weapon-talents/swift-taunt-weapon-talent-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "weapon-talents/tactical-reload": {
@@ -1560,6 +2700,21 @@
     [
      955,
      "/images/db/weapon-talents/tactical-reload-weapon-talent-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/weapon-talents/tactical-reload-weapon-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/weapon-talents/tactical-reload-weapon-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/weapon-talents/tactical-reload-weapon-talent-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -1579,6 +2734,21 @@
      "/images/db/weapon-talents/tactical-targeting-weapon-talent-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/weapon-talents/tactical-targeting-weapon-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/weapon-talents/tactical-targeting-weapon-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/weapon-talents/tactical-targeting-weapon-talent-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "weapon-talents/take-a-breath": {
@@ -1594,6 +2764,21 @@
     [
      955,
      "/images/db/weapon-talents/take-a-breath-weapon-talent-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/weapon-talents/take-a-breath-weapon-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/weapon-talents/take-a-breath-weapon-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/weapon-talents/take-a-breath-weapon-talent-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -1613,6 +2798,21 @@
      "/images/db/weapon-talents/target-acquisition-weapon-talent-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/weapon-talents/target-acquisition-weapon-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/weapon-talents/target-acquisition-weapon-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/weapon-talents/target-acquisition-weapon-talent-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "weapon-talents/thick-skin": {
@@ -1628,6 +2828,21 @@
     [
      955,
      "/images/db/weapon-talents/thick-skin-weapon-talent-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/weapon-talents/thick-skin-weapon-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/weapon-talents/thick-skin-weapon-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/weapon-talents/thick-skin-weapon-talent-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -1647,6 +2862,21 @@
      "/images/db/weapon-talents/torrential-downpour-weapon-talent-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/weapon-talents/torrential-downpour-weapon-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/weapon-talents/torrential-downpour-weapon-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/weapon-talents/torrential-downpour-weapon-talent-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "weapon-talents/unbreakable": {
@@ -1662,6 +2892,21 @@
     [
      955,
      "/images/db/weapon-talents/unbreakable-weapon-talent-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/weapon-talents/unbreakable-weapon-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/weapon-talents/unbreakable-weapon-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/weapon-talents/unbreakable-weapon-talent-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -1681,6 +2926,21 @@
      "/images/db/weapon-talents/unhinged-weapon-talent-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/weapon-talents/unhinged-weapon-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/weapon-talents/unhinged-weapon-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/weapon-talents/unhinged-weapon-talent-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "weapon-talents/vibrant": {
@@ -1696,6 +2956,21 @@
     [
      955,
      "/images/db/weapon-talents/vibrant-weapon-talent-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/weapon-talents/vibrant-weapon-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/weapon-talents/vibrant-weapon-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/weapon-talents/vibrant-weapon-talent-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -1715,6 +2990,21 @@
      "/images/db/skill-mod-combos/accelerated-deployment-skill-mod-combo-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/skill-mod-combos/accelerated-deployment-skill-mod-combo-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/skill-mod-combos/accelerated-deployment-skill-mod-combo-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/skill-mod-combos/accelerated-deployment-skill-mod-combo-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "skill-mod-combos/ace": {
@@ -1730,6 +3020,21 @@
     [
      955,
      "/images/db/skill-mod-combos/ace-skill-mod-combo-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/skill-mod-combos/ace-skill-mod-combo-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/skill-mod-combos/ace-skill-mod-combo-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/skill-mod-combos/ace-skill-mod-combo-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -1749,6 +3054,21 @@
      "/images/db/skill-mod-combos/adaptive-armor-skill-mod-combo-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/skill-mod-combos/adaptive-armor-skill-mod-combo-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/skill-mod-combos/adaptive-armor-skill-mod-combo-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/skill-mod-combos/adaptive-armor-skill-mod-combo-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "skill-mod-combos/advanced-position": {
@@ -1764,6 +3084,21 @@
     [
      955,
      "/images/db/skill-mod-combos/advanced-position-skill-mod-combo-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/skill-mod-combos/advanced-position-skill-mod-combo-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/skill-mod-combos/advanced-position-skill-mod-combo-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/skill-mod-combos/advanced-position-skill-mod-combo-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -1783,6 +3118,21 @@
      "/images/db/skill-mod-combos/aggressive-drones-skill-mod-combo-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/skill-mod-combos/aggressive-drones-skill-mod-combo-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/skill-mod-combos/aggressive-drones-skill-mod-combo-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/skill-mod-combos/aggressive-drones-skill-mod-combo-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "skill-mod-combos/airburst": {
@@ -1798,6 +3148,21 @@
     [
      955,
      "/images/db/skill-mod-combos/airburst-skill-mod-combo-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/skill-mod-combos/airburst-skill-mod-combo-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/skill-mod-combos/airburst-skill-mod-combo-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/skill-mod-combos/airburst-skill-mod-combo-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -1817,6 +3182,21 @@
      "/images/db/skill-mod-combos/ammo-refill-skill-mod-combo-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/skill-mod-combos/ammo-refill-skill-mod-combo-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/skill-mod-combos/ammo-refill-skill-mod-combo-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/skill-mod-combos/ammo-refill-skill-mod-combo-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "skill-mod-combos/anchored": {
@@ -1832,6 +3212,21 @@
     [
      955,
      "/images/db/skill-mod-combos/anchored-skill-mod-combo-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/skill-mod-combos/anchored-skill-mod-combo-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/skill-mod-combos/anchored-skill-mod-combo-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/skill-mod-combos/anchored-skill-mod-combo-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -1851,6 +3246,21 @@
      "/images/db/skill-mod-combos/applied-demolitions-skill-mod-combo-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/skill-mod-combos/applied-demolitions-skill-mod-combo-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/skill-mod-combos/applied-demolitions-skill-mod-combo-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/skill-mod-combos/applied-demolitions-skill-mod-combo-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "skill-mod-combos/area-denial": {
@@ -1866,6 +3276,21 @@
     [
      955,
      "/images/db/skill-mod-combos/area-denial-skill-mod-combo-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/skill-mod-combos/area-denial-skill-mod-combo-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/skill-mod-combos/area-denial-skill-mod-combo-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/skill-mod-combos/area-denial-skill-mod-combo-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -1885,6 +3310,21 @@
      "/images/db/skill-mod-combos/area-suppression-skill-mod-combo-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/skill-mod-combos/area-suppression-skill-mod-combo-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/skill-mod-combos/area-suppression-skill-mod-combo-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/skill-mod-combos/area-suppression-skill-mod-combo-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "skill-mod-combos/area-sweep": {
@@ -1900,6 +3340,21 @@
     [
      955,
      "/images/db/skill-mod-combos/area-sweep-skill-mod-combo-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/skill-mod-combos/area-sweep-skill-mod-combo-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/skill-mod-combos/area-sweep-skill-mod-combo-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/skill-mod-combos/area-sweep-skill-mod-combo-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -1919,6 +3374,21 @@
      "/images/db/skill-mod-combos/armor-strengthening-skill-mod-combo-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/skill-mod-combos/armor-strengthening-skill-mod-combo-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/skill-mod-combos/armor-strengthening-skill-mod-combo-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/skill-mod-combos/armor-strengthening-skill-mod-combo-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "skill-mod-combos/armored-train": {
@@ -1934,6 +3404,21 @@
     [
      955,
      "/images/db/skill-mod-combos/armored-train-skill-mod-combo-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/skill-mod-combos/armored-train-skill-mod-combo-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/skill-mod-combos/armored-train-skill-mod-combo-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/skill-mod-combos/armored-train-skill-mod-combo-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -1953,6 +3438,21 @@
      "/images/db/skill-mod-combos/attention-seeker-skill-mod-combo-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/skill-mod-combos/attention-seeker-skill-mod-combo-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/skill-mod-combos/attention-seeker-skill-mod-combo-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/skill-mod-combos/attention-seeker-skill-mod-combo-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "skill-mod-combos/augmented-range": {
@@ -1968,6 +3468,21 @@
     [
      955,
      "/images/db/skill-mod-combos/augmented-range-skill-mod-combo-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/skill-mod-combos/augmented-range-skill-mod-combo-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/skill-mod-combos/augmented-range-skill-mod-combo-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/skill-mod-combos/augmented-range-skill-mod-combo-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -1987,6 +3502,21 @@
      "/images/db/skill-mod-combos/auto-trauma-treatment-skill-mod-combo-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/skill-mod-combos/auto-trauma-treatment-skill-mod-combo-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/skill-mod-combos/auto-trauma-treatment-skill-mod-combo-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/skill-mod-combos/auto-trauma-treatment-skill-mod-combo-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "skill-mod-combos/beneficial-association": {
@@ -2002,6 +3532,21 @@
     [
      955,
      "/images/db/skill-mod-combos/beneficial-association-skill-mod-combo-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/skill-mod-combos/beneficial-association-skill-mod-combo-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/skill-mod-combos/beneficial-association-skill-mod-combo-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/skill-mod-combos/beneficial-association-skill-mod-combo-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -2021,6 +3566,21 @@
      "/images/db/skill-mod-combos/berserker-skill-mod-combo-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/skill-mod-combos/berserker-skill-mod-combo-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/skill-mod-combos/berserker-skill-mod-combo-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/skill-mod-combos/berserker-skill-mod-combo-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "skill-mod-combos/buddy-treatment": {
@@ -2036,6 +3596,21 @@
     [
      955,
      "/images/db/skill-mod-combos/buddy-treatment-skill-mod-combo-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/skill-mod-combos/buddy-treatment-skill-mod-combo-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/skill-mod-combos/buddy-treatment-skill-mod-combo-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/skill-mod-combos/buddy-treatment-skill-mod-combo-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -2055,6 +3630,21 @@
      "/images/db/skill-mod-combos/bugle-call-skill-mod-combo-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/skill-mod-combos/bugle-call-skill-mod-combo-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/skill-mod-combos/bugle-call-skill-mod-combo-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/skill-mod-combos/bugle-call-skill-mod-combo-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "skill-mod-combos/camp-fire": {
@@ -2070,6 +3660,21 @@
     [
      955,
      "/images/db/skill-mod-combos/camp-fire-skill-mod-combo-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/skill-mod-combos/camp-fire-skill-mod-combo-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/skill-mod-combos/camp-fire-skill-mod-combo-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/skill-mod-combos/camp-fire-skill-mod-combo-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -2089,6 +3694,21 @@
      "/images/db/skill-mod-combos/chemical-recharge-skill-mod-combo-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/skill-mod-combos/chemical-recharge-skill-mod-combo-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/skill-mod-combos/chemical-recharge-skill-mod-combo-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/skill-mod-combos/chemical-recharge-skill-mod-combo-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "skill-mod-combos/close-protection": {
@@ -2104,6 +3724,21 @@
     [
      955,
      "/images/db/skill-mod-combos/close-protection-skill-mod-combo-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/skill-mod-combos/close-protection-skill-mod-combo-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/skill-mod-combos/close-protection-skill-mod-combo-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/skill-mod-combos/close-protection-skill-mod-combo-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -2123,6 +3758,21 @@
      "/images/db/skill-mod-combos/combat-enhancer-skill-mod-combo-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/skill-mod-combos/combat-enhancer-skill-mod-combo-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/skill-mod-combos/combat-enhancer-skill-mod-combo-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/skill-mod-combos/combat-enhancer-skill-mod-combo-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "skill-mod-combos/commando": {
@@ -2138,6 +3788,21 @@
     [
      955,
      "/images/db/skill-mod-combos/commando-skill-mod-combo-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/skill-mod-combos/commando-skill-mod-combo-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/skill-mod-combos/commando-skill-mod-combo-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/skill-mod-combos/commando-skill-mod-combo-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -2157,6 +3822,21 @@
      "/images/db/skill-mod-combos/compound-effect-skill-mod-combo-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/skill-mod-combos/compound-effect-skill-mod-combo-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/skill-mod-combos/compound-effect-skill-mod-combo-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/skill-mod-combos/compound-effect-skill-mod-combo-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "skill-mod-combos/concentrated-fire": {
@@ -2172,6 +3852,21 @@
     [
      955,
      "/images/db/skill-mod-combos/concentrated-fire-skill-mod-combo-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/skill-mod-combos/concentrated-fire-skill-mod-combo-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/skill-mod-combos/concentrated-fire-skill-mod-combo-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/skill-mod-combos/concentrated-fire-skill-mod-combo-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -2191,6 +3886,21 @@
      "/images/db/skill-mod-combos/contagion-skill-mod-combo-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/skill-mod-combos/contagion-skill-mod-combo-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/skill-mod-combos/contagion-skill-mod-combo-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/skill-mod-combos/contagion-skill-mod-combo-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "skill-mod-combos/cooling-device": {
@@ -2206,6 +3916,21 @@
     [
      955,
      "/images/db/skill-mod-combos/cooling-device-skill-mod-combo-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/skill-mod-combos/cooling-device-skill-mod-combo-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/skill-mod-combos/cooling-device-skill-mod-combo-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/skill-mod-combos/cooling-device-skill-mod-combo-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -2225,6 +3950,21 @@
      "/images/db/skill-mod-combos/cooling-system-skill-mod-combo-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/skill-mod-combos/cooling-system-skill-mod-combo-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/skill-mod-combos/cooling-system-skill-mod-combo-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/skill-mod-combos/cooling-system-skill-mod-combo-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "skill-mod-combos/coordinated-strike": {
@@ -2240,6 +3980,21 @@
     [
      955,
      "/images/db/skill-mod-combos/coordinated-strike-skill-mod-combo-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/skill-mod-combos/coordinated-strike-skill-mod-combo-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/skill-mod-combos/coordinated-strike-skill-mod-combo-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/skill-mod-combos/coordinated-strike-skill-mod-combo-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -2259,6 +4014,21 @@
      "/images/db/skill-mod-combos/corrosive-strike-skill-mod-combo-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/skill-mod-combos/corrosive-strike-skill-mod-combo-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/skill-mod-combos/corrosive-strike-skill-mod-combo-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/skill-mod-combos/corrosive-strike-skill-mod-combo-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "skill-mod-combos/effective-deterrent": {
@@ -2274,6 +4044,21 @@
     [
      955,
      "/images/db/skill-mod-combos/effective-deterrent-skill-mod-combo-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/skill-mod-combos/effective-deterrent-skill-mod-combo-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/skill-mod-combos/effective-deterrent-skill-mod-combo-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/skill-mod-combos/effective-deterrent-skill-mod-combo-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -2293,6 +4078,21 @@
      "/images/db/skill-mod-combos/effective-triage-skill-mod-combo-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/skill-mod-combos/effective-triage-skill-mod-combo-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/skill-mod-combos/effective-triage-skill-mod-combo-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/skill-mod-combos/effective-triage-skill-mod-combo-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "skill-mod-combos/emergency-measures": {
@@ -2308,6 +4108,21 @@
     [
      955,
      "/images/db/skill-mod-combos/emergency-measures-skill-mod-combo-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/skill-mod-combos/emergency-measures-skill-mod-combo-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/skill-mod-combos/emergency-measures-skill-mod-combo-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/skill-mod-combos/emergency-measures-skill-mod-combo-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -2327,6 +4142,21 @@
      "/images/db/skill-mod-combos/enhanced-chip-skill-mod-combo-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/skill-mod-combos/enhanced-chip-skill-mod-combo-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/skill-mod-combos/enhanced-chip-skill-mod-combo-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/skill-mod-combos/enhanced-chip-skill-mod-combo-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "skill-mod-combos/enhanced-formula": {
@@ -2342,6 +4172,21 @@
     [
      955,
      "/images/db/skill-mod-combos/enhanced-formula-skill-mod-combo-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/skill-mod-combos/enhanced-formula-skill-mod-combo-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/skill-mod-combos/enhanced-formula-skill-mod-combo-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/skill-mod-combos/enhanced-formula-skill-mod-combo-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -2361,6 +4206,21 @@
      "/images/db/skill-mod-combos/exhaustion-skill-mod-combo-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/skill-mod-combos/exhaustion-skill-mod-combo-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/skill-mod-combos/exhaustion-skill-mod-combo-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/skill-mod-combos/exhaustion-skill-mod-combo-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "skill-mod-combos/extermination": {
@@ -2376,6 +4236,21 @@
     [
      955,
      "/images/db/skill-mod-combos/extermination-skill-mod-combo-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/skill-mod-combos/extermination-skill-mod-combo-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/skill-mod-combos/extermination-skill-mod-combo-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/skill-mod-combos/extermination-skill-mod-combo-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -2395,6 +4270,21 @@
      "/images/db/skill-mod-combos/field-bastion-skill-mod-combo-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/skill-mod-combos/field-bastion-skill-mod-combo-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/skill-mod-combos/field-bastion-skill-mod-combo-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/skill-mod-combos/field-bastion-skill-mod-combo-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "skill-mod-combos/field-mortar": {
@@ -2410,6 +4300,21 @@
     [
      955,
      "/images/db/skill-mod-combos/field-mortar-skill-mod-combo-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/skill-mod-combos/field-mortar-skill-mod-combo-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/skill-mod-combos/field-mortar-skill-mod-combo-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/skill-mod-combos/field-mortar-skill-mod-combo-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -2429,6 +4334,21 @@
      "/images/db/skill-mod-combos/field-repairs-skill-mod-combo-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/skill-mod-combos/field-repairs-skill-mod-combo-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/skill-mod-combos/field-repairs-skill-mod-combo-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/skill-mod-combos/field-repairs-skill-mod-combo-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "skill-mod-combos/field-supplies": {
@@ -2444,6 +4364,21 @@
     [
      955,
      "/images/db/skill-mod-combos/field-supplies-skill-mod-combo-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/skill-mod-combos/field-supplies-skill-mod-combo-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/skill-mod-combos/field-supplies-skill-mod-combo-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/skill-mod-combos/field-supplies-skill-mod-combo-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -2463,6 +4398,21 @@
      "/images/db/skill-mod-combos/fly-trap-skill-mod-combo-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/skill-mod-combos/fly-trap-skill-mod-combo-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/skill-mod-combos/fly-trap-skill-mod-combo-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/skill-mod-combos/fly-trap-skill-mod-combo-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "skill-mod-combos/frag-grenades": {
@@ -2478,6 +4428,21 @@
     [
      955,
      "/images/db/skill-mod-combos/frag-grenades-skill-mod-combo-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/skill-mod-combos/frag-grenades-skill-mod-combo-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/skill-mod-combos/frag-grenades-skill-mod-combo-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/skill-mod-combos/frag-grenades-skill-mod-combo-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -2497,6 +4462,21 @@
      "/images/db/skill-mod-combos/fragmentation-charge-skill-mod-combo-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/skill-mod-combos/fragmentation-charge-skill-mod-combo-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/skill-mod-combos/fragmentation-charge-skill-mod-combo-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/skill-mod-combos/fragmentation-charge-skill-mod-combo-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "skill-mod-combos/generative-formula": {
@@ -2512,6 +4492,21 @@
     [
      955,
      "/images/db/skill-mod-combos/generative-formula-skill-mod-combo-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/skill-mod-combos/generative-formula-skill-mod-combo-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/skill-mod-combos/generative-formula-skill-mod-combo-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/skill-mod-combos/generative-formula-skill-mod-combo-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -2531,6 +4526,21 @@
      "/images/db/skill-mod-combos/harvest-skill-mod-combo-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/skill-mod-combos/harvest-skill-mod-combo-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/skill-mod-combos/harvest-skill-mod-combo-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/skill-mod-combos/harvest-skill-mod-combo-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "skill-mod-combos/hazardous-area": {
@@ -2546,6 +4556,21 @@
     [
      955,
      "/images/db/skill-mod-combos/hazardous-area-skill-mod-combo-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/skill-mod-combos/hazardous-area-skill-mod-combo-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/skill-mod-combos/hazardous-area-skill-mod-combo-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/skill-mod-combos/hazardous-area-skill-mod-combo-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -2565,6 +4590,21 @@
      "/images/db/skill-mod-combos/heavy-weight-skill-mod-combo-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/skill-mod-combos/heavy-weight-skill-mod-combo-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/skill-mod-combos/heavy-weight-skill-mod-combo-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/skill-mod-combos/heavy-weight-skill-mod-combo-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "skill-mod-combos/hereafter-resilience": {
@@ -2580,6 +4620,21 @@
     [
      955,
      "/images/db/skill-mod-combos/hereafter-resilience-skill-mod-combo-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/skill-mod-combos/hereafter-resilience-skill-mod-combo-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/skill-mod-combos/hereafter-resilience-skill-mod-combo-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/skill-mod-combos/hereafter-resilience-skill-mod-combo-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -2599,6 +4654,21 @@
      "/images/db/skill-mod-combos/impenetrable-wall-skill-mod-combo-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/skill-mod-combos/impenetrable-wall-skill-mod-combo-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/skill-mod-combos/impenetrable-wall-skill-mod-combo-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/skill-mod-combos/impenetrable-wall-skill-mod-combo-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "skill-mod-combos/king-of-the-pit": {
@@ -2614,6 +4684,21 @@
     [
      955,
      "/images/db/skill-mod-combos/king-of-the-pit-skill-mod-combo-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/skill-mod-combos/king-of-the-pit-skill-mod-combo-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/skill-mod-combos/king-of-the-pit-skill-mod-combo-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/skill-mod-combos/king-of-the-pit-skill-mod-combo-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -2633,6 +4718,21 @@
      "/images/db/skill-mod-combos/last-moment-skill-mod-combo-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/skill-mod-combos/last-moment-skill-mod-combo-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/skill-mod-combos/last-moment-skill-mod-combo-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/skill-mod-combos/last-moment-skill-mod-combo-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "skill-mod-combos/lethal-sweep": {
@@ -2648,6 +4748,21 @@
     [
      955,
      "/images/db/skill-mod-combos/lethal-sweep-skill-mod-combo-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/skill-mod-combos/lethal-sweep-skill-mod-combo-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/skill-mod-combos/lethal-sweep-skill-mod-combo-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/skill-mod-combos/lethal-sweep-skill-mod-combo-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -2667,6 +4782,21 @@
      "/images/db/skill-mod-combos/liquid-nitrogen-skill-mod-combo-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/skill-mod-combos/liquid-nitrogen-skill-mod-combo-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/skill-mod-combos/liquid-nitrogen-skill-mod-combo-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/skill-mod-combos/liquid-nitrogen-skill-mod-combo-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "skill-mod-combos/magnetic-recharge": {
@@ -2682,6 +4812,21 @@
     [
      955,
      "/images/db/skill-mod-combos/magnetic-recharge-skill-mod-combo-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/skill-mod-combos/magnetic-recharge-skill-mod-combo-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/skill-mod-combos/magnetic-recharge-skill-mod-combo-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/skill-mod-combos/magnetic-recharge-skill-mod-combo-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -2701,6 +4846,21 @@
      "/images/db/skill-mod-combos/offensive-defense-skill-mod-combo-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/skill-mod-combos/offensive-defense-skill-mod-combo-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/skill-mod-combos/offensive-defense-skill-mod-combo-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/skill-mod-combos/offensive-defense-skill-mod-combo-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "skill-mod-combos/optimal-awareness": {
@@ -2716,6 +4876,21 @@
     [
      955,
      "/images/db/skill-mod-combos/optimal-awareness-skill-mod-combo-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/skill-mod-combos/optimal-awareness-skill-mod-combo-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/skill-mod-combos/optimal-awareness-skill-mod-combo-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/skill-mod-combos/optimal-awareness-skill-mod-combo-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -2735,6 +4910,21 @@
      "/images/db/skill-mod-combos/optimal-range-skill-mod-combo-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/skill-mod-combos/optimal-range-skill-mod-combo-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/skill-mod-combos/optimal-range-skill-mod-combo-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/skill-mod-combos/optimal-range-skill-mod-combo-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "skill-mod-combos/optimized-armor": {
@@ -2750,6 +4940,21 @@
     [
      955,
      "/images/db/skill-mod-combos/optimized-armor-skill-mod-combo-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/skill-mod-combos/optimized-armor-skill-mod-combo-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/skill-mod-combos/optimized-armor-skill-mod-combo-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/skill-mod-combos/optimized-armor-skill-mod-combo-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -2769,6 +4974,21 @@
      "/images/db/skill-mod-combos/optimized-targeting-skill-mod-combo-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/skill-mod-combos/optimized-targeting-skill-mod-combo-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/skill-mod-combos/optimized-targeting-skill-mod-combo-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/skill-mod-combos/optimized-targeting-skill-mod-combo-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "skill-mod-combos/optimized": {
@@ -2784,6 +5004,21 @@
     [
      955,
      "/images/db/skill-mod-combos/optimized-skill-mod-combo-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/skill-mod-combos/optimized-skill-mod-combo-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/skill-mod-combos/optimized-skill-mod-combo-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/skill-mod-combos/optimized-skill-mod-combo-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -2803,6 +5038,21 @@
      "/images/db/skill-mod-combos/pack-a-punch-skill-mod-combo-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/skill-mod-combos/pack-a-punch-skill-mod-combo-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/skill-mod-combos/pack-a-punch-skill-mod-combo-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/skill-mod-combos/pack-a-punch-skill-mod-combo-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "skill-mod-combos/positive-feedback": {
@@ -2818,6 +5068,21 @@
     [
      955,
      "/images/db/skill-mod-combos/positive-feedback-skill-mod-combo-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/skill-mod-combos/positive-feedback-skill-mod-combo-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/skill-mod-combos/positive-feedback-skill-mod-combo-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/skill-mod-combos/positive-feedback-skill-mod-combo-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -2837,6 +5102,21 @@
      "/images/db/skill-mod-combos/precision-fires-skill-mod-combo-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/skill-mod-combos/precision-fires-skill-mod-combo-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/skill-mod-combos/precision-fires-skill-mod-combo-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/skill-mod-combos/precision-fires-skill-mod-combo-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "skill-mod-combos/prioritized-targets": {
@@ -2852,6 +5132,21 @@
     [
      955,
      "/images/db/skill-mod-combos/prioritized-targets-skill-mod-combo-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/skill-mod-combos/prioritized-targets-skill-mod-combo-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/skill-mod-combos/prioritized-targets-skill-mod-combo-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/skill-mod-combos/prioritized-targets-skill-mod-combo-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -2871,6 +5166,21 @@
      "/images/db/skill-mod-combos/provocateur-skill-mod-combo-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/skill-mod-combos/provocateur-skill-mod-combo-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/skill-mod-combos/provocateur-skill-mod-combo-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/skill-mod-combos/provocateur-skill-mod-combo-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "skill-mod-combos/pulse-feedback": {
@@ -2886,6 +5196,21 @@
     [
      955,
      "/images/db/skill-mod-combos/pulse-feedback-skill-mod-combo-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/skill-mod-combos/pulse-feedback-skill-mod-combo-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/skill-mod-combos/pulse-feedback-skill-mod-combo-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/skill-mod-combos/pulse-feedback-skill-mod-combo-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -2905,6 +5230,21 @@
      "/images/db/skill-mod-combos/rational-distribution-skill-mod-combo-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/skill-mod-combos/rational-distribution-skill-mod-combo-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/skill-mod-combos/rational-distribution-skill-mod-combo-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/skill-mod-combos/rational-distribution-skill-mod-combo-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "skill-mod-combos/reciprocal-charge": {
@@ -2920,6 +5260,21 @@
     [
      955,
      "/images/db/skill-mod-combos/reciprocal-charge-skill-mod-combo-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/skill-mod-combos/reciprocal-charge-skill-mod-combo-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/skill-mod-combos/reciprocal-charge-skill-mod-combo-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/skill-mod-combos/reciprocal-charge-skill-mod-combo-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -2939,6 +5294,21 @@
      "/images/db/skill-mod-combos/reinforced-support-skill-mod-combo-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/skill-mod-combos/reinforced-support-skill-mod-combo-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/skill-mod-combos/reinforced-support-skill-mod-combo-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/skill-mod-combos/reinforced-support-skill-mod-combo-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "skill-mod-combos/schadenfreude": {
@@ -2954,6 +5324,21 @@
     [
      955,
      "/images/db/skill-mod-combos/schadenfreude-skill-mod-combo-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/skill-mod-combos/schadenfreude-skill-mod-combo-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/skill-mod-combos/schadenfreude-skill-mod-combo-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/skill-mod-combos/schadenfreude-skill-mod-combo-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -2973,6 +5358,21 @@
      "/images/db/skill-mod-combos/stabilized-flight-skill-mod-combo-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/skill-mod-combos/stabilized-flight-skill-mod-combo-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/skill-mod-combos/stabilized-flight-skill-mod-combo-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/skill-mod-combos/stabilized-flight-skill-mod-combo-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "skill-mod-combos/supercharged": {
@@ -2988,6 +5388,21 @@
     [
      955,
      "/images/db/skill-mod-combos/supercharged-skill-mod-combo-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/skill-mod-combos/supercharged-skill-mod-combo-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/skill-mod-combos/supercharged-skill-mod-combo-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/skill-mod-combos/supercharged-skill-mod-combo-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -3007,6 +5422,21 @@
      "/images/db/skill-mod-combos/supply-line-skill-mod-combo-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/skill-mod-combos/supply-line-skill-mod-combo-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/skill-mod-combos/supply-line-skill-mod-combo-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/skill-mod-combos/supply-line-skill-mod-combo-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "skill-mod-combos/support-pattern": {
@@ -3022,6 +5452,21 @@
     [
      955,
      "/images/db/skill-mod-combos/support-pattern-skill-mod-combo-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/skill-mod-combos/support-pattern-skill-mod-combo-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/skill-mod-combos/support-pattern-skill-mod-combo-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/skill-mod-combos/support-pattern-skill-mod-combo-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -3041,6 +5486,21 @@
      "/images/db/skill-mod-combos/surgical-strike-skill-mod-combo-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/skill-mod-combos/surgical-strike-skill-mod-combo-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/skill-mod-combos/surgical-strike-skill-mod-combo-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/skill-mod-combos/surgical-strike-skill-mod-combo-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "skill-mod-combos/tactical-insight": {
@@ -3056,6 +5516,21 @@
     [
      955,
      "/images/db/skill-mod-combos/tactical-insight-skill-mod-combo-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/skill-mod-combos/tactical-insight-skill-mod-combo-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/skill-mod-combos/tactical-insight-skill-mod-combo-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/skill-mod-combos/tactical-insight-skill-mod-combo-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -3075,6 +5550,21 @@
      "/images/db/skill-mod-combos/tactical-loop-skill-mod-combo-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/skill-mod-combos/tactical-loop-skill-mod-combo-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/skill-mod-combos/tactical-loop-skill-mod-combo-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/skill-mod-combos/tactical-loop-skill-mod-combo-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "skill-mod-combos/tactical-reinforcement": {
@@ -3090,6 +5580,21 @@
     [
      955,
      "/images/db/skill-mod-combos/tactical-reinforcement-skill-mod-combo-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/skill-mod-combos/tactical-reinforcement-skill-mod-combo-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/skill-mod-combos/tactical-reinforcement-skill-mod-combo-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/skill-mod-combos/tactical-reinforcement-skill-mod-combo-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -3109,6 +5614,21 @@
      "/images/db/skill-mod-combos/targeted-surveillance-skill-mod-combo-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/skill-mod-combos/targeted-surveillance-skill-mod-combo-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/skill-mod-combos/targeted-surveillance-skill-mod-combo-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/skill-mod-combos/targeted-surveillance-skill-mod-combo-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "skill-mod-combos/teamfight": {
@@ -3124,6 +5644,21 @@
     [
      955,
      "/images/db/skill-mod-combos/teamfight-skill-mod-combo-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/skill-mod-combos/teamfight-skill-mod-combo-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/skill-mod-combos/teamfight-skill-mod-combo-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/skill-mod-combos/teamfight-skill-mod-combo-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -3143,6 +5678,21 @@
      "/images/db/skill-mod-combos/thermite-charge-skill-mod-combo-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/skill-mod-combos/thermite-charge-skill-mod-combo-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/skill-mod-combos/thermite-charge-skill-mod-combo-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/skill-mod-combos/thermite-charge-skill-mod-combo-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "skill-mod-combos/thermobaric-grenades": {
@@ -3158,6 +5708,21 @@
     [
      955,
      "/images/db/skill-mod-combos/thermobaric-grenades-skill-mod-combo-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/skill-mod-combos/thermobaric-grenades-skill-mod-combo-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/skill-mod-combos/thermobaric-grenades-skill-mod-combo-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/skill-mod-combos/thermobaric-grenades-skill-mod-combo-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -3177,6 +5742,21 @@
      "/images/db/skill-mod-combos/top-off-skill-mod-combo-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/skill-mod-combos/top-off-skill-mod-combo-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/skill-mod-combos/top-off-skill-mod-combo-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/skill-mod-combos/top-off-skill-mod-combo-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "skill-mod-combos/tough-times": {
@@ -3192,6 +5772,21 @@
     [
      955,
      "/images/db/skill-mod-combos/tough-times-skill-mod-combo-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/skill-mod-combos/tough-times-skill-mod-combo-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/skill-mod-combos/tough-times-skill-mod-combo-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/skill-mod-combos/tough-times-skill-mod-combo-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -3211,6 +5806,21 @@
      "/images/db/skill-mod-combos/weaponized-treatment-skill-mod-combo-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/skill-mod-combos/weaponized-treatment-skill-mod-combo-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/skill-mod-combos/weaponized-treatment-skill-mod-combo-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/skill-mod-combos/weaponized-treatment-skill-mod-combo-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "skill-mod-combos/wingman": {
@@ -3226,6 +5836,21 @@
     [
      955,
      "/images/db/skill-mod-combos/wingman-skill-mod-combo-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/skill-mod-combos/wingman-skill-mod-combo-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/skill-mod-combos/wingman-skill-mod-combo-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/skill-mod-combos/wingman-skill-mod-combo-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -3245,6 +5870,21 @@
      "/images/db/backpack-talents/assault-protection-backpack-talent-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/backpack-talents/assault-protection-backpack-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/backpack-talents/assault-protection-backpack-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/backpack-talents/assault-protection-backpack-talent-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "backpack-talents/brainstorm": {
@@ -3260,6 +5900,21 @@
     [
      955,
      "/images/db/backpack-talents/brainstorm-backpack-talent-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/backpack-talents/brainstorm-backpack-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/backpack-talents/brainstorm-backpack-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/backpack-talents/brainstorm-backpack-talent-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -3279,6 +5934,21 @@
      "/images/db/backpack-talents/combat-inspiration-backpack-talent-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/backpack-talents/combat-inspiration-backpack-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/backpack-talents/combat-inspiration-backpack-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/backpack-talents/combat-inspiration-backpack-talent-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "backpack-talents/defense-enhancement": {
@@ -3294,6 +5964,21 @@
     [
      955,
      "/images/db/backpack-talents/defense-enhancement-backpack-talent-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/backpack-talents/defense-enhancement-backpack-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/backpack-talents/defense-enhancement-backpack-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/backpack-talents/defense-enhancement-backpack-talent-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -3313,6 +5998,21 @@
      "/images/db/backpack-talents/double-edged-bullet-backpack-talent-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/backpack-talents/double-edged-bullet-backpack-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/backpack-talents/double-edged-bullet-backpack-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/backpack-talents/double-edged-bullet-backpack-talent-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "backpack-talents/electrical-protection": {
@@ -3328,6 +6028,21 @@
     [
      955,
      "/images/db/backpack-talents/electrical-protection-backpack-talent-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/backpack-talents/electrical-protection-backpack-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/backpack-talents/electrical-protection-backpack-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/backpack-talents/electrical-protection-backpack-talent-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -3347,6 +6062,21 @@
      "/images/db/backpack-talents/emergency-measures-backpack-talent-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/backpack-talents/emergency-measures-backpack-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/backpack-talents/emergency-measures-backpack-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/backpack-talents/emergency-measures-backpack-talent-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "backpack-talents/explosive-burst": {
@@ -3362,6 +6092,21 @@
     [
      955,
      "/images/db/backpack-talents/explosive-burst-backpack-talent-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/backpack-talents/explosive-burst-backpack-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/backpack-talents/explosive-burst-backpack-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/backpack-talents/explosive-burst-backpack-talent-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -3381,6 +6126,21 @@
      "/images/db/backpack-talents/explosive-fury-backpack-talent-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/backpack-talents/explosive-fury-backpack-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/backpack-talents/explosive-fury-backpack-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/backpack-talents/explosive-fury-backpack-talent-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "backpack-talents/hidden-impact": {
@@ -3396,6 +6156,21 @@
     [
      955,
      "/images/db/backpack-talents/hidden-impact-backpack-talent-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/backpack-talents/hidden-impact-backpack-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/backpack-talents/hidden-impact-backpack-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/backpack-talents/hidden-impact-backpack-talent-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -3415,6 +6190,21 @@
      "/images/db/backpack-talents/injured-taunt-backpack-talent-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/backpack-talents/injured-taunt-backpack-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/backpack-talents/injured-taunt-backpack-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/backpack-talents/injured-taunt-backpack-talent-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "backpack-talents/inspiration": {
@@ -3430,6 +6220,21 @@
     [
      955,
      "/images/db/backpack-talents/inspiration-backpack-talent-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/backpack-talents/inspiration-backpack-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/backpack-talents/inspiration-backpack-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/backpack-talents/inspiration-backpack-talent-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -3449,6 +6254,21 @@
      "/images/db/backpack-talents/intense-performance-backpack-talent-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/backpack-talents/intense-performance-backpack-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/backpack-talents/intense-performance-backpack-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/backpack-talents/intense-performance-backpack-talent-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "backpack-talents/meditation": {
@@ -3464,6 +6284,21 @@
     [
      955,
      "/images/db/backpack-talents/meditation-backpack-talent-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/backpack-talents/meditation-backpack-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/backpack-talents/meditation-backpack-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/backpack-talents/meditation-backpack-talent-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -3483,6 +6318,21 @@
      "/images/db/backpack-talents/minion-training-backpack-talent-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/backpack-talents/minion-training-backpack-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/backpack-talents/minion-training-backpack-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/backpack-talents/minion-training-backpack-talent-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "backpack-talents/open-fire": {
@@ -3498,6 +6348,21 @@
     [
      955,
      "/images/db/backpack-talents/open-fire-backpack-talent-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/backpack-talents/open-fire-backpack-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/backpack-talents/open-fire-backpack-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/backpack-talents/open-fire-backpack-talent-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -3517,6 +6382,21 @@
      "/images/db/backpack-talents/overwatch-backpack-talent-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/backpack-talents/overwatch-backpack-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/backpack-talents/overwatch-backpack-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/backpack-talents/overwatch-backpack-talent-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "backpack-talents/painkillers": {
@@ -3532,6 +6412,21 @@
     [
      955,
      "/images/db/backpack-talents/painkillers-backpack-talent-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/backpack-talents/painkillers-backpack-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/backpack-talents/painkillers-backpack-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/backpack-talents/painkillers-backpack-talent-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -3551,6 +6446,21 @@
      "/images/db/backpack-talents/prime-engineer-backpack-talent-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/backpack-talents/prime-engineer-backpack-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/backpack-talents/prime-engineer-backpack-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/backpack-talents/prime-engineer-backpack-talent-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "backpack-talents/rescue-protection": {
@@ -3566,6 +6476,21 @@
     [
      955,
      "/images/db/backpack-talents/rescue-protection-backpack-talent-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/backpack-talents/rescue-protection-backpack-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/backpack-talents/rescue-protection-backpack-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/backpack-talents/rescue-protection-backpack-talent-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -3585,6 +6510,21 @@
      "/images/db/backpack-talents/rock-solid-backpack-talent-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/backpack-talents/rock-solid-backpack-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/backpack-talents/rock-solid-backpack-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/backpack-talents/rock-solid-backpack-talent-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "backpack-talents/siege": {
@@ -3600,6 +6540,21 @@
     [
      955,
      "/images/db/backpack-talents/siege-backpack-talent-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/backpack-talents/siege-backpack-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/backpack-talents/siege-backpack-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/backpack-talents/siege-backpack-talent-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -3619,6 +6574,21 @@
      "/images/db/backpack-talents/simple-pleasures-backpack-talent-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/backpack-talents/simple-pleasures-backpack-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/backpack-talents/simple-pleasures-backpack-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/backpack-talents/simple-pleasures-backpack-talent-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "backpack-talents/street-fighter": {
@@ -3634,6 +6604,21 @@
     [
      955,
      "/images/db/backpack-talents/street-fighter-backpack-talent-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/backpack-talents/street-fighter-backpack-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/backpack-talents/street-fighter-backpack-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/backpack-talents/street-fighter-backpack-talent-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -3653,6 +6638,21 @@
      "/images/db/backpack-talents/unstoppable-backpack-talent-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/backpack-talents/unstoppable-backpack-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/backpack-talents/unstoppable-backpack-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/backpack-talents/unstoppable-backpack-talent-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "body-armor-talents/accelerated-charge": {
@@ -3668,6 +6668,21 @@
     [
      955,
      "/images/db/body-armor-talents/accelerated-charge-body-armor-talent-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/body-armor-talents/accelerated-charge-body-armor-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/body-armor-talents/accelerated-charge-body-armor-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/body-armor-talents/accelerated-charge-body-armor-talent-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -3687,6 +6702,21 @@
      "/images/db/body-armor-talents/battlelust-body-armor-talent-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/body-armor-talents/battlelust-body-armor-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/body-armor-talents/battlelust-body-armor-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/body-armor-talents/battlelust-body-armor-talent-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "body-armor-talents/boosted-shield": {
@@ -3702,6 +6732,21 @@
     [
      955,
      "/images/db/body-armor-talents/boosted-shield-body-armor-talent-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/body-armor-talents/boosted-shield-body-armor-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/body-armor-talents/boosted-shield-body-armor-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/body-armor-talents/boosted-shield-body-armor-talent-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -3721,6 +6766,21 @@
      "/images/db/body-armor-talents/crossfire-body-armor-talent-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/body-armor-talents/crossfire-body-armor-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/body-armor-talents/crossfire-body-armor-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/body-armor-talents/crossfire-body-armor-talent-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "body-armor-talents/deep-focus": {
@@ -3736,6 +6796,21 @@
     [
      955,
      "/images/db/body-armor-talents/deep-focus-body-armor-talent-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/body-armor-talents/deep-focus-body-armor-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/body-armor-talents/deep-focus-body-armor-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/body-armor-talents/deep-focus-body-armor-talent-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -3755,6 +6830,21 @@
      "/images/db/body-armor-talents/defensive-charge-body-armor-talent-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/body-armor-talents/defensive-charge-body-armor-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/body-armor-talents/defensive-charge-body-armor-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/body-armor-talents/defensive-charge-body-armor-talent-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "body-armor-talents/duality": {
@@ -3770,6 +6860,21 @@
     [
      955,
      "/images/db/body-armor-talents/duality-body-armor-talent-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/body-armor-talents/duality-body-armor-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/body-armor-talents/duality-body-armor-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/body-armor-talents/duality-body-armor-talent-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -3789,6 +6894,21 @@
      "/images/db/body-armor-talents/emergency-retreat-body-armor-talent-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/body-armor-talents/emergency-retreat-body-armor-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/body-armor-talents/emergency-retreat-body-armor-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/body-armor-talents/emergency-retreat-body-armor-talent-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "body-armor-talents/energize": {
@@ -3804,6 +6924,21 @@
     [
      955,
      "/images/db/body-armor-talents/energize-body-armor-talent-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/body-armor-talents/energize-body-armor-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/body-armor-talents/energize-body-armor-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/body-armor-talents/energize-body-armor-talent-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -3823,6 +6958,21 @@
      "/images/db/body-armor-talents/energy-drink-body-armor-talent-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/body-armor-talents/energy-drink-body-armor-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/body-armor-talents/energy-drink-body-armor-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/body-armor-talents/energy-drink-body-armor-talent-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "body-armor-talents/fearless-charge": {
@@ -3838,6 +6988,21 @@
     [
      955,
      "/images/db/body-armor-talents/fearless-charge-body-armor-talent-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/body-armor-talents/fearless-charge-body-armor-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/body-armor-talents/fearless-charge-body-armor-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/body-armor-talents/fearless-charge-body-armor-talent-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -3857,6 +7022,21 @@
      "/images/db/body-armor-talents/glass-cannon-body-armor-talent-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/body-armor-talents/glass-cannon-body-armor-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/body-armor-talents/glass-cannon-body-armor-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/body-armor-talents/glass-cannon-body-armor-talent-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "body-armor-talents/hypervigilant": {
@@ -3872,6 +7052,21 @@
     [
      955,
      "/images/db/body-armor-talents/hypervigilant-body-armor-talent-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/body-armor-talents/hypervigilant-body-armor-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/body-armor-talents/hypervigilant-body-armor-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/body-armor-talents/hypervigilant-body-armor-talent-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -3891,6 +7086,21 @@
      "/images/db/body-armor-talents/injured-concealment-body-armor-talent-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/body-armor-talents/injured-concealment-body-armor-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/body-armor-talents/injured-concealment-body-armor-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/body-armor-talents/injured-concealment-body-armor-talent-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "body-armor-talents/instant-triage": {
@@ -3906,6 +7116,21 @@
     [
      955,
      "/images/db/body-armor-talents/instant-triage-body-armor-talent-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/body-armor-talents/instant-triage-body-armor-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/body-armor-talents/instant-triage-body-armor-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/body-armor-talents/instant-triage-body-armor-talent-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -3925,6 +7150,21 @@
      "/images/db/body-armor-talents/nothing-to-lose-body-armor-talent-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/body-armor-talents/nothing-to-lose-body-armor-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/body-armor-talents/nothing-to-lose-body-armor-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/body-armor-talents/nothing-to-lose-body-armor-talent-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "body-armor-talents/recycling": {
@@ -3940,6 +7180,21 @@
     [
      955,
      "/images/db/body-armor-talents/recycling-body-armor-talent-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/body-armor-talents/recycling-body-armor-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/body-armor-talents/recycling-body-armor-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/body-armor-talents/recycling-body-armor-talent-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -3959,6 +7214,21 @@
      "/images/db/body-armor-talents/rescue-signal-body-armor-talent-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/body-armor-talents/rescue-signal-body-armor-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/body-armor-talents/rescue-signal-body-armor-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/body-armor-talents/rescue-signal-body-armor-talent-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "body-armor-talents/second-wind": {
@@ -3974,6 +7244,21 @@
     [
      955,
      "/images/db/body-armor-talents/second-wind-body-armor-talent-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/body-armor-talents/second-wind-body-armor-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/body-armor-talents/second-wind-body-armor-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/body-armor-talents/second-wind-body-armor-talent-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -3993,6 +7278,21 @@
      "/images/db/body-armor-talents/socialite-body-armor-talent-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/body-armor-talents/socialite-body-armor-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/body-armor-talents/socialite-body-armor-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/body-armor-talents/socialite-body-armor-talent-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "body-armor-talents/suppression-rescue": {
@@ -4008,6 +7308,21 @@
     [
      955,
      "/images/db/body-armor-talents/suppression-rescue-body-armor-talent-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/body-armor-talents/suppression-rescue-body-armor-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/body-armor-talents/suppression-rescue-body-armor-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/body-armor-talents/suppression-rescue-body-armor-talent-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -4027,6 +7342,21 @@
      "/images/db/body-armor-talents/suppressive-fire-body-armor-talent-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/body-armor-talents/suppressive-fire-body-armor-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/body-armor-talents/suppressive-fire-body-armor-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/body-armor-talents/suppressive-fire-body-armor-talent-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "body-armor-talents/territory-expansion": {
@@ -4042,6 +7372,21 @@
     [
      955,
      "/images/db/body-armor-talents/territory-expansion-body-armor-talent-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/body-armor-talents/territory-expansion-body-armor-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/body-armor-talents/territory-expansion-body-armor-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/body-armor-talents/territory-expansion-body-armor-talent-icon-division-resurgence-160.webp"
     ]
    ]
   }
@@ -4061,6 +7406,21 @@
      "/images/db/body-armor-talents/toymaker-body-armor-talent-card-division-resurgence-v2-955.webp"
     ]
    ]
+  },
+  "icon": {
+   "src": "/images/db/body-armor-talents/toymaker-body-armor-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/body-armor-talents/toymaker-body-armor-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/body-armor-talents/toymaker-body-armor-talent-icon-division-resurgence-160.webp"
+    ]
+   ]
   }
  },
  "body-armor-talents/unflinching": {
@@ -4076,6 +7436,21 @@
     [
      955,
      "/images/db/body-armor-talents/unflinching-body-armor-talent-card-division-resurgence-v2-955.webp"
+    ]
+   ]
+  },
+  "icon": {
+   "src": "/images/db/body-armor-talents/unflinching-body-armor-talent-icon-division-resurgence-160.webp",
+   "width": 160,
+   "height": 160,
+   "srcset": [
+    [
+     80,
+     "/images/db/body-armor-talents/unflinching-body-armor-talent-icon-division-resurgence-80.webp"
+    ],
+    [
+     160,
+     "/images/db/body-armor-talents/unflinching-body-armor-talent-icon-division-resurgence-160.webp"
     ]
    ]
   }

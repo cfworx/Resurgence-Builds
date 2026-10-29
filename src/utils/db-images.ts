@@ -8,8 +8,8 @@ const SITE = 'https://resurgencebuilds.com';
 const images = manifest as unknown as Record<string, Record<string, DbImage>>;
 const lists = manifest as unknown as Record<string, { names?: string[] }>;
 
-/** e.g. dbImage('os-protocols/ambusher') or dbImage('exotic-weapons/scorpio', 'hero') */
-export function dbImage(id: string, variant: 'card' | 'hero' = 'card'): DbImage | undefined {
+/** e.g. dbImage('os-protocols/ambusher'), dbImage('exotic-weapons/scorpio', 'hero') or dbImage('weapon-talents/in-sync', 'icon') */
+export function dbImage(id: string, variant: 'card' | 'hero' | 'icon' = 'card'): DbImage | undefined {
   return images[id]?.[variant];
 }
 

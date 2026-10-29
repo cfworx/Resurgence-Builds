@@ -1,0 +1,44 @@
+---
+// An item's own in-game icon (weapon talent, gear set, skill mod, body armor or backpack talent),
+// cut from its Build-Making Database card by scripts/build-db-images.mjs. Renders nothing when the
+// item has no icon. Lists pass alt="" (the name sits right next to it); page headers describe it.
+import { dbImage } from '../utils/db-images';
+
+interface Props {
+  /** Manifest id, e.g. 'weapon-talents/in-sync' */
+  id: string;
+  /** Shown size in CSS px (square). */
+  size?: number;
+  alt?: string;
+  eager?: boolean;
+}
+
+const { id, size = 56, alt = '', eager = false } = Astro.props;
+const img = dbImage(id, 'icon');
+---
+
+{img && (
+  <img
+    class="db-icon"
+    src={img.srcset[0][1]}
+    srcset={img.srcset.map(([w, u]) => `${u} ${w}w`).join(', ')}
+    sizes={`${size}px`}
+    width={size}
+    height={size}
+    alt={alt}
+    loading={eager ? 'eager' : 'lazy'}
+    decoding="async"
+    style={`width:${size}px;height:${size}px;`}
+  />
+)}
+
+<style>
+  .db-icon {
+    flex-shrink: 0;
+    display: block;
+    border-radius: 10px;
+    background: #2b2b2b;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    object-fit: cover;
+  }
+</style>

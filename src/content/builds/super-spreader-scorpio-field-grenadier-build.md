@@ -10,12 +10,12 @@ patch: "Season 2 · Phase 2"
 verified: false
 theorycraft: true
 tags: ["Theorycraft", "Field Grenadier", "Scorpio", "Artillery Turret", "Mechanical Enemy", "Gunny Johnny", "Concerted Strike", "Contagion", "PPSH-41", "Demolitionist", "off-meta", "build-guide", "Season 2"]
-description: "Our own off-meta Field Grenadier build: the Scorpio makes them bleed, a Contagion Seeker Mine spreads it, and one Artillery Turret switches on five weapon buffs. Every piece checked against the game's database."
+description: "Our own off-meta Field Grenadier build: the Scorpio makes them bleed, a Contagion Seeker Mine spreads it, and one Artillery Turret switches on five weapon buffs."
 featuredImage: "/images/builds/division-resurgence-super-spreader-scorpio-septicemia-card-1200.webp"
 imageAlt: "The Scorpio's card in The Division Resurgence Build-Making Database showing its Septicemia talent (Venom stacks that inflict Bleed, Confusion and Shock), with the title Super Spreader, Field Grenadier build"
 author: "RapidF5"
 shareTitle: "The shotgun infects. The mine spreads it. The turret pays for everything."
-shareText: "A Field Grenadier build nobody runs: Scorpio Bleed, a Contagion Seeker Mine and an Artillery Turret that keeps five weapon buffs on. Our theorycraft, every piece checked against the game's database."
+shareText: "A Field Grenadier build nobody runs: Scorpio Bleed, a Contagion Seeker Mine and an Artillery Turret that keeps five weapon buffs on."
 plannerHash: "s=Demolitionist&sc=Field+Grenadier&n=Super+Spreader&ms=gs-6&m1=chc&m2=chd&gs=gs-6&g1=chc&g2=chd&hs=gs-6&h1=chd&h2=wd&cs=gs-5&ct=ba-4&c1=wd&c2=chd&ps=gs-5&pt=bp-12&p1=chd&p2=chc&ks=gs-6&k1=chc&k2=chd&w1e=ew-4&w1tr=T1&w1t=wt-22&w1t2=wt-34&w1b1=chd&w1b2=wd&w2s=sw-13&w2tr=T2&w2t=wt-22&w2t2=wt-6&w2b1=chc&w2b2=chd&os=os-33&sm1=smc-10&sm2=smc-13&sm3=smc-16"
 faqs:
   - question: "What is the Super Spreader build in Division Resurgence?"

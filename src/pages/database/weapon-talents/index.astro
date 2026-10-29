@@ -2,6 +2,7 @@
 import DatabaseLayout from '../../../layouts/DatabaseLayout.astro';
 import weaponTalents from '../../../data/weapon-talents.json';
 import AdSenseUnit from '../../../components/AdSenseUnit.astro';
+import DbIcon from '../../../components/DbIcon.astro';
 import { verifiedPatch } from '../../../data/site-config';
 import talentSources from '../../../data/weapon-talent-sources.json';
 // All 69 talents were re-checked in the in-game Build-Making Database on 2026-10-28 (Season 2 Phase 2).
@@ -62,10 +63,9 @@ const itemListLd = {
     {weaponTalents.map((talent) => (
       <a href={`/database/weapon-talents/${toSlug(talent.name)}/`} class="db-card-link">
         <article class="db-card">
-          <div class="db-card__header">
-            <div>
-              <h2 class="db-card__title">{talent.name}</h2>
-            </div>
+          <div class="db-card__header talent-head">
+            <DbIcon id={`weapon-talents/${toSlug(talent.name)}`} size={52} />
+            <h2 class="db-card__title">{talent.name}</h2>
           </div>
           
           <div class="db-card__body">
@@ -93,6 +93,8 @@ const itemListLd = {
   .db-card-link .db-card {
     height: 100%;
   }
+  .talent-head { justify-content: flex-start; align-items: center; flex-wrap: nowrap; }
+  .talent-head .db-card__title { margin: 0; }
   .talent-rolls {
     margin: auto 0 0;
     font-family: var(--font-mono);

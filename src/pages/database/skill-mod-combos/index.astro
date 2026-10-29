@@ -3,6 +3,7 @@ import DatabaseLayout from '../../../layouts/DatabaseLayout.astro';
 import { fixPlurals } from '../../../utils/seo';
 import skillMods from '../../../data/skill-mod-combos.json';
 import AdSenseUnit from '../../../components/AdSenseUnit.astro';
+import DbIcon from '../../../components/DbIcon.astro';
 import { verifiedPatch } from '../../../data/site-config';
 // 89 of the 90 combos were re-checked in the in-game Build-Making Database on 2026-10-28 (Season 2 Phase 2).
 // Ammo Refill is the exception: the database still shows its pre-Season 2 text (see its note).
@@ -85,7 +86,8 @@ const itemListLd = {
     {skillMods.map((mod) => (
       <a href={`/database/skill-mod-combos/${toSlug(mod.name)}/`} class="db-card-link" data-spec={mod.specialization} style="text-decoration:none;color:inherit;display:block;">
         <article class="db-card" style="height:100%;">
-          <div class="db-card__header">
+          <div class="db-card__header" style="justify-content:flex-start;align-items:center;flex-wrap:nowrap;">
+            <DbIcon id={`skill-mod-combos/${toSlug(mod.name)}`} size={52} />
             <div>
               <h2 class="db-card__title">{mod.name}</h2>
               <span class={`tag ${getSpecClass(mod.specialization)}`} style="margin-top:var(--sp-2);display:inline-block;">{mod.specialization}</span>

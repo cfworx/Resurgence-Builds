@@ -13,6 +13,7 @@ import { buildsWearingSet, buildSetLoadouts, fmtDate } from '../../../utils/db-e
 import { verifiedPatch, DATABASE_UPDATED } from '../../../data/site-config';
 import GameImage from '../../../components/GameImage.astro';
 import { dbImage, imageObject, CARDS_RECORDED } from '../../../utils/db-images';
+import DbIcon from '../../../components/DbIcon.astro';
 const lastVerified = verifiedPatch(); // Set text, tiers and Armory pieces re-checked in game on 2026-10-28 (Season 2 Phase 2). Pass an older label here if a later patch changes sets before they're re-checked.
 
 export function getStaticPaths() {
@@ -179,6 +180,7 @@ const bonuses = [
       <!-- Header -->
       <div class="gearset-header">
         <div class="gearset-header__top">
+          <DbIcon id={`gear-set-effects/${slug}`} size={64} alt={`${set.name} gear set icon in The Division Resurgence`} eager />
           <h1 class="gearset-title">{set.name}</h1>
           <span class="gearset-archetype-badge">{archetype}</span>
         </div>
