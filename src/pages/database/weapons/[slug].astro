@@ -187,7 +187,7 @@ const boldStars = (t: string) => t
             alt={`The Division Resurgence Armory, ${weapon.type} Tier ${weapon.armoryTier.slice(1)} screen: ${armoryNames.join(', ')}`}
             sizes="(max-width: 760px) calc(100vw - 32px), 720px"
           />
-          <figcaption>The {weapon.name} on the Armory's {weapon.type} Tier {weapon.armoryTier.slice(1)} screen, next to the other {weapon.type === 'SMG' || weapon.type === 'LMG' ? weapon.type + 's' : weapon.type.toLowerCase() + 's'} of that tier. Recorded {CARDS_RECORDED}.</figcaption>
+          <figcaption>The {weapon.name} on the Armory's {weapon.type} Tier {weapon.armoryTier.slice(1)} screen, next to the other {weapon.type === 'SMG' || weapon.type === 'LMG' ? weapon.type + 's' : weapon.type.toLowerCase() + 's'} of that tier. Weapons the recording account hadn't unlocked yet show as locked outlines. Recorded {CARDS_RECORDED}.</figcaption>
         </figure>
       )}
 

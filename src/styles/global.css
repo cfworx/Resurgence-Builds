@@ -1827,7 +1827,7 @@ details.toc[open] > summary { margin-bottom: var(--sp-2); }
   border: 1px solid var(--border);
   background: #0f0f12;
 }
-.game-figure--hero { max-width: 580px; }   /* exotic weapon header crop, 580 px wide at most */
+.game-figure--hero { max-width: 558px; }   /* exotic card top, 558 px wide */
 .game-figure--card { max-width: 360px; }   /* tall cards: OS Protocols, full exotic cards */
 .game-figure--wide { max-width: 720px; }   /* landscape: gear sets, talents, skill mod combos */
 .game-figure figcaption {
@@ -1855,7 +1855,7 @@ details.toc[open] > summary { margin-bottom: var(--sp-2); }
 .game-card-toggle[open] > summary { border-bottom: 1px solid var(--border); }
 .game-card-toggle .game-figure { padding: var(--sp-4); margin: 0; }
 
-/* Exotic header crops differ in height (245 to 276 px at 580 wide); a fixed frame keeps the card
-   titles in a row lined up. The tallest (The Bighorn) only loses dark edge below its damage line. */
-.exotic-thumb { aspect-ratio: 580 / 262; overflow: hidden; background: #3d1d22; }
+/* Exotic card tops are all 558 x 311 (one clean frame each from the recording); the fixed frame
+   just reserves that space so the card titles in a row line up before the images load. */
+.exotic-thumb { aspect-ratio: 558 / 311; overflow: hidden; background: #0c0c0c; }
 .exotic-thumb img { display: block; width: 100%; height: auto; }
