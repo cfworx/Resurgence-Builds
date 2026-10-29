@@ -1,7 +1,3 @@
-https://www.resurgencebuilds.com/* https://resurgencebuilds.com/:splat 301
-http://www.resurgencebuilds.com/* https://resurgencebuilds.com/:splat 301
-http://resurgencebuilds.com/* https://resurgencebuilds.com/:splat 301
-
 # Content redirects
 /guides/hidden-mechanics-build-optimization/ /guides/hidden-mechanics-explained/ 301
 /sitemap.xml /sitemap-index.xml 301
@@ -276,3 +272,9 @@ http://resurgencebuilds.com/* https://resurgencebuilds.com/:splat 301
 /database/weapons/svd /database/weapons/ 301
 /database/weapons/acr-ss/ /database/weapons/ 301
 /database/weapons/acr-ss /database/weapons/ 301
+
+# Domain-level rules go last: Cloudflare wants static redirects before dynamic ones (splats), and with these
+# three at the top only the first ~100 rules of this file were being applied.
+https://www.resurgencebuilds.com/* https://resurgencebuilds.com/:splat 301
+http://www.resurgencebuilds.com/* https://resurgencebuilds.com/:splat 301
+http://resurgencebuilds.com/* https://resurgencebuilds.com/:splat 301
