@@ -5,8 +5,8 @@ patchDate: "2026-04-13"
 updatedDate: 2026-10-24
 author: "RapidF5"
 summary: "Hotfix 1.1.1 was a small, fast-shipping fix focused on sound and UI bugs reported in the first two weeks after launch."
-featuredImage: "/images/patch-notes/division-resurgence-server-hotfix-june-26-2026-hero.webp"
-imageAlt: "A Division agent walking down a burning New York street under a Hot Fix Incoming banner"
+featuredImage: "/images/patch-notes/division-resurgence-hotfix-1-1-1-locker-room-1200.webp"
+imageAlt: "An agent heading for the decontamination doors past a rack of hazmat suits in the Base of Operations in The Division Resurgence, with the title Hotfix 1.1.1"
 shareTitle: "Save your squad a Google search"
 shareText: "Tweet this so people finally stop asking if the servers are back up."
 

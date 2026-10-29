@@ -5,6 +5,8 @@ updatedDate: 2026-10-24
 author: "RapidF5"
 tags: ["News", "Events", "Season 2", "Steam"]
 description: "Division Resurgence Liberty & Justice For All speedrun (Oct 16 to 19), the Lethal Stinger Lichen cosmetic draw, Milky Way skin promo and a teaser."
+imageAlt: "An agent standing under two American flags in the Base of Operations entrance hall in The Division Resurgence"
+featuredImage: "/images/news/division-resurgence-liberty-justice-speedrun-lichen-flags-1200.webp"
 shareTitle: "A speedrun, a skin and a letter"
 shareText: "Final call for the Liberty & Justice For All speedrun, plus a Lethal Stinger Lichen draw and a mysterious letter from the official account."
 faqs:

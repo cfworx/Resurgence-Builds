@@ -12,8 +12,11 @@ import bonusAttributes from '../data/bonus-attributes.json';
 import weaponBonusAttributes from '../data/weapon-bonus-attributes.json';
 import plannerSpecs from '../data/planner-specs.json';
 import templateNotes from '../data/planner-template-notes.json';
+import talentSources from '../data/weapon-talent-sources.json';
+import gearSources from '../data/gear-sources.json';
 import { getCollection } from 'astro:content';
 import { CURRENT_PATCH } from '../data/site-config';
+import { SOURCES_RECORDED } from '../utils/rolls';
 
 // Templates: every build guide with a plannerHash, grouped by specialization in the picker
 const notes: Record<string, unknown> = templateNotes;
@@ -48,6 +51,45 @@ const jsonLd = {
   publisher: { '@id': 'https://resurgencebuilds.com/#organization' }
 };
 
+// What can roll where, from the game's Build-Making Database Source lists (research/build-database):
+// each weapon's talent pool, and for each gear set the body armor and backpack talents a piece of that
+// set can carry (with the pieces, so the planner can name them).
+const slugify = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+const talentIdBySlug: Record<string, string> = Object.fromEntries(weaponTalents.map((t: any) => [slugify(t.name), t.id]));
+const talentIdByName: Record<string, string> = Object.fromEntries(weaponTalents.map((t: any) => [t.name, t.id]));
+talentIdByName['Precision Support'] = talentIdByName['Precise Support'];
+const weaponIdBySlug: Record<string, string> = Object.fromEntries(standardWeapons.map((w: any) => [slugify(w.name), w.id]));
+const weaponPools: Record<string, string[]> = {};
+for (const [tslug, t] of Object.entries((talentSources as any).talents) as [string, any][]) {
+  const tid = talentIdBySlug[tslug];
+  if (!tid) continue;
+  for (const w of t.weapons) {
+    const wid = weaponIdBySlug[w.slug];
+    if (wid) (weaponPools[wid] ||= []).push(tid);
+  }
+}
+for (const e of exoticWeapons as any[]) {
+  if (Array.isArray(e.possibleTalents)) weaponPools[e.id] = e.possibleTalents.map((n: string) => talentIdByName[n]).filter(Boolean);
+}
+const setIdBySlug: Record<string, string> = Object.fromEntries(gearSets.map((g: any) => [slugify(g.name), g.id]));
+const gs = gearSources as any;
+const gearRolls: Record<string, Record<string, Record<string, string[]>>> = { body: {}, backpack: {} };
+for (const [kind, slot, list] of [['bodyArmorTalents', 'body', bodyArmorTalents], ['backpackTalents', 'backpack', backpackTalents]] as const) {
+  const idBySlug: Record<string, string> = Object.fromEntries((list as any[]).map((t) => [slugify(t.name), t.id]));
+  for (const [tslug, t] of Object.entries(gs[kind]) as [string, any][]) {
+    const tid = idBySlug[tslug];
+    if (!tid) continue;
+    for (const p of t.pieces) {
+      const piece = gs.pieces[p.slug];
+      for (const [sslug, set] of Object.entries(gs.sets) as [string, any][]) {
+        if (!set.pieces.some((x: any) => x.slug === p.slug)) continue;
+        const sid = setIdBySlug[sslug];
+        ((gearRolls[slot][sid] ||= {})[tid] ||= []).push(`${piece.name} (${piece.tier})`);
+      }
+    }
+  }
+}
+
 // Only what the engine reads goes into the payload (no images or wiki-style extras)
 const omit = <T extends Record<string, unknown>>(list: T[], keys: string[]) =>
   list.map(item => Object.fromEntries(Object.entries(item).filter(([k]) => !keys.includes(k))));
@@ -64,6 +106,7 @@ const dataPayload = JSON.stringify({
   bonusAttributes,
   weaponBonusAttributes,
   templates,
+  rolls: { recorded: SOURCES_RECORDED, weapons: weaponPools, gear: gearRolls },
 }).replace(/</g, '\\u003c');
 
 const gearSetCount = gearSets.length;
@@ -72,7 +115,8 @@ const smcCount = skillModCombos.length;
 const wtCount = weaponTalents.length;
 
 const faqs = [
-  { question: 'Where does the planner data come from?', answer: `From this site's database: ${gearSetCount} gear sets, ${wtCount} weapon talents, ${osCount} OS Protocols and ${smcCount} skill mod combos, kept current from Ubisoft's patch notes and drop tables. Templates come from our build guides, and numbers a creator read off their own screen are marked as theirs in the guide.` },
+  { question: 'Where does the planner data come from?', answer: `From this site's database: ${gearSetCount} gear sets, ${wtCount} weapon talents, ${osCount} OS Protocols and ${smcCount} skill mod combos, checked against the game's own Build-Making Database and kept current from Ubisoft's patch notes and drop tables. Templates come from our build guides, and numbers a creator read off their own screen are marked as theirs in the guide.` },
+  { question: 'Can I put any talent on any gun or gear piece?', answer: `No, and the planner only offers what can roll. Each weapon has a pool of 18 talents, and each body armor piece and backpack can roll 12 of its 25. Pick a weapon and its talent list shows only that gun's pool; pick a set for the body armor or backpack and the talent list shows only what a piece of that set can carry, with the pieces named. It all comes from the Source lists in the game's Build-Making Database, which we recorded on ${SOURCES_RECORDED}. A template from a creator whose gun or gear carries something outside those lists gets flagged in the checks.` },
   { question: 'Are the stat totals exact?', answer: 'They add up set bonuses, OS Protocol stats, each skill mod combo\'s 2-piece bonus (shown as a range) and the roll values you type in. Rolls without a value are listed but not added, and talent effects are left out because they depend on conditions.' },
   { question: 'What does the score check?', answer: 'How complete the build is (40 points), whether each gear piece counts toward an active set bonus (30), whether your attributes fit your focus (20) and whether your OS Protocol matches it (10). Each warning takes 5 off. The Checks list shows what to look at.' },
   { question: 'How do I share a build?', answer: 'Click Copy build link. The link holds the whole build, including roll values and weapon tiers, and opens without an account.' },
@@ -376,7 +420,7 @@ const chevron = 'M6 9l6 6 6-6';
   </section>
 
   <script type="application/json" id="builder-data" set:html={dataPayload}></script>
-  <script is:inline src="/js/builder-v3-engine.js?v=7"></script>
+  <script is:inline src="/js/builder-v3-engine.js?v=8"></script>
   <script is:inline>
     // If the engine didn't start (blocked or failed to load), say so instead of showing dead buttons
     if (!document.getElementById('lab').hasAttribute('data-ready')) document.getElementById('labError').hidden = false;

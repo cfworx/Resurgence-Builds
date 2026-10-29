@@ -5,6 +5,8 @@ updatedDate: 2026-10-24
 author: "RapidF5"
 tags: ["News", "Events", "Season 2", "Exotic", "Community"]
 description: "Division Resurgence Bighorn community event: 300,000 headshot kills from Aug 28 to 30 unlocks an extra Tactical Augmentation for all participants."
+imageAlt: "Aiming down a gold-trimmed rifle scope on a snowy New York street in The Division Resurgence, Out of Ammo on screen, with the title 300,000 Headshots"
+featuredImage: "/images/news/division-resurgence-bighorn-headshot-weekend-scope-1200.webp"
 shareTitle: "300,000 headshots. Let's go."
 shareText: "Ubisoft wants 300,000 Bighorn headshot kills this weekend. Hit the goal and every participant gets an extra Tactical Augmentation. Aim for the hat."
 faqs:

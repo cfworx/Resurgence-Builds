@@ -19,7 +19,7 @@ sources:
   - '<a href="https://www.youtube.com/watch?v=orBlCP7ro4I&t=3351s">RogueMadras, Original Tactical Pharma Gameplay</a>, 2026.'
   - 'In-game Division Resurgence Build Database, verified May 2026.'
   - 'The in-game Armory, community gear and talent reference.'
-plannerHash: "s=Field+Medic&sc=Tactical+Pharma&n=Tactical+Pharma+800k&ms=gs-11&m1=scd&m2=scc&gs=gs-7&g1=si&g2=scc&hs=gs-7&h1=si&h2=sms&cs=gs-7&ct=ba-12&c1=scc&c2=si&ps=gs-11&pt=bp-19&p1=sms&p2=scc&ks=gs-7&k1=scd&k2=scc&w1s=sw-11&w1tr=T2&w1t=wt-4&w1t2=wt-5&w1b1=si&w1b2=scd&w2s=sw-33&w2t=wt-30&w2t2=wt-31&w2b1=si&w2b2=scd&os=os-6&sm1=smc-75&sm2=smc-76&sm3=smc-79"
+plannerHash: "s=Field+Medic&sc=Tactical+Pharma&n=Tactical+Pharma+800k&ms=gs-11&m1=scd&m2=scc&gs=gs-7&g1=si&g2=scc&hs=gs-7&h1=si&h2=sms&cs=gs-7&ct=ba-12&c1=scc&c2=si&ps=gs-11&pt=bp-19&p1=sms&p2=scc&ks=gs-7&k1=scd&k2=scc&w1s=sw-11&w1tr=T2&w1t=wt-4&w1t2=wt-5&w1b1=si&w1b2=scd&w2s=sw-39&w2tr=T2&w2t=wt-30&w2t2=wt-31&w2b1=si&w2b2=scd&os=os-6&sm1=smc-75&sm2=smc-76&sm3=smc-79"
 faqs:
   - question: "What is the best Field Medic build in Division Resurgence?"
     answer: "For the up-to-date version, see GGReborn's Season 2 Tactical Pharma build on this site. This one, RogueMadras's Tactical Pharma build, was the highest-DPS skill build we'd seen when it was written in May 2026, pushing 800k+ DPS with optimized gear. It uses Chemical Trap and Oxidizing Hive as slotted skills, with Oxidizing Swarm as the signature ability, to dissolve entire rooms while your guns sit there collecting Engineering stacks like participation trophies. If your idea of 'healing' is making sure the enemies die before your teammates need healing, welcome home."
@@ -49,7 +49,7 @@ videoDuration: "PT10M28S"
 
 We originally covered this build as the "Geneva Suggestion." RogueMadras has since optimized it further during Season 1 Phase 2 (ahead of the Season 2 launch, which arrived alongside the Steam release on August 5, 2026), so we're updating everything. His sheet on screen reads **704.09k DPS**, and **800k+** is his projection with optimized gear. Rank 1 Global. On the Tactical Pharma specialization.
 
-This is a skill-damage build that uses **Chemical Trap** and **Oxidizing Hive** as slotted skills, with **Oxidizing Swarm** as the signature ability providing automated corrosive pressure. Weapons exist to generate Engineering stacks, not to kill. The core loop is straightforward: throw Chemical Trap at a choke point while you're at full Health (that triggers Prime Engineer 2, +31.50% Engineering), swap weapons to trigger Backup Battery (+22.50% Engineering), then deploy Oxidizing Hive for sustained corrosive damage. Pop Oxidizing Swarm (signature) when available for burst pressure. Swap to Mk16 to stack Skill Multi-Shot, and repeat as cooldowns come back. The build scales entirely through Engineering, Skill Crit, and Skill Multi-Shot.
+This is a skill-damage build that uses **Chemical Trap** and **Oxidizing Hive** as slotted skills, with **Oxidizing Swarm** as the signature ability providing automated corrosive pressure. Weapons exist to generate Engineering stacks, not to kill. The core loop is straightforward: throw Chemical Trap at a choke point while you're at full Health (that triggers Prime Engineer 2, +31.50% Engineering), swap weapons to trigger Backup Battery (+22.50% Engineering), then deploy Oxidizing Hive for sustained corrosive damage. Pop Oxidizing Swarm (signature) when available for burst pressure. Swap to the assault rifle to stack Skill Multi-Shot, and repeat as cooldowns come back. The build scales entirely through Engineering, Skill Crit, and Skill Multi-Shot.
 
 > [!WARNING] Season 2 changes that affect this build
 > - **Weapon mods (Season 2 Phase 1):** New weapon mods get +100% main stat (bigger Engineering on your attachments) and -25% bonus attributes, and their bonus pool now includes Skill Intensity % and Skill Critical Damage %. Old mods keep their rolls; leveling them updates their growth to the new values.
@@ -105,7 +105,7 @@ His actual in-game numbers for reference:
 | Slot | Item | Details |
 |---|---|---|
 | **Primary** | Vector 45 ACP (T2, SMG) | Backup Battery + Backup Magazine · Attributes: Skill Intensity + Skill Crit Damage |
-| **Secondary** | Mk16 (AR) | Multi-Pronged Attack + Multitasking · Attributes: Skill Intensity + Skill Crit Damage |
+| **Secondary** | Custom 416 G3 (T2, AR) or Enhanced ACR-E (T1, AR) | Multi-Pronged Attack + Multitasking · Attributes: Skill Intensity + Skill Crit Damage (RogueMadras uses a Mk16, which can't roll this pair; see below) |
 | **OS Protocol** | **Rampart** (High-End) | Best option: +5% Damage while immobile, up to 6 stacks (+30%). See OS Protocol section. |
 | **Skill 1** | Chemical Trap | AoE corrosive damage, main damage source |
 | **Skill 2** | Oxidizing Hive | Sustained corrosive damage + area denial |
@@ -216,29 +216,29 @@ Similar concept to Rampart with a 3-second wind-up instead of per-second stackin
 
 ## Weapon Talents and Attachments
 
-Both weapons exist to generate buffs. The Vector stacks Engineering through Backup Battery, the Mk16 stacks Skill Multi-Shot through Multi-Pronged Attack.
+Both weapons exist to generate buffs. The Vector stacks Engineering through Backup Battery, the assault rifle stacks Skill Multi-Shot through Multi-Pronged Attack.
 
 ### Primary: Vector 45 ACP (T2, SMG)
 
 T2 Vector rolled for Engineering. High RPM empties magazines fast, which means faster buff procs.
 
 - **Backup Battery:** Swapping to this weapon grants **+22.50% Engineering** for 8 seconds (8s cooldown). Core Engineering injection. Swap on cooldown, every 8 seconds.
-- **Backup Magazine:** Swapping to this weapon reloads your second weapon after 4 seconds. The Mk16 reloads itself while you fire the Vector. Keeps the rotation smooth.
+- **Backup Magazine:** Swapping to this weapon reloads your second weapon after 4 seconds. The rifle reloads itself while you fire the Vector. Keeps the rotation smooth.
 
 **Attributes:** Skill Intensity + Skill Critical Damage.
 
-RogueMadras is running **Swift Taunt 2** as his second talent but doesn't recommend it. Use Backup Magazine instead. **In Sync** is a viable alternative to Backup Battery (+9% Skill Damage on weapon hits, +9% Weapon Damage on skill hits, doubled when both active).
+RogueMadras is running **Swift Taunt 2** as his second talent but doesn't recommend it. Use Backup Magazine instead. If you'd rather not run Backup Battery, **[Torrential Downpour](/database/weapon-talents/torrential-downpour/)** is the other Engineering talent in this Vector's pool (hitting enemies 10 times within 5 seconds grants +22.50% Engineering for 12 seconds). His Vector reads T2 but carries talents only the Vector 45 ACP can roll, so it's a Vector 45 ACP raised to T2, not the T2 First Wave Vector, whose pool has neither Backup Battery nor Backup Magazine.
 
-### Secondary: Mk16 (AR)
+### Secondary: Custom 416 G3 or Enhanced ACR-E (AR)
 
-The Multi-Shot engine. Swap to this to stack Multi-Shot chance and boost Skill Crit Damage.
+The Multi-Shot engine. Swap to this to stack Multi-Shot chance and boost Skill Crit Damage. The game's talent Source lists (recorded October 29, 2026) put Multi-Pronged Attack and Multitasking together on only two assault rifles: the [Custom 416 G3](/database/weapons/custom-416-g3/) (T2) and the [Enhanced ACR-E](/database/weapons/enhanced-acr-e/) (T1). Our earlier version of this page had them on a Mk16, which can't roll either.
 
 - **Multi-Pronged Attack:** Hits grant **+3.60% Skill Multi-Shot Chance** for 10 seconds, up to 5 stacks (+18% total). Missed hits remove 1 stack.
 - **Multitasking:** Dealing damage to 3 enemies within 5 seconds grants **+30% Skill Critical Damage** for 12 seconds (8s cooldown). Easy to proc when fighting rooms of enemies.
 
 **Attributes:** Skill Intensity + Skill Critical Damage.
 
-RogueMadras is running **Bloodlust 2 + Adaptation** on his Mk16, which is not ideal for this build. Use the recommended talents above.
+RogueMadras is running **Bloodlust 2 + Adaptation** on a [Mk16](/database/weapons/mk16/), which is not ideal for this build. If a Mk16 is what you have, its pool's skill talents are Adaptation, Enhancement Trade, Fully Charged and Torrential Downpour.
 
 ### Attachments & Tactical Augmentation
 
@@ -256,5 +256,5 @@ All weapon attachments should be **Engineering.**
 | Fire Cycle mask | Engineering core + Skill Crit Damage + Skill Crit Chance |
 | Fire Cycle backpack | Engineering core + Prime Engineer 2 talent |
 | Vector 45 ACP (T2 SMG) | Engineering roll + Backup Battery + Backup Magazine |
-| Mk16 (AR) | Engineering roll + Multi-Pronged Attack + Multitasking |
+| Custom 416 G3 (T2) or Enhanced ACR-E (T1) | Engineering roll + Multi-Pronged Attack + Multitasking |
 | Rampart OS (High-End) | Always keep |

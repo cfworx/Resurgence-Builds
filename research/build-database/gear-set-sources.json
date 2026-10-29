@@ -1,0 +1,2812 @@
+[
+ {
+  "entry": "Fury Strike",
+  "slug": "fury-strike",
+  "pieceCount": 18,
+  "tileCount": 36,
+  "extraListings": [],
+  "source": {
+   "recording": "2026-10-29_11-33-53.mp4",
+   "seconds": [
+    0.0,
+    60.2
+   ]
+  },
+  "evidence": "evidence/gear-set-effects/sources/fury-strike.webp",
+  "checked": "2026-10-29",
+  "pieces": [
+   {
+    "name": "Combat Mask \"Cete\"",
+    "slot": "Mask",
+    "armoryTier": "T2",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 2.0 s"
+   },
+   {
+    "name": "X-TREYME Pro Ribcage",
+    "slot": "Body Armor",
+    "armoryTier": "T2",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "Knäskydd Knee Protectors",
+    "slot": "Knee Pads",
+    "armoryTier": "T2",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 6.0 s"
+   },
+   {
+    "name": "All Hazards Nitro Backpack",
+    "slot": "Backpack",
+    "armoryTier": "T2",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 8.0 s"
+   },
+   {
+    "name": "Nightclaw Tactical Gloves",
+    "slot": "Gloves",
+    "armoryTier": "T2",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 9.0 s"
+   },
+   {
+    "name": "Fodral Holster",
+    "slot": "Holster",
+    "armoryTier": "T2",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 40.0 s"
+   },
+   {
+    "name": "Bevor Air Guard",
+    "slot": "Mask",
+    "armoryTier": "T1",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 42.5 s"
+   },
+   {
+    "name": "Flimsy Body Armor v1",
+    "slot": "Body Armor",
+    "armoryTier": "T1",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 14.0 s"
+   },
+   {
+    "name": "Stonewall Knee Pads",
+    "slot": "Knee Pads",
+    "armoryTier": "T1",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 15.5 s"
+   },
+   {
+    "name": "Rally Point Secure Pack",
+    "slot": "Backpack",
+    "armoryTier": "T1",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 17.0 s"
+   },
+   {
+    "name": "Micro Plated Gloves",
+    "slot": "Gloves",
+    "armoryTier": "T1",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 48.5 s"
+   },
+   {
+    "name": "Serviceman's Holster",
+    "slot": "Holster",
+    "armoryTier": "T1",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 20.5 s"
+   },
+   {
+    "name": "Tactical Mask",
+    "slot": "Mask",
+    "armoryTier": "T0",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 51.0 s"
+   },
+   {
+    "name": "\"Ericht\" Chest System",
+    "slot": "Body Armor",
+    "armoryTier": "T0",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 25.5 s"
+   },
+   {
+    "name": "\"Dingson\" Protection Pads",
+    "slot": "Knee Pads",
+    "armoryTier": "T0",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 27.0 s"
+   },
+   {
+    "name": "Trekking Elite Pack",
+    "slot": "Backpack",
+    "armoryTier": "T0",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 29.0 s"
+   },
+   {
+    "name": "\"Lochy\" Hand Savers",
+    "slot": "Gloves",
+    "armoryTier": "T0",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 30.0 s"
+   },
+   {
+    "name": "Urban Assault Holster",
+    "slot": "Holster",
+    "armoryTier": "T0",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 31.5 s"
+   }
+  ]
+ },
+ {
+  "entry": "Quick Draw",
+  "slug": "quick-draw",
+  "pieceCount": 18,
+  "tileCount": 36,
+  "extraListings": [],
+  "source": {
+   "recording": "2026-10-29_11-33-53.mp4",
+   "seconds": [
+    61.6,
+    112.4
+   ]
+  },
+  "evidence": "evidence/gear-set-effects/sources/quick-draw.webp",
+  "checked": "2026-10-29",
+  "pieces": [
+   {
+    "name": "Combat Mask \"Cete\"",
+    "slot": "Mask",
+    "armoryTier": "T2",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 2.0 s"
+   },
+   {
+    "name": "X-TREYME Pro Ribcage",
+    "slot": "Body Armor",
+    "armoryTier": "T2",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "Knäskydd Knee Protectors",
+    "slot": "Knee Pads",
+    "armoryTier": "T2",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 6.0 s"
+   },
+   {
+    "name": "All Hazards Nitro Backpack",
+    "slot": "Backpack",
+    "armoryTier": "T2",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 8.0 s"
+   },
+   {
+    "name": "Nightclaw Tactical Gloves",
+    "slot": "Gloves",
+    "armoryTier": "T2",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 9.0 s"
+   },
+   {
+    "name": "Fodral Holster",
+    "slot": "Holster",
+    "armoryTier": "T2",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 40.0 s"
+   },
+   {
+    "name": "Bevor Air Guard",
+    "slot": "Mask",
+    "armoryTier": "T1",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 42.5 s"
+   },
+   {
+    "name": "Flimsy Body Armor v1",
+    "slot": "Body Armor",
+    "armoryTier": "T1",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 14.0 s"
+   },
+   {
+    "name": "Stonewall Knee Pads",
+    "slot": "Knee Pads",
+    "armoryTier": "T1",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 15.5 s"
+   },
+   {
+    "name": "Rally Point Secure Pack",
+    "slot": "Backpack",
+    "armoryTier": "T1",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 17.0 s"
+   },
+   {
+    "name": "Micro Plated Gloves",
+    "slot": "Gloves",
+    "armoryTier": "T1",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 48.5 s"
+   },
+   {
+    "name": "Serviceman's Holster",
+    "slot": "Holster",
+    "armoryTier": "T1",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 20.5 s"
+   },
+   {
+    "name": "Tactical Mask",
+    "slot": "Mask",
+    "armoryTier": "T0",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 51.0 s"
+   },
+   {
+    "name": "\"Ericht\" Chest System",
+    "slot": "Body Armor",
+    "armoryTier": "T0",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 25.5 s"
+   },
+   {
+    "name": "\"Dingson\" Protection Pads",
+    "slot": "Knee Pads",
+    "armoryTier": "T0",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 27.0 s"
+   },
+   {
+    "name": "Trekking Elite Pack",
+    "slot": "Backpack",
+    "armoryTier": "T0",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 29.0 s"
+   },
+   {
+    "name": "\"Lochy\" Hand Savers",
+    "slot": "Gloves",
+    "armoryTier": "T0",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 30.0 s"
+   },
+   {
+    "name": "Urban Assault Holster",
+    "slot": "Holster",
+    "armoryTier": "T0",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 31.5 s"
+   }
+  ]
+ },
+ {
+  "entry": "Phalanx Attack",
+  "slug": "phalanx-attack",
+  "pieceCount": 18,
+  "tileCount": 36,
+  "extraListings": [],
+  "source": {
+   "recording": "2026-10-29_11-33-53.mp4",
+   "seconds": [
+    114.2,
+    161.8
+   ]
+  },
+  "evidence": "evidence/gear-set-effects/sources/phalanx-attack.webp",
+  "checked": "2026-10-29",
+  "pieces": [
+   {
+    "name": "Javelina Mask",
+    "slot": "Mask",
+    "armoryTier": "T2",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 117.0 s"
+   },
+   {
+    "name": "Ops Armor",
+    "slot": "Body Armor",
+    "armoryTier": "T2",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 140.5 s"
+   },
+   {
+    "name": "\"Patella\" Knee Cups",
+    "slot": "Knee Pads",
+    "armoryTier": "T2",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 119.5 s"
+   },
+   {
+    "name": "AMP24",
+    "slot": "Backpack",
+    "armoryTier": "T2",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "\"Neptune\" Protection Gloves",
+    "slot": "Gloves",
+    "armoryTier": "T2",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 144.5 s"
+   },
+   {
+    "name": "Jaivardhan Thigh Rig",
+    "slot": "Holster",
+    "armoryTier": "T2",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 145.5 s"
+   },
+   {
+    "name": "Aphrodite Glint Concealer",
+    "slot": "Mask",
+    "armoryTier": "T1",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 124.0 s"
+   },
+   {
+    "name": "Flimsy Body Armor v2",
+    "slot": "Body Armor",
+    "armoryTier": "T1",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "HX 02",
+    "slot": "Knee Pads",
+    "armoryTier": "T1",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "\"Horo\" CarryBack",
+    "slot": "Backpack",
+    "armoryTier": "T1",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 150.5 s"
+   },
+   {
+    "name": "\"Digits\" Finger Stabilizer",
+    "slot": "Gloves",
+    "armoryTier": "T1",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 129.0 s"
+   },
+   {
+    "name": "Pridwen Holster",
+    "slot": "Holster",
+    "armoryTier": "T1",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 153.0 s"
+   },
+   {
+    "name": "\"Maxillam\" Respirator",
+    "slot": "Mask",
+    "armoryTier": "T0",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 132.0 s"
+   },
+   {
+    "name": "Ranger Ballistics Vest",
+    "slot": "Body Armor",
+    "armoryTier": "T0",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 133.0 s"
+   },
+   {
+    "name": "Dionysus Rounded Padding",
+    "slot": "Knee Pads",
+    "armoryTier": "T0",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 134.0 s"
+   },
+   {
+    "name": "RUSH72 Backpack",
+    "slot": "Backpack",
+    "armoryTier": "T0",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "Blood Fang Gloves",
+    "slot": "Gloves",
+    "armoryTier": "T0",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 159.5 s"
+   },
+   {
+    "name": "Armorer's Security Holster",
+    "slot": "Holster",
+    "armoryTier": "T0",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 137.5 s"
+   }
+  ]
+ },
+ {
+  "entry": "One Shot One Kill",
+  "slug": "one-shot-one-kill",
+  "pieceCount": 12,
+  "tileCount": 24,
+  "extraListings": [],
+  "source": {
+   "recording": "2026-10-29_11-38-05.mp4",
+   "seconds": [
+    1.0,
+    7.0
+   ]
+  },
+  "evidence": "evidence/gear-set-effects/sources/one-shot-one-kill.webp",
+  "checked": "2026-10-29",
+  "pieces": [
+   {
+    "name": "Combat Mask \"Cete\"",
+    "slot": "Mask",
+    "armoryTier": "T2",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 2.0 s"
+   },
+   {
+    "name": "X-TREYME Pro Ribcage",
+    "slot": "Body Armor",
+    "armoryTier": "T2",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "Knäskydd Knee Protectors",
+    "slot": "Knee Pads",
+    "armoryTier": "T2",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 6.0 s"
+   },
+   {
+    "name": "All Hazards Nitro Backpack",
+    "slot": "Backpack",
+    "armoryTier": "T2",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 8.0 s"
+   },
+   {
+    "name": "Nightclaw Tactical Gloves",
+    "slot": "Gloves",
+    "armoryTier": "T2",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 9.0 s"
+   },
+   {
+    "name": "Fodral Holster",
+    "slot": "Holster",
+    "armoryTier": "T2",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 40.0 s"
+   },
+   {
+    "name": "Bevor Air Guard",
+    "slot": "Mask",
+    "armoryTier": "T1",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 42.5 s"
+   },
+   {
+    "name": "Flimsy Body Armor v1",
+    "slot": "Body Armor",
+    "armoryTier": "T1",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 14.0 s"
+   },
+   {
+    "name": "Stonewall Knee Pads",
+    "slot": "Knee Pads",
+    "armoryTier": "T1",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 15.5 s"
+   },
+   {
+    "name": "Rally Point Secure Pack",
+    "slot": "Backpack",
+    "armoryTier": "T1",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 17.0 s"
+   },
+   {
+    "name": "Micro Plated Gloves",
+    "slot": "Gloves",
+    "armoryTier": "T1",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 48.5 s"
+   },
+   {
+    "name": "Serviceman's Holster",
+    "slot": "Holster",
+    "armoryTier": "T1",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 20.5 s"
+   }
+  ]
+ },
+ {
+  "entry": "Gunny Johnny",
+  "slug": "gunny-johnny",
+  "pieceCount": 6,
+  "tileCount": 12,
+  "extraListings": [],
+  "source": {
+   "recording": "2026-10-29_11-38-05.mp4",
+   "seconds": [
+    8.0,
+    11.2
+   ]
+  },
+  "evidence": "evidence/gear-set-effects/sources/gunny-johnny.webp",
+  "checked": "2026-10-29",
+  "pieces": [
+   {
+    "name": "Combat Mask \"Cete\"",
+    "slot": "Mask",
+    "armoryTier": "T2",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 2.0 s"
+   },
+   {
+    "name": "X-TREYME Pro Ribcage",
+    "slot": "Body Armor",
+    "armoryTier": "T2",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "Knäskydd Knee Protectors",
+    "slot": "Knee Pads",
+    "armoryTier": "T2",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 6.0 s"
+   },
+   {
+    "name": "All Hazards Nitro Backpack",
+    "slot": "Backpack",
+    "armoryTier": "T2",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 8.0 s"
+   },
+   {
+    "name": "Nightclaw Tactical Gloves",
+    "slot": "Gloves",
+    "armoryTier": "T2",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 9.0 s"
+   },
+   {
+    "name": "Fodral Holster",
+    "slot": "Holster",
+    "armoryTier": "T2",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 40.0 s"
+   }
+  ]
+ },
+ {
+  "entry": "Mechanical Enemy",
+  "slug": "mechanical-enemy",
+  "pieceCount": 6,
+  "tileCount": 12,
+  "extraListings": [],
+  "source": {
+   "recording": "2026-10-29_11-38-05.mp4",
+   "seconds": [
+    12.4,
+    16.0
+   ]
+  },
+  "evidence": "evidence/gear-set-effects/sources/mechanical-enemy.webp",
+  "checked": "2026-10-29",
+  "pieces": [
+   {
+    "name": "Protective Tactical Mask",
+    "slot": "Mask",
+    "armoryTier": "T2",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "Chatzatz Chest",
+    "slot": "Body Armor",
+    "armoryTier": "T2",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "Urban Warfare Kneepads",
+    "slot": "Knee Pads",
+    "armoryTier": "T2",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "Mountain Hiking Pack",
+    "slot": "Backpack",
+    "armoryTier": "T2",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "\"Kote\" Hand Guards",
+    "slot": "Gloves",
+    "armoryTier": "T2",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "Jags Sidearm Mount",
+    "slot": "Holster",
+    "armoryTier": "T2",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   }
+  ]
+ },
+ {
+  "entry": "Jackpot",
+  "slug": "jackpot",
+  "pieceCount": 18,
+  "tileCount": 36,
+  "extraListings": [],
+  "source": {
+   "recording": "2026-10-29_11-38-05.mp4",
+   "seconds": [
+    17.0,
+    26.6
+   ]
+  },
+  "evidence": "evidence/gear-set-effects/sources/jackpot.webp",
+  "checked": "2026-10-29",
+  "pieces": [
+   {
+    "name": "Protective Tactical Mask",
+    "slot": "Mask",
+    "armoryTier": "T2",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "Chatzatz Chest",
+    "slot": "Body Armor",
+    "armoryTier": "T2",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "Urban Warfare Kneepads",
+    "slot": "Knee Pads",
+    "armoryTier": "T2",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "Mountain Hiking Pack",
+    "slot": "Backpack",
+    "armoryTier": "T2",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "\"Kote\" Hand Guards",
+    "slot": "Gloves",
+    "armoryTier": "T2",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "Jags Sidearm Mount",
+    "slot": "Holster",
+    "armoryTier": "T2",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "Timeless Guardian Mask",
+    "slot": "Mask",
+    "armoryTier": "T1",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "Athena Missile Vest",
+    "slot": "Body Armor",
+    "armoryTier": "T1",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "Sundown Knee Guards",
+    "slot": "Knee Pads",
+    "armoryTier": "T1",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "Ziba Low Profile Pack",
+    "slot": "Backpack",
+    "armoryTier": "T1",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "Diamondback Gloves",
+    "slot": "Gloves",
+    "armoryTier": "T1",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "\"Morar\" Holster System",
+    "slot": "Holster",
+    "armoryTier": "T1",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "Rapid Deployment Mask",
+    "slot": "Mask",
+    "armoryTier": "T0",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "Mechanized Infantry Armor",
+    "slot": "Body Armor",
+    "armoryTier": "T0",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "\"Tay\" Protective Pads v1",
+    "slot": "Knee Pads",
+    "armoryTier": "T0",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "Demeter Quick-Stash",
+    "slot": "Backpack",
+    "armoryTier": "T0",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "Hybrid FC Gloves",
+    "slot": "Gloves",
+    "armoryTier": "T0",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "Chamber Wolf TAC Holster",
+    "slot": "Holster",
+    "armoryTier": "T0",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   }
+  ]
+ },
+ {
+  "entry": "Long-term Effect",
+  "slug": "long-term-effect",
+  "pieceCount": 18,
+  "tileCount": 36,
+  "extraListings": [],
+  "source": {
+   "recording": "2026-10-29_11-38-05.mp4",
+   "seconds": [
+    27.8,
+    39.6
+   ]
+  },
+  "evidence": "evidence/gear-set-effects/sources/long-term-effect.webp",
+  "checked": "2026-10-29",
+  "pieces": [
+   {
+    "name": "Protective Tactical Mask",
+    "slot": "Mask",
+    "armoryTier": "T2",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "Chatzatz Chest",
+    "slot": "Body Armor",
+    "armoryTier": "T2",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "Urban Warfare Kneepads",
+    "slot": "Knee Pads",
+    "armoryTier": "T2",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "Mountain Hiking Pack",
+    "slot": "Backpack",
+    "armoryTier": "T2",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "\"Kote\" Hand Guards",
+    "slot": "Gloves",
+    "armoryTier": "T2",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "Jags Sidearm Mount",
+    "slot": "Holster",
+    "armoryTier": "T2",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "Timeless Guardian Mask",
+    "slot": "Mask",
+    "armoryTier": "T1",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "Athena Missile Vest",
+    "slot": "Body Armor",
+    "armoryTier": "T1",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "Sundown Knee Guards",
+    "slot": "Knee Pads",
+    "armoryTier": "T1",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "Ziba Low Profile Pack",
+    "slot": "Backpack",
+    "armoryTier": "T1",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "Diamondback Gloves",
+    "slot": "Gloves",
+    "armoryTier": "T1",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "\"Morar\" Holster System",
+    "slot": "Holster",
+    "armoryTier": "T1",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "Rapid Deployment Mask",
+    "slot": "Mask",
+    "armoryTier": "T0",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "Mechanized Infantry Armor",
+    "slot": "Body Armor",
+    "armoryTier": "T0",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "\"Tay\" Protective Pads v1",
+    "slot": "Knee Pads",
+    "armoryTier": "T0",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "Demeter Quick-Stash",
+    "slot": "Backpack",
+    "armoryTier": "T0",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "Hybrid FC Gloves",
+    "slot": "Gloves",
+    "armoryTier": "T0",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "Chamber Wolf TAC Holster",
+    "slot": "Holster",
+    "armoryTier": "T0",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   }
+  ]
+ },
+ {
+  "entry": "Dr. Medic",
+  "slug": "dr-medic",
+  "pieceCount": 12,
+  "tileCount": 24,
+  "extraListings": [],
+  "source": {
+   "recording": "2026-10-29_11-38-05.mp4",
+   "seconds": [
+    42.8,
+    52.4
+   ]
+  },
+  "evidence": "evidence/gear-set-effects/sources/dr-medic.webp",
+  "checked": "2026-10-29",
+  "pieces": [
+   {
+    "name": "Protective Tactical Mask",
+    "slot": "Mask",
+    "armoryTier": "T2",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "Chatzatz Chest",
+    "slot": "Body Armor",
+    "armoryTier": "T2",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "Urban Warfare Kneepads",
+    "slot": "Knee Pads",
+    "armoryTier": "T2",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "Mountain Hiking Pack",
+    "slot": "Backpack",
+    "armoryTier": "T2",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "\"Kote\" Hand Guards",
+    "slot": "Gloves",
+    "armoryTier": "T2",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "Jags Sidearm Mount",
+    "slot": "Holster",
+    "armoryTier": "T2",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "Timeless Guardian Mask",
+    "slot": "Mask",
+    "armoryTier": "T1",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "Athena Missile Vest",
+    "slot": "Body Armor",
+    "armoryTier": "T1",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "Sundown Knee Guards",
+    "slot": "Knee Pads",
+    "armoryTier": "T1",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "Ziba Low Profile Pack",
+    "slot": "Backpack",
+    "armoryTier": "T1",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "Diamondback Gloves",
+    "slot": "Gloves",
+    "armoryTier": "T1",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "\"Morar\" Holster System",
+    "slot": "Holster",
+    "armoryTier": "T1",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   }
+  ]
+ },
+ {
+  "entry": "Boom-Shakalaka",
+  "slug": "boom-shakalaka",
+  "pieceCount": 18,
+  "tileCount": 36,
+  "extraListings": [],
+  "source": {
+   "recording": "2026-10-29_11-38-05.mp4",
+   "seconds": [
+    53.4,
+    63.0
+   ]
+  },
+  "evidence": "evidence/gear-set-effects/sources/boom-shakalaka.webp",
+  "checked": "2026-10-29",
+  "pieces": [
+   {
+    "name": "Javelina Mask",
+    "slot": "Mask",
+    "armoryTier": "T2",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 117.0 s"
+   },
+   {
+    "name": "Ops Armor",
+    "slot": "Body Armor",
+    "armoryTier": "T2",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 140.5 s"
+   },
+   {
+    "name": "\"Patella\" Knee Cups",
+    "slot": "Knee Pads",
+    "armoryTier": "T2",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 119.5 s"
+   },
+   {
+    "name": "AMP24",
+    "slot": "Backpack",
+    "armoryTier": "T2",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "\"Neptune\" Protection Gloves",
+    "slot": "Gloves",
+    "armoryTier": "T2",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 144.5 s"
+   },
+   {
+    "name": "Jaivardhan Thigh Rig",
+    "slot": "Holster",
+    "armoryTier": "T2",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 145.5 s"
+   },
+   {
+    "name": "Aphrodite Glint Concealer",
+    "slot": "Mask",
+    "armoryTier": "T1",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 124.0 s"
+   },
+   {
+    "name": "Flimsy Body Armor v2",
+    "slot": "Body Armor",
+    "armoryTier": "T1",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "HX 02",
+    "slot": "Knee Pads",
+    "armoryTier": "T1",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "\"Horo\" CarryBack",
+    "slot": "Backpack",
+    "armoryTier": "T1",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 150.5 s"
+   },
+   {
+    "name": "\"Digits\" Finger Stabilizer",
+    "slot": "Gloves",
+    "armoryTier": "T1",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 129.0 s"
+   },
+   {
+    "name": "Pridwen Holster",
+    "slot": "Holster",
+    "armoryTier": "T1",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 153.0 s"
+   },
+   {
+    "name": "\"Maxillam\" Respirator",
+    "slot": "Mask",
+    "armoryTier": "T0",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 132.0 s"
+   },
+   {
+    "name": "Ranger Ballistics Vest",
+    "slot": "Body Armor",
+    "armoryTier": "T0",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 133.0 s"
+   },
+   {
+    "name": "Dionysus Rounded Padding",
+    "slot": "Knee Pads",
+    "armoryTier": "T0",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 134.0 s"
+   },
+   {
+    "name": "RUSH72 Backpack",
+    "slot": "Backpack",
+    "armoryTier": "T0",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "Blood Fang Gloves",
+    "slot": "Gloves",
+    "armoryTier": "T0",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 159.5 s"
+   },
+   {
+    "name": "Armorer's Security Holster",
+    "slot": "Holster",
+    "armoryTier": "T0",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 137.5 s"
+   }
+  ]
+ },
+ {
+  "entry": "Fire Cycle",
+  "slug": "fire-cycle",
+  "pieceCount": 6,
+  "tileCount": 12,
+  "extraListings": [],
+  "source": {
+   "recording": "2026-10-29_11-38-05.mp4",
+   "seconds": [
+    64.2,
+    70.0
+   ]
+  },
+  "evidence": "evidence/gear-set-effects/sources/fire-cycle.webp",
+  "checked": "2026-10-29",
+  "pieces": [
+   {
+    "name": "Javelina Mask",
+    "slot": "Mask",
+    "armoryTier": "T2",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 117.0 s"
+   },
+   {
+    "name": "Ops Armor",
+    "slot": "Body Armor",
+    "armoryTier": "T2",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 140.5 s"
+   },
+   {
+    "name": "\"Patella\" Knee Cups",
+    "slot": "Knee Pads",
+    "armoryTier": "T2",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 119.5 s"
+   },
+   {
+    "name": "AMP24",
+    "slot": "Backpack",
+    "armoryTier": "T2",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "\"Neptune\" Protection Gloves",
+    "slot": "Gloves",
+    "armoryTier": "T2",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 144.5 s"
+   },
+   {
+    "name": "Jaivardhan Thigh Rig",
+    "slot": "Holster",
+    "armoryTier": "T2",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 145.5 s"
+   }
+  ]
+ },
+ {
+  "entry": "Mechanical Expert",
+  "slug": "mechanical-expert",
+  "pieceCount": 12,
+  "tileCount": 24,
+  "extraListings": [],
+  "source": {
+   "recording": "2026-10-29_11-38-05.mp4",
+   "seconds": [
+    71.0,
+    76.6
+   ]
+  },
+  "evidence": "evidence/gear-set-effects/sources/mechanical-expert.webp",
+  "checked": "2026-10-29",
+  "pieces": [
+   {
+    "name": "Javelina Mask",
+    "slot": "Mask",
+    "armoryTier": "T2",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 117.0 s"
+   },
+   {
+    "name": "Ops Armor",
+    "slot": "Body Armor",
+    "armoryTier": "T2",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 140.5 s"
+   },
+   {
+    "name": "\"Patella\" Knee Cups",
+    "slot": "Knee Pads",
+    "armoryTier": "T2",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 119.5 s"
+   },
+   {
+    "name": "AMP24",
+    "slot": "Backpack",
+    "armoryTier": "T2",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "\"Neptune\" Protection Gloves",
+    "slot": "Gloves",
+    "armoryTier": "T2",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 144.5 s"
+   },
+   {
+    "name": "Jaivardhan Thigh Rig",
+    "slot": "Holster",
+    "armoryTier": "T2",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 145.5 s"
+   },
+   {
+    "name": "Aphrodite Glint Concealer",
+    "slot": "Mask",
+    "armoryTier": "T1",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 124.0 s"
+   },
+   {
+    "name": "Flimsy Body Armor v2",
+    "slot": "Body Armor",
+    "armoryTier": "T1",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "HX 02",
+    "slot": "Knee Pads",
+    "armoryTier": "T1",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "\"Horo\" CarryBack",
+    "slot": "Backpack",
+    "armoryTier": "T1",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 150.5 s"
+   },
+   {
+    "name": "\"Digits\" Finger Stabilizer",
+    "slot": "Gloves",
+    "armoryTier": "T1",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 129.0 s"
+   },
+   {
+    "name": "Pridwen Holster",
+    "slot": "Holster",
+    "armoryTier": "T1",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 153.0 s"
+   }
+  ]
+ },
+ {
+  "entry": "Captain Cow",
+  "slug": "captain-cow",
+  "pieceCount": 18,
+  "tileCount": 38,
+  "extraListings": [
+   {
+    "slot": "Knee Pads",
+    "rarity": "Superior",
+    "armoryTier": "T0",
+    "looksLike": "\"Tay\" Protective Pads v2",
+    "card": "\"Tay\" Protective Pads v2",
+    "piece": "\"Tay\" Protective Pads v2",
+    "cardCheck": "Screen_Recording_20261029_131044_The_Division_Resurgence.mp4 at 29.8 s",
+    "note": "The second Superior T0 knee pads tile opens the same card as the first, word for word."
+   },
+   {
+    "slot": "Gloves",
+    "rarity": "Superior",
+    "armoryTier": "T0",
+    "looksLike": "Hunter's Code Gloves",
+    "card": "Fearless Hunter's Code Gloves Level 1",
+    "piece": "Hunter's Code Gloves",
+    "cardCheck": "Screen_Recording_20261029_131044_The_Division_Resurgence.mp4 at 52.8 s (Fearless Warrior list)",
+    "note": "The second Superior T0 gloves tile. Unlike the other cards, which describe how the piece is created (\"This Gear will be created with 1 Bonuses and 0 random Talents\"), this one is a finished Level 1 item: Power Score ---, Health 722, Armor 60, +8 to each core attribute, one Random Bonus Attribute, and the Fearless Warrior set. \"Fearless\" is shown in orange before the name. The Captain Cow list shows the same tile in the same place; it wasn't opened there."
+   }
+  ],
+  "source": {
+   "recording": "2026-10-29_11-38-05.mp4",
+   "seconds": [
+    78.2,
+    89.4
+   ]
+  },
+  "evidence": "evidence/gear-set-effects/sources/captain-cow.webp",
+  "checked": "2026-10-29",
+  "pieces": [
+   {
+    "name": "Half mask respirator",
+    "slot": "Mask",
+    "armoryTier": "T2",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "\"Big Drum\" Body Armor",
+    "slot": "Body Armor",
+    "armoryTier": "T2",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "Pivot Pads",
+    "slot": "Knee Pads",
+    "armoryTier": "T2",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "Roamer Pack \"Sow\"",
+    "slot": "Backpack",
+    "armoryTier": "T2",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "Gustavo Association Gloves",
+    "slot": "Gloves",
+    "armoryTier": "T2",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "Tepes Holster",
+    "slot": "Holster",
+    "armoryTier": "T2",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "Breathe-Easy Mask",
+    "slot": "Mask",
+    "armoryTier": "T1",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "Phalanx Precision Vest",
+    "slot": "Body Armor",
+    "armoryTier": "T1",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "Mesa Knee Guards",
+    "slot": "Knee Pads",
+    "armoryTier": "T1",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "Big Horn Pack",
+    "slot": "Backpack",
+    "armoryTier": "T1",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "Phantom Saviour Gloves",
+    "slot": "Gloves",
+    "armoryTier": "T1",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "Artemis Fast Draw Holster",
+    "slot": "Holster",
+    "armoryTier": "T1",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "Guardrail VI Facerig",
+    "slot": "Mask",
+    "armoryTier": "T0",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "Screen_Recording_20261029_131044_The_Division_Resurgence.mp4 at 22.8 s"
+   },
+   {
+    "name": "Stridsvast Combat Vest",
+    "slot": "Body Armor",
+    "armoryTier": "T0",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "Screen_Recording_20261029_131044_The_Division_Resurgence.mp4 at 25.5 s"
+   },
+   {
+    "name": "\"Tay\" Protective Pads v2",
+    "slot": "Knee Pads",
+    "armoryTier": "T0",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "Screen_Recording_20261029_131044_The_Division_Resurgence.mp4 at 27.5 s"
+   },
+   {
+    "name": "Element Outdoors Rucksack",
+    "slot": "Backpack",
+    "armoryTier": "T0",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "Screen_Recording_20261029_131044_The_Division_Resurgence.mp4 at 32.3 s"
+   },
+   {
+    "name": "Hunter's Code Gloves",
+    "slot": "Gloves",
+    "armoryTier": "T0",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "Screen_Recording_20261029_131044_The_Division_Resurgence.mp4 at 34.2 s"
+   },
+   {
+    "name": "Lock and Load Holster",
+    "slot": "Holster",
+    "armoryTier": "T0",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "Screen_Recording_20261029_131044_The_Division_Resurgence.mp4 at 54.2 s"
+   }
+  ]
+ },
+ {
+  "entry": "Healing Elites",
+  "slug": "healing-elites",
+  "pieceCount": 6,
+  "tileCount": 12,
+  "extraListings": [],
+  "source": {
+   "recording": "2026-10-29_11-38-05.mp4",
+   "seconds": [
+    90.4,
+    96.0
+   ]
+  },
+  "evidence": "evidence/gear-set-effects/sources/healing-elites.webp",
+  "checked": "2026-10-29",
+  "pieces": [
+   {
+    "name": "Half mask respirator",
+    "slot": "Mask",
+    "armoryTier": "T2",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "\"Big Drum\" Body Armor",
+    "slot": "Body Armor",
+    "armoryTier": "T2",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "Pivot Pads",
+    "slot": "Knee Pads",
+    "armoryTier": "T2",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "Roamer Pack \"Sow\"",
+    "slot": "Backpack",
+    "armoryTier": "T2",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "Gustavo Association Gloves",
+    "slot": "Gloves",
+    "armoryTier": "T2",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "Tepes Holster",
+    "slot": "Holster",
+    "armoryTier": "T2",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   }
+  ]
+ },
+ {
+  "entry": "Self-Propelled Shield",
+  "slug": "self-propelled-shield",
+  "pieceCount": 12,
+  "tileCount": 24,
+  "extraListings": [],
+  "source": {
+   "recording": "2026-10-29_11-38-05.mp4",
+   "seconds": [
+    96.8,
+    105.4
+   ]
+  },
+  "evidence": "evidence/gear-set-effects/sources/self-propelled-shield.webp",
+  "checked": "2026-10-29",
+  "pieces": [
+   {
+    "name": "Half mask respirator",
+    "slot": "Mask",
+    "armoryTier": "T2",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "\"Big Drum\" Body Armor",
+    "slot": "Body Armor",
+    "armoryTier": "T2",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "Pivot Pads",
+    "slot": "Knee Pads",
+    "armoryTier": "T2",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "Roamer Pack \"Sow\"",
+    "slot": "Backpack",
+    "armoryTier": "T2",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "Gustavo Association Gloves",
+    "slot": "Gloves",
+    "armoryTier": "T2",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "Tepes Holster",
+    "slot": "Holster",
+    "armoryTier": "T2",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "Breathe-Easy Mask",
+    "slot": "Mask",
+    "armoryTier": "T1",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "Phalanx Precision Vest",
+    "slot": "Body Armor",
+    "armoryTier": "T1",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "Mesa Knee Guards",
+    "slot": "Knee Pads",
+    "armoryTier": "T1",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "Big Horn Pack",
+    "slot": "Backpack",
+    "armoryTier": "T1",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "Phantom Saviour Gloves",
+    "slot": "Gloves",
+    "armoryTier": "T1",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "Artemis Fast Draw Holster",
+    "slot": "Holster",
+    "armoryTier": "T1",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   }
+  ]
+ },
+ {
+  "entry": "Fearless Warrior",
+  "slug": "fearless-warrior",
+  "pieceCount": 18,
+  "tileCount": 38,
+  "extraListings": [
+   {
+    "slot": "Knee Pads",
+    "rarity": "Superior",
+    "armoryTier": "T0",
+    "looksLike": "\"Tay\" Protective Pads v2",
+    "card": "\"Tay\" Protective Pads v2",
+    "piece": "\"Tay\" Protective Pads v2",
+    "cardCheck": "Screen_Recording_20261029_131044_The_Division_Resurgence.mp4 at 47.3 s",
+    "note": "The second Superior T0 knee pads tile opens the same card as the first, word for word."
+   },
+   {
+    "slot": "Gloves",
+    "rarity": "Superior",
+    "armoryTier": "T0",
+    "looksLike": "Hunter's Code Gloves",
+    "card": "Fearless Hunter's Code Gloves Level 1",
+    "piece": "Hunter's Code Gloves",
+    "cardCheck": "Screen_Recording_20261029_131044_The_Division_Resurgence.mp4 at 52.8 s",
+    "note": "The second Superior T0 gloves tile. Unlike the other cards, which describe how the piece is created (\"This Gear will be created with 1 Bonuses and 0 random Talents\"), this one is a finished Level 1 item: Power Score ---, Health 722, Armor 60, +8 to each core attribute, one Random Bonus Attribute, and the Fearless Warrior set. \"Fearless\" is shown in orange before the name. The Captain Cow list shows the same tile in the same place; it wasn't opened there."
+   }
+  ],
+  "source": {
+   "recording": "2026-10-29_11-38-05.mp4",
+   "seconds": [
+    106.4,
+    115.2
+   ]
+  },
+  "evidence": "evidence/gear-set-effects/sources/fearless-warrior.webp",
+  "checked": "2026-10-29",
+  "pieces": [
+   {
+    "name": "Half mask respirator",
+    "slot": "Mask",
+    "armoryTier": "T2",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "\"Big Drum\" Body Armor",
+    "slot": "Body Armor",
+    "armoryTier": "T2",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "Pivot Pads",
+    "slot": "Knee Pads",
+    "armoryTier": "T2",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "Roamer Pack \"Sow\"",
+    "slot": "Backpack",
+    "armoryTier": "T2",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "Gustavo Association Gloves",
+    "slot": "Gloves",
+    "armoryTier": "T2",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "Tepes Holster",
+    "slot": "Holster",
+    "armoryTier": "T2",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "Breathe-Easy Mask",
+    "slot": "Mask",
+    "armoryTier": "T1",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "Phalanx Precision Vest",
+    "slot": "Body Armor",
+    "armoryTier": "T1",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "Mesa Knee Guards",
+    "slot": "Knee Pads",
+    "armoryTier": "T1",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "Big Horn Pack",
+    "slot": "Backpack",
+    "armoryTier": "T1",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "Phantom Saviour Gloves",
+    "slot": "Gloves",
+    "armoryTier": "T1",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "Artemis Fast Draw Holster",
+    "slot": "Holster",
+    "armoryTier": "T1",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position"
+   },
+   {
+    "name": "Guardrail VI Facerig",
+    "slot": "Mask",
+    "armoryTier": "T0",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "Screen_Recording_20261029_131044_The_Division_Resurgence.mp4 at 22.8 s"
+   },
+   {
+    "name": "Stridsvast Combat Vest",
+    "slot": "Body Armor",
+    "armoryTier": "T0",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "Screen_Recording_20261029_131044_The_Division_Resurgence.mp4 at 25.5 s"
+   },
+   {
+    "name": "\"Tay\" Protective Pads v2",
+    "slot": "Knee Pads",
+    "armoryTier": "T0",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "Screen_Recording_20261029_131044_The_Division_Resurgence.mp4 at 27.5 s"
+   },
+   {
+    "name": "Element Outdoors Rucksack",
+    "slot": "Backpack",
+    "armoryTier": "T0",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "Screen_Recording_20261029_131044_The_Division_Resurgence.mp4 at 32.3 s"
+   },
+   {
+    "name": "Hunter's Code Gloves",
+    "slot": "Gloves",
+    "armoryTier": "T0",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "Screen_Recording_20261029_131044_The_Division_Resurgence.mp4 at 34.2 s"
+   },
+   {
+    "name": "Lock and Load Holster",
+    "slot": "Holster",
+    "armoryTier": "T0",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "position",
+    "cardCheck": "Screen_Recording_20261029_131044_The_Division_Resurgence.mp4 at 54.2 s"
+   }
+  ]
+ }
+]

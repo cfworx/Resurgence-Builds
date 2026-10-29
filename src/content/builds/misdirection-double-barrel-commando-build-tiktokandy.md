@@ -47,7 +47,7 @@ TikTokAndy calls the Double Barrel "definitely the best gun in the game by a mil
 **The build in one breath:**
 
 - **Weapon:** Double Barrel with **Misdirection Insurance** and **Still Alive II**.
-- **Gear:** Phalanx Attack 4pc + Gunny Johnny 2pc, **Suppressive Fire II** on the body armor, and on the backpack **Emergency Measures** (TikTokAndy's October pick), **Siege II** (his September one) or **Inspiration** (GGReborn).
+- **Gear:** Phalanx Attack 4pc + Gunny Johnny 2pc, **Suppressive Fire II** on the body armor, and on the backpack **Emergency Measures** (TikTokAndy's October pick) or **Inspiration** (GGReborn). His September Siege II was on a Fury Strike backpack; a Gunny Johnny backpack can't roll it.
 - **Secondary:** a Vector with **Torrential Downpour II** and **Last Stand**, fired from behind cover before you cast skills (TikTokAndy, October).
 - **Skills:** Smart Cover with **Optimized Armor**, Scanning Pulse with **Field Supplies**, Tactical Link with **Ammo Refill**.
 - **OS Protocol:** **Cover Shooter** since early October; **Augmented Lethality** before that.
@@ -187,7 +187,7 @@ TikTokAndy calls 4pc Phalanx Attack + 2pc Gunny Johnny "probably the most ideal 
 |---|---|---|---|
 | Mask | Phalanx Attack | none | |
 | Body Armor | Gunny Johnny | **Suppressive Fire II** | Both creators run it. TikTokAndy reads +25% Magazine Size, and reloading grants +8.4% Rate of Fire for 5 seconds, up to 3 stacks. |
-| Backpack | Gunny Johnny | **Emergency Measures**, **Siege II** or **Inspiration** | Emergency Measures (TikTokAndy, October): restores 50% Max Health when you take damage below 20% Health, 30-second cooldown (our database). Siege II (TikTokAndy, September): Extra Health equal to 52% for 15 seconds when 2 enemies are within 20 meters, 30-second cooldown. Inspiration (GGReborn): +30% Rate of Fire while skills are deployed. |
+| Backpack | Gunny Johnny | **Emergency Measures** or **Inspiration** | Emergency Measures (TikTokAndy, October): restores 50% Max Health when you take damage below 20% Health, 30-second cooldown (our database). Inspiration (GGReborn): +30% Rate of Fire while skills are deployed. Both roll on the All Hazards Nitro Backpack, the only Gunny Johnny backpack. Siege II (TikTokAndy, September: Extra Health equal to 52% for 15 seconds when 2 enemies are within 20 meters, 30-second cooldown) doesn't roll on it; his was a Fury Strike Trekking Elite Pack, so Siege means giving up Gunny Johnny on this slot. |
 | Gloves | Phalanx Attack | none | TikTokAndy's pair is tier 0, level 40, and he rerolls its Skill Radius into Headshot Damage. He says you could use "literally the most trash gear" and still make this work. |
 | Holster | Phalanx Attack | none | GGReborn keeps a Skill Duration roll here because it helps during Tactical Link |
 | Kneepads | Phalanx Attack | none | |
@@ -273,7 +273,7 @@ GGReborn shows his own protocol on screen and calls it the best he can usually g
 4. **Chain kills inside Tactical Link.** Ammo Refill works during the first 6 seconds, and kills reset that window.
 5. **Reload like it's a hobby.** With three shells you're reloading constantly anyway, and Suppressive Fire II turns each reload into Rate of Fire stacks.
 6. **Stay close.** It's a short-range shotgun, so fight at the distance your Optimal Range rolls allow.
-7. **Let the talents keep you up.** Still Alive II heals on kills (10-second cooldown), and the backpack covers the rest: Emergency Measures restores half your Health when you drop below 20% (TikTokAndy's October pick), or Siege II drops Extra Health on you when two or more enemies are within 20 meters. TikTokAndy says the only time he dies is "when I screw up my buttons," which is the most relatable sentence in this guide.
+7. **Let the talents keep you up.** Still Alive II heals on kills (10-second cooldown), and the backpack covers the rest: Emergency Measures restores half your Health when you drop below 20% (TikTokAndy's October pick), or, in his September layout with a Fury Strike backpack, Siege II drops Extra Health on you when 2 enemies are within 20 meters. TikTokAndy says the only time he dies is "when I screw up my buttons," which is the most relatable sentence in this guide.
 
 If a three-shell shotgun sounds like too much commitment, our [Milkshake Machine](/builds/milkshake-machine-strawberry-milkshake-lmg-build/) runs Phalanx Attack on a 100-round LMG instead. Opposite philosophy: one reloads every three shots, the other barely reloads at all.
 

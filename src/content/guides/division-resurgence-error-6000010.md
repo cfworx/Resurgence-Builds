@@ -6,8 +6,8 @@ lastUpdated: 2026-10-24T12:00:00Z
 tags: ["error-codes", "troubleshooting", "error-6000010", "network-error", "connection-error", "division-resurgence-errors"]
 description: "Fix Division Resurgence error 6000010 (Network connection error). 5 working fixes in order, plus server-side workarounds."
 author: "RapidF5"
-featuredImage: "/images/guides/division-resurgence-error-6000010-fix-guide-hero.jpg"
-imageAlt: "Division Resurgence error 6000010 network connection error troubleshooting guide"
+featuredImage: "/images/guides/division-resurgence-error-6000010-times-square-1200.webp"
+imageAlt: "An agent near an ambulance and a police car in a snowy Times Square in The Division Resurgence, with the title Error 6000010"
 shareTitle: "It's not always your Wi-Fi"
 shareText: "Error 6000010 is the most common error in Division Resurgence. Five fixes, in order, plus how to tell when it's a server-side problem you can't fix yourself."
 howTo:

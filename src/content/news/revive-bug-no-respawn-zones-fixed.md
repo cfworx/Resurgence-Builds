@@ -5,6 +5,8 @@ updatedDate: 2026-10-24
 author: "RapidF5"
 tags: ["News", "Bugs", "Dark Zone", "Events", "Season 2"]
 description: "Division Resurgence revive bug in no-respawn zones patched Oct 2, Dark Zone respawn bug marked Done, and Wall Street Woes runs Oct 2 to 5."
+imageAlt: "An agent with the medics by the beds in the Base of Operations medical wing in The Division Resurgence, with the title Revive Bug Fixed"
+featuredImage: "/images/news/division-resurgence-revive-bug-fixed-medical-bay-1200.webp"
 shareTitle: "Your squad can pick you up again"
 shareText: "Ubisoft patched the boss-room revive bug and marked the Dark Zone respawn bug Done, on the same day the Wall Street Woes speedrun starts."
 faqs:

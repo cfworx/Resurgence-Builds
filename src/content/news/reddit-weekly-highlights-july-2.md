@@ -4,8 +4,8 @@ publishDate: "2026-07-02"
 updatedDate: 2026-10-24
 author: "RapidF5"
 description: "Best posts from r/thedivisionresurgence between June 17 and July 2, 2026. Phase 3 launch reactions, Kelly's Betrayal discovery, Outpost Annihilation relief, and a healer who won DPS gear."
-featuredImage: "/images/news/division-resurgence-reddit-highlights-july-2-2026-hero.webp"
-imageAlt: "Division Resurgence SHD agent aiming a weapon in the rain with the Reddit logo for the community highlights roundup July 2026"
+featuredImage: "/images/news/division-resurgence-reddit-highlights-july-2-notice-board-1200.webp"
+imageAlt: "A notice board covered in papers above supply crates in The Division Resurgence's Base of Operations, with the title Reddit Highlights"
 tags: ["Community", "Reddit", "Weekly"]
 shareTitle: "Two weeks of agent chaos"
 shareText: "Phase 3 dropped, a hidden mission appeared, Outpost Annihilation finally works, and a healer won DPS gear from the weekly. Here are ten posts from the sub."

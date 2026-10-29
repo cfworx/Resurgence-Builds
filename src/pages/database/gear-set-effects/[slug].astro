@@ -6,6 +6,7 @@ import AdSenseUnit from '../../../components/AdSenseUnit.astro';
 import { truncateDesc, metaDescription } from '../../../utils/seo';
 import gearSets from '../../../data/gear-set-effects.json';
 import armoryGear from '../../../data/armory-gear.json';
+import { slugify, GEAR_SOURCES_RECORDED } from '../../../utils/rolls';
 import DbItemExtras from '../../../components/DbItemExtras.astro';
 import DbFaq from '../../../components/DbFaq.astro';
 import { buildsWearingSet, buildSetLoadouts, fmtDate } from '../../../utils/db-enrich';
@@ -235,14 +236,23 @@ const bonuses = [
             <section class="gearset-tier" aria-label={`${tier} pieces that can roll ${set.name}`}>
               <h3 class="gearset-tier__title"><span class="gearset-tier__badge">{tier}</span> pieces</h3>
               <ul class="gearset-pieces">
-                {pieces.map((p) => (
-                  <li><span class="gearset-pieces__slot">{p.slot}</span><span class="gearset-pieces__name">{p.name}</span></li>
-                ))}
+                {pieces.map((p) => {
+                  const ps = slugify(p.name);
+                  const icon = dbImage(`gear-icons/${ps}`);
+                  return (
+                    <li>
+                      <a class="gearset-pieces__link" href={`/database/gear/#${ps}`}>
+                        {icon && <img src={icon.srcset[0][1]} srcset={icon.srcset.map(([iw, u]) => `${u} ${iw}w`).join(', ')} sizes="96px" width={icon.width} height={icon.height} alt="" loading="lazy" decoding="async" />}
+                        <span class="gearset-pieces__text"><span class="gearset-pieces__slot">{p.slot}</span><span class="gearset-pieces__name">{p.name}</span></span>
+                      </a>
+                    </li>
+                  );
+                })}
               </ul>
             </section>
           ))}
         </div>
-        <p class="gearset-note">Source: the in-game Armory (its Season 1 pages show the sets each gear piece can roll) and this set's Source list in the Build-Making Database, both checked {fmtDate(armoryGear.checked)}.</p>
+        <p class="gearset-note">Source: the in-game Armory (its Season 1 pages show the sets each gear piece can roll, checked {fmtDate(armoryGear.checked)}) and this set's full Source list in the Build-Making Database (recorded {GEAR_SOURCES_RECORDED}), which list the same pieces, at High-End and Superior.{set.name === 'Captain Cow' || set.name === 'Fearless Warrior' ? ' The list shows two Superior T0 pieces twice: a second "Tay" Protective Pads v2, and "Fearless Hunter\'s Code Gloves", a finished Level 1 copy of the Hunter\'s Code Gloves.' : ''}</p>
       </div>
 
       <!-- Best Builds -->
@@ -480,11 +490,18 @@ const bonuses = [
     gap: 8px;
   }
 
-  .gearset-pieces li {
+  .gearset-pieces li { line-height: 1.35; }
+  .gearset-pieces__link {
     display: flex;
-    flex-direction: column;
-    line-height: 1.35;
+    align-items: center;
+    gap: 10px;
+    color: inherit;
+    text-decoration: none;
+    border-radius: 6px;
   }
+  .gearset-pieces__link img { width: 96px; height: auto; border-radius: 4px; flex: none; }
+  .gearset-pieces__link:hover .gearset-pieces__name { color: var(--accent); }
+  .gearset-pieces__text { display: flex; flex-direction: column; min-width: 0; }
 
   .gearset-pieces__slot {
     font-family: var(--font-mono);

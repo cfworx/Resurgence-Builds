@@ -1,0 +1,650 @@
+{
+ "\"Big Drum\" Body Armor": {
+  "slot": "Body Armor",
+  "tier": "T2",
+  "family": "D",
+  "files": {
+   "High-End": "big-drum-body-armor-high-end.webp",
+   "Superior": "big-drum-body-armor-superior.webp"
+  }
+ },
+ "\"Digits\" Finger Stabilizer": {
+  "slot": "Gloves",
+  "tier": "T1",
+  "family": "C",
+  "files": {
+   "High-End": "digits-finger-stabilizer-high-end.webp",
+   "Superior": "digits-finger-stabilizer-superior.webp"
+  }
+ },
+ "\"Dingson\" Protection Pads": {
+  "slot": "Knee Pads",
+  "tier": "T0",
+  "family": "A",
+  "files": {
+   "High-End": "dingson-protection-pads-high-end.webp",
+   "Superior": "dingson-protection-pads-superior.webp"
+  }
+ },
+ "\"Ericht\" Chest System": {
+  "slot": "Body Armor",
+  "tier": "T0",
+  "family": "A",
+  "files": {
+   "High-End": "ericht-chest-system-high-end.webp",
+   "Superior": "ericht-chest-system-superior.webp"
+  }
+ },
+ "\"Horo\" CarryBack": {
+  "slot": "Backpack",
+  "tier": "T1",
+  "family": "C",
+  "files": {
+   "High-End": "horo-carryback-high-end.webp",
+   "Superior": "horo-carryback-superior.webp"
+  }
+ },
+ "\"Kote\" Hand Guards": {
+  "slot": "Gloves",
+  "tier": "T2",
+  "family": "B",
+  "files": {
+   "High-End": "kote-hand-guards-high-end.webp",
+   "Superior": "kote-hand-guards-superior.webp"
+  }
+ },
+ "\"Lochy\" Hand Savers": {
+  "slot": "Gloves",
+  "tier": "T0",
+  "family": "A",
+  "files": {
+   "High-End": "lochy-hand-savers-high-end.webp",
+   "Superior": "lochy-hand-savers-superior.webp"
+  }
+ },
+ "\"Maxillam\" Respirator": {
+  "slot": "Mask",
+  "tier": "T0",
+  "family": "C",
+  "files": {
+   "High-End": "maxillam-respirator-high-end.webp",
+   "Superior": "maxillam-respirator-superior.webp"
+  }
+ },
+ "\"Morar\" Holster System": {
+  "slot": "Holster",
+  "tier": "T1",
+  "family": "B",
+  "files": {
+   "High-End": "morar-holster-system-high-end.webp",
+   "Superior": "morar-holster-system-superior.webp"
+  }
+ },
+ "\"Neptune\" Protection Gloves": {
+  "slot": "Gloves",
+  "tier": "T2",
+  "family": "C",
+  "files": {
+   "High-End": "neptune-protection-gloves-high-end.webp",
+   "Superior": "neptune-protection-gloves-superior.webp"
+  }
+ },
+ "\"Patella\" Knee Cups": {
+  "slot": "Knee Pads",
+  "tier": "T2",
+  "family": "C",
+  "files": {
+   "High-End": "patella-knee-cups-high-end.webp",
+   "Superior": "patella-knee-cups-superior.webp"
+  }
+ },
+ "\"Tay\" Protective Pads v1": {
+  "slot": "Knee Pads",
+  "tier": "T0",
+  "family": "B",
+  "files": {
+   "High-End": "tay-protective-pads-v1-high-end.webp",
+   "Superior": "tay-protective-pads-v1-superior.webp"
+  }
+ },
+ "\"Tay\" Protective Pads v2": {
+  "slot": "Knee Pads",
+  "tier": "T0",
+  "family": "D",
+  "files": {
+   "High-End": "tay-protective-pads-v2-high-end.webp",
+   "Superior": "tay-protective-pads-v2-superior.webp"
+  }
+ },
+ "AMP24": {
+  "slot": "Backpack",
+  "tier": "T2",
+  "family": "C",
+  "files": {
+   "High-End": "amp24-high-end.webp",
+   "Superior": "amp24-superior.webp"
+  }
+ },
+ "All Hazards Nitro Backpack": {
+  "slot": "Backpack",
+  "tier": "T2",
+  "family": "A",
+  "files": {
+   "High-End": "all-hazards-nitro-backpack-high-end.webp",
+   "Superior": "all-hazards-nitro-backpack-superior.webp"
+  }
+ },
+ "Aphrodite Glint Concealer": {
+  "slot": "Mask",
+  "tier": "T1",
+  "family": "C",
+  "files": {
+   "High-End": "aphrodite-glint-concealer-high-end.webp",
+   "Superior": "aphrodite-glint-concealer-superior.webp"
+  }
+ },
+ "Armorer's Security Holster": {
+  "slot": "Holster",
+  "tier": "T0",
+  "family": "C",
+  "files": {
+   "High-End": "armorer-s-security-holster-high-end.webp",
+   "Superior": "armorer-s-security-holster-superior.webp"
+  }
+ },
+ "Artemis Fast Draw Holster": {
+  "slot": "Holster",
+  "tier": "T1",
+  "family": "D",
+  "files": {
+   "High-End": "artemis-fast-draw-holster-high-end.webp",
+   "Superior": "artemis-fast-draw-holster-superior.webp"
+  }
+ },
+ "Athena Missile Vest": {
+  "slot": "Body Armor",
+  "tier": "T1",
+  "family": "B",
+  "files": {
+   "High-End": "athena-missile-vest-high-end.webp",
+   "Superior": "athena-missile-vest-superior.webp"
+  }
+ },
+ "Bevor Air Guard": {
+  "slot": "Mask",
+  "tier": "T1",
+  "family": "A",
+  "files": {
+   "High-End": "bevor-air-guard-high-end.webp",
+   "Superior": "bevor-air-guard-superior.webp"
+  }
+ },
+ "Big Horn Pack": {
+  "slot": "Backpack",
+  "tier": "T1",
+  "family": "D",
+  "files": {
+   "High-End": "big-horn-pack-high-end.webp",
+   "Superior": "big-horn-pack-superior.webp"
+  }
+ },
+ "Blood Fang Gloves": {
+  "slot": "Gloves",
+  "tier": "T0",
+  "family": "C",
+  "files": {
+   "High-End": "blood-fang-gloves-high-end.webp",
+   "Superior": "blood-fang-gloves-superior.webp"
+  }
+ },
+ "Breathe-Easy Mask": {
+  "slot": "Mask",
+  "tier": "T1",
+  "family": "D",
+  "files": {
+   "High-End": "breathe-easy-mask-high-end.webp",
+   "Superior": "breathe-easy-mask-superior.webp"
+  }
+ },
+ "Chamber Wolf TAC Holster": {
+  "slot": "Holster",
+  "tier": "T0",
+  "family": "B",
+  "files": {
+   "High-End": "chamber-wolf-tac-holster-high-end.webp",
+   "Superior": "chamber-wolf-tac-holster-superior.webp"
+  }
+ },
+ "Chatzatz Chest": {
+  "slot": "Body Armor",
+  "tier": "T2",
+  "family": "B",
+  "files": {
+   "High-End": "chatzatz-chest-high-end.webp",
+   "Superior": "chatzatz-chest-superior.webp"
+  }
+ },
+ "Combat Mask \"Cete\"": {
+  "slot": "Mask",
+  "tier": "T2",
+  "family": "A",
+  "files": {
+   "High-End": "combat-mask-cete-high-end.webp",
+   "Superior": "combat-mask-cete-superior.webp"
+  }
+ },
+ "Demeter Quick-Stash": {
+  "slot": "Backpack",
+  "tier": "T0",
+  "family": "B",
+  "files": {
+   "High-End": "demeter-quick-stash-high-end.webp",
+   "Superior": "demeter-quick-stash-superior.webp"
+  }
+ },
+ "Diamondback Gloves": {
+  "slot": "Gloves",
+  "tier": "T1",
+  "family": "B",
+  "files": {
+   "High-End": "diamondback-gloves-high-end.webp",
+   "Superior": "diamondback-gloves-superior.webp"
+  }
+ },
+ "Dionysus Rounded Padding": {
+  "slot": "Knee Pads",
+  "tier": "T0",
+  "family": "C",
+  "files": {
+   "High-End": "dionysus-rounded-padding-high-end.webp",
+   "Superior": "dionysus-rounded-padding-superior.webp"
+  }
+ },
+ "Element Outdoors Rucksack": {
+  "slot": "Backpack",
+  "tier": "T0",
+  "family": "D",
+  "files": {
+   "High-End": "element-outdoors-rucksack-high-end.webp",
+   "Superior": "element-outdoors-rucksack-superior.webp"
+  }
+ },
+ "Flimsy Body Armor v1": {
+  "slot": "Body Armor",
+  "tier": "T1",
+  "family": "A",
+  "files": {
+   "High-End": "flimsy-body-armor-v1-high-end.webp",
+   "Superior": "flimsy-body-armor-v1-superior.webp"
+  }
+ },
+ "Flimsy Body Armor v2": {
+  "slot": "Body Armor",
+  "tier": "T1",
+  "family": "C",
+  "files": {
+   "High-End": "flimsy-body-armor-v2-high-end.webp",
+   "Superior": "flimsy-body-armor-v2-superior.webp"
+  }
+ },
+ "Fodral Holster": {
+  "slot": "Holster",
+  "tier": "T2",
+  "family": "A",
+  "files": {
+   "High-End": "fodral-holster-high-end.webp",
+   "Superior": "fodral-holster-superior.webp"
+  }
+ },
+ "Guardrail VI Facerig": {
+  "slot": "Mask",
+  "tier": "T0",
+  "family": "D",
+  "files": {
+   "High-End": "guardrail-vi-facerig-high-end.webp",
+   "Superior": "guardrail-vi-facerig-superior.webp"
+  }
+ },
+ "Gustavo Association Gloves": {
+  "slot": "Gloves",
+  "tier": "T2",
+  "family": "D",
+  "files": {
+   "High-End": "gustavo-association-gloves-high-end.webp",
+   "Superior": "gustavo-association-gloves-superior.webp"
+  }
+ },
+ "HX 02": {
+  "slot": "Knee Pads",
+  "tier": "T1",
+  "family": "C",
+  "files": {
+   "High-End": "hx-02-high-end.webp",
+   "Superior": "hx-02-superior.webp"
+  }
+ },
+ "Half mask respirator": {
+  "slot": "Mask",
+  "tier": "T2",
+  "family": "D",
+  "files": {
+   "High-End": "half-mask-respirator-high-end.webp",
+   "Superior": "half-mask-respirator-superior.webp"
+  }
+ },
+ "Hunter's Code Gloves": {
+  "slot": "Gloves",
+  "tier": "T0",
+  "family": "D",
+  "files": {
+   "High-End": "hunter-s-code-gloves-high-end.webp",
+   "Superior": "hunter-s-code-gloves-superior.webp"
+  }
+ },
+ "Hybrid FC Gloves": {
+  "slot": "Gloves",
+  "tier": "T0",
+  "family": "B",
+  "files": {
+   "High-End": "hybrid-fc-gloves-high-end.webp",
+   "Superior": "hybrid-fc-gloves-superior.webp"
+  }
+ },
+ "Jags Sidearm Mount": {
+  "slot": "Holster",
+  "tier": "T2",
+  "family": "B",
+  "files": {
+   "High-End": "jags-sidearm-mount-high-end.webp",
+   "Superior": "jags-sidearm-mount-superior.webp"
+  }
+ },
+ "Jaivardhan Thigh Rig": {
+  "slot": "Holster",
+  "tier": "T2",
+  "family": "C",
+  "files": {
+   "High-End": "jaivardhan-thigh-rig-high-end.webp",
+   "Superior": "jaivardhan-thigh-rig-superior.webp"
+  }
+ },
+ "Javelina Mask": {
+  "slot": "Mask",
+  "tier": "T2",
+  "family": "C",
+  "files": {
+   "High-End": "javelina-mask-high-end.webp",
+   "Superior": "javelina-mask-superior.webp"
+  }
+ },
+ "Knäskydd Knee Protectors": {
+  "slot": "Knee Pads",
+  "tier": "T2",
+  "family": "A",
+  "files": {
+   "High-End": "kn-skydd-knee-protectors-high-end.webp",
+   "Superior": "kn-skydd-knee-protectors-superior.webp"
+  }
+ },
+ "Lock and Load Holster": {
+  "slot": "Holster",
+  "tier": "T0",
+  "family": "D",
+  "files": {
+   "High-End": "lock-and-load-holster-high-end.webp",
+   "Superior": "lock-and-load-holster-superior.webp"
+  }
+ },
+ "Mechanized Infantry Armor": {
+  "slot": "Body Armor",
+  "tier": "T0",
+  "family": "B",
+  "files": {
+   "High-End": "mechanized-infantry-armor-high-end.webp",
+   "Superior": "mechanized-infantry-armor-superior.webp"
+  }
+ },
+ "Mesa Knee Guards": {
+  "slot": "Knee Pads",
+  "tier": "T1",
+  "family": "D",
+  "files": {
+   "High-End": "mesa-knee-guards-high-end.webp",
+   "Superior": "mesa-knee-guards-superior.webp"
+  }
+ },
+ "Micro Plated Gloves": {
+  "slot": "Gloves",
+  "tier": "T1",
+  "family": "A",
+  "files": {
+   "High-End": "micro-plated-gloves-high-end.webp",
+   "Superior": "micro-plated-gloves-superior.webp"
+  }
+ },
+ "Mountain Hiking Pack": {
+  "slot": "Backpack",
+  "tier": "T2",
+  "family": "B",
+  "files": {
+   "High-End": "mountain-hiking-pack-high-end.webp",
+   "Superior": "mountain-hiking-pack-superior.webp"
+  }
+ },
+ "Nightclaw Tactical Gloves": {
+  "slot": "Gloves",
+  "tier": "T2",
+  "family": "A",
+  "files": {
+   "High-End": "nightclaw-tactical-gloves-high-end.webp",
+   "Superior": "nightclaw-tactical-gloves-superior.webp"
+  }
+ },
+ "Ops Armor": {
+  "slot": "Body Armor",
+  "tier": "T2",
+  "family": "C",
+  "files": {
+   "High-End": "ops-armor-high-end.webp",
+   "Superior": "ops-armor-superior.webp"
+  }
+ },
+ "Phalanx Precision Vest": {
+  "slot": "Body Armor",
+  "tier": "T1",
+  "family": "D",
+  "files": {
+   "High-End": "phalanx-precision-vest-high-end.webp",
+   "Superior": "phalanx-precision-vest-superior.webp"
+  }
+ },
+ "Phantom Saviour Gloves": {
+  "slot": "Gloves",
+  "tier": "T1",
+  "family": "D",
+  "files": {
+   "High-End": "phantom-saviour-gloves-high-end.webp",
+   "Superior": "phantom-saviour-gloves-superior.webp"
+  }
+ },
+ "Pivot Pads": {
+  "slot": "Knee Pads",
+  "tier": "T2",
+  "family": "D",
+  "files": {
+   "High-End": "pivot-pads-high-end.webp",
+   "Superior": "pivot-pads-superior.webp"
+  }
+ },
+ "Pridwen Holster": {
+  "slot": "Holster",
+  "tier": "T1",
+  "family": "C",
+  "files": {
+   "High-End": "pridwen-holster-high-end.webp",
+   "Superior": "pridwen-holster-superior.webp"
+  }
+ },
+ "Protective Tactical Mask": {
+  "slot": "Mask",
+  "tier": "T2",
+  "family": "B",
+  "files": {
+   "High-End": "protective-tactical-mask-high-end.webp",
+   "Superior": "protective-tactical-mask-superior.webp"
+  }
+ },
+ "RUSH72 Backpack": {
+  "slot": "Backpack",
+  "tier": "T0",
+  "family": "C",
+  "files": {
+   "High-End": "rush72-backpack-high-end.webp",
+   "Superior": "rush72-backpack-superior.webp"
+  }
+ },
+ "Rally Point Secure Pack": {
+  "slot": "Backpack",
+  "tier": "T1",
+  "family": "A",
+  "files": {
+   "High-End": "rally-point-secure-pack-high-end.webp",
+   "Superior": "rally-point-secure-pack-superior.webp"
+  }
+ },
+ "Ranger Ballistics Vest": {
+  "slot": "Body Armor",
+  "tier": "T0",
+  "family": "C",
+  "files": {
+   "High-End": "ranger-ballistics-vest-high-end.webp",
+   "Superior": "ranger-ballistics-vest-superior.webp"
+  }
+ },
+ "Rapid Deployment Mask": {
+  "slot": "Mask",
+  "tier": "T0",
+  "family": "B",
+  "files": {
+   "High-End": "rapid-deployment-mask-high-end.webp",
+   "Superior": "rapid-deployment-mask-superior.webp"
+  }
+ },
+ "Roamer Pack \"Sow\"": {
+  "slot": "Backpack",
+  "tier": "T2",
+  "family": "D",
+  "files": {
+   "High-End": "roamer-pack-sow-high-end.webp",
+   "Superior": "roamer-pack-sow-superior.webp"
+  }
+ },
+ "Serviceman's Holster": {
+  "slot": "Holster",
+  "tier": "T1",
+  "family": "A",
+  "files": {
+   "High-End": "serviceman-s-holster-high-end.webp",
+   "Superior": "serviceman-s-holster-superior.webp"
+  }
+ },
+ "Stonewall Knee Pads": {
+  "slot": "Knee Pads",
+  "tier": "T1",
+  "family": "A",
+  "files": {
+   "High-End": "stonewall-knee-pads-high-end.webp",
+   "Superior": "stonewall-knee-pads-superior.webp"
+  }
+ },
+ "Stridsvast Combat Vest": {
+  "slot": "Body Armor",
+  "tier": "T0",
+  "family": "D",
+  "files": {
+   "High-End": "stridsvast-combat-vest-high-end.webp",
+   "Superior": "stridsvast-combat-vest-superior.webp"
+  }
+ },
+ "Sundown Knee Guards": {
+  "slot": "Knee Pads",
+  "tier": "T1",
+  "family": "B",
+  "files": {
+   "High-End": "sundown-knee-guards-high-end.webp",
+   "Superior": "sundown-knee-guards-superior.webp"
+  }
+ },
+ "Tactical Mask": {
+  "slot": "Mask",
+  "tier": "T0",
+  "family": "A",
+  "files": {
+   "High-End": "tactical-mask-high-end.webp",
+   "Superior": "tactical-mask-superior.webp"
+  }
+ },
+ "Tepes Holster": {
+  "slot": "Holster",
+  "tier": "T2",
+  "family": "D",
+  "files": {
+   "High-End": "tepes-holster-high-end.webp",
+   "Superior": "tepes-holster-superior.webp"
+  }
+ },
+ "Timeless Guardian Mask": {
+  "slot": "Mask",
+  "tier": "T1",
+  "family": "B",
+  "files": {
+   "High-End": "timeless-guardian-mask-high-end.webp",
+   "Superior": "timeless-guardian-mask-superior.webp"
+  }
+ },
+ "Trekking Elite Pack": {
+  "slot": "Backpack",
+  "tier": "T0",
+  "family": "A",
+  "files": {
+   "High-End": "trekking-elite-pack-high-end.webp",
+   "Superior": "trekking-elite-pack-superior.webp"
+  }
+ },
+ "Urban Assault Holster": {
+  "slot": "Holster",
+  "tier": "T0",
+  "family": "A",
+  "files": {
+   "High-End": "urban-assault-holster-high-end.webp",
+   "Superior": "urban-assault-holster-superior.webp"
+  }
+ },
+ "Urban Warfare Kneepads": {
+  "slot": "Knee Pads",
+  "tier": "T2",
+  "family": "B",
+  "files": {
+   "High-End": "urban-warfare-kneepads-high-end.webp",
+   "Superior": "urban-warfare-kneepads-superior.webp"
+  }
+ },
+ "X-TREYME Pro Ribcage": {
+  "slot": "Body Armor",
+  "tier": "T2",
+  "family": "A",
+  "files": {
+   "High-End": "x-treyme-pro-ribcage-high-end.webp",
+   "Superior": "x-treyme-pro-ribcage-superior.webp"
+  }
+ },
+ "Ziba Low Profile Pack": {
+  "slot": "Backpack",
+  "tier": "T1",
+  "family": "B",
+  "files": {
+   "High-End": "ziba-low-profile-pack-high-end.webp",
+   "Superior": "ziba-low-profile-pack-superior.webp"
+  }
+ }
+}

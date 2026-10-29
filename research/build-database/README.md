@@ -25,9 +25,16 @@ see-through popup; the evidence files themselves are never changed.
 | Backpack Talent | Done 2026-10-28 | 25 | `Screen_Recording_20261028_190726` |
 | Weapon/Gear Bonus Attributes | Done 2026-10-28 | 24 | `Screen_Recording_20261028_190829` |
 | Armory (outside the database): weapons and gear | Done 2026-10-28 | 92 weapons, 72 gear | `Screen_Recording_20261028_191045` |
+| Weapon Talent Source lists (which weapons roll each talent) | Done 2026-10-29 | 67 talents, 1,548 talent and weapon pairs | `2026-10-29_09-40-59` to `2026-10-29_11-27-02` (11 videos) |
+| Gear Set Effect Source lists | Done 2026-10-29 | 16 sets, 216 set and piece pairs (+4 extra tiles, see Open questions) | `2026-10-29_11-33-53`, `2026-10-29_11-38-05`, `Screen_Recording_20261029_131044` |
+| Body Armor Talent Source lists | Done 2026-10-29 | 25 talents, 144 pairs | `2026-10-29_11-40-15` |
+| Backpack Talent Source lists | Done 2026-10-29 | 25 talents, 144 pairs | `2026-10-29_11-42-06` |
 
-All recordings were made on 2026-10-28 during Season 2 Phase 2. Details are in `recordings.json`. With the Gear Set Effect
-recording, every section of the database is covered.
+The section recordings were made on 2026-10-28 and the Source lists on 2026-10-29, all during Season 2 Phase 2. Details are in
+`recordings.json`. Every section of the database is covered, and so is every Source list.
+
+The whole record as one spreadsheet (a tab per section, the Source lists and the per-item pools, with the counts as live
+formulas) is built by `tools/make_workbook.py OUT.xlsx`.
 
 ## Files
 
@@ -61,6 +68,15 @@ recording, every section of the database is covered.
   screens don't show: rank II talent values, the top tier of three skill mod sets (the database lists the lowest), a level 50
   OS Protocol, Tactical Augmentation Module tracks per gear piece, inventory counters, focus core stats, and activity rules.
   Each row has the creator, video, timestamp and a link to the frame.
+- `weapon-talent-sources.json` / `.csv`: every weapon each of the 67 standard weapon talents can roll on, in the order the
+  talent's Source panel lists them (by class), with class, Armory tier and rarities. Read off the scrolled panels by
+  `tools/talent_sources.py`; the site copy is `src/data/weapon-talent-sources.json`.
+- `gear-set-sources.json` / `.csv`, `body-armor-talent-sources.json` / `.csv`, `backpack-talent-sources.json` / `.csv`: every gear
+  piece in each Gear Set Effect's, Body Armor Talent's and Backpack Talent's Source panel, read by `tools/gear_sources.py`; the
+  site copy of all three is `src/data/gear-sources.json`.
+- `gear-cards.json`: the gear cards opened from Source lists (each card shows the piece's name): 46 read by text recognition
+  in `2026-10-29_11-33-53`, 14 by eye in `Screen_Recording_20261029_131044`. They confirm the position naming and name the
+  extra tiles.
 - `recordings.json`: the source recordings (file name, date, length, resolution, what each one covers).
 - `evidence/`: one image per entry, stitched from the recording so the whole scrolled card is in one picture. These are the
   proof for every value in the JSON and CSV files.
@@ -94,8 +110,17 @@ recording, every section of the database is covered.
   rarity the set comes in.
 - **Weapon Talents are shown at rank I.** The section's own header says "Every weapon has 2 Weapon Talents, which are randomly
   assigned from its Weapon Talent pool." Each card's "Source" panel lists the weapons that can roll it, grouped by class, as
-  thumbnails with rarity and tier but no names. The panels weren't scrolled in this recording, so the record keeps only the first
-  class shown.
+  thumbnails with rarity and tier but no names: all High-End copies, then Superior, then Specialized, in the same weapon order.
+  The October 29 recordings scrolled every panel to the end. Tiles were named by matching each weapon's picture against an icon
+  library built from the Armory screen and weapon cards, only within the tile's own class and tier (the tag is read off the
+  tile); every weapon came out in all three rarities. **Every standard weapon is in exactly 18 talents' lists**, the same pool
+  size as the exotics' 18 "Possible Talents", which is the strongest check that nothing was misread. Exotic weapons never
+  appear in the Source panels; their pools come from their own cards.
+- **Gear Source panels** show pieces, not names, in rows of six (mask, body armor, knee pads, backpack, gloves, holster): High-End
+  then Superior, and T2, T1, T0 within each. Gear set lists were named by that position against the Armory's families (37 of the
+  72 pieces were also read by name off gear cards Cory opened from the lists, and every one matched); talent lists were named by matching
+  pictures against those pieces. **Every body armor piece can roll exactly 12 of the 25 body armor talents, and every backpack 12
+  of the 25 backpack talents.**
 - **Body Armor and Backpack Talents are shown at rank I** too. The section header reads "Generally, gear does not have a Talent,
   except for Backpacks and Body Armor." Each card's "Source" panel shows pictures of the gear pieces that can roll it (rarity
   and tier, no names); the evidence images include that panel.
@@ -187,6 +212,15 @@ every field was compared with `src/data/`.
   codes guide now spells the Twitch-drop gear the Armory's way.
 
 ## Open questions
+
+- **Two extra tiles in Captain Cow and Fearless Warrior (answered).** Both sets' Source panels show eight Superior T0 tiles
+  where every other block has six. Cory opened them in game (`Screen_Recording_20261029_131044`): the second knee pads tile
+  opens the same "Tay" Protective Pads v2 card as the first, word for word, and the second gloves tile opens a finished
+  Level 1 item, "Fearless Hunter's Code Gloves" (Power Score ---, Health 722, Armor 60, +8 to each core attribute, one random
+  bonus attribute, Fearless Warrior set), where every other card describes how the piece is created. So the extras are
+  second listings of pieces already in the lists, not new pieces; why the game lists them twice (a reward version, say) the
+  database doesn't say. The same recording confirms the six T0 pieces of family D by name, including the two that the
+  Armory recording could only place by elimination (Stridsvast Combat Vest and "Tay" Protective Pads v2).
 
 - **Bonus attribute list vs Season 2 Phase 1.** The database still lists Weapon and Skill Blast, Piercing and Shredding Damage
   and doesn't list All Weapon Damage or All Skill Damage, although Ubisoft's Season 2 Phase 1 notes say the damage-type bonuses

@@ -5,6 +5,8 @@ publishDate: 2026-10-24
 lastUpdated: 2026-10-24T12:00:00Z
 tags: ["Exotic", "Season 2", "Sealed Caches", "Drop Rates"]
 description: "Division Resurgence Exotic Sealed Caches explained: official drop rates, pity timers, every item inside, and how many caches one exotic really takes."
+imageAlt: "The Division Resurgence Armory's exotic weapons page: Lady Death, Warlord, Scorpio, Diamondback, The Bighorn and the Strawberry Milkshake"
+featuredImage: "/images/guides/division-resurgence-exotic-sealed-caches-armory-exotics-1200.webp"
 author: "RapidF5"
 shareTitle: "The math on Exotic Sealed Caches"
 shareText: "0.29% per exotic, pity at 50, seven exotics in the pool. Here is how many caches your favorite gun actually costs."

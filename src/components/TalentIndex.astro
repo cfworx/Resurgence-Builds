@@ -14,6 +14,7 @@ export interface Props {
 // and silently drops the component when the parent has no slot by that name.
 import GameImage from './GameImage.astro';
 import { dbImage, CARDS_RECORDED } from '../utils/db-images';
+import { piecesFor, pieceSets, GEAR_SOURCES_RECORDED } from '../utils/rolls';
 const { talents, basePath } = Astro.props;
 // "/database/backpack-talents/" -> "backpack-talents": the folder of the in-game card images.
 const section = basePath.split('/').filter(Boolean).pop() || '';
@@ -40,11 +41,15 @@ const roleColors: Record<string, string> = {
   'Utility': '#b8b8c0',
 };
 
+const sourceKind = section === 'backpack-talents' ? 'backpackTalents' : 'bodyArmorTalents';
 const entries = talents.map(t => ({
   ...t,
   slug: toSlug(t.name),
   roles: roleOf(t.description),
+  // The pieces in the talent's Source list (recorded in game), with the gear sets each one carries.
+  rollsOn: piecesFor(sourceKind, toSlug(t.name)).map((p) => ({ ...p, sets: pieceSets(p.slug).map((x) => x.name) })),
 }));
+const tierOrder: Record<string, number> = { T2: 0, T1: 1, T0: 2 };
 
 const allRoles = ['DPS', 'Skill', 'Tank/Sustain', 'Team', 'Utility'].filter(r => entries.some(e => e.roles.includes(r)));
 ---
@@ -84,6 +89,27 @@ const allRoles = ['DPS', 'Skill', 'Tank/Sustain', 'Team', 'Utility'].filter(r =>
       </h2>
       <p class="ti-entry__desc">{e.description}</p>
       {e.note && <p class="item-note">{e.note}</p>}
+      {e.rollsOn.length > 0 && (
+        <div class="ti-rolls">
+          <p class="ti-rolls__lead">Rolls on {e.rollsOn.length} of the 12 {kind.gear}, at High-End and Superior (the talent's Source list in game, recorded {GEAR_SOURCES_RECORDED}), with the gear sets each one carries:</p>
+          <ul class="ti-rolls__list">
+            {[...e.rollsOn].sort((a, b) => tierOrder[a.tier] - tierOrder[b.tier] || a.name.localeCompare(b.name)).map((p) => {
+              const icon = dbImage(`gear-icons/${p.slug}`);
+              return (
+                <li>
+                  <a class="ti-piece" href={`/database/gear/#${p.slug}`}>
+                    {icon && <img src={icon.srcset[0][1]} srcset={icon.srcset.map(([iw, u]) => `${u} ${iw}w`).join(', ')} sizes="88px" width={icon.width} height={icon.height} alt="" loading="lazy" decoding="async" />}
+                    <span class="ti-piece__text">
+                      <span class="ti-piece__name">{p.name} <span class="ti-piece__tier">{p.tier}</span></span>
+                      <span class="ti-piece__sets">{p.sets.join(', ')}</span>
+                    </span>
+                  </a>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+      )}
       {dbImage(`${section}/${e.slug}`) && (
         <details class="game-card-toggle ti-card">
           <summary>In-game card</summary>
@@ -211,6 +237,44 @@ const allRoles = ['DPS', 'Skill', 'Tank/Sustain', 'Team', 'Utility'].filter(r =>
     font-size: var(--text-base);
     margin: 0;
   }
+
+  .ti-rolls { margin-top: var(--sp-3); }
+  .ti-rolls__lead { margin: 0 0 var(--sp-2); font-size: var(--text-sm); color: var(--ink-muted); }
+  .ti-rolls__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: var(--sp-2);
+  }
+  .ti-rolls__list li { margin: 0; max-width: none; }
+  .ti-piece {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px;
+    height: 100%;
+    border-radius: 8px;
+    border: 1px solid rgba(255,255,255,0.07);
+    background: rgba(0,0,0,0.22);
+    color: #e8e8f0;
+    text-decoration: none;
+  }
+  .ti-piece:hover { border-color: rgba(242,104,34,0.45); }
+  .ti-piece img { width: 88px; height: auto; border-radius: 4px; flex: none; }
+  .ti-piece__text { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+  .ti-piece__name { font-size: var(--text-sm); font-weight: 600; line-height: 1.3; }
+  .ti-piece__tier {
+    font-family: var(--font-mono);
+    font-size: var(--step--2);
+    color: var(--ink-muted);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 4px;
+    padding: 0 4px;
+    margin-left: 4px;
+  }
+  .ti-piece__sets { font-size: var(--text-xs); color: var(--ink-muted); line-height: 1.4; }
 </style>
 
 <script>

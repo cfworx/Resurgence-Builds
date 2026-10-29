@@ -1,26 +1,234 @@
 ---
-import BaseLayout from '../../../layouts/BaseLayout.astro';
-import Breadcrumbs from '../../../components/Breadcrumbs.astro';
-import SectionTag from '../../../components/SectionTag.astro';
+import DatabaseLayout from '../../../layouts/DatabaseLayout.astro';
+import AdSenseUnit from '../../../components/AdSenseUnit.astro';
+import GameImage from '../../../components/GameImage.astro';
+import { verifiedPatch } from '../../../data/site-config';
+import { dbImage } from '../../../utils/db-images';
+import { gearPieces, pieceSets, pieceTalents, GEAR_SOURCES_RECORDED } from '../../../utils/rolls';
+const lastVerified = verifiedPatch(); // Every piece, its sets and its talents read off the game's Armory and Source lists (Oct 28 and 29, 2026)
 
-const breadcrumbs = [
-  { name: 'Database', url: '/database/' },
-  { name: 'Gear', url: '/database/gear/' }
+const SLOTS = ['Mask', 'Body Armor', 'Knee Pads', 'Backpack', 'Gloves', 'Holster'];
+const TIERS = ['T2', 'T1', 'T0'];
+const slotSlug = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+const pieces = gearPieces().map((p) => ({ ...p, sets: pieceSets(p.slug), talents: pieceTalents(p.slug) }));
+const bySlot = SLOTS.map((slot) => ({
+  slot,
+  pieces: pieces.filter((p) => p.slot === slot).sort((a, b) => TIERS.indexOf(a.tier) - TIERS.indexOf(b.tier) || a.family.localeCompare(b.family)),
+}));
+const talentPage = (slot: string) => (slot === 'Backpack' ? '/database/backpack-talents/' : '/database/body-armor-talents/');
+
+// The four families: one piece per slot and tier, all carrying the same sets.
+const families = ['A', 'B', 'C', 'D'].map((f) => {
+  const mine = pieces.filter((p) => p.family === f);
+  return {
+    f,
+    tiers: TIERS.map((t) => ({ t, sets: mine.find((p) => p.tier === t)?.sets ?? [] })),
+  };
+});
+
+const title = 'Division Resurgence Gear: Every Piece and What It Rolls';
+const description = 'All 72 Division Resurgence gear pieces from the Armory: the gear sets each one carries and the 12 talents every body armor and backpack can roll, read off the game.';
+const breadcrumbs = [{ name: 'Gear', url: '/database/gear/' }];
+
+const faqs = [
+  { question: 'How many gear pieces are there in Division Resurgence?', answer: 'The Armory lists 72: 12 for each of the six slots (mask, body armor, knee pads, backpack, gloves and holster), on its Season 1 Tier 0, 1 and 2 pages. They come in four families, one piece per slot and tier, and every piece in a family carries the same gear sets.' },
+  { question: 'How many gear sets can one piece roll?', answer: 'Two on a Tier 0 piece, three on Tier 1 and four on Tier 2. The extra sets are the ones that only drop from higher tiers: One Shot One Kill, Dr. Medic, Mechanical Expert and Self-Propelled Shield start at T1, and Gunny Johnny, Mechanical Enemy, Fire Cycle and Healing Elites only roll on T2.' },
+  { question: 'Which gear pieces have a talent?', answer: 'Only body armor and backpacks. The game\'s own line: "Generally, gear does not have a Talent, except for Backpacks and Body Armor." Each body armor piece can roll 12 of the 25 body armor talents and each backpack 12 of the 25 backpack talents, and which 12 depends on the piece, not its tier or rarity.' },
+  { question: 'Can I get any talent with any gear set?', answer: 'No, and this catches builds out. The set comes from the piece and so does the talent pool, so a set and a talent only go together if one piece carries both. Suppressive Fire, for example, rolls on five body armor pieces; only one of them, the T0 Ranger Ballistics Vest, also carries Phalanx Attack. Check a piece\'s card on this page before you farm.' },
 ];
 
-const title = "All Gear: Division Resurgence Database";
-const description = "Complete Division Resurgence gear database. Every piece of High-End and Superior gear.";
-const noindex = true;
-
+const siteUrl = 'https://resurgencebuilds.com';
+const itemListLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: 'The Division Resurgence gear pieces',
+  description,
+  numberOfItems: pieces.length,
+  itemListElement: bySlot.flatMap((g) => g.pieces).map((p, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    url: `${siteUrl}/database/gear/#${p.slug}`,
+    item: {
+      '@type': 'Thing',
+      '@id': `${siteUrl}/database/gear/#${p.slug}`,
+      name: p.name,
+      description: `${p.tier} ${p.slot.toLowerCase()} in The Division Resurgence. Gear sets: ${p.sets.map((s) => s.name).join(', ')}.${p.talents.length ? ` Talents: ${p.talents.map((t) => t.name).join(', ')}.` : ''}`,
+      url: `${siteUrl}/database/gear/#${p.slug}`,
+      subjectOf: { '@id': `${siteUrl}/#division-resurgence` },
+    },
+  })),
+};
 ---
 
-<BaseLayout {title} {description} {breadcrumbs} noindex={true} noAds={true}>
-  <div class="container section">
-    <Breadcrumbs items={breadcrumbs} />
-    <SectionTag label="Gear Database" />
-    <h1 class="heading-accent">All Gear</h1>
-    <p style="color: var(--ink-muted);">
-      Looking for gear info? Browse <a href="/database/gear-set-effects/">Gear Set Effects</a>, <a href="/database/body-armor-talents/">Body Armor Talents</a>, <a href="/database/backpack-talents/">Backpack Talents</a>, and <a href="/database/bonus-attributes/">Bonus Attributes</a> in the database.
-    </p>
+<DatabaseLayout
+  {title}
+  {description}
+  {breadcrumbs}
+  heading="Gear Pieces"
+  subheading="Every gear piece in the Armory, with the gear sets it carries and, for body armor and backpacks, every talent it can roll."
+  jsonLd={itemListLd}
+  lastVerified={lastVerified}
+  {faqs}
+  modified="2026-10-29"
+>
+  <div class="gear-intro">
+    <p>A gear piece decides two things before you ever see its stats: which <a href="/database/gear-set-effects/">gear sets</a> it can come with, and, on body armor and backpacks, which talents it can roll. Both are fixed per piece. The Armory shows the sets (two icons on a T0 piece, three on T1, four on T2), and the game's Build-Making Database lists every piece that can carry each set and each talent. We recorded all of it: the Armory on October 28, 2026 and every Source list on {GEAR_SOURCES_RECORDED}.</p>
+    <p>So a build that wants a particular set and a particular talent on the same chest or backpack needs a piece that has both. Each card below says what that piece can give you.</p>
   </div>
-</BaseLayout>
+
+  <nav class="gear-jump" aria-label="Jump to a slot">
+    {SLOTS.map((s) => <a href={`#slot-${slotSlug(s)}`}>{s}</a>)}
+  </nav>
+
+  <section class="gear-families" aria-labelledby="families-title">
+    <h2 id="families-title" class="gear-h2">The Four Gear Families</h2>
+    <p class="gear-lead">The 72 pieces come in four families, one piece per slot and tier. Every piece of a family carries the same sets at its tier.</p>
+    <div class="gear-table-wrap">
+      <table class="gear-table">
+        <thead><tr><th scope="col">Family</th>{TIERS.slice().reverse().map((t) => <th scope="col">{t} pieces carry</th>)}</tr></thead>
+        <tbody>
+          {families.map((fam) => (
+            <tr>
+              <th scope="row"><span class="gear-table__fam">Family </span>{fam.f}</th>
+              {fam.tiers.slice().reverse().map(({ t, sets }) => (
+                <td data-tier={`${t}:`}>{sets.map((s, i) => <>{i > 0 && ', '}<a href={`/database/gear-set-effects/${s.slug}/`}>{s.name}</a></>)}</td>
+              ))}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  {bySlot.map((g) => (
+    <section class="gear-slot" id={`slot-${slotSlug(g.slot)}`} aria-labelledby={`slot-${slotSlug(g.slot)}-title`}>
+      <h2 id={`slot-${slotSlug(g.slot)}-title`} class="gear-h2">{g.slot === 'Body Armor' ? 'Body Armor' : `${g.slot}`} <span>{g.pieces.length}</span></h2>
+      <div class="gear-grid">
+        {g.pieces.map((p) => {
+          const icon = dbImage(`gear-icons/${p.slug}`);
+          return (
+            <article class="gear-card" id={p.slug}>
+              {icon && <GameImage image={icon} alt={`${p.name}, ${p.tier} ${p.slot.toLowerCase()} icon in The Division Resurgence`} sizes="(max-width: 640px) 128px, 330px" class="gear-card__img" />}
+              <h3 class="gear-card__name"><a href={`#${p.slug}`}>{p.name}</a></h3>
+              <p class="gear-card__meta"><span class="gear-tag">{p.tier}</span><span class="gear-tag">Family {p.family}</span></p>
+              <p class="gear-card__label">Gear sets</p>
+              <p class="gear-card__sets">{p.sets.map((s, i) => <>{i > 0 && ', '}<a href={`/database/gear-set-effects/${s.slug}/`}>{s.name}</a></>)}</p>
+              {p.talents.length > 0 && (
+                <>
+                  <p class="gear-card__label">Talents it can roll ({p.talents.length})</p>
+                  <ul class="gear-card__talents">
+                    {p.talents.map((t) => <li><a href={`${talentPage(p.slot)}#${t.slug}`}>{t.name}</a></li>)}
+                  </ul>
+                </>
+              )}
+            </article>
+          );
+        })}
+      </div>
+    </section>
+  ))}
+
+  <p class="gear-note">One quirk: the Captain Cow and Fearless Warrior Source lists show two Superior T0 pieces twice. The second knee pads open the same "Tay" Protective Pads v2 card, and the second gloves open "Fearless Hunter's Code Gloves", a finished Level 1 item (Health 722, Armor 60, +8 to each core attribute) rather than a recipe for one. Neither is a different piece, so the counts on this page don't change.</p>
+
+  <AdSenseUnit label="Advertisement (database category)" />
+</DatabaseLayout>
+
+<style>
+  .gear-intro { color: #c8c8d0; line-height: 1.75; max-width: 72ch; margin-bottom: var(--sp-6); }
+  .gear-intro p { margin: 0 0 var(--sp-3); }
+  .gear-jump { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: var(--sp-8); }
+  .gear-jump a {
+    font-size: var(--text-sm);
+    color: #d0d0da;
+    text-decoration: none;
+    padding: 4px 10px;
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 6px;
+  }
+  .gear-jump a:hover { color: var(--accent); border-color: var(--accent); }
+  .gear-h2 {
+    font-family: var(--font-heading);
+    font-size: var(--text-xl);
+    font-weight: 800;
+    color: #fff;
+    margin: 0 0 var(--sp-3);
+    padding-bottom: var(--sp-2);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+  .gear-h2 span { color: var(--ink-muted); font-size: var(--text-sm); margin-left: 6px; }
+  .gear-lead { color: #c8c8d0; font-size: var(--text-sm); line-height: 1.7; margin: 0 0 var(--sp-4); max-width: 72ch; }
+  .gear-families, .gear-slot { margin-bottom: var(--sp-10); }
+  .gear-table-wrap { overflow-x: auto; }
+  .gear-table { width: 100%; border-collapse: collapse; font-size: var(--text-sm); min-width: 520px; }
+  .gear-table th, .gear-table td { text-align: left; padding: 8px 10px; border-bottom: 1px solid rgba(255,255,255,0.07); vertical-align: top; }
+  .gear-table thead th { font-family: var(--font-mono); font-size: var(--text-xs); text-transform: uppercase; letter-spacing: 0.06em; color: var(--ink-muted); }
+  .gear-table tbody th { color: var(--accent); font-family: var(--font-mono); }
+  .gear-table a { color: #e8e8f0; }
+  .gear-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: var(--sp-3);
+  }
+  .gear-card {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: var(--sp-3);
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,0.07);
+    background: rgba(0,0,0,0.25);
+    scroll-margin-top: 90px;
+  }
+  .gear-card:target { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent); }
+  .gear-card :global(.gear-card__img) { width: 100%; height: auto; border-radius: 6px; }
+  .gear-card__name { margin: 4px 0 0; font-size: var(--text-base); font-weight: 700; line-height: 1.3; }
+  .gear-card__name a { color: #fff; text-decoration: none; }
+  .gear-card__meta { margin: 0; display: flex; gap: 6px; }
+  .gear-tag {
+    font-family: var(--font-mono);
+    font-size: var(--step--2);
+    color: var(--ink-muted);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 4px;
+    padding: 1px 6px;
+  }
+  .gear-card__label {
+    margin: 6px 0 0;
+    font-family: var(--font-mono);
+    font-size: var(--step--2);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--accent);
+  }
+  .gear-card__sets { margin: 0; font-size: var(--text-sm); line-height: 1.5; }
+  .gear-card__sets a, .gear-card__talents a { color: #e8e8f0; }
+  .gear-card__talents {
+    margin: 0;
+    padding-left: 1.1em;
+    font-size: var(--text-sm);
+    line-height: 1.55;
+    columns: 2;
+    column-gap: var(--sp-4);
+  }
+  .gear-card__talents li { margin: 0; break-inside: avoid; }
+  .gear-note { color: var(--ink-muted); font-size: var(--text-sm); line-height: 1.6; max-width: 72ch; }
+  .gear-table__fam { display: none; }
+
+  /* Phones: the families table stacks into one block per family, and each piece card puts a
+     small icon beside its name so the 72 cards don't run for screens and screens. */
+  @media (max-width: 640px) {
+    .gear-table { min-width: 0; }
+    .gear-table thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+    .gear-table, .gear-table tbody, .gear-table tr, .gear-table th, .gear-table td { display: block; }
+    .gear-table tr { padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.07); }
+    .gear-table th, .gear-table td { border-bottom: 0; padding: 2px 0; }
+    .gear-table tbody th { font-size: var(--text-sm); margin-bottom: 4px; }
+    .gear-table__fam { display: inline; }
+    .gear-table td::before { content: attr(data-tier) ' '; font-family: var(--font-mono); font-size: var(--text-xs); color: var(--ink-muted); }
+    .gear-card { display: grid; grid-template-columns: 128px 1fr; column-gap: 12px; row-gap: 6px; align-items: start; }
+    .gear-card :global(.gear-card__img) { grid-column: 1; grid-row: 1 / span 2; }
+    .gear-card__name { grid-column: 2; grid-row: 1; margin: 0; }
+    .gear-card__meta { grid-column: 2; grid-row: 2; flex-wrap: wrap; }
+    .gear-card__label, .gear-card__sets, .gear-card__talents { grid-column: 1 / -1; }
+  }
+</style>

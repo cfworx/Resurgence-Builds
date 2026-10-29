@@ -20,7 +20,7 @@ sources:
   - 'In-game Division Resurgence Build Database, verified June 2026.'
   - '<a href="https://www.youtube.com/watch?v=OLJPNceH_jo">Died Again Gaming, How to Farm, New Agent Guide</a>, June 4, 2026 (gold OS Protocol odds).'
   - '<a href="https://www.youtube.com/watch?v=tn4ME4MVGyY">Died Again Gaming, Catching Up Before Weekly Reset (DAG LIVE)</a>, October 25, 2026 (the weekly gold OS Protocol).'
-plannerHash: "s=Field+Medic&sc=Combat+Medicine&n=The+Muscular+Nurse&ms=gs-14&m1=dr&m2=arm&gs=gs-14&g1=mhp&g2=dr&hs=gs-14&h1=dr&h2=rh&cs=gs-15&ct=ba-13&c1=rh&c2=scr&ps=gs-14&pt=bp-21&p1=scc&p2=dr&ks=gs-15&k1=arm&k2=scc&w1s=sw-10&w1tr=T2&w1t=wt-55&w1t2=wt-38&w1b1=sms&w1b1v=8.46&w1b2=rh&w1b2v=22.23&w2s=sw-15&w2tr=T2&w2t=wt-44&w2t2=wt-12&w2b1=mhp&w2b1v=18.62&w2b2=arm&w2b2v=12.76&os=os-54&sm1=smc-83&sm2=smc-86&sm3=smc-89"
+plannerHash: "s=Field+Medic&sc=Combat+Medicine&n=The+Muscular+Nurse&ms=gs-14&m1=dr&m2=arm&gs=gs-14&g1=mhp&g2=dr&hs=gs-14&h1=dr&h2=rh&cs=gs-15&ct=ba-13&c1=rh&c2=scr&ps=gs-14&pt=bp-21&p1=scc&p2=dr&ks=gs-15&k1=arm&k2=scc&w1s=sw-49&w1tr=T2&w1t=wt-55&w1t2=wt-38&w1b1=sms&w1b1v=8.46&w1b2=rh&w1b2v=22.23&w2s=sw-62&w2tr=T2&w2t=wt-44&w2t2=wt-12&w2b1=mhp&w2b1v=18.62&w2b2=arm&w2b2v=12.76&os=os-54&sm1=smc-83&sm2=smc-86&sm3=smc-89"
 faqs:
   - question: "What is the best Combat Medicine Field Medic build in Division Resurgence?"
     answer: "Nadie's Muscular Nurse is a top-10 Asia server Combat Medicine build running 4pc Healing Elites, 2pc Self-Propelled Shield, and Pummeling Shield OS Protocol. It produces 334k Health, 15.7k Armor, and 20% base Damage Reduction before any talent procs fire. The build tanks Elite Mission bosses while keeping the entire squad alive with healing stations."
@@ -31,7 +31,7 @@ faqs:
   - question: "Can I solo Elite Missions with this build?"
     answer: "Yes, but slowly. Nadie's DPS is 66k, not a damage build. Elite Mission bosses take a long time at that DPS (call it 15-20 minutes, give or take your patience). The trade-off is that you will not die. If patience is not a problem, this build clears everything in the game."
   - question: "What weapons does The Muscular Nurse use?"
-    answer: "Primary: AUG A3 Para XS (T2 SMG) with Steady Suppression and Precise Support II for team-oriented play. Secondary: M60 (T2 LMG) with Sadistic Shield II and Conceited II for solo boss tanking. Both are standard weapons, no exotics required."
+    answer: "Primary: Enhanced AUG A3P (the Tier 2 AUG, an SMG) with Steady Suppression and Precise Support II for team-oriented play. Secondary: Military M60 E4 (the Tier 2 M60, an LMG) with Sadistic Shield II and Conceited II for solo boss tanking. Both are standard weapons, no exotics required, and both are the only AUG and M60 whose talent pools hold these talents."
   - question: "How does this build compare to Involuntary Nap Time?"
     answer: "Same Pummeling Shield OS Protocol (and the same June 26 stun cooldown nerf), completely different role. Involuntary Nap Time is a Bulwark Juggernaut stun-tank for Elite Missions and the Dark Zone. The Muscular Nurse is a Combat Medicine PvE sustainer that heals the team while tanking bosses. Pick based on whether you want to put things to sleep or keep your squad alive through Elite content."
 
@@ -162,7 +162,10 @@ The second clause is the magic on a tank-medic. Every time you take a hit at ful
 
 Nadie called these out explicitly: *"I have found 2 sexy stuff that I think Imma use them forever for Elites Missions."*
 
-### Primary: AUG A3 Para XS (T2 SMG)
+> [!INFO] Which AUG and which M60
+> Our June write-up called the primary an AUG A3 Para XS. In the game's Armory that one is Tier 1, and its talent pool has neither Steady Suppression nor Precise Support. The Tier 2 AUG, the **Enhanced AUG A3P**, can roll both, and likewise only the Tier 2 **Military M60 E4** (not the Classic M60 or the Black Market M60 E6) can roll Sadistic Shield and Conceited. Nadie's guns read T2, so these are the two to farm (talent Source lists recorded in game, October 29, 2026).
+
+### Primary: Enhanced AUG A3P (T2 SMG)
 
 | Stat | Value |
 |---|---|
@@ -185,7 +188,7 @@ Base [Precise Support](/database/weapon-talents/precise-support/) grants +7% Arm
 
 Nadie's take: *"Keep me in one piece and revive my poor teammates before realizing they were saved."*
 
-### Secondary: M60 (T2 LMG)
+### Secondary: Military M60 E4 (T2 LMG)
 
 | Stat | Value |
 |---|---|
@@ -281,8 +284,8 @@ This build lets a tank-medic carry under-geared teammates through content they c
 | 2pc Self-Propelled Shield (Body, Kneepads) | Received Healing + Skill CDR on body. Armor + Skill Crit Chance on kneepads. |
 | Body armor talent | Hypervigilant (II preferred). +5-7% DR per heal tick, 3 stacks. |
 | Backpack talent | Rock Solid (II preferred). +15% DR on receiving healing at rank I; Nadie's II reads +20%. |
-| AUG A3 Para XS (T2 SMG) | Steady Suppression + Precise Support. Received Healing + Skill Multi-Shot bonus attributes. |
-| M60 (T2 LMG) | Sadistic Shield + Conceited. Max Health + Armor bonus attributes. |
+| Enhanced AUG A3P (T2 SMG) | Steady Suppression + Precise Support. Received Healing + Skill Multi-Shot bonus attributes. |
+| Military M60 E4 (T2 LMG) | Sadistic Shield + Conceited. Max Health + Armor bonus attributes. |
 | Pummeling Shield OS | Weekly Bounties or the OS Protocol Sealed Cache. When this was written, a gold from the bounties was rare (Died Again Gaming guessed under 5 percent in June); by October he says the fourth boss's Key Rewards guarantee a random gold each week. Max to Level 50 for +45% Toughness. |
 
 ---

@@ -1,0 +1,548 @@
+{
+ "_about": "Gear cards opened from Source lists in the Build-Making Database: tapping a tile opens the card of the gear piece it stands for, with its name. These readings confirm which piece each position in a list is (gear_sources.py names gear set lists by position) and name the extra tiles. \"tile\": \"listed\" is a regular tile; \"extra\" is one of the additional Superior T0 tiles in the Captain Cow and Fearless Warrior lists.",
+ "cards": [
+  {
+   "recording": "2026-10-29_11-33-53.mp4",
+   "seconds": 2.0,
+   "list": "Fury Strike",
+   "card": "Combat Mask \"Cete\"",
+   "piece": "Combat Mask \"Cete\"",
+   "tile": "listed",
+   "read": "text recognition of the card title, matched to the Armory names"
+  },
+  {
+   "recording": "2026-10-29_11-33-53.mp4",
+   "seconds": 6.0,
+   "list": "Fury Strike",
+   "card": "Knäskydd Knee Protectors",
+   "piece": "Knäskydd Knee Protectors",
+   "tile": "listed",
+   "read": "text recognition of the card title, matched to the Armory names"
+  },
+  {
+   "recording": "2026-10-29_11-33-53.mp4",
+   "seconds": 8.0,
+   "list": "Fury Strike",
+   "card": "All Hazards Nitro Backpack",
+   "piece": "All Hazards Nitro Backpack",
+   "tile": "listed",
+   "read": "text recognition of the card title, matched to the Armory names"
+  },
+  {
+   "recording": "2026-10-29_11-33-53.mp4",
+   "seconds": 9.0,
+   "list": "Fury Strike",
+   "card": "Nightclaw Tactical Gloves",
+   "piece": "Nightclaw Tactical Gloves",
+   "tile": "listed",
+   "read": "text recognition of the card title, matched to the Armory names"
+  },
+  {
+   "recording": "2026-10-29_11-33-53.mp4",
+   "seconds": 14.0,
+   "list": "Fury Strike",
+   "card": "Flimsy Body Armor v1",
+   "piece": "Flimsy Body Armor v1",
+   "tile": "listed",
+   "read": "text recognition of the card title, matched to the Armory names"
+  },
+  {
+   "recording": "2026-10-29_11-33-53.mp4",
+   "seconds": 15.5,
+   "list": "Fury Strike",
+   "card": "Stonewall Knee Pads",
+   "piece": "Stonewall Knee Pads",
+   "tile": "listed",
+   "read": "text recognition of the card title, matched to the Armory names"
+  },
+  {
+   "recording": "2026-10-29_11-33-53.mp4",
+   "seconds": 17.0,
+   "list": "Fury Strike",
+   "card": "Rally Point Secure Pack",
+   "piece": "Rally Point Secure Pack",
+   "tile": "listed",
+   "read": "text recognition of the card title, matched to the Armory names"
+  },
+  {
+   "recording": "2026-10-29_11-33-53.mp4",
+   "seconds": 20.5,
+   "list": "Fury Strike",
+   "card": "Serviceman's Holster",
+   "piece": "Serviceman's Holster",
+   "tile": "listed",
+   "read": "text recognition of the card title, matched to the Armory names"
+  },
+  {
+   "recording": "2026-10-29_11-33-53.mp4",
+   "seconds": 25.5,
+   "list": "Fury Strike",
+   "card": "\"Ericht\" Chest System",
+   "piece": "\"Ericht\" Chest System",
+   "tile": "listed",
+   "read": "text recognition of the card title, matched to the Armory names"
+  },
+  {
+   "recording": "2026-10-29_11-33-53.mp4",
+   "seconds": 27.0,
+   "list": "Fury Strike",
+   "card": "\"Dingson\" Protection Pads",
+   "piece": "\"Dingson\" Protection Pads",
+   "tile": "listed",
+   "read": "text recognition of the card title, matched to the Armory names"
+  },
+  {
+   "recording": "2026-10-29_11-33-53.mp4",
+   "seconds": 29.0,
+   "list": "Fury Strike",
+   "card": "Trekking Elite Pack",
+   "piece": "Trekking Elite Pack",
+   "tile": "listed",
+   "read": "text recognition of the card title, matched to the Armory names"
+  },
+  {
+   "recording": "2026-10-29_11-33-53.mp4",
+   "seconds": 30.0,
+   "list": "Fury Strike",
+   "card": "\"Lochy\" Hand Savers",
+   "piece": "\"Lochy\" Hand Savers",
+   "tile": "listed",
+   "read": "text recognition of the card title, matched to the Armory names"
+  },
+  {
+   "recording": "2026-10-29_11-33-53.mp4",
+   "seconds": 31.5,
+   "list": "Fury Strike",
+   "card": "Urban Assault Holster",
+   "piece": "Urban Assault Holster",
+   "tile": "listed",
+   "read": "text recognition of the card title, matched to the Armory names"
+  },
+  {
+   "recording": "2026-10-29_11-33-53.mp4",
+   "seconds": 40.0,
+   "list": "Fury Strike",
+   "card": "Fodral Holster",
+   "piece": "Fodral Holster",
+   "tile": "listed",
+   "read": "text recognition of the card title, matched to the Armory names"
+  },
+  {
+   "recording": "2026-10-29_11-33-53.mp4",
+   "seconds": 42.5,
+   "list": "Fury Strike",
+   "card": "Bevor Air Guard",
+   "piece": "Bevor Air Guard",
+   "tile": "listed",
+   "read": "text recognition of the card title, matched to the Armory names"
+  },
+  {
+   "recording": "2026-10-29_11-33-53.mp4",
+   "seconds": 48.5,
+   "list": "Fury Strike",
+   "card": "Micro Plated Gloves",
+   "piece": "Micro Plated Gloves",
+   "tile": "listed",
+   "read": "text recognition of the card title, matched to the Armory names"
+  },
+  {
+   "recording": "2026-10-29_11-33-53.mp4",
+   "seconds": 51.0,
+   "list": "Fury Strike",
+   "card": "Tactical Mask",
+   "piece": "Tactical Mask",
+   "tile": "listed",
+   "read": "text recognition of the card title, matched to the Armory names"
+  },
+  {
+   "recording": "2026-10-29_11-33-53.mp4",
+   "seconds": 67.5,
+   "list": "Quick Draw",
+   "card": "Knäskydd Knee Protectors",
+   "piece": "Knäskydd Knee Protectors",
+   "tile": "listed",
+   "read": "text recognition of the card title, matched to the Armory names"
+  },
+  {
+   "recording": "2026-10-29_11-33-53.mp4",
+   "seconds": 68.5,
+   "list": "Quick Draw",
+   "card": "All Hazards Nitro Backpack",
+   "piece": "All Hazards Nitro Backpack",
+   "tile": "listed",
+   "read": "text recognition of the card title, matched to the Armory names"
+  },
+  {
+   "recording": "2026-10-29_11-33-53.mp4",
+   "seconds": 70.0,
+   "list": "Quick Draw",
+   "card": "Nightclaw Tactical Gloves",
+   "piece": "Nightclaw Tactical Gloves",
+   "tile": "listed",
+   "read": "text recognition of the card title, matched to the Armory names"
+  },
+  {
+   "recording": "2026-10-29_11-33-53.mp4",
+   "seconds": 74.5,
+   "list": "Quick Draw",
+   "card": "Stonewall Knee Pads",
+   "piece": "Stonewall Knee Pads",
+   "tile": "listed",
+   "read": "text recognition of the card title, matched to the Armory names"
+  },
+  {
+   "recording": "2026-10-29_11-33-53.mp4",
+   "seconds": 78.0,
+   "list": "Quick Draw",
+   "card": "Serviceman's Holster",
+   "piece": "Serviceman's Holster",
+   "tile": "listed",
+   "read": "text recognition of the card title, matched to the Armory names"
+  },
+  {
+   "recording": "2026-10-29_11-33-53.mp4",
+   "seconds": 80.0,
+   "list": "Quick Draw",
+   "card": "Tactical Mask",
+   "piece": "Tactical Mask",
+   "tile": "listed",
+   "read": "text recognition of the card title, matched to the Armory names"
+  },
+  {
+   "recording": "2026-10-29_11-33-53.mp4",
+   "seconds": 82.0,
+   "list": "Quick Draw",
+   "card": "\"Dingson\" Protection Pads",
+   "piece": "\"Dingson\" Protection Pads",
+   "tile": "listed",
+   "read": "text recognition of the card title, matched to the Armory names"
+  },
+  {
+   "recording": "2026-10-29_11-33-53.mp4",
+   "seconds": 83.0,
+   "list": "Quick Draw",
+   "card": "Trekking Elite Pack",
+   "piece": "Trekking Elite Pack",
+   "tile": "listed",
+   "read": "text recognition of the card title, matched to the Armory names"
+  },
+  {
+   "recording": "2026-10-29_11-33-53.mp4",
+   "seconds": 87.0,
+   "list": "Quick Draw",
+   "card": "Combat Mask \"Cete\"",
+   "piece": "Combat Mask \"Cete\"",
+   "tile": "listed",
+   "read": "text recognition of the card title, matched to the Armory names"
+  },
+  {
+   "recording": "2026-10-29_11-33-53.mp4",
+   "seconds": 92.5,
+   "list": "Quick Draw",
+   "card": "Fodral Holster",
+   "piece": "Fodral Holster",
+   "tile": "listed",
+   "read": "text recognition of the card title, matched to the Armory names"
+  },
+  {
+   "recording": "2026-10-29_11-33-53.mp4",
+   "seconds": 93.5,
+   "list": "Quick Draw",
+   "card": "Bevor Air Guard",
+   "piece": "Bevor Air Guard",
+   "tile": "listed",
+   "read": "text recognition of the card title, matched to the Armory names"
+  },
+  {
+   "recording": "2026-10-29_11-33-53.mp4",
+   "seconds": 95.0,
+   "list": "Quick Draw",
+   "card": "Flimsy Body Armor v1",
+   "piece": "Flimsy Body Armor v1",
+   "tile": "listed",
+   "read": "text recognition of the card title, matched to the Armory names"
+  },
+  {
+   "recording": "2026-10-29_11-33-53.mp4",
+   "seconds": 98.0,
+   "list": "Quick Draw",
+   "card": "Rally Point Secure Pack",
+   "piece": "Rally Point Secure Pack",
+   "tile": "listed",
+   "read": "text recognition of the card title, matched to the Armory names"
+  },
+  {
+   "recording": "2026-10-29_11-33-53.mp4",
+   "seconds": 108.0,
+   "list": "Quick Draw",
+   "card": "\"Lochy\" Hand Savers",
+   "piece": "\"Lochy\" Hand Savers",
+   "tile": "listed",
+   "read": "text recognition of the card title, matched to the Armory names"
+  },
+  {
+   "recording": "2026-10-29_11-33-53.mp4",
+   "seconds": 109.5,
+   "list": "Quick Draw",
+   "card": "Urban Assault Holster",
+   "piece": "Urban Assault Holster",
+   "tile": "listed",
+   "read": "text recognition of the card title, matched to the Armory names"
+  },
+  {
+   "recording": "2026-10-29_11-33-53.mp4",
+   "seconds": 117.0,
+   "list": "Phalanx Attack",
+   "card": "Javelina Mask",
+   "piece": "Javelina Mask",
+   "tile": "listed",
+   "read": "text recognition of the card title, matched to the Armory names"
+  },
+  {
+   "recording": "2026-10-29_11-33-53.mp4",
+   "seconds": 119.5,
+   "list": "Phalanx Attack",
+   "card": "\"Patella\" Knee Cups",
+   "piece": "\"Patella\" Knee Cups",
+   "tile": "listed",
+   "read": "text recognition of the card title, matched to the Armory names"
+  },
+  {
+   "recording": "2026-10-29_11-33-53.mp4",
+   "seconds": 124.0,
+   "list": "Phalanx Attack",
+   "card": "Aphrodite Glint Concealer",
+   "piece": "Aphrodite Glint Concealer",
+   "tile": "listed",
+   "read": "text recognition of the card title, matched to the Armory names"
+  },
+  {
+   "recording": "2026-10-29_11-33-53.mp4",
+   "seconds": 129.0,
+   "list": "Phalanx Attack",
+   "card": "\"Digits\" Finger Stabilizer",
+   "piece": "\"Digits\" Finger Stabilizer",
+   "tile": "listed",
+   "read": "text recognition of the card title, matched to the Armory names"
+  },
+  {
+   "recording": "2026-10-29_11-33-53.mp4",
+   "seconds": 132.0,
+   "list": "Phalanx Attack",
+   "card": "\"Maxillam\" Respirator",
+   "piece": "\"Maxillam\" Respirator",
+   "tile": "listed",
+   "read": "text recognition of the card title, matched to the Armory names"
+  },
+  {
+   "recording": "2026-10-29_11-33-53.mp4",
+   "seconds": 133.0,
+   "list": "Phalanx Attack",
+   "card": "Ranger Ballistics Vest",
+   "piece": "Ranger Ballistics Vest",
+   "tile": "listed",
+   "read": "text recognition of the card title, matched to the Armory names"
+  },
+  {
+   "recording": "2026-10-29_11-33-53.mp4",
+   "seconds": 134.0,
+   "list": "Phalanx Attack",
+   "card": "Dionysus Rounded Padding",
+   "piece": "Dionysus Rounded Padding",
+   "tile": "listed",
+   "read": "text recognition of the card title, matched to the Armory names"
+  },
+  {
+   "recording": "2026-10-29_11-33-53.mp4",
+   "seconds": 137.5,
+   "list": "Phalanx Attack",
+   "card": "Armorer's Security Holster",
+   "piece": "Armorer's Security Holster",
+   "tile": "listed",
+   "read": "text recognition of the card title, matched to the Armory names"
+  },
+  {
+   "recording": "2026-10-29_11-33-53.mp4",
+   "seconds": 140.5,
+   "list": "Phalanx Attack",
+   "card": "Ops Armor",
+   "piece": "Ops Armor",
+   "tile": "listed",
+   "read": "text recognition of the card title, matched to the Armory names"
+  },
+  {
+   "recording": "2026-10-29_11-33-53.mp4",
+   "seconds": 144.5,
+   "list": "Phalanx Attack",
+   "card": "\"Neptune\" Protection Gloves",
+   "piece": "\"Neptune\" Protection Gloves",
+   "tile": "listed",
+   "read": "text recognition of the card title, matched to the Armory names"
+  },
+  {
+   "recording": "2026-10-29_11-33-53.mp4",
+   "seconds": 145.5,
+   "list": "Phalanx Attack",
+   "card": "Jaivardhan Thigh Rig",
+   "piece": "Jaivardhan Thigh Rig",
+   "tile": "listed",
+   "read": "text recognition of the card title, matched to the Armory names"
+  },
+  {
+   "recording": "2026-10-29_11-33-53.mp4",
+   "seconds": 150.5,
+   "list": "Phalanx Attack",
+   "card": "\"Horo\" CarryBack",
+   "piece": "\"Horo\" CarryBack",
+   "tile": "listed",
+   "read": "text recognition of the card title, matched to the Armory names"
+  },
+  {
+   "recording": "2026-10-29_11-33-53.mp4",
+   "seconds": 153.0,
+   "list": "Phalanx Attack",
+   "card": "Pridwen Holster",
+   "piece": "Pridwen Holster",
+   "tile": "listed",
+   "read": "text recognition of the card title, matched to the Armory names"
+  },
+  {
+   "recording": "2026-10-29_11-33-53.mp4",
+   "seconds": 159.5,
+   "list": "Phalanx Attack",
+   "card": "Blood Fang Gloves",
+   "piece": "Blood Fang Gloves",
+   "tile": "listed",
+   "read": "text recognition of the card title, matched to the Armory names"
+  },
+  {
+   "recording": "Screen_Recording_20261029_131044_The_Division_Resurgence.mp4",
+   "seconds": 22.8,
+   "list": "Captain Cow",
+   "card": "Guardrail VI Facerig",
+   "piece": "Guardrail VI Facerig",
+   "tile": "listed",
+   "read": "by eye"
+  },
+  {
+   "recording": "Screen_Recording_20261029_131044_The_Division_Resurgence.mp4",
+   "seconds": 25.5,
+   "list": "Captain Cow",
+   "card": "Stridsvast Combat Vest",
+   "piece": "Stridsvast Combat Vest",
+   "tile": "listed",
+   "read": "by eye"
+  },
+  {
+   "recording": "Screen_Recording_20261029_131044_The_Division_Resurgence.mp4",
+   "seconds": 27.5,
+   "list": "Captain Cow",
+   "card": "\"Tay\" Protective Pads v2",
+   "piece": "\"Tay\" Protective Pads v2",
+   "tile": "listed",
+   "read": "by eye"
+  },
+  {
+   "recording": "Screen_Recording_20261029_131044_The_Division_Resurgence.mp4",
+   "seconds": 29.8,
+   "list": "Captain Cow",
+   "card": "\"Tay\" Protective Pads v2",
+   "piece": "\"Tay\" Protective Pads v2",
+   "tile": "extra",
+   "read": "by eye",
+   "note": "The second Superior T0 knee pads tile opens the same card as the first, word for word."
+  },
+  {
+   "recording": "Screen_Recording_20261029_131044_The_Division_Resurgence.mp4",
+   "seconds": 32.3,
+   "list": "Captain Cow",
+   "card": "Element Outdoors Rucksack",
+   "piece": "Element Outdoors Rucksack",
+   "tile": "listed",
+   "read": "by eye"
+  },
+  {
+   "recording": "Screen_Recording_20261029_131044_The_Division_Resurgence.mp4",
+   "seconds": 34.2,
+   "list": "Captain Cow",
+   "card": "Hunter's Code Gloves",
+   "piece": "Hunter's Code Gloves",
+   "tile": "listed",
+   "read": "by eye"
+  },
+  {
+   "recording": "Screen_Recording_20261029_131044_The_Division_Resurgence.mp4",
+   "seconds": 41.3,
+   "list": "Fearless Warrior",
+   "card": "Guardrail VI Facerig",
+   "piece": "Guardrail VI Facerig",
+   "tile": "listed",
+   "read": "by eye"
+  },
+  {
+   "recording": "Screen_Recording_20261029_131044_The_Division_Resurgence.mp4",
+   "seconds": 43.3,
+   "list": "Fearless Warrior",
+   "card": "Stridsvast Combat Vest",
+   "piece": "Stridsvast Combat Vest",
+   "tile": "listed",
+   "read": "by eye"
+  },
+  {
+   "recording": "Screen_Recording_20261029_131044_The_Division_Resurgence.mp4",
+   "seconds": 45.3,
+   "list": "Fearless Warrior",
+   "card": "\"Tay\" Protective Pads v2",
+   "piece": "\"Tay\" Protective Pads v2",
+   "tile": "listed",
+   "read": "by eye"
+  },
+  {
+   "recording": "Screen_Recording_20261029_131044_The_Division_Resurgence.mp4",
+   "seconds": 47.3,
+   "list": "Fearless Warrior",
+   "card": "\"Tay\" Protective Pads v2",
+   "piece": "\"Tay\" Protective Pads v2",
+   "tile": "extra",
+   "read": "by eye",
+   "note": "The second Superior T0 knee pads tile opens the same card as the first, word for word."
+  },
+  {
+   "recording": "Screen_Recording_20261029_131044_The_Division_Resurgence.mp4",
+   "seconds": 49.0,
+   "list": "Fearless Warrior",
+   "card": "Element Outdoors Rucksack",
+   "piece": "Element Outdoors Rucksack",
+   "tile": "listed",
+   "read": "by eye"
+  },
+  {
+   "recording": "Screen_Recording_20261029_131044_The_Division_Resurgence.mp4",
+   "seconds": 51.2,
+   "list": "Fearless Warrior",
+   "card": "Hunter's Code Gloves",
+   "piece": "Hunter's Code Gloves",
+   "tile": "listed",
+   "read": "by eye"
+  },
+  {
+   "recording": "Screen_Recording_20261029_131044_The_Division_Resurgence.mp4",
+   "seconds": 52.8,
+   "list": "Fearless Warrior",
+   "card": "Fearless Hunter's Code Gloves Level 1",
+   "piece": "Hunter's Code Gloves",
+   "tile": "extra",
+   "read": "by eye",
+   "note": "The second Superior T0 gloves tile. Unlike the other cards, which describe how the piece is created (\"This Gear will be created with 1 Bonuses and 0 random Talents\"), this one is a finished Level 1 item: Power Score ---, Health 722, Armor 60, +8 to each core attribute, one Random Bonus Attribute, and the Fearless Warrior set. \"Fearless\" is shown in orange before the name. The Captain Cow list shows the same tile in the same place; it wasn't opened there."
+  },
+  {
+   "recording": "Screen_Recording_20261029_131044_The_Division_Resurgence.mp4",
+   "seconds": 54.2,
+   "list": "Fearless Warrior",
+   "card": "Lock and Load Holster",
+   "piece": "Lock and Load Holster",
+   "tile": "listed",
+   "read": "by eye"
+  }
+ ]
+}

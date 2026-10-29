@@ -1830,6 +1830,7 @@ details.toc[open] > summary { margin-bottom: var(--sp-2); }
 .game-figure--hero { max-width: 558px; }   /* exotic card top, 558 px wide */
 .game-figure--card { max-width: 360px; }   /* tall cards: OS Protocols, full exotic cards */
 .game-figure--wide { max-width: 720px; }   /* landscape: gear sets, talents, skill mod combos */
+.game-figure--icon { max-width: 330px; }   /* a weapon's in-game icon tile (330 x 156) */
 .game-figure figcaption {
   margin-top: var(--sp-2);
   font-size: var(--text-xs);

@@ -5,8 +5,8 @@ updatedDate: 2026-10-24
 author: "RapidF5"
 tags: ["News", "Steam", "PC", "Community", "Season 2"]
 description: "Division Resurgence Steam launch reviews: what PC players liked, what they flagged, and what Ubisoft changed in Season 2 Phase 2."
-featuredImage: "/images/news/community-sentiment-pc.webp"
-imageAlt: "A young PC player in Division gear giving a thumbs up next to a 180 FPS overlay and The Division Resurgence on screen"
+featuredImage: "/images/news/division-resurgence-steam-launch-reviews-cavern-talk-1200.webp"
+imageAlt: "An agent in red goggles talking with two settlers in The Cavern safe house in The Division Resurgence"
 shareTitle: "Steam reviews, the fair version"
 shareText: "What PC players liked, what they flagged in launch week, and the Season 2 Phase 2 changes that went after the biggest complaints."
 faqs:

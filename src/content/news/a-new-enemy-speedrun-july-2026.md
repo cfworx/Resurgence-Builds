@@ -5,6 +5,8 @@ updatedDate: 2026-10-26
 author: "RapidF5"
 tags: ["News", "Events", "Season 1", "Phase 3"]
 description: "Division Resurgence A New Enemy speedrun runs July 10 to 15, plus every Season 1 Phase 3 event and cosmetic draw live or coming in July 2026."
+imageAlt: "An agent in a red jacket walking down a snowy, Christmas-lit New York street in The Division Resurgence, with the title A New Enemy Speedrun"
+featuredImage: "/images/news/division-resurgence-a-new-enemy-speedrun-july-festive-street-1200.webp"
 shareTitle: "A New Enemy speedrun is live"
 shareText: "A speedrun, a faction hunt, Trigger Happy, Liberty and Justice, a Season 2 countdown and four cosmetic draws. The whole July calendar on one screen."
 faqs:

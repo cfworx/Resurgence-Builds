@@ -63,8 +63,28 @@ const SECTIONS = {
     only: /^(assault-rifle|lmg|marksman-rifle|rifle|shotgun|smg)-t[0-2]$/,
     names: true,
   },
-  // Not bonus-attributes: those cards are a line of text plus the recording player's own
-  // current value, which would read like a cap.
+  // Each standard weapon's High-End tile from the talent Source lists (evidence/weapon-icons/, the
+  // icon library of research/build-database/tools/talent_sources.py): the weapon's own in-game icon,
+  // shown on its page and next to it in the talent lists.
+  'weapon-icons': {
+    kind: 'weapon-icon',
+    widths: [165, 330],
+    only: /-high-end$/,
+    slugFrom: (s) => s.replace(/-high-end$/, ''),
+    rename: { 'm1-military-designation': 'm1' }, // the site calls it M1
+  },
+  // Each Armory gear piece's High-End tile from the gear Source lists (evidence/gear-icons/, the
+  // icon library of research/build-database/tools/gear_sources.py), for the gear database page.
+  'gear-icons': {
+    kind: 'gear-icon',
+    widths: [165, 330],
+    only: /-high-end$/,
+    slugFrom: (s) => s.replace(/-high-end$/, ''),
+  },
+  // Bonus attribute cards: the name and the game's description. The card also shows the recording
+  // player's own "Current" total below a divider, which would read like a cap, so the picture stops
+  // above that divider.
+  'bonus-attributes': { kind: 'bonus-attribute-card', widths: [440, 880], aboveDivider: true },
 };
 
 const WEBP = { quality: 82, effort: 6, smartSubsample: true };
@@ -75,7 +95,20 @@ const WEBP = { quality: 82, effort: 6, smartSubsample: true };
 // pages pick the new names up automatically.
 //   -v2 (Oct 29, 2026): frame edges trimmed; exotic headers end below the attribute bar.
 //   -v3 (Oct 29, 2026), OS Protocols: tops rebuilt from clean frames, see-through background cleared.
-const NAME_SUFFIX = { ...Object.fromEntries(Object.keys(SECTIONS).map((s) => [s, '-v2'])), 'os-protocols': '-v3' };
+const NAME_SUFFIX = {
+  ...Object.fromEntries(Object.keys(SECTIONS).map((s) => [s, '-v2'])),
+  'os-protocols': '-v3',
+  'weapon-icons': '',
+  'gear-icons': '',
+  'bonus-attributes': '',
+};
+
+// Bonus attribute cards: the row of the thin divider above "Current: ..." (a light, even row).
+async function dividerRow(file, width) {
+  const rows = await rowStats(file, 60, width - 60);
+  for (let y = 150; y < rows.length; y++) if (rows[y].mean > 40 && rows[y].std < 8) return y;
+  return rows.length;
+}
 
 const rel = (abs) => '/' + path.relative(path.join(ROOT, 'public'), abs).split(path.sep).join('/');
 
@@ -243,13 +276,15 @@ async function main() {
       const evidenceSlug = name.replace(/\.webp$/, '');
       if (cfg.skip?.includes(evidenceSlug)) continue;
       if (cfg.only && !cfg.only.test(evidenceSlug)) continue;
-      const slug = cfg.rename?.[evidenceSlug] ?? evidenceSlug;
+      const baseSlug = cfg.slugFrom ? cfg.slugFrom(evidenceSlug) : evidenceSlug;
+      const slug = cfg.rename?.[baseSlug] ?? baseSlug;
       const cleanFile = path.join(srcDir, 'clean', name);
       const input = cfg.clean && fs.existsSync(cleanFile) ? cleanFile : path.join(srcDir, name);
       const meta = await sharp(input).metadata();
       const width = meta.width - t.left - t.right;
+      const bottomCut = cfg.aboveDivider ? meta.height - (await dividerRow(input, meta.width)) + 24 : t.bottom;
       let card = await sharp(input)
-        .extract({ left: t.left, top: t.top, width, height: meta.height - t.top - t.bottom })
+        .extract({ left: t.left, top: t.top, width, height: meta.height - t.top - bottomCut })
         .toBuffer();
       if (cfg.seeThrough) card = await clearSeeThrough(card);
       let hero = null;

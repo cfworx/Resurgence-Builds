@@ -6,8 +6,8 @@ lastUpdated: 2026-10-28T12:00:00Z
 tags: ["phoenix-credits", "currency", "sealed-caches", "free-to-play", "beginner", "Season 2"]
 description: "How to earn Phoenix Credits free in Division Resurgence, what they buy, what Sealed Caches cost, and what to spend them on first."
 author: "RapidF5"
-featuredImage: "/images/guides/division-resurgence-phoenix-credits-guide-hero.webp"
-imageAlt: "Division Resurgence Phoenix Credits guide title card over a snowy New York street"
+featuredImage: "/images/guides/division-resurgence-phoenix-credits-gift-store-1200.webp"
+imageAlt: "A shuttered gift store on a snowy New York street in The Division Resurgence, its sign edited to read Phoenix Gift Store"
 shareTitle: "Stop spending Phoenix Credits like it's Black Friday"
 shareText: "Where free Phoenix Credits come from in Division Resurgence, what a Sealed Cache really costs, and the one rule that keeps your stash from vanishing."
 faqs:

@@ -1,33 +1,25 @@
 # Post images still to replace
 
-Site rule (CLAUDE.md): post images are in-game pictures, edits allowed, no purely AI-generated art. This is the list of
-what is still on the site that breaks it, from a look at every featured image on October 29, 2026. Replace an entry with
-a frame from a recording (`research/screenshots/heroes.json`) or an owner screenshot, delete the old file, and remove the
-entry here.
+Site rule (CLAUDE.md): post images are in-game pictures, edits allowed, no purely AI-generated art.
 
-## AI-generated, replace first
+**Status, October 29, 2026: none left.** Every AI-generated or designed image this list used to name has been replaced
+with a frame from our recordings (`research/screenshots/heroes.json` has the recording, second, crop and edits for each)
+and the old files are deleted. If an AI image turns up again, add it here with the post that uses it.
 
-| Image (in `public/images/`) | Used by | Note |
-|---|---|---|
-| `builds/milkshake-machine-hero.jpg` | builds/milkshake-machine-strawberry-milkshake-lmg-build | A real person's likeness holding the LMG. Highest priority. An in-game shot of the Strawberry Milkshake fits. |
-| `news/community-sentiment-pc.jpg`, `.webp` | news/community-sentiment-phase-2, news/steam-reviews-mixed-launch | Photoreal kid at a PC. |
-| `news/division-resurgence-phase-2-pc-era-hero.webp` | news/pc-early-access-launch | AI gaming desk. |
-| `news/division-resurgence-reddit-highlights-july-2-2026-hero.webp` | news/reddit-weekly-highlights-july-2 | |
-| `guides/division-resurgence-error-6000010-fix-guide-hero.jpg` | guides/division-resurgence-error-6000010 | |
-| `guides/division-resurgence-error-271581191-fix-guide-hero.jpg` | guides/division-resurgence-error-271581191 | An in-game error dialog screenshot would be ideal. |
-| `news/division-resurgence-double-xp-weekend-june-2026.webp` | news/division-resurgence-double-xp-weekend-june-2026 | |
-| `patch-notes/division-resurgence-patch-1-1-2-hero.jpg` | patch-notes/patch-1-1-2 | |
-| `patch-notes/division-resurgence-patch-1-2-1-notes-hero.webp` | patch-notes/patch-1-2-1, news/division-resurgence-news-may-20-2026 | Looks AI-made (candy "Patch Notes" sign). |
-| `april-dev-stream.jpg` | news/april-developer-stream-summary | |
-| `guides/division-resurgence-phoenix-credits-guide-hero.webp` | guides/division-resurgence-phoenix-credits-guide | AI street with a title. |
-| `best-pve-dps-builds-division-resurgence.png`, `.webp` | og image of /tier-list/ and the class hubs (src/pages) | |
-| `404-mj.webp` | the 404 page | Low priority. |
-
-## Designed graphics (not AI photos, but not in-game either)
-
-`news/division-resurgence-asian-server-maintenance-may-26-2026.jpg`, `patch-notes/division-resurgence-season-1-phase-3-a-new-fire-hero.webp`,
-`news/division-resurgence-trello-known-issues-board.webp` (a screenshot of the Trello board over a scene). Replace when a
-fitting in-game shot turns up.
+| Was | Now |
+|---|---|
+| Milkshake Machine (a real person's likeness holding the LMG) | `builds/division-resurgence-milkshake-machine-strawberry-milkshake-card` |
+| Community sentiment / Steam reviews (photoreal kid at a PC) | `news/division-resurgence-community-feedback-base-cafe`, `news/division-resurgence-steam-launch-reviews-cavern-talk` |
+| PC early access (AI gaming desk) | `news/division-resurgence-pc-launch-tech-wing` |
+| Reddit highlights July 2 | `news/division-resurgence-reddit-highlights-july-2-notice-board` |
+| Error 6000010, error 271581191 | `guides/division-resurgence-error-6000010-times-square`, `guides/division-resurgence-error-271581191-tech-lab` |
+| Double XP weekend | `news/division-resurgence-double-xp-weekend-street-fight` |
+| Patch 1.1.2, Patch 1.2.1 (and the May 20 news post) | `patch-notes/division-resurgence-patch-1-1-2-mess-hall`, `patch-notes/division-resurgence-patch-1-2-1-clinic`, `news/division-resurgence-patch-1-2-1-news-strawberry-milkshake` |
+| April developer stream | `news/division-resurgence-april-developer-stream-movie-night` |
+| Phoenix Credits guide (AI street) | `guides/division-resurgence-phoenix-credits-gift-store` (sign text swapped) |
+| Best PvE DPS builds (also the /tier-list/ and class hub share image) | `guides/division-resurgence-best-pve-dps-builds-damage-numbers`; the share image is `site/division-resurgence-build-tier-list-firefight` |
+| 404 page (MJ moonwalk) | `site/division-resurgence-404-fast-travel-prompt` |
+| Designed graphics: Asian server maintenance, Season 1 Phase 3 "A New Fire", Trello known issues board | `news/division-resurgence-asian-server-maintenance-bunks`, `patch-notes/division-resurgence-season-1-phase-3-a-new-fire-backpack`, `news/division-resurgence-known-issues-board-base-whiteboard` |
 
 ## Owner OK'd, but don't reuse
 

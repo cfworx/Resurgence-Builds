@@ -3,8 +3,8 @@ title: "Known Issues Trello Board Breakdown"
 publishDate: "2026-06-04"
 updatedDate: 2026-10-24
 author: "RapidF5"
-featuredImage: "/images/news/division-resurgence-trello-known-issues-board.webp"
-imageAlt: "The Division Resurgence Known Issues Trello board showing six columns: Reported, Investigating, In Progress, Fix Ready, Fix Live, and Backlog with all active bug cards"
+featuredImage: "/images/news/division-resurgence-known-issues-board-base-whiteboard-1200.webp"
+imageAlt: "A Dark Zone map drawn on a whiteboard in the Base of Operations in The Division Resurgence, with the title Known Issues"
 description: "Division Resurgence public Trello board breakdown: every known bug, fix timeline, and what the dev team is actively working on."
 tags: ["News", "Known Issues", "Bugs", "Patch Notes", "Trello", "Community", "Lady Death", "Strawberry Milkshake", "Brain over Brawn", "Phase 3"]
 shareTitle: "Every bug on the board, decoded"

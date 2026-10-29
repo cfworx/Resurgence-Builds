@@ -5,8 +5,8 @@ patchDate: 2026-10-14
 updatedDate: 2026-10-28
 author: "RapidF5"
 summary: "Division Resurgence October 2026 hotfixes: revive fix in No Respawn Zones, stuck heart icons fixed, and Heavy Weight nerfed from 25% to 5%."
-featuredImage: "/images/patch-notes/division-resurgence-server-hotfix-june-26-2026-hero.webp"
-imageAlt: "A Division agent walking down a burning New York street under a Hot Fix Incoming banner"
+featuredImage: "/images/patch-notes/division-resurgence-october-2026-hotfixes-police-car-1200.webp"
+imageAlt: "An agent taking cover behind a crate next to a police car in a snowy square in The Division Resurgence, with the title October Hotfixes"
 shareTitle: "Heavy Weight got the memo"
 shareText: "Revives work in No Respawn Zones again, the floating hearts are gone, and Heavy Weight dropped from 25% to 5% of Max Health. Here's October in one page."
 faqs:

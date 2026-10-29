@@ -181,7 +181,7 @@ If you want to push the Skill Crit Damage ceiling instead of the Skill Crit Chan
 - **In Sync:** Weapon Hits grant +9% Skill Damage, Skill Hits grant +9% Weapon Damage. Doubled when both are active.
 - **Swift Taunt:** Hitting 3 enemies within 5 seconds taunts nearby enemies and grants Extra Health equal to 25% Max Health.
 
-Tampishach recommends hunting for **Torrential Downpour II** or **In Sync II** as upgrades.
+Tampishach recommends hunting for **Torrential Downpour II** or **In Sync II** as upgrades. On the Copperhead itself only In Sync is possible: the game's Build-Making Database doesn't list Torrential Downpour for it (talent Source lists recorded October 29, 2026). Torrential Downpour belongs on the MPX, where he already runs it.
 
 **Weapon attributes:** Skill Critical Damage +19.55%, Armor +19.94%.
 
@@ -207,7 +207,7 @@ Both guns should run **Engineering-stacked mods** in every slot. These two are p
 |---|---|
 | 4pc Long-term Effect gear | Skill Critical Chance, Skill Critical Damage, Engineering modules |
 | 2pc Jackpot gear | Skill Critical Damage, Signature Ability Charge Efficiency |
-| Copperhead (Primary SMG) | In Sync or Torrential Downpour II, Skill Critical Damage, Armor |
+| Copperhead (Primary SMG) | In Sync (II if you can find it), Skill Critical Damage, Armor |
 | MPX (Secondary SMG) | Torrential Downpour II, Rapid Charge, Skill Multi-Shot Chance |
 | Brains Over Brawn OS Protocol | Max to Level 50 for +21.60% Skill Crit Chance; talent upgrades from duplicates take the hit damage from 24% to 48% Engineering |
 | Body Armor talent | Injured Concealment (or Rank 2 for +25% Damage) |

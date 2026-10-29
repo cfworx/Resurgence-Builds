@@ -5,6 +5,8 @@ updatedDate: 2026-10-29
 author: "RapidF5"
 tags: ["News", "Community", "Bugs", "Season 2"]
 description: "Ubisoft's bug reporter lists Division Resurgence inventory expansion (TDR-537) as Planned, no date yet. Plus 34.5M dismantles and inventory tips."
+imageAlt: "Storage bins and shelves by the shooting range door in The Division Resurgence's Base of Operations, with the title Inventory Expansion"
+featuredImage: "/images/news/division-resurgence-inventory-expansion-storage-bins-1200.webp"
 shareTitle: "More inventory space is Planned"
 shareText: "Expand Inventory Capacity is now Planned on Ubisoft's bug reporter. There's no date yet, so here is how to manage your backpack until then."
 faqs:

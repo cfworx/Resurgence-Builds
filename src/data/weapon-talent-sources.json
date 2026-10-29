@@ -1,0 +1,10129 @@
+{
+ "checked": "2026-10-29",
+ "talents": {
+  "tactical-targeting": {
+   "name": "Tactical Targeting",
+   "id": "wt-62",
+   "classOrder": [
+    "LMG",
+    "Shotgun",
+    "Assault Rifle",
+    "Marksman Rifle",
+    "SMG",
+    "Rifle"
+   ],
+   "weapons": [
+    {
+     "name": "Black Market M60 E6",
+     "slug": "black-market-m60-e6",
+     "class": "LMG",
+     "tier": "T1"
+    },
+    {
+     "name": "UMAX100",
+     "slug": "umax100",
+     "class": "LMG",
+     "tier": "T1"
+    },
+    {
+     "name": "Military L86 LSW",
+     "slug": "military-l86-lsw",
+     "class": "LMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Lewis Gun",
+     "slug": "lewis-gun",
+     "class": "LMG",
+     "tier": "T0"
+    },
+    {
+     "name": "KSG",
+     "slug": "ksg",
+     "class": "Shotgun",
+     "tier": "T1"
+    },
+    {
+     "name": "SASG-12",
+     "slug": "sasg-12",
+     "class": "Shotgun",
+     "tier": "T0"
+    },
+    {
+     "name": "ACS-12",
+     "slug": "acs-12",
+     "class": "Shotgun",
+     "tier": "T0"
+    },
+    {
+     "name": "Police M4",
+     "slug": "police-m4",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "M8A1",
+     "slug": "m8a1",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Type 81",
+     "slug": "type-81",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Mk16",
+     "slug": "mk16",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "G36-C",
+     "slug": "g36-c",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "Surplus SVD",
+     "slug": "surplus-svd",
+     "class": "Marksman Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Tactical .308",
+     "slug": "tactical-308",
+     "class": "Marksman Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "M700",
+     "slug": "m700",
+     "class": "Marksman Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "Classic M44",
+     "slug": "classic-m44",
+     "class": "Marksman Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "MP7",
+     "slug": "mp7",
+     "class": "SMG",
+     "tier": "T2"
+    },
+    {
+     "name": "PPSH-41",
+     "slug": "ppsh-41",
+     "class": "SMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Copperhead",
+     "slug": "copperhead",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "Police T821",
+     "slug": "police-t821",
+     "class": "SMG",
+     "tier": "T0"
+    },
+    {
+     "name": "FG 42",
+     "slug": "fg-42",
+     "class": "Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "ACE 52",
+     "slug": "ace-52",
+     "class": "Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "M-16",
+     "slug": "m-16",
+     "class": "Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "G3",
+     "slug": "g3",
+     "class": "Rifle",
+     "tier": "T1"
+    }
+   ]
+  },
+  "spirited": {
+   "name": "Spirited",
+   "id": "wt-50",
+   "classOrder": [
+    "SMG",
+    "LMG",
+    "Assault Rifle",
+    "Rifle",
+    "Marksman Rifle",
+    "Shotgun"
+   ],
+   "weapons": [
+    {
+     "name": "MP7",
+     "slug": "mp7",
+     "class": "SMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Enhanced AUG A3P",
+     "slug": "enhanced-aug-a3p",
+     "class": "SMG",
+     "tier": "T2"
+    },
+    {
+     "name": "AUG A3 Para XS",
+     "slug": "aug-a3-para-xs",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "Copperhead",
+     "slug": "copperhead",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "Converted SMG-9",
+     "slug": "converted-smg-9",
+     "class": "SMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Military MK46",
+     "slug": "military-mk46",
+     "class": "LMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Black Market RPK-74 E",
+     "slug": "black-market-rpk-74-e",
+     "class": "LMG",
+     "tier": "T1"
+    },
+    {
+     "name": "Classic M60",
+     "slug": "classic-m60",
+     "class": "LMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Lewis Gun",
+     "slug": "lewis-gun",
+     "class": "LMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Black Market AK-74",
+     "slug": "black-market-ak-74",
+     "class": "Assault Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Enhanced ACR-E",
+     "slug": "enhanced-acr-e",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Type 81",
+     "slug": "type-81",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "ACR",
+     "slug": "acr",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "G36-C",
+     "slug": "g36-c",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "M-16",
+     "slug": "m-16",
+     "class": "Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Classic M1A",
+     "slug": "classic-m1a",
+     "class": "Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "1886",
+     "slug": "1886",
+     "class": "Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "Gewehr 43",
+     "slug": "gewehr-43",
+     "class": "Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "DSR-1",
+     "slug": "dsr-1",
+     "class": "Marksman Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Paratrooper SVD",
+     "slug": "paratrooper-svd",
+     "class": "Marksman Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Tactical .308",
+     "slug": "tactical-308",
+     "class": "Marksman Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Classic M44",
+     "slug": "classic-m44",
+     "class": "Marksman Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "M12",
+     "slug": "m12",
+     "class": "Shotgun",
+     "tier": "T2"
+    },
+    {
+     "name": "Tavor TS12",
+     "slug": "tavor-ts12",
+     "class": "Shotgun",
+     "tier": "T1"
+    }
+   ]
+  },
+  "torrential-downpour": {
+   "name": "Torrential Downpour",
+   "id": "wt-66",
+   "classOrder": [
+    "SMG",
+    "LMG",
+    "Assault Rifle"
+   ],
+   "weapons": [
+    {
+     "name": "First Wave Vector 45 ACP",
+     "slug": "first-wave-vector-45-acp",
+     "class": "SMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Modified USC",
+     "slug": "modified-usc",
+     "class": "SMG",
+     "tier": "T2"
+    },
+    {
+     "name": "AUG A3 Para XS",
+     "slug": "aug-a3-para-xs",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "P90",
+     "slug": "p90",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "MP40",
+     "slug": "mp40",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "Vector 45 ACP",
+     "slug": "vector-45-acp",
+     "class": "SMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Converted SMG-9",
+     "slug": "converted-smg-9",
+     "class": "SMG",
+     "tier": "T0"
+    },
+    {
+     "name": "MPX",
+     "slug": "mpx",
+     "class": "SMG",
+     "tier": "T0"
+    },
+    {
+     "name": "PKM",
+     "slug": "pkm",
+     "class": "LMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Black Market RPK-74 E",
+     "slug": "black-market-rpk-74-e",
+     "class": "LMG",
+     "tier": "T1"
+    },
+    {
+     "name": "UMAX100",
+     "slug": "umax100",
+     "class": "LMG",
+     "tier": "T1"
+    },
+    {
+     "name": "MG5",
+     "slug": "mg5",
+     "class": "LMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Military L86 LSW",
+     "slug": "military-l86-lsw",
+     "class": "LMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Police M4",
+     "slug": "police-m4",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Enhanced ACR-E",
+     "slug": "enhanced-acr-e",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "M8A1",
+     "slug": "m8a1",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Mk16",
+     "slug": "mk16",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    }
+   ]
+  },
+  "head-collection": {
+   "name": "Head Collection",
+   "id": "wt-21",
+   "classOrder": [
+    "Marksman Rifle",
+    "Shotgun",
+    "Rifle"
+   ],
+   "weapons": [
+    {
+     "name": "Surplus SVD",
+     "slug": "surplus-svd",
+     "class": "Marksman Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "G28",
+     "slug": "g28",
+     "class": "Marksman Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "MK 20 SSR",
+     "slug": "mk-20-ssr",
+     "class": "Marksman Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "SG16-12G",
+     "slug": "sg16-12g",
+     "class": "Shotgun",
+     "tier": "T2"
+    },
+    {
+     "name": "KSG",
+     "slug": "ksg",
+     "class": "Shotgun",
+     "tier": "T1"
+    },
+    {
+     "name": "RU12SG",
+     "slug": "ru12sg",
+     "class": "Shotgun",
+     "tier": "T1"
+    },
+    {
+     "name": "Super 90",
+     "slug": "super-90",
+     "class": "Shotgun",
+     "tier": "T0"
+    },
+    {
+     "name": "SASG-12",
+     "slug": "sasg-12",
+     "class": "Shotgun",
+     "tier": "T0"
+    },
+    {
+     "name": "FG 42",
+     "slug": "fg-42",
+     "class": "Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "G3",
+     "slug": "g3",
+     "class": "Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Gewehr 43",
+     "slug": "gewehr-43",
+     "class": "Rifle",
+     "tier": "T0"
+    }
+   ]
+  },
+  "adaptation": {
+   "name": "Adaptation",
+   "id": "wt-1",
+   "classOrder": [
+    "SMG",
+    "LMG",
+    "Assault Rifle",
+    "Marksman Rifle",
+    "Rifle",
+    "Shotgun"
+   ],
+   "weapons": [
+    {
+     "name": "MP7",
+     "slug": "mp7",
+     "class": "SMG",
+     "tier": "T2"
+    },
+    {
+     "name": "First Wave Vector 45 ACP",
+     "slug": "first-wave-vector-45-acp",
+     "class": "SMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Converted SMG-9 A2",
+     "slug": "converted-smg-9-a2",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "PP-19",
+     "slug": "pp-19",
+     "class": "SMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Naval MP5",
+     "slug": "naval-mp5",
+     "class": "SMG",
+     "tier": "T0"
+    },
+    {
+     "name": "M249",
+     "slug": "m249",
+     "class": "LMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Stoner LAMG",
+     "slug": "stoner-lamg",
+     "class": "LMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Military MK46",
+     "slug": "military-mk46",
+     "class": "LMG",
+     "tier": "T2"
+    },
+    {
+     "name": "NEGEV",
+     "slug": "negev",
+     "class": "LMG",
+     "tier": "T1"
+    },
+    {
+     "name": "UMAX100",
+     "slug": "umax100",
+     "class": "LMG",
+     "tier": "T1"
+    },
+    {
+     "name": "Classic M60",
+     "slug": "classic-m60",
+     "class": "LMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Military L86 LSW",
+     "slug": "military-l86-lsw",
+     "class": "LMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Custom 416 G3",
+     "slug": "custom-416-g3",
+     "class": "Assault Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Black Market AK-74",
+     "slug": "black-market-ak-74",
+     "class": "Assault Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Lightweight M4",
+     "slug": "lightweight-m4",
+     "class": "Assault Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "StG 44",
+     "slug": "stg-44",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "ACR",
+     "slug": "acr",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "Mk16",
+     "slug": "mk16",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "DSR-1",
+     "slug": "dsr-1",
+     "class": "Marksman Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Hunting M44",
+     "slug": "hunting-m44",
+     "class": "Marksman Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Paratrooper SVD",
+     "slug": "paratrooper-svd",
+     "class": "Marksman Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "MK 20 SSR",
+     "slug": "mk-20-ssr",
+     "class": "Marksman Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "M1",
+     "slug": "m1",
+     "class": "Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "ACE 52",
+     "slug": "ace-52",
+     "class": "Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Urban MDR",
+     "slug": "urban-mdr",
+     "class": "Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Police Mk17",
+     "slug": "police-mk17",
+     "class": "Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "Double Barrel Shotgun",
+     "slug": "double-barrel-shotgun",
+     "class": "Shotgun",
+     "tier": "T2"
+    },
+    {
+     "name": "RU12SG",
+     "slug": "ru12sg",
+     "class": "Shotgun",
+     "tier": "T1"
+    }
+   ]
+  },
+  "long-distance-marking": {
+   "name": "Long-Distance Marking",
+   "id": "wt-27",
+   "classOrder": [
+    "Marksman Rifle",
+    "Rifle"
+   ],
+   "weapons": [
+    {
+     "name": "M700 Carbon",
+     "slug": "m700-carbon",
+     "class": "Marksman Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "M700",
+     "slug": "m700",
+     "class": "Marksman Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "UIC15 MOD2",
+     "slug": "uic15-mod2",
+     "class": "Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Avtomat",
+     "slug": "avtomat",
+     "class": "Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "G3",
+     "slug": "g3",
+     "class": "Rifle",
+     "tier": "T1"
+    }
+   ]
+  },
+  "concentrated-fire": {
+   "name": "Concentrated Fire",
+   "id": "wt-13",
+   "classOrder": [
+    "LMG",
+    "Assault Rifle"
+   ],
+   "weapons": [
+    {
+     "name": "M249",
+     "slug": "m249",
+     "class": "LMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Classic M60",
+     "slug": "classic-m60",
+     "class": "LMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Classic RPK 74",
+     "slug": "classic-rpk-74",
+     "class": "LMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Custom 416 G3",
+     "slug": "custom-416-g3",
+     "class": "Assault Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Military 416",
+     "slug": "military-416",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "ACR",
+     "slug": "acr",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    }
+   ]
+  },
+  "neverending": {
+   "name": "Neverending",
+   "id": "wt-32",
+   "classOrder": [
+    "LMG",
+    "Assault Rifle",
+    "SMG"
+   ],
+   "weapons": [
+    {
+     "name": "Military MK46",
+     "slug": "military-mk46",
+     "class": "LMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Black Market M60 E6",
+     "slug": "black-market-m60-e6",
+     "class": "LMG",
+     "tier": "T1"
+    },
+    {
+     "name": "RPD",
+     "slug": "rpd",
+     "class": "LMG",
+     "tier": "T1"
+    },
+    {
+     "name": "Classic M60",
+     "slug": "classic-m60",
+     "class": "LMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Lewis Gun",
+     "slug": "lewis-gun",
+     "class": "LMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Black Market AK-74",
+     "slug": "black-market-ak-74",
+     "class": "Assault Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Classic AK-47",
+     "slug": "classic-ak-47",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "ACR",
+     "slug": "acr",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "G36-C",
+     "slug": "g36-c",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "First Wave Vector 45 ACP",
+     "slug": "first-wave-vector-45-acp",
+     "class": "SMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Enhanced AUG A3P",
+     "slug": "enhanced-aug-a3p",
+     "class": "SMG",
+     "tier": "T2"
+    },
+    {
+     "name": "MPX",
+     "slug": "mpx",
+     "class": "SMG",
+     "tier": "T0"
+    }
+   ]
+  },
+  "steady-handed": {
+   "name": "Steady Handed",
+   "id": "wt-52",
+   "classOrder": [
+    "SMG",
+    "LMG",
+    "Assault Rifle"
+   ],
+   "weapons": [
+    {
+     "name": "MP7",
+     "slug": "mp7",
+     "class": "SMG",
+     "tier": "T2"
+    },
+    {
+     "name": "First Wave Vector 45 ACP",
+     "slug": "first-wave-vector-45-acp",
+     "class": "SMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Enhanced AUG A3P",
+     "slug": "enhanced-aug-a3p",
+     "class": "SMG",
+     "tier": "T2"
+    },
+    {
+     "name": "P90",
+     "slug": "p90",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "Copperhead",
+     "slug": "copperhead",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "Vector 45 ACP",
+     "slug": "vector-45-acp",
+     "class": "SMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Converted SMG-9",
+     "slug": "converted-smg-9",
+     "class": "SMG",
+     "tier": "T0"
+    },
+    {
+     "name": "MPX",
+     "slug": "mpx",
+     "class": "SMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Military M60 E4",
+     "slug": "military-m60-e4",
+     "class": "LMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Stoner LAMG",
+     "slug": "stoner-lamg",
+     "class": "LMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Military MK46",
+     "slug": "military-mk46",
+     "class": "LMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Black Market M60 E6",
+     "slug": "black-market-m60-e6",
+     "class": "LMG",
+     "tier": "T1"
+    },
+    {
+     "name": "Black Market RPK-74 E",
+     "slug": "black-market-rpk-74-e",
+     "class": "LMG",
+     "tier": "T1"
+    },
+    {
+     "name": "NEGEV",
+     "slug": "negev",
+     "class": "LMG",
+     "tier": "T1"
+    },
+    {
+     "name": "UMAX100",
+     "slug": "umax100",
+     "class": "LMG",
+     "tier": "T1"
+    },
+    {
+     "name": "RPD",
+     "slug": "rpd",
+     "class": "LMG",
+     "tier": "T1"
+    },
+    {
+     "name": "Classic RPK 74",
+     "slug": "classic-rpk-74",
+     "class": "LMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Black Market AK-74",
+     "slug": "black-market-ak-74",
+     "class": "Assault Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "FAMAS",
+     "slug": "famas",
+     "class": "Assault Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Lightweight M4",
+     "slug": "lightweight-m4",
+     "class": "Assault Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "M8A1",
+     "slug": "m8a1",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Type 81",
+     "slug": "type-81",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Classic AK-47",
+     "slug": "classic-ak-47",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "Military 416",
+     "slug": "military-416",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "Mk16",
+     "slug": "mk16",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    }
+   ]
+  },
+  "pummel": {
+   "name": "Pummel",
+   "id": "wt-41",
+   "classOrder": [
+    "Rifle",
+    "Marksman Rifle",
+    "Shotgun"
+   ],
+   "weapons": [
+    {
+     "name": "UIC15 MOD2",
+     "slug": "uic15-mod2",
+     "class": "Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Avtomat",
+     "slug": "avtomat",
+     "class": "Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Police Mk17",
+     "slug": "police-mk17",
+     "class": "Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "Hunting M44",
+     "slug": "hunting-m44",
+     "class": "Marksman Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "G28",
+     "slug": "g28",
+     "class": "Marksman Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "M700",
+     "slug": "m700",
+     "class": "Marksman Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "SG16-12G",
+     "slug": "sg16-12g",
+     "class": "Shotgun",
+     "tier": "T2"
+    },
+    {
+     "name": "RU12SG",
+     "slug": "ru12sg",
+     "class": "Shotgun",
+     "tier": "T1"
+    },
+    {
+     "name": "M870",
+     "slug": "m870",
+     "class": "Shotgun",
+     "tier": "T0"
+    }
+   ]
+  },
+  "bloodlust": {
+   "name": "Bloodlust",
+   "id": "wt-8",
+   "classOrder": [
+    "Marksman Rifle",
+    "Assault Rifle",
+    "Rifle",
+    "Shotgun"
+   ],
+   "weapons": [
+    {
+     "name": "M700 Carbon",
+     "slug": "m700-carbon",
+     "class": "Marksman Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "DSR-1",
+     "slug": "dsr-1",
+     "class": "Marksman Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Converted SRS",
+     "slug": "converted-srs",
+     "class": "Marksman Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "SRS-A1",
+     "slug": "srs-a1",
+     "class": "Marksman Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "Black Market AK-74",
+     "slug": "black-market-ak-74",
+     "class": "Assault Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Military SA-58",
+     "slug": "military-sa-58",
+     "class": "Assault Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "M8A1",
+     "slug": "m8a1",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "StG 44",
+     "slug": "stg-44",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Mk16",
+     "slug": "mk16",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "M1",
+     "slug": "m1",
+     "class": "Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "G3",
+     "slug": "g3",
+     "class": "Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "1886",
+     "slug": "1886",
+     "class": "Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "M12",
+     "slug": "m12",
+     "class": "Shotgun",
+     "tier": "T2"
+    },
+    {
+     "name": "RMB-93",
+     "slug": "rmb-93",
+     "class": "Shotgun",
+     "tier": "T2"
+    },
+    {
+     "name": "SPAS-12",
+     "slug": "spas-12",
+     "class": "Shotgun",
+     "tier": "T1"
+    }
+   ]
+  },
+  "strained": {
+   "name": "Strained",
+   "id": "wt-57",
+   "classOrder": [
+    "SMG",
+    "LMG",
+    "Assault Rifle"
+   ],
+   "weapons": [
+    {
+     "name": "First Wave Vector 45 ACP",
+     "slug": "first-wave-vector-45-acp",
+     "class": "SMG",
+     "tier": "T2"
+    },
+    {
+     "name": "AUG A3 Para XS",
+     "slug": "aug-a3-para-xs",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "Converted SMG-9 A2",
+     "slug": "converted-smg-9-a2",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "Police UMP-45",
+     "slug": "police-ump-45",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "Vector 45 ACP",
+     "slug": "vector-45-acp",
+     "class": "SMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Converted SMG-9",
+     "slug": "converted-smg-9",
+     "class": "SMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Military MK46",
+     "slug": "military-mk46",
+     "class": "LMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Black Market M60 E6",
+     "slug": "black-market-m60-e6",
+     "class": "LMG",
+     "tier": "T1"
+    },
+    {
+     "name": "RPD",
+     "slug": "rpd",
+     "class": "LMG",
+     "tier": "T1"
+    },
+    {
+     "name": "Classic M60",
+     "slug": "classic-m60",
+     "class": "LMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Black Market AK-74",
+     "slug": "black-market-ak-74",
+     "class": "Assault Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Enhanced ACR-E",
+     "slug": "enhanced-acr-e",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "AN-94",
+     "slug": "an-94",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "ACR",
+     "slug": "acr",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    }
+   ]
+  },
+  "killer": {
+   "name": "Killer",
+   "id": "wt-25",
+   "classOrder": [
+    "Assault Rifle",
+    "Marksman Rifle",
+    "Rifle",
+    "Shotgun"
+   ],
+   "weapons": [
+    {
+     "name": "Black Market AK-74",
+     "slug": "black-market-ak-74",
+     "class": "Assault Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "FAMAS",
+     "slug": "famas",
+     "class": "Assault Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Enhanced ACR-E",
+     "slug": "enhanced-acr-e",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Type 81",
+     "slug": "type-81",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Military 416",
+     "slug": "military-416",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "DSR-1",
+     "slug": "dsr-1",
+     "class": "Marksman Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Surplus SVD",
+     "slug": "surplus-svd",
+     "class": "Marksman Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "MK 20 SSR",
+     "slug": "mk-20-ssr",
+     "class": "Marksman Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "Urban MDR",
+     "slug": "urban-mdr",
+     "class": "Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Avtomat",
+     "slug": "avtomat",
+     "class": "Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Classic M1A",
+     "slug": "classic-m1a",
+     "class": "Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "RMB-93",
+     "slug": "rmb-93",
+     "class": "Shotgun",
+     "tier": "T2"
+    },
+    {
+     "name": "Super 90",
+     "slug": "super-90",
+     "class": "Shotgun",
+     "tier": "T0"
+    },
+    {
+     "name": "SASG-12",
+     "slug": "sasg-12",
+     "class": "Shotgun",
+     "tier": "T0"
+    },
+    {
+     "name": "ACS-12",
+     "slug": "acs-12",
+     "class": "Shotgun",
+     "tier": "T0"
+    }
+   ]
+  },
+  "target-acquisition": {
+   "name": "Target Acquisition",
+   "id": "wt-64",
+   "classOrder": [
+    "SMG",
+    "LMG",
+    "Assault Rifle",
+    "Marksman Rifle",
+    "Rifle",
+    "Shotgun"
+   ],
+   "weapons": [
+    {
+     "name": "First Wave Vector 45 ACP",
+     "slug": "first-wave-vector-45-acp",
+     "class": "SMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Enhanced AUG A3P",
+     "slug": "enhanced-aug-a3p",
+     "class": "SMG",
+     "tier": "T2"
+    },
+    {
+     "name": "PPSH-41",
+     "slug": "ppsh-41",
+     "class": "SMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Converted SMG-9 A2",
+     "slug": "converted-smg-9-a2",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "P90",
+     "slug": "p90",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "Police UMP-45",
+     "slug": "police-ump-45",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "Copperhead",
+     "slug": "copperhead",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "Vector 45 ACP",
+     "slug": "vector-45-acp",
+     "class": "SMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Converted SMG-9",
+     "slug": "converted-smg-9",
+     "class": "SMG",
+     "tier": "T0"
+    },
+    {
+     "name": "MPX",
+     "slug": "mpx",
+     "class": "SMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Naval MP5",
+     "slug": "naval-mp5",
+     "class": "SMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Military M60 E4",
+     "slug": "military-m60-e4",
+     "class": "LMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Military MK46",
+     "slug": "military-mk46",
+     "class": "LMG",
+     "tier": "T2"
+    },
+    {
+     "name": "PKM",
+     "slug": "pkm",
+     "class": "LMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Black Market RPK-74 E",
+     "slug": "black-market-rpk-74-e",
+     "class": "LMG",
+     "tier": "T1"
+    },
+    {
+     "name": "NEGEV",
+     "slug": "negev",
+     "class": "LMG",
+     "tier": "T1"
+    },
+    {
+     "name": "UMAX100",
+     "slug": "umax100",
+     "class": "LMG",
+     "tier": "T1"
+    },
+    {
+     "name": "RPD",
+     "slug": "rpd",
+     "class": "LMG",
+     "tier": "T1"
+    },
+    {
+     "name": "Classic M60",
+     "slug": "classic-m60",
+     "class": "LMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Military L86 LSW",
+     "slug": "military-l86-lsw",
+     "class": "LMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Classic RPK 74",
+     "slug": "classic-rpk-74",
+     "class": "LMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Black Market AK-74",
+     "slug": "black-market-ak-74",
+     "class": "Assault Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "FAMAS",
+     "slug": "famas",
+     "class": "Assault Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "AN-94",
+     "slug": "an-94",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Type 81",
+     "slug": "type-81",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "ACR",
+     "slug": "acr",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "DSR-1",
+     "slug": "dsr-1",
+     "class": "Marksman Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Surplus SVD",
+     "slug": "surplus-svd",
+     "class": "Marksman Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Converted SRS",
+     "slug": "converted-srs",
+     "class": "Marksman Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Paratrooper SVD",
+     "slug": "paratrooper-svd",
+     "class": "Marksman Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "SRS-A1",
+     "slug": "srs-a1",
+     "class": "Marksman Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "Classic M44",
+     "slug": "classic-m44",
+     "class": "Marksman Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "M1",
+     "slug": "m1",
+     "class": "Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "FG 42",
+     "slug": "fg-42",
+     "class": "Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "M-16",
+     "slug": "m-16",
+     "class": "Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "G3",
+     "slug": "g3",
+     "class": "Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Classic M1A",
+     "slug": "classic-m1a",
+     "class": "Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "Police Mk17",
+     "slug": "police-mk17",
+     "class": "Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "Gewehr 43",
+     "slug": "gewehr-43",
+     "class": "Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "Double Barrel Shotgun",
+     "slug": "double-barrel-shotgun",
+     "class": "Shotgun",
+     "tier": "T2"
+    },
+    {
+     "name": "SPAS-12",
+     "slug": "spas-12",
+     "class": "Shotgun",
+     "tier": "T1"
+    },
+    {
+     "name": "RU12SG",
+     "slug": "ru12sg",
+     "class": "Shotgun",
+     "tier": "T1"
+    },
+    {
+     "name": "Tavor TS12",
+     "slug": "tavor-ts12",
+     "class": "Shotgun",
+     "tier": "T1"
+    },
+    {
+     "name": "Super 90",
+     "slug": "super-90",
+     "class": "Shotgun",
+     "tier": "T0"
+    }
+   ]
+  },
+  "breadbasket": {
+   "name": "Breadbasket",
+   "id": "wt-9",
+   "classOrder": [
+    "Marksman Rifle",
+    "Rifle",
+    "Shotgun"
+   ],
+   "weapons": [
+    {
+     "name": "Converted SRS",
+     "slug": "converted-srs",
+     "class": "Marksman Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "SRS-A1",
+     "slug": "srs-a1",
+     "class": "Marksman Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "M700",
+     "slug": "m700",
+     "class": "Marksman Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "FG 42",
+     "slug": "fg-42",
+     "class": "Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "G3",
+     "slug": "g3",
+     "class": "Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Classic M1A",
+     "slug": "classic-m1a",
+     "class": "Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "KSG",
+     "slug": "ksg",
+     "class": "Shotgun",
+     "tier": "T1"
+    },
+    {
+     "name": "Super 90",
+     "slug": "super-90",
+     "class": "Shotgun",
+     "tier": "T0"
+    }
+   ]
+  },
+  "predatory-aura": {
+   "name": "Predatory Aura",
+   "id": "wt-39",
+   "classOrder": [
+    "SMG",
+    "Shotgun"
+   ],
+   "weapons": [
+    {
+     "name": "Modified USC",
+     "slug": "modified-usc",
+     "class": "SMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Enhanced AUG A3P",
+     "slug": "enhanced-aug-a3p",
+     "class": "SMG",
+     "tier": "T2"
+    },
+    {
+     "name": "AUG A3 Para XS",
+     "slug": "aug-a3-para-xs",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "MP40",
+     "slug": "mp40",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "Vector 45 ACP",
+     "slug": "vector-45-acp",
+     "class": "SMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Naval MP5",
+     "slug": "naval-mp5",
+     "class": "SMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Double Barrel Shotgun",
+     "slug": "double-barrel-shotgun",
+     "class": "Shotgun",
+     "tier": "T2"
+    },
+    {
+     "name": "Tavor TS12",
+     "slug": "tavor-ts12",
+     "class": "Shotgun",
+     "tier": "T1"
+    },
+    {
+     "name": "M870",
+     "slug": "m870",
+     "class": "Shotgun",
+     "tier": "T0"
+    },
+    {
+     "name": "SASG-12",
+     "slug": "sasg-12",
+     "class": "Shotgun",
+     "tier": "T0"
+    }
+   ]
+  },
+  "in-sync": {
+   "name": "In Sync",
+   "id": "wt-22",
+   "classOrder": [
+    "LMG",
+    "SMG",
+    "Rifle",
+    "Shotgun",
+    "Assault Rifle",
+    "Marksman Rifle"
+   ],
+   "weapons": [
+    {
+     "name": "Stoner LAMG",
+     "slug": "stoner-lamg",
+     "class": "LMG",
+     "tier": "T2"
+    },
+    {
+     "name": "PKM",
+     "slug": "pkm",
+     "class": "LMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Black Market RPK-74 E",
+     "slug": "black-market-rpk-74-e",
+     "class": "LMG",
+     "tier": "T1"
+    },
+    {
+     "name": "NEGEV",
+     "slug": "negev",
+     "class": "LMG",
+     "tier": "T1"
+    },
+    {
+     "name": "MG5",
+     "slug": "mg5",
+     "class": "LMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Classic RPK 74",
+     "slug": "classic-rpk-74",
+     "class": "LMG",
+     "tier": "T0"
+    },
+    {
+     "name": "First Wave Vector 45 ACP",
+     "slug": "first-wave-vector-45-acp",
+     "class": "SMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Modified USC",
+     "slug": "modified-usc",
+     "class": "SMG",
+     "tier": "T2"
+    },
+    {
+     "name": "PPSH-41",
+     "slug": "ppsh-41",
+     "class": "SMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Converted SMG-9 A2",
+     "slug": "converted-smg-9-a2",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "Copperhead",
+     "slug": "copperhead",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "PP-19",
+     "slug": "pp-19",
+     "class": "SMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Police T821",
+     "slug": "police-t821",
+     "class": "SMG",
+     "tier": "T0"
+    },
+    {
+     "name": "MPX",
+     "slug": "mpx",
+     "class": "SMG",
+     "tier": "T0"
+    },
+    {
+     "name": "UIC15 MOD2",
+     "slug": "uic15-mod2",
+     "class": "Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "G3",
+     "slug": "g3",
+     "class": "Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Gewehr 43",
+     "slug": "gewehr-43",
+     "class": "Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "Double Barrel Shotgun",
+     "slug": "double-barrel-shotgun",
+     "class": "Shotgun",
+     "tier": "T2"
+    },
+    {
+     "name": "M12",
+     "slug": "m12",
+     "class": "Shotgun",
+     "tier": "T2"
+    },
+    {
+     "name": "RU12SG",
+     "slug": "ru12sg",
+     "class": "Shotgun",
+     "tier": "T1"
+    },
+    {
+     "name": "M870",
+     "slug": "m870",
+     "class": "Shotgun",
+     "tier": "T0"
+    },
+    {
+     "name": "Lightweight M4",
+     "slug": "lightweight-m4",
+     "class": "Assault Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "StG 44",
+     "slug": "stg-44",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Classic FAL",
+     "slug": "classic-fal",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "Hunting M44",
+     "slug": "hunting-m44",
+     "class": "Marksman Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "L115A3",
+     "slug": "l115a3",
+     "class": "Marksman Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Paratrooper SVD",
+     "slug": "paratrooper-svd",
+     "class": "Marksman Rifle",
+     "tier": "T1"
+    }
+   ]
+  },
+  "multitasking": {
+   "name": "Multitasking",
+   "id": "wt-31",
+   "classOrder": [
+    "LMG",
+    "Assault Rifle",
+    "Marksman Rifle",
+    "Rifle",
+    "Shotgun",
+    "SMG"
+   ],
+   "weapons": [
+    {
+     "name": "M249",
+     "slug": "m249",
+     "class": "LMG",
+     "tier": "T2"
+    },
+    {
+     "name": "PKM",
+     "slug": "pkm",
+     "class": "LMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Black Market M60 E6",
+     "slug": "black-market-m60-e6",
+     "class": "LMG",
+     "tier": "T1"
+    },
+    {
+     "name": "Classic M60",
+     "slug": "classic-m60",
+     "class": "LMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Military L86 LSW",
+     "slug": "military-l86-lsw",
+     "class": "LMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Custom 416 G3",
+     "slug": "custom-416-g3",
+     "class": "Assault Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Military SA-58",
+     "slug": "military-sa-58",
+     "class": "Assault Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Enhanced ACR-E",
+     "slug": "enhanced-acr-e",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "AN-94",
+     "slug": "an-94",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "StG 44",
+     "slug": "stg-44",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "ACR",
+     "slug": "acr",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "M700 Carbon",
+     "slug": "m700-carbon",
+     "class": "Marksman Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Surplus SVD",
+     "slug": "surplus-svd",
+     "class": "Marksman Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Converted SRS",
+     "slug": "converted-srs",
+     "class": "Marksman Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "G28",
+     "slug": "g28",
+     "class": "Marksman Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "MK 20 SSR",
+     "slug": "mk-20-ssr",
+     "class": "Marksman Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "UIC15 MOD2",
+     "slug": "uic15-mod2",
+     "class": "Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "M1",
+     "slug": "m1",
+     "class": "Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Urban MDR",
+     "slug": "urban-mdr",
+     "class": "Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "M-16",
+     "slug": "m-16",
+     "class": "Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Classic M1A",
+     "slug": "classic-m1a",
+     "class": "Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "Police Mk17",
+     "slug": "police-mk17",
+     "class": "Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "SG16-12G",
+     "slug": "sg16-12g",
+     "class": "Shotgun",
+     "tier": "T2"
+    },
+    {
+     "name": "RU12SG",
+     "slug": "ru12sg",
+     "class": "Shotgun",
+     "tier": "T1"
+    },
+    {
+     "name": "Super 90",
+     "slug": "super-90",
+     "class": "Shotgun",
+     "tier": "T0"
+    },
+    {
+     "name": "SASG-12",
+     "slug": "sasg-12",
+     "class": "Shotgun",
+     "tier": "T0"
+    },
+    {
+     "name": "First Wave Vector 45 ACP",
+     "slug": "first-wave-vector-45-acp",
+     "class": "SMG",
+     "tier": "T2"
+    },
+    {
+     "name": "AUG A3 Para XS",
+     "slug": "aug-a3-para-xs",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "Converted SMG-9 A2",
+     "slug": "converted-smg-9-a2",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "Police UMP-45",
+     "slug": "police-ump-45",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "PP-19",
+     "slug": "pp-19",
+     "class": "SMG",
+     "tier": "T0"
+    },
+    {
+     "name": "MPX",
+     "slug": "mpx",
+     "class": "SMG",
+     "tier": "T0"
+    }
+   ]
+  },
+  "multi-pronged-attack": {
+   "name": "Multi-Pronged Attack",
+   "id": "wt-30",
+   "classOrder": [
+    "Assault Rifle",
+    "Marksman Rifle",
+    "Rifle"
+   ],
+   "weapons": [
+    {
+     "name": "Custom 416 G3",
+     "slug": "custom-416-g3",
+     "class": "Assault Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Police M4",
+     "slug": "police-m4",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Enhanced ACR-E",
+     "slug": "enhanced-acr-e",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Classic AK-47",
+     "slug": "classic-ak-47",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "Military 416",
+     "slug": "military-416",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "Classic FAL",
+     "slug": "classic-fal",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "Surplus SVD",
+     "slug": "surplus-svd",
+     "class": "Marksman Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Converted SRS",
+     "slug": "converted-srs",
+     "class": "Marksman Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "L115A3",
+     "slug": "l115a3",
+     "class": "Marksman Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "G28",
+     "slug": "g28",
+     "class": "Marksman Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "SRS-A1",
+     "slug": "srs-a1",
+     "class": "Marksman Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "MK 20 SSR",
+     "slug": "mk-20-ssr",
+     "class": "Marksman Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "UIC15 MOD2",
+     "slug": "uic15-mod2",
+     "class": "Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "G3",
+     "slug": "g3",
+     "class": "Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Classic M1A",
+     "slug": "classic-m1a",
+     "class": "Rifle",
+     "tier": "T0"
+    }
+   ]
+  },
+  "sentinel-aura": {
+   "name": "Sentinel Aura",
+   "id": "wt-45",
+   "classOrder": [
+    "Rifle",
+    "Shotgun",
+    "SMG"
+   ],
+   "weapons": [
+    {
+     "name": "FG 42",
+     "slug": "fg-42",
+     "class": "Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "ACE 52",
+     "slug": "ace-52",
+     "class": "Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Avtomat",
+     "slug": "avtomat",
+     "class": "Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "G3",
+     "slug": "g3",
+     "class": "Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Classic M1A",
+     "slug": "classic-m1a",
+     "class": "Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "1886",
+     "slug": "1886",
+     "class": "Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "RMB-93",
+     "slug": "rmb-93",
+     "class": "Shotgun",
+     "tier": "T2"
+    },
+    {
+     "name": "Tavor TS12",
+     "slug": "tavor-ts12",
+     "class": "Shotgun",
+     "tier": "T1"
+    },
+    {
+     "name": "ACS-12",
+     "slug": "acs-12",
+     "class": "Shotgun",
+     "tier": "T0"
+    },
+    {
+     "name": "Modified USC",
+     "slug": "modified-usc",
+     "class": "SMG",
+     "tier": "T2"
+    },
+    {
+     "name": "PPSH-41",
+     "slug": "ppsh-41",
+     "class": "SMG",
+     "tier": "T2"
+    },
+    {
+     "name": "AUG A3 Para XS",
+     "slug": "aug-a3-para-xs",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "P90",
+     "slug": "p90",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "MP40",
+     "slug": "mp40",
+     "class": "SMG",
+     "tier": "T1"
+    }
+   ]
+  },
+  "thick-skin": {
+   "name": "Thick Skin",
+   "id": "wt-65",
+   "classOrder": [
+    "SMG",
+    "LMG",
+    "Rifle",
+    "Assault Rifle",
+    "Marksman Rifle",
+    "Shotgun"
+   ],
+   "weapons": [
+    {
+     "name": "First Wave Vector 45 ACP",
+     "slug": "first-wave-vector-45-acp",
+     "class": "SMG",
+     "tier": "T2"
+    },
+    {
+     "name": "PPSH-41",
+     "slug": "ppsh-41",
+     "class": "SMG",
+     "tier": "T2"
+    },
+    {
+     "name": "AUG A3 Para XS",
+     "slug": "aug-a3-para-xs",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "Police UMP-45",
+     "slug": "police-ump-45",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "Copperhead",
+     "slug": "copperhead",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "PP-19",
+     "slug": "pp-19",
+     "class": "SMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Converted SMG-9",
+     "slug": "converted-smg-9",
+     "class": "SMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Police T821",
+     "slug": "police-t821",
+     "class": "SMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Military M60 E4",
+     "slug": "military-m60-e4",
+     "class": "LMG",
+     "tier": "T2"
+    },
+    {
+     "name": "UMAX100",
+     "slug": "umax100",
+     "class": "LMG",
+     "tier": "T1"
+    },
+    {
+     "name": "Lewis Gun",
+     "slug": "lewis-gun",
+     "class": "LMG",
+     "tier": "T0"
+    },
+    {
+     "name": "M-16",
+     "slug": "m-16",
+     "class": "Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Avtomat",
+     "slug": "avtomat",
+     "class": "Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Classic M1A",
+     "slug": "classic-m1a",
+     "class": "Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "Police Mk17",
+     "slug": "police-mk17",
+     "class": "Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "FAMAS",
+     "slug": "famas",
+     "class": "Assault Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Police M4",
+     "slug": "police-m4",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Enhanced ACR-E",
+     "slug": "enhanced-acr-e",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "AN-94",
+     "slug": "an-94",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Type 81",
+     "slug": "type-81",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Mk16",
+     "slug": "mk16",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "G36-C",
+     "slug": "g36-c",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "Surplus SVD",
+     "slug": "surplus-svd",
+     "class": "Marksman Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Paratrooper SVD",
+     "slug": "paratrooper-svd",
+     "class": "Marksman Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Tactical .308",
+     "slug": "tactical-308",
+     "class": "Marksman Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Classic M44",
+     "slug": "classic-m44",
+     "class": "Marksman Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "Double Barrel Shotgun",
+     "slug": "double-barrel-shotgun",
+     "class": "Shotgun",
+     "tier": "T2"
+    },
+    {
+     "name": "Tavor TS12",
+     "slug": "tavor-ts12",
+     "class": "Shotgun",
+     "tier": "T1"
+    },
+    {
+     "name": "ACS-12",
+     "slug": "acs-12",
+     "class": "Shotgun",
+     "tier": "T0"
+    }
+   ]
+  },
+  "revitalize": {
+   "name": "Revitalize",
+   "id": "wt-43",
+   "classOrder": [
+    "SMG",
+    "Assault Rifle",
+    "Marksman Rifle",
+    "Shotgun",
+    "LMG",
+    "Rifle"
+   ],
+   "weapons": [
+    {
+     "name": "PPSH-41",
+     "slug": "ppsh-41",
+     "class": "SMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Police UMP-45",
+     "slug": "police-ump-45",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "Copperhead",
+     "slug": "copperhead",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "PP-19",
+     "slug": "pp-19",
+     "class": "SMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Converted SMG-9",
+     "slug": "converted-smg-9",
+     "class": "SMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Naval MP5",
+     "slug": "naval-mp5",
+     "class": "SMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Black Market AK-74",
+     "slug": "black-market-ak-74",
+     "class": "Assault Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Military SA-58",
+     "slug": "military-sa-58",
+     "class": "Assault Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Lightweight M4",
+     "slug": "lightweight-m4",
+     "class": "Assault Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Enhanced ACR-E",
+     "slug": "enhanced-acr-e",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "AN-94",
+     "slug": "an-94",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Type 81",
+     "slug": "type-81",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Classic AK-47",
+     "slug": "classic-ak-47",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "Classic FAL",
+     "slug": "classic-fal",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "M700 Carbon",
+     "slug": "m700-carbon",
+     "class": "Marksman Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "DSR-1",
+     "slug": "dsr-1",
+     "class": "Marksman Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Hunting M44",
+     "slug": "hunting-m44",
+     "class": "Marksman Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Converted SRS",
+     "slug": "converted-srs",
+     "class": "Marksman Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "L115A3",
+     "slug": "l115a3",
+     "class": "Marksman Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Classic M44",
+     "slug": "classic-m44",
+     "class": "Marksman Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "MK 20 SSR",
+     "slug": "mk-20-ssr",
+     "class": "Marksman Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "M12",
+     "slug": "m12",
+     "class": "Shotgun",
+     "tier": "T2"
+    },
+    {
+     "name": "RMB-93",
+     "slug": "rmb-93",
+     "class": "Shotgun",
+     "tier": "T2"
+    },
+    {
+     "name": "RU12SG",
+     "slug": "ru12sg",
+     "class": "Shotgun",
+     "tier": "T1"
+    },
+    {
+     "name": "SASG-12",
+     "slug": "sasg-12",
+     "class": "Shotgun",
+     "tier": "T0"
+    },
+    {
+     "name": "Stoner LAMG",
+     "slug": "stoner-lamg",
+     "class": "LMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Military MK46",
+     "slug": "military-mk46",
+     "class": "LMG",
+     "tier": "T2"
+    },
+    {
+     "name": "PKM",
+     "slug": "pkm",
+     "class": "LMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Black Market RPK-74 E",
+     "slug": "black-market-rpk-74-e",
+     "class": "LMG",
+     "tier": "T1"
+    },
+    {
+     "name": "RPD",
+     "slug": "rpd",
+     "class": "LMG",
+     "tier": "T1"
+    },
+    {
+     "name": "MG5",
+     "slug": "mg5",
+     "class": "LMG",
+     "tier": "T0"
+    },
+    {
+     "name": "FG 42",
+     "slug": "fg-42",
+     "class": "Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "ACE 52",
+     "slug": "ace-52",
+     "class": "Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "M-16",
+     "slug": "m-16",
+     "class": "Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Avtomat",
+     "slug": "avtomat",
+     "class": "Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "1886",
+     "slug": "1886",
+     "class": "Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "Gewehr 43",
+     "slug": "gewehr-43",
+     "class": "Rifle",
+     "tier": "T0"
+    }
+   ]
+  },
+  "in-a-day-s-work": {
+   "name": "In a Day's Work",
+   "id": "wt-23",
+   "classOrder": [
+    "Assault Rifle",
+    "Marksman Rifle",
+    "Rifle",
+    "Shotgun"
+   ],
+   "weapons": [
+    {
+     "name": "Lightweight M4",
+     "slug": "lightweight-m4",
+     "class": "Assault Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "AN-94",
+     "slug": "an-94",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "StG 44",
+     "slug": "stg-44",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Classic AK-47",
+     "slug": "classic-ak-47",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "Hunting M44",
+     "slug": "hunting-m44",
+     "class": "Marksman Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "G28",
+     "slug": "g28",
+     "class": "Marksman Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Tactical .308",
+     "slug": "tactical-308",
+     "class": "Marksman Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "SRS-A1",
+     "slug": "srs-a1",
+     "class": "Marksman Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "M1",
+     "slug": "m1",
+     "class": "Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "ACE 52",
+     "slug": "ace-52",
+     "class": "Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "1886",
+     "slug": "1886",
+     "class": "Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "SG16-12G",
+     "slug": "sg16-12g",
+     "class": "Shotgun",
+     "tier": "T2"
+    },
+    {
+     "name": "SPAS-12",
+     "slug": "spas-12",
+     "class": "Shotgun",
+     "tier": "T1"
+    },
+    {
+     "name": "M870",
+     "slug": "m870",
+     "class": "Shotgun",
+     "tier": "T0"
+    }
+   ]
+  },
+  "vibrant": {
+   "name": "Vibrant",
+   "id": "wt-69",
+   "classOrder": [
+    "LMG",
+    "Assault Rifle",
+    "SMG",
+    "Marksman Rifle",
+    "Rifle",
+    "Shotgun"
+   ],
+   "weapons": [
+    {
+     "name": "M249",
+     "slug": "m249",
+     "class": "LMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Military MK46",
+     "slug": "military-mk46",
+     "class": "LMG",
+     "tier": "T2"
+    },
+    {
+     "name": "PKM",
+     "slug": "pkm",
+     "class": "LMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Black Market M60 E6",
+     "slug": "black-market-m60-e6",
+     "class": "LMG",
+     "tier": "T1"
+    },
+    {
+     "name": "NEGEV",
+     "slug": "negev",
+     "class": "LMG",
+     "tier": "T1"
+    },
+    {
+     "name": "Classic M60",
+     "slug": "classic-m60",
+     "class": "LMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Lewis Gun",
+     "slug": "lewis-gun",
+     "class": "LMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Custom 416 G3",
+     "slug": "custom-416-g3",
+     "class": "Assault Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Black Market AK-74",
+     "slug": "black-market-ak-74",
+     "class": "Assault Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Military SA-58",
+     "slug": "military-sa-58",
+     "class": "Assault Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Police M4",
+     "slug": "police-m4",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "ACR",
+     "slug": "acr",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "G36-C",
+     "slug": "g36-c",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "MP7",
+     "slug": "mp7",
+     "class": "SMG",
+     "tier": "T2"
+    },
+    {
+     "name": "PPSH-41",
+     "slug": "ppsh-41",
+     "class": "SMG",
+     "tier": "T2"
+    },
+    {
+     "name": "MP40",
+     "slug": "mp40",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "Police T821",
+     "slug": "police-t821",
+     "class": "SMG",
+     "tier": "T0"
+    },
+    {
+     "name": "MPX",
+     "slug": "mpx",
+     "class": "SMG",
+     "tier": "T0"
+    },
+    {
+     "name": "M700 Carbon",
+     "slug": "m700-carbon",
+     "class": "Marksman Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "DSR-1",
+     "slug": "dsr-1",
+     "class": "Marksman Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Surplus SVD",
+     "slug": "surplus-svd",
+     "class": "Marksman Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "L115A3",
+     "slug": "l115a3",
+     "class": "Marksman Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Tactical .308",
+     "slug": "tactical-308",
+     "class": "Marksman Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "M700",
+     "slug": "m700",
+     "class": "Marksman Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "Classic M44",
+     "slug": "classic-m44",
+     "class": "Marksman Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "UIC15 MOD2",
+     "slug": "uic15-mod2",
+     "class": "Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "FG 42",
+     "slug": "fg-42",
+     "class": "Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "ACE 52",
+     "slug": "ace-52",
+     "class": "Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Urban MDR",
+     "slug": "urban-mdr",
+     "class": "Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "M-16",
+     "slug": "m-16",
+     "class": "Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Avtomat",
+     "slug": "avtomat",
+     "class": "Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "1886",
+     "slug": "1886",
+     "class": "Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "Gewehr 43",
+     "slug": "gewehr-43",
+     "class": "Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "M12",
+     "slug": "m12",
+     "class": "Shotgun",
+     "tier": "T2"
+    },
+    {
+     "name": "KSG",
+     "slug": "ksg",
+     "class": "Shotgun",
+     "tier": "T1"
+    },
+    {
+     "name": "ACS-12",
+     "slug": "acs-12",
+     "class": "Shotgun",
+     "tier": "T0"
+    }
+   ]
+  },
+  "sadistic-shield": {
+   "name": "Sadistic Shield",
+   "id": "wt-44",
+   "classOrder": [
+    "LMG",
+    "Assault Rifle",
+    "Shotgun",
+    "SMG"
+   ],
+   "weapons": [
+    {
+     "name": "Military M60 E4",
+     "slug": "military-m60-e4",
+     "class": "LMG",
+     "tier": "T2"
+    },
+    {
+     "name": "PKM",
+     "slug": "pkm",
+     "class": "LMG",
+     "tier": "T2"
+    },
+    {
+     "name": "UMAX100",
+     "slug": "umax100",
+     "class": "LMG",
+     "tier": "T1"
+    },
+    {
+     "name": "Lewis Gun",
+     "slug": "lewis-gun",
+     "class": "LMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Classic RPK 74",
+     "slug": "classic-rpk-74",
+     "class": "LMG",
+     "tier": "T0"
+    },
+    {
+     "name": "FAMAS",
+     "slug": "famas",
+     "class": "Assault Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Military SA-58",
+     "slug": "military-sa-58",
+     "class": "Assault Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Police M4",
+     "slug": "police-m4",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Enhanced ACR-E",
+     "slug": "enhanced-acr-e",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "AN-94",
+     "slug": "an-94",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Military 416",
+     "slug": "military-416",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "Mk16",
+     "slug": "mk16",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "G36-C",
+     "slug": "g36-c",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "RMB-93",
+     "slug": "rmb-93",
+     "class": "Shotgun",
+     "tier": "T2"
+    },
+    {
+     "name": "Tavor TS12",
+     "slug": "tavor-ts12",
+     "class": "Shotgun",
+     "tier": "T1"
+    },
+    {
+     "name": "Super 90",
+     "slug": "super-90",
+     "class": "Shotgun",
+     "tier": "T0"
+    },
+    {
+     "name": "MP7",
+     "slug": "mp7",
+     "class": "SMG",
+     "tier": "T2"
+    },
+    {
+     "name": "AUG A3 Para XS",
+     "slug": "aug-a3-para-xs",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "MP40",
+     "slug": "mp40",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "Police UMP-45",
+     "slug": "police-ump-45",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "PP-19",
+     "slug": "pp-19",
+     "class": "SMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Police T821",
+     "slug": "police-t821",
+     "class": "SMG",
+     "tier": "T0"
+    }
+   ]
+  },
+  "still-alive": {
+   "name": "Still Alive",
+   "id": "wt-56",
+   "classOrder": [
+    "LMG",
+    "Assault Rifle",
+    "Rifle",
+    "Marksman Rifle",
+    "Shotgun",
+    "SMG"
+   ],
+   "weapons": [
+    {
+     "name": "Military M60 E4",
+     "slug": "military-m60-e4",
+     "class": "LMG",
+     "tier": "T2"
+    },
+    {
+     "name": "PKM",
+     "slug": "pkm",
+     "class": "LMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Black Market M60 E6",
+     "slug": "black-market-m60-e6",
+     "class": "LMG",
+     "tier": "T1"
+    },
+    {
+     "name": "Black Market RPK-74 E",
+     "slug": "black-market-rpk-74-e",
+     "class": "LMG",
+     "tier": "T1"
+    },
+    {
+     "name": "NEGEV",
+     "slug": "negev",
+     "class": "LMG",
+     "tier": "T1"
+    },
+    {
+     "name": "MG5",
+     "slug": "mg5",
+     "class": "LMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Classic RPK 74",
+     "slug": "classic-rpk-74",
+     "class": "LMG",
+     "tier": "T0"
+    },
+    {
+     "name": "FAMAS",
+     "slug": "famas",
+     "class": "Assault Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Military SA-58",
+     "slug": "military-sa-58",
+     "class": "Assault Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Police M4",
+     "slug": "police-m4",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Military 416",
+     "slug": "military-416",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "Classic FAL",
+     "slug": "classic-fal",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "FG 42",
+     "slug": "fg-42",
+     "class": "Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "ACE 52",
+     "slug": "ace-52",
+     "class": "Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Avtomat",
+     "slug": "avtomat",
+     "class": "Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Police Mk17",
+     "slug": "police-mk17",
+     "class": "Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "Gewehr 43",
+     "slug": "gewehr-43",
+     "class": "Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "M700 Carbon",
+     "slug": "m700-carbon",
+     "class": "Marksman Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Surplus SVD",
+     "slug": "surplus-svd",
+     "class": "Marksman Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "L115A3",
+     "slug": "l115a3",
+     "class": "Marksman Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Paratrooper SVD",
+     "slug": "paratrooper-svd",
+     "class": "Marksman Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Tactical .308",
+     "slug": "tactical-308",
+     "class": "Marksman Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "M700",
+     "slug": "m700",
+     "class": "Marksman Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "Double Barrel Shotgun",
+     "slug": "double-barrel-shotgun",
+     "class": "Shotgun",
+     "tier": "T2"
+    },
+    {
+     "name": "KSG",
+     "slug": "ksg",
+     "class": "Shotgun",
+     "tier": "T1"
+    },
+    {
+     "name": "ACS-12",
+     "slug": "acs-12",
+     "class": "Shotgun",
+     "tier": "T0"
+    },
+    {
+     "name": "First Wave Vector 45 ACP",
+     "slug": "first-wave-vector-45-acp",
+     "class": "SMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Enhanced AUG A3P",
+     "slug": "enhanced-aug-a3p",
+     "class": "SMG",
+     "tier": "T2"
+    },
+    {
+     "name": "MP40",
+     "slug": "mp40",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "Police T821",
+     "slug": "police-t821",
+     "class": "SMG",
+     "tier": "T0"
+    }
+   ]
+  },
+  "swift-aim": {
+   "name": "Swift Aim",
+   "id": "wt-59",
+   "classOrder": [
+    "Assault Rifle",
+    "Rifle",
+    "Marksman Rifle"
+   ],
+   "weapons": [
+    {
+     "name": "M8A1",
+     "slug": "m8a1",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "StG 44",
+     "slug": "stg-44",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Classic AK-47",
+     "slug": "classic-ak-47",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "UIC15 MOD2",
+     "slug": "uic15-mod2",
+     "class": "Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "M1",
+     "slug": "m1",
+     "class": "Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Police Mk17",
+     "slug": "police-mk17",
+     "class": "Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "M700 Carbon",
+     "slug": "m700-carbon",
+     "class": "Marksman Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Hunting M44",
+     "slug": "hunting-m44",
+     "class": "Marksman Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Converted SRS",
+     "slug": "converted-srs",
+     "class": "Marksman Rifle",
+     "tier": "T1"
+    }
+   ]
+  },
+  "performer": {
+   "name": "Performer",
+   "id": "wt-34",
+   "classOrder": [
+    "SMG",
+    "Shotgun"
+   ],
+   "weapons": [
+    {
+     "name": "First Wave Vector 45 ACP",
+     "slug": "first-wave-vector-45-acp",
+     "class": "SMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Modified USC",
+     "slug": "modified-usc",
+     "class": "SMG",
+     "tier": "T2"
+    },
+    {
+     "name": "PPSH-41",
+     "slug": "ppsh-41",
+     "class": "SMG",
+     "tier": "T2"
+    },
+    {
+     "name": "AUG A3 Para XS",
+     "slug": "aug-a3-para-xs",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "P90",
+     "slug": "p90",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "MP40",
+     "slug": "mp40",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "Police UMP-45",
+     "slug": "police-ump-45",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "Vector 45 ACP",
+     "slug": "vector-45-acp",
+     "class": "SMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Police T821",
+     "slug": "police-t821",
+     "class": "SMG",
+     "tier": "T0"
+    },
+    {
+     "name": "MPX",
+     "slug": "mpx",
+     "class": "SMG",
+     "tier": "T0"
+    },
+    {
+     "name": "SPAS-12",
+     "slug": "spas-12",
+     "class": "Shotgun",
+     "tier": "T1"
+    },
+    {
+     "name": "KSG",
+     "slug": "ksg",
+     "class": "Shotgun",
+     "tier": "T1"
+    },
+    {
+     "name": "Super 90",
+     "slug": "super-90",
+     "class": "Shotgun",
+     "tier": "T0"
+    },
+    {
+     "name": "ACS-12",
+     "slug": "acs-12",
+     "class": "Shotgun",
+     "tier": "T0"
+    }
+   ]
+  },
+  "last-stand": {
+   "name": "Last Stand",
+   "id": "wt-26",
+   "classOrder": [
+    "SMG",
+    "LMG",
+    "Assault Rifle",
+    "Marksman Rifle",
+    "Shotgun",
+    "Rifle"
+   ],
+   "weapons": [
+    {
+     "name": "MP7",
+     "slug": "mp7",
+     "class": "SMG",
+     "tier": "T2"
+    },
+    {
+     "name": "AUG A3 Para XS",
+     "slug": "aug-a3-para-xs",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "P90",
+     "slug": "p90",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "MP40",
+     "slug": "mp40",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "Vector 45 ACP",
+     "slug": "vector-45-acp",
+     "class": "SMG",
+     "tier": "T0"
+    },
+    {
+     "name": "PP-19",
+     "slug": "pp-19",
+     "class": "SMG",
+     "tier": "T0"
+    },
+    {
+     "name": "MPX",
+     "slug": "mpx",
+     "class": "SMG",
+     "tier": "T0"
+    },
+    {
+     "name": "M249",
+     "slug": "m249",
+     "class": "LMG",
+     "tier": "T2"
+    },
+    {
+     "name": "NEGEV",
+     "slug": "negev",
+     "class": "LMG",
+     "tier": "T1"
+    },
+    {
+     "name": "UMAX100",
+     "slug": "umax100",
+     "class": "LMG",
+     "tier": "T1"
+    },
+    {
+     "name": "Military L86 LSW",
+     "slug": "military-l86-lsw",
+     "class": "LMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Lewis Gun",
+     "slug": "lewis-gun",
+     "class": "LMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Classic RPK 74",
+     "slug": "classic-rpk-74",
+     "class": "LMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Custom 416 G3",
+     "slug": "custom-416-g3",
+     "class": "Assault Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Police M4",
+     "slug": "police-m4",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Enhanced ACR-E",
+     "slug": "enhanced-acr-e",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "M8A1",
+     "slug": "m8a1",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Military 416",
+     "slug": "military-416",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "Mk16",
+     "slug": "mk16",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "G36-C",
+     "slug": "g36-c",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "M700 Carbon",
+     "slug": "m700-carbon",
+     "class": "Marksman Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Paratrooper SVD",
+     "slug": "paratrooper-svd",
+     "class": "Marksman Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Tactical .308",
+     "slug": "tactical-308",
+     "class": "Marksman Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "SRS-A1",
+     "slug": "srs-a1",
+     "class": "Marksman Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "MK 20 SSR",
+     "slug": "mk-20-ssr",
+     "class": "Marksman Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "Double Barrel Shotgun",
+     "slug": "double-barrel-shotgun",
+     "class": "Shotgun",
+     "tier": "T2"
+    },
+    {
+     "name": "SPAS-12",
+     "slug": "spas-12",
+     "class": "Shotgun",
+     "tier": "T1"
+    },
+    {
+     "name": "RU12SG",
+     "slug": "ru12sg",
+     "class": "Shotgun",
+     "tier": "T1"
+    },
+    {
+     "name": "Super 90",
+     "slug": "super-90",
+     "class": "Shotgun",
+     "tier": "T0"
+    },
+    {
+     "name": "ACS-12",
+     "slug": "acs-12",
+     "class": "Shotgun",
+     "tier": "T0"
+    },
+    {
+     "name": "ACE 52",
+     "slug": "ace-52",
+     "class": "Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Urban MDR",
+     "slug": "urban-mdr",
+     "class": "Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "1886",
+     "slug": "1886",
+     "class": "Rifle",
+     "tier": "T0"
+    }
+   ]
+  },
+  "medical-accuracy": {
+   "name": "Medical Accuracy",
+   "id": "wt-28",
+   "classOrder": [
+    "SMG",
+    "LMG",
+    "Assault Rifle",
+    "Marksman Rifle",
+    "Rifle",
+    "Shotgun"
+   ],
+   "weapons": [
+    {
+     "name": "MP7",
+     "slug": "mp7",
+     "class": "SMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Modified USC",
+     "slug": "modified-usc",
+     "class": "SMG",
+     "tier": "T2"
+    },
+    {
+     "name": "AUG A3 Para XS",
+     "slug": "aug-a3-para-xs",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "Converted SMG-9 A2",
+     "slug": "converted-smg-9-a2",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "P90",
+     "slug": "p90",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "MP40",
+     "slug": "mp40",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "Vector 45 ACP",
+     "slug": "vector-45-acp",
+     "class": "SMG",
+     "tier": "T0"
+    },
+    {
+     "name": "PP-19",
+     "slug": "pp-19",
+     "class": "SMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Naval MP5",
+     "slug": "naval-mp5",
+     "class": "SMG",
+     "tier": "T0"
+    },
+    {
+     "name": "M249",
+     "slug": "m249",
+     "class": "LMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Stoner LAMG",
+     "slug": "stoner-lamg",
+     "class": "LMG",
+     "tier": "T2"
+    },
+    {
+     "name": "PKM",
+     "slug": "pkm",
+     "class": "LMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Black Market RPK-74 E",
+     "slug": "black-market-rpk-74-e",
+     "class": "LMG",
+     "tier": "T1"
+    },
+    {
+     "name": "NEGEV",
+     "slug": "negev",
+     "class": "LMG",
+     "tier": "T1"
+    },
+    {
+     "name": "UMAX100",
+     "slug": "umax100",
+     "class": "LMG",
+     "tier": "T1"
+    },
+    {
+     "name": "RPD",
+     "slug": "rpd",
+     "class": "LMG",
+     "tier": "T1"
+    },
+    {
+     "name": "Classic M60",
+     "slug": "classic-m60",
+     "class": "LMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Military L86 LSW",
+     "slug": "military-l86-lsw",
+     "class": "LMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Custom 416 G3",
+     "slug": "custom-416-g3",
+     "class": "Assault Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Military SA-58",
+     "slug": "military-sa-58",
+     "class": "Assault Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Lightweight M4",
+     "slug": "lightweight-m4",
+     "class": "Assault Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Police M4",
+     "slug": "police-m4",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Enhanced ACR-E",
+     "slug": "enhanced-acr-e",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "M8A1",
+     "slug": "m8a1",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "StG 44",
+     "slug": "stg-44",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Classic AK-47",
+     "slug": "classic-ak-47",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "ACR",
+     "slug": "acr",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "Mk16",
+     "slug": "mk16",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "M700 Carbon",
+     "slug": "m700-carbon",
+     "class": "Marksman Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Hunting M44",
+     "slug": "hunting-m44",
+     "class": "Marksman Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Converted SRS",
+     "slug": "converted-srs",
+     "class": "Marksman Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Paratrooper SVD",
+     "slug": "paratrooper-svd",
+     "class": "Marksman Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "MK 20 SSR",
+     "slug": "mk-20-ssr",
+     "class": "Marksman Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "M1",
+     "slug": "m1",
+     "class": "Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "G3",
+     "slug": "g3",
+     "class": "Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Classic M1A",
+     "slug": "classic-m1a",
+     "class": "Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "Police Mk17",
+     "slug": "police-mk17",
+     "class": "Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "Double Barrel Shotgun",
+     "slug": "double-barrel-shotgun",
+     "class": "Shotgun",
+     "tier": "T2"
+    },
+    {
+     "name": "RU12SG",
+     "slug": "ru12sg",
+     "class": "Shotgun",
+     "tier": "T1"
+    },
+    {
+     "name": "Super 90",
+     "slug": "super-90",
+     "class": "Shotgun",
+     "tier": "T0"
+    },
+    {
+     "name": "M870",
+     "slug": "m870",
+     "class": "Shotgun",
+     "tier": "T0"
+    }
+   ]
+  },
+  "joint-strike": {
+   "name": "Joint Strike",
+   "id": "wt-24",
+   "classOrder": [
+    "Rifle",
+    "Marksman Rifle"
+   ],
+   "weapons": [
+    {
+     "name": "UIC15 MOD2",
+     "slug": "uic15-mod2",
+     "class": "Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Avtomat",
+     "slug": "avtomat",
+     "class": "Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Police Mk17",
+     "slug": "police-mk17",
+     "class": "Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "M700 Carbon",
+     "slug": "m700-carbon",
+     "class": "Marksman Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "M700",
+     "slug": "m700",
+     "class": "Marksman Rifle",
+     "tier": "T0"
+    }
+   ]
+  },
+  "fast-hands": {
+   "name": "Fast Hands",
+   "id": "wt-19",
+   "classOrder": [
+    "LMG",
+    "Assault Rifle",
+    "Marksman Rifle",
+    "Rifle",
+    "SMG",
+    "Shotgun"
+   ],
+   "weapons": [
+    {
+     "name": "Military M60 E4",
+     "slug": "military-m60-e4",
+     "class": "LMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Stoner LAMG",
+     "slug": "stoner-lamg",
+     "class": "LMG",
+     "tier": "T2"
+    },
+    {
+     "name": "UMAX100",
+     "slug": "umax100",
+     "class": "LMG",
+     "tier": "T1"
+    },
+    {
+     "name": "Military L86 LSW",
+     "slug": "military-l86-lsw",
+     "class": "LMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Lewis Gun",
+     "slug": "lewis-gun",
+     "class": "LMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Classic RPK 74",
+     "slug": "classic-rpk-74",
+     "class": "LMG",
+     "tier": "T0"
+    },
+    {
+     "name": "FAMAS",
+     "slug": "famas",
+     "class": "Assault Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Lightweight M4",
+     "slug": "lightweight-m4",
+     "class": "Assault Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "M8A1",
+     "slug": "m8a1",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "AN-94",
+     "slug": "an-94",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "StG 44",
+     "slug": "stg-44",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Military 416",
+     "slug": "military-416",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "Mk16",
+     "slug": "mk16",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "G36-C",
+     "slug": "g36-c",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "Hunting M44",
+     "slug": "hunting-m44",
+     "class": "Marksman Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Converted SRS",
+     "slug": "converted-srs",
+     "class": "Marksman Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Paratrooper SVD",
+     "slug": "paratrooper-svd",
+     "class": "Marksman Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Tactical .308",
+     "slug": "tactical-308",
+     "class": "Marksman Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "SRS-A1",
+     "slug": "srs-a1",
+     "class": "Marksman Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "UIC15 MOD2",
+     "slug": "uic15-mod2",
+     "class": "Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "M1",
+     "slug": "m1",
+     "class": "Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "FG 42",
+     "slug": "fg-42",
+     "class": "Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Urban MDR",
+     "slug": "urban-mdr",
+     "class": "Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "M-16",
+     "slug": "m-16",
+     "class": "Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "G3",
+     "slug": "g3",
+     "class": "Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Police Mk17",
+     "slug": "police-mk17",
+     "class": "Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "1886",
+     "slug": "1886",
+     "class": "Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "Modified USC",
+     "slug": "modified-usc",
+     "class": "SMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Converted SMG-9 A2",
+     "slug": "converted-smg-9-a2",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "P90",
+     "slug": "p90",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "Police UMP-45",
+     "slug": "police-ump-45",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "Police T821",
+     "slug": "police-t821",
+     "class": "SMG",
+     "tier": "T0"
+    },
+    {
+     "name": "RMB-93",
+     "slug": "rmb-93",
+     "class": "Shotgun",
+     "tier": "T2"
+    },
+    {
+     "name": "SPAS-12",
+     "slug": "spas-12",
+     "class": "Shotgun",
+     "tier": "T1"
+    },
+    {
+     "name": "RU12SG",
+     "slug": "ru12sg",
+     "class": "Shotgun",
+     "tier": "T1"
+    }
+   ]
+  },
+  "calm-and-collected": {
+   "name": "Calm and Collected",
+   "id": "wt-11",
+   "classOrder": [
+    "SMG",
+    "LMG",
+    "Assault Rifle",
+    "Marksman Rifle",
+    "Rifle",
+    "Shotgun"
+   ],
+   "weapons": [
+    {
+     "name": "First Wave Vector 45 ACP",
+     "slug": "first-wave-vector-45-acp",
+     "class": "SMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Modified USC",
+     "slug": "modified-usc",
+     "class": "SMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Enhanced AUG A3P",
+     "slug": "enhanced-aug-a3p",
+     "class": "SMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Police UMP-45",
+     "slug": "police-ump-45",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "Vector 45 ACP",
+     "slug": "vector-45-acp",
+     "class": "SMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Converted SMG-9",
+     "slug": "converted-smg-9",
+     "class": "SMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Police T821",
+     "slug": "police-t821",
+     "class": "SMG",
+     "tier": "T0"
+    },
+    {
+     "name": "MPX",
+     "slug": "mpx",
+     "class": "SMG",
+     "tier": "T0"
+    },
+    {
+     "name": "M249",
+     "slug": "m249",
+     "class": "LMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Stoner LAMG",
+     "slug": "stoner-lamg",
+     "class": "LMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Military MK46",
+     "slug": "military-mk46",
+     "class": "LMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Black Market M60 E6",
+     "slug": "black-market-m60-e6",
+     "class": "LMG",
+     "tier": "T1"
+    },
+    {
+     "name": "RPD",
+     "slug": "rpd",
+     "class": "LMG",
+     "tier": "T1"
+    },
+    {
+     "name": "Classic M60",
+     "slug": "classic-m60",
+     "class": "LMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Classic RPK 74",
+     "slug": "classic-rpk-74",
+     "class": "LMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Custom 416 G3",
+     "slug": "custom-416-g3",
+     "class": "Assault Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Black Market AK-74",
+     "slug": "black-market-ak-74",
+     "class": "Assault Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Lightweight M4",
+     "slug": "lightweight-m4",
+     "class": "Assault Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "AN-94",
+     "slug": "an-94",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Classic AK-47",
+     "slug": "classic-ak-47",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "Military 416",
+     "slug": "military-416",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "ACR",
+     "slug": "acr",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "DSR-1",
+     "slug": "dsr-1",
+     "class": "Marksman Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Hunting M44",
+     "slug": "hunting-m44",
+     "class": "Marksman Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Converted SRS",
+     "slug": "converted-srs",
+     "class": "Marksman Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "G28",
+     "slug": "g28",
+     "class": "Marksman Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "SRS-A1",
+     "slug": "srs-a1",
+     "class": "Marksman Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "M700",
+     "slug": "m700",
+     "class": "Marksman Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "UIC15 MOD2",
+     "slug": "uic15-mod2",
+     "class": "Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Urban MDR",
+     "slug": "urban-mdr",
+     "class": "Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "M-16",
+     "slug": "m-16",
+     "class": "Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "1886",
+     "slug": "1886",
+     "class": "Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "RMB-93",
+     "slug": "rmb-93",
+     "class": "Shotgun",
+     "tier": "T2"
+    },
+    {
+     "name": "SG16-12G",
+     "slug": "sg16-12g",
+     "class": "Shotgun",
+     "tier": "T2"
+    },
+    {
+     "name": "SPAS-12",
+     "slug": "spas-12",
+     "class": "Shotgun",
+     "tier": "T1"
+    },
+    {
+     "name": "KSG",
+     "slug": "ksg",
+     "class": "Shotgun",
+     "tier": "T1"
+    },
+    {
+     "name": "RU12SG",
+     "slug": "ru12sg",
+     "class": "Shotgun",
+     "tier": "T1"
+    },
+    {
+     "name": "M870",
+     "slug": "m870",
+     "class": "Shotgun",
+     "tier": "T0"
+    }
+   ]
+  },
+  "unhinged": {
+   "name": "Unhinged",
+   "id": "wt-68",
+   "classOrder": [
+    "LMG",
+    "Assault Rifle",
+    "Shotgun",
+    "SMG"
+   ],
+   "weapons": [
+    {
+     "name": "Stoner LAMG",
+     "slug": "stoner-lamg",
+     "class": "LMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Military MK46",
+     "slug": "military-mk46",
+     "class": "LMG",
+     "tier": "T2"
+    },
+    {
+     "name": "PKM",
+     "slug": "pkm",
+     "class": "LMG",
+     "tier": "T2"
+    },
+    {
+     "name": "NEGEV",
+     "slug": "negev",
+     "class": "LMG",
+     "tier": "T1"
+    },
+    {
+     "name": "Classic M60",
+     "slug": "classic-m60",
+     "class": "LMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Military SA-58",
+     "slug": "military-sa-58",
+     "class": "Assault Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Lightweight M4",
+     "slug": "lightweight-m4",
+     "class": "Assault Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "StG 44",
+     "slug": "stg-44",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "ACR",
+     "slug": "acr",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "RMB-93",
+     "slug": "rmb-93",
+     "class": "Shotgun",
+     "tier": "T2"
+    },
+    {
+     "name": "KSG",
+     "slug": "ksg",
+     "class": "Shotgun",
+     "tier": "T1"
+    },
+    {
+     "name": "SASG-12",
+     "slug": "sasg-12",
+     "class": "Shotgun",
+     "tier": "T0"
+    },
+    {
+     "name": "First Wave Vector 45 ACP",
+     "slug": "first-wave-vector-45-acp",
+     "class": "SMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Modified USC",
+     "slug": "modified-usc",
+     "class": "SMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Converted SMG-9 A2",
+     "slug": "converted-smg-9-a2",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "P90",
+     "slug": "p90",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "Police T821",
+     "slug": "police-t821",
+     "class": "SMG",
+     "tier": "T0"
+    }
+   ]
+  },
+  "fully-charged": {
+   "name": "Fully Charged",
+   "id": "wt-20",
+   "classOrder": [
+    "SMG",
+    "Marksman Rifle",
+    "Rifle",
+    "Shotgun",
+    "LMG",
+    "Assault Rifle"
+   ],
+   "weapons": [
+    {
+     "name": "MP7",
+     "slug": "mp7",
+     "class": "SMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Enhanced AUG A3P",
+     "slug": "enhanced-aug-a3p",
+     "class": "SMG",
+     "tier": "T2"
+    },
+    {
+     "name": "AUG A3 Para XS",
+     "slug": "aug-a3-para-xs",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "Converted SMG-9 A2",
+     "slug": "converted-smg-9-a2",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "P90",
+     "slug": "p90",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "PP-19",
+     "slug": "pp-19",
+     "class": "SMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Naval MP5",
+     "slug": "naval-mp5",
+     "class": "SMG",
+     "tier": "T0"
+    },
+    {
+     "name": "M700 Carbon",
+     "slug": "m700-carbon",
+     "class": "Marksman Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Hunting M44",
+     "slug": "hunting-m44",
+     "class": "Marksman Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Converted SRS",
+     "slug": "converted-srs",
+     "class": "Marksman Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "L115A3",
+     "slug": "l115a3",
+     "class": "Marksman Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "G28",
+     "slug": "g28",
+     "class": "Marksman Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "SRS-A1",
+     "slug": "srs-a1",
+     "class": "Marksman Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "M1",
+     "slug": "m1",
+     "class": "Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Urban MDR",
+     "slug": "urban-mdr",
+     "class": "Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Classic M1A",
+     "slug": "classic-m1a",
+     "class": "Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "Police Mk17",
+     "slug": "police-mk17",
+     "class": "Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "SG16-12G",
+     "slug": "sg16-12g",
+     "class": "Shotgun",
+     "tier": "T2"
+    },
+    {
+     "name": "SPAS-12",
+     "slug": "spas-12",
+     "class": "Shotgun",
+     "tier": "T1"
+    },
+    {
+     "name": "Super 90",
+     "slug": "super-90",
+     "class": "Shotgun",
+     "tier": "T0"
+    },
+    {
+     "name": "M249",
+     "slug": "m249",
+     "class": "LMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Stoner LAMG",
+     "slug": "stoner-lamg",
+     "class": "LMG",
+     "tier": "T2"
+    },
+    {
+     "name": "UMAX100",
+     "slug": "umax100",
+     "class": "LMG",
+     "tier": "T1"
+    },
+    {
+     "name": "MG5",
+     "slug": "mg5",
+     "class": "LMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Military L86 LSW",
+     "slug": "military-l86-lsw",
+     "class": "LMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Custom 416 G3",
+     "slug": "custom-416-g3",
+     "class": "Assault Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Lightweight M4",
+     "slug": "lightweight-m4",
+     "class": "Assault Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Enhanced ACR-E",
+     "slug": "enhanced-acr-e",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "M8A1",
+     "slug": "m8a1",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "StG 44",
+     "slug": "stg-44",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Mk16",
+     "slug": "mk16",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "Classic FAL",
+     "slug": "classic-fal",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    }
+   ]
+  },
+  "crawl": {
+   "name": "Crawl",
+   "id": "wt-14",
+   "classOrder": [
+    "Marksman Rifle",
+    "Rifle",
+    "Shotgun"
+   ],
+   "weapons": [
+    {
+     "name": "L115A3",
+     "slug": "l115a3",
+     "class": "Marksman Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Paratrooper SVD",
+     "slug": "paratrooper-svd",
+     "class": "Marksman Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Tactical .308",
+     "slug": "tactical-308",
+     "class": "Marksman Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "MK 20 SSR",
+     "slug": "mk-20-ssr",
+     "class": "Marksman Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "Avtomat",
+     "slug": "avtomat",
+     "class": "Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Police Mk17",
+     "slug": "police-mk17",
+     "class": "Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "RMB-93",
+     "slug": "rmb-93",
+     "class": "Shotgun",
+     "tier": "T2"
+    },
+    {
+     "name": "SASG-12",
+     "slug": "sasg-12",
+     "class": "Shotgun",
+     "tier": "T0"
+    }
+   ]
+  },
+  "ex-machina": {
+   "name": "Ex Machina",
+   "id": "wt-18",
+   "classOrder": [
+    "Marksman Rifle",
+    "Rifle",
+    "Shotgun"
+   ],
+   "weapons": [
+    {
+     "name": "Surplus SVD",
+     "slug": "surplus-svd",
+     "class": "Marksman Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "G28",
+     "slug": "g28",
+     "class": "Marksman Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Paratrooper SVD",
+     "slug": "paratrooper-svd",
+     "class": "Marksman Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "SRS-A1",
+     "slug": "srs-a1",
+     "class": "Marksman Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "Classic M44",
+     "slug": "classic-m44",
+     "class": "Marksman Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "M1",
+     "slug": "m1",
+     "class": "Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "FG 42",
+     "slug": "fg-42",
+     "class": "Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Gewehr 43",
+     "slug": "gewehr-43",
+     "class": "Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "Double Barrel Shotgun",
+     "slug": "double-barrel-shotgun",
+     "class": "Shotgun",
+     "tier": "T2"
+    },
+    {
+     "name": "SG16-12G",
+     "slug": "sg16-12g",
+     "class": "Shotgun",
+     "tier": "T2"
+    },
+    {
+     "name": "Tavor TS12",
+     "slug": "tavor-ts12",
+     "class": "Shotgun",
+     "tier": "T1"
+    },
+    {
+     "name": "M870",
+     "slug": "m870",
+     "class": "Shotgun",
+     "tier": "T0"
+    }
+   ]
+  },
+  "no-exit": {
+   "name": "No Exit",
+   "id": "wt-33",
+   "classOrder": [
+    "Marksman Rifle",
+    "Rifle",
+    "Shotgun"
+   ],
+   "weapons": [
+    {
+     "name": "Converted SRS",
+     "slug": "converted-srs",
+     "class": "Marksman Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "SRS-A1",
+     "slug": "srs-a1",
+     "class": "Marksman Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "FG 42",
+     "slug": "fg-42",
+     "class": "Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "G3",
+     "slug": "g3",
+     "class": "Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Classic M1A",
+     "slug": "classic-m1a",
+     "class": "Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "M12",
+     "slug": "m12",
+     "class": "Shotgun",
+     "tier": "T2"
+    },
+    {
+     "name": "RMB-93",
+     "slug": "rmb-93",
+     "class": "Shotgun",
+     "tier": "T2"
+    },
+    {
+     "name": "SPAS-12",
+     "slug": "spas-12",
+     "class": "Shotgun",
+     "tier": "T1"
+    },
+    {
+     "name": "RU12SG",
+     "slug": "ru12sg",
+     "class": "Shotgun",
+     "tier": "T1"
+    },
+    {
+     "name": "Super 90",
+     "slug": "super-90",
+     "class": "Shotgun",
+     "tier": "T0"
+    },
+    {
+     "name": "M870",
+     "slug": "m870",
+     "class": "Shotgun",
+     "tier": "T0"
+    }
+   ]
+  },
+  "surgical": {
+   "name": "Surgical",
+   "id": "wt-58",
+   "classOrder": [
+    "Assault Rifle",
+    "Rifle",
+    "Shotgun",
+    "Marksman Rifle"
+   ],
+   "weapons": [
+    {
+     "name": "Military SA-58",
+     "slug": "military-sa-58",
+     "class": "Assault Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Police M4",
+     "slug": "police-m4",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "AN-94",
+     "slug": "an-94",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Military 416",
+     "slug": "military-416",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "UIC15 MOD2",
+     "slug": "uic15-mod2",
+     "class": "Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Urban MDR",
+     "slug": "urban-mdr",
+     "class": "Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Gewehr 43",
+     "slug": "gewehr-43",
+     "class": "Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "KSG",
+     "slug": "ksg",
+     "class": "Shotgun",
+     "tier": "T1"
+    },
+    {
+     "name": "M870",
+     "slug": "m870",
+     "class": "Shotgun",
+     "tier": "T0"
+    },
+    {
+     "name": "ACS-12",
+     "slug": "acs-12",
+     "class": "Shotgun",
+     "tier": "T0"
+    },
+    {
+     "name": "Hunting M44",
+     "slug": "hunting-m44",
+     "class": "Marksman Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Paratrooper SVD",
+     "slug": "paratrooper-svd",
+     "class": "Marksman Rifle",
+     "tier": "T1"
+    }
+   ]
+  },
+  "death-by-numbers": {
+   "name": "Death by Numbers",
+   "id": "wt-16",
+   "classOrder": [
+    "Marksman Rifle",
+    "Rifle",
+    "Shotgun",
+    "Assault Rifle"
+   ],
+   "weapons": [
+    {
+     "name": "Paratrooper SVD",
+     "slug": "paratrooper-svd",
+     "class": "Marksman Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Tactical .308",
+     "slug": "tactical-308",
+     "class": "Marksman Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "SRS-A1",
+     "slug": "srs-a1",
+     "class": "Marksman Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "M700",
+     "slug": "m700",
+     "class": "Marksman Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "UIC15 MOD2",
+     "slug": "uic15-mod2",
+     "class": "Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "M1",
+     "slug": "m1",
+     "class": "Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "G3",
+     "slug": "g3",
+     "class": "Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Classic M1A",
+     "slug": "classic-m1a",
+     "class": "Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "RMB-93",
+     "slug": "rmb-93",
+     "class": "Shotgun",
+     "tier": "T2"
+    },
+    {
+     "name": "SPAS-12",
+     "slug": "spas-12",
+     "class": "Shotgun",
+     "tier": "T1"
+    },
+    {
+     "name": "M870",
+     "slug": "m870",
+     "class": "Shotgun",
+     "tier": "T0"
+    },
+    {
+     "name": "ACS-12",
+     "slug": "acs-12",
+     "class": "Shotgun",
+     "tier": "T0"
+    },
+    {
+     "name": "Enhanced ACR-E",
+     "slug": "enhanced-acr-e",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "M8A1",
+     "slug": "m8a1",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    }
+   ]
+  },
+  "spec-ops": {
+   "name": "Spec-Ops",
+   "id": "wt-49",
+   "classOrder": [
+    "SMG",
+    "Shotgun"
+   ],
+   "weapons": [
+    {
+     "name": "MP7",
+     "slug": "mp7",
+     "class": "SMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Enhanced AUG A3P",
+     "slug": "enhanced-aug-a3p",
+     "class": "SMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Police UMP-45",
+     "slug": "police-ump-45",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "Vector 45 ACP",
+     "slug": "vector-45-acp",
+     "class": "SMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Converted SMG-9",
+     "slug": "converted-smg-9",
+     "class": "SMG",
+     "tier": "T0"
+    },
+    {
+     "name": "SPAS-12",
+     "slug": "spas-12",
+     "class": "Shotgun",
+     "tier": "T1"
+    },
+    {
+     "name": "M870",
+     "slug": "m870",
+     "class": "Shotgun",
+     "tier": "T0"
+    }
+   ]
+  },
+  "take-a-breath": {
+   "name": "Take a Breath",
+   "id": "wt-63",
+   "classOrder": [
+    "SMG",
+    "LMG",
+    "Rifle",
+    "Shotgun",
+    "Assault Rifle",
+    "Marksman Rifle"
+   ],
+   "weapons": [
+    {
+     "name": "MP7",
+     "slug": "mp7",
+     "class": "SMG",
+     "tier": "T2"
+    },
+    {
+     "name": "PPSH-41",
+     "slug": "ppsh-41",
+     "class": "SMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Naval MP5",
+     "slug": "naval-mp5",
+     "class": "SMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Military M60 E4",
+     "slug": "military-m60-e4",
+     "class": "LMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Military MK46",
+     "slug": "military-mk46",
+     "class": "LMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Black Market RPK-74 E",
+     "slug": "black-market-rpk-74-e",
+     "class": "LMG",
+     "tier": "T1"
+    },
+    {
+     "name": "UMAX100",
+     "slug": "umax100",
+     "class": "LMG",
+     "tier": "T1"
+    },
+    {
+     "name": "Lewis Gun",
+     "slug": "lewis-gun",
+     "class": "LMG",
+     "tier": "T0"
+    },
+    {
+     "name": "M-16",
+     "slug": "m-16",
+     "class": "Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Avtomat",
+     "slug": "avtomat",
+     "class": "Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Police Mk17",
+     "slug": "police-mk17",
+     "class": "Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "Gewehr 43",
+     "slug": "gewehr-43",
+     "class": "Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "M12",
+     "slug": "m12",
+     "class": "Shotgun",
+     "tier": "T2"
+    },
+    {
+     "name": "SG16-12G",
+     "slug": "sg16-12g",
+     "class": "Shotgun",
+     "tier": "T2"
+    },
+    {
+     "name": "KSG",
+     "slug": "ksg",
+     "class": "Shotgun",
+     "tier": "T1"
+    },
+    {
+     "name": "SASG-12",
+     "slug": "sasg-12",
+     "class": "Shotgun",
+     "tier": "T0"
+    },
+    {
+     "name": "ACS-12",
+     "slug": "acs-12",
+     "class": "Shotgun",
+     "tier": "T0"
+    },
+    {
+     "name": "Black Market AK-74",
+     "slug": "black-market-ak-74",
+     "class": "Assault Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "FAMAS",
+     "slug": "famas",
+     "class": "Assault Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Mk16",
+     "slug": "mk16",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "Classic FAL",
+     "slug": "classic-fal",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "G36-C",
+     "slug": "g36-c",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "DSR-1",
+     "slug": "dsr-1",
+     "class": "Marksman Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Surplus SVD",
+     "slug": "surplus-svd",
+     "class": "Marksman Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "L115A3",
+     "slug": "l115a3",
+     "class": "Marksman Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "G28",
+     "slug": "g28",
+     "class": "Marksman Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Tactical .308",
+     "slug": "tactical-308",
+     "class": "Marksman Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "M700",
+     "slug": "m700",
+     "class": "Marksman Rifle",
+     "tier": "T0"
+    }
+   ]
+  },
+  "unbreakable": {
+   "name": "Unbreakable",
+   "id": "wt-67",
+   "classOrder": [
+    "Shotgun",
+    "SMG"
+   ],
+   "weapons": [
+    {
+     "name": "Double Barrel Shotgun",
+     "slug": "double-barrel-shotgun",
+     "class": "Shotgun",
+     "tier": "T2"
+    },
+    {
+     "name": "M12",
+     "slug": "m12",
+     "class": "Shotgun",
+     "tier": "T2"
+    },
+    {
+     "name": "SASG-12",
+     "slug": "sasg-12",
+     "class": "Shotgun",
+     "tier": "T0"
+    },
+    {
+     "name": "ACS-12",
+     "slug": "acs-12",
+     "class": "Shotgun",
+     "tier": "T0"
+    },
+    {
+     "name": "PPSH-41",
+     "slug": "ppsh-41",
+     "class": "SMG",
+     "tier": "T2"
+    },
+    {
+     "name": "MP40",
+     "slug": "mp40",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "Police UMP-45",
+     "slug": "police-ump-45",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "PP-19",
+     "slug": "pp-19",
+     "class": "SMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Police T821",
+     "slug": "police-t821",
+     "class": "SMG",
+     "tier": "T0"
+    },
+    {
+     "name": "MPX",
+     "slug": "mpx",
+     "class": "SMG",
+     "tier": "T0"
+    }
+   ]
+  },
+  "backup-battery": {
+   "name": "Backup Battery",
+   "id": "wt-4",
+   "classOrder": [
+    "SMG",
+    "Assault Rifle",
+    "Marksman Rifle",
+    "Rifle",
+    "LMG",
+    "Shotgun"
+   ],
+   "weapons": [
+    {
+     "name": "PPSH-41",
+     "slug": "ppsh-41",
+     "class": "SMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Converted SMG-9 A2",
+     "slug": "converted-smg-9-a2",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "P90",
+     "slug": "p90",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "MP40",
+     "slug": "mp40",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "Copperhead",
+     "slug": "copperhead",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "Vector 45 ACP",
+     "slug": "vector-45-acp",
+     "class": "SMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Converted SMG-9",
+     "slug": "converted-smg-9",
+     "class": "SMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Naval MP5",
+     "slug": "naval-mp5",
+     "class": "SMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Military SA-58",
+     "slug": "military-sa-58",
+     "class": "Assault Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Police M4",
+     "slug": "police-m4",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "M8A1",
+     "slug": "m8a1",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "StG 44",
+     "slug": "stg-44",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Type 81",
+     "slug": "type-81",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Classic AK-47",
+     "slug": "classic-ak-47",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "Mk16",
+     "slug": "mk16",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "Classic FAL",
+     "slug": "classic-fal",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "DSR-1",
+     "slug": "dsr-1",
+     "class": "Marksman Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Converted SRS",
+     "slug": "converted-srs",
+     "class": "Marksman Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "L115A3",
+     "slug": "l115a3",
+     "class": "Marksman Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "G28",
+     "slug": "g28",
+     "class": "Marksman Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "SRS-A1",
+     "slug": "srs-a1",
+     "class": "Marksman Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "Classic M44",
+     "slug": "classic-m44",
+     "class": "Marksman Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "M1",
+     "slug": "m1",
+     "class": "Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "FG 42",
+     "slug": "fg-42",
+     "class": "Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "ACE 52",
+     "slug": "ace-52",
+     "class": "Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Urban MDR",
+     "slug": "urban-mdr",
+     "class": "Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Avtomat",
+     "slug": "avtomat",
+     "class": "Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Police Mk17",
+     "slug": "police-mk17",
+     "class": "Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "1886",
+     "slug": "1886",
+     "class": "Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "M249",
+     "slug": "m249",
+     "class": "LMG",
+     "tier": "T2"
+    },
+    {
+     "name": "PKM",
+     "slug": "pkm",
+     "class": "LMG",
+     "tier": "T2"
+    },
+    {
+     "name": "NEGEV",
+     "slug": "negev",
+     "class": "LMG",
+     "tier": "T1"
+    },
+    {
+     "name": "UMAX100",
+     "slug": "umax100",
+     "class": "LMG",
+     "tier": "T1"
+    },
+    {
+     "name": "RPD",
+     "slug": "rpd",
+     "class": "LMG",
+     "tier": "T1"
+    },
+    {
+     "name": "MG5",
+     "slug": "mg5",
+     "class": "LMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Military L86 LSW",
+     "slug": "military-l86-lsw",
+     "class": "LMG",
+     "tier": "T0"
+    },
+    {
+     "name": "M12",
+     "slug": "m12",
+     "class": "Shotgun",
+     "tier": "T2"
+    },
+    {
+     "name": "SG16-12G",
+     "slug": "sg16-12g",
+     "class": "Shotgun",
+     "tier": "T2"
+    },
+    {
+     "name": "SPAS-12",
+     "slug": "spas-12",
+     "class": "Shotgun",
+     "tier": "T1"
+    },
+    {
+     "name": "Tavor TS12",
+     "slug": "tavor-ts12",
+     "class": "Shotgun",
+     "tier": "T1"
+    }
+   ]
+  },
+  "backup-protection": {
+   "name": "Backup Protection",
+   "id": "wt-6",
+   "classOrder": [
+    "SMG",
+    "LMG",
+    "Rifle",
+    "Assault Rifle",
+    "Marksman Rifle",
+    "Shotgun"
+   ],
+   "weapons": [
+    {
+     "name": "PPSH-41",
+     "slug": "ppsh-41",
+     "class": "SMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Converted SMG-9 A2",
+     "slug": "converted-smg-9-a2",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "MP40",
+     "slug": "mp40",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "Copperhead",
+     "slug": "copperhead",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "Converted SMG-9",
+     "slug": "converted-smg-9",
+     "class": "SMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Naval MP5",
+     "slug": "naval-mp5",
+     "class": "SMG",
+     "tier": "T0"
+    },
+    {
+     "name": "M249",
+     "slug": "m249",
+     "class": "LMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Military M60 E4",
+     "slug": "military-m60-e4",
+     "class": "LMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Black Market M60 E6",
+     "slug": "black-market-m60-e6",
+     "class": "LMG",
+     "tier": "T1"
+    },
+    {
+     "name": "Black Market RPK-74 E",
+     "slug": "black-market-rpk-74-e",
+     "class": "LMG",
+     "tier": "T1"
+    },
+    {
+     "name": "MG5",
+     "slug": "mg5",
+     "class": "LMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Lewis Gun",
+     "slug": "lewis-gun",
+     "class": "LMG",
+     "tier": "T0"
+    },
+    {
+     "name": "M1",
+     "slug": "m1",
+     "class": "Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "FG 42",
+     "slug": "fg-42",
+     "class": "Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "ACE 52",
+     "slug": "ace-52",
+     "class": "Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Urban MDR",
+     "slug": "urban-mdr",
+     "class": "Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "M-16",
+     "slug": "m-16",
+     "class": "Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Avtomat",
+     "slug": "avtomat",
+     "class": "Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Police Mk17",
+     "slug": "police-mk17",
+     "class": "Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "Gewehr 43",
+     "slug": "gewehr-43",
+     "class": "Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "Custom 416 G3",
+     "slug": "custom-416-g3",
+     "class": "Assault Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "FAMAS",
+     "slug": "famas",
+     "class": "Assault Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "AN-94",
+     "slug": "an-94",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "StG 44",
+     "slug": "stg-44",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Type 81",
+     "slug": "type-81",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Classic FAL",
+     "slug": "classic-fal",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "G36-C",
+     "slug": "g36-c",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "DSR-1",
+     "slug": "dsr-1",
+     "class": "Marksman Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Surplus SVD",
+     "slug": "surplus-svd",
+     "class": "Marksman Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "G28",
+     "slug": "g28",
+     "class": "Marksman Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "M700",
+     "slug": "m700",
+     "class": "Marksman Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "Classic M44",
+     "slug": "classic-m44",
+     "class": "Marksman Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "M12",
+     "slug": "m12",
+     "class": "Shotgun",
+     "tier": "T2"
+    },
+    {
+     "name": "SG16-12G",
+     "slug": "sg16-12g",
+     "class": "Shotgun",
+     "tier": "T2"
+    },
+    {
+     "name": "KSG",
+     "slug": "ksg",
+     "class": "Shotgun",
+     "tier": "T1"
+    },
+    {
+     "name": "ACS-12",
+     "slug": "acs-12",
+     "class": "Shotgun",
+     "tier": "T0"
+    }
+   ]
+  },
+  "backup-magazine": {
+   "name": "Backup Magazine",
+   "id": "wt-5",
+   "classOrder": [
+    "SMG",
+    "LMG",
+    "Assault Rifle",
+    "Marksman Rifle",
+    "Rifle",
+    "Shotgun"
+   ],
+   "weapons": [
+    {
+     "name": "First Wave Vector 45 ACP",
+     "slug": "first-wave-vector-45-acp",
+     "class": "SMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Modified USC",
+     "slug": "modified-usc",
+     "class": "SMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Enhanced AUG A3P",
+     "slug": "enhanced-aug-a3p",
+     "class": "SMG",
+     "tier": "T2"
+    },
+    {
+     "name": "PPSH-41",
+     "slug": "ppsh-41",
+     "class": "SMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Converted SMG-9 A2",
+     "slug": "converted-smg-9-a2",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "Police UMP-45",
+     "slug": "police-ump-45",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "Copperhead",
+     "slug": "copperhead",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "Vector 45 ACP",
+     "slug": "vector-45-acp",
+     "class": "SMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Converted SMG-9",
+     "slug": "converted-smg-9",
+     "class": "SMG",
+     "tier": "T0"
+    },
+    {
+     "name": "MPX",
+     "slug": "mpx",
+     "class": "SMG",
+     "tier": "T0"
+    },
+    {
+     "name": "PKM",
+     "slug": "pkm",
+     "class": "LMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Black Market M60 E6",
+     "slug": "black-market-m60-e6",
+     "class": "LMG",
+     "tier": "T1"
+    },
+    {
+     "name": "Black Market RPK-74 E",
+     "slug": "black-market-rpk-74-e",
+     "class": "LMG",
+     "tier": "T1"
+    },
+    {
+     "name": "NEGEV",
+     "slug": "negev",
+     "class": "LMG",
+     "tier": "T1"
+    },
+    {
+     "name": "RPD",
+     "slug": "rpd",
+     "class": "LMG",
+     "tier": "T1"
+    },
+    {
+     "name": "Classic M60",
+     "slug": "classic-m60",
+     "class": "LMG",
+     "tier": "T0"
+    },
+    {
+     "name": "MG5",
+     "slug": "mg5",
+     "class": "LMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Military L86 LSW",
+     "slug": "military-l86-lsw",
+     "class": "LMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Classic RPK 74",
+     "slug": "classic-rpk-74",
+     "class": "LMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Military SA-58",
+     "slug": "military-sa-58",
+     "class": "Assault Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "AN-94",
+     "slug": "an-94",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "StG 44",
+     "slug": "stg-44",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Type 81",
+     "slug": "type-81",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Classic AK-47",
+     "slug": "classic-ak-47",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "Military 416",
+     "slug": "military-416",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "ACR",
+     "slug": "acr",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "Classic FAL",
+     "slug": "classic-fal",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "DSR-1",
+     "slug": "dsr-1",
+     "class": "Marksman Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Surplus SVD",
+     "slug": "surplus-svd",
+     "class": "Marksman Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Converted SRS",
+     "slug": "converted-srs",
+     "class": "Marksman Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "L115A3",
+     "slug": "l115a3",
+     "class": "Marksman Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "G28",
+     "slug": "g28",
+     "class": "Marksman Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "SRS-A1",
+     "slug": "srs-a1",
+     "class": "Marksman Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "Classic M44",
+     "slug": "classic-m44",
+     "class": "Marksman Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "UIC15 MOD2",
+     "slug": "uic15-mod2",
+     "class": "Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "FG 42",
+     "slug": "fg-42",
+     "class": "Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "M-16",
+     "slug": "m-16",
+     "class": "Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Avtomat",
+     "slug": "avtomat",
+     "class": "Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Classic M1A",
+     "slug": "classic-m1a",
+     "class": "Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "Police Mk17",
+     "slug": "police-mk17",
+     "class": "Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "Gewehr 43",
+     "slug": "gewehr-43",
+     "class": "Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "M12",
+     "slug": "m12",
+     "class": "Shotgun",
+     "tier": "T2"
+    },
+    {
+     "name": "RMB-93",
+     "slug": "rmb-93",
+     "class": "Shotgun",
+     "tier": "T2"
+    },
+    {
+     "name": "SG16-12G",
+     "slug": "sg16-12g",
+     "class": "Shotgun",
+     "tier": "T2"
+    },
+    {
+     "name": "SPAS-12",
+     "slug": "spas-12",
+     "class": "Shotgun",
+     "tier": "T1"
+    },
+    {
+     "name": "Tavor TS12",
+     "slug": "tavor-ts12",
+     "class": "Shotgun",
+     "tier": "T1"
+    }
+   ]
+  },
+  "slaughter-fortitude": {
+   "name": "Slaughter Fortitude",
+   "id": "wt-47",
+   "classOrder": [
+    "SMG",
+    "LMG",
+    "Assault Rifle",
+    "Marksman Rifle",
+    "Rifle",
+    "Shotgun"
+   ],
+   "weapons": [
+    {
+     "name": "Converted SMG-9 A2",
+     "slug": "converted-smg-9-a2",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "MP40",
+     "slug": "mp40",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "Police UMP-45",
+     "slug": "police-ump-45",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "Copperhead",
+     "slug": "copperhead",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "PP-19",
+     "slug": "pp-19",
+     "class": "SMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Converted SMG-9",
+     "slug": "converted-smg-9",
+     "class": "SMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Police T821",
+     "slug": "police-t821",
+     "class": "SMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Military M60 E4",
+     "slug": "military-m60-e4",
+     "class": "LMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Black Market M60 E6",
+     "slug": "black-market-m60-e6",
+     "class": "LMG",
+     "tier": "T1"
+    },
+    {
+     "name": "MG5",
+     "slug": "mg5",
+     "class": "LMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Lewis Gun",
+     "slug": "lewis-gun",
+     "class": "LMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Classic RPK 74",
+     "slug": "classic-rpk-74",
+     "class": "LMG",
+     "tier": "T0"
+    },
+    {
+     "name": "FAMAS",
+     "slug": "famas",
+     "class": "Assault Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Police M4",
+     "slug": "police-m4",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "AN-94",
+     "slug": "an-94",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "StG 44",
+     "slug": "stg-44",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Type 81",
+     "slug": "type-81",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Military 416",
+     "slug": "military-416",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "Classic FAL",
+     "slug": "classic-fal",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "G36-C",
+     "slug": "g36-c",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "Surplus SVD",
+     "slug": "surplus-svd",
+     "class": "Marksman Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "L115A3",
+     "slug": "l115a3",
+     "class": "Marksman Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Paratrooper SVD",
+     "slug": "paratrooper-svd",
+     "class": "Marksman Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Tactical .308",
+     "slug": "tactical-308",
+     "class": "Marksman Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "SRS-A1",
+     "slug": "srs-a1",
+     "class": "Marksman Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "Classic M44",
+     "slug": "classic-m44",
+     "class": "Marksman Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "MK 20 SSR",
+     "slug": "mk-20-ssr",
+     "class": "Marksman Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "M1",
+     "slug": "m1",
+     "class": "Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "ACE 52",
+     "slug": "ace-52",
+     "class": "Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "M-16",
+     "slug": "m-16",
+     "class": "Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Avtomat",
+     "slug": "avtomat",
+     "class": "Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Police Mk17",
+     "slug": "police-mk17",
+     "class": "Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "Gewehr 43",
+     "slug": "gewehr-43",
+     "class": "Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "M12",
+     "slug": "m12",
+     "class": "Shotgun",
+     "tier": "T2"
+    },
+    {
+     "name": "SPAS-12",
+     "slug": "spas-12",
+     "class": "Shotgun",
+     "tier": "T1"
+    },
+    {
+     "name": "Tavor TS12",
+     "slug": "tavor-ts12",
+     "class": "Shotgun",
+     "tier": "T1"
+    },
+    {
+     "name": "SASG-12",
+     "slug": "sasg-12",
+     "class": "Shotgun",
+     "tier": "T0"
+    }
+   ]
+  },
+  "slaughter-healing": {
+   "name": "Slaughter Healing",
+   "id": "wt-48",
+   "classOrder": [
+    "SMG",
+    "Marksman Rifle",
+    "LMG",
+    "Assault Rifle",
+    "Rifle",
+    "Shotgun"
+   ],
+   "weapons": [
+    {
+     "name": "Modified USC",
+     "slug": "modified-usc",
+     "class": "SMG",
+     "tier": "T2"
+    },
+    {
+     "name": "PPSH-41",
+     "slug": "ppsh-41",
+     "class": "SMG",
+     "tier": "T2"
+    },
+    {
+     "name": "MP40",
+     "slug": "mp40",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "Copperhead",
+     "slug": "copperhead",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "Naval MP5",
+     "slug": "naval-mp5",
+     "class": "SMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Surplus SVD",
+     "slug": "surplus-svd",
+     "class": "Marksman Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "L115A3",
+     "slug": "l115a3",
+     "class": "Marksman Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "SRS-A1",
+     "slug": "srs-a1",
+     "class": "Marksman Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "Military M60 E4",
+     "slug": "military-m60-e4",
+     "class": "LMG",
+     "tier": "T2"
+    },
+    {
+     "name": "UMAX100",
+     "slug": "umax100",
+     "class": "LMG",
+     "tier": "T1"
+    },
+    {
+     "name": "MG5",
+     "slug": "mg5",
+     "class": "LMG",
+     "tier": "T0"
+    },
+    {
+     "name": "FAMAS",
+     "slug": "famas",
+     "class": "Assault Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Police M4",
+     "slug": "police-m4",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Type 81",
+     "slug": "type-81",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Mk16",
+     "slug": "mk16",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "Classic FAL",
+     "slug": "classic-fal",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "ACE 52",
+     "slug": "ace-52",
+     "class": "Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "M-16",
+     "slug": "m-16",
+     "class": "Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Avtomat",
+     "slug": "avtomat",
+     "class": "Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "1886",
+     "slug": "1886",
+     "class": "Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "M12",
+     "slug": "m12",
+     "class": "Shotgun",
+     "tier": "T2"
+    },
+    {
+     "name": "SPAS-12",
+     "slug": "spas-12",
+     "class": "Shotgun",
+     "tier": "T1"
+    },
+    {
+     "name": "ACS-12",
+     "slug": "acs-12",
+     "class": "Shotgun",
+     "tier": "T0"
+    }
+   ]
+  },
+  "conceited": {
+   "name": "Conceited",
+   "id": "wt-12",
+   "classOrder": [
+    "SMG",
+    "Shotgun",
+    "LMG"
+   ],
+   "weapons": [
+    {
+     "name": "MP7",
+     "slug": "mp7",
+     "class": "SMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Enhanced AUG A3P",
+     "slug": "enhanced-aug-a3p",
+     "class": "SMG",
+     "tier": "T2"
+    },
+    {
+     "name": "MP40",
+     "slug": "mp40",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "Naval MP5",
+     "slug": "naval-mp5",
+     "class": "SMG",
+     "tier": "T0"
+    },
+    {
+     "name": "RMB-93",
+     "slug": "rmb-93",
+     "class": "Shotgun",
+     "tier": "T2"
+    },
+    {
+     "name": "Tavor TS12",
+     "slug": "tavor-ts12",
+     "class": "Shotgun",
+     "tier": "T1"
+    },
+    {
+     "name": "Super 90",
+     "slug": "super-90",
+     "class": "Shotgun",
+     "tier": "T0"
+    },
+    {
+     "name": "ACS-12",
+     "slug": "acs-12",
+     "class": "Shotgun",
+     "tier": "T0"
+    },
+    {
+     "name": "Military M60 E4",
+     "slug": "military-m60-e4",
+     "class": "LMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Black Market RPK-74 E",
+     "slug": "black-market-rpk-74-e",
+     "class": "LMG",
+     "tier": "T1"
+    },
+    {
+     "name": "MG5",
+     "slug": "mg5",
+     "class": "LMG",
+     "tier": "T0"
+    }
+   ]
+  },
+  "shooting-repair": {
+   "name": "Shooting Repair",
+   "id": "wt-46",
+   "classOrder": [
+    "SMG",
+    "LMG",
+    "Assault Rifle"
+   ],
+   "weapons": [
+    {
+     "name": "MP7",
+     "slug": "mp7",
+     "class": "SMG",
+     "tier": "T2"
+    },
+    {
+     "name": "First Wave Vector 45 ACP",
+     "slug": "first-wave-vector-45-acp",
+     "class": "SMG",
+     "tier": "T2"
+    },
+    {
+     "name": "AUG A3 Para XS",
+     "slug": "aug-a3-para-xs",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "P90",
+     "slug": "p90",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "MP40",
+     "slug": "mp40",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "Vector 45 ACP",
+     "slug": "vector-45-acp",
+     "class": "SMG",
+     "tier": "T0"
+    },
+    {
+     "name": "PP-19",
+     "slug": "pp-19",
+     "class": "SMG",
+     "tier": "T0"
+    },
+    {
+     "name": "MPX",
+     "slug": "mpx",
+     "class": "SMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Naval MP5",
+     "slug": "naval-mp5",
+     "class": "SMG",
+     "tier": "T0"
+    },
+    {
+     "name": "M249",
+     "slug": "m249",
+     "class": "LMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Military M60 E4",
+     "slug": "military-m60-e4",
+     "class": "LMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Stoner LAMG",
+     "slug": "stoner-lamg",
+     "class": "LMG",
+     "tier": "T2"
+    },
+    {
+     "name": "NEGEV",
+     "slug": "negev",
+     "class": "LMG",
+     "tier": "T1"
+    },
+    {
+     "name": "UMAX100",
+     "slug": "umax100",
+     "class": "LMG",
+     "tier": "T1"
+    },
+    {
+     "name": "Classic M60",
+     "slug": "classic-m60",
+     "class": "LMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Military L86 LSW",
+     "slug": "military-l86-lsw",
+     "class": "LMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Custom 416 G3",
+     "slug": "custom-416-g3",
+     "class": "Assault Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "FAMAS",
+     "slug": "famas",
+     "class": "Assault Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Lightweight M4",
+     "slug": "lightweight-m4",
+     "class": "Assault Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "M8A1",
+     "slug": "m8a1",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "StG 44",
+     "slug": "stg-44",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "ACR",
+     "slug": "acr",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "Mk16",
+     "slug": "mk16",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    }
+   ]
+  },
+  "steady-suppression": {
+   "name": "Steady Suppression",
+   "id": "wt-55",
+   "classOrder": [
+    "SMG",
+    "Assault Rifle",
+    "Marksman Rifle",
+    "LMG",
+    "Rifle",
+    "Shotgun"
+   ],
+   "weapons": [
+    {
+     "name": "Enhanced AUG A3P",
+     "slug": "enhanced-aug-a3p",
+     "class": "SMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Converted SMG-9 A2",
+     "slug": "converted-smg-9-a2",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "Copperhead",
+     "slug": "copperhead",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "Converted SMG-9",
+     "slug": "converted-smg-9",
+     "class": "SMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Naval MP5",
+     "slug": "naval-mp5",
+     "class": "SMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Black Market AK-74",
+     "slug": "black-market-ak-74",
+     "class": "Assault Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Police M4",
+     "slug": "police-m4",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Enhanced ACR-E",
+     "slug": "enhanced-acr-e",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Type 81",
+     "slug": "type-81",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Classic AK-47",
+     "slug": "classic-ak-47",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "Classic FAL",
+     "slug": "classic-fal",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "M700 Carbon",
+     "slug": "m700-carbon",
+     "class": "Marksman Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "DSR-1",
+     "slug": "dsr-1",
+     "class": "Marksman Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "L115A3",
+     "slug": "l115a3",
+     "class": "Marksman Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Classic M44",
+     "slug": "classic-m44",
+     "class": "Marksman Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "MK 20 SSR",
+     "slug": "mk-20-ssr",
+     "class": "Marksman Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "Military MK46",
+     "slug": "military-mk46",
+     "class": "LMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Black Market RPK-74 E",
+     "slug": "black-market-rpk-74-e",
+     "class": "LMG",
+     "tier": "T1"
+    },
+    {
+     "name": "RPD",
+     "slug": "rpd",
+     "class": "LMG",
+     "tier": "T1"
+    },
+    {
+     "name": "MG5",
+     "slug": "mg5",
+     "class": "LMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Avtomat",
+     "slug": "avtomat",
+     "class": "Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Gewehr 43",
+     "slug": "gewehr-43",
+     "class": "Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "RU12SG",
+     "slug": "ru12sg",
+     "class": "Shotgun",
+     "tier": "T1"
+    },
+    {
+     "name": "Tavor TS12",
+     "slug": "tavor-ts12",
+     "class": "Shotgun",
+     "tier": "T1"
+    }
+   ]
+  },
+  "precise-support": {
+   "name": "Precise Support",
+   "id": "wt-38",
+   "classOrder": [
+    "SMG",
+    "LMG",
+    "Assault Rifle",
+    "Shotgun"
+   ],
+   "weapons": [
+    {
+     "name": "Enhanced AUG A3P",
+     "slug": "enhanced-aug-a3p",
+     "class": "SMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Copperhead",
+     "slug": "copperhead",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "Police T821",
+     "slug": "police-t821",
+     "class": "SMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Naval MP5",
+     "slug": "naval-mp5",
+     "class": "SMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Stoner LAMG",
+     "slug": "stoner-lamg",
+     "class": "LMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Black Market RPK-74 E",
+     "slug": "black-market-rpk-74-e",
+     "class": "LMG",
+     "tier": "T1"
+    },
+    {
+     "name": "MG5",
+     "slug": "mg5",
+     "class": "LMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Lewis Gun",
+     "slug": "lewis-gun",
+     "class": "LMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Classic RPK 74",
+     "slug": "classic-rpk-74",
+     "class": "LMG",
+     "tier": "T0"
+    },
+    {
+     "name": "FAMAS",
+     "slug": "famas",
+     "class": "Assault Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Lightweight M4",
+     "slug": "lightweight-m4",
+     "class": "Assault Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Police M4",
+     "slug": "police-m4",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "StG 44",
+     "slug": "stg-44",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Type 81",
+     "slug": "type-81",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Military 416",
+     "slug": "military-416",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "Classic FAL",
+     "slug": "classic-fal",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "G36-C",
+     "slug": "g36-c",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "Double Barrel Shotgun",
+     "slug": "double-barrel-shotgun",
+     "class": "Shotgun",
+     "tier": "T2"
+    },
+    {
+     "name": "Tavor TS12",
+     "slug": "tavor-ts12",
+     "class": "Shotgun",
+     "tier": "T1"
+    },
+    {
+     "name": "M870",
+     "slug": "m870",
+     "class": "Shotgun",
+     "tier": "T0"
+    },
+    {
+     "name": "SASG-12",
+     "slug": "sasg-12",
+     "class": "Shotgun",
+     "tier": "T0"
+    }
+   ]
+  },
+  "precise-crit": {
+   "name": "Precise Crit",
+   "id": "wt-36",
+   "classOrder": [
+    "LMG",
+    "Assault Rifle",
+    "Shotgun",
+    "SMG"
+   ],
+   "weapons": [
+    {
+     "name": "Military M60 E4",
+     "slug": "military-m60-e4",
+     "class": "LMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Military MK46",
+     "slug": "military-mk46",
+     "class": "LMG",
+     "tier": "T2"
+    },
+    {
+     "name": "PKM",
+     "slug": "pkm",
+     "class": "LMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Black Market M60 E6",
+     "slug": "black-market-m60-e6",
+     "class": "LMG",
+     "tier": "T1"
+    },
+    {
+     "name": "Black Market RPK-74 E",
+     "slug": "black-market-rpk-74-e",
+     "class": "LMG",
+     "tier": "T1"
+    },
+    {
+     "name": "NEGEV",
+     "slug": "negev",
+     "class": "LMG",
+     "tier": "T1"
+    },
+    {
+     "name": "RPD",
+     "slug": "rpd",
+     "class": "LMG",
+     "tier": "T1"
+    },
+    {
+     "name": "Classic M60",
+     "slug": "classic-m60",
+     "class": "LMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Military L86 LSW",
+     "slug": "military-l86-lsw",
+     "class": "LMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Lewis Gun",
+     "slug": "lewis-gun",
+     "class": "LMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Classic RPK 74",
+     "slug": "classic-rpk-74",
+     "class": "LMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Military SA-58",
+     "slug": "military-sa-58",
+     "class": "Assault Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Type 81",
+     "slug": "type-81",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Classic AK-47",
+     "slug": "classic-ak-47",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "ACR",
+     "slug": "acr",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "G36-C",
+     "slug": "g36-c",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "Double Barrel Shotgun",
+     "slug": "double-barrel-shotgun",
+     "class": "Shotgun",
+     "tier": "T2"
+    },
+    {
+     "name": "RMB-93",
+     "slug": "rmb-93",
+     "class": "Shotgun",
+     "tier": "T2"
+    },
+    {
+     "name": "SG16-12G",
+     "slug": "sg16-12g",
+     "class": "Shotgun",
+     "tier": "T2"
+    },
+    {
+     "name": "Super 90",
+     "slug": "super-90",
+     "class": "Shotgun",
+     "tier": "T0"
+    },
+    {
+     "name": "M870",
+     "slug": "m870",
+     "class": "Shotgun",
+     "tier": "T0"
+    },
+    {
+     "name": "ACS-12",
+     "slug": "acs-12",
+     "class": "Shotgun",
+     "tier": "T0"
+    },
+    {
+     "name": "MP7",
+     "slug": "mp7",
+     "class": "SMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Modified USC",
+     "slug": "modified-usc",
+     "class": "SMG",
+     "tier": "T2"
+    },
+    {
+     "name": "PPSH-41",
+     "slug": "ppsh-41",
+     "class": "SMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Converted SMG-9 A2",
+     "slug": "converted-smg-9-a2",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "P90",
+     "slug": "p90",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "Copperhead",
+     "slug": "copperhead",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "PP-19",
+     "slug": "pp-19",
+     "class": "SMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Police T821",
+     "slug": "police-t821",
+     "class": "SMG",
+     "tier": "T0"
+    },
+    {
+     "name": "MPX",
+     "slug": "mpx",
+     "class": "SMG",
+     "tier": "T0"
+    }
+   ]
+  },
+  "blood-for-blood": {
+   "name": "Blood for Blood",
+   "id": "wt-7",
+   "classOrder": [
+    "SMG",
+    "LMG",
+    "Assault Rifle",
+    "Marksman Rifle",
+    "Shotgun",
+    "Rifle"
+   ],
+   "weapons": [
+    {
+     "name": "PPSH-41",
+     "slug": "ppsh-41",
+     "class": "SMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Police UMP-45",
+     "slug": "police-ump-45",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "PP-19",
+     "slug": "pp-19",
+     "class": "SMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Police T821",
+     "slug": "police-t821",
+     "class": "SMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Naval MP5",
+     "slug": "naval-mp5",
+     "class": "SMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Military M60 E4",
+     "slug": "military-m60-e4",
+     "class": "LMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Stoner LAMG",
+     "slug": "stoner-lamg",
+     "class": "LMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Military MK46",
+     "slug": "military-mk46",
+     "class": "LMG",
+     "tier": "T2"
+    },
+    {
+     "name": "PKM",
+     "slug": "pkm",
+     "class": "LMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Black Market RPK-74 E",
+     "slug": "black-market-rpk-74-e",
+     "class": "LMG",
+     "tier": "T1"
+    },
+    {
+     "name": "MG5",
+     "slug": "mg5",
+     "class": "LMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Lewis Gun",
+     "slug": "lewis-gun",
+     "class": "LMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Classic RPK 74",
+     "slug": "classic-rpk-74",
+     "class": "LMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Black Market AK-74",
+     "slug": "black-market-ak-74",
+     "class": "Assault Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "FAMAS",
+     "slug": "famas",
+     "class": "Assault Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Military SA-58",
+     "slug": "military-sa-58",
+     "class": "Assault Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Lightweight M4",
+     "slug": "lightweight-m4",
+     "class": "Assault Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "AN-94",
+     "slug": "an-94",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Military 416",
+     "slug": "military-416",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "Classic FAL",
+     "slug": "classic-fal",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "G36-C",
+     "slug": "g36-c",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "M700 Carbon",
+     "slug": "m700-carbon",
+     "class": "Marksman Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "DSR-1",
+     "slug": "dsr-1",
+     "class": "Marksman Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Hunting M44",
+     "slug": "hunting-m44",
+     "class": "Marksman Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Surplus SVD",
+     "slug": "surplus-svd",
+     "class": "Marksman Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Converted SRS",
+     "slug": "converted-srs",
+     "class": "Marksman Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "L115A3",
+     "slug": "l115a3",
+     "class": "Marksman Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Tactical .308",
+     "slug": "tactical-308",
+     "class": "Marksman Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Classic M44",
+     "slug": "classic-m44",
+     "class": "Marksman Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "MK 20 SSR",
+     "slug": "mk-20-ssr",
+     "class": "Marksman Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "M12",
+     "slug": "m12",
+     "class": "Shotgun",
+     "tier": "T2"
+    },
+    {
+     "name": "RMB-93",
+     "slug": "rmb-93",
+     "class": "Shotgun",
+     "tier": "T2"
+    },
+    {
+     "name": "Tavor TS12",
+     "slug": "tavor-ts12",
+     "class": "Shotgun",
+     "tier": "T1"
+    },
+    {
+     "name": "SASG-12",
+     "slug": "sasg-12",
+     "class": "Shotgun",
+     "tier": "T0"
+    },
+    {
+     "name": "UIC15 MOD2",
+     "slug": "uic15-mod2",
+     "class": "Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "ACE 52",
+     "slug": "ace-52",
+     "class": "Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "M-16",
+     "slug": "m-16",
+     "class": "Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "1886",
+     "slug": "1886",
+     "class": "Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "Gewehr 43",
+     "slug": "gewehr-43",
+     "class": "Rifle",
+     "tier": "T0"
+    }
+   ]
+  },
+  "precise-trauma": {
+   "name": "Precise Trauma",
+   "id": "wt-37",
+   "classOrder": [
+    "LMG",
+    "Assault Rifle",
+    "Marksman Rifle",
+    "Rifle",
+    "Shotgun",
+    "SMG"
+   ],
+   "weapons": [
+    {
+     "name": "M249",
+     "slug": "m249",
+     "class": "LMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Stoner LAMG",
+     "slug": "stoner-lamg",
+     "class": "LMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Military MK46",
+     "slug": "military-mk46",
+     "class": "LMG",
+     "tier": "T2"
+    },
+    {
+     "name": "RPD",
+     "slug": "rpd",
+     "class": "LMG",
+     "tier": "T1"
+    },
+    {
+     "name": "Classic M60",
+     "slug": "classic-m60",
+     "class": "LMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Military L86 LSW",
+     "slug": "military-l86-lsw",
+     "class": "LMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Custom 416 G3",
+     "slug": "custom-416-g3",
+     "class": "Assault Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Black Market AK-74",
+     "slug": "black-market-ak-74",
+     "class": "Assault Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Lightweight M4",
+     "slug": "lightweight-m4",
+     "class": "Assault Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "ACR",
+     "slug": "acr",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "DSR-1",
+     "slug": "dsr-1",
+     "class": "Marksman Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Hunting M44",
+     "slug": "hunting-m44",
+     "class": "Marksman Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "G28",
+     "slug": "g28",
+     "class": "Marksman Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Paratrooper SVD",
+     "slug": "paratrooper-svd",
+     "class": "Marksman Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "SRS-A1",
+     "slug": "srs-a1",
+     "class": "Marksman Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "Classic M44",
+     "slug": "classic-m44",
+     "class": "Marksman Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "MK 20 SSR",
+     "slug": "mk-20-ssr",
+     "class": "Marksman Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "ACE 52",
+     "slug": "ace-52",
+     "class": "Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Urban MDR",
+     "slug": "urban-mdr",
+     "class": "Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Classic M1A",
+     "slug": "classic-m1a",
+     "class": "Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "Double Barrel Shotgun",
+     "slug": "double-barrel-shotgun",
+     "class": "Shotgun",
+     "tier": "T2"
+    },
+    {
+     "name": "SG16-12G",
+     "slug": "sg16-12g",
+     "class": "Shotgun",
+     "tier": "T2"
+    },
+    {
+     "name": "SPAS-12",
+     "slug": "spas-12",
+     "class": "Shotgun",
+     "tier": "T1"
+    },
+    {
+     "name": "RU12SG",
+     "slug": "ru12sg",
+     "class": "Shotgun",
+     "tier": "T1"
+    },
+    {
+     "name": "Tavor TS12",
+     "slug": "tavor-ts12",
+     "class": "Shotgun",
+     "tier": "T1"
+    },
+    {
+     "name": "M870",
+     "slug": "m870",
+     "class": "Shotgun",
+     "tier": "T0"
+    },
+    {
+     "name": "SASG-12",
+     "slug": "sasg-12",
+     "class": "Shotgun",
+     "tier": "T0"
+    },
+    {
+     "name": "MP7",
+     "slug": "mp7",
+     "class": "SMG",
+     "tier": "T2"
+    },
+    {
+     "name": "First Wave Vector 45 ACP",
+     "slug": "first-wave-vector-45-acp",
+     "class": "SMG",
+     "tier": "T2"
+    },
+    {
+     "name": "AUG A3 Para XS",
+     "slug": "aug-a3-para-xs",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "PP-19",
+     "slug": "pp-19",
+     "class": "SMG",
+     "tier": "T0"
+    }
+   ]
+  },
+  "misdirection-insurance": {
+   "name": "Misdirection Insurance",
+   "id": "wt-29",
+   "classOrder": [
+    "SMG",
+    "LMG",
+    "Assault Rifle",
+    "Rifle",
+    "Shotgun",
+    "Marksman Rifle"
+   ],
+   "weapons": [
+    {
+     "name": "Modified USC",
+     "slug": "modified-usc",
+     "class": "SMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Enhanced AUG A3P",
+     "slug": "enhanced-aug-a3p",
+     "class": "SMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Converted SMG-9 A2",
+     "slug": "converted-smg-9-a2",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "P90",
+     "slug": "p90",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "Police UMP-45",
+     "slug": "police-ump-45",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "Copperhead",
+     "slug": "copperhead",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "Vector 45 ACP",
+     "slug": "vector-45-acp",
+     "class": "SMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Converted SMG-9",
+     "slug": "converted-smg-9",
+     "class": "SMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Naval MP5",
+     "slug": "naval-mp5",
+     "class": "SMG",
+     "tier": "T0"
+    },
+    {
+     "name": "M249",
+     "slug": "m249",
+     "class": "LMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Stoner LAMG",
+     "slug": "stoner-lamg",
+     "class": "LMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Military MK46",
+     "slug": "military-mk46",
+     "class": "LMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Black Market M60 E6",
+     "slug": "black-market-m60-e6",
+     "class": "LMG",
+     "tier": "T1"
+    },
+    {
+     "name": "NEGEV",
+     "slug": "negev",
+     "class": "LMG",
+     "tier": "T1"
+    },
+    {
+     "name": "RPD",
+     "slug": "rpd",
+     "class": "LMG",
+     "tier": "T1"
+    },
+    {
+     "name": "Classic M60",
+     "slug": "classic-m60",
+     "class": "LMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Lewis Gun",
+     "slug": "lewis-gun",
+     "class": "LMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Custom 416 G3",
+     "slug": "custom-416-g3",
+     "class": "Assault Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Black Market AK-74",
+     "slug": "black-market-ak-74",
+     "class": "Assault Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Lightweight M4",
+     "slug": "lightweight-m4",
+     "class": "Assault Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "M8A1",
+     "slug": "m8a1",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "AN-94",
+     "slug": "an-94",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "StG 44",
+     "slug": "stg-44",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Type 81",
+     "slug": "type-81",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Classic AK-47",
+     "slug": "classic-ak-47",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "ACR",
+     "slug": "acr",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "G36-C",
+     "slug": "g36-c",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "UIC15 MOD2",
+     "slug": "uic15-mod2",
+     "class": "Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "M1",
+     "slug": "m1",
+     "class": "Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "FG 42",
+     "slug": "fg-42",
+     "class": "Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Urban MDR",
+     "slug": "urban-mdr",
+     "class": "Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "M-16",
+     "slug": "m-16",
+     "class": "Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "G3",
+     "slug": "g3",
+     "class": "Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Police Mk17",
+     "slug": "police-mk17",
+     "class": "Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "1886",
+     "slug": "1886",
+     "class": "Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "Double Barrel Shotgun",
+     "slug": "double-barrel-shotgun",
+     "class": "Shotgun",
+     "tier": "T2"
+    },
+    {
+     "name": "M12",
+     "slug": "m12",
+     "class": "Shotgun",
+     "tier": "T2"
+    },
+    {
+     "name": "RMB-93",
+     "slug": "rmb-93",
+     "class": "Shotgun",
+     "tier": "T2"
+    },
+    {
+     "name": "SG16-12G",
+     "slug": "sg16-12g",
+     "class": "Shotgun",
+     "tier": "T2"
+    },
+    {
+     "name": "SASG-12",
+     "slug": "sasg-12",
+     "class": "Shotgun",
+     "tier": "T0"
+    },
+    {
+     "name": "DSR-1",
+     "slug": "dsr-1",
+     "class": "Marksman Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Hunting M44",
+     "slug": "hunting-m44",
+     "class": "Marksman Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Converted SRS",
+     "slug": "converted-srs",
+     "class": "Marksman Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "G28",
+     "slug": "g28",
+     "class": "Marksman Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Tactical .308",
+     "slug": "tactical-308",
+     "class": "Marksman Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "M700",
+     "slug": "m700",
+     "class": "Marksman Rifle",
+     "tier": "T0"
+    }
+   ]
+  },
+  "rapid-charge": {
+   "name": "Rapid Charge",
+   "id": "wt-42",
+   "classOrder": [
+    "SMG",
+    "Assault Rifle",
+    "Shotgun",
+    "LMG"
+   ],
+   "weapons": [
+    {
+     "name": "MP7",
+     "slug": "mp7",
+     "class": "SMG",
+     "tier": "T2"
+    },
+    {
+     "name": "First Wave Vector 45 ACP",
+     "slug": "first-wave-vector-45-acp",
+     "class": "SMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Modified USC",
+     "slug": "modified-usc",
+     "class": "SMG",
+     "tier": "T2"
+    },
+    {
+     "name": "AUG A3 Para XS",
+     "slug": "aug-a3-para-xs",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "MP40",
+     "slug": "mp40",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "Vector 45 ACP",
+     "slug": "vector-45-acp",
+     "class": "SMG",
+     "tier": "T0"
+    },
+    {
+     "name": "MPX",
+     "slug": "mpx",
+     "class": "SMG",
+     "tier": "T0"
+    },
+    {
+     "name": "FAMAS",
+     "slug": "famas",
+     "class": "Assault Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Military SA-58",
+     "slug": "military-sa-58",
+     "class": "Assault Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Police M4",
+     "slug": "police-m4",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Enhanced ACR-E",
+     "slug": "enhanced-acr-e",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Classic AK-47",
+     "slug": "classic-ak-47",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "Mk16",
+     "slug": "mk16",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "Double Barrel Shotgun",
+     "slug": "double-barrel-shotgun",
+     "class": "Shotgun",
+     "tier": "T2"
+    },
+    {
+     "name": "RMB-93",
+     "slug": "rmb-93",
+     "class": "Shotgun",
+     "tier": "T2"
+    },
+    {
+     "name": "Super 90",
+     "slug": "super-90",
+     "class": "Shotgun",
+     "tier": "T0"
+    },
+    {
+     "name": "SASG-12",
+     "slug": "sasg-12",
+     "class": "Shotgun",
+     "tier": "T0"
+    },
+    {
+     "name": "Military M60 E4",
+     "slug": "military-m60-e4",
+     "class": "LMG",
+     "tier": "T2"
+    },
+    {
+     "name": "PKM",
+     "slug": "pkm",
+     "class": "LMG",
+     "tier": "T2"
+    },
+    {
+     "name": "UMAX100",
+     "slug": "umax100",
+     "class": "LMG",
+     "tier": "T1"
+    },
+    {
+     "name": "RPD",
+     "slug": "rpd",
+     "class": "LMG",
+     "tier": "T1"
+    }
+   ]
+  },
+  "proficient-reload": {
+   "name": "Proficient Reload",
+   "id": "wt-40",
+   "classOrder": [
+    "SMG",
+    "Assault Rifle",
+    "Rifle",
+    "Marksman Rifle",
+    "Shotgun",
+    "LMG"
+   ],
+   "weapons": [
+    {
+     "name": "Enhanced AUG A3P",
+     "slug": "enhanced-aug-a3p",
+     "class": "SMG",
+     "tier": "T2"
+    },
+    {
+     "name": "P90",
+     "slug": "p90",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "Police UMP-45",
+     "slug": "police-ump-45",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "Vector 45 ACP",
+     "slug": "vector-45-acp",
+     "class": "SMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Converted SMG-9",
+     "slug": "converted-smg-9",
+     "class": "SMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Custom 416 G3",
+     "slug": "custom-416-g3",
+     "class": "Assault Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "M8A1",
+     "slug": "m8a1",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "AN-94",
+     "slug": "an-94",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Classic AK-47",
+     "slug": "classic-ak-47",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "UIC15 MOD2",
+     "slug": "uic15-mod2",
+     "class": "Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Urban MDR",
+     "slug": "urban-mdr",
+     "class": "Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "M-16",
+     "slug": "m-16",
+     "class": "Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "G3",
+     "slug": "g3",
+     "class": "Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Classic M1A",
+     "slug": "classic-m1a",
+     "class": "Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "1886",
+     "slug": "1886",
+     "class": "Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "Converted SRS",
+     "slug": "converted-srs",
+     "class": "Marksman Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "G28",
+     "slug": "g28",
+     "class": "Marksman Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "M700",
+     "slug": "m700",
+     "class": "Marksman Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "SG16-12G",
+     "slug": "sg16-12g",
+     "class": "Shotgun",
+     "tier": "T2"
+    },
+    {
+     "name": "SPAS-12",
+     "slug": "spas-12",
+     "class": "Shotgun",
+     "tier": "T1"
+    },
+    {
+     "name": "KSG",
+     "slug": "ksg",
+     "class": "Shotgun",
+     "tier": "T1"
+    },
+    {
+     "name": "RU12SG",
+     "slug": "ru12sg",
+     "class": "Shotgun",
+     "tier": "T1"
+    },
+    {
+     "name": "ACS-12",
+     "slug": "acs-12",
+     "class": "Shotgun",
+     "tier": "T0"
+    },
+    {
+     "name": "M249",
+     "slug": "m249",
+     "class": "LMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Stoner LAMG",
+     "slug": "stoner-lamg",
+     "class": "LMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Black Market M60 E6",
+     "slug": "black-market-m60-e6",
+     "class": "LMG",
+     "tier": "T1"
+    },
+    {
+     "name": "RPD",
+     "slug": "rpd",
+     "class": "LMG",
+     "tier": "T1"
+    }
+   ]
+  },
+  "tactical-reload": {
+   "name": "Tactical Reload",
+   "id": "wt-61",
+   "classOrder": [
+    "SMG",
+    "LMG",
+    "Assault Rifle",
+    "Marksman Rifle",
+    "Shotgun",
+    "Rifle"
+   ],
+   "weapons": [
+    {
+     "name": "First Wave Vector 45 ACP",
+     "slug": "first-wave-vector-45-acp",
+     "class": "SMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Modified USC",
+     "slug": "modified-usc",
+     "class": "SMG",
+     "tier": "T2"
+    },
+    {
+     "name": "PPSH-41",
+     "slug": "ppsh-41",
+     "class": "SMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Converted SMG-9 A2",
+     "slug": "converted-smg-9-a2",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "MP40",
+     "slug": "mp40",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "Converted SMG-9",
+     "slug": "converted-smg-9",
+     "class": "SMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Police T821",
+     "slug": "police-t821",
+     "class": "SMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Stoner LAMG",
+     "slug": "stoner-lamg",
+     "class": "LMG",
+     "tier": "T2"
+    },
+    {
+     "name": "PKM",
+     "slug": "pkm",
+     "class": "LMG",
+     "tier": "T2"
+    },
+    {
+     "name": "RPD",
+     "slug": "rpd",
+     "class": "LMG",
+     "tier": "T1"
+    },
+    {
+     "name": "MG5",
+     "slug": "mg5",
+     "class": "LMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Classic RPK 74",
+     "slug": "classic-rpk-74",
+     "class": "LMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Lightweight M4",
+     "slug": "lightweight-m4",
+     "class": "Assault Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Police M4",
+     "slug": "police-m4",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Classic AK-47",
+     "slug": "classic-ak-47",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "Classic FAL",
+     "slug": "classic-fal",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "Hunting M44",
+     "slug": "hunting-m44",
+     "class": "Marksman Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "L115A3",
+     "slug": "l115a3",
+     "class": "Marksman Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "G28",
+     "slug": "g28",
+     "class": "Marksman Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Classic M44",
+     "slug": "classic-m44",
+     "class": "Marksman Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "MK 20 SSR",
+     "slug": "mk-20-ssr",
+     "class": "Marksman Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "SG16-12G",
+     "slug": "sg16-12g",
+     "class": "Shotgun",
+     "tier": "T2"
+    },
+    {
+     "name": "KSG",
+     "slug": "ksg",
+     "class": "Shotgun",
+     "tier": "T1"
+    },
+    {
+     "name": "RU12SG",
+     "slug": "ru12sg",
+     "class": "Shotgun",
+     "tier": "T1"
+    },
+    {
+     "name": "Tavor TS12",
+     "slug": "tavor-ts12",
+     "class": "Shotgun",
+     "tier": "T1"
+    },
+    {
+     "name": "M870",
+     "slug": "m870",
+     "class": "Shotgun",
+     "tier": "T0"
+    },
+    {
+     "name": "SASG-12",
+     "slug": "sasg-12",
+     "class": "Shotgun",
+     "tier": "T0"
+    },
+    {
+     "name": "ACE 52",
+     "slug": "ace-52",
+     "class": "Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Urban MDR",
+     "slug": "urban-mdr",
+     "class": "Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "G3",
+     "slug": "g3",
+     "class": "Rifle",
+     "tier": "T1"
+    }
+   ]
+  },
+  "steady-aim": {
+   "name": "Steady Aim",
+   "id": "wt-51",
+   "classOrder": [
+    "Assault Rifle",
+    "Marksman Rifle",
+    "Rifle"
+   ],
+   "weapons": [
+    {
+     "name": "Military SA-58",
+     "slug": "military-sa-58",
+     "class": "Assault Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Police M4",
+     "slug": "police-m4",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Military 416",
+     "slug": "military-416",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "M700 Carbon",
+     "slug": "m700-carbon",
+     "class": "Marksman Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Paratrooper SVD",
+     "slug": "paratrooper-svd",
+     "class": "Marksman Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "M700",
+     "slug": "m700",
+     "class": "Marksman Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "UIC15 MOD2",
+     "slug": "uic15-mod2",
+     "class": "Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Urban MDR",
+     "slug": "urban-mdr",
+     "class": "Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Gewehr 43",
+     "slug": "gewehr-43",
+     "class": "Rifle",
+     "tier": "T0"
+    }
+   ]
+  },
+  "steady-hands": {
+   "name": "Steady Hands",
+   "id": "wt-53",
+   "classOrder": [
+    "SMG",
+    "LMG",
+    "Assault Rifle",
+    "Shotgun"
+   ],
+   "weapons": [
+    {
+     "name": "Modified USC",
+     "slug": "modified-usc",
+     "class": "SMG",
+     "tier": "T2"
+    },
+    {
+     "name": "P90",
+     "slug": "p90",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "PP-19",
+     "slug": "pp-19",
+     "class": "SMG",
+     "tier": "T0"
+    },
+    {
+     "name": "MPX",
+     "slug": "mpx",
+     "class": "SMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Naval MP5",
+     "slug": "naval-mp5",
+     "class": "SMG",
+     "tier": "T0"
+    },
+    {
+     "name": "M249",
+     "slug": "m249",
+     "class": "LMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Stoner LAMG",
+     "slug": "stoner-lamg",
+     "class": "LMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Black Market M60 E6",
+     "slug": "black-market-m60-e6",
+     "class": "LMG",
+     "tier": "T1"
+    },
+    {
+     "name": "NEGEV",
+     "slug": "negev",
+     "class": "LMG",
+     "tier": "T1"
+    },
+    {
+     "name": "RPD",
+     "slug": "rpd",
+     "class": "LMG",
+     "tier": "T1"
+    },
+    {
+     "name": "MG5",
+     "slug": "mg5",
+     "class": "LMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Classic RPK 74",
+     "slug": "classic-rpk-74",
+     "class": "LMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Custom 416 G3",
+     "slug": "custom-416-g3",
+     "class": "Assault Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Lightweight M4",
+     "slug": "lightweight-m4",
+     "class": "Assault Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "M8A1",
+     "slug": "m8a1",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Classic AK-47",
+     "slug": "classic-ak-47",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "Military 416",
+     "slug": "military-416",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "Classic FAL",
+     "slug": "classic-fal",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "M12",
+     "slug": "m12",
+     "class": "Shotgun",
+     "tier": "T2"
+    },
+    {
+     "name": "RMB-93",
+     "slug": "rmb-93",
+     "class": "Shotgun",
+     "tier": "T2"
+    },
+    {
+     "name": "KSG",
+     "slug": "ksg",
+     "class": "Shotgun",
+     "tier": "T1"
+    },
+    {
+     "name": "Super 90",
+     "slug": "super-90",
+     "class": "Shotgun",
+     "tier": "T0"
+    }
+   ]
+  },
+  "steady-reload": {
+   "name": "Steady Reload",
+   "id": "wt-54",
+   "classOrder": [
+    "Marksman Rifle",
+    "Rifle",
+    "Shotgun"
+   ],
+   "weapons": [
+    {
+     "name": "Hunting M44",
+     "slug": "hunting-m44",
+     "class": "Marksman Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "L115A3",
+     "slug": "l115a3",
+     "class": "Marksman Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Tactical .308",
+     "slug": "tactical-308",
+     "class": "Marksman Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "M700",
+     "slug": "m700",
+     "class": "Marksman Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "FG 42",
+     "slug": "fg-42",
+     "class": "Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "1886",
+     "slug": "1886",
+     "class": "Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "Double Barrel Shotgun",
+     "slug": "double-barrel-shotgun",
+     "class": "Shotgun",
+     "tier": "T2"
+    },
+    {
+     "name": "KSG",
+     "slug": "ksg",
+     "class": "Shotgun",
+     "tier": "T1"
+    },
+    {
+     "name": "M870",
+     "slug": "m870",
+     "class": "Shotgun",
+     "tier": "T0"
+    }
+   ]
+  },
+  "swift-taunt": {
+   "name": "Swift Taunt",
+   "id": "wt-60",
+   "classOrder": [
+    "SMG",
+    "LMG",
+    "Assault Rifle",
+    "Marksman Rifle",
+    "Shotgun",
+    "Rifle"
+   ],
+   "weapons": [
+    {
+     "name": "Enhanced AUG A3P",
+     "slug": "enhanced-aug-a3p",
+     "class": "SMG",
+     "tier": "T2"
+    },
+    {
+     "name": "AUG A3 Para XS",
+     "slug": "aug-a3-para-xs",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "P90",
+     "slug": "p90",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "Copperhead",
+     "slug": "copperhead",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "Vector 45 ACP",
+     "slug": "vector-45-acp",
+     "class": "SMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Police T821",
+     "slug": "police-t821",
+     "class": "SMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Naval MP5",
+     "slug": "naval-mp5",
+     "class": "SMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Military M60 E4",
+     "slug": "military-m60-e4",
+     "class": "LMG",
+     "tier": "T2"
+    },
+    {
+     "name": "PKM",
+     "slug": "pkm",
+     "class": "LMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Black Market M60 E6",
+     "slug": "black-market-m60-e6",
+     "class": "LMG",
+     "tier": "T1"
+    },
+    {
+     "name": "Black Market RPK-74 E",
+     "slug": "black-market-rpk-74-e",
+     "class": "LMG",
+     "tier": "T1"
+    },
+    {
+     "name": "UMAX100",
+     "slug": "umax100",
+     "class": "LMG",
+     "tier": "T1"
+    },
+    {
+     "name": "MG5",
+     "slug": "mg5",
+     "class": "LMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Military L86 LSW",
+     "slug": "military-l86-lsw",
+     "class": "LMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Classic RPK 74",
+     "slug": "classic-rpk-74",
+     "class": "LMG",
+     "tier": "T0"
+    },
+    {
+     "name": "FAMAS",
+     "slug": "famas",
+     "class": "Assault Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Military SA-58",
+     "slug": "military-sa-58",
+     "class": "Assault Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Enhanced ACR-E",
+     "slug": "enhanced-acr-e",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "M8A1",
+     "slug": "m8a1",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Type 81",
+     "slug": "type-81",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Military 416",
+     "slug": "military-416",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "Mk16",
+     "slug": "mk16",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "Classic FAL",
+     "slug": "classic-fal",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "M700 Carbon",
+     "slug": "m700-carbon",
+     "class": "Marksman Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Surplus SVD",
+     "slug": "surplus-svd",
+     "class": "Marksman Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "L115A3",
+     "slug": "l115a3",
+     "class": "Marksman Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Paratrooper SVD",
+     "slug": "paratrooper-svd",
+     "class": "Marksman Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "M700",
+     "slug": "m700",
+     "class": "Marksman Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "Classic M44",
+     "slug": "classic-m44",
+     "class": "Marksman Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "MK 20 SSR",
+     "slug": "mk-20-ssr",
+     "class": "Marksman Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "Double Barrel Shotgun",
+     "slug": "double-barrel-shotgun",
+     "class": "Shotgun",
+     "tier": "T2"
+    },
+    {
+     "name": "M12",
+     "slug": "m12",
+     "class": "Shotgun",
+     "tier": "T2"
+    },
+    {
+     "name": "KSG",
+     "slug": "ksg",
+     "class": "Shotgun",
+     "tier": "T1"
+    },
+    {
+     "name": "SASG-12",
+     "slug": "sasg-12",
+     "class": "Shotgun",
+     "tier": "T0"
+    },
+    {
+     "name": "FG 42",
+     "slug": "fg-42",
+     "class": "Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "ACE 52",
+     "slug": "ace-52",
+     "class": "Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "G3",
+     "slug": "g3",
+     "class": "Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "1886",
+     "slug": "1886",
+     "class": "Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "Gewehr 43",
+     "slug": "gewehr-43",
+     "class": "Rifle",
+     "tier": "T0"
+    }
+   ]
+  },
+  "ammo-supply": {
+   "name": "Ammo Supply",
+   "id": "wt-3",
+   "classOrder": [
+    "LMG",
+    "Assault Rifle",
+    "Rifle",
+    "Marksman Rifle",
+    "Shotgun"
+   ],
+   "weapons": [
+    {
+     "name": "M249",
+     "slug": "m249",
+     "class": "LMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Military M60 E4",
+     "slug": "military-m60-e4",
+     "class": "LMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Military MK46",
+     "slug": "military-mk46",
+     "class": "LMG",
+     "tier": "T2"
+    },
+    {
+     "name": "PKM",
+     "slug": "pkm",
+     "class": "LMG",
+     "tier": "T2"
+    },
+    {
+     "name": "NEGEV",
+     "slug": "negev",
+     "class": "LMG",
+     "tier": "T1"
+    },
+    {
+     "name": "RPD",
+     "slug": "rpd",
+     "class": "LMG",
+     "tier": "T1"
+    },
+    {
+     "name": "Classic M60",
+     "slug": "classic-m60",
+     "class": "LMG",
+     "tier": "T0"
+    },
+    {
+     "name": "MG5",
+     "slug": "mg5",
+     "class": "LMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Military L86 LSW",
+     "slug": "military-l86-lsw",
+     "class": "LMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Lewis Gun",
+     "slug": "lewis-gun",
+     "class": "LMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Custom 416 G3",
+     "slug": "custom-416-g3",
+     "class": "Assault Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Black Market AK-74",
+     "slug": "black-market-ak-74",
+     "class": "Assault Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "FAMAS",
+     "slug": "famas",
+     "class": "Assault Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Military SA-58",
+     "slug": "military-sa-58",
+     "class": "Assault Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "M8A1",
+     "slug": "m8a1",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Classic AK-47",
+     "slug": "classic-ak-47",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "ACR",
+     "slug": "acr",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "Classic FAL",
+     "slug": "classic-fal",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "G36-C",
+     "slug": "g36-c",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "ACE 52",
+     "slug": "ace-52",
+     "class": "Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Classic M1A",
+     "slug": "classic-m1a",
+     "class": "Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "1886",
+     "slug": "1886",
+     "class": "Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "M700 Carbon",
+     "slug": "m700-carbon",
+     "class": "Marksman Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "DSR-1",
+     "slug": "dsr-1",
+     "class": "Marksman Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Hunting M44",
+     "slug": "hunting-m44",
+     "class": "Marksman Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Surplus SVD",
+     "slug": "surplus-svd",
+     "class": "Marksman Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "L115A3",
+     "slug": "l115a3",
+     "class": "Marksman Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "G28",
+     "slug": "g28",
+     "class": "Marksman Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Tactical .308",
+     "slug": "tactical-308",
+     "class": "Marksman Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "M700",
+     "slug": "m700",
+     "class": "Marksman Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "M12",
+     "slug": "m12",
+     "class": "Shotgun",
+     "tier": "T2"
+    },
+    {
+     "name": "SG16-12G",
+     "slug": "sg16-12g",
+     "class": "Shotgun",
+     "tier": "T2"
+    },
+    {
+     "name": "KSG",
+     "slug": "ksg",
+     "class": "Shotgun",
+     "tier": "T1"
+    },
+    {
+     "name": "M870",
+     "slug": "m870",
+     "class": "Shotgun",
+     "tier": "T0"
+    }
+   ]
+  },
+  "ammo-charge": {
+   "name": "Ammo Charge",
+   "id": "wt-2",
+   "classOrder": [
+    "SMG",
+    "Marksman Rifle",
+    "Rifle",
+    "Shotgun",
+    "LMG",
+    "Assault Rifle"
+   ],
+   "weapons": [
+    {
+     "name": "MP7",
+     "slug": "mp7",
+     "class": "SMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Modified USC",
+     "slug": "modified-usc",
+     "class": "SMG",
+     "tier": "T2"
+    },
+    {
+     "name": "AUG A3 Para XS",
+     "slug": "aug-a3-para-xs",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "Police UMP-45",
+     "slug": "police-ump-45",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "Vector 45 ACP",
+     "slug": "vector-45-acp",
+     "class": "SMG",
+     "tier": "T0"
+    },
+    {
+     "name": "M700 Carbon",
+     "slug": "m700-carbon",
+     "class": "Marksman Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "G28",
+     "slug": "g28",
+     "class": "Marksman Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "MK 20 SSR",
+     "slug": "mk-20-ssr",
+     "class": "Marksman Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "M1",
+     "slug": "m1",
+     "class": "Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Urban MDR",
+     "slug": "urban-mdr",
+     "class": "Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "M-16",
+     "slug": "m-16",
+     "class": "Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Classic M1A",
+     "slug": "classic-m1a",
+     "class": "Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "SG16-12G",
+     "slug": "sg16-12g",
+     "class": "Shotgun",
+     "tier": "T2"
+    },
+    {
+     "name": "Super 90",
+     "slug": "super-90",
+     "class": "Shotgun",
+     "tier": "T0"
+    },
+    {
+     "name": "M870",
+     "slug": "m870",
+     "class": "Shotgun",
+     "tier": "T0"
+    },
+    {
+     "name": "ACS-12",
+     "slug": "acs-12",
+     "class": "Shotgun",
+     "tier": "T0"
+    },
+    {
+     "name": "M249",
+     "slug": "m249",
+     "class": "LMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Black Market M60 E6",
+     "slug": "black-market-m60-e6",
+     "class": "LMG",
+     "tier": "T1"
+    },
+    {
+     "name": "Military L86 LSW",
+     "slug": "military-l86-lsw",
+     "class": "LMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Custom 416 G3",
+     "slug": "custom-416-g3",
+     "class": "Assault Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Military SA-58",
+     "slug": "military-sa-58",
+     "class": "Assault Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Enhanced ACR-E",
+     "slug": "enhanced-acr-e",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "AN-94",
+     "slug": "an-94",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    }
+   ]
+  },
+  "damage-trade": {
+   "name": "Damage Trade",
+   "id": "wt-15",
+   "classOrder": [
+    "SMG",
+    "LMG",
+    "Assault Rifle",
+    "Marksman Rifle",
+    "Shotgun",
+    "Rifle"
+   ],
+   "weapons": [
+    {
+     "name": "Modified USC",
+     "slug": "modified-usc",
+     "class": "SMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Enhanced AUG A3P",
+     "slug": "enhanced-aug-a3p",
+     "class": "SMG",
+     "tier": "T2"
+    },
+    {
+     "name": "PPSH-41",
+     "slug": "ppsh-41",
+     "class": "SMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Converted SMG-9 A2",
+     "slug": "converted-smg-9-a2",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "P90",
+     "slug": "p90",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "Police UMP-45",
+     "slug": "police-ump-45",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "Copperhead",
+     "slug": "copperhead",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "PP-19",
+     "slug": "pp-19",
+     "class": "SMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Converted SMG-9",
+     "slug": "converted-smg-9",
+     "class": "SMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Police T821",
+     "slug": "police-t821",
+     "class": "SMG",
+     "tier": "T0"
+    },
+    {
+     "name": "MPX",
+     "slug": "mpx",
+     "class": "SMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Military M60 E4",
+     "slug": "military-m60-e4",
+     "class": "LMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Military MK46",
+     "slug": "military-mk46",
+     "class": "LMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Black Market M60 E6",
+     "slug": "black-market-m60-e6",
+     "class": "LMG",
+     "tier": "T1"
+    },
+    {
+     "name": "Black Market RPK-74 E",
+     "slug": "black-market-rpk-74-e",
+     "class": "LMG",
+     "tier": "T1"
+    },
+    {
+     "name": "NEGEV",
+     "slug": "negev",
+     "class": "LMG",
+     "tier": "T1"
+    },
+    {
+     "name": "Classic M60",
+     "slug": "classic-m60",
+     "class": "LMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Military L86 LSW",
+     "slug": "military-l86-lsw",
+     "class": "LMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Lewis Gun",
+     "slug": "lewis-gun",
+     "class": "LMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Classic RPK 74",
+     "slug": "classic-rpk-74",
+     "class": "LMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Black Market AK-74",
+     "slug": "black-market-ak-74",
+     "class": "Assault Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "FAMAS",
+     "slug": "famas",
+     "class": "Assault Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "M8A1",
+     "slug": "m8a1",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "AN-94",
+     "slug": "an-94",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "StG 44",
+     "slug": "stg-44",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Type 81",
+     "slug": "type-81",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Military 416",
+     "slug": "military-416",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "ACR",
+     "slug": "acr",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "G36-C",
+     "slug": "g36-c",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "DSR-1",
+     "slug": "dsr-1",
+     "class": "Marksman Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Converted SRS",
+     "slug": "converted-srs",
+     "class": "Marksman Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Tactical .308",
+     "slug": "tactical-308",
+     "class": "Marksman Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "SRS-A1",
+     "slug": "srs-a1",
+     "class": "Marksman Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "M700",
+     "slug": "m700",
+     "class": "Marksman Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "Classic M44",
+     "slug": "classic-m44",
+     "class": "Marksman Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "MK 20 SSR",
+     "slug": "mk-20-ssr",
+     "class": "Marksman Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "SPAS-12",
+     "slug": "spas-12",
+     "class": "Shotgun",
+     "tier": "T1"
+    },
+    {
+     "name": "KSG",
+     "slug": "ksg",
+     "class": "Shotgun",
+     "tier": "T1"
+    },
+    {
+     "name": "RU12SG",
+     "slug": "ru12sg",
+     "class": "Shotgun",
+     "tier": "T1"
+    },
+    {
+     "name": "Tavor TS12",
+     "slug": "tavor-ts12",
+     "class": "Shotgun",
+     "tier": "T1"
+    },
+    {
+     "name": "Super 90",
+     "slug": "super-90",
+     "class": "Shotgun",
+     "tier": "T0"
+    },
+    {
+     "name": "UIC15 MOD2",
+     "slug": "uic15-mod2",
+     "class": "Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "M1",
+     "slug": "m1",
+     "class": "Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "FG 42",
+     "slug": "fg-42",
+     "class": "Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Avtomat",
+     "slug": "avtomat",
+     "class": "Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "G3",
+     "slug": "g3",
+     "class": "Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "1886",
+     "slug": "1886",
+     "class": "Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "Gewehr 43",
+     "slug": "gewehr-43",
+     "class": "Rifle",
+     "tier": "T0"
+    }
+   ]
+  },
+  "enhancement-trade": {
+   "name": "Enhancement Trade",
+   "id": "wt-17",
+   "classOrder": [
+    "LMG",
+    "Marksman Rifle",
+    "Rifle",
+    "Shotgun",
+    "SMG",
+    "Assault Rifle"
+   ],
+   "weapons": [
+    {
+     "name": "M249",
+     "slug": "m249",
+     "class": "LMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Stoner LAMG",
+     "slug": "stoner-lamg",
+     "class": "LMG",
+     "tier": "T2"
+    },
+    {
+     "name": "NEGEV",
+     "slug": "negev",
+     "class": "LMG",
+     "tier": "T1"
+    },
+    {
+     "name": "UMAX100",
+     "slug": "umax100",
+     "class": "LMG",
+     "tier": "T1"
+    },
+    {
+     "name": "Lewis Gun",
+     "slug": "lewis-gun",
+     "class": "LMG",
+     "tier": "T0"
+    },
+    {
+     "name": "M700 Carbon",
+     "slug": "m700-carbon",
+     "class": "Marksman Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Hunting M44",
+     "slug": "hunting-m44",
+     "class": "Marksman Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Paratrooper SVD",
+     "slug": "paratrooper-svd",
+     "class": "Marksman Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Tactical .308",
+     "slug": "tactical-308",
+     "class": "Marksman Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Classic M44",
+     "slug": "classic-m44",
+     "class": "Marksman Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "MK 20 SSR",
+     "slug": "mk-20-ssr",
+     "class": "Marksman Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "M1",
+     "slug": "m1",
+     "class": "Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "ACE 52",
+     "slug": "ace-52",
+     "class": "Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Urban MDR",
+     "slug": "urban-mdr",
+     "class": "Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Classic M1A",
+     "slug": "classic-m1a",
+     "class": "Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "Double Barrel Shotgun",
+     "slug": "double-barrel-shotgun",
+     "class": "Shotgun",
+     "tier": "T2"
+    },
+    {
+     "name": "RU12SG",
+     "slug": "ru12sg",
+     "class": "Shotgun",
+     "tier": "T1"
+    },
+    {
+     "name": "Tavor TS12",
+     "slug": "tavor-ts12",
+     "class": "Shotgun",
+     "tier": "T1"
+    },
+    {
+     "name": "Super 90",
+     "slug": "super-90",
+     "class": "Shotgun",
+     "tier": "T0"
+    },
+    {
+     "name": "MP7",
+     "slug": "mp7",
+     "class": "SMG",
+     "tier": "T2"
+    },
+    {
+     "name": "Enhanced AUG A3P",
+     "slug": "enhanced-aug-a3p",
+     "class": "SMG",
+     "tier": "T2"
+    },
+    {
+     "name": "AUG A3 Para XS",
+     "slug": "aug-a3-para-xs",
+     "class": "SMG",
+     "tier": "T1"
+    },
+    {
+     "name": "PP-19",
+     "slug": "pp-19",
+     "class": "SMG",
+     "tier": "T0"
+    },
+    {
+     "name": "MPX",
+     "slug": "mpx",
+     "class": "SMG",
+     "tier": "T0"
+    },
+    {
+     "name": "Custom 416 G3",
+     "slug": "custom-416-g3",
+     "class": "Assault Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Lightweight M4",
+     "slug": "lightweight-m4",
+     "class": "Assault Rifle",
+     "tier": "T2"
+    },
+    {
+     "name": "Enhanced ACR-E",
+     "slug": "enhanced-acr-e",
+     "class": "Assault Rifle",
+     "tier": "T1"
+    },
+    {
+     "name": "Mk16",
+     "slug": "mk16",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    },
+    {
+     "name": "G36-C",
+     "slug": "g36-c",
+     "class": "Assault Rifle",
+     "tier": "T0"
+    }
+   ]
+  }
+ }
+}

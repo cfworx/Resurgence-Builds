@@ -30,7 +30,6 @@ const WEBP_QUALITY = 80;
 const DISPLAY_WIDTHS = {
   'workbench-bg.png': 1200,         // Background
   'builder-bg.png': 1200,           // Background
-  '404-mj.png': 800,                // 404 art
   'resurgence-builds-official-logo.png': 512, // OG/schema only
   'resurgence-youtube-banner.png': 1200,
   'division-resurgence-interactive-map-og.png': 1200, // OG image

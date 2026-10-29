@@ -5,8 +5,8 @@ updatedDate: 2026-10-24
 author: "RapidF5"
 description: "The Division Resurgence shadow-drops on PC via Early Access! Find out all the details on cross-play, 60 FPS support, and controller setups."
 tags: ["PC", "Early Access", "Cross-Play"]
-featuredImage: "/images/news/division-resurgence-phase-2-pc-era-hero.webp"
-imageAlt: "The Division Resurgence logo on a PC monitor next to an orange-lit gaming PC"
+featuredImage: "/images/news/division-resurgence-pc-launch-tech-wing-1200.webp"
+imageAlt: "An agent walking into the Tech Wing of the Base of Operations in The Division Resurgence, next to the Medical Wing sign"
 shareTitle: "Flex on console players"
 shareText: "Tweet this to let the timeline know your PC is currently melting."
 

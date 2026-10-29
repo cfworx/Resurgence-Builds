@@ -1,0 +1,2096 @@
+[
+ {
+  "entry": "Fearless Charge",
+  "slug": "fearless-charge",
+  "pieceCount": 5,
+  "tileCount": 10,
+  "extraListings": [],
+  "source": {
+   "recording": "2026-10-29_11-40-15.mp4",
+   "seconds": [
+    1.0,
+    3.4
+   ]
+  },
+  "evidence": "evidence/body-armor-talents/sources/fearless-charge.webp",
+  "checked": "2026-10-29",
+  "pieces": [
+   {
+    "name": "X-TREYME Pro Ribcage",
+    "slot": "Body Armor",
+    "armoryTier": "T2",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Ops Armor",
+    "slot": "Body Armor",
+    "armoryTier": "T2",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 140.5 s"
+   },
+   {
+    "name": "Athena Missile Vest",
+    "slot": "Body Armor",
+    "armoryTier": "T1",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Mechanized Infantry Armor",
+    "slot": "Body Armor",
+    "armoryTier": "T0",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Ranger Ballistics Vest",
+    "slot": "Body Armor",
+    "armoryTier": "T0",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 133.0 s"
+   }
+  ]
+ },
+ {
+  "entry": "Socialite",
+  "slug": "socialite",
+  "pieceCount": 6,
+  "tileCount": 12,
+  "extraListings": [],
+  "source": {
+   "recording": "2026-10-29_11-40-15.mp4",
+   "seconds": [
+    4.2,
+    6.4
+   ]
+  },
+  "evidence": "evidence/body-armor-talents/sources/socialite.webp",
+  "checked": "2026-10-29",
+  "pieces": [
+   {
+    "name": "X-TREYME Pro Ribcage",
+    "slot": "Body Armor",
+    "armoryTier": "T2",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "\"Big Drum\" Body Armor",
+    "slot": "Body Armor",
+    "armoryTier": "T2",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Flimsy Body Armor v2",
+    "slot": "Body Armor",
+    "armoryTier": "T1",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "\"Ericht\" Chest System",
+    "slot": "Body Armor",
+    "armoryTier": "T0",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 25.5 s"
+   },
+   {
+    "name": "Mechanized Infantry Armor",
+    "slot": "Body Armor",
+    "armoryTier": "T0",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Stridsvast Combat Vest",
+    "slot": "Body Armor",
+    "armoryTier": "T0",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "Screen_Recording_20261029_131044_The_Division_Resurgence.mp4 at 25.5 s"
+   }
+  ]
+ },
+ {
+  "entry": "Emergency Retreat",
+  "slug": "emergency-retreat",
+  "pieceCount": 7,
+  "tileCount": 14,
+  "extraListings": [],
+  "source": {
+   "recording": "2026-10-29_11-40-15.mp4",
+   "seconds": [
+    7.2,
+    10.8
+   ]
+  },
+  "evidence": "evidence/body-armor-talents/sources/emergency-retreat.webp",
+  "checked": "2026-10-29",
+  "pieces": [
+   {
+    "name": "Chatzatz Chest",
+    "slot": "Body Armor",
+    "armoryTier": "T2",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Ops Armor",
+    "slot": "Body Armor",
+    "armoryTier": "T2",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 140.5 s"
+   },
+   {
+    "name": "Athena Missile Vest",
+    "slot": "Body Armor",
+    "armoryTier": "T1",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Flimsy Body Armor v2",
+    "slot": "Body Armor",
+    "armoryTier": "T1",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "\"Ericht\" Chest System",
+    "slot": "Body Armor",
+    "armoryTier": "T0",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 25.5 s"
+   },
+   {
+    "name": "Mechanized Infantry Armor",
+    "slot": "Body Armor",
+    "armoryTier": "T0",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Stridsvast Combat Vest",
+    "slot": "Body Armor",
+    "armoryTier": "T0",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "Screen_Recording_20261029_131044_The_Division_Resurgence.mp4 at 25.5 s"
+   }
+  ]
+ },
+ {
+  "entry": "Toymaker",
+  "slug": "toymaker",
+  "pieceCount": 5,
+  "tileCount": 10,
+  "extraListings": [],
+  "source": {
+   "recording": "2026-10-29_11-40-15.mp4",
+   "seconds": [
+    11.6,
+    13.8
+   ]
+  },
+  "evidence": "evidence/body-armor-talents/sources/toymaker.webp",
+  "checked": "2026-10-29",
+  "pieces": [
+   {
+    "name": "\"Big Drum\" Body Armor",
+    "slot": "Body Armor",
+    "armoryTier": "T2",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Ops Armor",
+    "slot": "Body Armor",
+    "armoryTier": "T2",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 140.5 s"
+   },
+   {
+    "name": "Flimsy Body Armor v1",
+    "slot": "Body Armor",
+    "armoryTier": "T1",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 14.0 s"
+   },
+   {
+    "name": "Flimsy Body Armor v2",
+    "slot": "Body Armor",
+    "armoryTier": "T1",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "\"Ericht\" Chest System",
+    "slot": "Body Armor",
+    "armoryTier": "T0",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 25.5 s"
+   }
+  ]
+ },
+ {
+  "entry": "Territory Expansion",
+  "slug": "territory-expansion",
+  "pieceCount": 6,
+  "tileCount": 12,
+  "extraListings": [],
+  "source": {
+   "recording": "2026-10-29_11-40-15.mp4",
+   "seconds": [
+    15.0,
+    18.0
+   ]
+  },
+  "evidence": "evidence/body-armor-talents/sources/territory-expansion.webp",
+  "checked": "2026-10-29",
+  "pieces": [
+   {
+    "name": "X-TREYME Pro Ribcage",
+    "slot": "Body Armor",
+    "armoryTier": "T2",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Ops Armor",
+    "slot": "Body Armor",
+    "armoryTier": "T2",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 140.5 s"
+   },
+   {
+    "name": "Athena Missile Vest",
+    "slot": "Body Armor",
+    "armoryTier": "T1",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Phalanx Precision Vest",
+    "slot": "Body Armor",
+    "armoryTier": "T1",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Flimsy Body Armor v2",
+    "slot": "Body Armor",
+    "armoryTier": "T1",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Ranger Ballistics Vest",
+    "slot": "Body Armor",
+    "armoryTier": "T0",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 133.0 s"
+   }
+  ]
+ },
+ {
+  "entry": "Accelerated Charge",
+  "slug": "accelerated-charge",
+  "pieceCount": 6,
+  "tileCount": 12,
+  "extraListings": [],
+  "source": {
+   "recording": "2026-10-29_11-40-15.mp4",
+   "seconds": [
+    18.8,
+    21.0
+   ]
+  },
+  "evidence": "evidence/body-armor-talents/sources/accelerated-charge.webp",
+  "checked": "2026-10-29",
+  "pieces": [
+   {
+    "name": "X-TREYME Pro Ribcage",
+    "slot": "Body Armor",
+    "armoryTier": "T2",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "\"Big Drum\" Body Armor",
+    "slot": "Body Armor",
+    "armoryTier": "T2",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Ops Armor",
+    "slot": "Body Armor",
+    "armoryTier": "T2",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 140.5 s"
+   },
+   {
+    "name": "Athena Missile Vest",
+    "slot": "Body Armor",
+    "armoryTier": "T1",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Phalanx Precision Vest",
+    "slot": "Body Armor",
+    "armoryTier": "T1",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Ranger Ballistics Vest",
+    "slot": "Body Armor",
+    "armoryTier": "T0",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 133.0 s"
+   }
+  ]
+ },
+ {
+  "entry": "Duality",
+  "slug": "duality",
+  "pieceCount": 4,
+  "tileCount": 8,
+  "extraListings": [],
+  "source": {
+   "recording": "2026-10-29_11-40-15.mp4",
+   "seconds": [
+    21.8,
+    23.8
+   ]
+  },
+  "evidence": "evidence/body-armor-talents/sources/duality.webp",
+  "checked": "2026-10-29",
+  "pieces": [
+   {
+    "name": "Chatzatz Chest",
+    "slot": "Body Armor",
+    "armoryTier": "T2",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Athena Missile Vest",
+    "slot": "Body Armor",
+    "armoryTier": "T1",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Flimsy Body Armor v2",
+    "slot": "Body Armor",
+    "armoryTier": "T1",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "\"Ericht\" Chest System",
+    "slot": "Body Armor",
+    "armoryTier": "T0",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 25.5 s"
+   }
+  ]
+ },
+ {
+  "entry": "Crossfire",
+  "slug": "crossfire",
+  "pieceCount": 6,
+  "tileCount": 12,
+  "extraListings": [],
+  "source": {
+   "recording": "2026-10-29_11-40-15.mp4",
+   "seconds": [
+    24.6,
+    30.0
+   ]
+  },
+  "evidence": "evidence/body-armor-talents/sources/crossfire.webp",
+  "checked": "2026-10-29",
+  "pieces": [
+   {
+    "name": "X-TREYME Pro Ribcage",
+    "slot": "Body Armor",
+    "armoryTier": "T2",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "\"Big Drum\" Body Armor",
+    "slot": "Body Armor",
+    "armoryTier": "T2",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Flimsy Body Armor v1",
+    "slot": "Body Armor",
+    "armoryTier": "T1",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 14.0 s"
+   },
+   {
+    "name": "Phalanx Precision Vest",
+    "slot": "Body Armor",
+    "armoryTier": "T1",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Stridsvast Combat Vest",
+    "slot": "Body Armor",
+    "armoryTier": "T0",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "Screen_Recording_20261029_131044_The_Division_Resurgence.mp4 at 25.5 s"
+   },
+   {
+    "name": "Ranger Ballistics Vest",
+    "slot": "Body Armor",
+    "armoryTier": "T0",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 133.0 s"
+   }
+  ]
+ },
+ {
+  "entry": "Glass Cannon",
+  "slug": "glass-cannon",
+  "pieceCount": 7,
+  "tileCount": 14,
+  "extraListings": [],
+  "source": {
+   "recording": "2026-10-29_11-40-15.mp4",
+   "seconds": [
+    31.4,
+    34.2
+   ]
+  },
+  "evidence": "evidence/body-armor-talents/sources/glass-cannon.webp",
+  "checked": "2026-10-29",
+  "pieces": [
+   {
+    "name": "Chatzatz Chest",
+    "slot": "Body Armor",
+    "armoryTier": "T2",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "\"Big Drum\" Body Armor",
+    "slot": "Body Armor",
+    "armoryTier": "T2",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Athena Missile Vest",
+    "slot": "Body Armor",
+    "armoryTier": "T1",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Phalanx Precision Vest",
+    "slot": "Body Armor",
+    "armoryTier": "T1",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Flimsy Body Armor v2",
+    "slot": "Body Armor",
+    "armoryTier": "T1",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Mechanized Infantry Armor",
+    "slot": "Body Armor",
+    "armoryTier": "T0",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Stridsvast Combat Vest",
+    "slot": "Body Armor",
+    "armoryTier": "T0",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "Screen_Recording_20261029_131044_The_Division_Resurgence.mp4 at 25.5 s"
+   }
+  ]
+ },
+ {
+  "entry": "Hypervigilant",
+  "slug": "hypervigilant",
+  "pieceCount": 6,
+  "tileCount": 12,
+  "extraListings": [],
+  "source": {
+   "recording": "2026-10-29_11-40-15.mp4",
+   "seconds": [
+    35.0,
+    36.8
+   ]
+  },
+  "evidence": "evidence/body-armor-talents/sources/hypervigilant.webp",
+  "checked": "2026-10-29",
+  "pieces": [
+   {
+    "name": "Chatzatz Chest",
+    "slot": "Body Armor",
+    "armoryTier": "T2",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "\"Big Drum\" Body Armor",
+    "slot": "Body Armor",
+    "armoryTier": "T2",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Flimsy Body Armor v1",
+    "slot": "Body Armor",
+    "armoryTier": "T1",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 14.0 s"
+   },
+   {
+    "name": "Phalanx Precision Vest",
+    "slot": "Body Armor",
+    "armoryTier": "T1",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "\"Ericht\" Chest System",
+    "slot": "Body Armor",
+    "armoryTier": "T0",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 25.5 s"
+   },
+   {
+    "name": "Stridsvast Combat Vest",
+    "slot": "Body Armor",
+    "armoryTier": "T0",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "Screen_Recording_20261029_131044_The_Division_Resurgence.mp4 at 25.5 s"
+   }
+  ]
+ },
+ {
+  "entry": "Nothing to Lose",
+  "slug": "nothing-to-lose",
+  "pieceCount": 7,
+  "tileCount": 14,
+  "extraListings": [],
+  "source": {
+   "recording": "2026-10-29_11-40-15.mp4",
+   "seconds": [
+    37.6,
+    40.2
+   ]
+  },
+  "evidence": "evidence/body-armor-talents/sources/nothing-to-lose.webp",
+  "checked": "2026-10-29",
+  "pieces": [
+   {
+    "name": "Chatzatz Chest",
+    "slot": "Body Armor",
+    "armoryTier": "T2",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Flimsy Body Armor v1",
+    "slot": "Body Armor",
+    "armoryTier": "T1",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 14.0 s"
+   },
+   {
+    "name": "Phalanx Precision Vest",
+    "slot": "Body Armor",
+    "armoryTier": "T1",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Flimsy Body Armor v2",
+    "slot": "Body Armor",
+    "armoryTier": "T1",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "\"Ericht\" Chest System",
+    "slot": "Body Armor",
+    "armoryTier": "T0",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 25.5 s"
+   },
+   {
+    "name": "Mechanized Infantry Armor",
+    "slot": "Body Armor",
+    "armoryTier": "T0",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Stridsvast Combat Vest",
+    "slot": "Body Armor",
+    "armoryTier": "T0",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "Screen_Recording_20261029_131044_The_Division_Resurgence.mp4 at 25.5 s"
+   }
+  ]
+ },
+ {
+  "entry": "Boosted Shield",
+  "slug": "boosted-shield",
+  "pieceCount": 4,
+  "tileCount": 8,
+  "extraListings": [],
+  "source": {
+   "recording": "2026-10-29_11-40-15.mp4",
+   "seconds": [
+    41.0,
+    42.8
+   ]
+  },
+  "evidence": "evidence/body-armor-talents/sources/boosted-shield.webp",
+  "checked": "2026-10-29",
+  "pieces": [
+   {
+    "name": "X-TREYME Pro Ribcage",
+    "slot": "Body Armor",
+    "armoryTier": "T2",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Athena Missile Vest",
+    "slot": "Body Armor",
+    "armoryTier": "T1",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Mechanized Infantry Armor",
+    "slot": "Body Armor",
+    "armoryTier": "T0",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Ranger Ballistics Vest",
+    "slot": "Body Armor",
+    "armoryTier": "T0",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 133.0 s"
+   }
+  ]
+ },
+ {
+  "entry": "Energy Drink",
+  "slug": "energy-drink",
+  "pieceCount": 5,
+  "tileCount": 10,
+  "extraListings": [],
+  "source": {
+   "recording": "2026-10-29_11-40-15.mp4",
+   "seconds": [
+    44.6,
+    46.8
+   ]
+  },
+  "evidence": "evidence/body-armor-talents/sources/energy-drink.webp",
+  "checked": "2026-10-29",
+  "pieces": [
+   {
+    "name": "X-TREYME Pro Ribcage",
+    "slot": "Body Armor",
+    "armoryTier": "T2",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "\"Big Drum\" Body Armor",
+    "slot": "Body Armor",
+    "armoryTier": "T2",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Phalanx Precision Vest",
+    "slot": "Body Armor",
+    "armoryTier": "T1",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Stridsvast Combat Vest",
+    "slot": "Body Armor",
+    "armoryTier": "T0",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "Screen_Recording_20261029_131044_The_Division_Resurgence.mp4 at 25.5 s"
+   },
+   {
+    "name": "Ranger Ballistics Vest",
+    "slot": "Body Armor",
+    "armoryTier": "T0",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 133.0 s"
+   }
+  ]
+ },
+ {
+  "entry": "Second Wind",
+  "slug": "second-wind",
+  "pieceCount": 5,
+  "tileCount": 10,
+  "extraListings": [],
+  "source": {
+   "recording": "2026-10-29_11-40-15.mp4",
+   "seconds": [
+    47.8,
+    50.0
+   ]
+  },
+  "evidence": "evidence/body-armor-talents/sources/second-wind.webp",
+  "checked": "2026-10-29",
+  "pieces": [
+   {
+    "name": "X-TREYME Pro Ribcage",
+    "slot": "Body Armor",
+    "armoryTier": "T2",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Chatzatz Chest",
+    "slot": "Body Armor",
+    "armoryTier": "T2",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Flimsy Body Armor v1",
+    "slot": "Body Armor",
+    "armoryTier": "T1",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 14.0 s"
+   },
+   {
+    "name": "Phalanx Precision Vest",
+    "slot": "Body Armor",
+    "armoryTier": "T1",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "\"Ericht\" Chest System",
+    "slot": "Body Armor",
+    "armoryTier": "T0",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 25.5 s"
+   }
+  ]
+ },
+ {
+  "entry": "Deep Focus",
+  "slug": "deep-focus",
+  "pieceCount": 7,
+  "tileCount": 14,
+  "extraListings": [],
+  "source": {
+   "recording": "2026-10-29_11-40-15.mp4",
+   "seconds": [
+    51.0,
+    54.4
+   ]
+  },
+  "evidence": "evidence/body-armor-talents/sources/deep-focus.webp",
+  "checked": "2026-10-29",
+  "pieces": [
+   {
+    "name": "Chatzatz Chest",
+    "slot": "Body Armor",
+    "armoryTier": "T2",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Ops Armor",
+    "slot": "Body Armor",
+    "armoryTier": "T2",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 140.5 s"
+   },
+   {
+    "name": "Flimsy Body Armor v1",
+    "slot": "Body Armor",
+    "armoryTier": "T1",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 14.0 s"
+   },
+   {
+    "name": "Phalanx Precision Vest",
+    "slot": "Body Armor",
+    "armoryTier": "T1",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Flimsy Body Armor v2",
+    "slot": "Body Armor",
+    "armoryTier": "T1",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Mechanized Infantry Armor",
+    "slot": "Body Armor",
+    "armoryTier": "T0",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Stridsvast Combat Vest",
+    "slot": "Body Armor",
+    "armoryTier": "T0",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "Screen_Recording_20261029_131044_The_Division_Resurgence.mp4 at 25.5 s"
+   }
+  ]
+ },
+ {
+  "entry": "Energize",
+  "slug": "energize",
+  "pieceCount": 4,
+  "tileCount": 8,
+  "extraListings": [],
+  "source": {
+   "recording": "2026-10-29_11-40-15.mp4",
+   "seconds": [
+    55.4,
+    57.6
+   ]
+  },
+  "evidence": "evidence/body-armor-talents/sources/energize.webp",
+  "checked": "2026-10-29",
+  "pieces": [
+   {
+    "name": "X-TREYME Pro Ribcage",
+    "slot": "Body Armor",
+    "armoryTier": "T2",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Ops Armor",
+    "slot": "Body Armor",
+    "armoryTier": "T2",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 140.5 s"
+   },
+   {
+    "name": "Athena Missile Vest",
+    "slot": "Body Armor",
+    "armoryTier": "T1",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Ranger Ballistics Vest",
+    "slot": "Body Armor",
+    "armoryTier": "T0",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 133.0 s"
+   }
+  ]
+ },
+ {
+  "entry": "Battlelust",
+  "slug": "battlelust",
+  "pieceCount": 6,
+  "tileCount": 12,
+  "extraListings": [],
+  "source": {
+   "recording": "2026-10-29_11-40-15.mp4",
+   "seconds": [
+    59.4,
+    61.8
+   ]
+  },
+  "evidence": "evidence/body-armor-talents/sources/battlelust.webp",
+  "checked": "2026-10-29",
+  "pieces": [
+   {
+    "name": "Chatzatz Chest",
+    "slot": "Body Armor",
+    "armoryTier": "T2",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Ops Armor",
+    "slot": "Body Armor",
+    "armoryTier": "T2",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 140.5 s"
+   },
+   {
+    "name": "Flimsy Body Armor v1",
+    "slot": "Body Armor",
+    "armoryTier": "T1",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 14.0 s"
+   },
+   {
+    "name": "Phalanx Precision Vest",
+    "slot": "Body Armor",
+    "armoryTier": "T1",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Mechanized Infantry Armor",
+    "slot": "Body Armor",
+    "armoryTier": "T0",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Stridsvast Combat Vest",
+    "slot": "Body Armor",
+    "armoryTier": "T0",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "Screen_Recording_20261029_131044_The_Division_Resurgence.mp4 at 25.5 s"
+   }
+  ]
+ },
+ {
+  "entry": "Recycling",
+  "slug": "recycling",
+  "pieceCount": 8,
+  "tileCount": 16,
+  "extraListings": [],
+  "source": {
+   "recording": "2026-10-29_11-40-15.mp4",
+   "seconds": [
+    62.6,
+    66.8
+   ]
+  },
+  "evidence": "evidence/body-armor-talents/sources/recycling.webp",
+  "checked": "2026-10-29",
+  "pieces": [
+   {
+    "name": "Chatzatz Chest",
+    "slot": "Body Armor",
+    "armoryTier": "T2",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Ops Armor",
+    "slot": "Body Armor",
+    "armoryTier": "T2",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 140.5 s"
+   },
+   {
+    "name": "Flimsy Body Armor v1",
+    "slot": "Body Armor",
+    "armoryTier": "T1",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 14.0 s"
+   },
+   {
+    "name": "Flimsy Body Armor v2",
+    "slot": "Body Armor",
+    "armoryTier": "T1",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "\"Ericht\" Chest System",
+    "slot": "Body Armor",
+    "armoryTier": "T0",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 25.5 s"
+   },
+   {
+    "name": "Mechanized Infantry Armor",
+    "slot": "Body Armor",
+    "armoryTier": "T0",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Stridsvast Combat Vest",
+    "slot": "Body Armor",
+    "armoryTier": "T0",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "Screen_Recording_20261029_131044_The_Division_Resurgence.mp4 at 25.5 s"
+   },
+   {
+    "name": "Ranger Ballistics Vest",
+    "slot": "Body Armor",
+    "armoryTier": "T0",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 133.0 s"
+   }
+  ]
+ },
+ {
+  "entry": "Suppressive Fire",
+  "slug": "suppressive-fire",
+  "pieceCount": 5,
+  "tileCount": 10,
+  "extraListings": [],
+  "source": {
+   "recording": "2026-10-29_11-40-15.mp4",
+   "seconds": [
+    67.6,
+    69.8
+   ]
+  },
+  "evidence": "evidence/body-armor-talents/sources/suppressive-fire.webp",
+  "checked": "2026-10-29",
+  "pieces": [
+   {
+    "name": "X-TREYME Pro Ribcage",
+    "slot": "Body Armor",
+    "armoryTier": "T2",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "\"Big Drum\" Body Armor",
+    "slot": "Body Armor",
+    "armoryTier": "T2",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Phalanx Precision Vest",
+    "slot": "Body Armor",
+    "armoryTier": "T1",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Stridsvast Combat Vest",
+    "slot": "Body Armor",
+    "armoryTier": "T0",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "Screen_Recording_20261029_131044_The_Division_Resurgence.mp4 at 25.5 s"
+   },
+   {
+    "name": "Ranger Ballistics Vest",
+    "slot": "Body Armor",
+    "armoryTier": "T0",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 133.0 s"
+   }
+  ]
+ },
+ {
+  "entry": "Unflinching",
+  "slug": "unflinching",
+  "pieceCount": 6,
+  "tileCount": 12,
+  "extraListings": [],
+  "source": {
+   "recording": "2026-10-29_11-40-15.mp4",
+   "seconds": [
+    70.4,
+    72.4
+   ]
+  },
+  "evidence": "evidence/body-armor-talents/sources/unflinching.webp",
+  "checked": "2026-10-29",
+  "pieces": [
+   {
+    "name": "X-TREYME Pro Ribcage",
+    "slot": "Body Armor",
+    "armoryTier": "T2",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "\"Big Drum\" Body Armor",
+    "slot": "Body Armor",
+    "armoryTier": "T2",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Flimsy Body Armor v1",
+    "slot": "Body Armor",
+    "armoryTier": "T1",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 14.0 s"
+   },
+   {
+    "name": "Phalanx Precision Vest",
+    "slot": "Body Armor",
+    "armoryTier": "T1",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "\"Ericht\" Chest System",
+    "slot": "Body Armor",
+    "armoryTier": "T0",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 25.5 s"
+   },
+   {
+    "name": "Stridsvast Combat Vest",
+    "slot": "Body Armor",
+    "armoryTier": "T0",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "Screen_Recording_20261029_131044_The_Division_Resurgence.mp4 at 25.5 s"
+   }
+  ]
+ },
+ {
+  "entry": "Injured Concealment",
+  "slug": "injured-concealment",
+  "pieceCount": 9,
+  "tileCount": 18,
+  "extraListings": [],
+  "source": {
+   "recording": "2026-10-29_11-40-15.mp4",
+   "seconds": [
+    73.4,
+    78.6
+   ]
+  },
+  "evidence": "evidence/body-armor-talents/sources/injured-concealment.webp",
+  "checked": "2026-10-29",
+  "pieces": [
+   {
+    "name": "Chatzatz Chest",
+    "slot": "Body Armor",
+    "armoryTier": "T2",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "\"Big Drum\" Body Armor",
+    "slot": "Body Armor",
+    "armoryTier": "T2",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Ops Armor",
+    "slot": "Body Armor",
+    "armoryTier": "T2",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 140.5 s"
+   },
+   {
+    "name": "Flimsy Body Armor v1",
+    "slot": "Body Armor",
+    "armoryTier": "T1",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 14.0 s"
+   },
+   {
+    "name": "Athena Missile Vest",
+    "slot": "Body Armor",
+    "armoryTier": "T1",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Flimsy Body Armor v2",
+    "slot": "Body Armor",
+    "armoryTier": "T1",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "\"Ericht\" Chest System",
+    "slot": "Body Armor",
+    "armoryTier": "T0",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 25.5 s"
+   },
+   {
+    "name": "Mechanized Infantry Armor",
+    "slot": "Body Armor",
+    "armoryTier": "T0",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Ranger Ballistics Vest",
+    "slot": "Body Armor",
+    "armoryTier": "T0",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 133.0 s"
+   }
+  ]
+ },
+ {
+  "entry": "Defensive Charge",
+  "slug": "defensive-charge",
+  "pieceCount": 3,
+  "tileCount": 6,
+  "extraListings": [],
+  "source": {
+   "recording": "2026-10-29_11-40-15.mp4",
+   "seconds": [
+    79.6,
+    81.2
+   ]
+  },
+  "evidence": "evidence/body-armor-talents/sources/defensive-charge.webp",
+  "checked": "2026-10-29",
+  "pieces": [
+   {
+    "name": "\"Big Drum\" Body Armor",
+    "slot": "Body Armor",
+    "armoryTier": "T2",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Flimsy Body Armor v1",
+    "slot": "Body Armor",
+    "armoryTier": "T1",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 14.0 s"
+   },
+   {
+    "name": "\"Ericht\" Chest System",
+    "slot": "Body Armor",
+    "armoryTier": "T0",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 25.5 s"
+   }
+  ]
+ },
+ {
+  "entry": "Suppression Rescue",
+  "slug": "suppression-rescue",
+  "pieceCount": 6,
+  "tileCount": 12,
+  "extraListings": [],
+  "source": {
+   "recording": "2026-10-29_11-40-15.mp4",
+   "seconds": [
+    82.2,
+    87.6
+   ]
+  },
+  "evidence": "evidence/body-armor-talents/sources/suppression-rescue.webp",
+  "checked": "2026-10-29",
+  "pieces": [
+   {
+    "name": "Chatzatz Chest",
+    "slot": "Body Armor",
+    "armoryTier": "T2",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "\"Big Drum\" Body Armor",
+    "slot": "Body Armor",
+    "armoryTier": "T2",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Flimsy Body Armor v1",
+    "slot": "Body Armor",
+    "armoryTier": "T1",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 14.0 s"
+   },
+   {
+    "name": "Athena Missile Vest",
+    "slot": "Body Armor",
+    "armoryTier": "T1",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Flimsy Body Armor v2",
+    "slot": "Body Armor",
+    "armoryTier": "T1",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "\"Ericht\" Chest System",
+    "slot": "Body Armor",
+    "armoryTier": "T0",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 25.5 s"
+   }
+  ]
+ },
+ {
+  "entry": "Instant Triage",
+  "slug": "instant-triage",
+  "pieceCount": 6,
+  "tileCount": 12,
+  "extraListings": [],
+  "source": {
+   "recording": "2026-10-29_11-40-15.mp4",
+   "seconds": [
+    88.4,
+    90.8
+   ]
+  },
+  "evidence": "evidence/body-armor-talents/sources/instant-triage.webp",
+  "checked": "2026-10-29",
+  "pieces": [
+   {
+    "name": "X-TREYME Pro Ribcage",
+    "slot": "Body Armor",
+    "armoryTier": "T2",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Ops Armor",
+    "slot": "Body Armor",
+    "armoryTier": "T2",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 140.5 s"
+   },
+   {
+    "name": "Athena Missile Vest",
+    "slot": "Body Armor",
+    "armoryTier": "T1",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Flimsy Body Armor v2",
+    "slot": "Body Armor",
+    "armoryTier": "T1",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Mechanized Infantry Armor",
+    "slot": "Body Armor",
+    "armoryTier": "T0",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Ranger Ballistics Vest",
+    "slot": "Body Armor",
+    "armoryTier": "T0",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 133.0 s"
+   }
+  ]
+ },
+ {
+  "entry": "Rescue Signal",
+  "slug": "rescue-signal",
+  "pieceCount": 5,
+  "tileCount": 10,
+  "extraListings": [],
+  "source": {
+   "recording": "2026-10-29_11-40-15.mp4",
+   "seconds": [
+    92.2,
+    94.4
+   ]
+  },
+  "evidence": "evidence/body-armor-talents/sources/rescue-signal.webp",
+  "checked": "2026-10-29",
+  "pieces": [
+   {
+    "name": "Chatzatz Chest",
+    "slot": "Body Armor",
+    "armoryTier": "T2",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Ops Armor",
+    "slot": "Body Armor",
+    "armoryTier": "T2",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 140.5 s"
+   },
+   {
+    "name": "Athena Missile Vest",
+    "slot": "Body Armor",
+    "armoryTier": "T1",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Mechanized Infantry Armor",
+    "slot": "Body Armor",
+    "armoryTier": "T0",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Ranger Ballistics Vest",
+    "slot": "Body Armor",
+    "armoryTier": "T0",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 133.0 s"
+   }
+  ]
+ }
+]

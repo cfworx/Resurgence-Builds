@@ -1,118 +1,343 @@
 [
-  {
-    "file": "Screen_Recording_20261028_152837_The_Division_Resurgence.mp4",
-    "recorded": "2026-10-28",
-    "durationSeconds": 111.4,
-    "resolution": "2340x1080",
-    "section": "OS Protocol",
-    "tabs": [
-      "Applicable to Engineering"
-    ],
-    "entries": 28
-  },
-  {
-    "file": "Screen_Recording_20261028_155041_The_Division_Resurgence.mp4",
-    "recorded": "2026-10-28",
-    "durationSeconds": 112.6,
-    "resolution": "2340x1080",
-    "section": "OS Protocol",
-    "tabs": [
-      "Applicable to Firepower",
-      "Applicable to Toughness"
-    ],
-    "entries": 38
-  },
-  {
-    "file": "Screen_Recording_20261028_155256_The_Division_Resurgence.mp4",
-    "recorded": "2026-10-28",
-    "durationSeconds": 116.1,
-    "resolution": "2340x1080",
-    "section": "Exotic Weapon",
-    "tabs": [],
-    "entries": 6
-  },
-  {
-    "file": "Screen_Recording_20261028_163454_The_Division_Resurgence.mp4",
-    "recorded": "2026-10-28",
-    "durationSeconds": 413.0,
-    "resolution": "2340x1080",
-    "section": "Skill Mod Combo Set",
-    "tabs": [
-      "Demolitionist",
-      "Tech Operator",
-      "Bulwark",
-      "Vanguard",
-      "Field Medic"
-    ],
-    "entries": 90
-  },
-  {
-    "file": "Screen_Recording_20261028_184307_The_Division_Resurgence.mp4",
-    "recorded": "2026-10-28",
-    "durationSeconds": 186.3,
-    "resolution": "2340x1080",
-    "section": "Weapon Talent",
-    "tabs": [],
-    "entries": 73
-  },
-  {
-    "file": "Screen_Recording_20261028_190611_The_Division_Resurgence.mp4",
-    "recorded": "2026-10-28",
-    "durationSeconds": 59.4,
-    "resolution": "2340x1080",
-    "section": "Body Armor Talent",
-    "tabs": [],
-    "entries": 25
-  },
-  {
-    "file": "Screen_Recording_20261028_190726_The_Division_Resurgence.mp4",
-    "recorded": "2026-10-28",
-    "durationSeconds": 59.9,
-    "resolution": "2340x1080",
-    "section": "Backpack Talent",
-    "tabs": [],
-    "entries": 25
-  },
-  {
-    "file": "Screen_Recording_20261028_190829_The_Division_Resurgence.mp4",
-    "recorded": "2026-10-28",
-    "durationSeconds": 44.3,
-    "resolution": "2340x1080",
-    "section": "Weapon/Gear Bonus Attributes",
-    "tabs": [],
-    "entries": 24
-  },
-  {
-    "file": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
-    "recorded": "2026-10-28",
-    "durationSeconds": 75.7,
-    "resolution": "2340x1080",
-    "section": "Armory (not part of the Build-Making Database): every weapon and gear page",
-    "tabs": [
-      "Exotic",
-      "Shotgun",
-      "Rifle",
-      "MMR",
-      "AR",
-      "LMG",
-      "SMG",
-      "Holster",
-      "Gloves",
-      "Backpack",
-      "Knee Pads",
-      "Body Armor",
-      "Mask"
-    ],
-    "entries": 164
-  },
-  {
-    "file": "Screen_Recording_20261028_201633_The_Division_Resurgence.mp4",
-    "recorded": "2026-10-28",
-    "durationSeconds": 46.1,
-    "resolution": "2340x1080",
-    "section": "Gear Set Effect",
-    "tabs": [],
-    "entries": 16,
-    "note": "Each of the 16 set cards opened once (Self-Propelled Shield twice). Source panels not scrolled."
-  }
+ {
+  "file": "Screen_Recording_20261028_152837_The_Division_Resurgence.mp4",
+  "recorded": "2026-10-28",
+  "durationSeconds": 111.4,
+  "resolution": "2340x1080",
+  "section": "OS Protocol",
+  "tabs": [
+   "Applicable to Engineering"
+  ],
+  "entries": 28
+ },
+ {
+  "file": "Screen_Recording_20261028_155041_The_Division_Resurgence.mp4",
+  "recorded": "2026-10-28",
+  "durationSeconds": 112.6,
+  "resolution": "2340x1080",
+  "section": "OS Protocol",
+  "tabs": [
+   "Applicable to Firepower",
+   "Applicable to Toughness"
+  ],
+  "entries": 38
+ },
+ {
+  "file": "Screen_Recording_20261028_155256_The_Division_Resurgence.mp4",
+  "recorded": "2026-10-28",
+  "durationSeconds": 116.1,
+  "resolution": "2340x1080",
+  "section": "Exotic Weapon",
+  "tabs": [],
+  "entries": 6
+ },
+ {
+  "file": "Screen_Recording_20261028_163454_The_Division_Resurgence.mp4",
+  "recorded": "2026-10-28",
+  "durationSeconds": 413.0,
+  "resolution": "2340x1080",
+  "section": "Skill Mod Combo Set",
+  "tabs": [
+   "Demolitionist",
+   "Tech Operator",
+   "Bulwark",
+   "Vanguard",
+   "Field Medic"
+  ],
+  "entries": 90
+ },
+ {
+  "file": "Screen_Recording_20261028_184307_The_Division_Resurgence.mp4",
+  "recorded": "2026-10-28",
+  "durationSeconds": 186.3,
+  "resolution": "2340x1080",
+  "section": "Weapon Talent",
+  "tabs": [],
+  "entries": 73
+ },
+ {
+  "file": "Screen_Recording_20261028_190611_The_Division_Resurgence.mp4",
+  "recorded": "2026-10-28",
+  "durationSeconds": 59.4,
+  "resolution": "2340x1080",
+  "section": "Body Armor Talent",
+  "tabs": [],
+  "entries": 25
+ },
+ {
+  "file": "Screen_Recording_20261028_190726_The_Division_Resurgence.mp4",
+  "recorded": "2026-10-28",
+  "durationSeconds": 59.9,
+  "resolution": "2340x1080",
+  "section": "Backpack Talent",
+  "tabs": [],
+  "entries": 25
+ },
+ {
+  "file": "Screen_Recording_20261028_190829_The_Division_Resurgence.mp4",
+  "recorded": "2026-10-28",
+  "durationSeconds": 44.3,
+  "resolution": "2340x1080",
+  "section": "Weapon/Gear Bonus Attributes",
+  "tabs": [],
+  "entries": 24
+ },
+ {
+  "file": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
+  "recorded": "2026-10-28",
+  "durationSeconds": 75.7,
+  "resolution": "2340x1080",
+  "section": "Armory (not part of the Build-Making Database): every weapon and gear page",
+  "tabs": [
+   "Exotic",
+   "Shotgun",
+   "Rifle",
+   "MMR",
+   "AR",
+   "LMG",
+   "SMG",
+   "Holster",
+   "Gloves",
+   "Backpack",
+   "Knee Pads",
+   "Body Armor",
+   "Mask"
+  ],
+  "entries": 164
+ },
+ {
+  "file": "Screen_Recording_20261028_201633_The_Division_Resurgence.mp4",
+  "recorded": "2026-10-28",
+  "durationSeconds": 46.1,
+  "resolution": "2340x1080",
+  "section": "Gear Set Effect",
+  "tabs": [],
+  "entries": 16,
+  "note": "Each of the 16 set cards opened once (Self-Propelled Shield twice). Source panels not scrolled."
+ },
+ {
+  "file": "77235757-2026-10-29_09-40-59.mp4",
+  "recorded": "2026-10-29",
+  "durationSeconds": 41.6,
+  "resolution": "2560x1440",
+  "section": "Weapon Talent (Source panels)",
+  "entries": 2,
+  "talents": [
+   "Tactical Targeting",
+   "Spirited"
+  ]
+ },
+ {
+  "file": "a68e0a78-2026-10-29_10-18-07.mp4",
+  "recorded": "2026-10-29",
+  "durationSeconds": 72.1,
+  "resolution": "2560x1440",
+  "section": "Weapon Talent (Source panels)",
+  "entries": 4,
+  "talents": [
+   "Torrential Downpour",
+   "Head Collection",
+   "Adaptation",
+   "Long-Distance Marking"
+  ]
+ },
+ {
+  "file": "c660e53d-2026-10-29_10-26-29.mp4",
+  "recorded": "2026-10-29",
+  "durationSeconds": 71.7,
+  "resolution": "2560x1440",
+  "section": "Weapon Talent (Source panels)",
+  "entries": 0,
+  "note": "Weapon cards opened from the Tactical Targeting and Spirited lists (ACE 52, Military MK46, M12, Tavor TS12), confirming those names."
+ },
+ {
+  "file": "2026-10-29_10-22-17.mp4",
+  "recorded": "2026-10-29",
+  "durationSeconds": 175.3,
+  "resolution": "2560x1440",
+  "section": "Weapon Talent (Source panels)",
+  "entries": 8,
+  "talents": [
+   "Concentrated Fire",
+   "Neverending",
+   "Steady Handed",
+   "Pummel",
+   "Bloodlust",
+   "Strained",
+   "Killer",
+   "Target Acquisition"
+  ]
+ },
+ {
+  "file": "2026-10-29_10-42-08.mp4",
+  "recorded": "2026-10-29",
+  "durationSeconds": 110.1,
+  "resolution": "2560x1440",
+  "section": "Weapon Talent (Source panels)",
+  "entries": 4,
+  "talents": [
+   "Breadbasket",
+   "Predatory Aura",
+   "In Sync",
+   "Multitasking"
+  ]
+ },
+ {
+  "file": "2026-10-29_10-44-32.mp4",
+  "recorded": "2026-10-29",
+  "durationSeconds": 256.5,
+  "resolution": "2560x1440",
+  "section": "Weapon Talent (Source panels)",
+  "entries": 8,
+  "talents": [
+   "Multi-Pronged Attack",
+   "Sentinel Aura",
+   "Thick Skin",
+   "Revitalize",
+   "In a Day's Work",
+   "Vibrant",
+   "Sadistic Shield",
+   "Still Alive"
+  ]
+ },
+ {
+  "file": "2026-10-29_11-08-06.mp4",
+  "recorded": "2026-10-29",
+  "durationSeconds": 234.7,
+  "resolution": "2560x1440",
+  "section": "Weapon Talent (Source panels)",
+  "entries": 8,
+  "talents": [
+   "Swift Aim",
+   "Performer",
+   "Last Stand",
+   "Medical Accuracy",
+   "Joint Strike",
+   "Fast Hands",
+   "Calm and Collected",
+   "Unhinged"
+  ]
+ },
+ {
+  "file": "2026-10-29_11-13-54.mp4",
+  "recorded": "2026-10-29",
+  "durationSeconds": 142.1,
+  "resolution": "2560x1440",
+  "section": "Weapon Talent (Source panels)",
+  "entries": 8,
+  "talents": [
+   "Fully Charged",
+   "Crawl",
+   "Ex Machina",
+   "No Exit",
+   "Surgical",
+   "Death by Numbers",
+   "Spec-Ops",
+   "Take a Breath"
+  ]
+ },
+ {
+  "file": "2026-10-29_11-16-32.mp4",
+  "recorded": "2026-10-29",
+  "durationSeconds": 220.6,
+  "resolution": "2560x1440",
+  "section": "Weapon Talent (Source panels)",
+  "entries": 8,
+  "talents": [
+   "Unbreakable",
+   "Backup Battery",
+   "Backup Protection",
+   "Backup Magazine",
+   "Slaughter Fortitude",
+   "Slaughter Healing",
+   "Conceited",
+   "Shooting Repair"
+  ]
+ },
+ {
+  "file": "2026-10-29_11-20-52.mp4",
+  "recorded": "2026-10-29",
+  "durationSeconds": 212.0,
+  "resolution": "2560x1440",
+  "section": "Weapon Talent (Source panels)",
+  "entries": 8,
+  "talents": [
+   "Steady Suppression",
+   "Precision Support",
+   "Precise Crit",
+   "Blood for Blood",
+   "Precise Trauma",
+   "Misdirection Insurance",
+   "Rapid Charge",
+   "Proficient Reload"
+  ]
+ },
+ {
+  "file": "2026-10-29_11-27-02.mp4",
+  "recorded": "2026-10-29",
+  "durationSeconds": 193.4,
+  "resolution": "2560x1440",
+  "section": "Weapon Talent (Source panels)",
+  "entries": 9,
+  "talents": [
+   "Tactical Reload",
+   "Steady Aim",
+   "Steady Hands",
+   "Steady Reload",
+   "Swift Taunt",
+   "Ammo Supply",
+   "Ammo Charge",
+   "Damage Trade",
+   "Enhancement Trade"
+  ]
+ },
+ {
+  "file": "2026-10-29_11-33-53.mp4",
+  "recorded": "2026-10-29",
+  "durationSeconds": 161.9,
+  "resolution": "2560x1440",
+  "section": "Gear Set Effect (Source panels): Fury Strike, Quick Draw, Phalanx Attack, with gear cards opened from the lists",
+  "entries": 3
+ },
+ {
+  "file": "2026-10-29_11-38-05.mp4",
+  "recorded": "2026-10-29",
+  "durationSeconds": 116.4,
+  "resolution": "2560x1440",
+  "section": "Gear Set Effect (Source panels): the other 13 sets",
+  "entries": 13
+ },
+ {
+  "file": "2026-10-29_11-40-15.mp4",
+  "recorded": "2026-10-29",
+  "durationSeconds": 95.7,
+  "resolution": "2560x1440",
+  "section": "Body Armor Talent (Source panels)",
+  "entries": 25
+ },
+ {
+  "file": "2026-10-29_11-42-06.mp4",
+  "recorded": "2026-10-29",
+  "durationSeconds": 87.7,
+  "resolution": "2560x1440",
+  "section": "Backpack Talent (Source panels)",
+  "entries": 25
+ },
+ {
+  "file": "9ff1b468-2026-10-29_11-32-16.mp4",
+  "recorded": "2026-10-29",
+  "durationSeconds": 59.7,
+  "resolution": "2560x1440",
+  "section": "Armory gear pages (all six slots)",
+  "entries": 72
+ },
+ {
+  "file": "Screen_Recording_20261029_131044_The_Division_Resurgence.mp4",
+  "recorded": "2026-10-29",
+  "durationSeconds": 56.3,
+  "resolution": "2340x1080",
+  "section": "Gear Set Effect (Source panels): gear cards opened from the Captain Cow and Fearless Warrior lists",
+  "entries": 14,
+  "note": "Names the two extra Superior T0 tiles in both lists and confirms the six family D T0 pieces by name. Readings in gear-cards.json."
+ }
 ]

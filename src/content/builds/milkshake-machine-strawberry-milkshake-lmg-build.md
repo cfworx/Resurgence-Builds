@@ -11,8 +11,8 @@ plannerHash: "s=Vanguard&sc=Commando&n=The+Milkshake+Machine&ms=gs-3&m1=chc&m2=c
 tags: ["Builds", "Vanguard", "LMG", "Exotic", "Strawberry Milkshake", "Phalanx Attack", "In Sync", "Multi-Shot", "Dominating Presence"]
 description: "Vanguard Strawberry Milkshake LMG build: Phalanx Attack 4pc, In Sync double-dip, Dominating Presence OS. 118-round Multi-Shot crit avalanche."
 author: "RapidF5"
-featuredImage: "/images/builds/milkshake-machine-hero.jpg"
-imageAlt: "A man holding a strawberry milkshake and a Strawberry Milkshake LMG with a nice speech bubble on a snowy New York street"
+featuredImage: "/images/builds/division-resurgence-milkshake-machine-strawberry-milkshake-card-1200.webp"
+imageAlt: "The Strawberry Milkshake exotic LMG's card in The Division Resurgence Build-Making Database: 300 damage, 550 RPM, a 100-round magazine and the Anarchy talent"
 shareTitle: "Bring the blender"
 shareText: "118 rounds. 32% Multi-Shot with four enemies close. Glass Cannon justified. This is The Milkshake Machine."
 faqs:

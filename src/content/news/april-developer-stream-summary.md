@@ -5,8 +5,8 @@ updatedDate: 2026-10-24
 author: "RapidF5"
 description: "A complete summary of the April 18 developer stream, covering the FPS cap, bug fixes, Exotic weapons per season, and crossplay."
 tags: ["Dev Stream", "Community", "FPS"]
-featuredImage: "/images/april-dev-stream.jpg"
-imageAlt: "A multi-monitor setup displaying a Division Resurgence developer livestream alongside Twitch chat"
+featuredImage: "/images/news/division-resurgence-april-developer-stream-movie-night-1200.webp"
+imageAlt: "Settlers watching a black-and-white film on a big screen in the Base of Operations in The Division Resurgence, with the title April Dev Stream"
 shareTitle: "Save a life"
 shareText: "Share this with the squadmate who skipped the stream for a nap. We won't tell."
 

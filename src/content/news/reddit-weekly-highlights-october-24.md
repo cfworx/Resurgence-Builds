@@ -4,8 +4,8 @@ publishDate: 2026-10-24
 author: "RapidF5"
 tags: ["Community", "Reddit", "Weekly"]
 description: "Best of r/thedivisionresurgence, Sep 25 to Oct 24, 2026: the revive bug saga, the Heavy Weight nerf, the Phase 2 extension and the cat question."
-featuredImage: "/images/news/reddit-weekly-highlights-may-28-hero.webp"
-imageAlt: "A Division agent holding an orange holographic Reddit logo next to a supply crate"
+featuredImage: "/images/news/division-resurgence-reddit-highlights-october-24-barricade-1200.webp"
+imageAlt: "An agent crouched behind a red and white barricade on a snowy New York street in The Division Resurgence, with the title Reddit Highlights"
 shareTitle: "A month on the subreddit"
 shareText: "Revives broke and got fixed twice, Heavy Weight got nerfed, Phase 2 got extended, and someone asked the real question: where is the cat?"
 faqs:

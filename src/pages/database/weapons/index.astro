@@ -1,14 +1,13 @@
 ---
 import DatabaseLayout from '../../../layouts/DatabaseLayout.astro';
 import WeaponAttributes from '../../../components/WeaponAttributes.astro';
-import WeaponTalentsGrid from '../../../components/WeaponTalentsGrid.astro';
 import allStandardWeapons from '../../../data/standard-weapons.json';
 // Every standard weapon is listed with its class, Armory tier and damage type (from the in-game Armory,
-// October 28, 2026). Only weapons without statsVerified: false have their own page so far.
+// October 28, 2026), and each one has its own page with the talents it can roll (October 29, 2026).
 const TIER_ORDER: Record<string, number> = { T0: 0, T1: 1, T2: 2 };
 const standardWeapons = [...allStandardWeapons].sort((a: any, b: any) =>
   (TIER_ORDER[a.armoryTier] ?? 9) - (TIER_ORDER[b.armoryTier] ?? 9) || a.name.localeCompare(b.name));
-const hasPage = (w: any) => w.statsVerified !== false;
+const hasPage = (_w: any) => true;
 const tierLabel = (t: string) => (t ? `Tier ${t.slice(1)}` : '');
 const typeCount = (t: string) => allStandardWeapons.filter((w: any) => w.type === t).length;
 import allExoticWeapons from '../../../data/exotic-weapons.json';
@@ -19,6 +18,8 @@ import GameImage from '../../../components/GameImage.astro';
 import { dbImage } from '../../../utils/db-images';
 import { publicImageSize } from '../../../utils/image-dims.mjs';
 const exoticHero = (w: any) => dbImage(`exotic-weapons/${w.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')}`, 'hero');
+// Each standard weapon's own in-game icon (its High-End tile in the talent Source lists).
+const weaponIcon = (w: any) => dbImage(`weapon-icons/${w.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')}`);
 const imgSize = (src: string) => publicImageSize(src) ?? { width: 1200, height: 571 };
 
 const breadcrumbs = [
@@ -121,11 +122,15 @@ const faqs = [
         {standardWeapons.filter((w: any) => w.type === type).map((w: any) => {
           const slug = w.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
           const hasStats = [w.rpm, w.mag, w.accuracy, w.reloadSpeed, w.stability].some(Boolean);
-          const hasTalents = (w.talent1 && w.talent1.length > 0) || (w.talent2 && w.talent2.length > 0);
+          const hasTalents = false;
           return (
             <article class={`db-card weapon-card${!hasStats && !hasTalents ? ' weapon-card--compact' : ''}${hasPage(w) ? '' : ' weapon-card--nolink'}`}>
               {hasPage(w) && <a href={`/database/weapons/${slug}/`} class="db-card-full-link" aria-label={`View ${w.name} weapon details`}></a>}
-              {w.image && (
+              {weaponIcon(w) ? (
+                <div class="db-card__image-banner">
+                  <GameImage image={weaponIcon(w)!} alt={`${w.name} ${w.type} icon in The Division Resurgence`} sizes="(max-width: 640px) calc(100vw - 64px), 330px" />
+                </div>
+              ) : w.image && (
                 <div class="db-card__image-banner">
                   <img src={w.image} alt={`${w.name} ${w.type} in Division Resurgence`} width={imgSize(w.image).width} height={imgSize(w.image).height} loading="lazy" decoding="async" />
                 </div>
@@ -151,22 +156,6 @@ const faqs = [
                       stability={w.stability}
                       isCard={true}
                     />
-                  )}
-                  {hasTalents && (
-                    <div style="margin-top: var(--sp-2); padding-top: var(--sp-2); border-top: 1px solid rgba(255,255,255,0.05); display: flex; flex-direction: column; gap: var(--sp-2);">
-                      {w.talent1 && w.talent1.length > 0 && (
-                        <div>
-                          <div style="font-size: var(--step--2); font-weight: 800; color: var(--accent); text-transform: uppercase; margin-bottom: 4px; letter-spacing: 0.05em;">Talent 1</div>
-                          <WeaponTalentsGrid talentNames={w.talent1} isCard={true} />
-                        </div>
-                      )}
-                      {w.talent2 && w.talent2.length > 0 && (
-                        <div>
-                          <div style="font-size: var(--step--2); font-weight: 800; color: var(--accent); text-transform: uppercase; margin-bottom: 4px; letter-spacing: 0.05em;">Talent 2</div>
-                          <WeaponTalentsGrid talentNames={w.talent2} isCard={true} />
-                        </div>
-                      )}
-                    </div>
                   )}
                 </div>
               )}

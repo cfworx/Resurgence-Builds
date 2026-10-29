@@ -18,8 +18,11 @@ come straight from the owner (Cory) and override anything older in those files.
 The owner sends screen recordings of the game. For each one:
 
 1. Work out what it shows (talent Source lists, Armory screens, database cards, missions, the Base of Operations...).
-2. Compare it with the research data and the site, and fix what differs. Talent Source lists go through
-   `research/build-database/tools/talent_sources.py scan <video>`; check its review sheets by eye before using them.
+2. Compare it with the research data and the site, and fix what differs. Weapon talent Source lists go through
+   `research/build-database/tools/talent_sources.py scan <video>`, gear set, body armor and backpack talent lists through
+   `tools/gear_sources.py scan <video>`; check their review sheets by eye before using them, then `compile`. Every standard
+   weapon rolls 18 of the 67 weapon talents and every body armor or backpack 12 of its 25 talents: a scan that breaks those
+   counts has misread something. `tools/make_workbook.py` builds the spreadsheet from the records.
 3. Keep good frames for post images (see below).
 4. Note anything the video can't settle and ask the owner for a recording of it. When a build guide needs a screenshot
    from a creator's YouTube video, give the owner the link and timestamp; he captures it (we can't download YouTube).

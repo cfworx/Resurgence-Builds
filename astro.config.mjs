@@ -56,8 +56,7 @@ export default defineConfig({
           page.includes('/api/') ||
           page.includes('/cdn-cgi/') ||
           page.includes('/build-planner/') ||
-          page.includes('/map/') ||
-          page.includes('/database/gear/')
+          page.includes('/map/')
         ) return false;
 
         // For /tag/ pages, only include if the slug is in tag-intros.json

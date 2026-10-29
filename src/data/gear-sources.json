@@ -1,0 +1,4301 @@
+{
+ "checked": "2026-10-29",
+ "pieces": {
+  "chamber-wolf-tac-holster": {
+   "name": "Chamber Wolf TAC Holster",
+   "slot": "Holster",
+   "tier": "T0",
+   "family": "B"
+  },
+  "armorer-s-security-holster": {
+   "name": "Armorer's Security Holster",
+   "slot": "Holster",
+   "tier": "T0",
+   "family": "C"
+  },
+  "urban-assault-holster": {
+   "name": "Urban Assault Holster",
+   "slot": "Holster",
+   "tier": "T0",
+   "family": "A"
+  },
+  "lock-and-load-holster": {
+   "name": "Lock and Load Holster",
+   "slot": "Holster",
+   "tier": "T0",
+   "family": "D"
+  },
+  "serviceman-s-holster": {
+   "name": "Serviceman's Holster",
+   "slot": "Holster",
+   "tier": "T1",
+   "family": "A"
+  },
+  "pridwen-holster": {
+   "name": "Pridwen Holster",
+   "slot": "Holster",
+   "tier": "T1",
+   "family": "C"
+  },
+  "morar-holster-system": {
+   "name": "\"Morar\" Holster System",
+   "slot": "Holster",
+   "tier": "T1",
+   "family": "B"
+  },
+  "artemis-fast-draw-holster": {
+   "name": "Artemis Fast Draw Holster",
+   "slot": "Holster",
+   "tier": "T1",
+   "family": "D"
+  },
+  "jags-sidearm-mount": {
+   "name": "Jags Sidearm Mount",
+   "slot": "Holster",
+   "tier": "T2",
+   "family": "B"
+  },
+  "fodral-holster": {
+   "name": "Fodral Holster",
+   "slot": "Holster",
+   "tier": "T2",
+   "family": "A"
+  },
+  "jaivardhan-thigh-rig": {
+   "name": "Jaivardhan Thigh Rig",
+   "slot": "Holster",
+   "tier": "T2",
+   "family": "C"
+  },
+  "tepes-holster": {
+   "name": "Tepes Holster",
+   "slot": "Holster",
+   "tier": "T2",
+   "family": "D"
+  },
+  "lochy-hand-savers": {
+   "name": "\"Lochy\" Hand Savers",
+   "slot": "Gloves",
+   "tier": "T0",
+   "family": "A"
+  },
+  "blood-fang-gloves": {
+   "name": "Blood Fang Gloves",
+   "slot": "Gloves",
+   "tier": "T0",
+   "family": "C"
+  },
+  "hybrid-fc-gloves": {
+   "name": "Hybrid FC Gloves",
+   "slot": "Gloves",
+   "tier": "T0",
+   "family": "B"
+  },
+  "hunter-s-code-gloves": {
+   "name": "Hunter's Code Gloves",
+   "slot": "Gloves",
+   "tier": "T0",
+   "family": "D"
+  },
+  "diamondback-gloves": {
+   "name": "Diamondback Gloves",
+   "slot": "Gloves",
+   "tier": "T1",
+   "family": "B"
+  },
+  "phantom-saviour-gloves": {
+   "name": "Phantom Saviour Gloves",
+   "slot": "Gloves",
+   "tier": "T1",
+   "family": "D"
+  },
+  "micro-plated-gloves": {
+   "name": "Micro Plated Gloves",
+   "slot": "Gloves",
+   "tier": "T1",
+   "family": "A"
+  },
+  "digits-finger-stabilizer": {
+   "name": "\"Digits\" Finger Stabilizer",
+   "slot": "Gloves",
+   "tier": "T1",
+   "family": "C"
+  },
+  "kote-hand-guards": {
+   "name": "\"Kote\" Hand Guards",
+   "slot": "Gloves",
+   "tier": "T2",
+   "family": "B"
+  },
+  "nightclaw-tactical-gloves": {
+   "name": "Nightclaw Tactical Gloves",
+   "slot": "Gloves",
+   "tier": "T2",
+   "family": "A"
+  },
+  "neptune-protection-gloves": {
+   "name": "\"Neptune\" Protection Gloves",
+   "slot": "Gloves",
+   "tier": "T2",
+   "family": "C"
+  },
+  "gustavo-association-gloves": {
+   "name": "Gustavo Association Gloves",
+   "slot": "Gloves",
+   "tier": "T2",
+   "family": "D"
+  },
+  "demeter-quick-stash": {
+   "name": "Demeter Quick-Stash",
+   "slot": "Backpack",
+   "tier": "T0",
+   "family": "B"
+  },
+  "trekking-elite-pack": {
+   "name": "Trekking Elite Pack",
+   "slot": "Backpack",
+   "tier": "T0",
+   "family": "A"
+  },
+  "element-outdoors-rucksack": {
+   "name": "Element Outdoors Rucksack",
+   "slot": "Backpack",
+   "tier": "T0",
+   "family": "D"
+  },
+  "rush72-backpack": {
+   "name": "RUSH72 Backpack",
+   "slot": "Backpack",
+   "tier": "T0",
+   "family": "C"
+  },
+  "ziba-low-profile-pack": {
+   "name": "Ziba Low Profile Pack",
+   "slot": "Backpack",
+   "tier": "T1",
+   "family": "B"
+  },
+  "rally-point-secure-pack": {
+   "name": "Rally Point Secure Pack",
+   "slot": "Backpack",
+   "tier": "T1",
+   "family": "A"
+  },
+  "big-horn-pack": {
+   "name": "Big Horn Pack",
+   "slot": "Backpack",
+   "tier": "T1",
+   "family": "D"
+  },
+  "horo-carryback": {
+   "name": "\"Horo\" CarryBack",
+   "slot": "Backpack",
+   "tier": "T1",
+   "family": "C"
+  },
+  "mountain-hiking-pack": {
+   "name": "Mountain Hiking Pack",
+   "slot": "Backpack",
+   "tier": "T2",
+   "family": "B"
+  },
+  "all-hazards-nitro-backpack": {
+   "name": "All Hazards Nitro Backpack",
+   "slot": "Backpack",
+   "tier": "T2",
+   "family": "A"
+  },
+  "amp24": {
+   "name": "AMP24",
+   "slot": "Backpack",
+   "tier": "T2",
+   "family": "C"
+  },
+  "roamer-pack-sow": {
+   "name": "Roamer Pack \"Sow\"",
+   "slot": "Backpack",
+   "tier": "T2",
+   "family": "D"
+  },
+  "dingson-protection-pads": {
+   "name": "\"Dingson\" Protection Pads",
+   "slot": "Knee Pads",
+   "tier": "T0",
+   "family": "A"
+  },
+  "tay-protective-pads-v2": {
+   "name": "\"Tay\" Protective Pads v2",
+   "slot": "Knee Pads",
+   "tier": "T0",
+   "family": "D"
+  },
+  "tay-protective-pads-v1": {
+   "name": "\"Tay\" Protective Pads v1",
+   "slot": "Knee Pads",
+   "tier": "T0",
+   "family": "B"
+  },
+  "dionysus-rounded-padding": {
+   "name": "Dionysus Rounded Padding",
+   "slot": "Knee Pads",
+   "tier": "T0",
+   "family": "C"
+  },
+  "sundown-knee-guards": {
+   "name": "Sundown Knee Guards",
+   "slot": "Knee Pads",
+   "tier": "T1",
+   "family": "B"
+  },
+  "stonewall-knee-pads": {
+   "name": "Stonewall Knee Pads",
+   "slot": "Knee Pads",
+   "tier": "T1",
+   "family": "A"
+  },
+  "hx-02": {
+   "name": "HX 02",
+   "slot": "Knee Pads",
+   "tier": "T1",
+   "family": "C"
+  },
+  "mesa-knee-guards": {
+   "name": "Mesa Knee Guards",
+   "slot": "Knee Pads",
+   "tier": "T1",
+   "family": "D"
+  },
+  "pivot-pads": {
+   "name": "Pivot Pads",
+   "slot": "Knee Pads",
+   "tier": "T2",
+   "family": "D"
+  },
+  "urban-warfare-kneepads": {
+   "name": "Urban Warfare Kneepads",
+   "slot": "Knee Pads",
+   "tier": "T2",
+   "family": "B"
+  },
+  "kn-skydd-knee-protectors": {
+   "name": "Knäskydd Knee Protectors",
+   "slot": "Knee Pads",
+   "tier": "T2",
+   "family": "A"
+  },
+  "patella-knee-cups": {
+   "name": "\"Patella\" Knee Cups",
+   "slot": "Knee Pads",
+   "tier": "T2",
+   "family": "C"
+  },
+  "stridsvast-combat-vest": {
+   "name": "Stridsvast Combat Vest",
+   "slot": "Body Armor",
+   "tier": "T0",
+   "family": "D"
+  },
+  "mechanized-infantry-armor": {
+   "name": "Mechanized Infantry Armor",
+   "slot": "Body Armor",
+   "tier": "T0",
+   "family": "B"
+  },
+  "ericht-chest-system": {
+   "name": "\"Ericht\" Chest System",
+   "slot": "Body Armor",
+   "tier": "T0",
+   "family": "A"
+  },
+  "ranger-ballistics-vest": {
+   "name": "Ranger Ballistics Vest",
+   "slot": "Body Armor",
+   "tier": "T0",
+   "family": "C"
+  },
+  "athena-missile-vest": {
+   "name": "Athena Missile Vest",
+   "slot": "Body Armor",
+   "tier": "T1",
+   "family": "B"
+  },
+  "flimsy-body-armor-v1": {
+   "name": "Flimsy Body Armor v1",
+   "slot": "Body Armor",
+   "tier": "T1",
+   "family": "A"
+  },
+  "flimsy-body-armor-v2": {
+   "name": "Flimsy Body Armor v2",
+   "slot": "Body Armor",
+   "tier": "T1",
+   "family": "C"
+  },
+  "phalanx-precision-vest": {
+   "name": "Phalanx Precision Vest",
+   "slot": "Body Armor",
+   "tier": "T1",
+   "family": "D"
+  },
+  "x-treyme-pro-ribcage": {
+   "name": "X-TREYME Pro Ribcage",
+   "slot": "Body Armor",
+   "tier": "T2",
+   "family": "A"
+  },
+  "big-drum-body-armor": {
+   "name": "\"Big Drum\" Body Armor",
+   "slot": "Body Armor",
+   "tier": "T2",
+   "family": "D"
+  },
+  "chatzatz-chest": {
+   "name": "Chatzatz Chest",
+   "slot": "Body Armor",
+   "tier": "T2",
+   "family": "B"
+  },
+  "ops-armor": {
+   "name": "Ops Armor",
+   "slot": "Body Armor",
+   "tier": "T2",
+   "family": "C"
+  },
+  "rapid-deployment-mask": {
+   "name": "Rapid Deployment Mask",
+   "slot": "Mask",
+   "tier": "T0",
+   "family": "B"
+  },
+  "tactical-mask": {
+   "name": "Tactical Mask",
+   "slot": "Mask",
+   "tier": "T0",
+   "family": "A"
+  },
+  "maxillam-respirator": {
+   "name": "\"Maxillam\" Respirator",
+   "slot": "Mask",
+   "tier": "T0",
+   "family": "C"
+  },
+  "guardrail-vi-facerig": {
+   "name": "Guardrail VI Facerig",
+   "slot": "Mask",
+   "tier": "T0",
+   "family": "D"
+  },
+  "timeless-guardian-mask": {
+   "name": "Timeless Guardian Mask",
+   "slot": "Mask",
+   "tier": "T1",
+   "family": "B"
+  },
+  "bevor-air-guard": {
+   "name": "Bevor Air Guard",
+   "slot": "Mask",
+   "tier": "T1",
+   "family": "A"
+  },
+  "aphrodite-glint-concealer": {
+   "name": "Aphrodite Glint Concealer",
+   "slot": "Mask",
+   "tier": "T1",
+   "family": "C"
+  },
+  "breathe-easy-mask": {
+   "name": "Breathe-Easy Mask",
+   "slot": "Mask",
+   "tier": "T1",
+   "family": "D"
+  },
+  "combat-mask-cete": {
+   "name": "Combat Mask \"Cete\"",
+   "slot": "Mask",
+   "tier": "T2",
+   "family": "A"
+  },
+  "protective-tactical-mask": {
+   "name": "Protective Tactical Mask",
+   "slot": "Mask",
+   "tier": "T2",
+   "family": "B"
+  },
+  "half-mask-respirator": {
+   "name": "Half mask respirator",
+   "slot": "Mask",
+   "tier": "T2",
+   "family": "D"
+  },
+  "javelina-mask": {
+   "name": "Javelina Mask",
+   "slot": "Mask",
+   "tier": "T2",
+   "family": "C"
+  }
+ },
+ "sets": {
+  "fury-strike": {
+   "name": "Fury Strike",
+   "pieces": [
+    {
+     "slug": "combat-mask-cete",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "x-treyme-pro-ribcage",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "kn-skydd-knee-protectors",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "all-hazards-nitro-backpack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "nightclaw-tactical-gloves",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "fodral-holster",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "bevor-air-guard",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "flimsy-body-armor-v1",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "stonewall-knee-pads",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "rally-point-secure-pack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "micro-plated-gloves",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "serviceman-s-holster",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "tactical-mask",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "ericht-chest-system",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "dingson-protection-pads",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "trekking-elite-pack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "lochy-hand-savers",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "urban-assault-holster",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    }
+   ]
+  },
+  "quick-draw": {
+   "name": "Quick Draw",
+   "pieces": [
+    {
+     "slug": "combat-mask-cete",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "x-treyme-pro-ribcage",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "kn-skydd-knee-protectors",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "all-hazards-nitro-backpack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "nightclaw-tactical-gloves",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "fodral-holster",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "bevor-air-guard",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "flimsy-body-armor-v1",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "stonewall-knee-pads",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "rally-point-secure-pack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "micro-plated-gloves",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "serviceman-s-holster",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "tactical-mask",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "ericht-chest-system",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "dingson-protection-pads",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "trekking-elite-pack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "lochy-hand-savers",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "urban-assault-holster",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    }
+   ]
+  },
+  "phalanx-attack": {
+   "name": "Phalanx Attack",
+   "pieces": [
+    {
+     "slug": "javelina-mask",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "ops-armor",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "patella-knee-cups",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "amp24",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "neptune-protection-gloves",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "jaivardhan-thigh-rig",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "aphrodite-glint-concealer",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "flimsy-body-armor-v2",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "hx-02",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "horo-carryback",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "digits-finger-stabilizer",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "pridwen-holster",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "maxillam-respirator",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "ranger-ballistics-vest",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "dionysus-rounded-padding",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "rush72-backpack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "blood-fang-gloves",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "armorer-s-security-holster",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    }
+   ]
+  },
+  "one-shot-one-kill": {
+   "name": "One Shot One Kill",
+   "pieces": [
+    {
+     "slug": "combat-mask-cete",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "x-treyme-pro-ribcage",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "kn-skydd-knee-protectors",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "all-hazards-nitro-backpack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "nightclaw-tactical-gloves",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "fodral-holster",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "bevor-air-guard",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "flimsy-body-armor-v1",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "stonewall-knee-pads",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "rally-point-secure-pack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "micro-plated-gloves",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "serviceman-s-holster",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    }
+   ]
+  },
+  "gunny-johnny": {
+   "name": "Gunny Johnny",
+   "pieces": [
+    {
+     "slug": "combat-mask-cete",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "x-treyme-pro-ribcage",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "kn-skydd-knee-protectors",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "all-hazards-nitro-backpack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "nightclaw-tactical-gloves",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "fodral-holster",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    }
+   ]
+  },
+  "mechanical-enemy": {
+   "name": "Mechanical Enemy",
+   "pieces": [
+    {
+     "slug": "protective-tactical-mask",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "chatzatz-chest",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "urban-warfare-kneepads",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "mountain-hiking-pack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "kote-hand-guards",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "jags-sidearm-mount",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    }
+   ]
+  },
+  "jackpot": {
+   "name": "Jackpot",
+   "pieces": [
+    {
+     "slug": "protective-tactical-mask",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "chatzatz-chest",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "urban-warfare-kneepads",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "mountain-hiking-pack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "kote-hand-guards",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "jags-sidearm-mount",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "timeless-guardian-mask",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "athena-missile-vest",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "sundown-knee-guards",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "ziba-low-profile-pack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "diamondback-gloves",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "morar-holster-system",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "rapid-deployment-mask",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "mechanized-infantry-armor",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "tay-protective-pads-v1",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "demeter-quick-stash",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "hybrid-fc-gloves",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "chamber-wolf-tac-holster",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    }
+   ]
+  },
+  "long-term-effect": {
+   "name": "Long-term Effect",
+   "pieces": [
+    {
+     "slug": "protective-tactical-mask",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "chatzatz-chest",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "urban-warfare-kneepads",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "mountain-hiking-pack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "kote-hand-guards",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "jags-sidearm-mount",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "timeless-guardian-mask",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "athena-missile-vest",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "sundown-knee-guards",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "ziba-low-profile-pack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "diamondback-gloves",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "morar-holster-system",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "rapid-deployment-mask",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "mechanized-infantry-armor",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "tay-protective-pads-v1",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "demeter-quick-stash",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "hybrid-fc-gloves",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "chamber-wolf-tac-holster",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    }
+   ]
+  },
+  "dr-medic": {
+   "name": "Dr. Medic",
+   "pieces": [
+    {
+     "slug": "protective-tactical-mask",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "chatzatz-chest",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "urban-warfare-kneepads",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "mountain-hiking-pack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "kote-hand-guards",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "jags-sidearm-mount",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "timeless-guardian-mask",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "athena-missile-vest",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "sundown-knee-guards",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "ziba-low-profile-pack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "diamondback-gloves",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "morar-holster-system",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    }
+   ]
+  },
+  "boom-shakalaka": {
+   "name": "Boom-Shakalaka",
+   "pieces": [
+    {
+     "slug": "javelina-mask",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "ops-armor",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "patella-knee-cups",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "amp24",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "neptune-protection-gloves",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "jaivardhan-thigh-rig",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "aphrodite-glint-concealer",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "flimsy-body-armor-v2",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "hx-02",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "horo-carryback",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "digits-finger-stabilizer",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "pridwen-holster",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "maxillam-respirator",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "ranger-ballistics-vest",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "dionysus-rounded-padding",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "rush72-backpack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "blood-fang-gloves",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "armorer-s-security-holster",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    }
+   ]
+  },
+  "fire-cycle": {
+   "name": "Fire Cycle",
+   "pieces": [
+    {
+     "slug": "javelina-mask",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "ops-armor",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "patella-knee-cups",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "amp24",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "neptune-protection-gloves",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "jaivardhan-thigh-rig",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    }
+   ]
+  },
+  "mechanical-expert": {
+   "name": "Mechanical Expert",
+   "pieces": [
+    {
+     "slug": "javelina-mask",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "ops-armor",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "patella-knee-cups",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "amp24",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "neptune-protection-gloves",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "jaivardhan-thigh-rig",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "aphrodite-glint-concealer",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "flimsy-body-armor-v2",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "hx-02",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "horo-carryback",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "digits-finger-stabilizer",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "pridwen-holster",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    }
+   ]
+  },
+  "captain-cow": {
+   "name": "Captain Cow",
+   "pieces": [
+    {
+     "slug": "half-mask-respirator",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "big-drum-body-armor",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "pivot-pads",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "roamer-pack-sow",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "gustavo-association-gloves",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "tepes-holster",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "breathe-easy-mask",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "phalanx-precision-vest",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "mesa-knee-guards",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "big-horn-pack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "phantom-saviour-gloves",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "artemis-fast-draw-holster",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "guardrail-vi-facerig",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "stridsvast-combat-vest",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "tay-protective-pads-v2",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "element-outdoors-rucksack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "hunter-s-code-gloves",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "lock-and-load-holster",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    }
+   ]
+  },
+  "healing-elites": {
+   "name": "Healing Elites",
+   "pieces": [
+    {
+     "slug": "half-mask-respirator",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "big-drum-body-armor",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "pivot-pads",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "roamer-pack-sow",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "gustavo-association-gloves",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "tepes-holster",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    }
+   ]
+  },
+  "self-propelled-shield": {
+   "name": "Self-Propelled Shield",
+   "pieces": [
+    {
+     "slug": "half-mask-respirator",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "big-drum-body-armor",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "pivot-pads",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "roamer-pack-sow",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "gustavo-association-gloves",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "tepes-holster",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "breathe-easy-mask",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "phalanx-precision-vest",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "mesa-knee-guards",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "big-horn-pack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "phantom-saviour-gloves",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "artemis-fast-draw-holster",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    }
+   ]
+  },
+  "fearless-warrior": {
+   "name": "Fearless Warrior",
+   "pieces": [
+    {
+     "slug": "half-mask-respirator",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "big-drum-body-armor",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "pivot-pads",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "roamer-pack-sow",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "gustavo-association-gloves",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "tepes-holster",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "breathe-easy-mask",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "phalanx-precision-vest",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "mesa-knee-guards",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "big-horn-pack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "phantom-saviour-gloves",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "artemis-fast-draw-holster",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "guardrail-vi-facerig",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "stridsvast-combat-vest",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "tay-protective-pads-v2",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "element-outdoors-rucksack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "hunter-s-code-gloves",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "lock-and-load-holster",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    }
+   ]
+  }
+ },
+ "bodyArmorTalents": {
+  "fearless-charge": {
+   "name": "Fearless Charge",
+   "pieces": [
+    {
+     "slug": "x-treyme-pro-ribcage",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "ops-armor",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "athena-missile-vest",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "mechanized-infantry-armor",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "ranger-ballistics-vest",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    }
+   ]
+  },
+  "socialite": {
+   "name": "Socialite",
+   "pieces": [
+    {
+     "slug": "x-treyme-pro-ribcage",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "big-drum-body-armor",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "flimsy-body-armor-v2",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "ericht-chest-system",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "mechanized-infantry-armor",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "stridsvast-combat-vest",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    }
+   ]
+  },
+  "emergency-retreat": {
+   "name": "Emergency Retreat",
+   "pieces": [
+    {
+     "slug": "chatzatz-chest",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "ops-armor",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "athena-missile-vest",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "flimsy-body-armor-v2",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "ericht-chest-system",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "mechanized-infantry-armor",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "stridsvast-combat-vest",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    }
+   ]
+  },
+  "toymaker": {
+   "name": "Toymaker",
+   "pieces": [
+    {
+     "slug": "big-drum-body-armor",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "ops-armor",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "flimsy-body-armor-v1",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "flimsy-body-armor-v2",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "ericht-chest-system",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    }
+   ]
+  },
+  "territory-expansion": {
+   "name": "Territory Expansion",
+   "pieces": [
+    {
+     "slug": "x-treyme-pro-ribcage",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "ops-armor",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "athena-missile-vest",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "phalanx-precision-vest",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "flimsy-body-armor-v2",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "ranger-ballistics-vest",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    }
+   ]
+  },
+  "accelerated-charge": {
+   "name": "Accelerated Charge",
+   "pieces": [
+    {
+     "slug": "x-treyme-pro-ribcage",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "big-drum-body-armor",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "ops-armor",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "athena-missile-vest",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "phalanx-precision-vest",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "ranger-ballistics-vest",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    }
+   ]
+  },
+  "duality": {
+   "name": "Duality",
+   "pieces": [
+    {
+     "slug": "chatzatz-chest",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "athena-missile-vest",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "flimsy-body-armor-v2",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "ericht-chest-system",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    }
+   ]
+  },
+  "crossfire": {
+   "name": "Crossfire",
+   "pieces": [
+    {
+     "slug": "x-treyme-pro-ribcage",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "big-drum-body-armor",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "flimsy-body-armor-v1",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "phalanx-precision-vest",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "stridsvast-combat-vest",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "ranger-ballistics-vest",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    }
+   ]
+  },
+  "glass-cannon": {
+   "name": "Glass Cannon",
+   "pieces": [
+    {
+     "slug": "chatzatz-chest",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "big-drum-body-armor",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "athena-missile-vest",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "phalanx-precision-vest",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "flimsy-body-armor-v2",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "mechanized-infantry-armor",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "stridsvast-combat-vest",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    }
+   ]
+  },
+  "hypervigilant": {
+   "name": "Hypervigilant",
+   "pieces": [
+    {
+     "slug": "chatzatz-chest",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "big-drum-body-armor",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "flimsy-body-armor-v1",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "phalanx-precision-vest",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "ericht-chest-system",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "stridsvast-combat-vest",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    }
+   ]
+  },
+  "nothing-to-lose": {
+   "name": "Nothing to Lose",
+   "pieces": [
+    {
+     "slug": "chatzatz-chest",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "flimsy-body-armor-v1",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "phalanx-precision-vest",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "flimsy-body-armor-v2",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "ericht-chest-system",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "mechanized-infantry-armor",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "stridsvast-combat-vest",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    }
+   ]
+  },
+  "boosted-shield": {
+   "name": "Boosted Shield",
+   "pieces": [
+    {
+     "slug": "x-treyme-pro-ribcage",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "athena-missile-vest",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "mechanized-infantry-armor",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "ranger-ballistics-vest",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    }
+   ]
+  },
+  "energy-drink": {
+   "name": "Energy Drink",
+   "pieces": [
+    {
+     "slug": "x-treyme-pro-ribcage",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "big-drum-body-armor",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "phalanx-precision-vest",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "stridsvast-combat-vest",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "ranger-ballistics-vest",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    }
+   ]
+  },
+  "second-wind": {
+   "name": "Second Wind",
+   "pieces": [
+    {
+     "slug": "x-treyme-pro-ribcage",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "chatzatz-chest",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "flimsy-body-armor-v1",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "phalanx-precision-vest",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "ericht-chest-system",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    }
+   ]
+  },
+  "deep-focus": {
+   "name": "Deep Focus",
+   "pieces": [
+    {
+     "slug": "chatzatz-chest",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "ops-armor",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "flimsy-body-armor-v1",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "phalanx-precision-vest",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "flimsy-body-armor-v2",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "mechanized-infantry-armor",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "stridsvast-combat-vest",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    }
+   ]
+  },
+  "energize": {
+   "name": "Energize",
+   "pieces": [
+    {
+     "slug": "x-treyme-pro-ribcage",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "ops-armor",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "athena-missile-vest",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "ranger-ballistics-vest",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    }
+   ]
+  },
+  "battlelust": {
+   "name": "Battlelust",
+   "pieces": [
+    {
+     "slug": "chatzatz-chest",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "ops-armor",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "flimsy-body-armor-v1",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "phalanx-precision-vest",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "mechanized-infantry-armor",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "stridsvast-combat-vest",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    }
+   ]
+  },
+  "recycling": {
+   "name": "Recycling",
+   "pieces": [
+    {
+     "slug": "chatzatz-chest",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "ops-armor",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "flimsy-body-armor-v1",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "flimsy-body-armor-v2",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "ericht-chest-system",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "mechanized-infantry-armor",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "stridsvast-combat-vest",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "ranger-ballistics-vest",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    }
+   ]
+  },
+  "suppressive-fire": {
+   "name": "Suppressive Fire",
+   "pieces": [
+    {
+     "slug": "x-treyme-pro-ribcage",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "big-drum-body-armor",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "phalanx-precision-vest",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "stridsvast-combat-vest",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "ranger-ballistics-vest",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    }
+   ]
+  },
+  "unflinching": {
+   "name": "Unflinching",
+   "pieces": [
+    {
+     "slug": "x-treyme-pro-ribcage",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "big-drum-body-armor",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "flimsy-body-armor-v1",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "phalanx-precision-vest",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "ericht-chest-system",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "stridsvast-combat-vest",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    }
+   ]
+  },
+  "injured-concealment": {
+   "name": "Injured Concealment",
+   "pieces": [
+    {
+     "slug": "chatzatz-chest",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "big-drum-body-armor",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "ops-armor",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "flimsy-body-armor-v1",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "athena-missile-vest",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "flimsy-body-armor-v2",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "ericht-chest-system",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "mechanized-infantry-armor",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "ranger-ballistics-vest",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    }
+   ]
+  },
+  "defensive-charge": {
+   "name": "Defensive Charge",
+   "pieces": [
+    {
+     "slug": "big-drum-body-armor",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "flimsy-body-armor-v1",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "ericht-chest-system",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    }
+   ]
+  },
+  "suppression-rescue": {
+   "name": "Suppression Rescue",
+   "pieces": [
+    {
+     "slug": "chatzatz-chest",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "big-drum-body-armor",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "flimsy-body-armor-v1",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "athena-missile-vest",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "flimsy-body-armor-v2",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "ericht-chest-system",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    }
+   ]
+  },
+  "instant-triage": {
+   "name": "Instant Triage",
+   "pieces": [
+    {
+     "slug": "x-treyme-pro-ribcage",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "ops-armor",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "athena-missile-vest",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "flimsy-body-armor-v2",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "mechanized-infantry-armor",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "ranger-ballistics-vest",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    }
+   ]
+  },
+  "rescue-signal": {
+   "name": "Rescue Signal",
+   "pieces": [
+    {
+     "slug": "chatzatz-chest",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "ops-armor",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "athena-missile-vest",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "mechanized-infantry-armor",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "ranger-ballistics-vest",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    }
+   ]
+  }
+ },
+ "backpackTalents": {
+  "simple-pleasures": {
+   "name": "Simple Pleasures",
+   "pieces": [
+    {
+     "slug": "all-hazards-nitro-backpack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "amp24",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "big-horn-pack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "element-outdoors-rucksack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "rush72-backpack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    }
+   ]
+  },
+  "hidden-impact": {
+   "name": "Hidden Impact",
+   "pieces": [
+    {
+     "slug": "all-hazards-nitro-backpack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "roamer-pack-sow",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "rally-point-secure-pack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "big-horn-pack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "element-outdoors-rucksack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "rush72-backpack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    }
+   ]
+  },
+  "explosive-fury": {
+   "name": "Explosive Fury",
+   "pieces": [
+    {
+     "slug": "mountain-hiking-pack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "amp24",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "rally-point-secure-pack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "horo-carryback",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "trekking-elite-pack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "demeter-quick-stash",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "element-outdoors-rucksack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "rush72-backpack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    }
+   ]
+  },
+  "open-fire": {
+   "name": "Open Fire",
+   "pieces": [
+    {
+     "slug": "mountain-hiking-pack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "roamer-pack-sow",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "rally-point-secure-pack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "big-horn-pack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "demeter-quick-stash",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "element-outdoors-rucksack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    }
+   ]
+  },
+  "prime-engineer": {
+   "name": "Prime Engineer",
+   "pieces": [
+    {
+     "slug": "all-hazards-nitro-backpack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "amp24",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "ziba-low-profile-pack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "big-horn-pack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "horo-carryback",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "rush72-backpack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    }
+   ]
+  },
+  "overwatch": {
+   "name": "Overwatch",
+   "pieces": [
+    {
+     "slug": "all-hazards-nitro-backpack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "roamer-pack-sow",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "ziba-low-profile-pack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "big-horn-pack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "rush72-backpack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    }
+   ]
+  },
+  "minion-training": {
+   "name": "Minion Training",
+   "pieces": [
+    {
+     "slug": "roamer-pack-sow",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "amp24",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "rally-point-secure-pack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "trekking-elite-pack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    }
+   ]
+  },
+  "explosive-burst": {
+   "name": "Explosive Burst",
+   "pieces": [
+    {
+     "slug": "mountain-hiking-pack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "roamer-pack-sow",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "ziba-low-profile-pack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "big-horn-pack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "horo-carryback",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "element-outdoors-rucksack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    }
+   ]
+  },
+  "combat-inspiration": {
+   "name": "Combat Inspiration",
+   "pieces": [
+    {
+     "slug": "all-hazards-nitro-backpack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "amp24",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "ziba-low-profile-pack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "demeter-quick-stash",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "rush72-backpack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    }
+   ]
+  },
+  "street-fighter": {
+   "name": "Street Fighter",
+   "pieces": [
+    {
+     "slug": "mountain-hiking-pack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "amp24",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "ziba-low-profile-pack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "horo-carryback",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "trekking-elite-pack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    }
+   ]
+  },
+  "rock-solid": {
+   "name": "Rock Solid",
+   "pieces": [
+    {
+     "slug": "mountain-hiking-pack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "roamer-pack-sow",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "rally-point-secure-pack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "big-horn-pack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "trekking-elite-pack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    }
+   ]
+  },
+  "emergency-measures": {
+   "name": "Emergency Measures",
+   "pieces": [
+    {
+     "slug": "all-hazards-nitro-backpack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "roamer-pack-sow",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "amp24",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "rally-point-secure-pack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "big-horn-pack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "trekking-elite-pack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "element-outdoors-rucksack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    }
+   ]
+  },
+  "meditation": {
+   "name": "Meditation",
+   "pieces": [
+    {
+     "slug": "mountain-hiking-pack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "amp24",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "rally-point-secure-pack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "horo-carryback",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "trekking-elite-pack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "demeter-quick-stash",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    }
+   ]
+  },
+  "unstoppable": {
+   "name": "Unstoppable",
+   "pieces": [
+    {
+     "slug": "mountain-hiking-pack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "roamer-pack-sow",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "rally-point-secure-pack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "ziba-low-profile-pack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "horo-carryback",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "trekking-elite-pack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "demeter-quick-stash",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "rush72-backpack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    }
+   ]
+  },
+  "brainstorm": {
+   "name": "Brainstorm",
+   "pieces": [
+    {
+     "slug": "mountain-hiking-pack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "rally-point-secure-pack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "big-horn-pack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "horo-carryback",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "demeter-quick-stash",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "element-outdoors-rucksack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    }
+   ]
+  },
+  "intense-performance": {
+   "name": "Intense Performance",
+   "pieces": [
+    {
+     "slug": "all-hazards-nitro-backpack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "amp24",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "ziba-low-profile-pack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "big-horn-pack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "horo-carryback",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "element-outdoors-rucksack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "rush72-backpack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    }
+   ]
+  },
+  "inspiration": {
+   "name": "Inspiration",
+   "pieces": [
+    {
+     "slug": "all-hazards-nitro-backpack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "roamer-pack-sow",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "big-horn-pack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "element-outdoors-rucksack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "rush72-backpack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    }
+   ]
+  },
+  "siege": {
+   "name": "Siege",
+   "pieces": [
+    {
+     "slug": "mountain-hiking-pack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "ziba-low-profile-pack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "horo-carryback",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "trekking-elite-pack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "demeter-quick-stash",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "element-outdoors-rucksack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    }
+   ]
+  },
+  "painkillers": {
+   "name": "Painkillers",
+   "pieces": [
+    {
+     "slug": "all-hazards-nitro-backpack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "roamer-pack-sow",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "rally-point-secure-pack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "big-horn-pack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "trekking-elite-pack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "element-outdoors-rucksack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    }
+   ]
+  },
+  "injured-taunt": {
+   "name": "Injured Taunt",
+   "pieces": [
+    {
+     "slug": "all-hazards-nitro-backpack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "amp24",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "horo-carryback",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "trekking-elite-pack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "demeter-quick-stash",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "element-outdoors-rucksack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    }
+   ]
+  },
+  "defense-enhancement": {
+   "name": "Defense Enhancement",
+   "pieces": [
+    {
+     "slug": "mountain-hiking-pack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "ziba-low-profile-pack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "horo-carryback",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "demeter-quick-stash",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "rush72-backpack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    }
+   ]
+  },
+  "rescue-protection": {
+   "name": "Rescue Protection",
+   "pieces": [
+    {
+     "slug": "all-hazards-nitro-backpack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "mountain-hiking-pack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "amp24",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "ziba-low-profile-pack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "demeter-quick-stash",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "rush72-backpack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    }
+   ]
+  },
+  "electrical-protection": {
+   "name": "Electrical Protection",
+   "pieces": [
+    {
+     "slug": "roamer-pack-sow",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "rally-point-secure-pack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "trekking-elite-pack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "demeter-quick-stash",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    }
+   ]
+  },
+  "assault-protection": {
+   "name": "Assault Protection",
+   "pieces": [
+    {
+     "slug": "mountain-hiking-pack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "roamer-pack-sow",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "rally-point-secure-pack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "ziba-low-profile-pack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "horo-carryback",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "trekking-elite-pack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    }
+   ]
+  },
+  "double-edged-bullet": {
+   "name": "Double-edged Bullet",
+   "pieces": [
+    {
+     "slug": "all-hazards-nitro-backpack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "amp24",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "ziba-low-profile-pack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "demeter-quick-stash",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    },
+    {
+     "slug": "rush72-backpack",
+     "rarities": [
+      "High-End",
+      "Superior"
+     ]
+    }
+   ]
+  }
+ }
+}

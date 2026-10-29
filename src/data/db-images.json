@@ -5701,5 +5701,3099 @@
     ]
    ]
   }
+ },
+ "weapon-icons/1886": {
+  "card": {
+   "src": "/images/db/weapon-icons/1886-weapon-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/weapon-icons/1886-weapon-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/weapon-icons/1886-weapon-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "weapon-icons/ace-52": {
+  "card": {
+   "src": "/images/db/weapon-icons/ace-52-weapon-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/weapon-icons/ace-52-weapon-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/weapon-icons/ace-52-weapon-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "weapon-icons/acr": {
+  "card": {
+   "src": "/images/db/weapon-icons/acr-weapon-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/weapon-icons/acr-weapon-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/weapon-icons/acr-weapon-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "weapon-icons/acs-12": {
+  "card": {
+   "src": "/images/db/weapon-icons/acs-12-weapon-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/weapon-icons/acs-12-weapon-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/weapon-icons/acs-12-weapon-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "weapon-icons/an-94": {
+  "card": {
+   "src": "/images/db/weapon-icons/an-94-weapon-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/weapon-icons/an-94-weapon-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/weapon-icons/an-94-weapon-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "weapon-icons/aug-a3-para-xs": {
+  "card": {
+   "src": "/images/db/weapon-icons/aug-a3-para-xs-weapon-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/weapon-icons/aug-a3-para-xs-weapon-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/weapon-icons/aug-a3-para-xs-weapon-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "weapon-icons/avtomat": {
+  "card": {
+   "src": "/images/db/weapon-icons/avtomat-weapon-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/weapon-icons/avtomat-weapon-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/weapon-icons/avtomat-weapon-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "weapon-icons/black-market-ak-74": {
+  "card": {
+   "src": "/images/db/weapon-icons/black-market-ak-74-weapon-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/weapon-icons/black-market-ak-74-weapon-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/weapon-icons/black-market-ak-74-weapon-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "weapon-icons/black-market-m60-e6": {
+  "card": {
+   "src": "/images/db/weapon-icons/black-market-m60-e6-weapon-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/weapon-icons/black-market-m60-e6-weapon-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/weapon-icons/black-market-m60-e6-weapon-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "weapon-icons/black-market-rpk-74-e": {
+  "card": {
+   "src": "/images/db/weapon-icons/black-market-rpk-74-e-weapon-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/weapon-icons/black-market-rpk-74-e-weapon-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/weapon-icons/black-market-rpk-74-e-weapon-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "weapon-icons/classic-ak-47": {
+  "card": {
+   "src": "/images/db/weapon-icons/classic-ak-47-weapon-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/weapon-icons/classic-ak-47-weapon-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/weapon-icons/classic-ak-47-weapon-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "weapon-icons/classic-fal": {
+  "card": {
+   "src": "/images/db/weapon-icons/classic-fal-weapon-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/weapon-icons/classic-fal-weapon-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/weapon-icons/classic-fal-weapon-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "weapon-icons/classic-m1a": {
+  "card": {
+   "src": "/images/db/weapon-icons/classic-m1a-weapon-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/weapon-icons/classic-m1a-weapon-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/weapon-icons/classic-m1a-weapon-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "weapon-icons/classic-m44": {
+  "card": {
+   "src": "/images/db/weapon-icons/classic-m44-weapon-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/weapon-icons/classic-m44-weapon-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/weapon-icons/classic-m44-weapon-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "weapon-icons/classic-m60": {
+  "card": {
+   "src": "/images/db/weapon-icons/classic-m60-weapon-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/weapon-icons/classic-m60-weapon-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/weapon-icons/classic-m60-weapon-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "weapon-icons/classic-rpk-74": {
+  "card": {
+   "src": "/images/db/weapon-icons/classic-rpk-74-weapon-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/weapon-icons/classic-rpk-74-weapon-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/weapon-icons/classic-rpk-74-weapon-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "weapon-icons/converted-smg-9-a2": {
+  "card": {
+   "src": "/images/db/weapon-icons/converted-smg-9-a2-weapon-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/weapon-icons/converted-smg-9-a2-weapon-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/weapon-icons/converted-smg-9-a2-weapon-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "weapon-icons/converted-smg-9": {
+  "card": {
+   "src": "/images/db/weapon-icons/converted-smg-9-weapon-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/weapon-icons/converted-smg-9-weapon-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/weapon-icons/converted-smg-9-weapon-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "weapon-icons/converted-srs": {
+  "card": {
+   "src": "/images/db/weapon-icons/converted-srs-weapon-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/weapon-icons/converted-srs-weapon-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/weapon-icons/converted-srs-weapon-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "weapon-icons/copperhead": {
+  "card": {
+   "src": "/images/db/weapon-icons/copperhead-weapon-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/weapon-icons/copperhead-weapon-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/weapon-icons/copperhead-weapon-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "weapon-icons/custom-416-g3": {
+  "card": {
+   "src": "/images/db/weapon-icons/custom-416-g3-weapon-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/weapon-icons/custom-416-g3-weapon-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/weapon-icons/custom-416-g3-weapon-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "weapon-icons/double-barrel-shotgun": {
+  "card": {
+   "src": "/images/db/weapon-icons/double-barrel-shotgun-weapon-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/weapon-icons/double-barrel-shotgun-weapon-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/weapon-icons/double-barrel-shotgun-weapon-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "weapon-icons/dsr-1": {
+  "card": {
+   "src": "/images/db/weapon-icons/dsr-1-weapon-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/weapon-icons/dsr-1-weapon-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/weapon-icons/dsr-1-weapon-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "weapon-icons/enhanced-acr-e": {
+  "card": {
+   "src": "/images/db/weapon-icons/enhanced-acr-e-weapon-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/weapon-icons/enhanced-acr-e-weapon-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/weapon-icons/enhanced-acr-e-weapon-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "weapon-icons/enhanced-aug-a3p": {
+  "card": {
+   "src": "/images/db/weapon-icons/enhanced-aug-a3p-weapon-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/weapon-icons/enhanced-aug-a3p-weapon-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/weapon-icons/enhanced-aug-a3p-weapon-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "weapon-icons/famas": {
+  "card": {
+   "src": "/images/db/weapon-icons/famas-weapon-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/weapon-icons/famas-weapon-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/weapon-icons/famas-weapon-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "weapon-icons/fg-42": {
+  "card": {
+   "src": "/images/db/weapon-icons/fg-42-weapon-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/weapon-icons/fg-42-weapon-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/weapon-icons/fg-42-weapon-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "weapon-icons/first-wave-vector-45-acp": {
+  "card": {
+   "src": "/images/db/weapon-icons/first-wave-vector-45-acp-weapon-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/weapon-icons/first-wave-vector-45-acp-weapon-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/weapon-icons/first-wave-vector-45-acp-weapon-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "weapon-icons/g28": {
+  "card": {
+   "src": "/images/db/weapon-icons/g28-weapon-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/weapon-icons/g28-weapon-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/weapon-icons/g28-weapon-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "weapon-icons/g3": {
+  "card": {
+   "src": "/images/db/weapon-icons/g3-weapon-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/weapon-icons/g3-weapon-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/weapon-icons/g3-weapon-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "weapon-icons/g36-c": {
+  "card": {
+   "src": "/images/db/weapon-icons/g36-c-weapon-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/weapon-icons/g36-c-weapon-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/weapon-icons/g36-c-weapon-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "weapon-icons/gewehr-43": {
+  "card": {
+   "src": "/images/db/weapon-icons/gewehr-43-weapon-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/weapon-icons/gewehr-43-weapon-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/weapon-icons/gewehr-43-weapon-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "weapon-icons/hunting-m44": {
+  "card": {
+   "src": "/images/db/weapon-icons/hunting-m44-weapon-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/weapon-icons/hunting-m44-weapon-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/weapon-icons/hunting-m44-weapon-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "weapon-icons/ksg": {
+  "card": {
+   "src": "/images/db/weapon-icons/ksg-weapon-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/weapon-icons/ksg-weapon-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/weapon-icons/ksg-weapon-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "weapon-icons/l115a3": {
+  "card": {
+   "src": "/images/db/weapon-icons/l115a3-weapon-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/weapon-icons/l115a3-weapon-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/weapon-icons/l115a3-weapon-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "weapon-icons/lewis-gun": {
+  "card": {
+   "src": "/images/db/weapon-icons/lewis-gun-weapon-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/weapon-icons/lewis-gun-weapon-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/weapon-icons/lewis-gun-weapon-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "weapon-icons/lightweight-m4": {
+  "card": {
+   "src": "/images/db/weapon-icons/lightweight-m4-weapon-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/weapon-icons/lightweight-m4-weapon-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/weapon-icons/lightweight-m4-weapon-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "weapon-icons/m-16": {
+  "card": {
+   "src": "/images/db/weapon-icons/m-16-weapon-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/weapon-icons/m-16-weapon-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/weapon-icons/m-16-weapon-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "weapon-icons/m1": {
+  "card": {
+   "src": "/images/db/weapon-icons/m1-weapon-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/weapon-icons/m1-weapon-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/weapon-icons/m1-weapon-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "weapon-icons/m12": {
+  "card": {
+   "src": "/images/db/weapon-icons/m12-weapon-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/weapon-icons/m12-weapon-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/weapon-icons/m12-weapon-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "weapon-icons/m249": {
+  "card": {
+   "src": "/images/db/weapon-icons/m249-weapon-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/weapon-icons/m249-weapon-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/weapon-icons/m249-weapon-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "weapon-icons/m700-carbon": {
+  "card": {
+   "src": "/images/db/weapon-icons/m700-carbon-weapon-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/weapon-icons/m700-carbon-weapon-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/weapon-icons/m700-carbon-weapon-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "weapon-icons/m700": {
+  "card": {
+   "src": "/images/db/weapon-icons/m700-weapon-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/weapon-icons/m700-weapon-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/weapon-icons/m700-weapon-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "weapon-icons/m870": {
+  "card": {
+   "src": "/images/db/weapon-icons/m870-weapon-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/weapon-icons/m870-weapon-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/weapon-icons/m870-weapon-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "weapon-icons/m8a1": {
+  "card": {
+   "src": "/images/db/weapon-icons/m8a1-weapon-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/weapon-icons/m8a1-weapon-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/weapon-icons/m8a1-weapon-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "weapon-icons/mg5": {
+  "card": {
+   "src": "/images/db/weapon-icons/mg5-weapon-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/weapon-icons/mg5-weapon-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/weapon-icons/mg5-weapon-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "weapon-icons/military-416": {
+  "card": {
+   "src": "/images/db/weapon-icons/military-416-weapon-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/weapon-icons/military-416-weapon-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/weapon-icons/military-416-weapon-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "weapon-icons/military-l86-lsw": {
+  "card": {
+   "src": "/images/db/weapon-icons/military-l86-lsw-weapon-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/weapon-icons/military-l86-lsw-weapon-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/weapon-icons/military-l86-lsw-weapon-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "weapon-icons/military-m60-e4": {
+  "card": {
+   "src": "/images/db/weapon-icons/military-m60-e4-weapon-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/weapon-icons/military-m60-e4-weapon-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/weapon-icons/military-m60-e4-weapon-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "weapon-icons/military-mk46": {
+  "card": {
+   "src": "/images/db/weapon-icons/military-mk46-weapon-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/weapon-icons/military-mk46-weapon-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/weapon-icons/military-mk46-weapon-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "weapon-icons/military-sa-58": {
+  "card": {
+   "src": "/images/db/weapon-icons/military-sa-58-weapon-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/weapon-icons/military-sa-58-weapon-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/weapon-icons/military-sa-58-weapon-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "weapon-icons/mk-20-ssr": {
+  "card": {
+   "src": "/images/db/weapon-icons/mk-20-ssr-weapon-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/weapon-icons/mk-20-ssr-weapon-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/weapon-icons/mk-20-ssr-weapon-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "weapon-icons/mk16": {
+  "card": {
+   "src": "/images/db/weapon-icons/mk16-weapon-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/weapon-icons/mk16-weapon-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/weapon-icons/mk16-weapon-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "weapon-icons/modified-usc": {
+  "card": {
+   "src": "/images/db/weapon-icons/modified-usc-weapon-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/weapon-icons/modified-usc-weapon-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/weapon-icons/modified-usc-weapon-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "weapon-icons/mp40": {
+  "card": {
+   "src": "/images/db/weapon-icons/mp40-weapon-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/weapon-icons/mp40-weapon-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/weapon-icons/mp40-weapon-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "weapon-icons/mp7": {
+  "card": {
+   "src": "/images/db/weapon-icons/mp7-weapon-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/weapon-icons/mp7-weapon-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/weapon-icons/mp7-weapon-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "weapon-icons/mpx": {
+  "card": {
+   "src": "/images/db/weapon-icons/mpx-weapon-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/weapon-icons/mpx-weapon-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/weapon-icons/mpx-weapon-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "weapon-icons/naval-mp5": {
+  "card": {
+   "src": "/images/db/weapon-icons/naval-mp5-weapon-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/weapon-icons/naval-mp5-weapon-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/weapon-icons/naval-mp5-weapon-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "weapon-icons/negev": {
+  "card": {
+   "src": "/images/db/weapon-icons/negev-weapon-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/weapon-icons/negev-weapon-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/weapon-icons/negev-weapon-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "weapon-icons/p90": {
+  "card": {
+   "src": "/images/db/weapon-icons/p90-weapon-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/weapon-icons/p90-weapon-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/weapon-icons/p90-weapon-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "weapon-icons/paratrooper-svd": {
+  "card": {
+   "src": "/images/db/weapon-icons/paratrooper-svd-weapon-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/weapon-icons/paratrooper-svd-weapon-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/weapon-icons/paratrooper-svd-weapon-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "weapon-icons/pkm": {
+  "card": {
+   "src": "/images/db/weapon-icons/pkm-weapon-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/weapon-icons/pkm-weapon-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/weapon-icons/pkm-weapon-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "weapon-icons/police-m4": {
+  "card": {
+   "src": "/images/db/weapon-icons/police-m4-weapon-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/weapon-icons/police-m4-weapon-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/weapon-icons/police-m4-weapon-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "weapon-icons/police-mk17": {
+  "card": {
+   "src": "/images/db/weapon-icons/police-mk17-weapon-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/weapon-icons/police-mk17-weapon-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/weapon-icons/police-mk17-weapon-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "weapon-icons/police-t821": {
+  "card": {
+   "src": "/images/db/weapon-icons/police-t821-weapon-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/weapon-icons/police-t821-weapon-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/weapon-icons/police-t821-weapon-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "weapon-icons/police-ump-45": {
+  "card": {
+   "src": "/images/db/weapon-icons/police-ump-45-weapon-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/weapon-icons/police-ump-45-weapon-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/weapon-icons/police-ump-45-weapon-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "weapon-icons/pp-19": {
+  "card": {
+   "src": "/images/db/weapon-icons/pp-19-weapon-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/weapon-icons/pp-19-weapon-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/weapon-icons/pp-19-weapon-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "weapon-icons/ppsh-41": {
+  "card": {
+   "src": "/images/db/weapon-icons/ppsh-41-weapon-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/weapon-icons/ppsh-41-weapon-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/weapon-icons/ppsh-41-weapon-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "weapon-icons/rmb-93": {
+  "card": {
+   "src": "/images/db/weapon-icons/rmb-93-weapon-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/weapon-icons/rmb-93-weapon-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/weapon-icons/rmb-93-weapon-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "weapon-icons/rpd": {
+  "card": {
+   "src": "/images/db/weapon-icons/rpd-weapon-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/weapon-icons/rpd-weapon-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/weapon-icons/rpd-weapon-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "weapon-icons/ru12sg": {
+  "card": {
+   "src": "/images/db/weapon-icons/ru12sg-weapon-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/weapon-icons/ru12sg-weapon-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/weapon-icons/ru12sg-weapon-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "weapon-icons/sasg-12": {
+  "card": {
+   "src": "/images/db/weapon-icons/sasg-12-weapon-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/weapon-icons/sasg-12-weapon-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/weapon-icons/sasg-12-weapon-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "weapon-icons/sg16-12g": {
+  "card": {
+   "src": "/images/db/weapon-icons/sg16-12g-weapon-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/weapon-icons/sg16-12g-weapon-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/weapon-icons/sg16-12g-weapon-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "weapon-icons/spas-12": {
+  "card": {
+   "src": "/images/db/weapon-icons/spas-12-weapon-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/weapon-icons/spas-12-weapon-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/weapon-icons/spas-12-weapon-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "weapon-icons/srs-a1": {
+  "card": {
+   "src": "/images/db/weapon-icons/srs-a1-weapon-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/weapon-icons/srs-a1-weapon-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/weapon-icons/srs-a1-weapon-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "weapon-icons/stg-44": {
+  "card": {
+   "src": "/images/db/weapon-icons/stg-44-weapon-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/weapon-icons/stg-44-weapon-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/weapon-icons/stg-44-weapon-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "weapon-icons/stoner-lamg": {
+  "card": {
+   "src": "/images/db/weapon-icons/stoner-lamg-weapon-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/weapon-icons/stoner-lamg-weapon-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/weapon-icons/stoner-lamg-weapon-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "weapon-icons/super-90": {
+  "card": {
+   "src": "/images/db/weapon-icons/super-90-weapon-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/weapon-icons/super-90-weapon-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/weapon-icons/super-90-weapon-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "weapon-icons/surplus-svd": {
+  "card": {
+   "src": "/images/db/weapon-icons/surplus-svd-weapon-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/weapon-icons/surplus-svd-weapon-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/weapon-icons/surplus-svd-weapon-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "weapon-icons/tactical-308": {
+  "card": {
+   "src": "/images/db/weapon-icons/tactical-308-weapon-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/weapon-icons/tactical-308-weapon-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/weapon-icons/tactical-308-weapon-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "weapon-icons/tavor-ts12": {
+  "card": {
+   "src": "/images/db/weapon-icons/tavor-ts12-weapon-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/weapon-icons/tavor-ts12-weapon-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/weapon-icons/tavor-ts12-weapon-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "weapon-icons/type-81": {
+  "card": {
+   "src": "/images/db/weapon-icons/type-81-weapon-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/weapon-icons/type-81-weapon-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/weapon-icons/type-81-weapon-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "weapon-icons/uic15-mod2": {
+  "card": {
+   "src": "/images/db/weapon-icons/uic15-mod2-weapon-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/weapon-icons/uic15-mod2-weapon-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/weapon-icons/uic15-mod2-weapon-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "weapon-icons/umax100": {
+  "card": {
+   "src": "/images/db/weapon-icons/umax100-weapon-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/weapon-icons/umax100-weapon-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/weapon-icons/umax100-weapon-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "weapon-icons/urban-mdr": {
+  "card": {
+   "src": "/images/db/weapon-icons/urban-mdr-weapon-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/weapon-icons/urban-mdr-weapon-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/weapon-icons/urban-mdr-weapon-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "weapon-icons/vector-45-acp": {
+  "card": {
+   "src": "/images/db/weapon-icons/vector-45-acp-weapon-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/weapon-icons/vector-45-acp-weapon-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/weapon-icons/vector-45-acp-weapon-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "gear-icons/all-hazards-nitro-backpack": {
+  "card": {
+   "src": "/images/db/gear-icons/all-hazards-nitro-backpack-gear-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/gear-icons/all-hazards-nitro-backpack-gear-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/gear-icons/all-hazards-nitro-backpack-gear-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "gear-icons/amp24": {
+  "card": {
+   "src": "/images/db/gear-icons/amp24-gear-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/gear-icons/amp24-gear-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/gear-icons/amp24-gear-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "gear-icons/aphrodite-glint-concealer": {
+  "card": {
+   "src": "/images/db/gear-icons/aphrodite-glint-concealer-gear-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/gear-icons/aphrodite-glint-concealer-gear-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/gear-icons/aphrodite-glint-concealer-gear-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "gear-icons/armorer-s-security-holster": {
+  "card": {
+   "src": "/images/db/gear-icons/armorer-s-security-holster-gear-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/gear-icons/armorer-s-security-holster-gear-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/gear-icons/armorer-s-security-holster-gear-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "gear-icons/artemis-fast-draw-holster": {
+  "card": {
+   "src": "/images/db/gear-icons/artemis-fast-draw-holster-gear-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/gear-icons/artemis-fast-draw-holster-gear-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/gear-icons/artemis-fast-draw-holster-gear-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "gear-icons/athena-missile-vest": {
+  "card": {
+   "src": "/images/db/gear-icons/athena-missile-vest-gear-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/gear-icons/athena-missile-vest-gear-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/gear-icons/athena-missile-vest-gear-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "gear-icons/bevor-air-guard": {
+  "card": {
+   "src": "/images/db/gear-icons/bevor-air-guard-gear-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/gear-icons/bevor-air-guard-gear-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/gear-icons/bevor-air-guard-gear-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "gear-icons/big-drum-body-armor": {
+  "card": {
+   "src": "/images/db/gear-icons/big-drum-body-armor-gear-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/gear-icons/big-drum-body-armor-gear-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/gear-icons/big-drum-body-armor-gear-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "gear-icons/big-horn-pack": {
+  "card": {
+   "src": "/images/db/gear-icons/big-horn-pack-gear-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/gear-icons/big-horn-pack-gear-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/gear-icons/big-horn-pack-gear-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "gear-icons/blood-fang-gloves": {
+  "card": {
+   "src": "/images/db/gear-icons/blood-fang-gloves-gear-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/gear-icons/blood-fang-gloves-gear-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/gear-icons/blood-fang-gloves-gear-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "gear-icons/breathe-easy-mask": {
+  "card": {
+   "src": "/images/db/gear-icons/breathe-easy-mask-gear-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/gear-icons/breathe-easy-mask-gear-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/gear-icons/breathe-easy-mask-gear-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "gear-icons/chamber-wolf-tac-holster": {
+  "card": {
+   "src": "/images/db/gear-icons/chamber-wolf-tac-holster-gear-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/gear-icons/chamber-wolf-tac-holster-gear-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/gear-icons/chamber-wolf-tac-holster-gear-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "gear-icons/chatzatz-chest": {
+  "card": {
+   "src": "/images/db/gear-icons/chatzatz-chest-gear-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/gear-icons/chatzatz-chest-gear-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/gear-icons/chatzatz-chest-gear-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "gear-icons/combat-mask-cete": {
+  "card": {
+   "src": "/images/db/gear-icons/combat-mask-cete-gear-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/gear-icons/combat-mask-cete-gear-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/gear-icons/combat-mask-cete-gear-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "gear-icons/demeter-quick-stash": {
+  "card": {
+   "src": "/images/db/gear-icons/demeter-quick-stash-gear-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/gear-icons/demeter-quick-stash-gear-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/gear-icons/demeter-quick-stash-gear-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "gear-icons/diamondback-gloves": {
+  "card": {
+   "src": "/images/db/gear-icons/diamondback-gloves-gear-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/gear-icons/diamondback-gloves-gear-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/gear-icons/diamondback-gloves-gear-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "gear-icons/digits-finger-stabilizer": {
+  "card": {
+   "src": "/images/db/gear-icons/digits-finger-stabilizer-gear-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/gear-icons/digits-finger-stabilizer-gear-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/gear-icons/digits-finger-stabilizer-gear-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "gear-icons/dingson-protection-pads": {
+  "card": {
+   "src": "/images/db/gear-icons/dingson-protection-pads-gear-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/gear-icons/dingson-protection-pads-gear-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/gear-icons/dingson-protection-pads-gear-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "gear-icons/dionysus-rounded-padding": {
+  "card": {
+   "src": "/images/db/gear-icons/dionysus-rounded-padding-gear-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/gear-icons/dionysus-rounded-padding-gear-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/gear-icons/dionysus-rounded-padding-gear-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "gear-icons/element-outdoors-rucksack": {
+  "card": {
+   "src": "/images/db/gear-icons/element-outdoors-rucksack-gear-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/gear-icons/element-outdoors-rucksack-gear-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/gear-icons/element-outdoors-rucksack-gear-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "gear-icons/ericht-chest-system": {
+  "card": {
+   "src": "/images/db/gear-icons/ericht-chest-system-gear-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/gear-icons/ericht-chest-system-gear-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/gear-icons/ericht-chest-system-gear-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "gear-icons/flimsy-body-armor-v1": {
+  "card": {
+   "src": "/images/db/gear-icons/flimsy-body-armor-v1-gear-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/gear-icons/flimsy-body-armor-v1-gear-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/gear-icons/flimsy-body-armor-v1-gear-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "gear-icons/flimsy-body-armor-v2": {
+  "card": {
+   "src": "/images/db/gear-icons/flimsy-body-armor-v2-gear-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/gear-icons/flimsy-body-armor-v2-gear-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/gear-icons/flimsy-body-armor-v2-gear-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "gear-icons/fodral-holster": {
+  "card": {
+   "src": "/images/db/gear-icons/fodral-holster-gear-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/gear-icons/fodral-holster-gear-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/gear-icons/fodral-holster-gear-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "gear-icons/guardrail-vi-facerig": {
+  "card": {
+   "src": "/images/db/gear-icons/guardrail-vi-facerig-gear-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/gear-icons/guardrail-vi-facerig-gear-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/gear-icons/guardrail-vi-facerig-gear-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "gear-icons/gustavo-association-gloves": {
+  "card": {
+   "src": "/images/db/gear-icons/gustavo-association-gloves-gear-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/gear-icons/gustavo-association-gloves-gear-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/gear-icons/gustavo-association-gloves-gear-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "gear-icons/half-mask-respirator": {
+  "card": {
+   "src": "/images/db/gear-icons/half-mask-respirator-gear-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/gear-icons/half-mask-respirator-gear-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/gear-icons/half-mask-respirator-gear-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "gear-icons/horo-carryback": {
+  "card": {
+   "src": "/images/db/gear-icons/horo-carryback-gear-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/gear-icons/horo-carryback-gear-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/gear-icons/horo-carryback-gear-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "gear-icons/hunter-s-code-gloves": {
+  "card": {
+   "src": "/images/db/gear-icons/hunter-s-code-gloves-gear-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/gear-icons/hunter-s-code-gloves-gear-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/gear-icons/hunter-s-code-gloves-gear-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "gear-icons/hx-02": {
+  "card": {
+   "src": "/images/db/gear-icons/hx-02-gear-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/gear-icons/hx-02-gear-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/gear-icons/hx-02-gear-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "gear-icons/hybrid-fc-gloves": {
+  "card": {
+   "src": "/images/db/gear-icons/hybrid-fc-gloves-gear-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/gear-icons/hybrid-fc-gloves-gear-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/gear-icons/hybrid-fc-gloves-gear-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "gear-icons/jags-sidearm-mount": {
+  "card": {
+   "src": "/images/db/gear-icons/jags-sidearm-mount-gear-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/gear-icons/jags-sidearm-mount-gear-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/gear-icons/jags-sidearm-mount-gear-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "gear-icons/jaivardhan-thigh-rig": {
+  "card": {
+   "src": "/images/db/gear-icons/jaivardhan-thigh-rig-gear-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/gear-icons/jaivardhan-thigh-rig-gear-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/gear-icons/jaivardhan-thigh-rig-gear-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "gear-icons/javelina-mask": {
+  "card": {
+   "src": "/images/db/gear-icons/javelina-mask-gear-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/gear-icons/javelina-mask-gear-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/gear-icons/javelina-mask-gear-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "gear-icons/kn-skydd-knee-protectors": {
+  "card": {
+   "src": "/images/db/gear-icons/kn-skydd-knee-protectors-gear-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/gear-icons/kn-skydd-knee-protectors-gear-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/gear-icons/kn-skydd-knee-protectors-gear-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "gear-icons/kote-hand-guards": {
+  "card": {
+   "src": "/images/db/gear-icons/kote-hand-guards-gear-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/gear-icons/kote-hand-guards-gear-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/gear-icons/kote-hand-guards-gear-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "gear-icons/lochy-hand-savers": {
+  "card": {
+   "src": "/images/db/gear-icons/lochy-hand-savers-gear-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/gear-icons/lochy-hand-savers-gear-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/gear-icons/lochy-hand-savers-gear-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "gear-icons/lock-and-load-holster": {
+  "card": {
+   "src": "/images/db/gear-icons/lock-and-load-holster-gear-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/gear-icons/lock-and-load-holster-gear-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/gear-icons/lock-and-load-holster-gear-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "gear-icons/maxillam-respirator": {
+  "card": {
+   "src": "/images/db/gear-icons/maxillam-respirator-gear-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/gear-icons/maxillam-respirator-gear-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/gear-icons/maxillam-respirator-gear-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "gear-icons/mechanized-infantry-armor": {
+  "card": {
+   "src": "/images/db/gear-icons/mechanized-infantry-armor-gear-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/gear-icons/mechanized-infantry-armor-gear-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/gear-icons/mechanized-infantry-armor-gear-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "gear-icons/mesa-knee-guards": {
+  "card": {
+   "src": "/images/db/gear-icons/mesa-knee-guards-gear-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/gear-icons/mesa-knee-guards-gear-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/gear-icons/mesa-knee-guards-gear-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "gear-icons/micro-plated-gloves": {
+  "card": {
+   "src": "/images/db/gear-icons/micro-plated-gloves-gear-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/gear-icons/micro-plated-gloves-gear-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/gear-icons/micro-plated-gloves-gear-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "gear-icons/morar-holster-system": {
+  "card": {
+   "src": "/images/db/gear-icons/morar-holster-system-gear-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/gear-icons/morar-holster-system-gear-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/gear-icons/morar-holster-system-gear-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "gear-icons/mountain-hiking-pack": {
+  "card": {
+   "src": "/images/db/gear-icons/mountain-hiking-pack-gear-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/gear-icons/mountain-hiking-pack-gear-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/gear-icons/mountain-hiking-pack-gear-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "gear-icons/neptune-protection-gloves": {
+  "card": {
+   "src": "/images/db/gear-icons/neptune-protection-gloves-gear-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/gear-icons/neptune-protection-gloves-gear-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/gear-icons/neptune-protection-gloves-gear-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "gear-icons/nightclaw-tactical-gloves": {
+  "card": {
+   "src": "/images/db/gear-icons/nightclaw-tactical-gloves-gear-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/gear-icons/nightclaw-tactical-gloves-gear-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/gear-icons/nightclaw-tactical-gloves-gear-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "gear-icons/ops-armor": {
+  "card": {
+   "src": "/images/db/gear-icons/ops-armor-gear-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/gear-icons/ops-armor-gear-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/gear-icons/ops-armor-gear-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "gear-icons/patella-knee-cups": {
+  "card": {
+   "src": "/images/db/gear-icons/patella-knee-cups-gear-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/gear-icons/patella-knee-cups-gear-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/gear-icons/patella-knee-cups-gear-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "gear-icons/phalanx-precision-vest": {
+  "card": {
+   "src": "/images/db/gear-icons/phalanx-precision-vest-gear-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/gear-icons/phalanx-precision-vest-gear-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/gear-icons/phalanx-precision-vest-gear-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "gear-icons/phantom-saviour-gloves": {
+  "card": {
+   "src": "/images/db/gear-icons/phantom-saviour-gloves-gear-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/gear-icons/phantom-saviour-gloves-gear-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/gear-icons/phantom-saviour-gloves-gear-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "gear-icons/pivot-pads": {
+  "card": {
+   "src": "/images/db/gear-icons/pivot-pads-gear-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/gear-icons/pivot-pads-gear-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/gear-icons/pivot-pads-gear-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "gear-icons/pridwen-holster": {
+  "card": {
+   "src": "/images/db/gear-icons/pridwen-holster-gear-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/gear-icons/pridwen-holster-gear-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/gear-icons/pridwen-holster-gear-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "gear-icons/protective-tactical-mask": {
+  "card": {
+   "src": "/images/db/gear-icons/protective-tactical-mask-gear-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/gear-icons/protective-tactical-mask-gear-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/gear-icons/protective-tactical-mask-gear-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "gear-icons/rally-point-secure-pack": {
+  "card": {
+   "src": "/images/db/gear-icons/rally-point-secure-pack-gear-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/gear-icons/rally-point-secure-pack-gear-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/gear-icons/rally-point-secure-pack-gear-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "gear-icons/ranger-ballistics-vest": {
+  "card": {
+   "src": "/images/db/gear-icons/ranger-ballistics-vest-gear-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/gear-icons/ranger-ballistics-vest-gear-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/gear-icons/ranger-ballistics-vest-gear-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "gear-icons/rapid-deployment-mask": {
+  "card": {
+   "src": "/images/db/gear-icons/rapid-deployment-mask-gear-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/gear-icons/rapid-deployment-mask-gear-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/gear-icons/rapid-deployment-mask-gear-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "gear-icons/roamer-pack-sow": {
+  "card": {
+   "src": "/images/db/gear-icons/roamer-pack-sow-gear-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/gear-icons/roamer-pack-sow-gear-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/gear-icons/roamer-pack-sow-gear-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "gear-icons/rush72-backpack": {
+  "card": {
+   "src": "/images/db/gear-icons/rush72-backpack-gear-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/gear-icons/rush72-backpack-gear-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/gear-icons/rush72-backpack-gear-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "gear-icons/serviceman-s-holster": {
+  "card": {
+   "src": "/images/db/gear-icons/serviceman-s-holster-gear-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/gear-icons/serviceman-s-holster-gear-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/gear-icons/serviceman-s-holster-gear-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "gear-icons/stonewall-knee-pads": {
+  "card": {
+   "src": "/images/db/gear-icons/stonewall-knee-pads-gear-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/gear-icons/stonewall-knee-pads-gear-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/gear-icons/stonewall-knee-pads-gear-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "gear-icons/stridsvast-combat-vest": {
+  "card": {
+   "src": "/images/db/gear-icons/stridsvast-combat-vest-gear-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/gear-icons/stridsvast-combat-vest-gear-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/gear-icons/stridsvast-combat-vest-gear-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "gear-icons/sundown-knee-guards": {
+  "card": {
+   "src": "/images/db/gear-icons/sundown-knee-guards-gear-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/gear-icons/sundown-knee-guards-gear-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/gear-icons/sundown-knee-guards-gear-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "gear-icons/tactical-mask": {
+  "card": {
+   "src": "/images/db/gear-icons/tactical-mask-gear-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/gear-icons/tactical-mask-gear-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/gear-icons/tactical-mask-gear-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "gear-icons/tay-protective-pads-v1": {
+  "card": {
+   "src": "/images/db/gear-icons/tay-protective-pads-v1-gear-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/gear-icons/tay-protective-pads-v1-gear-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/gear-icons/tay-protective-pads-v1-gear-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "gear-icons/tay-protective-pads-v2": {
+  "card": {
+   "src": "/images/db/gear-icons/tay-protective-pads-v2-gear-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/gear-icons/tay-protective-pads-v2-gear-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/gear-icons/tay-protective-pads-v2-gear-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "gear-icons/tepes-holster": {
+  "card": {
+   "src": "/images/db/gear-icons/tepes-holster-gear-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/gear-icons/tepes-holster-gear-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/gear-icons/tepes-holster-gear-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "gear-icons/timeless-guardian-mask": {
+  "card": {
+   "src": "/images/db/gear-icons/timeless-guardian-mask-gear-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/gear-icons/timeless-guardian-mask-gear-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/gear-icons/timeless-guardian-mask-gear-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "gear-icons/trekking-elite-pack": {
+  "card": {
+   "src": "/images/db/gear-icons/trekking-elite-pack-gear-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/gear-icons/trekking-elite-pack-gear-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/gear-icons/trekking-elite-pack-gear-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "gear-icons/urban-assault-holster": {
+  "card": {
+   "src": "/images/db/gear-icons/urban-assault-holster-gear-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/gear-icons/urban-assault-holster-gear-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/gear-icons/urban-assault-holster-gear-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "gear-icons/urban-warfare-kneepads": {
+  "card": {
+   "src": "/images/db/gear-icons/urban-warfare-kneepads-gear-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/gear-icons/urban-warfare-kneepads-gear-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/gear-icons/urban-warfare-kneepads-gear-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "gear-icons/x-treyme-pro-ribcage": {
+  "card": {
+   "src": "/images/db/gear-icons/x-treyme-pro-ribcage-gear-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/gear-icons/x-treyme-pro-ribcage-gear-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/gear-icons/x-treyme-pro-ribcage-gear-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "gear-icons/ziba-low-profile-pack": {
+  "card": {
+   "src": "/images/db/gear-icons/ziba-low-profile-pack-gear-icon-division-resurgence-330.webp",
+   "width": 330,
+   "height": 156,
+   "srcset": [
+    [
+     165,
+     "/images/db/gear-icons/ziba-low-profile-pack-gear-icon-division-resurgence-165.webp"
+    ],
+    [
+     330,
+     "/images/db/gear-icons/ziba-low-profile-pack-gear-icon-division-resurgence-330.webp"
+    ]
+   ]
+  }
+ },
+ "bonus-attributes/armor": {
+  "card": {
+   "src": "/images/db/bonus-attributes/armor-bonus-attribute-card-division-resurgence-880.webp",
+   "width": 880,
+   "height": 264,
+   "srcset": [
+    [
+     440,
+     "/images/db/bonus-attributes/armor-bonus-attribute-card-division-resurgence-440.webp"
+    ],
+    [
+     880,
+     "/images/db/bonus-attributes/armor-bonus-attribute-card-division-resurgence-880.webp"
+    ]
+   ]
+  }
+ },
+ "bonus-attributes/damage-reduction": {
+  "card": {
+   "src": "/images/db/bonus-attributes/damage-reduction-bonus-attribute-card-division-resurgence-880.webp",
+   "width": 880,
+   "height": 264,
+   "srcset": [
+    [
+     440,
+     "/images/db/bonus-attributes/damage-reduction-bonus-attribute-card-division-resurgence-440.webp"
+    ],
+    [
+     880,
+     "/images/db/bonus-attributes/damage-reduction-bonus-attribute-card-division-resurgence-880.webp"
+    ]
+   ]
+  }
+ },
+ "bonus-attributes/damage-to-elites": {
+  "card": {
+   "src": "/images/db/bonus-attributes/damage-to-elites-bonus-attribute-card-division-resurgence-880.webp",
+   "width": 880,
+   "height": 264,
+   "srcset": [
+    [
+     440,
+     "/images/db/bonus-attributes/damage-to-elites-bonus-attribute-card-division-resurgence-440.webp"
+    ],
+    [
+     880,
+     "/images/db/bonus-attributes/damage-to-elites-bonus-attribute-card-division-resurgence-880.webp"
+    ]
+   ]
+  }
+ },
+ "bonus-attributes/headshot-damage": {
+  "card": {
+   "src": "/images/db/bonus-attributes/headshot-damage-bonus-attribute-card-division-resurgence-880.webp",
+   "width": 880,
+   "height": 264,
+   "srcset": [
+    [
+     440,
+     "/images/db/bonus-attributes/headshot-damage-bonus-attribute-card-division-resurgence-440.webp"
+    ],
+    [
+     880,
+     "/images/db/bonus-attributes/headshot-damage-bonus-attribute-card-division-resurgence-880.webp"
+    ]
+   ]
+  }
+ },
+ "bonus-attributes/max-health": {
+  "card": {
+   "src": "/images/db/bonus-attributes/max-health-bonus-attribute-card-division-resurgence-880.webp",
+   "width": 880,
+   "height": 264,
+   "srcset": [
+    [
+     440,
+     "/images/db/bonus-attributes/max-health-bonus-attribute-card-division-resurgence-440.webp"
+    ],
+    [
+     880,
+     "/images/db/bonus-attributes/max-health-bonus-attribute-card-division-resurgence-880.webp"
+    ]
+   ]
+  }
+ },
+ "bonus-attributes/received-healing": {
+  "card": {
+   "src": "/images/db/bonus-attributes/received-healing-bonus-attribute-card-division-resurgence-880.webp",
+   "width": 880,
+   "height": 264,
+   "srcset": [
+    [
+     440,
+     "/images/db/bonus-attributes/received-healing-bonus-attribute-card-division-resurgence-440.webp"
+    ],
+    [
+     880,
+     "/images/db/bonus-attributes/received-healing-bonus-attribute-card-division-resurgence-880.webp"
+    ]
+   ]
+  }
+ },
+ "bonus-attributes/signature-ability-charge-efficiency": {
+  "card": {
+   "src": "/images/db/bonus-attributes/signature-ability-charge-efficiency-bonus-attribute-card-division-resurgence-880.webp",
+   "width": 880,
+   "height": 264,
+   "srcset": [
+    [
+     440,
+     "/images/db/bonus-attributes/signature-ability-charge-efficiency-bonus-attribute-card-division-resurgence-440.webp"
+    ],
+    [
+     880,
+     "/images/db/bonus-attributes/signature-ability-charge-efficiency-bonus-attribute-card-division-resurgence-880.webp"
+    ]
+   ]
+  }
+ },
+ "bonus-attributes/skill-blast-damage": {
+  "card": {
+   "src": "/images/db/bonus-attributes/skill-blast-damage-bonus-attribute-card-division-resurgence-880.webp",
+   "width": 880,
+   "height": 264,
+   "srcset": [
+    [
+     440,
+     "/images/db/bonus-attributes/skill-blast-damage-bonus-attribute-card-division-resurgence-440.webp"
+    ],
+    [
+     880,
+     "/images/db/bonus-attributes/skill-blast-damage-bonus-attribute-card-division-resurgence-880.webp"
+    ]
+   ]
+  }
+ },
+ "bonus-attributes/skill-cooldown-recovery": {
+  "card": {
+   "src": "/images/db/bonus-attributes/skill-cooldown-recovery-bonus-attribute-card-division-resurgence-880.webp",
+   "width": 880,
+   "height": 264,
+   "srcset": [
+    [
+     440,
+     "/images/db/bonus-attributes/skill-cooldown-recovery-bonus-attribute-card-division-resurgence-440.webp"
+    ],
+    [
+     880,
+     "/images/db/bonus-attributes/skill-cooldown-recovery-bonus-attribute-card-division-resurgence-880.webp"
+    ]
+   ]
+  }
+ },
+ "bonus-attributes/skill-critical-chance": {
+  "card": {
+   "src": "/images/db/bonus-attributes/skill-critical-chance-bonus-attribute-card-division-resurgence-880.webp",
+   "width": 880,
+   "height": 264,
+   "srcset": [
+    [
+     440,
+     "/images/db/bonus-attributes/skill-critical-chance-bonus-attribute-card-division-resurgence-440.webp"
+    ],
+    [
+     880,
+     "/images/db/bonus-attributes/skill-critical-chance-bonus-attribute-card-division-resurgence-880.webp"
+    ]
+   ]
+  }
+ },
+ "bonus-attributes/skill-critical-damage": {
+  "card": {
+   "src": "/images/db/bonus-attributes/skill-critical-damage-bonus-attribute-card-division-resurgence-880.webp",
+   "width": 880,
+   "height": 264,
+   "srcset": [
+    [
+     440,
+     "/images/db/bonus-attributes/skill-critical-damage-bonus-attribute-card-division-resurgence-440.webp"
+    ],
+    [
+     880,
+     "/images/db/bonus-attributes/skill-critical-damage-bonus-attribute-card-division-resurgence-880.webp"
+    ]
+   ]
+  }
+ },
+ "bonus-attributes/skill-duration": {
+  "card": {
+   "src": "/images/db/bonus-attributes/skill-duration-bonus-attribute-card-division-resurgence-880.webp",
+   "width": 880,
+   "height": 264,
+   "srcset": [
+    [
+     440,
+     "/images/db/bonus-attributes/skill-duration-bonus-attribute-card-division-resurgence-440.webp"
+    ],
+    [
+     880,
+     "/images/db/bonus-attributes/skill-duration-bonus-attribute-card-division-resurgence-880.webp"
+    ]
+   ]
+  }
+ },
+ "bonus-attributes/skill-intensity": {
+  "card": {
+   "src": "/images/db/bonus-attributes/skill-intensity-bonus-attribute-card-division-resurgence-880.webp",
+   "width": 880,
+   "height": 264,
+   "srcset": [
+    [
+     440,
+     "/images/db/bonus-attributes/skill-intensity-bonus-attribute-card-division-resurgence-440.webp"
+    ],
+    [
+     880,
+     "/images/db/bonus-attributes/skill-intensity-bonus-attribute-card-division-resurgence-880.webp"
+    ]
+   ]
+  }
+ },
+ "bonus-attributes/skill-multi-shot-chance": {
+  "card": {
+   "src": "/images/db/bonus-attributes/skill-multi-shot-chance-bonus-attribute-card-division-resurgence-880.webp",
+   "width": 880,
+   "height": 264,
+   "srcset": [
+    [
+     440,
+     "/images/db/bonus-attributes/skill-multi-shot-chance-bonus-attribute-card-division-resurgence-440.webp"
+    ],
+    [
+     880,
+     "/images/db/bonus-attributes/skill-multi-shot-chance-bonus-attribute-card-division-resurgence-880.webp"
+    ]
+   ]
+  }
+ },
+ "bonus-attributes/skill-piercing-damage": {
+  "card": {
+   "src": "/images/db/bonus-attributes/skill-piercing-damage-bonus-attribute-card-division-resurgence-880.webp",
+   "width": 880,
+   "height": 264,
+   "srcset": [
+    [
+     440,
+     "/images/db/bonus-attributes/skill-piercing-damage-bonus-attribute-card-division-resurgence-440.webp"
+    ],
+    [
+     880,
+     "/images/db/bonus-attributes/skill-piercing-damage-bonus-attribute-card-division-resurgence-880.webp"
+    ]
+   ]
+  }
+ },
+ "bonus-attributes/skill-radius": {
+  "card": {
+   "src": "/images/db/bonus-attributes/skill-radius-bonus-attribute-card-division-resurgence-880.webp",
+   "width": 880,
+   "height": 264,
+   "srcset": [
+    [
+     440,
+     "/images/db/bonus-attributes/skill-radius-bonus-attribute-card-division-resurgence-440.webp"
+    ],
+    [
+     880,
+     "/images/db/bonus-attributes/skill-radius-bonus-attribute-card-division-resurgence-880.webp"
+    ]
+   ]
+  }
+ },
+ "bonus-attributes/skill-shredding-damage": {
+  "card": {
+   "src": "/images/db/bonus-attributes/skill-shredding-damage-bonus-attribute-card-division-resurgence-880.webp",
+   "width": 880,
+   "height": 264,
+   "srcset": [
+    [
+     440,
+     "/images/db/bonus-attributes/skill-shredding-damage-bonus-attribute-card-division-resurgence-440.webp"
+    ],
+    [
+     880,
+     "/images/db/bonus-attributes/skill-shredding-damage-bonus-attribute-card-division-resurgence-880.webp"
+    ]
+   ]
+  }
+ },
+ "bonus-attributes/weapon-blast-damage": {
+  "card": {
+   "src": "/images/db/bonus-attributes/weapon-blast-damage-bonus-attribute-card-division-resurgence-880.webp",
+   "width": 880,
+   "height": 264,
+   "srcset": [
+    [
+     440,
+     "/images/db/bonus-attributes/weapon-blast-damage-bonus-attribute-card-division-resurgence-440.webp"
+    ],
+    [
+     880,
+     "/images/db/bonus-attributes/weapon-blast-damage-bonus-attribute-card-division-resurgence-880.webp"
+    ]
+   ]
+  }
+ },
+ "bonus-attributes/weapon-critical-hit-chance": {
+  "card": {
+   "src": "/images/db/bonus-attributes/weapon-critical-hit-chance-bonus-attribute-card-division-resurgence-880.webp",
+   "width": 880,
+   "height": 264,
+   "srcset": [
+    [
+     440,
+     "/images/db/bonus-attributes/weapon-critical-hit-chance-bonus-attribute-card-division-resurgence-440.webp"
+    ],
+    [
+     880,
+     "/images/db/bonus-attributes/weapon-critical-hit-chance-bonus-attribute-card-division-resurgence-880.webp"
+    ]
+   ]
+  }
+ },
+ "bonus-attributes/weapon-critical-hit-damage": {
+  "card": {
+   "src": "/images/db/bonus-attributes/weapon-critical-hit-damage-bonus-attribute-card-division-resurgence-880.webp",
+   "width": 880,
+   "height": 264,
+   "srcset": [
+    [
+     440,
+     "/images/db/bonus-attributes/weapon-critical-hit-damage-bonus-attribute-card-division-resurgence-440.webp"
+    ],
+    [
+     880,
+     "/images/db/bonus-attributes/weapon-critical-hit-damage-bonus-attribute-card-division-resurgence-880.webp"
+    ]
+   ]
+  }
+ },
+ "bonus-attributes/weapon-damage": {
+  "card": {
+   "src": "/images/db/bonus-attributes/weapon-damage-bonus-attribute-card-division-resurgence-880.webp",
+   "width": 880,
+   "height": 264,
+   "srcset": [
+    [
+     440,
+     "/images/db/bonus-attributes/weapon-damage-bonus-attribute-card-division-resurgence-440.webp"
+    ],
+    [
+     880,
+     "/images/db/bonus-attributes/weapon-damage-bonus-attribute-card-division-resurgence-880.webp"
+    ]
+   ]
+  }
+ },
+ "bonus-attributes/weapon-multi-shot-chance": {
+  "card": {
+   "src": "/images/db/bonus-attributes/weapon-multi-shot-chance-bonus-attribute-card-division-resurgence-880.webp",
+   "width": 880,
+   "height": 264,
+   "srcset": [
+    [
+     440,
+     "/images/db/bonus-attributes/weapon-multi-shot-chance-bonus-attribute-card-division-resurgence-440.webp"
+    ],
+    [
+     880,
+     "/images/db/bonus-attributes/weapon-multi-shot-chance-bonus-attribute-card-division-resurgence-880.webp"
+    ]
+   ]
+  }
+ },
+ "bonus-attributes/weapon-piercing-damage": {
+  "card": {
+   "src": "/images/db/bonus-attributes/weapon-piercing-damage-bonus-attribute-card-division-resurgence-880.webp",
+   "width": 880,
+   "height": 264,
+   "srcset": [
+    [
+     440,
+     "/images/db/bonus-attributes/weapon-piercing-damage-bonus-attribute-card-division-resurgence-440.webp"
+    ],
+    [
+     880,
+     "/images/db/bonus-attributes/weapon-piercing-damage-bonus-attribute-card-division-resurgence-880.webp"
+    ]
+   ]
+  }
+ },
+ "bonus-attributes/weapon-shredding-damage": {
+  "card": {
+   "src": "/images/db/bonus-attributes/weapon-shredding-damage-bonus-attribute-card-division-resurgence-880.webp",
+   "width": 880,
+   "height": 264,
+   "srcset": [
+    [
+     440,
+     "/images/db/bonus-attributes/weapon-shredding-damage-bonus-attribute-card-division-resurgence-440.webp"
+    ],
+    [
+     880,
+     "/images/db/bonus-attributes/weapon-shredding-damage-bonus-attribute-card-division-resurgence-880.webp"
+    ]
+   ]
+  }
  }
 }

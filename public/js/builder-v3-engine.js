@@ -111,6 +111,21 @@
   const OSP = pool(DATA.osProtocols);
   const MODS = pool(DATA.skillModCombos);
   const TEMPLATES = arr(DATA.templates).filter((t) => t && t.hash && t.name);
+  /* What can roll where (the game's Build-Making Database Source lists): a weapon's talent pool, and
+     for each gear set the body armor / backpack talents a piece of that set can carry. */
+  const ROLLS = DATA.rolls && typeof DATA.rolls === 'object' ? DATA.rolls : null;
+  function weaponPoolOf(wp) {
+    const p = ROLLS && ROLLS.weapons && wp ? ROLLS.weapons[str(wp.id)] : null;
+    return Array.isArray(p) && p.length ? new Set(p.map(str)) : null;
+  }
+  /* { talentId: ['Piece (T2)', ...] } for a slot ('body' or 'backpack') and set, or null when unknown */
+  function gearRollsOf(slotId, setId) {
+    const m = ROLLS && ROLLS.gear && ROLLS.gear[slotId];
+    if (!m || !setId) return null;
+    const r = m[str(setId)];
+    return r && typeof r === 'object' ? r : null;
+  }
+  const piecesText = (list) => (list.length === 1 ? `Rolls on ${list[0]}.` : `Rolls on ${joined(list).join('')}.`);
 
   /* ---------- attributes ---------- */
   const CATS = ['Firepower', 'Toughness', 'Engineering', 'Universal'];
@@ -582,6 +597,30 @@
     }
     if (off.size) {
       infos.push([`${offCat} stats on ${an(stat)} ${stat} build: `, joined([...off].map(([a, where]) => [B(a), ` (${joined(where).join('')})`])), '.']);
+    }
+
+    // Rolls the game allows: weapon talents from the gun's pool, body armor / backpack talents that a
+    // piece of the chosen set can carry (the Build-Making Database Source lists)
+    st.w.forEach((w) => {
+      const wp = getWeapon(w.id);
+      const ps = wp && weaponPoolOf(wp);
+      if (!ps) return;
+      for (const id of w.t) {
+        const t = WT.get(id);
+        if (t && !ps.has(str(t.id))) warns.push([B(t.name), ` doesn't roll on the ${wp.name}. The game's Build-Making Database leaves it out of that gun's talent pool.`]);
+      }
+    });
+    for (const s of SLOTS) {
+      if (!s.talents) continue;
+      const g = st.gear[s.id];
+      const t = s.talents.get(g.talent);
+      const set = SETS.get(g.set);
+      if (!t || !set) continue;
+      const rolls = gearRollsOf(s.id, set.id);
+      if (!rolls) continue;
+      const where = rolls[str(t.id)];
+      if (where) oks.push([B(`${set.name} ${s.label.toLowerCase()}`), ' with ', B(t.name), `: ${piecesText(where).replace(/^Rolls on /, 'look for ')}`]);
+      else warns.push([B(t.name), ` doesn't roll on any ${set.name} ${s.label.toLowerCase()}, so that piece can't drop. Pick another set for the ${s.label.toLowerCase()} or another talent.`]);
     }
 
     // OS Protocol against the focus
@@ -1220,12 +1259,21 @@
     const wp = getWeapon(w.id);
     if (!wp) return;
     const other = w.t[1 - j];
+    const poolSet = weaponPoolOf(wp);
+    const all = WT.items.slice().sort(byName);
+    const inPool = poolSet ? all.filter((t) => poolSet.has(str(t.id))) : all;
+    const cur = WT.get(w.t[j]);
+    const offPool = poolSet && cur && !poolSet.has(str(cur.id)) ? [cur] : [];
+    const item = (t, group) => ({
+      id: str(t.id), name: t.name, desc: str(t.description), note: caveatOf(t), alias: aliasText(t), find: guessedAliases(t),
+      disabled: str(t.id) === other, why: 'Already on this weapon.', group,
+    });
     openList({
       title: `${wp.name}: talent ${j + 1}`,
-      items: WT.items.slice().sort(byName).map((t) => ({
-        id: str(t.id), name: t.name, desc: str(t.description), note: caveatOf(t), alias: aliasText(t), find: guessedAliases(t),
-        disabled: str(t.id) === other, why: 'Already on this weapon.',
-      })),
+      items: [
+        ...inPool.map((t) => item(t, poolSet ? `The ${inPool.length} talents the ${wp.name} can roll` : '')),
+        ...offPool.map((t) => ({ ...item(t, 'Picked, but not in its pool'), note: "The game's Build-Making Database doesn't list it for this gun." })),
+      ],
       current: w.t[j],
       none: 'No talent',
       onPick: (id) => { w.t[j] = WT.get(id) ? id : ''; changed(); },
@@ -1236,9 +1284,22 @@
     const s = SLOT[slotId];
     if (!s || !s.talents) return;
     const g = S.gear[s.id];
+    const set = SETS.get(g.set);
+    const rolls = set ? gearRollsOf(s.id, set.id) : null;
+    const all = s.talents.items.slice().sort(byName);
+    const ok = rolls ? all.filter((t) => rolls[str(t.id)]) : all;
+    const cur = s.talents.get(g.talent);
+    const off = rolls && cur && !rolls[str(cur.id)] ? [cur] : [];
+    const item = (t, group) => ({
+      id: str(t.id), name: t.name, desc: str(t.description), alias: aliasText(t), find: guessedAliases(t), group,
+      note: [rolls && rolls[str(t.id)] ? piecesText(rolls[str(t.id)]) : '', caveatOf(t)].filter(Boolean).join(' '),
+    });
     openList({
       title: `${s.label} talent`,
-      items: s.talents.items.slice().sort(byName).map((t) => ({ id: str(t.id), name: t.name, desc: str(t.description), note: caveatOf(t), alias: aliasText(t), find: guessedAliases(t) })),
+      items: [
+        ...ok.map((t) => item(t, rolls ? `What a ${set.name} ${s.label.toLowerCase()} can roll (${ok.length})` : '')),
+        ...off.map((t) => ({ ...item(t, 'Picked, but no piece of this set rolls it'), note: `No ${set.name} ${s.label.toLowerCase()} can roll it in the game's Build-Making Database.` })),
+      ],
       current: g.talent,
       none: 'No talent',
       onPick: (id) => { g.talent = s.talents.get(id) ? id : ''; changed(); },
@@ -1394,16 +1455,25 @@
       body.push(f.node);
     }
     if (s.talents) {
-      const talSel = h('select', { id: 'ed-talent', class: 'ed-select', 'aria-describedby': 'ed-talent-help' },
-        h('option', { value: '' }, 'No talent'),
-        s.talents.items.slice().sort(byName).map((t) => h('option', { value: str(t.id) }, t.name)));
-      talSel.value = g.talent;
+      const talSel = h('select', { id: 'ed-talent', class: 'ed-select', 'aria-describedby': 'ed-talent-help' });
       const talHelp = h('p', { class: 'ed-help', id: 'ed-talent-help' });
+      const fillTalOptions = () => {
+        const rolls = gearRollsOf(s.id, g.set);
+        const all = s.talents.items.slice().sort(byName);
+        const opts = all.filter((t) => !rolls || rolls[str(t.id)] || str(t.id) === g.talent);
+        talSel.replaceChildren(h('option', { value: '' }, 'No talent'),
+          ...opts.map((t) => h('option', { value: str(t.id) }, rolls && !rolls[str(t.id)] ? `${t.name} (no piece of this set rolls it)` : t.name)));
+        talSel.value = g.talent;
+      };
       const fillTal = () => {
         const t = s.talents.get(g.talent);
-        effectText(talHelp, t ? str(t.description) : '', t);
+        const rolls = gearRollsOf(s.id, g.set);
+        const where = t && rolls ? (rolls[str(t.id)] ? piecesText(rolls[str(t.id)]) : `No ${SETS.get(g.set).name} ${s.label.toLowerCase()} can roll it.`) : '';
+        effectText(talHelp, t ? [str(t.description), where].filter(Boolean).join(' ') : '', t);
       };
       talSel.addEventListener('change', () => { g.talent = s.talents.get(talSel.value) ? talSel.value : ''; fillTal(); changed(); });
+      setSel.addEventListener('change', () => { fillTalOptions(); fillTal(); });
+      fillTalOptions();
       fillTal();
       body.push(h('div', { class: 'ed-field' }, h('label', { class: 'ed-label', for: 'ed-talent' }, 'Talent'), talSel, talHelp));
     }

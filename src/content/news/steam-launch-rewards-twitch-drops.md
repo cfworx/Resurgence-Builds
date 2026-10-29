@@ -5,6 +5,8 @@ updatedDate: 2026-10-24
 author: "RapidF5"
 tags: ["News", "Steam", "PC", "twitch-drops", "Season 2"]
 description: "Division Resurgence Steam launch rewards: free SHD Keys for all, the FYNC Parade set, Twitch Drops and how to keep your progress."
+imageAlt: "The Division Resurgence Armory menu with its Weapons and Gear panels"
+featuredImage: "/images/news/division-resurgence-steam-launch-rewards-armory-1200.webp"
 shareTitle: "Free stuff for the Steam launch"
 shareText: "15 Regular and 15 Exclusive SHD Keys, a free apparel set and a Twitch Drops jacket you can't get anywhere else. Here's how to claim it all."
 faqs:

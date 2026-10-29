@@ -3,6 +3,7 @@ import DatabaseLayout from '../../../layouts/DatabaseLayout.astro';
 import weaponTalents from '../../../data/weapon-talents.json';
 import AdSenseUnit from '../../../components/AdSenseUnit.astro';
 import { verifiedPatch } from '../../../data/site-config';
+import talentSources from '../../../data/weapon-talent-sources.json';
 // All 69 talents were re-checked in the in-game Build-Making Database on 2026-10-28 (Season 2 Phase 2).
 const lastVerified = verifiedPatch();
 
@@ -21,6 +22,8 @@ const faqs = [
 function toSlug(name: string) {
   return name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
 }
+// How many weapons can roll each talent: its Source list, recorded from the game.
+const sourceTalents: Record<string, any> = (talentSources as any).talents;
 
 const itemListLd = {
   '@context': 'https://schema.org',
@@ -69,6 +72,9 @@ const itemListLd = {
             <div class="talent-desc">
               <p>{talent.description}</p>
             </div>
+            {sourceTalents[toSlug(talent.name)] && (
+              <p class="talent-rolls">Rolls on {sourceTalents[toSlug(talent.name)].weapons.length} weapons</p>
+            )}
           </div>
         </article>
       </a>
@@ -86,5 +92,12 @@ const itemListLd = {
   }
   .db-card-link .db-card {
     height: 100%;
+  }
+  .talent-rolls {
+    margin: auto 0 0;
+    font-family: var(--font-mono);
+    font-size: var(--text-xs);
+    letter-spacing: 0.04em;
+    color: var(--accent);
   }
 </style>

@@ -5,6 +5,8 @@ updatedDate: 2026-10-24
 author: "RapidF5"
 tags: ["News", "Season 2", "Exotic", "Events", "demolitionist"]
 description: "Division Resurgence Season 2 Phase 2 is live: free Diamondback exotic, Exotic Sealed Caches, Demolitionist buffs, no daily XP cap and new events."
+imageAlt: "The Diamondback exotic's card in The Division Resurgence Build-Making Database: 1,95k damage, 100 RPM, a 5-round magazine and the Agonizing Bite talent"
+featuredImage: "/images/news/division-resurgence-season-2-phase-2-diamondback-card-1200.webp"
 shareTitle: "Phase 2 brought the Diamondback"
 shareText: "Free Diamondback exotic, old exotics back in caches, Demolitionist buffs and no more daily XP cap. Here's the rundown."
 faqs:

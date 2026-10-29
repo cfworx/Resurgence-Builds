@@ -17,7 +17,7 @@ shareText: "334k DPS Breacher build that holds doorways and refuses to leave. Sa
 sources:
   - '<a href="https://www.youtube.com/watch?v=28lsRrnJ6Vg">Saiynergy, Full Breacher Walkthrough</a>, May 2026.'
   - 'In-game Division Resurgence Build Database, verified May 2026.'
-plannerHash: "s=Bulwark&sc=Breacher&n=Bulwark+Breacher+334k&ms=gs-1&m1=hsd&m2=chc&gs=gs-1&g1=chc&g1v=4.67&g2=chd&g2v=8.89&hs=gs-3&h1=chd&h2=hsd&cs=gs-1&ct=ba-25&c1=chc&c2=scc&ps=gs-1&pt=bp-10&p1=scc&p1v=5.17&p2=chd&p2v=4.68&ks=gs-3&k1=chd&k1v=6.75&k2=hsd&k2v=10.72&w1s=sw-41&w1tr=T2&w1t=wt-25&w1t2=wt-9&w2s=sw-50&w2tr=T2&w2t=wt-57&w2t2=wt-1&os=os-45&sm1=smc-48&sm2=smc-39&sm3=smc-42"
+plannerHash: "s=Bulwark&sc=Breacher&n=Bulwark+Breacher+334k&ms=gs-1&m1=hsd&m2=chc&gs=gs-1&g1=chc&g1v=4.67&g2=chd&g2v=8.89&hs=gs-3&h1=chd&h2=hsd&cs=gs-1&ct=ba-25&c1=chc&c2=scc&ps=gs-1&pt=bp-10&p1=scc&p1v=5.17&p2=chd&p2v=4.68&ks=gs-3&k1=chd&k1v=6.75&k2=hsd&k2v=10.72&w1s=sw-41&w1tr=T2&w1t=wt-53&w1t2=wt-28&w2s=sw-50&w2tr=T2&w2t=wt-57&w2t2=wt-1&os=os-45&sm1=smc-48&sm2=smc-39&sm3=smc-42"
 videoId: "28lsRrnJ6Vg"
 videoTitle: "Saiynergy: Full Breacher Build Walkthrough"
 videoChannel: "Saiynergy"
@@ -25,7 +25,7 @@ videoUploadDate: "2026-04-17T12:13:25-07:00"
 videoDuration: "PT19M27S"
 faqs:
   - question: "What is the best Breacher build in Division Resurgence?"
-    answer: "Saiynergy's Bulwark Breacher build runs 4pc Fury Strike, 2pc Phalanx Attack, a Lightweight M4, a First Wave Vector 45 ACP with Strained and Adaptation, and Death From Afar to weaponize Headshot Damage. His M4 carries Steady Hands and Medical Accuracy; we recommend Killer and Breadbasket instead. It sat at 334k DPS with 7,679 Armor on his original loadout when Saiynergy recorded it on Patch 1.1.2.2."
+    answer: "Saiynergy's Bulwark Breacher build runs 4pc Fury Strike, 2pc Phalanx Attack, a Lightweight M4, a First Wave Vector 45 ACP with Strained and Adaptation, and Death From Afar to weaponize Headshot Damage. His M4 carries Steady Hands and Medical Accuracy. It sat at 334k DPS with 7,679 Armor on his original loadout when Saiynergy recorded it on Patch 1.1.2.2."
   - question: "Can I run this Breacher build in the Dark Zone?"
     answer: "Yes. The shield holds the choke, Strained stacks crit damage while you keep the trigger down, and Unflinching keeps you healing through the trade. Just know Shockwave Spike's stun dropped to 2 seconds in Season 2 Phase 1, so your lockdowns are shorter than they used to be. Q Building heroic and 47th Street Extraction are where you farm the mods to push it further."
   - question: "Why Fury Strike over a pure DPS set?"
@@ -35,7 +35,7 @@ faqs:
   - question: "Does this Breacher build still work after Patch 1.1.2.2?"
     answer: "Structurally, yes, but Season 2 moved some furniture. The set bonuses, talents and skill firmware matched our database on May 30, 2026 (Patch 1.1.2.2), and the build hasn't been re-tested since; on October 28, 2026 we corrected the OS Protocol alternatives' rarities and stats against the in-game database. Since Patch 1.1.2.2, Shockwave Spike's stun dropped from 3.5s to 2s with a 14s cooldown (less King of the Pit uptime), weapon mods were reworked, and Strained's tooltip was corrected to show its real 10%/14% values. The sets, Death From Afar and the other talents were not touched. Still a wall. Just a wall that stuns a little less."
   - question: "What weapons does Saiynergy use on his Breacher?"
-    answer: "Lightweight M4 (T2, Level 45) as the primary with Killer and Breadbasket (RapidF5 recommendation over the original Steady Hands + Medical Accuracy). First Wave Vector 45 ACP (T2, Level 44) as the secondary with Strained and Adaptation."
+    answer: "Lightweight M4 (T2, Level 45) as the primary with Steady Hands and Medical Accuracy. First Wave Vector 45 ACP (T2, Level 44) as the secondary with Strained and Adaptation."
   - question: "Is Division Resurgence pay-to-win?"
     answer: "Resurgence is free-to-play, and its premium currency, Phoenix Credits, buys Sealed Caches whose drop tables include gameplay items: the OS Protocol Cache can drop Death From Afar, and the Breacher and Juggernaut caches carry skill mod sets (Ubisoft publishes the odds; see our drop rates page). Everything in this build also drops from regular play. Spending can speed up the grind, but it cannot buy positioning, game sense, or the knowledge to stack the right talents. Your dad reflexes are still the bottleneck."
 ---
@@ -46,8 +46,8 @@ faqs:
 
 > Build credit: **Saiynergy** of **ATLAS Division**. Full Breacher walkthrough covering every gear roll, weapon talent, skill firmware, and loot route. Watch his original walkthrough on [YouTube](https://www.youtube.com/watch?v=28lsRrnJ6Vg) and jump in the [ATLAS Division Discord](https://discord.gg/e7EUUBbBYa) if you want in on the clan.
 
-> [!INFO] Modified Weapon Talents
-> We have tweaked the weapon talents on the Lightweight M4 from Saiynergy's original loadout. He runs Steady Hands and Medical Accuracy. We recommend **Killer + Breadbasket** instead. Killer is the strongest AR talent for crit builds and Breadbasket stacks Headshot Damage that feeds directly into Death From Afar. The rest of the build is Saiynergy's original.
+> [!INFO] Weapon talents: back to Saiynergy's own
+> This page used to recommend **Killer + Breadbasket** on the Lightweight M4 instead of Saiynergy's Steady Hands + Medical Accuracy. The game's Build-Making Database (talent Source lists recorded October 29, 2026) shows the Lightweight M4 can't roll either one, and Breadbasket doesn't roll on any assault rifle at all, so the build is back to his original pair. Everything on this page is now Saiynergy's loadout.
 
 This is a **Breacher shield build** that anchors a doorway and refuses to leave. Saiynergy is sitting at **23.17k Power Score, 334.07k DPS, and 7,679 Armor**. The 4pc Fury Strike gives you the crit chance and crit damage backbone. The 2pc Phalanx Attack stacks magazine size so the Vector keeps firing past the point where most builds reload and die. The Phalanx Shield with **Provocateur** draws enemy aggro so your team can work. The Breach Combo with **Positive Feedback** restores bullets on hits. The Shockwave Spike Mk.3 with **King of the Pit** keeps your crit chance topped off. **Death From Afar** OS Protocol turns headshot damage into raw Firepower. The core loop is straightforward: shield up, walk forward, let the Vector pour rounds into whatever the M4 can't reach. Your job is to be the wall. Your fireteam's job is to be the people who do not have to be the wall.
 
@@ -82,7 +82,7 @@ This is a **Breacher shield build** that anchors a doorway and refuses to leave.
 
 | Slot | Item | Details |
 |---|---|---|
-| **Primary** | Lightweight M4 (T2, AR, Level 45) | **Killer + Breadbasket** (RapidF5 rec) · Long Range Scope · Suppressor · Extended Magazine · Vertical Grip |
+| **Primary** | Lightweight M4 (T2, AR, Level 45) | **Steady Hands + Medical Accuracy** · Long Range Scope · Suppressor · Extended Magazine · Vertical Grip |
 | **Secondary** | First Wave Vector 45 ACP (T2, SMG, Level 44) | **Strained + Adaptation** · Red Dot · Extended Magazine · Suppressor |
 | **OS Protocol** | **Death From Afar** (Superior) | Grants Firepower equal to 12% Headshot Damage, capped at 54% Firepower (the upgraded copy in this build reads 21.60%) |
 | **Skill 1** | Phalanx Shield | Mobile cover, the Bulwark's core skill (Breach Combo is the signature) |
@@ -177,10 +177,10 @@ For Breachers who close the distance instead of holding it. Shield play forces y
 
 ### Primary: Lightweight M4 (T2, Assault Rifle, Level 45)
 
-Saiynergy runs Steady Hands and Medical Accuracy on his M4. We are recommending a different pairing that synergizes better with the rest of this build.
+- **[Steady Hands](/database/weapon-talents/steady-hands/):** Hip firing grants +20% Stability and +15% Weapon Damage. Behind a Phalanx Shield you fire from the hip most of the time, so this one is on nearly all fight long.
+- **[Medical Accuracy](/database/weapon-talents/medical-accuracy/):** Headshots grant +18% Healing Intensity for 10 seconds (rank I values from our talent database).
 
-- **Killer (RapidF5 rec):** Critical Hit Kills grant +36% Critical Hit Damage for 10 seconds. With Fury Strike pumping crit chance, this buff refreshes constantly. Saiynergy himself recommends Killer as the best AR talent: *"You definitely just need Killer. Killer is most needed on assault rifles."*
-- **Breadbasket (RapidF5 rec):** Body shots grant +15% Headshot Damage for 8 seconds, up to 3 stacks. This is the synergy pick. Every Breadbasket stack increases your Headshot Damage, which Death From Afar converts into raw Firepower. The M4 fires fast enough to keep 3 stacks active permanently.
+Saiynergy calls Killer the talent to chase on assault rifles: *"You definitely just need Killer. Killer is most needed on assault rifles."* It just doesn't roll on the Lightweight M4. The game's Source list puts it on five ARs: the [Black Market AK-74](/database/weapons/black-market-ak-74/) and FAMAS (T2), the [Enhanced ACR-E](/database/weapons/enhanced-acr-e/) and Type 81 (T1) and the Military 416 (T0). If you'd rather trade Medical Accuracy for damage on the M4 itself, [Unhinged](/database/weapon-talents/unhinged/) (+18% Weapon Damage, -10% Stability and Accuracy) is in its pool; see the [Lightweight M4 page](/database/weapons/lightweight-m4/) for all 18 talents it can roll.
 
 **Attachments:** Long Range Scope, Suppressor, Extended Magazine, Vertical Grip.
 
@@ -210,9 +210,9 @@ Backup weapons for farming attachments and talents:
 |---|---|
 | Fury Strike gear (4pc) | Weapon Crit Hit Damage, Headshot Damage, Weapon Crit Hit Chance |
 | Phalanx Attack gear (2pc) | Weapon Crit Hit Damage, Headshot Damage |
-| Body Armor (any set) | Unflinching talent, Toughness core |
-| Backpack (any set) | Hidden Impact talent, Skill Crit Chance, Weapon Crit Hit Damage |
-| Lightweight M4 (AR) | Killer + Breadbasket talents |
+| Fury Strike body armor | Unflinching talent (all three Fury Strike chests can roll it), Toughness core |
+| Fury Strike backpack, T1 or T2 | Hidden Impact talent (it rolls on the Rally Point Secure Pack and the All Hazards Nitro Backpack, not the T0 Trekking Elite Pack), Skill Crit Chance, Weapon Crit Hit Damage |
+| Lightweight M4 (AR) | Steady Hands + Medical Accuracy talents |
 | First Wave Vector 45 ACP (SMG) | Strained + Adaptation talents |
 | Death From Afar OS | Any copy; its stats are fixed, so level it and add talent upgrades |
 | Phalanx Shield mod | Provocateur firmware |

@@ -5,8 +5,8 @@ patchDate: "2026-04-28"
 updatedDate: 2026-10-24
 author: "RapidF5"
 summary: "Division Resurgence Patch 1.1.2 landed with PC Early Access on April 28: crash, mouse-and-keyboard and store fixes. No balance changes."
-featuredImage: "/images/patch-notes/division-resurgence-patch-1-1-2-hero.jpg"
-imageAlt: "Patch 1.1.2 in glowing orange letters on a dark background"
+featuredImage: "/images/patch-notes/division-resurgence-patch-1-1-2-mess-hall-1200.webp"
+imageAlt: "JTF soldiers eating at long tables in the Base of Operations mess hall in The Division Resurgence, with the title Patch 1.1.2"
 shareTitle: "Warn the timeline"
 shareText: "Share this so your squad stops claiming 1.1.2 nerfed their gun. It changed zero balance numbers."
 

@@ -5,6 +5,8 @@ updatedDate: 2026-10-28
 author: "RapidF5"
 tags: ["News", "Bugs", "Season 2", "OS Protocols"]
 description: "Ubisoft's bug reporter marked 13 Division Resurgence issues Done on Oct 22 and 23, including Concerted Strike and Warlord proficiency. What changed."
+imageAlt: "Quarantine notices on a wall in The Division Resurgence's Base of Operations, the red sign edited to read Bug Area Under 24 HR Surveillance"
+featuredImage: "/images/news/division-resurgence-bug-reporter-october-23-bug-area-1200.webp"
 shareTitle: "13 bugs marked Done in two days"
 shareText: "Concerted Strike, the stuck Warlord proficiency, the heart-icon lag and a pile of controller bugs all went to Done on Ubisoft's tracker. Mod recalibration didn't make the cut."
 faqs:

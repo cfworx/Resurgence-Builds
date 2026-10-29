@@ -4,7 +4,6 @@ import Breadcrumbs from '../../../components/Breadcrumbs.astro';
 import SectionTag from '../../../components/SectionTag.astro';
 import WeaponAttributes from '../../../components/WeaponAttributes.astro';
 import RandomizedAttributes from '../../../components/RandomizedAttributes.astro';
-import WeaponTalentsGrid from '../../../components/WeaponTalentsGrid.astro';
 import AdSenseUnit from '../../../components/AdSenseUnit.astro';
 import { truncateDesc, metaDescription } from '../../../utils/seo';
 import standardWeapons from '../../../data/standard-weapons.json';
@@ -14,11 +13,12 @@ import { verifiedPatch, DATABASE_UPDATED } from '../../../data/site-config';
 import GameImage from '../../../components/GameImage.astro';
 import { dbImage, dbImageNames, armoryScreenId, imageObject, CARDS_RECORDED } from '../../../utils/db-images';
 import { publicImageSize } from '../../../utils/image-dims.mjs';
-const lastVerified = verifiedPatch('Patch 1.1.2.2'); // Bump: drop the arg ONLY after re-verifying this page's content in-game (CURRENT_PATCH is a ceiling, not an auto-bump)
+import weaponTalents from '../../../data/weapon-talents.json';
+import { getCollection } from 'astro:content';
+import { weaponPool, TALENT_ROLE, ROLE_ORDER, talentDescription, POOL_TALENT_COUNT, SOURCES_RECORDED } from '../../../utils/rolls';
 
 export function getStaticPaths() {
-  // Weapons with statsVerified: false are in the build planner only.
-  return standardWeapons.filter((w: any) => w.statsVerified !== false).map((weapon: any) => ({
+  return standardWeapons.map((weapon: any) => ({
     params: {
       slug: weapon.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')
     },
@@ -27,6 +27,10 @@ export function getStaticPaths() {
 }
 
 const { weapon } = Astro.props;
+// Tier, damage type, icon and talent pool were all read off the game for Season 2 Phase 2 (Oct 28-29, 2026).
+// A few weapons still carry stat lines from the May data import; those were last checked on Patch 1.1.2.2.
+const hasOldStats = ['rpm', 'mag', 'accuracy', 'reloadSpeed', 'stability'].some((k) => weapon[k]);
+const lastVerified = hasOldStats ? verifiedPatch('Patch 1.1.2.2') : verifiedPatch();
 // "an SMG", "an LMG", "an Assault Rifle", "a Shotgun"
 const typeArticle = /^(SMG|LMG|[AEIOU])/.test(weapon.type) ? 'an' : 'a';
 
@@ -37,9 +41,30 @@ const armoryImage = armoryId ? dbImage(armoryId) : undefined;
 const armoryNames = armoryId ? dbImageNames(armoryId) : [];
 const weaponImageSize = weapon.image ? publicImageSize(weapon.image) : null;
 const siteUrl = 'https://resurgencebuilds.com';
+// The weapon's own in-game icon (its High-End tile in the talent Source lists).
+const weaponIcon = dbImage(`weapon-icons/${slug}`);
+// The weapon's talent pool: every weapon talent whose Source list (recorded from the game) includes it.
+const pool = weaponPool(slug);
+const sourcesRecorded = SOURCES_RECORDED;
+const poolGroups = ROLE_ORDER.map((role) => ({ role, talents: pool.filter((t) => TALENT_ROLE[t.name] === role) })).filter((g) => g.talents.length);
+// Our build guides that use this weapon, with the talents they run on it.
+const talentNameById: Record<string, string> = Object.fromEntries((weaponTalents as any[]).map((t) => [t.id, t.name]));
+const usedIn = (await getCollection('builds')).flatMap((b: any) => {
+  if (!b.data.plannerHash) return [];
+  const q = new URLSearchParams(b.data.plannerHash);
+  return (['w1', 'w2'] as const)
+    .filter((k) => q.get(`${k}s`) === weapon.id)
+    .map((k) => ({
+      title: b.data.title,
+      url: `/builds/${b.id}/`,
+      author: String(b.data.author || '').replace(/^RapidF5 \(via (.+)\)$/, '$1'),
+      slot: k === 'w1' ? 'primary' : 'secondary',
+      talents: [q.get(`${k}t`), q.get(`${k}t2`)].filter(Boolean).map((id) => talentNameById[id as string]).filter(Boolean),
+    }));
+}).sort((a: any, b: any) => a.title.localeCompare(b.title));
 
 const title = `${weapon.name}: Division Resurgence ${weapon.type}`;
-const description = metaDescription(weapon.summary, `${weapon.name} in The Division Resurgence: ${weapon.type} stats, best talents and builds, and how to farm it.`);
+const description = metaDescription(weapon.summary, `${weapon.name} in The Division Resurgence: the ${pool.length} weapon talents it can roll, its Armory tier and damage type, and the builds that use it.`);
 
 const breadcrumbs = [
   { name: 'Weapons', url: '/database/weapons/' },
@@ -90,6 +115,10 @@ const faqs = [
       ? `${knownDmgType} damage. Enemies with a matching color bar take more of it, which still matters even though Season 2 Phase 1 removed damage-type bonus rolls from weapons.`
       : `Check the weapon's details in the Armory: Resurgence weapons deal Blast, Shredding or Piercing damage, and we have not confirmed which one this weapon uses yet. Matching it to the enemy's color bar still matters, even though Season 2 Phase 1 removed damage-type bonus rolls from weapons.`
   },
+  ...(pool.length ? [{
+    question: `What talents can the ${weapon.name} roll?`,
+    answer: `${pool.length} of the ${POOL_TALENT_COUNT} weapon talents: ${pool.map((t) => t.name).join(', ')}. The pool is the same at every rarity, and the game's High-End weapon card says the gun is "created with 2 Bonuses and 2 random Talents", which come from it. The list is every weapon talent's Source list in the game's Build-Making Database, recorded ${sourcesRecorded}, so a talent that isn't on it never rolls on the ${weapon.name}.`
+  }] : []),
   {
     question: `What builds use ${weapon.type}s in Division Resurgence?`,
     answer: typeDesc
@@ -105,7 +134,7 @@ const weaponLd = {
   author: { '@type': 'Person', '@id': `${siteUrl}/author/rapidf5/#person`, name: 'RapidF5' },
   publisher: { '@type': 'Organization', '@id': `${siteUrl}/#organization`, name: 'Resurgence Builds' },
   mainEntityOfPage: { '@type': 'WebPage', '@id': `${siteUrl}/database/weapons/${slug}/` },
-  datePublished: '2026-05-30',
+  datePublished: weapon.pageSince || '2026-05-30',
   dateModified: DATABASE_UPDATED,
   image: weapon.image
     ? { '@type': 'ImageObject', url: `${siteUrl}${weapon.image}`, ...(weaponImageSize ?? {}) }
@@ -113,7 +142,7 @@ const weaponLd = {
       ? imageObject(armoryImage)
       : { '@type': 'ImageObject', url: `${siteUrl}/images/resurgence-builds-official-logo.png`, width: 1024, height: 1024 },
   inLanguage: 'en-US',
-  lastReviewed: '2026-05-30',
+  lastReviewed: '2026-10-29',
   wordCount: 500,
   about: { '@id': `${siteUrl}/#division-resurgence` },
 };
@@ -140,10 +169,6 @@ const itemLd = {
   ]
 };
 
-// The talent tips are written with **bold** markers; turn them into <strong> (they showed up as literal asterisks)
-const boldStars = (t: string) => t
-  .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
-  .replace(/\*\*(.+?)\*\*/g, '<strong style="color: #fff;">$1</strong>');
 ---
 
 <BaseLayout title={title} description={description} breadcrumbs={breadcrumbs} jsonLd={[weaponLd, itemLd]} faqs={faqs} ogImage={weapon.image || armoryImage?.src}>
@@ -180,6 +205,33 @@ const boldStars = (t: string) => t
         </p>
       </div>
 
+      {weaponIcon && (
+        <figure class="game-figure game-figure--icon">
+          <GameImage image={weaponIcon} alt={`${weapon.name} ${weapon.type} icon in The Division Resurgence`} sizes="330px" eager />
+          <figcaption>The {weapon.name}'s icon in the game, from the weapon talent Source lists (High-End). Recorded {sourcesRecorded}.</figcaption>
+        </figure>
+      )}
+
+      {pool.length > 0 && (
+        <section class="weapon-rolls" aria-labelledby="weapon-rolls-title">
+          <h2 id="weapon-rolls-title" class="weapon-rolls__title">Weapon Talents the {weapon.name} Can Roll</h2>
+          <p class="weapon-rolls__lead">The {weapon.name} can roll {pool.length} of the {POOL_TALENT_COUNT} weapon talents, and the list is the same at every rarity (High-End, Superior and Specialized). The game's High-End weapon card says the gun is "created with 2 Bonuses and 2 random Talents", and those talents come from this list. We built it from every talent's Source list in the game's Build-Making Database, recorded {sourcesRecorded}: a talent that isn't here never rolls on this gun.</p>
+          {poolGroups.map((g) => (
+            <div class="weapon-rolls__group">
+              <h3 class="weapon-rolls__role">{g.role} <span>{g.talents.length}</span></h3>
+              <dl class="weapon-rolls__list">
+                {g.talents.map((t) => (
+                  <div class="weapon-rolls__item">
+                    <dt><a href={`/database/weapon-talents/${t.slug}/`}>{t.name}</a></dt>
+                    <dd>{talentDescription(t.name)}</dd>
+                  </div>
+                ))}
+              </dl>
+            </div>
+          ))}
+        </section>
+      )}
+
       {armoryImage && (
         <figure class="game-figure game-figure--wide">
           <GameImage
@@ -205,24 +257,19 @@ const boldStars = (t: string) => t
         <RandomizedAttributes attributes={weapon.randomizedAttributes} />
       )}
 
-      {(weapon.talent1 || weapon.talent2) && (
-        <div style="margin-bottom: var(--sp-8); background: #1a1a1a; padding: var(--sp-4); border-radius: 8px; border: 1px solid rgba(255,255,255,0.05);">
-          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: var(--sp-4);">
-            <h2 style="font-family: var(--font-heading); font-size: var(--text-xl); font-weight: 800; color: var(--accent); margin: 0; display: flex; align-items: center; gap: 8px;">
-              <span style="letter-spacing: -2px;">:::</span> Weapon Talents
-            </h2>
-            <svg style="color: #a0a0a0;" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
-          </div>
-          {weapon.talent1 && <WeaponTalentsGrid talentNames={weapon.talent1} gridTitle="Talent 1" />}
-          {weapon.talent2 && <WeaponTalentsGrid talentNames={weapon.talent2} gridTitle="Talent 2" />}
-        </div>
-      )}
-
-      <!-- Weapon Talents to Pair -->
+      <!-- Our builds that use this weapon -->
       <div style="margin-bottom: var(--sp-8);">
-        <h2 style="font-family: var(--font-heading); font-size: var(--text-lg); font-weight: 800; color: #fff; margin: 0 0 var(--sp-4) 0; padding-bottom: var(--sp-2); border-bottom: 1px solid rgba(255,255,255,0.08);">Best Weapon Talents for {weapon.name}</h2>
+        <h2 style="font-family: var(--font-heading); font-size: var(--text-lg); font-weight: 800; color: #fff; margin: 0 0 var(--sp-4) 0; padding-bottom: var(--sp-2); border-bottom: 1px solid rgba(255,255,255,0.08);">{weapon.name} in Our Build Guides</h2>
         <div style="color: #c8c8d0; line-height: 1.75; font-size: var(--text-base);">
-          <p set:html={boldStars(weapon.type === 'Assault Rifle' ? `Talents from our AR builds: **Unhinged** (+18% Weapon Damage for -10% Stability and Accuracy; on his Lightweight M4, TikTokAndy says you won't even notice the penalty), **Killer** and **Breadbasket** (the pair we recommend for the Lightweight M4 on Saiynergy's Bulwark Breacher build, over his own Steady Hands and Medical Accuracy: Critical Hit Kills grant +36% Crit Damage, and body shots stack Headshot Damage), and **In Sync** on skill-heavy builds (weapon hits buff Skill Damage, skill hits buff Weapon Damage, and the bonus doubles while both are up). Engineering builds put **Torrential Downpour** on ARs too (AgentHuntzman's Police M4, the Jackpot Striker's Mk16).` : weapon.type === 'SMG' ? `Talents our SMG builds actually run: **Precise Crit** and **Performer** (TikTokAndy's "god rolled" P90: 10 hits give allies within 40 meters +15% Weapon and Skill Crit Damage, and Performer adds +18% Weapon Damage inside 20 meters), or **Torrential Downpour** with **Last Stand** on skill builds (his Vector pair, which feeds Engineering and Skill Duration). **Strained** suits SMGs that fire in long bursts: half a second of firing grants +10% Crit Damage, stacking 3 times.` : weapon.type === 'LMG' ? `Talents worth chasing on an LMG: **In Sync** (the roll on our Milkshake Machine build), **Unhinged** for a flat +18% Weapon Damage, and **Damage Trade**, which grants +6% Weapon Damage for each 20% of the magazine you empty, up to 4 stacks, until you reload. Support builds use LMGs too: Nadie's Muscular Nurse runs **Sadistic Shield** and **Conceited** on an M60. Talents that need kills to get going do less on a gun built for sustained fire.` : weapon.type === 'Marksman Rifle' ? `Our one marksman rifle build, the Jackpot Striker Drone, pairs a Hunting M44 with its skill kit, rolling **Enhancement Trade** (Skill Intensity as you empty the magazine) and **Ammo Supply**. For a shooting build, the tooltips that reward precision are **No Exit** (headshot kills grant +21% Weapon Damage), **Surgical** (headshots stack +7% Weapon Crit Damage, up to 5 stacks) and **Breadbasket** (body shots stack Headshot Damage for the follow-up).` : weapon.type === 'Shotgun' ? `TikTokAndy's Double Barrel build runs **Misdirection Insurance** (a missed shot has a 30% chance of returning the bullet) and **Still Alive** (kills restore 30% of missing Health on a 10 second cooldown), which he calls necessary for solo content. **Performer** (+18% Weapon Damage inside 20 meters) is the natural damage roll for a gun that lives at close range.` : `Check the weapon talent database for the full list. The right talent depends entirely on your build's archetype and playstyle.`)} />
+          {usedIn.length > 0 ? (
+            <ul style="padding-left: var(--inset); margin: 0;">
+              {usedIn.map((u: any) => (
+                <li><a href={u.url} style="color: var(--accent);">{u.title}</a>{u.author ? ` (${u.author})` : ''}: the {u.slot} weapon{u.talents.length ? <>, with <strong style="color: #fff;">{u.talents.join(' + ')}</strong></> : ''}.</li>
+              ))}
+            </ul>
+          ) : (
+            <p>None of our build guides use the {weapon.name} yet. Its talent pool above is what any build around it has to work with; the <a href="/builder/" style="color: var(--accent);">Build Planner</a> only offers those talents for it.</p>
+          )}
         </div>
       </div>
 
@@ -285,4 +332,40 @@ const boldStars = (t: string) => t
   .weapon-pill--blast { color: #f6896a; border-color: rgba(246, 137, 106, 0.45); background: rgba(246, 137, 106, 0.1); }
   .weapon-pill--piercing { color: #9fb0ff; border-color: rgba(159, 176, 255, 0.45); background: rgba(159, 176, 255, 0.1); }
   .weapon-pill--shredding { color: #8fd79f; border-color: rgba(143, 215, 159, 0.45); background: rgba(143, 215, 159, 0.1); }
+</style>
+
+<style>
+  .weapon-rolls { margin-bottom: var(--sp-8); }
+  .weapon-rolls__title {
+    font-family: var(--font-heading);
+    font-size: var(--text-lg);
+    font-weight: 800;
+    color: #fff;
+    margin: 0 0 var(--sp-3) 0;
+    padding-bottom: var(--sp-2);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+  .weapon-rolls__lead { color: #c8c8d0; line-height: 1.7; font-size: var(--text-sm); margin: 0 0 var(--sp-5); }
+  .weapon-rolls__group { margin-bottom: var(--sp-5); }
+  .weapon-rolls__role {
+    font-family: var(--font-mono);
+    font-size: var(--text-xs);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--accent);
+    margin: 0 0 var(--sp-2);
+  }
+  .weapon-rolls__role span { color: var(--ink-muted); margin-left: 6px; }
+  .weapon-rolls__list { margin: 0; display: grid; gap: var(--sp-2); }
+  .weapon-rolls__item {
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid rgba(255,255,255,0.07);
+    background: rgba(0,0,0,0.22);
+  }
+  .weapon-rolls__item dt { margin: 0 0 2px; font-weight: 700; font-size: var(--text-sm); }
+  .weapon-rolls__item dt a { color: #f0f0f4; text-decoration: none; }
+  .weapon-rolls__item dt a:hover { color: var(--accent); }
+  .weapon-rolls__item dd { margin: 0; color: #b8b8c4; font-size: var(--text-sm); line-height: 1.6; }
 </style>

@@ -175,6 +175,9 @@ Both setups use the same two weapons. LtFoe runs the Enhanced ACR-E as primary f
 
 **[Fully Charged](/database/weapon-talents/fully-charged/)** feeds Engineering on every empty-mag reload: +7.50% Engineering for 12 seconds, up to 3 stacks (+22.50% max). Those are the rank I numbers from our database; LtFoe's Fully Charged II should read higher. The ACR-E's steady reload cycle keeps Engineering elevated.
 
+> [!WARNING] Farming this pair today
+> LtFoe's screenshots are from June 2026. The game's Build-Making Database as of October 29, 2026 doesn't list In Sync for the Enhanced ACR-E (Fully Charged it does), so a new ACR-E won't roll his exact pair. The assault rifles whose talent pools hold both In Sync and Fully Charged are the [Lightweight M4](/database/weapons/lightweight-m4/) (T2), the [StG 44](/database/weapons/stg-44/) (T1) and the [Classic FAL](/database/weapons/classic-fal/) (T0). Ubisoft's Season 2 Phase 1 notes fixed several weapons that pulled talents from the wrong pool on recalibration; the ACR-E isn't one they name, so we can't say how his copy got In Sync.
+
 > [!INFO] SMG Alternative
 > LtFoe's preferred setup is double AR or AR + SMG. If you want to run an SMG in the second slot instead of the Warlord, his picks are the **Modified USC** (comes with Crit Chance as its TAM unlock) or the **Police UMP-45** (comes with Crit Damage as its TAM unlock). Both feed the Skill Crit stack this build lives on.
 

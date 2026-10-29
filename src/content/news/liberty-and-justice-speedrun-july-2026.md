@@ -5,6 +5,8 @@ updatedDate: 2026-10-24
 author: "RapidF5"
 tags: ["News", "Events", "Season 1", "Phase 3"]
 description: "Division Resurgence Liberty and Justice for All speedrun runs July 24 to 29, and Trigger Happy weapon training runs to Aug 5. Dates, map, tips."
+imageAlt: "An agent in a bucket hat and red goggles under an American flag in The Cavern safe house in The Division Resurgence"
+featuredImage: "/images/news/division-resurgence-liberty-and-justice-speedrun-cavern-flag-1200.webp"
 shareTitle: "Liberty and Justice speedrun is live"
 shareText: "Speedrun for Liberty, compete for Justice, and test your aim in Trigger Happy. Dates, where the mission hides, and how not to waste your weekend."
 faqs:

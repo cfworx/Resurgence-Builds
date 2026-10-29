@@ -24,7 +24,6 @@ function walkHtml(dir, results = []) {
 const SKIP_PREFIXES = [
   '/404/', '/api/', '/pagefind/', '/_astro/', '/images/', '/css/', '/js/', '/map/',
   '/.well-known/', '/ai.txt/', '/build-planner/', '/cdn-cgi/',
-  '/database/gear/' // noindexed thin stub
 ];
 
 /**

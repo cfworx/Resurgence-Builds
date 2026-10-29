@@ -25,15 +25,7 @@
       "Firepower": "30-78",
       "Toughness": "30-78",
       "Engineering": "30-78"
-    },
-    "talent1": [
-      "Backup Battery",
-      "Proficient Reload",
-      "Steady Hands",
-      "Steady Suppression",
-      "Swift Aim",
-      "In a Day's Work"
-    ]
+    }
   },
   {
     "id": "sw-3",
@@ -312,7 +304,7 @@
     "type": "SMG",
     "armoryTier": "T0",
     "dmgType": "Blast",
-    "statsVerified": false
+    "pageSince": "2026-10-29"
   },
   {
     "id": "sw-43",
@@ -320,7 +312,7 @@
     "type": "SMG",
     "armoryTier": "T0",
     "dmgType": "Piercing",
-    "statsVerified": false
+    "pageSince": "2026-10-29"
   },
   {
     "id": "sw-44",
@@ -328,7 +320,7 @@
     "type": "SMG",
     "armoryTier": "T0",
     "dmgType": "Shredding",
-    "statsVerified": false
+    "pageSince": "2026-10-29"
   },
   {
     "id": "sw-45",
@@ -336,7 +328,7 @@
     "type": "SMG",
     "armoryTier": "T1",
     "dmgType": "Piercing",
-    "statsVerified": false
+    "pageSince": "2026-10-29"
   },
   {
     "id": "sw-46",
@@ -344,7 +336,7 @@
     "type": "SMG",
     "armoryTier": "T1",
     "dmgType": "Shredding",
-    "statsVerified": false
+    "pageSince": "2026-10-29"
   },
   {
     "id": "sw-47",
@@ -352,7 +344,7 @@
     "type": "SMG",
     "armoryTier": "T1",
     "dmgType": "Blast",
-    "statsVerified": false
+    "pageSince": "2026-10-29"
   },
   {
     "id": "sw-48",
@@ -360,7 +352,7 @@
     "type": "SMG",
     "armoryTier": "T1",
     "dmgType": "Piercing",
-    "statsVerified": false
+    "pageSince": "2026-10-29"
   },
   {
     "id": "sw-49",
@@ -368,7 +360,7 @@
     "type": "SMG",
     "armoryTier": "T2",
     "dmgType": "Blast",
-    "statsVerified": false
+    "pageSince": "2026-10-29"
   },
   {
     "id": "sw-50",
@@ -376,7 +368,7 @@
     "type": "SMG",
     "armoryTier": "T2",
     "dmgType": "Piercing",
-    "statsVerified": false
+    "pageSince": "2026-10-29"
   },
   {
     "id": "sw-51",
@@ -384,7 +376,7 @@
     "type": "SMG",
     "armoryTier": "T2",
     "dmgType": "Shredding",
-    "statsVerified": false
+    "pageSince": "2026-10-29"
   },
   {
     "id": "sw-52",
@@ -392,7 +384,7 @@
     "type": "SMG",
     "armoryTier": "T2",
     "dmgType": "Shredding",
-    "statsVerified": false
+    "pageSince": "2026-10-29"
   },
   {
     "id": "sw-53",
@@ -400,7 +392,7 @@
     "type": "LMG",
     "armoryTier": "T0",
     "dmgType": "Piercing",
-    "statsVerified": false
+    "pageSince": "2026-10-29"
   },
   {
     "id": "sw-54",
@@ -408,7 +400,7 @@
     "type": "LMG",
     "armoryTier": "T0",
     "dmgType": "Shredding",
-    "statsVerified": false
+    "pageSince": "2026-10-29"
   },
   {
     "id": "sw-55",
@@ -416,7 +408,7 @@
     "type": "LMG",
     "armoryTier": "T1",
     "dmgType": "Blast",
-    "statsVerified": false
+    "pageSince": "2026-10-29"
   },
   {
     "id": "sw-56",
@@ -424,7 +416,7 @@
     "type": "LMG",
     "armoryTier": "T1",
     "dmgType": "Piercing",
-    "statsVerified": false
+    "pageSince": "2026-10-29"
   },
   {
     "id": "sw-57",
@@ -432,7 +424,7 @@
     "type": "LMG",
     "armoryTier": "T1",
     "dmgType": "Shredding",
-    "statsVerified": false
+    "pageSince": "2026-10-29"
   },
   {
     "id": "sw-58",
@@ -440,7 +432,7 @@
     "type": "LMG",
     "armoryTier": "T1",
     "dmgType": "Blast",
-    "statsVerified": false
+    "pageSince": "2026-10-29"
   },
   {
     "id": "sw-59",
@@ -448,7 +440,7 @@
     "type": "LMG",
     "armoryTier": "T2",
     "dmgType": "Blast",
-    "statsVerified": false
+    "pageSince": "2026-10-29"
   },
   {
     "id": "sw-60",
@@ -456,7 +448,7 @@
     "type": "LMG",
     "armoryTier": "T2",
     "dmgType": "Piercing",
-    "statsVerified": false
+    "pageSince": "2026-10-29"
   },
   {
     "id": "sw-61",
@@ -464,7 +456,7 @@
     "type": "LMG",
     "armoryTier": "T2",
     "dmgType": "Shredding",
-    "statsVerified": false
+    "pageSince": "2026-10-29"
   },
   {
     "id": "sw-62",
@@ -472,7 +464,7 @@
     "type": "LMG",
     "armoryTier": "T2",
     "dmgType": "Blast",
-    "statsVerified": false
+    "pageSince": "2026-10-29"
   },
   {
     "id": "sw-63",
@@ -480,7 +472,7 @@
     "type": "LMG",
     "armoryTier": "T2",
     "dmgType": "Shredding",
-    "statsVerified": false
+    "pageSince": "2026-10-29"
   },
   {
     "id": "sw-64",
@@ -488,7 +480,7 @@
     "type": "Shotgun",
     "armoryTier": "T0",
     "dmgType": "Shredding",
-    "statsVerified": false
+    "pageSince": "2026-10-29"
   },
   {
     "id": "sw-65",
@@ -496,7 +488,7 @@
     "type": "Shotgun",
     "armoryTier": "T0",
     "dmgType": "Piercing",
-    "statsVerified": false
+    "pageSince": "2026-10-29"
   },
   {
     "id": "sw-66",
@@ -504,7 +496,7 @@
     "type": "Shotgun",
     "armoryTier": "T1",
     "dmgType": "Shredding",
-    "statsVerified": false
+    "pageSince": "2026-10-29"
   },
   {
     "id": "sw-67",
@@ -512,7 +504,7 @@
     "type": "Shotgun",
     "armoryTier": "T1",
     "dmgType": "Piercing",
-    "statsVerified": false
+    "pageSince": "2026-10-29"
   },
   {
     "id": "sw-68",
@@ -520,7 +512,7 @@
     "type": "Shotgun",
     "armoryTier": "T1",
     "dmgType": "Shredding",
-    "statsVerified": false
+    "pageSince": "2026-10-29"
   },
   {
     "id": "sw-69",
@@ -528,7 +520,7 @@
     "type": "Shotgun",
     "armoryTier": "T2",
     "dmgType": "Piercing",
-    "statsVerified": false
+    "pageSince": "2026-10-29"
   },
   {
     "id": "sw-70",
@@ -536,7 +528,7 @@
     "type": "Shotgun",
     "armoryTier": "T2",
     "dmgType": "Piercing",
-    "statsVerified": false
+    "pageSince": "2026-10-29"
   },
   {
     "id": "sw-71",
@@ -544,7 +536,7 @@
     "type": "Shotgun",
     "armoryTier": "T2",
     "dmgType": "Shredding",
-    "statsVerified": false
+    "pageSince": "2026-10-29"
   },
   {
     "id": "sw-72",
@@ -552,7 +544,7 @@
     "type": "Marksman Rifle",
     "armoryTier": "T0",
     "dmgType": "Shredding",
-    "statsVerified": false
+    "pageSince": "2026-10-29"
   },
   {
     "id": "sw-73",
@@ -560,7 +552,7 @@
     "type": "Marksman Rifle",
     "armoryTier": "T0",
     "dmgType": "Shredding",
-    "statsVerified": false
+    "pageSince": "2026-10-29"
   },
   {
     "id": "sw-74",
@@ -568,7 +560,7 @@
     "type": "Marksman Rifle",
     "armoryTier": "T1",
     "dmgType": "Blast",
-    "statsVerified": false
+    "pageSince": "2026-10-29"
   },
   {
     "id": "sw-75",
@@ -576,7 +568,7 @@
     "type": "Marksman Rifle",
     "armoryTier": "T1",
     "dmgType": "Piercing",
-    "statsVerified": false
+    "pageSince": "2026-10-29"
   },
   {
     "id": "sw-76",
@@ -584,7 +576,7 @@
     "type": "Marksman Rifle",
     "armoryTier": "T1",
     "dmgType": "Piercing",
-    "statsVerified": false
+    "pageSince": "2026-10-29"
   },
   {
     "id": "sw-77",
@@ -592,7 +584,7 @@
     "type": "Marksman Rifle",
     "armoryTier": "T1",
     "dmgType": "Blast",
-    "statsVerified": false
+    "pageSince": "2026-10-29"
   },
   {
     "id": "sw-78",
@@ -600,7 +592,7 @@
     "type": "Marksman Rifle",
     "armoryTier": "T2",
     "dmgType": "Blast",
-    "statsVerified": false
+    "pageSince": "2026-10-29"
   },
   {
     "id": "sw-79",
@@ -608,7 +600,7 @@
     "type": "Marksman Rifle",
     "armoryTier": "T1",
     "dmgType": "Shredding",
-    "statsVerified": false
+    "pageSince": "2026-10-29"
   },
   {
     "id": "sw-80",
@@ -616,7 +608,7 @@
     "type": "Marksman Rifle",
     "armoryTier": "T2",
     "dmgType": "Shredding",
-    "statsVerified": false
+    "pageSince": "2026-10-29"
   },
   {
     "id": "sw-81",
@@ -624,7 +616,7 @@
     "type": "Rifle",
     "armoryTier": "T0",
     "dmgType": "Piercing",
-    "statsVerified": false
+    "pageSince": "2026-10-29"
   },
   {
     "id": "sw-82",
@@ -632,7 +624,7 @@
     "type": "Rifle",
     "armoryTier": "T0",
     "dmgType": "Blast",
-    "statsVerified": false
+    "pageSince": "2026-10-29"
   },
   {
     "id": "sw-83",
@@ -640,10 +632,10 @@
     "type": "Rifle",
     "armoryTier": "T0",
     "dmgType": "Shredding",
-    "statsVerified": false,
     "aliases": [
       "Winchester 1886"
-    ]
+    ],
+    "pageSince": "2026-10-29"
   },
   {
     "id": "sw-84",
@@ -651,7 +643,7 @@
     "type": "Rifle",
     "armoryTier": "T1",
     "dmgType": "Blast",
-    "statsVerified": false
+    "pageSince": "2026-10-29"
   },
   {
     "id": "sw-85",
@@ -659,7 +651,7 @@
     "type": "Rifle",
     "armoryTier": "T1",
     "dmgType": "Blast",
-    "statsVerified": false
+    "pageSince": "2026-10-29"
   },
   {
     "id": "sw-86",
@@ -667,7 +659,7 @@
     "type": "Rifle",
     "armoryTier": "T1",
     "dmgType": "Piercing",
-    "statsVerified": false
+    "pageSince": "2026-10-29"
   },
   {
     "id": "sw-87",
@@ -675,7 +667,7 @@
     "type": "Rifle",
     "armoryTier": "T2",
     "dmgType": "Piercing",
-    "statsVerified": false
+    "pageSince": "2026-10-29"
   },
   {
     "id": "sw-88",
@@ -683,7 +675,7 @@
     "type": "Rifle",
     "armoryTier": "T2",
     "dmgType": "Shredding",
-    "statsVerified": false
+    "pageSince": "2026-10-29"
   },
   {
     "id": "sw-89",
@@ -691,7 +683,7 @@
     "type": "Rifle",
     "armoryTier": "T2",
     "dmgType": "Blast",
-    "statsVerified": false
+    "pageSince": "2026-10-29"
   },
   {
     "id": "sw-90",
@@ -699,6 +691,6 @@
     "type": "Rifle",
     "armoryTier": "T2",
     "dmgType": "Piercing",
-    "statsVerified": false
+    "pageSince": "2026-10-29"
   }
 ]

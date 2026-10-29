@@ -5,6 +5,8 @@ import AdSenseUnit from '../../../components/AdSenseUnit.astro';
 import { verifiedPatch } from '../../../data/site-config';
 import { attrGuide, statInteraction } from '../../../data/bonus-attribute-guides';
 import inGame from '../../../data/bonus-attributes-in-game.json';
+import GameImage from '../../../components/GameImage.astro';
+import { dbImage } from '../../../utils/db-images';
 // Each attribute's own description from the in-game Build-Making Database (October 28, 2026)
 const gameText = (name: string): string | undefined => (inGame.descriptions as Record<string, string>)[name];
 // Damage-type attributes: still listed by the in-game database, removed from weapon rolls in Season 2 Phase 1
@@ -82,7 +84,7 @@ const itemListLd = {
     <p>Bonus attributes are the secondary stats on every gear piece in Division Resurgence. Each piece carries Firepower, Toughness and Engineering values (TikTokAndy's T2 Phalanx holster reads 206 Firepower, 33 Toughness and 64 Engineering) plus two bonus attributes like Weapon Critical Hit Chance, Skill Intensity, or Damage Reduction. We group the attributes below by the core stat they feed, but the groups aren't walled off by a piece's biggest stat: creators' gear mixes them freely.</p>
     <p>There are {allAttrs.length} bonus attributes across {bonusAttributes.length} pools: <strong>Firepower</strong> (offensive weapon stats), <strong>Toughness</strong> (survivability), <strong>Engineering</strong> (skill scaling), and <strong>Universal</strong> (attributes that roll on any core type). Universal attributes like Damage to Elites and Received Healing are the most flexible options for builds that need cross-category value. For how the core stats, crit and talent ranks fit together, see our <a href="/guides/division-resurgence-stats-explained/" style="color: var(--accent);">stats guide</a>.</p>
     <p>Recalibration rerolls an attribute line at random and costs recalibration manuals, which TikTokAndy says are at a premium. Pick the line that's furthest from what your build wants before you spend one, especially on Tier 2 endgame gear that you cannot easily replace.</p>
-    <p><strong>Update (October 2026):</strong> Season 2 Phase 1 reshuffled the pools. Weapons no longer roll Blast, Piercing or Shredding Weapon or Skill Damage: Ubisoft replaced them with All Weapon Damage and All Skill Damage, which this list now shows in their place. Ubisoft's notes cover weapons and weapon mods, not gear pieces, and older weapons may still carry the old rolls, so check yours in the Armory. Weapon mods were reworked (main stat +100%, attribute bonuses -25%), and newly dropped weapon mods lost the damage-type and All Damage rolls in exchange for Weapon Damage, Skill Intensity, Headshot Damage, Weapon Critical Hit Damage and Skill Critical Damage. Mods you already own keep their rolls. Gear mods lost Elite Enemy and Enemy Leader Resistance and can now roll Max Health, Armor, Received Healing, weapon and skill crit chance, crit damage and multi-shot, Weapon Damage, Skill Intensity, Headshot Damage and Signature Ability Charge Efficiency. The per-stat notes below were written before that patch unless they say otherwise. Each stat's "In game" line is its own description from the game's Build-Making Database (checked October 28, 2026), which says a weapon or gear piece gets "2 different Bonus Attributes" at random.</p>
+    <p><strong>Update (October 2026):</strong> Season 2 Phase 1 reshuffled the pools. Weapons no longer roll Blast, Piercing or Shredding Weapon or Skill Damage: Ubisoft replaced them with All Weapon Damage and All Skill Damage, which this list now shows in their place. Ubisoft's notes cover weapons and weapon mods, not gear pieces, and older weapons may still carry the old rolls, so check yours in the Armory. Weapon mods were reworked (main stat +100%, attribute bonuses -25%), and newly dropped weapon mods lost the damage-type and All Damage rolls in exchange for Weapon Damage, Skill Intensity, Headshot Damage, Weapon Critical Hit Damage and Skill Critical Damage. Mods you already own keep their rolls. Gear mods lost Elite Enemy and Enemy Leader Resistance and can now roll Max Health, Armor, Received Healing, weapon and skill crit chance, crit damage and multi-shot, Weapon Damage, Skill Intensity, Headshot Damage and Signature Ability Charge Efficiency. The per-stat notes below were written before that patch unless they say otherwise. Each stat's "In game" line is its own description from the game's Build-Making Database (checked October 28, 2026), which says a weapon or gear piece gets "2 different Bonus Attributes" at random. That's the High-End count: the Superior gear cards in the same database say the piece is "created with 1 Bonuses".</p>
   </div>
 
   <!-- Jump nav: a fold, closed on phones (20+ links at 44px would be a long block before the content), open wider -->
@@ -134,6 +136,12 @@ const itemListLd = {
                   <span class="attr-entry__badge" style={`color:${palette.color};border-color:${palette.border};background:${palette.bg};`}>{category.category}</span>
                 </h3>
                 {gameText(attr) && <p class="attr-entry__ingame"><span>In game:</span> "{gameText(attr)}"</p>}
+                {notInDatabase.includes(attr) && <p class="attr-entry__ingame"><span>In game:</span> not in the Build-Making Database's list yet (checked October 28, 2026), so there's no card to show. This one comes from Ubisoft's Season 2 Phase 1 notes.</p>}
+                {dbImage(`bonus-attributes/${slug}`) && (
+                  <figure class="game-figure attr-entry__card">
+                    <GameImage image={dbImage(`bonus-attributes/${slug}`)!} alt={`${attr} bonus attribute card in The Division Resurgence's Build-Making Database`} sizes="(max-width: 520px) calc(100vw - 64px), 440px" />
+                  </figure>
+                )}
                 {info ? (
                   <div class="attr-entry__body">
                     <p>{info.overview}</p>
@@ -179,6 +187,11 @@ const itemListLd = {
             {attr}
           </h3>
           {gameText(attr) && <p class="attr-entry__ingame"><span>In game:</span> "{gameText(attr)}"</p>}
+                {dbImage(`bonus-attributes/${slug}`) && (
+                  <figure class="game-figure attr-entry__card">
+                    <GameImage image={dbImage(`bonus-attributes/${slug}`)!} alt={`${attr} bonus attribute card in The Division Resurgence's Build-Making Database`} sizes="(max-width: 520px) calc(100vw - 64px), 440px" />
+                  </figure>
+                )}
           {info && (
             <div class="attr-entry__body">
               <p>{info.overview}</p>
@@ -400,6 +413,9 @@ const itemListLd = {
     color: #fff;
     margin: var(--sp-4) 0 var(--sp-2) 0;
   }
+
+  .attr-entry__card { max-width: 440px; margin: var(--sp-2) 0 var(--sp-3); }
+  .attr-entry__card img { width: 100%; height: auto; border-radius: 6px; display: block; }
 </style>
 
 <script>

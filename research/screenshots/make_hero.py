@@ -12,6 +12,10 @@ heroes.json lists every featured image made this way: the recording and second i
 crop, what was cleared and the text added, so rerunning rebuilds them exactly. Recordings live in
 the session uploads (they are too big for the repo); the frame time is enough to find the shot again.
 
+Spec keys: out, video, t, crop [x, y, width] (height follows from 1600 x 840), clear [boxes], hud [[x0, y0,
+x1, y1, colour]] (only that colour's pixels in the box: white, brightwhite, red, pink, orange, green), bar (false to skip
+the health bar search), window, maxErr, title, subtitle, align, word.
+
 Clearing HUD: crops are chosen to leave out the fixed HUD (minimap, menu icons, chat, skill bar, XP
 bar). The player's orange health bar floats next to the agent, so it is found by its colour and
 filled from the frames around it: the camera moves a little between frames, so the scenery behind
@@ -84,11 +88,35 @@ def bar_mask(f):
     return cv2.dilate(m, np.ones((15, 15), np.uint8))
 
 
-def clear(video, t, f, boxes, auto_bar, window=2.0, max_err=60, crop=None):
+HUD_COLOURS = {
+    # HUD pieces drawn in one flat colour, so only their own pixels are replaced, not the box around them
+    'white': lambda a: (a.min(axis=2) > 185) & (a.max(axis=2) - a.min(axis=2) < 45),
+    'brightwhite': lambda a: a.min(axis=2) > 228,  # reticles and markers over snow, which is a duller white
+    'red': lambda a: (a[..., 0] > 150) & (a[..., 1] < 95) & (a[..., 2] < 110),
+    'pink': lambda a: (a[..., 0] > 190) & (a[..., 1] > 100) & (a[..., 1] < 200) & (a[..., 2] > 130),
+    'orange': lambda a: (a[..., 0] > 200) & (a[..., 1] > 70) & (a[..., 1] < 160) & (a[..., 2] < 80),
+    'green': lambda a: (a[..., 1] > 150) & (a[..., 0] < 120) & (a[..., 2] < 120),
+}
+
+
+def hud_mask(f, hud):
+    """hud: [[x0, y0, x1, y1, colour], ...] -> the pixels of that colour inside each box, grown by 3 px."""
+    m = np.zeros(f.shape[:2], np.uint8)
+    a = f.astype(np.int16)
+    for x0, y0, x1, y1, colour in hud:
+        sel = HUD_COLOURS[colour](a[y0:y1, x0:x1])
+        m[y0:y1, x0:x1][sel] = 255
+    return cv2.dilate(m, np.ones((7, 7), np.uint8))
+
+
+def clear(video, t, f, boxes, auto_bar, window=2.0, max_err=60, crop=None, hud=()):
     target = f.copy()
     mask = bar_mask(f) if auto_bar else np.zeros(f.shape[:2], np.uint8)
     for (x0, y0, x1, y1) in boxes:
         mask[y0:y1, x0:x1] = 255
+    if hud:
+        mask = np.maximum(mask, hud_mask(f, hud))
+        boxes = list(boxes) + [tuple(h[:4]) for h in hud]  # never take fill pixels from those spots in other frames
     if crop is not None:  # only what ends up in the picture needs clearing
         cx0, cy0, cx1, cy1 = crop
         keep = np.zeros_like(mask)
@@ -220,8 +248,17 @@ def draw_text_layers(img, title, subtitle, shade_only=False, text_right=False, n
     return im.convert('RGB')
 
 
+def frame_size(video):
+    out = subprocess.run(['ffprobe', '-v', 'error', '-select_streams', 'v:0', '-show_entries', 'stream=width,height',
+                          '-of', 'csv=p=0', video], capture_output=True, text=True, check=True).stdout
+    w, h = out.strip().split(',')[:2]
+    return int(w), int(h)
+
+
 def make(spec):
+    global FW, FH
     video = find_video(spec['video'])
+    FW, FH = frame_size(video)  # most recordings are 2560 x 1440; the October 28 phone ones are 2340 x 1080
     t = float(spec['t'])
     x, y, w = spec['crop']
     h = int(round(w * OUT_H / OUT_W))
@@ -229,7 +266,8 @@ def make(spec):
         raise SystemExit(f"{spec['out']}: crop {spec['crop']} runs off the frame")
     f = next(frames(video, t, t + 0.15))[1]
     img, report = clear(video, t, f, [tuple(b) for b in spec.get('clear', [])], spec.get('bar', True),
-                        window=spec.get('window', 2.0), max_err=spec.get('maxErr', 60), crop=(x, y, x + w, y + h))
+                        window=spec.get('window', 2.0), max_err=spec.get('maxErr', 60), crop=(x, y, x + w, y + h),
+                        hud=spec.get('hud', ()))
     out = Image.fromarray(img[y:y + h, x:x + w]).resize((OUT_W, OUT_H), Image.LANCZOS)
     if spec.get('word'):
         out = replace_word(out, spec)

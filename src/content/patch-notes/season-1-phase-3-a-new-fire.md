@@ -5,8 +5,8 @@ patchDate: "2026-06-24"
 updatedDate: 2026-10-24
 author: "RapidF5"
 summary: "Division Resurgence Season 1 Phase 3 A New Fire patch notes: Scorpio exotic shotgun in Classified Ops Pass 1.3, Applied Demolition buff nearly doubled, Thermobaric Grenades nerf, Dark Zone spawn immunity, inventory bug fixed, Strawberry Milkshake reissue, and Sealed Cache drop rate improvements."
-featuredImage: "/images/patch-notes/division-resurgence-season-1-phase-3-a-new-fire-hero.webp"
-imageAlt: "Division Resurgence Season 1 Phase 3 loading screen showing SHD eagle logo with orange HUD ring at 100 percent and Phase 3 Is Live text"
+featuredImage: "/images/patch-notes/division-resurgence-season-1-phase-3-a-new-fire-backpack-1200.webp"
+imageAlt: "An agent walking through the Base of Operations hall under American flags in The Division Resurgence, with the title A New Fire"
 shareTitle: "Phase 3 just dropped everything"
 shareText: "Scorpio landed, Applied Demolition almost doubled, Thermobaric Grenades got humbled, and the inventory bug is finally dead. Share this with the clanmate still running a pre-nerf loadout."
 faqs:

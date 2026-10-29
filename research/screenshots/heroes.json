@@ -236,5 +236,583 @@
    150,
    1640
   ]
+ },
+ {
+  "out": "research/screenshots/masters/guides/division-resurgence-exotic-sealed-caches-armory-exotics.webp",
+  "video": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
+  "t": 1,
+  "crop": [
+   330,
+   210,
+   1640
+  ],
+  "bar": false
+ },
+ {
+  "out": "research/screenshots/masters/news/division-resurgence-a-new-enemy-speedrun-july-festive-street.webp",
+  "video": "2026-10-29_09-55-56.mp4",
+  "t": 2,
+  "crop": [
+   300,
+   380,
+   1640
+  ],
+  "clear": [
+   [
+    1190,
+    620,
+    1400,
+    790
+   ]
+  ],
+  "title": "A New Enemy Speedrun",
+  "subtitle": "July 10 to 15"
+ },
+ {
+  "out": "research/screenshots/masters/news/division-resurgence-a-new-enemy-speedrun-september-map.webp",
+  "video": "2026-10-29_10-16-11.mp4",
+  "t": 2.5,
+  "crop": [
+   340,
+   230,
+   2000
+  ],
+  "bar": false
+ },
+ {
+  "out": "research/screenshots/masters/news/division-resurgence-bighorn-headshot-weekend-scope.webp",
+  "video": "2026-10-29_10-11-54.mp4",
+  "t": 160,
+  "crop": [
+   560,
+   300,
+   1560
+  ],
+  "title": "300,000 Headshots",
+  "subtitle": "The Bighorn community event",
+  "align": "right"
+ },
+ {
+  "out": "research/screenshots/masters/news/division-resurgence-bug-reporter-october-23-bug-area.webp",
+  "video": "2026-10-29_10-06-44.mp4",
+  "t": 16,
+  "crop": [
+   440,
+   150,
+   1500
+  ],
+  "word": {
+   "quad": [
+    [
+     560,
+     191
+    ],
+    [
+     825,
+     202.5
+    ],
+    [
+     825,
+     228.5
+    ],
+    [
+     560,
+     218
+    ]
+   ],
+   "text": "BUG AREA",
+   "align": "center",
+   "blur": 1.1
+  }
+ },
+ {
+  "out": "research/screenshots/masters/news/division-resurgence-inventory-expansion-storage-bins.webp",
+  "video": "2026-10-29_10-06-44.mp4",
+  "t": 170,
+  "crop": [
+   560,
+   150,
+   1640
+  ],
+  "title": "Inventory Expansion",
+  "subtitle": "Planned, no date yet"
+ },
+ {
+  "out": "research/screenshots/masters/news/division-resurgence-liberty-and-justice-speedrun-cavern-flag.webp",
+  "video": "2026-10-29_10-16-11.mp4",
+  "t": 44,
+  "crop": [
+   560,
+   150,
+   1640
+  ]
+ },
+ {
+  "out": "research/screenshots/masters/news/division-resurgence-liberty-justice-speedrun-lichen-flags.webp",
+  "video": "2026-10-29_10-02-51.mp4",
+  "t": 104,
+  "crop": [
+   360,
+   250,
+   1800
+  ]
+ },
+ {
+  "out": "research/screenshots/masters/news/division-resurgence-revive-bug-fixed-medical-bay.webp",
+  "video": "2026-10-29_10-06-44.mp4",
+  "t": 90,
+  "crop": [
+   560,
+   150,
+   1640
+  ],
+  "title": "Revive Bug Fixed",
+  "subtitle": "No-respawn zones",
+  "align": "right"
+ },
+ {
+  "out": "research/screenshots/masters/news/division-resurgence-season-2-countdown-festive-plaza.webp",
+  "video": "2026-10-29_09-55-56.mp4",
+  "t": 18,
+  "crop": [
+   560,
+   150,
+   1640
+  ],
+  "title": "Season 2 Countdown",
+  "subtitle": "Daily login event",
+  "align": "right"
+ },
+ {
+  "out": "research/screenshots/masters/news/division-resurgence-season-2-phase-2-diamondback-card.webp",
+  "video": "Screen_Recording_20261028_155256_The_Division_Resurgence.mp4",
+  "t": 100,
+  "crop": [
+   300,
+   100,
+   1700
+  ],
+  "bar": false
+ },
+ {
+  "out": "research/screenshots/masters/news/division-resurgence-steam-launch-rewards-armory.webp",
+  "video": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
+  "t": 39,
+  "crop": [
+   300,
+   130,
+   1740
+  ],
+  "bar": false
+ },
+ {
+  "out": "research/screenshots/masters/news/division-resurgence-take-the-castle-speedrun-street.webp",
+  "video": "2026-10-29_10-11-54.mp4",
+  "t": 104,
+  "crop": [
+   560,
+   150,
+   1640
+  ],
+  "clear": [
+   [
+    1150,
+    755,
+    1235,
+    855
+   ],
+   [
+    1255,
+    720,
+    1365,
+    845
+   ]
+  ],
+  "title": "Take the Castle",
+  "subtitle": "Speedrun weekend",
+  "align": "right"
+ },
+ {
+  "out": "research/screenshots/masters/builds/division-resurgence-milkshake-machine-strawberry-milkshake-card.webp",
+  "video": "Screen_Recording_20261028_155256_The_Division_Resurgence.mp4",
+  "t": 42,
+  "crop": [
+   300,
+   100,
+   1700
+  ],
+  "bar": false
+ },
+ {
+  "out": "research/screenshots/masters/news/division-resurgence-community-feedback-base-cafe.webp",
+  "video": "2026-10-29_10-02-51.mp4",
+  "t": 56,
+  "crop": [
+   560,
+   150,
+   1640
+  ],
+  "title": "Community Feedback",
+  "subtitle": "What players say"
+ },
+ {
+  "out": "research/screenshots/masters/news/division-resurgence-steam-launch-reviews-cavern-talk.webp",
+  "video": "2026-10-29_10-16-11.mp4",
+  "t": 58,
+  "crop": [
+   300,
+   150,
+   1640
+  ]
+ },
+ {
+  "out": "research/screenshots/masters/news/division-resurgence-pc-launch-tech-wing.webp",
+  "video": "2026-10-29_10-06-44.mp4",
+  "t": 44,
+  "crop": [
+   400,
+   150,
+   1640
+  ]
+ },
+ {
+  "out": "research/screenshots/masters/news/division-resurgence-reddit-highlights-july-2-notice-board.webp",
+  "video": "2026-10-29_10-06-44.mp4",
+  "t": 128,
+  "crop": [
+   560,
+   150,
+   1640
+  ],
+  "title": "Reddit Highlights",
+  "subtitle": "June 17 to July 2"
+ },
+ {
+  "out": "research/screenshots/masters/guides/division-resurgence-error-6000010-times-square.webp",
+  "video": "2026-10-29_10-02-51.mp4",
+  "t": 16,
+  "crop": [
+   560,
+   150,
+   1640
+  ],
+  "clear": [
+   [
+    1190,
+    610,
+    1400,
+    805
+   ]
+  ],
+  "title": "Error 6000010",
+  "subtitle": "What it means and how to fix it"
+ },
+ {
+  "out": "research/screenshots/masters/guides/division-resurgence-error-271581191-tech-lab.webp",
+  "video": "2026-10-29_10-06-44.mp4",
+  "t": 136,
+  "crop": [
+   560,
+   150,
+   1640
+  ],
+  "title": "Error 271581191",
+  "subtitle": "Fixes that work"
+ },
+ {
+  "out": "research/screenshots/masters/news/division-resurgence-double-xp-weekend-street-fight.webp",
+  "video": "2026-10-29_10-11-54.mp4",
+  "t": 168,
+  "crop": [
+   560,
+   150,
+   1640
+  ],
+  "clear": [
+   [
+    1110,
+    355,
+    1340,
+    455
+   ],
+   [
+    1385,
+    260,
+    1515,
+    400
+   ],
+   [
+    745,
+    325,
+    865,
+    415
+   ],
+   [
+    1245,
+    685,
+    1315,
+    760
+   ]
+  ],
+  "title": "Double XP Weekend",
+  "subtitle": "June 2026",
+  "align": "right"
+ },
+ {
+  "out": "research/screenshots/masters/patch-notes/division-resurgence-patch-1-1-2-mess-hall.webp",
+  "video": "2026-10-29_10-06-44.mp4",
+  "t": 144,
+  "crop": [
+   560,
+   150,
+   1640
+  ],
+  "title": "Patch 1.1.2",
+  "subtitle": "Patch notes",
+  "align": "right"
+ },
+ {
+  "out": "research/screenshots/masters/patch-notes/division-resurgence-patch-1-2-1-clinic.webp",
+  "video": "2026-10-29_10-06-44.mp4",
+  "t": 66,
+  "crop": [
+   560,
+   150,
+   1640
+  ],
+  "title": "Patch 1.2.1",
+  "subtitle": "Patch notes",
+  "align": "right"
+ },
+ {
+  "out": "research/screenshots/masters/news/division-resurgence-patch-1-2-1-news-strawberry-milkshake.webp",
+  "video": "Screen_Recording_20261028_155256_The_Division_Resurgence.mp4",
+  "t": 54,
+  "crop": [
+   300,
+   100,
+   1700
+  ],
+  "bar": false
+ },
+ {
+  "out": "research/screenshots/masters/news/division-resurgence-april-developer-stream-movie-night.webp",
+  "video": "2026-10-29_10-02-51.mp4",
+  "t": 64,
+  "crop": [
+   540,
+   150,
+   1640
+  ],
+  "title": "April Dev Stream",
+  "subtitle": "Summary"
+ },
+ {
+  "out": "research/screenshots/masters/guides/division-resurgence-phoenix-credits-gift-store.webp",
+  "video": "2026-10-29_10-11-54.mp4",
+  "t": 146,
+  "crop": [
+   1480,
+   135,
+   1080
+  ],
+  "word": {
+   "quad": [
+    [
+     422,
+     155
+    ],
+    [
+     618,
+     110
+    ],
+    [
+     618,
+     143
+    ],
+    [
+     422,
+     186
+    ]
+   ],
+   "text": "PHOENIX",
+   "align": "center",
+   "blur": 1.0,
+   "font": "/usr/share/fonts/opentype/inter/Inter-Medium.otf"
+  }
+ },
+ {
+  "out": "research/screenshots/masters/guides/division-resurgence-best-pve-dps-builds-damage-numbers.webp",
+  "video": "2026-10-29_09-55-56.mp4",
+  "t": 52,
+  "crop": [
+   560,
+   150,
+   1640
+  ],
+  "title": "Best PvE DPS Builds",
+  "subtitle": "Season 2 Phase 2",
+  "align": "right"
+ },
+ {
+  "out": "research/screenshots/masters/news/division-resurgence-asian-server-maintenance-bunks.webp",
+  "video": "2026-10-29_10-02-51.mp4",
+  "t": 74,
+  "crop": [
+   560,
+   150,
+   1640
+  ],
+  "title": "Server Maintenance",
+  "subtitle": "Asian servers, May 26",
+  "align": "right"
+ },
+ {
+  "out": "research/screenshots/masters/patch-notes/division-resurgence-season-1-phase-3-a-new-fire-backpack.webp",
+  "video": "2026-10-29_10-02-51.mp4",
+  "t": 48,
+  "crop": [
+   560,
+   150,
+   1640
+  ],
+  "title": "A New Fire",
+  "subtitle": "Season 1 Phase 3 patch notes"
+ },
+ {
+  "out": "research/screenshots/masters/news/division-resurgence-known-issues-board-base-whiteboard.webp",
+  "video": "2026-10-29_10-02-51.mp4",
+  "t": 90,
+  "crop": [
+   900,
+   250,
+   1640
+  ],
+  "clear": [
+   [
+    1290,
+    465,
+    1535,
+    545
+   ]
+  ],
+  "title": "Known Issues",
+  "subtitle": "Trello board breakdown"
+ },
+ {
+  "out": "research/screenshots/masters/patch-notes/division-resurgence-hotfix-1-1-1-locker-room.webp",
+  "video": "2026-10-29_10-06-44.mp4",
+  "t": 112,
+  "crop": [
+   560,
+   150,
+   1640
+  ],
+  "title": "Hotfix 1.1.1",
+  "subtitle": "Patch notes",
+  "align": "right"
+ },
+ {
+  "out": "research/screenshots/masters/patch-notes/division-resurgence-october-2026-hotfixes-police-car.webp",
+  "video": "2026-10-29_09-55-56.mp4",
+  "t": 100,
+  "crop": [
+   560,
+   150,
+   1640
+  ],
+  "title": "October Hotfixes",
+  "subtitle": "Heavy Weight nerf"
+ },
+ {
+  "out": "research/screenshots/masters/news/division-resurgence-steam-release-date-crystal-lamp-street.webp",
+  "video": "2026-10-29_09-55-56.mp4",
+  "t": 60,
+  "crop": [
+   600,
+   150,
+   1390
+  ],
+  "title": "Steam Release Date",
+  "subtitle": "August 5",
+  "align": "right",
+  "hud": [
+   [
+    1200,
+    645,
+    1358,
+    797,
+    "brightwhite"
+   ],
+   [
+    1232,
+    793,
+    1282,
+    832,
+    "orange"
+   ],
+   [
+    1232,
+    793,
+    1282,
+    832,
+    "brightwhite"
+   ]
+  ]
+ },
+ {
+  "out": "research/screenshots/masters/news/division-resurgence-reddit-highlights-october-24-barricade.webp",
+  "video": "2026-10-29_09-55-56.mp4",
+  "t": 116,
+  "crop": [
+   560,
+   150,
+   1640
+  ],
+  "clear": [
+   [
+    1180,
+    680,
+    1400,
+    900
+   ]
+  ],
+  "title": "Reddit Highlights",
+  "subtitle": "Sep 25 to Oct 24",
+  "align": "right"
+ },
+ {
+  "out": "research/screenshots/masters/site/division-resurgence-404-fast-travel-prompt.webp",
+  "video": "2026-10-29_10-16-11.mp4",
+  "t": 28.5,
+  "crop": [
+   400,
+   190,
+   1760
+  ],
+  "bar": false
+ },
+ {
+  "out": "research/screenshots/masters/site/division-resurgence-build-tier-list-firefight.webp",
+  "video": "2026-10-29_09-55-56.mp4",
+  "t": 46,
+  "crop": [
+   560,
+   150,
+   1640
+  ],
+  "title": "Build Tier List",
+  "subtitle": "Season 2 Phase 2",
+  "align": "right",
+  "clear": [
+   [
+    1330,
+    880,
+    1390,
+    922
+   ]
+  ],
+  "window": 4,
+  "maxErr": 120
  }
 ]

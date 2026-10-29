@@ -5,6 +5,8 @@ updatedDate: 2026-10-24
 author: "RapidF5"
 tags: ["News", "Events", "Season 2"]
 description: "Division Resurgence Take the Castle speedrun runs Aug 21 to 25 with the Lightspeed Agent title, plus a limited paratrooper apparel set in the shop."
+imageAlt: "An agent with a flame-pattern backpack behind a barricade on a snowy street at night in The Division Resurgence, with the title Take the Castle"
+featuredImage: "/images/news/division-resurgence-take-the-castle-speedrun-street-1200.webp"
 shareTitle: "Ken Ito wants a rematch"
 shareText: "A harder Take the Castle speedrun, a paratrooper outfit in the shop and ten days left on High Caliber. Your weekend just got booked."
 faqs:

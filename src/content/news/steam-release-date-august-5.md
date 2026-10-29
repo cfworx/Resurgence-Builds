@@ -5,8 +5,8 @@ updatedDate: 2026-10-26
 author: "RapidF5"
 tags: ["News", "Steam", "PC", "Season 2", "Crossplay", "Ubisoft Connect"]
 description: "Division Resurgence hits Steam Wednesday, Aug 5, with Season 2. Free, cross-play and cross-progression, PC specs, and how to keep your progress."
-featuredImage: "/images/guides/division-resurgence-steam-pc-guide-hero.webp"
-imageAlt: "A Division agent in a red flannel shirt playing on a Steam Deck next to the words Coming to Steam"
+featuredImage: "/images/news/division-resurgence-steam-release-date-crystal-lamp-street-1200.webp"
+imageAlt: "An agent with a flame-pattern backpack walking past a crystal lamp post on a snowy New York sidewalk in The Division Resurgence, with the title Steam Release Date"
 shareTitle: "Steam date locked: August 5"
 shareText: "Division Resurgence hits Steam on Wednesday, August 5, the same day as Season 2. Here's how to bring your phone progress along without losing it."
 faqs:

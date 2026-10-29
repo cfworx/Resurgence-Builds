@@ -1,5 +1,11 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import postImages from '../data/post-images.json';
+
+// An in-game frame: the Fast Travel prompt from our own recordings.
+const IMG = '/images/site/division-resurgence-404-fast-travel-prompt-1200.webp';
+const img = (postImages as Record<string, { width: number; height: number; srcset: [number, string][]; small: string }>)[IMG];
+const srcset = img.srcset.filter(([w]) => w <= 1200).map(([w, u]) => `${u} ${w}w`).join(', ');
 ---
 
 <BaseLayout noAds noindex={true}
@@ -7,13 +13,14 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   description="The page you are looking for does not exist on Resurgence Builds."
 >
   <div class="container section err">
-    <img src="/images/404-mj.webp" alt="Tactical Agent doing the moonwalk" width="800" height="800" class="err__img" />
+    <img src={img.small} srcset={srcset} sizes="(max-width: 480px) calc(100vw - 32px), 440px" width={img.width} height={img.height}
+      alt="The Division Resurgence Fast Travel prompt: Are you sure you want to travel to this position? Cancel or Confirm" class="err__img" />
     <p class="err__code">404</p>
-    <h1 class="heading-accent err__title">Annie, Are You OK?</h1>
+    <h1 class="heading-accent err__title">That Position Isn't on the Map</h1>
     <p class="err__text">
-      Because this page isn't. It's been hit by, it's been struck by, a smooth 404 error. You've moonwalked straight out of the playable area.
+      You hit Confirm and landed nowhere. The page may have moved, or the link has a typo. No enemies, no loot, nothing to see here.
     </p>
-    <a href="/" class="btn btn--primary err__home">Hee-Hee Your Way Home</a>
+    <a href="/" class="btn btn--primary err__home">Fast Travel Home</a>
   </div>
 </BaseLayout>
 
@@ -26,7 +33,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     text-align: center;
   }
   .err__img {
-    max-width: 400px;
+    max-width: 440px;
     width: 100%;
     height: auto;
     border-radius: 12px;

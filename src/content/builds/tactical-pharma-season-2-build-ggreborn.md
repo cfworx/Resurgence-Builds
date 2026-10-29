@@ -33,7 +33,7 @@ videoTitle: "GGReborn: BEST Tactical Pharma Build + Solo Legendary Gameplay"
 videoChannel: "GGReborn"
 videoUploadDate: "2026-10-16T04:00:15-07:00"
 videoDuration: "PT16M58S"
-plannerHash: "s=Field+Medic&sc=Tactical+Pharma&n=Tactical+Pharma+Season+2&ms=gs-7&m1=scd&m2=rh&gs=gs-7&g1=scd&g2=sr&hs=gs-11&h1=scd&h2=scr&cs=gs-11&ct=ba-12&c1=scd&c2=sdu&ps=gs-7&pt=bp-15&p1=sdu&p2=scc&ks=gs-7&k1=si&k2=sms&w1s=sw-41&w1t=wt-22&w1t2=wt-43&w1b1=sms&w2s=sw-50&w2t=wt-66&w2t2=wt-20&os=os-20&sm1=smc-75&sm2=smc-76&sm3=smc-79"
+plannerHash: "s=Field+Medic&sc=Tactical+Pharma&n=Tactical+Pharma+Season+2&ms=gs-7&m1=scd&m2=rh&gs=gs-7&g1=scd&g2=sr&hs=gs-11&h1=scd&h2=scr&cs=gs-7&ct=ba-12&c1=scd&c2=sdu&ps=gs-11&pt=bp-15&p1=sdu&p2=scc&ks=gs-7&k1=si&k2=sms&w1s=sw-41&w1t=wt-22&w1t2=wt-43&w1b1=sms&w2s=sw-50&w2t=wt-66&w2t2=wt-20&os=os-20&sm1=smc-75&sm2=smc-76&sm3=smc-79"
 ---
 
 ## What This Build Does
@@ -56,7 +56,7 @@ The short answers: four OS Protocols finished **within five seconds** of each ot
 
 ## GGReborn's Gear: Jackpot 4pc + Fire Cycle 2pc
 
-Four pieces of Jackpot and two of Fire Cycle. He doesn't say out loud which two slots carry Fire Cycle, and our planner link puts it on the body armor and holster, TikTokAndy's layout, as a placeholder. His [October 28 video](https://www.youtube.com/watch?v=AUfSHF6gYjg) shows the pieces on screen: Fire Cycle on the holster (a Jaivardhan Thigh Rig) and the backpack (an AMP24), Jackpot on the mask, body armor (a Chatzatz Chest with Glass Cannon), gloves and kneepads. The holster, gloves and kneepads carry the same two attributes as in the table below, so the holster at least was Fire Cycle on October 16 too; the backpack changed for that video (see the Meditation II test below). Attribute bonuses as he reads them:
+Four pieces of Jackpot and two of Fire Cycle: Fire Cycle on the **holster** and the **backpack**, Jackpot on the mask, body armor, gloves and kneepads. He doesn't say which slots carry Fire Cycle, but two things settle it. His [October 28 video](https://www.youtube.com/watch?v=AUfSHF6gYjg) shows the pieces on screen (a Fire Cycle Jaivardhan Thigh Rig and AMP24 backpack, and a Jackpot Chatzatz Chest with Glass Cannon), and the game's Build-Making Database leaves no other way to wear these talents. No Fire Cycle body armor can roll Glass Cannon, and no Jackpot backpack can roll Minion Training, so on October 16 the chest was Jackpot too and the backpack was a Fire Cycle AMP24, the only Fire Cycle backpack there is. (Our planner link used to put Fire Cycle on the chest as a placeholder; it now matches.) Attribute bonuses as he reads them:
 
 | Slot | Talent | Attribute bonuses |
 |---|---|---|
@@ -83,7 +83,7 @@ Four pieces of Jackpot and two of Fire Cycle. He doesn't say out loud which two 
 | Slot | Weapon | Talents | Rolls |
 |---|---|---|---|
 | Primary | **Lightweight M4** (Assault Rifle) | **In Sync** + **Revitalize** | Skill Multi-Shot Chance; Engineering attachments with Skill Critical Damage |
-| Secondary | **First Wave Vector** (SMG) | **Torrential Downpour** + **Fully Charged** | Engineering attachments with Skill Intensity and Skill Critical Damage |
+| Secondary | **First Wave Vector** (SMG) | **Torrential Downpour** + **Fully Charged** (see the recalibration note under What Season 2 Changed That Matters) | Engineering attachments with Skill Intensity and Skill Critical Damage |
 
 What the talents do (base versions):
 
@@ -234,7 +234,7 @@ Going by the official notes, neither Season 2 patch changed Jackpot, Fire Cycle,
 - **Weapon mods (Season 2 Phase 1):** Ubisoft reworked weapon mods "to make the primary stat more important, increase the diversity of the pool and move away from flat bonuses which were more impactful for high RPM weapons than low RPM weapons." Main stats went up 100% (more Engineering per attachment), attribute bonuses went down 25%, and Skill Intensity % and Skill Critical Damage % joined the bonus pool for new mods. Those are exactly the bonus rolls on GGReborn's attachments.
 - **Gear mods (Season 2 Phase 1):** Skill Critical Chance, Skill Critical Damage, Skill Multi-Shot Chance and Skill Intensity (plus Armor %, Max Health % and more) joined the gear mod bonus pool, which is what lets both creators stack skill stats on their mods.
 - **Weapon rolls (Season 2 Phase 1):** damage-type Skill Damage bonuses (Blast, Shredding, Piercing) left the weapon attribute pool in favor of All Skill Damage.
-- **Recalibration (Season 2 Phase 1):** Ubisoft fixed a few weapons, the First Wave Vector 45 ACP among them, getting talents from the wrong pool on recalibration. Worth knowing before you spend materials chasing Torrential Downpour and Fully Charged.
+- **Recalibration (Season 2 Phase 1):** Ubisoft fixed a few weapons, the First Wave Vector 45 ACP among them, getting talents from the wrong pool on recalibration. That matters for this exact gun. The game's Build-Making Database (talent Source lists recorded October 29, 2026) doesn't list Fully Charged for any Vector, so GGReborn's copy most likely got it before the fix, and a First Wave Vector you farm now can't. If you want Torrential Downpour and Fully Charged on one SMG today, the database puts both on the P90 and the [AUG A3 Para XS](/database/weapons/aug-a3-para-xs/) (both T1).
 - **Farming (Season 2 Phase 2):** Dark Zone daily quests now reward Skill Mods, Hostile Nest quests reward Weapon and Gear Mods, and Hostile Nests hand out more Weapon and Gear Mods in general. Details in our [Season 2 Phase 2 patch notes](/patch-notes/season-2-phase-2/) and [Season 2 Phase 1 patch notes](/patch-notes/season-2-phase-1-the-call/).
 
 ---

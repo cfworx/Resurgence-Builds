@@ -3,8 +3,8 @@ title: "Patch 1.2.1: Bug Fixes, Milkshake & Phase 3"
 publishDate: "2026-05-20"
 updatedDate: 2026-10-24
 author: "RapidF5"
-featuredImage: "/images/patch-notes/division-resurgence-patch-1-2-1-notes-hero.webp"
-imageAlt: "A Division agent with a Strawberry Milkshake LMG under a giant strawberry milkshake Patch Notes sign in snowy Hudson Yards"
+featuredImage: "/images/news/division-resurgence-patch-1-2-1-news-strawberry-milkshake-1200.webp"
+imageAlt: "The Strawberry Milkshake exotic's card in The Division Resurgence Build-Making Database, with its mod slots, six TAM slots and the line You will suffer as we suffered"
 description: "Patch 1.2.1 is live with vendor and inventory fixes. 500K Credits incoming. Ubisoft is looking into the Strawberry Milkshake's perks."
 tags: ["News", "Patch Notes", "Season 1", "Phase 2", "Strawberry Milkshake", "Dark Zone", "Roadmap"]
 shareTitle: "Spread the news"

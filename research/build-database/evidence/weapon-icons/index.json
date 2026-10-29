@@ -1,0 +1,862 @@
+{
+ "1886": {
+  "class": "Rifle",
+  "tier": "T0",
+  "siteId": "sw-83",
+  "files": {
+   "High-End": "1886-high-end.webp",
+   "Superior": "1886-superior.webp",
+   "Specialized": "1886-specialized.webp"
+  }
+ },
+ "ACE 52": {
+  "class": "Rifle",
+  "tier": "T2",
+  "siteId": "sw-88",
+  "files": {
+   "High-End": "ace-52-high-end.webp",
+   "Superior": "ace-52-superior.webp",
+   "Specialized": "ace-52-specialized.webp"
+  }
+ },
+ "ACR": {
+  "class": "Assault Rifle",
+  "tier": "T0",
+  "siteId": "sw-3",
+  "files": {
+   "High-End": "acr-high-end.webp",
+   "Superior": "acr-superior.webp",
+   "Specialized": "acr-specialized.webp"
+  }
+ },
+ "ACS-12": {
+  "class": "Shotgun",
+  "tier": "T0",
+  "siteId": "sw-65",
+  "files": {
+   "High-End": "acs-12-high-end.webp",
+   "Superior": "acs-12-superior.webp",
+   "Specialized": "acs-12-specialized.webp"
+  }
+ },
+ "AN-94": {
+  "class": "Assault Rifle",
+  "tier": "T1",
+  "siteId": "sw-4",
+  "files": {
+   "High-End": "an-94-high-end.webp",
+   "Superior": "an-94-superior.webp",
+   "Specialized": "an-94-specialized.webp"
+  }
+ },
+ "AUG A3 Para XS": {
+  "class": "SMG",
+  "tier": "T1",
+  "siteId": "sw-10",
+  "files": {
+   "High-End": "aug-a3-para-xs-high-end.webp",
+   "Superior": "aug-a3-para-xs-superior.webp",
+   "Specialized": "aug-a3-para-xs-specialized.webp"
+  }
+ },
+ "Avtomat": {
+  "class": "Rifle",
+  "tier": "T1",
+  "siteId": "sw-85",
+  "files": {
+   "High-End": "avtomat-high-end.webp",
+   "Superior": "avtomat-superior.webp",
+   "Specialized": "avtomat-specialized.webp"
+  }
+ },
+ "Black Market AK-74": {
+  "class": "Assault Rifle",
+  "tier": "T2",
+  "siteId": "sw-8",
+  "files": {
+   "High-End": "black-market-ak-74-high-end.webp",
+   "Superior": "black-market-ak-74-superior.webp",
+   "Specialized": "black-market-ak-74-specialized.webp"
+  }
+ },
+ "Black Market M60 E6": {
+  "class": "LMG",
+  "tier": "T1",
+  "siteId": "sw-58",
+  "files": {
+   "High-End": "black-market-m60-e6-high-end.webp",
+   "Superior": "black-market-m60-e6-superior.webp",
+   "Specialized": "black-market-m60-e6-specialized.webp"
+  }
+ },
+ "Black Market RPK-74 E": {
+  "class": "LMG",
+  "tier": "T1",
+  "siteId": "sw-17",
+  "files": {
+   "High-End": "black-market-rpk-74-e-high-end.webp",
+   "Superior": "black-market-rpk-74-e-superior.webp",
+   "Specialized": "black-market-rpk-74-e-specialized.webp"
+  }
+ },
+ "Classic AK-47": {
+  "class": "Assault Rifle",
+  "tier": "T0",
+  "siteId": "sw-1",
+  "files": {
+   "High-End": "classic-ak-47-high-end.webp",
+   "Superior": "classic-ak-47-superior.webp",
+   "Specialized": "classic-ak-47-specialized.webp"
+  }
+ },
+ "Classic FAL": {
+  "class": "Assault Rifle",
+  "tier": "T0",
+  "siteId": "sw-35",
+  "files": {
+   "High-End": "classic-fal-high-end.webp",
+   "Superior": "classic-fal-superior.webp",
+   "Specialized": "classic-fal-specialized.webp"
+  }
+ },
+ "Classic M1A": {
+  "class": "Rifle",
+  "tier": "T0",
+  "siteId": "sw-30",
+  "files": {
+   "High-End": "classic-m1a-high-end.webp",
+   "Superior": "classic-m1a-superior.webp",
+   "Specialized": "classic-m1a-specialized.webp"
+  }
+ },
+ "Classic M44": {
+  "class": "Marksman Rifle",
+  "tier": "T0",
+  "siteId": "sw-73",
+  "files": {
+   "High-End": "classic-m44-high-end.webp",
+   "Superior": "classic-m44-superior.webp",
+   "Specialized": "classic-m44-specialized.webp"
+  }
+ },
+ "Classic M60": {
+  "class": "LMG",
+  "tier": "T0",
+  "siteId": "sw-15",
+  "files": {
+   "High-End": "classic-m60-high-end.webp",
+   "Superior": "classic-m60-superior.webp",
+   "Specialized": "classic-m60-specialized.webp"
+  }
+ },
+ "Classic RPK 74": {
+  "class": "LMG",
+  "tier": "T0",
+  "siteId": "sw-53",
+  "files": {
+   "High-End": "classic-rpk-74-high-end.webp",
+   "Superior": "classic-rpk-74-superior.webp",
+   "Specialized": "classic-rpk-74-specialized.webp"
+  }
+ },
+ "Converted SMG-9": {
+  "class": "SMG",
+  "tier": "T0",
+  "siteId": "sw-42",
+  "files": {
+   "High-End": "converted-smg-9-high-end.webp",
+   "Superior": "converted-smg-9-superior.webp",
+   "Specialized": "converted-smg-9-specialized.webp"
+  }
+ },
+ "Converted SMG-9 A2": {
+  "class": "SMG",
+  "tier": "T1",
+  "siteId": "sw-47",
+  "files": {
+   "High-End": "converted-smg-9-a2-high-end.webp",
+   "Superior": "converted-smg-9-a2-superior.webp",
+   "Specialized": "converted-smg-9-a2-specialized.webp"
+  }
+ },
+ "Converted SRS": {
+  "class": "Marksman Rifle",
+  "tier": "T1",
+  "siteId": "sw-76",
+  "files": {
+   "High-End": "converted-srs-high-end.webp",
+   "Superior": "converted-srs-superior.webp",
+   "Specialized": "converted-srs-specialized.webp"
+  }
+ },
+ "Copperhead": {
+  "class": "SMG",
+  "tier": "T1",
+  "siteId": "sw-48",
+  "files": {
+   "High-End": "copperhead-high-end.webp",
+   "Superior": "copperhead-superior.webp",
+   "Specialized": "copperhead-specialized.webp"
+  }
+ },
+ "Custom 416 G3": {
+  "class": "Assault Rifle",
+  "tier": "T2",
+  "siteId": "sw-39",
+  "files": {
+   "High-End": "custom-416-g3-high-end.webp",
+   "Superior": "custom-416-g3-superior.webp",
+   "Specialized": "custom-416-g3-specialized.webp"
+  }
+ },
+ "DSR-1": {
+  "class": "Marksman Rifle",
+  "tier": "T2",
+  "siteId": "sw-26",
+  "files": {
+   "High-End": "dsr-1-high-end.webp",
+   "Superior": "dsr-1-superior.webp",
+   "Specialized": "dsr-1-specialized.webp"
+  }
+ },
+ "Double Barrel Shotgun": {
+  "class": "Shotgun",
+  "tier": "T2",
+  "siteId": "sw-22",
+  "files": {
+   "High-End": "double-barrel-shotgun-high-end.webp",
+   "Superior": "double-barrel-shotgun-superior.webp",
+   "Specialized": "double-barrel-shotgun-specialized.webp"
+  }
+ },
+ "Enhanced ACR-E": {
+  "class": "Assault Rifle",
+  "tier": "T1",
+  "siteId": "sw-38",
+  "files": {
+   "High-End": "enhanced-acr-e-high-end.webp",
+   "Superior": "enhanced-acr-e-superior.webp",
+   "Specialized": "enhanced-acr-e-specialized.webp"
+  }
+ },
+ "Enhanced AUG A3P": {
+  "class": "SMG",
+  "tier": "T2",
+  "siteId": "sw-49",
+  "files": {
+   "High-End": "enhanced-aug-a3p-high-end.webp",
+   "Superior": "enhanced-aug-a3p-superior.webp",
+   "Specialized": "enhanced-aug-a3p-specialized.webp"
+  }
+ },
+ "FAMAS": {
+  "class": "Assault Rifle",
+  "tier": "T2",
+  "siteId": "sw-6",
+  "files": {
+   "High-End": "famas-high-end.webp",
+   "Superior": "famas-superior.webp",
+   "Specialized": "famas-specialized.webp"
+  }
+ },
+ "FG 42": {
+  "class": "Rifle",
+  "tier": "T2",
+  "siteId": "sw-90",
+  "files": {
+   "High-End": "fg-42-high-end.webp",
+   "Superior": "fg-42-superior.webp",
+   "Specialized": "fg-42-specialized.webp"
+  }
+ },
+ "First Wave Vector 45 ACP": {
+  "class": "SMG",
+  "tier": "T2",
+  "siteId": "sw-50",
+  "files": {
+   "High-End": "first-wave-vector-45-acp-high-end.webp",
+   "Superior": "first-wave-vector-45-acp-superior.webp",
+   "Specialized": "first-wave-vector-45-acp-specialized.webp"
+  }
+ },
+ "G28": {
+  "class": "Marksman Rifle",
+  "tier": "T1",
+  "siteId": "sw-75",
+  "files": {
+   "High-End": "g28-high-end.webp",
+   "Superior": "g28-superior.webp",
+   "Specialized": "g28-specialized.webp"
+  }
+ },
+ "G3": {
+  "class": "Rifle",
+  "tier": "T1",
+  "siteId": "sw-86",
+  "files": {
+   "High-End": "g3-high-end.webp",
+   "Superior": "g3-superior.webp",
+   "Specialized": "g3-specialized.webp"
+  }
+ },
+ "G36-C": {
+  "class": "Assault Rifle",
+  "tier": "T0",
+  "siteId": "sw-5",
+  "files": {
+   "High-End": "g36-c-high-end.webp",
+   "Superior": "g36-c-superior.webp",
+   "Specialized": "g36-c-specialized.webp"
+  }
+ },
+ "Gewehr 43": {
+  "class": "Rifle",
+  "tier": "T0",
+  "siteId": "sw-82",
+  "files": {
+   "High-End": "gewehr-43-high-end.webp",
+   "Superior": "gewehr-43-superior.webp",
+   "Specialized": "gewehr-43-specialized.webp"
+  }
+ },
+ "Hunting M44": {
+  "class": "Marksman Rifle",
+  "tier": "T2",
+  "siteId": "sw-29",
+  "files": {
+   "High-End": "hunting-m44-high-end.webp",
+   "Superior": "hunting-m44-superior.webp",
+   "Specialized": "hunting-m44-specialized.webp"
+  }
+ },
+ "KSG": {
+  "class": "Shotgun",
+  "tier": "T1",
+  "siteId": "sw-23",
+  "files": {
+   "High-End": "ksg-high-end.webp",
+   "Superior": "ksg-superior.webp",
+   "Specialized": "ksg-specialized.webp"
+  }
+ },
+ "L115A3": {
+  "class": "Marksman Rifle",
+  "tier": "T1",
+  "siteId": "sw-77",
+  "files": {
+   "High-End": "l115a3-high-end.webp",
+   "Superior": "l115a3-superior.webp",
+   "Specialized": "l115a3-specialized.webp"
+  }
+ },
+ "Lewis Gun": {
+  "class": "LMG",
+  "tier": "T0",
+  "siteId": "sw-54",
+  "files": {
+   "High-End": "lewis-gun-high-end.webp",
+   "Superior": "lewis-gun-superior.webp",
+   "Specialized": "lewis-gun-specialized.webp"
+  }
+ },
+ "Lightweight M4": {
+  "class": "Assault Rifle",
+  "tier": "T2",
+  "siteId": "sw-41",
+  "files": {
+   "High-End": "lightweight-m4-high-end.webp",
+   "Superior": "lightweight-m4-superior.webp",
+   "Specialized": "lightweight-m4-specialized.webp"
+  }
+ },
+ "M-16": {
+  "class": "Rifle",
+  "tier": "T1",
+  "siteId": "sw-84",
+  "files": {
+   "High-End": "m-16-high-end.webp",
+   "Superior": "m-16-superior.webp",
+   "Specialized": "m-16-specialized.webp"
+  }
+ },
+ "M1 (military designation)": {
+  "class": "Rifle",
+  "tier": "T2",
+  "siteId": "sw-89",
+  "files": {
+   "High-End": "m1-military-designation-high-end.webp",
+   "Superior": "m1-military-designation-superior.webp",
+   "Specialized": "m1-military-designation-specialized.webp"
+  }
+ },
+ "M12": {
+  "class": "Shotgun",
+  "tier": "T2",
+  "siteId": "sw-69",
+  "files": {
+   "High-End": "m12-high-end.webp",
+   "Superior": "m12-superior.webp",
+   "Specialized": "m12-specialized.webp"
+  }
+ },
+ "M249": {
+  "class": "LMG",
+  "tier": "T2",
+  "siteId": "sw-61",
+  "files": {
+   "High-End": "m249-high-end.webp",
+   "Superior": "m249-superior.webp",
+   "Specialized": "m249-specialized.webp"
+  }
+ },
+ "M700": {
+  "class": "Marksman Rifle",
+  "tier": "T0",
+  "siteId": "sw-27",
+  "files": {
+   "High-End": "m700-high-end.webp",
+   "Superior": "m700-superior.webp",
+   "Specialized": "m700-specialized.webp"
+  }
+ },
+ "M700 Carbon": {
+  "class": "Marksman Rifle",
+  "tier": "T2",
+  "siteId": "sw-78",
+  "files": {
+   "High-End": "m700-carbon-high-end.webp",
+   "Superior": "m700-carbon-superior.webp",
+   "Specialized": "m700-carbon-specialized.webp"
+  }
+ },
+ "M870": {
+  "class": "Shotgun",
+  "tier": "T0",
+  "siteId": "sw-20",
+  "files": {
+   "High-End": "m870-high-end.webp",
+   "Superior": "m870-superior.webp",
+   "Specialized": "m870-specialized.webp"
+  }
+ },
+ "M8A1": {
+  "class": "Assault Rifle",
+  "tier": "T1",
+  "siteId": "sw-36",
+  "files": {
+   "High-End": "m8a1-high-end.webp",
+   "Superior": "m8a1-superior.webp",
+   "Specialized": "m8a1-specialized.webp"
+  }
+ },
+ "MG5": {
+  "class": "LMG",
+  "tier": "T0",
+  "siteId": "sw-16",
+  "files": {
+   "High-End": "mg5-high-end.webp",
+   "Superior": "mg5-superior.webp",
+   "Specialized": "mg5-specialized.webp"
+  }
+ },
+ "MK 20 SSR": {
+  "class": "Marksman Rifle",
+  "tier": "T0",
+  "siteId": "sw-72",
+  "files": {
+   "High-End": "mk-20-ssr-high-end.webp",
+   "Superior": "mk-20-ssr-superior.webp",
+   "Specialized": "mk-20-ssr-specialized.webp"
+  }
+ },
+ "MP40": {
+  "class": "SMG",
+  "tier": "T1",
+  "siteId": "sw-46",
+  "files": {
+   "High-End": "mp40-high-end.webp",
+   "Superior": "mp40-superior.webp",
+   "Specialized": "mp40-specialized.webp"
+  }
+ },
+ "MP7": {
+  "class": "SMG",
+  "tier": "T2",
+  "siteId": "sw-52",
+  "files": {
+   "High-End": "mp7-high-end.webp",
+   "Superior": "mp7-superior.webp",
+   "Specialized": "mp7-specialized.webp"
+  }
+ },
+ "MPX": {
+  "class": "SMG",
+  "tier": "T0",
+  "siteId": "sw-44",
+  "files": {
+   "High-End": "mpx-high-end.webp",
+   "Superior": "mpx-superior.webp",
+   "Specialized": "mpx-specialized.webp"
+  }
+ },
+ "Military 416": {
+  "class": "Assault Rifle",
+  "tier": "T0",
+  "siteId": "sw-7",
+  "files": {
+   "High-End": "military-416-high-end.webp",
+   "Superior": "military-416-superior.webp",
+   "Specialized": "military-416-specialized.webp"
+  }
+ },
+ "Military L86 LSW": {
+  "class": "LMG",
+  "tier": "T0",
+  "siteId": "sw-18",
+  "files": {
+   "Superior": "military-l86-lsw-superior.webp",
+   "Specialized": "military-l86-lsw-specialized.webp",
+   "High-End": "military-l86-lsw-high-end.webp"
+  }
+ },
+ "Military M60 E4": {
+  "class": "LMG",
+  "tier": "T2",
+  "siteId": "sw-62",
+  "files": {
+   "High-End": "military-m60-e4-high-end.webp",
+   "Superior": "military-m60-e4-superior.webp",
+   "Specialized": "military-m60-e4-specialized.webp"
+  }
+ },
+ "Military MK46": {
+  "class": "LMG",
+  "tier": "T2",
+  "siteId": "sw-63",
+  "files": {
+   "High-End": "military-mk46-high-end.webp",
+   "Superior": "military-mk46-superior.webp",
+   "Specialized": "military-mk46-specialized.webp"
+  }
+ },
+ "Military SA-58": {
+  "class": "Assault Rifle",
+  "tier": "T2",
+  "siteId": "sw-40",
+  "files": {
+   "High-End": "military-sa-58-high-end.webp",
+   "Superior": "military-sa-58-superior.webp",
+   "Specialized": "military-sa-58-specialized.webp"
+  }
+ },
+ "Mk16": {
+  "class": "Assault Rifle",
+  "tier": "T0",
+  "siteId": "sw-33",
+  "files": {
+   "High-End": "mk16-high-end.webp",
+   "Superior": "mk16-superior.webp",
+   "Specialized": "mk16-specialized.webp"
+  }
+ },
+ "Modified USC": {
+  "class": "SMG",
+  "tier": "T2",
+  "siteId": "sw-51",
+  "files": {
+   "High-End": "modified-usc-high-end.webp",
+   "Superior": "modified-usc-superior.webp",
+   "Specialized": "modified-usc-specialized.webp"
+  }
+ },
+ "NEGEV": {
+  "class": "LMG",
+  "tier": "T1",
+  "siteId": "sw-57",
+  "files": {
+   "High-End": "negev-high-end.webp",
+   "Superior": "negev-superior.webp",
+   "Specialized": "negev-specialized.webp"
+  }
+ },
+ "Naval MP5": {
+  "class": "SMG",
+  "tier": "T0",
+  "siteId": "sw-12",
+  "files": {
+   "High-End": "naval-mp5-high-end.webp",
+   "Superior": "naval-mp5-superior.webp",
+   "Specialized": "naval-mp5-specialized.webp"
+  }
+ },
+ "P90": {
+  "class": "SMG",
+  "tier": "T1",
+  "siteId": "sw-45",
+  "files": {
+   "High-End": "p90-high-end.webp",
+   "Superior": "p90-superior.webp",
+   "Specialized": "p90-specialized.webp"
+  }
+ },
+ "PKM": {
+  "class": "LMG",
+  "tier": "T2",
+  "siteId": "sw-60",
+  "files": {
+   "High-End": "pkm-high-end.webp",
+   "Superior": "pkm-superior.webp",
+   "Specialized": "pkm-specialized.webp"
+  }
+ },
+ "PP-19": {
+  "class": "SMG",
+  "tier": "T0",
+  "siteId": "sw-43",
+  "files": {
+   "High-End": "pp-19-high-end.webp",
+   "Superior": "pp-19-superior.webp",
+   "Specialized": "pp-19-specialized.webp"
+  }
+ },
+ "PPSH-41": {
+  "class": "SMG",
+  "tier": "T2",
+  "siteId": "sw-13",
+  "files": {
+   "High-End": "ppsh-41-high-end.webp",
+   "Superior": "ppsh-41-superior.webp",
+   "Specialized": "ppsh-41-specialized.webp"
+  }
+ },
+ "Paratrooper SVD": {
+  "class": "Marksman Rifle",
+  "tier": "T1",
+  "siteId": "sw-79",
+  "files": {
+   "High-End": "paratrooper-svd-high-end.webp",
+   "Superior": "paratrooper-svd-superior.webp",
+   "Specialized": "paratrooper-svd-specialized.webp"
+  }
+ },
+ "Police M4": {
+  "class": "Assault Rifle",
+  "tier": "T1",
+  "siteId": "sw-2",
+  "files": {
+   "High-End": "police-m4-high-end.webp",
+   "Superior": "police-m4-superior.webp",
+   "Specialized": "police-m4-specialized.webp"
+  }
+ },
+ "Police Mk17": {
+  "class": "Rifle",
+  "tier": "T0",
+  "siteId": "sw-81",
+  "files": {
+   "High-End": "police-mk17-high-end.webp",
+   "Superior": "police-mk17-superior.webp",
+   "Specialized": "police-mk17-specialized.webp"
+  }
+ },
+ "Police T821": {
+  "class": "SMG",
+  "tier": "T0",
+  "siteId": "sw-14",
+  "files": {
+   "High-End": "police-t821-high-end.webp",
+   "Superior": "police-t821-superior.webp",
+   "Specialized": "police-t821-specialized.webp"
+  }
+ },
+ "Police UMP-45": {
+  "class": "SMG",
+  "tier": "T1",
+  "siteId": "sw-9",
+  "files": {
+   "High-End": "police-ump-45-high-end.webp",
+   "Superior": "police-ump-45-superior.webp",
+   "Specialized": "police-ump-45-specialized.webp"
+  }
+ },
+ "RMB-93": {
+  "class": "Shotgun",
+  "tier": "T2",
+  "siteId": "sw-71",
+  "files": {
+   "High-End": "rmb-93-high-end.webp",
+   "Superior": "rmb-93-superior.webp",
+   "Specialized": "rmb-93-specialized.webp"
+  }
+ },
+ "RPD": {
+  "class": "LMG",
+  "tier": "T1",
+  "siteId": "sw-56",
+  "files": {
+   "High-End": "rpd-high-end.webp",
+   "Superior": "rpd-superior.webp",
+   "Specialized": "rpd-specialized.webp"
+  }
+ },
+ "RU12SG": {
+  "class": "Shotgun",
+  "tier": "T1",
+  "siteId": "sw-68",
+  "files": {
+   "High-End": "ru12sg-high-end.webp",
+   "Superior": "ru12sg-superior.webp",
+   "Specialized": "ru12sg-specialized.webp"
+  }
+ },
+ "SASG-12": {
+  "class": "Shotgun",
+  "tier": "T0",
+  "siteId": "sw-21",
+  "files": {
+   "High-End": "sasg-12-high-end.webp",
+   "Superior": "sasg-12-superior.webp",
+   "Specialized": "sasg-12-specialized.webp"
+  }
+ },
+ "SG16 \u2013 12G": {
+  "class": "Shotgun",
+  "tier": "T2",
+  "siteId": "sw-70",
+  "files": {
+   "High-End": "sg16-12g-high-end.webp",
+   "Superior": "sg16-12g-superior.webp",
+   "Specialized": "sg16-12g-specialized.webp"
+  }
+ },
+ "SPAS-12": {
+  "class": "Shotgun",
+  "tier": "T1",
+  "siteId": "sw-67",
+  "files": {
+   "High-End": "spas-12-high-end.webp",
+   "Superior": "spas-12-superior.webp",
+   "Specialized": "spas-12-specialized.webp"
+  }
+ },
+ "SRS-A1": {
+  "class": "Marksman Rifle",
+  "tier": "T0",
+  "siteId": "sw-25",
+  "files": {
+   "High-End": "srs-a1-high-end.webp",
+   "Superior": "srs-a1-superior.webp",
+   "Specialized": "srs-a1-specialized.webp"
+  }
+ },
+ "StG 44": {
+  "class": "Assault Rifle",
+  "tier": "T1",
+  "siteId": "sw-34",
+  "files": {
+   "High-End": "stg-44-high-end.webp",
+   "Superior": "stg-44-superior.webp",
+   "Specialized": "stg-44-specialized.webp"
+  }
+ },
+ "Stoner LAMG": {
+  "class": "LMG",
+  "tier": "T2",
+  "siteId": "sw-59",
+  "files": {
+   "High-End": "stoner-lamg-high-end.webp",
+   "Superior": "stoner-lamg-superior.webp",
+   "Specialized": "stoner-lamg-specialized.webp"
+  }
+ },
+ "Super 90": {
+  "class": "Shotgun",
+  "tier": "T0",
+  "siteId": "sw-64",
+  "files": {
+   "High-End": "super-90-high-end.webp",
+   "Superior": "super-90-superior.webp",
+   "Specialized": "super-90-specialized.webp"
+  }
+ },
+ "Surplus SVD": {
+  "class": "Marksman Rifle",
+  "tier": "T2",
+  "siteId": "sw-80",
+  "files": {
+   "High-End": "surplus-svd-high-end.webp",
+   "Superior": "surplus-svd-superior.webp",
+   "Specialized": "surplus-svd-specialized.webp"
+  }
+ },
+ "Tactical .308": {
+  "class": "Marksman Rifle",
+  "tier": "T1",
+  "siteId": "sw-74",
+  "files": {
+   "High-End": "tactical-308-high-end.webp",
+   "Superior": "tactical-308-superior.webp",
+   "Specialized": "tactical-308-specialized.webp"
+  }
+ },
+ "Tavor TS12": {
+  "class": "Shotgun",
+  "tier": "T1",
+  "siteId": "sw-66",
+  "files": {
+   "High-End": "tavor-ts12-high-end.webp",
+   "Superior": "tavor-ts12-superior.webp",
+   "Specialized": "tavor-ts12-specialized.webp"
+  }
+ },
+ "Type 81": {
+  "class": "Assault Rifle",
+  "tier": "T1",
+  "siteId": "sw-37",
+  "files": {
+   "High-End": "type-81-high-end.webp",
+   "Superior": "type-81-superior.webp",
+   "Specialized": "type-81-specialized.webp"
+  }
+ },
+ "UIC15 MOD2": {
+  "class": "Rifle",
+  "tier": "T2",
+  "siteId": "sw-87",
+  "files": {
+   "High-End": "uic15-mod2-high-end.webp",
+   "Superior": "uic15-mod2-superior.webp",
+   "Specialized": "uic15-mod2-specialized.webp"
+  }
+ },
+ "UMAX100": {
+  "class": "LMG",
+  "tier": "T1",
+  "siteId": "sw-55",
+  "files": {
+   "High-End": "umax100-high-end.webp",
+   "Superior": "umax100-superior.webp",
+   "Specialized": "umax100-specialized.webp"
+  }
+ },
+ "Urban MDR": {
+  "class": "Rifle",
+  "tier": "T1",
+  "siteId": "sw-31",
+  "files": {
+   "High-End": "urban-mdr-high-end.webp",
+   "Superior": "urban-mdr-superior.webp",
+   "Specialized": "urban-mdr-specialized.webp"
+  }
+ },
+ "Vector 45 ACP": {
+  "class": "SMG",
+  "tier": "T0",
+  "siteId": "sw-11",
+  "files": {
+   "High-End": "vector-45-acp-high-end.webp",
+   "Superior": "vector-45-acp-superior.webp",
+   "Specialized": "vector-45-acp-specialized.webp"
+  }
+ }
+}

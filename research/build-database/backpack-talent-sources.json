@@ -1,0 +1,2096 @@
+[
+ {
+  "entry": "Simple Pleasures",
+  "slug": "simple-pleasures",
+  "pieceCount": 5,
+  "tileCount": 10,
+  "extraListings": [],
+  "source": {
+   "recording": "2026-10-29_11-42-06.mp4",
+   "seconds": [
+    1.2,
+    3.4
+   ]
+  },
+  "evidence": "evidence/backpack-talents/sources/simple-pleasures.webp",
+  "checked": "2026-10-29",
+  "pieces": [
+   {
+    "name": "All Hazards Nitro Backpack",
+    "slot": "Backpack",
+    "armoryTier": "T2",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 8.0 s"
+   },
+   {
+    "name": "AMP24",
+    "slot": "Backpack",
+    "armoryTier": "T2",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Big Horn Pack",
+    "slot": "Backpack",
+    "armoryTier": "T1",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Element Outdoors Rucksack",
+    "slot": "Backpack",
+    "armoryTier": "T0",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "Screen_Recording_20261029_131044_The_Division_Resurgence.mp4 at 32.3 s"
+   },
+   {
+    "name": "RUSH72 Backpack",
+    "slot": "Backpack",
+    "armoryTier": "T0",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   }
+  ]
+ },
+ {
+  "entry": "Hidden Impact",
+  "slug": "hidden-impact",
+  "pieceCount": 6,
+  "tileCount": 12,
+  "extraListings": [],
+  "source": {
+   "recording": "2026-10-29_11-42-06.mp4",
+   "seconds": [
+    4.2,
+    6.6
+   ]
+  },
+  "evidence": "evidence/backpack-talents/sources/hidden-impact.webp",
+  "checked": "2026-10-29",
+  "pieces": [
+   {
+    "name": "All Hazards Nitro Backpack",
+    "slot": "Backpack",
+    "armoryTier": "T2",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 8.0 s"
+   },
+   {
+    "name": "Roamer Pack \"Sow\"",
+    "slot": "Backpack",
+    "armoryTier": "T2",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Rally Point Secure Pack",
+    "slot": "Backpack",
+    "armoryTier": "T1",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 17.0 s"
+   },
+   {
+    "name": "Big Horn Pack",
+    "slot": "Backpack",
+    "armoryTier": "T1",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Element Outdoors Rucksack",
+    "slot": "Backpack",
+    "armoryTier": "T0",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "Screen_Recording_20261029_131044_The_Division_Resurgence.mp4 at 32.3 s"
+   },
+   {
+    "name": "RUSH72 Backpack",
+    "slot": "Backpack",
+    "armoryTier": "T0",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   }
+  ]
+ },
+ {
+  "entry": "Explosive Fury",
+  "slug": "explosive-fury",
+  "pieceCount": 8,
+  "tileCount": 16,
+  "extraListings": [],
+  "source": {
+   "recording": "2026-10-29_11-42-06.mp4",
+   "seconds": [
+    7.2,
+    11.6
+   ]
+  },
+  "evidence": "evidence/backpack-talents/sources/explosive-fury.webp",
+  "checked": "2026-10-29",
+  "pieces": [
+   {
+    "name": "Mountain Hiking Pack",
+    "slot": "Backpack",
+    "armoryTier": "T2",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "AMP24",
+    "slot": "Backpack",
+    "armoryTier": "T2",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Rally Point Secure Pack",
+    "slot": "Backpack",
+    "armoryTier": "T1",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 17.0 s"
+   },
+   {
+    "name": "\"Horo\" CarryBack",
+    "slot": "Backpack",
+    "armoryTier": "T1",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 150.5 s"
+   },
+   {
+    "name": "Trekking Elite Pack",
+    "slot": "Backpack",
+    "armoryTier": "T0",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 29.0 s"
+   },
+   {
+    "name": "Demeter Quick-Stash",
+    "slot": "Backpack",
+    "armoryTier": "T0",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Element Outdoors Rucksack",
+    "slot": "Backpack",
+    "armoryTier": "T0",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "Screen_Recording_20261029_131044_The_Division_Resurgence.mp4 at 32.3 s"
+   },
+   {
+    "name": "RUSH72 Backpack",
+    "slot": "Backpack",
+    "armoryTier": "T0",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   }
+  ]
+ },
+ {
+  "entry": "Open Fire",
+  "slug": "open-fire",
+  "pieceCount": 6,
+  "tileCount": 12,
+  "extraListings": [],
+  "source": {
+   "recording": "2026-10-29_11-42-06.mp4",
+   "seconds": [
+    12.4,
+    14.2
+   ]
+  },
+  "evidence": "evidence/backpack-talents/sources/open-fire.webp",
+  "checked": "2026-10-29",
+  "pieces": [
+   {
+    "name": "Mountain Hiking Pack",
+    "slot": "Backpack",
+    "armoryTier": "T2",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Roamer Pack \"Sow\"",
+    "slot": "Backpack",
+    "armoryTier": "T2",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Rally Point Secure Pack",
+    "slot": "Backpack",
+    "armoryTier": "T1",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 17.0 s"
+   },
+   {
+    "name": "Big Horn Pack",
+    "slot": "Backpack",
+    "armoryTier": "T1",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Demeter Quick-Stash",
+    "slot": "Backpack",
+    "armoryTier": "T0",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Element Outdoors Rucksack",
+    "slot": "Backpack",
+    "armoryTier": "T0",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "Screen_Recording_20261029_131044_The_Division_Resurgence.mp4 at 32.3 s"
+   }
+  ]
+ },
+ {
+  "entry": "Prime Engineer",
+  "slug": "prime-engineer",
+  "pieceCount": 6,
+  "tileCount": 12,
+  "extraListings": [],
+  "source": {
+   "recording": "2026-10-29_11-42-06.mp4",
+   "seconds": [
+    15.2,
+    17.2
+   ]
+  },
+  "evidence": "evidence/backpack-talents/sources/prime-engineer.webp",
+  "checked": "2026-10-29",
+  "pieces": [
+   {
+    "name": "All Hazards Nitro Backpack",
+    "slot": "Backpack",
+    "armoryTier": "T2",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 8.0 s"
+   },
+   {
+    "name": "AMP24",
+    "slot": "Backpack",
+    "armoryTier": "T2",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Ziba Low Profile Pack",
+    "slot": "Backpack",
+    "armoryTier": "T1",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Big Horn Pack",
+    "slot": "Backpack",
+    "armoryTier": "T1",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "\"Horo\" CarryBack",
+    "slot": "Backpack",
+    "armoryTier": "T1",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 150.5 s"
+   },
+   {
+    "name": "RUSH72 Backpack",
+    "slot": "Backpack",
+    "armoryTier": "T0",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   }
+  ]
+ },
+ {
+  "entry": "Overwatch",
+  "slug": "overwatch",
+  "pieceCount": 5,
+  "tileCount": 10,
+  "extraListings": [],
+  "source": {
+   "recording": "2026-10-29_11-42-06.mp4",
+   "seconds": [
+    18.0,
+    20.4
+   ]
+  },
+  "evidence": "evidence/backpack-talents/sources/overwatch.webp",
+  "checked": "2026-10-29",
+  "pieces": [
+   {
+    "name": "All Hazards Nitro Backpack",
+    "slot": "Backpack",
+    "armoryTier": "T2",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 8.0 s"
+   },
+   {
+    "name": "Roamer Pack \"Sow\"",
+    "slot": "Backpack",
+    "armoryTier": "T2",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Ziba Low Profile Pack",
+    "slot": "Backpack",
+    "armoryTier": "T1",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Big Horn Pack",
+    "slot": "Backpack",
+    "armoryTier": "T1",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "RUSH72 Backpack",
+    "slot": "Backpack",
+    "armoryTier": "T0",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   }
+  ]
+ },
+ {
+  "entry": "Minion Training",
+  "slug": "minion-training",
+  "pieceCount": 4,
+  "tileCount": 8,
+  "extraListings": [],
+  "source": {
+   "recording": "2026-10-29_11-42-06.mp4",
+   "seconds": [
+    21.4,
+    23.6
+   ]
+  },
+  "evidence": "evidence/backpack-talents/sources/minion-training.webp",
+  "checked": "2026-10-29",
+  "pieces": [
+   {
+    "name": "Roamer Pack \"Sow\"",
+    "slot": "Backpack",
+    "armoryTier": "T2",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "AMP24",
+    "slot": "Backpack",
+    "armoryTier": "T2",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Rally Point Secure Pack",
+    "slot": "Backpack",
+    "armoryTier": "T1",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 17.0 s"
+   },
+   {
+    "name": "Trekking Elite Pack",
+    "slot": "Backpack",
+    "armoryTier": "T0",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 29.0 s"
+   }
+  ]
+ },
+ {
+  "entry": "Explosive Burst",
+  "slug": "explosive-burst",
+  "pieceCount": 6,
+  "tileCount": 12,
+  "extraListings": [],
+  "source": {
+   "recording": "2026-10-29_11-42-06.mp4",
+   "seconds": [
+    24.8,
+    27.4
+   ]
+  },
+  "evidence": "evidence/backpack-talents/sources/explosive-burst.webp",
+  "checked": "2026-10-29",
+  "pieces": [
+   {
+    "name": "Mountain Hiking Pack",
+    "slot": "Backpack",
+    "armoryTier": "T2",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Roamer Pack \"Sow\"",
+    "slot": "Backpack",
+    "armoryTier": "T2",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Ziba Low Profile Pack",
+    "slot": "Backpack",
+    "armoryTier": "T1",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Big Horn Pack",
+    "slot": "Backpack",
+    "armoryTier": "T1",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "\"Horo\" CarryBack",
+    "slot": "Backpack",
+    "armoryTier": "T1",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 150.5 s"
+   },
+   {
+    "name": "Element Outdoors Rucksack",
+    "slot": "Backpack",
+    "armoryTier": "T0",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "Screen_Recording_20261029_131044_The_Division_Resurgence.mp4 at 32.3 s"
+   }
+  ]
+ },
+ {
+  "entry": "Combat Inspiration",
+  "slug": "combat-inspiration",
+  "pieceCount": 5,
+  "tileCount": 10,
+  "extraListings": [],
+  "source": {
+   "recording": "2026-10-29_11-42-06.mp4",
+   "seconds": [
+    29.4,
+    31.8
+   ]
+  },
+  "evidence": "evidence/backpack-talents/sources/combat-inspiration.webp",
+  "checked": "2026-10-29",
+  "pieces": [
+   {
+    "name": "All Hazards Nitro Backpack",
+    "slot": "Backpack",
+    "armoryTier": "T2",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 8.0 s"
+   },
+   {
+    "name": "AMP24",
+    "slot": "Backpack",
+    "armoryTier": "T2",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Ziba Low Profile Pack",
+    "slot": "Backpack",
+    "armoryTier": "T1",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Demeter Quick-Stash",
+    "slot": "Backpack",
+    "armoryTier": "T0",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "RUSH72 Backpack",
+    "slot": "Backpack",
+    "armoryTier": "T0",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   }
+  ]
+ },
+ {
+  "entry": "Street Fighter",
+  "slug": "street-fighter",
+  "pieceCount": 5,
+  "tileCount": 10,
+  "extraListings": [],
+  "source": {
+   "recording": "2026-10-29_11-42-06.mp4",
+   "seconds": [
+    32.6,
+    34.8
+   ]
+  },
+  "evidence": "evidence/backpack-talents/sources/street-fighter.webp",
+  "checked": "2026-10-29",
+  "pieces": [
+   {
+    "name": "Mountain Hiking Pack",
+    "slot": "Backpack",
+    "armoryTier": "T2",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "AMP24",
+    "slot": "Backpack",
+    "armoryTier": "T2",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Ziba Low Profile Pack",
+    "slot": "Backpack",
+    "armoryTier": "T1",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "\"Horo\" CarryBack",
+    "slot": "Backpack",
+    "armoryTier": "T1",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 150.5 s"
+   },
+   {
+    "name": "Trekking Elite Pack",
+    "slot": "Backpack",
+    "armoryTier": "T0",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 29.0 s"
+   }
+  ]
+ },
+ {
+  "entry": "Rock Solid",
+  "slug": "rock-solid",
+  "pieceCount": 5,
+  "tileCount": 10,
+  "extraListings": [],
+  "source": {
+   "recording": "2026-10-29_11-42-06.mp4",
+   "seconds": [
+    35.8,
+    37.6
+   ]
+  },
+  "evidence": "evidence/backpack-talents/sources/rock-solid.webp",
+  "checked": "2026-10-29",
+  "pieces": [
+   {
+    "name": "Mountain Hiking Pack",
+    "slot": "Backpack",
+    "armoryTier": "T2",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Roamer Pack \"Sow\"",
+    "slot": "Backpack",
+    "armoryTier": "T2",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Rally Point Secure Pack",
+    "slot": "Backpack",
+    "armoryTier": "T1",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 17.0 s"
+   },
+   {
+    "name": "Big Horn Pack",
+    "slot": "Backpack",
+    "armoryTier": "T1",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Trekking Elite Pack",
+    "slot": "Backpack",
+    "armoryTier": "T0",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 29.0 s"
+   }
+  ]
+ },
+ {
+  "entry": "Emergency Measures",
+  "slug": "emergency-measures",
+  "pieceCount": 7,
+  "tileCount": 14,
+  "extraListings": [],
+  "source": {
+   "recording": "2026-10-29_11-42-06.mp4",
+   "seconds": [
+    38.4,
+    41.4
+   ]
+  },
+  "evidence": "evidence/backpack-talents/sources/emergency-measures.webp",
+  "checked": "2026-10-29",
+  "pieces": [
+   {
+    "name": "All Hazards Nitro Backpack",
+    "slot": "Backpack",
+    "armoryTier": "T2",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 8.0 s"
+   },
+   {
+    "name": "Roamer Pack \"Sow\"",
+    "slot": "Backpack",
+    "armoryTier": "T2",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "AMP24",
+    "slot": "Backpack",
+    "armoryTier": "T2",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Rally Point Secure Pack",
+    "slot": "Backpack",
+    "armoryTier": "T1",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 17.0 s"
+   },
+   {
+    "name": "Big Horn Pack",
+    "slot": "Backpack",
+    "armoryTier": "T1",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Trekking Elite Pack",
+    "slot": "Backpack",
+    "armoryTier": "T0",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 29.0 s"
+   },
+   {
+    "name": "Element Outdoors Rucksack",
+    "slot": "Backpack",
+    "armoryTier": "T0",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "Screen_Recording_20261029_131044_The_Division_Resurgence.mp4 at 32.3 s"
+   }
+  ]
+ },
+ {
+  "entry": "Meditation",
+  "slug": "meditation",
+  "pieceCount": 6,
+  "tileCount": 12,
+  "extraListings": [],
+  "source": {
+   "recording": "2026-10-29_11-42-06.mp4",
+   "seconds": [
+    42.6,
+    45.0
+   ]
+  },
+  "evidence": "evidence/backpack-talents/sources/meditation.webp",
+  "checked": "2026-10-29",
+  "pieces": [
+   {
+    "name": "Mountain Hiking Pack",
+    "slot": "Backpack",
+    "armoryTier": "T2",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "AMP24",
+    "slot": "Backpack",
+    "armoryTier": "T2",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Rally Point Secure Pack",
+    "slot": "Backpack",
+    "armoryTier": "T1",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 17.0 s"
+   },
+   {
+    "name": "\"Horo\" CarryBack",
+    "slot": "Backpack",
+    "armoryTier": "T1",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 150.5 s"
+   },
+   {
+    "name": "Trekking Elite Pack",
+    "slot": "Backpack",
+    "armoryTier": "T0",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 29.0 s"
+   },
+   {
+    "name": "Demeter Quick-Stash",
+    "slot": "Backpack",
+    "armoryTier": "T0",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   }
+  ]
+ },
+ {
+  "entry": "Unstoppable",
+  "slug": "unstoppable",
+  "pieceCount": 8,
+  "tileCount": 16,
+  "extraListings": [],
+  "source": {
+   "recording": "2026-10-29_11-42-06.mp4",
+   "seconds": [
+    45.8,
+    50.0
+   ]
+  },
+  "evidence": "evidence/backpack-talents/sources/unstoppable.webp",
+  "checked": "2026-10-29",
+  "pieces": [
+   {
+    "name": "Mountain Hiking Pack",
+    "slot": "Backpack",
+    "armoryTier": "T2",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Roamer Pack \"Sow\"",
+    "slot": "Backpack",
+    "armoryTier": "T2",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Rally Point Secure Pack",
+    "slot": "Backpack",
+    "armoryTier": "T1",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 17.0 s"
+   },
+   {
+    "name": "Ziba Low Profile Pack",
+    "slot": "Backpack",
+    "armoryTier": "T1",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "\"Horo\" CarryBack",
+    "slot": "Backpack",
+    "armoryTier": "T1",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 150.5 s"
+   },
+   {
+    "name": "Trekking Elite Pack",
+    "slot": "Backpack",
+    "armoryTier": "T0",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 29.0 s"
+   },
+   {
+    "name": "Demeter Quick-Stash",
+    "slot": "Backpack",
+    "armoryTier": "T0",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "RUSH72 Backpack",
+    "slot": "Backpack",
+    "armoryTier": "T0",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   }
+  ]
+ },
+ {
+  "entry": "Brainstorm",
+  "slug": "brainstorm",
+  "pieceCount": 6,
+  "tileCount": 12,
+  "extraListings": [],
+  "source": {
+   "recording": "2026-10-29_11-42-06.mp4",
+   "seconds": [
+    50.8,
+    53.2
+   ]
+  },
+  "evidence": "evidence/backpack-talents/sources/brainstorm.webp",
+  "checked": "2026-10-29",
+  "pieces": [
+   {
+    "name": "Mountain Hiking Pack",
+    "slot": "Backpack",
+    "armoryTier": "T2",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Rally Point Secure Pack",
+    "slot": "Backpack",
+    "armoryTier": "T1",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 17.0 s"
+   },
+   {
+    "name": "Big Horn Pack",
+    "slot": "Backpack",
+    "armoryTier": "T1",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "\"Horo\" CarryBack",
+    "slot": "Backpack",
+    "armoryTier": "T1",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 150.5 s"
+   },
+   {
+    "name": "Demeter Quick-Stash",
+    "slot": "Backpack",
+    "armoryTier": "T0",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Element Outdoors Rucksack",
+    "slot": "Backpack",
+    "armoryTier": "T0",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "Screen_Recording_20261029_131044_The_Division_Resurgence.mp4 at 32.3 s"
+   }
+  ]
+ },
+ {
+  "entry": "Intense Performance",
+  "slug": "intense-performance",
+  "pieceCount": 7,
+  "tileCount": 14,
+  "extraListings": [],
+  "source": {
+   "recording": "2026-10-29_11-42-06.mp4",
+   "seconds": [
+    54.0,
+    57.6
+   ]
+  },
+  "evidence": "evidence/backpack-talents/sources/intense-performance.webp",
+  "checked": "2026-10-29",
+  "pieces": [
+   {
+    "name": "All Hazards Nitro Backpack",
+    "slot": "Backpack",
+    "armoryTier": "T2",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 8.0 s"
+   },
+   {
+    "name": "AMP24",
+    "slot": "Backpack",
+    "armoryTier": "T2",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Ziba Low Profile Pack",
+    "slot": "Backpack",
+    "armoryTier": "T1",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Big Horn Pack",
+    "slot": "Backpack",
+    "armoryTier": "T1",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "\"Horo\" CarryBack",
+    "slot": "Backpack",
+    "armoryTier": "T1",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 150.5 s"
+   },
+   {
+    "name": "Element Outdoors Rucksack",
+    "slot": "Backpack",
+    "armoryTier": "T0",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "Screen_Recording_20261029_131044_The_Division_Resurgence.mp4 at 32.3 s"
+   },
+   {
+    "name": "RUSH72 Backpack",
+    "slot": "Backpack",
+    "armoryTier": "T0",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   }
+  ]
+ },
+ {
+  "entry": "Inspiration",
+  "slug": "inspiration",
+  "pieceCount": 5,
+  "tileCount": 10,
+  "extraListings": [],
+  "source": {
+   "recording": "2026-10-29_11-42-06.mp4",
+   "seconds": [
+    59.2,
+    61.4
+   ]
+  },
+  "evidence": "evidence/backpack-talents/sources/inspiration.webp",
+  "checked": "2026-10-29",
+  "pieces": [
+   {
+    "name": "All Hazards Nitro Backpack",
+    "slot": "Backpack",
+    "armoryTier": "T2",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 8.0 s"
+   },
+   {
+    "name": "Roamer Pack \"Sow\"",
+    "slot": "Backpack",
+    "armoryTier": "T2",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Big Horn Pack",
+    "slot": "Backpack",
+    "armoryTier": "T1",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Element Outdoors Rucksack",
+    "slot": "Backpack",
+    "armoryTier": "T0",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "Screen_Recording_20261029_131044_The_Division_Resurgence.mp4 at 32.3 s"
+   },
+   {
+    "name": "RUSH72 Backpack",
+    "slot": "Backpack",
+    "armoryTier": "T0",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   }
+  ]
+ },
+ {
+  "entry": "Siege",
+  "slug": "siege",
+  "pieceCount": 6,
+  "tileCount": 12,
+  "extraListings": [],
+  "source": {
+   "recording": "2026-10-29_11-42-06.mp4",
+   "seconds": [
+    62.4,
+    64.6
+   ]
+  },
+  "evidence": "evidence/backpack-talents/sources/siege.webp",
+  "checked": "2026-10-29",
+  "pieces": [
+   {
+    "name": "Mountain Hiking Pack",
+    "slot": "Backpack",
+    "armoryTier": "T2",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Ziba Low Profile Pack",
+    "slot": "Backpack",
+    "armoryTier": "T1",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "\"Horo\" CarryBack",
+    "slot": "Backpack",
+    "armoryTier": "T1",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 150.5 s"
+   },
+   {
+    "name": "Trekking Elite Pack",
+    "slot": "Backpack",
+    "armoryTier": "T0",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 29.0 s"
+   },
+   {
+    "name": "Demeter Quick-Stash",
+    "slot": "Backpack",
+    "armoryTier": "T0",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Element Outdoors Rucksack",
+    "slot": "Backpack",
+    "armoryTier": "T0",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "Screen_Recording_20261029_131044_The_Division_Resurgence.mp4 at 32.3 s"
+   }
+  ]
+ },
+ {
+  "entry": "Painkillers",
+  "slug": "painkillers",
+  "pieceCount": 6,
+  "tileCount": 12,
+  "extraListings": [],
+  "source": {
+   "recording": "2026-10-29_11-42-06.mp4",
+   "seconds": [
+    65.4,
+    68.2
+   ]
+  },
+  "evidence": "evidence/backpack-talents/sources/painkillers.webp",
+  "checked": "2026-10-29",
+  "pieces": [
+   {
+    "name": "All Hazards Nitro Backpack",
+    "slot": "Backpack",
+    "armoryTier": "T2",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 8.0 s"
+   },
+   {
+    "name": "Roamer Pack \"Sow\"",
+    "slot": "Backpack",
+    "armoryTier": "T2",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Rally Point Secure Pack",
+    "slot": "Backpack",
+    "armoryTier": "T1",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 17.0 s"
+   },
+   {
+    "name": "Big Horn Pack",
+    "slot": "Backpack",
+    "armoryTier": "T1",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Trekking Elite Pack",
+    "slot": "Backpack",
+    "armoryTier": "T0",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 29.0 s"
+   },
+   {
+    "name": "Element Outdoors Rucksack",
+    "slot": "Backpack",
+    "armoryTier": "T0",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "Screen_Recording_20261029_131044_The_Division_Resurgence.mp4 at 32.3 s"
+   }
+  ]
+ },
+ {
+  "entry": "Injured Taunt",
+  "slug": "injured-taunt",
+  "pieceCount": 6,
+  "tileCount": 12,
+  "extraListings": [],
+  "source": {
+   "recording": "2026-10-29_11-42-06.mp4",
+   "seconds": [
+    69.0,
+    71.2
+   ]
+  },
+  "evidence": "evidence/backpack-talents/sources/injured-taunt.webp",
+  "checked": "2026-10-29",
+  "pieces": [
+   {
+    "name": "All Hazards Nitro Backpack",
+    "slot": "Backpack",
+    "armoryTier": "T2",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 8.0 s"
+   },
+   {
+    "name": "AMP24",
+    "slot": "Backpack",
+    "armoryTier": "T2",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "\"Horo\" CarryBack",
+    "slot": "Backpack",
+    "armoryTier": "T1",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 150.5 s"
+   },
+   {
+    "name": "Trekking Elite Pack",
+    "slot": "Backpack",
+    "armoryTier": "T0",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 29.0 s"
+   },
+   {
+    "name": "Demeter Quick-Stash",
+    "slot": "Backpack",
+    "armoryTier": "T0",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Element Outdoors Rucksack",
+    "slot": "Backpack",
+    "armoryTier": "T0",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "Screen_Recording_20261029_131044_The_Division_Resurgence.mp4 at 32.3 s"
+   }
+  ]
+ },
+ {
+  "entry": "Defense Enhancement",
+  "slug": "defense-enhancement",
+  "pieceCount": 5,
+  "tileCount": 10,
+  "extraListings": [],
+  "source": {
+   "recording": "2026-10-29_11-42-06.mp4",
+   "seconds": [
+    72.2,
+    74.2
+   ]
+  },
+  "evidence": "evidence/backpack-talents/sources/defense-enhancement.webp",
+  "checked": "2026-10-29",
+  "pieces": [
+   {
+    "name": "Mountain Hiking Pack",
+    "slot": "Backpack",
+    "armoryTier": "T2",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Ziba Low Profile Pack",
+    "slot": "Backpack",
+    "armoryTier": "T1",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "\"Horo\" CarryBack",
+    "slot": "Backpack",
+    "armoryTier": "T1",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 150.5 s"
+   },
+   {
+    "name": "Demeter Quick-Stash",
+    "slot": "Backpack",
+    "armoryTier": "T0",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "RUSH72 Backpack",
+    "slot": "Backpack",
+    "armoryTier": "T0",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   }
+  ]
+ },
+ {
+  "entry": "Rescue Protection",
+  "slug": "rescue-protection",
+  "pieceCount": 6,
+  "tileCount": 12,
+  "extraListings": [],
+  "source": {
+   "recording": "2026-10-29_11-42-06.mp4",
+   "seconds": [
+    75.0,
+    77.0
+   ]
+  },
+  "evidence": "evidence/backpack-talents/sources/rescue-protection.webp",
+  "checked": "2026-10-29",
+  "pieces": [
+   {
+    "name": "All Hazards Nitro Backpack",
+    "slot": "Backpack",
+    "armoryTier": "T2",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 8.0 s"
+   },
+   {
+    "name": "Mountain Hiking Pack",
+    "slot": "Backpack",
+    "armoryTier": "T2",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "AMP24",
+    "slot": "Backpack",
+    "armoryTier": "T2",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Ziba Low Profile Pack",
+    "slot": "Backpack",
+    "armoryTier": "T1",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Demeter Quick-Stash",
+    "slot": "Backpack",
+    "armoryTier": "T0",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "RUSH72 Backpack",
+    "slot": "Backpack",
+    "armoryTier": "T0",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   }
+  ]
+ },
+ {
+  "entry": "Electrical Protection",
+  "slug": "electrical-protection",
+  "pieceCount": 4,
+  "tileCount": 8,
+  "extraListings": [],
+  "source": {
+   "recording": "2026-10-29_11-42-06.mp4",
+   "seconds": [
+    77.8,
+    80.0
+   ]
+  },
+  "evidence": "evidence/backpack-talents/sources/electrical-protection.webp",
+  "checked": "2026-10-29",
+  "pieces": [
+   {
+    "name": "Roamer Pack \"Sow\"",
+    "slot": "Backpack",
+    "armoryTier": "T2",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Rally Point Secure Pack",
+    "slot": "Backpack",
+    "armoryTier": "T1",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 17.0 s"
+   },
+   {
+    "name": "Trekking Elite Pack",
+    "slot": "Backpack",
+    "armoryTier": "T0",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 29.0 s"
+   },
+   {
+    "name": "Demeter Quick-Stash",
+    "slot": "Backpack",
+    "armoryTier": "T0",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   }
+  ]
+ },
+ {
+  "entry": "Assault Protection",
+  "slug": "assault-protection",
+  "pieceCount": 6,
+  "tileCount": 12,
+  "extraListings": [],
+  "source": {
+   "recording": "2026-10-29_11-42-06.mp4",
+   "seconds": [
+    80.8,
+    82.8
+   ]
+  },
+  "evidence": "evidence/backpack-talents/sources/assault-protection.webp",
+  "checked": "2026-10-29",
+  "pieces": [
+   {
+    "name": "Mountain Hiking Pack",
+    "slot": "Backpack",
+    "armoryTier": "T2",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Roamer Pack \"Sow\"",
+    "slot": "Backpack",
+    "armoryTier": "T2",
+    "family": "D",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Rally Point Secure Pack",
+    "slot": "Backpack",
+    "armoryTier": "T1",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 17.0 s"
+   },
+   {
+    "name": "Ziba Low Profile Pack",
+    "slot": "Backpack",
+    "armoryTier": "T1",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "\"Horo\" CarryBack",
+    "slot": "Backpack",
+    "armoryTier": "T1",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 150.5 s"
+   },
+   {
+    "name": "Trekking Elite Pack",
+    "slot": "Backpack",
+    "armoryTier": "T0",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 29.0 s"
+   }
+  ]
+ },
+ {
+  "entry": "Double-edged Bullet",
+  "slug": "double-edged-bullet",
+  "pieceCount": 5,
+  "tileCount": 10,
+  "extraListings": [],
+  "source": {
+   "recording": "2026-10-29_11-42-06.mp4",
+   "seconds": [
+    84.0,
+    86.6
+   ]
+  },
+  "evidence": "evidence/backpack-talents/sources/double-edged-bullet.webp",
+  "checked": "2026-10-29",
+  "pieces": [
+   {
+    "name": "All Hazards Nitro Backpack",
+    "slot": "Backpack",
+    "armoryTier": "T2",
+    "family": "A",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon",
+    "cardCheck": "2026-10-29_11-33-53.mp4 at 8.0 s"
+   },
+   {
+    "name": "AMP24",
+    "slot": "Backpack",
+    "armoryTier": "T2",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Ziba Low Profile Pack",
+    "slot": "Backpack",
+    "armoryTier": "T1",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "Demeter Quick-Stash",
+    "slot": "Backpack",
+    "armoryTier": "T0",
+    "family": "B",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   },
+   {
+    "name": "RUSH72 Backpack",
+    "slot": "Backpack",
+    "armoryTier": "T0",
+    "family": "C",
+    "rarities": [
+     "High-End",
+     "Superior"
+    ],
+    "match": "icon"
+   }
+  ]
+ }
+]

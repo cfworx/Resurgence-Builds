@@ -5,6 +5,8 @@ updatedDate: 2026-10-26
 author: "RapidF5"
 tags: ["News", "Events", "Season 2", "Roadmap", "Steam"]
 description: "Division Resurgence Season 2 Countdown login event runs July 27 to Aug 10. Plus what Ubisoft has said so far about Season 2, the PC launch and Steam."
+imageAlt: "An agent with a flame-pattern backpack crossing a snowy plaza under Christmas lights in The Division Resurgence, with the title Season 2 Countdown"
+featuredImage: "/images/news/division-resurgence-season-2-countdown-festive-plaza-1200.webp"
 shareTitle: "The Season 2 countdown has started"
 shareText: "Log in every day until August 10 for a Season 2 head start. Here's everything Ubisoft has said about Season 2 and Steam so far, in one place."
 faqs:

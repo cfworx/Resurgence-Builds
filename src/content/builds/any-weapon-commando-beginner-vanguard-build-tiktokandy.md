@@ -10,6 +10,8 @@ patch: "Season 2 · Phase 2"
 verified: false
 tags: ["vanguard", "build-guide", "beginner", "Season 2", "Fury Strike", "Phalanx Attack", "Commando"]
 description: "TikTokAndy's beginner Vanguard Commando build for any weapon: Fury Strike 4pc + Phalanx Attack 2pc, Injured Concealment II, Siege II, Augmented Lethality, a crit ladder to 100%."
+imageAlt: "TikTokAndy's Vanguard loadout screen from his beginner any-weapon Commando video in The Division Resurgence: 18.83k power score, 206.09k DPS, a P90 and an Enhanced ACR, and a level 42 OS Protocol"
+featuredImage: "/images/builds/division-resurgence-any-weapon-commando-beginner-vanguard-build-tiktokandy-loadout-1200.webp"
 author: "RapidF5 (via TikTokAndy)"
 shareTitle: "Crit until it gets boring"
 shareText: "About 60% crit out of combat, close to 100% inside Tactical Link. TikTokAndy's beginner Commando build works with whatever gun you have."

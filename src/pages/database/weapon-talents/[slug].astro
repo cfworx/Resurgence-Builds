@@ -12,6 +12,9 @@ import DbFaq from '../../../components/DbFaq.astro';
 import { verifiedPatch, DATABASE_UPDATED } from '../../../data/site-config';
 import GameImage from '../../../components/GameImage.astro';
 import { dbImage, imageObject, CARDS_RECORDED } from '../../../utils/db-images';
+import talentSources from '../../../data/weapon-talent-sources.json';
+import standardWeapons from '../../../data/standard-weapons.json';
+import exoticWeapons from '../../../data/exotic-weapons.json';
 
 export function getStaticPaths() {
   return weaponTalents.map((talent: any) => ({
@@ -31,6 +34,24 @@ const slug = talent.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|
 const cardImage = dbImage(`weapon-talents/${slug}`);
 const siteUrl = 'https://resurgencebuilds.com';
 const desc = talent.description.toLowerCase();
+
+// The weapons that can roll it: the talent's Source list, read off our recordings of the game
+// (research/build-database/weapon-talent-sources.json; src/data has the site copy).
+const sources: { name: string; classOrder: string[]; weapons: { name: string; slug: string; class: string; tier: string }[] } | undefined =
+  (talentSources as any).talents[slug];
+const sourcesRecorded = new Date(`${(talentSources as any).checked}T12:00:00Z`).toLocaleDateString('en-US', { timeZone: 'UTC', month: 'long', day: 'numeric', year: 'numeric' });
+// Every standard weapon has its own page.
+const pagedWeapons = new Set((standardWeapons as any[]).map((w) => w.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')));
+const classPlural: Record<string, string> = { 'Assault Rifle': 'Assault rifles', SMG: 'SMGs', LMG: 'LMGs', 'Marksman Rifle': 'Marksman rifles', Rifle: 'Rifles', Shotgun: 'Shotguns' };
+const classLower: Record<string, [string, string]> = { 'Assault Rifle': ['assault rifle', 'assault rifles'], SMG: ['SMG', 'SMGs'], LMG: ['LMG', 'LMGs'], 'Marksman Rifle': ['marksman rifle', 'marksman rifles'], Rifle: ['rifle', 'rifles'], Shotgun: ['shotgun', 'shotguns'] };
+// Exotic-only talents (Breathe Free, Play Rough) come fixed on their exotic instead.
+const exoticWeapon: any = (exoticWeapons as any[]).find((e) => e.talentName === talent.name);
+const exoticOf = exoticWeapon ? { name: exoticWeapon.name, slug: exoticWeapon.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '') } : null;
+const sourceGroups = sources ? sources.classOrder.map((cls) => ({ cls, weapons: sources.weapons.filter((w) => w.class === cls) })) : [];
+const sourcesFaq = sources ? [{
+  question: `Which weapons can roll ${talent.name} in Division Resurgence?`,
+  answer: `${sources.weapons.length} weapons, each at all three rarities (High-End, Superior and Specialized): ${sourceGroups.map((g) => `${g.weapons.length} ${classLower[g.cls][g.weapons.length === 1 ? 0 : 1]} (${g.weapons.map((w) => w.name).join(', ')})`).join('; ')}. That's ${talent.name}'s Source list in the game's Build-Making Database, recorded ${sourcesRecorded}. A weapon that isn't on it can't roll ${talent.name}.`
+}] : [];
 
 // Determine build archetype from keywords
 function getBuildArchetype(description: string): { primary: string; label: string; prose: string; builds: string } {
@@ -109,7 +130,7 @@ const archetype = getBuildArchetype(talent.description);
 // Pages WITHOUT notes keep the generic archetype copy but are noindexed.
 // The same check drives the sitemap filter via src/utils/indexability.mjs.
 const notes: any = (wtNotes as any)[slug];
-const indexable = isWeaponTalentIndexable(talent, notes);
+const indexable = isWeaponTalentIndexable(talent, notes, sources);
 
 const title = `${talent.name}: Weapon Talent`;
 const description = metaDescription(notes?.usageNotes, `${talent.name} weapon talent in The Division Resurgence: what it does, which builds run it, and how to get it.`);
@@ -119,7 +140,7 @@ const breadcrumbs = [
   { name: talent.name, url: '#' }
 ];
 
-const faqs = notes ? [
+const faqs = [...sourcesFaq, ...(notes ? [
   {
     question: `Is ${talent.name} a good weapon talent in Division Resurgence?`,
     answer: notes.usageNotes.split('. ').slice(0, 2).join('. ') + (notes.usageNotes.split('. ').length > 2 ? '.' : '')
@@ -139,9 +160,9 @@ const faqs = notes ? [
   },
   {
     question: `How do I get the ${talent.name} talent in Division Resurgence?`,
-    answer: `${talent.name} is a random roll, and only on the weapons in its Source list in the game's Build-Making Database (the in-game card on this page), so check the talents on every drop of those guns. If a gun has the stats you want but the wrong talent, recalibration rerolls that line at random rather than letting you pick ${talent.name}, so it can take several tries. For where the best T2 weapons drop, see our gear farming guide.`
+    answer: `${talent.name} is a random roll, and only on the weapons in its Source list in the game's Build-Making Database${sources ? ' (listed on this page)' : ''}, so check the talents on every drop of those guns. If a gun has the stats you want but the wrong talent, recalibration rerolls that line at random rather than letting you pick ${talent.name}, so it can take several tries. For where the best T2 weapons drop, see our gear farming guide.`
   }
-];
+])];
 
 const talentLd = {
   '@context': 'https://schema.org',
@@ -199,6 +220,33 @@ const talentLd = {
         </div>
         {talent.note && <p class="item-note">{talent.note}</p>}
       </div>
+
+      {sources ? (
+        <section class="talent-sources" aria-labelledby="talent-sources-title">
+          <h2 id="talent-sources-title" class="talent-sources__title">Weapons That Can Roll {talent.name}</h2>
+          <p class="talent-sources__lead">{sources.weapons.length} weapons in {sourceGroups.length} {sourceGroups.length === 1 ? 'class' : 'classes'}, each at all three rarities (High-End, Superior and Specialized). This is the talent's Source list in the game's Build-Making Database, recorded {sourcesRecorded}: a weapon that isn't on it can't roll {talent.name}.</p>
+          {sourceGroups.map((g) => (
+            <div class="talent-sources__group">
+              <h3 class="talent-sources__class">{classPlural[g.cls]} <span>{g.weapons.length}</span></h3>
+              <ul class="weapon-chips">
+                {g.weapons.map((w) => {
+                  const icon = dbImage(`weapon-icons/${w.slug}`);
+                  const body = (
+                    <>
+                      {icon && <img src={icon.src} srcset={icon.srcset.map(([iw, u]) => `${u} ${iw}w`).join(', ')} sizes="(max-width: 640px) 42vw, 150px" width={icon.width} height={icon.height} alt="" loading="lazy" decoding="async" />}
+                      <span class="weapon-chip__name">{w.name}</span>
+                      <span class="weapon-chip__tier">{w.tier}</span>
+                    </>
+                  );
+                  return <li>{pagedWeapons.has(w.slug) ? <a class="weapon-chip" href={`/database/weapons/${w.slug}/`}>{body}</a> : <span class="weapon-chip">{body}</span>}</li>;
+                })}
+              </ul>
+            </div>
+          ))}
+        </section>
+      ) : exoticOf ? (
+        <p class="item-note">{talent.name} is the <a href={`/database/exotic-weapons/${exoticOf.slug}/`}>{exoticOf.name}</a>'s own talent: it comes fixed on that exotic and never rolls on a standard weapon.</p>
+      ) : null}
 
       {cardImage && (
         <figure class="game-figure game-figure--wide">
@@ -265,3 +313,62 @@ const talentLd = {
     <AdSenseUnit label="Advertisement (database item)" />
   </div>
 </BaseLayout>
+
+<style>
+  .talent-sources { margin-bottom: var(--sp-8); }
+  .talent-sources__title {
+    font-family: var(--font-heading);
+    font-size: var(--text-lg);
+    font-weight: 800;
+    color: #fff;
+    margin: 0 0 var(--sp-3) 0;
+    padding-bottom: var(--sp-2);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+  .talent-sources__lead { color: #c8c8d0; line-height: 1.7; font-size: var(--text-sm); margin: 0 0 var(--sp-5); }
+  .talent-sources__group { margin-bottom: var(--sp-5); }
+  .talent-sources__class {
+    font-family: var(--font-mono);
+    font-size: var(--text-xs);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--accent);
+    margin: 0 0 var(--sp-2);
+  }
+  .talent-sources__class span { color: var(--ink-muted); margin-left: 6px; }
+  .weapon-chips {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: var(--sp-2);
+  }
+  .weapon-chips li { margin: 0; max-width: none; }
+  .weapon-chip {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto auto;
+    gap: 6px 8px;
+    align-items: center;
+    height: 100%;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid rgba(255,255,255,0.07);
+    background: rgba(0,0,0,0.22);
+    color: #e8e8f0;
+    text-decoration: none;
+  }
+  a.weapon-chip:hover { border-color: rgba(242,104,34,0.45); color: #fff; }
+  .weapon-chip img { grid-column: 1 / -1; width: 100%; height: auto; border-radius: 4px; }
+  .weapon-chip__name { font-size: var(--text-sm); font-weight: 600; line-height: 1.3; }
+  .weapon-chip__tier {
+    font-family: var(--font-mono);
+    font-size: var(--step--2);
+    color: var(--ink-muted);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 4px;
+    padding: 1px 5px;
+  }
+</style>

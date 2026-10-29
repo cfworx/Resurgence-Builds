@@ -5,6 +5,8 @@ updatedDate: 2026-10-24
 author: "RapidF5"
 tags: ["News", "Events", "Season 2"]
 description: "Division Resurgence A New Enemy speedrun weekend, Sep 4 to 8: beat the Freemen mission in record time for rewards like the Lightspeed Agent title."
+imageAlt: "The Division Resurgence map with its Mission Instances list: Chinatown Rescue, Wall Street Woes, Liberty and Justice for All, A New Enemy and more"
+featuredImage: "/images/news/division-resurgence-a-new-enemy-speedrun-september-map-1200.webp"
 shareTitle: "The Freemen are back on the clock"
 shareText: "A New Enemy speedrun weekend, September 4 to 8. Beat the Freemen in record time and grab the Lightspeed Agent title if you still need it."
 faqs:

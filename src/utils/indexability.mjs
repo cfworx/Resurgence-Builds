@@ -30,8 +30,11 @@ export function uniqueWordCount(...parts) {
 }
 
 /** Unique (non-boilerplate) text for a weapon talent page. */
-function weaponTalentUnique(talent, notes) {
-  return [talent.name, talent.description, talent.upgradedName, talent.upgradedDescription, notes?.usageNotes, notes?.metaBuilds?.map(b => b.title), notes?.patchHistory?.map(p => p.note)];
+// sources: the talent's Source list from src/data/weapon-talent-sources.json (the weapons that can roll
+// it, recorded in game), which is unique to its page too. Callers pass it in, so this file reads no
+// files when Vite bundles it into a page.
+function weaponTalentUnique(talent, notes, sources) {
+  return [talent.name, talent.description, talent.upgradedName, talent.upgradedDescription, notes?.usageNotes, notes?.metaBuilds?.map(b => b.title), notes?.patchHistory?.map(p => p.note), sources?.weapons?.map((w) => `${w.name} ${w.class} ${w.tier}`)];
 }
 
 /** Unique (non-boilerplate) text for a skill mod combo page. */
@@ -39,8 +42,8 @@ function skillModUnique(mod, notes) {
   return [mod.name, mod.bonus2, mod.bonus3, notes?.usageNotes, notes?.metaBuilds?.map(b => b.title), notes?.patchHistory?.map(p => p.note)];
 }
 
-export function isWeaponTalentIndexable(talent, notes) {
-  return uniqueWordCount(...weaponTalentUnique(talent, notes)) >= THIN_WORD_THRESHOLD;
+export function isWeaponTalentIndexable(talent, notes, sources) {
+  return uniqueWordCount(...weaponTalentUnique(talent, notes, sources)) >= THIN_WORD_THRESHOLD;
 }
 
 export function isSkillModIndexable(mod, notes) {
@@ -57,9 +60,10 @@ export function getNoindexedDatabasePaths() {
   const skillMods = readJson('skill-mod-combos.json');
   const smcNotes = readJson('skill-mod-combo-notes.json');
 
+  const talentSources = readJson('weapon-talent-sources.json').talents;
   const paths = [];
   for (const t of weaponTalents) {
-    if (!isWeaponTalentIndexable(t, wtNotes[toSlug(t.name)])) {
+    if (!isWeaponTalentIndexable(t, wtNotes[toSlug(t.name)], talentSources[toSlug(t.name)])) {
       paths.push(`/database/weapon-talents/${toSlug(t.name)}/`);
     }
   }
