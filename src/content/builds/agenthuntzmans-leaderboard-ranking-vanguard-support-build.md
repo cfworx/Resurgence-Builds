@@ -5,15 +5,15 @@ subclass: "Recon"
 playstyle: "Support"
 pve: true
 pvp: false
-lastUpdated: 2026-05-24T11:00:00Z
+lastUpdated: 2026-10-28T12:00:00Z
 patch: "1.2.1"
 tags: ["Recon", "vanguard", "support", "engineering", "smart-cover", "tactical-link", "scanning-pulse", "fully-charged", "team-dps"]
-description: "The Vanguard Scout build that triples your team's DPS through Smart Cover, Scanning Pulse, and Fully Charged stacking."
+description: "The Vanguard Recon build that triples your team's DPS through Smart Cover, Scanning Pulse, and Fully Charged stacking."
 author: "RapidF5 via AgentHuntzman"
 featuredImage: "/images/division-resurgence-vanguard-scout-build.png"
 imageAlt: "Division Resurgence Vanguard Recon build with Smart Cover and Scanning Pulse buffing team damage"
 shareTitle: "The Silent Carry Build"
-shareText: "Your DPS looks mid. Your team's DPS triples. The Vanguard Scout is the most impactful build in Resurgence and nobody is talking about it."
+shareText: "Your DPS looks mid. Your team's DPS triples. Vanguard Recon support is the most impactful build in Resurgence and nobody is talking about it."
 sources:
   - '<a href="https://www.youtube.com/watch?v=b1ZjnGeeRKI">AgentHuntzman, Best Scout Build in Division Resurgence (Vanguard Meta)</a>, April 26, 2026.'
   - 'In-game Division Resurgence Build Database, verified May 2026.'
@@ -23,14 +23,14 @@ faqs:
   - question: "Why does my DPS look terrible on this build?"
     answer: "Because you're reading the wrong number, champ. Your stats show YOUR damage. It does not show the Weapon Damage you're pumping into every teammate through Smart Cover, the roughly +20% vulnerability from Scanning Pulse, or the rate-of-fire buff from Tactical Link. Your team's total DPS is tripling. Yours just isn't the one doing it. Think of yourself as the guy who brought the aux cord to the party. Nobody thanks the DJ, but the party dies without him."
   - question: "Can I run this build solo?"
-    answer: "You can also eat soup with a fork. Technically possible, practically miserable. This build is designed to multiply other people's damage. If there are no other people, you are multiplying zero. For solo content, run a Vanguard Commando DPS build instead and come back to Scout when you have friends. Or matchmake. We don't judge."
+    answer: "You can also eat soup with a fork. Technically possible, practically miserable. This build is designed to multiply other people's damage. If there are no other people, you are multiplying zero. For solo content, run a Vanguard Commando DPS build instead and come back to Recon when you have friends. Or matchmake. We don't judge."
   - question: "Is the P90 actually better than an LMG for this build?"
     answer: "For this build, absolutely. The P90 fires fast, which means you burn through magazines fast and trigger Fully Charged (+7.50% Engineering) on every empty reload. An LMG with a 100-round belt takes forever to empty, so you're waiting ages between Engineering stacks. But here's the real reason: the build needs BOTH Torrential Downpour and Fully Charged on the same weapon. Based on community reports when this was written, only two SMGs could roll both talents: the P90 and the AUG A3 Para XS. The Vector couldn't roll Fully Charged and the MP7 couldn't roll Torrential Downpour, which left the P90 as the fast-firing pick. Season 2 Phase 1 fixed several weapons (a First Wave Vector among them) pulling recalibration talents from the wrong pool, so double-check in-game before you recal. AgentHuntzman didn't pick it randomly."
   - question: "What's the best Vanguard support build in Division Resurgence?"
-    answer: "You're looking at it, at least as of Season 1. The Vanguard Recon running 4pc Mechanical Expert + 2pc Boom Shakalaka was the highest-impact support build we'd found when this went up, and AgentHuntzman's pitch is that it triples team DPS. Nobody has been re-crowned in Season 2 yet, mostly because we haven't re-tested it. Until then it keeps the title by default, like the guy who holds the office fantasy trophy because nobody else showed up."
+    answer: "You're looking at it, at least as of Season 1. The Vanguard Recon running 4pc Mechanical Expert + 2pc Boom-Shakalaka was the highest-impact support build we'd found when this went up, and AgentHuntzman's pitch is that it triples team DPS. Nobody has been re-crowned in Season 2 yet, mostly because we haven't re-tested it. Until then it keeps the title by default, like the guy who holds the office fantasy trophy because nobody else showed up."
   - question: "Do I need Legendary drops for this build?"
     answer: "Nope. That's the beautiful part. This build already dramatically multiplies your team's damage output. Stop waiting for perfect drops and start running the build. Your squad will thank you immediately."
-  - question: "Why Mechanical Expert over Long-Term Effect?"
+  - question: "Why Mechanical Expert over Long-term Effect?"
     answer: "Mechanical Expert is the correct choice because the 2pc Skill Duration and 3pc CDR keep your Smart Cover and Scanning Pulse cycling with near-permanent uptime. The 4pc SAC Efficiency bonus means your Tactical Link charges faster. You need permanent skill uptime before you need bigger numbers. A buff that's down for 5 seconds between casts is doing zero damage during those 5 seconds, no matter how large the number is."
 videoId: "b1ZjnGeeRKI"
 videoTitle: "AgentHuntzman: Best Scout Build in Division Resurgence"
@@ -44,14 +44,14 @@ videoChannel: "AgentHuntzman"
 > [!INFO] Support Build: Low Personal DPS
 > Your personal DPS number will look embarrassing on this build. That's by design. Recon buffs your entire squad's damage output instead. Judge this build by your team's total clear time, not your individual stats. If you need to see big personal numbers, this isn't the build for you.
 
-This is the Vanguard Recon Scout, a full team-support build that triples your squad's damage output. You don't kill things. You make your entire team kill things three times faster.
+This is the Vanguard Recon, a full team-support build that triples your squad's damage output. You don't kill things. You make your entire team kill things three times faster.
 
 The loop is simple: stack Engineering through Torrential Downpour and Fully Charged, convert it into team-wide weapon damage through Tactical Smart Cover, debuff enemies with Scanning Pulse, and boost everyone's rate of fire with Tactical Link. Your personal DPS will look embarrassing. Your team's total output will be disgusting.
 
 > [!WARNING] Season 1 Phase 3 and Season 2 changes that affect this build
 > - **Recon (Season 1 Phase 3, June 24):** Ubisoft fixed Recon "passively dealing more damage than expected" without saying which effect. That patch went live after this page's May 24 update. This build lives on team buffs, so the hit is probably small, but retest.
 > - **Tactical Link (Season 2 Phase 1):** Recon's Tactical Link now gets improved auto-aim support. That's your signature, so if anything it should feel better.
-> - **Weapon attributes (Season 2 Phase 1):** Blast, Shredding and Piercing Weapon/Skill Damage were removed from the weapon attribute pool in favor of All Weapon Damage and All Skill Damage. The Weapon Blast Damage (M4) and Weapon Piercing Damage (P90) picks below can't roll on new drops anymore.
+> - **Weapon attributes (Season 2 Phase 1):** Blast, Shredding and Piercing Weapon/Skill Damage were removed from the weapon attribute pool in favor of All Weapon Damage and All Skill Damage. The Weapon Piercing Damage pick for the P90 below can't roll on new drops anymore, and neither can the Weapon Blast Damage we used to list for the M4.
 > - **Weapon mods (Season 2 Phase 1):** New weapon mods get +100% main stat and -25% bonus attributes. The roughly 45% SMG tactical-mod reload figure below was measured on old mods, so retest it.
 > - **Vulnerability effects (Season 2 Phase 2):** Ubisoft fixed "some instance of 'Enemy take increased damage' effects not working properly" without naming them. Exposed and the Scanning Pulse vulnerability are that kind of effect, so your debuffs may land differently now. Retest before you trust the math below.
 >
@@ -65,11 +65,11 @@ The loop is simple: stack Engineering through Torrential Downpour and Fully Char
 
 | Slot | Set | Talent | Core | Attribute Bonus 1 | Attribute Bonus 2 |
 |---|---|---|---|---|---|
-| Mask | Boom Shakalaka | - | Engineering | Skill Cooldown Recovery | Skill Duration |
+| Mask | Boom-Shakalaka | - | Engineering | Skill Cooldown Recovery | Skill Duration |
 | Body Armor | Mechanical Expert | **Socialite** | Engineering | Armor | Damage Reduction |
 | Backpack | Mechanical Expert | **Brainstorm** | Engineering | Skill Duration | Skill Cooldown Recovery |
 | Gloves | Mechanical Expert | - | Engineering | Skill Duration | Skill Cooldown Recovery |
-| Holster | Boom Shakalaka | - | Engineering | Sig. Ability Charge Efficiency | Skill Duration |
+| Holster | Boom-Shakalaka | - | Engineering | Sig. Ability Charge Efficiency | Skill Duration |
 | Kneepads | Mechanical Expert | - | Engineering | Skill Cooldown Recovery | Weapon Damage |
 
 ### Loadout
@@ -78,18 +78,18 @@ The loop is simple: stack Engineering through Torrential Downpour and Fully Char
 |---|---|---|
 | **Primary** | Police M4 (AR) | Torrential Downpour + Rapid Charge |
 | **Secondary** | P90 (SMG) | Torrential Downpour + Fully Charged |
-| **OS Protocol** | Pressing Matter | Skill CDR + Engineering + Skill Intensity (exact values vary by level and infusion) |
+| **OS Protocol** | Pressing Matter | Skill Intensity +12% main stat, Engineering +77 and a +10% Skill Cooldown Recovery talent (base values; levelling raises the main stat and talent upgrades raise the talent) |
 | **Skill 1** | Tactical Smart Cover | Team weapon damage buff based on your Engineering |
 | **Skill 2** | Scanning Pulse | Applies Target Vulnerability and Exposed debuff to enemies hit |
-| **Signature** | Tactical Link | Team-wide Rate of Fire, Damage Reduction, Movement Speed |
+| **Signature** | Tactical Link | Your signature. The Rate of Fire, Damage Reduction and Movement Speed buffs in this build come from its Bugle Call mod (below) |
 
 ### Skill Mods
 
 | Skill | Mod | Effect |
 |---|---|---|
 | Tactical Smart Cover | **Advanced Position** | Kills/assists behind cover grant +10 Sig. Ability charge to the whole team |
-| Scanning Pulse | **Pulse Feedback (C-Chip)** | Each pulse grants +8 Sig. Ability charge to the allied team |
-| Tactical Link | **Bugle Call** | Deploying Link grants Rate of Fire, Damage Reduction, and Movement Speed buffs to the team (exact values vary by rank) |
+| Scanning Pulse | **Pulse Feedback** | Pulsed enemies grant +8 Sig. Ability charge to the ally team |
+| Tactical Link | **Bugle Call** | Deploying Tactical Link grants +14.40% Rate of Fire, Damage Reduction, and Movement Speed for 15 seconds (lowest tier). The tooltip doesn't say whether allies get these buffs too |
 
 **Alternatives worth knowing:**
 - Smart Cover: **Field Bastion** (kills/assists grant allies Extra Health equal to 120% Engineering for 10s) if your team is dying before they can deal damage
@@ -105,7 +105,7 @@ AgentHuntzman's video shows mixed cores (Toughness on Body Armor, Firepower on b
 
 ### Mechanical Expert 4-Piece
 
-The 2pc (+9.6% Skill Duration) and 3pc (-9.0% CDR) keep your skills cycling with near-permanent uptime. The 4pc boosts SAC Efficiency, meaning your Tactical Link charges faster from all sources. Exact set bonus values are build-specific and depend on gear level, so treat any percentages here as approximate.
+The 2pc (+9.6% Skill Duration) and 3pc (-9.0% CDR) keep your skills cycling with near-permanent uptime. The 4pc boosts SAC Efficiency, meaning your Tactical Link charges faster from all sources. These are our database's set bonus values. Gear sets haven't been re-checked in game yet, but TikTokAndy's in-game Long-term Effect bonuses read exactly our database's numbers (see our [Aegis team healer build](/builds/aegis-team-healer-tech-operator-build-tiktokandy/)), so we expect these to hold.
 
 ### Boom-Shakalaka 2-Piece
 
@@ -129,7 +129,7 @@ This might actually be the better pick for this build. +28% Skill Duration direc
 
 More Tactical Link uptime. If your team is getting kills consistently behind your cover (and they will be, because you've tripled their damage), this procs constantly and stacks on top of your existing SAC build. Worth running if Tactical Link uptime is your priority over raw armor.
 
-**Nothing to Lose:** *"Taking damage has a 50% chance of reducing Skill Cooldowns of deployed Skills by 2%, up to 3 stacks."*
+**Nothing to Lose:** *"Taking damage has a 50% chance of reducing Skill Cooldowns of Skills deployed within 5 seconds by 2%, up to 3 stacks."*
 
 Situationally useful if you're getting pressured, but it requires you to be taking hits to proc. Doesn't fit the play pattern of sitting safely in cover.
 
@@ -153,11 +153,11 @@ You'll notice we've swapped most Skill Intensity rolls for **Skill Duration**, *
 
 Short answer: at this gear setup, probably not. Here's why.
 
-**Scanning Pulse:** In testing, duration runs roughly 17 seconds and cooldown roughly 15 seconds with this gear setup. Duration already beats cooldown with no additional CDR investment. That means you can reapply the debuff before it ever expires. CDR reduces the gap between your recast and the next window, but since there is no gap, stacking more CDR gives you nothing extra on Pulse.
+**Scanning Pulse:** On AgentHuntzman's own sheet in the video (his gear, not exactly the setup on this page), Scanning Pulse reads 17.44 seconds of duration on a 14.94-second cooldown. Duration already beats cooldown with no additional CDR investment. That means you can reapply the debuff before it ever expires. CDR reduces the gap between your recast and the next window, but since there is no gap, stacking more CDR gives you nothing extra on Pulse.
 
-**Tactical Smart Cover:** In testing, duration runs roughly 25 seconds and cooldown roughly 22 seconds with set bonuses applied. Same story. Duration wins. Your cover isn't dropping before you can recast it.
+**Tactical Smart Cover:** On the same sheet, Smart Cover reads 41.20 seconds of duration on a 35.59-second cooldown. Same story. Duration wins. Your cover isn't dropping before you can recast it.
 
-**Our gut call:** the CDR you get from Mechanical Expert 3pc + Boom Shakalaka 2pc + Pressing Matter is already enough. It's baked into the build. Every additional CDR roll you chase after that is wasted. You're buying a faster recast window for a skill that's still active. Stack Skill Duration instead. Longer buffs mean your team is inside a vulnerability window or behind an amplified cover longer per fight. That compounds.
+**Our gut call:** the CDR you get from Mechanical Expert 3pc + Boom-Shakalaka 2pc + Pressing Matter is already enough. It's baked into the build. Every additional CDR roll you chase after that is wasted. You're buying a faster recast window for a skill that's still active. Stack Skill Duration instead. Longer buffs mean your team is inside a vulnerability window or behind an amplified cover longer per fight. That compounds.
 
 The one exception: if your rotations feel ragged in practice and Smart Cover is actually going down mid-fight, check your CDR rolls before anything else. But if the build is geared correctly, this shouldn't happen.
 
@@ -172,7 +172,7 @@ All weapons below assume a **tactical mod is equipped**. SMG tactical mod reduce
 - **Torrential Downpour:** Hitting enemies 10 times within 5 seconds grants +22.5% Engineering for 12 seconds. This is your Engineering injection.
 - **Rapid Charge:** Hitting an enemy 5 times in 3 seconds grants +50 Signature Ability charge. This is how you get Tactical Link back fast.
 - **RPM: 850. Magazine: 30.** This is your proc weapon, not your sustained fire weapon. Land your hits, swap to P90.
-- **Ideal attributes:** Weapon Blast Damage + Weapon Damage. Season 2 Phase 1 removed Blast Damage from the weapon attribute pool, so on new drops look for All Weapon Damage in that slot.
+- **Ideal attributes:** All Weapon Damage + Weapon Damage. We used to list Weapon Blast Damage for the first slot, but community testing cited in our [damage types guide](/guides/damage-types-color-bar-weakness-guide/) says the Police M4 deals Shredding, so a Blast roll likely did nothing for it. Season 2 Phase 1 removed damage type bonuses from the weapon attribute pool anyway, so on new drops look for All Weapon Damage in that slot.
 - Torrential Downpour and Rapid Charge can be recalibrated between compatible AR platforms. Whether a specific AR can accept a specific talent depends on its talent pool. Verify in-game before committing a recal.
 
 ### Secondary: P90 (SMG)
@@ -195,13 +195,13 @@ These are unlocked through the Recon specialization tree and are critical to the
 | Upgrade | Level | Effect |
 |---|---|---|
 | **Exposed** | 3/3 | Inflicts +10% incoming damage on scanned enemies, deals damage equal to 4% Engineering for 30 seconds, up to 3 stacks. |
-| **Foxhole** | 3/3 | Hiding behind Smart Cover grants **Fortified** to you and all allies. Weapon hits grant extra health equal to **450% of Engineering** for 3 seconds. |
+| **Foxhole** | 3/3 | Hiding behind Smart Cover grants **Fortified** to you and all allies. Fortified allies get health on hit equal to **450% of Engineering** for 3 seconds. |
 | **Entrenched** | 3/3 | Grants +4% Damage Reduction to Fortified allies. |
 | **Target Rich Environment** | 3/3 | While using Tactical Link, each enemy within 20m grants +12% Accuracy, Stability, and Reload Speed for 10 seconds, up to 3 stacks (+36% max). |
 | **Friendly Hand** | 2/2 | Grants +10% Damage Reduction for 10 seconds to pulsed allies. |
 | **Combat Inspiration** | 2/2 | Grants +5% Engineering for 10 seconds when an Exposed enemy dies within 30 meters, up to 3 stacks (+15% Engineering). |
 
-Foxhole is the sleeper here. The higher your Engineering, the more extra health every teammate gets per weapon hit while behind your Smart Cover. Your teammates become borderline unkillable. This is why the build dominates Legendary missions.
+Foxhole is the sleeper here. The higher your Engineering, the more health on hit every teammate gets while behind your Smart Cover. Your teammates become borderline unkillable. This is why the build dominates Legendary missions.
 
 ---
 
@@ -209,7 +209,7 @@ Foxhole is the sleeper here. The higher your Engineering, the more extra health 
 
 **Tactical Smart Cover converts a percentage of your Engineering into Weapon Damage for every agent behind cover** (approximately 24% based on community testing). The higher your Engineering, the bigger that bonus.
 
-What it doesn't say upfront: the **Foxhole** specialization node (3/3) grants **Fortified** to every ally behind your cover. While Fortified, every weapon hit restores health scaled to your Engineering for 3 seconds. On a full Engineering build, that's a meaningful passive health restore per shot. Your teammates hit harder and stay alive doing it. This is why the build holds up in Legendary content. The cover is doing two jobs at once.
+What it doesn't say upfront: the **Foxhole** specialization node (3/3) grants **Fortified** to every ally behind your cover. While Fortified, allies get health on hit scaled to your Engineering for 3 seconds. On a full Engineering build, that's meaningful health on every shot. Your teammates hit harder and stay alive doing it. This is why the build holds up in Legendary content. The cover is doing two jobs at once.
 
 ---
 
@@ -217,9 +217,9 @@ What it doesn't say upfront: the **Foxhole** specialization node (3/3) grants **
 
 **Tactical Smart Cover** converts a portion of your Engineering into Weapon Damage for every agent behind the cover (approximately 24% based on community testing). The higher your Engineering, the bigger the weapon damage bonus your whole team gets.
 
-**Scanning Pulse** applies Target Vulnerability and Exposed stacks to enemies. In testing with this gear setup, duration runs roughly 17 seconds with cooldown around 15 seconds, giving near-permanent uptime. Every enemy your Pulse touches takes significantly more damage from your entire team.
+**Scanning Pulse** applies Target Vulnerability and Exposed stacks to enemies. On AgentHuntzman's sheet, duration runs about 17 seconds with a cooldown around 15 seconds, giving near-permanent uptime. Every enemy your Pulse touches takes significantly more damage from your entire team.
 
-**Tactical Link (Bugle Call)** buffs the team with increased Rate of Fire, Damage Reduction, and Movement Speed (exact values vary by mod rank; approximate figures from community testing suggest roughly 14% RoF, with DR and Movement Speed buffs on top). Duration runs approximately 22 seconds in this setup. Every shot fires faster. Every shot hits enemies who are already debuffed. Every shot is boosted by Smart Cover. Plus Target Rich Environment grants Accuracy, Stability, and Reload Speed during Link.
+**Tactical Link with Bugle Call:** per the in-game database, deploying Tactical Link grants +14.40% Rate of Fire, Damage Reduction, and Movement Speed for 15 seconds (that's the lowest tier). The tooltip doesn't say whether allies get these buffs too, so treat the team-wide part as untested. Duration runs approximately 22 seconds in this setup. Every shot fires faster. Every shot hits enemies who are already debuffed. Every shot is boosted by Smart Cover. Plus Target Rich Environment grants Accuracy, Stability, and Reload Speed during Link.
 
 The team's DPS doesn't just go up. It multiplies across three separate buff stages.
 
@@ -247,9 +247,9 @@ These stack multiplicatively, not additively. The actual output depends on your 
 
 ## This Gear on Other Specializations
 
-The gear set (Mechanical Expert 4pc + Boom Shakalaka 2pc) is not Vanguard-locked. If you have the pieces, you can run it on another specialization and keep the set bonuses. What you lose is everything in the Vanguard Recon tree: Foxhole, Exposed, Friendly Hand, Combat Inspiration, Target Rich Environment. All of that is Recon-specific.
+The gear set (Mechanical Expert 4pc + Boom-Shakalaka 2pc) is not Vanguard-locked. If you have the pieces, you can run it on another specialization and keep the set bonuses. What you lose is everything in the Vanguard Recon tree: Foxhole, Exposed, Friendly Hand, Combat Inspiration, Target Rich Environment. All of that is Recon-specific.
 
-On Aegis or Tech Operator with this gear, Smart Cover still transmits weapon damage and the set CDR still applies. You just don't have the passive health restore from Foxhole, the Exposed damage stacks, or the Sig charge generation from the Scout focus. The build functions. It's less effective.
+On Vanguard Commando with this gear, you still have Smart Cover, Scanning Pulse, Tactical Link and their skill mods, so Smart Cover still transmits weapon damage and the set CDR still applies. You just don't have Foxhole's health on hit, the Exposed damage stacks, or anything else from the Recon tree. The build functions. It's less effective. Other specializations keep only the set bonuses, because Smart Cover, Scanning Pulse and Tactical Link are Vanguard skills.
 
 Run it on Vanguard Recon when your team coordinates around the cover. If your team scatters, the multipliers don't land and you'd get more value from a build that works independently.
 
@@ -259,7 +259,7 @@ Run it on Vanguard Recon when your team coordinates around the cover. If your te
 
 | Drop | Must Have |
 |---|---|
-| Boom Shakalaka mask/holster | Engineering core + Skill CDR or Skill Duration |
+| Boom-Shakalaka mask/holster | Engineering core + Skill CDR or Skill Duration |
 | Mechanical Expert Body Armor | Engineering core + Socialite talent |
 | Mechanical Expert backpack | Engineering core + Brainstorm talent |
 | Mechanical Expert gloves/kneepads | Engineering core + Skill CDR or Skill Duration |

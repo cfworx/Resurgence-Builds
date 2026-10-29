@@ -1,11 +1,11 @@
 ---
 title: "Tech Aegis Build: 237k DPS Skill Crit"
 specialization: "Tech Operator"
-subclass: "Tech Aegis"
+subclass: "Aegis Operations"
 playstyle: DPS
 pve: true
 pvp: true
-lastUpdated: 2026-05-30T00:00:00Z
+lastUpdated: 2026-10-28T00:00:00Z
 patch: "1.1.2.2"
 tags: ["Tech Aegis", "Aegis Operations", "Long-term Effect", "Jackpot", "MPX", "Copperhead", "Engineering", "Tampishach", "Brains Over Brawn", "Skill Crit"]
 description: "Tampishach's Tech Aegis build: 237k DPS, 53% Skill Crit, 4pc Long-term Effect, Brains Over Brawn OS. Full gear, talents, and weapons."
@@ -31,18 +31,18 @@ faqs:
   - question: "Is the Boom Horo CarryBack backpack required?"
     answer: "Not strictly required. The Prime Engineer talent is the upgrade you are working toward. Until then, any Long-term Effect backpack with Skill Crit Chance and Skill Crit Damage rolls keeps the 4pc bonus active. Just make sure whatever Prime Engineer backpack you land also rolls Long-term Effect, because a Boom-Shakalaka one breaks the 4pc in this layout and takes the +18% Engineering with it."
   - question: "How do I get Skill Crit Chance and Skill Crit Damage that high?"
-    answer: "Every sub-attribute on every gear piece rolling those two stats, plus +21.60% Skill Crit Chance from Brains Over Brawn, plus the Skill Crit Damage rolls on the weapons. Since Season 2 Phase 1, gear mods can roll both stats too. Stack them everywhere they appear."
+    answer: "Most of the gear sub-attributes roll one of those two stats (Tampishach's mask, body armor, backpack and holster each carry one other stat), plus +21.60% Skill Crit Chance from a Level 50 Brains Over Brawn, plus the Skill Crit Damage roll on the Copperhead. Since Season 2 Phase 1, gear mods can roll both stats too. Stack them everywhere they appear."
   - question: "Is Division Resurgence pay-to-win?"
-    answer: "No. Resurgence is free-to-play with optional convenience and cosmetic purchases. Every piece of gear in this build was earned through gameplay. Spending money can speed up the grind, but it cannot buy positioning, game sense, or the knowledge to stack the right talents. Your dad reflexes are still the bottleneck."
+    answer: "Resurgence is free-to-play, and its premium currency, Phoenix Credits, buys Sealed Caches (SHD Keys can open them too). Ubisoft's published drop rates show the Aegis Operations Cache can drop all three of this build's skill mod sets, and the OS Protocol Cache can drop Brains Over Brawn. The same pieces also come from play: Tampishach points to weekly bounties for maxing the protocol, and since Season 2 Phase 2 Dark Zone daily quests reward Skill Mods. Spending can speed up the grind, but it cannot buy positioning, game sense, or the knowledge to stack the right talents. Your dad reflexes are still the bottleneck."
 ---
 
 **By RapidF5 (via Tampishach) ·** Patch 1.1.2.2
 
 ## What This Build Does
 
-> Build credit: **Tampishach** (posting on the PowerfulJRE Clips YouTube channel). He uploaded a tight walkthrough on his Tech Aegis setup back in late April, and the build still holds up after four patches. We grabbed every value off his in-game screens so nothing in this post is guessed. Watch his original walkthrough on [YouTube](https://www.youtube.com/watch?v=bZA3H9f2ah0).
+> Build credit: **Tampishach** (posting on the PowerfulJRE Clips YouTube channel). He uploaded a tight walkthrough on his Tech Aegis setup back in late April, and the build still holds up after several patches. We grabbed every value off his in-game screens so nothing in this post is guessed. Watch his original walkthrough on [YouTube](https://www.youtube.com/watch?v=bZA3H9f2ah0).
 
-This is a **Tech Aegis Engineering build** that turns skill crit into a sledgehammer. Tampishach is running **18.70k Power Score, 237.52k DPS, 4,503 Armor, and 76,569 Health at Level 50**, with **53% Skill Crit Chance and 113% Skill Crit Damage** on the sheet. The 4pc Long-term Effect set is the engine: skill health, skill duration, and a flat +18% Engineering bonus that compounds with every drone, firefly, and stat roll on the kit. The 2pc Jackpot tops it off with +12% Skill Radius. **Brains Over Brawn** OS Protocol gives you +21.60% Skill Crit Chance and tacks 48% of your Engineering onto every hit. The core loop: drop your Defender Drone, throw out a Mender Drone, pop a First-Aid Firefly, and watch the crit numbers stack.
+This is a **Tech Aegis Engineering build** that turns skill crit into a sledgehammer. Tampishach is running **18.70k Power Score, 237.52k DPS, 4,503 Armor, and 76,569 Health**, with **53% Skill Crit Chance and 113% Skill Crit Damage** on the sheet. The 4pc Long-term Effect set is the engine: skill health, skill duration, and a flat +18% Engineering bonus that compounds with every drone, firefly, and stat roll on the kit. The 2pc Jackpot tops it off with +12% Skill Radius. On his Level 50, fully talent-upgraded copy, the **Brains Over Brawn** OS Protocol gives +21.60% Skill Crit Chance and tacks 48% of your Engineering onto every hit. The core loop: drop your Defender Drone, throw out a Mender Drone, pop a First-Aid Firefly, and watch the crit numbers stack.
 
 > [!WARNING] Season 1 Phase 3 and Season 2 changes that affect this build
 > - **Aegis Burst (Season 1 Phase 3, June 24):** Ubisoft fixed Aegis Operation "dealing more damage than expected at regular intervals." Tampishach's 237k DPS was recorded in late April, before this fix and before the Season 1 Phase 2 fix to Brains Over Brawn "scaling wrong stats," so expect lower numbers.
@@ -87,7 +87,7 @@ This is a **Tech Aegis Engineering build** that turns skill crit into a sledgeha
 | Holster | Jackpot (Jags Sidearm Mount, T2) | - | Firepower | Damage Reduction +3.64% | Skill Critical Damage +8.62% |
 | Knee Pads | Long-term Effect (Brown Knee Guards, T1) | - | Firepower | Skill Critical Chance +5.99% | Skill Critical Damage |
 
-**Core roll philosophy:** Firepower cores across the board, with every sub-attribute pointed at Skill Critical Chance and Skill Critical Damage. Tampishach: *"Try to get as much engineering as you can."* Engineering is the multiplier on every skill, the Brains Over Brawn OS Protocol, and the Long-term Effect 4pc bonus. The gear modules on every slot should be rolled to Engineering and maxed out.
+**Core roll philosophy:** Firepower cores across the board, with most sub-attributes pointed at Skill Critical Chance and Skill Critical Damage (his mask, body armor, backpack and holster each carry one other stat). Tampishach: *"Try to get as much engineering as you can."* Engineering is the multiplier on every skill, the Brains Over Brawn OS Protocol, and the Long-term Effect 4pc bonus. The gear modules on every slot should be rolled to Engineering and maxed out.
 
 **Set split:** 4pc Long-term Effect + 2pc Jackpot. The Long-term Effect 4-piece is non-negotiable. Drop one piece and you lose the +18% Engineering bonus. The 2pc Jackpot is flexible: any two Jackpot slots work.
 
@@ -99,19 +99,20 @@ This is a **Tech Aegis Engineering build** that turns skill crit into a sledgeha
 |---|---|---|
 | **Primary** | Copperhead (T1, SMG, Level 40) | **In Sync + Swift Taunt** · Piercing Damage 800 |
 | **Secondary** | MPX (T0, SMG, Level 50) | **Torrential Downpour II + Rapid Charge** · Skill Multi-Shot Chance +8.09% |
-| **OS Protocol** | **Brains Over Brawn** (Specialized, Level 50) | +21.60% Skill Crit Chance. Hits deal additional damage equal to 48% Engineering |
-| **Skill 1** | Defender Drone | Hazardous Area firmware 3pc |
-| **Skill 2** | Mender Drone | Combat Enhancer (formerly Team Backup) firmware 3pc |
-| **Skill 3** | First-Aid Firefly | Teamfight (formerly Performance Enhancer) firmware 3pc |
-| **Signature** | Aegis Operations | Tech Aegis specialization |
+| **OS Protocol** | **Brains Over Brawn** (Specialized, Level 50, 5/5 talent upgrades) | +21.60% Skill Crit Chance. Hits deal additional damage equal to 48% Engineering |
+| **Skill 1** | Mender Drone | Combat Enhancer (formerly Team Backup) firmware 3pc |
+| **Skill 2** | First-Aid Firefly | Teamfight (formerly Performance Enhancer) firmware 3pc |
+| **Signature** | Defender Drone | Hazardous Area firmware 3pc |
 
 ### Skill Mods
 
 | Skill | Firmware Set | Set Bonus | Stats |
 |---|---|---|---|
 | Defender Drone | Hazardous Area (3pc) | 2pc: +3% Engineering · 3pc: Defender Drone deals damage to enemies within its radius every second | Skill Crit Chance, Skill Duration, Skill Crit Damage |
-| Mender Drone | Combat Enhancer (3pc) | 2pc: +6% Engineering · 3pc: healing grants bonus damage equal to 13.10% Engineering for 20s, up to 3 stacks | Skill Crit Chance, Skill Crit Damage |
-| First-Aid Firefly | Teamfight (3pc) | 2pc: +4.5% Engineering · 3pc: hits deal additional damage equal to 120% Engineering for 8s | Skill Crit Chance, Skill Crit Damage |
+| Mender Drone | Combat Enhancer (3pc) | 2pc: +6% Engineering · 3pc: healing grants bonus damage equal to 13.10% Engineering for 20s, up to 3 stacks (his tooltip; the lowest tier reads 6.60%) | Skill Crit Chance, Skill Crit Damage |
+| First-Aid Firefly | Teamfight (3pc) | 2pc: +4.5% Engineering · 3pc: for 8s after you deploy the Firefly, hits deal additional damage equal to 120% Engineering, and the ally it targets gets the bonus too (his tooltip; the lowest tier reads 80%) | Skill Crit Chance, Skill Crit Damage |
+
+Set bonus numbers are Tampishach's tooltip readings. Combo sets come in more than one tier, and our [skill mod combo database](/database/skill-mod-combos/) lists the lowest one, so expect the numbers on your own sets to differ.
 
 > **Weapon mod stacking:** Every weapon mod slot on both the MPX and the Copperhead should roll Engineering. Tampishach: *"I stacked mods with engineering as it gives more and more engineering to your build, which enhances your damage."*
 
@@ -153,15 +154,15 @@ Max out gear modules to Engineering on every slot. Every +1 Engineering goes thr
 
 ### 1. Brains Over Brawn (Specialized) · RECOMMENDED
 
-*+10.80% Skill Crit Chance · Hits deal additional damage equal to 24% Engineering* (base values; +21.60% and 48% at Level 50)
+*+10.80% Skill Crit Chance · Hits deal additional damage equal to 24% Engineering* (base values. Levelling to 50 doubles the Skill Crit Chance to +21.60%; the talent's 48% comes from all five talent upgrades, which take duplicate copies.)
 
-This is the entire reason the build hits 53% Skill Crit Chance. The on-hit bonus damage scales off Engineering, which the Long-term Effect 4pc just buffed by 18%. Tampishach: *"You need to farm weekly bounties to max it out."*
+At Level 50 it is the single biggest piece of the build's 53% Skill Crit Chance (21.60 points), with the gear rolls supplying most of the rest. The on-hit bonus damage scales off Engineering, which the Long-term Effect 4pc just buffed by 18%. Tampishach: *"You need to farm weekly bounties to max it out."*
 
-### 2. Tactical Layering (High-End) · Skill Uptime Alternative
+### 2. Tactical Layering (High-End) · Engineering Stacking Alternative
 
 *+15% Engineering per skill deployment, up to 3 stacks*
 
-For groups where you are the dedicated drone-spam role. Keeps all three skills on near-constant rotation.
+For groups where you are the dedicated drone-spam role. It doesn't shorten cooldowns; it pays you in Engineering for keeping your skills on rotation.
 
 ### 3. Surgical Engineering (High-End) · Crit Damage Alternative
 
@@ -185,7 +186,7 @@ Tampishach recommends hunting for **Torrential Downpour II** or **In Sync II** a
 ### Secondary: MPX (T0, SMG, Level 50)
 
 - **Torrential Downpour II:** Hitting enemies 10 times within 5 seconds grants +31.50% Engineering for 12 seconds. With a fast-firing SMG, hitting that window is trivial.
-- **Rapid Charge:** Hitting an enemy 5 times in 3 seconds grants 50 Signature Ability Charge. Faster Aegis Operations uptime.
+- **Rapid Charge:** Hitting an enemy 5 times in 3 seconds grants 50 Signature Ability Charge. Faster Defender Drone (signature) uptime.
 
 **Headline attribute:** Skill Multi-Shot Chance +8.09%.
 
@@ -206,7 +207,7 @@ Both guns should run **Engineering-stacked mods** in every slot. These two are p
 | 2pc Jackpot gear | Skill Critical Damage, Signature Ability Charge Efficiency |
 | Copperhead (Primary SMG) | In Sync or Torrential Downpour II, Skill Critical Damage, Armor |
 | MPX (Secondary SMG) | Torrential Downpour II, Rapid Charge, Skill Multi-Shot Chance |
-| Brains Over Brawn OS Protocol | Max to Level 50 for +21.60% Skill Crit Chance |
+| Brains Over Brawn OS Protocol | Max to Level 50 for +21.60% Skill Crit Chance; talent upgrades from duplicates take the hit damage from 24% to 48% Engineering |
 | Body Armor talent | Injured Concealment (or Rank 2 for +25% Damage) |
 | Backpack talent | Prime Engineer (+22.50% Engineering on skill deploy) |
 | Weapon mods (all slots) | Engineering main stat. On new mods, Skill Critical Damage % or Skill Intensity % (Shredding and Blast rolls were removed in Season 2 Phase 1) |

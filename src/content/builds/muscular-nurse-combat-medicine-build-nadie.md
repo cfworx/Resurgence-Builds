@@ -5,7 +5,7 @@ subclass: "Combat Medicine"
 playstyle: Hybrid
 pve: true
 pvp: true
-lastUpdated: 2026-06-16T00:00:00Z
+lastUpdated: 2026-10-28T00:00:00Z
 patch: "1.1.2.2"
 tags: ["Field Medic", "Combat Medicine", "Healing Elites", "Self-Propelled Shield", "Pummeling Shield", "Nadie", "Tank", "Healer", "Build"]
 description: "Nadie's Muscular Nurse: rank 7 Asia Combat Medicine tank-medic. 334k HP, 15.7k Armor, Pummeling Shield OS, Healing Elites 4pc. You are the wall that heals."
@@ -28,7 +28,7 @@ faqs:
   - question: "What is the best Combat Medicine Field Medic build in Division Resurgence?"
     answer: "Nadie's Muscular Nurse is a top-10 Asia server Combat Medicine build running 4pc Healing Elites, 2pc Self-Propelled Shield, and Pummeling Shield OS Protocol. It produces 334k Health, 15.7k Armor, and 20% base Damage Reduction before any talent procs fire. The build tanks Elite Mission bosses while keeping the entire squad alive with healing stations."
   - question: "Does Combat Medicine scale off Toughness or Engineering?"
-    answer: "Toughness, from our understanding. This is the single biggest mistake on Combat Medicine builds. The tooltips imply Engineering affects heal output, but that doesn't seem to hold for the Combat Medic subclass. Toughness is the stat to stack. Nadie stacks 2,410 Toughness for 334k Health, and that Health pool directly drives the healing output."
+    answer: "Toughness, from our understanding. This is the single biggest mistake on Combat Medicine builds. The tooltips imply Engineering affects heal output, but that doesn't seem to hold for the Combat Medicine subclass. Toughness is the stat to stack. Nadie stacks 2,410 Toughness for 334k Health, and that Health pool directly drives the healing output."
   - question: "Is Pummeling Shield good on a Field Medic?"
     answer: "Yes, with an asterisk. The Extra Health proc triggers when you get hit at max health, which a healing station keeps you at constantly. The stun proc triggers every 10 hits while you have Extra Health, but since the June 26, 2026 hotfix it has a 10-second cooldown and only lasts 1.5 seconds (down from 2). So a Field Medic with an M60 still stays topped up and still stuns things, just one nap every 10 seconds instead of a stun-lock. The OS Protocol is not Bulwark-exclusive."
   - question: "Can I solo Elite Missions with this build?"
@@ -48,7 +48,7 @@ faqs:
 
 The first time Nadie shared a build with us, it was the [Involuntary Nap Time](/builds/involuntary-nap-time-bulwark-juggernaut-build/) Bulwark Juggernaut that immortal-stunned everything in PvP. Now he is back with the build he hinted at in that post: a Combat Medicine Field Medic he calls **The Muscular Nurse**, a tank-healer hybrid that runs the same [Pummeling Shield](/database/os-protocols/pummeling-shield/) OS Protocol but trades the Bulwark frame for a healing-focused playstyle that brutalizes Elite Missions.
 
-This is a **24,410 Power Score** build sitting at **334,193 Health, 15,760 Armor, and 20.01% base Damage Reduction** before any talent procs fire. The 4pc [Healing Elites](/database/gear-set-effects/healing-elites/) gives Received Healing, Release Extra Protection, and Armor stacking. The 2pc [Self-Propelled Shield](/database/gear-set-effects/self-propelled-shield/) adds flat Armor. The Pummeling Shield OS Protocol stuns anything you can keep hitting while you have Extra Health. [Hypervigilant](/database/body-armor-talents/#hypervigilant) on the body armor stacks Damage Reduction every time healing ticks. [Rock Solid](/database/backpack-talents/#rock-solid) on the backpack adds another DR layer every time you receive healing. The core loop is: throw a healing station, stand in it, hold the trigger, stun everything that gets close, and never die.
+This is a **24,410 Power Score** build sitting at **334,193 Health, 15,760 Armor, and 20.01% base Damage Reduction** before any talent procs fire. The 4pc [Healing Elites](/database/gear-set-effects/healing-elites/) gives Received Healing, Release Extra Protection, and Armor stacking. The 2pc [Self-Propelled Shield](/database/gear-set-effects/self-propelled-shield/) adds +14% Armor. The Pummeling Shield OS Protocol stuns what you're hitting while you have Extra Health, once every 10 seconds since the June 26 hotfix. [Hypervigilant](/database/body-armor-talents/#hypervigilant) on the body armor stacks Damage Reduction every time healing ticks. [Rock Solid](/database/backpack-talents/#rock-solid) on the backpack adds another DR layer every time you receive healing. The core loop is: throw a healing station, stand in it, hold the trigger, stun something every 10 seconds, and never die.
 
 Nadie's pitch is one of the best build descriptions we have ever received:
 
@@ -56,7 +56,7 @@ Nadie's pitch is one of the best build descriptions we have ever received:
 
 > [!WARNING] Season 1 Phase 3 and Season 2 changes that affect this build
 > - **Pummeling Shield (June 26 hotfix):** The stun now has a 10-second cooldown and lasts 1.5s instead of 2s. "Stuns everything" is now "stuns something every 10 seconds." The Extra Health clause that keeps you alive wasn't mentioned in that change.
-> - **Damage Reduction cap (June 26 hotfix):** DR is now capped at 80%. Base 20% plus Hypervigilant II (21%), Rock Solid II (20%) and Steady Suppression (18%) is already about 79% on paper if those stack additively, so piling on more DR is likely wasted.
+> - **Damage Reduction cap (June 26 hotfix):** DR is now capped at 80%. Base 20% plus Hypervigilant II (21%), Rock Solid II (20%) and Steady Suppression (18%) is already about 79% on paper if those stack additively, so piling on more DR may be wasted. If Damage Reduction sources multiply instead, the total is lower and there's more headroom.
 > - **Medic Hypershot (Season 1 Phase 3, June 24):** Ubisoft fixed Combat Medic dealing more damage than expected at regular intervals. At 66k DPS this build was never a damage poster, but expect a bit less.
 > - **Gear mods (Season 2 Phase 1):** Gear mods can now roll Received Healing, Max Health and Armor, which are exactly the stats this build stacks.
 >
@@ -65,7 +65,7 @@ Nadie's pitch is one of the best build descriptions we have ever received:
 ---
 
 > [!WARNING] Combat Medicine Heals Scale Off Toughness, NOT Engineering
-> The in-game tooltip implies Engineering affects Combat Medicine heal output. From our understanding, it does not. The correct primary stat for Combat Medicine is **Toughness**. Engineering scales Aegis Operator healing, a different system entirely. Nadie stacks 2,410 Toughness for 334k Health, and that Health pool directly drives his healing output. If you copy this build with Engineering cores, your heals will do nothing.
+> The in-game tooltip implies Engineering affects Combat Medicine heal output. From our understanding, it does not. The correct primary stat for Combat Medicine is **Toughness**. Engineering scales Aegis Operations healing, a different system entirely. Nadie stacks 2,410 Toughness for 334k Health, and that Health pool directly drives his healing output. If you copy this build with Engineering cores, your heals will do nothing.
 
 ---
 
@@ -90,7 +90,7 @@ Nadie's pitch is one of the best build descriptions we have ever received:
 | Received Healing | 59.93% |
 | Movement Speed | 4.00% |
 
-That **20.01% base Damage Reduction** is the floor. Once [Hypervigilant](/database/body-armor-talents/#hypervigilant) II (+7% DR per heal tick, 3 stacks = +21%), [Rock Solid](/database/backpack-talents/#rock-solid) II (+20% DR on receiving healing), and [Steady Suppression](/database/weapon-talents/steady-suppression/) (+18% DR while firing) start layering, the effective DR in an Elite Mission boss room is absurd (right up to the 80% cap the June 26 hotfix added). The **59.93% Received Healing** is the secret that keeps the Pummeling Shield full-health proc and Rock Solid II cycling consistently: every heal hits 60% harder.
+That **20.01% base Damage Reduction** is the floor. Once [Hypervigilant](/database/body-armor-talents/#hypervigilant) II (+7% DR per heal tick, 3 stacks = +21%), [Rock Solid](/database/backpack-talents/#rock-solid) II (+20% DR on receiving healing), and [Steady Suppression](/database/weapon-talents/steady-suppression/) (+18% DR while firing) start layering, the effective DR in an Elite Mission boss room is absurd (on paper they add up to about the 80% cap the June 26 hotfix added; if Damage Reduction sources multiply rather than add, the real total is lower). The **59.93% Received Healing** is the secret that keeps the Pummeling Shield full-health proc and Rock Solid II cycling consistently: every heal hits 60% harder.
 
 ---
 
@@ -137,7 +137,7 @@ Base [Hypervigilant](/database/body-armor-talents/#hypervigilant) grants +5% DR 
 
 *Receiving Healing grants +20% Damage Reduction for 3 seconds.*
 
-Base [Rock Solid](/database/backpack-talents/#rock-solid) is +15% DR per heal proc. The II variant is +20%. Every time your healing station tops you off, you get a 3-second +20% DR window. Stack it with Hypervigilant II and you have **two separate heal-triggered DR procs running simultaneously**. This is the load-bearing piece of the entire build.
+Base [Rock Solid](/database/backpack-talents/#rock-solid) (rank I in our database) is +15% DR per heal proc, and Nadie's Rock Solid II tooltip reads +20%. Every time your healing station tops you off, you get a 3-second +20% DR window. Stack it with Hypervigilant II and you have **two separate heal-triggered DR procs running simultaneously**. This is the load-bearing piece of the entire build.
 
 ---
 
@@ -157,7 +157,7 @@ The same [Pummeling Shield](/database/os-protocols/pummeling-shield/) from [Invo
 | Power Score | 2,467 |
 | **Talent** | While possessing Extra Health, apply Stun after every 10 hits performed. At Max Health, grants Extra Health equal to 2400% Firepower for 10 seconds when hit. |
 
-The second clause is the magic on a tank-medic. Every time you take a hit at full health, you get a massive Extra Health buff equal to 2400% of your Firepower stat. That Extra Health lets the first clause fire: while you have Extra Health, every 10 hits you land applies a Stun. (Since the June 26, 2026 hotfix, that Stun lasts 1.5 seconds and has a 10-second cooldown.) Your healing station keeps you at full health. The next hit triggers it again. You never leave the proc state during sustained fights.
+The second clause is the magic on a tank-medic. Every time you take a hit at full health, you get an Extra Health buff equal to 2400% of your Firepower stat. On Nadie's 268 Firepower that's a thin layer, much smaller than one Sadistic Shield II proc (below), but its real job is switching on the first clause: while you have Extra Health, every 10 hits you land applies a Stun. (Since the June 26, 2026 hotfix, that Stun lasts 1.5 seconds and has a 10-second cooldown.) Your healing station keeps you at full health. The next hit triggers it again. You never leave the proc state during sustained fights.
 
 ---
 
@@ -247,7 +247,7 @@ The detailed loop:
 3. **Hold the trigger**: Steady Suppression gives +18% DR while firing. Precise Support adds an Armor stack (and Rescue Efficiency) every 6 hits. Pummeling Shield stuns every 10 hits (once per 10 seconds since the June 26 hotfix).
 4. **Take hits freely**: at full health, Pummeling Shield generates Extra Health equal to 2400% Firepower. Hypervigilant II and Rock Solid II both trigger from the healing ticks, stacking DR.
 5. **Swap to M60 for boss solo**: big magazine, Sadistic Shield II generates Extra Health every 5 hits, Conceited II adds DR on every kill
-6. **Deploy Combat Medicine signature** on whoever needs emergency healing or on unlucky enemies
+6. **Deploy your Healing Swarm signature** on whoever needs emergency healing (Nadie's "unlucky dudes")
 
 The entire art of this build is **positioning your healing station where your team will actually stand in it**. If your teammates avoid the ring, swap to the M60 and solo-tank the boss yourself.
 
@@ -257,11 +257,11 @@ The entire art of this build is **positioning your healing station where your te
 
 Three structural reasons this build crushes Elite Missions:
 
-**1. Pummeling Shield's full-health Extra Health proc loops infinitely.** Take a hit → get massive Extra Health from the OS talent → healing station tops you back to full while Extra Health is still active → next hit triggers it again. You essentially never leave the proc state during sustained fights.
+**1. Pummeling Shield's full-health Extra Health proc loops infinitely.** Take a hit → get Extra Health from the OS talent → healing station tops you back to full while Extra Health is still active → next hit triggers it again. You essentially never leave the proc state during sustained fights.
 
 **2. The two-weapon roles are properly separated.** AUG is for keeping the team alive (Precise Support's Rescue Efficiency is a built-in revive multiplier). M60 is for solo boss tanking or duo-carrying lower-PS teammates. Pick the weapon based on team composition, not what feels good.
 
-**3. Healing Elites 4pc + Pummeling Shield stack vertically, not horizontally.** Most builds compete with themselves for stat budget. This one stacks Armor (combo set), Toughness (OS Protocol), Extra Health (weapon talents + OS), and Received Healing (combo set) on completely separate axes. No overlap means every stat investment pays out fully.
+**3. Healing Elites 4pc + Pummeling Shield stack vertically, not horizontally.** Most builds compete with themselves for stat budget. This one stacks Armor (gear sets), Toughness (OS Protocol), Extra Health (weapon talents + OS), and Received Healing (gear set and rolls) on completely separate axes. No overlap means every stat investment pays out fully.
 
 ---
 
@@ -283,7 +283,7 @@ This build lets a tank-medic carry under-geared teammates through content they c
 | 4pc Healing Elites (Mask, Gloves, Holster, Backpack) | Damage Reduction, Armor, Received Healing, Max Health on every sub-roll. T2 pieces for full stat ceiling. |
 | 2pc Self-Propelled Shield (Body, Kneepads) | Received Healing + Skill CDR on body. Armor + Skill Crit Chance on kneepads. |
 | Body armor talent | Hypervigilant (II preferred). +5-7% DR per heal tick, 3 stacks. |
-| Backpack talent | Rock Solid (II preferred). +15-20% DR on receiving healing. |
+| Backpack talent | Rock Solid (II preferred). +15% DR on receiving healing at rank I; Nadie's II reads +20%. |
 | AUG A3 Para XS (T2 SMG) | Steady Suppression + Precise Support. Received Healing + Skill Multi-Shot bonus attributes. |
 | M60 (T2 LMG) | Sadistic Shield + Conceited. Max Health + Armor bonus attributes. |
 | Pummeling Shield OS | Weekly Bounties or the OS Protocol Sealed Cache. When this was written, a gold from the bounties was rare (Died Again Gaming guessed under 5 percent in June); by October he says the fourth boss's Key Rewards guarantee a random gold each week. Max to Level 50 for +45% Toughness. |

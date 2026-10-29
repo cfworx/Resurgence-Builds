@@ -67,12 +67,12 @@
   "fire-cycle": {
     "slug": "fire-cycle",
     "title": "Fire Cycle",
-    "intro": "Fire Cycle is a Tier 2 gear set that formed the backbone of the Demolitionist meta when we last tested it (Patch 1.1.2.2). The 4-piece bonus grants +12% Skill Multi-Shot Chance passively, with no conditions or positioning requirements. Combined with Toymaker II and sub-attribute stacking, Fire Cycle pushes Skill Multi-Shot Chance into the 35-45% range. The set only drops from T2 content (requires Conflicts Level 100 or T2 PvE unlock). If you're not there yet, 4pc Jackpot is the bridge."
+    "intro": "Fire Cycle is a Tier 2 gear set that formed the backbone of the Demolitionist meta when we last tested it (Patch 1.1.2.2). The 4-piece bonus grants +12% Skill Multi-Shot Chance passively, with no conditions or positioning requirements. Combined with Toymaker II and sub-attribute stacking, Fire Cycle pushes Skill Multi-Shot Chance into the 35-45% range. PVE Enjoyer says the set only drops from T2 content, and gives Conflicts Level 100 or a T2 PvE unlock as the gate. If you're not there yet, 4pc Jackpot is the bridge."
   },
   "pressing-matter": {
     "slug": "pressing-matter",
     "title": "Pressing Matter",
-    "intro": "Pressing Matter is an Engineering OS Protocol that grants +12% Skill Intensity at base level (+24% at level 50) and a talent providing +10% Skill Cooldown Recovery. It's the standard OS Protocol for Demolitionist glass cannon builds and most Engineering-stacking loadouts. The cooldown reduction means more skill casts per fight, which means more multi-shot triggers. PVE Enjoyer runs it on his 333k DPS build. Farm it from weekly bounties: multiple copies drop within a week or two of consistent bounty farming."
+    "intro": "Pressing Matter is an Engineering OS Protocol that grants +12% Skill Intensity at base level (+24% at level 50) and a talent providing +10% Skill Cooldown Recovery. It's the standard OS Protocol for Demolitionist glass cannon builds and most Engineering-stacking loadouts. The cooldown reduction means more skill casts per fight, which means more multi-shot triggers. PVE Enjoyer runs it on his 333k DPS build. Farm it from weekly bounties (multiple copies drop within a week or two of consistent bounty farming), or roll for it in the OS Protocol Sealed Cache, where Ubisoft lists it as an A-tier drop."
   },
   "jackpot": {
     "slug": "jackpot",

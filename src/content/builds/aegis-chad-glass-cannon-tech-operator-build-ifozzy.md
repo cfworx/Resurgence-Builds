@@ -5,7 +5,7 @@ subclass: "Aegis Operations"
 playstyle: DPS
 pve: true
 pvp: true
-lastUpdated: 2026-06-16T00:00:00Z
+lastUpdated: 2026-10-28T00:00:00Z
 patch: "1.1.2.2"
 tags: ["Tech Operator", "Aegis Operations", "Jackpot", "Boom-Shakalaka", "Glass Cannon", "Brains Over Brawn", "Warlord", "Skill Crit", "Build"]
 description: "LtFoe's Double Agent Tech Op: two setups, one loadout. Swap 2 gear pieces between Glass Cannon DPS and Duality PvP. 727k DPS, 66% Skill Crit."
@@ -13,7 +13,7 @@ author: "RapidF5 (via LtFoe)"
 featuredImage: "/images/builds/aegis-chad-tech-operator-build-ifozzy-hero.webp"
 imageAlt: "Division Resurgence Double Agent Tech Operator build by LtFoe showing 24.80k Power Score with Jackpot 4-piece and Glass Cannon II gear"
 shareTitle: "Two builds. One loadout. Zero excuses."
-shareText: "LtFoe's Double Agent build: swap your chest and backpack, go from Glass Cannon nuke mode to Duality brick mode. 727k DPS or 25% Damage Reduction. Pick one."
+shareText: "LtFoe's Double Agent build: swap your chest and backpack, go from Glass Cannon nuke mode to Duality brick mode. 727k DPS or 20%+ Damage Reduction before Injured Taunt stacks. Pick one."
 sources:
   - 'LtFoe (LtFoe, Clan TruthAbove). Discord submission with 30+ in-game screenshots, June 2026.'
   - 'In-game Division Resurgence Build Database, verified June 2026.'
@@ -23,9 +23,9 @@ faqs:
   - question: "Do I need exotic gear for The Double Agent build?"
     answer: "No exotic gear pieces required. Every armor slot is standard legendary. The only exotic weapon is the Warlord (AR). The primary is an Enhanced ACR-E assault rifle. The Brains Over Brawn OS Protocol is the biggest chase item. If you have BoB and a Warlord, you have the offensive core."
   - question: "What if I do not have Brains Over Brawn?"
-    answer: "Run a purple OS Protocol that rolls Skill Crit Chance or Skill Crit Damage as a stand-in. You will lose roughly 10-12% Skill Crit Chance and the Engineering scaling talent, which is a significant damage cut. When this was written, BoB came from the Weekly Bounties. It's a blue (Specialized) protocol, and Ubisoft's drop table puts it in Tier B of the OS Protocol Sealed Cache, at 3.14% per cache, so it's one of the easier ones to land. Season 2 Phase 1 refreshed the Weekly Bounty sets and adjusted their rewards, so check what the current ones pay out. Still worth chasing every week."
+    answer: "Run a purple OS Protocol with a Skill Crit main stat as a stand-in. Chain Reaction's Skill Critical Chance (+14.40% at level 1) is actually higher than BoB's +10.80%, while a Skill Critical Damage purple like Tactical Persistence trades BoB's crit chance for crit damage. Either way you lose the Engineering on-hit talent, which is the significant damage cut. When this was written, BoB came from the Weekly Bounties. It's a blue (Specialized) protocol, and Ubisoft's drop table puts it in Tier B of the OS Protocol Sealed Cache, at 3.14% per cache, so it's one of the easier ones to land. Season 2 Phase 1 refreshed the Weekly Bounty sets and adjusted their rewards, so check what the current ones pay out. Still worth chasing every week."
   - question: "Why Jackpot 4-piece plus Boom-Shakalaka 2-piece?"
-    answer: "Jackpot 4-piece gives +10.8% Skill Crit Chance, +24% Skill Crit Damage, and +12% Skill Radius. Boom-Shakalaka 2-piece adds -6% Skill Cooldown Recovery for better skill uptime. The key insight is that when LtFoe swaps his chest and backpack between DPS and durable mode, both replacement pieces stay in the same combo sets, so the bonuses never break."
+    answer: "Jackpot 4-piece gives +10.8% Skill Crit Chance, +24% Skill Crit Damage, and +12% Skill Radius. Boom-Shakalaka 2-piece adds -6% Skill Cooldown Recovery for better skill uptime. The key insight is that when LtFoe swaps his chest and backpack between DPS and durable mode, both replacement pieces stay in the same gear sets, so the bonuses never break."
   - question: "Can I PvP with the Glass Cannon profile?"
     answer: "You can, but expect to trade one-shots. Glass Cannon inflicts -10% Damage Reduction on yourself, which means flanks and Demolitionist nukes will delete you. The durable profile with Duality and Injured Taunt is the PvP-preferred swap."
   - question: "How do I farm two Chatzatz Chests with different talents?"
@@ -42,7 +42,7 @@ faqs:
 
 > Build credit: **LtFoe** (LtFoe in-game, Clan TruthAbove, Bloodhound title). Submitted via our Discord with 30+ in-game screenshots. Every stat, every talent, every gear piece in this post comes from his verified loadout. We just helped him write it down.
 
-Some builds are a scalpel. This one is two completely different weapons in the same toolbox, and you only have to swap two pieces to switch modes. LtFoe's **Aegis Operator** setup runs **24.80k Power Score** in Glass Cannon mode and **24.97k in durable mode**, and the trick is keeping four gear slots locked while hot-swapping the body armor and backpack between a [Glass Cannon](/database/body-armor-talents/#glass-cannon) DPS profile and a [Duality](/database/body-armor-talents/#duality) + [Injured Taunt](/database/backpack-talents/#injured-taunt) survivability profile.
+Some builds are a scalpel. This one is two completely different weapons in the same toolbox, and you only have to swap two pieces to switch modes. LtFoe's **Aegis Operations** setup runs **24.80k Power Score** in Glass Cannon mode and **24.97k in durable mode**, and the trick is keeping four gear slots locked while hot-swapping the body armor and backpack between a [Glass Cannon](/database/body-armor-talents/#glass-cannon) DPS profile and a [Duality](/database/body-armor-talents/#duality) + [Injured Taunt](/database/backpack-talents/#injured-taunt) survivability profile.
 
 The build philosophy is straightforward: max [Skill Crit Chance](/database/bonus-attributes/#skill-critical-chance), [Skill Crit Damage](/database/bonus-attributes/#skill-critical-damage), and [Skill Multi-Shot Chance](/database/bonus-attributes/#skill-multi-shot-chance), then layer Damage Reduction as the defensive stat because it scales better than raw Armor in endgame content. The numbers back it up: 66.27% Skill Crit Chance and 155.50% Skill Crit Damage on the DPS profile, with a verified 1.78 million damage hit on a bounty boss.
 
@@ -55,7 +55,7 @@ The build philosophy is straightforward: max [Skill Crit Chance](/database/bonus
 > This build has not been re-tested since Patch 1.1.2.2. Full details: [Season 1 Phase 3 patch notes](/patch-notes/season-1-phase-3-a-new-fire/), [Season 2 Phase 1 patch notes](/patch-notes/season-2-phase-1-the-call/) and [Season 2 Phase 2 patch notes](/patch-notes/season-2-phase-2/).
 
 > [!WARNING] Aegis Burst Scales Off Crit, Not Skill Intensity
-> The #1 mistake on Aegis Operator builds is stacking Skill Intensity. The Aegis 3-second burst scales with Skill Crit Chance, Skill Crit Damage, and Multishot. Skill Intensity provides minimal benefit. From our understanding, Engineering benefits Aegis burst about 2.25× more than the raw Skill Damage stat. Stack crit stats everywhere.
+> The #1 mistake on Aegis Operations builds is stacking Skill Intensity. The Aegis 3-second burst scales with Skill Crit Chance, Skill Crit Damage, and Multishot. Skill Intensity provides minimal benefit. From our understanding, Engineering benefits Aegis burst about 2.25× more than the raw Skill Damage stat. Stack crit stats everywhere.
 
 ---
 
@@ -63,7 +63,7 @@ The build philosophy is straightforward: max [Skill Crit Chance](/database/bonus
 
 Before either setup makes sense, understand the foundation that makes the swap work.
 
-LtFoe locks in four **[Jackpot](/database/gear-set-effects/jackpot/)** pieces (mask, body armor, holster, knee guards) and two **[Boom-Shakalaka](/database/gear-set-effects/boom-shakalaka/)** pieces (backpack and gloves). When he swaps body armor and backpack between modes, both replacements stay in the same combo set as the pieces they replace. Jackpot chest swaps for Jackpot chest. Boom-Shakalaka backpack swaps for Boom-Shakalaka backpack. The set bonuses never break.
+LtFoe locks in four **[Jackpot](/database/gear-set-effects/jackpot/)** pieces (mask, body armor, holster, knee guards) and two **[Boom-Shakalaka](/database/gear-set-effects/boom-shakalaka/)** pieces (backpack and gloves). When he swaps body armor and backpack between modes, both replacements stay in the same gear set as the pieces they replace. Jackpot chest swaps for Jackpot chest. Boom-Shakalaka backpack swaps for Boom-Shakalaka backpack. The set bonuses never break.
 
 **Jackpot [4/4], active in both setups:**
 
@@ -103,7 +103,7 @@ This is the mode for bounty bosses, story content, and PvE where you have a Defe
 | Skill Multi-Shot Chance | 27.96% |
 | Skill Radius | 27.56% |
 | Sig Ability Charge Efficiency | 38.00% |
-| Damage Reduction | 20.08% passive · 26.65% with weapon talent active |
+| Damage Reduction | 20.08% passive · 26.65% with Black Market AK-74 |
 
 ### Gear (Glass Cannon DPS Setup)
 
@@ -152,7 +152,7 @@ The result holds its weight in Conflict, hot-drops into the Dark Zone for rogue 
 ### Talents
 
 - **Duality II:** Grants +21% Weapon Damage when Health is above 50%. Grants +21% Damage Reduction when Health is below 50%.
-- **Injured Taunt II:** Hits taken grant +2.50% Damage Reduction for 10 seconds, up to 10 stacks.
+- **Injured Taunt II:** Hits taken grant +2.50% Damage Reduction for 10 seconds, up to 10 stacks (LtFoe's reading; our database lists rank I at +1.80%).
 
 **The math on the durable profile:** At full health, Duality gives you +21% Weapon Damage to power your AR. Once you dip below half, it flips to +21% Damage Reduction. Stack that with 10 Injured Taunt stacks (another +25% Damage Reduction) and the passive DR layers, and you are an absolute brick. LtFoe says the difference between his old 8% DR and his current 20%+ baseline was noticeable in Conflict survivability. The Dark Zone is still scary because [Demolitionists](/class/demolitionist/) can nuke anything. That is a Resurgence balance reality, not a build problem.
 
@@ -171,9 +171,9 @@ Both setups use the same two weapons. LtFoe runs the Enhanced ACR-E as primary f
 | Talent 1 | **[In Sync](/database/weapon-talents/in-sync/) II** |
 | Talent 2 | **[Fully Charged](/database/weapon-talents/fully-charged/) II** |
 
-**[In Sync](/database/weapon-talents/in-sync/)** is the single strongest talent for a hybrid weapon-and-skill build. Weapon Hits grant +9% Skill Damage for 8 seconds. Skill Hits grant +9% Weapon Damage for 8 seconds. When both buffs are active simultaneously, the bonus doubles, effectively +18% in both directions. The talent text does not state the double-dip. It is confirmed through community damage testing and still active post-May 2026.
+**[In Sync](/database/weapon-talents/in-sync/)** is the single strongest talent for a hybrid weapon-and-skill build. Our database has the rank I text: "Weapon Hits grant +9% Skill Damage for 8 seconds. Skill Hits grant +9% Weapon Damage for 8 seconds. Bonus is doubled when both buffs are active at the same time." The double-dip is in the talent text itself: with both buffs up, rank I gives +18% in both directions. LtFoe runs In Sync II, so his tooltip should read higher than these rank I numbers.
 
-**[Fully Charged](/database/weapon-talents/fully-charged/)** feeds Engineering on every empty-mag reload: +7.50% Engineering for 12 seconds, up to 3 stacks (+22.50% max). The ACR-E's steady reload cycle keeps Engineering elevated.
+**[Fully Charged](/database/weapon-talents/fully-charged/)** feeds Engineering on every empty-mag reload: +7.50% Engineering for 12 seconds, up to 3 stacks (+22.50% max). Those are the rank I numbers from our database; LtFoe's Fully Charged II should read higher. The ACR-E's steady reload cycle keeps Engineering elevated.
 
 > [!INFO] SMG Alternative
 > LtFoe's preferred setup is double AR or AR + SMG. If you want to run an SMG in the second slot instead of the Warlord, his picks are the **Modified USC** (comes with Crit Chance as its TAM unlock) or the **Police UMP-45** (comes with Crit Damage as its TAM unlock). Both feed the Skill Crit stack this build lives on.
@@ -182,7 +182,7 @@ Both setups use the same two weapons. LtFoe runs the Enhanced ACR-E as primary f
 
 | Stat | Value |
 |---|---|
-| Tier | Exotic |
+| Rarity | Exotic |
 | Type | Assault Rifle |
 | Skill Multi-Shot Chance | +5.84% |
 | Skill Critical Damage | +18.54% |
@@ -190,7 +190,7 @@ Both setups use the same two weapons. LtFoe runs the Enhanced ACR-E as primary f
 
 **Play Rough:** While firing, reduces Incoming Damage by 25%. When firing ceases, applies 60% of the reduced damage and grants +10% Skill Damage for 10 seconds.
 
-The [Warlord](/database/exotic-weapons/warlord/) doubles as a defensive cooldown. Fire it to tank damage, stop firing to deal that damage back at the target and pop a +10% Skill Damage buff. For an Aegis Operator living by skill damage uptime, that buff window matters.
+The [Warlord](/database/exotic-weapons/warlord/) doubles as a defensive cooldown. Fire it to take 25% less damage. When you stop, it applies 60% of the damage it held back (our read, the same as in our [exotic weapons guide](/guides/division-resurgence-exotic-weapons-list-2026/), is that this lands on you) and grants +10% Skill Damage for 10 seconds. For an Aegis Operations build living by skill damage uptime, that buff window matters.
 
 ### Backup AR: Black Market AK-74
 
@@ -213,12 +213,12 @@ The [Brains Over Brawn](/database/os-protocols/brains-over-brawn/) OS Protocol t
 | Skill Damage | +215 |
 | Health | +7,052 |
 | Power Score | 1,660 |
-| **Talent** | Hits deal additional damage equal to 48% Engineering |
+| **Talent** (fully upgraded) | Hits deal additional damage equal to 48% Engineering (24% before talent upgrades) |
 
 That 48% Engineering on-hit bonus means every point of Engineering on your gear translates into actual damage, not just bigger skill numbers in a menu.
 
 > [!INFO] BoB Was Nerfed: Build Is Designed Post-Nerf
-> Community reports put the Brains Over Brawn change on EU servers around May 7-8, 2026, and the official Season 1 Phase 2 notes (May 12) list a fix for it "scaling wrong stats." Community numbers had pre-nerf Aegis builds hitting 580k per burst, with post-nerf realistic burst output around 100k-250k in fully optimized conditions. The OS Protocol still works and remains the best option for Aegis Operator builds. This build is designed and verified entirely after the nerf (but before the Season 1 Phase 3 Aegis Burst fix; see the warning at the top). LtFoe's 1.78m bounty boss hit comes from the combination of BoB + Glass Cannon + Prime Engineer + Jackpot 4-piece stacking, not from a single broken OS.
+> Community reports put the Brains Over Brawn change on EU servers around May 7-8, 2026, and the official Season 1 Phase 2 notes (May 12) list a fix for it "scaling wrong stats." Community numbers had pre-nerf Aegis builds hitting 580k per burst, with post-nerf realistic burst output around 100k-250k in fully optimized conditions. The OS Protocol still works and remains the best option for Aegis Operations builds. This build is designed and verified entirely after the nerf (but before the Season 1 Phase 3 Aegis Burst fix; see the warning at the top). LtFoe's 1.78m bounty boss hit comes from the combination of BoB + Glass Cannon + Prime Engineer + Jackpot 4-piece stacking, not from a single broken OS.
 
 ---
 
@@ -232,7 +232,7 @@ Every mod slot feeds either Skill Crit, Multishot, or Damage Reduction. No waste
 | First-Aid Firefly | **Teamfight** (3pc) | Hits deal additional damage equal to 80% Engineering for 8s after deploying First-Aid Firefly; bonus also granted to targeted ally | Skill Crit Chance +4.71%, Skill Crit Damage +8.22%, Skill Crit Chance +4.50%, Skill Crit Damage +7.88%, DR +3.63%, Skill Crit Damage +7.61% |
 | Defender Drone | **Hazardous Area** (3pc) | Defender Drone deals damage to enemies within its radius every second | Skill Crit Damage +7.20%, Skill Crit Damage +9.04% |
 
-The Teamfight combo on First-Aid Firefly is the standout: 80% of your Engineering as bonus damage for 8 seconds every time you throw the Firefly. With 2,250 Engineering, that is 1,800 bonus damage per hit for the entire team. The Hazardous Area combo on Defender Drone turns it into a passive damage aura. Combined with Combat Enhancer converting Mender Drone healing into even more damage, every skill is pulling double duty.
+The Teamfight combo on First-Aid Firefly is the standout: 80% of your Engineering as bonus damage for 8 seconds every time you throw the Firefly. With 2,250 Engineering, that is 1,800 bonus damage per hit, and the ally your Firefly targets gets the bonus too. The Hazardous Area combo on Defender Drone turns it into a passive damage aura. Combined with Combat Enhancer converting Mender Drone healing into even more damage, every skill is pulling double duty.
 
 ---
 
@@ -243,8 +243,8 @@ The rotation is the same in both setups. The gear swap changes your damage ceili
 **In Glass Cannon mode:**
 
 1. **Pre-deploy skills at full health** to bank the [Prime Engineer](/database/backpack-talents/#prime-engineer) buff (+31.50% Engineering for 12s)
-2. **Open with the ACR-E** to trigger [In Sync](/database/weapon-talents/in-sync/): weapon hits feed +9% Skill Damage, skill hits feed +9% Weapon Damage, doubled when both are active
-3. **Burn through magazines** to trigger Fully Charged stacks: each empty-mag reload adds +7.50% Engineering, up to 3 stacks
+2. **Open with the ACR-E** to trigger [In Sync](/database/weapon-talents/in-sync/): weapon hits feed Skill Damage and skill hits feed Weapon Damage (+9% each at rank I, more on his II), doubled when both are active
+3. **Burn through magazines** to trigger Fully Charged stacks: each empty-mag reload adds Engineering (+7.50% per stack at rank I, more on his II), up to 3 stacks
 4. **Let your drone and Firefly do the heavy lifting**: they are critting at 66%+ with 155% crit damage and scaling off your elevated Engineering
 5. **Swap to Warlord when you need a defensive window**: fire to tank 25% reduced incoming damage, stop firing for +10% Skill Damage
 
@@ -260,11 +260,11 @@ LtFoe's own words on the durable profile: *"Great for playing Elite missions min
 
 Three things make The Double Agent stand out among the Tech Operator setups floating around:
 
-**1. The combo set never breaks.** Most plug-and-play swap builds drop a 4-piece bonus when you swap gear. LtFoe's solution keeps [Jackpot](/database/gear-set-effects/jackpot/) 4 and [Boom-Shakalaka](/database/gear-set-effects/boom-shakalaka/) 2 active in both modes. That is a permanent floor of +10.8% Skill Crit Chance and +24% Skill Crit Damage you never lose.
+**1. The set bonuses never break.** Most plug-and-play swap builds drop a 4-piece bonus when you swap gear. LtFoe's solution keeps [Jackpot](/database/gear-set-effects/jackpot/) 4 and [Boom-Shakalaka](/database/gear-set-effects/boom-shakalaka/) 2 active in both modes. That is a permanent floor of +10.8% Skill Crit Chance and +24% Skill Crit Damage you never lose.
 
-**2. The Damage Reduction layer is real.** Players sleep on Damage Reduction because the individual rolls look small (3%, 4%, 5% per piece). But stacked across the build, LtFoe hits 20% baseline before any active buffs fire. In durable mode with Injured Taunt at 10 stacks, that climbs past 45%. That is the difference between getting one-tapped and getting a chance to react.
+**2. The Damage Reduction layer is real.** Players sleep on Damage Reduction because the individual rolls look small (3%, 4%, 5% per piece). But stacked across the build, LtFoe hits 20% baseline before any active buffs fire. In durable mode with Injured Taunt at 10 stacks, that climbs a long way: past 45% if the stacks add straight on top, somewhat less if Damage Reduction sources multiply (our read: his 20.08% baseline plus the AK-74's +8.23% roll shows as 26.65%, which fits multiplying better than adding). That is the difference between getting one-tapped and getting a chance to react.
 
-**3. Brains Over Brawn outclasses every purple OS.** Even post-nerf, the +21.60% Skill Crit Chance roll alone exceeds most purple OS Protocol stat blocks. The 48% Engineering talent turns every Engineering investment on your gear into on-hit damage that your sheet DPS number does not show. LtFoe: *"What makes it strong is the crit chance and combination of added damage to your skill damage. It really outshines any of the purple OS available."*
+**3. LtFoe rates Brains Over Brawn above every purple OS.** The crit chance helps, but it isn't what sets BoB apart: level for level, purple protocols carry bigger stat blocks, and Chain Reaction's +14.40% Skill Critical Chance beats BoB's +10.80% (both double by level 50). What no purple has is BoB's talent, which turns every Engineering investment on your gear into on-hit damage that your sheet DPS number does not show (24% of your Engineering at base, 48% on his fully upgraded copy). LtFoe: *"What makes it strong is the crit chance and combination of added damage to your skill damage. It really outshines any of the purple OS available."*
 
 
 
@@ -288,7 +288,7 @@ The man has been through the grind. Trust the work.
 | Boom-Shakalaka Gloves | Skill Crit Chance + Skill Crit Damage |
 | Enhanced ACR-E (T2 AR) | In Sync II + Fully Charged II |
 | Warlord (Exotic AR) | DZ vendor: 15,000 DZ Credits since Season 2 Phase 2 (was ~17,500), and exotic mods no longer come pre-equipped. Buy while in Engineering spec for correct attribute rolls. |
-| Brains Over Brawn OS Protocol | Weekly Bounties when this was written, or the OS Protocol Sealed Cache. It's a blue protocol, so it can't come from the random gold that Died Again Gaming says the fourth Weekly Bounty boss guarantees each week (October 2026). Max to Level 50 for +21.60% Skill Crit Chance. |
+| Brains Over Brawn OS Protocol | Weekly Bounties when this was written, or the OS Protocol Sealed Cache. It's a blue protocol, so it can't come from the random gold that Died Again Gaming says the fourth Weekly Bounty boss guarantees each week (October 2026). Max to Level 50 for +21.60% Skill Crit Chance, and feed duplicates into Talent Upgrade to take the talent from 24% to 48% Engineering. |
 | Skill mods | Teamfight (First-Aid Firefly), Hazardous Area (Defender Drone), Combat Enhancer (Mender Drone) |
 
 ---

@@ -5,7 +5,7 @@ subclass: "Aegis Operations"
 playstyle: Support
 pve: true
 pvp: false
-lastUpdated: 2026-10-25T12:00:00Z
+lastUpdated: 2026-10-28T12:00:00Z
 patch: "Season 2 · Phase 2"
 verified: false
 tags: ["tech-operator", "Aegis Operations", "healer", "support", "build-guide", "Season 2", "Long-term Effect", "Mechanical Expert"]
@@ -129,7 +129,7 @@ Full set text is in our [skill mod combo database](/database/skill-mod-combos/).
 - **Long-term Effect:** 2pc Skill Health +12%, 3pc Skill Duration +14.4%, 4pc Engineering +18%. TikTokAndy reads the same three numbers.
 - **Mechanical Expert:** 2pc Skill Duration +9.6%.
 
-He says those set bonuses aren't included in the attribute numbers on his stat screen, so the real totals are higher than the table above. His mask, body armor and kneepads are Long-term Effect; he doesn't say which two pieces carry Mechanical Expert.
+He says those set bonuses aren't included in the attribute numbers on his stat screen, so the real totals are higher than the table above. His mask, body armor and kneepads are Long-term Effect; he doesn't say which two pieces carry Mechanical Expert. Our planner link assumes the backpack is the fourth Long-term Effect piece and the gloves and holster are the Mechanical Expert pair.
 
 | Slot | Main rolls | Attributes and talent | His verdict |
 |---|---|---|---|
@@ -154,7 +154,7 @@ He says those set bonuses aren't included in the attribute numbers on his stat s
 | Talent | Base version | His reading |
 |---|---|---|
 | **Enhancement Trade** | +6% Skill Intensity for each 20% of the magazine emptied, for 8 seconds, up to 4 stacks; 1-second cooldown | II: +8.4% per stack |
-| **Adaptation** | Body shots +4.80% Skill Duration, headshots +6% Skill Intensity, each for 8 seconds | II: +6.2% and +8.4%. He has seen three Adaptation stacks active at once and isn't sure how. |
+| **Adaptation** | Body shots +4.80% Skill Duration, headshots +6% Skill Intensity, each for 8 seconds | II: +6.2% and +8.4%. The headshot number fits the usual rank II step (about 1.4x on most talents we've checked); the body-shot one doesn't, so check your own tooltip. He has seen three Adaptation stacks active at once and isn't sure how. |
 | **Torrential Downpour** | 10 hits within 5 seconds grant +22.50% Engineering for 12 seconds | II: he reads +31% here (the II value is +31.50% on our other builds) |
 | **Last Stand** | Hits behind cover grant +24% Skill Duration for 10 seconds | Same 24% |
 

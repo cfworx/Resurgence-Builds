@@ -5,7 +5,7 @@ subclass: "Juggernaut"
 playstyle: Tank
 pve: true
 pvp: true
-lastUpdated: 2026-06-13T00:00:00Z
+lastUpdated: 2026-10-28T00:00:00Z
 patch: "1.2"
 tags: ["Juggernaut", "Shield", "Stun", "Pummeling Shield", "Healing Elites", "Self-Propelled Shield", "PPSH-41", "FAMAS", "Nadie", "Bulwark", "Tank", "Involuntary Nap Time"]
 description: "Nadie's Immortal Stunner Bulwark Juggernaut build using the Pummeling Shield OS Protocol. Stun the biggest enemies, soak everything, and let your squad clean up. Asia Server Rank 16 Juggernaut. Full breakdown of gear, mods, weapons, skills, and stats."
@@ -20,21 +20,21 @@ sources:
 plannerHash: "s=Bulwark&sc=Juggernaut&n=Involuntary+Nap+Time&ms=gs-14&m1=dr&m2=arm&gs=gs-15&g1=mhp&g2=arm&hs=gs-14&h1=rh&h2=sace&cs=gs-14&ct=ba-25&c1=sace&c2=mhp&ps=gs-14&pt=bp-21&p1=chc&p2=dr&ks=gs-15&k1=rh&k2=sdu&w1s=sw-13&w1tr=T2&w1t=wt-6&w1t2=wt-15&w1b1=rh&w1b1v=19.28&w1b2=wms&w1b2v=4.26&w2s=sw-6&w2tr=T2&w2t=wt-46&w2t2=wt-60&w2b1=mhp&w2b1v=16.47&w2b2=rh&w2b2v=16.37&os=os-54&sm1=smc-50&sm2=smc-37&sm3=smc-51"
 faqs:
   - question: "What is the best Bulwark Juggernaut build in Division Resurgence?"
-    answer: "Nadie's Involuntary Nap Time build runs 4pc Healing Elites, 2pc Self-Propelled Shield, PPSH-41 with Backup Protection and Damage Trade, FAMAS with Shooting Repair and Swift Taunt, and the Pummeling Shield OS Protocol. It sat at 336k Health, 13.2k Armor, and Rank 16 on the Asia Server Bulwark Juggernaut leaderboard when Nadie sent it in (June 2026). The June 26 hotfix later put a 10-second cooldown on Pummeling Shield's stun, so the stun-lock is weaker than it was."
+    answer: "Nadie's Involuntary Nap Time build runs 4pc Healing Elites, 2pc Self-Propelled Shield, PPSH-41 with Backup Protection and Damage Trade II, FAMAS with Shooting Repair and Swift Taunt II, and the Pummeling Shield OS Protocol. It sat at 336k Health, 13.2k Armor, and Rank 16 on the Asia Server Bulwark Juggernaut leaderboard when Nadie sent it in (June 2026). The June 26 hotfix later put a 10-second cooldown on Pummeling Shield's stun, so the stun-lock is weaker than it was."
   - question: "What is the Pummeling Shield OS Protocol in Division Resurgence?"
-    answer: "Pummeling Shield is a High-End Toughness OS Protocol with the talent: While possessing Extra Health, apply Stun after every 10 hits performed. Since the June 26, 2026 hotfix that stun lasts 1.5 seconds (down from 2) and has a 10-second cooldown. It adds Toughness, All Weapon Damage, and Health to your build."
+    answer: "Pummeling Shield is a High-End Toughness OS Protocol with the talent: While possessing Extra Health, apply Stun after every 10 hits performed. At Max Health, grants Extra Health equal to 2400% Firepower for 10 seconds when hit. Since the June 26, 2026 hotfix the stun lasts 1.5 seconds (down from 2) and has a 10-second cooldown. It adds Toughness, All Weapon Damage, and Health to your build."
   - question: "What gear set does the Involuntary Nap Time build use?"
     answer: "4pc Healing Elites for Received Healing, Extra Protection, and Armor bonuses. 2pc Self-Propelled Shield for additional Armor. The combination creates a self-healing tank that gets tougher the more damage it takes."
   - question: "What weapons does Nadie use on the Involuntary Nap Time build?"
-    answer: "Primary PPSH-41 SMG with Backup Protection and Damage Trade talents. Secondary FAMAS Assault Rifle with Shooting Repair and Swift Taunt talents. Both are standard T2 Level 50 weapons, no exotics required."
+    answer: "Primary PPSH-41 SMG with Backup Protection and Damage Trade II talents. Secondary FAMAS Assault Rifle with Shooting Repair and Swift Taunt II talents. Both are standard T2 Level 50 weapons, no exotics required."
   - question: "Is the Involuntary Nap Time build viable in the Dark Zone?"
     answer: "Yes. Per Nadie's submission, the build is specifically designed for group play in Elite Missions and the Dark Zone, where the tank-and-stun role pairs with squadmates dumping damage while you lock down the biggest threats."
   - question: "Can I run this build without exotic weapons?"
-    answer: "Yes. Neither equipped weapon is exotic. The build runs entirely on standard T2 legendary gear, which is part of what makes it accessible for a build sitting at Rank 16 on the leaderboard."
+    answer: "Yes. Neither equipped weapon is exotic. The build runs entirely on standard (non-exotic) T2 gear, which is part of what makes it accessible for a build sitting at Rank 16 on the leaderboard."
   - question: "What is the Power Score of the Involuntary Nap Time build?"
     answer: "22,610 in combat view and 23,176 on the leaderboard. That was Rank 16 on the Asia Server Bulwark Juggernaut Power Score leaderboard at the time of submission (June 2026)."
   - question: "How does the stun loop work in this build?"
-    answer: "The Pummeling Shield OS Protocol stuns every 10 hits while you have Extra Health. Backup Protection on the PPSH-41 grants Extra Health on weapon swap, and Swift Taunt on the FAMAS grants Extra Health when hitting 3 enemies. The high fire rate on both weapons used to mean multiple stuns per magazine. Since the June 26, 2026 hotfix the stun has a 10-second cooldown and lasts 1.5 seconds, so it's one nap per 10 seconds, max. Still a nap. Just a shorter one with a waiting list."
+    answer: "The Pummeling Shield OS Protocol stuns every 10 hits while you have Extra Health. Backup Protection on the PPSH-41 grants Extra Health on weapon swap, Swift Taunt II on the FAMAS grants Extra Health when hitting 3 enemies, and Pummeling Shield itself grants Extra Health when you're hit at Max Health. The high fire rate on both weapons used to mean multiple stuns per magazine. Since the June 26, 2026 hotfix the stun has a 10-second cooldown and lasts 1.5 seconds, so it's one nap per 10 seconds, max. Still a nap. Just a shorter one with a waiting list."
 ---
 
 **By RapidF5 (via Nadie) ·** Patch 1.2
@@ -45,7 +45,7 @@ faqs:
 
 Every now and then a community submission lands that does not need polish, just a stage. This is one of those. Nadie sent over the Immortal Stunner build, constructed around a golden **Pummeling Shield** OS Protocol. The brief: "find a safe corner, stun the guy with longest health bar and throw some snacks for my boys." Hard to argue with that gameplay loop.
 
-This is a **stun-tank archetype**. You are sitting at **22,610 Power Score, 60,260 DPS, 13,216 Armor, and 336,081 Health**. The 4pc Healing Elites gives you received healing, extra protection, and armor stacking. The 2pc Self-Propelled Shield adds +14% Armor. The Pummeling Shield OS Protocol stuns anything you can keep hitting while you have Extra Health. Unflinching on the body armor restores health based on Toughness every time you take damage. Rock Solid on the backpack gives damage reduction every time you receive healing. The core loop is: get hit, heal, get tougher, spray, stun, repeat. This is not a glass cannon. It is not a DPS poster boy. It is the immovable object that turns elite encounters into a calm afternoon at the petting zoo.
+This is a **stun-tank archetype**. You are sitting at **22,610 Power Score, 60,260 DPS, 13,216 Armor, and 336,081 Health**. The 4pc Healing Elites gives you received healing, extra protection, and armor stacking. The 2pc Self-Propelled Shield adds +14% Armor. The Pummeling Shield OS Protocol stuns anything you can keep hitting while you have Extra Health. Unflinching on the body armor has a 70% chance to restore Health based on Toughness when you take damage (2-second cooldown). Rock Solid on the backpack gives damage reduction every time you receive healing. The core loop is: get hit, heal, get tougher, spray, stun, repeat. This is not a glass cannon. It is not a DPS poster boy. It is the immovable object that turns elite encounters into a calm afternoon at the petting zoo.
 
 > [!WARNING] Season 1 Phase 3 and Season 2 changes that affect this build
 > - **Pummeling Shield (June 26 hotfix):** The stun now has a 10-second cooldown and lasts 1.5s instead of 2s. The "multiple stuns per magazine" loop below is gone: one stun every 10 seconds at most, however fast you spray. That's a big hit to this build's whole identity.
@@ -86,12 +86,12 @@ This is a **stun-tank archetype**. You are sitting at **22,610 Power Score, 60,2
 
 | Slot | Item | Details |
 |---|---|---|
-| **Primary** | PPSH-41 | **Backup Protection + Damage Trade** · RPM: 900 · MAG: 71 · Received Healing +19.28%, Weapon Multi-Shot Chance +4.26% |
-| **Secondary** | FAMAS | **Shooting Repair + Swift Taunt** · RPM: 900 · MAG: 30 · Max Health +16.47%, Received Healing +16.37% |
-| **OS Protocol** | **Pummeling Shield** | While possessing Extra Health, apply Stun after every 10 hits performed (1.5s stun on a 10s cooldown since the June 26 hotfix) · Toughness +45%, +447 · All Weapon Damage +358 · Health +11,753 |
+| **Primary** | PPSH-41 | **Backup Protection + Damage Trade II** · RPM: 900 · MAG: 71 · Received Healing +19.28%, Weapon Multi-Shot Chance +4.26% |
+| **Secondary** | FAMAS | **Shooting Repair + Swift Taunt II** · RPM: 900 · MAG: 30 · Max Health +16.47%, Received Healing +16.37% |
+| **OS Protocol** | **Pummeling Shield** | While possessing Extra Health, apply Stun after every 10 hits performed (1.5s stun on a 10s cooldown since the June 26 hotfix). At Max Health, grants Extra Health equal to 2400% Firepower for 10 seconds when hit · Toughness +45%, +447 · All Weapon Damage +358 · Health +11,753 |
 | **Skill 1** | Shockwave Spike | Skill Mod: Reciprocal Charge |
 | **Skill 2** | Phalanx Shield | Skill Mod: Last Moment |
-| **Skill 3** | Breach Combo | Skill Mod: Anchored |
+| **Signature** | Breach Combo | Skill Mod: Anchored |
 
 ---
 
@@ -105,11 +105,11 @@ The weapon selections are not random. Each one exists to trigger and maintain th
 
 Every time Nadie swaps to the PPSH, they get a chunk of Extra Health. That is the exact condition the Pummeling Shield needs to start stunning. Swap, get Extra Health, start spraying, stack hits, trigger stuns. A fast fire rate and a drum magazine mean hits stack fast. The Pummeling Shield stuns every 10 hits while you have Extra Health, so a single PPSH magazine used to be multiple stuns worth of work. Since the June 26 hotfix the stun has a 10-second cooldown, so it's one stun per 10 seconds at most now.
 
-**Damage Trade:** "+8.40% Weapon Damage for each 20% of the Magazine Size emptied, up to 4 stacks." With a drum magazine, the damage ramps as it drains. By the time you are hitting the last 15 rounds, you are swinging with meaningful bonus damage on top of the stuns.
+**Damage Trade II:** "+8.40% Weapon Damage for each 20% of the Magazine Size emptied, up to 4 stacks." With a drum magazine, the damage ramps as it drains. By the time you are hitting the last 15 rounds, you are swinging with meaningful bonus damage on top of the stuns.
 
 ### Secondary: FAMAS
 
-**Swift Taunt:** "Hitting 3 enemies within 5 seconds taunts nearby enemies and grants Extra Health equal to 35% Max Health for 10 seconds."
+**Swift Taunt II:** "Hitting 3 enemies within 5 seconds taunts nearby enemies and grants Extra Health equal to 35% Max Health for 10 seconds."
 
 This is the second Extra Health source. Tag three enemies with the FAMAS, pull aggro, and get 35% Max Health as Extra Health. That is another Pummeling Shield trigger. The taunt effect also means enemies focus you instead of your squad, which is exactly what a tank wants.
 
@@ -148,7 +148,7 @@ This is the second Extra Health source. Tag three enemies with the FAMAS, pull a
 | Received Healing | 53.16% |
 | Movement Speed | 8.00% |
 
-That **57.26% Signature Ability Charge Efficiency** keeps Bulwark signature abilities cycling fast. The **53.16% Received Healing** is the Healing Elites set bonus plus mod stacking, and it is what lets Unflinching and Rock Solid compound into the "immortal" feeling.
+That **57.26% Signature Ability Charge Efficiency** keeps Bulwark signature abilities cycling fast. The **53.16% Received Healing** is the Healing Elites 2pc (+14.4%) plus the Received Healing rolls on the holster, kneepads and weapons, and it is what lets Unflinching and Rock Solid compound into the "immortal" feeling.
 
 ---
 
@@ -168,17 +168,17 @@ For a video demonstration: [Nadie's gameplay video on Facebook](https://www.face
 
 ## Why This Build Works
 
-1. **Multiple Extra Health triggers.** Pummeling Shield needs Extra Health to start stunning. Backup Protection, Swift Taunt, and the Healing Elites set effects all feed Extra Health. You are almost never without it.
-2. **Toughness and Health stacking.** The Pummeling Shield itself adds +45% Toughness, +447 Toughness, and +11,753 Health. Combined with the rest of the gear, you sit at 336k Health with 13.2k Armor. The build does not just survive, it laughs at incoming damage.
+1. **Multiple Extra Health triggers.** Pummeling Shield needs Extra Health to start stunning. Backup Protection (on weapon swap), Swift Taunt II (hitting 3 enemies) and Pummeling Shield itself (getting hit at Max Health grants Extra Health equal to 2400% Firepower for 10 seconds) all feed Extra Health. You are almost never without it.
+2. **Toughness and Health stacking.** Nadie's Level 50 Pummeling Shield adds +45% Toughness, +447 Toughness, +358 All Weapon Damage and +11,753 Health (a Level 1 copy starts at +22.50% Toughness, +97 Toughness, +77 All Weapon Damage and +2,554 Health). Combined with the rest of the gear, you sit at 336k Health with 13.2k Armor. The build does not just survive, it laughs at incoming damage.
 3. **Damage feedback loop.** Unflinching restores Health based on Toughness. Rock Solid adds Damage Reduction when you receive healing. These two stack into a self-perpetuating defensive cycle that gets stronger the more fire you take.
 4. **Group utility.** Stuns are not just self-defense. Stunning the elite means your squad takes less return fire. The tank role here meaningfully buffs the group's effective DPS, not just soaks damage.
-5. **No exotics required.** Both weapons are standard T2 legendary drops. The entire loadout is farmable gear, which makes this build realistic to put together.
+5. **No exotics required.** Both weapons are standard (non-exotic) T2 drops. The entire loadout is farmable gear, which makes this build realistic to put together.
 
 ---
 
 ## Build Breakdown
 
-**What is brilliant:** The triple Extra Health feed (Backup Protection on weapon swap, Swift Taunt on FAMAS, set bonuses) means you basically never lose the Pummeling Shield stun condition. That is genuinely smart kit synergy.
+**What is brilliant:** The triple Extra Health feed (Backup Protection on weapon swap, Swift Taunt II on the FAMAS, and Pummeling Shield's own Extra Health when you're hit at Max Health) means you basically never lose the Pummeling Shield stun condition. That is genuinely smart kit synergy.
 
 **What makes it unique:** 60.26k DPS with 14.36% crit chance and 50% crit damage tells you this build is deliberately trading offensive ceiling for something more valuable: permanent survivability. This build does not want to be the top damage dealer. It wants to be the reason the top damage dealer is still alive.
 
@@ -194,7 +194,7 @@ Nadie's own note on weapons:
 
 > "My recommend weapon (I used to use it but the talents were sucks) is the Last Wave Vector with unbeatable fire rate and sound speed reloading."
 
-If you have a Last Wave Vector sitting in your stash, it is worth testing in the primary slot. The base stats (fire rate, reload speed) align well with the Pummeling Shield's hit-count requirement. Roll talents you actually want and the Vector could be a sidegrade or upgrade depending on your RNG luck.
+If you have that Vector sitting in your stash, it is worth testing in the primary slot. (Our weapon list has no "Last Wave Vector"; Nadie may mean the First Wave Vector 45 ACP, so check the name in-game.) The base stats (fire rate, reload speed) align well with the Pummeling Shield's hit-count requirement. Roll talents you actually want and the Vector could be a sidegrade or upgrade depending on your RNG luck.
 
 ---
 

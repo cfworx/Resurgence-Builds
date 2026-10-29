@@ -5,7 +5,7 @@ subclass: "Tactical Pharma"
 playstyle: DPS
 pve: true
 pvp: true
-lastUpdated: 2026-10-25T12:00:00Z
+lastUpdated: 2026-10-28T12:00:00Z
 patch: "Season 2 · Phase 2"
 verified: false
 tags: ["field-medic", "Tactical Pharma", "build-guide", "Season 2", "jackpot", "Dark Zone"]
@@ -27,7 +27,7 @@ faqs:
   - question: "Is Glass Cannon worth it on Tactical Pharma?"
     answer: "GGReborn runs it; our database lists the base version as +20% Damage in exchange for -10% Damage Reduction. TikTokAndy's chest has Toymaker II, the only good chest talent he could get, and he still calls it one of the squishiest builds he's ever made, which is why he rolled Damage Reduction onto several of his chips. If you wear Glass Cannon, wear it behind cover and a long way from anyone carrying a shotgun."
   - question: "I'm running the older May Tactical Pharma build. What should I change?"
-    answer: "Start with the weapon mods. Season 2 Phase 1 added Skill Intensity and Skill Critical Damage to their bonus pool, old mods keep their old rolls, and GGReborn's mods carry the new ones. He keeps the Jackpot 4pc + Fire Cycle 2pc core and the Glass Cannon chest from our May build page, but runs Brains Over Brawn where that page recommends Rampart, Minion Training II instead of Prime Engineer, and a Lightweight M4 plus First Wave Vector instead of the Vector and MK16 swap. Rampart wasn't in his OS Protocol test, but the four he did test finished within five seconds of each other, so don't burn a month of caches on the OS before the mods are sorted."
+    answer: "Start with the weapon mods. Season 2 Phase 1 added Skill Intensity and Skill Critical Damage to their bonus pool, old mods keep their old rolls, and GGReborn's mods carry the new ones. He keeps the Jackpot 4pc + Fire Cycle 2pc core and the Glass Cannon chest from our May build page, but runs Brains Over Brawn where that page recommends Rampart, Minion Training II instead of Prime Engineer, and a Lightweight M4 plus First Wave Vector instead of the Vector and Mk16 swap. Rampart wasn't in his OS Protocol test, but the four he did test finished within five seconds of each other, so don't burn a month of caches on the OS before the mods are sorted."
 videoId: "OVnksyrlj88"
 videoTitle: "GGReborn: BEST Tactical Pharma Build + Solo Legendary Gameplay"
 videoChannel: "GGReborn"
@@ -38,7 +38,7 @@ plannerHash: "s=Field+Medic&sc=Tactical+Pharma&n=Tactical+Pharma+Season+2&ms=gs-
 
 > Build credit: [**GGReborn**](https://www.youtube.com/watch?v=OVnksyrlj88) for the build (October 16, 2026) and two follow-up tests in the Lone Wolf Challenge: [three stat setups](https://www.youtube.com/watch?v=f1q44KbdS6g) (October 22) and [four OS Protocols](https://www.youtube.com/watch?v=Kz9YlTUl_1s) (October 23). The variant and the Dark Zone notes come from [**TikTokAndy's**](https://www.youtube.com/watch?v=f20v8_cv9Ls) October 15 Tactical Pharma video.
 
-Tactical Pharma is the [Field Medic](/class/field-medic/) focus that read the word "medic" and chose violence. GGReborn's Season 2 Phase 2 version is an Engineering skill build: **Jackpot 4pc + Fire Cycle 2pc**, **Glass Cannon** on the body armor, **Minion Training II** on the backpack, and **Brains Over Brawn**, a blue OS Protocol whose talent makes hits deal bonus damage equal to a share of your Engineering (48% on his level 50 copy). **Chemical Trap**, **Oxidizing Hive** and the **Oxidizing Swarm** signature do the killing. In our reading, the Lightweight M4 and First Wave Vector mostly exist to switch on Skill Damage and Engineering buffs. He shows it off in a solo Legendary run, then went back to Lone Wolf to test two of the build's big open questions.
+Tactical Pharma is the [Field Medic](/class/field-medic/) focus that read the word "medic" and chose violence. GGReborn's Season 2 Phase 2 version is an Engineering skill build: **Jackpot 4pc + Fire Cycle 2pc**, **Glass Cannon** on the body armor, **Minion Training II** on the backpack, and **Brains Over Brawn**, a blue OS Protocol whose talent makes hits deal bonus damage equal to a share of your Engineering (48% on his upgraded copy). **Chemical Trap**, **Oxidizing Hive** and the **Oxidizing Swarm** signature do the killing. In our reading, the Lightweight M4 and First Wave Vector mostly exist to switch on Skill Damage and Engineering buffs. He shows it off in a solo Legendary run, then went back to Lone Wolf to test two of the build's big open questions.
 
 The short answers: four OS Protocols finished **within five seconds** of each other, and the two creators here don't agree on how much Skill Critical Chance you need.
 
@@ -54,7 +54,7 @@ The short answers: four OS Protocols finished **within five seconds** of each ot
 
 ## GGReborn's Gear: Jackpot 4pc + Fire Cycle 2pc
 
-Four pieces of Jackpot and two of Fire Cycle. He doesn't say out loud which two slots carry Fire Cycle, so check his video before you farm. Attribute bonuses as he reads them:
+Four pieces of Jackpot and two of Fire Cycle. He doesn't say out loud which two slots carry Fire Cycle, so check his video before you farm (our planner link puts it on the body armor and holster, TikTokAndy's layout, as a placeholder). Attribute bonuses as he reads them:
 
 | Slot | Talent | Attribute bonuses |
 |---|---|---|
@@ -111,16 +111,16 @@ GGReborn's stated focus: Intensity on the Swarm (with Multi-Shot and Crit Damage
 
 ## Best OS Protocol for Tactical Pharma
 
-GGReborn runs **Brains Over Brawn** at level 50. Our database lists its base talent as "Hits deal additional damage equal to 24% Engineering"; his copy reads 48%. He singles out that talent as the main reason he's highlighting the protocol, since Engineering feeds directly into the bonus damage.
+GGReborn runs **Brains Over Brawn** at level 50. Our database lists its base talent as "Hits deal additional damage equal to 24% Engineering"; his copy reads 48%, because talent upgrades raise that number. Levels only raise the main stat, which is how his copy gets to 21.6% Skill Critical Chance. He singles out that talent as the main reason he's highlighting the protocol, since Engineering feeds directly into the bonus damage.
 
 On October 23 he put four protocols through the Lone Wolf Challenge, keeping his stats as close as he could (he notes identical wasn't possible with different protocols):
 
 | OS Protocol | Rarity | Main stat on his copy | His Skill Crit Chance / Damage | Time left |
 |---|---|---|---|---|
 | Brains Over Brawn | Specialized (blue) | 21.6% Skill Critical Chance | 60.76% / 233.15% | 802 seconds |
-| Collateral Damage | High-End (gold) | 45% Engineering | 55.93% / 217.3% | 804 seconds |
+| Collateral Damage | High-End (gold) | 45% Engineering | 55.93% / 217.3%* | 804 seconds |
 | Tactical Persistence | Superior (purple) | 48.00% Skill Critical Damage | 60% / 243.37% | 804 seconds |
-| Chain Reaction | Superior (purple) | 28.8% Skill Critical Chance | 67.96% / 233.15%* | 807 seconds |
+| Chain Reaction | Superior (purple) | 28.8% Skill Critical Chance | 67.96% / 233.15% | 807 seconds |
 
 *He says the Collateral Damage run had slightly lower crit stats because that's all he could stack with the gear he had.
 
@@ -177,7 +177,7 @@ TikTokAndy published his Tactical Pharma video a day before GGReborn's (October 
 |---|---|---|
 | Sets | Jackpot 4pc (mask, backpack, gloves, kneepads) + Fire Cycle 2pc (body armor, holster) | Jackpot 4pc + Fire Cycle 2pc |
 | Body armor talent | **Toymaker II**: +21% Skill Multi-Shot Chance with no enemies within 20 meters (his reading; base is +15% in our database) | Glass Cannon |
-| Backpack talent | **Overwatch**: he reads +21% Skill Damage after 3 seconds behind cover (base is +15% in our database) | Minion Training II |
+| Backpack talent | **Overwatch**, probably Overwatch II: he reads +21% Skill Damage after 3 seconds behind cover, and 21% is 1.4x the +15% base in our database | Minion Training II |
 | Oxidizing Swarm combo | **Harvest** (Swarm hits reduce Skill Cooldown by 2.4 seconds) | Enhanced Formula |
 | Oxidizing Hive combo | Hereafter Resilience | Hereafter Resilience |
 | Chemical Trap combo | Chemical Recharge | Chemical Recharge |

@@ -201,7 +201,7 @@ Since Season 2 Phase 2 is extended "until we are ready to release a much bigger 
 
 ## Listed but unannounced: Deadlock
 
-Ubisoft's official Exotic Cache drop table includes a **Deadlock Cache**, a **Deadlock Tactical Augmentation Module** and a **Weapon Mod Selection: Deadlock**, right next to the six live exotics. As of October 24, 2026, Ubisoft hasn't mentioned Deadlock in any patch note, article, Steam post or X post we've checked. Weapon type, talent and release date: all unknown. Details in our [Exotic Sealed Caches guide](/guides/exotic-sealed-caches/).
+Ubisoft's official Exotic Cache drop table includes a **Deadlock Cache**, a **Deadlock Tactical Augmentation Module** and a **Weapon Mod Selection: Deadlock**, right next to the six live exotics. As of October 24, 2026, Ubisoft hasn't mentioned Deadlock in any patch note, article, Steam post or X post we've checked. The in-game Build-Making Database doesn't list it either: its Exotic Weapon section showed only the six live exotics when we recorded it on October 28. Weapon type, talent and release date: all unknown. Details in our [Exotic Sealed Caches guide](/guides/exotic-sealed-caches/).
 
 ## Quick comparison
 

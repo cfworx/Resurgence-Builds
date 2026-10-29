@@ -124,14 +124,14 @@ His takeaway, and ours: the more Armor you build in, the better this talent gets
 
 | OS Protocol | Rarity | Talent (our database) | TikTokAndy's reading |
 |---|---|---|---|
-| **Explosive Round** | High-End | Critical Hits performed while aiming create an explosion with a radius of 5 meters around the target that deals 2000% of your Firepower. 5-second cooldown. | His only copy, level 45: +42.75% Firepower (45% at max, he says, which fits the doubling at level 50) and +389 Firepower, plus +311 All Weapon Damage and Health |
+| **Explosive Round** | High-End | Critical Hits performed during aiming create an explosion with a radius of 5 meters around the target that deals damage equal to 2000% Firepower to them. 5-second cooldown. | His only copy, level 45: +42.75% Firepower (45% at max, he says, which fits the doubling at level 50), +389 Firepower and +311 All Weapon Damage, plus its Health bonus |
 
 He calls it "the Firepower version of Collateral Damage," and his copy isn't at level 50 yet because he spent the previous week taking a **Collateral Damage** there instead. His expectation: the Firepower alone should beat **Augmented Lethality** in a lot of situations, and the explosion is a free grenade on every aimed crit, better the more enemies stand in a clump. With a 51 to 90% crit chance, the 5-second cooldown is the only thing slowing it down.
 
 Honorable mentions from the same video:
 
 - **Augmented Lethality:** his long-time pick on the shotgun build ([details](/builds/misdirection-double-barrel-commando-build-tiktokandy/)).
-- **Dominating Presence:** "could be pretty broken" on Vanguard, he says, reading extra Weapon Damage and +10% Multi-Shot Chance for each enemy within 20 meters on his copy. Ubisoft changed its scaling and cut its maximum to 35/42/49/56/63/70% in [Season 2 Phase 2](/patch-notes/season-2-phase-2/), so read your own tooltip.
+- **Dominating Presence:** "could be pretty broken" on Vanguard, he says. Its main stat is Weapon Damage, and its talent adds Weapon Multi-Shot Chance for each enemy within 20 meters: +5% at base in our database, +10% on his copy. Ubisoft changed its scaling and cut its maximum to 35/42/49/56/63/70% in [Season 2 Phase 2](/patch-notes/season-2-phase-2/), so read your own tooltip.
 
 Full text for all of them is in our [OS Protocol database](/database/os-protocols/).
 
@@ -150,7 +150,7 @@ Same three [Vanguard](/class/vanguard/) Commando combo sets as the Double Barrel
 Two numbers from his skill screens:
 
 - **Smart Cover** gives 40% Damage Reduction while you're behind it, and he reads a **15%** base chance to restore a bullet on hits from behind it. He says Optimized Armor adds about 5% and then calls the total 25%. We make that 20%, so check your own screen.
-- **Crit chance stacks with your skills:** 51% on the sheet, 70% with Scanning Pulse active and 90% with Pulse plus Tactical Link. That's the whole reason Explosive Round's "Critical Hits while aiming" condition isn't a problem.
+- **Crit chance stacks with your skills:** 51% on the sheet, 70% with Scanning Pulse active and 90% with Pulse plus Tactical Link. That's the whole reason Explosive Round's "Critical Hits performed during aiming" condition isn't a problem.
 
 ---
 

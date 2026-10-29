@@ -5,7 +5,7 @@ subclass: "Commando"
 playstyle: DPS
 pve: true
 pvp: false
-lastUpdated: 2026-10-25T12:00:00Z
+lastUpdated: 2026-10-28T12:00:00Z
 patch: "Season 2 · Phase 2"
 verified: false
 tags: ["vanguard", "build-guide", "beginner", "Season 2", "Fury Strike", "Phalanx Attack", "Commando"]
@@ -22,7 +22,7 @@ faqs:
   - question: "Should beginners level more than one specialization?"
     answer: "Not at first, says TikTokAndy. Unless you're spending a lot of money, stick to one specialization, farm chips for it and master it, then farm for your second build while you play the first, instead of making the second build first and farming with it."
   - question: "How do you get 100% crit chance on Vanguard?"
-    answer: "TikTokAndy's ladder: about 60% Weapon Critical Hit Chance on the sheet, around +10% while Scanning Pulse with Targeted Surveillance is up, then +20% from Tactical Link and another +10% from a talent he shows on screen that works during Tactical Link. That's 100%, which is also why he started swapping the Commando combo set (another +10.20% per kill or assist) for Bugle Call: past 100%, extra crit chance does nothing."
+    answer: "TikTokAndy's ladder: about 60% Weapon Critical Hit Chance on the sheet, then over 12% more while Scanning Pulse with Targeted Surveillance is up (his figure at around 400 Engineering), +20% from Tactical Link and another +10% from a talent he shows on screen that works during Tactical Link. That takes him to about 100%, which is also why he started swapping the Commando combo set (another +10.20% per kill or assist) for Bugle Call: past 100%, extra crit chance does nothing."
   - question: "Commando or Bugle Call on Tactical Link?"
     answer: "Commando early, Bugle Call once your crit chance is high, per TikTokAndy. Commando adds +10.20% Weapon Critical Hit Chance for 10 seconds per kill or assist during Tactical Link; Bugle Call gives +14.40% Rate of Fire, Damage Reduction and Movement Speed for 15 seconds when you deploy Tactical Link. He goes further than that, too: 'I think bugle call is actually a better idea for any build.'"
   - question: "Targeted Surveillance, Field Supplies or Optimal Awareness?"
@@ -99,7 +99,7 @@ His point about the numbers: with a crit chance under 100%, Weapon Damage is wor
 - **Fury Strike:** 2pc Optimal Range +10%, 3pc Weapon Critical Hit Chance +10.8%, 4pc Weapon Critical Hit Damage +24%. With crits landing most of the time, he says the 4pc "basically just works out to a 24% damage boost."
 - **Phalanx Attack:** 2pc Magazine Size +18%.
 
-His September 24 pieces (he describes two of them as kneepads, so we can't say which of those two is the holster):
+His September 24 pieces (he describes two of them as kneepads, so we can't say which of those two is the holster; our planner link has to pick one, and the set counts come out the same either way):
 
 | Slot | Set | Talent | Attributes and notes |
 |---|---|---|---|
@@ -132,7 +132,7 @@ The build works with any weapon because the crit, damage and survival all come f
 |---|---|---|
 | **Precise Crit** | 10 hits on an enemy grant +15% Weapon & Skill Critical Damage to all allies within 40 meters for 10 seconds | Helps the whole team, not just you |
 | **Performer** | +18% Weapon Damage on enemies within 20 meters, -6% beyond | He reads Performer II as +25%, and says it's "why the gun is melting like it is" |
-| **Strained** | Firing for 0.5 seconds grants Critical Hit Damage for 5 seconds, up to 3 stacks (10% per stack at tier 1, 14% at tier 2, after a Season 2 Phase 2 tooltip fix) | On his ACR |
+| **Strained** | Firing for 0.5 seconds grants Critical Hit Damage for 5 seconds, up to 3 stacks (10% per stack on Strained, 14% on Strained II, after a Season 2 Phase 2 tooltip fix; Ubisoft's notes call these tier 1 and tier 2) | His is Strained II, on a T1 ACR |
 | **Swift Taunt** | Hitting 3 enemies within 5 seconds taunts nearby enemies and grants Extra Health equal to 25% Max Health for 10 seconds | "More of a PvE talent" |
 | **Unhinged** | +18% Weapon Damage, -10% Stability and Accuracy | On a laser like the Lightweight M4, he says you won't notice the penalty |
 | **Steady Handed** | Hits build Accuracy and Stability stacks; at 30 stacks they're consumed to refill the magazine | He suspects his is bugged, because he's sat on 30 stacks without seeing a refill |

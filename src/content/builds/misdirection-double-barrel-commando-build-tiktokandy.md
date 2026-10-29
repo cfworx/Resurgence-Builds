@@ -5,7 +5,7 @@ subclass: "Commando"
 playstyle: DPS
 pve: true
 pvp: false
-lastUpdated: 2026-10-25T12:00:00Z
+lastUpdated: 2026-10-28T12:00:00Z
 patch: "Season 2 · Phase 2"
 verified: false
 tags: ["vanguard", "build-guide", "Season 2", "Phalanx Attack", "Double Barrel"]
@@ -46,19 +46,19 @@ TikTokAndy calls the Double Barrel "definitely the best gun in the game by a mil
 
 - **Weapon:** Double Barrel with **Misdirection Insurance** and **Still Alive II**.
 - **Gear:** Phalanx Attack 4pc + Gunny Johnny 2pc, **Suppressive Fire II** on the body armor, and on the backpack **Emergency Measures** (TikTokAndy's October pick), **Siege II** (his September one) or **Inspiration** (GGReborn).
-- **Secondary:** a Vector with **Torrential Downpour** and **Last Stand**, fired from behind cover before you cast skills (TikTokAndy, October).
+- **Secondary:** a Vector with **Torrential Downpour II** and **Last Stand**, fired from behind cover before you cast skills (TikTokAndy, October).
 - **Skills:** Smart Cover with **Optimized Armor**, Scanning Pulse with **Field Supplies**, Tactical Link with **Ammo Refill**.
 - **OS Protocol:** **Cover Shooter** since early October; **Augmented Lethality** before that.
 - **The goal:** three shells in the magazine and as many free bullets as the game will hand you.
 
 > [!WARNING] Season 2 changed how this build works
-> Season 2 Phase 1 (August 5) reduced Commando's Target Acquisition talent, changed Concerted Strike to trigger on shots, and changed Ammo Refill from a 72% chance of returning 1 bullet to an 18% chance of returning 4. Ubisoft said it wanted the "Bullet Back" mechanic to be less reliable for the Double Barrel while keeping it similar for weapons with larger magazines. Every video here was recorded after those changes. Details below and in our [Season 2 Phase 1 patch notes](/patch-notes/season-2-phase-1-the-call/).
+> Season 2 Phase 1 (August 5) reduced Commando's Target Acquisition talent, changed Concerted Strike to trigger on shots, and changed Ammo Refill from a 72% chance of returning 1 bullet to an 18% chance of returning 4. Ubisoft said it wanted the "Bullet Back" mechanic to be less reliable for the Double Barrel while keeping it similar for weapons with larger magazines. Every video here was published after those changes; the October 2 video uses older footage, and we can't pin down exactly when it was recorded. Details below and in our [Season 2 Phase 1 patch notes](/patch-notes/season-2-phase-1-the-call/).
 
 ---
 
 ## TikTokAndy's October Update
 
-Two later videos fill in both ends of the story. The one published October 2 shows the build he started with, and the October 6 one shows where it went. Same gun, same talents and the same three combo sets throughout; the protocol, the backpack talent and the secondary are what changed.
+Two later videos fill in both ends of the story. The one published October 2 shows the build he started with, and the October 6 one shows where it went. Same gun, same weapon talents and the same three combo sets throughout; the protocol, the backpack and chest talents, the gear-set split and the secondary are what changed.
 
 ### Where it started: floor 20 on two shells (published October 2)
 
@@ -77,7 +77,7 @@ He soloed **Precious Cargo on Legendary** with this version:
 | OS Protocol | Augmented Lethality | **Cover Shooter** |
 | Gear sets | Phalanx Attack 4pc + Gunny Johnny 2pc (his recommendation) | Gunny Johnny 2pc (mask, body armor) + Phalanx Attack 3pc (gloves, holster, kneepads) + a Quick Draw backpack, until he finds a fourth Phalanx Attack piece |
 | Backpack talent | Siege II | **Emergency Measures** |
-| Secondary | MP7 ("you need a secondary") | **Vector** with Torrential Downpour + Last Stand |
+| Secondary | MP7 ("you need a secondary") | **Vector** with Torrential Downpour II + Last Stand |
 | Armor and Health | 5,200 to 5,300 Armor | 10,000 Armor, 131,000 Health |
 
 His October 6 sheet, all his own readings:
@@ -95,7 +95,7 @@ What changed, and his reasons:
 
 - **Cover Shooter:** "second to none" for PvE with the Double Barrel, he says, and "I've been very happy with it so far." His copy reads +30% Weapon Damage, and its talent stacks a +16% Critical Hit Damage buff up to three times behind cover, which he counts as +48%. In his October 2 video he still preferred Augmented Lethality, so this one's fresh.
 - **Emergency Measures:** "you really need Emergency Measures on one of your pieces," which he calls "basically a second life." Our database: taking damage below 20% Health restores 50% Max Health, 30-second cooldown. He kept the Quick Draw backpack for it (plus high Firepower and Toughness rolls) rather than wait for a Phalanx Attack one.
-- **The Vector secondary:** it runs **Torrential Downpour** (he reads +31.5% Engineering for 12 seconds after 10 hits within 5 seconds, the II value on our other builds, and says it takes him to about 600 Engineering) and **Last Stand** (+24% Skill Duration for 10 seconds on hits behind cover). He shoots with it from cover before he casts, and says it makes Tactical Link last "almost twice as long, at least it feels like it does." That's the Engineering-secondary idea from his September video, now in the loadout.
+- **The Vector secondary:** it runs **Torrential Downpour II** (he reads +31.5% Engineering for 12 seconds after 10 hits within 5 seconds, against +22.50% for rank I in our database, and says it takes him to about 600 Engineering) and **Last Stand** (+24% Skill Duration for 10 seconds on hits behind cover). He shoots with it from cover before he casts, and says it makes Tactical Link last "almost twice as long, at least it feels like it does." That's the Engineering-secondary idea from his September video, now in the loadout.
 - **Gunny Johnny 2pc stays:** "the only 2 piece set bonus that's going to give you rate of fire," and with Suppressive Fire on the same chest he calls the pair "the icing on the cake." Before them, he says, he struggled to put out big damage in a short window.
 - **Field Supplies stays:** he tested the build without it and says it "makes a huge difference."
 
@@ -211,7 +211,7 @@ On survivability, TikTokAndy found the build "very squishy" in September, which 
 | Slot | Weapon | Talents | Rolls and attachments |
 |---|---|---|---|
 | Primary | **Double Barrel** (Shotgun) | **Misdirection Insurance** + **Still Alive II** | TikTokAndy: Weapon Damage (close to a max roll) and Critical Hit Damage, with mostly Firepower attributes plus some Toughness. Attachments: Optimal Range and Reload Speed, plus an extended magazine. GGReborn: a 30% extended magazine and a barrel attachment, with Firepower and Critical Hit Damage rolls. |
-| Secondary | **Vector** (TikTokAndy, October); MP7 before that | **Torrential Downpour** + **Last Stand** | In September he carried an MP7 because "you need a secondary" and floated an Engineering-boosting one. By October he was doing it: a T0 Vector (121 Firepower, 23 Toughness, 285 Engineering on his screen) that he fires from cover before casting. He'd rather its Max Health roll were Skill Intensity or Skill Duration. |
+| Secondary | **Vector** (TikTokAndy, October); MP7 before that | **Torrential Downpour II** + **Last Stand** | In September he carried an MP7 because "you need a secondary" and floated an Engineering-boosting one. By October he was doing it: a T0 Vector (121 Firepower, 23 Toughness, 285 Engineering on his screen) that he fires from cover before casting. He'd rather its Max Health roll were Skill Intensity or Skill Duration. |
 
 His copy reads about 16,000 Blast damage, and he has seen copies above 20,000. It's a close-range gun ("you can't be beaming guys from across the board"), so Optimal Range is the attachment stat he chases first, then Reload Speed. Accuracy, he says, isn't super important.
 
@@ -256,7 +256,7 @@ TikTokAndy's rule of thumb is to stick to Firepower protocols. He switched from 
 | **Augmented Lethality** | Superior | +4% Weapon Damage and +4% Incoming Healing for every enemy within 20 meters | His pick "for a very long time," and he still preferred it on October 2 because Cover Shooter cost him too much Firepower. He thinks it's made for shotgun builds. His upgraded copy reads 36% Firepower, +358 Firepower, +286 All Weapon Damage and about 9,000 Health. |
 | Tight Grouping | Superior | Weapon Critical Hits behind cover have a 5% chance of granting +10% Weapon Critical Hit Damage for 5 seconds, up to 3 stacks | "pretty good too actually" |
 | Assisted Infantry | Superior | Weapon Critical Hit Chance main stat; shooting continuously stacks +2.50% Weapon Damage, up to 6 stacks | One he says people have been talking about |
-| Deadly Accuracy | Superior | Headshots stack Firepower; body shots and misses remove stacks | He'd skip it, because it needs headshots and he says his aim isn't good enough. Same, Andy. |
+| Deadly Accuracy | Superior | Headshots stack Firepower; each body shot or miss removes a stack | He'd skip it, because it needs headshots and he says his aim isn't good enough. Same, Andy. |
 | Mechanized Support | Superior | +15% Weapon Damage while within 20 meters of a deployed Skill | He isn't sure how well it works |
 
 GGReborn shows his own protocol on screen and calls it the best he can usually get as Vanguard, but never says its name, so pause his video if you want to know.
