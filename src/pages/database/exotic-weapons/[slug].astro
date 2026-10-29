@@ -9,6 +9,8 @@ import { DATABASE_UPDATED } from '../../../data/site-config';
 import WeaponAttributes from '../../../components/WeaponAttributes.astro';
 import { truncateDesc, metaDescription } from '../../../utils/seo';
 import exoticWeapons from '../../../data/exotic-weapons.json';
+import GameImage from '../../../components/GameImage.astro';
+import { dbImage, imageObject, CARDS_RECORDED } from '../../../utils/db-images';
 
 export function getStaticPaths() {
   // Exotics with unverified stat lines (statsVerified: false) are in the planner only.
@@ -60,6 +62,9 @@ const faqs = [
 
 const slug = weapon.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
 const siteUrl = 'https://resurgencebuilds.com';
+// From the in-game Build-Making Database card: the red header with the weapon, and the whole card.
+const heroImage = dbImage(`exotic-weapons/${slug}`, 'hero');
+const cardImage = dbImage(`exotic-weapons/${slug}`, 'card');
 
 const weaponLd = {
   '@context': 'https://schema.org',
@@ -72,7 +77,7 @@ const weaponLd = {
   mainEntityOfPage: { '@type': 'WebPage', '@id': `${siteUrl}/database/exotic-weapons/${slug}/` },
   datePublished: '2026-05-29',
   dateModified: DATABASE_UPDATED,
-  image: weapon.image ? { '@type': 'ImageObject', url: `${siteUrl}${weapon.image}`, width: 620, height: 310 } : { '@type': 'ImageObject', url: `${siteUrl}/images/resurgence-builds-official-logo.png`, width: 800, height: 800 },
+  image: heroImage ? imageObject(heroImage) : { '@type': 'ImageObject', url: `${siteUrl}/images/resurgence-builds-official-logo.png`, width: 1024, height: 1024 },
   inLanguage: 'en-US',
   lastReviewed: weapon.verifiedInGame || '2026-05-30',
   wordCount: 800,
@@ -103,7 +108,7 @@ const itemLd = {
 };
 ---
 
-<BaseLayout {title} {description} {breadcrumbs} faqs={faqs} jsonLd={[weaponLd, itemLd]} ogImage={weapon.image || undefined}>
+<BaseLayout {title} {description} {breadcrumbs} faqs={faqs} jsonLd={[weaponLd, itemLd]} ogImage={heroImage?.src || weapon.image || undefined}>
   <div class="container section">
     <Breadcrumbs items={breadcrumbs} />
     <SectionTag label="Exotic Weapon" />
@@ -114,10 +119,15 @@ const itemLd = {
         <span class="weapon-type-badge">{weapon.type}</span>
       </div>
 
-      {weapon.image && (
-        <div style="margin-bottom: var(--sp-6); border-radius: 8px; overflow: hidden; border: 1px solid var(--border);">
-          <img src={weapon.image} alt={`${weapon.name} Exotic ${weapon.type} in Division Resurgence`} width="1200" height="583" style="width: 100%; height: auto; display: block;" />
-        </div>
+      {heroImage && (
+        <figure class="game-figure game-figure--hero">
+          <GameImage
+            image={heroImage}
+            alt={`${weapon.name}, the exotic ${weapon.type} in The Division Resurgence, on its in-game database card (${weapon.damage} at level 1)`}
+            sizes="(max-width: 640px) calc(100vw - 32px), 580px"
+            eager
+          />
+        </figure>
       )}
 
       <!-- Stats Grid -->
@@ -168,6 +178,20 @@ const itemLd = {
           </div>
         )}
       </div>
+
+      {cardImage && (
+        <details class="game-card-toggle">
+          <summary>See the full in-game card</summary>
+          <figure class="game-figure game-figure--card">
+            <GameImage
+              image={cardImage}
+              alt={`The full ${weapon.name} card from The Division Resurgence: ${weapon.rpm} RPM, ${weapon.mag}-round magazine, the ${weapon.talentName} talent, its possible talents and weapon attributes`}
+              sizes="(max-width: 420px) calc(100vw - 64px), 328px"
+            />
+            <figcaption>The {weapon.name} card in the game's Build-Making Database at level 1, recorded {CARDS_RECORDED}.</figcaption>
+          </figure>
+        </details>
+      )}
 
       <!-- Overview -->
       <div style="margin-bottom: var(--sp-8);">

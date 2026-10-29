@@ -4,6 +4,8 @@ import allExoticWeapons from '../../../data/exotic-weapons.json';
 // Exotics with unverified stat lines (statsVerified: false) are in the planner only, not the database.
 const exoticWeapons = allExoticWeapons.filter((w: any) => w.statsVerified !== false);
 import AdSenseUnit from '../../../components/AdSenseUnit.astro';
+import GameImage from '../../../components/GameImage.astro';
+import { dbImage } from '../../../utils/db-images';
 import { verifiedPatch } from '../../../data/site-config';
 // All six exotics were re-checked in the in-game Build-Making Database on 2026-10-28 (Season 2 Phase 2).
 const lastVerified = verifiedPatch();
@@ -51,15 +53,26 @@ const itemListLd = {
   heading="Exotic Weapons"
   subheading="The rarest and most powerful weapons in Resurgence. Each one bends the rules in a different way. Most are broken. That's the point."
   jsonLd={itemListLd}
+  ogImage={dbImage('exotic-weapons/diamondback', 'hero')?.src}
   lastVerified={lastVerified}
   {faqs}
 >
   <p style="color: #c8c8d0; line-height: 1.7; font-size: var(--text-sm); max-width: var(--measure); margin-bottom: var(--sp-6);"><strong style="color: #F5CC45;">Update (October 28, 2026):</strong> every stat line on this page now comes from the in-game Build-Making Database: Level 1, T1 base values with no mods. That put The Bighorn and the Diamondback in the database and corrected numbers we had taken from creators' cards with mods fitted: Lady Death's reload and range, Warlord's accuracy, reload, range and stability, Strawberry Milkshake's accuracy and range, and Scorpio's accuracy, reload, stability and damage. The full list of changes is in our <a href="/guides/division-resurgence-exotic-weapons-list-2026/" style="color: var(--accent);">exotic weapons list</a>. Since Season 2 Phase 2, exotics no longer ship with exotic mods pre-installed.</p>
 
   <div class="db-grid" id="exotics-grid">
-      {exoticWeapons.map((weapon) => (
+      {exoticWeapons.map((weapon, i) => (
         <article class="db-card exotic-card">
           <a href={`/database/exotic-weapons/${slugify(weapon.name)}/`} class="exotic-card-link" aria-label={`View ${weapon.name} exotic weapon details`}>
+            {dbImage(`exotic-weapons/${slugify(weapon.name)}`, 'hero') && (
+              <div class="exotic-card__image exotic-thumb">
+                <GameImage
+                  image={dbImage(`exotic-weapons/${slugify(weapon.name)}`, 'hero')!}
+                  alt={`${weapon.name}, exotic ${weapon.type} in The Division Resurgence, on its in-game card`}
+                  sizes="(max-width: 640px) calc(100vw - 64px), 360px"
+                  eager={i < 2}
+                />
+              </div>
+            )}
             <div class="db-card__header">
               <div>
                 <h2 class="db-card__title">{weapon.name}</h2>
@@ -117,6 +130,8 @@ const itemListLd = {
 </DatabaseLayout>
 
 <style is:global>
+  .exotic-card__image { margin-bottom: var(--sp-4); border-radius: 6px; overflow: hidden; border: 1px solid rgba(255,255,255,0.06); background: rgba(0,0,0,0.3); }
+  .exotic-card__image img { display: block; width: 100%; height: auto; }
   .exotic-card-link {
     display: flex;
     flex-direction: column;

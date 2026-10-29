@@ -5,6 +5,8 @@ recordings of the live game. It is the source of truth the site's database is ch
 turns straight into a spreadsheet: every section has a JSON file and a CSV file with the same rows.
 
 Nothing in this folder is served by the website. `src/data/*.json` is what the site uses; this folder is the evidence behind it.
+The one exception is indirect: `scripts/build-db-images.mjs` turns the `evidence/` images into the in-game card pictures on the
+database pages (resized WebP copies in `public/images/db/`, listed in `src/data/db-images.json`). Rerun it after new evidence lands.
 
 ## Coverage
 

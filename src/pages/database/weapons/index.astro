@@ -15,6 +15,11 @@ import allExoticWeapons from '../../../data/exotic-weapons.json';
 // Exotics with unverified stat lines (statsVerified: false) are in the planner only, not the database.
 const exoticWeapons = allExoticWeapons.filter((w: any) => w.statsVerified !== false);
 import AdSenseUnit from '../../../components/AdSenseUnit.astro';
+import GameImage from '../../../components/GameImage.astro';
+import { dbImage } from '../../../utils/db-images';
+import { publicImageSize } from '../../../utils/image-dims.mjs';
+const exoticHero = (w: any) => dbImage(`exotic-weapons/${w.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')}`, 'hero');
+const imgSize = (src: string) => publicImageSize(src) ?? { width: 1200, height: 571 };
 
 const breadcrumbs = [
   { name: 'Database', url: '/database/' },
@@ -64,9 +69,14 @@ const faqs = [
         {exoticWeapons.map((w: any, i: number) => (
             <article class="db-card exotic-card">
               <a href={`/database/exotic-weapons/${w.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')}/`} class="db-card-full-link" aria-label={`View ${w.name} exotic weapon details`}></a>
-              {w.image && (
-                <div class="db-card__image-banner">
-                  <img src={w.image} alt={`${w.name} Exotic ${w.type} in Division Resurgence`} width="400" height="120" loading={i < 3 ? 'eager' : 'lazy'} decoding="async" />
+              {exoticHero(w) && (
+                <div class="db-card__image-banner exotic-thumb">
+                  <GameImage
+                    image={exoticHero(w)!}
+                    alt={`${w.name}, exotic ${w.type} in The Division Resurgence, on its in-game card`}
+                    sizes="(max-width: 640px) calc(100vw - 64px), 360px"
+                    eager={i < 3}
+                  />
                 </div>
               )}
               <div class="db-card__header">
@@ -117,7 +127,7 @@ const faqs = [
               {hasPage(w) && <a href={`/database/weapons/${slug}/`} class="db-card-full-link" aria-label={`View ${w.name} weapon details`}></a>}
               {w.image && (
                 <div class="db-card__image-banner">
-                  <img src={w.image} alt={`${w.name} ${w.type} in Division Resurgence`} width="400" height="120" loading="lazy" decoding="async" />
+                  <img src={w.image} alt={`${w.name} ${w.type} in Division Resurgence`} width={imgSize(w.image).width} height={imgSize(w.image).height} loading="lazy" decoding="async" />
                 </div>
               )}
               <div class="db-card__header">

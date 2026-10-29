@@ -31,7 +31,7 @@ export function verifiedPatch(pageVerified?: string): string {
  * copy fixes). This is NOT an in-game re-verification: the "Last verified"
  * badge still follows verifiedPatch() above. Bump it when the templates change.
  */
-export const DATABASE_UPDATED = '2026-10-28';
+export const DATABASE_UPDATED = '2026-10-29';
 
 /**
  * Google Analytics 4 measurement ID ("G-XXXXXXXXXX"). Empty means no analytics tag on any page.

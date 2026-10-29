@@ -10,6 +10,8 @@ import { isSkillModIndexable } from '../../../utils/indexability.mjs';
 import DbItemExtras from '../../../components/DbItemExtras.astro';
 import DbFaq from '../../../components/DbFaq.astro';
 import { verifiedPatch, DATABASE_UPDATED } from '../../../data/site-config';
+import GameImage from '../../../components/GameImage.astro';
+import { dbImage, imageObject, CARDS_RECORDED } from '../../../utils/db-images';
 
 export function getStaticPaths() {
   return skillMods.map((mod: any) => ({
@@ -27,6 +29,8 @@ const lastVerified = mod.verifiedInGame ? verifiedPatch() : verifiedPatch('Patch
 const RARITY_COLOR: Record<string, string> = { 'High-End': '#F5CC45', 'Superior': '#a855f7', 'Specialized': '#3b82f6' };
 
 const slug = mod.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+// The set's card in the in-game Build-Making Database, with the skill mods that carry it.
+const cardImage = dbImage(`skill-mod-combos/${slug}`);
 // Game data strings use raw forms like "1 enemies" / "20 second(s)": normalize for display.
 const bonus2 = fixPlurals(mod.bonus2);
 const bonus3 = fixPlurals(mod.bonus3);
@@ -165,7 +169,7 @@ const modLd = {
   mainEntityOfPage: { '@type': 'WebPage', '@id': `${siteUrl}/database/skill-mod-combos/${slug}/` },
   datePublished: '2026-05-30',
   dateModified: DATABASE_UPDATED,
-  image: { '@type': 'ImageObject', url: `${siteUrl}/images/resurgence-builds-official-logo.png`, width: 800, height: 800 },
+  image: cardImage ? imageObject(cardImage) : { '@type': 'ImageObject', url: `${siteUrl}/images/resurgence-builds-official-logo.png`, width: 1024, height: 1024 },
   inLanguage: 'en-US',
   lastReviewed: mod.verifiedInGame || '2026-05-30',
   wordCount: 500,
@@ -180,7 +184,7 @@ const relatedMods = skillMods
 const toModSlug = (name: string) => name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
 ---
 
-<BaseLayout title={title} description={description} breadcrumbs={breadcrumbs} jsonLd={modLd} faqs={faqs} noindex={!indexable}>
+<BaseLayout title={title} description={description} breadcrumbs={breadcrumbs} jsonLd={modLd} faqs={faqs} noindex={!indexable} ogImage={cardImage?.src}>
   <div class="container section">
     <Breadcrumbs items={breadcrumbs} />
     <SectionTag label="Skill Mod" />
@@ -242,6 +246,17 @@ const toModSlug = (name: string) => name.toLowerCase().replace(/[^a-z0-9]+/g, '-
           ? <p class="item-note">Ubisoft's <a href="/database/drop-rates/">drop-rate table</a> probably lists this set as {mod.aliases.join(' or ')}: it's the only {mod.skill} set there we can't match by name or effect.</p>
           : <p class="item-note">Ubisoft's <a href="/database/drop-rates/">drop-rate table</a> lists this set as {mod.aliases.join(' or ')}, its earlier name.</p>)}
       </div>
+
+      {cardImage && (
+        <figure class="game-figure game-figure--wide">
+          <GameImage
+            image={cardImage}
+            alt={`${mod.name} skill mod combo set card in The Division Resurgence: the 2 and 3-piece bonuses and the mods that carry the set`}
+            sizes="(max-width: 760px) calc(100vw - 32px), 720px"
+          />
+          <figcaption>{mod.name} in the game's Build-Making Database, recorded {CARDS_RECORDED}.{/\d/.test(mod.bonus3 || '') && ' The 3-piece numbers are the set\'s lowest tier.'}</figcaption>
+        </figure>
+      )}
 
       <!-- Meta Builds (unique per item, only for pages with editorial notes) -->
       {notes && notes.metaBuilds?.length > 0 && (

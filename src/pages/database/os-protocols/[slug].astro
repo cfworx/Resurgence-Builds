@@ -1,5 +1,7 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
+import GameImage from '../../../components/GameImage.astro';
+import { dbImage, imageObject, CARDS_RECORDED } from '../../../utils/db-images';
 import Breadcrumbs from '../../../components/Breadcrumbs.astro';
 import SectionTag from '../../../components/SectionTag.astro';
 import AdSenseUnit from '../../../components/AdSenseUnit.astro';
@@ -65,6 +67,8 @@ const faqs = [
 
 const slug = protocol.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
 const siteUrl = 'https://resurgencebuilds.com';
+// The protocol's card in the in-game Build-Making Database (580 px wide, far bigger than the icon).
+const cardImage = dbImage(`os-protocols/${slug}`);
 
 const protocolLd = {
   '@context': 'https://schema.org',
@@ -77,14 +81,14 @@ const protocolLd = {
   mainEntityOfPage: { '@type': 'WebPage', '@id': `${siteUrl}/database/os-protocols/${slug}/` },
   datePublished: '2026-05-27',
   dateModified: DATABASE_UPDATED,
-  ...(protocol.image ? { image: { '@type': 'ImageObject', url: `${siteUrl}${protocol.image}`, width: 620, height: 310 } } : {}),
+  ...(cardImage ? { image: imageObject(cardImage) } : {}),
   inLanguage: 'en-US',
   lastReviewed: protocol.verifiedInGame || '2026-05-30',
   wordCount: 600,
   about: { '@id': `${siteUrl}/#division-resurgence` },
 };
 
-const ogImage = protocol.image ? `${siteUrl}${protocol.image}` : undefined;
+const ogImage = cardImage?.src || (protocol.image ? `${siteUrl}${protocol.image}` : undefined);
 ---
 
 <BaseLayout title={title} description={description} breadcrumbs={breadcrumbs} jsonLd={protocolLd} faqs={faqs} ogImage={ogImage}>
@@ -164,6 +168,17 @@ const ogImage = protocol.image ? `${siteUrl}${protocol.image}` : undefined;
           </div>
         </div>
       </div>
+
+      {cardImage && (
+        <figure class="game-figure game-figure--card">
+          <GameImage
+            image={cardImage}
+            alt={`${protocol.name} OS Protocol card in The Division Resurgence: ${protocol.mainStat} main stat, three attributes and the ${protocol.name} talent`}
+            sizes="(max-width: 420px) calc(100vw - 32px), 360px"
+          />
+          <figcaption>{protocol.name} in the game's Build-Making Database, recorded {CARDS_RECORDED}.</figcaption>
+        </figure>
+      )}
 
       <!-- How to Get -->
       <div class="protocol-section">

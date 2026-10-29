@@ -12,7 +12,12 @@ export interface Props {
 
 // Never name a prop `slot` here: Astro reads slot="..." on a component as a named-slot target
 // and silently drops the component when the parent has no slot by that name.
-const { talents } = Astro.props;
+import GameImage from './GameImage.astro';
+import { dbImage, CARDS_RECORDED } from '../utils/db-images';
+const { talents, basePath } = Astro.props;
+// "/database/backpack-talents/" -> "backpack-talents": the folder of the in-game card images.
+const section = basePath.split('/').filter(Boolean).pop() || '';
+const kind = section === 'backpack-talents' ? { talent: 'backpack talent', gear: 'backpacks' } : { talent: 'body armor talent', gear: 'body armor pieces' };
 
 const toSlug = (name: string) => name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
 
@@ -79,6 +84,19 @@ const allRoles = ['DPS', 'Skill', 'Tank/Sustain', 'Team', 'Utility'].filter(r =>
       </h2>
       <p class="ti-entry__desc">{e.description}</p>
       {e.note && <p class="item-note">{e.note}</p>}
+      {dbImage(`${section}/${e.slug}`) && (
+        <details class="game-card-toggle ti-card">
+          <summary>In-game card</summary>
+          <figure class="game-figure game-figure--wide">
+            <GameImage
+              image={dbImage(`${section}/${e.slug}`)!}
+              alt={`${e.name} ${kind.talent} card in The Division Resurgence, with the ${kind.gear} that can roll it`}
+              sizes="(max-width: 760px) calc(100vw - 64px), 688px"
+            />
+            <figcaption>{e.name} in the game's Build-Making Database, recorded {CARDS_RECORDED}. The Source list shows the {kind.gear} that can roll it.</figcaption>
+          </figure>
+        </details>
+      )}
     </article>
   ))}
 </div>

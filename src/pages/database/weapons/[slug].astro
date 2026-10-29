@@ -11,6 +11,9 @@ import standardWeapons from '../../../data/standard-weapons.json';
 import DbItemExtras from '../../../components/DbItemExtras.astro';
 import DbFaq from '../../../components/DbFaq.astro';
 import { verifiedPatch, DATABASE_UPDATED } from '../../../data/site-config';
+import GameImage from '../../../components/GameImage.astro';
+import { dbImage, dbImageNames, armoryScreenId, imageObject, CARDS_RECORDED } from '../../../utils/db-images';
+import { publicImageSize } from '../../../utils/image-dims.mjs';
 const lastVerified = verifiedPatch('Patch 1.1.2.2'); // Bump: drop the arg ONLY after re-verifying this page's content in-game (CURRENT_PATCH is a ceiling, not an auto-bump)
 
 export function getStaticPaths() {
@@ -28,6 +31,11 @@ const { weapon } = Astro.props;
 const typeArticle = /^(SMG|LMG|[AEIOU])/.test(weapon.type) ? 'an' : 'a';
 
 const slug = weapon.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+// The Armory screen this weapon sits on (its class and tier), from the Oct 28 recordings.
+const armoryId = armoryScreenId(weapon.type, weapon.armoryTier);
+const armoryImage = armoryId ? dbImage(armoryId) : undefined;
+const armoryNames = armoryId ? dbImageNames(armoryId) : [];
+const weaponImageSize = weapon.image ? publicImageSize(weapon.image) : null;
 const siteUrl = 'https://resurgencebuilds.com';
 
 const title = `${weapon.name}: Division Resurgence ${weapon.type}`;
@@ -99,7 +107,11 @@ const weaponLd = {
   mainEntityOfPage: { '@type': 'WebPage', '@id': `${siteUrl}/database/weapons/${slug}/` },
   datePublished: '2026-05-30',
   dateModified: DATABASE_UPDATED,
-  image: weapon.image ? { '@type': 'ImageObject', url: `${siteUrl}${weapon.image}`, width: 620, height: 310 } : { '@type': 'ImageObject', url: `${siteUrl}/images/resurgence-builds-official-logo.png`, width: 800, height: 800 },
+  image: weapon.image
+    ? { '@type': 'ImageObject', url: `${siteUrl}${weapon.image}`, ...(weaponImageSize ?? {}) }
+    : armoryImage
+      ? imageObject(armoryImage)
+      : { '@type': 'ImageObject', url: `${siteUrl}/images/resurgence-builds-official-logo.png`, width: 1024, height: 1024 },
   inLanguage: 'en-US',
   lastReviewed: '2026-05-30',
   wordCount: 500,
@@ -134,7 +146,7 @@ const boldStars = (t: string) => t
   .replace(/\*\*(.+?)\*\*/g, '<strong style="color: #fff;">$1</strong>');
 ---
 
-<BaseLayout title={title} description={description} breadcrumbs={breadcrumbs} jsonLd={[weaponLd, itemLd]} faqs={faqs} ogImage={weapon.image || undefined}>
+<BaseLayout title={title} description={description} breadcrumbs={breadcrumbs} jsonLd={[weaponLd, itemLd]} faqs={faqs} ogImage={weapon.image || armoryImage?.src}>
   <div class="container section">
     <Breadcrumbs items={breadcrumbs} />
     <SectionTag label="Weapon Database" />
@@ -156,7 +168,7 @@ const boldStars = (t: string) => t
 
       {weapon.image && (
         <div style="margin-bottom: var(--sp-8); border-radius: 8px; overflow: hidden; border: 1px solid var(--border); background: rgba(0,0,0,0.3);">
-          <img src={weapon.image} alt={`${weapon.name} ${weapon.type} in Division Resurgence`} style="width: 100%; height: auto; display: block;" />
+          <img src={weapon.image} alt={`${weapon.name} ${weapon.type} in Division Resurgence`} width={weaponImageSize?.width} height={weaponImageSize?.height} fetchpriority="high" style="width: 100%; height: auto; display: block;" />
         </div>
       )}
 
@@ -167,6 +179,17 @@ const boldStars = (t: string) => t
           The <strong>{weapon.name}</strong> is {typeArticle} <strong>{weapon.type}</strong> in The Division Resurgence{weapon.rpm && weapon.mag && <> that fires at <strong>{weapon.rpm} RPM</strong> with a <strong>{weapon.mag}-round</strong> magazine</>}{knownDmgType && <> and deals <strong>{knownDmgType}</strong> damage</>}.{armoryTier && <> The in-game Armory lists it under Season 1, Tier {armoryTier.slice(1)}{knownDmgType ? ', with the damage type shown next to its name' : ''} (checked October 28, 2026).</>}
         </p>
       </div>
+
+      {armoryImage && (
+        <figure class="game-figure game-figure--wide">
+          <GameImage
+            image={armoryImage}
+            alt={`The Division Resurgence Armory, ${weapon.type} Tier ${weapon.armoryTier.slice(1)} screen: ${armoryNames.join(', ')}`}
+            sizes="(max-width: 760px) calc(100vw - 32px), 720px"
+          />
+          <figcaption>The {weapon.name} on the Armory's {weapon.type} Tier {weapon.armoryTier.slice(1)} screen, next to the other {weapon.type === 'SMG' || weapon.type === 'LMG' ? weapon.type + 's' : weapon.type.toLowerCase() + 's'} of that tier. Recorded {CARDS_RECORDED}.</figcaption>
+        </figure>
+      )}
 
       {populatedStatCount >= 4 && (
         <WeaponAttributes

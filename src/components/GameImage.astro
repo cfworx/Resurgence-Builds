@@ -1,0 +1,32 @@
+---
+/**
+ * A responsive in-game card image: WebP in two widths (srcset), the real width/height so the
+ * layout never jumps, and lazy loading unless the image is above the fold (eager).
+ */
+import type { DbImage } from '../utils/db-images';
+
+export interface Props {
+  image: DbImage;
+  alt: string;
+  /** How wide the image shows, so the browser can pick the smaller file on phones. */
+  sizes: string;
+  /** Above the fold: load at once with high priority instead of lazily. */
+  eager?: boolean;
+  class?: string;
+}
+
+const { image, alt, sizes, eager = false, class: className } = Astro.props;
+const srcset = image.srcset.map(([w, url]) => `${url} ${w}w`).join(', ');
+---
+<img
+  src={image.src}
+  srcset={srcset}
+  sizes={sizes}
+  width={image.width}
+  height={image.height}
+  alt={alt}
+  loading={eager ? 'eager' : 'lazy'}
+  decoding="async"
+  fetchpriority={eager ? 'high' : undefined}
+  class={className}
+/>

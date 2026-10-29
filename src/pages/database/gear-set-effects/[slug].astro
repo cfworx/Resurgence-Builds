@@ -10,6 +10,8 @@ import DbItemExtras from '../../../components/DbItemExtras.astro';
 import DbFaq from '../../../components/DbFaq.astro';
 import { buildsWearingSet, buildSetLoadouts, fmtDate } from '../../../utils/db-enrich';
 import { verifiedPatch, DATABASE_UPDATED } from '../../../data/site-config';
+import GameImage from '../../../components/GameImage.astro';
+import { dbImage, imageObject, CARDS_RECORDED } from '../../../utils/db-images';
 const lastVerified = verifiedPatch(); // Set text, tiers and Armory pieces re-checked in game on 2026-10-28 (Season 2 Phase 2). Pass an older label here if a later patch changes sets before they're re-checked.
 
 export function getStaticPaths() {
@@ -139,6 +141,9 @@ const faqs = [
   }
 ];
 
+// The set's panel in the in-game Build-Making Database: bonuses on the left, the gear pieces on the right.
+const panelImage = dbImage(`gear-set-effects/${slug}`);
+
 const setLd = {
   '@context': 'https://schema.org',
   '@type': 'Article',
@@ -150,7 +155,7 @@ const setLd = {
   mainEntityOfPage: { '@type': 'WebPage', '@id': `${siteUrl}/database/gear-set-effects/${slug}/` },
   datePublished: '2026-05-30',
   dateModified: DATABASE_UPDATED,
-  image: { '@type': 'ImageObject', url: `${siteUrl}/images/resurgence-builds-official-logo.png`, width: 800, height: 800 },
+  image: panelImage ? imageObject(panelImage) : { '@type': 'ImageObject', url: `${siteUrl}/images/resurgence-builds-official-logo.png`, width: 1024, height: 1024 },
   inLanguage: 'en-US',
   lastReviewed: set.verifiedInGame || '2026-05-30',
   wordCount: 500,
@@ -164,7 +169,7 @@ const bonuses = [
 ];
 ---
 
-<BaseLayout title={title} description={description} breadcrumbs={breadcrumbs} jsonLd={setLd} faqs={faqs}>
+<BaseLayout title={title} description={description} breadcrumbs={breadcrumbs} jsonLd={setLd} faqs={faqs} ogImage={panelImage?.src}>
   <div class="container section">
     <Breadcrumbs items={breadcrumbs} />
     <SectionTag label="Gear Set" />
@@ -181,6 +186,18 @@ const bonuses = [
           <span>Last verified for <strong>{lastVerified}</strong></span>
         </div>
       </div>
+
+      {panelImage && (
+        <figure class="game-figure game-figure--wide">
+          <GameImage
+            image={panelImage}
+            alt={`${set.name} gear set in The Division Resurgence: its 2, 3 and 4-piece bonuses and the gear pieces that carry it`}
+            sizes="(max-width: 760px) calc(100vw - 32px), 720px"
+            eager
+          />
+          <figcaption>{set.name} in the game's Build-Making Database, recorded {CARDS_RECORDED}. The Source list on the right shows the gear pieces that carry the set, by tier.</figcaption>
+        </figure>
+      )}
 
       <!-- Overview -->
       <div class="gearset-section">

@@ -10,6 +10,8 @@ import { isWeaponTalentIndexable } from '../../../utils/indexability.mjs';
 import DbItemExtras from '../../../components/DbItemExtras.astro';
 import DbFaq from '../../../components/DbFaq.astro';
 import { verifiedPatch, DATABASE_UPDATED } from '../../../data/site-config';
+import GameImage from '../../../components/GameImage.astro';
+import { dbImage, imageObject, CARDS_RECORDED } from '../../../utils/db-images';
 
 export function getStaticPaths() {
   return weaponTalents.map((talent: any) => ({
@@ -25,6 +27,8 @@ const { talent } = Astro.props;
 const lastVerified = talent.verifiedInGame ? verifiedPatch() : verifiedPatch('Patch 1.1.2.2');
 
 const slug = talent.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+// The talent's card in the in-game Build-Making Database, with the weapons that can roll it.
+const cardImage = dbImage(`weapon-talents/${slug}`);
 const siteUrl = 'https://resurgencebuilds.com';
 const desc = talent.description.toLowerCase();
 
@@ -150,7 +154,7 @@ const talentLd = {
   mainEntityOfPage: { '@type': 'WebPage', '@id': `${siteUrl}/database/weapon-talents/${slug}/` },
   datePublished: '2026-05-30',
   dateModified: DATABASE_UPDATED,
-  image: { '@type': 'ImageObject', url: `${siteUrl}/images/resurgence-builds-official-logo.png`, width: 800, height: 800 },
+  image: cardImage ? imageObject(cardImage) : { '@type': 'ImageObject', url: `${siteUrl}/images/resurgence-builds-official-logo.png`, width: 1024, height: 1024 },
   inLanguage: 'en-US',
   lastReviewed: talent.verifiedInGame || '2026-05-30',
   wordCount: 400,
@@ -158,7 +162,7 @@ const talentLd = {
 };
 ---
 
-<BaseLayout title={title} description={description} breadcrumbs={breadcrumbs} jsonLd={talentLd} faqs={faqs} noindex={!indexable}>
+<BaseLayout title={title} description={description} breadcrumbs={breadcrumbs} jsonLd={talentLd} faqs={faqs} noindex={!indexable} ogImage={cardImage?.src}>
   <div class="container section">
     <Breadcrumbs items={breadcrumbs} />
     <SectionTag label="Weapon Talent" />
@@ -195,6 +199,17 @@ const talentLd = {
         </div>
         {talent.note && <p class="item-note">{talent.note}</p>}
       </div>
+
+      {cardImage && (
+        <figure class="game-figure game-figure--wide">
+          <GameImage
+            image={cardImage}
+            alt={`${talent.name} weapon talent card in The Division Resurgence, with the weapons that can roll it`}
+            sizes="(max-width: 760px) calc(100vw - 32px), 720px"
+          />
+          <figcaption>{talent.name} in the game's Build-Making Database, recorded {CARDS_RECORDED}. The Source list shows the weapons that can roll it, with their tier.</figcaption>
+        </figure>
+      )}
 
       <!-- Meta Builds (unique per item, only for pages with editorial notes) -->
       {notes && notes.metaBuilds?.length > 0 && (

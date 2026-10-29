@@ -2,6 +2,7 @@
 import BaseLayout from './BaseLayout.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import SectionTag from '../components/SectionTag.astro';
+import { DATABASE_UPDATED } from '../data/site-config';
 
 interface Props {
   title: string;
@@ -15,21 +16,24 @@ interface Props {
   /** ISO dates for the Article JSON-LD; default to the original database launch dates. */
   published?: string;
   modified?: string;
+  /** Social/preview image for the hub (defaults to the site logo). */
+  ogImage?: string;
 }
 
-const { title, description, breadcrumbs, heading, subheading, jsonLd, lastVerified, faqs, published, modified } = Astro.props;
+const { title, description, breadcrumbs, heading, subheading, jsonLd, lastVerified, faqs, published, modified, ogImage } = Astro.props;
 
 // Auto-generate article metadata for hub pages so they get Article JSON-LD
 const articleMeta = {
   publishDate: published || '2026-05-29',
-  modifiedDate: modified || '2026-10-24',
+  // Hubs list the database items, so they change when the database does.
+  modifiedDate: modified || DATABASE_UPDATED,
   author: 'RapidF5',
   tags: ['Division Resurgence', 'database', heading.toLowerCase()],
   wordCount: 1000,
 };
 ---
 
-<BaseLayout {title} {description} {breadcrumbs} {jsonLd} {faqs} article={articleMeta}>
+<BaseLayout {title} {description} {breadcrumbs} {jsonLd} {faqs} {ogImage} article={articleMeta}>
   <div class="container section">
     <Breadcrumbs items={breadcrumbs} />
     <SectionTag label="Database" />
