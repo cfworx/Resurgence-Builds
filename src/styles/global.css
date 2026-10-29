@@ -1087,6 +1087,107 @@ main > .section > :last-child > :last-child { margin-bottom: 0; }
   height: auto;
 }
 
+/* --- Build sheet: a build's loadout at a glance, with the game's own icons (raw HTML in a build
+   post's markdown, see src/content/builds/super-spreader-scorpio-field-grenadier-build.md) --- */
+.bsheet { display: grid; gap: var(--sp-4); margin: var(--sp-6) 0; }
+@media (min-width: 56em) { .bsheet { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.bsheet__group {
+  background: linear-gradient(145deg, rgba(30, 30, 36, 0.9), rgba(20, 20, 24, 0.95));
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: var(--sp-3) var(--sp-4) var(--sp-2);
+  min-width: 0;
+}
+.bsheet__group--wide { grid-column: 1 / -1; }
+@media (min-width: 56em) { .bsheet__cols { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: var(--sp-6); } }
+.bsheet__grid2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: var(--sp-4); }
+.prose .bsheet__label, .prose .syn__title {
+  margin: 0 0 var(--sp-2);
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.bsheet__item {
+  display: flex;
+  gap: var(--sp-3);
+  align-items: center;
+  padding: var(--sp-3) 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  min-width: 0;
+}
+.bsheet__group > .bsheet__label + .bsheet__item { border-top: 0; }
+.bsheet__grid2 > .bsheet__item:nth-child(-n + 2) { border-top: 0; }
+.bsheet__cols > .bsheet__item:first-child { border-top: 0; }
+@media (min-width: 56em) { .bsheet__cols > .bsheet__item:nth-child(2) { border-top: 0; } }
+.bsheet__grid2 > .bsheet__item { flex-direction: column; align-items: flex-start; gap: var(--sp-2); }
+.bsheet__text { min-width: 0; }
+.prose .bsheet img, .prose .syn img { max-width: none; margin: 0; }
+.prose .bsheet .bsheet__tile { flex-shrink: 0; width: 130px; height: auto; border-radius: 5px; box-shadow: 0 4px 14px rgba(0, 0, 0, 0.45); }
+.prose .bsheet .bsheet__tile--wide { width: 150px; }
+.prose .bsheet .bsheet__sq { flex-shrink: 0; width: 56px; height: 56px; border-radius: 10px; background: #2b2b2b; border: 1px solid rgba(255, 255, 255, 0.1); }
+@media (max-width: 32.5em) { .prose .bsheet .bsheet__tile, .prose .bsheet .bsheet__tile--wide { width: 110px; } }
+.prose .bsheet a.bsheet__name {
+  display: block;
+  color: var(--ink-heading);
+  font-family: var(--font-heading);
+  font-size: var(--text-base);
+  font-weight: 800;
+  line-height: 1.25;
+  text-decoration: none;
+}
+.prose .bsheet a.bsheet__name:hover { color: var(--accent); }
+.bsheet__sub {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  color: var(--ink-muted);
+  margin-top: 2px;
+}
+.bsheet__picks { display: flex; flex-wrap: wrap; gap: 6px 14px; margin-top: 8px; }
+.bsheet__picks:empty { display: none; }
+.bsheet__pick {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--ink);
+}
+.prose .bsheet .bsheet__chipicon { flex-shrink: 0; width: 28px; height: 28px; border-radius: 6px; background: #2b2b2b; border: 1px solid rgba(255, 255, 255, 0.1); }
+
+/* --- Synergy cards: what each piece does, icon first --- */
+.syn__wrap { display: grid; gap: var(--sp-5); margin: var(--sp-5) 0; }
+.syn { display: grid; gap: var(--sp-3); grid-template-columns: repeat(auto-fill, minmax(min(100%, 230px), 1fr)); }
+.syn__card {
+  display: flex;
+  gap: var(--sp-3);
+  align-items: center;
+  padding: var(--sp-3);
+  background: linear-gradient(145deg, rgba(30, 30, 36, 0.9), rgba(20, 20, 24, 0.95));
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  min-width: 0;
+}
+.prose .syn .syn__icon { flex-shrink: 0; width: 52px; height: 52px; border-radius: 10px; background: #2b2b2b; border: 1px solid rgba(255, 255, 255, 0.1); }
+.prose .syn__card p { margin: 0; line-height: 1.3; }
+.prose .syn__name { font-family: var(--font-heading); font-weight: 800; color: var(--ink-heading); font-size: var(--text-sm); }
+.prose .syn__when { font-size: var(--text-xs); color: var(--ink-muted); margin-top: 2px; }
+.prose .syn__bonus { font-weight: 800; color: var(--accent); font-size: var(--text-sm); margin-top: 4px; }
+
+/* --- Stat tiles: one big number each --- */
+.stat-tiles { display: grid; gap: var(--sp-3); grid-template-columns: repeat(auto-fill, minmax(min(100%, 200px), 1fr)); margin: var(--sp-5) 0; }
+.stat-tile {
+  padding: var(--sp-4);
+  background: linear-gradient(145deg, rgba(242, 104, 34, 0.1), rgba(20, 20, 24, 0.95));
+  border: 1px solid rgba(242, 104, 34, 0.25);
+  border-radius: 10px;
+}
+.prose .stat-tile p { margin: 0; }
+.prose .stat-tile__big { font-family: var(--font-heading); font-weight: 900; font-size: var(--text-2xl); color: #fff; line-height: 1.1; }
+.prose .stat-tile__label { font-size: var(--text-xs); color: var(--ink-muted); line-height: 1.45; margin-top: 6px; }
+
 /* Prevent CLS for images inside markdown/content bodies */
 .build-body img, .news-body img, .guide-body img, article img {
   max-width: 100%;

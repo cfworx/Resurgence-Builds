@@ -252,6 +252,27 @@ async function clearSeeThrough(buffer) {
   return sharp(out, { raw: { width: w, height: h, channels: ch } }).png().toBuffer();
 }
 
+// OS Protocol icons: each protocol's list tile (public/images/os-protocols/, the game's own art from
+// the Build-Making Database list) shows the device on the left and the protocol's symbol on the right.
+// A square around the symbol (78% of the tile's height, against the right edge) is its icon.
+async function osProtocolIcons(manifest) {
+  const dir = path.join(ROOT, 'public', 'images', 'os-protocols');
+  const outDir = path.join(OUT, 'os-protocols');
+  let n = 0;
+  for (const name of fs.readdirSync(dir).filter((f) => f.endsWith('-os-protocol-division-resurgence.webp')).sort()) {
+    const slug = name.replace(/-os-protocol-division-resurgence\.webp$/, '');
+    if (!manifest[`os-protocols/${slug}`]) continue; // only protocols with a page
+    const file = path.join(dir, name);
+    const { width, height } = await sharp(file).metadata();
+    const size = Math.round(height * 0.78);
+    const left = width - size - Math.round(width * 0.01);
+    const icon = await sharp(file).extract({ left, top: 0, width: size, height: size }).toBuffer();
+    manifest[`os-protocols/${slug}`].icon = await writeVariants(icon, outDir, `${slug}-os-protocol-icon-division-resurgence`, [80, size], size);
+    n += 2;
+  }
+  return n;
+}
+
 // Weapon names on each Armory screen, in the order they were transcribed.
 function armoryNames() {
   const rows = JSON.parse(fs.readFileSync(path.join(ROOT, 'research', 'build-database', 'armory-weapons.json'), 'utf8'));
@@ -282,7 +303,16 @@ async function main() {
     const t = cfg.trim || { left: 0, right: 0, top: 0, bottom: 0 };
     for (const name of fs.readdirSync(srcDir).filter((f) => f.endsWith('.webp')).sort()) {
       const evidenceSlug = name.replace(/\.webp$/, '');
-      if (cfg.skip?.includes(evidenceSlug)) continue;
+      if (cfg.skip?.includes(evidenceSlug)) {
+        // No card for these, but their icon is still the game's own (build posts show it).
+        if (cfg.icon) {
+          const icon = await sharp(path.join(srcDir, name)).extract({ left: ICON.left, top: ICON.top, width: ICON.size, height: ICON.size }).toBuffer();
+          const slug = cfg.rename?.[evidenceSlug] ?? evidenceSlug;
+          manifest[`${section}/${slug}`] = { icon: await writeVariants(icon, outDir, `${slug}-${cfg.icon}-division-resurgence`, ICON.widths, ICON.size) };
+          files += 2;
+        }
+        continue;
+      }
       if (cfg.only && !cfg.only.test(evidenceSlug)) continue;
       const baseSlug = cfg.slugFrom ? cfg.slugFrom(evidenceSlug) : evidenceSlug;
       const slug = cfg.rename?.[baseSlug] ?? baseSlug;
@@ -335,6 +365,7 @@ async function main() {
       manifest[`${section}/${slug}`] = entry;
     }
   }
+  if (!only.length || only.includes('os-protocols')) files += await osProtocolIcons(manifest);
   fs.writeFileSync(MANIFEST, JSON.stringify(manifest, null, 1) + '\n');
   const bytes = (dir) => fs.readdirSync(dir, { recursive: true }).reduce((s, f) => {
     const p = path.join(dir, f);
