@@ -62,6 +62,11 @@ recording, every section of the database is covered.
 - `recordings.json`: the source recordings (file name, date, length, resolution, what each one covers).
 - `evidence/`: one image per entry, stitched from the recording so the whole scrolled card is in one picture. These are the
   proof for every value in the JSON and CSV files.
+- `evidence/exotic-weapons/headers/`: one clean, unstitched frame of each exotic card's top (name bar, weapon art and the
+  attribute bar), 558 x 311, cut from `Screen_Recording_20261028_155256` at the moment each card opened (about 1.3, 24.3,
+  39.8, 56.8, 80.0 and 98.5 seconds in: Lady Death, Warlord, Strawberry Milkshake, Scorpio, The Bighorn, Diamondback). The
+  card's name bar stays put while the rest scrolls, so the stitched cards can show a seam just under it; the site's images
+  use these frames for the top of every exotic card instead.
 - `archive/os-protocols-engineering-2026-07.csv`: the July 2026 capture of the Engineering tab, which had five rows flagged
   for recapture. All five are resolved by the October 28 recording.
 
