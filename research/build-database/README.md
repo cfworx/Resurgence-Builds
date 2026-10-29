@@ -78,8 +78,8 @@ All recordings were made on 2026-10-28 during Season 2 Phase 2. Details are in `
   the record but it says nothing about the attribute itself. The section header reads "When you obtain a weapon or a gear piece,
   2 different Bonus Attributes will be randomly generated for them."
 - **The Armory** (a separate menu, not the Build-Making Database) shows every weapon class in three pages (Season 1, Tier 0, 1
-  and 2) and every gear slot the same way. The icon after a weapon's name is its damage type: a red burst is Blast, a blue
-  slash is Piercing and a green double slash is Shredding (the six exotics confirm the key). Locked items show as blueprints
+  and 2) and every gear slot the same way. The icon after a weapon's name is its damage type: a red burst is Blast, a single blue
+  slash is Piercing and a green three-stroke claw mark is Shredding (the six exotics confirm the key). Locked items show as blueprints
   with a red label; that's ownership, not a different item.
 - The exotic cards also show a "Possible Talents" grid of 18 icons without names. Each icon was matched to its talent by
   comparing it with the icons on the 73 Weapon Talent cards (every match checked by eye); the names are in
