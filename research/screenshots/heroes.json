@@ -814,5 +814,18 @@
   ],
   "window": 4,
   "maxErr": 120
+ },
+ {
+  "out": "research/screenshots/masters/builds/division-resurgence-super-spreader-scorpio-septicemia-card.webp",
+  "video": "Screen_Recording_20261028_155256_The_Division_Resurgence.mp4",
+  "t": 62.5,
+  "crop": [
+   60,
+   100,
+   1640
+  ],
+  "bar": false,
+  "title": "Super Spreader",
+  "subtitle": "Field Grenadier build"
  }
 ]

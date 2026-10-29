@@ -114,6 +114,29 @@
   ],
   "small": "/images/builds/division-resurgence-misdirection-double-barrel-commando-build-street-fight-480.webp"
  },
+ "/images/builds/division-resurgence-super-spreader-scorpio-septicemia-card-1200.webp": {
+  "width": 1200,
+  "height": 630,
+  "srcset": [
+   [
+    480,
+    "/images/builds/division-resurgence-super-spreader-scorpio-septicemia-card-480.webp"
+   ],
+   [
+    800,
+    "/images/builds/division-resurgence-super-spreader-scorpio-septicemia-card-800.webp"
+   ],
+   [
+    1200,
+    "/images/builds/division-resurgence-super-spreader-scorpio-septicemia-card-1200.webp"
+   ],
+   [
+    1600,
+    "/images/builds/division-resurgence-super-spreader-scorpio-septicemia-card-1600.webp"
+   ]
+  ],
+  "small": "/images/builds/division-resurgence-super-spreader-scorpio-septicemia-card-480.webp"
+ },
  "/images/builds/division-resurgence-tactical-pharma-season-2-build-ggreborn-loadout-1200.webp": {
   "width": 1200,
   "height": 567,

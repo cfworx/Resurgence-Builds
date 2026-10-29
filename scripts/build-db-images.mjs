@@ -252,7 +252,8 @@ function armoryNames() {
   for (const r of rows) {
     if (r.exotic || !r.evidence) continue;
     const key = path.basename(r.evidence, '.webp');
-    (out[key] ||= []).push(r.name);
+    // The Armory spells one shotgun with a spaced en dash; site text uses a plain hyphen (SG16-12G).
+    (out[key] ||= []).push(r.name.replace(/\s*[\u2013\u2014]\s*/g, '-'));
   }
   return out;
 }

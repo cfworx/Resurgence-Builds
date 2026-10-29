@@ -166,12 +166,15 @@ const faqs = [
   },
   {
     question: `What is the best ${classData.name} build right now?`,
-    // builds are newest first; name a build we verified before a creator build we haven't re-tested
+    // builds are newest first; name a build we verified before a creator build we haven't re-tested,
+    // and either of those before our own untested theorycraft
     answer: verifiedBuilds.length > 0
       ? `The newest ${classData.name} build we've verified on Resurgence Builds is ${verifiedBuilds[0].data.title}. ${classData.perkOverview}`
-      : builds.length > 0
-        ? `The newest ${classData.name} build on Resurgence Builds is ${builds[0].data.title}, a creator build. ${classData.perkOverview}`
-        : `${classData.name} builds focus on ${classData.role} playstyles. ${classData.perkOverview}`
+      : builds.some((b) => !b.data.theorycraft)
+        ? `The newest ${classData.name} build on Resurgence Builds is ${builds.find((b) => !b.data.theorycraft)!.data.title}, a creator build. ${classData.perkOverview}`
+        : builds.length > 0
+          ? `The newest ${classData.name} build on Resurgence Builds is ${builds[0].data.title}, our own theorycraft that we haven't tested in game yet. ${classData.perkOverview}`
+          : `${classData.name} builds focus on ${classData.role} playstyles. ${classData.perkOverview}`
   },
   {
     question: `What gear sets work best for ${classData.name}?`,

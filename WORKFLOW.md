@@ -210,7 +210,8 @@ Before publishing ANY post (build, guide, or news), every item below must be che
 
 - [ ] **`plannerHash`** - URL parameter string for the "Open in Build Planner" button
 - [ ] **Tier list** - Decide whether the build gets a tier. Ranks are set by hand in the `RANKS` map in `src/pages/tier-list/index.astro`; without an entry it shows under "not ranked yet".
-- [ ] **`verified: false`** - Set this on a creator's build we documented from their videos but haven't re-tested ourselves. It swaps the green "Verified" badge for a "Creator build" badge and labels it as a creator build on database pages. Tiers are set by hand in the `RANKS` map in `src/pages/tier-list/index.astro` (ranked from creator results since October 2026, with the reason and sources shown on the page); a build with no `RANKS` entry shows under "not ranked yet".
+- [ ] **`verified: false`** - Set this on a creator's build we documented from their videos but haven't re-tested ourselves. It swaps the green "Verified" badge for a "Creator build" badge and labels it as a creator build on database pages.
+- [ ] **`theorycraft: true`** (with `verified: false`) - Our own design, put together from the Build-Making Database and not played yet. It shows a "Theorycraft" badge instead of "Creator build". The post says so up top, lists what still needs checking in game, and every gun, chest and backpack in it must pass the planner's roll checks (see `super-spreader-scorpio-field-grenadier-build.md`). When RapidF5 has tested it, add his results and drop both flags. Tiers are set by hand in the `RANKS` map in `src/pages/tier-list/index.astro` (ranked from creator results since October 2026, with the reason and sources shown on the page); a build with no `RANKS` entry shows under "not ranked yet".
 - [ ] **`specialization`** - Must match one of: Demolitionist, Tech Operator, Bulwark, Vanguard, Field Medic
 - [ ] **`playstyle`** - Must match one of: DPS, Tank, Support, Hybrid, Solo
 
