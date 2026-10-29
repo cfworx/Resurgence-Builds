@@ -4,24 +4,21 @@ import osProtocols from '../../../data/os-protocols.json';
 import AdSenseUnit from '../../../components/AdSenseUnit.astro';
 import { verifiedPatch } from '../../../data/site-config';
 // All 66 protocols were re-checked in the in-game Build-Making Database on 2026-10-28 (Season 2 Phase 2).
-// The rankings and per-class picks were not: their last in-game check stays in RANKINGS_CHECKED.
 const lastVerified = verifiedPatch();
-const RANKINGS_CHECKED = 'Patch 1.1.2.2';
 
 const slugify = (name: string) => name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+// Same normalization as the search script below: lowercase words and numbers (% and . kept).
+const norm = (s: string) => s.toLowerCase().normalize('NFKD').replace(/[^a-z0-9%.]+/g, ' ').trim();
 
-const title = "OS Protocols Guide: Tier List & Best Picks";
-const description = "The complete Division Resurgence OS Protocols guide. All protocols across Engineering, Firepower, and Toughness specializations with tier rankings, best picks per class, and FAQ.";
+const title = "OS Protocols Database: Stats & Talents";
+const description = "Search all 66 Division Resurgence OS Protocols by name, talent or stat: rarity, main stat, attributes and cooldowns, checked in game.";
 const breadcrumbs = [
   { name: 'OS Protocols', url: '/database/os-protocols/' }
 ];
 
-const getRarityClass = (rarity: string) => {
-  return `rarity-${rarity.toLowerCase().replace(' ', '-')}`;
-};
-
-const rarities = [...new Set(osProtocols.map(p => p.rarity))];
-const attr1s = [...new Set(osProtocols.map(p => p.attr1))];
+const TYPES = ['Engineering', 'Firepower', 'Toughness'];
+const RARITIES = ['High-End', 'Superior', 'Specialized', 'Standard'];
+const total = osProtocols.length;
 
 const itemListLd = {
   '@context': 'https://schema.org',
@@ -36,8 +33,8 @@ const itemListLd = {
     item: {
       '@type': 'Thing',
       '@id': `${Astro.url.href}#item-${i}`,
-      name: item.name || item.talent || item.attribute || item.protocolName || 'Item',
-      description: item.description || item.talentDescription || item.effect || item.notes || `Details for ${item.name || item.talent || item.attribute || item.protocolName || 'item'}`,
+      name: item.name,
+      description: item.talentDescription,
       url: `${Astro.url.origin}/database/os-protocols/${slugify(item.name)}/`,
       subjectOf: { '@id': 'https://resurgencebuilds.com/#division-resurgence' }
     }
@@ -46,7 +43,7 @@ const itemListLd = {
 
 const faqs = [
   { question: "What is the best OS Protocol in Division Resurgence?", answer: "It depends on your class and build. Going by Season 2 Phase 2 creator results, Brains Over Brawn (on GGReborn's Season 2 Tactical Pharma build) and Cover Shooter (on TikTokAndy's Double Barrel Commando) are the two S picks on our OS Protocol tier list, and TikTokAndy's newest Lightweight M4 Commando runs Explosive Round. The tier list gives the reason and the sources for every rank." },
-  { question: "How do OS Protocols work in Division Resurgence?", answer: "OS Protocols are unique gear-talent items that slot into your Operating System loadout. Each protocol provides a main stat, three sub-stats (a specialization rating, a damage modifier, and a Health value), and a unique Talent that triggers under specific combat conditions. Died Again Gaming points out that any agent level can equip any rarity; higher rarities roll bigger stats and better talents." },
+  { question: "How do OS Protocols work in Division Resurgence?", answer: "OS Protocols are unique gear-talent items that slot into your Operating System loadout. Each protocol provides a main stat, three sub-stats (a specialization rating, a damage modifier, and a Health value), and a unique Talent that triggers under specific combat conditions; some talents have a cooldown. Died Again Gaming points out that any agent level can equip any rarity; higher rarities roll bigger stats and better talents." },
   { question: "How do you upgrade OS Protocols?", answer: "Two separate ways. Leveling raises the stats: you feed a protocol Algorithm Data from bounties and open-world activities, or spare protocols, and creator readings show level 50 doubling the percentage main stat (Pressing Matter's 12% reads 24%), and on-screen readings in between fit +10% of the base every five levels (a level 42 Recursive Treatment reads 1.8 times its base, a level 45 Explosive Round 1.9 times). Talent Upgrade raises the talent: you donate duplicates of the same protocol, and Ubisoft's published ladders climb in five steps of 20% of the base value, ending at double. Gold duplicates are rare, so a purple you can max is often the better bet." },
   { question: "What is the best OS Protocol for Vanguard?", answer: "For a Commando damage build, Cover Shooter (Firepower, High-End): TikTokAndy switched his Double Barrel build to it in early October and soloed Precious Cargo on Legendary with it. His October 27 Lightweight M4 build uses Explosive Round instead. For team support, Strategic Assistance is our earlier pick, since its assist-based Signature Ability Charge Efficiency and Skill Cooldown reduction feed Tactical Link and Scanning Pulse uptime." },
   { question: "What is the best OS Protocol for Field Medic?", answer: "For Tactical Pharma, Brains Over Brawn (Engineering, Specialized), which GGReborn runs on his Season 2 build; Chain Reaction, Collateral Damage and Tactical Persistence finished within five seconds of it in his October 23 Lone Wolf test, all slightly ahead. For Combat Medicine, Nadie's tank medic runs Pummeling Shield, and Medical Excellence (Toughness, Superior) is the pure-healer option: healing an ally above half Health grants the team extra healing equal to 5% Max Health, and healing one below half grants the target 12.5% Max Health." },
@@ -61,178 +58,76 @@ const faqs = [
   {description}
   {breadcrumbs}
   heading="OS Protocols"
-  subheading="Your OS Protocol is the backbone of your specialization. Pick the wrong one and your entire build underperforms. No pressure."
+  subheading="All 66 protocols from the in-game Build-Making Database. Search by name, talent or stat."
   jsonLd={itemListLd}
   lastVerified={lastVerified}
+  modified="2026-10-28"
   {faqs}
 >
-  <!-- Guide content -->
-  <div class="prose os-guide">
+  <div class="osdb-tools" role="search" aria-label="Search OS Protocols">
+    <label for="osdb-q" class="sr-only">Search OS Protocols by name, talent or stat</label>
+    <input id="osdb-q" class="osdb-search" type="search" placeholder={'Name, talent or stat (try "headshot")'} autocomplete="off" spellcheck="false" enterkeyhint="search" />
+    <div class="osdb-selects">
+      <label class="osdb-select">
+        <span class="sr-only">Type</span>
+        <select id="osdb-type">
+          <option value="all">All types</option>
+          {TYPES.map((t) => <option value={t}>{t}</option>)}
+        </select>
+      </label>
+      <label class="osdb-select">
+        <span class="sr-only">Rarity</span>
+        <select id="osdb-rarity">
+          <option value="all">All rarities</option>
+          {RARITIES.map((r) => <option value={r}>{r}</option>)}
+        </select>
+      </label>
+    </div>
+  </div>
+  <p class="osdb-count"><span id="osdb-count" aria-live="polite">{total} protocols</span> · stats at level 1, no talent upgrades</p>
 
-    <p>OS Protocols are the single highest-impact gear slot in the game. Every protocol carries a unique talent that can completely reshape your build, plus a main stat roll and three sub-stat rolls. There are <strong>{osProtocols.length} distinct protocols across three specializations</strong>: Engineering, Firepower, and Toughness. This guide breaks down every single one, ranks them in a tier list, and tells you exactly which to chase for each of the five class archetypes.</p>
+  <ul class="osdb-list" id="osdb-list">
+    {osProtocols.map((p: any) => (
+      <li
+        id={slugify(p.name)}
+        data-type={p.specialization}
+        data-rarity={p.rarity}
+        data-s={norm([p.name, p.specialization, p.rarity, p.mainStat, p.talentDescription, p.attr1, p.attr2, p.attr3, p.cooldown ? 'cooldown' : ''].join(' '))}
+      >
+        <a class={`osdb-card osdb-card--${slugify(p.rarity)}`} href={`/database/os-protocols/${slugify(p.name)}/`}>
+          <div class="osdb-card__top">
+            <h2 class="osdb-card__name">{p.name}</h2>
+            <span class="osdb-card__rarity">{p.rarity}</span>
+          </div>
+          <span class="osdb-card__main"><span class="osdb-card__type">{p.specialization}</span> Main stat <span class="osdb-card__stat">{p.mainStat} <strong>{p.mainValue}</strong></span></span>
+          <p class="osdb-card__talent">{p.talentDescription}</p>
+          <span class="osdb-card__foot">{p.val1} {p.attr1} · {p.val2} {p.attr2} · {p.val3} {p.attr3}{p.cooldown && ` · ${p.cooldown.replace(' seconds', 's').replace(' second', 's')} cooldown`}</span>
+        </a>
+      </li>
+    ))}
+  </ul>
+  <p class="osdb-empty" id="osdb-empty" hidden>No protocol matches that. Try a single word, like "cover" or "headshot".</p>
 
-    <p><strong>Update (October 28, 2026):</strong> we re-checked all 66 protocols against the in-game Build-Making Database. Every main stat and sub-stat matched our listings, and so did 64 of the 66 talents, including the Applied Demolition buff (Season 1 Phase 3) and the Relentless Assault and Concerted Strike fixes (Season 2 Phase 2). The other two, Dominating Presence and Pummeling Shield, now use the tooltip's own wording, with the Season 2 Phase 2 cap and the June 26 stun change in their notes. Five protocols also gained the talent cooldowns we were missing: Long-Range Artillery, Combat Reload, Resentful, Level-Headed and Enduring. Rankings and per-class picks were last checked in-game for {RANKINGS_CHECKED}.</p>
-
-    <p>If you just want the answer: check the <a href="/tier-list/os-protocols/">Tier Rankings</a> or the <a href="/guides/best-os-protocol/">Best Protocol Per Class</a> guide. If you want the receipts, every protocol has its own page with full stats and a use-case recommendation below.</p>
-
-    <h2 id="what-is-an-os-protocol">What is an OS Protocol?</h2>
-
-    <p>An OS Protocol is a unique gear-talent item slotted into your Operating System loadout. Each protocol provides:</p>
-    <ul>
-      <li>One <strong>main stat</strong> (Engineering, Firepower, Toughness, or a specialized rating like Skill Intensity or Weapon Damage)</li>
-      <li>One <strong>specialization rating</strong> (Engineering, Firepower, or Toughness)</li>
-      <li>A <strong>secondary damage modifier</strong> (Skill Damage or All Weapon Damage)</li>
-      <li>A <strong>Health value</strong></li>
-      <li>A <strong>unique Talent</strong> that triggers under specific combat conditions</li>
-      <li>For active-effect protocols, a <strong>Cooldown</strong> in seconds</li>
-    </ul>
-
-    <h3 id="stats-by-rarity">Base stats by rarity</h3>
-
-    <p>The in-game Build-Making Database lists every protocol at level 1 with no talent upgrades. In all 66 protocols we checked there on October 28, 2026, the three sub-stats depend only on rarity: the protocol's own rating (Engineering, Firepower or Toughness), a damage stat (Skill Damage on Engineering protocols, All Weapon Damage on the others) and Health. The main stat does too, for each stat type:</p>
-
-    <table>
+  <section class="osdb-more" aria-labelledby="osdb-base">
+    <h2 id="osdb-base">Base stats by rarity</h2>
+    <p>Within a rarity, every protocol carries the same three attributes: its own rating (Engineering, Firepower or Toughness), a damage stat (Skill Damage on Engineering protocols, All Weapon Damage on the others) and Health. Levelling adds 10% of the main stat's base every five levels (double at level 50), and each of the five talent upgrades adds 20% of the talent's base value.</p>
+    <table class="t-cards">
       <thead>
-        <tr><th>Rarity</th><th>Rating</th><th>Damage stat</th><th>Health</th><th>Main stat at level 1</th></tr>
+        <tr><th scope="col">Rarity</th><th scope="col">Rating</th><th scope="col">Damage stat</th><th scope="col">Health</th><th scope="col">Main stat at level 1</th></tr>
       </thead>
       <tbody>
-        <tr><td>High-End</td><td>+97</td><td>+77</td><td>+2,554</td><td>Engineering, Firepower or Toughness 22.50%, Skill or Weapon Critical Damage 30%, Skill or Weapon Critical Chance 18%, Skill Intensity or Weapon Damage 15%, Max Health 30%</td></tr>
-        <tr><td>Superior</td><td>+77</td><td>+62</td><td>+2,043</td><td>Engineering, Firepower or Toughness 18%, Critical Damage 24%, Critical Chance 14.40%, Skill Intensity or Weapon Damage 12%, Armor 28%, Healing Intensity 20%</td></tr>
-        <tr><td>Specialized</td><td>+58</td><td>+46</td><td>+1,532</td><td>Engineering, Firepower or Toughness 13.50%, Critical Damage 18%, Critical Chance 10.80%, Skill Intensity or Weapon Damage 9%</td></tr>
-        <tr><td>Standard</td><td>+38</td><td>+30</td><td>+1,021</td><td>Firepower or Toughness 9%, Skill Intensity or Weapon Damage 6%, Armor 14%</td></tr>
+        <tr><td data-label="Rarity">High-End</td><td data-label="Rating">+97</td><td data-label="Damage stat">+77</td><td data-label="Health">+2,554</td><td data-label="Main stat at level 1">Engineering, Firepower or Toughness 22.50%, Skill or Weapon Critical Damage 30%, Skill or Weapon Critical Chance 18%, Skill Intensity or Weapon Damage 15%, Max Health 30%</td></tr>
+        <tr><td data-label="Rarity">Superior</td><td data-label="Rating">+77</td><td data-label="Damage stat">+62</td><td data-label="Health">+2,043</td><td data-label="Main stat at level 1">Engineering, Firepower or Toughness 18%, Critical Damage 24%, Critical Chance 14.40%, Skill Intensity or Weapon Damage 12%, Armor 28%, Healing Intensity 20%</td></tr>
+        <tr><td data-label="Rarity">Specialized</td><td data-label="Rating">+58</td><td data-label="Damage stat">+46</td><td data-label="Health">+1,532</td><td data-label="Main stat at level 1">Engineering, Firepower or Toughness 13.50%, Critical Damage 18%, Critical Chance 10.80%, Skill Intensity or Weapon Damage 9%</td></tr>
+        <tr><td data-label="Rarity">Standard</td><td data-label="Rating">+38</td><td data-label="Damage stat">+30</td><td data-label="Health">+1,021</td><td data-label="Main stat at level 1">Firepower or Toughness 9%, Skill Intensity or Weapon Damage 6%, Armor 14%</td></tr>
       </tbody>
     </table>
+    <p>Which ones to chase: the <a href="/tier-list/os-protocols/">OS Protocol tier list</a> and the <a href="/guides/best-os-protocol/">best protocol per class</a>.</p>
+  </section>
 
-    <p>In other words, a Superior protocol starts at 80% of the High-End numbers, a Specialized one at 60% and a Standard one at 40% (the flat stats round a little differently). Leveling raises them from there; the upgrade question in the FAQ below has the details.</p>
-
-  </div> <!-- close .os-guide -->
-
-  <!-- Link cards, outside prose wrapper for proper styling -->
-  <div class="os-link-cards">
-    <a href="/tier-list/os-protocols/" class="os-link-card">
-      <div>
-        <h3>Tier Rankings</h3>
-        <p>Every protocol ranked for {lastVerified} with per-class best picks.</p>
-      </div>
-      <span class="os-link-card__btn">View Tier List &rarr;</span>
-    </a>
-
-    <a href="/guides/best-os-protocol/" class="os-link-card">
-      <div>
-        <h3>Best OS Protocol Per Class</h3>
-        <p>In-depth breakdown of the top pick for each class with reasoning and backup picks.</p>
-      </div>
-      <span class="os-link-card__btn">View Guide &rarr;</span>
-    </a>
-  </div>
-
-  <!-- Divider before the interactive grid -->
-  <hr style="margin: var(--sp-10) 0; border-color: rgba(255,255,255,0.08);" />
-
-  <h2 style="font-family: var(--font-heading); font-size: var(--text-3xl); font-weight: 900; color: #fff; margin-bottom: var(--sp-3);">Full Protocol Database</h2>
-  <p class="db-subheading">Every protocol, filterable by rarity and specialization. Click any card for full stats.</p>
-
-  <div class="os-disclaimer">
-    <div class="os-disclaimer__diamonds">
-      <div class="diamond"></div>
-      <div class="diamond"></div>
-      <div class="diamond"></div>
-      <div class="diamond"></div>
-      <div class="diamond"></div>
-    </div>
-    <div class="os-disclaimer__text">
-      <strong>Note:</strong> All OS Protocols listed below are at <strong>Base Level (0 Diamonds)</strong>. Their main stats, sub-stats, and talent values have the potential to get stronger with every diamond upgrade in-game.
-    </div>
-  </div>
-
-  <!-- Existing filters + grid -->
-  <div class="db-filters">
-    <div class="filter-group" id="filter-rarity">
-      <span class="filter-label">Rarity:</span>
-      <div class="filter-bar">
-        <button class="filter-btn is-active" data-filter="all">All</button>
-        {rarities.map(r => <button class="filter-btn" data-filter={r}>{r}</button>)}
-      </div>
-    </div>
-    <div class="filter-group" id="filter-attr1">
-      <span class="filter-label">Primary Attribute:</span>
-      <div class="filter-bar">
-        <button class="filter-btn is-active" data-filter="all">All</button>
-        {attr1s.map(a => <button class="filter-btn" data-filter={a}>{a}</button>)}
-      </div>
-    </div>
-  </div>
-
-  <div class="db-grid" id="protocols-grid">
-    {osProtocols.map((protocol) => (
-      <a href={`/database/os-protocols/${slugify(protocol.name)}/`} class="db-card-link" data-rarity={protocol.rarity} data-attr1={protocol.attr1} id={slugify(protocol.name)}>
-        <article class={`db-card db-card--${protocol.rarity.toLowerCase().replace(' ', '-')}`}>
-          {protocol.image && (
-            <div class="db-card__image-banner">
-              <img
-                src={protocol.image}
-                alt={protocol.imageAlt || `${protocol.name} OS Protocol`}
-                width="400"
-                height="120"
-                loading="lazy"
-                decoding="async"
-              />
-            </div>
-          )}
-          <div class="db-card__header">
-            <div>
-              <h2 class="db-card__title">{protocol.name}</h2>
-              <div style="display:flex;gap:var(--sp-2);flex-wrap:wrap;margin-top:var(--sp-2);">
-                <span class={`tag ${getRarityClass(protocol.rarity)}`}>{protocol.rarity}</span>
-                <span class="tag">{protocol.specialization}</span>
-              </div>
-            </div>
-            {protocol.cooldown && (
-              <div class="db-card__cooldown">
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
-                {protocol.cooldown}
-              </div>
-            )}
-          </div>
-          
-          <div class="db-card__body">
-            <div class="db-card__talent">
-              <strong>Talent:</strong> {protocol.talentDescription}
-              {protocol.caveat && protocol.note && <p class="item-note">{protocol.note}</p>}
-            </div>
-
-            <div>
-              <div class="main-stat-badge">
-                <span class="main-stat-label">Main Stat</span>
-                <span class="main-stat-name">{protocol.mainStat}</span>
-                <span class="main-stat-value">{protocol.mainValue}</span>
-              </div>
-
-              <ul class="attr-list">
-                <li>
-                  <span>{protocol.attr1}</span>
-                  <span>{protocol.val1}</span>
-                </li>
-                <li>
-                  <span>{protocol.attr2}</span>
-                  <span>{protocol.val2}</span>
-                </li>
-                <li>
-                  <span>{protocol.attr3}</span>
-                  <span>{protocol.val3}</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </article>
-      </a>
-    ))}
-  </div>
-
-  <!-- Internal links -->
-  <div class="os-related" style="margin-top: var(--sp-10);">
+  <div class="os-related">
     <h2 class="db-heading" style="font-size: var(--text-2xl);">Related Guides</h2>
-    <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: var(--sp-2);">
+    <ul>
       <li><a href="/database/">Division Resurgence Build Database</a></li>
       <li><a href="/tier-list/os-protocols/">OS Protocol Tier List (Season 2 Phase 2)</a></li>
       <li><a href="/guides/best-os-protocol/">Best OS Protocol Per Class</a></li>
@@ -241,7 +136,6 @@ const faqs = [
       <li><a href="/news/server-hotfix-june-26-2026/">June 26, 2026 Hotfix (Pummeling Shield)</a></li>
       <li><a href="/patch-notes/season-1-phase-3-a-new-fire/">Season 1 Phase 3 Patch Notes (Applied Demolition)</a></li>
       <li><a href="/builder/">Division Resurgence Build Planner</a></li>
-      <li><a href="/guides/division-resurgence-codes/">Division Resurgence Codes</a></li>
     </ul>
   </div>
 
@@ -249,202 +143,179 @@ const faqs = [
 </DatabaseLayout>
 
 <style is:global>
-  /* OS Guide prose content */
-  .os-guide {
-    max-width: 80ch;
-    margin-bottom: var(--sp-8);
+  /* Search row: the search box, then the two filters (side by side even on phones) */
+  .osdb-tools {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--sp-2);
+    margin-bottom: var(--sp-2);
   }
-  .os-guide h2 {
+  .osdb-search {
+    flex: 1 1 18rem;
+    min-width: 0;
+    min-height: 44px;
+    padding: 10px 14px;
+    font-size: max(16px, 1rem); /* 16px keeps iOS from zooming in */
+    color: var(--ink-heading);
+    background: var(--surface);
+    border: 1px solid var(--line-strong);
+    border-radius: 8px;
+  }
+  .osdb-search::placeholder { color: var(--ink-muted); opacity: 1; }
+  .osdb-search:focus { border-color: var(--accent); outline: none; }
+  .osdb-selects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--sp-2);
+    flex: 1 1 18rem;
+  }
+  .osdb-select select {
+    width: 100%;
+    min-height: 44px;
+    padding: 8px 12px;
+    font-size: max(16px, 1rem);
+    color: var(--ink-heading);
+    background: var(--surface);
+    border: 1px solid var(--line-strong);
+    border-radius: 8px;
+  }
+  .osdb-select select:focus { border-color: var(--accent); outline: none; }
+  .osdb-count {
+    font-family: var(--font-mono);
+    font-size: var(--text-xs);
+    color: var(--ink-muted);
+    margin: 0 0 var(--sp-4);
+  }
+
+  /* Protocol list: one compact card per protocol */
+  .osdb-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--sp-3);
+  }
+  @media (min-width: 45em) { .osdb-list { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (min-width: 68.75em) { .osdb-list { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+  .osdb-list > li[hidden] { display: none; }
+  .osdb-card {
+    --rarity: #888;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    height: 100%;
+    padding: 12px 14px 12px calc(var(--inset, 16px) - 3px);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--rarity);
+    border-radius: 8px;
+    color: inherit;
+    text-decoration: none;
+    transition: border-color 150ms ease, background 150ms ease;
+  }
+  .osdb-card:hover, .osdb-card:focus-visible { background: var(--surface-2); border-color: var(--rarity); }
+  .osdb-card--high-end { --rarity: #F5CC45; }
+  .osdb-card--superior { --rarity: #C285DB; }
+  .osdb-card--specialized { --rarity: #5B9AEF; }
+  .osdb-card--standard { --rarity: #6DAA45; }
+  .osdb-card__top { display: flex; align-items: baseline; justify-content: space-between; gap: var(--sp-2); }
+  .osdb-card__name {
+    margin: 0;
+    font-family: var(--font-heading);
+    font-size: var(--text-base);
+    font-weight: 800;
+    line-height: 1.25;
+    color: #fff;
+  }
+  .osdb-card__rarity {
+    flex-shrink: 0;
+    font-family: var(--font-mono);
+    font-size: var(--text-xs);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--rarity);
+  }
+  .osdb-card__main { font-size: var(--text-sm); color: var(--ink-muted); }
+  .osdb-card__type {
+    display: inline-block;
+    margin-right: 4px;
+    padding: 0 6px;
+    font-family: var(--font-mono);
+    font-size: var(--text-xs);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+  }
+  .osdb-card__stat { color: var(--ink-heading); }
+  .osdb-card__stat strong { color: var(--accent); font-weight: 700; }
+  .osdb-card__talent { margin: 0; font-size: var(--text-sm); line-height: 1.55; color: #c8c8d0; }
+  .osdb-card__foot { margin-top: auto; font-family: var(--font-mono); font-size: var(--text-xs); color: var(--ink-muted); }
+  .osdb-empty { margin: var(--sp-4) 0; color: var(--ink-muted); }
+
+  /* Below the list */
+  .osdb-more { max-width: 80ch; margin-top: var(--sp-10); }
+  .osdb-more h2 {
     font-family: var(--font-heading);
     font-size: var(--text-2xl);
     font-weight: 800;
     color: #fff;
-    margin: var(--sp-8) 0 var(--sp-4) 0;
-    padding-top: var(--sp-4);
-    border-top: 1px solid rgba(255,255,255,0.08);
+    margin: 0 0 var(--sp-3);
   }
-  .os-guide h2:first-of-type { border-top: none; padding-top: 0; }
-  .os-guide h3 {
-    font-family: var(--font-heading);
-    font-size: var(--text-lg);
-    font-weight: 700;
-    color: var(--accent);
-    margin: var(--sp-6) 0 var(--sp-3) 0;
-  }
-  .os-guide p {
-    color: #b8b8c0;
-    line-height: 1.7;
-    margin-bottom: var(--sp-4);
-  }
-  .os-guide ul {
-    color: #b8b8c0;
-    padding-left: var(--sp-6);
-    margin-bottom: var(--sp-4);
-    line-height: 1.7;
-  }
-  .os-guide a {
-    color: var(--accent);
-    text-decoration: underline;
-    text-underline-offset: 2px;
-  }
-  .os-guide a:hover { color: #fff; }
-
-  /* Link cards */
-  .os-link-cards {
-    display: flex;
-    flex-direction: column;
-    gap: var(--sp-3);
-    margin: var(--sp-6) 0;
-  }
-  .os-link-card {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: var(--sp-4);
-    padding: var(--sp-5) var(--sp-5) var(--sp-5) calc(var(--inset) - 1px); /* text on the article inset */
-    background: rgba(242,104,34,0.06);
-    border: 1px solid rgba(242,104,34,0.2);
-    border-radius: 12px;
-    text-decoration: none;
-    flex-wrap: wrap;
-    transition: all 200ms ease;
-  }
-  .os-link-card:hover {
-    background: rgba(242,104,34,0.12);
-    border-color: var(--accent);
-  }
-  .os-link-card h3 {
-    margin: 0 0 4px 0;
-    font-size: var(--text-base);
-    font-weight: 700;
-    color: #fff;
-  }
-  .os-link-card p {
-    margin: 0;
-    font-size: var(--text-sm);
-    color: var(--ink-muted);
-  }
-  .os-link-card__btn {
-    display: inline-flex;
-    align-items: center;
-    font-family: var(--font-mono);
-    font-size: var(--text-xs);
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-    white-space: nowrap;
-    padding: 10px 20px;
-    color: #fff;
-    background: rgba(242,104,34,0.2);
-    border: 1px solid rgba(242,104,34,0.4);
-    border-radius: 8px;
-  }
-
-  /* Card image banner */
-  .db-card__image-banner {
-    width: 100%;
-    overflow: hidden;
-    border-radius: 12px 12px 0 0;
-    border-bottom: 1px solid rgba(255,255,255,0.06);
-    background: rgba(0,0,0,0.3);
-  }
-  .db-card__image-banner img {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-
-  /* Clickable card wrapper */
-  .db-card-link {
-    text-decoration: none;
-    color: inherit;
-    display: block;
-  }
-  .db-card-link .db-card {
-    height: 100%;
-  }
-
-  /* OS Protocol Disclaimer */
-  .os-disclaimer {
-    display: flex;
-    align-items: center;
-    gap: var(--sp-5);
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px dashed rgba(255, 255, 255, 0.15);
-    border-radius: 8px;
-    padding: var(--sp-4) var(--sp-5);
-    margin: var(--sp-6) 0;
-  }
-  .os-disclaimer__diamonds {
-    display: flex;
-    gap: 10px;
-    padding-left: 6px;
-  }
-  .diamond {
-    width: 14px;
-    height: 14px;
-    background: #444444;
-    transform: rotate(45deg);
-    border: 1px solid rgba(0,0,0,0.5);
-    box-shadow: inset 0 0 0 1px rgba(255,255,255,0.05);
-  }
-  .os-disclaimer__text {
-    font-size: var(--text-sm);
-    color: #b8b8c0;
-    line-height: 1.5;
-  }
-  .os-disclaimer__text strong {
-    color: #fff;
-  }
-  
-  @media (max-width: 44.99em) {
-    .os-disclaimer {
-      flex-direction: column;
-      align-items: flex-start;
-      gap: var(--sp-3);
-    }
-    .os-disclaimer__diamonds {
-      padding-left: 4px;
-    }
-  }
+  .osdb-more p { color: #b8b8c0; line-height: 1.7; margin-bottom: var(--sp-4); }
+  .osdb-more a { color: var(--accent); }
+  .os-related { margin-top: var(--sp-10); }
+  .os-related ul { list-style: none; padding: 0; display: flex; flex-direction: column; gap: var(--sp-2); }
 </style>
 
 <script>
-  let currentRarity = 'all';
-  let currentAttr1 = 'all';
+  const q = document.getElementById('osdb-q') as HTMLInputElement | null;
+  const type = document.getElementById('osdb-type') as HTMLSelectElement | null;
+  const rarity = document.getElementById('osdb-rarity') as HTMLSelectElement | null;
+  const list = document.getElementById('osdb-list');
+  const count = document.getElementById('osdb-count');
+  const empty = document.getElementById('osdb-empty');
 
-  const filterRarityBar = document.getElementById('filter-rarity');
-  const filterAttr1Bar = document.getElementById('filter-attr1');
-  const grid = document.getElementById('protocols-grid');
+  if (q && type && rarity && list && count && empty) {
+    const items = Array.from(list.children) as HTMLElement[];
+    const norm = (s: string) => s.toLowerCase().normalize('NFKD').replace(/[^a-z0-9%.]+/g, ' ').trim();
 
-  const updateFilters = () => {
-    requestAnimationFrame(() => {
-      grid?.querySelectorAll('.db-card-link').forEach(card => {
-        const el = card as HTMLElement;
-        const matchesRarity = currentRarity === 'all' || el.dataset.rarity === currentRarity;
-        const matchesAttr1 = currentAttr1 === 'all' || el.dataset.attr1 === currentAttr1;
-        el.style.display = (matchesRarity && matchesAttr1) ? '' : 'none';
-      });
-    });
-  };
+    // Restore a shared search (?find=headshot&type=Firepower&rarity=Superior). Not ?q=, which opens the site search.
+    const params = new URLSearchParams(location.search);
+    q.value = params.get('find') || '';
+    const pick = (sel: HTMLSelectElement, v: string | null) => {
+      if (v && Array.from(sel.options).some((o) => o.value === v)) sel.value = v;
+    };
+    pick(type, params.get('type'));
+    pick(rarity, params.get('rarity'));
 
-  if (filterRarityBar && filterAttr1Bar && grid) {
-    filterRarityBar.addEventListener('click', (e) => {
-      const btn = (e.target as HTMLElement).closest('.filter-btn');
-      if (!btn) return;
-      filterRarityBar.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('is-active'));
-      btn.classList.add('is-active');
-      currentRarity = btn.getAttribute('data-filter') || 'all';
-      updateFilters();
-    });
+    const apply = () => {
+      const words = norm(q.value).split(' ').filter(Boolean);
+      let shown = 0;
+      for (const li of items) {
+        const ok = (type.value === 'all' || li.dataset.type === type.value)
+          && (rarity.value === 'all' || li.dataset.rarity === rarity.value)
+          && words.every((w) => ` ${li.dataset.s || ''}`.includes(` ${w}`)); // each word matches the start of a word
+        li.hidden = !ok;
+        if (ok) shown++;
+      }
+      count.textContent = shown === items.length ? `${items.length} protocols` : `${shown} of ${items.length} protocols`;
+      empty.hidden = shown > 0;
 
-    filterAttr1Bar.addEventListener('click', (e) => {
-      const btn = (e.target as HTMLElement).closest('.filter-btn');
-      if (!btn) return;
-      filterAttr1Bar.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('is-active'));
-      btn.classList.add('is-active');
-      currentAttr1 = btn.getAttribute('data-filter') || 'all';
-      updateFilters();
-    });
+      const next = new URLSearchParams();
+      if (q.value.trim()) next.set('find', q.value.trim());
+      if (type.value !== 'all') next.set('type', type.value);
+      if (rarity.value !== 'all') next.set('rarity', rarity.value);
+      const qs = next.toString();
+      history.replaceState(null, '', `${location.pathname}${qs ? `?${qs}` : ''}${location.hash}`);
+    };
+
+    let t: number | undefined;
+    q.addEventListener('input', () => { clearTimeout(t); t = window.setTimeout(apply, 80); });
+    type.addEventListener('change', apply);
+    rarity.addEventListener('change', apply);
+    if (q.value || type.value !== 'all' || rarity.value !== 'all') apply();
   }
 </script>

@@ -279,15 +279,15 @@ const faqs = [
       <h2 id="os-tier-changes-heading">What Changed in This Update, and Why</h2>
       <p>Ranked from creator results, not our own in-game tests. Every protocol not listed here kept its tier.</p>
       <div class="os-changes__scroll">
-        <table>
+        <table class="t-cards">
           <thead><tr><th scope="col">Protocol</th><th scope="col">Was</th><th scope="col">Now</th><th scope="col">What the rank rests on</th></tr></thead>
           <tbody>
             {osChanges.map(c => (
               <tr>
                 <th scope="row"><a href={`/database/os-protocols/${c.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')}/`}>{c.name}</a></th>
-                <td>{c.was}</td>
-                <td>{c.now}</td>
-                <td>{c.why} {c.source && <a href={c.source.href}>{c.source.label}</a>}</td>
+                <td data-label="Was">{c.was}</td>
+                <td data-label="Now">{c.now}</td>
+                <td data-label="What the rank rests on">{c.why} {c.source && <a href={c.source.href}>{c.source.label}</a>}</td>
               </tr>
             ))}
           </tbody>

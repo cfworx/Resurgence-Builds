@@ -250,7 +250,7 @@ const faqs = [
       <h2 id="why-each-tier-heading">Why Each Build Sits Where It Does</h2>
       <p>"Was" is the build's tier before this update.</p>
       <div class="rank-basis__scroll">
-        <table>
+        <table class="t-cards">
           <thead>
             <tr><th scope="col">Build</th><th scope="col">Tier</th><th scope="col">Was</th><th scope="col">What the rank rests on</th></tr>
           </thead>
@@ -258,9 +258,9 @@ const faqs = [
             {rankedBuilds.map(build => (
               <tr>
                 <th scope="row"><a href={`/builds/${build.id}/`}>{build.data.title.split(/: | \| | - /)[0]}</a></th>
-                <td>{build.rank.tier}</td>
-                <td>{build.rank.was}</td>
-                <td>
+                <td data-label="Tier">{build.rank.tier}</td>
+                <td data-label="Was">{build.rank.was}</td>
+                <td data-label="What the rank rests on">
                   {build.rank.why}
                   {build.rank.sources.length > 0 && (
                     <span class="rank-basis__sources"> Sources: {build.rank.sources.map((s, i) => (

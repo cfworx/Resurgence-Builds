@@ -28,11 +28,11 @@ const cacheIds = [...new Set(rows.map((r) => r.cacheId))];
     <h2 id="dbx-drops" class="dbx-title">Official Drop Odds</h2>
     <p>Chance per cache opened, from Ubisoft's published odds.{rules && <> Pity guarantees a Tier S result within {rules.pity.S} pulls and Tier A within {rules.pity.A}, not this specific item.</>}</p>
     <div class="dbx-table-wrap">
-      <table class="dbx-table">
+      <table class="dbx-table t-cards">
         <thead><tr><th scope="col">Cache</th><th scope="col">Entry</th><th scope="col">Tier</th><th scope="col">Chance</th></tr></thead>
         <tbody>
           {rows.map((r) => (
-            <tr><td><a href={`/database/drop-rates/#${r.cacheId}`}>{r.cache}</a></td><td>{r.label}</td><td>{r.tier}</td><td class="dbx-num">{r.chance}</td></tr>
+            <tr><td data-label="Cache"><a href={`/database/drop-rates/#${r.cacheId}`}>{r.cache}</a></td><td data-label="Entry">{r.label}</td><td data-label="Tier">{r.tier}</td><td class="dbx-num" data-label="Chance">{r.chance}</td></tr>
           ))}
         </tbody>
       </table>

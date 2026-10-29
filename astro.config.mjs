@@ -9,6 +9,7 @@ import rehypeExternalLinks from 'rehype-external-links';
 import rehypeCallouts from './scripts/rehype-callouts.mjs';
 import rehypeAdsense from './scripts/rehype-adsense.mjs';
 import rehypeTableA11y from './scripts/rehype-table-a11y.mjs';
+import rehypeTableCards from './scripts/rehype-table-cards.mjs';
 import rehypeImgSize from 'rehype-img-size';
 import { getNoindexedDatabasePaths } from './src/utils/indexability.mjs';
 // Stable fallback date. Do NOT use new Date() here — it makes every URL look
@@ -166,6 +167,7 @@ export default defineConfig({
       rehypeCallouts,
       rehypeAdsense,
       rehypeTableA11y,
+      rehypeTableCards,
       [rehypeImgSize, { dir: 'public' }]
     ]
   },

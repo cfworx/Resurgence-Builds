@@ -85,6 +85,9 @@ const datasetLd = {
   creator: { '@type': 'Organization', name: 'Resurgence Builds', url: new URL('/', Astro.site).href },
   variableMeasured: ['tier', 'item', 'amount', 'drop chance'],
 };
+// Every cache has had the same tier odds and pity so far. While that holds, phones show the summary
+// as Cache + Items only (the callout below the table gives the shared odds); otherwise it becomes cards.
+const sameOdds = new Set(caches.map((c: any) => JSON.stringify([c.tierRates, c.pity]))).size === 1;
 ---
 
 <DatabaseLayout
@@ -106,14 +109,14 @@ const datasetLd = {
 
   <h2 id="summary" class="dr-h2">Every cache at a glance</h2>
   <div class="dr-table-wrap">
-    <table class="dr-table">
+    <table class={`dr-table ${sameOdds ? 'dr-same-odds' : 't-cards'}`}>
       <thead><tr><th>Cache</th><th>Tier S</th><th>Tier A</th><th>Tier B</th><th>S pity</th><th>A pity</th><th>Items</th></tr></thead>
       <tbody>
         {caches.map((c) => (
           <tr>
-            <td><a href={`#${slugify(c.name)}`}>{c.name}</a>{classOf(c.name) && <span class="dr-class">{classOf(c.name)}</span>}</td>
-            <td>{c.tierRates.S}</td><td>{c.tierRates.A}</td><td>{c.tierRates.B}</td>
-            <td>{c.pity.S}</td><td>{c.pity.A}</td><td>{c.items.length}</td>
+            <td data-label="Cache"><a href={`#${slugify(c.name)}`}>{c.name}</a>{classOf(c.name) && <span class="dr-class">{classOf(c.name)}</span>}</td>
+            <td data-label="Tier S">{c.tierRates.S}</td><td data-label="Tier A">{c.tierRates.A}</td><td data-label="Tier B">{c.tierRates.B}</td>
+            <td data-label="S pity">{c.pity.S}</td><td data-label="A pity">{c.pity.A}</td><td data-label="Items">{c.items.length}</td>
           </tr>
         ))}
       </tbody>
@@ -253,6 +256,9 @@ const datasetLd = {
   .dr-callout { background: var(--surface); border: 1px solid var(--border); border-left: 3px solid var(--accent); border-radius: 0 6px 6px 0; padding: var(--sp-3) var(--sp-4) var(--sp-3) calc(var(--inset) - 3px); font-size: var(--text-sm); color: var(--ink-muted); line-height: 1.6 }
   .dr-callout strong { color: var(--ink-heading) }
   .dr-callout a { color: var(--accent) }
+  @media (max-width: 44.99em) {
+    .dr-same-odds th:nth-child(n+2):nth-child(-n+6), .dr-same-odds td:nth-child(n+2):nth-child(-n+6) { display: none; }
+  }
   .dr-search input { width: 100%; max-width: 560px; min-height: 44px; padding: 10px 14px; font-size: max(16px, 1rem); color: var(--ink-heading); background: var(--surface); border: 1px solid var(--line-strong); border-radius: var(--border-radius) }
   .dr-search input::placeholder { color: var(--ink-muted); opacity: 1 }
   .dr-search input:focus { border-color: var(--accent) }

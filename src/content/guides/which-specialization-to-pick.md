@@ -172,7 +172,7 @@ When it works, however, nobody looks cooler.
 
 ## How Do the Five Specializations Compare in Division Resurgence?
 
-<table>
+<table class="t-cards">
   <thead>
     <tr>
       <th scope="col"></th>
@@ -186,59 +186,59 @@ When it works, however, nobody looks cooler.
   <tbody>
     <tr>
       <th scope="row"><strong>Role</strong></th>
-      <td>DPS / All-rounder</td>
-      <td>AOE DPS</td>
-      <td>Tank</td>
-      <td>Healer / Support</td>
-      <td>Skill damage / Control</td>
+      <td data-label="Vanguard">DPS / All-rounder</td>
+      <td data-label="Demolitionist">AOE DPS</td>
+      <td data-label="Bulwark">Tank</td>
+      <td data-label="Field Medic">Healer / Support</td>
+      <td data-label="Tech Operator">Skill damage / Control</td>
     </tr>
     <tr>
       <th scope="row"><strong>Survivability</strong></th>
-      <td>Medium</td>
-      <td>Low-Medium</td>
-      <td>High</td>
-      <td>Medium</td>
-      <td>Low-Medium</td>
+      <td data-label="Vanguard">Medium</td>
+      <td data-label="Demolitionist">Low-Medium</td>
+      <td data-label="Bulwark">High</td>
+      <td data-label="Field Medic">Medium</td>
+      <td data-label="Tech Operator">Low-Medium</td>
     </tr>
     <tr>
       <th scope="row"><strong>Skill ceiling</strong></th>
-      <td>Medium</td>
-      <td>Medium</td>
-      <td>Low-Medium</td>
-      <td>Medium</td>
-      <td>High</td>
+      <td data-label="Vanguard">Medium</td>
+      <td data-label="Demolitionist">Medium</td>
+      <td data-label="Bulwark">Low-Medium</td>
+      <td data-label="Field Medic">Medium</td>
+      <td data-label="Tech Operator">High</td>
     </tr>
     <tr>
       <th scope="row"><strong>Solo viability</strong></th>
-      <td>Excellent</td>
-      <td>Excellent</td>
-      <td>Excellent</td>
-      <td>Harder</td>
-      <td>Harder</td>
+      <td data-label="Vanguard">Excellent</td>
+      <td data-label="Demolitionist">Excellent</td>
+      <td data-label="Bulwark">Excellent</td>
+      <td data-label="Field Medic">Harder</td>
+      <td data-label="Tech Operator">Harder</td>
     </tr>
     <tr>
       <th scope="row"><strong>PvP viability</strong></th>
-      <td>Strong</td>
-      <td>Situational</td>
-      <td>Strong</td>
-      <td>Situational</td>
-      <td>Situational</td>
+      <td data-label="Vanguard">Strong</td>
+      <td data-label="Demolitionist">Situational</td>
+      <td data-label="Bulwark">Strong</td>
+      <td data-label="Field Medic">Situational</td>
+      <td data-label="Tech Operator">Situational</td>
     </tr>
     <tr>
       <th scope="row"><strong>Carry potential</strong></th>
-      <td>Medium</td>
-      <td>Medium</td>
-      <td>Low</td>
-      <td>Low</td>
-      <td>Medium</td>
+      <td data-label="Vanguard">Medium</td>
+      <td data-label="Demolitionist">Medium</td>
+      <td data-label="Bulwark">Low</td>
+      <td data-label="Field Medic">Low</td>
+      <td data-label="Tech Operator">Medium</td>
     </tr>
     <tr>
       <th scope="row"><strong>Rage-quit risk</strong></th>
-      <td>Low</td>
-      <td>Medium (self-grenades)</td>
-      <td>Very Low</td>
-      <td>High (ingratitude)</td>
-      <td>High (drone betrayal)</td>
+      <td data-label="Vanguard">Low</td>
+      <td data-label="Demolitionist">Medium (self-grenades)</td>
+      <td data-label="Bulwark">Very Low</td>
+      <td data-label="Field Medic">High (ingratitude)</td>
+      <td data-label="Tech Operator">High (drone betrayal)</td>
     </tr>
   </tbody>
 </table>
