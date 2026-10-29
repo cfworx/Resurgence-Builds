@@ -65,7 +65,7 @@ const AMBIGUOUS: Partial<Record<DbKind, string[]>> = {
   'skill-mod': ['Commando', 'Optimal Range'],
 };
 
-export type BuildMention = { title: string; url: string; specialization: string; verified: boolean; theorycraft: boolean; patch: string };
+export type BuildMention = { title: string; url: string; specialization: string; verified: boolean; original: boolean; patch: string };
 
 /** Build guides whose text names this item, matched as a whole name (so "ACR" doesn't match "ACR-E"). */
 export async function buildsMentioning(kind: DbKind, name: string): Promise<BuildMention[]> {
@@ -81,7 +81,7 @@ export async function buildsMentioning(kind: DbKind, name: string): Promise<Buil
       const text = [b.body, d.title, d.description, d.subtitle, ...(d.tags || []), ...(d.faqs || []).flatMap((f) => [f.question, f.answer])].join('\n');
       return re.test(text);
     })
-    .map((b) => ({ title: b.data.title, url: `/builds/${b.id}/`, specialization: b.data.specialization, verified: b.data.verified !== false, theorycraft: b.data.theorycraft === true, patch: /^\d/.test(b.data.patch) ? `Patch ${b.data.patch}` : b.data.patch }))
+    .map((b) => ({ title: b.data.title, url: `/builds/${b.id}/`, specialization: b.data.specialization, verified: b.data.verified !== false, original: b.data.original === true, patch: /^\d/.test(b.data.patch) ? `Patch ${b.data.patch}` : b.data.patch }))
     .sort((a, b) => Number(b.verified) - Number(a.verified) || a.title.localeCompare(b.title));
 }
 

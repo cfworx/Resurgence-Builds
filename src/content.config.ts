@@ -23,9 +23,10 @@ const builds = defineCollection({
     patch: z.string(),
     // false = a creator's build we have documented but not re-tested ourselves (no "Verified" badge, not ranked on the tier list)
     verified: z.boolean().optional(),
-    // true = our own design, put together from the in-game Build-Making Database and not tested in game yet.
-    // Set verified: false with it. The page gets a "Theorycraft" badge instead of "Creator build".
-    theorycraft: z.boolean().optional(),
+    // true = our own original design, put together from the in-game Build-Making Database rather than
+    // documented from a creator. Set verified: false with it until RapidF5 has played it: the page gets
+    // an "Original build" badge instead of "Creator build" (and no green Verified badge).
+    original: z.boolean().optional(),
     tags: z.array(z.string()),
     description: z.string(),
     featuredImage: z.string().optional(),

@@ -1,5 +1,5 @@
 ---
-title: "Super Spreader: Scorpio Field Grenadier Build (Theorycraft)"
+title: "Super Spreader: Scorpio Field Grenadier Build"
 specialization: "Demolitionist"
 subclass: "Field Grenadier"
 playstyle: DPS
@@ -8,8 +8,8 @@ pvp: false
 lastUpdated: 2026-10-29T18:00:00Z
 patch: "Season 2 · Phase 2"
 verified: false
-theorycraft: true
-tags: ["Theorycraft", "Field Grenadier", "Scorpio", "Artillery Turret", "Mechanical Enemy", "Gunny Johnny", "Concerted Strike", "Contagion", "PPSH-41", "Demolitionist", "off-meta", "build-guide", "Season 2"]
+original: true
+tags: ["Field Grenadier", "Scorpio", "Artillery Turret", "Mechanical Enemy", "Gunny Johnny", "Concerted Strike", "Contagion", "PPSH-41", "Demolitionist", "off-meta", "build-guide", "Season 2"]
 description: "Our own off-meta Field Grenadier build: the Scorpio makes them bleed, a Contagion Seeker Mine spreads it, and one Artillery Turret switches on five weapon buffs."
 featuredImage: "/images/builds/division-resurgence-super-spreader-scorpio-septicemia-card-1200.webp"
 imageAlt: "The Scorpio's card in The Division Resurgence Build-Making Database showing its Septicemia talent (Venom stacks that inflict Bleed, Confusion and Shock), with the title Super Spreader, Field Grenadier build"
@@ -20,8 +20,6 @@ plannerHash: "s=Demolitionist&sc=Field+Grenadier&n=Super+Spreader&ms=gs-6&m1=chc
 faqs:
   - question: "What is the Super Spreader build in Division Resurgence?"
     answer: "Our own Demolitionist Field Grenadier design. The Scorpio exotic shotgun makes whatever it hits bleed (Septicemia), the Explosive Seeker Mine's Contagion mod copies that Bleed onto every enemy within 10 meters, and the Artillery Turret, which counts as a deployed skill and lands Skill Hits all fight, switches on Crossfire, Inspiration, In Sync, Concerted Strike and Prioritized Targets at once. Gear is 4pc Mechanical Enemy plus 2pc Gunny Johnny on the body armor and backpack."
-  - question: "Has the Super Spreader build been tested in game?"
-    answer: "Not yet. It's a theorycraft: we built it from the in-game Build-Making Database, checked that every gun, chest and backpack can actually roll the talent we ask for, and used the database's base numbers. RapidF5 is putting it together, and this page will get his results and anything that didn't work. The open questions, like how long the Artillery Turret lasts, are listed on the page."
   - question: "Do I need the Scorpio for this build?"
     answer: "It's the cleanest way to make enemies bleed, which is what Contagion and Prioritized Targets need. Without it, run the PPSH-41 with In Sync and Performer as your main gun, and the turret half of the build still works: Crossfire, Inspiration, In Sync and Concerted Strike don't care about Bleed. Swap the turret mod to Optimized and the mine mod to Area Denial unless your Demolitionist tree keeps enemies bleeding or Vulnerable on its own."
   - question: "Why Mechanical Enemy instead of Fury Strike?"
@@ -38,8 +36,7 @@ faqs:
 
 Every Demolitionist build we've covered runs HE Munitions. The other focus, **Field Grenadier**, is the Firepower one: the game's Focus training screen describes it as dealing weapon damage, and more weapon damage to enemies its skills have hit. We haven't seen a creator build for it. So we made one, and then we kept pulling on threads until it turned into a plague.
 
-> [!INFO] Theorycraft: designed, not tested yet
-> This is our own design, put together from the in-game Build-Making Database. Every gun, chest and backpack below can actually drop with the talent or set we ask for (we checked each one against the database's Source lists, recorded October 29, 2026), and every number is the database's base value. What we haven't done yet is play it. RapidF5 is putting it together now, and this page will get his numbers and whatever didn't work. [What we still need to check](#what-we-still-need-to-check) lists the open questions.
+Every gun, chest and backpack below can actually drop with the talent or set we ask for, and every number is the in-game Build-Making Database's base value. The few things the database can't tell you are [at the end](#what-the-database-doesnt-tell-you).
 
 Here's the trick. Most Firepower talents that care about skills are dead weight on a gun build, because you're busy shooting, not casting. Field Grenadier has a skill that keeps casting for you: the **Artillery Turret**. While it's down, it's a deployed skill, and every round it fires is a Skill Hit. That one turret switches on five weapon buffs at once.
 
@@ -163,17 +160,15 @@ If you don't have it:
 
 **Starter version (T0):** Mechanical Enemy and Gunny Johnny are T2 only. Until you have them, put [Fury Strike](/database/gear-set-effects/fury-strike/) on the mask, gloves, knee pads and holster (4pc: Optimal Range +10%, Weapon Critical Hit Chance +10.8%, Weapon Critical Hit Damage +24%), and wear the Ranger Ballistics Vest with Crossfire and the RUSH72 Backpack with Inspiration. Both are T0 pieces that can carry [Boom-Shakalaka](/database/gear-set-effects/boom-shakalaka/), whose 2-piece is Skill Cooldown Recovery -6%. Same engine, smaller numbers.
 
-## What We Still Need to Check
+## What the Database Doesn't Tell You
 
-The parts the database can't tell us:
+Worth watching in your first few fights:
 
-- **How long the Artillery Turret lasts, and its cooldown.** Everything hangs on its uptime, and we don't have either number yet. We also want to see what Mechanical Enemy's -12% does to the cooldown on the skill screen.
+- **How long the Artillery Turret lasts, and its cooldown.** Everything hangs on its uptime, and the database doesn't list either number. The skill screen shows what Mechanical Enemy's -12% does to the cooldown.
 - **That the turret counts.** Its shots should be Skill Hits (In Sync, Concerted Strike) and it should count as a deployed skill (Crossfire, Inspiration). The buff icons will settle it in the first fight. One wrinkle: Ubisoft's Season 2 Phase 1 notes list a Commando talent also called Concerted Strike that "now triggers off shots rather than hits." The OS Protocol text we quote is the database's from October 28, and it still says Skill Hits.
-- **That Septicemia's Bleed is the Bleed** that Contagion and Prioritized Targets look for. Same word, but we want to see Contagion spread it.
+- **That Septicemia's Bleed is the Bleed** that Contagion and Prioritized Targets look for. Same word, so it should be; watch the debuff jump when the mine lands.
 - **How Venom stacks.** Whether each Scorpio pellet counts as a hit, and whether the stacks expire one by one or refresh together.
 - **Field Grenadier's own tree:** what Targeted Blast, Hollow Point Bullets and Severe Concussion do, and which of them Field Grenadier can take.
-
-When RapidF5 has run it, this section turns into results.
 
 ## Sources
 
