@@ -14,7 +14,7 @@ Nothing in this folder is served by the website. `src/data/*.json` is what the s
 | OS Protocol, Applicable to Firepower | Done 2026-10-28 | 25 | `Screen_Recording_20261028_155041` |
 | OS Protocol, Applicable to Toughness | Done 2026-10-28 | 13 | `Screen_Recording_20261028_155041` |
 | Exotic Weapon | Done 2026-10-28 | 6 | `Screen_Recording_20261028_155256` |
-| Skill Mod Combo Set | Not recorded yet | | |
+| Skill Mod Combo Set | Done 2026-10-28 | 90 | `Screen_Recording_20261028_163454` |
 | Weapon Talent | Not recorded yet | | |
 | Gear Set Effect | Not recorded yet | | |
 | Body Armor Talent | Not recorded yet | | |
@@ -31,6 +31,9 @@ All recordings were made on 2026-10-28 during Season 2 Phase 2. Details are in `
 - `exotic-weapons.json` / `exotic-weapons.csv`: all 6 exotics. Class, damage type and value, RPM, magazine, talent name and
   text, the five weapon attributes, mod slots, TAM slots, how many possible second talents the card shows, and the card's
   flavor text.
+- `skill-mod-combos.json` / `skill-mod-combos.csv`: all 90 Skill Mod Combo Sets. Name, the site's id (`smc-N`), tab, position
+  in the tab's list, skill, the 2-piece and 3-piece text, talent cooldown, the rarities the card's "Source" panel shows, and
+  where in the recording it was read.
 - `recordings.json`: the source recordings (file name, date, length, resolution, what each one covers).
 - `evidence/`: one image per entry, stitched from the recording so the whole scrolled card is in one picture. These are the
   proof for every value in the JSON and CSV files.
@@ -47,6 +50,9 @@ All recordings were made on 2026-10-28 during Season 2 Phase 2. Details are in `
   show different numbers.
 - Within a rarity, OS Protocols share the same three attribute values: High-End +97 / +77 / +2,554, Superior +77 / +62 / +2,043,
   Specialized +58 / +46 / +1,532, Standard +38 / +30 / +1,021. Main stats follow the same 100 / 80 / 60 / 40% steps.
+- **Skill Mod Combo Sets show the 2-piece bonus as a range** ("Skill Health+[4.0%~8.0%]") and the 3-piece talent at one value,
+  which matches the lowest tier. The card's "Source" panel shows the three pieces (firmware, software and chipset) in each
+  rarity the set comes in.
 - The exotic cards also show a "Possible Talents" grid of icons (18 per exotic) without names. Matching those icons to talent
   names needs the Weapon Talent section, which isn't recorded yet.
 
@@ -68,11 +74,29 @@ every field was compared with `src/data/`.
   talent wording fixed; The Bighorn and Diamondback got full stat lines and database pages; the Diamondback's talent text is
   the official English text instead of our translation from a Portuguese client; the weapon's in-game name is "Diamondback".
 
+- Skill Mod Combo Sets: all 90 matched by name, tab, skill and 2-piece bonus. 73 3-piece texts matched word for word, 12 more
+  differed only in the game's "second(s)" and "stack(s)" wording (the site now uses the game's wording), and Hereafter
+  Resilience differs only by the game's typo "atttached". Berserker changed for real: the
+  database reads +60% Weapon Critical Hit Damage (Ubisoft fixed its bonus in Season 2 Phase 2) where we had the June tooltip's
+  +100% Weapon Critical Hit Chance. Commando now uses the game's wording (same 10.20% for 10 seconds), Thermobaric Grenades got
+  back a missing "but", and Offensive Defense's "Weapon Damage or Toughness?" caveat is settled on Weapon Damage. Every set has
+  High-End and Superior pieces; 21 sets, one per skill, also come in Specialized. Every combo except Ammo Refill now carries
+  `verifiedInGame: "2026-10-28"`.
+
 ## Open questions
 
-- **The Bighorn's damage type.** The database card says Shredding. TikTokAndy's Armory card for his own copy said Piercing in
-  his September 16, 2026 video, the day Season 2 Phase 2 fixed "incorrect damage type information shown for certain weapons."
-  An Armory screenshot of a current Bighorn would settle it.
+- **The Bighorn's damage type (explained).** The database card says Shredding. Early copies didn't all match: on Ubisoft's bug
+  reporter, [TDR-134](https://www.ubisoft.com/en-us/game/the-division/the-division-resurgence/bug-reporter/issues/TDR-134), players
+  found Bighorns from the Season 2 Phase 1 pass dealing Piercing or Shredding (one had both) while the Armory showed Blast; the report
+  is marked Done (September 25, 2026). TikTokAndy's Piercing copy (September 16 video) is one of those. The site goes with Shredding.
+  Outside that bug, everything we've found points to one damage type per weapon, and exotics can't be rerolled.
+- **Ammo Refill is out of date in the database.** The card still reads "29% chance of recovering 1 ammo", the text from before
+  Season 2 Phase 1. Ubisoft's notes changed it to 4 bullets at a quarter of the chance (72% to 18% at the top tier), and
+  TikTokAndy's set read 7% on September 30. The site keeps the patched values and says so on the page. The database is the best
+  source we have, but this shows it can lag behind a patch.
+- **"Skill Cooldown Recovery-".** Every 2-piece Skill Cooldown Recovery bonus is shown as "Skill Cooldown Recovery-[2.0%~4.0%]",
+  with what looks like a minus where the other bonuses have a plus. It is almost certainly a display quirk (the bonus is
+  positive), and we store it as shown.
 - **Mod slots.** Lady Death, Scorpio, The Bighorn and Diamondback show five locked mod slots; Warlord and Strawberry Milkshake
   show five unlocked ones. We don't know what the difference means yet.
 

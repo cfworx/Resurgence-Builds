@@ -4,7 +4,9 @@ import { fixPlurals } from '../../../utils/seo';
 import skillMods from '../../../data/skill-mod-combos.json';
 import AdSenseUnit from '../../../components/AdSenseUnit.astro';
 import { verifiedPatch } from '../../../data/site-config';
-const lastVerified = verifiedPatch('Patch 1.1.2.2'); // Bump: drop the arg ONLY after re-verifying this page's content in-game (CURRENT_PATCH is a ceiling, not an auto-bump)
+// 89 of the 90 combos were re-checked in the in-game Build-Making Database on 2026-10-28 (Season 2 Phase 2).
+// Ammo Refill is the exception: the database still shows its pre-Season 2 text (see its note).
+const lastVerified = verifiedPatch();
 
 const title = "Division Resurgence Skill Mod Combos & Mods Guide";
 const description = "Every Skill Mod Combo in Division Resurgence and their 2-piece and 3-piece set bonuses. Pair them wrong and your build is a participation trophy.";
@@ -64,6 +66,7 @@ const itemListLd = {
   lastVerified={lastVerified}
   {faqs}
 >
+  <p style="color: #c8c8d0; line-height: 1.7; font-size: var(--text-sm); max-width: var(--measure); margin-bottom: var(--sp-4);"><strong style="color: #F5CC45;">Update (October 28, 2026):</strong> we checked all 90 sets against the in-game Build-Making Database. 86 already matched our text, give or take the game's "second(s)" wording. Three changed: <a href="/database/skill-mod-combos/berserker/" style="color: var(--accent);">Berserker</a> now reads +60% Weapon Critical Hit Damage (Ubisoft fixed its bonus in Season 2 Phase 2; we had the old +100% Critical Hit Chance tooltip), <a href="/database/skill-mod-combos/commando/" style="color: var(--accent);">Commando</a> uses the game's exact wording (same 10.20% for 10 seconds), and Thermobaric Grenades gained a missing "but". The database still shows <a href="/database/skill-mod-combos/ammo-refill/" style="color: var(--accent);">Ammo Refill</a>'s pre-Season 2 text, so we kept the patched values there. Each set's page now lists the rarities it comes in: every set has High-End and Superior pieces, and 21 sets (one per skill) also come in Specialized.</p>
   <p style="color: var(--ink-muted); font-size: var(--text-sm); line-height: 1.7; max-width: var(--measure); margin: 0 0 var(--sp-5) 0;">Names here are the ones the game shows on its tooltips. Ubisoft's official <a href="/database/drop-rates/">drop-rate table</a> uses different names for some sets (31 of its 90 set names don't match this list), so if a cache row names a set you can't find here, match it by skill and check the effect text in game.</p>
 
   <div class="db-filters">

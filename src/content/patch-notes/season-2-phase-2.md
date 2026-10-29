@@ -132,7 +132,7 @@ Strong Arm going from a 30 second cooldown to 6 seconds is the eye-catcher, even
 
 ### Weapons and gear
 
-- **Berserker** (Skill Mod Combo Set) wasn't granting its intended weapon critical hit damage bonus. Fixed.
+- **Berserker** (Skill Mod Combo Set) wasn't granting its intended weapon critical hit damage bonus. Fixed. (The in-game Build-Making Database now reads +60% Weapon Critical Hit Damage during the Breach Combo; see our [Berserker page](/database/skill-mod-combos/berserker/).)
 - **Strained** (weapon talent) description fixed: it said 7.3% instead of **10%** for tier 1 and 10.2% instead of **14%** for tier 2. Per Ubisoft's wording, only the description was wrong, so the talent was already using the higher numbers.
 - Fixed some instances of "Enemy take increased damage" effects not working properly.
 

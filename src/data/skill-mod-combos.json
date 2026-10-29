@@ -5,7 +5,13 @@
     "specialization": "Demolitionist",
     "skill": "Artillery Turret",
     "bonus2": "Skill Health+[4.0%~8.0%]",
-    "bonus3": "Skill Critical Hits reduce Artillery Turret Cooldown by 1.20%. Talent Cooldown: 1 second."
+    "bonus3": "Skill Critical Hits reduce Artillery Turret Cooldown by 1.20%. Talent Cooldown: 1 second(s).",
+    "rarities": [
+      "High-End",
+      "Superior",
+      "Specialized"
+    ],
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "smc-2",
@@ -13,7 +19,13 @@
     "specialization": "Demolitionist",
     "skill": "Artillery Turret",
     "bonus2": "Armor+[4.7%~9.3%]",
-    "bonus3": "Artillery Turret hits on up to 1 enemies have a 50% chance of granting +2% Skill Critical Damage for 10 second(s), up to 5 stack(s). Hits on more than 1 enemies have a guaranteed chance of granting the bonus."
+    "bonus3": "Artillery Turret hits on up to 1 enemies have a 50% chance of granting +2% Skill Critical Damage for 10 second(s), up to 5 stack(s). Hits on more than 1 enemies have a guaranteed chance of granting the bonus.",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "verifiedInGame": "2026-10-28",
+    "note": "The in-game Build-Making Database spells this set \"Area Supression\"."
   },
   {
     "id": "smc-3",
@@ -21,7 +33,12 @@
     "specialization": "Demolitionist",
     "skill": "Artillery Turret",
     "bonus2": "Max Health+[4.0%~8.0%]",
-    "bonus3": "Artillery Turret damage grants +1% Skill Multi-Shot Chance for 10 seconds, up to 5 stacks."
+    "bonus3": "Artillery Turret damage grants +1% Skill Multi-Shot Chance for 10 second(s), up to 5 stack(s).",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "smc-4",
@@ -29,7 +46,13 @@
     "specialization": "Demolitionist",
     "skill": "Explosive Seeker Mine",
     "bonus2": "Skill Health+[4.0%~8.0%]",
-    "bonus3": "Explosive Seeker Mine Critical Hits reduce Explosive Seeker Mine Cooldown by 10%. Talent Cooldown: 3 seconds."
+    "bonus3": "Explosive Seeker Mine Critical Hits reduce Explosive Seeker Mine Cooldown by 10%. Talent Cooldown: 3 second(s).",
+    "rarities": [
+      "High-End",
+      "Superior",
+      "Specialized"
+    ],
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "smc-5",
@@ -37,7 +60,12 @@
     "specialization": "Demolitionist",
     "skill": "Explosive Seeker Mine",
     "bonus2": "Armor+[4.7%~9.3%]",
-    "bonus3": "Explosive Seeker Mine hits on up to 1 enemies grant +3.20% Skill Critical Damage for 20 second(s), up to 3 stack(s)."
+    "bonus3": "Explosive Seeker Mine hits on up to 1 enemies grant +3.20% Skill Critical Damage for 20 second(s), up to 3 stack(s).",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "smc-6",
@@ -45,7 +73,12 @@
     "specialization": "Demolitionist",
     "skill": "Explosive Seeker Mine",
     "bonus2": "Max Health+[4.0%~8.0%]",
-    "bonus3": "Explosive Seeker Mine hits grant +6.40% Skill Multi-Shot Chance for 10 seconds."
+    "bonus3": "Explosive Seeker Mine hits grant +6.40% Skill Multi-Shot Chance for 10 second(s).",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "smc-7",
@@ -53,7 +86,13 @@
     "specialization": "Demolitionist",
     "skill": "M32A1 Grenade Launcher",
     "bonus2": "Skill Health+[4.0%~8.0%]",
-    "bonus3": "Skill Critical Hits grant +0.30% Signature Ability Charge. Talent Cooldown: 1 second.",
+    "bonus3": "Skill Critical Hits grant +0.30% Signature Ability Charge. Talent Cooldown: 1 second(s).",
+    "rarities": [
+      "High-End",
+      "Superior",
+      "Specialized"
+    ],
+    "verifiedInGame": "2026-10-28",
     "aliases": [
       "Fire Support"
     ]
@@ -64,7 +103,12 @@
     "specialization": "Demolitionist",
     "skill": "M32A1 Grenade Launcher",
     "bonus2": "Armor+[4.7%~9.3%]",
-    "bonus3": "M32A1 Grenade Launcher hits on up to 1 enemies grant +6% Skill Critical Damage until the next M32A1 Grenade Launcher hit."
+    "bonus3": "M32A1 Grenade Launcher hits on up to 1 enemies grant +6% Skill Critical Damage until the next M32A1 Grenade Launcher hit.",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "smc-9",
@@ -72,7 +116,12 @@
     "specialization": "Demolitionist",
     "skill": "M32A1 Grenade Launcher",
     "bonus2": "Max Health+[4.0%~8.0%]",
-    "bonus3": "Dealing 5 M32A1 Grenade Launcher hits in 3 seconds grants +14.40% Skill Intensity for 15 seconds."
+    "bonus3": "Dealing 5 M32A1 Grenade Launcher hits in 3 second(s) grants +14.40% Skill Intensity for 15 second(s).",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "smc-10",
@@ -80,7 +129,12 @@
     "specialization": "Demolitionist",
     "skill": "Artillery Turret",
     "bonus2": "Armor+[4.7%~9.3%]",
-    "bonus3": "Artillery Turret hits on enemies afflicted by Bleed or Vulnerable grant +1.44% Firepower for 10 seconds, up to 5 stacks.",
+    "bonus3": "Artillery Turret hits on enemies afflicted by Bleed or Vulnerable grant +1.44% Firepower for 10 second(s), up to 5 stack(s).",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "verifiedInGame": "2026-10-28",
     "aliases": [
       "Shaped Charge"
     ]
@@ -91,7 +145,12 @@
     "specialization": "Demolitionist",
     "skill": "Artillery Turret",
     "bonus2": "Rate of Fire+[4.0%~8.0%]",
-    "bonus3": "Grants +8% Artillery Turret Rate of Fire. Artillery Turret hits on up to 2 enemies grant +0.50 second(s) to Artillery Turret duration (capped at 6 seconds)."
+    "bonus3": "Grants +8% Artillery Turret Rate of Fire. Artillery Turret hits on up to 2 enemies grant +0.50 second(s) to Artillery Turret duration (capped at 6 second(s)).",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "smc-12",
@@ -99,7 +158,12 @@
     "specialization": "Demolitionist",
     "skill": "Artillery Turret",
     "bonus2": "Max Health+[4.0%~8.0%]",
-    "bonus3": "Artillery Turret hits grant +1.20% Weapon Critical Hit Chance for 10 seconds, up to 5 stacks.",
+    "bonus3": "Artillery Turret hits grant +1.20% Weapon Critical Hit Chance for 10 second(s), up to 5 stack(s).",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "verifiedInGame": "2026-10-28",
     "aliases": [
       "Enhanced Fire Control"
     ]
@@ -111,6 +175,11 @@
     "skill": "Explosive Seeker Mine",
     "bonus2": "Armor+[4.7%~9.3%]",
     "bonus3": "Explosive Seeker Mine hits on enemies afflicted by Bleed or Vulnerable apply the same debuff to all enemies within 10 meter(s) and grant +7.20% Firepower for 10 second(s).",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "verifiedInGame": "2026-10-28",
     "aliases": [
       "Multi-Directional Charge"
     ]
@@ -121,7 +190,12 @@
     "specialization": "Demolitionist",
     "skill": "Explosive Seeker Mine",
     "bonus2": "Rate of Fire+[4.0%~8.0%]",
-    "bonus3": "Grants +8.60% Explosive Seeker Mine Radius. Explosive Seeker Mine hits grant +1.60 second(s) to the duration of deployed Artillery Turrets."
+    "bonus3": "Grants +8.60% Explosive Seeker Mine Radius. Explosive Seeker Mine hits grant +1.60 second(s) to the duration of deployed Artillery Turrets.",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "smc-15",
@@ -129,7 +203,12 @@
     "specialization": "Demolitionist",
     "skill": "Explosive Seeker Mine",
     "bonus2": "Max Health+[4.0%~8.0%]",
-    "bonus3": "Explosive Seeker Mine hits grant +7.20% Weapon Critical Hit Chance for 10 seconds. Talent Cooldown: 1 second.",
+    "bonus3": "Explosive Seeker Mine hits grant +7.20% Weapon Critical Hit Chance for 10 second(s). Talent Cooldown: 1 second(s).",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "verifiedInGame": "2026-10-28",
     "aliases": [
       "Potent Composition"
     ]
@@ -140,7 +219,12 @@
     "specialization": "Demolitionist",
     "skill": "M32A1 Grenade Launcher",
     "bonus2": "Armor+[4.7%~9.3%]",
-    "bonus3": "Increases 9.60% Weapon Damage to enemies hit by M32A1 Grenade Launcher for 20 second(s) and extends the duration of Artillery Turret by 2 second(s)."
+    "bonus3": "Increases 9.60% Weapon Damage to enemies hit by M32A1 Grenade Launcher for 20 second(s) and extends the duration of Artillery Turret by 2 second(s).",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "smc-17",
@@ -148,7 +232,12 @@
     "specialization": "Demolitionist",
     "skill": "M32A1 Grenade Launcher",
     "bonus2": "Rate of Fire+[4.0%~8.0%]",
-    "bonus3": "Reduces Grenades in Grenade Launcher to 1, expands the Explosion Radius by 30% and increases damage by 300%."
+    "bonus3": "Reduces Grenades in Grenade Launcher to 1, but expands the Explosion Radius by 30% and increases damage by 300%.",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "smc-18",
@@ -156,7 +245,12 @@
     "specialization": "Demolitionist",
     "skill": "M32A1 Grenade Launcher",
     "bonus2": "Max Health+[4.0%~8.0%]",
-    "bonus3": "Landing 3 M32A1 Grenade Launcher hits grants +8% Weapon Critical Hit Chance for 10 second(s)."
+    "bonus3": "Landing 3 M32A1 Grenade Launcher hits grants +8% Weapon Critical Hit Chance for 10 second(s).",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "smc-19",
@@ -164,7 +258,13 @@
     "specialization": "Tech Operator",
     "skill": "Striker Drone",
     "bonus2": "Skill Cooldown Recovery-[2.0%~4.0%]",
-    "bonus3": "Deploying a Striker Drone restores Health equal to 5.60% Missing Health. Also grants +3% Movement Speed and +1% Skill Cooldown Recovery for 20 second(s), up to 3 stack(s)."
+    "bonus3": "Deploying a Striker Drone restores Health equal to 5.60% Missing Health. Also grants +3% Movement Speed and +1% Skill Cooldown Recovery for 20 second(s), up to 3 stack(s).",
+    "rarities": [
+      "High-End",
+      "Superior",
+      "Specialized"
+    ],
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "smc-20",
@@ -172,7 +272,12 @@
     "specialization": "Tech Operator",
     "skill": "Striker Drone",
     "bonus2": "Skill Health+[4.0%~8.0%]",
-    "bonus3": "Striker Drone Critical Hits have a 5% chance of exploding, dealing 300% damage."
+    "bonus3": "Striker Drone Critical Hits have a 5% chance of exploding, dealing 300% damage.",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "smc-21",
@@ -180,7 +285,12 @@
     "specialization": "Tech Operator",
     "skill": "Striker Drone",
     "bonus2": "Skill Health+[4.0%~8.0%]",
-    "bonus3": "Hitting enemies who have less than 50% Health grants +9.60% Striker Drone Multi-Shot Chance."
+    "bonus3": "Hitting enemies who have less than 50% Health grants +9.60% Striker Drone Multi-Shot Chance.",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "smc-22",
@@ -189,6 +299,12 @@
     "skill": "Drone Lock",
     "bonus2": "Skill Cooldown Recovery-[2.0%~4.0%]",
     "bonus3": "Striker Drone hits on Drone Locked enemies have a 5% chance of granting 4.80% Damage Reduction from the targets for 10 second(s), up to 3 stack(s). Probability increases to 15% for targets who are at least 20 meter(s) away.",
+    "rarities": [
+      "High-End",
+      "Superior",
+      "Specialized"
+    ],
+    "verifiedInGame": "2026-10-28",
     "aliases": [
       "Precise Suppression"
     ]
@@ -199,7 +315,12 @@
     "specialization": "Tech Operator",
     "skill": "Drone Lock",
     "bonus2": "Skill Health+[4.0%~8.0%]",
-    "bonus3": "Applying Drone Lock grants +6% Skill Critical Hit Chance for 20 seconds."
+    "bonus3": "Applying Drone Lock grants +6% Skill Critical Hit Chance for 20 second(s).",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "smc-24",
@@ -207,7 +328,12 @@
     "specialization": "Tech Operator",
     "skill": "Drone Lock",
     "bonus2": "Skill Health+[4.0%~8.0%]",
-    "bonus3": "Killing Drone Locked enemies grants +4.80% Skill Multi-Shot Chance for 10 seconds."
+    "bonus3": "Killing Drone Locked enemies grants +4.80% Skill Multi-Shot Chance for 10 second(s).",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "smc-25",
@@ -215,7 +341,13 @@
     "specialization": "Tech Operator",
     "skill": "Drone Overload",
     "bonus2": "Skill Cooldown Recovery-[2.0%~4.0%]",
-    "bonus3": "Within 30 second(s) of activating Drone Overload, Striker Drone hits have a 5% chance of restoring 2% Max Health. Probability increases to 10% for targets who are at least 20 meter(s) away."
+    "bonus3": "Within 30 second(s) of activating Drone Overload, Striker Drone hits have a 5% chance of restoring 2% Max Health. Probability increases to 10% for targets who are at least 20 meter(s) away.",
+    "rarities": [
+      "High-End",
+      "Superior",
+      "Specialized"
+    ],
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "smc-26",
@@ -223,7 +355,12 @@
     "specialization": "Tech Operator",
     "skill": "Drone Overload",
     "bonus2": "Skill Health+[4.0%~8.0%]",
-    "bonus3": "Within 30 second(s) of activating Drone Overload, Striker Drone hits have a 10% chance of granting +10.80% Skill Critical Hit Chance for 20 second(s)."
+    "bonus3": "Within 30 second(s) of activating Drone Overload, Striker Drone hits have a 10% chance of granting +10.80% Skill Critical Hit Chance for 20 second(s).",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "smc-27",
@@ -231,7 +368,12 @@
     "specialization": "Tech Operator",
     "skill": "Drone Overload",
     "bonus2": "Skill Health+[4.0%~8.0%]",
-    "bonus3": "Within 20 second(s) of activating Drone Overload, kills grant +3.20% Skill Multi-Shot Chance for 20 second(s), up to 3 stack(s)."
+    "bonus3": "Within 20 second(s) of activating Drone Overload, kills grant +3.20% Skill Multi-Shot Chance for 20 second(s), up to 3 stack(s).",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "smc-28",
@@ -239,7 +381,13 @@
     "specialization": "Tech Operator",
     "skill": "Mender Drone",
     "bonus2": "Skill Cooldown Recovery-[2.0%~4.0%]",
-    "bonus3": "Mender Drone healing grants +2.00% Healing Intensity for 20 second(s), up to 6 stack(s). Grants an additional +3.20% Healing Intensity over 3 stack(s)."
+    "bonus3": "Mender Drone healing grants +2.00% Healing Intensity for 20 second(s), up to 6 stack(s). Grants an additional +3.20% Healing Intensity over 3 stack(s).",
+    "rarities": [
+      "High-End",
+      "Superior",
+      "Specialized"
+    ],
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "smc-29",
@@ -248,6 +396,11 @@
     "skill": "Mender Drone",
     "bonus2": "Engineering+[3.0%~6.0%]",
     "bonus3": "Mender Drone healing grants bonus damage equal to 6.60% Engineering for 20 second(s), up to 3 stack(s).",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "verifiedInGame": "2026-10-28",
     "aliases": [
       "Team Backup"
     ]
@@ -259,6 +412,11 @@
     "skill": "Mender Drone",
     "bonus2": "Healing Intensity+[3.3%~6.7%]",
     "bonus3": "Deploying a Mender Drone grants +3.20% Signature Ability Charge Efficiency for 20 second(s), up to 3 stack(s).",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "verifiedInGame": "2026-10-28",
     "aliases": [
       "EMCAT"
     ],
@@ -270,7 +428,13 @@
     "specialization": "Tech Operator",
     "skill": "First-Aid Firefly",
     "bonus2": "Skill Cooldown Recovery-[2.0%~4.0%]",
-    "bonus3": "First-Aid Firefly healing restores additional Health over 20 second(s). During that time, First-Aid Firefly restores an additional 30.00% Health when healing the same target."
+    "bonus3": "First-Aid Firefly healing restores additional Health over 20 second(s). During that time, First-Aid Firefly restores an additional 30.00% Health when healing the same target.",
+    "rarities": [
+      "High-End",
+      "Superior",
+      "Specialized"
+    ],
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "smc-32",
@@ -279,6 +443,11 @@
     "skill": "First-Aid Firefly",
     "bonus2": "Engineering+[3.0%~6.0%]",
     "bonus3": "Hits deal additional damage equal to 80% Engineering for 8 second(s) after deploying a First-Aid Firefly. This bonus is also granted to the ally who is targeted by the First-Aid Firefly.",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "verifiedInGame": "2026-10-28",
     "aliases": [
       "Performance Enhancer"
     ]
@@ -289,7 +458,12 @@
     "specialization": "Tech Operator",
     "skill": "First-Aid Firefly",
     "bonus2": "Healing Intensity+[3.3%~6.7%]",
-    "bonus3": "Deploying a First-Aid Firefly grants 32.00 Signature Ability Charge(s). Grants +40.00% Signature Ability Charge Efficiency if the target of the First-Aid Firefly has less than 50% Health."
+    "bonus3": "Deploying a First-Aid Firefly grants 32.00 Signature Ability Charge(s). Grants +40.00% Signature Ability Charge Efficiency if the target of the First-Aid Firefly has less than 50% Health.",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "smc-34",
@@ -297,7 +471,13 @@
     "specialization": "Tech Operator",
     "skill": "Defender Drone",
     "bonus2": "Skill Cooldown Recovery-[2.0%~4.0%]",
-    "bonus3": "Defender Drone can follow either the Agent or a group member, providing Extra Health to the target followed. Extra Health increases by 300% per second."
+    "bonus3": "Defender Drone can follow either the Agent or a group member, providing Extra Health to the target followed. Extra Health increases by 300% per second.",
+    "rarities": [
+      "High-End",
+      "Superior",
+      "Specialized"
+    ],
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "smc-35",
@@ -305,7 +485,12 @@
     "specialization": "Tech Operator",
     "skill": "Defender Drone",
     "bonus2": "Engineering+[3.0%~6.0%]",
-    "bonus3": "Defender Drone deals damage to enemies within its radius every second."
+    "bonus3": "Defender Drone deals damage to enemies within its radius every second.",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "smc-36",
@@ -314,6 +499,11 @@
     "skill": "Defender Drone",
     "bonus2": "Healing Intensity+[3.3%~6.7%]",
     "bonus3": "When Defender Drone grants a Shield to either the Agent or a group member, increases Signature Ability Charge(s) by 2.00%.",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "verifiedInGame": "2026-10-28",
     "aliases": [
       "Mutual Assist"
     ],
@@ -325,7 +515,13 @@
     "specialization": "Bulwark",
     "skill": "Shockwave Spike Mk.3",
     "bonus2": "Max Health+[4.0%~8.0%]",
-    "bonus3": "When Health is below 50%, Shockwave Spike Mk.3 hits restore Health equal to 0.80% Max Health. When Health is above 50%, Shockwave Spike Mk.3 hits grant +12% Weapon Critical Hit Damage."
+    "bonus3": "When Health is below 50%, Shockwave Spike Mk.3 hits restore Health equal to 0.80% Max Health. When Health is above 50%, Shockwave Spike Mk.3 hits grant +12% Weapon Critical Hit Damage.",
+    "rarities": [
+      "High-End",
+      "Superior",
+      "Specialized"
+    ],
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "smc-38",
@@ -333,7 +529,12 @@
     "specialization": "Bulwark",
     "skill": "Shockwave Spike Mk.3",
     "bonus2": "Max Health+[4.0%~8.0%]",
-    "bonus3": "Shockwave Spike Mk.3 hits grant +1.60% Weapon Damage for 5 second(s), up to 5 stack(s)."
+    "bonus3": "Shockwave Spike Mk.3 hits grant +1.60% Weapon Damage for 5 second(s), up to 5 stack(s).",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "smc-39",
@@ -341,7 +542,12 @@
     "specialization": "Bulwark",
     "skill": "Shockwave Spike Mk.3",
     "bonus2": "Weapon Damage+[2.0%~4.0%]",
-    "bonus3": "Shockwave Spike Mk.3 hits grant +4% Weapon Critical Hit Chance for 10 second(s), up to 4 stack(s)."
+    "bonus3": "Shockwave Spike Mk.3 hits grant +4% Weapon Critical Hit Chance for 10 second(s), up to 4 stack(s).",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "smc-40",
@@ -350,6 +556,11 @@
     "skill": "Phalanx Shield",
     "bonus2": "Skill Health+[4.0%~8.0%]",
     "bonus3": "Deploying the Phalanx Shield grants +4% Rate of Fire. Hits restore 0.60% Shield Health. Talent Cooldown: 1 second(s).",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "verifiedInGame": "2026-10-28",
     "note": "Season 2 Phase 1 fixed the Rate of Fire bonus, which had been granting Weapon Damage instead."
   },
   {
@@ -358,7 +569,12 @@
     "specialization": "Bulwark",
     "skill": "Phalanx Shield",
     "bonus2": "Weapon Damage+[2.0%~4.0%]",
-    "bonus3": "Grants +12% Toughness while the Phalanx Shield is deployed."
+    "bonus3": "Grants +12% Toughness while the Phalanx Shield is deployed.",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "smc-42",
@@ -366,7 +582,13 @@
     "specialization": "Bulwark",
     "skill": "Breach Combo",
     "bonus2": "Max Health+[4.0%~8.0%]",
-    "bonus3": "Within 6 second(s) of deploying the Breach Combo, hits have a 40% chance of restoring 1 bullet(s). Critical Hits increase duration to 0.50 second(s) (capped at 2 second(s))."
+    "bonus3": "Within 6 second(s) of deploying the Breach Combo, hits have a 40% chance of restoring 1 bullet(s). Critical Hits increase duration to 0.50 second(s) (capped at 2 second(s)).",
+    "rarities": [
+      "High-End",
+      "Superior",
+      "Specialized"
+    ],
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "smc-43",
@@ -374,7 +596,12 @@
     "specialization": "Bulwark",
     "skill": "Breach Combo",
     "bonus2": "Skill Health+[4.0%~8.0%]",
-    "bonus3": "Deploying the Breach Combo grants +12% Rate of Fire. Hits on enemies within 10 meter(s) restore 1 bullets (capped at 3 bullets). Talent Cooldown: 1 second(s)."
+    "bonus3": "Deploying the Breach Combo grants +12% Rate of Fire. Hits on enemies within 10 meter(s) restore 1 bullets (capped at 3 bullets). Talent Cooldown: 1 second(s).",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "smc-44",
@@ -382,9 +609,13 @@
     "specialization": "Bulwark",
     "skill": "Breach Combo",
     "bonus2": "Weapon Damage+[2.0%~4.0%]",
-    "bonus3": "During Breach Combo, grants +100% Weapon Critical Hit Chance if there are at least 1 enemie(s) within 20 meter(s).",
-    "note": "This is the tooltip we recorded in June. Season 2 Phase 2 fixed this set \"not granting its intended weapon critical hit damage bonus,\" in Ubisoft's words, so the bonus may be crit damage, at a value we haven't checked.",
-    "caveat": true
+    "bonus3": "During the Breach Combo, grants +60% Weapon Critical Hit Damage if there are at least 1 hostile(s) within 20 meter(s).",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "verifiedInGame": "2026-10-28",
+    "note": "Season 2 Phase 2 fixed this set \"not granting its intended weapon critical hit damage bonus,\" in Ubisoft's words. The in-game Build-Making Database now reads +60% Weapon Critical Hit Damage (checked October 28, 2026). Until then we listed the June tooltip: +100% Weapon Critical Hit Chance."
   },
   {
     "id": "smc-45",
@@ -392,7 +623,12 @@
     "specialization": "Bulwark",
     "skill": "Shockwave Spike Mk.3",
     "bonus2": "Weapon Damage+[2.0%~4.0%]",
-    "bonus3": "Shockwave Spike Mk.3 hits grant +1.20% Damage Reduction, up to 5 stack(s), but nearby enemies focus the Agent in priority."
+    "bonus3": "Shockwave Spike Mk.3 hits grant +1.20% Damage Reduction, up to 5 stack(s), but nearby enemies focus the Agent in priority.",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "smc-46",
@@ -400,7 +636,12 @@
     "specialization": "Bulwark",
     "skill": "Shockwave Spike Mk.3",
     "bonus2": "Skill Duration+[3.2%~6.4%]",
-    "bonus3": "Shockwave Spike Mk.3 hits grant +0.80% Max Health for 20 second(s), up to 5 stack(s). Shockwave Spike Mk.3 deals additional damage equal to 0.60% Max Health."
+    "bonus3": "Shockwave Spike Mk.3 hits grant +0.80% Max Health for 20 second(s), up to 5 stack(s). Shockwave Spike Mk.3 deals additional damage equal to 0.60% Max Health.",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "smc-47",
@@ -408,7 +649,12 @@
     "specialization": "Bulwark",
     "skill": "Shockwave Spike Mk.3",
     "bonus2": "Skill Duration+[3.2%~6.4%]",
-    "bonus3": "Grants +14% Armor while located within 10 meter(s) of the Shockwave Spike Mk.3."
+    "bonus3": "Grants +14% Armor while located within 10 meter(s) of the Shockwave Spike Mk.3.",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "smc-48",
@@ -416,7 +662,12 @@
     "specialization": "Bulwark",
     "skill": "Phalanx Shield",
     "bonus2": "Weapon Damage+[2.0%~4.0%]",
-    "bonus3": "Enemies within 20 meter(s) focus the Agent in priority when deploying the Phalanx Shield. Grants +3.20% Damage Reduction for 10 second(s) for each enemy who is targeting the Agent, up to 5 stack(s). Talent Cooldown: 20 second(s)."
+    "bonus3": "Enemies within 20 meter(s) focus the Agent in priority when deploying the Phalanx Shield. Grants +3.20% Damage Reduction for 10 second(s) for each enemy who is targeting the Agent, up to 5 stack(s). Talent Cooldown: 20 second(s).",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "smc-49",
@@ -424,7 +675,12 @@
     "specialization": "Bulwark",
     "skill": "Phalanx Shield",
     "bonus2": "Rate of Fire+[4.0%~8.0%]",
-    "bonus3": "Grants Extra Shield Health equal to 9.20% Max Health."
+    "bonus3": "Grants Extra Shield Health equal to 9.20% Max Health.",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "smc-50",
@@ -432,7 +688,12 @@
     "specialization": "Bulwark",
     "skill": "Phalanx Shield",
     "bonus2": "Skill Health+[4.0%~8.0%]",
-    "bonus3": "Reaching 10% Phalanx Shield Health restores 15% Max Shield Health. Talent Cooldown: 30 second(s)."
+    "bonus3": "Reaching 10% Phalanx Shield Health restores 15% Max Shield Health. Talent Cooldown: 30 second(s).",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "smc-51",
@@ -440,7 +701,12 @@
     "specialization": "Bulwark",
     "skill": "Breach Combo",
     "bonus2": "Weapon Damage+[2.0%~4.0%]",
-    "bonus3": "Breach Combo hits restore Shield Health and Health equal to 4.20% Max Health."
+    "bonus3": "Breach Combo hits restore Shield Health and Health equal to 4.20% Max Health.",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "smc-52",
@@ -449,6 +715,11 @@
     "skill": "Breach Combo",
     "bonus2": "Max Health+[4.0%~8.0%]",
     "bonus3": "Breach Combo hits deal additional damage equal to 2% Max Health.",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "verifiedInGame": "2026-10-28",
     "note": "Ubisoft's October 14, 2026 notes cut this from 25% to 5% of Max Health. Its October 2 preview gave the full change as 10/15/20/25% to 2/3/4/5%, and this page lists the lowest value."
   },
   {
@@ -457,7 +728,12 @@
     "specialization": "Bulwark",
     "skill": "Breach Combo",
     "bonus2": "Skill Health+[4.0%~8.0%]",
-    "bonus3": "Breach Combo hits grant +33.80% Armor for 15 second(s), up to 5 stack(s)."
+    "bonus3": "Breach Combo hits grant +33.80% Armor for 15 second(s), up to 5 stack(s).",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "smc-54",
@@ -465,7 +741,13 @@
     "specialization": "Bulwark",
     "skill": "Phalanx Shield",
     "bonus2": "Skill Health+[4.0%~8.0%]",
-    "bonus3": "Grants +9.60% Weapon Critical Hit Damage when Shield Health is above 50%. Grants +4.80% Shield Damage Reduction when Shield Health is below 50%."
+    "bonus3": "Grants +9.60% Weapon Critical Hit Damage when Shield Health is above 50%. Grants +4.80% Shield Damage Reduction when Shield Health is below 50%.",
+    "rarities": [
+      "High-End",
+      "Superior",
+      "Specialized"
+    ],
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "smc-55",
@@ -473,7 +755,12 @@
     "specialization": "Vanguard",
     "skill": "Smart Cover",
     "bonus2": "Skill Cooldown Recovery-[2.0%~4.0%]",
-    "bonus3": "While behind a Smart Cover, grants +1% Damage, up to 3 stack(s). Reaching maximum stacks grants +3% Signature Ability Charge Efficiency. This bonus resets upon leaving the Smart Cover."
+    "bonus3": "While behind a Smart Cover, grants +1% Damage, up to 3 stack(s). Reaching maximum stacks grants +3% Signature Ability Charge Efficiency. This bonus resets upon leaving the Smart Cover.",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "smc-56",
@@ -482,6 +769,11 @@
     "skill": "Scanning Pulse",
     "bonus2": "Damage Reduction+[2.0%~4.0%]",
     "bonus3": "Deploying Scanning Pulse grants Pulsed allies Weapon Critical Hit Chance equal to 3.60% Engineering for 10 second(s).",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "verifiedInGame": "2026-10-28",
     "aliases": [
       "Pulse Enhancement"
     ]
@@ -493,6 +785,11 @@
     "skill": "Scanning Pulse",
     "bonus2": "Signature Ability Charge Efficiency+[4.0%~8.0%]",
     "bonus3": "Pulsed enemies grant +8 Signature Ability Charge(s) to the ally team.",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "verifiedInGame": "2026-10-28",
     "aliases": [
       "Scout"
     ]
@@ -503,7 +800,12 @@
     "specialization": "Vanguard",
     "skill": "Scanning Pulse",
     "bonus2": "Skill Cooldown Recovery-[2.0%~4.0%]",
-    "bonus3": "Deploying Scanning Pulse while Fortified reduces the Skill Cooldown by 1.50 second(s)."
+    "bonus3": "Deploying Scanning Pulse while Fortified reduces the Skill Cooldown by 1.50 second(s).",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "smc-59",
@@ -511,7 +813,12 @@
     "specialization": "Vanguard",
     "skill": "Tactical Link",
     "bonus2": "Damage Reduction+[2.0%~4.0%]",
-    "bonus3": "Deploying Tactical Link grants +14.40% Rate of Fire, Damage Reduction, and Movement Speed for 15 second(s)."
+    "bonus3": "Deploying Tactical Link grants +14.40% Rate of Fire, Damage Reduction, and Movement Speed for 15 second(s).",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "smc-60",
@@ -519,7 +826,12 @@
     "specialization": "Vanguard",
     "skill": "Tactical Link",
     "bonus2": "Damage Reduction+[2.0%~4.0%]",
-    "bonus3": "Deploying Tactical Link grants +28.80% Signature Ability Charge Efficiency."
+    "bonus3": "Deploying Tactical Link grants +28.80% Signature Ability Charge Efficiency.",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "smc-61",
@@ -527,7 +839,12 @@
     "specialization": "Vanguard",
     "skill": "Tactical Link",
     "bonus2": "Skill Cooldown Recovery-[2.0%~4.0%]",
-    "bonus3": "While using Tactical Link, hits have a 10% chance of reducing Skill Cooldown by 0.80 second(s). Talent Cooldown: 5 second(s)."
+    "bonus3": "While using Tactical Link, hits have a 10% chance of reducing Skill Cooldown by 0.80 second(s). Talent Cooldown: 5 second(s).",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "smc-62",
@@ -535,7 +852,13 @@
     "specialization": "Vanguard",
     "skill": "Smart Cover",
     "bonus2": "Armor+[4.7%~9.3%]",
-    "bonus3": "While behind a Smart Cover, weapon hits have a 5% chance of granting +2% Weapon Critical Hit Chance for 20 second(s), up to 3 stack(s)."
+    "bonus3": "While behind a Smart Cover, weapon hits have a 5% chance of granting +2% Weapon Critical Hit Chance for 20 second(s), up to 3 stack(s).",
+    "rarities": [
+      "High-End",
+      "Superior",
+      "Specialized"
+    ],
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "smc-63",
@@ -543,7 +866,12 @@
     "specialization": "Vanguard",
     "skill": "Smart Cover",
     "bonus2": "Reload Speed+[4.0%~8.0%]",
-    "bonus3": "While behind a Smart Cover, grants +3.20% Damage Reduction and hits have a 4.80% chance of restoring 1 bullet(s)."
+    "bonus3": "While behind a Smart Cover, grants +3.20% Damage Reduction and hits have a 4.80% chance of restoring 1 bullet(s).",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "smc-64",
@@ -551,7 +879,12 @@
     "specialization": "Vanguard",
     "skill": "Smart Cover",
     "bonus2": "Skill Cooldown Recovery-[2.0%~4.0%]",
-    "bonus3": "While behind a Smart Cover, grants +9.60% Signature Ability Charge Efficiency."
+    "bonus3": "While behind a Smart Cover, grants +9.60% Signature Ability Charge Efficiency.",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "smc-65",
@@ -559,7 +892,13 @@
     "specialization": "Vanguard",
     "skill": "Tactical Link",
     "bonus2": "Armor+[4.7%~9.3%]",
-    "bonus3": "Kills or assists while using Tactical Link grant +10.20% Weapon Critical Hit Chance for 10 second(s)."
+    "bonus3": "When having the Tactical Link effect on self, every time you participate in killing an enemy, your weapon's Critical Hit Chance will be increased by 10.20% for 10 seconds.",
+    "rarities": [
+      "High-End",
+      "Superior",
+      "Specialized"
+    ],
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "smc-66",
@@ -567,7 +906,12 @@
     "specialization": "Vanguard",
     "skill": "Scanning Pulse",
     "bonus2": "Reload Speed+[4.0%~8.0%]",
-    "bonus3": "Killing or assisting in killing the enemy scanned by you, restoring your Health by 6% of Health lost, and refilling the Magazine by 6.40%."
+    "bonus3": "Killing or assisting in killing the enemy scanned by you, restoring your Health by 6% of Health lost, and refilling the Magazine by 6.40%.",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "smc-67",
@@ -575,7 +919,12 @@
     "specialization": "Vanguard",
     "skill": "Scanning Pulse",
     "bonus2": "Skill Cooldown Recovery-[2.0%~4.0%]",
-    "bonus3": "When releasing the Scanning Pulse, gain an additional 160 Signature Ability Charge. If there are more than 3 enemies within 70 meters, gain an increased charge of 200."
+    "bonus3": "When releasing the Scanning Pulse, gain an additional 160 Signature Ability Charge. If there are more than 3 enemies within 70 meters, gain an increased charge of 200.",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "smc-68",
@@ -583,7 +932,13 @@
     "specialization": "Vanguard",
     "skill": "Scanning Pulse",
     "bonus2": "Armor+[4.7%~9.3%]",
-    "bonus3": "Each enemy scanned within 70 meter increases Weapon Critical Hit Chance by 1.40%, up to 8 times."
+    "bonus3": "Each enemy scanned within 70 meter increases Weapon Critical Hit Chance by 1.40%, up to 8 times.",
+    "rarities": [
+      "High-End",
+      "Superior",
+      "Specialized"
+    ],
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "smc-69",
@@ -592,7 +947,11 @@
     "skill": "Tactical Link",
     "bonus2": "Reload Speed+[4.0%~8.0%]",
     "bonus3": "Every shot during the first 6 seconds of Tactical Link grants a 7% chance of recovering 4 ammo. Duration resets at each kill.",
-    "note": "Season 2 Phase 1 raised the ammo returned from 1 to 4 and cut the chance, from 72% to 18% in Ubisoft's notes, which looks like the highest tier. Like the rest of this file, this entry lists the lowest tier: it read 29% before the patch, and TikTokAndy's set read 7% on September 30, 2026 (he said on October 2 that it isn't maxed)."
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "note": "Season 2 Phase 1 raised the ammo returned from 1 to 4 and cut the chance, from 72% to 18% in Ubisoft's notes, which looks like the highest tier. Like the rest of this file, this entry lists the lowest tier: it read 29% before the patch, and TikTokAndy's set read 7% on September 30, 2026 (he said on October 2 that it isn't maxed). The in-game Build-Making Database still shows the old text (29% chance of recovering 1 ammo) as of October 28, 2026."
   },
   {
     "id": "smc-70",
@@ -600,7 +959,12 @@
     "specialization": "Vanguard",
     "skill": "Tactical Link",
     "bonus2": "Skill Cooldown Recovery-[2.0%~4.0%]",
-    "bonus3": "While Tactical Link is active, hitting enemies has a 10% chance to extend its duration by 0.30s. This effect can stack up to 8 time(s) and start a 15s cooldown when reaches the maximun stacks."
+    "bonus3": "While Tactical Link is active, hitting enemies has a 10% chance to extend its duration by 0.30s. This effect can stack up to 8 time(s) and start a 15s cooldown when reaches the maximun stacks.",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "smc-71",
@@ -609,7 +973,14 @@
     "skill": "Smart Cover",
     "bonus2": "Max Health+[4.0%~8.0%]",
     "bonus3": "While behind a Smart Cover, kills or assists grant allies Extra Health equal to 120% Engineering for 10 second(s).",
-    "aliases": ["Superior Position"],
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "verifiedInGame": "2026-10-28",
+    "aliases": [
+      "Superior Position"
+    ],
     "note": "Superior Position was this set's name in the 2023 regional beta: a fan list of beta data (zilliongamer) gives it the same 2-piece Health bonus and the same effect, Extra Health for allies on kills from Smart Cover."
   },
   {
@@ -619,6 +990,11 @@
     "skill": "Smart Cover",
     "bonus2": "Damage Reduction+[2.0%~4.0%]",
     "bonus3": "While behind a Smart Cover, kills or assists grant 10 Signature Ability Charge(s). This effect also applies to allies.",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "verifiedInGame": "2026-10-28",
     "aliases": [
       "Mobile Bastion"
     ]
@@ -629,7 +1005,13 @@
     "specialization": "Field Medic",
     "skill": "Chemical Trap",
     "bonus2": "Skill Duration+[3.2%~6.4%]",
-    "bonus3": "Grants +32.00% Armor while located within 20 meter(s) of a Chemical Trap."
+    "bonus3": "Grants +32.00% Armor while located within 20 meter(s) of a Chemical Trap.",
+    "rarities": [
+      "High-End",
+      "Superior",
+      "Specialized"
+    ],
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "smc-74",
@@ -638,6 +1020,11 @@
     "skill": "Chemical Trap",
     "bonus2": "Damage Reduction+[2.0%~4.0%]",
     "bonus3": "Chemical Trap can be deployed farther away. Hits on enemies inside Chemical Traps apply 1 stack(s) of Corrosive. Headshots apply 4 stack(s) instead. Talent Cooldown: 1.50 second(s).",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "verifiedInGame": "2026-10-28",
     "aliases": [
       "Lightweight"
     ]
@@ -649,6 +1036,11 @@
     "skill": "Chemical Trap",
     "bonus2": "Damage Reduction+[2.0%~4.0%]",
     "bonus3": "Using a Chemical Trap to apply a stack of Corrosive has a 50% chance of restoring 4 Signature Ability Charge(s). Talent Cooldown: 0.50 second(s).",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "verifiedInGame": "2026-10-28",
     "aliases": [
       "Siphon"
     ]
@@ -660,6 +1052,12 @@
     "skill": "Oxidizing Hive",
     "bonus2": "Skill Intensity+[2.0%~4.0%]",
     "bonus3": "When deploying Oxidizing Hive, you lose Health equal to 25% of your current Health but gain Extra Health equal to 35.00% of Max Health and 5% Armor for 20 second(s). When Oxidizing Hive is attached to your backpack, it releases Micro Corrosive Drones to enemies within 15.00 meter(s) every 1.60 second(s).",
+    "rarities": [
+      "High-End",
+      "Superior",
+      "Specialized"
+    ],
+    "verifiedInGame": "2026-10-28",
     "aliases": [
       "Acidic Effect"
     ]
@@ -671,6 +1069,11 @@
     "skill": "Oxidizing Hive",
     "bonus2": "Damage Reduction+[2.0%~4.0%]",
     "bonus3": "If Oxidizing Hive is attached to your backpack and no enemy is hit by your weapon within 3 second(s), hitting enemies with your weapon will trigger Oxidizing Hive to release 13 Micro Corrosive Drones flying towards the target and applying Corrosion to them.",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "verifiedInGame": "2026-10-28",
     "aliases": [
       "Improved Formula"
     ]
@@ -681,7 +1084,12 @@
     "specialization": "Field Medic",
     "skill": "Oxidizing Hive",
     "bonus2": "Damage Reduction+[2.0%~4.0%]",
-    "bonus3": "While being assisted by the Oxidizing Hive, hits restore 8 Signature Ability Charge(s). Talent Cooldown: 2 second(s)."
+    "bonus3": "While being assisted by the Oxidizing Hive, hits restore 8 Signature Ability Charge(s). Talent Cooldown: 2 second(s).",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "smc-79",
@@ -690,6 +1098,12 @@
     "skill": "Oxidizing Swarm",
     "bonus2": "Skill Critical Damage+[4.0%~8.0%]",
     "bonus3": "Oxidizing Swarm hits inflict -12% Damage for 20 second(s). Killing an enemy within 20 meter(s) who is also afflicted by this debuff restores Health equal to 8% Missing Health for 20 second(s).",
+    "rarities": [
+      "High-End",
+      "Superior",
+      "Specialized"
+    ],
+    "verifiedInGame": "2026-10-28",
     "aliases": [
       "Feebleness"
     ]
@@ -700,7 +1114,12 @@
     "specialization": "Field Medic",
     "skill": "Oxidizing Swarm",
     "bonus2": "Damage Reduction+[2.0%~4.0%]",
-    "bonus3": "Oxidizing Swarm can be thrown farther away. Oxidizing Swarm hits that are at least 20 meter(s) away inflict -14.40% Damage Reduction for 10 second(s)."
+    "bonus3": "Oxidizing Swarm can be thrown farther away. Oxidizing Swarm hits that are at least 20 meter(s) away inflict -14.40% Damage Reduction for 10 second(s).",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "smc-81",
@@ -708,7 +1127,12 @@
     "specialization": "Field Medic",
     "skill": "Oxidizing Swarm",
     "bonus2": "Damage Reduction+[2.0%~4.0%]",
-    "bonus3": "Oxidizing Swarm hits reduce Skill Cooldown by 2.40 second(s)."
+    "bonus3": "Oxidizing Swarm hits reduce Skill Cooldown by 2.40 second(s).",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "smc-82",
@@ -717,6 +1141,12 @@
     "skill": "Support Station",
     "bonus2": "Damage Reduction+[2.0%~4.0%]",
     "bonus3": "Support Station deals damage to enemies who are within its radius. Damage is increased by 25% while located within the radius of a Support Station.",
+    "rarities": [
+      "High-End",
+      "Superior",
+      "Specialized"
+    ],
+    "verifiedInGame": "2026-10-28",
     "aliases": [
       "Detrimental Treatment"
     ]
@@ -727,7 +1157,12 @@
     "specialization": "Field Medic",
     "skill": "Support Station",
     "bonus2": "Healing Intensity+[3.3%~6.7%]",
-    "bonus3": "Grants +6% Incoming Healing and automatically revives any member of the ally team who is downed within the radius of a Support Station."
+    "bonus3": "Grants +6% Incoming Healing and automatically revives any member of the ally team who is downed within the radius of a Support Station.",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "smc-84",
@@ -735,7 +1170,12 @@
     "specialization": "Field Medic",
     "skill": "Support Station",
     "bonus2": "Healing Intensity+[3.3%~6.7%]",
-    "bonus3": "Grants +40% Incoming Healing to any ally below 50% Health who is located within the radius of a Support Station."
+    "bonus3": "Grants +40% Incoming Healing to any ally below 50% Health who is located within the radius of a Support Station.",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "smc-85",
@@ -744,8 +1184,13 @@
     "skill": "Healing Hive",
     "bonus2": "Damage Reduction+[2.0%~4.0%]",
     "bonus3": "While Healing Hive is deployed, hits on enemies within 20 meter(s) deal additional damage equal to 240% Weapon Damage.",
-    "note": "Our data before June read 240% of Toughness with a 2 second trigger interval, and AgentHuntzman said in his May 22, 2026 video that the tooltip switched between Weapon Damage and Toughness. We haven't confirmed which applies now.",
-    "caveat": true,
+    "rarities": [
+      "High-End",
+      "Superior",
+      "Specialized"
+    ],
+    "verifiedInGame": "2026-10-28",
+    "note": "The in-game Build-Making Database reads 240% Weapon Damage (checked October 28, 2026). Our data before June read 240% of Toughness with a 2 second trigger interval, and AgentHuntzman said in his May 22, 2026 video that the tooltip switched between Weapon Damage and Toughness.",
     "aliases": [
       "Defensive Measures"
     ]
@@ -756,7 +1201,12 @@
     "specialization": "Field Medic",
     "skill": "Healing Hive",
     "bonus2": "Healing Intensity+[3.3%~6.7%]",
-    "bonus3": "While Healing Hive is deployed, grants +2.00% Incoming Healing to any ally who is below 50% Health. Self-targeting on the Healing Hive also deploys healing nano-drones to allies within 15 meter(s)."
+    "bonus3": "While Healing Hive is deployed, grants +2.00% Incoming Healing to any ally who is below 50% Health. Self-targeting on the Healing Hive also deploys healing nano-drones to allies within 15 meter(s).",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "smc-87",
@@ -765,6 +1215,11 @@
     "skill": "Healing Hive",
     "bonus2": "Healing Intensity+[3.3%~6.7%]",
     "bonus3": "While Healing Hive is deployed, grants +9.60% Skill Intensity when located within 20 meter(s) of an ally. While Healing Hive is deployed, grants +20% Movement Speed when located at least 20 meter(s) away from allies.",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "verifiedInGame": "2026-10-28",
     "aliases": [
       "Mutual Support"
     ]
@@ -775,7 +1230,13 @@
     "specialization": "Field Medic",
     "skill": "Healing Swarm",
     "bonus2": "Damage Reduction+[2.0%~4.0%]",
-    "bonus3": "Instead of healing allies, Healing Swarm deals damage to enemies by releasing 16 micro-drones that target enemies every 1.50 second(s)."
+    "bonus3": "Instead of healing allies, Healing Swarm deals damage to enemies by releasing 16 micro-drones that target enemies every 1.50 second(s).",
+    "rarities": [
+      "High-End",
+      "Superior",
+      "Specialized"
+    ],
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "smc-89",
@@ -783,7 +1244,12 @@
     "specialization": "Field Medic",
     "skill": "Healing Swarm",
     "bonus2": "Healing Intensity+[3.3%~6.7%]",
-    "bonus3": "Healing Swarm heals allies over 10 second(s). When an ally's Health drops to 0 during the healing process, restores Health equal to 16% Max Health to them for 5 second(s)."
+    "bonus3": "Healing Swarm heals allies over 10 second(s). When an ally's Health drops to 0 during the healing process, restores Health equal to 16% Max Health to them for 5 second(s).",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "smc-90",
@@ -792,6 +1258,11 @@
     "skill": "Healing Swarm",
     "bonus2": "Healing Intensity+[3.3%~6.7%]",
     "bonus3": "For each ally healed by Healing Swarm, grants +1.20% Skill Intensity for 20 second(s), up to 16 stack(s).",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "verifiedInGame": "2026-10-28",
     "aliases": [
       "Doom Dealer"
     ]

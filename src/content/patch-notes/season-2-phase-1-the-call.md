@@ -156,6 +156,8 @@ The Double Barrel didn't die, it changed engines. Creators rebuilt it around Mis
 | Recycling (body armor talent) | 1s cooldown, refills 4.5% | 5s cooldown, refills 20% of the magazine (tooltip fixed in English) |
 | Marksman Rifle ammo reserve | 120 | 200 |
 
+The in-game Build-Making Database still showed Ammo Refill's old text (a 29% chance of recovering 1 ammo at the lowest tier) when we checked on October 28, 2026. TikTokAndy's live tooltip on September 30 already showed the 4-bullet version (at 7% on his set), so trust the patch notes on that one.
+
 ### Other balancing
 
 - **Recon:** Tactical Link now benefits from improved auto-aim support. Good news for the [Recon support build](/builds/agenthuntzmans-leaderboard-ranking-vanguard-support-build/).

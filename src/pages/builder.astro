@@ -60,7 +60,7 @@ const dataPayload = JSON.stringify({
   bodyArmorTalents,
   backpackTalents,
   osProtocols: omit(osProtocols, ['image', 'imageAlt', 'cooldown', 'verifiedInGame']),
-  skillModCombos,
+  skillModCombos: omit(skillModCombos, ['rarities', 'verifiedInGame']),
   bonusAttributes,
   weaponBonusAttributes,
   templates,

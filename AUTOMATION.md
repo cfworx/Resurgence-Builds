@@ -199,8 +199,9 @@ Update these when a source changes them (and only then):
 - Database JSON (`src/data/os-protocols.json`, `weapon-talents.json`, `skill-mod-combos.json`, notes files): when patch
   notes change a value, update it and add a `patchHistory` note where that file supports one. Keep "Last verified" stamps
   as they are (they mean in-game verification, which an automated run can't do). The same goes for `verifiedInGame` in
-  `os-protocols.json`: it records an in-game check (Cory's Build-Making Database recording of October 28, 2026), so when
-  patch notes change a protocol's value, delete that protocol's `verifiedInGame` instead of leaving it on.
+  `os-protocols.json`, `exotic-weapons.json` and `skill-mod-combos.json`: it records an in-game check (Cory's
+  Build-Making Database recordings of October 28, 2026), so when patch notes change an item's value, delete that item's
+  `verifiedInGame` instead of leaving it on. Never add `verifiedInGame` in an automated run.
 - Interactive map (`src/data/pois.json` via `scripts/build-map-data.mjs`): only when official sources announce new map content.
 
 ---

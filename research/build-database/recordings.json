@@ -30,5 +30,20 @@
     "section": "Exotic Weapon",
     "tabs": [],
     "entries": 6
+  },
+  {
+    "file": "Screen_Recording_20261028_163454_The_Division_Resurgence.mp4",
+    "recorded": "2026-10-28",
+    "durationSeconds": 413.0,
+    "resolution": "2340x1080",
+    "section": "Skill Mod Combo Set",
+    "tabs": [
+      "Demolitionist",
+      "Tech Operator",
+      "Bulwark",
+      "Vanguard",
+      "Field Medic"
+    ],
+    "entries": 90
   }
 ]

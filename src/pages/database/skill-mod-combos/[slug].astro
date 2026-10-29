@@ -9,7 +9,6 @@ import smcNotes from '../../../data/skill-mod-combo-notes.json';
 import { isSkillModIndexable } from '../../../utils/indexability.mjs';
 import DbItemExtras from '../../../components/DbItemExtras.astro';
 import { verifiedPatch, DATABASE_UPDATED } from '../../../data/site-config';
-const lastVerified = verifiedPatch('Patch 1.1.2.2'); // Bump: drop the arg ONLY after re-verifying this page's content in-game (CURRENT_PATCH is a ceiling, not an auto-bump)
 
 export function getStaticPaths() {
   return skillMods.map((mod: any) => ({
@@ -21,6 +20,10 @@ export function getStaticPaths() {
 }
 
 const { mod } = Astro.props;
+// Combos checked in the in-game Build-Making Database carry verifiedInGame (2026-10-28 for 89 of 90).
+// Ammo Refill doesn't: the database still shows its pre-Season 2 text, so it keeps the older stamp.
+const lastVerified = mod.verifiedInGame ? verifiedPatch() : verifiedPatch('Patch 1.1.2.2');
+const RARITY_COLOR: Record<string, string> = { 'High-End': '#F5CC45', 'Superior': '#a855f7', 'Specialized': '#3b82f6' };
 
 const slug = mod.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
 // Game data strings use raw forms like "1 enemies" / "20 second(s)": normalize for display.
@@ -163,7 +166,7 @@ const modLd = {
   dateModified: DATABASE_UPDATED,
   image: { '@type': 'ImageObject', url: `${siteUrl}/images/resurgence-builds-official-logo.png`, width: 800, height: 800 },
   inLanguage: 'en-US',
-  lastReviewed: '2026-05-30',
+  lastReviewed: mod.verifiedInGame || '2026-05-30',
   wordCount: 500,
   about: { '@id': `${siteUrl}/#division-resurgence` },
 };
@@ -225,6 +228,11 @@ const toModSlug = (name: string) => name.toLowerCase().replace(/[^a-z0-9]+/g, '-
           </div>
           <p class="smc-bonus-card__text">{bonus3}</p>
         </div>
+        {mod.rarities?.length > 0 && (
+          <p class="smc-rarities">Rarities in the in-game database: {mod.rarities.map((r: string, i: number) => (
+            <><span style={`color: ${RARITY_COLOR[r] || '#c8c8d0'}; font-weight: 600;`}>{r}</span>{i < mod.rarities.length - 2 ? ', ' : i === mod.rarities.length - 2 ? ' and ' : '.'}</>
+          ))}</p>
+        )}
         {mod.note && <p class="item-note">{mod.note}</p>}
         {mod.aliases?.length > 0 && (mod.aliasBasis === 'elimination'
           ? <p class="item-note">Ubisoft's <a href="/database/drop-rates/">drop-rate table</a> probably lists this set as {mod.aliases.join(' or ')}: it's the only {mod.skill} set there we can't match by name or effect.</p>
@@ -413,6 +421,13 @@ const toModSlug = (name: string) => name.toLowerCase().replace(/[^a-z0-9]+/g, '-
     font-weight: 600;
     line-height: 1.6;
     margin: 0 0 var(--sp-3) 0;
+  }
+
+  .smc-rarities {
+    color: #c8c8d0;
+    font-size: var(--text-sm);
+    line-height: 1.6;
+    margin: var(--sp-4) 0 0 0;
   }
 
   .smc-bonus-card__note {

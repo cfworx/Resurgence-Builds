@@ -1,0 +1,2183 @@
+[
+  {
+    "name": "Cooling System",
+    "siteId": "smc-1",
+    "tab": "Demolitionist",
+    "listOrder": 1,
+    "skill": "Artillery Turret",
+    "bonus2": "Skill Health+[4.0%~8.0%].",
+    "bonus3": "Skill Critical Hits reduce Artillery Turret Cooldown by 1.20%. Talent Cooldown: 1 second(s).",
+    "talentCooldown": "1 second",
+    "rarities": [
+      "High-End",
+      "Superior",
+      "Specialized"
+    ],
+    "source": {
+      "recording": "Screen_Recording_20261028_163454_The_Division_Resurgence.mp4",
+      "seconds": [
+        0.75,
+        5.5
+      ]
+    },
+    "evidence": "evidence/skill-mod-combos/cooling-system.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Area Supression",
+    "siteId": "smc-2",
+    "tab": "Demolitionist",
+    "listOrder": 2,
+    "skill": "Artillery Turret",
+    "bonus2": "Armor+[4.7%~9.3%].",
+    "bonus3": "Artillery Turret hits on up to 1 enemies have a 50% chance of granting +2% Skill Critical Damage for 10 second(s), up to 5 stack(s). Hits on more than 1 enemies have a guaranteed chance of granting the bonus.",
+    "talentCooldown": "",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "source": {
+      "recording": "Screen_Recording_20261028_163454_The_Division_Resurgence.mp4",
+      "seconds": [
+        6.25,
+        9.75
+      ]
+    },
+    "evidence": "evidence/skill-mod-combos/area-suppression.webp",
+    "checked": "2026-10-28",
+    "note": "The database spells the name \"Area Supression\" (one p)."
+  },
+  {
+    "name": "Frag Grenades",
+    "siteId": "smc-3",
+    "tab": "Demolitionist",
+    "listOrder": 3,
+    "skill": "Artillery Turret",
+    "bonus2": "Max Health+[4.0%~8.0%].",
+    "bonus3": "Artillery Turret damage grants +1% Skill Multi-Shot Chance for 10 second(s), up to 5 stack(s).",
+    "talentCooldown": "",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "source": {
+      "recording": "Screen_Recording_20261028_163454_The_Division_Resurgence.mp4",
+      "seconds": [
+        11.0,
+        13.5
+      ]
+    },
+    "evidence": "evidence/skill-mod-combos/frag-grenades.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Cooling Device",
+    "siteId": "smc-4",
+    "tab": "Demolitionist",
+    "listOrder": 4,
+    "skill": "Explosive Seeker Mine",
+    "bonus2": "Skill Health+[4.0%~8.0%].",
+    "bonus3": "Explosive Seeker Mine Critical Hits reduce Explosive Seeker Mine Cooldown by 10%. Talent Cooldown: 3 second(s).",
+    "talentCooldown": "3 seconds",
+    "rarities": [
+      "High-End",
+      "Superior",
+      "Specialized"
+    ],
+    "source": {
+      "recording": "Screen_Recording_20261028_163454_The_Division_Resurgence.mp4",
+      "seconds": [
+        14.75,
+        18.5
+      ]
+    },
+    "evidence": "evidence/skill-mod-combos/cooling-device.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Applied Demolitions",
+    "siteId": "smc-5",
+    "tab": "Demolitionist",
+    "listOrder": 5,
+    "skill": "Explosive Seeker Mine",
+    "bonus2": "Armor+[4.7%~9.3%].",
+    "bonus3": "Explosive Seeker Mine hits on up to 1 enemies grant +3.20% Skill Critical Damage for 20 second(s), up to 3 stack(s).",
+    "talentCooldown": "",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "source": {
+      "recording": "Screen_Recording_20261028_163454_The_Division_Resurgence.mp4",
+      "seconds": [
+        20.25,
+        22.5
+      ]
+    },
+    "evidence": "evidence/skill-mod-combos/applied-demolitions.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Fragmentation Charge",
+    "siteId": "smc-6",
+    "tab": "Demolitionist",
+    "listOrder": 6,
+    "skill": "Explosive Seeker Mine",
+    "bonus2": "Max Health+[4.0%~8.0%].",
+    "bonus3": "Explosive Seeker Mine hits grant +6.40% Skill Multi-Shot Chance for 10 second(s).",
+    "talentCooldown": "",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "source": {
+      "recording": "Screen_Recording_20261028_163454_The_Division_Resurgence.mp4",
+      "seconds": [
+        23.5,
+        25.75
+      ]
+    },
+    "evidence": "evidence/skill-mod-combos/fragmentation-charge.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Ace",
+    "siteId": "smc-7",
+    "tab": "Demolitionist",
+    "listOrder": 7,
+    "skill": "M32A1 Grenade Launcher",
+    "bonus2": "Skill Health+[4.0%~8.0%].",
+    "bonus3": "Skill Critical Hits grant +0.30% Signature Ability Charge. Talent Cooldown: 1 second(s).",
+    "talentCooldown": "1 second",
+    "rarities": [
+      "High-End",
+      "Superior",
+      "Specialized"
+    ],
+    "source": {
+      "recording": "Screen_Recording_20261028_163454_The_Division_Resurgence.mp4",
+      "seconds": [
+        27.0,
+        29.0
+      ]
+    },
+    "evidence": "evidence/skill-mod-combos/ace.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Airburst",
+    "siteId": "smc-8",
+    "tab": "Demolitionist",
+    "listOrder": 8,
+    "skill": "M32A1 Grenade Launcher",
+    "bonus2": "Armor+[4.7%~9.3%].",
+    "bonus3": "M32A1 Grenade Launcher hits on up to 1 enemies grant +6% Skill Critical Damage until the next M32A1 Grenade Launcher hit.",
+    "talentCooldown": "",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "source": {
+      "recording": "Screen_Recording_20261028_163454_The_Division_Resurgence.mp4",
+      "seconds": [
+        30.0,
+        32.0
+      ]
+    },
+    "evidence": "evidence/skill-mod-combos/airburst.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Concentrated Fire",
+    "siteId": "smc-9",
+    "tab": "Demolitionist",
+    "listOrder": 9,
+    "skill": "M32A1 Grenade Launcher",
+    "bonus2": "Max Health+[4.0%~8.0%].",
+    "bonus3": "Dealing 5 M32A1 Grenade Launcher hits in 3 second(s) grants +14.40% Skill Intensity for 15 second(s).",
+    "talentCooldown": "",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "source": {
+      "recording": "Screen_Recording_20261028_163454_The_Division_Resurgence.mp4",
+      "seconds": [
+        34.25,
+        36.5
+      ]
+    },
+    "evidence": "evidence/skill-mod-combos/concentrated-fire.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Prioritized Targets",
+    "siteId": "smc-10",
+    "tab": "Demolitionist",
+    "listOrder": 10,
+    "skill": "Artillery Turret",
+    "bonus2": "Armor+[4.7%~9.3%].",
+    "bonus3": "Artillery Turret hits on enemies afflicted by Bleed or Vulnerable grant +1.44% Firepower for 10 second(s), up to 5 stack(s).",
+    "talentCooldown": "",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "source": {
+      "recording": "Screen_Recording_20261028_163454_The_Division_Resurgence.mp4",
+      "seconds": [
+        37.5,
+        40.25
+      ]
+    },
+    "evidence": "evidence/skill-mod-combos/prioritized-targets.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Optimized",
+    "siteId": "smc-11",
+    "tab": "Demolitionist",
+    "listOrder": 11,
+    "skill": "Artillery Turret",
+    "bonus2": "Rate of Fire+[4.0%~8.0%].",
+    "bonus3": "Grants +8% Artillery Turret Rate of Fire. Artillery Turret hits on up to 2 enemies grant +0.50 second(s) to Artillery Turret duration (capped at 6 second(s)).",
+    "talentCooldown": "",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "source": {
+      "recording": "Screen_Recording_20261028_163454_The_Division_Resurgence.mp4",
+      "seconds": [
+        41.75,
+        45.5
+      ]
+    },
+    "evidence": "evidence/skill-mod-combos/optimized.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Wingman",
+    "siteId": "smc-12",
+    "tab": "Demolitionist",
+    "listOrder": 12,
+    "skill": "Artillery Turret",
+    "bonus2": "Max Health+[4.0%~8.0%].",
+    "bonus3": "Artillery Turret hits grant +1.20% Weapon Critical Hit Chance for 10 second(s), up to 5 stack(s).",
+    "talentCooldown": "",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "source": {
+      "recording": "Screen_Recording_20261028_163454_The_Division_Resurgence.mp4",
+      "seconds": [
+        47.0,
+        49.25
+      ]
+    },
+    "evidence": "evidence/skill-mod-combos/wingman.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Contagion",
+    "siteId": "smc-13",
+    "tab": "Demolitionist",
+    "listOrder": 13,
+    "skill": "Explosive Seeker Mine",
+    "bonus2": "Armor+[4.7%~9.3%].",
+    "bonus3": "Explosive Seeker Mine hits on enemies afflicted by Bleed or Vulnerable apply the same debuff to all enemies within 10 meter(s) and grant +7.20% Firepower for 10 second(s).",
+    "talentCooldown": "",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "source": {
+      "recording": "Screen_Recording_20261028_163454_The_Division_Resurgence.mp4",
+      "seconds": [
+        50.25,
+        54.0
+      ]
+    },
+    "evidence": "evidence/skill-mod-combos/contagion.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Area Denial",
+    "siteId": "smc-14",
+    "tab": "Demolitionist",
+    "listOrder": 14,
+    "skill": "Explosive Seeker Mine",
+    "bonus2": "Rate of Fire+[4.0%~8.0%].",
+    "bonus3": "Grants +8.60% Explosive Seeker Mine Radius. Explosive Seeker Mine hits grant +1.60 second(s) to the duration of deployed Artillery Turrets.",
+    "talentCooldown": "",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "source": {
+      "recording": "Screen_Recording_20261028_163454_The_Division_Resurgence.mp4",
+      "seconds": [
+        55.25,
+        58.0
+      ]
+    },
+    "evidence": "evidence/skill-mod-combos/area-denial.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Surgical Strike",
+    "siteId": "smc-15",
+    "tab": "Demolitionist",
+    "listOrder": 15,
+    "skill": "Explosive Seeker Mine",
+    "bonus2": "Max Health+[4.0%~8.0%].",
+    "bonus3": "Explosive Seeker Mine hits grant +7.20% Weapon Critical Hit Chance for 10 second(s). Talent Cooldown: 1 second(s).",
+    "talentCooldown": "1 second",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "source": {
+      "recording": "Screen_Recording_20261028_163454_The_Division_Resurgence.mp4",
+      "seconds": [
+        59.0,
+        61.5
+      ]
+    },
+    "evidence": "evidence/skill-mod-combos/surgical-strike.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Field Mortar",
+    "siteId": "smc-16",
+    "tab": "Demolitionist",
+    "listOrder": 16,
+    "skill": "M32A1 Grenade Launcher",
+    "bonus2": "Armor+[4.7%~9.3%].",
+    "bonus3": "Increases 9.60% Weapon Damage to enemies hit by M32A1 Grenade Launcher for 20 second(s) and extends the duration of Artillery Turret by 2 second(s).",
+    "talentCooldown": "",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "source": {
+      "recording": "Screen_Recording_20261028_163454_The_Division_Resurgence.mp4",
+      "seconds": [
+        62.5,
+        65.5
+      ]
+    },
+    "evidence": "evidence/skill-mod-combos/field-mortar.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Thermobaric Grenades",
+    "siteId": "smc-17",
+    "tab": "Demolitionist",
+    "listOrder": 17,
+    "skill": "M32A1 Grenade Launcher",
+    "bonus2": "Rate of Fire+[4.0%~8.0%].",
+    "bonus3": "Reduces Grenades in Grenade Launcher to 1, but expands the Explosion Radius by 30% and increases damage by 300%.",
+    "talentCooldown": "",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "source": {
+      "recording": "Screen_Recording_20261028_163454_The_Division_Resurgence.mp4",
+      "seconds": [
+        67.0,
+        69.25
+      ]
+    },
+    "evidence": "evidence/skill-mod-combos/thermobaric-grenades.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Precision Fires",
+    "siteId": "smc-18",
+    "tab": "Demolitionist",
+    "listOrder": 18,
+    "skill": "M32A1 Grenade Launcher",
+    "bonus2": "Max Health+[4.0%~8.0%].",
+    "bonus3": "Landing 3 M32A1 Grenade Launcher hits grants +8% Weapon Critical Hit Chance for 10 second(s).",
+    "talentCooldown": "",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "source": {
+      "recording": "Screen_Recording_20261028_163454_The_Division_Resurgence.mp4",
+      "seconds": [
+        70.25,
+        74.0
+      ]
+    },
+    "evidence": "evidence/skill-mod-combos/precision-fires.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Supercharged",
+    "siteId": "smc-19",
+    "tab": "Tech Operator",
+    "listOrder": 1,
+    "skill": "Striker Drone",
+    "bonus2": "Skill Cooldown Recovery-[2.0%~4.0%].",
+    "bonus3": "Deploying a Striker Drone restores Health equal to 5.60% Missing Health. Also grants +3% Movement Speed and +1% Skill Cooldown Recovery for 20 second(s), up to 3 stack(s).",
+    "talentCooldown": "",
+    "rarities": [
+      "High-End",
+      "Superior",
+      "Specialized"
+    ],
+    "source": {
+      "recording": "Screen_Recording_20261028_163454_The_Division_Resurgence.mp4",
+      "seconds": [
+        77.0,
+        80.75
+      ]
+    },
+    "evidence": "evidence/skill-mod-combos/supercharged.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Thermite Charge",
+    "siteId": "smc-20",
+    "tab": "Tech Operator",
+    "listOrder": 2,
+    "skill": "Striker Drone",
+    "bonus2": "Skill Health+[4.0%~8.0%].",
+    "bonus3": "Striker Drone Critical Hits have a 5% chance of exploding, dealing 300% damage.",
+    "talentCooldown": "",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "source": {
+      "recording": "Screen_Recording_20261028_163454_The_Division_Resurgence.mp4",
+      "seconds": [
+        82.0,
+        84.75
+      ]
+    },
+    "evidence": "evidence/skill-mod-combos/thermite-charge.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Extermination",
+    "siteId": "smc-21",
+    "tab": "Tech Operator",
+    "listOrder": 3,
+    "skill": "Striker Drone",
+    "bonus2": "Skill Health+[4.0%~8.0%].",
+    "bonus3": "Hitting enemies who have less than 50% Health grants +9.60% Striker Drone Multi-Shot Chance.",
+    "talentCooldown": "",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "source": {
+      "recording": "Screen_Recording_20261028_163454_The_Division_Resurgence.mp4",
+      "seconds": [
+        85.75,
+        88.25
+      ]
+    },
+    "evidence": "evidence/skill-mod-combos/extermination.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Exhaustion",
+    "siteId": "smc-22",
+    "tab": "Tech Operator",
+    "listOrder": 4,
+    "skill": "Drone Lock",
+    "bonus2": "Skill Cooldown Recovery-[2.0%~4.0%].",
+    "bonus3": "Striker Drone hits on Drone Locked enemies have a 5% chance of granting 4.80% Damage Reduction from the targets for 10 second(s), up to 3 stack(s). Probability increases to 15% for targets who are at least 20 meter(s) away.",
+    "talentCooldown": "",
+    "rarities": [
+      "High-End",
+      "Superior",
+      "Specialized"
+    ],
+    "source": {
+      "recording": "Screen_Recording_20261028_163454_The_Division_Resurgence.mp4",
+      "seconds": [
+        90.5,
+        95.25
+      ]
+    },
+    "evidence": "evidence/skill-mod-combos/exhaustion.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Stabilized Flight",
+    "siteId": "smc-23",
+    "tab": "Tech Operator",
+    "listOrder": 5,
+    "skill": "Drone Lock",
+    "bonus2": "Skill Health+[4.0%~8.0%].",
+    "bonus3": "Applying Drone Lock grants +6% Skill Critical Hit Chance for 20 second(s).",
+    "talentCooldown": "",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "source": {
+      "recording": "Screen_Recording_20261028_163454_The_Division_Resurgence.mp4",
+      "seconds": [
+        96.5,
+        99.0
+      ]
+    },
+    "evidence": "evidence/skill-mod-combos/stabilized-flight.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Area Sweep",
+    "siteId": "smc-24",
+    "tab": "Tech Operator",
+    "listOrder": 6,
+    "skill": "Drone Lock",
+    "bonus2": "Skill Health+[4.0%~8.0%].",
+    "bonus3": "Killing Drone Locked enemies grants +4.80% Skill Multi-Shot Chance for 10 second(s).",
+    "talentCooldown": "",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "source": {
+      "recording": "Screen_Recording_20261028_163454_The_Division_Resurgence.mp4",
+      "seconds": [
+        99.75,
+        102.75
+      ]
+    },
+    "evidence": "evidence/skill-mod-combos/area-sweep.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Supply Line",
+    "siteId": "smc-25",
+    "tab": "Tech Operator",
+    "listOrder": 7,
+    "skill": "Drone Overload",
+    "bonus2": "Skill Cooldown Recovery-[2.0%~4.0%].",
+    "bonus3": "Within 30 second(s) of activating Drone Overload, Striker Drone hits have a 5% chance of restoring 2% Max Health. Probability increases to 10% for targets who are at least 20 meter(s) away.",
+    "talentCooldown": "",
+    "rarities": [
+      "High-End",
+      "Superior",
+      "Specialized"
+    ],
+    "source": {
+      "recording": "Screen_Recording_20261028_163454_The_Division_Resurgence.mp4",
+      "seconds": [
+        104.0,
+        107.25
+      ]
+    },
+    "evidence": "evidence/skill-mod-combos/supply-line.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Optimized Targeting",
+    "siteId": "smc-26",
+    "tab": "Tech Operator",
+    "listOrder": 8,
+    "skill": "Drone Overload",
+    "bonus2": "Skill Health+[4.0%~8.0%].",
+    "bonus3": "Within 30 second(s) of activating Drone Overload, Striker Drone hits have a 10% chance of granting +10.80% Skill Critical Hit Chance for 20 second(s).",
+    "talentCooldown": "",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "source": {
+      "recording": "Screen_Recording_20261028_163454_The_Division_Resurgence.mp4",
+      "seconds": [
+        109.25,
+        112.75
+      ]
+    },
+    "evidence": "evidence/skill-mod-combos/optimized-targeting.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Lethal Sweep",
+    "siteId": "smc-27",
+    "tab": "Tech Operator",
+    "listOrder": 9,
+    "skill": "Drone Overload",
+    "bonus2": "Skill Health+[4.0%~8.0%].",
+    "bonus3": "Within 20 second(s) of activating Drone Overload, kills grant +3.20% Skill Multi-Shot Chance for 20 second(s), up to 3 stack(s).",
+    "talentCooldown": "",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "source": {
+      "recording": "Screen_Recording_20261028_163454_The_Division_Resurgence.mp4",
+      "seconds": [
+        114.0,
+        116.5
+      ]
+    },
+    "evidence": "evidence/skill-mod-combos/lethal-sweep.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Close Protection",
+    "siteId": "smc-28",
+    "tab": "Tech Operator",
+    "listOrder": 10,
+    "skill": "Mender Drone",
+    "bonus2": "Skill Cooldown Recovery-[2.0%~4.0%].",
+    "bonus3": "Mender Drone healing grants +2.00% Healing Intensity for 20 second(s), up to 6 stack(s). Grants an additional +3.20% Healing Intensity over 3 stack(s).",
+    "talentCooldown": "",
+    "rarities": [
+      "High-End",
+      "Superior",
+      "Specialized"
+    ],
+    "source": {
+      "recording": "Screen_Recording_20261028_163454_The_Division_Resurgence.mp4",
+      "seconds": [
+        117.75,
+        121.0
+      ]
+    },
+    "evidence": "evidence/skill-mod-combos/close-protection.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Combat Enhancer",
+    "siteId": "smc-29",
+    "tab": "Tech Operator",
+    "listOrder": 11,
+    "skill": "Mender Drone",
+    "bonus2": "Engineering+[3.0%~6.0%].",
+    "bonus3": "Mender Drone healing grants bonus damage equal to 6.60% Engineering for 20 second(s), up to 3 stack(s).",
+    "talentCooldown": "",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "source": {
+      "recording": "Screen_Recording_20261028_163454_The_Division_Resurgence.mp4",
+      "seconds": [
+        122.25,
+        125.0
+      ]
+    },
+    "evidence": "evidence/skill-mod-combos/combat-enhancer.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Enhanced Chip",
+    "siteId": "smc-30",
+    "tab": "Tech Operator",
+    "listOrder": 12,
+    "skill": "Mender Drone",
+    "bonus2": "Healing Intensity+[3.3%~6.7%].",
+    "bonus3": "Deploying a Mender Drone grants +3.20% Signature Ability Charge Efficiency for 20 second(s), up to 3 stack(s).",
+    "talentCooldown": "",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "source": {
+      "recording": "Screen_Recording_20261028_163454_The_Division_Resurgence.mp4",
+      "seconds": [
+        126.25,
+        129.0
+      ]
+    },
+    "evidence": "evidence/skill-mod-combos/enhanced-chip.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Reinforced Support",
+    "siteId": "smc-31",
+    "tab": "Tech Operator",
+    "listOrder": 13,
+    "skill": "First-Aid Firefly",
+    "bonus2": "Skill Cooldown Recovery-[2.0%~4.0%].",
+    "bonus3": "First-Aid Firefly healing restores additional Health over 20 second(s). During that time, First-Aid Firefly restores an additional 30.00% Health when healing the same target.",
+    "talentCooldown": "",
+    "rarities": [
+      "High-End",
+      "Superior",
+      "Specialized"
+    ],
+    "source": {
+      "recording": "Screen_Recording_20261028_163454_The_Division_Resurgence.mp4",
+      "seconds": [
+        130.75,
+        134.75
+      ]
+    },
+    "evidence": "evidence/skill-mod-combos/reinforced-support.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Teamfight",
+    "siteId": "smc-32",
+    "tab": "Tech Operator",
+    "listOrder": 14,
+    "skill": "First-Aid Firefly",
+    "bonus2": "Engineering+[3.0%~6.0%].",
+    "bonus3": "Hits deal additional damage equal to 80% Engineering for 8 second(s) after deploying a First-Aid Firefly. This bonus is also granted to the ally who is targeted by the First-Aid Firefly.",
+    "talentCooldown": "",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "source": {
+      "recording": "Screen_Recording_20261028_163454_The_Division_Resurgence.mp4",
+      "seconds": [
+        136.0,
+        141.75
+      ]
+    },
+    "evidence": "evidence/skill-mod-combos/teamfight.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Accelerated Deployment",
+    "siteId": "smc-33",
+    "tab": "Tech Operator",
+    "listOrder": 15,
+    "skill": "First-Aid Firefly",
+    "bonus2": "Healing Intensity+[3.3%~6.7%].",
+    "bonus3": "Deploying a First-Aid Firefly grants 32.00 Signature Ability Charge(s). Grants +40.00% Signature Ability Charge Efficiency if the target of the First-Aid Firefly has less than 50% Health.",
+    "talentCooldown": "",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "source": {
+      "recording": "Screen_Recording_20261028_163454_The_Division_Resurgence.mp4",
+      "seconds": [
+        143.25,
+        150.25
+      ]
+    },
+    "evidence": "evidence/skill-mod-combos/accelerated-deployment.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Support Pattern",
+    "siteId": "smc-34",
+    "tab": "Tech Operator",
+    "listOrder": 16,
+    "skill": "Defender Drone",
+    "bonus2": "Skill Cooldown Recovery-[2.0%~4.0%].",
+    "bonus3": "Defender Drone can follow either the Agent or a group member, providing Extra Health to the target followed. Extra Health increases by 300% per second.",
+    "talentCooldown": "",
+    "rarities": [
+      "High-End",
+      "Superior",
+      "Specialized"
+    ],
+    "source": {
+      "recording": "Screen_Recording_20261028_163454_The_Division_Resurgence.mp4",
+      "seconds": [
+        151.5,
+        156.75
+      ]
+    },
+    "evidence": "evidence/skill-mod-combos/support-pattern.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Hazardous Area",
+    "siteId": "smc-35",
+    "tab": "Tech Operator",
+    "listOrder": 17,
+    "skill": "Defender Drone",
+    "bonus2": "Engineering+[3.0%~6.0%].",
+    "bonus3": "Defender Drone deals damage to enemies within its radius every second.",
+    "talentCooldown": "",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "source": {
+      "recording": "Screen_Recording_20261028_163454_The_Division_Resurgence.mp4",
+      "seconds": [
+        158.0,
+        161.5
+      ]
+    },
+    "evidence": "evidence/skill-mod-combos/hazardous-area.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Magnetic Recharge",
+    "siteId": "smc-36",
+    "tab": "Tech Operator",
+    "listOrder": 18,
+    "skill": "Defender Drone",
+    "bonus2": "Healing Intensity+[3.3%~6.7%].",
+    "bonus3": "When Defender Drone grants a Shield to either the Agent or a group member, increases Signature Ability Charge(s) by 2.00%.",
+    "talentCooldown": "",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "source": {
+      "recording": "Screen_Recording_20261028_163454_The_Division_Resurgence.mp4",
+      "seconds": [
+        163.0,
+        166.75
+      ]
+    },
+    "evidence": "evidence/skill-mod-combos/magnetic-recharge.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Reciprocal Charge",
+    "siteId": "smc-37",
+    "tab": "Bulwark",
+    "listOrder": 1,
+    "skill": "Shockwave Spike Mk.3",
+    "bonus2": "Max Health+[4.0%~8.0%].",
+    "bonus3": "When Health is below 50%, Shockwave Spike Mk.3 hits restore Health equal to 0.80% Max Health. When Health is above 50%, Shockwave Spike Mk.3 hits grant +12% Weapon Critical Hit Damage.",
+    "talentCooldown": "",
+    "rarities": [
+      "High-End",
+      "Superior",
+      "Specialized"
+    ],
+    "source": {
+      "recording": "Screen_Recording_20261028_163454_The_Division_Resurgence.mp4",
+      "seconds": [
+        170.5,
+        175.5
+      ]
+    },
+    "evidence": "evidence/skill-mod-combos/reciprocal-charge.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Pack-a-Punch",
+    "siteId": "smc-38",
+    "tab": "Bulwark",
+    "listOrder": 2,
+    "skill": "Shockwave Spike Mk.3",
+    "bonus2": "Max Health+[4.0%~8.0%].",
+    "bonus3": "Shockwave Spike Mk.3 hits grant +1.60% Weapon Damage for 5 second(s), up to 5 stack(s).",
+    "talentCooldown": "",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "source": {
+      "recording": "Screen_Recording_20261028_163454_The_Division_Resurgence.mp4",
+      "seconds": [
+        176.5,
+        180.0
+      ]
+    },
+    "evidence": "evidence/skill-mod-combos/pack-a-punch.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "King of the Pit",
+    "siteId": "smc-39",
+    "tab": "Bulwark",
+    "listOrder": 3,
+    "skill": "Shockwave Spike Mk.3",
+    "bonus2": "Weapon Damage+[2.0%~4.0%].",
+    "bonus3": "Shockwave Spike Mk.3 hits grant +4% Weapon Critical Hit Chance for 10 second(s), up to 4 stack(s).",
+    "talentCooldown": "",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "source": {
+      "recording": "Screen_Recording_20261028_163454_The_Division_Resurgence.mp4",
+      "seconds": [
+        181.0,
+        183.5
+      ]
+    },
+    "evidence": "evidence/skill-mod-combos/king-of-the-pit.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Adaptive Armor",
+    "siteId": "smc-54",
+    "tab": "Bulwark",
+    "listOrder": 4,
+    "skill": "Phalanx Shield",
+    "bonus2": "Skill Health+[4.0%~8.0%].",
+    "bonus3": "Grants +9.60% Weapon Critical Hit Damage when Shield Health is above 50%. Grants +4.80% Shield Damage Reduction when Shield Health is below 50%.",
+    "talentCooldown": "",
+    "rarities": [
+      "High-End",
+      "Superior",
+      "Specialized"
+    ],
+    "source": {
+      "recording": "Screen_Recording_20261028_163454_The_Division_Resurgence.mp4",
+      "seconds": [
+        184.5,
+        189.0
+      ]
+    },
+    "evidence": "evidence/skill-mod-combos/adaptive-armor.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Field Repairs",
+    "siteId": "smc-40",
+    "tab": "Bulwark",
+    "listOrder": 5,
+    "skill": "Phalanx Shield",
+    "bonus2": "Skill Health+[4.0%~8.0%].",
+    "bonus3": "Deploying the Phalanx Shield grants +4% Rate of Fire. Hits restore 0.60% Shield Health. Talent Cooldown: 1 second(s).",
+    "talentCooldown": "1 second",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "source": {
+      "recording": "Screen_Recording_20261028_163454_The_Division_Resurgence.mp4",
+      "seconds": [
+        190.0,
+        192.75
+      ]
+    },
+    "evidence": "evidence/skill-mod-combos/field-repairs.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Impenetrable Wall",
+    "siteId": "smc-41",
+    "tab": "Bulwark",
+    "listOrder": 6,
+    "skill": "Phalanx Shield",
+    "bonus2": "Weapon Damage+[2.0%~4.0%].",
+    "bonus3": "Grants +12% Toughness while the Phalanx Shield is deployed.",
+    "talentCooldown": "",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "source": {
+      "recording": "Screen_Recording_20261028_163454_The_Division_Resurgence.mp4",
+      "seconds": [
+        194.5,
+        197.75
+      ]
+    },
+    "evidence": "evidence/skill-mod-combos/impenetrable-wall.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Positive Feedback",
+    "siteId": "smc-42",
+    "tab": "Bulwark",
+    "listOrder": 7,
+    "skill": "Breach Combo",
+    "bonus2": "Max Health+[4.0%~8.0%].",
+    "bonus3": "Within 6 second(s) of deploying the Breach Combo, hits have a 40% chance of restoring 1 bullet(s). Critical Hits increase duration to 0.50 second(s) (capped at 2 second(s)).",
+    "talentCooldown": "",
+    "rarities": [
+      "High-End",
+      "Superior",
+      "Specialized"
+    ],
+    "source": {
+      "recording": "Screen_Recording_20261028_163454_The_Division_Resurgence.mp4",
+      "seconds": [
+        198.75,
+        203.25
+      ]
+    },
+    "evidence": "evidence/skill-mod-combos/positive-feedback.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Optimal Range",
+    "siteId": "smc-43",
+    "tab": "Bulwark",
+    "listOrder": 8,
+    "skill": "Breach Combo",
+    "bonus2": "Skill Health+[4.0%~8.0%].",
+    "bonus3": "Deploying the Breach Combo grants +12% Rate of Fire. Hits on enemies within 10 meter(s) restore 1 bullets (capped at 3 bullets). Talent Cooldown: 1 second(s).",
+    "talentCooldown": "1 second",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "source": {
+      "recording": "Screen_Recording_20261028_163454_The_Division_Resurgence.mp4",
+      "seconds": [
+        204.25,
+        208.25
+      ]
+    },
+    "evidence": "evidence/skill-mod-combos/optimal-range.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Berserker",
+    "siteId": "smc-44",
+    "tab": "Bulwark",
+    "listOrder": 9,
+    "skill": "Breach Combo",
+    "bonus2": "Weapon Damage+[2.0%~4.0%].",
+    "bonus3": "During the Breach Combo, grants +60% Weapon Critical Hit Damage if there are at least 1 hostile(s) within 20 meter(s).",
+    "talentCooldown": "",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "source": {
+      "recording": "Screen_Recording_20261028_163454_The_Division_Resurgence.mp4",
+      "seconds": [
+        209.5,
+        212.25
+      ]
+    },
+    "evidence": "evidence/skill-mod-combos/berserker.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Attention Seeker",
+    "siteId": "smc-45",
+    "tab": "Bulwark",
+    "listOrder": 10,
+    "skill": "Shockwave Spike Mk.3",
+    "bonus2": "Weapon Damage+[2.0%~4.0%].",
+    "bonus3": "Shockwave Spike Mk.3 hits grant +1.20% Damage Reduction, up to 5 stack(s), but nearby enemies focus the Agent in priority.",
+    "talentCooldown": "",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "source": {
+      "recording": "Screen_Recording_20261028_163454_The_Division_Resurgence.mp4",
+      "seconds": [
+        213.75,
+        218.0
+      ]
+    },
+    "evidence": "evidence/skill-mod-combos/attention-seeker.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Schadenfreude",
+    "siteId": "smc-46",
+    "tab": "Bulwark",
+    "listOrder": 11,
+    "skill": "Shockwave Spike Mk.3",
+    "bonus2": "Skill Duration+[3.2%~6.4%].",
+    "bonus3": "Shockwave Spike Mk.3 hits grant +0.80% Max Health for 20 second(s), up to 5 stack(s). Shockwave Spike Mk.3 deals additional damage equal to 0.60% Max Health.",
+    "talentCooldown": "",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "source": {
+      "recording": "Screen_Recording_20261028_163454_The_Division_Resurgence.mp4",
+      "seconds": [
+        219.0,
+        223.75
+      ]
+    },
+    "evidence": "evidence/skill-mod-combos/schadenfreude.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Camp Fire",
+    "siteId": "smc-47",
+    "tab": "Bulwark",
+    "listOrder": 12,
+    "skill": "Shockwave Spike Mk.3",
+    "bonus2": "Skill Duration+[3.2%~6.4%].",
+    "bonus3": "Grants +14% Armor while located within 10 meter(s) of the Shockwave Spike Mk.3.",
+    "talentCooldown": "",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "source": {
+      "recording": "Screen_Recording_20261028_163454_The_Division_Resurgence.mp4",
+      "seconds": [
+        224.75,
+        229.25
+      ]
+    },
+    "evidence": "evidence/skill-mod-combos/camp-fire.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Provocateur",
+    "siteId": "smc-48",
+    "tab": "Bulwark",
+    "listOrder": 13,
+    "skill": "Phalanx Shield",
+    "bonus2": "Weapon Damage+[2.0%~4.0%].",
+    "bonus3": "Enemies within 20 meter(s) focus the Agent in priority when deploying the Phalanx Shield. Grants +3.20% Damage Reduction for 10 second(s) for each enemy who is targeting the Agent, up to 5 stack(s). Talent Cooldown: 20 second(s).",
+    "talentCooldown": "20 seconds",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "source": {
+      "recording": "Screen_Recording_20261028_163454_The_Division_Resurgence.mp4",
+      "seconds": [
+        231.5,
+        238.75
+      ]
+    },
+    "evidence": "evidence/skill-mod-combos/provocateur.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Rational Distribution",
+    "siteId": "smc-49",
+    "tab": "Bulwark",
+    "listOrder": 14,
+    "skill": "Phalanx Shield",
+    "bonus2": "Rate of Fire+[4.0%~8.0%].",
+    "bonus3": "Grants Extra Shield Health equal to 9.20% Max Health.",
+    "talentCooldown": "",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "source": {
+      "recording": "Screen_Recording_20261028_163454_The_Division_Resurgence.mp4",
+      "seconds": [
+        239.75,
+        244.25
+      ]
+    },
+    "evidence": "evidence/skill-mod-combos/rational-distribution.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Last Moment",
+    "siteId": "smc-50",
+    "tab": "Bulwark",
+    "listOrder": 15,
+    "skill": "Phalanx Shield",
+    "bonus2": "Skill Health+[4.0%~8.0%].",
+    "bonus3": "Reaching 10% Phalanx Shield Health restores 15% Max Shield Health. Talent Cooldown: 30 second(s).",
+    "talentCooldown": "30 seconds",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "source": {
+      "recording": "Screen_Recording_20261028_163454_The_Division_Resurgence.mp4",
+      "seconds": [
+        245.25,
+        251.5
+      ]
+    },
+    "evidence": "evidence/skill-mod-combos/last-moment.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Anchored",
+    "siteId": "smc-51",
+    "tab": "Bulwark",
+    "listOrder": 16,
+    "skill": "Breach Combo",
+    "bonus2": "Weapon Damage+[2.0%~4.0%].",
+    "bonus3": "Breach Combo hits restore Shield Health and Health equal to 4.20% Max Health.",
+    "talentCooldown": "",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "source": {
+      "recording": "Screen_Recording_20261028_163454_The_Division_Resurgence.mp4",
+      "seconds": [
+        252.5,
+        256.25
+      ]
+    },
+    "evidence": "evidence/skill-mod-combos/anchored.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Heavy Weight",
+    "siteId": "smc-52",
+    "tab": "Bulwark",
+    "listOrder": 17,
+    "skill": "Breach Combo",
+    "bonus2": "Max Health+[4.0%~8.0%].",
+    "bonus3": "Breach Combo hits deal additional damage equal to 2% Max Health.",
+    "talentCooldown": "",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "source": {
+      "recording": "Screen_Recording_20261028_163454_The_Division_Resurgence.mp4",
+      "seconds": [
+        257.25,
+        260.25
+      ]
+    },
+    "evidence": "evidence/skill-mod-combos/heavy-weight.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Tough Times",
+    "siteId": "smc-53",
+    "tab": "Bulwark",
+    "listOrder": 18,
+    "skill": "Breach Combo",
+    "bonus2": "Skill Health+[4.0%~8.0%].",
+    "bonus3": "Breach Combo hits grant +33.80% Armor for 15 second(s), up to 5 stack(s).",
+    "talentCooldown": "",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "source": {
+      "recording": "Screen_Recording_20261028_163454_The_Division_Resurgence.mp4",
+      "seconds": [
+        265.25,
+        268.0
+      ]
+    },
+    "evidence": "evidence/skill-mod-combos/tough-times.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Armored Train",
+    "siteId": "smc-62",
+    "tab": "Vanguard",
+    "listOrder": 1,
+    "skill": "Smart Cover",
+    "bonus2": "Armor+[4.7%~9.3%].",
+    "bonus3": "While behind a Smart Cover, weapon hits have a 5% chance of granting +2% Weapon Critical Hit Chance for 20 second(s), up to 3 stack(s).",
+    "talentCooldown": "",
+    "rarities": [
+      "High-End",
+      "Superior",
+      "Specialized"
+    ],
+    "source": {
+      "recording": "Screen_Recording_20261028_163454_The_Division_Resurgence.mp4",
+      "seconds": [
+        272.0,
+        275.25
+      ]
+    },
+    "evidence": "evidence/skill-mod-combos/armored-train.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Optimized Armor",
+    "siteId": "smc-63",
+    "tab": "Vanguard",
+    "listOrder": 2,
+    "skill": "Smart Cover",
+    "bonus2": "Reload Speed+[4.0%~8.0%].",
+    "bonus3": "While behind a Smart Cover, grants +3.20% Damage Reduction and hits have a 4.80% chance of restoring 1 bullet(s).",
+    "talentCooldown": "",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "source": {
+      "recording": "Screen_Recording_20261028_163454_The_Division_Resurgence.mp4",
+      "seconds": [
+        276.0,
+        278.5
+      ]
+    },
+    "evidence": "evidence/skill-mod-combos/optimized-armor.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Top Off",
+    "siteId": "smc-64",
+    "tab": "Vanguard",
+    "listOrder": 3,
+    "skill": "Smart Cover",
+    "bonus2": "Skill Cooldown Recovery-[2.0%~4.0%].",
+    "bonus3": "While behind a Smart Cover, grants +9.60% Signature Ability Charge Efficiency.",
+    "talentCooldown": "",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "source": {
+      "recording": "Screen_Recording_20261028_163454_The_Division_Resurgence.mp4",
+      "seconds": [
+        279.5,
+        281.75
+      ]
+    },
+    "evidence": "evidence/skill-mod-combos/top-off.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Optimal Awareness",
+    "siteId": "smc-68",
+    "tab": "Vanguard",
+    "listOrder": 4,
+    "skill": "Scanning Pulse",
+    "bonus2": "Armor+[4.7%~9.3%].",
+    "bonus3": "Each enemy scanned within 70 meter increases Weapon Critical Hit Chance by 1.40%, up to 8 times.",
+    "talentCooldown": "",
+    "rarities": [
+      "High-End",
+      "Superior",
+      "Specialized"
+    ],
+    "source": {
+      "recording": "Screen_Recording_20261028_163454_The_Division_Resurgence.mp4",
+      "seconds": [
+        282.75,
+        284.75
+      ]
+    },
+    "evidence": "evidence/skill-mod-combos/optimal-awareness.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Field Supplies",
+    "siteId": "smc-66",
+    "tab": "Vanguard",
+    "listOrder": 5,
+    "skill": "Scanning Pulse",
+    "bonus2": "Reload Speed+[4.0%~8.0%].",
+    "bonus3": "Killing or assisting in killing the enemy scanned by you, restoring your Health by 6% of Health lost, and refilling the Magazine by 6.40%.",
+    "talentCooldown": "",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "source": {
+      "recording": "Screen_Recording_20261028_163454_The_Division_Resurgence.mp4",
+      "seconds": [
+        285.5,
+        287.75
+      ]
+    },
+    "evidence": "evidence/skill-mod-combos/field-supplies.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Tactical Insight",
+    "siteId": "smc-67",
+    "tab": "Vanguard",
+    "listOrder": 6,
+    "skill": "Scanning Pulse",
+    "bonus2": "Skill Cooldown Recovery-[2.0%~4.0%].",
+    "bonus3": "When releasing the Scanning Pulse, gain an additional 160 Signature Ability Charge. If there are more than 3 enemies within 70 meters, gain an increased charge of 200.",
+    "talentCooldown": "",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "source": {
+      "recording": "Screen_Recording_20261028_163454_The_Division_Resurgence.mp4",
+      "seconds": [
+        288.5,
+        291.0
+      ]
+    },
+    "evidence": "evidence/skill-mod-combos/tactical-insight.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Commando",
+    "siteId": "smc-65",
+    "tab": "Vanguard",
+    "listOrder": 7,
+    "skill": "Tactical Link",
+    "bonus2": "Armor+[4.7%~9.3%].",
+    "bonus3": "When having the Tactical Link effect on self, every time you participate in killing an enemy, your weapon's Critical Hit Chance will be increased by 10.20% for 10 seconds.",
+    "talentCooldown": "",
+    "rarities": [
+      "High-End",
+      "Superior",
+      "Specialized"
+    ],
+    "source": {
+      "recording": "Screen_Recording_20261028_163454_The_Division_Resurgence.mp4",
+      "seconds": [
+        292.0,
+        294.75
+      ]
+    },
+    "evidence": "evidence/skill-mod-combos/commando.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Ammo Refill",
+    "siteId": "smc-69",
+    "tab": "Vanguard",
+    "listOrder": 8,
+    "skill": "Tactical Link",
+    "bonus2": "Reload Speed+[4.0%~8.0%].",
+    "bonus3": "Every shot during the first 6 seconds of Tactical Link grants 29% chance of recovering 1 ammo. Duration resets at each kill.",
+    "talentCooldown": "",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "source": {
+      "recording": "Screen_Recording_20261028_163454_The_Division_Resurgence.mp4",
+      "seconds": [
+        295.75,
+        298.0
+      ]
+    },
+    "evidence": "evidence/skill-mod-combos/ammo-refill.webp",
+    "checked": "2026-10-28",
+    "note": "The database still shows the text from before Season 2 Phase 1 (29% chance of recovering 1 ammo). Ubisoft's Season 2 Phase 1 notes changed the set to 4 bullets at a lower chance, and TikTokAndy's set read 7% on September 30, 2026, so the site keeps the post-patch values."
+  },
+  {
+    "name": "Tactical Loop",
+    "siteId": "smc-70",
+    "tab": "Vanguard",
+    "listOrder": 9,
+    "skill": "Tactical Link",
+    "bonus2": "Skill Cooldown Recovery-[2.0%~4.0%].",
+    "bonus3": "While Tactical Link is active, hitting enemies has a 10% chance to extend its duration by 0.30s. This effect can stack up to 8 time(s) and start a 15s cooldown when reaches the maximun stacks.",
+    "talentCooldown": "",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "source": {
+      "recording": "Screen_Recording_20261028_163454_The_Division_Resurgence.mp4",
+      "seconds": [
+        299.5,
+        303.25
+      ]
+    },
+    "evidence": "evidence/skill-mod-combos/tactical-loop.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Field Bastion",
+    "siteId": "smc-71",
+    "tab": "Vanguard",
+    "listOrder": 10,
+    "skill": "Smart Cover",
+    "bonus2": "Max Health+[4.0%~8.0%].",
+    "bonus3": "While behind a Smart Cover, kills or assists grant allies Extra Health equal to 120% Engineering for 10 second(s).",
+    "talentCooldown": "",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "source": {
+      "recording": "Screen_Recording_20261028_163454_The_Division_Resurgence.mp4",
+      "seconds": [
+        304.75,
+        307.25
+      ]
+    },
+    "evidence": "evidence/skill-mod-combos/field-bastion.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Advanced Position",
+    "siteId": "smc-72",
+    "tab": "Vanguard",
+    "listOrder": 11,
+    "skill": "Smart Cover",
+    "bonus2": "Damage Reduction+[2.0%~4.0%].",
+    "bonus3": "While behind a Smart Cover, kills or assists grant 10 Signature Ability Charge(s). This effect also applies to allies.",
+    "talentCooldown": "",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "source": {
+      "recording": "Screen_Recording_20261028_163454_The_Division_Resurgence.mp4",
+      "seconds": [
+        308.25,
+        311.0
+      ]
+    },
+    "evidence": "evidence/skill-mod-combos/advanced-position.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Effective Deterrent",
+    "siteId": "smc-55",
+    "tab": "Vanguard",
+    "listOrder": 12,
+    "skill": "Smart Cover",
+    "bonus2": "Skill Cooldown Recovery-[2.0%~4.0%].",
+    "bonus3": "While behind a Smart Cover, grants +1% Damage, up to 3 stack(s). Reaching maximum stacks grants +3% Signature Ability Charge Efficiency. This bonus resets upon leaving the Smart Cover.",
+    "talentCooldown": "",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "source": {
+      "recording": "Screen_Recording_20261028_163454_The_Division_Resurgence.mp4",
+      "seconds": [
+        312.0,
+        315.5
+      ]
+    },
+    "evidence": "evidence/skill-mod-combos/effective-deterrent.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Targeted Surveillance",
+    "siteId": "smc-56",
+    "tab": "Vanguard",
+    "listOrder": 13,
+    "skill": "Scanning Pulse",
+    "bonus2": "Damage Reduction+[2.0%~4.0%].",
+    "bonus3": "Deploying Scanning Pulse grants Pulsed allies Weapon Critical Hit Chance equal to 3.60% Engineering for 10 second(s).",
+    "talentCooldown": "",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "source": {
+      "recording": "Screen_Recording_20261028_163454_The_Division_Resurgence.mp4",
+      "seconds": [
+        316.75,
+        319.25
+      ]
+    },
+    "evidence": "evidence/skill-mod-combos/targeted-surveillance.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Pulse Feedback",
+    "siteId": "smc-57",
+    "tab": "Vanguard",
+    "listOrder": 14,
+    "skill": "Scanning Pulse",
+    "bonus2": "Signature Ability Charge Efficiency+[4.0%~8.0%].",
+    "bonus3": "Pulsed enemies grant +8 Signature Ability Charge(s) to the ally team.",
+    "talentCooldown": "",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "source": {
+      "recording": "Screen_Recording_20261028_163454_The_Division_Resurgence.mp4",
+      "seconds": [
+        320.0,
+        323.25
+      ]
+    },
+    "evidence": "evidence/skill-mod-combos/pulse-feedback.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Compound Effect",
+    "siteId": "smc-58",
+    "tab": "Vanguard",
+    "listOrder": 15,
+    "skill": "Scanning Pulse",
+    "bonus2": "Skill Cooldown Recovery-[2.0%~4.0%].",
+    "bonus3": "Deploying Scanning Pulse while Fortified reduces the Skill Cooldown by 1.50 second(s).",
+    "talentCooldown": "",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "source": {
+      "recording": "Screen_Recording_20261028_163454_The_Division_Resurgence.mp4",
+      "seconds": [
+        324.25,
+        326.75
+      ]
+    },
+    "evidence": "evidence/skill-mod-combos/compound-effect.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Bugle Call",
+    "siteId": "smc-59",
+    "tab": "Vanguard",
+    "listOrder": 16,
+    "skill": "Tactical Link",
+    "bonus2": "Damage Reduction+[2.0%~4.0%].",
+    "bonus3": "Deploying Tactical Link grants +14.40% Rate of Fire, Damage Reduction, and Movement Speed for 15 second(s).",
+    "talentCooldown": "",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "source": {
+      "recording": "Screen_Recording_20261028_163454_The_Division_Resurgence.mp4",
+      "seconds": [
+        328.0,
+        330.75
+      ]
+    },
+    "evidence": "evidence/skill-mod-combos/bugle-call.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Tactical Reinforcement",
+    "siteId": "smc-60",
+    "tab": "Vanguard",
+    "listOrder": 17,
+    "skill": "Tactical Link",
+    "bonus2": "Damage Reduction+[2.0%~4.0%].",
+    "bonus3": "Deploying Tactical Link grants +28.80% Signature Ability Charge Efficiency.",
+    "talentCooldown": "",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "source": {
+      "recording": "Screen_Recording_20261028_163454_The_Division_Resurgence.mp4",
+      "seconds": [
+        332.25,
+        334.75
+      ]
+    },
+    "evidence": "evidence/skill-mod-combos/tactical-reinforcement.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Liquid Nitrogen",
+    "siteId": "smc-61",
+    "tab": "Vanguard",
+    "listOrder": 18,
+    "skill": "Tactical Link",
+    "bonus2": "Skill Cooldown Recovery-[2.0%~4.0%].",
+    "bonus3": "While using Tactical Link, hits have a 10% chance of reducing Skill Cooldown by 0.80 second(s). Talent Cooldown: 5 second(s).",
+    "talentCooldown": "5 seconds",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "source": {
+      "recording": "Screen_Recording_20261028_163454_The_Division_Resurgence.mp4",
+      "seconds": [
+        335.5,
+        338.25
+      ]
+    },
+    "evidence": "evidence/skill-mod-combos/liquid-nitrogen.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Armor Strengthening",
+    "siteId": "smc-73",
+    "tab": "Field Medic",
+    "listOrder": 1,
+    "skill": "Chemical Trap",
+    "bonus2": "Skill Duration+[3.2%~6.4%].",
+    "bonus3": "Grants +32.00% Armor while located within 20 meter(s) of a Chemical Trap.",
+    "talentCooldown": "",
+    "rarities": [
+      "High-End",
+      "Superior",
+      "Specialized"
+    ],
+    "source": {
+      "recording": "Screen_Recording_20261028_163454_The_Division_Resurgence.mp4",
+      "seconds": [
+        341.5,
+        343.75
+      ]
+    },
+    "evidence": "evidence/skill-mod-combos/armor-strengthening.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Fly Trap",
+    "siteId": "smc-74",
+    "tab": "Field Medic",
+    "listOrder": 2,
+    "skill": "Chemical Trap",
+    "bonus2": "Damage Reduction+[2.0%~4.0%].",
+    "bonus3": "Chemical Trap can be deployed farther away. Hits on enemies inside Chemical Traps apply 1 stack(s) of Corrosive. Headshots apply 4 stack(s) instead. Talent Cooldown: 1.50 second(s).",
+    "talentCooldown": "1.50 seconds",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "source": {
+      "recording": "Screen_Recording_20261028_163454_The_Division_Resurgence.mp4",
+      "seconds": [
+        344.5,
+        347.5
+      ]
+    },
+    "evidence": "evidence/skill-mod-combos/fly-trap.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Chemical Recharge",
+    "siteId": "smc-75",
+    "tab": "Field Medic",
+    "listOrder": 3,
+    "skill": "Chemical Trap",
+    "bonus2": "Damage Reduction+[2.0%~4.0%].",
+    "bonus3": "Using a Chemical Trap to apply a stack of Corrosive has a 50% chance of restoring 4 Signature Ability Charge(s). Talent Cooldown: 0.50 second(s).",
+    "talentCooldown": "0.50 seconds",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "source": {
+      "recording": "Screen_Recording_20261028_163454_The_Division_Resurgence.mp4",
+      "seconds": [
+        348.5,
+        350.25
+      ]
+    },
+    "evidence": "evidence/skill-mod-combos/chemical-recharge.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Hereafter Resilience",
+    "siteId": "smc-76",
+    "tab": "Field Medic",
+    "listOrder": 4,
+    "skill": "Oxidizing Hive",
+    "bonus2": "Skill Intensity+[2.0%~4.0%].",
+    "bonus3": "When deploying Oxidizing Hive, you lose Health equal to 25% of your current Health but gain Extra Health equal to 35.00% of Max Health and 5% Armor for 20 second(s). When Oxidizing Hive is atttached to your backpack, it releases Micro Corrosive Drones to enemies within 15.00 meter(s) every 1.60 second(s).",
+    "talentCooldown": "",
+    "rarities": [
+      "High-End",
+      "Superior",
+      "Specialized"
+    ],
+    "source": {
+      "recording": "Screen_Recording_20261028_163454_The_Division_Resurgence.mp4",
+      "seconds": [
+        351.0,
+        355.25
+      ]
+    },
+    "evidence": "evidence/skill-mod-combos/hereafter-resilience.webp",
+    "checked": "2026-10-28",
+    "note": "The database spells \"atttached\" with three t's."
+  },
+  {
+    "name": "Corrosive Strike",
+    "siteId": "smc-77",
+    "tab": "Field Medic",
+    "listOrder": 5,
+    "skill": "Oxidizing Hive",
+    "bonus2": "Damage Reduction+[2.0%~4.0%].",
+    "bonus3": "If Oxidizing Hive is attached to your backpack and no enemy is hit by your weapon within 3 second(s), hitting enemies with your weapon will trigger Oxidizing Hive to release 13 Micro Corrosive Drones flying towards the target and applying Corrosion to them.",
+    "talentCooldown": "",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "source": {
+      "recording": "Screen_Recording_20261028_163454_The_Division_Resurgence.mp4",
+      "seconds": [
+        356.25,
+        361.5
+      ]
+    },
+    "evidence": "evidence/skill-mod-combos/corrosive-strike.webp",
+    "checked": "2026-10-28",
+    "note": "This popup opened already scrolled; the 2-piece line is only visible blurred while scrolling back up."
+  },
+  {
+    "name": "Generative Formula",
+    "siteId": "smc-78",
+    "tab": "Field Medic",
+    "listOrder": 6,
+    "skill": "Oxidizing Hive",
+    "bonus2": "Damage Reduction+[2.0%~4.0%].",
+    "bonus3": "While being assisted by the Oxidizing Hive, hits restore 8 Signature Ability Charge(s). Talent Cooldown: 2 second(s).",
+    "talentCooldown": "2 seconds",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "source": {
+      "recording": "Screen_Recording_20261028_163454_The_Division_Resurgence.mp4",
+      "seconds": [
+        362.5,
+        364.5
+      ]
+    },
+    "evidence": "evidence/skill-mod-combos/generative-formula.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Enhanced Formula",
+    "siteId": "smc-79",
+    "tab": "Field Medic",
+    "listOrder": 7,
+    "skill": "Oxidizing Swarm",
+    "bonus2": "Skill Critical Damage+[4.0%~8.0%].",
+    "bonus3": "Oxidizing Swarm hits inflict -12% Damage for 20 second(s). Killing an enemy within 20 meter(s) who is also afflicted by this debuff restores Health equal to 8% Missing Health for 20 second(s).",
+    "talentCooldown": "",
+    "rarities": [
+      "High-End",
+      "Superior",
+      "Specialized"
+    ],
+    "source": {
+      "recording": "Screen_Recording_20261028_163454_The_Division_Resurgence.mp4",
+      "seconds": [
+        365.75,
+        369.5
+      ]
+    },
+    "evidence": "evidence/skill-mod-combos/enhanced-formula.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Augmented Range",
+    "siteId": "smc-80",
+    "tab": "Field Medic",
+    "listOrder": 8,
+    "skill": "Oxidizing Swarm",
+    "bonus2": "Damage Reduction+[2.0%~4.0%].",
+    "bonus3": "Oxidizing Swarm can be thrown farther away. Oxidizing Swarm hits that are at least 20 meter(s) away inflict -14.40% Damage Reduction for 10 second(s).",
+    "talentCooldown": "",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "source": {
+      "recording": "Screen_Recording_20261028_163454_The_Division_Resurgence.mp4",
+      "seconds": [
+        370.5,
+        374.25
+      ]
+    },
+    "evidence": "evidence/skill-mod-combos/augmented-range.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Harvest",
+    "siteId": "smc-81",
+    "tab": "Field Medic",
+    "listOrder": 9,
+    "skill": "Oxidizing Swarm",
+    "bonus2": "Damage Reduction+[2.0%~4.0%].",
+    "bonus3": "Oxidizing Swarm hits reduce Skill Cooldown by 2.40 second(s).",
+    "talentCooldown": "",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "source": {
+      "recording": "Screen_Recording_20261028_163454_The_Division_Resurgence.mp4",
+      "seconds": [
+        376.0,
+        377.75
+      ]
+    },
+    "evidence": "evidence/skill-mod-combos/harvest.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Weaponized Treatment",
+    "siteId": "smc-82",
+    "tab": "Field Medic",
+    "listOrder": 10,
+    "skill": "Support Station",
+    "bonus2": "Damage Reduction+[2.0%~4.0%].",
+    "bonus3": "Support Station deals damage to enemies who are within its radius. Damage is increased by 25% while located within the radius of a Support Station.",
+    "talentCooldown": "",
+    "rarities": [
+      "High-End",
+      "Superior",
+      "Specialized"
+    ],
+    "source": {
+      "recording": "Screen_Recording_20261028_163454_The_Division_Resurgence.mp4",
+      "seconds": [
+        379.0,
+        382.5
+      ]
+    },
+    "evidence": "evidence/skill-mod-combos/weaponized-treatment.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Auto Trauma Treatment",
+    "siteId": "smc-83",
+    "tab": "Field Medic",
+    "listOrder": 11,
+    "skill": "Support Station",
+    "bonus2": "Healing Intensity+[3.3%~6.7%].",
+    "bonus3": "Grants +6% Incoming Healing and automatically revives any member of the ally team who is downed within the radius of a Support Station.",
+    "talentCooldown": "",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "source": {
+      "recording": "Screen_Recording_20261028_163454_The_Division_Resurgence.mp4",
+      "seconds": [
+        383.75,
+        385.75
+      ]
+    },
+    "evidence": "evidence/skill-mod-combos/auto-trauma-treatment.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Effective Triage",
+    "siteId": "smc-84",
+    "tab": "Field Medic",
+    "listOrder": 12,
+    "skill": "Support Station",
+    "bonus2": "Healing Intensity+[3.3%~6.7%].",
+    "bonus3": "Grants +40% Incoming Healing to any ally below 50% Health who is located within the radius of a Support Station.",
+    "talentCooldown": "",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "source": {
+      "recording": "Screen_Recording_20261028_163454_The_Division_Resurgence.mp4",
+      "seconds": [
+        386.75,
+        389.5
+      ]
+    },
+    "evidence": "evidence/skill-mod-combos/effective-triage.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Offensive Defense",
+    "siteId": "smc-85",
+    "tab": "Field Medic",
+    "listOrder": 13,
+    "skill": "Healing Hive",
+    "bonus2": "Damage Reduction+[2.0%~4.0%].",
+    "bonus3": "While Healing Hive is deployed, hits on enemies within 20 meter(s) deal additional damage equal to 240% Weapon Damage.",
+    "talentCooldown": "",
+    "rarities": [
+      "High-End",
+      "Superior",
+      "Specialized"
+    ],
+    "source": {
+      "recording": "Screen_Recording_20261028_163454_The_Division_Resurgence.mp4",
+      "seconds": [
+        391.0,
+        393.0
+      ]
+    },
+    "evidence": "evidence/skill-mod-combos/offensive-defense.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Buddy Treatment",
+    "siteId": "smc-86",
+    "tab": "Field Medic",
+    "listOrder": 14,
+    "skill": "Healing Hive",
+    "bonus2": "Healing Intensity+[3.3%~6.7%].",
+    "bonus3": "While Healing Hive is deployed, grants +2.00% Incoming Healing to any ally who is below 50% Health. Self-targeting on the Healing Hive also deploys healing nano-drones to allies within 15 meter(s).",
+    "talentCooldown": "",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "source": {
+      "recording": "Screen_Recording_20261028_163454_The_Division_Resurgence.mp4",
+      "seconds": [
+        393.75,
+        397.0
+      ]
+    },
+    "evidence": "evidence/skill-mod-combos/buddy-treatment.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Coordinated Strike",
+    "siteId": "smc-87",
+    "tab": "Field Medic",
+    "listOrder": 15,
+    "skill": "Healing Hive",
+    "bonus2": "Healing Intensity+[3.3%~6.7%].",
+    "bonus3": "While Healing Hive is deployed, grants +9.60% Skill Intensity when located within 20 meter(s) of an ally. While Healing Hive is deployed, grants +20% Movement Speed when located at least 20 meter(s) away from allies.",
+    "talentCooldown": "",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "source": {
+      "recording": "Screen_Recording_20261028_163454_The_Division_Resurgence.mp4",
+      "seconds": [
+        398.0,
+        401.75
+      ]
+    },
+    "evidence": "evidence/skill-mod-combos/coordinated-strike.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Aggressive Drones",
+    "siteId": "smc-88",
+    "tab": "Field Medic",
+    "listOrder": 16,
+    "skill": "Healing Swarm",
+    "bonus2": "Damage Reduction+[2.0%~4.0%].",
+    "bonus3": "Instead of healing allies, Healing Swarm deals damage to enemies by releasing 16 micro-drones that target enemies every 1.50 second(s).",
+    "talentCooldown": "",
+    "rarities": [
+      "High-End",
+      "Superior",
+      "Specialized"
+    ],
+    "source": {
+      "recording": "Screen_Recording_20261028_163454_The_Division_Resurgence.mp4",
+      "seconds": [
+        402.5,
+        405.0
+      ]
+    },
+    "evidence": "evidence/skill-mod-combos/aggressive-drones.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Emergency Measures",
+    "siteId": "smc-89",
+    "tab": "Field Medic",
+    "listOrder": 17,
+    "skill": "Healing Swarm",
+    "bonus2": "Healing Intensity+[3.3%~6.7%].",
+    "bonus3": "Healing Swarm heals allies over 10 second(s). When an ally's Health drops to 0 during the healing process, restores Health equal to 16% Max Health to them for 5 second(s).",
+    "talentCooldown": "",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "source": {
+      "recording": "Screen_Recording_20261028_163454_The_Division_Resurgence.mp4",
+      "seconds": [
+        405.75,
+        408.25
+      ]
+    },
+    "evidence": "evidence/skill-mod-combos/emergency-measures.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Beneficial Association",
+    "siteId": "smc-90",
+    "tab": "Field Medic",
+    "listOrder": 18,
+    "skill": "Healing Swarm",
+    "bonus2": "Healing Intensity+[3.3%~6.7%].",
+    "bonus3": "For each ally healed by Healing Swarm, grants +1.20% Skill Intensity for 20 second(s), up to 16 stack(s).",
+    "talentCooldown": "",
+    "rarities": [
+      "High-End",
+      "Superior"
+    ],
+    "source": {
+      "recording": "Screen_Recording_20261028_163454_The_Division_Resurgence.mp4",
+      "seconds": [
+        409.0,
+        411.75
+      ]
+    },
+    "evidence": "evidence/skill-mod-combos/beneficial-association.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  }
+]

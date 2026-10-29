@@ -47,8 +47,10 @@ The in-game Build-Making Database is the source of truth for item stats and tale
 1. Screen-record one Build-Making Database section in the game: open each entry, hold about two seconds, scroll long text to
    the bottom and hold about a second, then close it. Record every tab.
 2. Transcribe it into `research/build-database/` in the same shape as the existing files, and update the README's coverage table.
-3. Compare it with `src/data/` and fix what differs. Mark checked OS Protocols and exotics with `verifiedInGame` (the date);
-   their pages then show "Last verified" for the current patch.
+3. Compare it with `src/data/` and fix what differs. Mark checked OS Protocols, exotics and skill mod combo sets with
+   `verifiedInGame` (the date); their pages then show "Last verified" for the current patch. The database can lag a patch
+   (Ammo Refill still showed its pre-Season 2 text in October 2026), so check differences against the patch notes before
+   changing the site.
 4. Re-read the builds and guides that use anything that changed.
 
 ## How to Publish Patch Notes
