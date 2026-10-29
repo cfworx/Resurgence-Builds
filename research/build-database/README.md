@@ -16,13 +16,14 @@ Nothing in this folder is served by the website. `src/data/*.json` is what the s
 | Exotic Weapon | Done 2026-10-28 | 6 | `Screen_Recording_20261028_155256` |
 | Skill Mod Combo Set | Done 2026-10-28 | 90 | `Screen_Recording_20261028_163454` |
 | Weapon Talent | Done 2026-10-28 | 73 | `Screen_Recording_20261028_184307` |
-| Gear Set Effect | Not recorded yet | | |
+| Gear Set Effect | Done 2026-10-28 | 16 | `Screen_Recording_20261028_201633` |
 | Body Armor Talent | Done 2026-10-28 | 25 | `Screen_Recording_20261028_190611` |
 | Backpack Talent | Done 2026-10-28 | 25 | `Screen_Recording_20261028_190726` |
 | Weapon/Gear Bonus Attributes | Done 2026-10-28 | 24 | `Screen_Recording_20261028_190829` |
 | Armory (outside the database): weapons and gear | Done 2026-10-28 | 92 weapons, 72 gear | `Screen_Recording_20261028_191045` |
 
-All recordings were made on 2026-10-28 during Season 2 Phase 2. Details are in `recordings.json`.
+All recordings were made on 2026-10-28 during Season 2 Phase 2. Details are in `recordings.json`. With the Gear Set Effect
+recording, every section of the database is covered.
 
 ## Files
 
@@ -46,8 +47,12 @@ All recordings were made on 2026-10-28 during Season 2 Phase 2. Details are in `
 - `armory-weapons.json` / `.csv`: every weapon in the Armory (86 standard and the 6 exotics). Name as the Armory writes it,
   class, the tier page it sits on (Season 1, Tier 0, 1 or 2), the damage type from the icon next to its name, and the matching
   site id and name.
+- `gear-set-effects.json` / `.csv`: all 16 Gear Set Effects in the database's order. Name, the site's id (`gs-N`), the icon,
+  the 2, 3 and 4-piece text, the Armory tiers the set rolls on, the other sets that share its gear pieces, the six Armory
+  pieces per tier that can carry it, the rows the card's "Source" panel shows, and where in the recording it was read.
 - `armory-gear.json` / `.csv`: every gear piece in the Armory (72: 12 each for holster, gloves, backpack, knee pads, body armor
-  and mask), with its tier page.
+  and mask), with its tier page and the gear sets it can roll (`gearSets`), plus the piece family (`gearSetFamily`, A to D)
+  it belongs to.
 - `recordings.json`: the source recordings (file name, date, length, resolution, what each one covers).
 - `evidence/`: one image per entry, stitched from the recording so the whole scrolled card is in one picture. These are the
   proof for every value in the JSON and CSV files.
@@ -81,6 +86,26 @@ All recordings were made on 2026-10-28 during Season 2 Phase 2. Details are in `
   and 2) and every gear slot the same way. The icon after a weapon's name is its damage type: a red burst is Blast, a single blue
   slash is Piercing and a green three-stroke claw mark is Shredding (the six exotics confirm the key). Locked items show as blueprints
   with a red label; that's ownership, not a different item.
+- **Gear Set Effect cards** show the set's icon, name and its (2), (3) and (4) lines, then a "Source" panel of gear pieces in
+  rows of six (mask, body armor, knee pads, then backpack, gloves, holster), each with its rarity colour and tier. The panels
+  weren't scrolled, so the record keeps the rows in view: four full rows and the top of a fifth when the list goes on. The section
+  header reads "Each gear piece belongs to a Combo Set. Equipping 2/3/4 pieces from the same set activates the corresponding
+  set effect." Three of the bonus lines are negative on the card ("Skill Cooldown Recovery -12.0%", -9.0% and -6.0%); that's the
+  game's way of writing a cooldown cut (see Open questions), and we keep the sign.
+- **Which sets each gear piece can roll** comes from the Armory: every piece has the icons of its sets beside it, two on a T0
+  page, three on T1 and four on T2. The 72 pieces fall into four families (A to D), one piece per slot and tier each, and each
+  family carries four sets: A Fury Strike, Quick Draw (from T0), One Shot One Kill (from T1), Gunny Johnny (T2); B Jackpot,
+  Long-term Effect, Dr. Medic, Mechanical Enemy; C Phalanx Attack, Boom-Shakalaka, Mechanical Expert, Fire Cycle; D Captain
+  Cow, Fearless Warrior, Self-Propelled Shield, Healing Elites. Every set's Source panel agrees: the four T2-only sets list
+  T2 High-End and T2 Superior pieces and nothing else, the T1 sets go straight from T1 High-End to T2 Superior, and the T0
+  sets show a T0 High-End row. Three pieces hide their icons behind the model (Stridsvast Combat Vest, Ranger Ballistics Vest
+  and "Tay" Protective Pads v2); their notes in `armory-gear.json` say how each was placed.
+- Set icon key (the Armory uses the same icons): Fury Strike an explosion burst, Quick Draw a single bullet, Phalanx Attack
+  three bullets, One Shot One Kill a crosshair, Gunny Johnny a pistol, Mechanical Enemy a mortarboard over a pistol, Jackpot
+  slot machine reels, Long-term Effect a clock, Dr. Medic a microscope, Boom-Shakalaka a flame inside a burst, Fire Cycle a
+  flame inside circular arrows, Mechanical Expert a gear with wrenches, Captain Cow a first-aid kit and syringe, Healing
+  Elites a document with a cross and a shield, Self-Propelled Shield a shield with an arrow, Fearless Warrior a shield with
+  crossed wings.
 - The exotic cards also show a "Possible Talents" grid of 18 icons without names. Each icon was matched to its talent by
   comparing it with the icons on the 73 Weapon Talent cards (every match checked by eye); the names are in
   `exotic-weapons.json` (`possibleTalents`, in grid order).
@@ -131,13 +156,24 @@ every field was compared with `src/data/`.
   example: the Armory shows the Police M4 as Blast and the Police Mk17 as Piercing. The guide's example weapons and an
   AgentHuntzman build note are fixed.
 
+- Gear sets: all 16 matched the site's bonus text exactly. Every set now carries the tiers it rolls on and
+  `verifiedInGame: "2026-10-28"`, and a new `src/data/armory-gear.json` lists the 72 Armory pieces with their sets. The gear set
+  pages show each set's tier and the exact pieces per tier, and the copy was corrected where it disagreed with the game or
+  with our own build guides: Gunny Johnny was called a "good starter set" but only rolls on T2; Long-term Effect was "the
+  most-used skill set" and Fearless Warrior "the go-to for Bulwark Breachers", which our build guides don't bear out; One Shot
+  One Kill's Firepower is the weapon-damage attribute, not a multiplier on everything; and the farming answer called weekly
+  bounties the most consistent farm for set pieces, when creators farm OS Protocols there. The pages' combo suggestion paired a set with itself ("4pc Phalanx Attack + 2pc Phalanx Attack"); it now
+  lists the build guides that actually wear the set. The farming guide gained a section on which sets each tier rolls, and the
+  codes guide now spells the Twitch-drop gear the Armory's way.
+
 ## Open questions
 
 - **Bonus attribute list vs Season 2 Phase 1.** The database still lists Weapon and Skill Blast, Piercing and Shredding Damage
   and doesn't list All Weapon Damage or All Skill Damage, although Ubisoft's Season 2 Phase 1 notes say the damage-type bonuses
   were removed "in favor of 'All Weapon Damage' or 'All Skill Damage'". Like the Ammo Refill card, the list may predate the
   patch, or gear may still roll them. The site keeps its pools and shows the six in their own section.
-- **Gear Set Effect** is the one database section not recorded yet.
+- **Release Extra Protection** (Dr. Medic 4-piece, Healing Elites 3-piece) is a set-only stat: it isn't in the Bonus
+  Attributes list, so the database never describes it.
 - **Armory scope.** The Armory pages are all labeled Season 1. Weapons added later (if any) would be on other pages; none showed
   in this recording.
 
@@ -150,9 +186,10 @@ every field was compared with `src/data/`.
   Season 2 Phase 1. Ubisoft's notes changed it to 4 bullets at a quarter of the chance (72% to 18% at the top tier), and
   TikTokAndy's set read 7% on September 30. The site keeps the patched values and says so on the page. The database is the best
   source we have, but this shows it can lag behind a patch.
-- **"Skill Cooldown Recovery-".** Every 2-piece Skill Cooldown Recovery bonus is shown as "Skill Cooldown Recovery-[2.0%~4.0%]",
-  with what looks like a minus where the other bonuses have a plus. It is almost certainly a display quirk (the bonus is
-  positive), and we store it as shown.
+- **"Skill Cooldown Recovery-" (explained).** Every 2-piece Skill Cooldown Recovery bonus is shown as "Skill Cooldown
+  Recovery-[2.0%~4.0%]", with a minus where the other bonuses have a plus. It's how the game writes this stat everywhere: the
+  Gear Set Effect cards say "Skill Cooldown Recovery -12.0%" (Mechanical Enemy), -9.0% and -6.0%, and gear rolls on creators'
+  screens read the same way (-4.07% on LtFoe's chest). The minus means shorter cooldowns, a bonus. We store it as shown.
 - **How many rolled talents does an exotic get? (answered)** Three talents in all: the fixed exotic talent plus two rolled from
   its pool of 18, which fits the section header ("Every weapon has 2 Weapon Talents..."). Cory confirmed it in game on
   2026-10-28. The exotic pages and the exotic list guide say so.

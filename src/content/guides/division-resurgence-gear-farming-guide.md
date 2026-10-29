@@ -2,7 +2,7 @@
 title: "Gear Farming Guide: T0, T1 and T2"
 category: "Farming"
 publishDate: 2026-10-25
-lastUpdated: 2026-10-26T12:00:00Z
+lastUpdated: 2026-10-28T12:00:00Z
 tags: ["farming", "gear", "Tier 2", "endgame", "Season 2", "build-guide"]
 description: "Where to farm T1 and T2 gear in Division Resurgence: which missions lean to which slots, Elite missions, level 40 dailies, the Dark Zone, mods."
 featuredImage: "/images/division-resurgence-best-pve-dps-builds.webp"
@@ -16,6 +16,8 @@ videoChannel: "AgentHuntzman"
 faqs:
   - question: "Where do you farm Tier 2 gear in Division Resurgence?"
     answer: "At level 40, in a few places. Ubisoft's Season 2 Phase 2 notes give Weapon Kill and Main Mission daily quests a chance of T2. Creators point at Elite missions (AgentHuntzman calls them the best place, and TikTokAndy says the week's Elite Legendary mission drops T2 guns quite regularly), the weekly Elite Mission Challenge chest, and Legendary Precious Cargo. In the Dark Zone, AgentHuntzman calls the Heroic landmarks rare for T2 but rates the Heroic enemy leader's cache as the best spot there. RNG keeps its own schedule."
+  - question: "Which gear sets drop on T0, T1 and T2 gear in Division Resurgence?"
+    answer: "Per the in-game Armory (checked October 28, 2026), T0 pieces roll two sets each, T1 three and T2 four. Eight sets roll from T0 up: Fury Strike, Quick Draw, Phalanx Attack, Jackpot, Long-term Effect, Boom-Shakalaka, Captain Cow and Fearless Warrior. Four roll from T1 up: One Shot One Kill, Dr. Medic, Mechanical Expert and Self-Propelled Shield. Four only roll on T2: Gunny Johnny, Mechanical Enemy, Fire Cycle and Healing Elites."
   - question: "Can you upgrade a T1 weapon to T2 in Division Resurgence?"
     answer: "Yes, with an Enhancement Kit in the Armory's Power Tier Enhancement screen. Died Again Gaming said in June, before Season 2, that you first need six weapons of the target tier at max proficiency, and that one kit covers any jump, even T0 to T2. Exotics take an Exotic Weapon Enhancement Kit, which Ubisoft stocks at the Dark Zone vendor. Proficiency grind first, shiny T2 second."
   - question: "When do you start getting Tier 1 gear?"
@@ -51,6 +53,16 @@ AgentHuntzman's rule of thumb for the climb:
 One difference the tooltip won't shout about: mod slots. Died Again Gaming (June 7) counts one mod slot on T0 gear and two from T1 up, and four on T0 weapons against five on T1 and T2. So a T0 piece with slightly better stats usually loses to a T1 once that extra slot is filled.
 
 Don't judge any of it by the number on the item. A T1 piece from the right set with the right stats beats a T2 piece with the wrong ones, which our [hidden mechanics guide](/guides/hidden-mechanics-explained/) explains at length.
+
+### Which Gear Sets Each Tier Can Roll
+
+The tier also decides which gear sets you can find. We checked the in-game Armory on October 28: every gear piece shows the sets it can roll, two on a T0 piece, three on T1 and four on T2. That works out to:
+
+- **From T0 up (8 sets):** Fury Strike, Quick Draw, Phalanx Attack, Jackpot, Long-term Effect, Boom-Shakalaka, Captain Cow and Fearless Warrior.
+- **From T1 up (4):** One Shot One Kill, Dr. Medic, Mechanical Expert and Self-Propelled Shield.
+- **T2 only (4):** Gunny Johnny, Mechanical Enemy, Fire Cycle and Healing Elites.
+
+So if your build is written around a T2-only set, you'll need a bridge while you farm. PVE Enjoyer's pick for his [Fire Cycle Demolitionist](/builds/demolitionist-glass-cannon-build-pveenjoyer/) is 4pc Jackpot. Each set's page in our [gear set database](/database/gear-set-effects/) lists the exact pieces that can carry it at each tier.
 
 ---
 
@@ -154,6 +166,7 @@ Where to get them: Heroic Hostile Nests. His trick is to run the nest again as s
 
 ## Sources
 
+- The in-game Armory and Build-Making Database, checked October 28, 2026 (which gear sets each tier's pieces can roll); the full list is in our [gear set database](/database/gear-set-effects/)
 - [Ubisoft Help Center: Patch Note, Season 2 Phase 2](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2566-patch-note---season-2-phase-2/) (daily quest T2 chance, Main Mission replay rewards, Hostile Nest mods); our [summary](/patch-notes/season-2-phase-2/)
 - Our [Season 1 Phase 3 patch notes](/patch-notes/season-1-phase-3-a-new-fire/) (Elite Mission Challenge selection crates) and [Season 2 Phase 1 patch notes](/patch-notes/season-2-phase-1-the-call/) (exotic mod in the Elite Mission Challenge chest)
 - [AgentHuntzman: Gear Farming Made EASY (YouTube, June 3, 2026)](https://www.youtube.com/watch?v=m5a01nBqv_U)

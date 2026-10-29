@@ -1,0 +1,1784 @@
+[
+  {
+    "name": "Fury Strike",
+    "siteId": "gs-1",
+    "listOrder": 1,
+    "icon": "explosion burst",
+    "bonus2": "Optimal Range +10.0%",
+    "bonus3": "Weapon Critical Hit Chance +10.8%",
+    "bonus4": "Weapon Critical Hit Damage +24.0%",
+    "armoryTiers": [
+      "T0",
+      "T1",
+      "T2"
+    ],
+    "sharesPiecesWith": [
+      "Quick Draw",
+      "One Shot One Kill",
+      "Gunny Johnny"
+    ],
+    "armoryPieces": {
+      "T0": [
+        {
+          "slot": "Mask",
+          "name": "Tactical Mask"
+        },
+        {
+          "slot": "Body Armor",
+          "name": "\"Ericht\" Chest System"
+        },
+        {
+          "slot": "Knee Pads",
+          "name": "\"Dingson\" Protection Pads"
+        },
+        {
+          "slot": "Backpack",
+          "name": "Trekking Elite Pack"
+        },
+        {
+          "slot": "Gloves",
+          "name": "\"Lochy\" Hand Savers"
+        },
+        {
+          "slot": "Holster",
+          "name": "Urban Assault Holster"
+        }
+      ],
+      "T1": [
+        {
+          "slot": "Mask",
+          "name": "Bevor Air Guard"
+        },
+        {
+          "slot": "Body Armor",
+          "name": "Flimsy Body Armor v1"
+        },
+        {
+          "slot": "Knee Pads",
+          "name": "Stonewall Knee Pads"
+        },
+        {
+          "slot": "Backpack",
+          "name": "Rally Point Secure Pack"
+        },
+        {
+          "slot": "Gloves",
+          "name": "Micro Plated Gloves"
+        },
+        {
+          "slot": "Holster",
+          "name": "Serviceman's Holster"
+        }
+      ],
+      "T2": [
+        {
+          "slot": "Mask",
+          "name": "Combat Mask \"Cete\""
+        },
+        {
+          "slot": "Body Armor",
+          "name": "X-TREYME Pro Ribcage"
+        },
+        {
+          "slot": "Knee Pads",
+          "name": "Knäskydd Knee Protectors"
+        },
+        {
+          "slot": "Backpack",
+          "name": "All Hazards Nitro Backpack"
+        },
+        {
+          "slot": "Gloves",
+          "name": "Nightclaw Tactical Gloves"
+        },
+        {
+          "slot": "Holster",
+          "name": "Fodral Holster"
+        }
+      ]
+    },
+    "sourcePanel": {
+      "visibleRows": [
+        "T2 High-End x6",
+        "T1 High-End x6",
+        "T0 High-End (row cut off, list continues)"
+      ],
+      "complete": false
+    },
+    "source": {
+      "recording": "Screen_Recording_20261028_201633_The_Division_Resurgence.mp4",
+      "seconds": [
+        0.5,
+        6.0
+      ]
+    },
+    "evidence": "evidence/gear-set-effects/fury-strike.webp",
+    "armoryEvidence": [
+      "evidence/armory/mask-t0.webp",
+      "evidence/armory/body-armor-t0.webp",
+      "evidence/armory/knee-pads-t0.webp",
+      "evidence/armory/backpack-t0.webp",
+      "evidence/armory/gloves-t0.webp",
+      "evidence/armory/holster-t0.webp",
+      "evidence/armory/mask-t1.webp",
+      "evidence/armory/body-armor-t1.webp",
+      "evidence/armory/knee-pads-t1.webp",
+      "evidence/armory/backpack-t1.webp",
+      "evidence/armory/gloves-t1.webp",
+      "evidence/armory/holster-t1.webp",
+      "evidence/armory/mask-t2.webp",
+      "evidence/armory/body-armor-t2.webp",
+      "evidence/armory/knee-pads-t2.webp",
+      "evidence/armory/backpack-t2.webp",
+      "evidence/armory/gloves-t2.webp",
+      "evidence/armory/holster-t2.webp"
+    ],
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "Quick Draw",
+    "siteId": "gs-2",
+    "listOrder": 2,
+    "icon": "single bullet",
+    "bonus2": "Reload Speed +12.0%",
+    "bonus3": "Magazine Size +27.0%",
+    "bonus4": "Headshot Damage +28.8%",
+    "armoryTiers": [
+      "T0",
+      "T1",
+      "T2"
+    ],
+    "sharesPiecesWith": [
+      "Fury Strike",
+      "One Shot One Kill",
+      "Gunny Johnny"
+    ],
+    "armoryPieces": {
+      "T0": [
+        {
+          "slot": "Mask",
+          "name": "Tactical Mask"
+        },
+        {
+          "slot": "Body Armor",
+          "name": "\"Ericht\" Chest System"
+        },
+        {
+          "slot": "Knee Pads",
+          "name": "\"Dingson\" Protection Pads"
+        },
+        {
+          "slot": "Backpack",
+          "name": "Trekking Elite Pack"
+        },
+        {
+          "slot": "Gloves",
+          "name": "\"Lochy\" Hand Savers"
+        },
+        {
+          "slot": "Holster",
+          "name": "Urban Assault Holster"
+        }
+      ],
+      "T1": [
+        {
+          "slot": "Mask",
+          "name": "Bevor Air Guard"
+        },
+        {
+          "slot": "Body Armor",
+          "name": "Flimsy Body Armor v1"
+        },
+        {
+          "slot": "Knee Pads",
+          "name": "Stonewall Knee Pads"
+        },
+        {
+          "slot": "Backpack",
+          "name": "Rally Point Secure Pack"
+        },
+        {
+          "slot": "Gloves",
+          "name": "Micro Plated Gloves"
+        },
+        {
+          "slot": "Holster",
+          "name": "Serviceman's Holster"
+        }
+      ],
+      "T2": [
+        {
+          "slot": "Mask",
+          "name": "Combat Mask \"Cete\""
+        },
+        {
+          "slot": "Body Armor",
+          "name": "X-TREYME Pro Ribcage"
+        },
+        {
+          "slot": "Knee Pads",
+          "name": "Knäskydd Knee Protectors"
+        },
+        {
+          "slot": "Backpack",
+          "name": "All Hazards Nitro Backpack"
+        },
+        {
+          "slot": "Gloves",
+          "name": "Nightclaw Tactical Gloves"
+        },
+        {
+          "slot": "Holster",
+          "name": "Fodral Holster"
+        }
+      ]
+    },
+    "sourcePanel": {
+      "visibleRows": [
+        "T2 High-End x6",
+        "T1 High-End x6",
+        "T0 High-End (row cut off, list continues)"
+      ],
+      "complete": false
+    },
+    "source": {
+      "recording": "Screen_Recording_20261028_201633_The_Division_Resurgence.mp4",
+      "seconds": [
+        7.25,
+        8.25
+      ]
+    },
+    "evidence": "evidence/gear-set-effects/quick-draw.webp",
+    "armoryEvidence": [
+      "evidence/armory/mask-t0.webp",
+      "evidence/armory/body-armor-t0.webp",
+      "evidence/armory/knee-pads-t0.webp",
+      "evidence/armory/backpack-t0.webp",
+      "evidence/armory/gloves-t0.webp",
+      "evidence/armory/holster-t0.webp",
+      "evidence/armory/mask-t1.webp",
+      "evidence/armory/body-armor-t1.webp",
+      "evidence/armory/knee-pads-t1.webp",
+      "evidence/armory/backpack-t1.webp",
+      "evidence/armory/gloves-t1.webp",
+      "evidence/armory/holster-t1.webp",
+      "evidence/armory/mask-t2.webp",
+      "evidence/armory/body-armor-t2.webp",
+      "evidence/armory/knee-pads-t2.webp",
+      "evidence/armory/backpack-t2.webp",
+      "evidence/armory/gloves-t2.webp",
+      "evidence/armory/holster-t2.webp"
+    ],
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "Phalanx Attack",
+    "siteId": "gs-3",
+    "listOrder": 3,
+    "icon": "three bullets",
+    "bonus2": "Magazine Size +18.0%",
+    "bonus3": "Rate of Fire +18.0%",
+    "bonus4": "Weapon Multi-Shot Chance +12.0%",
+    "armoryTiers": [
+      "T0",
+      "T1",
+      "T2"
+    ],
+    "sharesPiecesWith": [
+      "Boom-Shakalaka",
+      "Fire Cycle",
+      "Mechanical Expert"
+    ],
+    "armoryPieces": {
+      "T0": [
+        {
+          "slot": "Mask",
+          "name": "\"Maxillam\" Respirator"
+        },
+        {
+          "slot": "Body Armor",
+          "name": "Ranger Ballistics Vest"
+        },
+        {
+          "slot": "Knee Pads",
+          "name": "Dionysus Rounded Padding"
+        },
+        {
+          "slot": "Backpack",
+          "name": "RUSH72 Backpack"
+        },
+        {
+          "slot": "Gloves",
+          "name": "Blood Fang Gloves"
+        },
+        {
+          "slot": "Holster",
+          "name": "Armorer's Security Holster"
+        }
+      ],
+      "T1": [
+        {
+          "slot": "Mask",
+          "name": "Aphrodite Glint Concealer"
+        },
+        {
+          "slot": "Body Armor",
+          "name": "Flimsy Body Armor v2"
+        },
+        {
+          "slot": "Knee Pads",
+          "name": "HX 02"
+        },
+        {
+          "slot": "Backpack",
+          "name": "\"Horo\" CarryBack"
+        },
+        {
+          "slot": "Gloves",
+          "name": "\"Digits\" Finger Stabilizer"
+        },
+        {
+          "slot": "Holster",
+          "name": "Pridwen Holster"
+        }
+      ],
+      "T2": [
+        {
+          "slot": "Mask",
+          "name": "Javelina Mask"
+        },
+        {
+          "slot": "Body Armor",
+          "name": "Ops Armor"
+        },
+        {
+          "slot": "Knee Pads",
+          "name": "\"Patella\" Knee Cups"
+        },
+        {
+          "slot": "Backpack",
+          "name": "AMP24"
+        },
+        {
+          "slot": "Gloves",
+          "name": "\"Neptune\" Protection Gloves"
+        },
+        {
+          "slot": "Holster",
+          "name": "Jaivardhan Thigh Rig"
+        }
+      ]
+    },
+    "sourcePanel": {
+      "visibleRows": [
+        "T2 High-End x6",
+        "T1 High-End x6",
+        "T0 High-End (row cut off, list continues)"
+      ],
+      "complete": false
+    },
+    "source": {
+      "recording": "Screen_Recording_20261028_201633_The_Division_Resurgence.mp4",
+      "seconds": [
+        9.25,
+        10.0
+      ]
+    },
+    "evidence": "evidence/gear-set-effects/phalanx-attack.webp",
+    "armoryEvidence": [
+      "evidence/armory/mask-t0.webp",
+      "evidence/armory/body-armor-t0.webp",
+      "evidence/armory/knee-pads-t0.webp",
+      "evidence/armory/backpack-t0.webp",
+      "evidence/armory/gloves-t0.webp",
+      "evidence/armory/holster-t0.webp",
+      "evidence/armory/mask-t1.webp",
+      "evidence/armory/body-armor-t1.webp",
+      "evidence/armory/knee-pads-t1.webp",
+      "evidence/armory/backpack-t1.webp",
+      "evidence/armory/gloves-t1.webp",
+      "evidence/armory/holster-t1.webp",
+      "evidence/armory/mask-t2.webp",
+      "evidence/armory/body-armor-t2.webp",
+      "evidence/armory/knee-pads-t2.webp",
+      "evidence/armory/backpack-t2.webp",
+      "evidence/armory/gloves-t2.webp",
+      "evidence/armory/holster-t2.webp"
+    ],
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "One Shot One Kill",
+    "siteId": "gs-4",
+    "listOrder": 4,
+    "icon": "crosshair",
+    "bonus2": "Accuracy +24.0%",
+    "bonus3": "Headshot Damage +21.6%",
+    "bonus4": "Firepower +18.0%",
+    "armoryTiers": [
+      "T1",
+      "T2"
+    ],
+    "sharesPiecesWith": [
+      "Fury Strike",
+      "Quick Draw",
+      "Gunny Johnny"
+    ],
+    "armoryPieces": {
+      "T1": [
+        {
+          "slot": "Mask",
+          "name": "Bevor Air Guard"
+        },
+        {
+          "slot": "Body Armor",
+          "name": "Flimsy Body Armor v1"
+        },
+        {
+          "slot": "Knee Pads",
+          "name": "Stonewall Knee Pads"
+        },
+        {
+          "slot": "Backpack",
+          "name": "Rally Point Secure Pack"
+        },
+        {
+          "slot": "Gloves",
+          "name": "Micro Plated Gloves"
+        },
+        {
+          "slot": "Holster",
+          "name": "Serviceman's Holster"
+        }
+      ],
+      "T2": [
+        {
+          "slot": "Mask",
+          "name": "Combat Mask \"Cete\""
+        },
+        {
+          "slot": "Body Armor",
+          "name": "X-TREYME Pro Ribcage"
+        },
+        {
+          "slot": "Knee Pads",
+          "name": "Knäskydd Knee Protectors"
+        },
+        {
+          "slot": "Backpack",
+          "name": "All Hazards Nitro Backpack"
+        },
+        {
+          "slot": "Gloves",
+          "name": "Nightclaw Tactical Gloves"
+        },
+        {
+          "slot": "Holster",
+          "name": "Fodral Holster"
+        }
+      ]
+    },
+    "sourcePanel": {
+      "visibleRows": [
+        "T2 High-End x6",
+        "T1 High-End x6",
+        "T2 Superior (row cut off, list continues)"
+      ],
+      "complete": false
+    },
+    "source": {
+      "recording": "Screen_Recording_20261028_201633_The_Division_Resurgence.mp4",
+      "seconds": [
+        10.75,
+        11.75
+      ]
+    },
+    "evidence": "evidence/gear-set-effects/one-shot-one-kill.webp",
+    "armoryEvidence": [
+      "evidence/armory/mask-t1.webp",
+      "evidence/armory/body-armor-t1.webp",
+      "evidence/armory/knee-pads-t1.webp",
+      "evidence/armory/backpack-t1.webp",
+      "evidence/armory/gloves-t1.webp",
+      "evidence/armory/holster-t1.webp",
+      "evidence/armory/mask-t2.webp",
+      "evidence/armory/body-armor-t2.webp",
+      "evidence/armory/knee-pads-t2.webp",
+      "evidence/armory/backpack-t2.webp",
+      "evidence/armory/gloves-t2.webp",
+      "evidence/armory/holster-t2.webp"
+    ],
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "Gunny Johnny",
+    "siteId": "gs-5",
+    "listOrder": 5,
+    "icon": "pistol",
+    "bonus2": "Rate of Fire +12.0%",
+    "bonus3": "Reload Speed +18.0%",
+    "bonus4": "Weapon Damage +12.0%",
+    "armoryTiers": [
+      "T2"
+    ],
+    "sharesPiecesWith": [
+      "Fury Strike",
+      "Quick Draw",
+      "One Shot One Kill"
+    ],
+    "armoryPieces": {
+      "T2": [
+        {
+          "slot": "Mask",
+          "name": "Combat Mask \"Cete\""
+        },
+        {
+          "slot": "Body Armor",
+          "name": "X-TREYME Pro Ribcage"
+        },
+        {
+          "slot": "Knee Pads",
+          "name": "Knäskydd Knee Protectors"
+        },
+        {
+          "slot": "Backpack",
+          "name": "All Hazards Nitro Backpack"
+        },
+        {
+          "slot": "Gloves",
+          "name": "Nightclaw Tactical Gloves"
+        },
+        {
+          "slot": "Holster",
+          "name": "Fodral Holster"
+        }
+      ]
+    },
+    "sourcePanel": {
+      "visibleRows": [
+        "T2 High-End x6",
+        "T2 Superior x6"
+      ],
+      "complete": true
+    },
+    "source": {
+      "recording": "Screen_Recording_20261028_201633_The_Division_Resurgence.mp4",
+      "seconds": [
+        13.0,
+        15.0
+      ]
+    },
+    "evidence": "evidence/gear-set-effects/gunny-johnny.webp",
+    "armoryEvidence": [
+      "evidence/armory/mask-t2.webp",
+      "evidence/armory/body-armor-t2.webp",
+      "evidence/armory/knee-pads-t2.webp",
+      "evidence/armory/backpack-t2.webp",
+      "evidence/armory/gloves-t2.webp",
+      "evidence/armory/holster-t2.webp"
+    ],
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "Mechanical Enemy",
+    "siteId": "gs-6",
+    "listOrder": 6,
+    "icon": "mortarboard over a pistol",
+    "bonus2": "Weapon Critical Hit Chance +7.2%",
+    "bonus3": "Optimal Range +15.0%",
+    "bonus4": "Skill Cooldown Recovery -12.0%",
+    "armoryTiers": [
+      "T2"
+    ],
+    "sharesPiecesWith": [
+      "Jackpot",
+      "Long-term Effect",
+      "Dr. Medic"
+    ],
+    "armoryPieces": {
+      "T2": [
+        {
+          "slot": "Mask",
+          "name": "Protective Tactical Mask"
+        },
+        {
+          "slot": "Body Armor",
+          "name": "Chatzatz Chest"
+        },
+        {
+          "slot": "Knee Pads",
+          "name": "Urban Warfare Kneepads"
+        },
+        {
+          "slot": "Backpack",
+          "name": "Mountain Hiking Pack"
+        },
+        {
+          "slot": "Gloves",
+          "name": "\"Kote\" Hand Guards"
+        },
+        {
+          "slot": "Holster",
+          "name": "Jags Sidearm Mount"
+        }
+      ]
+    },
+    "sourcePanel": {
+      "visibleRows": [
+        "T2 High-End x6",
+        "T2 Superior x6"
+      ],
+      "complete": true
+    },
+    "source": {
+      "recording": "Screen_Recording_20261028_201633_The_Division_Resurgence.mp4",
+      "seconds": [
+        16.0,
+        17.25
+      ]
+    },
+    "evidence": "evidence/gear-set-effects/mechanical-enemy.webp",
+    "armoryEvidence": [
+      "evidence/armory/mask-t2.webp",
+      "evidence/armory/body-armor-t2.webp",
+      "evidence/armory/knee-pads-t2.webp",
+      "evidence/armory/backpack-t2.webp",
+      "evidence/armory/gloves-t2.webp",
+      "evidence/armory/holster-t2.webp"
+    ],
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "Jackpot",
+    "siteId": "gs-7",
+    "listOrder": 7,
+    "icon": "slot machine reels (777)",
+    "bonus2": "Skill Radius +12.0%",
+    "bonus3": "Skill Critical Chance +10.8%",
+    "bonus4": "Skill Critical Damage +24.0%",
+    "armoryTiers": [
+      "T0",
+      "T1",
+      "T2"
+    ],
+    "sharesPiecesWith": [
+      "Mechanical Enemy",
+      "Long-term Effect",
+      "Dr. Medic"
+    ],
+    "armoryPieces": {
+      "T0": [
+        {
+          "slot": "Mask",
+          "name": "Rapid Deployment Mask"
+        },
+        {
+          "slot": "Body Armor",
+          "name": "Mechanized Infantry Armor"
+        },
+        {
+          "slot": "Knee Pads",
+          "name": "\"Tay\" Protective Pads v1"
+        },
+        {
+          "slot": "Backpack",
+          "name": "Demeter Quick-Stash"
+        },
+        {
+          "slot": "Gloves",
+          "name": "Hybrid FC Gloves"
+        },
+        {
+          "slot": "Holster",
+          "name": "Chamber Wolf TAC Holster"
+        }
+      ],
+      "T1": [
+        {
+          "slot": "Mask",
+          "name": "Timeless Guardian Mask"
+        },
+        {
+          "slot": "Body Armor",
+          "name": "Athena Missile Vest"
+        },
+        {
+          "slot": "Knee Pads",
+          "name": "Sundown Knee Guards"
+        },
+        {
+          "slot": "Backpack",
+          "name": "Ziba Low Profile Pack"
+        },
+        {
+          "slot": "Gloves",
+          "name": "Diamondback Gloves"
+        },
+        {
+          "slot": "Holster",
+          "name": "\"Morar\" Holster System"
+        }
+      ],
+      "T2": [
+        {
+          "slot": "Mask",
+          "name": "Protective Tactical Mask"
+        },
+        {
+          "slot": "Body Armor",
+          "name": "Chatzatz Chest"
+        },
+        {
+          "slot": "Knee Pads",
+          "name": "Urban Warfare Kneepads"
+        },
+        {
+          "slot": "Backpack",
+          "name": "Mountain Hiking Pack"
+        },
+        {
+          "slot": "Gloves",
+          "name": "\"Kote\" Hand Guards"
+        },
+        {
+          "slot": "Holster",
+          "name": "Jags Sidearm Mount"
+        }
+      ]
+    },
+    "sourcePanel": {
+      "visibleRows": [
+        "T2 High-End x6",
+        "T1 High-End x6",
+        "T0 High-End (row cut off, list continues)"
+      ],
+      "complete": false
+    },
+    "source": {
+      "recording": "Screen_Recording_20261028_201633_The_Division_Resurgence.mp4",
+      "seconds": [
+        18.25,
+        19.75
+      ]
+    },
+    "evidence": "evidence/gear-set-effects/jackpot.webp",
+    "armoryEvidence": [
+      "evidence/armory/mask-t0.webp",
+      "evidence/armory/body-armor-t0.webp",
+      "evidence/armory/knee-pads-t0.webp",
+      "evidence/armory/backpack-t0.webp",
+      "evidence/armory/gloves-t0.webp",
+      "evidence/armory/holster-t0.webp",
+      "evidence/armory/mask-t1.webp",
+      "evidence/armory/body-armor-t1.webp",
+      "evidence/armory/knee-pads-t1.webp",
+      "evidence/armory/backpack-t1.webp",
+      "evidence/armory/gloves-t1.webp",
+      "evidence/armory/holster-t1.webp",
+      "evidence/armory/mask-t2.webp",
+      "evidence/armory/body-armor-t2.webp",
+      "evidence/armory/knee-pads-t2.webp",
+      "evidence/armory/backpack-t2.webp",
+      "evidence/armory/gloves-t2.webp",
+      "evidence/armory/holster-t2.webp"
+    ],
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "Long-term Effect",
+    "siteId": "gs-8",
+    "listOrder": 8,
+    "icon": "clock with a circular arrow",
+    "bonus2": "Skill Health +12.0%",
+    "bonus3": "Skill Duration +14.4%",
+    "bonus4": "Engineering +18.0%",
+    "armoryTiers": [
+      "T0",
+      "T1",
+      "T2"
+    ],
+    "sharesPiecesWith": [
+      "Mechanical Enemy",
+      "Jackpot",
+      "Dr. Medic"
+    ],
+    "armoryPieces": {
+      "T0": [
+        {
+          "slot": "Mask",
+          "name": "Rapid Deployment Mask"
+        },
+        {
+          "slot": "Body Armor",
+          "name": "Mechanized Infantry Armor"
+        },
+        {
+          "slot": "Knee Pads",
+          "name": "\"Tay\" Protective Pads v1"
+        },
+        {
+          "slot": "Backpack",
+          "name": "Demeter Quick-Stash"
+        },
+        {
+          "slot": "Gloves",
+          "name": "Hybrid FC Gloves"
+        },
+        {
+          "slot": "Holster",
+          "name": "Chamber Wolf TAC Holster"
+        }
+      ],
+      "T1": [
+        {
+          "slot": "Mask",
+          "name": "Timeless Guardian Mask"
+        },
+        {
+          "slot": "Body Armor",
+          "name": "Athena Missile Vest"
+        },
+        {
+          "slot": "Knee Pads",
+          "name": "Sundown Knee Guards"
+        },
+        {
+          "slot": "Backpack",
+          "name": "Ziba Low Profile Pack"
+        },
+        {
+          "slot": "Gloves",
+          "name": "Diamondback Gloves"
+        },
+        {
+          "slot": "Holster",
+          "name": "\"Morar\" Holster System"
+        }
+      ],
+      "T2": [
+        {
+          "slot": "Mask",
+          "name": "Protective Tactical Mask"
+        },
+        {
+          "slot": "Body Armor",
+          "name": "Chatzatz Chest"
+        },
+        {
+          "slot": "Knee Pads",
+          "name": "Urban Warfare Kneepads"
+        },
+        {
+          "slot": "Backpack",
+          "name": "Mountain Hiking Pack"
+        },
+        {
+          "slot": "Gloves",
+          "name": "\"Kote\" Hand Guards"
+        },
+        {
+          "slot": "Holster",
+          "name": "Jags Sidearm Mount"
+        }
+      ]
+    },
+    "sourcePanel": {
+      "visibleRows": [
+        "T2 High-End x6",
+        "T1 High-End x6",
+        "T0 High-End (row cut off, list continues)"
+      ],
+      "complete": false
+    },
+    "source": {
+      "recording": "Screen_Recording_20261028_201633_The_Division_Resurgence.mp4",
+      "seconds": [
+        20.75,
+        21.75
+      ]
+    },
+    "evidence": "evidence/gear-set-effects/long-term-effect.webp",
+    "armoryEvidence": [
+      "evidence/armory/mask-t0.webp",
+      "evidence/armory/body-armor-t0.webp",
+      "evidence/armory/knee-pads-t0.webp",
+      "evidence/armory/backpack-t0.webp",
+      "evidence/armory/gloves-t0.webp",
+      "evidence/armory/holster-t0.webp",
+      "evidence/armory/mask-t1.webp",
+      "evidence/armory/body-armor-t1.webp",
+      "evidence/armory/knee-pads-t1.webp",
+      "evidence/armory/backpack-t1.webp",
+      "evidence/armory/gloves-t1.webp",
+      "evidence/armory/holster-t1.webp",
+      "evidence/armory/mask-t2.webp",
+      "evidence/armory/body-armor-t2.webp",
+      "evidence/armory/knee-pads-t2.webp",
+      "evidence/armory/backpack-t2.webp",
+      "evidence/armory/gloves-t2.webp",
+      "evidence/armory/holster-t2.webp"
+    ],
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "Dr. Medic",
+    "siteId": "gs-9",
+    "listOrder": 9,
+    "icon": "microscope and pills",
+    "bonus2": "Healing Intensity +10.0%",
+    "bonus3": "Skill Intensity +9.0%",
+    "bonus4": "Release Extra Protection +20.0%",
+    "armoryTiers": [
+      "T1",
+      "T2"
+    ],
+    "sharesPiecesWith": [
+      "Mechanical Enemy",
+      "Jackpot",
+      "Long-term Effect"
+    ],
+    "armoryPieces": {
+      "T1": [
+        {
+          "slot": "Mask",
+          "name": "Timeless Guardian Mask"
+        },
+        {
+          "slot": "Body Armor",
+          "name": "Athena Missile Vest"
+        },
+        {
+          "slot": "Knee Pads",
+          "name": "Sundown Knee Guards"
+        },
+        {
+          "slot": "Backpack",
+          "name": "Ziba Low Profile Pack"
+        },
+        {
+          "slot": "Gloves",
+          "name": "Diamondback Gloves"
+        },
+        {
+          "slot": "Holster",
+          "name": "\"Morar\" Holster System"
+        }
+      ],
+      "T2": [
+        {
+          "slot": "Mask",
+          "name": "Protective Tactical Mask"
+        },
+        {
+          "slot": "Body Armor",
+          "name": "Chatzatz Chest"
+        },
+        {
+          "slot": "Knee Pads",
+          "name": "Urban Warfare Kneepads"
+        },
+        {
+          "slot": "Backpack",
+          "name": "Mountain Hiking Pack"
+        },
+        {
+          "slot": "Gloves",
+          "name": "\"Kote\" Hand Guards"
+        },
+        {
+          "slot": "Holster",
+          "name": "Jags Sidearm Mount"
+        }
+      ]
+    },
+    "sourcePanel": {
+      "visibleRows": [
+        "T2 High-End x6",
+        "T1 High-End x6",
+        "T2 Superior (row cut off, list continues)"
+      ],
+      "complete": false
+    },
+    "source": {
+      "recording": "Screen_Recording_20261028_201633_The_Division_Resurgence.mp4",
+      "seconds": [
+        24.0,
+        26.0
+      ]
+    },
+    "evidence": "evidence/gear-set-effects/dr-medic.webp",
+    "armoryEvidence": [
+      "evidence/armory/mask-t1.webp",
+      "evidence/armory/body-armor-t1.webp",
+      "evidence/armory/knee-pads-t1.webp",
+      "evidence/armory/backpack-t1.webp",
+      "evidence/armory/gloves-t1.webp",
+      "evidence/armory/holster-t1.webp",
+      "evidence/armory/mask-t2.webp",
+      "evidence/armory/body-armor-t2.webp",
+      "evidence/armory/knee-pads-t2.webp",
+      "evidence/armory/backpack-t2.webp",
+      "evidence/armory/gloves-t2.webp",
+      "evidence/armory/holster-t2.webp"
+    ],
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "Boom-Shakalaka",
+    "siteId": "gs-10",
+    "listOrder": 10,
+    "icon": "flame inside a burst",
+    "bonus2": "Skill Cooldown Recovery -6.0%",
+    "bonus3": "Skill Radius +18.0%",
+    "bonus4": "Skill Intensity +12.0%",
+    "armoryTiers": [
+      "T0",
+      "T1",
+      "T2"
+    ],
+    "sharesPiecesWith": [
+      "Phalanx Attack",
+      "Fire Cycle",
+      "Mechanical Expert"
+    ],
+    "armoryPieces": {
+      "T0": [
+        {
+          "slot": "Mask",
+          "name": "\"Maxillam\" Respirator"
+        },
+        {
+          "slot": "Body Armor",
+          "name": "Ranger Ballistics Vest"
+        },
+        {
+          "slot": "Knee Pads",
+          "name": "Dionysus Rounded Padding"
+        },
+        {
+          "slot": "Backpack",
+          "name": "RUSH72 Backpack"
+        },
+        {
+          "slot": "Gloves",
+          "name": "Blood Fang Gloves"
+        },
+        {
+          "slot": "Holster",
+          "name": "Armorer's Security Holster"
+        }
+      ],
+      "T1": [
+        {
+          "slot": "Mask",
+          "name": "Aphrodite Glint Concealer"
+        },
+        {
+          "slot": "Body Armor",
+          "name": "Flimsy Body Armor v2"
+        },
+        {
+          "slot": "Knee Pads",
+          "name": "HX 02"
+        },
+        {
+          "slot": "Backpack",
+          "name": "\"Horo\" CarryBack"
+        },
+        {
+          "slot": "Gloves",
+          "name": "\"Digits\" Finger Stabilizer"
+        },
+        {
+          "slot": "Holster",
+          "name": "Pridwen Holster"
+        }
+      ],
+      "T2": [
+        {
+          "slot": "Mask",
+          "name": "Javelina Mask"
+        },
+        {
+          "slot": "Body Armor",
+          "name": "Ops Armor"
+        },
+        {
+          "slot": "Knee Pads",
+          "name": "\"Patella\" Knee Cups"
+        },
+        {
+          "slot": "Backpack",
+          "name": "AMP24"
+        },
+        {
+          "slot": "Gloves",
+          "name": "\"Neptune\" Protection Gloves"
+        },
+        {
+          "slot": "Holster",
+          "name": "Jaivardhan Thigh Rig"
+        }
+      ]
+    },
+    "sourcePanel": {
+      "visibleRows": [
+        "T2 High-End x6",
+        "T1 High-End x6",
+        "T0 High-End (row cut off, list continues)"
+      ],
+      "complete": false
+    },
+    "source": {
+      "recording": "Screen_Recording_20261028_201633_The_Division_Resurgence.mp4",
+      "seconds": [
+        26.75,
+        28.25
+      ]
+    },
+    "evidence": "evidence/gear-set-effects/boom-shakalaka.webp",
+    "armoryEvidence": [
+      "evidence/armory/mask-t0.webp",
+      "evidence/armory/body-armor-t0.webp",
+      "evidence/armory/knee-pads-t0.webp",
+      "evidence/armory/backpack-t0.webp",
+      "evidence/armory/gloves-t0.webp",
+      "evidence/armory/holster-t0.webp",
+      "evidence/armory/mask-t1.webp",
+      "evidence/armory/body-armor-t1.webp",
+      "evidence/armory/knee-pads-t1.webp",
+      "evidence/armory/backpack-t1.webp",
+      "evidence/armory/gloves-t1.webp",
+      "evidence/armory/holster-t1.webp",
+      "evidence/armory/mask-t2.webp",
+      "evidence/armory/body-armor-t2.webp",
+      "evidence/armory/knee-pads-t2.webp",
+      "evidence/armory/backpack-t2.webp",
+      "evidence/armory/gloves-t2.webp",
+      "evidence/armory/holster-t2.webp"
+    ],
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "Fire Cycle",
+    "siteId": "gs-11",
+    "listOrder": 11,
+    "icon": "flame inside circular arrows",
+    "bonus2": "Skill Critical Damage +12.0%",
+    "bonus3": "Signature Ability Charge Efficiency +18.0%",
+    "bonus4": "Skill Multi-Shot Chance +12.0%",
+    "armoryTiers": [
+      "T2"
+    ],
+    "sharesPiecesWith": [
+      "Phalanx Attack",
+      "Boom-Shakalaka",
+      "Mechanical Expert"
+    ],
+    "armoryPieces": {
+      "T2": [
+        {
+          "slot": "Mask",
+          "name": "Javelina Mask"
+        },
+        {
+          "slot": "Body Armor",
+          "name": "Ops Armor"
+        },
+        {
+          "slot": "Knee Pads",
+          "name": "\"Patella\" Knee Cups"
+        },
+        {
+          "slot": "Backpack",
+          "name": "AMP24"
+        },
+        {
+          "slot": "Gloves",
+          "name": "\"Neptune\" Protection Gloves"
+        },
+        {
+          "slot": "Holster",
+          "name": "Jaivardhan Thigh Rig"
+        }
+      ]
+    },
+    "sourcePanel": {
+      "visibleRows": [
+        "T2 High-End x6",
+        "T2 Superior x6"
+      ],
+      "complete": true
+    },
+    "source": {
+      "recording": "Screen_Recording_20261028_201633_The_Division_Resurgence.mp4",
+      "seconds": [
+        29.25,
+        30.5
+      ]
+    },
+    "evidence": "evidence/gear-set-effects/fire-cycle.webp",
+    "armoryEvidence": [
+      "evidence/armory/mask-t2.webp",
+      "evidence/armory/body-armor-t2.webp",
+      "evidence/armory/knee-pads-t2.webp",
+      "evidence/armory/backpack-t2.webp",
+      "evidence/armory/gloves-t2.webp",
+      "evidence/armory/holster-t2.webp"
+    ],
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "Mechanical Expert",
+    "siteId": "gs-12",
+    "listOrder": 12,
+    "icon": "gear with crossed wrenches",
+    "bonus2": "Skill Duration +9.6%",
+    "bonus3": "Skill Cooldown Recovery -9.0%",
+    "bonus4": "Signature Ability Charge Efficiency +24.0%",
+    "armoryTiers": [
+      "T1",
+      "T2"
+    ],
+    "sharesPiecesWith": [
+      "Phalanx Attack",
+      "Boom-Shakalaka",
+      "Fire Cycle"
+    ],
+    "armoryPieces": {
+      "T1": [
+        {
+          "slot": "Mask",
+          "name": "Aphrodite Glint Concealer"
+        },
+        {
+          "slot": "Body Armor",
+          "name": "Flimsy Body Armor v2"
+        },
+        {
+          "slot": "Knee Pads",
+          "name": "HX 02"
+        },
+        {
+          "slot": "Backpack",
+          "name": "\"Horo\" CarryBack"
+        },
+        {
+          "slot": "Gloves",
+          "name": "\"Digits\" Finger Stabilizer"
+        },
+        {
+          "slot": "Holster",
+          "name": "Pridwen Holster"
+        }
+      ],
+      "T2": [
+        {
+          "slot": "Mask",
+          "name": "Javelina Mask"
+        },
+        {
+          "slot": "Body Armor",
+          "name": "Ops Armor"
+        },
+        {
+          "slot": "Knee Pads",
+          "name": "\"Patella\" Knee Cups"
+        },
+        {
+          "slot": "Backpack",
+          "name": "AMP24"
+        },
+        {
+          "slot": "Gloves",
+          "name": "\"Neptune\" Protection Gloves"
+        },
+        {
+          "slot": "Holster",
+          "name": "Jaivardhan Thigh Rig"
+        }
+      ]
+    },
+    "sourcePanel": {
+      "visibleRows": [
+        "T2 High-End x6",
+        "T1 High-End x6",
+        "T2 Superior (row cut off, list continues)"
+      ],
+      "complete": false
+    },
+    "source": {
+      "recording": "Screen_Recording_20261028_201633_The_Division_Resurgence.mp4",
+      "seconds": [
+        31.5,
+        32.75
+      ]
+    },
+    "evidence": "evidence/gear-set-effects/mechanical-expert.webp",
+    "armoryEvidence": [
+      "evidence/armory/mask-t1.webp",
+      "evidence/armory/body-armor-t1.webp",
+      "evidence/armory/knee-pads-t1.webp",
+      "evidence/armory/backpack-t1.webp",
+      "evidence/armory/gloves-t1.webp",
+      "evidence/armory/holster-t1.webp",
+      "evidence/armory/mask-t2.webp",
+      "evidence/armory/body-armor-t2.webp",
+      "evidence/armory/knee-pads-t2.webp",
+      "evidence/armory/backpack-t2.webp",
+      "evidence/armory/gloves-t2.webp",
+      "evidence/armory/holster-t2.webp"
+    ],
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "Captain Cow",
+    "siteId": "gs-13",
+    "listOrder": 13,
+    "icon": "first-aid kit and syringe",
+    "bonus2": "Movement Speed +3.6%",
+    "bonus3": "Skill Duration +14.4%",
+    "bonus4": "Healing Intensity +20.0%",
+    "armoryTiers": [
+      "T0",
+      "T1",
+      "T2"
+    ],
+    "sharesPiecesWith": [
+      "Healing Elites",
+      "Self-Propelled Shield",
+      "Fearless Warrior"
+    ],
+    "armoryPieces": {
+      "T0": [
+        {
+          "slot": "Mask",
+          "name": "Guardrail VI Facerig"
+        },
+        {
+          "slot": "Body Armor",
+          "name": "Stridsvast Combat Vest"
+        },
+        {
+          "slot": "Knee Pads",
+          "name": "\"Tay\" Protective Pads v2"
+        },
+        {
+          "slot": "Backpack",
+          "name": "Element Outdoors Rucksack"
+        },
+        {
+          "slot": "Gloves",
+          "name": "Hunter's Code Gloves"
+        },
+        {
+          "slot": "Holster",
+          "name": "Lock and Load Holster"
+        }
+      ],
+      "T1": [
+        {
+          "slot": "Mask",
+          "name": "Breathe-Easy Mask"
+        },
+        {
+          "slot": "Body Armor",
+          "name": "Phalanx Precision Vest"
+        },
+        {
+          "slot": "Knee Pads",
+          "name": "Mesa Knee Guards"
+        },
+        {
+          "slot": "Backpack",
+          "name": "Big Horn Pack"
+        },
+        {
+          "slot": "Gloves",
+          "name": "Phantom Saviour Gloves"
+        },
+        {
+          "slot": "Holster",
+          "name": "Artemis Fast Draw Holster"
+        }
+      ],
+      "T2": [
+        {
+          "slot": "Mask",
+          "name": "Half mask respirator"
+        },
+        {
+          "slot": "Body Armor",
+          "name": "\"Big Drum\" Body Armor"
+        },
+        {
+          "slot": "Knee Pads",
+          "name": "Pivot Pads"
+        },
+        {
+          "slot": "Backpack",
+          "name": "Roamer Pack \"Sow\""
+        },
+        {
+          "slot": "Gloves",
+          "name": "Gustavo Association Gloves"
+        },
+        {
+          "slot": "Holster",
+          "name": "Tepes Holster"
+        }
+      ]
+    },
+    "sourcePanel": {
+      "visibleRows": [
+        "T2 High-End x6",
+        "T1 High-End x6",
+        "T0 High-End (row cut off, list continues)"
+      ],
+      "complete": false
+    },
+    "source": {
+      "recording": "Screen_Recording_20261028_201633_The_Division_Resurgence.mp4",
+      "seconds": [
+        34.75,
+        36.0
+      ]
+    },
+    "evidence": "evidence/gear-set-effects/captain-cow.webp",
+    "armoryEvidence": [
+      "evidence/armory/mask-t0.webp",
+      "evidence/armory/body-armor-t0.webp",
+      "evidence/armory/knee-pads-t0.webp",
+      "evidence/armory/backpack-t0.webp",
+      "evidence/armory/gloves-t0.webp",
+      "evidence/armory/holster-t0.webp",
+      "evidence/armory/mask-t1.webp",
+      "evidence/armory/body-armor-t1.webp",
+      "evidence/armory/knee-pads-t1.webp",
+      "evidence/armory/backpack-t1.webp",
+      "evidence/armory/gloves-t1.webp",
+      "evidence/armory/holster-t1.webp",
+      "evidence/armory/mask-t2.webp",
+      "evidence/armory/body-armor-t2.webp",
+      "evidence/armory/knee-pads-t2.webp",
+      "evidence/armory/backpack-t2.webp",
+      "evidence/armory/gloves-t2.webp",
+      "evidence/armory/holster-t2.webp"
+    ],
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "Healing Elites",
+    "siteId": "gs-14",
+    "listOrder": 14,
+    "icon": "document with a cross and a small shield",
+    "bonus2": "Received Healing +14.4%",
+    "bonus3": "Release Extra Protection +15.0%",
+    "bonus4": "Armor +28.0%",
+    "armoryTiers": [
+      "T2"
+    ],
+    "sharesPiecesWith": [
+      "Captain Cow",
+      "Self-Propelled Shield",
+      "Fearless Warrior"
+    ],
+    "armoryPieces": {
+      "T2": [
+        {
+          "slot": "Mask",
+          "name": "Half mask respirator"
+        },
+        {
+          "slot": "Body Armor",
+          "name": "\"Big Drum\" Body Armor"
+        },
+        {
+          "slot": "Knee Pads",
+          "name": "Pivot Pads"
+        },
+        {
+          "slot": "Backpack",
+          "name": "Roamer Pack \"Sow\""
+        },
+        {
+          "slot": "Gloves",
+          "name": "Gustavo Association Gloves"
+        },
+        {
+          "slot": "Holster",
+          "name": "Tepes Holster"
+        }
+      ]
+    },
+    "sourcePanel": {
+      "visibleRows": [
+        "T2 High-End x6",
+        "T2 Superior x6"
+      ],
+      "complete": true
+    },
+    "source": {
+      "recording": "Screen_Recording_20261028_201633_The_Division_Resurgence.mp4",
+      "seconds": [
+        37.0,
+        38.25
+      ]
+    },
+    "evidence": "evidence/gear-set-effects/healing-elites.webp",
+    "armoryEvidence": [
+      "evidence/armory/mask-t2.webp",
+      "evidence/armory/body-armor-t2.webp",
+      "evidence/armory/knee-pads-t2.webp",
+      "evidence/armory/backpack-t2.webp",
+      "evidence/armory/gloves-t2.webp",
+      "evidence/armory/holster-t2.webp"
+    ],
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "Self-Propelled Shield",
+    "siteId": "gs-15",
+    "listOrder": 15,
+    "icon": "shield with a forward arrow",
+    "bonus2": "Armor +14.0%",
+    "bonus3": "Movement Speed +5.4%",
+    "bonus4": "Max Health +24.0%",
+    "armoryTiers": [
+      "T1",
+      "T2"
+    ],
+    "sharesPiecesWith": [
+      "Captain Cow",
+      "Healing Elites",
+      "Fearless Warrior"
+    ],
+    "armoryPieces": {
+      "T1": [
+        {
+          "slot": "Mask",
+          "name": "Breathe-Easy Mask"
+        },
+        {
+          "slot": "Body Armor",
+          "name": "Phalanx Precision Vest"
+        },
+        {
+          "slot": "Knee Pads",
+          "name": "Mesa Knee Guards"
+        },
+        {
+          "slot": "Backpack",
+          "name": "Big Horn Pack"
+        },
+        {
+          "slot": "Gloves",
+          "name": "Phantom Saviour Gloves"
+        },
+        {
+          "slot": "Holster",
+          "name": "Artemis Fast Draw Holster"
+        }
+      ],
+      "T2": [
+        {
+          "slot": "Mask",
+          "name": "Half mask respirator"
+        },
+        {
+          "slot": "Body Armor",
+          "name": "\"Big Drum\" Body Armor"
+        },
+        {
+          "slot": "Knee Pads",
+          "name": "Pivot Pads"
+        },
+        {
+          "slot": "Backpack",
+          "name": "Roamer Pack \"Sow\""
+        },
+        {
+          "slot": "Gloves",
+          "name": "Gustavo Association Gloves"
+        },
+        {
+          "slot": "Holster",
+          "name": "Tepes Holster"
+        }
+      ]
+    },
+    "sourcePanel": {
+      "visibleRows": [
+        "T2 High-End x6",
+        "T1 High-End x6",
+        "T2 Superior (row cut off, list continues)"
+      ],
+      "complete": false
+    },
+    "source": {
+      "recording": "Screen_Recording_20261028_201633_The_Division_Resurgence.mp4",
+      "seconds": [
+        39.25,
+        40.5
+      ],
+      "alsoShownAtSeconds": [
+        [
+          44.0,
+          44.5
+        ]
+      ]
+    },
+    "evidence": "evidence/gear-set-effects/self-propelled-shield.webp",
+    "armoryEvidence": [
+      "evidence/armory/mask-t1.webp",
+      "evidence/armory/body-armor-t1.webp",
+      "evidence/armory/knee-pads-t1.webp",
+      "evidence/armory/backpack-t1.webp",
+      "evidence/armory/gloves-t1.webp",
+      "evidence/armory/holster-t1.webp",
+      "evidence/armory/mask-t2.webp",
+      "evidence/armory/body-armor-t2.webp",
+      "evidence/armory/knee-pads-t2.webp",
+      "evidence/armory/backpack-t2.webp",
+      "evidence/armory/gloves-t2.webp",
+      "evidence/armory/holster-t2.webp"
+    ],
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "Fearless Warrior",
+    "siteId": "gs-16",
+    "listOrder": 16,
+    "icon": "shield with crossed wings",
+    "bonus2": "Damage Reduction +6.0%",
+    "bonus3": "Damage Bonus +9.0%",
+    "bonus4": "Toughness +18.0%",
+    "armoryTiers": [
+      "T0",
+      "T1",
+      "T2"
+    ],
+    "sharesPiecesWith": [
+      "Captain Cow",
+      "Healing Elites",
+      "Self-Propelled Shield"
+    ],
+    "armoryPieces": {
+      "T0": [
+        {
+          "slot": "Mask",
+          "name": "Guardrail VI Facerig"
+        },
+        {
+          "slot": "Body Armor",
+          "name": "Stridsvast Combat Vest"
+        },
+        {
+          "slot": "Knee Pads",
+          "name": "\"Tay\" Protective Pads v2"
+        },
+        {
+          "slot": "Backpack",
+          "name": "Element Outdoors Rucksack"
+        },
+        {
+          "slot": "Gloves",
+          "name": "Hunter's Code Gloves"
+        },
+        {
+          "slot": "Holster",
+          "name": "Lock and Load Holster"
+        }
+      ],
+      "T1": [
+        {
+          "slot": "Mask",
+          "name": "Breathe-Easy Mask"
+        },
+        {
+          "slot": "Body Armor",
+          "name": "Phalanx Precision Vest"
+        },
+        {
+          "slot": "Knee Pads",
+          "name": "Mesa Knee Guards"
+        },
+        {
+          "slot": "Backpack",
+          "name": "Big Horn Pack"
+        },
+        {
+          "slot": "Gloves",
+          "name": "Phantom Saviour Gloves"
+        },
+        {
+          "slot": "Holster",
+          "name": "Artemis Fast Draw Holster"
+        }
+      ],
+      "T2": [
+        {
+          "slot": "Mask",
+          "name": "Half mask respirator"
+        },
+        {
+          "slot": "Body Armor",
+          "name": "\"Big Drum\" Body Armor"
+        },
+        {
+          "slot": "Knee Pads",
+          "name": "Pivot Pads"
+        },
+        {
+          "slot": "Backpack",
+          "name": "Roamer Pack \"Sow\""
+        },
+        {
+          "slot": "Gloves",
+          "name": "Gustavo Association Gloves"
+        },
+        {
+          "slot": "Holster",
+          "name": "Tepes Holster"
+        }
+      ]
+    },
+    "sourcePanel": {
+      "visibleRows": [
+        "T2 High-End x6",
+        "T1 High-End x6",
+        "T0 High-End (row cut off, list continues)"
+      ],
+      "complete": false
+    },
+    "source": {
+      "recording": "Screen_Recording_20261028_201633_The_Division_Resurgence.mp4",
+      "seconds": [
+        41.75,
+        43.0
+      ]
+    },
+    "evidence": "evidence/gear-set-effects/fearless-warrior.webp",
+    "armoryEvidence": [
+      "evidence/armory/mask-t0.webp",
+      "evidence/armory/body-armor-t0.webp",
+      "evidence/armory/knee-pads-t0.webp",
+      "evidence/armory/backpack-t0.webp",
+      "evidence/armory/gloves-t0.webp",
+      "evidence/armory/holster-t0.webp",
+      "evidence/armory/mask-t1.webp",
+      "evidence/armory/body-armor-t1.webp",
+      "evidence/armory/knee-pads-t1.webp",
+      "evidence/armory/backpack-t1.webp",
+      "evidence/armory/gloves-t1.webp",
+      "evidence/armory/holster-t1.webp",
+      "evidence/armory/mask-t2.webp",
+      "evidence/armory/body-armor-t2.webp",
+      "evidence/armory/knee-pads-t2.webp",
+      "evidence/armory/backpack-t2.webp",
+      "evidence/armory/gloves-t2.webp",
+      "evidence/armory/holster-t2.webp"
+    ],
+    "checked": "2026-10-28"
+  }
+]

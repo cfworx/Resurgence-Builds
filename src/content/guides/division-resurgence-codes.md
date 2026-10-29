@@ -127,10 +127,12 @@ Live during the global launch window. Watch-time tiers, claimed through Twitch a
 
 | Watch time | Rewards |
 |---|---|
-| 30 min | Canadian Tuxedo Shoes, Canadian Tuxedo Hat, Guardrail V Facerig, Phoenix Credits |
-| 60 min | Canadian Tuxedo Pants, Blood Fangs Gloves, Phoenix Credits, Dionysus Rounded Padding |
+| 30 min | Canadian Tuxedo Shoes, Canadian Tuxedo Hat, Guardrail VI Facerig, Phoenix Credits |
+| 60 min | Canadian Tuxedo Pants, Blood Fang Gloves, Phoenix Credits, Dionysus Rounded Padding |
 | 90 min | Canadian Tuxedo Top, SU Lock and Load Holster, SRS-A1 Weapon, Phoenix Credits |
-| 120 min | Canadian Tuxedo Outerwear, High-End T0 Weapon Cache, Phoenix Credits, Ranger Ballistic Vest |
+| 120 min | Canadian Tuxedo Outerwear, High-End T0 Weapon Cache, Phoenix Credits, Ranger Ballistics Vest |
+
+Gear names follow the in-game Armory's spelling (GamingonPhone wrote "Guardrail V Facerig", "Blood Fangs Gloves" and "Ranger Ballistic Vest"). All five gear pieces sit on the Armory's T0 pages.
 
 ### Launch Week Auto-Grant
 

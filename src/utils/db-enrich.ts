@@ -3,6 +3,7 @@
 // build guides on this site that mention it.
 import { getCollection } from 'astro:content';
 import dropRates from '../data/drop-rates.json';
+import gearSetData from '../data/gear-set-effects.json';
 
 export type DbKind = 'os-protocol' | 'exotic-weapon' | 'skill-mod' | 'gear-set' | 'weapon-talent' | 'weapon';
 type Item = { tier: string; item: string; amount: string; chance: string };
@@ -82,4 +83,46 @@ export async function buildsMentioning(kind: DbKind, name: string): Promise<Buil
     })
     .map((b) => ({ title: b.data.title, url: `/builds/${b.id}/`, specialization: b.data.specialization, verified: b.data.verified !== false, patch: /^\d/.test(b.data.patch) ? `Patch ${b.data.patch}` : b.data.patch }))
     .sort((a, b) => Number(b.verified) - Number(a.verified) || a.title.localeCompare(b.title));
+}
+
+// Gear set slots in a build's planner link: mask, chest, knee pads, backpack ("pack"), gloves, holster.
+const SET_SLOT_KEYS = ['ms', 'cs', 'ks', 'ps', 'gs', 'hs'];
+const setNames = new Map((gearSetData as { id: string; name: string }[]).map((s) => [s.id, s.name]));
+
+export type SetLoadout = {
+  title: string; url: string; specialization: string; creator: string | null; verified: boolean;
+  /** Pieces per gear set id, from the build's planner link. */
+  pieces: Map<string, number>;
+};
+
+/** Every build guide's gear set split, read from its planner link (the loadout the guide documents). */
+export async function buildSetLoadouts(): Promise<SetLoadout[]> {
+  const builds = await getCollection('builds');
+  const out: SetLoadout[] = [];
+  for (const b of builds) {
+    if (!b.data.plannerHash) continue;
+    const q = new URLSearchParams(b.data.plannerHash);
+    const pieces = new Map<string, number>();
+    for (const k of SET_SLOT_KEYS) {
+      const id = q.get(k);
+      if (id && setNames.has(id)) pieces.set(id, (pieces.get(id) || 0) + 1);
+    }
+    if (pieces.size === 0) continue;
+    const via = b.data.author.match(/via\s+([^)]+?)\)?\s*$/);
+    out.push({ title: b.data.title, url: `/builds/${b.id}/`, specialization: b.data.specialization, creator: via ? via[1].trim() : null, verified: b.data.verified !== false, pieces });
+  }
+  return out;
+}
+
+export type SetWearer = { title: string; url: string; specialization: string; creator: string | null; pieces: number; partner: string | null; partnerPieces: number };
+
+/** Build guides whose loadout wears this gear set: how many pieces, and the set worn beside it. */
+export async function buildsWearingSet(setId: string): Promise<SetWearer[]> {
+  return (await buildSetLoadouts())
+    .filter((l) => l.pieces.has(setId))
+    .map((l) => {
+      const other = [...l.pieces.entries()].filter(([id]) => id !== setId).sort((a, b) => b[1] - a[1])[0];
+      return { title: l.title, url: l.url, specialization: l.specialization, creator: l.creator, pieces: l.pieces.get(setId) || 0, partner: other ? setNames.get(other[0]) || null : null, partnerPieces: other ? other[1] : 0 };
+    })
+    .sort((a, b) => b.pieces - a.pieces || a.title.localeCompare(b.title));
 }

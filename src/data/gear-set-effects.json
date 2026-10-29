@@ -4,111 +4,195 @@
     "name": "Fury Strike",
     "bonus2": "Optimal Range +10.0%",
     "bonus3": "Weapon Critical Hit Chance +10.8%",
-    "bonus4": "Weapon Critical Hit Damage +24.0%"
+    "bonus4": "Weapon Critical Hit Damage +24.0%",
+    "tiers": [
+      "T0",
+      "T1",
+      "T2"
+    ],
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "gs-2",
     "name": "Quick Draw",
     "bonus2": "Reload Speed +12.0%",
     "bonus3": "Magazine Size +27.0%",
-    "bonus4": "Headshot Damage +28.8%"
+    "bonus4": "Headshot Damage +28.8%",
+    "tiers": [
+      "T0",
+      "T1",
+      "T2"
+    ],
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "gs-3",
     "name": "Phalanx Attack",
     "bonus2": "Magazine Size +18.0%",
     "bonus3": "Rate of Fire +18.0%",
-    "bonus4": "Weapon Multi-Shot Chance +12.0%"
+    "bonus4": "Weapon Multi-Shot Chance +12.0%",
+    "tiers": [
+      "T0",
+      "T1",
+      "T2"
+    ],
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "gs-4",
     "name": "One Shot One Kill",
     "bonus2": "Accuracy +24.0%",
     "bonus3": "Headshot Damage +21.6%",
-    "bonus4": "Firepower +18.0%"
+    "bonus4": "Firepower +18.0%",
+    "tiers": [
+      "T1",
+      "T2"
+    ],
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "gs-5",
     "name": "Gunny Johnny",
     "bonus2": "Rate of Fire +12.0%",
     "bonus3": "Reload Speed +18.0%",
-    "bonus4": "Weapon Damage +12.0%"
+    "bonus4": "Weapon Damage +12.0%",
+    "tiers": [
+      "T2"
+    ],
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "gs-6",
     "name": "Mechanical Enemy",
     "bonus2": "Weapon Critical Hit Chance +7.2%",
     "bonus3": "Optimal Range +15.0%",
-    "bonus4": "Skill Cooldown Recovery -12.0%"
+    "bonus4": "Skill Cooldown Recovery -12.0%",
+    "tiers": [
+      "T2"
+    ],
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "gs-7",
     "name": "Jackpot",
     "bonus2": "Skill Radius +12.0%",
     "bonus3": "Skill Critical Chance +10.8%",
-    "bonus4": "Skill Critical Damage +24.0%"
+    "bonus4": "Skill Critical Damage +24.0%",
+    "tiers": [
+      "T0",
+      "T1",
+      "T2"
+    ],
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "gs-8",
     "name": "Long-term Effect",
     "bonus2": "Skill Health +12.0%",
     "bonus3": "Skill Duration +14.4%",
-    "bonus4": "Engineering +18.0%"
+    "bonus4": "Engineering +18.0%",
+    "tiers": [
+      "T0",
+      "T1",
+      "T2"
+    ],
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "gs-9",
     "name": "Dr. Medic",
     "bonus2": "Healing Intensity +10.0%",
     "bonus3": "Skill Intensity +9.0%",
-    "bonus4": "Release Extra Protection +20.0%"
+    "bonus4": "Release Extra Protection +20.0%",
+    "tiers": [
+      "T1",
+      "T2"
+    ],
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "gs-10",
     "name": "Boom-Shakalaka",
     "bonus2": "Skill Cooldown Recovery -6.0%",
     "bonus3": "Skill Radius +18.0%",
-    "bonus4": "Skill Intensity +12.0%"
+    "bonus4": "Skill Intensity +12.0%",
+    "tiers": [
+      "T0",
+      "T1",
+      "T2"
+    ],
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "gs-11",
     "name": "Fire Cycle",
     "bonus2": "Skill Critical Damage +12.0%",
     "bonus3": "Signature Ability Charge Efficiency +18.0%",
-    "bonus4": "Skill Multi-Shot Chance +12.0%"
+    "bonus4": "Skill Multi-Shot Chance +12.0%",
+    "tiers": [
+      "T2"
+    ],
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "gs-12",
     "name": "Mechanical Expert",
     "bonus2": "Skill Duration +9.6%",
     "bonus3": "Skill Cooldown Recovery -9.0%",
-    "bonus4": "Signature Ability Charge Efficiency +24.0%"
+    "bonus4": "Signature Ability Charge Efficiency +24.0%",
+    "tiers": [
+      "T1",
+      "T2"
+    ],
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "gs-13",
     "name": "Captain Cow",
     "bonus2": "Movement Speed +3.6%",
     "bonus3": "Skill Duration +14.4%",
-    "bonus4": "Healing Intensity +20.0%"
+    "bonus4": "Healing Intensity +20.0%",
+    "tiers": [
+      "T0",
+      "T1",
+      "T2"
+    ],
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "gs-14",
     "name": "Healing Elites",
     "bonus2": "Received Healing +14.4%",
     "bonus3": "Release Extra Protection +15.0%",
-    "bonus4": "Armor +28.0%"
+    "bonus4": "Armor +28.0%",
+    "tiers": [
+      "T2"
+    ],
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "gs-15",
     "name": "Self-Propelled Shield",
     "bonus2": "Armor +14.0%",
     "bonus3": "Movement Speed +5.4%",
-    "bonus4": "Max Health +24.0%"
+    "bonus4": "Max Health +24.0%",
+    "tiers": [
+      "T1",
+      "T2"
+    ],
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "gs-16",
     "name": "Fearless Warrior",
     "bonus2": "Damage Reduction +6.0%",
     "bonus3": "Damage Bonus +9.0%",
-    "bonus4": "Toughness +18.0%"
+    "bonus4": "Toughness +18.0%",
+    "tiers": [
+      "T0",
+      "T1",
+      "T2"
+    ],
+    "verifiedInGame": "2026-10-28"
   }
 ]

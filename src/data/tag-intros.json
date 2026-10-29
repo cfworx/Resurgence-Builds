@@ -67,7 +67,7 @@
   "fire-cycle": {
     "slug": "fire-cycle",
     "title": "Fire Cycle",
-    "intro": "Fire Cycle is a Tier 2 gear set that formed the backbone of the Demolitionist meta when we last tested it (Patch 1.1.2.2). The 4-piece bonus grants +12% Skill Multi-Shot Chance passively, with no conditions or positioning requirements. Combined with Toymaker II and sub-attribute stacking, Fire Cycle pushes Skill Multi-Shot Chance into the 35-45% range. PVE Enjoyer says the set only drops from T2 content, and gives Conflicts Level 100 or a T2 PvE unlock as the gate. If you're not there yet, 4pc Jackpot is the bridge."
+    "intro": "Fire Cycle is a Tier 2 gear set that formed the backbone of the Demolitionist meta when we last tested it (Patch 1.1.2.2). The 4-piece bonus grants +12% Skill Multi-Shot Chance passively, with no conditions or positioning requirements. Combined with Toymaker II and sub-attribute stacking, Fire Cycle pushes Skill Multi-Shot Chance into the 35-45% range. PVE Enjoyer says the set only drops from T2 content, and the in-game Armory agrees: only T2 pieces can roll it (checked October 28, 2026). He gives Conflicts Level 100 or a T2 PvE unlock as the gate. If you're not there yet, 4pc Jackpot is the bridge."
   },
   "pressing-matter": {
     "slug": "pressing-matter",
@@ -77,7 +77,7 @@
   "jackpot": {
     "slug": "jackpot",
     "title": "Jackpot",
-    "intro": "Jackpot is a gear set that stacks Skill Critical stats. The 2-piece bonus gives +12% Skill Radius, the 3-piece adds +10.8% Skill Critical Chance, and the 4-piece grants +24% Skill Critical Damage. It's the universal skill build gear set: it works on every class and every skill archetype. 4pc Jackpot is the recommended bridge build for Demolitionist players who haven't unlocked Fire Cycle T2 yet."
+    "intro": "Jackpot is a gear set that stacks Skill Critical stats. The 2-piece bonus gives +12% Skill Radius, the 3-piece adds +10.8% Skill Critical Chance, and the 4-piece grants +24% Skill Critical Damage. It's the universal skill build gear set: it works on every class and every skill archetype. It also rolls on T0, T1 and T2 gear, which is why 4pc Jackpot is the recommended bridge build for Demolitionist players who haven't unlocked Fire Cycle T2 yet."
   },
   "os-protocol": {
     "slug": "os-protocol",

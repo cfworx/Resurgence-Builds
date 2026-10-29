@@ -4,6 +4,11 @@
     "slot": "Holster",
     "armoryTier": "T0",
     "season": "Season 1",
+    "gearSets": [
+      "Jackpot",
+      "Long-term Effect"
+    ],
+    "gearSetFamily": "B",
     "source": {
       "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
       "seconds": [
@@ -19,6 +24,11 @@
     "slot": "Holster",
     "armoryTier": "T0",
     "season": "Season 1",
+    "gearSets": [
+      "Phalanx Attack",
+      "Boom-Shakalaka"
+    ],
+    "gearSetFamily": "C",
     "source": {
       "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
       "seconds": [
@@ -34,6 +44,11 @@
     "slot": "Holster",
     "armoryTier": "T0",
     "season": "Season 1",
+    "gearSets": [
+      "Fury Strike",
+      "Quick Draw"
+    ],
+    "gearSetFamily": "A",
     "source": {
       "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
       "seconds": [
@@ -49,6 +64,11 @@
     "slot": "Holster",
     "armoryTier": "T0",
     "season": "Season 1",
+    "gearSets": [
+      "Captain Cow",
+      "Fearless Warrior"
+    ],
+    "gearSetFamily": "D",
     "source": {
       "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
       "seconds": [
@@ -64,6 +84,12 @@
     "slot": "Holster",
     "armoryTier": "T1",
     "season": "Season 1",
+    "gearSets": [
+      "Fury Strike",
+      "Quick Draw",
+      "One Shot One Kill"
+    ],
+    "gearSetFamily": "A",
     "source": {
       "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
       "seconds": [
@@ -79,6 +105,12 @@
     "slot": "Holster",
     "armoryTier": "T1",
     "season": "Season 1",
+    "gearSets": [
+      "Phalanx Attack",
+      "Boom-Shakalaka",
+      "Mechanical Expert"
+    ],
+    "gearSetFamily": "C",
     "source": {
       "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
       "seconds": [
@@ -94,6 +126,12 @@
     "slot": "Holster",
     "armoryTier": "T1",
     "season": "Season 1",
+    "gearSets": [
+      "Jackpot",
+      "Long-term Effect",
+      "Dr. Medic"
+    ],
+    "gearSetFamily": "B",
     "source": {
       "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
       "seconds": [
@@ -109,6 +147,12 @@
     "slot": "Holster",
     "armoryTier": "T1",
     "season": "Season 1",
+    "gearSets": [
+      "Captain Cow",
+      "Self-Propelled Shield",
+      "Fearless Warrior"
+    ],
+    "gearSetFamily": "D",
     "source": {
       "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
       "seconds": [
@@ -124,6 +168,13 @@
     "slot": "Holster",
     "armoryTier": "T2",
     "season": "Season 1",
+    "gearSets": [
+      "Mechanical Enemy",
+      "Jackpot",
+      "Long-term Effect",
+      "Dr. Medic"
+    ],
+    "gearSetFamily": "B",
     "source": {
       "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
       "seconds": [
@@ -139,6 +190,13 @@
     "slot": "Holster",
     "armoryTier": "T2",
     "season": "Season 1",
+    "gearSets": [
+      "Fury Strike",
+      "Quick Draw",
+      "One Shot One Kill",
+      "Gunny Johnny"
+    ],
+    "gearSetFamily": "A",
     "source": {
       "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
       "seconds": [
@@ -154,6 +212,13 @@
     "slot": "Holster",
     "armoryTier": "T2",
     "season": "Season 1",
+    "gearSets": [
+      "Phalanx Attack",
+      "Boom-Shakalaka",
+      "Fire Cycle",
+      "Mechanical Expert"
+    ],
+    "gearSetFamily": "C",
     "source": {
       "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
       "seconds": [
@@ -169,6 +234,13 @@
     "slot": "Holster",
     "armoryTier": "T2",
     "season": "Season 1",
+    "gearSets": [
+      "Captain Cow",
+      "Healing Elites",
+      "Self-Propelled Shield",
+      "Fearless Warrior"
+    ],
+    "gearSetFamily": "D",
     "source": {
       "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
       "seconds": [
@@ -184,6 +256,11 @@
     "slot": "Gloves",
     "armoryTier": "T0",
     "season": "Season 1",
+    "gearSets": [
+      "Fury Strike",
+      "Quick Draw"
+    ],
+    "gearSetFamily": "A",
     "source": {
       "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
       "seconds": [
@@ -199,6 +276,11 @@
     "slot": "Gloves",
     "armoryTier": "T0",
     "season": "Season 1",
+    "gearSets": [
+      "Phalanx Attack",
+      "Boom-Shakalaka"
+    ],
+    "gearSetFamily": "C",
     "source": {
       "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
       "seconds": [
@@ -214,6 +296,11 @@
     "slot": "Gloves",
     "armoryTier": "T0",
     "season": "Season 1",
+    "gearSets": [
+      "Jackpot",
+      "Long-term Effect"
+    ],
+    "gearSetFamily": "B",
     "source": {
       "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
       "seconds": [
@@ -229,6 +316,11 @@
     "slot": "Gloves",
     "armoryTier": "T0",
     "season": "Season 1",
+    "gearSets": [
+      "Captain Cow",
+      "Fearless Warrior"
+    ],
+    "gearSetFamily": "D",
     "source": {
       "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
       "seconds": [
@@ -244,6 +336,12 @@
     "slot": "Gloves",
     "armoryTier": "T1",
     "season": "Season 1",
+    "gearSets": [
+      "Jackpot",
+      "Long-term Effect",
+      "Dr. Medic"
+    ],
+    "gearSetFamily": "B",
     "source": {
       "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
       "seconds": [
@@ -259,6 +357,12 @@
     "slot": "Gloves",
     "armoryTier": "T1",
     "season": "Season 1",
+    "gearSets": [
+      "Captain Cow",
+      "Self-Propelled Shield",
+      "Fearless Warrior"
+    ],
+    "gearSetFamily": "D",
     "source": {
       "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
       "seconds": [
@@ -274,6 +378,12 @@
     "slot": "Gloves",
     "armoryTier": "T1",
     "season": "Season 1",
+    "gearSets": [
+      "Fury Strike",
+      "Quick Draw",
+      "One Shot One Kill"
+    ],
+    "gearSetFamily": "A",
     "source": {
       "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
       "seconds": [
@@ -289,6 +399,12 @@
     "slot": "Gloves",
     "armoryTier": "T1",
     "season": "Season 1",
+    "gearSets": [
+      "Phalanx Attack",
+      "Boom-Shakalaka",
+      "Mechanical Expert"
+    ],
+    "gearSetFamily": "C",
     "source": {
       "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
       "seconds": [
@@ -304,6 +420,13 @@
     "slot": "Gloves",
     "armoryTier": "T2",
     "season": "Season 1",
+    "gearSets": [
+      "Mechanical Enemy",
+      "Jackpot",
+      "Long-term Effect",
+      "Dr. Medic"
+    ],
+    "gearSetFamily": "B",
     "source": {
       "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
       "seconds": [
@@ -319,6 +442,13 @@
     "slot": "Gloves",
     "armoryTier": "T2",
     "season": "Season 1",
+    "gearSets": [
+      "Fury Strike",
+      "Quick Draw",
+      "One Shot One Kill",
+      "Gunny Johnny"
+    ],
+    "gearSetFamily": "A",
     "source": {
       "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
       "seconds": [
@@ -334,6 +464,13 @@
     "slot": "Gloves",
     "armoryTier": "T2",
     "season": "Season 1",
+    "gearSets": [
+      "Phalanx Attack",
+      "Boom-Shakalaka",
+      "Fire Cycle",
+      "Mechanical Expert"
+    ],
+    "gearSetFamily": "C",
     "source": {
       "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
       "seconds": [
@@ -349,6 +486,13 @@
     "slot": "Gloves",
     "armoryTier": "T2",
     "season": "Season 1",
+    "gearSets": [
+      "Captain Cow",
+      "Healing Elites",
+      "Self-Propelled Shield",
+      "Fearless Warrior"
+    ],
+    "gearSetFamily": "D",
     "source": {
       "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
       "seconds": [
@@ -364,6 +508,11 @@
     "slot": "Backpack",
     "armoryTier": "T0",
     "season": "Season 1",
+    "gearSets": [
+      "Jackpot",
+      "Long-term Effect"
+    ],
+    "gearSetFamily": "B",
     "source": {
       "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
       "seconds": [
@@ -379,6 +528,11 @@
     "slot": "Backpack",
     "armoryTier": "T0",
     "season": "Season 1",
+    "gearSets": [
+      "Fury Strike",
+      "Quick Draw"
+    ],
+    "gearSetFamily": "A",
     "source": {
       "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
       "seconds": [
@@ -394,6 +548,11 @@
     "slot": "Backpack",
     "armoryTier": "T0",
     "season": "Season 1",
+    "gearSets": [
+      "Captain Cow",
+      "Fearless Warrior"
+    ],
+    "gearSetFamily": "D",
     "source": {
       "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
       "seconds": [
@@ -409,6 +568,11 @@
     "slot": "Backpack",
     "armoryTier": "T0",
     "season": "Season 1",
+    "gearSets": [
+      "Phalanx Attack",
+      "Boom-Shakalaka"
+    ],
+    "gearSetFamily": "C",
     "source": {
       "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
       "seconds": [
@@ -424,6 +588,12 @@
     "slot": "Backpack",
     "armoryTier": "T1",
     "season": "Season 1",
+    "gearSets": [
+      "Jackpot",
+      "Long-term Effect",
+      "Dr. Medic"
+    ],
+    "gearSetFamily": "B",
     "source": {
       "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
       "seconds": [
@@ -439,6 +609,12 @@
     "slot": "Backpack",
     "armoryTier": "T1",
     "season": "Season 1",
+    "gearSets": [
+      "Fury Strike",
+      "Quick Draw",
+      "One Shot One Kill"
+    ],
+    "gearSetFamily": "A",
     "source": {
       "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
       "seconds": [
@@ -454,6 +630,12 @@
     "slot": "Backpack",
     "armoryTier": "T1",
     "season": "Season 1",
+    "gearSets": [
+      "Captain Cow",
+      "Self-Propelled Shield",
+      "Fearless Warrior"
+    ],
+    "gearSetFamily": "D",
     "source": {
       "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
       "seconds": [
@@ -469,6 +651,12 @@
     "slot": "Backpack",
     "armoryTier": "T1",
     "season": "Season 1",
+    "gearSets": [
+      "Phalanx Attack",
+      "Boom-Shakalaka",
+      "Mechanical Expert"
+    ],
+    "gearSetFamily": "C",
     "source": {
       "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
       "seconds": [
@@ -484,6 +672,13 @@
     "slot": "Backpack",
     "armoryTier": "T2",
     "season": "Season 1",
+    "gearSets": [
+      "Mechanical Enemy",
+      "Jackpot",
+      "Long-term Effect",
+      "Dr. Medic"
+    ],
+    "gearSetFamily": "B",
     "source": {
       "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
       "seconds": [
@@ -499,6 +694,13 @@
     "slot": "Backpack",
     "armoryTier": "T2",
     "season": "Season 1",
+    "gearSets": [
+      "Fury Strike",
+      "Quick Draw",
+      "One Shot One Kill",
+      "Gunny Johnny"
+    ],
+    "gearSetFamily": "A",
     "source": {
       "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
       "seconds": [
@@ -514,6 +716,13 @@
     "slot": "Backpack",
     "armoryTier": "T2",
     "season": "Season 1",
+    "gearSets": [
+      "Phalanx Attack",
+      "Boom-Shakalaka",
+      "Fire Cycle",
+      "Mechanical Expert"
+    ],
+    "gearSetFamily": "C",
     "source": {
       "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
       "seconds": [
@@ -529,6 +738,13 @@
     "slot": "Backpack",
     "armoryTier": "T2",
     "season": "Season 1",
+    "gearSets": [
+      "Captain Cow",
+      "Healing Elites",
+      "Self-Propelled Shield",
+      "Fearless Warrior"
+    ],
+    "gearSetFamily": "D",
     "source": {
       "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
       "seconds": [
@@ -544,6 +760,11 @@
     "slot": "Knee Pads",
     "armoryTier": "T0",
     "season": "Season 1",
+    "gearSets": [
+      "Fury Strike",
+      "Quick Draw"
+    ],
+    "gearSetFamily": "A",
     "source": {
       "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
       "seconds": [
@@ -559,6 +780,11 @@
     "slot": "Knee Pads",
     "armoryTier": "T0",
     "season": "Season 1",
+    "gearSets": [
+      "Captain Cow",
+      "Fearless Warrior"
+    ],
+    "gearSetFamily": "D",
     "source": {
       "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
       "seconds": [
@@ -567,13 +793,19 @@
       ]
     },
     "evidence": "evidence/armory/knee-pads-t0.webp",
-    "checked": "2026-10-28"
+    "checked": "2026-10-28",
+    "gearSetsNote": "Set icons partly hidden by the model; the Fearless Warrior icon is readable, and it is the one T0 knee pad left after the other three."
   },
   {
     "name": "\"Tay\" Protective Pads v1",
     "slot": "Knee Pads",
     "armoryTier": "T0",
     "season": "Season 1",
+    "gearSets": [
+      "Jackpot",
+      "Long-term Effect"
+    ],
+    "gearSetFamily": "B",
     "source": {
       "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
       "seconds": [
@@ -589,6 +821,11 @@
     "slot": "Knee Pads",
     "armoryTier": "T0",
     "season": "Season 1",
+    "gearSets": [
+      "Phalanx Attack",
+      "Boom-Shakalaka"
+    ],
+    "gearSetFamily": "C",
     "source": {
       "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
       "seconds": [
@@ -604,6 +841,12 @@
     "slot": "Knee Pads",
     "armoryTier": "T1",
     "season": "Season 1",
+    "gearSets": [
+      "Jackpot",
+      "Long-term Effect",
+      "Dr. Medic"
+    ],
+    "gearSetFamily": "B",
     "source": {
       "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
       "seconds": [
@@ -619,6 +862,12 @@
     "slot": "Knee Pads",
     "armoryTier": "T1",
     "season": "Season 1",
+    "gearSets": [
+      "Fury Strike",
+      "Quick Draw",
+      "One Shot One Kill"
+    ],
+    "gearSetFamily": "A",
     "source": {
       "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
       "seconds": [
@@ -634,6 +883,12 @@
     "slot": "Knee Pads",
     "armoryTier": "T1",
     "season": "Season 1",
+    "gearSets": [
+      "Phalanx Attack",
+      "Boom-Shakalaka",
+      "Mechanical Expert"
+    ],
+    "gearSetFamily": "C",
     "source": {
       "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
       "seconds": [
@@ -649,6 +904,12 @@
     "slot": "Knee Pads",
     "armoryTier": "T1",
     "season": "Season 1",
+    "gearSets": [
+      "Captain Cow",
+      "Self-Propelled Shield",
+      "Fearless Warrior"
+    ],
+    "gearSetFamily": "D",
     "source": {
       "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
       "seconds": [
@@ -664,6 +925,13 @@
     "slot": "Knee Pads",
     "armoryTier": "T2",
     "season": "Season 1",
+    "gearSets": [
+      "Captain Cow",
+      "Healing Elites",
+      "Self-Propelled Shield",
+      "Fearless Warrior"
+    ],
+    "gearSetFamily": "D",
     "source": {
       "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
       "seconds": [
@@ -679,6 +947,13 @@
     "slot": "Knee Pads",
     "armoryTier": "T2",
     "season": "Season 1",
+    "gearSets": [
+      "Mechanical Enemy",
+      "Jackpot",
+      "Long-term Effect",
+      "Dr. Medic"
+    ],
+    "gearSetFamily": "B",
     "source": {
       "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
       "seconds": [
@@ -694,6 +969,13 @@
     "slot": "Knee Pads",
     "armoryTier": "T2",
     "season": "Season 1",
+    "gearSets": [
+      "Fury Strike",
+      "Quick Draw",
+      "One Shot One Kill",
+      "Gunny Johnny"
+    ],
+    "gearSetFamily": "A",
     "source": {
       "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
       "seconds": [
@@ -709,6 +991,13 @@
     "slot": "Knee Pads",
     "armoryTier": "T2",
     "season": "Season 1",
+    "gearSets": [
+      "Phalanx Attack",
+      "Boom-Shakalaka",
+      "Fire Cycle",
+      "Mechanical Expert"
+    ],
+    "gearSetFamily": "C",
     "source": {
       "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
       "seconds": [
@@ -724,6 +1013,11 @@
     "slot": "Body Armor",
     "armoryTier": "T0",
     "season": "Season 1",
+    "gearSets": [
+      "Captain Cow",
+      "Fearless Warrior"
+    ],
+    "gearSetFamily": "D",
     "source": {
       "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
       "seconds": [
@@ -732,13 +1026,19 @@
       ]
     },
     "evidence": "evidence/armory/body-armor-t0.webp",
-    "checked": "2026-10-28"
+    "checked": "2026-10-28",
+    "gearSetsNote": "The vest model hides its set icons on the Armory page. Placed by elimination (the other three T0 vests show theirs) and by the T0 row of the Captain Cow and Fearless Warrior Source panels, which shows this grey vest."
   },
   {
     "name": "Mechanized Infantry Armor",
     "slot": "Body Armor",
     "armoryTier": "T0",
     "season": "Season 1",
+    "gearSets": [
+      "Jackpot",
+      "Long-term Effect"
+    ],
+    "gearSetFamily": "B",
     "source": {
       "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
       "seconds": [
@@ -754,6 +1054,11 @@
     "slot": "Body Armor",
     "armoryTier": "T0",
     "season": "Season 1",
+    "gearSets": [
+      "Fury Strike",
+      "Quick Draw"
+    ],
+    "gearSetFamily": "A",
     "source": {
       "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
       "seconds": [
@@ -769,6 +1074,11 @@
     "slot": "Body Armor",
     "armoryTier": "T0",
     "season": "Season 1",
+    "gearSets": [
+      "Phalanx Attack",
+      "Boom-Shakalaka"
+    ],
+    "gearSetFamily": "C",
     "source": {
       "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
       "seconds": [
@@ -777,13 +1087,20 @@
       ]
     },
     "evidence": "evidence/armory/body-armor-t0.webp",
-    "checked": "2026-10-28"
+    "checked": "2026-10-28",
+    "gearSetsNote": "Set icons partly hidden by the model; the Boom-Shakalaka and Phalanx Attack icons are readable on a brightened frame, and the T0 row of those sets' Source panels shows this tan vest."
   },
   {
     "name": "Athena Missile Vest",
     "slot": "Body Armor",
     "armoryTier": "T1",
     "season": "Season 1",
+    "gearSets": [
+      "Jackpot",
+      "Long-term Effect",
+      "Dr. Medic"
+    ],
+    "gearSetFamily": "B",
     "source": {
       "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
       "seconds": [
@@ -799,6 +1116,12 @@
     "slot": "Body Armor",
     "armoryTier": "T1",
     "season": "Season 1",
+    "gearSets": [
+      "Fury Strike",
+      "Quick Draw",
+      "One Shot One Kill"
+    ],
+    "gearSetFamily": "A",
     "source": {
       "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
       "seconds": [
@@ -814,6 +1137,12 @@
     "slot": "Body Armor",
     "armoryTier": "T1",
     "season": "Season 1",
+    "gearSets": [
+      "Phalanx Attack",
+      "Boom-Shakalaka",
+      "Mechanical Expert"
+    ],
+    "gearSetFamily": "C",
     "source": {
       "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
       "seconds": [
@@ -829,6 +1158,12 @@
     "slot": "Body Armor",
     "armoryTier": "T1",
     "season": "Season 1",
+    "gearSets": [
+      "Captain Cow",
+      "Self-Propelled Shield",
+      "Fearless Warrior"
+    ],
+    "gearSetFamily": "D",
     "source": {
       "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
       "seconds": [
@@ -844,6 +1179,13 @@
     "slot": "Body Armor",
     "armoryTier": "T2",
     "season": "Season 1",
+    "gearSets": [
+      "Fury Strike",
+      "Quick Draw",
+      "One Shot One Kill",
+      "Gunny Johnny"
+    ],
+    "gearSetFamily": "A",
     "source": {
       "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
       "seconds": [
@@ -859,6 +1201,13 @@
     "slot": "Body Armor",
     "armoryTier": "T2",
     "season": "Season 1",
+    "gearSets": [
+      "Captain Cow",
+      "Healing Elites",
+      "Self-Propelled Shield",
+      "Fearless Warrior"
+    ],
+    "gearSetFamily": "D",
     "source": {
       "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
       "seconds": [
@@ -874,6 +1223,13 @@
     "slot": "Body Armor",
     "armoryTier": "T2",
     "season": "Season 1",
+    "gearSets": [
+      "Mechanical Enemy",
+      "Jackpot",
+      "Long-term Effect",
+      "Dr. Medic"
+    ],
+    "gearSetFamily": "B",
     "source": {
       "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
       "seconds": [
@@ -889,6 +1245,13 @@
     "slot": "Body Armor",
     "armoryTier": "T2",
     "season": "Season 1",
+    "gearSets": [
+      "Phalanx Attack",
+      "Boom-Shakalaka",
+      "Fire Cycle",
+      "Mechanical Expert"
+    ],
+    "gearSetFamily": "C",
     "source": {
       "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
       "seconds": [
@@ -904,6 +1267,11 @@
     "slot": "Mask",
     "armoryTier": "T0",
     "season": "Season 1",
+    "gearSets": [
+      "Jackpot",
+      "Long-term Effect"
+    ],
+    "gearSetFamily": "B",
     "source": {
       "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
       "seconds": [
@@ -919,6 +1287,11 @@
     "slot": "Mask",
     "armoryTier": "T0",
     "season": "Season 1",
+    "gearSets": [
+      "Fury Strike",
+      "Quick Draw"
+    ],
+    "gearSetFamily": "A",
     "source": {
       "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
       "seconds": [
@@ -934,6 +1307,11 @@
     "slot": "Mask",
     "armoryTier": "T0",
     "season": "Season 1",
+    "gearSets": [
+      "Phalanx Attack",
+      "Boom-Shakalaka"
+    ],
+    "gearSetFamily": "C",
     "source": {
       "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
       "seconds": [
@@ -949,6 +1327,11 @@
     "slot": "Mask",
     "armoryTier": "T0",
     "season": "Season 1",
+    "gearSets": [
+      "Captain Cow",
+      "Fearless Warrior"
+    ],
+    "gearSetFamily": "D",
     "source": {
       "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
       "seconds": [
@@ -964,6 +1347,12 @@
     "slot": "Mask",
     "armoryTier": "T1",
     "season": "Season 1",
+    "gearSets": [
+      "Jackpot",
+      "Long-term Effect",
+      "Dr. Medic"
+    ],
+    "gearSetFamily": "B",
     "source": {
       "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
       "seconds": [
@@ -979,6 +1368,12 @@
     "slot": "Mask",
     "armoryTier": "T1",
     "season": "Season 1",
+    "gearSets": [
+      "Fury Strike",
+      "Quick Draw",
+      "One Shot One Kill"
+    ],
+    "gearSetFamily": "A",
     "source": {
       "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
       "seconds": [
@@ -994,6 +1389,12 @@
     "slot": "Mask",
     "armoryTier": "T1",
     "season": "Season 1",
+    "gearSets": [
+      "Phalanx Attack",
+      "Boom-Shakalaka",
+      "Mechanical Expert"
+    ],
+    "gearSetFamily": "C",
     "source": {
       "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
       "seconds": [
@@ -1009,6 +1410,12 @@
     "slot": "Mask",
     "armoryTier": "T1",
     "season": "Season 1",
+    "gearSets": [
+      "Captain Cow",
+      "Self-Propelled Shield",
+      "Fearless Warrior"
+    ],
+    "gearSetFamily": "D",
     "source": {
       "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
       "seconds": [
@@ -1024,6 +1431,13 @@
     "slot": "Mask",
     "armoryTier": "T2",
     "season": "Season 1",
+    "gearSets": [
+      "Fury Strike",
+      "Quick Draw",
+      "One Shot One Kill",
+      "Gunny Johnny"
+    ],
+    "gearSetFamily": "A",
     "source": {
       "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
       "seconds": [
@@ -1039,6 +1453,13 @@
     "slot": "Mask",
     "armoryTier": "T2",
     "season": "Season 1",
+    "gearSets": [
+      "Mechanical Enemy",
+      "Jackpot",
+      "Long-term Effect",
+      "Dr. Medic"
+    ],
+    "gearSetFamily": "B",
     "source": {
       "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
       "seconds": [
@@ -1054,6 +1475,13 @@
     "slot": "Mask",
     "armoryTier": "T2",
     "season": "Season 1",
+    "gearSets": [
+      "Captain Cow",
+      "Healing Elites",
+      "Self-Propelled Shield",
+      "Fearless Warrior"
+    ],
+    "gearSetFamily": "D",
     "source": {
       "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
       "seconds": [
@@ -1069,6 +1497,13 @@
     "slot": "Mask",
     "armoryTier": "T2",
     "season": "Season 1",
+    "gearSets": [
+      "Phalanx Attack",
+      "Boom-Shakalaka",
+      "Fire Cycle",
+      "Mechanical Expert"
+    ],
+    "gearSetFamily": "C",
     "source": {
       "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
       "seconds": [

@@ -3,18 +3,37 @@ import DatabaseLayout from '../../../layouts/DatabaseLayout.astro';
 import gearSets from '../../../data/gear-set-effects.json';
 import AdSenseUnit from '../../../components/AdSenseUnit.astro';
 import { verifiedPatch } from '../../../data/site-config';
-const lastVerified = verifiedPatch('Patch 1.1.2.2'); // Bump: drop the arg ONLY after re-verifying this page's content in-game (CURRENT_PATCH is a ceiling, not an auto-bump)
+import { buildSetLoadouts } from '../../../utils/db-enrich';
+const lastVerified = verifiedPatch(); // All 16 sets, their bonuses and the tiers they roll on re-checked in game on 2026-10-28 (Season 2 Phase 2)
 
 const slugify = (name: string) => name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
 
+const TIER_TAG: Record<string, string> = { T0: 'T0 to T2', T1: 'T1 and T2', T2: 'T2 only' };
+const tierTag = (set: { tiers?: string[] }) => (set.tiers && set.tiers.length ? TIER_TAG[set.tiers[0]] : '');
+const namesFrom = (tier: string) => {
+  const ns = gearSets.filter((s) => s.tiers?.[0] === tier).map((s) => s.name);
+  return ns.length < 2 ? ns.join('') : `${ns.slice(0, -1).join(', ')} and ${ns[ns.length - 1]}`;
+};
+const countFrom = (tier: string) => gearSets.filter((s) => s.tiers?.[0] === tier).length;
+const words = ['no', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten', 'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen', 'sixteen'];
+const w = (n: number) => words[n] ?? String(n);
+
+// How the build guides split their six gear slots (from each guide's planner link).
+const loadouts = await buildSetLoadouts();
+const fourTwo = loadouts.filter((l) => [...l.pieces.values()].sort((a, b) => b - a).join('+') === '4+2').length;
+const splitLine = fourTwo === loadouts.length
+  ? `All ${loadouts.length} build guides on our site run exactly that.`
+  : `${fourTwo} of the ${loadouts.length} build guides on our site run exactly that.`;
+
 const title = "Division Resurgence Gear Sets | Best Builds";
-const description = "Every gear set in Division Resurgence with their 2, 3, and 4-piece bonuses. Stack them right and enemies file complaints.";
+const description = "All 16 Division Resurgence gear sets with their 2, 3 and 4-piece bonuses and the gear tiers they roll on, checked in game. Stack them right and enemies file complaints.";
 const breadcrumbs = [
   { name: 'Gear Set Effects', url: '/database/gear-set-effects/' }
 ];
 
 const faqs = [
-  { question: "How do gear sets work in Division Resurgence?", answer: "Gear sets give you stacking bonuses for wearing multiple pieces from the same set. Equip 2 pieces for one bonus, 3 for a second and 4 for the third. Every bonus is a flat stat (Fury Strike's 4-piece, for example, is +24% Weapon Critical Hit Damage), and with six gear slots the usual split is a 4-piece set plus a 2-piece from another. Nearly every creator build on our site runs exactly that." },
+  { question: "How do gear sets work in Division Resurgence?", answer: `Gear sets give you stacking bonuses for wearing multiple pieces from the same set. The game's own line: "Equipping 2/3/4 pieces from the same set activates the corresponding set effect." Every bonus is a flat stat (Fury Strike's 4-piece, for example, is +24% Weapon Critical Hit Damage), and with six gear slots the usual split is a 4-piece set plus a 2-piece from another. ${splitLine}` },
+  { question: "Which gear sets drop on T0, T1 and T2 gear?", answer: `The in-game Armory shows which sets each gear piece can roll: two on a T0 piece, three on T1 and four on T2. So ${w(countFrom('T0'))} sets roll from T0 up (${namesFrom('T0')}), ${w(countFrom('T1'))} from T1 up (${namesFrom('T1')}) and ${w(countFrom('T2'))} only on T2 gear (${namesFrom('T2')}). Each set's page lists the exact pieces. Checked in game October 28, 2026.` },
   { question: "What is the best gear set in Division Resurgence?", answer: "There's no single best gear set. It depends on your playstyle and specialization. DPS builds usually gravitate toward sets that buff weapon damage or crit. Tank builds want sets with Armor, Health and Damage Reduction bonuses, like Healing Elites and Self-Propelled Shield. Skill builds look for Engineering boosts and skill damage. Check the 4-piece bonuses on this page and pick the one that matches your build's core loop." },
   { question: "What is the best way to combine gear sets in Division Resurgence?", answer: "Most endgame builds use a 4-piece gear set core, then fill the other two slots with a 2-piece from another set: Phalanx Attack 4pc with Gunny Johnny 2pc on TikTokAndy's Commando builds, Jackpot 4pc with Fire Cycle 2pc on the Tactical Pharma builds. Pick the set whose stats your build leans on hardest as the 4-piece." },
 ];
@@ -59,6 +78,7 @@ const itemListLd = {
             <div>
               <h2 class="db-card__title">{gear.name}</h2>
             </div>
+            {tierTag(gear) && <span class={`gs-tier gs-tier--${gear.tiers[0].toLowerCase()}`} title={`Rolls on ${gear.tiers.join(', ')} gear`}>{tierTag(gear)}</span>}
           </div>
           
           <div class="db-card__body">
@@ -113,4 +133,18 @@ const itemListLd = {
     border-color: rgba(242,104,34,0.4);
     box-shadow: 0 0 20px rgba(242,104,34,0.08);
   }
+  .gs-tier {
+    flex-shrink: 0;
+    font-family: var(--font-mono);
+    font-size: var(--text-xs);
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    white-space: nowrap;
+    padding: 3px 9px;
+    border-radius: 999px;
+    border: 1px solid rgba(255,255,255,0.14);
+    color: #c8c8d0;
+  }
+  .gs-tier--t1 { border-color: rgba(168,85,247,0.45); color: #d8b4fe; }
+  .gs-tier--t2 { border-color: rgba(245,204,69,0.5); color: #F5CC45; }
 </style>

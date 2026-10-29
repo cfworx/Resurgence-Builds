@@ -53,7 +53,7 @@ const omit = <T extends Record<string, unknown>>(list: T[], keys: string[]) =>
   list.map(item => Object.fromEntries(Object.entries(item).filter(([k]) => !keys.includes(k))));
 const dataPayload = JSON.stringify({
   specs: plannerSpecs,
-  gearSets,
+  gearSets: omit(gearSets, ['tiers', 'verifiedInGame']),
   weaponTalents: omit(weaponTalents, ['verifiedInGame']),
   exoticWeapons: omit(exoticWeapons, ['image', 'acquisition', 'possibleTalents']),
   standardWeapons: omit(standardWeapons, ['image', 'randomizedAttributes', 'talent1', 'armoryTier', 'dmgType']),

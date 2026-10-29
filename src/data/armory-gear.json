@@ -1,0 +1,726 @@
+{
+  "_about": "Every gear piece on the in-game Armory's Season 1 pages and the gear sets each one can roll (the set icons beside the piece: two on T0 pieces, three on T1, four on T2). Read from Cory's Armory recording and checked against each set's Source list in the Build-Making Database. Research record: research/build-database/armory-gear.json.",
+  "checked": "2026-10-28",
+  "pieces": [
+    {
+      "name": "Tactical Mask",
+      "slot": "Mask",
+      "tier": "T0",
+      "sets": [
+        "Fury Strike",
+        "Quick Draw"
+      ]
+    },
+    {
+      "name": "Rapid Deployment Mask",
+      "slot": "Mask",
+      "tier": "T0",
+      "sets": [
+        "Jackpot",
+        "Long-term Effect"
+      ]
+    },
+    {
+      "name": "\"Maxillam\" Respirator",
+      "slot": "Mask",
+      "tier": "T0",
+      "sets": [
+        "Phalanx Attack",
+        "Boom-Shakalaka"
+      ]
+    },
+    {
+      "name": "Guardrail VI Facerig",
+      "slot": "Mask",
+      "tier": "T0",
+      "sets": [
+        "Captain Cow",
+        "Fearless Warrior"
+      ]
+    },
+    {
+      "name": "Bevor Air Guard",
+      "slot": "Mask",
+      "tier": "T1",
+      "sets": [
+        "Fury Strike",
+        "Quick Draw",
+        "One Shot One Kill"
+      ]
+    },
+    {
+      "name": "Timeless Guardian Mask",
+      "slot": "Mask",
+      "tier": "T1",
+      "sets": [
+        "Jackpot",
+        "Long-term Effect",
+        "Dr. Medic"
+      ]
+    },
+    {
+      "name": "Aphrodite Glint Concealer",
+      "slot": "Mask",
+      "tier": "T1",
+      "sets": [
+        "Phalanx Attack",
+        "Boom-Shakalaka",
+        "Mechanical Expert"
+      ]
+    },
+    {
+      "name": "Breathe-Easy Mask",
+      "slot": "Mask",
+      "tier": "T1",
+      "sets": [
+        "Captain Cow",
+        "Self-Propelled Shield",
+        "Fearless Warrior"
+      ]
+    },
+    {
+      "name": "Combat Mask \"Cete\"",
+      "slot": "Mask",
+      "tier": "T2",
+      "sets": [
+        "Fury Strike",
+        "Quick Draw",
+        "One Shot One Kill",
+        "Gunny Johnny"
+      ]
+    },
+    {
+      "name": "Protective Tactical Mask",
+      "slot": "Mask",
+      "tier": "T2",
+      "sets": [
+        "Mechanical Enemy",
+        "Jackpot",
+        "Long-term Effect",
+        "Dr. Medic"
+      ]
+    },
+    {
+      "name": "Javelina Mask",
+      "slot": "Mask",
+      "tier": "T2",
+      "sets": [
+        "Phalanx Attack",
+        "Boom-Shakalaka",
+        "Fire Cycle",
+        "Mechanical Expert"
+      ]
+    },
+    {
+      "name": "Half mask respirator",
+      "slot": "Mask",
+      "tier": "T2",
+      "sets": [
+        "Captain Cow",
+        "Healing Elites",
+        "Self-Propelled Shield",
+        "Fearless Warrior"
+      ]
+    },
+    {
+      "name": "\"Ericht\" Chest System",
+      "slot": "Body Armor",
+      "tier": "T0",
+      "sets": [
+        "Fury Strike",
+        "Quick Draw"
+      ]
+    },
+    {
+      "name": "Mechanized Infantry Armor",
+      "slot": "Body Armor",
+      "tier": "T0",
+      "sets": [
+        "Jackpot",
+        "Long-term Effect"
+      ]
+    },
+    {
+      "name": "Ranger Ballistics Vest",
+      "slot": "Body Armor",
+      "tier": "T0",
+      "sets": [
+        "Phalanx Attack",
+        "Boom-Shakalaka"
+      ]
+    },
+    {
+      "name": "Stridsvast Combat Vest",
+      "slot": "Body Armor",
+      "tier": "T0",
+      "sets": [
+        "Captain Cow",
+        "Fearless Warrior"
+      ]
+    },
+    {
+      "name": "Flimsy Body Armor v1",
+      "slot": "Body Armor",
+      "tier": "T1",
+      "sets": [
+        "Fury Strike",
+        "Quick Draw",
+        "One Shot One Kill"
+      ]
+    },
+    {
+      "name": "Athena Missile Vest",
+      "slot": "Body Armor",
+      "tier": "T1",
+      "sets": [
+        "Jackpot",
+        "Long-term Effect",
+        "Dr. Medic"
+      ]
+    },
+    {
+      "name": "Flimsy Body Armor v2",
+      "slot": "Body Armor",
+      "tier": "T1",
+      "sets": [
+        "Phalanx Attack",
+        "Boom-Shakalaka",
+        "Mechanical Expert"
+      ]
+    },
+    {
+      "name": "Phalanx Precision Vest",
+      "slot": "Body Armor",
+      "tier": "T1",
+      "sets": [
+        "Captain Cow",
+        "Self-Propelled Shield",
+        "Fearless Warrior"
+      ]
+    },
+    {
+      "name": "X-TREYME Pro Ribcage",
+      "slot": "Body Armor",
+      "tier": "T2",
+      "sets": [
+        "Fury Strike",
+        "Quick Draw",
+        "One Shot One Kill",
+        "Gunny Johnny"
+      ]
+    },
+    {
+      "name": "Chatzatz Chest",
+      "slot": "Body Armor",
+      "tier": "T2",
+      "sets": [
+        "Mechanical Enemy",
+        "Jackpot",
+        "Long-term Effect",
+        "Dr. Medic"
+      ]
+    },
+    {
+      "name": "Ops Armor",
+      "slot": "Body Armor",
+      "tier": "T2",
+      "sets": [
+        "Phalanx Attack",
+        "Boom-Shakalaka",
+        "Fire Cycle",
+        "Mechanical Expert"
+      ]
+    },
+    {
+      "name": "\"Big Drum\" Body Armor",
+      "slot": "Body Armor",
+      "tier": "T2",
+      "sets": [
+        "Captain Cow",
+        "Healing Elites",
+        "Self-Propelled Shield",
+        "Fearless Warrior"
+      ]
+    },
+    {
+      "name": "\"Dingson\" Protection Pads",
+      "slot": "Knee Pads",
+      "tier": "T0",
+      "sets": [
+        "Fury Strike",
+        "Quick Draw"
+      ]
+    },
+    {
+      "name": "\"Tay\" Protective Pads v1",
+      "slot": "Knee Pads",
+      "tier": "T0",
+      "sets": [
+        "Jackpot",
+        "Long-term Effect"
+      ]
+    },
+    {
+      "name": "Dionysus Rounded Padding",
+      "slot": "Knee Pads",
+      "tier": "T0",
+      "sets": [
+        "Phalanx Attack",
+        "Boom-Shakalaka"
+      ]
+    },
+    {
+      "name": "\"Tay\" Protective Pads v2",
+      "slot": "Knee Pads",
+      "tier": "T0",
+      "sets": [
+        "Captain Cow",
+        "Fearless Warrior"
+      ]
+    },
+    {
+      "name": "Stonewall Knee Pads",
+      "slot": "Knee Pads",
+      "tier": "T1",
+      "sets": [
+        "Fury Strike",
+        "Quick Draw",
+        "One Shot One Kill"
+      ]
+    },
+    {
+      "name": "Sundown Knee Guards",
+      "slot": "Knee Pads",
+      "tier": "T1",
+      "sets": [
+        "Jackpot",
+        "Long-term Effect",
+        "Dr. Medic"
+      ]
+    },
+    {
+      "name": "HX 02",
+      "slot": "Knee Pads",
+      "tier": "T1",
+      "sets": [
+        "Phalanx Attack",
+        "Boom-Shakalaka",
+        "Mechanical Expert"
+      ]
+    },
+    {
+      "name": "Mesa Knee Guards",
+      "slot": "Knee Pads",
+      "tier": "T1",
+      "sets": [
+        "Captain Cow",
+        "Self-Propelled Shield",
+        "Fearless Warrior"
+      ]
+    },
+    {
+      "name": "Knäskydd Knee Protectors",
+      "slot": "Knee Pads",
+      "tier": "T2",
+      "sets": [
+        "Fury Strike",
+        "Quick Draw",
+        "One Shot One Kill",
+        "Gunny Johnny"
+      ]
+    },
+    {
+      "name": "Urban Warfare Kneepads",
+      "slot": "Knee Pads",
+      "tier": "T2",
+      "sets": [
+        "Mechanical Enemy",
+        "Jackpot",
+        "Long-term Effect",
+        "Dr. Medic"
+      ]
+    },
+    {
+      "name": "\"Patella\" Knee Cups",
+      "slot": "Knee Pads",
+      "tier": "T2",
+      "sets": [
+        "Phalanx Attack",
+        "Boom-Shakalaka",
+        "Fire Cycle",
+        "Mechanical Expert"
+      ]
+    },
+    {
+      "name": "Pivot Pads",
+      "slot": "Knee Pads",
+      "tier": "T2",
+      "sets": [
+        "Captain Cow",
+        "Healing Elites",
+        "Self-Propelled Shield",
+        "Fearless Warrior"
+      ]
+    },
+    {
+      "name": "Trekking Elite Pack",
+      "slot": "Backpack",
+      "tier": "T0",
+      "sets": [
+        "Fury Strike",
+        "Quick Draw"
+      ]
+    },
+    {
+      "name": "Demeter Quick-Stash",
+      "slot": "Backpack",
+      "tier": "T0",
+      "sets": [
+        "Jackpot",
+        "Long-term Effect"
+      ]
+    },
+    {
+      "name": "RUSH72 Backpack",
+      "slot": "Backpack",
+      "tier": "T0",
+      "sets": [
+        "Phalanx Attack",
+        "Boom-Shakalaka"
+      ]
+    },
+    {
+      "name": "Element Outdoors Rucksack",
+      "slot": "Backpack",
+      "tier": "T0",
+      "sets": [
+        "Captain Cow",
+        "Fearless Warrior"
+      ]
+    },
+    {
+      "name": "Rally Point Secure Pack",
+      "slot": "Backpack",
+      "tier": "T1",
+      "sets": [
+        "Fury Strike",
+        "Quick Draw",
+        "One Shot One Kill"
+      ]
+    },
+    {
+      "name": "Ziba Low Profile Pack",
+      "slot": "Backpack",
+      "tier": "T1",
+      "sets": [
+        "Jackpot",
+        "Long-term Effect",
+        "Dr. Medic"
+      ]
+    },
+    {
+      "name": "\"Horo\" CarryBack",
+      "slot": "Backpack",
+      "tier": "T1",
+      "sets": [
+        "Phalanx Attack",
+        "Boom-Shakalaka",
+        "Mechanical Expert"
+      ]
+    },
+    {
+      "name": "Big Horn Pack",
+      "slot": "Backpack",
+      "tier": "T1",
+      "sets": [
+        "Captain Cow",
+        "Self-Propelled Shield",
+        "Fearless Warrior"
+      ]
+    },
+    {
+      "name": "All Hazards Nitro Backpack",
+      "slot": "Backpack",
+      "tier": "T2",
+      "sets": [
+        "Fury Strike",
+        "Quick Draw",
+        "One Shot One Kill",
+        "Gunny Johnny"
+      ]
+    },
+    {
+      "name": "Mountain Hiking Pack",
+      "slot": "Backpack",
+      "tier": "T2",
+      "sets": [
+        "Mechanical Enemy",
+        "Jackpot",
+        "Long-term Effect",
+        "Dr. Medic"
+      ]
+    },
+    {
+      "name": "AMP24",
+      "slot": "Backpack",
+      "tier": "T2",
+      "sets": [
+        "Phalanx Attack",
+        "Boom-Shakalaka",
+        "Fire Cycle",
+        "Mechanical Expert"
+      ]
+    },
+    {
+      "name": "Roamer Pack \"Sow\"",
+      "slot": "Backpack",
+      "tier": "T2",
+      "sets": [
+        "Captain Cow",
+        "Healing Elites",
+        "Self-Propelled Shield",
+        "Fearless Warrior"
+      ]
+    },
+    {
+      "name": "\"Lochy\" Hand Savers",
+      "slot": "Gloves",
+      "tier": "T0",
+      "sets": [
+        "Fury Strike",
+        "Quick Draw"
+      ]
+    },
+    {
+      "name": "Hybrid FC Gloves",
+      "slot": "Gloves",
+      "tier": "T0",
+      "sets": [
+        "Jackpot",
+        "Long-term Effect"
+      ]
+    },
+    {
+      "name": "Blood Fang Gloves",
+      "slot": "Gloves",
+      "tier": "T0",
+      "sets": [
+        "Phalanx Attack",
+        "Boom-Shakalaka"
+      ]
+    },
+    {
+      "name": "Hunter's Code Gloves",
+      "slot": "Gloves",
+      "tier": "T0",
+      "sets": [
+        "Captain Cow",
+        "Fearless Warrior"
+      ]
+    },
+    {
+      "name": "Micro Plated Gloves",
+      "slot": "Gloves",
+      "tier": "T1",
+      "sets": [
+        "Fury Strike",
+        "Quick Draw",
+        "One Shot One Kill"
+      ]
+    },
+    {
+      "name": "Diamondback Gloves",
+      "slot": "Gloves",
+      "tier": "T1",
+      "sets": [
+        "Jackpot",
+        "Long-term Effect",
+        "Dr. Medic"
+      ]
+    },
+    {
+      "name": "\"Digits\" Finger Stabilizer",
+      "slot": "Gloves",
+      "tier": "T1",
+      "sets": [
+        "Phalanx Attack",
+        "Boom-Shakalaka",
+        "Mechanical Expert"
+      ]
+    },
+    {
+      "name": "Phantom Saviour Gloves",
+      "slot": "Gloves",
+      "tier": "T1",
+      "sets": [
+        "Captain Cow",
+        "Self-Propelled Shield",
+        "Fearless Warrior"
+      ]
+    },
+    {
+      "name": "Nightclaw Tactical Gloves",
+      "slot": "Gloves",
+      "tier": "T2",
+      "sets": [
+        "Fury Strike",
+        "Quick Draw",
+        "One Shot One Kill",
+        "Gunny Johnny"
+      ]
+    },
+    {
+      "name": "\"Kote\" Hand Guards",
+      "slot": "Gloves",
+      "tier": "T2",
+      "sets": [
+        "Mechanical Enemy",
+        "Jackpot",
+        "Long-term Effect",
+        "Dr. Medic"
+      ]
+    },
+    {
+      "name": "\"Neptune\" Protection Gloves",
+      "slot": "Gloves",
+      "tier": "T2",
+      "sets": [
+        "Phalanx Attack",
+        "Boom-Shakalaka",
+        "Fire Cycle",
+        "Mechanical Expert"
+      ]
+    },
+    {
+      "name": "Gustavo Association Gloves",
+      "slot": "Gloves",
+      "tier": "T2",
+      "sets": [
+        "Captain Cow",
+        "Healing Elites",
+        "Self-Propelled Shield",
+        "Fearless Warrior"
+      ]
+    },
+    {
+      "name": "Urban Assault Holster",
+      "slot": "Holster",
+      "tier": "T0",
+      "sets": [
+        "Fury Strike",
+        "Quick Draw"
+      ]
+    },
+    {
+      "name": "Chamber Wolf TAC Holster",
+      "slot": "Holster",
+      "tier": "T0",
+      "sets": [
+        "Jackpot",
+        "Long-term Effect"
+      ]
+    },
+    {
+      "name": "Armorer's Security Holster",
+      "slot": "Holster",
+      "tier": "T0",
+      "sets": [
+        "Phalanx Attack",
+        "Boom-Shakalaka"
+      ]
+    },
+    {
+      "name": "Lock and Load Holster",
+      "slot": "Holster",
+      "tier": "T0",
+      "sets": [
+        "Captain Cow",
+        "Fearless Warrior"
+      ]
+    },
+    {
+      "name": "Serviceman's Holster",
+      "slot": "Holster",
+      "tier": "T1",
+      "sets": [
+        "Fury Strike",
+        "Quick Draw",
+        "One Shot One Kill"
+      ]
+    },
+    {
+      "name": "\"Morar\" Holster System",
+      "slot": "Holster",
+      "tier": "T1",
+      "sets": [
+        "Jackpot",
+        "Long-term Effect",
+        "Dr. Medic"
+      ]
+    },
+    {
+      "name": "Pridwen Holster",
+      "slot": "Holster",
+      "tier": "T1",
+      "sets": [
+        "Phalanx Attack",
+        "Boom-Shakalaka",
+        "Mechanical Expert"
+      ]
+    },
+    {
+      "name": "Artemis Fast Draw Holster",
+      "slot": "Holster",
+      "tier": "T1",
+      "sets": [
+        "Captain Cow",
+        "Self-Propelled Shield",
+        "Fearless Warrior"
+      ]
+    },
+    {
+      "name": "Fodral Holster",
+      "slot": "Holster",
+      "tier": "T2",
+      "sets": [
+        "Fury Strike",
+        "Quick Draw",
+        "One Shot One Kill",
+        "Gunny Johnny"
+      ]
+    },
+    {
+      "name": "Jags Sidearm Mount",
+      "slot": "Holster",
+      "tier": "T2",
+      "sets": [
+        "Mechanical Enemy",
+        "Jackpot",
+        "Long-term Effect",
+        "Dr. Medic"
+      ]
+    },
+    {
+      "name": "Jaivardhan Thigh Rig",
+      "slot": "Holster",
+      "tier": "T2",
+      "sets": [
+        "Phalanx Attack",
+        "Boom-Shakalaka",
+        "Fire Cycle",
+        "Mechanical Expert"
+      ]
+    },
+    {
+      "name": "Tepes Holster",
+      "slot": "Holster",
+      "tier": "T2",
+      "sets": [
+        "Captain Cow",
+        "Healing Elites",
+        "Self-Propelled Shield",
+        "Fearless Warrior"
+      ]
+    }
+  ]
+}
