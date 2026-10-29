@@ -11,8 +11,10 @@ imageAlt: "An encrypted crate code lock next to a Missing poster clue in Divisio
 shareTitle: "Stop typing wrong safe codes"
 shareText: "Every verified encrypted crate code in Division Resurgence. Three are randomized per character and most guides get them wrong."
 videoId: "ljFeKCV0ZII"
-videoTitle: "All 21 Found Encrypted Crates walkthrough"
-videoChannel: "GooHootGaming"
+videoTitle: "Shiv: All Secret Encrypted Crates Locations"
+videoChannel: "Shiv"
+videoUploadDate: "2026-05-09T10:45:01-07:00"
+videoDuration: "PT9M57S"
 faqs:
   - question: "How many safes are there in Division Resurgence?"
     answer: "There are 33 encrypted crates tied to the New York City Collector commendation (the devs said 33 on their April stream, too). The community had decoded 21 by late May 2026, and none of Ubisoft's patch notes since, through Season 2 Phase 2, mention new crates. The other 12 are still unaccounted for as far as we know. Ubisoft hid them better than you hide the good snacks."
@@ -108,7 +110,7 @@ The 42-artifact piece is the other half of the NYC Collector lock. While you are
 
 ## Every Known Encrypted Crate (Verified May 2026, Cross-Checked October 2026)
 
-We use the **patrikjuvonen community numbering** (Crate 01 through 21) because that thread is the mod-acknowledged master list. Locations come from on-screen video verification, most notably [GooHootGaming's May 9, 2026 full walkthrough](https://www.youtube.com/watch?v=ljFeKCV0ZII) and [GCROCK's April video](https://www.youtube.com/watch?v=HjXUKlklXNE) showing each safe being entered.
+We use the **patrikjuvonen community numbering** (Crate 01 through 21) because that thread is the mod-acknowledged master list. Locations come from on-screen video verification, most notably [Shiv's May 9, 2026 full walkthrough](https://www.youtube.com/watch?v=ljFeKCV0ZII) and [GCROCK's April video](https://www.youtube.com/watch?v=HjXUKlklXNE) showing each safe being entered.
 
 | Crate # | District / Location | Code | Clue Source | Status |
 |---|---|---:|---|---|
@@ -140,7 +142,7 @@ We use the **patrikjuvonen community numbering** (Crate 01 through 21) because t
 
 - [patrikjuvonen's 21 Encrypted Crates thread](https://www.reddit.com/r/thedivisionresurgence/comments/1sgjzpf/here_are_21_collectible_encrypted_crates/) (mod-pinned community resource)
 - [The Division Fandom Wiki community map of NYC](https://thedivision.fandom.com/wiki/Map:Tom_Clancy%27s_The_Division_Resurgence/New_York_City) (cross-reference, CC BY-SA; same numbering, agrees on 18 of 21 crates)
-- [GooHootGaming: All 21 Found Encrypted Crates walkthrough (May 9, 2026)](https://www.youtube.com/watch?v=ljFeKCV0ZII) (on-screen verification of every safe in order)
+- [Shiv: All Secret Encrypted Crates Locations (May 9, 2026)](https://www.youtube.com/watch?v=ljFeKCV0ZII) (on-screen verification of every safe in order)
 - [GCROCK: ALL Locked Safe Locations & Codes](https://www.youtube.com/watch?v=HjXUKlklXNE) (on-screen entry of safes 4, 11, 13, 14, 15, 16, 19)
 - [Reddit: Safe code near Echo 02 (MMX statue)](https://www.reddit.com/r/thedivisionresurgence/comments/1sd1k3i/safe_code_near_echo_02/)
 - [GamingOnPhone Safes Guide](https://gamingonphone.com/guides/the-division-resurgence-safes-guide-all-safe-locations-and-codes-to-open-them/) (cross-reference)
@@ -185,7 +187,7 @@ There is one nearby crate in this cluster whose code rotates per character. Open
 
 Fast travel to **Spring Blossom Settlement**. Turn right out of spawn, take another right, and rappel up. Take a left and run into the back room. The code is on the **chalkboard on the right-hand wall**: **3580**. The crate is right there.
 
-This one has been verified across [GCROCK](https://www.youtube.com/watch?v=HjXUKlklXNE), [GooHootGaming](https://www.youtube.com/watch?v=ljFeKCV0ZII), and a [Spring Blossom-specific walkthrough](https://www.youtube.com/watch?v=zkkHRCH9yk4). Always check the chalkboard in your game first because one creator noted "for some players it has been reported as different." The overwhelming majority report 3580.
+This one has been verified across [GCROCK](https://www.youtube.com/watch?v=HjXUKlklXNE), [Shiv](https://www.youtube.com/watch?v=ljFeKCV0ZII), and a [Spring Blossom-specific walkthrough](https://www.youtube.com/watch?v=zkkHRCH9yk4). Always check the chalkboard in your game first because one creator noted "for some players it has been reported as different." The overwhelming majority report 3580.
 
 ### Crate 04: Autumn's Hope Safe House (Code 1883)
 
@@ -328,7 +330,7 @@ What we know is **not** the issue: Phase 2 of Season 1 (May 12, 2026) did not ad
 - [Reddit: Safe Codes I've found so far (NoInteraction6701)](https://www.reddit.com/r/thedivisionresurgence/comments/1sc4h27/safe_codes_ive_found_so_far/)
 - [Reddit: Safe code near Echo 02 (MMX statue)](https://www.reddit.com/r/thedivisionresurgence/comments/1sd1k3i/safe_code_near_echo_02/)
 - [Reddit: What is the password for this safe in Autumn's Hope](https://www.reddit.com/r/thedivisionresurgence/comments/1pego13/what_is_the_password_for_this_safe_in_the_autumn/)
-- [YouTube: GooHootGaming, All 21 Found Encrypted Crates (May 9, 2026)](https://www.youtube.com/watch?v=ljFeKCV0ZII)
+- [YouTube: Shiv, All Secret Encrypted Crates Locations (May 9, 2026)](https://www.youtube.com/watch?v=ljFeKCV0ZII)
 - [YouTube: GCROCK, ALL Locked Safe Locations & Codes](https://www.youtube.com/watch?v=HjXUKlklXNE)
 - [YouTube: Spring Blossom School Safe Code](https://www.youtube.com/watch?v=zkkHRCH9yk4)
 - [GamingOnPhone: Division Resurgence Safes Guide](https://gamingonphone.com/guides/the-division-resurgence-safes-guide-all-safe-locations-and-codes-to-open-them/)

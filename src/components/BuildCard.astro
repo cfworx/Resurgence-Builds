@@ -1,4 +1,5 @@
 ---
+import { tagHref } from '../utils/tag-href';
 export interface Props {
   title: string;
   href: string;
@@ -62,7 +63,7 @@ const getSpecClass = (spec: string) => {
               && t !== 'pvp';
           })
           .slice(0, 1)
-          .map(tag => <a href={`/tag/${tag.toLowerCase().replace(/\s+/g, '-')}/`} class="tag build-card__tag-link" style="text-decoration:none;">{tag}</a>)
+          .map(tag => <a href={tagHref(tag)} class="tag build-card__tag-link" style="text-decoration:none;">{tag}</a>)
         }
       </div>
       <p class="card__title">

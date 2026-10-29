@@ -21,6 +21,8 @@ plannerHash: "s=Tech+Operator&sc=Aegis+Operations&n=Tech+Aegis+237k&ms=gs-7&m1=s
 videoId: "bZA3H9f2ah0"
 videoTitle: "Tampishach: Tech Aegis Build Walkthrough"
 videoChannel: "PowerfulJRE Clips"
+videoUploadDate: "2026-04-27T06:46:52-07:00"
+videoDuration: "PT6M4S"
 faqs:
   - question: "Is this build still good after Patch 1.1.2.2?"
     answer: "Mostly, but the numbers are vintage. The build was filmed in late April 2026. Since then, Season 1 Phase 2 (May 12) fixed Brains Over Brawn 'scaling wrong stats,' Season 1 Phase 3 (June 24) fixed Aegis Burst dealing more damage than intended, and Season 2 Phase 1 reworked weapon mods so the Shredding and Blast attachment rolls below no longer drop. Long-term Effect, Jackpot, and the MPX and Copperhead talents weren't touched. No official patch notes through Season 2 Phase 2 mention a fix for the Teamfight (formerly Performance Enhancer) 3pc, but the 2pc Engineering bonus still applies. Expect lower damage than the 237k sheet and you won't be disappointed."

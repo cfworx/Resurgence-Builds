@@ -246,6 +246,9 @@ for (const [, html] of pageHtmlMap) {
 const orphanPages = [];
 for (const [pagePath, count] of inlinkCount) {
   if (EXEMPT_PATHS.has(pagePath)) continue;
+  // Redirect stubs (astro.config.mjs redirects become meta refresh pages; public/_redirects
+  // serves a real 301 for each). Nothing should link to them, so zero inlinks is correct.
+  if (/<meta http-equiv="refresh"/i.test(pageHtmlMap.get(pagePath) || '')) continue;
   if (count < 1) {
     orphanPages.push(pagePath);
   }

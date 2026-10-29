@@ -13,6 +13,8 @@ shareText: "Contamination, extraction, the Smuggler, going Rogue and what the ve
 videoId: "lBIQT-SeBZg"
 videoTitle: "My First Time In The Level 40 Dark Zone | The Division Resurgence"
 videoChannel: "TikTokAndy"
+videoUploadDate: "2026-09-16T04:18:07-07:00"
+videoDuration: "PT98M8S"
 faqs:
   - question: "How long is a Dark Zone run in Division Resurgence?"
     answer: "Twenty minutes, with up to 20 agents on the map. Ubisoft's own 2023 preview described it that way ('up to 19 other players' and '20 minutes to find and extract as much loot as you can'), and Dot Esports and AllThings.How report the same for the live game. When the timer runs out, AllThings.How says a short countdown starts and contamination then kills you within about five to seven seconds, so anything still in your backpack at that point is gone unless you extracted it."

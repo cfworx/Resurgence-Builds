@@ -13,6 +13,8 @@ shareText: "Level 40 is where the loot starts rolling Tier 2. The daily routine,
 videoId: "7JtJCeEE8NI"
 videoTitle: "7 Things I Wish I Knew Before Endgame | The Division Resurgence"
 videoChannel: "Oldfartsgaming"
+videoUploadDate: "2026-10-11T07:36:10-07:00"
+videoDuration: "PT21M23S"
 faqs:
   - question: "What should I do after reaching level 40 in Division Resurgence?"
     answer: "Run your daily quests every day (since Season 2 Phase 2, Weapon Kill and Main Mission dailies have a chance of Tier 2 loot at level 40), save your purple upgrade materials for gear worth keeping, level weapon proficiency and SHD level, and keep a craft running. Then accept that endgame is the part where your gear is never quite good enough."

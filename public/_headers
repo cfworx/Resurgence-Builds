@@ -48,11 +48,30 @@
 /rss.xml
   Cache-Control: public, max-age=900, s-maxage=3600
 
+# llms.txt is for AI tools that fetch it directly; it has no reason to show up as a search result.
 /llms.txt
   Cache-Control: public, max-age=86400
+  X-Robots-Tag: noindex
 
 /llm.txt
   Cache-Control: public, max-age=86400
+  X-Robots-Tag: noindex
+
+/llms-full.txt
+  X-Robots-Tag: noindex
 
 /ads.txt
   Cache-Control: public, max-age=86400
+
+# =============================================================================
+# Cloudflare hostnames: keep them out of search results
+# =============================================================================
+# resurgence-builds.pages.dev serves the whole production site, and nothing stopped
+# it being indexed as a duplicate of resurgencebuilds.com. Preview deployments
+# (<hash>.resurgence-builds.pages.dev) already get noindex from Cloudflare; the second
+# rule covers them too. These rules match the pages.dev hosts only, never the custom domain.
+https://:project.pages.dev/*
+  X-Robots-Tag: noindex
+
+https://:version.:project.pages.dev/*
+  X-Robots-Tag: noindex

@@ -1,4 +1,5 @@
 ---
+import { tagHref } from '../utils/tag-href';
 import BaseLayout from './BaseLayout.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import SectionTag from '../components/SectionTag.astro';
@@ -31,6 +32,8 @@ export interface Props {
   videoId?: string;
   videoTitle?: string;
   videoChannel?: string;
+  videoUploadDate?: string;
+  videoDuration?: string;
   howTo?: {
     name: string;
     description: string;
@@ -41,7 +44,7 @@ export interface Props {
   wordCount?: number;
 }
 
-const { title, description, specialization, playstyle, patch, verified = true, lastUpdated, pve, pvp, tags, author, featuredImage, imageAlt, shareTitle, shareText, headings = [], faqs = [], sources = [], plannerHash, videoId, videoTitle, videoChannel, howTo, wordCount } = Astro.props;
+const { title, description, specialization, playstyle, patch, verified = true, lastUpdated, pve, pvp, tags, author, featuredImage, imageAlt, shareTitle, shareText, headings = [], faqs = [], sources = [], plannerHash, videoId, videoTitle, videoChannel, videoUploadDate, videoDuration, howTo, wordCount } = Astro.props;
 
 const siteUrl = 'https://resurgencebuilds.com';
 
@@ -161,7 +164,7 @@ const redditShareUrl = `https://reddit.com/submit?url=${encodeURIComponent(Astro
           )}
           {tags.filter(t => t[0] === t[0].toUpperCase() && !t.includes('-')).length > 0 && (
             <div style="display:flex;flex-wrap:wrap;gap:var(--sp-1);margin-top:var(--sp-3);">
-              {tags.filter(t => t[0] === t[0].toUpperCase() && !t.includes('-')).map(tag => <a href={`/tag/${tag.toLowerCase().replace(/\s+/g, '-')}/`} class="tag">{tag}</a>)}
+              {tags.filter(t => t[0] === t[0].toUpperCase() && !t.includes('-')).map(tag => <a href={tagHref(tag)} class="tag">{tag}</a>)}
             </div>
           )}
         </div>
@@ -189,6 +192,8 @@ const redditShareUrl = `https://reddit.com/submit?url=${encodeURIComponent(Astro
             title={videoTitle || `${title}: Video Guide`}
             description={description}
             channelName={videoChannel}
+            uploadDate={videoUploadDate}
+            duration={videoDuration}
           />
         )}
 

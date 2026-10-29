@@ -31,6 +31,8 @@ faqs:
 videoId: "OVnksyrlj88"
 videoTitle: "GGReborn: BEST Tactical Pharma Build + Solo Legendary Gameplay"
 videoChannel: "GGReborn"
+videoUploadDate: "2026-10-16T04:00:15-07:00"
+videoDuration: "PT16M58S"
 plannerHash: "s=Field+Medic&sc=Tactical+Pharma&n=Tactical+Pharma+Season+2&ms=gs-7&m1=scd&m2=rh&gs=gs-7&g1=scd&g2=sr&hs=gs-11&h1=scd&h2=scr&cs=gs-11&ct=ba-12&c1=scd&c2=sdu&ps=gs-7&pt=bp-15&p1=sdu&p2=scc&ks=gs-7&k1=si&k2=sms&w1s=sw-41&w1t=wt-22&w1t2=wt-43&w1b1=sms&w2s=sw-50&w2t=wt-66&w2t2=wt-20&os=os-20&sm1=smc-75&sm2=smc-76&sm3=smc-79"
 ---
 

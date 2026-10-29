@@ -27,6 +27,8 @@ faqs:
 videoId: "RYtZyN_0P0Y"
 videoTitle: "TikTokAndy: Vanguard - Commando With A Lightweight M4"
 videoChannel: "TikTokAndy"
+videoUploadDate: "2026-10-27T11:17:20-07:00"
+videoDuration: "PT37M41S"
 plannerHash: "s=Vanguard&sc=Commando&n=Lightweight+M4+Commando&ms=gs-5&gs=gs-3&hs=gs-3&cs=gs-5&ct=ba-22&ps=gs-3&pt=bp-7&ks=gs-3&w1s=sw-41&w1tr=T2&w1t=wt-68&w1t2=wt-38&w1b1=chd&w1b2=hsd&w2s=sw-22&w2t=wt-29&w2t2=wt-36&w2b1=mhp&w2b2=wms&os=os-29&sm1=smc-63&sm2=smc-66&sm3=smc-69"
 ---
 

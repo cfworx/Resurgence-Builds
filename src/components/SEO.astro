@@ -1,5 +1,6 @@
 ---
 import { getAuthorSlug } from '../utils/author';
+import { publicImageSize } from '../utils/image-dims.mjs';
 
 export interface Props {
   title: string;
@@ -43,7 +44,14 @@ const fullTitle = title.includes(siteName) ? title : `${title} · ${siteName}`;
 const siteUrl = Astro.site?.toString().replace(/\/$/, '') || 'https://resurgencebuilds.com';
 const canonicalURL = canonical || new URL(Astro.url.pathname, siteUrl).toString();
 const ogImageUrl = ogImage.startsWith('http') ? ogImage : `${siteUrl}${ogImage}`;
-const isDefaultOgImage = ogImage === '/images/resurgence-builds-official-logo.png';
+// Real pixel sizes, read from the files: the tags and the structured data must not claim
+// a size the image doesn't have. null for images on other hosts.
+const ogDims = publicImageSize(ogImageUrl);
+const logoPath = '/images/resurgence-builds-official-logo.png';
+const logoDims = publicImageSize(logoPath);
+// The big X/Twitter card only when the image is wide enough to look sharp in it;
+// small or portrait images get the regular summary card instead of a blurry crop.
+const largeCard = !!ogDims && ogDims.width >= 600 && ogDims.width / ogDims.height >= 1.3;
 
 const graph: any[] = [];
 
@@ -55,9 +63,8 @@ graph.push({
   url: siteUrl,
   logo: {
     '@type': 'ImageObject',
-    url: `${siteUrl}/images/resurgence-builds-official-logo.png`,
-    width: 800,
-    height: 800
+    url: `${siteUrl}${logoPath}`,
+    ...(logoDims && { width: logoDims.width, height: logoDims.height }),
   },
   sameAs: [
     'https://x.com/ResurgenceBuild',
@@ -177,8 +184,7 @@ if (article) {
     image: {
       '@type': 'ImageObject',
       url: ogImageUrl,
-      width: 1200,
-      height: 630
+      ...(ogDims && { width: ogDims.width, height: ogDims.height }),
     },
     datePublished: article.publishDate,
     dateModified: article.modifiedDate || article.publishDate,
@@ -254,7 +260,9 @@ const finalJsonLd = {
 <link rel="canonical" href={canonicalURL} />
 <link rel="alternate" hreflang="en" href={canonicalURL} />
 <link rel="alternate" hreflang="x-default" href={canonicalURL} />
-{(noindex || robots) && <meta name="robots" content={robots || 'noindex, nofollow'} />}
+{(noindex || robots)
+  ? <meta name="robots" content={robots || 'noindex, follow'} />
+  : <meta name="robots" content="max-image-preview:large" />}
 
 <!-- Open Graph -->
 <meta property="og:type" content={ogType} />
@@ -262,8 +270,8 @@ const finalJsonLd = {
 <meta property="og:description" content={description} />
 <meta property="og:image" content={ogImageUrl} />
 <meta property="og:image:alt" content={description} />
-<meta property="og:image:width" content={isDefaultOgImage ? "800" : "1200"} />
-<meta property="og:image:height" content={isDefaultOgImage ? "800" : "630"} />
+{ogDims && <meta property="og:image:width" content={String(ogDims.width)} />}
+{ogDims && <meta property="og:image:height" content={String(ogDims.height)} />}
 <meta property="og:url" content={canonicalURL} />
 <meta property="og:site_name" content={siteName} />
 <meta property="og:locale" content="en_US" />
@@ -273,7 +281,7 @@ const finalJsonLd = {
 {article && article.tags && article.tags.map(tag => <meta property="article:tag" content={tag} />)}
 
 <!-- Twitter Card -->
-<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:card" content={largeCard ? 'summary_large_image' : 'summary'} />
 <meta name="twitter:title" content={fullTitle} />
 <meta name="twitter:description" content={description} />
 <meta name="twitter:image" content={ogImageUrl} />

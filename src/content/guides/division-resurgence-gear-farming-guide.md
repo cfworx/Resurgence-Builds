@@ -13,6 +13,8 @@ shareText: "Which missions lean toward which gear slots, where Tier 2 actually d
 videoId: "m5a01nBqv_U"
 videoTitle: "Gear Farming Made EASY | The Division Resurgence"
 videoChannel: "AgentHuntzman"
+videoUploadDate: "2026-06-03T03:36:01-07:00"
+videoDuration: "PT14M46S"
 faqs:
   - question: "Where do you farm Tier 2 gear in Division Resurgence?"
     answer: "At level 40, in a few places. Ubisoft's Season 2 Phase 2 notes give Weapon Kill and Main Mission daily quests a chance of T2. Creators point at Elite missions (AgentHuntzman calls them the best place, and TikTokAndy says the week's Elite Legendary mission drops T2 guns quite regularly), the weekly Elite Mission Challenge chest, and Legendary Precious Cargo. In the Dark Zone, AgentHuntzman calls the Heroic landmarks rare for T2 but rates the Heroic enemy leader's cache as the best spot there. RNG keeps its own schedule."

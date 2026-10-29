@@ -29,10 +29,13 @@ export interface Props {
   robots?: string;
   /** Override the canonical URL (defaults to the page's own URL). */
   canonical?: string;
+  /** Keep ads on a noindexed page (tag archives without an intro had them before the
+   *  robots tag moved here from the page's own <head> slot). */
+  keepAds?: boolean;
 }
 
-const { title, description, ogType, ogImage, article, keywords, breadcrumbs, jsonLd, faqs, noAds, noindex, robots, canonical } = Astro.props;
-const suppressAds = noAds || noindex || !!robots;
+const { title, description, ogType, ogImage, article, keywords, breadcrumbs, jsonLd, faqs, noAds, noindex, robots, canonical, keepAds } = Astro.props;
+const suppressAds = noAds || ((noindex || !!robots) && !keepAds);
 ---
 
 <!DOCTYPE html>
@@ -68,8 +71,15 @@ gtag('config', '${GA4_ID}');`}></script>
   <link rel="sitemap" href="/sitemap-index.xml" />
 
 
-  <!-- Self-hosted fonts (removes cross-origin latency) -->
-  <link rel="stylesheet" href="/fonts/fonts.css" />
+  <!-- Self-hosted fonts. The @font-face rules are inline (same as public/fonts/fonts.css) so the
+       browser doesn't wait on an extra render-blocking stylesheet before it can paint. Inter is a
+       variable font, so one file covers every weight (inter-500.woff2 was a byte-identical copy). -->
+  <!-- Preload the fonts used above the fold so they usually arrive before the first paint: when
+       a font swaps in late, wrapped text (the mono badges especially) reflows and moves the page. -->
+  <link rel="preload" href="/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/dm-sans-700.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/jetbrains-mono-400.woff2" as="font" type="font/woff2" crossorigin />
+  <style is:inline>@font-face{font-family:'DM Sans';font-style:normal;font-weight:700;font-display:swap;src:url('/fonts/dm-sans-700.woff2') format('woff2')}@font-face{font-family:'Inter';font-style:normal;font-weight:400 500;font-display:swap;src:url('/fonts/inter-400.woff2') format('woff2')}@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400;font-display:swap;src:url('/fonts/jetbrains-mono-400.woff2') format('woff2')}</style>
 
   <SEO
     title={title}

@@ -1,4 +1,5 @@
 ---
+import { tagHref } from '../utils/tag-href';
 import BaseLayout from './BaseLayout.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import SectionTag from '../components/SectionTag.astro';
@@ -31,6 +32,8 @@ export interface Props {
   videoId?: string;
   videoTitle?: string;
   videoChannel?: string;
+  videoUploadDate?: string;
+  videoDuration?: string;
   wordCount?: number;
 }
 
@@ -53,6 +56,8 @@ const {
   videoId,
   videoTitle,
   videoChannel,
+  videoUploadDate,
+  videoDuration,
   wordCount,
 } = Astro.props;
 
@@ -113,7 +118,7 @@ const howToLd = howTo ? {
     <h1 class="heading-accent">{title}</h1>
 
     <div class="article-meta">
-      <a href={`/tag/${category.toLowerCase().replace(/\s+/g, '-')}/`} class="tag">{category}</a>
+      <a href={tagHref(category)} class="tag">{category}</a>
       <div class="meta-line-wrap"><div class="meta-line">
         <span>By <a href={getAuthorUrl(author)} style="color: var(--accent); text-decoration: none;">{author}</a></span>
         <time datetime={lastUpdated.toISOString()}><strong>Last updated:</strong> {formattedDate}</time>
@@ -141,6 +146,8 @@ const howToLd = howTo ? {
           title={videoTitle || `${title}: Video Guide`}
           description={description}
           channelName={videoChannel}
+          uploadDate={videoUploadDate}
+          duration={videoDuration}
         />
       </div>
     )}

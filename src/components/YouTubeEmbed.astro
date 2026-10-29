@@ -17,8 +17,11 @@ export interface Props {
   title: string;
   /** Optional description for VideoObject schema */
   description?: string;
-  /** Optional upload date (ISO-8601) for schema */
+  /** Upload date (ISO-8601) as YouTube lists it. Google requires it for VideoObject,
+   *  so without it the video is embedded with no markup at all. */
   uploadDate?: string;
+  /** Optional length (ISO-8601 duration, e.g. PT16M45S) for schema */
+  duration?: string;
   /** Thumbnail quality: default, mqdefault, hqdefault, sddefault, maxresdefault */
   thumbnailQuality?: string;
   /** Optional channel name for schema */
@@ -30,6 +33,7 @@ const {
   title,
   description = '',
   uploadDate,
+  duration,
   thumbnailQuality = 'hqdefault',
   channelName,
 } = Astro.props;
@@ -44,9 +48,10 @@ const videoSchema = {
   name: title,
   description: description || title,
   thumbnailUrl: thumbnailUrl,
-  embedUrl: embedUrl.replace('&autoplay=1', ''),
+  embedUrl: `https://www.youtube-nocookie.com/embed/${videoId}`,
   contentUrl: watchUrl,
   ...(uploadDate && { uploadDate }),
+  ...(duration && { duration }),
   ...(channelName && {
     author: {
       '@type': 'Person',
@@ -72,7 +77,7 @@ const videoSchema = {
   </button>
 </div>
 
-<script type="application/ld+json" set:html={JSON.stringify(videoSchema)} />
+{uploadDate && <script type="application/ld+json" set:html={JSON.stringify({ '@context': 'https://schema.org', ...videoSchema })} />}
 
 <style>
   .yt-embed {

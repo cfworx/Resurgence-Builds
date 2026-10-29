@@ -16,14 +16,11 @@ shareTitle: "The nurse that eats boss attacks for breakfast"
 shareText: "Nadie's rank 7 Asia Combat Medicine build. 334k HP. 15.7k Armor. Throw healing stations, tank the boss, recount the history of mankind with the trigger held down."
 sources:
   - 'Nadie (Asia Server, Rank 7 Combat Medicine). Discord submission with in-game screenshots, leaderboard proof, and gameplay video, June 2026.'
-  - '<a href="https://www.youtube.com/watch?v=fSv46i-qtjw">Nadie, The Muscular Nurse Gameplay Walkthrough</a>, June 2026.'
+  - 'Nadie, The Muscular Nurse Gameplay Walkthrough (YouTube), June 2026. The video was set to private by October 29, 2026.'
   - 'In-game Division Resurgence Build Database, verified June 2026.'
   - '<a href="https://www.youtube.com/watch?v=OLJPNceH_jo">Died Again Gaming, How to Farm, New Agent Guide</a>, June 4, 2026 (gold OS Protocol odds).'
   - '<a href="https://www.youtube.com/watch?v=tn4ME4MVGyY">Died Again Gaming, Catching Up Before Weekly Reset (DAG LIVE)</a>, October 25, 2026 (the weekly gold OS Protocol).'
 plannerHash: "s=Field+Medic&sc=Combat+Medicine&n=The+Muscular+Nurse&ms=gs-14&m1=dr&m2=arm&gs=gs-14&g1=mhp&g2=dr&hs=gs-14&h1=dr&h2=rh&cs=gs-15&ct=ba-13&c1=rh&c2=scr&ps=gs-14&pt=bp-21&p1=scc&p2=dr&ks=gs-15&k1=arm&k2=scc&w1s=sw-10&w1tr=T2&w1t=wt-55&w1t2=wt-38&w1b1=sms&w1b1v=8.46&w1b2=rh&w1b2v=22.23&w2s=sw-15&w2tr=T2&w2t=wt-44&w2t2=wt-12&w2b1=mhp&w2b1v=18.62&w2b2=arm&w2b2v=12.76&os=os-54&sm1=smc-83&sm2=smc-86&sm3=smc-89"
-videoId: "fSv46i-qtjw"
-videoTitle: "Nadie: The Muscular Nurse Combat Medicine Build"
-videoChannel: "Nadie"
 faqs:
   - question: "What is the best Combat Medicine Field Medic build in Division Resurgence?"
     answer: "Nadie's Muscular Nurse is a top-10 Asia server Combat Medicine build running 4pc Healing Elites, 2pc Self-Propelled Shield, and Pummeling Shield OS Protocol. It produces 334k Health, 15.7k Armor, and 20% base Damage Reduction before any talent procs fire. The build tanks Elite Mission bosses while keeping the entire squad alive with healing stations."
@@ -44,7 +41,7 @@ faqs:
 
 ## What This Build Does
 
-> Build credit: **Nadie** from the **Asia Server**, **Rank 7 Combat Medicine Field Medic** and top 50 all specializations in Asia at 25,344 Power Score at the time of submission (June 2026). Submitted via our Discord with screenshots, leaderboard proof, and a gameplay video. Watch the build in action: [YouTube walkthrough](https://www.youtube.com/watch?v=fSv46i-qtjw).
+> Build credit: **Nadie** from the **Asia Server**, **Rank 7 Combat Medicine Field Medic** and top 50 all specializations in Asia at 25,344 Power Score at the time of submission (June 2026). Submitted via our Discord with screenshots, leaderboard proof, and a gameplay video. The YouTube walkthrough that went with it has since been set to private, so it is no longer embedded here.
 
 The first time Nadie shared a build with us, it was the [Involuntary Nap Time](/builds/involuntary-nap-time-bulwark-juggernaut-build/) Bulwark Juggernaut that immortal-stunned everything in PvP. Now he is back with the build he hinted at in that post: a Combat Medicine Field Medic he calls **The Muscular Nurse**, a tank-healer hybrid that runs the same [Pummeling Shield](/database/os-protocols/pummeling-shield/) OS Protocol but trades the Bulwark frame for a healing-focused playstyle that brutalizes Elite Missions.
 

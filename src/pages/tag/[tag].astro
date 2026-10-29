@@ -137,10 +137,7 @@ const description = `All Division Resurgence content tagged "${displayTag}": bui
 
 ---
 
-<BaseLayout {title} {description} breadcrumbs={breadcrumbItems}>
-  {!hasCustomIntro && (
-    <meta slot="head" name="robots" content="noindex,follow" />
-  )}
+<BaseLayout {title} {description} breadcrumbs={breadcrumbItems} robots={hasCustomIntro ? undefined : 'noindex, follow'} keepAds>
   <div class="container section">
     <Breadcrumbs items={breadcrumbItems} />
     <SectionTag label="Tag Archive" />

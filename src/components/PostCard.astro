@@ -1,4 +1,5 @@
 ---
+import { tagHref } from '../utils/tag-href';
 
 export interface Props {
   title: string;
@@ -62,7 +63,7 @@ const creator = (author.match(/via\s+([^)]+)\)?\s*$/) || [])[1]?.trim();
       {tags.length > 0 && (
         <div class="post-card__tags">
           {tags.slice(0, 4).map(tag => tagLinks
-            ? <a href={`/tag/${tag.toLowerCase().replace(/\s+/g, '-')}/`} class="tag" style="text-decoration:none;">{tag}</a>
+            ? <a href={tagHref(tag)} class="tag" style="text-decoration:none;">{tag}</a>
             : <span class="tag">{tag}</span>)}
         </div>
       )}

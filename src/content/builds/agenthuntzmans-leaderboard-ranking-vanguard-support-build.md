@@ -35,6 +35,8 @@ faqs:
 videoId: "b1ZjnGeeRKI"
 videoTitle: "AgentHuntzman: Best Scout Build in Division Resurgence"
 videoChannel: "AgentHuntzman"
+videoUploadDate: "2026-04-25T17:46:14-07:00"
+videoDuration: "PT16M45S"
 ---
 
 ## What This Build Does

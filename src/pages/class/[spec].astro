@@ -196,9 +196,11 @@ const boldStars = (t: string) => t
   faqs={faqs}
   ogType="article"
   article={{
-    // Fixed dates: class hubs were written for Patch 1.1.2.2 and got Season 2 notes on 2026-10-24.
+    // Fixed dates: class hubs were written for Patch 1.1.2.2, got Season 2 notes on 2026-10-24 and
+    // the creator-video corrections (Field Grenadier is a Firepower spec) on 2026-10-28.
+    // Change modifiedDate only when the hub text itself changes.
     publishDate: '2026-05-30T12:00:00.000Z',
-    modifiedDate: '2026-10-24T12:00:00.000Z',
+    modifiedDate: '2026-10-28T12:00:00.000Z',
     author: 'RapidF5',
     tags: [classData.name, 'builds', 'Division Resurgence', classData.role],
     wordCount: [classData.description, classData.perkOverview, classData.signatureTalents, classData.bestWeapons, ...(classData.howToPlay || [])].join(' ').split(/\s+/).filter(Boolean).length,

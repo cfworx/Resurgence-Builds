@@ -13,6 +13,8 @@ shareText: "There's a colored bar above every elite enemy telling you what damag
 videoId: "Mt3E4A0l0Zk"
 videoTitle: "SHD Manual: How Progression ACTUALLY Works | The Division Resurgence"
 videoChannel: "AgentHuntzman"
+videoUploadDate: "2026-05-22T03:40:31-07:00"
+videoDuration: "PT25M45S"
 faqs:
   - question: "What do the colored bars above enemy health mean in Division Resurgence?"
     answer: "They're the game's way of whispering 'hey, use this damage type.' Dark blue bar means the enemy is weak to Piercing damage. Light blue means weak to Shredding. Red means weak to Blast. The game puts the information right on the screen; reading it is on us. And most of us skipped the tutorial text to get to the shooting part."

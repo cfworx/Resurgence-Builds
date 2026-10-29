@@ -30,6 +30,19 @@ function titleFromUrl(url) {
     .replace(/\b\w/g, c => c.toUpperCase());
 }
 
+// The page's own <title> (minus the site name) and meta description, read from the build.
+const decode = (s) => s
+  .replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&amp;/g, '&');
+function pageMeta(url) {
+  const file = path.join(dist, new URL(url).pathname, 'index.html');
+  if (!fs.existsSync(file)) return null;
+  const html = fs.readFileSync(file, 'utf8');
+  const title = decode(html.match(/<title>([^<]*)<\/title>/)?.[1] || '').replace(/\s*·\s*Resurgence Builds$/, '').trim();
+  const description = decode(html.match(/<meta name="description" content="([^"]*)"/)?.[1] || '').trim();
+  return title ? { title: title.replace(/[[\]]/g, ''), description } : null;
+}
+const label = (url) => pageMeta(url)?.title || titleFromUrl(url);
+
 /* ── Priority pages ─────────────────────────────────────── */
 
 const PRIORITY_PATHS = [
@@ -55,8 +68,9 @@ const priorityEntries = PRIORITY_PATHS
   .filter(p => sitemapPathSet.has(p))
   .map(p => {
     const fullUrl = SITE + p;
-    const title = titleFromUrl(fullUrl);
-    return `- [${title}](${fullUrl})`;
+    const meta = pageMeta(fullUrl);
+    const title = meta?.title || titleFromUrl(fullUrl);
+    return meta?.description ? `- [${title}](${fullUrl}): ${meta.description}` : `- [${title}](${fullUrl})`;
   });
 
 /* ── Build output ───────────────────────────────────────── */
@@ -81,8 +95,7 @@ add('---', '');
 add('## Full Canonical URL Inventory', '');
 
 for (const url of sitemapUrls) {
-  const title = titleFromUrl(url);
-  add(`- [${title}](${url})`);
+  add(`- [${label(url)}](${url})`);
 }
 
 add('');

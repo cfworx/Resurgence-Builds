@@ -36,7 +36,7 @@ The background section is the good part. Chloe is "a gifted mathematician and cy
 
 ## Where she fits
 
-Spring Blossom Settlement isn't new: it's already on our [interactive map](/map/), with main and side missions of its own. Ubisoft's post doesn't say whether Chloé is a new face or an existing NPC getting a spotlight, so we won't guess.
+Spring Blossom Settlement isn't new: it's already on our [interactive map](/division-resurgence-interactive-map/), with main and side missions of its own. Ubisoft's post doesn't say whether Chloé is a new face or an existing NPC getting a spotlight, so we won't guess.
 
 The bigger question is whether this is the start of something. On October 21, Ubisoft extended Season 2 Phase 2 "until we are ready to release a much bigger update later this year" ([our coverage](/news/season-2-phase-2-extended/)), and the April roadmap promised a Season 3 story expansion this winter that would let you "learn more about the people and factions you have been introduced to" ([roadmap](/news/season-1-2-3-roadmap/)). A dossier on a support character fits that description. It's also exactly the kind of post a social team publishes in a quiet week. Until Ubisoft says more, treat it as lore, not a release date.
 

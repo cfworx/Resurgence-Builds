@@ -36,6 +36,8 @@ faqs:
 videoId: "1dAkSWoR7co"
 videoTitle: "RogueMadras: Updated Tactical Pharma Build Guide"
 videoChannel: "RogueMadras"
+videoUploadDate: "2026-05-26T09:24:39-07:00"
+videoDuration: "PT10M28S"
 ---
 
 ## What This Build Does

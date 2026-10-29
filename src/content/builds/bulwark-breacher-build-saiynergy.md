@@ -21,6 +21,8 @@ plannerHash: "s=Bulwark&sc=Breacher&n=Bulwark+Breacher+334k&ms=gs-1&m1=hsd&m2=ch
 videoId: "28lsRrnJ6Vg"
 videoTitle: "Saiynergy: Full Breacher Build Walkthrough"
 videoChannel: "Saiynergy"
+videoUploadDate: "2026-04-17T12:13:25-07:00"
+videoDuration: "PT19M27S"
 faqs:
   - question: "What is the best Breacher build in Division Resurgence?"
     answer: "Saiynergy's Bulwark Breacher build runs 4pc Fury Strike, 2pc Phalanx Attack, a Lightweight M4, a First Wave Vector 45 ACP with Strained and Adaptation, and Death From Afar to weaponize Headshot Damage. His M4 carries Steady Hands and Medical Accuracy; we recommend Killer and Breadbasket instead. It sat at 334k DPS with 7,679 Armor on his original loadout when Saiynergy recorded it on Patch 1.1.2.2."

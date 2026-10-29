@@ -16,6 +16,8 @@ shareText: "About 60% crit out of combat, close to 100% inside Tactical Link. Ti
 videoId: "vtsTpS78aTA"
 videoTitle: "TikTokAndy: BEGINNER Vanguard DPS Build (W/ Any Weapon)"
 videoChannel: "TikTokAndy"
+videoUploadDate: "2026-09-19T13:57:21-07:00"
+videoDuration: "PT49M54S"
 faqs:
   - question: "What is a good beginner Vanguard build in Division Resurgence?"
     answer: "TikTokAndy's any-weapon Commando is a solid template: 4-piece Fury Strike plus 2-piece Phalanx Attack, Injured Concealment II on the body armor, Siege II on the backpack, Augmented Lethality as the OS Protocol, and Commando, Optimized Armor and Targeted Surveillance on the skills. The idea is to stack Weapon Critical Hit Chance so Tactical Link takes you close to 100%. He ran it about two weeks into the game, and later moved on to his Double Barrel build once he found the shotgun."

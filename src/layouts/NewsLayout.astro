@@ -1,4 +1,5 @@
 ---
+import { tagHref } from '../utils/tag-href';
 import BaseLayout from './BaseLayout.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import SectionTag from '../components/SectionTag.astro';
@@ -109,7 +110,7 @@ const speakableLd = {
 
       {tags.length > 0 && (
         <div style="display:flex;gap:var(--sp-1);flex-wrap:wrap;margin-bottom:var(--sp-6);">
-          {tags.map(tag => <a href={`/tag/${tag.toLowerCase().replace(/\s+/g, '-')}/`} class="tag">{tag}</a>)}
+          {tags.map(tag => <a href={tagHref(tag)} class="tag">{tag}</a>)}
         </div>
       )}
 

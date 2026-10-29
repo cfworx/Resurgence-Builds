@@ -13,6 +13,8 @@ shareText: "Hostile Nests pay more mods since Phase 2, and TikTokAndy found a He
 videoId: "UJTNo_5nQA0"
 videoTitle: "UNLIMITED Purple & Gold Mods & Weapon Attachments | The Division Resurgence"
 videoChannel: "TikTokAndy"
+videoUploadDate: "2026-09-26T02:39:49-07:00"
+videoDuration: "PT14M21S"
 faqs:
   - question: "Where is the best place to farm mods in Division Resurgence?"
     answer: "Hostile Nests. Ubisoft increased their Weapon Mod and Gear Mod rewards in Season 2 Phase 2, and Hostile Nest daily quests pay mods too. TikTokAndy's favorite is a Heroic nest with a named boss that only appears for a limited time; he reports a purple every run. The best nest is still the one your matchmaking queue actually fills."

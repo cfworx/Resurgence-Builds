@@ -37,6 +37,8 @@ faqs:
 videoId: "zJ5t0lGR1gU"
 videoTitle: "PVE Enjoyer: Demolitionist Build Guide"
 videoChannel: "PVE Enjoyer"
+videoUploadDate: "2026-04-18T14:24:44-07:00"
+videoDuration: "PT9M25S"
 howTo:
   name: "How to Stack Skill Multi-Shot Chance on a Demolitionist Build"
   description: "Step-by-step guide to stacking 35-45% Skill Multi-Shot Chance on a Division Resurgence Demolitionist using Fire Cycle T2, Toymaker II, and the right weapon and firmware rolls."

@@ -273,6 +273,30 @@
 /database/weapons/acr-ss/ /database/weapons/ 301
 /database/weapons/acr-ss /database/weapons/ 301
 
+# Old URLs that astro.config.mjs turned into HTML "meta refresh" pages (a static build can't
+# send a real redirect). These real 301s run first. /build-planner also keeps the #build part of
+# old share links, which a meta refresh drops.
+/build-planner/     /builder/  301
+/build-planner      /builder/  301
+/map/               /division-resurgence-interactive-map/  301
+/map                /division-resurgence-interactive-map/  301
+/tag/general/       /guides/  301
+/tag/general        /guides/  301
+/tag/v1.1.1/        /patch-notes/  301
+/tag/v1.1.1         /patch-notes/  301
+/tag/v1.1.2/        /patch-notes/  301
+/tag/v1.1.2         /patch-notes/  301
+/tag/v1.1.2.2/      /patch-notes/  301
+/tag/v1.1.2.2       /patch-notes/  301
+/tag/v1.2.0/        /patch-notes/  301
+/tag/v1.2.0         /patch-notes/  301
+/tag/v1.2.1/        /patch-notes/  301
+/tag/v1.2.1         /patch-notes/  301
+/ai.txt             /llms.txt  301
+/ai.txt/            /llms.txt  301
+/.well-known/ai.txt   /llms.txt  301
+/.well-known/ai.txt/  /llms.txt  301
+
 # Domain-level rules go last: Cloudflare wants static redirects before dynamic ones (splats), and with these
 # three at the top only the first ~100 rules of this file were being applied.
 https://www.resurgencebuilds.com/* https://resurgencebuilds.com/:splat 301

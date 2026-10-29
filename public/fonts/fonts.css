@@ -8,20 +8,14 @@
   src: url('/fonts/dm-sans-700.woff2') format('woff2');
 }
 
+/* Inter is a variable font: one file covers every weight. Not linked any more; BaseLayout.astro
+   inlines these rules. Kept in step with it for reference. */
 @font-face {
   font-family: 'Inter';
   font-style: normal;
-  font-weight: 400;
+  font-weight: 400 500;
   font-display: swap;
   src: url('/fonts/inter-400.woff2') format('woff2');
-}
-
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url('/fonts/inter-500.woff2') format('woff2');
 }
 
 @font-face {

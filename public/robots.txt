@@ -9,9 +9,14 @@ Allow: /
 Disallow: /api/
 Disallow: /pagefind/
 
+# A crawler that has its own group below ignores the * group above, so every
+# group that allows crawling repeats the two Disallow lines.
+
 # Google Images: explicitly allow image directory
 User-agent: Googlebot-Image
 Allow: /images/
+Disallow: /api/
+Disallow: /pagefind/
 
 # ByteDance training crawler: takes content, gives nothing back
 User-agent: Bytespider
@@ -19,16 +24,12 @@ Disallow: /
 
 # AI search/citation bots - ALLOW (for discoverability)
 User-agent: OAI-SearchBot
-Allow: /
-
 User-agent: ChatGPT-User
-Allow: /
-
 User-agent: PerplexityBot
-Allow: /
-
 User-agent: Perplexity-User
 Allow: /
+Disallow: /api/
+Disallow: /pagefind/
 
 # AI training bots - DISALLOW
 User-agent: GPTBot
