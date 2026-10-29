@@ -5,8 +5,8 @@ publishDate: 2026-10-25
 lastUpdated: 2026-10-29T12:00:00Z
 tags: ["Dark Zone", "PvP", "extraction", "Rogue", "Season 2"]
 description: "How the Division Resurgence Dark Zone works in Season 2: 20-minute runs, contamination, extraction and the Smuggler, going Rogue, landmarks, DZ Credits and the vendor."
-featuredImage: "/images/season-roadmap.webp"
-imageAlt: "A Division agent in winter gear reading a Dark Zone map on a snowy New York street"
+featuredImage: "/images/guides/division-resurgence-dark-zone-guide-base-of-operations-map-1200.webp"
+imageAlt: "An agent studying a hand-drawn New York map marked DZ in The Division Resurgence's Base of Operations, with the title Dark Zone Guide"
 author: "RapidF5"
 shareTitle: "Twenty minutes, twenty agents, one rope"
 shareText: "Contamination, extraction, the Smuggler, going Rogue and what the vendor sells. The Division Resurgence Dark Zone, explained."

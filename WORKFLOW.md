@@ -216,7 +216,7 @@ Before publishing ANY post (build, guide, or news), every item below must be che
 
 ### Image Requirements
 
-- [ ] Image generated or sourced (no placeholders ever)
+- [ ] In-game image only: a frame from our recordings or an owner screenshot, edits and titles allowed, no purely AI-generated art (see CLAUDE.md)
 - [ ] Filename uses SEO-friendly keyword-dashes (NOT `image1.png` or `screenshot.png`)
 - [ ] File placed in `public/images/` (or `public/images/news/` for news posts)
 - [ ] Image is at least 1024x1024 for proper X card rendering

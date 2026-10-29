@@ -5,8 +5,8 @@ updatedDate: 2026-10-24
 author: "RapidF5"
 tags: ["News", "Season 2", "Alert", "Roadmap"]
 description: "Ubisoft extended Division Resurgence Season 2 Phase 2 until a much bigger update later this year. What that means for the pass, events and Season 3."
-featuredImage: "/images/season-roadmap.webp"
-imageAlt: "A Division agent in winter gear reading a Dark Zone map on a snowy New York street"
+featuredImage: "/images/news/division-resurgence-season-2-phase-2-extended-magical-season-1200.webp"
+imageAlt: "An agent walking under a neon 'a Magical Season' sign on a snowy New York street at night in The Division Resurgence"
 shareTitle: "Phase 2 just got extended"
 shareText: "No new phase on the usual six-week clock. Ubisoft says a much bigger update is coming later this year. Here's what we know and what we don't."
 faqs:

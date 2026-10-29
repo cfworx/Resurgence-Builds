@@ -1,5 +1,6 @@
 ---
 import { tagHref } from '../utils/tag-href';
+import { postImage, srcsetAttr, CARD_SIZES } from '../utils/post-images';
 export interface Props {
   title: string;
   href: string;
@@ -17,6 +18,10 @@ export interface Props {
 }
 
 const { title, href, specialization, playstyle, description, patch, pve, pvp, tags = [], featuredImage, imageAlt, eager = false } = Astro.props;
+// Sized copies of in-game images (scripts/build-post-images.mjs). Wide loadout screenshots are shown
+// whole (contain) over the blurred copy instead of being cropped to the card's 16:9 frame.
+const img = postImage(featuredImage);
+const wide = img ? img.width / img.height > 1.95 : false;
 
 const getSpecClass = (spec: string) => {
   switch (spec) {
@@ -33,15 +38,17 @@ const getSpecClass = (spec: string) => {
 <article class={`card ${featuredImage ? 'card--has-image' : ''}`} style="position: relative;">
 
     {featuredImage && (
-      <div class="build-card__image" data-bg={featuredImage}>
+      <div class={`build-card__image${wide ? ' build-card__image--wide' : ''}`} data-bg={img?.small || featuredImage}>
         <div class="build-card__image-blur"></div>
         <img
           src={featuredImage}
+          srcset={srcsetAttr(img)}
+          sizes={img ? CARD_SIZES : undefined}
           alt={imageAlt || `${title}: ${specialization} ${playstyle} build for Division Resurgence`}
           loading={eager ? 'eager' : 'lazy'}
           decoding="async"
-          width="600"
-          height="315"
+          width={img?.width || 600}
+          height={img?.height || 315}
         />
       </div>
     )}
@@ -110,6 +117,10 @@ const getSpecClass = (spec: string) => {
     display: block;
     transition: transform 0.3s ease;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  }
+
+  .build-card__image--wide img {
+    object-fit: contain;
   }
 
   .card:hover .build-card__image img {

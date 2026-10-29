@@ -1,5 +1,6 @@
 ---
 import { tagHref } from '../utils/tag-href';
+import { postImage, srcsetAttr, CARD_SIZES } from '../utils/post-images';
 
 export interface Props {
   title: string;
@@ -18,6 +19,8 @@ export interface Props {
 }
 
 const { title, href, date, author, description, type, tags = [], featuredImage, imageAlt, tagLinks = true, eager = false } = Astro.props;
+const img = postImage(featuredImage);
+const wide = img ? img.width / img.height > 1.95 : false;
 
 const formattedDate = date.toLocaleDateString('en-US', { timeZone: 'UTC',
   month: 'short',
@@ -40,15 +43,17 @@ const creator = (author.match(/via\s+([^)]+)\)?\s*$/) || [])[1]?.trim();
 
 <article class={`card post-card ${featuredImage ? 'post-card--has-image' : ''}`} data-type={type} data-tags={JSON.stringify(tags)} style="position: relative;">
     {featuredImage && (
-      <div class="post-card__image" data-bg={featuredImage}>
+      <div class={`post-card__image${wide ? ' post-card__image--wide' : ''}`} data-bg={img?.small || featuredImage}>
         <div class="post-card__image-blur"></div>
         <img
           src={featuredImage}
+          srcset={srcsetAttr(img)}
+          sizes={img ? CARD_SIZES : undefined}
           alt={imageAlt || `Featured image for ${title}`}
           loading={eager ? 'eager' : 'lazy'}
           decoding="async"
-          width="600"
-          height="315"
+          width={img?.width || 600}
+          height={img?.height || 315}
         />
       </div>
     )}
@@ -187,6 +192,10 @@ const creator = (author.match(/via\s+([^)]+)\)?\s*$/) || [])[1]?.trim();
     filter: saturate(0.92) brightness(0.96);
     transform: scale(1) translateZ(0);
     will-change: transform;
+  }
+
+  .post-card__image--wide img {
+    object-fit: contain;
   }
 
   .post-card:hover .post-card__image img {

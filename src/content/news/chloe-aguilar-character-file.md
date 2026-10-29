@@ -4,8 +4,8 @@ publishDate: 2026-10-27
 author: "RapidF5"
 tags: ["News", "Season 2", "Roadmap", "Community"]
 description: "Ubisoft's October 27 character file on Chloé Aguilar, the Division's ex-NSA comms expert: her background, Faye Lau's role and what it means."
-featuredImage: "/images/season-roadmap.webp"
-imageAlt: "A Division agent in winter gear reading a Dark Zone map on a snowy New York street"
+featuredImage: "/images/news/division-resurgence-chloe-aguilar-character-file-notes-wall-1200.webp"
+imageAlt: "An agent at a desk in front of a wall covered in pinned notes and photos in The Division Resurgence"
 shareTitle: "The Division's comms expert gets a file"
 shareText: "Ex-NSA, off the grid, recruited by Faye Lau. Ubisoft's new character file on Chloé Aguilar, and what it does and doesn't tell us about the next update."
 faqs:

@@ -42,3 +42,7 @@ public/fonts/download-fonts.mjs
 # design audit output (scripts/design-audit.cjs)
 design-audit*.json
 design-audit*-summary.txt
+
+# Talent video scans: intermediate frames, tiles and review sheets (rebuild with tools/talent_sources.py)
+research/build-database/tools/work/
+__pycache__/

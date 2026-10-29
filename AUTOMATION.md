@@ -173,7 +173,7 @@ video title is not a source for anything you publish.
   Guides: `publishDate` (first published, never changes) and `lastUpdated` (bump on material updates). A schema error breaks the build.
 - **Dates:** `publishDate`/`patchDate` = the day Ubisoft announced or released it (UTC date). Use `updatedDate` when you
   materially update an existing post (it shows "Updated" and feeds `dateModified` and the sitemap).
-- **Images:** no new image generation. You may reuse an existing image from `public/images/` when it genuinely fits the
+- **Images:** in-game pictures only (CLAUDE.md), and no new image generation. You may reuse an existing in-game image from `public/images/` when it genuinely fits the
   topic (for example `news/division-resurgence-server-hotfix-june-26-2026-hero.webp` for hotfix posts). Never reuse an
   image whose text belongs to a different topic or that mocks Ubisoft. Otherwise omit `featuredImage`/`imageAlt`.
 - **Quotes:** short verbatim quotes of official Ubisoft text are fine. Anything from press or creators: under 15 words.

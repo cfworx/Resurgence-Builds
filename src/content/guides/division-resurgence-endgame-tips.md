@@ -5,8 +5,8 @@ publishDate: 2026-10-24
 lastUpdated: 2026-10-29T12:00:00Z
 tags: ["endgame", "Season 2", "farming", "build-guide", "os-protocol"]
 description: "What to do after level 40 in Division Resurgence Season 2: daily quest rewards, upgrade rules, SHD level, proficiency, crafting and creator tips."
-featuredImage: "/images/division-resurgence-shd-manual-progression-guide.webp"
-imageAlt: "A Division agent surrounded by a golden SHD emblem as a Max Level Reached, level 40 banner appears"
+featuredImage: "/images/guides/division-resurgence-endgame-tips-patrol-schedules-1200.webp"
+imageAlt: "An agent next to a Patrol Schedules whiteboard in The Division Resurgence's Base of Operations, with the title Endgame Tips"
 author: "RapidF5"
 shareTitle: "You hit 40. Now the real game starts."
 shareText: "Level 40 is where the loot starts rolling Tier 2. The daily routine, the upgrade rules, and the mistakes two creators wish they had avoided."

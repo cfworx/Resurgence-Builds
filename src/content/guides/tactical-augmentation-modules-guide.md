@@ -5,8 +5,8 @@ publishDate: 2026-09-02
 lastUpdated: 2026-10-29T12:00:00Z
 tags: ["tactical-augmentation", "endgame", "armory", "exotic-weapons", "Season 2"]
 description: "Division Resurgence Tactical Augmentation Modules explained: what TAMs do, where to get them, exotic TAM odds, manuals and what to buy first."
-featuredImage: "/images/division-resurgence-shd-manual-progression-guide.webp"
-imageAlt: "A Division agent surrounded by a golden SHD emblem as a level 40 banner appears"
+featuredImage: "/images/guides/division-resurgence-tactical-augmentation-modules-guide-map-room-1200.webp"
+imageAlt: "An agent at a large Manhattan map in The Division Resurgence's Base of Operations, with the title Tactical Augmentation Modules"
 author: "RapidF5"
 shareTitle: "The stat gap nobody explains at 40"
 shareText: "Tactical Augmentation Modules are the biggest power jump after level 40. What they do, where every one comes from, and the odds on exotic TAMs."

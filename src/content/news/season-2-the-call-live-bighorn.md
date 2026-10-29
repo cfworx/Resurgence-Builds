@@ -5,8 +5,8 @@ updatedDate: 2026-10-24
 author: "RapidF5"
 tags: ["News", "Season 2", "Exotic", "Events", "Steam"]
 description: "Division Resurgence Season 2 Phase 1 The Call is live: free Bighorn exotic AR, a 50-tier pass, four timed events and the Steam launch on August 5."
-featuredImage: "/images/resurgence-youtube-banner.webp"
-imageAlt: "Division agents fighting through a snowy New York street beneath a neon Division sign"
+featuredImage: "/images/news/division-resurgence-season-2-the-call-live-signal-source-1200.webp"
+imageAlt: "An agent by an abandoned police car in snowy New York as ISAC says 'Triangulating transmitter location, stand by.' in The Division Resurgence"
 shareTitle: "Season 2 answered the call"
 shareText: "Free Bighorn exotic, a 50-tier pass, four speedrun-style events and the Steam launch on the same day. Here's what's new."
 faqs:

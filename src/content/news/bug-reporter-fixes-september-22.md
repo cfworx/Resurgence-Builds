@@ -5,8 +5,8 @@ updatedDate: 2026-10-24
 author: "RapidF5"
 tags: ["News", "Bugs", "Season 2", "Community"]
 description: "Ubisoft's bug reporter marked the Division Resurgence 30fps lock, Bighorn first person, blank exotic T2 window and a proficiency bug Done on Sep 22."
-featuredImage: "/images/patch-notes/division-resurgence-phase-2-patch-notes-hero.webp"
-imageAlt: "A Division agent stomping on cockroaches in the snow, our tribute to bugs going to Done"
+featuredImage: "/images/news/division-resurgence-bug-fixes-stop-the-spread-of-bugs-1200.webp"
+imageAlt: "An agent at a Base of Operations window in The Division Resurgence, where we edited the 'Stop the spread of germs' poster to read 'Stop the spread of bugs'"
 shareTitle: "Four bugs just went to Done"
 shareText: "The 30fps lock, the Bighorn's surprise first-person view and the blank exotic T2 window are all marked Done on Ubisoft's bug reporter."
 faqs:

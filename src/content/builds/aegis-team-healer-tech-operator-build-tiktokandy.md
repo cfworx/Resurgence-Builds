@@ -10,6 +10,8 @@ patch: "Season 2 · Phase 2"
 verified: false
 tags: ["tech-operator", "Aegis Operations", "healer", "support", "build-guide", "Season 2", "Long-term Effect", "Mechanical Expert"]
 description: "TikTokAndy's Aegis Operations team healer: Defender Drone, four Mender Drones, Long-term Effect 4pc + Mechanical Expert 2pc, Recursive Treatment, Brainstorm."
+featuredImage: "/images/builds/division-resurgence-aegis-team-healer-tech-operator-build-tiktokandy-loadout-1200.webp"
+imageAlt: "TikTokAndy's Aegis team healer Tech Operator loadout screen in The Division Resurgence: 22.57k power score, 598k DPS, an MP7 and a Vector, and a level 42 OS Protocol"
 author: "RapidF5 (via TikTokAndy)"
 shareTitle: "Your DPS player's favorite teammate"
 shareText: "A Defender Drone, four Mender Drones that never seem to run out, and heals every few seconds. TikTokAndy's Aegis team healer, explained."

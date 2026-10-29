@@ -5,8 +5,8 @@ patchDate: 2026-08-05
 updatedDate: 2026-10-24
 author: "RapidF5"
 summary: "Season 2 Phase 1 The Call patch notes: damage type rolls removed, weapon and exotic mod rework, 15h crafting, Shockwave Spike and Commando nerfs."
-featuredImage: "/images/resurgence-youtube-banner.webp"
-imageAlt: "Division agents fighting through a snowy New York street beneath a neon Division sign"
+featuredImage: "/images/patch-notes/division-resurgence-season-2-the-call-patch-notes-isac-signal-1200.webp"
+imageAlt: "An agent on a foggy, snowy New York street as ISAC reports 'Missing agent signal detected nearby.' in The Division Resurgence, with the title Season 2: The Call"
 shareTitle: "The Call patch notes, translated"
 shareText: "Damage type rolls are gone, crafting got 9 hours faster, and the Double Barrel shotgun got the nerf everyone saw coming."
 faqs:

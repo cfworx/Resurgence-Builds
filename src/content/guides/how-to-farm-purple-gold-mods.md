@@ -5,8 +5,8 @@ publishDate: 2026-10-24
 lastUpdated: 2026-10-26T12:00:00Z
 tags: ["farming", "mods", "Season 2", "Exotic", "build-guide"]
 description: "Farm purple and gold weapon and gear mods in Division Resurgence Season 2: Hostile Nests, daily quests, exotic mod sources and TikTokAndy's method."
-featuredImage: "/images/division-resurgence-best-starter-builds.webp"
-imageAlt: "Three Division agents fighting hostile enemies on a snowy New York street"
+featuredImage: "/images/guides/division-resurgence-purple-gold-mods-farming-firefight-1200.webp"
+imageAlt: "An agent aiming down a snowy New York street at enemies in The Division Resurgence, with the title Purple and Gold Mods"
 author: "RapidF5"
 shareTitle: "Stop praying for gold mods"
 shareText: "Hostile Nests pay more mods since Phase 2, and TikTokAndy found a Heroic nest he says drops purples every run. Here is the whole farm."

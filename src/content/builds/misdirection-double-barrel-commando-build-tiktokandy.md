@@ -10,8 +10,8 @@ patch: "Season 2 · Phase 2"
 verified: false
 tags: ["vanguard", "build-guide", "Season 2", "Phalanx Attack", "Double Barrel"]
 description: "TikTokAndy's Season 2 Double Barrel Commando build: Misdirection Insurance, Still Alive II, Phalanx Attack + Gunny Johnny, three shells, Cover Shooter."
-featuredImage: "/images/division-resurgence-vanguard-double-barrel-shotgun-pve-build.webp"
-imageAlt: "A grinning Division agent firing a double barrel shotgun while his shield-carrying teammate begs for help"
+featuredImage: "/images/builds/division-resurgence-misdirection-double-barrel-commando-build-street-fight-1200.webp"
+imageAlt: "An agent trading fire with enemies on a snowy New York avenue in The Division Resurgence, damage numbers flying"
 author: "RapidF5 (via TikTokAndy)"
 shareTitle: "Two shells? Not anymore."
 shareText: "Misdirection Insurance, a third shell and every bullet refund in the Commando kit. TikTokAndy's Season 2 Double Barrel build, explained."

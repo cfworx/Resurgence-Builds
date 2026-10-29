@@ -5,8 +5,8 @@ publishDate: 2026-06-02
 lastUpdated: 2026-10-28T12:00:00Z
 tags: ["stats", "firepower", "engineering", "toughness", "build-guide"]
 description: "Division Resurgence stats explained: Firepower, Toughness, Engineering, crit, multi-shot, the 80% damage reduction cap and how talents scale."
-featuredImage: "/images/division-resurgence-best-pve-dps-builds.webp"
-imageAlt: "A surreal portrait of an agent whose face breaks apart into body armor, weapon parts and floating stat numbers"
+featuredImage: "/images/guides/division-resurgence-stats-explained-shooting-range-1200.webp"
+imageAlt: "An agent crouched behind sandbags at the shooting range in The Division Resurgence's Base of Operations, with the title Stats Explained"
 author: "RapidF5"
 shareTitle: "Your stat sheet, translated"
 shareText: "Firepower, Toughness, Engineering, multi-shot, the 80% damage reduction cap and how talent ranks scale. Every stat in Division Resurgence, explained."

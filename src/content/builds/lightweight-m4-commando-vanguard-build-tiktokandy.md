@@ -10,8 +10,8 @@ patch: "Season 2 · Phase 2"
 verified: false
 tags: ["vanguard", "build-guide", "Season 2", "Lightweight M4", "Phalanx Attack"]
 description: "TikTokAndy's Lightweight M4 Vanguard Commando: Unhinged + Precise Support II, Phalanx and Gunny Johnny, Explosive Round, six stars on floor 20."
-featuredImage: "/images/best-pve-dps-builds-division-resurgence.webp"
-imageAlt: "A squad of Division agents firing assault rifles down a snowy, burning New York street"
+featuredImage: "/images/builds/division-resurgence-lightweight-m4-commando-vanguard-build-tiktokandy-loadout-1200.webp"
+imageAlt: "TikTokAndy's Vanguard loadout screen from his Lightweight M4 Commando video in The Division Resurgence: 25.73k power score, 1.04m DPS and six level 50 gear pieces"
 author: "RapidF5 (via TikTokAndy)"
 shareTitle: "The M4 that six-starred floor 20"
 shareText: "TikTokAndy benched his Double Barrel for a Lightweight M4 and six-starred Lone Wolf floor 20 on the first try. Here is the whole loadout."

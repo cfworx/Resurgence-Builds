@@ -9,6 +9,7 @@ import GiscusComments from '../components/GiscusComments.astro';
 import NewsletterSignup from '../components/NewsletterSignup.astro';
 import { getCollection } from 'astro:content';
 import { getAuthorUrl } from '../utils/author';
+import { postImage, srcsetAttr, HERO_SIZES } from '../utils/post-images';
 
 export interface Props {
   title: string;
@@ -45,6 +46,7 @@ export interface Props {
 }
 
 const { title, description, specialization, playstyle, patch, verified = true, lastUpdated, pve, pvp, tags, author, featuredImage, imageAlt, shareTitle, shareText, headings = [], faqs = [], sources = [], plannerHash, videoId, videoTitle, videoChannel, videoUploadDate, videoDuration, howTo, wordCount } = Astro.props;
+const heroImg = postImage(featuredImage);
 
 const siteUrl = 'https://resurgencebuilds.com';
 
@@ -113,7 +115,7 @@ const redditShareUrl = `https://reddit.com/submit?url=${encodeURIComponent(Astro
   jsonLd={howToLd ? howToLd : undefined}
 >
   {featuredImage && (
-    <link rel="preload" as="image" href={featuredImage} fetchpriority="high" slot="head" />
+    <link rel="preload" as="image" href={featuredImage} imagesrcset={srcsetAttr(heroImg)} imagesizes={heroImg ? HERO_SIZES : undefined} fetchpriority="high" slot="head" />
   )}
   <div class="container section">
     <Breadcrumbs items={breadcrumbItems} />
@@ -172,13 +174,15 @@ const redditShareUrl = `https://reddit.com/submit?url=${encodeURIComponent(Astro
 
       <article class="prose build-article">
         {featuredImage && (
-          <div class="build-hero" style={`background-image: url('${featuredImage}')`}>
+          <div class="build-hero" style={`background-image: url('${heroImg?.small || featuredImage}')`}>
             <div class="build-hero__blur"></div>
             <img
               src={featuredImage}
+              srcset={srcsetAttr(heroImg)}
+              sizes={heroImg ? HERO_SIZES : undefined}
               alt={imageAlt || `${title}: ${specialization} ${playstyle} build guide for Division Resurgence`}
-              width="1200"
-              height="630"
+              width={heroImg?.width || 1200}
+              height={heroImg?.height || 630}
               loading="eager"
               decoding="async"
               fetchpriority="high"

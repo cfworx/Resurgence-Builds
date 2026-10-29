@@ -5,8 +5,8 @@ publishDate: 2026-05-08
 lastUpdated: 2026-10-29T12:00:00Z
 tags: ["beginner", "new-player", "leveling", "build-guide", "Season 2"]
 description: "New to Division Resurgence? Your level 1 to 40 order of operations: pick a spec, stack one stat, save your materials and skip the classic traps."
-featuredImage: "/images/division-resurgence-best-starter-builds.webp"
-imageAlt: "Three Division agents advancing down a snowy New York street, one carrying a glowing orange backpack"
+featuredImage: "/images/guides/division-resurgence-beginner-guide-new-york-street-1200.webp"
+imageAlt: "An agent walking past a police car on a snowy New York street in The Division Resurgence, with the title Beginner Guide"
 author: "RapidF5"
 shareTitle: "Level 1 to 40 without the regrets"
 shareText: "Every veteran wishes someone had told them this on day one: what to upgrade, what to save, and the in-game menu that shows every talent's real numbers."

@@ -5,6 +5,7 @@ import Breadcrumbs from '../components/Breadcrumbs.astro';
 import SectionTag from '../components/SectionTag.astro';
 import GiscusComments from '../components/GiscusComments.astro';
 import { getAuthorUrl } from '../utils/author';
+import { postImage, srcsetAttr, HERO_SIZES } from '../utils/post-images';
 
 export interface Props {
   title: string;
@@ -26,6 +27,7 @@ export interface Props {
 }
 
 const { title, description, publishDate, updatedDate, author, tags, parentPath, parentLabel, image, imageAlt, shareTitle, shareText, headings = [], faqs = [], wordCount } = Astro.props;
+const heroImg = postImage(image);
 
 const twitterShareUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(title)}&url=${encodeURIComponent(Astro.url.href)}`;
 const redditShareUrl = `https://reddit.com/submit?url=${encodeURIComponent(Astro.url.href)}&title=${encodeURIComponent(title)}`;
@@ -73,7 +75,7 @@ const speakableLd = {
   jsonLd={speakableLd}
 >
   {image && (
-    <link rel="preload" as="image" href={image} fetchpriority="high" slot="head" />
+    <link rel="preload" as="image" href={image} imagesrcset={srcsetAttr(heroImg)} imagesizes={heroImg ? HERO_SIZES : undefined} fetchpriority="high" slot="head" />
   )}
   <div class="container section">
     <Breadcrumbs items={breadcrumbItems} />
@@ -89,7 +91,7 @@ const speakableLd = {
       </div></div></div>
 
       {image && (
-        <img src={image} alt={imageAlt || title} width="1200" height="630" style="aspect-ratio:1200/630; object-fit: cover; width: 100%; height: auto; margin-top: var(--sp-4); margin-bottom: var(--sp-6); border-radius: 4px;" loading="eager" fetchpriority="high" decoding="async" />
+        <img src={image} srcset={srcsetAttr(heroImg)} sizes={heroImg ? HERO_SIZES : undefined} alt={imageAlt || title} width={heroImg?.width || 1200} height={heroImg?.height || 630} style="aspect-ratio:1200/630; object-fit: cover; width: 100%; height: auto; margin-top: var(--sp-4); margin-bottom: var(--sp-6); border-radius: 4px;" loading="eager" fetchpriority="high" decoding="async" />
       )}
 
       {tocItems.length > 0 && (

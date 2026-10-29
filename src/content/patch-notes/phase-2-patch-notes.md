@@ -5,8 +5,8 @@ patchDate: "2026-05-12"
 updatedDate: 2026-10-28
 author: "RapidF5"
 summary: "The official Division Resurgence patch notes for Season 1 Phase 2. Featuring new events, the free Strawberry Milkshake exotic weapon, and Dark Zone vendor updates."
-featuredImage: "/images/patch-notes/division-resurgence-phase-2-patch-notes-hero.jpg"
-imageAlt: "A Division agent pulling a goofy face with his tongue out while holding a rifle"
+featuredImage: "/images/patch-notes/division-resurgence-season-1-phase-2-patch-notes-firefight-1200.webp"
+imageAlt: "An agent firing at enemies as an explosion goes off on a New York street in The Division Resurgence, with the title Season 1 Phase 2 patch notes"
 shareTitle: "Save them from reading"
 shareText: "Tweet this summary so your friends don't have to read a 10-page novel."
 

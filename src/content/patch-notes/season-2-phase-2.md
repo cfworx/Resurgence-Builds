@@ -5,8 +5,8 @@ patchDate: 2026-09-16
 updatedDate: 2026-10-28
 author: "RapidF5"
 summary: "Season 2 Phase 2 patch notes: Diamondback exotic, Exotic Sealed Caches, big Demolitionist buffs, no daily XP cap and cheaper Dark Zone exotics."
-featuredImage: "/images/division-resurgence-demolitionist-explosive-solo-build.webp"
-imageAlt: "A wide-eyed Demolitionist agent with a grenade launcher taking cover as explosions tear through New York"
+featuredImage: "/images/patch-notes/division-resurgence-season-2-phase-2-patch-notes-base-of-operations-1200.webp"
+imageAlt: "An agent in front of an American flag in The Division Resurgence's Base of Operations, with the title Season 2 Phase 2 patch notes"
 shareTitle: "Demolitionist finally got love"
 shareText: "Seeker Mine cooldown cut, Strong Arm cooldown down to 6 seconds, the daily XP cap is gone and old exotics are back in caches."
 faqs:

@@ -7,6 +7,7 @@ import AdSenseUnit from '../components/AdSenseUnit.astro';
 import YouTubeEmbed from '../components/YouTubeEmbed.astro';
 import GiscusComments from '../components/GiscusComments.astro';
 import { getAuthorUrl } from '../utils/author';
+import { postImage, srcsetAttr, HERO_SIZES } from '../utils/post-images';
 export interface Props {
   title: string;
   description: string;
@@ -60,6 +61,7 @@ const {
   videoDuration,
   wordCount,
 } = Astro.props;
+const heroImg = postImage(featuredImage);
 
 const twitterShareUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText || `Check out this Division Resurgence guide: ${title}`)}&url=${encodeURIComponent(Astro.url.toString())}`;
 const redditShareUrl = `https://reddit.com/submit?url=${encodeURIComponent(Astro.url.toString())}&title=${encodeURIComponent(title)}`;
@@ -129,9 +131,11 @@ const howToLd = howTo ? {
       <div class="guide-hero content-width">
         <img
           src={featuredImage}
+          srcset={srcsetAttr(heroImg)}
+          sizes={heroImg ? HERO_SIZES : undefined}
           alt={imageAlt || `${title}, The Division Resurgence`}
-          width="1200"
-          height="630"
+          width={heroImg?.width || 1200}
+          height={heroImg?.height || 630}
           loading="eager"
           decoding="sync"
           fetchpriority="high"

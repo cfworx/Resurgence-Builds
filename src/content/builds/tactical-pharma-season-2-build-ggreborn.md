@@ -10,8 +10,8 @@ patch: "Season 2 · Phase 2"
 verified: false
 tags: ["field-medic", "Tactical Pharma", "build-guide", "Season 2", "jackpot", "Dark Zone"]
 description: "GGReborn's Season 2 Tactical Pharma build: Jackpot 4pc + Fire Cycle 2pc, Brains Over Brawn, Glass Cannon, an OS Protocol test, TikTokAndy's PvP take."
-featuredImage: "/images/legendary-healer-field-medic.webp"
-imageAlt: "A Field Medic agent with glowing green chemical canisters on his backpack in a ruined New York street"
+featuredImage: "/images/builds/division-resurgence-tactical-pharma-season-2-build-ggreborn-loadout-1200.webp"
+imageAlt: "GGReborn's Tactical Pharma Field Medic loadout screen in The Division Resurgence: 24.97k power score, 854k DPS, two level 50 weapons, a level 50 OS Protocol and six level 50 gear pieces"
 author: "RapidF5 (via GGReborn)"
 shareTitle: "Five seconds apart"
 shareText: "Four OS Protocols, one Lone Wolf run each, five seconds apart. GGReborn's Season 2 Tactical Pharma build, plus TikTokAndy's Dark Zone verdict."

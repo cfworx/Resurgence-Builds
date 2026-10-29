@@ -57,7 +57,7 @@ const itemListLd = {
 >
   <div class="db-grid" id="talents-grid">
     {weaponTalents.map((talent) => (
-      <a href={`/database/weapon-talents/${toSlug(talent.name)}/`} class="db-card-link" style="text-decoration: none; color: inherit; display: block;">
+      <a href={`/database/weapon-talents/${toSlug(talent.name)}/`} class="db-card-link">
         <article class="db-card">
           <div class="db-card__header">
             <div>
@@ -69,11 +69,6 @@ const itemListLd = {
             <div class="talent-desc">
               <p>{talent.description}</p>
             </div>
-            
-            <div class="source-section">
-              <span class="source-label">Source Weapons</span>
-              <p class="source-text">Rolls on standard and exotic weapons of any tier. Equip it in the Build Planner.</p>
-            </div>
           </div>
         </article>
       </a>
@@ -81,3 +76,15 @@ const itemListLd = {
   </div>
 <AdSenseUnit label="Advertisement (database category)" />
 </DatabaseLayout>
+
+<style>
+  /* Each card fills its grid cell, so the cards in a row line up whatever their text length. */
+  .db-card-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+  }
+  .db-card-link .db-card {
+    height: 100%;
+  }
+</style>

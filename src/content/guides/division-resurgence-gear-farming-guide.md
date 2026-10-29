@@ -5,8 +5,8 @@ publishDate: 2026-10-25
 lastUpdated: 2026-10-29T12:00:00Z
 tags: ["farming", "gear", "Tier 2", "endgame", "Season 2", "build-guide"]
 description: "Where to farm T1 and T2 gear in Division Resurgence: which missions lean to which slots, Elite missions, level 40 dailies, the Dark Zone, mods."
-featuredImage: "/images/division-resurgence-best-pve-dps-builds.webp"
-imageAlt: "A surreal portrait of an agent whose face breaks apart into body armor, weapon parts and floating stat numbers"
+featuredImage: "/images/guides/division-resurgence-gear-farming-guide-gear-crafting-station-1200.webp"
+imageAlt: "An agent walking into the Gear Crafting Station in The Division Resurgence's Base of Operations, with the title Gear Farming Guide"
 author: "RapidF5"
 shareTitle: "Stop farming the wrong mission"
 shareText: "Which missions lean toward which gear slots, where Tier 2 actually drops, and what's worth upgrading. The Division Resurgence gear farm, explained."
