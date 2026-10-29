@@ -4,6 +4,7 @@ import Breadcrumbs from '../../../components/Breadcrumbs.astro';
 import SectionTag from '../../../components/SectionTag.astro';
 import AdSenseUnit from '../../../components/AdSenseUnit.astro';
 import DbItemExtras from '../../../components/DbItemExtras.astro';
+import DbFaq from '../../../components/DbFaq.astro';
 import { DATABASE_UPDATED } from '../../../data/site-config';
 import WeaponAttributes from '../../../components/WeaponAttributes.astro';
 import { truncateDesc, metaDescription } from '../../../utils/seo';
@@ -31,10 +32,19 @@ const breadcrumbs = [
   { name: weapon.name, url: '#' }
 ];
 
+// How to get the exotics that don't carry an acquisition line (their pass is long gone).
+// Matches the exotic weapons list guide; no random world drops are documented for exotics.
+const HOW_NOW: Record<string, string> = {
+  'Lady Death': `Lady Death is in the Exotic Sealed Cache pool, which Ubisoft added in Season 2 Phase 2 as its official way to get exotics from previous seasons. The odds are low, so read the numbers before you spend.`,
+  'Warlord': `The Dark Zone vendor has sold the Warlord since Season 1 Phase 2 (15,000 DZ Credits since Season 2 Phase 2, down from 17,500), which makes it the easiest exotic to get your hands on, and it's in the Exotic Sealed Cache pool too. It started out on the launch season's pass. The catch? Its level 8 proficiency task asks for agent kills or assists, which means PvP. Hope you like the Dark Zone.`,
+  'Strawberry Milkshake': `Strawberry Milkshake was the free exotic on the Season 1 Phase 2 Classified Ops Pass. That pass is long gone, so the Exotic Sealed Caches are the official route now.`,
+};
+const howNow = HOW_NOW[weapon.name] || `Since Season 2 Phase 2, Exotic Sealed Caches are Ubisoft's official way to get exotics from previous seasons, and the current Classified Ops Pass and the Dark Zone vendor carry some exotics too.`;
+
 const faqs = [
   {
     question: `Is ${weapon.name} good in Division Resurgence?`,
-    answer: `${weapon.name} is an exotic ${weapon.type}: ${weapon.damage} damage, ${weapon.rpm} RPM, and the "${weapon.talentName}" talent that completely changes how you play. ${weapon.talentDescription.substring(0, 200)}${weapon.talentDescription.length > 200 ? '...' : ''}: yeah, it's worth ${weapon.acquisition ? 'unlocking' : 'farming for'}. Scroll down for the full breakdown.`
+    answer: `${weapon.name} is an exotic ${weapon.type} with ${weapon.damage}${/damage/i.test(String(weapon.damage)) ? '' : ' damage'} and ${weapon.rpm} RPM, built around the "${weapon.talentName}" talent, which completely changes how you play: "${weapon.talentDescription}" If your build can lean on that, yeah, it's worth getting. The full stat line and the talents it can roll are on this page.`
   },
   {
     question: `What builds use ${weapon.name}?`,
@@ -44,7 +54,7 @@ const faqs = [
     question: `How do I get ${weapon.name} in Division Resurgence?`,
     answer: weapon.acquisition
       ? `${weapon.name} started as a battle pass unlock: ${weapon.acquisition}. Check the "How to Get" section below for the details.`
-      : `${weapon.name} drops from endgame stuff: Conflicts, Dark Zone, Legendary missions. Exotic drop rates are brutal, so target activities that have ${weapon.type}s in the loot pool. Weekly bounties and targeted loot zones give you a shot too. Since Season 2 Phase 2, Exotic Sealed Caches are also Ubisoft's official way to get exotics from previous seasons. Prepare to grind.`
+      : `${howNow} Our exotic weapons list covers every route.`
   }
 ];
 
@@ -242,13 +252,14 @@ const itemLd = {
             </Fragment>
           ) : (
             <Fragment>
-              <p>Exotics drop from endgame activities: Legendary/Elite missions, Dark Zone, and Conflicts. Drop rates are pain. Expect to run dozens of activities before you see one. {weapon.name === 'Warlord' ? 'Warlord is the exception: a T1 version came from the Season 1 Battle Pass, and the Dark Zone vendor has sold it since Season 1 Phase 2 (15,000 DZ Credits since Season 2 Phase 2, down from 17,500), making it the easiest exotic to get your hands on. The catch? Upgrading proficiency means PvP kills. Hope you like the Dark Zone.' : 'Focus on Legendary missions for the best drop rates, and run activities that have ' + weapon.type + 's in the targeted loot pool so you\'re not just praying to RNG.'}{weapon.name === 'Strawberry Milkshake' ? ' Strawberry Milkshake itself was the free exotic on the Season 1 Phase 2 Classified Ops Pass.' : ''}</p>
+              <p>{howNow}{weapon.name === 'Lady Death' && <> Our <a href="/guides/exotic-sealed-caches/" style="color: var(--accent);">Exotic Sealed Caches guide</a> does the math.</>}</p>
               <p>T2 isn't only a drop-luck thing. Died Again Gaming said in June that he believes exotics drop as T1, and that they go to T2 with an Exotic Weapon Enhancement Kit (Ubisoft stocks them at the Dark Zone vendor) once you have six T2 weapons at max proficiency, and that copies you get after enhancing drop at T2 (<a href="/guides/division-resurgence-gear-farming-guide/" style="color: var(--accent);">how enhancing works</a>). T1 still holds its own in most content. You can start leveling weapon proficiency on any tier, so the second you get one, any tier, start grinding those proficiency kills.</p>
-              <p><strong style="color: #F5CC45;">Update (October 2026):</strong> since Season 2 Phase 2, Exotic Sealed Caches are Ubisoft's official way to get exotics from previous seasons, and exotics no longer come with exotic mods pre-installed. Those mods now come from the pass, weekly quests, Elite Mission challenge chests and the Dark Zone vendor's weekly exotic mod crates (2,500 DZ Credits each).</p>
+              <p><strong style="color: #F5CC45;">Update (October 2026):</strong> since Season 2 Phase 2, exotics no longer come with exotic mods pre-installed. Those mods now come from the pass, weekly quests, Elite Mission challenge chests and the Dark Zone vendor's weekly exotic mod crates (2,500 DZ Credits each). The full rundown is in our <a href="/guides/division-resurgence-exotic-weapons-list-2026/" style="color: var(--accent);">exotic weapons list</a>.</p>
             </Fragment>
           )}
         </div>
       </div>
+      <DbFaq faqs={faqs} />
       <DbItemExtras kind="exotic-weapon" name={weapon.name} />
 
       <!-- Back Link -->

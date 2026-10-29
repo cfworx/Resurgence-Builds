@@ -7,6 +7,7 @@ import { truncateDesc, metaDescription } from '../../../utils/seo';
 import gearSets from '../../../data/gear-set-effects.json';
 import armoryGear from '../../../data/armory-gear.json';
 import DbItemExtras from '../../../components/DbItemExtras.astro';
+import DbFaq from '../../../components/DbFaq.astro';
 import { buildsWearingSet, buildSetLoadouts, fmtDate } from '../../../utils/db-enrich';
 import { verifiedPatch, DATABASE_UPDATED } from '../../../data/site-config';
 const lastVerified = verifiedPatch(); // Set text, tiers and Armory pieces re-checked in game on 2026-10-28 (Season 2 Phase 2). Pass an older label here if a later patch changes sets before they're re-checked.
@@ -247,18 +248,7 @@ const bonuses = [
         )}
       </div>
 
-      <!-- FAQ (the same questions go into the page's FAQ structured data) -->
-      <div class="gearset-section faq-section">
-        <h2 class="gearset-section__title">Frequently Asked Questions</h2>
-        <div class="faq-list">
-          {faqs.map((faq) => (
-            <details class="faq-item">
-              <summary class="faq-question">{faq.question}</summary>
-              <p class="faq-answer">{faq.answer}</p>
-            </details>
-          ))}
-        </div>
-      </div>
+      <DbFaq faqs={faqs} />
 
       <DbItemExtras kind="gear-set" name={set.name} drops={false} exclude={wearers.map((w) => w.url)} />
 

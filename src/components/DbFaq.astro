@@ -1,0 +1,35 @@
+---
+// Visible FAQ for database item pages. The same list goes to BaseLayout's `faqs` prop,
+// which writes the FAQPage structured data, so what search engines read is on the page too.
+interface Props {
+  faqs: { question: string; answer: string }[];
+}
+const { faqs } = Astro.props;
+---
+
+{faqs.length > 0 && (
+  <section class="dbfaq faq-section" aria-labelledby="dbfaq-title">
+    <h2 id="dbfaq-title" class="dbfaq__title">Frequently Asked Questions</h2>
+    <div class="faq-list">
+      {faqs.map((faq) => (
+        <details class="faq-item">
+          <summary class="faq-question">{faq.question}</summary>
+          <p class="faq-answer">{faq.answer}</p>
+        </details>
+      ))}
+    </div>
+  </section>
+)}
+
+<style>
+  .dbfaq { margin: 0 0 var(--sp-8) 0; }
+  .dbfaq__title {
+    font-family: var(--font-heading);
+    font-size: var(--text-lg);
+    font-weight: 800;
+    color: #fff;
+    margin: 0 0 var(--sp-4) 0;
+    padding-bottom: var(--sp-2);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+</style>

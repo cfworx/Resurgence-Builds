@@ -8,6 +8,7 @@ import weaponTalents from '../../../data/weapon-talents.json';
 import wtNotes from '../../../data/weapon-talent-notes.json';
 import { isWeaponTalentIndexable } from '../../../utils/indexability.mjs';
 import DbItemExtras from '../../../components/DbItemExtras.astro';
+import DbFaq from '../../../components/DbFaq.astro';
 import { verifiedPatch, DATABASE_UPDATED } from '../../../data/site-config';
 
 export function getStaticPaths() {
@@ -231,6 +232,8 @@ const talentLd = {
           </div>
         </div>
       )}
+
+      <DbFaq faqs={faqs} />
 
       <DbItemExtras kind="weapon-talent" name={talent.name} drops={false} exclude={notes?.metaBuilds?.map((b: any) => b.url) ?? []} />
 

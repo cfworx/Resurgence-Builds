@@ -9,6 +9,7 @@ import AdSenseUnit from '../../../components/AdSenseUnit.astro';
 import { truncateDesc, metaDescription } from '../../../utils/seo';
 import standardWeapons from '../../../data/standard-weapons.json';
 import DbItemExtras from '../../../components/DbItemExtras.astro';
+import DbFaq from '../../../components/DbFaq.astro';
 import { verifiedPatch, DATABASE_UPDATED } from '../../../data/site-config';
 const lastVerified = verifiedPatch('Patch 1.1.2.2'); // Bump: drop the arg ONLY after re-verifying this page's content in-game (CURRENT_PATCH is a ceiling, not an auto-bump)
 
@@ -224,6 +225,8 @@ const boldStars = (t: string) => t
           <p>Keep in mind: since Season 2 Phase 1, weapons no longer roll Blast, Piercing or Shredding damage bonuses (Ubisoft replaced them with <strong style="color: var(--accent);">All Weapon Damage</strong>), and newly dropped weapon mods don't roll them either. Check the <a href="/database/bonus-attributes/" style="color: var(--accent);">bonus attributes database</a> for the full list of damage-type stats and where they still apply.</p>
         </div>
       </div>
+
+      <DbFaq faqs={faqs} />
 
       <DbItemExtras kind="weapon" name={weapon.name} drops={false} />
 

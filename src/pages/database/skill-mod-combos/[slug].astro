@@ -8,6 +8,7 @@ import skillMods from '../../../data/skill-mod-combos.json';
 import smcNotes from '../../../data/skill-mod-combo-notes.json';
 import { isSkillModIndexable } from '../../../utils/indexability.mjs';
 import DbItemExtras from '../../../components/DbItemExtras.astro';
+import DbFaq from '../../../components/DbFaq.astro';
 import { verifiedPatch, DATABASE_UPDATED } from '../../../data/site-config';
 
 export function getStaticPaths() {
@@ -266,6 +267,8 @@ const toModSlug = (name: string) => name.toLowerCase().replace(/[^a-z0-9]+/g, '-
           ))}
         </div>
       )}
+
+      <DbFaq faqs={faqs} />
 
       <DbItemExtras kind="skill-mod" name={mod.name} exclude={notes?.metaBuilds?.map((b: any) => b.url) ?? []} />
 

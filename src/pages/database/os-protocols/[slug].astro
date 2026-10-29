@@ -7,6 +7,7 @@ import { truncateDesc, metaDescription } from '../../../utils/seo';
 import osProtocols from '../../../data/os-protocols.json';
 import { dropRowsFor } from '../../../utils/db-enrich';
 import DbItemExtras from '../../../components/DbItemExtras.astro';
+import DbFaq from '../../../components/DbFaq.astro';
 import { verifiedPatch, DATABASE_UPDATED } from '../../../data/site-config';
 
 export function getStaticPaths() {
@@ -50,11 +51,11 @@ const osDrop = dropRowsFor('os-protocol', protocol.name)[0];
 const faqs = [
   {
     question: `Is ${protocol.name} a good OS Protocol in Division Resurgence?`,
-    answer: `${protocol.name} is a ${protocol.rarity} ${protocol.specialization} OS Protocol that gives you ${protocol.mainStat} ${protocol.mainValue} plus ${protocol.attr1} ${protocol.val1}, ${protocol.attr2} ${protocol.val2}, and ${protocol.attr3} ${protocol.val3}. The talent, "${protocol.talentDescription.substring(0, 150)}${protocol.talentDescription.length > 150 ? '...' : ''}", is the real reason you want this thing. If your build stacks ${protocol.specialization}, it slaps.`
+    answer: `${protocol.name} is a ${protocol.rarity} ${protocol.specialization} OS Protocol that gives you ${protocol.mainStat} ${protocol.mainValue} plus ${protocol.attr1} ${protocol.val1}, ${protocol.attr2} ${protocol.val2}, and ${protocol.attr3} ${protocol.val3}. The talent is the real reason you want this thing: "${protocol.talentDescription}" If your build stacks ${protocol.specialization}, it slaps.`
   },
   {
     question: `Which specialization uses ${protocol.name}?`,
-    answer: `${protocol.name} is a ${protocol.specialization} protocol, so it fits best on ${specClass} builds. You get ${protocol.mainStat} ${protocol.mainValue} as your main stat. Plug it into any ${protocol.specialization}-stacking loadout and you'll feel the difference immediately.`
+    answer: `${protocol.name} is ${/^[AEIOU]/.test(protocol.specialization) ? 'an' : 'a'} ${protocol.specialization} protocol, so it fits best on ${specClass} builds. You get ${protocol.mainStat} ${protocol.mainValue} as your main stat. Plug it into any ${protocol.specialization}-stacking loadout and you'll feel the difference immediately.`
   },
   {
     question: `How do I get ${protocol.name} in Division Resurgence?`,
@@ -172,6 +173,7 @@ const ogImage = protocol.image ? `${siteUrl}${protocol.image}` : undefined;
           <p>Protocols also drop from regular play, and Ubisoft doesn't publish odds for those. {protocol.rarity === 'High-End' ? 'Gold ones are the rare ones. Outside the sealed cache, Died Again Gaming\'s pick is the fourth Weekly Bounty boss: on his October 25, 2026 stream he said its Key Rewards guarantee a random gold OS Protocol each week.' : protocol.rarity === 'Superior' ? 'Purple ones turn up regularly once you are in endgame content. In June, Died Again Gaming farmed them by re-running the fourth Weekly Bounty boss, which had a chance at one on every kill.' : protocol.rarity === 'Specialized' ? 'Blue ones are common from early endgame on.' : 'Standard ones are the lowest rarity and the easiest to come by.'} Keep an eye on the <a href="/guides/division-resurgence-codes/" style="color: var(--accent);">active codes page</a> too, since event rewards sometimes include protocol selection boxes.</p>
         </div>
       </div>
+      <DbFaq faqs={faqs} />
       <DbItemExtras kind="os-protocol" name={protocol.name} />
 
       <!-- Related Links -->
