@@ -172,7 +172,7 @@ All weapons below assume a **tactical mod is equipped**. SMG tactical mod reduce
 - **Torrential Downpour:** Hitting enemies 10 times within 5 seconds grants +22.5% Engineering for 12 seconds. This is your Engineering injection.
 - **Rapid Charge:** Hitting an enemy 5 times in 3 seconds grants +50 Signature Ability charge. This is how you get Tactical Link back fast.
 - **RPM: 850. Magazine: 30.** This is your proc weapon, not your sustained fire weapon. Land your hits, swap to P90.
-- **Ideal attributes:** All Weapon Damage + Weapon Damage. We used to list Weapon Blast Damage for the first slot, but community testing cited in our [damage types guide](/guides/damage-types-color-bar-weakness-guide/) says the Police M4 deals Shredding, so a Blast roll likely did nothing for it. Season 2 Phase 1 removed damage type bonuses from the weapon attribute pool anyway, so on new drops look for All Weapon Damage in that slot.
+- **Ideal attributes:** All Weapon Damage + Weapon Damage. The first slot used to be Weapon Blast Damage, and that roll matched: the in-game Armory lists the Police M4 as a Blast weapon (our recording, October 28, 2026). Season 2 Phase 1 removed damage type bonuses from the weapon attribute pool, so on new drops look for All Weapon Damage in that slot.
 - Torrential Downpour and Rapid Charge can be recalibrated between compatible AR platforms. Whether a specific AR can accept a specific talent depends on its talent pool. Verify in-game before committing a recal.
 
 ### Secondary: P90 (SMG)

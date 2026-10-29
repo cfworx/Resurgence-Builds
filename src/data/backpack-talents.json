@@ -2,126 +2,151 @@
   {
     "id": "bp-1",
     "name": "Assault Protection",
-    "description": "Having Extra Health grants +1.80% Weapon Damage per second, up to 10 stacks. Losing all Extra Health removes all stacks."
+    "description": "Having Extra Health grants +1.80% Weapon Damage per second, up to 10 stacks. Losing all Extra Health removes all stacks.",
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "bp-2",
     "name": "Brainstorm",
-    "description": "Grants +15% Skill Duration. Grants an additional +15% Skill Duration when within 20 meters of an ally."
+    "description": "Grants +15% Skill Duration. Grants an additional +15% Skill Duration when within 20 meters of an ally.",
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "bp-3",
     "name": "Combat Inspiration",
-    "description": "Weapon Critical Hits grant +3.60% Max Health for 10 seconds, up to 10 stacks."
+    "description": "Weapon Critical Hits grant +3.60% Max Health for 10 seconds, up to 10 stacks.",
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "bp-4",
     "name": "Defense Enhancement",
-    "description": "Gaining Extra Health grants +7% Armor for 10 seconds, up to 5 stacks."
+    "description": "Gaining Extra Health grants +7% Armor for 10 seconds, up to 5 stacks.",
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "bp-5",
     "name": "Double-edged Bullet",
-    "description": "Having Extra Health grants +18% Damage and -20% Damage Reduction."
+    "description": "Having Extra Health grants +18% Damage and -20% Damage Reduction.",
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "bp-6",
     "name": "Electrical Protection",
-    "description": "Having Extra Health grants +1.80% Skill Intensity per second, up to 10 stacks. Losing all Extra Health removes all stacks."
+    "description": "Having Extra Health grants +1.80% Skill Intensity per second, up to 10 stacks. Losing all Extra Health removes all stacks.",
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "bp-7",
     "name": "Emergency Measures",
-    "description": "Taking damage restores 50% Max Health when Health is below 20%. Talent Cooldown: 30 seconds."
+    "description": "Taking damage restores 50% Max Health when Health is below 20%. Talent Cooldown: 30 seconds.",
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "bp-8",
     "name": "Explosive Burst",
-    "description": "Throwing a Grenade grants +9% Skill Multi-shot Chance for 2 seconds, up to 10 stacks. Talent Cooldown: 3 seconds."
+    "description": "Throwing a Grenade grants +9% Skill Multi-shot Chance for 2 seconds, up to 10 stacks. Talent Cooldown: 3 seconds.",
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "bp-9",
     "name": "Explosive Fury",
-    "description": "Throwing a Grenade grants +18% Rate of Fire for 10 seconds, up to 2 stacks. Talent Cooldown: 3 seconds."
+    "description": "Throwing a Grenade grants +18% Rate of Fire for 10 seconds, up to 2 stacks. Talent Cooldown: 3 seconds.",
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "bp-10",
     "name": "Hidden Impact",
-    "description": "Grants +18% Weapon Critical Hit Chance when behind cover for at least 3 seconds."
+    "description": "Grants +18% Weapon Critical Hit Chance when behind cover for at least 3 seconds.",
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "bp-11",
     "name": "Injured Taunt",
-    "description": "Hits taken grant +1.80% Damage Reduction for 10 seconds, up to 10 stacks."
+    "description": "Hits taken grant +1.80% Damage Reduction for 10 seconds, up to 10 stacks.",
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "bp-12",
     "name": "Inspiration",
-    "description": "Grants +30% Rate of Fire when Skills are deployed."
+    "description": "Grants +30% Rate of Fire when Skills are deployed.",
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "bp-13",
     "name": "Intense Performance",
-    "description": "Grants +33% Skill Radius but also inflicts -5% Skill Duration."
+    "description": "Grants +33% Skill Radius but also inflicts -5% Skill Duration.",
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "bp-14",
     "name": "Meditation",
-    "description": "Grants +3.60% Skill Critical Hit Chance per second while immobile, up to 5 stacks. Movement removes 1 stacks per second."
+    "description": "Grants +3.60% Skill Critical Hit Chance per second while immobile, up to 5 stacks. Movement removes 1 stacks per second.",
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "bp-15",
     "name": "Minion Training",
-    "description": "Skill Critical Hit Kills grant +36% Skill Critical Hit Damage for 12 seconds."
+    "description": "Skill Critical Hit Kills grant +36% Skill Critical Hit Damage for 12 seconds.",
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "bp-16",
     "name": "Open Fire",
-    "description": "Deploying the Signature Ability grants +20% Optimal Range and +36% Magazine Size for 12 seconds."
+    "description": "Deploying the Signature Ability grants +20% Optimal Range and +36% Magazine Size for 12 seconds.",
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "bp-17",
     "name": "Overwatch",
-    "description": "Grants +15% Skill Damage when behind cover for at least 3 seconds."
+    "description": "Grants +15% Skill Damage when behind cover for at least 3 seconds.",
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "bp-18",
     "name": "Painkillers",
-    "description": "Using a Medical Kit grants +9% Damage Reduction for 8 seconds, up to 2 stacks."
+    "description": "Using a Medical Kit grants +9% Damage Reduction for 8 seconds, up to 2 stacks.",
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "bp-19",
     "name": "Prime Engineer",
-    "description": "Deploying a Skill at full Health grants +22.50% Engineering for 12 seconds."
+    "description": "Deploying a Skill at full Health grants +22.50% Engineering for 12 seconds.",
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "bp-20",
     "name": "Rescue Protection",
-    "description": "Rescuing a downed ally grants all allies within 40 meters Extra Health equal to 12.50% Max Health for 10 seconds."
+    "description": "Rescuing a downed ally grants all allies within 40 meters Extra Health equal to 12.50% Max Health for 10 seconds.",
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "bp-21",
     "name": "Rock Solid",
-    "description": "Receiving Healing grants +15% Damage Reduction for 3 seconds."
+    "description": "Receiving Healing grants +15% Damage Reduction for 3 seconds.",
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "bp-22",
     "name": "Siege",
-    "description": "Grants Extra Health equal to 37.50% Max Health for 15 seconds when 2 or more enemies are within 20 meters. Talent Cooldown: 30 seconds."
+    "description": "Grants Extra Health equal to 37.50% Max Health for 15 seconds when 2 enemies are within 20 meters. Talent Cooldown: 30 seconds.",
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "bp-23",
     "name": "Simple Pleasures",
-    "description": "Healing grants +4% Weapon Damage for 5 seconds, up to 3 stacks."
+    "description": "Healing grants +4% Weapon Damage for 5 seconds, up to 3 stacks.",
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "bp-24",
     "name": "Street Fighter",
-    "description": "Grants +5% Damage Reduction while within 20 meters of an enemy. Grants +15% Weapon Critical Hit Chance for 5 seconds when an enemy dies within 20 meters."
+    "description": "Grants +5% Damage Reduction while within 20 meters of an enemy. Grants +15% Weapon Critical Hit Chance for 5 seconds when an enemy dies within 20 meters.",
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "bp-25",
     "name": "Unstoppable",
-    "description": "Kills grant +5% Weapon Damage for 10 seconds, up to 3 stacks."
+    "description": "Kills grant +5% Weapon Damage for 10 seconds, up to 3 stacks.",
+    "verifiedInGame": "2026-10-28"
   }
 ]

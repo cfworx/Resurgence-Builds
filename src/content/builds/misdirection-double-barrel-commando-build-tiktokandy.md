@@ -185,7 +185,7 @@ TikTokAndy calls 4pc Phalanx Attack + 2pc Gunny Johnny "probably the most ideal 
 |---|---|---|---|
 | Mask | Phalanx Attack | none | |
 | Body Armor | Gunny Johnny | **Suppressive Fire II** | Both creators run it. TikTokAndy reads +25% Magazine Size, and reloading grants +8.4% Rate of Fire for 5 seconds, up to 3 stacks. |
-| Backpack | Gunny Johnny | **Emergency Measures**, **Siege II** or **Inspiration** | Emergency Measures (TikTokAndy, October): restores 50% Max Health when you take damage below 20% Health, 30-second cooldown (our database). Siege II (TikTokAndy, September): Extra Health equal to 52% for 15 seconds when two or more enemies are within 20 meters, 30-second cooldown. Inspiration (GGReborn): +30% Rate of Fire while skills are deployed. |
+| Backpack | Gunny Johnny | **Emergency Measures**, **Siege II** or **Inspiration** | Emergency Measures (TikTokAndy, October): restores 50% Max Health when you take damage below 20% Health, 30-second cooldown (our database). Siege II (TikTokAndy, September): Extra Health equal to 52% for 15 seconds when 2 enemies are within 20 meters, 30-second cooldown. Inspiration (GGReborn): +30% Rate of Fire while skills are deployed. |
 | Gloves | Phalanx Attack | none | TikTokAndy's pair is tier 0, level 40, and he rerolls its Skill Radius into Headshot Damage. He says you could use "literally the most trash gear" and still make this work. |
 | Holster | Phalanx Attack | none | GGReborn keeps a Skill Duration roll here because it helps during Tactical Link |
 | Kneepads | Phalanx Attack | none | |

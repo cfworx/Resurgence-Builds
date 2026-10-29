@@ -17,9 +17,10 @@ Nothing in this folder is served by the website. `src/data/*.json` is what the s
 | Skill Mod Combo Set | Done 2026-10-28 | 90 | `Screen_Recording_20261028_163454` |
 | Weapon Talent | Done 2026-10-28 | 73 | `Screen_Recording_20261028_184307` |
 | Gear Set Effect | Not recorded yet | | |
-| Body Armor Talent | Not recorded yet | | |
-| Backpack Talent | Not recorded yet | | |
-| Weapon/Gear Bonus Attributes | Not recorded yet | | |
+| Body Armor Talent | Done 2026-10-28 | 25 | `Screen_Recording_20261028_190611` |
+| Backpack Talent | Done 2026-10-28 | 25 | `Screen_Recording_20261028_190726` |
+| Weapon/Gear Bonus Attributes | Done 2026-10-28 | 24 | `Screen_Recording_20261028_190829` |
+| Armory (outside the database): weapons and gear | Done 2026-10-28 | 92 weapons, 72 gear | `Screen_Recording_20261028_191045` |
 
 All recordings were made on 2026-10-28 during Season 2 Phase 2. Details are in `recordings.json`.
 
@@ -37,6 +38,16 @@ All recordings were made on 2026-10-28 during Season 2 Phase 2. Details are in `
 - `weapon-talents.json` / `weapon-talents.csv`: all 73 Weapon Talents (67 regular and the 6 exotic talents). Name, the site's
   id (`wt-N`, blank for exotic talents the site keeps on the exotic pages), list position, talent text and cooldown at rank I,
   and the first weapon class the card's "Source" panel shows.
+- `body-armor-talents.json` / `.csv` and `backpack-talents.json` / `.csv`: all 25 of each. Name, the site's id (`ba-N`, `bp-N`),
+  list position, talent text and cooldown at rank I.
+- `bonus-attributes.json` / `.csv`: the 24 Weapon/Gear Bonus Attributes in the database's order. Name, the icon group the list
+  shows (Firepower, Toughness, Engineering, or none), the card's description, and the "Current" value the card showed for
+  Cory's character when it was recorded (a character stat, not a property of the attribute).
+- `armory-weapons.json` / `.csv`: every weapon in the Armory (86 standard and the 6 exotics). Name as the Armory writes it,
+  class, the tier page it sits on (Season 1, Tier 0, 1 or 2), the damage type from the icon next to its name, and the matching
+  site id and name.
+- `armory-gear.json` / `.csv`: every gear piece in the Armory (72: 12 each for holster, gloves, backpack, knee pads, body armor
+  and mask), with its tier page.
 - `recordings.json`: the source recordings (file name, date, length, resolution, what each one covers).
 - `evidence/`: one image per entry, stitched from the recording so the whole scrolled card is in one picture. These are the
   proof for every value in the JSON and CSV files.
@@ -60,6 +71,16 @@ All recordings were made on 2026-10-28 during Season 2 Phase 2. Details are in `
   assigned from its Weapon Talent pool." Each card's "Source" panel lists the weapons that can roll it, grouped by class, as
   thumbnails with rarity and tier but no names. The panels weren't scrolled in this recording, so the record keeps only the first
   class shown.
+- **Body Armor and Backpack Talents are shown at rank I** too. The section header reads "Generally, gear does not have a Talent,
+  except for Backpacks and Body Armor." Each card's "Source" panel shows pictures of the gear pieces that can roll it (rarity
+  and tier, no names); the evidence images include that panel.
+- **Bonus attribute cards show a "Current" value**, which is the recording character's own total for that stat. We keep it in
+  the record but it says nothing about the attribute itself. The section header reads "When you obtain a weapon or a gear piece,
+  2 different Bonus Attributes will be randomly generated for them."
+- **The Armory** (a separate menu, not the Build-Making Database) shows every weapon class in three pages (Season 1, Tier 0, 1
+  and 2) and every gear slot the same way. The icon after a weapon's name is its damage type: a red burst is Blast, a blue
+  slash is Piercing and a green double slash is Shredding (the six exotics confirm the key). Locked items show as blueprints
+  with a red label; that's ownership, not a different item.
 - The exotic cards also show a "Possible Talents" grid of 18 icons without names. Each icon was matched to its talent by
   comparing it with the icons on the 73 Weapon Talent cards (every match checked by eye); the names are in
   `exotic-weapons.json` (`possibleTalents`, in grid order).
@@ -96,7 +117,29 @@ every field was compared with `src/data/`.
   Fortitude +12% (rank II reads +18%). Bloodlust's "Dealing 8 damage" and Unbreakable's flat "+36 Armor" are the game's own text.
   Every talent now carries `verifiedInGame: "2026-10-28"`.
 
+- Body Armor and Backpack Talents: all 50 matched the site word for word except Siege, which reads "when 2 enemies are within
+  20 meters" (we had "2 or more", from a creator's reading). Fixed on the site and in two builds. All 50 now carry
+  `verifiedInGame: "2026-10-28"`, and both pages are marked verified for Season 2 Phase 2.
+- Bonus attributes: every attribute's own description is now on the bonus attributes page as an "In game" line, the six
+  damage-type attributes the database still lists got their own section with a note, and the page explains the difference
+  (below).
+- Weapons, from the Armory: every standard weapon now carries its Armory tier and damage type, and the weapons page lists all
+  86 (it showed 41). Ten names were corrected to the game's (Police UMP-45, Vector 45 ACP, Naval MP5, Police T821, Classic M60,
+  Black Market RPK-74 E, Military L86 LSW, Double Barrel Shotgun, 1886, SRS-A1), with 301s for the renamed pages and the old
+  names kept as planner aliases. Four weapons that aren't in the game's Armory were removed (M1A, SVD, Infantry MG5 and ACR
+  SS; all four came in with the May data import, with no source). The damage types guide had the Police M4 as Shredding and the MK17 as a Shredding
+  example: the Armory shows the Police M4 as Blast and the Police Mk17 as Piercing. The guide's example weapons and an
+  AgentHuntzman build note are fixed.
+
 ## Open questions
+
+- **Bonus attribute list vs Season 2 Phase 1.** The database still lists Weapon and Skill Blast, Piercing and Shredding Damage
+  and doesn't list All Weapon Damage or All Skill Damage, although Ubisoft's Season 2 Phase 1 notes say the damage-type bonuses
+  were removed "in favor of 'All Weapon Damage' or 'All Skill Damage'". Like the Ammo Refill card, the list may predate the
+  patch, or gear may still roll them. The site keeps its pools and shows the six in their own section.
+- **Gear Set Effect** is the one database section not recorded yet.
+- **Armory scope.** The Armory pages are all labeled Season 1. Weapons added later (if any) would be on other pages; none showed
+  in this recording.
 
 - **The Bighorn's damage type (explained).** The database card says Shredding. Early copies didn't all match: on Ubisoft's bug
   reporter, [TDR-134](https://www.ubisoft.com/en-us/game/the-division/the-division-resurgence/bug-reporter/issues/TDR-134), players

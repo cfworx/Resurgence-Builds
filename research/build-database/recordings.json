@@ -54,5 +54,55 @@
     "section": "Weapon Talent",
     "tabs": [],
     "entries": 73
+  },
+  {
+    "file": "Screen_Recording_20261028_190611_The_Division_Resurgence.mp4",
+    "recorded": "2026-10-28",
+    "durationSeconds": 59.4,
+    "resolution": "2340x1080",
+    "section": "Body Armor Talent",
+    "tabs": [],
+    "entries": 25
+  },
+  {
+    "file": "Screen_Recording_20261028_190726_The_Division_Resurgence.mp4",
+    "recorded": "2026-10-28",
+    "durationSeconds": 59.9,
+    "resolution": "2340x1080",
+    "section": "Backpack Talent",
+    "tabs": [],
+    "entries": 25
+  },
+  {
+    "file": "Screen_Recording_20261028_190829_The_Division_Resurgence.mp4",
+    "recorded": "2026-10-28",
+    "durationSeconds": 44.3,
+    "resolution": "2340x1080",
+    "section": "Weapon/Gear Bonus Attributes",
+    "tabs": [],
+    "entries": 24
+  },
+  {
+    "file": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
+    "recorded": "2026-10-28",
+    "durationSeconds": 75.7,
+    "resolution": "2340x1080",
+    "section": "Armory (not part of the Build-Making Database): every weapon and gear page",
+    "tabs": [
+      "Exotic",
+      "Shotgun",
+      "Rifle",
+      "MMR",
+      "AR",
+      "LMG",
+      "SMG",
+      "Holster",
+      "Gloves",
+      "Backpack",
+      "Knee Pads",
+      "Body Armor",
+      "Mask"
+    ],
+    "entries": 164
   }
 ]

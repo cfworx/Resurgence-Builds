@@ -4,7 +4,7 @@ import backpackTalents from '../../../data/backpack-talents.json';
 import TalentIndex from '../../../components/TalentIndex.astro';
 import AdSenseUnit from '../../../components/AdSenseUnit.astro';
 import { verifiedPatch } from '../../../data/site-config';
-const lastVerified = verifiedPatch('Patch 1.1.2.2'); // Bump: drop the arg ONLY after re-verifying this page's content in-game (CURRENT_PATCH is a ceiling, not an auto-bump)
+const lastVerified = verifiedPatch(); // Every talent checked against the in-game Build-Making Database on October 28, 2026
 
 const title = "Division Resurgence Backpack Talents & Best Builds";
 const description = "Every Backpack Talent in Division Resurgence. The good, the bad, and the ones that make you wonder if anyone playtested them.";
@@ -54,7 +54,7 @@ const itemListLd = {
   {faqs}
 >
   <div style="color: #c8c8d0; line-height: 1.75; font-size: var(--text-base); margin-bottom: var(--sp-6); max-width: 72ch;">
-    <p>Backpack talents roll on backpacks of every tier we've seen creators use, T1 included, and are always active once equipped. No activation, no cooldown management. Your backpack talent stacks with your Body Armor talent, your weapon talents, and your gear set bonuses, so the right pick multiplies everything else your build is doing. Talents come in ranks, and rank II is about 1.4 times the rank I values listed here.</p>
+    <p>Backpack talents roll on backpacks of every tier we've seen creators use, T1 included, and are always active once equipped. No activation needed, though four carry a talent cooldown: Explosive Fury and Explosive Burst (3 seconds), and Emergency Measures and Siege (30 seconds). Your backpack talent stacks with your Body Armor talent, your weapon talents, and your gear set bonuses, so the right pick multiplies everything else your build is doing. Talents come in ranks, and rank II is about 1.4 times the rank I values listed here. All 25 below match the game's own Build-Making Database (checked October 28, 2026).</p>
   </div>
 
   <TalentIndex

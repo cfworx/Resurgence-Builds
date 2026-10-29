@@ -1,0 +1,1750 @@
+[
+  {
+    "name": "Lady Death",
+    "class": "SMG",
+    "exotic": true,
+    "armoryTier": "T1",
+    "season": "Season 1",
+    "damageType": "Blast",
+    "siteId": "ew-1",
+    "siteName": "Lady Death",
+    "source": {
+      "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
+      "seconds": [
+        0.75,
+        4.0
+      ]
+    },
+    "evidence": "evidence/armory/exotic-t1.webp",
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "Warlord",
+    "class": "Assault Rifle",
+    "exotic": true,
+    "armoryTier": "T1",
+    "season": "Season 1",
+    "damageType": "Blast",
+    "siteId": "ew-2",
+    "siteName": "Warlord",
+    "source": {
+      "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
+      "seconds": [
+        0.75,
+        4.0
+      ]
+    },
+    "evidence": "evidence/armory/exotic-t1.webp",
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "Scorpio",
+    "class": "Shotgun",
+    "exotic": true,
+    "armoryTier": "T1",
+    "season": "Season 1",
+    "damageType": "Piercing",
+    "siteId": "ew-4",
+    "siteName": "Scorpio",
+    "source": {
+      "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
+      "seconds": [
+        0.75,
+        4.0
+      ]
+    },
+    "evidence": "evidence/armory/exotic-t1.webp",
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "Diamondback",
+    "class": "Rifle",
+    "exotic": true,
+    "armoryTier": "T1",
+    "season": "Season 1",
+    "damageType": "Shredding",
+    "siteId": "ew-6",
+    "siteName": "Diamondback",
+    "source": {
+      "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
+      "seconds": [
+        0.75,
+        4.0
+      ]
+    },
+    "evidence": "evidence/armory/exotic-t1.webp",
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "The Bighorn",
+    "class": "Assault Rifle",
+    "exotic": true,
+    "armoryTier": "T1",
+    "season": "Season 1",
+    "damageType": "Shredding",
+    "siteId": "ew-5",
+    "siteName": "The Bighorn",
+    "source": {
+      "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
+      "seconds": [
+        0.75,
+        4.0
+      ]
+    },
+    "evidence": "evidence/armory/exotic-t1.webp",
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "Strawberry Milkshake",
+    "class": "LMG",
+    "exotic": true,
+    "armoryTier": "T1",
+    "season": "Season 1",
+    "damageType": "Shredding",
+    "siteId": "ew-3",
+    "siteName": "Strawberry Milkshake",
+    "source": {
+      "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
+      "seconds": [
+        0.75,
+        4.0
+      ]
+    },
+    "evidence": "evidence/armory/exotic-t1.webp",
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "M870",
+    "class": "Shotgun",
+    "exotic": false,
+    "armoryTier": "T0",
+    "season": "Season 1",
+    "damageType": "Blast",
+    "siteId": "sw-20",
+    "siteName": "M870",
+    "source": {
+      "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
+      "seconds": [
+        4.25,
+        7.0
+      ]
+    },
+    "evidence": "evidence/armory/shotgun-t0.webp",
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "SASG-12",
+    "class": "Shotgun",
+    "exotic": false,
+    "armoryTier": "T0",
+    "season": "Season 1",
+    "damageType": "Piercing",
+    "siteId": "sw-21",
+    "siteName": "SASG-12",
+    "source": {
+      "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
+      "seconds": [
+        4.25,
+        7.0
+      ]
+    },
+    "evidence": "evidence/armory/shotgun-t0.webp",
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "ACS-12",
+    "class": "Shotgun",
+    "exotic": false,
+    "armoryTier": "T0",
+    "season": "Season 1",
+    "damageType": "Piercing",
+    "siteId": "sw-65",
+    "siteName": "ACS-12",
+    "source": {
+      "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
+      "seconds": [
+        4.25,
+        7.0
+      ]
+    },
+    "evidence": "evidence/armory/shotgun-t0.webp",
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "Super 90",
+    "class": "Shotgun",
+    "exotic": false,
+    "armoryTier": "T0",
+    "season": "Season 1",
+    "damageType": "Shredding",
+    "siteId": "sw-64",
+    "siteName": "Super 90",
+    "source": {
+      "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
+      "seconds": [
+        4.25,
+        7.0
+      ]
+    },
+    "evidence": "evidence/armory/shotgun-t0.webp",
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "KSG",
+    "class": "Shotgun",
+    "exotic": false,
+    "armoryTier": "T1",
+    "season": "Season 1",
+    "damageType": "Blast",
+    "siteId": "sw-23",
+    "siteName": "KSG",
+    "source": {
+      "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
+      "seconds": [
+        7.75,
+        10.0
+      ]
+    },
+    "evidence": "evidence/armory/shotgun-t1.webp",
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "SPAS-12",
+    "class": "Shotgun",
+    "exotic": false,
+    "armoryTier": "T1",
+    "season": "Season 1",
+    "damageType": "Piercing",
+    "siteId": "sw-67",
+    "siteName": "SPAS-12",
+    "source": {
+      "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
+      "seconds": [
+        7.75,
+        10.0
+      ]
+    },
+    "evidence": "evidence/armory/shotgun-t1.webp",
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "Tavor TS12",
+    "class": "Shotgun",
+    "exotic": false,
+    "armoryTier": "T1",
+    "season": "Season 1",
+    "damageType": "Shredding",
+    "siteId": "sw-66",
+    "siteName": "Tavor TS12",
+    "source": {
+      "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
+      "seconds": [
+        7.75,
+        10.0
+      ]
+    },
+    "evidence": "evidence/armory/shotgun-t1.webp",
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "RU12SG",
+    "class": "Shotgun",
+    "exotic": false,
+    "armoryTier": "T1",
+    "season": "Season 1",
+    "damageType": "Shredding",
+    "siteId": "sw-68",
+    "siteName": "RU12SG",
+    "source": {
+      "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
+      "seconds": [
+        7.75,
+        10.0
+      ]
+    },
+    "evidence": "evidence/armory/shotgun-t1.webp",
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "Double Barrel Shotgun",
+    "class": "Shotgun",
+    "exotic": false,
+    "armoryTier": "T2",
+    "season": "Season 1",
+    "damageType": "Blast",
+    "siteId": "sw-22",
+    "siteName": "Double Barrel",
+    "source": {
+      "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
+      "seconds": [
+        10.75,
+        12.25
+      ]
+    },
+    "evidence": "evidence/armory/shotgun-t2.webp",
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "M12",
+    "class": "Shotgun",
+    "exotic": false,
+    "armoryTier": "T2",
+    "season": "Season 1",
+    "damageType": "Piercing",
+    "siteId": "sw-69",
+    "siteName": "M12",
+    "source": {
+      "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
+      "seconds": [
+        10.75,
+        12.25
+      ]
+    },
+    "evidence": "evidence/armory/shotgun-t2.webp",
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "SG16 – 12G",
+    "class": "Shotgun",
+    "exotic": false,
+    "armoryTier": "T2",
+    "season": "Season 1",
+    "damageType": "Piercing",
+    "siteId": "sw-70",
+    "siteName": "SG16-12G",
+    "source": {
+      "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
+      "seconds": [
+        10.75,
+        12.25
+      ]
+    },
+    "evidence": "evidence/armory/shotgun-t2.webp",
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "RMB-93",
+    "class": "Shotgun",
+    "exotic": false,
+    "armoryTier": "T2",
+    "season": "Season 1",
+    "damageType": "Shredding",
+    "siteId": "sw-71",
+    "siteName": "RMB-93",
+    "source": {
+      "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
+      "seconds": [
+        10.75,
+        12.25
+      ]
+    },
+    "evidence": "evidence/armory/shotgun-t2.webp",
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "Classic M1A",
+    "class": "Rifle",
+    "exotic": false,
+    "armoryTier": "T0",
+    "season": "Season 1",
+    "damageType": "Blast",
+    "siteId": "sw-30",
+    "siteName": "Classic M1A",
+    "source": {
+      "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
+      "seconds": [
+        12.5,
+        14.0
+      ]
+    },
+    "evidence": "evidence/armory/rifle-t0.webp",
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "Gewehr 43",
+    "class": "Rifle",
+    "exotic": false,
+    "armoryTier": "T0",
+    "season": "Season 1",
+    "damageType": "Blast",
+    "siteId": "sw-82",
+    "siteName": "Gewehr 43",
+    "source": {
+      "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
+      "seconds": [
+        12.5,
+        14.0
+      ]
+    },
+    "evidence": "evidence/armory/rifle-t0.webp",
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "Police Mk17",
+    "class": "Rifle",
+    "exotic": false,
+    "armoryTier": "T0",
+    "season": "Season 1",
+    "damageType": "Piercing",
+    "siteId": "sw-81",
+    "siteName": "Police Mk17",
+    "source": {
+      "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
+      "seconds": [
+        12.5,
+        14.0
+      ]
+    },
+    "evidence": "evidence/armory/rifle-t0.webp",
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "1886",
+    "class": "Rifle",
+    "exotic": false,
+    "armoryTier": "T0",
+    "season": "Season 1",
+    "damageType": "Shredding",
+    "siteId": "sw-83",
+    "siteName": "Winchester 1886",
+    "source": {
+      "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
+      "seconds": [
+        12.5,
+        14.0
+      ]
+    },
+    "evidence": "evidence/armory/rifle-t0.webp",
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "M-16",
+    "class": "Rifle",
+    "exotic": false,
+    "armoryTier": "T1",
+    "season": "Season 1",
+    "damageType": "Blast",
+    "siteId": "sw-84",
+    "siteName": "M-16",
+    "source": {
+      "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
+      "seconds": [
+        14.75,
+        16.25
+      ]
+    },
+    "evidence": "evidence/armory/rifle-t1.webp",
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "Avtomat",
+    "class": "Rifle",
+    "exotic": false,
+    "armoryTier": "T1",
+    "season": "Season 1",
+    "damageType": "Blast",
+    "siteId": "sw-85",
+    "siteName": "Avtomat",
+    "source": {
+      "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
+      "seconds": [
+        14.75,
+        16.25
+      ]
+    },
+    "evidence": "evidence/armory/rifle-t1.webp",
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "G3",
+    "class": "Rifle",
+    "exotic": false,
+    "armoryTier": "T1",
+    "season": "Season 1",
+    "damageType": "Piercing",
+    "siteId": "sw-86",
+    "siteName": "G3",
+    "source": {
+      "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
+      "seconds": [
+        14.75,
+        16.25
+      ]
+    },
+    "evidence": "evidence/armory/rifle-t1.webp",
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "Urban MDR",
+    "class": "Rifle",
+    "exotic": false,
+    "armoryTier": "T1",
+    "season": "Season 1",
+    "damageType": "Shredding",
+    "siteId": "sw-31",
+    "siteName": "Urban MDR",
+    "source": {
+      "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
+      "seconds": [
+        14.75,
+        16.25
+      ]
+    },
+    "evidence": "evidence/armory/rifle-t1.webp",
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "M1 (military designation)",
+    "class": "Rifle",
+    "exotic": false,
+    "armoryTier": "T2",
+    "season": "Season 1",
+    "damageType": "Blast",
+    "siteId": "sw-89",
+    "siteName": "M1",
+    "source": {
+      "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
+      "seconds": [
+        17.0,
+        18.25
+      ]
+    },
+    "evidence": "evidence/armory/rifle-t2.webp",
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "UIC15 MOD2",
+    "class": "Rifle",
+    "exotic": false,
+    "armoryTier": "T2",
+    "season": "Season 1",
+    "damageType": "Piercing",
+    "siteId": "sw-87",
+    "siteName": "UIC15 MOD2",
+    "source": {
+      "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
+      "seconds": [
+        17.0,
+        18.25
+      ]
+    },
+    "evidence": "evidence/armory/rifle-t2.webp",
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "FG 42",
+    "class": "Rifle",
+    "exotic": false,
+    "armoryTier": "T2",
+    "season": "Season 1",
+    "damageType": "Piercing",
+    "siteId": "sw-90",
+    "siteName": "FG 42",
+    "source": {
+      "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
+      "seconds": [
+        17.0,
+        18.25
+      ]
+    },
+    "evidence": "evidence/armory/rifle-t2.webp",
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "ACE 52",
+    "class": "Rifle",
+    "exotic": false,
+    "armoryTier": "T2",
+    "season": "Season 1",
+    "damageType": "Shredding",
+    "siteId": "sw-88",
+    "siteName": "ACE 52",
+    "source": {
+      "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
+      "seconds": [
+        17.0,
+        18.25
+      ]
+    },
+    "evidence": "evidence/armory/rifle-t2.webp",
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "M700",
+    "class": "Marksman Rifle",
+    "exotic": false,
+    "armoryTier": "T0",
+    "season": "Season 1",
+    "damageType": "Blast",
+    "siteId": "sw-27",
+    "siteName": "M700",
+    "source": {
+      "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
+      "seconds": [
+        18.75,
+        20.0
+      ]
+    },
+    "evidence": "evidence/armory/marksman-rifle-t0.webp",
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "SRS-A1",
+    "class": "Marksman Rifle",
+    "exotic": false,
+    "armoryTier": "T0",
+    "season": "Season 1",
+    "damageType": "Piercing",
+    "siteId": "sw-25",
+    "siteName": "SRS A1",
+    "source": {
+      "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
+      "seconds": [
+        18.75,
+        20.0
+      ]
+    },
+    "evidence": "evidence/armory/marksman-rifle-t0.webp",
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "MK 20 SSR",
+    "class": "Marksman Rifle",
+    "exotic": false,
+    "armoryTier": "T0",
+    "season": "Season 1",
+    "damageType": "Shredding",
+    "siteId": "sw-72",
+    "siteName": "MK 20 SSR",
+    "source": {
+      "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
+      "seconds": [
+        18.75,
+        20.0
+      ]
+    },
+    "evidence": "evidence/armory/marksman-rifle-t0.webp",
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "Classic M44",
+    "class": "Marksman Rifle",
+    "exotic": false,
+    "armoryTier": "T0",
+    "season": "Season 1",
+    "damageType": "Shredding",
+    "siteId": "sw-73",
+    "siteName": "Classic M44",
+    "source": {
+      "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
+      "seconds": [
+        18.75,
+        20.0
+      ]
+    },
+    "evidence": "evidence/armory/marksman-rifle-t0.webp",
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "Tactical .308",
+    "class": "Marksman Rifle",
+    "exotic": false,
+    "armoryTier": "T1",
+    "season": "Season 1",
+    "damageType": "Blast",
+    "siteId": "sw-74",
+    "siteName": "Tactical .308",
+    "source": {
+      "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
+      "seconds": [
+        20.75,
+        22.25
+      ]
+    },
+    "evidence": "evidence/armory/marksman-rifle-t1.webp",
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "L115A3",
+    "class": "Marksman Rifle",
+    "exotic": false,
+    "armoryTier": "T1",
+    "season": "Season 1",
+    "damageType": "Blast",
+    "siteId": "sw-77",
+    "siteName": "L115A3",
+    "source": {
+      "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
+      "seconds": [
+        20.75,
+        22.25
+      ]
+    },
+    "evidence": "evidence/armory/marksman-rifle-t1.webp",
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "G28",
+    "class": "Marksman Rifle",
+    "exotic": false,
+    "armoryTier": "T1",
+    "season": "Season 1",
+    "damageType": "Piercing",
+    "siteId": "sw-75",
+    "siteName": "G28",
+    "source": {
+      "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
+      "seconds": [
+        20.75,
+        22.25
+      ]
+    },
+    "evidence": "evidence/armory/marksman-rifle-t1.webp",
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "Converted SRS",
+    "class": "Marksman Rifle",
+    "exotic": false,
+    "armoryTier": "T1",
+    "season": "Season 1",
+    "damageType": "Piercing",
+    "siteId": "sw-76",
+    "siteName": "Converted SRS",
+    "source": {
+      "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
+      "seconds": [
+        20.75,
+        22.25
+      ]
+    },
+    "evidence": "evidence/armory/marksman-rifle-t1.webp",
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "Paratrooper SVD",
+    "class": "Marksman Rifle",
+    "exotic": false,
+    "armoryTier": "T1",
+    "season": "Season 1",
+    "damageType": "Shredding",
+    "siteId": "sw-79",
+    "siteName": "Paratrooper SVD",
+    "source": {
+      "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
+      "seconds": [
+        20.75,
+        22.25
+      ]
+    },
+    "evidence": "evidence/armory/marksman-rifle-t1.webp",
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "M700 Carbon",
+    "class": "Marksman Rifle",
+    "exotic": false,
+    "armoryTier": "T2",
+    "season": "Season 1",
+    "damageType": "Blast",
+    "siteId": "sw-78",
+    "siteName": "M700 Carbon",
+    "source": {
+      "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
+      "seconds": [
+        23.0,
+        24.0
+      ]
+    },
+    "evidence": "evidence/armory/marksman-rifle-t2.webp",
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "DSR-1",
+    "class": "Marksman Rifle",
+    "exotic": false,
+    "armoryTier": "T2",
+    "season": "Season 1",
+    "damageType": "Piercing",
+    "siteId": "sw-26",
+    "siteName": "DSR-1",
+    "source": {
+      "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
+      "seconds": [
+        23.0,
+        24.0
+      ]
+    },
+    "evidence": "evidence/armory/marksman-rifle-t2.webp",
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "Hunting M44",
+    "class": "Marksman Rifle",
+    "exotic": false,
+    "armoryTier": "T2",
+    "season": "Season 1",
+    "damageType": "Shredding",
+    "siteId": "sw-29",
+    "siteName": "Hunting M44",
+    "source": {
+      "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
+      "seconds": [
+        23.0,
+        24.0
+      ]
+    },
+    "evidence": "evidence/armory/marksman-rifle-t2.webp",
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "Surplus SVD",
+    "class": "Marksman Rifle",
+    "exotic": false,
+    "armoryTier": "T2",
+    "season": "Season 1",
+    "damageType": "Shredding",
+    "siteId": "sw-80",
+    "siteName": "Surplus SVD",
+    "source": {
+      "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
+      "seconds": [
+        23.0,
+        24.0
+      ]
+    },
+    "evidence": "evidence/armory/marksman-rifle-t2.webp",
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "Military 416",
+    "class": "Assault Rifle",
+    "exotic": false,
+    "armoryTier": "T0",
+    "season": "Season 1",
+    "damageType": "Blast",
+    "siteId": "sw-7",
+    "siteName": "Military 416",
+    "source": {
+      "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
+      "seconds": [
+        24.25,
+        25.5
+      ]
+    },
+    "evidence": "evidence/armory/assault-rifle-t0.webp",
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "G36-C",
+    "class": "Assault Rifle",
+    "exotic": false,
+    "armoryTier": "T0",
+    "season": "Season 1",
+    "damageType": "Blast",
+    "siteId": "sw-5",
+    "siteName": "G36-C",
+    "source": {
+      "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
+      "seconds": [
+        24.25,
+        25.5
+      ]
+    },
+    "evidence": "evidence/armory/assault-rifle-t0.webp",
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "Classic AK-47",
+    "class": "Assault Rifle",
+    "exotic": false,
+    "armoryTier": "T0",
+    "season": "Season 1",
+    "damageType": "Piercing",
+    "siteId": "sw-1",
+    "siteName": "Classic AK-47",
+    "source": {
+      "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
+      "seconds": [
+        24.25,
+        25.5
+      ]
+    },
+    "evidence": "evidence/armory/assault-rifle-t0.webp",
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "Classic FAL",
+    "class": "Assault Rifle",
+    "exotic": false,
+    "armoryTier": "T0",
+    "season": "Season 1",
+    "damageType": "Piercing",
+    "siteId": "sw-35",
+    "siteName": "Classic FAL",
+    "source": {
+      "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
+      "seconds": [
+        24.25,
+        25.5
+      ]
+    },
+    "evidence": "evidence/armory/assault-rifle-t0.webp",
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "ACR",
+    "class": "Assault Rifle",
+    "exotic": false,
+    "armoryTier": "T0",
+    "season": "Season 1",
+    "damageType": "Shredding",
+    "siteId": "sw-3",
+    "siteName": "ACR",
+    "source": {
+      "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
+      "seconds": [
+        24.25,
+        25.5
+      ]
+    },
+    "evidence": "evidence/armory/assault-rifle-t0.webp",
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "Mk16",
+    "class": "Assault Rifle",
+    "exotic": false,
+    "armoryTier": "T0",
+    "season": "Season 1",
+    "damageType": "Shredding",
+    "siteId": "sw-33",
+    "siteName": "Mk16",
+    "source": {
+      "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
+      "seconds": [
+        24.25,
+        25.5
+      ]
+    },
+    "evidence": "evidence/armory/assault-rifle-t0.webp",
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "Police M4",
+    "class": "Assault Rifle",
+    "exotic": false,
+    "armoryTier": "T1",
+    "season": "Season 1",
+    "damageType": "Blast",
+    "siteId": "sw-2",
+    "siteName": "Police M4",
+    "source": {
+      "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
+      "seconds": [
+        26.25,
+        27.5
+      ]
+    },
+    "evidence": "evidence/armory/assault-rifle-t1.webp",
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "M8A1",
+    "class": "Assault Rifle",
+    "exotic": false,
+    "armoryTier": "T1",
+    "season": "Season 1",
+    "damageType": "Blast",
+    "siteId": "sw-36",
+    "siteName": "M8A1",
+    "source": {
+      "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
+      "seconds": [
+        26.25,
+        27.5
+      ]
+    },
+    "evidence": "evidence/armory/assault-rifle-t1.webp",
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "StG 44",
+    "class": "Assault Rifle",
+    "exotic": false,
+    "armoryTier": "T1",
+    "season": "Season 1",
+    "damageType": "Piercing",
+    "siteId": "sw-34",
+    "siteName": "StG 44",
+    "source": {
+      "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
+      "seconds": [
+        26.25,
+        27.5
+      ]
+    },
+    "evidence": "evidence/armory/assault-rifle-t1.webp",
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "Type 81",
+    "class": "Assault Rifle",
+    "exotic": false,
+    "armoryTier": "T1",
+    "season": "Season 1",
+    "damageType": "Piercing",
+    "siteId": "sw-37",
+    "siteName": "Type 81",
+    "source": {
+      "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
+      "seconds": [
+        26.25,
+        27.5
+      ]
+    },
+    "evidence": "evidence/armory/assault-rifle-t1.webp",
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "AN-94",
+    "class": "Assault Rifle",
+    "exotic": false,
+    "armoryTier": "T1",
+    "season": "Season 1",
+    "damageType": "Shredding",
+    "siteId": "sw-4",
+    "siteName": "AN-94",
+    "source": {
+      "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
+      "seconds": [
+        26.25,
+        27.5
+      ]
+    },
+    "evidence": "evidence/armory/assault-rifle-t1.webp",
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "Enhanced ACR-E",
+    "class": "Assault Rifle",
+    "exotic": false,
+    "armoryTier": "T1",
+    "season": "Season 1",
+    "damageType": "Shredding",
+    "siteId": "sw-38",
+    "siteName": "Enhanced ACR-E",
+    "source": {
+      "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
+      "seconds": [
+        26.25,
+        27.5
+      ]
+    },
+    "evidence": "evidence/armory/assault-rifle-t1.webp",
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "Custom 416 G3",
+    "class": "Assault Rifle",
+    "exotic": false,
+    "armoryTier": "T2",
+    "season": "Season 1",
+    "damageType": "Blast",
+    "siteId": "sw-39",
+    "siteName": "Custom 416 G3",
+    "source": {
+      "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
+      "seconds": [
+        28.25,
+        29.0
+      ]
+    },
+    "evidence": "evidence/armory/assault-rifle-t2.webp",
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "Lightweight M4",
+    "class": "Assault Rifle",
+    "exotic": false,
+    "armoryTier": "T2",
+    "season": "Season 1",
+    "damageType": "Blast",
+    "siteId": "sw-41",
+    "siteName": "Lightweight M4",
+    "source": {
+      "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
+      "seconds": [
+        28.25,
+        29.0
+      ]
+    },
+    "evidence": "evidence/armory/assault-rifle-t2.webp",
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "Military SA-58",
+    "class": "Assault Rifle",
+    "exotic": false,
+    "armoryTier": "T2",
+    "season": "Season 1",
+    "damageType": "Piercing",
+    "siteId": "sw-40",
+    "siteName": "Military SA-58",
+    "source": {
+      "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
+      "seconds": [
+        28.25,
+        29.0
+      ]
+    },
+    "evidence": "evidence/armory/assault-rifle-t2.webp",
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "Black Market AK-74",
+    "class": "Assault Rifle",
+    "exotic": false,
+    "armoryTier": "T2",
+    "season": "Season 1",
+    "damageType": "Piercing",
+    "siteId": "sw-8",
+    "siteName": "Black Market AK-74",
+    "source": {
+      "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
+      "seconds": [
+        28.25,
+        29.0
+      ]
+    },
+    "evidence": "evidence/armory/assault-rifle-t2.webp",
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "FAMAS",
+    "class": "Assault Rifle",
+    "exotic": false,
+    "armoryTier": "T2",
+    "season": "Season 1",
+    "damageType": "Shredding",
+    "siteId": "sw-6",
+    "siteName": "FAMAS",
+    "source": {
+      "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
+      "seconds": [
+        28.25,
+        29.0
+      ]
+    },
+    "evidence": "evidence/armory/assault-rifle-t2.webp",
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "Classic M60",
+    "class": "LMG",
+    "exotic": false,
+    "armoryTier": "T0",
+    "season": "Season 1",
+    "damageType": "Blast",
+    "siteId": "sw-15",
+    "siteName": "M60",
+    "source": {
+      "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
+      "seconds": [
+        29.5,
+        30.0
+      ]
+    },
+    "evidence": "evidence/armory/lmg-t0.webp",
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "Military L86 LSW",
+    "class": "LMG",
+    "exotic": false,
+    "armoryTier": "T0",
+    "season": "Season 1",
+    "damageType": "Blast",
+    "siteId": "sw-18",
+    "siteName": "L86 LSW",
+    "source": {
+      "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
+      "seconds": [
+        29.5,
+        30.0
+      ]
+    },
+    "evidence": "evidence/armory/lmg-t0.webp",
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "Classic RPK 74",
+    "class": "LMG",
+    "exotic": false,
+    "armoryTier": "T0",
+    "season": "Season 1",
+    "damageType": "Piercing",
+    "siteId": "sw-53",
+    "siteName": "Classic RPK 74",
+    "source": {
+      "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
+      "seconds": [
+        29.5,
+        30.0
+      ]
+    },
+    "evidence": "evidence/armory/lmg-t0.webp",
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "Lewis Gun",
+    "class": "LMG",
+    "exotic": false,
+    "armoryTier": "T0",
+    "season": "Season 1",
+    "damageType": "Shredding",
+    "siteId": "sw-54",
+    "siteName": "Lewis Gun",
+    "source": {
+      "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
+      "seconds": [
+        29.5,
+        30.0
+      ]
+    },
+    "evidence": "evidence/armory/lmg-t0.webp",
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "MG5",
+    "class": "LMG",
+    "exotic": false,
+    "armoryTier": "T0",
+    "season": "Season 1",
+    "damageType": "Shredding",
+    "siteId": "sw-16",
+    "siteName": "MG5",
+    "source": {
+      "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
+      "seconds": [
+        29.5,
+        30.0
+      ]
+    },
+    "evidence": "evidence/armory/lmg-t0.webp",
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "UMAX100",
+    "class": "LMG",
+    "exotic": false,
+    "armoryTier": "T1",
+    "season": "Season 1",
+    "damageType": "Blast",
+    "siteId": "sw-55",
+    "siteName": "UMAX100",
+    "source": {
+      "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
+      "seconds": [
+        30.75,
+        32.0
+      ]
+    },
+    "evidence": "evidence/armory/lmg-t1.webp",
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "Black Market M60 E6",
+    "class": "LMG",
+    "exotic": false,
+    "armoryTier": "T1",
+    "season": "Season 1",
+    "damageType": "Blast",
+    "siteId": "sw-58",
+    "siteName": "Black Market M60 E6",
+    "source": {
+      "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
+      "seconds": [
+        30.75,
+        32.0
+      ]
+    },
+    "evidence": "evidence/armory/lmg-t1.webp",
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "RPD",
+    "class": "LMG",
+    "exotic": false,
+    "armoryTier": "T1",
+    "season": "Season 1",
+    "damageType": "Piercing",
+    "siteId": "sw-56",
+    "siteName": "RPD",
+    "source": {
+      "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
+      "seconds": [
+        30.75,
+        32.0
+      ]
+    },
+    "evidence": "evidence/armory/lmg-t1.webp",
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "Black Market RPK-74 E",
+    "class": "LMG",
+    "exotic": false,
+    "armoryTier": "T1",
+    "season": "Season 1",
+    "damageType": "Piercing",
+    "siteId": "sw-17",
+    "siteName": "Black Market RPK-74",
+    "source": {
+      "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
+      "seconds": [
+        30.75,
+        32.0
+      ]
+    },
+    "evidence": "evidence/armory/lmg-t1.webp",
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "NEGEV",
+    "class": "LMG",
+    "exotic": false,
+    "armoryTier": "T1",
+    "season": "Season 1",
+    "damageType": "Shredding",
+    "siteId": "sw-57",
+    "siteName": "NEGEV",
+    "source": {
+      "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
+      "seconds": [
+        30.75,
+        32.0
+      ]
+    },
+    "evidence": "evidence/armory/lmg-t1.webp",
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "Stoner LAMG",
+    "class": "LMG",
+    "exotic": false,
+    "armoryTier": "T2",
+    "season": "Season 1",
+    "damageType": "Blast",
+    "siteId": "sw-59",
+    "siteName": "Stoner LAMG",
+    "source": {
+      "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
+      "seconds": [
+        32.75,
+        33.5
+      ]
+    },
+    "evidence": "evidence/armory/lmg-t2.webp",
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "Military M60 E4",
+    "class": "LMG",
+    "exotic": false,
+    "armoryTier": "T2",
+    "season": "Season 1",
+    "damageType": "Blast",
+    "siteId": "sw-62",
+    "siteName": "Military M60 E4",
+    "source": {
+      "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
+      "seconds": [
+        32.75,
+        33.5
+      ]
+    },
+    "evidence": "evidence/armory/lmg-t2.webp",
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "PKM",
+    "class": "LMG",
+    "exotic": false,
+    "armoryTier": "T2",
+    "season": "Season 1",
+    "damageType": "Piercing",
+    "siteId": "sw-60",
+    "siteName": "PKM",
+    "source": {
+      "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
+      "seconds": [
+        32.75,
+        33.5
+      ]
+    },
+    "evidence": "evidence/armory/lmg-t2.webp",
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "M249",
+    "class": "LMG",
+    "exotic": false,
+    "armoryTier": "T2",
+    "season": "Season 1",
+    "damageType": "Shredding",
+    "siteId": "sw-61",
+    "siteName": "M249",
+    "source": {
+      "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
+      "seconds": [
+        32.75,
+        33.5
+      ]
+    },
+    "evidence": "evidence/armory/lmg-t2.webp",
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "Military MK46",
+    "class": "LMG",
+    "exotic": false,
+    "armoryTier": "T2",
+    "season": "Season 1",
+    "damageType": "Shredding",
+    "siteId": "sw-63",
+    "siteName": "Military MK46",
+    "source": {
+      "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
+      "seconds": [
+        32.75,
+        33.5
+      ]
+    },
+    "evidence": "evidence/armory/lmg-t2.webp",
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "Converted SMG-9",
+    "class": "SMG",
+    "exotic": false,
+    "armoryTier": "T0",
+    "season": "Season 1",
+    "damageType": "Blast",
+    "siteId": "sw-42",
+    "siteName": "Converted SMG-9",
+    "source": {
+      "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
+      "seconds": [
+        33.75,
+        34.75
+      ]
+    },
+    "evidence": "evidence/armory/smg-t0.webp",
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "Police T821",
+    "class": "SMG",
+    "exotic": false,
+    "armoryTier": "T0",
+    "season": "Season 1",
+    "damageType": "Blast",
+    "siteId": "sw-14",
+    "siteName": "T821",
+    "source": {
+      "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
+      "seconds": [
+        33.75,
+        34.75
+      ]
+    },
+    "evidence": "evidence/armory/smg-t0.webp",
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "Vector 45 ACP",
+    "class": "SMG",
+    "exotic": false,
+    "armoryTier": "T0",
+    "season": "Season 1",
+    "damageType": "Piercing",
+    "siteId": "sw-11",
+    "siteName": "Vector",
+    "source": {
+      "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
+      "seconds": [
+        33.75,
+        34.75
+      ]
+    },
+    "evidence": "evidence/armory/smg-t0.webp",
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "PP-19",
+    "class": "SMG",
+    "exotic": false,
+    "armoryTier": "T0",
+    "season": "Season 1",
+    "damageType": "Piercing",
+    "siteId": "sw-43",
+    "siteName": "PP-19",
+    "source": {
+      "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
+      "seconds": [
+        33.75,
+        34.75
+      ]
+    },
+    "evidence": "evidence/armory/smg-t0.webp",
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "Naval MP5",
+    "class": "SMG",
+    "exotic": false,
+    "armoryTier": "T0",
+    "season": "Season 1",
+    "damageType": "Shredding",
+    "siteId": "sw-12",
+    "siteName": "MP5",
+    "source": {
+      "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
+      "seconds": [
+        33.75,
+        34.75
+      ]
+    },
+    "evidence": "evidence/armory/smg-t0.webp",
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "MPX",
+    "class": "SMG",
+    "exotic": false,
+    "armoryTier": "T0",
+    "season": "Season 1",
+    "damageType": "Shredding",
+    "siteId": "sw-44",
+    "siteName": "MPX",
+    "source": {
+      "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
+      "seconds": [
+        33.75,
+        34.75
+      ]
+    },
+    "evidence": "evidence/armory/smg-t0.webp",
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "AUG A3 Para XS",
+    "class": "SMG",
+    "exotic": false,
+    "armoryTier": "T1",
+    "season": "Season 1",
+    "damageType": "Blast",
+    "siteId": "sw-10",
+    "siteName": "AUG A3 Para XS",
+    "source": {
+      "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
+      "seconds": [
+        35.25,
+        36.25
+      ]
+    },
+    "evidence": "evidence/armory/smg-t1.webp",
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "Converted SMG-9 A2",
+    "class": "SMG",
+    "exotic": false,
+    "armoryTier": "T1",
+    "season": "Season 1",
+    "damageType": "Blast",
+    "siteId": "sw-47",
+    "siteName": "Converted SMG-9 A2",
+    "source": {
+      "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
+      "seconds": [
+        35.25,
+        36.25
+      ]
+    },
+    "evidence": "evidence/armory/smg-t1.webp",
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "P90",
+    "class": "SMG",
+    "exotic": false,
+    "armoryTier": "T1",
+    "season": "Season 1",
+    "damageType": "Piercing",
+    "siteId": "sw-45",
+    "siteName": "P90",
+    "source": {
+      "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
+      "seconds": [
+        35.25,
+        36.25
+      ]
+    },
+    "evidence": "evidence/armory/smg-t1.webp",
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "Copperhead",
+    "class": "SMG",
+    "exotic": false,
+    "armoryTier": "T1",
+    "season": "Season 1",
+    "damageType": "Piercing",
+    "siteId": "sw-48",
+    "siteName": "Copperhead",
+    "source": {
+      "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
+      "seconds": [
+        35.25,
+        36.25
+      ]
+    },
+    "evidence": "evidence/armory/smg-t1.webp",
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "MP40",
+    "class": "SMG",
+    "exotic": false,
+    "armoryTier": "T1",
+    "season": "Season 1",
+    "damageType": "Shredding",
+    "siteId": "sw-46",
+    "siteName": "MP40",
+    "source": {
+      "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
+      "seconds": [
+        35.25,
+        36.25
+      ]
+    },
+    "evidence": "evidence/armory/smg-t1.webp",
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "Police UMP-45",
+    "class": "SMG",
+    "exotic": false,
+    "armoryTier": "T1",
+    "season": "Season 1",
+    "damageType": "Shredding",
+    "siteId": "sw-9",
+    "siteName": "UMP-45",
+    "source": {
+      "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
+      "seconds": [
+        35.25,
+        36.25
+      ]
+    },
+    "evidence": "evidence/armory/smg-t1.webp",
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "Enhanced AUG A3P",
+    "class": "SMG",
+    "exotic": false,
+    "armoryTier": "T2",
+    "season": "Season 1",
+    "damageType": "Blast",
+    "siteId": "sw-49",
+    "siteName": "Enhanced AUG A3P",
+    "source": {
+      "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
+      "seconds": [
+        37.0,
+        38.25
+      ]
+    },
+    "evidence": "evidence/armory/smg-t2.webp",
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "First Wave Vector 45 ACP",
+    "class": "SMG",
+    "exotic": false,
+    "armoryTier": "T2",
+    "season": "Season 1",
+    "damageType": "Piercing",
+    "siteId": "sw-50",
+    "siteName": "First Wave Vector 45 ACP",
+    "source": {
+      "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
+      "seconds": [
+        37.0,
+        38.25
+      ]
+    },
+    "evidence": "evidence/armory/smg-t2.webp",
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "PPSH-41",
+    "class": "SMG",
+    "exotic": false,
+    "armoryTier": "T2",
+    "season": "Season 1",
+    "damageType": "Piercing",
+    "siteId": "sw-13",
+    "siteName": "PPSH-41",
+    "source": {
+      "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
+      "seconds": [
+        37.0,
+        38.25
+      ]
+    },
+    "evidence": "evidence/armory/smg-t2.webp",
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "Modified USC",
+    "class": "SMG",
+    "exotic": false,
+    "armoryTier": "T2",
+    "season": "Season 1",
+    "damageType": "Shredding",
+    "siteId": "sw-51",
+    "siteName": "Modified USC",
+    "source": {
+      "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
+      "seconds": [
+        37.0,
+        38.25
+      ]
+    },
+    "evidence": "evidence/armory/smg-t2.webp",
+    "checked": "2026-10-28"
+  },
+  {
+    "name": "MP7",
+    "class": "SMG",
+    "exotic": false,
+    "armoryTier": "T2",
+    "season": "Season 1",
+    "damageType": "Shredding",
+    "siteId": "sw-52",
+    "siteName": "MP7",
+    "source": {
+      "recording": "Screen_Recording_20261028_191045_The_Division_Resurgence.mp4",
+      "seconds": [
+        37.0,
+        38.25
+      ]
+    },
+    "evidence": "evidence/armory/smg-t2.webp",
+    "checked": "2026-10-28"
+  }
+]

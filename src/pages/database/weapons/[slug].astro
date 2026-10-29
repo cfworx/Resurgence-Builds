@@ -52,9 +52,10 @@ const typeDesc = typeGuide[weapon.type] || `${weapon.type}s are a weapon categor
 const attributeStats = [weapon.rpm, weapon.mag, weapon.accuracy, weapon.reloadSpeed, weapon.stability];
 const populatedStatCount = attributeStats.filter((v: any) => v !== undefined && v !== null && v !== '').length;
 
-// The standard-weapons data only carries a placeholder "Physical" damage type, which is not a real
-// in-game damage type (Resurgence uses Blast, Shredding and Piercing). Only state a type when we know it.
+// dmgType and armoryTier come from the in-game Armory (our screen recording, October 28, 2026): the damage type
+// is the icon next to the weapon's name, the tier is the Armory page it sits on (Season 1, Tier 0, 1 or 2).
 const knownDmgType: string | null = weapon.dmgType && weapon.dmgType !== 'Physical' ? weapon.dmgType : null;
+const armoryTier: string | null = /^T[012]$/.test(weapon.armoryTier || '') ? weapon.armoryTier : null;
 
 // Recommended bonus attributes, deduplicated by name (SMGs otherwise listed Crit Damage twice).
 type RecAttr = { name: string; note: string; accent?: boolean };
@@ -122,6 +123,7 @@ const itemLd = {
     ...(weapon.rpm ? [{ '@type': 'PropertyValue', name: 'RPM', value: String(weapon.rpm) }] : []),
     ...(weapon.mag ? [{ '@type': 'PropertyValue', name: 'Magazine', value: String(weapon.mag) }] : []),
     ...(knownDmgType ? [{ '@type': 'PropertyValue', name: 'Damage Type', value: knownDmgType }] : []),
+    ...(armoryTier ? [{ '@type': 'PropertyValue', name: 'Armory Tier', value: `Tier ${armoryTier.slice(1)}` }] : []),
   ]
 };
 
@@ -142,6 +144,8 @@ const boldStars = (t: string) => t
         <div style="display: flex; flex-wrap: wrap; align-items: center; gap: var(--sp-4);">
           <h1 style="font-family: var(--font-heading); font-size: var(--text-4xl); font-weight: 900; letter-spacing: -0.03em; margin: 0; background: linear-gradient(135deg, #fff 60%, var(--accent)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">{weapon.name}</h1>
           <span style="display: inline-flex; align-items: center; font-family: var(--font-mono); font-size: var(--step--2); font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent); background: rgba(242,104,34,0.12); border: 1px solid rgba(242,104,34,0.25); padding: 5px 14px; border-radius: 999px;">{weapon.type}</span>
+          {armoryTier && <span class="weapon-pill">Tier {armoryTier.slice(1)}</span>}
+          {knownDmgType && <span class={`weapon-pill weapon-pill--${knownDmgType.toLowerCase()}`}>{knownDmgType}</span>}
         </div>
         <div style="display: inline-flex; align-items: center; gap: 6px; font-family: var(--font-mono); font-size: var(--text-xs); color: #6DAA45; background: rgba(109, 170, 69, 0.1); border: 1px solid rgba(109, 170, 69, 0.25); padding: 6px 14px; border-radius: 999px; margin-top: var(--sp-4); letter-spacing: 0.02em;">
           <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
@@ -159,7 +163,7 @@ const boldStars = (t: string) => t
       <div style="margin-bottom: var(--sp-8);">
         <h2 style="font-family: var(--font-heading); font-size: var(--text-lg); font-weight: 800; color: #fff; margin: 0 0 var(--sp-4) 0; padding-bottom: var(--sp-2); border-bottom: 1px solid rgba(255,255,255,0.08);">Overview</h2>
         <p style="color: #c8c8d0; line-height: 1.75; font-size: var(--text-base);">
-          The <strong>{weapon.name}</strong> is {typeArticle} <strong>{weapon.type}</strong> in The Division Resurgence{weapon.rpm && weapon.mag && <> that fires at <strong>{weapon.rpm} RPM</strong> with a <strong>{weapon.mag}-round</strong> magazine</>}{knownDmgType && <> and deals <strong>{knownDmgType}</strong> damage</>}.
+          The <strong>{weapon.name}</strong> is {typeArticle} <strong>{weapon.type}</strong> in The Division Resurgence{weapon.rpm && weapon.mag && <> that fires at <strong>{weapon.rpm} RPM</strong> with a <strong>{weapon.mag}-round</strong> magazine</>}{knownDmgType && <> and deals <strong>{knownDmgType}</strong> damage</>}.{armoryTier && <> The in-game Armory lists it under Season 1, Tier {armoryTier.slice(1)}{knownDmgType ? ', with the damage type shown next to its name' : ''} (checked October 28, 2026).</>}
         </p>
       </div>
 
@@ -236,3 +240,23 @@ const boldStars = (t: string) => t
     <AdSenseUnit label="Advertisement (database item)" />
   </div>
 </BaseLayout>
+
+<style>
+  .weapon-pill {
+    display: inline-flex;
+    align-items: center;
+    font-family: var(--font-mono);
+    font-size: var(--step--2);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #c8c8d0;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 5px 14px;
+    border-radius: 999px;
+  }
+  .weapon-pill--blast { color: #f6896a; border-color: rgba(246, 137, 106, 0.45); background: rgba(246, 137, 106, 0.1); }
+  .weapon-pill--piercing { color: #9fb0ff; border-color: rgba(159, 176, 255, 0.45); background: rgba(159, 176, 255, 0.1); }
+  .weapon-pill--shredding { color: #8fd79f; border-color: rgba(143, 215, 159, 0.45); background: rgba(143, 215, 159, 0.1); }
+</style>

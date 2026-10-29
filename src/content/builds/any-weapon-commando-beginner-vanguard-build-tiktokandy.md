@@ -113,7 +113,7 @@ His September 24 pieces (he describes two of them as kneepads, so we can't say w
 **The two talents (base versions; his readings for rank II):**
 
 - **Injured Concealment:** hits taken grant +1.80% Damage for 10 seconds, up to 10 stacks. He reads Injured Concealment II as up to +25% after 10 hits, and pitches it as the "super glass cannon-y" pick: "I'm gonna kill you in one clip and that's it."
-- **Siege:** Extra Health equal to 37.50% Max Health for 15 seconds when 2 or more enemies are within 20 meters, 30-second cooldown. His Siege II reads 52%, and on September 19 he worked out that it would take his roughly 81,000 Health to about 120,000 when it procs. If you want a PvP version, he suggests swapping it for the backpack talent that heals you when you drop below 20% Health (Emergency Measures in our database).
+- **Siege:** Extra Health equal to 37.50% Max Health for 15 seconds when 2 enemies are within 20 meters, 30-second cooldown. His Siege II reads 52%, and on September 19 he worked out that it would take his roughly 81,000 Health to about 120,000 when it procs. If you want a PvP version, he suggests swapping it for the backpack talent that heals you when you drop below 20% Health (Emergency Measures in our database).
 
 **Stats to chase:** Firepower first, then Critical Hit Chance, Critical Hit Damage, Multi-Shot Chance and Headshot Damage. His mod rule: any mod with Critical Hit Chance or Weapon Damage goes straight to level 20 and gets locked. Armor mods are fine too. And slot your **Tactical Augmentation Modules** ("manuals" in his video), which he calls "the easiest stat gain you're ever gonna get," then check them again every time you change gear, because he forgot once and paid for it.
 

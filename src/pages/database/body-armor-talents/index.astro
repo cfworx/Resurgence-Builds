@@ -4,10 +4,10 @@ import armorTalents from '../../../data/body-armor-talents.json';
 import TalentIndex from '../../../components/TalentIndex.astro';
 import AdSenseUnit from '../../../components/AdSenseUnit.astro';
 import { verifiedPatch } from '../../../data/site-config';
-const lastVerified = verifiedPatch('Patch 1.1.2.2'); // Bump: drop the arg ONLY after re-verifying this page's content in-game (CURRENT_PATCH is a ceiling, not an auto-bump)
+const lastVerified = verifiedPatch(); // Every talent checked against the in-game Build-Making Database on October 28, 2026
 
 const title = "Division Resurgence Body Armor Talents & Best Builds";
-const description = "Every Body Armor (Body Armor) Talent in Division Resurgence. Pick the right one and you're unkillable. Pick the wrong one and you're a loot donation.";
+const description = "Every Body Armor Talent in Division Resurgence, checked against the in-game Build-Making Database. Pick the right one and you're unkillable. Pick the wrong one and you're a loot donation.";
 const breadcrumbs = [
   { name: 'Body Armor Talents', url: '/database/body-armor-talents/' }
 ];
@@ -54,7 +54,7 @@ const itemListLd = {
   {faqs}
 >
   <div style="color: #c8c8d0; line-height: 1.75; font-size: var(--text-base); margin-bottom: var(--sp-6); max-width: 72ch;">
-    <p>Body Armor is one of only two gear slots that carries a talent (the backpack is the other), and it's the one that defines your build's identity. These talents are always active once equipped and stack with your backpack talent, weapon talents, and gear set bonuses. The values below are rank I; creator readings of rank II copies, like TikTokAndy's Suppressive Fire II at +25% Magazine Size against the 18% base, come out about 1.4 times higher.</p>
+    <p>Body Armor is one of only two gear slots that carries a talent (the backpack is the other), and it's the one that defines your build's identity. These talents are always active once equipped and stack with your backpack talent, weapon talents, and gear set bonuses. The values below are rank I; creator readings of rank II copies, like TikTokAndy's Suppressive Fire II at +25% Magazine Size against the 18% base, come out about 1.4 times higher. All 25 match the game's own Build-Making Database (checked October 28, 2026), whose header puts it plainly: "Generally, gear does not have a Talent, except for Backpacks and Body Armor."</p>
   </div>
 
   <TalentIndex

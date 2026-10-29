@@ -4,6 +4,12 @@ import bonusAttributes from '../../../data/bonus-attributes.json';
 import AdSenseUnit from '../../../components/AdSenseUnit.astro';
 import { verifiedPatch } from '../../../data/site-config';
 import { attrGuide, statInteraction } from '../../../data/bonus-attribute-guides';
+import inGame from '../../../data/bonus-attributes-in-game.json';
+// Each attribute's own description from the in-game Build-Making Database (October 28, 2026)
+const gameText = (name: string): string | undefined => (inGame.descriptions as Record<string, string>)[name];
+// Damage-type attributes: still listed by the in-game database, removed from weapon rolls in Season 2 Phase 1
+const damageTypeAttrs = inGame.listed.filter((n: string) => /(Blast|Piercing|Shredding) Damage$/.test(n));
+const notInDatabase = ['All Weapon Damage', 'All Skill Damage'];
 const lastVerified = verifiedPatch('Patch 1.2.1'); // Bump: drop the arg ONLY after re-verifying this page's content in-game (CURRENT_PATCH is a ceiling, not an auto-bump)
 
 const attrCount = bonusAttributes.reduce((n: number, c: any) => n + c.attributes.length, 0);
@@ -75,7 +81,7 @@ const itemListLd = {
     <p>Bonus attributes are the secondary stats on every gear piece in Division Resurgence. Each piece carries Firepower, Toughness and Engineering values (TikTokAndy's T2 Phalanx holster reads 200 Firepower, 33 Toughness and 64 Engineering) plus two bonus attributes like Weapon Critical Hit Chance, Skill Intensity, or Damage Reduction. We group the attributes below by the core stat they feed, but the groups aren't walled off by a piece's biggest stat: creators' gear mixes them freely.</p>
     <p>There are {allAttrs.length} bonus attributes across {bonusAttributes.length} pools: <strong>Firepower</strong> (offensive weapon stats), <strong>Toughness</strong> (survivability), <strong>Engineering</strong> (skill scaling), and <strong>Universal</strong> (attributes that roll on any core type). Universal attributes like Damage to Elites and Received Healing are the most flexible options for builds that need cross-category value. For how the core stats, crit and talent ranks fit together, see our <a href="/guides/division-resurgence-stats-explained/" style="color: var(--accent);">stats guide</a>.</p>
     <p>Recalibration rerolls an attribute line at random and costs recalibration manuals, which TikTokAndy says are at a premium. Pick the line that's furthest from what your build wants before you spend one, especially on Tier 2 endgame gear that you cannot easily replace.</p>
-    <p><strong>Update (October 2026):</strong> Season 2 Phase 1 reshuffled the pools. Weapons no longer roll Blast, Piercing or Shredding Weapon or Skill Damage: Ubisoft replaced them with All Weapon Damage and All Skill Damage, which this list now shows in their place. Ubisoft's notes cover weapons and weapon mods, not gear pieces, and older weapons may still carry the old rolls, so check yours in the Armory. Weapon mods were reworked (main stat +100%, attribute bonuses -25%), and newly dropped weapon mods lost the damage-type and All Damage rolls in exchange for Weapon Damage, Skill Intensity, Headshot Damage, Weapon Critical Hit Damage and Skill Critical Damage. Mods you already own keep their rolls. Gear mods lost Elite Enemy and Enemy Leader Resistance and can now roll Max Health, Armor, Received Healing, weapon and skill crit chance, crit damage and multi-shot, Weapon Damage, Skill Intensity, Headshot Damage and Signature Ability Charge Efficiency. The per-stat notes below were written before that patch unless they say otherwise.</p>
+    <p><strong>Update (October 2026):</strong> Season 2 Phase 1 reshuffled the pools. Weapons no longer roll Blast, Piercing or Shredding Weapon or Skill Damage: Ubisoft replaced them with All Weapon Damage and All Skill Damage, which this list now shows in their place. Ubisoft's notes cover weapons and weapon mods, not gear pieces, and older weapons may still carry the old rolls, so check yours in the Armory. Weapon mods were reworked (main stat +100%, attribute bonuses -25%), and newly dropped weapon mods lost the damage-type and All Damage rolls in exchange for Weapon Damage, Skill Intensity, Headshot Damage, Weapon Critical Hit Damage and Skill Critical Damage. Mods you already own keep their rolls. Gear mods lost Elite Enemy and Enemy Leader Resistance and can now roll Max Health, Armor, Received Healing, weapon and skill crit chance, crit damage and multi-shot, Weapon Damage, Skill Intensity, Headshot Damage and Signature Ability Charge Efficiency. The per-stat notes below were written before that patch unless they say otherwise. Each stat's "In game" line is its own description from the game's Build-Making Database (checked October 28, 2026), which says a weapon or gear piece gets "2 different Bonus Attributes" at random.</p>
   </div>
 
   <!-- Jump nav: a fold, closed on phones (20+ links at 44px would be a long block before the content), open wider -->
@@ -93,6 +99,12 @@ const itemListLd = {
         </div>
       );
     })}
+    <div class="attr-jumpnav__group">
+      <a href="#damage-type-attributes" class="attr-jumpnav__cat">Damage type</a>
+      {damageTypeAttrs.map((attr: string) => (
+        <a href={`#${toSlug(attr)}`} class="attr-jumpnav__link">{attr}</a>
+      ))}
+    </div>
   </nav>
   </details>
   <script is:inline>(function () { var d = document.querySelector('[data-jumpnav]'); if (d && window.matchMedia('(min-width: 45em)').matches) d.open = true; })();</script>
@@ -120,6 +132,7 @@ const itemListLd = {
                   {attr}
                   <span class="attr-entry__badge" style={`color:${palette.color};border-color:${palette.border};background:${palette.bg};`}>{category.category}</span>
                 </h3>
+                {gameText(attr) && <p class="attr-entry__ingame"><span>In game:</span> "{gameText(attr)}"</p>}
                 {info ? (
                   <div class="attr-entry__body">
                     <p>{info.overview}</p>
@@ -151,6 +164,38 @@ const itemListLd = {
       );
     })}
   </div>
+
+  <section class="attr-pool attr-pool--legacy" id="damage-type-attributes" data-pool="Damage type">
+    <h2 class="attr-pool__title">Damage-type attributes <span class="attr-pool__count">{damageTypeAttrs.length} stats</span></h2>
+    <p class="attr-pool__note">The in-game Build-Making Database (checked October 28, 2026) still lists these six. Season 2 Phase 1 took them out of weapon rolls "in favor of 'All Weapon Damage' or 'All Skill Damage'", and Ubisoft's notes don't say whether gear pieces still roll them. Older weapons and mods keep the rolls they had. The database's list doesn't include {notInDatabase.join(' or ')} either, so it may simply not have been updated for that patch, the way its Ammo Refill card wasn't.</p>
+    {damageTypeAttrs.map((attr: string) => {
+      const slug = toSlug(attr);
+      const info = attrGuide[attr];
+      return (
+        <article class="attr-entry" id={slug} data-name={attr} data-pool="Damage type">
+          <h3 class="attr-entry__title">
+            <a href={`#${slug}`} class="attr-entry__anchor" aria-label={`Link to ${attr}`}>#</a>
+            {attr}
+          </h3>
+          {gameText(attr) && <p class="attr-entry__ingame"><span>In game:</span> "{gameText(attr)}"</p>}
+          {info && (
+            <div class="attr-entry__body">
+              <p>{info.overview}</p>
+              <details class="attr-entry__more">
+                <summary>Why it matters and how to get it</summary>
+                <h4>Why it matters</h4>
+                <p>{info.whyItMatters}</p>
+                <h4>How to get it</h4>
+                <p>{info.howToGet}</p>
+                <h4>Best builds</h4>
+                <p>{info.bestBuilds}</p>
+              </details>
+            </div>
+          )}
+        </article>
+      );
+    })}
+  </section>
 
 <AdSenseUnit label="Advertisement (database category)" />
 
@@ -311,6 +356,25 @@ const itemListLd = {
     line-height: 1.7;
     font-size: var(--text-sm);
   }
+  /* the attribute's own description from the in-game Build-Making Database */
+  .attr-entry__ingame {
+    margin: 0 0 var(--sp-3) 0;
+    padding-left: var(--sp-3);
+    border-left: 2px solid rgba(255,255,255,0.18);
+    color: #e2e2e8;
+    font-size: var(--text-sm);
+    line-height: 1.6;
+  }
+  .attr-entry__ingame span {
+    font-family: var(--font-mono);
+    font-size: var(--step--2);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--ink-muted);
+    margin-right: 4px;
+  }
+  .attr-pool--legacy .attr-pool__title { color: #b8b8c0; border-color: rgba(255,255,255,0.15); }
+  .attr-pool__note { max-width: 72ch; color: #b8b8c0; line-height: 1.7; margin: 0 0 var(--sp-5); }
   .attr-entry__body p { margin: 0 0 var(--sp-3) 0; }
   .attr-entry__more {
     margin-top: var(--sp-2);
@@ -355,8 +419,8 @@ const itemListLd = {
         all.sort((a, b) => (a.dataset.name || '').localeCompare(b.dataset.name || ''));
         all.forEach(e => flat!.appendChild(e));
       } else {
-        // re-append (entries may have been restored to pools)
-        const all = Array.from(document.querySelectorAll<HTMLElement>('.attr-entry'));
+        // re-append (entries may have been restored to pools); only the pool entries, not the damage-type section below
+        const all = originalOrder.flatMap(o => o.entries);
         all.sort((a, b) => (a.dataset.name || '').localeCompare(b.dataset.name || ''));
         all.forEach(e => flat!.appendChild(e));
       }

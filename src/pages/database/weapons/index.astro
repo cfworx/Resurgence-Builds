@@ -3,8 +3,14 @@ import DatabaseLayout from '../../../layouts/DatabaseLayout.astro';
 import WeaponAttributes from '../../../components/WeaponAttributes.astro';
 import WeaponTalentsGrid from '../../../components/WeaponTalentsGrid.astro';
 import allStandardWeapons from '../../../data/standard-weapons.json';
-// Weapons with statsVerified: false are in the build planner only until their stats are checked in game.
-const standardWeapons = allStandardWeapons.filter((w: any) => w.statsVerified !== false);
+// Every standard weapon is listed with its class, Armory tier and damage type (from the in-game Armory,
+// October 28, 2026). Only weapons without statsVerified: false have their own page so far.
+const TIER_ORDER: Record<string, number> = { T0: 0, T1: 1, T2: 2 };
+const standardWeapons = [...allStandardWeapons].sort((a: any, b: any) =>
+  (TIER_ORDER[a.armoryTier] ?? 9) - (TIER_ORDER[b.armoryTier] ?? 9) || a.name.localeCompare(b.name));
+const hasPage = (w: any) => w.statsVerified !== false;
+const tierLabel = (t: string) => (t ? `Tier ${t.slice(1)}` : '');
+const typeCount = (t: string) => allStandardWeapons.filter((w: any) => w.type === t).length;
 import allExoticWeapons from '../../../data/exotic-weapons.json';
 // Exotics with unverified stat lines (statsVerified: false) are in the planner only, not the database.
 const exoticWeapons = allExoticWeapons.filter((w: any) => w.statsVerified !== false);
@@ -16,13 +22,15 @@ const breadcrumbs = [
 ];
 
 const title = "All Weapons: Division Resurgence Database";
-const description = "Complete Division Resurgence weapon database. Every Assault Rifle, SMG, LMG, Marksman Rifle, and Shotgun with RPM, magazine size, and damage type.";
+const description = `All ${allStandardWeapons.length} standard Division Resurgence weapons by class, Armory tier and damage type, checked in the in-game Armory, plus the six exotics.`;
 
 // Group by type
-const types = [...new Set(standardWeapons.map((w: any) => w.type))];
+const TYPE_ORDER = ['Assault Rifle', 'SMG', 'LMG', 'Marksman Rifle', 'Rifle', 'Shotgun'];
+const types = [...TYPE_ORDER.filter((t) => standardWeapons.some((w: any) => w.type === t)), ...[...new Set(standardWeapons.map((w: any) => w.type))].filter((t: any) => !TYPE_ORDER.includes(t))];
 
 const faqs = [
-  { question: "How many weapons are in Division Resurgence?", answer: "Division Resurgence has dozens of weapons across multiple categories: Assault Rifles, SMGs, LMGs, Marksman Rifles, and Shotguns plus a growing roster of Exotic weapons with unique talents. This page lists every standard weapon in the game with their RPM, magazine size, and damage type." },
+  { question: "How many weapons are in Division Resurgence?", answer: `The in-game Armory lists ${allStandardWeapons.length} standard weapons in six classes: ${typeCount('Assault Rifle')} assault rifles, ${typeCount('SMG')} SMGs, ${typeCount('LMG')} LMGs, ${typeCount('Marksman Rifle')} marksman rifles, ${typeCount('Rifle')} rifles and ${typeCount('Shotgun')} shotguns, spread over three pages (Season 1, Tiers 0, 1 and 2). On top of those come the six exotics. We checked the whole Armory on October 28, 2026.` },
+  { question: "What damage type does each weapon deal in Division Resurgence?", answer: "Every gun deals one of three damage types, Blast, Piercing or Shredding, and the Armory shows it as an icon next to the weapon's name. Each card on this page carries the type from that icon. Match it to the colored bar above an elite's health: our damage types guide explains which color wants which type." },
   { question: "What is the best weapon type in Division Resurgence?", answer: "Assault Rifles are the most versatile: good range, solid DPS, forgiving magazine sizes. SMGs dominate at close range, especially in Dark Zone PvP. LMGs are the sustained DPS kings for PvE. Marksman Rifles reward headshot accuracy with massive burst damage. There's no single best type, it depends on your range, your build, and honestly, what feels good in your hands." },
   { question: "How do weapon stats work in Division Resurgence?", answer: "Every weapon has base stats for Damage, RPM (rate of fire), Magazine size, Accuracy, Stability, Reload Speed, Optimal Range, and Movement Speed. These stats are fixed per weapon model but can be modified by weapon mods and attachments. The damage number scales with your Firepower core attribute and any weapon damage bonuses from gear." },
 ];
@@ -33,7 +41,7 @@ const faqs = [
   {description}
   {breadcrumbs}
   heading="All Weapons"
-  subheading="Every standard weapon in Division Resurgence with stats and class breakdowns. Click any weapon for full details, or check the Exotic Weapons for unique talents."
+  subheading={`All ${allStandardWeapons.length} standard weapons and the six exotics, with the class, tier and damage type the in-game Armory shows for each (checked October 28, 2026). Stats where we have them.`}
   {faqs}
 >
   <div class="db-filters">
@@ -100,9 +108,13 @@ const faqs = [
     <div class="weapon-category" data-category={type.toLowerCase()} style="margin-bottom: var(--sp-10);">
       <h2 style="font-family: var(--font-heading); font-size: var(--text-xl); font-weight: 800; color: var(--accent); margin-bottom: var(--sp-4);">{type}s</h2>
       <div class="db-grid">
-        {standardWeapons.filter((w: any) => w.type === type).map((w: any) => (
-            <article class="db-card">
-              <a href={`/database/weapons/${w.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')}/`} class="db-card-full-link" aria-label={`View ${w.name} weapon details`}></a>
+        {standardWeapons.filter((w: any) => w.type === type).map((w: any) => {
+          const slug = w.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+          const hasStats = [w.rpm, w.mag, w.accuracy, w.reloadSpeed, w.stability].some(Boolean);
+          const hasTalents = (w.talent1 && w.talent1.length > 0) || (w.talent2 && w.talent2.length > 0);
+          return (
+            <article class={`db-card weapon-card${!hasStats && !hasTalents ? ' weapon-card--compact' : ''}${hasPage(w) ? '' : ' weapon-card--nolink'}`}>
+              {hasPage(w) && <a href={`/database/weapons/${slug}/`} class="db-card-full-link" aria-label={`View ${w.name} weapon details`}></a>}
               {w.image && (
                 <div class="db-card__image-banner">
                   <img src={w.image} alt={`${w.name} ${w.type} in Division Resurgence`} width="400" height="120" loading="lazy" decoding="async" />
@@ -111,34 +123,46 @@ const faqs = [
               <div class="db-card__header">
                 <div>
                   <h2 class="db-card__title" style="color: #fff;">{w.name}</h2>
-                  <div style="display:flex;gap:var(--sp-2);flex-wrap:wrap;margin-top:var(--sp-2);">
-                    <span class="weapon-type tag" style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); color: #fff; padding: 2px 8px; border-radius: 4px; font-size: var(--step--2); font-weight: 800; text-transform: uppercase;">{w.type}</span>
+                  <div class="weapon-tags">
+                    <span class="weapon-type tag">{w.type}</span>
+                    {w.armoryTier && <span class="weapon-tier tag">{tierLabel(w.armoryTier)}</span>}
+                    {w.dmgType && <span class={`weapon-dmg tag weapon-dmg--${w.dmgType.toLowerCase()}`}>{w.dmgType}</span>}
                   </div>
                 </div>
               </div>
-              
-              <div class="db-card__body" style="justify-content: flex-end;">
-                <WeaponAttributes 
-                  rpm={w.rpm}
-                  mag={w.mag}
-                  accuracy={w.accuracy} 
-                  reloadSpeed={w.reloadSpeed} 
-                  stability={w.stability} 
-                  isCard={true}
-                />
-                <div style="margin-top: var(--sp-2); padding-top: var(--sp-2); border-top: 1px solid rgba(255,255,255,0.05); display: flex; flex-direction: column; gap: var(--sp-2);">
-                  <div>
-                    <div style="font-size: var(--step--2); font-weight: 800; color: var(--accent); text-transform: uppercase; margin-bottom: 4px; letter-spacing: 0.05em;">Talent 1</div>
-                    <WeaponTalentsGrid talentNames={w.talent1 || []} isCard={true} />
-                  </div>
-                  <div>
-                    <div style="font-size: var(--step--2); font-weight: 800; color: var(--accent); text-transform: uppercase; margin-bottom: 4px; letter-spacing: 0.05em;">Talent 2</div>
-                    <WeaponTalentsGrid talentNames={w.talent2 || []} isCard={true} />
-                  </div>
+              {(hasStats || hasTalents) && (
+                <div class="db-card__body" style="justify-content: flex-end;">
+                  {hasStats && (
+                    <WeaponAttributes
+                      rpm={w.rpm}
+                      mag={w.mag}
+                      accuracy={w.accuracy}
+                      reloadSpeed={w.reloadSpeed}
+                      stability={w.stability}
+                      isCard={true}
+                    />
+                  )}
+                  {hasTalents && (
+                    <div style="margin-top: var(--sp-2); padding-top: var(--sp-2); border-top: 1px solid rgba(255,255,255,0.05); display: flex; flex-direction: column; gap: var(--sp-2);">
+                      {w.talent1 && w.talent1.length > 0 && (
+                        <div>
+                          <div style="font-size: var(--step--2); font-weight: 800; color: var(--accent); text-transform: uppercase; margin-bottom: 4px; letter-spacing: 0.05em;">Talent 1</div>
+                          <WeaponTalentsGrid talentNames={w.talent1} isCard={true} />
+                        </div>
+                      )}
+                      {w.talent2 && w.talent2.length > 0 && (
+                        <div>
+                          <div style="font-size: var(--step--2); font-weight: 800; color: var(--accent); text-transform: uppercase; margin-bottom: 4px; letter-spacing: 0.05em;">Talent 2</div>
+                          <WeaponTalentsGrid talentNames={w.talent2} isCard={true} />
+                        </div>
+                      )}
+                    </div>
+                  )}
                 </div>
-              </div>
+              )}
             </article>
-        ))}
+          );
+        })}
       </div>
     </div>
   ))}
@@ -245,6 +269,27 @@ const faqs = [
     inset: 0;
     z-index: 1;
   }
+
+  /* Standard weapon tags: class, Armory tier and damage type */
+  .weapon-tags { display: flex; gap: var(--sp-2); flex-wrap: wrap; margin-top: var(--sp-2); }
+  .weapon-tags .tag {
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: var(--step--2);
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #fff;
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.2);
+  }
+  .weapon-tags .weapon-tier { color: #c8c8d0; background: transparent; }
+  .weapon-tags .weapon-dmg--blast { color: #f6896a; border-color: rgba(246,137,106,0.45); background: rgba(246,137,106,0.1); }
+  .weapon-tags .weapon-dmg--piercing { color: #9fb0ff; border-color: rgba(159,176,255,0.45); background: rgba(159,176,255,0.1); }
+  .weapon-tags .weapon-dmg--shredding { color: #8fd79f; border-color: rgba(143,215,159,0.45); background: rgba(143,215,159,0.1); }
+  .weapon-card { align-self: start; }
+  .weapon-card--compact .db-card__header { padding-bottom: 0; border-bottom: 0; }
+  .weapon-card--nolink:hover { transform: none; box-shadow: none; border-color: rgba(255,255,255,0.08); }
+  .weapon-card--nolink:hover::before { opacity: 0; }
 
   /* Load More button */
   .load-more-wrap {

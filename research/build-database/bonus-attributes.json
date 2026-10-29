@@ -1,0 +1,410 @@
+[
+  {
+    "name": "Weapon Critical Hit Chance",
+    "listOrder": 1,
+    "iconGroup": "Firepower",
+    "description": "Weapon Critical Hit Chance Bonus granted from weapon hit.",
+    "currentOnRecording": "10.80%",
+    "source": {
+      "recording": "Screen_Recording_20261028_190829_The_Division_Resurgence.mp4",
+      "seconds": [
+        0.75,
+        2.0
+      ]
+    },
+    "evidence": "evidence/bonus-attributes/weapon-critical-hit-chance.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Weapon Critical Hit Damage",
+    "listOrder": 2,
+    "iconGroup": "Firepower",
+    "description": "Bonus damage dealt by a weapon after a critical hit.",
+    "currentOnRecording": "62.91%",
+    "source": {
+      "recording": "Screen_Recording_20261028_190829_The_Division_Resurgence.mp4",
+      "seconds": [
+        3.25,
+        4.5
+      ]
+    },
+    "evidence": "evidence/bonus-attributes/weapon-critical-hit-damage.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Weapon Damage",
+    "listOrder": 3,
+    "iconGroup": "Firepower",
+    "description": "Additional damage dealt by a weapon when it deals damage.",
+    "currentOnRecording": "13.65%",
+    "source": {
+      "recording": "Screen_Recording_20261028_190829_The_Division_Resurgence.mp4",
+      "seconds": [
+        5.25,
+        6.25
+      ]
+    },
+    "evidence": "evidence/bonus-attributes/weapon-damage.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Weapon Multi-Shot Chance",
+    "listOrder": 4,
+    "iconGroup": "Firepower",
+    "description": "Represents the probability for weapon hits to generate an additional hit. This attribute's value can exceed 100%, with each additional 100% generating another hit.",
+    "currentOnRecording": "1.55%",
+    "source": {
+      "recording": "Screen_Recording_20261028_190829_The_Division_Resurgence.mp4",
+      "seconds": [
+        7.0,
+        8.0
+      ]
+    },
+    "evidence": "evidence/bonus-attributes/weapon-multi-shot-chance.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Headshot Damage",
+    "listOrder": 5,
+    "iconGroup": "Firepower",
+    "description": "Bonus damage dealt by a weapon after a headshot.",
+    "currentOnRecording": "44.01%",
+    "source": {
+      "recording": "Screen_Recording_20261028_190829_The_Division_Resurgence.mp4",
+      "seconds": [
+        9.0,
+        10.0
+      ]
+    },
+    "evidence": "evidence/bonus-attributes/headshot-damage.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Weapon Blast Damage",
+    "listOrder": 6,
+    "iconGroup": "Firepower",
+    "description": "The extent to which Blast Damage dealt by weapons is amplified.",
+    "currentOnRecording": "0.00%",
+    "source": {
+      "recording": "Screen_Recording_20261028_190829_The_Division_Resurgence.mp4",
+      "seconds": [
+        10.75,
+        11.5
+      ]
+    },
+    "evidence": "evidence/bonus-attributes/weapon-blast-damage.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Weapon Piercing Damage",
+    "listOrder": 7,
+    "iconGroup": "Firepower",
+    "description": "The extent to which Piercing Damage dealt by weapons is amplified.",
+    "currentOnRecording": "0.00%",
+    "source": {
+      "recording": "Screen_Recording_20261028_190829_The_Division_Resurgence.mp4",
+      "seconds": [
+        12.5,
+        13.25
+      ]
+    },
+    "evidence": "evidence/bonus-attributes/weapon-piercing-damage.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Weapon Shredding Damage",
+    "listOrder": 8,
+    "iconGroup": "Firepower",
+    "description": "The extent to which Shredding Damage dealt by weapons is amplified.",
+    "currentOnRecording": "0.00%",
+    "source": {
+      "recording": "Screen_Recording_20261028_190829_The_Division_Resurgence.mp4",
+      "seconds": [
+        14.5,
+        15.25
+      ]
+    },
+    "evidence": "evidence/bonus-attributes/weapon-shredding-damage.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Max Health",
+    "listOrder": 9,
+    "iconGroup": "Toughness",
+    "description": "The extent to which Health is increased. A character is downed when their Health reaches 0.",
+    "currentOnRecording": "34.72%",
+    "source": {
+      "recording": "Screen_Recording_20261028_190829_The_Division_Resurgence.mp4",
+      "seconds": [
+        16.25,
+        17.0
+      ]
+    },
+    "evidence": "evidence/bonus-attributes/max-health.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Armor",
+    "listOrder": 10,
+    "iconGroup": "Toughness",
+    "description": "The amount of bonus Armor. The higher the Agent's Armor, the more Defense they have.",
+    "currentOnRecording": "21.60%",
+    "source": {
+      "recording": "Screen_Recording_20261028_190829_The_Division_Resurgence.mp4",
+      "seconds": [
+        18.0,
+        18.5
+      ]
+    },
+    "evidence": "evidence/bonus-attributes/armor.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Damage Reduction",
+    "listOrder": 11,
+    "iconGroup": "Toughness",
+    "description": "Represents the incoming damage reduced from Weapon Damage or Skill Damage. Damage Reduction above 80% will not be applied.",
+    "currentOnRecording": "1.99%",
+    "source": {
+      "recording": "Screen_Recording_20261028_190829_The_Division_Resurgence.mp4",
+      "seconds": [
+        19.5,
+        20.25
+      ]
+    },
+    "evidence": "evidence/bonus-attributes/damage-reduction.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Skill Critical Chance",
+    "listOrder": 12,
+    "iconGroup": "Engineering",
+    "description": "The chance of skills dealing a critical hit.",
+    "currentOnRecording": "7.09%",
+    "source": {
+      "recording": "Screen_Recording_20261028_190829_The_Division_Resurgence.mp4",
+      "seconds": [
+        21.0,
+        22.5
+      ]
+    },
+    "evidence": "evidence/bonus-attributes/skill-critical-chance.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Skill Critical Damage",
+    "listOrder": 13,
+    "iconGroup": "Engineering",
+    "description": "Bonus damage dealt by a skill after a critical hit.",
+    "currentOnRecording": "50.00%",
+    "source": {
+      "recording": "Screen_Recording_20261028_190829_The_Division_Resurgence.mp4",
+      "seconds": [
+        24.25,
+        24.75
+      ]
+    },
+    "evidence": "evidence/bonus-attributes/skill-critical-damage.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Skill Intensity",
+    "listOrder": 14,
+    "iconGroup": "Engineering",
+    "description": "The extent to which a skill's effect is enhanced.",
+    "currentOnRecording": "0.20%",
+    "source": {
+      "recording": "Screen_Recording_20261028_190829_The_Division_Resurgence.mp4",
+      "seconds": [
+        25.5,
+        26.0
+      ]
+    },
+    "evidence": "evidence/bonus-attributes/skill-intensity.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Skill Multi-Shot Chance",
+    "listOrder": 15,
+    "iconGroup": "Engineering",
+    "description": "The chance for skills to deal damage an additional time. Whenever this attribute exceeds 100%, skills deal an extra instance of damage.",
+    "currentOnRecording": "6.07%",
+    "source": {
+      "recording": "Screen_Recording_20261028_190829_The_Division_Resurgence.mp4",
+      "seconds": [
+        26.75,
+        27.75
+      ]
+    },
+    "evidence": "evidence/bonus-attributes/skill-multi-shot-chance.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Skill Duration",
+    "listOrder": 16,
+    "iconGroup": "Engineering",
+    "description": "The extent to which Skill Duration is increased.",
+    "currentOnRecording": "9.66%",
+    "source": {
+      "recording": "Screen_Recording_20261028_190829_The_Division_Resurgence.mp4",
+      "seconds": [
+        28.5,
+        29.0
+      ]
+    },
+    "evidence": "evidence/bonus-attributes/skill-duration.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Skill Radius",
+    "listOrder": 17,
+    "iconGroup": "Engineering",
+    "description": "The extent to which Skill Radius is expanded.",
+    "currentOnRecording": "9.55%",
+    "source": {
+      "recording": "Screen_Recording_20261028_190829_The_Division_Resurgence.mp4",
+      "seconds": [
+        29.75,
+        30.5
+      ]
+    },
+    "evidence": "evidence/bonus-attributes/skill-radius.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Skill Cooldown Recovery",
+    "listOrder": 18,
+    "iconGroup": "Engineering",
+    "description": "The extent to which Skill Cooldown is reduced.",
+    "currentOnRecording": "0.00%",
+    "source": {
+      "recording": "Screen_Recording_20261028_190829_The_Division_Resurgence.mp4",
+      "seconds": [
+        31.5,
+        32.0
+      ]
+    },
+    "evidence": "evidence/bonus-attributes/skill-cooldown-recovery.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Skill Blast Damage",
+    "listOrder": 19,
+    "iconGroup": "Engineering",
+    "description": "The extent to which Blast Damage dealt by skills is amplified.",
+    "currentOnRecording": "5.74%",
+    "source": {
+      "recording": "Screen_Recording_20261028_190829_The_Division_Resurgence.mp4",
+      "seconds": [
+        33.75,
+        34.5
+      ]
+    },
+    "evidence": "evidence/bonus-attributes/skill-blast-damage.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Skill Piercing Damage",
+    "listOrder": 20,
+    "iconGroup": "Engineering",
+    "description": "The extent to which Piercing Damage dealt by skills is amplified.",
+    "currentOnRecording": "0.00%",
+    "source": {
+      "recording": "Screen_Recording_20261028_190829_The_Division_Resurgence.mp4",
+      "seconds": [
+        35.25,
+        36.25
+      ]
+    },
+    "evidence": "evidence/bonus-attributes/skill-piercing-damage.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Skill Shredding Damage",
+    "listOrder": 21,
+    "iconGroup": "Engineering",
+    "description": "The extent to which Shredding Damage dealt by skills is amplified.",
+    "currentOnRecording": "0.00%",
+    "source": {
+      "recording": "Screen_Recording_20261028_190829_The_Division_Resurgence.mp4",
+      "seconds": [
+        37.0,
+        37.75
+      ]
+    },
+    "evidence": "evidence/bonus-attributes/skill-shredding-damage.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Received Healing",
+    "listOrder": 22,
+    "iconGroup": "",
+    "description": "The extent to which Health is increased when healed by Skills or Medical Kits.",
+    "currentOnRecording": "5.22%",
+    "source": {
+      "recording": "Screen_Recording_20261028_190829_The_Division_Resurgence.mp4",
+      "seconds": [
+        38.75,
+        39.5
+      ]
+    },
+    "evidence": "evidence/bonus-attributes/received-healing.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Damage to Elites",
+    "listOrder": 23,
+    "iconGroup": "",
+    "description": "Damage Bonus when dealing damage to Elite Enemies.",
+    "currentOnRecording": "1.53%",
+    "source": {
+      "recording": "Screen_Recording_20261028_190829_The_Division_Resurgence.mp4",
+      "seconds": [
+        40.5,
+        41.25
+      ]
+    },
+    "evidence": "evidence/bonus-attributes/damage-to-elites.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Signature Ability Charge Efficiency",
+    "listOrder": 24,
+    "iconGroup": "",
+    "description": "The extent to which Signature Ability Charge efficiency is accelerated.",
+    "currentOnRecording": "4.00%",
+    "source": {
+      "recording": "Screen_Recording_20261028_190829_The_Division_Resurgence.mp4",
+      "seconds": [
+        42.0,
+        42.5
+      ]
+    },
+    "evidence": "evidence/bonus-attributes/signature-ability-charge-efficiency.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  }
+]

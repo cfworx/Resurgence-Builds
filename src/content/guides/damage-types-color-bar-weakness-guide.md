@@ -65,11 +65,11 @@ Here is the part that should be in the tutorial but isn't:
 
 | Color Above Health Bar | Enemy is Weak To | Bring | Example Weapons |
 |---|---|---|---|
-| Dark blue | Piercing | A Piercing-type weapon | T2 Snipers, PPSh-41, Piercing-type marksman rifles and heavy ARs |
-| Light blue | Shredding | A Shredding-type weapon | Strawberry Milkshake (Shredding exotic LMG), Shredding-type LMGs, MK17, M249 |
-| Red | Blast | A Blast-type weapon | Warlord (Blast exotic), Lady Death (Blast SMG), explosive snipers |
+| Dark blue | Piercing | A Piercing-type weapon | Scorpio (Piercing exotic shotgun), Classic AK-47, Vector 45 ACP, P90, PPSH-41, DSR-1 |
+| Light blue | Shredding | A Shredding-type weapon | Strawberry Milkshake, The Bighorn, Diamondback (Shredding exotics), NEGEV, M249, ACR, MP40 |
+| Red | Blast | A Blast-type weapon | Warlord, Lady Death (Blast exotics), Lightweight M4, Police M4, Classic M60, M700 |
 
-The example weapons are community-reported types from spring 2026 (Strawberry Milkshake's is official). Confirm any non-exotic in the Armory before you build around it.
+Every example is the type the in-game Armory shows next to the weapon's name (our recording, October 28, 2026). Our [weapons database](/database/weapons/) lists the type of all 86 standard weapons.
 
 A few caveats before you grab this table and sprint to your loadout screen:
 
@@ -105,7 +105,7 @@ Check the weapon in the **Armory**. That's where Ubisoft's patch notes say the d
 - **Weapon Piercing Damage: X** = Piercing
 - **Weapon Shredding Damage: X** = Shredding
 
-That shortcut was always a trap, because a weapon could roll a damage-type bonus that didn't match its own type. The Police M4 was spotted rolling Weapon Blast Damage even though community testing shows it deals Shredding on impact. Ubisoft confirmed the problem in the Season 2 Phase 1 notes (a mismatched bonus "didn't bring any benefits"), then removed all damage-type bonuses from the weapon attribute pool in favor of All Weapon Damage or All Skill Damage. New weapons won't roll them. The notes don't spell out what happened to rolls already sitting on old weapons, so if one of yours still shows a mismatched type bonus, treat it as dead weight.
+That shortcut was always a trap, because a weapon could roll a damage-type bonus that didn't match its own type. The Police M4 shows how muddled it got: spring community testing said it dealt Shredding while copies rolled Weapon Blast Damage, and the Armory now lists it as a Blast weapon (our recording, October 28, 2026). Ubisoft confirmed the problem in the Season 2 Phase 1 notes (a mismatched bonus "didn't bring any benefits"), then removed all damage-type bonuses from the weapon attribute pool in favor of All Weapon Damage or All Skill Damage. New weapons won't roll them. The notes don't spell out what happened to rolls already sitting on old weapons, so if one of yours still shows a mismatched type bonus, treat it as dead weight.
 
 **Exotics are locked to one damage type.** Warlord = Blast. Lady Death = Blast. Strawberry Milkshake = Shredding. Scorpio = Piercing (Died Again Gaming read it off the weapon card in June, and the in-game Build-Making Database agrees). The Bighorn is Shredding in the in-game Build-Making Database, but early copies didn't all match: on Ubisoft's bug reporter (TDR-134), players found Bighorns from the Season 2 Phase 1 pass dealing Piercing or Shredding while the Armory showed Blast, and TikTokAndy's Piercing copy in his September 16 video is one of them. Ubisoft marked that report Done on September 25. You cannot reroll any of them. The two Blast exotics shine against red-bar enemies and tax you against everything else. Strawberry Milkshake has the opposite profile, strong against light-blue-bar enemies. The Diamondback is Shredding: the in-game Build-Making Database says so, and so did Capitão Wasabi's card (September 23, Portuguese client, "Dano de trituração" with the claw icon), so it pairs with light-blue-bar enemies like the Milkshake. Details in our [exotic weapons list](/guides/division-resurgence-exotic-weapons-list-2026/).
 
@@ -150,7 +150,7 @@ You have two weapon slots. Use them.
 **The lazy-but-effective loadout (most players):**
 
 - **Primary:** Warlord (Blast) for red-bar work
-- **Secondary:** Police M4 (Shredding, per community testing) or any other Shredding-type AR for everything else
+- **Secondary:** a Shredding-type AR for everything else. The Armory lists the ACR and Mk16 (Tier 0), the AN-94 and Enhanced ACR-E (Tier 1) and the FAMAS (Tier 2) as Shredding. We used to suggest the Police M4 here, but the Armory shows it as Blast, the same type as the Warlord.
 
 **The endgame loadout:**
 
@@ -185,6 +185,7 @@ This is where the dual-type loadout stops being optional and starts being the pr
 - Community testing via [r/thedivisionresurgence](https://reddit.com/r/thedivisionresurgence). Warlord and Lady Death attribute breakdowns from u/TOPolyak, u/TheeLoo, and u/TF_Doomer_HK.
 - Internal Resurgence Builds testing on damage types, weapon attribute panels, and exotic damage-type locking.
 - In-game Build-Making Database, Exotic Weapon section (our screen recording, October 28, 2026): each exotic's damage type
+- In-game Armory (our screen recording, October 28, 2026): the damage type icon next to every standard weapon's name
 - [Ubisoft bug reporter: TDR-134](https://www.ubisoft.com/en-us/game/the-division/the-division-resurgence/bug-reporter/issues/TDR-134) (Bighorn copies with different damage types, status Done)
 - [Season 2 Phase 1 patch notes](/patch-notes/season-2-phase-1-the-call/): removal of damage-type bonus attributes from weapons and weapon mods.
 - Ubisoft Help Center patch notes for [Season 1 Phase 3](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2521-patch-note---season-1-phase-3/) (Strawberry Milkshake listed as Shredding in the Armory) and [Season 2 Phase 2](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2566-patch-note---season-2-phase-2/) (Armory damage-type display fixes).

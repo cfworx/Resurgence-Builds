@@ -2,128 +2,153 @@
   {
     "id": "ba-1",
     "name": "Accelerated Charge",
-    "description": "Kills and assists behind cover grant +30% Signature Ability Charge Efficiency for 8 seconds."
+    "description": "Kills and assists behind cover grant +30% Signature Ability Charge Efficiency for 8 seconds.",
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "ba-2",
     "name": "Battlelust",
-    "description": "Taking damage has a 50% chance of granting +6% Weapon Damage for 5 seconds, up to 3 stacks. Talent Cooldown: 1 seconds."
+    "description": "Taking damage has a 50% chance of granting +6% Weapon Damage for 5 seconds, up to 3 stacks. Talent Cooldown: 1 seconds.",
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "ba-3",
     "name": "Boosted Shield",
-    "description": "While possessing Extra Health, grants +7.50% Damage Reduction and reduces Skill Cooldown by 1.50%."
+    "description": "While possessing Extra Health, grants +7.50% Damage Reduction and reduces Skill Cooldown by 1.50%.",
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "ba-4",
     "name": "Crossfire",
-    "description": "Grants +15% Weapon Damage when Skills are deployed."
+    "description": "Grants +15% Weapon Damage when Skills are deployed.",
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "ba-5",
     "name": "Deep Focus",
-    "description": "Grants +28% Skill Duration but also inflicts -10% Skill Radius."
+    "description": "Grants +28% Skill Duration but also inflicts -10% Skill Radius.",
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "ba-6",
     "name": "Defensive Charge",
-    "description": "Gaining Extra Health grants +3% Skill Intensity for 10 seconds, up to 5 stacks."
+    "description": "Gaining Extra Health grants +3% Skill Intensity for 10 seconds, up to 5 stacks.",
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "ba-7",
     "name": "Duality",
-    "description": "Grants +15% Weapon Damage when Health is above 50%. Grants +15% Damage Reduction when Health is below 50%."
+    "description": "Grants +15% Weapon Damage when Health is above 50%. Grants +15% Damage Reduction when Health is below 50%.",
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "ba-8",
     "name": "Emergency Retreat",
-    "description": "Grants +10% Movement Speed and +37.50% Damage Reduction for 3 seconds while within 20 meters of an enemy. Talent Cooldown: 10 seconds."
+    "description": "Grants +10% Movement Speed and +37.50% Damage Reduction for 3 seconds while within 20 meters of an enemy. Talent Cooldown: 10 seconds.",
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "ba-9",
     "name": "Energize",
-    "description": "Using a Medical Kit grants +18% Skill Damage for 8 seconds. Triggering a Skill Multi-Shot refreshes the duration."
+    "description": "Using a Medical Kit grants +18% Skill Damage for 8 seconds. Triggering a Skill Multi-Shot refreshes the duration.",
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "ba-10",
     "name": "Energy Drink",
-    "description": "Using a Medical Kit grants +36% Weapon Critical Hit Chance for 8 seconds."
+    "description": "Using a Medical Kit grants +36% Weapon Critical Hit Chance for 8 seconds.",
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "ba-11",
     "name": "Fearless Charge",
-    "description": "Sprinting grants +21% Damage Reduction."
+    "description": "Sprinting grants +21% Damage Reduction.",
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "ba-12",
     "name": "Glass Cannon",
-    "description": "Grants +20% Damage. Inflicts -10% Damage Reduction."
+    "description": "Grants +20% Damage. Inflicts -10% Damage Reduction.",
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "ba-13",
     "name": "Hypervigilant",
-    "description": "Healing grants +5% Damage Reduction for 3 seconds, up to 3 stacks."
+    "description": "Healing grants +5% Damage Reduction for 3 seconds, up to 3 stacks.",
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "ba-14",
     "name": "Injured Concealment",
-    "description": "Hits taken grant +1.80% Damage for 10 seconds, up to 10 stacks."
+    "description": "Hits taken grant +1.80% Damage for 10 seconds, up to 10 stacks.",
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "ba-15",
     "name": "Instant Triage",
-    "description": "Downed allies within 30 meters grant +22.50% Damage Reduction and +50% Rescue Efficiency for 10 seconds."
+    "description": "Downed allies within 30 meters grant +22.50% Damage Reduction and +50% Rescue Efficiency for 10 seconds.",
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "ba-16",
     "name": "Nothing to Lose",
-    "description": "Taking damage has a 50% chance of reducing Skill Cooldowns of Skills deployed within 5 seconds by 2%, up to 3 stacks."
+    "description": "Taking damage has a 50% chance of reducing Skill Cooldowns of Skills deployed within 5 seconds by 2%, up to 3 stacks.",
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "ba-17",
     "name": "Recycling",
     "description": "Taking damage within 20 meters has a 80% chance to refill 20% of the magazine (excluding Signature Ability weapons). Talent Cooldown: 5 seconds.",
-    "note": "Season 2 Phase 1 raised the refill from 4.5% to 20% of the magazine and the cooldown from 1 to 5 seconds. The old tooltip wrongly said bullets instead of %."
+    "note": "Season 2 Phase 1 raised the refill from 4.5% to 20% of the magazine and the cooldown from 1 to 5 seconds. The old tooltip wrongly said bullets instead of %.",
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "ba-18",
     "name": "Rescue Signal",
-    "description": "Being downed grants all allies within 40 meters +10% Movement Speed and +100% Rescue Efficiency for 10 seconds. Talent Cooldown: 10 seconds."
+    "description": "Being downed grants all allies within 40 meters +10% Movement Speed and +100% Rescue Efficiency for 10 seconds. Talent Cooldown: 10 seconds.",
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "ba-19",
     "name": "Second Wind",
-    "description": "Reloading grants Extra Health equal to 600% Firepower for 5 seconds. Talent Cooldown: 5 seconds."
+    "description": "Reloading grants Extra Health equal to 600% Firepower for 5 seconds. Talent Cooldown: 5 seconds.",
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "ba-20",
     "name": "Socialite",
-    "description": "Grants +10% Movement Speed when there are no enemies within 20 meters. Grants +36% Armor while within 20 meters of an enemy."
+    "description": "Grants +10% Movement Speed when there are no enemies within 20 meters. Grants +36% Armor while within 20 meters of an enemy.",
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "ba-21",
     "name": "Suppression Rescue",
-    "description": "Downed allies within 30 meters grant +22.50% Weapon Damage and +10% Movement Speed for 10 seconds."
+    "description": "Downed allies within 30 meters grant +22.50% Weapon Damage and +10% Movement Speed for 10 seconds.",
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "ba-22",
     "name": "Suppressive Fire",
-    "description": "Grants +18% Magazine Size. Reloading grants +6% Rate of Fire for 5 seconds, up to 3 stacks."
+    "description": "Grants +18% Magazine Size. Reloading grants +6% Rate of Fire for 5 seconds, up to 3 stacks.",
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "ba-23",
     "name": "Territory Expansion",
-    "description": "Grants +30% Skill Radius while at full Health."
+    "description": "Grants +30% Skill Radius while at full Health.",
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "ba-24",
     "name": "Toymaker",
-    "description": "Grants +15% Skill Multi-shot Chance when there are no enemies within 20 meters."
+    "description": "Grants +15% Skill Multi-shot Chance when there are no enemies within 20 meters.",
+    "verifiedInGame": "2026-10-28"
   },
   {
     "id": "ba-25",
     "name": "Unflinching",
     "description": "Taking damage has a 70% chance of restoring Health equal to 300% Toughness. Talent Cooldown: 2 seconds.",
-    "note": "Confirmed on screen: 70% chance, 300% Toughness and a 2-second cooldown on the Captain Cow vest in TikTokAndy's September 11, 2026 video (1:42:40). He reads it aloud as 30%, but the tooltip says 70%."
+    "note": "Confirmed on screen: 70% chance, 300% Toughness and a 2-second cooldown on the Captain Cow vest in TikTokAndy's September 11, 2026 video (1:42:40). He reads it aloud as 30%, but the tooltip says 70%.",
+    "verifiedInGame": "2026-10-28"
   }
 ]

@@ -48,7 +48,7 @@ He calls the build a spin-off of his Double Barrel setup, and it shows: same gea
 - **The goal:** crit stacking, roughly 30% bonus Rate of Fire, and enough Armor to stand in the open when Smart Cover is on cooldown.
 
 > [!INFO] Two things to know about the video
-> TikTokAndy shows his build as a one-page diagram and says ChatGPT made it for him, then corrects some of its numbers out loud. We use his spoken numbers, not the diagram. He also calls Suppressive Fire his backpack talent and Emergency Measures his chest talent in this video. His earlier videos put them the other way around: on September 30 Suppressive Fire II is on his chest, and on October 6 Emergency Measures is on his backpack. Our talent lists agree, so that's how we list them.
+> TikTokAndy shows his build as a one-page diagram and says ChatGPT made it for him, then corrects some of its numbers out loud. We use his spoken numbers, not the diagram. He also calls Suppressive Fire his backpack talent and Emergency Measures his chest talent in this video. His earlier videos put them the other way around: on September 30 Suppressive Fire II is on his chest, and on October 6 Emergency Measures is on his backpack. The game's own Build-Making Database settles it: Suppressive Fire is a Body Armor Talent and Emergency Measures a Backpack Talent (checked October 28, 2026), so that's how we list them.
 
 ---
 

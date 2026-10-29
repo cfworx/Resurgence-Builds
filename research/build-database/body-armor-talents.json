@@ -1,0 +1,452 @@
+[
+  {
+    "name": "Fearless Charge",
+    "siteId": "ba-11",
+    "listOrder": 1,
+    "talentText": "Sprinting grants +21% Damage Reduction.",
+    "talentCooldown": "",
+    "shownAt": "Rank I (base)",
+    "source": {
+      "recording": "Screen_Recording_20261028_190611_The_Division_Resurgence.mp4",
+      "seconds": [
+        0.75,
+        4.0
+      ]
+    },
+    "evidence": "evidence/body-armor-talents/fearless-charge.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Socialite",
+    "siteId": "ba-20",
+    "listOrder": 2,
+    "talentText": "Grants +10% Movement Speed when there are no enemies within 20 meters. Grants +36% Armor while within 20 meters of an enemy.",
+    "talentCooldown": "",
+    "shownAt": "Rank I (base)",
+    "source": {
+      "recording": "Screen_Recording_20261028_190611_The_Division_Resurgence.mp4",
+      "seconds": [
+        4.75,
+        6.25
+      ]
+    },
+    "evidence": "evidence/body-armor-talents/socialite.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Emergency Retreat",
+    "siteId": "ba-8",
+    "listOrder": 3,
+    "talentText": "Grants +10% Movement Speed and +37.50% Damage Reduction for 3 seconds while within 20 meters of an enemy. Talent Cooldown: 10 seconds.",
+    "talentCooldown": "10 seconds",
+    "shownAt": "Rank I (base)",
+    "source": {
+      "recording": "Screen_Recording_20261028_190611_The_Division_Resurgence.mp4",
+      "seconds": [
+        7.0,
+        8.0
+      ]
+    },
+    "evidence": "evidence/body-armor-talents/emergency-retreat.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Toymaker",
+    "siteId": "ba-24",
+    "listOrder": 4,
+    "talentText": "Grants +15% Skill Multi-shot Chance when there are no enemies within 20 meters.",
+    "talentCooldown": "",
+    "shownAt": "Rank I (base)",
+    "source": {
+      "recording": "Screen_Recording_20261028_190611_The_Division_Resurgence.mp4",
+      "seconds": [
+        8.75,
+        10.0
+      ]
+    },
+    "evidence": "evidence/body-armor-talents/toymaker.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Territory Expansion",
+    "siteId": "ba-23",
+    "listOrder": 5,
+    "talentText": "Grants +30% Skill Radius while at full Health.",
+    "talentCooldown": "",
+    "shownAt": "Rank I (base)",
+    "source": {
+      "recording": "Screen_Recording_20261028_190611_The_Division_Resurgence.mp4",
+      "seconds": [
+        11.0,
+        12.25
+      ]
+    },
+    "evidence": "evidence/body-armor-talents/territory-expansion.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Accelerated Charge",
+    "siteId": "ba-1",
+    "listOrder": 6,
+    "talentText": "Kills and assists behind cover grant +30% Signature Ability Charge Efficiency for 8 seconds.",
+    "talentCooldown": "",
+    "shownAt": "Rank I (base)",
+    "source": {
+      "recording": "Screen_Recording_20261028_190611_The_Division_Resurgence.mp4",
+      "seconds": [
+        13.0,
+        14.25
+      ]
+    },
+    "evidence": "evidence/body-armor-talents/accelerated-charge.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Duality",
+    "siteId": "ba-7",
+    "listOrder": 7,
+    "talentText": "Grants +15% Weapon Damage when Health is above 50%. Grants +15% Damage Reduction when Health is below 50%.",
+    "talentCooldown": "",
+    "shownAt": "Rank I (base)",
+    "source": {
+      "recording": "Screen_Recording_20261028_190611_The_Division_Resurgence.mp4",
+      "seconds": [
+        14.75,
+        16.0
+      ]
+    },
+    "evidence": "evidence/body-armor-talents/duality.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Crossfire",
+    "siteId": "ba-4",
+    "listOrder": 8,
+    "talentText": "Grants +15% Weapon Damage when Skills are deployed.",
+    "talentCooldown": "",
+    "shownAt": "Rank I (base)",
+    "source": {
+      "recording": "Screen_Recording_20261028_190611_The_Division_Resurgence.mp4",
+      "seconds": [
+        16.75,
+        17.75
+      ]
+    },
+    "evidence": "evidence/body-armor-talents/crossfire.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Glass Cannon",
+    "siteId": "ba-12",
+    "listOrder": 9,
+    "talentText": "Grants +20% Damage. Inflicts -10% Damage Reduction.",
+    "talentCooldown": "",
+    "shownAt": "Rank I (base)",
+    "source": {
+      "recording": "Screen_Recording_20261028_190611_The_Division_Resurgence.mp4",
+      "seconds": [
+        20.0,
+        21.25
+      ]
+    },
+    "evidence": "evidence/body-armor-talents/glass-cannon.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Hypervigilant",
+    "siteId": "ba-13",
+    "listOrder": 10,
+    "talentText": "Healing grants +5% Damage Reduction for 3 seconds, up to 3 stacks.",
+    "talentCooldown": "",
+    "shownAt": "Rank I (base)",
+    "source": {
+      "recording": "Screen_Recording_20261028_190611_The_Division_Resurgence.mp4",
+      "seconds": [
+        22.25,
+        23.25
+      ]
+    },
+    "evidence": "evidence/body-armor-talents/hypervigilant.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Nothing to Lose",
+    "siteId": "ba-16",
+    "listOrder": 11,
+    "talentText": "Taking damage has a 50% chance of reducing Skill Cooldowns of Skills deployed within 5 seconds by 2%, up to 3 stacks.",
+    "talentCooldown": "",
+    "shownAt": "Rank I (base)",
+    "source": {
+      "recording": "Screen_Recording_20261028_190611_The_Division_Resurgence.mp4",
+      "seconds": [
+        24.25,
+        25.25
+      ]
+    },
+    "evidence": "evidence/body-armor-talents/nothing-to-lose.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Boosted Shield",
+    "siteId": "ba-3",
+    "listOrder": 12,
+    "talentText": "While possessing Extra Health, grants +7.50% Damage Reduction and reduces Skill Cooldown by 1.50%.",
+    "talentCooldown": "",
+    "shownAt": "Rank I (base)",
+    "source": {
+      "recording": "Screen_Recording_20261028_190611_The_Division_Resurgence.mp4",
+      "seconds": [
+        26.0,
+        27.5
+      ]
+    },
+    "evidence": "evidence/body-armor-talents/boosted-shield.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Energy Drink",
+    "siteId": "ba-10",
+    "listOrder": 13,
+    "talentText": "Using a Medical Kit grants +36% Weapon Critical Hit Chance for 8 seconds.",
+    "talentCooldown": "",
+    "shownAt": "Rank I (base)",
+    "source": {
+      "recording": "Screen_Recording_20261028_190611_The_Division_Resurgence.mp4",
+      "seconds": [
+        28.5,
+        30.0
+      ]
+    },
+    "evidence": "evidence/body-armor-talents/energy-drink.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Second Wind",
+    "siteId": "ba-19",
+    "listOrder": 14,
+    "talentText": "Reloading grants Extra Health equal to 600% Firepower for 5 seconds. Talent Cooldown: 5 seconds.",
+    "talentCooldown": "5 seconds",
+    "shownAt": "Rank I (base)",
+    "source": {
+      "recording": "Screen_Recording_20261028_190611_The_Division_Resurgence.mp4",
+      "seconds": [
+        30.75,
+        32.25
+      ]
+    },
+    "evidence": "evidence/body-armor-talents/second-wind.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Deep Focus",
+    "siteId": "ba-5",
+    "listOrder": 15,
+    "talentText": "Grants +28% Skill Duration but also inflicts -10% Skill Radius.",
+    "talentCooldown": "",
+    "shownAt": "Rank I (base)",
+    "source": {
+      "recording": "Screen_Recording_20261028_190611_The_Division_Resurgence.mp4",
+      "seconds": [
+        33.0,
+        34.75
+      ]
+    },
+    "evidence": "evidence/body-armor-talents/deep-focus.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Energize",
+    "siteId": "ba-9",
+    "listOrder": 16,
+    "talentText": "Using a Medical Kit grants +18% Skill Damage for 8 seconds. Triggering a Skill Multi-Shot refreshes the duration.",
+    "talentCooldown": "",
+    "shownAt": "Rank I (base)",
+    "source": {
+      "recording": "Screen_Recording_20261028_190611_The_Division_Resurgence.mp4",
+      "seconds": [
+        35.5,
+        37.0
+      ]
+    },
+    "evidence": "evidence/body-armor-talents/energize.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Battlelust",
+    "siteId": "ba-2",
+    "listOrder": 17,
+    "talentText": "Taking damage has a 50% chance of granting +6% Weapon Damage for 5 seconds, up to 3 stacks. Talent Cooldown: 1 seconds.",
+    "talentCooldown": "1 second",
+    "shownAt": "Rank I (base)",
+    "source": {
+      "recording": "Screen_Recording_20261028_190611_The_Division_Resurgence.mp4",
+      "seconds": [
+        38.5,
+        40.0
+      ]
+    },
+    "evidence": "evidence/body-armor-talents/battlelust.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Recycling",
+    "siteId": "ba-17",
+    "listOrder": 18,
+    "talentText": "Taking damage within 20 meters has a 80% chance to refill 20% of the magazine (excluding Signature Ability weapons). Talent Cooldown: 5 seconds.",
+    "talentCooldown": "5 seconds",
+    "shownAt": "Rank I (base)",
+    "source": {
+      "recording": "Screen_Recording_20261028_190611_The_Division_Resurgence.mp4",
+      "seconds": [
+        40.75,
+        42.25
+      ]
+    },
+    "evidence": "evidence/body-armor-talents/recycling.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Suppressive Fire",
+    "siteId": "ba-22",
+    "listOrder": 19,
+    "talentText": "Grants +18% Magazine Size. Reloading grants +6% Rate of Fire for 5 seconds, up to 3 stacks.",
+    "talentCooldown": "",
+    "shownAt": "Rank I (base)",
+    "source": {
+      "recording": "Screen_Recording_20261028_190611_The_Division_Resurgence.mp4",
+      "seconds": [
+        43.25,
+        44.5
+      ]
+    },
+    "evidence": "evidence/body-armor-talents/suppressive-fire.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Unflinching",
+    "siteId": "ba-25",
+    "listOrder": 20,
+    "talentText": "Taking damage has a 70% chance of restoring Health equal to 300% Toughness. Talent Cooldown: 2 seconds.",
+    "talentCooldown": "2 seconds",
+    "shownAt": "Rank I (base)",
+    "source": {
+      "recording": "Screen_Recording_20261028_190611_The_Division_Resurgence.mp4",
+      "seconds": [
+        45.25,
+        46.75
+      ]
+    },
+    "evidence": "evidence/body-armor-talents/unflinching.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Injured Concealment",
+    "siteId": "ba-14",
+    "listOrder": 21,
+    "talentText": "Hits taken grant +1.80% Damage for 10 seconds, up to 10 stacks.",
+    "talentCooldown": "",
+    "shownAt": "Rank I (base)",
+    "source": {
+      "recording": "Screen_Recording_20261028_190611_The_Division_Resurgence.mp4",
+      "seconds": [
+        47.75,
+        49.0
+      ]
+    },
+    "evidence": "evidence/body-armor-talents/injured-concealment.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Defensive Charge",
+    "siteId": "ba-6",
+    "listOrder": 22,
+    "talentText": "Gaining Extra Health grants +3% Skill Intensity for 10 seconds, up to 5 stacks.",
+    "talentCooldown": "",
+    "shownAt": "Rank I (base)",
+    "source": {
+      "recording": "Screen_Recording_20261028_190611_The_Division_Resurgence.mp4",
+      "seconds": [
+        50.0,
+        51.25
+      ]
+    },
+    "evidence": "evidence/body-armor-talents/defensive-charge.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Suppression Rescue",
+    "siteId": "ba-21",
+    "listOrder": 23,
+    "talentText": "Downed allies within 30 meters grant +22.50% Weapon Damage and +10% Movement Speed for 10 seconds.",
+    "talentCooldown": "",
+    "shownAt": "Rank I (base)",
+    "source": {
+      "recording": "Screen_Recording_20261028_190611_The_Division_Resurgence.mp4",
+      "seconds": [
+        52.0,
+        53.5
+      ]
+    },
+    "evidence": "evidence/body-armor-talents/suppression-rescue.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Instant Triage",
+    "siteId": "ba-15",
+    "listOrder": 24,
+    "talentText": "Downed allies within 30 meters grant +22.50% Damage Reduction and +50% Rescue Efficiency for 10 seconds.",
+    "talentCooldown": "",
+    "shownAt": "Rank I (base)",
+    "source": {
+      "recording": "Screen_Recording_20261028_190611_The_Division_Resurgence.mp4",
+      "seconds": [
+        54.25,
+        55.5
+      ]
+    },
+    "evidence": "evidence/body-armor-talents/instant-triage.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  },
+  {
+    "name": "Rescue Signal",
+    "siteId": "ba-18",
+    "listOrder": 25,
+    "talentText": "Being downed grants all allies within 40 meters +10% Movement Speed and +100% Rescue Efficiency for 10 seconds. Talent Cooldown: 10 seconds.",
+    "talentCooldown": "10 seconds",
+    "shownAt": "Rank I (base)",
+    "source": {
+      "recording": "Screen_Recording_20261028_190611_The_Division_Resurgence.mp4",
+      "seconds": [
+        56.5,
+        58.0
+      ]
+    },
+    "evidence": "evidence/body-armor-talents/rescue-signal.webp",
+    "checked": "2026-10-28",
+    "note": ""
+  }
+]

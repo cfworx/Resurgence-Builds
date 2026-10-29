@@ -249,3 +249,30 @@ http://resurgencebuilds.com/* https://resurgencebuilds.com/:splat 301
 /news/undefined/ /news/ 301
 /tag/vseason-1-phase-3/ /patch-notes/season-1-phase-3-a-new-fire/ 301
 /news/division-resurgence-trello-known-issues-board-breakdown/ /news/division-resurgence-known-issues-trello-board-breakdown/ 301
+
+# Weapon names corrected to the in-game Armory (October 28, 2026)
+/database/weapons/ump-45/ /database/weapons/police-ump-45/ 301
+/database/weapons/ump-45 /database/weapons/police-ump-45/ 301
+/database/weapons/vector/ /database/weapons/vector-45-acp/ 301
+/database/weapons/vector /database/weapons/vector-45-acp/ 301
+/database/weapons/mp5/ /database/weapons/naval-mp5/ 301
+/database/weapons/mp5 /database/weapons/naval-mp5/ 301
+/database/weapons/t821/ /database/weapons/police-t821/ 301
+/database/weapons/t821 /database/weapons/police-t821/ 301
+/database/weapons/m60/ /database/weapons/classic-m60/ 301
+/database/weapons/m60 /database/weapons/classic-m60/ 301
+/database/weapons/black-market-rpk-74/ /database/weapons/black-market-rpk-74-e/ 301
+/database/weapons/black-market-rpk-74 /database/weapons/black-market-rpk-74-e/ 301
+/database/weapons/l86-lsw/ /database/weapons/military-l86-lsw/ 301
+/database/weapons/l86-lsw /database/weapons/military-l86-lsw/ 301
+/database/weapons/double-barrel/ /database/weapons/double-barrel-shotgun/ 301
+/database/weapons/double-barrel /database/weapons/double-barrel-shotgun/ 301
+# Weapons that aren't in the game's Armory (removed)
+/database/weapons/m1a/ /database/weapons/classic-m1a/ 301
+/database/weapons/m1a /database/weapons/classic-m1a/ 301
+/database/weapons/infantry-mg5/ /database/weapons/mg5/ 301
+/database/weapons/infantry-mg5 /database/weapons/mg5/ 301
+/database/weapons/svd/ /database/weapons/ 301
+/database/weapons/svd /database/weapons/ 301
+/database/weapons/acr-ss/ /database/weapons/ 301
+/database/weapons/acr-ss /database/weapons/ 301
