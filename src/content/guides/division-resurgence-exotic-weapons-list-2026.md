@@ -22,7 +22,7 @@ faqs:
   - question: "What is the best exotic for a beginner in Division Resurgence?"
     answer: "The Strawberry Milkshake LMG is still the easiest to use: Anarchy works automatically every time you hit something, no stack management required. The catch is availability, since its pass ended in Season 1 and Exotic Sealed Caches are now the route. If you want something you can actually get today, the Diamondback is on the current pass's free track, and the Warlord is buyable from the Dark Zone vendor."
   - question: "Can you recalibrate exotic weapons in Division Resurgence?"
-    answer: "Partially, as far as we can tell. The unique exotic talent is fixed; Exotic Weapon Recalibration Booklets and Manuals are the materials for recalibrating the rest of the gun. Season 2 Phase 1 fixed them so they can be looted in the Dark Zone as intended, and they're also in the bottom tier of Exotic Sealed Caches."
+    answer: "Partially, as far as we can tell. The unique exotic talent is fixed; the other two talents roll from that exotic's own pool of 18, which each exotic's database page lists. Exotic Weapon Recalibration Booklets and Manuals are the materials for recalibrating the rest of the gun. Season 2 Phase 1 fixed them so they can be looted in the Dark Zone as intended, and they're also in the bottom tier of Exotic Sealed Caches."
 ---
 
 Six exotic weapons are live in Division Resurgence as of **October 24, 2026 (Season 2 Phase 2)**: **Lady Death** (SMG), **Warlord** (assault rifle), **Strawberry Milkshake** (LMG), **Scorpio** (shotgun), **The Bighorn** (assault rifle) and **Diamondback** (rifle). A seventh name, **Deadlock**, sits in Ubisoft's official drop table and nowhere else. This page is our single source of truth for every exotic: what it does, how to get it today, and what's still unconfirmed.
@@ -227,7 +227,7 @@ Pass XP tip from our Season 1 testing: Weekly Bounties were among the best pass 
 
 ## Can you recalibrate exotic weapons?
 
-Yes, partially, as far as we can tell. You can't touch the unique exotic talent; **Exotic Weapon Recalibration Booklets and Manuals** are the materials for recalibrating the rest of the gun. Season 2 Phase 1 fixed them so they can be looted in the Dark Zone as intended, and both show up in the bottom tier of the Exotic Sealed Caches.
+Yes, partially, as far as we can tell. You can't touch the unique exotic talent. Every exotic has three talents: that fixed one plus two that roll from the exotic's own pool of 18 (each exotic's [database page](/database/exotic-weapons/) lists its pool). **Exotic Weapon Recalibration Booklets and Manuals** are the materials for recalibrating the rest of the gun. Season 2 Phase 1 fixed them so they can be looted in the Dark Zone as intended, and both show up in the bottom tier of the Exotic Sealed Caches.
 
 ## What is the best exotic weapon in Division Resurgence?
 

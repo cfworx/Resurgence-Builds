@@ -149,7 +149,7 @@ const itemLd = {
         {weapon.possibleTalents?.length > 0 && (
           <div class="weapon-talent__pool">
             <h3 class="weapon-talent__pool-title">Possible talents</h3>
-            <p class="weapon-talent__pool-note">Its rolled talents come from this pool, per the in-game Build-Making Database card (October 28, 2026).</p>
+            <p class="weapon-talent__pool-note">Every exotic has three talents: its own fixed talent plus two rolled from this pool of {weapon.possibleTalents.length} (pool from the in-game Build-Making Database card, October 28, 2026).</p>
             <ul class="weapon-talent__pool-list">
               {weapon.possibleTalents.map((t: string) => (
                 <li><a href={`/database/weapon-talents/${t.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')}/`}>{t}</a></li>

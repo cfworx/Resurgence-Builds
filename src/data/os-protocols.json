@@ -548,7 +548,9 @@
     "val3": "+2,554",
     "talentDescription": "Critical Hits performed during aiming create an explosion with a radius of 5 meters around the target that deals damage equal to 2000% Firepower to them.",
     "cooldown": "5 seconds",
-    "verifiedInGame": "2026-10-28"
+    "verifiedInGame": "2026-10-28",
+    "image": "/images/os-protocols/explosive-round-os-protocol-division-resurgence.webp",
+    "imageAlt": "Explosive Round OS Protocol in Division Resurgence: the High-End Firepower protocol's in-game icon from the Build-Making Database"
   },
   {
     "id": "os-30",
@@ -565,7 +567,9 @@
     "val3": "+2,554",
     "talentDescription": "Shooting grants +6% Weapon Damage for 2 seconds, up to 6 stacks. Shooting for 2 seconds grants +50% Damage Reduction for 2 seconds.",
     "cooldown": "",
-    "verifiedInGame": "2026-10-28"
+    "verifiedInGame": "2026-10-28",
+    "image": "/images/os-protocols/overwhelming-power-os-protocol-division-resurgence.webp",
+    "imageAlt": "Overwhelming Power OS Protocol in Division Resurgence: the High-End Firepower protocol's in-game icon from the Build-Making Database"
   },
   {
     "id": "os-31",
@@ -582,7 +586,9 @@
     "val3": "+2,554",
     "talentDescription": "Critical Hits behind cover have a 80% chance of granting +16% Weapon Critical Hit Damage for 5 seconds, up to 3 stacks.",
     "cooldown": "",
-    "verifiedInGame": "2026-10-28"
+    "verifiedInGame": "2026-10-28",
+    "image": "/images/os-protocols/cover-shooter-os-protocol-division-resurgence.webp",
+    "imageAlt": "Cover Shooter OS Protocol in Division Resurgence: the High-End Firepower protocol's in-game icon from the Build-Making Database"
   },
   {
     "id": "os-32",
@@ -599,7 +605,9 @@
     "val3": "+2,554",
     "talentDescription": "Deploying the Signature Ability grants +30% Firepower and +20% Rate of Fire for 20 seconds.",
     "cooldown": "",
-    "verifiedInGame": "2026-10-28"
+    "verifiedInGame": "2026-10-28",
+    "image": "/images/os-protocols/assault-charge-os-protocol-division-resurgence.webp",
+    "imageAlt": "Assault Charge OS Protocol in Division Resurgence: the High-End Firepower protocol's in-game icon from the Build-Making Database"
   },
   {
     "id": "os-33",
@@ -617,7 +625,9 @@
     "talentDescription": "Skill Hits within 20 meters have a 100% chance of granting +8% Damage for 10 seconds, up to 3 stacks.",
     "note": "Season 2 Phase 2 fixed the 20-meter range check, and Ubisoft's bug reporter marked the matching report (TDR-58) Done on October 23, 2026. The Concerted Strike that Season 2 Phase 1 changed to trigger off shots instead of hits is a Commando talent with the same name, not this protocol.",
     "cooldown": "1 seconds",
-    "verifiedInGame": "2026-10-28"
+    "verifiedInGame": "2026-10-28",
+    "image": "/images/os-protocols/concerted-strike-os-protocol-division-resurgence.webp",
+    "imageAlt": "Concerted Strike OS Protocol in Division Resurgence: the High-End Firepower protocol's in-game icon from the Build-Making Database"
   },
   {
     "id": "os-34",
@@ -634,7 +644,9 @@
     "val3": "+2,043",
     "talentDescription": "Skill Hits grant +4.50% Firepower for 10 seconds, up to 5 stacks.",
     "cooldown": "",
-    "verifiedInGame": "2026-10-28"
+    "verifiedInGame": "2026-10-28",
+    "image": "/images/os-protocols/tactical-pistolero-os-protocol-division-resurgence.webp",
+    "imageAlt": "Tactical Pistolero OS Protocol in Division Resurgence: the Superior Firepower protocol's in-game icon from the Build-Making Database"
   },
   {
     "id": "os-35",
@@ -651,7 +663,9 @@
     "val3": "+2,043",
     "talentDescription": "Weapon Critical Hits behind cover have a 5% chance of granting +10% Weapon Critical Hit Damage for 5 seconds, up to 3 stacks.",
     "cooldown": "",
-    "verifiedInGame": "2026-10-28"
+    "verifiedInGame": "2026-10-28",
+    "image": "/images/os-protocols/tight-grouping-os-protocol-division-resurgence.webp",
+    "imageAlt": "Tight Grouping OS Protocol in Division Resurgence: the Superior Firepower protocol's in-game icon from the Build-Making Database"
   },
   {
     "id": "os-36",
@@ -668,7 +682,9 @@
     "val3": "+2,043",
     "talentDescription": "Shooting continuously grants +2.50% Weapon Damage every 1 seconds for 2 seconds, up to 6 stacks.",
     "cooldown": "",
-    "verifiedInGame": "2026-10-28"
+    "verifiedInGame": "2026-10-28",
+    "image": "/images/os-protocols/assisted-infantry-os-protocol-division-resurgence.webp",
+    "imageAlt": "Assisted Infantry OS Protocol in Division Resurgence: the Superior Firepower protocol's in-game icon from the Build-Making Database"
   },
   {
     "id": "os-37",
@@ -685,7 +701,9 @@
     "val3": "+2,043",
     "talentDescription": "When taking damage, grants +6% Weapon Critical Hit Chance for 10 seconds, up to 3 stacks.",
     "cooldown": "3 seconds",
-    "verifiedInGame": "2026-10-28"
+    "verifiedInGame": "2026-10-28",
+    "image": "/images/os-protocols/pressure-cooker-os-protocol-division-resurgence.webp",
+    "imageAlt": "Pressure Cooker OS Protocol in Division Resurgence: the Superior Firepower protocol's in-game icon from the Build-Making Database"
   },
   {
     "id": "os-38",
@@ -703,7 +721,9 @@
     "talentDescription": "Grants +5% Weapon Multi-Shot Chance for each enemy within 20 meters.",
     "note": "Season 2 Phase 2 capped it at 35% at base level, rising to 70% fully upgraded (35/42/49/56/63/70% by upgrade level); the tooltip doesn't show the cap. TikTokAndy read +10% per enemy on his copy on October 27, 2026, without saying its upgrade level. Season 2 Phase 1 fixed it granting Armor instead of Multi-Shot.",
     "cooldown": "",
-    "verifiedInGame": "2026-10-28"
+    "verifiedInGame": "2026-10-28",
+    "image": "/images/os-protocols/dominating-presence-os-protocol-division-resurgence.webp",
+    "imageAlt": "Dominating Presence OS Protocol in Division Resurgence: the Superior Firepower protocol's in-game icon from the Build-Making Database"
   },
   {
     "id": "os-39",
@@ -720,7 +740,9 @@
     "val3": "+2,043",
     "talentDescription": "Grants +4% Weapon Damage and +4% Incoming Healing for every 1 enemies who are within 20 meters.",
     "cooldown": "",
-    "verifiedInGame": "2026-10-28"
+    "verifiedInGame": "2026-10-28",
+    "image": "/images/os-protocols/augmented-lethality-os-protocol-division-resurgence.webp",
+    "imageAlt": "Augmented Lethality OS Protocol in Division Resurgence: the Superior Firepower protocol's in-game icon from the Build-Making Database"
   },
   {
     "id": "os-40",
@@ -737,7 +759,9 @@
     "val3": "+2,043",
     "talentDescription": "Headshots grant +3.25% Firepower for 7 seconds, up to 10 stacks. Stacks disappear over time, but body shots and missed shots remove a stack instantly.",
     "cooldown": "",
-    "verifiedInGame": "2026-10-28"
+    "verifiedInGame": "2026-10-28",
+    "image": "/images/os-protocols/deadly-accuracy-os-protocol-division-resurgence.webp",
+    "imageAlt": "Deadly Accuracy OS Protocol in Division Resurgence: the Superior Firepower protocol's in-game icon from the Build-Making Database"
   },
   {
     "id": "os-41",
@@ -754,7 +778,9 @@
     "val3": "+2,043",
     "talentDescription": "Grants +15% Weapon Damage while located within 20 meters of a deployed Skill.",
     "cooldown": "",
-    "verifiedInGame": "2026-10-28"
+    "verifiedInGame": "2026-10-28",
+    "image": "/images/os-protocols/mechanized-support-os-protocol-division-resurgence.webp",
+    "imageAlt": "Mechanized Support OS Protocol in Division Resurgence: the Superior Firepower protocol's in-game icon from the Build-Making Database"
   },
   {
     "id": "os-42",
@@ -771,7 +797,9 @@
     "val3": "+2,043",
     "talentDescription": "Grants +30% Weapon Critical Hit Damage when behind cover.",
     "cooldown": "",
-    "verifiedInGame": "2026-10-28"
+    "verifiedInGame": "2026-10-28",
+    "image": "/images/os-protocols/trench-fighter-os-protocol-division-resurgence.webp",
+    "imageAlt": "Trench Fighter OS Protocol in Division Resurgence: the Superior Firepower protocol's in-game icon from the Build-Making Database"
   },
   {
     "id": "os-43",
@@ -788,7 +816,9 @@
     "val3": "+2,043",
     "talentDescription": "Grants +15% Skill Intensity and Weapon Damage when there are enemies within 20 meters.",
     "cooldown": "",
-    "verifiedInGame": "2026-10-28"
+    "verifiedInGame": "2026-10-28",
+    "image": "/images/os-protocols/close-quarters-menace-os-protocol-division-resurgence.webp",
+    "imageAlt": "Close Quarters Menace OS Protocol in Division Resurgence: the Superior Firepower protocol's in-game icon from the Build-Making Database"
   },
   {
     "id": "os-44",
@@ -805,7 +835,9 @@
     "val3": "+2,043",
     "talentDescription": "Reloading grants +15% Weapon Damage for 5 seconds.",
     "cooldown": "5 seconds",
-    "verifiedInGame": "2026-10-28"
+    "verifiedInGame": "2026-10-28",
+    "image": "/images/os-protocols/combat-reload-os-protocol-division-resurgence.webp",
+    "imageAlt": "Combat Reload OS Protocol in Division Resurgence: the Superior Firepower protocol's in-game icon from the Build-Making Database"
   },
   {
     "id": "os-45",
@@ -822,7 +854,9 @@
     "val3": "+2,043",
     "talentDescription": "Grants Firepower equal to 12% Headshot Damage, capped at 54% Firepower.",
     "cooldown": "",
-    "verifiedInGame": "2026-10-28"
+    "verifiedInGame": "2026-10-28",
+    "image": "/images/os-protocols/death-from-afar-os-protocol-division-resurgence.webp",
+    "imageAlt": "Death From Afar OS Protocol in Division Resurgence: the Superior Firepower protocol's in-game icon from the Build-Making Database"
   },
   {
     "id": "os-46",
@@ -839,7 +873,9 @@
     "val3": "+1,532",
     "talentDescription": "Grants +6% Firepower while located within 30 meters of a debuffed enemy.",
     "cooldown": "",
-    "verifiedInGame": "2026-10-28"
+    "verifiedInGame": "2026-10-28",
+    "image": "/images/os-protocols/hunting-season-os-protocol-division-resurgence.webp",
+    "imageAlt": "Hunting Season OS Protocol in Division Resurgence: the Specialized Firepower protocol's in-game icon from the Build-Making Database"
   },
   {
     "id": "os-47",
@@ -856,7 +892,9 @@
     "val3": "+1,532",
     "talentDescription": "Grants +6% Firepower while located within 30 meters of a deployed Skill.",
     "cooldown": "",
-    "verifiedInGame": "2026-10-28"
+    "verifiedInGame": "2026-10-28",
+    "image": "/images/os-protocols/side-by-side-os-protocol-division-resurgence.webp",
+    "imageAlt": "Side by Side OS Protocol in Division Resurgence: the Specialized Firepower protocol's in-game icon from the Build-Making Database"
   },
   {
     "id": "os-48",
@@ -873,7 +911,9 @@
     "val3": "+1,532",
     "talentDescription": "Shooting grants +12% Weapon Damage.",
     "cooldown": "",
-    "verifiedInGame": "2026-10-28"
+    "verifiedInGame": "2026-10-28",
+    "image": "/images/os-protocols/suppressive-fire-os-protocol-division-resurgence.webp",
+    "imageAlt": "Suppressive Fire OS Protocol in Division Resurgence: the Specialized Firepower protocol's in-game icon from the Build-Making Database"
   },
   {
     "id": "os-49",
@@ -890,7 +930,9 @@
     "val3": "+1,532",
     "talentDescription": "Taking damage grants +14.40% Weapon Critical Hit Chance for 5 seconds.",
     "cooldown": "5 seconds",
-    "verifiedInGame": "2026-10-28"
+    "verifiedInGame": "2026-10-28",
+    "image": "/images/os-protocols/resentful-os-protocol-division-resurgence.webp",
+    "imageAlt": "Resentful OS Protocol in Division Resurgence: the Specialized Firepower protocol's in-game icon from the Build-Making Database"
   },
   {
     "id": "os-50",
@@ -907,7 +949,9 @@
     "val3": "+1,532",
     "talentDescription": "Grants +18% Firepower while located within 20 meters of an enemy.",
     "cooldown": "",
-    "verifiedInGame": "2026-10-28"
+    "verifiedInGame": "2026-10-28",
+    "image": "/images/os-protocols/face-to-face-advantage-os-protocol-division-resurgence.webp",
+    "imageAlt": "Face-to-Face Advantage OS Protocol in Division Resurgence: the Specialized Firepower protocol's in-game icon from the Build-Making Database"
   },
   {
     "id": "os-51",
@@ -924,7 +968,9 @@
     "val3": "+1,021",
     "talentDescription": "Grants +9% Weapon Damage.",
     "cooldown": "",
-    "verifiedInGame": "2026-10-28"
+    "verifiedInGame": "2026-10-28",
+    "image": "/images/os-protocols/war-machine-os-protocol-division-resurgence.webp",
+    "imageAlt": "War Machine OS Protocol in Division Resurgence: the Standard Firepower protocol's in-game icon from the Build-Making Database"
   },
   {
     "id": "os-52",
@@ -941,7 +987,9 @@
     "val3": "+1,021",
     "talentDescription": "Grants +13.50% Firepower.",
     "cooldown": "",
-    "verifiedInGame": "2026-10-28"
+    "verifiedInGame": "2026-10-28",
+    "image": "/images/os-protocols/seasoned-veteran-os-protocol-division-resurgence.webp",
+    "imageAlt": "Seasoned Veteran OS Protocol in Division Resurgence: the Standard Firepower protocol's in-game icon from the Build-Making Database"
   },
   {
     "id": "os-53",
@@ -958,7 +1006,9 @@
     "val3": "+1,021",
     "talentDescription": "Grants +9% Weapon Multi-Shot Chance.",
     "cooldown": "",
-    "verifiedInGame": "2026-10-28"
+    "verifiedInGame": "2026-10-28",
+    "image": "/images/os-protocols/spray-n-pray-os-protocol-division-resurgence.webp",
+    "imageAlt": "Spray 'n' Pray OS Protocol in Division Resurgence: the Standard Firepower protocol's in-game icon from the Build-Making Database"
   },
   {
     "id": "os-54",
@@ -976,7 +1026,9 @@
     "talentDescription": "While possessing Extra Health, apply Stun after every 10 hits performed. At Max Health, grants Extra Health equal to 2400% Firepower for 10 seconds when hit.",
     "cooldown": "10 seconds",
     "verifiedInGame": "2026-10-28",
-    "note": "The June 26, 2026 hotfix shortened the stun from 2 seconds to 1.5 and gave it the 10-second cooldown. The tooltip shows the cooldown but not the stun's length."
+    "note": "The June 26, 2026 hotfix shortened the stun from 2 seconds to 1.5 and gave it the 10-second cooldown. The tooltip shows the cooldown but not the stun's length.",
+    "image": "/images/os-protocols/pummeling-shield-os-protocol-division-resurgence.webp",
+    "imageAlt": "Pummeling Shield OS Protocol in Division Resurgence: the High-End Toughness protocol's in-game icon from the Build-Making Database"
   },
   {
     "id": "os-55",
@@ -993,7 +1045,9 @@
     "val3": "+2,554",
     "talentDescription": "While possessing Extra Health, grants +14.40% Damage. Assists grant Extra Health equal to 16% Max Health for 10 seconds.",
     "cooldown": "",
-    "verifiedInGame": "2026-10-28"
+    "verifiedInGame": "2026-10-28",
+    "image": "/images/os-protocols/heavy-armor-os-protocol-division-resurgence.webp",
+    "imageAlt": "Heavy Armor OS Protocol in Division Resurgence: the High-End Toughness protocol's in-game icon from the Build-Making Database"
   },
   {
     "id": "os-56",
@@ -1010,7 +1064,9 @@
     "val3": "+2,554",
     "talentDescription": "Restore 0.50% Max Health for every 1 enemies within 10 meters, up to a maximum of 2.50%. Shooting consumes 2% Health and deals additional damage equal to 0.60% Current Health.",
     "cooldown": "",
-    "verifiedInGame": "2026-10-28"
+    "verifiedInGame": "2026-10-28",
+    "image": "/images/os-protocols/happy-survival-os-protocol-division-resurgence.webp",
+    "imageAlt": "Happy Survival OS Protocol in Division Resurgence: the High-End Toughness protocol's in-game icon from the Build-Making Database"
   },
   {
     "id": "os-57",
@@ -1027,7 +1083,9 @@
     "val3": "+2,043",
     "talentDescription": "Grants +12% Incoming Healing for each enemy within 20 meters who is targeting the Agent. Taking Weapon Damage restores 8% Max Health.",
     "cooldown": "5 seconds",
-    "verifiedInGame": "2026-10-28"
+    "verifiedInGame": "2026-10-28",
+    "image": "/images/os-protocols/blitz-tactics-os-protocol-division-resurgence.webp",
+    "imageAlt": "Blitz Tactics OS Protocol in Division Resurgence: the Superior Toughness protocol's in-game icon from the Build-Making Database"
   },
   {
     "id": "os-58",
@@ -1044,7 +1102,9 @@
     "val3": "+2,043",
     "talentDescription": "Grants +15% Toughness when an ally's Health reaches 50%, up to +100%.",
     "cooldown": "",
-    "verifiedInGame": "2026-10-28"
+    "verifiedInGame": "2026-10-28",
+    "image": "/images/os-protocols/last-resort-os-protocol-division-resurgence.webp",
+    "imageAlt": "Last Resort OS Protocol in Division Resurgence: the Superior Toughness protocol's in-game icon from the Build-Making Database"
   },
   {
     "id": "os-59",
@@ -1061,7 +1121,9 @@
     "val3": "+2,043",
     "talentDescription": "Restoring the Health of any ally whose Health is above 50% of their Current Health grants the ally team additional healing equal to 5% Max Health. Restoring the Health of any ally whose Health is below 50% of their Current Health grants the target additional healing equal to 12.50% Max Health.",
     "cooldown": "5 seconds",
-    "verifiedInGame": "2026-10-28"
+    "verifiedInGame": "2026-10-28",
+    "image": "/images/os-protocols/medical-excellence-os-protocol-division-resurgence.webp",
+    "imageAlt": "Medical Excellence OS Protocol in Division Resurgence: the Superior Toughness protocol's in-game icon from the Build-Making Database"
   },
   {
     "id": "os-60",
@@ -1078,7 +1140,9 @@
     "val3": "+2,043",
     "talentDescription": "Taking damage has a 30% chance of granting +36% Incoming Healing for 5 seconds.",
     "cooldown": "5 seconds",
-    "verifiedInGame": "2026-10-28"
+    "verifiedInGame": "2026-10-28",
+    "image": "/images/os-protocols/level-headed-os-protocol-division-resurgence.webp",
+    "imageAlt": "Level-Headed OS Protocol in Division Resurgence: the Superior Toughness protocol's in-game icon from the Build-Making Database"
   },
   {
     "id": "os-61",
@@ -1095,7 +1159,9 @@
     "val3": "+1,532",
     "talentDescription": "Grants +12% Healing Intensity.",
     "cooldown": "",
-    "verifiedInGame": "2026-10-28"
+    "verifiedInGame": "2026-10-28",
+    "image": "/images/os-protocols/caretaker-os-protocol-division-resurgence.webp",
+    "imageAlt": "Caretaker OS Protocol in Division Resurgence: the Specialized Toughness protocol's in-game icon from the Build-Making Database"
   },
   {
     "id": "os-62",
@@ -1112,7 +1178,9 @@
     "val3": "+1,532",
     "talentDescription": "Taking damage grants +10% Damage Reduction for 5 seconds.",
     "cooldown": "10 seconds",
-    "verifiedInGame": "2026-10-28"
+    "verifiedInGame": "2026-10-28",
+    "image": "/images/os-protocols/enduring-os-protocol-division-resurgence.webp",
+    "imageAlt": "Enduring OS Protocol in Division Resurgence: the Specialized Toughness protocol's in-game icon from the Build-Making Database"
   },
   {
     "id": "os-63",
@@ -1129,7 +1197,9 @@
     "val3": "+1,532",
     "talentDescription": "Grants +18% Toughness while Health is above 50%.",
     "cooldown": "",
-    "verifiedInGame": "2026-10-28"
+    "verifiedInGame": "2026-10-28",
+    "image": "/images/os-protocols/steadfast-os-protocol-division-resurgence.webp",
+    "imageAlt": "Steadfast OS Protocol in Division Resurgence: the Specialized Toughness protocol's in-game icon from the Build-Making Database"
   },
   {
     "id": "os-64",
@@ -1146,7 +1216,9 @@
     "val3": "+1,021",
     "talentDescription": "Grants +21% Armor.",
     "cooldown": "",
-    "verifiedInGame": "2026-10-28"
+    "verifiedInGame": "2026-10-28",
+    "image": "/images/os-protocols/plate-carrier-os-protocol-division-resurgence.webp",
+    "imageAlt": "Plate Carrier OS Protocol in Division Resurgence: the Standard Toughness protocol's in-game icon from the Build-Making Database"
   },
   {
     "id": "os-65",
@@ -1163,7 +1235,9 @@
     "val3": "+1,021",
     "talentDescription": "Grants +4.50% Weapon Damage and +4.50% Stamina.",
     "cooldown": "",
-    "verifiedInGame": "2026-10-28"
+    "verifiedInGame": "2026-10-28",
+    "image": "/images/os-protocols/layered-defense-os-protocol-division-resurgence.webp",
+    "imageAlt": "Layered Defense OS Protocol in Division Resurgence: the Standard Toughness protocol's in-game icon from the Build-Making Database"
   },
   {
     "id": "os-66",
@@ -1180,6 +1254,8 @@
     "val3": "+1,021",
     "talentDescription": "Grants +13.50% Toughness.",
     "cooldown": "",
-    "verifiedInGame": "2026-10-28"
+    "verifiedInGame": "2026-10-28",
+    "image": "/images/os-protocols/physical-training-os-protocol-division-resurgence.webp",
+    "imageAlt": "Physical Training OS Protocol in Division Resurgence: the Standard Toughness protocol's in-game icon from the Build-Making Database"
   }
 ]

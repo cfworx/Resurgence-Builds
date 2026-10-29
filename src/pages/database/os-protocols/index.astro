@@ -95,6 +95,17 @@ const faqs = [
         data-s={norm([p.name, p.specialization, p.rarity, p.mainStat, p.talentDescription, p.attr1, p.attr2, p.attr3, p.cooldown ? 'cooldown' : ''].join(' '))}
       >
         <a class={`osdb-card osdb-card--${slugify(p.rarity)}`} href={`/database/os-protocols/${slugify(p.name)}/`}>
+          {p.image && (
+            <img
+              class="osdb-card__img"
+              src={p.image}
+              alt={p.imageAlt || `${p.name} OS Protocol in Division Resurgence`}
+              width="353"
+              height="172"
+              loading="lazy"
+              decoding="async"
+            />
+          )}
           <div class="osdb-card__top">
             <h2 class="osdb-card__name">{p.name}</h2>
             <span class="osdb-card__rarity">{p.rarity}</span>
@@ -219,6 +230,16 @@ const faqs = [
   .osdb-card--superior { --rarity: #C285DB; }
   .osdb-card--specialized { --rarity: #5B9AEF; }
   .osdb-card--standard { --rarity: #6DAA45; }
+  .osdb-card__img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 353 / 172;
+    object-fit: cover;
+    margin-bottom: 4px;
+    border-radius: 6px;
+    background: rgba(0, 0, 0, 0.3);
+  }
   .osdb-card__top { display: flex; align-items: baseline; justify-content: space-between; gap: var(--sp-2); }
   .osdb-card__name {
     margin: 0;

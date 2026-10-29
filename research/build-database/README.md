@@ -110,12 +110,12 @@ every field was compared with `src/data/`.
 - **"Skill Cooldown Recovery-".** Every 2-piece Skill Cooldown Recovery bonus is shown as "Skill Cooldown Recovery-[2.0%~4.0%]",
   with what looks like a minus where the other bonuses have a plus. It is almost certainly a display quirk (the bonus is
   positive), and we store it as shown.
-- **How many rolled talents does an exotic get?** The Weapon Talent section's header says "Every weapon has 2 Weapon Talents,
-  which are randomly assigned from its Weapon Talent pool", and each exotic card shows its fixed talent plus 18 possible ones.
-  Our Milkshake Machine build lists In Sync and Swift Taunt next to Anarchy (both are in its pool). A look at a dropped exotic's
-  card would settle whether the exotic talent counts as one of the two.
-- **Precision Support or Precise Support?** The database lists the talent as "Precision Support"; TikTokAndy's Lightweight M4
-  tooltip read "Precise Support II" on October 27. The site keeps "Precise Support" and mentions both.
+- **How many rolled talents does an exotic get? (answered)** Three talents in all: the fixed exotic talent plus two rolled from
+  its pool of 18, which fits the section header ("Every weapon has 2 Weapon Talents..."). Cory confirmed it in game on
+  2026-10-28. The exotic pages and the exotic list guide say so.
+- **Precision Support or Precise Support? (decided)** The database card says "Precision Support"; item tooltips (TikTokAndy's
+  Lightweight M4, 2026-10-27) say "Precise Support II". The site keeps "Precise Support" (Cory's call, 2026-10-28) and the
+  talent's note mentions both.
 - **Mod slots.** Lady Death, Scorpio, The Bighorn and Diamondback show five locked mod slots; Warlord and Strawberry Milkshake
   show five unlocked ones. We don't know what the difference means yet.
 
