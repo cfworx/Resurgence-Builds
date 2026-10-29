@@ -1117,7 +1117,8 @@ main > .section > :last-child > :last-child { margin-bottom: 0; }
   border-top: 1px solid rgba(255, 255, 255, 0.06);
   min-width: 0;
 }
-.bsheet__group > .bsheet__label + .bsheet__item { border-top: 0; }
+.bsheet__group > .bsheet__label + .bsheet__item,
+.bsheet__group > .bsheet__item:first-child { border-top: 0; }
 .bsheet__grid2 > .bsheet__item:nth-child(-n + 2) { border-top: 0; }
 .bsheet__cols > .bsheet__item:first-child { border-top: 0; }
 @media (min-width: 56em) { .bsheet__cols > .bsheet__item:nth-child(2) { border-top: 0; } }
@@ -1128,7 +1129,8 @@ main > .section > :last-child > :last-child { margin-bottom: 0; }
 .prose .bsheet .bsheet__tile--wide { width: 150px; }
 .prose .bsheet .bsheet__sq { flex-shrink: 0; width: 56px; height: 56px; border-radius: 10px; background: #2b2b2b; border: 1px solid rgba(255, 255, 255, 0.1); }
 @media (max-width: 32.5em) { .prose .bsheet .bsheet__tile, .prose .bsheet .bsheet__tile--wide { width: 110px; } }
-.prose .bsheet a.bsheet__name {
+.bsheet--single { grid-template-columns: minmax(0, 1fr) !important; }
+.prose .bsheet .bsheet__name {
   display: block;
   color: var(--ink-heading);
   font-family: var(--font-heading);
@@ -1138,6 +1140,8 @@ main > .section > :last-child > :last-child { margin-bottom: 0; }
   text-decoration: none;
 }
 .prose .bsheet a.bsheet__name:hover { color: var(--accent); }
+.prose .bsheet .bsheet__pick a { color: var(--ink); }
+.prose .bsheet .bsheet__pick a:hover { color: var(--accent); }
 .bsheet__sub {
   display: block;
   font-family: var(--font-mono);
@@ -1815,8 +1819,10 @@ details.toc[open] > summary { margin-bottom: var(--sp-2); }
    component table styles (scoped selectors, fixed min-widths) on phones only. */
 @media (max-width: 44.99em) {
   th { white-space: normal; }
-  /* a table that stays a table can still shrink: long words and slash-joined lists may break */
-  th, td { overflow-wrap: anywhere; }
+  /* Table text breaks between words. A word longer than its cell still breaks (break-word), but
+     unlike "anywhere" it doesn't let the browser squeeze a column down to a few letters, which split
+     words like "Scor / pio" in the first column of two-column tables. */
+  th, td { overflow-wrap: break-word; }
 
   table.t-cards,
   table.t-pairs {
