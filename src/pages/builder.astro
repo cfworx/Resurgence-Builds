@@ -54,8 +54,8 @@ const omit = <T extends Record<string, unknown>>(list: T[], keys: string[]) =>
 const dataPayload = JSON.stringify({
   specs: plannerSpecs,
   gearSets,
-  weaponTalents,
-  exoticWeapons: omit(exoticWeapons, ['image', 'acquisition']),
+  weaponTalents: omit(weaponTalents, ['verifiedInGame']),
+  exoticWeapons: omit(exoticWeapons, ['image', 'acquisition', 'possibleTalents']),
   standardWeapons: omit(standardWeapons, ['image', 'randomizedAttributes', 'talent1']),
   bodyArmorTalents,
   backpackTalents,

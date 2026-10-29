@@ -146,6 +146,17 @@ const itemLd = {
           <h3 class="weapon-talent__name">{weapon.talentName}</h3>
           <p class="weapon-talent__desc">{weapon.talentDescription}</p>
         </div>
+        {weapon.possibleTalents?.length > 0 && (
+          <div class="weapon-talent__pool">
+            <h3 class="weapon-talent__pool-title">Possible talents</h3>
+            <p class="weapon-talent__pool-note">Its rolled talents come from this pool, per the in-game Build-Making Database card (October 28, 2026).</p>
+            <ul class="weapon-talent__pool-list">
+              {weapon.possibleTalents.map((t: string) => (
+                <li><a href={`/database/weapon-talents/${t.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')}/`}>{t}</a></li>
+              ))}
+            </ul>
+          </div>
+        )}
       </div>
 
       <!-- Overview -->
@@ -394,6 +405,12 @@ const itemLd = {
     color: #b8b8c0;
     margin: 0;
   }
+  .weapon-talent__pool { margin-top: var(--sp-4); }
+  .weapon-talent__pool-title { margin: 0 0 4px; font-family: var(--font-heading); font-size: var(--text-base); font-weight: 700; color: #fff; }
+  .weapon-talent__pool-note { margin: 0 0 var(--sp-3); font-size: var(--text-sm); color: var(--ink-muted); }
+  .weapon-talent__pool-list { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px; }
+  .weapon-talent__pool-list a { display: inline-block; padding: 4px 10px; font-size: var(--text-sm); color: var(--ink-heading); text-decoration: none; background: var(--surface); border: 1px solid var(--border); border-radius: 999px; }
+  .weapon-talent__pool-list a:hover { border-color: var(--accent); color: #fff; }
 
   /* Back link */
   .weapon-detail__back {

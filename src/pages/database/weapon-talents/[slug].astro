@@ -9,7 +9,6 @@ import wtNotes from '../../../data/weapon-talent-notes.json';
 import { isWeaponTalentIndexable } from '../../../utils/indexability.mjs';
 import DbItemExtras from '../../../components/DbItemExtras.astro';
 import { verifiedPatch, DATABASE_UPDATED } from '../../../data/site-config';
-const lastVerified = verifiedPatch('Patch 1.1.2.2'); // Bump: drop the arg ONLY after re-verifying this page's content in-game (CURRENT_PATCH is a ceiling, not an auto-bump)
 
 export function getStaticPaths() {
   return weaponTalents.map((talent: any) => ({
@@ -21,6 +20,8 @@ export function getStaticPaths() {
 }
 
 const { talent } = Astro.props;
+// Talents checked in the in-game Build-Making Database carry verifiedInGame (all 69 on 2026-10-28).
+const lastVerified = talent.verifiedInGame ? verifiedPatch() : verifiedPatch('Patch 1.1.2.2');
 
 const slug = talent.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
 const siteUrl = 'https://resurgencebuilds.com';
@@ -150,7 +151,7 @@ const talentLd = {
   dateModified: DATABASE_UPDATED,
   image: { '@type': 'ImageObject', url: `${siteUrl}/images/resurgence-builds-official-logo.png`, width: 800, height: 800 },
   inLanguage: 'en-US',
-  lastReviewed: '2026-05-30',
+  lastReviewed: talent.verifiedInGame || '2026-05-30',
   wordCount: 400,
   about: { '@id': `${siteUrl}/#division-resurgence` },
 };

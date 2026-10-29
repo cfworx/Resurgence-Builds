@@ -15,7 +15,7 @@ Nothing in this folder is served by the website. `src/data/*.json` is what the s
 | OS Protocol, Applicable to Toughness | Done 2026-10-28 | 13 | `Screen_Recording_20261028_155041` |
 | Exotic Weapon | Done 2026-10-28 | 6 | `Screen_Recording_20261028_155256` |
 | Skill Mod Combo Set | Done 2026-10-28 | 90 | `Screen_Recording_20261028_163454` |
-| Weapon Talent | Not recorded yet | | |
+| Weapon Talent | Done 2026-10-28 | 73 | `Screen_Recording_20261028_184307` |
 | Gear Set Effect | Not recorded yet | | |
 | Body Armor Talent | Not recorded yet | | |
 | Backpack Talent | Not recorded yet | | |
@@ -34,6 +34,9 @@ All recordings were made on 2026-10-28 during Season 2 Phase 2. Details are in `
 - `skill-mod-combos.json` / `skill-mod-combos.csv`: all 90 Skill Mod Combo Sets. Name, the site's id (`smc-N`), tab, position
   in the tab's list, skill, the 2-piece and 3-piece text, talent cooldown, the rarities the card's "Source" panel shows, and
   where in the recording it was read.
+- `weapon-talents.json` / `weapon-talents.csv`: all 73 Weapon Talents (67 regular and the 6 exotic talents). Name, the site's
+  id (`wt-N`, blank for exotic talents the site keeps on the exotic pages), list position, talent text and cooldown at rank I,
+  and the first weapon class the card's "Source" panel shows.
 - `recordings.json`: the source recordings (file name, date, length, resolution, what each one covers).
 - `evidence/`: one image per entry, stitched from the recording so the whole scrolled card is in one picture. These are the
   proof for every value in the JSON and CSV files.
@@ -53,8 +56,13 @@ All recordings were made on 2026-10-28 during Season 2 Phase 2. Details are in `
 - **Skill Mod Combo Sets show the 2-piece bonus as a range** ("Skill Health+[4.0%~8.0%]") and the 3-piece talent at one value,
   which matches the lowest tier. The card's "Source" panel shows the three pieces (firmware, software and chipset) in each
   rarity the set comes in.
-- The exotic cards also show a "Possible Talents" grid of icons (18 per exotic) without names. Matching those icons to talent
-  names needs the Weapon Talent section, which isn't recorded yet.
+- **Weapon Talents are shown at rank I.** The section's own header says "Every weapon has 2 Weapon Talents, which are randomly
+  assigned from its Weapon Talent pool." Each card's "Source" panel lists the weapons that can roll it, grouped by class, as
+  thumbnails with rarity and tier but no names. The panels weren't scrolled in this recording, so the record keeps only the first
+  class shown.
+- The exotic cards also show a "Possible Talents" grid of 18 icons without names. Each icon was matched to its talent by
+  comparing it with the icons on the 73 Weapon Talent cards (every match checked by eye); the names are in
+  `exotic-weapons.json` (`possibleTalents`, in grid order).
 
 ## How the record was made
 
@@ -83,6 +91,11 @@ every field was compared with `src/data/`.
   High-End and Superior pieces; 21 sets, one per skill, also come in Specialized. Every combo except Ammo Refill now carries
   `verifiedInGame: "2026-10-28"`.
 
+- Weapon Talents: all 69 talents on the site matched by name and text, except Tactical Targeting, which was missing its "15%"
+  Extra Health. The database confirms the rank I numbers we had flagged: Ammo Supply 54% (rank II reads 65%) and Slaughter
+  Fortitude +12% (rank II reads +18%). Bloodlust's "Dealing 8 damage" and Unbreakable's flat "+36 Armor" are the game's own text.
+  Every talent now carries `verifiedInGame: "2026-10-28"`.
+
 ## Open questions
 
 - **The Bighorn's damage type (explained).** The database card says Shredding. Early copies didn't all match: on Ubisoft's bug
@@ -97,6 +110,12 @@ every field was compared with `src/data/`.
 - **"Skill Cooldown Recovery-".** Every 2-piece Skill Cooldown Recovery bonus is shown as "Skill Cooldown Recovery-[2.0%~4.0%]",
   with what looks like a minus where the other bonuses have a plus. It is almost certainly a display quirk (the bonus is
   positive), and we store it as shown.
+- **How many rolled talents does an exotic get?** The Weapon Talent section's header says "Every weapon has 2 Weapon Talents,
+  which are randomly assigned from its Weapon Talent pool", and each exotic card shows its fixed talent plus 18 possible ones.
+  Our Milkshake Machine build lists In Sync and Swift Taunt next to Anarchy (both are in its pool). A look at a dropped exotic's
+  card would settle whether the exotic talent counts as one of the two.
+- **Precision Support or Precise Support?** The database lists the talent as "Precision Support"; TikTokAndy's Lightweight M4
+  tooltip read "Precise Support II" on October 27. The site keeps "Precise Support" and mentions both.
 - **Mod slots.** Lady Death, Scorpio, The Bighorn and Diamondback show five locked mod slots; Warlord and Strawberry Milkshake
   show five unlocked ones. We don't know what the difference means yet.
 

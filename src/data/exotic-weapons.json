@@ -14,7 +14,27 @@
     "optimalRange": "16m",
     "movementSpeed": "91",
     "stability": "50",
-    "verifiedInGame": "2026-10-28"
+    "verifiedInGame": "2026-10-28",
+    "possibleTalents": [
+      "Precise Trauma",
+      "Backup Battery",
+      "Ammo Charge",
+      "Target Acquisition",
+      "In Sync",
+      "Steady Hands",
+      "Neverending",
+      "Blood for Blood",
+      "Still Alive",
+      "Multitasking",
+      "Tactical Reload",
+      "Fully Charged",
+      "Rapid Charge",
+      "Adaptation",
+      "Steady Handed",
+      "Performer",
+      "Sentinel Aura",
+      "Revitalize"
+    ]
   },
   {
     "id": "ew-2",
@@ -31,7 +51,27 @@
     "optimalRange": "25m",
     "movementSpeed": "54",
     "stability": "50",
-    "verifiedInGame": "2026-10-28"
+    "verifiedInGame": "2026-10-28",
+    "possibleTalents": [
+      "Enhancement Trade",
+      "Ammo Charge",
+      "Precise Crit",
+      "In Sync",
+      "Strained",
+      "Proficient Reload",
+      "Neverending",
+      "Steady Suppression",
+      "Still Alive",
+      "Tactical Reload",
+      "Fully Charged",
+      "Rapid Charge",
+      "Steady Handed",
+      "Damage Trade",
+      "Ammo Supply",
+      "Misdirection Insurance",
+      "Take a Breath",
+      "Thick Skin"
+    ]
   },
   {
     "id": "ew-3",
@@ -48,7 +88,27 @@
     "optimalRange": "25m",
     "movementSpeed": "19",
     "stability": "50",
-    "verifiedInGame": "2026-10-28"
+    "verifiedInGame": "2026-10-28",
+    "possibleTalents": [
+      "Enhancement Trade",
+      "Precise Trauma",
+      "In Sync",
+      "Concentrated Fire",
+      "Proficient Reload",
+      "Neverending",
+      "Blood for Blood",
+      "Steady Suppression",
+      "Spirited",
+      "Tactical Reload",
+      "Fully Charged",
+      "Adaptation",
+      "Steady Handed",
+      "Damage Trade",
+      "Calm and Collected",
+      "Swift Taunt",
+      "Take a Breath",
+      "Revitalize"
+    ]
   },
   {
     "id": "ew-4",
@@ -66,7 +126,27 @@
     "stability": "50",
     "acquisition": "Classified Ops Pass 1.3 (premium track, tier 5) in Season 1 Phase 3. Since then: the Dark Zone vendor (added in Season 2 Phase 1) and Exotic Sealed Caches (added in Season 2 Phase 2), which can grant exotics from previous seasons",
     "note": "The card reads 1,68k (about 1,680 damage). We listed it as 210 until October 28, 2026.",
-    "verifiedInGame": "2026-10-28"
+    "verifiedInGame": "2026-10-28",
+    "possibleTalents": [
+      "Enhancement Trade",
+      "Precise Trauma",
+      "Spec-Ops",
+      "In Sync",
+      "Breadbasket",
+      "Steady Reload",
+      "Proficient Reload",
+      "Sadistic Shield",
+      "Spirited",
+      "Tactical Reload",
+      "Fully Charged",
+      "Adaptation",
+      "No Exit",
+      "Calm and Collected",
+      "Ammo Supply",
+      "Performer",
+      "Conceited",
+      "Sentinel Aura"
+    ]
   },
   {
     "id": "ew-5",
@@ -85,7 +165,27 @@
     "acquisition": "Season 2 Phase 1 Classified Ops Pass (free and premium track). Since Season 2 Phase 2, Exotic Sealed Caches can grant exotics from previous seasons.",
     "note": "Early copies didn't all match: on Ubisoft's bug reporter (TDR-134), players found Bighorns from the Season 2 Phase 1 pass dealing Piercing or Shredding damage while the Armory showed Blast. Ubisoft marked the report Done on September 25, 2026, and the in-game Build-Making Database lists Shredding. TikTokAndy's Piercing copy in his September 16 video is one of those early ones. We listed it as Piercing until October 28.",
     "caveat": true,
-    "verifiedInGame": "2026-10-28"
+    "verifiedInGame": "2026-10-28",
+    "possibleTalents": [
+      "Multi-Pronged Attack",
+      "Precise Trauma",
+      "Swift Aim",
+      "Target Acquisition",
+      "Steady Aim",
+      "Neverending",
+      "Fast Hands",
+      "Blood for Blood",
+      "Slaughter Healing",
+      "Adaptation",
+      "Steady Handed",
+      "Damage Trade",
+      "Surgical",
+      "Calm and Collected",
+      "Ammo Supply",
+      "Take a Breath",
+      "Slaughter Fortitude",
+      "Revitalize"
+    ]
   },
   {
     "id": "ew-6",
@@ -106,6 +206,26 @@
     "stability": "50",
     "acquisition": "Season 2 Phase 2 Classified Ops Pass (free and premium track). Ubisoft also added Diamondback rewards to Dark Zone vendors, reward caches, weekly reward pools and exotic mod sources, and The Diamondback Cache is one of the Exotic Sealed Cache rewards.",
     "note": "The in-game card names it Diamondback; Ubisoft's reward lists say The Diamondback Cache. Ubisoft's Season 2 Phase 2 article calls it an assault rifle in its page summary, but the card says Rifle. Don't borrow numbers from The Division 2's Diamondback, which is a different game's gun.",
-    "verifiedInGame": "2026-10-28"
+    "verifiedInGame": "2026-10-28",
+    "possibleTalents": [
+      "Enhancement Trade",
+      "Swift Aim",
+      "Ammo Charge",
+      "Killer",
+      "Target Acquisition",
+      "In Sync",
+      "Proficient Reload",
+      "Fast Hands",
+      "Still Alive",
+      "Tactical Reload",
+      "Fully Charged",
+      "Long-Distance Marking",
+      "Damage Trade",
+      "Death by Numbers",
+      "Calm and Collected",
+      "Take a Breath",
+      "Slaughter Fortitude",
+      "Thick Skin"
+    ]
   }
 ]

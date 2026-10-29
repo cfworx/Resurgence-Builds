@@ -3,7 +3,8 @@ import DatabaseLayout from '../../../layouts/DatabaseLayout.astro';
 import weaponTalents from '../../../data/weapon-talents.json';
 import AdSenseUnit from '../../../components/AdSenseUnit.astro';
 import { verifiedPatch } from '../../../data/site-config';
-const lastVerified = verifiedPatch('Patch 1.1.2.2'); // Bump: drop the arg ONLY after re-verifying this page's content in-game (CURRENT_PATCH is a ceiling, not an auto-bump)
+// All 69 talents were re-checked in the in-game Build-Making Database on 2026-10-28 (Season 2 Phase 2).
+const lastVerified = verifiedPatch();
 
 const title = "Division Resurgence Weapon Talents & Attachments Guide";
 const description = "Every weapon talent in Division Resurgence. Some of these will triple your DPS. Most will make you wonder what Ubisoft was thinking.";

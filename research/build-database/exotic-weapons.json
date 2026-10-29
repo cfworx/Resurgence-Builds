@@ -32,7 +32,27 @@
       ]
     },
     "evidence": "evidence/exotic-weapons/lady-death.webp",
-    "checked": "2026-10-28"
+    "checked": "2026-10-28",
+    "possibleTalents": [
+      "Precise Trauma",
+      "Backup Battery",
+      "Ammo Charge",
+      "Target Acquisition",
+      "In Sync",
+      "Steady Hands",
+      "Neverending",
+      "Blood for Blood",
+      "Still Alive",
+      "Multitasking",
+      "Tactical Reload",
+      "Fully Charged",
+      "Rapid Charge",
+      "Adaptation",
+      "Steady Handed",
+      "Performer",
+      "Sentinel Aura",
+      "Revitalize"
+    ]
   },
   {
     "name": "Warlord",
@@ -67,7 +87,27 @@
       ]
     },
     "evidence": "evidence/exotic-weapons/warlord.webp",
-    "checked": "2026-10-28"
+    "checked": "2026-10-28",
+    "possibleTalents": [
+      "Enhancement Trade",
+      "Ammo Charge",
+      "Precise Crit",
+      "In Sync",
+      "Strained",
+      "Proficient Reload",
+      "Neverending",
+      "Steady Suppression",
+      "Still Alive",
+      "Tactical Reload",
+      "Fully Charged",
+      "Rapid Charge",
+      "Steady Handed",
+      "Damage Trade",
+      "Ammo Supply",
+      "Misdirection Insurance",
+      "Take a Breath",
+      "Thick Skin"
+    ]
   },
   {
     "name": "Strawberry Milkshake",
@@ -102,7 +142,27 @@
       ]
     },
     "evidence": "evidence/exotic-weapons/strawberry-milkshake.webp",
-    "checked": "2026-10-28"
+    "checked": "2026-10-28",
+    "possibleTalents": [
+      "Enhancement Trade",
+      "Precise Trauma",
+      "In Sync",
+      "Concentrated Fire",
+      "Proficient Reload",
+      "Neverending",
+      "Blood for Blood",
+      "Steady Suppression",
+      "Spirited",
+      "Tactical Reload",
+      "Fully Charged",
+      "Adaptation",
+      "Steady Handed",
+      "Damage Trade",
+      "Calm and Collected",
+      "Swift Taunt",
+      "Take a Breath",
+      "Revitalize"
+    ]
   },
   {
     "name": "Scorpio",
@@ -137,7 +197,27 @@
       ]
     },
     "evidence": "evidence/exotic-weapons/scorpio.webp",
-    "checked": "2026-10-28"
+    "checked": "2026-10-28",
+    "possibleTalents": [
+      "Enhancement Trade",
+      "Precise Trauma",
+      "Spec-Ops",
+      "In Sync",
+      "Breadbasket",
+      "Steady Reload",
+      "Proficient Reload",
+      "Sadistic Shield",
+      "Spirited",
+      "Tactical Reload",
+      "Fully Charged",
+      "Adaptation",
+      "No Exit",
+      "Calm and Collected",
+      "Ammo Supply",
+      "Performer",
+      "Conceited",
+      "Sentinel Aura"
+    ]
   },
   {
     "name": "The Bighorn",
@@ -172,7 +252,27 @@
       ]
     },
     "evidence": "evidence/exotic-weapons/the-bighorn.webp",
-    "checked": "2026-10-28"
+    "checked": "2026-10-28",
+    "possibleTalents": [
+      "Multi-Pronged Attack",
+      "Precise Trauma",
+      "Swift Aim",
+      "Target Acquisition",
+      "Steady Aim",
+      "Neverending",
+      "Fast Hands",
+      "Blood for Blood",
+      "Slaughter Healing",
+      "Adaptation",
+      "Steady Handed",
+      "Damage Trade",
+      "Surgical",
+      "Calm and Collected",
+      "Ammo Supply",
+      "Take a Breath",
+      "Slaughter Fortitude",
+      "Revitalize"
+    ]
   },
   {
     "name": "Diamondback",
@@ -207,6 +307,26 @@
       ]
     },
     "evidence": "evidence/exotic-weapons/diamondback.webp",
-    "checked": "2026-10-28"
+    "checked": "2026-10-28",
+    "possibleTalents": [
+      "Enhancement Trade",
+      "Swift Aim",
+      "Ammo Charge",
+      "Killer",
+      "Target Acquisition",
+      "In Sync",
+      "Proficient Reload",
+      "Fast Hands",
+      "Still Alive",
+      "Tactical Reload",
+      "Fully Charged",
+      "Long-Distance Marking",
+      "Damage Trade",
+      "Death by Numbers",
+      "Calm and Collected",
+      "Take a Breath",
+      "Slaughter Fortitude",
+      "Thick Skin"
+    ]
   }
 ]
