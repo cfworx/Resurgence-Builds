@@ -7,7 +7,7 @@ pve: true
 pvp: true
 lastUpdated: 2026-10-28T00:00:00Z
 patch: "1.1.2.2"
-tags: ["Breacher", "Shield", "Fury Strike", "Phalanx Attack", "Lightweight M4", "Vector 45 ACP", "Saiynergy", "ATLAS Division", "Bulwark", "Death From Afar"]
+tags: ["Breacher", "Shield", "Fury Strike", "Phalanx Attack", "Lightweight M4", "First Wave Vector 45 ACP", "Saiynergy", "ATLAS Division", "Bulwark", "Death From Afar"]
 description: "Saiynergy's Bulwark Breacher build: 334k DPS, 4pc Fury Strike, Phalanx Shield, Death From Afar OS. Full gear, talents, weapons, and loot routes."
 author: "RapidF5 (via Saiynergy)"
 featuredImage: "/images/builds/bulwark-breacher-build-saiynergy-hero.jpg"

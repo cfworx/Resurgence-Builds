@@ -77,6 +77,9 @@ formulas) is built by `tools/make_workbook.py OUT.xlsx`.
 - `gear-cards.json`: the gear cards opened from Source lists (each card shows the piece's name): 46 read by text recognition
   in `2026-10-29_11-33-53`, 14 by eye in `Screen_Recording_20261029_131044`. They confirm the position naming and name the
   extra tiles.
+- `weapon-cards.json`: the four standard weapon cards opened from Source lists (ACE 52, Military MK46, M12, Tavor TS12), with
+  the RPM and magazine size each card shows. The database shows those two stats only on a weapon's card, so the other
+  standard weapons' magazines aren't recorded yet.
 - `recordings.json`: the source recordings (file name, date, length, resolution, what each one covers).
 - `evidence/`: one image per entry, stitched from the recording so the whole scrolled card is in one picture. These are the
   proof for every value in the JSON and CSV files.

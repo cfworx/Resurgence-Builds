@@ -1,0 +1,43 @@
+{
+ "_about": "Weapon cards opened from the weapon talent Source lists (tap a tile, the card pops up over the list). The Build-Making Database shows each standard weapon's RPM and magazine only on these cards; these four are the ones opened in our recordings so far. Values exactly as the card shows them.",
+ "checked": "2026-10-29",
+ "recording": "c660e53d-2026-10-29_10-26-29.mp4",
+ "cards": [
+  {
+   "name": "ACE 52",
+   "siteId": "sw-88",
+   "class": "Rifle",
+   "armoryTier": "T2",
+   "rpm": 220,
+   "magazine": 25,
+   "seconds": 3.0
+  },
+  {
+   "name": "Military MK46",
+   "siteId": "sw-63",
+   "class": "LMG",
+   "armoryTier": "T2",
+   "rpm": 550,
+   "magazine": 100,
+   "seconds": 34.5
+  },
+  {
+   "name": "M12",
+   "siteId": "sw-69",
+   "class": "Shotgun",
+   "armoryTier": "T2",
+   "rpm": 180,
+   "magazine": 8,
+   "seconds": 56.5
+  },
+  {
+   "name": "Tavor TS12",
+   "siteId": "sw-66",
+   "class": "Shotgun",
+   "armoryTier": "T1",
+   "rpm": 90,
+   "magazine": 5,
+   "seconds": 60.5
+  }
+ ]
+}

@@ -827,5 +827,57 @@
   "bar": false,
   "title": "Super Spreader",
   "subtitle": "Field Grenadier build"
+ },
+ {
+  "out": "research/screenshots/masters/builds/division-resurgence-malpractice-no-heal-field-medic-clinic.webp",
+  "video": "2026-10-29_10-06-44.mp4",
+  "t": 103.5,
+  "crop": [
+   300,
+   150,
+   2080
+  ],
+  "title": "Malpractice",
+  "subtitle": "No-heal Field Medic build",
+  "align": "right"
+ },
+ {
+  "out": "research/screenshots/masters/builds/division-resurgence-perpetual-motion-bulwark-firefight.webp",
+  "video": "2026-10-29_09-55-56.mp4",
+  "t": 86.3,
+  "crop": [
+   440,
+   150,
+   2080
+  ],
+  "title": "Perpetual Motion",
+  "subtitle": "Bulwark Breacher build",
+  "align": "right",
+  "clear": [
+   [
+    1620,
+    945,
+    1645,
+    1055
+   ],
+   [
+    1100,
+    880,
+    1215,
+    1035
+   ],
+   [
+    1660,
+    990,
+    1800,
+    1060
+   ],
+   [
+    2395,
+    1095,
+    2525,
+    1240
+   ]
+  ]
  }
 ]
