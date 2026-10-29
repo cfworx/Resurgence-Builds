@@ -191,1128 +191,6 @@
    ]
   }
  },
- "os-protocols/ambusher": {
-  "card": {
-   "src": "/images/db/os-protocols/ambusher-os-protocol-card-division-resurgence-v2-558.webp",
-   "width": 558,
-   "height": 748,
-   "srcset": [
-    [
-     290,
-     "/images/db/os-protocols/ambusher-os-protocol-card-division-resurgence-v2-290.webp"
-    ],
-    [
-     558,
-     "/images/db/os-protocols/ambusher-os-protocol-card-division-resurgence-v2-558.webp"
-    ]
-   ]
-  }
- },
- "os-protocols/applied-demolition": {
-  "card": {
-   "src": "/images/db/os-protocols/applied-demolition-os-protocol-card-division-resurgence-v2-558.webp",
-   "width": 558,
-   "height": 746,
-   "srcset": [
-    [
-     290,
-     "/images/db/os-protocols/applied-demolition-os-protocol-card-division-resurgence-v2-290.webp"
-    ],
-    [
-     558,
-     "/images/db/os-protocols/applied-demolition-os-protocol-card-division-resurgence-v2-558.webp"
-    ]
-   ]
-  }
- },
- "os-protocols/assault-charge": {
-  "card": {
-   "src": "/images/db/os-protocols/assault-charge-os-protocol-card-division-resurgence-v2-558.webp",
-   "width": 558,
-   "height": 789,
-   "srcset": [
-    [
-     290,
-     "/images/db/os-protocols/assault-charge-os-protocol-card-division-resurgence-v2-290.webp"
-    ],
-    [
-     558,
-     "/images/db/os-protocols/assault-charge-os-protocol-card-division-resurgence-v2-558.webp"
-    ]
-   ]
-  }
- },
- "os-protocols/assisted-infantry": {
-  "card": {
-   "src": "/images/db/os-protocols/assisted-infantry-os-protocol-card-division-resurgence-v2-558.webp",
-   "width": 558,
-   "height": 773,
-   "srcset": [
-    [
-     290,
-     "/images/db/os-protocols/assisted-infantry-os-protocol-card-division-resurgence-v2-290.webp"
-    ],
-    [
-     558,
-     "/images/db/os-protocols/assisted-infantry-os-protocol-card-division-resurgence-v2-558.webp"
-    ]
-   ]
-  }
- },
- "os-protocols/augmented-lethality": {
-  "card": {
-   "src": "/images/db/os-protocols/augmented-lethality-os-protocol-card-division-resurgence-v2-558.webp",
-   "width": 558,
-   "height": 755,
-   "srcset": [
-    [
-     290,
-     "/images/db/os-protocols/augmented-lethality-os-protocol-card-division-resurgence-v2-290.webp"
-    ],
-    [
-     558,
-     "/images/db/os-protocols/augmented-lethality-os-protocol-card-division-resurgence-v2-558.webp"
-    ]
-   ]
-  }
- },
- "os-protocols/blitz-tactics": {
-  "card": {
-   "src": "/images/db/os-protocols/blitz-tactics-os-protocol-card-division-resurgence-v2-558.webp",
-   "width": 558,
-   "height": 853,
-   "srcset": [
-    [
-     290,
-     "/images/db/os-protocols/blitz-tactics-os-protocol-card-division-resurgence-v2-290.webp"
-    ],
-    [
-     558,
-     "/images/db/os-protocols/blitz-tactics-os-protocol-card-division-resurgence-v2-558.webp"
-    ]
-   ]
-  }
- },
- "os-protocols/brains-over-brawn": {
-  "card": {
-   "src": "/images/db/os-protocols/brains-over-brawn-os-protocol-card-division-resurgence-v2-558.webp",
-   "width": 558,
-   "height": 754,
-   "srcset": [
-    [
-     290,
-     "/images/db/os-protocols/brains-over-brawn-os-protocol-card-division-resurgence-v2-290.webp"
-    ],
-    [
-     558,
-     "/images/db/os-protocols/brains-over-brawn-os-protocol-card-division-resurgence-v2-558.webp"
-    ]
-   ]
-  }
- },
- "os-protocols/caretaker": {
-  "card": {
-   "src": "/images/db/os-protocols/caretaker-os-protocol-card-division-resurgence-v2-558.webp",
-   "width": 558,
-   "height": 714,
-   "srcset": [
-    [
-     290,
-     "/images/db/os-protocols/caretaker-os-protocol-card-division-resurgence-v2-290.webp"
-    ],
-    [
-     558,
-     "/images/db/os-protocols/caretaker-os-protocol-card-division-resurgence-v2-558.webp"
-    ]
-   ]
-  }
- },
- "os-protocols/chain-reaction": {
-  "card": {
-   "src": "/images/db/os-protocols/chain-reaction-os-protocol-card-division-resurgence-v2-558.webp",
-   "width": 558,
-   "height": 776,
-   "srcset": [
-    [
-     290,
-     "/images/db/os-protocols/chain-reaction-os-protocol-card-division-resurgence-v2-290.webp"
-    ],
-    [
-     558,
-     "/images/db/os-protocols/chain-reaction-os-protocol-card-division-resurgence-v2-558.webp"
-    ]
-   ]
-  }
- },
- "os-protocols/chase-the-weak": {
-  "card": {
-   "src": "/images/db/os-protocols/chase-the-weak-os-protocol-card-division-resurgence-v2-558.webp",
-   "width": 558,
-   "height": 758,
-   "srcset": [
-    [
-     290,
-     "/images/db/os-protocols/chase-the-weak-os-protocol-card-division-resurgence-v2-290.webp"
-    ],
-    [
-     558,
-     "/images/db/os-protocols/chase-the-weak-os-protocol-card-division-resurgence-v2-558.webp"
-    ]
-   ]
-  }
- },
- "os-protocols/close-and-personal": {
-  "card": {
-   "src": "/images/db/os-protocols/close-and-personal-os-protocol-card-division-resurgence-v2-558.webp",
-   "width": 558,
-   "height": 813,
-   "srcset": [
-    [
-     290,
-     "/images/db/os-protocols/close-and-personal-os-protocol-card-division-resurgence-v2-290.webp"
-    ],
-    [
-     558,
-     "/images/db/os-protocols/close-and-personal-os-protocol-card-division-resurgence-v2-558.webp"
-    ]
-   ]
-  }
- },
- "os-protocols/close-quarters-menace": {
-  "card": {
-   "src": "/images/db/os-protocols/close-quarters-menace-os-protocol-card-division-resurgence-v2-558.webp",
-   "width": 558,
-   "height": 808,
-   "srcset": [
-    [
-     290,
-     "/images/db/os-protocols/close-quarters-menace-os-protocol-card-division-resurgence-v2-290.webp"
-    ],
-    [
-     558,
-     "/images/db/os-protocols/close-quarters-menace-os-protocol-card-division-resurgence-v2-558.webp"
-    ]
-   ]
-  }
- },
- "os-protocols/collateral-damage": {
-  "card": {
-   "src": "/images/db/os-protocols/collateral-damage-os-protocol-card-division-resurgence-v2-558.webp",
-   "width": 558,
-   "height": 875,
-   "srcset": [
-    [
-     290,
-     "/images/db/os-protocols/collateral-damage-os-protocol-card-division-resurgence-v2-290.webp"
-    ],
-    [
-     558,
-     "/images/db/os-protocols/collateral-damage-os-protocol-card-division-resurgence-v2-558.webp"
-    ]
-   ]
-  }
- },
- "os-protocols/combat-doc": {
-  "card": {
-   "src": "/images/db/os-protocols/combat-doc-os-protocol-card-division-resurgence-v2-558.webp",
-   "width": 558,
-   "height": 735,
-   "srcset": [
-    [
-     290,
-     "/images/db/os-protocols/combat-doc-os-protocol-card-division-resurgence-v2-290.webp"
-    ],
-    [
-     558,
-     "/images/db/os-protocols/combat-doc-os-protocol-card-division-resurgence-v2-558.webp"
-    ]
-   ]
-  }
- },
- "os-protocols/combat-reload": {
-  "card": {
-   "src": "/images/db/os-protocols/combat-reload-os-protocol-card-division-resurgence-v2-558.webp",
-   "width": 558,
-   "height": 752,
-   "srcset": [
-    [
-     290,
-     "/images/db/os-protocols/combat-reload-os-protocol-card-division-resurgence-v2-290.webp"
-    ],
-    [
-     558,
-     "/images/db/os-protocols/combat-reload-os-protocol-card-division-resurgence-v2-558.webp"
-    ]
-   ]
-  }
- },
- "os-protocols/concerted-strike": {
-  "card": {
-   "src": "/images/db/os-protocols/concerted-strike-os-protocol-card-division-resurgence-v2-558.webp",
-   "width": 558,
-   "height": 832,
-   "srcset": [
-    [
-     290,
-     "/images/db/os-protocols/concerted-strike-os-protocol-card-division-resurgence-v2-290.webp"
-    ],
-    [
-     558,
-     "/images/db/os-protocols/concerted-strike-os-protocol-card-division-resurgence-v2-558.webp"
-    ]
-   ]
-  }
- },
- "os-protocols/cornered-animal": {
-  "card": {
-   "src": "/images/db/os-protocols/cornered-animal-os-protocol-card-division-resurgence-v2-558.webp",
-   "width": 558,
-   "height": 885,
-   "srcset": [
-    [
-     290,
-     "/images/db/os-protocols/cornered-animal-os-protocol-card-division-resurgence-v2-290.webp"
-    ],
-    [
-     558,
-     "/images/db/os-protocols/cornered-animal-os-protocol-card-division-resurgence-v2-558.webp"
-    ]
-   ]
-  }
- },
- "os-protocols/cover-shooter": {
-  "card": {
-   "src": "/images/db/os-protocols/cover-shooter-os-protocol-card-division-resurgence-v2-558.webp",
-   "width": 558,
-   "height": 835,
-   "srcset": [
-    [
-     290,
-     "/images/db/os-protocols/cover-shooter-os-protocol-card-division-resurgence-v2-290.webp"
-    ],
-    [
-     558,
-     "/images/db/os-protocols/cover-shooter-os-protocol-card-division-resurgence-v2-558.webp"
-    ]
-   ]
-  }
- },
- "os-protocols/deadly-accuracy": {
-  "card": {
-   "src": "/images/db/os-protocols/deadly-accuracy-os-protocol-card-division-resurgence-v2-558.webp",
-   "width": 558,
-   "height": 772,
-   "srcset": [
-    [
-     290,
-     "/images/db/os-protocols/deadly-accuracy-os-protocol-card-division-resurgence-v2-290.webp"
-    ],
-    [
-     558,
-     "/images/db/os-protocols/deadly-accuracy-os-protocol-card-division-resurgence-v2-558.webp"
-    ]
-   ]
-  }
- },
- "os-protocols/death-from-afar": {
-  "card": {
-   "src": "/images/db/os-protocols/death-from-afar-os-protocol-card-division-resurgence-v2-558.webp",
-   "width": 558,
-   "height": 714,
-   "srcset": [
-    [
-     290,
-     "/images/db/os-protocols/death-from-afar-os-protocol-card-division-resurgence-v2-290.webp"
-    ],
-    [
-     558,
-     "/images/db/os-protocols/death-from-afar-os-protocol-card-division-resurgence-v2-558.webp"
-    ]
-   ]
-  }
- },
- "os-protocols/dominating-presence": {
-  "card": {
-   "src": "/images/db/os-protocols/dominating-presence-os-protocol-card-division-resurgence-v2-558.webp",
-   "width": 558,
-   "height": 772,
-   "srcset": [
-    [
-     290,
-     "/images/db/os-protocols/dominating-presence-os-protocol-card-division-resurgence-v2-290.webp"
-    ],
-    [
-     558,
-     "/images/db/os-protocols/dominating-presence-os-protocol-card-division-resurgence-v2-558.webp"
-    ]
-   ]
-  }
- },
- "os-protocols/enduring": {
-  "card": {
-   "src": "/images/db/os-protocols/enduring-os-protocol-card-division-resurgence-v2-558.webp",
-   "width": 558,
-   "height": 776,
-   "srcset": [
-    [
-     290,
-     "/images/db/os-protocols/enduring-os-protocol-card-division-resurgence-v2-290.webp"
-    ],
-    [
-     558,
-     "/images/db/os-protocols/enduring-os-protocol-card-division-resurgence-v2-558.webp"
-    ]
-   ]
-  }
- },
- "os-protocols/energizer": {
-  "card": {
-   "src": "/images/db/os-protocols/energizer-os-protocol-card-division-resurgence-v2-558.webp",
-   "width": 558,
-   "height": 722,
-   "srcset": [
-    [
-     290,
-     "/images/db/os-protocols/energizer-os-protocol-card-division-resurgence-v2-290.webp"
-    ],
-    [
-     558,
-     "/images/db/os-protocols/energizer-os-protocol-card-division-resurgence-v2-558.webp"
-    ]
-   ]
-  }
- },
- "os-protocols/explosive-charge": {
-  "card": {
-   "src": "/images/db/os-protocols/explosive-charge-os-protocol-card-division-resurgence-v2-558.webp",
-   "width": 558,
-   "height": 974,
-   "srcset": [
-    [
-     290,
-     "/images/db/os-protocols/explosive-charge-os-protocol-card-division-resurgence-v2-290.webp"
-    ],
-    [
-     558,
-     "/images/db/os-protocols/explosive-charge-os-protocol-card-division-resurgence-v2-558.webp"
-    ]
-   ]
-  }
- },
- "os-protocols/explosive-round": {
-  "card": {
-   "src": "/images/db/os-protocols/explosive-round-os-protocol-card-division-resurgence-v2-558.webp",
-   "width": 558,
-   "height": 916,
-   "srcset": [
-    [
-     290,
-     "/images/db/os-protocols/explosive-round-os-protocol-card-division-resurgence-v2-290.webp"
-    ],
-    [
-     558,
-     "/images/db/os-protocols/explosive-round-os-protocol-card-division-resurgence-v2-558.webp"
-    ]
-   ]
-  }
- },
- "os-protocols/face-to-face-advantage": {
-  "card": {
-   "src": "/images/db/os-protocols/face-to-face-advantage-os-protocol-card-division-resurgence-v2-558.webp",
-   "width": 558,
-   "height": 770,
-   "srcset": [
-    [
-     290,
-     "/images/db/os-protocols/face-to-face-advantage-os-protocol-card-division-resurgence-v2-290.webp"
-    ],
-    [
-     558,
-     "/images/db/os-protocols/face-to-face-advantage-os-protocol-card-division-resurgence-v2-558.webp"
-    ]
-   ]
-  }
- },
- "os-protocols/genius-engineer": {
-  "card": {
-   "src": "/images/db/os-protocols/genius-engineer-os-protocol-card-division-resurgence-v2-558.webp",
-   "width": 558,
-   "height": 788,
-   "srcset": [
-    [
-     290,
-     "/images/db/os-protocols/genius-engineer-os-protocol-card-division-resurgence-v2-290.webp"
-    ],
-    [
-     558,
-     "/images/db/os-protocols/genius-engineer-os-protocol-card-division-resurgence-v2-558.webp"
-    ]
-   ]
-  }
- },
- "os-protocols/happy-survival": {
-  "card": {
-   "src": "/images/db/os-protocols/happy-survival-os-protocol-card-division-resurgence-v2-558.webp",
-   "width": 558,
-   "height": 856,
-   "srcset": [
-    [
-     290,
-     "/images/db/os-protocols/happy-survival-os-protocol-card-division-resurgence-v2-290.webp"
-    ],
-    [
-     558,
-     "/images/db/os-protocols/happy-survival-os-protocol-card-division-resurgence-v2-558.webp"
-    ]
-   ]
-  }
- },
- "os-protocols/hardware-upgrade": {
-  "card": {
-   "src": "/images/db/os-protocols/hardware-upgrade-os-protocol-card-division-resurgence-v2-558.webp",
-   "width": 558,
-   "height": 692,
-   "srcset": [
-    [
-     290,
-     "/images/db/os-protocols/hardware-upgrade-os-protocol-card-division-resurgence-v2-290.webp"
-    ],
-    [
-     558,
-     "/images/db/os-protocols/hardware-upgrade-os-protocol-card-division-resurgence-v2-558.webp"
-    ]
-   ]
-  }
- },
- "os-protocols/heavy-armor": {
-  "card": {
-   "src": "/images/db/os-protocols/heavy-armor-os-protocol-card-division-resurgence-v2-558.webp",
-   "width": 558,
-   "height": 841,
-   "srcset": [
-    [
-     290,
-     "/images/db/os-protocols/heavy-armor-os-protocol-card-division-resurgence-v2-290.webp"
-    ],
-    [
-     558,
-     "/images/db/os-protocols/heavy-armor-os-protocol-card-division-resurgence-v2-558.webp"
-    ]
-   ]
-  }
- },
- "os-protocols/hermit": {
-  "card": {
-   "src": "/images/db/os-protocols/hermit-os-protocol-card-division-resurgence-v2-558.webp",
-   "width": 558,
-   "height": 741,
-   "srcset": [
-    [
-     290,
-     "/images/db/os-protocols/hermit-os-protocol-card-division-resurgence-v2-290.webp"
-    ],
-    [
-     558,
-     "/images/db/os-protocols/hermit-os-protocol-card-division-resurgence-v2-558.webp"
-    ]
-   ]
-  }
- },
- "os-protocols/hunting-season": {
-  "card": {
-   "src": "/images/db/os-protocols/hunting-season-os-protocol-card-division-resurgence-v2-558.webp",
-   "width": 558,
-   "height": 747,
-   "srcset": [
-    [
-     290,
-     "/images/db/os-protocols/hunting-season-os-protocol-card-division-resurgence-v2-290.webp"
-    ],
-    [
-     558,
-     "/images/db/os-protocols/hunting-season-os-protocol-card-division-resurgence-v2-558.webp"
-    ]
-   ]
-  }
- },
- "os-protocols/inspiration": {
-  "card": {
-   "src": "/images/db/os-protocols/inspiration-os-protocol-card-division-resurgence-v2-558.webp",
-   "width": 558,
-   "height": 746,
-   "srcset": [
-    [
-     290,
-     "/images/db/os-protocols/inspiration-os-protocol-card-division-resurgence-v2-290.webp"
-    ],
-    [
-     558,
-     "/images/db/os-protocols/inspiration-os-protocol-card-division-resurgence-v2-558.webp"
-    ]
-   ]
-  }
- },
- "os-protocols/last-resort": {
-  "card": {
-   "src": "/images/db/os-protocols/last-resort-os-protocol-card-division-resurgence-v2-558.webp",
-   "width": 558,
-   "height": 799,
-   "srcset": [
-    [
-     290,
-     "/images/db/os-protocols/last-resort-os-protocol-card-division-resurgence-v2-290.webp"
-    ],
-    [
-     558,
-     "/images/db/os-protocols/last-resort-os-protocol-card-division-resurgence-v2-558.webp"
-    ]
-   ]
-  }
- },
- "os-protocols/layered-defense": {
-  "card": {
-   "src": "/images/db/os-protocols/layered-defense-os-protocol-card-division-resurgence-v2-558.webp",
-   "width": 558,
-   "height": 766,
-   "srcset": [
-    [
-     290,
-     "/images/db/os-protocols/layered-defense-os-protocol-card-division-resurgence-v2-290.webp"
-    ],
-    [
-     558,
-     "/images/db/os-protocols/layered-defense-os-protocol-card-division-resurgence-v2-558.webp"
-    ]
-   ]
-  }
- },
- "os-protocols/level-headed": {
-  "card": {
-   "src": "/images/db/os-protocols/level-headed-os-protocol-card-division-resurgence-v2-558.webp",
-   "width": 558,
-   "height": 848,
-   "srcset": [
-    [
-     290,
-     "/images/db/os-protocols/level-headed-os-protocol-card-division-resurgence-v2-290.webp"
-    ],
-    [
-     558,
-     "/images/db/os-protocols/level-headed-os-protocol-card-division-resurgence-v2-558.webp"
-    ]
-   ]
-  }
- },
- "os-protocols/long-range-artillery": {
-  "card": {
-   "src": "/images/db/os-protocols/long-range-artillery-os-protocol-card-division-resurgence-v2-558.webp",
-   "width": 558,
-   "height": 882,
-   "srcset": [
-    [
-     290,
-     "/images/db/os-protocols/long-range-artillery-os-protocol-card-division-resurgence-v2-290.webp"
-    ],
-    [
-     558,
-     "/images/db/os-protocols/long-range-artillery-os-protocol-card-division-resurgence-v2-558.webp"
-    ]
-   ]
-  }
- },
- "os-protocols/mechanized-support": {
-  "card": {
-   "src": "/images/db/os-protocols/mechanized-support-os-protocol-card-division-resurgence-v2-558.webp",
-   "width": 558,
-   "height": 791,
-   "srcset": [
-    [
-     290,
-     "/images/db/os-protocols/mechanized-support-os-protocol-card-division-resurgence-v2-290.webp"
-    ],
-    [
-     558,
-     "/images/db/os-protocols/mechanized-support-os-protocol-card-division-resurgence-v2-558.webp"
-    ]
-   ]
-  }
- },
- "os-protocols/medical-excellence": {
-  "card": {
-   "src": "/images/db/os-protocols/medical-excellence-os-protocol-card-division-resurgence-v2-558.webp",
-   "width": 558,
-   "height": 1043,
-   "srcset": [
-    [
-     290,
-     "/images/db/os-protocols/medical-excellence-os-protocol-card-division-resurgence-v2-290.webp"
-    ],
-    [
-     558,
-     "/images/db/os-protocols/medical-excellence-os-protocol-card-division-resurgence-v2-558.webp"
-    ]
-   ]
-  }
- },
- "os-protocols/overclocking": {
-  "card": {
-   "src": "/images/db/os-protocols/overclocking-os-protocol-card-division-resurgence-v2-558.webp",
-   "width": 558,
-   "height": 753,
-   "srcset": [
-    [
-     290,
-     "/images/db/os-protocols/overclocking-os-protocol-card-division-resurgence-v2-290.webp"
-    ],
-    [
-     558,
-     "/images/db/os-protocols/overclocking-os-protocol-card-division-resurgence-v2-558.webp"
-    ]
-   ]
-  }
- },
- "os-protocols/overwhelming-power": {
-  "card": {
-   "src": "/images/db/os-protocols/overwhelming-power-os-protocol-card-division-resurgence-v2-558.webp",
-   "width": 558,
-   "height": 852,
-   "srcset": [
-    [
-     290,
-     "/images/db/os-protocols/overwhelming-power-os-protocol-card-division-resurgence-v2-290.webp"
-    ],
-    [
-     558,
-     "/images/db/os-protocols/overwhelming-power-os-protocol-card-division-resurgence-v2-558.webp"
-    ]
-   ]
-  }
- },
- "os-protocols/physical-training": {
-  "card": {
-   "src": "/images/db/os-protocols/physical-training-os-protocol-card-division-resurgence-v2-558.webp",
-   "width": 558,
-   "height": 774,
-   "srcset": [
-    [
-     290,
-     "/images/db/os-protocols/physical-training-os-protocol-card-division-resurgence-v2-290.webp"
-    ],
-    [
-     558,
-     "/images/db/os-protocols/physical-training-os-protocol-card-division-resurgence-v2-558.webp"
-    ]
-   ]
-  }
- },
- "os-protocols/plate-carrier": {
-  "card": {
-   "src": "/images/db/os-protocols/plate-carrier-os-protocol-card-division-resurgence-v2-558.webp",
-   "width": 558,
-   "height": 746,
-   "srcset": [
-    [
-     290,
-     "/images/db/os-protocols/plate-carrier-os-protocol-card-division-resurgence-v2-290.webp"
-    ],
-    [
-     558,
-     "/images/db/os-protocols/plate-carrier-os-protocol-card-division-resurgence-v2-558.webp"
-    ]
-   ]
-  }
- },
- "os-protocols/pressing-matter": {
-  "card": {
-   "src": "/images/db/os-protocols/pressing-matter-os-protocol-card-division-resurgence-v2-558.webp",
-   "width": 558,
-   "height": 748,
-   "srcset": [
-    [
-     290,
-     "/images/db/os-protocols/pressing-matter-os-protocol-card-division-resurgence-v2-290.webp"
-    ],
-    [
-     558,
-     "/images/db/os-protocols/pressing-matter-os-protocol-card-division-resurgence-v2-558.webp"
-    ]
-   ]
-  }
- },
- "os-protocols/pressure-cooker": {
-  "card": {
-   "src": "/images/db/os-protocols/pressure-cooker-os-protocol-card-division-resurgence-v2-558.webp",
-   "width": 558,
-   "height": 823,
-   "srcset": [
-    [
-     290,
-     "/images/db/os-protocols/pressure-cooker-os-protocol-card-division-resurgence-v2-290.webp"
-    ],
-    [
-     558,
-     "/images/db/os-protocols/pressure-cooker-os-protocol-card-division-resurgence-v2-558.webp"
-    ]
-   ]
-  }
- },
- "os-protocols/pummeling-shield": {
-  "card": {
-   "src": "/images/db/os-protocols/pummeling-shield-os-protocol-card-division-resurgence-v2-558.webp",
-   "width": 558,
-   "height": 889,
-   "srcset": [
-    [
-     290,
-     "/images/db/os-protocols/pummeling-shield-os-protocol-card-division-resurgence-v2-290.webp"
-    ],
-    [
-     558,
-     "/images/db/os-protocols/pummeling-shield-os-protocol-card-division-resurgence-v2-558.webp"
-    ]
-   ]
-  }
- },
- "os-protocols/rampart": {
-  "card": {
-   "src": "/images/db/os-protocols/rampart-os-protocol-card-division-resurgence-v2-558.webp",
-   "width": 558,
-   "height": 832,
-   "srcset": [
-    [
-     290,
-     "/images/db/os-protocols/rampart-os-protocol-card-division-resurgence-v2-290.webp"
-    ],
-    [
-     558,
-     "/images/db/os-protocols/rampart-os-protocol-card-division-resurgence-v2-558.webp"
-    ]
-   ]
-  }
- },
- "os-protocols/recursive-treatment": {
-  "card": {
-   "src": "/images/db/os-protocols/recursive-treatment-os-protocol-card-division-resurgence-v2-558.webp",
-   "width": 558,
-   "height": 782,
-   "srcset": [
-    [
-     290,
-     "/images/db/os-protocols/recursive-treatment-os-protocol-card-division-resurgence-v2-290.webp"
-    ],
-    [
-     558,
-     "/images/db/os-protocols/recursive-treatment-os-protocol-card-division-resurgence-v2-558.webp"
-    ]
-   ]
-  }
- },
- "os-protocols/relentless-assault": {
-  "card": {
-   "src": "/images/db/os-protocols/relentless-assault-os-protocol-card-division-resurgence-v2-558.webp",
-   "width": 558,
-   "height": 823,
-   "srcset": [
-    [
-     290,
-     "/images/db/os-protocols/relentless-assault-os-protocol-card-division-resurgence-v2-290.webp"
-    ],
-    [
-     558,
-     "/images/db/os-protocols/relentless-assault-os-protocol-card-division-resurgence-v2-558.webp"
-    ]
-   ]
-  }
- },
- "os-protocols/resentful": {
-  "card": {
-   "src": "/images/db/os-protocols/resentful-os-protocol-card-division-resurgence-v2-558.webp",
-   "width": 558,
-   "height": 836,
-   "srcset": [
-    [
-     290,
-     "/images/db/os-protocols/resentful-os-protocol-card-division-resurgence-v2-290.webp"
-    ],
-    [
-     558,
-     "/images/db/os-protocols/resentful-os-protocol-card-division-resurgence-v2-558.webp"
-    ]
-   ]
-  }
- },
- "os-protocols/rocket-science": {
-  "card": {
-   "src": "/images/db/os-protocols/rocket-science-os-protocol-card-division-resurgence-v2-558.webp",
-   "width": 558,
-   "height": 727,
-   "srcset": [
-    [
-     290,
-     "/images/db/os-protocols/rocket-science-os-protocol-card-division-resurgence-v2-290.webp"
-    ],
-    [
-     558,
-     "/images/db/os-protocols/rocket-science-os-protocol-card-division-resurgence-v2-558.webp"
-    ]
-   ]
-  }
- },
- "os-protocols/running-around": {
-  "card": {
-   "src": "/images/db/os-protocols/running-around-os-protocol-card-division-resurgence-v2-558.webp",
-   "width": 558,
-   "height": 740,
-   "srcset": [
-    [
-     290,
-     "/images/db/os-protocols/running-around-os-protocol-card-division-resurgence-v2-290.webp"
-    ],
-    [
-     558,
-     "/images/db/os-protocols/running-around-os-protocol-card-division-resurgence-v2-558.webp"
-    ]
-   ]
-  }
- },
- "os-protocols/seasoned-veteran": {
-  "card": {
-   "src": "/images/db/os-protocols/seasoned-veteran-os-protocol-card-division-resurgence-v2-558.webp",
-   "width": 558,
-   "height": 736,
-   "srcset": [
-    [
-     290,
-     "/images/db/os-protocols/seasoned-veteran-os-protocol-card-division-resurgence-v2-290.webp"
-    ],
-    [
-     558,
-     "/images/db/os-protocols/seasoned-veteran-os-protocol-card-division-resurgence-v2-558.webp"
-    ]
-   ]
-  }
- },
- "os-protocols/side-by-side": {
-  "card": {
-   "src": "/images/db/os-protocols/side-by-side-os-protocol-card-division-resurgence-v2-558.webp",
-   "width": 558,
-   "height": 775,
-   "srcset": [
-    [
-     290,
-     "/images/db/os-protocols/side-by-side-os-protocol-card-division-resurgence-v2-290.webp"
-    ],
-    [
-     558,
-     "/images/db/os-protocols/side-by-side-os-protocol-card-division-resurgence-v2-558.webp"
-    ]
-   ]
-  }
- },
- "os-protocols/spray-n-pray": {
-  "card": {
-   "src": "/images/db/os-protocols/spray-n-pray-os-protocol-card-division-resurgence-v2-558.webp",
-   "width": 558,
-   "height": 751,
-   "srcset": [
-    [
-     290,
-     "/images/db/os-protocols/spray-n-pray-os-protocol-card-division-resurgence-v2-290.webp"
-    ],
-    [
-     558,
-     "/images/db/os-protocols/spray-n-pray-os-protocol-card-division-resurgence-v2-558.webp"
-    ]
-   ]
-  }
- },
- "os-protocols/steadfast": {
-  "card": {
-   "src": "/images/db/os-protocols/steadfast-os-protocol-card-division-resurgence-v2-558.webp",
-   "width": 558,
-   "height": 745,
-   "srcset": [
-    [
-     290,
-     "/images/db/os-protocols/steadfast-os-protocol-card-division-resurgence-v2-290.webp"
-    ],
-    [
-     558,
-     "/images/db/os-protocols/steadfast-os-protocol-card-division-resurgence-v2-558.webp"
-    ]
-   ]
-  }
- },
- "os-protocols/strategic-assistance": {
-  "card": {
-   "src": "/images/db/os-protocols/strategic-assistance-os-protocol-card-division-resurgence-v2-558.webp",
-   "width": 558,
-   "height": 826,
-   "srcset": [
-    [
-     290,
-     "/images/db/os-protocols/strategic-assistance-os-protocol-card-division-resurgence-v2-290.webp"
-    ],
-    [
-     558,
-     "/images/db/os-protocols/strategic-assistance-os-protocol-card-division-resurgence-v2-558.webp"
-    ]
-   ]
-  }
- },
- "os-protocols/suppressive-fire": {
-  "card": {
-   "src": "/images/db/os-protocols/suppressive-fire-os-protocol-card-division-resurgence-v2-558.webp",
-   "width": 558,
-   "height": 778,
-   "srcset": [
-    [
-     290,
-     "/images/db/os-protocols/suppressive-fire-os-protocol-card-division-resurgence-v2-290.webp"
-    ],
-    [
-     558,
-     "/images/db/os-protocols/suppressive-fire-os-protocol-card-division-resurgence-v2-558.webp"
-    ]
-   ]
-  }
- },
- "os-protocols/surgical-engineering": {
-  "card": {
-   "src": "/images/db/os-protocols/surgical-engineering-os-protocol-card-division-resurgence-v2-558.webp",
-   "width": 558,
-   "height": 815,
-   "srcset": [
-    [
-     290,
-     "/images/db/os-protocols/surgical-engineering-os-protocol-card-division-resurgence-v2-290.webp"
-    ],
-    [
-     558,
-     "/images/db/os-protocols/surgical-engineering-os-protocol-card-division-resurgence-v2-558.webp"
-    ]
-   ]
-  }
- },
- "os-protocols/tactical-layering": {
-  "card": {
-   "src": "/images/db/os-protocols/tactical-layering-os-protocol-card-division-resurgence-v2-558.webp",
-   "width": 558,
-   "height": 822,
-   "srcset": [
-    [
-     290,
-     "/images/db/os-protocols/tactical-layering-os-protocol-card-division-resurgence-v2-290.webp"
-    ],
-    [
-     558,
-     "/images/db/os-protocols/tactical-layering-os-protocol-card-division-resurgence-v2-558.webp"
-    ]
-   ]
-  }
- },
- "os-protocols/tactical-persistence": {
-  "card": {
-   "src": "/images/db/os-protocols/tactical-persistence-os-protocol-card-division-resurgence-v2-558.webp",
-   "width": 558,
-   "height": 792,
-   "srcset": [
-    [
-     290,
-     "/images/db/os-protocols/tactical-persistence-os-protocol-card-division-resurgence-v2-290.webp"
-    ],
-    [
-     558,
-     "/images/db/os-protocols/tactical-persistence-os-protocol-card-division-resurgence-v2-558.webp"
-    ]
-   ]
-  }
- },
- "os-protocols/tactical-pistolero": {
-  "card": {
-   "src": "/images/db/os-protocols/tactical-pistolero-os-protocol-card-division-resurgence-v2-558.webp",
-   "width": 558,
-   "height": 786,
-   "srcset": [
-    [
-     290,
-     "/images/db/os-protocols/tactical-pistolero-os-protocol-card-division-resurgence-v2-290.webp"
-    ],
-    [
-     558,
-     "/images/db/os-protocols/tactical-pistolero-os-protocol-card-division-resurgence-v2-558.webp"
-    ]
-   ]
-  }
- },
- "os-protocols/tight-grouping": {
-  "card": {
-   "src": "/images/db/os-protocols/tight-grouping-os-protocol-card-division-resurgence-v2-558.webp",
-   "width": 558,
-   "height": 758,
-   "srcset": [
-    [
-     290,
-     "/images/db/os-protocols/tight-grouping-os-protocol-card-division-resurgence-v2-290.webp"
-    ],
-    [
-     558,
-     "/images/db/os-protocols/tight-grouping-os-protocol-card-division-resurgence-v2-558.webp"
-    ]
-   ]
-  }
- },
- "os-protocols/together-we-stand": {
-  "card": {
-   "src": "/images/db/os-protocols/together-we-stand-os-protocol-card-division-resurgence-v2-558.webp",
-   "width": 558,
-   "height": 778,
-   "srcset": [
-    [
-     290,
-     "/images/db/os-protocols/together-we-stand-os-protocol-card-division-resurgence-v2-290.webp"
-    ],
-    [
-     558,
-     "/images/db/os-protocols/together-we-stand-os-protocol-card-division-resurgence-v2-558.webp"
-    ]
-   ]
-  }
- },
- "os-protocols/trench-fighter": {
-  "card": {
-   "src": "/images/db/os-protocols/trench-fighter-os-protocol-card-division-resurgence-v2-558.webp",
-   "width": 558,
-   "height": 781,
-   "srcset": [
-    [
-     290,
-     "/images/db/os-protocols/trench-fighter-os-protocol-card-division-resurgence-v2-290.webp"
-    ],
-    [
-     558,
-     "/images/db/os-protocols/trench-fighter-os-protocol-card-division-resurgence-v2-558.webp"
-    ]
-   ]
-  }
- },
- "os-protocols/war-machine": {
-  "card": {
-   "src": "/images/db/os-protocols/war-machine-os-protocol-card-division-resurgence-v2-558.webp",
-   "width": 558,
-   "height": 766,
-   "srcset": [
-    [
-     290,
-     "/images/db/os-protocols/war-machine-os-protocol-card-division-resurgence-v2-290.webp"
-    ],
-    [
-     558,
-     "/images/db/os-protocols/war-machine-os-protocol-card-division-resurgence-v2-558.webp"
-    ]
-   ]
-  }
- },
  "gear-set-effects/boom-shakalaka": {
   "card": {
    "src": "/images/db/gear-set-effects/boom-shakalaka-gear-set-division-resurgence-v2-1287.webp",
@@ -5701,5 +4579,1127 @@
    "Modified USC",
    "MP7"
   ]
+ },
+ "os-protocols/ambusher": {
+  "card": {
+   "src": "/images/db/os-protocols/ambusher-os-protocol-card-division-resurgence-v3-558.webp",
+   "width": 558,
+   "height": 748,
+   "srcset": [
+    [
+     290,
+     "/images/db/os-protocols/ambusher-os-protocol-card-division-resurgence-v3-290.webp"
+    ],
+    [
+     558,
+     "/images/db/os-protocols/ambusher-os-protocol-card-division-resurgence-v3-558.webp"
+    ]
+   ]
+  }
+ },
+ "os-protocols/applied-demolition": {
+  "card": {
+   "src": "/images/db/os-protocols/applied-demolition-os-protocol-card-division-resurgence-v3-558.webp",
+   "width": 558,
+   "height": 747,
+   "srcset": [
+    [
+     290,
+     "/images/db/os-protocols/applied-demolition-os-protocol-card-division-resurgence-v3-290.webp"
+    ],
+    [
+     558,
+     "/images/db/os-protocols/applied-demolition-os-protocol-card-division-resurgence-v3-558.webp"
+    ]
+   ]
+  }
+ },
+ "os-protocols/assault-charge": {
+  "card": {
+   "src": "/images/db/os-protocols/assault-charge-os-protocol-card-division-resurgence-v3-558.webp",
+   "width": 558,
+   "height": 790,
+   "srcset": [
+    [
+     290,
+     "/images/db/os-protocols/assault-charge-os-protocol-card-division-resurgence-v3-290.webp"
+    ],
+    [
+     558,
+     "/images/db/os-protocols/assault-charge-os-protocol-card-division-resurgence-v3-558.webp"
+    ]
+   ]
+  }
+ },
+ "os-protocols/assisted-infantry": {
+  "card": {
+   "src": "/images/db/os-protocols/assisted-infantry-os-protocol-card-division-resurgence-v3-558.webp",
+   "width": 558,
+   "height": 794,
+   "srcset": [
+    [
+     290,
+     "/images/db/os-protocols/assisted-infantry-os-protocol-card-division-resurgence-v3-290.webp"
+    ],
+    [
+     558,
+     "/images/db/os-protocols/assisted-infantry-os-protocol-card-division-resurgence-v3-558.webp"
+    ]
+   ]
+  }
+ },
+ "os-protocols/augmented-lethality": {
+  "card": {
+   "src": "/images/db/os-protocols/augmented-lethality-os-protocol-card-division-resurgence-v3-558.webp",
+   "width": 558,
+   "height": 822,
+   "srcset": [
+    [
+     290,
+     "/images/db/os-protocols/augmented-lethality-os-protocol-card-division-resurgence-v3-290.webp"
+    ],
+    [
+     558,
+     "/images/db/os-protocols/augmented-lethality-os-protocol-card-division-resurgence-v3-558.webp"
+    ]
+   ]
+  }
+ },
+ "os-protocols/blitz-tactics": {
+  "card": {
+   "src": "/images/db/os-protocols/blitz-tactics-os-protocol-card-division-resurgence-v3-558.webp",
+   "width": 558,
+   "height": 887,
+   "srcset": [
+    [
+     290,
+     "/images/db/os-protocols/blitz-tactics-os-protocol-card-division-resurgence-v3-290.webp"
+    ],
+    [
+     558,
+     "/images/db/os-protocols/blitz-tactics-os-protocol-card-division-resurgence-v3-558.webp"
+    ]
+   ]
+  }
+ },
+ "os-protocols/brains-over-brawn": {
+  "card": {
+   "src": "/images/db/os-protocols/brains-over-brawn-os-protocol-card-division-resurgence-v3-558.webp",
+   "width": 558,
+   "height": 755,
+   "srcset": [
+    [
+     290,
+     "/images/db/os-protocols/brains-over-brawn-os-protocol-card-division-resurgence-v3-290.webp"
+    ],
+    [
+     558,
+     "/images/db/os-protocols/brains-over-brawn-os-protocol-card-division-resurgence-v3-558.webp"
+    ]
+   ]
+  }
+ },
+ "os-protocols/caretaker": {
+  "card": {
+   "src": "/images/db/os-protocols/caretaker-os-protocol-card-division-resurgence-v3-558.webp",
+   "width": 558,
+   "height": 754,
+   "srcset": [
+    [
+     290,
+     "/images/db/os-protocols/caretaker-os-protocol-card-division-resurgence-v3-290.webp"
+    ],
+    [
+     558,
+     "/images/db/os-protocols/caretaker-os-protocol-card-division-resurgence-v3-558.webp"
+    ]
+   ]
+  }
+ },
+ "os-protocols/chain-reaction": {
+  "card": {
+   "src": "/images/db/os-protocols/chain-reaction-os-protocol-card-division-resurgence-v3-558.webp",
+   "width": 558,
+   "height": 787,
+   "srcset": [
+    [
+     290,
+     "/images/db/os-protocols/chain-reaction-os-protocol-card-division-resurgence-v3-290.webp"
+    ],
+    [
+     558,
+     "/images/db/os-protocols/chain-reaction-os-protocol-card-division-resurgence-v3-558.webp"
+    ]
+   ]
+  }
+ },
+ "os-protocols/chase-the-weak": {
+  "card": {
+   "src": "/images/db/os-protocols/chase-the-weak-os-protocol-card-division-resurgence-v3-558.webp",
+   "width": 558,
+   "height": 843,
+   "srcset": [
+    [
+     290,
+     "/images/db/os-protocols/chase-the-weak-os-protocol-card-division-resurgence-v3-290.webp"
+    ],
+    [
+     558,
+     "/images/db/os-protocols/chase-the-weak-os-protocol-card-division-resurgence-v3-558.webp"
+    ]
+   ]
+  }
+ },
+ "os-protocols/close-and-personal": {
+  "card": {
+   "src": "/images/db/os-protocols/close-and-personal-os-protocol-card-division-resurgence-v3-558.webp",
+   "width": 558,
+   "height": 813,
+   "srcset": [
+    [
+     290,
+     "/images/db/os-protocols/close-and-personal-os-protocol-card-division-resurgence-v3-290.webp"
+    ],
+    [
+     558,
+     "/images/db/os-protocols/close-and-personal-os-protocol-card-division-resurgence-v3-558.webp"
+    ]
+   ]
+  }
+ },
+ "os-protocols/close-quarters-menace": {
+  "card": {
+   "src": "/images/db/os-protocols/close-quarters-menace-os-protocol-card-division-resurgence-v3-558.webp",
+   "width": 558,
+   "height": 808,
+   "srcset": [
+    [
+     290,
+     "/images/db/os-protocols/close-quarters-menace-os-protocol-card-division-resurgence-v3-290.webp"
+    ],
+    [
+     558,
+     "/images/db/os-protocols/close-quarters-menace-os-protocol-card-division-resurgence-v3-558.webp"
+    ]
+   ]
+  }
+ },
+ "os-protocols/collateral-damage": {
+  "card": {
+   "src": "/images/db/os-protocols/collateral-damage-os-protocol-card-division-resurgence-v3-558.webp",
+   "width": 558,
+   "height": 875,
+   "srcset": [
+    [
+     290,
+     "/images/db/os-protocols/collateral-damage-os-protocol-card-division-resurgence-v3-290.webp"
+    ],
+    [
+     558,
+     "/images/db/os-protocols/collateral-damage-os-protocol-card-division-resurgence-v3-558.webp"
+    ]
+   ]
+  }
+ },
+ "os-protocols/combat-doc": {
+  "card": {
+   "src": "/images/db/os-protocols/combat-doc-os-protocol-card-division-resurgence-v3-558.webp",
+   "width": 558,
+   "height": 735,
+   "srcset": [
+    [
+     290,
+     "/images/db/os-protocols/combat-doc-os-protocol-card-division-resurgence-v3-290.webp"
+    ],
+    [
+     558,
+     "/images/db/os-protocols/combat-doc-os-protocol-card-division-resurgence-v3-558.webp"
+    ]
+   ]
+  }
+ },
+ "os-protocols/combat-reload": {
+  "card": {
+   "src": "/images/db/os-protocols/combat-reload-os-protocol-card-division-resurgence-v3-558.webp",
+   "width": 558,
+   "height": 837,
+   "srcset": [
+    [
+     290,
+     "/images/db/os-protocols/combat-reload-os-protocol-card-division-resurgence-v3-290.webp"
+    ],
+    [
+     558,
+     "/images/db/os-protocols/combat-reload-os-protocol-card-division-resurgence-v3-558.webp"
+    ]
+   ]
+  }
+ },
+ "os-protocols/concerted-strike": {
+  "card": {
+   "src": "/images/db/os-protocols/concerted-strike-os-protocol-card-division-resurgence-v3-558.webp",
+   "width": 558,
+   "height": 865,
+   "srcset": [
+    [
+     290,
+     "/images/db/os-protocols/concerted-strike-os-protocol-card-division-resurgence-v3-290.webp"
+    ],
+    [
+     558,
+     "/images/db/os-protocols/concerted-strike-os-protocol-card-division-resurgence-v3-558.webp"
+    ]
+   ]
+  }
+ },
+ "os-protocols/cornered-animal": {
+  "card": {
+   "src": "/images/db/os-protocols/cornered-animal-os-protocol-card-division-resurgence-v3-558.webp",
+   "width": 558,
+   "height": 839,
+   "srcset": [
+    [
+     290,
+     "/images/db/os-protocols/cornered-animal-os-protocol-card-division-resurgence-v3-290.webp"
+    ],
+    [
+     558,
+     "/images/db/os-protocols/cornered-animal-os-protocol-card-division-resurgence-v3-558.webp"
+    ]
+   ]
+  }
+ },
+ "os-protocols/cover-shooter": {
+  "card": {
+   "src": "/images/db/os-protocols/cover-shooter-os-protocol-card-division-resurgence-v3-558.webp",
+   "width": 558,
+   "height": 833,
+   "srcset": [
+    [
+     290,
+     "/images/db/os-protocols/cover-shooter-os-protocol-card-division-resurgence-v3-290.webp"
+    ],
+    [
+     558,
+     "/images/db/os-protocols/cover-shooter-os-protocol-card-division-resurgence-v3-558.webp"
+    ]
+   ]
+  }
+ },
+ "os-protocols/deadly-accuracy": {
+  "card": {
+   "src": "/images/db/os-protocols/deadly-accuracy-os-protocol-card-division-resurgence-v3-558.webp",
+   "width": 558,
+   "height": 870,
+   "srcset": [
+    [
+     290,
+     "/images/db/os-protocols/deadly-accuracy-os-protocol-card-division-resurgence-v3-290.webp"
+    ],
+    [
+     558,
+     "/images/db/os-protocols/deadly-accuracy-os-protocol-card-division-resurgence-v3-558.webp"
+    ]
+   ]
+  }
+ },
+ "os-protocols/death-from-afar": {
+  "card": {
+   "src": "/images/db/os-protocols/death-from-afar-os-protocol-card-division-resurgence-v3-558.webp",
+   "width": 558,
+   "height": 782,
+   "srcset": [
+    [
+     290,
+     "/images/db/os-protocols/death-from-afar-os-protocol-card-division-resurgence-v3-290.webp"
+    ],
+    [
+     558,
+     "/images/db/os-protocols/death-from-afar-os-protocol-card-division-resurgence-v3-558.webp"
+    ]
+   ]
+  }
+ },
+ "os-protocols/dominating-presence": {
+  "card": {
+   "src": "/images/db/os-protocols/dominating-presence-os-protocol-card-division-resurgence-v3-558.webp",
+   "width": 558,
+   "height": 783,
+   "srcset": [
+    [
+     290,
+     "/images/db/os-protocols/dominating-presence-os-protocol-card-division-resurgence-v3-290.webp"
+    ],
+    [
+     558,
+     "/images/db/os-protocols/dominating-presence-os-protocol-card-division-resurgence-v3-558.webp"
+    ]
+   ]
+  }
+ },
+ "os-protocols/enduring": {
+  "card": {
+   "src": "/images/db/os-protocols/enduring-os-protocol-card-division-resurgence-v3-558.webp",
+   "width": 558,
+   "height": 819,
+   "srcset": [
+    [
+     290,
+     "/images/db/os-protocols/enduring-os-protocol-card-division-resurgence-v3-290.webp"
+    ],
+    [
+     558,
+     "/images/db/os-protocols/enduring-os-protocol-card-division-resurgence-v3-558.webp"
+    ]
+   ]
+  }
+ },
+ "os-protocols/energizer": {
+  "card": {
+   "src": "/images/db/os-protocols/energizer-os-protocol-card-division-resurgence-v3-558.webp",
+   "width": 558,
+   "height": 722,
+   "srcset": [
+    [
+     290,
+     "/images/db/os-protocols/energizer-os-protocol-card-division-resurgence-v3-290.webp"
+    ],
+    [
+     558,
+     "/images/db/os-protocols/energizer-os-protocol-card-division-resurgence-v3-558.webp"
+    ]
+   ]
+  }
+ },
+ "os-protocols/explosive-charge": {
+  "card": {
+   "src": "/images/db/os-protocols/explosive-charge-os-protocol-card-division-resurgence-v3-558.webp",
+   "width": 558,
+   "height": 974,
+   "srcset": [
+    [
+     290,
+     "/images/db/os-protocols/explosive-charge-os-protocol-card-division-resurgence-v3-290.webp"
+    ],
+    [
+     558,
+     "/images/db/os-protocols/explosive-charge-os-protocol-card-division-resurgence-v3-558.webp"
+    ]
+   ]
+  }
+ },
+ "os-protocols/explosive-round": {
+  "card": {
+   "src": "/images/db/os-protocols/explosive-round-os-protocol-card-division-resurgence-v3-558.webp",
+   "width": 558,
+   "height": 918,
+   "srcset": [
+    [
+     290,
+     "/images/db/os-protocols/explosive-round-os-protocol-card-division-resurgence-v3-290.webp"
+    ],
+    [
+     558,
+     "/images/db/os-protocols/explosive-round-os-protocol-card-division-resurgence-v3-558.webp"
+    ]
+   ]
+  }
+ },
+ "os-protocols/face-to-face-advantage": {
+  "card": {
+   "src": "/images/db/os-protocols/face-to-face-advantage-os-protocol-card-division-resurgence-v3-558.webp",
+   "width": 558,
+   "height": 788,
+   "srcset": [
+    [
+     290,
+     "/images/db/os-protocols/face-to-face-advantage-os-protocol-card-division-resurgence-v3-290.webp"
+    ],
+    [
+     558,
+     "/images/db/os-protocols/face-to-face-advantage-os-protocol-card-division-resurgence-v3-558.webp"
+    ]
+   ]
+  }
+ },
+ "os-protocols/genius-engineer": {
+  "card": {
+   "src": "/images/db/os-protocols/genius-engineer-os-protocol-card-division-resurgence-v3-558.webp",
+   "width": 558,
+   "height": 797,
+   "srcset": [
+    [
+     290,
+     "/images/db/os-protocols/genius-engineer-os-protocol-card-division-resurgence-v3-290.webp"
+    ],
+    [
+     558,
+     "/images/db/os-protocols/genius-engineer-os-protocol-card-division-resurgence-v3-558.webp"
+    ]
+   ]
+  }
+ },
+ "os-protocols/happy-survival": {
+  "card": {
+   "src": "/images/db/os-protocols/happy-survival-os-protocol-card-division-resurgence-v3-558.webp",
+   "width": 558,
+   "height": 856,
+   "srcset": [
+    [
+     290,
+     "/images/db/os-protocols/happy-survival-os-protocol-card-division-resurgence-v3-290.webp"
+    ],
+    [
+     558,
+     "/images/db/os-protocols/happy-survival-os-protocol-card-division-resurgence-v3-558.webp"
+    ]
+   ]
+  }
+ },
+ "os-protocols/hardware-upgrade": {
+  "card": {
+   "src": "/images/db/os-protocols/hardware-upgrade-os-protocol-card-division-resurgence-v3-558.webp",
+   "width": 558,
+   "height": 692,
+   "srcset": [
+    [
+     290,
+     "/images/db/os-protocols/hardware-upgrade-os-protocol-card-division-resurgence-v3-290.webp"
+    ],
+    [
+     558,
+     "/images/db/os-protocols/hardware-upgrade-os-protocol-card-division-resurgence-v3-558.webp"
+    ]
+   ]
+  }
+ },
+ "os-protocols/heavy-armor": {
+  "card": {
+   "src": "/images/db/os-protocols/heavy-armor-os-protocol-card-division-resurgence-v3-558.webp",
+   "width": 558,
+   "height": 841,
+   "srcset": [
+    [
+     290,
+     "/images/db/os-protocols/heavy-armor-os-protocol-card-division-resurgence-v3-290.webp"
+    ],
+    [
+     558,
+     "/images/db/os-protocols/heavy-armor-os-protocol-card-division-resurgence-v3-558.webp"
+    ]
+   ]
+  }
+ },
+ "os-protocols/hermit": {
+  "card": {
+   "src": "/images/db/os-protocols/hermit-os-protocol-card-division-resurgence-v3-558.webp",
+   "width": 558,
+   "height": 751,
+   "srcset": [
+    [
+     290,
+     "/images/db/os-protocols/hermit-os-protocol-card-division-resurgence-v3-290.webp"
+    ],
+    [
+     558,
+     "/images/db/os-protocols/hermit-os-protocol-card-division-resurgence-v3-558.webp"
+    ]
+   ]
+  }
+ },
+ "os-protocols/hunting-season": {
+  "card": {
+   "src": "/images/db/os-protocols/hunting-season-os-protocol-card-division-resurgence-v3-558.webp",
+   "width": 558,
+   "height": 775,
+   "srcset": [
+    [
+     290,
+     "/images/db/os-protocols/hunting-season-os-protocol-card-division-resurgence-v3-290.webp"
+    ],
+    [
+     558,
+     "/images/db/os-protocols/hunting-season-os-protocol-card-division-resurgence-v3-558.webp"
+    ]
+   ]
+  }
+ },
+ "os-protocols/inspiration": {
+  "card": {
+   "src": "/images/db/os-protocols/inspiration-os-protocol-card-division-resurgence-v3-558.webp",
+   "width": 558,
+   "height": 747,
+   "srcset": [
+    [
+     290,
+     "/images/db/os-protocols/inspiration-os-protocol-card-division-resurgence-v3-290.webp"
+    ],
+    [
+     558,
+     "/images/db/os-protocols/inspiration-os-protocol-card-division-resurgence-v3-558.webp"
+    ]
+   ]
+  }
+ },
+ "os-protocols/last-resort": {
+  "card": {
+   "src": "/images/db/os-protocols/last-resort-os-protocol-card-division-resurgence-v3-558.webp",
+   "width": 558,
+   "height": 813,
+   "srcset": [
+    [
+     290,
+     "/images/db/os-protocols/last-resort-os-protocol-card-division-resurgence-v3-290.webp"
+    ],
+    [
+     558,
+     "/images/db/os-protocols/last-resort-os-protocol-card-division-resurgence-v3-558.webp"
+    ]
+   ]
+  }
+ },
+ "os-protocols/layered-defense": {
+  "card": {
+   "src": "/images/db/os-protocols/layered-defense-os-protocol-card-division-resurgence-v3-558.webp",
+   "width": 558,
+   "height": 775,
+   "srcset": [
+    [
+     290,
+     "/images/db/os-protocols/layered-defense-os-protocol-card-division-resurgence-v3-290.webp"
+    ],
+    [
+     558,
+     "/images/db/os-protocols/layered-defense-os-protocol-card-division-resurgence-v3-558.webp"
+    ]
+   ]
+  }
+ },
+ "os-protocols/level-headed": {
+  "card": {
+   "src": "/images/db/os-protocols/level-headed-os-protocol-card-division-resurgence-v3-558.webp",
+   "width": 558,
+   "height": 836,
+   "srcset": [
+    [
+     290,
+     "/images/db/os-protocols/level-headed-os-protocol-card-division-resurgence-v3-290.webp"
+    ],
+    [
+     558,
+     "/images/db/os-protocols/level-headed-os-protocol-card-division-resurgence-v3-558.webp"
+    ]
+   ]
+  }
+ },
+ "os-protocols/long-range-artillery": {
+  "card": {
+   "src": "/images/db/os-protocols/long-range-artillery-os-protocol-card-division-resurgence-v3-558.webp",
+   "width": 558,
+   "height": 866,
+   "srcset": [
+    [
+     290,
+     "/images/db/os-protocols/long-range-artillery-os-protocol-card-division-resurgence-v3-290.webp"
+    ],
+    [
+     558,
+     "/images/db/os-protocols/long-range-artillery-os-protocol-card-division-resurgence-v3-558.webp"
+    ]
+   ]
+  }
+ },
+ "os-protocols/mechanized-support": {
+  "card": {
+   "src": "/images/db/os-protocols/mechanized-support-os-protocol-card-division-resurgence-v3-558.webp",
+   "width": 558,
+   "height": 801,
+   "srcset": [
+    [
+     290,
+     "/images/db/os-protocols/mechanized-support-os-protocol-card-division-resurgence-v3-290.webp"
+    ],
+    [
+     558,
+     "/images/db/os-protocols/mechanized-support-os-protocol-card-division-resurgence-v3-558.webp"
+    ]
+   ]
+  }
+ },
+ "os-protocols/medical-excellence": {
+  "card": {
+   "src": "/images/db/os-protocols/medical-excellence-os-protocol-card-division-resurgence-v3-558.webp",
+   "width": 558,
+   "height": 1029,
+   "srcset": [
+    [
+     290,
+     "/images/db/os-protocols/medical-excellence-os-protocol-card-division-resurgence-v3-290.webp"
+    ],
+    [
+     558,
+     "/images/db/os-protocols/medical-excellence-os-protocol-card-division-resurgence-v3-558.webp"
+    ]
+   ]
+  }
+ },
+ "os-protocols/overclocking": {
+  "card": {
+   "src": "/images/db/os-protocols/overclocking-os-protocol-card-division-resurgence-v3-558.webp",
+   "width": 558,
+   "height": 752,
+   "srcset": [
+    [
+     290,
+     "/images/db/os-protocols/overclocking-os-protocol-card-division-resurgence-v3-290.webp"
+    ],
+    [
+     558,
+     "/images/db/os-protocols/overclocking-os-protocol-card-division-resurgence-v3-558.webp"
+    ]
+   ]
+  }
+ },
+ "os-protocols/overwhelming-power": {
+  "card": {
+   "src": "/images/db/os-protocols/overwhelming-power-os-protocol-card-division-resurgence-v3-558.webp",
+   "width": 558,
+   "height": 852,
+   "srcset": [
+    [
+     290,
+     "/images/db/os-protocols/overwhelming-power-os-protocol-card-division-resurgence-v3-290.webp"
+    ],
+    [
+     558,
+     "/images/db/os-protocols/overwhelming-power-os-protocol-card-division-resurgence-v3-558.webp"
+    ]
+   ]
+  }
+ },
+ "os-protocols/physical-training": {
+  "card": {
+   "src": "/images/db/os-protocols/physical-training-os-protocol-card-division-resurgence-v3-558.webp",
+   "width": 558,
+   "height": 779,
+   "srcset": [
+    [
+     290,
+     "/images/db/os-protocols/physical-training-os-protocol-card-division-resurgence-v3-290.webp"
+    ],
+    [
+     558,
+     "/images/db/os-protocols/physical-training-os-protocol-card-division-resurgence-v3-558.webp"
+    ]
+   ]
+  }
+ },
+ "os-protocols/plate-carrier": {
+  "card": {
+   "src": "/images/db/os-protocols/plate-carrier-os-protocol-card-division-resurgence-v3-558.webp",
+   "width": 558,
+   "height": 745,
+   "srcset": [
+    [
+     290,
+     "/images/db/os-protocols/plate-carrier-os-protocol-card-division-resurgence-v3-290.webp"
+    ],
+    [
+     558,
+     "/images/db/os-protocols/plate-carrier-os-protocol-card-division-resurgence-v3-558.webp"
+    ]
+   ]
+  }
+ },
+ "os-protocols/pressing-matter": {
+  "card": {
+   "src": "/images/db/os-protocols/pressing-matter-os-protocol-card-division-resurgence-v3-558.webp",
+   "width": 558,
+   "height": 747,
+   "srcset": [
+    [
+     290,
+     "/images/db/os-protocols/pressing-matter-os-protocol-card-division-resurgence-v3-290.webp"
+    ],
+    [
+     558,
+     "/images/db/os-protocols/pressing-matter-os-protocol-card-division-resurgence-v3-558.webp"
+    ]
+   ]
+  }
+ },
+ "os-protocols/pressure-cooker": {
+  "card": {
+   "src": "/images/db/os-protocols/pressure-cooker-os-protocol-card-division-resurgence-v3-558.webp",
+   "width": 558,
+   "height": 858,
+   "srcset": [
+    [
+     290,
+     "/images/db/os-protocols/pressure-cooker-os-protocol-card-division-resurgence-v3-290.webp"
+    ],
+    [
+     558,
+     "/images/db/os-protocols/pressure-cooker-os-protocol-card-division-resurgence-v3-558.webp"
+    ]
+   ]
+  }
+ },
+ "os-protocols/pummeling-shield": {
+  "card": {
+   "src": "/images/db/os-protocols/pummeling-shield-os-protocol-card-division-resurgence-v3-558.webp",
+   "width": 558,
+   "height": 889,
+   "srcset": [
+    [
+     290,
+     "/images/db/os-protocols/pummeling-shield-os-protocol-card-division-resurgence-v3-290.webp"
+    ],
+    [
+     558,
+     "/images/db/os-protocols/pummeling-shield-os-protocol-card-division-resurgence-v3-558.webp"
+    ]
+   ]
+  }
+ },
+ "os-protocols/rampart": {
+  "card": {
+   "src": "/images/db/os-protocols/rampart-os-protocol-card-division-resurgence-v3-558.webp",
+   "width": 558,
+   "height": 832,
+   "srcset": [
+    [
+     290,
+     "/images/db/os-protocols/rampart-os-protocol-card-division-resurgence-v3-290.webp"
+    ],
+    [
+     558,
+     "/images/db/os-protocols/rampart-os-protocol-card-division-resurgence-v3-558.webp"
+    ]
+   ]
+  }
+ },
+ "os-protocols/recursive-treatment": {
+  "card": {
+   "src": "/images/db/os-protocols/recursive-treatment-os-protocol-card-division-resurgence-v3-558.webp",
+   "width": 558,
+   "height": 784,
+   "srcset": [
+    [
+     290,
+     "/images/db/os-protocols/recursive-treatment-os-protocol-card-division-resurgence-v3-290.webp"
+    ],
+    [
+     558,
+     "/images/db/os-protocols/recursive-treatment-os-protocol-card-division-resurgence-v3-558.webp"
+    ]
+   ]
+  }
+ },
+ "os-protocols/relentless-assault": {
+  "card": {
+   "src": "/images/db/os-protocols/relentless-assault-os-protocol-card-division-resurgence-v3-558.webp",
+   "width": 558,
+   "height": 823,
+   "srcset": [
+    [
+     290,
+     "/images/db/os-protocols/relentless-assault-os-protocol-card-division-resurgence-v3-290.webp"
+    ],
+    [
+     558,
+     "/images/db/os-protocols/relentless-assault-os-protocol-card-division-resurgence-v3-558.webp"
+    ]
+   ]
+  }
+ },
+ "os-protocols/resentful": {
+  "card": {
+   "src": "/images/db/os-protocols/resentful-os-protocol-card-division-resurgence-v3-558.webp",
+   "width": 558,
+   "height": 831,
+   "srcset": [
+    [
+     290,
+     "/images/db/os-protocols/resentful-os-protocol-card-division-resurgence-v3-290.webp"
+    ],
+    [
+     558,
+     "/images/db/os-protocols/resentful-os-protocol-card-division-resurgence-v3-558.webp"
+    ]
+   ]
+  }
+ },
+ "os-protocols/rocket-science": {
+  "card": {
+   "src": "/images/db/os-protocols/rocket-science-os-protocol-card-division-resurgence-v3-558.webp",
+   "width": 558,
+   "height": 738,
+   "srcset": [
+    [
+     290,
+     "/images/db/os-protocols/rocket-science-os-protocol-card-division-resurgence-v3-290.webp"
+    ],
+    [
+     558,
+     "/images/db/os-protocols/rocket-science-os-protocol-card-division-resurgence-v3-558.webp"
+    ]
+   ]
+  }
+ },
+ "os-protocols/running-around": {
+  "card": {
+   "src": "/images/db/os-protocols/running-around-os-protocol-card-division-resurgence-v3-558.webp",
+   "width": 558,
+   "height": 740,
+   "srcset": [
+    [
+     290,
+     "/images/db/os-protocols/running-around-os-protocol-card-division-resurgence-v3-290.webp"
+    ],
+    [
+     558,
+     "/images/db/os-protocols/running-around-os-protocol-card-division-resurgence-v3-558.webp"
+    ]
+   ]
+  }
+ },
+ "os-protocols/seasoned-veteran": {
+  "card": {
+   "src": "/images/db/os-protocols/seasoned-veteran-os-protocol-card-division-resurgence-v3-558.webp",
+   "width": 558,
+   "height": 760,
+   "srcset": [
+    [
+     290,
+     "/images/db/os-protocols/seasoned-veteran-os-protocol-card-division-resurgence-v3-290.webp"
+    ],
+    [
+     558,
+     "/images/db/os-protocols/seasoned-veteran-os-protocol-card-division-resurgence-v3-558.webp"
+    ]
+   ]
+  }
+ },
+ "os-protocols/side-by-side": {
+  "card": {
+   "src": "/images/db/os-protocols/side-by-side-os-protocol-card-division-resurgence-v3-558.webp",
+   "width": 558,
+   "height": 776,
+   "srcset": [
+    [
+     290,
+     "/images/db/os-protocols/side-by-side-os-protocol-card-division-resurgence-v3-290.webp"
+    ],
+    [
+     558,
+     "/images/db/os-protocols/side-by-side-os-protocol-card-division-resurgence-v3-558.webp"
+    ]
+   ]
+  }
+ },
+ "os-protocols/spray-n-pray": {
+  "card": {
+   "src": "/images/db/os-protocols/spray-n-pray-os-protocol-card-division-resurgence-v3-558.webp",
+   "width": 558,
+   "height": 752,
+   "srcset": [
+    [
+     290,
+     "/images/db/os-protocols/spray-n-pray-os-protocol-card-division-resurgence-v3-290.webp"
+    ],
+    [
+     558,
+     "/images/db/os-protocols/spray-n-pray-os-protocol-card-division-resurgence-v3-558.webp"
+    ]
+   ]
+  }
+ },
+ "os-protocols/steadfast": {
+  "card": {
+   "src": "/images/db/os-protocols/steadfast-os-protocol-card-division-resurgence-v3-558.webp",
+   "width": 558,
+   "height": 754,
+   "srcset": [
+    [
+     290,
+     "/images/db/os-protocols/steadfast-os-protocol-card-division-resurgence-v3-290.webp"
+    ],
+    [
+     558,
+     "/images/db/os-protocols/steadfast-os-protocol-card-division-resurgence-v3-558.webp"
+    ]
+   ]
+  }
+ },
+ "os-protocols/strategic-assistance": {
+  "card": {
+   "src": "/images/db/os-protocols/strategic-assistance-os-protocol-card-division-resurgence-v3-558.webp",
+   "width": 558,
+   "height": 833,
+   "srcset": [
+    [
+     290,
+     "/images/db/os-protocols/strategic-assistance-os-protocol-card-division-resurgence-v3-290.webp"
+    ],
+    [
+     558,
+     "/images/db/os-protocols/strategic-assistance-os-protocol-card-division-resurgence-v3-558.webp"
+    ]
+   ]
+  }
+ },
+ "os-protocols/suppressive-fire": {
+  "card": {
+   "src": "/images/db/os-protocols/suppressive-fire-os-protocol-card-division-resurgence-v3-558.webp",
+   "width": 558,
+   "height": 778,
+   "srcset": [
+    [
+     290,
+     "/images/db/os-protocols/suppressive-fire-os-protocol-card-division-resurgence-v3-290.webp"
+    ],
+    [
+     558,
+     "/images/db/os-protocols/suppressive-fire-os-protocol-card-division-resurgence-v3-558.webp"
+    ]
+   ]
+  }
+ },
+ "os-protocols/surgical-engineering": {
+  "card": {
+   "src": "/images/db/os-protocols/surgical-engineering-os-protocol-card-division-resurgence-v3-558.webp",
+   "width": 558,
+   "height": 816,
+   "srcset": [
+    [
+     290,
+     "/images/db/os-protocols/surgical-engineering-os-protocol-card-division-resurgence-v3-290.webp"
+    ],
+    [
+     558,
+     "/images/db/os-protocols/surgical-engineering-os-protocol-card-division-resurgence-v3-558.webp"
+    ]
+   ]
+  }
+ },
+ "os-protocols/tactical-layering": {
+  "card": {
+   "src": "/images/db/os-protocols/tactical-layering-os-protocol-card-division-resurgence-v3-558.webp",
+   "width": 558,
+   "height": 821,
+   "srcset": [
+    [
+     290,
+     "/images/db/os-protocols/tactical-layering-os-protocol-card-division-resurgence-v3-290.webp"
+    ],
+    [
+     558,
+     "/images/db/os-protocols/tactical-layering-os-protocol-card-division-resurgence-v3-558.webp"
+    ]
+   ]
+  }
+ },
+ "os-protocols/tactical-persistence": {
+  "card": {
+   "src": "/images/db/os-protocols/tactical-persistence-os-protocol-card-division-resurgence-v3-558.webp",
+   "width": 558,
+   "height": 801,
+   "srcset": [
+    [
+     290,
+     "/images/db/os-protocols/tactical-persistence-os-protocol-card-division-resurgence-v3-290.webp"
+    ],
+    [
+     558,
+     "/images/db/os-protocols/tactical-persistence-os-protocol-card-division-resurgence-v3-558.webp"
+    ]
+   ]
+  }
+ },
+ "os-protocols/tactical-pistolero": {
+  "card": {
+   "src": "/images/db/os-protocols/tactical-pistolero-os-protocol-card-division-resurgence-v3-558.webp",
+   "width": 558,
+   "height": 785,
+   "srcset": [
+    [
+     290,
+     "/images/db/os-protocols/tactical-pistolero-os-protocol-card-division-resurgence-v3-290.webp"
+    ],
+    [
+     558,
+     "/images/db/os-protocols/tactical-pistolero-os-protocol-card-division-resurgence-v3-558.webp"
+    ]
+   ]
+  }
+ },
+ "os-protocols/tight-grouping": {
+  "card": {
+   "src": "/images/db/os-protocols/tight-grouping-os-protocol-card-division-resurgence-v3-558.webp",
+   "width": 558,
+   "height": 818,
+   "srcset": [
+    [
+     290,
+     "/images/db/os-protocols/tight-grouping-os-protocol-card-division-resurgence-v3-290.webp"
+    ],
+    [
+     558,
+     "/images/db/os-protocols/tight-grouping-os-protocol-card-division-resurgence-v3-558.webp"
+    ]
+   ]
+  }
+ },
+ "os-protocols/together-we-stand": {
+  "card": {
+   "src": "/images/db/os-protocols/together-we-stand-os-protocol-card-division-resurgence-v3-558.webp",
+   "width": 558,
+   "height": 760,
+   "srcset": [
+    [
+     290,
+     "/images/db/os-protocols/together-we-stand-os-protocol-card-division-resurgence-v3-290.webp"
+    ],
+    [
+     558,
+     "/images/db/os-protocols/together-we-stand-os-protocol-card-division-resurgence-v3-558.webp"
+    ]
+   ]
+  }
+ },
+ "os-protocols/trench-fighter": {
+  "card": {
+   "src": "/images/db/os-protocols/trench-fighter-os-protocol-card-division-resurgence-v3-558.webp",
+   "width": 558,
+   "height": 799,
+   "srcset": [
+    [
+     290,
+     "/images/db/os-protocols/trench-fighter-os-protocol-card-division-resurgence-v3-290.webp"
+    ],
+    [
+     558,
+     "/images/db/os-protocols/trench-fighter-os-protocol-card-division-resurgence-v3-558.webp"
+    ]
+   ]
+  }
+ },
+ "os-protocols/war-machine": {
+  "card": {
+   "src": "/images/db/os-protocols/war-machine-os-protocol-card-division-resurgence-v3-558.webp",
+   "width": 558,
+   "height": 766,
+   "srcset": [
+    [
+     290,
+     "/images/db/os-protocols/war-machine-os-protocol-card-division-resurgence-v3-290.webp"
+    ],
+    [
+     558,
+     "/images/db/os-protocols/war-machine-os-protocol-card-division-resurgence-v3-558.webp"
+    ]
+   ]
+  }
  }
 }

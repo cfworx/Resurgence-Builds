@@ -38,7 +38,9 @@ const SECTIONS = {
   // hero: the card's top (name bar, weapon art and the attribute bar the weapon tucks under),
   // used as the exotic's main picture; the whole card goes behind a "full card" toggle.
   'exotic-weapons': { kind: 'exotic-weapon-card', widths: [290, 580], trim: TRIM.narrowCard, hero: true },
-  'os-protocols': { kind: 'os-protocol-card', widths: [290, 580], trim: TRIM.narrowCard },
+  // clean: use evidence/<section>/clean/<file> when it exists (see research/build-database/tools/).
+  // seeThrough: the popup is see-through in game; clearSeeThrough() takes the list behind it out.
+  'os-protocols': { kind: 'os-protocol-card', widths: [290, 580], trim: TRIM.narrowCard, clean: true, seeThrough: true },
   'gear-set-effects': { kind: 'gear-set', widths: [640, 960, 1305], trim: TRIM.gearSet },
   // Evidence files keep the slug from when they were recorded; the page slug is on the right.
   'weapon-talents': {
@@ -72,7 +74,8 @@ const WEBP = { quality: 82, effort: 6, smartSubsample: true };
 // its images change (re-recorded after a patch, or cropped differently). The manifest and the
 // pages pick the new names up automatically.
 //   -v2 (Oct 29, 2026): frame edges trimmed; exotic headers end below the attribute bar.
-const NAME_SUFFIX = Object.fromEntries(Object.keys(SECTIONS).map((s) => [s, '-v2']));
+//   -v3 (Oct 29, 2026), OS Protocols: tops rebuilt from clean frames, see-through background cleared.
+const NAME_SUFFIX = { ...Object.fromEntries(Object.keys(SECTIONS).map((s) => [s, '-v2'])), 'os-protocols': '-v3' };
 
 const rel = (abs) => '/' + path.relative(path.join(ROOT, 'public'), abs).split(path.sep).join('/');
 
@@ -125,6 +128,90 @@ async function heroBottom(file, width, trim) {
   return headerEnd + 62;
 }
 
+// Grow a 0/1 mask by r pixels in every direction (a square, like a 5 x 5 brush for r = 2).
+function grow(mask, w, h, r) {
+  const tmp = new Uint8Array(mask.length);
+  const out = new Uint8Array(mask.length);
+  for (let y = 0; y < h; y++) {
+    for (let x = 0; x < w; x++) {
+      let v = 0;
+      for (let d = -r; d <= r && !v; d++) if (x + d >= 0 && x + d < w) v = mask[y * w + x + d];
+      tmp[y * w + x] = v;
+    }
+  }
+  for (let y = 0; y < h; y++) {
+    for (let x = 0; x < w; x++) {
+      let v = 0;
+      for (let d = -r; d <= r && !v; d++) if (y + d >= 0 && y + d < h) v = tmp[(y + d) * w + x];
+      out[y * w + x] = v;
+    }
+  }
+  return out;
+}
+
+// OS Protocol popups are see-through in the game, so the list behind them shows through the card's
+// dark body (and its grey talent bar) as faint text: another protocol's name next to this one's
+// stats, for example. This paints those faint pixels back to the popup's own background colour.
+// It only touches the part under the header art, only plain greys close to the background around
+// them, and never within 2 px of anything clearly brighter (text, icons, the talent stars).
+// Nothing the card says changes.
+async function clearSeeThrough(buffer) {
+  const { data, info } = await sharp(buffer).removeAlpha().raw().toBuffer({ resolveWithObject: true });
+  const { width: w, height: h, channels: ch } = info;
+  const n = w * h;
+  const L = new Float32Array(n);
+  const C = new Uint8Array(n);
+  for (let p = 0, i = 0; p < n; p++, i += ch) {
+    const r = data[i], g = data[i + 1], b = data[i + 2];
+    L[p] = (r + g + b) / 3;
+    C[p] = Math.max(r, g, b) - Math.min(r, g, b);
+  }
+  // The brightness of the area around each pixel: the median of a 31 x 31 window.
+  const area = await sharp(buffer).removeAlpha().greyscale().median(31).raw().toBuffer();
+  // Where the header art ends: the first row from 150 down whose median brightness is under 20.
+  let start = -1;
+  for (let y = 150; y < h && start < 0; y++) {
+    const row = [];
+    for (let x = 20; x < w - 20; x += 2) row.push(L[y * w + x]);
+    row.sort((a, b) => a - b);
+    if (row[row.length >> 1] < 20) start = y;
+  }
+  if (start < 0) return buffer;
+  // Real content is clearly brighter than what is around it; keep it and a 2 px ring around it.
+  const bright = new Uint8Array(n);
+  for (let p = 0; p < n; p++) bright[p] = L[p] > area[p] + 30 ? 1 : 0;
+  const near = grow(bright, w, h, 2);
+  // Two kinds of popup background: 1, the near-black body; 2, the grey section bar ("OS Protocol
+  // Talent"). Each faint pixel on one becomes that background's commonest colour.
+  const kind = new Uint8Array(n);
+  const counts = [null, new Map(), new Map()];
+  for (let p = start * w; p < n; p++) {
+    if (near[p] || C[p] >= 16) continue;
+    if (area[p] <= 20 && L[p] <= 34) kind[p] = 1;
+    else if (area[p] >= 28 && area[p] <= 50 && Math.abs(L[p] - area[p]) <= 25) kind[p] = 2;
+    else continue;
+    const i = p * ch;
+    const key = (data[i] << 16) | (data[i + 1] << 8) | data[i + 2];
+    counts[kind[p]].set(key, (counts[kind[p]].get(key) || 0) + 1);
+  }
+  const colour = counts.map((m) => {
+    let best = -1;
+    let most = 0;
+    if (m) for (const [key, c] of m) if (c > most) [best, most] = [key, c];
+    return best;
+  });
+  const out = Buffer.from(data);
+  for (let p = start * w; p < n; p++) {
+    const bg = colour[kind[p]];
+    if (!kind[p] || bg < 0) continue;
+    const i = p * ch;
+    out[i] = bg >> 16;
+    out[i + 1] = (bg >> 8) & 255;
+    out[i + 2] = bg & 255;
+  }
+  return sharp(out, { raw: { width: w, height: h, channels: ch } }).png().toBuffer();
+}
+
 // Weapon names on each Armory screen, in the order they were transcribed.
 function armoryNames() {
   const rows = JSON.parse(fs.readFileSync(path.join(ROOT, 'research', 'build-database', 'armory-weapons.json'), 'utf8'));
@@ -157,12 +244,14 @@ async function main() {
       if (cfg.skip?.includes(evidenceSlug)) continue;
       if (cfg.only && !cfg.only.test(evidenceSlug)) continue;
       const slug = cfg.rename?.[evidenceSlug] ?? evidenceSlug;
-      const input = path.join(srcDir, name);
+      const cleanFile = path.join(srcDir, 'clean', name);
+      const input = cfg.clean && fs.existsSync(cleanFile) ? cleanFile : path.join(srcDir, name);
       const meta = await sharp(input).metadata();
       const width = meta.width - t.left - t.right;
       let card = await sharp(input)
         .extract({ left: t.left, top: t.top, width, height: meta.height - t.top - t.bottom })
         .toBuffer();
+      if (cfg.seeThrough) card = await clearSeeThrough(card);
       let hero = null;
       if (cfg.hero) {
         // Where the stitched card's top part ends: the divider under the attribute bar.

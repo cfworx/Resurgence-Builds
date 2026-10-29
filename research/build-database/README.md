@@ -7,6 +7,8 @@ turns straight into a spreadsheet: every section has a JSON file and a CSV file 
 Nothing in this folder is served by the website. `src/data/*.json` is what the site uses; this folder is the evidence behind it.
 The one exception is indirect: `scripts/build-db-images.mjs` turns the `evidence/` images into the in-game card pictures on the
 database pages (resized WebP copies in `public/images/db/`, listed in `src/data/db-images.json`). Rerun it after new evidence lands.
+For those pictures it trims the frame edges and, on OS Protocol cards, paints out the list that shows faintly through the
+see-through popup; the evidence files themselves are never changed.
 
 ## Coverage
 
@@ -67,6 +69,13 @@ recording, every section of the database is covered.
   39.8, 56.8, 80.0 and 98.5 seconds in: Lady Death, Warlord, Strawberry Milkshake, Scorpio, The Bighorn, Diamondback). The
   card's name bar stays put while the rest scrolls, so the stitched cards can show a seam just under it; the site's images
   use these frames for the top of every exotic card instead.
+- `evidence/os-protocols/clean/`: every OS Protocol card rebuilt by `tools/clean_os_protocol_cards.py`. The stitched cards
+  have the same seam problem under the title bar (an "OS Protocols" tag cut in half, a stray black band, half a line of text),
+  and on some the top of the header is missing because the card was already scrolling. The tool takes the frame where the
+  card sits at the top of its scroll, keeps everything the popup shows in it (about the first 690 rows), and adds the
+  stitched card's remaining rows below, matched on the talent bar and on the rows where the two meet.
+  `clean/frames.json` lists the frame used for each card and the match scores. No pixel is drawn or retouched; the values
+  were read from the stitched cards and the frames show the same text. The site's images use these files.
 - `archive/os-protocols-engineering-2026-07.csv`: the July 2026 capture of the Engineering tab, which had five rows flagged
   for recapture. All five are resolved by the October 28 recording.
 
