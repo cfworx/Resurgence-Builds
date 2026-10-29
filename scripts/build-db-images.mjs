@@ -51,6 +51,12 @@ const SECTIONS = {
 
 const WEBP = { quality: 82, effort: 6, smartSubsample: true };
 
+// Browsers keep /images/* for 30 days (public/_headers), so a re-recorded card saved under the
+// same file name could show the old picture to returning visitors. When a section's evidence is
+// re-recorded after a patch, set its suffix here (e.g. 'exotic-weapons': '-2026-11') so every
+// file in it gets a new name; the manifest and pages pick the new names up automatically.
+const NAME_SUFFIX = {};
+
 const rel = (abs) => '/' + path.relative(path.join(ROOT, 'public'), abs).split(path.sep).join('/');
 
 async function writeVariants(input, dir, base, widths, srcWidth) {
@@ -124,12 +130,13 @@ async function main() {
       const input = path.join(srcDir, name);
       const meta = await sharp(input).metadata();
       const entry = {};
-      entry.card = await writeVariants(input, outDir, `${slug}-${cfg.kind}-division-resurgence`, cfg.widths, meta.width);
+      const suffix = NAME_SUFFIX[section] || '';
+      entry.card = await writeVariants(input, outDir, `${slug}-${cfg.kind}-division-resurgence${suffix}`, cfg.widths, meta.width);
       files += entry.card.srcset.length;
       if (cfg.hero) {
         const h = await heroHeight(input);
         const crop = await sharp(input).extract({ left: 0, top: 0, width: meta.width, height: h }).toBuffer();
-        entry.hero = await writeVariants(crop, outDir, `${slug}-exotic-weapon-division-resurgence`, cfg.widths, meta.width);
+        entry.hero = await writeVariants(crop, outDir, `${slug}-exotic-weapon-division-resurgence${suffix}`, cfg.widths, meta.width);
         files += entry.hero.srcset.length;
       }
       if (cfg.names) entry.names = names[evidenceSlug] || [];
