@@ -2,7 +2,7 @@
 title: "Which Specialization to Pick | Division Resurgence"
 category: "Beginner"
 publishDate: 2026-05-20
-lastUpdated: 2026-10-26T12:00:00Z
+lastUpdated: 2026-10-29T12:00:00Z
 tags: ["specialization", "beginner", "vanguard", "demolitionist", "bulwark", "field-medic", "tech-operator", "best specialization"]
 description: "Vanguard, Demolitionist, Bulwark, Field Medic, or Tech Operator: how to pick the right specialization in Division Resurgence."
 author: "RapidF5"
@@ -78,13 +78,13 @@ Vanguard is never the wrong answer. It's also rarely a *surprising* answer. If y
 
 ### Demolitionist: A Gift to Men Who Failed Chemistry
 
-**Focuses:** HE Munitions (area denial, explosive damage), Field Grenadier (utility, signature cooldown)
+**Focuses:** HE Munitions (Engineering: area denial, explosive skill damage), Field Grenadier (Firepower: weapon damage that hits harder on targets your skills tagged)
 
 The Demolitionist is for people who, upon receiving a problem, immediately think *what if I made this problem explode?* You have a grenade launcher signature. You have blast-radius skills. You have an entire focus called HE Munitions which, refreshingly, means exactly what it sounds like.
 
 **HE Munitions** is the Demolitionist for people who took "area of effect" personally. You are not trying to kill one enemy. You are trying to make a zone of the map temporarily uninhabitable and then walk through it while everything inside it is on fire. This is a valid strategy and a valid personality.
 
-**Field Grenadier** leans into signature ability uptime and utility. Less "blow the room up," more "keep the C4 going and coordinate the blast timing like a professional." If Commando is the guy who kicks in the door, Field Grenadier is the guy who wired the building two days before you got there.
+**Field Grenadier** is the Demolitionist for people who still want to pull the trigger. It's a Firepower focus: the game's own Focus training screen (on [Porps's October 28 stream](https://www.youtube.com/watch?v=FOrckQW_S8c), in Portuguese; our translation) calls it a specialist in weapons and explosive skills that deals weapon damage, and more weapon damage to enemies its skills have hit. Its training tasks ask for Explosive Seeker Mine damage, Burning stacks and kills on Vulnerable enemies. In other words, the explosives set the table and the gun eats. If HE Munitions is the guy who wired the building two days before you got there, Field Grenadier is the guy who lights the fuse and walks in shooting.
 
 The Demolitionist's signature is the M32A1 grenade launcher. Five shots in rapid succession into a tight cluster of enemies is one of the most satisfying things you can do in this game without it being a disciplinary matter.
 
@@ -253,7 +253,7 @@ For solo PvE, **Vanguard** and **Demolitionist** are the path of least resistanc
 
 ## Which Specialization Should You Pick for PvP?
 
-**Vanguard** and **Bulwark** dominate Conflict (Domination was the only Conflict mode when we wrote this). Vanguard wins aggressive engagements. Bulwark wins holding engagements, with shorter stuns than it had in spring (see its Season 2 status above). The Domination point is 10 meters wide: whoever controls it wins, and whoever controls the Bulwark player usually controls it.
+**Vanguard** and **Bulwark** dominate Conflict (Domination was the only Conflict mode when we wrote this, and the game's activity list on [Porps's October 28 stream](https://www.youtube.com/watch?v=FOrckQW_S8c) still shows it as 4v4 with "normalized PvP attributes", which suggests your gear counts for less there than in PvE). Vanguard wins aggressive engagements. Bulwark wins holding engagements, with shorter stuns than it had in spring (see its Season 2 status above). The Domination point is 10 meters wide: whoever controls it wins, and whoever controls the Bulwark player usually controls it.
 
 **Demolitionist** is situational in PvP. The grenade launcher signature is crowd-control capable but the fight distance in Conflict is often shorter than you'd like for AOE. **Field Medic** and **Tech Operator** can contribute but are building into damage-output deficits against optimized PvP specs.
 
@@ -263,6 +263,8 @@ For solo PvE, **Vanguard** and **Demolitionist** are the path of least resistanc
 
 ### Can I switch specializations?
 Yes. You can switch your active specialization freely. Your focus progress and chipset unlocks are tied to the individual specialization, not a global character level. Switching specs doesn't delete your progress on the original.
+
+Each specialization levels on its own, to 30, with 49 talent points to spend: [Porps's October 28 stream](https://www.youtube.com/watch?v=FOrckQW_S8c) shows the screen, with his Demolitionist at 4/30 and 6/49 points and the game rating each spec's difficulty in stars (Demolitionist 2 of 5, Vanguard 3, Bulwark 3.5). At level 30 the focus screen in [Demø2x's](https://www.youtube.com/watch?v=ufNZIXHoR00) and [GGReborn's](https://www.youtube.com/watch?v=AUfSHF6gYjg) October videos shows the focus at 1,160 Power Score.
 
 Leveling a second one isn't wasted time, either. Oldfartsgaming capped Demolitionist, then started running his dailies on Tech Operator and trying out Bulwark, and says the extra levels give skill points and push up your SHD level. By the time he recorded his October 11 video he had almost every node on his Demolitionist tree, so your early point choices aren't a life sentence. In [an April video](https://www.youtube.com/watch?v=phHiYGujrRQ), AgentHuntzman showed that the tree had a reset button that refunded everything he'd put in, credits and materials included, so trying a different path cost him nothing. Died Again Gaming's leveling habit from June: keep a specialization that isn't maxed equipped while you farm and when you claim daily and weekly quest rewards, because the Specialization XP lands on whichever one you're wearing. More in our [endgame tips](/guides/division-resurgence-endgame-tips/).
 

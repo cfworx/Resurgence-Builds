@@ -2,7 +2,7 @@
 title: "Beginner Guide: Your First 40 Levels"
 category: "Beginner"
 publishDate: 2026-05-08
-lastUpdated: 2026-10-28T12:00:00Z
+lastUpdated: 2026-10-29T12:00:00Z
 tags: ["beginner", "new-player", "leveling", "build-guide", "Season 2"]
 description: "New to Division Resurgence? Your level 1 to 40 order of operations: pick a spec, stack one stat, save your materials and skip the classic traps."
 featuredImage: "/images/division-resurgence-best-starter-builds.webp"
@@ -45,7 +45,7 @@ The rest of this page explains each step and why.
 
 ## 1. Pick a specialization and commit
 
-There are five specializations: **Vanguard, Demolitionist, Bulwark, Field Medic and Tech Operator**. Each has two **Focuses**, talent trees that change how it plays: Field Medic can heal (Combat Medicine) or melt rooms with chemicals (Tactical Pharma), and Tech Operator can run attack drones (Offensive Operations) or healing and defensive drones (Aegis Operations). Ubisoft's 2023 preview said skill points you earn count toward both Focuses of a specialization, so trying the other Focus isn't a restart.
+There are five specializations: **Vanguard, Demolitionist, Bulwark, Field Medic and Tech Operator**. Each has two **Focuses**, talent trees that change how it plays: Field Medic can heal (Combat Medicine) or melt rooms with chemicals (Tactical Pharma), and Tech Operator can run attack drones (Offensive Operations) or healing and defensive drones (Aegis Operations). Ubisoft's 2023 preview said skill points you earn count toward both Focuses of a specialization, so trying the other Focus isn't a restart. Each specialization levels on its own, to 30, with 49 talent points to spend, going by the specialization screen on [Porps's October 28 stream](https://www.youtube.com/watch?v=FOrckQW_S8c) (a brand-new account, Portuguese client, our translation).
 
 Our [specialization guide](/guides/which-specialization-to-pick/) covers each one, and the [build tier list](/tier-list/) shows what creators are winning with in Season 2.
 
@@ -57,9 +57,9 @@ Every gear piece carries Firepower, Toughness and Engineering in different amoun
 
 | Main stat | What it powers | Who stacks it |
 |---|---|---|
-| **Firepower** | Weapon damage | Vanguard Commando, Bulwark Breacher, gun builds |
+| **Firepower** | Weapon damage | Vanguard Commando, Bulwark Breacher, Demolitionist Field Grenadier, gun builds |
 | **Toughness** | Health and survivability | Bulwark Juggernaut, Combat Medicine |
-| **Engineering** | Skill damage, healing and buffs | Demolitionist, Tech Operator, Tactical Pharma, Vanguard Recon |
+| **Engineering** | Skill damage, healing and buffs | Demolitionist HE Munitions, Tech Operator, Tactical Pharma, Vanguard Recon |
 
 AgentHuntzman's rule from his May videos: builds that put "a little bit of everything" everywhere feel weak, so pick the stat your specialization uses and lean into it. Oldfartsgaming adds a shortcut: the stat icons are color-coded, red for offensive and blue for tank or healer. Full details, crit rules and what every secondary stat does are in our [stats guide](/guides/division-resurgence-stats-explained/).
 
@@ -72,6 +72,8 @@ Gear drops constantly while you level, and almost all of it will be replaced. Ag
 - **Replace, don't polish.** Swap to new drops instead of feeding old ones.
 
 He also points out that you can upgrade gear and weapons **up to 10 levels above your own level**. At level 30, that means item level 40, which is a nice boost in the early stages if you do it once, on the set you're actually wearing.
+
+If you do over-upgrade, the damage is smaller than it looks: the upgrade screen on [Porps's October 28 stream](https://www.youtube.com/watch?v=FOrckQW_S8c) says dismantling a piece **returns 90% of the materials** spent upgrading it. You still lose a tenth, so the rule stands, but a piece you outgrow isn't a write-off.
 
 Credits are the other early bottleneck. In his April 12 build video he called running out of credits "the easiest thing to happen," and the habits from his April 19 credits video still hold: repeat missions, dismantle (don't sell) gear a build of yours could use, for the components, and sell the white junk. Our [endgame tips](/guides/division-resurgence-endgame-tips/) have his full list.
 
@@ -103,21 +105,43 @@ The OS Protocol is your "watch" slot: one module with main-stat bonuses and a un
 
 Every weapon model has a proficiency track in the **Armory**, with challenges like kill counts and weak-point hits. GGReborn lists ignoring it early as one of his biggest mistakes, and Died Again Gaming put a number on it in June: leveling weapon proficiency raises your Armory Proficiency level, and each of those levels added **0.2% Weapon Damage and 0.2% Skill Intensity** on his screen, up to **+20% each** at 100. That's free damage for every build you'll ever play, so rotate weapon types in your dailies. The full grinding tips are in our [endgame tips](/guides/division-resurgence-endgame-tips/).
 
-## 9. Join a clan at level 10
+## 9. Claim the new-player events
+
+Open **Events** from the main menu early. On [Porps's October 28 stream](https://www.youtube.com/watch?v=FOrckQW_S8c), a brand-new account (Portuguese client, our translation), the Event Center listed:
+
+- **An Agent's Journey:** steps through the prologue and the systems it unlocks.
+- **Rookie Agent Training:** 14 days of daily tasks, with reward chests at 20, 40, 60, 80 and 100 points.
+- **Agents Reporting In:** an 8-day login calendar (metal components, an emote, a weapon sight, a normal SHD Key and Phoenix Credits among the rewards), ending with an outfit on day 8 ("Desfile da Marinha," roughly Navy Parade).
+- **First Premium Credits purchase** and a **purchase bonus** event, which are the paid ones.
+
+His Rookie Agent Training ran October 26 to November 9, which fits events that start with a new account, though we haven't confirmed how Ubisoft schedules them, and the English names may differ from our translations. The **Agent Manual** in the same menu sets out early goals in seven phases, like unlocking the hideout and equipping level 12 gear.
+
+## 10. Join a clan at level 10
 
 Clans unlock at **level 10**, per Ubisoft's Help Center, and they're a progression system wearing a social feature's clothes: a Clan Base with faster crafting, a clan vendor and passive bonuses. The vendor is also one of the main routes to Tactical Augmentation Modules later. Our [clan guide](/guides/division-resurgence-clan-guide/) explains joining, creating and running one.
 
-## 10. Lock what you want to keep
+## 11. Lock what you want to keep
 
-TikTokAndy had a scare in his September 16 Dark Zone video when he switched back from a healer test build and couldn't find his Fury Strike pieces, and his reminder is worth repeating: if you delete gear in this game, there's no getting it back. He locks everything he's using. Do the same for the pieces you're wearing and anything you might want later. While you're in the inventory, empty your **stash** every session: TikTokAndy says stash items are deleted after 48 hours if you don't collect them. We haven't verified that timer (a player's report on Ubisoft's bug tracker does describe a stash package about to expire), but checking the stash costs nothing.
+TikTokAndy had a scare in his September 16 Dark Zone video when he switched back from a healer test build and couldn't find his Fury Strike pieces, and his reminder is worth repeating: if you delete gear in this game, there's no getting it back. He locks everything he's using. Do the same for the pieces you're wearing and anything you might want later. Space runs out faster than you'd think: on a brand-new account the counters read **150** gear pieces, **400** mods and **300** OS Protocols ([Porps's October 28 stream](https://www.youtube.com/watch?v=FOrckQW_S8c)), and some veteran accounts we've seen show 180 gear slots ([details](/news/inventory-expansion-planned/)). While you're in the inventory, empty your **stash** every session: TikTokAndy says stash items are deleted after 48 hours if you don't collect them. We haven't verified that timer (a player's report on Ubisoft's bug tracker does describe a stash package about to expire), but checking the stash costs nothing.
 
-## 11. Read the real numbers: the Build Database
+## 12. Recalibrate one slot per piece
+
+Recalibration rerolls one talent or attribute bonus on a piece of gear. The game's tutorial on [Porps's October 28 stream](https://www.youtube.com/watch?v=FOrckQW_S8c) lays out the rules (Portuguese client, our translation):
+
+- The piece has to meet a minimum quality ("advanced" or better, in that client's wording).
+- You pick one talent or attribute bonus, and **only one attribute per piece can be recalibrated**.
+- The eye icon previews the possible results before you spend anything.
+- After the roll you choose whether to keep it, and keeping it replaces the old attribute.
+
+So decide which slot is worth it before the first roll, because it's the only one you'll get on that piece. Spend it on what your build is for, not on comfort stats: our [hidden mechanics guide](/guides/hidden-mechanics-explained/) explains why.
+
+## 13. Read the real numbers: the Build Database
 
 The game has its own reference, and it's better than any website (including this one, and it hurts to type that). AgentHuntzman's tip from May: open the **menu**, go to **Agent Career**, then **Build Database**, and you'll find "all your weapons and gear sets" and the talents, with their full text. He used it to show what a talent does at level two.
 
 There's also the **Armory**, which Ubisoft described in 2023 as "a catalog of all the weapons and gear in the game, even the ones you haven't looted or purchased yet." Between the two, you can check what a set bonus or talent really does before you spend a single material. Ubisoft's October 14 patch notes even fixed the Build Database's weapon talent list, which tells you someone is maintaining it.
 
-## 12. At level 40: the real game starts
+## 14. At level 40: the real game starts
 
 AgentHuntzman's line from his April 12 build video is the one to remember: "the game only truly starts at level 40." Since Season 2 Phase 1, hitting 40 also unlocks the **Legendary Agent** achievement. Then:
 
@@ -167,6 +191,7 @@ These come from AgentHuntzman's May video on endgame mistakes and GGReborn's Sep
 - [TikTokAndy: UNLIMITED Purple & Gold Mods & Weapon Attachments (YouTube, September 26, 2026)](https://www.youtube.com/watch?v=UJTNo_5nQA0) (the stash timer)
 - [GGReborn: Why Your Division Resurgence Gear Build Is Failing You (YouTube, September 29, 2026)](https://www.youtube.com/watch?v=wFqepeXdCTs)
 - [Oldfartsgaming: 7 Things I Wish I Knew Before Endgame (YouTube, October 11, 2026)](https://www.youtube.com/watch?v=7JtJCeEE8NI)
+- [Porps: The Division Resurgence ao vivo (YouTube live stream in Portuguese, October 28, 2026)](https://www.youtube.com/watch?v=FOrckQW_S8c) (specialization levels, the dismantle refund, inventory counters, new-player events, the recalibration tutorial)
 - [Ubisoft News: The Division Resurgence amps up specializations (June 12, 2023)](https://news.ubisoft.com/en-us/article/6Jn7afkUJmUJR14VMbv5VK/the-division-resurgence-amps-up-specializations-launch-slated-for-fall-2023) (Focuses, damage types, the Armory)
 - [Ubisoft Help Center: Patch Note, Season 2 Phase 2](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2566-patch-note---season-2-phase-2/)
 - [Season 2 Phase 1 patch notes (The Division Wiki mirror of the official developer post)](https://thedivision.fandom.com/wiki/Season_2_Phase_1_-_Patch_Notes)

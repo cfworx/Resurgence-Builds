@@ -53,6 +53,10 @@ recording, every section of the database is covered.
 - `armory-gear.json` / `.csv`: every gear piece in the Armory (72: 12 each for holster, gloves, backpack, knee pads, body armor
   and mask), with its tier page and the gear sets it can roll (`gearSets`), plus the piece family (`gearSetFamily`, A to D)
   it belongs to.
+- `creator-readings.json` / `.csv`: 32 on-screen readings from creator videos (checked 2026-10-29) that the database
+  screens don't show: rank II talent values, the top tier of three skill mod sets (the database lists the lowest), a level 50
+  OS Protocol, Tactical Augmentation Module tracks per gear piece, inventory counters, focus core stats, and activity rules.
+  Each row has the creator, video, timestamp and a link to the frame.
 - `recordings.json`: the source recordings (file name, date, length, resolution, what each one covers).
 - `evidence/`: one image per entry, stitched from the recording so the whole scrolled card is in one picture. These are the
   proof for every value in the JSON and CSV files.

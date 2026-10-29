@@ -2,7 +2,7 @@
 title: "Gear Farming Guide: T0, T1 and T2"
 category: "Farming"
 publishDate: 2026-10-25
-lastUpdated: 2026-10-28T12:00:00Z
+lastUpdated: 2026-10-29T12:00:00Z
 tags: ["farming", "gear", "Tier 2", "endgame", "Season 2", "build-guide"]
 description: "Where to farm T1 and T2 gear in Division Resurgence: which missions lean to which slots, Elite missions, level 40 dailies, the Dark Zone, mods."
 featuredImage: "/images/division-resurgence-best-pve-dps-builds.webp"
@@ -108,6 +108,8 @@ Season 2 Phase 2 helps here too: Ubisoft increased the weapon and gear rewards f
 
 **About that Power Score requirement.** AgentHuntzman worked from a recommended 19.2k Power Score for Elite missions in June. Died Again Gaming put Elites at "at least 19.2" in early July, and Heroic missions at about 15,000 to 16,000. The game's own tooltip explains what the number means: below the recommended score, an activity is very hard; above it, it plays at the expected difficulty; far above it, it gets much easier. You can go in under, AgentHuntzman says, but only with your stats close to perfect.
 
+**What the Elite Mission Challenge screen shows.** On [RogueMadras's August 23 stream](https://www.youtube.com/watch?v=KNgtd0m4QP4), the week's challenge was On The Radio, still at a recommended 19.2k. The screen lists two instance features: **No Respawn** (only allies can revive you when you're downed) and **Multi-Armored Enemy** (every battle has enemies of three different types; the tooltip line is cut off on his screen, but going by the name it's armor, so bring two damage types, and our [damage types guide](/guides/damage-types-color-bar-weakness-guide/) explains the bars). The weekly reward panel shows two chests, which fits the twice-a-week claim above. A Team Information checklist also grades your squad before you start: queued alone, he was flagged for lacking Shredding damage, a tank and a healer, for having only one DPS, and for a team under four.
+
 The Dark Zone side of this (contamination, extraction, what the Q Building is) is in our [Dark Zone guide](/guides/division-resurgence-dark-zone-guide/). TikTokAndy says the level 40 Dark Zone is where he got access to T0, T1 and T2 gear.
 
 ---
@@ -183,3 +185,4 @@ Where to get them: Heroic Hostile Nests. His trick is to run the nest again as s
 - [Died Again Gaming: T2 Gear, How To Get End Game Gear (YouTube, June 29, 2026)](https://www.youtube.com/watch?v=hUYSQNVTrDY) (Elite chests, enhancement kits)
 - [Died Again Gaming: Catching Up Before Weekly Reset, DAG LIVE (YouTube, October 25, 2026)](https://www.youtube.com/watch?v=tn4ME4MVGyY) (Lone Wolf rewards)
 - Our [October 2026 hotfixes](/patch-notes/october-2026-hotfixes/) (Armory enhancement kit display) and [bug reporter fixes](/news/bug-reporter-fixes-september-22/) (T2 upgrade window for exotics)
+- [RogueMadras: T2 Grind / New Clan / Rank 1 Tactical Pharma EU (YouTube live stream, August 23, 2026)](https://www.youtube.com/watch?v=KNgtd0m4QP4) (the Elite Mission Challenge screen)

@@ -1,12 +1,12 @@
 {
-  "_comment": "Specializations and focuses for the build planner (/builder/). 'stat' is the core stat a focus builds around, the same reading as the class pages: Recon is the Engineering team-utility path, Breacher the Firepower path. The planner uses it for the OS Protocol sort, the score and the checks. 'skills' are the focus's three skills, signature last, spelled as the 'skill' field in skill-mod-combos.json (Ubisoft's drop-rate table names); when that field is present, each of the planner's three skill mod slots is one of these skills. 'aliases' are older names that share links may still carry.",
+  "_comment": "Specializations and focuses for the build planner (/builder/). 'stat' is the core stat a focus builds around, the same reading as the class pages: Recon is the Engineering team-utility path, Breacher the Firepower path, and Field Grenadier a Firepower focus (the in-game Focus training screen shows its Firepower icon and describes it as dealing weapon damage, plus more weapon damage on enemies hit by its skills; checked on a live stream, October 28, 2026). The planner uses it for the OS Protocol sort, the score and the checks. 'skills' are the focus's three skills, signature last, spelled as the 'skill' field in skill-mod-combos.json (Ubisoft's drop-rate table names); when that field is present, each of the planner's three skill mod slots is one of these skills. 'aliases' are older names that share links may still carry.",
   "specs": [
     {
       "name": "Demolitionist",
       "icon": "/images/ui/specializations/demolitionist.webp",
       "focuses": [
         { "name": "HE Munitions", "stat": "Engineering", "skills": ["Artillery Turret", "Explosive Seeker Mine", "M32A1 Grenade Launcher"] },
-        { "name": "Field Grenadier", "stat": "Engineering", "skills": ["Artillery Turret", "Explosive Seeker Mine", "M32A1 Grenade Launcher"], "aliases": ["Ordinance", "Ordnance"] }
+        { "name": "Field Grenadier", "stat": "Firepower", "skills": ["Artillery Turret", "Explosive Seeker Mine", "M32A1 Grenade Launcher"], "aliases": ["Ordinance", "Ordnance"] }
       ]
     },
     {

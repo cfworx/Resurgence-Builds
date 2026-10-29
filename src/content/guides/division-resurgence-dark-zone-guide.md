@@ -2,7 +2,7 @@
 title: "Division Resurgence Dark Zone Guide"
 category: "PvP"
 publishDate: 2026-10-25
-lastUpdated: 2026-10-28T12:00:00Z
+lastUpdated: 2026-10-29T12:00:00Z
 tags: ["Dark Zone", "PvP", "extraction", "Rogue", "Season 2"]
 description: "How the Division Resurgence Dark Zone works in Season 2: 20-minute runs, contamination, extraction and the Smuggler, going Rogue, landmarks, DZ Credits and the vendor."
 featuredImage: "/images/season-roadmap.webp"
@@ -36,6 +36,7 @@ Ubisoft calls the Dark Zone a "PvPvE extraction mode": you fight NPCs for loot, 
 - **The loot:** everything you pick up is contaminated until you extract it, and it rides in a backpack you drop if you die.
 - **The way out:** a helicopter at an extraction zone, or the **Smuggler** in a safe house.
 - **The danger:** NPCs, contamination, and any agent who decides to go **Rogue**. PvP is off until someone does.
+- **Stats are evened out for PvP:** the game's activity list tags the Dark Zone, like Conflict, with "normalized PvP attributes" ([Porps's October 28 stream](https://www.youtube.com/watch?v=FOrckQW_S8c), Portuguese client, our translation). That screen doesn't spell out how, but expect your sheet numbers not to carry over one to one against other agents.
 - **The payoff:** gear, skill mods (creators call them chips, and the gold ones are the prize), and **DZ Credits** for the Dark Zone vendor, which sells exotics.
 
 ---
@@ -126,7 +127,7 @@ The Q Building is the one TikTokAndy keeps coming back to; in his September 19 b
 - **If you die while Rogue:** AllThings.How says you drop only about 30 to 40% of your loot, three or four items at most. A normal death drops the whole backpack, so the real cost of going Rogue is being everyone's target.
 - **Clearing it:** the hacked terminal in a safe house removes your Rogue status. TikTokAndy found it on his first day ("you can actually take your rogue status off with that"), and AllThings.How says it costs DZ Intel.
 - **Reporting cheaters or harassment:** Ubisoft's Help Center says to use the dedicated in-game report buttons, which open a report that goes straight to its support team ([Ubisoft Help Center](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2490-how-can-i-report-a-player-for-breaking-the-game-s-terms-and-conditions-harassment-inappropriate-conduct-or-other-offenses/)).
-- **Being hunted:** in TikTokAndy's experience, a long Rogue streak doesn't trigger a Manhunt-style status or put a marker on you. Other agents can still find you: AllThings.How says the Smuggler in a safe house will reveal every agent's position for 200 DZ Credits, though TikTokAndy points out it's only a snapshot, because a player can be anywhere by the time you get there. He also says players can tell when a Rogue is coming.
+- **Being hunted:** in TikTokAndy's experience, a long Rogue streak doesn't trigger a Manhunt-style status or put a marker on you. Other agents can still find you: AllThings.How says the Smuggler in a safe house will reveal every agent's position for 200 DZ Credits, and [Willspot's June 22 Dark Zone video](https://www.youtube.com/watch?v=MZwNM-je8AM) shows the Smuggler's announcement when someone pays: "Every agent is now marked on the map." TikTokAndy points out it's only a snapshot, because a player can be anywhere by the time you get there. He also says players can tell when a Rogue is coming.
 
 **If you go Rogue, pick your fights.** On his 11-kill solo run, several of TikTokAndy's kills were players who weren't paying attention, and he's blunt about it: why would you be in your menu in a PvP zone?
 
@@ -197,3 +198,5 @@ For the tanky side of that meta, see our [Bulwark Breacher](/builds/bulwark-brea
 - [TikTokAndy: Silence of Death, Toxic Pharma Solo vs. Squads (YouTube, October 22, 2026)](https://www.youtube.com/watch?v=lbk6aUoOtds)
 - [Oldfartsgaming: 7 Things I Wish I Knew Before Endgame (YouTube, October 11, 2026)](https://www.youtube.com/watch?v=7JtJCeEE8NI)
 - [Died Again Gaming: Catching Up Before Weekly Reset, DAG LIVE (YouTube, October 25, 2026)](https://www.youtube.com/watch?v=tn4ME4MVGyY)
+- [Porps: The Division Resurgence ao vivo (YouTube live stream in Portuguese, October 28, 2026)](https://www.youtube.com/watch?v=FOrckQW_S8c) (the activity list)
+- [Willspot: Bulwark Shot My Body, 400K Tank Medic Got Revenge 1v4 (YouTube, June 22, 2026)](https://www.youtube.com/watch?v=MZwNM-je8AM) (the Smuggler's announcement)

@@ -2,7 +2,7 @@
 title: "Endgame Tips: What to Do After Level 40"
 category: "Endgame"
 publishDate: 2026-10-24
-lastUpdated: 2026-10-28T12:00:00Z
+lastUpdated: 2026-10-29T12:00:00Z
 tags: ["endgame", "Season 2", "farming", "build-guide", "os-protocol"]
 description: "What to do after level 40 in Division Resurgence Season 2: daily quest rewards, upgrade rules, SHD level, proficiency, crafting and creator tips."
 featuredImage: "/images/division-resurgence-shd-manual-progression-guide.webp"
@@ -116,6 +116,7 @@ Oldfartsgaming says upgrading a decent OS Protocol that fits his build as far as
 
 - **Oldfartsgaming:** your SHD level gives bonuses (on his account at the time, 11% armor, 10.5% max health, a flat health bonus and signature ability charge efficiency), and its level rewards add more. He raises it through commendations: clearing missions on every difficulty, crafting high-end items, playing every mode and collecting things.
 - **GGReborn:** not understanding SHD level early is one of the seven mistakes on his list.
+- **What the screens show:** on [Porps's October 28 stream](https://www.youtube.com/watch?v=FOrckQW_S8c) (Portuguese client, our translation), one SHD level-up added +0.50% Max Health and +40 Health. The SHD Commendations menu splits into general and specialization commendations, sorted into categories (his Main Missions category held 64 and Character Progress 51), and each one pays 10, 15 or 20 SHD points. The Character Progress ones he scrolled past included reaching level 20, upgrading any gear to level 30, traveling 10,000 meters and owning five of each weapon type.
 - **Official:** Ubisoft's Season 1 Phase 3 notes say achievements sync based on SHD commendations. We haven't found a published table of SHD level bonuses, so check yours in game.
 
 ### Weapon proficiency
@@ -254,3 +255,4 @@ The Heroic Hostile Nest with a named boss is the mod farm in our [mod farming gu
 - [Died Again Gaming: Unlock 20% Damage, New Agent Guide to Proficiency (YouTube, June 15, 2026)](https://www.youtube.com/watch?v=p64B2L1FWDg)
 - [Died Again Gaming: T2 Gear, How To Get End Game Gear (YouTube, June 29, 2026)](https://www.youtube.com/watch?v=hUYSQNVTrDY) (Find, Field Proficiency Cache)
 - [Died Again Gaming: Catching Up Before Weekly Reset, DAG LIVE (YouTube, October 25, 2026)](https://www.youtube.com/watch?v=tn4ME4MVGyY)
+- [Porps: The Division Resurgence ao vivo (YouTube live stream in Portuguese, October 28, 2026)](https://www.youtube.com/watch?v=FOrckQW_S8c) (SHD level-up and commendation screens)

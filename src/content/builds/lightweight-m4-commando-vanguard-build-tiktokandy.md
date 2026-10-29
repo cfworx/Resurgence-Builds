@@ -5,7 +5,7 @@ subclass: "Commando"
 playstyle: DPS
 pve: true
 pvp: false
-lastUpdated: 2026-10-28T12:00:00Z
+lastUpdated: 2026-10-29T12:00:00Z
 patch: "Season 2 · Phase 2"
 verified: false
 tags: ["vanguard", "build-guide", "Season 2", "Lightweight M4", "Phalanx Attack"]
@@ -79,7 +79,7 @@ TikTokAndy calls this split "one of the best ways that you can go with Vanguard 
 | Gunny Johnny 2pc | Rate of Fire +12% |
 | **Total** | **+30% Rate of Fire, +18% Magazine Size, +12% Multi-Shot Chance** |
 
-He doesn't say which two pieces are Gunny Johnny this time. In his October 6 video they were the mask and body armor, so our planner template uses that layout.
+He doesn't say which two pieces are Gunny Johnny this time, but his gear screens show it: the mask (Combat Mask "Cete") and body armor (X-TREYME Pro Ribcage) are Gunny Johnny, the same layout as his October 6 video and our planner template, and the backpack (AMP24), gloves ("Neptune" Protection Gloves), holster (Jaivardhan Thigh Rig) and kneepads ("Patella" Knee Cups) are Phalanx Attack, all T2 at level 50. One heads-up if you watch the video: the build card he shows on screen lists Suppressive Fire II under the backpack and Emergency Measures under the chest. In the game's own database it's the other way round (Suppressive Fire is a body armor talent, Emergency Measures a backpack one), which is how the table below has them.
 
 | Slot | Set | Talent | Notes |
 |---|---|---|---|

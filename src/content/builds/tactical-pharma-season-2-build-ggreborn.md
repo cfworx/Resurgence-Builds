@@ -5,7 +5,7 @@ subclass: "Tactical Pharma"
 playstyle: DPS
 pve: true
 pvp: true
-lastUpdated: 2026-10-28T12:00:00Z
+lastUpdated: 2026-10-29T12:00:00Z
 patch: "Season 2 · Phase 2"
 verified: false
 tags: ["field-medic", "Tactical Pharma", "build-guide", "Season 2", "jackpot", "Dark Zone"]
@@ -54,7 +54,7 @@ The short answers: four OS Protocols finished **within five seconds** of each ot
 
 ## GGReborn's Gear: Jackpot 4pc + Fire Cycle 2pc
 
-Four pieces of Jackpot and two of Fire Cycle. He doesn't say out loud which two slots carry Fire Cycle, so check his video before you farm (our planner link puts it on the body armor and holster, TikTokAndy's layout, as a placeholder). Attribute bonuses as he reads them:
+Four pieces of Jackpot and two of Fire Cycle. He doesn't say out loud which two slots carry Fire Cycle, and our planner link puts it on the body armor and holster, TikTokAndy's layout, as a placeholder. His [October 28 video](https://www.youtube.com/watch?v=AUfSHF6gYjg) shows the pieces on screen: Fire Cycle on the holster (a Jaivardhan Thigh Rig) and the backpack (an AMP24), Jackpot on the mask, body armor (a Chatzatz Chest with Glass Cannon), gloves and kneepads. The holster, gloves and kneepads carry the same two attributes as in the table below, so the holster at least was Fire Cycle on October 16 too; the backpack changed for that video (see the Meditation II test below). Attribute bonuses as he reads them:
 
 | Slot | Talent | Attribute bonuses |
 |---|---|---|
@@ -155,6 +155,12 @@ The creators split on this one. GGReborn's build sits around 69% Skill Critical 
 
 He framed the test as higher crit chance versus lower crit chance with more multi-shot, warned that the differences were small, and asked viewers to watch the on-screen damage numbers rather than the completion times. The transcript ends on the finishing times without him naming a winner, so we're not naming one either.
 
+### October 28: Meditation II
+
+His next experiment goes after the same question from the other side. In his [October 28 video](https://www.youtube.com/watch?v=AUfSHF6gYjg), a solo Legendary test, the backpack is a Fire Cycle AMP24 carrying **Meditation II**, which his screen reads as +5% Skill Critical Hit Chance per second while immobile, up to 5 stacks, with movement removing a stack per second (our database lists the base talent at +3.60%). His sheet drops to **50.24%** Skill Critical Chance with **239.73%** Skill Critical Damage, **43.89%** Skill Multi-Shot Chance and **43.05%** Skill Intensity, at 25.30k Power Score and 851.76k DPS. By our math, five full stacks would put him back around 75% while he stands still, which is the trade the test is about: less crit chance on the sheet, more of everything else, and the crit chance comes back as long as you hold position.
+
+Two other changes show on his screens: his First Wave Vector reads **Torrential Downpour II** (+31.50% Engineering) and **Rapid Charge**, where the October 16 one had Fully Charged, and the Lightweight M4 keeps In Sync and Revitalize. The run ends with Mission Completed on a water distribution facility mission. We didn't find a verdict: the video has no captions for us to check, and his pinned comment asks viewers what they think of Meditation II.
+
 ---
 
 ## How to Play It
@@ -237,6 +243,7 @@ Going by the official notes, neither Season 2 patch changed Jackpot, Fire Cycle,
 - [GGReborn: How Stats REALLY Work, Testing 3 Builds (YouTube, October 22, 2026)](https://www.youtube.com/watch?v=f1q44KbdS6g)
 - [GGReborn: Which OS Protocol Is BEST? Testing 4 Protocols (YouTube, October 23, 2026)](https://www.youtube.com/watch?v=Kz9YlTUl_1s)
 - [GGReborn: This Tactical Pharma Build with Chain Reaction OS Is INSANE! (YouTube, October 24, 2026)](https://www.youtube.com/watch?v=yR7YWOzqVlA)
+- [GGReborn: This Build With Meditation II, Solo Legendary Test (YouTube, October 28, 2026)](https://www.youtube.com/watch?v=AUfSHF6gYjg)
 - [TikTokAndy's October 15, 2026 Tactical Pharma and Dark Zone video (YouTube)](https://www.youtube.com/watch?v=f20v8_cv9Ls)
 - [TikTokAndy: Silence of Death, Toxic Pharma Solo vs. Squads Dark Zone montage (YouTube, October 22, 2026)](https://www.youtube.com/watch?v=lbk6aUoOtds)
 - [Season 2 Phase 1 patch notes (The Division Wiki mirror of the official developer post)](https://thedivision.fandom.com/wiki/Season_2_Phase_1_-_Patch_Notes)

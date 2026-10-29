@@ -32,13 +32,13 @@ One warning before you read any build advice on the internet: this is **not** Th
 
 ## The three main attributes
 
-Every gear piece carries Firepower, Toughness and Engineering values in different amounts (TikTokAndy's T2 Phalanx holster reads 200, 33 and 64), and every specialization focus leans on one of them:
+Every gear piece carries Firepower, Toughness and Engineering values in different amounts (TikTokAndy's T2 Phalanx holster reads 206, 33 and 64), and every specialization focus leans on one of them:
 
 | Attribute | What it powers | Who stacks it | Also called |
 |---|---|---|---|
-| **Firepower** | Weapon damage | Vanguard Commando, Bulwark Breacher, any gun build | "firearms," the original Division's (2016) name, still used by some creators |
+| **Firepower** | Weapon damage | Vanguard Commando, Bulwark Breacher, Demolitionist Field Grenadier, any gun build | "firearms," the original Division's (2016) name, still used by some creators |
 | **Toughness** | Health and survivability (and, on a Toughness medic, healing) | Bulwark Juggernaut, Combat Medicine | |
-| **Engineering** | Skill damage, healing and buffs | Demolitionist, Tech Operator, Tactical Pharma, Vanguard Recon | "electronics," the same habit |
+| **Engineering** | Skill damage, healing and buffs | Demolitionist HE Munitions, Tech Operator, Tactical Pharma, Vanguard Recon | "electronics," the same habit |
 
 The game's own tooltips use Firepower, Toughness and Engineering: Explosive Round's explosion deals "2000% Firepower" (TikTokAndy reads it out), and Collateral Damage's talent text reads "3000% Engineering." A few things creators have measured:
 

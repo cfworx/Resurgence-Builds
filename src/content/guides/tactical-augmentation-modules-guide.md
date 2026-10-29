@@ -2,7 +2,7 @@
 title: "Tactical Augmentation Modules Guide"
 category: "Endgame"
 publishDate: 2026-09-02
-lastUpdated: 2026-10-28T12:00:00Z
+lastUpdated: 2026-10-29T12:00:00Z
 tags: ["tactical-augmentation", "endgame", "armory", "exotic-weapons", "Season 2"]
 description: "Division Resurgence Tactical Augmentation Modules explained: what TAMs do, where to get them, exotic TAM odds, manuals and what to buy first."
 featuredImage: "/images/division-resurgence-shd-manual-progression-guide.webp"
@@ -14,7 +14,7 @@ faqs:
   - question: "What are Tactical Augmentation Modules in Division Resurgence?"
     answer: "Long-term upgrades you apply in the Armory. Ubisoft's own description: they 'improve a specific model of weapon,' so an upgrade applies to every copy of that model you find or loot. Creators show gear versions too, which stack Health and Armor. Think of them as a loyalty program for your favorite gun, except the gun never sends you emails."
   - question: "How much do Tactical Augmentation Modules add?"
-    answer: "Ubisoft doesn't publish a table, so here are creator readings. On gear, Died Again Gaming's screen showed +10% Health for the first module, then 40%, 70% and finally +100% Health and Armor. On weapons it varies by model: TikTokAndy got +20% damage from his first Bighorn module and reached +40% damage on his Double Barrel with his third. Check the Armory screen for your own gun before you plan around a number."
+    answer: "Ubisoft doesn't publish a table, so here are creator readings. On gear, Died Again Gaming's screen showed +10% Health for the first module, then 40%, 70% and finally +100% Health and Armor, but tracks vary by piece: TikTokAndy's backpack starts with +11.67% Armor, and his holster has only three stages (+10% total Health, then +50% and +100% Health). On weapons it varies by model: TikTokAndy got +20% damage from his first Bighorn module and reached +40% damage on his Double Barrel with his third. Check the Armory screen for your own gun before you plan around a number."
   - question: "Where do you get Tactical Augmentation Modules?"
     answer: "The Clan Vendor (clan credits), the Dark Zone vendor (a weekly random TAM crate plus exotic TAMs), Classified Ops Pass tracks, event rewards like the Diamondback module in Season 2 Phase 2, and the Exotic Sealed Caches, where each exotic's module is a 1.43% roll in Ubisoft's drop table. Died Again Gaming also showed an Exotic TAM Selection Cache for 1,200 Encrypted Data in June."
   - question: "Are tactical augmentation manuals the same as modules?"
@@ -57,7 +57,16 @@ Ubisoft doesn't publish a table of module stages, so everything in this section 
 | 3 | 70% Health and Armor | Died Again Gaming, May 28 |
 | 4 | 100% Health and Armor | Died Again Gaming, May 28; TikTokAndy, September 16 ("if you level it up to 4") |
 
-TikTokAndy's October readings mostly line up: a vest with "all the tactical augmentations" for **+100% Health and Armor** (October 6), and on his October 27 Lightweight M4 build, four modules on the chest piece plus a few Armor mods put him at about **10,000 Armor**. Two wrinkles: on October 10 he described two modules on a gear piece as "50 health and armor," which doesn't match the stage table above, and on October 6 "one augmentation" on his mask read **+5% Damage Reduction**, not Health (he doesn't say whether that one is a module or a manual). So gear pieces may not all share one track. Trust your own screen.
+TikTokAndy's October readings mostly line up: a vest with "all the tactical augmentations" for **+100% Health and Armor** (October 6), and on his October 27 Lightweight M4 build, four modules on the chest piece plus a few Armor mods put him at about **10,000 Armor**. His mask on October 6 is the odd one out: "one augmentation" on it read **+5% Damage Reduction**, not Health (he doesn't say whether that one is a module or a manual).
+
+His [October 10 healer video](https://www.youtube.com/watch?v=VHKfmW4BtEk) settles the rest, because the Armory screens show each piece's track, and they aren't all the same:
+
+| Piece (TikTokAndy, October 10) | Stages | Stage 1 | Then |
+|---|---|---|---|
+| Backpack (Mountain Hiking Pack) | 4 | Increase Armor by 11.67% | +40%, +70%, +100% Health |
+| Holster (Jaivardhan Thigh Rig) | 3 | Increase Total Health by 10% | +50%, +100% Health |
+
+That explains the "50 health and armor" he read out for two modules on that video: his holster's second stage is +50% Health, on a three-stage track. The stage count shows next to the TAM label, too: GGReborn's mask reads TAM (1/3) on [October 28](https://www.youtube.com/watch?v=AUfSHF6gYjg), the regular weapons we've seen have five stages (TAM 2/5 on TikTokAndy's MP7, 4/5 on GGReborn's Lightweight M4), and every exotic's card in the in-game database shows six (0/6). So gear pieces don't share one track. Trust your own screen.
 
 TikTokAndy's back-of-the-envelope math, the day after his first trip into the level 40 Dark Zone: +100% on each of six pieces is "an extra 600%." Ubisoft hasn't said how the bonuses stack, so we wouldn't put that number on a T-shirt, but the direction is right: maxed gear modules are the reason veterans feel unkillable.
 
@@ -154,6 +163,7 @@ Clan credits are the slowest but steadiest route, which is why GGReborn put "not
 - [TikTokAndy: BEGINNER Vanguard DPS Build (YouTube, September 19, 2026)](https://www.youtube.com/watch?v=vtsTpS78aTA)
 - [TikTokAndy: Lone Star Stage 20 Complete (YouTube, October 2, 2026)](https://www.youtube.com/watch?v=9nQ-jGnc7gU)
 - [TikTokAndy: Precious Cargo Legendary Difficulty But I'm Solo (YouTube, October 6, 2026)](https://www.youtube.com/watch?v=D3yrRSUwhq0)
-- [TikTokAndy: Most Overpowered Team Healer Build (YouTube, October 10, 2026)](https://www.youtube.com/watch?v=VHKfmW4BtEk)
+- [TikTokAndy: Most Overpowered Team Healer Build (YouTube, October 10, 2026)](https://www.youtube.com/watch?v=VHKfmW4BtEk) (the backpack and holster tracks on his Armory screens)
 - [TikTokAndy: Vanguard - Commando With A Lightweight M4 (YouTube, October 27, 2026)](https://www.youtube.com/watch?v=RYtZyN_0P0Y)
 - [GGReborn: Why Your Division Resurgence Gear Build Is Failing You (YouTube, September 29, 2026)](https://www.youtube.com/watch?v=wFqepeXdCTs)
+- [GGReborn: This Build With Meditation II, Solo Legendary Test (YouTube, October 28, 2026)](https://www.youtube.com/watch?v=AUfSHF6gYjg) (TAM stage counts on his mask and Lightweight M4)

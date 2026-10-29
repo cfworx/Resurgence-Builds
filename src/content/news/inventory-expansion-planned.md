@@ -1,7 +1,7 @@
 ---
 title: "Inventory Expansion Planned, No Date Yet"
 publishDate: 2026-10-23
-updatedDate: 2026-10-28
+updatedDate: 2026-10-29
 author: "RapidF5"
 tags: ["News", "Community", "Bugs", "Season 2"]
 description: "Ubisoft's bug reporter lists Division Resurgence inventory expansion (TDR-537) as Planned, no date yet. Plus 34.5M dismantles and inventory tips."
@@ -62,6 +62,10 @@ Twelve a second, around the clock, for a month. Somewhere right now, a dad is di
 - **Empty your stash.** TikTokAndy says that when his backpack was full, loot from his Hostile Nest runs went to his stash, and that stash items are deleted after 48 hours if you don't collect them. We haven't verified that timer or found it in Ubisoft's notes, though a player's report on the official bug tracker ([TDR-600](https://www.ubisoft.com/en-us/game/the-division/the-division-resurgence/bug-reporter/issues/TDR-600)) confirms packages can expire: he couldn't claim one because of a false "inventory full" error, and he wrote that it was about to expire. Treat it as "check the stash every session" rather than gospel. His nest farm, which fills a backpack fast, is in our [mod farming guide](/guides/how-to-farm-purple-gold-mods/).
 - **There's a paid option.** GameJoy Explained's Steam overview says the monthly subscription adds inventory space, among other perks. We haven't confirmed the details, and we're not telling you to buy it, only that the creator describes it.
 
+### How much space you have now
+
+Creator videos show the counters. On a brand-new account, [Porps's October 28 stream](https://www.youtube.com/watch?v=FOrckQW_S8c) reads **150** gear pieces, **400** mods and **300** OS Protocols, and the gear counter reads x/150 in [Demø2x's](https://www.youtube.com/watch?v=ufNZIXHoR00) and [GGReborn's](https://www.youtube.com/watch?v=AUfSHF6gYjg) October videos too. Some accounts have more: [RogueMadras's August 23 stream](https://www.youtube.com/watch?v=KNgtd0m4QP4) shows 163/180 gear, and TikTokAndy's [October 10](https://www.youtube.com/watch?v=VHKfmW4BtEk) and [October 27](https://www.youtube.com/watch?v=RYtZyN_0P0Y) videos show x/180 as well, with mods still at 400. None of them says where the extra 30 gear slots come from. GameJoy's subscription description would explain it, but we haven't confirmed that.
+
 ## Sources
 
 - [Ubisoft: The Division Resurgence bug reporter](https://www.ubisoft.com/en-us/game/the-division/the-division-resurgence/bug-reporter/issues)
@@ -74,3 +78,4 @@ Twelve a second, around the clock, for a month. Somewhere right now, a dad is di
 - [Oldfartsgaming: 7 Things I Wish I Knew Before Endgame (YouTube)](https://www.youtube.com/watch?v=7JtJCeEE8NI)
 - [TikTokAndy: UNLIMITED Purple & Gold Mods & Weapon Attachments (YouTube)](https://www.youtube.com/watch?v=UJTNo_5nQA0)
 - [GameJoy Explained: Only 3 Mins Needed To Decide If You Should Play The Division Resurgence on Steam! (YouTube)](https://www.youtube.com/watch?v=mPqzSGmBlS0)
+- Inventory counters on screen: [Porps (October 28)](https://www.youtube.com/watch?v=FOrckQW_S8c), [Demø2x (October 14)](https://www.youtube.com/watch?v=ufNZIXHoR00), [GGReborn (October 28)](https://www.youtube.com/watch?v=AUfSHF6gYjg), [RogueMadras (August 23)](https://www.youtube.com/watch?v=KNgtd0m4QP4) and TikTokAndy ([October 10](https://www.youtube.com/watch?v=VHKfmW4BtEk), [October 27](https://www.youtube.com/watch?v=RYtZyN_0P0Y))

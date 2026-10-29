@@ -110,7 +110,7 @@ const targetSkill = mod.skill || getSkillsFromBonus(mod.bonus3, mod.specializati
 
 // Build context based on specialization
 const specOverview: Record<string, string> = {
-  'Demolitionist': 'Demolitionist builds revolve around explosive AoE damage: Artillery Turrets, Seeker Mines, and the M32A1 Grenade Launcher. This spec stacks Engineering and Skill Crit to turn skills into room-clearing nukes. Pair the right mod combo with Jackpot or Fire Cycle gear sets and the numbers get silly fast.',
+  'Demolitionist': 'Demolitionist builds revolve around explosive AoE damage: Artillery Turrets, Seeker Mines, and the M32A1 Grenade Launcher. Its HE Munitions focus stacks Engineering and Skill Crit to turn skills into room-clearing nukes (Field Grenadier, the other focus, is a Firepower one). Pair the right mod combo with Jackpot or Fire Cycle gear sets and the numbers get silly fast.',
   'Tech Operator': 'Tech Operator builds live and die by the Striker Drone. Your drone is your primary damage source, your utility tool, and sometimes your healer all at once. Stack Engineering, Skill Crit, and drone-specific bonuses and watch it shred everything in the room before you finish reloading.',
   'Bulwark': 'Bulwark is the wall. Your entire kit revolves around the Phalanx Shield: absorbing hits, face-tanking bosses, and making your team feel safe enough to actually play the game. Toughness stacking is king, but the right mod combo can turn a pure tank into a surprisingly punchy brawler.',
   'Vanguard': 'Vanguard runs the show with Smart Cover, Scanning Pulse, and Tactical Link. You\'re the team\'s intel officer and force multiplier rolled into one. The best Vanguard builds balance personal firepower with team-wide buffs that make everyone hit harder and die less.',
@@ -229,6 +229,9 @@ const toModSlug = (name: string) => name.toLowerCase().replace(/[^a-z0-9]+/g, '-
           </div>
           <p class="smc-bonus-card__text">{bonus3}</p>
         </div>
+        {/\d/.test(mod.bonus3 || '') && (
+          <p class="smc-tier-note">The numbers in the 3-piece text are the set's lowest tier, the value the in-game database shows. Better sets read more, up to about two and a half times as much. <a href="/database/skill-mod-combos/#tiers">How the tiers work</a>.</p>
+        )}
         {mod.rarities?.length > 0 && (
           <p class="smc-rarities">Rarities in the in-game database: {mod.rarities.map((r: string, i: number) => (
             <><span style={`color: ${RARITY_COLOR[r] || '#c8c8d0'}; font-weight: 600;`}>{r}</span>{i < mod.rarities.length - 2 ? ', ' : i === mod.rarities.length - 2 ? ' and ' : '.'}</>
@@ -432,6 +435,15 @@ const toModSlug = (name: string) => name.toLowerCase().replace(/[^a-z0-9]+/g, '-
     line-height: 1.6;
     margin: var(--sp-4) 0 0 0;
   }
+
+  .smc-tier-note {
+    color: #8888a0;
+    font-size: var(--text-sm);
+    line-height: 1.6;
+    margin: var(--sp-3) 0 0 0;
+  }
+
+  .smc-tier-note a { color: var(--accent); }
 
   .smc-bonus-card__note {
     color: #8888a0;

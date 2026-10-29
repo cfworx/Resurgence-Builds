@@ -5,7 +5,7 @@ subclass: "Aegis Operations"
 playstyle: Support
 pve: true
 pvp: false
-lastUpdated: 2026-10-28T12:00:00Z
+lastUpdated: 2026-10-29T12:00:00Z
 patch: "Season 2 · Phase 2"
 verified: false
 tags: ["tech-operator", "Aegis Operations", "healer", "support", "build-guide", "Season 2", "Long-term Effect", "Mechanical Expert"]
@@ -58,11 +58,11 @@ TikTokAndy calls it his personal favorite PvE build and "the perfect complement 
 
 | Stat | Value |
 |---|---|
-| Power Score | 22,057 (his reading) |
+| Power Score | 22,057 (his reading at the start), 23.00k on his gear screens once his Tactical Augmentations were in |
 | Engineering | about 3,000 |
 | Toughness | 605 |
-| Armor | 6,725, or 8,700 once he slotted the Tactical Augmentations he'd forgotten |
-| Health | 133,000 with those augmentations |
+| Armor | 6,725, or 8,760 on screen once he slotted the Tactical Augmentations he'd forgotten |
+| Health | 133,820 on screen with those augmentations |
 | Skill Cooldown Recovery | -12.12% |
 | Skill Duration | +44.98% |
 | Skill Radius | +25.04% |
@@ -129,18 +129,18 @@ Full set text is in our [skill mod combo database](/database/skill-mod-combos/).
 - **Long-term Effect:** 2pc Skill Health +12%, 3pc Skill Duration +14.4%, 4pc Engineering +18%. TikTokAndy reads the same three numbers.
 - **Mechanical Expert:** 2pc Skill Duration +9.6%.
 
-He says those set bonuses aren't included in the attribute numbers on his stat screen, so the real totals are higher than the table above. His mask, body armor and kneepads are Long-term Effect; he doesn't say which two pieces carry Mechanical Expert. Our planner link assumes the backpack is the fourth Long-term Effect piece and the gloves and holster are the Mechanical Expert pair.
+He says those set bonuses aren't included in the attribute numbers on his stat screen, so the real totals are higher than the table above. His gear screens settle the split: the mask, body armor (a T1 Athena Missile Vest), backpack (a Mountain Hiking Pack) and kneepads (Urban Warfare Kneepads) are Long-term Effect, and the Mechanical Expert pair is the "Neptune" Protection Gloves and the Jaivardhan Thigh Rig holster. Neither of those two can roll Long-term Effect in the in-game Armory, and our planner link uses the same layout.
 
 | Slot | Main rolls | Attributes and talent | His verdict |
 |---|---|---|---|
 | Mask (Long-term Effect) | High Engineering | Received Healing, Damage to Elites | He'd reroll Damage to Elites into Skill Intensity, Skill Duration, Skill Radius or Skill Cooldown Recovery once he has the materials. |
 | Body Armor (Long-term Effect, T1) | Lots of Engineering and Toughness | Skill Cooldown Recovery; talent **Fearless Charge** (sprinting grants +21% Damage Reduction in our database) | His weakest piece. He uses the sprint Damage Reduction while repositioning but calls the talent "not good" and the vest "terrible." He keeps rolling Emergency Retreat II, which he says is good but not optimal. |
-| Backpack | Not read out | Received Healing, Armor; talent **Brainstorm** (+15% Skill Duration, plus another +15% within 20 meters of an ally) | "This is the one you want for the backpack." The attributes are the part he'd improve. |
-| Gloves | Toughness and Engineering | Received Healing, Skill Intensity | Fine, but Skill Duration or Skill Radius would beat Received Healing. |
-| Holster | A big Engineering roll, Toughness, basically no Firepower | Skill Duration and Skill Cooldown Recovery, both close to max | His model piece: "that's kind of what we're looking for on all the pieces." |
+| Backpack (Long-term Effect) | Not read out | Received Healing, Armor; talent **Brainstorm** (+15% Skill Duration, plus another +15% within 20 meters of an ally) | "This is the one you want for the backpack." The attributes are the part he'd improve. |
+| Gloves (Mechanical Expert) | Toughness and Engineering (+31 and +230 on screen) | Received Healing (+10.7%), Skill Intensity (+3.17%) | Fine, but Skill Duration or Skill Radius would beat Received Healing. |
+| Holster (Mechanical Expert) | A big Engineering roll, Toughness, basically no Firepower (+4 Firepower, +89 Toughness, +189 Engineering on screen) | Skill Duration (+7.8%) and Skill Cooldown Recovery (-3.93%), both close to max | His model piece: "that's kind of what we're looking for on all the pieces." |
 | Kneepads (Long-term Effect) | Toughness and Engineering | A max Skill Intensity roll and a high Skill Radius roll | His other favorite. |
 
-**Gear mods:** Engineering, Armor and Skill Intensity, with Signature Ability Charge Efficiency as a bonus. He keeps each mod on the same gear set so swapping builds doesn't get confusing. He calls his mods "pretty bad," then goes through them and decides they're "not as bad as I thought," which is the most honest mod review we've heard. **Tactical Augmentations:** slot them. His forgotten ones were the difference between 6,725 and 8,700 Armor.
+**Gear mods:** Engineering, Armor and Skill Intensity, with Signature Ability Charge Efficiency as a bonus. He keeps each mod on the same gear set so swapping builds doesn't get confusing. He calls his mods "pretty bad," then goes through them and decides they're "not as bad as I thought," which is the most honest mod review we've heard. **Tactical Augmentations:** slot them. His forgotten ones were the difference between 6,725 and 8,760 Armor. His backpack's track starts with +11.67% Armor and his holster's with +10% total Health (details in our [Tactical Augmentation Modules guide](/guides/tactical-augmentation-modules-guide/)).
 
 ---
 
@@ -149,13 +149,13 @@ He says those set bonuses aren't included in the attribute numbers on his stat s
 | Slot | Weapon | Talents | Rolls and attachments |
 |---|---|---|---|
 | Primary | **MP7** (SMG) | **Enhancement Trade II** + **Adaptation II** | High Engineering and Toughness, a near-max Skill Intensity roll and a max Max Health roll. Every attachment rolls Engineering and Skill Intensity ("I don't care about anything else"): a red dot with Optimal Range, a barrel with Optimal Range and Skill Radius, and a Quick Release Magazine because he wants a small magazine that reloads fast. He says one Tactical Augmentation on the MP7 grants +10% Skill Intensity. |
-| Secondary | **Vector** (SMG) | **Torrential Downpour II**, plus a skill-duration-on-cover talent that matches Last Stand | A Skill Intensity roll and a high Engineering roll. He says you could run it as your primary and do just fine. |
+| Secondary | **Vector 45 ACP** (SMG, a T0 copy at level 50) | **Torrential Downpour II** + **Last Stand** | A Skill Intensity roll (+6.79%) and a high Engineering roll, plus Weapon Multi-Shot Chance (+9.15%). He says you could run it as your primary and do just fine. |
 
 | Talent | Base version | His reading |
 |---|---|---|
 | **Enhancement Trade** | +6% Skill Intensity for each 20% of the magazine emptied, for 8 seconds, up to 4 stacks; 1-second cooldown | II: +8.4% per stack |
-| **Adaptation** | Body shots +4.80% Skill Duration, headshots +6% Skill Intensity, each for 8 seconds | II: +6.2% and +8.4%. The headshot number fits the usual rank II step (about 1.4x on most talents we've checked); the body-shot one doesn't, so check your own tooltip. He has seen three Adaptation stacks active at once and isn't sure how. |
-| **Torrential Downpour** | 10 hits within 5 seconds grant +22.50% Engineering for 12 seconds | II: he reads +31% here (the II value is +31.50% on our other builds) |
+| **Adaptation** | Body shots +4.80% Skill Duration, headshots +6% Skill Intensity, each for 8 seconds | II: he reads +6.2% and +8.4%, but his MP7's tooltip shows the body-shot bonus at +6.72%, so both fit the usual rank II step (1.4x the base). He has seen three Adaptation stacks active at once and isn't sure how. |
+| **Torrential Downpour** | 10 hits within 5 seconds grant +22.50% Engineering for 12 seconds | II: he reads +31%, and his Vector's tooltip shows +31.50% |
 | **Last Stand** | Hits behind cover grant +24% Skill Duration for 10 seconds | Same 24% |
 
 **His MP7 trick:** he empties the magazine down to about 15 rounds, then fires single shots inside the last 20% of the magazine to build Enhancement Trade stacks, and says it "jacks up the skill intensity" by a lot. Our database's tooltip ties stacks to each 20% of the magazine you empty, so we can't promise single shots beat steady fire. "Prepping my gun," as he calls it, means building Adaptation and Enhancement Trade stacks first, then casting every skill while they're active.

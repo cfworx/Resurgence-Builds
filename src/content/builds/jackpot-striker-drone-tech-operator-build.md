@@ -8,7 +8,7 @@ description: "Tech Operator Offensive Ops build: Jackpot 4pc + Striker Drone cri
 keywords: ["Division Resurgence Tech Operator build", "Division Resurgence Striker Drone build", "Division Resurgence Jackpot build", "Division Resurgence Engineering build", "Hunting M44 build Resurgence", "Fire Cycle Jackpot build", "Division Resurgence skill crit build", "Rampart OS Protocol build"]
 canonical: https://resurgencebuilds.com/builds/jackpot-striker-drone-tech-operator-build/
 tags: [Tech Operator, Striker Drone, Jackpot, Fire Cycle, Engineering, Skill Crit, Rampart, Build]
-lastUpdated: 2026-10-28
+lastUpdated: 2026-10-29
 specialization: "Tech Operator"
 subclass: "Offensive Operations"
 playstyle: "DPS"
@@ -19,12 +19,15 @@ featuredImage: "/images/builds/jackpot-striker-drone-hero.webp"
 imageAlt: "Tech Operator Striker Drone Build with Jackpot and Fire Cycle in Division Resurgence"
 shareTitle: "Share a Tech Operator violation"
 shareText: "Tag your worst Rampart reset (you know, the one where you stepped off cover for the loot crate and watched six stacks evaporate one second before the boss died)."
+sources:
+  - '<a href="https://www.youtube.com/watch?v=ufNZIXHoR00">Demø2x, Updated PVE Tech Operator Build</a>, October 14, 2026 (the creator check and top-tier skill mod readings).'
+  - 'In-game Division Resurgence Build Database, checked October 28, 2026.'
 plannerHash: "s=Tech+Operator&sc=Offensive+Operations&n=Jackpot+Striker+Drone&ms=gs-7&m1=scc&m2=scd&gs=gs-11&g1=scc&g2=scd&hs=gs-11&h1=scc&h2=scd&cs=gs-7&ct=ba-14&c1=mhp&c2=scd&ps=gs-7&pt=bp-17&p1=scc&p2=sms&ks=gs-7&k1=scc&k2=sms&w1s=sw-29&w1tr=T2&w1t=wt-17&w1t2=wt-3&w1b1=sms&w1b2=scd&w2s=sw-33&w2t=wt-66&w2t2=wt-42&w2b1=sms&w2b2=rh&os=os-6&sm1=smc-20&sm2=smc-23&sm3=smc-26"
 faqs:
   - question: "What is the best Tech Operator build in Division Resurgence?"
     answer: "A Jackpot 4-piece plus Fire Cycle 2-piece Skill Crit build using Hunting M44 and Mk16 was one of the cleanest Tech Operator Offensive Operations setups when we wrote it up on Patch 1.1.2.2, and Season 2 didn't touch its core pieces. The Striker Drone scales with Engineering, Skill Critical Chance, and Skill Critical Damage. The Jackpot and Fire Cycle sets stack the two crit stats natively, the gear cores supply the Engineering, and Rampart adds another damage layer on top."
   - question: "Why is this build using Hunting M44 instead of an exotic?"
-    answer: "Because the Hunting M44 T2 marksman rifle carries Enhancement Trade II and Ammo Supply, the talent pair this build uses to feed Skill Intensity back into the Striker Drone every magazine. When this was written, no exotic pulled that double duty on Skill Intensity feeding. Since then, Season 1 Phase 3 added the Scorpio and Season 2 added The Bighorn and Diamondback, and we haven't tried any of them on this build. Exotics are shiny. This rifle is useful. You're a dad, you know the difference."
+    answer: "Because the Hunting M44 T2 marksman rifle carries Enhancement Trade II and Ammo Supply, the talent pair this build uses to feed Skill Intensity back into the Striker Drone every magazine. When this was written, no exotic pulled that double duty on Skill Intensity feeding. Since then, Season 1 Phase 3 added the Scorpio and Season 2 added The Bighorn and Diamondback. We haven't tried them on this build, but Demø2x's October 14 version of the same core carries the Scorpio as its second gun, with In Sync II on it, next to a Modified USC. Exotics are shiny. This rifle is useful. You're a dad, you know the difference."
   - question: "Can I run this build without Rampart?"
     answer: "Yes, but the ceiling drops. Surgical Engineering is the cleanest stand-in until you roll Rampart, followed by Tactical Layering. Both keep the build functional. Neither matches six stacks of Rampart: +30% Damage at base, and up to +60% on a fully upgraded copy."
   - question: "Is the Mk16 better than the Vector for the secondary slot?"
@@ -53,6 +56,9 @@ The role is Tech Operator Offensive Operations. You are the drone driver, not th
 
 > [!INFO] Season 2 check: core pieces untouched
 > The Season 2 Phase 1 and Phase 2 balance changes didn't touch Jackpot, Fire Cycle, Rampart, the three skill mod sets (Thermite Charge, Stabilized Flight and Optimized Targeting), or the Hunting M44 and Mk16 talents. Phase 1 did add Skill Crit Chance, Skill Crit Damage and Skill Multi-Shot Chance to the gear mod pool (more places to stack this build's stats) and reworked weapon mods, and Phase 2 added a clearer Tech Operator drone duration indicator. Still last verified on Patch 1.1.2.2. Full details: [Season 2 Phase 1 patch notes](/patch-notes/season-2-phase-1-the-call/) and [Season 2 Phase 2 patch notes](/patch-notes/season-2-phase-2/).
+
+> [!NOTE] Creator check: Demø2x, October 2026
+> [Demø2x](https://www.youtube.com/watch?v=ufNZIXHoR00)'s "Updated PVE Tech Operator build" (October 14, 2026) runs this same core in Season 2 Phase 2: Jackpot 4-piece (mask, gloves, holster, knee pads) with Fire Cycle 2-piece (Ops Armor with Deep Focus, and the AMP24 backpack), Rampart at level 50, and Thermite Charge, Stabilized Flight and Optimized Targeting on the drones. His sheet reads 27.60k Power Score, 975.51k DPS, 84.50% Skill Critical Chance, 181.22% Skill Critical Damage and 29.82% Skill Multi-Shot Chance. The differences from our template: Fire Cycle sits on the chest and backpack instead of the gloves and holster, and the guns are a Modified USC (Torrential Downpour II and Rapid Charge II) and the Scorpio exotic shotgun (Septicemia, with In Sync II among its rolled talents). His Rampart has one Talent Upgrade and reads +6% Damage per stack, which fits the +1% per upgrade in our database.
 
 ## Build Stats at a Glance
 
@@ -93,9 +99,9 @@ If you do not have Rampart yet, **Surgical Engineering** is a serviceable fallba
 
 The skill mods are all built around the Striker Drone with a Drone Overload synergy. Combo sets come in more than one tier, and our [skill mod combo database](/database/skill-mod-combos/) lists the lowest one, so each set below shows the tooltip on this build's set next to the lowest-tier value:
 
-- **Stabilized Flight**: 2-piece +Skill Health 6.0%, 3-piece "Applying Drone Lock grants +9% Skill Critical Hit Chance for 20 seconds" (tooltip on this build's set; the lowest tier reads +6%)
-- **Optimized Targeting**: 2-piece +Skill Health 8.0%, 3-piece "Within 30 seconds of activating Drone Overload, Striker Drone hits have a 10% chance of granting +21.80% Skill Critical Hit Chance for 20 seconds" (tooltip on this build's set; the lowest tier reads +10.80%)
-- **Thermite Charge**: 2-piece +Skill Health 6.0%, 3-piece "Striker Drone Critical Hits have a 7.40% chance of exploding, dealing 300% damage" (tooltip on this build's set; the lowest tier reads a 5% chance)
+- **Stabilized Flight**: 2-piece +Skill Health 6.0%, 3-piece "Applying Drone Lock grants +9% Skill Critical Hit Chance for 20 seconds" (tooltip on this build's set; the lowest tier reads +6%, and [Demø2x](https://www.youtube.com/watch?v=ufNZIXHoR00)'s set reads +15%)
+- **Optimized Targeting**: 2-piece +Skill Health 8.0%, 3-piece "Within 30 seconds of activating Drone Overload, Striker Drone hits have a 10% chance of granting +21.80% Skill Critical Hit Chance for 20 seconds" (tooltip on this build's set; the lowest tier reads +10.80%, and Demø2x's set reads +27.20%)
+- **Thermite Charge**: 2-piece +Skill Health 6.0%, 3-piece "Striker Drone Critical Hits have a 7.40% chance of exploding, dealing 300% damage" (tooltip on this build's set; the lowest tier reads a 5% chance, and Demø2x's set reads 12.40%)
 
 The reason these three sit together is the chain reaction they trigger. Activate Drone Overload, hit something with Drone Lock, and on these sets you stack a +9% Skill Crit Chance buff (Stabilized Flight) plus a chance at +21.80% Skill Crit Chance (Optimized Targeting). Once the drone is critting, Thermite Charge starts rolling for 7.40% explosion procs at 300% damage on every crit. It is a feedback loop built into the gear.
 
