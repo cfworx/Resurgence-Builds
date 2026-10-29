@@ -252,22 +252,52 @@ async function clearSeeThrough(buffer) {
   return sharp(out, { raw: { width: w, height: h, channels: ch } }).png().toBuffer();
 }
 
-// OS Protocol icons: each protocol's list tile (public/images/os-protocols/, the game's own art from
-// the Build-Making Database list) shows the device on the left and the protocol's symbol on the right.
-// A square around the symbol (78% of the tile's height, against the right edge) is its icon.
+// OS Protocol icons: the talent icon each protocol's card shows under "OS Protocol Talent", next to
+// the talent's name (the white emblem, about 90 px on the stitched cards). It sits below the card's
+// header art and three attribute rows, so it's found rather than assumed: the first run of bright rows
+// at least 55 px tall in the card's left strip, below y 380. A 104 px square around it, with the card's
+// near-black behind the emblem turned to the same grey as the talent and mod icons.
 async function osProtocolIcons(manifest) {
-  const dir = path.join(ROOT, 'public', 'images', 'os-protocols');
+  const srcDir = path.join(EVIDENCE, 'os-protocols');
   const outDir = path.join(OUT, 'os-protocols');
+  const SIZE = 104;
+  const GREY = 43; // #2b2b2b, the talent cards' left panel
   let n = 0;
-  for (const name of fs.readdirSync(dir).filter((f) => f.endsWith('-os-protocol-division-resurgence.webp')).sort()) {
-    const slug = name.replace(/-os-protocol-division-resurgence\.webp$/, '');
+  for (const name of fs.readdirSync(srcDir).filter((f) => f.endsWith('.webp')).sort()) {
+    const slug = name.replace(/\.webp$/, '');
     if (!manifest[`os-protocols/${slug}`]) continue; // only protocols with a page
-    const file = path.join(dir, name);
-    const { width, height } = await sharp(file).metadata();
-    const size = Math.round(height * 0.78);
-    const left = width - size - Math.round(width * 0.01);
-    const icon = await sharp(file).extract({ left, top: 0, width: size, height: size }).toBuffer();
-    manifest[`os-protocols/${slug}`].icon = await writeVariants(icon, outDir, `${slug}-os-protocol-icon-division-resurgence`, [80, size], size);
+    const clean = path.join(srcDir, 'clean', name);
+    const file = fs.existsSync(clean) ? clean : path.join(srcDir, name);
+    const { data, info } = await sharp(file).removeAlpha().greyscale().raw().toBuffer({ resolveWithObject: true });
+    const { width: W, height: H } = info;
+    const bright = (y) => { for (let x = 22; x < 132; x++) if (data[y * W + x] > 190) return true; return false; };
+    const runs = [];
+    let start = -1;
+    for (let y = 380; y <= Math.min(H, 760); y++) {
+      const b = y < Math.min(H, 760) && bright(y);
+      if (b && start < 0) start = y;
+      if (!b && start >= 0) {
+        if (runs.length && start - runs[runs.length - 1][1] <= 4) runs[runs.length - 1][1] = y - 1;
+        else runs.push([start, y - 1]);
+        start = -1;
+      }
+    }
+    const run = runs.find(([a, b]) => b - a >= 55);
+    if (!run) throw new Error(`${name}: no talent icon found`);
+    let x0 = W, x1 = 0;
+    for (let y = run[0]; y <= run[1]; y++) for (let x = 22; x < 132; x++) if (data[y * W + x] > 190) { x0 = Math.min(x0, x); x1 = Math.max(x1, x); }
+    const left = Math.round((x0 + x1) / 2 - SIZE / 2);
+    const top = Math.round((run[0] + run[1]) / 2 - SIZE / 2);
+    const crop = await sharp(file).removeAlpha().extract({ left, top, width: SIZE, height: SIZE }).raw().toBuffer();
+    // Recolour: the emblem is white on near-black, so brightness says how much of a pixel is emblem.
+    const out = Buffer.alloc(crop.length);
+    for (let i = 0; i < crop.length; i += 3) {
+      const l = (crop[i] + crop[i + 1] + crop[i + 2]) / 3;
+      const a = Math.max(0, Math.min(1, (l - 22) / (235 - 22)));
+      for (let c = 0; c < 3; c++) out[i + c] = Math.round(GREY + (crop[i + c] - GREY) * a);
+    }
+    const icon = await sharp(out, { raw: { width: SIZE, height: SIZE, channels: 3 } }).png().toBuffer();
+    manifest[`os-protocols/${slug}`].icon = await writeVariants(icon, outDir, `${slug}-os-protocol-talent-icon-division-resurgence`, [80, SIZE], SIZE);
     n += 2;
   }
   return n;
