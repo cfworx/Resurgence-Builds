@@ -38,233 +38,49 @@ videoChannel: "AgentHuntzman"
 videoUploadDate: "2026-04-25T17:46:14-07:00"
 videoDuration: "PT16M45S"
 ---
+AgentHuntzman's Recon lets the squad do the killing. **Two guns stack Engineering, Smart Cover turns it into Weapon Damage for everyone behind it, and Scanning Pulse makes the targets take more.**
 
-## What This Build Does
-
-> Build credit: [**AgentHuntzman**](https://www.youtube.com/watch?v=b1ZjnGeeRKI). Go watch his breakdown and drop a sub.
-
-> [!INFO] Support Build: Low Personal DPS
-> Your personal DPS number will look embarrassing on this build. That's by design. Recon buffs your entire squad's damage output instead. Judge this build by your team's total clear time, not your individual stats. If you need to see big personal numbers, this isn't the build for you.
-
-This is the Vanguard Recon, a full team-support build that triples your squad's damage output. You don't kill things. You make your entire team kill things three times faster.
-
-The loop is simple: stack Engineering through Torrential Downpour and Fully Charged, convert it into team-wide weapon damage through Tactical Smart Cover, debuff enemies with Scanning Pulse, and boost everyone's rate of fire with Tactical Link. Your personal DPS will look embarrassing. Your team's total output will be disgusting.
-
-> [!WARNING] Season 1 Phase 3 and Season 2 changes that affect this build
-> - **Recon (Season 1 Phase 3, June 24):** Ubisoft fixed Recon "passively dealing more damage than expected" without saying which effect. That patch went live after this page's May 24 update. This build lives on team buffs, so the hit is probably small, but retest.
-> - **Tactical Link (Season 2 Phase 1):** Recon's Tactical Link now gets improved auto-aim support. That's your signature, so if anything it should feel better.
-> - **Weapon attributes (Season 2 Phase 1):** Blast, Shredding and Piercing Weapon/Skill Damage were removed from the weapon attribute pool in favor of All Weapon Damage and All Skill Damage. The Weapon Piercing Damage pick for the P90 below can't roll on new drops anymore, and neither can the Weapon Blast Damage we used to list for the M4.
-> - **Weapon mods (Season 2 Phase 1):** New weapon mods get +100% main stat and -25% bonus attributes. The roughly 45% SMG tactical-mod reload figure below was measured on old mods, so retest it.
-> - **Vulnerability effects (Season 2 Phase 2):** Ubisoft fixed "some instance of 'Enemy take increased damage' effects not working properly" without naming them. Exposed and the Scanning Pulse vulnerability are that kind of effect, so your debuffs may land differently now. Retest before you trust the math below.
->
-> This build has not been re-tested since its May 2026 update. Full details: [Season 1 Phase 3 patch notes](/patch-notes/season-1-phase-3-a-new-fire/), [Season 2 Phase 1 patch notes](/patch-notes/season-2-phase-1-the-call/) and [Season 2 Phase 2 patch notes](/patch-notes/season-2-phase-2/).
-
----
+Build by **AgentHuntzman**, posted in April 2026 on Patch 1.1.1.
 
 ## The Build
 
-### Gear
+<div class="bsheet"><div class="bsheet__group"><p class="bsheet__label">Weapons</p><div class="bsheet__item"><img class="bsheet__tile bsheet__tile--wide" src="/images/db/weapon-icons/police-m4-weapon-icon-division-resurgence-165.webp" srcset="/images/db/weapon-icons/police-m4-weapon-icon-division-resurgence-165.webp 165w, /images/db/weapon-icons/police-m4-weapon-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 150px" width="150" height="71" alt="Police M4 assault rifle in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/weapons/police-m4/">Police M4</a><span class="bsheet__sub">Primary · T1 Assault Rifle</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/weapon-talents/torrential-downpour-weapon-talent-icon-division-resurgence-80.webp" srcset="/images/db/weapon-talents/torrential-downpour-weapon-talent-icon-division-resurgence-80.webp 80w, /images/db/weapon-talents/torrential-downpour-weapon-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Torrential Downpour</span><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/weapon-talents/rapid-charge-weapon-talent-icon-division-resurgence-80.webp" srcset="/images/db/weapon-talents/rapid-charge-weapon-talent-icon-division-resurgence-80.webp 80w, /images/db/weapon-talents/rapid-charge-weapon-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Rapid Charge</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile bsheet__tile--wide" src="/images/db/weapon-icons/p90-weapon-icon-division-resurgence-165.webp" srcset="/images/db/weapon-icons/p90-weapon-icon-division-resurgence-165.webp 165w, /images/db/weapon-icons/p90-weapon-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 150px" width="150" height="71" alt="P90 smg in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/weapons/p90/">P90</a><span class="bsheet__sub">Secondary · T1 SMG</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/weapon-talents/torrential-downpour-weapon-talent-icon-division-resurgence-80.webp" srcset="/images/db/weapon-talents/torrential-downpour-weapon-talent-icon-division-resurgence-80.webp 80w, /images/db/weapon-talents/torrential-downpour-weapon-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Torrential Downpour</span><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/weapon-talents/fully-charged-weapon-talent-icon-division-resurgence-80.webp" srcset="/images/db/weapon-talents/fully-charged-weapon-talent-icon-division-resurgence-80.webp 80w, /images/db/weapon-talents/fully-charged-weapon-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Fully Charged</span></span></div></div></div><div class="bsheet__group"><p class="bsheet__label">OS Protocol and skill mods</p><div class="bsheet__grid2"><div class="bsheet__item"><img class="bsheet__sq" src="/images/db/os-protocols/pressing-matter-os-protocol-talent-icon-division-resurgence-80.webp" srcset="/images/db/os-protocols/pressing-matter-os-protocol-talent-icon-division-resurgence-80.webp 80w, /images/db/os-protocols/pressing-matter-os-protocol-talent-icon-division-resurgence-104.webp 104w" sizes="56px" width="56" height="56" alt="Pressing Matter OS Protocol icon" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/os-protocols/pressing-matter/">Pressing Matter</a><span class="bsheet__sub">OS Protocol · Superior</span><span class="bsheet__picks"></span></div></div><div class="bsheet__item"><img class="bsheet__sq" src="/images/db/skill-mod-combos/advanced-position-skill-mod-combo-icon-division-resurgence-80.webp" srcset="/images/db/skill-mod-combos/advanced-position-skill-mod-combo-icon-division-resurgence-80.webp 80w, /images/db/skill-mod-combos/advanced-position-skill-mod-combo-icon-division-resurgence-160.webp 160w" sizes="56px" width="56" height="56" alt="" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/skill-mod-combos/advanced-position/">Advanced Position</a><span class="bsheet__sub">Smart Cover mods</span><span class="bsheet__picks"></span></div></div><div class="bsheet__item"><img class="bsheet__sq" src="/images/db/skill-mod-combos/pulse-feedback-skill-mod-combo-icon-division-resurgence-80.webp" srcset="/images/db/skill-mod-combos/pulse-feedback-skill-mod-combo-icon-division-resurgence-80.webp 80w, /images/db/skill-mod-combos/pulse-feedback-skill-mod-combo-icon-division-resurgence-160.webp 160w" sizes="56px" width="56" height="56" alt="" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/skill-mod-combos/pulse-feedback/">Pulse Feedback</a><span class="bsheet__sub">Scanning Pulse mods</span><span class="bsheet__picks"></span></div></div><div class="bsheet__item"><img class="bsheet__sq" src="/images/db/skill-mod-combos/bugle-call-skill-mod-combo-icon-division-resurgence-80.webp" srcset="/images/db/skill-mod-combos/bugle-call-skill-mod-combo-icon-division-resurgence-80.webp 80w, /images/db/skill-mod-combos/bugle-call-skill-mod-combo-icon-division-resurgence-160.webp 160w" sizes="56px" width="56" height="56" alt="" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/skill-mod-combos/bugle-call/">Bugle Call</a><span class="bsheet__sub">Tactical Link mods</span><span class="bsheet__picks"></span></div></div></div></div><div class="bsheet__group bsheet__group--wide"><p class="bsheet__label">Gear · 4pc Mechanical Expert + 2pc Boom-Shakalaka</p><div class="bsheet__cols"><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/javelina-mask-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/javelina-mask-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/javelina-mask-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="Javelina Mask in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#javelina-mask">Boom-Shakalaka mask</a><span class="bsheet__sub">Mask · any tier</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/boom-shakalaka-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/boom-shakalaka-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/boom-shakalaka-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Boom-Shakalaka</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/neptune-protection-gloves-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/neptune-protection-gloves-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/neptune-protection-gloves-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="&quot;Neptune&quot; Protection Gloves in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#neptune-protection-gloves">Mechanical Expert gloves</a><span class="bsheet__sub">Gloves · any tier</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/mechanical-expert-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/mechanical-expert-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/mechanical-expert-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Mechanical Expert</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/jaivardhan-thigh-rig-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/jaivardhan-thigh-rig-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/jaivardhan-thigh-rig-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="Jaivardhan Thigh Rig in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#jaivardhan-thigh-rig">Boom-Shakalaka holster</a><span class="bsheet__sub">Holster · any tier</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/boom-shakalaka-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/boom-shakalaka-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/boom-shakalaka-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Boom-Shakalaka</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/patella-knee-cups-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/patella-knee-cups-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/patella-knee-cups-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="&quot;Patella&quot; Knee Cups in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#patella-knee-cups">Mechanical Expert knee pads</a><span class="bsheet__sub">Knee pads · any tier</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/mechanical-expert-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/mechanical-expert-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/mechanical-expert-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Mechanical Expert</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/flimsy-body-armor-v2-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/flimsy-body-armor-v2-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/flimsy-body-armor-v2-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="Flimsy Body Armor v2 in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#flimsy-body-armor-v2">Flimsy Body Armor v2</a><span class="bsheet__sub">Body armor · T1</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/mechanical-expert-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/mechanical-expert-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/mechanical-expert-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Mechanical Expert</span><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/body-armor-talents/socialite-body-armor-talent-icon-division-resurgence-80.webp" srcset="/images/db/body-armor-talents/socialite-body-armor-talent-icon-division-resurgence-80.webp 80w, /images/db/body-armor-talents/socialite-body-armor-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Socialite</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/horo-carryback-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/horo-carryback-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/horo-carryback-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="&quot;Horo&quot; CarryBack in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#horo-carryback">&quot;Horo&quot; CarryBack</a><span class="bsheet__sub">Backpack · T1</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/mechanical-expert-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/mechanical-expert-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/mechanical-expert-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Mechanical Expert</span><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/backpack-talents/brainstorm-backpack-talent-icon-division-resurgence-80.webp" srcset="/images/db/backpack-talents/brainstorm-backpack-talent-icon-division-resurgence-80.webp 80w, /images/db/backpack-talents/brainstorm-backpack-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Brainstorm</span></span></div></div></div></div></div>
 
-| Slot | Set | Talent | Core | Attribute Bonus 1 | Attribute Bonus 2 |
-|---|---|---|---|---|---|
-| Mask | Boom-Shakalaka | - | Engineering | Skill Cooldown Recovery | Skill Duration |
-| Body Armor | Mechanical Expert | **Socialite** | Engineering | Armor | Damage Reduction |
-| Backpack | Mechanical Expert | **Brainstorm** | Engineering | Skill Duration | Skill Cooldown Recovery |
-| Gloves | Mechanical Expert | - | Engineering | Skill Duration | Skill Cooldown Recovery |
-| Holster | Boom-Shakalaka | - | Engineering | Sig. Ability Charge Efficiency | Skill Duration |
-| Kneepads | Mechanical Expert | - | Engineering | Skill Cooldown Recovery | Weapon Damage |
+**Attributes:** Engineering cores on every piece. Skill Duration and Skill Cooldown Recovery on most rolls, with Signature Ability Charge Efficiency on the holster, Weapon Damage on the knee pads, and Armor plus Damage Reduction on the body armor (Socialite's +36% Armor grows with it). All Weapon Damage and Weapon Damage on both guns, and a tactical mod on each. [Open it in the Build Planner](/builder/#s=Vanguard&sc=Recon&n=Vanguard+Recon+Support&ms=gs-10&m1=scr&m2=sdu&gs=gs-12&g1=sdu&g2=scr&hs=gs-10&h1=sace&h2=sdu&cs=gs-12&ct=ba-20&c1=arm&c2=dr&ps=gs-12&pt=bp-2&p1=sdu&p2=scr&ks=gs-12&k1=scr&k2=wd&w1s=sw-2&w1t=wt-66&w1t2=wt-42&w1b1=awd&w1b2=wd&w2s=sw-45&w2t=wt-66&w2t2=wt-20&w2b1=awd&w2b2=wd&os=os-14&sm1=smc-72&sm2=smc-57&sm3=smc-59) to copy the whole loadout.
 
-### Loadout
+**Recon tree:** Exposed, Foxhole, Entrenched and Target Rich Environment at 3/3, Friendly Hand and Combat Inspiration at 2/2.
 
-| Slot | Item | Details |
-|---|---|---|
-| **Primary** | Police M4 (AR) | Torrential Downpour + Rapid Charge |
-| **Secondary** | P90 (SMG) | Torrential Downpour + Fully Charged |
-| **OS Protocol** | Pressing Matter | Skill Intensity +12% main stat, Engineering +77 and a +10% Skill Cooldown Recovery talent (base values; levelling raises the main stat and talent upgrades raise the talent) |
-| **Skill 1** | Tactical Smart Cover | Team weapon damage buff based on your Engineering |
-| **Skill 2** | Scanning Pulse | Applies Target Vulnerability and Exposed debuff to enemies hit |
-| **Signature** | Tactical Link | Your signature. The Rate of Fire, Damage Reduction and Movement Speed buffs in this build come from its Bugle Call mod (below) |
+## How It Works
 
-### Skill Mods
+<div class="syn__wrap"><div class="syn__group"><p class="syn__title">1 · Stack Engineering</p><div class="syn"><div class="syn__card"><img class="syn__icon" src="/images/db/weapon-talents/torrential-downpour-weapon-talent-icon-division-resurgence-80.webp" srcset="/images/db/weapon-talents/torrential-downpour-weapon-talent-icon-division-resurgence-80.webp 80w, /images/db/weapon-talents/torrential-downpour-weapon-talent-icon-division-resurgence-160.webp 160w" sizes="52px" width="52" height="52" alt="" loading="lazy" decoding="async"><div><p class="syn__name">Torrential Downpour</p><p class="syn__when">10 hits within 5 s (both guns)</p><p class="syn__bonus">+22.5% Engineering for 12 s</p></div></div><div class="syn__card"><img class="syn__icon" src="/images/db/weapon-talents/fully-charged-weapon-talent-icon-division-resurgence-80.webp" srcset="/images/db/weapon-talents/fully-charged-weapon-talent-icon-division-resurgence-80.webp 80w, /images/db/weapon-talents/fully-charged-weapon-talent-icon-division-resurgence-160.webp 160w" sizes="52px" width="52" height="52" alt="" loading="lazy" decoding="async"><div><p class="syn__name">Fully Charged</p><p class="syn__when">reloading an empty magazine (P90)</p><p class="syn__bonus">+7.5% Engineering for 12 s, up to 3 stacks</p></div></div><div class="syn__card"><img class="syn__icon" src="/images/db/os-protocols/pressing-matter-os-protocol-talent-icon-division-resurgence-80.webp" srcset="/images/db/os-protocols/pressing-matter-os-protocol-talent-icon-division-resurgence-80.webp 80w, /images/db/os-protocols/pressing-matter-os-protocol-talent-icon-division-resurgence-104.webp 104w" sizes="52px" width="52" height="52" alt="" loading="lazy" decoding="async"><div><p class="syn__name">Pressing Matter</p><p class="syn__when">always</p><p class="syn__bonus">+12% Skill Intensity and +77 Engineering. Talent: +10% Skill Cooldown Recovery</p></div></div></div></div><div class="syn__group"><p class="syn__title">2 · Skills never drop</p><div class="syn"><div class="syn__card"><img class="syn__icon" src="/images/db/gear-set-effects/mechanical-expert-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/mechanical-expert-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/mechanical-expert-gear-set-icon-division-resurgence-160.webp 160w" sizes="52px" width="52" height="52" alt="" loading="lazy" decoding="async"><div><p class="syn__name">Mechanical Expert, 4 pieces</p><p class="syn__when">always</p><p class="syn__bonus">+9.6% Skill Duration, -9% Skill Cooldown, +24% Signature Ability Charge Efficiency</p></div></div><div class="syn__card"><img class="syn__icon" src="/images/db/gear-set-effects/boom-shakalaka-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/boom-shakalaka-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/boom-shakalaka-gear-set-icon-division-resurgence-160.webp 160w" sizes="52px" width="52" height="52" alt="" loading="lazy" decoding="async"><div><p class="syn__name">Boom-Shakalaka, 2 pieces</p><p class="syn__when">always</p><p class="syn__bonus">-6% Skill Cooldown</p></div></div><div class="syn__card"><img class="syn__icon" src="/images/db/backpack-talents/brainstorm-backpack-talent-icon-division-resurgence-80.webp" srcset="/images/db/backpack-talents/brainstorm-backpack-talent-icon-division-resurgence-80.webp 80w, /images/db/backpack-talents/brainstorm-backpack-talent-icon-division-resurgence-160.webp 160w" sizes="52px" width="52" height="52" alt="" loading="lazy" decoding="async"><div><p class="syn__name">Brainstorm</p><p class="syn__when">always, more near an ally</p><p class="syn__bonus">+15% Skill Duration, another +15% within 20 m of an ally</p></div></div></div></div><div class="syn__group"><p class="syn__title">3 · Signature on repeat</p><div class="syn"><div class="syn__card"><img class="syn__icon" src="/images/db/weapon-talents/rapid-charge-weapon-talent-icon-division-resurgence-80.webp" srcset="/images/db/weapon-talents/rapid-charge-weapon-talent-icon-division-resurgence-80.webp 80w, /images/db/weapon-talents/rapid-charge-weapon-talent-icon-division-resurgence-160.webp 160w" sizes="52px" width="52" height="52" alt="" loading="lazy" decoding="async"><div><p class="syn__name">Rapid Charge</p><p class="syn__when">5 hits in 3 s (Police M4)</p><p class="syn__bonus">+50 Signature Ability Charge</p></div></div><div class="syn__card"><img class="syn__icon" src="/images/db/skill-mod-combos/advanced-position-skill-mod-combo-icon-division-resurgence-80.webp" srcset="/images/db/skill-mod-combos/advanced-position-skill-mod-combo-icon-division-resurgence-80.webp 80w, /images/db/skill-mod-combos/advanced-position-skill-mod-combo-icon-division-resurgence-160.webp 160w" sizes="52px" width="52" height="52" alt="" loading="lazy" decoding="async"><div><p class="syn__name">Advanced Position</p><p class="syn__when">kills or assists behind Smart Cover</p><p class="syn__bonus">+10 Signature Ability Charge, for allies too</p></div></div><div class="syn__card"><img class="syn__icon" src="/images/db/skill-mod-combos/pulse-feedback-skill-mod-combo-icon-division-resurgence-80.webp" srcset="/images/db/skill-mod-combos/pulse-feedback-skill-mod-combo-icon-division-resurgence-80.webp 80w, /images/db/skill-mod-combos/pulse-feedback-skill-mod-combo-icon-division-resurgence-160.webp 160w" sizes="52px" width="52" height="52" alt="" loading="lazy" decoding="async"><div><p class="syn__name">Pulse Feedback</p><p class="syn__when">each pulsed enemy</p><p class="syn__bonus">+8 Signature Ability Charge to the ally team</p></div></div></div></div><div class="syn__group"><p class="syn__title">4 · Link up, hold the line</p><div class="syn"><div class="syn__card"><img class="syn__icon" src="/images/db/skill-mod-combos/bugle-call-skill-mod-combo-icon-division-resurgence-80.webp" srcset="/images/db/skill-mod-combos/bugle-call-skill-mod-combo-icon-division-resurgence-80.webp 80w, /images/db/skill-mod-combos/bugle-call-skill-mod-combo-icon-division-resurgence-160.webp 160w" sizes="52px" width="52" height="52" alt="" loading="lazy" decoding="async"><div><p class="syn__name">Bugle Call</p><p class="syn__when">deploying Tactical Link</p><p class="syn__bonus">+14.4% Rate of Fire, Damage Reduction and Movement Speed for 15 s. The card doesn&#x27;t say whether allies get it</p></div></div><div class="syn__card"><img class="syn__icon" src="/images/db/body-armor-talents/socialite-body-armor-talent-icon-division-resurgence-80.webp" srcset="/images/db/body-armor-talents/socialite-body-armor-talent-icon-division-resurgence-80.webp 80w, /images/db/body-armor-talents/socialite-body-armor-talent-icon-division-resurgence-160.webp 160w" sizes="52px" width="52" height="52" alt="" loading="lazy" decoding="async"><div><p class="syn__name">Socialite</p><p class="syn__when">within 20 m of an enemy</p><p class="syn__bonus">+36% Armor. With no enemy within 20 m: +10% Movement Speed</p></div></div></div></div></div>
 
-| Skill | Mod | Effect |
-|---|---|---|
-| Tactical Smart Cover | **Advanced Position** | Kills/assists behind cover grant +10 Sig. Ability charge to the whole team |
-| Scanning Pulse | **Pulse Feedback** | Pulsed enemies grant +8 Sig. Ability charge to the ally team |
-| Tactical Link | **Bugle Call** | Deploying Tactical Link grants +14.40% Rate of Fire, Damage Reduction, and Movement Speed for 15 seconds (lowest tier). The tooltip doesn't say whether allies get these buffs too |
+Base values from the in-game Build-Making Database.
 
-**Alternatives worth knowing:**
-- Smart Cover: **Field Bastion** (kills/assists grant allies Extra Health equal to 120% Engineering for 10s) if your team is dying before they can deal damage
-- Scanning Pulse: **Targeted Surveillance** (grants Pulsed allies Weapon Crit Hit Chance equal to 3.60% Engineering for 10s) for harder PvE content with tankier enemies
+## How to Play
 
----
+1. **Smart Cover where the squad fights.** Everyone behind it gets Weapon Damage from your Engineering (about 24% of it, by community testing), and Foxhole Fortifies them: health on hit equal to 450% of your Engineering for 3 s.
+2. **Scanning Pulse the pack.** Exposed makes pulsed enemies take +10% damage, and each one feeds the team 8 Signature charge.
+3. **Police M4 to proc, then swap.** 10 hits in 5 s for Torrential Downpour, 5 in 3 s for Rapid Charge's 50 Signature charge.
+4. **Run the P90 dry and reload.** Every empty reload is a Fully Charged stack, up to 3.
+5. **Tactical Link the moment it's up.** Bugle Call fires on deploy, and Target Rich Environment adds Accuracy, Stability and Reload Speed for each enemy within 20 m.
 
-## Why Each Piece Matters
+## His Numbers
 
-### Engineering on Every Piece
+<div class="stat-tiles"><div class="stat-tile"><p class="stat-tile__big">17.44 s</p><p class="stat-tile__label">Scanning Pulse duration on his sheet, on a 14.94 s cooldown</p></div><div class="stat-tile"><p class="stat-tile__big">41.20 s</p><p class="stat-tile__label">Smart Cover duration, on a 35.59 s cooldown</p></div><div class="stat-tile"><p class="stat-tile__big">+46%</p><p class="stat-tile__label">Skill Radius from his Intense Performance II backpack</p></div></div>
 
-AgentHuntzman's video shows mixed cores (Toughness on Body Armor, Firepower on backpack/gloves/kneepads). We recommend Engineering on every piece. More Engineering = more Smart Cover weapon damage for the whole team. That's the entire point of the build.
+On his sheet both skills outlast their cooldowns, which is why we lean on Skill Duration. Your own DPS will look low. Judge the build by how fast the squad clears.
 
-### Mechanical Expert 4-Piece
+## Before You Copy It
 
-The 2pc (+9.6% Skill Duration) and 3pc (-9.0% CDR) keep your skills cycling with near-permanent uptime. The 4pc boosts SAC Efficiency, meaning your Tactical Link charges faster from all sources. These are our database's set bonus values. Gear sets haven't been re-checked in game yet, but TikTokAndy's in-game Long-term Effect bonuses read exactly our database's numbers (see our [Aegis team healer build](/builds/aegis-team-healer-tech-operator-build-tiktokandy/)), so we expect these to hold.
+- **The sheet is our take on his build.** His video shows a Toughness core on the body armor, Firepower on the backpack, gloves and knee pads, mostly Skill Intensity rolls and Intense Performance II on the backpack. We put Engineering on every piece, swap most of the Intensity for Duration, Cooldown Recovery and Signature charge (nobody has pinned down what Intensity does here), and run Brainstorm, because extra Skill Radius mostly covers empty floor.
+- **Recon changed after his video.** Season 1 Phase 3 fixed Recon "passively dealing more damage than expected" without naming the effect, Season 2 Phase 1 gave Tactical Link better auto-aim, and Season 2 Phase 2 fixed some "Enemy take increased damage" effects, which may change how Exposed lands. We haven't retested the build since May 2026.
 
-### Boom-Shakalaka 2-Piece
+## Swaps
 
-The 2pc (-6.0% CDR) stacks with Mechanical Expert's 3pc for even faster skill cycling. You only slot 2 pieces, so the 3pc and 4pc bonuses are not active.
+<div class="bsheet bsheet--single"><div class="bsheet__group"><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/ops-armor-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/ops-armor-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/ops-armor-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="Ops Armor in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><span class="bsheet__name">More uptime, less armor?</span><span class="bsheet__sub">Deep Focus: +28% Skill Duration, -10% Skill Radius, on the Ops Armor (T2) or Flimsy Body Armor v2 (T1). Accelerated Charge: kills and assists behind cover give +30% Signature Ability Charge Efficiency for 8 s, on the Ops Armor only. Neither has been tested against Socialite.</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/body-armor-talents/deep-focus-body-armor-talent-icon-division-resurgence-80.webp" srcset="/images/db/body-armor-talents/deep-focus-body-armor-talent-icon-division-resurgence-80.webp 80w, /images/db/body-armor-talents/deep-focus-body-armor-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async"><a href="/database/body-armor-talents/#deep-focus">Deep Focus</a></span><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/body-armor-talents/accelerated-charge-body-armor-talent-icon-division-resurgence-80.webp" srcset="/images/db/body-armor-talents/accelerated-charge-body-armor-talent-icon-division-resurgence-80.webp 80w, /images/db/body-armor-talents/accelerated-charge-body-armor-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async"><a href="/database/body-armor-talents/#accelerated-charge">Accelerated Charge</a></span><span class="bsheet__pick"><a href="/database/gear/#ops-armor">Ops Armor (T2)</a></span></span></div></div><div class="bsheet__item"><img class="bsheet__sq" src="/images/db/skill-mod-combos/field-bastion-skill-mod-combo-icon-division-resurgence-80.webp" srcset="/images/db/skill-mod-combos/field-bastion-skill-mod-combo-icon-division-resurgence-80.webp 80w, /images/db/skill-mod-combos/field-bastion-skill-mod-combo-icon-division-resurgence-160.webp 160w" sizes="56px" width="56" height="56" alt="" loading="lazy" decoding="async"><div class="bsheet__text"><span class="bsheet__name">Squad dying, or enemies too tanky?</span><span class="bsheet__sub">Field Bastion on Smart Cover: kills or assists behind it give allies Extra Health equal to 120% Engineering for 10 s. Targeted Surveillance on Scanning Pulse: pulsed allies get Weapon Crit Chance equal to 3.6% Engineering for 10 s.</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/skill-mod-combos/field-bastion-skill-mod-combo-icon-division-resurgence-80.webp" srcset="/images/db/skill-mod-combos/field-bastion-skill-mod-combo-icon-division-resurgence-80.webp 80w, /images/db/skill-mod-combos/field-bastion-skill-mod-combo-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async"><a href="/database/skill-mod-combos/field-bastion/">Field Bastion</a></span><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/skill-mod-combos/targeted-surveillance-skill-mod-combo-icon-division-resurgence-80.webp" srcset="/images/db/skill-mod-combos/targeted-surveillance-skill-mod-combo-icon-division-resurgence-80.webp 80w, /images/db/skill-mod-combos/targeted-surveillance-skill-mod-combo-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async"><a href="/database/skill-mod-combos/targeted-surveillance/">Targeted Surveillance</a></span></span></div></div><div class="bsheet__item"><img class="bsheet__tile bsheet__tile--wide" src="/images/db/weapon-icons/aug-a3-para-xs-weapon-icon-division-resurgence-165.webp" srcset="/images/db/weapon-icons/aug-a3-para-xs-weapon-icon-division-resurgence-165.webp 165w, /images/db/weapon-icons/aug-a3-para-xs-weapon-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 150px" width="150" height="71" alt="AUG A3 Para XS submachine gun in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><span class="bsheet__name">No P90 or Police M4?</span><span class="bsheet__sub">The AUG A3 Para XS is the only other SMG that rolls Torrential Downpour + Fully Charged. The Mk16 and Enhanced ACR-E roll Torrential Downpour + Rapid Charge, like the Police M4.</span><span class="bsheet__picks"><span class="bsheet__pick"><a href="/database/weapons/aug-a3-para-xs/">AUG A3 Para XS (T1 SMG)</a></span><span class="bsheet__pick"><a href="/database/weapons/mk16/">Mk16 (T0 assault rifle)</a></span><span class="bsheet__pick"><a href="/database/weapons/enhanced-acr-e/">Enhanced ACR-E (T1 assault rifle)</a></span></span></div></div><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/amp24-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/amp24-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/amp24-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="AMP24 backpack in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><span class="bsheet__name">His backpack instead?</span><span class="bsheet__sub">Intense Performance: +33% Skill Radius, -5% Skill Duration. His rank II reads +46% Skill Radius. To keep the 4-piece it has to be a Mechanical Expert AMP24 (T2) or &quot;Horo&quot; CarryBack (T1).</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/backpack-talents/intense-performance-backpack-talent-icon-division-resurgence-80.webp" srcset="/images/db/backpack-talents/intense-performance-backpack-talent-icon-division-resurgence-80.webp 80w, /images/db/backpack-talents/intense-performance-backpack-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async"><a href="/database/backpack-talents/#intense-performance">Intense Performance</a></span><span class="bsheet__pick"><a href="/database/gear/#amp24">AMP24 (T2)</a></span><span class="bsheet__pick"><a href="/database/gear/#horo-carryback">&quot;Horo&quot; CarryBack (T1)</a></span></span></div></div></div></div>
 
-### Body Armor: Socialite (And Real Alternatives)
+## Sources
 
-*"Grants +10% Movement Speed when there are no enemies within 20m. Grants +36% Armor while within 20m of an enemy."*
-
-You're sitting in your Smart Cover while enemies push toward you, and it rewards that with a massive armor boost at the moment of contact. Solid pick, and AgentHuntzman's choice.
-
-**Attribute bonuses on the Body Armor:** Roll Armor and Damage Reduction here, not Duration or CDR. The Body Armor is the one survivability slot in the build. Socialite's +36% Armor scales directly off your Armor stat, so more Armor in your bonus slots means a bigger shield when enemies close range. Damage Reduction stacks on top. The rest of your gear handles uptime. The Body Armor handles keeping you alive long enough to use it.
-
-But the Body Armor slot has genuine competitors that are worth knowing:
-
-**Deep Focus:** *"Grants +28% Skill Duration but inflicts -10% Skill Radius."*
-
-This might actually be the better pick for this build. +28% Skill Duration directly extends your Smart Cover uptime and your Scanning Pulse vulnerability window. The -10% Skill Radius penalty sounds scary but does nothing meaningful here: based on current testing, Skill Radius provides minimal benefit to this build: your Smart Cover is placed on a specific piece of cover and your Scanning Pulse already fills a room at base range. If you care more about uptime than staying alive, Deep Focus is worth testing over Socialite.
-
-**Accelerated Charge:** *"Kills and assists behind cover grant +30% Signature Ability Charge Efficiency for 8 seconds."*
-
-More Tactical Link uptime. If your team is getting kills consistently behind your cover (and they will be, because you've tripled their damage), this procs constantly and stacks on top of your existing SAC build. Worth running if Tactical Link uptime is your priority over raw armor.
-
-**Nothing to Lose:** *"Taking damage has a 50% chance of reducing Skill Cooldowns of Skills deployed within 5 seconds by 2%, up to 3 stacks."*
-
-Situationally useful if you're getting pressured, but it requires you to be taking hits to proc. Doesn't fit the play pattern of sitting safely in cover.
-
-We haven't tested these head-to-head yet. If you run Deep Focus or Accelerated Charge and have results, drop them in Discord. This section will get updated.
-
-### Backpack: Brainstorm (Our Recommendation)
-
-*"Grants +15% Skill Duration. Grants an additional +15% Skill Duration when within 20 meters of an ally."*
-
-AgentHuntzman runs **Intense Performance II** (+46% Skill Radius) on his backpack. We recommend **Brainstorm** instead. Based on current testing, Skill Radius provides minimal benefit to this build compared to Duration or CDR. Your Smart Cover is placed on a specific piece of cover, and your Scanning Pulse already covers a room at base radius. Stacking more radius to cover empty space behind you is wasted budget.
-
-Brainstorm gives +30% Skill Duration at all times (you are always near teammates). Smart Cover stays up 30% longer. Scanning Pulse vulnerability lasts 30% longer. Every second of extra uptime is a second your team is doing amplified damage. Duration is king.
-
-### A Note on Skill Intensity
-
-You'll notice we've swapped most Skill Intensity rolls for **Skill Duration**, **Sig. Ability Charge Efficiency**, **Damage Reduction**, and **Skill Cooldown Recovery**. Skill Intensity sounds good on paper but its actual impact on this build is not well documented. The community assumption is that it increases the weapon damage Smart Cover transmits to allies, but exact scaling hasn't been confirmed by testing. Until there are hard numbers, the stats with known impact win. If you test it and get real results, share them in Discord.
-
----
-
-## Skill Duration vs. CDR: Does More CDR Actually Help?
-
-Short answer: at this gear setup, probably not. Here's why.
-
-**Scanning Pulse:** On AgentHuntzman's own sheet in the video (his gear, not exactly the setup on this page), Scanning Pulse reads 17.44 seconds of duration on a 14.94-second cooldown. Duration already beats cooldown with no additional CDR investment. That means you can reapply the debuff before it ever expires. CDR reduces the gap between your recast and the next window, but since there is no gap, stacking more CDR gives you nothing extra on Pulse.
-
-**Tactical Smart Cover:** On the same sheet, Smart Cover reads 41.20 seconds of duration on a 35.59-second cooldown. Same story. Duration wins. Your cover isn't dropping before you can recast it.
-
-**Our gut call:** the CDR you get from Mechanical Expert 3pc + Boom-Shakalaka 2pc + Pressing Matter is already enough. It's baked into the build. Every additional CDR roll you chase after that is wasted. You're buying a faster recast window for a skill that's still active. Stack Skill Duration instead. Longer buffs mean your team is inside a vulnerability window or behind an amplified cover longer per fight. That compounds.
-
-The one exception: if your rotations feel ragged in practice and Smart Cover is actually going down mid-fight, check your CDR rolls before anything else. But if the build is geared correctly, this shouldn't happen.
-
----
-
-## Weapons in Detail
-
-All weapons below assume a **tactical mod is equipped**. SMG tactical mod reduces reload time by roughly 45% (community-tested before the Season 2 weapon mod rework). AR tactical mod improves stability and reduces recoil. These are not optional. Equip them.
-
-### Primary: Police M4 (AR)
-
-- **Torrential Downpour:** Hitting enemies 10 times within 5 seconds grants +22.5% Engineering for 12 seconds. This is your Engineering injection.
-- **Rapid Charge:** Hitting an enemy 5 times in 3 seconds grants +50 Signature Ability charge. This is how you get Tactical Link back fast.
-- **RPM: 850. Magazine: 30.** This is your proc weapon, not your sustained fire weapon. Land your hits, swap to P90.
-- **Ideal attributes:** All Weapon Damage + Weapon Damage. The first slot used to be Weapon Blast Damage, and that roll matched: the in-game Armory lists the Police M4 as a Blast weapon (our recording, October 28, 2026). Season 2 Phase 1 removed damage type bonuses from the weapon attribute pool, so on new drops look for All Weapon Damage in that slot.
-- Torrential Downpour and Rapid Charge can be recalibrated between compatible AR platforms. Whether a specific AR can accept a specific talent depends on its talent pool. Verify in-game before committing a recal.
-
-### Secondary: P90 (SMG)
-
-- **Torrential Downpour:** Same talent, second copy. Different cooldown timer from the primary.
-- **Fully Charged:** Reloading an empty magazine grants +7.50% Engineering for 12 seconds, stacking up to 3 times (+22.50% total). This is the talent that makes the build tick.
-- **RPM: 900. Magazine: 50. Reload: 2.47s base.** With the SMG tactical mod, that reload gets significantly faster. You burn through the magazine in about 3.3 seconds. Every empty reload is a Fully Charged proc, and with the mod equipped the cycle feels near-continuous.
-- **Ideal attributes:** Weapon Piercing Damage + Weapon Damage. Season 2 Phase 1 removed Piercing Damage from the weapon attribute pool, so on new drops look for All Weapon Damage in that slot.
-
-### Why P90 Specifically
-
-This build needs BOTH Torrential Downpour and Fully Charged on the same weapon. You only need one to drop naturally, then recalibrate the other onto it. The P90 can roll both talent slots, which is why AgentHuntzman picked it. Based on community reports, the AUG A3 Para XS also qualifies. The Vector can't roll Fully Charged. The MP7 can't roll Torrential Downpour. If the talent pool has shifted since this was written, verify before you recal.
-
----
-
-## Specialization Focus Upgrades
-
-These are unlocked through the Recon specialization tree and are critical to the build.
-
-| Upgrade | Level | Effect |
-|---|---|---|
-| **Exposed** | 3/3 | Inflicts +10% incoming damage on scanned enemies, deals damage equal to 4% Engineering for 30 seconds, up to 3 stacks. |
-| **Foxhole** | 3/3 | Hiding behind Smart Cover grants **Fortified** to you and all allies. Fortified allies get health on hit equal to **450% of Engineering** for 3 seconds. |
-| **Entrenched** | 3/3 | Grants +4% Damage Reduction to Fortified allies. |
-| **Target Rich Environment** | 3/3 | While using Tactical Link, each enemy within 20m grants +12% Accuracy, Stability, and Reload Speed for 10 seconds, up to 3 stacks (+36% max). |
-| **Friendly Hand** | 2/2 | Grants +10% Damage Reduction for 10 seconds to pulsed allies. |
-| **Combat Inspiration** | 2/2 | Grants +5% Engineering for 10 seconds when an Exposed enemy dies within 30 meters, up to 3 stacks (+15% Engineering). |
-
-Foxhole is the sleeper here. The higher your Engineering, the more health on hit every teammate gets while behind your Smart Cover. Your teammates become borderline unkillable. This is why the build dominates Legendary missions.
-
----
-
-## Smart Cover: What the Description Doesn't Tell You
-
-**Tactical Smart Cover converts a percentage of your Engineering into Weapon Damage for every agent behind cover** (approximately 24% based on community testing). The higher your Engineering, the bigger that bonus.
-
-What it doesn't say upfront: the **Foxhole** specialization node (3/3) grants **Fortified** to every ally behind your cover. While Fortified, allies get health on hit scaled to your Engineering for 3 seconds. On a full Engineering build, that's meaningful health on every shot. Your teammates hit harder and stay alive doing it. This is why the build holds up in Legendary content. The cover is doing two jobs at once.
-
----
-
-## How the Skills Work Together
-
-**Tactical Smart Cover** converts a portion of your Engineering into Weapon Damage for every agent behind the cover (approximately 24% based on community testing). The higher your Engineering, the bigger the weapon damage bonus your whole team gets.
-
-**Scanning Pulse** applies Target Vulnerability and Exposed stacks to enemies. On AgentHuntzman's sheet, duration runs about 17 seconds with a cooldown around 15 seconds, giving near-permanent uptime. Every enemy your Pulse touches takes significantly more damage from your entire team.
-
-**Tactical Link with Bugle Call:** per the in-game database, deploying Tactical Link grants +14.40% Rate of Fire, Damage Reduction, and Movement Speed for 15 seconds (that's the lowest tier). The tooltip doesn't say whether allies get these buffs too, so treat the team-wide part as untested. Duration runs approximately 22 seconds in this setup. Every shot fires faster. Every shot hits enemies who are already debuffed. Every shot is boosted by Smart Cover. Plus Target Rich Environment grants Accuracy, Stability, and Reload Speed during Link.
-
-The team's DPS doesn't just go up. It multiplies across three separate buff stages.
-
----
-
-## Team DPS: Before and After
-
-These are estimates based on each buff's stated value compounding in sequence, not controlled test results. Treat them as a framework for understanding how the buffs layer, not hard numbers.
-
-**Baseline (no support buffs):** 100%
-
-**After Smart Cover** (Engineering conversion to Weapon Damage): significant team damage increase
-
-**After Scanning Pulse** (Target Vulnerability, multiplicative): compounds further
-
-**After Exposed stacks** (increased incoming damage, stacks up to 3): compounds further
-
-**After Tactical Link Bugle Call** (Rate of Fire buff, more shots per second): compounds further
-
-**After Combat Inspiration** (+15% Engineering feeding back into Smart Cover): small additional multiplier
-
-These stack multiplicatively, not additively. The actual output depends on your Engineering total and how many buffs are active at once. If you run it and track real numbers, share them.
-
----
-
-## This Gear on Other Specializations
-
-The gear set (Mechanical Expert 4pc + Boom-Shakalaka 2pc) is not Vanguard-locked. If you have the pieces, you can run it on another specialization and keep the set bonuses. What you lose is everything in the Vanguard Recon tree: Foxhole, Exposed, Friendly Hand, Combat Inspiration, Target Rich Environment. All of that is Recon-specific.
-
-On Vanguard Commando with this gear, you still have Smart Cover, Scanning Pulse, Tactical Link and their skill mods, so Smart Cover still transmits weapon damage and the set CDR still applies. You just don't have Foxhole's health on hit, the Exposed damage stacks, or anything else from the Recon tree. The build functions. It's less effective. Other specializations keep only the set bonuses, because Smart Cover, Scanning Pulse and Tactical Link are Vanguard skills.
-
-Run it on Vanguard Recon when your team coordinates around the cover. If your team scatters, the multipliers don't land and you'd get more value from a build that works independently.
-
----
-
-## Loot Quick-Reference
-
-| Drop | Must Have |
-|---|---|
-| Boom-Shakalaka mask/holster | Engineering core + Skill CDR or Skill Duration |
-| Mechanical Expert Body Armor | Engineering core + Socialite talent |
-| Mechanical Expert backpack | Engineering core + Brainstorm talent |
-| Mechanical Expert gloves/kneepads | Engineering core + Skill CDR or Skill Duration |
-| Police M4 | Torrential Downpour + Rapid Charge |
-| P90 | Torrential Downpour + Fully Charged |
-| Pressing Matter OS Protocol | Always keep |
+- [AgentHuntzman: Best Scout Build in Division Resurgence (Vanguard Meta) (YouTube, April 2026)](https://www.youtube.com/watch?v=b1ZjnGeeRKI)
+- In-game Build-Making Database, recorded October 28 and 29, 2026. Browse it in our [database](/database/).
+- Patch notes: [Season 1 Phase 3](/patch-notes/season-1-phase-3-a-new-fire/), [Season 2 Phase 1](/patch-notes/season-2-phase-1-the-call/), [Season 2 Phase 2](/patch-notes/season-2-phase-2/).

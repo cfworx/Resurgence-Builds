@@ -205,7 +205,7 @@ TikTokAndy calls Precious Cargo the final mission in the game and, from his expe
 - **Don't count on Kevin.** The NPC who comes along with you likes to take the lead, and your cover.
 - **The mission ends as soon as all four bosses are down.**
 
-For the finale his two videos disagree: solo with a shotgun he fights from a nook by the shipping container, and as a team healer he prefers the bridge you start on. Full routes: the [Double Barrel Commando](/builds/misdirection-double-barrel-commando-build-tiktokandy/) and the [Aegis Team Healer](/builds/aegis-team-healer-tech-operator-build-tiktokandy/).
+For the finale his two videos disagree: solo with a shotgun he fights from a nook by the shipping container, and as a team healer he prefers the bridge you start on. His builds for those runs: the [Double Barrel Commando](/builds/misdirection-double-barrel-commando-build-tiktokandy/) and the [Aegis Team Healer](/builds/aegis-team-healer-tech-operator-build-tiktokandy/).
 
 ### Lone Wolf Challenge
 

@@ -25,197 +25,58 @@ videoUploadDate: "2026-04-27T06:46:52-07:00"
 videoDuration: "PT6M4S"
 faqs:
   - question: "Is this build still good after Patch 1.1.2.2?"
-    answer: "Mostly, but the numbers are vintage. The build was filmed in late April 2026. Since then, Season 1 Phase 2 (May 12) fixed Brains Over Brawn 'scaling wrong stats,' Season 1 Phase 3 (June 24) fixed Aegis Burst dealing more damage than intended, and Season 2 Phase 1 reworked weapon mods so the Shredding and Blast attachment rolls below no longer drop. Long-term Effect, Jackpot, and the MPX and Copperhead talents weren't touched. No official patch notes through Season 2 Phase 2 mention a fix for the Teamfight (formerly Performance Enhancer) 3pc, but the 2pc Engineering bonus still applies. Expect lower damage than the 237k sheet and you won't be disappointed."
+    answer: "Mostly, but the numbers are vintage. The build was filmed in late April 2026. Since then, Season 1 Phase 2 (May 12) fixed Brains Over Brawn 'scaling wrong stats,' Season 1 Phase 3 (June 24) fixed Aegis Burst dealing more damage than intended, and Season 2 Phase 1 reworked weapon mods so Shredding and Blast attachment rolls like his no longer drop. Long-term Effect, Jackpot, and the MPX and Copperhead talents weren't touched. No official patch notes through Season 2 Phase 2 mention a fix for the Teamfight (formerly Performance Enhancer) 3pc, but the 2pc Engineering bonus still applies. Expect lower damage than the 237k sheet and you won't be disappointed."
   - question: "Why Engineering and not Firepower as the priority stat?"
     answer: "Engineering scales every skill in the kit: Defender Drone damage, Mender Drone heal-to-damage conversion, Firefly Teamfight bonus, and the Brains Over Brawn hit damage. The Long-term Effect 4pc also dumps +18% Engineering on top. Firepower scales gun damage in isolation. Engineering scales the whole build."
-  - question: "Can I run this without the Mechanized Infantry Arm Body Armor?"
-    answer: "Any Long-term Effect Body Armor works for the 4pc bonus. What you want is the Injured Concealment talent on whichever Body Armor you find, because that stacking damage talent is a meaningful chunk of the build's damage output."
-  - question: "Is the Boom Horo CarryBack backpack required?"
-    answer: "Not strictly required. The Prime Engineer talent is the upgrade you are working toward. Until then, any Long-term Effect backpack with Skill Crit Chance and Skill Crit Damage rolls keeps the 4pc bonus active. Just make sure whatever Prime Engineer backpack you land also rolls Long-term Effect, because a Boom-Shakalaka one breaks the 4pc in this layout and takes the +18% Engineering with it."
+  - question: "Can I run this without the Mechanized Infantry Armor?"
+    answer: "Yes. All three Long-term Effect body armors can roll Injured Concealment: the Chatzatz Chest (T2), the Athena Missile Vest (T1) and the Mechanized Infantry Armor (T0). Injured Concealment is the part that matters, because that stacking damage talent is a meaningful chunk of the build's damage."
+  - question: "Which backpack should I farm for Prime Engineer?"
+    answer: "The Ziba Low Profile Pack (T1): in the game's Build-Making Database it is the only Long-term Effect backpack that can roll Prime Engineer. The \"Horo\" CarryBack rolls Prime Engineer too, but it can't be Long-term Effect, so it would break the 4pc and take the +18% Engineering with it. Until you land one, any Long-term Effect backpack with Skill Crit Chance and Skill Crit Damage keeps the 4pc, which is what Tampishach does with his Mountain Hiking Pack."
   - question: "How do I get Skill Crit Chance and Skill Crit Damage that high?"
     answer: "Most of the gear sub-attributes roll one of those two stats (Tampishach's mask, body armor, backpack and holster each carry one other stat), plus +21.60% Skill Crit Chance from a Level 50 Brains Over Brawn, plus the Skill Crit Damage roll on the Copperhead. Since Season 2 Phase 1, gear mods can roll both stats too. Stack them everywhere they appear."
   - question: "Is Division Resurgence pay-to-win?"
     answer: "Resurgence is free-to-play, and its premium currency, Phoenix Credits, buys Sealed Caches (SHD Keys can open them too). Ubisoft's published drop rates show the Aegis Operations Cache can drop all three of this build's skill mod sets, and the OS Protocol Cache can drop Brains Over Brawn. The same pieces also come from play: Tampishach points to weekly bounties for maxing the protocol, and since Season 2 Phase 2 Dark Zone daily quests reward Skill Mods. Spending can speed up the grind, but it cannot buy positioning, game sense, or the knowledge to stack the right talents. Your dad reflexes are still the bottleneck."
 ---
+Tampishach's Tech Aegis lets the drones do the killing. **Long-term Effect piles on Engineering, Brains Over Brawn turns a slice of it into damage on every hit, and Skill Crit does the rest.**
 
-**By RapidF5 (via Tampishach) ·** Patch 1.1.2.2
+Build by **Tampishach** (PowerfulJRE Clips), filmed in late April 2026, on Patch 1.1.1.
 
-## What This Build Does
+## The Build
 
-> Build credit: **Tampishach** (posting on the PowerfulJRE Clips YouTube channel). He uploaded a tight walkthrough on his Tech Aegis setup back in late April, and the build still holds up after several patches. We grabbed every value off his in-game screens so nothing in this post is guessed. Watch his original walkthrough on [YouTube](https://www.youtube.com/watch?v=bZA3H9f2ah0).
+<div class="bsheet"><div class="bsheet__group"><p class="bsheet__label">Weapons</p><div class="bsheet__item"><img class="bsheet__tile bsheet__tile--wide" src="/images/db/weapon-icons/copperhead-weapon-icon-division-resurgence-165.webp" srcset="/images/db/weapon-icons/copperhead-weapon-icon-division-resurgence-165.webp 165w, /images/db/weapon-icons/copperhead-weapon-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 150px" width="150" height="71" alt="Copperhead smg in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/weapons/copperhead/">Copperhead</a><span class="bsheet__sub">Primary · T1 SMG · Level 40</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/weapon-talents/in-sync-weapon-talent-icon-division-resurgence-80.webp" srcset="/images/db/weapon-talents/in-sync-weapon-talent-icon-division-resurgence-80.webp 80w, /images/db/weapon-talents/in-sync-weapon-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">In Sync</span><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/weapon-talents/swift-taunt-weapon-talent-icon-division-resurgence-80.webp" srcset="/images/db/weapon-talents/swift-taunt-weapon-talent-icon-division-resurgence-80.webp 80w, /images/db/weapon-talents/swift-taunt-weapon-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Swift Taunt</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile bsheet__tile--wide" src="/images/db/weapon-icons/mpx-weapon-icon-division-resurgence-165.webp" srcset="/images/db/weapon-icons/mpx-weapon-icon-division-resurgence-165.webp 165w, /images/db/weapon-icons/mpx-weapon-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 150px" width="150" height="71" alt="MPX smg in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/weapons/mpx/">MPX</a><span class="bsheet__sub">Secondary · T0 SMG · Level 50</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/weapon-talents/torrential-downpour-weapon-talent-icon-division-resurgence-80.webp" srcset="/images/db/weapon-talents/torrential-downpour-weapon-talent-icon-division-resurgence-80.webp 80w, /images/db/weapon-talents/torrential-downpour-weapon-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Torrential Downpour</span><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/weapon-talents/rapid-charge-weapon-talent-icon-division-resurgence-80.webp" srcset="/images/db/weapon-talents/rapid-charge-weapon-talent-icon-division-resurgence-80.webp 80w, /images/db/weapon-talents/rapid-charge-weapon-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Rapid Charge</span></span></div></div></div><div class="bsheet__group"><p class="bsheet__label">OS Protocol and skill mods</p><div class="bsheet__grid2"><div class="bsheet__item"><img class="bsheet__sq" src="/images/db/os-protocols/brains-over-brawn-os-protocol-talent-icon-division-resurgence-80.webp" srcset="/images/db/os-protocols/brains-over-brawn-os-protocol-talent-icon-division-resurgence-80.webp 80w, /images/db/os-protocols/brains-over-brawn-os-protocol-talent-icon-division-resurgence-104.webp 104w" sizes="56px" width="56" height="56" alt="Brains Over Brawn OS Protocol icon" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/os-protocols/brains-over-brawn/">Brains Over Brawn</a><span class="bsheet__sub">OS Protocol · Specialized · Level 50, 5/5</span><span class="bsheet__picks"></span></div></div><div class="bsheet__item"><img class="bsheet__sq" src="/images/db/skill-mod-combos/hazardous-area-skill-mod-combo-icon-division-resurgence-80.webp" srcset="/images/db/skill-mod-combos/hazardous-area-skill-mod-combo-icon-division-resurgence-80.webp 80w, /images/db/skill-mod-combos/hazardous-area-skill-mod-combo-icon-division-resurgence-160.webp 160w" sizes="56px" width="56" height="56" alt="" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/skill-mod-combos/hazardous-area/">Hazardous Area</a><span class="bsheet__sub">Defender Drone mods</span><span class="bsheet__picks"></span></div></div><div class="bsheet__item"><img class="bsheet__sq" src="/images/db/skill-mod-combos/combat-enhancer-skill-mod-combo-icon-division-resurgence-80.webp" srcset="/images/db/skill-mod-combos/combat-enhancer-skill-mod-combo-icon-division-resurgence-80.webp 80w, /images/db/skill-mod-combos/combat-enhancer-skill-mod-combo-icon-division-resurgence-160.webp 160w" sizes="56px" width="56" height="56" alt="" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/skill-mod-combos/combat-enhancer/">Combat Enhancer</a><span class="bsheet__sub">Mender Drone mods</span><span class="bsheet__picks"></span></div></div><div class="bsheet__item"><img class="bsheet__sq" src="/images/db/skill-mod-combos/teamfight-skill-mod-combo-icon-division-resurgence-80.webp" srcset="/images/db/skill-mod-combos/teamfight-skill-mod-combo-icon-division-resurgence-80.webp 80w, /images/db/skill-mod-combos/teamfight-skill-mod-combo-icon-division-resurgence-160.webp 160w" sizes="56px" width="56" height="56" alt="" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/skill-mod-combos/teamfight/">Teamfight</a><span class="bsheet__sub">First-Aid Firefly mods</span><span class="bsheet__picks"></span></div></div></div></div><div class="bsheet__group bsheet__group--wide"><p class="bsheet__label">Gear · 4pc Long-term Effect + 2pc Jackpot</p><div class="bsheet__cols"><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/rapid-deployment-mask-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/rapid-deployment-mask-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/rapid-deployment-mask-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="Rapid Deployment Mask in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#rapid-deployment-mask">Rapid Deployment Mask</a><span class="bsheet__sub">Mask · T0</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/jackpot-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/jackpot-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/jackpot-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Jackpot</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/kote-hand-guards-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/kote-hand-guards-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/kote-hand-guards-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="&quot;Kote&quot; Hand Guards in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#kote-hand-guards">Long-term Effect gloves</a><span class="bsheet__sub">Gloves · any tier</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/long-term-effect-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/long-term-effect-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/long-term-effect-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Long-term Effect</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/jags-sidearm-mount-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/jags-sidearm-mount-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/jags-sidearm-mount-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="Jags Sidearm Mount in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#jags-sidearm-mount">Jags Sidearm Mount</a><span class="bsheet__sub">Holster · T2</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/jackpot-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/jackpot-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/jackpot-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Jackpot</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/sundown-knee-guards-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/sundown-knee-guards-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/sundown-knee-guards-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="Sundown Knee Guards in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#sundown-knee-guards">Sundown Knee Guards</a><span class="bsheet__sub">Knee pads · T1</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/long-term-effect-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/long-term-effect-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/long-term-effect-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Long-term Effect</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/mechanized-infantry-armor-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/mechanized-infantry-armor-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/mechanized-infantry-armor-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="Mechanized Infantry Armor in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#mechanized-infantry-armor">Mechanized Infantry Armor</a><span class="bsheet__sub">Body armor · T0</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/long-term-effect-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/long-term-effect-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/long-term-effect-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Long-term Effect</span><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/body-armor-talents/injured-concealment-body-armor-talent-icon-division-resurgence-80.webp" srcset="/images/db/body-armor-talents/injured-concealment-body-armor-talent-icon-division-resurgence-80.webp 80w, /images/db/body-armor-talents/injured-concealment-body-armor-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Injured Concealment</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/mountain-hiking-pack-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/mountain-hiking-pack-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/mountain-hiking-pack-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="Mountain Hiking Pack in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#mountain-hiking-pack">Mountain Hiking Pack</a><span class="bsheet__sub">Backpack · T2 · his placeholder</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/long-term-effect-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/long-term-effect-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/long-term-effect-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Long-term Effect</span></span></div></div></div></div></div>
 
-This is a **Tech Aegis Engineering build** that turns skill crit into a sledgehammer. Tampishach is running **18.70k Power Score, 237.52k DPS, 4,503 Armor, and 76,569 Health**, with **53% Skill Crit Chance and 113% Skill Crit Damage** on the sheet. The 4pc Long-term Effect set is the engine: skill health, skill duration, and a flat +18% Engineering bonus that compounds with every drone, firefly, and stat roll on the kit. The 2pc Jackpot tops it off with +12% Skill Radius. On his Level 50, fully talent-upgraded copy, the **Brains Over Brawn** OS Protocol gives +21.60% Skill Crit Chance and tacks 48% of your Engineering onto every hit. The core loop: drop your Defender Drone, throw out a Mender Drone, pop a First-Aid Firefly, and watch the crit numbers stack.
+**Attributes:** Firepower cores, then Skill Crit Chance and Skill Crit Damage on almost every roll (his mask, body armor, backpack and holster each carry one other stat). Engineering on every gear module and weapon mod: *"Try to get as much engineering as you can."* [Open it in the Build Planner](/builder/#s=Tech+Operator&sc=Aegis+Operations&n=Tech+Aegis+237k&ms=gs-7&m1=sace&m1v=9.78&m2=scd&m2v=7.63&gs=gs-8&g1=scc&g2=scd&hs=gs-7&h1=dr&h1v=3.64&h2=scd&h2v=8.62&cs=gs-8&ct=ba-14&c1=sr&c1v=4.61&c2=scd&c2v=7.84&ps=gs-8&pt=bp-19&p1=dr&p1v=3.1&p2=scc&p2v=5.67&ks=gs-8&k1=scc&k1v=5.99&k2=scd&w1s=sw-48&w1tr=T1&w1t=wt-22&w1t2=wt-60&w1b1=scd&w1b1v=19.55&w1b2=arm&w1b2v=19.94&w2s=sw-44&w2tr=T0&w2t=wt-66&w2t2=wt-42&w2b1=sms&w2b1v=8.09&os=os-20&sm1=smc-29&sm2=smc-32&sm3=smc-35) to copy the whole loadout.
 
-> [!WARNING] Season 1 Phase 3 and Season 2 changes that affect this build
-> - **Aegis Burst (Season 1 Phase 3, June 24):** Ubisoft fixed Aegis Operation "dealing more damage than expected at regular intervals." Tampishach's 237k DPS was recorded in late April, before this fix and before the Season 1 Phase 2 fix to Brains Over Brawn "scaling wrong stats," so expect lower numbers.
-> - **Weapon mods (Season 2 Phase 1):** New weapon mods can no longer roll Skill Shredding, Skill Blast, Weapon Piercing or All Weapon Damage, so the Small Laser Pointer and SMG Extended Magazine rolls below are legacy. New mods get +100% main stat (bigger Engineering) and -25% bonus attributes, and can roll Skill Critical Damage % or Skill Intensity % instead.
-> - **Gear mods (Season 2 Phase 1):** The gear mod bonus pool now includes Skill Crit Chance and Skill Crit Damage, the two stats this build wants on every sub-roll. Your Engineering gear modules can now pull double duty.
->
-> This build has not been re-tested since Patch 1.1.2.2. Full details: [Season 1 Phase 3 patch notes](/patch-notes/season-1-phase-3-a-new-fire/), [Season 2 Phase 1 patch notes](/patch-notes/season-2-phase-1-the-call/) and [Season 2 Phase 2 patch notes](/patch-notes/season-2-phase-2/).
+## How It Works
 
----
+<div class="syn__wrap"><div class="syn__group"><p class="syn__title">1 · Stack Engineering</p><div class="syn"><div class="syn__card"><img class="syn__icon" src="/images/db/gear-set-effects/long-term-effect-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/long-term-effect-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/long-term-effect-gear-set-icon-division-resurgence-160.webp 160w" sizes="52px" width="52" height="52" alt="" loading="lazy" decoding="async"><div><p class="syn__name">Long-term Effect, 4 pieces</p><p class="syn__when">always</p><p class="syn__bonus">+12% Skill Health, +14.4% Skill Duration, +18% Engineering</p></div></div><div class="syn__card"><img class="syn__icon" src="/images/db/weapon-talents/torrential-downpour-weapon-talent-icon-division-resurgence-80.webp" srcset="/images/db/weapon-talents/torrential-downpour-weapon-talent-icon-division-resurgence-80.webp 80w, /images/db/weapon-talents/torrential-downpour-weapon-talent-icon-division-resurgence-160.webp 160w" sizes="52px" width="52" height="52" alt="" loading="lazy" decoding="async"><div><p class="syn__name">Torrential Downpour</p><p class="syn__when">10 hits within 5 s (MPX)</p><p class="syn__bonus">+22.5% Engineering for 12 s. His is rank II: +31.5%</p></div></div><div class="syn__card"><img class="syn__icon" src="/images/db/skill-mod-combos/combat-enhancer-skill-mod-combo-icon-division-resurgence-80.webp" srcset="/images/db/skill-mod-combos/combat-enhancer-skill-mod-combo-icon-division-resurgence-80.webp 80w, /images/db/skill-mod-combos/combat-enhancer-skill-mod-combo-icon-division-resurgence-160.webp 160w" sizes="52px" width="52" height="52" alt="" loading="lazy" decoding="async"><div><p class="syn__name">Combat Enhancer</p><p class="syn__when">Mender Drone healing</p><p class="syn__bonus">Bonus damage equal to 6.6% Engineering for 20 s, up to 3 stacks</p></div></div></div></div><div class="syn__group"><p class="syn__title">2 · Crit and convert</p><div class="syn"><div class="syn__card"><img class="syn__icon" src="/images/db/os-protocols/brains-over-brawn-os-protocol-talent-icon-division-resurgence-80.webp" srcset="/images/db/os-protocols/brains-over-brawn-os-protocol-talent-icon-division-resurgence-80.webp 80w, /images/db/os-protocols/brains-over-brawn-os-protocol-talent-icon-division-resurgence-104.webp 104w" sizes="52px" width="52" height="52" alt="" loading="lazy" decoding="async"><div><p class="syn__name">Brains Over Brawn</p><p class="syn__when">always, every hit</p><p class="syn__bonus">+10.8% Skill Crit Chance, hits deal +24% Engineering as damage. His Level 50, 5/5 copy: +21.6% and 48%</p></div></div><div class="syn__card"><img class="syn__icon" src="/images/db/weapon-talents/in-sync-weapon-talent-icon-division-resurgence-80.webp" srcset="/images/db/weapon-talents/in-sync-weapon-talent-icon-division-resurgence-80.webp 80w, /images/db/weapon-talents/in-sync-weapon-talent-icon-division-resurgence-160.webp 160w" sizes="52px" width="52" height="52" alt="" loading="lazy" decoding="async"><div><p class="syn__name">In Sync</p><p class="syn__when">weapon hits and skill hits (Copperhead)</p><p class="syn__bonus">+9% Skill Damage and +9% Weapon Damage for 8 s, doubled when both are up</p></div></div><div class="syn__card"><img class="syn__icon" src="/images/db/skill-mod-combos/teamfight-skill-mod-combo-icon-division-resurgence-80.webp" srcset="/images/db/skill-mod-combos/teamfight-skill-mod-combo-icon-division-resurgence-80.webp 80w, /images/db/skill-mod-combos/teamfight-skill-mod-combo-icon-division-resurgence-160.webp 160w" sizes="52px" width="52" height="52" alt="" loading="lazy" decoding="async"><div><p class="syn__name">Teamfight</p><p class="syn__when">8 s after you deploy the Firefly</p><p class="syn__bonus">Hits deal +80% Engineering as damage, for you and the ally it targets</p></div></div></div></div><div class="syn__group"><p class="syn__title">3 · Drones do the work</p><div class="syn"><div class="syn__card"><img class="syn__icon" src="/images/db/skill-mod-combos/hazardous-area-skill-mod-combo-icon-division-resurgence-80.webp" srcset="/images/db/skill-mod-combos/hazardous-area-skill-mod-combo-icon-division-resurgence-80.webp 80w, /images/db/skill-mod-combos/hazardous-area-skill-mod-combo-icon-division-resurgence-160.webp 160w" sizes="52px" width="52" height="52" alt="" loading="lazy" decoding="async"><div><p class="syn__name">Hazardous Area</p><p class="syn__when">Defender Drone out</p><p class="syn__bonus">Damages enemies within its radius every second</p></div></div><div class="syn__card"><img class="syn__icon" src="/images/db/weapon-talents/rapid-charge-weapon-talent-icon-division-resurgence-80.webp" srcset="/images/db/weapon-talents/rapid-charge-weapon-talent-icon-division-resurgence-80.webp 80w, /images/db/weapon-talents/rapid-charge-weapon-talent-icon-division-resurgence-160.webp 160w" sizes="52px" width="52" height="52" alt="" loading="lazy" decoding="async"><div><p class="syn__name">Rapid Charge</p><p class="syn__when">5 hits in 3 s (MPX)</p><p class="syn__bonus">+50 Signature Ability Charge: the Defender Drone comes back sooner</p></div></div><div class="syn__card"><img class="syn__icon" src="/images/db/gear-set-effects/jackpot-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/jackpot-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/jackpot-gear-set-icon-division-resurgence-160.webp 160w" sizes="52px" width="52" height="52" alt="" loading="lazy" decoding="async"><div><p class="syn__name">Jackpot, 2 pieces</p><p class="syn__when">always</p><p class="syn__bonus">+12% Skill Radius</p></div></div></div></div><div class="syn__group"><p class="syn__title">4 · Stay up</p><div class="syn"><div class="syn__card"><img class="syn__icon" src="/images/db/body-armor-talents/injured-concealment-body-armor-talent-icon-division-resurgence-80.webp" srcset="/images/db/body-armor-talents/injured-concealment-body-armor-talent-icon-division-resurgence-80.webp 80w, /images/db/body-armor-talents/injured-concealment-body-armor-talent-icon-division-resurgence-160.webp 160w" sizes="52px" width="52" height="52" alt="" loading="lazy" decoding="async"><div><p class="syn__name">Injured Concealment</p><p class="syn__when">hits taken</p><p class="syn__bonus">+1.8% Damage for 10 s, up to 10 stacks</p></div></div><div class="syn__card"><img class="syn__icon" src="/images/db/weapon-talents/swift-taunt-weapon-talent-icon-division-resurgence-80.webp" srcset="/images/db/weapon-talents/swift-taunt-weapon-talent-icon-division-resurgence-80.webp 80w, /images/db/weapon-talents/swift-taunt-weapon-talent-icon-division-resurgence-160.webp 160w" sizes="52px" width="52" height="52" alt="" loading="lazy" decoding="async"><div><p class="syn__name">Swift Taunt</p><p class="syn__when">3 enemies hit within 5 s (Copperhead)</p><p class="syn__bonus">Taunts nearby enemies, Extra Health equal to 25% Max Health for 10 s</p></div></div></div></div></div>
 
-> [!WARNING] Engineering, Not Firepower
-> The #1 mistake on Tech Aegis builds is chasing Firepower instead of Engineering. The Aegis kit (Mender Drone, First-Aid Firefly and the Defender Drone signature) runs on Engineering, and so did the Aegis Burst damage this build leaned on before Season 1 Phase 3 toned it down. Tampishach's gear cores happen to be Firepower (see the gear table), but every gear module and weapon mod is stacked with Engineering, and that's where his damage comes from. Skip the Engineering mods and your drones do nothing and your DPS craters.
+Base values from the in-game Build-Making Database. His ranked-up copies read higher.
 
----
+## How to Play
 
-## Tampishach's Stats (18.70k Power Score)
+1. **Defender Drone out.** With Hazardous Area it hurts everything in its radius every second.
+2. **Mender Drone up.** Its healing stacks Combat Enhancer's bonus damage, up to 3 times.
+3. **First-Aid Firefly.** For 8 seconds your hits, and the targeted ally's, deal Teamfight's bonus damage.
+4. **Spray the MPX.** 10 hits in 5 seconds is Torrential Downpour's Engineering, and Rapid Charge speeds up the next Defender Drone.
 
-| Stat | Value |
-|---|---|
-| DPS | 237.52k |
-| Armor | 4,503 |
-| Health | 76,569 |
-| Firepower | 399 |
-| Engineering | 435 |
-| Toughness | 1.46k |
-| Skill Crit Chance | 53% |
-| Skill Crit Damage | 113% |
-| Power Score | 18.70k |
+## His Numbers
 
----
+<div class="stat-tiles"><div class="stat-tile"><p class="stat-tile__big">237.52k</p><p class="stat-tile__label">DPS on his sheet, recorded in late April 2026</p></div><div class="stat-tile"><p class="stat-tile__big">53%</p><p class="stat-tile__label">Skill Crit Chance, with 113% Skill Crit Damage</p></div><div class="stat-tile"><p class="stat-tile__big">435</p><p class="stat-tile__label">Engineering, next to 399 Firepower and 1.46k Toughness</p></div><div class="stat-tile"><p class="stat-tile__big">18.70k</p><p class="stat-tile__label">Power Score, with 4,503 Armor and 76,569 Health</p></div></div>
 
-## Tech Aegis Gear and Loadout
+## Before You Copy It
 
-### Gear
+- **Expect less than 237k.** Season 1 Phase 2 fixed Brains Over Brawn "scaling wrong stats" and Season 1 Phase 3 toned down Aegis Burst damage, both after his video.
+- **His weapon mods are pre-Season 2.** New mods can't roll the Shredding, Blast, Piercing or All Weapon Damage bonuses on his. Roll Engineering, with Skill Crit Damage or Skill Intensity.
+- **Teamfight's 3-piece:** he says it wasn't firing correctly. No patch notes through Season 2 Phase 2 mention a fix, so treat it as unconfirmed. The 2-piece Engineering still counts.
+- **Torrential Downpour stays on the MPX.** He suggests hunting it, but the Copperhead can't roll it.
 
-| Slot | Set | Talent | Core | Attribute Bonus 1 | Attribute Bonus 2 |
-|---|---|---|---|---|---|
-| Mask | Jackpot (Rapid Deployment Mask, T0) | - | Firepower | Sig Ability Charge Efficiency +9.78% | Skill Critical Damage +7.63% |
-| Body Armor | Long-term Effect (Mechanized Infantry Arm, T0) | **Injured Concealment** | Firepower | Skill Radius +4.61% | Skill Critical Damage +7.84% |
-| Backpack | Long-term Effect (Mountain Hiking Pack, T2) | **Prime Engineer** (recommended) | Firepower | Damage Reduction +3.1% | Skill Critical Chance +5.67% |
-| Gloves | Long-term Effect | - | Firepower | Skill Critical Chance | Skill Critical Damage |
-| Holster | Jackpot (Jags Sidearm Mount, T2) | - | Firepower | Damage Reduction +3.64% | Skill Critical Damage +8.62% |
-| Knee Pads | Long-term Effect (Brown Knee Guards, T1) | - | Firepower | Skill Critical Chance +5.99% | Skill Critical Damage |
+## Swaps
 
-**Core roll philosophy:** Firepower cores across the board, with most sub-attributes pointed at Skill Critical Chance and Skill Critical Damage (his mask, body armor, backpack and holster each carry one other stat). Tampishach: *"Try to get as much engineering as you can."* Engineering is the multiplier on every skill, the Brains Over Brawn OS Protocol, and the Long-term Effect 4pc bonus. The gear modules on every slot should be rolled to Engineering and maxed out.
+<div class="bsheet bsheet--single"><div class="bsheet__group"><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/ziba-low-profile-pack-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/ziba-low-profile-pack-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/ziba-low-profile-pack-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="Ziba Low Profile Pack in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><span class="bsheet__name">Prime Engineer backpack</span><span class="bsheet__sub">Deploying a skill at full Health: +22.5% Engineering for 12 s. The only Long-term Effect backpack that rolls it is the Ziba Low Profile Pack (T1). The &quot;Horo&quot; CarryBack rolls it too, but can&#x27;t be Long-term Effect.</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/backpack-talents/prime-engineer-backpack-talent-icon-division-resurgence-80.webp" srcset="/images/db/backpack-talents/prime-engineer-backpack-talent-icon-division-resurgence-80.webp 80w, /images/db/backpack-talents/prime-engineer-backpack-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Prime Engineer</span><span class="bsheet__pick"><a href="/database/gear/#ziba-low-profile-pack">Ziba Low Profile Pack (T1)</a></span></span></div></div><div class="bsheet__item"><img class="bsheet__sq" src="/images/db/os-protocols/tactical-layering-os-protocol-talent-icon-division-resurgence-80.webp" srcset="/images/db/os-protocols/tactical-layering-os-protocol-talent-icon-division-resurgence-80.webp 80w, /images/db/os-protocols/tactical-layering-os-protocol-talent-icon-division-resurgence-104.webp 104w" sizes="56px" width="56" height="56" alt="Tactical Layering OS Protocol icon" loading="lazy" decoding="async"><div class="bsheet__text"><span class="bsheet__name">Other OS Protocols</span><span class="bsheet__sub">Tactical Layering: deploying a skill grants +15% Engineering, up to 3 stacks. Surgical Engineering: Skill Crits have a 60% chance of +16% Skill Crit Damage for 10 s, up to 3 stacks.</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/os-protocols/tactical-layering-os-protocol-talent-icon-division-resurgence-80.webp" srcset="/images/db/os-protocols/tactical-layering-os-protocol-talent-icon-division-resurgence-80.webp 80w, /images/db/os-protocols/tactical-layering-os-protocol-talent-icon-division-resurgence-104.webp 104w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async"><a href="/database/os-protocols/tactical-layering/">Tactical Layering</a></span><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/os-protocols/surgical-engineering-os-protocol-talent-icon-division-resurgence-80.webp" srcset="/images/db/os-protocols/surgical-engineering-os-protocol-talent-icon-division-resurgence-80.webp 80w, /images/db/os-protocols/surgical-engineering-os-protocol-talent-icon-division-resurgence-104.webp 104w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async"><a href="/database/os-protocols/surgical-engineering/">Surgical Engineering</a></span></span></div></div></div></div>
 
-**Set split:** 4pc Long-term Effect + 2pc Jackpot. The Long-term Effect 4-piece is non-negotiable. Drop one piece and you lose the +18% Engineering bonus. The 2pc Jackpot is flexible: any two Jackpot slots work.
+## Sources
 
-**Recommended backpack swap:** Boom "Horo" CarryBack with **Prime Engineer** talent. Deploying a skill at full health grants +22.50% Engineering for 12 seconds. That talent pairs perfectly with the rotation since you are deploying drones constantly. Make sure the one you land rolls Long-term Effect, though: a Boom-Shakalaka backpack breaks the 4pc.
-
-### Loadout
-
-| Slot | Item | Details |
-|---|---|---|
-| **Primary** | Copperhead (T1, SMG, Level 40) | **In Sync + Swift Taunt** · Piercing Damage 800 |
-| **Secondary** | MPX (T0, SMG, Level 50) | **Torrential Downpour II + Rapid Charge** · Skill Multi-Shot Chance +8.09% |
-| **OS Protocol** | **Brains Over Brawn** (Specialized, Level 50, 5/5 talent upgrades) | +21.60% Skill Crit Chance. Hits deal additional damage equal to 48% Engineering |
-| **Skill 1** | Mender Drone | Combat Enhancer (formerly Team Backup) firmware 3pc |
-| **Skill 2** | First-Aid Firefly | Teamfight (formerly Performance Enhancer) firmware 3pc |
-| **Signature** | Defender Drone | Hazardous Area firmware 3pc |
-
-### Skill Mods
-
-| Skill | Firmware Set | Set Bonus | Stats |
-|---|---|---|---|
-| Defender Drone | Hazardous Area (3pc) | 2pc: +3% Engineering · 3pc: Defender Drone deals damage to enemies within its radius every second | Skill Crit Chance, Skill Duration, Skill Crit Damage |
-| Mender Drone | Combat Enhancer (3pc) | 2pc: +6% Engineering · 3pc: healing grants bonus damage equal to 13.10% Engineering for 20s, up to 3 stacks (his tooltip; the lowest tier reads 6.60%) | Skill Crit Chance, Skill Crit Damage |
-| First-Aid Firefly | Teamfight (3pc) | 2pc: +4.5% Engineering · 3pc: for 8s after you deploy the Firefly, hits deal additional damage equal to 120% Engineering, and the ally it targets gets the bonus too (his tooltip; the lowest tier reads 80%) | Skill Crit Chance, Skill Crit Damage |
-
-Set bonus numbers are Tampishach's tooltip readings. Combo sets come in more than one tier, and our [skill mod combo database](/database/skill-mod-combos/) lists the lowest one, so expect the numbers on your own sets to differ.
-
-> **Weapon mod stacking:** Every weapon mod slot on both the MPX and the Copperhead should roll Engineering. Tampishach: *"I stacked mods with engineering as it gives more and more engineering to your build, which enhances your damage."*
-
-> **Note on the Teamfight 3pc:** Tampishach flagged a known issue with the 3pc bonus damage not firing correctly. A fix was expected in an upcoming patch. (Update, October 2026: none of the official patch notes through Season 2 Phase 2 mention a fix under either name, so treat it as unconfirmed.) The 2pc Engineering bonus still applies.
-
----
-
-## Why Each Gear Piece Matters
-
-### Long-term Effect 4-Piece
-
-- **2pc:** Skill Health +12%. Your drones and firefly take longer to die.
-- **3pc:** Skill Duration +14.4%. Every skill lasts longer, including Mender heal aura and Defender Drone damage tick.
-- **4pc:** Engineering +18%. Every other piece of math on the sheet scales off Engineering, so this multiplies everything.
-
-### Jackpot 2-Piece
-
-The flex set. 2pc bonus: +12% Skill Radius. Tampishach uses the Rapid Deployment Mask and the Jags Sidearm Mount holster.
-
-### Body Armor: Injured Concealment (Firepower Core)
-
-*Hits taken grant +1.80% Damage for 10 seconds, up to 10 stacks.*
-
-At full stacks that is +18% Damage. Tampishach also mentions **Injured Concealment II**, which stacks up to +25% Damage at Rank 2 (+2.50% per stack, 10 stacks, matching the Injured Concealment II text on our other builds).
-
-### Backpack: Prime Engineer (Recommended)
-
-*Deploying a Skill at full Health grants +22.50% Engineering for 12 seconds.*
-
-With three skills in the rotation you can keep that buff at near-permanent uptime. Tampishach is still farming for the roll and runs a Mountain Hiking Pack as a placeholder.
-
-### Proficiency Levels Matter
-
-Max out gear modules to Engineering on every slot. Every +1 Engineering goes through the Long-term Effect 4pc multiplier and the Brains Over Brawn hit calculation.
-
----
-
-## Best OS Protocol for Tech Aegis
-
-### 1. Brains Over Brawn (Specialized) · RECOMMENDED
-
-*+10.80% Skill Crit Chance · Hits deal additional damage equal to 24% Engineering* (base values. Levelling to 50 doubles the Skill Crit Chance to +21.60%; the talent's 48% comes from all five talent upgrades, which take duplicate copies.)
-
-At Level 50 it is the single biggest piece of the build's 53% Skill Crit Chance (21.60 points), with the gear rolls supplying most of the rest. The on-hit bonus damage scales off Engineering, which the Long-term Effect 4pc just buffed by 18%. Tampishach: *"You need to farm weekly bounties to max it out."*
-
-### 2. Tactical Layering (High-End) · Engineering Stacking Alternative
-
-*+15% Engineering per skill deployment, up to 3 stacks*
-
-For groups where you are the dedicated drone-spam role. It doesn't shorten cooldowns; it pays you in Engineering for keeping your skills on rotation.
-
-### 3. Surgical Engineering (High-End) · Crit Damage Alternative
-
-*60% chance of +16% Skill Critical Damage on Skill Crits*
-
-If you want to push the Skill Crit Damage ceiling instead of the Skill Crit Chance floor.
-
----
-
-## Weapon Talents and Attachments
-
-### Primary: Copperhead (T1, SMG, Level 40)
-
-- **In Sync:** Weapon Hits grant +9% Skill Damage, Skill Hits grant +9% Weapon Damage. Doubled when both are active.
-- **Swift Taunt:** Hitting 3 enemies within 5 seconds taunts nearby enemies and grants Extra Health equal to 25% Max Health.
-
-Tampishach recommends hunting for **Torrential Downpour II** or **In Sync II** as upgrades. On the Copperhead itself only In Sync is possible: the game's Build-Making Database doesn't list Torrential Downpour for it (talent Source lists recorded October 29, 2026). Torrential Downpour belongs on the MPX, where he already runs it.
-
-**Weapon attributes:** Skill Critical Damage +19.55%, Armor +19.94%.
-
-### Secondary: MPX (T0, SMG, Level 50)
-
-- **Torrential Downpour II:** Hitting enemies 10 times within 5 seconds grants +31.50% Engineering for 12 seconds. With a fast-firing SMG, hitting that window is trivial.
-- **Rapid Charge:** Hitting an enemy 5 times in 3 seconds grants 50 Signature Ability Charge. Faster Defender Drone (signature) uptime.
-
-**Headline attribute:** Skill Multi-Shot Chance +8.09%.
-
-### Attachments
-
-Both guns should run **Engineering-stacked mods** in every slot. These two are pre-Season 2 mods; new ones can't roll the Shredding, Blast, Piercing or All Weapon Damage bonuses shown here (see the warning at the top):
-
-- **Small Laser Pointer** (Underbarrel): +25 Engineering, +80 Skill Shredding Damage, +80 Skill Blast Damage
-- **SMG Extended Magazine** (Magazine): +25 Engineering, +82 Weapon Piercing Damage, +82 All Weapon Damage
-
----
-
-## Loot Quick-Reference
-
-| Item | Stats to Look For |
-|---|---|
-| 4pc Long-term Effect gear | Skill Critical Chance, Skill Critical Damage, Engineering modules |
-| 2pc Jackpot gear | Skill Critical Damage, Signature Ability Charge Efficiency |
-| Copperhead (Primary SMG) | In Sync (II if you can find it), Skill Critical Damage, Armor |
-| MPX (Secondary SMG) | Torrential Downpour II, Rapid Charge, Skill Multi-Shot Chance |
-| Brains Over Brawn OS Protocol | Max to Level 50 for +21.60% Skill Crit Chance; talent upgrades from duplicates take the hit damage from 24% to 48% Engineering |
-| Body Armor talent | Injured Concealment (or Rank 2 for +25% Damage) |
-| Backpack talent | Prime Engineer (+22.50% Engineering on skill deploy) |
-| Weapon mods (all slots) | Engineering main stat. On new mods, Skill Critical Damage % or Skill Intensity % (Shredding and Blast rolls were removed in Season 2 Phase 1) |
-
----
-
-### Build the Wall, Then Punch a Hole In It
-
-Long-term Effect 4pc as the engine, Jackpot 2pc as the flex slot, Brains Over Brawn cranking your skill crit through the roof, and a pair of Engineering-stacked SMGs to clean up whatever your drones do not delete first. Watch [Tampishach's original walkthrough](https://www.youtube.com/watch?v=bZA3H9f2ah0) for the live demo footage.
+- [Tampishach: Tech Aegis Build Walkthrough (PowerfulJRE Clips, YouTube, April 2026)](https://www.youtube.com/watch?v=bZA3H9f2ah0)
+- In-game Build-Making Database, recorded October 28 and 29, 2026. Browse it in our [database](/database/).
+- Patch notes: [Season 1 Phase 3](/patch-notes/season-1-phase-3-a-new-fire/), [Season 2 Phase 1](/patch-notes/season-2-phase-1-the-call/), [Season 2 Phase 2](/patch-notes/season-2-phase-2/).

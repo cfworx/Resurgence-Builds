@@ -36,277 +36,56 @@ faqs:
     answer: "Same Pummeling Shield OS Protocol (and the same June 26 stun cooldown nerf), completely different role. Involuntary Nap Time is a Bulwark Juggernaut stun-tank for Elite Missions and the Dark Zone. The Muscular Nurse is a Combat Medicine PvE sustainer that heals the team while tanking bosses. Pick based on whether you want to put things to sleep or keep your squad alive through Elite content."
 
 ---
+A Field Medic who tanks the boss too. **Every heal stacks Damage Reduction, full Health keeps Pummeling Shield's Extra Health coming, and the Support Station picks up anyone who drops.**
 
-**By RapidF5 (via Nadie) ·** Patch 1.1.2.2
+Build by **Nadie** (Asia server, Rank 7 Combat Medicine), sent to our Discord in June 2026 on Patch 1.1.2.2 with screenshots and leaderboard proof. They also made [Involuntary Nap Time](/builds/involuntary-nap-time-bulwark-juggernaut-build/).
 
-## What This Build Does
+## The Build
 
-> Build credit: **Nadie** from the **Asia Server**, **Rank 7 Combat Medicine Field Medic** and top 50 all specializations in Asia at 25,344 Power Score at the time of submission (June 2026). Submitted via our Discord with screenshots, leaderboard proof, and a gameplay video. The YouTube walkthrough that went with it has since been set to private, so it is no longer embedded here.
+<div class="bsheet"><div class="bsheet__group"><p class="bsheet__label">Weapons</p><div class="bsheet__item"><img class="bsheet__tile bsheet__tile--wide" src="/images/db/weapon-icons/enhanced-aug-a3p-weapon-icon-division-resurgence-165.webp" srcset="/images/db/weapon-icons/enhanced-aug-a3p-weapon-icon-division-resurgence-165.webp 165w, /images/db/weapon-icons/enhanced-aug-a3p-weapon-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 150px" width="150" height="71" alt="Enhanced AUG A3P smg in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/weapons/enhanced-aug-a3p/">Enhanced AUG A3P</a><span class="bsheet__sub">Primary · T2 SMG · for the team</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/weapon-talents/steady-suppression-weapon-talent-icon-division-resurgence-80.webp" srcset="/images/db/weapon-talents/steady-suppression-weapon-talent-icon-division-resurgence-80.webp 80w, /images/db/weapon-talents/steady-suppression-weapon-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Steady Suppression</span><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/weapon-talents/precise-support-weapon-talent-icon-division-resurgence-80.webp" srcset="/images/db/weapon-talents/precise-support-weapon-talent-icon-division-resurgence-80.webp 80w, /images/db/weapon-talents/precise-support-weapon-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Precise Support</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile bsheet__tile--wide" src="/images/db/weapon-icons/military-m60-e4-weapon-icon-division-resurgence-165.webp" srcset="/images/db/weapon-icons/military-m60-e4-weapon-icon-division-resurgence-165.webp 165w, /images/db/weapon-icons/military-m60-e4-weapon-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 150px" width="150" height="71" alt="Military M60 E4 lmg in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/weapons/military-m60-e4/">Military M60 E4</a><span class="bsheet__sub">Secondary · T2 LMG · for bosses</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/weapon-talents/sadistic-shield-weapon-talent-icon-division-resurgence-80.webp" srcset="/images/db/weapon-talents/sadistic-shield-weapon-talent-icon-division-resurgence-80.webp 80w, /images/db/weapon-talents/sadistic-shield-weapon-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Sadistic Shield</span><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/weapon-talents/conceited-weapon-talent-icon-division-resurgence-80.webp" srcset="/images/db/weapon-talents/conceited-weapon-talent-icon-division-resurgence-80.webp 80w, /images/db/weapon-talents/conceited-weapon-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Conceited</span></span></div></div></div><div class="bsheet__group"><p class="bsheet__label">OS Protocol and skill mods</p><div class="bsheet__grid2"><div class="bsheet__item"><img class="bsheet__sq" src="/images/db/os-protocols/pummeling-shield-os-protocol-talent-icon-division-resurgence-80.webp" srcset="/images/db/os-protocols/pummeling-shield-os-protocol-talent-icon-division-resurgence-80.webp 80w, /images/db/os-protocols/pummeling-shield-os-protocol-talent-icon-division-resurgence-104.webp 104w" sizes="56px" width="56" height="56" alt="Pummeling Shield OS Protocol icon" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/os-protocols/pummeling-shield/">Pummeling Shield</a><span class="bsheet__sub">OS Protocol · High‑End · Level 50</span><span class="bsheet__picks"></span></div></div><div class="bsheet__item"><img class="bsheet__sq" src="/images/db/skill-mod-combos/auto-trauma-treatment-skill-mod-combo-icon-division-resurgence-80.webp" srcset="/images/db/skill-mod-combos/auto-trauma-treatment-skill-mod-combo-icon-division-resurgence-80.webp 80w, /images/db/skill-mod-combos/auto-trauma-treatment-skill-mod-combo-icon-division-resurgence-160.webp 160w" sizes="56px" width="56" height="56" alt="" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/skill-mod-combos/auto-trauma-treatment/">Auto Trauma Treatment</a><span class="bsheet__sub">Support Station mods</span><span class="bsheet__picks"></span></div></div><div class="bsheet__item"><img class="bsheet__sq" src="/images/db/skill-mod-combos/buddy-treatment-skill-mod-combo-icon-division-resurgence-80.webp" srcset="/images/db/skill-mod-combos/buddy-treatment-skill-mod-combo-icon-division-resurgence-80.webp 80w, /images/db/skill-mod-combos/buddy-treatment-skill-mod-combo-icon-division-resurgence-160.webp 160w" sizes="56px" width="56" height="56" alt="" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/skill-mod-combos/buddy-treatment/">Buddy Treatment</a><span class="bsheet__sub">Healing Hive mods</span><span class="bsheet__picks"></span></div></div><div class="bsheet__item"><img class="bsheet__sq" src="/images/db/skill-mod-combos/emergency-measures-skill-mod-combo-icon-division-resurgence-80.webp" srcset="/images/db/skill-mod-combos/emergency-measures-skill-mod-combo-icon-division-resurgence-80.webp 80w, /images/db/skill-mod-combos/emergency-measures-skill-mod-combo-icon-division-resurgence-160.webp 160w" sizes="56px" width="56" height="56" alt="" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/skill-mod-combos/emergency-measures/">Emergency Measures</a><span class="bsheet__sub">Healing Swarm mods</span><span class="bsheet__picks"></span></div></div></div></div><div class="bsheet__group bsheet__group--wide"><p class="bsheet__label">Gear · 4pc Healing Elites + 2pc Self-Propelled Shield</p><div class="bsheet__cols"><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/half-mask-respirator-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/half-mask-respirator-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/half-mask-respirator-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="Half mask respirator in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#half-mask-respirator">Half mask respirator</a><span class="bsheet__sub">Mask · T2</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/healing-elites-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/healing-elites-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/healing-elites-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Healing Elites</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/gustavo-association-gloves-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/gustavo-association-gloves-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/gustavo-association-gloves-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="Gustavo Association Gloves in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#gustavo-association-gloves">Gustavo Association Gloves</a><span class="bsheet__sub">Gloves · T2</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/healing-elites-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/healing-elites-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/healing-elites-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Healing Elites</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/tepes-holster-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/tepes-holster-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/tepes-holster-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="Tepes Holster in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#tepes-holster">Tepes Holster</a><span class="bsheet__sub">Holster · T2</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/healing-elites-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/healing-elites-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/healing-elites-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Healing Elites</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/pivot-pads-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/pivot-pads-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/pivot-pads-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="Pivot Pads in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#pivot-pads">Self-Propelled Shield knee pads</a><span class="bsheet__sub">Knee pads · any tier</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/self-propelled-shield-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/self-propelled-shield-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/self-propelled-shield-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Self-Propelled Shield</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/big-drum-body-armor-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/big-drum-body-armor-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/big-drum-body-armor-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="&quot;Big Drum&quot; Body Armor in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#big-drum-body-armor">&quot;Big Drum&quot; Body Armor</a><span class="bsheet__sub">Body armor · T2</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/self-propelled-shield-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/self-propelled-shield-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/self-propelled-shield-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Self-Propelled Shield</span><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/body-armor-talents/hypervigilant-body-armor-talent-icon-division-resurgence-80.webp" srcset="/images/db/body-armor-talents/hypervigilant-body-armor-talent-icon-division-resurgence-80.webp 80w, /images/db/body-armor-talents/hypervigilant-body-armor-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Hypervigilant</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/roamer-pack-sow-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/roamer-pack-sow-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/roamer-pack-sow-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="Roamer Pack &quot;Sow&quot; in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#roamer-pack-sow">Roamer Pack &quot;Sow&quot;</a><span class="bsheet__sub">Backpack · T2</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/healing-elites-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/healing-elites-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/healing-elites-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Healing Elites</span><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/backpack-talents/rock-solid-backpack-talent-icon-division-resurgence-80.webp" srcset="/images/db/backpack-talents/rock-solid-backpack-talent-icon-division-resurgence-80.webp 80w, /images/db/backpack-talents/rock-solid-backpack-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Rock Solid</span></span></div></div></div></div></div>
 
-The first time Nadie shared a build with us, it was the [Involuntary Nap Time](/builds/involuntary-nap-time-bulwark-juggernaut-build/) Bulwark Juggernaut that immortal-stunned everything in PvP. Now he is back with the build he hinted at in that post: a Combat Medicine Field Medic he calls **The Muscular Nurse**, a tank-healer hybrid that runs the same [Pummeling Shield](/database/os-protocols/pummeling-shield/) OS Protocol but trades the Bulwark frame for a healing-focused playstyle that brutalizes Elite Missions.
+**Attributes:** Damage Reduction on the mask, gloves, holster and backpack, next to Armor, Max Health, Received Healing or Skill Crit Chance. Received Healing and Skill Cooldown Recovery on the chest, Armor and Skill Crit Chance on the knee pads. The AUG rolls Received Healing and Skill Multi-Shot, the M60 Max Health and Armor. Stack Toughness: as far as we can tell, Combat Medicine heals don't scale with Engineering, whatever the tooltip implies. [Open it in the Build Planner](/builder/#s=Field+Medic&sc=Combat+Medicine&n=The+Muscular+Nurse&ms=gs-14&m1=dr&m2=arm&gs=gs-14&g1=mhp&g2=dr&hs=gs-14&h1=dr&h2=rh&cs=gs-15&ct=ba-13&c1=rh&c2=scr&ps=gs-14&pt=bp-21&p1=scc&p2=dr&ks=gs-15&k1=arm&k2=scc&w1s=sw-49&w1tr=T2&w1t=wt-55&w1t2=wt-38&w1b1=sms&w1b1v=8.46&w1b2=rh&w1b2v=22.23&w2s=sw-62&w2tr=T2&w2t=wt-44&w2t2=wt-12&w2b1=mhp&w2b1v=18.62&w2b2=arm&w2b2v=12.76&os=os-54&sm1=smc-83&sm2=smc-86&sm3=smc-89) to copy the whole loadout.
 
-This is a **24,410 Power Score** build sitting at **334,193 Health, 15,760 Armor, and 20.01% base Damage Reduction** before any talent procs fire. The 4pc [Healing Elites](/database/gear-set-effects/healing-elites/) gives Received Healing, Release Extra Protection, and Armor stacking. The 2pc [Self-Propelled Shield](/database/gear-set-effects/self-propelled-shield/) adds +14% Armor. The Pummeling Shield OS Protocol stuns what you're hitting while you have Extra Health, once every 10 seconds since the June 26 hotfix. [Hypervigilant](/database/body-armor-talents/#hypervigilant) on the body armor stacks Damage Reduction every time healing ticks. [Rock Solid](/database/backpack-talents/#rock-solid) on the backpack adds another DR layer every time you receive healing. The core loop is: throw a healing station, stand in it, hold the trigger, stun something every 10 seconds, and never die.
+## How It Works
 
-Nadie's pitch is one of the best build descriptions we have ever received:
+<div class="syn__wrap"><div class="syn__group"><p class="syn__title">1 · Heals become Damage Reduction</p><div class="syn"><div class="syn__card"><img class="syn__icon" src="/images/db/body-armor-talents/hypervigilant-body-armor-talent-icon-division-resurgence-80.webp" srcset="/images/db/body-armor-talents/hypervigilant-body-armor-talent-icon-division-resurgence-80.webp 80w, /images/db/body-armor-talents/hypervigilant-body-armor-talent-icon-division-resurgence-160.webp 160w" sizes="52px" width="52" height="52" alt="" loading="lazy" decoding="async"><div><p class="syn__name">Hypervigilant</p><p class="syn__when">healing</p><p class="syn__bonus">+5% Damage Reduction for 3 s, up to 3 stacks. Their II: +7%</p></div></div><div class="syn__card"><img class="syn__icon" src="/images/db/backpack-talents/rock-solid-backpack-talent-icon-division-resurgence-80.webp" srcset="/images/db/backpack-talents/rock-solid-backpack-talent-icon-division-resurgence-80.webp 80w, /images/db/backpack-talents/rock-solid-backpack-talent-icon-division-resurgence-160.webp 160w" sizes="52px" width="52" height="52" alt="" loading="lazy" decoding="async"><div><p class="syn__name">Rock Solid</p><p class="syn__when">receiving healing</p><p class="syn__bonus">+15% Damage Reduction for 3 s. Their II: +20%</p></div></div><div class="syn__card"><img class="syn__icon" src="/images/db/gear-set-effects/healing-elites-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/healing-elites-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/healing-elites-gear-set-icon-division-resurgence-160.webp 160w" sizes="52px" width="52" height="52" alt="" loading="lazy" decoding="async"><div><p class="syn__name">Healing Elites, 4 pieces</p><p class="syn__when">always</p><p class="syn__bonus">+14.4% Received Healing, +15% Release Extra Protection, +28% Armor</p></div></div></div></div><div class="syn__group"><p class="syn__title">2 · Full Health, then stun</p><div class="syn"><div class="syn__card"><img class="syn__icon" src="/images/db/os-protocols/pummeling-shield-os-protocol-talent-icon-division-resurgence-80.webp" srcset="/images/db/os-protocols/pummeling-shield-os-protocol-talent-icon-division-resurgence-80.webp 80w, /images/db/os-protocols/pummeling-shield-os-protocol-talent-icon-division-resurgence-104.webp 104w" sizes="52px" width="52" height="52" alt="" loading="lazy" decoding="async"><div><p class="syn__name">Pummeling Shield</p><p class="syn__when">hit at Max Health</p><p class="syn__bonus">Extra Health equal to 2400% Firepower for 10 s. While you have Extra Health, every 10 hits stun (10 s cooldown)</p></div></div><div class="syn__card"><img class="syn__icon" src="/images/db/weapon-talents/steady-suppression-weapon-talent-icon-division-resurgence-80.webp" srcset="/images/db/weapon-talents/steady-suppression-weapon-talent-icon-division-resurgence-80.webp 80w, /images/db/weapon-talents/steady-suppression-weapon-talent-icon-division-resurgence-160.webp 160w" sizes="52px" width="52" height="52" alt="" loading="lazy" decoding="async"><div><p class="syn__name">Steady Suppression</p><p class="syn__when">while firing (AUG)</p><p class="syn__bonus">+18% Damage Reduction</p></div></div><div class="syn__card"><img class="syn__icon" src="/images/db/weapon-talents/precise-support-weapon-talent-icon-division-resurgence-80.webp" srcset="/images/db/weapon-talents/precise-support-weapon-talent-icon-division-resurgence-80.webp 80w, /images/db/weapon-talents/precise-support-weapon-talent-icon-division-resurgence-160.webp 160w" sizes="52px" width="52" height="52" alt="" loading="lazy" decoding="async"><div><p class="syn__name">Precise Support</p><p class="syn__when">6 hits on an enemy (AUG)</p><p class="syn__bonus">+7% Armor and +40% Rescue Efficiency for 10 s, up to 5 stacks. Their II: +9.8% Armor</p></div></div></div></div><div class="syn__group"><p class="syn__title">3 · The M60 holds the boss</p><div class="syn"><div class="syn__card"><img class="syn__icon" src="/images/db/weapon-talents/sadistic-shield-weapon-talent-icon-division-resurgence-80.webp" srcset="/images/db/weapon-talents/sadistic-shield-weapon-talent-icon-division-resurgence-80.webp 80w, /images/db/weapon-talents/sadistic-shield-weapon-talent-icon-division-resurgence-160.webp 160w" sizes="52px" width="52" height="52" alt="" loading="lazy" decoding="async"><div><p class="syn__name">Sadistic Shield</p><p class="syn__when">5 hits on an enemy (M60)</p><p class="syn__bonus">Extra Health equal to 12.5% Max Health for 10 s. Their II: 17.5%</p></div></div><div class="syn__card"><img class="syn__icon" src="/images/db/weapon-talents/conceited-weapon-talent-icon-division-resurgence-80.webp" srcset="/images/db/weapon-talents/conceited-weapon-talent-icon-division-resurgence-80.webp 80w, /images/db/weapon-talents/conceited-weapon-talent-icon-division-resurgence-160.webp 160w" sizes="52px" width="52" height="52" alt="" loading="lazy" decoding="async"><div><p class="syn__name">Conceited</p><p class="syn__when">kills and assists (M60)</p><p class="syn__bonus">Taunts enemies within 20 m, +15% Damage Reduction for 10 s. Their II: +21%</p></div></div><div class="syn__card"><img class="syn__icon" src="/images/db/gear-set-effects/self-propelled-shield-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/self-propelled-shield-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/self-propelled-shield-gear-set-icon-division-resurgence-160.webp 160w" sizes="52px" width="52" height="52" alt="" loading="lazy" decoding="async"><div><p class="syn__name">Self-Propelled Shield, 2 pieces</p><p class="syn__when">always</p><p class="syn__bonus">+14% Armor</p></div></div></div></div><div class="syn__group"><p class="syn__title">4 · Nobody stays down</p><div class="syn"><div class="syn__card"><img class="syn__icon" src="/images/db/skill-mod-combos/auto-trauma-treatment-skill-mod-combo-icon-division-resurgence-80.webp" srcset="/images/db/skill-mod-combos/auto-trauma-treatment-skill-mod-combo-icon-division-resurgence-80.webp 80w, /images/db/skill-mod-combos/auto-trauma-treatment-skill-mod-combo-icon-division-resurgence-160.webp 160w" sizes="52px" width="52" height="52" alt="" loading="lazy" decoding="async"><div><p class="syn__name">Auto Trauma Treatment</p><p class="syn__when">Support Station out</p><p class="syn__bonus">+6% Incoming Healing, and auto-revives any ally downed in its radius</p></div></div><div class="syn__card"><img class="syn__icon" src="/images/db/skill-mod-combos/buddy-treatment-skill-mod-combo-icon-division-resurgence-80.webp" srcset="/images/db/skill-mod-combos/buddy-treatment-skill-mod-combo-icon-division-resurgence-80.webp 80w, /images/db/skill-mod-combos/buddy-treatment-skill-mod-combo-icon-division-resurgence-160.webp 160w" sizes="52px" width="52" height="52" alt="" loading="lazy" decoding="async"><div><p class="syn__name">Buddy Treatment</p><p class="syn__when">Healing Hive out</p><p class="syn__bonus">+2% Incoming Healing to allies below 50% Health. Self-target it for nano-drones on allies within 15 m</p></div></div><div class="syn__card"><img class="syn__icon" src="/images/db/skill-mod-combos/emergency-measures-skill-mod-combo-icon-division-resurgence-80.webp" srcset="/images/db/skill-mod-combos/emergency-measures-skill-mod-combo-icon-division-resurgence-80.webp 80w, /images/db/skill-mod-combos/emergency-measures-skill-mod-combo-icon-division-resurgence-160.webp 160w" sizes="52px" width="52" height="52" alt="" loading="lazy" decoding="async"><div><p class="syn__name">Emergency Measures</p><p class="syn__when">Healing Swarm</p><p class="syn__bonus">Heals over 10 s. An ally who hits 0 Health mid-heal gets 16% Max Health back for 5 s</p></div></div></div></div></div>
 
-> *"You can easily find me gathering 3 Vanguards who keep asking 'Bro, are you sure you can tank?' when matchmaking and 'GG ty' when finished."*
+Base values from the in-game Build-Making Database. Their ranked-up copies read higher.
 
-> [!WARNING] Season 1 Phase 3 and Season 2 changes that affect this build
-> - **Pummeling Shield (June 26 hotfix):** The stun now has a 10-second cooldown and lasts 1.5s instead of 2s. "Stuns everything" is now "stuns something every 10 seconds." The Extra Health clause that keeps you alive wasn't mentioned in that change.
-> - **Damage Reduction cap (June 26 hotfix):** DR is now capped at 80%. Base 20% plus Hypervigilant II (21%), Rock Solid II (20%) and Steady Suppression (18%) is already about 79% on paper if those stack additively, so piling on more DR may be wasted. If Damage Reduction sources multiply instead, the total is lower and there's more headroom.
-> - **Medic Hypershot (Season 1 Phase 3, June 24):** Ubisoft fixed Combat Medic dealing more damage than expected at regular intervals. At 66k DPS this build was never a damage poster, but expect a bit less.
-> - **Gear mods (Season 2 Phase 1):** Gear mods can now roll Received Healing, Max Health and Armor, which are exactly the stats this build stacks.
->
-> This build has not been re-tested since Patch 1.1.2.2. Full details: [Season 1 Phase 3 patch notes](/patch-notes/season-1-phase-3-a-new-fire/), [Season 2 Phase 1 patch notes](/patch-notes/season-2-phase-1-the-call/) and [Season 2 Phase 2 patch notes](/patch-notes/season-2-phase-2/).
+## How to Play
 
----
+1. **Support Station where the team will stand, and stand in it.** Staying at full Health is what feeds Pummeling Shield.
+2. **Hold the trigger on the AUG.** +18% Damage Reduction while firing, an Armor stack every 6 hits, and a stun every 10 hits, once per 10 s.
+3. **Take the hits.** Every heal stacks Hypervigilant and refreshes Rock Solid, and every hit at full Health is more Extra Health.
+4. **Boss, or the team avoids your ring? Swap to the M60.** Sadistic Shield adds Extra Health every 5 hits, Conceited taunts and adds Damage Reduction on kills.
+5. **Healing Swarm on whoever's in trouble.** Emergency Measures catches anyone who drops to 0 mid-heal.
 
-> [!WARNING] Combat Medicine Heals Scale Off Toughness, NOT Engineering
-> The in-game tooltip implies Engineering affects Combat Medicine heal output. From our understanding, it does not. The correct primary stat for Combat Medicine is **Toughness**. Engineering scales Aegis Operations healing, a different system entirely. Nadie stacks 2,410 Toughness for 334k Health, and that Health pool directly drives his healing output. If you copy this build with Engineering cores, your heals will do nothing.
+## Their Numbers
 
----
+<div class="stat-tiles"><div class="stat-tile"><p class="stat-tile__big">334,193</p><p class="stat-tile__label">Health, from 2,410 Toughness</p></div><div class="stat-tile"><p class="stat-tile__big">15,760</p><p class="stat-tile__label">Armor, at 24,410 Power Score</p></div><div class="stat-tile"><p class="stat-tile__big">20.01%</p><p class="stat-tile__label">Damage Reduction before any talent fires, with 59.93% Received Healing</p></div><div class="stat-tile"><p class="stat-tile__big">66,340</p><p class="stat-tile__label">DPS. Not the point</p></div></div>
 
-## Stats at a Glance
+## Before You Copy It
 
-| Stat | Value |
-|---|---|
-| Power Score | 24,410 |
-| DPS | 66,340 |
-| Armor | 15,760 |
-| Health | 334,193 |
-| Firepower | 268 |
-| Toughness | 2,410 |
-| Engineering | 470 |
+- **The stun is on a leash.** Since the [June 26, 2026 hotfix](/news/server-hotfix-june-26-2026/), Pummeling Shield stuns for 1.5 s instead of 2, once every 10 s. The Extra Health part wasn't mentioned in that change.
+- **Damage Reduction caps at 80%** (same hotfix). Their 20% plus Hypervigilant II, Rock Solid II and Steady Suppression is already about 79% if they add up, so more may be wasted. If they multiply, there's more headroom.
+- **Expect a bit less than 66k DPS.** Season 1 Phase 3 fixed Combat Medic dealing more damage than intended at regular intervals, after their submission.
 
-### Defensive Attributes
+## Swaps
 
-| Attribute | Value |
-|---|---|
-| Damage Reduction | 20.01% (before talent procs) |
-| Healing Intensity | 11.66% |
-| Received Healing | 59.93% |
-| Movement Speed | 4.00% |
+<div class="bsheet bsheet--single"><div class="bsheet__group"><div class="bsheet__item"><img class="bsheet__tile bsheet__tile--wide" src="/images/db/weapon-icons/copperhead-weapon-icon-division-resurgence-165.webp" srcset="/images/db/weapon-icons/copperhead-weapon-icon-division-resurgence-165.webp 165w, /images/db/weapon-icons/copperhead-weapon-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 150px" width="150" height="71" alt="Copperhead submachine gun in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><span class="bsheet__name">No Enhanced AUG A3P?</span><span class="bsheet__sub">These SMGs roll Steady Suppression and Precise Support too</span><span class="bsheet__picks"><span class="bsheet__pick"><a href="/database/weapons/copperhead/">Copperhead (T1 SMG)</a></span><span class="bsheet__pick"><a href="/database/weapons/naval-mp5/">Naval MP5 (T0 SMG)</a></span></span></div></div><div class="bsheet__item"><img class="bsheet__tile bsheet__tile--wide" src="/images/db/weapon-icons/mp7-weapon-icon-division-resurgence-165.webp" srcset="/images/db/weapon-icons/mp7-weapon-icon-division-resurgence-165.webp 165w, /images/db/weapon-icons/mp7-weapon-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 150px" width="150" height="71" alt="MP7 submachine gun in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><span class="bsheet__name">No Military M60 E4?</span><span class="bsheet__sub">It&#x27;s the only LMG with Sadistic Shield and Conceited. These T2s roll both too</span><span class="bsheet__picks"><span class="bsheet__pick"><a href="/database/weapons/mp7/">MP7 (T2 SMG)</a></span><span class="bsheet__pick"><a href="/database/weapons/rmb-93/">RMB-93 (T2 Shotgun)</a></span></span></div></div></div></div>
 
-That **20.01% base Damage Reduction** is the floor. Once [Hypervigilant](/database/body-armor-talents/#hypervigilant) II (+7% DR per heal tick, 3 stacks = +21%), [Rock Solid](/database/backpack-talents/#rock-solid) II (+20% DR on receiving healing), and [Steady Suppression](/database/weapon-talents/steady-suppression/) (+18% DR while firing) start layering, the effective DR in an Elite Mission boss room is absurd (on paper they add up to about the 80% cap the June 26 hotfix added; if Damage Reduction sources multiply rather than add, the real total is lower). The **59.93% Received Healing** is the secret that keeps the Pummeling Shield full-health proc and Rock Solid II cycling consistently: every heal hits 60% harder.
+**Getting Pummeling Shield:** Weekly Bounties or the OS Protocol Sealed Cache. Died Again Gaming said in October 2026 that the fourth boss's Key Rewards guarantee a random gold protocol each week. Level it to 50 for +45% Toughness.
 
----
+## What They Say
 
-## Gear: Healing Elites 4 + Self-Propelled Shield 2
+- *"You can easily find me gathering 3 Vanguards who keep asking 'Bro, are you sure you can tank?' when matchmaking and 'GG ty' when finished."*
+- On the M60: *"I could stand in front of the boss and recount the entire history of mankind with my finger glued to the trigger."*
+- *"Throw healing stations, dance with minions, have a chat with the boss, throw ultimate to unlucky dudes and leave the match without being thanked, mostly."*
+- Why they run it: *"I can help some brothers with their power score not enough, access and claim their first T2s."*
 
-The split is **[Healing Elites](/database/gear-set-effects/healing-elites/) 4-piece** (mask, gloves, holster, backpack) plus **[Self-Propelled Shield](/database/gear-set-effects/self-propelled-shield/) 2-piece** (body armor, kneepads).
+## Sources
 
-### Healing Elites [4/4] Bonuses
-
-| Pieces | Bonus |
-|--------|-------|
-| 2-piece | Received Healing +14.4% |
-| 3-piece | Release Extra Protection +15.0% |
-| 4-piece | Armor +28.0% |
-
-That +28% Armor 4-piece bonus is doing real work on the 15,760 Armor stat. Stack a +28% multiplier on a high base and the absolute number balloons.
-
-### Self-Propelled Shield [2/4] Bonus
-
-| Pieces | Bonus |
-|--------|-------|
-| 2-piece | Armor +14.0% |
-
-Clean Armor without committing four slots to a second set.
-
-### Gear Slots
-
-| Slot | Piece | Gear Set | Attribute 1 | Attribute 2 | Talent |
-|---|---|---|---|---|---|
-| Mask | Healing Elites | Healing Elites | Damage Reduction | Armor | None |
-| Body Armor | "Big Drum" (T2) | Self-Propelled Shield | Received Healing | Skill CDR | **[Hypervigilant](/database/body-armor-talents/#hypervigilant) II** |
-| Backpack | Healing Roamer Pack "Sow" (T2) | Healing Elites | Skill Crit Chance | Damage Reduction | **[Rock Solid](/database/backpack-talents/#rock-solid) II** |
-| Gloves | Healing Elites | Healing Elites | Max Health | Damage Reduction | None |
-| Holster | Healing Elites | Healing Elites | Damage Reduction | Received Healing | None |
-| Knee Pads | Self-Propelled Shield | Self-Propelled Shield | Armor | Skill Crit Chance | None |
-
-### Body Armor Talent: Hypervigilant II
-
-*Healing grants +7% Damage Reduction for 3 seconds, up to 3 stacks.*
-
-Base [Hypervigilant](/database/body-armor-talents/#hypervigilant) grants +5% DR per stack. The II variant bumps it to +7%. At 3 stacks that is +21% Damage Reduction any time your healing station ticks, which is constantly, because you are standing in it.
-
-### Backpack Talent: Rock Solid II
-
-*Receiving Healing grants +20% Damage Reduction for 3 seconds.*
-
-Base [Rock Solid](/database/backpack-talents/#rock-solid) (rank I in our database) is +15% DR per heal proc, and Nadie's Rock Solid II tooltip reads +20%. Every time your healing station tops you off, you get a 3-second +20% DR window. Stack it with Hypervigilant II and you have **two separate heal-triggered DR procs running simultaneously**. This is the load-bearing piece of the entire build.
-
----
-
-## OS Protocol: Pummeling Shield
-
-The same [Pummeling Shield](/database/os-protocols/pummeling-shield/) from [Involuntary Nap Time](/builds/involuntary-nap-time-bulwark-juggernaut-build/), proving this OS Protocol has a second great home on a Field Medic.
-
-### Pummeling Shield (High-End, Level 50, Verified Rolls)
-
-| Attribute | Value |
-|---|---|
-| Specialization | Toughness |
-| Rarity | High-End |
-| Toughness | +45.00% (+447 flat) |
-| All Weapon Damage | +358 |
-| Health | +11,753 |
-| Power Score | 2,467 |
-| **Talent** | While possessing Extra Health, apply Stun after every 10 hits performed. At Max Health, grants Extra Health equal to 2400% Firepower for 10 seconds when hit. |
-
-The second clause is the magic on a tank-medic. Every time you take a hit at full health, you get an Extra Health buff equal to 2400% of your Firepower stat. On Nadie's 268 Firepower that's a thin layer, much smaller than one Sadistic Shield II proc (below), but its real job is switching on the first clause: while you have Extra Health, every 10 hits you land applies a Stun. (Since the June 26, 2026 hotfix, that Stun lasts 1.5 seconds and has a 10-second cooldown.) Your healing station keeps you at full health. The next hit triggers it again. You never leave the proc state during sustained fights.
-
----
-
-## Weapons: The Two "Sexy" Pieces He Will Use Forever
-
-Nadie called these out explicitly: *"I have found 2 sexy stuff that I think Imma use them forever for Elites Missions."*
-
-> [!INFO] Which AUG and which M60
-> Our June write-up called the primary an AUG A3 Para XS. In the game's Armory that one is Tier 1, and its talent pool has neither Steady Suppression nor Precise Support. The Tier 2 AUG, the **Enhanced AUG A3P**, can roll both, and likewise only the Tier 2 **Military M60 E4** (not the Classic M60 or the Black Market M60 E6) can roll Sadistic Shield and Conceited. Nadie's guns read T2, so these are the two to farm (talent Source lists recorded in game, October 29, 2026).
-
-### Primary: Enhanced AUG A3P (T2 SMG)
-
-| Stat | Value |
-|---|---|
-| Type | SMG |
-| Tier | T2 |
-| RPM | 680 |
-| Magazine | 30 |
-| Blast Damage | 1,460 |
-| Skill Multi-Shot Chance | +8.46% |
-| Received Healing | +22.23% |
-| Talent 1 | **[Steady Suppression](/database/weapon-talents/steady-suppression/)** |
-| Talent 2 | **Precise Support II** |
-
-#### Talents
-
-- **Steady Suppression:** Grants +18% Damage Reduction while firing.
-- **Precise Support II:** Hitting an enemy 6 times grants +9.80% Armor and +40% Rescue Efficiency for 10 seconds, up to 5 stacks.
-
-Base [Precise Support](/database/weapon-talents/precise-support/) grants +7% Armor and +40% Rescue Efficiency, up to 5 stacks. The II variant bumps Armor to +9.80%, so 5 stacks is **+49% Armor**. Whether the Rescue Efficiency stacks too isn't settled: TikTokAndy, reading his own rank II copy in October, counts it as a flat +40% while the Armor climbs to about +50%. Either way you revive faster while shooting. You can revive a downed teammate while suppressing the enemy that downed them. The Steady Suppression +18% DR while firing means you never stop pulling the trigger. The moment you do, defense layers start falling.
-
-Nadie's take: *"Keep me in one piece and revive my poor teammates before realizing they were saved."*
-
-### Secondary: Military M60 E4 (T2 LMG)
-
-| Stat | Value |
-|---|---|
-| Type | LMG |
-| Tier | T2 |
-| RPM | 500 |
-| Magazine | 100 |
-| Max Health | +18.62% |
-| Armor | +12.76% |
-| Talent 1 | **Sadistic Shield II** |
-| Talent 2 | **[Conceited](/database/weapon-talents/conceited/) II** |
-
-#### Talents
-
-- **Sadistic Shield II:** Hitting an enemy 5 times grants 17.50% Extra Health for 10 seconds (based on Max Health).
-- **Conceited II:** Kills and assists taunt enemies within 20 meters and grant +21% Damage Reduction for 10 seconds.
-
-Base [Sadistic Shield](/database/weapon-talents/sadistic-shield/) grants 12.50% Extra Health. The II variant is 17.50%. Based on Nadie's 334k Max Health, that is roughly **58,500 Extra Health per proc**. At 100 rounds in the magazine you are hitting 5-shot thresholds constantly. [Conceited](/database/weapon-talents/conceited/) II layers +21% DR on every kill or assist, which is essentially every trigger pull in PvE.
-
-Nadie's words on the M60 are the chef's kiss of the entire submission:
-
-> *"I could stand in front of the boss and recount the entire history of mankind with my finger glued to the trigger."*
-
-#### Why He Runs M60 Only Sometimes
-
-Nadie flagged this himself, and the honest answer is hilarious:
-
-> *"I regularly use this unless my teammates viewed my healing ring as a threat and stayed away from it."*
-
-The AUG is the team-friendly weapon. The M60 is the "I will tank the boss while you do whatever you want" weapon. Read the room.
-
----
-
-## Skill Mods
-
-| Skill | Combo Set | 3-Set Bonus |
-|---|---|---|
-| Healing Swarm | **Emergency Measures** (3pc) | Healing Swarm heals allies over 10s. When an ally's Health drops to 0 during healing, restores Health equal to 16% Max Health for 5s. |
-| Healing Hive | **Buddy Treatment** (3pc) | While Healing Hive is deployed, grants +2.00% Incoming Healing to any ally below 50% Health. Self-targeting on Healing Hive also deploys healing nano-drones to allies within 15m. |
-| Support Station | **Auto Trauma Treatment** (3pc) | Grants +6% Incoming Healing and automatically revives any ally who is downed within the radius of a Support Station. |
-
-Every skill mod combo feeds healing output or emergency revives. The Auto Trauma Treatment on Support Station is the standout: automatic revives inside the healing radius means downed teammates get picked up without Nadie stopping his trigger pull.
-
----
-
-## The Gameplay Loop
-
-Nadie said it best:
-
-> *"The gameplay is super easy. Throw healing stations, dance with minions, have a chat with the boss, throw ultimate to unlucky dudes and leave the match without being thanked, mostly."*
-
-The detailed loop:
-
-1. **Throw your healing station** in the fight zone where your team will stack
-2. **Stand in it**: your healing keeps you at full health, which primes Pummeling Shield's Extra Health proc
-3. **Hold the trigger**: Steady Suppression gives +18% DR while firing. Precise Support adds an Armor stack (and Rescue Efficiency) every 6 hits. Pummeling Shield stuns every 10 hits (once per 10 seconds since the June 26 hotfix).
-4. **Take hits freely**: at full health, Pummeling Shield generates Extra Health equal to 2400% Firepower. Hypervigilant II and Rock Solid II both trigger from the healing ticks, stacking DR.
-5. **Swap to M60 for boss solo**: big magazine, Sadistic Shield II generates Extra Health every 5 hits, Conceited II adds DR on every kill
-6. **Deploy your Healing Swarm signature** on whoever needs emergency healing (Nadie's "unlucky dudes")
-
-The entire art of this build is **positioning your healing station where your team will actually stand in it**. If your teammates avoid the ring, swap to the M60 and solo-tank the boss yourself.
-
----
-
-## Why The Muscular Nurse Works
-
-Three structural reasons this build crushes Elite Missions:
-
-**1. Pummeling Shield's full-health Extra Health proc loops infinitely.** Take a hit → get Extra Health from the OS talent → healing station tops you back to full while Extra Health is still active → next hit triggers it again. You essentially never leave the proc state during sustained fights.
-
-**2. The two-weapon roles are properly separated.** AUG is for keeping the team alive (Precise Support's Rescue Efficiency is a built-in revive multiplier). M60 is for solo boss tanking or duo-carrying lower-PS teammates. Pick the weapon based on team composition, not what feels good.
-
-**3. Healing Elites 4pc + Pummeling Shield stack vertically, not horizontally.** Most builds compete with themselves for stat budget. This one stacks Armor (gear sets), Toughness (OS Protocol), Extra Health (weapon talents + OS), and Received Healing (gear set and rolls) on completely separate axes. No overlap means every stat investment pays out fully.
-
----
-
-## The Real Best Feature
-
-Nadie called out what actually makes this build matter to him:
-
-> *"And the most thing that makes me happy is with this build I can help some brothers with their power score not enough, access and claim their first T2s."*
-
-This build lets a tank-medic carry under-geared teammates through content they could not otherwise clear. That is not a stat on a sheet. That is the point of a medic.
-
-
-
-
-## Loot Quick-Reference
-
-| Item | What to Look For |
-|---|---|
-| 4pc Healing Elites (Mask, Gloves, Holster, Backpack) | Damage Reduction, Armor, Received Healing, Max Health on every sub-roll. T2 pieces for full stat ceiling. |
-| 2pc Self-Propelled Shield (Body, Kneepads) | Received Healing + Skill CDR on body. Armor + Skill Crit Chance on kneepads. |
-| Body armor talent | Hypervigilant (II preferred). +5-7% DR per heal tick, 3 stacks. |
-| Backpack talent | Rock Solid (II preferred). +15% DR on receiving healing at rank I; Nadie's II reads +20%. |
-| Enhanced AUG A3P (T2 SMG) | Steady Suppression + Precise Support. Received Healing + Skill Multi-Shot bonus attributes. |
-| Military M60 E4 (T2 LMG) | Sadistic Shield + Conceited. Max Health + Armor bonus attributes. |
-| Pummeling Shield OS | Weekly Bounties or the OS Protocol Sealed Cache. When this was written, a gold from the bounties was rare (Died Again Gaming guessed under 5 percent in June); by October he says the fourth boss's Key Rewards guarantee a random gold each week. Max to Level 50 for +45% Toughness. |
-
----
-
-## A Note From the Builder
-
-Nadie wanted us to pass along a thank you:
-
-> *"Hi guys, since your last post, I can't stop reading and admiring your work. I realized that you have updated the build planner site which is much much better now and it also including Skill mods updated. Now I am using that to present to you my Muscular Nurse build... Once again, I am very grateful and appreciate your work."*
-
-The pleasure has been ours, Nadie. The 50,000+ rounds of M60 ammunition you have sent downrange in the name of Elite Mission supremacy are the real gift to the community.
-
----
-
-## Related Builds and Guides
-
-- [Involuntary Nap Time Bulwark Juggernaut Build (also by Nadie)](/builds/involuntary-nap-time-bulwark-juggernaut-build/) · Same Pummeling Shield OS, different class and role
-- [Tactical Pharma 800k DPS Field Medic Build (RogueMadras)](/builds/tactical-pharma-800k-dps-rank-1-global-build/) · DPS-focused Field Medic alternative
-- [The Double Agent Glass Cannon Tech Op Build (LtFoe)](/builds/aegis-chad-glass-cannon-tech-operator-build-ifozzy/) · Dual-setup Tech Operator for a different playstyle
-- [Exotic Weapons List 2026](/guides/division-resurgence-exotic-weapons-list-2026/) · Full exotic reference
-- [OS Protocol Tier List](/tier-list/os-protocols/) · Where Pummeling Shield ranks
-- [Healing Elites Gear Set](/database/gear-set-effects/healing-elites/) · Set bonus details
-- [Self-Propelled Shield Gear Set](/database/gear-set-effects/self-propelled-shield/) · Set bonus details
-- [Pummeling Shield OS Protocol](/database/os-protocols/pummeling-shield/) · Full OS stats
+- Nadie's Discord submission, June 2026: in-game screenshots, leaderboard proof and a gameplay video. Their YouTube walkthrough has since gone private.
+- In-game Build-Making Database, recorded October 28 and 29, 2026. Browse it in our [database](/database/).
+- [June 26, 2026 server hotfix](/news/server-hotfix-june-26-2026/); patch notes: [Season 1 Phase 3](/patch-notes/season-1-phase-3-a-new-fire/), [Season 2 Phase 1](/patch-notes/season-2-phase-1-the-call/).
+- Died Again Gaming on gold OS Protocols: [How to Farm, New Agent Guide](https://www.youtube.com/watch?v=OLJPNceH_jo) (June 4, 2026), [Catching Up Before Weekly Reset](https://www.youtube.com/watch?v=tn4ME4MVGyY) (October 25, 2026).

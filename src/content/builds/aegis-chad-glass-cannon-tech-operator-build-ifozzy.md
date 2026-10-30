@@ -35,274 +35,63 @@ faqs:
   - question: "Is Division Resurgence pay-to-win?"
     answer: "No. Every piece in this build drops from gameplay. The Warlord comes from the DZ vendor. Brains Over Brawn comes from weekly bounties. All gear sets are standard loot pool drops. The only thing money cannot buy is the talent roll grind and the game sense to not stand in the open with Glass Cannon active."
 ---
+LtFoe's Double Agent is two Tech Operator builds sharing one loadout. **Jackpot and Brains Over Brawn make every skill hit crit, Engineering buffs make the crits hurt, and swapping the chest and backpack turns the glass cannon into a brick.**
 
-**By RapidF5 (via LtFoe) ·** Patch 1.1.2.2
+Build by **LtFoe** (Clan TruthAbove), sent to our Discord as 30+ in-game screenshots in June 2026, on Patch 1.1.2.2.
 
-## What This Build Does
+## The Build
 
-> Build credit: **LtFoe** (LtFoe in-game, Clan TruthAbove, Bloodhound title). Submitted via our Discord with 30+ in-game screenshots. Every stat, every talent, every gear piece in this post comes from his verified loadout. We just helped him write it down.
+<div class="bsheet"><div class="bsheet__group"><p class="bsheet__label">Weapons</p><div class="bsheet__item"><img class="bsheet__tile bsheet__tile--wide" src="/images/db/weapon-icons/enhanced-acr-e-weapon-icon-division-resurgence-165.webp" srcset="/images/db/weapon-icons/enhanced-acr-e-weapon-icon-division-resurgence-165.webp 165w, /images/db/weapon-icons/enhanced-acr-e-weapon-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 150px" width="150" height="71" alt="Enhanced ACR-E assault rifle in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/weapons/enhanced-acr-e/">Enhanced ACR-E</a><span class="bsheet__sub">Primary · T2 Assault Rifle</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/weapon-talents/in-sync-weapon-talent-icon-division-resurgence-80.webp" srcset="/images/db/weapon-talents/in-sync-weapon-talent-icon-division-resurgence-80.webp 80w, /images/db/weapon-talents/in-sync-weapon-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">In Sync</span><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/weapon-talents/fully-charged-weapon-talent-icon-division-resurgence-80.webp" srcset="/images/db/weapon-talents/fully-charged-weapon-talent-icon-division-resurgence-80.webp 80w, /images/db/weapon-talents/fully-charged-weapon-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Fully Charged</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile bsheet__tile--wide" src="/images/db/exotic-weapons/warlord-exotic-weapon-division-resurgence-v2-290.webp" srcset="/images/db/exotic-weapons/warlord-exotic-weapon-division-resurgence-v2-290.webp 290w, /images/db/exotic-weapons/warlord-exotic-weapon-division-resurgence-v2-558.webp 558w" sizes="(max-width: 520px) 110px, 150px" width="150" height="84" alt="Warlord exotic assault rifle in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/exotic-weapons/warlord/">Warlord</a><span class="bsheet__sub">Secondary · Exotic Assault Rifle</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/weapon-talents/play-rough-weapon-talent-icon-division-resurgence-80.webp" srcset="/images/db/weapon-talents/play-rough-weapon-talent-icon-division-resurgence-80.webp 80w, /images/db/weapon-talents/play-rough-weapon-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Play Rough</span></span></div></div></div><div class="bsheet__group"><p class="bsheet__label">OS Protocol and skill mods</p><div class="bsheet__grid2"><div class="bsheet__item"><img class="bsheet__sq" src="/images/db/os-protocols/brains-over-brawn-os-protocol-talent-icon-division-resurgence-80.webp" srcset="/images/db/os-protocols/brains-over-brawn-os-protocol-talent-icon-division-resurgence-80.webp 80w, /images/db/os-protocols/brains-over-brawn-os-protocol-talent-icon-division-resurgence-104.webp 104w" sizes="56px" width="56" height="56" alt="Brains Over Brawn OS Protocol icon" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/os-protocols/brains-over-brawn/">Brains Over Brawn</a><span class="bsheet__sub">OS Protocol · Specialized · Level 50, 5/5</span><span class="bsheet__picks"></span></div></div><div class="bsheet__item"><img class="bsheet__sq" src="/images/db/skill-mod-combos/hazardous-area-skill-mod-combo-icon-division-resurgence-80.webp" srcset="/images/db/skill-mod-combos/hazardous-area-skill-mod-combo-icon-division-resurgence-80.webp 80w, /images/db/skill-mod-combos/hazardous-area-skill-mod-combo-icon-division-resurgence-160.webp 160w" sizes="56px" width="56" height="56" alt="" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/skill-mod-combos/hazardous-area/">Hazardous Area</a><span class="bsheet__sub">Defender Drone mods</span><span class="bsheet__picks"></span></div></div><div class="bsheet__item"><img class="bsheet__sq" src="/images/db/skill-mod-combos/combat-enhancer-skill-mod-combo-icon-division-resurgence-80.webp" srcset="/images/db/skill-mod-combos/combat-enhancer-skill-mod-combo-icon-division-resurgence-80.webp 80w, /images/db/skill-mod-combos/combat-enhancer-skill-mod-combo-icon-division-resurgence-160.webp 160w" sizes="56px" width="56" height="56" alt="" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/skill-mod-combos/combat-enhancer/">Combat Enhancer</a><span class="bsheet__sub">Mender Drone mods</span><span class="bsheet__picks"></span></div></div><div class="bsheet__item"><img class="bsheet__sq" src="/images/db/skill-mod-combos/teamfight-skill-mod-combo-icon-division-resurgence-80.webp" srcset="/images/db/skill-mod-combos/teamfight-skill-mod-combo-icon-division-resurgence-80.webp 80w, /images/db/skill-mod-combos/teamfight-skill-mod-combo-icon-division-resurgence-160.webp 160w" sizes="56px" width="56" height="56" alt="" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/skill-mod-combos/teamfight/">Teamfight</a><span class="bsheet__sub">First-Aid Firefly mods</span><span class="bsheet__picks"></span></div></div></div></div><div class="bsheet__group bsheet__group--wide"><p class="bsheet__label">Gear · 4pc Jackpot + 2pc Boom-Shakalaka</p><div class="bsheet__cols"><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/timeless-guardian-mask-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/timeless-guardian-mask-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/timeless-guardian-mask-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="Timeless Guardian Mask in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#timeless-guardian-mask">Timeless Guardian Mask</a><span class="bsheet__sub">Mask · T1</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/jackpot-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/jackpot-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/jackpot-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Jackpot</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/neptune-protection-gloves-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/neptune-protection-gloves-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/neptune-protection-gloves-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="&quot;Neptune&quot; Protection Gloves in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#neptune-protection-gloves">&quot;Neptune&quot; Protection Gloves</a><span class="bsheet__sub">Gloves · T2</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/boom-shakalaka-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/boom-shakalaka-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/boom-shakalaka-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Boom-Shakalaka</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/morar-holster-system-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/morar-holster-system-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/morar-holster-system-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="&quot;Morar&quot; Holster System in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#morar-holster-system">&quot;Morar&quot; Holster System</a><span class="bsheet__sub">Holster · T1</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/jackpot-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/jackpot-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/jackpot-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Jackpot</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/sundown-knee-guards-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/sundown-knee-guards-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/sundown-knee-guards-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="Sundown Knee Guards in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#sundown-knee-guards">Sundown Knee Guards</a><span class="bsheet__sub">Knee pads · T1</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/jackpot-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/jackpot-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/jackpot-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Jackpot</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/chatzatz-chest-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/chatzatz-chest-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/chatzatz-chest-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="Chatzatz Chest in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#chatzatz-chest">Chatzatz Chest</a><span class="bsheet__sub">Body armor · T2</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/jackpot-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/jackpot-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/jackpot-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Jackpot</span><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/body-armor-talents/glass-cannon-body-armor-talent-icon-division-resurgence-80.webp" srcset="/images/db/body-armor-talents/glass-cannon-body-armor-talent-icon-division-resurgence-80.webp 80w, /images/db/body-armor-talents/glass-cannon-body-armor-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Glass Cannon</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/horo-carryback-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/horo-carryback-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/horo-carryback-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="&quot;Horo&quot; CarryBack in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#horo-carryback">&quot;Horo&quot; CarryBack</a><span class="bsheet__sub">Backpack · T1</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/boom-shakalaka-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/boom-shakalaka-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/boom-shakalaka-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Boom-Shakalaka</span><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/backpack-talents/prime-engineer-backpack-talent-icon-division-resurgence-80.webp" srcset="/images/db/backpack-talents/prime-engineer-backpack-talent-icon-division-resurgence-80.webp 80w, /images/db/backpack-talents/prime-engineer-backpack-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Prime Engineer</span></span></div></div></div></div></div>
 
-Some builds are a scalpel. This one is two completely different weapons in the same toolbox, and you only have to swap two pieces to switch modes. LtFoe's **Aegis Operations** setup runs **24.80k Power Score** in Glass Cannon mode and **24.97k in durable mode**, and the trick is keeping four gear slots locked while hot-swapping the body armor and backpack between a [Glass Cannon](/database/body-armor-talents/#glass-cannon) DPS profile and a [Duality](/database/body-armor-talents/#duality) + [Injured Taunt](/database/backpack-talents/#injured-taunt) survivability profile.
+**Attributes:** Skill Crit Chance, Skill Crit Damage and Skill Multi-Shot Chance on almost every roll. As we understand it, the Aegis burst scales off those, not Skill Intensity. [Open it in the Build Planner](/builder/#s=Tech+Operator&sc=Aegis+Operations&n=The+Double+Agent&ms=gs-7&m1=scc&m1v=3.45&m2=sms&m2v=4.52&gs=gs-10&g1=scc&g1v=5.52&g2=scd&g2v=9.25&hs=gs-7&h1=sms&h1v=4.8&h2=scc&h2v=5.72&cs=gs-7&ct=ba-12&c1=sms&c1v=2.27&c2=scr&c2v=-4.07&ps=gs-10&pt=bp-19&p1=sr&p1v=9.87&p2=sms&p2v=3.54&ks=gs-7&k1=scd&k1v=9.34&k2=dr&k2v=3.58&w1s=sw-38&w1tr=T2&w1t=wt-22&w1t2=wt-20&w2e=ew-2&w2b1=sms&w2b1v=5.84&w2b2=scd&w2b2v=18.54&os=os-20&sm1=smc-29&sm2=smc-32&sm3=smc-35) to copy the whole loadout.
 
-The build philosophy is straightforward: max [Skill Crit Chance](/database/bonus-attributes/#skill-critical-chance), [Skill Crit Damage](/database/bonus-attributes/#skill-critical-damage), and [Skill Multi-Shot Chance](/database/bonus-attributes/#skill-multi-shot-chance), then layer Damage Reduction as the defensive stat because it scales better than raw Armor in endgame content. The numbers back it up: 66.27% Skill Crit Chance and 155.50% Skill Crit Damage on the DPS profile, with a verified 1.78 million damage hit on a bounty boss.
+## How It Works
 
-> [!WARNING] Season 1 Phase 3 and Season 2 changes that affect this build
-> - **Aegis Burst (Season 1 Phase 3, June 24):** Ubisoft fixed Aegis Operation "dealing more damage than expected at regular intervals." The 727k sheet DPS and the 1.78m bounty-boss hit in this post were recorded before that fix, so expect lower burst numbers.
-> - **Damage Reduction cap (June 26 hotfix):** DR is now capped at 80%. The durable profile should stay under that on paper, but it is the ceiling if you stack even harder.
-> - **Warlord exotic mods (Season 2):** Phase 1 reworked exotic mods (they can now be unequipped, drop from weekly quests and Elite Mission chests, and sell as weekly DZ vendor crates for 2,500 DZ Credits), and since Phase 2 exotics no longer ship with exotic mods pre-equipped. The DZ vendor price dropped from 17,500 to 15,000 DZ Credits to compensate, so budget for the mods separately.
-> - **Gear mods (Season 2 Phase 1):** The gear mod bonus pool now includes Skill Crit Chance, Skill Crit Damage and Skill Multi-Shot Chance, which is this build's entire shopping list. More places to stack them.
->
-> This build has not been re-tested since Patch 1.1.2.2. Full details: [Season 1 Phase 3 patch notes](/patch-notes/season-1-phase-3-a-new-fire/), [Season 2 Phase 1 patch notes](/patch-notes/season-2-phase-1-the-call/) and [Season 2 Phase 2 patch notes](/patch-notes/season-2-phase-2/).
+<div class="syn__wrap"><div class="syn__group"><p class="syn__title">1 · Crit every skill hit</p><div class="syn"><div class="syn__card"><img class="syn__icon" src="/images/db/gear-set-effects/jackpot-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/jackpot-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/jackpot-gear-set-icon-division-resurgence-160.webp 160w" sizes="52px" width="52" height="52" alt="" loading="lazy" decoding="async"><div><p class="syn__name">Jackpot, 4 pieces</p><p class="syn__when">always</p><p class="syn__bonus">+12% Skill Radius, +10.8% Skill Crit Chance, +24% Skill Crit Damage</p></div></div><div class="syn__card"><img class="syn__icon" src="/images/db/os-protocols/brains-over-brawn-os-protocol-talent-icon-division-resurgence-80.webp" srcset="/images/db/os-protocols/brains-over-brawn-os-protocol-talent-icon-division-resurgence-80.webp 80w, /images/db/os-protocols/brains-over-brawn-os-protocol-talent-icon-division-resurgence-104.webp 104w" sizes="52px" width="52" height="52" alt="" loading="lazy" decoding="async"><div><p class="syn__name">Brains Over Brawn</p><p class="syn__when">always, every hit</p><p class="syn__bonus">+10.8% Skill Crit Chance, hits deal +24% Engineering as damage. His Level 50, 5/5 copy: +21.6% and 48%</p></div></div><div class="syn__card"><img class="syn__icon" src="/images/db/gear-set-effects/boom-shakalaka-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/boom-shakalaka-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/boom-shakalaka-gear-set-icon-division-resurgence-160.webp 160w" sizes="52px" width="52" height="52" alt="" loading="lazy" decoding="async"><div><p class="syn__name">Boom-Shakalaka, 2 pieces</p><p class="syn__when">always</p><p class="syn__bonus">-6% Skill Cooldown</p></div></div></div></div><div class="syn__group"><p class="syn__title">2 · Stack Engineering</p><div class="syn"><div class="syn__card"><img class="syn__icon" src="/images/db/backpack-talents/prime-engineer-backpack-talent-icon-division-resurgence-80.webp" srcset="/images/db/backpack-talents/prime-engineer-backpack-talent-icon-division-resurgence-80.webp 80w, /images/db/backpack-talents/prime-engineer-backpack-talent-icon-division-resurgence-160.webp 160w" sizes="52px" width="52" height="52" alt="" loading="lazy" decoding="async"><div><p class="syn__name">Prime Engineer</p><p class="syn__when">deploying a skill at full Health</p><p class="syn__bonus">+22.5% Engineering for 12 s. His is rank II: +31.5%</p></div></div><div class="syn__card"><img class="syn__icon" src="/images/db/weapon-talents/fully-charged-weapon-talent-icon-division-resurgence-80.webp" srcset="/images/db/weapon-talents/fully-charged-weapon-talent-icon-division-resurgence-80.webp 80w, /images/db/weapon-talents/fully-charged-weapon-talent-icon-division-resurgence-160.webp 160w" sizes="52px" width="52" height="52" alt="" loading="lazy" decoding="async"><div><p class="syn__name">Fully Charged</p><p class="syn__when">reloading an empty magazine (ACR-E)</p><p class="syn__bonus">+7.5% Engineering for 12 s, up to 3 stacks</p></div></div><div class="syn__card"><img class="syn__icon" src="/images/db/skill-mod-combos/teamfight-skill-mod-combo-icon-division-resurgence-80.webp" srcset="/images/db/skill-mod-combos/teamfight-skill-mod-combo-icon-division-resurgence-80.webp 80w, /images/db/skill-mod-combos/teamfight-skill-mod-combo-icon-division-resurgence-160.webp 160w" sizes="52px" width="52" height="52" alt="" loading="lazy" decoding="async"><div><p class="syn__name">Teamfight</p><p class="syn__when">8 s after you deploy the Firefly</p><p class="syn__bonus">Hits deal +80% Engineering as damage, for you and the ally it targets</p></div></div></div></div><div class="syn__group"><p class="syn__title">3 · Drones do the work</p><div class="syn"><div class="syn__card"><img class="syn__icon" src="/images/db/skill-mod-combos/hazardous-area-skill-mod-combo-icon-division-resurgence-80.webp" srcset="/images/db/skill-mod-combos/hazardous-area-skill-mod-combo-icon-division-resurgence-80.webp 80w, /images/db/skill-mod-combos/hazardous-area-skill-mod-combo-icon-division-resurgence-160.webp 160w" sizes="52px" width="52" height="52" alt="" loading="lazy" decoding="async"><div><p class="syn__name">Hazardous Area</p><p class="syn__when">Defender Drone out</p><p class="syn__bonus">Damages enemies within its radius every second</p></div></div><div class="syn__card"><img class="syn__icon" src="/images/db/skill-mod-combos/combat-enhancer-skill-mod-combo-icon-division-resurgence-80.webp" srcset="/images/db/skill-mod-combos/combat-enhancer-skill-mod-combo-icon-division-resurgence-80.webp 80w, /images/db/skill-mod-combos/combat-enhancer-skill-mod-combo-icon-division-resurgence-160.webp 160w" sizes="52px" width="52" height="52" alt="" loading="lazy" decoding="async"><div><p class="syn__name">Combat Enhancer</p><p class="syn__when">Mender Drone healing</p><p class="syn__bonus">Bonus damage equal to 6.6% Engineering for 20 s, up to 3 stacks</p></div></div><div class="syn__card"><img class="syn__icon" src="/images/db/weapon-talents/in-sync-weapon-talent-icon-division-resurgence-80.webp" srcset="/images/db/weapon-talents/in-sync-weapon-talent-icon-division-resurgence-80.webp 80w, /images/db/weapon-talents/in-sync-weapon-talent-icon-division-resurgence-160.webp 160w" sizes="52px" width="52" height="52" alt="" loading="lazy" decoding="async"><div><p class="syn__name">In Sync</p><p class="syn__when">weapon hits and skill hits (ACR-E)</p><p class="syn__bonus">+9% Skill Damage and +9% Weapon Damage for 8 s, doubled when both are up</p></div></div></div></div><div class="syn__group"><p class="syn__title">4 · All in</p><div class="syn"><div class="syn__card"><img class="syn__icon" src="/images/db/body-armor-talents/glass-cannon-body-armor-talent-icon-division-resurgence-80.webp" srcset="/images/db/body-armor-talents/glass-cannon-body-armor-talent-icon-division-resurgence-80.webp 80w, /images/db/body-armor-talents/glass-cannon-body-armor-talent-icon-division-resurgence-160.webp 160w" sizes="52px" width="52" height="52" alt="" loading="lazy" decoding="async"><div><p class="syn__name">Glass Cannon</p><p class="syn__when">always</p><p class="syn__bonus">+20% Damage, -10% Damage Reduction. His is rank II: +28%</p></div></div><div class="syn__card"><img class="syn__icon" src="/images/db/weapon-talents/play-rough-weapon-talent-icon-division-resurgence-80.webp" srcset="/images/db/weapon-talents/play-rough-weapon-talent-icon-division-resurgence-80.webp 80w, /images/db/weapon-talents/play-rough-weapon-talent-icon-division-resurgence-160.webp 160w" sizes="52px" width="52" height="52" alt="" loading="lazy" decoding="async"><div><p class="syn__name">Play Rough</p><p class="syn__when">Warlord: while firing, then when you stop</p><p class="syn__bonus">-25% Incoming Damage while firing. When you stop, 60% of the blocked damage is applied, plus +10% Skill Damage for 10 s</p></div></div></div></div></div>
 
-> [!WARNING] Aegis Burst Scales Off Crit, Not Skill Intensity
-> The #1 mistake on Aegis Operations builds is stacking Skill Intensity. The Aegis 3-second burst scales with Skill Crit Chance, Skill Crit Damage, and Multishot. Skill Intensity provides minimal benefit. From our understanding, Engineering benefits Aegis burst about 2.25× more than the raw Skill Damage stat. Stack crit stats everywhere.
+Base values from the in-game Build-Making Database. His ranked-up copies read higher.
 
----
+## How to Play
 
-## The Core Idea: Jackpot 4 + Boom-Shakalaka 2, Always
+1. **Deploy at full Health.** Prime Engineer banks its Engineering for 12 s, and the Firefly opens Teamfight's 8 s window.
+2. **Open with the ACR-E.** Weapon hits add In Sync's Skill Damage; with the drones hitting too, both bonuses double.
+3. **Run the magazine dry.** Every empty-mag reload is a Fully Charged stack, up to 3.
+4. **Let the drones work; stay behind them.** Glass Cannon costs 10% Damage Reduction, so don't get caught in the open.
+5. **Need a breather? Swap to the Warlord.** Firing it cuts incoming damage by 25%; stop for +10% Skill Damage.
 
-Before either setup makes sense, understand the foundation that makes the swap work.
+## His Numbers
 
-LtFoe locks in four **[Jackpot](/database/gear-set-effects/jackpot/)** pieces (mask, body armor, holster, knee guards) and two **[Boom-Shakalaka](/database/gear-set-effects/boom-shakalaka/)** pieces (backpack and gloves). When he swaps body armor and backpack between modes, both replacements stay in the same gear set as the pieces they replace. Jackpot chest swaps for Jackpot chest. Boom-Shakalaka backpack swaps for Boom-Shakalaka backpack. The set bonuses never break.
+<div class="stat-tiles"><div class="stat-tile"><p class="stat-tile__big">727.82k</p><p class="stat-tile__label">DPS on his gear screen, Glass Cannon setup</p></div><div class="stat-tile"><p class="stat-tile__big">1.78m</p><p class="stat-tile__label">one hit on a bounty boss</p></div><div class="stat-tile"><p class="stat-tile__big">66.27%</p><p class="stat-tile__label">Skill Crit Chance, with 155.50% Skill Crit Damage and 27.96% Skill Multi-Shot Chance</p></div><div class="stat-tile"><p class="stat-tile__big">2,250</p><p class="stat-tile__label">Engineering, at 24.80k Power Score and 130,605 Health</p></div></div>
 
-**Jackpot [4/4], active in both setups:**
+## The Durable Setup
 
-| Pieces | Bonus |
-|--------|-------|
-| 2-piece | Skill Radius +12.0% |
-| 3-piece | Skill Critical Chance +10.8% |
-| 4-piece | Skill Critical Damage +24.0% |
+Swap two pieces, keep the rest. Both stay in their sets, so Jackpot 4 and Boom-Shakalaka 2 never break.
 
-**Boom-Shakalaka [2/4], active in both setups:**
+<div class="bsheet bsheet--single"><div class="bsheet__group"><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/chatzatz-chest-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/chatzatz-chest-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/chatzatz-chest-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="Chatzatz Chest in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#chatzatz-chest">Chatzatz Chest</a><span class="bsheet__sub">Body armor · T2 · Duality: +15% Weapon Damage above 50% Health, +15% Damage Reduction below (his II: +21%). His rolls: Skill Crit Damage, Damage Reduction</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/jackpot-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/jackpot-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/jackpot-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Jackpot</span><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/body-armor-talents/duality-body-armor-talent-icon-division-resurgence-80.webp" srcset="/images/db/body-armor-talents/duality-body-armor-talent-icon-division-resurgence-80.webp 80w, /images/db/body-armor-talents/duality-body-armor-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Duality</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/amp24-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/amp24-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/amp24-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="AMP24 in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#amp24">AMP24</a><span class="bsheet__sub">Backpack · T2 · Injured Taunt: hits taken grant +1.8% Damage Reduction for 10 s, up to 10 stacks (his II: +2.5%). His rolls: Skill Multi-Shot, Skill Crit Chance</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/boom-shakalaka-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/boom-shakalaka-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/boom-shakalaka-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Boom-Shakalaka</span><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/backpack-talents/injured-taunt-backpack-talent-icon-division-resurgence-80.webp" srcset="/images/db/backpack-talents/injured-taunt-backpack-talent-icon-division-resurgence-80.webp 80w, /images/db/backpack-talents/injured-taunt-backpack-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Injured Taunt</span></span></div></div></div></div>
 
-| Pieces | Bonus |
-|--------|-------|
-| 2-piece | Skill Cooldown Recovery -6.0% |
+His durable sheet: 24.97k Power Score, 517k to 569k DPS and 20.08% Damage Reduction before Injured Taunt stacks.
 
-That is a permanent +10.8% Skill Crit Chance, +24% Skill Crit Damage, +12% Skill Radius, and -6% Cooldown Recovery before a single gear roll enters the equation. Everything else is the bow on top.
+## Before You Copy It
 
----
+- **A new Enhanced ACR-E can't roll In Sync.** It's not in the ACR-E's pool, and the ACR-E isn't one of the guns Season 2 Phase 1's recalibration fix names, so we can't say how his copy got it. In Sync and Fully Charged both roll on the [Lightweight M4](/database/weapons/lightweight-m4/) (T2), [StG 44](/database/weapons/stg-44/) (T1) and [Classic FAL](/database/weapons/classic-fal/) (T0).
+- **Expect lower burst.** Season 1 Phase 3 fixed Aegis Operation "dealing more damage than expected at regular intervals" after his screenshots, so the 727k sheet and the 1.78m hit run high.
+- **Gear mods got better:** since Season 2 Phase 1 they can roll Skill Crit Chance, Skill Crit Damage and Skill Multi-Shot Chance.
 
-## Setup 1: Glass Cannon + Prime Engineer (DPS Profile)
+## Swaps
 
-This is the mode for bounty bosses, story content, and PvE where you have a Defender Drone to hide behind. It is a true glass cannon: absurd damage output, but you take 10% more incoming damage from the [Glass Cannon](/database/body-armor-talents/#glass-cannon) talent. Move with your drone up, do not get caught in the open, and you will see numbers most builds cannot reach.
+<div class="bsheet bsheet--single"><div class="bsheet__group"><div class="bsheet__item"><img class="bsheet__tile bsheet__tile--wide" src="/images/db/weapon-icons/modified-usc-weapon-icon-division-resurgence-165.webp" srcset="/images/db/weapon-icons/modified-usc-weapon-icon-division-resurgence-165.webp 165w, /images/db/weapon-icons/modified-usc-weapon-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 150px" width="150" height="71" alt="Modified USC submachine gun in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><span class="bsheet__name">SMG instead of the Warlord?</span><span class="bsheet__sub">He prefers two ARs, or an AR and an SMG. His SMG picks: Modified USC (Crit Chance TAM unlock) or Police UMP-45 (Crit Damage).</span><span class="bsheet__picks"><span class="bsheet__pick"><a href="/database/weapons/modified-usc/">Modified USC (T2 SMG)</a></span><span class="bsheet__pick"><a href="/database/weapons/police-ump-45/">Police UMP-45 (T1 SMG)</a></span></span></div></div><div class="bsheet__item"><img class="bsheet__tile bsheet__tile--wide" src="/images/db/weapon-icons/black-market-ak-74-weapon-icon-division-resurgence-165.webp" srcset="/images/db/weapon-icons/black-market-ak-74-weapon-icon-division-resurgence-165.webp 165w, /images/db/weapon-icons/black-market-ak-74-weapon-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 150px" width="150" height="71" alt="Black Market AK-74 assault rifle in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><span class="bsheet__name">More Damage Reduction?</span><span class="bsheet__sub">His backup gun, a Black Market AK-74 with a +8.23% Damage Reduction roll, takes his sheet from 20.08% to 26.65%.</span><span class="bsheet__picks"><span class="bsheet__pick"><a href="/database/weapons/black-market-ak-74/">Black Market AK-74 (T2 assault rifle)</a></span></span></div></div><div class="bsheet__item"><img class="bsheet__sq" src="/images/db/os-protocols/chain-reaction-os-protocol-talent-icon-division-resurgence-80.webp" srcset="/images/db/os-protocols/chain-reaction-os-protocol-talent-icon-division-resurgence-80.webp 80w, /images/db/os-protocols/chain-reaction-os-protocol-talent-icon-division-resurgence-104.webp 104w" sizes="56px" width="56" height="56" alt="Chain Reaction OS Protocol icon" loading="lazy" decoding="async"><div class="bsheet__text"><span class="bsheet__name">No Brains Over Brawn yet?</span><span class="bsheet__sub">A purple Skill Crit protocol stands in: Chain Reaction (+14.4% Skill Crit Chance) or Tactical Persistence (+24% Skill Crit Damage). Either way you lose the on-hit Engineering damage.</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/os-protocols/chain-reaction-os-protocol-talent-icon-division-resurgence-80.webp" srcset="/images/db/os-protocols/chain-reaction-os-protocol-talent-icon-division-resurgence-80.webp 80w, /images/db/os-protocols/chain-reaction-os-protocol-talent-icon-division-resurgence-104.webp 104w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async"><a href="/database/os-protocols/chain-reaction/">Chain Reaction</a></span><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/os-protocols/tactical-persistence-os-protocol-talent-icon-division-resurgence-80.webp" srcset="/images/db/os-protocols/tactical-persistence-os-protocol-talent-icon-division-resurgence-80.webp 80w, /images/db/os-protocols/tactical-persistence-os-protocol-talent-icon-division-resurgence-104.webp 104w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async"><a href="/database/os-protocols/tactical-persistence/">Tactical Persistence</a></span></span></div></div></div></div>
 
-### Stats (Glass Cannon Active)
+**Getting the chase items:** the Warlord is 15,000 DZ Credits at the Dark Zone vendor, without exotic mods since Season 2 Phase 2. Brains Over Brawn: Weekly Bounties when he built this, or the OS Protocol Sealed Cache. It's blue, so it can't be the random gold Died Again Gaming says the fourth Weekly Bounty boss guarantees. Duplicates upgrade its talent to 48%.
 
-| Stat | Value |
-|---|---|
-| Power Score | 24,800 |
-| DPS | 727,820 (gear menu) · verified 1.78m on bounty boss with chain reaction |
-| Armor | 7,451 |
-| Health | 130,605 |
-| Firepower | 469 |
-| Engineering | 2,250 |
-| Toughness | 422 |
-| Skill Crit Chance | 66.27% |
-| Skill Crit Damage | 155.50% |
-| Skill Multi-Shot Chance | 27.96% |
-| Skill Radius | 27.56% |
-| Sig Ability Charge Efficiency | 38.00% |
-| Damage Reduction | 20.08% passive · 26.65% with Black Market AK-74 |
+## What He Says
 
-### Gear (Glass Cannon DPS Setup)
+- **On the durable setup:** *"I can just run an Elite mission solo using the durable setup."* Getting to 20% Damage Reduction *"made a difference how my Conflict games have gone."*
+- **On Brains Over Brawn:** *"It really outshines any of the purple OS available."*
+- **On PvP:** *"PvP survivability is key, so losing damage for sustain is very important."*
 
-| Slot | Piece | Tier | Gear Set | Attribute 1 | Attribute 2 | Talent |
-|---|---|---|---|---|---|---|
-| Mask | Timeless Guardian Mask | T1 | Jackpot | Skill Crit Chance +3.45% | Multi-Shot +4.52% | None |
-| Body Armor | Chatzatz Chest | T2 | Jackpot | Multi-Shot +2.27% | Skill CDR -4.07% | **Glass Cannon II** |
-| Backpack | "Horo" CarryBack | T1 | Boom-Shakalaka | Skill Radius +9.87% | Multi-Shot +3.54% | **[Prime Engineer](/database/backpack-talents/#prime-engineer) II** |
-| Gloves | "Neptune" Protection Gloves | T2 | Boom-Shakalaka | Skill Crit Chance +5.52% | Skill Crit Damage +9.25% | None |
-| Holster | "Morar" Holster System | T1 | Jackpot | Multi-Shot +4.80% | Skill Crit Chance +5.72% | None |
-| Knee Guards | Sundown Knee Guards | T1 | Jackpot | Skill Crit Damage +9.34% | Damage Reduction +3.58% | None |
+## Sources
 
-### Talents
-
-- **Glass Cannon II:** Grants +28% Damage. Inflicts -10% Damage Reduction.
-- **Prime Engineer II:** Deploying a Skill at full Health grants +31.50% Engineering for 12 seconds.
-
-The combo: deploy your skills first while topped off to bank the +31.50% Engineering buff, then go to work with Glass Cannon stacked on top. The Engineering buff scales your drone, your firefly, your Aegis burst. Everything benefits.
-
----
-
-## Setup 2: Duality + Injured Taunt (Durable / PvP Profile)
-
-This is the plug-and-play swap. Two slots change, nothing else. Keep your weapons, your mask, your holster, your gloves, your knee guards. Swap the body armor to a [Duality](/database/body-armor-talents/#duality) II Chatzatz, and the backpack to an [Injured Taunt](/database/backpack-talents/#injured-taunt) II AMP24.
-
-The result holds its weight in Conflict, hot-drops into the Dark Zone for rogue mischief, and solos Elite missions by brute-forcing every encounter. LtFoe's words: *"I can just run an Elite mission solo using the durable setup. I've become accustomed to just brute forcing every encounter with it, even in the Dark Zone going rogue and having fun in general."*
-
-### Stats (Duality + Injured Taunt Active)
-
-| Stat | Value |
-|---|---|
-| Power Score | 24,970 |
-| DPS | 517,330 to 569,340 |
-| Armor | 7,612 |
-| Health | 134,846 to 135,411 |
-| Damage Reduction | 20.08% passive · 26.65% with Black Market AK-74 · scales higher with Injured Taunt stacks |
-| Received Healing | 18.66% |
-
-### Gear (Durable Setup: Only Two Slots Change)
-
-| Slot | Piece | Tier | Gear Set | Attribute 1 | Attribute 2 | Talent |
-|---|---|---|---|---|---|---|
-| Body Armor | Chatzatz Chest | T2 | Jackpot | Skill Crit Damage +4.42% | Damage Reduction +4.72% | **Duality II** |
-| Backpack | AMP24 | T2 | Boom-Shakalaka | Multi-Shot +4.73% | Skill Crit Chance +4.97% | **Injured Taunt II** |
-
-### Talents
-
-- **Duality II:** Grants +21% Weapon Damage when Health is above 50%. Grants +21% Damage Reduction when Health is below 50%.
-- **Injured Taunt II:** Hits taken grant +2.50% Damage Reduction for 10 seconds, up to 10 stacks (LtFoe's reading; our database lists rank I at +1.80%).
-
-**The math on the durable profile:** At full health, Duality gives you +21% Weapon Damage to power your AR. Once you dip below half, it flips to +21% Damage Reduction. Stack that with 10 Injured Taunt stacks (another +25% Damage Reduction) and the passive DR layers, and you are an absolute brick. LtFoe says the difference between his old 8% DR and his current 20%+ baseline was noticeable in Conflict survivability. The Dark Zone is still scary because [Demolitionists](/class/demolitionist/) can nuke anything. That is a Resurgence balance reality, not a build problem.
-
----
-
-## Weapons
-
-Both setups use the same two weapons. LtFoe runs the Enhanced ACR-E as primary for most activities, with the Warlord exotic AR as secondary.
-
-### Primary: Enhanced ACR-E (T2 Assault Rifle)
-
-| Stat | Value |
-|---|---|
-| Tier | T2 |
-| Type | Assault Rifle |
-| Talent 1 | **[In Sync](/database/weapon-talents/in-sync/) II** |
-| Talent 2 | **[Fully Charged](/database/weapon-talents/fully-charged/) II** |
-
-**[In Sync](/database/weapon-talents/in-sync/)** is the single strongest talent for a hybrid weapon-and-skill build. Our database has the rank I text: "Weapon Hits grant +9% Skill Damage for 8 seconds. Skill Hits grant +9% Weapon Damage for 8 seconds. Bonus is doubled when both buffs are active at the same time." The double-dip is in the talent text itself: with both buffs up, rank I gives +18% in both directions. LtFoe runs In Sync II, so his tooltip should read higher than these rank I numbers.
-
-**[Fully Charged](/database/weapon-talents/fully-charged/)** feeds Engineering on every empty-mag reload: +7.50% Engineering for 12 seconds, up to 3 stacks (+22.50% max). Those are the rank I numbers from our database; LtFoe's Fully Charged II should read higher. The ACR-E's steady reload cycle keeps Engineering elevated.
-
-> [!WARNING] Farming this pair today
-> LtFoe's screenshots are from June 2026. The game's Build-Making Database as of October 29, 2026 doesn't list In Sync for the Enhanced ACR-E (Fully Charged it does), so a new ACR-E won't roll his exact pair. The assault rifles whose talent pools hold both In Sync and Fully Charged are the [Lightweight M4](/database/weapons/lightweight-m4/) (T2), the [StG 44](/database/weapons/stg-44/) (T1) and the [Classic FAL](/database/weapons/classic-fal/) (T0). Ubisoft's Season 2 Phase 1 notes fixed several weapons that pulled talents from the wrong pool on recalibration; the ACR-E isn't one they name, so we can't say how his copy got In Sync.
-
-> [!INFO] SMG Alternative
-> LtFoe's preferred setup is double AR or AR + SMG. If you want to run an SMG in the second slot instead of the Warlord, his picks are the **Modified USC** (comes with Crit Chance as its TAM unlock) or the **Police UMP-45** (comes with Crit Damage as its TAM unlock). Both feed the Skill Crit stack this build lives on.
-
-### Secondary: Warlord (Exotic Assault Rifle)
-
-| Stat | Value |
-|---|---|
-| Rarity | Exotic |
-| Type | Assault Rifle |
-| Skill Multi-Shot Chance | +5.84% |
-| Skill Critical Damage | +18.54% |
-| Exotic Talent | **Play Rough** |
-
-**Play Rough:** While firing, reduces Incoming Damage by 25%. When firing ceases, applies 60% of the reduced damage and grants +10% Skill Damage for 10 seconds.
-
-The [Warlord](/database/exotic-weapons/warlord/) doubles as a defensive cooldown. Fire it to take 25% less damage. When you stop, it applies 60% of the damage it held back (our read, the same as in our [exotic weapons guide](/guides/division-resurgence-exotic-weapons-list-2026/), is that this lands on you) and grants +10% Skill Damage for 10 seconds. For an Aegis Operations build living by skill damage uptime, that buff window matters.
-
-### Backup AR: Black Market AK-74
-
-LtFoe keeps a [Black Market AK-74](/database/weapons/black-market-ak-74/) with a +8.23% Damage Reduction passive roll. When equipped, this pushes his active Damage Reduction to 26.65%. Useful when the extra DR cushion outweighs the Warlord's offensive ceiling.
-
----
-
-## OS Protocol: Brains Over Brawn
-
-The [Brains Over Brawn](/database/os-protocols/brains-over-brawn/) OS Protocol ties the entire build together. The +21.60% Skill Crit Chance at Level 50 is the single biggest reason LtFoe's Skill Crit Chance sits at 66.27% before combat buffs. Combined with the Jackpot 4-piece, gear rolls, and base character bonuses, most skill hits are critting. With 155.50% Skill Crit Damage on top, the ceiling gets absurd.
-
-### Brains Over Brawn (Level 50 Maxed)
-
-| Attribute | Value |
-|---|---|
-| Specialization | Engineering |
-| Rarity | Specialized |
-| Skill Critical Chance | +21.60% |
-| Engineering | +268 |
-| Skill Damage | +215 |
-| Health | +7,052 |
-| Power Score | 1,660 |
-| **Talent** (fully upgraded) | Hits deal additional damage equal to 48% Engineering (24% before talent upgrades) |
-
-That 48% Engineering on-hit bonus means every point of Engineering on your gear translates into actual damage, not just bigger skill numbers in a menu.
-
-> [!INFO] BoB Was Nerfed: Build Is Designed Post-Nerf
-> Community reports put the Brains Over Brawn change on EU servers around May 7-8, 2026, and the official Season 1 Phase 2 notes (May 12) list a fix for it "scaling wrong stats." Community numbers had pre-nerf Aegis builds hitting 580k per burst, with post-nerf realistic burst output around 100k-250k in fully optimized conditions. The OS Protocol still works and remains the best option for Aegis Operations builds. This build is designed and verified entirely after the nerf (but before the Season 1 Phase 3 Aegis Burst fix; see the warning at the top). LtFoe's 1.78m bounty boss hit comes from the combination of BoB + Glass Cannon + Prime Engineer + Jackpot 4-piece stacking, not from a single broken OS.
-
----
-
-## Skill Mods
-
-Every mod slot feeds either Skill Crit, Multishot, or Damage Reduction. No wasted slots.
-
-| Skill | Combo Set | 3-Set Bonus | Key Mod Stats |
-|---|---|---|---|
-| Mender Drone | **Combat Enhancer** (3pc) | Mender Drone healing grants bonus damage equal to 6.60% Engineering for 20s, up to 3 stacks | Multi-Shot +4.15%, Multi-Shot +3.92% |
-| First-Aid Firefly | **Teamfight** (3pc) | Hits deal additional damage equal to 80% Engineering for 8s after deploying First-Aid Firefly; bonus also granted to targeted ally | Skill Crit Chance +4.71%, Skill Crit Damage +8.22%, Skill Crit Chance +4.50%, Skill Crit Damage +7.88%, DR +3.63%, Skill Crit Damage +7.61% |
-| Defender Drone | **Hazardous Area** (3pc) | Defender Drone deals damage to enemies within its radius every second | Skill Crit Damage +7.20%, Skill Crit Damage +9.04% |
-
-The Teamfight combo on First-Aid Firefly is the standout: 80% of your Engineering as bonus damage for 8 seconds every time you throw the Firefly. With 2,250 Engineering, that is 1,800 bonus damage per hit, and the ally your Firefly targets gets the bonus too. The Hazardous Area combo on Defender Drone turns it into a passive damage aura. Combined with Combat Enhancer converting Mender Drone healing into even more damage, every skill is pulling double duty.
-
----
-
-## The Gameplay Loop
-
-The rotation is the same in both setups. The gear swap changes your damage ceiling and survivability floor, not the flow of combat.
-
-**In Glass Cannon mode:**
-
-1. **Pre-deploy skills at full health** to bank the [Prime Engineer](/database/backpack-talents/#prime-engineer) buff (+31.50% Engineering for 12s)
-2. **Open with the ACR-E** to trigger [In Sync](/database/weapon-talents/in-sync/): weapon hits feed Skill Damage and skill hits feed Weapon Damage (+9% each at rank I, more on his II), doubled when both are active
-3. **Burn through magazines** to trigger Fully Charged stacks: each empty-mag reload adds Engineering (+7.50% per stack at rank I, more on his II), up to 3 stacks
-4. **Let your drone and Firefly do the heavy lifting**: they are critting at 66%+ with 155% crit damage and scaling off your elevated Engineering
-5. **Swap to Warlord when you need a defensive window**: fire to tank 25% reduced incoming damage, stop firing for +10% Skill Damage
-
-**In durable mode:**
-
-Same rotation, but Duality's +21% Weapon Damage buff at full health replaces Glass Cannon's +28% Damage. Once you dip below 50% health, Duality flips to +21% DR and Injured Taunt stacks start building. You become harder to kill the longer the fight goes. Play more aggressively.
-
-LtFoe's own words on the durable profile: *"Great for playing Elite missions mindlessly without having to worry about positioning, and it is also a great setup for PvP. Just getting the extra to get me to 20% made a difference how my Conflict games have gone."*
-
----
-
-## Why This Build Actually Works
-
-Three things make The Double Agent stand out among the Tech Operator setups floating around:
-
-**1. The set bonuses never break.** Most plug-and-play swap builds drop a 4-piece bonus when you swap gear. LtFoe's solution keeps [Jackpot](/database/gear-set-effects/jackpot/) 4 and [Boom-Shakalaka](/database/gear-set-effects/boom-shakalaka/) 2 active in both modes. That is a permanent floor of +10.8% Skill Crit Chance and +24% Skill Crit Damage you never lose.
-
-**2. The Damage Reduction layer is real.** Players sleep on Damage Reduction because the individual rolls look small (3%, 4%, 5% per piece). But stacked across the build, LtFoe hits 20% baseline before any active buffs fire. In durable mode with Injured Taunt at 10 stacks, that climbs a long way: past 45% if the stacks add straight on top, somewhat less if Damage Reduction sources multiply (our read: his 20.08% baseline plus the AK-74's +8.23% roll shows as 26.65%, which fits multiplying better than adding). That is the difference between getting one-tapped and getting a chance to react.
-
-**3. LtFoe rates Brains Over Brawn above every purple OS.** The crit chance helps, but it isn't what sets BoB apart: level for level, purple protocols carry bigger stat blocks, and Chain Reaction's +14.40% Skill Critical Chance beats BoB's +10.80% (both double by level 50). What no purple has is BoB's talent, which turns every Engineering investment on your gear into on-hit damage that your sheet DPS number does not show (24% of your Engineering at base, 48% on his fully upgraded copy). LtFoe: *"What makes it strong is the crit chance and combination of added damage to your skill damage. It really outshines any of the purple OS available."*
-
-
-
-
-## A Word from the Builder
-
-LtFoe wanted us to pass this along: *"No worries, I am no expert myself, just been going by what feels good to play. Definitely went through a lot of mistakes and learning about mechanics to get to this point. PvP survivability is key, so losing damage for sustain is very important."*
-
-The man has been through the grind. Trust the work.
-
----
-
-## Loot Quick-Reference
-
-| Item | What to Look For |
-|---|---|
-| 2× Jackpot Chatzatz Chest (T2) | One with Glass Cannon II, one with Duality II. Longest farm in the build. |
-| Boom-Shakalaka "Horo" CarryBack (T1) | Prime Engineer II talent, Skill Radius, Multi-Shot |
-| Boom-Shakalaka AMP24 (T2) | Injured Taunt II talent, Multi-Shot, Skill Crit Chance |
-| Jackpot Mask, Holster, Knee Guards | Skill Crit Chance, Skill Crit Damage, Multi-Shot on every sub-roll |
-| Boom-Shakalaka Gloves | Skill Crit Chance + Skill Crit Damage |
-| Enhanced ACR-E (T2 AR) | In Sync II + Fully Charged II |
-| Warlord (Exotic AR) | DZ vendor: 15,000 DZ Credits since Season 2 Phase 2 (was ~17,500), and exotic mods no longer come pre-equipped. Buy while in Engineering spec for correct attribute rolls. |
-| Brains Over Brawn OS Protocol | Weekly Bounties when this was written, or the OS Protocol Sealed Cache. It's a blue protocol, so it can't come from the random gold that Died Again Gaming says the fourth Weekly Bounty boss guarantees each week (October 2026). Max to Level 50 for +21.60% Skill Crit Chance, and feed duplicates into Talent Upgrade to take the talent from 24% to 48% Engineering. |
-| Skill mods | Teamfight (First-Aid Firefly), Hazardous Area (Defender Drone), Combat Enhancer (Mender Drone) |
-
----
-
-## Related Builds and Guides
-
-- [Tech Aegis Engineering Build (Tampishach)](/builds/tech-aegis-engineering-build-tampishach/) · The original 237k DPS Tech Aegis build with Long-term Effect 4pc
-- [Jackpot Striker Drone Tech Operator Build (Wanjopo)](/builds/jackpot-striker-drone-tech-operator-build/) · Offensive Operations variant with Striker Drone focus
-- [Demolitionist Glass Cannon Build (PVE Enjoyer)](/builds/demolitionist-glass-cannon-build-pveenjoyer/) · Another Glass Cannon approach, different class
-- [Exotic Weapons List 2026](/guides/division-resurgence-exotic-weapons-list-2026/) · Full exotic weapon reference including Warlord
-- [OS Protocol Tier List](/tier-list/os-protocols/) · Where Brains Over Brawn ranks post-nerf
-- [OS Protocols Database](/database/os-protocols/) · Full OS Protocol stat reference
-- [Jackpot Gear Set](/database/gear-set-effects/jackpot/) · Set bonus details
-- [Boom-Shakalaka Gear Set](/database/gear-set-effects/boom-shakalaka/) · Set bonus details
+- LtFoe (Clan TruthAbove), Discord submission with 30+ in-game screenshots, June 2026.
+- [Died Again Gaming: Catching Up Before Weekly Reset (YouTube, October 25, 2026)](https://www.youtube.com/watch?v=tn4ME4MVGyY), on the weekly gold OS Protocol.
+- In-game Build-Making Database, recorded October 28 and 29, 2026. Browse it in our [database](/database/).
+- Patch notes: [Season 1 Phase 3](/patch-notes/season-1-phase-3-a-new-fire/), [Season 2 Phase 1](/patch-notes/season-2-phase-1-the-call/), [Season 2 Phase 2](/patch-notes/season-2-phase-2/).

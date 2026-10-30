@@ -1,10 +1,10 @@
 {
   "_comment": "Notes the build planner shows while a build guide's template is loaded unchanged. Keyed by build id (the file name in src/content/builds). 'text' is shown as written. Optional 'missingWeapons' lists weapons a guide uses that aren't in standard-weapons.json yet, as [name, slot]: write the weapon's name in the plannerHash (for example w2s=P90) and the planner fills that slot as soon as a weapon with that name exists; the note only mentions the ones still missing.",
   "tactical-pharma-season-2-build-ggreborn": {
-    "text": "GGReborn doesn't say which two pieces are Fire Cycle, so this uses TikTokAndy's split from the same guide: body armor and holster. His First Wave Vector's Fully Charged is real but older: recalibrating that Vector pulled talents from the wrong pool until Season 2 Phase 1, and a Vector you get now can't roll it. The P90 and AUG A3 Para XS roll both of his Vector talents."
+    "text": "GGReborn doesn't say which two pieces are Fire Cycle, but the backpack has to be one (no Jackpot backpack rolls Minion Training), and his October 28 video shows a Fire Cycle holster and backpack, so that's what this uses. His First Wave Vector's Fully Charged is real but older: recalibrating that Vector pulled talents from the wrong pool until Season 2 Phase 1, and a Vector you get now can't roll it. The P90 and AUG A3 Para XS roll both of his Vector talents."
   },
   "aegis-team-healer-tech-operator-build-tiktokandy": {
-    "text": "The guide doesn't say which two of backpack, gloves and holster are Mechanical Expert; this puts it on gloves and holster."
+    "text": "His gear screens show Mechanical Expert on the gloves and holster, and Long-term Effect on the other four pieces."
   },
   "any-weapon-commando-beginner-vanguard-build-tiktokandy": {
     "text": "The guide doesn't say which of the last two pieces is the holster; this puts the Phalanx Attack piece there."
