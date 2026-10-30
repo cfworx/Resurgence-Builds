@@ -137,28 +137,28 @@
   ],
   "small": "/images/builds/division-resurgence-misdirection-double-barrel-commando-build-street-fight-480.webp"
  },
- "/images/builds/division-resurgence-perpetual-motion-bulwark-firefight-1200.webp": {
+ "/images/builds/division-resurgence-perpetual-motion-commando-firefight-1200.webp": {
   "width": 1200,
   "height": 630,
   "srcset": [
    [
     480,
-    "/images/builds/division-resurgence-perpetual-motion-bulwark-firefight-480.webp"
+    "/images/builds/division-resurgence-perpetual-motion-commando-firefight-480.webp"
    ],
    [
     800,
-    "/images/builds/division-resurgence-perpetual-motion-bulwark-firefight-800.webp"
+    "/images/builds/division-resurgence-perpetual-motion-commando-firefight-800.webp"
    ],
    [
     1200,
-    "/images/builds/division-resurgence-perpetual-motion-bulwark-firefight-1200.webp"
+    "/images/builds/division-resurgence-perpetual-motion-commando-firefight-1200.webp"
    ],
    [
     1600,
-    "/images/builds/division-resurgence-perpetual-motion-bulwark-firefight-1600.webp"
+    "/images/builds/division-resurgence-perpetual-motion-commando-firefight-1600.webp"
    ]
   ],
-  "small": "/images/builds/division-resurgence-perpetual-motion-bulwark-firefight-480.webp"
+  "small": "/images/builds/division-resurgence-perpetual-motion-commando-firefight-480.webp"
  },
  "/images/builds/division-resurgence-super-spreader-n95-agent-lab-1200.webp": {
   "width": 1200,

@@ -176,6 +176,8 @@
 # Archived build slugs -> closest live successor
 /builds/conflict-pvp-fearless-warlord /database/exotic-weapons/warlord/ 301
 /builds/conflict-pvp-fearless-warlord/ /database/exotic-weapons/warlord/ 301
+/builds/perpetual-motion-never-reload-bulwark-breacher-build /builds/perpetual-motion-never-reload-vanguard-commando-build/ 301
+/builds/perpetual-motion-never-reload-bulwark-breacher-build/ /builds/perpetual-motion-never-reload-vanguard-commando-build/ 301
 /builds/cover-shooter-sniper /builds/ 301
 /builds/cover-shooter-sniper/ /builds/ 301
 /builds/cover-shooter-sniper-2 /builds/ 301
@@ -281,6 +283,8 @@
 /map/               /division-resurgence-interactive-map/  301
 /map                /division-resurgence-interactive-map/  301
 /tag/vector-45-acp/ /tag/first-wave-vector-45-acp/ 301
+/tag/field-repairs /database/skill-mod-combos/field-repairs/ 301
+/tag/field-repairs/ /database/skill-mod-combos/field-repairs/ 301
 /tag/vector-45-acp  /tag/first-wave-vector-45-acp/ 301
 /tag/general/       /guides/  301
 /tag/general        /guides/  301
