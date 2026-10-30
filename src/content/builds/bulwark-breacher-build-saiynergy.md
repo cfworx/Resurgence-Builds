@@ -21,6 +21,7 @@ plannerHash: "s=Bulwark&sc=Breacher&n=Bulwark+Breacher+334k&ms=gs-1&m1=hsd&m2=ch
 videoId: "28lsRrnJ6Vg"
 videoTitle: "Saiynergy: Full Breacher Build Walkthrough"
 videoChannel: "Saiynergy"
+videoChannelUrl: "https://www.youtube.com/@Saiynergy"
 videoUploadDate: "2026-04-17T12:13:25-07:00"
 videoDuration: "PT19M27S"
 faqs:

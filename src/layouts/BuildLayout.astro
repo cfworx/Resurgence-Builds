@@ -34,6 +34,7 @@ export interface Props {
   videoId?: string;
   videoTitle?: string;
   videoChannel?: string;
+  videoChannelUrl?: string;
   videoUploadDate?: string;
   videoDuration?: string;
   howTo?: {
@@ -46,7 +47,7 @@ export interface Props {
   wordCount?: number;
 }
 
-const { title, description, specialization, playstyle, patch, verified = true, original = false, lastUpdated, pve, pvp, tags, author, featuredImage, imageAlt, shareTitle, shareText, headings = [], faqs = [], sources = [], plannerHash, videoId, videoTitle, videoChannel, videoUploadDate, videoDuration, howTo, wordCount } = Astro.props;
+const { title, description, specialization, playstyle, patch, verified = true, original = false, lastUpdated, pve, pvp, tags, author, featuredImage, imageAlt, shareTitle, shareText, headings = [], faqs = [], sources = [], plannerHash, videoId, videoTitle, videoChannel, videoChannelUrl, videoUploadDate, videoDuration, howTo, wordCount } = Astro.props;
 const heroImg = postImage(featuredImage);
 
 const siteUrl = 'https://resurgencebuilds.com';
@@ -201,6 +202,7 @@ const redditShareUrl = `https://reddit.com/submit?url=${encodeURIComponent(Astro
             title={videoTitle || `${title}: Video Guide`}
             description={description}
             channelName={videoChannel}
+            channelUrl={videoChannelUrl}
             uploadDate={videoUploadDate}
             duration={videoDuration}
           />

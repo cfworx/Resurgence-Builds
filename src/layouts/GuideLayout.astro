@@ -33,6 +33,7 @@ export interface Props {
   videoId?: string;
   videoTitle?: string;
   videoChannel?: string;
+  videoChannelUrl?: string;
   videoUploadDate?: string;
   videoDuration?: string;
   wordCount?: number;
@@ -57,6 +58,7 @@ const {
   videoId,
   videoTitle,
   videoChannel,
+  videoChannelUrl,
   videoUploadDate,
   videoDuration,
   wordCount,
@@ -150,6 +152,7 @@ const howToLd = howTo ? {
           title={videoTitle || `${title}: Video Guide`}
           description={description}
           channelName={videoChannel}
+          channelUrl={videoChannelUrl}
           uploadDate={videoUploadDate}
           duration={videoDuration}
         />

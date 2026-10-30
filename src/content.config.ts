@@ -45,6 +45,8 @@ const builds = defineCollection({
     videoId: z.string().optional(),
     videoTitle: z.string().optional(),
     videoChannel: z.string().optional(),
+    // The channel's YouTube address, only when verified: it becomes the video markup's author.url
+    videoChannelUrl: z.string().url().optional(),
     // Upload date and length as YouTube lists them (ISO 8601). VideoObject markup needs the
     // upload date, so a video without one is embedded with no markup.
     videoUploadDate: z.string().optional(),
@@ -102,6 +104,8 @@ const guides = defineCollection({
     videoId: z.string().optional(),
     videoTitle: z.string().optional(),
     videoChannel: z.string().optional(),
+    // The channel's YouTube address, only when verified: it becomes the video markup's author.url
+    videoChannelUrl: z.string().url().optional(),
     // Upload date and length as YouTube lists them (ISO 8601). VideoObject markup needs the
     // upload date, so a video without one is embedded with no markup.
     videoUploadDate: z.string().optional(),

@@ -24,8 +24,11 @@ export interface Props {
   duration?: string;
   /** Thumbnail quality: default, mqdefault, hqdefault, sddefault, maxresdefault */
   thumbnailQuality?: string;
-  /** Optional channel name for schema */
+  /** Channel name, shown for schema only together with channelUrl */
   channelName?: string;
+  /** The channel's YouTube address. Google flags a VideoObject author without a url, so the author is
+   *  only in the markup when we have a verified channel link. */
+  channelUrl?: string;
 }
 
 const {
@@ -36,6 +39,7 @@ const {
   duration,
   thumbnailQuality = 'hqdefault',
   channelName,
+  channelUrl,
 } = Astro.props;
 
 const embedUrl = `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&rel=0`;
@@ -52,10 +56,11 @@ const videoSchema = {
   contentUrl: watchUrl,
   ...(uploadDate && { uploadDate }),
   ...(duration && { duration }),
-  ...(channelName && {
+  ...(channelName && channelUrl && {
     author: {
       '@type': 'Person',
       name: channelName,
+      url: channelUrl,
     },
   }),
 };
