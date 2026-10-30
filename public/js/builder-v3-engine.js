@@ -118,6 +118,11 @@
     const p = ROLLS && ROLLS.weapons && wp ? ROLLS.weapons[str(wp.id)] : null;
     return Array.isArray(p) && p.length ? new Set(p.map(str)) : null;
   }
+  /* Guns whose recalibration pulled talents from the wrong pool until a patch fixed it: older copies
+     can carry a talent outside the pool, so a creator's screenshot can show one. */
+  const RECAL = ROLLS && ROLLS.recalFixed && typeof ROLLS.recalFixed === 'object' ? ROLLS.recalFixed : null;
+  const recalFixed = (wp) => !!(RECAL && wp && arr(RECAL.weapons).map(str).includes(str(wp.id)));
+  const recalWhen = () => `${str(RECAL && RECAL.patch)} (${str(RECAL && RECAL.dateText)})`;
   /* { talentId: ['Piece (T2)', ...] } for a slot ('body' or 'backpack') and set, or null when unknown */
   function gearRollsOf(slotId, setId) {
     const m = ROLLS && ROLLS.gear && ROLLS.gear[slotId];
@@ -607,7 +612,10 @@
       if (!ps) return;
       for (const id of w.t) {
         const t = WT.get(id);
-        if (t && !ps.has(str(t.id))) warns.push([B(t.name), ` doesn't roll on the ${wp.name}. The game's Build-Making Database leaves it out of that gun's talent pool.`]);
+        if (!t || ps.has(str(t.id))) continue;
+        if (recalFixed(wp)) {
+          infos.push([B(t.name), ` isn't in the ${wp.name}'s talent pool, so one you get now can't roll it. Older copies can have it: until ${recalWhen()}, recalibrating this gun pulled talents from the wrong pool.`]);
+        } else warns.push([B(t.name), ` doesn't roll on the ${wp.name}. The game's Build-Making Database leaves it out of that gun's talent pool.`]);
       }
     });
     for (const s of SLOTS) {
@@ -1272,7 +1280,9 @@
       title: `${wp.name}: talent ${j + 1}`,
       items: [
         ...inPool.map((t) => item(t, poolSet ? `The ${inPool.length} talents the ${wp.name} can roll` : '')),
-        ...offPool.map((t) => ({ ...item(t, 'Picked, but not in its pool'), note: "The game's Build-Making Database doesn't list it for this gun." })),
+        ...offPool.map((t) => ({ ...item(t, 'Picked, but not in its pool'), note: recalFixed(wp)
+          ? `Not in its pool now. Older copies can have it: until ${recalWhen()}, recalibrating this gun pulled talents from the wrong pool.`
+          : "The game's Build-Making Database doesn't list it for this gun." })),
       ],
       current: w.t[j],
       none: 'No talent',

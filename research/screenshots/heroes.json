@@ -816,20 +816,349 @@
   "maxErr": 120
  },
  {
-  "out": "research/screenshots/masters/builds/division-resurgence-super-spreader-scorpio-septicemia-card.webp",
-  "video": "Screen_Recording_20261028_155256_The_Division_Resurgence.mp4",
-  "t": 62.5,
+  "out": "research/screenshots/masters/builds/division-resurgence-super-spreader-n95-agent-lab.webp",
+  "video": "2026-10-29_10-06-44.mp4",
+  "t": 51.5,
   "crop": [
-   60,
-   100,
-   1640
+   380,
+   250,
+   1600
   ],
-  "bar": false,
   "title": "Super Spreader",
-  "subtitle": "Field Grenadier build"
+  "subtitle": "Field Grenadier build",
+  "align": "right",
+  "titleY": 0.3,
+  "n95": {
+   "outline": [
+    [
+     848,
+     688
+    ],
+    [
+     870,
+     694
+    ],
+    [
+     890,
+     706
+    ],
+    [
+     912,
+     726
+    ],
+    [
+     935,
+     744
+    ],
+    [
+     954,
+     758
+    ],
+    [
+     964,
+     778
+    ],
+    [
+     967,
+     808
+    ],
+    [
+     963,
+     846
+    ],
+    [
+     953,
+     882
+    ],
+    [
+     937,
+     912
+    ],
+    [
+     911,
+     936
+    ],
+    [
+     876,
+     952
+    ],
+    [
+     840,
+     958
+    ],
+    [
+     800,
+     953
+    ],
+    [
+     764,
+     941
+    ],
+    [
+     733,
+     921
+    ],
+    [
+     708,
+     896
+    ],
+    [
+     693,
+     863
+    ],
+    [
+     686,
+     826
+    ],
+    [
+     687,
+     792
+    ],
+    [
+     695,
+     770
+    ],
+    [
+     714,
+     758
+    ],
+    [
+     741,
+     748
+    ],
+    [
+     770,
+     730
+    ],
+    [
+     794,
+     714
+    ],
+    [
+     819,
+     698
+    ]
+   ],
+   "keepAbove": [
+    [
+     688,
+     728
+    ],
+    [
+     703,
+     733
+    ],
+    [
+     727,
+     735
+    ],
+    [
+     753,
+     734
+    ],
+    [
+     773,
+     729
+    ],
+    [
+     790,
+     721
+    ],
+    [
+     803,
+     711
+    ],
+    [
+     817,
+     699
+    ],
+    [
+     827,
+     693
+    ],
+    [
+     840,
+     686
+    ],
+    [
+     850,
+     684
+    ],
+    [
+     863,
+     685
+    ],
+    [
+     873,
+     691
+    ],
+    [
+     887,
+     699
+    ],
+    [
+     900,
+     711
+    ],
+    [
+     913,
+     722
+    ],
+    [
+     927,
+     729
+    ],
+    [
+     943,
+     733
+    ],
+    [
+     960,
+     733
+    ],
+    [
+     970,
+     729
+    ],
+    [
+     980,
+     723
+    ],
+    [
+     994,
+     710
+    ]
+   ],
+   "light": [
+    0.5,
+    -0.5,
+    0.7
+   ],
+   "lit": [
+    210,
+    214,
+    208
+   ],
+   "ambient": [
+    82,
+    88,
+    90
+   ],
+   "depth": 0.9,
+   "straps": [
+    {
+     "points": [
+      [
+       690,
+       778
+      ],
+      [
+       670,
+       764
+      ],
+      [
+       650,
+       750
+      ]
+     ],
+     "fadeTo": [
+      650,
+      750
+     ],
+     "fadeLen": 22,
+     "width": 5,
+     "colour": [
+      170,
+      176,
+      178
+     ]
+    },
+    {
+     "points": [
+      [
+       698,
+       880
+      ],
+      [
+       679,
+       891
+      ],
+      [
+       660,
+       899
+      ]
+     ],
+     "fadeTo": [
+      660,
+      899
+     ],
+     "fadeLen": 22,
+     "width": 5,
+     "colour": [
+      150,
+      156,
+      158
+     ]
+    },
+    {
+     "points": [
+      [
+       964,
+       782
+      ],
+      [
+       979,
+       771
+      ],
+      [
+       994,
+       759
+      ]
+     ],
+     "fadeTo": [
+      994,
+      759
+     ],
+     "fadeLen": 18,
+     "width": 5,
+     "colour": [
+      170,
+      176,
+      178
+     ]
+    },
+    {
+     "points": [
+      [
+       950,
+       888
+      ],
+      [
+       966,
+       898
+      ],
+      [
+       982,
+       905
+      ]
+     ],
+     "fadeTo": [
+      982,
+      905
+     ],
+     "fadeLen": 18,
+     "width": 5,
+     "colour": [
+      150,
+      156,
+      158
+     ]
+    }
+   ]
+  }
  },
  {
-  "out": "research/screenshots/masters/builds/division-resurgence-malpractice-no-heal-field-medic-clinic.webp",
+  "out": "research/screenshots/masters/builds/division-resurgence-malpractice-no-heal-field-medic-clinic-team.webp",
   "video": "2026-10-29_10-06-44.mp4",
   "t": 103.5,
   "crop": [
@@ -839,7 +1168,8 @@
   ],
   "title": "Malpractice",
   "subtitle": "No-heal Field Medic build",
-  "align": "right"
+  "align": "right",
+  "titleY": 0.21
  },
  {
   "out": "research/screenshots/masters/builds/division-resurgence-perpetual-motion-bulwark-firefight.webp",

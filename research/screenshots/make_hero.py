@@ -14,7 +14,8 @@ the session uploads (they are too big for the repo); the frame time is enough to
 
 Spec keys: out, video, t, crop [x, y, width] (height follows from 1600 x 840), clear [boxes], hud [[x0, y0,
 x1, y1, colour]] (only that colour's pixels in the box: white, brightwhite, red, pink, orange, green), bar (false to skip
-the health bar search), window, maxErr, title, subtitle, align, word.
+the health bar search), window, maxErr, title, subtitle, align, titleY (where the middle of the title block sits, as a
+share of the height: 0.5 by default, lower to lift it off faces), word, n95 (a face mask drawn on, see draw_n95).
 
 Clearing HUD: crops are chosen to leave out the fixed HUD (minimap, menu icons, chat, skill bar, XP
 bar). The player's orange health bar floats next to the agent, so it is found by its colour and
@@ -32,6 +33,7 @@ import sys
 import cv2
 import numpy as np
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
+from scipy.interpolate import splprep, splev
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 VIDEO_DIRS = ['/mnt/user-data/uploads', '/mnt/user-data/attachments']
@@ -190,14 +192,155 @@ def clear(video, t, f, boxes, auto_bar, window=2.0, max_err=60, crop=None, hud=(
     return res, {'fromFrames': share, 'frames': used[:6], 'blended': round(1 - share, 2)}
 
 
-def draw_text(img, title, subtitle, align='left'):
+def smooth_closed(pts, n=600):
+    p = np.array(pts, np.float64)
+    tck, _ = splprep([p[:, 0], p[:, 1]], s=len(p) * 2.0, per=True)
+    x, y = splev(np.linspace(0, 1, n, endpoint=False), tck)
+    return np.column_stack([x, y])
+
+
+def smooth_open(pts, n=300):
+    p = np.array(pts, np.float64)
+    tck, _ = splprep([p[:, 0], p[:, 1]], s=len(p) * 1.0, k=min(3, len(p) - 1))
+    x, y = splev(np.linspace(0, 1, n), tck)
+    return np.column_stack([x, y])
+
+
+def fill_aa(shape, poly, ss=4):
+    """Anti-aliased polygon fill (0..1), drawn at ss x and averaged down."""
+    H, W = shape
+    big = np.zeros((H * ss, W * ss), np.uint8)
+    cv2.fillPoly(big, [np.round(poly * ss).astype(np.int32)], 255, lineType=cv2.LINE_AA)
+    return cv2.resize(big, (W, H), interpolation=cv2.INTER_AREA).astype(np.float32) / 255
+
+
+def draw_n95(frame, spec, seed=11):
+    """Put an N95 cup mask on a face (for the occasional in-game meme; used on the Super Spreader post).
+
+    spec['n95'] is in frame pixels: outline (points around the mask, smoothed into a closed curve),
+    keepAbove (a line, usually the bottom of goggles or glasses, above which the original pixels stay in
+    front of the mask), light (direction [x right, y down, z towards the camera]), lit and ambient
+    colours (match the scene: the lit side of a white surface and its shadow), depth, straps (short
+    runs from the sides that fade out where they go behind the head) and an optional valve. The cup is
+    shaded from a height field (a dome that rises at the rim), with a soft contact shadow on the skin,
+    non-woven grain, and the frame's own softness."""
+    a = frame.astype(np.float32)
+    H, W = a.shape[:2]
+    outline = smooth_closed(spec['outline'])
+    pad = 60
+    x0, y0 = int(outline[:, 0].min()) - pad, int(outline[:, 1].min()) - pad
+    x1, y1 = int(outline[:, 0].max()) + pad, int(outline[:, 1].max()) + pad
+    reg = a[y0:y1, x0:x1].copy()
+    rh, rw = reg.shape[:2]
+    poly = outline - [x0, y0]
+    alpha = fill_aa((rh, rw), poly)
+    inside = (alpha > 0.5).astype(np.uint8)
+    D = cv2.distanceTransform(inside, cv2.DIST_L2, 5)
+    Dout = cv2.distanceTransform(1 - inside, cv2.DIST_L2, 5)
+    Dmax = float(D.max())
+    # height: a dome that rises steeply at the rim and is rounded in the middle
+    z = np.sqrt(np.clip(D * (2 * Dmax - D), 0, None))
+    z = cv2.GaussianBlur(z, (0, 0), spec.get('smooth', 10))
+    depth = spec.get('depth', 0.9)
+    gx = cv2.Sobel(z, cv2.CV_32F, 1, 0, ksize=5) / 32.0 * depth
+    gy = cv2.Sobel(z, cv2.CV_32F, 0, 1, ksize=5) / 32.0 * depth
+    n = np.dstack([-gx, -gy, np.ones_like(z)])
+    n /= np.linalg.norm(n, axis=2, keepdims=True)
+    L = np.array(spec.get('light', [0.45, -0.55, 0.7]), np.float32)
+    L /= np.linalg.norm(L)
+    ndl = (n @ L)
+    wrap = spec.get('wrap', 0.35)
+    diff = np.clip((ndl + wrap) / (1 + wrap), 0, 1)
+    lit = np.array(spec.get('lit', [206, 212, 208]), np.float32)
+    amb = np.array(spec.get('ambient', [86, 94, 98]), np.float32)
+    col = amb + (lit - amb) * diff[..., None]
+    # the rim curls away: darker right at the edge, a faint molded lip just inside it
+    ao = 1 - 0.32 * np.exp(-D / 5.0)
+    lip = 1 + 0.05 * np.exp(-((D - 9.0) ** 2) / 8.0) - 0.04 * np.exp(-((D - 15.0) ** 2) / 10.0)
+    col *= (ao * lip)[..., None]
+    # non-woven texture: fine grain plus soft mottling
+    rng = np.random.default_rng(seed)
+    g1 = cv2.GaussianBlur(rng.normal(0, 1, (rh, rw)).astype(np.float32), (0, 0), 0.8) * spec.get('grain', 7.0)
+    g2 = cv2.GaussianBlur(rng.normal(0, 1, (rh, rw)).astype(np.float32), (0, 0), 5) * spec.get('mottle', 10.0)
+    col += (g1 + g2)[..., None]
+    # valve (optional): a round cover with a ring and slots
+    v = spec.get('valve')
+    if v:
+        cx, cy, r = v['x'] - x0, v['y'] - y0, v['r']
+        yy, xx = np.mgrid[0:rh, 0:rw].astype(np.float32)
+        # slightly squashed by the cup's curve
+        dd = np.sqrt(((xx - cx) / r) ** 2 + ((yy - cy) / (r * v.get('squash', 0.92))) ** 2)
+        cover = np.clip((1 - dd) * r / 1.5, 0, 1)
+        vcol = np.array(v.get('colour', [150, 156, 158]), np.float32)
+        # its own little dome, lit the same way
+        vz = np.sqrt(np.clip(1 - dd ** 2, 0, 1))
+        vgx = cv2.Sobel(vz, cv2.CV_32F, 1, 0, ksize=3) * r * 0.25
+        vgy = cv2.Sobel(vz, cv2.CV_32F, 0, 1, ksize=3) * r * 0.25
+        vn = np.dstack([-vgx, -vgy, np.ones_like(vz) * 8])
+        vn /= np.linalg.norm(vn, axis=2, keepdims=True)
+        vd = np.clip(((vn @ L) + 0.3) / 1.3, 0, 1)
+        vshade = vcol * (0.55 + 0.6 * vd)[..., None]
+        ring = np.exp(-((dd - 0.86) ** 2) / 0.004)
+        vshade *= (1 - 0.35 * ring)[..., None]
+        # slots: horizontal dark bars in the middle
+        slots = np.zeros_like(dd)
+        for k in range(-2, 3):
+            sy = cy + k * r * 0.22
+            band = np.exp(-((yy - sy) ** 2) / (r * 0.035) ** 2) * (np.abs(xx - cx) < r * 0.5 * np.sqrt(max(0.0, 1 - (k * 0.22) ** 2)))
+            slots = np.maximum(slots, band)
+        vshade *= (1 - 0.45 * slots * (dd < 0.7))[..., None]
+        # contact shadow around the cover on the mask
+        sh = np.exp(-np.clip(dd - 1, 0, None) * r / 4.0) * (dd > 1)
+        col *= (1 - 0.25 * sh)[..., None]
+        col = col * (1 - cover[..., None]) + vshade * cover[..., None]
+    col = np.clip(col, 0, 255)
+    # straps: short visible runs from the sides into the hood
+    for s in spec.get('straps', []):
+        line = smooth_open(s['points'], 120) - [x0, y0]
+        sm = np.zeros((rh * 4, rw * 4), np.uint8)
+        cv2.polylines(sm, [np.round(line * 4).astype(np.int32)], False, 255, thickness=int(s.get('width', 5) * 4), lineType=cv2.LINE_AA)
+        sm = cv2.resize(sm, (rw, rh), interpolation=cv2.INTER_AREA).astype(np.float32) / 255
+        # fade towards the end that goes behind the head
+        fade = np.ones_like(sm)
+        if s.get('fadeTo'):
+            fx, fy = s['fadeTo'][0] - x0, s['fadeTo'][1] - y0
+            yy, xx = np.mgrid[0:rh, 0:rw].astype(np.float32)
+            dist = np.sqrt((xx - fx) ** 2 + (yy - fy) ** 2)
+            fade = np.clip(dist / s.get('fadeLen', 14.0), 0, 1)
+        scol = np.array(s.get('colour', [150, 160, 166]), np.float32)
+        sm = sm * fade * s.get('opacity', 0.95)
+        # strap casts a thin shadow below itself
+        shadow = cv2.GaussianBlur(np.roll(sm, 2, axis=0), (0, 0), 1.5) * 0.35
+        reg = reg * (1 - shadow[..., None])
+        reg = reg * (1 - sm[..., None]) + scol * sm[..., None]
+    # contact shadow on the skin around the mask
+    occl = np.exp(-Dout / 4.5) * (1 - inside)
+    reg = reg * (1 - 0.35 * occl[..., None])
+    # composite the mask, softened to the frame's own sharpness
+    col = cv2.GaussianBlur(col, (0, 0), spec.get('soften', 0.7))
+    al = cv2.GaussianBlur(alpha, (0, 0), 0.6)[..., None]
+    out = reg * (1 - al) + col * al
+    # what sits in front of the mask (goggle rim): keep the original pixels above that line
+    keep = spec.get('keepAbove')
+    if keep:
+        line = smooth_open(keep, 200) - [x0, y0]
+        polyk = np.vstack([line, [[line[-1, 0], -10], [line[0, 0], -10]]])
+        ka = fill_aa((rh, rw), polyk)
+        ka = cv2.GaussianBlur(ka, (0, 0), 0.7)[..., None]
+        out = out * (1 - ka) + a[y0:y1, x0:x1] * ka
+    a[y0:y1, x0:x1] = out
+    return np.clip(a, 0, 255).astype(np.uint8)
+
+
+def draw_text(img, title, subtitle, align='left', title_y=0.5):
     if align == 'right':  # draw on the mirror image, then mirror back (text is drawn the right way round below)
         flipped = draw_text_layers(img.transpose(Image.FLIP_LEFT_RIGHT), title, subtitle, shade_only=True)
-        return draw_text_layers(flipped.transpose(Image.FLIP_LEFT_RIGHT), title, subtitle, text_right=True, no_shade=True)
-    return draw_text_layers(img, title, subtitle)
+        return draw_text_layers(flipped.transpose(Image.FLIP_LEFT_RIGHT), title, subtitle, text_right=True, no_shade=True,
+                                title_y=title_y)
+    return draw_text_layers(img, title, subtitle, title_y=title_y)
 
 
-def draw_text_layers(img, title, subtitle, shade_only=False, text_right=False, no_shade=False):
+def draw_text_layers(img, title, subtitle, shade_only=False, text_right=False, no_shade=False, title_y=0.5):
     im = img.convert('RGBA')
     W, H = im.size
     k = W / 1200  # sizes below are for a 1200 px wide image
@@ -230,7 +373,7 @@ def draw_text_layers(img, title, subtitle, shade_only=False, text_right=False, n
     sub_font = ImageFont.truetype(FONT_BOLD, int(30 * k))
     line_h = int(size * 1.04)
     block = line_h * len(lines) + int(34 * k) + (int(44 * k) if subtitle else 0)
-    y = int(H * 0.5 - block / 2)
+    y = int(H * title_y - block / 2)
     layer = Image.new('RGBA', (W, H), (0, 0, 0, 0))
     ld = ImageDraw.Draw(layer)
     def left(text, f):  # x of a line: from the left edge, or right-aligned against the right edge
@@ -268,11 +411,13 @@ def make(spec):
     img, report = clear(video, t, f, [tuple(b) for b in spec.get('clear', [])], spec.get('bar', True),
                         window=spec.get('window', 2.0), max_err=spec.get('maxErr', 60), crop=(x, y, x + w, y + h),
                         hud=spec.get('hud', ()))
+    if spec.get('n95'):
+        img = draw_n95(img, spec['n95'])
     out = Image.fromarray(img[y:y + h, x:x + w]).resize((OUT_W, OUT_H), Image.LANCZOS)
     if spec.get('word'):
         out = replace_word(out, spec)
     if spec.get('title'):
-        out = draw_text(out, spec['title'], spec.get('subtitle'), spec.get('align', 'left'))
+        out = draw_text(out, spec['title'], spec.get('subtitle'), spec.get('align', 'left'), spec.get('titleY', 0.5))
     path = os.path.join(ROOT, spec['out'])
     os.makedirs(os.path.dirname(path), exist_ok=True)
     out.save(path, quality=90, method=6)

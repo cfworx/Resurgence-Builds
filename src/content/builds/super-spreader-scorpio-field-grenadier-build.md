@@ -11,8 +11,8 @@ verified: false
 original: true
 tags: ["Field Grenadier", "Scorpio", "Artillery Turret", "Mechanical Enemy", "Gunny Johnny", "Concerted Strike", "Contagion", "PPSH-41", "Demolitionist", "off-meta", "build-guide", "Season 2"]
 description: "Our own off-meta Field Grenadier build: the Scorpio makes them bleed, a Contagion Seeker Mine spreads it, and one Artillery Turret switches on five weapon buffs."
-featuredImage: "/images/builds/division-resurgence-super-spreader-scorpio-septicemia-card-1200.webp"
-imageAlt: "The Scorpio's card in The Division Resurgence Build-Making Database showing its Septicemia talent (Venom stacks that inflict Bleed, Confusion and Shock), with the title Super Spreader, Field Grenadier build"
+featuredImage: "/images/builds/division-resurgence-super-spreader-n95-agent-lab-1200.webp"
+imageAlt: "An agent in a blue bucket hat and red goggles in a Division Resurgence lab, with an N95 mask we edited onto his face and a lab technician in a surgical mask behind him, under the title Super Spreader, Field Grenadier build"
 author: "RapidF5"
 shareTitle: "The shotgun infects. The mine spreads it. The turret pays for everything."
 shareText: "A Field Grenadier build nobody runs: Scorpio Bleed, a Contagion Seeker Mine and an Artillery Turret that keeps five weapon buffs on."

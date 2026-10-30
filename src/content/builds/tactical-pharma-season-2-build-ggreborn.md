@@ -83,7 +83,7 @@ Four pieces of Jackpot and two of Fire Cycle: Fire Cycle on the **holster** and 
 | Slot | Weapon | Talents | Rolls |
 |---|---|---|---|
 | Primary | **Lightweight M4** (Assault Rifle) | **In Sync** + **Revitalize** | Skill Multi-Shot Chance; Engineering attachments with Skill Critical Damage |
-| Secondary | **First Wave Vector** (SMG) | **Torrential Downpour** + **Fully Charged** (see the recalibration note under What Season 2 Changed That Matters) | Engineering attachments with Skill Intensity and Skill Critical Damage |
+| Secondary | **First Wave Vector** (SMG) | **Torrential Downpour** + **Fully Charged** (his copy is older: a Vector you get now can't roll Fully Charged, see the recalibration note under What Season 2 Changed That Matters) | Engineering attachments with Skill Intensity and Skill Critical Damage |
 
 What the talents do (base versions):
 

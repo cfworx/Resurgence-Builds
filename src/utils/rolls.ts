@@ -5,6 +5,7 @@
 import talentSources from '../data/weapon-talent-sources.json';
 import gearSources from '../data/gear-sources.json';
 import weaponTalents from '../data/weapon-talents.json';
+import recalibrationFixes from '../data/recalibration-fixes.json';
 
 export const slugify = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
 
@@ -28,6 +29,16 @@ const longDate = (iso: string) =>
 /** "October 29, 2026": when the Source lists were recorded. */
 export const SOURCES_RECORDED = longDate((talentSources as any).checked);
 export const GEAR_SOURCES_RECORDED = longDate(gear.checked);
+
+/** Guns whose recalibration pulled talents from the wrong pool until a patch fixed it (Season 2 Phase 1):
+ *  copies recalibrated before then can carry a talent outside their pool. */
+export const RECAL_FIX = {
+  patch: (recalibrationFixes as any).patch as string,
+  dateText: longDate((recalibrationFixes as any).date),
+  notes: (recalibrationFixes as any).notes as string,
+  weapons: (recalibrationFixes as any).weapons as string[],
+};
+export const recalFixed = (weaponId: string) => RECAL_FIX.weapons.includes(weaponId);
 
 /** The 67 talents that roll on standard weapons (the exotics' own talents are not in it). */
 export const POOL_TALENT_COUNT = Object.keys(talents).length;

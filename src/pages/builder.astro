@@ -16,7 +16,7 @@ import talentSources from '../data/weapon-talent-sources.json';
 import gearSources from '../data/gear-sources.json';
 import { getCollection } from 'astro:content';
 import { CURRENT_PATCH } from '../data/site-config';
-import { SOURCES_RECORDED } from '../utils/rolls';
+import { SOURCES_RECORDED, RECAL_FIX } from '../utils/rolls';
 
 // Templates: every build guide with a plannerHash, grouped by specialization in the picker
 const notes: Record<string, unknown> = templateNotes;
@@ -106,7 +106,8 @@ const dataPayload = JSON.stringify({
   bonusAttributes,
   weaponBonusAttributes,
   templates,
-  rolls: { recorded: SOURCES_RECORDED, weapons: weaponPools, gear: gearRolls },
+  rolls: { recorded: SOURCES_RECORDED, weapons: weaponPools, gear: gearRolls,
+    recalFixed: { patch: RECAL_FIX.patch, dateText: RECAL_FIX.dateText, weapons: RECAL_FIX.weapons } },
 }).replace(/</g, '\\u003c');
 
 const gearSetCount = gearSets.length;
@@ -420,7 +421,7 @@ const chevron = 'M6 9l6 6 6-6';
   </section>
 
   <script type="application/json" id="builder-data" set:html={dataPayload}></script>
-  <script is:inline src="/js/builder-v3-engine.js?v=8"></script>
+  <script is:inline src="/js/builder-v3-engine.js?v=9"></script>
   <script is:inline>
     // If the engine didn't start (blocked or failed to load), say so instead of showing dead buttons
     if (!document.getElementById('lab').hasAttribute('data-ready')) document.getElementById('labError').hidden = false;

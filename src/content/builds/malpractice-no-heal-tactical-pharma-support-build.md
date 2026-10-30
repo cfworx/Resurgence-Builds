@@ -11,7 +11,7 @@ verified: false
 original: true
 tags: ["Tactical Pharma", "Field Medic", "Support", "Team Buffs", "Precise Crit", "Close and Personal", "Augmented Range", "Oxidizing Swarm", "PKM", "Mechanical Expert", "off-meta", "build-guide", "Season 2"]
 description: "Our own off-meta Field Medic that never heals: the PKM buffs the squad's crit damage, the Swarm cuts enemy Damage Reduction, and buffed allies power you up."
-featuredImage: "/images/builds/division-resurgence-malpractice-no-heal-field-medic-clinic-1200.webp"
+featuredImage: "/images/builds/division-resurgence-malpractice-no-heal-field-medic-clinic-team-1200.webp"
 imageAlt: "An agent in sunglasses and a blue bucket hat standing in a clinic in The Division Resurgence with a doctor in a white coat, a paramedic drinking coffee and a nurse in teal scrubs, with the title Malpractice, No-heal Field Medic build"
 author: "RapidF5"
 shareTitle: "The Field Medic who refuses to heal."

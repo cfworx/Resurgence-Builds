@@ -68,28 +68,28 @@
   ],
   "small": "/images/builds/division-resurgence-lightweight-m4-commando-vanguard-build-tiktokandy-loadout-480.webp"
  },
- "/images/builds/division-resurgence-malpractice-no-heal-field-medic-clinic-1200.webp": {
+ "/images/builds/division-resurgence-malpractice-no-heal-field-medic-clinic-team-1200.webp": {
   "width": 1200,
   "height": 630,
   "srcset": [
    [
     480,
-    "/images/builds/division-resurgence-malpractice-no-heal-field-medic-clinic-480.webp"
+    "/images/builds/division-resurgence-malpractice-no-heal-field-medic-clinic-team-480.webp"
    ],
    [
     800,
-    "/images/builds/division-resurgence-malpractice-no-heal-field-medic-clinic-800.webp"
+    "/images/builds/division-resurgence-malpractice-no-heal-field-medic-clinic-team-800.webp"
    ],
    [
     1200,
-    "/images/builds/division-resurgence-malpractice-no-heal-field-medic-clinic-1200.webp"
+    "/images/builds/division-resurgence-malpractice-no-heal-field-medic-clinic-team-1200.webp"
    ],
    [
     1600,
-    "/images/builds/division-resurgence-malpractice-no-heal-field-medic-clinic-1600.webp"
+    "/images/builds/division-resurgence-malpractice-no-heal-field-medic-clinic-team-1600.webp"
    ]
   ],
-  "small": "/images/builds/division-resurgence-malpractice-no-heal-field-medic-clinic-480.webp"
+  "small": "/images/builds/division-resurgence-malpractice-no-heal-field-medic-clinic-team-480.webp"
  },
  "/images/builds/division-resurgence-milkshake-machine-strawberry-milkshake-card-1200.webp": {
   "width": 1200,
@@ -160,28 +160,28 @@
   ],
   "small": "/images/builds/division-resurgence-perpetual-motion-bulwark-firefight-480.webp"
  },
- "/images/builds/division-resurgence-super-spreader-scorpio-septicemia-card-1200.webp": {
+ "/images/builds/division-resurgence-super-spreader-n95-agent-lab-1200.webp": {
   "width": 1200,
   "height": 630,
   "srcset": [
    [
     480,
-    "/images/builds/division-resurgence-super-spreader-scorpio-septicemia-card-480.webp"
+    "/images/builds/division-resurgence-super-spreader-n95-agent-lab-480.webp"
    ],
    [
     800,
-    "/images/builds/division-resurgence-super-spreader-scorpio-septicemia-card-800.webp"
+    "/images/builds/division-resurgence-super-spreader-n95-agent-lab-800.webp"
    ],
    [
     1200,
-    "/images/builds/division-resurgence-super-spreader-scorpio-septicemia-card-1200.webp"
+    "/images/builds/division-resurgence-super-spreader-n95-agent-lab-1200.webp"
    ],
    [
     1600,
-    "/images/builds/division-resurgence-super-spreader-scorpio-septicemia-card-1600.webp"
+    "/images/builds/division-resurgence-super-spreader-n95-agent-lab-1600.webp"
    ]
   ],
-  "small": "/images/builds/division-resurgence-super-spreader-scorpio-septicemia-card-480.webp"
+  "small": "/images/builds/division-resurgence-super-spreader-n95-agent-lab-480.webp"
  },
  "/images/builds/division-resurgence-tactical-pharma-season-2-build-ggreborn-loadout-1200.webp": {
   "width": 1200,

@@ -1,0 +1,26 @@
+{
+ "_about": "Weapons whose recalibration pulled talents from the wrong pool until Ubisoft fixed it. Copies recalibrated before the fix can carry a talent that is not in their pool (the Source lists in weapon-talent-sources.json), so a creator's screenshot can show a pair the game no longer rolls. The planner shows these as a note instead of a warning, and the weapon pages say so.",
+ "fixes": [
+  {
+   "patch": "Season 2 Phase 1",
+   "date": "2026-08-05",
+   "summary": "Our summary of the official bug fix (/patch-notes/season-2-phase-1-the-call/): the Classic AK-47 recalibration only gave LVL2 talents, and a few other weapons rolled talents from the wrong pool on recalibration (First Wave Vector 45 ACP, RPD, M700 Carbon, M700). Fixed.",
+   "source": "https://thedivision.fandom.com/wiki/Season_2_Phase_1_-_Patch_Notes (mirror of the official developer post; summarized on /patch-notes/season-2-phase-1-the-call/)",
+   "weapons": [
+    {"name": "First Wave Vector 45 ACP", "siteId": "sw-50"},
+    {"name": "RPD", "siteId": "sw-56"},
+    {"name": "M700 Carbon", "siteId": "sw-78"},
+    {"name": "M700", "siteId": "sw-27"}
+   ],
+   "seenInGame": [
+    {
+     "weapon": "First Wave Vector 45 ACP",
+     "talents": ["Torrential Downpour", "Fully Charged"],
+     "outsidePool": ["Fully Charged"],
+     "where": "GGReborn's weapon screen, Level 50 T2 (YouTube, October 16, 2026): https://www.youtube.com/watch?v=OVnksyrlj88",
+     "note": "Fully Charged's Source list (recorded October 29, 2026) has no Vector, and the First Wave Vector is in exactly 18 lists without it, so his copy is a pre-fix recalibration."
+    }
+   ]
+  }
+ ]
+}

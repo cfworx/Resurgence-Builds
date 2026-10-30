@@ -1,0 +1,7 @@
+{
+ "_about": "Site copy of research/build-database/recalibration-fixes.json: weapons whose recalibration pulled talents from the wrong pool until the patch named here fixed it. Older copies can carry a talent outside their pool.",
+ "patch": "Season 2 Phase 1",
+ "date": "2026-08-05",
+ "notes": "/patch-notes/season-2-phase-1-the-call/",
+ "weapons": ["sw-50", "sw-56", "sw-78", "sw-27"]
+}

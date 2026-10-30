@@ -15,7 +15,7 @@ import { dbImage, dbImageNames, armoryScreenId, imageObject, CARDS_RECORDED } fr
 import { publicImageSize } from '../../../utils/image-dims.mjs';
 import weaponTalents from '../../../data/weapon-talents.json';
 import { getCollection } from 'astro:content';
-import { weaponPool, TALENT_ROLE, ROLE_ORDER, talentDescription, POOL_TALENT_COUNT, SOURCES_RECORDED } from '../../../utils/rolls';
+import { weaponPool, TALENT_ROLE, ROLE_ORDER, talentDescription, POOL_TALENT_COUNT, SOURCES_RECORDED, RECAL_FIX, recalFixed } from '../../../utils/rolls';
 
 export function getStaticPaths() {
   return standardWeapons.map((weapon: any) => ({
@@ -46,6 +46,11 @@ const weaponIcon = dbImage(`weapon-icons/${slug}`);
 // The weapon's talent pool: every weapon talent whose Source list (recorded from the game) includes it.
 const pool = weaponPool(slug);
 const sourcesRecorded = SOURCES_RECORDED;
+// A gun whose recalibration pulled talents from the wrong pool until Season 2 Phase 1: older copies can
+// carry a talent that isn't in the list (creators' screenshots sometimes show one).
+const recalNote = recalFixed(weapon.id)
+  ? `One exception: until ${RECAL_FIX.patch} (${RECAL_FIX.dateText}), recalibrating the ${weapon.name} pulled talents from the wrong pool, so copies recalibrated before that patch can carry a talent that isn't on this list. Ubisoft fixed it, and a copy you get or recalibrate now rolls from this list.`
+  : '';
 const poolGroups = ROLE_ORDER.map((role) => ({ role, talents: pool.filter((t) => TALENT_ROLE[t.name] === role) })).filter((g) => g.talents.length);
 // Our build guides that use this weapon, with the talents they run on it.
 const talentNameById: Record<string, string> = Object.fromEntries((weaponTalents as any[]).map((t) => [t.id, t.name]));
@@ -117,7 +122,7 @@ const faqs = [
   },
   ...(pool.length ? [{
     question: `What talents can the ${weapon.name} roll?`,
-    answer: `${pool.length} of the ${POOL_TALENT_COUNT} weapon talents: ${pool.map((t) => t.name).join(', ')}. The pool is the same at every rarity, and the game's High-End weapon card says the gun is "created with 2 Bonuses and 2 random Talents", which come from it. The list is every weapon talent's Source list in the game's Build-Making Database, recorded ${sourcesRecorded}, so a talent that isn't on it never rolls on the ${weapon.name}.`
+    answer: `${pool.length} of the ${POOL_TALENT_COUNT} weapon talents: ${pool.map((t) => t.name).join(', ')}. The pool is the same at every rarity, and the game's High-End weapon card says the gun is "created with 2 Bonuses and 2 random Talents", which come from it. The list is every weapon talent's Source list in the game's Build-Making Database, recorded ${sourcesRecorded}, so a talent that isn't on it never rolls on the ${weapon.name}.${recalNote ? ' ' + recalNote : ''}`
   }] : []),
   {
     question: `What builds use ${weapon.type}s in Division Resurgence?`,
@@ -216,6 +221,7 @@ const itemLd = {
         <section class="weapon-rolls" aria-labelledby="weapon-rolls-title">
           <h2 id="weapon-rolls-title" class="weapon-rolls__title">Weapon Talents the {weapon.name} Can Roll</h2>
           <p class="weapon-rolls__lead">The {weapon.name} can roll {pool.length} of the {POOL_TALENT_COUNT} weapon talents, and the list is the same at every rarity (High-End, Superior and Specialized). The game's High-End weapon card says the gun is "created with 2 Bonuses and 2 random Talents", and those talents come from this list. We built it from every talent's Source list in the game's Build-Making Database, recorded {sourcesRecorded}: a talent that isn't here never rolls on this gun.</p>
+          {recalNote && <p class="weapon-rolls__lead">{recalNote} <a href={RECAL_FIX.notes} style="color: var(--accent);">Patch notes</a>.</p>}
           {poolGroups.map((g) => (
             <div class="weapon-rolls__group">
               <h3 class="weapon-rolls__role">{g.role} <span>{g.talents.length}</span></h3>
