@@ -18,14 +18,23 @@ const HELD = { held: true, message: 'Thanks! Your comment is waiting for a quick
 export async function onRequestGet({ request, env }) {
   try {
     if (!env.DB) return json(503, OFFLINE);
-    const path = checkPath(new URL(request.url).searchParams.get('path'));
+    const url = new URL(request.url);
+    const path = checkPath(url.searchParams.get('path'));
     if (!path) return json(400, { error: 'Comments aren\'t open on this page.' });
+    const asked = Number.parseInt(url.searchParams.get('page') || '1', 10);
+    const total = await env.DB
+      .prepare("SELECT COUNT(*) AS n FROM comments WHERE path = ?1 AND status = 'visible'")
+      .bind(path)
+      .first('n');
+    const perPage = LIMITS.perPage;
+    const pages = Math.max(1, Math.ceil(total / perPage));
+    const page = Math.min(Math.max(Number.isFinite(asked) ? asked : 1, 1), pages);
     const { results } = await env.DB
-      .prepare("SELECT id, name, body, created_at FROM comments WHERE path = ?1 AND status = 'visible' ORDER BY created_at DESC LIMIT ?2")
-      .bind(path, LIMITS.listMax)
+      .prepare("SELECT id, name, body, created_at FROM comments WHERE path = ?1 AND status = 'visible' ORDER BY created_at DESC LIMIT ?2 OFFSET ?3")
+      .bind(path, perPage, (page - 1) * perPage)
       .all();
     const comments = results.map((r) => ({ id: r.id, name: r.name, body: r.body, createdAt: r.created_at }));
-    return json(200, { comments });
+    return json(200, { comments, total, page, pages, perPage });
   } catch {
     return json(500, BROKE);
   }

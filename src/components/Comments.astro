@@ -9,7 +9,6 @@
 
 <section class="comments" id="comments" aria-labelledby="comments-title" data-comments>
   <h2 class="comments__title" id="comments-title">Comments <span class="comments__count" data-count></span></h2>
-  <p class="comments__intro">No account needed: type a name and say your piece. Keep it friendly and on topic, no links. We review comments every day and remove spam and anything nasty.</p>
 
   <form class="comments__form" data-form novalidate>
     <div class="comments__field">
@@ -29,11 +28,11 @@
       <button type="submit" class="btn btn--primary" data-submit>Post comment</button>
       <p class="comments__status" role="status" aria-live="polite" data-status></p>
     </div>
-    <p class="comments__fine">Your name and comment are public. <a href="/privacy/#comments">How comments work</a></p>
   </form>
 
   <p class="comments__note" data-note>Loading comments...</p>
-  <ol class="comments__list" data-list></ol>
+  <ol class="comments__list" data-list aria-labelledby="comments-title"></ol>
+  <nav class="comments__pager" aria-label="Comment pages" data-pager hidden></nav>
   <noscript><p class="comments__note">Comments need JavaScript.</p></noscript>
 </section>
 
@@ -87,12 +86,6 @@
       statusEl.textContent = text;
       statusEl.className = 'comments__status' + (kind ? ' is-' + kind : '');
     }
-    function setCount() {
-      var n = listEl.children.length;
-      countEl.textContent = n ? '(' + n + ')' : '';
-      noteEl.hidden = n > 0;
-      if (!n) noteEl.textContent = 'No comments yet. Start the conversation.';
-    }
 
     function report(c, button) {
       button.disabled = true;
@@ -140,30 +133,88 @@
       return li;
     }
 
-    var loaded = false;
-    function load() {
-      if (loaded) return;
-      loaded = true;
-      fetch('/api/comments?path=' + encodeURIComponent(path), { headers: { Accept: 'application/json' } })
+    var pagerEl = root.querySelector('[data-pager]');
+    var current = 1;
+    var loading = false;
+    var started = false;
+
+    function pageButton(label, page, opts) {
+      var b = document.createElement('button');
+      b.type = 'button';
+      b.className = 'comments__page' + (opts && opts.current ? ' is-current' : '');
+      b.textContent = label;
+      if (opts && opts.aria) b.setAttribute('aria-label', opts.aria);
+      if (opts && opts.current) b.setAttribute('aria-current', 'page');
+      if (opts && opts.disabled) b.disabled = true;
+      else b.addEventListener('click', function () { show(page, true); });
+      return b;
+    }
+
+    // Page numbers to offer: always the first and last, and the two either side of the current one.
+    function pageList(page, pages) {
+      var out = [];
+      for (var p = 1; p <= pages; p++) {
+        if (p === 1 || p === pages || Math.abs(p - page) <= 1) out.push(p);
+        else if (out[out.length - 1] !== '...') out.push('...');
+      }
+      return out;
+    }
+
+    function renderPager(page, pages) {
+      while (pagerEl.firstChild) pagerEl.removeChild(pagerEl.firstChild);
+      pagerEl.hidden = pages < 2;
+      if (pages < 2) return;
+      pagerEl.appendChild(pageButton('\u2039 Newer', page - 1, { disabled: page === 1, aria: 'Newer comments' }));
+      pageList(page, pages).forEach(function (p) {
+        if (p === '...') {
+          var gap = document.createElement('span');
+          gap.className = 'comments__gap';
+          gap.textContent = '\u2026';
+          pagerEl.appendChild(gap);
+        } else {
+          pagerEl.appendChild(pageButton(String(p), p, { current: p === page, aria: 'Page ' + p }));
+        }
+      });
+      pagerEl.appendChild(pageButton('Older \u203a', page + 1, { disabled: page === pages, aria: 'Older comments' }));
+    }
+
+    // Loads one page of comments into the list. freshId highlights a comment just posted.
+    function show(page, jump, freshId) {
+      if (loading) return;
+      loading = true;
+      started = true;
+      listEl.setAttribute('aria-busy', 'true');
+      fetch('/api/comments?path=' + encodeURIComponent(path) + '&page=' + page, { headers: { Accept: 'application/json' } })
         .then(function (r) { return r.ok ? r.json() : Promise.reject(r.status); })
         .then(function (data) {
+          current = data.page || 1;
           var frag = document.createDocumentFragment();
-          (data.comments || []).forEach(function (c) { frag.appendChild(build(c, false)); });
+          (data.comments || []).forEach(function (c) { frag.appendChild(build(c, c.id === freshId)); });
+          while (listEl.firstChild) listEl.removeChild(listEl.firstChild);
           listEl.appendChild(frag);
-          setCount();
+          countEl.textContent = data.total ? '(' + data.total + ')' : '';
+          noteEl.hidden = data.total > 0;
+          if (!data.total) noteEl.textContent = 'No comments yet. Start the conversation.';
+          renderPager(current, data.pages || 1);
+          if (jump && listEl.getBoundingClientRect().top < 0) listEl.scrollIntoView({ block: 'start' });
         })
         .catch(function () {
+          noteEl.hidden = false;
           noteEl.textContent = 'Comments couldn\'t load right now. Refresh the page to try again.';
+        })
+        .then(function () {
+          loading = false;
+          listEl.removeAttribute('aria-busy');
         });
     }
 
     if ('IntersectionObserver' in window) {
       var io = new IntersectionObserver(function (entries) {
-        if (entries.some(function (e) { return e.isIntersecting; })) { io.disconnect(); load(); }
+        if (entries.some(function (e) { return e.isIntersecting; })) { io.disconnect(); if (!started) show(1, false); }
       }, { rootMargin: '600px 0px' });
       io.observe(root);
     } else {
-      load();
+      show(1, false);
     }
 
     form.addEventListener('submit', function (e) {
@@ -186,12 +237,10 @@
       }).then(function (res) {
         if (res.status === 201 && res.data.comment) {
           try { localStorage.setItem('rb-comment-name', name); } catch (e2) {}
-          loaded = true;
-          listEl.insertBefore(build(res.data.comment, true), listEl.firstChild);
-          setCount();
           bodyEl.value = '';
           updateLeft();
           setStatus('Posted. Thanks for chiming in!', 'ok');
+          show(1, false, res.data.comment.id);
         } else if (res.status === 202) {
           try { localStorage.setItem('rb-comment-name', name); } catch (e3) {}
           bodyEl.value = '';
@@ -230,14 +279,11 @@
     font-weight: 600;
     font-size: 0.8em;
   }
-  .comments .comments__intro,
-  .comments .comments__fine,
   .comments .comments__note {
     max-width: var(--measure);
     color: var(--ink-muted);
     line-height: var(--lh-body);
   }
-  .comments .comments__intro { margin: 0 0 var(--sp-5); }
   .comments .comments__form {
     display: grid;
     gap: var(--sp-4);
@@ -297,10 +343,6 @@
   .comments .comments__status:empty { display: none; }
   .comments .comments__status.is-ok { color: #6daa45; }
   .comments .comments__status.is-error { color: #ff8f8f; }
-  .comments .comments__fine {
-    margin: 0;
-    font-size: var(--step--2);
-  }
   .comments .comments__note { margin: 0 0 var(--sp-4); }
   .comments .comments__list {
     list-style: none;
@@ -360,6 +402,36 @@
   }
   .comments .comment__report:hover { color: var(--accent); }
   .comments .comment__report:disabled { cursor: default; text-decoration: none; }
+  .comments .comments__pager {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--sp-2);
+    margin-top: var(--sp-4);
+  }
+  .comments .comments__pager[hidden] { display: none; }
+  .comments .comments__page {
+    min-width: var(--control);
+    min-height: var(--control);
+    padding: 0 var(--sp-3);
+    background: var(--surface);
+    color: var(--ink);
+    border: 1px solid var(--border);
+    border-radius: var(--border-radius);
+    font: inherit;
+    font-size: var(--step--1);
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .comments .comments__page:hover:not(:disabled) { border-color: var(--accent); color: var(--accent); }
+  .comments .comments__page.is-current {
+    background: var(--accent-dim);
+    border-color: var(--accent-dim);
+    color: #fff;
+    cursor: default;
+  }
+  .comments .comments__page:disabled:not(.is-current) { opacity: 0.45; cursor: default; }
+  .comments .comments__gap { color: var(--ink-muted); padding: 0 var(--sp-1); }
   @media (max-width: 44.99em) {
     .comments .comments__title { padding: var(--sp-3) var(--sp-4) var(--sp-3) calc(var(--inset) - 3px); }
   }
