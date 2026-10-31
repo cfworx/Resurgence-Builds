@@ -1,0 +1,366 @@
+---
+/**
+ * Comments.astro: open comments. Visitors type a name and a comment, no account, and it shows right away.
+ * The API is functions/api/comments (Cloudflare Pages Functions + D1); COMMENTS.md explains the whole system and
+ * how it's moderated. Everything a visitor typed is put on the page with textContent, never as HTML.
+ * Moves itself above a "Related Reading" or "Sources" section when the article has one.
+ */
+---
+
+<section class="comments" id="comments" aria-labelledby="comments-title" data-comments>
+  <h2 class="comments__title" id="comments-title">Comments <span class="comments__count" data-count></span></h2>
+  <p class="comments__intro">No account needed: type a name and say your piece. Keep it friendly and on topic, no links. We review comments every day and remove spam and anything nasty.</p>
+
+  <form class="comments__form" data-form novalidate>
+    <div class="comments__field">
+      <label class="comments__label" for="comment-name">Name</label>
+      <input class="comments__input" id="comment-name" name="name" type="text" maxlength="40" autocomplete="nickname" required data-name />
+    </div>
+    <div class="comments__field">
+      <label class="comments__label" for="comment-body">Comment</label>
+      <textarea class="comments__input comments__textarea" id="comment-body" name="body" rows="4" maxlength="2000" required aria-describedby="comment-left" data-body></textarea>
+      <p class="comments__left" id="comment-left" data-left>2,000 characters left</p>
+    </div>
+    <div class="comments__hp" aria-hidden="true">
+      <label for="comment-website">Leave this empty</label>
+      <input id="comment-website" name="website" type="text" tabindex="-1" autocomplete="off" data-hp />
+    </div>
+    <div class="comments__actions">
+      <button type="submit" class="btn btn--primary" data-submit>Post comment</button>
+      <p class="comments__status" role="status" aria-live="polite" data-status></p>
+    </div>
+    <p class="comments__fine">Your name and comment are public. <a href="/privacy/#comments">How comments work</a></p>
+  </form>
+
+  <p class="comments__note" data-note>Loading comments...</p>
+  <ol class="comments__list" data-list></ol>
+  <noscript><p class="comments__note">Comments need JavaScript.</p></noscript>
+</section>
+
+<script is:inline>
+  (function () {
+    var root = document.querySelector('[data-comments]');
+    if (!root || !window.fetch) return;
+
+    // Sit above "Related Reading" / "Sources" in the article, like the old comment box did.
+    try {
+      var scope = root.closest('.prose') || root.parentElement;
+      var marks = scope ? scope.querySelectorAll('h2, h3, p > strong') : [];
+      for (var i = 0; i < marks.length; i++) {
+        var t = marks[i].textContent.trim().toLowerCase().replace(/:$/, '');
+        if (t === 'related reading' || t === 'sources') {
+          var anchor = marks[i].tagName === 'STRONG' ? marks[i].closest('p') : marks[i];
+          var prev = anchor.previousElementSibling;
+          if (prev && prev.tagName === 'HR') anchor = prev;
+          anchor.parentNode.insertBefore(root, anchor);
+          break;
+        }
+      }
+    } catch (e) {}
+
+    var path = location.pathname.replace(/\/?$/, '/');
+    var opened = Date.now();
+    var form = root.querySelector('[data-form]');
+    var nameEl = root.querySelector('[data-name]');
+    var bodyEl = root.querySelector('[data-body]');
+    var hpEl = root.querySelector('[data-hp]');
+    var leftEl = root.querySelector('[data-left]');
+    var statusEl = root.querySelector('[data-status]');
+    var submitEl = root.querySelector('[data-submit]');
+    var listEl = root.querySelector('[data-list]');
+    var noteEl = root.querySelector('[data-note]');
+    var countEl = root.querySelector('[data-count]');
+    var MAX = 2000;
+    var dateFmt = new Intl.DateTimeFormat('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+
+    try { nameEl.value = localStorage.getItem('rb-comment-name') || ''; } catch (e) {}
+
+    function chars(s) { return Array.from(s).length; }
+    function updateLeft() {
+      var left = MAX - chars(bodyEl.value);
+      leftEl.textContent = left.toLocaleString('en-US') + ' characters left';
+      leftEl.classList.toggle('is-low', left < 100);
+    }
+    bodyEl.addEventListener('input', updateLeft);
+
+    function setStatus(text, kind) {
+      statusEl.textContent = text;
+      statusEl.className = 'comments__status' + (kind ? ' is-' + kind : '');
+    }
+    function setCount() {
+      var n = listEl.children.length;
+      countEl.textContent = n ? '(' + n + ')' : '';
+      noteEl.hidden = n > 0;
+      if (!n) noteEl.textContent = 'No comments yet. Start the conversation.';
+    }
+
+    function report(c, button) {
+      button.disabled = true;
+      button.textContent = 'Sending...';
+      fetch('/api/comments/report', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ id: c.id })
+      }).then(function (r) {
+        button.textContent = r.ok ? 'Reported. Thanks, we\'ll take a look.' : 'Couldn\'t send that. Try again later.';
+      }).catch(function () {
+        button.textContent = 'Couldn\'t send that. Try again later.';
+      });
+    }
+
+    // Builds one comment. Only textContent and setAttribute: nothing typed by a visitor is ever parsed as HTML.
+    function build(c, fresh) {
+      var li = document.createElement('li');
+      li.className = 'comment' + (fresh ? ' is-new' : '');
+      li.id = 'comment-' + c.id;
+      var meta = document.createElement('p');
+      meta.className = 'comment__meta';
+      var who = document.createElement('span');
+      who.className = 'comment__name';
+      who.textContent = c.name;
+      var when = document.createElement('time');
+      when.className = 'comment__date';
+      when.setAttribute('datetime', c.createdAt);
+      var d = new Date(c.createdAt);
+      when.textContent = isNaN(d) ? '' : dateFmt.format(d);
+      meta.appendChild(who);
+      meta.appendChild(when);
+      var body = document.createElement('p');
+      body.className = 'comment__body';
+      body.textContent = c.body;
+      var btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'comment__report';
+      btn.textContent = 'Report';
+      btn.setAttribute('aria-label', 'Report the comment by ' + c.name);
+      btn.addEventListener('click', function () { report(c, btn); });
+      li.appendChild(meta);
+      li.appendChild(body);
+      li.appendChild(btn);
+      return li;
+    }
+
+    var loaded = false;
+    function load() {
+      if (loaded) return;
+      loaded = true;
+      fetch('/api/comments?path=' + encodeURIComponent(path), { headers: { Accept: 'application/json' } })
+        .then(function (r) { return r.ok ? r.json() : Promise.reject(r.status); })
+        .then(function (data) {
+          var frag = document.createDocumentFragment();
+          (data.comments || []).forEach(function (c) { frag.appendChild(build(c, false)); });
+          listEl.appendChild(frag);
+          setCount();
+        })
+        .catch(function () {
+          noteEl.textContent = 'Comments couldn\'t load right now. Refresh the page to try again.';
+        });
+    }
+
+    if ('IntersectionObserver' in window) {
+      var io = new IntersectionObserver(function (entries) {
+        if (entries.some(function (e) { return e.isIntersecting; })) { io.disconnect(); load(); }
+      }, { rootMargin: '600px 0px' });
+      io.observe(root);
+    } else {
+      load();
+    }
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      nameEl.removeAttribute('aria-invalid');
+      bodyEl.removeAttribute('aria-invalid');
+      var name = nameEl.value.trim();
+      var body = bodyEl.value.trim();
+      if (chars(name) < 2) { nameEl.setAttribute('aria-invalid', 'true'); nameEl.focus(); setStatus('Add a name (at least 2 characters).', 'error'); return; }
+      if (chars(body) < 2) { bodyEl.setAttribute('aria-invalid', 'true'); bodyEl.focus(); setStatus('Write a comment first.', 'error'); return; }
+      if (chars(body) > MAX) { bodyEl.setAttribute('aria-invalid', 'true'); bodyEl.focus(); setStatus('Keep it under 2,000 characters.', 'error'); return; }
+      submitEl.disabled = true;
+      setStatus('Posting...', '');
+      fetch('/api/comments', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ path: path, name: name, body: body, website: hpEl.value, elapsed: Date.now() - opened })
+      }).then(function (r) {
+        return r.json().catch(function () { return {}; }).then(function (data) { return { status: r.status, data: data }; });
+      }).then(function (res) {
+        if (res.status === 201 && res.data.comment) {
+          try { localStorage.setItem('rb-comment-name', name); } catch (e2) {}
+          loaded = true;
+          listEl.insertBefore(build(res.data.comment, true), listEl.firstChild);
+          setCount();
+          bodyEl.value = '';
+          updateLeft();
+          setStatus('Posted. Thanks for chiming in!', 'ok');
+        } else if (res.status === 202) {
+          try { localStorage.setItem('rb-comment-name', name); } catch (e3) {}
+          bodyEl.value = '';
+          updateLeft();
+          setStatus(res.data.message || 'Thanks! Your comment is waiting for a quick review.', 'ok');
+        } else {
+          var field = res.data.field === 'name' ? nameEl : res.data.field === 'body' ? bodyEl : null;
+          if (field) { field.setAttribute('aria-invalid', 'true'); field.focus(); }
+          setStatus(res.data.error || 'That didn\'t post. Try again in a minute.', 'error');
+        }
+      }).catch(function () {
+        setStatus('That didn\'t post. Check your connection and try again.', 'error');
+      }).then(function () {
+        submitEl.disabled = false;
+      });
+    });
+  })();
+</script>
+
+<style is:global>
+  .comments {
+    margin-top: var(--sp-12);
+    margin-bottom: var(--sp-8);
+  }
+  .comments .comments__title {
+    margin: 0 0 var(--sp-4);
+    padding: var(--sp-4) var(--sp-5) var(--sp-4) calc(var(--inset) - 3px);
+    background: linear-gradient(135deg, rgba(242, 104, 34, 0.08) 0%, rgba(23, 23, 26, 0.9) 100%);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 var(--border-radius) var(--border-radius) 0;
+    font-size: var(--text-2xl);
+    letter-spacing: -0.02em;
+  }
+  .comments .comments__count {
+    color: var(--ink-muted);
+    font-weight: 600;
+    font-size: 0.8em;
+  }
+  .comments .comments__intro,
+  .comments .comments__fine,
+  .comments .comments__note {
+    max-width: var(--measure);
+    color: var(--ink-muted);
+    line-height: var(--lh-body);
+  }
+  .comments .comments__intro { margin: 0 0 var(--sp-5); }
+  .comments .comments__form {
+    display: grid;
+    gap: var(--sp-4);
+    padding: calc(var(--inset) - 1px);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    margin-bottom: var(--sp-6);
+  }
+  .comments .comments__field { display: grid; gap: var(--sp-2); }
+  .comments .comments__label {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    color: var(--ink-heading);
+    font-size: var(--step--1);
+  }
+  .comments .comments__input {
+    width: 100%;
+    min-height: var(--control);
+    padding: var(--sp-2) var(--sp-3);
+    background: var(--bg);
+    color: var(--ink-heading);
+    border: 1px solid var(--line-strong);
+    border-radius: var(--border-radius);
+    font: inherit;
+    font-size: max(16px, var(--step-0));
+    line-height: var(--lh-body);
+  }
+  .comments .comments__input:focus { border-color: var(--accent); }
+  .comments .comments__input[aria-invalid='true'] { border-color: #e5484d; }
+  .comments .comments__textarea { min-height: 120px; resize: vertical; }
+  .comments .comments__left {
+    margin: 0;
+    font-size: var(--step--2);
+    color: var(--ink-muted);
+  }
+  .comments .comments__left.is-low { color: var(--accent); }
+  .comments .comments__hp {
+    position: absolute;
+    left: -10000px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+  .comments .comments__actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--sp-3) var(--sp-4);
+  }
+  .comments .comments__status {
+    margin: 0;
+    flex: 1 1 14rem;
+    color: var(--ink-muted);
+    line-height: var(--lh-small);
+  }
+  .comments .comments__status:empty { display: none; }
+  .comments .comments__status.is-ok { color: #6daa45; }
+  .comments .comments__status.is-error { color: #ff8f8f; }
+  .comments .comments__fine {
+    margin: 0;
+    font-size: var(--step--2);
+  }
+  .comments .comments__note { margin: 0 0 var(--sp-4); }
+  .comments .comments__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: var(--sp-3);
+  }
+  .comments .comment {
+    max-width: none;
+    margin: 0;
+    padding: calc(var(--inset) - 1px);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    color: var(--ink);
+  }
+  .comments .comment.is-new { border-color: rgba(242, 104, 34, 0.55); }
+  .comments .comment__meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: var(--sp-1) var(--sp-3);
+    margin: 0 0 var(--sp-2);
+  }
+  .comments .comment__name {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    color: var(--ink-heading);
+    overflow-wrap: anywhere;
+  }
+  .comments .comment__date {
+    font-size: var(--step--1);
+    color: var(--ink-muted);
+  }
+  .comments .comment__body {
+    margin: 0;
+    max-width: var(--measure);
+    color: var(--ink);
+    line-height: var(--lh-body);
+    white-space: pre-line;
+    overflow-wrap: anywhere;
+  }
+  .comments .comment__report {
+    margin-top: var(--sp-2);
+    padding: 10px 0;
+    margin-bottom: -10px;
+    background: none;
+    border: 0;
+    color: var(--ink-muted);
+    font: inherit;
+    font-size: var(--step--2);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    cursor: pointer;
+    min-height: 44px;
+  }
+  .comments .comment__report:hover { color: var(--accent); }
+  .comments .comment__report:disabled { cursor: default; text-decoration: none; }
+  @media (max-width: 44.99em) {
+    .comments .comments__title { padding: var(--sp-3) var(--sp-4) var(--sp-3) calc(var(--inset) - 3px); }
+  }
+</style>

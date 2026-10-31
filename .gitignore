@@ -46,3 +46,7 @@ design-audit*-summary.txt
 # Talent video scans: intermediate frames, tiles and review sheets (rebuild with tools/talent_sources.py)
 research/build-database/tools/work/
 __pycache__/
+
+# wrangler (local Pages/D1 testing)
+.wrangler/
+.dev.vars

@@ -5,7 +5,7 @@ import Breadcrumbs from '../components/Breadcrumbs.astro';
 import SectionTag from '../components/SectionTag.astro';
 import AdSenseUnit from '../components/AdSenseUnit.astro';
 import YouTubeEmbed from '../components/YouTubeEmbed.astro';
-import GiscusComments from '../components/GiscusComments.astro';
+import Comments from '../components/Comments.astro';
 import { getAuthorUrl } from '../utils/author';
 import { postImage, srcsetAttr, HERO_SIZES } from '../utils/post-images';
 export interface Props {
@@ -215,7 +215,7 @@ const howToLd = howTo ? {
         </div>
       )}
 
-      <GiscusComments />
+      <Comments />
 
       <!-- 3. Explore More -->
       <hr style="margin: var(--sp-6) 0; border: none; border-top: 1px solid var(--border);" />

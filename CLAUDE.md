@@ -1,7 +1,8 @@
 # Working on Resurgence Builds
 
-Read AUTOMATION.md (daily runs), WORKFLOW.md (posting checklist) and DESIGN.md (layout rules) as well. The rules below
-come straight from the owner (Cory) and override anything older in those files.
+Read AUTOMATION.md (daily runs), WORKFLOW.md (posting checklist), DESIGN.md (layout rules) and COMMENTS.md (the
+comment system and its moderation) as well. The rules below come straight from the owner (Cory) and override anything
+older in those files.
 
 ## Accuracy
 

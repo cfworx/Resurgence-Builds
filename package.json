@@ -12,7 +12,8 @@
     "preview": "astro preview",
     "astro": "astro",
     "audit:indexation": "node scripts/audit-indexation.mjs",
-    "bump-patch": "node scripts/bump-patch.mjs"
+    "bump-patch": "node scripts/bump-patch.mjs",
+    "test:comments": "node --test tests/comments.test.mjs"
   },
   "dependencies": {
     "@astrojs/rss": "^4.0.18",

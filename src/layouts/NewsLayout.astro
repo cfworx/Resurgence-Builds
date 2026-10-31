@@ -3,7 +3,7 @@ import { tagHref } from '../utils/tag-href';
 import BaseLayout from './BaseLayout.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import SectionTag from '../components/SectionTag.astro';
-import GiscusComments from '../components/GiscusComments.astro';
+import Comments from '../components/Comments.astro';
 import { getAuthorUrl } from '../utils/author';
 import { postImage, srcsetAttr, HERO_SIZES } from '../utils/post-images';
 
@@ -134,7 +134,7 @@ const speakableLd = {
         </div>
       )}
 
-      <GiscusComments />
+      <Comments />
 
       <div class="share-box">
         <div>

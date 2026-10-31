@@ -6,13 +6,13 @@ import { GA4_ID } from '../data/site-config';
 <BaseLayout noAds title="Privacy Policy" description="Privacy Policy for Resurgence Builds: how we handle your data, cookies, and third-party advertising." breadcrumbs={[{ name: 'Privacy Policy', url: '/privacy/' }]}>
   <div class="container section content-width">
     <h1 class="heading-accent">Privacy Policy</h1>
-    <p style="color:var(--ink-muted);">Last updated: {GA4_ID ? 'October 26, 2026' : 'May 29, 2026'}</p>
+    <p style="color:var(--ink-muted);">Last updated: October 31, 2026</p>
     <div class="prose">
       <h2>Introduction</h2>
       <p>Resurgence Builds ("we," "our," or "us") operates the website resurgencebuilds.com. This Privacy Policy explains how we collect, use, and protect your information when you visit our site.</p>
 
       <h2>Information We Collect</h2>
-      <p>We do not directly collect personal data or require user accounts. However, third-party services integrated into our site may collect certain information automatically, including:</p>
+      <p>We don't require user accounts. The only information we collect ourselves is what you choose to post in a comment (see <a href="#comments">Comments</a> below). Third-party services integrated into our site may collect certain information automatically, including:</p>
       <ul>
         <li>IP address and general location data (via {GA4_ID ? 'Cloudflare, Google AdSense and Google Analytics' : 'Cloudflare and Google AdSense'})</li>
         <li>Browser type, device type, and operating system</li>
@@ -56,13 +56,30 @@ import { GA4_ID } from '../data/site-config';
         </>
       )}
 
+      <h2 id="comments">Comments</h2>
+      <p>Articles, builds and guides have an open comment section: type a name and a comment, no account needed. Here's what that involves.</p>
+      <ul>
+        <li><strong>What's public:</strong> the name you type, your comment and the date. Use a nickname if you like; don't post personal details.</li>
+        <li><strong>What we store privately:</strong> the page, the time, and a scrambled code made from your IP address (a salted hash), used only to stop spam and limit how fast one person can post. We never store or show the IP address itself.</li>
+        <li><strong>In your browser:</strong> the name you used is remembered in your browser's local storage so you don't have to type it again. It isn't a cookie and isn't sent anywhere until you post.</li>
+        <li><strong>Moderation:</strong> an automatic filter (Cloudflare Workers AI) checks each comment as it's posted, and we review new and reported comments every day. Removed comments are deleted for good within 30 days.</li>
+        <li><strong>Removal requests:</strong> email <a href="mailto:p1@cfworx.tech">p1@cfworx.tech</a> with the page and the name you used, and we'll delete your comment.</li>
+      </ul>
+      <h3>Comment rules</h3>
+      <ul>
+        <li>Keep it about the game, the build or the article. Disagree all you want; attack ideas, not people.</li>
+        <li>No hate speech, harassment, threats, sexual content or personal information about anyone.</li>
+        <li>No spam, ads, links or email addresses (links are blocked automatically), and no pretending to be the site, Ubisoft or someone else.</li>
+        <li>No cheats, exploits for sale, account selling or anything that breaks Ubisoft's terms.</li>
+      </ul>
+      <p>We remove comments that break these rules and block repeat offenders. You can flag a comment with its Report button: we look at every report, and a comment that several people report is hidden until we do.</p>
+
       <h2>Third-Party Services</h2>
       <ul>
-        <li><strong>Cloudflare:</strong> Hosting, CDN, and security</li>
+        <li><strong>Cloudflare:</strong> Hosting, CDN, security, and comment storage and filtering (Cloudflare D1 and Workers AI)</li>
         <li><strong>Google AdSense:</strong> Advertising (<a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener noreferrer">Google's privacy policy</a>)</li>
         {GA4_ID && <li><strong>Google Analytics:</strong> Visit counts and page reports (<a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google's privacy policy</a>)</li>}
         <li><strong>Google Fonts:</strong> Typography</li>
-        <li><strong>Giscus:</strong> Comments on build and guide pages are powered by Giscus, which uses GitHub Discussions. When you post a comment, your interaction is processed through GitHub. GitHub may collect your IP address, browser information, and other data as described in their <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener noreferrer">privacy policy</a>.</li>
       </ul>
 
       <h2>GDPR Rights (EU Users)</h2>
@@ -81,7 +98,7 @@ import { GA4_ID } from '../data/site-config';
       <p>We do not sell personal information. Third-party advertising partners (Google AdSense) may collect data for interest-based advertising as described above. We honor Do Not Track browser signals where technically feasible. California residents may request details about data we hold by contacting us.</p>
 
       <h2>Data Security</h2>
-      <p>We serve all content over HTTPS with HSTS enabled. We do not store passwords, payment information, or sensitive personal data. Advertising data is processed by Google under their own security standards.</p>
+      <p>We serve all content over HTTPS with HSTS enabled. We do not store passwords, payment information, or sensitive personal data. Comments are stored in Cloudflare's database with IP addresses reduced to a salted hash. Advertising data is processed by Google under their own security standards.</p>
 
       <h2>Children's Privacy</h2>
       <p>Our site is not directed at children under 13. We do not knowingly collect data from children. Google AdSense is configured to comply with COPPA requirements.</p>

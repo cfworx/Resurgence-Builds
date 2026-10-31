@@ -1,0 +1,17 @@
+# Cloudflare Pages settings for resurgencebuilds.com (Pages project "resurgence-builds").
+# With this file in the repo, Pages takes the settings below from here instead of the dashboard (the dashboard shows
+# them read-only). The build command and branch settings stay in the dashboard; Node's version comes from .nvmrc.
+# The bindings are for the comment system in functions/api/comments (see COMMENTS.md).
+name = "resurgence-builds"
+pages_build_output_dir = "./dist"
+compatibility_date = "2026-04-01"
+
+# Comments live in this D1 database (schema: db/schema.sql).
+[[d1_databases]]
+binding = "DB"
+database_name = "resurgence-comments"
+database_id = "c9f8a76c-5fa4-43b1-8277-c48c527c070f"
+
+# Workers AI, for the safety filter that checks each new comment.
+[ai]
+binding = "AI"
