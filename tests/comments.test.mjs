@@ -141,7 +141,8 @@ test('applyVerdict: hold hate and sexual content, flag the rest, mark unchecked'
   assert.deepEqual(applyVerdict(parseGuard({ response: '\n\nsafe' }), 'visible', null), { state: 'visible', flags: null, note: null });
   assert.deepEqual(applyVerdict(parseGuard({ response: '\n\nunsafe\nS10' }), 'visible', null), { state: 'held', flags: 'ai:S10', note: 'Held by the safety filter' });
   assert.deepEqual(applyVerdict(parseGuard({ response: '\n\nunsafe\nS12' }), 'visible', null).state, 'held');
-  assert.deepEqual(applyVerdict(parseGuard({ response: '\n\nunsafe\nS7' }), 'visible', null), { state: 'visible', flags: 'ai:S7', note: null });
+  assert.deepEqual(applyVerdict(parseGuard({ response: '\n\nunsafe\nS1' }), 'visible', null), { state: 'visible', flags: 'ai:S1', note: null });
+  assert.deepEqual(applyVerdict(parseGuard({ response: '\n\nunsafe\nS7' }), 'visible', null).state, 'held');
   assert.deepEqual(applyVerdict(parseGuard({ response: '\n\nunsafe\nS1,S10' }), 'visible', null).state, 'held');
   assert.deepEqual(applyVerdict({ safe: false, categories: [] }, 'visible', null).state, 'held');
   assert.deepEqual(applyVerdict(null, 'visible', null), { state: 'visible', flags: 'ai:unchecked', note: null });

@@ -35,9 +35,11 @@ hand. It replaced the GitHub (Giscus) comments on October 31, 2026.
 - **Privacy:** IP addresses are never stored. Rate limits use a salted SHA-256 hash; the salt is created in the
   database on first use (table `settings`) and never appears in the repo.
 - **Safety filter:** each new comment goes through Cloudflare Workers AI (Llama Guard 3). Hate (S10), sexual content
-  (S12), sex crimes (S3) and child exploitation (S4) are held for review instead of posting. Other categories (violence,
-  weapons and so on misfire on a shooter's fan site) only set the `flags` column for the daily review, and the comment
-  still shows. If the filter is down or slow, the comment posts and the daily review checks it.
+  (S12), sex crimes (S3), child exploitation (S4), personal information (S7) and self-harm (S11) are held for review
+  instead of posting. Other categories (violence and weapons misfire on a shooter's fan site) only set the `flags`
+  column for the daily review, and the comment still shows. The filter usually answers in under a second but sometimes
+  takes much longer, so a visitor waits at most 1.5 seconds: a later answer is applied in the background and hides the
+  comment if it has to. No answer at all leaves `ai:unchecked` for the daily review.
 - **Reports:** each visitor can report a comment once. A report sends it back into the daily review, and 3 reports hide
   a comment the review hasn't approved yet. Approved comments can't be hidden by reports, only re-reviewed.
 - **Blocks:** visitors listed in `blocked_visitors` can still post, but their comments are held for review.
@@ -49,7 +51,7 @@ hand. It replaced the GitHub (Giscus) comments on October 31, 2026.
 | `status` | `visible` (on the site), `held` (hidden until reviewed: safety filter, 3 reports or a blocked visitor), `removed` |
 | `approved` | 1 once the daily review approved it |
 | `reviewed_at` | last review; `NULL` means it's waiting for one |
-| `flags` | automatic notes, e.g. `ai:S1` |
+| `flags` | automatic notes: `ai:S1` (what the filter flagged), `ai:pending` (still checking), `ai:unchecked` (no answer) |
 | `moderation_note` | why it was held or removed |
 
 ## The daily review
