@@ -1,6 +1,6 @@
 {
-  "_about": "On-screen readings from creator videos that add to or confirm the in-game Build-Making Database record. Checked 2026-10-29 from frames captured in the browser; timestamps point at the frame.",
-  "checked": "2026-10-29",
+  "_about": "On-screen readings from creator videos that add to or confirm the in-game Build-Making Database record. Checked 2026-10-29 from frames captured in the browser; timestamps point at the frame. Rows read from the owner's screenshots say so in the note.",
+  "checked": "2026-10-31",
   "readings": [
     {
       "topic": "Specialization focus",
@@ -353,6 +353,28 @@
       "timestamp": "43:05",
       "url": "https://www.youtube.com/watch?v=tn4ME4MVGyY&t=2585s",
       "note": ""
+    },
+    {
+      "topic": "OS Protocol talent upgrades",
+      "item": "Close Quarters Menace (os-43)",
+      "reading": "Level 50 with four of five upgrade diamonds filled; he reads +27% Skill Intensity and Weapon Damage with enemies within 20 meters. The database card (0/5 upgrades) shows +15%, so that is four steps of +20% of the base (15 x 1.8 = 27).",
+      "creator": "GGReborn",
+      "videoId": "NBB6j05PvsE",
+      "videoDate": "2026-10-31",
+      "timestamp": "",
+      "url": "https://www.youtube.com/watch?v=NBB6j05PvsE",
+      "note": "Diamonds from the owner's screenshot of his loadout screen; the 27% is from his narration. Timestamp not recorded."
+    },
+    {
+      "topic": "Loadout screen",
+      "item": "Gear tiles",
+      "reading": "Each equipped gear tile shows its gear set's emblem behind the piece: Quick Draw on his mask, body armor and backpack, Phalanx Attack on his gloves, holster and knee pads, the sets he names for those pieces.",
+      "creator": "GGReborn",
+      "videoId": "NBB6j05PvsE",
+      "videoDate": "2026-10-31",
+      "timestamp": "",
+      "url": "https://www.youtube.com/watch?v=NBB6j05PvsE",
+      "note": "From the owner's screenshot. The emblems match the Build-Making Database's set icons. Timestamp not recorded."
     }
   ]
 }

@@ -31,7 +31,7 @@ NOTE_FONT = Font(name=FONT, size=9, italic=True, color='555555')
 THIN = Side(style='thin', color='D0D4D8')
 RARITY_FILL = {'High-End': 'FCE7B8', 'Superior': 'E7D8F7', 'Specialized': 'D6E6FA'}
 LONG = {'Talent', 'Talent Text', '2 Set Pieces', '3 Set Pieces', 'Description', 'Note', '2-Piece', '3-Piece', '4-Piece',
-        'Gear Sets Note', 'What it is'}
+        'Gear Sets Note', 'What it is', 'Reading'}
 
 
 def load(name):
@@ -272,6 +272,21 @@ def main(out):
     sheet(wb, 'Armory Gear', ['Name', 'Slot', 'Armory Tier', 'Season', 'Gear Sets', 'Set Family', 'Gear Sets Note',
                               'Recording', 'Seconds'], ag)
 
+    # ---- What the database cards don't show: creator readings and the recalibration fix
+    cr = [[r['Topic'], r['Item'], r['Reading'], r['Creator'], r['Video Date'], r['Timestamp'], r['URL'], r['Note']]
+          for r in rows_csv('creator-readings.csv')]
+    sheet(wb, 'Creator Readings', ['Topic', 'Item', 'Reading', 'Creator', 'Video Date', 'Timestamp', 'URL', 'Note'], cr,
+          widths={'URL': 44})
+    rf = []
+    for fx in load('recalibration-fixes.json')['fixes']:
+        seen = {s['weapon']: s for s in fx.get('seenInGame', [])}
+        for w in fx['weapons']:
+            s = seen.get(w['name'], {})
+            rf.append([w['name'], fx['patch'], fx['date'], ', '.join(s.get('outsidePool', [])), s.get('where', ''),
+                       s.get('note', '')])
+    sheet(wb, 'Recalibration Fixes', ['Weapon', 'Fixed In', 'Date', 'Seen Outside Its Pool', 'Where', 'Note'], rf,
+          widths={'Where': 50})
+
     # ---- Read Me
     r = readme
     r.column_dimensions['A'].width = 28
@@ -302,6 +317,11 @@ def main(out):
         ('Bonus Attributes', 'The 24 Weapon/Gear Bonus Attributes with the card\'s description.'),
         ('Armory Weapons', 'Every weapon in the Armory (86 standard, 6 exotic) with its tier page and damage type.'),
         ('Armory Gear', 'Every gear piece in the Armory (72) with its tier page and the sets it carries.'),
+        ('Creator Readings', 'On-screen values from creator videos and the owner\'s screenshots that the database cards don\'t '
+                             'show: rank II values, upgraded and level 50 OS Protocols, inventory counters and more, with the '
+                             'video and timestamp.'),
+        ('Recalibration Fixes', 'Weapons whose recalibration pulled talents from the wrong pool until a patch fixed it, so older '
+                                'copies can carry a talent outside their pool.'),
     ]
     for i, (tab, what) in enumerate(tabs, 5):
         r.cell(row=i, column=1, value=tab).font = BOLD

@@ -2,7 +2,7 @@
 title: "Stats Explained: What Every Stat Does"
 category: "Beginner"
 publishDate: 2026-06-02
-lastUpdated: 2026-10-28T12:00:00Z
+lastUpdated: 2026-10-31T12:00:00Z
 tags: ["stats", "firepower", "engineering", "toughness", "build-guide"]
 description: "Division Resurgence stats explained: Firepower, Toughness, Engineering, crit, multi-shot, the 80% damage reduction cap and how talents scale."
 featuredImage: "/images/guides/division-resurgence-stats-explained-shooting-range-1200.webp"
@@ -46,11 +46,13 @@ The game's own tooltips use Firepower, Toughness and Engineering: Explosive Roun
 - **Toughness medics heal off their Health.** On AgentHuntzman's Toughness Field Medic in May, 0.46% of his Health was converted into each heal, so more Health meant bigger heals.
 - **Focus beats balance.** AgentHuntzman's most repeated point: builds that spread across all three feel weak. Pick your specialization's stat and stack it. Our [specialization guide](/guides/which-specialization-to-pick/) says which one each focus uses.
 
-## The Attributes screen, section by section
+## The Attributes screen
 
-AgentHuntzman calls the character Attributes screen "your best friend throughout the whole game," and it's split into three sections:
+AgentHuntzman calls the character Attributes screen "your best friend throughout the whole game." It's the first of four tabs on the character screen (Attributes, Specialization Focus, Combat Skills and Agent's Identity), and its first list is **Offensive Attributes**: Damage Bonus, Weapon Critical Hit Chance and Damage, Weapon Multi-Shot Chance, Headshot Damage, Weapon Damage, Rate of Fire, Reload Speed, Magazine Size, Skill Critical Chance and Damage, and more as you scroll. The icons down the right side open the other lists. That's the screen as GGReborn showed it on October 31.
 
-| Section | What's in it | Who should live here |
+By what they do, the stats fall into three groups:
+
+| Group | What's in it | Who should live here |
 |---|---|---|
 | **Weapon** | Weapon damage, Critical Hit Chance and Damage, Headshot Damage, Rate of Fire, Reload Speed, Magazine Size, Optimal Range, Accuracy, Stability, Multi-Shot Chance, damage to elites | Gun builds |
 | **Skill** | Skill damage, Skill Intensity, Duration, Radius, Cooldown Recovery, Skill Critical Chance and Damage, Skill Multi-Shot, Signature Ability Charge Efficiency | Skill and healer builds |
@@ -111,6 +113,7 @@ OS Protocols grow two ways, and Ubisoft's own patch notes show the pattern for o
 - **Applied Demolition** (Season 1 Phase 3 buff): 43.2%, 51.84%, 60.48%, 69.12%, 77.76%, then 86.2% (as printed; the pattern says 86.4) of Skill Critical Damage.
 - **Dominating Presence** (Season 2 Phase 2): maximum scaling reduced to 35, 42, 49, 56, 63 and 70%.
 - **Recursive Treatment** on screen: TikTokAndy's copy with two of five upgrade diamonds reads +28% Skill Intensity on a +20% base, two steps of 4 (his October 10 video).
+- **Close Quarters Menace:** GGReborn's copy shows four of five upgrade diamonds, and he reads 27% on a 15% base, four steps of 3 (his October 31 video).
 
 **Levels (up to 50).** Creator readings say a protocol's percentage main stat doubles by level 50, and the on-screen ones in between fit a simple ladder: **+10% of the base every 5 levels**. That's our reading of the screenshots below, not a rule Ubisoft has published:
 
@@ -159,6 +162,7 @@ For browsing outside the game, our [database](/database/) collects gear sets, ta
 - [TikTokAndy: Toxic Pharma Sucks...PvP Is Even Worse (YouTube, October 15, 2026)](https://www.youtube.com/watch?v=f20v8_cv9Ls)
 - Our [Muscular Nurse build](/builds/muscular-nurse-combat-medicine-build-nadie/) (Nadie's Precise Support II screenshots)
 - [TikTokAndy: Vanguard - Commando With A Lightweight M4 (YouTube, October 27, 2026)](https://www.youtube.com/watch?v=RYtZyN_0P0Y) (Precise Support II tooltip at 1:00, Explosive Round at level 45 at 6:47)
+- [GGReborn: BEST Vanguard DB Spamming Build! (YouTube, October 31, 2026)](https://www.youtube.com/watch?v=NBB6j05PvsE) (the Attributes screen; Close Quarters Menace with four upgrades)
 - [@TheDivMobile: June 26, 2026 server hotfix](https://x.com/TheDivMobile/status/2070483985642197252) (80% damage reduction cap)
 - [Ubisoft Help Center: Patch Note, Season 1 Phase 3](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2521-patch-note---season-1-phase-3/) (Applied Demolition values)
 - [Ubisoft Help Center: Patch Note, Season 2 Phase 2](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2566-patch-note---season-2-phase-2/) (Strained, Dominating Presence)
