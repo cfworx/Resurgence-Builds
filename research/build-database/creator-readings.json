@@ -355,15 +355,15 @@
       "note": ""
     },
     {
-      "topic": "OS Protocol talent upgrades",
+      "topic": "OS Protocol, level 50 and talent upgrades",
       "item": "Close Quarters Menace (os-43)",
-      "reading": "Level 50 with four of five upgrade diamonds filled; he reads +27% Skill Intensity and Weapon Damage with enemies within 20 meters. The database card (0/5 upgrades) shows +15%, so that is four steps of +20% of the base (15 x 1.8 = 27).",
+      "reading": "Level 50 card. Talent at four of five upgrade diamonds: 'Grants +27% Skill Intensity and Weapon Damage when there are enemies within 20 meters' (database card at 0/5: +15%), four steps of +20% of the base (15 x 1.8 = 27). Main stat Firepower +36.00% (database level 1: +18.00%); Firepower +358, All Weapon Damage +286, Health +9,402 (level 1: +77, +62, +2,043).",
       "creator": "GGReborn",
       "videoId": "NBB6j05PvsE",
       "videoDate": "2026-10-31",
       "timestamp": "",
       "url": "https://www.youtube.com/watch?v=NBB6j05PvsE",
-      "note": "Diamonds from the owner's screenshot of his loadout screen; the 27% is from his narration. Timestamp not recorded."
+      "note": "From the owner's screenshots of the protocol card. Timestamp not recorded."
     },
     {
       "topic": "Loadout screen",
@@ -375,6 +375,83 @@
       "timestamp": "",
       "url": "https://www.youtube.com/watch?v=NBB6j05PvsE",
       "note": "From the owner's screenshot. The emblems match the Build-Making Database's set icons. Timestamp not recorded."
+    },
+    {
+      "topic": "OS Protocol, level 50",
+      "item": "Assault Charge (os-32)",
+      "reading": "Level 50 card, talent at 0/5 upgrades: the talent text matches the database (+30% Firepower and +20% Rate of Fire for 20 seconds after deploying the Signature Ability). Main stat Weapon Critical Hit Chance +36.00% (level 1: +18.00%); Firepower +447, All Weapon Damage +358, Health +11,753 (level 1: +97, +77, +2,554).",
+      "creator": "GGReborn",
+      "videoId": "NBB6j05PvsE",
+      "videoDate": "2026-10-31",
+      "timestamp": "",
+      "url": "https://www.youtube.com/watch?v=NBB6j05PvsE",
+      "note": "From the owner's screenshot of the protocol card. Timestamp not recorded."
+    },
+    {
+      "topic": "Backpack talent, rank II",
+      "item": "Inspiration II",
+      "reading": "Grants +42% Rate of Fire when Skills are deployed (rank I 30%).",
+      "creator": "GGReborn",
+      "videoId": "NBB6j05PvsE",
+      "videoDate": "2026-10-31",
+      "timestamp": "",
+      "url": "https://www.youtube.com/watch?v=NBB6j05PvsE",
+      "note": "Tooltip on the All Hazards Nitro Backpack's blueprint (Gear Details) screen; owner's screenshot. Timestamp not recorded."
+    },
+    {
+      "topic": "Gear Details (blueprint) screen",
+      "item": "All Hazards Nitro Backpack (T2)",
+      "reading": "The talent grid lists the piece's talents at rank I and rank II (24 tiles), and they are the same 12 our Source lists give it: Simple Pleasures, Hidden Impact, Prime Engineer, Overwatch, Combat Inspiration, Emergency Measures, Intense Performance, Inspiration, Painkillers, Injured Taunt, Rescue Protection and Double-edged Bullet.",
+      "creator": "GGReborn",
+      "videoId": "NBB6j05PvsE",
+      "videoDate": "2026-10-31",
+      "timestamp": "",
+      "url": "https://www.youtube.com/watch?v=NBB6j05PvsE",
+      "note": "Icons matched one by one against our talent icons; owner's screenshots. Timestamp not recorded."
+    },
+    {
+      "topic": "Skill mod combo, 3-piece",
+      "item": "Tactical Loop (smc-70)",
+      "reading": "Up to 16 stacks (database lowest tier: 8) of +0.30 s at a 10% chance per hit, with a 15 s cooldown at max stacks. 2-piece 4.0% Skill Cooldown Recovery (top of 2.0~4.0). His set: two gold pieces and one purple; the firmware shows 4 upgrade diamonds.",
+      "creator": "GGReborn",
+      "videoId": "NBB6j05PvsE",
+      "videoDate": "2026-10-31",
+      "timestamp": "",
+      "url": "https://www.youtube.com/watch?v=NBB6j05PvsE",
+      "note": "Owner's screenshots of the firmware card. Timestamp not recorded."
+    },
+    {
+      "topic": "Skill mod combo, 3-piece",
+      "item": "Optimized Armor (smc-63) and Field Supplies (smc-66)",
+      "reading": "Three purple pieces with 5 upgrade diamonds each read the database's lowest-tier 3-piece text (Optimized Armor +3.20% Damage Reduction and a 4.80% chance to restore 1 bullet; Field Supplies 6% Health and 6.40% of the magazine) and the bottom of the 2-piece range (+4.0% Reload Speed of 4.0~8.0).",
+      "creator": "GGReborn",
+      "videoId": "NBB6j05PvsE",
+      "videoDate": "2026-10-31",
+      "timestamp": "",
+      "url": "https://www.youtube.com/watch?v=NBB6j05PvsE",
+      "note": "Owner's screenshots of the firmware and software cards. Timestamp not recorded."
+    },
+    {
+      "topic": "Weapon mod",
+      "item": "Shotgun Extended Magazine",
+      "reading": "Level 20 card: 'An extended magazine for Shotguns. Increases the Magazine Size of Shotguns by 30.0%.' Power Score 458, Toughness +65; attribute bonuses Weapon Damage +3.90% and Engineering +48. His Magazine slot list also shows another shotgun magazine mod with different (three-shell) art.",
+      "creator": "GGReborn",
+      "videoId": "NBB6j05PvsE",
+      "videoDate": "2026-10-31",
+      "timestamp": "",
+      "url": "https://www.youtube.com/watch?v=NBB6j05PvsE",
+      "note": "Owner's screenshot of the mod card. Timestamp not recorded."
+    },
+    {
+      "topic": "Gear attribute display",
+      "item": "Skill Cooldown Recovery",
+      "reading": "On his T2 \"Neptune\" Protection Gloves it reads -4.61%, with a crossed tools icon beside it and a nearly full roll bar.",
+      "creator": "GGReborn",
+      "videoId": "NBB6j05PvsE",
+      "videoDate": "2026-10-31",
+      "timestamp": "",
+      "url": "https://www.youtube.com/watch?v=NBB6j05PvsE",
+      "note": "Owner's screenshot of the gear card. What the sign and icon mean isn't confirmed. Timestamp not recorded."
     }
   ]
 }

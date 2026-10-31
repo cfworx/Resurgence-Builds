@@ -64,9 +64,10 @@ formulas) is built by `tools/make_workbook.py OUT.xlsx`.
 - `armory-gear.json` / `.csv`: every gear piece in the Armory (72: 12 each for holster, gloves, backpack, knee pads, body armor
   and mask), with its tier page and the gear sets it can roll (`gearSets`), plus the piece family (`gearSetFamily`, A to D)
   it belongs to.
-- `creator-readings.json` / `.csv`: 34 on-screen readings from creator videos (checked 2026-10-31) that the database
+- `creator-readings.json` / `.csv`: 41 on-screen readings from creator videos (checked 2026-10-31) that the database
   screens don't show: rank II talent values, the top tier of three skill mod sets (the database lists the lowest), level 50
-  OS Protocols and a talent upgrade step, how a loadout screen marks each piece's gear set, Tactical Augmentation Module
+  OS Protocols and talent upgrade steps, a weapon mod card, a gear blueprint's talent grid, how a loadout screen marks each
+  piece's gear set, Tactical Augmentation Module
   tracks per gear piece, inventory counters, focus core stats, and activity rules. Each row has the creator, video,
   timestamp and a link to the frame (rows read from the owner's screenshots have no timestamp and say so).
 - `weapon-talent-sources.json` / `.csv`: every weapon each of the 67 standard weapon talents can roll on, in the order the

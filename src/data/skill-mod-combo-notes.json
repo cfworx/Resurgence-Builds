@@ -36,6 +36,10 @@
       {
         "title": "Milkshake Machine: Strawberry Milkshake LMG (as the defensive alternative)",
         "url": "/builds/milkshake-machine-strawberry-milkshake-lmg-build/"
+      },
+      {
+        "title": "Four-Shell Double Barrel (GGReborn), as the Rate of Fire swap",
+        "url": "/builds/four-shell-double-barrel-vanguard-build-ggreborn/"
       }
     ]
   },
@@ -139,6 +143,15 @@
         "date": "2026-10-14",
         "note": "Nerfed: additional damage decreased from 25% to 5% of Max Health (top value), to stop it matching DPS builds while tanking, which Ubisoft called an issue in PvP.",
         "sourceUrl": "https://www.reddit.com/r/thedivisionresurgence/comments/1x5t0uj/14102026_patch_notes/"
+      }
+    ]
+  },
+  "tactical-loop": {
+    "usageNotes": "Tactical Loop keeps Tactical Link running longer: while it's active, every hit has a 10% chance to add 0.30 seconds, and once the stacks max out the effect goes on a 15-second cooldown. Every hit is a roll, so the more you hit during the link, the longer it lasts. The database card shows the set's lowest tier, 8 stacks; GGReborn's set on October 31, two gold pieces and one purple, reads up to 16 stacks and the top of the 2-piece range, 4.0% Skill Cooldown Recovery. He recommends it when you plan on long stretches of shooting with your signature ability. If the firing rate is the problem rather than the uptime, he points to Bugle Call instead, which trades the extension for +14.40% Rate of Fire, Damage Reduction and Movement Speed for 15 seconds.",
+    "metaBuilds": [
+      {
+        "title": "Four-Shell Double Barrel (GGReborn)",
+        "url": "/builds/four-shell-double-barrel-vanguard-build-ggreborn/"
       }
     ]
   }

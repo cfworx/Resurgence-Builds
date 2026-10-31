@@ -100,6 +100,7 @@ Talents come in ranks, written as "II" (or "2") after the name. Ubisoft doesn't 
 | Still Alive | 30% of missing Health | 42% (TikTokAndy) | 1.4x |
 | Torrential Downpour | +22.50% Engineering | +31.50% (TikTokAndy) | 1.4x |
 | Slaughter Fortitude | +12% Armor per stack | +18% (TikTokAndy's tooltip, September 16) | 1.5x |
+| Inspiration | +30% Rate of Fire when Skills are deployed | +42% (the game's blueprint screen, on GGReborn's All Hazards Nitro Backpack, October 31) | 1.4x |
 | Ammo Supply | 54% chance | 65% (TikTokAndy's tooltip, September 16) | 1.2x |
 
 AgentHuntzman shows the same thing on another talent in the Build Database: Blood for Blood's bonus damage goes from 0.50% of max Health to 0.70% at level two. The last two rows are the exceptions: both are read straight off TikTokAndy's tooltips, and they come out at 1.5 and 1.2 times our rank I numbers. Either those talents scale differently or our rank I captures are off, and we're re-checking them. So when you see a II talent on a drop, expect about 40% more of whatever the base version does, then check the tooltip. Our database lists base (rank I) text unless it says otherwise.
@@ -113,7 +114,7 @@ OS Protocols grow two ways, and Ubisoft's own patch notes show the pattern for o
 - **Applied Demolition** (Season 1 Phase 3 buff): 43.2%, 51.84%, 60.48%, 69.12%, 77.76%, then 86.2% (as printed; the pattern says 86.4) of Skill Critical Damage.
 - **Dominating Presence** (Season 2 Phase 2): maximum scaling reduced to 35, 42, 49, 56, 63 and 70%.
 - **Recursive Treatment** on screen: TikTokAndy's copy with two of five upgrade diamonds reads +28% Skill Intensity on a +20% base, two steps of 4 (his October 10 video).
-- **Close Quarters Menace:** GGReborn's copy shows four of five upgrade diamonds, and he reads 27% on a 15% base, four steps of 3 (his October 31 video).
+- **Close Quarters Menace** on screen: GGReborn's level 50 card shows four of five upgrade diamonds and +27% on a 15% base, four steps of 3 (his October 31 video).
 
 **Levels (up to 50).** Creator readings say a protocol's percentage main stat doubles by level 50, and the on-screen ones in between fit a simple ladder: **+10% of the base every 5 levels**. That's our reading of the screenshots below, not a rule Ubisoft has published:
 
@@ -123,8 +124,10 @@ OS Protocols grow two ways, and Ubisoft's own patch notes show the pattern for o
 | Augmented Lethality | +18% Firepower | 36% Firepower on the copy he'd used "for a very long time" | 2x | TikTokAndy, September 30 |
 | Recursive Treatment | +18% Engineering | 32.40% at level 42 (on screen) | 1.8x | TikTokAndy, October 10 |
 | Explosive Round | +22.50% Firepower | 42.75% at level 45 (on screen), "45" at max | 1.9x | TikTokAndy, October 27 |
+| Close Quarters Menace | +18% Firepower | 36% at level 50 (on screen) | 2x | GGReborn, October 31 |
+| Assault Charge | +18% Weapon Critical Hit Chance | 36% at level 50 (on screen) | 2x | GGReborn, October 31 |
 
-The flat attributes climb much faster than the percentage: the same level 42 Recursive Treatment shows +285 Engineering against the +77 in our level 1 data, about 3.7 times, and AgentHuntzman's level 50 Pressing Matter shows +358 Engineering, about 4.6 times.
+The flat attributes climb much faster than the percentage: the same level 42 Recursive Treatment shows +285 Engineering against the +77 in our level 1 data, about 3.7 times, and AgentHuntzman's level 50 Pressing Matter shows +358 Engineering, about 4.6 times. GGReborn's level 50 protocols land on the same 4.6: Close Quarters Menace shows +358 Firepower (+77 here) and Assault Charge +447 (+97).
 
 So when you compare two protocols, compare them at the same level and upgrade step, or you're comparing a puppy to a dog. The [OS Protocol database](/database/os-protocols/) lists base values; the [tier list](/tier-list/os-protocols/) ranks them from creator results.
 
@@ -162,7 +165,7 @@ For browsing outside the game, our [database](/database/) collects gear sets, ta
 - [TikTokAndy: Toxic Pharma Sucks...PvP Is Even Worse (YouTube, October 15, 2026)](https://www.youtube.com/watch?v=f20v8_cv9Ls)
 - Our [Muscular Nurse build](/builds/muscular-nurse-combat-medicine-build-nadie/) (Nadie's Precise Support II screenshots)
 - [TikTokAndy: Vanguard - Commando With A Lightweight M4 (YouTube, October 27, 2026)](https://www.youtube.com/watch?v=RYtZyN_0P0Y) (Precise Support II tooltip at 1:00, Explosive Round at level 45 at 6:47)
-- [GGReborn: BEST Vanguard DB Spamming Build! (YouTube, October 31, 2026)](https://www.youtube.com/watch?v=NBB6j05PvsE) (the Attributes screen; Close Quarters Menace with four upgrades)
+- [GGReborn: BEST Vanguard DB Spamming Build! (YouTube, October 31, 2026)](https://www.youtube.com/watch?v=NBB6j05PvsE) (the Attributes screen; Close Quarters Menace and Assault Charge at level 50; Inspiration II)
 - [@TheDivMobile: June 26, 2026 server hotfix](https://x.com/TheDivMobile/status/2070483985642197252) (80% damage reduction cap)
 - [Ubisoft Help Center: Patch Note, Season 1 Phase 3](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2521-patch-note---season-1-phase-3/) (Applied Demolition values)
 - [Ubisoft Help Center: Patch Note, Season 2 Phase 2](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2566-patch-note---season-2-phase-2/) (Strained, Dominating Presence)
