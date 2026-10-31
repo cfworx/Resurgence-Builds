@@ -1,5 +1,5 @@
 // /api/comments/report: a visitor flags a comment (POST {"id": "..."}). Each visitor counts once per comment.
-// A reported comment goes back into the daily review; one the review hasn't approved yet is hidden after
+// A reported comment goes back into the review; one the review hasn't approved yet is hidden after
 // LIMITS.reportsToHide reports. See COMMENTS.md.
 
 import { ID_RE, LIMITS, allowedOrigin, isoMinutesAgo, json, readJson, visitorHash } from '../../../lib/comments.mjs';
@@ -20,7 +20,7 @@ export async function onRequestPost({ request, env }) {
       .bind(ipHash, isoMinutesAgo(now, 1440))
       .first('n');
     if (recent >= LIMITS.reportsDayMax) {
-      return json(429, { error: 'Thanks, that\'s plenty of reports for today. We review every comment daily.' });
+      return json(429, { error: 'Thanks, that\'s plenty of reports for today. We review comments twice a day.' });
     }
 
     const found = await env.DB.prepare("SELECT id FROM comments WHERE id = ?1 AND status != 'removed'").bind(id).first('id');

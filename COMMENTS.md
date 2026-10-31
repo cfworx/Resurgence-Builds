@@ -9,11 +9,11 @@ hand. It replaced the GitHub (Giscus) comments on October 31, 2026.
 | Piece | Where |
 |---|---|
 | Comment box (form, list, Report buttons) | `src/components/Comments.astro`, used by the Build, Guide and News layouts. It moves itself above the article's "Sources" or "Related Reading" heading. |
-| API | `functions/api/comments/index.js` (`GET ?path=` lists a page's comments, `POST` adds one) and `functions/api/comments/report.js` (`POST {"id"}` reports one). Cloudflare Pages Functions. |
+| API | `functions/api/comments/index.js` (`GET ?path=&page=` lists a page's comments, 10 at a time, `POST` adds one) and `functions/api/comments/report.js` (`POST {"id"}` reports one). Cloudflare Pages Functions. |
 | Shared checks | `lib/comments.mjs` (cleanup, limits, link check, hashing, safety filter). Unit tests: `npm run test:comments`. |
 | Database | Cloudflare D1 `resurgence-comments`, id `c9f8a76c-5fa4-43b1-8277-c48c527c070f`. Schema: `db/schema.sql`. |
 | Bindings | `wrangler.toml`: `DB` (the D1 database) and `AI` (Workers AI). With this file in the repo, Pages takes these settings from it, not the dashboard. |
-| Daily review | Scheduled task "Resurgence Builds comment review" (below). |
+| Review | Scheduled task "Resurgence Builds comment review", twice a day (below). |
 | Public rules and privacy | `/privacy/#comments` (`src/pages/privacy.astro`) and the DMCA page. |
 
 ## How it's protected
@@ -37,10 +37,10 @@ hand. It replaced the GitHub (Giscus) comments on October 31, 2026.
 - **Safety filter:** each new comment goes through Cloudflare Workers AI (Llama Guard 3). Hate (S10), sexual content
   (S12), sex crimes (S3), child exploitation (S4), personal information (S7) and self-harm (S11) are held for review
   instead of posting. Other categories (violence and weapons misfire on a shooter's fan site) only set the `flags`
-  column for the daily review, and the comment still shows. The filter usually answers in under a second but sometimes
+  column for the review, and the comment still shows. The filter usually answers in under a second but sometimes
   takes much longer, so a visitor waits at most 1.5 seconds: a later answer is applied in the background and hides the
-  comment if it has to. No answer at all leaves `ai:unchecked` for the daily review.
-- **Reports:** each visitor can report a comment once. A report sends it back into the daily review, and 3 reports hide
+  comment if it has to. No answer at all leaves `ai:unchecked` for the review.
+- **Reports:** each visitor can report a comment once. A report sends it back into the review, and 3 reports hide
   a comment the review hasn't approved yet. Approved comments can't be hidden by reports, only re-reviewed.
 - **Blocks:** visitors listed in `blocked_visitors` can still post, but their comments are held for review.
 
@@ -49,15 +49,17 @@ hand. It replaced the GitHub (Giscus) comments on October 31, 2026.
 | Column | Meaning |
 |---|---|
 | `status` | `visible` (on the site), `held` (hidden until reviewed: safety filter, 3 reports or a blocked visitor), `removed` |
-| `approved` | 1 once the daily review approved it |
+| `approved` | 1 once the review approved it |
 | `reviewed_at` | last review; `NULL` means it's waiting for one |
 | `flags` | automatic notes: `ai:S1` (what the filter flagged), `ai:pending` (still checking), `ai:unchecked` (no answer) |
 | `moderation_note` | why it was held or removed |
 
-## The daily review
+## The twice-daily review
 
-A scheduled task runs every evening (Pacific time) in a fresh Claude session with the Cloudflare D1 tools. It reads
-every comment with `reviewed_at IS NULL` (new, held or reported), approves or removes each one against the rules on
+Every comment from every page lands in the one `comments` table, so nobody has to visit pages to find them. A
+scheduled task runs at 9:43 AM and 9:43 PM Pacific in a fresh Claude session with the Cloudflare D1 tools. One query
+reads every comment with `reviewed_at IS NULL` (new, held or reported) across the whole site; with none, the run ends
+right there. Otherwise it approves or removes each one against the rules on
 `/privacy/#comments`, looks for spam waves (the same text on several pages, one visitor posting a lot), blocks repeat
 offenders for 30 days, deletes removed comments for good after 30 days, and sends a short summary of what it removed.
 Comment text is treated as untrusted data: instructions inside a comment are never followed.
@@ -72,7 +74,7 @@ with `npx wrangler d1 execute resurgence-comments --remote --command "..."`. Tim
 SELECT id, path, name, substr(body, 1, 80) AS body, status, flags, reports, created_at
 FROM comments ORDER BY created_at DESC LIMIT 50;
 
--- Remove one (it disappears at once; deleted for good by the daily review after 30 days)
+-- Remove one (it disappears at once; deleted for good by the review after 30 days)
 UPDATE comments SET status = 'removed', reviewed_at = '2026-11-01T00:00:00Z', moderation_note = 'Owner: spam'
 WHERE id = 'abc23defg456';
 

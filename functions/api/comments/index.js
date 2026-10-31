@@ -89,7 +89,7 @@ export async function onRequestPost({ request, env, waitUntil }) {
     if (counts.day >= LIMITS.dayMax) return json(429, { error: 'That\'s the daily comment limit. Come back tomorrow.' });
     if (counts.site_hour >= LIMITS.siteHourMax) return json(503, { error: 'Comments are paused for a bit. Try again later.' });
 
-    // Visitors blocked for breaking the rules can still type, but what they post waits for the daily review.
+    // Visitors blocked for breaking the rules can still type, but what they post waits for the review.
     let state = 'visible';
     let flags = null;
     let note = null;
@@ -104,7 +104,7 @@ export async function onRequestPost({ request, env, waitUntil }) {
 
     // Safety filter. Workers AI usually answers in well under a second but sometimes takes many seconds, so the
     // visitor waits at most QUICK_MS: a slower answer is applied in the background (the comment shows meanwhile and is
-    // hidden as soon as the filter says so). No answer at all leaves "ai:unchecked" for the daily review.
+    // hidden as soon as the filter says so). No answer at all leaves "ai:unchecked" for the review.
     const id = newId();
     const createdAt = now.toISOString();
     let pending = null;
