@@ -17,6 +17,7 @@ import gearSources from '../data/gear-sources.json';
 import { getCollection } from 'astro:content';
 import { CURRENT_PATCH } from '../data/site-config';
 import { SOURCES_RECORDED, RECAL_FIX } from '../utils/rolls';
+import { dbImage, type DbImage } from '../utils/db-images';
 
 // Templates: every build guide with a plannerHash, grouped by specialization in the picker
 const notes: Record<string, unknown> = templateNotes;
@@ -90,7 +91,22 @@ for (const [kind, slot, list] of [['bodyArmorTalents', 'body', bodyArmorTalents]
   }
 }
 
-// Only what the engine reads goes into the payload (no images or wiki-style extras)
+// In-game art for every item the planner shows: weapon tiles, talent, set, OS Protocol and skill mod icons. Paths
+// under /images/db/ without ".webp", keyed by item id (exotic talents by "et:" + the exotic's id).
+const img: Record<string, string> = {};
+const put = (id: string, url?: string) => { if (url) img[id] = url.replace(/^\/images\/db\//, '').replace(/\.webp$/, ''); };
+const smallest = (im?: DbImage) => im?.srcset[0]?.[1];
+for (const w of standardWeapons as any[]) put(w.id, dbImage(`weapon-icons/${slugify(w.name)}`, 'card')?.src);
+for (const e of exoticWeapons as any[]) {
+  put(e.id, dbImage(`exotic-weapons/${slugify(e.name)}`, 'hero')?.src);
+  put(`et:${e.id}`, smallest(dbImage(`weapon-talents/${slugify(e.talentName)}`, 'icon')));
+}
+for (const [list, folder] of [[weaponTalents, 'weapon-talents'], [gearSets, 'gear-set-effects'], [bodyArmorTalents, 'body-armor-talents'],
+  [backpackTalents, 'backpack-talents'], [osProtocols, 'os-protocols'], [skillModCombos, 'skill-mod-combos']] as const) {
+  for (const x of list as any[]) put(x.id, smallest(dbImage(`${folder}/${slugify(x.name)}`, 'icon')));
+}
+
+// Only what the engine reads goes into the payload
 const omit = <T extends Record<string, unknown>>(list: T[], keys: string[]) =>
   list.map(item => Object.fromEntries(Object.entries(item).filter(([k]) => !keys.includes(k))));
 const dataPayload = JSON.stringify({
@@ -106,6 +122,7 @@ const dataPayload = JSON.stringify({
   bonusAttributes,
   weaponBonusAttributes,
   templates,
+  img,
   rolls: { recorded: SOURCES_RECORDED, weapons: weaponPools, gear: gearRolls,
     recalFixed: { patch: RECAL_FIX.patch, dateText: RECAL_FIX.dateText, weapons: RECAL_FIX.weapons } },
 }).replace(/</g, '\\u003c');
@@ -119,11 +136,16 @@ const faqs = [
   { question: 'Where does the planner data come from?', answer: `From this site's database: ${gearSetCount} gear sets, ${wtCount} weapon talents, ${osCount} OS Protocols and ${smcCount} skill mod combos, checked against the game's own Build-Making Database and kept current from Ubisoft's patch notes and drop tables. Templates come from our build guides, and numbers a creator read off their own screen are marked as theirs in the guide.` },
   { question: 'Can I put any talent on any gun or gear piece?', answer: `No, and the planner only offers what can roll. Each weapon has a pool of 18 talents, and each body armor piece and backpack can roll 12 of its 25. Pick a weapon and its talent list shows only that gun's pool; pick a set for the body armor or backpack and the talent list shows only what a piece of that set can carry, with the pieces named. It all comes from the Source lists in the game's Build-Making Database, which we recorded on ${SOURCES_RECORDED}. A template from a creator whose gun or gear carries something outside those lists gets flagged in the checks.` },
   { question: 'Are the stat totals exact?', answer: 'They add up set bonuses, OS Protocol stats, each skill mod combo\'s 2-piece bonus (shown as a range) and the roll values you type in. Rolls without a value are listed but not added, and talent effects are left out because they depend on conditions.' },
-  { question: 'What does the score check?', answer: 'How complete the build is (40 points), whether each gear piece counts toward an active set bonus (30), whether your attributes fit your focus (20) and whether your OS Protocol matches it (10). Each warning takes 5 off. The Checks list shows what to look at.' },
-  { question: 'How do I share a build?', answer: 'Click Copy build link. The link holds the whole build, including roll values and weapon tiers, and opens without an account.' },
+  { question: 'What does the score check?', answer: 'How complete the build is (40 points), whether each gear piece counts toward an active set bonus (30), whether your attributes fit your focus (20) and whether your OS Protocol matches it (10). Each warning takes 5 off. The checks under the score say what to look at.' },
+  { question: 'How do I share or keep a build?', answer: 'Copy link puts the whole build in a link, roll values and weapon tiers included, and it opens without an account. Copy as text gives you a short write-up to paste into Discord or Reddit. Save keeps the build in My builds on this device, and Undo (Ctrl+Z) takes back the last change.' },
 ];
 
 const chevron = 'M6 9l6 6 6-6';
+// The game's order for gear: mask, body armor and backpack on top, gloves, holster and knee pads below
+const GEAR = [
+  ['mask', 'Mask', 'icon-mask', false], ['body', 'Body armor', 'icon-shield', true], ['backpack', 'Backpack', 'icon-backpack', true],
+  ['gloves', 'Gloves', 'icon-gloves', false], ['holster', 'Holster', 'icon-holster', false], ['kneepads', 'Knee pads', 'icon-kneepads', false],
+] as const;
 ---
 
 <BaseLayout
@@ -137,62 +159,72 @@ const chevron = 'M6 9l6 6 6-6';
   <Fragment slot="head">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="/css/builder-v3.css?v=7" />
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/builder-v4.css?v=1" />
   </Fragment>
-
-  <section class="hero lab-hero">
-    <div class="hero__scan" aria-hidden="true"></div>
-    <div class="hero__inner">
-      <h1 class="hero__title">Build <em>Planner</em></h1>
-      <p class="hero__sub">Plan a Division Resurgence loadout and share it as a link.</p>
-      <p class="hero__meta"><span class="chip">Data: {CURRENT_PATCH}</span></p>
-    </div>
-  </section>
 
   <div class="lab" id="lab">
     <noscript><p class="lab-msg">The planner needs JavaScript. Every loadout is also written out in full in the <a href="/builds/">build guides</a>.</p></noscript>
     <p class="lab-msg" id="labError" hidden>The planner didn't load. Reload the page to try again.</p>
 
-    <div class="panel panel--bar">
-      <span class="kicker bar__label" id="tplTitle">Template</span>
-      <div class="bar__select">
-        <button type="button" class="picker__btn" id="tplBtn" aria-haspopup="dialog" aria-labelledby="tplTitle tplLabel">
+    <header class="pl-bar">
+      <div class="pl-bar__id">
+        <div class="pl-title-row"><h1 class="pl-title">Build Planner</h1><span class="pl-data">{CURRENT_PATCH} data</span></div>
+        <label class="sr-only" for="buildNameInput">Build name</label>
+        <input type="text" class="pl-name" id="buildNameInput" placeholder="Name your build" maxlength="60" autocomplete="off" spellcheck="false" />
+      </div>
+      <div class="pl-bar__tools">
+        <button type="button" class="pl-btn pl-btn--load" id="tplBtn" aria-haspopup="dialog">
+          <svg aria-hidden="true" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 5h16M4 12h16M4 19h10"/></svg>
           <span id="tplLabel">Load a build guide</span>
-          <svg aria-hidden="true" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d={chevron}/></svg>
+          <svg aria-hidden="true" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d={chevron}/></svg>
         </button>
+        <button type="button" class="pl-btn" id="mineBtn" aria-haspopup="dialog">My builds <span class="pl-btn__n" id="mineCount"></span></button>
+        <span class="pl-bar__group" role="group" aria-label="History">
+          <button type="button" class="pl-icon" id="undoBtn" aria-label="Undo" title="Undo (Ctrl+Z)" disabled>
+            <svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 14L4 9l5-5"/><path d="M4 9h10.5a5.5 5.5 0 010 11H11"/></svg>
+          </button>
+          <button type="button" class="pl-icon" id="redoBtn" aria-label="Redo" title="Redo (Ctrl+Shift+Z)" disabled>
+            <svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 14l5-5-5-5"/><path d="M20 9H9.5a5.5 5.5 0 000 11H13"/></svg>
+          </button>
+          <button type="button" class="pl-icon" id="resetBtn" aria-label="Start over" title="Start over">
+            <svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12a9 9 0 109-9 9 9 0 00-6.4 2.6L3 8M3 4v4h4"/></svg>
+          </button>
+        </span>
+        <span class="pl-bar__group pl-bar__share">
+          <button type="button" class="pl-btn" id="saveBtn">Save</button>
+          <button type="button" class="pl-btn" id="textBtn">Copy as text</button>
+          <button type="button" class="pl-btn" id="cardBtn" aria-haspopup="dialog">Build card</button>
+          <button type="button" class="pl-btn pl-btn--go" id="shareBtn">
+            <svg aria-hidden="true" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 14a4 4 0 005.7 0l3-3a4 4 0 00-5.7-5.7l-1 1"/><path d="M14 10a4 4 0 00-5.7 0l-3 3a4 4 0 005.7 5.7l1-1"/></svg>
+            Copy link
+          </button>
+        </span>
       </div>
-      <button type="button" class="btn-ghost" id="resetBtn">
-        <svg aria-hidden="true" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12a9 9 0 109-9 9 9 0 00-6.4 2.6L3 8M3 4v4h4"/></svg>
-        Reset
-      </button>
-    </div>
+    </header>
     <p class="lab-note" id="labNote" role="status" hidden></p>
-
-    <div class="panel panel--bar panel--name">
-      <label class="kicker bar__label" for="buildNameInput">Build name</label>
-      <div class="build-name">
-        <input type="text" class="build-name__input" id="buildNameInput" placeholder="Untitled build" maxlength="60" autocomplete="off" spellcheck="false" />
-      </div>
+    <div class="share-link" id="shareLink" hidden>
+      <label class="share-link__lbl" id="shareLinkLabel" for="shareLinkField">Copy this link</label>
+      <textarea class="share-link__field" id="shareLinkField" rows="2" readonly></textarea>
     </div>
 
-    <div class="lab__grid">
-
-      <div class="col col--left">
-        <section class="panel" id="specPanel" aria-labelledby="specTitle">
-          <div class="panel__hd"><h2 class="kicker" id="specTitle">Specialization</h2></div>
-          <div class="panel__bd">
+    <div class="pl-grid">
+      <div class="pl-board">
+        <section class="pl-agent" id="specPanel" aria-labelledby="specTitle">
+          <div class="pl-agent__emblem" aria-hidden="true"><img id="specEmblem" src="/images/icons/icon-spec.webp" alt="" width="88" height="88" /></div>
+          <div class="pl-agent__body">
+            <h2 class="pl-h" id="specTitle">Specialization</h2>
             <div class="spec-grid" role="group" aria-labelledby="specTitle">
-              {plannerSpecs.specs.map((sp, i) => (
-                <button type="button" class={`spec-btn${i === plannerSpecs.specs.length - 1 ? ' spec-btn--full' : ''}`} data-spec={sp.name} aria-pressed="false">
+              {plannerSpecs.specs.map((sp) => (
+                <button type="button" class="spec-btn" data-spec={sp.name} aria-pressed="false" aria-label={sp.name}>
                   <img src={sp.icon} alt="" class="sigil" width="32" height="32" />
                   <span class="nm">{sp.name}</span>
                 </button>
               ))}
             </div>
-            <div class="field">
-              <span class="field__lbl" id="focusTitle">Focus</span>
-              <button type="button" class="picker__btn picker__btn--sm" id="subBtn" aria-haspopup="dialog" aria-labelledby="focusTitle subLabel" disabled>
+            <div class="pl-focus">
+              <span class="pl-focus__lbl" id="focusTitle">Focus</span>
+              <button type="button" class="pl-focus__btn" id="subBtn" aria-haspopup="dialog" aria-labelledby="focusTitle subLabel" disabled>
                 <span id="subLabel">Pick a specialization</span>
                 <svg aria-hidden="true" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d={chevron}/></svg>
               </button>
@@ -200,150 +232,108 @@ const chevron = 'M6 9l6 6 6-6';
           </div>
         </section>
 
-        <section class="panel" id="osPanel" aria-labelledby="osTitle">
-          <div class="panel__hd"><h2 class="kicker" id="osTitle">OS Protocol</h2></div>
-          <div class="panel__bd">
-            <button type="button" class="slot slot--lg" id="osSlot" aria-haspopup="dialog">
-              <span class="slot__icon"><img src="/images/icons/icon-os.webp" alt="" width="22" height="22" /></span>
-              <span class="slot__body"><span class="slot__name" id="osName">Select OS Protocol</span><span class="slot__sub" id="osSub">Not set</span></span>
-            </button>
-            <p class="slot__desc" id="osDesc" hidden></p>
-          </div>
-        </section>
-
-        <section class="panel" id="talentPanel" aria-labelledby="talentTitle">
-          <div class="panel__hd"><h2 class="kicker" id="talentTitle">Armor talents</h2></div>
-          <div class="panel__bd">
-            <button type="button" class="picktag picktag--wide" data-armortalent="body" aria-haspopup="dialog"><span class="picktag__lbl">Body armor</span><span class="picktag__val">Not set</span><span class="picktag__desc" hidden></span></button>
-            <button type="button" class="picktag picktag--wide" data-armortalent="backpack" aria-haspopup="dialog"><span class="picktag__lbl">Backpack</span><span class="picktag__val">Not set</span><span class="picktag__desc" hidden></span></button>
-          </div>
-        </section>
-
-        <section class="panel" id="skillPanel" aria-labelledby="skillTitle">
-          <div class="panel__hd"><h2 class="kicker" id="skillTitle">Skill mods</h2><span class="tag" id="skillCount">0 / 3</span></div>
-          <div class="panel__bd skill-list">
-            {[0, 1, 2].map(i => (
-              <button type="button" class="skill-slot" data-skill={i} aria-haspopup="dialog" disabled>
-                <span class="skill-slot__n" aria-hidden="true">{i + 1}</span>
-                <span class="skill-slot__txt"><span class="skill-slot__skill"></span><span class="skill-slot__nm">Pick a specialization first</span><span class="skill-slot__sub"></span><span class="skill-slot__desc"></span></span>
-              </button>
-            ))}
-          </div>
-        </section>
-      </div>
-
-      <div class="col col--center">
-        <section class="panel panel--loadout" id="gearPanel" aria-labelledby="gearTitle">
-          <div class="panel__hd"><h2 class="kicker" id="gearTitle">Gear</h2><span class="tag" id="gearPieces">0 / 6</span></div>
-          <div class="panel__bd">
-            <div class="rig">
-              <svg class="rig__trace" viewBox="0 0 600 360" preserveAspectRatio="none" aria-hidden="true">
-                <path d="M150 70 L300 40 L450 70 M150 180 L300 180 L450 180 M150 290 L300 320 L450 290" />
-              </svg>
-              <div class="rig__col rig__col--l">
-                {[['mask', 'Mask', 'icon-mask'], ['gloves', 'Gloves', 'icon-gloves'], ['holster', 'Holster', 'icon-holster']].map(([slot, label, icon]) => (
-                  <button type="button" class="gearslot" data-slot={slot} aria-haspopup="dialog">
-                    <span class="gearslot__ico"><img src={`/images/icons/${icon}.webp`} alt="" width="24" height="24" /></span>
-                    <span class="gearslot__txt"><span class="gearslot__lbl">{label}</span><span class="gearslot__val">Empty</span><span class="gearslot__attrs"></span></span>
-                  </button>
-                ))}
-              </div>
-              <div class="rig__core" aria-hidden="true">
-                <div class="rig__silhouette">
-                  <span class="rig__score-lbl">Score</span>
-                  <span class="rig__score" id="rigScore">0</span>
-                  <img src="/images/resurgence-builds-official-logo.webp" alt="" class="rig__logo" width="120" height="120" />
-                </div>
-              </div>
-              <div class="rig__col rig__col--r">
-                {[['body', 'Body armor', 'icon-shield'], ['backpack', 'Backpack', 'icon-backpack'], ['kneepads', 'Kneepads', 'icon-kneepads']].map(([slot, label, icon]) => (
-                  <button type="button" class="gearslot" data-slot={slot} aria-haspopup="dialog">
-                    <span class="gearslot__ico"><img src={`/images/icons/${icon}.webp`} alt="" width="24" height="24" /></span>
-                    <span class="gearslot__txt"><span class="gearslot__lbl">{label}</span><span class="gearslot__val">Empty</span><span class="gearslot__attrs"></span></span>
-                  </button>
-                ))}
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <div class="weapon-row">
-          {[1, 2].map(n => (
-            <section class="panel" data-weapon={n} aria-labelledby={`w${n}title`}>
-              <div class="panel__hd">
-                <h2 class="kicker" id={`w${n}title`}>{n === 1 ? 'Primary weapon' : 'Secondary weapon'}</h2>
-              </div>
-              <div class="panel__bd">
-                <button type="button" class="slot" id={`w${n}btn`} data-wslot={n} aria-haspopup="dialog">
-                  <span class="slot__icon"><img src="/images/icons/icon-weapon.webp" alt="" width="20" height="20" /></span>
-                  <span class="slot__body"><span class="slot__name" id={`w${n}name`}>Select weapon</span><span class="slot__sub" id={`w${n}sub`}>Not set</span></span>
+        <section class="pl-sec" aria-labelledby="weaponsTitle">
+          <h2 class="pl-h" id="weaponsTitle">Weapons</h2>
+          <div class="pl-weapons">
+            {[1, 2].map((n) => (
+              <div class="wtile" id={`w${n}card`} data-weapon={n}>
+                <button type="button" class="wtile__main" id={`w${n}btn`} data-wslot={n} aria-haspopup="dialog">
+                  <span class="wtile__art"><img id={`w${n}img`} alt="" width="330" height="156" hidden /><span class="wtile__ph" aria-hidden="true"><img src="/images/icons/icon-weapon.webp" alt="" width="28" height="28" /></span></span>
+                  <span class="wtile__txt">
+                    <span class="wtile__role">{n === 1 ? 'Primary' : 'Secondary'}</span>
+                    <span class="wtile__name" id={`w${n}name`}>Add a weapon</span>
+                    <span class="wtile__sub" id={`w${n}sub`}></span>
+                  </span>
                 </button>
-                <label class="tier"><span class="tier__lbl">Tier</span>
-                  <select class="tier__sel" id={`w${n}tier`} aria-label={n === 1 ? 'Primary weapon tier' : 'Secondary weapon tier'} disabled>
-                    <option value="">None</option>
+                <label class="wtile__tier" title="Weapon tier"><span class="sr-only">{n === 1 ? 'Primary weapon tier' : 'Secondary weapon tier'}</span>
+                  <select id={`w${n}tier`} disabled>
+                    <option value="">Tier</option>
                     <option value="T0">T0</option>
                     <option value="T1">T1</option>
                     <option value="T2">T2</option>
                   </select>
                 </label>
-                <div class="picktag is-fixed" id={`w${n}fixed`} hidden><span class="picktag__lbl">Exotic talent</span><span class="picktag__val"></span><span class="picktag__desc"></span></div>
-                <div class="talent-pair">
-                  {[1, 2].map(j => (
-                    <button type="button" class="picktag" data-talent={`w${n}t${j}`} aria-haspopup="dialog" disabled><span class="picktag__lbl">Talent {j}</span><span class="picktag__val">Pick a weapon first</span><span class="picktag__desc" hidden></span></button>
+                <div class="wtile__rows">
+                  <div class="chip chip--exotic" id={`w${n}fixed`} hidden><img alt="" width="28" height="28" hidden /><span class="picktag__val"></span><span class="picktag__desc" hidden></span></div>
+                  {[1, 2].map((j) => (
+                    <button type="button" class="chip chip--talent" data-talent={`w${n}t${j}`} aria-haspopup="dialog" disabled><img alt="" width="28" height="28" hidden /><span class="picktag__val">Talent {j}</span><span class="picktag__desc" hidden></span></button>
                   ))}
-                </div>
-                <div class="weapon-bonuses">
-                  {[1, 2].map(j => (
-                    <button type="button" class="weapon-bonus" data-wbonus={n} data-wbidx={j} aria-haspopup="dialog" disabled><span class="picktag__lbl">Attribute {j}</span><span class="picktag__val">Pick a weapon first</span></button>
-                  ))}
+                  <div class="wtile__attrs">
+                    {[1, 2].map((j) => (
+                      <button type="button" class="chip chip--attr weapon-bonus" data-wbonus={n} data-wbidx={j} aria-haspopup="dialog" disabled><span class="picktag__val">Attribute {j}</span></button>
+                    ))}
+                  </div>
                 </div>
               </div>
-            </section>
-          ))}
-        </div>
+            ))}
+          </div>
+        </section>
+
+        <section class="pl-sec" aria-labelledby="kitTitle">
+          <h2 class="pl-h" id="kitTitle">OS Protocol and skill mods <span class="pl-count" id="skillCount">0 / 3</span></h2>
+          <div class="pl-kit">
+            <div class="ktile ktile--os">
+              <button type="button" class="ktile__main" id="osSlot" aria-haspopup="dialog">
+                <span class="ktile__icon"><img id="osImg" alt="" width="56" height="56" hidden /><img class="ktile__ph" src="/images/icons/icon-os.webp" alt="" width="28" height="28" /></span>
+                <span class="ktile__txt"><span class="ktile__kind">OS Protocol</span><span class="ktile__name" id="osName">Add an OS Protocol</span><span class="ktile__sub" id="osSub"></span></span>
+              </button>
+              <p class="ktile__desc" id="osDesc" hidden></p>
+            </div>
+            {[0, 1, 2].map((i) => (
+              <button type="button" class="ktile ktile--mod skill-slot" data-skill={i} aria-haspopup="dialog" disabled>
+                <span class="ktile__icon"><img alt="" width="48" height="48" hidden /><img class="ktile__ph" src="/images/icons/icon-skillmod.webp" alt="" width="24" height="24" /></span>
+                <span class="ktile__txt"><span class="ktile__kind skill-slot__skill">Skill {i + 1}</span><span class="ktile__name skill-slot__nm">Pick a specialization first</span><span class="ktile__sub skill-slot__sub"></span><span class="skill-slot__desc" hidden></span></span>
+              </button>
+            ))}
+          </div>
+        </section>
+
+        <section class="pl-sec" id="gearPanel" aria-labelledby="gearTitle">
+          <h2 class="pl-h" id="gearTitle">Gear <span class="pl-count" id="gearPieces">0 / 6</span></h2>
+          <div class="pl-gear">
+            {GEAR.map(([slot, label, icon, talent]) => (
+              <div class="gtile" data-gtile={slot}>
+                <button type="button" class="gearslot" data-slot={slot} aria-haspopup="dialog">
+                  <span class="gtile__top"><span class="gtile__slot">{label}</span><span class="gtile__count" data-count></span></span>
+                  <span class="gtile__emblem"><img class="gtile__set" alt="" width="64" height="64" hidden /><img class="gtile__ph" src={`/images/icons/${icon}.webp`} alt="" width="30" height="30" /></span>
+                  <span class="gearslot__val">Add a set</span>
+                  <span class="gearslot__attrs"></span>
+                </button>
+                {talent && (
+                  <button type="button" class="chip chip--talent gtile__talent" data-armortalent={slot} aria-haspopup="dialog"><img alt="" width="28" height="28" hidden /><span class="picktag__val">Talent</span><span class="picktag__desc" hidden></span></button>
+                )}
+                {talent && <p class="gtile__look" data-look={slot} hidden></p>}
+              </div>
+            ))}
+          </div>
+        </section>
       </div>
 
-      <aside class="col col--right" aria-label="Build summary">
-        <div class="share-row">
-          <button type="button" class="btn-primary" id="shareBtn">
-            <svg aria-hidden="true" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12v8h16v-8M12 3v13M7 8l5-5 5 5"/></svg>
-            Copy build link
-          </button>
-          <button type="button" class="btn-ghost btn-ghost--card" id="cardBtn" aria-haspopup="dialog">
-            <svg aria-hidden="true" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="1.5"/><path d="M3 9h18"/></svg>
-            Build card
-          </button>
-        </div>
-        <div class="share-link" id="shareLink" hidden>
-          <label class="share-link__lbl" for="shareLinkField">Copy this link</label>
-          <input type="text" class="share-link__field" id="shareLinkField" readonly />
-        </div>
-
-        <section class="panel panel--isac" id="checksPanel" aria-labelledby="checksTitle" tabindex="-1">
-          <div class="panel__hd"><h2 class="kicker" id="checksTitle">Checks</h2></div>
-          <div class="panel__bd">
-            <div class="rating">
-              <span class="rating__line"><span class="rating__grade g-incomplete" id="ratingGrade">Not started</span><span class="rating__score" id="ratingScore"></span></span>
-              <div class="rating__meter" aria-hidden="true"><i id="ratingMeter"></i></div>
-            </div>
-            <ul class="diag-list" id="diagList"><li class="diag diag--info"><span class="diag__txt">Pick a specialization to start.</span></li></ul>
+      <aside class="pl-intel" aria-label="Build summary">
+        <section class="intel intel--score" id="checksPanel" aria-labelledby="checksTitle" tabindex="-1">
+          <div class="ring" id="scoreRing">
+            <svg viewBox="0 0 120 120" aria-hidden="true"><circle class="ring__track" cx="60" cy="60" r="52" /><circle class="ring__arc" id="ringArc" cx="60" cy="60" r="52" pathLength="100" /></svg>
+            <span class="ring__num" id="rigScore">0</span>
           </div>
+          <div class="intel__grade">
+            <h2 class="pl-h" id="checksTitle">Build check</h2>
+            <p class="rating__grade g-incomplete" id="ratingGrade">Not started</p>
+            <p class="rating__score" id="ratingScore"></p>
+          </div>
+          <ul class="diag-list" id="diagList"><li class="diag diag--info"><span class="diag__txt">Pick a specialization to start.</span></li></ul>
         </section>
 
-        <section class="panel" id="statsPanel" aria-labelledby="statsTitle">
-          <div class="panel__hd"><h2 class="kicker" id="statsTitle">Stats</h2></div>
-          <div class="panel__bd">
-            <p class="panel__hint">Set bonuses, OS stats, skill mod 2pc and the roll values you enter. Talents aren't counted.</p>
-            <div class="stat-list" id="statList"><p class="empty">Nothing to add up yet.</p></div>
-          </div>
+        <section class="intel" id="bonusPanel" aria-labelledby="bonusTitle">
+          <h2 class="pl-h" id="bonusTitle">Set bonuses</h2>
+          <div id="bonusList"><p class="empty">Two pieces of one set turn on its first bonus.</p></div>
         </section>
 
-        <section class="panel" id="bonusPanel" aria-labelledby="bonusTitle">
-          <div class="panel__hd"><h2 class="kicker" id="bonusTitle">Set bonuses</h2></div>
-          <div class="panel__bd" id="bonusList"><p class="empty">Equip 2 pieces of a set to activate it.</p></div>
+        <section class="intel" id="statsPanel" aria-labelledby="statsTitle">
+          <h2 class="pl-h" id="statsTitle">Stats</h2>
+          <p class="intel__hint">Set bonuses, OS stats, skill mod 2pc and your roll values. Talents aren't counted.</p>
+          <div class="stat-list" id="statList"><p class="empty">Nothing to add up yet.</p></div>
         </section>
       </aside>
-
     </div>
   </div>
 
@@ -351,7 +341,7 @@ const chevron = 'M6 9l6 6 6-6';
   <div class="modal" id="modal" hidden>
     <div class="modal__panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
       <div class="modal__hd">
-        <h2 class="kicker" id="modalTitle">Select</h2>
+        <h2 class="modal__title" id="modalTitle">Select</h2>
         <button type="button" class="modal__x" data-close aria-label="Close">
           <svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg>
         </button>
@@ -368,16 +358,30 @@ const chevron = 'M6 9l6 6 6-6';
   <div class="modal" id="editor" hidden>
     <div class="modal__panel modal__panel--editor" role="dialog" aria-modal="true" aria-labelledby="editorTitle">
       <div class="modal__hd">
-        <h2 class="kicker" id="editorTitle">Edit</h2>
+        <h2 class="modal__title" id="editorTitle">Edit</h2>
         <button type="button" class="modal__x" data-close aria-label="Close">
           <svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg>
         </button>
       </div>
       <div class="editor" id="editorBody"></div>
       <div class="editor__ft">
-        <button type="button" class="btn-ghost" id="editorClear">Clear</button>
-        <button type="button" class="btn-primary" data-close>Done</button>
+        <button type="button" class="pl-btn" id="editorClear">Clear</button>
+        <button type="button" class="pl-btn pl-btn--go" data-close>Done</button>
       </div>
+    </div>
+  </div>
+
+  <!-- Saved builds -->
+  <div class="modal" id="savesModal" hidden>
+    <div class="modal__panel" role="dialog" aria-modal="true" aria-labelledby="savesTitle">
+      <div class="modal__hd">
+        <h2 class="modal__title" id="savesTitle">My builds</h2>
+        <button type="button" class="modal__x" data-close aria-label="Close">
+          <svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
+      </div>
+      <div class="modal__list" id="savesList"></div>
+      <p class="card-note">Saved in this browser only. Copy link to move a build to another device.</p>
     </div>
   </div>
 
@@ -385,7 +389,7 @@ const chevron = 'M6 9l6 6 6-6';
   <div class="modal" id="cardModal" hidden>
     <div class="modal__panel modal__panel--card" role="dialog" aria-modal="true" aria-labelledby="cardTitle">
       <div class="modal__hd">
-        <h2 class="kicker" id="cardTitle">Build card</h2>
+        <h2 class="modal__title" id="cardTitle">Build card</h2>
         <button type="button" class="modal__x" data-close aria-label="Close">
           <svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg>
         </button>
@@ -397,17 +401,19 @@ const chevron = 'M6 9l6 6 6-6';
 
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
-  <!-- Phones: score and grade stay in view while you edit -->
+  <!-- Phones: the score and the link stay in reach while you edit -->
   <div class="mob-status" id="mobStatus">
-    <div class="mob-status__grp"><span class="mob-status__lbl">Score</span><span class="mob-status__val" id="mobScore">0</span></div>
-    <div class="mob-status__grp"><span class="mob-status__lbl">Build</span><span class="mob-status__val" id="mobGrade">Not started</span></div>
-    <button class="mob-status__go" id="mobStatusGo" type="button">Checks</button>
+    <button class="mob-status__score" id="mobStatusGo" type="button" aria-label="Go to the build check">
+      <span class="mob-status__val" id="mobScore">0</span>
+      <span class="mob-status__grade" id="mobGrade">Not started</span>
+    </button>
+    <button class="pl-btn pl-btn--go mob-status__share" id="mobShare" type="button">Copy link</button>
   </div>
 
   <section class="lab-about">
     <h2>How the planner works</h2>
-    <p>Pick a specialization and focus, then click any slot to fill it: gear sets and attributes, weapons and talents, armor talents, OS Protocol and skill mods. Templates load the loadouts from our <a href="/builds/">build guides</a>, and every option comes from our <a href="/database/">database</a>.</p>
-    <p>Stats add up set bonuses, OS Protocol stats, skill mod 2-piece bonuses and the roll values you enter. Checks flag sets with no active bonus, pieces past a set's last bonus, attributes that don't fit your focus and missing slots.</p>
+    <p>Pick a specialization and focus, then tap any slot to fill it: weapons and their talents, the OS Protocol and skill mods, and each gear piece's set, attributes and talent. Load one of our <a href="/builds/">build guides</a> to start from a creator's loadout. Every option comes from our <a href="/database/">database</a>, and talent lists only show what can actually roll.</p>
+    <p>The build check scores the loadout and flags sets with no active bonus, pieces past a set's last bonus, talents a piece can't roll and attributes that don't fit your focus. Stats add up set bonuses, OS Protocol stats, skill mod 2-piece bonuses and the roll values you enter.</p>
 
     <h2>Frequently asked questions</h2>
     <div class="lab-about__faqs">
@@ -421,81 +427,9 @@ const chevron = 'M6 9l6 6 6-6';
   </section>
 
   <script type="application/json" id="builder-data" set:html={dataPayload}></script>
-  <script is:inline src="/js/builder-v3-engine.js?v=9"></script>
+  <script is:inline src="/js/builder-v3-engine.js?v=10"></script>
   <script is:inline>
     // If the engine didn't start (blocked or failed to load), say so instead of showing dead buttons
     if (!document.getElementById('lab').hasAttribute('data-ready')) document.getElementById('labError').hidden = false;
   </script>
 </BaseLayout>
-
-<style is:global>
-  /* Page background for the planner */
-  body:has(.lab) {
-    background-color: #05070b !important;
-    background-image:
-      radial-gradient(1200px 600px at 80% -10%, rgba(255,138,46,.08), transparent 60%),
-      radial-gradient(900px 500px at -10% 20%, rgba(82,168,255,.05), transparent 55%),
-      linear-gradient(rgba(82,168,255,.04) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(82,168,255,.04) 1px, transparent 1px) !important;
-    background-size: auto, auto, 44px 44px, 44px 44px !important;
-    background-attachment: fixed !important;
-  }
-  /* Scanline grain */
-  body:has(.lab)::after {
-    content: "";
-    position: fixed;
-    inset: 0;
-    pointer-events: none;
-    z-index: 1;
-    opacity: .5;
-    background: repeating-linear-gradient(0deg, rgba(255,255,255,.012) 0 1px, transparent 1px 3px);
-  }
-  /* The planner uses the full width, not the page container */
-  body:has(.lab) #main-content {
-    padding: 0 !important;
-    max-width: none !important;
-  }
-  body:has(.lab) #main-content > .container {
-    max-width: none !important;
-    padding: 0 !important;
-  }
-  .sigil {
-    width: 32px;
-    height: 32px;
-    object-fit: contain;
-  }
-  .spec-btn.is-active .sigil {
-    filter: drop-shadow(0 0 6px rgba(255,138,46,.7)) drop-shadow(0 0 12px rgba(255,138,46,.3));
-  }
-  /* How it works + FAQ below the tool */
-  .lab-about {
-    position: relative;
-    z-index: 2;
-    max-width: 860px;
-    margin: 0 auto;
-    padding: 48px 16px 64px;
-    color: #c8c8d0;
-    line-height: 1.75;
-  }
-  .lab-about h2 {
-    font-family: var(--font-heading);
-    font-size: var(--text-xl);
-    font-weight: 800;
-    color: #fff;
-    margin: 0 0 16px;
-    padding-bottom: 8px;
-    border-bottom: 1px solid rgba(255,138,46,.25);
-  }
-  .lab-about h2:not(:first-child) { margin-top: 40px; }
-  .lab-about p { margin: 0 0 12px; }
-  .lab-about a { color: var(--accent, #ff8a2e); }
-  .lab-about__faq {
-    border: 1px solid rgba(255,255,255,.1);
-    background: rgba(0,0,0,.3);
-    margin-bottom: 8px;
-  }
-  /* the whole question row is the tap target (at least 44px), not just its line of text */
-  .lab-about__faq summary { cursor: pointer; color: #fff; font-weight: 600; padding: 10px 16px; min-height: 44px; }
-  .lab-about__faq summary:focus-visible { outline-offset: -3px; }
-  .lab-about__faq p { margin: 0 16px 12px; }
-</style>

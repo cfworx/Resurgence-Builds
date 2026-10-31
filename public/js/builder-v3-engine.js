@@ -55,6 +55,13 @@
   try { DATA = JSON.parse($('#builder-data').textContent); } catch (e) { DATA = null; }
   if (!DATA || typeof DATA !== 'object') return; // the check after this script shows the error line
 
+  /* In-game art: item id -> path under /images/db/ (builder.astro). Only paths shaped like ours are used. */
+  const IMG = DATA.img && typeof DATA.img === 'object' ? DATA.img : {};
+  const imgOf = (id) => {
+    const p = IMG[str(id)];
+    return typeof p === 'string' && /^[a-z0-9-]+\/[a-z0-9-]+$/.test(p) ? `/images/db/${p}.webp` : '';
+  };
+
   /* Items by id, by name and by any `aliases` (older names, such as the drop table's skill mod names) */
   function pool(list) {
     const items = arr(list).filter((x) => x && x.id != null && str(x.name));
@@ -283,7 +290,7 @@
     { id: 'holster', key: 'h', label: 'Holster' },
     { id: 'body', key: 'c', label: 'Body armor', talents: BODY },
     { id: 'backpack', key: 'p', label: 'Backpack', talents: PACK },
-    { id: 'kneepads', key: 'k', label: 'Kneepads' },
+    { id: 'kneepads', key: 'k', label: 'Knee pads' },
   ];
   const SLOT = Object.fromEntries(SLOTS.map((s) => [s.id, s]));
   const WEAPON_LABEL = ['Primary', 'Secondary'];
@@ -729,49 +736,95 @@
     wp.mag ? `${wp.mag} mag` : '',
   ].filter(Boolean).join(' · ');
   const attrLabel = (x) => (x.v == null ? x.a : `${x.a} ${fmt(x.v, true)}`);
+  /* Shows an <img> with the item's art, or hides it when there is none */
+  function setImg(el, url) {
+    if (!el) return;
+    if (url) { if (el.getAttribute('src') !== url) el.setAttribute('src', url); el.hidden = false; }
+    else { el.removeAttribute('src'); el.hidden = true; }
+  }
+
+  /* One color per gear set, biggest set first, then the first one in the game's order: the same colors the
+     build guides' loadout panels use. */
+  const SET_COLORS = ['#5EC8F0', '#F5C542', '#C4A1FF', '#7EE2B8'];
+  const GAME_ORDER = ['mask', 'body', 'backpack', 'gloves', 'holster', 'kneepads'];
+  function setColors(st, counts) {
+    const first = new Map();
+    GAME_ORDER.forEach((slot, i) => { const id = st.gear[slot].set; if (id && !first.has(id)) first.set(id, i); });
+    const ids = [...counts.keys()].sort((a, b) => counts.get(b) - counts.get(a) || (first.get(a) ?? 9) - (first.get(b) ?? 9));
+    return new Map(ids.map((id, i) => [id, SET_COLORS[i % SET_COLORS.length]]));
+  }
+  const RARITY_COLOR = { 'high-end': '#E2B33C', superior: '#B48CF5', specialized: '#5B9BF7', standard: '#9AA0A6' };
 
   function renderSpec() {
     for (const b of $$('.spec-btn')) {
       const on = b.dataset.spec === S.spec;
       b.classList.toggle('is-active', on);
       b.setAttribute('aria-pressed', on ? 'true' : 'false');
+      if (!b.title) b.title = b.dataset.spec;
     }
+    const sp = specOf(S.spec);
+    lab.classList.toggle('has-spec', !!sp);
+    const emblem = $('#specEmblem');
+    if (emblem) emblem.setAttribute('src', sp && sp.icon ? str(sp.icon) : '/images/icons/icon-spec.webp');
     const btn = $('#subBtn');
     btn.disabled = !S.spec;
-    setText('#subLabel', S.spec ? `${S.focus} (${focusStat(S)})` : 'Pick a specialization');
+    const label = $('#subLabel');
+    if (S.spec) label.replaceChildren(S.focus, ' ', h('span', { class: 'stat' }, focusStat(S)));
+    else label.textContent = 'Pick a specialization';
   }
 
-  function renderGear(counts) {
+  function renderGear(counts, colors) {
     let filled = 0;
-    for (const btn of $$('.gearslot')) {
-      const s = SLOT[btn.dataset.slot];
+    for (const tile of $$('.gtile')) {
+      const s = SLOT[tile.dataset.gtile];
       if (!s) continue;
+      const btn = $('.gearslot', tile);
       const g = S.gear[s.id];
       const set = SETS.get(g.set);
       const tiers = set ? setTiers(set) : [];
-      const active = !!set && tiers.length > 0 && counts.get(str(set.id)) >= tiers[0].pieces;
+      const n = set ? counts.get(str(set.id)) || 0 : 0;
+      const active = !!set && tiers.length > 0 && n >= tiers[0].pieces;
       const attrs = g.attrs.filter((x) => x.a);
       if (set) filled++;
-      btn.classList.toggle('is-set', !!set || attrs.length > 0);
-      btn.classList.toggle('is-bonus', active);
-      setText('.gearslot__val', set ? set.name : attrs.length ? 'No set' : 'Empty', btn);
+      tile.classList.toggle('is-set', !!set);
+      tile.classList.toggle('is-bonus', active);
+      if (set && colors.has(str(set.id))) tile.style.setProperty('--set', colors.get(str(set.id)));
+      else tile.style.removeProperty('--set');
+      setImg($('.gtile__set', tile), set ? imgOf(set.id) : '');
+      setText('[data-count]', set ? `${n}pc` : '', tile);
+      setText('.gearslot__val', set ? set.name : attrs.length ? 'No set' : 'Add a set', btn);
       $('.gearslot__attrs', btn).replaceChildren(...attrs.map((x) => h('span', {
         class: 'gearslot__attr' + (GEAR_ATTRS.has(x.a) ? '' : ' is-legacy'),
       }, short(x.a) + (x.v == null ? '' : ' ' + fmt(x.v, true)))));
-      btn.setAttribute('aria-label', `${s.label}: ${set ? set.name : 'no set'}${attrs.length ? ', ' + attrs.map(attrLabel).join(', ') : ''}`);
+      btn.setAttribute('aria-label', `${s.label}: ${set ? set.name : 'no set'}${attrs.length ? ', ' + attrs.map(attrLabel).join(', ') : ''}. Edit`);
+      // Body armor and backpack: which pieces of this set can carry the talent
+      const look = $('[data-look]', tile);
+      if (look) {
+        const t = s.talents && s.talents.get(g.talent);
+        const rolls = set ? gearRollsOf(s.id, set.id) : null;
+        const where = t && rolls ? rolls[str(t.id)] : null;
+        look.classList.toggle('is-bad', !!(t && rolls && !where));
+        if (t && where) look.replaceChildren('Look for ', ...joined(where.map((x) => B(x))), '.');
+        else if (t && rolls) look.replaceChildren(`No ${set.name} ${s.label.toLowerCase()} rolls ${t.name}.`);
+        else look.replaceChildren();
+        look.hidden = !look.textContent;
+      }
     }
     setText('#gearPieces', `${filled} / 6`);
-    const rig = $('#gearPanel .rig');
-    if (rig) rig.classList.toggle('is-linked', [...counts].some(([id, n]) => { const set = SETS.get(id); const t = set ? setTiers(set) : []; return t.length && n >= t[0].pieces; }));
   }
 
   function renderArmorTalents() {
     for (const btn of $$('[data-armortalent]')) {
       const s = SLOT[btn.dataset.armortalent];
-      const t = s && s.talents.get(S.gear[s.id].talent);
-      setText('.picktag__val', t ? t.name : 'Not set', btn);
+      const g = S.gear[s.id];
+      const t = s && s.talents.get(g.talent);
+      const rolls = t ? gearRollsOf(s.id, g.set) : null;
+      setText('.picktag__val', t ? t.name : `${s.label} talent`, btn);
       effectText($('.picktag__desc', btn), t ? str(t.description) : '', t);
+      setImg($('img', btn), t ? imgOf(t.id) : '');
       btn.classList.toggle('is-set', !!t);
+      btn.classList.toggle('is-off', !!(t && rolls && !rolls[str(t.id)]));
+      btn.setAttribute('aria-label', `${s.label} talent: ${t ? t.name : 'not set'}`);
     }
   }
 
@@ -780,12 +833,14 @@
       const n = i + 1;
       const wp = getWeapon(w.id);
       const exo = isExotic(wp);
-      setText(`#w${n}name`, wp ? wp.name : 'Select weapon');
-      setText(`#w${n}sub`, wp ? weaponLine(wp) : 'Not set');
-      const btn = $(`#w${n}btn`);
-      btn.classList.toggle('is-set', !!wp);
-      btn.classList.toggle('is-exotic', exo);
-      btn.setAttribute('aria-label', `${WEAPON_LABEL[i]} weapon: ${wp ? wp.name : 'not set'}`);
+      const ps = wp ? weaponPoolOf(wp) : null;
+      const card = $(`#w${n}card`);
+      card.classList.toggle('is-set', !!wp);
+      card.classList.toggle('is-exotic', exo);
+      setImg($(`#w${n}img`), wp ? imgOf(wp.id) : '');
+      setText(`#w${n}name`, wp ? wp.name : 'Add a weapon');
+      setText(`#w${n}sub`, wp ? weaponLine(wp) : '');
+      $(`#w${n}btn`).setAttribute('aria-label', `${WEAPON_LABEL[i]} weapon: ${wp ? wp.name : 'not set'}. Change`);
       const tier = $(`#w${n}tier`);
       tier.disabled = !wp;
       tier.value = wp ? w.tier : '';
@@ -794,14 +849,19 @@
       if (exo) {
         setText('.picktag__val', str(wp.talentName) || 'Exotic talent', fixed);
         effectText($('.picktag__desc', fixed), str(wp.talentDescription), wp);
+        setImg($('img', fixed), imgOf('et:' + str(wp.id)));
+        fixed.title = str(wp.talentDescription);
       }
       [0, 1].forEach((j) => {
         const tb = $(`[data-talent="w${n}t${j + 1}"]`);
         const t = WT.get(w.t[j]);
         tb.disabled = !wp;
         tb.classList.toggle('is-set', !!t);
-        setText('.picktag__val', t ? t.name : wp ? 'Not set' : 'Pick a weapon first', tb);
+        tb.classList.toggle('is-off', !!(t && ps && !ps.has(str(t.id))));
+        setText('.picktag__val', t ? t.name : `Talent ${j + 1}`, tb);
         effectText($('.picktag__desc', tb), t ? str(t.description) : '', t);
+        setImg($('img', tb), t ? imgOf(t.id) : '');
+        tb.title = t ? str(t.description) : '';
         tb.setAttribute('aria-label', `${WEAPON_LABEL[i]} talent ${j + 1}: ${t ? t.name : 'not set'}`);
       });
       [0, 1].forEach((j) => {
@@ -810,7 +870,7 @@
         bb.disabled = !wp;
         bb.classList.toggle('is-set', !!x.a);
         bb.classList.toggle('is-legacy', !!x.a && !WEAPON_ATTRS.has(x.a));
-        setText('.picktag__val', x.a ? short(x.a) + (x.v == null ? '' : ' ' + fmt(x.v, true)) : wp ? 'Not set' : 'Pick a weapon first', bb);
+        setText('.picktag__val', x.a ? short(x.a) + (x.v == null ? '' : ' ' + fmt(x.v, true)) : `Attribute ${j + 1}`, bb);
         bb.setAttribute('aria-label', `${WEAPON_LABEL[i]} weapon attribute ${j + 1}: ${x.a ? attrLabel(x) : 'not set'}`);
       });
     });
@@ -818,12 +878,15 @@
 
   function renderOS() {
     const os = OSP.get(S.os);
-    setText('#osName', os ? os.name : 'Select OS Protocol');
-    setText('#osSub', os ? [os.specialization, os.rarity, os.mainStat && os.mainValue ? `${os.mainStat} ${os.mainValue}` : ''].filter(Boolean).join(' · ') : 'Not set');
+    const tile = $('.ktile--os');
+    tile.classList.toggle('is-set', !!os);
+    if (os) tile.style.setProperty('--rarity', RARITY_COLOR[key(os.rarity)] || '#9AA0A6');
+    else tile.style.removeProperty('--rarity');
+    setImg($('#osImg'), os ? imgOf(os.id) : '');
+    setText('#osName', os ? os.name : 'Add an OS Protocol');
+    setText('#osSub', os ? [os.rarity, os.specialization, os.mainStat && os.mainValue ? `${os.mainStat} ${os.mainValue}` : ''].filter(Boolean).join(' · ') : '');
     effectText($('#osDesc'), os ? str(os.talentDescription) : '', os);
-    const slot = $('#osSlot');
-    slot.classList.toggle('is-set', !!os);
-    slot.setAttribute('aria-label', `OS Protocol: ${os ? os.name : 'not set'}`);
+    $('#osSlot').setAttribute('aria-label', `OS Protocol: ${os ? os.name : 'not set'}. Change`);
   }
 
   function renderMods() {
@@ -833,29 +896,40 @@
       const skill = skills ? skills[i] : '';
       btn.disabled = !S.spec;
       btn.classList.toggle('is-set', !!m);
-      setText('.skill-slot__skill', skill, btn);
-      setText('.skill-slot__nm', m ? m.name : S.spec ? 'Select skill mod' : 'Pick a specialization first', btn);
-      setText('.skill-slot__sub', m ? [!skill && m.skill ? str(m.skill) : '', `2pc: ${bonusText(m.bonus2)}`].filter(Boolean).join(' · ') : '', btn);
+      setImg($('.ktile__icon img:not(.ktile__ph)', btn), m ? imgOf(m.id) : '');
+      setText('.skill-slot__skill', skill || (m && m.skill ? str(m.skill) : `Skill mod ${i + 1}`), btn);
+      setText('.skill-slot__nm', m ? m.name : S.spec ? 'Add a mod' : 'Pick a specialization first', btn);
+      setText('.skill-slot__sub', m ? `2pc ${bonusText(m.bonus2)}` : '', btn);
       effectText($('.skill-slot__desc', btn), m ? `3pc: ${str(m.bonus3)}` : '', m);
+      btn.title = m ? `3pc: ${str(m.bonus3)}` : '';
       btn.setAttribute('aria-label', `${skill ? skill + ' mod' : 'Skill mod ' + (i + 1)}: ${m ? m.name : 'not set'}`);
     });
     setText('#skillCount', `${S.mods.filter(Boolean).length} / 3`);
   }
 
-  function renderBonuses(counts) {
+  function renderBonuses(counts, colors) {
     const box = $('#bonusList');
-    const active = [...counts]
-      .map(([id, n]) => ({ set: SETS.get(id), n }))
-      .filter((x) => x.set && setTiers(x.set).some((t) => x.n >= t.pieces));
-    if (!active.length) {
-      box.replaceChildren(h('p', { class: 'empty' }, 'Equip 2 pieces of a set to activate it.'));
+    const sets = [...colors.keys()].map((id) => ({ set: SETS.get(id), n: counts.get(id) || 0, color: colors.get(id) })).filter((x) => x.set);
+    if (!sets.length) {
+      box.replaceChildren(h('p', { class: 'empty' }, 'Two pieces of one set turn on its first bonus.'));
       return;
     }
-    box.replaceChildren(...active.map(({ set, n }) => h('div', { class: 'bonus' },
-      h('div', { class: 'bonus__hd' }, h('span', { class: 'bonus__nm' }, set.name), h('span', { class: 'bonus__pc' }, `${n} pc`)),
-      setTiers(set).filter((t) => n >= t.pieces).map((t) => h('div', { class: 'bonus__line' }, `${t.pieces}pc: ${t.text}`)),
-      caveatOf(set) ? h('div', { class: 'caveat' }, caveatOf(set)) : null,
-    )));
+    box.replaceChildren(...sets.map(({ set, n, color }) => {
+      const tiers = setTiers(set);
+      const max = tiers.length ? tiers[tiers.length - 1].pieces : 0;
+      const node = h('div', { class: 'bonus' },
+        h('div', { class: 'bonus__hd' },
+          imgOf(set.id) ? h('img', { src: imgOf(set.id), alt: '', width: '32', height: '32' }) : null,
+          h('span', { class: 'bonus__nm' }, set.name),
+          h('span', { class: 'bonus__pips', role: 'img', 'aria-label': `${n} of ${max} pieces` },
+            Array.from({ length: max }, (_, k) => h('i', { class: k < n ? 'on' : '' })))),
+        tiers.map((t) => h('div', { class: 'bonus__line' + (n >= t.pieces ? '' : ' is-off') },
+          h('b', null, `${t.pieces}pc`), h('span', null, bonusText(t.text),
+            n >= t.pieces ? '' : ` (${t.pieces - n} more)`))),
+        caveatOf(set) ? h('span', { class: 'caveat' }, caveatOf(set)) : null);
+      node.style.setProperty('--set', color);
+      return node;
+    }));
   }
 
   /* Caps on totals, in percent. Damage Reduction: 80% since Ubisoft's June 26, 2026 server hotfix. */
@@ -913,10 +987,13 @@
     const grade = $('#ratingGrade');
     grade.textContent = a.grade;
     grade.className = 'rating__grade ' + a.cls;
-    setText('#ratingScore', S.spec ? `${a.score} / 100` : '');
+    setText('#ratingScore', S.spec ? `${a.score} out of 100` : '');
     setText('#rigScore', String(a.score));
-    const meter = $('#ratingMeter');
-    if (meter) meter.style.width = a.score + '%';
+    const ring = $('#scoreRing');
+    if (ring) {
+      ring.className = 'ring ' + a.cls;
+      ring.style.setProperty('--score', String(Math.max(0.01, a.score)));
+    }
     $('#diagList').replaceChildren(...a.checks.map(([level, parts]) => h('li', { class: `diag diag--${level}` },
       h('span', { class: 'sr-only' }, CHECK_WORD[level] || ''),
       h('span', { class: 'diag__txt' }, parts))));
@@ -941,17 +1018,19 @@
 
   function renderAll() {
     const counts = setCounts(S);
+    const colors = setColors(S, counts);
     const stats = computeStats(S);
     renderSpec();
-    renderGear(counts);
+    renderGear(counts, colors);
     renderArmorTalents();
     renderWeapons();
     renderOS();
     renderMods();
-    renderBonuses(counts);
+    renderBonuses(counts, colors);
     renderStats(stats);
     renderChecks(analyze(S, stats));
     renderTemplateBar();
+    renderHistory();
   }
 
   /* ---------- URL ---------- */
@@ -969,6 +1048,7 @@
     hideShareLink();
     renderAll();
     writeUrl();
+    remember();
   }
 
   /* A build link always has "=" in it; plain #fragments (the skip link) are left alone. */
@@ -1002,6 +1082,7 @@
     hideShareLink();
     renderAll();
     writeUrl();
+    remember();
   }
 
   function loadTemplate(i) {
@@ -1014,6 +1095,55 @@
     hideShareLink();
     renderAll();
     writeUrl();
+    remember();
+  }
+
+  /* ---------- undo and redo ----------
+     Every change is kept as its link, so stepping back is just reading an older link. */
+  const past = { list: [], at: -1 };
+  const snapshot = () => (S.spec ? encode(S) : '');
+  function remember() {
+    const cur = snapshot();
+    if (past.list[past.at] === cur) { renderHistory(); return; }
+    past.list = past.list.slice(0, past.at + 1);
+    past.list.push(cur);
+    if (past.list.length > 100) past.list.shift();
+    past.at = past.list.length - 1;
+    renderHistory();
+  }
+  function renderHistory() {
+    const u = $('#undoBtn');
+    const r = $('#redoBtn');
+    if (u) u.disabled = past.at <= 0;
+    if (r) r.disabled = past.at < 0 || past.at >= past.list.length - 1;
+  }
+  function restore(i) {
+    if (i < 0 || i >= past.list.length) return;
+    past.at = i;
+    const raw = past.list[i];
+    const r = raw ? decode(raw) : null;
+    S = r && r.state ? r.state : emptyState();
+    loadedTemplate = TEMPLATE_KEYS.indexOf(encode(S));
+    notice = '';
+    hideShareLink();
+    renderAll();
+    writeUrl();
+  }
+  const undo = () => { if (past.at > 0) { restore(past.at - 1); toast('Undone.'); } };
+  const redo = () => { if (past.at < past.list.length - 1) { restore(past.at + 1); toast('Redone.'); } };
+
+  /* Loads a build from a link (saved builds) */
+  function loadHash(raw) {
+    const r = decode(raw);
+    if (!r.state) { toast('That build can\'t be opened any more.'); return false; }
+    S = r.state;
+    loadedTemplate = TEMPLATE_KEYS.indexOf(encode(S));
+    notice = r.dropped ? `${r.dropped} ${plural(r.dropped, 'item', 'items')} in that build didn't match our database and ${plural(r.dropped, 'was', 'were')} left out.` : '';
+    hideShareLink();
+    renderAll();
+    writeUrl();
+    remember();
+    return true;
   }
 
   /* ---------- dialogs ---------- */
@@ -1127,11 +1257,12 @@
       const cur = !it.none && it.id === listCtx.current;
       const btn = h('button', {
         type: 'button',
-        class: 'opt' + (cur ? ' is-current' : '') + (it.none ? ' opt--none' : ''),
+        class: 'opt' + (cur ? ' is-current' : '') + (it.none ? ' opt--none' : '') + (it.img ? ' has-img' : ''),
         'data-id': it.id,
         disabled: !!it.disabled,
         'aria-current': cur ? 'true' : null,
       },
+      it.img ? h('img', { class: 'opt__img' + (it.wide ? ' opt__img--wide' : ''), src: it.img, alt: '', width: it.wide ? '88' : '44', height: it.wide ? '42' : '44', loading: 'lazy', decoding: 'async' }) : null,
       h('span', { class: 'opt__top' }, h('span', { class: 'opt__nm' }, marked(it.name, q)), it.tag ? h('span', { class: 'opt__type' }, it.tag) : null),
       it.desc ? h('span', { class: 'opt__desc' }, marked(it.desc, q)) : null,
       it.alias ? h('span', { class: 'opt__note' }, 'Also called ', marked(it.alias, q)) : null,
@@ -1197,7 +1328,8 @@
     const items = [{ id: 'empty', name: 'Empty loadout', desc: 'Clear everything and start over.' }];
     TEMPLATES.forEach((t, i) => {
       const r = decode(t.hash);
-      items.push({ id: String(i), name: str(t.name), tag: r.state ? r.state.focus : '', group: str(t.spec) });
+      const sp = specOf(t.spec);
+      items.push({ id: String(i), name: str(t.name), tag: r.state ? r.state.focus : '', group: str(t.spec), img: sp && sp.icon ? str(sp.icon) : '' });
     });
     const ti = activeTemplate();
     openList({
@@ -1229,7 +1361,7 @@
   function openWeaponPicker(n) {
     const w = S.w[n - 1];
     const items = EXO.items.slice().sort(byName).map((wp) => ({
-      id: str(wp.id), name: wp.name, tag: str(wp.type), group: 'Exotic',
+      id: str(wp.id), name: wp.name, tag: str(wp.type), group: 'Exotic', img: imgOf(wp.id), wide: true,
       desc: [weaponLine(wp), wp.talentName ? `Talent: ${wp.talentName}` : ''].filter(Boolean).join('. '),
       note: caveatOf(wp),
     }));
@@ -1237,7 +1369,7 @@
     for (const wp of STD.items) if (!types.includes(str(wp.type))) types.push(str(wp.type));
     for (const type of types) {
       STD.items.filter((wp) => str(wp.type) === type).sort(byName).forEach((wp) => items.push({
-        id: str(wp.id), name: wp.name, group: type || 'Other',
+        id: str(wp.id), name: wp.name, group: type || 'Other', img: imgOf(wp.id), wide: true,
         desc: [wp.rpm ? `${wp.rpm} RPM` : '', wp.mag ? `${wp.mag} mag` : ''].filter(Boolean).join(' · '),
         note: caveatOf(wp),
       }));
@@ -1274,7 +1406,7 @@
     const offPool = poolSet && cur && !poolSet.has(str(cur.id)) ? [cur] : [];
     const item = (t, group) => ({
       id: str(t.id), name: t.name, desc: str(t.description), note: caveatOf(t), alias: aliasText(t), find: guessedAliases(t),
-      disabled: str(t.id) === other, why: 'Already on this weapon.', group,
+      disabled: str(t.id) === other, why: 'Already on this weapon.', group, img: imgOf(t.id),
     });
     openList({
       title: `${wp.name}: talent ${j + 1}`,
@@ -1301,7 +1433,7 @@
     const cur = s.talents.get(g.talent);
     const off = rolls && cur && !rolls[str(cur.id)] ? [cur] : [];
     const item = (t, group) => ({
-      id: str(t.id), name: t.name, desc: str(t.description), alias: aliasText(t), find: guessedAliases(t), group,
+      id: str(t.id), name: t.name, desc: str(t.description), alias: aliasText(t), find: guessedAliases(t), group, img: imgOf(t.id),
       note: [rolls && rolls[str(t.id)] ? piecesText(rolls[str(t.id)]) : '', caveatOf(t)].filter(Boolean).join(' '),
     });
     openList({
@@ -1323,7 +1455,7 @@
     const items = OSP.items.slice()
       .sort((a, b) => (fits(b) - fits(a)) || ((rank[key(a.rarity)] ?? 9) - (rank[key(b.rarity)] ?? 9)) || byName(a, b))
       .map((o) => ({
-        id: str(o.id), name: o.name,
+        id: str(o.id), name: o.name, img: imgOf(o.id),
         tag: [o.specialization, o.rarity].filter(Boolean).join(' · '),
         desc: [o.mainStat && o.mainValue ? `${o.mainStat} ${o.mainValue}.` : '', str(o.talentDescription)].filter(Boolean).join(' '),
         note: caveatOf(o), alias: aliasText(o), find: guessedAliases(o),
@@ -1345,7 +1477,7 @@
       items: mine.map((m) => {
         const used = S.mods.indexOf(str(m.id));
         return {
-          id: str(m.id), name: m.name, tag: '', group: hasSkill ? str(m.skill) || 'Other' : '',
+          id: str(m.id), name: m.name, tag: '', group: hasSkill ? str(m.skill) || 'Other' : '', img: imgOf(m.id),
           desc: `2pc: ${bonusText(m.bonus2)}. 3pc: ${str(m.bonus3)}`,
           alias: aliasText(m), find: guessedAliases(m), note: caveatOf(m),
           disabled: used >= 0 && used !== i, why: `Already in slot ${used + 1}.`,
@@ -1548,22 +1680,63 @@
     } catch (e) { /* fall through to the manual field */ }
     return false;
   }
-  async function shareBuild() {
-    if (!S.spec) { toast('Pick a specialization first.'); return; }
-    writeUrl();
-    const url = location.origin + location.pathname + '#' + encode(S);
+  /* The share box shows a link or a text summary to copy by hand when the browser won't copy it */
+  function showShareBox(label, text) {
+    setText('#shareLinkLabel', label);
     const box = $('#shareLink');
     const field = $('#shareLinkField');
-    field.value = url;
-    if (await copyText(url)) {
-      box.hidden = true;
-      toast('Link copied.');
-      return;
-    }
+    field.value = text;
+    field.rows = Math.min(12, text.split('\n').length + 1);
     box.hidden = false;
     field.focus();
     field.select();
+  }
+  const buildUrl = () => location.origin + location.pathname + '#' + encode(S);
+  async function shareBuild() {
+    if (!S.spec) { toast('Pick a specialization first.'); return; }
+    writeUrl();
+    const url = buildUrl();
+    if (await copyText(url)) { hideShareLink(); toast('Link copied.'); return; }
+    showShareBox('Copy this link', url);
     toast('Couldn\'t copy automatically. Copy the link below.');
+  }
+
+  /* A short write-up to paste into Discord or Reddit */
+  function buildText() {
+    const lines = [`${S.name || 'Untitled build'} (${S.spec}, ${S.focus})`];
+    S.w.forEach((w, i) => {
+      const wp = getWeapon(w.id);
+      if (!wp) return;
+      const talents = [isExotic(wp) ? str(wp.talentName) : '', ...w.t.map((id) => { const t = WT.get(id); return t ? t.name : ''; })].filter(Boolean);
+      const attrs = w.attrs.filter((x) => x.a).map(attrLabel);
+      lines.push([`${WEAPON_LABEL[i]}: ${wp.name}${w.tier ? ` (${w.tier})` : ''}`, talents.join(', '), attrs.join(', ')].filter(Boolean).join(' | '));
+    });
+    const os = OSP.get(S.os);
+    if (os) lines.push(`OS Protocol: ${os.name}`);
+    const mods = S.mods.map((id) => MODS.get(id)).filter(Boolean).map((m) => m.name);
+    if (mods.length) lines.push(`Skill mods: ${mods.join(', ')}`);
+    for (const slot of GAME_ORDER) {
+      const s = SLOT[slot];
+      const g = S.gear[slot];
+      const set = SETS.get(g.set);
+      const t = s.talents ? s.talents.get(g.talent) : null;
+      const attrs = g.attrs.filter((x) => x.a).map(attrLabel);
+      if (!set && !t && !attrs.length) continue;
+      lines.push([`${s.label}: ${set ? set.name : 'no set'}`, t ? t.name : '', attrs.join(', ')].filter(Boolean).join(' | '));
+    }
+    const active = [...setCounts(S)].map(([id, n]) => ({ set: SETS.get(id), n }))
+      .filter((x) => x.set && setTiers(x.set).some((t) => x.n >= t.pieces)).map((x) => `${x.n}pc ${x.set.name}`);
+    if (active.length) lines.push(`Sets: ${active.join(', ')}`);
+    lines.push(buildUrl());
+    return lines.join('\n');
+  }
+  async function copyBuildText() {
+    if (!S.spec) { toast('Pick a specialization first.'); return; }
+    writeUrl();
+    const text = buildText();
+    if (await copyText(text)) { hideShareLink(); toast('Build copied as text.'); return; }
+    showShareBox('Copy this text', text);
+    toast('Couldn\'t copy automatically. Copy the text below.');
   }
 
   function openCard() {
@@ -1571,18 +1744,107 @@
     const sets = [...setCounts(S)]
       .map(([id, n]) => ({ set: SETS.get(id), n }))
       .filter((x) => x.set && setTiers(x.set).some((t) => x.n >= t.pieces))
-      .map((x) => `${x.n}pc ${x.set.name}`).join(' · ') || 'None active';
-    const weapons = S.w.map((w) => getWeapon(w.id)).filter(Boolean).map((w) => w.name).join(' · ') || 'None';
+      .map((x) => `${x.n}pc ${x.set.name}`).join(', ') || 'None active';
+    const wps = S.w.map((w) => getWeapon(w.id)).filter(Boolean);
     const os = OSP.get(S.os);
+    const sp = specOf(S.spec);
+    const icon = (url, wide) => (url ? h('img', { src: url, alt: '', class: wide ? 'wide' : null, width: wide ? '96' : '40', height: wide ? '45' : '40' }) : null);
+    const icons = [
+      ...wps.map((wp) => icon(imgOf(wp.id), true)),
+      os ? icon(imgOf(os.id)) : null,
+      ...S.mods.map((id) => (MODS.get(id) ? icon(imgOf(id)) : null)),
+      ...[...setCounts(S).keys()].map((id) => icon(imgOf(id))),
+    ].filter(Boolean);
     const col = (k, v) => h('div', { class: 'cardx__col' }, h('span', { class: 'cardx__k' }, k), h('span', { class: 'cardx__v' }, v));
     $('#cardPreview').replaceChildren(h('div', { class: 'cardx' },
-      h('span', { class: 'cardx__brand' }, 'Resurgence Builds · Build Planner'),
-      h('p', { class: 'cardx__name' }, S.name || 'Untitled build'),
-      h('span', { class: 'cardx__spec' }, S.spec ? `${S.spec} · ${S.focus}` : 'No specialization'),
+      h('span', { class: 'cardx__brand' }, 'Resurgence Builds Build Planner'),
+      h('div', { class: 'cardx__head' },
+        sp && sp.icon ? h('img', { src: str(sp.icon), alt: '', width: '56', height: '56' }) : null,
+        h('div', null,
+          h('p', { class: 'cardx__name' }, S.name || 'Untitled build'),
+          h('span', { class: 'cardx__spec' }, S.spec ? `${S.spec}, ${S.focus}` : 'No specialization'))),
+      icons.length ? h('div', { class: 'cardx__icons' }, icons) : null,
       h('div', { class: 'cardx__row' },
-        col('Gear sets', sets), col('Weapons', weapons), col('OS Protocol', os ? os.name : 'None'),
+        col('Gear sets', sets), col('Weapons', wps.map((w) => w.name).join(', ') || 'None'), col('OS Protocol', os ? os.name : 'None'),
         h('div', { class: 'cardx__col cardx__score' }, h('span', { class: 'cardx__k' }, a.grade), h('b', null, String(a.score))))));
     openDialog($('#cardModal'), $('#cardModal .modal__x'));
+  }
+
+  /* ---------- my builds (this browser only) ---------- */
+  const SAVE_KEY = 'rb-planner-saves';
+  function readSaves() {
+    try {
+      const v = JSON.parse(localStorage.getItem(SAVE_KEY) || '[]');
+      return Array.isArray(v) ? v.filter((x) => x && typeof x.hash === 'string' && x.hash.length < 4000 && typeof x.name === 'string') : [];
+    } catch (e) { return []; }
+  }
+  function writeSaves(list) {
+    try { localStorage.setItem(SAVE_KEY, JSON.stringify(list.slice(0, 40))); return true; } catch (e) { return false; }
+  }
+  function renderSavesCount() {
+    const n = readSaves().length;
+    setText('#mineCount', n ? String(n) : '');
+  }
+  function saveBuild() {
+    if (!S.spec) { toast('Pick a specialization first.'); return; }
+    const name = S.name || 'Untitled build';
+    const list = readSaves();
+    const at = list.findIndex((x) => x.name === name);
+    if (at >= 0) list.splice(at, 1);
+    list.unshift({ name, hash: encode(S), at: Date.now() });
+    if (!writeSaves(list)) { toast('This browser won\'t let the planner save. Use Copy link instead.'); return; }
+    renderSavesCount();
+    toast(at >= 0 ? `Updated "${name}" in My builds.` : `Saved "${name}" to My builds.`);
+  }
+  function svgIcon(d) {
+    const ns = 'http://www.w3.org/2000/svg';
+    const svg = doc.createElementNS(ns, 'svg');
+    for (const [k, v] of Object.entries({ viewBox: '0 0 24 24', width: '18', height: '18', fill: 'none', stroke: 'currentColor', 'stroke-width': '2', 'aria-hidden': 'true' })) svg.setAttribute(k, v);
+    const path = doc.createElementNS(ns, 'path');
+    path.setAttribute('d', d);
+    svg.append(path);
+    return svg;
+  }
+  const dateFmt = new Intl.DateTimeFormat('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+  function renderSaves() {
+    const list = readSaves();
+    const box = $('#savesList');
+    if (!list.length) {
+      box.replaceChildren(h('p', { class: 'opt-empty' }, 'Nothing saved yet. Name your build and press Save.'));
+      return;
+    }
+    box.replaceChildren(...list.map((x, i) => {
+      const r = decode(x.hash);
+      const sp = r.state ? specOf(r.state.spec) : null;
+      const when = new Date(Number(x.at));
+      const name = cleanName(x.name) || 'Untitled build';
+      return h('div', { class: 'save-row' },
+        h('button', {
+          type: 'button', class: 'save-row__load',
+          onclick: () => { closeDialog(true); if (loadHash(x.hash)) toast(`Loaded "${name}".`); },
+        },
+        sp && sp.icon ? h('img', { src: str(sp.icon), alt: '', width: '36', height: '36' }) : null,
+        h('span', { class: 'save-row__txt' },
+          h('span', { class: 'save-row__nm' }, name),
+          h('span', { class: 'save-row__meta' }, [r.state ? `${r.state.spec}, ${r.state.focus}` : 'Can\'t be opened', Number.isNaN(when.getTime()) ? '' : `saved ${dateFmt.format(when)}`].filter(Boolean).join(', ')))),
+        h('button', {
+          type: 'button', class: 'save-row__del', 'aria-label': `Delete ${name}`, title: 'Delete',
+          onclick: () => {
+            const l = readSaves();
+            l.splice(i, 1);
+            writeSaves(l);
+            renderSavesCount();
+            renderSaves();
+            const next = $('#savesList .save-row__load') || $('#savesModal .modal__x');
+            if (next) next.focus();
+            toast(`Deleted "${name}".`);
+          },
+        }, svgIcon('M4 7h16M10 11v6M14 11v6M6 7l1 12a2 2 0 002 2h6a2 2 0 002-2l1-12M9 7V4h6v3')));
+    }));
+  }
+  function openSaves() {
+    renderSaves();
+    openDialog($('#savesModal'), $('#savesList .save-row__load') || $('#savesModal .modal__x'));
   }
 
   /* ---------- wiring ---------- */
@@ -1617,6 +1879,20 @@
     });
   });
   $('#shareBtn').addEventListener('click', shareBuild);
+  $('#mobShare').addEventListener('click', shareBuild);
+  $('#textBtn').addEventListener('click', copyBuildText);
+  $('#saveBtn').addEventListener('click', saveBuild);
+  $('#mineBtn').addEventListener('click', openSaves);
+  $('#undoBtn').addEventListener('click', undo);
+  $('#redoBtn').addEventListener('click', redo);
+  doc.addEventListener('keydown', (e) => {
+    if (dialog || !(e.ctrlKey || e.metaKey) || e.altKey) return;
+    const t = e.target;
+    if (t && (t.isContentEditable || /^(INPUT|TEXTAREA|SELECT)$/.test(t.tagName))) return; // the field's own undo
+    const k = str(e.key).toLowerCase();
+    if (k === 'z' && !e.shiftKey) { e.preventDefault(); undo(); }
+    else if ((k === 'z' && e.shiftKey) || k === 'y') { e.preventDefault(); redo(); }
+  });
   $('#cardBtn').addEventListener('click', openCard);
   $('#shareLinkField').addEventListener('focus', (e) => e.target.select());
   const nameInput = $('#buildNameInput');
@@ -1625,7 +1901,7 @@
     notice = '';
     renderTemplateBar();
     clearTimeout(urlTimer);
-    urlTimer = setTimeout(writeUrl, 300);
+    urlTimer = setTimeout(() => { writeUrl(); remember(); }, 600);
   });
   $('#mobStatusGo').addEventListener('click', () => {
     const p = $('#checksPanel');
@@ -1639,12 +1915,13 @@
     hideShareLink();
     loadFromLocation();
     renderAll();
+    remember();
   });
 
   /* ---------- start ---------- */
   loadFromLocation();
   renderAll();
-  const rig = $('#gearPanel .rig');
-  if (rig) rig.classList.add('is-active');
+  remember();
+  renderSavesCount();
   lab.setAttribute('data-ready', '');
 })();

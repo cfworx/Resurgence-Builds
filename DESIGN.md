@@ -60,8 +60,9 @@ Six, in `em`, each `min-width` paired with a `max-width` 0.01em smaller:
 | 1100px | `68.75em` / `68.74em` | 3-column database grids |
 | 1152px | `72em` / `71.99em` | the one-row desktop menu (from here the logo is as far from the menu as the menu items are from each other); the sticky loadout summary beside build articles (narrower screens get the Loadout button) |
 
-`map-engine.js` uses the same 44.99em query for its phone behaviour. The build planner (`public/css/builder-v3.css`)
-has its own layout breakpoints (480, 880 and 1240px) and is left as an app of its own.
+`map-engine.js` uses the same 44.99em query for its phone behaviour. The build planner (`public/css/builder-v4.css`)
+is laid out like the game's loadout screen and uses the same breakpoints; from 72em (1152px) its summary column sits
+beside the board. Gear sets there take the loadout panel's set colors.
 
 ## Checking a change
 
