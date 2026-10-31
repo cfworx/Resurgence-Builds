@@ -1388,6 +1388,8 @@ main li a:hover {
   justify-content: center;
   flex-wrap: wrap;
 }
+/* Build Planner and Interactive Map: the same width, so they line up when they stack on phones */
+.hero__actions .btn { min-width: 13rem; }
 
 /* --- Hero Banner (with background image) --- */
 .hero-banner {
