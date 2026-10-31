@@ -45,6 +45,29 @@
   ],
   "small": "/images/builds/division-resurgence-any-weapon-commando-beginner-vanguard-build-tiktokandy-loadout-480.webp"
  },
+ "/images/builds/division-resurgence-four-shell-double-barrel-vanguard-build-ggreborn-loadout-1200.webp": {
+  "width": 1200,
+  "height": 542,
+  "srcset": [
+   [
+    480,
+    "/images/builds/division-resurgence-four-shell-double-barrel-vanguard-build-ggreborn-loadout-480.webp"
+   ],
+   [
+    800,
+    "/images/builds/division-resurgence-four-shell-double-barrel-vanguard-build-ggreborn-loadout-800.webp"
+   ],
+   [
+    1200,
+    "/images/builds/division-resurgence-four-shell-double-barrel-vanguard-build-ggreborn-loadout-1200.webp"
+   ],
+   [
+    1600,
+    "/images/builds/division-resurgence-four-shell-double-barrel-vanguard-build-ggreborn-loadout-1600.webp"
+   ]
+  ],
+  "small": "/images/builds/division-resurgence-four-shell-double-barrel-vanguard-build-ggreborn-loadout-480.webp"
+ },
  "/images/builds/division-resurgence-lightweight-m4-commando-vanguard-build-tiktokandy-loadout-1200.webp": {
   "width": 1200,
   "height": 595,
