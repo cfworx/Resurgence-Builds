@@ -5,7 +5,7 @@ subclass: "Aegis Operations"
 playstyle: DPS
 pve: true
 pvp: true
-lastUpdated: 2026-10-28T00:00:00Z
+lastUpdated: 2026-10-31T12:00:00Z
 patch: "1.1.2.2"
 tags: ["Tech Operator", "Aegis Operations", "Jackpot", "Boom-Shakalaka", "Glass Cannon", "Brains Over Brawn", "Warlord", "Skill Crit", "Build"]
 description: "LtFoe's Double Agent Tech Op: two setups, one loadout. Swap 2 gear pieces between Glass Cannon DPS and Duality PvP. 727k DPS, 66% Skill Crit."
@@ -73,7 +73,7 @@ His durable sheet: 24.97k Power Score, 517k to 569k DPS and 20.08% Damage Reduct
 
 ## Before You Copy It
 
-- **A new Enhanced ACR-E can't roll In Sync.** It's not in the ACR-E's pool, and the ACR-E isn't one of the guns Season 2 Phase 1's recalibration fix names, so we can't say how his copy got it. In Sync and Fully Charged both roll on the [Lightweight M4](/database/weapons/lightweight-m4/) (T2), [StG 44](/database/weapons/stg-44/) (T1) and [Classic FAL](/database/weapons/classic-fal/) (T0).
+- **A new Enhanced ACR-E can't roll In Sync.** It's not in the ACR-E's pool, and the ACR-E isn't one of the guns Season 2 Phase 1's recalibration fix names, so we can't say how his copy got it. Among assault rifles, In Sync and Fully Charged both roll on the [Lightweight M4](/database/weapons/lightweight-m4/) (T2), [StG 44](/database/weapons/stg-44/) (T1) and [Classic FAL](/database/weapons/classic-fal/) (T0).
 - **Expect lower burst.** Season 1 Phase 3 fixed Aegis Operation "dealing more damage than expected at regular intervals" after his screenshots, so the 727k sheet and the 1.78m hit run high.
 - **Gear mods got better:** since Season 2 Phase 1 they can roll Skill Crit Chance, Skill Crit Damage and Skill Multi-Shot Chance.
 

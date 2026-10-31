@@ -9,24 +9,38 @@ older in those files.
 - The site's reputation is accuracy. Every game fact traces to the game itself (our screen recordings), an official
   Ubisoft source, or a clearly attributed and hedged creator claim. Never mix in mechanics, numbers or names from The
   Division 1 or 2.
-- Never tell readers a piece of gear or a weapon can roll something it can't. Which talents roll on which weapons and
-  gear pieces is recorded in `research/build-database/` (the "spreadsheet": JSON and CSV per section). Builds, the
-  Build Planner and the database pages must agree with it.
+- Never tell readers a piece of gear or a weapon can roll something it can't, or that it can't roll something it can
+  (we once said a gun couldn't get a talent it can). Which talents roll on which weapons and gear pieces is recorded in
+  `research/build-database/` (the "spreadsheet": JSON and CSV per section). Builds, the Build Planner and the database
+  pages must agree with it. `node scripts/check-rolls.mjs` (part of `npm run build`) checks every build sheet, "these
+  roll it too" swap list and planner link against those lists. Lines like "the only X that rolls Y" or "Z can't roll it"
+  are checked by hand against the same data before they ship.
 - When a claim can't be checked yet, say less rather than guess.
+- Write for readers: use the game's names (no notes correcting what a creator called something) and leave out how we
+  worked something out from a screenshot unless the reader needs it.
 
-## Every new video is an audit
+## Every screenshot and video is an audit
 
-The owner sends screen recordings of the game. For each one:
+The owner sends screen recordings and screenshots of the game, his own or ones he captured from creators' videos. What
+the game shows is the truth, so each one gets a full audit, every time, without being asked:
 
-1. Work out what it shows (talent Source lists, Armory screens, database cards, missions, the Base of Operations...).
-2. Compare it with the research data and the site, and fix what differs. Weapon talent Source lists go through
+1. Work out everything it shows (talent Source lists, Armory screens, database cards, loadout and Attributes screens,
+   missions, the Base of Operations...), not just the thing it was sent for.
+2. Compare all of it with the research data and the site (posts, guides, database pages, the Build Planner) and fix what
+   differs, everywhere it appears. Weapon talent Source lists go through
    `research/build-database/tools/talent_sources.py scan <video>`, gear set, body armor and backpack talent lists through
    `tools/gear_sources.py scan <video>`; check their review sheets by eye before using them, then `compile`. Every standard
    weapon rolls 18 of the 67 weapon talents and every body armor or backpack 12 of its 25 talents: a scan that breaks those
-   counts has misread something. `tools/make_workbook.py` builds the spreadsheet from the records.
-3. Keep good frames for post images (see below).
-4. Note anything the video can't settle and ask the owner for a recording of it. When a build guide needs a screenshot
-   from a creator's YouTube video, give the owner the link and timestamp; he captures it (we can't download YouTube).
+   counts has misread something.
+3. Add what we didn't know: new facts go into the research records (creator footage into `creator-readings.json` and
+   `.csv`) and onto the pages that need them.
+4. Look for a better picture than the one we use now (sharper, newer, or an in-game shot where a post still has an AI
+   image) and swap it in. Keep good frames for post images (see below).
+5. Keep the spreadsheet and the assets current: when the records change, rebuild the workbook with
+   `tools/make_workbook.py`, recalculate it and send the owner the new copy; keep database icons and post images in step
+   with the game.
+6. Note anything it can't settle and ask the owner for a recording of it. When a build guide needs a screenshot from a
+   creator's YouTube video, give the owner the link and timestamp; he captures it (we can't download YouTube).
 
 ## Images: in-game only
 
@@ -45,7 +59,8 @@ The owner sends screen recordings of the game. For each one:
 
 ## Shipping
 
-- Build with `npm run build`, then `git checkout -- public/images/.optimized.json` and `node scripts/check-links.mjs`
-  (0 broken). Check changed pages at phone and desktop widths.
+- Build with `npm run build` (it stops on a roll the game doesn't allow), then
+  `git checkout -- public/images/.optimized.json` and `node scripts/check-links.mjs` (0 broken). Check changed pages at
+  phone and desktop widths.
 - Push to `main` (Cloudflare Pages deploys it) and to `accuracy-pass-2026-10-28`.
 - No em dashes or en dashes in site content.

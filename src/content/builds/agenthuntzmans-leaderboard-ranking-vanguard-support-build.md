@@ -5,7 +5,7 @@ subclass: "Recon"
 playstyle: "Support"
 pve: true
 pvp: false
-lastUpdated: 2026-10-28T12:00:00Z
+lastUpdated: 2026-10-31T12:00:00Z
 patch: "1.2.1"
 tags: ["Recon", "vanguard", "support", "engineering", "smart-cover", "tactical-link", "scanning-pulse", "fully-charged", "team-dps"]
 description: "The Vanguard Recon build that triples your team's DPS through Smart Cover, Scanning Pulse, and Fully Charged stacking."
@@ -25,7 +25,7 @@ faqs:
   - question: "Can I run this build solo?"
     answer: "You can also eat soup with a fork. Technically possible, practically miserable. This build is designed to multiply other people's damage. If there are no other people, you are multiplying zero. For solo content, run a Vanguard Commando DPS build instead and come back to Recon when you have friends. Or matchmake. We don't judge."
   - question: "Is the P90 actually better than an LMG for this build?"
-    answer: "For this build, absolutely. The P90 fires fast, which means you burn through magazines fast and trigger Fully Charged (+7.50% Engineering) on every empty reload. An LMG with a 100-round belt takes forever to empty, so you're waiting ages between Engineering stacks. But here's the real reason: the build needs BOTH Torrential Downpour and Fully Charged on the same weapon. Based on community reports when this was written, only two SMGs could roll both talents: the P90 and the AUG A3 Para XS. The Vector couldn't roll Fully Charged and the MP7 couldn't roll Torrential Downpour, which left the P90 as the fast-firing pick. Season 2 Phase 1 fixed several weapons (a First Wave Vector among them) pulling recalibration talents from the wrong pool, so double-check in-game before you recal. AgentHuntzman didn't pick it randomly."
+    answer: "For this build, absolutely. The P90 fires fast, which means you burn through magazines fast and trigger Fully Charged (+7.50% Engineering) on every empty reload. An LMG with a 100-round belt takes forever to empty, so you're waiting ages between Engineering stacks. But here's the real reason: the build needs BOTH Torrential Downpour and Fully Charged on the same weapon. In the game's Build-Making Database only two SMGs roll both talents: the P90 and the AUG A3 Para XS. Neither Vector rolls Fully Charged and the MP7 doesn't roll Torrential Downpour, which leaves the P90 as the fast-firing pick. An older First Wave Vector can still carry a talent from outside its pool: until Season 2 Phase 1, recalibrating one pulled from the wrong pool. AgentHuntzman didn't pick it randomly."
   - question: "What's the best Vanguard support build in Division Resurgence?"
     answer: "You're looking at it, at least as of Season 1. The Vanguard Recon running 4pc Mechanical Expert + 2pc Boom-Shakalaka was the highest-impact support build we'd found when this went up, and AgentHuntzman's pitch is that it triples team DPS. Nobody has been re-crowned in Season 2 yet, mostly because we haven't re-tested it. Until then it keeps the title by default, like the guy who holds the office fantasy trophy because nobody else showed up."
   - question: "Do I need Legendary drops for this build?"

@@ -5,7 +5,7 @@ subclass: "Tactical Pharma"
 playstyle: DPS
 pve: true
 pvp: true
-lastUpdated: 2026-10-28T00:00:00Z
+lastUpdated: 2026-10-31T12:00:00Z
 patch: "1.2.1"
 tags: ["Tactical Pharma", "jackpot", "fire-cycle", "chemical-trap", "glass-cannon", "backup-battery", "roguemadras", "field-medic-build", "800k-dps", "skill-damage"]
 description: "RogueMadras's 800k DPS Tactical Pharma build: Chemical Trap + Oxidizing Hive, Jackpot 4pc, Fire Cycle 2pc. Full gear, talents, and skill mods."
@@ -72,7 +72,7 @@ Read off his own setup in May 2026, which differs from the sheet (below).
 ## Before You Copy It
 
 - **Recorded before Season 2.** Season 2 Phase 1 reworked mods: new weapon mods roll twice the Engineering and can add Skill Intensity or Skill Crit Damage, and gear mods can now roll Skill Crit Chance, Crit Damage, Multi-Shot and Intensity. The sets, talents, skill mods and OS Protocols here weren't changed. [GGReborn's build](/builds/tactical-pharma-season-2-build-ggreborn/) is the Season 2 version.
-- **His Vector is a Vector 45 ACP raised to T2.** The T2 First Wave Vector can't roll Backup Battery or Backup Magazine.
+- **His Vector is a Vector 45 ACP raised to T2.** The T2 First Wave Vector can't roll Backup Battery.
 - **The rifle isn't his Mk16.** Only the Custom 416 G3 (T2) and Enhanced ACR-E (T1) assault rifles roll Multi-Pronged Attack and Multitasking together.
 
 ## His Own Setup
