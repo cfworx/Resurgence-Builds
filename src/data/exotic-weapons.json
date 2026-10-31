@@ -163,8 +163,6 @@
     "movementSpeed": "44",
     "stability": "50",
     "acquisition": "Season 2 Phase 1 Classified Ops Pass (free and premium track). Since Season 2 Phase 2, Exotic Sealed Caches can grant exotics from previous seasons.",
-    "note": "Early copies didn't all match: on Ubisoft's bug reporter (TDR-134), players found Bighorns from the Season 2 Phase 1 pass dealing Piercing or Shredding damage while the Armory showed Blast. Ubisoft marked the report Done on September 25, 2026, and the in-game Build-Making Database lists Shredding. TikTokAndy's Piercing copy in his September 16 video is one of those early ones. We listed it as Piercing until October 28.",
-    "caveat": true,
     "verifiedInGame": "2026-10-28",
     "possibleTalents": [
       "Multi-Pronged Attack",

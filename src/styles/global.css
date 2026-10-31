@@ -1113,6 +1113,10 @@ main > .section > :last-child > :last-child { margin-bottom: 0; }
 .bsheet__group--wide { grid-column: 1 / -1; }
 @media (min-width: 56em) { .bsheet__cols { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: var(--sp-6); } }
 .bsheet__grid2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: var(--sp-4); }
+.bsheet__grid3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); column-gap: var(--sp-3); }
+.bsheet__grid3 > .bsheet__item { flex-direction: column; align-items: flex-start; gap: var(--sp-2); border-top: 0; }
+/* A second heading inside one group (OS Protocol, then Skill Mods) */
+.prose .bsheet__label--next { margin-top: var(--sp-1); padding-top: var(--sp-3); border-top: 1px solid var(--border); }
 .prose .bsheet__label, .prose .syn__title {
   margin: 0 0 var(--sp-2);
   font-family: var(--font-mono);

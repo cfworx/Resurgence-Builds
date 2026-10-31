@@ -86,30 +86,38 @@ const small = (img?: DbImage) => img ? img.srcset[0][1] : undefined;
       ))}
     </div>
 
-    <div class="lo__block lo__skills">
-      <h3 class="lo__label">OS Protocol and skill mods</h3>
-      <ul class="lo__skilllist">
+    {(L.os || L.mods.length > 0) && (
+      <div class="lo__block lo__skills">
         {L.os && (
-          <li class="lo__skill">
-            {L.os.icon && <img src={small(L.os.icon)} srcset={srcset(L.os.icon)} sizes="44px" width="44" height="44" alt="" decoding="async" />}
-            <div>
-              <p class="lo__role">OS Protocol</p>
-              <p class="lo__name"><a href={L.os.href}>{L.os.name}</a></p>
-              <p class="lo__meta">{L.os.meta}</p>
+          <div class="lo__part">
+            <h3 class="lo__label">OS Protocol</h3>
+            <div class="lo__skill lo__skill--os">
+              {L.os.icon && <img src={small(L.os.icon)} srcset={srcset(L.os.icon)} sizes="52px" width="52" height="52" alt="" decoding="async" />}
+              <div>
+                <p class="lo__name"><a href={L.os.href}>{L.os.name}</a></p>
+                <p class="lo__meta">{L.os.meta}</p>
+              </div>
             </div>
-          </li>
+          </div>
         )}
-        {L.mods.map((m) => (
-          <li class="lo__skill">
-            {m.icon && <img src={small(m.icon)} srcset={srcset(m.icon)} sizes="44px" width="44" height="44" alt="" decoding="async" />}
-            <div>
-              <p class="lo__role">{m.skill}</p>
-              <p class="lo__name"><a href={m.href}>{m.name}</a></p>
-            </div>
-          </li>
-        ))}
-      </ul>
-    </div>
+        {L.mods.length > 0 && (
+          <div class="lo__part">
+            <h3 class="lo__label">Skill Mods</h3>
+            <ul class="lo__skilllist">
+              {L.mods.map((m) => (
+                <li class="lo__skill">
+                  {m.icon && <img src={small(m.icon)} srcset={srcset(m.icon)} sizes="44px" width="44" height="44" alt="" decoding="async" />}
+                  <div>
+                    <p class="lo__role">{m.skill}</p>
+                    <p class="lo__name"><a href={m.href}>{m.name}</a></p>
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+      </div>
+    )}
   </div>
 
   <div class="lo__block lo__gearblock">
@@ -273,10 +281,15 @@ const small = (img?: DbImage) => img ? img.srcset[0][1] : undefined;
   .lo__chip img { flex: none; width: 28px; height: 28px; border-radius: 50%; background: #2a2a2e; }
   .lo__attrs { margin-top: 6px !important; font-size: var(--step--2); line-height: var(--lh-small); color: var(--ink-muted); }
 
+  /* OS Protocol and Skill Mods: two sections with their own headings, split by a rule (Cory, October 31) */
+  .lo__part + .lo__part { margin-top: var(--sp-5); padding-top: var(--sp-5); border-top: 1px solid var(--border); }
   .lo__skilllist { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--sp-3); }
   .lo__skill { display: grid; grid-template-columns: 44px minmax(0, 1fr); gap: var(--sp-3); align-items: center; margin: 0; }
   .lo__skill img { width: 44px; height: 44px; border-radius: 10px; background: #2a2a2e; border: 1px solid rgba(255, 255, 255, 0.08); }
   .lo__skill .lo__name { font-size: var(--step--1); }
+  .lo__skill--os { grid-template-columns: 52px minmax(0, 1fr); }
+  .lo__skill--os img { width: 52px; height: 52px; }
+  .lo__skill--os .lo__name { font-size: var(--step-0); }
   @media (min-width: 35em) and (max-width: 59.99em) {
     .lo__skilllist { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   }

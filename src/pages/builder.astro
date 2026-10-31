@@ -127,19 +127,6 @@ const dataPayload = JSON.stringify({
     recalFixed: { patch: RECAL_FIX.patch, dateText: RECAL_FIX.dateText, weapons: RECAL_FIX.weapons } },
 }).replace(/</g, '\\u003c');
 
-const gearSetCount = gearSets.length;
-const osCount = osProtocols.length;
-const smcCount = skillModCombos.length;
-const wtCount = weaponTalents.length;
-
-const faqs = [
-  { question: 'Where does the planner data come from?', answer: `From this site's database: ${gearSetCount} gear sets, ${wtCount} weapon talents, ${osCount} OS Protocols and ${smcCount} skill mod combos, checked against the game's own Build-Making Database and kept current from Ubisoft's patch notes and drop tables. Templates come from our build guides, and numbers a creator read off their own screen are marked as theirs in the guide.` },
-  { question: 'Can I put any talent on any gun or gear piece?', answer: `No, and the planner only offers what can roll. Each weapon has a pool of 18 talents, and each body armor piece and backpack can roll 12 of its 25. Pick a weapon and its talent list shows only that gun's pool; pick a set for the body armor or backpack and the talent list shows only what a piece of that set can carry, with the pieces named. It all comes from the Source lists in the game's Build-Making Database, which we recorded on ${SOURCES_RECORDED}. A template from a creator whose gun or gear carries something outside those lists gets flagged in the checks.` },
-  { question: 'Are the stat totals exact?', answer: 'They add up set bonuses, OS Protocol stats, each skill mod combo\'s 2-piece bonus (shown as a range) and the roll values you type in. Rolls without a value are listed but not added, and talent effects are left out because they depend on conditions.' },
-  { question: 'What does the score check?', answer: 'How complete the build is (40 points), whether each gear piece counts toward an active set bonus (30), whether your attributes fit your focus (20) and whether your OS Protocol matches it (10). Each warning takes 5 off. The checks under the score say what to look at.' },
-  { question: 'How do I share or keep a build?', answer: 'Copy link puts the whole build in a link, roll values and weapon tiers included, and it opens without an account. Copy as text gives you a short write-up to paste into Discord or Reddit. Save keeps the build in My builds on this device, and Undo (Ctrl+Z) takes back the last change.' },
-];
-
 const chevron = 'M6 9l6 6 6-6';
 // The game's order for gear: mask, body armor and backpack on top, gloves, holster and knee pads below
 const GEAR = [
@@ -153,14 +140,13 @@ const GEAR = [
   description={description}
   breadcrumbs={breadcrumbs}
   jsonLd={jsonLd}
-  faqs={faqs}
   noAds={true}
 >
   <Fragment slot="head">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="/css/builder-v4.css?v=1" />
+    <link rel="stylesheet" href="/css/builder-v4.css?v=2" />
   </Fragment>
 
   <div class="lab" id="lab">
@@ -174,6 +160,12 @@ const GEAR = [
         <input type="text" class="pl-name" id="buildNameInput" placeholder="Name your build" maxlength="60" autocomplete="off" spellcheck="false" />
       </div>
       <div class="pl-bar__tools">
+        <!-- Slot machine: spins every slot and fills it with a random loadout the game allows -->
+        <button type="button" class="pl-slot" id="slotBtn" aria-label="Take your chances: fill every slot at random">
+          <span class="pl-slot__reels" aria-hidden="true"><i><b>7</b><b>&#9733;</b><b>7</b></i><i><b>7</b><b>&#9733;</b><b>7</b></i><i><b>7</b><b>&#9733;</b><b>7</b></i></span>
+          <span class="pl-slot__label" aria-hidden="true"><span>Take your chances</span><span>Stop the reels</span></span>
+          <span class="pl-slot__lever" aria-hidden="true"><span></span></span>
+        </button>
         <button type="button" class="pl-btn pl-btn--load" id="tplBtn" aria-haspopup="dialog">
           <svg aria-hidden="true" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 5h16M4 12h16M4 19h10"/></svg>
           <span id="tplLabel">Load a build guide</span>
@@ -269,24 +261,30 @@ const GEAR = [
           </div>
         </section>
 
-        <section class="pl-sec" aria-labelledby="kitTitle">
-          <h2 class="pl-h" id="kitTitle">OS Protocol and skill mods <span class="pl-count" id="skillCount">0 / 3</span></h2>
-          <div class="pl-kit">
+        <div class="pl-kitrow">
+          <section class="pl-sec pl-sec--os" aria-labelledby="osTitle">
+            <h2 class="pl-h" id="osTitle">OS Protocol</h2>
             <div class="ktile ktile--os">
               <button type="button" class="ktile__main" id="osSlot" aria-haspopup="dialog">
                 <span class="ktile__icon"><img id="osImg" alt="" width="56" height="56" hidden /><img class="ktile__ph" src="/images/icons/icon-os.webp" alt="" width="28" height="28" /></span>
-                <span class="ktile__txt"><span class="ktile__kind">OS Protocol</span><span class="ktile__name" id="osName">Add an OS Protocol</span><span class="ktile__sub" id="osSub"></span></span>
+                <span class="ktile__txt"><span class="ktile__name" id="osName">Add an OS Protocol</span><span class="ktile__sub" id="osSub"></span></span>
               </button>
               <p class="ktile__desc" id="osDesc" hidden></p>
             </div>
-            {[0, 1, 2].map((i) => (
-              <button type="button" class="ktile ktile--mod skill-slot" data-skill={i} aria-haspopup="dialog" disabled>
-                <span class="ktile__icon"><img alt="" width="48" height="48" hidden /><img class="ktile__ph" src="/images/icons/icon-skillmod.webp" alt="" width="24" height="24" /></span>
-                <span class="ktile__txt"><span class="ktile__kind skill-slot__skill">Skill {i + 1}</span><span class="ktile__name skill-slot__nm">Pick a specialization first</span><span class="ktile__sub skill-slot__sub"></span><span class="skill-slot__desc" hidden></span></span>
-              </button>
-            ))}
-          </div>
-        </section>
+          </section>
+
+          <section class="pl-sec pl-sec--mods" aria-labelledby="modsTitle">
+            <h2 class="pl-h" id="modsTitle">Skill Mods <span class="pl-count" id="skillCount">0 / 3</span></h2>
+            <div class="pl-mods">
+              {[0, 1, 2].map((i) => (
+                <button type="button" class="ktile ktile--mod skill-slot" data-skill={i} aria-haspopup="dialog" disabled>
+                  <span class="ktile__icon"><img alt="" width="48" height="48" hidden /><img class="ktile__ph" src="/images/icons/icon-skillmod.webp" alt="" width="24" height="24" /></span>
+                  <span class="ktile__txt"><span class="ktile__kind skill-slot__skill">Skill {i + 1}</span><span class="ktile__name skill-slot__nm">Pick a specialization first</span><span class="ktile__sub skill-slot__sub"></span><span class="skill-slot__desc" hidden></span></span>
+                </button>
+              ))}
+            </div>
+          </section>
+        </div>
 
         <section class="pl-sec" id="gearPanel" aria-labelledby="gearTitle">
           <h2 class="pl-h" id="gearTitle">Gear <span class="pl-count" id="gearPieces">0 / 6</span></h2>
@@ -401,6 +399,22 @@ const GEAR = [
 
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
+  <!-- Slot machine payout: the spin's score, then spin again -->
+  <div class="slot-win" id="slotWin" hidden>
+    <div class="slot-win__panel">
+      <div class="slot-win__num" aria-hidden="true"><span id="slotWinNum">0</span></div>
+      <div class="slot-win__txt" role="status" aria-live="polite">
+        <p class="slot-win__title" id="slotWinTitle"></p>
+        <p class="slot-win__line" id="slotWinLine"></p>
+      </div>
+      <button type="button" class="slot-win__again" id="slotAgain">Spin again</button>
+      <button type="button" class="slot-win__x" id="slotWinX" aria-label="Close">
+        <svg aria-hidden="true" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+  </div>
+  <div class="slot-fx" id="slotFx" aria-hidden="true"></div>
+
   <!-- Phones: the score and the link stay in reach while you edit -->
   <div class="mob-status" id="mobStatus">
     <button class="mob-status__score" id="mobStatusGo" type="button" aria-label="Go to the build check">
@@ -410,24 +424,8 @@ const GEAR = [
     <button class="pl-btn pl-btn--go mob-status__share" id="mobShare" type="button">Copy link</button>
   </div>
 
-  <section class="lab-about">
-    <h2>How the planner works</h2>
-    <p>Pick a specialization and focus, then tap any slot to fill it: weapons and their talents, the OS Protocol and skill mods, and each gear piece's set, attributes and talent. Load one of our <a href="/builds/">build guides</a> to start from a creator's loadout. Every option comes from our <a href="/database/">database</a>, and talent lists only show what can actually roll.</p>
-    <p>The build check scores the loadout and flags sets with no active bonus, pieces past a set's last bonus, talents a piece can't roll and attributes that don't fit your focus. Stats add up set bonuses, OS Protocol stats, skill mod 2-piece bonuses and the roll values you enter.</p>
-
-    <h2>Frequently asked questions</h2>
-    <div class="lab-about__faqs">
-      {faqs.map(faq => (
-        <details class="lab-about__faq">
-          <summary>{faq.question}</summary>
-          <p>{faq.answer}</p>
-        </details>
-      ))}
-    </div>
-  </section>
-
   <script type="application/json" id="builder-data" set:html={dataPayload}></script>
-  <script is:inline src="/js/builder-v3-engine.js?v=10"></script>
+  <script is:inline src="/js/builder-v3-engine.js?v=11"></script>
   <script is:inline>
     // If the engine didn't start (blocked or failed to load), say so instead of showing dead buttons
     if (!document.getElementById('lab').hasAttribute('data-ready')) document.getElementById('labError').hidden = false;

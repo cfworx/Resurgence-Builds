@@ -62,7 +62,10 @@ Six, in `em`, each `min-width` paired with a `max-width` 0.01em smaller:
 
 `map-engine.js` uses the same 44.99em query for its phone behaviour. The build planner (`public/css/builder-v4.css`)
 is laid out like the game's loadout screen and uses the same breakpoints; from 72em (1152px) its summary column sits
-beside the board. Gear sets there take the loadout panel's set colors.
+beside the board. Gear sets there take the loadout panel's set colors. OS Protocol and Skill Mods are separate sections
+there and in the build loadout panel (Cory, October 31). Gold is reserved for the planner's "Take your chances" slot
+machine (the button, the reels and the payout card); it only ever fills slots with combinations the game allows, from
+the same roll lists the pickers use. The planner page has no text block or FAQ under the tool (Cory's call).
 
 ## Checking a change
 

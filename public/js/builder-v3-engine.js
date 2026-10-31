@@ -308,6 +308,8 @@
   let S = emptyState();
   let loadedTemplate = -1; // index of the last template loaded, for the template label
   let notice = ''; // one-line message about the last link that was loaded
+  let spin = null; // the slot machine while its reels turn: { stop(), cancel() }
+  const endSpin = () => { if (spin) spin.cancel(); };
 
   /* Skill mods: when the data says which skill each set is for, the three slots are the focus's
      three skills (planner-specs.json). Without that field they are three plain slots. */
@@ -1076,6 +1078,7 @@
   }
 
   function resetBuild() {
+    endSpin();
     S = emptyState();
     loadedTemplate = -1;
     notice = '';
@@ -1089,6 +1092,7 @@
     const t = TEMPLATES[i];
     const r = t && decode(t.hash);
     if (!r || !r.state) return;
+    endSpin();
     S = r.state;
     loadedTemplate = i;
     notice = '';
@@ -1119,6 +1123,7 @@
   }
   function restore(i) {
     if (i < 0 || i >= past.list.length) return;
+    endSpin();
     past.at = i;
     const raw = past.list[i];
     const r = raw ? decode(raw) : null;
@@ -1136,6 +1141,7 @@
   function loadHash(raw) {
     const r = decode(raw);
     if (!r.state) { toast('That build can\'t be opened any more.'); return false; }
+    endSpin();
     S = r.state;
     loadedTemplate = TEMPLATE_KEYS.indexOf(encode(S));
     notice = r.dropped ? `${r.dropped} ${plural(r.dropped, 'item', 'items')} in that build didn't match our database and ${plural(r.dropped, 'was', 'were')} left out.` : '';
@@ -1148,11 +1154,13 @@
 
   /* ---------- dialogs ---------- */
   let dialog = null; // { el, opener, onClose }
-  const INERT_TARGETS = () => [$('.skip-link'), $('#site-header'), $('.hero'), lab, $('.lab-about'), $('.site-footer'), $('#mobStatus')].filter(Boolean);
+  const INERT_TARGETS = () => [$('.skip-link'), $('#site-header'), $('.hero'), lab, $('.site-footer'), $('#mobStatus'), $('#slotWin')].filter(Boolean);
   const focusables = (root) => $$('button, [href], input, select, textarea, summary, [tabindex]:not([tabindex="-1"])', root)
     .filter((n) => !n.disabled && !n.hidden && n.getClientRects().length > 0);
 
   function openDialog(el, initial, onClose) {
+    endSpin();
+    hideWin();
     if (dialog) closeDialog(true);
     dialog = { el, opener: doc.activeElement, onClose };
     el.hidden = false;
@@ -1847,6 +1855,499 @@
     openDialog($('#savesModal'), $('#savesList .save-row__load') || $('#savesModal .modal__x'));
   }
 
+  /* ---------- take your chances: the slot machine ----------
+     One press fills every slot with a random loadout the game allows: two different guns with one exotic at
+     most, talents from each gun's own pool, body armor and backpack talents a piece of that set can carry,
+     the focus's own skill mods and two different attributes on every piece. The build is set (and in the
+     link and the undo history) at once; the reels are only a show on top of it. Each slot spins and stops
+     in turn, then the score counts up and the payout card calls the pull. Pressing again stops the reels. */
+  const rnd = (n) => Math.floor(Math.random() * n);
+  const pickOne = (list) => list[rnd(list.length)];
+  function pickSome(list, n) {
+    const a = list.slice();
+    for (let i = a.length - 1; i > 0; i--) { const j = rnd(i + 1); const t = a[i]; a[i] = a[j]; a[j] = t; }
+    return a.slice(0, n);
+  }
+  const LUCKY_NAMES = ['Lucky Pull', 'House Money', "Beginner's Luck", 'All In', 'Snake Eyes', 'Double Down', 'Wild Card',
+    'Long Shot', 'Pocket Aces', 'Coin Flip Special', 'Hold My Coffee', 'Rolled the Dice', 'One More Spin', 'Luck of the Draw',
+    'Feeling Lucky', 'Loose Slots', 'Dad Said It Was Fine', 'Fortune Favors the Agent', 'Vegas Rules', 'The Gambler'];
+
+  function randomBuild() {
+    const st = emptyState();
+    const sp = pickOne(SPECS);
+    st.spec = sp.name;
+    st.focus = pickOne(sp.focuses).name;
+    st.name = pickOne(LUCKY_NAMES);
+    // Weapons: two different guns; about one pull in three puts an exotic in one slot
+    const exoSlot = EXO.items.length && Math.random() < 0.35 ? rnd(2) : -1;
+    const guns = pickSome(STD.items, 2);
+    st.w.forEach((w, i) => {
+      const wp = i === exoSlot ? pickOne(EXO.items) : guns[i];
+      if (!wp) return;
+      w.id = str(wp.id);
+      const ps = weaponPoolOf(wp);
+      const talents = ps ? pickSome([...ps].filter((id) => WT.get(id)), 2) : [];
+      w.t = [str(talents[0] || ''), str(talents[1] || '')];
+      w.attrs = pickSome(WEAPON_ATTRS.list, 2).map((r) => ({ a: r.name, v: null }));
+    });
+    // Gear: each pull loads the reels differently. Most pulls weight two sets (plus the odd wild one), some
+    // lean on one set, and some are pure chaos, so set bonuses land some of the time, not every time.
+    const main = pickSome(SETS.items, 2);
+    const mode = Math.random();
+    const odds = mode < 0.3 ? [0, 0] : mode < 0.82 ? [0.45, 0.8] : [0.72, 0.72];
+    for (const s of SLOTS) {
+      const g = st.gear[s.id];
+      const roll = Math.random();
+      const set = roll < odds[0] ? main[0] : roll < odds[1] ? main[1] : pickOne(SETS.items);
+      if (!set) continue;
+      g.set = str(set.id);
+      if (s.talents) {
+        const rolls = gearRollsOf(s.id, set.id);
+        const ok = rolls ? Object.keys(rolls).filter((id) => s.talents.get(id)) : [];
+        g.talent = ok.length ? pickOne(ok) : '';
+      }
+      g.attrs = pickSome(GEAR_ATTRS.list, 2).map((r) => ({ a: r.name, v: null }));
+    }
+    const os = pickOne(OSP.items);
+    st.os = os ? str(os.id) : '';
+    const mine = MODS.items.filter((m) => key(m.specialization) === key(st.spec));
+    const skills = focusSkills(st);
+    if (skills) {
+      st.mods = skills.map((sk) => {
+        const c = mine.filter((m) => key(m.skill) === key(sk));
+        return c.length ? str(pickOne(c).id) : '';
+      });
+    } else placeMods(st, pickSome(mine, 3).map((m) => str(m.id)));
+    return st;
+  }
+
+  /* Art for the reels: a handful per kind, fetched the first time the button is hovered, focused or touched */
+  let reelArt = null;
+  function warmReels() {
+    if (reelArt) return reelArt;
+    const urls = (list) => list.map((x) => imgOf(x.id)).filter(Boolean);
+    reelArt = {
+      weapons: pickSome(urls(STD.items), 20),
+      sets: urls(SETS.items),
+      os: pickSome(urls(OSP.items), 20),
+      mods: pickSome(urls(MODS.items), 20),
+      talents: pickSome(urls(WT.items), 20),
+      armor: pickSome(urls([...BODY.items, ...PACK.items]), 14),
+      specs: SPECS.map((s) => str(s.icon)).filter(Boolean),
+    };
+    for (const list of Object.values(reelArt)) for (const u of list) { const im = new Image(); im.decoding = 'async'; im.src = u; }
+    return reelArt;
+  }
+
+  const coarse = window.matchMedia && window.matchMedia('(pointer: coarse)').matches;
+  const buzz = (p) => { try { if (coarse && navigator.vibrate) navigator.vibrate(p); } catch (e) { /* no vibration here */ } };
+  const slotBtn = $('#slotBtn');
+  const SLOT_LABEL = slotBtn ? slotBtn.getAttribute('aria-label') : '';
+
+  function spinBuild() {
+    if (spin) { spin.stop(); return; }
+    if (dialog) closeDialog(true);
+    hideWin();
+    hideShareLink();
+    const before = S.spec ? encode(S) : '';
+    let next = randomBuild();
+    for (let i = 0; i < 3 && encode(next) === before; i++) next = randomBuild();
+    S = next;
+    loadedTemplate = -1;
+    notice = '';
+    renderAll();
+    writeUrl();
+    remember();
+    const result = analyze(S, computeStats(S));
+    if (slotBtn) {
+      slotBtn.classList.remove('is-pull');
+      void slotBtn.offsetWidth;
+      slotBtn.classList.add('is-pull');
+    }
+    if (reduceMotion) { payout(result, true); return; }
+    runReels(result);
+  }
+
+  function runReels(result) {
+    const art = warmReels();
+    // One clock for everything: the document timeline the reel animations run on, so a busy first frame
+    // delays text and reels alike and they still land together.
+    const tl = document.timeline;
+    const timeNow = () => (tl && tl.currentTime != null ? tl.currentTime : performance.now());
+    const t0 = timeNow();
+    const jobs = [];    // { t, fn } once the clock passes t
+    const rollers = []; // flickering text and icons: { end, next, tick(), land() }
+    const reels = [];   // spinning art windows: { anims, box, done, onLand }
+    const reads = [];   // setup reads layout first, then writes, so the page lays out once
+    const writes = [];
+    let raf = 0;
+    let over = false;
+    let stops = 0;
+    const job = (t, fn) => jobs.push({ t, fn, done: false });
+    const write = (fn) => writes.push(fn);
+
+    const pop = (el) => {
+      if (!el) return;
+      el.classList.remove('slot-pop');
+      void el.offsetWidth;
+      el.classList.add('slot-pop');
+    };
+    /* Text that flickers through random words, then lands on what the render already wrote */
+    function roll(el, words, end) {
+      if (!el || !words.length) return;
+      let tall = 0;
+      reads.push(() => { tall = el.offsetHeight; });
+      write(() => {
+        const kept = [...el.childNodes].map((n) => n.cloneNode(true));
+        if (tall) el.style.minHeight = `${tall}px`;
+        el.classList.add('slot-roll');
+        rollers.push({
+          end, next: 0, done: false,
+          tick() { el.textContent = pickOne(words); },
+          land() { el.replaceChildren(...kept); el.classList.remove('slot-roll'); el.style.minHeight = ''; pop(el); },
+        });
+      });
+    }
+    /* An icon that flickers (talent chips), then shows its own art again */
+    function rollImg(img, urls, end) {
+      if (!img || !urls.length) return;
+      write(() => {
+        const src = img.getAttribute('src');
+        const hid = img.hidden;
+        img.hidden = false;
+        rollers.push({
+          end, next: 0, done: false,
+          tick() { img.setAttribute('src', pickOne(urls)); },
+          land() { if (src) img.setAttribute('src', src); else img.removeAttribute('src'); img.hidden = hid; },
+        });
+      });
+    }
+    /* Hidden until its slot stops (attribute chips, set counts, the OS talent text) */
+    function holdTill(el, t) {
+      if (!el) return;
+      write(() => el.classList.add('slot-wait'));
+      job(t, () => { el.classList.remove('slot-wait'); pop(el); });
+    }
+    /* A tile stops: it drops the gold edge and flashes in its own color */
+    function flash(tile, color) {
+      if (!tile) return;
+      tile.classList.remove('is-reeling');
+      const glow = h('span', { class: 'slot-glow', 'aria-hidden': 'true' });
+      glow.style.setProperty('--flash', color || '#FFD36A');
+      tile.append(glow);
+      glow.addEventListener('animationend', () => glow.remove(), { once: true });
+      buzz(6);
+    }
+    /* A reel in an art window: a strip of art scrolls down past the window and settles on the final
+       picture (cell 1) with a small bounce; cell 0 sits above it for the bounce to show. A window that
+       isn't on screen (the agent emblem on phones) just lands on time. */
+    function reel(win, urls, finalUrl, t, opts) {
+      const o = opts || {};
+      if (!win || !urls.length) { if (o.onLand) job(t, o.onLand); return; }
+      let H = 0;
+      let size = 0;
+      reads.push(() => {
+        H = win.clientHeight;
+        size = o.wide ? 0 : (o.ref && !o.ref.hidden && o.ref.offsetWidth) || Math.round(H * 0.72);
+      });
+      write(() => {
+        if (!H) { if (o.onLand) job(t, o.onLand); return; }
+        const n = Math.max(9, Math.min(34, Math.round(t / 66)));
+        const cells = [];
+        for (let i = 0; i <= n; i++) {
+          const url = i === 1 ? finalUrl : pickOne(urls);
+          const img = url ? h('img', { src: url, alt: '', decoding: 'async', draggable: 'false' }) : null;
+          if (img && size) { img.style.width = `${size}px`; img.style.height = `${size}px`; }
+          if (img && i === 1 && o.focus) img.style.objectPosition = o.focus;
+          const cell = h('div', { class: 'reel__cell' }, img);
+          cell.style.height = `${H}px`;
+          cells.push(cell);
+        }
+        const strip = h('div', { class: 'reel__strip' }, cells);
+        const box = h('div', { class: 'reel' + (o.wide ? ' reel--wide' : ''), 'aria-hidden': 'true' }, strip);
+        win.append(box);
+        const to = -H;
+        const bounce = Math.round(H * 0.16);
+        const move = strip.animate([
+          { transform: `translate3d(0, ${-n * H}px, 0)`, easing: 'cubic-bezier(.3, 0, .2, 1)' },
+          { transform: `translate3d(0, ${to + bounce}px, 0)`, offset: 0.9, easing: 'cubic-bezier(.3, 0, .3, 1)' },
+          { transform: `translate3d(0, ${to}px, 0)` },
+        ], { duration: t, fill: 'forwards' });
+        const blur = strip.animate([
+          { filter: 'blur(0px)' }, { filter: 'blur(2.4px)', offset: 0.1 }, { filter: 'blur(2.4px)', offset: 0.58 },
+          { filter: 'blur(0px)', offset: 0.84 }, { filter: 'blur(0px)' },
+        ], { duration: t, fill: 'forwards' });
+        // both start on the shared clock, not whenever the browser gets to them
+        if (tl && tl.currentTime != null) { move.startTime = t0; blur.startTime = t0; }
+        const r = { anims: [move, blur], box, done: false, onLand: o.onLand };
+        reels.push(r);
+        move.onfinish = () => landReel(r);
+      });
+    }
+    function landReel(r) {
+      if (r.done) return;
+      r.done = true;
+      r.box.classList.add('is-out');
+      setTimeout(() => r.box.remove(), 170);
+      if (r.onLand) r.onLand();
+    }
+
+    // Word lists for the flicker
+    const names = (list) => list.map((x) => str(x.name)).filter(Boolean);
+    const guns = [...STD.items, ...EXO.items];
+    const W = {
+      guns: names(guns), gunLines: pickSome(guns, 24).map(weaponLine), talents: names(WT.items),
+      gunAttrs: WEAPON_ATTRS.list.map((r) => short(r.name)), os: names(OSP.items),
+      osLines: pickSome(OSP.items, 20).map((x) => [x.rarity, x.specialization].filter(Boolean).join(' · ')),
+      mods: names(MODS.items), modLines: pickSome(MODS.items, 20).map((m) => `2pc ${bonusText(m.bonus2)}`),
+      skills: [...new Set(MODS.items.map((m) => str(m.skill)).filter(Boolean))], sets: names(SETS.items),
+      armor: names([...BODY.items, ...PACK.items]), focuses: SPECS.flatMap((s) => s.focuses.map((f) => f.name)),
+    };
+
+    const board = $('.pl-board');
+    write(() => {
+      lab.classList.add('is-spinning');
+      if (board) board.inert = true;
+      if (slotBtn) { slotBtn.classList.add('is-spinning'); slotBtn.setAttribute('aria-label', 'Stop the reels'); }
+    });
+
+    // The agent: chase lights run across the five specializations and slow down onto the pick
+    const specBtns = $$('.spec-btn');
+    const target = Math.max(0, specBtns.findIndex((b) => b.dataset.spec === S.spec));
+    write(() => specBtns.forEach((b) => b.classList.remove('is-active')));
+    let t = 0;
+    const STEPS = 13;
+    for (let k = 0; k < STEPS; k++) {
+      const at = (((target - (STEPS - 1 - k)) % specBtns.length) + specBtns.length) % specBtns.length;
+      t += 34 + 0.42 * k * k;
+      job(t, () => specBtns.forEach((b, i) => b.classList.toggle('is-chase', i === at)));
+    }
+    const tSpec = Math.round(t + 60);
+    const sp = specOf(S.spec);
+    reel($('.pl-agent__emblem'), art.specs, sp && sp.icon ? str(sp.icon) : '', tSpec, { ref: $('#specEmblem') });
+    job(tSpec, () => { specBtns.forEach((b) => b.classList.remove('is-chase')); renderSpec(); pop(specBtns[target]); flash($('#specPanel'), '#FF8A3D'); });
+    roll($('#subLabel'), W.focuses, tSpec + 90);
+    const nameInput = $('#buildNameInput');
+    if (nameInput && nameInput !== doc.activeElement) {
+      rollers.push({ end: tSpec + 150, next: 0, done: false, tick() { nameInput.value = pickOne(LUCKY_NAMES); }, land() { nameInput.value = S.name; pop(nameInput); } });
+    }
+
+    // Weapons
+    const tGun = tSpec + 190;
+    [1, 2].forEach((n, i) => {
+      const card = $(`#w${n}card`);
+      const wp = getWeapon(S.w[i].id);
+      const exo = isExotic(wp);
+      const tw = tGun + i * 150;
+      write(() => card.classList.add('is-reeling'));
+      reel($('.wtile__art', card), art.weapons, wp ? imgOf(wp.id) : '', tw,
+        { wide: true, focus: exo ? 'center 30%' : '', onLand: () => flash(card, exo ? '#E2B33C' : '#FF8A3D') });
+      roll($(`#w${n}name`), W.guns, tw);
+      roll($(`#w${n}sub`), W.gunLines, tw);
+      [$(`#w${n}fixed`), $(`[data-talent="w${n}t1"]`), $(`[data-talent="w${n}t2"]`), $(`[data-wbonus="${n}"][data-wbidx="1"]`), $(`[data-wbonus="${n}"][data-wbidx="2"]`)]
+        .filter((c) => c && !c.hidden)
+        .forEach((c, j) => {
+          const tc = tw + 70 + j * 55;
+          const attr = c.matches('[data-wbonus]');
+          roll($('.picktag__val', c), attr ? W.gunAttrs : W.talents, tc);
+          if (!attr) rollImg($('img', c), art.talents, tc);
+        });
+    });
+
+    // OS Protocol
+    const tOs = tGun + 150 + 170;
+    const osTile = $('.ktile--os');
+    const os = OSP.get(S.os);
+    write(() => osTile.classList.add('is-reeling'));
+    reel($('.ktile__icon', osTile), art.os, os ? imgOf(os.id) : '', tOs,
+      { ref: $('#osImg'), onLand: () => flash(osTile, os ? RARITY_COLOR[key(os.rarity)] : '') });
+    roll($('#osName'), W.os, tOs);
+    roll($('#osSub'), W.osLines, tOs);
+    holdTill($('#osDesc'), tOs + 60);
+
+    // Skill mods
+    const tMod = tOs + 110;
+    $$('.skill-slot').forEach((btn, i) => {
+      const tm = tMod + i * 95;
+      const m = MODS.get(S.mods[i]);
+      write(() => btn.classList.add('is-reeling'));
+      reel($('.ktile__icon', btn), art.mods, m ? imgOf(m.id) : '', tm,
+        { ref: $('.ktile__icon img:not(.ktile__ph)', btn), onLand: () => flash(btn, '#FF8A3D') });
+      roll($('.skill-slot__skill', btn), W.skills, tm);
+      roll($('.skill-slot__nm', btn), W.mods, tm);
+      roll($('.skill-slot__sub', btn), W.modLines, tm);
+    });
+
+    // Gear, in the game's order, one reel after another
+    const tGear = tMod + 2 * 95 + 130;
+    GAME_ORDER.forEach((slot, i) => {
+      const tile = $(`.gtile[data-gtile="${slot}"]`);
+      if (!tile) return;
+      const tg = tGear + i * 110;
+      const set = SETS.get(S.gear[slot].set);
+      write(() => tile.classList.add('is-reeling'));
+      reel($('.gtile__emblem', tile), art.sets, set ? imgOf(set.id) : '', tg,
+        { ref: $('.gtile__set', tile), onLand: () => flash(tile, tile.style.getPropertyValue('--set')) });
+      roll($('.gearslot__val', tile), W.sets, tg);
+      holdTill($('[data-count]', tile), tg);
+      holdTill($('.gearslot__attrs', tile), tg + 70);
+      const chip = $('[data-armortalent]', tile);
+      if (chip) { roll($('.picktag__val', chip), W.armor, tg + 120); rollImg($('img', chip), art.armor, tg + 120); }
+      holdTill($('[data-look]', tile), tg + 170);
+    });
+    const tEnd = tGear + 5 * 110 + 220;
+
+    // The button's own three reels stop one by one at the end
+    const minis = slotBtn ? $$('.pl-slot__reels i', slotBtn) : [];
+    minis.forEach((m, i) => job(tEnd - 300 + i * 130, () => m.classList.add('is-stop')));
+
+    // The score spins as well, and the grade waits
+    const ringNum = $('#rigScore');
+    const mobNum = $('#mobScore');
+    const grade = $('#ratingGrade');
+    const mobGrade = $('#mobGrade');
+    write(() => {
+      grade.textContent = 'Rolling…';
+      grade.className = 'rating__grade';
+      mobGrade.textContent = 'Rolling…';
+    });
+    rollers.push({ end: tEnd, next: 0, done: false, tick() { const v = String(10 + rnd(90)); ringNum.textContent = v; mobNum.textContent = v; }, land() {} });
+    job(tEnd, () => finish(false));
+
+    // Read every size first, then change the page
+    for (const r of reads) r();
+    for (const w of writes) w();
+    jobs.sort((a, b) => a.t - b.t);
+
+    function frame(ts) {
+      const now = ts - t0;
+      for (const j of jobs) if (!j.done && now >= j.t) { j.done = true; j.fn(); if (over) return; }
+      for (const r of rollers) {
+        if (r.done) continue;
+        if (now >= r.end) { r.done = true; r.land(); }
+        else if (now >= r.next) { r.tick(); const p = Math.min(1, now / r.end); r.next = now + 40 + 170 * p * p * p; }
+      }
+      if (!over) raf = requestAnimationFrame(frame);
+    }
+
+    /* Stop: everything still to come happens five times sooner; a second press lands it all now */
+    function hurry(f) {
+      const now = timeNow() - t0;
+      for (const j of jobs) if (!j.done) j.t = now + Math.max(0, j.t - now) * f;
+      for (const r of rollers) if (!r.done) { r.end = now + Math.max(0, r.end - now) * f; r.next = Math.min(r.next, now); }
+      for (const r of reels) {
+        if (r.done) continue;
+        for (const a of r.anims) {
+          if (!f) { try { a.finish(); } catch (e) { /* already done */ } }
+          else if (typeof a.updatePlaybackRate === 'function') a.updatePlaybackRate(1 / f);
+          else a.playbackRate = 1 / f;
+        }
+      }
+    }
+
+    function finish(silent) {
+      if (over) return;
+      over = true;
+      cancelAnimationFrame(raf);
+      for (const r of reels) { for (const a of r.anims) { try { a.finish(); } catch (e) { /* already done */ } } landReel(r); }
+      for (const r of rollers) if (!r.done) { r.done = true; r.land(); }
+      for (const j of jobs) if (!j.done) { j.done = true; j.fn(); }
+      for (const n of $$('.is-reeling, .slot-wait, .is-chase')) n.classList.remove('is-reeling', 'slot-wait', 'is-chase');
+      for (const m of minis) m.classList.remove('is-stop');
+      lab.classList.remove('is-spinning');
+      if (board) board.inert = false;
+      if (slotBtn) { slotBtn.classList.remove('is-spinning'); slotBtn.setAttribute('aria-label', SLOT_LABEL); }
+      spin = null;
+      renderAll();
+      if (!silent) payout(result, false);
+    }
+
+    spin = {
+      stop() { hurry(stops++ ? 0 : 0.2); },
+      cancel() { finish(true); },
+    };
+    raf = requestAnimationFrame(frame);
+  }
+
+  /* The payout card: the score counts up, then the verdict */
+  const PAYOUT = [
+    { min: 90, title: 'Jackpot', color: '#FFD36A', lines: ['Screenshot it before the house notices.', 'Even the RNG is impressed.', 'Walk away. Walk away right now.'] },
+    { min: 80, title: 'Big win', color: '#4ADE80', lines: ['That one could actually run the Dark Zone.', 'Somewhere a min-maxer just got nervous.', 'The machine owes you nothing now.'] },
+    { min: 70, title: 'Winner', color: '#5B9BF7', lines: ['Not bad for one pull of the lever.', 'Respectable. Tweak a piece or two and go.', 'Your dad would call that a solid effort.'] },
+    { min: 55, title: 'Push', color: '#FF8A3D', lines: ['Not great, not terrible. Pull again.', 'The machine is just warming up.', 'Could be worse. Could also be a lot better.'] },
+    { min: 0, title: 'Bust', color: '#F87171', lines: ['The house wins. The house always wins.', 'That build has strong store credit energy.', 'Even the vendor would pass on this one.'] },
+  ];
+  let winTimer = 0;
+  function payout(a, instant) {
+    const box = $('#slotWin');
+    if (!box) return;
+    const tier = PAYOUT.find((x) => a.score >= x.min) || PAYOUT[PAYOUT.length - 1];
+    const panel = $('.slot-win__panel', box);
+    panel.style.setProperty('--win', tier.color);
+    setText('#slotWinTitle', '');
+    $('#slotWinLine').replaceChildren();
+    box.classList.remove('is-show', 'is-paid');
+    box.hidden = false;
+    void box.offsetWidth;
+    box.classList.add('is-show');
+    const nums = [$('#rigScore'), $('#mobScore'), $('#slotWinNum')].filter(Boolean);
+    const settle = () => {
+      for (const n of nums) n.textContent = String(a.score);
+      setText('#slotWinTitle', tier.title);
+      $('#slotWinLine').replaceChildren(pickOne(tier.lines), h('span', { class: 'sr-only' }, ` Score ${a.score} out of 100: ${a.grade}.`));
+      box.classList.add('is-paid');
+      if (tier.min >= 90 && !instant) { coins(); buzz([30, 40, 30, 40, 70]); const ring = $('#scoreRing'); if (ring) { ring.classList.remove('is-jackpot'); void ring.offsetWidth; ring.classList.add('is-jackpot'); } }
+      else if (!instant) buzz(14);
+      clearTimeout(winTimer);
+      winTimer = setTimeout(hideWin, 8000);
+    };
+    if (instant) { settle(); return; }
+    const start = performance.now();
+    const dur = 760;
+    const step = (now) => {
+      const p = Math.min(1, (now - start) / dur);
+      const v = Math.round(a.score * (1 - Math.pow(1 - p, 3)));
+      for (const n of nums) n.textContent = String(v);
+      if (p < 1) requestAnimationFrame(step);
+      else settle();
+    };
+    requestAnimationFrame(step);
+  }
+  function hideWin() {
+    clearTimeout(winTimer);
+    const box = $('#slotWin');
+    if (!box || box.hidden) return;
+    box.classList.remove('is-show', 'is-paid');
+    box.hidden = true;
+  }
+  /* Gold coins and sparks fly out of the score, then fall */
+  function coins() {
+    const fx = $('#slotFx');
+    const from = $('#slotWinNum');
+    if (!fx || !from) return;
+    const r = from.getBoundingClientRect();
+    const x = r.left + r.width / 2;
+    const y = r.top + r.height / 2;
+    for (let i = 0; i < 34; i++) {
+      const bit = h('i', { class: i % 3 ? 'coin' : 'spark' });
+      bit.style.left = `${x}px`;
+      bit.style.top = `${y}px`;
+      fx.append(bit);
+      const ang = -Math.PI / 2 + (Math.random() - 0.5) * Math.PI * 1.2;
+      const v = 200 + Math.random() * 280;
+      const vx = Math.cos(ang) * v;
+      const vy = Math.sin(ang) * v;
+      const g = 900 + Math.random() * 300;
+      const spinDeg = (Math.random() - 0.5) * 900;
+      const frames = [0, 0.2, 0.4, 0.6, 0.8, 1].map((p) => ({
+        transform: `translate(${vx * p}px, ${vy * p + 0.5 * g * p * p}px) rotate(${spinDeg * p}deg) scale(${p < 0.2 ? 0.6 + 2 * p : 1})`,
+        opacity: p < 0.7 ? 1 : 1 - (p - 0.7) / 0.3,
+      }));
+      const anim = bit.animate(frames, { duration: 1100 + Math.random() * 500, easing: 'linear', fill: 'forwards' });
+      anim.onfinish = () => bit.remove();
+    }
+  }
+
   /* ---------- wiring ---------- */
   function chooseSpec(name) {
     const sp = specOf(name);
@@ -1894,6 +2395,24 @@
     else if ((k === 'z' && e.shiftKey) || k === 'y') { e.preventDefault(); redo(); }
   });
   $('#cardBtn').addEventListener('click', openCard);
+  // The slot machine. Its art loads the first time someone points at, focuses or touches the button.
+  if (slotBtn) {
+    slotBtn.addEventListener('click', spinBuild);
+    for (const ev of ['pointerenter', 'focus', 'touchstart']) slotBtn.addEventListener(ev, () => { warmReels(); }, { once: true, passive: true });
+  }
+  const winBox = $('#slotWin');
+  const backToSlot = () => { if (slotBtn) slotBtn.focus({ preventScroll: true }); };
+  $('#slotAgain').addEventListener('click', () => { backToSlot(); spinBuild(); });
+  $('#slotWinX').addEventListener('click', () => { hideWin(); backToSlot(); });
+  winBox.addEventListener('pointerenter', () => clearTimeout(winTimer));
+  winBox.addEventListener('focusin', () => clearTimeout(winTimer));
+  winBox.addEventListener('pointerleave', () => { clearTimeout(winTimer); if (!winBox.hidden) winTimer = setTimeout(hideWin, 3000); });
+  doc.addEventListener('keydown', (e) => {
+    if (e.key !== 'Escape' || dialog || winBox.hidden) return;
+    const inside = winBox.contains(doc.activeElement);
+    hideWin();
+    if (inside) backToSlot();
+  });
   $('#shareLinkField').addEventListener('focus', (e) => e.target.select());
   const nameInput = $('#buildNameInput');
   nameInput.addEventListener('input', () => {
@@ -1910,6 +2429,8 @@
   });
   window.addEventListener('hashchange', () => {
     if (!isBuildHash(location.hash.slice(1)) && location.hash) return;
+    if (spin && location.hash === '#' + encode(S)) return; // the spin's own link
+    endSpin();
     clearTimeout(urlTimer);
     if (dialog) closeDialog(true);
     hideShareLink();
