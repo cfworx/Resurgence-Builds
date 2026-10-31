@@ -129,7 +129,7 @@ OS Protocols grow two ways, and Ubisoft's own patch notes show the pattern for o
 
 The flat attributes climb much faster than the percentage: the same level 42 Recursive Treatment shows +285 Engineering against the +77 in our level 1 data, about 3.7 times, and AgentHuntzman's level 50 Pressing Matter shows +358 Engineering, about 4.6 times. GGReborn's level 50 protocols land on the same 4.6: Close Quarters Menace shows +358 Firepower (+77 here) and Assault Charge +447 (+97).
 
-So when you compare two protocols, compare them at the same level and upgrade step, or you're comparing a puppy to a dog. The [OS Protocol database](/database/os-protocols/) lists base values; the [tier list](/tier-list/os-protocols/) ranks them from creator results.
+So when you compare two protocols, compare them at the same level and upgrade step, or you're comparing a puppy to a dog. The [OS Protocol database](/database/os-protocols/) lists base values; the [tier list](/tier-list/os-protocols/) shows how players rank them.
 
 ## Damage types, briefly
 

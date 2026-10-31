@@ -2,493 +2,201 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import SectionTag from '../../components/SectionTag.astro';
-import { verifiedPatch } from '../../data/site-config';
-const lastVerified = verifiedPatch('Patch 1.1.2.2'); // Our own last in-game ranking. The current tiers come from creator results (Cory's call, October 2026), so don't bump this without an in-game re-test.
-// Date of the Season 2 Phase 2 creator-results re-rank.
-const TIER_UPDATED = '2026-10-25';
-const tierUpdatedLabel = new Date(TIER_UPDATED + 'T12:00:00Z').toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC' });
+import AdSenseUnit from '../../components/AdSenseUnit.astro';
+import TierBoard from '../../components/TierBoard.astro';
+import osProtocols from '../../data/os-protocols.json';
+import { dbImage } from '../../utils/db-images';
+import { TIERS, compareItems, snapshotItems, snapshotUpdated, snapshotVotes, voteCount } from '../../utils/votes';
+import '../../styles/tier-votes.css';
+
+// Ranked by player votes since October 31, 2026 (Cory's call): every protocol can be ranked S to D right on this page
+// (its Rank button) or on its database page, and this page sorts them by their average. See VOTES.md.
+const slugify = (name: string) => name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+const SPEC_COLOR: Record<string, string> = { Engineering: '#F5CC45', Firepower: '#F26822', Toughness: '#3a7bd5' };
+const RARITY_ORDER = ['High-End', 'Superior', 'Specialized', 'Standard'];
+const items = [...osProtocols]
+  .sort((a: any, b: any) => (RARITY_ORDER.indexOf(a.rarity) - RARITY_ORDER.indexOf(b.rarity)) || a.name.localeCompare(b.name))
+  .map((p: any) => {
+    const slug = slugify(p.name);
+    return {
+      id: slug,
+      name: p.name,
+      href: `/database/os-protocols/${slug}/`,
+      sub: `${p.specialization} · ${p.rarity}`,
+      image: dbImage(`os-protocols/${slug}`, 'icon')?.srcset[0][1],
+      dot: SPEC_COLOR[p.specialization],
+      group: p.specialization,
+    };
+  });
+
+const snap = snapshotItems('os');
+const totalVotes = snapshotVotes('os');
+const rankedCount = items.filter((i) => snap[i.id]).length;
+const ordered = [
+  ...items.filter((i) => snap[i.id]).sort((x, y) =>
+    (TIERS.indexOf(snap[x.id].tier!) - TIERS.indexOf(snap[y.id].tier!)) || compareItems({ ...snap[x.id], name: x.name }, { ...snap[y.id], name: y.name })),
+  ...items.filter((i) => !snap[i.id]),
+];
+const typeCount = (t: string) => items.filter((i) => i.group === t).length;
 
 const breadcrumbItems = [{ name: 'Tier Lists', url: '/tier-list/' }, { name: 'OS Protocol Tier List', url: '/tier-list/os-protocols/' }];
+const title = 'OS Protocol Tier List: S to D Rankings';
+const description = 'All 66 Division Resurgence OS Protocols ranked S to D by players. Tap Rank on any protocol, watch the list re-sort live, and see what the creators run per class.';
+const RANKED_BY_PLAYERS = '2026-10-31T12:00:00.000Z';
+const lastVote = snapshotUpdated('os');
+const modified = lastVote && lastVote > RANKED_BY_PLAYERS ? lastVote : RANKED_BY_PLAYERS;
+const siteUrl = 'https://resurgencebuilds.com';
 
-const title = "OS Protocol Tier List: S to D Rankings";
-const description = "Division Resurgence OS Protocol tier list for Season 2 Phase 2, ranked S to D from creator results (not our own in-game tests), with sources and best picks per class.";
-
-// Season 2 Phase 2 re-rank (2026-10-25) from creator results, not our own in-game tests.
-// Rules (also stated on the page): a protocol that a Season 2 creator build runs in its endgame results ranks highest;
-// one with no Season 2 creator evidence keeps its old tier but caps at A; one nerfed since the old ranking drops a tier.
-// `was` marks a protocol whose tier changed in this update; `cr` is the Season 2 creator evidence shown on its card.
-
-// S Tier
-const sTier = [
-  { name: 'Brains Over Brawn', spec: 'Engineering', rarity: 'Specialized', was: 'A', cr: "GGReborn's Season 2 Tactical Pharma pick", note: 'Skill Crit Chance plus extra damage from Engineering. Also the pick on two older Tech Op creator builds' },
-  { name: 'Cover Shooter', spec: 'Firepower', rarity: 'High-End', was: 'A', cr: "TikTokAndy's Double Barrel pick since October", note: 'Weapon Damage plus stacking Crit Damage behind cover. He calls it second to none for PvE with the Double Barrel' },
-];
-
-// A Tier
-const aTier = [
-  { name: 'Collateral Damage', spec: 'Engineering', rarity: 'High-End', was: 'S', cr: 'Tied in GGReborn\'s Oct 23 Lone Wolf test', note: '3000% Engineering AoE around whatever your skills hit, no condition beyond a 10s cooldown' },
-  { name: 'Chain Reaction', spec: 'Engineering', rarity: 'Superior', was: 'B', cr: 'Fastest by 3s in GGReborn\'s Oct 23 Lone Wolf test', note: 'Add-clearing skill builds' },
-  { name: 'Tactical Persistence', spec: 'Engineering', rarity: 'Superior', was: 'B', cr: 'Tied in GGReborn\'s Oct 23 Lone Wolf test', note: 'Sustained skill DPS' },
-  { name: 'Recursive Treatment', spec: 'Engineering', rarity: 'Superior', was: 'B', cr: "TikTokAndy's Aegis Team Healer pick", note: 'Engineering plus Skill Intensity when you heal or grant Extra Health' },
-  { name: 'Augmented Lethality', spec: 'Firepower', rarity: 'Superior', was: 'B', cr: "TikTokAndy's Commando pick through early October", note: 'Weapon Damage and Incoming Healing per enemy within 20m' },
-  { name: 'Explosive Round', spec: 'Firepower', rarity: 'High-End', was: 'S', cr: "TikTokAndy's Lightweight M4 pick, Oct 27", note: 'Free AoE on aimed crits. Its first Season 2 creator result came after our October 25 re-rank, so it stays at A until the next one' },
-  { name: 'Explosive Charge', spec: 'Engineering', rarity: 'High-End', was: 'S', note: 'AoE on enhanced skill hits (5s cooldown). No Season 2 creator results yet, so it caps at A' },
-  { name: 'Pummeling Shield', spec: 'Toughness', rarity: 'High-End', was: 'S', note: "Bulwark's defining protocol, but the June 26 hotfix cut the stun to 1.5s on a 10s cooldown" },
-  { name: 'Heavy Armor', spec: 'Toughness', rarity: 'High-End', was: 'S', note: '+14.4% Damage while Extra Health is up. No Season 2 creator results yet, so it caps at A' },
-  { name: 'Concerted Strike', spec: 'Firepower', rarity: 'High-End', note: '+24% Damage at 3 stacks. 20m range check fixed in Season 2 Phase 2, and the bug report (TDR-58) closed on October 23' },
-  { name: 'Surgical Engineering', spec: 'Engineering', rarity: 'High-End', note: 'Skill crit damage stacking, Demolitionist' },
-  { name: 'Tactical Layering', spec: 'Engineering', rarity: 'High-End', note: 'Engineering stacking, most reliable scaling skill builds' },
-  { name: 'Strategic Assistance', spec: 'Engineering', rarity: 'High-End', note: 'Signature charge generation, Vanguard team play. TikTokAndy also makes a case for it on an Aegis healer' },
-  { name: 'Overwhelming Power', spec: 'Firepower', rarity: 'High-End', note: 'Sustained DPS, 50% damage reduction window' },
-  { name: 'Assault Charge', spec: 'Firepower', rarity: 'High-End', note: 'Signature burst windows, Tech Operator and Vanguard' },
-  { name: 'Relentless Assault', spec: 'Engineering', rarity: 'High-End', note: 'Sustained-fire skill builds, LMG hybrids. Damage type fixed to Weapon Damage in Season 2 Phase 2' },
-  { name: 'Happy Survival', spec: 'Toughness', rarity: 'High-End', note: 'Close-range, shotgun and SMG mains' },
-];
-
-// B Tier
-const bTier = [
-  { name: 'Rampart', spec: 'Engineering', rarity: 'High-End', note: 'Stationary turret play, resets on movement' },
-  { name: 'Close and Personal', spec: 'Engineering', rarity: 'Superior', note: 'Vanguard buff-team play' },
-  { name: 'Pressing Matter', spec: 'Engineering', rarity: 'Superior', note: 'Universal cooldown recovery' },
-  { name: 'Ambusher', spec: 'Engineering', rarity: 'Superior', note: 'Stationary marksman-skill hybrids' },
-  { name: 'Cornered Animal', spec: 'Engineering', rarity: 'Superior', note: 'Low-magazine shotgun/grenade launcher' },
-  { name: 'Together We Stand', spec: 'Engineering', rarity: 'Superior', note: 'Close-formation team play' },
-  { name: 'Chase the Weak', spec: 'Engineering', rarity: 'Superior', note: 'Corrosive Field Medic and Vanguard Pulse setups' },
-  { name: 'Trench Fighter', spec: 'Firepower', rarity: 'Superior', note: 'Cover-based crit damage' },
-  { name: 'Mechanized Support', spec: 'Firepower', rarity: 'Superior', note: 'Tech Operator and Demolitionist near deployed skills' },
-  { name: 'Pressure Cooker', spec: 'Firepower', rarity: 'Superior', note: 'Aggressive close-range crit stacking' },
-  { name: 'Combat Reload', spec: 'Firepower', rarity: 'Superior', note: 'Shotgun and Marksman Rifle reload builds' },
-  { name: 'Tactical Pistolero', spec: 'Firepower', rarity: 'Superior', note: 'Skill-weapon hybrids' },
-  { name: 'Tight Grouping', spec: 'Firepower', rarity: 'Superior', note: 'High rate of fire cover builds' },
-  { name: 'Assisted Infantry', spec: 'Firepower', rarity: 'Superior', note: 'LMG sustained-fire' },
-  { name: 'Death From Afar', spec: 'Firepower', rarity: 'Superior', note: 'Headshot-stacking marksman' },
-  { name: 'Dominating Presence', spec: 'Firepower', rarity: 'Superior', note: 'Shotgun crowd-clear Multi-Shot. Only granted Multi-Shot after a Season 2 Phase 1 fix; Phase 2 capped it at 35% (base)' },
-  { name: 'Close Quarters Menace', spec: 'Firepower', rarity: 'Superior', note: 'Aggressive Field Medic shotgun' },
-  { name: 'Deadly Accuracy', spec: 'Firepower', rarity: 'Superior', note: 'Marksman precision, punishes missed shots' },
-  { name: 'Blitz Tactics', spec: 'Toughness', rarity: 'Superior', note: 'Aggressive tank soloing' },
-  { name: 'Medical Excellence', spec: 'Toughness', rarity: 'Superior', note: 'Dedicated Field Medic healer' },
-  { name: 'Level-Headed', spec: 'Toughness', rarity: 'Superior', note: 'Tank self-heal builds' },
-  { name: 'Last Resort', spec: 'Toughness', rarity: 'Superior', note: 'Team support when allies are low' },
-];
-
-// C Tier
-const cTier = [
-  { name: 'Rocket Science', spec: 'Engineering', rarity: 'Specialized' },
-  { name: 'Applied Demolition', spec: 'Engineering', rarity: 'Specialized' },
-  { name: 'Hardware Upgrade', spec: 'Engineering', rarity: 'Specialized' },
-  { name: 'Running Around', spec: 'Engineering', rarity: 'Specialized' },
-  { name: 'Long-Range Artillery', spec: 'Engineering', rarity: 'Specialized' },
-  { name: 'Hunting Season', spec: 'Firepower', rarity: 'Specialized' },
-  { name: 'Side by Side', spec: 'Firepower', rarity: 'Specialized' },
-  { name: 'Suppressive Fire', spec: 'Firepower', rarity: 'Specialized' },
-  { name: 'Resentful', spec: 'Firepower', rarity: 'Specialized' },
-  { name: 'Face-to-Face Advantage', spec: 'Firepower', rarity: 'Specialized' },
-  { name: 'Caretaker', spec: 'Toughness', rarity: 'Specialized' },
-  { name: 'Enduring', spec: 'Toughness', rarity: 'Specialized' },
-  { name: 'Steadfast', spec: 'Toughness', rarity: 'Specialized' },
-  { name: 'Overclocking', spec: 'Engineering', rarity: 'Standard' },
-  { name: 'Energizer', spec: 'Engineering', rarity: 'Standard' },
-  { name: 'Combat Doc', spec: 'Engineering', rarity: 'Standard' },
-  { name: 'Genius Engineer', spec: 'Engineering', rarity: 'Standard' },
-  { name: 'Inspiration', spec: 'Engineering', rarity: 'Standard' },
-  { name: 'Hermit', spec: 'Engineering', rarity: 'Standard' },
-  { name: 'War Machine', spec: 'Firepower', rarity: 'Standard' },
-  { name: 'Seasoned Veteran', spec: 'Firepower', rarity: 'Standard' },
-  { name: "Spray 'n' Pray", spec: 'Firepower', rarity: 'Standard' },
-  { name: 'Plate Carrier', spec: 'Toughness', rarity: 'Standard' },
-  { name: 'Layered Defense', spec: 'Toughness', rarity: 'Standard' },
-  { name: 'Physical Training', spec: 'Toughness', rarity: 'Standard' },
-];
-
-// D Tier
-const dTier = [];
-
-const GG = { label: "GGReborn's Tactical Pharma guide", href: '/builds/tactical-pharma-season-2-build-ggreborn/' };
-const DB = { label: "TikTokAndy's Double Barrel guide", href: '/builds/misdirection-double-barrel-commando-build-tiktokandy/' };
-const osChanges = [
-  { name: 'Brains Over Brawn', was: 'A', now: 'S', why: "GGReborn runs it on his Season 2 Tactical Pharma build (October 16, solo Legendary gameplay) and finished his October 23 Lone Wolf run with 802 seconds left on it.", source: GG },
-  { name: 'Cover Shooter', was: 'A', now: 'S', why: "TikTokAndy switched his Double Barrel Commando to it in early October and soloed Precious Cargo on Legendary with it on October 6.", source: DB },
-  { name: 'Chain Reaction', was: 'B', now: 'A', why: "Fastest of four in GGReborn's October 23 Lone Wolf test (807 seconds left), and the protocol in his October 24 gameplay video. Three seconds is a narrow margin, so not S.", source: GG },
-  { name: 'Tactical Persistence', was: 'B', now: 'A', why: "804 seconds left in GGReborn's October 23 Lone Wolf test, level with Collateral Damage.", source: GG },
-  { name: 'Collateral Damage', was: 'S', now: 'A', why: "804 seconds left in GGReborn's October 23 Lone Wolf test, within a few seconds of three lower-rarity protocols, so the test gives no reason to keep it above them.", source: GG },
-  { name: 'Recursive Treatment', was: 'B', now: 'A', why: "TikTokAndy's pick on his October 10 Aegis Team Healer build, his favorite PvE build right now.", source: { label: 'Aegis Team Healer guide', href: '/builds/aegis-team-healer-tech-operator-build-tiktokandy/' } },
-  { name: 'Augmented Lethality', was: 'B', now: 'A', why: "TikTokAndy ran it on his Double Barrel build through early October, including the floor 20 run he says placed third in NA, and on his beginner Commando build.", source: DB },
-  { name: 'Pummeling Shield', was: 'S', now: 'A', why: "Nerfed since our last ranking: the June 26 hotfix cut the stun from 2 to 1.5 seconds and added a 10-second cooldown.", source: { label: 'June 26 hotfix', href: '/news/server-hotfix-june-26-2026/' } },
-  { name: 'Explosive Round', was: 'S', now: 'A', why: "Not changed by any patch, and none of the Season 2 creator builds we covered on October 25 ran it, so it capped at A. Two days later TikTokAndy's Lightweight M4 Commando ran it to six stars on Lone Wolf floor 20 on his first try; we'll weigh that at the next re-rank.", source: { label: 'Lightweight M4 Commando guide', href: '/builds/lightweight-m4-commando-vanguard-build-tiktokandy/' } },
-  { name: 'Explosive Charge', was: 'S', now: 'A', why: "Not changed by any patch, but none of the Season 2 creator builds we cover runs it, so it caps at A." },
-  { name: 'Heavy Armor', was: 'S', now: 'A', why: "Not changed by any patch, but none of the Season 2 creator builds we cover runs it, so it caps at A." },
-];
-
-const specColor = (spec: string) => {
-  if (spec === 'Engineering') return '#F5CC45';
-  if (spec === 'Firepower') return '#F26822';
-  if (spec === 'Toughness') return '#3a7bd5';
-  return 'var(--ink-muted)';
+const itemListLd = {
+  '@type': 'ItemList',
+  name: 'Division Resurgence OS Protocol Tier List, ranked by player votes',
+  description,
+  itemListOrder: 'https://schema.org/ItemListOrderDescending',
+  numberOfItems: ordered.length,
+  itemListElement: ordered.map((p, i) => ({ '@type': 'ListItem', position: i + 1, name: p.name, url: `${siteUrl}${p.href}` })),
 };
 
 const faqs = [
-  { question: "What is the best OS Protocol in Division Resurgence?", answer: "Going by creator results in Season 2 Phase 2, Brains Over Brawn and Cover Shooter. Brains Over Brawn is the pick on GGReborn's Season 2 Tactical Pharma build, and Cover Shooter is what TikTokAndy ran when he soloed Precious Cargo on Legendary with his Double Barrel Commando on October 6. In GGReborn's October 23 Lone Wolf test, Chain Reaction, Collateral Damage and Tactical Persistence finished within five seconds of Brains Over Brawn, so on that build the choice matters less than your stats. These ranks come from creator results, not our own in-game tests." },
+  { question: "Who ranks these OS Protocols?", answer: "Players do. Tap Rank on any protocol here, or use the vote on its database page. S is worth 5 points down to 1 for D, a protocol's average sets its tier, and one vote is enough to place it. It's one vote per reader per protocol, and you can change it anytime." },
+  { question: "What is the best OS Protocol in Division Resurgence?", answer: "For the players' answer, check the S row above, which updates live. Going by creator results in Season 2 Phase 2, the two to know are Brains Over Brawn, on GGReborn's Season 2 Tactical Pharma build, and Cover Shooter, which TikTokAndy ran when he soloed Precious Cargo on Legendary with his Double Barrel Commando on October 6. In GGReborn's October 23 Lone Wolf test, Chain Reaction, Collateral Damage and Tactical Persistence finished within five seconds of Brains Over Brawn, so on that build the choice matters less than your stats." },
   { question: "How do OS Protocols work in Division Resurgence?", answer: "OS Protocols are unique gear-talent items that slot into your Operating System loadout. Each provides a main stat, three sub-stats, and a unique Talent that triggers under specific combat conditions. Died Again Gaming points out that any agent level can equip any rarity; higher rarities roll bigger stats and better talents." },
   { question: "How do you get and upgrade OS Protocols?", answer: "For golds, Died Again Gaming names two routes: the OS Protocol Sealed Cache (2% for Tier S, guaranteed within 50, per Ubisoft's published odds) and the fourth Weekly Bounty boss, whose Key Rewards he says now guarantee a random gold every week. For purples, his June farm was re-running that fourth boss after the weekly clear, since every kill had a chance at one. To upgrade, you level a protocol with Algorithm Data from bounties and world activities, and feed duplicates of the same protocol into its Talent Upgrade. Gold duplicates are rare, so a purple you can actually max is often the better bet, and he still runs a purple over a gold." },
-  { question: "What is the best OS Protocol for Vanguard?", answer: "For a Commando damage build, Cover Shooter (Firepower, High-End). TikTokAndy switched his Double Barrel build to it in early October and calls it second to none for PvE with that gun; before that he ran Augmented Lethality, and his October 27 Lightweight M4 build tries Explosive Round. For team support, Strategic Assistance is still the pick from our earlier ranking: its assist-based Signature Ability Charge Efficiency and Skill Cooldown reduction feed Tactical Link and Scanning Pulse uptime." },
+  { question: "What is the best OS Protocol for Vanguard?", answer: "For a Commando damage build, Cover Shooter (Firepower, High-End). TikTokAndy switched his Double Barrel build to it in early October and calls it second to none for PvE with that gun; before that he ran Augmented Lethality, and his October 27 Lightweight M4 build tries Explosive Round. For team support, we'd look at Strategic Assistance: its assist-based Signature Ability Charge Efficiency and Skill Cooldown reduction feed Tactical Link and Scanning Pulse uptime." },
   { question: "What is the best OS Protocol for Field Medic?", answer: "For Tactical Pharma, Brains Over Brawn (Engineering, Specialized), which GGReborn runs on his Season 2 build. His October 23 Lone Wolf test had Chain Reaction, Collateral Damage and Tactical Persistence within five seconds of it, so use whichever of those you own. For Combat Medicine, Nadie's tank medic runs Pummeling Shield, and Medical Excellence is the pure-healer option." },
-  { question: "What is the best OS Protocol for Bulwark?", answer: "Pummeling Shield (Toughness, High-End). The Stun proc on every 10 hits and the Extra Health regen on damage still define the class, and Nadie runs it on both of his creator builds here. Since the June 26, 2026 hotfix the stun lasts 1.5 seconds (was 2) and has a 10-second cooldown, so it's a periodic interrupt, not a stun-lock, which is why it moved from S to A." },
-  { question: "What is the best OS Protocol for Demolitionist?", answer: "For HE Munitions, Surgical Engineering (Engineering, High-End), from our earlier ranking. The 60% chance of +16% Skill Critical Damage on Skill Crits scales with the class's natural skill crit chance. We haven't found a Season 2 creator result for Demolitionist yet; PVE Enjoyer's pre-Season 2 Glass Cannon build runs Pressing Matter. Field Grenadier is the Demolitionist's Firepower focus, so it would look at Firepower protocols instead; we haven't seen a creator build for it." },
+  { question: "What is the best OS Protocol for Bulwark?", answer: "Pummeling Shield (Toughness, High-End). The Stun proc on every 10 hits and the Extra Health regen on damage still define the class, and Nadie runs it on both of his creator builds here. Since the June 26, 2026 hotfix the stun lasts 1.5 seconds (was 2) and has a 10-second cooldown, so it's a periodic interrupt, not a stun-lock." },
+  { question: "What is the best OS Protocol for Demolitionist?", answer: "For HE Munitions, we'd start with Surgical Engineering (Engineering, High-End): its 60% chance of +16% Skill Critical Damage on Skill Crits scales with the class's natural skill crit chance. We haven't found a Season 2 creator result for Demolitionist yet; PVE Enjoyer's pre-Season 2 Glass Cannon build runs Pressing Matter. Field Grenadier is the Demolitionist's Firepower focus, so it would look at Firepower protocols instead; we haven't seen a creator build for it." },
   { question: "What is the best OS Protocol for Tech Operator?", answer: "For an Aegis healer, Recursive Treatment, which TikTokAndy runs on his October Aegis Team Healer build. For skill damage, Brains Over Brawn is the pick on LtFoe's and Tampishach's Tech Op builds (both from before Season 2), and Tactical Layering (+15% Engineering per skill deployment, up to 3 stacks) suits Striker Drone rotations." },
-  { question: "Are these OS Protocol ranks from your own testing?", answer: "No. This Season 2 Phase 2 update ranks protocols from creator results: the protocols that Season 2 creator builds run in their endgame results rank highest, protocols with no Season 2 creator evidence keep their old tier but cap at A, and a protocol nerfed since our last ranking drops a tier. Our own in-game ranking was last done on Patch 1.1.2.2. The table under the tiers lists what each change rests on." },
 ];
 ---
 
-<BaseLayout title={title} description={description} breadcrumbs={breadcrumbItems} faqs={faqs}>
+<BaseLayout title={title} description={description} breadcrumbs={breadcrumbItems} faqs={faqs} jsonLd={itemListLd}
+  article={{ publishDate: '2026-05-29T12:00:00.000Z', modifiedDate: new Date(modified).toISOString(), author: 'RapidF5', tags: ['tier list', 'OS Protocols', 'Division Resurgence'] }}
+>
   <div class="container section">
     <Breadcrumbs items={breadcrumbItems} />
-    <SectionTag label="Meta Ranking" />
+    <SectionTag label="Ranked by Players" />
     <h1 class="heading-accent">OS Protocol Tier List</h1>
-    <p style="color:var(--ink-muted);margin-bottom:var(--sp-3);">
-      Every OS Protocol ranked for Season 2 Phase 2. <strong>These ranks come from creator results, not our own in-game tests</strong>, and <a href="#os-tier-changes" style="color: var(--accent); text-decoration: underline;">the table under the tiers</a> says what each change rests on. <strong>S-Tier</strong> protocols are what the top Season 2 creator builds run. <strong>A-Tier</strong> protocols are strong class-specific picks that anchor endgame builds. <strong>B-Tier</strong> protocols are solid placeholders while you farm for the good stuff. <strong>C-Tier</strong> protocols get replaced as soon as something better drops. <strong>D-Tier</strong> protocols are basically empty slots.
+    <p class="tl-lede">All 66 protocols, ranked live by players. Tap <strong>Rank</strong> on any of them. No pressure, but they're all counting on you.</p>
+
+    <p class="tlive tl-live" data-tv-live data-kind="os">
+      <span class="tlive__on"><span class="tlive__dot" aria-hidden="true"></span><span data-tv-state>Live</span></span>
+      <span data-tv-total>{voteCount(totalVotes)}</span>
+      <span aria-hidden="true">·</span>
+      <span data-tv-ranked>{rankedCount} of {items.length} ranked</span>
+      <span aria-hidden="true">·</span>
+      <span data-tv-ago>loading the latest</span>
     </p>
 
-    <p style="color:var(--ink-muted);margin-bottom:var(--sp-3);">
-      <strong>Update (<time datetime={TIER_UPDATED}>{tierUpdatedLabel}</time>):</strong> re-ranked for Season 2 Phase 2 from creator results. A protocol that a Season 2 creator build runs in its endgame results ranks highest. One with no Season 2 creator evidence keeps its old tier but caps at A, and one nerfed since our last ranking ({lastVerified}) drops a tier. Official changes since then: Applied Demolition was buffed in Season 1 Phase 3 (Skill Crit Damage 24% to 43.2% at base), Pummeling Shield's stun got a 10-second cooldown and dropped from 2s to 1.5s in the June 26 hotfix, Dominating Presence started granting the Multi-Shot it promised in Season 2 Phase 1 and had its maximum cut in Phase 2, and Concerted Strike (range check) and Relentless Assault (damage type) were fixed in Season 2 Phase 2. Season 2 Phase 1 also made a Concerted Strike trigger on shots instead of hits, though Ubisoft's notes file that one under Commando, so it may not be this protocol (<a href="/patch-notes/season-2-phase-1-the-call/" style="color: var(--accent); text-decoration: underline;">patch notes</a>).
-    </p>
+    <ol class="thow">
+      <li><b>1</b><span>Find a protocol</span></li>
+      <li><b>2</b><span>Tap Rank <span class="tier-chips" aria-hidden="true">{TIERS.map((t) => <span class={`tier-chip tier-chip--${t.toLowerCase()}`}>{t}</span>)}</span></span></li>
+      <li><b>3</b><span>The average sets its tier</span></li>
+    </ol>
 
-    <div style="display: inline-flex; align-items: center; gap: 6px; font-family: var(--font-mono); font-size: var(--text-xs); color: #FCD34D; background: rgba(252, 211, 77, 0.08); border: 1px solid rgba(252, 211, 77, 0.3); padding: 6px 14px; border-radius: 999px; margin-bottom: var(--sp-6); letter-spacing: 0.02em;">
-      <span>Season 2 Phase 2, ranked from creator results · updated <time datetime={TIER_UPDATED}>{tierUpdatedLabel}</time></span>
+    <div class="tfilters" data-tv-filters data-for="os" role="group" aria-label="Show one type of OS Protocol">
+      <button type="button" class="tfilter" data-tv-filter data-value="all" aria-pressed="true">All {items.length}</button>
+      {['Engineering', 'Firepower', 'Toughness'].map((t) => (
+        <button type="button" class="tfilter" data-tv-filter data-value={t} aria-pressed="false"><span class="tfilter__dot" style={`--dot:${SPEC_COLOR[t]}`} aria-hidden="true"></span>{t} <span class="tfilter__n">{typeCount(t)}</span></button>
+      ))}
     </div>
 
-    <!-- Best per class quick links -->
-    <div class="class-quick-picks">
-      <h2 style="font-size: var(--text-lg); margin-bottom: var(--sp-2);">Best Protocol Per Class</h2>
-      <p style="color: var(--ink-muted); font-size: var(--text-sm); margin-bottom: var(--sp-2);">Season 2 creator picks where we have them. Demolitionist has no Season 2 creator result yet, so it keeps our earlier pick.</p>
-      <p style="color: var(--ink-muted); font-size: var(--text-sm); margin-bottom: var(--sp-4);"><a href="/guides/best-os-protocol/" style="color: var(--accent); text-decoration: underline;">Read the full per-class guide, with a backup pick for each class &rarr;</a></p>
-      <div class="quick-picks-grid">
-        <div class="quick-pick"><span class="quick-pick__class">Vanguard (Commando)</span><a href="/database/os-protocols/#cover-shooter">Cover Shooter</a></div>
-        <div class="quick-pick"><span class="quick-pick__class">Field Medic (Tactical Pharma)</span><a href="/database/os-protocols/#brains-over-brawn">Brains Over Brawn</a></div>
-        <div class="quick-pick"><span class="quick-pick__class">Bulwark</span><a href="/database/os-protocols/#pummeling-shield">Pummeling Shield</a></div>
-        <div class="quick-pick"><span class="quick-pick__class">Demolitionist</span><a href="/database/os-protocols/#surgical-engineering">Surgical Engineering</a></div>
-        <div class="quick-pick"><span class="quick-pick__class">Tech Operator (Aegis healer)</span><a href="/database/os-protocols/#recursive-treatment">Recursive Treatment</a></div>
-      </div>
-    </div>
+    <TierBoard kind="os" items={items} quick icons label="OS Protocols" />
 
-    <!-- TIER LIST -->
-    <div class="tier-list">
-      
-      <!-- S-TIER -->
-      <div class="tier-row">
-        <div class="tier-label tier-s">S</div>
-        <div class="tier-content">
-          <div class="tier-grid">
-            {sTier.map(p => (
-              <a href={`/database/os-protocols/${p.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')}/`} class="tier-card">
-                <div class="tier-card__spec-dot" style={`background: ${specColor(p.spec)};`}></div>
-                <div class="tier-card__info">
-                  <h3>{p.name}</h3>
-                  <span class="tier-card__spec">{p.spec} · {p.rarity}</span>
-                  {p.cr && <span class="tier-card__cr">{p.cr}</span>}
-                  {p.note && <span class="tier-card__note">{p.note}</span>}
-                </div>
-              </a>
-            ))}
-          </div>
-        </div>
-      </div>
+    <details class="tl-fine">
+      <summary>How the ranking works</summary>
+      <ul>
+        <li>Each vote is worth points: S 5, A 4, B 3, C 2, D 1. A protocol's average decides its tier: 4.5 and up is S, 3.5 A, 2.5 B, 1.5 C, anything lower D.</li>
+        <li>Inside a tier, the higher average goes first. Ties go to the protocol with more votes.</li>
+        <li>One vote per reader per protocol, changeable anytime, no account needed. Each protocol's database page has the same vote.</li>
+      </ul>
+    </details>
 
-      <!-- A-TIER -->
-      <div class="tier-row">
-        <div class="tier-label tier-a">A</div>
-        <div class="tier-content">
-          <div class="tier-grid">
-            {aTier.map(p => (
-              <a href={`/database/os-protocols/${p.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')}/`} class="tier-card">
-                <div class="tier-card__spec-dot" style={`background: ${specColor(p.spec)};`}></div>
-                <div class="tier-card__info">
-                  <h3>{p.name}</h3>
-                  <span class="tier-card__spec">{p.spec} · {p.rarity}</span>
-                  {p.cr && <span class="tier-card__cr">{p.cr}</span>}
-                  {p.note && <span class="tier-card__note">{p.note}</span>}
-                </div>
-              </a>
-            ))}
-          </div>
-        </div>
-      </div>
-
-      <!-- B-TIER -->
-      <div class="tier-row">
-        <div class="tier-label tier-b">B</div>
-        <div class="tier-content">
-          <div class="tier-grid">
-            {bTier.map(p => (
-              <a href={`/database/os-protocols/${p.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')}/`} class="tier-card">
-                <div class="tier-card__spec-dot" style={`background: ${specColor(p.spec)};`}></div>
-                <div class="tier-card__info">
-                  <h3>{p.name}</h3>
-                  <span class="tier-card__spec">{p.spec} · {p.rarity}</span>
-                  {p.cr && <span class="tier-card__cr">{p.cr}</span>}
-                  {p.note && <span class="tier-card__note">{p.note}</span>}
-                </div>
-              </a>
-            ))}
-          </div>
-        </div>
-      </div>
-
-      <!-- C-TIER -->
-      <div class="tier-row">
-        <div class="tier-label tier-c">C</div>
-        <div class="tier-content">
-          <div class="tier-grid">
-            {cTier.map(p => (
-              <a href={`/database/os-protocols/${p.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')}/`} class="tier-card">
-                <div class="tier-card__spec-dot" style={`background: ${specColor(p.spec)};`}></div>
-                <div class="tier-card__info">
-                  <h3>{p.name}</h3>
-                  <span class="tier-card__spec">{p.spec} · {p.rarity}</span>
-                </div>
-              </a>
-            ))}
-          </div>
-        </div>
-      </div>
-
-      <!-- D-TIER -->
-      <div class="tier-row">
-        <div class="tier-label tier-d">D</div>
-        <div class="tier-content">
-          {dTier.length > 0 ? (
-            <div class="tier-grid">
-              {dTier.map(p => (
-                <a href={`/database/os-protocols/${p.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')}/`} class="tier-card">
-                  <div class="tier-card__spec-dot" style={`background: ${specColor(p.spec)};`}></div>
-                  <div class="tier-card__info">
-                    <h3>{p.name}</h3>
-                    <span class="tier-card__spec">{p.spec} · {p.rarity}</span>
-                  </div>
-                </a>
-              ))}
-            </div>
-          ) : (
-            <div class="tier-empty">No D-Tier OS Protocols.</div>
-          )}
-        </div>
-      </div>
-
-    </div>
-
-    <section class="os-changes" id="os-tier-changes" aria-labelledby="os-tier-changes-heading">
-      <h2 id="os-tier-changes-heading">What Changed in This Update, and Why</h2>
-      <p>Ranked from creator results, not our own in-game tests. Every protocol not listed here kept its tier.</p>
-      <div class="os-changes__scroll">
-        <table class="t-cards">
-          <thead><tr><th scope="col">Protocol</th><th scope="col">Was</th><th scope="col">Now</th><th scope="col">What the rank rests on</th></tr></thead>
-          <tbody>
-            {osChanges.map(c => (
-              <tr>
-                <th scope="row"><a href={`/database/os-protocols/${c.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')}/`}>{c.name}</a></th>
-                <td data-label="Was">{c.was}</td>
-                <td data-label="Now">{c.now}</td>
-                <td data-label="What the rank rests on">{c.why} {c.source && <a href={c.source.href}>{c.source.label}</a>}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
+    <section class="tl-picks" aria-labelledby="tl-picks-h">
+      <h2 id="tl-picks-h">What the creators run</h2>
+      <p>Season 2 creator picks per class. Demolitionist has no Season 2 creator result yet, so it shows our pick. <a href="/guides/best-os-protocol/">The full per-class guide</a> has a backup for each.</p>
+      <div class="tl-picks__grid">
+        <a class="tl-pick" href="/database/os-protocols/cover-shooter/"><span>Vanguard (Commando)</span>Cover Shooter</a>
+        <a class="tl-pick" href="/database/os-protocols/brains-over-brawn/"><span>Field Medic (Tactical Pharma)</span>Brains Over Brawn</a>
+        <a class="tl-pick" href="/database/os-protocols/pummeling-shield/"><span>Bulwark</span>Pummeling Shield</a>
+        <a class="tl-pick" href="/database/os-protocols/surgical-engineering/"><span>Demolitionist</span>Surgical Engineering</a>
+        <a class="tl-pick" href="/database/os-protocols/recursive-treatment/"><span>Tech Operator (Aegis healer)</span>Recursive Treatment</a>
       </div>
     </section>
 
-    <!-- FAQ -->
-    <div class="faq-section" style="margin-top: var(--sp-8);">
-      <h2>Frequently Asked Questions</h2>
-      <div class="faq-list" style="display: flex; flex-direction: column; gap: var(--sp-2);">
-        {faqs.map(faq => (
+    <AdSenseUnit label="Advertisement (OS tier list)" />
+
+    <section class="faq-section tl-faq" aria-labelledby="tl-faq">
+      <h2 id="tl-faq">Frequently Asked Questions</h2>
+      <div class="faq-list">
+        {faqs.map((faq) => (
           <details class="faq-item">
             <summary class="faq-question">{faq.question}</summary>
             <p class="faq-answer">{faq.answer}</p>
           </details>
         ))}
       </div>
-    </div>
+    </section>
 
-    <!-- Related -->
-    <div style="margin-top: var(--sp-8); padding-top: var(--sp-6); border-top: 1px solid rgba(255,255,255,0.08);">
-      <p style="color: var(--ink-muted); font-size: var(--text-sm);">
-        Full stats, talents, and per-class build recommendations are in the <a href="/database/os-protocols/" style="color: var(--accent);">OS Protocols Database</a>. See also: <a href="/tier-list/" style="color: var(--accent);">Build Tier List</a>
-      </p>
-    </div>
-
+    <p class="tl-related">Full stats and talents are in the <a href="/database/os-protocols/">OS Protocols database</a>. Builds get the same treatment on the <a href="/tier-list/">build tier list</a>.</p>
   </div>
 </BaseLayout>
 
 <style>
-  .tier-list {
-    display: flex;
-    flex-direction: column;
-    gap: var(--sp-4);
-    background: rgba(0,0,0,0.2);
-    padding: var(--sp-4);
-    border-radius: var(--border-radius);
+  .tl-lede { margin: 0 0 var(--sp-3); font-size: var(--step-1); line-height: var(--lh-snug); color: var(--ink); max-width: var(--measure); }
+  .tl-live { margin: 0 0 var(--sp-2); }
+  .tfilter__n { margin-left: 4px; font-family: var(--font-mono); font-size: var(--step--2); opacity: 0.75; }
+  .tl-fine {
+    margin: var(--sp-5) 0 var(--sp-8);
     border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    background: rgba(0, 0, 0, 0.15);
   }
-
-  .tier-row {
-    display: flex;
-    flex-direction: column;
-    background: var(--surface);
-    border-radius: 8px;
-    border: 1px solid var(--border);
-    overflow: hidden;
-  }
-
-  @media (min-width: 45em) {
-    .tier-row {
-      flex-direction: row;
-    }
-  }
-
-  .tier-label {
+  .tl-fine > summary {
     display: flex;
     align-items: center;
-    justify-content: center;
-    font-family: var(--font-heading);
-    font-size: 3rem;
-    font-weight: 800;
-    color: #1a1a20;
-    min-width: 100px;
-    padding: var(--sp-4);
-    text-shadow: 0 1px 2px rgba(255,255,255,0.2);
-  }
-
-  .tier-s { background: linear-gradient(135deg, #ff7b00, #ff5100); }
-  .tier-a { background: linear-gradient(135deg, #00d2ff, #3a7bd5); }
-  .tier-b { background: linear-gradient(135deg, #28a745, #20c997); }
-  .tier-c { background: linear-gradient(135deg, #6c757d, #adb5bd); }
-  .tier-d { background: linear-gradient(135deg, #495057, #343a40); color: #f1f3f5; text-shadow: none; } /* light letter: dark-on-grey was 1.8:1 */
-
-  .tier-content {
-    flex: 1;
-    padding: var(--sp-3);
-    background: rgba(0,0,0,0.15);
-  }
-
-  .tier-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-    gap: var(--sp-2);
-  }
-
-  .tier-card {
-    display: flex;
-    align-items: flex-start;
-    gap: var(--sp-2);
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 6px;
-    padding: 8px 10px;
-    text-decoration: none;
-    transition: all 0.2s;
-  }
-
-  .tier-card:hover {
-    border-color: var(--accent);
-    background: rgba(255,255,255,0.05);
-    transform: translateY(-2px);
-  }
-
-  .tier-card__spec-dot {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    flex-shrink: 0;
-    margin-top: 5px;
-  }
-
-  .tier-card__info h4 {
-    color: var(--ink);
-    font-size: var(--step--1);
-    margin: 0 0 2px 0;
-    line-height: var(--lh-snug);
-  }
-
-  .tier-card__spec {
+    min-height: var(--control);
+    padding: 0 var(--inset);
     font-family: var(--font-mono);
     font-size: var(--step--2);
-    color: var(--ink-muted);
+    font-weight: 600;
+    letter-spacing: 0.06em;
     text-transform: uppercase;
-  }
-
-  .tier-card__note {
-    display: block;
-    font-size: var(--step--2);
     color: var(--ink-muted);
-    line-height: var(--lh-small);
-    margin-top: 4px;
+    cursor: pointer;
   }
-
-  .tier-empty {
-    color: var(--ink-muted);
-    font-style: italic;
-    padding: var(--sp-2);
-    font-size: var(--text-sm);
-  }
-
-  /* Quick picks */
-  .class-quick-picks {
-    margin-bottom: var(--sp-6);
-    padding: var(--sp-5);
-    background: rgba(255,255,255,0.03);
-    border: 1px solid rgba(255,255,255,0.07);
-    border-radius: 10px;
-  }
-
-  .quick-picks-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-    gap: var(--sp-2);
-  }
-
-  .quick-pick {
+  .tl-fine > summary:hover { color: var(--accent); }
+  .tl-fine ul { margin: 0; padding: 0 var(--inset) var(--sp-4) calc(var(--inset) * 2); color: var(--ink); font-size: var(--step--1); line-height: var(--lh-small); }
+  .tl-fine li { margin: 0 0 var(--sp-2); }
+  .tl-picks { margin: 0 0 var(--sp-8); }
+  .tl-picks h2 { font-size: var(--step-3); margin: 0 0 var(--sp-2); }
+  .tl-picks p { margin: 0 0 var(--sp-4); color: var(--ink-muted); font-size: var(--step--1); }
+  .tl-picks p a { color: var(--accent); }
+  .tl-picks__grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 12rem), 1fr)); gap: var(--sp-2); }
+  .tl-pick {
     display: flex;
     flex-direction: column;
     gap: 2px;
-    padding: var(--sp-3);
-    background: rgba(0,0,0,0.2);
-    border-radius: 6px;
-    border: 1px solid rgba(255,255,255,0.05);
+    padding: var(--sp-3) calc(var(--inset) - 1px);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    background: rgba(0, 0, 0, 0.2);
+    color: var(--accent);
+    font-weight: 700;
+    font-size: var(--step--1);
+    text-decoration: none;
   }
-
-  .quick-pick__class {
+  .tl-pick:hover { border-color: var(--accent); }
+  .tl-pick span {
     font-family: var(--font-mono);
     font-size: var(--step--2);
     font-weight: 700;
+    letter-spacing: 0.06em;
     text-transform: uppercase;
-    letter-spacing: 0.08em;
     color: var(--ink-muted);
   }
-
-  .quick-pick a {
-    color: var(--accent);
-    font-weight: 600;
-    font-size: var(--text-sm);
-    text-decoration: none;
-  }
-
-  .quick-pick a:hover {
-    text-decoration: underline;
-  }
-  .tier-card__cr {
-    display: block;
-    font-size: var(--step--2);
-    color: #FCD34D;
-    margin-top: 4px;
-  }
-  .os-changes { margin-top: var(--sp-8); max-width: 960px; }
-  .os-changes h2 { font-size: var(--text-lg); margin-bottom: var(--sp-2); }
-  .os-changes p { color: var(--ink-muted); font-size: var(--text-sm); margin-bottom: var(--sp-3); }
-  .os-changes__scroll { overflow-x: auto; }
-  .os-changes table { width: 100%; border-collapse: collapse; font-size: var(--text-sm); color: var(--ink-muted); }
-  .os-changes th, .os-changes td { text-align: left; vertical-align: top; padding: var(--sp-2); border-bottom: 1px solid var(--border); line-height: 1.6; }
-  .os-changes thead th { color: var(--ink); font-family: var(--font-mono); font-size: var(--text-xs); text-transform: uppercase; }
-  .os-changes tbody th { color: var(--ink); font-weight: 600; min-width: 150px; }
-  .os-changes tbody th a, .os-changes td a { color: var(--accent); }
-  .os-changes td:nth-child(2), .os-changes td:nth-child(3) { font-family: var(--font-mono); }
-  .os-changes td:last-child { min-width: 280px; }
+  .tl-faq { margin-top: var(--sp-8); }
+  .tl-faq h2 { font-size: var(--step-3); margin: 0 0 var(--sp-4); }
+  .tl-faq .faq-list { display: flex; flex-direction: column; gap: var(--sp-2); }
+  .tl-related { margin: var(--sp-8) 0 0; color: var(--ink-muted); font-size: var(--step--1); }
+  .tl-related a { color: var(--accent); }
 </style>

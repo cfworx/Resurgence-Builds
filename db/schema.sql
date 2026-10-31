@@ -45,3 +45,35 @@ CREATE TABLE IF NOT EXISTS blocked_visitors (
   created_at TEXT NOT NULL,
   expires_at TEXT
 );
+
+-- Reader votes behind the tier lists (see VOTES.md). One row per reader per item: kind 'build' (a build guide) or
+-- 'os' (an OS Protocol), item = the page's slug. Voting again changes the row.
+CREATE TABLE IF NOT EXISTS votes (
+  kind TEXT NOT NULL CHECK (kind IN ('build', 'os')),
+  item TEXT NOT NULL,                 -- slug, e.g. tactical-pharma-season-2-build-ggreborn or cover-shooter
+  voter TEXT NOT NULL,                -- random id from the reader's rb_voter cookie
+  tier TEXT NOT NULL CHECK (tier IN ('S', 'A', 'B', 'C', 'D')),
+  ip_hash TEXT NOT NULL,              -- salted SHA-256 of the network (IPv4 address or IPv6 /64); never shown
+  ua_hash TEXT NOT NULL,              -- salted SHA-256 of the browser's user agent
+  counted INTEGER NOT NULL DEFAULT 1, -- 0 = kept out of the tally (past the per-network cap, or a blocked visitor)
+  created_at TEXT NOT NULL,           -- ISO 8601, UTC
+  updated_at TEXT NOT NULL,
+  changes INTEGER NOT NULL DEFAULT 0, -- how many times this reader changed the vote
+  PRIMARY KEY (kind, item, voter)
+);
+CREATE INDEX IF NOT EXISTS votes_by_item ON votes (kind, item, counted, tier);
+CREATE INDEX IF NOT EXISTS votes_by_item_net ON votes (kind, item, ip_hash, ua_hash);
+CREATE INDEX IF NOT EXISTS votes_by_net ON votes (ip_hash, updated_at);
+
+-- Each item's totals, rebuilt from votes after every vote so the tier lists read a handful of rows.
+CREATE TABLE IF NOT EXISTS vote_tallies (
+  kind TEXT NOT NULL,
+  item TEXT NOT NULL,
+  s INTEGER NOT NULL DEFAULT 0,
+  a INTEGER NOT NULL DEFAULT 0,
+  b INTEGER NOT NULL DEFAULT 0,
+  c INTEGER NOT NULL DEFAULT 0,
+  d INTEGER NOT NULL DEFAULT 0,
+  updated_at TEXT NOT NULL,
+  PRIMARY KEY (kind, item)
+);

@@ -21,7 +21,7 @@ const builds = defineCollection({
     pvp: z.boolean(),
     lastUpdated: z.coerce.date(),
     patch: z.string(),
-    // false = a creator's build we have documented but not re-tested ourselves (no "Verified" badge, not ranked on the tier list)
+    // false = a creator's build we have documented but not re-tested ourselves (a "Creator build" badge instead of "Verified")
     verified: z.boolean().optional(),
     // true = our own original design, put together from the in-game Build-Making Database rather than
     // documented from a creator. Set verified: false with it until RapidF5 has played it: the page gets

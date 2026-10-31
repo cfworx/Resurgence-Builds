@@ -11,7 +11,7 @@ hand. It replaced the GitHub (Giscus) comments on October 31, 2026.
 | Comment box (form, list, Report buttons) | `src/components/Comments.astro`, used by the Build, Guide and News layouts. It moves itself above the article's "Sources" or "Related Reading" heading. |
 | API | `functions/api/comments/index.js` (`GET ?path=&page=` lists a page's comments, 10 at a time, `POST` adds one) and `functions/api/comments/report.js` (`POST {"id"}` reports one). Cloudflare Pages Functions. |
 | Shared checks | `lib/comments.mjs` (cleanup, limits, link check, hashing, safety filter). Unit tests: `npm run test:comments`. |
-| Database | Cloudflare D1 `resurgence-comments`, id `c9f8a76c-5fa4-43b1-8277-c48c527c070f`. Schema: `db/schema.sql`. |
+| Database | Cloudflare D1 `resurgence-comments`, id `c9f8a76c-5fa4-43b1-8277-c48c527c070f`. Schema: `db/schema.sql`. The tier list votes (VOTES.md) live here too, and `blocked_visitors` applies to them. |
 | Bindings | `wrangler.toml`: `DB` (the D1 database) and `AI` (Workers AI). With this file in the repo, Pages takes these settings from it, not the dashboard. |
 | Review | Scheduled task "Resurgence Builds comment review", twice a day (below). |
 | Public rules and privacy | `/privacy/#comments` (`src/pages/privacy.astro`) and the DMCA page. |

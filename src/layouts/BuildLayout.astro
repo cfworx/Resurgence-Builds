@@ -12,7 +12,8 @@ import BuildLoadoutMini from '../components/BuildLoadoutMini.astro';
 import type { LoadoutData } from '../utils/loadout';
 import { getCollection } from 'astro:content';
 import { getAuthorUrl } from '../utils/author';
-import { postImage, srcsetAttr, HERO_SIZES } from '../utils/post-images';
+import TierVote from '../components/TierVote.astro';
+import TierBadge from '../components/TierBadge.astro';
 
 export interface Props {
   title: string;
@@ -53,7 +54,8 @@ export interface Props {
 }
 
 const { title, description, specialization, playstyle, patch, verified = true, original = false, lastUpdated, pve, pvp, tags, author, featuredImage, imageAlt, shareTitle, shareText, headings = [], faqs = [], sources = [], plannerHash, videoId, videoTitle, videoChannel, videoChannelUrl, videoUploadDate, videoDuration, howTo, wordCount, subclass, loadout } = Astro.props;
-const heroImg = postImage(featuredImage);
+// The build's slug (its file name): the key for its player votes
+const buildSlug = Astro.url.pathname.split('/').filter(Boolean).pop() ?? '';
 
 const siteUrl = 'https://resurgencebuilds.com';
 
@@ -143,6 +145,7 @@ const redditShareUrl = `https://reddit.com/submit?url=${encodeURIComponent(Astro
         ) : (
           <span class="build-badge build-badge--creator" title="We documented this creator's build from their videos but haven't re-tested it ourselves">Creator build · {patchLabel}</span>
         )}
+        <TierBadge kind="build" id={buildSlug} />
         <span class="build-badges__more">Part of our <a href={`/class/${classSlug}/`}>{specialization} build collection</a></span>
       </div>
     </header>
@@ -153,33 +156,17 @@ const redditShareUrl = `https://reddit.com/submit?url=${encodeURIComponent(Astro
       <p><a href={`/builder/#${plannerHash}`} class="btn btn--accent">Open in Build Planner</a></p>
     )}
 
-    {(featuredImage || videoId) && (
-      <div class={`build-media${featuredImage && videoId ? ' build-media--two' : ''}`}>
-        {featuredImage && (
-          <figure class="build-media__hero">
-            <img
-              src={featuredImage}
-              srcset={srcsetAttr(heroImg)}
-              sizes={heroImg ? (videoId ? '(max-width: 720px) calc(100vw - 32px), 560px' : HERO_SIZES) : undefined}
-              alt={imageAlt || `${title}: ${specialization} ${playstyle} build guide for Division Resurgence`}
-              width={heroImg?.width || 1200}
-              height={heroImg?.height || 630}
-              loading={loadout ? 'lazy' : 'eager'}
-              decoding="async"
-            />
-          </figure>
-        )}
-        {videoId && (
-          <YouTubeEmbed
-            videoId={videoId}
-            title={videoTitle || `${title}: Video Guide`}
-            description={description}
-            channelName={videoChannel}
-            channelUrl={videoChannelUrl}
-            uploadDate={videoUploadDate}
-            duration={videoDuration}
-          />
-        )}
+    {videoId && (
+      <div class="build-media">
+        <YouTubeEmbed
+          videoId={videoId}
+          title={videoTitle || `${title}: Video Guide`}
+          description={description}
+          channelName={videoChannel}
+          channelUrl={videoChannelUrl}
+          uploadDate={videoUploadDate}
+          duration={videoDuration}
+        />
       </div>
     )}
 
@@ -209,6 +196,8 @@ const redditShareUrl = `https://reddit.com/submit?url=${encodeURIComponent(Astro
         <NewsletterSignup source="build" />
 
         <AdSenseUnit slotId="8102223000" label="Advertisement (in-article)" />
+
+        <TierVote kind="build" id={buildSlug} name={title} question="How would you rank this build?" listHref="/tier-list/" listLabel="See the build tier list" beforeComments />
 
         <Comments />
 
@@ -399,17 +388,10 @@ const redditShareUrl = `https://reddit.com/submit?url=${encodeURIComponent(Astro
   .build-badges__more { color: var(--ink-muted); }
   .build-badges__more a { color: var(--accent); text-decoration: none; }
 
-  /* The creator's screenshot and video, side by side on wide screens */
-  .build-media { display: grid; gap: var(--sp-4); margin: 0 0 var(--sp-8); }
+  /* The creator's video, as wide as the article. The post's own image isn't repeated on the page (Cory, October 31):
+     it's the card and share image. */
+  .build-media { max-width: 52rem; margin: 0 0 var(--sp-8); }
   .build-media :global(.yt-embed) { margin: 0; }
-  .build-media__hero {
-    margin: 0; border-radius: var(--border-radius); overflow: hidden; background: var(--surface);
-    border: 1px solid var(--border); display: flex; align-items: center; justify-content: center;
-  }
-  .build-media__hero img { display: block; width: 100%; height: auto; }
-  @media (min-width: 45em) {
-    .build-media--two { grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; }
-  }
 
   /* Article, with the loadout summary beside it on wide screens */
   .build-main { display: block; }

@@ -113,7 +113,7 @@ If you're freshly level 40, our [endgame tips guide](/guides/division-resurgence
 - **Concerted Strike:** fixed so it works within its intended **20 meter range**. Ubisoft's bug reporter closed the matching report on October 23 ([our roundup](/news/bug-reporter-fixes-october-23/)).
 - **Relentless Assault:** fixed using the wrong damage type, and its tooltip now correctly references Weapon Damage.
 
-Our [OS Protocol tier list](/tier-list/os-protocols/) and the [OS Protocol database](/database/os-protocols/) carry these notes.
+The [OS Protocol database](/database/os-protocols/) carries these notes on each protocol's page.
 
 ### Demolitionist
 

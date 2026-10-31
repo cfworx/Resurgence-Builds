@@ -47,7 +47,7 @@ The rest of this page explains each step and why.
 
 There are five specializations: **Vanguard, Demolitionist, Bulwark, Field Medic and Tech Operator**. Each has two **Focuses**, talent trees that change how it plays: Field Medic can heal (Combat Medicine) or melt rooms with chemicals (Tactical Pharma), and Tech Operator can run attack drones (Offensive Operations) or healing and defensive drones (Aegis Operations). Ubisoft's 2023 preview said skill points you earn count toward both Focuses of a specialization, so trying the other Focus isn't a restart. Each specialization levels on its own, to 30, with 49 talent points to spend, going by the specialization screen on [Porps's October 28 stream](https://www.youtube.com/watch?v=FOrckQW_S8c) (a brand-new account, Portuguese client, our translation).
 
-Our [specialization guide](/guides/which-specialization-to-pick/) covers each one, and the [build tier list](/tier-list/) shows what creators are winning with in Season 2.
+Our [specialization guide](/guides/which-specialization-to-pick/) covers each one, and the [build tier list](/tier-list/) shows how players rank every build.
 
 Then commit. AgentHuntzman calls switching your main every few days one of the biggest progression traps: your farming targets, gear and stat needs change every time, and he says he has wasted more recalibrations than he can count. Switching itself is easy, and the specialization screen's reset button refunds what you spent on skills. What you can't refund is the materials and recalibrations you put into gear for the old build.
 

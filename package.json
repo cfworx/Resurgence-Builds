@@ -8,13 +8,14 @@
   },
   "scripts": {
     "dev": "astro dev",
-    "build": "node scripts/check-rolls.mjs && node scripts/optimize-images.mjs && astro build && node scripts/inject-lastmod.mjs && node scripts/inject-sitemap-images.mjs && npx pagefind --site dist && node scripts/build-llms.mjs && node scripts/build-llms-full.mjs && node scripts/audit-indexation.mjs",
+    "build": "node scripts/check-rolls.mjs && node scripts/pull-votes.mjs && node scripts/optimize-images.mjs && astro build && node scripts/inject-lastmod.mjs && node scripts/inject-sitemap-images.mjs && npx pagefind --site dist && node scripts/build-llms.mjs && node scripts/build-llms-full.mjs && node scripts/audit-indexation.mjs",
     "preview": "astro preview",
     "astro": "astro",
     "audit:indexation": "node scripts/audit-indexation.mjs",
     "check:rolls": "node scripts/check-rolls.mjs",
     "bump-patch": "node scripts/bump-patch.mjs",
-    "test:comments": "node --test tests/comments.test.mjs"
+    "test:comments": "node --test tests/comments.test.mjs",
+    "test:votes": "node --test tests/votes.test.mjs"
   },
   "dependencies": {
     "@astrojs/rss": "^4.0.18",

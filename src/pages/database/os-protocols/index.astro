@@ -3,6 +3,8 @@ import DatabaseLayout from '../../../layouts/DatabaseLayout.astro';
 import osProtocols from '../../../data/os-protocols.json';
 import AdSenseUnit from '../../../components/AdSenseUnit.astro';
 import { verifiedPatch } from '../../../data/site-config';
+import { snapshotItems } from '../../../utils/votes';
+import '../../../styles/tier-votes.css';
 // All 66 protocols were re-checked in the in-game Build-Making Database on 2026-10-28 (Season 2 Phase 2).
 const lastVerified = verifiedPatch();
 
@@ -19,6 +21,8 @@ const breadcrumbs = [
 const TYPES = ['Engineering', 'Firepower', 'Toughness'];
 const RARITIES = ['High-End', 'Superior', 'Specialized', 'Standard'];
 const total = osProtocols.length;
+// Player ranks (live on the page, from public/js/tier-votes.js; this is the deploy-time snapshot). See VOTES.md.
+const ranks = snapshotItems('os');
 
 const itemListLd = {
   '@context': 'https://schema.org',
@@ -42,7 +46,7 @@ const itemListLd = {
 };
 
 const faqs = [
-  { question: "What is the best OS Protocol in Division Resurgence?", answer: "It depends on your class and build. Going by Season 2 Phase 2 creator results, Brains Over Brawn (on GGReborn's Season 2 Tactical Pharma build) and Cover Shooter (on TikTokAndy's Double Barrel Commando) are the two S picks on our OS Protocol tier list, and TikTokAndy's newest Lightweight M4 Commando runs Explosive Round. The tier list gives the reason and the sources for every rank." },
+  { question: "What is the best OS Protocol in Division Resurgence?", answer: "It depends on your class and build, and players rank all 66 on our OS Protocol tier list. Going by Season 2 Phase 2 creator results, Brains Over Brawn (on GGReborn's Season 2 Tactical Pharma build) and Cover Shooter (on TikTokAndy's Double Barrel Commando) are the two to know, and TikTokAndy's newest Lightweight M4 Commando runs Explosive Round." },
   { question: "How do OS Protocols work in Division Resurgence?", answer: "OS Protocols are unique gear-talent items that slot into your Operating System loadout. Each protocol provides a main stat, three sub-stats (a specialization rating, a damage modifier, and a Health value), and a unique Talent that triggers under specific combat conditions; some talents have a cooldown. Died Again Gaming points out that any agent level can equip any rarity; higher rarities roll bigger stats and better talents." },
   { question: "How do you upgrade OS Protocols?", answer: "Two separate ways. Leveling raises the stats: you feed a protocol Algorithm Data from bounties and open-world activities, or spare protocols, and creator readings show level 50 doubling the percentage main stat (Pressing Matter's 12% reads 24%), and on-screen readings in between fit +10% of the base every five levels (a level 42 Recursive Treatment reads 1.8 times its base, a level 45 Explosive Round 1.9 times). Talent Upgrade raises the talent: you donate duplicates of the same protocol, and Ubisoft's published ladders climb in five steps of 20% of the base value, ending at double. Gold duplicates are rare, so a purple you can max is often the better bet." },
   { question: "What is the best OS Protocol for Vanguard?", answer: "For a Commando damage build, Cover Shooter (Firepower, High-End): TikTokAndy switched his Double Barrel build to it in early October and soloed Precious Cargo on Legendary with it. His October 27 Lightweight M4 build uses Explosive Round instead. For team support, Strategic Assistance is our earlier pick, since its assist-based Signature Ability Charge Efficiency and Skill Cooldown reduction feed Tactical Link and Scanning Pulse uptime." },
@@ -87,7 +91,7 @@ const faqs = [
   <p class="osdb-count"><span id="osdb-count" aria-live="polite">{total} protocols</span> · stats at level 1, no talent upgrades</p>
 
   <ul class="osdb-list" id="osdb-list">
-    {osProtocols.map((p: any) => (
+    {osProtocols.map((p: any, i: number) => (
       <li
         id={slugify(p.name)}
         data-type={p.specialization}
@@ -102,13 +106,14 @@ const faqs = [
               alt={p.imageAlt || `${p.name} OS Protocol in Division Resurgence`}
               width="353"
               height="172"
-              loading="lazy"
+              loading={i < 3 ? 'eager' : 'lazy'}
               decoding="async"
             />
           )}
           <div class="osdb-card__top">
             <h2 class="osdb-card__name">{p.name}</h2>
             <span class="osdb-card__rarity">{p.rarity}</span>
+            <span class={`tier-chip tchip-live osdb-card__tier${ranks[slugify(p.name)] ? ` tier-chip--${ranks[slugify(p.name)].tier!.toLowerCase()}` : ''}`} data-tv-chip data-kind="os" data-id={slugify(p.name)} hidden={!ranks[slugify(p.name)]} title={ranks[slugify(p.name)] ? `Player rank ${ranks[slugify(p.name)].tier}` : undefined}>{ranks[slugify(p.name)]?.tier}</span>
           </div>
           <span class="osdb-card__main"><span class="osdb-card__type">{p.specialization}</span> Main stat <span class="osdb-card__stat">{p.mainStat} <strong>{p.mainValue}</strong></span></span>
           <p class="osdb-card__talent">{p.talentDescription}</p>
@@ -140,7 +145,7 @@ const faqs = [
     <h2 class="db-heading" style="font-size: var(--text-2xl);">Related Guides</h2>
     <ul>
       <li><a href="/database/">Division Resurgence Build Database</a></li>
-      <li><a href="/tier-list/os-protocols/">OS Protocol Tier List (Season 2 Phase 2)</a></li>
+      <li><a href="/tier-list/os-protocols/">OS Protocol Tier List (ranked by players)</a></li>
       <li><a href="/guides/best-os-protocol/">Best OS Protocol Per Class</a></li>
       <li><a href="/patch-notes/season-2-phase-2/">Season 2 Phase 2 Patch Notes (Dominating Presence, Concerted Strike, Relentless Assault)</a></li>
       <li><a href="/patch-notes/season-2-phase-1-the-call/">Season 2 Phase 1 Patch Notes (Dominating Presence fix)</a></li>
@@ -151,6 +156,7 @@ const faqs = [
   </div>
 
 <AdSenseUnit label="Advertisement (database category)" />
+<script is:inline src="/js/tier-votes.js?v=1" defer></script>
 </DatabaseLayout>
 
 <style is:global>
@@ -251,12 +257,14 @@ const faqs = [
   }
   .osdb-card__rarity {
     flex-shrink: 0;
+    margin-left: auto;
     font-family: var(--font-mono);
     font-size: var(--text-xs);
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--rarity);
   }
+  .osdb-card__tier { align-self: center; width: 24px; height: 24px; font-size: var(--step--2); }
   .osdb-card__main { font-size: var(--text-sm); color: var(--ink-muted); }
   .osdb-card__type {
     display: inline-block;

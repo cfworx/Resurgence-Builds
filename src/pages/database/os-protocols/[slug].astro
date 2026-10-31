@@ -11,6 +11,8 @@ import { dropRowsFor } from '../../../utils/db-enrich';
 import DbItemExtras from '../../../components/DbItemExtras.astro';
 import DbFaq from '../../../components/DbFaq.astro';
 import { verifiedPatch, DATABASE_UPDATED } from '../../../data/site-config';
+import TierVote from '../../../components/TierVote.astro';
+import TierBadge from '../../../components/TierBadge.astro';
 
 export function getStaticPaths() {
   return osProtocols.map((protocol: any) => ({
@@ -110,6 +112,7 @@ const ogImage = cardImage?.src || (protocol.image ? `${siteUrl}${protocol.image}
                 {protocol.cooldown}
               </span>
             )}
+            <TierBadge kind="os" id={slug} />
           </div>
         </div>
 
@@ -168,6 +171,8 @@ const ogImage = cardImage?.src || (protocol.image ? `${siteUrl}${protocol.image}
           </div>
         </div>
       </div>
+
+      <TierVote kind="os" id={slug} name={protocol.name} question={`How would you rank ${protocol.name}?`} listHref="/tier-list/os-protocols/" listLabel="See the OS Protocol tier list" />
 
       {cardImage && (
         <figure class="game-figure game-figure--card">

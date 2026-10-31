@@ -162,7 +162,7 @@ video title is not a source for anything you publish.
 | New numbers from the `data` group (players, reviews, builds, Discord) | **Not post-worthy** on their own. Record them in `state.snapshots`; they can feed a monthly "state of the game" roundup. |
 | Streams, Shorts, a creator's take | **Not post-worthy** on their own. A creator transcript the owner shares is (see the last row). |
 | Owner-provided Reddit export | A **community roundup** in the "Reddit Highlights" series (see `src/content/news/reddit-weekly-highlights-october-24.md` for the format). Feature constructive, funny and useful posts; skip pure rants; link the threads. |
-| Owner-provided creator transcript with a build | A **build post** in `src/content/builds/` crediting the creator (see `misdirection-double-barrel-commando-build-tiktokandy.md`), names verified against `src/data/*.json`. Set `verified: false` (we haven't re-tested it), which shows a "Creator build" badge and keeps it off the ranked tiers. |
+| Owner-provided creator transcript with a build | A **build post** in `src/content/builds/` crediting the creator (see `misdirection-double-barrel-commando-build-tiktokandy.md`), names verified against `src/data/*.json`. Set `verified: false` (we haven't re-tested it), which shows a "Creator build" badge. |
 
 ---
 

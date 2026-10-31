@@ -29,15 +29,12 @@ You need:
 6. **Save the file**
 7. **Deploy** (see "How to Deploy Changes" below)
 
-## How to Update a Tier List After a Patch
+## Tier Lists After a Patch
 
-The tier lists are pages, not content files:
-
-1. **Build tier list:** edit the `RANKS` map in `src/pages/tier-list/index.astro`. Each entry is keyed by the build's slug (its file name) and has `tier`, `was` (the previous tier), `evidence`, `why` and `sources`. A build with no entry shows under "not ranked yet".
-2. **OS Protocol tier list:** move entries between the `sTier` through `dTier` arrays in `src/pages/tier-list/os-protocols.astro` and set `was` to the old tier.
-3. Update `TIER_UPDATED` at the top of whichever page you changed.
-4. Leave the `verifiedPatch(...)` "last verified" stamp alone unless you re-tested in game.
-5. Save and deploy
+Both tier lists are ranked by players since October 31, 2026 (VOTES.md): readers vote S to D at the end of each build
+and on each OS Protocol, and the lists re-sort live. There's nothing to re-rank by hand after a patch. If a patch
+changes something so much that its old votes no longer apply, Cory can decide to start that item over (VOTES.md has
+the query). Don't write our own tier for a build or protocol into a page: the tier is the players' call.
 
 ## How to Check the Database Against the Game
 
@@ -210,9 +207,9 @@ Before publishing ANY post (build, guide, or news), every item below must be che
 
 - [ ] **`loadout`** - The whole build at the top of the page, in front matter: up to three headline numbers (`stats`, with `statsFrom` saying whose they are, or "On paper"), the one or two things it can't work without (`must`), both weapons with talents and notes, the OS Protocol, the three skill mods, the six gear pieces in the game's order (mask, body armor, backpack, gloves, holster, knee pads) with set, piece (`piece`, `any: true` or `options`), talent and attributes, and short `notes`. The schema is in `src/content.config.ts`; `src/components/BuildLoadout.astro` draws it (plus a sticky summary on wide screens and a Loadout button everywhere else). Use the game's exact names. The body starts after it: hook, How It Works (synergy cards), How to Play, numbers, swaps, sources. No build sheet in the body.
 - [ ] **`plannerHash`** - URL parameter string for the "Open in Build Planner" button. It must match `loadout` (same weapons, same set in every slot): `npm run build` stops if it doesn't, or if any roll isn't one the game allows.
-- [ ] **Tier list** - Decide whether the build gets a tier. Ranks are set by hand in the `RANKS` map in `src/pages/tier-list/index.astro`; without an entry it shows under "not ranked yet".
+- [ ] **Tier list** - Nothing to do: every build page gets the "How would you rank this build?" vote, and the build shows up as Unranked on the tier list until readers vote (VOTES.md).
 - [ ] **`verified: false`** - Set this on a creator's build we documented from their videos but haven't re-tested ourselves. It swaps the green "Verified" badge for a "Creator build" badge and labels it as a creator build on database pages.
-- [ ] **`original: true`** (with `verified: false`) - Our own design, put together from the Build-Making Database instead of documented from a creator. It shows an "Original build" badge instead of "Creator build". Every gun, chest and backpack in it must pass the planner's roll checks. Keep it visual (the `loadout` panel, synergy cards, stat tiles, swap cards; see `super-spreader-scorpio-field-grenadier-build.md`), and keep any caveat short and inline, in an FAQ answer or a hedged line: Cory had the closing list of things to check in game taken off Super Spreader. Cory doesn't want these titled or labeled "theorycraft". When RapidF5 has played it, add his results and drop `verified: false`. Tiers are set by hand in the `RANKS` map in `src/pages/tier-list/index.astro` (ranked from creator results since October 2026, with the reason and sources shown on the page); a build with no `RANKS` entry shows under "not ranked yet".
+- [ ] **`original: true`** (with `verified: false`) - Our own design, put together from the Build-Making Database instead of documented from a creator. It shows an "Original build" badge instead of "Creator build". Every gun, chest and backpack in it must pass the planner's roll checks. Keep it visual (the `loadout` panel, synergy cards, stat tiles, swap cards; see `super-spreader-scorpio-field-grenadier-build.md`), and keep any caveat short and inline, in an FAQ answer or a hedged line: Cory had the closing list of things to check in game taken off Super Spreader. Cory doesn't want these titled or labeled "theorycraft". When RapidF5 has played it, add his results and drop `verified: false`. Players rank it on the tier list like every other build.
 - [ ] **`specialization`** - Must match one of: Demolitionist, Tech Operator, Bulwark, Vanguard, Field Medic
 - [ ] **`playstyle`** - Must match one of: DPS, Tank, Support, Hybrid, Solo
 

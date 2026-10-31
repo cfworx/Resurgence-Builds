@@ -1,0 +1,19 @@
+---
+/**
+ * TierBadge.astro: the item's player rank as a small pill ("Player rank [A] 12 votes"), linking to its vote bar.
+ * Static from the deploy-time snapshot; public/js/tier-votes.js keeps it live. See VOTES.md.
+ */
+import '../styles/tier-votes.css';
+import { snapshotItems, voteCount, type VoteKind } from '../utils/votes';
+
+interface Props { kind: VoteKind; id: string; href?: string }
+const { kind, id, href = '#rank' } = Astro.props;
+const now = snapshotItems(kind)[id];
+---
+
+<a class="tvb" href={href} data-tv-badge data-kind={kind} data-id={id}>
+  <span class="tvb__label">Player rank</span>
+  <span class={`tier-chip ${now?.tier ? `tier-chip--${now.tier.toLowerCase()}` : 'tier-chip--none'}`} data-tv-letter>{now?.tier ?? '?'}</span>
+  <span data-tv-count>{now ? voteCount(now.n) : 'Unranked: rank it'}</span>
+</a>
+<script is:inline src="/js/tier-votes.js?v=1" defer></script>

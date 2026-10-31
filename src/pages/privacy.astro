@@ -12,7 +12,7 @@ import { GA4_ID } from '../data/site-config';
       <p>Resurgence Builds ("we," "our," or "us") operates the website resurgencebuilds.com. This Privacy Policy explains how we collect, use, and protect your information when you visit our site.</p>
 
       <h2>Information We Collect</h2>
-      <p>We don't require user accounts. The only information we collect ourselves is what you choose to post in a comment (see <a href="#comments">Comments</a> below). Third-party services integrated into our site may collect certain information automatically, including:</p>
+      <p>We don't require user accounts. The only information we collect ourselves is what you choose to post in a comment and the tier you pick when you vote (see <a href="#comments">Comments</a> and <a href="#votes">Votes</a> below). Third-party services integrated into our site may collect certain information automatically, including:</p>
       <ul>
         <li>IP address and general location data (via {GA4_ID ? 'Cloudflare, Google AdSense and Google Analytics' : 'Cloudflare and Google AdSense'})</li>
         <li>Browser type, device type, and operating system</li>
@@ -42,6 +42,10 @@ import { GA4_ID } from '../data/site-config';
       <h3>Essential Cookies</h3>
       <ul>
         <li><strong>Cloudflare:</strong> Security and performance cookies required for content delivery, DDoS protection, and edge routing. These are necessary for the site to function properly.</li>
+      </ul>
+      <h3>Functional Cookies</h3>
+      <ul>
+        <li><strong>rb_voter:</strong> set only when you rank a build or OS Protocol, so your next pick changes your vote instead of adding another. It's a random code, sent only to our vote counter, and lasts up to 400 days. See <a href="#votes">Votes</a>.</li>
       </ul>
       <h3>Advertising Cookies</h3>
       <ul>
@@ -74,9 +78,18 @@ import { GA4_ID } from '../data/site-config';
       </ul>
       <p>We remove comments that break these rules and block repeat offenders. You can flag a comment with its Report button: we look at every report, and a comment that several people report is hidden until we do.</p>
 
+      <h2 id="votes">Votes</h2>
+      <p>Both tier lists are ranked by readers: you can rank any build or OS Protocol S to D, no account needed. Here's what that involves.</p>
+      <ul>
+        <li><strong>What's public:</strong> only the totals (how many S, A, B, C and D votes each item has). Nobody can see who voted what.</li>
+        <li><strong>What we store privately:</strong> the item, your pick, the time, the random code from the rb_voter cookie, and scrambled codes made from your network's IP address and your browser's user agent (salted hashes). They keep it to one vote per person and stop vote spam. We never store the IP address itself.</li>
+        <li><strong>In your browser:</strong> your picks are remembered in local storage so the page can highlight them. That isn't sent anywhere.</li>
+        <li><strong>Removal requests:</strong> email <a href="mailto:p1@cfworx.tech">p1@cfworx.tech</a> with what you ranked and roughly when, and we'll find and delete those votes.</li>
+      </ul>
+
       <h2>Third-Party Services</h2>
       <ul>
-        <li><strong>Cloudflare:</strong> Hosting, CDN, security, and comment storage and filtering (Cloudflare D1 and Workers AI)</li>
+        <li><strong>Cloudflare:</strong> Hosting, CDN, security, comment and vote storage, and comment filtering (Cloudflare D1 and Workers AI)</li>
         <li><strong>Google AdSense:</strong> Advertising (<a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener noreferrer">Google's privacy policy</a>)</li>
         {GA4_ID && <li><strong>Google Analytics:</strong> Visit counts and page reports (<a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google's privacy policy</a>)</li>}
         <li><strong>Google Fonts:</strong> Typography</li>
@@ -98,7 +111,7 @@ import { GA4_ID } from '../data/site-config';
       <p>We do not sell personal information. Third-party advertising partners (Google AdSense) may collect data for interest-based advertising as described above. We honor Do Not Track browser signals where technically feasible. California residents may request details about data we hold by contacting us.</p>
 
       <h2>Data Security</h2>
-      <p>We serve all content over HTTPS with HSTS enabled. We do not store passwords, payment information, or sensitive personal data. Comments are stored in Cloudflare's database with IP addresses reduced to a salted hash. Advertising data is processed by Google under their own security standards.</p>
+      <p>We serve all content over HTTPS with HSTS enabled. We do not store passwords, payment information, or sensitive personal data. Comments and votes are stored in Cloudflare's database with IP addresses reduced to a salted hash. Advertising data is processed by Google under their own security standards.</p>
 
       <h2>Children's Privacy</h2>
       <p>Our site is not directed at children under 13. We do not knowingly collect data from children. Google AdSense is configured to comply with COPPA requirements.</p>

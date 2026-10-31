@@ -16,6 +16,7 @@ components instead of typed-in numbers, and run the design audit before shipping
 | Controls | `--control-sm` / `--control` / `--control-lg` | 36 (mouse only) / 44 / 48px tall |
 | Layout | `--pad-card`, `--measure`, `--inset`, `--max-width` | card padding 16px (24px from 720px), 58ch line length, `--inset` = the card padding (text inside boxes, and the list indent), 72rem container |
 | Colors | `--line-strong` | form field borders (3.5:1); `--border` is for decoration only |
+| Tier colors | `--tier-s` ... `--tier-d`, `--tier-s-grad` ... `--tier-d-grad` | S orange, A blue, B green, C grey, D dark grey: solid for chips and vote bars, gradients for big tier labels (`src/styles/tier-votes.css`) |
 
 Rules of thumb:
 - Nothing under 13px. Must-read text (FAQ answers, callouts, the reasoning in a guide) is body size, 17px.

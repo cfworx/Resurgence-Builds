@@ -99,6 +99,18 @@
   /* Transitions */
   --transition-fast: 150ms ease;
   --transition-base: 250ms ease;
+
+  /* Tier colors (player tier lists, vote bars, tier chips): solid for chips and bars, gradients for big labels */
+  --tier-s: #FF7A1A;
+  --tier-a: #2EA8F0;
+  --tier-b: #2CC07E;
+  --tier-c: #A3AAB1;
+  --tier-d: #5E666E;
+  --tier-s-grad: linear-gradient(135deg, #ff7b00, #ff5100);
+  --tier-a-grad: linear-gradient(135deg, #00d2ff, #3a7bd5);
+  --tier-b-grad: linear-gradient(135deg, #28a745, #20c997);
+  --tier-c-grad: linear-gradient(135deg, #6c757d, #adb5bd);
+  --tier-d-grad: linear-gradient(135deg, #495057, #343a40);
 }
 
 @media (min-width: 45em) { :root { --pad-card: 1.5rem; } }
@@ -1373,19 +1385,6 @@ main li a:hover {
   flex-wrap: wrap;
 }
 
-/* Intro paragraph: a centered block, but left-aligned text (long centered text is hard to read) */
-.hero__lede {
-  color: var(--ink-muted);
-  font-size: var(--step-0);
-  line-height: var(--lh-body);
-  max-width: var(--measure);
-  margin: 0 auto var(--sp-6);
-  text-align: left;
-}
-@media (min-width: 45em) {
-  .hero__lede { font-size: var(--step-1); }
-}
-
 /* --- Hero Banner (with background image) --- */
 .hero-banner {
   position: relative;
@@ -1680,14 +1679,35 @@ details.toc[open] > summary { margin-bottom: var(--sp-2); }
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: var(--success);
+  color: #4ADE80;
+  text-shadow: 0 0 10px rgba(74, 222, 128, 0.35);
 }
+/* A glowing dot with a ring that pulses out from it: "this is live". Reduced motion keeps the glow, drops the pulse. */
 .now-live__dot {
-  width: 8px;
-  height: 8px;
+  position: relative;
+  flex: none;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
-  background: var(--success);
-  box-shadow: 0 0 0 3px rgba(109, 170, 69, 0.2);
+  background: #4ADE80;
+  box-shadow: 0 0 5px 1px rgba(74, 222, 128, 0.8), 0 0 12px 3px rgba(74, 222, 128, 0.35);
+  animation: now-live-glow 1.6s ease-in-out infinite;
+}
+.now-live__dot::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 2px solid rgba(74, 222, 128, 0.75);
+  animation: now-live-ring 1.6s ease-out infinite;
+}
+@keyframes now-live-glow {
+  0%, 100% { box-shadow: 0 0 4px 1px rgba(74, 222, 128, 0.7), 0 0 10px 2px rgba(74, 222, 128, 0.3); }
+  50% { box-shadow: 0 0 8px 2px rgba(74, 222, 128, 1), 0 0 22px 6px rgba(74, 222, 128, 0.55); }
+}
+@keyframes now-live-ring {
+  0% { transform: scale(1); opacity: 0.9; }
+  100% { transform: scale(3); opacity: 0; }
 }
 .now-live__season { color: var(--ink-heading); }
 .now-live__headline { color: var(--ink-muted); flex: 1 1 320px; }

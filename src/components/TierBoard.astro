@@ -1,0 +1,89 @@
+---
+/**
+ * TierBoard.astro: a tier list ranked by player votes. Rows S to D plus "Unranked"; each card shows its vote spread
+ * and count. Drawn from the deploy-time snapshot; public/js/tier-votes.js loads the live totals, re-sorts the cards
+ * (animated) and keeps polling while the page is open. With `quick`, every card has a Rank button that votes right
+ * there (OS Protocols); otherwise its "Rank it" link goes to the item's vote bar (builds). See VOTES.md.
+ */
+import '../styles/tier-votes.css';
+import { TIERS, TIER_WORDS, compareItems, snapshotItems, voteCount, type VoteKind } from '../utils/votes';
+
+export type BoardItem = {
+  id: string;
+  name: string;
+  href: string;
+  sub: string;
+  image?: string;   // small thumbnail (cards are 48 px)
+  dot?: string;     // a colored dot: before the subtitle, or in place of the image
+  group?: string;   // for the filter buttons
+};
+
+interface Props {
+  kind: VoteKind;
+  items: BoardItem[];   // in the order unranked items should keep
+  quick?: boolean;
+  icons?: boolean;      // images are in-game icons (shown whole, on a dark tile) rather than screenshots
+  label: string;        // "builds", "protocols": for screen readers
+}
+const { kind, items, quick = false, icons = false, label } = Astro.props;
+
+const snap = snapshotItems(kind);
+const rows = [
+  { key: 'S', word: TIER_WORDS.S, empty: "Nobody's earned S yet. Prove us wrong." },
+  { key: 'A', word: TIER_WORDS.A, empty: 'A tier is wide open. Be the hero.' },
+  { key: 'B', word: TIER_WORDS.B, empty: 'B tier is empty. Which is weird, because most of us live here.' },
+  { key: 'C', word: TIER_WORDS.C, empty: "No C tier yet. Everyone's being polite. For now." },
+  { key: 'D', word: TIER_WORDS.D, empty: 'No D tier. We have standards. Low ones, but standards.' },
+  { key: 'U', word: 'No votes yet', empty: 'Everything has a rank. You people are thorough.' },
+];
+const placed = items.map((it, order) => ({ ...it, order, sum: snap[it.id] }));
+const groups: Record<string, typeof placed> = Object.fromEntries(rows.map((r) => [r.key, []]));
+for (const it of placed) groups[it.sum?.tier ?? 'U'].push(it);
+for (const t of TIERS) groups[t].sort((x, y) => compareItems({ ...x.sum, name: x.name }, { ...y.sum, name: y.name }));
+const share = (sum: any, t: string) => (sum ? sum[t.toLowerCase()] : 0);
+// The first cards are on the first screen: their thumbnails load right away, the rest lazily.
+const eager = new Set(rows.flatMap((r) => groups[r.key]).slice(0, 6).map((it) => it.id));
+---
+
+<div class="tb" data-tv-board data-kind={kind} aria-label={`Tier list of ${label}, ranked by player votes`}>
+  {rows.map((row) => (
+    <section class={`tb__row tb__row--${row.key.toLowerCase()}${groups[row.key].length ? '' : ' is-empty'}`} data-tv-row={row.key} aria-label={row.key === 'U' ? `Unranked ${label}` : `${row.key} tier`}>
+      <div class="tb__label" aria-hidden="true">
+        <b>{row.key === 'U' ? 'Unranked' : row.key}</b>
+        <small>{row.word}</small>
+      </div>
+      <div class="tb__cards" data-tv-cards>
+        {groups[row.key].map((it) => (
+          <article class="tbc" data-tv-card data-id={it.id} data-name={it.name} data-order={it.order} data-group={it.group}>
+            <a class="tbc__link" href={it.href}>
+              {it.image
+                ? <img class={`tbc__img${icons ? ' tbc__img--icon' : ''}`} src={it.image} width="48" height="48" alt="" loading={eager.has(it.id) ? 'eager' : 'lazy'} decoding="async" />
+                : <span class="tbc__dot" style={`--dot:${it.dot ?? 'var(--ink-muted)'}`}></span>}
+              <span class="tbc__text">
+                <span class="tbc__name">{it.name}</span>
+                <span class="tbc__sub">{it.image && it.dot && <span class="tbc__subdot" style={`--dot:${it.dot}`}></span>}{it.sub}</span>
+              </span>
+            </a>
+            <div class="tbc__meta">
+              <span class="tdist" data-tv-dist aria-hidden="true">{TIERS.map((t) => <i style={`flex-grow:${share(it.sum, t)}`}></i>)}</span>
+              <span class="tbc__n" data-tv-count>{it.sum ? voteCount(it.sum.n) : 'No votes yet'}</span>
+              <span class="tbc__mine" data-tv-mine hidden>You <span class="tier-chip" data-tv-mine-letter></span></span>
+              {quick
+                ? <button type="button" class="tbc__rank" data-tv-quick aria-expanded="false" aria-label={`Rank ${it.name}`}>Rank</button>
+                : <a class="tbc__go" href={`${it.href}#rank`} data-tv-go aria-label={`Rank it: ${it.name}`}>Rank it</a>}
+            </div>
+            {quick && (
+              <div class="tbc__picks" data-tv-quickpicks role="group" aria-label={`Your rank for ${it.name}`} hidden>
+                {TIERS.map((t) => (
+                  <button type="button" class={`tbc__pick tbc__pick--${t.toLowerCase()}`} data-tv-pick={t} aria-pressed="false" title={TIER_WORDS[t]} aria-label={`${t} tier: ${TIER_WORDS[t]}`}>{t}</button>
+                ))}
+              </div>
+            )}
+          </article>
+        ))}
+      </div>
+      <p class="tb__empty">{row.empty}</p>
+    </section>
+  ))}
+</div>
+<script is:inline src="/js/tier-votes.js?v=1" defer></script>

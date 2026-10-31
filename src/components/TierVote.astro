@@ -1,0 +1,50 @@
+---
+/**
+ * TierVote.astro: "How would you rank this?" Five tier buttons (S to D) that cast a reader's vote, and what players
+ * say so far. Used near the end of every build and on every OS Protocol's database page. One vote per reader per item,
+ * changeable any time. Drawn from the deploy-time snapshot; public/js/tier-votes.js makes it live. See VOTES.md.
+ */
+import '../styles/tier-votes.css';
+import { TIERS, TIER_WORDS, snapshotItems, voteCount, type VoteKind } from '../utils/votes';
+
+interface Props {
+  kind: VoteKind;
+  id: string;          // the page's slug
+  name: string;        // what's being ranked
+  question: string;    // "How would you rank this build?"
+  listHref: string;    // the tier list it feeds
+  listLabel: string;
+  beforeComments?: boolean; // move above the comment box (build pages)
+}
+const { kind, id, name, question, listHref, listLabel, beforeComments = false } = Astro.props;
+const now = snapshotItems(kind)[id];
+const total = now?.n ?? 0;
+const share = (t: string) => (now ? (now as any)[t.toLowerCase()] : 0);
+---
+
+<section class="tv" id="rank" aria-labelledby="tv-q" data-tv data-kind={kind} data-id={id} data-name={name} data-place={beforeComments ? 'before-comments' : undefined}>
+  <div class="tv__top">
+    <h2 class="tv__q" id="tv-q">{question}</h2>
+    <p class="tv__hint">One vote each. Change it anytime.</p>
+  </div>
+  <div class="tv__picks" role="group" aria-label={`Your rank for ${name}`}>
+    {TIERS.map((t) => (
+      <button type="button" class={`tv__pick tv__pick--${t.toLowerCase()}`} data-tv-pick={t} aria-pressed="false" aria-label={`${t} tier: ${TIER_WORDS[t]}`}>
+        <span class="tv__letter" aria-hidden="true">{t}</span>
+        <span class="tv__word" aria-hidden="true">{TIER_WORDS[t]}</span>
+      </button>
+    ))}
+  </div>
+  <p class="tv__now">
+    <span class="tv__crowd">Players say</span>
+    <span class={`tier-chip ${now?.tier ? `tier-chip--${now.tier.toLowerCase()}` : 'tier-chip--none'}`} data-tv-letter>{now?.tier ?? '?'}</span>
+    <span data-tv-count>{total ? `from ${voteCount(total)}` : 'No votes yet. Yours sets the tier.'}</span>
+    <span class="tdist" data-tv-dist aria-hidden="true">
+      {TIERS.map((t) => <i style={`flex-grow:${share(t)}`}></i>)}
+    </span>
+  </p>
+  <p class="tv__msg" data-tv-msg role="status" aria-live="polite"></p>
+  <a class="tv__more" href={listHref}>{listLabel} &rarr;</a>
+  <noscript><p>Voting needs JavaScript.</p></noscript>
+</section>
+<script is:inline src="/js/tier-votes.js?v=1" defer></script>
