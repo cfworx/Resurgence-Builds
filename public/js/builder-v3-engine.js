@@ -1016,6 +1016,17 @@
     note.hidden = !lines.length;
     const input = $('#buildNameInput');
     if (input && input !== doc.activeElement && cleanName(input.value) !== S.name) input.value = S.name;
+    fitName();
+  }
+  /* The build's name heads the page: on narrow screens a long name shrinks to fit its field (down to 60%)
+     instead of running off the edge. */
+  function fitName() {
+    const input = $('#buildNameInput');
+    if (!input) return;
+    input.style.fontSize = '';
+    if (!input.value || input.scrollWidth <= input.clientWidth) return;
+    const base = parseFloat(getComputedStyle(input).fontSize) || 28;
+    input.style.fontSize = `${Math.max(base * 0.6, Math.floor(base * (input.clientWidth / input.scrollWidth) * 0.98))}px`;
   }
 
   function renderAll() {
@@ -1868,16 +1879,133 @@
     for (let i = a.length - 1; i > 0; i--) { const j = rnd(i + 1); const t = a[i]; a[i] = a[j]; a[j] = t; }
     return a.slice(0, n);
   }
-  const LUCKY_NAMES = ['Lucky Pull', 'House Money', "Beginner's Luck", 'All In', 'Snake Eyes', 'Double Down', 'Wild Card',
-    'Long Shot', 'Pocket Aces', 'Coin Flip Special', 'Hold My Coffee', 'Rolled the Dice', 'One More Spin', 'Luck of the Draw',
-    'Feeling Lucky', 'Loose Slots', 'Dad Said It Was Fine', 'Fortune Favors the Agent', 'Vegas Rules', 'The Gambler'];
+  /* Build names for the slot machine, written for the dads who play this game. Most fit any pull; the
+     themed ones only show up when the pull earns them: its specialization, a gear set it wears two or more
+     pieces of, or an exotic in a weapon slot. */
+  const NAMES_ANY = [
+    // home and family
+    'Dad Bod Juggernaut', 'Who Touched the Thermostat', 'Mowed the Lawn, Now You', 'Cargo Shorts Full of Ammo',
+    'Socks and Sandals Sniper', 'Back Went Out Mid-Fight', 'Recliner Mode Activated', 'Nap Time Is Over',
+    'Dad Reflexes Engaged', 'Grill Master General', 'Leaf Blower at 7 AM', 'Honey-Do List Speedrun',
+    'Garage Fridge Raider', 'Minivan Assault Unit', 'Carpool Commando', 'Pickup Line Pro', 'We Have Food at Home',
+    'Ask Your Mother', 'Because I Said So', 'Close the Door, AC Is On', 'Were You Born in a Barn',
+    'Not Mad, Just Disappointed', 'I Will Turn This Car Around', "Hi Hungry, I'm Dad", 'Hold My Coffee',
+    'Hold My Juice Box', 'One More Game, Honey', 'Five More Minutes, I Swear', 'Diaper Change AFK',
+    '3 AM Feeding, 3 AM Raid', 'Toddler Pressed Start', 'Kids Asleep, Dad Unleashed', 'Dino Nugget Enjoyer',
+    'Stepped on a Toy at 2 AM', 'Dad Joke Detonator', 'Pull My Finger, Then Duck', 'Old Man Strength',
+    "We're Not Lost", 'Mortgage Payment Pending', 'Minivan Drift King', 'Bought Ammo in Bulk', 'Did You Lock the Door?',
+    'Checked the Stove Twice', 'Asleep Before the Credits', 'Fell Asleep in a Cutscene', 'Who Ate My Leftovers?',
+    'Monday Morning Rage Quit', 'Called in Sick to Raid', "Honey, I'm Home (Logging In)", 'Garage Gym, Zero Visits',
+    'Lower Back Tank', 'Knees Pop on Reload', 'Pulled a Hamstring Sprinting',
+    // old school gamer
+    'Boomer Shooter', 'Back in My Day, We Had Lag', 'Dial-Up Veteran', 'LAN Party Survivor', 'Blew on the Cartridge',
+    'Couch Co-op Commander', 'Screen Peeker Supreme',
+    // skill issues
+    'Certified Skill Issue', 'Touched Grass Once', 'Git Gud, Get Groceries', 'Spray, Pray, Pay Bills',
+    'Respawn and Regret', 'Rage Quit Ranger', 'Controller Thrower', 'It Was Lag, I Swear', '200 Ping Dad',
+    'Router in the Basement', 'Who Is Downloading Right Now', 'Tryhard Tuesday', 'Loot Goblin Dad',
+    'Inventory Full Again', 'Saved My Grenades Forever', 'Aim Assist Did the Work', 'Stick Drift Champion',
+    'No Scope, No Hope', 'Hip Fire Hero', 'Professional Camper', 'Flank Me, I Dare You', 'Teabag Tuesday',
+    'Salt Mine Operator', 'Carry Me Like Groceries', 'Revive Me, Coward', 'Downed and Disappointed',
+    'Speedrun to the Grave', 'Nerf This Dad', 'Patch Day Panic', 'Copied a YouTuber', 'Skipped the Tutorial',
+    'Button Masher Supreme', 'Pressed Everything, Won', 'RNG Hates Me Personally', 'One More Sealed Cache',
+    'Meta Chaser, Fun Hater', 'Read the Patch Notes Once', 'Missed Every Single Shot', 'Professional Wall Shooter',
+    // the city
+    'Dark Zone Daycare', 'Extracting the Groceries', 'Went Rogue at the PTA', 'Get Off My Dark Zone',
+    'Get Off My Lawn, Agent', 'Manhattan Lawn Service', 'Bodega Cat Bodyguard', 'Bodega Run Gone Wrong',
+    'Subway Car Sniper', 'Times Square Tantrum', 'Brooklyn Bridge Troll', 'Midtown Meltdown',
+    'Shoveled the Driveway First', 'Agent of Chaos and Carpool', 'SHD: Sleepy Hungry Dad',
+    // the slot machine
+    'House Money', 'Loose Slots', 'Snake Eyes', 'Rolled a Nat 1', 'Double Down on Dad Jokes', 'All In, Out of Breath',
+    'Lucky Socks Equipped', 'Lucky Underwear Loadout', 'Scratch-Off Sniper', 'Casino Buffet Champion',
+    'What Happens in the DZ', 'Bet the Mortgage', 'Betting the College Fund', 'Spent the Swear Jar', "Beginner's Luck",
+    // dad energy
+    "Your Dad's Favorite Build", 'Built Different, Built Old', 'Old Enough to Be Your Dad', 'Dad Has Entered the Lobby',
+    'Grounded Until Respawn', "You're Grounded, Agent", 'Go to Your Room, Rogue', 'No Dessert for Rogues',
+    "Don't Make Me Come Up There", 'Not Angry, Just Reloading', 'Back Pain, Bad Intentions', 'Free Taxi, Paid in Hugs',
+    "Ammo Doesn't Grow on Trees", 'Lights Off, Damage On', 'Who Left the Garage Open?', 'Dad Said It Was Fine',
+    'Go Ask Your Father', 'Lecture Incoming', "Here's a Fun Fact, Son",
+    // fuel
+    'Hot Dog Water Hydration', 'Gas Station Sushi Gamble', 'Beef Jerky Breath', 'Fourth Cup of Coffee',
+    'Decaf Is for Quitters', 'Microwaved My Coffee Twice', 'Cold Pizza Breakfast', 'Ranch on Everything',
+    'Wing Night Menace', 'Chili Cook-Off Champion', 'Brisket Since 4 AM', 'Meat Sweats Meta', 'Hidden Snack Stash',
+    'Halloween Candy Dad Tax',
+    // sports and the garage
+    'Fantasy League Last Place', 'Fourth Quarter Comeback', 'Hail Mary Headshot', 'Lawn Chair Linebacker',
+    'Weekend Warrior, Wrecked', 'Beer League Legend', 'Truck Bed Arsenal', 'Check Engine Light Agent',
+    'Duct Tape and a Prayer', "Borrowed the Neighbor's Drill", 'Professional Stud Finder', 'Measure Twice, Shoot Once',
+    'Leftover Screws Build',
+    // getting older
+    'Reading Glasses Required', 'Squinting at the Minimap', 'Bifocal Sniper', 'What Did You Say?', 'Ringing in My Ears',
+    'Ibuprofen Is a Food Group', 'Heating Pad Hero', 'Ice Pack Assault', 'Joints Louder Than Guns',
+    'Made a Noise Standing Up', 'In Bed by 9 PM', 'Up at 5 AM Anyway', 'Senior Discount Sniper',
+    'Midlife Crisis Convertible',
+    // family IT department
+    'Turned It Off and On Again', 'Printer Is My Nemesis', 'Password Is Password123', "Fixed Grandma's Computer",
+    'Reply All Disaster', 'Blue Screen Survivor', 'Cable Management Is a Myth',
+    // the kids
+    "Teen Says I'm Cringe", 'Cringe Dad Certified', 'Still Says Yeet', 'Victory Dance in Public', 'OK Boomer, Reloading',
+    'Dad Hat, No Cap', 'Rizz Level: Zero', 'Sigma Dad Grindset', 'Main Character Dad', 'Kids Kicked Me Off the TV',
+    'Player Two Is My Son', 'My Son Carried Me', 'Son Is a Better Shot', 'Chores Before Raids',
+    // the suburbs
+    'Tactical Fanny Pack', 'Fanny Pack Full of Frags', 'Flashlight in the Glovebox', "World's Okayest Dad",
+    "World's Okayest Agent", 'Khakis With Extra Pockets', 'Belt Clip Phone Holster', 'Tucked-In Polo Assault',
+    'Pleated Pants Paladin', 'New Shoes for Mowing', 'Sunburned at the BBQ', 'Lawn Stripes Specialist',
+    "Neighbor's Lawn Envy", "HOA's Worst Nightmare", 'Fence Dispute Final Boss', 'Final Boss of the Cul-de-Sac',
+    'Suburban Assault Vehicle', 'Christmas Lights by November', 'Black Friday Breacher', 'Tactical Leaf Raking',
+    'Snow Blower Supremacy',
+  ];
+  const NAMES_SPEC = {
+    'Demolitionist': ['Demolished the Buffet', 'Boom Goes the Barbecue', 'Fireworks Permit Pending', 'Mine Your Own Business', 'Demolition Dad'],
+    'Tech Operator': ['Have You Tried Rebooting', 'Helicopter Dad, Literally', 'Tech Support for the Family', 'Did You Update Your Drivers', "Tech Op Can't Fix the Printer"],
+    'Bulwark': ['Human Shield Husband', 'Load-Bearing Dad', 'Dad Bod Is a Shield', 'Bulwark Belly', 'Unmovable Recliner'],
+    'Vanguard': ['Vanguard of the Snack Aisle', 'Front Line, Back Pain', 'Leads the Charge, Forgets Why', 'Charged In, Knee Gave Out', 'First In, First to Nap'],
+    'Field Medic': ['Rub Some Dirt on It', 'Walk It Off, Agent', 'Self-Diagnosed Field Medic', 'Medic, Not a Real Doctor', 'Field Medic, Bring Snacks'],
+  };
+  const NAMES_SET = {
+    'Fury Strike': ['Fury Strike at Bath Time', 'Fury Strike, Zero Chill'],
+    'Quick Draw': ['Quick Draw, Slow Knees', 'Quick Draw, Slower Wi-Fi'],
+    'Phalanx Attack': ['Phalanx of Folding Chairs', 'Phalanx of Lawn Gnomes'],
+    'One Shot One Kill': ['One Shot, One Nap', 'One Shot, One Coffee'],
+    'Gunny Johnny': ['Gunny Johnny Mows the Lawn', "Gunny Johnny's Day Off"],
+    'Mechanical Enemy': ['Mechanical Enemy: My Printer', 'Mechanical Enemy: The Grill'],
+    'Jackpot': ['Hit the Jackpot, Hurt My Back', 'Jackpot at the Gas Station'],
+    'Long-term Effect': ['Long-term Effect: Back Pain', 'Long-term Effect: Dad Jokes'],
+    'Dr. Medic': ['Dr. Medic Will See You Now', 'Dr. Medic Takes Copays'],
+    'Boom-Shakalaka': ['Boom-Shakalaka at the BBQ', 'Boom-Shakalaka, Says Dad'],
+    'Fire Cycle': ['Fire Cycle on the Grill', 'Fire Cycle, Smoke Alarm'],
+    'Mechanical Expert': ['Mechanical Expert, Kinda', 'Mechanical Expert? Barely'],
+    'Captain Cow': ['Captain Cow Is My Copilot', 'Holy Cow, Captain'],
+    'Healing Elites': ['Healing Elites, Hurt Feelings', 'Healing Elites, Not My Back'],
+    'Self-Propelled Shield': ['Self-Propelled Lawn Mower', 'Self-Propelled Snack Cart'],
+    'Fearless Warrior': ['Fearless Warrior vs. Spiders', 'Fearless Warrior, Fears HOA'],
+  };
+  const NAMES_EXOTIC = {
+    'Lady Death': ['Lady Death and Gentleman Dad', 'Lady Death, Dad Life'],
+    'Warlord': ['Warlord of the Grill', 'Warlord of the Cul-de-Sac'],
+    'Strawberry Milkshake': ['Two Straws, One Milkshake', 'Milkshake Brain Freeze'],
+    'Scorpio': ['Scorpio, Read My Horoscope', "It's Scorpio Season"],
+    'The Bighorn': ['Big Game Hunter, Small Bladder', 'Bighorn, Big Mood'],
+    'Diamondback': ['Diamondback, Diamond Hands', 'Diamondback, Bad Back'],
+  };
+  const byKey = (o) => new Map(Object.entries(o).map(([k, v]) => [key(k), v]));
+  const SPEC_NAMES = byKey(NAMES_SPEC);
+  const SET_NAMES = byKey(NAMES_SET);
+  const EXOTIC_NAMES = byKey(NAMES_EXOTIC);
+  const ALL_NAMES = [NAMES_ANY, NAMES_SPEC, NAMES_SET, NAMES_EXOTIC].flatMap((x) => (Array.isArray(x) ? x : Object.values(x).flat()));
+  /* About two pulls in five that earn a themed name get one; the rest draw from the general list */
+  function luckyName(st) {
+    const themed = [...arr(SPEC_NAMES.get(key(st.spec)))];
+    for (const [id, n] of setCounts(st)) { const set = SETS.get(id); if (set && n >= 2) themed.push(...arr(SET_NAMES.get(key(set.name)))); }
+    for (const w of st.w) { const wp = getWeapon(w.id); if (isExotic(wp)) themed.push(...arr(EXOTIC_NAMES.get(key(wp.name)))); }
+    return themed.length && Math.random() < 0.4 ? pickOne(themed) : pickOne(NAMES_ANY);
+  }
 
   function randomBuild() {
     const st = emptyState();
     const sp = pickOne(SPECS);
     st.spec = sp.name;
     st.focus = pickOne(sp.focuses).name;
-    st.name = pickOne(LUCKY_NAMES);
     // Weapons: two different guns; about one pull in three puts an exotic in one slot
     const exoSlot = EXO.items.length && Math.random() < 0.35 ? rnd(2) : -1;
     const guns = pickSome(STD.items, 2);
@@ -1918,6 +2046,7 @@
         return c.length ? str(pickOne(c).id) : '';
       });
     } else placeMods(st, pickSome(mine, 3).map((m) => str(m.id)));
+    st.name = luckyName(st); // last: some names depend on the gear and guns
     return st;
   }
 
@@ -2129,7 +2258,7 @@
     roll($('#subLabel'), W.focuses, tSpec + 90);
     const nameInput = $('#buildNameInput');
     if (nameInput && nameInput !== doc.activeElement) {
-      rollers.push({ end: tSpec + 150, next: 0, done: false, tick() { nameInput.value = pickOne(LUCKY_NAMES); }, land() { nameInput.value = S.name; pop(nameInput); } });
+      rollers.push({ end: tSpec + 150, next: 0, done: false, tick() { nameInput.value = pickOne(ALL_NAMES); }, land() { nameInput.value = S.name; fitName(); pop(nameInput); } });
     }
 
     // Weapons
@@ -2417,6 +2546,7 @@
   const nameInput = $('#buildNameInput');
   nameInput.addEventListener('input', () => {
     S.name = cleanName(nameInput.value);
+    fitName();
     notice = '';
     renderTemplateBar();
     clearTimeout(urlTimer);
@@ -2438,6 +2568,11 @@
     renderAll();
     remember();
   });
+
+  // Refit the name when the screen size changes or the display font finishes loading
+  let fitTimer = 0;
+  window.addEventListener('resize', () => { clearTimeout(fitTimer); fitTimer = setTimeout(fitName, 120); });
+  if (doc.fonts && doc.fonts.ready) doc.fonts.ready.then(fitName).catch(() => {});
 
   /* ---------- start ---------- */
   loadFromLocation();
