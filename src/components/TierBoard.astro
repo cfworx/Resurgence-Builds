@@ -49,8 +49,10 @@ const eager = new Set(rows.flatMap((r) => groups[r.key]).slice(0, 6).map((it) =>
   {rows.map((row) => (
     <section class={`tb__row tb__row--${row.key.toLowerCase()}${groups[row.key].length ? '' : ' is-empty'}`} data-tv-row={row.key} aria-label={row.key === 'U' ? `Unranked ${label}` : `${row.key} tier`}>
       <div class="tb__label" aria-hidden="true">
-        <b>{row.key === 'U' ? 'Unranked' : row.key}</b>
-        <small>{row.word}</small>
+        <span class="tb__labelin">
+          <b>{row.key === 'U' ? 'Unranked' : row.key}</b>
+          <small>{row.word}</small>
+        </span>
       </div>
       <div class="tb__cards" data-tv-cards>
         {groups[row.key].map((it) => (

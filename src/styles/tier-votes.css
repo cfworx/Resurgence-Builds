@@ -296,15 +296,20 @@
   border: 1px solid var(--border);
   border-radius: var(--radius-sm);
   background: var(--surface);
-  overflow: hidden;
+  overflow: clip; /* clips the corners without breaking the sticky labels */
 }
+/* The label stays in view while you scroll through a long row: under the site header on phones, at the top of
+   its column on wider screens. */
 .tb__label {
+  position: sticky;
+  top: var(--nav-height);
+  z-index: 1;
   display: flex;
   align-items: center;
-  gap: var(--sp-3);
   padding: var(--sp-2) var(--inset);
   color: #111;
 }
+.tb__labelin { display: flex; align-items: center; gap: var(--sp-3); }
 .tb__label b { font-family: var(--font-heading); font-weight: 900; font-size: 2rem; line-height: 1; }
 .tb__label small {
   font-family: var(--font-mono);
@@ -313,7 +318,6 @@
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
-.tb__label .tb__count { margin-left: auto; font-family: var(--font-mono); font-size: var(--step--2); font-weight: 700; opacity: 0.85; }
 .tb__row--s .tb__label { background: var(--tier-s-grad); }
 .tb__row--a .tb__label { background: var(--tier-a-grad); }
 .tb__row--b .tb__label { background: var(--tier-b-grad); }
@@ -326,9 +330,9 @@
 .tb__row--u .tb__label b { font-size: 1.25rem; letter-spacing: 0.02em; }
 @media (min-width: 45em) {
   .tb__row { grid-template-columns: 7rem minmax(0, 1fr); }
-  .tb__label { flex-direction: column; justify-content: center; gap: 4px; padding: var(--sp-3) var(--sp-2); text-align: center; }
+  .tb__label { position: static; flex-direction: column; justify-content: flex-start; padding: var(--sp-4) var(--sp-2); text-align: center; }
+  .tb__labelin { position: sticky; top: calc(var(--nav-height) + var(--sp-4)); flex-direction: column; gap: 4px; }
   .tb__label b { font-size: 3rem; }
-  .tb__label .tb__count { margin-left: 0; }
 }
 .tb__cards {
   display: grid;
