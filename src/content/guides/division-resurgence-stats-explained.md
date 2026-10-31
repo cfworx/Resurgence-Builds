@@ -2,7 +2,7 @@
 title: "Stats Explained: What Every Stat Does"
 category: "Beginner"
 publishDate: 2026-06-02
-lastUpdated: 2026-10-31T12:00:00Z
+lastUpdated: 2026-10-28T12:00:00Z
 tags: ["stats", "firepower", "engineering", "toughness", "build-guide"]
 description: "Division Resurgence stats explained: Firepower, Toughness, Engineering, crit, multi-shot, the 80% damage reduction cap and how talents scale."
 featuredImage: "/images/guides/division-resurgence-stats-explained-shooting-range-1200.webp"

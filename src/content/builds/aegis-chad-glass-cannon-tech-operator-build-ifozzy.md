@@ -5,7 +5,7 @@ subclass: "Aegis Operations"
 playstyle: DPS
 pve: true
 pvp: true
-lastUpdated: 2026-10-31T12:00:00Z
+lastUpdated: 2026-10-28T00:00:00Z
 patch: "1.1.2.2"
 tags: ["Tech Operator", "Aegis Operations", "Jackpot", "Boom-Shakalaka", "Glass Cannon", "Brains Over Brawn", "Warlord", "Skill Crit", "Build"]
 description: "LtFoe's Double Agent Tech Op: two setups, one loadout. Swap 2 gear pieces between Glass Cannon DPS and Duality PvP. 727k DPS, 66% Skill Crit."

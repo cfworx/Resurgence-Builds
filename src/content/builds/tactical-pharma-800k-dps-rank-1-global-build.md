@@ -5,7 +5,7 @@ subclass: "Tactical Pharma"
 playstyle: DPS
 pve: true
 pvp: true
-lastUpdated: 2026-10-31T12:00:00Z
+lastUpdated: 2026-10-28T00:00:00Z
 patch: "1.2.1"
 tags: ["Tactical Pharma", "jackpot", "fire-cycle", "chemical-trap", "glass-cannon", "backup-battery", "roguemadras", "field-medic-build", "800k-dps", "skill-damage"]
 description: "RogueMadras's 800k DPS Tactical Pharma build: Chemical Trap + Oxidizing Hive, Jackpot 4pc, Fire Cycle 2pc. Full gear, talents, and skill mods."

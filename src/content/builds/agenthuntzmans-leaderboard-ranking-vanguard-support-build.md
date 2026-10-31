@@ -5,7 +5,7 @@ subclass: "Recon"
 playstyle: "Support"
 pve: true
 pvp: false
-lastUpdated: 2026-10-31T12:00:00Z
+lastUpdated: 2026-10-28T12:00:00Z
 patch: "1.2.1"
 tags: ["Recon", "vanguard", "support", "engineering", "smart-cover", "tactical-link", "scanning-pulse", "fully-charged", "team-dps"]
 description: "The Vanguard Recon build that triples your team's DPS through Smart Cover, Scanning Pulse, and Fully Charged stacking."

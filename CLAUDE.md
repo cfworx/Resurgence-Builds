@@ -62,5 +62,7 @@ the game shows is the truth, so each one gets a full audit, every time, without 
 - Build with `npm run build` (it stops on a roll the game doesn't allow), then
   `git checkout -- public/images/.optimized.json` and `node scripts/check-links.mjs` (0 broken). Check changed pages at
   phone and desktop widths.
+- Editing a post never changes its date (`lastUpdated` on builds, `publishDate` and `lastUpdated` elsewhere). The home
+  page lists posts by date, and a fix must not push an older post ahead of the new ones.
 - Push to `main` (Cloudflare Pages deploys it) and to `accuracy-pass-2026-10-28`.
 - No em dashes or en dashes in site content.
