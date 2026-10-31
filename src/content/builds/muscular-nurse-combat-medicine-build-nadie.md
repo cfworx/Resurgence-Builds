@@ -34,17 +34,87 @@ faqs:
     answer: "Primary: Enhanced AUG A3P (the Tier 2 AUG, an SMG) with Steady Suppression and Precise Support II for team-oriented play. Secondary: Military M60 E4 (the Tier 2 M60, an LMG) with Sadistic Shield II and Conceited II for solo boss tanking. Both are standard weapons, no exotics required, and both are the only AUG and M60 whose talent pools hold these talents."
   - question: "How does this build compare to Involuntary Nap Time?"
     answer: "Same Pummeling Shield OS Protocol (and the same June 26 stun cooldown nerf), completely different role. Involuntary Nap Time is a Bulwark Juggernaut stun-tank for Elite Missions and the Dark Zone. The Muscular Nurse is a Combat Medicine PvE sustainer that heals the team while tanking bosses. Pick based on whether you want to put things to sleep or keep your squad alive through Elite content."
-
+loadout:
+  statsFrom: "Nadie's sheet"
+  stats:
+  - value: "334,193"
+    label: Health
+  - value: "15,760"
+    label: Armor
+  - value: "20.01%"
+    label: Damage Reduction
+  weapons:
+  - role: Primary
+    name: Enhanced AUG A3P
+    note: for the team
+    talents:
+    - Steady Suppression
+    - Precise Support
+    attrs:
+    - Skill Multi-Shot Chance
+    - Received Healing
+  - role: Secondary
+    name: Military M60 E4
+    note: for bosses
+    talents:
+    - Sadistic Shield
+    - Conceited
+    attrs:
+    - Max Health
+    - Armor
+  os:
+    name: Pummeling Shield
+    note: Level 50
+  mods:
+  - Auto Trauma Treatment
+  - Buddy Treatment
+  - Emergency Measures
+  gear:
+  - slot: Mask
+    piece: Half mask respirator
+    set: Healing Elites
+    attrs:
+    - Damage Reduction
+    - Armor
+  - slot: Body Armor
+    piece: "\"Big Drum\" Body Armor"
+    set: Self-Propelled Shield
+    talent: Hypervigilant
+    attrs:
+    - Received Healing
+    - Skill Cooldown Recovery
+  - slot: Backpack
+    piece: "Roamer Pack \"Sow\""
+    set: Healing Elites
+    talent: Rock Solid
+    attrs:
+    - Skill Critical Chance
+    - Damage Reduction
+  - slot: Gloves
+    piece: Gustavo Association Gloves
+    set: Healing Elites
+    attrs:
+    - Max Health
+    - Damage Reduction
+  - slot: Holster
+    piece: Tepes Holster
+    set: Healing Elites
+    attrs:
+    - Damage Reduction
+    - Received Healing
+  - slot: Knee Pads
+    any: true
+    set: Self-Propelled Shield
+    attrs:
+    - Armor
+    - Skill Critical Chance
+  notes:
+  - label: Attributes
+    text: "Damage Reduction on the mask, gloves, holster and backpack, next to Armor, Max Health, Received Healing or Skill Crit Chance. Received Healing and Skill Cooldown Recovery on the chest, Armor and Skill Crit Chance on the knee pads. The AUG rolls Received Healing and Skill Multi-Shot, the M60 Max Health and Armor. Stack Toughness: as far as we can tell, Combat Medicine heals don't scale with Engineering, whatever the tooltip implies."
 ---
 A Field Medic who tanks the boss too. **Every heal stacks Damage Reduction, full Health keeps Pummeling Shield's Extra Health coming, and the Support Station picks up anyone who drops.**
 
 Build by **Nadie** (Asia server, Rank 7 Combat Medicine), sent to our Discord in June 2026 on Patch 1.1.2.2 with screenshots and leaderboard proof. They also made [Involuntary Nap Time](/builds/involuntary-nap-time-bulwark-juggernaut-build/).
-
-## The Build
-
-<div class="bsheet"><div class="bsheet__group"><p class="bsheet__label">Weapons</p><div class="bsheet__item"><img class="bsheet__tile bsheet__tile--wide" src="/images/db/weapon-icons/enhanced-aug-a3p-weapon-icon-division-resurgence-165.webp" srcset="/images/db/weapon-icons/enhanced-aug-a3p-weapon-icon-division-resurgence-165.webp 165w, /images/db/weapon-icons/enhanced-aug-a3p-weapon-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 150px" width="150" height="71" alt="Enhanced AUG A3P smg in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/weapons/enhanced-aug-a3p/">Enhanced AUG A3P</a><span class="bsheet__sub">Primary · T2 SMG · for the team</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/weapon-talents/steady-suppression-weapon-talent-icon-division-resurgence-80.webp" srcset="/images/db/weapon-talents/steady-suppression-weapon-talent-icon-division-resurgence-80.webp 80w, /images/db/weapon-talents/steady-suppression-weapon-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Steady Suppression</span><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/weapon-talents/precise-support-weapon-talent-icon-division-resurgence-80.webp" srcset="/images/db/weapon-talents/precise-support-weapon-talent-icon-division-resurgence-80.webp 80w, /images/db/weapon-talents/precise-support-weapon-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Precise Support</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile bsheet__tile--wide" src="/images/db/weapon-icons/military-m60-e4-weapon-icon-division-resurgence-165.webp" srcset="/images/db/weapon-icons/military-m60-e4-weapon-icon-division-resurgence-165.webp 165w, /images/db/weapon-icons/military-m60-e4-weapon-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 150px" width="150" height="71" alt="Military M60 E4 lmg in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/weapons/military-m60-e4/">Military M60 E4</a><span class="bsheet__sub">Secondary · T2 LMG · for bosses</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/weapon-talents/sadistic-shield-weapon-talent-icon-division-resurgence-80.webp" srcset="/images/db/weapon-talents/sadistic-shield-weapon-talent-icon-division-resurgence-80.webp 80w, /images/db/weapon-talents/sadistic-shield-weapon-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Sadistic Shield</span><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/weapon-talents/conceited-weapon-talent-icon-division-resurgence-80.webp" srcset="/images/db/weapon-talents/conceited-weapon-talent-icon-division-resurgence-80.webp 80w, /images/db/weapon-talents/conceited-weapon-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Conceited</span></span></div></div></div><div class="bsheet__group"><p class="bsheet__label">OS Protocol and skill mods</p><div class="bsheet__grid2"><div class="bsheet__item"><img class="bsheet__sq" src="/images/db/os-protocols/pummeling-shield-os-protocol-talent-icon-division-resurgence-80.webp" srcset="/images/db/os-protocols/pummeling-shield-os-protocol-talent-icon-division-resurgence-80.webp 80w, /images/db/os-protocols/pummeling-shield-os-protocol-talent-icon-division-resurgence-104.webp 104w" sizes="56px" width="56" height="56" alt="Pummeling Shield OS Protocol icon" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/os-protocols/pummeling-shield/">Pummeling Shield</a><span class="bsheet__sub">OS Protocol · High‑End · Level 50</span><span class="bsheet__picks"></span></div></div><div class="bsheet__item"><img class="bsheet__sq" src="/images/db/skill-mod-combos/auto-trauma-treatment-skill-mod-combo-icon-division-resurgence-80.webp" srcset="/images/db/skill-mod-combos/auto-trauma-treatment-skill-mod-combo-icon-division-resurgence-80.webp 80w, /images/db/skill-mod-combos/auto-trauma-treatment-skill-mod-combo-icon-division-resurgence-160.webp 160w" sizes="56px" width="56" height="56" alt="" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/skill-mod-combos/auto-trauma-treatment/">Auto Trauma Treatment</a><span class="bsheet__sub">Support Station mods</span><span class="bsheet__picks"></span></div></div><div class="bsheet__item"><img class="bsheet__sq" src="/images/db/skill-mod-combos/buddy-treatment-skill-mod-combo-icon-division-resurgence-80.webp" srcset="/images/db/skill-mod-combos/buddy-treatment-skill-mod-combo-icon-division-resurgence-80.webp 80w, /images/db/skill-mod-combos/buddy-treatment-skill-mod-combo-icon-division-resurgence-160.webp 160w" sizes="56px" width="56" height="56" alt="" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/skill-mod-combos/buddy-treatment/">Buddy Treatment</a><span class="bsheet__sub">Healing Hive mods</span><span class="bsheet__picks"></span></div></div><div class="bsheet__item"><img class="bsheet__sq" src="/images/db/skill-mod-combos/emergency-measures-skill-mod-combo-icon-division-resurgence-80.webp" srcset="/images/db/skill-mod-combos/emergency-measures-skill-mod-combo-icon-division-resurgence-80.webp 80w, /images/db/skill-mod-combos/emergency-measures-skill-mod-combo-icon-division-resurgence-160.webp 160w" sizes="56px" width="56" height="56" alt="" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/skill-mod-combos/emergency-measures/">Emergency Measures</a><span class="bsheet__sub">Healing Swarm mods</span><span class="bsheet__picks"></span></div></div></div></div><div class="bsheet__group bsheet__group--wide"><p class="bsheet__label">Gear · 4pc Healing Elites + 2pc Self-Propelled Shield</p><div class="bsheet__cols"><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/half-mask-respirator-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/half-mask-respirator-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/half-mask-respirator-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="Half mask respirator in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#half-mask-respirator">Half mask respirator</a><span class="bsheet__sub">Mask · T2</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/healing-elites-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/healing-elites-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/healing-elites-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Healing Elites</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/gustavo-association-gloves-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/gustavo-association-gloves-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/gustavo-association-gloves-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="Gustavo Association Gloves in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#gustavo-association-gloves">Gustavo Association Gloves</a><span class="bsheet__sub">Gloves · T2</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/healing-elites-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/healing-elites-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/healing-elites-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Healing Elites</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/tepes-holster-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/tepes-holster-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/tepes-holster-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="Tepes Holster in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#tepes-holster">Tepes Holster</a><span class="bsheet__sub">Holster · T2</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/healing-elites-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/healing-elites-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/healing-elites-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Healing Elites</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/pivot-pads-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/pivot-pads-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/pivot-pads-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="Pivot Pads in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#pivot-pads">Self-Propelled Shield knee pads</a><span class="bsheet__sub">Knee pads · any tier</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/self-propelled-shield-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/self-propelled-shield-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/self-propelled-shield-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Self-Propelled Shield</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/big-drum-body-armor-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/big-drum-body-armor-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/big-drum-body-armor-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="&quot;Big Drum&quot; Body Armor in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#big-drum-body-armor">&quot;Big Drum&quot; Body Armor</a><span class="bsheet__sub">Body armor · T2</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/self-propelled-shield-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/self-propelled-shield-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/self-propelled-shield-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Self-Propelled Shield</span><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/body-armor-talents/hypervigilant-body-armor-talent-icon-division-resurgence-80.webp" srcset="/images/db/body-armor-talents/hypervigilant-body-armor-talent-icon-division-resurgence-80.webp 80w, /images/db/body-armor-talents/hypervigilant-body-armor-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Hypervigilant</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/roamer-pack-sow-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/roamer-pack-sow-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/roamer-pack-sow-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="Roamer Pack &quot;Sow&quot; in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#roamer-pack-sow">Roamer Pack &quot;Sow&quot;</a><span class="bsheet__sub">Backpack · T2</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/healing-elites-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/healing-elites-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/healing-elites-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Healing Elites</span><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/backpack-talents/rock-solid-backpack-talent-icon-division-resurgence-80.webp" srcset="/images/db/backpack-talents/rock-solid-backpack-talent-icon-division-resurgence-80.webp 80w, /images/db/backpack-talents/rock-solid-backpack-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Rock Solid</span></span></div></div></div></div></div>
-
-**Attributes:** Damage Reduction on the mask, gloves, holster and backpack, next to Armor, Max Health, Received Healing or Skill Crit Chance. Received Healing and Skill Cooldown Recovery on the chest, Armor and Skill Crit Chance on the knee pads. The AUG rolls Received Healing and Skill Multi-Shot, the M60 Max Health and Armor. Stack Toughness: as far as we can tell, Combat Medicine heals don't scale with Engineering, whatever the tooltip implies. [Open it in the Build Planner](/builder/#s=Field+Medic&sc=Combat+Medicine&n=The+Muscular+Nurse&ms=gs-14&m1=dr&m2=arm&gs=gs-14&g1=mhp&g2=dr&hs=gs-14&h1=dr&h2=rh&cs=gs-15&ct=ba-13&c1=rh&c2=scr&ps=gs-14&pt=bp-21&p1=scc&p2=dr&ks=gs-15&k1=arm&k2=scc&w1s=sw-49&w1tr=T2&w1t=wt-55&w1t2=wt-38&w1b1=sms&w1b1v=8.46&w1b2=rh&w1b2v=22.23&w2s=sw-62&w2tr=T2&w2t=wt-44&w2t2=wt-12&w2b1=mhp&w2b1v=18.62&w2b2=arm&w2b2v=12.76&os=os-54&sm1=smc-83&sm2=smc-86&sm3=smc-89) to copy the whole loadout.
 
 ## How It Works
 

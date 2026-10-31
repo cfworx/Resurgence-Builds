@@ -1,0 +1,107 @@
+---
+// The loadout in one narrow column, sticky beside the article on wide screens, so the build stays in view while
+// you read and match it. Same data as BuildLoadout.
+import { resolveLoadout, type LoadoutData } from '../utils/loadout';
+import type { DbImage } from '../utils/db-images';
+
+interface Props {
+  loadout: LoadoutData;
+  specialization: string;
+  subclass?: string;
+  plannerHash?: string;
+}
+const { loadout, specialization, subclass, plannerHash } = Astro.props;
+const L = resolveLoadout(loadout);
+const small = (img?: DbImage) => img ? img.srcset[0][1] : undefined;
+const ABBR: Record<string, string> = { Mask: 'Mask', 'Body Armor': 'Chest', Backpack: 'Pack', Gloves: 'Gloves', Holster: 'Holster', 'Knee Pads': 'Knees' };
+---
+
+<aside class="lom" aria-label="Loadout summary">
+  <div class="lom__card">
+    <p class="lom__kicker">Loadout</p>
+    <p class="lom__title">{specialization}{subclass && <span> · {subclass}</span>}</p>
+
+    <p class="lom__label">Weapons</p>
+    <ul class="lom__list">
+      {L.weapons.map((w) => (
+        <li class="lom__weapon">
+          <a href={w.href} class="lom__name">{w.name}</a>
+          {w.talents.length > 0 && (
+            <span class="lom__talents">
+              {w.talents.map((t) => (
+                <span class="lom__t">{t.icon && <img src={small(t.icon)} width="20" height="20" alt="" loading="lazy" decoding="async" />}{t.name}</span>
+              ))}
+            </span>
+          )}
+        </li>
+      ))}
+    </ul>
+
+    <p class="lom__label">Gear</p>
+    <ul class="lom__list lom__gear">
+      {L.gear.map((g) => (
+        <li style={`--set:${g.set.color}`}>
+          <span class="lom__slot">{ABBR[g.slot] ?? g.slot}</span>
+          <span class="lom__piece">
+            <span class="lom__pname">{g.any || !g.piece ? g.set.name : g.piece.name}</span>
+            {g.talent && <span class="lom__tal">{g.talent.icon && <img src={small(g.talent.icon)} width="18" height="18" alt="" loading="lazy" decoding="async" />}{g.talent.name}</span>}
+          </span>
+        </li>
+      ))}
+    </ul>
+    <p class="lom__sets">{L.setLabel}</p>
+
+    <p class="lom__label">OS and mods</p>
+    <ul class="lom__list lom__mods">
+      {L.os && <li>{L.os.icon && <img src={small(L.os.icon)} width="24" height="24" alt="" loading="lazy" decoding="async" />}<a href={L.os.href}>{L.os.name}</a></li>}
+      {L.mods.map((m) => <li>{m.icon && <img src={small(m.icon)} width="24" height="24" alt="" loading="lazy" decoding="async" />}<a href={m.href}>{m.name}</a></li>)}
+    </ul>
+
+    <a class="lom__full" href="#loadout">Full loadout ↑</a>
+    {plannerHash && <a class="lom__planner" href={`/builder/#${plannerHash}`}>Open in Build Planner</a>}
+  </div>
+</aside>
+
+<style>
+  .lom { display: none; }
+  @media (min-width: 72em) {
+    .lom { display: block; align-self: start; position: sticky; top: calc(var(--nav-height) + var(--sp-4)); }
+  }
+  .lom__card {
+    max-height: calc(100vh - var(--nav-height) - var(--sp-8)); overflow-y: auto; overscroll-behavior: contain;
+    padding: var(--sp-4); border-radius: var(--radius); background: #151518; border: 1px solid var(--border);
+  }
+  .lom p { margin: 0; max-width: none; }
+  .lom__kicker, .lom__label {
+    font-family: var(--font-mono); font-size: var(--step--2); font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent);
+  }
+  .lom__label { margin-top: var(--sp-4) !important; margin-bottom: var(--sp-2) !important; color: var(--ink-muted); }
+  .lom__title { font-family: var(--font-heading); font-weight: 800; font-size: var(--step-0); color: var(--ink-heading); line-height: var(--lh-snug); }
+  .lom__title span { color: var(--ink-muted); font-weight: 600; }
+  .lom__list { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--sp-2); }
+  .lom__list li { margin: 0; }
+  .lom__weapon { display: grid; gap: 4px; }
+  .lom__name { font-weight: 800; color: var(--ink-heading); text-decoration: none; font-size: var(--step--1); line-height: var(--lh-snug); }
+  .lom__name:hover { color: var(--accent); }
+  .lom__talents { display: grid; gap: 3px; }
+  .lom__t { display: flex; align-items: center; gap: 6px; font-size: var(--step--2); color: var(--ink); line-height: 1.3; }
+  .lom__t img, .lom__tal img { flex: none; border-radius: 50%; background: #2a2a2e; }
+  .lom__gear li { display: grid; grid-template-columns: 4.2rem minmax(0, 1fr); gap: var(--sp-2); padding-left: 8px; border-left: 3px solid var(--set); }
+  .lom__slot { font-family: var(--font-mono); font-size: var(--step--2); text-transform: uppercase; letter-spacing: 0.06em; color: var(--ink-muted); line-height: 1.5; }
+  .lom__piece { display: grid; gap: 2px; min-width: 0; }
+  .lom__pname { font-size: var(--step--2); font-weight: 700; color: var(--ink-heading); line-height: 1.35; overflow-wrap: anywhere; }
+  .lom__tal { display: flex; align-items: center; gap: 5px; font-size: var(--step--2); color: #ffd9c4; line-height: 1.3; }
+  .lom__sets { margin-top: var(--sp-2) !important; font-size: var(--step--2); color: var(--ink-muted); }
+  .lom__mods li { display: flex; align-items: center; gap: var(--sp-2); font-size: var(--step--2); line-height: 1.3; }
+  .lom__mods img { flex: none; border-radius: 6px; background: #2a2a2e; }
+  .lom__mods a { color: var(--ink-heading); text-decoration: none; font-weight: 700; }
+  .lom__mods a:hover { color: var(--accent); }
+  .lom__full { display: block; margin-top: var(--sp-4); font-size: var(--step--2); color: var(--ink-muted); text-decoration: none; }
+  .lom__full:hover { color: var(--accent); }
+  .lom__planner {
+    display: flex; align-items: center; justify-content: center; min-height: 44px; margin-top: var(--sp-3);
+    border-radius: var(--radius-sm); background: var(--accent); color: #111; font-weight: 800; font-size: var(--step--2);
+    text-decoration: none; text-align: center;
+  }
+  .lom__planner:hover { color: #000; filter: brightness(1.08); }
+</style>

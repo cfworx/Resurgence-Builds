@@ -34,16 +34,83 @@ videoChannel: "GGReborn"
 videoUploadDate: "2026-10-16T04:00:15-07:00"
 videoDuration: "PT16M58S"
 plannerHash: "s=Field+Medic&sc=Tactical+Pharma&n=Tactical+Pharma+Season+2&ms=gs-7&m1=scd&m2=rh&gs=gs-7&g1=scd&g2=sr&hs=gs-11&h1=scd&h2=scr&cs=gs-7&ct=ba-12&c1=scd&c2=sdu&ps=gs-11&pt=bp-15&p1=sdu&p2=scc&ks=gs-7&k1=si&k2=sms&w1s=sw-41&w1t=wt-22&w1t2=wt-43&w1b1=sms&w2s=sw-50&w2t=wt-66&w2t2=wt-20&os=os-20&sm1=smc-75&sm2=smc-76&sm3=smc-79"
+loadout:
+  statsFrom: "GGReborn's loadout screen"
+  stats:
+  - value: 854k
+    label: DPS
+  - value: "~69%"
+    label: Skill Crit Chance
+  - value: 24.97k
+    label: Power Score
+  weapons:
+  - role: Primary
+    name: Lightweight M4
+    talents:
+    - In Sync
+    - Revitalize
+    attrs:
+    - Skill Multi-Shot Chance
+  - role: Secondary
+    name: First Wave Vector 45 ACP
+    note: older copy
+    talents:
+    - Torrential Downpour
+    - Fully Charged
+  os:
+    name: Brains Over Brawn
+    note: Level 50
+  mods:
+  - Chemical Recharge
+  - Hereafter Resilience
+  - Enhanced Formula
+  gear:
+  - slot: Mask
+    any: true
+    set: Jackpot
+    attrs:
+    - Skill Critical Damage
+    - Received Healing
+  - slot: Body Armor
+    piece: Chatzatz Chest
+    set: Jackpot
+    talent: Glass Cannon
+    note: seen October 28
+    attrs:
+    - Skill Critical Damage
+    - Skill Duration
+  - slot: Backpack
+    piece: AMP24
+    set: Fire Cycle
+    talent: Minion Training
+    attrs:
+    - Skill Duration
+    - Skill Critical Chance
+  - slot: Gloves
+    any: true
+    set: Jackpot
+    attrs:
+    - Skill Critical Damage
+    - Skill Radius
+  - slot: Holster
+    piece: Jaivardhan Thigh Rig
+    set: Fire Cycle
+    attrs:
+    - Skill Critical Damage
+    - Skill Cooldown Recovery
+  - slot: Knee Pads
+    any: true
+    set: Jackpot
+    attrs:
+    - Skill Intensity
+    - Skill Multi-Shot Chance
+  notes:
+  - label: Attributes
+    text: "Skill Crit Damage plus one utility roll on four pieces, Skill Duration and Skill Crit Chance on the backpack, Skill Intensity and Multi-Shot on the knee pads. Mods: Engineering with Skill Crit Damage, Multi-Shot or Intensity. Chips: Intensity, plus Duration on the Hive and Cooldown Recovery on the Trap."
 ---
 Tactical Pharma is the Field Medic focus that read the word "medic" and chose violence. **The Vector piles on Engineering, Brains Over Brawn adds a share of it to every hit, and Jackpot makes the skills crit.**
 
 Build by **GGReborn**, posted October 2026 on Season 2 Phase 2, with **TikTokAndy's** take below.
-
-## The Build
-
-<div class="bsheet"><div class="bsheet__group"><p class="bsheet__label">Weapons</p><div class="bsheet__item"><img class="bsheet__tile bsheet__tile--wide" src="/images/db/weapon-icons/lightweight-m4-weapon-icon-division-resurgence-165.webp" srcset="/images/db/weapon-icons/lightweight-m4-weapon-icon-division-resurgence-165.webp 165w, /images/db/weapon-icons/lightweight-m4-weapon-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 150px" width="150" height="71" alt="Lightweight M4 assault rifle in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/weapons/lightweight-m4/">Lightweight M4</a><span class="bsheet__sub">Primary · T2 Assault Rifle</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/weapon-talents/in-sync-weapon-talent-icon-division-resurgence-80.webp" srcset="/images/db/weapon-talents/in-sync-weapon-talent-icon-division-resurgence-80.webp 80w, /images/db/weapon-talents/in-sync-weapon-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">In Sync</span><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/weapon-talents/revitalize-weapon-talent-icon-division-resurgence-80.webp" srcset="/images/db/weapon-talents/revitalize-weapon-talent-icon-division-resurgence-80.webp 80w, /images/db/weapon-talents/revitalize-weapon-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Revitalize</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile bsheet__tile--wide" src="/images/db/weapon-icons/first-wave-vector-45-acp-weapon-icon-division-resurgence-165.webp" srcset="/images/db/weapon-icons/first-wave-vector-45-acp-weapon-icon-division-resurgence-165.webp 165w, /images/db/weapon-icons/first-wave-vector-45-acp-weapon-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 150px" width="150" height="71" alt="First Wave Vector 45 ACP smg in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/weapons/first-wave-vector-45-acp/">First Wave Vector 45 ACP</a><span class="bsheet__sub">Secondary · T2 SMG · older copy</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/weapon-talents/torrential-downpour-weapon-talent-icon-division-resurgence-80.webp" srcset="/images/db/weapon-talents/torrential-downpour-weapon-talent-icon-division-resurgence-80.webp 80w, /images/db/weapon-talents/torrential-downpour-weapon-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Torrential Downpour</span><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/weapon-talents/fully-charged-weapon-talent-icon-division-resurgence-80.webp" srcset="/images/db/weapon-talents/fully-charged-weapon-talent-icon-division-resurgence-80.webp 80w, /images/db/weapon-talents/fully-charged-weapon-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Fully Charged</span></span></div></div></div><div class="bsheet__group"><p class="bsheet__label">OS Protocol and skill mods</p><div class="bsheet__grid2"><div class="bsheet__item"><img class="bsheet__sq" src="/images/db/os-protocols/brains-over-brawn-os-protocol-talent-icon-division-resurgence-80.webp" srcset="/images/db/os-protocols/brains-over-brawn-os-protocol-talent-icon-division-resurgence-80.webp 80w, /images/db/os-protocols/brains-over-brawn-os-protocol-talent-icon-division-resurgence-104.webp 104w" sizes="56px" width="56" height="56" alt="Brains Over Brawn OS Protocol icon" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/os-protocols/brains-over-brawn/">Brains Over Brawn</a><span class="bsheet__sub">OS Protocol · Specialized · Level 50</span><span class="bsheet__picks"></span></div></div><div class="bsheet__item"><img class="bsheet__sq" src="/images/db/skill-mod-combos/chemical-recharge-skill-mod-combo-icon-division-resurgence-80.webp" srcset="/images/db/skill-mod-combos/chemical-recharge-skill-mod-combo-icon-division-resurgence-80.webp 80w, /images/db/skill-mod-combos/chemical-recharge-skill-mod-combo-icon-division-resurgence-160.webp 160w" sizes="56px" width="56" height="56" alt="" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/skill-mod-combos/chemical-recharge/">Chemical Recharge</a><span class="bsheet__sub">Chemical Trap mods</span><span class="bsheet__picks"></span></div></div><div class="bsheet__item"><img class="bsheet__sq" src="/images/db/skill-mod-combos/hereafter-resilience-skill-mod-combo-icon-division-resurgence-80.webp" srcset="/images/db/skill-mod-combos/hereafter-resilience-skill-mod-combo-icon-division-resurgence-80.webp 80w, /images/db/skill-mod-combos/hereafter-resilience-skill-mod-combo-icon-division-resurgence-160.webp 160w" sizes="56px" width="56" height="56" alt="" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/skill-mod-combos/hereafter-resilience/">Hereafter Resilience</a><span class="bsheet__sub">Oxidizing Hive mods</span><span class="bsheet__picks"></span></div></div><div class="bsheet__item"><img class="bsheet__sq" src="/images/db/skill-mod-combos/enhanced-formula-skill-mod-combo-icon-division-resurgence-80.webp" srcset="/images/db/skill-mod-combos/enhanced-formula-skill-mod-combo-icon-division-resurgence-80.webp 80w, /images/db/skill-mod-combos/enhanced-formula-skill-mod-combo-icon-division-resurgence-160.webp 160w" sizes="56px" width="56" height="56" alt="" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/skill-mod-combos/enhanced-formula/">Enhanced Formula</a><span class="bsheet__sub">Oxidizing Swarm mods</span><span class="bsheet__picks"></span></div></div></div></div><div class="bsheet__group bsheet__group--wide"><p class="bsheet__label">Gear · 4pc Jackpot + 2pc Fire Cycle</p><div class="bsheet__cols"><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/protective-tactical-mask-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/protective-tactical-mask-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/protective-tactical-mask-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="Protective Tactical Mask in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#protective-tactical-mask">Jackpot mask</a><span class="bsheet__sub">Mask · any tier</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/jackpot-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/jackpot-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/jackpot-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Jackpot</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/kote-hand-guards-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/kote-hand-guards-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/kote-hand-guards-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="&quot;Kote&quot; Hand Guards in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#kote-hand-guards">Jackpot gloves</a><span class="bsheet__sub">Gloves · any tier</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/jackpot-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/jackpot-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/jackpot-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Jackpot</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/jaivardhan-thigh-rig-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/jaivardhan-thigh-rig-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/jaivardhan-thigh-rig-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="Jaivardhan Thigh Rig in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#jaivardhan-thigh-rig">Jaivardhan Thigh Rig</a><span class="bsheet__sub">Holster · T2</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/fire-cycle-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/fire-cycle-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/fire-cycle-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Fire Cycle</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/urban-warfare-kneepads-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/urban-warfare-kneepads-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/urban-warfare-kneepads-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="Urban Warfare Kneepads in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#urban-warfare-kneepads">Jackpot knee pads</a><span class="bsheet__sub">Knee pads · any tier</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/jackpot-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/jackpot-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/jackpot-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Jackpot</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/chatzatz-chest-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/chatzatz-chest-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/chatzatz-chest-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="Chatzatz Chest in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#chatzatz-chest">Chatzatz Chest</a><span class="bsheet__sub">Body armor · T2 · seen October 28</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/jackpot-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/jackpot-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/jackpot-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Jackpot</span><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/body-armor-talents/glass-cannon-body-armor-talent-icon-division-resurgence-80.webp" srcset="/images/db/body-armor-talents/glass-cannon-body-armor-talent-icon-division-resurgence-80.webp 80w, /images/db/body-armor-talents/glass-cannon-body-armor-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Glass Cannon</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/amp24-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/amp24-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/amp24-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="AMP24 in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#amp24">AMP24</a><span class="bsheet__sub">Backpack · T2</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/fire-cycle-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/fire-cycle-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/fire-cycle-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Fire Cycle</span><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/backpack-talents/minion-training-backpack-talent-icon-division-resurgence-80.webp" srcset="/images/db/backpack-talents/minion-training-backpack-talent-icon-division-resurgence-80.webp 80w, /images/db/backpack-talents/minion-training-backpack-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Minion Training</span></span></div></div></div></div></div>
-
-**Attributes:** Skill Crit Damage plus one utility roll on four pieces, Skill Duration and Skill Crit Chance on the backpack, Skill Intensity and Multi-Shot on the knee pads. Mods: Engineering with Skill Crit Damage, Multi-Shot or Intensity. Chips: Intensity, plus Duration on the Hive and Cooldown Recovery on the Trap. [Open it in the Build Planner](/builder/#s=Field+Medic&sc=Tactical+Pharma&n=Tactical+Pharma+Season+2&ms=gs-7&m1=scd&m2=rh&gs=gs-7&g1=scd&g2=sr&hs=gs-11&h1=scd&h2=scr&cs=gs-7&ct=ba-12&c1=scd&c2=sdu&ps=gs-11&pt=bp-15&p1=sdu&p2=scc&ks=gs-7&k1=si&k2=sms&w1s=sw-41&w1t=wt-22&w1t2=wt-43&w1b1=sms&w2s=sw-50&w2t=wt-66&w2t2=wt-20&os=os-20&sm1=smc-75&sm2=smc-76&sm3=smc-79) to copy the whole loadout.
 
 ## How It Works
 

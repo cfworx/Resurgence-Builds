@@ -28,15 +28,85 @@ faqs:
     answer: "On the cards, behind Smart Cover: +50% from Overwhelming Power after 2 seconds of shooting, +18% from Steady Suppression, +6% from Fearless Warrior's 2-piece, +3.2% from Optimized Armor and +2 to 4% from Bugle Call's 2-piece. That is 79.2 to 81.2% if they add up, and the game caps Damage Reduction at 80% (the June 26, 2026 hotfix). Out of cover it is 76 to 78%. Tactical Link adds +14.4% for 15 seconds on top, and Duality +15% below 50% Health, which is why the body armor rolls Crit Damage instead of Damage Reduction."
   - question: "Which body armor and backpack roll Duality and Inspiration?"
     answer: "Duality rolls on the Chatzatz Chest (T2), Athena Missile Vest (T1), Flimsy Body Armor v2 (T1) and \"Ericht\" Chest System (T0). Only the Flimsy Body Armor v2 can also be Phalanx Attack, which is why this build's body armor is T1. Inspiration rolls on the All Hazards Nitro Backpack (T2), Roamer Pack \"Sow\" (T2), Big Horn Pack (T1), Element Outdoors Rucksack (T0) and RUSH72 Backpack (T0); the Roamer Pack \"Sow\" is the T2 one that can be Fearless Warrior."
+loadout:
+  statsFrom: On paper
+  stats:
+  - value: "80%"
+    label: Damage Reduction behind cover
+  - value: 30 of 118
+    label: hits per mag to never reload
+  - value: "+62.4%"
+    label: Rate of Fire after Tactical Link
+  weapons:
+  - role: Primary
+    name: Military MK46
+    note: 100‑round mag
+    talents:
+    - Steady Handed
+    - Steady Suppression
+    attrs:
+    - Weapon Critical Hit Chance
+    - Weapon Critical Hit Damage
+  - role: Secondary
+    name: Modified USC
+    note: for rushers
+    talents:
+    - Backup Magazine
+    - Performer
+    attrs:
+    - Weapon Critical Hit Chance
+    - Weapon Critical Hit Damage
+  os:
+    name: Overwhelming Power
+  mods:
+  - Optimized Armor
+  - Optimal Awareness
+  - Bugle Call
+  gear:
+  - slot: Mask
+    piece: Javelina Mask
+    set: Phalanx Attack
+    attrs:
+    - Weapon Critical Hit Chance
+    - Weapon Critical Hit Damage
+  - slot: Body Armor
+    piece: Flimsy Body Armor v2
+    set: Phalanx Attack
+    talent: Duality
+    attrs:
+    - Weapon Critical Hit Chance
+    - Weapon Critical Hit Damage
+  - slot: Backpack
+    piece: "Roamer Pack \"Sow\""
+    set: Fearless Warrior
+    talent: Inspiration
+    attrs:
+    - Weapon Critical Hit Damage
+    - Weapon Critical Hit Chance
+  - slot: Gloves
+    piece: "\"Neptune\" Protection Gloves"
+    set: Phalanx Attack
+    attrs:
+    - Weapon Critical Hit Chance
+    - Weapon Critical Hit Damage
+  - slot: Holster
+    piece: Tepes Holster
+    set: Fearless Warrior
+    attrs:
+    - Weapon Critical Hit Chance
+    - Weapon Critical Hit Damage
+  - slot: Knee Pads
+    piece: "\"Patella\" Knee Cups"
+    set: Phalanx Attack
+    attrs:
+    - Weapon Critical Hit Chance
+    - Weapon Critical Hit Damage
+  notes:
+  - label: Attributes
+    text: "Weapon Crit Chance + Weapon Crit Damage everywhere. Behind Smart Cover you're at the 80% Damage Reduction cap on paper without a Damage Reduction roll."
 ---
 
 A Commando that never stops shooting. **Hits refill the magazine, firing piles on Damage Reduction, and every skill works from behind your cover.**
-
-## The Build
-
-<div class="bsheet"><div class="bsheet__group"><p class="bsheet__label">Weapons</p><div class="bsheet__item"><img class="bsheet__tile bsheet__tile--wide" src="/images/db/weapon-icons/military-mk46-weapon-icon-division-resurgence-165.webp" srcset="/images/db/weapon-icons/military-mk46-weapon-icon-division-resurgence-165.webp 165w, /images/db/weapon-icons/military-mk46-weapon-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 150px" width="150" height="71" alt="Military MK46 light machine gun in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/weapons/military-mk46/">Military MK46</a><span class="bsheet__sub">Primary · T2 LMG · 100‑round mag</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/weapon-talents/steady-handed-weapon-talent-icon-division-resurgence-80.webp" srcset="/images/db/weapon-talents/steady-handed-weapon-talent-icon-division-resurgence-80.webp 80w, /images/db/weapon-talents/steady-handed-weapon-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Steady Handed</span><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/weapon-talents/steady-suppression-weapon-talent-icon-division-resurgence-80.webp" srcset="/images/db/weapon-talents/steady-suppression-weapon-talent-icon-division-resurgence-80.webp 80w, /images/db/weapon-talents/steady-suppression-weapon-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Steady Suppression</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile bsheet__tile--wide" src="/images/db/weapon-icons/modified-usc-weapon-icon-division-resurgence-165.webp" srcset="/images/db/weapon-icons/modified-usc-weapon-icon-division-resurgence-165.webp 165w, /images/db/weapon-icons/modified-usc-weapon-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 150px" width="150" height="71" alt="Modified USC submachine gun in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/weapons/modified-usc/">Modified USC</a><span class="bsheet__sub">Secondary · T2 SMG · for rushers</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/weapon-talents/backup-magazine-weapon-talent-icon-division-resurgence-80.webp" srcset="/images/db/weapon-talents/backup-magazine-weapon-talent-icon-division-resurgence-80.webp 80w, /images/db/weapon-talents/backup-magazine-weapon-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Backup Magazine</span><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/weapon-talents/performer-weapon-talent-icon-division-resurgence-80.webp" srcset="/images/db/weapon-talents/performer-weapon-talent-icon-division-resurgence-80.webp 80w, /images/db/weapon-talents/performer-weapon-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Performer</span></span></div></div></div><div class="bsheet__group"><p class="bsheet__label">OS Protocol and skill mods</p><div class="bsheet__grid2"><div class="bsheet__item"><img class="bsheet__sq" src="/images/db/os-protocols/overwhelming-power-os-protocol-talent-icon-division-resurgence-80.webp" srcset="/images/db/os-protocols/overwhelming-power-os-protocol-talent-icon-division-resurgence-80.webp 80w, /images/db/os-protocols/overwhelming-power-os-protocol-talent-icon-division-resurgence-104.webp 104w" sizes="56px" width="56" height="56" alt="Overwhelming Power OS Protocol icon" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/os-protocols/overwhelming-power/">Overwhelming Power</a><span class="bsheet__sub">OS Protocol · High‑End</span><span class="bsheet__picks"></span></div></div><div class="bsheet__item"><img class="bsheet__sq" src="/images/db/skill-mod-combos/optimized-armor-skill-mod-combo-icon-division-resurgence-80.webp" srcset="/images/db/skill-mod-combos/optimized-armor-skill-mod-combo-icon-division-resurgence-80.webp 80w, /images/db/skill-mod-combos/optimized-armor-skill-mod-combo-icon-division-resurgence-160.webp 160w" sizes="56px" width="56" height="56" alt="" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/skill-mod-combos/optimized-armor/">Optimized Armor</a><span class="bsheet__sub">Smart Cover mods</span><span class="bsheet__picks"></span></div></div><div class="bsheet__item"><img class="bsheet__sq" src="/images/db/skill-mod-combos/optimal-awareness-skill-mod-combo-icon-division-resurgence-80.webp" srcset="/images/db/skill-mod-combos/optimal-awareness-skill-mod-combo-icon-division-resurgence-80.webp 80w, /images/db/skill-mod-combos/optimal-awareness-skill-mod-combo-icon-division-resurgence-160.webp 160w" sizes="56px" width="56" height="56" alt="" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/skill-mod-combos/optimal-awareness/">Optimal Awareness</a><span class="bsheet__sub">Scanning Pulse mods</span><span class="bsheet__picks"></span></div></div><div class="bsheet__item"><img class="bsheet__sq" src="/images/db/skill-mod-combos/bugle-call-skill-mod-combo-icon-division-resurgence-80.webp" srcset="/images/db/skill-mod-combos/bugle-call-skill-mod-combo-icon-division-resurgence-80.webp 80w, /images/db/skill-mod-combos/bugle-call-skill-mod-combo-icon-division-resurgence-160.webp 160w" sizes="56px" width="56" height="56" alt="" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/skill-mod-combos/bugle-call/">Bugle Call</a><span class="bsheet__sub">Tactical Link mods</span><span class="bsheet__picks"></span></div></div></div></div><div class="bsheet__group bsheet__group--wide"><p class="bsheet__label">Gear · 4pc Phalanx Attack + 2pc Fearless Warrior</p><div class="bsheet__cols"><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/javelina-mask-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/javelina-mask-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/javelina-mask-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="Javelina Mask in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#javelina-mask">Javelina Mask</a><span class="bsheet__sub">Mask · T2</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/phalanx-attack-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/phalanx-attack-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/phalanx-attack-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Phalanx Attack</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/neptune-protection-gloves-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/neptune-protection-gloves-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/neptune-protection-gloves-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="&quot;Neptune&quot; Protection Gloves in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#neptune-protection-gloves">&quot;Neptune&quot; Protection Gloves</a><span class="bsheet__sub">Gloves · T2</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/phalanx-attack-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/phalanx-attack-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/phalanx-attack-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Phalanx Attack</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/tepes-holster-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/tepes-holster-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/tepes-holster-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="Tepes Holster in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#tepes-holster">Tepes Holster</a><span class="bsheet__sub">Holster · T2</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/fearless-warrior-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/fearless-warrior-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/fearless-warrior-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Fearless Warrior</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/patella-knee-cups-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/patella-knee-cups-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/patella-knee-cups-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="&quot;Patella&quot; Knee Cups in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#patella-knee-cups">&quot;Patella&quot; Knee Cups</a><span class="bsheet__sub">Knee pads · T2</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/phalanx-attack-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/phalanx-attack-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/phalanx-attack-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Phalanx Attack</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/flimsy-body-armor-v2-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/flimsy-body-armor-v2-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/flimsy-body-armor-v2-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="Flimsy Body Armor v2 in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#flimsy-body-armor-v2">Flimsy Body Armor v2</a><span class="bsheet__sub">Body armor · T1</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/phalanx-attack-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/phalanx-attack-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/phalanx-attack-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Phalanx Attack</span><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/body-armor-talents/duality-body-armor-talent-icon-division-resurgence-80.webp" srcset="/images/db/body-armor-talents/duality-body-armor-talent-icon-division-resurgence-80.webp 80w, /images/db/body-armor-talents/duality-body-armor-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Duality</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/roamer-pack-sow-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/roamer-pack-sow-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/roamer-pack-sow-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="Roamer Pack &quot;Sow&quot; in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#roamer-pack-sow">Roamer Pack &quot;Sow&quot;</a><span class="bsheet__sub">Backpack · T2</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/fearless-warrior-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/fearless-warrior-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/fearless-warrior-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Fearless Warrior</span><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/backpack-talents/inspiration-backpack-talent-icon-division-resurgence-80.webp" srcset="/images/db/backpack-talents/inspiration-backpack-talent-icon-division-resurgence-80.webp 80w, /images/db/backpack-talents/inspiration-backpack-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Inspiration</span></span></div></div></div></div></div>
-
-**Attributes:** Weapon Crit Chance + Weapon Crit Damage everywhere. Behind Smart Cover you're at the 80% Damage Reduction cap on paper without a Damage Reduction roll. [Open it in the Build Planner](/builder/#s=Vanguard&sc=Commando&n=Perpetual+Motion&ms=gs-3&m1=chc&m2=chd&gs=gs-3&g1=chc&g2=chd&hs=gs-16&h1=chc&h2=chd&cs=gs-3&ct=ba-7&c1=chc&c2=chd&ps=gs-16&pt=bp-12&p1=chd&p2=chc&ks=gs-3&k1=chc&k2=chd&w1s=sw-63&w1tr=T2&w1t=wt-52&w1t2=wt-55&w1b1=chc&w1b2=chd&w2s=sw-51&w2tr=T2&w2t=wt-5&w2t2=wt-34&w2b1=chc&w2b2=chd&os=os-30&sm1=smc-63&sm2=smc-68&sm3=smc-59) to copy the whole loadout.
 
 ## How It Works
 

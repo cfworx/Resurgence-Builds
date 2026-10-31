@@ -7,6 +7,9 @@ import AdSenseUnit from '../components/AdSenseUnit.astro';
 import YouTubeEmbed from '../components/YouTubeEmbed.astro';
 import Comments from '../components/Comments.astro';
 import NewsletterSignup from '../components/NewsletterSignup.astro';
+import BuildLoadout from '../components/BuildLoadout.astro';
+import BuildLoadoutMini from '../components/BuildLoadoutMini.astro';
+import type { LoadoutData } from '../utils/loadout';
 import { getCollection } from 'astro:content';
 import { getAuthorUrl } from '../utils/author';
 import { postImage, srcsetAttr, HERO_SIZES } from '../utils/post-images';
@@ -45,9 +48,11 @@ export interface Props {
     steps: { name: string; text: string }[];
   };
   wordCount?: number;
+  subclass?: string;
+  loadout?: LoadoutData;
 }
 
-const { title, description, specialization, playstyle, patch, verified = true, original = false, lastUpdated, pve, pvp, tags, author, featuredImage, imageAlt, shareTitle, shareText, headings = [], faqs = [], sources = [], plannerHash, videoId, videoTitle, videoChannel, videoChannelUrl, videoUploadDate, videoDuration, howTo, wordCount } = Astro.props;
+const { title, description, specialization, playstyle, patch, verified = true, original = false, lastUpdated, pve, pvp, tags, author, featuredImage, imageAlt, shareTitle, shareText, headings = [], faqs = [], sources = [], plannerHash, videoId, videoTitle, videoChannel, videoChannelUrl, videoUploadDate, videoDuration, howTo, wordCount, subclass, loadout } = Astro.props;
 const heroImg = postImage(featuredImage);
 
 const siteUrl = 'https://resurgencebuilds.com';
@@ -75,7 +80,8 @@ const howToLd = howTo ? {
 
 const classSlug = specialization.toLowerCase().replace(/\s+/g, '-');
 
-const tocItems = headings.filter(h => h.depth <= 3);
+const tocItems = [...(loadout ? [{ depth: 2, slug: 'loadout', text: 'The Loadout' }] : []), ...headings.filter(h => h.depth <= 3)];
+const tagChips = tags.filter(t => t[0] === t[0].toUpperCase() && !t.includes('-'));
 
 const formattedDate = lastUpdated.toLocaleDateString('en-US', { timeZone: 'UTC',
   month: 'long',
@@ -116,9 +122,6 @@ const redditShareUrl = `https://reddit.com/submit?url=${encodeURIComponent(Astro
   faqs={faqs}
   jsonLd={howToLd ? howToLd : undefined}
 >
-  {featuredImage && (
-    <link rel="preload" as="image" href={featuredImage} imagesrcset={srcsetAttr(heroImg)} imagesizes={heroImg ? HERO_SIZES : undefined} fetchpriority="high" slot="head" />
-  )}
   <div class="container section">
     <Breadcrumbs items={breadcrumbItems} />
 
@@ -132,70 +135,40 @@ const redditShareUrl = `https://reddit.com/submit?url=${encodeURIComponent(Astro
         <time datetime={lastUpdated.toISOString()}><strong>Last updated:</strong> {formattedDate}</time>
       </div></div></div>
 
-      <div style="display: flex; flex-wrap: wrap; align-items: center; gap: var(--sp-2); margin-bottom: var(--sp-4); font-size: var(--text-sm);">
+      <div class="build-badges">
         {verified ? (
-          <span style="display: inline-flex; align-items: center; gap: 4px; padding: 4px 10px; background: rgba(34,197,94,0.12); border: 1px solid rgba(34,197,94,0.3); border-radius: 4px; color: #22c55e; font-family: var(--font-mono); font-size: var(--text-xs); font-weight: 600; letter-spacing: 0.03em;">
-            ✓ Verified for {patchLabel}
-          </span>
+          <span class="build-badge build-badge--verified">✓ Verified for {patchLabel}</span>
         ) : original ? (
-          <span title="Our own design, put together from the in-game Build-Making Database" style="display: inline-flex; align-items: center; gap: 4px; padding: 4px 10px; background: rgba(147,197,253,0.08); border: 1px solid rgba(147,197,253,0.35); border-radius: 4px; color: #93C5FD; font-family: var(--font-mono); font-size: var(--text-xs); font-weight: 600; letter-spacing: 0.03em;">
-            Original build · {patchLabel}
-          </span>
+          <span class="build-badge build-badge--original" title="Our own design, put together from the in-game Build-Making Database">Original build · {patchLabel}</span>
         ) : (
-          <span title="We documented this creator's build from their videos but haven't re-tested it ourselves" style="display: inline-flex; align-items: center; gap: 4px; padding: 4px 10px; background: rgba(252,211,77,0.08); border: 1px solid rgba(252,211,77,0.3); border-radius: 4px; color: #FCD34D; font-family: var(--font-mono); font-size: var(--text-xs); font-weight: 600; letter-spacing: 0.03em;">
-            Creator build · {patchLabel}
-          </span>
+          <span class="build-badge build-badge--creator" title="We documented this creator's build from their videos but haven't re-tested it ourselves">Creator build · {patchLabel}</span>
         )}
-        <span style="color: var(--ink-muted);">Part of our <a href={`/class/${classSlug}/`} style="color: var(--accent); text-decoration: none;">{specialization} build collection</a></span>
+        <span class="build-badges__more">Part of our <a href={`/class/${classSlug}/`}>{specialization} build collection</a></span>
       </div>
     </header>
 
-    <div class="layout-sidebar">
-      <!-- Build info sidebar: appears first in DOM for mobile, reordered via CSS -->
-      <aside class="build-sidebar">
-        <div class="card build-info">
-          <SectionTag label="Build Info" />
-          <dl class="info-list">
-            <div class="info-row"><dt>Specialization</dt><dd>{specialization}</dd></div>
-            <div class="info-row"><dt>Playstyle</dt><dd>{playstyle}</dd></div>
-            <div class="info-row"><dt>PvE</dt><dd>{pve ? 'Yes' : 'No'}</dd></div>
-            <div class="info-row"><dt>PvP</dt><dd>{pvp ? 'Yes' : 'No'}</dd></div>
-            <div class="info-row"><dt>Patch</dt><dd class="stat stat--accent">{patch}</dd></div>
-            <div class="info-row"><dt>Last updated</dt><dd>{formattedDate}</dd></div>
-          </dl>
-          {plannerHash && (
-            <div style="margin-top: var(--sp-4); margin-bottom: var(--sp-2);">
-              <a href={`/builder/#${plannerHash}`} class="btn btn--accent" style="width: 100%; text-align: center; justify-content: center; display: flex; font-weight: bold; font-size: 0.9em; padding: 10px; text-transform: uppercase; letter-spacing: 0.05em; background-color: var(--accent); color: #000; border-radius: 4px; box-shadow: 0 4px 12px rgba(255, 109, 16, 0.25); text-decoration: none;">
-                Open in Build Planner
-              </a>
-            </div>
-          )}
-          {tags.filter(t => t[0] === t[0].toUpperCase() && !t.includes('-')).length > 0 && (
-            <div style="display:flex;flex-wrap:wrap;gap:var(--sp-1);margin-top:var(--sp-3);">
-              {tags.filter(t => t[0] === t[0].toUpperCase() && !t.includes('-')).map(tag => <a href={tagHref(tag)} class="tag">{tag}</a>)}
-            </div>
-          )}
-        </div>
-      </aside>
+    {loadout ? (
+      <BuildLoadout loadout={loadout} specialization={specialization} subclass={subclass} playstyle={playstyle} pve={pve} pvp={pvp} plannerHash={plannerHash} />
+    ) : plannerHash && (
+      <p><a href={`/builder/#${plannerHash}`} class="btn btn--accent">Open in Build Planner</a></p>
+    )}
 
-      <article class="prose build-article">
+    {(featuredImage || videoId) && (
+      <div class={`build-media${featuredImage && videoId ? ' build-media--two' : ''}`}>
         {featuredImage && (
-          <div class="build-hero" style={`background-image: url('${heroImg?.small || featuredImage}')`}>
-            <div class="build-hero__blur"></div>
+          <figure class="build-media__hero">
             <img
               src={featuredImage}
               srcset={srcsetAttr(heroImg)}
-              sizes={heroImg ? HERO_SIZES : undefined}
+              sizes={heroImg ? (videoId ? '(max-width: 720px) calc(100vw - 32px), 560px' : HERO_SIZES) : undefined}
               alt={imageAlt || `${title}: ${specialization} ${playstyle} build guide for Division Resurgence`}
               width={heroImg?.width || 1200}
               height={heroImg?.height || 630}
-              loading="eager"
+              loading={loadout ? 'lazy' : 'eager'}
               decoding="async"
-              fetchpriority="high"
             />
-          </div>
+          </figure>
         )}
-
         {videoId && (
           <YouTubeEmbed
             videoId={videoId}
@@ -207,24 +180,31 @@ const redditShareUrl = `https://reddit.com/submit?url=${encodeURIComponent(Astro
             duration={videoDuration}
           />
         )}
+      </div>
+    )}
 
+    <div class={`build-main${loadout ? ' build-main--mini' : ''}`}>
+      <article class="prose build-article">
         {tocItems.length > 0 && (
-          <>
-            <details class="toc" data-toc style="margin-bottom: var(--sp-6);">
-              <summary><span class="toc__title">Contents</span></summary>
-              <nav aria-label="Table of contents">
-                {tocItems.map(h => (
-                  <a href={`#${h.slug}`} style={`padding-left:${(h.depth - 2) * 1}rem;`}>
-                    {h.text}
-                  </a>
-                ))}
-              </nav>
-            </details>
-            <script is:inline>document.querySelectorAll("details[data-toc]").forEach(function (d) { if (window.matchMedia("(min-width: 45em)").matches) d.open = true; });</script>
-          </>
+          <details class="toc" data-toc style="margin-bottom: var(--sp-6);">
+            <summary><span class="toc__title">Contents</span></summary>
+            <nav aria-label="Table of contents">
+              {tocItems.map(h => (
+                <a href={`#${h.slug}`} style={`padding-left:${(h.depth - 2) * 1}rem;`}>
+                  {h.text}
+                </a>
+              ))}
+            </nav>
+          </details>
         )}
 
         <slot />
+
+        {tagChips.length > 0 && (
+          <div class="build-tags">
+            {tagChips.map(tag => <a href={tagHref(tag)} class="tag">{tag}</a>)}
+          </div>
+        )}
 
         <NewsletterSignup source="build" />
 
@@ -290,8 +270,66 @@ const redditShareUrl = `https://reddit.com/submit?url=${encodeURIComponent(Astro
           </section>
         )}
       </article>
+
+      {loadout && <BuildLoadoutMini loadout={loadout} specialization={specialization} subclass={subclass} plannerHash={plannerHash} />}
     </div>
   </div>
+
+  {loadout && (
+    <>
+      <button type="button" class="lo-fab" data-lo-fab hidden aria-haspopup="dialog">
+        <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
+        Loadout
+      </button>
+      <dialog class="lo-dialog" data-lo-dialog aria-label="Loadout">
+        <div class="lo-dialog__bar">
+          <p class="lo-dialog__title">{title}</p>
+          <button type="button" class="lo-dialog__close" data-lo-close aria-label="Close the loadout">
+            <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+          </button>
+        </div>
+        <div class="lo-dialog__body" data-lo-dialog-body></div>
+      </dialog>
+      <script is:inline>
+        (function () {
+          var panel = document.querySelector('[data-loadout]');
+          var fab = document.querySelector('[data-lo-fab]');
+          var dlg = document.querySelector('[data-lo-dialog]');
+          if (!panel || !fab || !dlg || typeof dlg.showModal !== 'function') return;
+          var wide = window.matchMedia('(min-width: 72em)');
+          var past = false;
+          function update() { fab.hidden = wide.matches || !past; }
+          if ('IntersectionObserver' in window) {
+            new IntersectionObserver(function (es) {
+              var e = es[0];
+              past = !e.isIntersecting && e.boundingClientRect.top < 0;
+              update();
+            }).observe(panel);
+          }
+          if (wide.addEventListener) wide.addEventListener('change', update);
+          var body = dlg.querySelector('[data-lo-dialog-body]');
+          fab.addEventListener('click', function () {
+            if (!body.firstChild) {
+              var copy = panel.cloneNode(true);
+              copy.removeAttribute('id');
+              copy.removeAttribute('data-loadout');
+              copy.removeAttribute('aria-labelledby');
+              copy.querySelectorAll('[id]').forEach(function (el) { el.removeAttribute('id'); });
+              copy.querySelectorAll('img[loading="lazy"]').forEach(function (img) { img.loading = 'eager'; });
+              body.appendChild(copy);
+            }
+            dlg.showModal();
+          });
+          dlg.querySelector('[data-lo-close]').addEventListener('click', function () { dlg.close(); });
+          dlg.addEventListener('click', function (e) { if (e.target === dlg) dlg.close(); });
+          body.addEventListener('click', function (e) {
+            var a = e.target.closest && e.target.closest('a[href^="#"]');
+            if (a) dlg.close();
+          });
+        })();
+      </script>
+    </>
+  )}
 
 {Astro.url.pathname.includes('milkshake-machine') && (
   <div id="strawberry-rain" aria-hidden="true"></div>
@@ -350,108 +388,73 @@ const redditShareUrl = `https://reddit.com/submit?url=${encodeURIComponent(Astro
 </BaseLayout>
 
 <style>
-  .info-list {
-    display: flex;
-    flex-direction: column;
-    gap: 0;
+  .build-badges { display: flex; flex-wrap: wrap; align-items: center; gap: var(--sp-2); margin-bottom: var(--sp-5); font-size: var(--text-sm); }
+  .build-badge {
+    display: inline-flex; align-items: center; gap: 4px; padding: 4px 10px; border-radius: 4px;
+    font-family: var(--font-mono); font-size: var(--text-xs); font-weight: 600; letter-spacing: 0.03em;
   }
-  .info-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: var(--sp-2) 0;
-    border-bottom: 1px solid var(--border);
+  .build-badge--verified { background: rgba(34, 197, 94, 0.12); border: 1px solid rgba(34, 197, 94, 0.3); color: #22c55e; }
+  .build-badge--original { background: rgba(147, 197, 253, 0.08); border: 1px solid rgba(147, 197, 253, 0.35); color: #93C5FD; }
+  .build-badge--creator { background: rgba(252, 211, 77, 0.08); border: 1px solid rgba(252, 211, 77, 0.3); color: #FCD34D; }
+  .build-badges__more { color: var(--ink-muted); }
+  .build-badges__more a { color: var(--accent); text-decoration: none; }
+
+  /* The creator's screenshot and video, side by side on wide screens */
+  .build-media { display: grid; gap: var(--sp-4); margin: 0 0 var(--sp-8); }
+  .build-media :global(.yt-embed) { margin: 0; }
+  .build-media__hero {
+    margin: 0; border-radius: var(--border-radius); overflow: hidden; background: var(--surface);
+    border: 1px solid var(--border); display: flex; align-items: center; justify-content: center;
   }
-  .info-row:last-child {
-    border-bottom: none;
-  }
-  .info-row dt {
-    font-family: var(--font-heading);
-    font-weight: 700;
-    font-size: var(--text-sm);
-    color: var(--ink);
-  }
-  .info-row dd {
-    font-size: var(--text-sm);
-    color: var(--ink-muted);
-    text-align: right;
-  }
-  .build-hero {
-    margin: var(--sp-6) 0;
-    border-radius: var(--border-radius);
-    overflow: hidden;
-    background-color: var(--surface);
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .build-hero__blur {
-    position: absolute;
-    inset: -20px; /* Oversize to hide blur edges */
-    background: inherit;
-    filter: blur(16px) brightness(0.4);
-    z-index: 0;
-  }
-  .build-hero img {
-    position: relative;
-    z-index: 1;
-    max-width: 100%;
-    height: auto;
-    display: block;
-    max-height: 480px;
-    object-fit: contain;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+  .build-media__hero img { display: block; width: 100%; height: auto; }
+  @media (min-width: 45em) {
+    .build-media--two { grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; }
   }
 
-  /* Mobile: sidebar on top, article below */
-  .layout-sidebar {
-    display: flex;
-    flex-direction: column;
-    gap: var(--sp-6);
+  /* Article, with the loadout summary beside it on wide screens */
+  .build-main { display: block; }
+  .build-article { max-width: 52rem; margin: 0 auto; width: 100%; }
+  @media (min-width: 72em) {
+    .build-main--mini { display: grid; grid-template-columns: minmax(0, 1fr) 17rem; gap: var(--sp-8); align-items: start; }
+    .build-main--mini .build-article { margin: 0; max-width: none; }
   }
+  .build-tags { display: flex; flex-wrap: wrap; gap: var(--sp-1); margin-top: var(--sp-8); }
 
-  .build-sidebar {
-    order: -1;
+  /* "Loadout" button: brings the build back from anywhere in the post */
+  .lo-fab {
+    position: fixed; z-index: 60; right: var(--sp-4); bottom: calc(var(--sp-4) + env(safe-area-inset-bottom, 0px));
+    display: inline-flex; align-items: center; gap: 8px; min-height: 48px; padding: 0 var(--sp-5);
+    border: 0; border-radius: 999px; background: var(--accent); color: #111; cursor: pointer;
+    font-family: var(--font-heading); font-weight: 800; font-size: var(--step--1);
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.55), 0 0 0 1px rgba(255, 255, 255, 0.08);
   }
-
-  .build-info {
-    height: fit-content;
+  .lo-fab[hidden] { display: none; }
+  .lo-fab:hover { filter: brightness(1.08); }
+  @media (max-width: 44.99em) {
+    .lo-fab { left: 50%; right: auto; transform: translateX(-50%); }
   }
-
-  .build-article {
-    order: 1;
-    max-width: var(--content-width);
-    margin: 0 auto;
-    width: 100%;
+  .lo-dialog {
+    width: min(72rem, calc(100vw - 2 * var(--sp-4))); max-width: none; max-height: calc(100dvh - 2 * var(--sp-4));
+    margin: auto; padding: 0; border: 1px solid var(--border); border-radius: var(--radius-lg);
+    background: var(--bg); color: var(--ink); overflow: hidden;
   }
-
-  /* Desktop: restore sidebar layout */
-  @media (min-width: 60em) {
-    .layout-sidebar {
-      display: grid;
-      grid-template-columns: minmax(0, 1fr) var(--sidebar-width);
-      gap: var(--sp-8);
-    }
-
-    .build-sidebar {
-      order: 1;
-      align-self: start;
-    }
-
-    .build-article {
-      order: 0;
-      max-width: none;
-      margin: 0;
-    }
-
-    .build-info {
-      position: sticky;
-      top: calc(var(--nav-height) + var(--sp-4));
-    }
+  .lo-dialog[open] { display: flex; flex-direction: column; }
+  .lo-dialog::backdrop { background: rgba(0, 0, 0, 0.72); backdrop-filter: blur(3px); }
+  .lo-dialog__bar {
+    display: flex; align-items: center; justify-content: space-between; gap: var(--sp-3);
+    padding: var(--sp-2) var(--sp-2) var(--sp-2) var(--pad-card); border-bottom: 1px solid var(--border); background: #151518;
   }
-
+  .lo-dialog__title { margin: 0; font-family: var(--font-heading); font-weight: 800; color: var(--ink-heading); font-size: var(--step--1); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .lo-dialog__close {
+    flex: none; width: 44px; height: 44px; display: grid; place-items: center; border-radius: var(--radius-sm);
+    border: 1px solid var(--border); background: transparent; color: var(--ink-heading); cursor: pointer;
+  }
+  .lo-dialog__close:hover { border-color: var(--accent); color: var(--accent); }
+  .lo-dialog__body { overflow-y: auto; overscroll-behavior: contain; padding: var(--sp-3); }
+  .lo-dialog__body :global(.lo) { margin: 0; }
+  @media (max-width: 44.99em) {
+    .lo-dialog { width: 100vw; max-height: 100dvh; height: 100dvh; border-radius: 0; border: 0; }
+    .lo-dialog__body { padding: 0; }
+    .lo-dialog__body :global(.lo) { border-radius: 0; border-left: 0; border-right: 0; }
+  }
 </style>

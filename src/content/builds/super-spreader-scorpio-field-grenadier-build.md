@@ -28,15 +28,84 @@ faqs:
     answer: "Concerted Strike, a High-End Firepower protocol: +15% Weapon Damage as its main stat, and Skill Hits within 20 meters grant +8% Damage for 10 seconds, up to 3 stacks. The Artillery Turret's shots are Skill Hits, so it should sit at +24% for as long as the turret has something to shoot. Tactical Pistolero (Superior, +4.5% Firepower per Skill Hit up to 5 stacks) is the backup if you don't have it."
   - question: "Which chest and backpack can roll Crossfire and Inspiration?"
     answer: "Crossfire rolls on the X-TREYME Pro Ribcage (T2), \"Big Drum\" Body Armor (T2), Flimsy Body Armor v1 (T1), Phalanx Precision Vest (T1), Stridsvast Combat Vest (T0) and Ranger Ballistics Vest (T0). Inspiration rolls on the All Hazards Nitro Backpack (T2), Roamer Pack \"Sow\" (T2), Big Horn Pack (T1), Element Outdoors Rucksack (T0) and RUSH72 Backpack (T0). Neither rolls on a Mechanical Enemy piece, which is why the body armor and backpack are Gunny Johnny."
+loadout:
+  statsFrom: On paper
+  stats:
+  - value: 7 = 7
+    label: shells = Venom stacks
+  - value: 18.4 m
+    label: optimal range
+  - value: ~185
+    label: rounds per minute
+  weapons:
+  - role: Primary
+    name: Scorpio
+    exotic: true
+    talents:
+    - In Sync
+    - Performer
+    attrs:
+    - Weapon Critical Hit Damage
+    - Weapon Damage
+  - role: Secondary
+    name: PPSH-41
+    talents:
+    - In Sync
+    - Backup Protection
+    attrs:
+    - Weapon Critical Hit Chance
+    - Weapon Critical Hit Damage
+  os:
+    name: Concerted Strike
+  mods:
+  - Prioritized Targets
+  - Contagion
+  - Field Mortar
+  gear:
+  - slot: Mask
+    piece: Protective Tactical Mask
+    set: Mechanical Enemy
+    attrs:
+    - Weapon Critical Hit Chance
+    - Weapon Critical Hit Damage
+  - slot: Body Armor
+    piece: X-TREYME Pro Ribcage
+    set: Gunny Johnny
+    talent: Crossfire
+    attrs:
+    - Weapon Damage
+    - Weapon Critical Hit Damage
+  - slot: Backpack
+    piece: All Hazards Nitro Backpack
+    set: Gunny Johnny
+    talent: Inspiration
+    attrs:
+    - Weapon Critical Hit Damage
+    - Weapon Critical Hit Chance
+  - slot: Gloves
+    piece: "\"Kote\" Hand Guards"
+    set: Mechanical Enemy
+    attrs:
+    - Weapon Critical Hit Chance
+    - Weapon Critical Hit Damage
+  - slot: Holster
+    piece: Jags Sidearm Mount
+    set: Mechanical Enemy
+    attrs:
+    - Weapon Critical Hit Damage
+    - Weapon Damage
+  - slot: Knee Pads
+    piece: Urban Warfare Kneepads
+    set: Mechanical Enemy
+    attrs:
+    - Weapon Critical Hit Chance
+    - Weapon Critical Hit Damage
+  notes:
+  - label: Attributes
+    text: "Weapon Crit Chance + Weapon Crit Damage, with Weapon Damage in place of Crit Chance on the holster, body armor and Scorpio."
 ---
 
 A Field Grenadier build nobody runs. **The shotgun infects, the mine spreads it, and the turret pays for everything.**
-
-## The Build
-
-<div class="bsheet"><div class="bsheet__group"><p class="bsheet__label">Weapons</p><div class="bsheet__item"><img class="bsheet__tile bsheet__tile--wide" src="/images/db/exotic-weapons/scorpio-exotic-weapon-division-resurgence-v2-290.webp" srcset="/images/db/exotic-weapons/scorpio-exotic-weapon-division-resurgence-v2-290.webp 290w, /images/db/exotic-weapons/scorpio-exotic-weapon-division-resurgence-v2-558.webp 558w" sizes="(max-width: 520px) 110px, 150px" width="150" height="84" alt="Scorpio exotic shotgun in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/exotic-weapons/scorpio/">Scorpio</a><span class="bsheet__sub">Primary · exotic shotgun</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/weapon-talents/septicemia-weapon-talent-icon-division-resurgence-80.webp" srcset="/images/db/weapon-talents/septicemia-weapon-talent-icon-division-resurgence-80.webp 80w, /images/db/weapon-talents/septicemia-weapon-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Septicemia</span><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/weapon-talents/in-sync-weapon-talent-icon-division-resurgence-80.webp" srcset="/images/db/weapon-talents/in-sync-weapon-talent-icon-division-resurgence-80.webp 80w, /images/db/weapon-talents/in-sync-weapon-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">In Sync</span><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/weapon-talents/performer-weapon-talent-icon-division-resurgence-80.webp" srcset="/images/db/weapon-talents/performer-weapon-talent-icon-division-resurgence-80.webp 80w, /images/db/weapon-talents/performer-weapon-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Performer</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile bsheet__tile--wide" src="/images/db/weapon-icons/ppsh-41-weapon-icon-division-resurgence-165.webp" srcset="/images/db/weapon-icons/ppsh-41-weapon-icon-division-resurgence-165.webp 165w, /images/db/weapon-icons/ppsh-41-weapon-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 150px" width="150" height="71" alt="PPSH-41 SMG in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/weapons/ppsh-41/">PPSH-41</a><span class="bsheet__sub">Secondary · T2 SMG</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/weapon-talents/in-sync-weapon-talent-icon-division-resurgence-80.webp" srcset="/images/db/weapon-talents/in-sync-weapon-talent-icon-division-resurgence-80.webp 80w, /images/db/weapon-talents/in-sync-weapon-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">In Sync</span><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/weapon-talents/backup-protection-weapon-talent-icon-division-resurgence-80.webp" srcset="/images/db/weapon-talents/backup-protection-weapon-talent-icon-division-resurgence-80.webp 80w, /images/db/weapon-talents/backup-protection-weapon-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Backup Protection</span></span></div></div></div><div class="bsheet__group"><p class="bsheet__label">OS Protocol and skill mods</p><div class="bsheet__grid2"><div class="bsheet__item"><img class="bsheet__sq" src="/images/db/os-protocols/concerted-strike-os-protocol-talent-icon-division-resurgence-80.webp" srcset="/images/db/os-protocols/concerted-strike-os-protocol-talent-icon-division-resurgence-80.webp 80w, /images/db/os-protocols/concerted-strike-os-protocol-talent-icon-division-resurgence-104.webp 104w" sizes="56px" width="56" height="56" alt="Concerted Strike OS Protocol icon" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/os-protocols/concerted-strike/">Concerted Strike</a><span class="bsheet__sub">OS Protocol · High‑End</span><span class="bsheet__picks"></span></div></div><div class="bsheet__item"><img class="bsheet__sq" src="/images/db/skill-mod-combos/prioritized-targets-skill-mod-combo-icon-division-resurgence-80.webp" srcset="/images/db/skill-mod-combos/prioritized-targets-skill-mod-combo-icon-division-resurgence-80.webp 80w, /images/db/skill-mod-combos/prioritized-targets-skill-mod-combo-icon-division-resurgence-160.webp 160w" sizes="56px" width="56" height="56" alt="" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/skill-mod-combos/prioritized-targets/">Prioritized Targets</a><span class="bsheet__sub">Artillery Turret mods</span><span class="bsheet__picks"></span></div></div><div class="bsheet__item"><img class="bsheet__sq" src="/images/db/skill-mod-combos/contagion-skill-mod-combo-icon-division-resurgence-80.webp" srcset="/images/db/skill-mod-combos/contagion-skill-mod-combo-icon-division-resurgence-80.webp 80w, /images/db/skill-mod-combos/contagion-skill-mod-combo-icon-division-resurgence-160.webp 160w" sizes="56px" width="56" height="56" alt="" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/skill-mod-combos/contagion/">Contagion</a><span class="bsheet__sub">Seeker Mine mods</span><span class="bsheet__picks"></span></div></div><div class="bsheet__item"><img class="bsheet__sq" src="/images/db/skill-mod-combos/field-mortar-skill-mod-combo-icon-division-resurgence-80.webp" srcset="/images/db/skill-mod-combos/field-mortar-skill-mod-combo-icon-division-resurgence-80.webp 80w, /images/db/skill-mod-combos/field-mortar-skill-mod-combo-icon-division-resurgence-160.webp 160w" sizes="56px" width="56" height="56" alt="" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/skill-mod-combos/field-mortar/">Field Mortar</a><span class="bsheet__sub">M32A1 launcher mods</span><span class="bsheet__picks"></span></div></div></div></div><div class="bsheet__group bsheet__group--wide"><p class="bsheet__label">Gear · 4pc Mechanical Enemy + 2pc Gunny Johnny</p><div class="bsheet__cols"><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/protective-tactical-mask-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/protective-tactical-mask-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/protective-tactical-mask-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="Protective Tactical Mask in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#protective-tactical-mask">Protective Tactical Mask</a><span class="bsheet__sub">Mask · T2</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/mechanical-enemy-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/mechanical-enemy-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/mechanical-enemy-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Mechanical Enemy</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/kote-hand-guards-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/kote-hand-guards-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/kote-hand-guards-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt=""Kote" Hand Guards in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#kote-hand-guards">"Kote" Hand Guards</a><span class="bsheet__sub">Gloves · T2</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/mechanical-enemy-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/mechanical-enemy-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/mechanical-enemy-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Mechanical Enemy</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/jags-sidearm-mount-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/jags-sidearm-mount-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/jags-sidearm-mount-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="Jags Sidearm Mount in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#jags-sidearm-mount">Jags Sidearm Mount</a><span class="bsheet__sub">Holster · T2</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/mechanical-enemy-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/mechanical-enemy-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/mechanical-enemy-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Mechanical Enemy</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/urban-warfare-kneepads-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/urban-warfare-kneepads-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/urban-warfare-kneepads-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="Urban Warfare Kneepads in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#urban-warfare-kneepads">Urban Warfare Kneepads</a><span class="bsheet__sub">Knee pads · T2</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/mechanical-enemy-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/mechanical-enemy-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/mechanical-enemy-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Mechanical Enemy</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/x-treyme-pro-ribcage-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/x-treyme-pro-ribcage-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/x-treyme-pro-ribcage-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="X-TREYME Pro Ribcage in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#x-treyme-pro-ribcage">X-TREYME Pro Ribcage</a><span class="bsheet__sub">Body armor · T2</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/gunny-johnny-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/gunny-johnny-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/gunny-johnny-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Gunny Johnny</span><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/body-armor-talents/crossfire-body-armor-talent-icon-division-resurgence-80.webp" srcset="/images/db/body-armor-talents/crossfire-body-armor-talent-icon-division-resurgence-80.webp 80w, /images/db/body-armor-talents/crossfire-body-armor-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Crossfire</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/all-hazards-nitro-backpack-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/all-hazards-nitro-backpack-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/all-hazards-nitro-backpack-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="All Hazards Nitro Backpack in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#all-hazards-nitro-backpack">All Hazards Nitro Backpack</a><span class="bsheet__sub">Backpack · T2</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/gunny-johnny-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/gunny-johnny-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/gunny-johnny-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Gunny Johnny</span><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/backpack-talents/inspiration-backpack-talent-icon-division-resurgence-80.webp" srcset="/images/db/backpack-talents/inspiration-backpack-talent-icon-division-resurgence-80.webp 80w, /images/db/backpack-talents/inspiration-backpack-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Inspiration</span></span></div></div></div></div></div>
-
-**Attributes:** Weapon Crit Chance + Weapon Crit Damage, with Weapon Damage in place of Crit Chance on the holster, body armor and Scorpio. [Open it in the Build Planner](/builder/#s=Demolitionist&sc=Field+Grenadier&n=Super+Spreader&ms=gs-6&m1=chc&m2=chd&gs=gs-6&g1=chc&g2=chd&hs=gs-6&h1=chd&h2=wd&cs=gs-5&ct=ba-4&c1=wd&c2=chd&ps=gs-5&pt=bp-12&p1=chd&p2=chc&ks=gs-6&k1=chc&k2=chd&w1e=ew-4&w1tr=T1&w1t=wt-22&w1t2=wt-34&w1b1=chd&w1b2=wd&w2s=sw-13&w2tr=T2&w2t=wt-22&w2t2=wt-6&w2b1=chc&w2b2=chd&os=os-33&sm1=smc-10&sm2=smc-13&sm3=smc-16) to copy the whole loadout.
 
 ## How It Works
 

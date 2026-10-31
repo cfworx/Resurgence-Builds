@@ -63,16 +63,84 @@ howTo:
       text: "The Applied Demolitions 3pc firmware rolls Skill Multi-Shot Chance +2.47% on the Seeker Mine mods."
     - name: "Equip Frag Grenades firmware for Artillery Turret stacking"
       text: "Frag Grenades 3pc grants +1% Skill Multi-Shot Chance per Artillery Turret damage tick for 10 seconds, stacking up to 5 times for +5% during combat."
+loadout:
+  statsFrom: "PVE Enjoyer's sheet"
+  stats:
+  - value: 333.25k
+    label: DPS
+  - value: '702'
+    label: Engineering
+  - value: 22.32k
+    label: Power Score
+  weapons:
+  - role: Primary
+    name: Warlord
+    exotic: true
+    note: Level 50
+    attrs:
+    - Skill Intensity
+    - Skill Shredding Damage
+  - role: Secondary
+    name: StG 44
+    note: Level 50
+    talents:
+    - Backup Battery
+    attrs:
+    - Skill Multi-Shot Chance
+    - Skill Piercing Damage
+  os:
+    name: Pressing Matter
+    note: Level 50
+  mods:
+  - Frag Grenades
+  - Applied Demolitions
+  - Ace
+  gear:
+  - slot: Mask
+    piece: Javelina Mask
+    set: Fire Cycle
+    attrs:
+    - Skill Multi-Shot Chance
+    - Skill Intensity
+  - slot: Body Armor
+    piece: Ops Armor
+    set: Fire Cycle
+    talent: Toymaker
+    attrs:
+    - Skill Multi-Shot Chance
+    - Damage to Elites
+  - slot: Backpack
+    piece: AMP24
+    set: Fire Cycle
+    talent: Intense Performance
+    attrs:
+    - Skill Critical Damage
+    - Signature Ability Charge Efficiency
+  - slot: Gloves
+    piece: "\"Neptune\" Protection Gloves"
+    set: Fire Cycle
+    attrs:
+    - Skill Multi-Shot Chance
+    - Skill Intensity
+  - slot: Holster
+    piece: Jags Sidearm Mount
+    set: Jackpot
+    attrs:
+    - Max Health
+    - Skill Critical Chance
+  - slot: Knee Pads
+    any: true
+    set: Jackpot
+    attrs:
+    - Skill Multi-Shot Chance
+    - Skill Intensity
+  notes:
+  - label: Attributes
+    text: "Engineering on every core that has it, then Skill Multi-Shot Chance and Skill Intensity (Skill Crit stats on his backpack and holster). Engineering mods on both rifles."
 ---
 PVE Enjoyer's Demolitionist parks 20 meters back and lets the skills do the shooting. **Fire Cycle and Toymaker pile on Skill Multi-Shot Chance, Pressing Matter makes every blast hit harder, and the turret does the babysitting.**
 
 Build by **PVE Enjoyer**, posted in mid April 2026, before Patch 1.1.2.
-
-## The Build
-
-<div class="bsheet"><div class="bsheet__group"><p class="bsheet__label">Weapons</p><div class="bsheet__item"><img class="bsheet__tile bsheet__tile--wide" src="/images/db/exotic-weapons/warlord-exotic-weapon-division-resurgence-v2-290.webp" srcset="/images/db/exotic-weapons/warlord-exotic-weapon-division-resurgence-v2-290.webp 290w, /images/db/exotic-weapons/warlord-exotic-weapon-division-resurgence-v2-558.webp 558w" sizes="(max-width: 520px) 110px, 150px" width="150" height="84" alt="Warlord exotic assault rifle in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/exotic-weapons/warlord/">Warlord</a><span class="bsheet__sub">Primary · Exotic Assault Rifle · Level 50</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/weapon-talents/play-rough-weapon-talent-icon-division-resurgence-80.webp" srcset="/images/db/weapon-talents/play-rough-weapon-talent-icon-division-resurgence-80.webp 80w, /images/db/weapon-talents/play-rough-weapon-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Play Rough</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile bsheet__tile--wide" src="/images/db/weapon-icons/stg-44-weapon-icon-division-resurgence-165.webp" srcset="/images/db/weapon-icons/stg-44-weapon-icon-division-resurgence-165.webp 165w, /images/db/weapon-icons/stg-44-weapon-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 150px" width="150" height="71" alt="StG 44 assault rifle in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/weapons/stg-44/">StG 44</a><span class="bsheet__sub">Secondary · T1 Assault Rifle · Level 50</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/weapon-talents/backup-battery-weapon-talent-icon-division-resurgence-80.webp" srcset="/images/db/weapon-talents/backup-battery-weapon-talent-icon-division-resurgence-80.webp 80w, /images/db/weapon-talents/backup-battery-weapon-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Backup Battery</span></span></div></div></div><div class="bsheet__group"><p class="bsheet__label">OS Protocol and skill mods</p><div class="bsheet__grid2"><div class="bsheet__item"><img class="bsheet__sq" src="/images/db/os-protocols/pressing-matter-os-protocol-talent-icon-division-resurgence-80.webp" srcset="/images/db/os-protocols/pressing-matter-os-protocol-talent-icon-division-resurgence-80.webp 80w, /images/db/os-protocols/pressing-matter-os-protocol-talent-icon-division-resurgence-104.webp 104w" sizes="56px" width="56" height="56" alt="Pressing Matter OS Protocol icon" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/os-protocols/pressing-matter/">Pressing Matter</a><span class="bsheet__sub">OS Protocol · Superior · Level 50</span><span class="bsheet__picks"></span></div></div><div class="bsheet__item"><img class="bsheet__sq" src="/images/db/skill-mod-combos/frag-grenades-skill-mod-combo-icon-division-resurgence-80.webp" srcset="/images/db/skill-mod-combos/frag-grenades-skill-mod-combo-icon-division-resurgence-80.webp 80w, /images/db/skill-mod-combos/frag-grenades-skill-mod-combo-icon-division-resurgence-160.webp 160w" sizes="56px" width="56" height="56" alt="" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/skill-mod-combos/frag-grenades/">Frag Grenades</a><span class="bsheet__sub">Artillery Turret mods</span><span class="bsheet__picks"></span></div></div><div class="bsheet__item"><img class="bsheet__sq" src="/images/db/skill-mod-combos/applied-demolitions-skill-mod-combo-icon-division-resurgence-80.webp" srcset="/images/db/skill-mod-combos/applied-demolitions-skill-mod-combo-icon-division-resurgence-80.webp 80w, /images/db/skill-mod-combos/applied-demolitions-skill-mod-combo-icon-division-resurgence-160.webp 160w" sizes="56px" width="56" height="56" alt="" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/skill-mod-combos/applied-demolitions/">Applied Demolitions</a><span class="bsheet__sub">Explosive Seeker Mine mods</span><span class="bsheet__picks"></span></div></div><div class="bsheet__item"><img class="bsheet__sq" src="/images/db/skill-mod-combos/ace-skill-mod-combo-icon-division-resurgence-80.webp" srcset="/images/db/skill-mod-combos/ace-skill-mod-combo-icon-division-resurgence-80.webp 80w, /images/db/skill-mod-combos/ace-skill-mod-combo-icon-division-resurgence-160.webp 160w" sizes="56px" width="56" height="56" alt="" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/skill-mod-combos/ace/">Ace</a><span class="bsheet__sub">M32A1 Grenade Launcher mods · 2 of 3 pieces</span><span class="bsheet__picks"></span></div></div></div></div><div class="bsheet__group bsheet__group--wide"><p class="bsheet__label">Gear · 4pc Fire Cycle + 2pc Jackpot</p><div class="bsheet__cols"><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/javelina-mask-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/javelina-mask-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/javelina-mask-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="Javelina Mask in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#javelina-mask">Javelina Mask</a><span class="bsheet__sub">Mask · T2</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/fire-cycle-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/fire-cycle-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/fire-cycle-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Fire Cycle</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/neptune-protection-gloves-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/neptune-protection-gloves-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/neptune-protection-gloves-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="&quot;Neptune&quot; Protection Gloves in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#neptune-protection-gloves">&quot;Neptune&quot; Protection Gloves</a><span class="bsheet__sub">Gloves · T2</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/fire-cycle-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/fire-cycle-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/fire-cycle-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Fire Cycle</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/jags-sidearm-mount-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/jags-sidearm-mount-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/jags-sidearm-mount-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="Jags Sidearm Mount in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#jags-sidearm-mount">Jags Sidearm Mount</a><span class="bsheet__sub">Holster · T2</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/jackpot-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/jackpot-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/jackpot-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Jackpot</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/urban-warfare-kneepads-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/urban-warfare-kneepads-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/urban-warfare-kneepads-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="Urban Warfare Kneepads in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#urban-warfare-kneepads">Jackpot knee pads</a><span class="bsheet__sub">Knee pads · any tier</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/jackpot-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/jackpot-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/jackpot-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Jackpot</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/ops-armor-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/ops-armor-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/ops-armor-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="Ops Armor in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#ops-armor">Ops Armor</a><span class="bsheet__sub">Body armor · T2</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/fire-cycle-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/fire-cycle-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/fire-cycle-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Fire Cycle</span><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/body-armor-talents/toymaker-body-armor-talent-icon-division-resurgence-80.webp" srcset="/images/db/body-armor-talents/toymaker-body-armor-talent-icon-division-resurgence-80.webp 80w, /images/db/body-armor-talents/toymaker-body-armor-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Toymaker</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/amp24-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/amp24-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/amp24-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="AMP24 in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#amp24">AMP24</a><span class="bsheet__sub">Backpack · T2</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/fire-cycle-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/fire-cycle-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/fire-cycle-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Fire Cycle</span><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/backpack-talents/intense-performance-backpack-talent-icon-division-resurgence-80.webp" srcset="/images/db/backpack-talents/intense-performance-backpack-talent-icon-division-resurgence-80.webp 80w, /images/db/backpack-talents/intense-performance-backpack-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Intense Performance</span></span></div></div></div></div></div>
-
-**Attributes:** Engineering on every core that has it, then Skill Multi-Shot Chance and Skill Intensity (Skill Crit stats on his backpack and holster). Engineering mods on both rifles. [Open it in the Build Planner](/builder/#s=Demolitionist&sc=HE+Munitions&n=Demolitionist+Glass+Cannon+333k&ms=gs-11&m1=sms&m1v=2.69&m2=si&m2v=4.69&gs=gs-11&g1=sms&g2=si&hs=gs-7&h1=mhp&h1v=9.42&h2=scc&cs=gs-11&ct=ba-24&c1=sms&c1v=3.5&c2=dte&c2v=2.88&ps=gs-11&pt=bp-13&p1=scd&p2=sace&ks=gs-7&k1=sms&k2=si&w1e=ew-2&w1tr=T1&w1b1=si&w1b1v=9.8&w1b2=ssd&w1b2v=6.35&w2s=sw-34&w2tr=T1&w2t=wt-4&w2b1=sms&w2b1v=7.81&w2b2=spd&w2b2v=9.79&os=os-14&sm1=smc-3&sm2=smc-5&sm3=smc-7) to copy the whole loadout.
 
 ## How It Works
 

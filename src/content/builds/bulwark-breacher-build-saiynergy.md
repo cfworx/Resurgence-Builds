@@ -39,16 +39,85 @@ faqs:
     answer: "Lightweight M4 (T2, Level 45) as the primary with Steady Hands and Medical Accuracy. First Wave Vector 45 ACP (T2, Level 44) as the secondary with Strained and Adaptation."
   - question: "Is Division Resurgence pay-to-win?"
     answer: "Resurgence is free-to-play, and its premium currency, Phoenix Credits, buys Sealed Caches whose drop tables include gameplay items: the OS Protocol Cache can drop Death From Afar, and the Breacher and Juggernaut caches carry skill mod sets (Ubisoft publishes the odds; see our drop rates page). Everything in this build also drops from regular play. Spending can speed up the grind, but it cannot buy positioning, game sense, or the knowledge to stack the right talents. Your dad reflexes are still the bottleneck."
+loadout:
+  statsFrom: "Saiynergy's sheet"
+  stats:
+  - value: 334.07k
+    label: DPS
+  - value: "7,679"
+    label: Armor
+  - value: 23.17k
+    label: Power Score
+  weapons:
+  - role: Primary
+    name: Lightweight M4
+    note: Level 45
+    talents:
+    - Steady Hands
+    - Medical Accuracy
+  - role: Secondary
+    name: First Wave Vector 45 ACP
+    note: Level 44
+    talents:
+    - Strained
+    - Adaptation
+  os:
+    name: Death From Afar
+    note: "Level 50, upgraded"
+  mods:
+  - Provocateur
+  - King of the Pit
+  - Positive Feedback
+  gear:
+  - slot: Mask
+    any: true
+    set: Fury Strike
+    attrs:
+    - Headshot Damage
+    - Weapon Critical Hit Chance
+  - slot: Body Armor
+    options:
+    - X-TREYME Pro Ribcage
+    - Flimsy Body Armor v1
+    - "\"Ericht\" Chest System"
+    set: Fury Strike
+    talent: Unflinching
+    attrs:
+    - Weapon Critical Hit Chance
+    - Skill Critical Chance
+  - slot: Backpack
+    piece: Rally Point Secure Pack
+    set: Fury Strike
+    talent: Hidden Impact
+    note: his is rank II
+    attrs:
+    - Skill Critical Chance
+    - Weapon Critical Hit Damage
+  - slot: Gloves
+    piece: "\"Lochy\" Hand Savers"
+    set: Fury Strike
+    attrs:
+    - Weapon Critical Hit Chance
+    - Weapon Critical Hit Damage
+  - slot: Holster
+    any: true
+    set: Phalanx Attack
+    attrs:
+    - Weapon Critical Hit Damage
+    - Headshot Damage
+  - slot: Knee Pads
+    piece: HX 02
+    set: Phalanx Attack
+    attrs:
+    - Weapon Critical Hit Damage
+    - Headshot Damage
+  notes:
+  - label: Attributes
+    text: "Firepower cores everywhere except the body armor, which rolls Toughness for Unflinching to heal from. Then Weapon Crit Damage, Headshot Damage and Weapon Crit Chance (his body armor and backpack each carry Skill Crit Chance). His mask and holster are one Fury Strike and one Phalanx Attack; either way round keeps both sets. Attachments: Long Range Scope, Suppressor, Extended Magazine and Vertical Grip on the M4; Red Dot, Extended Magazine and Suppressor on the Vector."
 ---
 Saiynergy's Breacher holds a doorway and refuses to leave. **Fury Strike stacks the crits, Death From Afar turns Headshot Damage into Firepower, and the shield pulls the fire onto you while Unflinching heals it back.**
 
 Build by **Saiynergy** of ATLAS Division, posted in April 2026 on Patch 1.1.1.
-
-## The Build
-
-<div class="bsheet"><div class="bsheet__group"><p class="bsheet__label">Weapons</p><div class="bsheet__item"><img class="bsheet__tile bsheet__tile--wide" src="/images/db/weapon-icons/lightweight-m4-weapon-icon-division-resurgence-165.webp" srcset="/images/db/weapon-icons/lightweight-m4-weapon-icon-division-resurgence-165.webp 165w, /images/db/weapon-icons/lightweight-m4-weapon-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 150px" width="150" height="71" alt="Lightweight M4 assault rifle in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/weapons/lightweight-m4/">Lightweight M4</a><span class="bsheet__sub">Primary · T2 Assault Rifle · Level 45</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/weapon-talents/steady-hands-weapon-talent-icon-division-resurgence-80.webp" srcset="/images/db/weapon-talents/steady-hands-weapon-talent-icon-division-resurgence-80.webp 80w, /images/db/weapon-talents/steady-hands-weapon-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Steady Hands</span><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/weapon-talents/medical-accuracy-weapon-talent-icon-division-resurgence-80.webp" srcset="/images/db/weapon-talents/medical-accuracy-weapon-talent-icon-division-resurgence-80.webp 80w, /images/db/weapon-talents/medical-accuracy-weapon-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Medical Accuracy</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile bsheet__tile--wide" src="/images/db/weapon-icons/first-wave-vector-45-acp-weapon-icon-division-resurgence-165.webp" srcset="/images/db/weapon-icons/first-wave-vector-45-acp-weapon-icon-division-resurgence-165.webp 165w, /images/db/weapon-icons/first-wave-vector-45-acp-weapon-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 150px" width="150" height="71" alt="First Wave Vector 45 ACP smg in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/weapons/first-wave-vector-45-acp/">First Wave Vector 45 ACP</a><span class="bsheet__sub">Secondary · T2 SMG · Level 44</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/weapon-talents/strained-weapon-talent-icon-division-resurgence-80.webp" srcset="/images/db/weapon-talents/strained-weapon-talent-icon-division-resurgence-80.webp 80w, /images/db/weapon-talents/strained-weapon-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Strained</span><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/weapon-talents/adaptation-weapon-talent-icon-division-resurgence-80.webp" srcset="/images/db/weapon-talents/adaptation-weapon-talent-icon-division-resurgence-80.webp 80w, /images/db/weapon-talents/adaptation-weapon-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Adaptation</span></span></div></div></div><div class="bsheet__group"><p class="bsheet__label">OS Protocol and skill mods</p><div class="bsheet__grid2"><div class="bsheet__item"><img class="bsheet__sq" src="/images/db/os-protocols/death-from-afar-os-protocol-talent-icon-division-resurgence-80.webp" srcset="/images/db/os-protocols/death-from-afar-os-protocol-talent-icon-division-resurgence-80.webp 80w, /images/db/os-protocols/death-from-afar-os-protocol-talent-icon-division-resurgence-104.webp 104w" sizes="56px" width="56" height="56" alt="Death From Afar OS Protocol icon" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/os-protocols/death-from-afar/">Death From Afar</a><span class="bsheet__sub">OS Protocol · Superior · Level 50, upgraded</span><span class="bsheet__picks"></span></div></div><div class="bsheet__item"><img class="bsheet__sq" src="/images/db/skill-mod-combos/provocateur-skill-mod-combo-icon-division-resurgence-80.webp" srcset="/images/db/skill-mod-combos/provocateur-skill-mod-combo-icon-division-resurgence-80.webp 80w, /images/db/skill-mod-combos/provocateur-skill-mod-combo-icon-division-resurgence-160.webp 160w" sizes="56px" width="56" height="56" alt="" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/skill-mod-combos/provocateur/">Provocateur</a><span class="bsheet__sub">Phalanx Shield mods</span><span class="bsheet__picks"></span></div></div><div class="bsheet__item"><img class="bsheet__sq" src="/images/db/skill-mod-combos/king-of-the-pit-skill-mod-combo-icon-division-resurgence-80.webp" srcset="/images/db/skill-mod-combos/king-of-the-pit-skill-mod-combo-icon-division-resurgence-80.webp 80w, /images/db/skill-mod-combos/king-of-the-pit-skill-mod-combo-icon-division-resurgence-160.webp 160w" sizes="56px" width="56" height="56" alt="" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/skill-mod-combos/king-of-the-pit/">King of the Pit</a><span class="bsheet__sub">Shockwave Spike Mk.3 mods</span><span class="bsheet__picks"></span></div></div><div class="bsheet__item"><img class="bsheet__sq" src="/images/db/skill-mod-combos/positive-feedback-skill-mod-combo-icon-division-resurgence-80.webp" srcset="/images/db/skill-mod-combos/positive-feedback-skill-mod-combo-icon-division-resurgence-80.webp 80w, /images/db/skill-mod-combos/positive-feedback-skill-mod-combo-icon-division-resurgence-160.webp 160w" sizes="56px" width="56" height="56" alt="" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/skill-mod-combos/positive-feedback/">Positive Feedback</a><span class="bsheet__sub">Breach Combo mods</span><span class="bsheet__picks"></span></div></div></div></div><div class="bsheet__group bsheet__group--wide"><p class="bsheet__label">Gear · 4pc Fury Strike + 2pc Phalanx Attack</p><div class="bsheet__cols"><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/combat-mask-cete-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/combat-mask-cete-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/combat-mask-cete-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="Combat Mask &quot;Cete&quot; in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#combat-mask-cete">Fury Strike mask</a><span class="bsheet__sub">Mask · any tier</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/fury-strike-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/fury-strike-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/fury-strike-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Fury Strike</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/lochy-hand-savers-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/lochy-hand-savers-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/lochy-hand-savers-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="&quot;Lochy&quot; Hand Savers in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#lochy-hand-savers">&quot;Lochy&quot; Hand Savers</a><span class="bsheet__sub">Gloves · T0</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/fury-strike-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/fury-strike-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/fury-strike-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Fury Strike</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/jaivardhan-thigh-rig-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/jaivardhan-thigh-rig-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/jaivardhan-thigh-rig-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="Jaivardhan Thigh Rig in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#jaivardhan-thigh-rig">Phalanx Attack holster</a><span class="bsheet__sub">Holster · any tier</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/phalanx-attack-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/phalanx-attack-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/phalanx-attack-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Phalanx Attack</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/hx-02-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/hx-02-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/hx-02-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="HX 02 in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#hx-02">HX 02</a><span class="bsheet__sub">Knee pads · T1</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/phalanx-attack-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/phalanx-attack-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/phalanx-attack-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Phalanx Attack</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/x-treyme-pro-ribcage-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/x-treyme-pro-ribcage-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/x-treyme-pro-ribcage-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="X-TREYME Pro Ribcage in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#x-treyme-pro-ribcage">Fury Strike body armor</a><span class="bsheet__sub">Body armor · X-TREYME Pro Ribcage (T2) or Flimsy Body Armor v1 (T1) or &quot;Ericht&quot; Chest System (T0)</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/fury-strike-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/fury-strike-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/fury-strike-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Fury Strike</span><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/body-armor-talents/unflinching-body-armor-talent-icon-division-resurgence-80.webp" srcset="/images/db/body-armor-talents/unflinching-body-armor-talent-icon-division-resurgence-80.webp 80w, /images/db/body-armor-talents/unflinching-body-armor-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Unflinching</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/rally-point-secure-pack-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/rally-point-secure-pack-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/rally-point-secure-pack-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="Rally Point Secure Pack in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#rally-point-secure-pack">Rally Point Secure Pack</a><span class="bsheet__sub">Backpack · T1 · his is rank II</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/fury-strike-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/fury-strike-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/fury-strike-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Fury Strike</span><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/backpack-talents/hidden-impact-backpack-talent-icon-division-resurgence-80.webp" srcset="/images/db/backpack-talents/hidden-impact-backpack-talent-icon-division-resurgence-80.webp 80w, /images/db/backpack-talents/hidden-impact-backpack-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Hidden Impact</span></span></div></div></div></div></div>
-
-**Attributes:** Firepower cores everywhere except the body armor, which rolls Toughness for Unflinching to heal from. Then Weapon Crit Damage, Headshot Damage and Weapon Crit Chance (his body armor and backpack each carry Skill Crit Chance). His mask and holster are one Fury Strike and one Phalanx Attack; either way round keeps both sets. Attachments: Long Range Scope, Suppressor, Extended Magazine and Vertical Grip on the M4; Red Dot, Extended Magazine and Suppressor on the Vector. [Open it in the Build Planner](/builder/#s=Bulwark&sc=Breacher&n=Bulwark+Breacher+334k&ms=gs-1&m1=hsd&m2=chc&gs=gs-1&g1=chc&g1v=4.67&g2=chd&g2v=8.89&hs=gs-3&h1=chd&h2=hsd&cs=gs-1&ct=ba-25&c1=chc&c2=scc&ps=gs-1&pt=bp-10&p1=scc&p1v=5.17&p2=chd&p2v=4.68&ks=gs-3&k1=chd&k1v=6.75&k2=hsd&k2v=10.72&w1s=sw-41&w1tr=T2&w1t=wt-53&w1t2=wt-28&w2s=sw-50&w2tr=T2&w2t=wt-57&w2t2=wt-1&os=os-45&sm1=smc-48&sm2=smc-39&sm3=smc-42) to copy the whole loadout.
 
 ## How It Works
 

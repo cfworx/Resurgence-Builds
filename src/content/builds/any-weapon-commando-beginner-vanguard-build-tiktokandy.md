@@ -34,16 +34,86 @@ faqs:
   - question: "Can this build solo Heroic Chinatown?"
     answer: "TikTokAndy soloed Chinatown on Heroic with it at about 6,300 Armor and 100,000 Health, which he calls about the bare minimum, and says he was barely getting through. Bring a Blast damage weapon for the final boss; he used a Piercing P90 for most of the mission."
 plannerHash: "s=Vanguard&sc=Commando&n=Any-Weapon+Commando&ms=gs-3&m1=chd&m2=wms&gs=gs-1&g1=chc&g2=wms&hs=gs-3&h1=wd&h2=chd&cs=gs-1&ct=ba-14&c1=scr&c2=chd&ps=gs-1&pt=bp-22&p1=chc&p2=wms&ks=gs-1&k1=chd&k2=arm&w1s=sw-41&w1t=wt-68&w1t2=wt-52&w1b1=chd&w1b2=hsd&w2s=sw-45&w2t=wt-36&w2t2=wt-34&w2b1=wd&os=os-39&sm1=smc-63&sm2=smc-56&sm3=smc-65"
+loadout:
+  statsFrom: "TikTokAndy's sheet"
+  stats:
+  - value: 340k
+    label: DPS
+  - value: "62%"
+    label: Weapon Crit Chance
+  - value: "154%"
+    label: Weapon Crit Damage
+  weapons:
+  - role: Primary
+    name: Lightweight M4
+    talents:
+    - Unhinged
+    - Steady Handed
+    attrs:
+    - Weapon Critical Hit Damage
+    - Headshot Damage
+  - role: Secondary
+    name: P90
+    note: "his real primary, he says"
+    talents:
+    - Precise Crit
+    - Performer
+    attrs:
+    - Weapon Damage
+  os:
+    name: Augmented Lethality
+    note: "his: Level 42"
+  mods:
+  - Optimized Armor
+  - Targeted Surveillance
+  - Commando
+  gear:
+  - slot: Mask
+    any: true
+    set: Phalanx Attack
+    attrs:
+    - Weapon Critical Hit Damage
+    - Weapon Multi-Shot Chance
+  - slot: Body Armor
+    piece: Flimsy Body Armor v1
+    set: Fury Strike
+    talent: Injured Concealment
+    note: level 50
+    attrs:
+    - Skill Cooldown Recovery
+    - Weapon Critical Hit Damage
+  - slot: Backpack
+    piece: Trekking Elite Pack
+    set: Fury Strike
+    talent: Siege
+    attrs:
+    - Weapon Critical Hit Chance
+    - Weapon Multi-Shot Chance
+  - slot: Gloves
+    any: true
+    set: Fury Strike
+    attrs:
+    - Weapon Critical Hit Chance
+    - Weapon Multi-Shot Chance
+  - slot: Holster
+    any: true
+    set: Phalanx Attack
+    attrs:
+    - Weapon Damage
+    - Weapon Critical Hit Damage
+  - slot: Knee Pads
+    any: true
+    set: Fury Strike
+    attrs:
+    - Weapon Critical Hit Damage
+    - Armor
+  notes:
+  - label: Attributes
+    text: "Firepower first, then Weapon Crit Chance, Crit Damage, Multi-Shot and Headshot Damage. Mods with Crit Chance or Weapon Damage go to level 20 and get locked; Armor mods are fine. He'd reroll his chest's Skill Cooldown Recovery. Slot your Tactical Augmentation Modules (\"the easiest stat gain you're ever gonna get\") and re-check them after every gear swap. Skill mod chips: Tactical Link Duration, then crit stats, Weapon Damage or Intensity."
 ---
 A Vanguard Commando that doesn't care which gun you have. **Stack Weapon Crit Chance to about 60%, let Scanning Pulse and Tactical Link carry it close to 100%, and Fury Strike turns all those crits into damage.**
 
 Build by **TikTokAndy**, posted September 2026 on Season 2 Phase 2. The sheet is his September 24 update, from a solo Heroic Chinatown run.
-
-## The Build
-
-<div class="bsheet"><div class="bsheet__group"><p class="bsheet__label">Weapons</p><div class="bsheet__item"><img class="bsheet__tile bsheet__tile--wide" src="/images/db/weapon-icons/lightweight-m4-weapon-icon-division-resurgence-165.webp" srcset="/images/db/weapon-icons/lightweight-m4-weapon-icon-division-resurgence-165.webp 165w, /images/db/weapon-icons/lightweight-m4-weapon-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 150px" width="150" height="71" alt="Lightweight M4 assault rifle in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/weapons/lightweight-m4/">Lightweight M4</a><span class="bsheet__sub">Primary · T2 Assault Rifle</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/weapon-talents/unhinged-weapon-talent-icon-division-resurgence-80.webp" srcset="/images/db/weapon-talents/unhinged-weapon-talent-icon-division-resurgence-80.webp 80w, /images/db/weapon-talents/unhinged-weapon-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Unhinged</span><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/weapon-talents/steady-handed-weapon-talent-icon-division-resurgence-80.webp" srcset="/images/db/weapon-talents/steady-handed-weapon-talent-icon-division-resurgence-80.webp 80w, /images/db/weapon-talents/steady-handed-weapon-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Steady Handed</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile bsheet__tile--wide" src="/images/db/weapon-icons/p90-weapon-icon-division-resurgence-165.webp" srcset="/images/db/weapon-icons/p90-weapon-icon-division-resurgence-165.webp 165w, /images/db/weapon-icons/p90-weapon-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 150px" width="150" height="71" alt="P90 smg in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/weapons/p90/">P90</a><span class="bsheet__sub">Secondary · T1 SMG · his real primary, he says</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/weapon-talents/precise-crit-weapon-talent-icon-division-resurgence-80.webp" srcset="/images/db/weapon-talents/precise-crit-weapon-talent-icon-division-resurgence-80.webp 80w, /images/db/weapon-talents/precise-crit-weapon-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Precise Crit</span><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/weapon-talents/performer-weapon-talent-icon-division-resurgence-80.webp" srcset="/images/db/weapon-talents/performer-weapon-talent-icon-division-resurgence-80.webp 80w, /images/db/weapon-talents/performer-weapon-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Performer</span></span></div></div></div><div class="bsheet__group"><p class="bsheet__label">OS Protocol and skill mods</p><div class="bsheet__grid2"><div class="bsheet__item"><img class="bsheet__sq" src="/images/db/os-protocols/augmented-lethality-os-protocol-talent-icon-division-resurgence-80.webp" srcset="/images/db/os-protocols/augmented-lethality-os-protocol-talent-icon-division-resurgence-80.webp 80w, /images/db/os-protocols/augmented-lethality-os-protocol-talent-icon-division-resurgence-104.webp 104w" sizes="56px" width="56" height="56" alt="Augmented Lethality OS Protocol icon" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/os-protocols/augmented-lethality/">Augmented Lethality</a><span class="bsheet__sub">OS Protocol · Superior · his: Level 42</span><span class="bsheet__picks"></span></div></div><div class="bsheet__item"><img class="bsheet__sq" src="/images/db/skill-mod-combos/optimized-armor-skill-mod-combo-icon-division-resurgence-80.webp" srcset="/images/db/skill-mod-combos/optimized-armor-skill-mod-combo-icon-division-resurgence-80.webp 80w, /images/db/skill-mod-combos/optimized-armor-skill-mod-combo-icon-division-resurgence-160.webp 160w" sizes="56px" width="56" height="56" alt="" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/skill-mod-combos/optimized-armor/">Optimized Armor</a><span class="bsheet__sub">Smart Cover mods</span><span class="bsheet__picks"></span></div></div><div class="bsheet__item"><img class="bsheet__sq" src="/images/db/skill-mod-combos/targeted-surveillance-skill-mod-combo-icon-division-resurgence-80.webp" srcset="/images/db/skill-mod-combos/targeted-surveillance-skill-mod-combo-icon-division-resurgence-80.webp 80w, /images/db/skill-mod-combos/targeted-surveillance-skill-mod-combo-icon-division-resurgence-160.webp 160w" sizes="56px" width="56" height="56" alt="" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/skill-mod-combos/targeted-surveillance/">Targeted Surveillance</a><span class="bsheet__sub">Scanning Pulse mods</span><span class="bsheet__picks"></span></div></div><div class="bsheet__item"><img class="bsheet__sq" src="/images/db/skill-mod-combos/commando-skill-mod-combo-icon-division-resurgence-80.webp" srcset="/images/db/skill-mod-combos/commando-skill-mod-combo-icon-division-resurgence-80.webp 80w, /images/db/skill-mod-combos/commando-skill-mod-combo-icon-division-resurgence-160.webp 160w" sizes="56px" width="56" height="56" alt="" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/skill-mod-combos/commando/">Commando</a><span class="bsheet__sub">Tactical Link mods · later Bugle Call</span><span class="bsheet__picks"></span></div></div></div></div><div class="bsheet__group bsheet__group--wide"><p class="bsheet__label">Gear · 4pc Fury Strike + 2pc Phalanx Attack</p><div class="bsheet__cols"><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/javelina-mask-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/javelina-mask-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/javelina-mask-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="Javelina Mask in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#javelina-mask">Phalanx Attack mask</a><span class="bsheet__sub">Mask · any tier</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/phalanx-attack-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/phalanx-attack-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/phalanx-attack-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Phalanx Attack</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/nightclaw-tactical-gloves-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/nightclaw-tactical-gloves-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/nightclaw-tactical-gloves-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="Nightclaw Tactical Gloves in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#nightclaw-tactical-gloves">Fury Strike gloves</a><span class="bsheet__sub">Gloves · any tier</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/fury-strike-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/fury-strike-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/fury-strike-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Fury Strike</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/jaivardhan-thigh-rig-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/jaivardhan-thigh-rig-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/jaivardhan-thigh-rig-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="Jaivardhan Thigh Rig in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#jaivardhan-thigh-rig">Phalanx Attack holster</a><span class="bsheet__sub">Holster · any tier</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/phalanx-attack-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/phalanx-attack-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/phalanx-attack-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Phalanx Attack</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/kn-skydd-knee-protectors-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/kn-skydd-knee-protectors-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/kn-skydd-knee-protectors-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="Knäskydd Knee Protectors in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#kn-skydd-knee-protectors">Fury Strike knee pads</a><span class="bsheet__sub">Knee pads · any tier</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/fury-strike-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/fury-strike-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/fury-strike-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Fury Strike</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/flimsy-body-armor-v1-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/flimsy-body-armor-v1-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/flimsy-body-armor-v1-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="Flimsy Body Armor v1 in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#flimsy-body-armor-v1">Flimsy Body Armor v1</a><span class="bsheet__sub">Body armor · T1 · level 50</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/fury-strike-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/fury-strike-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/fury-strike-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Fury Strike</span><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/body-armor-talents/injured-concealment-body-armor-talent-icon-division-resurgence-80.webp" srcset="/images/db/body-armor-talents/injured-concealment-body-armor-talent-icon-division-resurgence-80.webp 80w, /images/db/body-armor-talents/injured-concealment-body-armor-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Injured Concealment</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/trekking-elite-pack-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/trekking-elite-pack-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/trekking-elite-pack-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="Trekking Elite Pack in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#trekking-elite-pack">Trekking Elite Pack</a><span class="bsheet__sub">Backpack · T0</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/fury-strike-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/fury-strike-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/fury-strike-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Fury Strike</span><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/backpack-talents/siege-backpack-talent-icon-division-resurgence-80.webp" srcset="/images/db/backpack-talents/siege-backpack-talent-icon-division-resurgence-80.webp 80w, /images/db/backpack-talents/siege-backpack-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Siege</span></span></div></div></div></div></div>
-
-**Attributes:** Firepower first, then Weapon Crit Chance, Crit Damage, Multi-Shot and Headshot Damage. Mods with Crit Chance or Weapon Damage go to level 20 and get locked; Armor mods are fine. He'd reroll his chest's Skill Cooldown Recovery. Slot your Tactical Augmentation Modules ("the easiest stat gain you're ever gonna get") and re-check them after every gear swap. Skill mod chips: Tactical Link Duration, then crit stats, Weapon Damage or Intensity. [Open it in the Build Planner](/builder/#s=Vanguard&sc=Commando&n=Any-Weapon+Commando&ms=gs-3&m1=chd&m2=wms&gs=gs-1&g1=chc&g2=wms&hs=gs-3&h1=wd&h2=chd&cs=gs-1&ct=ba-14&c1=scr&c2=chd&ps=gs-1&pt=bp-22&p1=chc&p2=wms&ks=gs-1&k1=chd&k2=arm&w1s=sw-41&w1t=wt-68&w1t2=wt-52&w1b1=chd&w1b2=hsd&w2s=sw-45&w2t=wt-36&w2t2=wt-34&w2b1=wd&os=os-39&sm1=smc-63&sm2=smc-56&sm3=smc-65) to copy the whole loadout.
 
 ## How It Works
 

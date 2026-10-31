@@ -55,9 +55,9 @@ Six, in `em`, each `min-width` paired with a `max-width` 0.01em smaller:
 | 360px | `(max-width: 22.49em)` | narrowest phones (the Menu button drops its visible label) |
 | 560px | `35em` / `34.99em` | small tweaks (social buttons in one row, form padding) |
 | 720px | `45em` / `44.99em` | phone layout vs. wider: 2-column grids, 32px gutters, the map's sidebar |
-| 960px | `60em` / `59.99em` | 3-column grids, build page sidebar |
+| 960px | `60em` / `59.99em` | 3-column grids, the build loadout panel's weapons/skills columns and 3-wide gear grid |
 | 1100px | `68.75em` / `68.74em` | 3-column database grids |
-| 1152px | `72em` / `71.99em` | the one-row desktop menu (from here the logo is as far from the menu as the menu items are from each other) |
+| 1152px | `72em` / `71.99em` | the one-row desktop menu (from here the logo is as far from the menu as the menu items are from each other); the sticky loadout summary beside build articles (narrower screens get the Loadout button) |
 
 `map-engine.js` uses the same 44.99em query for its phone behaviour. The build planner (`public/css/builder-v3.css`)
 has its own layout breakpoints (480, 880 and 1240px) and is left as an app of its own.

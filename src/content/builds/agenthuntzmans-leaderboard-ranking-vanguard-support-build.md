@@ -37,18 +37,86 @@ videoTitle: "AgentHuntzman: Best Scout Build in Division Resurgence"
 videoChannel: "AgentHuntzman"
 videoUploadDate: "2026-04-25T17:46:14-07:00"
 videoDuration: "PT16M45S"
+loadout:
+  statsFrom: "AgentHuntzman's sheet"
+  stats:
+  - value: 17.44 s
+    label: Scanning Pulse duration
+  - value: 41.20 s
+    label: Smart Cover duration
+  - value: "+46%"
+    label: Skill Radius
+  weapons:
+  - role: Primary
+    name: Police M4
+    talents:
+    - Torrential Downpour
+    - Rapid Charge
+    attrs:
+    - All Weapon Damage
+    - Weapon Damage
+  - role: Secondary
+    name: P90
+    talents:
+    - Torrential Downpour
+    - Fully Charged
+    attrs:
+    - All Weapon Damage
+    - Weapon Damage
+  os:
+    name: Pressing Matter
+  mods:
+  - Advanced Position
+  - Pulse Feedback
+  - Bugle Call
+  gear:
+  - slot: Mask
+    any: true
+    set: Boom-Shakalaka
+    attrs:
+    - Skill Cooldown Recovery
+    - Skill Duration
+  - slot: Body Armor
+    piece: Flimsy Body Armor v2
+    set: Mechanical Expert
+    talent: Socialite
+    attrs:
+    - Armor
+    - Damage Reduction
+  - slot: Backpack
+    piece: "\"Horo\" CarryBack"
+    set: Mechanical Expert
+    talent: Brainstorm
+    attrs:
+    - Skill Duration
+    - Skill Cooldown Recovery
+  - slot: Gloves
+    any: true
+    set: Mechanical Expert
+    attrs:
+    - Skill Duration
+    - Skill Cooldown Recovery
+  - slot: Holster
+    any: true
+    set: Boom-Shakalaka
+    attrs:
+    - Signature Ability Charge Efficiency
+    - Skill Duration
+  - slot: Knee Pads
+    any: true
+    set: Mechanical Expert
+    attrs:
+    - Skill Cooldown Recovery
+    - Weapon Damage
+  notes:
+  - label: Attributes
+    text: "Engineering cores on every piece. Skill Duration and Skill Cooldown Recovery on most rolls, with Signature Ability Charge Efficiency on the holster, Weapon Damage on the knee pads, and Armor plus Damage Reduction on the body armor (Socialite's +36% Armor grows with it). All Weapon Damage and Weapon Damage on both guns, and a tactical mod on each."
+  - label: Recon tree
+    text: "Exposed, Foxhole, Entrenched and Target Rich Environment at 3/3, Friendly Hand and Combat Inspiration at 2/2."
 ---
 AgentHuntzman's Recon lets the squad do the killing. **Two guns stack Engineering, Smart Cover turns it into Weapon Damage for everyone behind it, and Scanning Pulse makes the targets take more.**
 
 Build by **AgentHuntzman**, posted in April 2026 on Patch 1.1.1.
-
-## The Build
-
-<div class="bsheet"><div class="bsheet__group"><p class="bsheet__label">Weapons</p><div class="bsheet__item"><img class="bsheet__tile bsheet__tile--wide" src="/images/db/weapon-icons/police-m4-weapon-icon-division-resurgence-165.webp" srcset="/images/db/weapon-icons/police-m4-weapon-icon-division-resurgence-165.webp 165w, /images/db/weapon-icons/police-m4-weapon-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 150px" width="150" height="71" alt="Police M4 assault rifle in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/weapons/police-m4/">Police M4</a><span class="bsheet__sub">Primary · T1 Assault Rifle</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/weapon-talents/torrential-downpour-weapon-talent-icon-division-resurgence-80.webp" srcset="/images/db/weapon-talents/torrential-downpour-weapon-talent-icon-division-resurgence-80.webp 80w, /images/db/weapon-talents/torrential-downpour-weapon-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Torrential Downpour</span><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/weapon-talents/rapid-charge-weapon-talent-icon-division-resurgence-80.webp" srcset="/images/db/weapon-talents/rapid-charge-weapon-talent-icon-division-resurgence-80.webp 80w, /images/db/weapon-talents/rapid-charge-weapon-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Rapid Charge</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile bsheet__tile--wide" src="/images/db/weapon-icons/p90-weapon-icon-division-resurgence-165.webp" srcset="/images/db/weapon-icons/p90-weapon-icon-division-resurgence-165.webp 165w, /images/db/weapon-icons/p90-weapon-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 150px" width="150" height="71" alt="P90 smg in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/weapons/p90/">P90</a><span class="bsheet__sub">Secondary · T1 SMG</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/weapon-talents/torrential-downpour-weapon-talent-icon-division-resurgence-80.webp" srcset="/images/db/weapon-talents/torrential-downpour-weapon-talent-icon-division-resurgence-80.webp 80w, /images/db/weapon-talents/torrential-downpour-weapon-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Torrential Downpour</span><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/weapon-talents/fully-charged-weapon-talent-icon-division-resurgence-80.webp" srcset="/images/db/weapon-talents/fully-charged-weapon-talent-icon-division-resurgence-80.webp 80w, /images/db/weapon-talents/fully-charged-weapon-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Fully Charged</span></span></div></div></div><div class="bsheet__group"><p class="bsheet__label">OS Protocol and skill mods</p><div class="bsheet__grid2"><div class="bsheet__item"><img class="bsheet__sq" src="/images/db/os-protocols/pressing-matter-os-protocol-talent-icon-division-resurgence-80.webp" srcset="/images/db/os-protocols/pressing-matter-os-protocol-talent-icon-division-resurgence-80.webp 80w, /images/db/os-protocols/pressing-matter-os-protocol-talent-icon-division-resurgence-104.webp 104w" sizes="56px" width="56" height="56" alt="Pressing Matter OS Protocol icon" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/os-protocols/pressing-matter/">Pressing Matter</a><span class="bsheet__sub">OS Protocol · Superior</span><span class="bsheet__picks"></span></div></div><div class="bsheet__item"><img class="bsheet__sq" src="/images/db/skill-mod-combos/advanced-position-skill-mod-combo-icon-division-resurgence-80.webp" srcset="/images/db/skill-mod-combos/advanced-position-skill-mod-combo-icon-division-resurgence-80.webp 80w, /images/db/skill-mod-combos/advanced-position-skill-mod-combo-icon-division-resurgence-160.webp 160w" sizes="56px" width="56" height="56" alt="" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/skill-mod-combos/advanced-position/">Advanced Position</a><span class="bsheet__sub">Smart Cover mods</span><span class="bsheet__picks"></span></div></div><div class="bsheet__item"><img class="bsheet__sq" src="/images/db/skill-mod-combos/pulse-feedback-skill-mod-combo-icon-division-resurgence-80.webp" srcset="/images/db/skill-mod-combos/pulse-feedback-skill-mod-combo-icon-division-resurgence-80.webp 80w, /images/db/skill-mod-combos/pulse-feedback-skill-mod-combo-icon-division-resurgence-160.webp 160w" sizes="56px" width="56" height="56" alt="" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/skill-mod-combos/pulse-feedback/">Pulse Feedback</a><span class="bsheet__sub">Scanning Pulse mods</span><span class="bsheet__picks"></span></div></div><div class="bsheet__item"><img class="bsheet__sq" src="/images/db/skill-mod-combos/bugle-call-skill-mod-combo-icon-division-resurgence-80.webp" srcset="/images/db/skill-mod-combos/bugle-call-skill-mod-combo-icon-division-resurgence-80.webp 80w, /images/db/skill-mod-combos/bugle-call-skill-mod-combo-icon-division-resurgence-160.webp 160w" sizes="56px" width="56" height="56" alt="" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/skill-mod-combos/bugle-call/">Bugle Call</a><span class="bsheet__sub">Tactical Link mods</span><span class="bsheet__picks"></span></div></div></div></div><div class="bsheet__group bsheet__group--wide"><p class="bsheet__label">Gear · 4pc Mechanical Expert + 2pc Boom-Shakalaka</p><div class="bsheet__cols"><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/javelina-mask-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/javelina-mask-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/javelina-mask-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="Javelina Mask in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#javelina-mask">Boom-Shakalaka mask</a><span class="bsheet__sub">Mask · any tier</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/boom-shakalaka-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/boom-shakalaka-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/boom-shakalaka-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Boom-Shakalaka</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/neptune-protection-gloves-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/neptune-protection-gloves-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/neptune-protection-gloves-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="&quot;Neptune&quot; Protection Gloves in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#neptune-protection-gloves">Mechanical Expert gloves</a><span class="bsheet__sub">Gloves · any tier</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/mechanical-expert-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/mechanical-expert-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/mechanical-expert-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Mechanical Expert</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/jaivardhan-thigh-rig-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/jaivardhan-thigh-rig-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/jaivardhan-thigh-rig-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="Jaivardhan Thigh Rig in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#jaivardhan-thigh-rig">Boom-Shakalaka holster</a><span class="bsheet__sub">Holster · any tier</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/boom-shakalaka-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/boom-shakalaka-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/boom-shakalaka-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Boom-Shakalaka</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/patella-knee-cups-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/patella-knee-cups-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/patella-knee-cups-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="&quot;Patella&quot; Knee Cups in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#patella-knee-cups">Mechanical Expert knee pads</a><span class="bsheet__sub">Knee pads · any tier</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/mechanical-expert-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/mechanical-expert-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/mechanical-expert-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Mechanical Expert</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/flimsy-body-armor-v2-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/flimsy-body-armor-v2-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/flimsy-body-armor-v2-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="Flimsy Body Armor v2 in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#flimsy-body-armor-v2">Flimsy Body Armor v2</a><span class="bsheet__sub">Body armor · T1</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/mechanical-expert-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/mechanical-expert-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/mechanical-expert-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Mechanical Expert</span><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/body-armor-talents/socialite-body-armor-talent-icon-division-resurgence-80.webp" srcset="/images/db/body-armor-talents/socialite-body-armor-talent-icon-division-resurgence-80.webp 80w, /images/db/body-armor-talents/socialite-body-armor-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Socialite</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/horo-carryback-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/horo-carryback-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/horo-carryback-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="&quot;Horo&quot; CarryBack in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#horo-carryback">&quot;Horo&quot; CarryBack</a><span class="bsheet__sub">Backpack · T1</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/mechanical-expert-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/mechanical-expert-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/mechanical-expert-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Mechanical Expert</span><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/backpack-talents/brainstorm-backpack-talent-icon-division-resurgence-80.webp" srcset="/images/db/backpack-talents/brainstorm-backpack-talent-icon-division-resurgence-80.webp 80w, /images/db/backpack-talents/brainstorm-backpack-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Brainstorm</span></span></div></div></div></div></div>
-
-**Attributes:** Engineering cores on every piece. Skill Duration and Skill Cooldown Recovery on most rolls, with Signature Ability Charge Efficiency on the holster, Weapon Damage on the knee pads, and Armor plus Damage Reduction on the body armor (Socialite's +36% Armor grows with it). All Weapon Damage and Weapon Damage on both guns, and a tactical mod on each. [Open it in the Build Planner](/builder/#s=Vanguard&sc=Recon&n=Vanguard+Recon+Support&ms=gs-10&m1=scr&m2=sdu&gs=gs-12&g1=sdu&g2=scr&hs=gs-10&h1=sace&h2=sdu&cs=gs-12&ct=ba-20&c1=arm&c2=dr&ps=gs-12&pt=bp-2&p1=sdu&p2=scr&ks=gs-12&k1=scr&k2=wd&w1s=sw-2&w1t=wt-66&w1t2=wt-42&w1b1=awd&w1b2=wd&w2s=sw-45&w2t=wt-66&w2t2=wt-20&w2b1=awd&w2b2=wd&os=os-14&sm1=smc-72&sm2=smc-57&sm3=smc-59) to copy the whole loadout.
-
-**Recon tree:** Exposed, Foxhole, Entrenched and Target Rich Environment at 3/3, Friendly Hand and Combat Inspiration at 2/2.
 
 ## How It Works
 

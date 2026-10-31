@@ -34,16 +34,85 @@ videoChannel: "TikTokAndy"
 videoUploadDate: "2026-10-10T10:24:05-07:00"
 videoDuration: "PT75M24S"
 plannerHash: "s=Tech+Operator&sc=Aegis+Operations&n=Aegis+Team+Healer&ms=gs-8&m1=rh&m2=dte&gs=gs-12&g1=rh&g2=si&hs=gs-12&h1=sdu&h2=scr&cs=gs-8&ct=ba-11&c1=scr&ps=gs-8&pt=bp-2&p1=rh&p2=arm&ks=gs-8&k1=si&k2=sr&w1s=sw-52&w1t=wt-17&w1t2=wt-1&w1b1=si&w1b2=mhp&w2s=sw-11&w2t=wt-66&w2t2=wt-26&w2b1=si&os=os-10&sm1=smc-29&sm2=smc-31&sm3=smc-36"
+loadout:
+  statsFrom: "TikTokAndy's sheet"
+  stats:
+  - value: "~3,000"
+    label: Engineering
+  - value: "+75%"
+    label: Skill Intensity
+  - value: "+44.98%"
+    label: Skill Duration
+  weapons:
+  - role: Primary
+    name: MP7
+    note: Level 50
+    talents:
+    - Enhancement Trade
+    - Adaptation
+    attrs:
+    - Skill Intensity
+    - Max Health
+  - role: Secondary
+    name: Vector 45 ACP
+    note: Level 50
+    talents:
+    - Torrential Downpour
+    - Last Stand
+    attrs:
+    - Skill Intensity
+  os:
+    name: Recursive Treatment
+    note: Level 42
+  mods:
+  - Magnetic Recharge
+  - Combat Enhancer
+  - Reinforced Support
+  gear:
+  - slot: Mask
+    piece: Protective Tactical Mask
+    set: Long-term Effect
+    attrs:
+    - Received Healing
+    - Damage to Elites
+  - slot: Body Armor
+    piece: Athena Missile Vest
+    set: Long-term Effect
+    talent: Fearless Charge
+    attrs:
+    - Skill Cooldown Recovery
+  - slot: Backpack
+    piece: Mountain Hiking Pack
+    set: Long-term Effect
+    talent: Brainstorm
+    attrs:
+    - Received Healing
+    - Armor
+  - slot: Gloves
+    piece: "\"Neptune\" Protection Gloves"
+    set: Mechanical Expert
+    attrs:
+    - Received Healing
+    - Skill Intensity
+  - slot: Holster
+    piece: Jaivardhan Thigh Rig
+    set: Mechanical Expert
+    attrs:
+    - Skill Duration
+    - Skill Cooldown Recovery
+  - slot: Knee Pads
+    piece: Urban Warfare Kneepads
+    set: Long-term Effect
+    attrs:
+    - Skill Intensity
+    - Skill Radius
+  notes:
+  - label: Attributes
+    text: "Engineering and Toughness with next to no Firepower, then Skill Intensity, Duration, Radius, Cooldown Recovery and Received Healing. His holster (Skill Duration and Cooldown Recovery) is the model piece; he'd reroll the mask's Damage to Elites. Attachments: Engineering and Skill Intensity; gear mods add Armor. No Weapon or Skill Damage anywhere: \"It's all focused into healing.\" Slot your Tactical Augmentations."
 ---
 A healer that barely shoots. **The Defender Drone wraps the team in Extra Health, four Mender Drones follow your teammates around, and every kill they get keeps the drones up longer.**
 
 Build by **TikTokAndy**, posted October 10, 2026 on Season 2 Phase 2. He calls it "Striker Aegis": in game it's the Tech Operator's Aegis Operations focus.
-
-## The Build
-
-<div class="bsheet"><div class="bsheet__group"><p class="bsheet__label">Weapons</p><div class="bsheet__item"><img class="bsheet__tile bsheet__tile--wide" src="/images/db/weapon-icons/mp7-weapon-icon-division-resurgence-165.webp" srcset="/images/db/weapon-icons/mp7-weapon-icon-division-resurgence-165.webp 165w, /images/db/weapon-icons/mp7-weapon-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 150px" width="150" height="71" alt="MP7 smg in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/weapons/mp7/">MP7</a><span class="bsheet__sub">Primary · T2 SMG · Level 50</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/weapon-talents/enhancement-trade-weapon-talent-icon-division-resurgence-80.webp" srcset="/images/db/weapon-talents/enhancement-trade-weapon-talent-icon-division-resurgence-80.webp 80w, /images/db/weapon-talents/enhancement-trade-weapon-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Enhancement Trade</span><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/weapon-talents/adaptation-weapon-talent-icon-division-resurgence-80.webp" srcset="/images/db/weapon-talents/adaptation-weapon-talent-icon-division-resurgence-80.webp 80w, /images/db/weapon-talents/adaptation-weapon-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Adaptation</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile bsheet__tile--wide" src="/images/db/weapon-icons/vector-45-acp-weapon-icon-division-resurgence-165.webp" srcset="/images/db/weapon-icons/vector-45-acp-weapon-icon-division-resurgence-165.webp 165w, /images/db/weapon-icons/vector-45-acp-weapon-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 150px" width="150" height="71" alt="Vector 45 ACP smg in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/weapons/vector-45-acp/">Vector 45 ACP</a><span class="bsheet__sub">Secondary · T0 SMG · Level 50</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/weapon-talents/torrential-downpour-weapon-talent-icon-division-resurgence-80.webp" srcset="/images/db/weapon-talents/torrential-downpour-weapon-talent-icon-division-resurgence-80.webp 80w, /images/db/weapon-talents/torrential-downpour-weapon-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Torrential Downpour</span><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/weapon-talents/last-stand-weapon-talent-icon-division-resurgence-80.webp" srcset="/images/db/weapon-talents/last-stand-weapon-talent-icon-division-resurgence-80.webp 80w, /images/db/weapon-talents/last-stand-weapon-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Last Stand</span></span></div></div></div><div class="bsheet__group"><p class="bsheet__label">OS Protocol and skill mods</p><div class="bsheet__grid2"><div class="bsheet__item"><img class="bsheet__sq" src="/images/db/os-protocols/recursive-treatment-os-protocol-talent-icon-division-resurgence-80.webp" srcset="/images/db/os-protocols/recursive-treatment-os-protocol-talent-icon-division-resurgence-80.webp 80w, /images/db/os-protocols/recursive-treatment-os-protocol-talent-icon-division-resurgence-104.webp 104w" sizes="56px" width="56" height="56" alt="Recursive Treatment OS Protocol icon" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/os-protocols/recursive-treatment/">Recursive Treatment</a><span class="bsheet__sub">OS Protocol · Superior · Level 42</span><span class="bsheet__picks"></span></div></div><div class="bsheet__item"><img class="bsheet__sq" src="/images/db/skill-mod-combos/magnetic-recharge-skill-mod-combo-icon-division-resurgence-80.webp" srcset="/images/db/skill-mod-combos/magnetic-recharge-skill-mod-combo-icon-division-resurgence-80.webp 80w, /images/db/skill-mod-combos/magnetic-recharge-skill-mod-combo-icon-division-resurgence-160.webp 160w" sizes="56px" width="56" height="56" alt="" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/skill-mod-combos/magnetic-recharge/">Magnetic Recharge</a><span class="bsheet__sub">Defender Drone mods</span><span class="bsheet__picks"></span></div></div><div class="bsheet__item"><img class="bsheet__sq" src="/images/db/skill-mod-combos/combat-enhancer-skill-mod-combo-icon-division-resurgence-80.webp" srcset="/images/db/skill-mod-combos/combat-enhancer-skill-mod-combo-icon-division-resurgence-80.webp 80w, /images/db/skill-mod-combos/combat-enhancer-skill-mod-combo-icon-division-resurgence-160.webp 160w" sizes="56px" width="56" height="56" alt="" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/skill-mod-combos/combat-enhancer/">Combat Enhancer</a><span class="bsheet__sub">Mender Drone mods</span><span class="bsheet__picks"></span></div></div><div class="bsheet__item"><img class="bsheet__sq" src="/images/db/skill-mod-combos/reinforced-support-skill-mod-combo-icon-division-resurgence-80.webp" srcset="/images/db/skill-mod-combos/reinforced-support-skill-mod-combo-icon-division-resurgence-80.webp 80w, /images/db/skill-mod-combos/reinforced-support-skill-mod-combo-icon-division-resurgence-160.webp 160w" sizes="56px" width="56" height="56" alt="" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/skill-mod-combos/reinforced-support/">Reinforced Support</a><span class="bsheet__sub">First-Aid Firefly mods</span><span class="bsheet__picks"></span></div></div></div></div><div class="bsheet__group bsheet__group--wide"><p class="bsheet__label">Gear · 4pc Long-term Effect + 2pc Mechanical Expert</p><div class="bsheet__cols"><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/protective-tactical-mask-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/protective-tactical-mask-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/protective-tactical-mask-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="Protective Tactical Mask in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#protective-tactical-mask">Protective Tactical Mask</a><span class="bsheet__sub">Mask · T2</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/long-term-effect-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/long-term-effect-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/long-term-effect-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Long-term Effect</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/neptune-protection-gloves-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/neptune-protection-gloves-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/neptune-protection-gloves-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="&quot;Neptune&quot; Protection Gloves in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#neptune-protection-gloves">&quot;Neptune&quot; Protection Gloves</a><span class="bsheet__sub">Gloves · T2</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/mechanical-expert-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/mechanical-expert-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/mechanical-expert-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Mechanical Expert</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/jaivardhan-thigh-rig-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/jaivardhan-thigh-rig-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/jaivardhan-thigh-rig-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="Jaivardhan Thigh Rig in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#jaivardhan-thigh-rig">Jaivardhan Thigh Rig</a><span class="bsheet__sub">Holster · T2</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/mechanical-expert-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/mechanical-expert-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/mechanical-expert-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Mechanical Expert</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/urban-warfare-kneepads-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/urban-warfare-kneepads-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/urban-warfare-kneepads-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="Urban Warfare Kneepads in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#urban-warfare-kneepads">Urban Warfare Kneepads</a><span class="bsheet__sub">Knee pads · T2</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/long-term-effect-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/long-term-effect-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/long-term-effect-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Long-term Effect</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/athena-missile-vest-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/athena-missile-vest-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/athena-missile-vest-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="Athena Missile Vest in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#athena-missile-vest">Athena Missile Vest</a><span class="bsheet__sub">Body armor · T1</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/long-term-effect-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/long-term-effect-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/long-term-effect-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Long-term Effect</span><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/body-armor-talents/fearless-charge-body-armor-talent-icon-division-resurgence-80.webp" srcset="/images/db/body-armor-talents/fearless-charge-body-armor-talent-icon-division-resurgence-80.webp 80w, /images/db/body-armor-talents/fearless-charge-body-armor-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Fearless Charge</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/mountain-hiking-pack-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/mountain-hiking-pack-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/mountain-hiking-pack-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="Mountain Hiking Pack in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#mountain-hiking-pack">Mountain Hiking Pack</a><span class="bsheet__sub">Backpack · T2</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/long-term-effect-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/long-term-effect-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/long-term-effect-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Long-term Effect</span><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/backpack-talents/brainstorm-backpack-talent-icon-division-resurgence-80.webp" srcset="/images/db/backpack-talents/brainstorm-backpack-talent-icon-division-resurgence-80.webp 80w, /images/db/backpack-talents/brainstorm-backpack-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Brainstorm</span></span></div></div></div></div></div>
-
-**Attributes:** Engineering and Toughness with next to no Firepower, then Skill Intensity, Duration, Radius, Cooldown Recovery and Received Healing. His holster (Skill Duration and Cooldown Recovery) is the model piece; he'd reroll the mask's Damage to Elites. Attachments: Engineering and Skill Intensity; gear mods add Armor. No Weapon or Skill Damage anywhere: "It's all focused into healing." Slot your Tactical Augmentations. [Open it in the Build Planner](/builder/#s=Tech+Operator&sc=Aegis+Operations&n=Aegis+Team+Healer&ms=gs-8&m1=rh&m2=dte&gs=gs-12&g1=rh&g2=si&hs=gs-12&h1=sdu&h2=scr&cs=gs-8&ct=ba-11&c1=scr&ps=gs-8&pt=bp-2&p1=rh&p2=arm&ks=gs-8&k1=si&k2=sr&w1s=sw-52&w1t=wt-17&w1t2=wt-1&w1b1=si&w1b2=mhp&w2s=sw-11&w2t=wt-66&w2t2=wt-26&w2b1=si&os=os-10&sm1=smc-29&sm2=smc-31&sm3=smc-36) to copy the whole loadout.
 
 ## How It Works
 

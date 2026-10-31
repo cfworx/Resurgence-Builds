@@ -28,15 +28,83 @@ faqs:
     answer: "Just behind your front line, in cover. Augmented Range only debuffs enemies the Swarm hits from at least 20 meters away from you, Close and Personal counts allies within 30 meters, Precise Crit reaches 40, and Brainstorm's second +15% Skill Duration needs an ally within 20 meters. Staying close to your squad and 20 meters or more from the enemy covers all four, and cover is where Accelerated Charge counts your kills and assists."
   - question: "Which body armor and backpack roll Accelerated Charge and Brainstorm?"
     answer: "Accelerated Charge rolls on the Ops Armor (T2, the Mechanical Expert piece this build uses), X-TREYME Pro Ribcage (T2), \"Big Drum\" Body Armor (T2), Athena Missile Vest (T1), Phalanx Precision Vest (T1) and Ranger Ballistics Vest (T0). Brainstorm rolls on the Mountain Hiking Pack (T2, a Jackpot piece), Rally Point Secure Pack (T1), Big Horn Pack (T1), \"Horo\" CarryBack (T1), Demeter Quick-Stash (T0) and Element Outdoors Rucksack (T0)."
+loadout:
+  statsFrom: On paper
+  stats:
+  - value: "+27%"
+    label: "Engineering, 3 allies close"
+  - value: "-14.4%"
+    label: enemy Damage Reduction
+  - value: "+6% to +12%"
+    label: your Damage Reduction
+  weapons:
+  - role: Primary
+    name: PKM
+    talents:
+    - Precise Crit
+    - Target Acquisition
+    attrs:
+    - Skill Critical Damage
+    - Skill Critical Chance
+  - role: Secondary
+    name: Military SA-58
+    talents:
+    - Rapid Charge
+    - Backup Battery
+    attrs:
+    - Signature Ability Charge Efficiency
+    - Skill Critical Damage
+  os:
+    name: Close and Personal
+  mods:
+  - Chemical Recharge
+  - Generative Formula
+  - Augmented Range
+  gear:
+  - slot: Mask
+    piece: Javelina Mask
+    set: Mechanical Expert
+    attrs:
+    - Signature Ability Charge Efficiency
+    - Skill Duration
+  - slot: Body Armor
+    piece: Ops Armor
+    set: Mechanical Expert
+    talent: Accelerated Charge
+    attrs:
+    - Signature Ability Charge Efficiency
+    - Skill Cooldown Recovery
+  - slot: Backpack
+    piece: Mountain Hiking Pack
+    set: Jackpot
+    talent: Brainstorm
+    attrs:
+    - Skill Duration
+    - Signature Ability Charge Efficiency
+  - slot: Gloves
+    piece: "\"Neptune\" Protection Gloves"
+    set: Mechanical Expert
+    attrs:
+    - Signature Ability Charge Efficiency
+    - Skill Cooldown Recovery
+  - slot: Holster
+    piece: Jags Sidearm Mount
+    set: Jackpot
+    attrs:
+    - Signature Ability Charge Efficiency
+    - Skill Radius
+  - slot: Knee Pads
+    piece: "\"Patella\" Knee Cups"
+    set: Mechanical Expert
+    attrs:
+    - Signature Ability Charge Efficiency
+    - Skill Duration
+  notes:
+  - label: Attributes
+    text: "Signature Ability Charge Efficiency on every piece, plus Skill Duration or Skill Cooldown Recovery (Skill Radius on the holster)."
 ---
 
 A Field Medic who never heals. **Your gun buffs the squad, your Swarm softens the enemy, and every buffed ally makes you stronger.**
-
-## The Build
-
-<div class="bsheet"><div class="bsheet__group"><p class="bsheet__label">Weapons</p><div class="bsheet__item"><img class="bsheet__tile bsheet__tile--wide" src="/images/db/weapon-icons/pkm-weapon-icon-division-resurgence-165.webp" srcset="/images/db/weapon-icons/pkm-weapon-icon-division-resurgence-165.webp 165w, /images/db/weapon-icons/pkm-weapon-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 150px" width="150" height="71" alt="PKM light machine gun in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/weapons/pkm/">PKM</a><span class="bsheet__sub">Primary · T2 LMG</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/weapon-talents/precise-crit-weapon-talent-icon-division-resurgence-80.webp" srcset="/images/db/weapon-talents/precise-crit-weapon-talent-icon-division-resurgence-80.webp 80w, /images/db/weapon-talents/precise-crit-weapon-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Precise Crit</span><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/weapon-talents/target-acquisition-weapon-talent-icon-division-resurgence-80.webp" srcset="/images/db/weapon-talents/target-acquisition-weapon-talent-icon-division-resurgence-80.webp 80w, /images/db/weapon-talents/target-acquisition-weapon-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Target Acquisition</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile bsheet__tile--wide" src="/images/db/weapon-icons/military-sa-58-weapon-icon-division-resurgence-165.webp" srcset="/images/db/weapon-icons/military-sa-58-weapon-icon-division-resurgence-165.webp 165w, /images/db/weapon-icons/military-sa-58-weapon-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 150px" width="150" height="71" alt="Military SA-58 assault rifle in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/weapons/military-sa-58/">Military SA-58</a><span class="bsheet__sub">Secondary · T2 assault rifle</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/weapon-talents/rapid-charge-weapon-talent-icon-division-resurgence-80.webp" srcset="/images/db/weapon-talents/rapid-charge-weapon-talent-icon-division-resurgence-80.webp 80w, /images/db/weapon-talents/rapid-charge-weapon-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Rapid Charge</span><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/weapon-talents/backup-battery-weapon-talent-icon-division-resurgence-80.webp" srcset="/images/db/weapon-talents/backup-battery-weapon-talent-icon-division-resurgence-80.webp 80w, /images/db/weapon-talents/backup-battery-weapon-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Backup Battery</span></span></div></div></div><div class="bsheet__group"><p class="bsheet__label">OS Protocol and skill mods</p><div class="bsheet__grid2"><div class="bsheet__item"><img class="bsheet__sq" src="/images/db/os-protocols/close-and-personal-os-protocol-talent-icon-division-resurgence-80.webp" srcset="/images/db/os-protocols/close-and-personal-os-protocol-talent-icon-division-resurgence-80.webp 80w, /images/db/os-protocols/close-and-personal-os-protocol-talent-icon-division-resurgence-104.webp 104w" sizes="56px" width="56" height="56" alt="Close and Personal OS Protocol icon" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/os-protocols/close-and-personal/">Close and Personal</a><span class="bsheet__sub">OS Protocol · Superior</span><span class="bsheet__picks"></span></div></div><div class="bsheet__item"><img class="bsheet__sq" src="/images/db/skill-mod-combos/chemical-recharge-skill-mod-combo-icon-division-resurgence-80.webp" srcset="/images/db/skill-mod-combos/chemical-recharge-skill-mod-combo-icon-division-resurgence-80.webp 80w, /images/db/skill-mod-combos/chemical-recharge-skill-mod-combo-icon-division-resurgence-160.webp 160w" sizes="56px" width="56" height="56" alt="" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/skill-mod-combos/chemical-recharge/">Chemical Recharge</a><span class="bsheet__sub">Chemical Trap mods</span><span class="bsheet__picks"></span></div></div><div class="bsheet__item"><img class="bsheet__sq" src="/images/db/skill-mod-combos/generative-formula-skill-mod-combo-icon-division-resurgence-80.webp" srcset="/images/db/skill-mod-combos/generative-formula-skill-mod-combo-icon-division-resurgence-80.webp 80w, /images/db/skill-mod-combos/generative-formula-skill-mod-combo-icon-division-resurgence-160.webp 160w" sizes="56px" width="56" height="56" alt="" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/skill-mod-combos/generative-formula/">Generative Formula</a><span class="bsheet__sub">Oxidizing Hive mods</span><span class="bsheet__picks"></span></div></div><div class="bsheet__item"><img class="bsheet__sq" src="/images/db/skill-mod-combos/augmented-range-skill-mod-combo-icon-division-resurgence-80.webp" srcset="/images/db/skill-mod-combos/augmented-range-skill-mod-combo-icon-division-resurgence-80.webp 80w, /images/db/skill-mod-combos/augmented-range-skill-mod-combo-icon-division-resurgence-160.webp 160w" sizes="56px" width="56" height="56" alt="" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/skill-mod-combos/augmented-range/">Augmented Range</a><span class="bsheet__sub">Oxidizing Swarm mods</span><span class="bsheet__picks"></span></div></div></div></div><div class="bsheet__group bsheet__group--wide"><p class="bsheet__label">Gear · 4pc Mechanical Expert + 2pc Jackpot</p><div class="bsheet__cols"><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/javelina-mask-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/javelina-mask-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/javelina-mask-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="Javelina Mask in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#javelina-mask">Javelina Mask</a><span class="bsheet__sub">Mask · T2</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/mechanical-expert-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/mechanical-expert-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/mechanical-expert-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Mechanical Expert</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/neptune-protection-gloves-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/neptune-protection-gloves-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/neptune-protection-gloves-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="&quot;Neptune&quot; Protection Gloves in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#neptune-protection-gloves">&quot;Neptune&quot; Protection Gloves</a><span class="bsheet__sub">Gloves · T2</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/mechanical-expert-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/mechanical-expert-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/mechanical-expert-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Mechanical Expert</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/jags-sidearm-mount-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/jags-sidearm-mount-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/jags-sidearm-mount-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="Jags Sidearm Mount in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#jags-sidearm-mount">Jags Sidearm Mount</a><span class="bsheet__sub">Holster · T2</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/jackpot-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/jackpot-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/jackpot-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Jackpot</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/patella-knee-cups-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/patella-knee-cups-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/patella-knee-cups-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="&quot;Patella&quot; Knee Cups in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#patella-knee-cups">&quot;Patella&quot; Knee Cups</a><span class="bsheet__sub">Knee pads · T2</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/mechanical-expert-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/mechanical-expert-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/mechanical-expert-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Mechanical Expert</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/ops-armor-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/ops-armor-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/ops-armor-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="Ops Armor in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#ops-armor">Ops Armor</a><span class="bsheet__sub">Body armor · T2</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/mechanical-expert-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/mechanical-expert-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/mechanical-expert-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Mechanical Expert</span><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/body-armor-talents/accelerated-charge-body-armor-talent-icon-division-resurgence-80.webp" srcset="/images/db/body-armor-talents/accelerated-charge-body-armor-talent-icon-division-resurgence-80.webp 80w, /images/db/body-armor-talents/accelerated-charge-body-armor-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Accelerated Charge</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/mountain-hiking-pack-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/mountain-hiking-pack-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/mountain-hiking-pack-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="Mountain Hiking Pack in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#mountain-hiking-pack">Mountain Hiking Pack</a><span class="bsheet__sub">Backpack · T2</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/jackpot-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/jackpot-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/jackpot-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Jackpot</span><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/backpack-talents/brainstorm-backpack-talent-icon-division-resurgence-80.webp" srcset="/images/db/backpack-talents/brainstorm-backpack-talent-icon-division-resurgence-80.webp 80w, /images/db/backpack-talents/brainstorm-backpack-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Brainstorm</span></span></div></div></div></div></div>
-
-**Attributes:** Signature Ability Charge Efficiency on every piece, plus Skill Duration or Skill Cooldown Recovery (Skill Radius on the holster). [Open it in the Build Planner](/builder/#s=Field+Medic&sc=Tactical+Pharma&n=Malpractice&ms=gs-12&m1=sace&m2=sdu&gs=gs-12&g1=sace&g2=scr&hs=gs-7&h1=sace&h2=sr&cs=gs-12&ct=ba-1&c1=sace&c2=scr&ps=gs-7&pt=bp-2&p1=sdu&p2=sace&ks=gs-12&k1=sace&k2=sdu&w1s=sw-60&w1tr=T2&w1t=wt-36&w1t2=wt-64&w1b1=scd&w1b2=scc&w2s=sw-40&w2tr=T2&w2t=wt-42&w2t2=wt-4&w2b1=sace&w2b2=scd&os=os-11&sm1=smc-75&sm2=smc-78&sm3=smc-80) to copy the whole loadout.
 
 ## How It Works
 

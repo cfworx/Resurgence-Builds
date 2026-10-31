@@ -36,14 +36,85 @@ faqs:
     answer: "Skill Multi-Shot Chance is a free damage multiplier on the drone because each multi-shot proc fires another shot from the drone at no resource cost. The build runs Skill Multi-Shot Chance on the backpack and knee pads because they are slots where you do not need crit chance or crit damage on both attribute lines. From our understanding, roughly 40% Skill Multi-Shot Chance is the sweet spot before you start trading away crit rolls for less return."
   - question: "Is Division Resurgence pay-to-win?"
     answer: "Every gear set used here drops in the field: Jackpot and Fire Cycle pieces come from the standard High-End loot pool. The premium Classified Ops track leans cosmetic, but Phoenix Credits also buy Sealed Caches: the OS Protocol Cache can drop Rampart, and the Offensive Operations Cache carries all three of this build's skill mod sets (Ubisoft publishes the odds; see our drop rates page). So you can pay to gamble for those pieces, or farm them. Welcome to the genre."
+loadout:
+  statsFrom: On paper
+  stats:
+  - value: "+28.8%"
+    label: Skill Crit Chance before gear rolls
+  - value: "+36%"
+    label: Skill Crit Damage from the sets
+  - value: "+30%"
+    label: Rampart damage at 6 stacks
+  weapons:
+  - role: Primary
+    name: Hunting M44
+    talents:
+    - Enhancement Trade
+    - Ammo Supply
+    attrs:
+    - Skill Multi-Shot Chance
+    - Skill Critical Damage
+  - role: Secondary
+    name: Mk16
+    talents:
+    - Torrential Downpour
+    - Rapid Charge
+    attrs:
+    - Skill Multi-Shot Chance
+    - Received Healing
+  os:
+    name: Rampart
+  mods:
+  - Thermite Charge
+  - Stabilized Flight
+  - Optimized Targeting
+  gear:
+  - slot: Mask
+    any: true
+    set: Jackpot
+    attrs:
+    - Skill Critical Chance
+    - Skill Critical Damage
+  - slot: Body Armor
+    options:
+    - Chatzatz Chest
+    - Athena Missile Vest
+    - Mechanized Infantry Armor
+    set: Jackpot
+    talent: Injured Concealment
+    attrs:
+    - Max Health
+    - Skill Critical Damage
+  - slot: Backpack
+    piece: Ziba Low Profile Pack
+    set: Jackpot
+    talent: Overwatch
+    attrs:
+    - Skill Critical Chance
+    - Skill Multi-Shot Chance
+  - slot: Gloves
+    piece: "\"Neptune\" Protection Gloves"
+    set: Fire Cycle
+    attrs:
+    - Skill Critical Chance
+    - Skill Critical Damage
+  - slot: Holster
+    piece: Jaivardhan Thigh Rig
+    set: Fire Cycle
+    attrs:
+    - Skill Critical Chance
+    - Skill Critical Damage
+  - slot: Knee Pads
+    any: true
+    set: Jackpot
+    attrs:
+    - Skill Critical Chance
+    - Skill Multi-Shot Chance
+  notes:
+  - label: Attributes
+    text: "Engineering cores. Skill Crit Chance + Skill Crit Damage, with Skill Multi-Shot Chance in place of Crit Damage on the backpack and knee pads, and Max Health in place of Crit Chance on the body armor. Both guns roll Skill Multi-Shot Chance."
 ---
 A Tech Operator who lets the Striker Drone do the killing. **Jackpot and Fire Cycle stack the crits, the drone mods make them explode, and Rampart pays you for holding still.**
-
-## The Build
-
-<div class="bsheet"><div class="bsheet__group"><p class="bsheet__label">Weapons</p><div class="bsheet__item"><img class="bsheet__tile bsheet__tile--wide" src="/images/db/weapon-icons/hunting-m44-weapon-icon-division-resurgence-165.webp" srcset="/images/db/weapon-icons/hunting-m44-weapon-icon-division-resurgence-165.webp 165w, /images/db/weapon-icons/hunting-m44-weapon-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 150px" width="150" height="71" alt="Hunting M44 marksman rifle in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/weapons/hunting-m44/">Hunting M44</a><span class="bsheet__sub">Primary · T2 Marksman Rifle</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/weapon-talents/enhancement-trade-weapon-talent-icon-division-resurgence-80.webp" srcset="/images/db/weapon-talents/enhancement-trade-weapon-talent-icon-division-resurgence-80.webp 80w, /images/db/weapon-talents/enhancement-trade-weapon-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Enhancement Trade</span><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/weapon-talents/ammo-supply-weapon-talent-icon-division-resurgence-80.webp" srcset="/images/db/weapon-talents/ammo-supply-weapon-talent-icon-division-resurgence-80.webp 80w, /images/db/weapon-talents/ammo-supply-weapon-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Ammo Supply</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile bsheet__tile--wide" src="/images/db/weapon-icons/mk16-weapon-icon-division-resurgence-165.webp" srcset="/images/db/weapon-icons/mk16-weapon-icon-division-resurgence-165.webp 165w, /images/db/weapon-icons/mk16-weapon-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 150px" width="150" height="71" alt="Mk16 assault rifle in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/weapons/mk16/">Mk16</a><span class="bsheet__sub">Secondary · T0 Assault Rifle</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/weapon-talents/torrential-downpour-weapon-talent-icon-division-resurgence-80.webp" srcset="/images/db/weapon-talents/torrential-downpour-weapon-talent-icon-division-resurgence-80.webp 80w, /images/db/weapon-talents/torrential-downpour-weapon-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Torrential Downpour</span><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/weapon-talents/rapid-charge-weapon-talent-icon-division-resurgence-80.webp" srcset="/images/db/weapon-talents/rapid-charge-weapon-talent-icon-division-resurgence-80.webp 80w, /images/db/weapon-talents/rapid-charge-weapon-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Rapid Charge</span></span></div></div></div><div class="bsheet__group"><p class="bsheet__label">OS Protocol and skill mods</p><div class="bsheet__grid2"><div class="bsheet__item"><img class="bsheet__sq" src="/images/db/os-protocols/rampart-os-protocol-talent-icon-division-resurgence-80.webp" srcset="/images/db/os-protocols/rampart-os-protocol-talent-icon-division-resurgence-80.webp 80w, /images/db/os-protocols/rampart-os-protocol-talent-icon-division-resurgence-104.webp 104w" sizes="56px" width="56" height="56" alt="Rampart OS Protocol icon" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/os-protocols/rampart/">Rampart</a><span class="bsheet__sub">OS Protocol · High‑End</span><span class="bsheet__picks"></span></div></div><div class="bsheet__item"><img class="bsheet__sq" src="/images/db/skill-mod-combos/thermite-charge-skill-mod-combo-icon-division-resurgence-80.webp" srcset="/images/db/skill-mod-combos/thermite-charge-skill-mod-combo-icon-division-resurgence-80.webp 80w, /images/db/skill-mod-combos/thermite-charge-skill-mod-combo-icon-division-resurgence-160.webp 160w" sizes="56px" width="56" height="56" alt="" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/skill-mod-combos/thermite-charge/">Thermite Charge</a><span class="bsheet__sub">Striker Drone mods</span><span class="bsheet__picks"></span></div></div><div class="bsheet__item"><img class="bsheet__sq" src="/images/db/skill-mod-combos/stabilized-flight-skill-mod-combo-icon-division-resurgence-80.webp" srcset="/images/db/skill-mod-combos/stabilized-flight-skill-mod-combo-icon-division-resurgence-80.webp 80w, /images/db/skill-mod-combos/stabilized-flight-skill-mod-combo-icon-division-resurgence-160.webp 160w" sizes="56px" width="56" height="56" alt="" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/skill-mod-combos/stabilized-flight/">Stabilized Flight</a><span class="bsheet__sub">Drone Lock mods</span><span class="bsheet__picks"></span></div></div><div class="bsheet__item"><img class="bsheet__sq" src="/images/db/skill-mod-combos/optimized-targeting-skill-mod-combo-icon-division-resurgence-80.webp" srcset="/images/db/skill-mod-combos/optimized-targeting-skill-mod-combo-icon-division-resurgence-80.webp 80w, /images/db/skill-mod-combos/optimized-targeting-skill-mod-combo-icon-division-resurgence-160.webp 160w" sizes="56px" width="56" height="56" alt="" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/skill-mod-combos/optimized-targeting/">Optimized Targeting</a><span class="bsheet__sub">Drone Overload mods</span><span class="bsheet__picks"></span></div></div></div></div><div class="bsheet__group bsheet__group--wide"><p class="bsheet__label">Gear · 4pc Jackpot + 2pc Fire Cycle</p><div class="bsheet__cols"><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/protective-tactical-mask-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/protective-tactical-mask-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/protective-tactical-mask-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="Protective Tactical Mask in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#protective-tactical-mask">Jackpot mask</a><span class="bsheet__sub">Mask · any tier</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/jackpot-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/jackpot-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/jackpot-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Jackpot</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/neptune-protection-gloves-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/neptune-protection-gloves-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/neptune-protection-gloves-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="&quot;Neptune&quot; Protection Gloves in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#neptune-protection-gloves">&quot;Neptune&quot; Protection Gloves</a><span class="bsheet__sub">Gloves · T2</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/fire-cycle-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/fire-cycle-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/fire-cycle-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Fire Cycle</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/jaivardhan-thigh-rig-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/jaivardhan-thigh-rig-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/jaivardhan-thigh-rig-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="Jaivardhan Thigh Rig in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#jaivardhan-thigh-rig">Jaivardhan Thigh Rig</a><span class="bsheet__sub">Holster · T2</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/fire-cycle-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/fire-cycle-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/fire-cycle-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Fire Cycle</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/urban-warfare-kneepads-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/urban-warfare-kneepads-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/urban-warfare-kneepads-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="Urban Warfare Kneepads in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#urban-warfare-kneepads">Jackpot knee pads</a><span class="bsheet__sub">Knee pads · any tier</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/jackpot-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/jackpot-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/jackpot-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Jackpot</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/chatzatz-chest-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/chatzatz-chest-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/chatzatz-chest-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="Chatzatz Chest in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#chatzatz-chest">Jackpot body armor</a><span class="bsheet__sub">Body armor · Chatzatz Chest (T2) or Athena Missile Vest (T1) or Mechanized Infantry Armor (T0)</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/jackpot-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/jackpot-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/jackpot-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Jackpot</span><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/body-armor-talents/injured-concealment-body-armor-talent-icon-division-resurgence-80.webp" srcset="/images/db/body-armor-talents/injured-concealment-body-armor-talent-icon-division-resurgence-80.webp 80w, /images/db/body-armor-talents/injured-concealment-body-armor-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Injured Concealment</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/ziba-low-profile-pack-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/ziba-low-profile-pack-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/ziba-low-profile-pack-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="Ziba Low Profile Pack in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#ziba-low-profile-pack">Ziba Low Profile Pack</a><span class="bsheet__sub">Backpack · T1</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/jackpot-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/jackpot-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/jackpot-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Jackpot</span><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/backpack-talents/overwatch-backpack-talent-icon-division-resurgence-80.webp" srcset="/images/db/backpack-talents/overwatch-backpack-talent-icon-division-resurgence-80.webp 80w, /images/db/backpack-talents/overwatch-backpack-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Overwatch</span></span></div></div></div></div></div>
-
-**Attributes:** Engineering cores. Skill Crit Chance + Skill Crit Damage, with Skill Multi-Shot Chance in place of Crit Damage on the backpack and knee pads, and Max Health in place of Crit Chance on the body armor. Both guns roll Skill Multi-Shot Chance. [Open it in the Build Planner](/builder/#s=Tech+Operator&sc=Offensive+Operations&n=Jackpot+Striker+Drone&ms=gs-7&m1=scc&m2=scd&gs=gs-11&g1=scc&g2=scd&hs=gs-11&h1=scc&h2=scd&cs=gs-7&ct=ba-14&c1=mhp&c2=scd&ps=gs-7&pt=bp-17&p1=scc&p2=sms&ks=gs-7&k1=scc&k2=sms&w1s=sw-29&w1tr=T2&w1t=wt-17&w1t2=wt-3&w1b1=sms&w1b2=scd&w2s=sw-33&w2t=wt-66&w2t2=wt-42&w2b1=sms&w2b2=rh&os=os-6&sm1=smc-20&sm2=smc-23&sm3=smc-26) to copy the whole loadout.
 
 ## How It Works
 

@@ -34,16 +34,81 @@ faqs:
     answer: "Yes. Pour one out. Community reports put the change on EU servers around May 7-8, 2026, and the official Season 1 Phase 2 notes (May 12) list a fix for Brains Over Brawn 'scaling wrong stats.' Community numbers had pre-nerf Aegis builds hitting around 580k per burst, with post-nerf output closer to 100k-250k. BoB still works and is still the best option for this build, just not the broken version. This build was put together after that nerf, but before Season 1 Phase 3 (June 24) fixed Aegis Burst dealing more damage than intended, so expect lower burst numbers than ours."
   - question: "Is Division Resurgence pay-to-win?"
     answer: "No. Every piece in this build drops from gameplay. The Warlord comes from the DZ vendor. Brains Over Brawn comes from weekly bounties. All gear sets are standard loot pool drops. The only thing money cannot buy is the talent roll grind and the game sense to not stand in the open with Glass Cannon active."
+loadout:
+  statsFrom: "LtFoe's sheet"
+  stats:
+  - value: 727.82k
+    label: DPS
+  - value: "66.27%"
+    label: Skill Crit Chance
+  - value: "155.50%"
+    label: Skill Crit Damage
+  weapons:
+  - role: Primary
+    name: Enhanced ACR-E
+    tier: T2
+    talents:
+    - In Sync
+    - Fully Charged
+  - role: Secondary
+    name: Warlord
+    exotic: true
+    attrs:
+    - Skill Multi-Shot Chance
+    - Skill Critical Damage
+  os:
+    name: Brains Over Brawn
+    note: "Level 50, 5/5"
+  mods:
+  - Hazardous Area
+  - Combat Enhancer
+  - Teamfight
+  gear:
+  - slot: Mask
+    piece: Timeless Guardian Mask
+    set: Jackpot
+    attrs:
+    - Skill Critical Chance
+    - Skill Multi-Shot Chance
+  - slot: Body Armor
+    piece: Chatzatz Chest
+    set: Jackpot
+    talent: Glass Cannon
+    attrs:
+    - Skill Multi-Shot Chance
+    - Skill Cooldown Recovery
+  - slot: Backpack
+    piece: "\"Horo\" CarryBack"
+    set: Boom-Shakalaka
+    talent: Prime Engineer
+    attrs:
+    - Skill Radius
+    - Skill Multi-Shot Chance
+  - slot: Gloves
+    piece: "\"Neptune\" Protection Gloves"
+    set: Boom-Shakalaka
+    attrs:
+    - Skill Critical Chance
+    - Skill Critical Damage
+  - slot: Holster
+    piece: "\"Morar\" Holster System"
+    set: Jackpot
+    attrs:
+    - Skill Multi-Shot Chance
+    - Skill Critical Chance
+  - slot: Knee Pads
+    piece: Sundown Knee Guards
+    set: Jackpot
+    attrs:
+    - Skill Critical Damage
+    - Damage Reduction
+  notes:
+  - label: Attributes
+    text: "Skill Crit Chance, Skill Crit Damage and Skill Multi-Shot Chance on almost every roll. As we understand it, the Aegis burst scales off those, not Skill Intensity."
 ---
 LtFoe's Double Agent is two Tech Operator builds sharing one loadout. **Jackpot and Brains Over Brawn make every skill hit crit, Engineering buffs make the crits hurt, and swapping the chest and backpack turns the glass cannon into a brick.**
 
 Build by **LtFoe** (Clan TruthAbove), sent to our Discord as 30+ in-game screenshots in June 2026, on Patch 1.1.2.2.
-
-## The Build
-
-<div class="bsheet"><div class="bsheet__group"><p class="bsheet__label">Weapons</p><div class="bsheet__item"><img class="bsheet__tile bsheet__tile--wide" src="/images/db/weapon-icons/enhanced-acr-e-weapon-icon-division-resurgence-165.webp" srcset="/images/db/weapon-icons/enhanced-acr-e-weapon-icon-division-resurgence-165.webp 165w, /images/db/weapon-icons/enhanced-acr-e-weapon-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 150px" width="150" height="71" alt="Enhanced ACR-E assault rifle in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/weapons/enhanced-acr-e/">Enhanced ACR-E</a><span class="bsheet__sub">Primary · T2 Assault Rifle</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/weapon-talents/in-sync-weapon-talent-icon-division-resurgence-80.webp" srcset="/images/db/weapon-talents/in-sync-weapon-talent-icon-division-resurgence-80.webp 80w, /images/db/weapon-talents/in-sync-weapon-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">In Sync</span><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/weapon-talents/fully-charged-weapon-talent-icon-division-resurgence-80.webp" srcset="/images/db/weapon-talents/fully-charged-weapon-talent-icon-division-resurgence-80.webp 80w, /images/db/weapon-talents/fully-charged-weapon-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Fully Charged</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile bsheet__tile--wide" src="/images/db/exotic-weapons/warlord-exotic-weapon-division-resurgence-v2-290.webp" srcset="/images/db/exotic-weapons/warlord-exotic-weapon-division-resurgence-v2-290.webp 290w, /images/db/exotic-weapons/warlord-exotic-weapon-division-resurgence-v2-558.webp 558w" sizes="(max-width: 520px) 110px, 150px" width="150" height="84" alt="Warlord exotic assault rifle in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/exotic-weapons/warlord/">Warlord</a><span class="bsheet__sub">Secondary · Exotic Assault Rifle</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/weapon-talents/play-rough-weapon-talent-icon-division-resurgence-80.webp" srcset="/images/db/weapon-talents/play-rough-weapon-talent-icon-division-resurgence-80.webp 80w, /images/db/weapon-talents/play-rough-weapon-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Play Rough</span></span></div></div></div><div class="bsheet__group"><p class="bsheet__label">OS Protocol and skill mods</p><div class="bsheet__grid2"><div class="bsheet__item"><img class="bsheet__sq" src="/images/db/os-protocols/brains-over-brawn-os-protocol-talent-icon-division-resurgence-80.webp" srcset="/images/db/os-protocols/brains-over-brawn-os-protocol-talent-icon-division-resurgence-80.webp 80w, /images/db/os-protocols/brains-over-brawn-os-protocol-talent-icon-division-resurgence-104.webp 104w" sizes="56px" width="56" height="56" alt="Brains Over Brawn OS Protocol icon" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/os-protocols/brains-over-brawn/">Brains Over Brawn</a><span class="bsheet__sub">OS Protocol · Specialized · Level 50, 5/5</span><span class="bsheet__picks"></span></div></div><div class="bsheet__item"><img class="bsheet__sq" src="/images/db/skill-mod-combos/hazardous-area-skill-mod-combo-icon-division-resurgence-80.webp" srcset="/images/db/skill-mod-combos/hazardous-area-skill-mod-combo-icon-division-resurgence-80.webp 80w, /images/db/skill-mod-combos/hazardous-area-skill-mod-combo-icon-division-resurgence-160.webp 160w" sizes="56px" width="56" height="56" alt="" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/skill-mod-combos/hazardous-area/">Hazardous Area</a><span class="bsheet__sub">Defender Drone mods</span><span class="bsheet__picks"></span></div></div><div class="bsheet__item"><img class="bsheet__sq" src="/images/db/skill-mod-combos/combat-enhancer-skill-mod-combo-icon-division-resurgence-80.webp" srcset="/images/db/skill-mod-combos/combat-enhancer-skill-mod-combo-icon-division-resurgence-80.webp 80w, /images/db/skill-mod-combos/combat-enhancer-skill-mod-combo-icon-division-resurgence-160.webp 160w" sizes="56px" width="56" height="56" alt="" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/skill-mod-combos/combat-enhancer/">Combat Enhancer</a><span class="bsheet__sub">Mender Drone mods</span><span class="bsheet__picks"></span></div></div><div class="bsheet__item"><img class="bsheet__sq" src="/images/db/skill-mod-combos/teamfight-skill-mod-combo-icon-division-resurgence-80.webp" srcset="/images/db/skill-mod-combos/teamfight-skill-mod-combo-icon-division-resurgence-80.webp 80w, /images/db/skill-mod-combos/teamfight-skill-mod-combo-icon-division-resurgence-160.webp 160w" sizes="56px" width="56" height="56" alt="" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/skill-mod-combos/teamfight/">Teamfight</a><span class="bsheet__sub">First-Aid Firefly mods</span><span class="bsheet__picks"></span></div></div></div></div><div class="bsheet__group bsheet__group--wide"><p class="bsheet__label">Gear · 4pc Jackpot + 2pc Boom-Shakalaka</p><div class="bsheet__cols"><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/timeless-guardian-mask-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/timeless-guardian-mask-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/timeless-guardian-mask-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="Timeless Guardian Mask in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#timeless-guardian-mask">Timeless Guardian Mask</a><span class="bsheet__sub">Mask · T1</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/jackpot-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/jackpot-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/jackpot-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Jackpot</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/neptune-protection-gloves-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/neptune-protection-gloves-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/neptune-protection-gloves-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="&quot;Neptune&quot; Protection Gloves in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#neptune-protection-gloves">&quot;Neptune&quot; Protection Gloves</a><span class="bsheet__sub">Gloves · T2</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/boom-shakalaka-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/boom-shakalaka-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/boom-shakalaka-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Boom-Shakalaka</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/morar-holster-system-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/morar-holster-system-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/morar-holster-system-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="&quot;Morar&quot; Holster System in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#morar-holster-system">&quot;Morar&quot; Holster System</a><span class="bsheet__sub">Holster · T1</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/jackpot-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/jackpot-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/jackpot-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Jackpot</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/sundown-knee-guards-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/sundown-knee-guards-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/sundown-knee-guards-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="Sundown Knee Guards in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#sundown-knee-guards">Sundown Knee Guards</a><span class="bsheet__sub">Knee pads · T1</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/jackpot-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/jackpot-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/jackpot-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Jackpot</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/chatzatz-chest-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/chatzatz-chest-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/chatzatz-chest-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="Chatzatz Chest in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#chatzatz-chest">Chatzatz Chest</a><span class="bsheet__sub">Body armor · T2</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/jackpot-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/jackpot-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/jackpot-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Jackpot</span><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/body-armor-talents/glass-cannon-body-armor-talent-icon-division-resurgence-80.webp" srcset="/images/db/body-armor-talents/glass-cannon-body-armor-talent-icon-division-resurgence-80.webp 80w, /images/db/body-armor-talents/glass-cannon-body-armor-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Glass Cannon</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/horo-carryback-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/horo-carryback-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/horo-carryback-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="&quot;Horo&quot; CarryBack in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#horo-carryback">&quot;Horo&quot; CarryBack</a><span class="bsheet__sub">Backpack · T1</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/boom-shakalaka-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/boom-shakalaka-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/boom-shakalaka-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Boom-Shakalaka</span><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/backpack-talents/prime-engineer-backpack-talent-icon-division-resurgence-80.webp" srcset="/images/db/backpack-talents/prime-engineer-backpack-talent-icon-division-resurgence-80.webp 80w, /images/db/backpack-talents/prime-engineer-backpack-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Prime Engineer</span></span></div></div></div></div></div>
-
-**Attributes:** Skill Crit Chance, Skill Crit Damage and Skill Multi-Shot Chance on almost every roll. As we understand it, the Aegis burst scales off those, not Skill Intensity. [Open it in the Build Planner](/builder/#s=Tech+Operator&sc=Aegis+Operations&n=The+Double+Agent&ms=gs-7&m1=scc&m1v=3.45&m2=sms&m2v=4.52&gs=gs-10&g1=scc&g1v=5.52&g2=scd&g2v=9.25&hs=gs-7&h1=sms&h1v=4.8&h2=scc&h2v=5.72&cs=gs-7&ct=ba-12&c1=sms&c1v=2.27&c2=scr&c2v=-4.07&ps=gs-10&pt=bp-19&p1=sr&p1v=9.87&p2=sms&p2v=3.54&ks=gs-7&k1=scd&k1v=9.34&k2=dr&k2v=3.58&w1s=sw-38&w1tr=T2&w1t=wt-22&w1t2=wt-20&w2e=ew-2&w2b1=sms&w2b1v=5.84&w2b2=scd&w2b2v=18.54&os=os-20&sm1=smc-29&sm2=smc-32&sm3=smc-35) to copy the whole loadout.
 
 ## How It Works
 

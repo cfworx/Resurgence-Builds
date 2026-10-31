@@ -36,16 +36,86 @@ faqs:
     answer: "Most of the gear sub-attributes roll one of those two stats (Tampishach's mask, body armor, backpack and holster each carry one other stat), plus +21.60% Skill Crit Chance from a Level 50 Brains Over Brawn, plus the Skill Crit Damage roll on the Copperhead. Since Season 2 Phase 1, gear mods can roll both stats too. Stack them everywhere they appear."
   - question: "Is Division Resurgence pay-to-win?"
     answer: "Resurgence is free-to-play, and its premium currency, Phoenix Credits, buys Sealed Caches (SHD Keys can open them too). Ubisoft's published drop rates show the Aegis Operations Cache can drop all three of this build's skill mod sets, and the OS Protocol Cache can drop Brains Over Brawn. The same pieces also come from play: Tampishach points to weekly bounties for maxing the protocol, and since Season 2 Phase 2 Dark Zone daily quests reward Skill Mods. Spending can speed up the grind, but it cannot buy positioning, game sense, or the knowledge to stack the right talents. Your dad reflexes are still the bottleneck."
+loadout:
+  statsFrom: "Tampishach's sheet"
+  stats:
+  - value: 237.52k
+    label: DPS
+  - value: "53%"
+    label: Skill Crit Chance
+  - value: "113%"
+    label: Skill Crit Damage
+  weapons:
+  - role: Primary
+    name: Copperhead
+    note: Level 40
+    talents:
+    - In Sync
+    - Swift Taunt
+    attrs:
+    - Skill Critical Damage
+    - Armor
+  - role: Secondary
+    name: MPX
+    note: Level 50
+    talents:
+    - Torrential Downpour
+    - Rapid Charge
+    attrs:
+    - Skill Multi-Shot Chance
+  os:
+    name: Brains Over Brawn
+    note: "Level 50, 5/5"
+  mods:
+  - Hazardous Area
+  - Combat Enhancer
+  - Teamfight
+  gear:
+  - slot: Mask
+    piece: Rapid Deployment Mask
+    set: Jackpot
+    attrs:
+    - Signature Ability Charge Efficiency
+    - Skill Critical Damage
+  - slot: Body Armor
+    piece: Mechanized Infantry Armor
+    set: Long-term Effect
+    talent: Injured Concealment
+    attrs:
+    - Skill Radius
+    - Skill Critical Damage
+  - slot: Backpack
+    piece: Mountain Hiking Pack
+    set: Long-term Effect
+    note: his placeholder
+    attrs:
+    - Damage Reduction
+    - Skill Critical Chance
+  - slot: Gloves
+    any: true
+    set: Long-term Effect
+    attrs:
+    - Skill Critical Chance
+    - Skill Critical Damage
+  - slot: Holster
+    piece: Jags Sidearm Mount
+    set: Jackpot
+    attrs:
+    - Damage Reduction
+    - Skill Critical Damage
+  - slot: Knee Pads
+    piece: Sundown Knee Guards
+    set: Long-term Effect
+    attrs:
+    - Skill Critical Chance
+    - Skill Critical Damage
+  notes:
+  - label: Attributes
+    text: "Firepower cores, then Skill Crit Chance and Skill Crit Damage on almost every roll (his mask, body armor, backpack and holster each carry one other stat). Engineering on every gear module and weapon mod: *\"Try to get as much engineering as you can.\"*"
 ---
 Tampishach's Tech Aegis lets the drones do the killing. **Long-term Effect piles on Engineering, Brains Over Brawn turns a slice of it into damage on every hit, and Skill Crit does the rest.**
 
 Build by **Tampishach** (PowerfulJRE Clips), filmed in late April 2026, on Patch 1.1.1.
-
-## The Build
-
-<div class="bsheet"><div class="bsheet__group"><p class="bsheet__label">Weapons</p><div class="bsheet__item"><img class="bsheet__tile bsheet__tile--wide" src="/images/db/weapon-icons/copperhead-weapon-icon-division-resurgence-165.webp" srcset="/images/db/weapon-icons/copperhead-weapon-icon-division-resurgence-165.webp 165w, /images/db/weapon-icons/copperhead-weapon-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 150px" width="150" height="71" alt="Copperhead smg in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/weapons/copperhead/">Copperhead</a><span class="bsheet__sub">Primary · T1 SMG · Level 40</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/weapon-talents/in-sync-weapon-talent-icon-division-resurgence-80.webp" srcset="/images/db/weapon-talents/in-sync-weapon-talent-icon-division-resurgence-80.webp 80w, /images/db/weapon-talents/in-sync-weapon-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">In Sync</span><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/weapon-talents/swift-taunt-weapon-talent-icon-division-resurgence-80.webp" srcset="/images/db/weapon-talents/swift-taunt-weapon-talent-icon-division-resurgence-80.webp 80w, /images/db/weapon-talents/swift-taunt-weapon-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Swift Taunt</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile bsheet__tile--wide" src="/images/db/weapon-icons/mpx-weapon-icon-division-resurgence-165.webp" srcset="/images/db/weapon-icons/mpx-weapon-icon-division-resurgence-165.webp 165w, /images/db/weapon-icons/mpx-weapon-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 150px" width="150" height="71" alt="MPX smg in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/weapons/mpx/">MPX</a><span class="bsheet__sub">Secondary · T0 SMG · Level 50</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/weapon-talents/torrential-downpour-weapon-talent-icon-division-resurgence-80.webp" srcset="/images/db/weapon-talents/torrential-downpour-weapon-talent-icon-division-resurgence-80.webp 80w, /images/db/weapon-talents/torrential-downpour-weapon-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Torrential Downpour</span><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/weapon-talents/rapid-charge-weapon-talent-icon-division-resurgence-80.webp" srcset="/images/db/weapon-talents/rapid-charge-weapon-talent-icon-division-resurgence-80.webp 80w, /images/db/weapon-talents/rapid-charge-weapon-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Rapid Charge</span></span></div></div></div><div class="bsheet__group"><p class="bsheet__label">OS Protocol and skill mods</p><div class="bsheet__grid2"><div class="bsheet__item"><img class="bsheet__sq" src="/images/db/os-protocols/brains-over-brawn-os-protocol-talent-icon-division-resurgence-80.webp" srcset="/images/db/os-protocols/brains-over-brawn-os-protocol-talent-icon-division-resurgence-80.webp 80w, /images/db/os-protocols/brains-over-brawn-os-protocol-talent-icon-division-resurgence-104.webp 104w" sizes="56px" width="56" height="56" alt="Brains Over Brawn OS Protocol icon" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/os-protocols/brains-over-brawn/">Brains Over Brawn</a><span class="bsheet__sub">OS Protocol · Specialized · Level 50, 5/5</span><span class="bsheet__picks"></span></div></div><div class="bsheet__item"><img class="bsheet__sq" src="/images/db/skill-mod-combos/hazardous-area-skill-mod-combo-icon-division-resurgence-80.webp" srcset="/images/db/skill-mod-combos/hazardous-area-skill-mod-combo-icon-division-resurgence-80.webp 80w, /images/db/skill-mod-combos/hazardous-area-skill-mod-combo-icon-division-resurgence-160.webp 160w" sizes="56px" width="56" height="56" alt="" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/skill-mod-combos/hazardous-area/">Hazardous Area</a><span class="bsheet__sub">Defender Drone mods</span><span class="bsheet__picks"></span></div></div><div class="bsheet__item"><img class="bsheet__sq" src="/images/db/skill-mod-combos/combat-enhancer-skill-mod-combo-icon-division-resurgence-80.webp" srcset="/images/db/skill-mod-combos/combat-enhancer-skill-mod-combo-icon-division-resurgence-80.webp 80w, /images/db/skill-mod-combos/combat-enhancer-skill-mod-combo-icon-division-resurgence-160.webp 160w" sizes="56px" width="56" height="56" alt="" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/skill-mod-combos/combat-enhancer/">Combat Enhancer</a><span class="bsheet__sub">Mender Drone mods</span><span class="bsheet__picks"></span></div></div><div class="bsheet__item"><img class="bsheet__sq" src="/images/db/skill-mod-combos/teamfight-skill-mod-combo-icon-division-resurgence-80.webp" srcset="/images/db/skill-mod-combos/teamfight-skill-mod-combo-icon-division-resurgence-80.webp 80w, /images/db/skill-mod-combos/teamfight-skill-mod-combo-icon-division-resurgence-160.webp 160w" sizes="56px" width="56" height="56" alt="" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/skill-mod-combos/teamfight/">Teamfight</a><span class="bsheet__sub">First-Aid Firefly mods</span><span class="bsheet__picks"></span></div></div></div></div><div class="bsheet__group bsheet__group--wide"><p class="bsheet__label">Gear · 4pc Long-term Effect + 2pc Jackpot</p><div class="bsheet__cols"><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/rapid-deployment-mask-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/rapid-deployment-mask-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/rapid-deployment-mask-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="Rapid Deployment Mask in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#rapid-deployment-mask">Rapid Deployment Mask</a><span class="bsheet__sub">Mask · T0</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/jackpot-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/jackpot-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/jackpot-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Jackpot</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/kote-hand-guards-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/kote-hand-guards-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/kote-hand-guards-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="&quot;Kote&quot; Hand Guards in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#kote-hand-guards">Long-term Effect gloves</a><span class="bsheet__sub">Gloves · any tier</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/long-term-effect-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/long-term-effect-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/long-term-effect-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Long-term Effect</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/jags-sidearm-mount-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/jags-sidearm-mount-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/jags-sidearm-mount-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="Jags Sidearm Mount in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#jags-sidearm-mount">Jags Sidearm Mount</a><span class="bsheet__sub">Holster · T2</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/jackpot-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/jackpot-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/jackpot-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Jackpot</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/sundown-knee-guards-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/sundown-knee-guards-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/sundown-knee-guards-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="Sundown Knee Guards in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#sundown-knee-guards">Sundown Knee Guards</a><span class="bsheet__sub">Knee pads · T1</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/long-term-effect-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/long-term-effect-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/long-term-effect-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Long-term Effect</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/mechanized-infantry-armor-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/mechanized-infantry-armor-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/mechanized-infantry-armor-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="Mechanized Infantry Armor in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#mechanized-infantry-armor">Mechanized Infantry Armor</a><span class="bsheet__sub">Body armor · T0</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/long-term-effect-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/long-term-effect-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/long-term-effect-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Long-term Effect</span><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/body-armor-talents/injured-concealment-body-armor-talent-icon-division-resurgence-80.webp" srcset="/images/db/body-armor-talents/injured-concealment-body-armor-talent-icon-division-resurgence-80.webp 80w, /images/db/body-armor-talents/injured-concealment-body-armor-talent-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Injured Concealment</span></span></div></div><div class="bsheet__item"><img class="bsheet__tile" src="/images/db/gear-icons/mountain-hiking-pack-gear-icon-division-resurgence-165.webp" srcset="/images/db/gear-icons/mountain-hiking-pack-gear-icon-division-resurgence-165.webp 165w, /images/db/gear-icons/mountain-hiking-pack-gear-icon-division-resurgence-330.webp 330w" sizes="(max-width: 520px) 110px, 130px" width="130" height="61" alt="Mountain Hiking Pack in The Division Resurgence" loading="lazy" decoding="async"><div class="bsheet__text"><a class="bsheet__name" href="/database/gear/#mountain-hiking-pack">Mountain Hiking Pack</a><span class="bsheet__sub">Backpack · T2 · his placeholder</span><span class="bsheet__picks"><span class="bsheet__pick"><img class="bsheet__chipicon" src="/images/db/gear-set-effects/long-term-effect-gear-set-icon-division-resurgence-80.webp" srcset="/images/db/gear-set-effects/long-term-effect-gear-set-icon-division-resurgence-80.webp 80w, /images/db/gear-set-effects/long-term-effect-gear-set-icon-division-resurgence-160.webp 160w" sizes="28px" width="28" height="28" alt="" loading="lazy" decoding="async">Long-term Effect</span></span></div></div></div></div></div>
-
-**Attributes:** Firepower cores, then Skill Crit Chance and Skill Crit Damage on almost every roll (his mask, body armor, backpack and holster each carry one other stat). Engineering on every gear module and weapon mod: *"Try to get as much engineering as you can."* [Open it in the Build Planner](/builder/#s=Tech+Operator&sc=Aegis+Operations&n=Tech+Aegis+237k&ms=gs-7&m1=sace&m1v=9.78&m2=scd&m2v=7.63&gs=gs-8&g1=scc&g2=scd&hs=gs-7&h1=dr&h1v=3.64&h2=scd&h2v=8.62&cs=gs-8&ct=ba-14&c1=sr&c1v=4.61&c2=scd&c2v=7.84&ps=gs-8&pt=bp-19&p1=dr&p1v=3.1&p2=scc&p2v=5.67&ks=gs-8&k1=scc&k1v=5.99&k2=scd&w1s=sw-48&w1tr=T1&w1t=wt-22&w1t2=wt-60&w1b1=scd&w1b1v=19.55&w1b2=arm&w1b2v=19.94&w2s=sw-44&w2tr=T0&w2t=wt-66&w2t2=wt-42&w2b1=sms&w2b1v=8.09&os=os-20&sm1=smc-29&sm2=smc-32&sm3=smc-35) to copy the whole loadout.
 
 ## How It Works
 

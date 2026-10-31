@@ -43,6 +43,8 @@ const wordCount = build.body ? build.body.replace(/<[^>]+>/g, ' ').trim().split(
   videoDuration={build.data.videoDuration}
   howTo={build.data.howTo}
   wordCount={wordCount}
+  subclass={build.data.subclass}
+  loadout={build.data.loadout}
 >
   <Content />
 </BuildLayout>

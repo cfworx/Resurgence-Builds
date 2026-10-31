@@ -5,8 +5,11 @@
 // src/data/gear-sources.json, copied from research/build-database/). For every post in src/content it checks:
 //   - the Build Planner link (plannerHash): each weapon's talents are in that weapon's pool, and each body armor or
 //     backpack talent rolls on a piece of the set chosen for that slot;
-//   - the build sheet in the body: each weapon's talent chips are in its pool, and each gear piece carries the set and
-//     talent chips shown with it.
+//   - the loadout panel (`loadout` front matter): every weapon talent is in its weapon's pool, every gear piece carries
+//     its set and talent (an "any tier" slot needs at least one piece that does), every name exists, and the loadout
+//     matches the planner link (same weapons, same set in every slot, no different chest or backpack talent);
+//   - build sheets and "these roll it too" swap lists in the body: each weapon's talent chips are in its pool, and each
+//     gear piece carries the set and talent chips shown with it.
 // A weapon whose recalibration pulled from the wrong pool before the Season 2 Phase 1 fix (recalibration-fixes.json)
 // may show an older out-of-pool roll, but only if the post says so ("older roll"/"recalibrat"): that is a warning, not
 // an error.
@@ -14,6 +17,7 @@
 // Usage: node scripts/check-rolls.mjs        (exit 1 on any error; runs in `npm run build`)
 import { readFileSync, readdirSync, statSync } from 'node:fs';
 import { join, relative } from 'node:path';
+import yaml from 'js-yaml';
 
 const root = new URL('..', import.meta.url).pathname;
 const data = (f) => JSON.parse(readFileSync(join(root, 'src/data', f), 'utf8'));
@@ -192,6 +196,74 @@ function checkSheet(file, body) {
   }
 }
 
+const OS_NAMES = new Set(list(data('os-protocols.json')).map((o) => o.name.toLowerCase()));
+const MOD_NAMES = new Set(list(data('skill-mod-combos.json')).map((m) => m.name.toLowerCase()));
+const EXOTIC_NAMES = new Set([...EW.values()].map((w) => w.name.toLowerCase()));
+const pieceByName = new Map(Object.entries(gear.pieces).map(([slug, p]) => [p.name.toLowerCase(), slug]));
+const SLOT_KEY = { Mask: 'm', Gloves: 'g', Holster: 'h', 'Body Armor': 'c', Backpack: 'p', 'Knee Pads': 'k' };
+
+function checkLoadout(file, lo, hash, text) {
+  const where = `${file} loadout`;
+  const p = hash ? new URLSearchParams(hash) : null;
+  lo.weapons.forEach((w, i) => {
+    const n = i + 1;
+    if (w.exotic) {
+      if (!EXOTIC_NAMES.has(w.name.toLowerCase())) errors.push(`${where}: no exotic named "${w.name}"`);
+    } else {
+      const slug = slugify(w.name);
+      if (!pool.has(slug)) { errors.push(`${where}: no standard weapon named "${w.name}"`); return; }
+      const ts = (w.talents || []).map((t) => {
+        const s = weaponTalentByName.get(t.toLowerCase());
+        if (!s) errors.push(`${where}: no weapon talent named "${t}"`);
+        return s;
+      }).filter(Boolean);
+      checkWeapon(where, slug, w.name, ts, text);
+    }
+    if (p) {
+      const id = p.get(`w${n}s`) || p.get(`w${n}e`);
+      const hw = SW.get(id) || EW.get(id);
+      if (!hw || hw.name.toLowerCase() !== w.name.toLowerCase()) errors.push(`${where}: weapon ${n} is ${w.name}, the planner link has ${hw ? hw.name : 'none'}`);
+    }
+  });
+  if (lo.os && !OS_NAMES.has(lo.os.name.toLowerCase())) errors.push(`${where}: no OS Protocol named "${lo.os.name}"`);
+  for (const m of lo.mods || []) if (!MOD_NAMES.has(m.toLowerCase())) errors.push(`${where}: no skill mod combo named "${m}"`);
+  for (const g of lo.gear) {
+    const w = `${where} ${g.slot}`;
+    const setSlug = setNames.get(g.set.toLowerCase());
+    if (!setSlug) { errors.push(`${w}: no gear set named "${g.set}"`); continue; }
+    const isBody = g.slot === 'Body Armor';
+    const isPack = g.slot === 'Backpack';
+    let talSlug = null;
+    if (g.talent) {
+      if (!isBody && !isPack) { errors.push(`${w}: only body armor and backpacks have talents`); continue; }
+      talSlug = (isBody ? baNames : bpNames).get(g.talent.toLowerCase());
+      if (!talSlug) { errors.push(`${w}: no ${isBody ? 'body armor' : 'backpack'} talent named "${g.talent}"`); continue; }
+    }
+    const rollers = talSlug ? piecesOf(isBody ? gear.bodyArmorTalents : gear.backpackTalents, talSlug) : null;
+    const carriesSet = piecesOf(gear.sets, setSlug);
+    const named = [g.piece, ...(g.options || [])].filter(Boolean);
+    if (g.any || !named.length) {
+      const ok = Object.keys(gear.pieces).some((s) => gear.pieces[s].slot === g.slot && carriesSet.has(s) && (!rollers || rollers.has(s)));
+      if (!ok) errors.push(`${w}: no ${g.set} ${g.slot.toLowerCase()} ${g.talent ? `rolls ${g.talent}` : 'exists'}`);
+    }
+    for (const name of named) {
+      const s = pieceByName.get(name.toLowerCase());
+      if (!s) { errors.push(`${w}: no gear piece named "${name}"`); continue; }
+      if (gear.pieces[s].slot !== g.slot) errors.push(`${w}: ${name} is ${gear.pieces[s].slot}, not ${g.slot}`);
+      if (!carriesSet.has(s)) errors.push(`${w}: ${name} doesn't carry ${g.set}`);
+      if (rollers && !rollers.has(s)) errors.push(`${w}: ${name} can't roll ${g.talent}`);
+    }
+    if (p) {
+      const k = SLOT_KEY[g.slot];
+      const hs = GS.get(p.get(`${k}s`));
+      if (!hs || hs.name.toLowerCase() !== g.set.toLowerCase()) errors.push(`${w}: set ${g.set}, the planner link has ${hs ? hs.name : 'none'}`);
+      const ht = p.get(`${k}t`) ? (isBody ? BA : BP).get(p.get(`${k}t`)) : null;
+      if (ht && g.talent && ht.name.toLowerCase() !== g.talent.toLowerCase()) errors.push(`${w}: talent ${g.talent}, the planner link has ${ht.name}`);
+      else if (ht && !g.talent) warnings.push(`${w}: the planner link suggests ${ht.name}; the loadout shows no talent`);
+    }
+  }
+}
+
 function walk(dir) {
   return readdirSync(dir).flatMap((f) => {
     const p = join(dir, f);
@@ -201,16 +273,20 @@ function walk(dir) {
 
 let posts = 0;
 let hashes = 0;
+let loadouts = 0;
 for (const path of walk(join(root, 'src/content'))) {
   const text = readFileSync(path, 'utf8');
   const file = relative(root, path);
   posts++;
-  const h = text.match(/^plannerHash:\s*"([^"]+)"/m);
-  if (h) { hashes++; checkPlanner(file, h[1], text); }
+  const fmText = text.startsWith('---') ? text.split('---')[1] : '';
+  let fm = {};
+  try { fm = yaml.load(fmText) || {}; } catch (e) { errors.push(`${file}: front matter doesn't parse (${e.message.split('\n')[0]})`); }
+  if (fm.plannerHash) { hashes++; checkPlanner(file, fm.plannerHash, text); }
+  if (fm.loadout) { loadouts++; checkLoadout(file, fm.loadout, fm.plannerHash, text); }
   if (text.includes('bsheet__item')) checkSheet(file, text);
 }
 
 for (const w of warnings) console.log('  warn  ' + w);
 for (const e of errors) console.log('  ERROR ' + e);
-console.log(`Roll check: ${posts} posts, ${hashes} planner links. ${errors.length} errors, ${warnings.length} warnings.`);
+console.log(`Roll check: ${posts} posts, ${loadouts} loadouts, ${hashes} planner links. ${errors.length} errors, ${warnings.length} warnings.`);
 process.exit(errors.length ? 1 : 0);
