@@ -6,8 +6,8 @@ shareTitle: "Round two, Joe?"
 shareText: "Angry Joe gave The Division Resurgence 30 minutes at level 10 and called it mobile game crap. Here's what the other 30 levels look like."
 tags: ["News", "Angry Joe", "Community", "PC", "Free-to-Play"]
 description: "Angry Joe called The Division Resurgence mobile game crap after 30 minutes at level 10. What he got right, what he missed, and why we want a round two."
-featuredImage: "/images/news/division-resurgence-angry-joe-response-penn-station-1200.webp"
-imageAlt: "An agent in a red jacket, bucket hat and red goggles holds a rifle and faces the camera outside Penn Station on a snowy night in The Division Resurgence, under the title Mobile Game Crap? Our response to Angry Joe"
+featuredImage: "/images/news/division-resurgence-angry-joe-response-penn-station-billboard-1200.webp"
+imageAlt: "An agent in a red jacket, bucket hat and red goggles holds a rifle and faces the camera outside Penn Station on a snowy night in The Division Resurgence, while the billboard behind him shows the thumbnail of Angry Joe's Mobile Game Crap video, under the title Mobile Game Crap? Our response to Angry Joe"
 faqs:
   - question: "What did Angry Joe say about The Division Resurgence?"
     answer: "In his October 31, 2026 Angry Impressions video, Joe and his crew played about 30 minutes, reached level 10 and 11, and called it mobile game crap: tanky enemies, mostly blue loot from a Dark Zone run, and a skin he priced at $25 to $30 in Phoenix Credits. His verdict was to skip it and play The Division 2. He also said it doesn't take your money if you're smart about it."
@@ -43,7 +43,7 @@ What changes the math:
 - **Read the colored bar.** Elite enemies show the damage type they're weak to: dark blue for piercing, light blue for shredding, red for blast. Match it and they drop faster ([damage types guide](/guides/damage-types-color-bar-weakness-guide/)).
 - **Build for it.** Creator sheets on our site run from **237k DPS** ([Tampishach's Tech Aegis](/builds/tech-aegis-engineering-build-tampishach/)) to **727k** ([LtFoe's Double Agent glass cannon](/builds/aegis-chad-glass-cannon-tech-operator-build-ifozzy/)), and LtFoe's screens show a single **1.78 million** hit on a bounty boss.
 
-And the health bar Joe was looking for? It's the orange bar floating next to your agent. We know, because we painted one out of the picture at the top of this page.
+And the health bar Joe was looking for? It's the orange bar floating next to your agent.
 
 ## Mobile Game? It's on Your PC Too
 

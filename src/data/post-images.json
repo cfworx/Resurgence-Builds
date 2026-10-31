@@ -528,28 +528,28 @@
   ],
   "small": "/images/news/division-resurgence-a-new-enemy-speedrun-september-map-480.webp"
  },
- "/images/news/division-resurgence-angry-joe-response-penn-station-1200.webp": {
+ "/images/news/division-resurgence-angry-joe-response-penn-station-billboard-1200.webp": {
   "width": 1200,
   "height": 630,
   "srcset": [
    [
     480,
-    "/images/news/division-resurgence-angry-joe-response-penn-station-480.webp"
+    "/images/news/division-resurgence-angry-joe-response-penn-station-billboard-480.webp"
    ],
    [
     800,
-    "/images/news/division-resurgence-angry-joe-response-penn-station-800.webp"
+    "/images/news/division-resurgence-angry-joe-response-penn-station-billboard-800.webp"
    ],
    [
     1200,
-    "/images/news/division-resurgence-angry-joe-response-penn-station-1200.webp"
+    "/images/news/division-resurgence-angry-joe-response-penn-station-billboard-1200.webp"
    ],
    [
     1600,
-    "/images/news/division-resurgence-angry-joe-response-penn-station-1600.webp"
+    "/images/news/division-resurgence-angry-joe-response-penn-station-billboard-1600.webp"
    ]
   ],
-  "small": "/images/news/division-resurgence-angry-joe-response-penn-station-480.webp"
+  "small": "/images/news/division-resurgence-angry-joe-response-penn-station-billboard-480.webp"
  },
  "/images/news/division-resurgence-april-developer-stream-movie-night-1200.webp": {
   "width": 1200,

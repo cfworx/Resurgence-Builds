@@ -16,7 +16,8 @@ Spec keys: out, video, t, crop [x, y, width] (height follows from 1600 x 840), c
 x1, y1, colour]] (only that colour's pixels in the box: white, brightwhite, red, pink, orange, green), bar (false to skip
 the health bar search), window, maxErr, title, subtitle, align, titleY (where the middle of the title block sits, as a
 share of the height: 0.5 by default, lower to lift it off faces), word, n95 (a face mask drawn on, see draw_n95), fill
-({"t": second, "maxErr": n, "search": px}: take the health bar's fill from that one frame, then clear "hud" separately).
+({"t": second, "maxErr": n, "search": px}: take the health bar's fill from that one frame, then clear "hud" separately),
+screen (a picture shown on a screen or billboard in the frame, see draw_screen).
 
 Clearing HUD: crops are chosen to leave out the fixed HUD (minimap, menu icons, chat, skill bar, XP
 bar). The player's orange health bar floats next to the agent, so it is found by its colour and
@@ -217,6 +218,64 @@ def fill_aa(shape, poly, ss=4):
     big = np.zeros((H * ss, W * ss), np.uint8)
     cv2.fillPoly(big, [np.round(poly * ss).astype(np.int32)], 255, lineType=cv2.LINE_AA)
     return cv2.resize(big, (W, H), interpolation=cv2.INTER_AREA).astype(np.float32) / 255
+
+
+def draw_screen(frame, spec):
+    """Show a picture on a screen or billboard in the frame (for the occasional in-game joke).
+
+    spec['screen']: image (path under the repo), quad (the screen's corners in frame pixels: top-left, top-right,
+    bottom-right, bottom-left), crop ([x0, y0, x1, y1] of the picture to use) or inset (pixels trimmed off every edge),
+    fit ("fill" stretches the picture over the whole screen, so crop it close to the screen's shape first; "contain"
+    fits it inside on a bg colour), opacity (default 0.94), grid (LED pixel pitch in screen pixels, 0 for none; grid_dim
+    how dark its lines are), glow (light the screen throws on its frame, 0 to 1) and cracks (true keeps the dark cracks
+    of the original screen).
+    """
+    pic = Image.open(os.path.join(ROOT, spec['image'])).convert('RGB')
+    if spec.get('crop'):
+        pic = pic.crop(tuple(spec['crop']))
+    elif spec.get('inset'):
+        k = int(spec['inset'])
+        pic = pic.crop((k, k, pic.width - k, pic.height - k))
+    quad = np.float32(spec['quad'])
+    top = np.linalg.norm(quad[1] - quad[0])
+    side = (np.linalg.norm(quad[3] - quad[0]) + np.linalg.norm(quad[2] - quad[1])) / 2
+    sw = 1200
+    sh = int(round(sw * side / top))
+    if spec.get('fit') == 'fill':
+        canvas = pic.resize((sw, sh), Image.LANCZOS)
+    else:
+        canvas = Image.new('RGB', (sw, sh), tuple(spec.get('bg', [8, 8, 12])))
+        scale = min(sw / pic.width, sh / pic.height)
+        pw, ph = int(pic.width * scale), int(pic.height * scale)
+        canvas.paste(pic.resize((pw, ph), Image.LANCZOS), ((sw - pw) // 2, (sh - ph) // 2))
+    c = np.asarray(canvas).astype(np.float32)
+    pitch = int(spec.get('grid', 3))
+    if pitch:
+        dim = float(spec.get('grid_dim', 0.86))
+        g = np.ones((sh, sw), np.float32)
+        g[::pitch, :] *= dim
+        g[:, ::pitch] *= dim
+        c *= g[:, :, None]
+    src = np.float32([[0, 0], [sw, 0], [sw, sh], [0, sh]])
+    m = cv2.getPerspectiveTransform(src, quad)
+    h, w = frame.shape[:2]
+    warped = cv2.warpPerspective(c, m, (w, h), flags=cv2.INTER_AREA, borderMode=cv2.BORDER_CONSTANT)
+    alpha = cv2.warpPerspective(np.ones((sh, sw), np.float32), m, (w, h), flags=cv2.INTER_LINEAR)
+    alpha = cv2.GaussianBlur(alpha, (3, 3), 0) * float(spec.get('opacity', 0.94))
+    warped = cv2.GaussianBlur(warped, (0, 0), 0.7)       # the game's own softness
+    out = frame.astype(np.float32)
+    if spec.get('cracks'):
+        lum = cv2.cvtColor(frame, cv2.COLOR_RGB2GRAY).astype(np.float32)
+        local = cv2.blur(lum, (25, 25))
+        crack = np.clip((local - lum - 18) / 40, 0, 1)
+        crack = cv2.GaussianBlur(crack, (3, 3), 0)
+        warped *= (1 - 0.75 * crack)[:, :, None]
+    out = out * (1 - alpha[:, :, None]) + warped * alpha[:, :, None]
+    glow = float(spec.get('glow', 0))
+    if glow:
+        halo = cv2.GaussianBlur(warped * alpha[:, :, None], (0, 0), 14)
+        out += glow * halo * (1 - alpha[:, :, None])
+    return np.clip(out, 0, 255).astype(np.uint8)
 
 
 def draw_n95(frame, spec, seed=11):
@@ -430,6 +489,8 @@ def make(spec):
                             hud=spec.get('hud', ()))
     if spec.get('n95'):
         img = draw_n95(img, spec['n95'])
+    if spec.get('screen'):
+        img = draw_screen(img, spec['screen'])
     out = Image.fromarray(img[y:y + h, x:x + w]).resize((OUT_W, OUT_H), Image.LANCZOS)
     if spec.get('word'):
         out = replace_word(out, spec)

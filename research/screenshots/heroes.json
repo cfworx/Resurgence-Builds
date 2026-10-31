@@ -1211,7 +1211,7 @@
   ]
  },
  {
-  "out": "research/screenshots/masters/news/division-resurgence-angry-joe-response-penn-station.webp",
+  "out": "research/screenshots/masters/news/division-resurgence-angry-joe-response-penn-station-billboard.webp",
   "video": "2026-10-29_10-11-54.mp4",
   "t": 76,
   "crop": [
@@ -1242,6 +1242,38 @@
   "title": "Mobile Game Crap?",
   "subtitle": "Our response to Angry Joe",
   "align": "right",
-  "titleY": 0.3
+  "titleY": 0.3,
+  "screen": {
+   "image": "research/screenshots/overlays/angry-joe-mobile-game-crap-thumbnail.jpg",
+   "crop": [
+    4,
+    14,
+    942,
+    462
+   ],
+   "fit": "fill",
+   "quad": [
+    [
+     576,
+     158
+    ],
+    [
+     1120,
+     225
+    ],
+    [
+     1116,
+     460
+    ],
+    [
+     569,
+     416
+    ]
+   ],
+   "opacity": 0.95,
+   "grid": 3,
+   "grid_dim": 0.9,
+   "glow": 0.25
+  }
  }
 ]
