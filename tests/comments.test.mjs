@@ -2,7 +2,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {
-  LIMITS, allowedOrigin, checkPath, cleanBody, cleanName, cleanText, hasLink, hashIp, ID_RE, isReservedName, newId,
+  LIMITS, allowedOrigin, applyVerdict, checkPath, cleanBody, cleanName, cleanText, hasLink, hashIp, ID_RE, isReservedName, newId,
   parseGuard, readJson, safetyCheck,
 } from '../lib/comments.mjs';
 
@@ -134,4 +134,15 @@ test('readJson checks type, size and shape', async () => {
   assert.equal((await readJson(j('{nope'), 100)).status, 400);
   assert.equal((await readJson(j('[1,2]'), 100)).status, 400);
   assert.equal((await readJson(j('null'), 100)).status, 400);
+});
+
+test('applyVerdict: hold hate and sexual content, flag the rest, mark unchecked', () => {
+  // The real Workers AI answers look like "\n\nsafe" and "\n\nunsafe\nS10" (seen October 31, 2026).
+  assert.deepEqual(applyVerdict(parseGuard({ response: '\n\nsafe' }), 'visible', null), { state: 'visible', flags: null, note: null });
+  assert.deepEqual(applyVerdict(parseGuard({ response: '\n\nunsafe\nS10' }), 'visible', null), { state: 'held', flags: 'ai:S10', note: 'Held by the safety filter' });
+  assert.deepEqual(applyVerdict(parseGuard({ response: '\n\nunsafe\nS12' }), 'visible', null).state, 'held');
+  assert.deepEqual(applyVerdict(parseGuard({ response: '\n\nunsafe\nS7' }), 'visible', null), { state: 'visible', flags: 'ai:S7', note: null });
+  assert.deepEqual(applyVerdict(parseGuard({ response: '\n\nunsafe\nS1,S10' }), 'visible', null).state, 'held');
+  assert.deepEqual(applyVerdict({ safe: false, categories: [] }, 'visible', null).state, 'held');
+  assert.deepEqual(applyVerdict(null, 'visible', null), { state: 'visible', flags: 'ai:unchecked', note: null });
 });

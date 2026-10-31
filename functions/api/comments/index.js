@@ -3,9 +3,13 @@
 // lib/comments.mjs; how the whole system works (and how it's moderated) is in COMMENTS.md.
 
 import {
-  LIMITS, HOLD_CATEGORIES, allowedOrigin, checkPath, cleanBody, cleanName, hasLink, isoMinutesAgo, json, newId,
-  readJson, safetyCheck, visitorHash,
+  LIMITS, allowedOrigin, applyVerdict, checkPath, cleanBody, cleanName, hasLink, isoMinutesAgo, json, newId, readJson,
+  safetyCheck, visitorHash,
 } from '../../../lib/comments.mjs';
+
+const QUICK_MS = 1500;   // how long a visitor waits for the safety filter
+const FILTER_MS = 25000; // how long the filter gets in total (the rest runs after the reply; Cloudflare allows 30 s)
+const PENDING = Symbol('pending');
 
 const OFFLINE = { error: 'Comments are offline right now. Try again later.' };
 const BROKE = { error: 'Something broke on our end. Try again in a minute.' };
@@ -27,7 +31,7 @@ export async function onRequestGet({ request, env }) {
   }
 }
 
-export async function onRequestPost({ request, env }) {
+export async function onRequestPost({ request, env, waitUntil }) {
   try {
     if (!env.DB) return json(503, OFFLINE);
     if (!allowedOrigin(request)) return json(403, { error: 'Comments can only be posted from resurgencebuilds.com.' });
@@ -89,21 +93,38 @@ export async function onRequestPost({ request, env }) {
       note = 'Blocked visitor';
     }
 
-    // Safety filter. If it's unavailable the comment posts and the daily review checks it.
-    const verdict = blocked ? null : await safetyCheck(env.AI, name.value, body.value);
-    if (verdict && !verdict.safe) {
-      flags = `ai:${verdict.categories.join(',') || 'unsafe'}`;
-      if (verdict.categories.length === 0 || verdict.categories.some((c) => HOLD_CATEGORIES.has(c))) {
-        state = 'held';
-        note = 'Held by the safety filter';
+    // Safety filter. Workers AI usually answers in well under a second but sometimes takes many seconds, so the
+    // visitor waits at most QUICK_MS: a slower answer is applied in the background (the comment shows meanwhile and is
+    // hidden as soon as the filter says so). No answer at all leaves "ai:unchecked" for the daily review.
+    const id = newId();
+    const createdAt = now.toISOString();
+    let pending = null;
+    if (!blocked) {
+      const check = safetyCheck(env.AI, name.value, body.value, FILTER_MS);
+      const quick = await Promise.race([check, new Promise((resolve) => setTimeout(() => resolve(PENDING), QUICK_MS))]);
+      if (quick === PENDING) {
+        pending = check;
+        flags = 'ai:pending';
+      } else {
+        ({ state, flags, note } = applyVerdict(quick, state, note));
       }
     }
 
-    const id = newId();
-    const createdAt = now.toISOString();
     await env.DB.prepare(
       'INSERT INTO comments (id, path, name, body, created_at, ip_hash, status, flags, moderation_note) VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8, ?9)',
     ).bind(id, path, name.value, body.value, createdAt, ipHash, state, flags, note).run();
+
+    if (pending) {
+      waitUntil(pending.then((verdict) => {
+        const v = applyVerdict(verdict, 'visible', null);
+        return env.DB.prepare(
+          `UPDATE comments SET flags = ?1,
+             status = CASE WHEN ?2 = 'held' AND status = 'visible' THEN 'held' ELSE status END,
+             moderation_note = CASE WHEN ?2 = 'held' AND status = 'visible' THEN ?3 ELSE moderation_note END
+           WHERE id = ?4`,
+        ).bind(v.flags, v.state, v.note, id).run();
+      }).catch(() => {}));
+    }
 
     if (state === 'held') return json(202, HELD);
     return json(201, { comment: { id, name: name.value, body: body.value, createdAt } });
