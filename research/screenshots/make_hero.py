@@ -15,7 +15,8 @@ the session uploads (they are too big for the repo); the frame time is enough to
 Spec keys: out, video, t, crop [x, y, width] (height follows from 1600 x 840), clear [boxes], hud [[x0, y0,
 x1, y1, colour]] (only that colour's pixels in the box: white, brightwhite, red, pink, orange, green), bar (false to skip
 the health bar search), window, maxErr, title, subtitle, align, titleY (where the middle of the title block sits, as a
-share of the height: 0.5 by default, lower to lift it off faces), word, n95 (a face mask drawn on, see draw_n95).
+share of the height: 0.5 by default, lower to lift it off faces), word, n95 (a face mask drawn on, see draw_n95), fill
+({"t": second, "maxErr": n, "search": px}: take the health bar's fill from that one frame, then clear "hud" separately).
 
 Clearing HUD: crops are chosen to leave out the fixed HUD (minimap, menu icons, chat, skill bar, XP
 bar). The player's orange health bar floats next to the agent, so it is found by its colour and
@@ -111,7 +112,8 @@ def hud_mask(f, hud):
     return cv2.dilate(m, np.ones((7, 7), np.uint8))
 
 
-def clear(video, t, f, boxes, auto_bar, window=2.0, max_err=60, crop=None, hud=()):
+def clear(video, t, f, boxes, auto_bar, window=2.0, max_err=60, crop=None, hud=(), only_t=None, search=140):
+    """only_t: take fill pixels from that one frame instead of every frame within the window."""
     target = f.copy()
     mask = bar_mask(f) if auto_bar else np.zeros(f.shape[:2], np.uint8)
     for (x0, y0, x1, y1) in boxes:
@@ -135,7 +137,10 @@ def clear(video, t, f, boxes, auto_bar, window=2.0, max_err=60, crop=None, hud=(
     ring = cv2.dilate(mask, np.ones((61, 61), np.uint8)) > 0
     ring &= ~todo
     used = []
-    for tt, g in frames(video, t - window, t + window, fps=10):
+    source = frames(video, only_t, only_t + 0.15) if only_t is not None else frames(video, t - window, t + window, fps=10)
+    for tt, g in source:
+        if only_t is not None:
+            tt = only_t
         if abs(tt - t) < 0.05 or todo[filled].all() and filled[todo].all():
             continue
         gm = bar_mask(g)
@@ -146,7 +151,7 @@ def clear(video, t, f, boxes, auto_bar, window=2.0, max_err=60, crop=None, hud=(
         best = None
         tmpl = g0[by0:by1, bx0:bx1]
         tm = (ring[by0:by1, bx0:bx1]).astype(np.float32)
-        S = 140
+        S = search
         sy0, sy1, sx0, sx1 = max(0, by0 - S), min(FH, by1 + S), max(0, bx0 - S), min(FW, bx1 + S)
         area = gg[sy0:sy1, sx0:sx1]
         if area.shape[0] < tmpl.shape[0] or area.shape[1] < tmpl.shape[1] or tm.sum() < 500:
@@ -408,9 +413,21 @@ def make(spec):
     if x < 0 or y < 0 or x + w > FW or y + h > FH:
         raise SystemExit(f"{spec['out']}: crop {spec['crop']} runs off the frame")
     f = next(frames(video, t, t + 0.15))[1]
-    img, report = clear(video, t, f, [tuple(b) for b in spec.get('clear', [])], spec.get('bar', True),
-                        window=spec.get('window', 2.0), max_err=spec.get('maxErr', 60), crop=(x, y, x + w, y + h),
-                        hud=spec.get('hud', ()))
+    if spec.get('fill'):
+        # The health bar (and "clear" boxes) from one chosen frame, then the "hud" boxes in a pass of their own, so
+        # each gap is matched against the scenery right around it. For a camera move too slow for the default search.
+        fl = spec['fill']
+        img, report = clear(video, t, f, [tuple(b) for b in spec.get('clear', [])], spec.get('bar', True),
+                            max_err=fl.get('maxErr', 60), crop=(x, y, x + w, y + h), only_t=float(fl['t']),
+                            search=fl.get('search', 140))
+        if spec.get('hud'):
+            img, r2 = clear(video, t, img, [], False, window=spec.get('window', 2.0), max_err=spec.get('maxErr', 60),
+                            crop=(x, y, x + w, y + h), hud=spec['hud'])
+            report = {'bar': report, 'hud': r2}
+    else:
+        img, report = clear(video, t, f, [tuple(b) for b in spec.get('clear', [])], spec.get('bar', True),
+                            window=spec.get('window', 2.0), max_err=spec.get('maxErr', 60), crop=(x, y, x + w, y + h),
+                            hud=spec.get('hud', ()))
     if spec.get('n95'):
         img = draw_n95(img, spec['n95'])
     out = Image.fromarray(img[y:y + h, x:x + w]).resize((OUT_W, OUT_H), Image.LANCZOS)

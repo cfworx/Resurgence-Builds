@@ -1209,5 +1209,39 @@
     1240
    ]
   ]
+ },
+ {
+  "out": "research/screenshots/masters/news/division-resurgence-angry-joe-response-penn-station.webp",
+  "video": "2026-10-29_10-11-54.mp4",
+  "t": 76,
+  "crop": [
+   360,
+   140,
+   2040
+  ],
+  "fill": {
+   "t": 78,
+   "maxErr": 700
+  },
+  "hud": [
+   [
+    1205,
+    650,
+    1355,
+    790,
+    "white"
+   ],
+   [
+    1295,
+    735,
+    1345,
+    780,
+    "orange"
+   ]
+  ],
+  "title": "Mobile Game Crap?",
+  "subtitle": "Our response to Angry Joe",
+  "align": "right",
+  "titleY": 0.3
  }
 ]
