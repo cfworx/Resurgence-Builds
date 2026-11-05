@@ -1,6 +1,15 @@
 import { defineCollection, z } from 'astro:content';
 import { glob } from 'astro/loaders';
 
+// Google reads a VideoObject's uploadDate as a date and time with a time zone, and flags a bare date
+// ("missing a timezone", "invalid datetime value"). Use YouTube's own value, such as
+// 2026-10-16T04:00:15-07:00; when only the day is known, use noon UTC on it (2026-10-31T12:00:00Z),
+// which is the same calendar day across the Americas, Europe and most of Asia.
+const uploadDate = z.string()
+  .regex(/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(\.\d+)?(Z|[+-]\d{2}:\d{2})$/,
+    'videoUploadDate needs a date, time and time zone, such as 2026-10-16T04:00:15-07:00 (or 2026-10-31T12:00:00Z when only the day is known)')
+  .optional();
+
 /* ============================================================
    MARKDOWN CONTENT COLLECTIONS
    ============================================================ */
@@ -49,7 +58,7 @@ const builds = defineCollection({
     videoChannelUrl: z.string().url().optional(),
     // Upload date and length as YouTube lists them (ISO 8601). VideoObject markup needs the
     // upload date, so a video without one is embedded with no markup.
-    videoUploadDate: z.string().optional(),
+    videoUploadDate: uploadDate,
     videoDuration: z.string().optional(),
     howTo: z.object({
       name: z.string(),
@@ -137,7 +146,7 @@ const guides = defineCollection({
     videoChannelUrl: z.string().url().optional(),
     // Upload date and length as YouTube lists them (ISO 8601). VideoObject markup needs the
     // upload date, so a video without one is embedded with no markup.
-    videoUploadDate: z.string().optional(),
+    videoUploadDate: uploadDate,
     videoDuration: z.string().optional(),
     sources: z.array(z.string()).optional(),
   }),

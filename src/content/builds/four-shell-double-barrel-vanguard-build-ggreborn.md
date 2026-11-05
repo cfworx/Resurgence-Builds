@@ -29,7 +29,7 @@ faqs:
 videoId: "NBB6j05PvsE"
 videoTitle: "GGReborn: BEST Vanguard DB Spamming Build! Make DB Shotgun Spamming Even Easier"
 videoChannel: "GGReborn"
-videoUploadDate: "2026-10-31"
+videoUploadDate: "2026-10-31T12:00:00Z"
 plannerHash: "s=Vanguard&sc=Commando&n=Four-Shell+Double+Barrel&ms=gs-2&m1=chc&m2=wms&gs=gs-3&g1=chc&hs=gs-3&cs=gs-2&ct=ba-22&c1=chc&c2=sdu&ps=gs-2&pt=bp-1&p1=chc&p2=wms&ks=gs-3&w1s=sw-22&w1t=wt-54&w1t2=wt-29&w2s=sw-5&w2t=wt-36&w2t2=wt-26&os=os-43&sm1=smc-63&sm2=smc-66&sm3=smc-70"
 loadout:
   statsFrom: "GGReborn's loadout screen"
