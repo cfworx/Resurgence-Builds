@@ -5,13 +5,18 @@ import AdSenseUnit from '../../../components/AdSenseUnit.astro';
 import { verifiedPatch } from '../../../data/site-config';
 import { attrGuide, statInteraction } from '../../../data/bonus-attribute-guides';
 import inGame from '../../../data/bonus-attributes-in-game.json';
-import GameImage from '../../../components/GameImage.astro';
-import { dbImage } from '../../../utils/db-images';
-// Each attribute's own description from the in-game Build-Making Database (October 28, 2026)
+
+// Laid out as cards you can open (Cory, November 5: the old page was one long column of text). Each card shows
+// the stat's own description from the in-game Build-Making Database (checked October 28, 2026); our notes open
+// under it. Ids stay the attribute slugs, so links like #weapon-critical-hit-chance still land on the card.
 const gameText = (name: string): string | undefined => (inGame.descriptions as Record<string, string>)[name];
-// Damage-type attributes: still listed by the in-game database, removed from weapon rolls in Season 2 Phase 1
-const damageTypeAttrs = inGame.listed.filter((n: string) => /(Blast|Piercing|Shredding) Damage$/.test(n));
-const notInDatabase = ['All Weapon Damage', 'All Skill Damage'];
+// Not in the Build-Making Database's list yet: Season 2 Phase 1 added them to weapon rolls
+const SHORT_TEXT: Record<string, string> = {
+  'All Weapon Damage': 'Raises weapon damage of every damage type. Weapons roll it since Season 2 Phase 1.',
+  'All Skill Damage': 'Raises skill damage of every damage type. Weapons roll it since Season 2 Phase 1.',
+};
+// Damage-type attributes: still listed by the in-game database, out of weapon rolls since Season 2 Phase 1
+const damageTypeAttrs: string[] = inGame.listed.filter((n: string) => /(Blast|Piercing|Shredding) Damage$/.test(n));
 const lastVerified = verifiedPatch('Patch 1.2.1'); // Bump: drop the arg ONLY after re-verifying this page's content in-game (CURRENT_PATCH is a ceiling, not an auto-bump)
 
 const attrCount = bonusAttributes.reduce((n: number, c: any) => n + c.attributes.length, 0);
@@ -23,14 +28,37 @@ const breadcrumbs = [
 
 const toSlug = (name: string) => name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
 
-const getCategoryColor = (cat: string) => {
-  switch(cat.toLowerCase()) {
-    case 'firepower': return { color: '#f87171', bg: 'rgba(239,68,68,0.08)', border: 'rgba(239,68,68,0.25)' };
-    case 'toughness': return { color: '#60a5fa', bg: 'rgba(59,130,246,0.08)', border: 'rgba(59,130,246,0.25)' };
-    case 'engineering': return { color: '#facc15', bg: 'rgba(234,179,8,0.08)', border: 'rgba(234,179,8,0.25)' };
-    default: return { color: '#b8b8c0', bg: 'rgba(255,255,255,0.04)', border: 'rgba(255,255,255,0.1)' };
-  }
+const POOL: Record<string, { color: string; icon: string }> = {
+  Firepower: { color: '#F87171', icon: 'M12 2v4M12 18v4M2 12h4M18 12h4M12 8a4 4 0 100 8 4 4 0 000-8z' },
+  Toughness: { color: '#60A5FA', icon: 'M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6l8-3z' },
+  Engineering: { color: '#FACC15', icon: 'M12 9a3 3 0 100 6 3 3 0 000-6zM19.4 15a1.7 1.7 0 00.3 1.8l.1.1a2 2 0 11-2.8 2.8l-.1-.1a1.7 1.7 0 00-1.8-.3 1.7 1.7 0 00-1 1.5V21a2 2 0 11-4 0v-.1a1.7 1.7 0 00-1.1-1.5 1.7 1.7 0 00-1.8.3l-.1.1a2 2 0 11-2.8-2.8l.1-.1a1.7 1.7 0 00.3-1.8 1.7 1.7 0 00-1.5-1H3a2 2 0 110-4h.1a1.7 1.7 0 001.5-1.1 1.7 1.7 0 00-.3-1.8l-.1-.1a2 2 0 112.8-2.8l.1.1a1.7 1.7 0 001.8.3H9a1.7 1.7 0 001-1.5V3a2 2 0 114 0v.1a1.7 1.7 0 001 1.5 1.7 1.7 0 001.8-.3l.1-.1a2 2 0 112.8 2.8l-.1.1a1.7 1.7 0 00-.3 1.8V9a1.7 1.7 0 001.5 1H21a2 2 0 110 4h-.1a1.7 1.7 0 00-1.5 1z' },
+  Universal: { color: '#C4C7CE', icon: 'M12 3l2.6 5.6 6.1.7-4.5 4.2 1.2 6L12 16.6 6.6 19.5l1.2-6L3.3 9.3l6.1-.7L12 3z' },
+  'Damage type': { color: '#9CA3AF', icon: 'M4 20L20 4M8 4h12v12' },
 };
+
+type Card = { name: string; slug: string; pool: string; text?: string };
+const groups: { pool: string; id: string; cards: Card[]; note?: string }[] = [
+  ...bonusAttributes.map((c: any) => ({
+    pool: c.category,
+    id: toSlug(c.category),
+    cards: c.attributes.map((a: string) => ({ name: a, slug: toSlug(a), pool: c.category, text: gameText(a) || SHORT_TEXT[a] })),
+  })),
+  {
+    pool: 'Damage type',
+    id: 'damage-type-attributes',
+    note: 'Still in the game\'s list, but weapons stopped rolling these in Season 2 Phase 1 (they roll All Weapon or All Skill Damage instead). Older weapons keep the rolls they had.',
+    cards: damageTypeAttrs.map((a) => ({ name: a, slug: toSlug(a), pool: 'Damage type', text: gameText(a) })),
+  },
+];
+const total = groups.reduce((n, g) => n + g.cards.length, 0);
+
+// The quick answer: which stats each kind of build chases (the same picks as the FAQ below)
+const PICKS = [
+  { label: 'Gun damage', pool: 'Firepower', attrs: ['Weapon Critical Hit Chance', 'Weapon Critical Hit Damage'] },
+  { label: 'Tanks', pool: 'Toughness', attrs: ['Max Health', 'Armor', 'Damage Reduction'] },
+  { label: 'Skill builds', pool: 'Engineering', attrs: ['Skill Intensity', 'Skill Cooldown Recovery'] },
+  { label: 'Any build', pool: 'Universal', attrs: ['Damage to Elites', 'Received Healing'] },
+];
 
 const faqs = [
   { question: "What are bonus attributes in Division Resurgence?", answer: "Bonus attributes are the secondary stats that roll on gear and weapons next to the core stats. A gear piece shows Firepower, Toughness and Engineering values together, plus two bonus attributes such as Weapon Critical Hit Chance, Skill Intensity or Damage Reduction. We group the attributes by the core stat they feed, but a piece isn't locked to one group: TikTokAndy's Tier 1 body armor with a strong Firepower roll came with Skill Cooldown Recovery next to Weapon Critical Hit Damage." },
@@ -38,20 +66,14 @@ const faqs = [
   { question: "Can you recalibrate bonus attributes in Division Resurgence?", answer: "Yes, but it's a reroll, not a pick. Creators spend recalibration manuals to reroll one attribute line, and the result is random: TikTokAndy rerolls his mask's Armor line hoping for Skill Critical Damage, says the manuals (his 'books') are at a premium, and Died Again Gaming remembers wasting booklets on rolls that came back useless. Spend them on the line that's furthest from what your build wants." },
 ];
 
-const allAttrs: Array<{name: string; category: string}> = [];
-bonusAttributes.forEach((cat: any) => {
-  cat.attributes.forEach((attr: string) => {
-    allAttrs.push({ name: attr, category: cat.category });
-  });
-});
-
+const allAttrs: Array<{ name: string; category: string }> = [];
+bonusAttributes.forEach((cat: any) => cat.attributes.forEach((attr: string) => allAttrs.push({ name: attr, category: cat.category })));
 const siteUrl = 'https://resurgencebuilds.com';
-
 const itemListLd = {
   '@context': 'https://schema.org',
   '@type': 'ItemList',
   name: 'The Division Resurgence Weapon/Gear Bonus Attributes',
-  description: description,
+  description,
   numberOfItems: allAttrs.length,
   itemListElement: allAttrs.map((item, i) => ({
     '@type': 'ListItem',
@@ -75,390 +97,400 @@ const itemListLd = {
   {breadcrumbs}
   modified="2026-10-28"
   heading="Bonus Attributes"
-  subheading={`All ${allAttrs.length} bonus attributes across ${bonusAttributes.length} stat pools, every stat explained in full on this page. Know your rolls, or suffer.`}
+  subheading={`All ${attrCount} stats that roll on your gear and guns, by the core stat they feed. Open any card for the details.`}
   jsonLd={itemListLd}
   lastVerified={lastVerified}
   {faqs}
 >
-  <div style="color: #c8c8d0; line-height: 1.75; font-size: var(--text-base); margin-bottom: var(--sp-8); max-width: 72ch;">
-    <p>Bonus attributes are the secondary stats on every gear piece in Division Resurgence. Each piece carries Firepower, Toughness and Engineering values (TikTokAndy's T2 Phalanx holster reads 206 Firepower, 33 Toughness and 64 Engineering) plus two bonus attributes like Weapon Critical Hit Chance, Skill Intensity, or Damage Reduction. We group the attributes below by the core stat they feed, but the groups aren't walled off by a piece's biggest stat: creators' gear mixes them freely.</p>
-    <p>There are {allAttrs.length} bonus attributes across {bonusAttributes.length} pools: <strong>Firepower</strong> (offensive weapon stats), <strong>Toughness</strong> (survivability), <strong>Engineering</strong> (skill scaling), and <strong>Universal</strong> (attributes that roll on any core type). Universal attributes like Damage to Elites and Received Healing are the most flexible options for builds that need cross-category value. For how the core stats, crit and talent ranks fit together, see our <a href="/guides/division-resurgence-stats-explained/" style="color: var(--accent);">stats guide</a>.</p>
-    <p>Recalibration rerolls an attribute line at random and costs recalibration manuals, which TikTokAndy says are at a premium. Pick the line that's furthest from what your build wants before you spend one, especially on Tier 2 endgame gear that you cannot easily replace.</p>
-    <p><strong>Update (October 2026):</strong> Season 2 Phase 1 reshuffled the pools. Weapons no longer roll Blast, Piercing or Shredding Weapon or Skill Damage: Ubisoft replaced them with All Weapon Damage and All Skill Damage, which this list now shows in their place. Ubisoft's notes cover weapons and weapon mods, not gear pieces, and older weapons may still carry the old rolls, so check yours in the Armory. Weapon mods were reworked (main stat +100%, attribute bonuses -25%), and newly dropped weapon mods lost the damage-type and All Damage rolls in exchange for Weapon Damage, Skill Intensity, Headshot Damage, Weapon Critical Hit Damage and Skill Critical Damage. Mods you already own keep their rolls. Gear mods lost Elite Enemy and Enemy Leader Resistance and can now roll Max Health, Armor, Received Healing, weapon and skill crit chance, crit damage and multi-shot, Weapon Damage, Skill Intensity, Headshot Damage and Signature Ability Charge Efficiency. The per-stat notes below were written before that patch unless they say otherwise. Each stat's "In game" line is its own description from the game's Build-Making Database (checked October 28, 2026), which says a weapon or gear piece gets "2 different Bonus Attributes" at random. That's the High-End count: the Superior gear cards in the same database say the piece is "created with 1 Bonuses".</p>
-  </div>
-
-  <!-- Jump nav: a fold, closed on phones (20+ links at 44px would be a long block before the content), open wider -->
-  <details class="attr-jumpnav" data-jumpnav>
-  <summary class="attr-jumpnav__summary">Jump to an attribute</summary>
-  <nav class="attr-jumpnav__groups" aria-label="Jump to attribute">
-    {bonusAttributes.map((category) => {
-      const palette = getCategoryColor(category.category);
-      return (
-        <div class="attr-jumpnav__group">
-          <a href={`#${toSlug(category.category)}`} class="attr-jumpnav__cat" style={`color:${palette.color};border-color:${palette.border};background:${palette.bg};`}>{category.category}</a>
-          {category.attributes.map((attr: string) => (
-            <a href={`#${toSlug(attr)}`} class="attr-jumpnav__link">{attr}</a>
-          ))}
+  <!-- The quick answer -->
+  <section class="ab-pick" aria-labelledby="ab-pick-h">
+    <h2 class="ab-h2" id="ab-pick-h">What to chase</h2>
+    <div class="ab-pick__grid">
+      {PICKS.map((p) => (
+        <div class="ab-pick__col" style={`--pool:${POOL[p.pool].color}`}>
+          <h3 class="ab-pick__label">{p.label}</h3>
+          <ul class="ab-pick__chips">
+            {p.attrs.map((a) => <li><a class="ab-chip" href={`#${toSlug(a)}`} data-open={toSlug(a)}>{a}</a></li>)}
+          </ul>
         </div>
-      );
-    })}
-    <div class="attr-jumpnav__group">
-      <a href="#damage-type-attributes" class="attr-jumpnav__cat">Damage type</a>
-      {damageTypeAttrs.map((attr: string) => (
-        <a href={`#${toSlug(attr)}`} class="attr-jumpnav__link">{attr}</a>
       ))}
     </div>
-  </nav>
-  </details>
-  <script is:inline>(function () { var d = document.querySelector('[data-jumpnav]'); if (d && window.matchMedia('(min-width: 45em)').matches) d.open = true; })();</script>
-
-  <!-- Sort control -->
-  <div class="attr-sort" role="group" aria-label="Sort attributes">
-    <span class="attr-sort__label">Sort:</span>
-    <button type="button" class="attr-sort__btn is-active" data-sort="pool">By stat pool</button>
-    <button type="button" class="attr-sort__btn" data-sort="az">A to Z</button>
-  </div>
-
-  <div id="attr-sections">
-    {bonusAttributes.map((category) => {
-      const palette = getCategoryColor(category.category);
-      return (
-        <section class="attr-pool" id={toSlug(category.category)} data-pool={category.category}>
-          <h2 class="attr-pool__title" style={`color:${palette.color};border-color:${palette.border};`}>{category.category} <span class="attr-pool__count">{category.attributes.length} stats</span></h2>
-          {category.attributes.map((attr: string) => {
-            const slug = toSlug(attr);
-            const info = attrGuide[attr];
-            return (
-              <article class="attr-entry" id={slug} data-name={attr} data-pool={category.category}>
-                <h3 class="attr-entry__title">
-                  <a href={`#${slug}`} class="attr-entry__anchor" aria-label={`Link to ${attr}`}>#</a>
-                  {attr}
-                  <span class="attr-entry__badge" style={`color:${palette.color};border-color:${palette.border};background:${palette.bg};`}>{category.category}</span>
-                </h3>
-                {gameText(attr) && <p class="attr-entry__ingame"><span>In game:</span> "{gameText(attr)}"</p>}
-                {notInDatabase.includes(attr) && <p class="attr-entry__ingame"><span>In game:</span> not in the Build-Making Database's list yet (checked October 28, 2026), so there's no card to show. This one comes from Ubisoft's Season 2 Phase 1 notes.</p>}
-                {dbImage(`bonus-attributes/${slug}`) && (
-                  <figure class="game-figure attr-entry__card">
-                    <GameImage image={dbImage(`bonus-attributes/${slug}`)!} alt={`${attr} bonus attribute card in The Division Resurgence's Build-Making Database`} sizes="(max-width: 520px) calc(100vw - 64px), 440px" />
-                  </figure>
-                )}
-                {info ? (
-                  <div class="attr-entry__body">
-                    <p>{info.overview}</p>
-                    <details class="attr-entry__more">
-                      <summary>Why it matters, how to get it &amp; best builds</summary>
-                      <h4>Why it matters</h4>
-                      <p>{info.whyItMatters}</p>
-                      <h4>How to get it</h4>
-                      <p>{info.howToGet}</p>
-                      <h4>Best builds</h4>
-                      <p>{info.bestBuilds}</p>
-                      {statInteraction[slug] && (
-                        <Fragment>
-                          <h4>Stat interactions</h4>
-                          <p>{statInteraction[slug]}</p>
-                        </Fragment>
-                      )}
-                    </details>
-                  </div>
-                ) : (
-                  <div class="attr-entry__body">
-                    <p>{attr} is a {category.category} bonus attribute that rolls on gear with a {category.category} core stat. Full breakdown coming after in-game verification.</p>
-                  </div>
-                )}
-              </article>
-            );
-          })}
-        </section>
-      );
-    })}
-  </div>
-
-  <section class="attr-pool attr-pool--legacy" id="damage-type-attributes" data-pool="Damage type">
-    <h2 class="attr-pool__title">Damage-type attributes <span class="attr-pool__count">{damageTypeAttrs.length} stats</span></h2>
-    <p class="attr-pool__note">The in-game Build-Making Database (checked October 28, 2026) still lists these six. Season 2 Phase 1 took them out of weapon rolls "in favor of 'All Weapon Damage' or 'All Skill Damage'", and Ubisoft's notes don't say whether gear pieces still roll them. Older weapons and mods keep the rolls they had. The database's list doesn't include {notInDatabase.join(' or ')} either, so it may simply not have been updated for that patch, the way its Ammo Refill card wasn't.</p>
-    {damageTypeAttrs.map((attr: string) => {
-      const slug = toSlug(attr);
-      const info = attrGuide[attr];
-      return (
-        <article class="attr-entry" id={slug} data-name={attr} data-pool="Damage type">
-          <h3 class="attr-entry__title">
-            <a href={`#${slug}`} class="attr-entry__anchor" aria-label={`Link to ${attr}`}>#</a>
-            {attr}
-          </h3>
-          {gameText(attr) && <p class="attr-entry__ingame"><span>In game:</span> "{gameText(attr)}"</p>}
-                {dbImage(`bonus-attributes/${slug}`) && (
-                  <figure class="game-figure attr-entry__card">
-                    <GameImage image={dbImage(`bonus-attributes/${slug}`)!} alt={`${attr} bonus attribute card in The Division Resurgence's Build-Making Database`} sizes="(max-width: 520px) calc(100vw - 64px), 440px" />
-                  </figure>
-                )}
-          {info && (
-            <div class="attr-entry__body">
-              <p>{info.overview}</p>
-              <details class="attr-entry__more">
-                <summary>Why it matters and how to get it</summary>
-                <h4>Why it matters</h4>
-                <p>{info.whyItMatters}</p>
-                <h4>How to get it</h4>
-                <p>{info.howToGet}</p>
-                <h4>Best builds</h4>
-                <p>{info.bestBuilds}</p>
-              </details>
-            </div>
-          )}
-        </article>
-      );
-    })}
   </section>
 
-<AdSenseUnit label="Advertisement (database category)" />
+  <!-- Show one pool at a time -->
+  <div class="ab-filter" role="group" aria-label="Show">
+    <button type="button" class="ab-filter__btn" data-filter="all" aria-pressed="true">All <span>{total}</span></button>
+    {groups.map((g) => (
+      <button type="button" class="ab-filter__btn" data-filter={g.id} aria-pressed="false" style={`--pool:${POOL[g.pool].color}`}>
+        <i aria-hidden="true"></i>{g.pool === 'Damage type' ? 'Old damage types' : g.pool} <span>{g.cards.length}</span>
+      </button>
+    ))}
+  </div>
+
+  <div class="ab-groups" id="ab-groups" data-show="all">
+    {groups.map((g) => (
+      <section class="ab-pool" id={g.id} data-group={g.id} style={`--pool:${POOL[g.pool].color}`} aria-labelledby={`${g.id}-h`}>
+        <h2 class="ab-pool__h" id={`${g.id}-h`}>
+          <svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d={POOL[g.pool].icon} /></svg>
+          {g.pool === 'Damage type' ? 'Old damage types' : g.pool}
+          <span class="ab-pool__n">{g.cards.length}</span>
+        </h2>
+        {g.note && <p class="ab-pool__note">{g.note}</p>}
+        <div class="ab-grid">
+          {g.cards.map((c) => {
+            const info = attrGuide[c.name];
+            const works = statInteraction[c.slug];
+            return (
+              <details class="ab-card" id={c.slug} data-pool-name={g.pool === 'Damage type' ? 'Old damage type' : g.pool}>
+                <summary class="ab-card__top">
+                  <span class="ab-card__name">{c.name}</span>
+                  {c.text && <span class="ab-card__text">{c.text}</span>}
+                  <span class="ab-card__chev" aria-hidden="true"></span>
+                </summary>
+                {info && (
+                  <div class="ab-card__more">
+                    <p class="ab-card__lead">{info.overview}</p>
+                    <dl>
+                      {info.bestBuilds && <div><dt>Best builds</dt><dd>{info.bestBuilds}</dd></div>}
+                      {info.howToGet && <div><dt>How to get it</dt><dd>{info.howToGet}</dd></div>}
+                      {info.whyItMatters && <div><dt>Why it matters</dt><dd>{info.whyItMatters}</dd></div>}
+                      {works && <div><dt>Works with</dt><dd>{works}</dd></div>}
+                    </dl>
+                  </div>
+                )}
+              </details>
+            );
+          })}
+        </div>
+      </section>
+    ))}
+  </div>
+
+  <!-- How rolls work, in four lines -->
+  <section class="ab-facts" aria-labelledby="ab-facts-h">
+    <h2 class="ab-h2" id="ab-facts-h">How rolls work</h2>
+    <ul class="ab-facts__grid">
+      <li><b>2 per piece</b><span>High-End gear and weapons come with 2 different bonus attributes. Superior gear gets 1.</span></li>
+      <li><b>Pools mix</b><span>A piece isn't locked to its biggest core stat: Firepower gear can still roll a skill stat.</span></li>
+      <li><b>Reroll one line</b><span>Recalibration rerolls one attribute at random, so spend manuals on your worst line.</span></li>
+      <li><b>Season 2 Phase 1</b><span>Weapons now roll All Weapon or All Skill Damage instead of Blast, Piercing or Shredding.</span></li>
+    </ul>
+    <details class="ab-mods">
+      <summary>Mod changes in Season 2 Phase 1</summary>
+      <ul>
+        <li>Weapon mods: main stat +100%, attribute bonuses -25%.</li>
+        <li>New weapon mods roll Weapon Damage, Skill Intensity, Headshot Damage, Weapon Critical Hit Damage and Skill Critical Damage instead of damage-type and All Damage rolls. Mods you already own keep theirs.</li>
+        <li>Gear mods lost Elite Enemy and Enemy Leader Resistance, and can now roll Max Health, Armor, Received Healing, weapon and skill crit chance, crit damage and multi-shot, Weapon Damage, Skill Intensity, Headshot Damage and Signature Ability Charge Efficiency.</li>
+      </ul>
+      <p>More on how the core stats, crits and talents fit together in our <a href="/guides/division-resurgence-stats-explained/">stats guide</a>.</p>
+    </details>
+  </section>
+
+  <AdSenseUnit label="Advertisement (database category)" />
+
+  <!-- One panel for every card's details (the cards still open in place without JavaScript) -->
+  <dialog class="ab-sheet" id="ab-sheet" aria-labelledby="ab-sheet-title">
+    <div class="ab-sheet__panel">
+      <header class="ab-sheet__hd">
+        <span class="ab-sheet__pool" id="ab-sheet-pool"></span>
+        <h2 class="ab-sheet__title" id="ab-sheet-title"></h2>
+        <p class="ab-sheet__game" id="ab-sheet-game"></p>
+        <button type="button" class="ab-sheet__x" id="ab-sheet-x" aria-label="Close">
+          <svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18" /></svg>
+        </button>
+      </header>
+      <div class="ab-sheet__body" id="ab-sheet-body"></div>
+      <footer class="ab-sheet__ft">
+        <button type="button" class="ab-sheet__nav" id="ab-sheet-prev"><span aria-hidden="true">&#8249;</span> <span id="ab-sheet-prev-name"></span></button>
+        <button type="button" class="ab-sheet__nav ab-sheet__nav--next" id="ab-sheet-next"><span id="ab-sheet-next-name"></span> <span aria-hidden="true">&#8250;</span></button>
+      </footer>
+    </div>
+  </dialog>
 
 <style>
-  .attr-jumpnav {
-    margin-bottom: var(--sp-6);
-    padding: var(--sp-2) var(--sp-4) var(--sp-2) calc(var(--inset) - 1px);
-    background: rgba(0,0,0,0.25);
-    border: 1px solid rgba(255,255,255,0.08);
-    border-radius: 8px;
+  .ab-h2 { margin: 0 0 var(--sp-3); font-family: var(--font-heading); font-size: var(--step-1); font-weight: 800; color: var(--ink-heading, #fff); }
+  .ab-h2::before, .ab-h2::after { display: none; }
+
+  /* What to chase: four short columns of chips */
+  .ab-pick { margin: var(--sp-6) 0 var(--sp-6); }
+  .ab-pick__grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--sp-3); }
+  @media (min-width: 60em) { .ab-pick__grid { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+  .ab-pick__col {
+    padding: var(--sp-3); border-radius: 10px; min-width: 0;
+    background: color-mix(in srgb, var(--pool) 7%, #141519); border: 1px solid color-mix(in srgb, var(--pool) 28%, transparent);
   }
-  .attr-jumpnav__summary {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: var(--sp-3);
-    min-height: var(--control);
-    cursor: pointer;
-    list-style: none;
-    font-family: var(--font-mono);
-    font-size: var(--step--2);
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    color: var(--ink-muted);
+  .ab-pick__label { margin: 0 0 var(--sp-2); font-family: var(--font-heading); font-size: var(--step--1); font-weight: 800; color: var(--pool); }
+  .ab-pick__label::before, .ab-pick__label::after { display: none; }
+  .ab-pick__chips { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px; }
+  .ab-pick__chips li { margin: 0; max-width: 100%; }
+  .ab-chip {
+    display: inline-flex; align-items: center; min-height: 32px; padding: 4px 10px; max-width: 100%;
+    border-radius: 999px; background: rgba(0, 0, 0, 0.3); border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #e8e8ec; font-size: var(--step--2); font-weight: 600; line-height: 1.25; text-decoration: none;
   }
-  .attr-jumpnav__summary::-webkit-details-marker { display: none; }
-  .attr-jumpnav__summary::after { content: '＋'; font-size: var(--step-1); line-height: 1; color: var(--accent); }
-  .attr-jumpnav[open] > .attr-jumpnav__summary::after { content: '－'; }
-  .attr-jumpnav__groups {
-    display: flex;
-    flex-direction: column;
-    gap: var(--sp-2);
-    padding: var(--sp-2) 0 var(--sp-2);
+  .ab-chip:hover { border-color: var(--pool); color: #fff; }
+  @media (pointer: coarse) { .ab-chip { min-height: 44px; } }
+
+  /* Filter chips */
+  .ab-filter { display: flex; flex-wrap: wrap; gap: var(--sp-2); margin: 0 0 var(--sp-6); }
+  .ab-filter__btn {
+    display: inline-flex; align-items: center; gap: 7px; min-height: var(--control); padding: 0 14px;
+    border-radius: 999px; border: 1px solid rgba(255, 255, 255, 0.12); background: rgba(0, 0, 0, 0.3);
+    color: #c8c8d0; font: 600 var(--step--1)/1 var(--font-body, inherit); cursor: pointer;
   }
-  .attr-jumpnav__group {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: var(--sp-2); /* 8px between separate targets */
+  .ab-filter__btn i { width: 9px; height: 9px; border-radius: 50%; background: var(--pool, var(--accent)); }
+  .ab-filter__btn span { color: var(--ink-muted); font-weight: 500; }
+  .ab-filter__btn:hover { border-color: rgba(255, 255, 255, 0.3); color: #fff; }
+  .ab-filter__btn[aria-pressed="true"] { border-color: var(--pool, var(--accent)); background: color-mix(in srgb, var(--pool, var(--accent)) 14%, transparent); color: #fff; }
+
+  /* Pools */
+  .ab-groups[data-show]:not([data-show="all"]) .ab-pool { display: none; }
+  .ab-groups[data-show="firepower"] .ab-pool[data-group="firepower"],
+  .ab-groups[data-show="toughness"] .ab-pool[data-group="toughness"],
+  .ab-groups[data-show="engineering"] .ab-pool[data-group="engineering"],
+  .ab-groups[data-show="universal"] .ab-pool[data-group="universal"],
+  .ab-groups[data-show="damage-type-attributes"] .ab-pool[data-group="damage-type-attributes"] { display: block; }
+  .ab-pool { margin: 0 0 var(--sp-8); scroll-margin-top: calc(var(--nav-height, 64px) + 16px); }
+  .ab-pool__h {
+    display: flex; align-items: center; gap: 10px; margin: 0 0 var(--sp-3); padding: 0; border: 0; background: none;
+    font-family: var(--font-heading); font-size: var(--step-2); font-weight: 900; color: var(--pool);
   }
-  .attr-jumpnav__cat {
-    font-family: var(--font-mono);
-    font-size: var(--text-xs);
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-    padding: 3px 10px;
-    border: 1px solid;
-    border-radius: 999px;
-    text-decoration: none;
+  .ab-pool__h::before, .ab-pool__h::after { display: none; }
+  .ab-pool__n { font-family: var(--font-body, inherit); font-size: var(--step--1); font-weight: 600; color: var(--ink-muted); }
+  .ab-pool__note { max-width: 70ch; margin: calc(var(--sp-2) * -1) 0 var(--sp-3); color: #b8b8c0; font-size: var(--step--1); line-height: var(--lh-small); }
+
+  /* Cards: the stat's in-game description up front, our notes when opened */
+  /* phones: two columns of names (the description is in the panel); wider: the description on the card */
+  .ab-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--sp-2); }
+  @media (min-width: 40em) { .ab-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--sp-3); } }
+  @media (min-width: 64em) { .ab-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+  .ab-card {
+    min-width: 0; border-radius: 10px; scroll-margin-top: calc(var(--nav-height, 64px) + 16px); cursor: pointer;
+    background: linear-gradient(180deg, #18191d, #121316); border: 1px solid rgba(255, 255, 255, 0.07);
+    box-shadow: inset 3px 0 0 var(--pool);
+    transition: border-color 0.15s ease;
   }
-  .attr-jumpnav__link {
-    font-size: var(--text-xs);
-    color: #b8b8c0;
-    text-decoration: none;
-    padding: 3px 8px;
-    border: 1px solid rgba(255,255,255,0.08);
-    border-radius: 6px;
-    transition: all 0.15s;
+  .ab-card:hover { border-color: color-mix(in srgb, var(--pool) 45%, transparent); }
+  .ab-card[open] { grid-column: 1 / -1; border-color: color-mix(in srgb, var(--pool) 55%, transparent); cursor: auto; }
+  .ab-card:target, .ab-card.is-flash { animation: ab-flash 1.4s ease-out; }
+  @keyframes ab-flash { 0% { box-shadow: inset 3px 0 0 var(--pool), 0 0 0 2px var(--pool); } 100% { box-shadow: inset 3px 0 0 var(--pool), 0 0 0 0 transparent; } }
+  .ab-card__top {
+    position: relative; display: flex; flex-direction: column; gap: 6px; min-height: 84px;
+    padding: 14px 44px 14px 18px; cursor: pointer; list-style: none;
   }
-  .attr-jumpnav__link:hover {
-    color: var(--accent);
-    border-color: var(--accent);
+  .ab-card__top::-webkit-details-marker { display: none; }
+  .ab-card__top:focus-visible { outline: 3px solid var(--accent); outline-offset: -3px; border-radius: 10px; }
+  @supports selector(:has(a)) {
+    .ab-card__top:focus-visible { outline: none; }
+    .ab-card:has(> .ab-card__top:focus-visible) { outline: 3px solid var(--accent); outline-offset: 2px; }
   }
-  .attr-sort {
-    display: flex;
-    align-items: center;
-    gap: var(--sp-2);
-    margin-bottom: var(--sp-8); /* the first pool's heading sits closer to its own list than to these buttons */
+  .ab-card__name { font-family: var(--font-heading); font-size: var(--step-0); font-weight: 800; line-height: 1.2; color: #fff; }
+  .ab-card__text { font-size: var(--step--1); line-height: 1.45; color: #b9bcc4; }
+  .ab-card__chev { position: absolute; top: 17px; right: 14px; width: 14px; height: 14px; }
+  .ab-card__chev::before, .ab-card__chev::after {
+    content: ''; position: absolute; left: 0; top: 6px; width: 14px; height: 2px; border-radius: 1px;
+    background: var(--ink-muted); transition: transform 0.2s ease, background-color 0.15s ease;
   }
-  .attr-sort__label {
-    font-family: var(--font-mono);
-    font-size: var(--text-xs);
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-    color: #8888a0;
-  }
-  .attr-sort__btn {
-    font-family: var(--font-mono);
-    font-size: var(--text-xs);
-    color: #b8b8c0;
-    background: rgba(0,0,0,0.3);
-    border: 1px solid rgba(255,255,255,0.1);
-    border-radius: 6px;
-    padding: 5px 12px;
-    min-height: var(--control-sm);
-    cursor: pointer;
-    transition: all 0.15s;
-  }
-  /* touch screens: 44px sort buttons and jump links */
-  @media (pointer: coarse) {
-    .attr-sort__btn { min-height: var(--control); }
-    .attr-jumpnav__link, .attr-jumpnav__cat { display: inline-flex; align-items: center; min-height: var(--control); }
-  }
-  .attr-sort__btn.is-active {
-    color: var(--accent);
-    border-color: var(--accent);
-    background: rgba(242,104,34,0.08);
-  }
-  .attr-pool {
-    margin-bottom: var(--sp-12);
-  }
-  .attr-pool__title {
-    font-family: var(--font-heading);
-    font-size: var(--text-2xl);
-    font-weight: 900;
-    margin: 0 0 var(--sp-5) 0;
-    padding-bottom: var(--sp-2);
-    border-bottom: 2px solid;
-  }
-  .attr-pool__count {
-    font-family: var(--font-mono);
-    font-size: var(--text-xs);
-    font-weight: 400;
-    color: var(--ink-muted); /* solid grey: the pool colour at 60% was 3.2-4.2:1 at 13px */
-    margin-left: var(--sp-2);
-  }
-  .attr-entry {
-    max-width: calc(var(--measure) + 2 * var(--sp-5));
-    margin-bottom: var(--sp-6);
-    padding: var(--sp-5);
-    background: rgba(0,0,0,0.2);
-    border: 1px solid rgba(255,255,255,0.06);
-    border-radius: 8px;
-  }
-  .attr-entry:target {
-    border-color: var(--accent);
-    box-shadow: 0 0 0 1px rgba(242,104,34,0.3);
-  }
-  .attr-entry__title {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: var(--sp-2);
-    font-family: var(--font-heading);
-    font-size: var(--text-lg);
-    font-weight: 800;
-    color: #fff;
-    margin: 0 0 var(--sp-3) 0;
-  }
-  .attr-entry__anchor {
-    color: var(--ink-muted); /* the faint 25% white was 2:1 */
-    text-decoration: none;
-  }
-  .attr-entry__anchor:hover { color: var(--accent); }
-  .attr-entry__badge {
-    font-family: var(--font-mono);
-    font-size: var(--step--2);
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-    padding: 2px 8px;
-    border: 1px solid;
-    border-radius: 999px;
-  }
-  .attr-entry__body {
-    color: #c8c8d0;
-    line-height: 1.7;
-    font-size: var(--text-sm);
-  }
-  /* the attribute's own description from the in-game Build-Making Database */
-  .attr-entry__ingame {
-    margin: 0 0 var(--sp-3) 0;
-    padding-left: var(--sp-3);
-    border-left: 2px solid rgba(255,255,255,0.18);
-    color: #e2e2e8;
-    font-size: var(--text-sm);
-    line-height: 1.6;
-  }
-  .attr-entry__ingame span {
-    font-family: var(--font-mono);
-    font-size: var(--step--2);
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-    color: var(--ink-muted);
-    margin-right: 4px;
-  }
-  .attr-pool--legacy .attr-pool__title { color: #b8b8c0; border-color: rgba(255,255,255,0.15); }
-  .attr-pool__note { max-width: 72ch; color: #b8b8c0; line-height: 1.7; margin: 0 0 var(--sp-5); }
-  .attr-entry__body p { margin: 0 0 var(--sp-3) 0; }
-  .attr-entry__more {
-    margin-top: var(--sp-2);
-    border-top: 1px solid rgba(255,255,255,0.06);
-    padding-top: var(--sp-3);
-  }
-  /* a readable toggle (it repeats on every attribute, so it isn't 13px small print), 44px tall on touch screens */
-  .attr-entry__more summary {
-    cursor: pointer;
-    font-size: var(--step--1);
-    font-weight: 600;
-    color: var(--accent);
-    padding-block: var(--sp-1);
-  }
-  @media (pointer: coarse) {
-    .attr-entry__more summary { padding-block: 10px; }
-  }
-  .attr-entry__more h4 {
-    font-family: var(--font-heading);
-    font-size: var(--text-sm);
-    font-weight: 700;
-    color: #fff;
-    margin: var(--sp-4) 0 var(--sp-2) 0;
+  .ab-card__chev::after { transform: rotate(90deg); }
+  .ab-card:hover .ab-card__chev::before, .ab-card:hover .ab-card__chev::after,
+  .ab-card[open] .ab-card__chev::before, .ab-card[open] .ab-card__chev::after { background: var(--pool); }
+  .ab-card[open] .ab-card__chev::after { transform: rotate(0deg); }
+  .ab-card__more { padding: 0 18px 16px; border-top: 1px solid rgba(255, 255, 255, 0.06); font-size: var(--step--1); line-height: var(--lh-small, 1.55); color: #c8c8d0; }
+  .ab-card__more p, .ab-card__more dd { max-width: none; }
+  .ab-card__lead { margin: 12px 0; color: #e2e2e8; }
+  .ab-card__more dl { display: grid; gap: 10px; margin: 0; }
+  .ab-card__more dt { margin: 0 0 2px; font-weight: 700; font-size: var(--step--2); color: var(--pool); }
+  .ab-card__more dd { margin: 0; }
+  /* Phones: names only, two to a row (after the rules above so these win) */
+  @media (max-width: 39.99em) {
+    .ab-card__top { min-height: 64px; padding: 12px 30px 12px 14px; justify-content: center; }
+    .ab-card__name { font-size: var(--step--1); hyphens: auto; }
+    .ab-card:not([open]) .ab-card__text { display: none; }
+    .ab-card:not([open]) .ab-card__chev { top: 50%; right: 10px; margin-top: -7px; }
   }
 
-  .attr-entry__card { max-width: 440px; margin: var(--sp-2) 0 var(--sp-3); }
-  .attr-entry__card img { width: 100%; height: auto; border-radius: 6px; display: block; }
+  /* How rolls work */
+  .ab-facts { margin: var(--sp-4) 0 var(--sp-8); }
+  .ab-facts__grid { list-style: none; margin: 0 0 var(--sp-3); padding: 0; display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--sp-3); }
+  @media (min-width: 40em) { .ab-facts__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (min-width: 64em) { .ab-facts__grid { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+  .ab-facts__grid li {
+    display: flex; flex-direction: column; gap: 4px; margin: 0; padding: var(--sp-3) var(--sp-4); max-width: none;
+    border-radius: 10px; background: rgba(0, 0, 0, 0.25); border: 1px solid rgba(255, 255, 255, 0.07);
+  }
+  .ab-facts__grid b { font-family: var(--font-heading); font-size: var(--step-0); font-weight: 800; color: var(--accent); }
+  .ab-facts__grid span { font-size: var(--step--1); line-height: 1.45; color: #c8c8d0; }
+  .ab-mods { border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 10px; background: rgba(0, 0, 0, 0.2); }
+  .ab-mods summary { display: flex; align-items: center; min-height: var(--control); padding: 0 var(--sp-4); cursor: pointer; font-weight: 600; color: #e2e2e8; }
+  .ab-mods summary:hover { color: var(--accent); }
+  .ab-mods ul { margin: 0; padding: 0 var(--sp-4) 0 calc(var(--sp-4) * 2); color: #c8c8d0; font-size: var(--step--1); line-height: 1.55; }
+  .ab-mods li { margin: 0 0 6px; max-width: 75ch; }
+  .ab-mods p { margin: var(--sp-2) var(--sp-4) var(--sp-4); font-size: var(--step--1); color: #b8b8c0; }
+  .ab-mods a { color: var(--accent); }
+
+  /* The details panel: a centered card on wide screens, a sheet from the bottom on phones */
+  .ab-sheet { padding: 0; border: 0; background: transparent; color: inherit; max-width: none; max-height: none; width: 100%; height: 100%; }
+  .ab-sheet::backdrop { background: rgba(5, 6, 8, 0.72); backdrop-filter: blur(3px); }
+  .ab-sheet[open] { display: grid; place-items: center; }
+  .ab-sheet__panel {
+    --pool: var(--accent);
+    position: relative; display: flex; flex-direction: column; width: min(760px, calc(100vw - 32px)); max-height: min(84vh, 820px);
+    border-radius: 14px; background: linear-gradient(180deg, #1a1b20, #121317); border: 1px solid color-mix(in srgb, var(--pool) 40%, rgba(255, 255, 255, 0.08));
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.6), inset 0 3px 0 var(--pool); overflow: hidden;
+  }
+  .ab-sheet[open] .ab-sheet__panel { animation: ab-sheet-in 0.22s cubic-bezier(0.2, 0.9, 0.3, 1); }
+  @keyframes ab-sheet-in { from { opacity: 0; transform: translateY(14px) scale(0.98); } to { opacity: 1; transform: none; } }
+  .ab-sheet__hd { position: relative; padding: var(--sp-5) 60px var(--sp-4) var(--sp-5); border-bottom: 1px solid rgba(255, 255, 255, 0.07); }
+  .ab-sheet__pool { display: block; margin-bottom: 4px; font-size: var(--step--2); font-weight: 700; color: var(--pool); }
+  .ab-sheet__title { margin: 0; padding: 0; border: 0; background: none; font-family: var(--font-heading); font-size: var(--step-2); font-weight: 900; line-height: 1.15; color: #fff; }
+  .ab-sheet__title::before, .ab-sheet__title::after { display: none; }
+  .ab-sheet__game { margin: 8px 0 0; max-width: none; font-size: var(--step--1); line-height: 1.5; color: #c9ccd3; }
+  .ab-sheet__game:empty { display: none; }
+  .ab-sheet__x {
+    position: absolute; top: 12px; right: 12px; display: grid; place-items: center; width: 44px; height: 44px;
+    border: 0; border-radius: 10px; background: rgba(255, 255, 255, 0.05); color: #c8c8d0; cursor: pointer;
+  }
+  .ab-sheet__x:hover { background: rgba(255, 255, 255, 0.1); color: #fff; }
+  .ab-sheet__body { overflow-y: auto; overscroll-behavior: contain; padding: var(--sp-4) var(--sp-5) var(--sp-5); font-size: var(--step--1); line-height: 1.55; color: #c8c8d0; }
+  .ab-sheet__body:empty { display: none; }
+  .ab-sheet__body .ab-card__more { padding: 0; border: 0; }
+  .ab-sheet__body .ab-card__lead { margin-top: 0; font-size: var(--step-0); line-height: 1.5; }
+  @media (min-width: 48em) {
+    .ab-sheet__body dl { display: block; columns: 2; column-gap: var(--sp-6); }
+    .ab-sheet__body dl > div { break-inside: avoid; padding-bottom: var(--sp-4); }
+  }
+  .ab-sheet__ft { display: flex; justify-content: space-between; gap: var(--sp-2); padding: var(--sp-2) var(--sp-3) max(var(--sp-2), env(safe-area-inset-bottom)); border-top: 1px solid rgba(255, 255, 255, 0.07); }
+  .ab-sheet__nav {
+    display: inline-flex; align-items: center; gap: 6px; min-height: 44px; max-width: 48%; padding: 0 12px;
+    border: 0; border-radius: 8px; background: none; color: #c8c8d0; font: 600 var(--step--1)/1.2 var(--font-body); cursor: pointer; text-align: left;
+  }
+  .ab-sheet__nav span:not([aria-hidden]) { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .ab-sheet__nav [aria-hidden] { font-size: 1.4em; line-height: 1; color: var(--pool); }
+  .ab-sheet__nav:hover { background: rgba(255, 255, 255, 0.06); color: #fff; }
+  .ab-sheet__nav--next { margin-left: auto; text-align: right; }
+  .ab-sheet__nav[hidden] { display: none; }
+  @media (max-width: 39.99em) {
+    .ab-sheet[open] { place-items: end stretch; }
+    .ab-sheet__panel { width: 100%; max-height: 88dvh; border-radius: 16px 16px 0 0; }
+    .ab-sheet[open] .ab-sheet__panel { animation-name: ab-sheet-up; }
+    @keyframes ab-sheet-up { from { transform: translateY(40px); opacity: 0.4; } to { transform: none; opacity: 1; } }
+    .ab-sheet__hd { padding: var(--sp-4) 60px var(--sp-3) var(--sp-4); }
+    .ab-sheet__body { padding: var(--sp-3) var(--sp-4) var(--sp-4); }
+  }
+  :global(html.ab-lock) { overflow: hidden; scrollbar-gutter: stable; }
+
+  @media (prefers-reduced-motion: reduce) {
+    .ab-card:target, .ab-card.is-flash, .ab-sheet[open] .ab-sheet__panel { animation: none; }
+    .ab-card__chev::before, .ab-card__chev::after { transition: none; }
+  }
 </style>
 
 <script>
-  // Sort toggle: "By stat pool" (default DOM order) vs "A to Z" (flat alphabetical)
-  const wrap = document.getElementById('attr-sections');
-  const buttons = document.querySelectorAll<HTMLButtonElement>('.attr-sort__btn');
-  if (wrap) {
-    const pools = Array.from(wrap.querySelectorAll<HTMLElement>('.attr-pool'));
-    const originalOrder = pools.map(p => ({ pool: p, entries: Array.from(p.querySelectorAll<HTMLElement>('.attr-entry')) }));
-    let flat: HTMLElement | null = null;
+  // Filter by pool. A card opens its details in the panel (in place, if the browser has no <dialog>),
+  // "What to chase" chips and links like #weapon-damage open the same panel, and the panel's arrows step
+  // through the cards on show.
+  const wrap = document.getElementById('ab-groups');
+  const buttons = Array.from(document.querySelectorAll<HTMLButtonElement>('.ab-filter__btn'));
+  const show = (id: string) => {
+    if (!wrap) return;
+    wrap.dataset.show = id;
+    for (const b of buttons) b.setAttribute('aria-pressed', b.dataset.filter === id ? 'true' : 'false');
+  };
+  for (const b of buttons) b.addEventListener('click', () => show(b.dataset.filter || 'all'));
 
-    function sortAZ() {
-      if (!flat) {
-        flat = document.createElement('section');
-        flat.className = 'attr-pool';
-        flat.id = 'attr-flat';
-        const all = originalOrder.flatMap(o => o.entries);
-        all.sort((a, b) => (a.dataset.name || '').localeCompare(b.dataset.name || ''));
-        all.forEach(e => flat!.appendChild(e));
-      } else {
-        // re-append (entries may have been restored to pools); only the pool entries, not the damage-type section below
-        const all = originalOrder.flatMap(o => o.entries);
-        all.sort((a, b) => (a.dataset.name || '').localeCompare(b.dataset.name || ''));
-        all.forEach(e => flat!.appendChild(e));
+  const sheet = document.getElementById('ab-sheet') as HTMLDialogElement | null;
+  const canSheet = !!(sheet && typeof sheet.showModal === 'function');
+  const cards = Array.from(document.querySelectorAll<HTMLDetailsElement>('.ab-card'));
+  const $ = (id: string) => document.getElementById(id) as HTMLElement;
+  let current: HTMLDetailsElement | null = null;
+
+  const visible = () => cards.filter((c) => c.offsetParent !== null);
+  const fill = (card: HTMLDetailsElement) => {
+    current = card;
+    const panel = sheet!.querySelector<HTMLElement>('.ab-sheet__panel')!;
+    panel.style.setProperty('--pool', getComputedStyle(card).getPropertyValue('--pool'));
+    $('ab-sheet-pool').textContent = card.dataset.poolName || '';
+    $('ab-sheet-title').textContent = card.querySelector('.ab-card__name')?.textContent || '';
+    $('ab-sheet-game').textContent = card.querySelector('.ab-card__text')?.textContent || '';
+    const more = card.querySelector('.ab-card__more');
+    $('ab-sheet-body').replaceChildren(...(more ? [more.cloneNode(true)] : []));
+    $('ab-sheet-body').scrollTop = 0;
+    const list = visible();
+    const i = list.indexOf(card);
+    const prev = list[i - 1];
+    const next = list[i + 1];
+    const nameOf = (c?: HTMLDetailsElement) => (c ? c.querySelector('.ab-card__name')?.textContent || '' : '');
+    $('ab-sheet-prev').hidden = !prev;
+    $('ab-sheet-next').hidden = !next;
+    $('ab-sheet-prev-name').textContent = nameOf(prev);
+    $('ab-sheet-next-name').textContent = nameOf(next);
+    $('ab-sheet-prev').setAttribute('aria-label', `Previous: ${nameOf(prev)}`);
+    $('ab-sheet-next').setAttribute('aria-label', `Next: ${nameOf(next)}`);
+    history.replaceState(null, '', `#${card.id}`);
+  };
+  const openCard = (card: HTMLDetailsElement) => {
+    if (!canSheet) { card.open = true; card.scrollIntoView({ block: 'start' }); return; }
+    fill(card);
+    if (!sheet!.open) {
+      sheet!.showModal();
+      document.documentElement.classList.add('ab-lock');
+    }
+  };
+  const step = (d: number) => {
+    if (!current) return;
+    const list = visible();
+    const next = list[list.indexOf(current) + d];
+    if (next) fill(next);
+  };
+
+  if (canSheet && sheet) {
+    for (const card of cards) {
+      card.querySelector('summary')?.setAttribute('aria-haspopup', 'dialog');
+      card.addEventListener('click', (e) => { e.preventDefault(); openCard(card); });
+    }
+    sheet.addEventListener('close', () => {
+      document.documentElement.classList.remove('ab-lock');
+      history.replaceState(null, '', location.pathname + location.search);
+      if (current) {
+        current.scrollIntoView({ block: 'nearest' });
+        current.querySelector('summary')?.focus({ preventScroll: true });
       }
-      pools.forEach(p => { p.style.display = 'none'; });
-      wrap!.appendChild(flat);
-    }
-
-    function sortPool() {
-      originalOrder.forEach(o => {
-        o.entries.forEach(e => o.pool.appendChild(e));
-        o.pool.style.display = '';
-      });
-      if (flat && flat.parentNode) flat.parentNode.removeChild(flat);
-    }
-
-    buttons.forEach(btn => {
-      btn.addEventListener('click', () => {
-        buttons.forEach(b => b.classList.toggle('is-active', b === btn));
-        if (btn.dataset.sort === 'az') sortAZ(); else sortPool();
-      });
+    });
+    sheet.addEventListener('click', (e) => { if (e.target === sheet) sheet.close(); });
+    $('ab-sheet-x').addEventListener('click', () => sheet.close());
+    $('ab-sheet-prev').addEventListener('click', () => step(-1));
+    $('ab-sheet-next').addEventListener('click', () => step(1));
+    sheet.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowLeft') { e.preventDefault(); step(-1); }
+      else if (e.key === 'ArrowRight') { e.preventDefault(); step(1); }
     });
   }
+
+  const bySlug = (slug: string) => {
+    const el = document.getElementById(slug);
+    return el instanceof HTMLDetailsElement && el.classList.contains('ab-card') ? el : null;
+  };
+  const reveal = (card: HTMLDetailsElement) => {
+    const group = card.closest<HTMLElement>('[data-group]');
+    if (wrap && wrap.dataset.show !== 'all' && group && group.dataset.group !== wrap.dataset.show) show('all');
+  };
+  for (const a of document.querySelectorAll<HTMLAnchorElement>('[data-open]')) {
+    a.addEventListener('click', (e) => {
+      const card = bySlug(a.dataset.open || '');
+      if (!card) return;
+      e.preventDefault();
+      reveal(card);
+      openCard(card);
+    });
+  }
+  const fromHash = () => {
+    const card = bySlug(decodeURIComponent(location.hash.slice(1)));
+    if (!card) return;
+    reveal(card);
+    if (canSheet) card.scrollIntoView({ block: 'center' });
+    openCard(card);
+  };
+  fromHash();
+  window.addEventListener('hashchange', fromHash);
 </script>
 </DatabaseLayout>
