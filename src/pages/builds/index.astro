@@ -41,7 +41,7 @@ const itemListLd = {
       Every build guide on the site, our own and the creators' we've documented. Each card shows the patch it was verified on.
     </p>
 
-    <div class="filter-bar filter-bar--grid" id="build-filters" role="group" aria-label="Filter builds">
+    <div class="filter-bar" id="build-filters" role="group" aria-label="Filter builds">
       <button class="filter-btn is-active" data-filter="all">All</button>
       <div class="filter-separator" aria-hidden="true"></div>
       <button class="filter-btn" data-filter="pve">PvE</button>
@@ -51,14 +51,10 @@ const itemListLd = {
       {specs.map(s => <button class="filter-btn" data-filter={s}>{s}</button>)}
     </div>
 
-    <div class="class-hubs">
-      <span class="class-hubs__label">Class Hubs</span>
-      <a href="/class/vanguard/" class="class-hubs__link">Vanguard</a>
-      <a href="/class/field-medic/" class="class-hubs__link">Field Medic</a>
-      <a href="/class/demolitionist/" class="class-hubs__link">Demolitionist</a>
-      <a href="/class/tech-operator/" class="class-hubs__link">Tech Operator</a>
-      <a href="/class/bulwark/" class="class-hubs__link">Bulwark</a>
-    </div>
+    {/* The class guide link shows up when its class is picked in the filter row above */}
+    <p class="class-guide" id="class-guide" hidden>
+      {specs.map(s => <a href={`/class/${s.toLowerCase().replace(/\s+/g, '-')}/`} data-spec={s} hidden>{s} class guide: skills, talents and how to play</a>)}
+    </p>
 
     <div class="grid grid--3" id="builds-grid">
       {sorted.map((build, i) => (
@@ -185,9 +181,18 @@ const itemListLd = {
     }
   }
 
+  const classGuide = document.getElementById('class-guide');
   function setActiveButton(activeBtn: Element) {
     filterBar?.querySelectorAll('.filter-btn').forEach((b) => b.classList.remove('is-active'));
     activeBtn.classList.add('is-active');
+    // show the guide link for the class that was picked, if the filter is a class
+    const picked = activeBtn.getAttribute('data-filter');
+    let any = false;
+    classGuide?.querySelectorAll<HTMLElement>('a[data-spec]').forEach((a) => {
+      a.hidden = a.dataset.spec !== picked;
+      if (!a.hidden) any = true;
+    });
+    if (classGuide) classGuide.hidden = !any;
   }
 
   if (filterBar) {
@@ -233,20 +238,9 @@ const itemListLd = {
 </script>
 
 <style>
-  /* class hub links: 36px chips (44px on touch screens) */
-  .class-hubs { display: flex; flex-wrap: wrap; align-items: center; gap: var(--sp-2); margin-bottom: var(--sp-8); }
-  .class-hubs__label { font-family: var(--font-mono); font-size: var(--step--2); color: var(--ink-muted); text-transform: uppercase; letter-spacing: 0.08em; margin-right: var(--sp-1); }
-  .class-hubs__link {
-    display: inline-flex; align-items: center; min-height: var(--control-sm); padding: 0 var(--sp-3);
-    font-size: var(--step--2); color: var(--ink-muted); text-decoration: none;
-    background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1); border-radius: 999px;
-    transition: all 200ms ease;
-  }
-  .class-hubs__link:hover { color: var(--accent); border-color: var(--accent); }
-  @media (pointer: coarse) { .class-hubs__link { min-height: var(--control); } }
+  #build-filters { margin-bottom: var(--sp-4); }
+  .class-guide { margin: 0 0 var(--sp-4); font-size: var(--step--1); }
+  #builds-grid { margin-top: var(--sp-4); }
   .filter-separator { width: 1px; height: 1.5rem; background: var(--border); margin: 0 var(--sp-2); align-self: center; }
-  /* phones: two columns until there's room for three (class names like "Demolitionist" need about 8.5rem) */
-  @media (max-width: 44.99em) {
-    #build-filters.filter-bar--grid { grid-template-columns: repeat(auto-fill, minmax(min(100%, 8.5rem), 1fr)); }
-  }
+  @media (max-width: 44.99em) { .filter-separator { display: none; } }
 </style>

@@ -1,21 +1,12 @@
-/* Self-hosted Google Fonts — DM Sans, Inter, JetBrains Mono */
+/* Self-hosted fonts: DM Sans (all text) and JetBrains Mono (labels). Not linked; BaseLayout.astro
+   inlines these rules. Kept in step with it for reference. */
 
 @font-face {
   font-family: 'DM Sans';
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400 700;
   font-display: swap;
-  src: url('/fonts/dm-sans-700.woff2') format('woff2');
-}
-
-/* Inter is a variable font: one file covers every weight. Not linked any more; BaseLayout.astro
-   inlines these rules. Kept in step with it for reference. */
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400 500;
-  font-display: swap;
-  src: url('/fonts/inter-400.woff2') format('woff2');
+  src: url('/fonts/dm-sans.woff2') format('woff2');
 }
 
 @font-face {

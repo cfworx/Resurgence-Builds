@@ -94,3 +94,14 @@ screenshots in phone emulation are misleading).
 - Cards in one row are the same height (weapon cards included). No clamped "..." descriptions on hub cards.
 - The database hub is two columns from tablet width up (ten cards, no stray last card).
 - Running text inside wide panels is capped near 68ch.
+
+## Fonts, filters and card text, November 10, 2026
+
+- Two typefaces: DM Sans for all text (one variable file, `public/fonts/dm-sans.woff2`) and JetBrains Mono
+  for labels. Inter is gone. The Build Planner keeps Rajdhani for its game-style numbers.
+- One filter look everywhere, defined once in `global.css` (`.filter-btn`, `.ab-filter__btn`, `.tfilter`,
+  `.ti-sort__btn`, `.ti-filter__btn`): square mono buttons, 44px tall. Set `--filter-color` on a button to
+  tint its selected state. Don't restyle these in page styles.
+- Builds page: one wrapped filter row. No separate "Class hubs" row; picking a class shows that class's
+  guide link under the filters.
+- Card descriptions use the body size (`--step-0`), not 15px.

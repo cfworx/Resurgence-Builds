@@ -21,7 +21,7 @@
 
   /* Typography */
   --font-heading: 'DM Sans', sans-serif;
-  --font-body: 'Inter', sans-serif;
+  --font-body: 'DM Sans', sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
 
   /* Spacing scale (4px base) */
@@ -88,7 +88,7 @@
   /* Cards and panels */
   --pad-card: 1rem;    /* every ordinary card: 16px on phones, 24px from 720px */
 
-  /* Line length: about 80 characters of Inter body text (Inter fits ~1.4 characters per ch) */
+  /* Line length: about 80 characters of body text (DM Sans fits ~1.4 characters per ch) */
   --measure: 58ch;
 
   /* Text inside boxes (article headings, callouts, quotes, table cells, contents, FAQ, share box) starts this far
@@ -336,7 +336,7 @@ pre code { background: none; padding: 0; }
 }
 
 .card__description {
-  font-size: var(--step--1);
+  font-size: var(--step-0);
   color: var(--ink-muted);
   line-height: var(--lh-small);
 }
@@ -945,25 +945,35 @@ html.mobile-nav-open { overflow: hidden; }
   margin-bottom: var(--sp-6);
 }
 
-.filter-btn {
+/* One look for every filter and sort button on the site (posts, builds, guides, database pages, tier
+   lists). A button may set --filter-color (a stat pool, a role) to tint its own selected state. */
+.filter-btn, .ab-filter__btn, .tfilter, .ti-sort__btn, .ti-filter__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  min-height: var(--control);
+  padding: 0 var(--sp-3);
   font-family: var(--font-mono);
   font-size: var(--text-xs);
-  padding: var(--sp-2) var(--sp-3);
+  font-weight: 400;
+  line-height: 1.2;
+  white-space: nowrap;
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--border-radius);
   color: var(--ink-muted);
   cursor: pointer;
-  transition: all var(--transition-fast);
-  min-height: var(--control);
-  display: inline-flex;
-  align-items: center;
+  transition: border-color var(--transition-fast), color var(--transition-fast), background-color var(--transition-fast);
 }
 
-.filter-btn:hover,
-.filter-btn.is-active {
-  border-color: var(--accent);
-  color: var(--accent);
+:is(.filter-btn, .ab-filter__btn, .tfilter, .ti-sort__btn, .ti-filter__btn):hover {
+  border-color: var(--filter-color, var(--accent));
+  color: var(--ink-heading);
+}
+:is(.filter-btn, .ab-filter__btn, .tfilter, .ti-sort__btn, .ti-filter__btn):is(.is-active, [aria-pressed="true"]) {
+  border-color: var(--filter-color, var(--accent));
+  color: var(--filter-color, var(--accent));
+  background: color-mix(in srgb, var(--filter-color, var(--accent)) 10%, var(--surface));
 }
 
 /* --- Pagefind UI Overrides --- */

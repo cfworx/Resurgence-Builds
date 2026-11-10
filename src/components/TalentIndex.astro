@@ -173,27 +173,7 @@ const allRoles = ['DPS', 'Skill', 'Tank/Sustain', 'Team', 'Utility'].filter(r =>
     letter-spacing: 0.06em;
     color: #8888a0;
   }
-  .ti-sort__btn, .ti-filter__btn {
-    font-family: var(--font-mono);
-    font-size: var(--text-xs);
-    color: var(--ink-muted);
-    background: rgba(0,0,0,0.3);
-    border: 1px solid rgba(255,255,255,0.1);
-    border-radius: 6px;
-    padding: 5px 12px;
-    cursor: pointer;
-    transition: all 0.15s;
-  }
-  .ti-sort__btn.is-active, .ti-filter__btn.is-active {
-    color: var(--accent);
-    border-color: var(--accent);
-    background: rgba(242,104,34,0.08);
-  }
-  .ti-filter__btn[data-role]:not([data-role="all"]).is-active {
-    color: var(--role-color);
-    border-color: var(--role-color);
-    background: transparent;
-  }
+  .ti-filter__btn[data-role]:not([data-role="all"]) { --filter-color: var(--role-color); }
   .ti-entry {
     max-width: calc(var(--measure) + 2 * var(--sp-5));
     margin-bottom: var(--sp-5);

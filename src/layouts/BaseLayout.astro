@@ -71,15 +71,15 @@ gtag('config', '${GA4_ID}');`}></script>
   <link rel="sitemap" href="/sitemap-index.xml" />
 
 
-  {/* Self-hosted fonts. The @font-face rules are inline (same as public/fonts/fonts.css) so the
-      browser doesn't wait on an extra render-blocking stylesheet before it can paint. Inter is a
-      variable font, so one file covers both weights (inter-500.woff2 was a byte-identical copy). */}
+  {/* Self-hosted fonts: DM Sans for all text, JetBrains Mono for labels. The @font-face rules are
+      inline (same as public/fonts/fonts.css) so the browser doesn't wait on an extra render-blocking
+      stylesheet before it can paint. DM Sans is a variable font: one file covers every weight we
+      use; the range stops at 700 so 800 and 900 headings keep the weight they always had. */}
   {/* Preload the fonts used above the fold so they usually arrive before the first paint: when
       a font swaps in late, wrapped text (the mono badges especially) reflows and moves the page. */}
-  <link rel="preload" href="/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin />
-  <link rel="preload" href="/fonts/dm-sans-700.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/dm-sans.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="/fonts/jetbrains-mono-400.woff2" as="font" type="font/woff2" crossorigin />
-  <style is:inline>@font-face{font-family:'DM Sans';font-style:normal;font-weight:700;font-display:swap;src:url('/fonts/dm-sans-700.woff2') format('woff2')}@font-face{font-family:'Inter';font-style:normal;font-weight:400 500;font-display:swap;src:url('/fonts/inter-400.woff2') format('woff2')}@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400;font-display:swap;src:url('/fonts/jetbrains-mono-400.woff2') format('woff2')}</style>
+  <style is:inline>@font-face{font-family:'DM Sans';font-style:normal;font-weight:400 700;font-display:swap;src:url('/fonts/dm-sans.woff2') format('woff2')}@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400;font-display:swap;src:url('/fonts/jetbrains-mono-400.woff2') format('woff2')}</style>
 
   <SEO
     title={title}
