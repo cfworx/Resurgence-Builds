@@ -236,7 +236,7 @@ const itemListLd = {
   .ab-filter__btn {
     display: inline-flex; align-items: center; gap: 7px; min-height: var(--control); padding: 0 14px;
     border-radius: 999px; border: 1px solid rgba(255, 255, 255, 0.12); background: rgba(0, 0, 0, 0.3);
-    color: #c8c8d0; font: 600 var(--step--1)/1 var(--font-body, inherit); cursor: pointer;
+    color: var(--ink); font: 600 var(--step--1)/1 var(--font-body, inherit); cursor: pointer;
   }
   .ab-filter__btn i { width: 9px; height: 9px; border-radius: 50%; background: var(--pool, var(--accent)); }
   .ab-filter__btn span { color: var(--ink-muted); font-weight: 500; }
@@ -257,7 +257,7 @@ const itemListLd = {
   }
   .ab-pool__h::before, .ab-pool__h::after { display: none; }
   .ab-pool__n { font-family: var(--font-body, inherit); font-size: var(--step--1); font-weight: 600; color: var(--ink-muted); }
-  .ab-pool__note { max-width: 70ch; margin: calc(var(--sp-2) * -1) 0 var(--sp-3); color: #b8b8c0; font-size: var(--step--1); line-height: var(--lh-small); }
+  .ab-pool__note { max-width: 70ch; margin: calc(var(--sp-2) * -1) 0 var(--sp-3); color: var(--ink-muted); font-size: var(--step--1); line-height: var(--lh-small); }
 
   /* Cards: the stat's in-game description up front, our notes when opened */
   /* phones: two columns of names (the description is in the panel); wider: the description on the card */
@@ -295,7 +295,7 @@ const itemListLd = {
   .ab-card:hover .ab-card__chev::before, .ab-card:hover .ab-card__chev::after,
   .ab-card[open] .ab-card__chev::before, .ab-card[open] .ab-card__chev::after { background: var(--pool); }
   .ab-card[open] .ab-card__chev::after { transform: rotate(0deg); }
-  .ab-card__more { padding: 0 18px 16px; border-top: 1px solid rgba(255, 255, 255, 0.06); font-size: var(--step--1); line-height: var(--lh-small, 1.55); color: #c8c8d0; }
+  .ab-card__more { padding: 0 18px 16px; border-top: 1px solid rgba(255, 255, 255, 0.06); font-size: var(--step--1); line-height: var(--lh-small, 1.55); color: var(--ink); }
   .ab-card__more p, .ab-card__more dd { max-width: none; }
   .ab-card__lead { margin: 12px 0; color: #e2e2e8; }
   .ab-card__more dl { display: grid; gap: 10px; margin: 0; }
@@ -319,13 +319,13 @@ const itemListLd = {
     border-radius: 10px; background: rgba(0, 0, 0, 0.25); border: 1px solid rgba(255, 255, 255, 0.07);
   }
   .ab-facts__grid b { font-family: var(--font-heading); font-size: var(--step-0); font-weight: 800; color: var(--accent); }
-  .ab-facts__grid span { font-size: var(--step--1); line-height: 1.45; color: #c8c8d0; }
+  .ab-facts__grid span { font-size: var(--step--1); line-height: 1.45; color: var(--ink); }
   .ab-mods { border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 10px; background: rgba(0, 0, 0, 0.2); }
   .ab-mods summary { display: flex; align-items: center; min-height: var(--control); padding: 0 var(--sp-4); cursor: pointer; font-weight: 600; color: #e2e2e8; }
   .ab-mods summary:hover { color: var(--accent); }
-  .ab-mods ul { margin: 0; padding: 0 var(--sp-4) 0 calc(var(--sp-4) * 2); color: #c8c8d0; font-size: var(--step--1); line-height: 1.55; }
+  .ab-mods ul { margin: 0; padding: 0 var(--sp-4) 0 calc(var(--sp-4) * 2); color: var(--ink); font-size: var(--step--1); line-height: 1.55; }
   .ab-mods li { margin: 0 0 6px; max-width: 75ch; }
-  .ab-mods p { margin: var(--sp-2) var(--sp-4) var(--sp-4); font-size: var(--step--1); color: #b8b8c0; }
+  .ab-mods p { margin: var(--sp-2) var(--sp-4) var(--sp-4); font-size: var(--step--1); color: var(--ink-muted); }
   .ab-mods a { color: var(--accent); }
 
   /* The details panel: a centered card on wide screens, a sheet from the bottom on phones */
@@ -348,10 +348,10 @@ const itemListLd = {
   .ab-sheet__game:empty { display: none; }
   .ab-sheet__x {
     position: absolute; top: 12px; right: 12px; display: grid; place-items: center; width: 44px; height: 44px;
-    border: 0; border-radius: 10px; background: rgba(255, 255, 255, 0.05); color: #c8c8d0; cursor: pointer;
+    border: 0; border-radius: 10px; background: rgba(255, 255, 255, 0.05); color: var(--ink); cursor: pointer;
   }
   .ab-sheet__x:hover { background: rgba(255, 255, 255, 0.1); color: #fff; }
-  .ab-sheet__body { overflow-y: auto; overscroll-behavior: contain; padding: var(--sp-4) var(--sp-5) var(--sp-5); font-size: var(--step--1); line-height: 1.55; color: #c8c8d0; }
+  .ab-sheet__body { overflow-y: auto; overscroll-behavior: contain; padding: var(--sp-4) var(--sp-5) var(--sp-5); font-size: var(--step--1); line-height: 1.55; color: var(--ink); }
   .ab-sheet__body:empty { display: none; }
   .ab-sheet__body .ab-card__more { padding: 0; border: 0; }
   .ab-sheet__body .ab-card__lead { margin-top: 0; font-size: var(--step-0); line-height: 1.5; }
@@ -362,7 +362,7 @@ const itemListLd = {
   .ab-sheet__ft { display: flex; justify-content: space-between; gap: var(--sp-2); padding: var(--sp-2) var(--sp-3) max(var(--sp-2), env(safe-area-inset-bottom)); border-top: 1px solid rgba(255, 255, 255, 0.07); }
   .ab-sheet__nav {
     display: inline-flex; align-items: center; gap: 6px; min-height: 44px; max-width: 48%; padding: 0 12px;
-    border: 0; border-radius: 8px; background: none; color: #c8c8d0; font: 600 var(--step--1)/1.2 var(--font-body); cursor: pointer; text-align: left;
+    border: 0; border-radius: 8px; background: none; color: var(--ink); font: 600 var(--step--1)/1.2 var(--font-body); cursor: pointer; text-align: left;
   }
   .ab-sheet__nav span:not([aria-hidden]) { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
   .ab-sheet__nav [aria-hidden] { font-size: 1.4em; line-height: 1; color: var(--pool); }

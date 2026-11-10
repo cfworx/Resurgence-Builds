@@ -1,5 +1,5 @@
 ---
-import { tagHref } from '../utils/tag-href';
+import { tagHref, tagLabel } from '../utils/tag-href';
 import BaseLayout from './BaseLayout.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import SectionTag from '../components/SectionTag.astro';
@@ -189,7 +189,7 @@ const redditShareUrl = `https://reddit.com/submit?url=${encodeURIComponent(Astro
 
         {tagChips.length > 0 && (
           <div class="build-tags">
-            {tagChips.map(tag => <a href={tagHref(tag)} class="tag">{tag}</a>)}
+            {tagChips.map(tag => <a href={tagHref(tag)} class="tag">{tagLabel(tag)}</a>)}
           </div>
         )}
 

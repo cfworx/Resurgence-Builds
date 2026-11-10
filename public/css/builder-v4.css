@@ -485,6 +485,8 @@ body.has-dialog #main-content { z-index: 10002; }
   body.has-dialog .mob-status { display: none; }
   /* the footer can scroll clear of the bar */
   body:has(.lab) { padding-bottom: calc(68px + env(safe-area-inset-bottom, 0px)); }
+  /* keyboard focus and #links stop above the pinned score bar instead of under it */
+  html:has(.lab) { scroll-padding-bottom: calc(76px + env(safe-area-inset-bottom, 0px)); }
 }
 
 /* ---------- smaller screens ---------- */

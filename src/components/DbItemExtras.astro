@@ -64,7 +64,7 @@ const cacheIds = [...new Set(rows.map((r) => r.cacheId))];
 <p class="dbx-dates">Page updated <time datetime={DATABASE_UPDATED}>{fmtDate(DATABASE_UPDATED)}</time>.{rows.length > 0 && <> Drop odds checked <time datetime={dropChecked}>{fmtDate(dropChecked)}</time>.</>}</p>
 
 <style>
-  .dbx-section { margin-bottom: var(--sp-8); color: #c8c8d0; line-height: 1.75; font-size: var(--text-base); }
+  .dbx-section { margin-bottom: var(--sp-8); color: var(--ink); line-height: 1.75; font-size: var(--text-base); }
   .dbx-section a { color: var(--accent); }
   .dbx-title {
     font-family: var(--font-heading); font-size: var(--text-lg); font-weight: 800; color: #fff;

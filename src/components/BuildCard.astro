@@ -1,5 +1,5 @@
 ---
-import { tagHref } from '../utils/tag-href';
+import { tagHref, tagLabel } from '../utils/tag-href';
 import { postImage, srcsetAttr, CARD_SIZES } from '../utils/post-images';
 export interface Props {
   title: string;
@@ -70,7 +70,7 @@ const getSpecClass = (spec: string) => {
               && t !== 'pvp';
           })
           .slice(0, 1)
-          .map(tag => <a href={tagHref(tag)} class="tag build-card__tag-link" style="text-decoration:none;">{tag}</a>)
+          .map(tag => <a href={tagHref(tag)} class="tag build-card__tag-link" style="text-decoration:none;">{tagLabel(tag)}</a>)
         }
       </div>
       <p class="card__title">

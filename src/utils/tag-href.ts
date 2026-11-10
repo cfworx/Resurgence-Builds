@@ -20,3 +20,13 @@ export function tagHref(tag: string): string {
   const slug = tagSlug(tag);
   return RETIRED_TAG_DESTINATIONS[slug] ?? `/tag/${slug}/`;
 }
+
+// What a tag chip shows. Older posts carry slug-style tags ("tech-operator", "build-guide") next to
+// plainly written ones ("Tech Operator"), so the same word showed up two ways on one page. Slug-style
+// tags read with spaces; real hyphenated words and names ("Multi-Shot", "off-meta") keep their hyphen.
+const HYPHENATED_TAGS = new Set(['off-meta', 'cross-play', 'cross-save', 'cross-progression', 'free-to-play']);
+
+export function tagLabel(tag: string): string {
+  if (tag !== tag.toLowerCase() || /\s/.test(tag) || HYPHENATED_TAGS.has(tag)) return tag;
+  return tag.replace(/-/g, ' ');
+}

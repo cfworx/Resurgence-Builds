@@ -1,4 +1,5 @@
 ---
+import { tagLabel } from '../utils/tag-href';
 import { postImage, srcsetAttr, CARD_SIZES } from '../utils/post-images';
 export interface Props {
   title: string;
@@ -35,11 +36,11 @@ const formattedDate = lastUpdated.toLocaleDateString('en-US', { timeZone: 'UTC',
   )}
   <div class={featuredImage ? 'build-card__body' : ''}>
     <div style="display:flex;gap:var(--sp-1);flex-wrap:wrap;">
-      <span class="tag">{category}</span>
+      <span class="tag">{tagLabel(category)}</span>
       {tags
         .filter(tag => tag.toLowerCase() !== category.toLowerCase())
         .slice(0, 3)
-        .map(tag => <span class="tag">{tag}</span>)
+        .map(tag => <span class="tag">{tagLabel(tag)}</span>)
       }
     </div>
     <p class="card__title" style="margin-top:var(--sp-2);">

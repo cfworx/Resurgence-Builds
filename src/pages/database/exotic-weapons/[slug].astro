@@ -196,7 +196,7 @@ const itemLd = {
       <!-- Overview -->
       <div style="margin-bottom: var(--sp-8);">
         <h2 class="weapon-stats__heading">Overview</h2>
-        <div style="color: #c8c8d0; line-height: 1.75; font-size: var(--text-base);">
+        <div style="color: var(--ink); line-height: 1.75; font-size: var(--text-base);">
           <p><strong style="color: #fff;">{theName}</strong> is one of only six exotics in Division Resurgence so far, so yeah, it's kind of a big deal. The whole reason you run an exotic over a regular {weapon.type} is the talent: <strong style="color: #F5CC45;">{weapon.talentName}</strong> completely changes how you play. Stat-wise, you're looking at {weapon.damage} base damage, {weapon.rpm} RPM, and a {weapon.mag}-round mag. {weapon.type === 'Shotgun' ? 'Low RPM, small mag: every trigger pull is a deliberate decision, and the talent is doing as much work as the pellets.' : weapon.name === 'The Bighorn' ? 'It fires full-auto from the hip, but aiming switches it to semi-auto with a big damage bonus on every shot, so it plays like two guns in one.' : weapon.type === 'Rifle' ? 'At 100 RPM with a 5-round magazine, every shot counts, and the talent decides which ones crit.' : weapon.rpm >= 800 ? 'That high fire rate means you\'re getting up close and proccing talent effects as fast as possible.' : weapon.rpm >= 600 ? 'It sits in a sweet spot between sustained DPS and burst: works at most ranges without feeling awkward.' : 'Big magazine, steady damage: this thing rewards you for holding the trigger and letting talents stack up over long engagements.'}</p>
         </div>
       </div>
@@ -204,7 +204,7 @@ const itemLd = {
       <!-- How the Talent Works -->
       <div style="margin-bottom: var(--sp-8);">
         <h2 class="weapon-stats__heading">How {weapon.talentName} Works</h2>
-        <div style="color: #c8c8d0; line-height: 1.75; font-size: var(--text-base);">
+        <div style="color: var(--ink); line-height: 1.75; font-size: var(--text-base);">
           {weapon.name === 'Lady Death' && (
             <Fragment>
               <p><strong style="color: #fff;">Breathe Free</strong> is a movement-based stacking talent. While moving, you gain 4 stacks per second (8 while sprinting), up to 40 stacks maximum. Each round fired consumes 1 stack and grants <strong style="color: var(--accent);">+15% Weapon Damage</strong>. Deploying a skill consumes 10 stacks and grants <strong style="color: var(--accent);">+15% Skill Damage</strong>. Kills grant +10% Movement Speed for 10 seconds.</p>
@@ -249,7 +249,7 @@ const itemLd = {
       <!-- Build Strategy -->
       <div style="margin-bottom: var(--sp-8);">
         <h2 class="weapon-stats__heading">Build Strategy</h2>
-        <div style="color: #c8c8d0; line-height: 1.75; font-size: var(--text-base);">
+        <div style="color: var(--ink); line-height: 1.75; font-size: var(--text-base);">
           <p>With exotics, the talent IS the build. Everything else revolves around it. {weapon.name === 'Scorpio' ? 'Scorpio wants to live in shotgun range, which points straight at Bulwark Breacher (shield brawling keeps you alive at 16 meters) or any close-range Firepower loadout. Build for sustained target focus: the Venom ladder resets if you spray between targets, so single-target discipline beats spread damage. The Shock at 6 stacks and the 10% damage amp at 7 also make it a genuinely interesting team-support pick against bosses: you soften the target while the DPS players collect the credit. Verified builds running Scorpio will show up here as the community settles the meta.' : weapon.name === 'Lady Death' ?'Lady Death builds go hard on Firepower and Weapon Damage so every stack of that +15% WD bonus hits like a freight train. Vanguard for Tactical Link synergy, or Bulwark Breacher if you like the aggressive shield-rush playstyle. Gear sets: Fury Strike 4pc (Crit) for fat per-shot damage, or Quick Draw 4pc for Headshot Damage if your aim is cracked.' : weapon.name === 'The Bighorn' ? 'The Bighorn rewards aim more than any other exotic: aimed shots carry the +300% Weapon Damage, and only headshots build and keep its stacks. That points at Firepower specs (Vanguard Commando or Bulwark Breacher) and at stats that help headshots land and hit harder: Headshot Damage, Accuracy and Stability.' : weapon.name === 'Diamondback' ? 'The Diamondback is a mark-and-burst rifle: hit the marked enemy, make the 5-second crit window count, and reload when you want a fresh mark. Weapon Critical Hit Damage turns those guaranteed crits into damage, and the +10% Skill Critical Hit Chance gives a hybrid build with damaging skills a second reason to run it.' : weapon.name === 'Warlord' ? 'Warlord turns you into a tank-DPS hybrid. Stack Toughness if you want to be unkillable, Firepower if you want to deal more: either works. That 25% DR while firing is nuts for Legendary missions where adds are constantly shooting at you. Pair with Fearless Warrior if you want to face-tank everything, or Fury Strike if you\'d rather crit harder.' : 'Strawberry Milkshake is all about never stopping shooting. That 100-round mag means Concentrated Fire hits max stacks, Multi-Shot keeps proccing, and you just don\'t reload. Run Phalanx Attack 4pc for +18% Mag Size and +12% Multi-Shot, Fury Strike 2pc for Crit Chance, Glass Cannon Body Armor for +20% damage, and Dominating Presence OS for even more Multi-Shot per enemy in range (it only started granting Multi-Shot after a Season 2 Phase 1 fix, and Phase 2 capped it at 35% at base level). It\'s a machine.'}</p>
           <p>See how players rank every build on the <a href="/tier-list/" style="color: var(--accent);">Build Tier List</a>, or use the <a href="/builder/" style="color: var(--accent);">Build Planner</a> to cook up your own {weapon.name} build.</p>
         </div>
@@ -258,7 +258,7 @@ const itemLd = {
       <!-- How to Get -->
       <div style="margin-bottom: var(--sp-8);">
         <h2 class="weapon-stats__heading">How to Get {weapon.name}</h2>
-        <div style="color: #c8c8d0; line-height: 1.75; font-size: var(--text-base);">
+        <div style="color: var(--ink); line-height: 1.75; font-size: var(--text-base);">
           {weapon.name === 'Scorpio' ? (
             <Fragment>
               <p><strong style="color: #F5CC45;">Update (October 2026):</strong> the Phase 3 pass is long gone, but Scorpio isn't. Ubisoft added it to the <strong style="color: #fff;">Dark Zone vendor</strong> in Season 2 Phase 1, cut the vendor's exotic price from 17,500 to 15,000 DZ Credits in Season 2 Phase 2, and added <strong style="color: #fff;">Exotic Sealed Caches</strong> in Season 2 Phase 2 as a way to get exotics from previous seasons. Since Phase 2, exotics no longer come with exotic mods pre-installed. Exotic mods can be swapped off since Season 2 Phase 1 and now come from the pass, weekly quests, Elite Mission challenge chests and the DZ vendor's weekly exotic mod crates (2,500 DZ Credits each).</p>
@@ -437,7 +437,7 @@ const itemLd = {
   .weapon-talent__desc {
     font-size: var(--text-base);
     line-height: 1.75;
-    color: #b8b8c0;
+    color: var(--ink-muted);
     margin: 0;
   }
   .weapon-talent__pool { margin-top: var(--sp-4); }

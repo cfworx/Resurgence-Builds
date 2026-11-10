@@ -200,7 +200,7 @@ const toModSlug = (name: string) => name.toLowerCase().replace(/[^a-z0-9]+/g, '-
           </div>
           <div class="smc-badges">
             <span class="smc-badge" style={`border-color: ${specBadgeColor}; color: ${specBadgeColor};`}>{mod.specialization}</span>
-            <span class="smc-badge smc-badge--skill" style="border-color: #b8b8c0; color: #b8b8c0;">{targetSkill}</span>
+            <span class="smc-badge smc-badge--skill" style="border-color: var(--ink-muted); color: var(--ink-muted);">{targetSkill}</span>
           </div>
         </div>
         <div style="display: inline-flex; align-items: center; gap: 6px; font-family: var(--font-mono); font-size: var(--text-xs); color: #6DAA45; background: rgba(109, 170, 69, 0.1); border: 1px solid rgba(109, 170, 69, 0.25); padding: 6px 14px; border-radius: 999px; margin-top: var(--sp-4); letter-spacing: 0.02em;">
@@ -212,7 +212,7 @@ const toModSlug = (name: string) => name.toLowerCase().replace(/[^a-z0-9]+/g, '-
       <!-- Overview -->
       <div class="smc-section">
         <h2 class="smc-section__title">Overview</h2>
-        <div style="color: #c8c8d0; line-height: 1.75; font-size: var(--text-base);">
+        <div style="color: var(--ink); line-height: 1.75; font-size: var(--text-base);">
           <p><strong style="color: #fff;">{mod.name}</strong> is a <strong style="color: #fff;">{mod.specialization}</strong> Skill Mod Combo in Division Resurgence that buffs your <strong style="color: var(--accent);">{targetSkill}</strong>. Equip 2 mods from this set for a stat bump, or commit to all 3 for the real payoff: a talent-grade bonus that changes how your skill performs in combat.</p>
           <p>{notes ? notes.usageNotes : (specOverview[mod.specialization] || `This mod combo is tied to the ${mod.specialization} specialization and enhances your skill builds when fully equipped.`)}</p>
         </div>
@@ -242,7 +242,7 @@ const toModSlug = (name: string) => name.toLowerCase().replace(/[^a-z0-9]+/g, '-
         )}
         {mod.rarities?.length > 0 && (
           <p class="smc-rarities">Rarities in the in-game database: {mod.rarities.map((r: string, i: number) => (
-            <><span style={`color: ${RARITY_COLOR[r] || '#c8c8d0'}; font-weight: 600;`}>{r}</span>{i < mod.rarities.length - 2 ? ', ' : i === mod.rarities.length - 2 ? ' and ' : '.'}</>
+            <><span style={`color: ${RARITY_COLOR[r] || 'var(--ink)'}; font-weight: 600;`}>{r}</span>{i < mod.rarities.length - 2 ? ', ' : i === mod.rarities.length - 2 ? ' and ' : '.'}</>
           ))}</p>
         )}
         {mod.note && <p class="item-note">{mod.note}</p>}
@@ -284,7 +284,7 @@ const toModSlug = (name: string) => name.toLowerCase().replace(/[^a-z0-9]+/g, '-
           {notes.patchHistory.map((p: any) => (
             <div style="padding: var(--sp-4); background: rgba(0,0,0,0.25); border-left: 3px solid var(--accent); border-radius: 0 8px 8px 0; margin-bottom: var(--sp-3);">
               <div style="font-family: var(--font-mono); font-size: var(--text-xs); color: var(--accent); margin-bottom: var(--sp-2);">{p.label} · {p.date}</div>
-              <p style="margin: 0; color: #c8c8d0; line-height: 1.7; font-size: var(--text-sm);">{p.note} {p.sourceUrl && <a href={p.sourceUrl} style="color: var(--accent);">Patch notes &rarr;</a>}</p>
+              <p style="margin: 0; color: var(--ink); line-height: 1.7; font-size: var(--text-sm);">{p.note} {p.sourceUrl && <a href={p.sourceUrl} style="color: var(--accent);">Patch notes &rarr;</a>}</p>
             </div>
           ))}
         </div>
@@ -439,7 +439,7 @@ const toModSlug = (name: string) => name.toLowerCase().replace(/[^a-z0-9]+/g, '-
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.06em;
-    color: #b8b8c0;
+    color: var(--ink-muted);
   }
 
   .smc-bonus-card__text {
@@ -451,7 +451,7 @@ const toModSlug = (name: string) => name.toLowerCase().replace(/[^a-z0-9]+/g, '-
   }
 
   .smc-rarities {
-    color: #c8c8d0;
+    color: var(--ink);
     font-size: var(--text-sm);
     line-height: 1.6;
     margin: var(--sp-4) 0 0 0;

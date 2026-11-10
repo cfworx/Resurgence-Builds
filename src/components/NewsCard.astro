@@ -1,4 +1,5 @@
 ---
+import { tagLabel } from '../utils/tag-href';
 import { getAuthorUrl } from '../utils/author';
 
 export interface Props {
@@ -22,7 +23,7 @@ const formattedDate = publishDate.toLocaleDateString('en-US', { timeZone: 'UTC',
   <p class="card__description">{description}</p>
   {tags.length > 0 && (
     <div style="display:flex;gap:var(--sp-1);flex-wrap:wrap;margin-top:var(--sp-3);">
-      {tags.slice(0, 3).map(tag => <span class="tag">{tag}</span>)}
+      {tags.slice(0, 3).map(tag => <span class="tag">{tagLabel(tag)}</span>)}
     </div>
   )}
 </article>

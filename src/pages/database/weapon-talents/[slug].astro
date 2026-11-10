@@ -207,7 +207,7 @@ const talentLd = {
       {notes && (
       <div style="margin-bottom: var(--sp-8);">
         <h2 style="font-family: var(--font-heading); font-size: var(--text-lg); font-weight: 800; color: #fff; margin: 0 0 var(--sp-4) 0; padding-bottom: var(--sp-2); border-bottom: 1px solid rgba(255,255,255,0.08);">Overview</h2>
-        <p style="color: #c8c8d0; line-height: 1.75; font-size: var(--text-base);">
+        <p style="color: var(--ink); line-height: 1.75; font-size: var(--text-base);">
           {notes.usageNotes}
         </p>
       </div>
@@ -280,7 +280,7 @@ const talentLd = {
           {notes.patchHistory.map((p: any) => (
             <div style="padding: var(--sp-4); background: rgba(0,0,0,0.25); border-left: 3px solid var(--accent); border-radius: 0 8px 8px 0; margin-bottom: var(--sp-3);">
               <div style="font-family: var(--font-mono); font-size: var(--text-xs); color: var(--accent); margin-bottom: var(--sp-2);">{p.label} · {p.date}</div>
-              <p style="margin: 0; color: #c8c8d0; line-height: 1.7; font-size: var(--text-sm);">{p.note} {p.sourceUrl && <a href={p.sourceUrl} style="color: var(--accent);">Patch notes &rarr;</a>}</p>
+              <p style="margin: 0; color: var(--ink); line-height: 1.7; font-size: var(--text-sm);">{p.note} {p.sourceUrl && <a href={p.sourceUrl} style="color: var(--accent);">Patch notes &rarr;</a>}</p>
             </div>
           ))}
         </div>
@@ -327,7 +327,7 @@ const talentLd = {
     padding-bottom: var(--sp-2);
     border-bottom: 1px solid rgba(255,255,255,0.08);
   }
-  .talent-sources__lead { color: #c8c8d0; line-height: 1.7; font-size: var(--text-sm); margin: 0 0 var(--sp-5); }
+  .talent-sources__lead { color: var(--ink); line-height: 1.7; font-size: var(--text-sm); margin: 0 0 var(--sp-5); }
   .talent-sources__group { margin-bottom: var(--sp-5); }
   .talent-sources__class {
     font-family: var(--font-mono);

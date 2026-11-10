@@ -205,7 +205,7 @@ const itemLd = {
       <!-- Overview -->
       <div style="margin-bottom: var(--sp-8);">
         <h2 style="font-family: var(--font-heading); font-size: var(--text-lg); font-weight: 800; color: #fff; margin: 0 0 var(--sp-4) 0; padding-bottom: var(--sp-2); border-bottom: 1px solid rgba(255,255,255,0.08);">Overview</h2>
-        <p style="color: #c8c8d0; line-height: 1.75; font-size: var(--text-base);">
+        <p style="color: var(--ink); line-height: 1.75; font-size: var(--text-base);">
           The <strong>{weapon.name}</strong> is {typeArticle} <strong>{weapon.type}</strong> in The Division Resurgence{weapon.rpm && weapon.mag && <> that fires at <strong>{weapon.rpm} RPM</strong> with a <strong>{weapon.mag}-round</strong> magazine</>}{knownDmgType && <> and deals <strong>{knownDmgType}</strong> damage</>}.{armoryTier && <> The in-game Armory lists it under Season 1, Tier {armoryTier.slice(1)}{knownDmgType ? ', with the damage type shown next to its name' : ''} (checked October 28, 2026).</>}
         </p>
       </div>
@@ -266,7 +266,7 @@ const itemLd = {
       <!-- Our builds that use this weapon -->
       <div style="margin-bottom: var(--sp-8);">
         <h2 style="font-family: var(--font-heading); font-size: var(--text-lg); font-weight: 800; color: #fff; margin: 0 0 var(--sp-4) 0; padding-bottom: var(--sp-2); border-bottom: 1px solid rgba(255,255,255,0.08);">{weapon.name} in Our Build Guides</h2>
-        <div style="color: #c8c8d0; line-height: 1.75; font-size: var(--text-base);">
+        <div style="color: var(--ink); line-height: 1.75; font-size: var(--text-base);">
           {usedIn.length > 0 ? (
             <ul style="padding-left: var(--inset); margin: 0;">
               {usedIn.map((u: any) => (
@@ -282,7 +282,7 @@ const itemLd = {
       <!-- Recommended Bonus Attributes -->
       <div style="margin-bottom: var(--sp-8);">
         <h2 style="font-family: var(--font-heading); font-size: var(--text-lg); font-weight: 800; color: #fff; margin: 0 0 var(--sp-4) 0; padding-bottom: var(--sp-2); border-bottom: 1px solid rgba(255,255,255,0.08);">Recommended Bonus Attributes for {weapon.name}</h2>
-        <div style="color: #c8c8d0; line-height: 1.75; font-size: var(--text-base);">
+        <div style="color: var(--ink); line-height: 1.75; font-size: var(--text-base);">
           <p>When rolling bonus attributes for {typeArticle} {weapon.type} build using the {weapon.name}, prioritize in this order (All Weapon Damage is a weapon roll; the rest can roll on gear too):</p>
           <ol style="padding-left: var(--inset); margin-top: var(--sp-2);">
             {recommendedAttrs.map(attr => (
@@ -296,7 +296,7 @@ const itemLd = {
       <!-- How to Farm -->
       <div style="margin-bottom: var(--sp-8);">
         <h2 style="font-family: var(--font-heading); font-size: var(--text-lg); font-weight: 800; color: #fff; margin: 0 0 var(--sp-4) 0; padding-bottom: var(--sp-2); border-bottom: 1px solid rgba(255,255,255,0.08);">How to Get {weapon.name}</h2>
-        <div style="color: #c8c8d0; line-height: 1.75; font-size: var(--text-base);">
+        <div style="color: var(--ink); line-height: 1.75; font-size: var(--text-base);">
           <p>Standard weapons like the {weapon.name} drop from the general loot pool: any activity can drop it. For T2 copies at level 40, Ubisoft's Season 2 Phase 2 notes give <strong style="color: #fff;">Weapon Kill daily quests</strong> a chance of T2 weapons of the quest's type, and creators point at <strong style="color: #fff;">Elite missions</strong> and the weekly Elite Mission Challenge chest. You can also raise a T0 or T1 copy in the Armory's <strong style="color: #fff;">Power Tier Enhancement</strong> screen with an Enhancement Kit (our <a href="/guides/division-resurgence-gear-farming-guide/" style="color: var(--accent);">gear farming guide</a> has the full list and the proficiency gate). When farming, you're looking for two things: the right weapon AND the right talents. If you find a {weapon.name} with a bad talent but great base stats, recalibration rerolls that talent line at random, so expect a few tries.</p>
           <p>Keep in mind: since Season 2 Phase 1, weapons no longer roll Blast, Piercing or Shredding damage bonuses (Ubisoft replaced them with <strong style="color: var(--accent);">All Weapon Damage</strong>), and newly dropped weapon mods don't roll them either. Check the <a href="/database/bonus-attributes/" style="color: var(--accent);">bonus attributes database</a> for the full list of damage-type stats and where they still apply.</p>
         </div>
@@ -329,7 +329,7 @@ const itemLd = {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    color: #c8c8d0;
+    color: var(--ink);
     background: rgba(255, 255, 255, 0.06);
     border: 1px solid rgba(255, 255, 255, 0.18);
     padding: 5px 14px;
@@ -351,7 +351,7 @@ const itemLd = {
     padding-bottom: var(--sp-2);
     border-bottom: 1px solid rgba(255,255,255,0.08);
   }
-  .weapon-rolls__lead { color: #c8c8d0; line-height: 1.7; font-size: var(--text-sm); margin: 0 0 var(--sp-5); }
+  .weapon-rolls__lead { color: var(--ink); line-height: 1.7; font-size: var(--text-sm); margin: 0 0 var(--sp-5); }
   .weapon-rolls__group { margin-bottom: var(--sp-5); }
   .weapon-rolls__role {
     font-family: var(--font-mono);

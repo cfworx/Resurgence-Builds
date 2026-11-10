@@ -368,7 +368,7 @@
 .tbc__subdot { display: inline-block; width: 7px; height: 7px; margin-right: 6px; border-radius: 50%; background: var(--dot); vertical-align: 1px; }
 .tbc__text { display: flex; flex-direction: column; min-width: 0; }
 .tbc__name { font-size: var(--step--1); font-weight: 700; line-height: var(--lh-snug); overflow-wrap: anywhere; transition: color 0.15s ease; }
-.tbc__sub { font-family: var(--font-mono); font-size: var(--step--2); line-height: var(--lh-small); color: var(--ink-muted); text-transform: uppercase; letter-spacing: 0.02em; }
+.tbc__sub { font-family: var(--font-mono); font-size: var(--step--2); line-height: var(--lh-small); color: var(--ink-muted); text-transform: uppercase; letter-spacing: 0.06em; }
 .tbc__meta { display: flex; align-items: center; gap: 8px; min-height: 30px; }
 .tbc__meta .tdist { flex: 1 1 auto; height: 6px; }
 .tbc__n { font-family: var(--font-mono); font-size: var(--step--2); color: var(--ink-muted); white-space: nowrap; }

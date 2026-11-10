@@ -346,6 +346,7 @@ const small = (img?: DbImage) => img ? img.srcset[0][1] : undefined;
 
   .lo__notes { padding: var(--lo-pad); font-size: var(--step--1); line-height: var(--lh-small); color: var(--ink); display: grid; gap: var(--sp-2); }
   .lo__notes strong { color: var(--ink-heading); }
+  .lo__notes p { max-width: 68ch; }
   .lo > :last-child { border-bottom: 0; }
 
   /* Touch: links keep their look but get a 44px tap area */

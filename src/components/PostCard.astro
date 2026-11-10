@@ -1,5 +1,5 @@
 ---
-import { tagHref } from '../utils/tag-href';
+import { tagHref, tagLabel } from '../utils/tag-href';
 import { postImage, srcsetAttr, CARD_SIZES } from '../utils/post-images';
 
 export interface Props {
@@ -68,8 +68,8 @@ const creator = (author.match(/via\s+([^)]+)\)?\s*$/) || [])[1]?.trim();
       {tags.length > 0 && (
         <div class="post-card__tags">
           {tags.slice(0, 4).map(tag => tagLinks
-            ? <a href={tagHref(tag)} class="tag" style="text-decoration:none;">{tag}</a>
-            : <span class="tag">{tag}</span>)}
+            ? <a href={tagHref(tag)} class="tag" style="text-decoration:none;">{tagLabel(tag)}</a>
+            : <span class="tag">{tagLabel(tag)}</span>)}
         </div>
       )}
     </div>
@@ -140,11 +140,14 @@ const creator = (author.match(/via\s+([^)]+)\)?\s*$/) || [])[1]?.trim();
     .post-type-badge--alert { animation: none; }
   }
 
+  /* The body fills the card and the tags sit on its bottom edge, so tag rows line up across a row of cards */
+  .post-card__body { display: flex; flex-direction: column; flex: 1 1 auto; }
   .post-card__tags {
     display: flex;
     gap: var(--sp-2);
     flex-wrap: wrap;
-    margin-top: var(--sp-3);
+    margin-top: auto;
+    padding-top: var(--sp-3);
   }
   /* Above the card's stretched link (z-index 1), or they can't be clicked. Secondary links on a card:
      32px tall chips with 8px between them (the whole card is the main 44px+ target). */

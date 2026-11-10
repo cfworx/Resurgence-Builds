@@ -84,3 +84,13 @@ writes `design-audit.json` plus a summary. It needs Playwright with Chromium; it
 
 Then look at the pages: phones at 390px and desktop at 1440px, with screenshots the size of the screen (full-page
 screenshots in phone emulation are misleading).
+
+## Design audit, November 9, 2026
+
+- Post cards: the body fills the card and the tag row sits on its bottom edge, so tags line up across a row.
+- Tag chips show through `tagLabel()` (`src/utils/tag-href.ts`): slug-style tags read with spaces
+  ("tech-operator" shows as "Tech Operator" does), real hyphenated names keep their hyphen.
+- Grey text uses the tokens (`--ink`, `--ink-muted`, `--ink-heading`), not look-alike hex values.
+- Cards in one row are the same height (weapon cards included). No clamped "..." descriptions on hub cards.
+- The database hub is two columns from tablet width up (ten cards, no stray last card).
+- Running text inside wide panels is capped near 68ch.

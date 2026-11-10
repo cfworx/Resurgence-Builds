@@ -1,5 +1,5 @@
 ---
-import { tagHref } from '../utils/tag-href';
+import { tagHref, tagLabel } from '../utils/tag-href';
 import BaseLayout from './BaseLayout.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import SectionTag from '../components/SectionTag.astro';
@@ -122,7 +122,7 @@ const howToLd = howTo ? {
     <h1 class="heading-accent">{title}</h1>
 
     <div class="article-meta">
-      <a href={tagHref(category)} class="tag">{category}</a>
+      <a href={tagHref(category)} class="tag">{tagLabel(category)}</a>
       <div class="meta-line-wrap"><div class="meta-line">
         <span>By <a href={getAuthorUrl(author)} style="color: var(--accent); text-decoration: none;">{author}</a></span>
         <time datetime={lastUpdated.toISOString()}><strong>Last updated:</strong> {formattedDate}</time>
