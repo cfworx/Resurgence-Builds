@@ -105,3 +105,17 @@ screenshots in phone emulation are misleading).
 - Builds page: one wrapped filter row. No separate "Class hubs" row; picking a class shows that class's
   guide link under the filters.
 - Card descriptions use the body size (`--step-0`), not 15px.
+
+## Database pages and ads, November 15, 2026
+
+- A database entry page (one weapon, OS Protocol, weapon talent, gear set, skill mod or exotic) carries only
+  what is specific to that item: its game data, its pictures, its roll or source list, its drop odds, our
+  notes on it and the builds that use it. No paragraph that reads the same on every page with the name
+  swapped, and no per-item FAQ written from a template (all 1,135 of those were removed; `DbFaq.astro` is gone).
+- General answers (how to get a weapon, which attributes to roll, where OS Protocols come from) live once, in the
+  FAQ of that section's index page. Index FAQs have the anchor `#faq`; entry pages link to it.
+- An empty section isn't shown: no "no builds mention it yet" lines.
+- Ads only run on pages with enough of our own content: not on noindexed pages, not on tag archives (lists of
+  links), not on OS Protocol or weapon talent cards. Templates pass `noAds` to `BaseLayout`. Check 7 in
+  `scripts/audit-indexation.mjs` (part of `npm run build`) fails the build when a noindexed page or a page under
+  300 words loads the ad code, or when an ad slot is left on a page without it.

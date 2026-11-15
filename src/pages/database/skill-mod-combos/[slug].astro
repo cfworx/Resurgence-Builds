@@ -8,7 +8,6 @@ import skillMods from '../../../data/skill-mod-combos.json';
 import smcNotes from '../../../data/skill-mod-combo-notes.json';
 import { isSkillModIndexable } from '../../../utils/indexability.mjs';
 import DbItemExtras from '../../../components/DbItemExtras.astro';
-import DbFaq from '../../../components/DbFaq.astro';
 import { verifiedPatch, DATABASE_UPDATED } from '../../../data/site-config';
 import GameImage from '../../../components/GameImage.astro';
 import { dbImage, imageObject, CARDS_RECORDED } from '../../../utils/db-images';
@@ -40,15 +39,14 @@ const siteUrl = 'https://resurgencebuilds.com';
 const isVague = !mod.bonus3 || (mod.bonus3.length < 100 && !/\d/.test(mod.bonus3));
 
 // Per-item editorial content (usage notes, meta builds, patch history).
-// Pages WITH notes replace the shared spec blocks with unique fields and become
-// indexable once unique text clears the thin-content threshold. Pages WITHOUT
-// notes keep the generic spec copy but are noindexed. The same check drives the
-// sitemap filter via src/utils/indexability.mjs.
+// Pages with notes become indexable once their unique text clears the thin-content
+// threshold; pages without notes show the game data only and are noindexed. The same
+// check drives the sitemap filter via src/utils/indexability.mjs.
 const notes: any = (smcNotes as any)[slug];
 const indexable = isSkillModIndexable(mod, notes);
 
 const title = `${mod.name}: ${mod.specialization} Skill Mod`;
-const description = metaDescription(notes?.usageNotes, `${mod.name} skill mod combo in The Division Resurgence: 2-piece and 3-piece bonuses, best builds, and how to farm the set.`);
+const description = metaDescription(notes?.usageNotes, `${mod.name} skill mod combo in The Division Resurgence: its 2-piece and 3-piece bonuses and the skill it changes.`);
 
 const breadcrumbs = [
   { name: 'Skill Mods', url: '/database/skill-mod-combos/' },
@@ -113,51 +111,9 @@ const getSkillsFromBonus = (bonus3: string, spec: string): string => {
 // The data names each set's skill (from Ubisoft's drop-rate table); the text match is a fallback.
 const targetSkill = mod.skill || getSkillsFromBonus(mod.bonus3, mod.specialization);
 
-// Build context based on specialization
-const specOverview: Record<string, string> = {
-  'Demolitionist': 'Demolitionist builds revolve around explosive AoE damage: Artillery Turrets, Seeker Mines, and the M32A1 Grenade Launcher. Its HE Munitions focus stacks Engineering and Skill Crit to turn skills into room-clearing nukes (Field Grenadier, the other focus, is a Firepower one). Pair the right mod combo with Jackpot or Fire Cycle gear sets and the numbers get silly fast.',
-  'Tech Operator': 'Tech Operator builds live and die by the Striker Drone. Your drone is your primary damage source, your utility tool, and sometimes your healer all at once. Stack Engineering, Skill Crit, and drone-specific bonuses and watch it shred everything in the room before you finish reloading.',
-  'Bulwark': 'Bulwark is the wall. Your entire kit revolves around the Phalanx Shield: absorbing hits, face-tanking bosses, and making your team feel safe enough to actually play the game. Toughness stacking is king, but the right mod combo can turn a pure tank into a surprisingly punchy brawler.',
-  'Vanguard': 'Vanguard runs the show with Smart Cover, Scanning Pulse, and Tactical Link. You\'re the team\'s intel officer and force multiplier rolled into one. The best Vanguard builds balance personal firepower with team-wide buffs that make everyone hit harder and die less.',
-  'Field Medic': 'Field Medic has two focuses: Combat Medicine (Healing Swarm, Healing Hive, Support Station) and Tactical Pharma (Oxidizing Swarm, Oxidizing Hive, Chemical Trap). The Combat Medicine path can also deal damage: Offensive Defense, for one, adds damage to your hits while Healing Hive is deployed. These mod combos determine whether you are a pure healer or a corrosive area-pressure dealer.',
-};
-
-const specBuildGuide: Record<string, string> = {
-  'Demolitionist': `For Demolitionist, this mod combo pairs well with Engineering-stacking gear sets like Jackpot (Skill Crit) and Fire Cycle (Skill Damage loops). Running Pressing Matter or Brains Over Brawn as your OS Protocol gives you multiplicative bonuses on top of whatever the 3-piece talent is doing. The Demolitionist Glass Cannon archetype, running all-in on Engineering with zero survivability, is the highest DPS ceiling in the game for skill builds.`,
-  'Tech Operator': `Tech Operator builds want Long-term Effect (4pc) for Skill Duration and Engineering, plus Jackpot (2pc) for Skill Crit. Brains Over Brawn OS Protocol is the gold standard here. Stack Engineering on every piece and let your Striker Drone become an autonomous killing machine.`,
-  'Bulwark': `Bulwark builds run Fury Strike (4pc) for Crit stacking or Self-Propelled Shield (4pc) for pure tankiness. Pair with the Death From Afar or Pummeling Shield OS Protocol depending on whether you want to deal damage or absorb it. Saiynergy's 334k DPS Breacher build proves that tanks don't have to be boring: the right mod combo makes you both unkillable and dangerous.`,
-  'Vanguard': `Vanguard builds typically run Phalanx Attack (4pc) for sustained DPS or Fury Strike (4pc) for burst. Dominating Presence OS Protocol is the premium pick. Smart Cover and Scanning Pulse mods give you team-wide buffs that stack with your gear set bonuses: that multiplicative scaling is how top squads push Legendary content.`,
-  'Field Medic': `Field Medic builds have two paths: Combat Medicine with Captain Cow (4pc) and Toughness stacking for healing, or Tactical Pharma with Jackpot (4pc) and Engineering for Oxidizing Swarm corrosive pressure. The mod combo you choose determines which path hits harder. Chemical Trap mods with Corrosive application are strong in PvP.`,
-};
 
 
-const faqs = notes ? [
-  {
-    question: `What does the ${mod.name} skill mod combo do in Division Resurgence?`,
-    answer: `${mod.name} is a ${mod.specialization} skill mod combo. 2-piece: ${bonus2}. 3-piece: "${bonus3}".`
-  },
-  {
-    question: `Is ${mod.name} worth farming in Division Resurgence?`,
-    answer: notes.usageNotes.split('. ').slice(0, 2).join('. ') + (notes.usageNotes.split('. ').length > 2 ? '.' : '')
-  },
-  ...(notes.metaBuilds?.length ? [{
-    question: `Which builds run ${mod.name} in Division Resurgence?`,
-    answer: `${mod.name} appears in ${notes.metaBuilds.length === 1 ? 'one' : notes.metaBuilds.length} of our published meta builds: ${notes.metaBuilds.map((b: any) => b.title).join('; ')}.`
-  }] : [])
-] : [
-  {
-    question: `What does the ${mod.name} skill mod combo do in Division Resurgence?`,
-    answer: `${mod.name} is a ${mod.specialization} skill mod combo focused on ${targetSkill}. Equip 2 matching mods for the 2-piece bonus (${bonus2}), or slot all 3 for the 3-piece: "${bonus3}": that 3-piece is where the real power is.`
-  },
-  {
-    question: `Which builds use ${mod.name} in Division Resurgence?`,
-    answer: `${mod.name} belongs on ${mod.specialization} builds that run ${targetSkill}. ${specBuildGuide[mod.specialization]?.split('.')[0] || 'Pair it with the right gear set and OS Protocol for maximum synergy'}.`
-  },
-  {
-    question: `How do I get ${mod.name} skill mods in Division Resurgence?`,
-    answer: `Since Season 2 Phase 2, Dark Zone daily quests reward Skill Mods, and each ${mod.specialization} focus has its own Sealed Cache of skill mod pieces with official odds on our drop rates page. Heads up: Ubisoft's drop-rate table uses different names for some sets than the in-game tooltips, so match pieces by skill and effect text. Spares dismantle for 15, 75 or 750 Dark Zone Credits (blue, purple, yellow).`
-  }
-];
+
 
 const modLd = {
   '@context': 'https://schema.org',
@@ -173,7 +129,6 @@ const modLd = {
   image: cardImage ? imageObject(cardImage) : { '@type': 'ImageObject', url: `${siteUrl}/images/resurgence-builds-official-logo.png`, width: 1024, height: 1024 },
   inLanguage: 'en-US',
   lastReviewed: mod.verifiedInGame || '2026-05-30',
-  wordCount: 500,
   about: { '@id': `${siteUrl}/#division-resurgence` },
 };
 
@@ -185,7 +140,7 @@ const relatedMods = skillMods
 const toModSlug = (name: string) => name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
 ---
 
-<BaseLayout title={title} description={description} breadcrumbs={breadcrumbs} jsonLd={modLd} faqs={faqs} noindex={!indexable} ogImage={cardImage?.src}>
+<BaseLayout title={title} description={description} breadcrumbs={breadcrumbs} jsonLd={modLd} noindex={!indexable} ogImage={cardImage?.src}>
   <div class="container section">
     <Breadcrumbs items={breadcrumbs} />
     <SectionTag label="Skill Mod" />
@@ -209,14 +164,15 @@ const toModSlug = (name: string) => name.toLowerCase().replace(/[^a-z0-9]+/g, '-
         </div>
       </div>
 
-      <!-- Overview -->
+      <!-- Overview (editorial notes only) -->
+      {notes && (
       <div class="smc-section">
         <h2 class="smc-section__title">Overview</h2>
         <div style="color: var(--ink); line-height: 1.75; font-size: var(--text-base);">
-          <p><strong style="color: #fff;">{mod.name}</strong> is a <strong style="color: #fff;">{mod.specialization}</strong> Skill Mod Combo in Division Resurgence that buffs your <strong style="color: var(--accent);">{targetSkill}</strong>. Equip 2 mods from this set for a stat bump, or commit to all 3 for the real payoff: a talent-grade bonus that changes how your skill performs in combat.</p>
-          <p>{notes ? notes.usageNotes : (specOverview[mod.specialization] || `This mod combo is tied to the ${mod.specialization} specialization and enhances your skill builds when fully equipped.`)}</p>
+          <p>{notes.usageNotes}</p>
         </div>
       </div>
+      )}
 
       <!-- Set Bonuses -->
       <div class="smc-section">
@@ -290,7 +246,6 @@ const toModSlug = (name: string) => name.toLowerCase().replace(/[^a-z0-9]+/g, '-
         </div>
       )}
 
-      <DbFaq faqs={faqs} />
 
       <DbItemExtras kind="skill-mod" name={mod.name} exclude={notes?.metaBuilds?.map((b: any) => b.url) ?? []} />
 

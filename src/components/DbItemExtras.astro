@@ -19,8 +19,12 @@ const rules = cacheRules(rows);
 const norm = (u: string) => u.replace(/\/?$/, '/');
 const excluded = new Set(exclude.map(norm));
 const builds = (await buildsMentioning(kind, name)).filter((b) => !excluded.has(norm(b.url)));
-const showBuilds = builds.length > 0 || excluded.size === 0;
+// Only shown when a build mentions it: an empty "none yet" line on every other page was filler.
+const showBuilds = builds.length > 0;
 const cacheIds = [...new Set(rows.map((r) => r.cacheId))];
+// An extra line about where the item comes from (slot "drops-note"). It sits under the drop odds
+// source line, or on its own when the item has no published odds.
+const dropsNote = Astro.slots.has('drops-note') ? await Astro.slots.render('drops-note') : '';
 ---
 
 {rows.length > 0 && (
@@ -38,26 +42,22 @@ const cacheIds = [...new Set(rows.map((r) => r.cacheId))];
       </table>
     </div>
     <p class="dbx-note">Source: <a href={dropSource} target="_blank" rel="noopener noreferrer">Ubisoft Help Center, "Drop rates"</a>, checked {fmtDate(dropChecked)}. Full table{cacheIds.length > 1 ? 's' : ''} on our <a href={`/database/drop-rates/#${cacheIds[0]}`}>drop rates page</a>. Caches are one way to get it, not the only one.</p>
+    {dropsNote && <Fragment set:html={dropsNote} />}
   </section>
 )}
+{rows.length === 0 && dropsNote && <div class="dbx-section"><Fragment set:html={dropsNote} /></div>}
 
 {showBuilds && (
 <section class="dbx-section" aria-labelledby="dbx-builds">
   <h2 id="dbx-builds" class="dbx-title">{excluded.size > 0 ? 'Other Builds' : 'Builds'} That Mention {name}</h2>
-  {builds.length > 0 ? (
-    <>
-      <ul class="dbx-builds">
-        {builds.map((b) => (
-          <li>
-            <a href={b.url}>{b.title}</a>
-            <span class="dbx-meta">{b.specialization} · {b.patch}{!b.verified && (b.original ? ' · original build' : ' · creator build')}</span>
-          </li>
-        ))}
-      </ul>
-    </>
-  ) : (
-    <p>No build guides mention {name} yet.</p>
-  )}
+  <ul class="dbx-builds">
+    {builds.map((b) => (
+      <li>
+        <a href={b.url}>{b.title}</a>
+        <span class="dbx-meta">{b.specialization} · {b.patch}{!b.verified && (b.original ? ' · original build' : ' · creator build')}</span>
+      </li>
+    ))}
+  </ul>
 </section>
 )}
 

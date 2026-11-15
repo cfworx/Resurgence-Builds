@@ -4,7 +4,6 @@ import Breadcrumbs from '../../../components/Breadcrumbs.astro';
 import SectionTag from '../../../components/SectionTag.astro';
 import AdSenseUnit from '../../../components/AdSenseUnit.astro';
 import DbItemExtras from '../../../components/DbItemExtras.astro';
-import DbFaq from '../../../components/DbFaq.astro';
 import { DATABASE_UPDATED } from '../../../data/site-config';
 import WeaponAttributes from '../../../components/WeaponAttributes.astro';
 import { truncateDesc, metaDescription } from '../../../utils/seo';
@@ -23,7 +22,6 @@ export function getStaticPaths() {
 }
 
 const { weapon } = Astro.props;
-const typeArticle = /^(SMG|LMG|[AEIOU])/.test(weapon.type) ? 'an' : 'a';
 const theName = weapon.name.startsWith('The ') ? weapon.name : `The ${weapon.name}`;
 
 const title = `${weapon.name}: Exotic ${weapon.type}`;
@@ -42,23 +40,6 @@ const HOW_NOW: Record<string, string> = {
   'Strawberry Milkshake': `Strawberry Milkshake was the free exotic on the Season 1 Phase 2 Classified Ops Pass. That pass is long gone, so the Exotic Sealed Caches are the official route now.`,
 };
 const howNow = HOW_NOW[weapon.name] || `Since Season 2 Phase 2, Exotic Sealed Caches are Ubisoft's official way to get exotics from previous seasons, and the current Classified Ops Pass and the Dark Zone vendor carry some exotics too.`;
-
-const faqs = [
-  {
-    question: `Is ${weapon.name} good in Division Resurgence?`,
-    answer: `${weapon.name} is an exotic ${weapon.type} with ${weapon.damage}${/damage/i.test(String(weapon.damage)) ? '' : ' damage'} and ${weapon.rpm} RPM, built around the "${weapon.talentName}" talent, which completely changes how you play: "${weapon.talentDescription}" If your build can lean on that, yeah, it's worth getting. The full stat line and the talents it can roll are on this page.`
-  },
-  {
-    question: `What builds use ${weapon.name}?`,
-    answer: `You want to build entirely around the "${weapon.talentName}" talent: that's the whole point of running an exotic. As ${typeArticle} ${weapon.type}, pair it with specs that stack the matching core stat, then find gear sets and OS Protocols that feed into what the talent does. Don't just slap it on any random loadout.`
-  },
-  {
-    question: `How do I get ${weapon.name} in Division Resurgence?`,
-    answer: weapon.acquisition
-      ? `${weapon.name} started as a battle pass unlock: ${weapon.acquisition}. Check the "How to Get" section below for the details.`
-      : `${howNow} Our exotic weapons list covers every route.`
-  }
-];
 
 const slug = weapon.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
 const siteUrl = 'https://resurgencebuilds.com';
@@ -80,7 +61,6 @@ const weaponLd = {
   image: heroImage ? imageObject(heroImage) : { '@type': 'ImageObject', url: `${siteUrl}/images/resurgence-builds-official-logo.png`, width: 1024, height: 1024 },
   inLanguage: 'en-US',
   lastReviewed: weapon.verifiedInGame || '2026-05-30',
-  wordCount: 800,
   about: { '@id': `${siteUrl}/#division-resurgence` },
 };
 
@@ -108,7 +88,7 @@ const itemLd = {
 };
 ---
 
-<BaseLayout {title} {description} {breadcrumbs} faqs={faqs} jsonLd={[weaponLd, itemLd]} ogImage={heroImage?.src || weapon.image || undefined}>
+<BaseLayout {title} {description} {breadcrumbs} jsonLd={[weaponLd, itemLd]} ogImage={heroImage?.src || weapon.image || undefined}>
   <div class="container section">
     <Breadcrumbs items={breadcrumbs} />
     <SectionTag label="Exotic Weapon" />
@@ -283,7 +263,6 @@ const itemLd = {
           )}
         </div>
       </div>
-      <DbFaq faqs={faqs} />
       <DbItemExtras kind="exotic-weapon" name={weapon.name} />
 
       <!-- Back Link -->

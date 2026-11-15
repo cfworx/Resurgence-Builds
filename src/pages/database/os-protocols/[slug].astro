@@ -4,12 +4,9 @@ import GameImage from '../../../components/GameImage.astro';
 import { dbImage, imageObject, CARDS_RECORDED } from '../../../utils/db-images';
 import Breadcrumbs from '../../../components/Breadcrumbs.astro';
 import SectionTag from '../../../components/SectionTag.astro';
-import AdSenseUnit from '../../../components/AdSenseUnit.astro';
 import { truncateDesc, metaDescription } from '../../../utils/seo';
 import osProtocols from '../../../data/os-protocols.json';
-import { dropRowsFor } from '../../../utils/db-enrich';
 import DbItemExtras from '../../../components/DbItemExtras.astro';
-import DbFaq from '../../../components/DbFaq.astro';
 import { verifiedPatch, DATABASE_UPDATED } from '../../../data/site-config';
 import TierVote from '../../../components/TierVote.astro';
 import TierBadge from '../../../components/TierBadge.astro';
@@ -44,29 +41,6 @@ const rarityColor = protocol.rarity === 'High-End' ? '#F5CC45' :
                     protocol.rarity === 'Superior' ? '#a855f7' :
                     protocol.rarity === 'Specialized' ? '#3b82f6' : '#888';
 
-// Focus core stats as in planner-specs.json: Commando, Breacher and Field Grenadier build Firepower,
-// Juggernaut and Combat Medicine build Toughness, and the other five focuses build Engineering.
-const specClass = protocol.specialization === 'Engineering' ? 'Demolitionist (HE Munitions), Tech Operator, Tactical Pharma, or Vanguard Recon' :
-                  protocol.specialization === 'Firepower' ? 'Vanguard Commando, Bulwark Breacher or Demolitionist (Field Grenadier)' :
-                  protocol.specialization === 'Toughness' ? 'Bulwark Juggernaut or Field Medic (Combat Medicine)' : 'any specialization';
-
-const osDrop = dropRowsFor('os-protocol', protocol.name)[0];
-
-const faqs = [
-  {
-    question: `Is ${protocol.name} a good OS Protocol in Division Resurgence?`,
-    answer: `${protocol.name} is a ${protocol.rarity} ${protocol.specialization} OS Protocol that gives you ${protocol.mainStat} ${protocol.mainValue} plus ${protocol.attr1} ${protocol.val1}, ${protocol.attr2} ${protocol.val2}, and ${protocol.attr3} ${protocol.val3}. The talent is the real reason you want this thing: "${protocol.talentDescription}" If your build stacks ${protocol.specialization}, it slaps.`
-  },
-  {
-    question: `Which specialization uses ${protocol.name}?`,
-    answer: `${protocol.name} is ${/^[AEIOU]/.test(protocol.specialization) ? 'an' : 'a'} ${protocol.specialization} protocol, so it fits best on ${specClass} builds. You get ${protocol.mainStat} ${protocol.mainValue} as your main stat. Plug it into any ${protocol.specialization}-stacking loadout and you'll feel the difference immediately.`
-  },
-  {
-    question: `How do I get ${protocol.name} in Division Resurgence?`,
-    answer: `${protocol.name} is in the OS Protocol Sealed Cache, where Ubisoft lists it as a ${osDrop ? osDrop.tier + ' entry at ' + osDrop.chance + ' per cache' : 'possible result'}. Every sealed cache guarantees a Tier S result within 50 pulls and a Tier A result within 10, but not a specific protocol. Protocols also drop from regular play, though Ubisoft doesn't publish those odds.`
-  }
-];
-
 const slug = protocol.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
 const siteUrl = 'https://resurgencebuilds.com';
 // The protocol's card in the in-game Build-Making Database (580 px wide, far bigger than the icon).
@@ -86,14 +60,13 @@ const protocolLd = {
   ...(cardImage ? { image: imageObject(cardImage) } : {}),
   inLanguage: 'en-US',
   lastReviewed: protocol.verifiedInGame || '2026-05-30',
-  wordCount: 600,
   about: { '@id': `${siteUrl}/#division-resurgence` },
 };
 
 const ogImage = cardImage?.src || (protocol.image ? `${siteUrl}${protocol.image}` : undefined);
 ---
 
-<BaseLayout title={title} description={description} breadcrumbs={breadcrumbs} jsonLd={protocolLd} faqs={faqs} ogImage={ogImage}>
+<BaseLayout title={title} description={description} breadcrumbs={breadcrumbs} jsonLd={protocolLd} ogImage={ogImage} noAds>
   <div class="container section">
     <Breadcrumbs items={breadcrumbs} />
     <SectionTag label="OS Protocol" />
@@ -185,16 +158,9 @@ const ogImage = cardImage?.src || (protocol.image ? `${siteUrl}${protocol.image}
         </figure>
       )}
 
-      <!-- How to Get -->
-      <div class="protocol-section">
-        <h2 class="protocol-section__title">How to Get {protocol.name}</h2>
-        <div style="color: var(--ink); line-height: 1.75; font-size: var(--text-base);">
-          <p>The one source with published odds is the <strong style="color: #fff;">OS Protocol Sealed Cache</strong>: Ubisoft lists {protocol.name} {osDrop ? <>as a <strong style="color: var(--accent);">{osDrop.tier}</strong> entry at <strong style="color: var(--accent);">{osDrop.chance}</strong> per cache</> : 'in the cache table'} (see Official Drop Odds below). Since Season 1 Phase 3, a Tier S result comes up 2% of the time, up from 0.5%, and is guaranteed within 50 pulls instead of 90, per the <a href="/patch-notes/season-1-phase-3-a-new-fire/" style="color: var(--accent);">Season 1 Phase 3 patch notes</a>. That guarantee is for any Tier S result, not this protocol.</p>
-          <p>Protocols also drop from regular play, and Ubisoft doesn't publish odds for those. {protocol.rarity === 'High-End' ? 'Gold ones are the rare ones. Outside the sealed cache, Died Again Gaming\'s pick is the fourth Weekly Bounty boss: on his October 25, 2026 stream he said its Key Rewards guarantee a random gold OS Protocol each week.' : protocol.rarity === 'Superior' ? 'Purple ones turn up regularly once you are in endgame content. In June, Died Again Gaming farmed them by re-running the fourth Weekly Bounty boss, which had a chance at one on every kill.' : protocol.rarity === 'Specialized' ? 'Blue ones are common from early endgame on.' : 'Standard ones are the lowest rarity and the easiest to come by.'} Keep an eye on the <a href="/guides/division-resurgence-codes/" style="color: var(--accent);">active codes page</a> too, since event rewards sometimes include protocol selection boxes.</p>
-        </div>
-      </div>
-      <DbFaq faqs={faqs} />
-      <DbItemExtras kind="os-protocol" name={protocol.name} />
+      <DbItemExtras kind="os-protocol" name={protocol.name}>
+        <p slot="drops-note" class="item-note">Protocols also drop from regular play, without published odds. The <a href="/database/os-protocols/#faq">OS Protocols FAQ</a> covers where each rarity comes from.</p>
+      </DbItemExtras>
 
       <!-- Related Links -->
       <div class="protocol-related">
@@ -204,7 +170,6 @@ const ogImage = cardImage?.src || (protocol.image ? `${siteUrl}${protocol.image}
       </div>
     </div>
 
-    <AdSenseUnit label="Advertisement (database item)" />
   </div>
 </BaseLayout>
 

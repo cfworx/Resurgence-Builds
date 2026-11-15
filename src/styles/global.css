@@ -1846,6 +1846,8 @@ details.toc[open] > summary { margin-bottom: var(--sp-2); }
   line-height: 1.6;
   color: var(--ink-muted);
 }
+/* The same note standing on its own between two sections of a database page */
+.item-note--block { margin: 0 0 var(--sp-8); }
 
 /* --- Phone tables ---
    Every markdown table cell carries a data-label with its column header (scripts/rehype-table-cards.mjs);

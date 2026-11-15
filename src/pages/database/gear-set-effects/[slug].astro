@@ -8,7 +8,6 @@ import gearSets from '../../../data/gear-set-effects.json';
 import armoryGear from '../../../data/armory-gear.json';
 import { slugify, GEAR_SOURCES_RECORDED } from '../../../utils/rolls';
 import DbItemExtras from '../../../components/DbItemExtras.astro';
-import DbFaq from '../../../components/DbFaq.astro';
 import { buildsWearingSet, buildSetLoadouts, fmtDate } from '../../../utils/db-enrich';
 import { verifiedPatch, DATABASE_UPDATED } from '../../../data/site-config';
 import GameImage from '../../../components/GameImage.astro';
@@ -47,15 +46,6 @@ const archetype = isHealer ? 'Healer/Support' :
                   isHybrid && isDPS && isTank ? 'Hybrid DPS/Tank' :
                   'Versatile';
 
-const specRecommendation: Record<string, string> = {
-  'Weapon DPS': 'Vanguard and Breacher builds that lead with bullets. Stack this with a Firepower OS Protocol and weapon talents like Killer, Concentrated Fire, or In Sync.',
-  'Skill DPS / Engineering': 'Demolitionist and Tech Operator builds where your skills are doing the real work. Pair with an Engineering OS Protocol: Surgical Engineering or Tactical Layering are the move.',
-  'Tank': 'Bulwark builds and face-tanking Field Medics. Run a Toughness OS Protocol like Pummeling Shield or Heavy Armor and become the team\'s human shield.',
-  'Healer/Support': `Field Medic and support-focused builds. Your job is keeping everyone alive: stack Healing Intensity and pair with ${['Captain Cow', 'Dr. Medic'].filter((n) => n !== set.name).join(' or ')} pieces for maximum healing output.`,
-  'Hybrid DPS/Skill': 'Builds that want their guns AND skills hitting hard. Tech Operators running Striker Drone + an AR, or Vanguards who lean on Scanning Pulse for crit buffs.',
-  'Hybrid DPS/Tank': 'Bruiser builds: you want to deal damage AND eat shots. Bulwark Breachers or Vanguards who push aggressively into enemies.',
-  'Versatile': 'Flexible enough to slot into multiple build types. Check what your 4-piece bonus actually does and build around that specific stat.',
-};
 
 const overviewGuide: Record<string, string> = {
   'Fury Strike': `Fury Strike is the go-to crit set in Division Resurgence. The 2-piece gives you extra range, the 3-piece adds Crit Chance, and the 4-piece stacks Crit Damage on top. If you're building a Vanguard or Breacher DPS that wants every shot to potentially delete something, this is your set. It rolls on every tier from T0 up, so you can start collecting pieces long before endgame.`,
@@ -115,7 +105,6 @@ const num = countWord;
 const cap = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
 const partSizes = [...new Set(asPart.map((w) => w.pieces))];
 const partDesc = partSizes.length === 1 ? `${num(partSizes[0])} pieces` : 'a few pieces';
-const wearerName = (w: { title: string; creator: string | null }) => w.creator && !w.title.includes(w.creator) ? `${w.creator}'s ${w.title}` : w.title;
 const usageLine = wearers.length === 0
   ? `None of the ${totalLoadouts} build guides on our site wear ${set.name} yet.`
   : `${asFour.length ? `${cap(num(asFour.length))} of the ${totalLoadouts} build guides on our site ${asFour.length === 1 ? 'runs' : 'run'} it as the 4-piece` : `None of the ${totalLoadouts} build guides on our site run it as the 4-piece`}${asPart.length ? `${asFour.length ? ` and ${num(asPart.length)} more` : `, but ${num(asPart.length)}`} ${asPart.length === 1 ? 'wears' : 'wear'} ${partDesc} beside another set` : ''}.`;
@@ -128,20 +117,6 @@ const breadcrumbs = [
   { name: set.name, url: '#' }
 ];
 
-const faqs = [
-  {
-    question: `Is ${set.name} good in Division Resurgence?`,
-    answer: `${set.name} is a ${archetype} gear set: ${set.bonus2} at 2 pieces, ${set.bonus3} at 3 and ${set.bonus4} at 4. ${usageLine} ${wearers.length ? 'They are listed on this page.' : 'Whether it works for you comes down to how much your build leans on those stats.'}`
-  },
-  {
-    question: `What builds use ${set.name} in Division Resurgence?`,
-    answer: `${wearers.length ? `On our site: ${listJoin(wearers.map((w) => `${wearerName(w)} (${w.pieces}-piece${w.partner ? `, with ${w.partnerPieces}-piece ${w.partner}` : ''})`))}. ` : `None of our ${totalLoadouts} build guides wear it yet. `}On paper it fits ${specRecommendation[archetype] || 'builds that stack the stats this set provides. Check the 4-piece bonus and build around it.'}`
-  },
-  {
-    question: `Where does ${set.name} drop in Division Resurgence?`,
-    answer: `${set.name} rolls on ${tierPhrase}, per the in-game Armory and the Build-Making Database (checked October 28, 2026). ${farmTip} Our gear farming guide covers where each tier drops.`
-  }
-];
 
 // The set's panel in the in-game Build-Making Database: bonuses on the left, the gear pieces on the right.
 const panelImage = dbImage(`gear-set-effects/${slug}`);
@@ -160,7 +135,6 @@ const setLd = {
   image: panelImage ? imageObject(panelImage) : { '@type': 'ImageObject', url: `${siteUrl}/images/resurgence-builds-official-logo.png`, width: 1024, height: 1024 },
   inLanguage: 'en-US',
   lastReviewed: set.verifiedInGame || '2026-05-30',
-  wordCount: 500,
   about: { '@id': `${siteUrl}/#division-resurgence` },
 };
 
@@ -171,7 +145,7 @@ const bonuses = [
 ];
 ---
 
-<BaseLayout title={title} description={description} breadcrumbs={breadcrumbs} jsonLd={setLd} faqs={faqs} ogImage={panelImage?.src}>
+<BaseLayout title={title} description={description} breadcrumbs={breadcrumbs} jsonLd={setLd} ogImage={panelImage?.src}>
   <div class="container section">
     <Breadcrumbs items={breadcrumbs} />
     <SectionTag label="Gear Set" />
@@ -257,13 +231,11 @@ const bonuses = [
         <p class="gearset-note">Source: the in-game Armory (its Season 1 pages show the sets each gear piece can roll, checked {fmtDate(armoryGear.checked)}) and this set's full Source list in the Build-Making Database (recorded {GEAR_SOURCES_RECORDED}), which list the same pieces, at High-End and Superior.{set.name === 'Captain Cow' || set.name === 'Fearless Warrior' ? ' The list shows two Superior T0 pieces twice: a second "Tay" Protective Pads v2, and "Fearless Hunter\'s Code Gloves", a finished Level 1 copy of the Hunter\'s Code Gloves.' : ''}</p>
       </div>
 
-      <!-- Best Builds -->
+      <!-- Builds on the site that wear it -->
       <div class="gearset-section">
-        <h2 class="gearset-section__title">Best Builds & Playstyles</h2>
+        <h2 class="gearset-section__title">Builds That Run {set.name}</h2>
         <div class="gearset-prose">
-          <p><strong style="color: #fff;">Build Archetype:</strong> <span style={`color: ${isDPS ? 'var(--accent)' : isSkill ? '#F5CC45' : isTank ? '#3a7bd5' : '#6DAA45'};`}>{archetype}</span></p>
-          <p>{specRecommendation[archetype] || 'This set works best when you build around the 4-piece bonus. Check what stat it provides and pick a specialization, OS Protocol, and weapon talents that multiply that stat.'}</p>
-          <p>Most endgame builds run a 4-piece gear set core with 2 pieces from a complementary set. {usageLine}</p>
+          <p>{usageLine}</p>
         </div>
         {wearers.length > 0 && (
           <ul class="gearset-builds">
@@ -276,8 +248,6 @@ const bonuses = [
           </ul>
         )}
       </div>
-
-      <DbFaq faqs={faqs} />
 
       <DbItemExtras kind="gear-set" name={set.name} drops={false} exclude={wearers.map((w) => w.url)} />
 

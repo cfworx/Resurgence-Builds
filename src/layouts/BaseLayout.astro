@@ -29,13 +29,13 @@ export interface Props {
   robots?: string;
   /** Override the canonical URL (defaults to the page's own URL). */
   canonical?: string;
-  /** Keep ads on a noindexed page (tag archives without an intro had them before the
-   *  robots tag moved here from the page's own <head> slot). */
-  keepAds?: boolean;
 }
 
-const { title, description, ogType, ogImage, article, keywords, breadcrumbs, jsonLd, faqs, noAds, noindex, robots, canonical, keepAds } = Astro.props;
-const suppressAds = noAds || ((noindex || !!robots) && !keepAds);
+const { title, description, ogType, ogImage, article, keywords, breadcrumbs, jsonLd, faqs, noAds, noindex, robots, canonical } = Astro.props;
+// Ads only run on pages with enough of our own content to carry them. A page kept out of Google
+// (noindex), a list of links (tag archives) or a short database card never loads the ad code:
+// pass noAds from those templates. scripts/audit-indexation.mjs fails the build when one slips through.
+const suppressAds = noAds || noindex || !!robots;
 ---
 
 <!DOCTYPE html>

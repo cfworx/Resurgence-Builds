@@ -262,6 +262,56 @@ if (orphanPages.length > 0) {
 }
 console.log(`  Content pages checked: ${contentPages.length - EXEMPT_PATHS.size}, orphans: ${orphanPages.length}`);
 
+/* ── 7. Ad placement ─────────────────────────────────────── */
+// Ad networks don't allow ads on pages with little content of their own, on lists of links, or on
+// pages kept out of search. BaseLayout drops the ad code on noindexed pages and on templates that
+// pass noAds; this check catches a page that slips through (a new template, a database card that
+// lost its text). Fix by passing noAds from the page's template, or by giving the page real content.
+
+console.log('\n=== 7. Ad placement ===');
+const MIN_WORDS_FOR_ADS = 300;
+const AD_LOADER = 'pagead2.googlesyndication.com/pagead/js/adsbygoogle.js';
+
+function mainWordCount(html) {
+  const m = html.match(/<main[^>]*>([\s\S]*)<\/main>/);
+  if (!m) return 0;
+  const text = m[1]
+    .replace(/<(script|style|svg|nav|template)\b[\s\S]*?<\/\1>/g, ' ')
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/&[a-z#0-9]+;/gi, ' ');
+  return text.split(/\s+/).filter((w) => /[A-Za-z0-9]/.test(w)).length;
+}
+
+const adsOnNoindex = [];
+const adsOnThin = [];
+const slotsWithoutLoader = [];
+let pagesWithAds = 0;
+for (const p of allPages) {
+  const htmlPath = path.join(dist, p.slice(1), 'index.html');
+  const html = pageHtmlMap.get(p) || (fs.existsSync(htmlPath) ? fs.readFileSync(htmlPath, 'utf8') : '');
+  if (!html || /<meta http-equiv="refresh"/i.test(html)) continue;
+  const hasLoader = html.includes(AD_LOADER);
+  const hasSlot = html.includes('class="adsbygoogle"');
+  if (hasSlot && !hasLoader) slotsWithoutLoader.push(p);
+  if (!hasLoader) continue;
+  pagesWithAds++;
+  const robotsMeta = html.match(/<meta[^>]*name=["']robots["'][^>]*content=["']([^"']*)["']/i);
+  if (robotsMeta && /noindex/i.test(robotsMeta[1])) adsOnNoindex.push(p);
+  const words = mainWordCount(html);
+  if (words < MIN_WORDS_FOR_ADS) adsOnThin.push(`${p} (${words} words)`);
+}
+
+check('No ad code on noindexed pages', adsOnNoindex.length === 0,
+  `${adsOnNoindex.length} noindexed pages load the ad code`);
+adsOnNoindex.slice(0, 20).forEach(p => console.log(`    ✗ ${p}`));
+check(`No ad code on pages under ${MIN_WORDS_FOR_ADS} words`, adsOnThin.length === 0,
+  `${adsOnThin.length} short pages load the ad code (pass noAds from their template)`);
+adsOnThin.slice(0, 20).forEach(p => console.log(`    ✗ ${p}`));
+check('No ad slots on pages without the ad code', slotsWithoutLoader.length === 0,
+  `${slotsWithoutLoader.length} pages have an empty ad slot and no ad code`);
+slotsWithoutLoader.slice(0, 20).forEach(p => console.log(`    ✗ ${p}`));
+console.log(`  Pages with ads: ${pagesWithAds} of ${allPages.length}`);
+
 /* ── Summary ─────────────────────────────────────────────── */
 
 console.log('\n' + '='.repeat(50));
