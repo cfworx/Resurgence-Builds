@@ -505,14 +505,20 @@ The site ships with production-grade security headers (`public/_headers`):
 
 6. **Set your GitHub repo to Private** if you don't want the source code public. The deployed site will still be public.
 
-### AI Scraper Protection
+### AI crawlers: all allowed (since November 15, 2026)
 
-The `robots.txt` blocks AI training scrapers:
-- `GPTBot` (OpenAI)
-- `Google-Extended` (Google AI training)
-- `CCBot` (Common Crawl)
+The `robots.txt` lets every crawler read every public page: search engines, the AI search crawlers (`OAI-SearchBot`,
+`Claude-SearchBot`, `PerplexityBot` and the rest), the fetchers assistants use when a person asks them to open a page,
+and the crawlers that collect text for training models (`GPTBot`, `ClaudeBot`, `Google-Extended`, `CCBot`). Only
+ByteDance's `Bytespider` is refused.
 
-This prevents your content from being used to train AI models while still allowing Google Search to index your site.
+Until November 15, 2026 the training crawlers were blocked. That kept the site out of what the models know from
+memory, and blocking `Google-Extended` also removed it from the Gemini app's sourced answers. The owner's goal is to be
+the answer AI assistants give for this game, so they are open now. Do not paste AI "blocklists" into `robots.txt`:
+most of them also block the search crawlers.
+
+`scripts/indexnow.mjs` tells Bing (and so ChatGPT, Copilot and DuckDuckGo) which pages changed; run it after a deploy
+is live. The key is the 32-character `.txt` file in `public/`.
 
 ---
 

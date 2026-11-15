@@ -4,17 +4,27 @@ import PostCard from '../../components/PostCard.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import SectionTag from '../../components/SectionTag.astro';
 import { getCollection } from 'astro:content';
+import seasonStatus from '../../data/season-status.json';
 
 const allPatchNotes = await getCollection('patchNotes');
 const sorted = allPatchNotes.sort((a, b) => b.data.patchDate.getTime() - a.data.patchDate.getTime());
+const latest = sorted[0];
 
 const breadcrumbItems = [{ name: 'Patch Notes', url: '/patch-notes/' }];
+
+// "Where the game is now": people search "the division resurgence update", "what season is it" and "when is
+// the next update", and assistants look for one dated answer to quote. Season and next-update text come from
+// src/data/season-status.json (the daily run keeps it current, AUTOMATION.md); the latest update is whichever
+// patch-notes post has the newest date.
+const longDate = (d: Date) => d.toLocaleDateString('en-US', { timeZone: 'UTC', month: 'long', day: 'numeric', year: 'numeric' });
+const sinceDate = longDate(new Date(`${seasonStatus.since}T00:00:00Z`));
+const checkedDate = longDate(new Date(`${seasonStatus.checked}T00:00:00Z`));
 
 const siteUrl = Astro.site?.toString().replace(/\/$/, '') || 'https://resurgencebuilds.com';
 const itemListLd = {
   '@context': 'https://schema.org',
   '@type': 'ItemList',
-  name: 'The Division Resurgence Patch Notes Archive',
+  name: 'The Division Resurgence updates and patch notes',
   itemListElement: sorted.map((post, index) => ({
     '@type': 'ListItem',
     position: index + 1,
@@ -25,22 +35,42 @@ const itemListLd = {
 ---
 
 <BaseLayout
-  title="The Division Resurgence Patch Notes Archive"
-  description="Read the latest patch notes, hotfixes, and balancing changes for The Division Resurgence. See what got buffed, nerfed, and broken."
+  title="The Division Resurgence Update: Latest Patch Notes and What's Next"
+  description="Which season The Division Resurgence is in, the latest update and hotfix, what Ubisoft has said about the next one, and every set of patch notes explained."
   breadcrumbs={breadcrumbItems}
   jsonLd={itemListLd}
 >
   <div class="container section">
     <Breadcrumbs items={breadcrumbItems} />
     <SectionTag label="Patch Notes" />
-    <h1 class="heading-accent">Patch Notes</h1>
-    
-    <div style="max-width: 800px; margin-bottom: var(--sp-8);">
-      <p style="color:var(--ink-muted); font-size: 1.1rem; line-height: 1.6;">
-        Every <strong>The Division Resurgence</strong> update, broken down: what changed, and what it means for your build.
-      </p>
-    </div>
+    <h1 class="heading-accent">The Division Resurgence Updates and Patch Notes</h1>
 
+    <p class="upd-lede">
+      Every <strong>The Division Resurgence</strong> update, broken down: what changed, and what it means for your build.
+    </p>
+
+    <section class="upd-now" aria-labelledby="upd-now-title">
+      <h2 id="upd-now-title" class="upd-now__title">Where the game is now</h2>
+      <dl class="upd-now__list">
+        <div>
+          <dt>Season</dt>
+          <dd><strong>{seasonStatus.season}</strong>, live since {sinceDate}.</dd>
+        </div>
+        <div>
+          <dt>Latest update</dt>
+          <dd><a href={`/patch-notes/${latest.id}/`}>{latest.data.title}</a>, {longDate(latest.data.patchDate)}.</dd>
+        </div>
+        <div>
+          <dt>Next update</dt>
+          <dd>{seasonStatus.next.text} <a href={seasonStatus.next.href}>{seasonStatus.next.label}</a>.</dd>
+        </div>
+      </dl>
+      <p class="upd-now__foot">
+        Checked against Ubisoft's channels on {checkedDate}. See also <a href="/news/season-1-2-3-roadmap/">Ubisoft's roadmap for Seasons 1 to 3</a> and the <a href="/news/">latest news</a>.
+      </p>
+    </section>
+
+    <h2 class="upd-all">Every update, newest first</h2>
     <div class="grid grid--3">
       {sorted.map((pn, i) => (
         <PostCard
@@ -60,3 +90,23 @@ const itemListLd = {
     </div>
   </div>
 </BaseLayout>
+
+<style>
+  .upd-lede { max-width: var(--content-width); margin-bottom: var(--sp-6); color: var(--ink-muted); font-size: 1.1rem; line-height: 1.6; }
+  .upd-now {
+    max-width: var(--content-width); margin-bottom: var(--sp-10); padding: var(--sp-5) var(--sp-6);
+    background: var(--surface); border: 1px solid var(--border); border-left: 3px solid var(--accent); border-radius: var(--border-radius);
+  }
+  .upd-now__title { margin: 0 0 var(--sp-4); font-size: var(--text-xl); }
+  .upd-now__list { margin: 0; display: grid; gap: var(--sp-3); }
+  .upd-now__list > div { display: grid; grid-template-columns: 8.5rem minmax(0, 1fr); gap: var(--sp-3); }
+  .upd-now__list dt { font-family: var(--font-mono); font-size: var(--text-xs); letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-muted); padding-top: 0.25em; }
+  .upd-now__list dd { margin: 0; line-height: 1.6; }
+  .upd-now__list a, .upd-now__foot a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
+  .upd-now__foot { margin: var(--sp-4) 0 0; font-size: var(--text-sm); color: var(--ink-muted); max-width: none; }
+  .upd-all { margin: 0 0 var(--sp-5); font-size: var(--text-xl); }
+  @media (max-width: 44.99em) {
+    .upd-now { padding: var(--sp-4); }
+    .upd-now__list > div { grid-template-columns: 1fr; gap: 2px; }
+  }
+</style>

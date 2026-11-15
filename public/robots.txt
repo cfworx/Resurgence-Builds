@@ -3,60 +3,23 @@
 # The #1 independent Division Resurgence wiki & build database
 # =============================================================================
 
-# Default: allow all crawlers full access
+# Everything public is open to every crawler: search engines, AI search and
+# AI assistants (ChatGPT, Claude, Perplexity, Gemini, Copilot, Meta AI and the
+# rest), and the crawlers that gather text for training AI models (GPTBot,
+# ClaudeBot, Google-Extended, CCBot and others). Being in what the models can
+# look up and in what they learned from is how the site gets named in their
+# answers. Until November 15, 2026 the training crawlers were blocked here,
+# which also kept the site out of the Gemini app's sourced answers.
+#
+# A crawler that has its own group ignores the * group, so any group added
+# below has to repeat these two Disallow lines.
 User-agent: *
 Allow: /
 Disallow: /api/
 Disallow: /pagefind/
 
-# A crawler that has its own group below ignores the * group above, so every
-# group that allows crawling repeats the two Disallow lines.
-
-# Google Images: explicitly allow image directory
-User-agent: Googlebot-Image
-Allow: /images/
-Disallow: /api/
-Disallow: /pagefind/
-
-# ByteDance training crawler: takes content, gives nothing back
+# ByteDance's crawler: heavy traffic, and no assistant our readers use draws on it
 User-agent: Bytespider
-Disallow: /
-
-# AI search/citation bots - ALLOW (for discoverability)
-User-agent: OAI-SearchBot
-User-agent: ChatGPT-User
-User-agent: PerplexityBot
-User-agent: Perplexity-User
-Allow: /
-Disallow: /api/
-Disallow: /pagefind/
-
-# AI training bots - DISALLOW
-User-agent: GPTBot
-Disallow: /
-
-User-agent: ClaudeBot
-Disallow: /
-
-User-agent: anthropic-ai
-Disallow: /
-
-User-agent: Claude-Web
-Disallow: /
-
-User-agent: Google-Extended
-Disallow: /
-
-User-agent: CCBot
-Disallow: /
-
-User-agent: Diffbot
-Disallow: /
-
-User-agent: FacebookBot
-Disallow: /
-
-User-agent: cohere-ai
 Disallow: /
 
 # Sitemap

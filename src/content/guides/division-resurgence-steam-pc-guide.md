@@ -1,10 +1,10 @@
 ---
-title: "Division Resurgence Steam & PC Guide"
+title: "The Division Resurgence on PC: Steam, Requirements, Steam Deck, Crossplay"
 category: "General"
 publishDate: 2026-06-15
 lastUpdated: 2026-10-26T12:00:00Z
 tags: ["Steam", "PC", "Steam Deck", "Ubisoft Connect", "Crossplay", "Cross-Progression", "System Requirements", "Controller", "Free to Play", "division-resurgence-steam", "division-resurgence-pc"]
-description: "Division Resurgence on Steam and PC: launch date, specs, moving your mobile progress, crossplay, controllers, Steam Deck and launch rewards."
+description: "The Division Resurgence on PC, free on Steam and Ubisoft Connect: PC requirements, Steam Deck, crossplay with mobile, moving your progress and controllers."
 author: "RapidF5"
 featuredImage: "/images/guides/division-resurgence-steam-pc-guide-hero.webp"
 imageAlt: "A Division agent in a red flannel shirt playing on a Steam Deck next to the words Coming to Steam"

@@ -190,7 +190,10 @@ video title is not a source for anything you publish.
 
 Update these when a source changes them (and only then):
 
-- `src/data/season-status.json`: the homepage "Live now" strip (season, headline, links, `checked` date).
+- `src/data/season-status.json`: the homepage "Live now" strip (season, headline, links, `checked` date) and, in `next`,
+  what Ubisoft has said about the next update. `next` and `checked` show in the "Where the game is now" box on
+  `/patch-notes/`, the page people land on when they search "the division resurgence update": on every run that
+  re-checks Ubisoft's channels, set `checked` to that day, and rewrite `next` the day Ubisoft says something new.
 - `src/data/site-config.ts`: `CURRENT_PATCH` and `CURRENT_PATCH_PLAIN` when a new season or phase goes live.
 - `src/data/drop-rates.json`: when the Help Center drop-rates article changes. Re-transcribe the whole table (every cache,
   every row) and check each tier sums to its total; never partially update. Update `checked` and `sourceUpdatedApprox`.
@@ -238,6 +241,16 @@ git push origin HEAD:main
 
 Update `automation/state.json` in the same commit: add every source item you looked at (published or not) so the next run
 doesn't re-evaluate it, and set `lastRun` and `lastRunSummary`.
+
+After a push that published or changed pages, wait until the deploy is live (two to four minutes; check that a changed
+page shows the new text), then tell Bing which pages changed:
+
+```bash
+node scripts/indexnow.mjs          # pages whose sitemap date is within the last 3 days
+```
+
+Bing's index is what ChatGPT, Copilot and DuckDuckGo search, so this is how a new post reaches them the same day instead
+of days later. It prints the pages it sent and "accepted". Skip it on `[CF-Pages-Skip]` state-only pushes.
 
 If nothing was post-worthy, still save the state, alone, with a commit message that **starts with `[CF-Pages-Skip]`**
 (Cloudflare Pages then skips the deploy, so there's no empty deploy):
