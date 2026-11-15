@@ -2,6 +2,8 @@
 
 This is the procedure the scheduled **morning run** follows every day. It is written for an AI agent (or a human) starting
 from a fresh clone with no memory of earlier runs. Everything it needs to remember lives in `automation/state.json`.
+The scheduled task is called "Resurgence Builds morning run" and fires at 5:53 AM Pacific (set up again on November 15,
+2026, after the earlier one stopped on November 11). Its prompt points here, so change the procedure in this file.
 
 Goal: each morning, check the official sources and every active source in `automation/sources.json` for anything new
 about **Tom Clancy's The Division Resurgence**. If something is post-worthy and verified, write it up in the site's voice,
@@ -89,7 +91,7 @@ Work through every group in the file, every run. Each entry has the URL to check
 If a source won't load, try once more, then mark it (`status: unreachable` or `blocked`, `failStreak` + 1) and move on.
 Never use mirrors, caches, archives or scraping services to get around a block.
 
-**Reach links through search in an unattended run.** At 6:30 AM nobody is there to approve a fetch, and the fetch tool
+**Reach links through search in an unattended run.** At 5:53 AM nobody is there to approve a fetch, and the fetch tool
 only opens a link without approval when it came from this run's own search results or from a page the run already
 opened. A link typed into the task prompt, copied from this file or `sources.json`, or built by hand waits for an
 approval that never comes (`PROVENANCE_REQUIRED`). That is what happened on 2026-10-26: the first fetch, the Steam RSS
