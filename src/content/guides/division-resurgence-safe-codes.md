@@ -1,5 +1,5 @@
 ---
-title: "Safe Codes Master List | Division Resurgence"
+title: "The Division Resurgence Safe Codes: Every Encrypted Crate Code"
 category: "General"
 publishDate: 2026-05-28
 lastUpdated: 2026-10-24T12:00:00Z
