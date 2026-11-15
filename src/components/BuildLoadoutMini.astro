@@ -74,7 +74,7 @@ const ABBR: Record<string, string> = { Mask: 'Mask', 'Body Armor': 'Chest', Back
   }
   .lom__card { display: grid; gap: var(--sp-6); }
   .lom__panel {
-    max-height: calc(100vh - var(--nav-height) - var(--sp-8)); overflow-y: auto; overscroll-behavior: contain;
+    max-height: calc(100vh - var(--nav-height) - var(--sp-8) - var(--ad-bottom, 0px)); overflow-y: auto; overscroll-behavior: contain;
     padding: var(--sp-4); border-radius: var(--radius); background: #151518; border: 1px solid var(--border);
   }
   .lom p { margin: 0; max-width: none; }

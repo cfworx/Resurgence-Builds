@@ -127,19 +127,43 @@ screenshots in phone emulation are misleading).
   network code on the site, and the build check fails if any comes back. The old `AdSenseUnit` slots are gone.
 - Journey places the ads itself, from settings on its side that name our markup. Renaming these breaks ads:
   - in-content ads go inside `.build-article` (build posts; guides and news carry the class for that reason);
-  - the sidebar ad goes at the end of `.build-main > .lom > .lom__card`, so `.lom__card` is a plain wrapper and
-    the visible loadout card is `.lom__panel`. The column is 300px, the width of that ad;
-  - a banner fixed to the bottom of the screen (`body.adhesion`, 90px on desktop and 50px on phones when we
-    measured it live) and, at times, a small video player above it: bottom right on wide screens, bottom left
-    and 300px wide on phones. The Loadout button measures both (`place()` in `BuildLayout`): it sits above the
-    banner, moves to the bottom left on wide screens, and rises above the player on phones. The vote toast
-    moves up 100px;
+  - the sidebar ads go at the end of `.build-main > .lom > .lom__card`, so `.lom__card` is a plain wrapper and
+    the visible card is `.lom__panel`. The column is 300px, the width of that ad. Build posts have the loadout
+    card there (`BuildLoadoutMini`); guides, news and patch notes have the Contents list (`ArticleRail`, added
+    November 15, 2026, in the space that sat empty beside the 48rem article). Sidebar ads only show on screens
+    1100px and wider, and our column starts at 72em;
+  - a banner fixed to the bottom of the screen (`#fixed_container_bottom > .adhesion_wrapper`, 90px on desktop
+    and 50px on phones when we measured it live) and, at times, a small video player above it
+    (`.universalPlayer__bottom`): bottom right on wide screens, bottom left and 300px wide on phones;
   - it reads `.site-footer` to know where the sidebar ad stops.
+- Anything of ours pinned to the bottom of the screen has to clear the banner and the player. `BaseLayout`
+  measures them into two CSS variables on `<html>`, `--ad-bottom` (banner height) and `--ad-video` (player
+  height plus a gap, while it shows), both 0px without ads, and adds `html.ads-on`. Use them instead of fixed
+  numbers: the vote toast, the phone menu's bottom padding, the map's Layers button and sheet, the side cards'
+  height and `scroll-padding-bottom` all do. The Loadout button measures for itself (`place()` in
+  `BuildLayout`): above the banner, bottom left on wide screens, above the player on phones.
 - With a sidebar ad present, the loadout card stops following the reader (the ad does) and the Loadout button
-  shows on wide screens too. Without one (ad blockers) the page behaves as before. Live, Journey stacks
+  shows on wide screens too; the Contents list on guides and news becomes a box up to 32rem tall that scrolls
+  inside itself. Without one (ad blockers) the card or list follows the reader. Live, Journey stacks
   300x600 ads down that column under the card, and on a build post it puts about six in-content ads on
   desktop and nine on a phone (a quarter or so of the article's height), after paragraphs, lists, the vote
   box, the comments and the FAQ. That density is Journey's setting, not ours.
+- How the script picks in-content spots (read from its code, version 3.92.3): it walks the direct children of
+  `.build-article` and can only put an ad after a child that is `display: block` and not a heading, at least
+  two text blocks after the last ad and below the first screen. It goes inside `ul` and `ol` lists (the ad
+  lands at the end of a list item) but never inside a grid or flex box, so card grids stay whole. Spacing is
+  its own: about 900px of content between ads until it has viewability numbers for the site, then tighter
+  (down to 615px) when ads are seen a lot and wider (1050px) when they are not. So an ad nobody scrolls to
+  costs spots elsewhere: more ad boxes is not more money.
+- Journey's rules (its help center): in-content ads are for posts with long-form content, and there is no
+  manual placement. We follow that: the class goes on articles, not on the home page, list pages or the
+  database index. Those pages still get the bottom banner and the video player.
+- No ad script at all, on purpose: pages kept out of search, tag archives, the short database cards (OS
+  Protocols, weapon talents) and the Build Planner. The planner's score bar, pickers and payout card all live
+  at the bottom of the screen where the banner goes; giving it ads means reworking those first.
+- One ad unit can be switched off on one page with `data-blocklist-<unit>="1"` on the settings element below
+  (units: `adhesion-mobile`, `adhesion-desktop`, `content-mobile`, `content-desktop`, `sidebar-btf`,
+  `universal-player-mobile`, `universal-player-desktop`).
 - The privacy page loads the script with every ad off (`adNotice`): the script appends Mediavine's privacy
   notice to the `.entry-content` element there. Keep that element.
 - `/ads.txt` is a redirect (`public/_redirects`) to the file Journey hosts for this site; there is no

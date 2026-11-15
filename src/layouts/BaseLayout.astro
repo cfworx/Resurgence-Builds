@@ -119,6 +119,44 @@ gtag('config', '${GA4_ID}');`}></script>
   {/* The ad script is on this page for another job (the privacy notice): this tells it to show no ads. */}
   {loadAdScript && suppressAds && <div id="ad-management-config-settings" data-blocklist-all="1" hidden></div>}
 <Footer title={title} />
+  {loadAdScript && !suppressAds && (
+    <script is:inline>
+      // The ad script fixes a banner to the bottom of the screen (#fixed_container_bottom > .adhesion_wrapper)
+      // and, at times, a small video player just above it (.universalPlayer__bottom). This keeps two CSS
+      // variables on <html> current so our own bottom-anchored controls sit clear of them:
+      //   --ad-bottom  height of the banner, 0px when there is none
+      //   --ad-video   height of the video player while it shows at the bottom, plus a 12px gap, else 0px
+      // and the class "ads-on" while a banner is up. Measured, not assumed: the banner was 90px on desktop
+      // and 50px on phones on November 15, 2026, and some ad formats are taller.
+      (function () {
+        if (!('MutationObserver' in window)) return;
+        var root = document.documentElement, watched = [], queued = false, last = '', box = null;
+        var ro = 'ResizeObserver' in window ? new ResizeObserver(queue) : null;
+        function height(el) { return el ? Math.round(el.getBoundingClientRect().height) : 0; }
+        function measure() {
+          queued = false;
+          var ad = document.querySelector('.adhesion_wrapper');
+          var vid = document.querySelector('.universalPlayer__bottom');
+          [ad, vid].forEach(function (el) { if (el && ro && watched.indexOf(el) < 0) { watched.push(el); ro.observe(el); } });
+          var a = height(ad), v = height(vid);
+          if (a + ':' + v === last) return;
+          last = a + ':' + v;
+          root.style.setProperty('--ad-bottom', a + 'px');
+          root.style.setProperty('--ad-video', (v > 0 ? v + 12 : 0) + 'px');
+          root.classList.toggle('ads-on', a > 0);
+        }
+        function queue() { if (!queued) { queued = true; requestAnimationFrame(measure); } }
+        // The script marks <body> when its ads are in and appends its fixed container to <body>; the banner
+        // and the player are that container's children.
+        var mo = new MutationObserver(function () {
+          var b = document.getElementById('fixed_container_bottom');
+          if (b && b !== box) { box = b; mo.observe(b, { childList: true }); }
+          queue();
+        });
+        mo.observe(document.body, { childList: true, attributes: true, attributeFilter: ['class'] });
+      })();
+    </script>
+  )}
   <script>
     // Wrap all prose/content tables in a scrollable box for phones, and fade the edge that has more to scroll to
     document.addEventListener('DOMContentLoaded', () => {

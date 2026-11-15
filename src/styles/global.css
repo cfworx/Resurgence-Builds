@@ -125,6 +125,8 @@ html {
   touch-action: manipulation;
   /* The header is sticky: anything the browser scrolls into view (focus, #anchors) lands below it */
   scroll-padding-top: calc(var(--nav-height) + 20px);
+  /* and above the ad banner fixed to the bottom of the screen, when there is one (see "Ads" below) */
+  scroll-padding-bottom: var(--ad-bottom, 0px);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -758,6 +760,8 @@ html.mobile-nav-open { overflow: hidden; }
   z-index: 9998;
   background: var(--bg);
   padding: var(--sp-6) var(--sp-4);
+  /* the ad banner and video player sit on top of the open menu: room to scroll the last links clear of them */
+  padding-bottom: calc(var(--sp-6) + var(--ad-bottom, 0px) + var(--ad-video, 0px));
   flex-direction: column;
   gap: var(--sp-2);
   overflow-y: auto;
@@ -1619,15 +1623,24 @@ details.toc[open] > summary { margin-bottom: var(--sp-2); }
 .share-box__actions .share-box__reddit, .share-box__actions .share-box__reddit:hover { background: #CC3700; border: 1px solid #CC3700; }
 
 /* --- Ads (Journey by Mediavine) --- */
-/* The ad script draws its own boxes. When its banner is fixed to the bottom of the screen it adds
-   body.adhesion (and 90px of bottom padding): our own bottom-anchored controls move up out of its way. */
-body.adhesion .tv-toast { bottom: calc(100px + env(safe-area-inset-bottom, 0px)); }
+/* The ad script draws its own boxes. It fixes a banner to the bottom of the screen and, at times, a small
+   video player just above it. BaseLayout measures both into --ad-bottom and --ad-video on <html> (0px with
+   no ads) and adds html.ads-on; our own bottom-anchored controls use them to stay clear. The map's Layers
+   button and sheet do the same in the map page's styles, and the Loadout button measures for itself. */
+html.ads-on .tv-toast { bottom: calc(max(20px, env(safe-area-inset-bottom, 0px)) + var(--ad-bottom, 0px) + var(--ad-video, 0px)); }
 /* Build pages, wide screens: the loadout card normally stays in view beside the article. When the ad script
    has put its sidebar ad under it, the ad is the part that follows the reader (the script pins it), so the
    card scrolls with the page and shows in full; the Loadout button then appears on wide screens too. */
 @media (min-width: 72em) {
   .lom:has(.sidebar_btf_wrapper, #sidebar_btf_sticky_wrapper) { position: static; }
   .lom:has(.sidebar_btf_wrapper, #sidebar_btf_sticky_wrapper) .lom__panel { max-height: none; overflow: visible; }
+  /* Guides, news and patch notes (ArticleRail): the same column holds the Contents list. With ads under it the
+     list stays a short box that scrolls inside itself, so a 30-heading guide doesn't push the first ad two
+     screens down. */
+  .lom--rail:has(.sidebar_btf_wrapper, #sidebar_btf_sticky_wrapper) .lom__panel {
+    max-height: min(32rem, calc(100vh - var(--nav-height) - var(--sp-8) - var(--ad-bottom, 0px)));
+    overflow-y: auto; overscroll-behavior: auto;
+  }
 }
 
 /* --- Disclaimer / Humility Banner --- */

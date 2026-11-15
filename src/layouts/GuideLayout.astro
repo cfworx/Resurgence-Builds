@@ -5,6 +5,7 @@ import Breadcrumbs from '../components/Breadcrumbs.astro';
 import SectionTag from '../components/SectionTag.astro';
 import YouTubeEmbed from '../components/YouTubeEmbed.astro';
 import Comments from '../components/Comments.astro';
+import ArticleRail from '../components/ArticleRail.astro';
 import { getAuthorUrl } from '../utils/author';
 import { postImage, srcsetAttr, HERO_SIZES } from '../utils/post-images';
 export interface Props {
@@ -128,6 +129,10 @@ const howToLd = howTo ? {
       </div></div>
     </div>
 
+    {/* build-main > lom > lom__card is where the ad script puts its sidebar ads (see ArticleRail). On wide
+        screens the article sits in the left column and the Contents list moves to the side column. */}
+    <div class="build-main post-main">
+    <div class="post-main__col">
     {featuredImage && (
       <div class="guide-hero content-width">
         <img
@@ -240,6 +245,9 @@ const howToLd = howTo ? {
         </section>
       )}
     </article>
+    </div>
+    <ArticleRail headings={tocItems} />
+    </div>
   </div>
 </BaseLayout>
 
@@ -256,6 +264,15 @@ const howToLd = howTo ? {
     display: block;
     aspect-ratio: 1200 / 630;
     object-fit: contain;
+  }
+
+  /* Article with the side column on wide screens, the same grid as build posts. The side column takes the
+     space that sat empty to the right of the article; 300px is the width of the sidebar ad. */
+  @media (min-width: 72em) {
+    .post-main { display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: var(--sp-8); align-items: start; }
+    .post-main__col > :first-child { margin-top: 0; }
+    /* the Contents list is in the side column at this width */
+    .post-main__col > .toc { display: none; }
   }
 
   /* FAQ styles live in global.css */

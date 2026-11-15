@@ -1,0 +1,60 @@
+---
+// The column beside a guide, news post or patch note on wide screens. It holds the Contents list, and it is
+// where the ad script (Journey by Mediavine) puts its sidebar ads: Journey's setting for them is
+// ".build-main > .lom > .lom__card", before end, the three names the build pages use. So this column carries
+// the same names in the same nesting. Renaming any of them stops the sidebar ads here.
+// Without ads (ad blockers) the Contents list follows the reader down the page. With them the ads follow and
+// the list scrolls away: the ".lom:has(...)" rules in global.css switch that, as they do for the loadout card.
+interface Props {
+  headings: { depth: number; slug: string; text: string }[];
+}
+const { headings } = Astro.props;
+---
+
+<aside class="lom lom--rail" aria-label="Sidebar">
+  <div class="lom__card">
+    {headings.length > 0 && (
+      <nav class="lom__panel rail-toc" aria-label="Contents">
+        <p class="rail-toc__title">Contents</p>
+        <ul>
+          {headings.map((h) => (
+            <li class={h.depth > 2 ? 'rail-toc__sub' : undefined}><a href={`#${h.slug}`}>{h.text}</a></li>
+          ))}
+        </ul>
+      </nav>
+    )}
+  </div>
+</aside>
+
+<style>
+  .lom { display: none; }
+  @media (min-width: 72em) {
+    .lom { display: block; align-self: start; position: sticky; top: calc(var(--nav-height) + var(--sp-4)); }
+  }
+  .lom__card { display: grid; gap: var(--sp-6); }
+  .lom__panel {
+    max-height: calc(100vh - var(--nav-height) - var(--sp-8) - var(--ad-bottom, 0px)); overflow-y: auto; overscroll-behavior: contain;
+    padding: var(--sp-4); border-radius: var(--radius); background: #151518; border: 1px solid var(--border);
+  }
+  /* A long list scrolls inside the card: shadows at the top and bottom edge show there is more. */
+  .rail-toc {
+    background:
+      linear-gradient(#151518 40%, rgba(21, 21, 24, 0)) center top / 100% 36px no-repeat local,
+      linear-gradient(rgba(21, 21, 24, 0), #151518 60%) center bottom / 100% 36px no-repeat local,
+      linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0)) center top / 100% 14px no-repeat scroll,
+      linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.55)) center bottom / 100% 14px no-repeat scroll,
+      #151518;
+  }
+  .rail-toc__title {
+    margin: 0 0 var(--sp-2); max-width: none;
+    font-family: var(--font-mono); font-size: var(--step--2); font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-muted);
+  }
+  .rail-toc ul { list-style: none; margin: 0; padding: 0; }
+  .rail-toc li { margin: 0; }
+  .rail-toc a {
+    display: block; padding: 5px 0; color: var(--ink); text-decoration: none;
+    font-size: var(--step--1); line-height: var(--lh-small); overflow-wrap: anywhere;
+  }
+  .rail-toc__sub a { padding-left: var(--sp-4); color: var(--ink-muted); font-size: var(--step--2); }
+  .rail-toc a:hover { color: var(--accent); }
+</style>

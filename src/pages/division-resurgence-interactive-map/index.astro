@@ -473,17 +473,25 @@ const dataPayload = JSON.stringify(poisData);
   .map-search { flex-basis: 100%; max-width: none }
   .map-layout { flex-direction: column; margin: var(--sp-2) 0 0 }
 
+  /* --ad-bottom and --ad-video: the ad banner fixed to the bottom of the screen and the video player that
+     sometimes sits above it (BaseLayout measures them; 0px with no ads). The sheet opens above the banner and
+     its list can scroll clear of the player; the Layers button sits above both. */
   .map-filters {
-    position: fixed; bottom: 0; left: 0; right: 0; width: 100%; max-height: 70vh; max-height: 70svh; min-height: unset;
+    position: fixed; bottom: var(--ad-bottom, 0px); left: 0; right: 0; width: 100%; min-height: unset;
+    max-height: calc(70vh - var(--ad-bottom, 0px)); max-height: calc(70svh - var(--ad-bottom, 0px));
     border-radius: 16px 16px 0 0; border: 1px solid var(--border); border-bottom: none; z-index: 1001;
-    transform: translateY(100%); box-shadow: 0 -8px 32px rgba(0,0,0,0.5);
+    transform: translateY(calc(100% + var(--ad-bottom, 0px))); box-shadow: 0 -8px 32px rgba(0,0,0,0.5);
     padding-bottom: env(safe-area-inset-bottom);
     /* closed: hidden from keyboard and screen readers once it has slid away */
     visibility: hidden; transition: transform 0.3s ease, visibility 0s linear 0.3s;
   }
   .map-filters.is-open { transform: translateY(0); visibility: visible; transition: transform 0.3s ease, visibility 0s }
+  .map-filters__body { padding-bottom: calc(var(--sp-2) + var(--ad-video, 0px)) }
   .map-filters__close { display: inline-flex; align-items: center; justify-content: center }
-  .map-filters-toggle { display: flex; transition: opacity 0.2s ease; bottom: max(20px, calc(env(safe-area-inset-bottom) + 12px)) }
+  .map-filters-toggle {
+    display: flex; transition: opacity 0.2s ease;
+    bottom: calc(max(20px, env(safe-area-inset-bottom) + 12px) + var(--ad-bottom, 0px) + var(--ad-video, 0px));
+  }
   .map-filters-toggle.is-hidden { opacity: 0; pointer-events: none }
   .map-filters-backdrop { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.5); z-index: 1000 }
   .map-filters-backdrop.is-open { display: block }
