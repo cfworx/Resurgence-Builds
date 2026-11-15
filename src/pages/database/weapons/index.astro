@@ -13,7 +13,6 @@ const typeCount = (t: string) => allStandardWeapons.filter((w: any) => w.type ==
 import allExoticWeapons from '../../../data/exotic-weapons.json';
 // Exotics with unverified stat lines (statsVerified: false) are in the planner only, not the database.
 const exoticWeapons = allExoticWeapons.filter((w: any) => w.statsVerified !== false);
-import AdSenseUnit from '../../../components/AdSenseUnit.astro';
 import GameImage from '../../../components/GameImage.astro';
 import { dbImage } from '../../../utils/db-images';
 import { publicImageSize } from '../../../utils/image-dims.mjs';
@@ -175,7 +174,6 @@ const faqs = [
     <p class="load-more-count" id="load-more-count"></p>
   </div>
 
-  <AdSenseUnit label="Advertisement (database category)" />
 </DatabaseLayout>
 
 <script>

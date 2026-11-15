@@ -2,7 +2,6 @@
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../../components/Breadcrumbs.astro';
 import SectionTag from '../../../components/SectionTag.astro';
-import AdSenseUnit from '../../../components/AdSenseUnit.astro';
 import { truncateDesc, fixPlurals, metaDescription } from '../../../utils/seo';
 import skillMods from '../../../data/skill-mod-combos.json';
 import smcNotes from '../../../data/skill-mod-combo-notes.json';
@@ -273,7 +272,6 @@ const toModSlug = (name: string) => name.toLowerCase().replace(/[^a-z0-9]+/g, '-
       </div>
     </div>
 
-    {indexable && <AdSenseUnit label="Advertisement (database item)" />}
   </div>
 </BaseLayout>
 

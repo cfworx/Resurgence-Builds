@@ -7,7 +7,6 @@ import path from 'node:path';
 
 import rehypeExternalLinks from 'rehype-external-links';
 import rehypeCallouts from './scripts/rehype-callouts.mjs';
-import rehypeAdsense from './scripts/rehype-adsense.mjs';
 import rehypeTableA11y from './scripts/rehype-table-a11y.mjs';
 import rehypeTableCards from './scripts/rehype-table-cards.mjs';
 import rehypeImgSize from 'rehype-img-size';
@@ -164,7 +163,6 @@ export default defineConfig({
     rehypePlugins: [
       [rehypeExternalLinks, { target: '_blank', rel: ['noopener', 'noreferrer'] }],
       rehypeCallouts,
-      rehypeAdsense,
       rehypeTableA11y,
       rehypeTableCards,
       [rehypeImgSize, { dir: 'public' }]

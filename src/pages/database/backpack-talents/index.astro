@@ -2,7 +2,6 @@
 import DatabaseLayout from '../../../layouts/DatabaseLayout.astro';
 import backpackTalents from '../../../data/backpack-talents.json';
 import TalentIndex from '../../../components/TalentIndex.astro';
-import AdSenseUnit from '../../../components/AdSenseUnit.astro';
 import { verifiedPatch } from '../../../data/site-config';
 const lastVerified = verifiedPatch(); // Every talent checked against the in-game Build-Making Database on October 28, 2026
 
@@ -62,5 +61,4 @@ const itemListLd = {
     basePath="/database/backpack-talents/"
   />
 
-<AdSenseUnit label="Advertisement (database category)" />
 </DatabaseLayout>

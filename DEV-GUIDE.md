@@ -480,13 +480,11 @@ The site ships with production-grade security headers (`public/_headers`):
 
 | Header | What It Does |
 |--------|-------------|
-| `Content-Security-Policy` | Blocks XSS attacks by only allowing scripts/styles from trusted sources |
+| `Content-Security-Policy` | Since the Journey by Mediavine ads went in (November 15, 2026) it allows scripts, frames and styles from any https address, because the ad companies behind the ads change. It still blocks plain http, plugins and form posts to unknown sites, and lets only Mediavine's dashboard frame the site (`frame-ancestors`) |
 | `Strict-Transport-Security` | Forces HTTPS for 2 years, prevents downgrade attacks |
 | `X-Content-Type-Options: nosniff` | Prevents MIME-type sniffing attacks |
-| `X-Frame-Options: DENY` | Prevents your site from being embedded in iframes (clickjacking) |
 | `Referrer-Policy` | Controls what info is sent when users click external links |
 | `Permissions-Policy` | Blocks access to camera, mic, geolocation |
-| `X-XSS-Protection` | Legacy XSS protection for older browsers |
 
 ### Things to NEVER Do
 

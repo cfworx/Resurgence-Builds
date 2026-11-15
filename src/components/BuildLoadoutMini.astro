@@ -17,7 +17,11 @@ const ABBR: Record<string, string> = { Mask: 'Mask', 'Body Armor': 'Chest', Back
 ---
 
 <aside class="lom" aria-label="Loadout summary">
+  {/* The ad script (Journey by Mediavine) puts its sidebar ad at the end of .lom__card: its setting on Journey's
+      side is ".build-main > .lom > .lom__card", before end. So .lom__card is a plain wrapper and the card you
+      see is .lom__panel. Renaming either breaks the sidebar ad. */}
   <div class="lom__card">
+   <div class="lom__panel">
     <p class="lom__kicker">Loadout</p>
     <p class="lom__title">{specialization}{subclass && <span> · {subclass}</span>}</p>
 
@@ -59,6 +63,7 @@ const ABBR: Record<string, string> = { Mask: 'Mask', 'Body Armor': 'Chest', Back
 
     <a class="lom__full" href="#loadout">Full loadout ↑</a>
     {plannerHash && <a class="lom__planner" href={`/builder/#${plannerHash}`}>Open in Build Planner</a>}
+   </div>
   </div>
 </aside>
 
@@ -67,7 +72,8 @@ const ABBR: Record<string, string> = { Mask: 'Mask', 'Body Armor': 'Chest', Back
   @media (min-width: 72em) {
     .lom { display: block; align-self: start; position: sticky; top: calc(var(--nav-height) + var(--sp-4)); }
   }
-  .lom__card {
+  .lom__card { display: grid; gap: var(--sp-6); }
+  .lom__panel {
     max-height: calc(100vh - var(--nav-height) - var(--sp-8)); overflow-y: auto; overscroll-behavior: contain;
     padding: var(--sp-4); border-radius: var(--radius); background: #151518; border: 1px solid var(--border);
   }

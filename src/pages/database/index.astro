@@ -2,7 +2,6 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import SectionTag from '../../components/SectionTag.astro';
-import AdSenseUnit from '../../components/AdSenseUnit.astro';
 
 import osProtocols from '../../data/os-protocols.json';
 import skillModCombos from '../../data/skill-mod-combos.json';
@@ -190,7 +189,6 @@ const articleLd = {
       ))}
     </div>
 
-    <AdSenseUnit label="Advertisement (database)" />
 
     {faqs && faqs.length > 0 && (
       <div class="faq-section" style="margin-top: var(--sp-8);">

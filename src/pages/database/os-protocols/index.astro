@@ -1,7 +1,6 @@
 ---
 import DatabaseLayout from '../../../layouts/DatabaseLayout.astro';
 import osProtocols from '../../../data/os-protocols.json';
-import AdSenseUnit from '../../../components/AdSenseUnit.astro';
 import { verifiedPatch } from '../../../data/site-config';
 import { snapshotItems } from '../../../utils/votes';
 import '../../../styles/tier-votes.css';
@@ -156,7 +155,6 @@ const faqs = [
     </ul>
   </div>
 
-<AdSenseUnit label="Advertisement (database category)" />
 <script is:inline src="/js/tier-votes.js?v=1" defer></script>
 </DatabaseLayout>
 

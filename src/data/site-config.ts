@@ -42,6 +42,19 @@ export const DATABASE_UPDATED = '2026-10-29';
 export const GA4_ID = 'G-HWT2GX34EX'; // live since 2026-10-26
 
 /**
+ * Ads: Journey by Mediavine, approved November 15, 2026. JOURNEY_TAG is the script from the Journey dashboard
+ * (Settings, Ad setup), kept byte for byte. BaseLayout puts it in <head> on every page that may carry ads, and on
+ * the privacy page, where the script adds Mediavine's privacy notice.
+ * Journey is exclusive: no other ad network's code (AdSense included) may run next to it.
+ * The site ID also names the ads.txt file Journey hosts for us: public/_redirects sends /ads.txt there.
+ * Empty JOURNEY_SITE_ID means no ad script anywhere.
+ */
+export const JOURNEY_SITE_ID = 'b13678c1-e113-4fd6-ab62-f638361f9c37';
+export const JOURNEY_TAG = JOURNEY_SITE_ID
+  ? `<script type="text/javascript" async="async" data-noptimize="1" data-cfasync="false" src="//scripts.scriptwrapper.com/tags/${JOURNEY_SITE_ID}.js"></script>`
+  : '';
+
+/**
  * Email signup for Resurgence Builds (separate from Inland Care Jobs' list). Works with any provider
  * whose form posts an email address to a URL. Empty action means no signup box anywhere.
  * When set, a box shows on build guides and tier list pages. Resurgence uses Kit's free plan: set KIT_FORM_ID.

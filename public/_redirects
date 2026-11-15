@@ -1,3 +1,8 @@
+# ads.txt belongs to the ad network (Journey by Mediavine): it hosts the file for this site and changes it
+# whenever its list of sellers changes, so /ads.txt sends ad buyers' crawlers there. The ID in the address is
+# the site's Journey ID (JOURNEY_SITE_ID in src/data/site-config.ts). There is no public/ads.txt any more.
+/ads.txt https://adstxt.journeymv.com/sites/b13678c1-e113-4fd6-ab62-f638361f9c37/ads.txt 301
+
 # Content redirects
 /guides/hidden-mechanics-build-optimization/ /guides/hidden-mechanics-explained/ 301
 /sitemap.xml /sitemap-index.xml 301

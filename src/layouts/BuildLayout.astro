@@ -3,7 +3,6 @@ import { tagHref, tagLabel } from '../utils/tag-href';
 import BaseLayout from './BaseLayout.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import SectionTag from '../components/SectionTag.astro';
-import AdSenseUnit from '../components/AdSenseUnit.astro';
 import YouTubeEmbed from '../components/YouTubeEmbed.astro';
 import Comments from '../components/Comments.astro';
 import NewsletterSignup from '../components/NewsletterSignup.astro';
@@ -197,7 +196,6 @@ const redditShareUrl = `https://reddit.com/submit?url=${encodeURIComponent(Astro
 
         <NewsletterSignup source="build" />
 
-        <AdSenseUnit slotId="8102223000" label="Advertisement (in-article)" />
 
         <TierVote kind="build" id={buildSlug} name={title} question="How would you rank this build?" listHref="/tier-list/" listLabel="See the build tier list" beforeComments />
 
@@ -289,7 +287,10 @@ const redditShareUrl = `https://reddit.com/submit?url=${encodeURIComponent(Astro
           if (!panel || !fab || !dlg || typeof dlg.showModal !== 'function') return;
           var wide = window.matchMedia('(min-width: 72em)');
           var past = false;
-          function update() { fab.hidden = wide.matches || !past; }
+          // Wide screens keep the loadout card beside the article, so they don't need the button, unless a
+          // sidebar ad is in that column: then the ad is what stays in view and the card scrolls away.
+          function sideAd() { return !!document.querySelector('.lom .sidebar_btf_wrapper, .lom #sidebar_btf_sticky_wrapper'); }
+          function update() { fab.hidden = (wide.matches && !sideAd()) || !past; }
           if ('IntersectionObserver' in window) {
             new IntersectionObserver(function (es) {
               var e = es[0];
@@ -399,7 +400,8 @@ const redditShareUrl = `https://reddit.com/submit?url=${encodeURIComponent(Astro
   .build-main { display: block; }
   .build-article { max-width: 52rem; margin: 0 auto; width: 100%; }
   @media (min-width: 72em) {
-    .build-main--mini { display: grid; grid-template-columns: minmax(0, 1fr) 17rem; gap: var(--sp-8); align-items: start; }
+    /* 300px: the loadout card's column is also where the sidebar ad goes, and that ad is 300px wide. */
+    .build-main--mini { display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: var(--sp-8); align-items: start; }
     .build-main--mini .build-article { margin: 0; max-width: none; }
   }
   .build-tags { display: flex; flex-wrap: wrap; gap: var(--sp-1); margin-top: var(--sp-8); }
@@ -413,6 +415,8 @@ const redditShareUrl = `https://reddit.com/submit?url=${encodeURIComponent(Astro
     box-shadow: 0 10px 28px rgba(0, 0, 0, 0.55), 0 0 0 1px rgba(255, 255, 255, 0.08);
   }
   .lo-fab[hidden] { display: none; }
+  /* The ad script's bottom banner (body.adhesion): the button sits above it. */
+  :global(body.adhesion) .lo-fab { bottom: calc(100px + env(safe-area-inset-bottom, 0px)); }
   .lo-fab:hover { filter: brightness(1.08); }
   @media (max-width: 44.99em) {
     .lo-fab { left: 50%; right: auto; transform: translateX(-50%); }

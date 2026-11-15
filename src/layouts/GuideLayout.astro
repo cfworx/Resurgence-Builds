@@ -3,7 +3,6 @@ import { tagHref, tagLabel } from '../utils/tag-href';
 import BaseLayout from './BaseLayout.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import SectionTag from '../components/SectionTag.astro';
-import AdSenseUnit from '../components/AdSenseUnit.astro';
 import YouTubeEmbed from '../components/YouTubeEmbed.astro';
 import Comments from '../components/Comments.astro';
 import { getAuthorUrl } from '../utils/author';
@@ -175,10 +174,11 @@ const howToLd = howTo ? {
       </>
     )}
 
-    <article class="prose content-width">
+    {/* build-article: the ad script (Journey by Mediavine) places in-content ads inside elements with this
+        class. That is its setting, picked from a build page; guides and news carry the class so they get them too. */}
+    <article class="prose content-width build-article">
       <slot />
 
-      <AdSenseUnit slotId="8102223000" label="Advertisement (in-article)" />
 
       <!-- 1. Share -->
       <div class="share-box">

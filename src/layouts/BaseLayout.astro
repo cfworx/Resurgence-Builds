@@ -2,9 +2,8 @@
 import SEO from '../components/SEO.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import AdSenseUnit from '../components/AdSenseUnit.astro';
 import NewsletterSignup from '../components/NewsletterSignup.astro';
-import { GA4_ID } from '../data/site-config';
+import { GA4_ID, JOURNEY_TAG } from '../data/site-config';
 import '../styles/global.css';
 
 export interface Props {
@@ -24,6 +23,8 @@ export interface Props {
   jsonLd?: Record<string, unknown>;
   faqs?: { question: string; answer: string }[];
   noAds?: boolean;
+  /** Load the ad script with every ad switched off. Only the privacy page: the script adds Mediavine's notice there. */
+  adNotice?: boolean;
   noindex?: boolean;
   /** Override robots directive, e.g. "noindex, follow". Implies noindex behavior. */
   robots?: string;
@@ -31,11 +32,14 @@ export interface Props {
   canonical?: string;
 }
 
-const { title, description, ogType, ogImage, article, keywords, breadcrumbs, jsonLd, faqs, noAds, noindex, robots, canonical } = Astro.props;
-// Ads only run on pages with enough of our own content to carry them. A page kept out of Google
-// (noindex), a list of links (tag archives) or a short database card never loads the ad code:
-// pass noAds from those templates. scripts/audit-indexation.mjs fails the build when one slips through.
+const { title, description, ogType, ogImage, article, keywords, breadcrumbs, jsonLd, faqs, noAds, adNotice, noindex, robots, canonical } = Astro.props;
+// Ads (Journey by Mediavine) only run on pages with enough of our own content to carry them. A page kept
+// out of Google (noindex), a list of links (tag archives) or a short database card never loads the ad
+// script: pass noAds from those templates. scripts/audit-indexation.mjs fails the build when one slips through.
+// Journey places the ads itself (settings on its side): in-content ads inside .build-article, a sidebar ad
+// at the end of .lom__card on build pages, and a banner fixed to the bottom of the screen.
 const suppressAds = noAds || noindex || !!robots;
+const loadAdScript = !!JOURNEY_TAG && (!suppressAds || !!adNotice);
 ---
 
 <!DOCTYPE html>
@@ -98,9 +102,7 @@ gtag('config', '${GA4_ID}');`}></script>
 
   <slot name="head" />
 
-  {!suppressAds && (
-    <script is:inline async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5813932024666862" crossorigin="anonymous"></script>
-  )}
+  {loadAdScript && <Fragment set:html={JOURNEY_TAG} />}
 </head>
 <body>
   <a href="#main-content" class="skip-link">Skip to content</a>
@@ -113,12 +115,9 @@ gtag('config', '${GA4_ID}');`}></script>
         <NewsletterSignup source="tier-list" />
       </div>
     )}
-    {!suppressAds && (
-      <div class="container ad-footer">
-        <AdSenseUnit label="Advertisement (footer)" />
-      </div>
-    )}
   </main>
+  {/* The ad script is on this page for another job (the privacy notice): this tells it to show no ads. */}
+  {loadAdScript && suppressAds && <div id="ad-management-config-settings" data-blocklist-all="1" hidden></div>}
 <Footer title={title} />
   <script>
     // Wrap all prose/content tables in a scrollable box for phones, and fade the edge that has more to scroll to
@@ -159,30 +158,6 @@ gtag('config', '${GA4_ID}');`}></script>
       if (m.target instanceof HTMLElement && m.target.classList.contains('filter-btn')) syncPressed(m.target);
     }));
     document.querySelectorAll('.filter-btn').forEach((b) => b.parentElement && pressedObserver.observe(b.parentElement, { attributes: true, attributeFilter: ['class'], subtree: true }));
-  </script>
-  <!-- Ad reveal observer: watches for AdSense to fill slots, then shows them -->
-  <script is:inline>
-    (function() {
-      var obs = new MutationObserver(function(mutations) {
-        mutations.forEach(function(m) {
-          if (m.type === 'attributes' && m.attributeName === 'data-ad-status') {
-            var ins = m.target;
-            if (ins.getAttribute('data-ad-status') === 'filled') {
-              var slot = ins.closest('.ad-slot');
-              if (slot) slot.classList.add('ad-filled');
-            }
-          }
-        });
-      });
-      document.querySelectorAll('.adsbygoogle').forEach(function(ins) {
-        obs.observe(ins, { attributes: true, attributeFilter: ['data-ad-status'] });
-        // Check if already filled (race condition)
-        if (ins.getAttribute('data-ad-status') === 'filled') {
-          var slot = ins.closest('.ad-slot');
-          if (slot) slot.classList.add('ad-filled');
-        }
-      });
-    })();
   </script>
 </body>
 </html>

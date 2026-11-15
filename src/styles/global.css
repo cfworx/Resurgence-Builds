@@ -1618,58 +1618,16 @@ details.toc[open] > summary { margin-bottom: var(--sp-2); }
 .share-box__actions .share-box__x, .share-box__actions .share-box__x:hover { background: #000; border: 1px solid #333; }
 .share-box__actions .share-box__reddit, .share-box__actions .share-box__reddit:hover { background: #CC3700; border: 1px solid #CC3700; }
 
-/* --- AdSense Slots --- */
-/* The footer ad's wrapper only takes up room once an ad is showing (no 40px gap above the footer before then).
-   Browsers without :has() keep the padding, as before. */
-.ad-footer { padding-block: var(--sp-6) var(--sp-4); }
-.ad-footer:not(:has(.ad-slot.ad-filled)) { display: none; }
-
-@keyframes adFadeIn {
-  from { opacity: 0; }
-  to   { opacity: 1; }
-}
-
-.ad-slot {
-  margin: var(--sp-4) 0;
-  border-radius: var(--border-radius);
-  overflow: hidden;
-}
-
-/* Pre-approval placeholder: thin dark line, barely visible */
-.ad-slot__placeholder {
-  height: 4px;
-  background: var(--border);
-  border-radius: 2px;
-  opacity: 0.4;
-}
-
-.ad-slot--in-feed {
-  margin: var(--sp-2) 0;
-}
-
-/* ── Hide unfilled ad slots ──
-   AdSense sets data-ad-status="filled" once an ad loads.
-   Until then, collapse the slot so it's invisible.
-   Once approved, ads auto-appear; no code change needed. */
-.ad-slot .adsbygoogle {
-  display: block;
-  width: 100%;
-  background: transparent;
-  max-height: 120px;
-  overflow: hidden;
-}
-
-/* Before AdSense fills, hide the slot completely.
-   The ins element starts with height:0 and no visible content.
-   We hide via CSS so there's no white flash; ads auto-appear when filled. */
-.ad-slot:not(.ad-filled) {
-  display: none;
-}
-
-/* Once JS detects an ad loaded, it adds .ad-filled → slot appears */
-.ad-slot.ad-filled {
-  display: block;
-  animation: adFadeIn 0.6s ease;
+/* --- Ads (Journey by Mediavine) --- */
+/* The ad script draws its own boxes. When its banner is fixed to the bottom of the screen it adds
+   body.adhesion (and 90px of bottom padding): our own bottom-anchored controls move up out of its way. */
+body.adhesion .tv-toast { bottom: calc(100px + env(safe-area-inset-bottom, 0px)); }
+/* Build pages, wide screens: the loadout card normally stays in view beside the article. When the ad script
+   has put its sidebar ad under it, the ad is the part that follows the reader (the script pins it), so the
+   card scrolls with the page and shows in full; the Loadout button then appears on wide screens too. */
+@media (min-width: 72em) {
+  .lom:has(.sidebar_btf_wrapper, #sidebar_btf_sticky_wrapper) { position: static; }
+  .lom:has(.sidebar_btf_wrapper, #sidebar_btf_sticky_wrapper) .lom__panel { max-height: none; overflow: visible; }
 }
 
 /* --- Disclaimer / Humility Banner --- */

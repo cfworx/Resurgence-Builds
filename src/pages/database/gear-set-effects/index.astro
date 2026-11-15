@@ -1,7 +1,6 @@
 ---
 import DatabaseLayout from '../../../layouts/DatabaseLayout.astro';
 import gearSets from '../../../data/gear-set-effects.json';
-import AdSenseUnit from '../../../components/AdSenseUnit.astro';
 import DbIcon from '../../../components/DbIcon.astro';
 import { verifiedPatch } from '../../../data/site-config';
 import { buildSetLoadouts } from '../../../utils/db-enrich';
@@ -119,7 +118,6 @@ const itemListLd = {
       </a>
     ))}
   </div>
-<AdSenseUnit label="Advertisement (database category)" />
 </DatabaseLayout>
 
 <style>

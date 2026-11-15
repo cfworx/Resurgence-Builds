@@ -1,7 +1,6 @@
 ---
 import DatabaseLayout from '../../../layouts/DatabaseLayout.astro';
 import bonusAttributes from '../../../data/bonus-attributes.json';
-import AdSenseUnit from '../../../components/AdSenseUnit.astro';
 import { verifiedPatch } from '../../../data/site-config';
 import { attrGuide, statInteraction } from '../../../data/bonus-attribute-guides';
 import inGame from '../../../data/bonus-attributes-in-game.json';
@@ -186,7 +185,6 @@ const itemListLd = {
     </details>
   </section>
 
-  <AdSenseUnit label="Advertisement (database category)" />
 
   <!-- One panel for every card's details (the cards still open in place without JavaScript) -->
   <dialog class="ab-sheet" id="ab-sheet" aria-labelledby="ab-sheet-title">

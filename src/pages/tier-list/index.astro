@@ -2,7 +2,6 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import SectionTag from '../../components/SectionTag.astro';
-import AdSenseUnit from '../../components/AdSenseUnit.astro';
 import TierBoard from '../../components/TierBoard.astro';
 import { getCollection } from 'astro:content';
 import { postImage } from '../../utils/post-images';
@@ -116,7 +115,6 @@ const faqs = [
       </ul>
     </details>
 
-    <AdSenseUnit label="Advertisement (tier list 1)" />
 
     <section class="faq-section tl-faq" aria-labelledby="tl-faq">
       <h2 id="tl-faq">Frequently Asked Questions</h2>
@@ -132,7 +130,6 @@ const faqs = [
 
     <p class="tl-related">Next up: the <a href="/tier-list/os-protocols/">OS Protocol tier list</a>, also ranked by players, and the <a href="/builder/">Build Planner</a> to put your own build together.</p>
 
-    <AdSenseUnit label="Advertisement (tier list 2)" />
   </div>
 </BaseLayout>
 

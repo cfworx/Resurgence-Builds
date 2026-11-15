@@ -3,10 +3,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import { GA4_ID } from '../data/site-config';
 ---
 
-<BaseLayout noAds title="Privacy Policy" description="Privacy Policy for Resurgence Builds: how we handle your data, cookies, and third-party advertising." breadcrumbs={[{ name: 'Privacy Policy', url: '/privacy/' }]}>
+<BaseLayout noAds adNotice title="Privacy Policy" description="Privacy Policy for Resurgence Builds: how we handle your data, cookies, and third-party advertising." breadcrumbs={[{ name: 'Privacy Policy', url: '/privacy/' }]}>
   <div class="container section content-width">
     <h1 class="heading-accent">Privacy Policy</h1>
-    <p style="color:var(--ink-muted);">Last updated: October 31, 2026</p>
+    <p style="color:var(--ink-muted);">Last updated: November 15, 2026</p>
     <div class="prose">
       <h2>Introduction</h2>
       <p>Resurgence Builds ("we," "our," or "us") operates the website resurgencebuilds.com. This Privacy Policy explains how we collect, use, and protect your information when you visit our site.</p>
@@ -14,21 +14,20 @@ import { GA4_ID } from '../data/site-config';
       <h2>Information We Collect</h2>
       <p>We don't require user accounts. The only information we collect ourselves is what you choose to post in a comment and the tier you pick when you vote (see <a href="#comments">Comments</a> and <a href="#votes">Votes</a> below). Third-party services integrated into our site may collect certain information automatically, including:</p>
       <ul>
-        <li>IP address and general location data (via {GA4_ID ? 'Cloudflare, Google AdSense and Google Analytics' : 'Cloudflare and Google AdSense'})</li>
+        <li>IP address and general location data (via {GA4_ID ? 'Cloudflare, Journey by Mediavine and Google Analytics' : 'Cloudflare and Journey by Mediavine'})</li>
         <li>Browser type, device type, and operating system</li>
         <li>Pages visited and time spent on the site</li>
-        <li>Advertising interaction data (via Google AdSense)</li>
+        <li>Advertising interaction data (via Journey by Mediavine and the ad companies it works with)</li>
       </ul>
 
-      <h2>Third-Party Advertising</h2>
-      <p>We use <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener noreferrer"><strong>Google AdSense</strong></a> to display advertisements on our site. Google AdSense uses cookies and similar technologies to serve ads based on your prior visits to this website and other websites. This includes:</p>
-      <ul>
-        <li>Placing tracking cookies on your device to personalize advertisements</li>
-        <li>Using the DoubleClick cookie to enable interest-based advertising</li>
-        <li>Collecting data about your browsing behavior across websites that use Google advertising services</li>
-      </ul>
-      <p>You can opt out of personalized advertising by visiting <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener noreferrer">Google's Ads Settings</a>. You may also opt out of third-party vendor cookies by visiting the <a href="https://optout.networkadvertising.org/" target="_blank" rel="noopener noreferrer">Network Advertising Initiative opt-out page</a>.</p>
-      <p>For more information about how Google uses data when you use our site, visit <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener noreferrer">Google's partner sites policy</a>.</p>
+      <h2 id="advertising">Third-Party Advertising</h2>
+      <p>Ads on this site are provided by <strong>Journey by Mediavine</strong>, an advertising service run by Mediavine. Mediavine and the ad companies it works with use cookies and similar technologies in your browser to show ads, to measure them and to match them to your interests. To do that they receive things like your IP address, your device and browser type, and which pages of this site you view. We don't receive or store that data ourselves.</p>
+      <p>Mediavine's own notice follows. It says what Mediavine collects, who it passes it to, how to opt out of interest-based ads, and what applies to visitors in the EU, the UK and some US states. Where the law requires it, Mediavine shows a cookie consent banner, and the privacy choices it describes sit at the bottom of the home page.</p>
+      {/* Mediavine's ad script adds its "Mediavine Advertising Privacy Notice" here: it appends the text to the
+          first .entry-content element on the page whose address is the privacy link saved in Journey. */}
+      <div class="entry-content"></div>
+      <p>If no notice from Mediavine shows above this line, your browser is blocking the ad script, and with it the ads and their cookies. The opt-out tools the notice lists work either way: the <a href="https://optout.aboutads.info/" target="_blank" rel="noopener noreferrer">Digital Advertising Alliance's WebChoices tool</a> and the <a href="https://thenai.org/opt-out/" target="_blank" rel="noopener noreferrer">Network Advertising Initiative's opt-out page</a>.</p>
+      <p>Ads don't run on every page. Policy pages like this one, the Build Planner and the shortest database pages carry none.</p>
 
       {GA4_ID && (
         <>
@@ -49,7 +48,7 @@ import { GA4_ID } from '../data/site-config';
       </ul>
       <h3>Advertising Cookies</h3>
       <ul>
-        <li><strong>Google AdSense:</strong> Tracking cookies used to serve personalized advertisements based on your browsing history. These cookies may track your activity across multiple websites. You can manage your ad personalization preferences at <a href="https://adssettings.google.com" target="_blank" rel="noopener noreferrer">Google Ads Settings</a>.</li>
+        <li><strong>Journey by Mediavine and its ad partners:</strong> cookies and similar identifiers used to show, measure and personalize ads. They can recognize your browser on other sites that use the same ad companies. Mediavine's notice under <a href="#advertising">Third-Party Advertising</a> explains how to opt out.</li>
       </ul>
       {GA4_ID && (
         <>
@@ -90,9 +89,9 @@ import { GA4_ID } from '../data/site-config';
       <h2>Third-Party Services</h2>
       <ul>
         <li><strong>Cloudflare:</strong> Hosting, CDN, security, comment and vote storage, and comment filtering (Cloudflare D1 and Workers AI)</li>
-        <li><strong>Google AdSense:</strong> Advertising (<a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener noreferrer">Google's privacy policy</a>)</li>
+        <li><strong>Journey by Mediavine:</strong> Advertising (Mediavine's notice is under <a href="#advertising">Third-Party Advertising</a>; the companies it works with are listed on <a href="https://www.mediavine.com/ad-partners/" target="_blank" rel="noopener noreferrer">Mediavine's ad partners page</a>)</li>
         {GA4_ID && <li><strong>Google Analytics:</strong> Visit counts and page reports (<a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google's privacy policy</a>)</li>}
-        <li><strong>Google Fonts:</strong> Typography</li>
+        <li><strong>Google Fonts:</strong> Typography on the Build Planner</li>
       </ul>
 
       <h2>GDPR Rights (EU Users)</h2>
@@ -105,16 +104,16 @@ import { GA4_ID } from '../data/site-config';
         <li>Data portability</li>
         <li>Object to processing, including profiling for advertising purposes</li>
       </ul>
-      <p>Please note that advertising data collected by Google AdSense is processed by Google under their own privacy policy. To exercise your rights regarding Google's data collection, visit <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google's Privacy Policy</a>. For data we control, contact us at <a href="mailto:p1@cfworx.tech">p1@cfworx.tech</a>.</p>
+      <p>Advertising data is collected and processed by Mediavine and its partners, not by us. To exercise your rights over it, use the contact given in Mediavine's notice under <a href="#advertising">Third-Party Advertising</a>. For data we control (comments and votes), contact us at <a href="mailto:p1@cfworx.tech">p1@cfworx.tech</a>.</p>
 
       <h2>CalOPPA Compliance (California Users)</h2>
-      <p>We do not sell personal information. Third-party advertising partners (Google AdSense) may collect data for interest-based advertising as described above. We honor Do Not Track browser signals where technically feasible. California residents may request details about data we hold by contacting us.</p>
+      <p>We don't sell the information we collect ourselves (comments and votes). The ad companies working with Mediavine collect data for interest-based advertising as described above, which some US state laws treat as a sale or sharing of personal information. Mediavine's notice explains how to opt out of that, including the "Do Not Sell or Share My Information" choice it shows where required. California residents may request details about data we hold by contacting us.</p>
 
       <h2>Data Security</h2>
-      <p>We serve all content over HTTPS with HSTS enabled. We do not store passwords, payment information, or sensitive personal data. Comments and votes are stored in Cloudflare's database with IP addresses reduced to a salted hash. Advertising data is processed by Google under their own security standards.</p>
+      <p>We serve all content over HTTPS with HSTS enabled. We do not store passwords, payment information, or sensitive personal data. Comments and votes are stored in Cloudflare's database with IP addresses reduced to a salted hash. Advertising data is processed by Mediavine and its partners, not by us.</p>
 
       <h2>Children's Privacy</h2>
-      <p>Our site is not directed at children under 13. We do not knowingly collect data from children. Google AdSense is configured to comply with COPPA requirements.</p>
+      <p>Our site is not directed at children under 13. We do not knowingly collect data from children.</p>
 
       <h2>Changes</h2>
       <p>We may update this policy. Changes will be posted here with an updated date.</p>

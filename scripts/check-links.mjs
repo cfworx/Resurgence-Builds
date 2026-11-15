@@ -31,8 +31,8 @@ files.forEach(file => {
   while ((match = linkRegex.exec(content)) !== null) {
     let link = match[1];
     
-    // Ignore external links, mailto, tel, empty, hashes
-    if (link.startsWith('http') || link.startsWith('mailto:') || link.startsWith('tel:') || link.startsWith('#') || link === '') {
+    // Ignore external links (including protocol-relative ones like //host/file.js), mailto, tel, empty, hashes
+    if (link.startsWith('http') || link.startsWith('//') || link.startsWith('mailto:') || link.startsWith('tel:') || link.startsWith('#') || link === '') {
       continue;
     }
     

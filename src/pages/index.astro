@@ -2,7 +2,6 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import SectionTag from '../components/SectionTag.astro';
 import PostCard from '../components/PostCard.astro';
-import AdSenseUnit from '../components/AdSenseUnit.astro';
 import { getCollection } from 'astro:content';
 import seasonStatus from '../data/season-status.json';
 
@@ -207,7 +206,6 @@ const itemListLd = {
         ))}
       </div>
 
-      <AdSenseUnit className="ad-slot--in-feed" format="fluid" label="Advertisement (homepage 1)" />
 
       <!-- Pagination Controls -->
       <div id="pagination-controls" style="justify-content:center; align-items:center; gap:var(--sp-3); margin-top:var(--sp-8); display:none;">

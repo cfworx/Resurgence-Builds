@@ -3,7 +3,6 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import BuildCard from '../../components/BuildCard.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import SectionTag from '../../components/SectionTag.astro';
-import AdSenseUnit from '../../components/AdSenseUnit.astro';
 import { getCollection } from 'astro:content';
 import { verifiedPatch } from '../../data/site-config';
 const lastVerified = verifiedPatch('Patch 1.1.2.2'); // Bump: drop the arg ONLY after re-verifying this page's content in-game (CURRENT_PATCH is a ceiling, not an auto-bump)
@@ -269,7 +268,6 @@ const boldStars = (t: string) => t
       <p style="color: var(--ink-muted); font-size: var(--text-sm); line-height: 1.75; margin: 0;" set:html={boldStars(classData.signatureTalents)} />
     </div>
 
-    <AdSenseUnit label="Advertisement (class overview 1)" />
 
     <!-- Why Play section -->
     <div style="margin-bottom: var(--sp-8); padding: var(--sp-5) var(--sp-5) var(--sp-5) calc(var(--inset) - 1px); background: rgba(0,0,0,0.15); border: 1px solid var(--border); border-radius: var(--border-radius); max-width: 800px;">
@@ -329,7 +327,6 @@ const boldStars = (t: string) => t
       </div>
     )}
 
-    <AdSenseUnit label="Advertisement (class overview 2)" />
   </div>
 </BaseLayout>
 

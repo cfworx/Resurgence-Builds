@@ -1,11 +1,18 @@
 # =============================================================================
 # Global Security Headers (all pages)
 # =============================================================================
+# Content-Security-Policy, since the site runs Journey by Mediavine ads (November 15, 2026): the ad
+# script loads code, frames, pixels and video from dozens of ad companies, and that list changes on
+# their side, so scripts, frames, styles, fonts, media and connections are allowed from any https
+# address (plus eval, which some bidders use). A policy that lists hosts, like the one before it,
+# silently blocks ads. What it still does: nothing loads over plain http, no plugins (object-src),
+# no foreign <base> tag, forms post only to the listed services, and only Mediavine's dashboard may
+# show the site in a frame (its script check does that). X-Frame-Options is gone because it can't
+# make that one exception; frame-ancestors covers it.
 /*
-  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://pagead2.googlesyndication.com https://www.googletagservices.com https://adservice.google.com https://static.cloudflareinsights.com https://cdnjs.buymeacoffee.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; media-src 'self' blob:; connect-src 'self' https://www.googletagmanager.com https://*.google-analytics.com https://*.analytics.google.com https://*.google.com https://*.g.doubleclick.net https://pagead2.googlesyndication.com https://api.web3forms.com https://cloudflareinsights.com https://ep1.adtrafficquality.google https://*.adtrafficquality.google; frame-src https://www.youtube-nocookie.com https://www.youtube.com https://googleads.g.doubleclick.net https://tpc.googlesyndication.com https://www.googletagmanager.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self' https://api.web3forms.com https://buttondown.com https://app.kit.com;
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https: blob:; style-src 'self' 'unsafe-inline' https:; font-src 'self' data: https:; img-src 'self' data: blob: https:; media-src 'self' data: blob: https:; connect-src 'self' https: wss:; frame-src 'self' https: blob: data:; worker-src 'self' blob:; object-src 'none'; frame-ancestors 'self' https://publishers.mediavine.com; base-uri 'self'; form-action 'self' https://api.web3forms.com https://buttondown.com https://app.kit.com;
   Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
   X-Content-Type-Options: nosniff
-  X-Frame-Options: DENY
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=(), bluetooth=(), interest-cohort=(), browsing-topics=()
 # No Cache-Control here on purpose. Pages then get Cloudflare's default,
@@ -59,9 +66,6 @@
 
 /llms-full.txt
   X-Robots-Tag: noindex
-
-/ads.txt
-  Cache-Control: public, max-age=86400
 
 # =============================================================================
 # Cloudflare hostnames: keep them out of search results

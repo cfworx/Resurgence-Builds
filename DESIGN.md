@@ -118,4 +118,27 @@ screenshots in phone emulation are misleading).
 - Ads only run on pages with enough of our own content: not on noindexed pages, not on tag archives (lists of
   links), not on OS Protocol or weapon talent cards. Templates pass `noAds` to `BaseLayout`. Check 7 in
   `scripts/audit-indexation.mjs` (part of `npm run build`) fails the build when a noindexed page or a page under
-  300 words loads the ad code, or when an ad slot is left on a page without it.
+  300 words loads the ad script.
+
+## Ads: Journey by Mediavine, November 15, 2026
+
+- The ads are Journey by Mediavine. One script (`JOURNEY_TAG` in `src/data/site-config.ts`, the tag from the Journey
+  dashboard, byte for byte) goes in `<head>` from `BaseLayout`. Journey is exclusive: no AdSense or other ad
+  network code on the site, and the build check fails if any comes back. The old `AdSenseUnit` slots are gone.
+- Journey places the ads itself, from settings on its side that name our markup. Renaming these breaks ads:
+  - in-content ads go inside `.build-article` (build posts; guides and news carry the class for that reason);
+  - the sidebar ad goes at the end of `.build-main > .lom > .lom__card`, so `.lom__card` is a plain wrapper and
+    the visible loadout card is `.lom__panel`. The column is 300px, the width of that ad;
+  - a banner fixed to the bottom of the screen (`body.adhesion`); the Loadout button and the vote toast move
+    up 100px while it is there;
+  - it reads `.site-footer` to know where the sidebar ad stops.
+- With a sidebar ad present, the loadout card stops following the reader (the ad does) and the Loadout button
+  shows on wide screens too. Without one (ad blockers, before launch) the page behaves as before.
+- The privacy page loads the script with every ad off (`adNotice`): the script appends Mediavine's privacy
+  notice to the `.entry-content` element there. Keep that element.
+- `/ads.txt` is a redirect (`public/_redirects`) to the file Journey hosts for this site; there is no
+  `public/ads.txt`.
+- The security header (`public/_headers`) allows scripts, frames and connections from any https address: the ad
+  stack loads from dozens of companies. A policy that lists hosts blocks ads without saying so.
+- To turn every ad off on one page that keeps the script, add
+  `<div id="ad-management-config-settings" data-blocklist-all="1"></div>` (what the privacy page does).

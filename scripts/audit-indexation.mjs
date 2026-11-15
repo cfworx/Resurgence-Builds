@@ -263,14 +263,19 @@ if (orphanPages.length > 0) {
 console.log(`  Content pages checked: ${contentPages.length - EXEMPT_PATHS.size}, orphans: ${orphanPages.length}`);
 
 /* ── 7. Ad placement ─────────────────────────────────────── */
-// Ad networks don't allow ads on pages with little content of their own, on lists of links, or on
-// pages kept out of search. BaseLayout drops the ad code on noindexed pages and on templates that
-// pass noAds; this check catches a page that slips through (a new template, a database card that
-// lost its text). Fix by passing noAds from the page's template, or by giving the page real content.
+// Ads are Journey by Mediavine: one script in <head> (JOURNEY_TAG in src/data/site-config.ts) and Journey
+// places the ads. Ad networks don't allow ads on pages with little content of their own, on lists of links,
+// or on pages kept out of search, so BaseLayout leaves the script off noindexed pages and off templates that
+// pass noAds. This check catches a page that slips through (a new template, a database card that lost its
+// text). Fix by passing noAds from the page's template, or by giving the page real content.
+// The privacy page is the one page that loads the script with every ad switched off (adNotice): the script
+// adds Mediavine's privacy notice there. Journey is exclusive, so no AdSense code may be left anywhere.
 
 console.log('\n=== 7. Ad placement ===');
 const MIN_WORDS_FOR_ADS = 300;
-const AD_LOADER = 'pagead2.googlesyndication.com/pagead/js/adsbygoogle.js';
+const AD_SCRIPT = 'scripts.scriptwrapper.com/tags/';
+const ADS_OFF = 'id="ad-management-config-settings" data-blocklist-all="1"';
+const OTHER_AD_CODE = /adsbygoogle|googlesyndication\.com\/pagead|ca-pub-\d+/;
 
 function mainWordCount(html) {
   const m = html.match(/<main[^>]*>([\s\S]*)<\/main>/);
@@ -284,16 +289,19 @@ function mainWordCount(html) {
 
 const adsOnNoindex = [];
 const adsOnThin = [];
-const slotsWithoutLoader = [];
+const otherAdCode = [];
+const scriptTwice = [];
 let pagesWithAds = 0;
+let noticeOnly = 0;
 for (const p of allPages) {
   const htmlPath = path.join(dist, p.slice(1), 'index.html');
   const html = pageHtmlMap.get(p) || (fs.existsSync(htmlPath) ? fs.readFileSync(htmlPath, 'utf8') : '');
   if (!html || /<meta http-equiv="refresh"/i.test(html)) continue;
-  const hasLoader = html.includes(AD_LOADER);
-  const hasSlot = html.includes('class="adsbygoogle"');
-  if (hasSlot && !hasLoader) slotsWithoutLoader.push(p);
-  if (!hasLoader) continue;
+  if (OTHER_AD_CODE.test(html)) otherAdCode.push(p);
+  const scripts = html.split(AD_SCRIPT).length - 1;
+  if (scripts === 0) continue;
+  if (scripts > 1) scriptTwice.push(p);
+  if (html.includes(ADS_OFF)) { noticeOnly++; continue; }
   pagesWithAds++;
   const robotsMeta = html.match(/<meta[^>]*name=["']robots["'][^>]*content=["']([^"']*)["']/i);
   if (robotsMeta && /noindex/i.test(robotsMeta[1])) adsOnNoindex.push(p);
@@ -301,16 +309,19 @@ for (const p of allPages) {
   if (words < MIN_WORDS_FOR_ADS) adsOnThin.push(`${p} (${words} words)`);
 }
 
-check('No ad code on noindexed pages', adsOnNoindex.length === 0,
-  `${adsOnNoindex.length} noindexed pages load the ad code`);
+check('No ads on noindexed pages', adsOnNoindex.length === 0,
+  `${adsOnNoindex.length} noindexed pages load the ad script`);
 adsOnNoindex.slice(0, 20).forEach(p => console.log(`    ✗ ${p}`));
-check(`No ad code on pages under ${MIN_WORDS_FOR_ADS} words`, adsOnThin.length === 0,
-  `${adsOnThin.length} short pages load the ad code (pass noAds from their template)`);
+check(`No ads on pages under ${MIN_WORDS_FOR_ADS} words`, adsOnThin.length === 0,
+  `${adsOnThin.length} short pages load the ad script (pass noAds from their template)`);
 adsOnThin.slice(0, 20).forEach(p => console.log(`    ✗ ${p}`));
-check('No ad slots on pages without the ad code', slotsWithoutLoader.length === 0,
-  `${slotsWithoutLoader.length} pages have an empty ad slot and no ad code`);
-slotsWithoutLoader.slice(0, 20).forEach(p => console.log(`    ✗ ${p}`));
-console.log(`  Pages with ads: ${pagesWithAds} of ${allPages.length}`);
+check('No other ad network code (Journey is exclusive)', otherAdCode.length === 0,
+  `${otherAdCode.length} pages still carry AdSense code`);
+otherAdCode.slice(0, 20).forEach(p => console.log(`    ✗ ${p}`));
+check('The ad script is on the home page and the privacy page, once per page',
+  (pageHtmlMap.get('/') || '').includes(AD_SCRIPT) && (pageHtmlMap.get('/privacy/') || '').includes(AD_SCRIPT) && scriptTwice.length === 0,
+  scriptTwice.length ? `${scriptTwice.length} pages load it twice` : 'missing from / or /privacy/');
+console.log(`  Pages with ads: ${pagesWithAds} of ${allPages.length} (plus ${noticeOnly} with the script and no ads: the privacy page)`);
 
 /* ── Summary ─────────────────────────────────────────────── */
 
