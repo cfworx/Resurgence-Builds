@@ -129,11 +129,17 @@ screenshots in phone emulation are misleading).
   - in-content ads go inside `.build-article` (build posts; guides and news carry the class for that reason);
   - the sidebar ad goes at the end of `.build-main > .lom > .lom__card`, so `.lom__card` is a plain wrapper and
     the visible loadout card is `.lom__panel`. The column is 300px, the width of that ad;
-  - a banner fixed to the bottom of the screen (`body.adhesion`); the Loadout button and the vote toast move
-    up 100px while it is there;
+  - a banner fixed to the bottom of the screen (`body.adhesion`, 90px on desktop and 50px on phones when we
+    measured it live) and, at times, a small video player above it: bottom right on wide screens, bottom left
+    and 300px wide on phones. The Loadout button measures both (`place()` in `BuildLayout`): it sits above the
+    banner, moves to the bottom left on wide screens, and rises above the player on phones. The vote toast
+    moves up 100px;
   - it reads `.site-footer` to know where the sidebar ad stops.
 - With a sidebar ad present, the loadout card stops following the reader (the ad does) and the Loadout button
-  shows on wide screens too. Without one (ad blockers, before launch) the page behaves as before.
+  shows on wide screens too. Without one (ad blockers) the page behaves as before. Live, Journey stacks
+  300x600 ads down that column under the card, and on a build post it puts about six in-content ads on
+  desktop and nine on a phone (a quarter or so of the article's height), after paragraphs, lists, the vote
+  box, the comments and the FAQ. That density is Journey's setting, not ours.
 - The privacy page loads the script with every ad off (`adNotice`): the script appends Mediavine's privacy
   notice to the `.entry-content` element there. Keep that element.
 - `/ads.txt` is a redirect (`public/_redirects`) to the file Journey hosts for this site; there is no
