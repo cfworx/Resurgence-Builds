@@ -10,7 +10,10 @@ Every post image is an in-game picture (CLAUDE.md). This folder is where they ar
   recordings are in the session uploads (they are too big for the repo; the video name and second find the shot again).
 - `make_hero.py`: cuts a frame, clears the HUD (the floating health bar is found by its exact orange; other pieces are
   listed as boxes), fills the gaps from nearby frames or the surrounding texture, crops to 1600 x 840, and can draw the
-  title in the site's guide style or swap a word on a poster (`"word"`, used for "Stop the spread of bugs").
+  title in the site's guide style or swap a word on a poster (`"word"`, used for "Stop the spread of bugs"). A marker
+  pinned to a place in the world (an objective marker floating in front of a trailer) hides the same scenery in every
+  nearby frame, so it is filled from a moment later in the recording, lined up on the scenery around it (`"warp"`),
+  and the thin line under it is blended across (`"bridge"`); both were added for the Noise Complaint build.
 - `ai-images-to-replace.md`: the AI images still on the site.
 - `icons/`: small pictures cut from owner screenshots for the build pages, where the game database has no icon of
   its own (the Shotgun Extended Magazine mod, from GGReborn's October 31 video). The source card is kept here; the

@@ -17,7 +17,9 @@ x1, y1, colour]] (only that colour's pixels in the box: white, brightwhite, red,
 the health bar search), window, maxErr, title, subtitle, align, titleY (where the middle of the title block sits, as a
 share of the height: 0.5 by default, lower to lift it off faces), word, n95 (a face mask drawn on, see draw_n95), fill
 ({"t": second, "maxErr": n, "search": px}: take the health bar's fill from that one frame, then clear "hud" separately),
-screen (a picture shown on a screen or billboard in the frame, see draw_screen).
+screen (a picture shown on a screen or billboard in the frame, see draw_screen), warp (a spot filled from another moment
+of the recording, for markers pinned to a place in the world, see warp_fill), bridge (narrow upright gaps blended across
+from either side, for the thin line under such a marker, see bridge_fill).
 
 Clearing HUD: crops are chosen to leave out the fixed HUD (minimap, menu icons, chat, skill bar, XP
 bar). The player's orange health bar floats next to the agent, so it is found by its colour and
@@ -196,6 +198,104 @@ def clear(video, t, f, boxes, auto_bar, window=2.0, max_err=60, crop=None, hud=(
     res[edge > 0] = blur[edge > 0]
     share = round(float(filled[todo].mean()), 2)
     return res, {'fromFrames': share, 'frames': used[:6], 'blended': round(1 - share, 2)}
+
+
+def bridge_fill(f, boxes):
+    """Fill narrow upright gaps (a thin line pinned to the ground, which no other frame shows without it) by blending
+    each row across the gap from the pixels on either side. boxes: [[x0, y0, x1, y1]], a few px wider than the line."""
+    out = f.astype(np.float32)
+    for x0, y0, x1, y1 in boxes:
+        left = out[y0:y1, x0 - 4:x0].mean(axis=1, keepdims=True)
+        right = out[y0:y1, x1:x1 + 4].mean(axis=1, keepdims=True)
+        k = (np.arange(x1 - x0, dtype=np.float32) + 0.5) / (x1 - x0)
+        out[y0:y1, x0:x1] = left * (1 - k)[None, :, None] + right * k[None, :, None]
+        # a little of the ground's grain, taken from the columns next to the gap, so the strip isn't smoother than its surroundings
+        n = x1 - x0
+        grain = out[y0:y1, x0 - 4 - n:x0 - 4] - cv2.GaussianBlur(out[y0:y1, x0 - 4 - n:x0 - 4], (0, 0), 3)
+        out[y0:y1, x0:x1] += grain[:, ::-1]
+    return np.clip(out, 0, 255).round().astype(np.uint8)
+
+
+def warp_fill(video, f, specs):
+    """Fill a spot from another moment of the recording, lined up on the scenery around it.
+
+    For markers pinned to a place in the world (an objective marker floating in front of a trailer). While the camera
+    only moves a little they keep hiding the same scenery, so the frame-to-frame fill in clear() finds nothing. A frame
+    from a moment earlier or later, after the player has walked on, shows what is behind them.
+
+    specs: [{"t": second of the other frame, "circle": [cx, cy, r], "box": [x0, y0, x1, y1] and/or "hud": [[x0, y0,
+    x1, y1, colour]] (the spot, in this frame's pixels; "hud" picks one colour's pixels in a box, for crosshair marks),
+    "around": [x0, y0, x1, y1] (the scenery to line the two frames up on; keep the other frame's own marker out of
+    it), "feather": px}]. Each one is applied to the result of the one before. The other frame is matched to this one
+    with SIFT features (a similarity transform), refined on the "around" window (ECC, affine), warped onto this frame,
+    levelled to the pixels around the spot and blended in. Stops when the two frames can't be lined up.
+    """
+    out = f.copy()
+    report = []
+    clahe = cv2.createCLAHE(clipLimit=3.0, tileGridSize=(8, 8))
+    sift = cv2.SIFT_create(nfeatures=0, contrastThreshold=0.012, edgeThreshold=12)
+    for s in specs:
+        g = next(frames(video, float(s['t']), float(s['t']) + 0.15))[1]
+        spot = np.zeros(f.shape[:2], np.uint8)
+        if s.get('circle'):
+            cx, cy, r = s['circle']
+            cv2.circle(spot, (int(cx), int(cy)), int(r), 255, -1)
+        if s.get('box'):
+            x0, y0, x1, y1 = s['box']
+            spot[y0:y1, x0:x1] = 255
+        if s.get('hud'):  # only the pixels of one colour in a box (crosshair marks), as in the "hud" key
+            spot = np.maximum(spot, hud_mask(out, s['hud']))
+        ax0, ay0, ax1, ay1 = s['around']
+        # 1. roughly: features on the scenery around the spot, matched both ways
+        gt, gs = clahe.apply(cv2.cvtColor(out, cv2.COLOR_RGB2GRAY)), clahe.apply(cv2.cvtColor(g, cv2.COLOR_RGB2GRAY))
+        mt = np.zeros_like(spot)
+        mt[max(0, ay0 - 260):ay1 + 260, max(0, ax0 - 260):ax1 + 260] = 255
+        mt[cv2.dilate(spot, np.ones((41, 41), np.uint8)) > 0] = 0
+        mt[cv2.dilate(bar_mask(out), np.ones((31, 31), np.uint8)) > 0] = 0
+        ms = np.full_like(spot, 255)
+        ms[cv2.dilate(bar_mask(g), np.ones((31, 31), np.uint8)) > 0] = 0
+        kt, dt = sift.detectAndCompute(gt, mt)
+        ks, ds = sift.detectAndCompute(gs, ms)
+        bf = cv2.BFMatcher(cv2.NORM_L2)
+        back = {m.queryIdx: m.trainIdx for m in bf.match(dt, ds)}
+        good = [a for a, b in bf.knnMatch(ds, dt, k=2) if a.distance < 0.75 * b.distance and back.get(a.trainIdx) == a.queryIdx]
+        src = np.float32([ks[m.queryIdx].pt for m in good]).reshape(-1, 2)
+        dst = np.float32([kt[m.trainIdx].pt for m in good]).reshape(-1, 2)
+        moved = np.hypot(src[:, 0] - dst[:, 0], src[:, 1] - dst[:, 1]) > 4  # the HUD sits still on screen, the scenery moved
+        src, dst = src[moved], dst[moved]
+        if len(src) < 8:
+            raise SystemExit(f"warp: frame {s['t']} doesn't show the same scenery ({len(src)} matches)")
+        M, inl = cv2.estimateAffinePartial2D(src, dst, method=cv2.RANSAC, ransacReprojThreshold=3, maxIters=5000, confidence=0.999)
+        if M is None or int(inl.sum()) < 6:
+            raise SystemExit(f"warp: frame {s['t']} can't be lined up with this one")
+        # 2. exactly: ECC on the window (it wants the map from this frame's window to the other frame)
+        inv = np.linalg.inv(np.vstack([M, [0, 0, 1]]))
+        warp = inv[:2].copy()
+        warp[:, 2] = inv[:2, :2] @ np.array([ax0, ay0]) + inv[:2, 2]
+        warp = warp.astype(np.float32)
+        ft = cv2.cvtColor(out, cv2.COLOR_RGB2GRAY).astype(np.float32) / 255
+        fs = cv2.cvtColor(g, cv2.COLOR_RGB2GRAY).astype(np.float32) / 255
+        hole = cv2.dilate(spot, np.ones((25, 25), np.uint8))[ay0:ay1, ax0:ax1] > 0
+        crit = (cv2.TERM_CRITERIA_EPS | cv2.TERM_CRITERIA_COUNT, 300, 1e-7)
+        cc = 0.0
+        for _ in range(3):
+            cur = cv2.warpAffine(fs, warp, (ax1 - ax0, ay1 - ay0), flags=cv2.INTER_LINEAR | cv2.WARP_INVERSE_MAP)
+            tmpl = ft[ay0:ay1, ax0:ax1].copy()
+            tmpl[hole] = cur[hole]  # the spot itself never counts
+            cc, warp = cv2.findTransformECC(tmpl, fs, warp, cv2.MOTION_AFFINE, crit, None, 5)
+        full = np.vstack([warp, [0, 0, 1]]).astype(np.float64)
+        full[:2, 2] -= full[:2, :2] @ np.array([ax0, ay0])
+        w = cv2.warpAffine(g, full[:2], (f.shape[1], f.shape[0]), flags=cv2.INTER_LANCZOS4 | cv2.WARP_INVERSE_MAP)
+        # 3. level the patch to the pixels just around the spot, then blend it in with a soft edge
+        ring = (cv2.dilate(spot, np.ones((61, 61), np.uint8)) > 0) & ~(cv2.dilate(spot, np.ones((13, 13), np.uint8)) > 0)
+        shift = np.median(out[ring].astype(np.float32) - w[ring].astype(np.float32), axis=0)
+        patch = np.clip(w.astype(np.float32) + shift, 0, 255)
+        fe = int(s.get('feather', 6))
+        a = cv2.GaussianBlur(cv2.dilate(spot, np.ones((4 * fe + 1, 4 * fe + 1), np.uint8)).astype(np.float32) / 255, (0, 0), fe)[..., None]
+        out = (out.astype(np.float32) * (1 - a) + patch * a).round().astype(np.uint8)
+        report.append({'t': s['t'], 'matches': int(inl.sum()), 'scale': round(float(np.hypot(M[0, 0], M[1, 0])), 3),
+                       'ecc': round(float(cc), 3), 'level': [round(float(v), 1) for v in shift]})
+    return out, report
 
 
 def smooth_closed(pts, n=600):
@@ -472,6 +572,11 @@ def make(spec):
     if x < 0 or y < 0 or x + w > FW or y + h > FH:
         raise SystemExit(f"{spec['out']}: crop {spec['crop']} runs off the frame")
     f = next(frames(video, t, t + 0.15))[1]
+    warped = None
+    if spec.get('warp'):
+        f, warped = warp_fill(video, f, spec['warp'])
+    if spec.get('bridge'):
+        f = bridge_fill(f, spec['bridge'])
     if spec.get('fill'):
         # The health bar (and "clear" boxes) from one chosen frame, then the "hud" boxes in a pass of their own, so
         # each gap is matched against the scenery right around it. For a camera move too slow for the default search.
@@ -499,6 +604,8 @@ def make(spec):
     path = os.path.join(ROOT, spec['out'])
     os.makedirs(os.path.dirname(path), exist_ok=True)
     out.save(path, quality=90, method=6)
+    if warped:
+        report = {'warp': warped, 'clear': report}
     print(f"{spec['out']}: {os.path.getsize(path) // 1024} KB, {report}")
     return report
 

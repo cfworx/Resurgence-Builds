@@ -1275,5 +1275,86 @@
    "grid_dim": 0.9,
    "glow": 0.25
   }
+ },
+ {
+  "out": "research/screenshots/masters/builds/division-resurgence-noise-complaint-demolitionist-build-stay-calm-sign.webp",
+  "video": "2026-10-29_10-11-54.mp4",
+  "t": 8.9,
+  "crop": [
+   330,
+   100,
+   1752
+  ],
+  "bar": false,
+  "warp": [
+   {
+    "t": 9.3,
+    "circle": [
+     1682,
+     780,
+     64
+    ],
+    "around": [
+     1480,
+     580,
+     1880,
+     850
+    ]
+   },
+   {
+    "t": 9.3,
+    "box": [
+     1669,
+     832,
+     1695,
+     892
+    ],
+    "around": [
+     1480,
+     580,
+     1880,
+     850
+    ],
+    "feather": 3
+   },
+   {
+    "t": 9.1,
+    "hud": [
+     [
+      1180,
+      630,
+      1385,
+      800,
+      "brightwhite"
+     ],
+     [
+      1295,
+      735,
+      1360,
+      795,
+      "orange"
+     ]
+    ],
+    "around": [
+     1080,
+     560,
+     1500,
+     880
+    ],
+    "feather": 2
+   }
+  ],
+  "bridge": [
+   [
+    1671,
+    886,
+    1693,
+    1024
+   ]
+  ],
+  "title": "Noise Complaint",
+  "subtitle": "Demolitionist radius build",
+  "align": "right",
+  "titleY": 0.64
  }
 ]

@@ -160,6 +160,29 @@
   ],
   "small": "/images/builds/division-resurgence-misdirection-double-barrel-commando-build-street-fight-480.webp"
  },
+ "/images/builds/division-resurgence-noise-complaint-demolitionist-build-stay-calm-sign-1200.webp": {
+  "width": 1200,
+  "height": 630,
+  "srcset": [
+   [
+    480,
+    "/images/builds/division-resurgence-noise-complaint-demolitionist-build-stay-calm-sign-480.webp"
+   ],
+   [
+    800,
+    "/images/builds/division-resurgence-noise-complaint-demolitionist-build-stay-calm-sign-800.webp"
+   ],
+   [
+    1200,
+    "/images/builds/division-resurgence-noise-complaint-demolitionist-build-stay-calm-sign-1200.webp"
+   ],
+   [
+    1600,
+    "/images/builds/division-resurgence-noise-complaint-demolitionist-build-stay-calm-sign-1600.webp"
+   ]
+  ],
+  "small": "/images/builds/division-resurgence-noise-complaint-demolitionist-build-stay-calm-sign-480.webp"
+ },
  "/images/builds/division-resurgence-perpetual-motion-commando-firefight-1200.webp": {
   "width": 1200,
   "height": 630,
