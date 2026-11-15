@@ -161,6 +161,14 @@ Officially supported, confirmed by Ubisoft:
 - **Mouse and keyboard** on PC, and on Android per an earlier patch.
 - **Steam Deck controls** got a configuration pass in Season 2 Phase 2, alongside better controller navigation and Android back-button behavior.
 
+If thumbs on glass keep losing you fights, these are the three pads Ubisoft names. The links go to Amazon, and yes, we get a cut:
+
+- [DualSense wireless controller](https://www.amazon.com/dp/B0CQKLS4RP?tag=resurgencebuilds-20)
+- [Xbox wireless controller](https://www.amazon.com/dp/B08DF248LD?tag=resurgencebuilds-20)
+- [Backbone One, USB-C](https://www.amazon.com/dp/B0CCT2LWT8?tag=resurgencebuilds-20): this model plugs into Android phones with a USB-C port and iPhone 15 or newer.
+
+*As an Amazon Associate I earn from qualifying purchases. It costs you nothing extra.*
+
 Less officially supported but worth knowing:
 
 - Mouse and keyboard on iOS broke in late April and was still intermittent when we last checked. If precision aiming on iOS matters to you, hold off until Ubisoft locks down the input layer again.

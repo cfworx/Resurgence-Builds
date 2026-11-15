@@ -142,3 +142,14 @@ screenshots in phone emulation are misleading).
   stack loads from dozens of companies. A policy that lists hosts blocks ads without saying so.
 - To turn every ad off on one page that keeps the script, add
   `<div id="ad-management-config-settings" data-blocklist-all="1"></div>` (what the privacy page does).
+
+## Amazon affiliate links, November 15, 2026
+
+- The tracking ID is `resurgencebuilds-20` (`AMAZON_TAG` in `src/data/site-config.ts`). Links are plain product
+  links with `?tag=` on the end; `scripts/rehype-affiliate-links.mjs` marks them `rel="sponsored noopener"`.
+- Amazon's sentence ("As an Amazon Associate I earn from qualifying purchases.") is in the footer of every page
+  and under each block of links. No prices, no shortened links.
+- Check 8 in `scripts/audit-indexation.mjs` fails the build on an Amazon link with another ID, a shortened
+  link, a missing sentence or a missing `rel="sponsored"`.
+- First links: the controllers Ubisoft names, in the device, Steam and emulator guides.
+

@@ -55,6 +55,16 @@ export const JOURNEY_TAG = JOURNEY_SITE_ID
   : '';
 
 /**
+ * Amazon Associates tracking ID for this site (Cory's one Associates account covers his sites; each has its own ID).
+ * Product links are written as https://www.amazon.com/dp/<ASIN>?tag=<this ID>. Rules Amazon and the FTC set:
+ * the sentence in AMAZON_DISCLOSURE has to be on the site (it is in the footer of every page), say next to the
+ * links that they are affiliate links, never show a price, never use another site's tag or a shortened link.
+ * The build's audit fails on an Amazon link that carries any other tag.
+ */
+export const AMAZON_TAG = 'resurgencebuilds-20';
+export const AMAZON_DISCLOSURE = 'As an Amazon Associate I earn from qualifying purchases.';
+
+/**
  * Email signup for Resurgence Builds (separate from Inland Care Jobs' list). Works with any provider
  * whose form posts an email address to a URL. Empty action means no signup box anywhere.
  * When set, a box shows on build guides and tier list pages. Resurgence uses Kit's free plan: set KIT_FORM_ID.

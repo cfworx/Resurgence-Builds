@@ -323,6 +323,51 @@ check('The ad script is on the home page and the privacy page, once per page',
   scriptTwice.length ? `${scriptTwice.length} pages load it twice` : 'missing from / or /privacy/');
 console.log(`  Pages with ads: ${pagesWithAds} of ${allPages.length} (plus ${noticeOnly} with the script and no ads: the privacy page)`);
 
+/* ── 8. Affiliate links ──────────────────────────────────── */
+// Amazon links earn a commission only with our tracking ID, and Amazon's rules come with them: the Associates
+// sentence on the page, rel="sponsored", and never somebody else's ID (search results and other sites' links
+// carry theirs, so a pasted link can smuggle one in).
+
+console.log('\n=== 8. Affiliate links ===');
+const siteConfig = fs.readFileSync(path.resolve('src/data/site-config.ts'), 'utf8');
+const AMAZON_TAG = (siteConfig.match(/export const AMAZON_TAG = '([^']*)'/) || [])[1] || '';
+const AMAZON_DISCLOSURE = (siteConfig.match(/export const AMAZON_DISCLOSURE = '([^']*)'/) || [])[1] || '';
+const foreignTags = [];
+const noDisclosure = [];
+const notSponsored = [];
+let affiliateLinks = 0;
+const affiliatePages = new Set();
+for (const p of allPages) {
+  const htmlPath = path.join(dist, p.slice(1), 'index.html');
+  const html = pageHtmlMap.get(p) || (fs.existsSync(htmlPath) ? fs.readFileSync(htmlPath, 'utf8') : '');
+  if (!html) continue;
+  for (const m of html.matchAll(/<a\b[^>]*href="(https?:\/\/(?:[a-z0-9-]+\.)*(?:amazon\.[a-z.]+|amzn\.to)\/[^"]*)"[^>]*>/gi)) {
+    const href = m[1].replace(/&amp;/g, '&');
+    let tag = null;
+    try { tag = new URL(href).searchParams.get('tag'); } catch { /* not a URL we can read */ }
+    if (/amzn\.to/i.test(href)) { foreignTags.push(`${p} → shortened link ${href}`); continue; }
+    if (!tag) continue; // a plain link to Amazon, not an affiliate link
+    if (tag !== AMAZON_TAG) { foreignTags.push(`${p} → tag=${tag}`); continue; }
+    affiliateLinks++;
+    affiliatePages.add(p);
+    if (!/rel="[^"]*sponsored/.test(m[0])) notSponsored.push(`${p} → ${href}`);
+  }
+}
+for (const p of affiliatePages) {
+  const html = pageHtmlMap.get(p) || '';
+  if (!AMAZON_DISCLOSURE || !html.includes(AMAZON_DISCLOSURE)) noDisclosure.push(p);
+}
+check('Amazon links carry only our tracking ID', foreignTags.length === 0,
+  `${foreignTags.length} Amazon links with another ID or a shortened address`);
+foreignTags.slice(0, 20).forEach(x => console.log(`    ✗ ${x}`));
+check('Pages with Amazon links carry the Associates sentence', noDisclosure.length === 0,
+  `${noDisclosure.length} pages with affiliate links and no "${AMAZON_DISCLOSURE}"`);
+noDisclosure.slice(0, 20).forEach(x => console.log(`    ✗ ${x}`));
+check('Amazon affiliate links are marked rel="sponsored"', notSponsored.length === 0,
+  `${notSponsored.length} affiliate links without rel="sponsored"`);
+notSponsored.slice(0, 20).forEach(x => console.log(`    ✗ ${x}`));
+console.log(`  Affiliate links: ${affiliateLinks} on ${affiliatePages.size} pages (ID ${AMAZON_TAG || 'not set'})`);
+
 /* ── Summary ─────────────────────────────────────────────── */
 
 console.log('\n' + '='.repeat(50));

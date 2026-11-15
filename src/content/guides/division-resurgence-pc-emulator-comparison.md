@@ -187,6 +187,10 @@ Note the player tried Parallels and it also did not work. The reason: Parallels 
 
 If you have an iPad with an A12 Bionic or newer chip and a Bluetooth controller, that combo will outperform any Mac emulator setup. The [App Store device list](https://apps.apple.com/us/app/the-division-resurgence/id1606349410) shows full compatibility from iPhone XS, iPhone XR, iPad Air M2, and forward. Connecting the iPad to a monitor via USB-C HDMI gives you a usable big-screen experience without fighting an emulator.
 
+No pad yet? Ubisoft supports the [DualSense](https://www.amazon.com/dp/B0CQKLS4RP?tag=resurgencebuilds-20) and the [Xbox wireless controller](https://www.amazon.com/dp/B08DF248LD?tag=resurgencebuilds-20) on iOS. Those two links go to Amazon and earn us a commission.
+
+*As an Amazon Associate I earn from qualifying purchases. It costs you nothing extra.*
+
 ---
 
 ## LDPlayer 9: The Backup

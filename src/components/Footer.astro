@@ -1,6 +1,7 @@
 ---
 import SocialBar from './SocialBar.astro';
 import RelatedHub from './RelatedHub.astro';
+import { AMAZON_TAG, AMAZON_DISCLOSURE } from '../data/site-config';
 export interface Props {
   title?: string;
 }
@@ -39,6 +40,7 @@ const isHome = Astro.url.pathname === '/' || Astro.url.pathname === '/index.html
       <p class="footer-legal">
         Resurgence Builds is an independent fan site. We are not affiliated with, endorsed by, or sponsored by Ubisoft Entertainment SA. Tom Clancy's The Division, The Division Resurgence, and all related characters, logos, and game assets are trademarks and copyrights of Ubisoft Entertainment SA. Game screenshots and footage are used under fair use for commentary, criticism, and news reporting.
       </p>
+      {AMAZON_TAG && <p class="footer-legal">{AMAZON_DISCLOSURE} Links to Amazon on this site are affiliate links.</p>}
     </div>
   </div>
 </footer>

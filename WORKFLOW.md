@@ -230,6 +230,7 @@ Before publishing ANY post (build, guide, or news), every item below must be che
 - [ ] Voice matches site tone: sarcastic, data-driven, funny. Think "Reddit shitposter with a journalism degree"
 - [ ] All game mechanic claims are cited or hedged ("from our understanding" / "community testing suggests")
 - [ ] Cross-links to related posts on the site (internal linking for SEO)
+- [ ] **Amazon links.** Only for hardware the post is about (a controller Ubisoft supports, say), written as `https://www.amazon.com/dp/<ASIN>?tag=resurgencebuilds-20` with an ASIN you looked up, not guessed. Say next to the links that they go to Amazon and earn us a commission, and add the line *As an Amazon Associate I earn from qualifying purchases.* Never show a price, never use a shortened link, and never paste a link that carries another site's `tag=` (the build fails on that).
 
 ### X (Twitter) Card Verification
 

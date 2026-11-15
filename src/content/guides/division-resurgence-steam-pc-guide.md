@@ -138,6 +138,10 @@ Our [center-ADS peek guide](/guides/center-ads-release-cover-peek-guide/) covers
 
 Ubisoft's Help Center says you can play with **mouse and keyboard or a controller** on PC, without listing specific pads. (On phones, Ubisoft officially supports PlayStation, Xbox and Backbone controllers; see the [device compatibility guide](/guides/division-resurgence-device-compatibility/).) The UI was designed for touch first, so some menus feel chunky on a monitor, but in our play, combat, inventory and the map work fine on mouse and keyboard (some Steam reviewers did report mouse bugs; see below).
 
+Steam itself handles Xbox and PlayStation controllers, so those are the usual picks on PC: the [Xbox wireless controller](https://www.amazon.com/dp/B08DF248LD?tag=resurgencebuilds-20) and the [DualSense](https://www.amazon.com/dp/B0CQKLS4RP?tag=resurgencebuilds-20). Those two links go to Amazon and earn us a commission.
+
+*As an Amazon Associate I earn from qualifying purchases. It costs you nothing extra.*
+
 ## Steam Deck
 
 The Steam release ended the old Ubisoft Connect workaround on Deck (NonSteamLaunchers plus Proton-GE) that the community used in the spring. Ubisoft had the Deck on its radar before launch: in a July 30 developer diary, Ubisoft Singapore said the team was exploring the possibility of making the game Steam Deck compatible ([replayed by Died Again Gaming](https://www.youtube.com/watch?v=UVtGdT0p3Uo)). **Season 2 Phase 2 then improved the Steam Deck control configuration.** We haven't tested the game on a Deck ourselves and we don't have Valve's compatibility rating on record, so check the badge on the Steam store page before you buy, er, download.
