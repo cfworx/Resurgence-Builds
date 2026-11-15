@@ -131,7 +131,8 @@ screenshots in phone emulation are misleading).
     the visible card is `.lom__panel`. The column is 300px, the width of that ad. Build posts have the loadout
     card there (`BuildLoadoutMini`); guides, news and patch notes have the Contents list (`ArticleRail`, added
     November 15, 2026, in the space that sat empty beside the 48rem article). Sidebar ads only show on screens
-    1100px and wider, and our column starts at 72em;
+    1100px and wider, and our column starts at 72em. The build's ad check (check 7 in
+    `scripts/audit-indexation.mjs`) fails when a page with `.build-article` has no side column;
   - a banner fixed to the bottom of the screen (`#fixed_container_bottom > .adhesion_wrapper`, 90px on desktop
     and 50px on phones when we measured it live) and, at times, a small video player above it
     (`.universalPlayer__bottom`): bottom right on wide screens, bottom left and 300px wide on phones;

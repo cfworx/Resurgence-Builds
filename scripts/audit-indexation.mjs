@@ -291,6 +291,11 @@ const adsOnNoindex = [];
 const adsOnThin = [];
 const otherAdCode = [];
 const scriptTwice = [];
+// Journey finds its spots by our class names (DESIGN.md, "Ads"): in-article ads inside .build-article, sidebar
+// ads at the end of .build-main > .lom > .lom__card. An article page without the side column earns less on
+// wide screens and nothing says so: give its layout BuildLoadoutMini or ArticleRail.
+const articleNoSideColumn = [];
+let pagesWithArticleAds = 0;
 let pagesWithAds = 0;
 let noticeOnly = 0;
 for (const p of allPages) {
@@ -307,6 +312,11 @@ for (const p of allPages) {
   if (robotsMeta && /noindex/i.test(robotsMeta[1])) adsOnNoindex.push(p);
   const words = mainWordCount(html);
   if (words < MIN_WORDS_FOR_ADS) adsOnThin.push(`${p} (${words} words)`);
+  if (/class="[^"]*\bbuild-article\b/.test(html)) {
+    pagesWithArticleAds++;
+    const sideColumn = /class="[^"]*\bbuild-main\b/.test(html) && /<(?:aside|div) class="lom\b/.test(html) && /class="[^"]*\blom__card\b/.test(html);
+    if (!sideColumn) articleNoSideColumn.push(p);
+  }
 }
 
 check('No ads on noindexed pages', adsOnNoindex.length === 0,
@@ -321,7 +331,11 @@ otherAdCode.slice(0, 20).forEach(p => console.log(`    ✗ ${p}`));
 check('The ad script is on the home page and the privacy page, once per page',
   (pageHtmlMap.get('/') || '').includes(AD_SCRIPT) && (pageHtmlMap.get('/privacy/') || '').includes(AD_SCRIPT) && scriptTwice.length === 0,
   scriptTwice.length ? `${scriptTwice.length} pages load it twice` : 'missing from / or /privacy/');
+check('Every article with in-article ads has the side column for sidebar ads', articleNoSideColumn.length === 0,
+  `${articleNoSideColumn.length} article pages lack .build-main > .lom > .lom__card`);
+articleNoSideColumn.slice(0, 20).forEach(p => console.log(`    ✗ ${p}`));
 console.log(`  Pages with ads: ${pagesWithAds} of ${allPages.length} (plus ${noticeOnly} with the script and no ads: the privacy page)`);
+console.log(`  Articles with in-article ads and the side column: ${pagesWithArticleAds - articleNoSideColumn.length} of ${pagesWithArticleAds}`);
 
 /* ── 8. Affiliate links ──────────────────────────────────── */
 // Amazon links earn a commission only with our tracking ID, and Amazon's rules come with them: the Associates
