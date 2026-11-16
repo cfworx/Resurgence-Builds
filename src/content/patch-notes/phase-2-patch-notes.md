@@ -24,7 +24,7 @@ The Phase 2 update for Season 1 went live on May 12. This is the official patch 
 > [!INFO] Update (October 2026)
 > A few things here have moved on. The Strawberry Milkshake got its Shredding and LVL2-talent fixes in [Season 1 Phase 3](/patch-notes/season-1-phase-3-a-new-fire/), and [Exotic Sealed Caches](/guides/exotic-sealed-caches/) (Season 2 Phase 2) added a new way to get previous-season exotics like it. Dark Zone vendor exotics have cost 15,000 DZ Credits since Season 2 Phase 2 (down from 17,500) and no longer come with pre-equipped exotic mods.
 
-### What's New
+## What's New
 
 **New Classified Ops Pass**
 - 50 tiers of exclusive rewards
@@ -45,7 +45,7 @@ The Phase 2 update for Season 1 went live on May 12. This is the official patch 
 
 The notes describe the three speedruns as revisits of main-story missions on Challenging difficulty, although the Derelict Store run is an open-world nest. Ubisoft's article says rewards depended on your clear-time ranking.
 
-### Gameplay & Features
+## Gameplay & Features
 - Fixed mods sometimes breaking or not displaying correctly due to missing data
 - Improved Seasonal cosmetic distribution and unlock timing so players receive rewards at the right time
 - Updated Season 1 Battle Pass naming and localization in all supported languages
@@ -58,11 +58,11 @@ The notes describe the three speedruns as revisits of main-story missions on Cha
 - **Dark Zone Credits from dismantling Skill Mods increased:** Blue 10 → 15 · Purple 50 → 75 · Yellow 450 → 750
 - Added one more copy of each regular Weapon and Gear Tactical Augmentation Module to the Clan Vendor
 
-### Performance & Visual Improvements
+## Performance & Visual Improvements
 - Some high-end devices can now run with expanded graphics settings, with smoother performance up to 60 FPS (device-dependent)
 - General improvements to visual quality and device stability
 
-### Bug Fixes & Stability
+## Bug Fixes & Stability
 - Fixed **Brains Over Brawn** (spelled "Brain over Brawns" in the notes) scaling the wrong stats in some situations
 - Fixed a crash when opening certain mod-related screens
 - Resolved multiple errors that could occur during gameplay
@@ -71,7 +71,7 @@ The notes describe the three speedruns as revisits of main-story missions on Cha
 - Corrected reward inaccuracies on Clan Nests
 - Fixed Lone Wolf Challenge not refreshing every 3 weeks
 
-### Technical Improvements
+## Technical Improvements
 - Backend and system optimizations for live operations and upcoming updates
 - Stability improvements based on multiple release-candidate iterations
 

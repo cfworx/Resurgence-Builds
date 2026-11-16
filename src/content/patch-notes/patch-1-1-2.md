@@ -21,7 +21,7 @@ faqs:
 
 Patch 1.1.2 deployed alongside the PC Early Access launch. The update was a stability and quality-of-life pass with no balance changes, and a heavy emphasis on mouse-and-keyboard support, clearly to prep for PC players coming in fresh.
 
-### Stability & Crash Fixes
+## Stability & Crash Fixes
 - Improved overall stability and fixed multiple crashes during gameplay and menu navigation
 - Fixed a crash when using the "Locate" button on the Mission Map
 - Fixed crashes related to environmental lighting and weather setups
@@ -29,7 +29,7 @@ Patch 1.1.2 deployed alongside the PC Early Access launch. The update was a stab
 - Fixed crashes when equipping certain gear items (e.g., Skater apparel)
 - Added safety checks for character assets, skeletal-mesh merging, and environment loading
 
-### Tutorials, Controls & Usability
+## Tutorials, Controls & Usability
 - Tutorials no longer break or misbehave when controls are remapped or unbound
 - More reliable tutorials across menus; tutorials no longer open at invalid times or block UI interactions
 - Resolved input issues where UI elements (quick wheel, roulette, tutorials) could conflict or get stuck
@@ -38,22 +38,22 @@ Patch 1.1.2 deployed alongside the PC Early Access launch. The update was a stab
   - Improved menu navigation with KB+M controls
   - Fixed the Quickwheel not being re-bindable
 
-### Dark Zone & Live Events
+## Dark Zone & Live Events
 - Fixed Dark Zone events sometimes displaying an empty UI
 - **Temporarily disabled the Dark Zone box deal** to prevent confusing behavior
 - Improved tracking and completion reliability for live-event tasks
 
-### Online, Chat & Social
+## Online, Chat & Social
 - Fixed chat and recruiting messages not respecting privacy settings (e.g., friends-only or private)
 - More reliable, clearer chat-consent warnings
 - Reporting and social-action flows correctly open external reporting interfaces when required
 
-### Privacy, Consent & Compliance
+## Privacy, Consent & Compliance
 - Fixed consent checkboxes being pre-selected incorrectly in certain regions
 - Improved age, consent, and privacy region logic
 - Fixed cases where required consent prompts didn't reappear after settings changes
 
-### Store, Purchases & Rewards
+## Store, Purchases & Rewards
 - Fixed Premium Credits and Store flow issues, including:
   - Incorrect "Max" button behavior when exchanging currencies
   - Broken Customer Support button paths on some devices
@@ -62,7 +62,7 @@ Patch 1.1.2 deployed alongside the PC Early Access launch. The update was a stab
   - Battle Pass or other rewards not arriving
 - Fixed cases where paid currency could be counted twice in reward flows
 
-### General Polish
+## General Polish
 - Improved UI error handling so leaderboards, errors, and payments screens no longer get stuck
 - Fixed misleading reward displays on the world map
 - More robust config loading to prevent desync after reconnection
