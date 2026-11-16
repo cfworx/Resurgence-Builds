@@ -26,12 +26,13 @@ Ubisoft published the full seasonal roadmap on April 28. New seasons land every 
 
 ## Phase-by-Phase Roadmap
 
-| Phase / Season | Date | Headline Content |
-|---|---|---|
-| **Season 1, Phase 2** | May 12, 2026 | Classified Ops Pass 1.2 (Strawberry Milkshake Exotic, Pyromaniac apparel, Hot Rod skin); 4 time-limited events |
-| **Season 1, Phase 3** | June 2026 | Classified Ops Pass 1.3 (Scorpio Exotic, Freemen apparel, Boombox skin) |
-| **Season 2** | August 2026 | **Full PC launch** for The Division Resurgence (graduating from Early Access) |
-| **Season 3** | Winter 2026 | Major story expansion: deeper backstory on the factions and characters introduced in Season 1 |
+| Phase / Season | The April plan | What happened | Headline Content |
+|---|---|---|---|
+| **Season 1, Phase 2** | May 12, 2026 | Live May 12, 2026 ([patch notes](/patch-notes/phase-2-patch-notes/)) | Classified Ops Pass 1.2 (Strawberry Milkshake Exotic, Pyromaniac apparel, Hot Rod skin); 4 time-limited events |
+| **Season 1, Phase 3** | June 2026 | Live June 24, 2026 ([patch notes](/patch-notes/season-1-phase-3-a-new-fire/)) | Classified Ops Pass 1.3 (Scorpio Exotic, Freemen apparel, Boombox skin) |
+| **Season 2** | August 2026 | Live August 5, 2026 ([patch notes](/patch-notes/season-2-phase-1-the-call/)) | **Full PC launch** for The Division Resurgence (graduating from Early Access), on Steam as well |
+| **Season 2, Phase 2** | Not listed by name | Live September 16, 2026 ([patch notes](/patch-notes/season-2-phase-2/)), then [extended on October 21](/news/season-2-phase-2-extended/) with no end date | Diamondback Exotic, daily XP cap removed |
+| **Season 3** | Winter 2026 | No date announced as of November 15, 2026 | Major story expansion: deeper backstory on the factions and characters introduced in Season 1 |
 
 ## A Note on Steam
 The roadmap didn't name Steam. Ubisoft's April 28 post only said Season 2 would bring the full PC launch "to even more distribution platforms," and the one Steam mention we found was creator coverage (RogueGold's "Steam later this summer," from the Ubisoft Creator Program preview). Ubisoft settled it on August 5, 2026: The Division Resurgence launched on Steam, free, alongside Season 2 ([Ubisoft's announcement](https://www.ubisoft.com/en-us/game/the-division/resurgence/news-updates/1dqH85Pad1ydYGwCOdlDp7/now-available-on-steam)).

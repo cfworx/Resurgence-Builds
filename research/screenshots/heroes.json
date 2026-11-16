@@ -1356,5 +1356,19 @@
   "subtitle": "Demolitionist radius build",
   "align": "right",
   "titleY": 0.64
+ },
+ {
+  "out": "research/screenshots/masters/guides/division-resurgence-crossplay-guide-cavern-safe-house.webp",
+  "video": "2026-10-29_10-16-11.mp4",
+  "t": 72,
+  "crop": [
+   400,
+   112,
+   1500
+  ],
+  "title": "Crossplay",
+  "subtitle": "Phone and PC, one account",
+  "align": "right",
+  "bar": false
  }
 ]

@@ -48,7 +48,7 @@ Moving from phone to PC? Log into Ubisoft Connect on your phone first, then sign
 
 ## Playing with friends on other platforms
 
-Ubisoft says the game is fully cross-platform, and you can play with friends on any device **as long as you are on the same server** ([Ubisoft](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2481-can-i-play-with-friends-on-other-platforms/?p=all)). Season 2 Phase 1 added a crossplay matchmaking selector and let mobile-only groups stay in mobile Dark Zone instances ([patch notes](/patch-notes/season-2-phase-1-the-call/)). If your phone squad would rather not meet PC aim in the Dark Zone, that's the switch. Our [Dark Zone guide](/guides/division-resurgence-dark-zone-guide/) covers the rest.
+Ubisoft says the game is fully cross-platform, and you can play with friends on any device **as long as you are on the same server** ([Ubisoft](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2481-can-i-play-with-friends-on-other-platforms/?p=all)). Season 2 Phase 1 added a crossplay matchmaking selector and let mobile-only groups stay in mobile Dark Zone instances ([patch notes](/patch-notes/season-2-phase-1-the-call/)). If your phone squad would rather not meet PC aim in the Dark Zone, that's the switch. Our [Dark Zone guide](/guides/division-resurgence-dark-zone-guide/) covers the rest. Our [crossplay page](/guides/division-resurgence-crossplay/) has the short version.
 
 ## Changing servers
 

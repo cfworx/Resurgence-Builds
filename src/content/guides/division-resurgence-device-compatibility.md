@@ -205,6 +205,8 @@ Two more rules from Ubisoft's Help Center that save a lot of panic:
 - **Guest accounts:** link your guest account to Ubisoft Connect first ("Link to Ubisoft Connect" in the options), *before* you log into an existing Ubisoft Connect account on another device.
 - **Moving from mobile to Steam:** log into a Ubisoft Connect account on mobile first to link your progress, then launch on PC through Steam and sign in with that same account.
 
+Who can play with whom, and how to switch crossplay off, is on our [crossplay page](/guides/division-resurgence-crossplay/).
+
 ---
 
 ## "But My Device Is on the List and It Still Says Incompatible"

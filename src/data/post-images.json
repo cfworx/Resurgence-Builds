@@ -321,6 +321,29 @@
   ],
   "small": "/images/guides/division-resurgence-controller-guide-gamesir-480.webp"
  },
+ "/images/guides/division-resurgence-crossplay-guide-cavern-safe-house-1200.webp": {
+  "width": 1200,
+  "height": 630,
+  "srcset": [
+   [
+    480,
+    "/images/guides/division-resurgence-crossplay-guide-cavern-safe-house-480.webp"
+   ],
+   [
+    800,
+    "/images/guides/division-resurgence-crossplay-guide-cavern-safe-house-800.webp"
+   ],
+   [
+    1200,
+    "/images/guides/division-resurgence-crossplay-guide-cavern-safe-house-1200.webp"
+   ],
+   [
+    1600,
+    "/images/guides/division-resurgence-crossplay-guide-cavern-safe-house-1600.webp"
+   ]
+  ],
+  "small": "/images/guides/division-resurgence-crossplay-guide-cavern-safe-house-480.webp"
+ },
  "/images/guides/division-resurgence-dark-zone-guide-base-of-operations-map-1200.webp": {
   "width": 1200,
   "height": 630,

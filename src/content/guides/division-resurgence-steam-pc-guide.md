@@ -116,6 +116,8 @@ Ubisoft's Help Center says the game is **fully cross-play on PC and mobile**, an
 
 Season 2 Phase 2 then improved Dark Zone matchmaking for mobile and cross-platform groups and fixed crossplay settings sometimes showing the wrong state.
 
+The short version, with what does and does not carry over, is on our [crossplay page](/guides/division-resurgence-crossplay/).
+
 ## Purchases on PC
 
 - Steam purchases go through the **Steam shop** and show up in your Steam profile.
