@@ -98,3 +98,13 @@ Each vote and each totals request is a Functions request (100,000 a day on the f
 Totals are cached for 20 seconds per Cloudflare location and in the browser, an open tier list polls every 30 seconds
 only while it's visible, and it stops after 20 idle minutes. Reading the totals touches one row per item, and a vote
 writes two rows.
+
+## The class tier list (not voted on)
+
+`/tier-list/classes/` ranks the five specializations without votes: it averages the published class tier lists we
+could read, each linked with its date, using the same points and cut-offs as the voted lists. The lists, the classes
+and the arithmetic are in `src/data/class-tier-lists.ts`; `/tier-list/` shows the result in one line. Re-read the
+lists once a month (AUTOMATION.md) and update `LISTS` and `CLASS_TIERS_CHECKED`. If readers are to vote on classes
+later, the `votes` table needs a third kind: its CHECK only allows 'build' and 'os', and SQLite cannot change a CHECK
+in place, so that means a new table. Two unused copies from a first attempt on November 15, 2026 are still in the
+live database (`votes_new`, `votes_backup_20261115`); the owner decides whether to delete them.

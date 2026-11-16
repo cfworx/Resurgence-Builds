@@ -452,3 +452,13 @@
 }
 .tv-toast.is-show { opacity: 1; transform: translate(-50%, 0); }
 .tv-toast.is-error { border-color: rgba(224, 64, 46, 0.6); }
+
+/* The switch between the three tier lists (builds, classes, OS Protocols), under each page's heading */
+.tl-tabs { display: flex; flex-wrap: wrap; gap: var(--sp-2); margin: 0 0 var(--sp-4); }
+.tl-tabs a {
+  display: inline-flex; align-items: center; min-height: 44px; padding: 0 var(--sp-4);
+  border: 1px solid var(--border); border-radius: 999px; background: var(--surface);
+  color: var(--ink); font-size: var(--step--1); font-weight: 700; text-decoration: none;
+}
+.tl-tabs a:hover { border-color: var(--accent); color: var(--accent); }
+.tl-tabs a[aria-current="page"] { background: var(--accent); border-color: var(--accent); color: #111; }

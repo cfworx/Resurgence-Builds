@@ -1,0 +1,237 @@
+---
+// The class (specialization) tier list. Unlike the build and OS Protocol lists it is not voted on here yet: the
+// tiers are the average of the published class tier lists we could read (each one linked and dated), with our own
+// pick marked, and under each class the builds our readers have ranked highest. The reading of the four lists is
+// from November 15, 2026. The lists and the arithmetic live in src/data/class-tier-lists.ts.
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import SectionTag from '../../components/SectionTag.astro';
+import { getCollection } from 'astro:content';
+import { TIERS, snapshotItems, snapshotUpdated, voteCount, type Tier } from '../../utils/votes';
+import { CLASSES, LISTS, CLASS_TIERS_PUBLISHED as PUBLISHED, classTierRows, classTiersCheckedLong as checkedLong, joinNames as sentence } from '../../data/class-tier-lists';
+import { CURRENT_PATCH_PLAIN } from '../../data/site-config';
+import '../../styles/tier-votes.css';
+
+const builds = await getCollection('builds');
+const snap = snapshotItems('build');
+const shortName = (title: string) => title.split(/: | \| | - /)[0];
+
+const rows = classTierRows().map((c) => {
+  const mine = builds
+    .filter((b) => b.data.specialization === c.name)
+    .map((b) => ({ id: b.id, name: shortName(b.data.title), href: `/builds/${b.id}/`, sum: snap[b.id] }));
+  const ranked = mine
+    .filter((b) => b.sum && b.sum.tier)
+    .sort((x, y) => TIERS.indexOf(x.sum!.tier!) - TIERS.indexOf(y.sum!.tier!) || y.sum!.avg - x.sum!.avg || y.sum!.n - x.sum!.n);
+  return { ...c, buildCount: mine.length, ranked };
+});
+
+const byTier = (t: Tier) => rows.filter((r) => r.tier === t).map((r) => r.name);
+const unranked = rows.filter((r) => r.tier === null).map((r) => r.name);
+
+const breadcrumbItems = [{ name: 'Tier Lists', url: '/tier-list/' }, { name: 'Class Tier List', url: '/tier-list/classes/' }];
+const title = 'The Division Resurgence Class and Specialization Tier List';
+const description = 'Every Division Resurgence specialization ranked: where Vanguard, Demolitionist, Field Medic, Bulwark and Tech Operator land across the published class tier lists, our pick, and the builds players rank highest for each class.';
+const lastVote = snapshotUpdated('build');
+const modified = lastVote && lastVote > PUBLISHED ? lastVote : PUBLISHED;
+const siteUrl = 'https://resurgencebuilds.com';
+
+const itemListLd = {
+  '@type': 'ItemList',
+  name: 'The Division Resurgence class tier list',
+  description,
+  itemListOrder: 'https://schema.org/ItemListOrderDescending',
+  numberOfItems: rows.length,
+  itemListElement: rows.map((r, i) => ({ '@type': 'ListItem', position: i + 1, name: r.name, url: `${siteUrl}/class/${r.id}/` })),
+};
+
+const faqs = [
+  { question: 'What is the best class in The Division Resurgence?',
+    answer: `Vanguard. It is the only specialization that all ${LISTS.length} published class tier lists we could read put in S tier, and it is our pick too: Scanning Pulse shows enemies through walls, its mobility skills are the best in the game, and both its damage and support builds were top-tier when we tested them. The other classes each own a job: Field Medic heals, Bulwark tanks, Demolitionist does explosive damage and Tech Operator fights with drones.` },
+  { question: `What is the Division Resurgence class tier list for ${CURRENT_PATCH_PLAIN}?`,
+    answer: `Averaging the ${LISTS.length} published tier lists, as checked on ${checkedLong}: S tier is ${sentence(byTier('S'))}. A tier is ${sentence(byTier('A'))}.${byTier('B').length ? ` B tier is ${sentence(byTier('B'))}.` : ''} ${sentence(unranked)} has no tier because none of those lists ranks it. All of them were last updated before the Season 2 Phase 2 balance patch of September 16, 2026.` },
+  { question: 'Why is Tech Operator not ranked?',
+    answer: 'None of the four published class tier lists includes it. Three do not mention Tech Operator at all, and Destructoid\'s says the Tech class was yet to be assessed. Tech Operator builds are on our build tier list, where players rank them.' },
+  { question: 'Is Demolitionist better after Season 2 Phase 2?',
+    answer: 'Its kit was buffed. Ubisoft\'s Season 2 Phase 2 patch notes (September 16, 2026) list a pass over the Demolitionist skill tree, for example the Explosive Seeker Mine cooldown going from 18 seconds to 14. All four published tier lists were last updated before that patch, so none of them reflects it.' },
+  { question: 'How is this tier list made?',
+    answer: 'Each published list gives a class a tier. We turn tiers into points (S 5, A 4, B 3), average them across the lists that rank the class, and use the same cut-offs as our player-voted lists: 4.5 and up is S, 3.5 and up is A, 2.5 and up is B. Every list is linked with its date so you can check it. Under each class we also show the builds our readers have ranked highest.' },
+];
+---
+
+<BaseLayout title={title} description={description} breadcrumbs={breadcrumbItems} faqs={faqs} jsonLd={itemListLd}
+  ogImage="/images/site/division-resurgence-build-tier-list-firefight-1200.webp"
+  article={{ publishDate: PUBLISHED, modifiedDate: new Date(modified).toISOString(), author: 'RapidF5', tags: ['tier list', 'specializations', 'classes', 'Division Resurgence'] }}
+>
+  <div class="container section">
+    <Breadcrumbs items={breadcrumbItems} />
+    <SectionTag label="All 5 Specializations" />
+    <h1 class="heading-accent">The Division Resurgence Class Tier List</h1>
+    <nav class="tl-tabs" aria-label="Tier lists">
+      <a href="/tier-list/">Builds</a>
+      <a href="/tier-list/classes/" aria-current="page">Classes</a>
+      <a href="/tier-list/os-protocols/">OS Protocols</a>
+    </nav>
+    <p class="tl-lede ctl-lede">
+      <strong>Checked {checkedLong}.</strong> {sentence(byTier('S'))} is the one class in S tier: every published tier list puts it there, and it is our pick too.
+      {sentence(byTier('A'))} land in A. {sentence(unranked)} has no tier yet, because no published list ranks it.
+    </p>
+
+    <div class="ctl-wrap">
+      <table class="ctl">
+        <caption class="sr-only">The Division Resurgence class tier list, checked {checkedLong}</caption>
+        <thead>
+          <tr><th scope="col">Tier</th><th scope="col">Class</th><th scope="col">Published lists</th><th scope="col">What we would add</th></tr>
+        </thead>
+        <tbody>
+          {rows.map((r) => (
+            <tr>
+              <td data-label="Tier"><span class={`tier-chip tier-chip--${r.tier ? r.tier.toLowerCase() : 'none'}`}>{r.tier ?? '?'}</span></td>
+              <th scope="row" data-label="Class">
+                <a href={`/class/${r.id}/`}>{r.name}</a>
+                <span class="ctl__role">{r.role}</span>
+                {r.ours && <span class="ctl__ours">Our pick</span>}
+              </th>
+              <td data-label="Published lists">
+                {r.given.length > 0
+                  ? <span class="ctl__given">{r.given.map((t) => <span class={`tier-chip tier-chip--${t.toLowerCase()}`}>{t}</span>)}<span class="ctl__avg">average {r.avg!.toFixed(2)} of 5</span></span>
+                  : <span class="ctl__avg">Not ranked by any of them</span>}
+              </td>
+              <td data-label="What we would add">{r.read}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+
+    <section class="ctl-sec" aria-labelledby="ctl-builds">
+      <h2 id="ctl-builds">The builds players rank highest, class by class</h2>
+      <p>A class is only as good as the build you run on it. These are the top builds for each class on our <a href="/tier-list/">build tier list</a>, which readers vote on. It had {voteCount(Object.values(snap).reduce((n, s) => n + s.n, 0))} when this page was last built.</p>
+      <div class="ctl-grid">
+        {rows.map((r) => (
+          <div class="ctl-card">
+            <h3><a href={`/class/${r.id}/`}>{r.name}</a></h3>
+            {r.ranked.length > 0 ? (
+              <ul>
+                {r.ranked.slice(0, 2).map((b) => (
+                  <li><span class={`tier-chip tier-chip--${b.sum!.tier!.toLowerCase()}`}>{b.sum!.tier}</span><a href={b.href}>{b.name}</a><span class="ctl__n">{voteCount(b.sum!.n)}</span></li>
+                ))}
+              </ul>
+            ) : (
+              <p class="ctl__none">No {r.name} build has votes yet.</p>
+            )}
+            <a class="ctl__all" href={`/class/${r.id}/`}>All {r.buildCount} {r.name} builds</a>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <section class="ctl-sec" aria-labelledby="ctl-how">
+      <h2 id="ctl-how">How this ranking is made</h2>
+      <p>There are several class tier lists for this game and they do not agree with each other. So this page does not add one more opinion to the pile. It averages the published ones and shows the working. S counts 5, A counts 4 and B counts 3, and the cut-offs are the ones our player-voted lists use: 4.5 and up is S, 3.5 and up is A, 2.5 and up is B.</p>
+      <div class="ctl-wrap">
+        <table class="ctl ctl--lists">
+          <thead>
+            <tr><th scope="col">Published list</th>{CLASSES.map((c) => <th scope="col">{c.name}</th>)}</tr>
+          </thead>
+          <tbody>
+            {LISTS.map((l) => (
+              <tr>
+                <th scope="row"><a href={l.url} target="_blank" rel="noopener noreferrer">{l.site}</a><span class="ctl__role">{l.dated}{l.note && `; ${l.note}`}</span></th>
+                {CLASSES.map((c) => <td data-label={c.name}>{l.tiers[c.id] ? <span class={`tier-chip tier-chip--${l.tiers[c.id].toLowerCase()}`}>{l.tiers[c.id]}</span> : <span class="ctl__avg">not ranked</span>}</td>)}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p>Three things to keep in mind when you read it:</p>
+      <ul>
+        <li><strong>They are all older than the current patch.</strong> The newest was updated on August 17, 2026. Season 2 Phase 2 arrived on September 16 with a balance pass, including buffs across the Demolitionist skill tree. Our <a href="/patch-notes/">patch notes</a> have the details.</li>
+        <li><strong>None of them ranks Tech Operator.</strong> That is a gap in the lists, not a verdict on the class.</li>
+        <li><strong>They only agree on Vanguard.</strong> Demolitionist is S on two lists, A on one and B on another.</li>
+      </ul>
+      <p>We read all four on {checkedLong}, and we read them again every month.</p>
+    </section>
+
+    <section class="faq-section tl-faq" aria-labelledby="ctl-faq">
+      <h2 id="ctl-faq">Frequently Asked Questions</h2>
+      <div class="faq-list">
+        {faqs.map((faq) => (
+          <details class="faq-item">
+            <summary class="faq-question">{faq.question}</summary>
+            <p class="faq-answer">{faq.answer}</p>
+          </details>
+        ))}
+      </div>
+    </section>
+
+    <p class="tl-related">Not sure which class suits you? <a href="/guides/which-specialization-to-pick/">Which specialization to pick</a> goes through all five. Then see the <a href="/tier-list/">build tier list</a> and the <a href="/tier-list/os-protocols/">OS Protocol tier list</a>.</p>
+  </div>
+</BaseLayout>
+
+<style>
+  .ctl-lede { max-width: 46rem; }
+  .ctl-wrap { overflow-x: auto; margin: var(--sp-6) 0; }
+  .ctl { width: 100%; border-collapse: collapse; font-size: var(--text-sm); line-height: var(--lh-small); }
+  .ctl th, .ctl td { padding: var(--sp-3); border-bottom: 1px solid var(--border); text-align: left; vertical-align: top; }
+  .ctl thead th { font-family: var(--font-mono); font-size: var(--step--2); font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-muted); border-bottom: 2px solid var(--accent); white-space: nowrap; }
+  .ctl tbody th { font-weight: 400; min-width: 9.5rem; }
+  .ctl tbody th a { display: block; font-size: var(--step-0); font-weight: 800; color: var(--ink-heading); text-decoration: none; }
+  .ctl tbody th a:hover { color: var(--accent); }
+  .ctl__role { display: block; margin-top: 2px; color: var(--ink-muted); font-size: var(--step--2); }
+  .ctl__ours { display: inline-block; margin-top: var(--sp-2); padding: 2px 8px; border-radius: 999px; background: rgba(242, 104, 34, 0.16); color: #F9A27A; font-size: var(--step--2); font-weight: 700; }
+  .ctl .tier-chip { width: 2rem; height: 2rem; font-size: var(--step-0); border-radius: 6px; }
+  .ctl__given { display: flex; flex-wrap: wrap; align-items: center; gap: 4px; }
+  .ctl__given .tier-chip, .ctl--lists .tier-chip { width: 1.6rem; height: 1.6rem; font-size: var(--step--2); border-radius: 4px; }
+  .ctl__avg { color: var(--ink-muted); font-size: var(--step--2); }
+  .ctl__given .ctl__avg { flex-basis: 100%; margin-top: 2px; }
+  .ctl:not(.ctl--lists) td:last-child { color: var(--ink); min-width: 16rem; }
+  .ctl--lists td { white-space: nowrap; }
+  .ctl--lists tbody th { min-width: 0; }
+  .ctl--lists .ctl__role { max-width: 15rem; }
+
+  .ctl-sec { margin-top: var(--sp-12); max-width: 56rem; }
+  .ctl-sec h2 { margin-bottom: var(--sp-3); }
+  .ctl-sec p, .ctl-sec li { color: var(--ink); }
+  .ctl-sec ul { padding-left: 1.2rem; list-style: disc; }
+  .ctl-sec li { margin-bottom: var(--sp-2); }
+  .ctl-grid { display: grid; gap: var(--sp-3); margin-top: var(--sp-4); grid-template-columns: repeat(auto-fill, minmax(15.5rem, 1fr)); }
+  .ctl-card { padding: var(--sp-4); border: 1px solid var(--border); border-radius: var(--radius-sm); background: var(--surface); display: flex; flex-direction: column; gap: var(--sp-2); }
+  .ctl-card h3 { margin: 0; font-size: var(--step-0); }
+  .ctl-card h3 a { color: var(--ink-heading); text-decoration: none; }
+  .ctl-card ul { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--sp-2); }
+  .ctl-card li { margin-bottom: 0; }
+  .ctl-card li { display: grid; grid-template-columns: auto minmax(0, 1fr); column-gap: var(--sp-2); align-items: center; margin: 0; font-size: var(--text-sm); line-height: var(--lh-small); }
+  .ctl-card li .tier-chip { width: 1.6rem; height: 1.6rem; font-size: var(--step--2); border-radius: 4px; grid-row: span 2; }
+  .ctl-card li a { color: var(--ink-heading); font-weight: 700; text-decoration: none; }
+  .ctl-card li a:hover, .ctl-card h3 a:hover { color: var(--accent); }
+  .ctl__n { grid-column: 2; color: var(--ink-muted); font-size: var(--step--2); }
+  .ctl__none { margin: 0; color: var(--ink-muted); font-size: var(--text-sm); }
+  .ctl__all { margin-top: auto; padding-top: var(--sp-2); color: var(--accent); font-size: var(--text-sm); font-weight: 700; text-decoration: none; }
+  .ctl__all:hover { text-decoration: underline; }
+  .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+  /* Phones: each class becomes a card, as the site's other tables do */
+  @media (max-width: 44em) {
+    .ctl:not(.ctl--lists) thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+    .ctl:not(.ctl--lists), .ctl:not(.ctl--lists) tbody, .ctl:not(.ctl--lists) tr, .ctl:not(.ctl--lists) th, .ctl:not(.ctl--lists) td { display: block; }
+    .ctl:not(.ctl--lists) tr { position: relative; margin-bottom: var(--sp-3); padding: var(--sp-4) var(--sp-4) var(--sp-4) 4.25rem; border: 1px solid var(--border); border-radius: var(--radius-sm); background: var(--surface); }
+    .ctl:not(.ctl--lists) th, .ctl:not(.ctl--lists) td { padding: 0; border: 0; min-width: 0; }
+    .ctl:not(.ctl--lists) td[data-label="Tier"] { position: absolute; left: var(--sp-4); top: var(--sp-4); }
+    .ctl:not(.ctl--lists) td[data-label="Tier"] .tier-chip { width: 2.4rem; height: 2.4rem; font-size: var(--step-1); }
+    .ctl:not(.ctl--lists) td[data-label="Published lists"] { margin-top: var(--sp-3); }
+    .ctl:not(.ctl--lists) td:last-child { margin-top: var(--sp-3); }
+
+    /* The published lists: one card per list, each class as "tier, name" */
+    .ctl--lists thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+    .ctl--lists, .ctl--lists tbody, .ctl--lists th { display: block; }
+    .ctl--lists tr { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: var(--sp-2) var(--sp-3); margin-bottom: var(--sp-3); padding: var(--sp-4); border: 1px solid var(--border); border-radius: var(--radius-sm); background: var(--surface); }
+    .ctl--lists tbody th { grid-column: 1 / -1; padding: 0; border: 0; }
+    .ctl--lists .ctl__role { max-width: none; }
+    .ctl--lists td { display: flex; align-items: center; gap: var(--sp-2); padding: 0; border: 0; min-width: 0; white-space: normal; }
+    .ctl--lists td::after { content: attr(data-label); color: var(--ink); font-size: var(--step--1); }
+    .ctl--lists td .ctl__avg { order: 2; }
+    .ctl--lists td:has(.ctl__avg) { grid-column: 1 / -1; }
+    .ctl--lists td:has(.ctl__avg)::after { color: var(--ink-muted); }
+  }
+</style>

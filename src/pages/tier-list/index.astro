@@ -6,6 +6,7 @@ import TierBoard from '../../components/TierBoard.astro';
 import { getCollection } from 'astro:content';
 import { postImage } from '../../utils/post-images';
 import { TIERS, compareItems, snapshotItems, snapshotUpdated, snapshotVotes, voteCount } from '../../utils/votes';
+import { classTierRows, joinNames, classTiersCheckedLong } from '../../data/class-tier-lists';
 import '../../styles/tier-votes.css';
 
 // Ranked by player votes since October 31, 2026 (Cory's call): every build page ends with an S to D vote, and this
@@ -32,8 +33,8 @@ const ordered = [
 ];
 
 const breadcrumbItems = [{ name: 'Tier List', url: '/tier-list/' }];
-const title = 'Best Builds & Tier List - Division Resurgence';
-const description = 'Every Division Resurgence build ranked S to D by players. Open a build, give it your rank, and watch this tier list re-sort live.';
+const title = 'The Division Resurgence Tier List: Best Builds and Classes';
+const description = 'The Division Resurgence tier list: every build ranked S to D by players, plus the class and OS Protocol tier lists. Rank a build and watch it re-sort live.';
 const TIER_PUBLISHED = '2026-05-29';
 const RANKED_BY_PLAYERS = '2026-10-31T12:00:00.000Z';
 const lastVote = snapshotUpdated('build');
@@ -54,7 +55,16 @@ const itemListLd = {
   })),
 };
 
+// The class tier list lives on its own page; this page shows its result in one line.
+const classRows = classTierRows();
+const classTier = (t: string) => classRows.filter((r) => r.tier === t).map((r) => r.name);
+const classUnranked = classRows.filter((r) => r.tier === null).map((r) => r.name);
+
 const faqs = [
+  {
+    question: 'What is the best class in The Division Resurgence?',
+    answer: `Going by the published class tier lists, read on ${classTiersCheckedLong}: S tier is ${joinNames(classTier('S'))}, A tier is ${joinNames(classTier('A'))}, and ${joinNames(classUnranked)} is not ranked by any of them. The class tier list page shows each list, its date and the average.`,
+  },
   {
     question: 'How does the build tier list work?',
     answer: 'Players rank it. Every build guide ends with an S to D vote. Each vote is worth points (S 5, A 4, B 3, C 2, D 1), and a build\'s average sets its tier, so even one vote places it. The list re-sorts live as votes come in.',
@@ -85,8 +95,13 @@ const faqs = [
   <div class="container section">
     <Breadcrumbs items={breadcrumbItems} />
     <SectionTag label="Ranked by Players" />
-    <h1 class="heading-accent">Division Resurgence Build Tier List</h1>
-    <p class="tl-lede">You rank them. We count. Every build starts unranked, and the list moves live as votes come in.</p>
+    <h1 class="heading-accent">The Division Resurgence Tier List</h1>
+    <nav class="tl-tabs" aria-label="Tier lists">
+      <a href="/tier-list/" aria-current="page">Builds</a>
+      <a href="/tier-list/classes/">Classes</a>
+      <a href="/tier-list/os-protocols/">OS Protocols</a>
+    </nav>
+    <p class="tl-lede">Builds, ranked by players. You rank them, we count: every build starts unranked, and the list moves live as votes come in.</p>
 
     <p class="tlive tl-live" data-tv-live data-kind="build">
       <span class="tlive__on"><span class="tlive__dot" aria-hidden="true"></span><span data-tv-state>Live</span></span>
@@ -95,6 +110,14 @@ const faqs = [
       <span data-tv-ranked>{rankedCount} of {items.length} ranked</span>
       <span aria-hidden="true">·</span>
       <span data-tv-ago>loading the latest</span>
+    </p>
+
+    <p class="tl-classes">
+      <a href="/tier-list/classes/"><strong>Class tier list</strong></a>
+      {['S', 'A', 'B', 'C', 'D'].filter((t) => classTier(t).length > 0).map((t) => (
+        <span class="tl-classes__tier"><span class={`tier-chip tier-chip--${t.toLowerCase()}`}>{t}</span>{joinNames(classTier(t))}</span>
+      ))}
+      {classUnranked.length > 0 && <span class="tl-classes__tier tl-classes__tier--none">{joinNames(classUnranked)}: not ranked yet</span>}
     </p>
 
     <ol class="thow">
@@ -128,7 +151,7 @@ const faqs = [
       </div>
     </section>
 
-    <p class="tl-related">Next up: the <a href="/tier-list/os-protocols/">OS Protocol tier list</a>, also ranked by players, and the <a href="/builder/">Build Planner</a> to put your own build together.</p>
+    <p class="tl-related">Next up: the <a href="/tier-list/classes/">class tier list</a>, the <a href="/tier-list/os-protocols/">OS Protocol tier list</a>, also ranked by players, and the <a href="/builder/">Build Planner</a> to put your own build together.</p>
 
   </div>
 </BaseLayout>
@@ -136,6 +159,12 @@ const faqs = [
 <style>
   .tl-lede { margin: 0 0 var(--sp-3); font-size: var(--step-1); line-height: var(--lh-snug); color: var(--ink); max-width: var(--measure); }
   .tl-live { margin: 0 0 var(--sp-2); }
+  .tl-classes { display: flex; flex-wrap: wrap; align-items: center; gap: var(--sp-2) var(--sp-4); margin: var(--sp-4) 0; padding: var(--sp-3) var(--sp-4); border: 1px solid var(--border); border-radius: var(--radius-sm); background: var(--surface); font-size: var(--step--1); line-height: var(--lh-small); color: var(--ink); max-width: none; }
+  .tl-classes a { color: var(--accent); text-decoration: none; }
+  .tl-classes a:hover { text-decoration: underline; }
+  .tl-classes__tier { display: inline-flex; align-items: center; gap: var(--sp-2); }
+  .tl-classes__tier .tier-chip { width: 1.6rem; height: 1.6rem; font-size: var(--step--2); border-radius: 4px; flex: none; }
+  .tl-classes__tier--none { color: var(--ink-muted); }
   .tl-fine {
     margin: var(--sp-5) 0 var(--sp-8);
     border: 1px solid var(--border);

@@ -30,9 +30,9 @@ Brand new to the game? Our [beginner guide](/guides/division-resurgence-beginner
 
 ## What Is the Best Specialization in The Division Resurgence?
 
-There isn't one. There are five, and they're all good at something, which means one of them is perfect for how you specifically want to play and the other four will make you quietly furious every session.
+**Short answer: Vanguard.** It is the only class that every published tier list puts in S tier, and it is our pick too: Scanning Pulse shows enemies through walls, its mobility skills are the best in the game, and both its DPS and Support builds were top-tier when we tested them. The [class tier list](/tier-list/classes/) has all five classes side by side.
 
-The bad news: nobody is going to tell you which one is "best" because the correct answer is *it depends on you.* This guide breaks down each specialization to help you decide.
+The longer answer: there are five, and they're all good at something, which means one of them is perfect for how you specifically want to play and the other four will make you quietly furious every session. This guide breaks down each specialization to help you decide.
 
 Here's the short version. Skip to your playstyle.
 

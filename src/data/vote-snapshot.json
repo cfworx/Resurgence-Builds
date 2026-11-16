@@ -1,5 +1,295 @@
 {
-  "fetchedAt": null,
-  "build": { "items": {}, "votes": 0, "updated": null },
-  "os": { "items": {}, "votes": 0, "updated": null }
+  "fetchedAt": "2026-11-16T00:51:19.034Z",
+  "build": {
+    "items": {
+      "aegis-team-healer-tech-operator-build-tiktokandy": {
+        "s": 4,
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0,
+        "n": 4,
+        "avg": 5,
+        "tier": "S"
+      },
+      "bulwark-breacher-build-saiynergy": {
+        "s": 2,
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0,
+        "n": 2,
+        "avg": 5,
+        "tier": "S"
+      },
+      "four-shell-double-barrel-vanguard-build-ggreborn": {
+        "s": 1,
+        "a": 2,
+        "b": 0,
+        "c": 0,
+        "d": 0,
+        "n": 3,
+        "avg": 4.33,
+        "tier": "A"
+      },
+      "involuntary-nap-time-bulwark-juggernaut-build": {
+        "s": 2,
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0,
+        "n": 2,
+        "avg": 5,
+        "tier": "S"
+      },
+      "jackpot-striker-drone-tech-operator-build": {
+        "s": 3,
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0,
+        "n": 3,
+        "avg": 5,
+        "tier": "S"
+      },
+      "milkshake-machine-strawberry-milkshake-lmg-build": {
+        "s": 1,
+        "a": 0,
+        "b": 0,
+        "c": 1,
+        "d": 0,
+        "n": 2,
+        "avg": 3.5,
+        "tier": "A"
+      },
+      "muscular-nurse-combat-medicine-build-nadie": {
+        "s": 1,
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0,
+        "n": 1,
+        "avg": 5,
+        "tier": "S"
+      },
+      "perpetual-motion-never-reload-vanguard-commando-build": {
+        "s": 1,
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0,
+        "n": 1,
+        "avg": 5,
+        "tier": "S"
+      },
+      "super-spreader-scorpio-field-grenadier-build": {
+        "s": 0,
+        "a": 0,
+        "b": 2,
+        "c": 0,
+        "d": 0,
+        "n": 2,
+        "avg": 3,
+        "tier": "B"
+      },
+      "tactical-pharma-800k-dps-rank-1-global-build": {
+        "s": 1,
+        "a": 2,
+        "b": 0,
+        "c": 0,
+        "d": 0,
+        "n": 3,
+        "avg": 4.33,
+        "tier": "A"
+      },
+      "tactical-pharma-season-2-build-ggreborn": {
+        "s": 5,
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0,
+        "n": 5,
+        "avg": 5,
+        "tier": "S"
+      }
+    },
+    "votes": 28,
+    "updated": "2026-11-15T14:44:30.221Z"
+  },
+  "os": {
+    "items": {
+      "applied-demolition": {
+        "s": 0,
+        "a": 1,
+        "b": 0,
+        "c": 0,
+        "d": 0,
+        "n": 1,
+        "avg": 4,
+        "tier": "A"
+      },
+      "assault-charge": {
+        "s": 3,
+        "a": 0,
+        "b": 1,
+        "c": 0,
+        "d": 0,
+        "n": 4,
+        "avg": 4.5,
+        "tier": "S"
+      },
+      "augmented-lethality": {
+        "s": 0,
+        "a": 1,
+        "b": 0,
+        "c": 0,
+        "d": 0,
+        "n": 1,
+        "avg": 4,
+        "tier": "A"
+      },
+      "brains-over-brawn": {
+        "s": 4,
+        "a": 0,
+        "b": 1,
+        "c": 0,
+        "d": 0,
+        "n": 5,
+        "avg": 4.6,
+        "tier": "S"
+      },
+      "close-quarters-menace": {
+        "s": 4,
+        "a": 1,
+        "b": 0,
+        "c": 0,
+        "d": 0,
+        "n": 5,
+        "avg": 4.8,
+        "tier": "S"
+      },
+      "collateral-damage": {
+        "s": 2,
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0,
+        "n": 2,
+        "avg": 5,
+        "tier": "S"
+      },
+      "concerted-strike": {
+        "s": 0,
+        "a": 1,
+        "b": 0,
+        "c": 0,
+        "d": 0,
+        "n": 1,
+        "avg": 4,
+        "tier": "A"
+      },
+      "cover-shooter": {
+        "s": 1,
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0,
+        "n": 1,
+        "avg": 5,
+        "tier": "S"
+      },
+      "death-from-afar": {
+        "s": 1,
+        "a": 0,
+        "b": 1,
+        "c": 0,
+        "d": 0,
+        "n": 2,
+        "avg": 4,
+        "tier": "A"
+      },
+      "dominating-presence": {
+        "s": 0,
+        "a": 1,
+        "b": 0,
+        "c": 0,
+        "d": 0,
+        "n": 1,
+        "avg": 4,
+        "tier": "A"
+      },
+      "explosive-round": {
+        "s": 1,
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0,
+        "n": 1,
+        "avg": 5,
+        "tier": "S"
+      },
+      "happy-survival": {
+        "s": 0,
+        "a": 1,
+        "b": 0,
+        "c": 0,
+        "d": 0,
+        "n": 1,
+        "avg": 4,
+        "tier": "A"
+      },
+      "heavy-armor": {
+        "s": 0,
+        "a": 1,
+        "b": 0,
+        "c": 0,
+        "d": 0,
+        "n": 1,
+        "avg": 4,
+        "tier": "A"
+      },
+      "pressing-matter": {
+        "s": 1,
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0,
+        "n": 1,
+        "avg": 5,
+        "tier": "S"
+      },
+      "pummeling-shield": {
+        "s": 1,
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "d": 0,
+        "n": 1,
+        "avg": 5,
+        "tier": "S"
+      },
+      "surgical-engineering": {
+        "s": 3,
+        "a": 1,
+        "b": 0,
+        "c": 0,
+        "d": 0,
+        "n": 4,
+        "avg": 4.75,
+        "tier": "S"
+      },
+      "tactical-layering": {
+        "s": 1,
+        "a": 1,
+        "b": 0,
+        "c": 0,
+        "d": 0,
+        "n": 2,
+        "avg": 4.5,
+        "tier": "S"
+      }
+    },
+    "votes": 34,
+    "updated": "2026-11-15T23:53:54.479Z"
+  }
 }

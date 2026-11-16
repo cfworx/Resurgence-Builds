@@ -49,6 +49,7 @@ const PRIORITY_PATHS = [
   '/',
   '/builds/',
   '/tier-list/',
+  '/tier-list/classes/',
   '/tier-list/os-protocols/',
   '/database/os-protocols/',
   '/database/weapons/',

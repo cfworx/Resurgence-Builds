@@ -201,6 +201,10 @@ Update these when a source changes them (and only then):
   when an exotic is added or changed.
 - `src/content/guides/division-resurgence-codes.md`: on the **first run of each month**, re-check the official channels;
   if still no public codes, bump the month in the title and in "Active Codes: <Month Year>", and set `lastUpdated`.
+- `src/data/class-tier-lists.ts`: on the **first run of each month**, re-read the published class tier lists it names
+  (and look for new ones on the first page of results for "the division resurgence class tier list"). Update each list's
+  tiers and date, add or drop lists, and set `CLASS_TIERS_CHECKED` to that day. It feeds `/tier-list/classes/` and the
+  one-line summary on `/tier-list/`. A list that now ranks Tech Operator goes straight in.
 - Database JSON (`src/data/os-protocols.json`, `weapon-talents.json`, `skill-mod-combos.json`, notes files): when patch
   notes change a value, update it and add a `patchHistory` note where that file supports one. Keep "Last verified" stamps
   as they are (they mean in-game verification, which an automated run can't do). The same goes for `verifiedInGame` in
