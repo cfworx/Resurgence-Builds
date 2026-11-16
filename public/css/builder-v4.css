@@ -5,6 +5,23 @@
    Breakpoints: 35em (560px), 45em (720px), 60em (960px), 72em (1152px, the summary column moves beside the board).
    ============================================================ */
 
+/* Rajdhani for the game-style headings and numbers, self-hosted (Latin subset, SIL Open Font License) so the
+   planner no longer waits on a stylesheet from Google before its first paint. */
+@font-face {
+  font-family: 'Rajdhani';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('/fonts/rajdhani-600.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Rajdhani';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/rajdhani-700.woff2') format('woff2');
+}
+
 :root {
   --pl-bg: #0E0F12;
   --pl-panel: #15171B;
