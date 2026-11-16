@@ -43,8 +43,10 @@
 # =============================================================================
 # Machine-Readable Files: short cache for freshness
 # =============================================================================
+# Five minutes: Cloudflare keeps robots.txt at its edge and a deploy does not clear that copy,
+# so a day-long lifetime meant a robots.txt change took up to 24 hours to reach every location.
 /robots.txt
-  Cache-Control: public, max-age=86400
+  Cache-Control: public, max-age=300
 
 /sitemap-index.xml
   Cache-Control: public, max-age=900, s-maxage=3600

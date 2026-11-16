@@ -75,6 +75,8 @@ git push
 
 Cloudflare Pages will automatically build and deploy within ~30 seconds.
 
+After a deploy that changes `public/robots.txt`, check that the live file is the new one: `curl -s https://resurgencebuilds.com/robots.txt | sha1sum` must equal `sha1sum < public/robots.txt`. Cloudflare may serve its cached copy for up to five minutes; if it still differs after that, purge `https://resurgencebuilds.com/robots.txt` in the Cloudflare dashboard (Caching, Purge Cache, Custom Purge).
+
 ### If you prefer GitHub's web interface:
 
 1. Go to the repository on GitHub.com
