@@ -66,6 +66,10 @@ Ubisoft's Instagram (`@thedivmobile`), TikTok (`@thedivmobile`) and the TDResurg
 tools. Don't try to get around that; if WebSearch surfaces a post from them, treat it like an X post found by search.
 
 Notes:
+- `NODE_USE_ENV_PROXY=1 node scripts/pull-official-feed.mjs` (also a step of `npm run build`) copies the newest posts
+  from Ubisoft's Steam announcements feed into `src/data/official-feed.json`, which feeds the "Ubisoft's latest posts"
+  box on `/patch-notes/`. If the run leaves that file changed, Ubisoft has posted something new: read it, cover it if it
+  is post-worthy, and commit the file with the run either way.
 - Season patch notes have appeared in the Help Center (most phases), on Steam, and on the official subreddit
   (Season 2 Phase 1 was only on Reddit; it's mirrored on The Division Wiki at
   `https://thedivision.fandom.com/wiki/Season_2_Phase_1_-_Patch_Notes`). Smaller hotfix notes have been posted on the
@@ -283,3 +287,13 @@ End every run with a short summary for the owner (it goes to their phone, so kee
    anything worth checking in game, and active sources that look like they've gone quiet or new ones worth adding.
 
 Then one line: how many sources you checked out of how many.
+
+## 9. Waiting for the owner's OK: the official-feed watcher
+
+Not installed. The idea: a GitHub Action that runs `scripts/pull-official-feed.mjs` every 30 minutes and commits
+`src/data/official-feed.json` when Ubisoft has posted, so the site republishes within the hour instead of at the next
+daily run. It commits to `main` by itself, which is why it needs Cory's yes first (asked November 16, 2026). If he
+agrees, the workflow is: a schedule (`7,37 * * * *`) plus manual start, `permissions: contents: write`, check out
+`main`, Node 22, run the script, and when `git diff --quiet -- src/data/official-feed.json` reports a change, commit it
+as github-actions[bot] with the newest post's title and push. No commit when nothing changed, so no extra deploys.
+

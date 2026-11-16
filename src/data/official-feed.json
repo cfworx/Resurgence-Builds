@@ -1,0 +1,46 @@
+{
+  "_about": "Ubisoft's newest announcements for the game, copied from the official Steam announcements feed by scripts/pull-official-feed.mjs (titles, dates and links only). Do not edit by hand: the build rewrites it.",
+  "source": "https://steamcommunity.com/games/3749720/announcements/",
+  "items": [
+    {
+      "title": "The Baron’s Pride & Derelict Store",
+      "url": "https://steamcommunity.com/games/3749720/announcements/detail/693151734943449446",
+      "date": "2026-11-13T17:00:05.000Z"
+    },
+    {
+      "title": "Lethal Stinger Lichen & New Speedrun Challenge",
+      "url": "https://steamcommunity.com/games/3749720/announcements/detail/693149194510140788",
+      "date": "2026-10-19T16:00:38.000Z"
+    },
+    {
+      "title": "Save 40% on this exclusive Starter Pack for a limited time only!",
+      "url": "https://steamcommunity.com/games/3749720/announcements/detail/674006359399727502",
+      "date": "2026-09-18T08:59:14.000Z"
+    },
+    {
+      "title": "Victory Favors the Prepared",
+      "url": "https://steamcommunity.com/games/3749720/announcements/detail/687516524528797095",
+      "date": "2026-09-16T16:00:34.000Z"
+    },
+    {
+      "title": "Season 2 Phase 2 - PATCH NOTES",
+      "url": "https://steamcommunity.com/games/3749720/announcements/detail/687516524528797093",
+      "date": "2026-09-15T07:21:56.000Z"
+    },
+    {
+      "title": "Weekend event - Speedrun the mission \"A New Enemy\" for extra rewards",
+      "url": "https://steamcommunity.com/games/3749720/announcements/detail/688641789988439205",
+      "date": "2026-09-04T14:00:46.000Z"
+    },
+    {
+      "title": "BIGHORN Special weekend event!",
+      "url": "https://steamcommunity.com/games/3749720/announcements/detail/688641156126343524",
+      "date": "2026-08-27T16:10:33.000Z"
+    },
+    {
+      "title": "Paratroopers storm the Castle in Division Resurgence",
+      "url": "https://steamcommunity.com/games/3749720/announcements/detail/688639887345189148",
+      "date": "2026-08-21T15:00:42.000Z"
+    }
+  ]
+}

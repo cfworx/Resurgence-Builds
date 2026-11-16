@@ -1,0 +1,47 @@
+---
+// "Ubisoft's latest posts": the newest official announcements for the game, straight from Ubisoft's Steam
+// announcements feed (src/data/official-feed.json, rewritten by scripts/pull-official-feed.mjs at every build).
+// Titles, dates and links only. Titles are plain text.
+import feed from '../data/official-feed.json';
+
+interface Props { limit?: number }
+const { limit = 5 } = Astro.props;
+const items = (feed.items || []).slice(0, limit);
+const day = (iso: string) => new Date(iso).toLocaleDateString('en-US', { timeZone: 'UTC', month: 'short', day: 'numeric', year: 'numeric' });
+---
+
+{items.length > 0 && (
+  <section class="ofeed" aria-labelledby="ofeed-title">
+    <h2 id="ofeed-title" class="ofeed__title">Ubisoft's latest posts</h2>
+    <ul class="ofeed__list">
+      {items.map((item) => (
+        <li>
+          <time datetime={item.date.slice(0, 10)}>{day(item.date)}</time>
+          <a href={item.url} target="_blank" rel="noopener noreferrer">{item.title}</a>
+        </li>
+      ))}
+    </ul>
+    <p class="ofeed__foot">
+      Straight from <a href={feed.source} target="_blank" rel="noopener noreferrer">Ubisoft's announcements on Steam</a>,
+      refreshed every time the site is published. Our own breakdowns follow in the <a href="/news/">news</a>.
+    </p>
+  </section>
+)}
+
+<style>
+  .ofeed {
+    padding: var(--sp-5) var(--sp-6);
+    background: var(--surface); border: 1px solid var(--border); border-radius: var(--border-radius);
+  }
+  .ofeed__title { margin: 0 0 var(--sp-4); font-size: var(--text-xl); }
+  .ofeed__list { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--sp-3); }
+  .ofeed__list li { display: grid; grid-template-columns: 6.5rem minmax(0, 1fr); gap: var(--sp-3); line-height: var(--lh-small); max-width: none; }
+  .ofeed__list time { font-family: var(--font-mono); font-size: var(--text-xs); color: var(--ink-muted); padding-top: 0.2em; white-space: nowrap; }
+  .ofeed__list a, .ofeed__foot a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
+  .ofeed__list a { padding-block: 4px; margin-block: -4px; overflow-wrap: anywhere; }
+  .ofeed__foot { margin: var(--sp-4) 0 0; font-size: var(--text-sm); color: var(--ink-muted); max-width: none; }
+  @media (max-width: 44.99em) {
+    .ofeed { padding: var(--sp-4); }
+    .ofeed__list li { grid-template-columns: 1fr; gap: 2px; }
+  }
+</style>
