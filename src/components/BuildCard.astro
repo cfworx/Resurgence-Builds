@@ -39,8 +39,8 @@ const getSpecClass = (spec: string) => {
 <article class={`card ${featuredImage ? 'card--has-image' : ''}`} style="position: relative;">
 
     {featuredImage && (
-      <div class={`build-card__image${wide ? ' build-card__image--wide' : ''}`} data-bg={img?.small || featuredImage}>
-        <div class="build-card__image-blur"></div>
+      <div class={`build-card__image${wide ? ' build-card__image--wide' : ''}`} data-bg={wide ? img?.small : undefined}>
+        {wide && <div class="build-card__image-blur"></div>}
         <img
           src={featuredImage}
           srcset={srcsetAttr(img)}

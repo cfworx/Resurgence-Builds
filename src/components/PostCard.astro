@@ -47,8 +47,8 @@ const creator = (author.match(/via\s+([^)]+)\)?\s*$/) || [])[1]?.trim();
 
 <article class={`card post-card ${featuredImage ? 'post-card--has-image' : ''}`} data-type={type} data-tags={JSON.stringify(tags)} style={startHidden ? 'position: relative; display: none;' : 'position: relative;'}>
     {featuredImage && (
-      <div class={`post-card__image${wide ? ' post-card__image--wide' : ''}`} data-bg={img?.small || featuredImage}>
-        <div class="post-card__image-blur"></div>
+      <div class={`post-card__image${wide ? ' post-card__image--wide' : ''}`} data-bg={wide ? img?.small : undefined}>
+        {wide && <div class="post-card__image-blur"></div>}
         <img
           src={featuredImage}
           srcset={srcsetAttr(img)}
