@@ -21,7 +21,8 @@ const { title, href, specialization, playstyle, description, patch, pve, pvp, ta
 // Sized copies of in-game images (scripts/build-post-images.mjs). Wide loadout screenshots are shown
 // whole (contain) over the blurred copy instead of being cropped to the card's 16:9 frame.
 const img = postImage(featuredImage);
-const wide = img ? img.width / img.height > 1.95 : false;
+// Older images without a master (`legacy`) stay cropped to 16:9, as they were before they had copies.
+const wide = img && !img.legacy ? img.width / img.height > 1.95 : false;
 
 const getSpecClass = (spec: string) => {
   switch (spec) {

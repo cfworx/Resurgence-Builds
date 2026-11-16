@@ -1,4 +1,46 @@
 {
+ "/images/builds/aegis-chad-tech-operator-build-ifozzy-hero.webp": {
+  "width": 1200,
+  "height": 630,
+  "srcset": [
+   [
+    480,
+    "/images/builds/aegis-chad-tech-operator-build-ifozzy-hero-480.webp"
+   ],
+   [
+    800,
+    "/images/builds/aegis-chad-tech-operator-build-ifozzy-hero-800.webp"
+   ],
+   [
+    1200,
+    "/images/builds/aegis-chad-tech-operator-build-ifozzy-hero.webp"
+   ]
+  ],
+  "small": "/images/builds/aegis-chad-tech-operator-build-ifozzy-hero-480.webp",
+  "thumb": "/images/builds/aegis-chad-tech-operator-build-ifozzy-hero-thumb.webp",
+  "legacy": true
+ },
+ "/images/builds/bulwark-breacher-build-saiynergy-hero.jpg": {
+  "width": 1200,
+  "height": 549,
+  "srcset": [
+   [
+    480,
+    "/images/builds/bulwark-breacher-build-saiynergy-hero-480.webp"
+   ],
+   [
+    800,
+    "/images/builds/bulwark-breacher-build-saiynergy-hero-800.webp"
+   ],
+   [
+    1200,
+    "/images/builds/bulwark-breacher-build-saiynergy-hero-1200.webp"
+   ]
+  ],
+  "small": "/images/builds/bulwark-breacher-build-saiynergy-hero-480.webp",
+  "thumb": "/images/builds/bulwark-breacher-build-saiynergy-hero-thumb.webp",
+  "legacy": true
+ },
  "/images/builds/division-resurgence-aegis-team-healer-tech-operator-build-tiktokandy-loadout-1200.webp": {
   "width": 1200,
   "height": 581,
@@ -20,7 +62,8 @@
     "/images/builds/division-resurgence-aegis-team-healer-tech-operator-build-tiktokandy-loadout-1600.webp"
    ]
   ],
-  "small": "/images/builds/division-resurgence-aegis-team-healer-tech-operator-build-tiktokandy-loadout-480.webp"
+  "small": "/images/builds/division-resurgence-aegis-team-healer-tech-operator-build-tiktokandy-loadout-480.webp",
+  "thumb": "/images/builds/division-resurgence-aegis-team-healer-tech-operator-build-tiktokandy-loadout-thumb.webp"
  },
  "/images/builds/division-resurgence-any-weapon-commando-beginner-vanguard-build-tiktokandy-loadout-1200.webp": {
   "width": 1200,
@@ -43,7 +86,8 @@
     "/images/builds/division-resurgence-any-weapon-commando-beginner-vanguard-build-tiktokandy-loadout-1600.webp"
    ]
   ],
-  "small": "/images/builds/division-resurgence-any-weapon-commando-beginner-vanguard-build-tiktokandy-loadout-480.webp"
+  "small": "/images/builds/division-resurgence-any-weapon-commando-beginner-vanguard-build-tiktokandy-loadout-480.webp",
+  "thumb": "/images/builds/division-resurgence-any-weapon-commando-beginner-vanguard-build-tiktokandy-loadout-thumb.webp"
  },
  "/images/builds/division-resurgence-four-shell-double-barrel-vanguard-build-ggreborn-loadout-1200.webp": {
   "width": 1200,
@@ -66,7 +110,8 @@
     "/images/builds/division-resurgence-four-shell-double-barrel-vanguard-build-ggreborn-loadout-1600.webp"
    ]
   ],
-  "small": "/images/builds/division-resurgence-four-shell-double-barrel-vanguard-build-ggreborn-loadout-480.webp"
+  "small": "/images/builds/division-resurgence-four-shell-double-barrel-vanguard-build-ggreborn-loadout-480.webp",
+  "thumb": "/images/builds/division-resurgence-four-shell-double-barrel-vanguard-build-ggreborn-loadout-thumb.webp"
  },
  "/images/builds/division-resurgence-lightweight-m4-commando-vanguard-build-tiktokandy-loadout-1200.webp": {
   "width": 1200,
@@ -89,7 +134,8 @@
     "/images/builds/division-resurgence-lightweight-m4-commando-vanguard-build-tiktokandy-loadout-1600.webp"
    ]
   ],
-  "small": "/images/builds/division-resurgence-lightweight-m4-commando-vanguard-build-tiktokandy-loadout-480.webp"
+  "small": "/images/builds/division-resurgence-lightweight-m4-commando-vanguard-build-tiktokandy-loadout-480.webp",
+  "thumb": "/images/builds/division-resurgence-lightweight-m4-commando-vanguard-build-tiktokandy-loadout-thumb.webp"
  },
  "/images/builds/division-resurgence-malpractice-no-heal-field-medic-clinic-team-1200.webp": {
   "width": 1200,
@@ -112,7 +158,8 @@
     "/images/builds/division-resurgence-malpractice-no-heal-field-medic-clinic-team-1600.webp"
    ]
   ],
-  "small": "/images/builds/division-resurgence-malpractice-no-heal-field-medic-clinic-team-480.webp"
+  "small": "/images/builds/division-resurgence-malpractice-no-heal-field-medic-clinic-team-480.webp",
+  "thumb": "/images/builds/division-resurgence-malpractice-no-heal-field-medic-clinic-team-thumb.webp"
  },
  "/images/builds/division-resurgence-milkshake-machine-strawberry-milkshake-card-1200.webp": {
   "width": 1200,
@@ -135,7 +182,8 @@
     "/images/builds/division-resurgence-milkshake-machine-strawberry-milkshake-card-1600.webp"
    ]
   ],
-  "small": "/images/builds/division-resurgence-milkshake-machine-strawberry-milkshake-card-480.webp"
+  "small": "/images/builds/division-resurgence-milkshake-machine-strawberry-milkshake-card-480.webp",
+  "thumb": "/images/builds/division-resurgence-milkshake-machine-strawberry-milkshake-card-thumb.webp"
  },
  "/images/builds/division-resurgence-misdirection-double-barrel-commando-build-street-fight-1200.webp": {
   "width": 1200,
@@ -158,7 +206,8 @@
     "/images/builds/division-resurgence-misdirection-double-barrel-commando-build-street-fight-1600.webp"
    ]
   ],
-  "small": "/images/builds/division-resurgence-misdirection-double-barrel-commando-build-street-fight-480.webp"
+  "small": "/images/builds/division-resurgence-misdirection-double-barrel-commando-build-street-fight-480.webp",
+  "thumb": "/images/builds/division-resurgence-misdirection-double-barrel-commando-build-street-fight-thumb.webp"
  },
  "/images/builds/division-resurgence-noise-complaint-demolitionist-build-stay-calm-sign-1200.webp": {
   "width": 1200,
@@ -181,7 +230,8 @@
     "/images/builds/division-resurgence-noise-complaint-demolitionist-build-stay-calm-sign-1600.webp"
    ]
   ],
-  "small": "/images/builds/division-resurgence-noise-complaint-demolitionist-build-stay-calm-sign-480.webp"
+  "small": "/images/builds/division-resurgence-noise-complaint-demolitionist-build-stay-calm-sign-480.webp",
+  "thumb": "/images/builds/division-resurgence-noise-complaint-demolitionist-build-stay-calm-sign-thumb.webp"
  },
  "/images/builds/division-resurgence-perpetual-motion-commando-firefight-1200.webp": {
   "width": 1200,
@@ -204,7 +254,8 @@
     "/images/builds/division-resurgence-perpetual-motion-commando-firefight-1600.webp"
    ]
   ],
-  "small": "/images/builds/division-resurgence-perpetual-motion-commando-firefight-480.webp"
+  "small": "/images/builds/division-resurgence-perpetual-motion-commando-firefight-480.webp",
+  "thumb": "/images/builds/division-resurgence-perpetual-motion-commando-firefight-thumb.webp"
  },
  "/images/builds/division-resurgence-super-spreader-n95-agent-lab-1200.webp": {
   "width": 1200,
@@ -227,7 +278,8 @@
     "/images/builds/division-resurgence-super-spreader-n95-agent-lab-1600.webp"
    ]
   ],
-  "small": "/images/builds/division-resurgence-super-spreader-n95-agent-lab-480.webp"
+  "small": "/images/builds/division-resurgence-super-spreader-n95-agent-lab-480.webp",
+  "thumb": "/images/builds/division-resurgence-super-spreader-n95-agent-lab-thumb.webp"
  },
  "/images/builds/division-resurgence-tactical-pharma-season-2-build-ggreborn-loadout-1200.webp": {
   "width": 1200,
@@ -250,7 +302,260 @@
     "/images/builds/division-resurgence-tactical-pharma-season-2-build-ggreborn-loadout-1600.webp"
    ]
   ],
-  "small": "/images/builds/division-resurgence-tactical-pharma-season-2-build-ggreborn-loadout-480.webp"
+  "small": "/images/builds/division-resurgence-tactical-pharma-season-2-build-ggreborn-loadout-480.webp",
+  "thumb": "/images/builds/division-resurgence-tactical-pharma-season-2-build-ggreborn-loadout-thumb.webp"
+ },
+ "/images/builds/involuntary-nap-time-bulwark-juggernaut-build.webp": {
+  "width": 1200,
+  "height": 552,
+  "srcset": [
+   [
+    480,
+    "/images/builds/involuntary-nap-time-bulwark-juggernaut-build-480.webp"
+   ],
+   [
+    800,
+    "/images/builds/involuntary-nap-time-bulwark-juggernaut-build-800.webp"
+   ],
+   [
+    1200,
+    "/images/builds/involuntary-nap-time-bulwark-juggernaut-build.webp"
+   ]
+  ],
+  "small": "/images/builds/involuntary-nap-time-bulwark-juggernaut-build-480.webp",
+  "thumb": "/images/builds/involuntary-nap-time-bulwark-juggernaut-build-thumb.webp",
+  "legacy": true
+ },
+ "/images/builds/jackpot-striker-drone-hero.webp": {
+  "width": 1200,
+  "height": 634,
+  "srcset": [
+   [
+    480,
+    "/images/builds/jackpot-striker-drone-hero-480.webp"
+   ],
+   [
+    800,
+    "/images/builds/jackpot-striker-drone-hero-800.webp"
+   ],
+   [
+    1200,
+    "/images/builds/jackpot-striker-drone-hero.webp"
+   ]
+  ],
+  "small": "/images/builds/jackpot-striker-drone-hero-480.webp",
+  "thumb": "/images/builds/jackpot-striker-drone-hero-thumb.webp",
+  "legacy": true
+ },
+ "/images/builds/muscular-nurse-combat-medicine-build-nadie-hero.webp": {
+  "width": 1200,
+  "height": 630,
+  "srcset": [
+   [
+    480,
+    "/images/builds/muscular-nurse-combat-medicine-build-nadie-hero-480.webp"
+   ],
+   [
+    800,
+    "/images/builds/muscular-nurse-combat-medicine-build-nadie-hero-800.webp"
+   ],
+   [
+    1200,
+    "/images/builds/muscular-nurse-combat-medicine-build-nadie-hero.webp"
+   ]
+  ],
+  "small": "/images/builds/muscular-nurse-combat-medicine-build-nadie-hero-480.webp",
+  "thumb": "/images/builds/muscular-nurse-combat-medicine-build-nadie-hero-thumb.webp",
+  "legacy": true
+ },
+ "/images/builds/tech-aegis-engineering-build-tampishach-hero.jpg": {
+  "width": 1200,
+  "height": 574,
+  "srcset": [
+   [
+    480,
+    "/images/builds/tech-aegis-engineering-build-tampishach-hero-480.webp"
+   ],
+   [
+    800,
+    "/images/builds/tech-aegis-engineering-build-tampishach-hero-800.webp"
+   ],
+   [
+    1200,
+    "/images/builds/tech-aegis-engineering-build-tampishach-hero-1200.webp"
+   ]
+  ],
+  "small": "/images/builds/tech-aegis-engineering-build-tampishach-hero-480.webp",
+  "thumb": "/images/builds/tech-aegis-engineering-build-tampishach-hero-thumb.webp",
+  "legacy": true
+ },
+ "/images/division-resurgence-center-ads-cover-peek-guide-hero.png": {
+  "width": 1200,
+  "height": 630,
+  "srcset": [
+   [
+    480,
+    "/images/division-resurgence-center-ads-cover-peek-guide-hero-480.webp"
+   ],
+   [
+    800,
+    "/images/division-resurgence-center-ads-cover-peek-guide-hero-800.webp"
+   ],
+   [
+    1200,
+    "/images/division-resurgence-center-ads-cover-peek-guide-hero-1200.webp"
+   ]
+  ],
+  "small": "/images/division-resurgence-center-ads-cover-peek-guide-hero-480.webp",
+  "thumb": "/images/division-resurgence-center-ads-cover-peek-guide-hero-thumb.webp",
+  "legacy": true
+ },
+ "/images/division-resurgence-damage-types-color-bar.png": {
+  "width": 1200,
+  "height": 486,
+  "srcset": [
+   [
+    480,
+    "/images/division-resurgence-damage-types-color-bar-480.webp"
+   ],
+   [
+    800,
+    "/images/division-resurgence-damage-types-color-bar-800.webp"
+   ],
+   [
+    1200,
+    "/images/division-resurgence-damage-types-color-bar-1200.webp"
+   ]
+  ],
+  "small": "/images/division-resurgence-damage-types-color-bar-480.webp",
+  "thumb": "/images/division-resurgence-damage-types-color-bar-thumb.webp",
+  "legacy": true
+ },
+ "/images/division-resurgence-demolitionist-glass-cannon-build-pveenjoyer.webp": {
+  "width": 1200,
+  "height": 571,
+  "srcset": [
+   [
+    480,
+    "/images/division-resurgence-demolitionist-glass-cannon-build-pveenjoyer-480.webp"
+   ],
+   [
+    800,
+    "/images/division-resurgence-demolitionist-glass-cannon-build-pveenjoyer-800.webp"
+   ],
+   [
+    1200,
+    "/images/division-resurgence-demolitionist-glass-cannon-build-pveenjoyer.webp"
+   ]
+  ],
+  "small": "/images/division-resurgence-demolitionist-glass-cannon-build-pveenjoyer-480.webp",
+  "thumb": "/images/division-resurgence-demolitionist-glass-cannon-build-pveenjoyer-thumb.webp",
+  "legacy": true
+ },
+ "/images/division-resurgence-hidden-mechanics-guide.jpg": {
+  "width": 1200,
+  "height": 634,
+  "srcset": [
+   [
+    480,
+    "/images/division-resurgence-hidden-mechanics-guide-480.webp"
+   ],
+   [
+    800,
+    "/images/division-resurgence-hidden-mechanics-guide-800.webp"
+   ],
+   [
+    1200,
+    "/images/division-resurgence-hidden-mechanics-guide-1200.webp"
+   ]
+  ],
+  "small": "/images/division-resurgence-hidden-mechanics-guide-480.webp",
+  "thumb": "/images/division-resurgence-hidden-mechanics-guide-thumb.webp",
+  "legacy": true
+ },
+ "/images/division-resurgence-tactical-pharma-800k-dps-field-medic-build.png": {
+  "width": 1200,
+  "height": 630,
+  "srcset": [
+   [
+    480,
+    "/images/division-resurgence-tactical-pharma-800k-dps-field-medic-build-480.webp"
+   ],
+   [
+    800,
+    "/images/division-resurgence-tactical-pharma-800k-dps-field-medic-build-800.webp"
+   ],
+   [
+    1200,
+    "/images/division-resurgence-tactical-pharma-800k-dps-field-medic-build-1200.webp"
+   ]
+  ],
+  "small": "/images/division-resurgence-tactical-pharma-800k-dps-field-medic-build-480.webp",
+  "thumb": "/images/division-resurgence-tactical-pharma-800k-dps-field-medic-build-thumb.webp",
+  "legacy": true
+ },
+ "/images/division-resurgence-vanguard-scout-build.png": {
+  "width": 1200,
+  "height": 569,
+  "srcset": [
+   [
+    480,
+    "/images/division-resurgence-vanguard-scout-build-480.webp"
+   ],
+   [
+    800,
+    "/images/division-resurgence-vanguard-scout-build-800.webp"
+   ],
+   [
+    1200,
+    "/images/division-resurgence-vanguard-scout-build-1200.webp"
+   ]
+  ],
+  "small": "/images/division-resurgence-vanguard-scout-build-480.webp",
+  "thumb": "/images/division-resurgence-vanguard-scout-build-thumb.webp",
+  "legacy": true
+ },
+ "/images/division-resurgence-which-specialization-to-pick-guide.jpg": {
+  "width": 1200,
+  "height": 634,
+  "srcset": [
+   [
+    480,
+    "/images/division-resurgence-which-specialization-to-pick-guide-480.webp"
+   ],
+   [
+    800,
+    "/images/division-resurgence-which-specialization-to-pick-guide-800.webp"
+   ],
+   [
+    1200,
+    "/images/division-resurgence-which-specialization-to-pick-guide-1200.webp"
+   ]
+  ],
+  "small": "/images/division-resurgence-which-specialization-to-pick-guide-480.webp",
+  "thumb": "/images/division-resurgence-which-specialization-to-pick-guide-thumb.webp",
+  "legacy": true
+ },
+ "/images/guides/division-resurgence-account-server-guide-hero.webp": {
+  "width": 1200,
+  "height": 634,
+  "srcset": [
+   [
+    480,
+    "/images/guides/division-resurgence-account-server-guide-hero-480.webp"
+   ],
+   [
+    800,
+    "/images/guides/division-resurgence-account-server-guide-hero-800.webp"
+   ],
+   [
+    1200,
+    "/images/guides/division-resurgence-account-server-guide-hero.webp"
+   ]
+  ],
+  "small": "/images/guides/division-resurgence-account-server-guide-hero-480.webp",
+  "thumb": "/images/guides/division-resurgence-account-server-guide-hero-thumb.webp",
+  "legacy": true
  },
  "/images/guides/division-resurgence-beginner-guide-new-york-street-1200.webp": {
   "width": 1200,
@@ -273,7 +578,8 @@
     "/images/guides/division-resurgence-beginner-guide-new-york-street-1600.webp"
    ]
   ],
-  "small": "/images/guides/division-resurgence-beginner-guide-new-york-street-480.webp"
+  "small": "/images/guides/division-resurgence-beginner-guide-new-york-street-480.webp",
+  "thumb": "/images/guides/division-resurgence-beginner-guide-new-york-street-thumb.webp"
  },
  "/images/guides/division-resurgence-best-pve-dps-builds-damage-numbers-1200.webp": {
   "width": 1200,
@@ -296,7 +602,50 @@
     "/images/guides/division-resurgence-best-pve-dps-builds-damage-numbers-1600.webp"
    ]
   ],
-  "small": "/images/guides/division-resurgence-best-pve-dps-builds-damage-numbers-480.webp"
+  "small": "/images/guides/division-resurgence-best-pve-dps-builds-damage-numbers-480.webp",
+  "thumb": "/images/guides/division-resurgence-best-pve-dps-builds-damage-numbers-thumb.webp"
+ },
+ "/images/guides/division-resurgence-clan-guide-hero.webp": {
+  "width": 1200,
+  "height": 634,
+  "srcset": [
+   [
+    480,
+    "/images/guides/division-resurgence-clan-guide-hero-480.webp"
+   ],
+   [
+    800,
+    "/images/guides/division-resurgence-clan-guide-hero-800.webp"
+   ],
+   [
+    1200,
+    "/images/guides/division-resurgence-clan-guide-hero.webp"
+   ]
+  ],
+  "small": "/images/guides/division-resurgence-clan-guide-hero-480.webp",
+  "thumb": "/images/guides/division-resurgence-clan-guide-hero-thumb.webp",
+  "legacy": true
+ },
+ "/images/guides/division-resurgence-codes-redeem-guide-hero.jpg": {
+  "width": 1200,
+  "height": 630,
+  "srcset": [
+   [
+    480,
+    "/images/guides/division-resurgence-codes-redeem-guide-hero-480.webp"
+   ],
+   [
+    800,
+    "/images/guides/division-resurgence-codes-redeem-guide-hero-800.webp"
+   ],
+   [
+    1200,
+    "/images/guides/division-resurgence-codes-redeem-guide-hero-1200.webp"
+   ]
+  ],
+  "small": "/images/guides/division-resurgence-codes-redeem-guide-hero-480.webp",
+  "thumb": "/images/guides/division-resurgence-codes-redeem-guide-hero-thumb.webp",
+  "legacy": true
  },
  "/images/guides/division-resurgence-controller-guide-gamesir-1200.webp": {
   "width": 1200,
@@ -319,7 +668,8 @@
     "/images/guides/division-resurgence-controller-guide-gamesir-1600.webp"
    ]
   ],
-  "small": "/images/guides/division-resurgence-controller-guide-gamesir-480.webp"
+  "small": "/images/guides/division-resurgence-controller-guide-gamesir-480.webp",
+  "thumb": "/images/guides/division-resurgence-controller-guide-gamesir-thumb.webp"
  },
  "/images/guides/division-resurgence-dark-zone-guide-base-of-operations-map-1200.webp": {
   "width": 1200,
@@ -342,7 +692,29 @@
     "/images/guides/division-resurgence-dark-zone-guide-base-of-operations-map-1600.webp"
    ]
   ],
-  "small": "/images/guides/division-resurgence-dark-zone-guide-base-of-operations-map-480.webp"
+  "small": "/images/guides/division-resurgence-dark-zone-guide-base-of-operations-map-480.webp",
+  "thumb": "/images/guides/division-resurgence-dark-zone-guide-base-of-operations-map-thumb.webp"
+ },
+ "/images/guides/division-resurgence-device-compatibility-guide-hero.jpg": {
+  "width": 1200,
+  "height": 630,
+  "srcset": [
+   [
+    480,
+    "/images/guides/division-resurgence-device-compatibility-guide-hero-480.webp"
+   ],
+   [
+    800,
+    "/images/guides/division-resurgence-device-compatibility-guide-hero-800.webp"
+   ],
+   [
+    1200,
+    "/images/guides/division-resurgence-device-compatibility-guide-hero-1200.webp"
+   ]
+  ],
+  "small": "/images/guides/division-resurgence-device-compatibility-guide-hero-480.webp",
+  "thumb": "/images/guides/division-resurgence-device-compatibility-guide-hero-thumb.webp",
+  "legacy": true
  },
  "/images/guides/division-resurgence-endgame-tips-patrol-schedules-1200.webp": {
   "width": 1200,
@@ -365,7 +737,8 @@
     "/images/guides/division-resurgence-endgame-tips-patrol-schedules-1600.webp"
    ]
   ],
-  "small": "/images/guides/division-resurgence-endgame-tips-patrol-schedules-480.webp"
+  "small": "/images/guides/division-resurgence-endgame-tips-patrol-schedules-480.webp",
+  "thumb": "/images/guides/division-resurgence-endgame-tips-patrol-schedules-thumb.webp"
  },
  "/images/guides/division-resurgence-error-271581191-tech-lab-1200.webp": {
   "width": 1200,
@@ -388,7 +761,8 @@
     "/images/guides/division-resurgence-error-271581191-tech-lab-1600.webp"
    ]
   ],
-  "small": "/images/guides/division-resurgence-error-271581191-tech-lab-480.webp"
+  "small": "/images/guides/division-resurgence-error-271581191-tech-lab-480.webp",
+  "thumb": "/images/guides/division-resurgence-error-271581191-tech-lab-thumb.webp"
  },
  "/images/guides/division-resurgence-error-6000010-times-square-1200.webp": {
   "width": 1200,
@@ -411,7 +785,29 @@
     "/images/guides/division-resurgence-error-6000010-times-square-1600.webp"
    ]
   ],
-  "small": "/images/guides/division-resurgence-error-6000010-times-square-480.webp"
+  "small": "/images/guides/division-resurgence-error-6000010-times-square-480.webp",
+  "thumb": "/images/guides/division-resurgence-error-6000010-times-square-thumb.webp"
+ },
+ "/images/guides/division-resurgence-error-codes-fix-guide-hero.jpg": {
+  "width": 1200,
+  "height": 630,
+  "srcset": [
+   [
+    480,
+    "/images/guides/division-resurgence-error-codes-fix-guide-hero-480.webp"
+   ],
+   [
+    800,
+    "/images/guides/division-resurgence-error-codes-fix-guide-hero-800.webp"
+   ],
+   [
+    1200,
+    "/images/guides/division-resurgence-error-codes-fix-guide-hero-1200.webp"
+   ]
+  ],
+  "small": "/images/guides/division-resurgence-error-codes-fix-guide-hero-480.webp",
+  "thumb": "/images/guides/division-resurgence-error-codes-fix-guide-hero-thumb.webp",
+  "legacy": true
  },
  "/images/guides/division-resurgence-exotic-sealed-caches-armory-exotics-1200.webp": {
   "width": 1200,
@@ -434,7 +830,29 @@
     "/images/guides/division-resurgence-exotic-sealed-caches-armory-exotics-1600.webp"
    ]
   ],
-  "small": "/images/guides/division-resurgence-exotic-sealed-caches-armory-exotics-480.webp"
+  "small": "/images/guides/division-resurgence-exotic-sealed-caches-armory-exotics-480.webp",
+  "thumb": "/images/guides/division-resurgence-exotic-sealed-caches-armory-exotics-thumb.webp"
+ },
+ "/images/guides/division-resurgence-exotic-weapons-list-2026-v2.webp": {
+  "width": 1200,
+  "height": 634,
+  "srcset": [
+   [
+    480,
+    "/images/guides/division-resurgence-exotic-weapons-list-2026-v2-480.webp"
+   ],
+   [
+    800,
+    "/images/guides/division-resurgence-exotic-weapons-list-2026-v2-800.webp"
+   ],
+   [
+    1200,
+    "/images/guides/division-resurgence-exotic-weapons-list-2026-v2.webp"
+   ]
+  ],
+  "small": "/images/guides/division-resurgence-exotic-weapons-list-2026-v2-480.webp",
+  "thumb": "/images/guides/division-resurgence-exotic-weapons-list-2026-v2-thumb.webp",
+  "legacy": true
  },
  "/images/guides/division-resurgence-gear-farming-guide-gear-crafting-station-1200.webp": {
   "width": 1200,
@@ -457,7 +875,29 @@
     "/images/guides/division-resurgence-gear-farming-guide-gear-crafting-station-1600.webp"
    ]
   ],
-  "small": "/images/guides/division-resurgence-gear-farming-guide-gear-crafting-station-480.webp"
+  "small": "/images/guides/division-resurgence-gear-farming-guide-gear-crafting-station-480.webp",
+  "thumb": "/images/guides/division-resurgence-gear-farming-guide-gear-crafting-station-thumb.webp"
+ },
+ "/images/guides/division-resurgence-pc-emulator-comparison-hero.jpg": {
+  "width": 1200,
+  "height": 630,
+  "srcset": [
+   [
+    480,
+    "/images/guides/division-resurgence-pc-emulator-comparison-hero-480.webp"
+   ],
+   [
+    800,
+    "/images/guides/division-resurgence-pc-emulator-comparison-hero-800.webp"
+   ],
+   [
+    1200,
+    "/images/guides/division-resurgence-pc-emulator-comparison-hero-1200.webp"
+   ]
+  ],
+  "small": "/images/guides/division-resurgence-pc-emulator-comparison-hero-480.webp",
+  "thumb": "/images/guides/division-resurgence-pc-emulator-comparison-hero-thumb.webp",
+  "legacy": true
  },
  "/images/guides/division-resurgence-phoenix-credits-gift-store-1200.webp": {
   "width": 1200,
@@ -480,7 +920,8 @@
     "/images/guides/division-resurgence-phoenix-credits-gift-store-1600.webp"
    ]
   ],
-  "small": "/images/guides/division-resurgence-phoenix-credits-gift-store-480.webp"
+  "small": "/images/guides/division-resurgence-phoenix-credits-gift-store-480.webp",
+  "thumb": "/images/guides/division-resurgence-phoenix-credits-gift-store-thumb.webp"
  },
  "/images/guides/division-resurgence-purple-gold-mods-farming-firefight-1200.webp": {
   "width": 1200,
@@ -503,7 +944,29 @@
     "/images/guides/division-resurgence-purple-gold-mods-farming-firefight-1600.webp"
    ]
   ],
-  "small": "/images/guides/division-resurgence-purple-gold-mods-farming-firefight-480.webp"
+  "small": "/images/guides/division-resurgence-purple-gold-mods-farming-firefight-480.webp",
+  "thumb": "/images/guides/division-resurgence-purple-gold-mods-farming-firefight-thumb.webp"
+ },
+ "/images/guides/division-resurgence-safe-codes-encrypted-crates-hero.jpg": {
+  "width": 1200,
+  "height": 630,
+  "srcset": [
+   [
+    480,
+    "/images/guides/division-resurgence-safe-codes-encrypted-crates-hero-480.webp"
+   ],
+   [
+    800,
+    "/images/guides/division-resurgence-safe-codes-encrypted-crates-hero-800.webp"
+   ],
+   [
+    1200,
+    "/images/guides/division-resurgence-safe-codes-encrypted-crates-hero-1200.webp"
+   ]
+  ],
+  "small": "/images/guides/division-resurgence-safe-codes-encrypted-crates-hero-480.webp",
+  "thumb": "/images/guides/division-resurgence-safe-codes-encrypted-crates-hero-thumb.webp",
+  "legacy": true
  },
  "/images/guides/division-resurgence-stats-explained-shooting-range-1200.webp": {
   "width": 1200,
@@ -526,7 +989,29 @@
     "/images/guides/division-resurgence-stats-explained-shooting-range-1600.webp"
    ]
   ],
-  "small": "/images/guides/division-resurgence-stats-explained-shooting-range-480.webp"
+  "small": "/images/guides/division-resurgence-stats-explained-shooting-range-480.webp",
+  "thumb": "/images/guides/division-resurgence-stats-explained-shooting-range-thumb.webp"
+ },
+ "/images/guides/division-resurgence-steam-pc-guide-hero.webp": {
+  "width": 1200,
+  "height": 634,
+  "srcset": [
+   [
+    480,
+    "/images/guides/division-resurgence-steam-pc-guide-hero-480.webp"
+   ],
+   [
+    800,
+    "/images/guides/division-resurgence-steam-pc-guide-hero-800.webp"
+   ],
+   [
+    1200,
+    "/images/guides/division-resurgence-steam-pc-guide-hero.webp"
+   ]
+  ],
+  "small": "/images/guides/division-resurgence-steam-pc-guide-hero-480.webp",
+  "thumb": "/images/guides/division-resurgence-steam-pc-guide-hero-thumb.webp",
+  "legacy": true
  },
  "/images/guides/division-resurgence-tactical-augmentation-modules-guide-map-room-1200.webp": {
   "width": 1200,
@@ -549,7 +1034,8 @@
     "/images/guides/division-resurgence-tactical-augmentation-modules-guide-map-room-1600.webp"
    ]
   ],
-  "small": "/images/guides/division-resurgence-tactical-augmentation-modules-guide-map-room-480.webp"
+  "small": "/images/guides/division-resurgence-tactical-augmentation-modules-guide-map-room-480.webp",
+  "thumb": "/images/guides/division-resurgence-tactical-augmentation-modules-guide-map-room-thumb.webp"
  },
  "/images/guides/the-division-books-in-order-covers-1200.webp": {
   "width": 1200,
@@ -572,7 +1058,8 @@
     "/images/guides/the-division-books-in-order-covers-1600.webp"
    ]
   ],
-  "small": "/images/guides/the-division-books-in-order-covers-480.webp"
+  "small": "/images/guides/the-division-books-in-order-covers-480.webp",
+  "thumb": "/images/guides/the-division-books-in-order-covers-thumb.webp"
  },
  "/images/guides/the-division-gift-guide-books-and-controller-1200.webp": {
   "width": 1200,
@@ -595,7 +1082,8 @@
     "/images/guides/the-division-gift-guide-books-and-controller-1600.webp"
    ]
   ],
-  "small": "/images/guides/the-division-gift-guide-books-and-controller-480.webp"
+  "small": "/images/guides/the-division-gift-guide-books-and-controller-480.webp",
+  "thumb": "/images/guides/the-division-gift-guide-books-and-controller-thumb.webp"
  },
  "/images/news/division-resurgence-a-new-enemy-speedrun-july-festive-street-1200.webp": {
   "width": 1200,
@@ -618,7 +1106,8 @@
     "/images/news/division-resurgence-a-new-enemy-speedrun-july-festive-street-1600.webp"
    ]
   ],
-  "small": "/images/news/division-resurgence-a-new-enemy-speedrun-july-festive-street-480.webp"
+  "small": "/images/news/division-resurgence-a-new-enemy-speedrun-july-festive-street-480.webp",
+  "thumb": "/images/news/division-resurgence-a-new-enemy-speedrun-july-festive-street-thumb.webp"
  },
  "/images/news/division-resurgence-a-new-enemy-speedrun-september-map-1200.webp": {
   "width": 1200,
@@ -641,7 +1130,8 @@
     "/images/news/division-resurgence-a-new-enemy-speedrun-september-map-1600.webp"
    ]
   ],
-  "small": "/images/news/division-resurgence-a-new-enemy-speedrun-september-map-480.webp"
+  "small": "/images/news/division-resurgence-a-new-enemy-speedrun-september-map-480.webp",
+  "thumb": "/images/news/division-resurgence-a-new-enemy-speedrun-september-map-thumb.webp"
  },
  "/images/news/division-resurgence-angry-joe-response-penn-station-billboard-1200.webp": {
   "width": 1200,
@@ -664,7 +1154,8 @@
     "/images/news/division-resurgence-angry-joe-response-penn-station-billboard-1600.webp"
    ]
   ],
-  "small": "/images/news/division-resurgence-angry-joe-response-penn-station-billboard-480.webp"
+  "small": "/images/news/division-resurgence-angry-joe-response-penn-station-billboard-480.webp",
+  "thumb": "/images/news/division-resurgence-angry-joe-response-penn-station-billboard-thumb.webp"
  },
  "/images/news/division-resurgence-april-developer-stream-movie-night-1200.webp": {
   "width": 1200,
@@ -687,7 +1178,8 @@
     "/images/news/division-resurgence-april-developer-stream-movie-night-1600.webp"
    ]
   ],
-  "small": "/images/news/division-resurgence-april-developer-stream-movie-night-480.webp"
+  "small": "/images/news/division-resurgence-april-developer-stream-movie-night-480.webp",
+  "thumb": "/images/news/division-resurgence-april-developer-stream-movie-night-thumb.webp"
  },
  "/images/news/division-resurgence-asian-server-maintenance-bunks-1200.webp": {
   "width": 1200,
@@ -710,7 +1202,8 @@
     "/images/news/division-resurgence-asian-server-maintenance-bunks-1600.webp"
    ]
   ],
-  "small": "/images/news/division-resurgence-asian-server-maintenance-bunks-480.webp"
+  "small": "/images/news/division-resurgence-asian-server-maintenance-bunks-480.webp",
+  "thumb": "/images/news/division-resurgence-asian-server-maintenance-bunks-thumb.webp"
  },
  "/images/news/division-resurgence-bighorn-headshot-weekend-scope-1200.webp": {
   "width": 1200,
@@ -733,7 +1226,8 @@
     "/images/news/division-resurgence-bighorn-headshot-weekend-scope-1600.webp"
    ]
   ],
-  "small": "/images/news/division-resurgence-bighorn-headshot-weekend-scope-480.webp"
+  "small": "/images/news/division-resurgence-bighorn-headshot-weekend-scope-480.webp",
+  "thumb": "/images/news/division-resurgence-bighorn-headshot-weekend-scope-thumb.webp"
  },
  "/images/news/division-resurgence-bug-fixes-stop-the-spread-of-bugs-1200.webp": {
   "width": 1200,
@@ -756,7 +1250,8 @@
     "/images/news/division-resurgence-bug-fixes-stop-the-spread-of-bugs-1600.webp"
    ]
   ],
-  "small": "/images/news/division-resurgence-bug-fixes-stop-the-spread-of-bugs-480.webp"
+  "small": "/images/news/division-resurgence-bug-fixes-stop-the-spread-of-bugs-480.webp",
+  "thumb": "/images/news/division-resurgence-bug-fixes-stop-the-spread-of-bugs-thumb.webp"
  },
  "/images/news/division-resurgence-bug-reporter-october-23-bug-area-1200.webp": {
   "width": 1200,
@@ -779,7 +1274,8 @@
     "/images/news/division-resurgence-bug-reporter-october-23-bug-area-1600.webp"
    ]
   ],
-  "small": "/images/news/division-resurgence-bug-reporter-october-23-bug-area-480.webp"
+  "small": "/images/news/division-resurgence-bug-reporter-october-23-bug-area-480.webp",
+  "thumb": "/images/news/division-resurgence-bug-reporter-october-23-bug-area-thumb.webp"
  },
  "/images/news/division-resurgence-chloe-aguilar-character-file-notes-wall-1200.webp": {
   "width": 1200,
@@ -802,7 +1298,29 @@
     "/images/news/division-resurgence-chloe-aguilar-character-file-notes-wall-1600.webp"
    ]
   ],
-  "small": "/images/news/division-resurgence-chloe-aguilar-character-file-notes-wall-480.webp"
+  "small": "/images/news/division-resurgence-chloe-aguilar-character-file-notes-wall-480.webp",
+  "thumb": "/images/news/division-resurgence-chloe-aguilar-character-file-notes-wall-thumb.webp"
+ },
+ "/images/news/division-resurgence-coming-to-steam-pc-2026.webp": {
+  "width": 1200,
+  "height": 634,
+  "srcset": [
+   [
+    480,
+    "/images/news/division-resurgence-coming-to-steam-pc-2026-480.webp"
+   ],
+   [
+    800,
+    "/images/news/division-resurgence-coming-to-steam-pc-2026-800.webp"
+   ],
+   [
+    1200,
+    "/images/news/division-resurgence-coming-to-steam-pc-2026.webp"
+   ]
+  ],
+  "small": "/images/news/division-resurgence-coming-to-steam-pc-2026-480.webp",
+  "thumb": "/images/news/division-resurgence-coming-to-steam-pc-2026-thumb.webp",
+  "legacy": true
  },
  "/images/news/division-resurgence-community-feedback-base-cafe-1200.webp": {
   "width": 1200,
@@ -825,7 +1343,8 @@
     "/images/news/division-resurgence-community-feedback-base-cafe-1600.webp"
    ]
   ],
-  "small": "/images/news/division-resurgence-community-feedback-base-cafe-480.webp"
+  "small": "/images/news/division-resurgence-community-feedback-base-cafe-480.webp",
+  "thumb": "/images/news/division-resurgence-community-feedback-base-cafe-thumb.webp"
  },
  "/images/news/division-resurgence-double-xp-weekend-street-fight-1200.webp": {
   "width": 1200,
@@ -848,7 +1367,29 @@
     "/images/news/division-resurgence-double-xp-weekend-street-fight-1600.webp"
    ]
   ],
-  "small": "/images/news/division-resurgence-double-xp-weekend-street-fight-480.webp"
+  "small": "/images/news/division-resurgence-double-xp-weekend-street-fight-480.webp",
+  "thumb": "/images/news/division-resurgence-double-xp-weekend-street-fight-thumb.webp"
+ },
+ "/images/news/division-resurgence-inventory-bug-fixed-may-2026-hero.webp": {
+  "width": 1200,
+  "height": 634,
+  "srcset": [
+   [
+    480,
+    "/images/news/division-resurgence-inventory-bug-fixed-may-2026-hero-480.webp"
+   ],
+   [
+    800,
+    "/images/news/division-resurgence-inventory-bug-fixed-may-2026-hero-800.webp"
+   ],
+   [
+    1200,
+    "/images/news/division-resurgence-inventory-bug-fixed-may-2026-hero.webp"
+   ]
+  ],
+  "small": "/images/news/division-resurgence-inventory-bug-fixed-may-2026-hero-480.webp",
+  "thumb": "/images/news/division-resurgence-inventory-bug-fixed-may-2026-hero-thumb.webp",
+  "legacy": true
  },
  "/images/news/division-resurgence-inventory-expansion-storage-bins-1200.webp": {
   "width": 1200,
@@ -871,7 +1412,8 @@
     "/images/news/division-resurgence-inventory-expansion-storage-bins-1600.webp"
    ]
   ],
-  "small": "/images/news/division-resurgence-inventory-expansion-storage-bins-480.webp"
+  "small": "/images/news/division-resurgence-inventory-expansion-storage-bins-480.webp",
+  "thumb": "/images/news/division-resurgence-inventory-expansion-storage-bins-thumb.webp"
  },
  "/images/news/division-resurgence-known-issues-board-base-whiteboard-1200.webp": {
   "width": 1200,
@@ -894,7 +1436,8 @@
     "/images/news/division-resurgence-known-issues-board-base-whiteboard-1600.webp"
    ]
   ],
-  "small": "/images/news/division-resurgence-known-issues-board-base-whiteboard-480.webp"
+  "small": "/images/news/division-resurgence-known-issues-board-base-whiteboard-480.webp",
+  "thumb": "/images/news/division-resurgence-known-issues-board-base-whiteboard-thumb.webp"
  },
  "/images/news/division-resurgence-liberty-and-justice-speedrun-cavern-flag-1200.webp": {
   "width": 1200,
@@ -917,7 +1460,8 @@
     "/images/news/division-resurgence-liberty-and-justice-speedrun-cavern-flag-1600.webp"
    ]
   ],
-  "small": "/images/news/division-resurgence-liberty-and-justice-speedrun-cavern-flag-480.webp"
+  "small": "/images/news/division-resurgence-liberty-and-justice-speedrun-cavern-flag-480.webp",
+  "thumb": "/images/news/division-resurgence-liberty-and-justice-speedrun-cavern-flag-thumb.webp"
  },
  "/images/news/division-resurgence-liberty-justice-speedrun-lichen-flags-1200.webp": {
   "width": 1200,
@@ -940,7 +1484,8 @@
     "/images/news/division-resurgence-liberty-justice-speedrun-lichen-flags-1600.webp"
    ]
   ],
-  "small": "/images/news/division-resurgence-liberty-justice-speedrun-lichen-flags-480.webp"
+  "small": "/images/news/division-resurgence-liberty-justice-speedrun-lichen-flags-480.webp",
+  "thumb": "/images/news/division-resurgence-liberty-justice-speedrun-lichen-flags-thumb.webp"
  },
  "/images/news/division-resurgence-patch-1-2-1-news-strawberry-milkshake-1200.webp": {
   "width": 1200,
@@ -963,7 +1508,8 @@
     "/images/news/division-resurgence-patch-1-2-1-news-strawberry-milkshake-1600.webp"
    ]
   ],
-  "small": "/images/news/division-resurgence-patch-1-2-1-news-strawberry-milkshake-480.webp"
+  "small": "/images/news/division-resurgence-patch-1-2-1-news-strawberry-milkshake-480.webp",
+  "thumb": "/images/news/division-resurgence-patch-1-2-1-news-strawberry-milkshake-thumb.webp"
  },
  "/images/news/division-resurgence-pc-launch-tech-wing-1200.webp": {
   "width": 1200,
@@ -986,7 +1532,29 @@
     "/images/news/division-resurgence-pc-launch-tech-wing-1600.webp"
    ]
   ],
-  "small": "/images/news/division-resurgence-pc-launch-tech-wing-480.webp"
+  "small": "/images/news/division-resurgence-pc-launch-tech-wing-480.webp",
+  "thumb": "/images/news/division-resurgence-pc-launch-tech-wing-thumb.webp"
+ },
+ "/images/news/division-resurgence-phase-2-season-1-live-hero.jpg": {
+  "width": 1200,
+  "height": 634,
+  "srcset": [
+   [
+    480,
+    "/images/news/division-resurgence-phase-2-season-1-live-hero-480.webp"
+   ],
+   [
+    800,
+    "/images/news/division-resurgence-phase-2-season-1-live-hero-800.webp"
+   ],
+   [
+    1200,
+    "/images/news/division-resurgence-phase-2-season-1-live-hero-1200.webp"
+   ]
+  ],
+  "small": "/images/news/division-resurgence-phase-2-season-1-live-hero-480.webp",
+  "thumb": "/images/news/division-resurgence-phase-2-season-1-live-hero-thumb.webp",
+  "legacy": true
  },
  "/images/news/division-resurgence-reddit-highlights-july-2-notice-board-1200.webp": {
   "width": 1200,
@@ -1009,7 +1577,29 @@
     "/images/news/division-resurgence-reddit-highlights-july-2-notice-board-1600.webp"
    ]
   ],
-  "small": "/images/news/division-resurgence-reddit-highlights-july-2-notice-board-480.webp"
+  "small": "/images/news/division-resurgence-reddit-highlights-july-2-notice-board-480.webp",
+  "thumb": "/images/news/division-resurgence-reddit-highlights-july-2-notice-board-thumb.webp"
+ },
+ "/images/news/division-resurgence-reddit-highlights-june-16-2026-hero.webp": {
+  "width": 1200,
+  "height": 587,
+  "srcset": [
+   [
+    480,
+    "/images/news/division-resurgence-reddit-highlights-june-16-2026-hero-480.webp"
+   ],
+   [
+    800,
+    "/images/news/division-resurgence-reddit-highlights-june-16-2026-hero-800.webp"
+   ],
+   [
+    1200,
+    "/images/news/division-resurgence-reddit-highlights-june-16-2026-hero.webp"
+   ]
+  ],
+  "small": "/images/news/division-resurgence-reddit-highlights-june-16-2026-hero-480.webp",
+  "thumb": "/images/news/division-resurgence-reddit-highlights-june-16-2026-hero-thumb.webp",
+  "legacy": true
  },
  "/images/news/division-resurgence-reddit-highlights-october-24-barricade-1200.webp": {
   "width": 1200,
@@ -1032,7 +1622,29 @@
     "/images/news/division-resurgence-reddit-highlights-october-24-barricade-1600.webp"
    ]
   ],
-  "small": "/images/news/division-resurgence-reddit-highlights-october-24-barricade-480.webp"
+  "small": "/images/news/division-resurgence-reddit-highlights-october-24-barricade-480.webp",
+  "thumb": "/images/news/division-resurgence-reddit-highlights-october-24-barricade-thumb.webp"
+ },
+ "/images/news/division-resurgence-reddit-weekly-highlights-may-18.jpg": {
+  "width": 1200,
+  "height": 1191,
+  "srcset": [
+   [
+    480,
+    "/images/news/division-resurgence-reddit-weekly-highlights-may-18-480.webp"
+   ],
+   [
+    800,
+    "/images/news/division-resurgence-reddit-weekly-highlights-may-18-800.webp"
+   ],
+   [
+    1200,
+    "/images/news/division-resurgence-reddit-weekly-highlights-may-18-1200.webp"
+   ]
+  ],
+  "small": "/images/news/division-resurgence-reddit-weekly-highlights-may-18-480.webp",
+  "thumb": "/images/news/division-resurgence-reddit-weekly-highlights-may-18-thumb.webp",
+  "legacy": true
  },
  "/images/news/division-resurgence-revive-bug-fixed-medical-bay-1200.webp": {
   "width": 1200,
@@ -1055,7 +1667,50 @@
     "/images/news/division-resurgence-revive-bug-fixed-medical-bay-1600.webp"
    ]
   ],
-  "small": "/images/news/division-resurgence-revive-bug-fixed-medical-bay-480.webp"
+  "small": "/images/news/division-resurgence-revive-bug-fixed-medical-bay-480.webp",
+  "thumb": "/images/news/division-resurgence-revive-bug-fixed-medical-bay-thumb.webp"
+ },
+ "/images/news/division-resurgence-scorpio-diamondback-phase-3-leak.webp": {
+  "width": 1080,
+  "height": 603,
+  "srcset": [
+   [
+    480,
+    "/images/news/division-resurgence-scorpio-diamondback-phase-3-leak-480.webp"
+   ],
+   [
+    800,
+    "/images/news/division-resurgence-scorpio-diamondback-phase-3-leak-800.webp"
+   ],
+   [
+    1080,
+    "/images/news/division-resurgence-scorpio-diamondback-phase-3-leak.webp"
+   ]
+  ],
+  "small": "/images/news/division-resurgence-scorpio-diamondback-phase-3-leak-480.webp",
+  "thumb": "/images/news/division-resurgence-scorpio-diamondback-phase-3-leak-thumb.webp",
+  "legacy": true
+ },
+ "/images/news/division-resurgence-season-1-2-3-roadmap-hero.jpg": {
+  "width": 1200,
+  "height": 634,
+  "srcset": [
+   [
+    480,
+    "/images/news/division-resurgence-season-1-2-3-roadmap-hero-480.webp"
+   ],
+   [
+    800,
+    "/images/news/division-resurgence-season-1-2-3-roadmap-hero-800.webp"
+   ],
+   [
+    1200,
+    "/images/news/division-resurgence-season-1-2-3-roadmap-hero-1200.webp"
+   ]
+  ],
+  "small": "/images/news/division-resurgence-season-1-2-3-roadmap-hero-480.webp",
+  "thumb": "/images/news/division-resurgence-season-1-2-3-roadmap-hero-thumb.webp",
+  "legacy": true
  },
  "/images/news/division-resurgence-season-2-countdown-festive-plaza-1200.webp": {
   "width": 1200,
@@ -1078,7 +1733,8 @@
     "/images/news/division-resurgence-season-2-countdown-festive-plaza-1600.webp"
    ]
   ],
-  "small": "/images/news/division-resurgence-season-2-countdown-festive-plaza-480.webp"
+  "small": "/images/news/division-resurgence-season-2-countdown-festive-plaza-480.webp",
+  "thumb": "/images/news/division-resurgence-season-2-countdown-festive-plaza-thumb.webp"
  },
  "/images/news/division-resurgence-season-2-phase-2-diamondback-card-1200.webp": {
   "width": 1200,
@@ -1101,7 +1757,8 @@
     "/images/news/division-resurgence-season-2-phase-2-diamondback-card-1600.webp"
    ]
   ],
-  "small": "/images/news/division-resurgence-season-2-phase-2-diamondback-card-480.webp"
+  "small": "/images/news/division-resurgence-season-2-phase-2-diamondback-card-480.webp",
+  "thumb": "/images/news/division-resurgence-season-2-phase-2-diamondback-card-thumb.webp"
  },
  "/images/news/division-resurgence-season-2-phase-2-extended-magical-season-1200.webp": {
   "width": 1200,
@@ -1124,7 +1781,8 @@
     "/images/news/division-resurgence-season-2-phase-2-extended-magical-season-1600.webp"
    ]
   ],
-  "small": "/images/news/division-resurgence-season-2-phase-2-extended-magical-season-480.webp"
+  "small": "/images/news/division-resurgence-season-2-phase-2-extended-magical-season-480.webp",
+  "thumb": "/images/news/division-resurgence-season-2-phase-2-extended-magical-season-thumb.webp"
  },
  "/images/news/division-resurgence-season-2-the-call-live-signal-source-1200.webp": {
   "width": 1200,
@@ -1147,7 +1805,8 @@
     "/images/news/division-resurgence-season-2-the-call-live-signal-source-1600.webp"
    ]
   ],
-  "small": "/images/news/division-resurgence-season-2-the-call-live-signal-source-480.webp"
+  "small": "/images/news/division-resurgence-season-2-the-call-live-signal-source-480.webp",
+  "thumb": "/images/news/division-resurgence-season-2-the-call-live-signal-source-thumb.webp"
  },
  "/images/news/division-resurgence-steam-launch-reviews-cavern-talk-1200.webp": {
   "width": 1200,
@@ -1170,7 +1829,8 @@
     "/images/news/division-resurgence-steam-launch-reviews-cavern-talk-1600.webp"
    ]
   ],
-  "small": "/images/news/division-resurgence-steam-launch-reviews-cavern-talk-480.webp"
+  "small": "/images/news/division-resurgence-steam-launch-reviews-cavern-talk-480.webp",
+  "thumb": "/images/news/division-resurgence-steam-launch-reviews-cavern-talk-thumb.webp"
  },
  "/images/news/division-resurgence-steam-launch-rewards-armory-1200.webp": {
   "width": 1200,
@@ -1193,7 +1853,8 @@
     "/images/news/division-resurgence-steam-launch-rewards-armory-1600.webp"
    ]
   ],
-  "small": "/images/news/division-resurgence-steam-launch-rewards-armory-480.webp"
+  "small": "/images/news/division-resurgence-steam-launch-rewards-armory-480.webp",
+  "thumb": "/images/news/division-resurgence-steam-launch-rewards-armory-thumb.webp"
  },
  "/images/news/division-resurgence-steam-release-date-crystal-lamp-street-1200.webp": {
   "width": 1200,
@@ -1216,7 +1877,8 @@
     "/images/news/division-resurgence-steam-release-date-crystal-lamp-street-1600.webp"
    ]
   ],
-  "small": "/images/news/division-resurgence-steam-release-date-crystal-lamp-street-480.webp"
+  "small": "/images/news/division-resurgence-steam-release-date-crystal-lamp-street-480.webp",
+  "thumb": "/images/news/division-resurgence-steam-release-date-crystal-lamp-street-thumb.webp"
  },
  "/images/news/division-resurgence-take-the-castle-speedrun-street-1200.webp": {
   "width": 1200,
@@ -1239,7 +1901,29 @@
     "/images/news/division-resurgence-take-the-castle-speedrun-street-1600.webp"
    ]
   ],
-  "small": "/images/news/division-resurgence-take-the-castle-speedrun-street-480.webp"
+  "small": "/images/news/division-resurgence-take-the-castle-speedrun-street-480.webp",
+  "thumb": "/images/news/division-resurgence-take-the-castle-speedrun-street-thumb.webp"
+ },
+ "/images/news/reddit-weekly-highlights-may-28-hero.jpg": {
+  "width": 1200,
+  "height": 630,
+  "srcset": [
+   [
+    480,
+    "/images/news/reddit-weekly-highlights-may-28-hero-480.webp"
+   ],
+   [
+    800,
+    "/images/news/reddit-weekly-highlights-may-28-hero-800.webp"
+   ],
+   [
+    1200,
+    "/images/news/reddit-weekly-highlights-may-28-hero-1200.webp"
+   ]
+  ],
+  "small": "/images/news/reddit-weekly-highlights-may-28-hero-480.webp",
+  "thumb": "/images/news/reddit-weekly-highlights-may-28-hero-thumb.webp",
+  "legacy": true
  },
  "/images/patch-notes/division-resurgence-hotfix-1-1-1-locker-room-1200.webp": {
   "width": 1200,
@@ -1262,7 +1946,8 @@
     "/images/patch-notes/division-resurgence-hotfix-1-1-1-locker-room-1600.webp"
    ]
   ],
-  "small": "/images/patch-notes/division-resurgence-hotfix-1-1-1-locker-room-480.webp"
+  "small": "/images/patch-notes/division-resurgence-hotfix-1-1-1-locker-room-480.webp",
+  "thumb": "/images/patch-notes/division-resurgence-hotfix-1-1-1-locker-room-thumb.webp"
  },
  "/images/patch-notes/division-resurgence-october-2026-hotfixes-police-car-1200.webp": {
   "width": 1200,
@@ -1285,7 +1970,29 @@
     "/images/patch-notes/division-resurgence-october-2026-hotfixes-police-car-1600.webp"
    ]
   ],
-  "small": "/images/patch-notes/division-resurgence-october-2026-hotfixes-police-car-480.webp"
+  "small": "/images/patch-notes/division-resurgence-october-2026-hotfixes-police-car-480.webp",
+  "thumb": "/images/patch-notes/division-resurgence-october-2026-hotfixes-police-car-thumb.webp"
+ },
+ "/images/patch-notes/division-resurgence-patch-1-1-2-2-gm-bug-hero.jpg": {
+  "width": 1200,
+  "height": 634,
+  "srcset": [
+   [
+    480,
+    "/images/patch-notes/division-resurgence-patch-1-1-2-2-gm-bug-hero-480.webp"
+   ],
+   [
+    800,
+    "/images/patch-notes/division-resurgence-patch-1-1-2-2-gm-bug-hero-800.webp"
+   ],
+   [
+    1200,
+    "/images/patch-notes/division-resurgence-patch-1-1-2-2-gm-bug-hero-1200.webp"
+   ]
+  ],
+  "small": "/images/patch-notes/division-resurgence-patch-1-1-2-2-gm-bug-hero-480.webp",
+  "thumb": "/images/patch-notes/division-resurgence-patch-1-1-2-2-gm-bug-hero-thumb.webp",
+  "legacy": true
  },
  "/images/patch-notes/division-resurgence-patch-1-1-2-mess-hall-1200.webp": {
   "width": 1200,
@@ -1308,7 +2015,8 @@
     "/images/patch-notes/division-resurgence-patch-1-1-2-mess-hall-1600.webp"
    ]
   ],
-  "small": "/images/patch-notes/division-resurgence-patch-1-1-2-mess-hall-480.webp"
+  "small": "/images/patch-notes/division-resurgence-patch-1-1-2-mess-hall-480.webp",
+  "thumb": "/images/patch-notes/division-resurgence-patch-1-1-2-mess-hall-thumb.webp"
  },
  "/images/patch-notes/division-resurgence-patch-1-2-1-clinic-1200.webp": {
   "width": 1200,
@@ -1331,7 +2039,8 @@
     "/images/patch-notes/division-resurgence-patch-1-2-1-clinic-1600.webp"
    ]
   ],
-  "small": "/images/patch-notes/division-resurgence-patch-1-2-1-clinic-480.webp"
+  "small": "/images/patch-notes/division-resurgence-patch-1-2-1-clinic-480.webp",
+  "thumb": "/images/patch-notes/division-resurgence-patch-1-2-1-clinic-thumb.webp"
  },
  "/images/patch-notes/division-resurgence-season-1-phase-2-patch-notes-firefight-1200.webp": {
   "width": 1200,
@@ -1354,7 +2063,8 @@
     "/images/patch-notes/division-resurgence-season-1-phase-2-patch-notes-firefight-1600.webp"
    ]
   ],
-  "small": "/images/patch-notes/division-resurgence-season-1-phase-2-patch-notes-firefight-480.webp"
+  "small": "/images/patch-notes/division-resurgence-season-1-phase-2-patch-notes-firefight-480.webp",
+  "thumb": "/images/patch-notes/division-resurgence-season-1-phase-2-patch-notes-firefight-thumb.webp"
  },
  "/images/patch-notes/division-resurgence-season-1-phase-3-a-new-fire-backpack-1200.webp": {
   "width": 1200,
@@ -1377,7 +2087,8 @@
     "/images/patch-notes/division-resurgence-season-1-phase-3-a-new-fire-backpack-1600.webp"
    ]
   ],
-  "small": "/images/patch-notes/division-resurgence-season-1-phase-3-a-new-fire-backpack-480.webp"
+  "small": "/images/patch-notes/division-resurgence-season-1-phase-3-a-new-fire-backpack-480.webp",
+  "thumb": "/images/patch-notes/division-resurgence-season-1-phase-3-a-new-fire-backpack-thumb.webp"
  },
  "/images/patch-notes/division-resurgence-season-2-phase-2-patch-notes-base-of-operations-1200.webp": {
   "width": 1200,
@@ -1400,7 +2111,8 @@
     "/images/patch-notes/division-resurgence-season-2-phase-2-patch-notes-base-of-operations-1600.webp"
    ]
   ],
-  "small": "/images/patch-notes/division-resurgence-season-2-phase-2-patch-notes-base-of-operations-480.webp"
+  "small": "/images/patch-notes/division-resurgence-season-2-phase-2-patch-notes-base-of-operations-480.webp",
+  "thumb": "/images/patch-notes/division-resurgence-season-2-phase-2-patch-notes-base-of-operations-thumb.webp"
  },
  "/images/patch-notes/division-resurgence-season-2-the-call-patch-notes-isac-signal-1200.webp": {
   "width": 1200,
@@ -1423,7 +2135,29 @@
     "/images/patch-notes/division-resurgence-season-2-the-call-patch-notes-isac-signal-1600.webp"
    ]
   ],
-  "small": "/images/patch-notes/division-resurgence-season-2-the-call-patch-notes-isac-signal-480.webp"
+  "small": "/images/patch-notes/division-resurgence-season-2-the-call-patch-notes-isac-signal-480.webp",
+  "thumb": "/images/patch-notes/division-resurgence-season-2-the-call-patch-notes-isac-signal-thumb.webp"
+ },
+ "/images/patch-notes/division-resurgence-server-hotfix-june-26-2026-hero.webp": {
+  "width": 1200,
+  "height": 555,
+  "srcset": [
+   [
+    480,
+    "/images/patch-notes/division-resurgence-server-hotfix-june-26-2026-hero-480.webp"
+   ],
+   [
+    800,
+    "/images/patch-notes/division-resurgence-server-hotfix-june-26-2026-hero-800.webp"
+   ],
+   [
+    1200,
+    "/images/patch-notes/division-resurgence-server-hotfix-june-26-2026-hero.webp"
+   ]
+  ],
+  "small": "/images/patch-notes/division-resurgence-server-hotfix-june-26-2026-hero-480.webp",
+  "thumb": "/images/patch-notes/division-resurgence-server-hotfix-june-26-2026-hero-thumb.webp",
+  "legacy": true
  },
  "/images/reviews/art-of-the-division-back-cover-900.webp": {
   "width": 900,
@@ -1442,7 +2176,8 @@
     "/images/reviews/art-of-the-division-back-cover-900.webp"
    ]
   ],
-  "small": "/images/reviews/art-of-the-division-back-cover-480.webp"
+  "small": "/images/reviews/art-of-the-division-back-cover-480.webp",
+  "thumb": "/images/reviews/art-of-the-division-back-cover-thumb.webp"
  },
  "/images/reviews/art-of-the-division-church-concept-art-1200.webp": {
   "width": 1200,
@@ -1465,7 +2200,8 @@
     "/images/reviews/art-of-the-division-church-concept-art-1600.webp"
    ]
   ],
-  "small": "/images/reviews/art-of-the-division-church-concept-art-480.webp"
+  "small": "/images/reviews/art-of-the-division-church-concept-art-480.webp",
+  "thumb": "/images/reviews/art-of-the-division-church-concept-art-thumb.webp"
  },
  "/images/reviews/art-of-the-division-front-cover-900.webp": {
   "width": 900,
@@ -1484,7 +2220,8 @@
     "/images/reviews/art-of-the-division-front-cover-900.webp"
    ]
   ],
-  "small": "/images/reviews/art-of-the-division-front-cover-480.webp"
+  "small": "/images/reviews/art-of-the-division-front-cover-480.webp",
+  "thumb": "/images/reviews/art-of-the-division-front-cover-thumb.webp"
  },
  "/images/reviews/art-of-the-division-hudson-refugee-camp-1000.webp": {
   "width": 1000,
@@ -1503,7 +2240,8 @@
     "/images/reviews/art-of-the-division-hudson-refugee-camp-1000.webp"
    ]
   ],
-  "small": "/images/reviews/art-of-the-division-hudson-refugee-camp-480.webp"
+  "small": "/images/reviews/art-of-the-division-hudson-refugee-camp-480.webp",
+  "thumb": "/images/reviews/art-of-the-division-hudson-refugee-camp-thumb.webp"
  },
  "/images/reviews/art-of-the-division-subway-concept-art-1000.webp": {
   "width": 1000,
@@ -1522,7 +2260,8 @@
     "/images/reviews/art-of-the-division-subway-concept-art-1000.webp"
    ]
   ],
-  "small": "/images/reviews/art-of-the-division-subway-concept-art-480.webp"
+  "small": "/images/reviews/art-of-the-division-subway-concept-art-480.webp",
+  "thumb": "/images/reviews/art-of-the-division-subway-concept-art-thumb.webp"
  },
  "/images/reviews/broken-dawn-front-back-cover-1200.webp": {
   "width": 1200,
@@ -1545,7 +2284,8 @@
     "/images/reviews/broken-dawn-front-back-cover-1600.webp"
    ]
   ],
-  "small": "/images/reviews/broken-dawn-front-back-cover-480.webp"
+  "small": "/images/reviews/broken-dawn-front-back-cover-480.webp",
+  "thumb": "/images/reviews/broken-dawn-front-back-cover-thumb.webp"
  },
  "/images/reviews/extremis-malis-chapter-two-page-700.webp": {
   "width": 700,
@@ -1560,7 +2300,8 @@
     "/images/reviews/extremis-malis-chapter-two-page-700.webp"
    ]
   ],
-  "small": "/images/reviews/extremis-malis-chapter-two-page-480.webp"
+  "small": "/images/reviews/extremis-malis-chapter-two-page-480.webp",
+  "thumb": "/images/reviews/extremis-malis-chapter-two-page-thumb.webp"
  },
  "/images/reviews/extremis-malis-front-back-cover-1200.webp": {
   "width": 1200,
@@ -1583,7 +2324,8 @@
     "/images/reviews/extremis-malis-front-back-cover-1600.webp"
    ]
   ],
-  "small": "/images/reviews/extremis-malis-front-back-cover-480.webp"
+  "small": "/images/reviews/extremis-malis-front-back-cover-480.webp",
+  "thumb": "/images/reviews/extremis-malis-front-back-cover-thumb.webp"
  },
  "/images/reviews/extremis-malis-pages-30-31-1000.webp": {
   "width": 1000,
@@ -1602,7 +2344,8 @@
     "/images/reviews/extremis-malis-pages-30-31-1000.webp"
    ]
   ],
-  "small": "/images/reviews/extremis-malis-pages-30-31-480.webp"
+  "small": "/images/reviews/extremis-malis-pages-30-31-480.webp",
+  "thumb": "/images/reviews/extremis-malis-pages-30-31-thumb.webp"
  },
  "/images/reviews/gamesir-g8-plus-back-buttons-l4-r4-1200.webp": {
   "width": 1200,
@@ -1625,7 +2368,8 @@
     "/images/reviews/gamesir-g8-plus-back-buttons-l4-r4-1400.webp"
    ]
   ],
-  "small": "/images/reviews/gamesir-g8-plus-back-buttons-l4-r4-480.webp"
+  "small": "/images/reviews/gamesir-g8-plus-back-buttons-l4-r4-480.webp",
+  "thumb": "/images/reviews/gamesir-g8-plus-back-buttons-l4-r4-thumb.webp"
  },
  "/images/reviews/gamesir-g8-plus-division-resurgence-running-1200.webp": {
   "width": 1200,
@@ -1648,7 +2392,8 @@
     "/images/reviews/gamesir-g8-plus-division-resurgence-running-1600.webp"
    ]
   ],
-  "small": "/images/reviews/gamesir-g8-plus-division-resurgence-running-480.webp"
+  "small": "/images/reviews/gamesir-g8-plus-division-resurgence-running-480.webp",
+  "thumb": "/images/reviews/gamesir-g8-plus-division-resurgence-running-thumb.webp"
  },
  "/images/reviews/gamesir-g8-plus-front-top-down-1200.webp": {
   "width": 1200,
@@ -1671,7 +2416,8 @@
     "/images/reviews/gamesir-g8-plus-front-top-down-1400.webp"
    ]
   ],
-  "small": "/images/reviews/gamesir-g8-plus-front-top-down-480.webp"
+  "small": "/images/reviews/gamesir-g8-plus-front-top-down-480.webp",
+  "thumb": "/images/reviews/gamesir-g8-plus-front-top-down-thumb.webp"
  },
  "/images/reviews/gamesir-g8-plus-in-hands-playing-1200.webp": {
   "width": 1200,
@@ -1694,7 +2440,8 @@
     "/images/reviews/gamesir-g8-plus-in-hands-playing-1400.webp"
    ]
   ],
-  "small": "/images/reviews/gamesir-g8-plus-in-hands-playing-480.webp"
+  "small": "/images/reviews/gamesir-g8-plus-in-hands-playing-480.webp",
+  "thumb": "/images/reviews/gamesir-g8-plus-in-hands-playing-thumb.webp"
  },
  "/images/reviews/gamesir-g8-plus-triggers-bumpers-1200.webp": {
   "width": 1200,
@@ -1717,7 +2464,8 @@
     "/images/reviews/gamesir-g8-plus-triggers-bumpers-1400.webp"
    ]
   ],
-  "small": "/images/reviews/gamesir-g8-plus-triggers-bumpers-480.webp"
+  "small": "/images/reviews/gamesir-g8-plus-triggers-bumpers-480.webp",
+  "thumb": "/images/reviews/gamesir-g8-plus-triggers-bumpers-thumb.webp"
  },
  "/images/reviews/gamesir-g8-plus-usb-c-port-pairing-button-1200.webp": {
   "width": 1200,
@@ -1740,7 +2488,8 @@
     "/images/reviews/gamesir-g8-plus-usb-c-port-pairing-button-1400.webp"
    ]
   ],
-  "small": "/images/reviews/gamesir-g8-plus-usb-c-port-pairing-button-480.webp"
+  "small": "/images/reviews/gamesir-g8-plus-usb-c-port-pairing-button-480.webp",
+  "thumb": "/images/reviews/gamesir-g8-plus-usb-c-port-pairing-button-thumb.webp"
  },
  "/images/reviews/new-york-collapse-fragile-systems-pages-1000.webp": {
   "width": 1000,
@@ -1759,7 +2508,8 @@
     "/images/reviews/new-york-collapse-fragile-systems-pages-1000.webp"
    ]
   ],
-  "small": "/images/reviews/new-york-collapse-fragile-systems-pages-480.webp"
+  "small": "/images/reviews/new-york-collapse-fragile-systems-pages-480.webp",
+  "thumb": "/images/reviews/new-york-collapse-fragile-systems-pages-thumb.webp"
  },
  "/images/reviews/new-york-collapse-front-back-cover-1200.webp": {
   "width": 1200,
@@ -1782,7 +2532,8 @@
     "/images/reviews/new-york-collapse-front-back-cover-1600.webp"
    ]
   ],
-  "small": "/images/reviews/new-york-collapse-front-back-cover-480.webp"
+  "small": "/images/reviews/new-york-collapse-front-back-cover-480.webp",
+  "thumb": "/images/reviews/new-york-collapse-front-back-cover-thumb.webp"
  },
  "/images/reviews/new-york-collapse-go-bag-handwritten-notes-1000.webp": {
   "width": 1000,
@@ -1801,7 +2552,8 @@
     "/images/reviews/new-york-collapse-go-bag-handwritten-notes-1000.webp"
    ]
   ],
-  "small": "/images/reviews/new-york-collapse-go-bag-handwritten-notes-480.webp"
+  "small": "/images/reviews/new-york-collapse-go-bag-handwritten-notes-480.webp",
+  "thumb": "/images/reviews/new-york-collapse-go-bag-handwritten-notes-thumb.webp"
  },
  "/images/reviews/new-york-collapse-manhattan-map-800.webp": {
   "width": 800,
@@ -1816,7 +2568,8 @@
     "/images/reviews/new-york-collapse-manhattan-map-800.webp"
    ]
   ],
-  "small": "/images/reviews/new-york-collapse-manhattan-map-480.webp"
+  "small": "/images/reviews/new-york-collapse-manhattan-map-480.webp",
+  "thumb": "/images/reviews/new-york-collapse-manhattan-map-thumb.webp"
  },
  "/images/reviews/new-york-collapse-missing-poster-800.webp": {
   "width": 800,
@@ -1831,7 +2584,8 @@
     "/images/reviews/new-york-collapse-missing-poster-800.webp"
    ]
   ],
-  "small": "/images/reviews/new-york-collapse-missing-poster-480.webp"
+  "small": "/images/reviews/new-york-collapse-missing-poster-480.webp",
+  "thumb": "/images/reviews/new-york-collapse-missing-poster-thumb.webp"
  },
  "/images/reviews/new-york-collapse-pandemic-pages-1000.webp": {
   "width": 1000,
@@ -1850,7 +2604,8 @@
     "/images/reviews/new-york-collapse-pandemic-pages-1000.webp"
    ]
   ],
-  "small": "/images/reviews/new-york-collapse-pandemic-pages-480.webp"
+  "small": "/images/reviews/new-york-collapse-pandemic-pages-480.webp",
+  "thumb": "/images/reviews/new-york-collapse-pandemic-pages-thumb.webp"
  },
  "/images/reviews/remission-front-back-cover-1200.webp": {
   "width": 1200,
@@ -1873,7 +2628,8 @@
     "/images/reviews/remission-front-back-cover-1600.webp"
    ]
   ],
-  "small": "/images/reviews/remission-front-back-cover-480.webp"
+  "small": "/images/reviews/remission-front-back-cover-480.webp",
+  "thumb": "/images/reviews/remission-front-back-cover-thumb.webp"
  },
  "/images/reviews/remission-pages-44-45-1000.webp": {
   "width": 1000,
@@ -1892,7 +2648,8 @@
     "/images/reviews/remission-pages-44-45-1000.webp"
    ]
   ],
-  "small": "/images/reviews/remission-pages-44-45-480.webp"
+  "small": "/images/reviews/remission-pages-44-45-480.webp",
+  "thumb": "/images/reviews/remission-pages-44-45-thumb.webp"
  },
  "/images/reviews/the-division-xbox-one-front-back-1200.webp": {
   "width": 1200,
@@ -1915,7 +2672,8 @@
     "/images/reviews/the-division-xbox-one-front-back-1600.webp"
    ]
   ],
-  "small": "/images/reviews/the-division-xbox-one-front-back-480.webp"
+  "small": "/images/reviews/the-division-xbox-one-front-back-480.webp",
+  "thumb": "/images/reviews/the-division-xbox-one-front-back-thumb.webp"
  },
  "/images/reviews/world-of-the-division-back-cover-900.webp": {
   "width": 900,
@@ -1934,7 +2692,8 @@
     "/images/reviews/world-of-the-division-back-cover-900.webp"
    ]
   ],
-  "small": "/images/reviews/world-of-the-division-back-cover-480.webp"
+  "small": "/images/reviews/world-of-the-division-back-cover-480.webp",
+  "thumb": "/images/reviews/world-of-the-division-back-cover-thumb.webp"
  },
  "/images/reviews/world-of-the-division-chapter-3-activation-1200.webp": {
   "width": 1200,
@@ -1957,7 +2716,8 @@
     "/images/reviews/world-of-the-division-chapter-3-activation-1600.webp"
    ]
   ],
-  "small": "/images/reviews/world-of-the-division-chapter-3-activation-480.webp"
+  "small": "/images/reviews/world-of-the-division-chapter-3-activation-480.webp",
+  "thumb": "/images/reviews/world-of-the-division-chapter-3-activation-thumb.webp"
  },
  "/images/reviews/world-of-the-division-front-cover-900.webp": {
   "width": 900,
@@ -1976,7 +2736,8 @@
     "/images/reviews/world-of-the-division-front-cover-900.webp"
    ]
   ],
-  "small": "/images/reviews/world-of-the-division-front-cover-480.webp"
+  "small": "/images/reviews/world-of-the-division-front-cover-480.webp",
+  "thumb": "/images/reviews/world-of-the-division-front-cover-thumb.webp"
  },
  "/images/reviews/world-of-the-division-recruitment-pages-1000.webp": {
   "width": 1000,
@@ -1995,7 +2756,8 @@
     "/images/reviews/world-of-the-division-recruitment-pages-1000.webp"
    ]
   ],
-  "small": "/images/reviews/world-of-the-division-recruitment-pages-480.webp"
+  "small": "/images/reviews/world-of-the-division-recruitment-pages-480.webp",
+  "thumb": "/images/reviews/world-of-the-division-recruitment-pages-thumb.webp"
  },
  "/images/reviews/world-of-the-division-washington-dc-pages-1000.webp": {
   "width": 1000,
@@ -2014,7 +2776,8 @@
     "/images/reviews/world-of-the-division-washington-dc-pages-1000.webp"
    ]
   ],
-  "small": "/images/reviews/world-of-the-division-washington-dc-pages-480.webp"
+  "small": "/images/reviews/world-of-the-division-washington-dc-pages-480.webp",
+  "thumb": "/images/reviews/world-of-the-division-washington-dc-pages-thumb.webp"
  },
  "/images/reviews/world-of-the-division-what-is-the-division-1000.webp": {
   "width": 1000,
@@ -2033,7 +2796,8 @@
     "/images/reviews/world-of-the-division-what-is-the-division-1000.webp"
    ]
   ],
-  "small": "/images/reviews/world-of-the-division-what-is-the-division-480.webp"
+  "small": "/images/reviews/world-of-the-division-what-is-the-division-480.webp",
+  "thumb": "/images/reviews/world-of-the-division-what-is-the-division-thumb.webp"
  },
  "/images/site/division-resurgence-404-fast-travel-prompt-1200.webp": {
   "width": 1200,
@@ -2056,7 +2820,8 @@
     "/images/site/division-resurgence-404-fast-travel-prompt-1600.webp"
    ]
   ],
-  "small": "/images/site/division-resurgence-404-fast-travel-prompt-480.webp"
+  "small": "/images/site/division-resurgence-404-fast-travel-prompt-480.webp",
+  "thumb": "/images/site/division-resurgence-404-fast-travel-prompt-thumb.webp"
  },
  "/images/site/division-resurgence-build-tier-list-firefight-1200.webp": {
   "width": 1200,
@@ -2079,6 +2844,7 @@
     "/images/site/division-resurgence-build-tier-list-firefight-1600.webp"
    ]
   ],
-  "small": "/images/site/division-resurgence-build-tier-list-firefight-480.webp"
+  "small": "/images/site/division-resurgence-build-tier-list-firefight-480.webp",
+  "thumb": "/images/site/division-resurgence-build-tier-list-firefight-thumb.webp"
  }
 }

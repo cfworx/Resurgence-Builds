@@ -22,7 +22,8 @@ export interface Props {
 
 const { title, href, date, author, description, type, tags = [], featuredImage, imageAlt, tagLinks = true, eager = false, startHidden = false } = Astro.props;
 const img = postImage(featuredImage);
-const wide = img ? img.width / img.height > 1.95 : false;
+// Older images without a master (`legacy`) stay cropped to 16:9, as they were before they had copies.
+const wide = img && !img.legacy ? img.width / img.height > 1.95 : false;
 
 const formattedDate = date.toLocaleDateString('en-US', { timeZone: 'UTC',
   month: 'short',
