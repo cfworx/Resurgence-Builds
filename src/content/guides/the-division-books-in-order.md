@@ -14,7 +14,7 @@ faqs:
   - question: "What order should I read The Division books in?"
     answer: "There is no official reading order, so we built one from what Ubisoft and the publishers say about each title. By story: Hearts on Fire (audio drama, before the first game), New York Collapse (during New York's collapse), then Extremis Malis, Remission and Broken Dawn (all between the two games, in any order), then the Operation Crossroads trilogy: Recruited, Compromised and Hunted (after The Division 2). The World of Tom Clancy's The Division and The Art of Tom Clancy's The Division are reference books you can read at any point."
   - question: "How many Division books are there?"
-    answer: "Ten as of November 2026: four novels (Broken Dawn, Recruited, Compromised, Hunted), one illustrated companion book (New York Collapse), two comics (Extremis Malis, Remission), one audio drama (Hearts on Fire), one lore book (The World of Tom Clancy's The Division) and one art book (The Art of Tom Clancy's The Division). A tabletop roleplaying game was crowdfunded in 2026."
+    answer: "Ten that we know of as of November 2026: four novels (Broken Dawn, Recruited, Compromised, Hunted), one illustrated companion book (New York Collapse), two comics (Extremis Malis, Remission), one audio drama (Hearts on Fire), one lore book (The World of Tom Clancy's The Division) and one art book (The Art of Tom Clancy's The Division). A tabletop roleplaying game was crowdfunded in 2026."
   - question: "Is there a book about The Division Resurgence?"
     answer: "Not yet. We found no novel, comic or art book tied to Resurgence. Every book on this list was written for the first game or The Division 2. Ubisoft's page for Resurgence says it has a new storyline set in New York City, with you as one of the first wave of SHD agents."
   - question: "Which Division book should I read first?"
@@ -31,7 +31,7 @@ sources:
   - '<a href="https://www.ubisoft.com/en-sg/game/the-division/resurgence" target="_blank" rel="noopener noreferrer">Ubisoft: The Division Resurgence game page</a>'
 ---
 
-**Checked November 15, 2026.** There are ten Division books and audio titles so far, and no official reading order. Ubisoft and the publishers do say where most of them sit, so we put those statements together:
+**Checked November 15, 2026.** We know of ten Division books and audio titles so far, and there is no official reading order. Ubisoft and the publishers do say where most of them sit, so we put those statements together:
 
 1. **Hearts on Fire** (audio drama): before the first game
 2. **New York Collapse** (companion book): during New York's collapse
@@ -109,7 +109,7 @@ So nothing here will spoil the mobile game or explain its missions. What the boo
 Checked November 15, 2026:
 
 - **New York Collapse** appears to be out of print. Copies on AbeBooks were around $100.
-- **Extremis Malis** and **Remission** each showed as sold out or out of stock at one bookseller we checked.
+- **Extremis Malis** showed as sold out at one bookseller (Porchlight), and **Remission** as out of stock at one UK distributor (Turnaround), when we checked on November 15, 2026.
 - **Broken Dawn** and **The Art of Tom Clancy's The Division** were in stock at Barnes & Noble.
 
 ## The tabletop game

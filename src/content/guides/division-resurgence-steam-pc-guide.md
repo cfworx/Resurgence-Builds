@@ -138,7 +138,7 @@ Our [center-ADS peek guide](/guides/center-ads-release-cover-peek-guide/) covers
 
 Ubisoft's Help Center says you can play with **mouse and keyboard or a controller** on PC, without listing specific pads. (On phones, Ubisoft officially supports PlayStation, Xbox and Backbone controllers; see the [device compatibility guide](/guides/division-resurgence-device-compatibility/).) The UI was designed for touch first, so some menus feel chunky on a monitor, but in our play, combat, inventory and the map work fine on mouse and keyboard (some Steam reviewers did report mouse bugs; see below).
 
-Everything Ubisoft has said about controllers, on PC and on phones, is in the [controller guide](/guides/division-resurgence-controller-guide/). Steam itself handles Xbox and PlayStation controllers, so those are the usual picks on PC: the [Xbox wireless controller](https://www.amazon.com/dp/B08DF248LD?tag=resurgencebuilds-20) and the [DualSense](https://www.amazon.com/dp/B0CQKLS4RP?tag=resurgencebuilds-20). Those two links go to Amazon and earn us a commission.
+Everything Ubisoft has said about controllers, on PC and on phones, is in the [controller guide](/guides/division-resurgence-controller-guide/). Ubisoft does not name pads for PC. Of the controllers it names for the game, Xbox and PlayStation 5 pads also connect to a Windows PC, according to Microsoft and Sony: the [Xbox wireless controller](https://www.amazon.com/dp/B08DF248LD?tag=resurgencebuilds-20) and the [DualSense](https://www.amazon.com/dp/B0CQKLS4RP?tag=resurgencebuilds-20). Those two links go to Amazon and earn us a commission.
 
 *As an Amazon Associate I earn from qualifying purchases. It costs you nothing extra.*
 

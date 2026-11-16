@@ -11,7 +11,7 @@ shareTitle: "One agent, one grudge, 72 pages"
 shareText: "Inside The Division: Extremis Malis, the Dark Horse comic set before The Division 2"
 product:
   name: "Tom Clancy's The Division: Extremis Malis"
-  summary: "A short Dark Horse comic about one agent hunting his partner's killer, set between the two console games. It is a slim hardcover you can finish in a sitting."
+  summary: "A short Dark Horse comic about one agent hunting his partner's killer, set between the two console games. It is a slim 72-page hardcover."
   owned: "RapidF5's own copy. Photos taken November 15, 2026."
   facts:
     - label: "Story"
@@ -50,7 +50,7 @@ product:
     url: "https://www.darkhorse.com/Books/3003-527/Tom-Clancys-The-Division-Extremis-Malis-HC"
 faqs:
   - question: "What is The Division: Extremis Malis about?"
-    answer: "It follows Division agent Caleb Dunne. After a mission goes wrong and his partner is killed, he sets out to find the woman responsible, on a trail that runs from New York City toward Washington, D.C. It is set months after the bioweapon attack on New York, and Dark Horse and Ubisoft both describe it as a prequel to The Division 2."
+    answer: "It follows Division agent Caleb Dunne. After a mission goes wrong and his partner is killed, he sets out to find the woman responsible, on a trail that runs from New York City toward Washington, D.C. It is set months after the bioweapon attack on New York. Dark Horse and the back cover call it a prequel to The Division 2, and Ubisoft calls it an introduction to that game's world."
   - question: "How long is Extremis Malis?"
     answer: "The hardcover is 72 pages and collects the three issues of the comic, which came out between January and April 2019. The collected edition was published on July 23, 2019."
   - question: "What does Extremis Malis mean?"
@@ -71,7 +71,7 @@ The title is two words from the motto on the Division's seal. You can see the fu
 
 ## Inside our copy
 
-![Pages 30 and 31 of The Division: Extremis Malis, a full-color comic spread of Division agents moving and fighting among trees](/images/reviews/extremis-malis-pages-30-31.webp "Pages 30 and 31. The comic is in full color.")
+![Pages 30 and 31 of The Division: Extremis Malis, a full-color comic spread of Division agents meeting in a wood, with wild turkeys around them](/images/reviews/extremis-malis-pages-30-31.webp "Pages 30 and 31. The comic is in full color.")
 
 It is a full-color comic bound as a hardcover. The collected edition marks its chapters with divider pages: Chapter Two opens on a grey page drawn like photographs pinned to a wall.
 

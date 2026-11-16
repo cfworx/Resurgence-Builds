@@ -38,7 +38,7 @@ product:
   buy:
     - label: "Check price on Amazon"
       href: "https://www.amazon.com/dp/1783298340?tag=resurgencebuilds-20"
-    - label: "Publisher's page"
+    - label: "Random House's page for the book"
       href: "https://www.randomhouse.com/books/253165/the-art-of-tom-clancys-the-division-by-paul-davies/"
   about:
     type: "Book"
@@ -69,7 +69,7 @@ Titan Books published it in March 2016, alongside the first game. The publisher'
 
 ## Inside our copy
 
-![A two-page spread of concept art from The Art of Tom Clancy's The Division: a dark subway platform lit by blue strip lights, with a figure in the foreground](/images/reviews/art-of-the-division-subway-concept-art.webp "A subway platform across two full pages.")
+![A two-page spread of concept art from The Art of Tom Clancy's The Division: two agents in a tiled subway passage hung with plastic sheeting and lit by blue lamps](/images/reviews/art-of-the-division-subway-concept-art.webp "A subway passage across two full pages.")
 
 The pictures get the space. Some spreads are a single painting across both pages with a short note in the corner. Others set a main image beside smaller studies of the same place.
 

@@ -69,7 +69,7 @@ We have only played Resurgence on one of these, and we could not find a publishe
 | Controller | Connects by | Phones | Why it is on this list |
 |---|---|---|---|
 | [PS5 DualSense](https://www.amazon.com/dp/B0CQKLS4RP?tag=resurgencebuilds-20) | Bluetooth | iPhone, Android | Named by Ubisoft. Free if you already own one. No phone clip included. |
-| [Xbox Wireless Controller](https://www.amazon.com/dp/B08DF248LD?tag=resurgencebuilds-20) | Bluetooth | iPhone, Android | Named by Ubisoft. Also the usual pick on PC. No phone clip included. |
+| [Xbox Wireless Controller](https://www.amazon.com/dp/B08DF248LD?tag=resurgencebuilds-20) | Bluetooth | iPhone, Android | Named by Ubisoft. Microsoft says it also works with Windows PCs. No phone clip included. |
 | [Backbone One, USB-C (2nd gen)](https://www.amazon.com/dp/B0CCT2LWT8?tag=resurgencebuilds-20) | Plugs into the phone | USB-C Android phones, iPhone 15 and newer | Backbone is named by Ubisoft, and Backbone lists the game as supported. Top pick at WIRED and TechRadar. No battery to charge. |
 | [GameSir G8 Plus](https://www.amazon.com/dp/B0D8JJRCJN?tag=resurgencebuilds-20) | Bluetooth | iPhone, Android | The one we play on. Top pick at Tom's Guide. Back buttons, Hall effect sticks. |
 | [GameSir G8 Galileo](https://www.amazon.com/dp/B0CM3C9HRG?tag=resurgencebuilds-20) | Plugs into the phone | USB-C Android phones (check the listing for iPhone) | Best value at GamesRadar, best Hall effect pad at WIRED. GameSir lists pass-through charging and a headphone jack. |
@@ -106,4 +106,4 @@ We will add the game's own controller settings to this page once we have recorde
 
 ## PC and Steam Deck
 
-On PC the simple route is an Xbox or PlayStation controller, which Steam handles itself. Valve had not rated the game for Steam Deck when we checked on November 15, 2026, though Ubisoft's September patch notes mention a Steam Deck control configuration. Installing, linking your mobile account and the PC requirements are covered in the [PC and Steam guide](/guides/division-resurgence-steam-pc-guide/), and phone and tablet requirements in the [system requirements guide](/guides/division-resurgence-device-compatibility/).
+On PC, Ubisoft says you can use a controller of your choice, and an Xbox or PlayStation pad is the obvious one to try: Microsoft and Sony both say theirs connect to a Windows PC. The Steam store page does not list controller support, so we cannot promise how it behaves there. Valve had not rated the game for Steam Deck when we checked on November 15, 2026, though Ubisoft's September patch notes mention a Steam Deck control configuration. Installing, linking your mobile account and the PC requirements are covered in the [PC and Steam guide](/guides/division-resurgence-steam-pc-guide/), and phone and tablet requirements in the [system requirements guide](/guides/division-resurgence-device-compatibility/).

@@ -35,7 +35,7 @@ product:
     - "You want Bluetooth, so the same pad moves between an Android phone, an iPhone and a tablet"
     - "You want back buttons and Hall effect sticks"
   notFor:
-    - "You do not want one more thing to charge: a plug-in pad draws power from the phone"
+    - "You do not want one more thing to charge. This pad has its own battery; plug-in pads such as the Backbone One have none and run off the phone."
     - "You need a headphone jack or pass-through charging on the controller. Tom's Guide lists neither on this one."
     - "Your phone or tablet is longer than 215 mm"
   buy:
@@ -73,7 +73,7 @@ sources:
 
 Yes. With the pad connected, the game draws controller prompts on the HUD.
 
-![Two hands holding a GameSir G8 Plus with The Division Resurgence on the phone, an agent crouched behind a snow-covered police car, with L1 and R1 prompts over the skill buttons at the bottom of the screen](/images/reviews/gamesir-g8-plus-in-hands-playing.webp "Resurgence on the G8 Plus. Look at the bottom of the screen: L1 and R1 sit over the skill buttons, and a triangle sits by the weapon panel.")
+![Two hands holding a GameSir G8 Plus with The Division Resurgence on the phone, an agent beside a snow-covered car, with L1 and R1 prompts over the skill buttons at the bottom of the screen](/images/reviews/gamesir-g8-plus-in-hands-playing.webp "Resurgence on the G8 Plus. Look at the bottom of the screen: L1 and R1 sit over the skill buttons, and a triangle sits by the weapon panel.")
 
 Two details from that photo are worth knowing before you buy:
 

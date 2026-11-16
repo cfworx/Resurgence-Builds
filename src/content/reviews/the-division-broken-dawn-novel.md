@@ -34,7 +34,7 @@ product:
     - "You want the least expensive Division book that is still sold new"
   notFor:
     - "You want Resurgence's story. This follows the console games."
-    - "You would rather look than read. The two comics cover the same months."
+    - "You would rather look than read. The two comics are also billed as prequels to The Division 2."
   buy:
     - label: "Check price on Amazon"
       href: "https://www.amazon.com/dp/1984803174?tag=resurgencebuilds-20"
@@ -53,16 +53,17 @@ faqs:
   - question: "What is The Division: Broken Dawn about?"
     answer: "Two threads, according to the back cover and Ubisoft. Division agent Aurelio Diaz is hunting an agent who abandoned his post. April Kelleher, the civilian from New York Collapse, has left New York for the Midwest to find out why her husband was murdered and whether a treatment for the virus exists. Their paths meet. Ubisoft says it is set in the months between The Division and The Division 2."
   - question: "Do you need to play the games to read Broken Dawn?"
-    answer: "It is sold as a standalone novel. Ubisoft describes it as a prequel to The Division 2 and a follow-up to the companion book New York Collapse. It starts after the New York outbreak that the first game covers, so knowing that background helps."
+    answer: "Penguin Random House sells it as a new story in the world of The Division 2, and Ubisoft has called it a prequel to that game. It starts months after the New York outbreak that the first game covers, so knowing that background helps. Its April Kelleher is the woman from the companion book New York Collapse."
   - question: "Which edition of Broken Dawn should I buy?"
     answer: "In the US, the Penguin Random House mass market paperback (ISBN 978-1-9848-0317-7) or the ebook. The UK edition is a Titan Books paperback (ISBN 9781789091878). They are the same novel."
 sources:
   - '<a href="https://penguinrandomhouse.com/books/600407/tom-clancys-the-division-by-alex-irvine/9781984803177" target="_blank" rel="noopener noreferrer">Penguin Random House: Tom Clancy''s The Division: Broken Dawn</a>'
   - '<a href="https://news.ubisoft.com/en-us/article/2Q6Nchof1ack3qWsQBuHLs/the-division-broken-dawn-novel-explores-effects-of-global-collapse" target="_blank" rel="noopener noreferrer">Ubisoft News: The Division: Broken Dawn novel explores effects of global collapse</a>'
+  - '<a href="https://www.ubisoft.com/en-sg/game/the-division/news-updates/htXU6ZOzs6tbQr08OIe5u/find-out-more-about-the-division-with-the-books-of-the-game" target="_blank" rel="noopener noreferrer">Ubisoft: Find out more about The Division with the books of the game</a>, January 9, 2019 (calls it a prequel story of The Division 2)'
   - '<a href="https://www.worldofbooks.com/products/tom-clancy-s-the-division-broken-dawn-book-alex-irvine-9781789091878" target="_blank" rel="noopener noreferrer">World of Books: UK edition</a>'
 ---
 
-**Checked November 15, 2026.** Broken Dawn is the series' novel for the months between the two console games. It is written by Alex Irvine, the author behind [New York Collapse](/reviews/new-york-collapse-division-book/), and it carries on the story of that book's narrator, April Kelleher. This page covers what the book is and where it fits. It is not a verdict on the writing.
+**Checked November 15, 2026.** Broken Dawn is the series' novel for the months between the two console games. It is written by Alex Irvine, the author behind [New York Collapse](/reviews/new-york-collapse-division-book/), and one of its two leads is April Kelleher, the woman whose handwritten notes fill that book. This page covers what the book is and where it fits. It is not a verdict on the writing.
 
 ![Front and back covers of the paperback Tom Clancy's The Division: Broken Dawn, with the back cover headed When society falls, we rise](/images/reviews/broken-dawn-front-back-cover.webp "Our copy is the US paperback. The front credits Alex Irvine as the author of New York Collapse.")
 
@@ -70,13 +71,13 @@ sources:
 
 The back cover sets out two threads. Months after the outbreak that began in New York on Black Friday, the country is trying to rebuild, and the Division's agents are what stands between settlements and the people preying on them. Aurelio Diaz is one of those agents, and he is hunting a colleague who walked away from his duty. April Kelleher is a civilian who has travelled out of New York into the Midwest, looking for the reason her husband was killed and for word of a treatment.
 
-Ubisoft places it in the months between The Division and The Division 2, and describes it as both a prequel to the second game and a follow-up to New York Collapse.
+Ubisoft places it in the months between The Division and The Division 2, and a January 2019 Ubisoft article calls it a prequel to the second game. Its April Kelleher is the woman from New York Collapse.
 
 ## Where it fits
 
 Three pieces of fiction cover that same gap between the games: this novel and the two comics, [Extremis Malis](/reviews/the-division-extremis-malis-comic/) and [Remission](/reviews/the-division-remission-graphic-novel/). No publisher has said in what order the three happen, and they follow different characters, so you can read them in any order.
 
-The link that matters is backwards, to New York Collapse: Ubisoft calls this novel a follow-up to it, and April Kelleher is in both.
+The link that matters is backwards, to New York Collapse: April Kelleher, the woman whose notes fill that book, is one of this novel's main characters.
 
 ## If you came here from Resurgence
 

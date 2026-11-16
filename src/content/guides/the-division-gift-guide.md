@@ -14,7 +14,7 @@ faqs:
   - question: "What is a good gift for someone who plays The Division Resurgence?"
     answer: "A phone controller is the gift they will use most: Ubisoft says the game supports PlayStation 5, Xbox and Backbone controllers, and we play on a GameSir G8 Plus over Bluetooth. For a fan of the world, The World of Tom Clancy's The Division is the lore book that explains the series. For a reader, the novel Broken Dawn is inexpensive and still sold new."
   - question: "Is there official Division Resurgence merchandise?"
-    answer: "We found none specific to Resurgence when we checked on November 15, 2026. The official Ubisoft Gear Shop sells a The Division range with the SHD phoenix crest: a mug, a mouse pad, a beanie, hats, T-shirts, a sweatshirt, hoodies and a hockey jersey. The shop's footer says it is run by Snow Commerce under license from Ubisoft."
+    answer: "We found none specific to Resurgence when we checked on November 15, 2026. The official Ubisoft Gear Shop sells a The Division range with the SHD phoenix crest: a mug, a mouse pad, a beanie, hats, T-shirts, a sweatshirt, hoodies and a hockey jersey. The shop's footer says Snow Commerce sells the merchandise under license from Ubisoft."
   - question: "Which controller should I buy as a gift if I do not know their phone?"
     answer: "Pick a Bluetooth one, because it does not depend on the phone's charging port. The GameSir G8 Plus is Bluetooth and its maker lists both iPhone and Android. A PS5 or Xbox controller also connects to both by Bluetooth. Plug-in pads such as the Backbone One come in USB-C and Lightning versions, so you need to know the phone."
   - question: "Which Division book makes the best gift?"
@@ -29,7 +29,7 @@ sources:
   - 'Publisher pages for each book are linked from <a href="/guides/the-division-books-in-order/">The Division books in order</a>'
 ---
 
-**Checked November 15, 2026.** Buying for someone who plays The Division Resurgence, or who has loved The Division since the first game? Here is the short list.
+**Checked November 15, 2026.** Buying a Christmas or birthday present for someone who plays The Division Resurgence, or who has loved The Division since the first game? Here is the short list.
 
 - **They play on a phone:** a controller. It is the one gift on this page that changes how the game feels.
 - **They are new to the series:** [The World of Tom Clancy's The Division](/reviews/world-of-tom-clancys-the-division-book/), the lore book.
@@ -38,6 +38,18 @@ sources:
 - **They want something to wear:** the official SHD range at the Ubisoft Gear Shop.
 
 Everything with a review link is something we own, and the photos are ours. We do not print Amazon prices because they change, especially in the last week of November.
+
+## By budget
+
+The book prices here are the publishers' cover prices, printed on our own copies. The merch prices are what the Ubisoft Gear Shop showed on November 15, 2026. Shops charge more or less than that from day to day, so check before you buy.
+
+| Budget | Ideas |
+|---|---|
+| Free | A [build to try](/tier-list/), and the [free reward codes](/guides/division-resurgence-codes/) |
+| Under $20 | [Broken Dawn](/reviews/the-division-broken-dawn-novel/) ($9.99 cover price), [Extremis Malis](/reviews/the-division-extremis-malis-comic/) ($14.99), [Remission](/reviews/the-division-remission-graphic-novel/) ($19.99), the SHD mug ($15.95) |
+| $20 to $40 | [The World of Tom Clancy's The Division](/reviews/world-of-tom-clancys-the-division-book/) ($39.99) or [The Art of Tom Clancy's The Division](/reviews/art-of-tom-clancys-the-division-book/) ($39.95); an SHD T-shirt, beanie, hat or mouse pad |
+| More than $40 | An SHD hoodie or hockey jersey; a copy of [New York Collapse](/reviews/new-york-collapse-division-book/), which now sells at collector prices |
+| The main present | A phone controller, such as the [GameSir G8 Plus](/reviews/gamesir-g8-plus-division-resurgence/) we play on. We do not print controller prices because they change too often. |
 
 ## A controller, for anyone who plays on a phone
 
@@ -75,7 +87,7 @@ If they have read all of those, the three newer novels (Recruited, Compromised, 
 
 ## Official merch, to wear or put on a desk
 
-Ubisoft's own store now lists only digital items for The Division. The physical merchandise is at the official [Ubisoft Gear Shop](https://ubisoftgearshop.com/collections/the-division), which its footer says is run by Snow Commerce under license from Ubisoft. On November 15, 2026 its Division collection had 11 items, all with the SHD name or the phoenix crest:
+Ubisoft's own store now lists only digital items for The Division. The physical merchandise is at the official [Ubisoft Gear Shop](https://ubisoftgearshop.com/collections/the-division), whose footer says Snow Commerce sells the merchandise under license from Ubisoft. On November 15, 2026 its Division collection had 11 items, all with the SHD name or the phoenix crest:
 
 - a black mug and a gaming mouse pad
 - a beanie and two snapback hats
@@ -96,13 +108,13 @@ One thing to tell them: it is a separate game. Ubisoft's help center says Resurg
 
 ## Small and free
 
-- **A gift card for their phone's store.** Resurgence is free, and what it sells is sold as in-app purchases through the App Store or Google Play. A gift card for whichever store they use covers it.
+- **A gift card for the store they play through.** Resurgence is free and sells its extras as in-app purchases: through the App Store or Google Play on a phone, and the Steam listing shows in-app purchases too. Ask where they play before you buy one.
 - **Free rewards.** Our [codes guide](/guides/division-resurgence-codes/) tracks every free reward and how to claim it, including the bundle for Backbone owners.
 - **A build to try.** Send them the [build tier list](/tier-list/). It costs nothing and it will keep them busy.
 
 ## What to skip
 
-- **The collectibles from 2016 to 2019.** The Ubicollectibles SHD Agent figurine from 2017 is no longer sold by Ubisoft. The agent watch replica only ever came inside the first game's Sleeper Agent Collector's Edition. You will only find these on the resale market.
+- **The collectibles from 2016 to 2019.** The Ubicollectibles SHD Agent figurine from 2017 is no longer sold by Ubisoft. As far as we could find, the agent watch replica only came inside the first game's Sleeper Agent Collector's Edition. You will only find these on the resale market.
 - **The tabletop RPG, for this Christmas.** It was crowdfunded in May and June 2026, and we could not confirm that shops have it yet.
 - **A plug-in controller for a phone you have not checked.** The wrong port means a return.
 

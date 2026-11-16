@@ -11,7 +11,7 @@ shareTitle: "The Division book with a second story in the margins"
 shareText: "Inside New York Collapse: the survival guide, the handwritten notes, the map and the missing poster"
 product:
   name: "Tom Clancy's The Division: New York Collapse"
-  summary: "A survival guide from inside the Division's world, with a second story handwritten in its margins and seven loose items tucked into it. The printed book is long out of the shops, so price is the catch."
+  summary: "A survival guide from inside the Division's world, with a second story handwritten in its margins and seven loose items tucked into it. It appears to be out of print, and copies now sell at collector prices, so price is the catch."
   owned: "RapidF5's own copy. Photos taken November 15, 2026."
   facts:
     - label: "On the cover"
@@ -55,7 +55,7 @@ faqs:
   - question: "Is New York Collapse still in print?"
     answer: "It does not appear to be. The publisher's page had no buy button when we checked on November 15, 2026, and copies on AbeBooks were listed at around $100, new or used. It sold for $24.95 when it came out."
   - question: "Do I need to read New York Collapse before Broken Dawn?"
-    answer: "You do not have to, but they are linked. Ubisoft describes the novel Broken Dawn as a follow-up to New York Collapse, and it continues April Kelleher's story. Both were written by Alex Irvine."
+    answer: "You do not have to, but they are linked. Ubisoft says April Kelleher, the woman whose notes fill New York Collapse, is one of the main characters of the novel Broken Dawn. Alex Irvine is credited on both."
 sources:
   - '<a href="https://www.chroniclebooks.com/products/tom-clancy-s-the-division-new-york-collapse" target="_blank" rel="noopener noreferrer">Chronicle Books: Tom Clancy''s The Division: New York Collapse</a>'
   - '<a href="https://news.ubisoft.com/en-us/article/2Q6Nchof1ack3qWsQBuHLs/the-division-broken-dawn-novel-explores-effects-of-global-collapse" target="_blank" rel="noopener noreferrer">Ubisoft News: The Division: Broken Dawn novel</a> (names April Kelleher and New York Collapse)'
@@ -75,7 +75,7 @@ That is the idea of the whole book. The printed text is the survival guide. The 
 
 ![An open spread of New York Collapse headed Fragile Systems, with a printed chart of New York's commuter population and handwritten notes filling the margins](/images/reviews/new-york-collapse-fragile-systems-pages.webp "The printed guide and the handwritten story share every page. The entries are dated.")
 
-The guide itself is sober reading: sections on how a city depends on outside supplies, why a pandemic is the worst case, what to pack. The notes run beside it in more than one color of ink, with dates and underlining.
+The printed guide is a practical one: our photos show sections on how a city depends on outside supplies, why a pandemic is the biggest threat, and what to pack in a go-bag. The notes run beside it in more than one color of ink, with dates and underlining.
 
 ![A spread from New York Collapse about the go-bag, with a red sketch of a backpack and dense handwriting in black and red ink around the printed text](/images/reviews/new-york-collapse-go-bag-handwritten-notes.webp "The go-bag pages. On some spreads the handwriting fills every margin.")
 

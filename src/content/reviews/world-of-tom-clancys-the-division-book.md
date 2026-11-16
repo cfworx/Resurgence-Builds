@@ -51,7 +51,7 @@ faqs:
   - question: "What is The World of Tom Clancy's The Division about?"
     answer: "It is a hardcover lore book from Dark Horse Books and Ubisoft, published March 19, 2019. It explains the Strategic Homeland Division itself: its history, how agents are recruited, trained and activated, the key characters and factions, and a timeline running from the outbreak in New York to the events of The Division 2 in Washington, D.C. It is a reference book, not a novel."
   - question: "Does The World of Tom Clancy's The Division cover The Division Resurgence?"
-    answer: "No. It was published in 2019, before Resurgence, and covers the first game and The Division 2. It is still useful background: Resurgence is set in New York City and you play one of the first wave of SHD agents, which is exactly what the early chapters explain."
+    answer: "No. It was published in 2019, before Resurgence, and covers the first game and The Division 2. It is still useful background on the Division itself. Ubisoft's page for Resurgence says the game is set in New York City and you play one of the first wave of SHD agents; the book's early chapters explain what the SHD is and how its agents are activated in the console games."
   - question: "How many pages is The World of Tom Clancy's The Division?"
     answer: "Dark Horse's product page lists 200 pages. Other official pages give 192 or 160, so sources disagree. It is a 9 by 12 inch hardcover."
 sources:
@@ -65,7 +65,7 @@ sources:
 
 ## What it is
 
-It is a lore book. There is no plot and no main character. Dark Horse describes it as covering the Division's history, training and structure, its key characters and factions, and a timeline from the outbreak to the events of The Division 2.
+It is a lore book. There is no plot and no main character. Ubisoft describes it as covering the Division's history, training and structure, its key characters and factions, and a timeline from the outbreak to the events of The Division 2.
 
 ![The front cover of The World of Tom Clancy's The Division: a pale cover with an orange phoenix seal reading The Division, SHD, Extremis Malis Extrema Remedia](/images/reviews/world-of-the-division-front-cover.webp "The front cover is the SHD seal.")
 ![The back cover of The World of Tom Clancy's The Division, with three agents looking out over Washington and the Dark Horse, Ubisoft and Massive logos by the barcode](/images/reviews/world-of-the-division-back-cover.webp "The back: agents overlooking Washington, D.C.")
@@ -88,7 +88,7 @@ Most of each spread is artwork, with the text in short blocks, so it is a book t
 
 ## If you came here from Resurgence
 
-Ubisoft's page for Resurgence says you play one of the first wave of SHD agents in New York City. This book explains those words: what SHD is, what the first wave was, how activation works. None of it was written about Resurgence, so do not expect the mobile game's characters or missions. Treat it as the background the game assumes you have.
+Ubisoft's page for Resurgence says you play one of the first wave of SHD agents in New York City. This book explains the Division as the console games describe it: what the SHD is and how its agents are activated. None of it was written about Resurgence, so do not expect the mobile game's characters or missions.
 
 Once you know the world, the rest of the site is about playing in it: start with [which class to pick](/guides/which-specialization-to-pick/).
 

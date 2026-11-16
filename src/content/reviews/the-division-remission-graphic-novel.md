@@ -6,7 +6,7 @@ lastUpdated: 2026-11-15
 description: "A look inside our copy of Tom Clancy's The Division: Remission, the graphic novel by JD Morvan and The Tribe: what it is about, how it differs from Extremis Malis, and where it fits before The Division 2."
 author: "RapidF5"
 featuredImage: "/images/reviews/remission-front-back-cover-1200.webp"
-imageAlt: "Front and back covers of the hardcover graphic novel Tom Clancy's The Division: Remission, the front showing two armed figures on the steps of the Lincoln Memorial"
+imageAlt: "Front and back covers of the hardcover graphic novel Tom Clancy's The Division: Remission, the front showing three figures with weapons and backpacks on the steps of the Lincoln Memorial"
 shareTitle: "Four friends, one wrecked capital"
 shareText: "Inside The Division: Remission, the graphic novel set in Washington before The Division 2"
 product:
