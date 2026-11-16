@@ -57,7 +57,7 @@ sources:
 
 | Plateforme | Téléchargement officiel | Ce qu'il faut | Espace |
 |---|---|---|---|
-| iPhone, iPad | [App Store](https://apps.apple.com/app/the-division-resurgence/id1606349410) | iOS ou iPadOS 15.0 et une puce A12 Bionic ou plus récente | Application : environ 4 Go. Jeu complet : environ 10,5 Go |
+| iPhone, iPad | [App Store](https://apps.apple.com/app/the-division-resurgence/id1606349410) | iOS ou iPadOS 15.0 ou version ultérieure et une puce A12 Bionic ou plus récente | Application : environ 4 Go. Jeu complet : environ 10,5 Go |
 | Android | [Google Play](https://play.google.com/store/apps/details?id=com.ubisoft.the.division.mobile.combat.shooting.open.world.rpg) | Android 6, 4 Go de RAM, un appareil figurant sur la liste d'Ubisoft | Environ 10,5 Go |
 | PC Windows | [Steam](https://store.steampowered.com/app/3749720/The_Division_Resurgence/) | Windows 11 | Environ 17 Go |
 | PC Windows | [Ubisoft Connect](https://store.ubisoft.com/62e7cc7251f14849aaca73c8.html) | Windows 11 | Environ 17 Go |

@@ -139,6 +139,17 @@ html {
   }
 }
 
+/* Japanese pages (TRANSLATIONS.md): the device's Japanese fonts stand behind the Latin ones, so labels set in the
+   mono face do not fall to an old bitmap font on Windows, and lines break where Japanese allows. */
+html:lang(ja) {
+  --font-heading: 'DM Sans', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', 'Yu Gothic UI', 'Meiryo', sans-serif;
+  --font-body: 'DM Sans', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', 'Yu Gothic UI', 'Meiryo', sans-serif;
+  --font-mono: 'JetBrains Mono', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', 'Yu Gothic UI', 'Meiryo', monospace;
+  line-break: strict;
+}
+/* Headings break between phrases instead of inside a word, where the browser can (Chrome and Edge today) */
+html:lang(ja) :is(h1, h2, h3, summary) { word-break: auto-phrase; }
+
 body {
   font-family: var(--font-body);
   font-weight: 400;

@@ -4,7 +4,7 @@ source: "division-resurgence-crossplay"
 title: >-
   Ist The Division Resurgence Crossplay? PC, iOS und Android
 description: >-
-  Ja: The Division Resurgence hat volles Crossplay und Crossplay-Fortschritt zwischen iPhone, Android und PC. Ubisofts zwei Bedingungen und wie du es abschaltest.
+  Ja: The Division Resurgence hat volles Crossplay und Crossplay-Fortschritt zwischen iPhone, Android und PC. Ubisofts zwei Bedingungen und ob es sich abschalten lässt.
 imageAlt: >-
   Ein Agent von hinten im Safe House The Cavern in The Division Resurgence, unter Lichterketten, mit dem Titel Crossplay
 sourceUpdated: 2026-11-15
@@ -25,7 +25,7 @@ faqs:
   - question: >-
       Kann man Crossplay in The Division Resurgence ausschalten?
     answer: >-
-      Ja. Laut der Steam-Seite des Spiels kannst du die volle Crossplay-Unterstützung ein- oder ausschalten, und mit den Patchnotes zu Season 2 Phase 1 kam eine eigene Schaltfläche für die Crossplay-Auswahl mit Matchmaking-Optionen hinzu.
+      Ja. Laut der Steam-Seite des Spiels kannst du die volle Crossplay-Unterstützung ein- oder ausschalten, und mit dem Update Season 2 Phase 1 kam eine eigene Schaltfläche für die Crossplay-Auswahl mit Matchmaking-Optionen hinzu.
   - question: >-
       Gibt es The Division Resurgence für PS5, Xbox oder Switch?
     answer: >-

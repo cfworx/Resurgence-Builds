@@ -21,6 +21,8 @@ export interface Props {
   lastUpdated: Date;
   /** The English guide has changed since this translation was made */
   stale: boolean;
+  /** The English guide's own last-updated date, printed in the line that says the translation may be behind */
+  englishUpdated?: Date;
   englishPath: string;
   versions: Version[];
   alternates: { hreflang: string; href: string }[];
@@ -31,7 +33,7 @@ export interface Props {
   more?: { title: string; path: string }[];
 }
 
-const { lang, title, description, imageAlt, featuredImage, author, publishDate, lastUpdated, stale, englishPath, versions, alternates, headings = [], faqs = [], sources = [], more = [] } = Astro.props;
+const { lang, title, description, imageAlt, featuredImage, author, publishDate, lastUpdated, stale, englishUpdated, englishPath, versions, alternates, headings = [], faqs = [], sources = [], more = [] } = Astro.props;
 const ui = lang.ui;
 const heroImg = postImage(featuredImage);
 const fmt = (d: Date) => d.toLocaleDateString(lang.tag, { timeZone: 'UTC', year: 'numeric', month: 'long', day: 'numeric' });
@@ -57,7 +59,7 @@ const others = versions.filter((v) => v.code !== lang.code);
   alternates={alternates}
 >
   <div class="container section">
-    <Breadcrumbs items={breadcrumbItems} />
+    <Breadcrumbs items={breadcrumbItems} homeLabel={ui.home} />
     <SectionTag label={ui.guide} />
     <h1 class="heading-accent">{title}</h1>
 
@@ -106,7 +108,7 @@ const others = versions.filter((v) => v.code !== lang.code);
     <article class="prose content-width">
       <p class="tr-note">
         {ui.note} <a href={englishPath} hreflang="en" lang="en">{ui.original}</a>
-        {stale && <><br />{ui.stale.replace('{date}', fmt(lastUpdated))}</>}
+        {stale && <><br />{ui.stale.replace('{date}', fmt(englishUpdated ?? lastUpdated))}</>}
       </p>
 
       <slot />

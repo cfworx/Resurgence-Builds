@@ -144,7 +144,7 @@ export const LANGS: Lang[] = [
   {
     code: 'ja', tag: 'ja', ogLocale: 'ja_JP', name: '日本語', english: 'Japanese',
     ui: {
-      home: 'ホーム', guides: 'ガイド', guide: 'ガイド', by: '執筆:', updated: '最終更新', contents: '目次',
+      home: 'ホーム', guides: 'ガイド', guide: 'ガイド', by: '執筆：', updated: '最終更新', contents: '目次',
       questions: 'よくある質問', sources: '出典',
       note: 'このページは英語版ガイドの翻訳です。日本語での表記を確認できなかったゲーム内の名称は、英語のまま記載しています。',
       stale: '英語版は{date}に更新されました。この翻訳は最新でない可能性があります。',
@@ -152,7 +152,7 @@ export const LANGS: Lang[] = [
       hubTitle: 'ディビジョン リサージェンス 日本語ガイド', hubH1: 'ディビジョン リサージェンス 日本語ガイド',
       hubIntro: 'ディビジョン リサージェンスの日本語ガイドです。ビルド、ティアリスト、データベース、ビルドプランナーは英語で提供しています。',
       toolsTitle: 'ツール（英語）', planner: 'ビルドプランナー', tierList: 'ティアリスト', map: 'インタラクティブマップ', database: 'データベース', builds: 'ビルド',
-      more: '日本語のガイド一覧',
+      more: 'ほかの日本語ガイド',
     },
   },
   {

@@ -1,12 +1,14 @@
 ---
 export interface Props {
   items: { name: string; url: string }[];
+  /** The first link's label; translated pages pass their own word for it */
+  homeLabel?: string;
 }
-const { items } = Astro.props;
+const { items, homeLabel = 'Home' } = Astro.props;
 ---
 
 <nav class="breadcrumbs" aria-label="Breadcrumb">
-  <a href="/">Home</a>
+  <a href="/">{homeLabel}</a>
   {items.map((item, i) => (
     <>
       <span class="breadcrumbs__separator" aria-hidden="true">/</span>

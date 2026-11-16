@@ -4,7 +4,7 @@ category: "General"
 publishDate: 2026-11-15
 lastUpdated: 2026-11-15
 tags: ["Crossplay", "Cross-Progression", "PC", "Steam"]
-description: "Yes: The Division Resurgence has full crossplay and cross-progression between iPhone, Android and PC. The two conditions Ubisoft sets, how to switch crossplay off, and what does not carry over."
+description: "Yes: The Division Resurgence has full crossplay and cross-progression between iPhone, Android and PC. The two conditions Ubisoft sets, whether crossplay can be switched off, and what does not carry over."
 author: "RapidF5"
 featuredImage: "/images/guides/division-resurgence-crossplay-guide-cavern-safe-house-1200.webp"
 imageAlt: "An agent seen from behind in The Cavern safe house in The Division Resurgence, under strings of lights, with the title Crossplay"
@@ -18,7 +18,7 @@ faqs:
   - question: "Can PC and mobile players play together in The Division Resurgence?"
     answer: "Yes, on the same regional server. Since Season 2 Phase 1 (August 5, 2026) there is a crossplay selector with matchmaking options, and groups made up only of mobile players can stay in mobile Dark Zone instances instead of being placed in cross-platform ones."
   - question: "Can you turn off crossplay in The Division Resurgence?"
-    answer: "Yes. The game's Steam page says you can toggle full cross-play support on or off, and the Season 2 Phase 1 patch notes added a dedicated crossplay selector button with matchmaking options."
+    answer: "Yes. The game's Steam page says you can toggle full cross-play support on or off, and the Season 2 Phase 1 update added a dedicated crossplay selector button with matchmaking options."
   - question: "Is The Division Resurgence on PS5, Xbox or Switch?"
     answer: "No. As of November 15, 2026 the game is on iOS, Android and PC (Steam and Ubisoft Connect), and Ubisoft has not announced a console version. You can still play with a PlayStation or Xbox controller."
 sources:

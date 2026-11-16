@@ -4,7 +4,7 @@ source: "division-resurgence-crossplay"
 title: >-
   The Division Resurgence tem crossplay? PC, iOS e Android
 description: >-
-  Sim: The Division Resurgence tem crossplay total e progresso multiplataforma entre iPhone, Android e PC. As duas condições, como desativar e o que fica de fora.
+  Sim: The Division Resurgence tem crossplay total e progresso multiplataforma entre iPhone, Android e PC. As duas condições, se dá para desativar e o que fica de fora.
 imageAlt: >-
   Um agente visto de costas na safe house The Cavern, em The Division Resurgence, sob cordões de luzes, com o título Crossplay
 sourceUpdated: 2026-11-15

@@ -36,6 +36,7 @@ const stale = guide.data.lastUpdated.getTime() > t.data.sourceUpdated.getTime();
   publishDate={guide.data.publishDate}
   lastUpdated={t.data.sourceUpdated}
   stale={stale}
+  englishUpdated={guide.data.lastUpdated}
   englishPath={`/guides/${guide.id}/`}
   versions={versions}
   alternates={alternatesOf(versions)}
