@@ -60,6 +60,10 @@ const PRIORITY_PATHS = [
   '/patch-notes/',
   '/news/',
   '/guides/',
+  '/reviews/',
+  '/guides/division-resurgence-controller-guide/',
+  '/guides/the-division-books-in-order/',
+  '/guides/the-division-gift-guide/',
 ];
 
 const sitemapPathSet = new Set(sitemapUrls.map(u => new URL(u).pathname));

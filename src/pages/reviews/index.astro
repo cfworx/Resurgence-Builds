@@ -1,0 +1,85 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PostCard from '../../components/PostCard.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import SectionTag from '../../components/SectionTag.astro';
+import { getCollection } from 'astro:content';
+import { REVIEW_ORDER } from '../../utils/reviews';
+
+const all = await getCollection('reviews');
+const rank = (id: string) => { const i = REVIEW_ORDER.indexOf(id); return i < 0 ? REVIEW_ORDER.length : i; };
+const reviews = all.sort((a, b) => rank(a.id) - rank(b.id) || b.data.publishDate.getTime() - a.data.publishDate.getTime());
+
+const breadcrumbItems = [{ name: 'Reviews', url: '/reviews/' }];
+const siteUrl = Astro.site?.toString().replace(/\/$/, '') || 'https://resurgencebuilds.com';
+const itemListLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: 'The Division gear and book reviews',
+  itemListElement: reviews.map((r, i) => ({ '@type': 'ListItem', position: i + 1, name: r.data.title, url: `${siteUrl}/reviews/${r.id}/` })),
+};
+const hubs = [
+  { href: '/guides/division-resurgence-controller-guide/', title: 'Controllers that work with Resurgence', text: 'What Ubisoft supports on iPhone, Android and PC, and the pad we play on.' },
+  { href: '/guides/the-division-books-in-order/', title: 'The Division books and comics in order', text: 'Every novel, comic, lore book and audio drama, with where each one sits in the story.' },
+  { href: '/guides/the-division-gift-guide/', title: 'Gifts for The Division fans', text: 'Controllers, books, comics and official merch, sorted by who you are buying for.' },
+];
+---
+
+<BaseLayout
+  title="The Division Reviews: Controllers, Books and Comics We Own"
+  description="Reviews of the controller we play The Division Resurgence on and the Division books and comics on our shelf: our own photos, facts checked with the publishers, and where to buy."
+  breadcrumbs={breadcrumbItems}
+  jsonLd={itemListLd}
+>
+  <div class="container section">
+    <Breadcrumbs items={breadcrumbItems} />
+    <SectionTag label="Reviews" />
+    <h1 class="heading-accent">Gear and Book Reviews</h1>
+    <p class="rv-intro">
+      Everything here is something RapidF5 owns, and the photos are his. Facts such as page counts, dates and ISBNs come from the
+      item itself or its publisher, and each page links its sources. Buttons marked Amazon are paid links: if you buy through one we
+      earn a commission and you pay the same.
+    </p>
+
+    <ul class="rv-hubs">
+      {hubs.map((h) => (
+        <li><a href={h.href}><strong>{h.title}</strong><span>{h.text}</span></a></li>
+      ))}
+    </ul>
+
+    <div class="grid grid--3">
+      {reviews.map((r, i) => (
+        <div style="display:flex;height:100%;">
+          <PostCard
+            title={r.data.title}
+            href={`/reviews/${r.id}/`}
+            date={r.data.publishDate}
+            author={r.data.author || 'RapidF5'}
+            description={r.data.description}
+            type="review"
+            tags={[r.data.kind]}
+            tagLinks={false}
+            featuredImage={r.data.featuredImage}
+            imageAlt={r.data.imageAlt}
+            eager={i < 3}
+          />
+        </div>
+      ))}
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .rv-intro { color: var(--ink-muted); max-width: 46rem; margin-bottom: var(--sp-6); }
+  .rv-hubs { list-style: none; margin: 0 0 var(--sp-8); padding: 0; display: grid; gap: var(--sp-3); }
+  @media (min-width: 52em) { .rv-hubs { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+  .rv-hubs li { margin: 0; }
+  .rv-hubs a {
+    display: grid; gap: var(--sp-1); height: 100%; padding: var(--sp-4);
+    border: 1px solid var(--border); border-left: 3px solid var(--accent); border-radius: var(--radius-sm);
+    background: var(--surface); text-decoration: none;
+  }
+  .rv-hubs a:hover { border-color: var(--accent); }
+  .rv-hubs strong { color: var(--ink-heading); font-size: var(--step-0); line-height: var(--lh-snug); }
+  .rv-hubs span { color: var(--ink-muted); font-size: var(--text-sm); line-height: var(--lh-small); }
+</style>

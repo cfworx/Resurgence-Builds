@@ -1,0 +1,124 @@
+---
+// The box at the top of a review: what the thing is, that we own it, the facts, who it suits, where to buy.
+// Data: the `product` block in the review's frontmatter (src/content.config.ts).
+// Amazon buttons are affiliate links, so they carry rel="sponsored" and the Associates sentence sits under them
+// (scripts/audit-indexation.mjs checks both). No price is ever shown next to an Amazon button: Amazon's rules.
+import { AMAZON_DISCLOSURE } from '../data/site-config';
+
+interface Props {
+  product: {
+    name: string;
+    summary: string;
+    owned: string;
+    facts: { label: string; value: string }[];
+    goodFor?: string[];
+    notFor?: string[];
+    buy?: { label: string; href: string; note?: string }[];
+    buyNote?: string;
+    score?: { value: number; by: string; note?: string };
+  };
+}
+const { product } = Astro.props;
+const isAmazon = (href: string) => {
+  const u = new URL(href);
+  return /(^|\.)amazon\.com$/i.test(u.hostname) && u.searchParams.has('tag');
+};
+const buy = product.buy || [];
+const hasAmazon = buy.some((b) => isAmazon(b.href));
+---
+
+<section class="pbox" aria-label={`${product.name}: the short version`}>
+  <p class="pbox__owned">
+    <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+    <span>{product.owned}</span>
+  </p>
+  <p class="pbox__summary">{product.summary}</p>
+
+  {product.score && (
+    <p class="pbox__score"><strong>{product.score.value}</strong><span class="pbox__outof">/10</span> <span class="pbox__by">{product.score.by}{product.score.note && `: ${product.score.note}`}</span></p>
+  )}
+
+  <dl class="pbox__facts">
+    {product.facts.map((f) => (
+      <div><dt>{f.label}</dt><dd>{f.value}</dd></div>
+    ))}
+  </dl>
+
+  {(product.goodFor || product.notFor) && (
+    <div class="pbox__fit">
+      {product.goodFor && (
+        <div>
+          <p class="pbox__h pbox__h--yes">Buy it if</p>
+          <ul>{product.goodFor.map((x) => <li>{x}</li>)}</ul>
+        </div>
+      )}
+      {product.notFor && (
+        <div>
+          <p class="pbox__h pbox__h--no">Skip it if</p>
+          <ul>{product.notFor.map((x) => <li>{x}</li>)}</ul>
+        </div>
+      )}
+    </div>
+  )}
+
+  {buy.length > 0 && (
+    <div class="pbox__buy">
+      <div class="pbox__btns">
+        {buy.map((b) => isAmazon(b.href)
+          ? <a class="pbox__btn pbox__btn--main" href={b.href} target="_blank" rel="sponsored noopener">{b.label}</a>
+          : <a class="pbox__btn" href={b.href} target="_blank" rel="noopener noreferrer">{b.label}</a>)}
+      </div>
+      {product.buyNote && <p class="pbox__note">{product.buyNote}</p>}
+      {hasAmazon && <p class="pbox__note">The Amazon button is a paid link: buy through it and we earn a commission, at no extra cost to you. {AMAZON_DISCLOSURE}</p>}
+    </div>
+  )}
+</section>
+
+<style>
+  .pbox {
+    margin: 0 0 var(--sp-8);
+    padding: var(--sp-4);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent);
+    border-radius: var(--radius-sm);
+    background: var(--surface);
+  }
+  @media (min-width: 45em) { .pbox { padding: var(--sp-6); } }
+  .pbox p { margin: 0; max-width: none; }
+  .pbox__owned {
+    display: flex; align-items: flex-start; gap: var(--sp-2);
+    font-size: var(--text-sm); font-weight: 700; color: #8fd06a; line-height: var(--lh-small);
+  }
+  .pbox__owned svg { flex: none; margin-top: 1px; }
+  .pbox__summary { margin-top: var(--sp-3) !important; font-size: var(--step-1); line-height: 1.45; color: var(--ink-heading); }
+  .pbox__score { margin-top: var(--sp-3) !important; color: var(--ink-heading); }
+  .pbox__score strong { font-size: var(--step-3); color: var(--accent); }
+  .pbox__outof { color: var(--ink-muted); }
+  .pbox__by { font-size: var(--text-sm); color: var(--ink-muted); }
+
+  .pbox__facts { display: grid; gap: 0; margin: var(--sp-4) 0 0; border-top: 1px solid var(--border); }
+  .pbox__facts div { display: grid; grid-template-columns: minmax(6.5rem, 30%) minmax(0, 1fr); gap: var(--sp-3); padding: var(--sp-2) 0; border-bottom: 1px solid var(--border); }
+  .pbox__facts dt { font-size: var(--text-sm); color: var(--ink-muted); line-height: var(--lh-small); }
+  .pbox__facts dd { margin: 0; font-size: var(--text-sm); color: var(--ink-heading); line-height: var(--lh-small); overflow-wrap: anywhere; }
+
+  .pbox__fit { display: grid; gap: var(--sp-4); margin-top: var(--sp-4); }
+  @media (min-width: 45em) { .pbox__fit { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--sp-6); } }
+  .pbox__h { font-weight: 800; font-size: var(--text-sm); }
+  .pbox__h--yes { color: #8fd06a; }
+  .pbox__h--no { color: #f0907f; }
+  .pbox__fit ul { margin: var(--sp-2) 0 0; padding-left: 1.1rem; }
+  .pbox__fit li { margin: 0 0 var(--sp-1); font-size: var(--text-sm); line-height: var(--lh-small); color: var(--ink); }
+
+  .pbox__buy { margin-top: var(--sp-5); }
+  .pbox__btns { display: flex; flex-wrap: wrap; gap: var(--sp-3); }
+  .pbox__btn {
+    display: inline-flex; align-items: center; justify-content: center; min-height: var(--control-lg);
+    padding: 0 var(--sp-5); border-radius: var(--radius-sm); border: 1px solid var(--line-strong);
+    color: var(--ink-heading); font-weight: 800; font-size: var(--text-sm); text-decoration: none; text-align: center;
+  }
+  .pbox__btn:hover { border-color: var(--accent); color: var(--accent); }
+  .pbox__btn--main { background: var(--accent); border-color: var(--accent); color: #111; }
+  .pbox__btn--main:hover { color: #000; filter: brightness(1.08); }
+  @media (max-width: 30em) { .pbox__btn { flex: 1 1 100%; } }
+  .pbox__note { margin-top: var(--sp-3) !important; font-size: var(--step--2); line-height: var(--lh-small); color: var(--ink-muted); }
+</style>

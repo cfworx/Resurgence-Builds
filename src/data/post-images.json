@@ -298,6 +298,29 @@
   ],
   "small": "/images/guides/division-resurgence-best-pve-dps-builds-damage-numbers-480.webp"
  },
+ "/images/guides/division-resurgence-controller-guide-gamesir-1200.webp": {
+  "width": 1200,
+  "height": 630,
+  "srcset": [
+   [
+    480,
+    "/images/guides/division-resurgence-controller-guide-gamesir-480.webp"
+   ],
+   [
+    800,
+    "/images/guides/division-resurgence-controller-guide-gamesir-800.webp"
+   ],
+   [
+    1200,
+    "/images/guides/division-resurgence-controller-guide-gamesir-1200.webp"
+   ],
+   [
+    1600,
+    "/images/guides/division-resurgence-controller-guide-gamesir-1600.webp"
+   ]
+  ],
+  "small": "/images/guides/division-resurgence-controller-guide-gamesir-480.webp"
+ },
  "/images/guides/division-resurgence-dark-zone-guide-base-of-operations-map-1200.webp": {
   "width": 1200,
   "height": 630,
@@ -527,6 +550,52 @@
    ]
   ],
   "small": "/images/guides/division-resurgence-tactical-augmentation-modules-guide-map-room-480.webp"
+ },
+ "/images/guides/the-division-books-in-order-covers-1200.webp": {
+  "width": 1200,
+  "height": 630,
+  "srcset": [
+   [
+    480,
+    "/images/guides/the-division-books-in-order-covers-480.webp"
+   ],
+   [
+    800,
+    "/images/guides/the-division-books-in-order-covers-800.webp"
+   ],
+   [
+    1200,
+    "/images/guides/the-division-books-in-order-covers-1200.webp"
+   ],
+   [
+    1600,
+    "/images/guides/the-division-books-in-order-covers-1600.webp"
+   ]
+  ],
+  "small": "/images/guides/the-division-books-in-order-covers-480.webp"
+ },
+ "/images/guides/the-division-gift-guide-books-and-controller-1200.webp": {
+  "width": 1200,
+  "height": 630,
+  "srcset": [
+   [
+    480,
+    "/images/guides/the-division-gift-guide-books-and-controller-480.webp"
+   ],
+   [
+    800,
+    "/images/guides/the-division-gift-guide-books-and-controller-800.webp"
+   ],
+   [
+    1200,
+    "/images/guides/the-division-gift-guide-books-and-controller-1200.webp"
+   ],
+   [
+    1600,
+    "/images/guides/the-division-gift-guide-books-and-controller-1600.webp"
+   ]
+  ],
+  "small": "/images/guides/the-division-gift-guide-books-and-controller-480.webp"
  },
  "/images/news/division-resurgence-a-new-enemy-speedrun-july-festive-street-1200.webp": {
   "width": 1200,
@@ -1355,6 +1424,616 @@
    ]
   ],
   "small": "/images/patch-notes/division-resurgence-season-2-the-call-patch-notes-isac-signal-480.webp"
+ },
+ "/images/reviews/art-of-the-division-back-cover-900.webp": {
+  "width": 900,
+  "height": 1143,
+  "srcset": [
+   [
+    480,
+    "/images/reviews/art-of-the-division-back-cover-480.webp"
+   ],
+   [
+    800,
+    "/images/reviews/art-of-the-division-back-cover-800.webp"
+   ],
+   [
+    900,
+    "/images/reviews/art-of-the-division-back-cover-900.webp"
+   ]
+  ],
+  "small": "/images/reviews/art-of-the-division-back-cover-480.webp"
+ },
+ "/images/reviews/art-of-the-division-church-concept-art-1200.webp": {
+  "width": 1200,
+  "height": 630,
+  "srcset": [
+   [
+    480,
+    "/images/reviews/art-of-the-division-church-concept-art-480.webp"
+   ],
+   [
+    800,
+    "/images/reviews/art-of-the-division-church-concept-art-800.webp"
+   ],
+   [
+    1200,
+    "/images/reviews/art-of-the-division-church-concept-art-1200.webp"
+   ],
+   [
+    1600,
+    "/images/reviews/art-of-the-division-church-concept-art-1600.webp"
+   ]
+  ],
+  "small": "/images/reviews/art-of-the-division-church-concept-art-480.webp"
+ },
+ "/images/reviews/art-of-the-division-front-cover-900.webp": {
+  "width": 900,
+  "height": 1228,
+  "srcset": [
+   [
+    480,
+    "/images/reviews/art-of-the-division-front-cover-480.webp"
+   ],
+   [
+    800,
+    "/images/reviews/art-of-the-division-front-cover-800.webp"
+   ],
+   [
+    900,
+    "/images/reviews/art-of-the-division-front-cover-900.webp"
+   ]
+  ],
+  "small": "/images/reviews/art-of-the-division-front-cover-480.webp"
+ },
+ "/images/reviews/art-of-the-division-hudson-refugee-camp-1000.webp": {
+  "width": 1000,
+  "height": 622,
+  "srcset": [
+   [
+    480,
+    "/images/reviews/art-of-the-division-hudson-refugee-camp-480.webp"
+   ],
+   [
+    800,
+    "/images/reviews/art-of-the-division-hudson-refugee-camp-800.webp"
+   ],
+   [
+    1000,
+    "/images/reviews/art-of-the-division-hudson-refugee-camp-1000.webp"
+   ]
+  ],
+  "small": "/images/reviews/art-of-the-division-hudson-refugee-camp-480.webp"
+ },
+ "/images/reviews/art-of-the-division-subway-concept-art-1000.webp": {
+  "width": 1000,
+  "height": 720,
+  "srcset": [
+   [
+    480,
+    "/images/reviews/art-of-the-division-subway-concept-art-480.webp"
+   ],
+   [
+    800,
+    "/images/reviews/art-of-the-division-subway-concept-art-800.webp"
+   ],
+   [
+    1000,
+    "/images/reviews/art-of-the-division-subway-concept-art-1000.webp"
+   ]
+  ],
+  "small": "/images/reviews/art-of-the-division-subway-concept-art-480.webp"
+ },
+ "/images/reviews/broken-dawn-front-back-cover-1200.webp": {
+  "width": 1200,
+  "height": 630,
+  "srcset": [
+   [
+    480,
+    "/images/reviews/broken-dawn-front-back-cover-480.webp"
+   ],
+   [
+    800,
+    "/images/reviews/broken-dawn-front-back-cover-800.webp"
+   ],
+   [
+    1200,
+    "/images/reviews/broken-dawn-front-back-cover-1200.webp"
+   ],
+   [
+    1600,
+    "/images/reviews/broken-dawn-front-back-cover-1600.webp"
+   ]
+  ],
+  "small": "/images/reviews/broken-dawn-front-back-cover-480.webp"
+ },
+ "/images/reviews/extremis-malis-chapter-two-page-700.webp": {
+  "width": 700,
+  "height": 1019,
+  "srcset": [
+   [
+    480,
+    "/images/reviews/extremis-malis-chapter-two-page-480.webp"
+   ],
+   [
+    700,
+    "/images/reviews/extremis-malis-chapter-two-page-700.webp"
+   ]
+  ],
+  "small": "/images/reviews/extremis-malis-chapter-two-page-480.webp"
+ },
+ "/images/reviews/extremis-malis-front-back-cover-1200.webp": {
+  "width": 1200,
+  "height": 630,
+  "srcset": [
+   [
+    480,
+    "/images/reviews/extremis-malis-front-back-cover-480.webp"
+   ],
+   [
+    800,
+    "/images/reviews/extremis-malis-front-back-cover-800.webp"
+   ],
+   [
+    1200,
+    "/images/reviews/extremis-malis-front-back-cover-1200.webp"
+   ],
+   [
+    1600,
+    "/images/reviews/extremis-malis-front-back-cover-1600.webp"
+   ]
+  ],
+  "small": "/images/reviews/extremis-malis-front-back-cover-480.webp"
+ },
+ "/images/reviews/extremis-malis-pages-30-31-1000.webp": {
+  "width": 1000,
+  "height": 719,
+  "srcset": [
+   [
+    480,
+    "/images/reviews/extremis-malis-pages-30-31-480.webp"
+   ],
+   [
+    800,
+    "/images/reviews/extremis-malis-pages-30-31-800.webp"
+   ],
+   [
+    1000,
+    "/images/reviews/extremis-malis-pages-30-31-1000.webp"
+   ]
+  ],
+  "small": "/images/reviews/extremis-malis-pages-30-31-480.webp"
+ },
+ "/images/reviews/gamesir-g8-plus-back-buttons-l4-r4-1200.webp": {
+  "width": 1200,
+  "height": 761,
+  "srcset": [
+   [
+    480,
+    "/images/reviews/gamesir-g8-plus-back-buttons-l4-r4-480.webp"
+   ],
+   [
+    800,
+    "/images/reviews/gamesir-g8-plus-back-buttons-l4-r4-800.webp"
+   ],
+   [
+    1200,
+    "/images/reviews/gamesir-g8-plus-back-buttons-l4-r4-1200.webp"
+   ],
+   [
+    1400,
+    "/images/reviews/gamesir-g8-plus-back-buttons-l4-r4-1400.webp"
+   ]
+  ],
+  "small": "/images/reviews/gamesir-g8-plus-back-buttons-l4-r4-480.webp"
+ },
+ "/images/reviews/gamesir-g8-plus-division-resurgence-running-1200.webp": {
+  "width": 1200,
+  "height": 630,
+  "srcset": [
+   [
+    480,
+    "/images/reviews/gamesir-g8-plus-division-resurgence-running-480.webp"
+   ],
+   [
+    800,
+    "/images/reviews/gamesir-g8-plus-division-resurgence-running-800.webp"
+   ],
+   [
+    1200,
+    "/images/reviews/gamesir-g8-plus-division-resurgence-running-1200.webp"
+   ],
+   [
+    1600,
+    "/images/reviews/gamesir-g8-plus-division-resurgence-running-1600.webp"
+   ]
+  ],
+  "small": "/images/reviews/gamesir-g8-plus-division-resurgence-running-480.webp"
+ },
+ "/images/reviews/gamesir-g8-plus-front-top-down-1200.webp": {
+  "width": 1200,
+  "height": 640,
+  "srcset": [
+   [
+    480,
+    "/images/reviews/gamesir-g8-plus-front-top-down-480.webp"
+   ],
+   [
+    800,
+    "/images/reviews/gamesir-g8-plus-front-top-down-800.webp"
+   ],
+   [
+    1200,
+    "/images/reviews/gamesir-g8-plus-front-top-down-1200.webp"
+   ],
+   [
+    1400,
+    "/images/reviews/gamesir-g8-plus-front-top-down-1400.webp"
+   ]
+  ],
+  "small": "/images/reviews/gamesir-g8-plus-front-top-down-480.webp"
+ },
+ "/images/reviews/gamesir-g8-plus-in-hands-playing-1200.webp": {
+  "width": 1200,
+  "height": 684,
+  "srcset": [
+   [
+    480,
+    "/images/reviews/gamesir-g8-plus-in-hands-playing-480.webp"
+   ],
+   [
+    800,
+    "/images/reviews/gamesir-g8-plus-in-hands-playing-800.webp"
+   ],
+   [
+    1200,
+    "/images/reviews/gamesir-g8-plus-in-hands-playing-1200.webp"
+   ],
+   [
+    1400,
+    "/images/reviews/gamesir-g8-plus-in-hands-playing-1400.webp"
+   ]
+  ],
+  "small": "/images/reviews/gamesir-g8-plus-in-hands-playing-480.webp"
+ },
+ "/images/reviews/gamesir-g8-plus-triggers-bumpers-1200.webp": {
+  "width": 1200,
+  "height": 538,
+  "srcset": [
+   [
+    480,
+    "/images/reviews/gamesir-g8-plus-triggers-bumpers-480.webp"
+   ],
+   [
+    800,
+    "/images/reviews/gamesir-g8-plus-triggers-bumpers-800.webp"
+   ],
+   [
+    1200,
+    "/images/reviews/gamesir-g8-plus-triggers-bumpers-1200.webp"
+   ],
+   [
+    1400,
+    "/images/reviews/gamesir-g8-plus-triggers-bumpers-1400.webp"
+   ]
+  ],
+  "small": "/images/reviews/gamesir-g8-plus-triggers-bumpers-480.webp"
+ },
+ "/images/reviews/gamesir-g8-plus-usb-c-port-pairing-button-1200.webp": {
+  "width": 1200,
+  "height": 486,
+  "srcset": [
+   [
+    480,
+    "/images/reviews/gamesir-g8-plus-usb-c-port-pairing-button-480.webp"
+   ],
+   [
+    800,
+    "/images/reviews/gamesir-g8-plus-usb-c-port-pairing-button-800.webp"
+   ],
+   [
+    1200,
+    "/images/reviews/gamesir-g8-plus-usb-c-port-pairing-button-1200.webp"
+   ],
+   [
+    1400,
+    "/images/reviews/gamesir-g8-plus-usb-c-port-pairing-button-1400.webp"
+   ]
+  ],
+  "small": "/images/reviews/gamesir-g8-plus-usb-c-port-pairing-button-480.webp"
+ },
+ "/images/reviews/new-york-collapse-fragile-systems-pages-1000.webp": {
+  "width": 1000,
+  "height": 785,
+  "srcset": [
+   [
+    480,
+    "/images/reviews/new-york-collapse-fragile-systems-pages-480.webp"
+   ],
+   [
+    800,
+    "/images/reviews/new-york-collapse-fragile-systems-pages-800.webp"
+   ],
+   [
+    1000,
+    "/images/reviews/new-york-collapse-fragile-systems-pages-1000.webp"
+   ]
+  ],
+  "small": "/images/reviews/new-york-collapse-fragile-systems-pages-480.webp"
+ },
+ "/images/reviews/new-york-collapse-front-back-cover-1200.webp": {
+  "width": 1200,
+  "height": 630,
+  "srcset": [
+   [
+    480,
+    "/images/reviews/new-york-collapse-front-back-cover-480.webp"
+   ],
+   [
+    800,
+    "/images/reviews/new-york-collapse-front-back-cover-800.webp"
+   ],
+   [
+    1200,
+    "/images/reviews/new-york-collapse-front-back-cover-1200.webp"
+   ],
+   [
+    1600,
+    "/images/reviews/new-york-collapse-front-back-cover-1600.webp"
+   ]
+  ],
+  "small": "/images/reviews/new-york-collapse-front-back-cover-480.webp"
+ },
+ "/images/reviews/new-york-collapse-go-bag-handwritten-notes-1000.webp": {
+  "width": 1000,
+  "height": 804,
+  "srcset": [
+   [
+    480,
+    "/images/reviews/new-york-collapse-go-bag-handwritten-notes-480.webp"
+   ],
+   [
+    800,
+    "/images/reviews/new-york-collapse-go-bag-handwritten-notes-800.webp"
+   ],
+   [
+    1000,
+    "/images/reviews/new-york-collapse-go-bag-handwritten-notes-1000.webp"
+   ]
+  ],
+  "small": "/images/reviews/new-york-collapse-go-bag-handwritten-notes-480.webp"
+ },
+ "/images/reviews/new-york-collapse-manhattan-map-800.webp": {
+  "width": 800,
+  "height": 1067,
+  "srcset": [
+   [
+    480,
+    "/images/reviews/new-york-collapse-manhattan-map-480.webp"
+   ],
+   [
+    800,
+    "/images/reviews/new-york-collapse-manhattan-map-800.webp"
+   ]
+  ],
+  "small": "/images/reviews/new-york-collapse-manhattan-map-480.webp"
+ },
+ "/images/reviews/new-york-collapse-missing-poster-800.webp": {
+  "width": 800,
+  "height": 1003,
+  "srcset": [
+   [
+    480,
+    "/images/reviews/new-york-collapse-missing-poster-480.webp"
+   ],
+   [
+    800,
+    "/images/reviews/new-york-collapse-missing-poster-800.webp"
+   ]
+  ],
+  "small": "/images/reviews/new-york-collapse-missing-poster-480.webp"
+ },
+ "/images/reviews/new-york-collapse-pandemic-pages-1000.webp": {
+  "width": 1000,
+  "height": 915,
+  "srcset": [
+   [
+    480,
+    "/images/reviews/new-york-collapse-pandemic-pages-480.webp"
+   ],
+   [
+    800,
+    "/images/reviews/new-york-collapse-pandemic-pages-800.webp"
+   ],
+   [
+    1000,
+    "/images/reviews/new-york-collapse-pandemic-pages-1000.webp"
+   ]
+  ],
+  "small": "/images/reviews/new-york-collapse-pandemic-pages-480.webp"
+ },
+ "/images/reviews/remission-front-back-cover-1200.webp": {
+  "width": 1200,
+  "height": 630,
+  "srcset": [
+   [
+    480,
+    "/images/reviews/remission-front-back-cover-480.webp"
+   ],
+   [
+    800,
+    "/images/reviews/remission-front-back-cover-800.webp"
+   ],
+   [
+    1200,
+    "/images/reviews/remission-front-back-cover-1200.webp"
+   ],
+   [
+    1600,
+    "/images/reviews/remission-front-back-cover-1600.webp"
+   ]
+  ],
+  "small": "/images/reviews/remission-front-back-cover-480.webp"
+ },
+ "/images/reviews/remission-pages-44-45-1000.webp": {
+  "width": 1000,
+  "height": 720,
+  "srcset": [
+   [
+    480,
+    "/images/reviews/remission-pages-44-45-480.webp"
+   ],
+   [
+    800,
+    "/images/reviews/remission-pages-44-45-800.webp"
+   ],
+   [
+    1000,
+    "/images/reviews/remission-pages-44-45-1000.webp"
+   ]
+  ],
+  "small": "/images/reviews/remission-pages-44-45-480.webp"
+ },
+ "/images/reviews/the-division-xbox-one-front-back-1200.webp": {
+  "width": 1200,
+  "height": 630,
+  "srcset": [
+   [
+    480,
+    "/images/reviews/the-division-xbox-one-front-back-480.webp"
+   ],
+   [
+    800,
+    "/images/reviews/the-division-xbox-one-front-back-800.webp"
+   ],
+   [
+    1200,
+    "/images/reviews/the-division-xbox-one-front-back-1200.webp"
+   ],
+   [
+    1600,
+    "/images/reviews/the-division-xbox-one-front-back-1600.webp"
+   ]
+  ],
+  "small": "/images/reviews/the-division-xbox-one-front-back-480.webp"
+ },
+ "/images/reviews/world-of-the-division-back-cover-900.webp": {
+  "width": 900,
+  "height": 1261,
+  "srcset": [
+   [
+    480,
+    "/images/reviews/world-of-the-division-back-cover-480.webp"
+   ],
+   [
+    800,
+    "/images/reviews/world-of-the-division-back-cover-800.webp"
+   ],
+   [
+    900,
+    "/images/reviews/world-of-the-division-back-cover-900.webp"
+   ]
+  ],
+  "small": "/images/reviews/world-of-the-division-back-cover-480.webp"
+ },
+ "/images/reviews/world-of-the-division-chapter-3-activation-1200.webp": {
+  "width": 1200,
+  "height": 630,
+  "srcset": [
+   [
+    480,
+    "/images/reviews/world-of-the-division-chapter-3-activation-480.webp"
+   ],
+   [
+    800,
+    "/images/reviews/world-of-the-division-chapter-3-activation-800.webp"
+   ],
+   [
+    1200,
+    "/images/reviews/world-of-the-division-chapter-3-activation-1200.webp"
+   ],
+   [
+    1600,
+    "/images/reviews/world-of-the-division-chapter-3-activation-1600.webp"
+   ]
+  ],
+  "small": "/images/reviews/world-of-the-division-chapter-3-activation-480.webp"
+ },
+ "/images/reviews/world-of-the-division-front-cover-900.webp": {
+  "width": 900,
+  "height": 1233,
+  "srcset": [
+   [
+    480,
+    "/images/reviews/world-of-the-division-front-cover-480.webp"
+   ],
+   [
+    800,
+    "/images/reviews/world-of-the-division-front-cover-800.webp"
+   ],
+   [
+    900,
+    "/images/reviews/world-of-the-division-front-cover-900.webp"
+   ]
+  ],
+  "small": "/images/reviews/world-of-the-division-front-cover-480.webp"
+ },
+ "/images/reviews/world-of-the-division-recruitment-pages-1000.webp": {
+  "width": 1000,
+  "height": 690,
+  "srcset": [
+   [
+    480,
+    "/images/reviews/world-of-the-division-recruitment-pages-480.webp"
+   ],
+   [
+    800,
+    "/images/reviews/world-of-the-division-recruitment-pages-800.webp"
+   ],
+   [
+    1000,
+    "/images/reviews/world-of-the-division-recruitment-pages-1000.webp"
+   ]
+  ],
+  "small": "/images/reviews/world-of-the-division-recruitment-pages-480.webp"
+ },
+ "/images/reviews/world-of-the-division-washington-dc-pages-1000.webp": {
+  "width": 1000,
+  "height": 640,
+  "srcset": [
+   [
+    480,
+    "/images/reviews/world-of-the-division-washington-dc-pages-480.webp"
+   ],
+   [
+    800,
+    "/images/reviews/world-of-the-division-washington-dc-pages-800.webp"
+   ],
+   [
+    1000,
+    "/images/reviews/world-of-the-division-washington-dc-pages-1000.webp"
+   ]
+  ],
+  "small": "/images/reviews/world-of-the-division-washington-dc-pages-480.webp"
+ },
+ "/images/reviews/world-of-the-division-what-is-the-division-1000.webp": {
+  "width": 1000,
+  "height": 720,
+  "srcset": [
+   [
+    480,
+    "/images/reviews/world-of-the-division-what-is-the-division-480.webp"
+   ],
+   [
+    800,
+    "/images/reviews/world-of-the-division-what-is-the-division-800.webp"
+   ],
+   [
+    1000,
+    "/images/reviews/world-of-the-division-what-is-the-division-1000.webp"
+   ]
+  ],
+  "small": "/images/reviews/world-of-the-division-what-is-the-division-480.webp"
  },
  "/images/site/division-resurgence-404-fast-travel-prompt-1200.webp": {
   "width": 1200,

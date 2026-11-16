@@ -45,8 +45,10 @@ the game shows is the truth, so each one gets a full audit, every time, without 
 ## Images: in-game only
 
 - Every post image is an in-game picture: a frame from our recordings or a screenshot the owner captured. No purely
-  AI-generated images. Editing an in-game picture is fine and encouraged: remove HUD or UI clutter, swap the text on a
-  sign or poster for a joke, add a title. It has to still look like the game with something added, not like AI art.
+  AI-generated images. (The one exception is the owner's own photos of his gear and books, on the pages described under
+  "Reviews, gear and gift pages" below.) Editing an in-game picture is fine and encouraged: remove HUD or UI clutter,
+  swap the text on a sign or poster for a joke, add a title. It has to still look like the game with something added,
+  not like AI art.
 - Don't reuse the same frame across posts; each post gets its own shot.
 - Never bash Ubisoft in an edit either.
 - How: `research/screenshots/make_hero.py research/screenshots/heroes.json` cuts frames (HUD cleared, optional title,
@@ -56,6 +58,35 @@ the game shows is the truth, so each one gets a full audit, every time, without 
   Cards and post pages add `srcset`/`sizes` from the manifest automatically.
 - `research/screenshots/ai-images-to-replace.md` lists the AI images still on the site. Replace them as new footage comes
   in and delete the old files.
+
+## Reviews, gear and gift pages
+
+The owner owns a phone controller and a shelf of Division books, comics and games, and sends photos of them. The pages
+built on those (`/reviews/`, the controller guide, the gift guide, the books-in-order guide) follow these rules:
+
+- **Nothing invented.** A review says what the item is, what the owner's photos show, what its maker or publisher states
+  and what named review sites concluded. It never claims an experience nobody had (reading it, timing a battery, how it
+  feels in the hand) and never carries a score, a rating or star markup unless the owner gave that score himself, in his
+  words (`product.score` in the front matter). When he sends his own impressions, add them as his. No company sees or
+  pays for a review.
+- **Sources.** Product facts come from the object itself (the ISBN, price and credits printed on our copy), the maker's or
+  publisher's own page, or a named publication with its date. The research records are in `research/gear/`. Say plainly
+  what we have not tested.
+- **The console games stay out of Resurgence facts.** The books and comics were written for The Division and The
+  Division 2. Describe them as that, and never present their lore as a fact about Resurgence. The only bridge is what
+  Ubisoft says about Resurgence itself (New York City, a new storyline, the first wave of SHD agents).
+- **Photos.** Cut them with `research/reviews/make_photos.py` (the crops are in `photos.json`, the notes in its README),
+  which writes masters to `research/screenshots/masters/`; then `node scripts/build-post-images.mjs`. The originals stay
+  out of the repo: it is public, and some were taken at a window. Crop out anything that shows the owner's home, blur
+  player names on a phone screen, and keep pictures of inside pages small (1000 px) so they show a book without
+  replacing it. In markdown a picture on a line of its own becomes a captioned figure
+  (`scripts/rehype-post-figures.mjs`); two on neighboring lines sit side by side.
+- **Amazon.** Links are `https://www.amazon.com/dp/<ASIN>?tag=resurgencebuilds-20`; for a book the ASIN is the ISBN-10 of
+  the ISBN printed on our copy. Never a price taken from Amazon, never a shortened link. Amazon refuses AI agents, and
+  that is its right: do not open its pages by any route. The owner checks new links by hand, with links that do not
+  carry our tag, because he must never buy through our own links, and neither may his friends or family.
+- **Not a shop.** Reviews stay out of the home page's Latest feed (they have their own row below it), so builds and news
+  stay on top.
 
 ## Shipping
 

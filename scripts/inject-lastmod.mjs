@@ -25,7 +25,7 @@ if (!fs.existsSync(sitemapPath)) {
   process.exit(0);
 }
 
-const LISTING = [/^\/$/, /^\/(builds|guides|news|patch-notes)\/$/, /^\/tag\/[^/]+\/$/, /^\/author\/[^/]+\/$/];
+const LISTING = [/^\/$/, /^\/(builds|guides|news|patch-notes|reviews)\/$/, /^\/tag\/[^/]+\/$/, /^\/author\/[^/]+\/$/];
 const isListing = (p) => LISTING.some((re) => re.test(p));
 
 const day = (v) => (/^\d{4}-\d{2}-\d{2}/.test(v || '') ? v.slice(0, 10) : null);

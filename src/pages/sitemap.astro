@@ -20,6 +20,7 @@ const builds = await getCollection('builds');
 const guides = await getCollection('guides');
 const news = await getCollection('news');
 const patchNotes = await getCollection('patchNotes');
+const reviews = await getCollection('reviews');
 
 const slugify = (str: string) => str.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
 
@@ -94,6 +95,14 @@ const tagSlugify = (tag: string) => tag.toLowerCase().replace(/\s+/g, '-');
       <ul>
         {guides.map(post => (
           <li><a href={`/guides/${post.id}/`}>{post.data.title}</a></li>
+        ))}
+      </ul>
+
+      <h2>Reviews</h2>
+      <ul>
+        <li><a href="/reviews/">All gear and book reviews</a></li>
+        {reviews.map(post => (
+          <li><a href={`/reviews/${post.id}/`}>{post.data.title}</a></li>
         ))}
       </ul>
 

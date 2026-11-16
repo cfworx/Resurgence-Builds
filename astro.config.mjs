@@ -10,6 +10,7 @@ import rehypeCallouts from './scripts/rehype-callouts.mjs';
 import rehypeAffiliateLinks from './scripts/rehype-affiliate-links.mjs';
 import rehypeTableA11y from './scripts/rehype-table-a11y.mjs';
 import rehypeTableCards from './scripts/rehype-table-cards.mjs';
+import rehypePostFigures from './scripts/rehype-post-figures.mjs';
 import rehypeImgSize from 'rehype-img-size';
 import { getNoindexedDatabasePaths } from './src/utils/indexability.mjs';
 // Stable fallback date. Do NOT use new Date() here — it makes every URL look
@@ -82,7 +83,8 @@ export default defineConfig({
           url === 'https://resurgencebuilds.com/builds/' ||
           url === 'https://resurgencebuilds.com/guides/' ||
           url === 'https://resurgencebuilds.com/news/' ||
-          url === 'https://resurgencebuilds.com/patch-notes/'
+          url === 'https://resurgencebuilds.com/patch-notes/' ||
+          url === 'https://resurgencebuilds.com/reviews/'
         ) {
           return { ...item, priority: 0.9, changefreq: 'weekly', lastmod: SITE_LAST_UPDATED };
         }
@@ -127,6 +129,11 @@ export default defineConfig({
           return { ...item, priority: 0.6, changefreq: 'never', lastmod: item.lastmod || SITE_LAST_UPDATED };
         }
 
+        // --- Reviews (gear, books, comics) ---
+        if (url.includes('/reviews/')) {
+          return { ...item, priority: 0.7, changefreq: 'monthly', lastmod: item.lastmod || SITE_LAST_UPDATED };
+        }
+
         // --- Guides ---
         if (url.includes('/guides/')) {
           return { ...item, priority: 0.7, changefreq: 'monthly', lastmod: item.lastmod || SITE_LAST_UPDATED };
@@ -167,6 +174,7 @@ export default defineConfig({
       rehypeCallouts,
       rehypeTableA11y,
       rehypeTableCards,
+      rehypePostFigures,
       [rehypeImgSize, { dir: 'public' }]
     ]
   },

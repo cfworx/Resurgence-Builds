@@ -4,12 +4,17 @@ import SectionTag from '../components/SectionTag.astro';
 import PostCard from '../components/PostCard.astro';
 import { getCollection } from 'astro:content';
 import seasonStatus from '../data/season-status.json';
+import { REVIEW_ORDER } from '../utils/reviews';
 
 // Fetch all content collections
 const allNews = await getCollection('news');
 const allPatchNotes = await getCollection('patchNotes');
 const allGuides = await getCollection('guides');
 const allBuilds = await getCollection('builds');
+// Reviews of gear and books we own stay out of the Latest feed (builds and news belong on top) and get
+// their own row further down the page.
+const allReviews = await getCollection('reviews');
+const gearReviews = REVIEW_ORDER.map((id) => allReviews.find((r) => r.id === id)).filter((r) => !!r).slice(0, 3);
 
 // Normalize into a unified post format
 interface UnifiedPost {
@@ -224,7 +229,44 @@ const itemListLd = {
 
   <hr class="divider" style="max-width:var(--max-width);margin:0 auto;" />
 
+  {gearReviews.length > 0 && (
+    <section class="section" aria-labelledby="gear-heading">
+      <div class="container">
+        <SectionTag label="Gear" />
+        <h2 class="heading-accent" id="gear-heading">Gear and Book Reviews</h2>
+        <p class="gear-links">
+          <a href="/guides/division-resurgence-controller-guide/">Controllers that work with Resurgence</a>
+          <a href="/guides/the-division-gift-guide/">Gift guide</a>
+          <a href="/guides/the-division-books-in-order/">The Division books in order</a>
+          <a href="/reviews/">All reviews</a>
+        </p>
+        <div class="grid grid--3">
+          {gearReviews.map((r) => (
+            <PostCard
+              title={r!.data.title}
+              href={`/reviews/${r!.id}/`}
+              date={r!.data.publishDate}
+              author={r!.data.author || 'RapidF5'}
+              description={r!.data.description}
+              type="review"
+              tags={[r!.data.kind]}
+              tagLinks={false}
+              featuredImage={r!.data.featuredImage}
+              imageAlt={r!.data.imageAlt}
+            />
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
 </BaseLayout>
+
+<style>
+  .gear-links { display: flex; flex-wrap: wrap; gap: var(--sp-2) var(--sp-5); margin: 0 0 var(--sp-6); max-width: none; font-size: var(--text-sm); }
+  .gear-links a { display: inline-flex; align-items: center; min-height: var(--control); color: var(--accent); text-decoration: none; font-weight: 700; }
+  .gear-links a:hover { text-decoration: underline; }
+</style>
 
 
 <script>

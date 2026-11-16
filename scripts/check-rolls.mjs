@@ -278,7 +278,9 @@ for (const path of walk(join(root, 'src/content'))) {
   const text = readFileSync(path, 'utf8');
   const file = relative(root, path);
   posts++;
-  const fmText = text.startsWith('---') ? text.split('---')[1] : '';
+  // the front matter ends at the first line that is only ---; a --- inside a line (an address such as
+  // .../patch-note---1-2-1-update...) is not the end
+  const fmText = (text.match(/^---\r?\n([\s\S]*?)\r?\n---[ \t]*(?:\r?\n|$)/) || [])[1] || '';
   let fm = {};
   try { fm = yaml.load(fmText) || {}; } catch (e) { errors.push(`${file}: front matter doesn't parse (${e.message.split('\n')[0]})`); }
   if (fm.plannerHash) { hashes++; checkPlanner(file, fm.plannerHash, text); }

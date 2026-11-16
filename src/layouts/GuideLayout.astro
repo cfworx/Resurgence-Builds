@@ -37,6 +37,10 @@ export interface Props {
   videoUploadDate?: string;
   videoDuration?: string;
   wordCount?: number;
+  /** Another section using this layout (reviews): its name and address for the breadcrumb, and the label above the title. */
+  section?: { name: string; url: string; label: string };
+  /** What the article is about for search engines, when it is not the game (see SEO.astro). */
+  about?: Record<string, unknown>;
 }
 
 const {
@@ -62,10 +66,13 @@ const {
   videoUploadDate,
   videoDuration,
   wordCount,
+  section = { name: 'Guides', url: '/guides/', label: 'Guide' },
+  about,
 } = Astro.props;
+const isGuide = section.url === '/guides/';
 const heroImg = postImage(featuredImage);
 
-const twitterShareUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText || `Check out this Division Resurgence guide: ${title}`)}&url=${encodeURIComponent(Astro.url.toString())}`;
+const twitterShareUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText || (isGuide ? `Check out this Division Resurgence guide: ${title}` : title))}&url=${encodeURIComponent(Astro.url.toString())}`;
 const redditShareUrl = `https://reddit.com/submit?url=${encodeURIComponent(Astro.url.toString())}&title=${encodeURIComponent(title)}`;
 
 const formattedDate = lastUpdated.toLocaleDateString('en-US', { timeZone: 'UTC',
@@ -75,7 +82,7 @@ const formattedDate = lastUpdated.toLocaleDateString('en-US', { timeZone: 'UTC',
 });
 
 const breadcrumbItems = [
-  { name: 'Guides', url: '/guides/' },
+  { name: section.name, url: section.url },
   { name: title, url: '#' },
 ];
 
@@ -111,6 +118,7 @@ const howToLd = howTo ? {
     author,
     tags,
     ...(wordCount && { wordCount }),
+    ...(about && { about }),
   }}
   jsonLd={howToLd ? howToLd : undefined}
   faqs={faqs}
@@ -118,11 +126,11 @@ const howToLd = howTo ? {
   <div class="container section">
     <Breadcrumbs items={breadcrumbItems} />
 
-    <SectionTag label="Guide" />
+    <SectionTag label={section.label} />
     <h1 class="heading-accent">{title}</h1>
 
     <div class="article-meta">
-      <a href={tagHref(category)} class="tag">{tagLabel(category)}</a>
+      {isGuide ? <a href={tagHref(category)} class="tag">{tagLabel(category)}</a> : <a href={section.url} class="tag">{category}</a>}
       <div class="meta-line-wrap"><div class="meta-line">
         <span>By <a href={getAuthorUrl(author)} style="color: var(--accent); text-decoration: none;">{author}</a></span>
         <time datetime={lastUpdated.toISOString()}><strong>Last updated:</strong> {formattedDate}</time>
@@ -182,14 +190,16 @@ const howToLd = howTo ? {
     {/* build-article: the ad script (Journey by Mediavine) places in-content ads inside elements with this
         class. That is its setting, picked from a build page; guides and news carry the class so they get them too. */}
     <article class="prose content-width build-article">
+      {/* reviews put the product box here, first thing in the article */}
+      <slot name="intro" />
       <slot />
 
 
       <!-- 1. Share -->
       <div class="share-box">
         <div>
-          <h3 class="share-box__title">{shareTitle || "Share this guide"}</h3>
-          <p class="share-box__text">{shareText || "Help other agents git gud."}</p>
+          <h3 class="share-box__title">{shareTitle || (isGuide ? "Share this guide" : "Share this review")}</h3>
+          <p class="share-box__text">{shareText || (isGuide ? "Help other agents git gud." : "Know an agent who would want one?")}</p>
         </div>
         <div class="share-box__actions">
           <a href={twitterShareUrl} target="_blank" rel="noopener noreferrer" class="btn btn--primary share-box__x">
@@ -230,6 +240,7 @@ const howToLd = howTo ? {
           <li>Discover top-tier meta loadouts in our <a href="/builds/"><strong>Best Builds Tier List</strong></a></li>
           <li>Browse every gear set bonus in the <a href="/database/gear-set-effects/"><strong>Gear Set Effects Database</strong></a></li>
           <li>Stay updated with the latest <a href="/news/"><strong>Patch Notes and Breaking News</strong></a></li>
+          <li>Playing on a phone? See <a href="/guides/division-resurgence-controller-guide/"><strong>which controllers work with Resurgence</strong></a> and the <a href="/reviews/"><strong>gear and books we own</strong></a></li>
         </ul>
       </nav>
 

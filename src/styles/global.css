@@ -624,7 +624,9 @@ tbody tr:hover {
   .desktop-nav {
     display: flex;
     align-items: center;
-    gap: var(--sp-6);
+    gap: var(--sp-5);
+    white-space: nowrap; /* a label never breaks onto a second line. Ten items fit with about 40px to spare at the
+                            narrowest desktop width (measured November 15, 2026): re-measure before adding or lengthening one */
   }
 }
 
@@ -1112,6 +1114,15 @@ main > .section > :last-child > :last-child { margin-bottom: 0; }
   width: 100%;
   height: auto;
 }
+
+/* Photos in reviews and gear guides: scripts/rehype-post-figures.mjs wraps each one in <figure class="shot">.
+   A portrait picture (a book cover) is "shot--tall": narrower and centred. "shot-row" sets two side by side. */
+.prose .shot { margin: var(--sp-6) 0; }
+.prose .shot img { display: block; margin: 0; border: 1px solid var(--border); background: #0f0f12; }
+.prose .shot figcaption { margin-top: var(--sp-2); font-size: var(--text-sm); line-height: var(--lh-small); color: var(--ink-muted); }
+.prose .shot--tall { max-width: 26rem; margin-inline: auto; }
+.prose .shot-row { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--sp-3); align-items: start; margin: var(--sp-6) 0; }
+.prose .shot-row .shot { margin: 0; }
 
 /* --- Build sheet: a build's loadout at a glance, with the game's own icons (raw HTML in a build
    post's markdown, see src/content/builds/super-spreader-scorpio-field-grenadier-build.md) --- */

@@ -194,9 +194,52 @@ const patchNotes = defineCollection({
   }),
 });
 
+// Reviews of things we own: controllers, Division books and comics (see CLAUDE.md, "Reviews, gear and gift pages").
+// The box at the top of the page comes from `product`. A score is shown only when the owner gave one himself.
+const reviews = defineCollection({
+  loader: glob({ pattern: '**/[^_]*.md', base: './src/content/reviews' }),
+  schema: z.object({
+    title: z.string(),
+    kind: z.enum(['Controller', 'Book', 'Art book', 'Comic', 'Novel', 'Game']),
+    publishDate: z.coerce.date(),
+    lastUpdated: z.coerce.date(),
+    description: z.string(),
+    author: z.string().optional(),
+    featuredImage: z.string().optional(),
+    imageAlt: z.string().optional(),
+    shareTitle: z.string().optional(),
+    shareText: z.string().optional(),
+    product: z.object({
+      name: z.string(),
+      summary: z.string(),                       // what it is, in one or two sentences
+      owned: z.string(),                         // "RapidF5's own copy, photographed November 15, 2026"
+      facts: z.array(z.object({ label: z.string(), value: z.string() })),
+      goodFor: z.array(z.string()).optional(),   // "Buy it if"
+      notFor: z.array(z.string()).optional(),    // "Skip it if"
+      // Where to buy. An Amazon link carries our tag (https://www.amazon.com/dp/<ASIN>?tag=...) and no price, ever.
+      buy: z.array(z.object({ label: z.string(), href: z.string().url(), note: z.string().optional() })).optional(),
+      buyNote: z.string().optional(),            // one line under the buttons: out of print, which edition, and so on
+      // The owner's own score out of 10, in his words. Never filled in for him.
+      score: z.object({ value: z.number().min(0).max(10), by: z.string(), note: z.string().optional() }).optional(),
+      // What the page is about, for search engines: a book (with the ISBN printed on our copy) or a thing
+      about: z.object({
+        type: z.enum(['Book', 'Thing']),
+        name: z.string(),
+        isbn: z.string().optional(),
+        author: z.string().optional(),
+        publisher: z.string().optional(),
+        url: z.string().url().optional(),
+      }).optional(),
+    }),
+    faqs: z.array(z.object({ question: z.string(), answer: z.string() })).optional(),
+    sources: z.array(z.string()).optional(),
+  }),
+});
+
 export const collections = {
   builds,
   guides,
   news,
   patchNotes,
+  reviews,
 };

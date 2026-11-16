@@ -14,6 +14,8 @@ export interface Props {
     author: string;
     tags?: string[];
     wordCount?: number;
+    /** What the article is about, when that is not the game itself (a book or a controller on a review page). */
+    about?: Record<string, unknown>;
   };
   keywords?: string[];
   breadcrumbs?: { name: string; url: string }[];
@@ -196,7 +198,7 @@ if (article) {
       url: `${siteUrl}/author/${getAuthorSlug(article.author)}/`,
     },
     publisher: { '@id': `${siteUrl}/#organization` },
-    about: { '@id': `${siteUrl}/#division-resurgence` },
+    about: article.about ?? { '@id': `${siteUrl}/#division-resurgence` },
     inLanguage: 'en-US',
     ...(article.wordCount && { wordCount: article.wordCount }),
   };

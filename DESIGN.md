@@ -184,3 +184,17 @@ screenshots in phone emulation are misleading).
   link, a missing sentence or a missing `rel="sponsored"`.
 - First links: the controllers Ubisoft names, in the device, Steam and emulator guides.
 
+
+## Reviews and gear pages (November 15, 2026)
+
+- A review (`/reviews/<slug>/`) uses the guide frame (`GuideLayout` with `section` set to Reviews) and starts with the
+  product box, `ProductBox.astro`: a line saying we own it, one or two sentences, the facts as a list, "Buy it if" and
+  "Skip it if", then the buttons. The Amazon button is the only filled one; the note under it says it is a paid link.
+  No score shows unless the front matter has one (CLAUDE.md says when it may).
+- Photos inside a post are figures with captions (`.shot` in global.css). Portrait pictures are narrower and centred
+  (`.shot--tall`); two pictures written on neighboring lines sit side by side (`.shot-row`), which is how a front and a
+  back cover are shown.
+- The desktop menu has ten items and they only just fit on one line: "Interactive Map" shows as "Map" there, the gap is
+  20px and labels cannot wrap. Measure (about 40px to spare at 1152px wide) before adding or lengthening an item.
+- The home page keeps reviews out of the Latest feed and shows three of them in their own row below it, with links to
+  the controller guide, the gift guide and the books-in-order guide.

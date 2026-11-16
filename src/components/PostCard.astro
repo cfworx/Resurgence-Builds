@@ -8,7 +8,7 @@ export interface Props {
   date: Date;
   author: string;
   description: string;
-  type: 'news' | 'patch-notes' | 'guide' | 'build' | 'alert';
+  type: 'news' | 'patch-notes' | 'guide' | 'build' | 'alert' | 'review';
   tags?: string[];
   featuredImage?: string;
   imageAlt?: string;
@@ -34,6 +34,7 @@ const typeLabels: Record<string, string> = {
   'guide': 'Guide',
   'build': 'Build',
   'alert': 'Alert',
+  'review': 'Review',
 };
 
 const typeLabel = typeLabels[type] || type;
@@ -122,6 +123,12 @@ const creator = (author.match(/via\s+([^)]+)\)?\s*$/) || [])[1]?.trim();
     background: rgba(212, 165, 52, 0.15);
     color: #F5CC45;
     border: 1px solid #D4A534;
+  }
+
+  .post-type-badge--review {
+    background: rgba(160, 132, 255, 0.15);
+    color: #BBA6FF;
+    border: 1px solid #7C63D6;
   }
 
   .post-type-badge--alert {

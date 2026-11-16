@@ -14,9 +14,9 @@ faqs:
   - question: "What is the minimum RAM for Division Resurgence on mobile?"
     answer: "4 GB of RAM. That is the floor Ubisoft has published."
   - question: "What iPhone can I play Division Resurgence on?"
-    answer: "Anything with an Apple A12 Bionic chip or newer, running iOS 14 or later. That starts at the iPhone XS, XR, and iPhone SE 2nd generation."
+    answer: "Anything with an Apple A12 Bionic chip or newer, running iOS 15.0 or later according to the App Store listing (Ubisoft's help center still says iOS 14). That starts at the iPhone XS, XR, and iPhone SE 2nd generation."
   - question: "Does Division Resurgence work on iPad?"
-    answer: "Yes, on iPads with an A12 Bionic chip or newer running iPadOS 14 or later. That covers the iPad Pro from 2018 onward, every iPad Air from the 3rd gen, every iPad mini from the 5th gen, and standard iPads from the 8th gen up."
+    answer: "Yes, on iPads with an A12 Bionic chip or newer running iPadOS 15.0 or later, per the App Store listing. That covers the iPad Pro from 2018 onward, every iPad Air from the 3rd gen, every iPad mini from the 5th gen, and standard iPads from the 8th gen up."
   - question: "Can I play Division Resurgence on PC?"
     answer: "Yes, and you no longer need an emulator or a very large phone. It's free on Steam and Ubisoft Connect (early access started on Ubisoft Connect on April 28, 2026; the full PC launch was August 5, 2026). Windows 11 only, around 17 GB installed, and Ubisoft recommends keeping at least 30 GB free."
   - question: "Is Division Resurgence on Steam?"
@@ -41,7 +41,7 @@ If Ubisoft has not confirmed something, we will say so.
 ## Quick Answer
 
 - **Minimum RAM (mobile):** 4 GB. ([Ubisoft Help Center](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2456-the-division-resurgence-compatible-device-list/))
-- **Minimum iOS:** iOS 14, with an **A12 Bionic** chip or newer. That means **iPhone XS, XR, iPhone SE 2nd gen, or anything newer**. ([App Store](https://apps.apple.com/us/app/the-division-resurgence/id1606349410))
+- **Minimum iOS:** iOS 15.0, with an **A12 Bionic** chip or newer, per the App Store listing on November 15, 2026. That means **iPhone XS, XR, iPhone SE 2nd gen, or anything newer**. Ubisoft's help center still says iOS 14, but the store listing decides what you can install. ([App Store](https://apps.apple.com/us/app/the-division-resurgence/id1606349410))
 - **Minimum Android:** Android 6. Your specific phone or tablet has to be on Ubisoft's compatibility list. ([Ubisoft Help Center](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2456-the-division-resurgence-compatible-device-list/))
 - **Storage (mobile):** about **10.5 GB** for the game, and Ubisoft recommends **17 GB free** on your device. ([Ubisoft Help Center](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2468-how-much-storage-space-do-i-need-on-my-device/))
 - **Internet:** required. "As it includes multiplayer, an internet connection is required to play the game," so there's no offline mode. ([Ubisoft Help Center](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2466-what-kind-of-internet-connection-is-required-to-play-the-game/))
@@ -54,7 +54,7 @@ If Ubisoft has not confirmed something, we will say so.
 
 Apple's App Store listing is the easiest place to check yourself: open the [Division Resurgence App Store page](https://apps.apple.com/us/app/the-division-resurgence/id1606349410) on your device and scroll to **Compatibility**. If you do not see your device listed there, you cannot install it. Simple as that.
 
-The current floor is **iOS 14** and the **A12 Bionic** chip. Apple lists every supported iPhone and iPad in that listing, and Ubisoft's own compatible device page mirrors it. Here is the short version:
+The current floor in that listing is **iOS 15.0** (iPadOS 15.0 on iPads) and the **A12 Bionic** chip, as of November 15, 2026. Ubisoft's own compatible device page still gives iOS 14 as the minimum system; where the two disagree, the App Store wins, because it is what lets you install. Here is the short version:
 
 **iPhones that work:**
 
@@ -161,7 +161,7 @@ Officially supported, confirmed by Ubisoft:
 - **Mouse and keyboard** on PC, and on Android per an earlier patch.
 - **Steam Deck controls** got a configuration pass in Season 2 Phase 2, alongside better controller navigation and Android back-button behavior.
 
-If thumbs on glass keep losing you fights, these are the three pads Ubisoft names. The links go to Amazon, and yes, we get a cut:
+If thumbs on glass keep losing you fights, these are the three pads Ubisoft names. We play on a fourth, a GameSir G8 Plus over Bluetooth: [our review](/reviews/gamesir-g8-plus-division-resurgence/) has photos of it running the game, and the [controller guide](/guides/division-resurgence-controller-guide/) compares the options. The links below go to Amazon, and yes, we get a cut:
 
 - [DualSense wireless controller](https://www.amazon.com/dp/B0CQKLS4RP?tag=resurgencebuilds-20)
 - [Xbox wireless controller](https://www.amazon.com/dp/B08DF248LD?tag=resurgencebuilds-20)

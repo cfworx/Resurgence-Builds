@@ -1,0 +1,51 @@
+---
+// A review of something we own (a controller, a Division book or comic). Same page frame as a guide, with the
+// product box first. Rules for what may be said on these pages: CLAUDE.md, "Reviews, gear and gift pages".
+import GuideLayout from '../../layouts/GuideLayout.astro';
+import ProductBox from '../../components/ProductBox.astro';
+import { getCollection, render } from 'astro:content';
+
+export async function getStaticPaths() {
+  const reviews = await getCollection('reviews');
+  return reviews.map((review) => ({ params: { slug: review.id }, props: { review } }));
+}
+
+const { review } = Astro.props;
+const { Content, headings } = await render(review);
+const d = review.data;
+const wordCount = review.body ? review.body.replace(/<[^>]+>/g, ' ').trim().split(/\s+/).filter(Boolean).length : 0;
+const a = d.product.about;
+const about = a && (a.type === 'Book'
+  ? {
+      '@type': 'Book',
+      name: a.name,
+      ...(a.isbn && { isbn: a.isbn }),
+      ...(a.author && { author: { '@type': 'Person', name: a.author } }),
+      ...(a.publisher && { publisher: { '@type': 'Organization', name: a.publisher } }),
+      ...(a.url && { url: a.url }),
+    }
+  : { '@type': 'Thing', name: a.name, ...(a.url && { url: a.url }) });
+---
+
+<GuideLayout
+  title={d.title}
+  description={d.description}
+  category={d.kind}
+  lastUpdated={d.lastUpdated}
+  publishDate={d.publishDate}
+  tags={[]}
+  author={d.author}
+  featuredImage={d.featuredImage}
+  imageAlt={d.imageAlt}
+  shareTitle={d.shareTitle}
+  shareText={d.shareText}
+  headings={headings}
+  faqs={d.faqs || []}
+  sources={d.sources || []}
+  wordCount={wordCount}
+  section={{ name: 'Reviews', url: '/reviews/', label: 'Review' }}
+  about={about}
+>
+  <ProductBox slot="intro" product={d.product} />
+  <Content />
+</GuideLayout>

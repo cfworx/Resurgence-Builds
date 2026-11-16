@@ -7,6 +7,7 @@ export async function GET(context: APIContext) {
   const guides = await getCollection('guides');
   const news = await getCollection('news');
   const patchNotes = await getCollection('patchNotes');
+  const reviews = await getCollection('reviews');
 
   const allItems = [
     ...builds.map((post) => ({
@@ -33,6 +34,12 @@ export async function GET(context: APIContext) {
       pubDate: pn.data.patchDate,
       description: pn.data.summary,
       link: `/patch-notes/${pn.id}/`,
+    })),
+    ...reviews.map((post) => ({
+      title: post.data.title,
+      pubDate: post.data.publishDate,
+      description: post.data.description,
+      link: `/reviews/${post.id}/`,
     })),
   ].sort((a, b) => b.pubDate.getTime() - a.pubDate.getTime());
 
