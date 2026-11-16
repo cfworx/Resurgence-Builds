@@ -265,6 +265,23 @@ const itemListLd = {
     </section>
   )}
 
+  <hr class="divider" style="max-width:var(--max-width);margin:0 auto;" />
+
+  <!-- The questions in the page's FAQ markup, shown (structured data must describe what readers can see) -->
+  <section class="section" aria-labelledby="faq-heading">
+    <div class="container content-width">
+      <h2 class="heading-accent" id="faq-heading">Frequently Asked Questions</h2>
+      <div class="faq-list" style="display: flex; flex-direction: column; gap: var(--sp-2);">
+        {faqs.map((faq) => (
+          <details class="faq-item">
+            <summary class="faq-question">{faq.question}</summary>
+            <p class="faq-answer">{faq.answer}</p>
+          </details>
+        ))}
+      </div>
+    </div>
+  </section>
+
 </BaseLayout>
 
 <style>
