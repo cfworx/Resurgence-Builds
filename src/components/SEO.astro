@@ -24,6 +24,11 @@ export interface Props {
   noindex?: boolean;
   /** Override robots directive, e.g. "noindex, follow". Implies noindex behavior. */
   robots?: string;
+  /** Language of this page (BCP 47), for translated guides. English when left out. */
+  lang?: string;
+  ogLocale?: string;
+  /** Every language version of this page, this one included: [{ hreflang, href }]. x-default is added for the English one. */
+  alternates?: { hreflang: string; href: string }[];
 }
 
 const {
@@ -39,6 +44,9 @@ const {
   faqs = [],
   noindex = false,
   robots,
+  lang = 'en',
+  ogLocale = 'en_US',
+  alternates = [],
 } = Astro.props;
 
 const siteName = 'Resurgence Builds';
@@ -128,7 +136,7 @@ graph.push({
   publisher: { '@type': 'Organization', name: 'Ubisoft' },
   gamePlatform: ['iOS', 'Android', 'PC'],
   applicationCategory: 'Game',
-  operatingSystem: ['iOS 13+', 'Android 8+', 'Windows 11'],
+  operatingSystem: ['iOS 15.0+', 'Android 6+', 'Windows 11'],
   sameAs: [
     'https://en.wikipedia.org/wiki/Tom_Clancy%27s_The_Division_Resurgence',
     'https://www.ubisoft.com/en-us/game/the-division/resurgence'
@@ -203,7 +211,7 @@ if (article) {
     },
     publisher: { '@id': `${siteUrl}/#organization` },
     about: article.about ?? { '@id': `${siteUrl}/#division-resurgence` },
-    inLanguage: 'en-US',
+    inLanguage: lang === 'en' ? 'en-US' : lang,
     ...(article.wordCount && { wordCount: article.wordCount }),
   };
 
@@ -220,7 +228,7 @@ if (faqs.length > 0) {
   graph.push({
     '@type': 'FAQPage',
     '@id': `${canonicalURL}#faq`,
-    inLanguage: 'en-US',
+    inLanguage: lang === 'en' ? 'en-US' : lang,
     speakable: {
       '@type': 'SpeakableSpecification',
       cssSelector: ['.faq-question', '.faq-answer'],
@@ -264,8 +272,17 @@ const finalJsonLd = {
 <meta name="description" content={description} />
 {keywords.length > 0 && <meta name="keywords" content={keywords.join(', ')} />}
 <link rel="canonical" href={canonicalURL} />
-<link rel="alternate" hreflang="en" href={canonicalURL} />
-<link rel="alternate" hreflang="x-default" href={canonicalURL} />
+{alternates.length > 0 ? (
+  <>
+    {alternates.map((alt) => <link rel="alternate" hreflang={alt.hreflang} href={alt.href} />)}
+    <link rel="alternate" hreflang="x-default" href={(alternates.find((alt) => alt.hreflang === 'en') || alternates[0]).href} />
+  </>
+) : (
+  <>
+    <link rel="alternate" hreflang="en" href={canonicalURL} />
+    <link rel="alternate" hreflang="x-default" href={canonicalURL} />
+  </>
+)}
 {(noindex || robots)
   ? <meta name="robots" content={robots || 'noindex, follow'} />
   : <meta name="robots" content="max-image-preview:large" />}
@@ -280,7 +297,7 @@ const finalJsonLd = {
 {ogDims && <meta property="og:image:height" content={String(ogDims.height)} />}
 <meta property="og:url" content={canonicalURL} />
 <meta property="og:site_name" content={siteName} />
-<meta property="og:locale" content="en_US" />
+<meta property="og:locale" content={ogLocale} />
 {article && <meta property="article:published_time" content={article.publishDate} />}
 {article && article.modifiedDate && <meta property="article:modified_time" content={article.modifiedDate} />}
 {article && <meta property="article:author" content={article.author} />}

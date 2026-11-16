@@ -31,9 +31,13 @@ export interface Props {
   robots?: string;
   /** Override the canonical URL (defaults to the page's own URL). */
   canonical?: string;
+  /** Language of the page (BCP 47) and its other language versions, for translated guides (TRANSLATIONS.md). */
+  lang?: string;
+  ogLocale?: string;
+  alternates?: { hreflang: string; href: string }[];
 }
 
-const { title, description, ogType, ogImage, article, keywords, breadcrumbs, jsonLd, faqs, noAds, adNotice, noindex, robots, canonical } = Astro.props;
+const { title, description, ogType, ogImage, article, keywords, breadcrumbs, jsonLd, faqs, noAds, adNotice, noindex, robots, canonical, lang = 'en', ogLocale, alternates } = Astro.props;
 // Ads (Journey by Mediavine) only run on pages with enough of our own content to carry them. A page kept
 // out of Google (noindex), a list of links (tag archives) or a short database card never loads the ad
 // script: pass noAds from those templates. scripts/audit-indexation.mjs fails the build when one slips through.
@@ -44,7 +48,7 @@ const loadAdScript = !!JOURNEY_TAG && (!suppressAds || !!adNotice);
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang={lang}>
 <head>
   <meta charset="utf-8" />
   <meta name="msvalidate.01" content="BE91A714DA465B973961FB903E416D0B" />
@@ -99,6 +103,9 @@ gtag('config', '${GA4_ID}');`}></script>
     noindex={noindex}
     robots={robots}
     canonical={canonical}
+    lang={lang}
+    ogLocale={ogLocale}
+    alternates={alternates}
   />
 
   <slot name="head" />

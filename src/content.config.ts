@@ -236,10 +236,29 @@ const reviews = defineCollection({
   }),
 });
 
+// Translations of guides (TRANSLATIONS.md). One file per language and guide: src/content/translations/<lang>/<guide id>.md.
+// The page is served at /<lang>/guides/<guide id>/ and borrows the English guide's picture, author and dates.
+const translations = defineCollection({
+  loader: glob({ pattern: '**/[^_]*.md', base: './src/content/translations' }),
+  schema: z.object({
+    lang: z.string(),                       // a code from src/data/languages.ts
+    source: z.string(),                     // id of the English guide
+    title: z.string(),
+    description: z.string(),
+    imageAlt: z.string().optional(),
+    // lastUpdated of the English guide when this translation was made: a newer English date marks the page as behind
+    sourceUpdated: z.coerce.date(),
+    translatedAt: z.coerce.date(),
+    faqs: z.array(z.object({ question: z.string(), answer: z.string() })).optional(),
+    sources: z.array(z.string()).optional(),
+  }),
+});
+
 export const collections = {
   builds,
   guides,
   news,
   patchNotes,
   reviews,
+  translations,
 };

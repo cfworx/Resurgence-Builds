@@ -14,7 +14,7 @@ faqs:
   - question: "Where can I download The Division Resurgence?"
     answer: "From four official places: the App Store for iPhone and iPad, Google Play for Android, and Steam or Ubisoft Connect for Windows PC. Those are the stores Ubisoft's own game page links to. The game is free on all of them."
   - question: "How big is The Division Resurgence download?"
-    answer: "On phones, Ubisoft said at launch that the game needs around 10.5 GB and recommended 17 GB of free space; the App Store lists the app itself at 4 GB. On PC, Ubisoft says the download is around 17 GB and recommends at least 30 GB free."
+    answer: "On phones, Ubisoft said at launch that the game needs around 10.5 GB and recommended 17 GB of free space; the App Store lists the app itself at about 4 GB. On PC, Ubisoft says the download is around 17 GB and recommends at least 30 GB free."
   - question: "Is there an official The Division Resurgence APK?"
     answer: "We found none. For Android, Ubisoft's game page links only to Google Play, and its help center has no article about APK files. Sites that offer APK or modified APK downloads are not Ubisoft's."
   - question: "Is The Division Resurgence free?"
@@ -38,14 +38,14 @@ sources:
 
 | Platform | Official download | What it needs | Space |
 |---|---|---|---|
-| iPhone, iPad | [App Store](https://apps.apple.com/app/the-division-resurgence/id1606349410) | iOS or iPadOS 15.0 and an A12 Bionic chip or newer | App: 4 GB. Whole game: around 10.5 GB |
+| iPhone, iPad | [App Store](https://apps.apple.com/app/the-division-resurgence/id1606349410) | iOS or iPadOS 15.0 and an A12 Bionic chip or newer | App: about 4 GB. Whole game: around 10.5 GB |
 | Android | [Google Play](https://play.google.com/store/apps/details?id=com.ubisoft.the.division.mobile.combat.shooting.open.world.rpg) | Android 6, 4 GB of RAM, a device on Ubisoft's list | Around 10.5 GB |
 | Windows PC | [Steam](https://store.steampowered.com/app/3749720/The_Division_Resurgence/) | Windows 11 | Around 17 GB |
 | Windows PC | [Ubisoft Connect](https://store.ubisoft.com/62e7cc7251f14849aaca73c8.html) | Windows 11 | Around 17 GB |
 
 ## How much space you need
 
-- **Phones and tablets.** Ubisoft's launch update of March 28, 2026 says: "You will need around 10,5GB of space for the game, so we recommend a total of 17GB available space on your device." The App Store lists the app at 4 GB; Ubisoft's figure for the whole game is the larger one. Google Play does not show a size on its web listing.
+- **Phones and tablets.** Ubisoft's launch update of March 28, 2026 says: "You will need around 10,5GB of space for the game, so we recommend a total of 17GB available space on your device." The App Store lists the app at about 4 GB; Ubisoft's figure for the whole game is the larger one. Google Play does not show a size on its web listing.
 - **PC.** Ubisoft's PC announcement says the game takes "around 17GB" and recommends "at least 30GB available". Steam lists 30 GB of available space, and the Ubisoft Store asks for an SSD.
 
 Those phone figures date from launch, and the game has had two seasons of updates since, so leave yourself room above them.

@@ -1,7 +1,8 @@
 # Working on Resurgence Builds
 
 Read AUTOMATION.md (daily runs), WORKFLOW.md (posting checklist), DESIGN.md (layout rules), COMMENTS.md (the
-comment system and its moderation) and VOTES.md (the player-ranked tier lists) as well. The rules below come straight
+comment system and its moderation), VOTES.md (the player-ranked tier lists) and TRANSLATIONS.md (guides in other
+languages) as well. The rules below come straight
 from the owner (Cory) and override anything older in those files.
 
 ## Accuracy

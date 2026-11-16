@@ -1,0 +1,90 @@
+---
+// /<lang>/: the list of guides available in one language. Only languages with at least one translation get a page.
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import { getCollection } from 'astro:content';
+import { allTranslations, activeLangs, translationPath } from '../../utils/translations';
+import { postImage } from '../../utils/post-images';
+
+export async function getStaticPaths() {
+  const translations = await allTranslations();
+  const guides = await getCollection('guides');
+  return activeLangs(translations).map((lang) => ({
+    params: { lang: lang.code },
+    props: {
+      lang,
+      langs: activeLangs(translations),
+      items: translations
+        .filter((t) => t.data.lang === lang.code)
+        .map((t) => ({ t, guide: guides.find((g) => g.id === t.data.source)! }))
+        .sort((a, b) => b.guide.data.lastUpdated.getTime() - a.guide.data.lastUpdated.getTime()),
+    },
+  }));
+}
+
+const { lang, langs, items } = Astro.props;
+const ui = lang.ui;
+const site = 'https://resurgencebuilds.com';
+const breadcrumbItems = [{ name: lang.name, url: `/${lang.code}/` }];
+// Each language hub points at the other hubs and at the English guides index.
+const alternates = [
+  { hreflang: 'en', href: `${site}/guides/` },
+  ...langs.map((l) => ({ hreflang: l.tag, href: `${site}/${l.code}/` })),
+];
+const listLd = {
+  '@type': 'ItemList',
+  name: ui.hubH1,
+  inLanguage: lang.tag,
+  itemListElement: items.map((x, i) => ({ '@type': 'ListItem', position: i + 1, name: x.t.data.title, url: `${site}${translationPath(x.t)}` })),
+};
+---
+
+<BaseLayout noAds title={ui.hubTitle} description={ui.hubIntro} breadcrumbs={breadcrumbItems} jsonLd={listLd} lang={lang.tag} ogLocale={lang.ogLocale} alternates={alternates}>
+  <div class="container section">
+    <Breadcrumbs items={breadcrumbItems} />
+    <h1 class="heading-accent">{ui.hubH1}</h1>
+    <p class="lh-intro">{ui.hubIntro}</p>
+
+    <ul class="lh-list">
+      {items.map((x) => {
+        const img = postImage(x.guide.data.featuredImage);
+        return (
+          <li class="lh-item">
+            {x.guide.data.featuredImage && (
+              <img src={img?.small || x.guide.data.featuredImage} alt="" width="160" height="84" loading="lazy" decoding="async" />
+            )}
+            <div>
+              <a class="lh-item__title" href={translationPath(x.t)}>{x.t.data.title}</a>
+              <p class="lh-item__desc">{x.t.data.description}</p>
+            </div>
+          </li>
+        );
+      })}
+    </ul>
+
+    <h2 class="lh-h2">{ui.toolsTitle}</h2>
+    <ul class="lh-tools" lang="en">
+      <li><a href="/builder/" hreflang="en">{ui.planner}</a></li>
+      <li><a href="/tier-list/" hreflang="en">{ui.tierList}</a></li>
+      <li><a href="/builds/" hreflang="en">{ui.builds}</a></li>
+      <li><a href="/division-resurgence-interactive-map/" hreflang="en">{ui.map}</a></li>
+      <li><a href="/database/" hreflang="en">{ui.database}</a></li>
+    </ul>
+  </div>
+</BaseLayout>
+
+<style>
+  .lh-intro { max-width: var(--content-width); margin-bottom: var(--sp-8); color: var(--ink-muted); font-size: var(--step-1); line-height: var(--lh-body); }
+  .lh-list { list-style: none; margin: 0 0 var(--sp-10); padding: 0; display: grid; gap: var(--sp-4); max-width: var(--content-width); }
+  .lh-item { display: grid; grid-template-columns: 160px minmax(0, 1fr); gap: var(--sp-4); align-items: start; padding: var(--pad-card); background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-sm); }
+  .lh-item img { width: 160px; height: auto; border-radius: var(--radius-xs); display: block; }
+  .lh-item__title { font-size: var(--step-1); font-weight: 700; line-height: var(--lh-snug); color: var(--ink); text-decoration: underline; text-decoration-color: var(--accent); text-underline-offset: 3px; }
+  .lh-item__desc { margin: var(--sp-2) 0 0; font-size: var(--step--1); line-height: var(--lh-small); color: var(--ink-muted); max-width: none; }
+  .lh-h2 { font-size: var(--text-xl); margin: 0 0 var(--sp-4); }
+  .lh-tools { display: flex; flex-wrap: wrap; gap: var(--sp-3) var(--sp-5); list-style: none; padding: 0; margin: 0; }
+  .lh-tools a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; padding-block: 10px; margin-block: -10px; }
+  @media (max-width: 34.99em) {
+    .lh-item { grid-template-columns: 1fr; }
+    .lh-item img { width: 100%; }
+  }
+</style>

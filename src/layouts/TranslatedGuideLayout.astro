@@ -1,0 +1,170 @@
+---
+// A guide in another language (TRANSLATIONS.md). Same article styles as the English guides, with the page's own
+// language on <html>, hreflang links to every version, interface words from src/data/languages.ts, and a line that
+// says the page is a translation. No comments (they are per English page) and, for now, no ads on these pages.
+import BaseLayout from './BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import SectionTag from '../components/SectionTag.astro';
+import { postImage, srcsetAttr, HERO_SIZES } from '../utils/post-images';
+import type { Lang } from '../data/languages';
+import type { Version } from '../utils/translations';
+
+export interface Props {
+  lang: Lang;
+  title: string;
+  description: string;
+  imageAlt?: string;
+  featuredImage?: string;
+  author: string;
+  /** When the English guide was published and last updated: the translation carries the same dates */
+  publishDate?: Date;
+  lastUpdated: Date;
+  /** The English guide has changed since this translation was made */
+  stale: boolean;
+  englishPath: string;
+  versions: Version[];
+  alternates: { hreflang: string; href: string }[];
+  headings?: { depth: number; slug: string; text: string }[];
+  faqs?: { question: string; answer: string }[];
+  sources?: string[];
+  /** Other guides in this language: [{ title, path }] */
+  more?: { title: string; path: string }[];
+}
+
+const { lang, title, description, imageAlt, featuredImage, author, publishDate, lastUpdated, stale, englishPath, versions, alternates, headings = [], faqs = [], sources = [], more = [] } = Astro.props;
+const ui = lang.ui;
+const heroImg = postImage(featuredImage);
+const fmt = (d: Date) => d.toLocaleDateString(lang.tag, { timeZone: 'UTC', year: 'numeric', month: 'long', day: 'numeric' });
+const tocItems = headings.filter((h) => h.depth <= 3);
+const breadcrumbItems = [
+  { name: ui.guides, url: `/${lang.code}/` },
+  { name: title, url: '#' },
+];
+const others = versions.filter((v) => v.code !== lang.code);
+---
+
+<BaseLayout
+  noAds
+  title={title}
+  description={description}
+  breadcrumbs={breadcrumbItems}
+  ogType="article"
+  ogImage={featuredImage}
+  article={{ publishDate: (publishDate ?? lastUpdated).toISOString(), modifiedDate: lastUpdated.toISOString(), author }}
+  faqs={faqs}
+  lang={lang.tag}
+  ogLocale={lang.ogLocale}
+  alternates={alternates}
+>
+  <div class="container section">
+    <Breadcrumbs items={breadcrumbItems} />
+    <SectionTag label={ui.guide} />
+    <h1 class="heading-accent">{title}</h1>
+
+    <div class="article-meta">
+      <div class="meta-line-wrap"><div class="meta-line">
+        <span>{ui.by} <a href="/author/rapidf5/" style="color: var(--accent); text-decoration: none;">{author}</a></span>
+        <time datetime={lastUpdated.toISOString()}><strong>{ui.updated}{ui.colon ?? ':'}</strong> {fmt(lastUpdated)}</time>
+      </div></div>
+    </div>
+
+    <p class="tr-langs">
+      <span>{ui.alsoIn}{ui.colon ?? ':'}</span>
+      {others.map((v) => <a href={v.path} hreflang={v.tag} lang={v.tag}>{v.name}</a>)}
+    </p>
+
+    {featuredImage && (
+      <div class="guide-hero content-width">
+        <img
+          src={featuredImage}
+          srcset={srcsetAttr(heroImg)}
+          sizes={heroImg ? HERO_SIZES : undefined}
+          alt={imageAlt || title}
+          width={heroImg?.width || 1200}
+          height={heroImg?.height || 630}
+          loading="eager"
+          decoding="sync"
+          fetchpriority="high"
+        />
+      </div>
+    )}
+
+    {tocItems.length > 0 && (
+      <>
+        <details class="toc content-width" data-toc>
+          <summary><span class="toc__title">{ui.contents}</span></summary>
+          <nav aria-label={ui.contents}>
+            {tocItems.map((h) => (
+              <a href={`#${h.slug}`} style={`padding-left:${(h.depth - 2) * 1}rem;`}>{h.text}</a>
+            ))}
+          </nav>
+        </details>
+        <script is:inline>document.querySelectorAll("details[data-toc]").forEach(function (d) { if (window.matchMedia("(min-width: 45em)").matches) d.open = true; });</script>
+      </>
+    )}
+
+    <article class="prose content-width">
+      <p class="tr-note">
+        {ui.note} <a href={englishPath} hreflang="en" lang="en">{ui.original}</a>
+        {stale && <><br />{ui.stale.replace('{date}', fmt(lastUpdated))}</>}
+      </p>
+
+      <slot />
+
+      {faqs.length > 0 && (
+        <div class="faq-section" style="margin-top: var(--sp-8);">
+          <h2>{ui.questions}</h2>
+          <div class="faq-list" style="display: flex; flex-direction: column; gap: var(--sp-2);">
+            {faqs.map((faq) => (
+              <details class="faq-item">
+                <summary class="faq-question">{faq.question}</summary>
+                <p class="faq-answer">{faq.answer}</p>
+              </details>
+            ))}
+          </div>
+        </div>
+      )}
+
+      <hr style="margin: var(--sp-6) 0; border: none; border-top: 1px solid var(--border);" />
+      <nav class="explore-more" aria-label={ui.toolsTitle}>
+        {more.length > 0 && (
+          <>
+            <h2 style="font-size: var(--text-xl); margin-bottom: var(--sp-4);">{ui.more}</h2>
+            <ul>
+              {more.map((m) => <li><a href={m.path}>{m.title}</a></li>)}
+            </ul>
+          </>
+        )}
+        <h2 style="font-size: var(--text-xl); margin-bottom: var(--sp-4);">{ui.toolsTitle}</h2>
+        <ul lang="en">
+          <li><a href="/builder/" hreflang="en">{ui.planner}</a></li>
+          <li><a href="/tier-list/" hreflang="en">{ui.tierList}</a></li>
+          <li><a href="/builds/" hreflang="en">{ui.builds}</a></li>
+          <li><a href="/division-resurgence-interactive-map/" hreflang="en">{ui.map}</a></li>
+          <li><a href="/database/" hreflang="en">{ui.database}</a></li>
+        </ul>
+      </nav>
+
+      {sources.length > 0 && (
+        <section class="build-sources" style="margin-top: var(--sp-8); background: rgba(0,0,0,0.15); border-radius: var(--border-radius); padding: var(--pad-card);">
+          <h2 id="sources" style="font-size: var(--text-xl); margin-bottom: var(--sp-4);">{ui.sources}</h2>
+          <ul style="color: var(--ink-muted); padding-left: var(--inset); font-size: var(--text-sm);">
+            {sources.map((source) => <li style="margin-bottom: var(--sp-2);" set:html={source}></li>)}
+          </ul>
+        </section>
+      )}
+    </article>
+  </div>
+</BaseLayout>
+
+<style>
+  .guide-hero { margin: var(--sp-6) 0; border-radius: var(--border-radius); overflow: hidden; background: var(--surface); }
+  .guide-hero img { width: 100%; height: auto; display: block; aspect-ratio: 1200 / 630; object-fit: contain; }
+  .tr-langs { display: flex; flex-wrap: wrap; gap: var(--sp-2) var(--sp-4); margin: var(--sp-3) 0 0; font-size: var(--step--1); color: var(--ink-muted); max-width: none; }
+  .tr-langs a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; padding-block: 10px; margin-block: -10px; }
+  .tr-note {
+    font-size: var(--step--1); line-height: var(--lh-small); color: var(--ink-muted);
+    padding: var(--sp-3) var(--sp-4) var(--sp-3) calc(var(--inset) - 3px); border-left: 3px solid var(--border); background: rgba(255, 255, 255, 0.03);
+    border-radius: 0 var(--radius-xs) var(--radius-xs) 0;
+  }
+</style>

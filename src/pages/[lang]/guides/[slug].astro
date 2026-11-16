@@ -1,0 +1,48 @@
+---
+// /<lang>/guides/<guide id>/: one page per file in src/content/translations (TRANSLATIONS.md).
+import TranslatedGuideLayout from '../../../layouts/TranslatedGuideLayout.astro';
+import { getCollection, render } from 'astro:content';
+import { langByCode } from '../../../data/languages';
+import { allTranslations, versionsOf, alternatesOf, translationPath } from '../../../utils/translations';
+
+export async function getStaticPaths() {
+  const translations = await allTranslations();
+  const guides = await getCollection('guides');
+  return translations.map((t) => {
+    const guide = guides.find((g) => g.id === t.data.source);
+    if (!guide) throw new Error(`Translation ${t.id}: there is no English guide "${t.data.source}"`);
+    const versions = versionsOf(guide.id, translations);
+    const more = translations
+      .filter((x) => x.data.lang === t.data.lang && x.id !== t.id)
+      .map((x) => ({ title: x.data.title, path: translationPath(x) }));
+    return { params: { lang: t.data.lang, slug: t.data.source }, props: { t, guide, versions, more } };
+  });
+}
+
+const { t, guide, versions, more } = Astro.props;
+const lang = langByCode(t.data.lang)!;
+const { Content, headings } = await render(t);
+// Behind when the English guide's date is newer than the one this translation was made from.
+const stale = guide.data.lastUpdated.getTime() > t.data.sourceUpdated.getTime();
+---
+
+<TranslatedGuideLayout
+  lang={lang}
+  title={t.data.title}
+  description={t.data.description}
+  imageAlt={t.data.imageAlt}
+  featuredImage={guide.data.featuredImage}
+  author={guide.data.author}
+  publishDate={guide.data.publishDate}
+  lastUpdated={t.data.sourceUpdated}
+  stale={stale}
+  englishPath={`/guides/${guide.id}/`}
+  versions={versions}
+  alternates={alternatesOf(versions)}
+  headings={headings}
+  faqs={t.data.faqs || []}
+  sources={t.data.sources || []}
+  more={more}
+>
+  <Content />
+</TranslatedGuideLayout>

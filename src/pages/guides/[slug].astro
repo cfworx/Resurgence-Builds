@@ -1,16 +1,19 @@
 ---
 import GuideLayout from '../../layouts/GuideLayout.astro';
 import { getCollection, render } from 'astro:content';
+import { allTranslations, versionsOf, alternatesOf } from '../../utils/translations';
 
 export async function getStaticPaths() {
   const guides = await getCollection('guides');
+  const translations = await allTranslations();
   return guides.map((guide) => ({
     params: { slug: guide.id },
-    props: { guide },
+    // English first, then every translation of this guide (TRANSLATIONS.md)
+    props: { guide, versions: versionsOf(guide.id, translations) },
   }));
 }
 
-const { guide } = Astro.props;
+const { guide, versions } = Astro.props;
 const { Content, headings } = await render(guide);
 const wordCount = guide.body ? guide.body.replace(/<[^>]+>/g, ' ').trim().split(/\s+/).filter(Boolean).length : 0;
 ---
@@ -38,6 +41,8 @@ const wordCount = guide.body ? guide.body.replace(/<[^>]+>/g, ' ').trim().split(
   videoUploadDate={guide.data.videoUploadDate}
   videoDuration={guide.data.videoDuration}
   wordCount={wordCount}
+  versions={versions}
+  alternates={versions.length > 1 ? alternatesOf(versions) : undefined}
 >
   <Content />
 </GuideLayout>

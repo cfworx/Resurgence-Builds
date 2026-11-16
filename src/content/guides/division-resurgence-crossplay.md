@@ -28,7 +28,7 @@ sources:
   - '<a href="https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2486-can-i-change-servers-once-i-ve-started-playing/" target="_blank" rel="noopener noreferrer">Ubisoft help center: Can I change servers once I have started playing?</a>'
   - '<a href="https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2509-play-on-pc-steam-or-ubisoft-connect-all-you-need-to-know/" target="_blank" rel="noopener noreferrer">Ubisoft help center: Play on PC (Steam or Ubisoft Connect)</a>'
   - '<a href="https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2476-will-the-game-be-cross-play-or-have-cross-progression-with-the-hd-titles/" target="_blank" rel="noopener noreferrer">Ubisoft help center: cross-play and cross-progression with the other Division games</a>'
-  - '<a href="https://steamcommunity.com/games/3749720/announcements/detail/711153447479547542" target="_blank" rel="noopener noreferrer">Ubisoft on Steam: launch announcement</a>, August 5, 2026'
+  - '<a href="https://steamcommunity.com/games/3749720/announcements/detail/711153447479547542" target="_blank" rel="noopener noreferrer">Ubisoft on Steam: Steam launch announcement</a>, August 5, 2026'
   - '<a href="https://store.steampowered.com/app/3749720/The_Division_Resurgence/" target="_blank" rel="noopener noreferrer">Steam store page</a>, read November 15, 2026'
 ---
 
