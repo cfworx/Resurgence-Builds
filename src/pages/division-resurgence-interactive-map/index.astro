@@ -77,6 +77,10 @@ const dataPayload = JSON.stringify(poisData);
   ogImage="/images/map/manhattan-base.jpg"
   keywords={["division resurgence interactive map","division resurgence map","division resurgence manhattan map","division resurgence safe house locations","division resurgence encrypted crate locations","division resurgence echo locations","division resurgence artifact locations","division resurgence audio log locations","division resurgence dark zone map"]}
 >
+<Fragment slot="head">
+  <!-- The base map is the largest paint; Leaflet only asks for it after two scripts run, so start it now (same URL, no crossorigin, so the request is reused). -->
+  <link rel="preload" as="image" href="/images/map/manhattan-base.webp" fetchpriority="high" />
+</Fragment>
 
 <div class="map-app">
   <section class="map-hero">
