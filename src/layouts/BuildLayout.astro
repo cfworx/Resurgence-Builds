@@ -11,6 +11,7 @@ import BuildLoadoutMini from '../components/BuildLoadoutMini.astro';
 import type { LoadoutData } from '../utils/loadout';
 import { getCollection } from 'astro:content';
 import { getAuthorUrl } from '../utils/author';
+import { CREATORS, creditedName } from '../data/creators';
 import TierVote from '../components/TierVote.astro';
 import TierBadge from '../components/TierBadge.astro';
 
@@ -53,6 +54,9 @@ export interface Props {
 }
 
 const { title, description, specialization, playstyle, patch, verified = true, original = false, lastUpdated, pve, pvp, tags, author, featuredImage, imageAlt, shareTitle, shareText, headings = [], faqs = [], sources = [], plannerHash, videoId, videoTitle, videoChannel, videoChannelUrl, videoUploadDate, videoDuration, howTo, wordCount, subclass, loadout } = Astro.props;
+// "RapidF5 (via GGReborn)": the creator's name links to their card on /creators/.
+const credit = creditedName(author);
+const creditSlug = credit ? CREATORS.find((c) => c.name === credit)?.slug : undefined;
 // The build's slug (its file name): the key for its player votes
 const buildSlug = Astro.url.pathname.split('/').filter(Boolean).pop() ?? '';
 
@@ -133,7 +137,7 @@ const redditShareUrl = `https://reddit.com/submit?url=${encodeURIComponent(Astro
       <h1 class="heading-accent">{title}</h1>
 
       <div class="article-meta"><div class="meta-line-wrap"><div class="meta-line">
-        <span>By <a href={getAuthorUrl(author)} style="color: var(--accent); text-decoration: none;">{author}</a></span>
+        <span>By <a href={getAuthorUrl(author)} style="color: var(--accent); text-decoration: none;">{credit ? author.replace(/\s*\(?\s*via\s+[^)]+\)?\s*$/i, '') : author}</a>{credit && <> (via {creditSlug ? <a href={`/creators/#${creditSlug}`} style="color: var(--accent); text-decoration: none;">{credit}</a> : credit})</>}</span>
         <span>{patchLabel}</span>
         <time datetime={lastUpdated.toISOString()}><strong>Last updated:</strong> {formattedDate}</time>
       </div></div></div>

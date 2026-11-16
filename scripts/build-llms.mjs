@@ -65,6 +65,7 @@ const PRIORITY_PATHS = [
   '/guides/division-resurgence-controller-guide/',
   '/guides/the-division-books-in-order/',
   '/guides/the-division-gift-guide/',
+  '/creators/',
   '/partners/',
   '/editorial-policy/',
 ];

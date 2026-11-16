@@ -1,0 +1,114 @@
+---
+// Who made the builds on this site. One card per credited creator: where they publish (a link only when we checked
+// it), every build of theirs we have written up, and the tier players gave it. Creators with two or more builds also
+// get a page of their own (/creators/<slug>/). Data: src/data/creators.ts.
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import SectionTag from '../../components/SectionTag.astro';
+import { getCollection } from 'astro:content';
+import { CREATORS, buildsOf, creditedName, OWN_PAGE_MIN } from '../../data/creators';
+import { snapshotItems } from '../../utils/votes';
+import '../../styles/tier-votes.css';
+
+const builds = await getCollection('builds');
+const snap = snapshotItems('build');
+const shortName = (title: string) => title.split(/: | \| | - /)[0];
+
+const rows = CREATORS.map((c) => ({ ...c, builds: buildsOf(c, builds) })).filter((c) => c.builds.length > 0);
+const ours = builds.filter((b) => !creditedName(String(b.data.author || '')));
+const credited = builds.length - ours.length;
+
+// A creator named on a build but missing from the data file would silently vanish from this page: fail the build instead.
+const known = new Set(CREATORS.map((c) => c.name));
+const missing = [...new Set(builds.map((b) => creditedName(String(b.data.author || ''))).filter((n): n is string => !!n && !known.has(n)))];
+if (missing.length) throw new Error(`src/data/creators.ts is missing: ${missing.join(', ')}`);
+
+const breadcrumbItems = [{ name: 'Builds', url: '/builds/' }, { name: 'Creators', url: '/creators/' }];
+const title = 'The Division Resurgence Creators: Who Made the Builds on This Site';
+const description = `The ${rows.length} creators and players behind ${credited} of the builds on Resurgence Builds, with links to their channels and to every build sheet. Make builds yourself? Here is how to get one written up.`;
+const siteUrl = 'https://resurgencebuilds.com';
+
+const itemListLd = {
+  '@type': 'ItemList',
+  name: 'Creators whose The Division Resurgence builds are on Resurgence Builds',
+  numberOfItems: rows.length,
+  itemListElement: rows.map((c, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    item: { '@type': 'Person', name: c.name, ...(c.href ? { sameAs: c.href } : {}), url: c.builds.length >= OWN_PAGE_MIN ? `${siteUrl}/creators/${c.slug}/` : `${siteUrl}/builds/${c.builds[0].id}/` },
+  })),
+};
+---
+
+<BaseLayout title={title} description={description} breadcrumbs={breadcrumbItems} jsonLd={itemListLd} noAds>
+  <div class="container section">
+    <Breadcrumbs items={breadcrumbItems} />
+    <SectionTag label="Creators" />
+    <h1 class="heading-accent">The Creators Behind the Builds</h1>
+    <p class="cr-lede">
+      {credited} of the {builds.length} builds on this site came from {rows.length} creators and players. Each one is
+      named on the build page, with a link to the video it came from. Their performance numbers are theirs; we check
+      every piece of the loadout against the game's own roll lists before it goes up.
+    </p>
+
+    <div class="cr-grid">
+      {rows.map((c) => (
+        <article class="cr-card" id={c.slug}>
+          <h2 class="cr-card__name">
+            {c.builds.length >= OWN_PAGE_MIN ? <a href={`/creators/${c.slug}/`}>{c.name}</a> : c.name}
+          </h2>
+          <p class="cr-card__where">
+            {c.href ? <a href={c.href} target="_blank" rel="noopener noreferrer">{c.linkLabel}</a> : c.where}
+          </p>
+          <ul class="cr-card__builds">
+            {c.builds.map((b) => {
+              const tier = snap[b.id]?.tier;
+              return (
+                <li>
+                  {tier
+                    ? <span class={`tier-chip tier-chip--${tier.toLowerCase()}`} title={`Players rank it ${tier}`}>{tier}</span>
+                    : <span class="tier-chip tier-chip--none" title="Not ranked yet" aria-label="Not ranked yet">?</span>}
+                  <a href={`/builds/${b.id}/`}>{shortName(b.data.title).replace(` (${c.name})`, '')}</a>
+                  <span class="cr-card__spec">{b.data.specialization}</span>
+                </li>
+              );
+            })}
+          </ul>
+        </article>
+      ))}
+    </div>
+
+    <section class="cr-more prose">
+      <h2 id="send">Make Resurgence builds? Get one written up</h2>
+      <p>
+        Send us the video or the loadout through the <a href="/contact/?topic=build">contact form</a>. What you get back:
+      </p>
+      <ul>
+        <li>A written build sheet your viewers can read on a phone, with every weapon, gear piece, talent and attribute checked against the game's roll lists.</li>
+        <li>A <a href="/builder/">build planner</a> link that opens your exact loadout, ready to copy or change.</li>
+        <li>Your name on the build, your video embedded on the page and a link to your channel.</li>
+        <li>A place on the <a href="/tier-list/">tier list</a>, where players rank it.</li>
+      </ul>
+      <p>
+        It is free, and the build stays yours: the page says whose it is and whose numbers they are. If we have
+        credited you and something is wrong or missing, <a href="/contact/?topic=bug">tell us</a> and it is fixed first.
+      </p>
+      <p>The other {ours.length} builds are RapidF5's own. All of them are on the <a href="/builds/">builds page</a>.</p>
+    </section>
+  </div>
+</BaseLayout>
+
+<style>
+  .cr-lede { max-width: var(--content-width); margin-bottom: var(--sp-8); color: var(--ink-muted); font-size: var(--step-1); line-height: var(--lh-body); }
+  .cr-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 19rem), 1fr)); gap: var(--sp-4); margin-bottom: var(--sp-10); }
+  .cr-card { padding: var(--pad-card); background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-sm); }
+  .cr-card__name { margin: 0; font-size: var(--step-1); line-height: var(--lh-snug); }
+  .cr-card__name a { color: inherit; text-decoration: underline; text-decoration-color: var(--accent); text-underline-offset: 3px; }
+  .cr-card__where { margin: var(--sp-1) 0 var(--sp-4); font-size: var(--step--1); color: var(--ink-muted); }
+  .cr-card__where a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; padding-block: 10px; margin-block: -10px; }
+  .cr-card__builds { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--sp-3); }
+  .cr-card__builds li { display: grid; grid-template-columns: auto minmax(0, 1fr); column-gap: var(--sp-3); align-items: start; line-height: var(--lh-small); }
+  .cr-card__builds a { color: var(--ink); text-decoration: underline; text-decoration-color: var(--accent); text-underline-offset: 3px; padding-block: 6px; margin-block: -6px; }
+  .cr-card__spec { grid-column: 2; font-size: var(--step--2); color: var(--ink-muted); }
+  .cr-more { max-width: var(--content-width); }
+</style>

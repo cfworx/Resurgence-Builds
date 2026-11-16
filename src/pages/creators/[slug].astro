@@ -1,0 +1,136 @@
+---
+// One page per creator with two or more builds on the site (OWN_PAGE_MIN in src/data/creators.ts): their builds as
+// cards, the videos they came from, and where to follow them. Everyone else is listed on /creators/ only, so no
+// page here is a single link dressed up as a page.
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import SectionTag from '../../components/SectionTag.astro';
+import BuildCard from '../../components/BuildCard.astro';
+import { getCollection } from 'astro:content';
+import { CREATORS, buildsOf, OWN_PAGE_MIN } from '../../data/creators';
+import { snapshotItems } from '../../utils/votes';
+import '../../styles/tier-votes.css';
+
+export async function getStaticPaths() {
+  const builds = await getCollection('builds');
+  return CREATORS.map((c) => ({ creator: c, builds: buildsOf(c, builds) }))
+    .filter((x) => x.builds.length >= OWN_PAGE_MIN)
+    .map((x) => ({ params: { slug: x.creator.slug }, props: x }));
+}
+
+const { creator, builds } = Astro.props;
+const snap = snapshotItems('build');
+const shortName = (title: string) => title.split(/: | \| | - /)[0];
+// On the creator's own page the "(GGReborn)" at the end of a build name says nothing new.
+const label = (title: string) => shortName(title).replace(new RegExp(`\\s*\\(${creator.name}\\)$`), '');
+const classes = [...new Set(builds.map((b) => b.data.specialization))];
+const joinNames = (xs: string[]) => (xs.length <= 1 ? xs.join('') : `${xs.slice(0, -1).join(', ')} and ${xs[xs.length - 1]}`);
+const videos = builds.filter((b) => b.data.videoId);
+const newest = builds[0].data.lastUpdated;
+
+const breadcrumbItems = [
+  { name: 'Builds', url: '/builds/' },
+  { name: 'Creators', url: '/creators/' },
+  { name: creator.name, url: `/creators/${creator.slug}/` },
+];
+const title = `${creator.name}'s The Division Resurgence Builds`;
+const description = `${builds.length} The Division Resurgence builds from ${creator.name}, written up with full loadouts: ${joinNames(builds.map((b) => label(b.data.title)))}. Every piece checked against the game's roll lists.`;
+const siteUrl = 'https://resurgencebuilds.com';
+
+const pageLd = {
+  '@type': 'CollectionPage',
+  '@id': `${siteUrl}/creators/${creator.slug}/#webpage`,
+  name: title,
+  description,
+  dateModified: newest.toISOString().slice(0, 10),
+  about: { '@type': 'Person', name: creator.name, ...(creator.href ? { sameAs: creator.href } : {}) },
+  mainEntity: {
+    '@type': 'ItemList',
+    numberOfItems: builds.length,
+    itemListElement: builds.map((b, i) => ({ '@type': 'ListItem', position: i + 1, name: b.data.title, url: `${siteUrl}/builds/${b.id}/` })),
+  },
+};
+---
+
+<BaseLayout title={title} description={description} breadcrumbs={breadcrumbItems} jsonLd={pageLd} noAds>
+  <div class="container section">
+    <Breadcrumbs items={breadcrumbItems} />
+    <SectionTag label="Creator" />
+    <h1 class="heading-accent">{creator.name}'s Division Resurgence Builds</h1>
+    <p class="crp-lede">
+      {builds.length} builds on this site come from {creator.name}: {joinNames(classes)}. Each page has the full
+      loadout, a build planner link and {videos.length === builds.length ? 'the video it came from' : 'its source'}.
+      The performance numbers are {creator.name}'s own; we check every piece against the game's roll lists.
+      {creator.href && <> Follow <a href={creator.href} target="_blank" rel="noopener noreferrer">{creator.linkLabel}</a>.</>}
+    </p>
+
+    <div class="grid grid--3 crp-grid">
+      {builds.map((build, i) => (
+        <div class="crp-item">
+          <BuildCard
+            title={build.data.title}
+            href={`/builds/${build.id}/`}
+            specialization={build.data.specialization}
+            playstyle={build.data.playstyle}
+            description={build.data.description}
+            patch={build.data.patch}
+            pve={build.data.pve}
+            pvp={build.data.pvp}
+            tags={build.data.tags}
+            featuredImage={build.data.featuredImage}
+            imageAlt={build.data.imageAlt}
+            eager={i < 3}
+          />
+        </div>
+      ))}
+    </div>
+
+    <section class="prose crp-more">
+      <h2>How players rank them</h2>
+      <ul class="crp-ranks">
+        {builds.map((b) => {
+          const sum = snap[b.id];
+          return (
+            <li>
+              {sum?.tier
+                ? <span class={`tier-chip tier-chip--${sum.tier.toLowerCase()}`}>{sum.tier}</span>
+                : <span class="tier-chip tier-chip--none" aria-label="Not ranked yet">?</span>}
+              <span>
+                <a href={`/builds/${b.id}/`}>{label(b.data.title)}</a>{sum?.tier ? `: ${sum.n} ${sum.n === 1 ? 'vote' : 'votes'}` : ': no votes yet. '}{!sum?.tier && <a href={`/builds/${b.id}/#rank`}>Be the first</a>}
+              </span>
+            </li>
+          );
+        })}
+      </ul>
+      <p>The ranking is the readers', not ours: see the full <a href="/tier-list/">build tier list</a>.</p>
+
+      {videos.length > 0 && (
+        <>
+          <h2>The videos</h2>
+          <ul>
+            {videos.map((b) => (
+              <li>
+                <a href={`https://www.youtube.com/watch?v=${b.data.videoId}`} target="_blank" rel="noopener noreferrer">{(b.data.videoTitle || b.data.title).replace(new RegExp(`^${creator.name}:\\s*`), '')}</a>
+                {' '}(our write-up: <a href={`/builds/${b.id}/`}>{label(b.data.title)}</a>)
+              </li>
+            ))}
+          </ul>
+        </>
+      )}
+
+      <p>
+        More creators are on the <a href="/creators/">creators page</a>. Make builds yourself?
+        <a href="/creators/#send">Here is how to get one written up</a>.
+      </p>
+    </section>
+  </div>
+</BaseLayout>
+
+<style>
+  .crp-lede { max-width: var(--content-width); margin-bottom: var(--sp-8); color: var(--ink-muted); font-size: var(--step-1); line-height: var(--lh-body); }
+  .crp-lede a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
+  .crp-grid { margin-bottom: var(--sp-10); }
+  .crp-more { max-width: var(--content-width); }
+  .crp-ranks { list-style: none; padding: 0; display: grid; gap: var(--sp-3); }
+  .crp-ranks li { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: var(--sp-3); align-items: center; }
+</style>
