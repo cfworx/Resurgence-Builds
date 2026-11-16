@@ -50,7 +50,7 @@ const navItems = [
 
 <header class="site-header" id="site-header">
   <div class="site-header__inner">
-    <a href="/" class="site-logo" aria-label="Resurgence Builds home">
+    <a href="/" class="site-logo">
       Resurgence<span>Builds</span>
     </a>
 
@@ -58,13 +58,13 @@ const navItems = [
       {navItems.map((item) => (
         item.children ? (
           <div class="nav-dropdown">
-            <button class="nav-dropdown__btn" aria-expanded="false" aria-controls={`dropdown-${item.label.toLowerCase()}`}>
+            <button class="nav-dropdown__btn" aria-expanded="false" aria-controls={`dropdown-${item.label.toLowerCase().replace(/\s+/g, '-')}`}>
               {item.label}
               <svg aria-hidden="true" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 4px; transition: transform 0.2s;">
                 <polyline points="6 9 12 15 18 9"></polyline>
               </svg>
             </button>
-            <ul class="nav-dropdown__menu" id={`dropdown-${item.label.toLowerCase()}`}>
+            <ul class="nav-dropdown__menu" id={`dropdown-${item.label.toLowerCase().replace(/\s+/g, '-')}`}>
               {item.children.map(child => (
                 <li>
                   <a href={child.href} aria-current={pathname.startsWith(child.href) ? 'page' : undefined}>
@@ -120,13 +120,13 @@ const navItems = [
     {navItems.map((item) => (
       item.children ? (
         <div class="mobile-dropdown">
-          <button class="mobile-dropdown__btn" aria-expanded="false" aria-controls={`mobile-dropdown-${item.label.toLowerCase()}`} onclick="this.setAttribute('aria-expanded', this.getAttribute('aria-expanded') === 'true' ? 'false' : 'true'); this.nextElementSibling.classList.toggle('is-open'); this.querySelector('svg').style.transform = this.getAttribute('aria-expanded') === 'true' ? 'rotate(180deg)' : 'rotate(0deg)';">
+          <button class="mobile-dropdown__btn" aria-expanded="false" aria-controls={`mobile-dropdown-${item.label.toLowerCase().replace(/\s+/g, '-')}`} onclick="this.setAttribute('aria-expanded', this.getAttribute('aria-expanded') === 'true' ? 'false' : 'true'); this.nextElementSibling.classList.toggle('is-open'); this.querySelector('svg').style.transform = this.getAttribute('aria-expanded') === 'true' ? 'rotate(180deg)' : 'rotate(0deg)';">
             {item.label}
             <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="transition: transform 0.2s;">
               <polyline points="6 9 12 15 18 9"></polyline>
             </svg>
           </button>
-          <ul class="mobile-dropdown__menu" id={`mobile-dropdown-${item.label.toLowerCase()}`}>
+          <ul class="mobile-dropdown__menu" id={`mobile-dropdown-${item.label.toLowerCase().replace(/\s+/g, '-')}`}>
             {item.children.map(child => (
               <li>
                 <a href={child.href} aria-current={pathname.startsWith(child.href) ? 'page' : undefined}>
@@ -220,6 +220,15 @@ const navItems = [
       const open = button.getAttribute('aria-expanded') === 'true';
       button.setAttribute('aria-expanded', String(!open));
       menu.classList.toggle('is-open', !open);
+    });
+
+    // Escape closes an open dropdown and puts focus back on its button
+    dropdown.addEventListener('keydown', (event: Event) => {
+      if ((event as KeyboardEvent).key === 'Escape' && button.getAttribute('aria-expanded') === 'true') {
+        button.setAttribute('aria-expanded', 'false');
+        menu.classList.remove('is-open');
+        (button as HTMLElement).focus();
+      }
     });
 
     dropdown.addEventListener('focusout', (event: FocusEvent) => {

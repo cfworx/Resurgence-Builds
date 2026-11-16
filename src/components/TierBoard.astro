@@ -45,7 +45,7 @@ const share = (sum: any, t: string) => (sum ? sum[t.toLowerCase()] : 0);
 const eager = new Set(rows.flatMap((r) => groups[r.key]).slice(0, 6).map((it) => it.id));
 ---
 
-<div class="tb" data-tv-board data-kind={kind} aria-label={`Tier list of ${label}, ranked by player votes`}>
+<div class="tb" role="group" data-tv-board data-kind={kind} aria-label={`Tier list of ${label}, ranked by player votes`}>
   {rows.map((row) => (
     <section class={`tb__row tb__row--${row.key.toLowerCase()}${groups[row.key].length ? '' : ' is-empty'}`} data-tv-row={row.key} aria-label={row.key === 'U' ? `Unranked ${label}` : `${row.key} tier`}>
       <div class="tb__label" aria-hidden="true">
