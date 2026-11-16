@@ -740,6 +740,30 @@
   "thumb": "/images/guides/division-resurgence-device-compatibility-guide-hero-thumb.webp",
   "legacy": true
  },
+ "/images/guides/division-resurgence-download-food-market-street-1200.webp": {
+  "width": 1200,
+  "height": 630,
+  "srcset": [
+   [
+    480,
+    "/images/guides/division-resurgence-download-food-market-street-480.webp"
+   ],
+   [
+    800,
+    "/images/guides/division-resurgence-download-food-market-street-800.webp"
+   ],
+   [
+    1200,
+    "/images/guides/division-resurgence-download-food-market-street-1200.webp"
+   ],
+   [
+    1600,
+    "/images/guides/division-resurgence-download-food-market-street-1600.webp"
+   ]
+  ],
+  "small": "/images/guides/division-resurgence-download-food-market-street-480.webp",
+  "thumb": "/images/guides/division-resurgence-download-food-market-street-thumb.webp"
+ },
  "/images/guides/division-resurgence-endgame-tips-patrol-schedules-1200.webp": {
   "width": 1200,
   "height": 630,
@@ -992,6 +1016,30 @@
   "thumb": "/images/guides/division-resurgence-safe-codes-encrypted-crates-hero-thumb.webp",
   "legacy": true
  },
+ "/images/guides/division-resurgence-server-status-no-entry-checkpoint-1200.webp": {
+  "width": 1200,
+  "height": 630,
+  "srcset": [
+   [
+    480,
+    "/images/guides/division-resurgence-server-status-no-entry-checkpoint-480.webp"
+   ],
+   [
+    800,
+    "/images/guides/division-resurgence-server-status-no-entry-checkpoint-800.webp"
+   ],
+   [
+    1200,
+    "/images/guides/division-resurgence-server-status-no-entry-checkpoint-1200.webp"
+   ],
+   [
+    1600,
+    "/images/guides/division-resurgence-server-status-no-entry-checkpoint-1600.webp"
+   ]
+  ],
+  "small": "/images/guides/division-resurgence-server-status-no-entry-checkpoint-480.webp",
+  "thumb": "/images/guides/division-resurgence-server-status-no-entry-checkpoint-thumb.webp"
+ },
  "/images/guides/division-resurgence-stats-explained-shooting-range-1200.webp": {
   "width": 1200,
   "height": 630,
@@ -1060,6 +1108,30 @@
   ],
   "small": "/images/guides/division-resurgence-tactical-augmentation-modules-guide-map-room-480.webp",
   "thumb": "/images/guides/division-resurgence-tactical-augmentation-modules-guide-map-room-thumb.webp"
+ },
+ "/images/guides/the-division-2-redeem-codes-billboard-plaza-1200.webp": {
+  "width": 1200,
+  "height": 630,
+  "srcset": [
+   [
+    480,
+    "/images/guides/the-division-2-redeem-codes-billboard-plaza-480.webp"
+   ],
+   [
+    800,
+    "/images/guides/the-division-2-redeem-codes-billboard-plaza-800.webp"
+   ],
+   [
+    1200,
+    "/images/guides/the-division-2-redeem-codes-billboard-plaza-1200.webp"
+   ],
+   [
+    1600,
+    "/images/guides/the-division-2-redeem-codes-billboard-plaza-1600.webp"
+   ]
+  ],
+  "small": "/images/guides/the-division-2-redeem-codes-billboard-plaza-480.webp",
+  "thumb": "/images/guides/the-division-2-redeem-codes-billboard-plaza-thumb.webp"
  },
  "/images/guides/the-division-books-in-order-covers-1200.webp": {
   "width": 1200,

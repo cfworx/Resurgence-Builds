@@ -40,6 +40,8 @@ If Ubisoft has not confirmed something, we will say so.
 
 ## Quick Answer
 
+The official store links and install sizes are on the [download page](/guides/division-resurgence-download/).
+
 - **Minimum RAM (mobile):** 4 GB. ([Ubisoft Help Center](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2456-the-division-resurgence-compatible-device-list/))
 - **Minimum iOS:** iOS 15.0, with an **A12 Bionic** chip or newer, per the App Store listing on November 15, 2026. That means **iPhone XS, XR, iPhone SE 2nd gen, or anything newer**. Ubisoft's help center still says iOS 14, but the store listing decides what you can install. ([App Store](https://apps.apple.com/us/app/the-division-resurgence/id1606349410))
 - **Minimum Android:** Android 6. Your specific phone or tablet has to be on Ubisoft's compatibility list. ([Ubisoft Help Center](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2456-the-division-resurgence-compatible-device-list/))

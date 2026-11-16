@@ -288,6 +288,19 @@ End every run with a short summary for the owner (it goes to their phone, so kee
 
 Then one line: how many sources you checked out of how many.
 
+## 8b. Pages with a "Checked" date that need a regular look
+
+These pages state what is true "right now", so they go stale by themselves. Re-check them on the schedule below. Change
+the facts and the **Checked** date in the text; never change `publishDate` or `lastUpdated` for a re-check (a re-check
+must not push the page to the top of the home page).
+
+| Page | How often | What to re-check |
+|---|---|---|
+| `guides/the-division-2-redeem-codes` | Every Monday | The "What is free right now" table against Ubisoft's Division 2 news list (`https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates`): Twitch Drops, Event Pass and event dates. Remove what has ended, add what has started, each with Ubisoft's own post as the source. The codes table only changes when a code has an official source or a named publication behind it. This is the one Division 2 page on the site: its facts never go into a Resurgence page. |
+| `guides/division-resurgence-download` | First run of each month | Store links still open, minimum OS on the App Store listing, any new platform or region Ubisoft has announced. |
+| `guides/division-resurgence-server-status` | When Ubisoft announces maintenance or an outage | Add a row to "Maintenance and hotfixes so far" with a link to our post about it. |
+| `guides/the-division-gift-guide` | Every Monday until December 25, 2026 | Prices on the Ubisoft Gear Shop and publisher pages named in the guide, and that each linked page still exists. Never open Amazon. |
+
 ## 9. Waiting for the owner's OK: the official-feed watcher
 
 Not installed. The idea: a GitHub Action that runs `scripts/pull-official-feed.mjs` every 30 minutes and commits

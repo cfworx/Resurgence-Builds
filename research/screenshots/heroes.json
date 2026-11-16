@@ -1370,5 +1370,60 @@
   "subtitle": "Phone and PC, one account",
   "align": "right",
   "bar": false
+ },
+ {
+  "out": "research/screenshots/masters/guides/division-resurgence-download-food-market-street.webp",
+  "video": "2026-10-29_10-11-54.mp4",
+  "t": 126,
+  "crop": [
+   20,
+   240,
+   1500
+  ],
+  "title": "Download",
+  "subtitle": "iPhone, Android and PC",
+  "align": "right"
+ },
+ {
+  "out": "research/screenshots/masters/guides/division-resurgence-server-status-no-entry-checkpoint.webp",
+  "video": "2026-10-29_10-11-54.mp4",
+  "t": 116,
+  "crop": [
+   760,
+   330,
+   1500
+  ],
+  "title": "Server Status",
+  "subtitle": "Is the game down?",
+  "align": "left"
+ },
+ {
+  "out": "research/screenshots/masters/guides/the-division-2-redeem-codes-billboard-plaza.webp",
+  "video": "2026-10-29_10-11-54.mp4",
+  "t": 71,
+  "crop": [
+   420,
+   150,
+   1500
+  ],
+  "title": "Division 2 Codes",
+  "subtitle": "What is real, what is free",
+  "align": "left",
+  "hud": [
+   [
+    1180,
+    620,
+    1380,
+    790,
+    "white"
+   ],
+   [
+    1280,
+    700,
+    1390,
+    800,
+    "orange"
+   ]
+  ]
  }
 ]

@@ -195,6 +195,8 @@ If you've played *The Division 2* on the same Ubisoft account, you have unclaime
 
 Open Division Resurgence, go to the **Events** tab, then **Claim your rewards**. Same character-lock rule applies. Be on the right agent first.
 
+Looking for codes for *The Division 2* itself? It has its own code site and no public code list: [what is real and what is free](/guides/the-division-2-redeem-codes/).
+
 ---
 
 ## Where New Codes Will Drop (And Why This Page Will Update)

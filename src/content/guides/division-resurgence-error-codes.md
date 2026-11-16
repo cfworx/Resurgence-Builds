@@ -250,7 +250,7 @@ Some "errors" are just Ubisoft taking the servers down on purpose. Confirmed mai
 - **August 5, 2026** Season 2 Phase 1 and the Steam launch
 - **September 16, 2026** Season 2 Phase 2
 
-Before you reset your router, check the official [@TheDivMobile](https://x.com/TheDivMobile) X account, the [Resurgence Discord](https://www.ubisoft.com/en-us/game/the-division/resurgence), and Ubisoft's [bug reporter](https://www.ubisoft.com/en-us/game/the-division/the-division-resurgence/bug-reporter/issues). If a maintenance is in progress, no fix on your end will change anything. Make a sandwich and check back in an hour.
+The one-minute version of this check is on our [server status page](/guides/division-resurgence-server-status/). Before you reset your router, check the official [@TheDivMobile](https://x.com/TheDivMobile) X account, the [Resurgence Discord](https://www.ubisoft.com/en-us/game/the-division/resurgence), and Ubisoft's [bug reporter](https://www.ubisoft.com/en-us/game/the-division/the-division-resurgence/bug-reporter/issues). If a maintenance is in progress, no fix on your end will change anything. Make a sandwich and check back in an hour.
 
 ---
 
