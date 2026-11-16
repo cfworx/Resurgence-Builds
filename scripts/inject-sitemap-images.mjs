@@ -16,7 +16,10 @@ const DIST = path.join(ROOT, 'dist');
 const SITEMAP_PATH = path.join(DIST, 'sitemap-0.xml');
 const SITE_URL = 'https://resurgencebuilds.com';
 
-const SKIP = [/^\/images\/icons\//, /^\/images\/ui\//, /resurgence-builds-official-logo\./, /^\/favicon/, /\.svg$/i];
+// Database thumbnails at 80 and 165 px are small copies repeated on every list that shows them; the 330 px
+// copy stays, because it is the largest picture an entry page has of its own item. Post images' 144 px square
+// thumbnails (-thumb.webp, used on the tier boards) are skipped for the same reason.
+const SKIP = [/^\/images\/icons\//, /^\/images\/ui\//, /^\/images\/db\/.*-(?:80|165)\.\w+$/, /-thumb\.webp$/, /resurgence-builds-official-logo\./, /^\/favicon/, /\.svg$/i];
 const MAX_PER_PAGE = 50;
 
 const escXml = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
