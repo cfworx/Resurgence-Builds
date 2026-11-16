@@ -77,6 +77,10 @@ const dataPayload = JSON.stringify(poisData);
   ogImage="/images/map/manhattan-base.jpg"
   keywords={["division resurgence interactive map","division resurgence map","division resurgence manhattan map","division resurgence safe house locations","division resurgence encrypted crate locations","division resurgence echo locations","division resurgence artifact locations","division resurgence audio log locations","division resurgence dark zone map"]}
 >
+<Fragment slot="head">
+  <!-- The base map is the largest paint; Leaflet only asks for it after two scripts run, so start it now (same URL, no crossorigin, so the request is reused). -->
+  <link rel="preload" as="image" href="/images/map/manhattan-base.webp" fetchpriority="high" />
+</Fragment>
 
 <div class="map-app">
   <section class="map-hero">
@@ -139,6 +143,8 @@ const dataPayload = JSON.stringify(poisData);
     </aside>
 
     <div class="map-canvas-wrap">
+      <!-- about 100 pins are each a tab stop; let keyboard users jump past them -->
+      <a href="#map-after" class="map-skip">Skip the map</a>
       <div id="map-canvas" data-base="/images/map/manhattan-base.webp" role="application" aria-label="Interactive map of Manhattan in The Division Resurgence"></div>
       <div class="map-zoom-hint" id="map-zoom-hint" hidden>Click the map first, then scroll to zoom</div>
       <noscript><p class="map-noscript">The interactive map needs JavaScript. The location lists below still work without it.</p></noscript>
@@ -150,7 +156,7 @@ const dataPayload = JSON.stringify(poisData);
     </button>
   </div>
 
-  <section class="map-seo">
+  <section class="map-seo" id="map-after">
     <h2>Instanced missions (not on the open-world map)</h2>
     <p>These launch from a bubble at the edge of the in-game map, so they have no pin:</p>
     <ul class="offmap-list">
@@ -299,7 +305,7 @@ const dataPayload = JSON.stringify(poisData);
 .filter-item:hover { color: #fff }
 .filter-checkbox {
   appearance: none; -webkit-appearance: none; width: 16px; height: 16px; margin: 0;
-  border: 2px solid rgba(255,255,255,0.22); border-radius: 3px; background: transparent; cursor: pointer; flex-shrink: 0; position: relative;
+  border: 2px solid rgba(255,255,255,0.38); border-radius: 3px; background: transparent; cursor: pointer; flex-shrink: 0; position: relative;
 }
 .filter-checkbox:checked { background: var(--accent); border-color: var(--accent) }
 .filter-checkbox:checked::after { content: '✓'; position: absolute; top: -2px; left: 2px; font-size: 11px; font-weight: bold; color: #fff }
@@ -324,6 +330,15 @@ const dataPayload = JSON.stringify(poisData);
 .map-filters-toggle:hover { background: var(--accent); color: #fff }
 
 /* --- Canvas --- */
+/* "Skip the map": hidden until it has keyboard focus, then shown in the map's top-left corner */
+.map-skip:not(:focus) {
+  position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap;
+}
+.map-skip:focus {
+  position: absolute; top: var(--sp-2); left: var(--sp-2); z-index: 1100;
+  display: inline-flex; align-items: center; min-height: 44px; padding: var(--sp-2) var(--sp-4);
+  background: var(--accent); color: #000; font-weight: 800; border-radius: var(--border-radius); text-decoration: none;
+}
 .map-canvas-wrap {
   flex: 1; min-width: 0; position: relative;
   border: 1px solid var(--border); border-radius: 0 var(--border-radius) var(--border-radius) 0; overflow: hidden;
@@ -489,10 +504,11 @@ const dataPayload = JSON.stringify(poisData);
   .map-filters__body { padding-bottom: calc(var(--sp-2) + var(--ad-video, 0px)) }
   .map-filters__close { display: inline-flex; align-items: center; justify-content: center }
   .map-filters-toggle {
-    display: flex; transition: opacity 0.2s ease;
+    display: flex; transition: opacity 0.2s ease, visibility 0.2s;
     bottom: calc(max(20px, env(safe-area-inset-bottom) + 12px) + var(--ad-bottom, 0px) + var(--ad-video, 0px));
   }
-  .map-filters-toggle.is-hidden { opacity: 0; pointer-events: none }
+  /* visibility too, so the invisible button can't take keyboard focus */
+  .map-filters-toggle.is-hidden { opacity: 0; pointer-events: none; visibility: hidden }
   .map-filters-backdrop { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.5); z-index: 1000 }
   .map-filters-backdrop.is-open { display: block }
   .filter-item { min-height: 44px; padding: 4px 0 }

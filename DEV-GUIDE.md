@@ -308,9 +308,9 @@ The `title` in your frontmatter becomes the page's `<title>` tag. This is what s
 
 **Good examples:**
 ```
-title: "Vanguard Tank Build — Best Endgame Setup (Patch 1.2)"
-title: "Leveling Guide: 1–30 in Under 12 Hours"
-title: "Patch 1.2.0 — Season 1 Weapon Balance Changes"
+title: "Vanguard Tank Build: Best Endgame Setup (Patch 1.2)"
+title: "Leveling Guide: 1 to 30 in Under 12 Hours"
+title: "Patch 1.2.0: Season 1 Weapon Balance Changes"
 ```
 
 **Bad examples:**

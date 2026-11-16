@@ -21,7 +21,7 @@ faqs:
 
 Hotfix 1.1.1 was a small, fast-shipping fix focused on sound and UI bugs reported in the first two weeks after launch.
 
-### Fixes Implemented
+## Fixes Implemented
 1. Sound issue on many devices fixed (frequently affecting VIVO devices)
 2. Invisible UI when talking to the **Quartermaster** in the initial mission: fixed
 3. Leaderboards not displaying players for some users: fixed

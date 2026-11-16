@@ -82,14 +82,13 @@ const talentLd = {
   headline: title,
   description: description,
   url: `${siteUrl}/database/weapon-talents/${slug}/`,
-  author: { '@type': 'Person', '@id': `${siteUrl}/author/rapidf5/#person`, name: 'RapidF5' },
+  author: { '@type': 'Person', '@id': `${siteUrl}/author/rapidf5/#person`, name: 'RapidF5', url: `${siteUrl}/author/rapidf5/` },
   publisher: { '@type': 'Organization', '@id': `${siteUrl}/#organization`, name: 'Resurgence Builds' },
-  mainEntityOfPage: { '@type': 'WebPage', '@id': `${siteUrl}/database/weapon-talents/${slug}/` },
+  mainEntityOfPage: { '@type': 'WebPage', '@id': `${siteUrl}/database/weapon-talents/${slug}/`, lastReviewed: talent.verifiedInGame || '2026-05-30' },
   datePublished: '2026-05-30',
   dateModified: DATABASE_UPDATED,
   image: cardImage ? imageObject(cardImage) : { '@type': 'ImageObject', url: `${siteUrl}/images/resurgence-builds-official-logo.png`, width: 1024, height: 1024 },
   inLanguage: 'en-US',
-  lastReviewed: talent.verifiedInGame || '2026-05-30',
   about: { '@id': `${siteUrl}/#division-resurgence` },
 };
 ---
@@ -199,7 +198,7 @@ const talentLd = {
       {talent.upgradedName && (
         <div style="margin-bottom: var(--sp-8);">
           <h2 style="font-family: var(--font-heading); font-size: var(--text-lg); font-weight: 800; color: var(--accent); margin: 0 0 var(--sp-4) 0; padding-bottom: var(--sp-2); border-bottom: 1px solid rgba(255,255,255,0.08); display: flex; align-items: center; gap: var(--sp-3);">
-            {talent.icon && <img src={talent.icon.replace('.webp', '2.webp')} alt={talent.upgradedName} style="width: 24px; height: 24px; object-fit: contain;" onerror="this.style.display='none'" />}
+            {talent.icon && <img src={talent.icon.replace('.webp', '2.webp')} alt={talent.upgradedName} width="24" height="24" loading="lazy" style="width: 24px; height: 24px; object-fit: contain;" onerror="this.style.display='none'" />}
             Upgraded: {talent.upgradedName}
           </h2>
           <div style="padding: var(--sp-5); background: rgba(242,104,34,0.05); border-left: 3px solid var(--accent); border-radius: 0 8px 8px 0;">

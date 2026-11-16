@@ -154,7 +154,7 @@ const breadcrumbItems = [
 ];
 
 const title = `Best ${classData.name} Builds: Division Resurgence`;
-const description = `Top ${classData.name} builds for PvE and PvP in Division Resurgence. ${classData.role} loadouts with gear sets, talents, and OS Protocols. Updated for ${lastVerified}.`;
+const description = `Top ${classData.name} builds for PvE and PvP in Division Resurgence. ${classData.role} loadouts with gear sets, talents, and OS Protocols.`;
 
 const verifiedBuilds = builds.filter(b => b.data.verified !== false);
 
@@ -232,14 +232,14 @@ const boldStars = (t: string) => t
             <div style="background: rgba(0,0,0,0.2); padding: var(--sp-4) var(--sp-4) var(--sp-4) calc(var(--inset) - 1px); border: 1px solid var(--border); border-radius: var(--border-radius);">
               <p style="color: var(--accent); margin-bottom: var(--sp-1); font-size: var(--text-sm); text-transform: uppercase; letter-spacing: 0.05em; font-weight: 700;">Signature Skill: {sig.name}</p>
               <span style="display: inline-block; font-family: var(--font-mono); font-size: var(--step--2); color: #a78bfa; background: rgba(167,139,250,0.12); border: 1px solid rgba(167,139,250,0.25); padding: 2px 8px; border-radius: 999px; margin-bottom: var(--sp-2); letter-spacing: 0.04em;">{sig.focus} Focus</span>
-              <p style="color: var(--ink-muted); font-size: var(--text-sm); margin: 0;">
+              <p style="color: var(--ink-muted); margin: 0;">
                 {sig.description}
               </p>
             </div>
           ))}
           <div style="background: rgba(0,0,0,0.2); padding: var(--sp-4) var(--sp-4) var(--sp-4) calc(var(--inset) - 1px); border: 1px solid var(--border); border-radius: var(--border-radius);">
             <h2 style="color: var(--accent); margin-bottom: var(--sp-2); font-size: var(--text-sm); text-transform: uppercase; letter-spacing: 0.05em;">Talent Overview</h2>
-            <p style="color: var(--ink-muted); font-size: var(--text-sm); margin: 0;">
+            <p style="color: var(--ink-muted); margin: 0;">
               {classData.perkOverview}
             </p>
           </div>
@@ -248,13 +248,13 @@ const boldStars = (t: string) => t
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: var(--sp-6);">
           <div style="background: rgba(0,0,0,0.2); padding: var(--sp-4) var(--sp-4) var(--sp-4) calc(var(--inset) - 1px); border: 1px solid var(--border); border-radius: var(--border-radius);">
             <p style="color: var(--accent); margin-bottom: var(--sp-2); font-size: var(--text-sm); text-transform: uppercase; letter-spacing: 0.05em; font-weight: 700;">Signature Skill: {classData.signature.name}</p>
-            <p style="color: var(--ink-muted); font-size: var(--text-sm); margin: 0;">
+            <p style="color: var(--ink-muted); margin: 0;">
               {classData.signature.description}
             </p>
           </div>
           <div style="background: rgba(0,0,0,0.2); padding: var(--sp-4) var(--sp-4) var(--sp-4) calc(var(--inset) - 1px); border: 1px solid var(--border); border-radius: var(--border-radius);">
             <h2 style="color: var(--accent); margin-bottom: var(--sp-2); font-size: var(--text-sm); text-transform: uppercase; letter-spacing: 0.05em;">Talent Overview</h2>
-            <p style="color: var(--ink-muted); font-size: var(--text-sm); margin: 0;">
+            <p style="color: var(--ink-muted); margin: 0;">
               {classData.perkOverview}
             </p>
           </div>
@@ -265,14 +265,14 @@ const boldStars = (t: string) => t
     <!-- Signature Talents -->
     <div style="margin-bottom: var(--sp-8); padding: var(--sp-5) var(--sp-5) var(--sp-5) calc(var(--inset) - 1px); background: rgba(0,0,0,0.15); border: 1px solid var(--border); border-radius: var(--border-radius); max-width: 800px;">
       <h2 style="font-family: var(--font-heading); font-size: var(--text-lg); font-weight: 800; color: #fff; margin: 0 0 var(--sp-3) 0;">{classData.name} Talent Breakdown</h2>
-      <p style="color: var(--ink-muted); font-size: var(--text-sm); line-height: 1.75; margin: 0;" set:html={boldStars(classData.signatureTalents)} />
+      <p style="color: var(--ink-muted); line-height: 1.75; margin: 0;" set:html={boldStars(classData.signatureTalents)} />
     </div>
 
 
     <!-- Why Play section -->
     <div style="margin-bottom: var(--sp-8); padding: var(--sp-5) var(--sp-5) var(--sp-5) calc(var(--inset) - 1px); background: rgba(0,0,0,0.15); border: 1px solid var(--border); border-radius: var(--border-radius); max-width: 800px;">
       <h2 style="font-family: var(--font-heading); font-size: var(--text-lg); font-weight: 800; color: #fff; margin: 0 0 var(--sp-3) 0;">Why Play {classData.name}?</h2>
-      <p style="color: var(--ink-muted); font-size: var(--text-sm); line-height: 1.75; margin: 0 0 var(--sp-3) 0;">
+      <p style="color: var(--ink-muted); line-height: 1.75; margin: 0 0 var(--sp-3) 0;">
         If you want to <strong style="color: var(--ink);">{classData.role}</strong> in Division Resurgence, this is your pick.
         {classData.signatures
           ? <>{' '}Each focus has its own signature skill: <strong style="color: var(--accent);">{classData.signatures[0].name}</strong> for {classData.signatures[0].focus} and <strong style="color: var(--accent);">{classData.signatures[1].name}</strong> for {classData.signatures[1].focus}. Pick the path that matches your playstyle.</>
@@ -284,7 +284,7 @@ const boldStars = (t: string) => t
     <!-- How to Play section -->
     <div style="margin-bottom: var(--sp-8); max-width: 800px;">
       <h2 style="font-family: var(--font-heading); font-size: var(--text-lg); font-weight: 800; color: #fff; margin: 0 0 var(--sp-4) 0;">How to Play {classData.name}</h2>
-      <ul style="color: var(--ink-muted); font-size: var(--text-sm); line-height: 1.75; padding-left: var(--inset); display: flex; flex-direction: column; gap: var(--sp-3);">
+      <ul style="color: var(--ink-muted); line-height: 1.75; padding-left: var(--inset); display: flex; flex-direction: column; gap: var(--sp-3);">
         {classData.howToPlay.map(tip => (
           <li style="max-width: var(--measure);">{tip}</li>
         ))}
@@ -326,6 +326,18 @@ const boldStars = (t: string) => t
         <p style="color: var(--ink-muted);">No builds have been published for this class yet.</p>
       </div>
     )}
+
+    <div class="faq-section" id="faq" style="margin-top: var(--sp-8);">
+      <h2 class="heading-accent" style="font-size: var(--text-xl); margin-bottom: var(--sp-4);">Frequently Asked Questions</h2>
+      <div class="faq-list" style="display: flex; flex-direction: column; gap: var(--sp-2);">
+        {faqs.map((faq) => (
+          <details class="faq-item">
+            <summary class="faq-question">{faq.question}</summary>
+            <p class="faq-answer">{faq.answer}</p>
+          </details>
+        ))}
+      </div>
+    </div>
 
   </div>
 </BaseLayout>

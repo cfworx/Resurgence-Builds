@@ -16,11 +16,14 @@ export interface Props {
   tagLinks?: boolean;
   /** true for the first cards on a listing, which are on the first screen and shouldn't wait to load */
   eager?: boolean;
+  /** true = render with display:none (the home page's pagination script shows the first nine and hides the rest anyway) */
+  startHidden?: boolean;
 }
 
-const { title, href, date, author, description, type, tags = [], featuredImage, imageAlt, tagLinks = true, eager = false } = Astro.props;
+const { title, href, date, author, description, type, tags = [], featuredImage, imageAlt, tagLinks = true, eager = false, startHidden = false } = Astro.props;
 const img = postImage(featuredImage);
-const wide = img ? img.width / img.height > 1.95 : false;
+// Older images without a master (`legacy`) stay cropped to 16:9, as they were before they had copies.
+const wide = img && !img.legacy ? img.width / img.height > 1.95 : false;
 
 const formattedDate = date.toLocaleDateString('en-US', { timeZone: 'UTC',
   month: 'short',
@@ -42,10 +45,10 @@ const typeLabel = typeLabels[type] || type;
 const creator = (author.match(/via\s+([^)]+)\)?\s*$/) || [])[1]?.trim();
 ---
 
-<article class={`card post-card ${featuredImage ? 'post-card--has-image' : ''}`} data-type={type} data-tags={JSON.stringify(tags)} style="position: relative;">
+<article class={`card post-card ${featuredImage ? 'post-card--has-image' : ''}`} data-type={type} data-tags={JSON.stringify(tags)} style={startHidden ? 'position: relative; display: none;' : 'position: relative;'}>
     {featuredImage && (
-      <div class={`post-card__image${wide ? ' post-card__image--wide' : ''}`} data-bg={img?.small || featuredImage}>
-        <div class="post-card__image-blur"></div>
+      <div class={`post-card__image${wide ? ' post-card__image--wide' : ''}`} data-bg={wide ? img?.small : undefined}>
+        {wide && <div class="post-card__image-blur"></div>}
         <img
           src={featuredImage}
           srcset={srcsetAttr(img)}

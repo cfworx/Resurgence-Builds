@@ -129,6 +129,17 @@ const faqs = [
         </a>
       </div>
 
+      <div class="faq-section" id="faq" style="margin-top: var(--sp-8);">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-list" style="display: flex; flex-direction: column; gap: var(--sp-2);">
+          {faqs.map((faq) => (
+            <details class="faq-item">
+              <summary class="faq-question">{faq.question}</summary>
+              <p class="faq-answer">{faq.answer}</p>
+            </details>
+          ))}
+        </div>
+      </div>
     </div>
   </div>
 </BaseLayout>

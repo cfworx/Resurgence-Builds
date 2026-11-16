@@ -23,6 +23,8 @@
       <div id="search-results" class="search-results">
         <div class="search-empty-state">Type to start searching...</div>
       </div>
+      <!-- Tells screen readers how many results there are as they change -->
+      <p id="search-status" class="sr-only" role="status"></p>
     </div>
   </div>
 </dialog>
@@ -259,6 +261,9 @@
     return d.innerHTML;
   }
 
+  const searchStatus = document.getElementById('search-status');
+  const announce = (text: string) => { if (searchStatus) searchStatus.textContent = text; };
+
   searchInput?.addEventListener('input', (e) => {
     const query = (e.target as HTMLInputElement).value.toLowerCase().trim();
     
@@ -266,6 +271,7 @@
 
     if (!query) {
       resultsContainer.innerHTML = '<div class="search-empty-state">Type to start searching...</div>';
+      announce('');
       return;
     }
 
@@ -281,8 +287,11 @@
 
     if (matches.length === 0) {
       resultsContainer.innerHTML = '<div class="search-empty-state">No results found.</div>';
+      announce('No results found.');
       return;
     }
+
+    announce(matches.length === 1 ? '1 result' : `${matches.length} results`);
 
     resultsContainer.innerHTML = '';
     matches.forEach(m => {

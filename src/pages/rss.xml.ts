@@ -48,6 +48,8 @@ export async function GET(context: APIContext) {
     description: 'Builds, guides, tier lists, and news for Tom Clancy\'s The Division Resurgence.',
     site: context.site!.toString(),
     items: allItems,
-    customData: '<language>en-us</language>',
+    xmlns: { atom: 'http://www.w3.org/2005/Atom' },
+    // the feed's own address, which feed validators ask for
+    customData: `<language>en-us</language><atom:link href="${new URL('/rss.xml', context.site!).href}" rel="self" type="application/rss+xml"/>`,
   });
 }

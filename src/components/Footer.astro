@@ -128,8 +128,8 @@ const isHome = Astro.url.pathname === '/' || Astro.url.pathname === '/index.html
     line-height: var(--lh-small);
   }
   .footer-about { font-size: var(--step--1); }
-  .footer-about a { color: var(--accent); text-decoration: none; }
-  .footer-about a:hover { text-decoration: underline; }
+  /* underlined: a link inside a sentence can't be told apart by colour alone */
+  .footer-about a { color: var(--accent); text-decoration: underline; text-underline-offset: 0.15em; }
   .footer-legal { font-size: var(--step--2); }
   @media (min-width: 45em) {
     .footer-notes { padding-inline: var(--sp-8); }

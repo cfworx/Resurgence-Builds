@@ -19,7 +19,7 @@ const items = allBuilds.map((b) => ({
   name: shortName(b.data.title),
   href: `/builds/${b.id}/`,
   sub: `${b.data.specialization}${b.data.subclass ? ` · ${b.data.subclass}` : ''}`,
-  image: postImage(b.data.featuredImage)?.small ?? b.data.featuredImage ?? '/images/default-cover.webp',
+  image: postImage(b.data.featuredImage)?.thumb ?? b.data.featuredImage ?? '/images/default-cover.webp',
 }));
 
 const snap = snapshotItems('build');

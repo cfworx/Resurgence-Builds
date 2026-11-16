@@ -120,8 +120,11 @@ export async function getStaticPaths() {
 
 const { tagName, posts } = Astro.props;
 
-// Format the tag for display (capitalize words)
-const displayTag = tagName.replace(/-/g, ' ').replace(/\b\w/g, (c: string) => c.toUpperCase());
+// Format the tag for display (capitalize words). Lowercase game terms get the game's casing (OS, PC, PvP,
+// PvE, DPS); words a tag already capitalizes (a creator's name like "PVE Enjoyer") stay as written.
+const TERM_CASE: Record<string, string> = { os: 'OS', pc: 'PC', pvp: 'PvP', pve: 'PvE', dps: 'DPS' };
+const displayTag = tagName.replace(/-/g, ' ').replace(/\b[a-z]+\b/g, (w: string) => TERM_CASE[w] ?? w)
+  .replace(/\b\w/g, (c: string) => c.toUpperCase());
 
 // Check if this tag has a custom intro
 const tagSlug = Astro.params.tag as string;

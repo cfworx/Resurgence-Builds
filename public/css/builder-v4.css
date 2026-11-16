@@ -5,6 +5,23 @@
    Breakpoints: 35em (560px), 45em (720px), 60em (960px), 72em (1152px, the summary column moves beside the board).
    ============================================================ */
 
+/* Rajdhani for the game-style headings and numbers, self-hosted (Latin subset, SIL Open Font License) so the
+   planner no longer waits on a stylesheet from Google before its first paint. */
+@font-face {
+  font-family: 'Rajdhani';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('/fonts/rajdhani-600.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Rajdhani';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/rajdhani-700.woff2') format('woff2');
+}
+
 :root {
   --pl-bg: #0E0F12;
   --pl-panel: #15171B;
@@ -580,6 +597,8 @@ body.has-dialog #main-content { z-index: 10002; }
 .pl-slot.is-pull .pl-slot__lever span { animation: lever-pull 0.6s cubic-bezier(0.3, 0.7, 0.3, 1); }
 @keyframes lever-pull { 0% { transform: none; } 38% { transform: translateY(20px) scale(0.92); } 100% { transform: none; } }
 @media (max-width: 59.99em) { .pl-slot { flex: 1 1 100%; } }
+/* narrowest phones (and enlarged text spacing): let the label wrap instead of being cut off */
+@media (max-width: 22.49em) { .pl-slot { white-space: normal; padding-block: 8px; } }
 
 /* While the reels spin: the board waits, tiles glow gold until their reel stops, the summary blurs */
 .lab.is-spinning .pl-board { cursor: progress; }

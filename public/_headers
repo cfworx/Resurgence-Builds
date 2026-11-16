@@ -14,7 +14,7 @@
   Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
-  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=(), bluetooth=(), interest-cohort=(), browsing-topics=()
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=(), interest-cohort=(), browsing-topics=()
 # No Cache-Control here on purpose. Pages then get Cloudflare's default,
 # "public, max-age=0, must-revalidate": the browser keeps its copy but checks
 # for a newer one on every visit (a quick 304 when nothing changed), so an
@@ -31,6 +31,10 @@
 /pagefind/*
   Cache-Control: public, max-age=86400
 
+# The two site fonts and the planner's Rajdhani never change; a changed font gets a new file name.
+/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
+
 # =============================================================================
 # Image Caching: aggressive cache since images rarely change
 # =============================================================================
@@ -43,8 +47,10 @@
 # =============================================================================
 # Machine-Readable Files: short cache for freshness
 # =============================================================================
+# Five minutes: Cloudflare keeps robots.txt at its edge and a deploy does not clear that copy,
+# so a day-long lifetime meant a robots.txt change took up to 24 hours to reach every location.
 /robots.txt
-  Cache-Control: public, max-age=86400
+  Cache-Control: public, max-age=300
 
 /sitemap-index.xml
   Cache-Control: public, max-age=900, s-maxage=3600

@@ -206,6 +206,8 @@ p { margin-bottom: var(--sp-4); max-width: var(--measure); }
 p, li, dd, figcaption { text-wrap: pretty; }
 /* plain content lists (no class: not a menu or a component) keep the same line length as paragraphs */
 main :is(ul, ol):not([class]) > li { max-width: var(--measure); }
+/* definition text and captions too (weapon pages ran 93 to 117 characters a line) */
+main :is(dd, figcaption) { max-width: var(--measure); }
 
 strong { font-weight: 500; }
 

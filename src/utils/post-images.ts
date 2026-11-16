@@ -1,10 +1,11 @@
 // Featured images for posts, made by scripts/build-post-images.mjs from in-game masters.
 // postImage(featuredImage) returns the image's real size and its smaller copies when the image is
 // in the manifest, so cards and post layouts can add srcset/sizes. Older images that aren't in the
-// manifest fall back to a plain src.
+// manifest fall back to a plain src. `thumb` is a 144 px square centre crop for small thumbnails;
+// `legacy` marks older images without a master (cards keep cropping those to 16:9).
 import manifest from '../data/post-images.json';
 
-export type PostImage = { width: number; height: number; srcset: [number, string][]; small: string };
+export type PostImage = { width: number; height: number; srcset: [number, string][]; small: string; thumb: string; legacy?: boolean };
 
 const images = manifest as Record<string, PostImage>;
 
