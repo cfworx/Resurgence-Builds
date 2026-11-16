@@ -1425,5 +1425,19 @@
     "orange"
    ]
   ]
+ },
+ {
+  "out": "research/screenshots/masters/news/division-3-builds-sister-site-doorway.webp",
+  "video": "2026-10-29_10-06-44.mp4",
+  "t": 120,
+  "crop": [
+   560,
+   240,
+   1700
+  ],
+  "title": "Division 3 Builds",
+  "subtitle": "Our new sister site",
+  "align": "left",
+  "titleY": 0.28
  }
 ]
