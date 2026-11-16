@@ -52,14 +52,13 @@ const protocolLd = {
   headline: `${protocol.name} OS Protocol, Division Resurgence`,
   description: description,
   url: `${siteUrl}/database/os-protocols/${slug}/`,
-  author: { '@type': 'Person', '@id': `${siteUrl}/author/rapidf5/#person`, name: 'RapidF5' },
+  author: { '@type': 'Person', '@id': `${siteUrl}/author/rapidf5/#person`, name: 'RapidF5', url: `${siteUrl}/author/rapidf5/` },
   publisher: { '@type': 'Organization', '@id': `${siteUrl}/#organization`, name: 'Resurgence Builds' },
-  mainEntityOfPage: { '@type': 'WebPage', '@id': `${siteUrl}/database/os-protocols/${slug}/` },
+  mainEntityOfPage: { '@type': 'WebPage', '@id': `${siteUrl}/database/os-protocols/${slug}/`, lastReviewed: protocol.verifiedInGame || '2026-05-30' },
   datePublished: '2026-05-27',
   dateModified: DATABASE_UPDATED,
   ...(cardImage ? { image: imageObject(cardImage) } : {}),
   inLanguage: 'en-US',
-  lastReviewed: protocol.verifiedInGame || '2026-05-30',
   about: { '@id': `${siteUrl}/#division-resurgence` },
 };
 
