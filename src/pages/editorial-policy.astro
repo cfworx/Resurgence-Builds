@@ -1,0 +1,152 @@
+---
+// How the site checks facts, in the readers' words. This is the public version of the rules in CLAUDE.md, VOTES.md
+// and COMMENTS.md: keep the two in step. Linked from the footer, /about/ and /partners/, and named as the
+// organization's publishingPrinciples in the site-wide structured data (src/components/SEO.astro).
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+
+const breadcrumbItems = [{ name: 'Editorial Policy', url: '/editorial-policy/' }];
+const title = 'Editorial Policy: How Resurgence Builds Checks Its Facts';
+const description = 'Where every fact on Resurgence Builds comes from: the game itself, official Ubisoft sources or a named creator. How builds, tier lists, news and reviews are checked, how corrections work, and how ads and affiliate links are kept apart from what we write.';
+const UPDATED = '2026-11-16';
+const updatedLong = new Date(`${UPDATED}T00:00:00Z`).toLocaleDateString('en-US', { timeZone: 'UTC', month: 'long', day: 'numeric', year: 'numeric' });
+
+const faqs = [
+  {
+    question: 'Where does Resurgence Builds get its information?',
+    answer: 'From three places only: the game itself (our own screen recordings and screenshots), official Ubisoft sources (patch notes, news posts, the help center, the store pages), and creators, whose claims are attributed to them by name and marked as theirs. Facts from The Division or The Division 2 are never used as facts about Resurgence.',
+  },
+  {
+    question: 'How do I report a mistake on Resurgence Builds?',
+    answer: 'Use the contact form and choose Bug Report, with the page address and what the game shows. Corrections are handled before anything else, and when a fix changes something readers may have relied on, the page says what changed.',
+  },
+  {
+    question: 'Are the tier lists on Resurgence Builds an opinion?',
+    answer: 'The build and OS Protocol tier lists are ranked by readers: one vote per reader per item, averaged into a tier. The class tier list is the average of published class tier lists, each one named and dated, with our own pick marked as ours.',
+  },
+];
+
+const pageLd = {
+  '@type': 'WebPage',
+  '@id': 'https://resurgencebuilds.com/editorial-policy/#webpage',
+  name: title,
+  description,
+  dateModified: UPDATED,
+  about: { '@id': 'https://resurgencebuilds.com/#organization' },
+};
+---
+
+<BaseLayout noAds title={title} description={description} breadcrumbs={breadcrumbItems} faqs={faqs} jsonLd={pageLd}>
+  <div class="container section content-width">
+    <Breadcrumbs items={breadcrumbItems} />
+    <h1 class="heading-accent">Editorial Policy</h1>
+
+    <div class="prose">
+      <p>
+        The one thing this site sells is being right about <em>The Division Resurgence</em>. This page says where our
+        facts come from, how each kind of page is checked, and what happens when we get something wrong. Last
+        revised {updatedLong}.
+      </p>
+
+      <h2 id="sources">Three sources, in this order</h2>
+      <ol>
+        <li><strong>The game itself.</strong> RapidF5 plays the game and records it. What the game shows on screen (a talent's Source list, an Armory card, a loadout, a mission screen) outranks everything else, including our own earlier pages.</li>
+        <li><strong>Official Ubisoft sources.</strong> Patch notes, news posts, the help center, the store pages and Ubisoft's official accounts. We link the original and give its date.</li>
+        <li><strong>Named creators and players.</strong> When a number or a claim comes from a creator's video or a player's post, the page says whose it is and does not present it as our own test.</li>
+      </ol>
+      <p>
+        When a claim cannot be checked yet, we say less instead of guessing. Mechanics, numbers and names from
+        <em>The Division</em> and <em>The Division 2</em> are never used as facts about Resurgence: the games share
+        names, not rules.
+      </p>
+
+      <h2 id="rolls">What can roll on what</h2>
+      <p>
+        Which talents and attributes a weapon or gear piece can roll is recorded from the game's own lists, piece by
+        piece. Before the site is published, a script checks every build sheet, every "these roll it too" list and
+        every build planner link against those records, and the site does not go out if a build lists a roll the game
+        does not allow. The <a href="/builder/">build planner</a> offers only combinations from the same records.
+      </p>
+
+      <h2 id="builds">Builds</h2>
+      <ul>
+        <li><strong>Verified</strong> means RapidF5 has played the build in the game.</li>
+        <li><strong>Creator build</strong> means we wrote up a build from the creator who made it and ran it. The creator is named and linked, and the performance claims are theirs.</li>
+        <li><strong>Original build</strong> means we put the build together from the game's Build-Making Database and have not played it yet.</li>
+      </ul>
+      <p>Each build page shows which of the three it is, and when it was last updated.</p>
+
+      <h2 id="tier-lists">Tier lists</h2>
+      <p>
+        The <a href="/tier-list/">build</a> and <a href="/tier-list/os-protocols/">OS Protocol</a> tier lists are
+        ranked by readers, not by us. Anyone can vote, one vote per reader per item, and a vote can be changed. Votes
+        are averaged into a tier (S counts 5, A 4, B 3, C 2, D 1), and the lists show how many votes stand behind each
+        placement. The <a href="/tier-list/classes/">class tier list</a> is different: it averages the published class
+        tier lists, each one named, linked and dated, and marks our own pick as ours.
+      </p>
+
+      <h2 id="news">News and patch notes</h2>
+      <p>
+        News comes from official posts, and each article links the post it is based on. We do not publish anything
+        datamined from the game files. Something unannounced is reported only when it has been seen in public (in the
+        game's own screens or in an official post), and it is labeled unconfirmed until Ubisoft confirms it. When
+        Ubisoft has not said when something is coming, our pages say exactly that.
+      </p>
+
+      <h2 id="reviews">Reviews of gear and books</h2>
+      <p>
+        We review only what the owner owns. A <a href="/reviews/">review</a> says what the item is, what our own
+        photos show, what its maker or publisher states and what named publications concluded. It never describes an
+        experience nobody had, and it carries a score only when the owner gave that score himself. No company sees a
+        review before it is published or pays for one. If a maker sends a product, the page says so.
+      </p>
+
+      <h2 id="images">Pictures</h2>
+      <p>
+        Post images are pictures from the game: frames from our recordings or screenshots the owner took. We edit
+        them (clearing the interface, adding a title, sometimes swapping the words on a sign for a joke), so a picture
+        may not match your screen exactly, but it is always the game. Review pages use the owner's own photos.
+      </p>
+
+      <h2 id="corrections">Corrections</h2>
+      <p>
+        Tell us through the <a href="/contact/?topic=bug">contact form</a> (choose Bug Report) and include the page
+        and what the game shows. Corrections come before new work. When a fix changes something a reader may have
+        relied on, the page says what changed. Ubisoft and product makers can use the same form: an official
+        correction is applied first.
+      </p>
+
+      <h2 id="money">Ads, affiliate links and independence</h2>
+      <ul>
+        <li>The site is free. Ads are sold through Journey by Mediavine and pay for hosting and development.</li>
+        <li>Links to products on Amazon are affiliate links and are labeled as paid links. A purchase through one earns the site a commission at no cost to you.</li>
+        <li>Neither changes what we write. Coverage cannot be bought, and advertisers have no say over builds, rankings, reviews or news.</li>
+        <li>Resurgence Builds is a fan site. It is not affiliated with or endorsed by Ubisoft.</li>
+      </ul>
+
+      <h2 id="comments">Comments</h2>
+      <p>
+        Anyone can comment without an account. Comments are checked for spam and abuse, and readers can report one.
+        We remove spam, harassment, cheats and account trading. We do not remove a comment for disagreeing with us.
+      </p>
+
+      <p>Questions about any of this: <a href="/contact/">contact us</a>. For companies and press, see <a href="/partners/">Work with Resurgence Builds</a>.</p>
+
+      <div class="faq-section" id="faq">
+        <h2>Questions</h2>
+        <div class="faq-list">
+          {faqs.map((faq) => (
+            <details class="faq-item">
+              <summary class="faq-question">{faq.question}</summary>
+              <p class="faq-answer">{faq.answer}</p>
+            </details>
+          ))}
+        </div>
+      </div>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .faq-list { display: flex; flex-direction: column; gap: var(--sp-2); }
+</style>

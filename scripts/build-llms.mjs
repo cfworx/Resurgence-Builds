@@ -65,6 +65,8 @@ const PRIORITY_PATHS = [
   '/guides/division-resurgence-controller-guide/',
   '/guides/the-division-books-in-order/',
   '/guides/the-division-gift-guide/',
+  '/partners/',
+  '/editorial-policy/',
 ];
 
 const sitemapPathSet = new Set(sitemapUrls.map(u => new URL(u).pathname));

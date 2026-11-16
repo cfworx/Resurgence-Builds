@@ -70,9 +70,15 @@ graph.push({
   },
   sameAs: [
     'https://x.com/ResurgenceBuild',
-    'https://www.youtube.com/@ResurgenceBuilds',
     'https://www.reddit.com/user/ResurgenceBuilds/'
-  ]
+  ],
+  description: "Independent fan site for Tom Clancy's The Division Resurgence: builds, a build planner, a game database, player-voted tier lists, an interactive map, guides and patch notes.",
+  foundingDate: '2026-05',
+  founder: { '@id': `${siteUrl}/author/rapidf5/#person` },
+  publishingPrinciples: `${siteUrl}/editorial-policy/`,
+  correctionsPolicy: `${siteUrl}/editorial-policy/#corrections`,
+  knowsAbout: ["Tom Clancy's The Division Resurgence", 'The Division Resurgence builds', 'phone controllers for The Division Resurgence'],
+  contactPoint: { '@type': 'ContactPoint', contactType: 'partnerships and corrections', url: `${siteUrl}/contact/`, availableLanguage: 'English' }
 });
 
 // 1b. Person: site-wide E-E-A-T signal
@@ -86,7 +92,6 @@ graph.push({
   worksFor: { '@id': `${siteUrl}/#organization` },
   sameAs: [
     'https://x.com/ResurgenceBuild',
-    'https://www.youtube.com/@ResurgenceBuilds',
     'https://www.reddit.com/user/ResurgenceBuilds/'
   ],
   knowsAbout: [

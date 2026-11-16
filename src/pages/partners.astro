@@ -1,0 +1,233 @@
+---
+// For Ubisoft, hardware makers, creators and press (and the AI assistants that research on their behalf): who reads
+// the site, what it will and will not do, and how to reach it. Audience numbers come from src/data/site-stats.json
+// (first-party, dated, refreshed by hand). Content counts are computed from the collections and data files so they
+// never go stale. Nothing here is a promise of coverage: see /editorial-policy/.
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import { getCollection } from 'astro:content';
+import stats from '../data/site-stats.json';
+import weapons from '../data/standard-weapons.json';
+import weaponTalents from '../data/weapon-talents.json';
+import osProtocols from '../data/os-protocols.json';
+import gearSets from '../data/gear-set-effects.json';
+
+const builds = await getCollection('builds');
+const guides = await getCollection('guides');
+const patchNotes = await getCollection('patchNotes');
+const reviews = await getCollection('reviews');
+const creators = new Set(
+  builds
+    .map((b) => String(b.data.author || ''))
+    .map((a) => (a.match(/via ([^)]+)\)?$/) || a.match(/via (.+)$/) || [])[1])
+    .filter(Boolean)
+    .map((n) => n!.trim())
+);
+
+const n = (v: number) => v.toLocaleString('en-US');
+const longDate = (iso: string) =>
+  new Date(`${iso}T00:00:00Z`).toLocaleDateString('en-US', { timeZone: 'UTC', month: 'long', day: 'numeric', year: 'numeric' });
+const asOf = longDate(stats.asOf);
+
+const breadcrumbItems = [{ name: 'Partners', url: '/partners/' }];
+const title = 'Work With Resurgence Builds: Audience, Policies and Contact';
+const description = `Resurgence Builds is an independent fan site for The Division Resurgence. Who reads it (${n(stats.users)} players in 28 days), what it will and will not do, and how Ubisoft, hardware makers, creators and press can reach it.`;
+
+const faqs = [
+  {
+    question: 'What is Resurgence Builds?',
+    answer: `An independent fan site for Tom Clancy's The Division Resurgence, online since May 2026 and run by one player, RapidF5. It publishes ${builds.length} build guides, a build planner, a database of what every weapon and gear piece can roll, player-voted tier lists, an interactive map, ${guides.length} guides and every set of patch notes. It is not affiliated with Ubisoft.`,
+  },
+  {
+    question: 'How many people use Resurgence Builds?',
+    answer: `In the 28 days to ${asOf}, Google Analytics counted ${n(stats.users)} users, ${n(stats.visits)} visits and ${n(stats.pageViews)} page views. In about the same period Google Search showed the site ${n(stats.searchImpressions)} times, ${n(stats.aiImpressions)} of them inside Google's AI answers.`,
+  },
+  {
+    question: 'Does Resurgence Builds accept sponsored posts or paid reviews?',
+    answer: 'No. Coverage cannot be bought, and a review never carries a score unless the owner gave it himself. A maker can send a product for testing, and the page then says how we got it. Advertising runs through Journey by Mediavine; a labeled sponsorship of a tool page is possible, with no say over what the site writes.',
+  },
+  {
+    question: 'How do I contact Resurgence Builds about a partnership?',
+    answer: 'Use the contact form and choose Partnership Inquiry. It reaches the owner directly. Corrections from Ubisoft or from a product maker go through the same form and are fixed first.',
+  },
+];
+
+const pageLd = {
+  '@type': 'WebPage',
+  '@id': 'https://resurgencebuilds.com/partners/#webpage',
+  name: title,
+  description,
+  dateModified: stats.asOf,
+  about: { '@id': 'https://resurgencebuilds.com/#organization' },
+  mainEntity: { '@id': 'https://resurgencebuilds.com/#organization' },
+};
+---
+
+<BaseLayout noAds title={title} description={description} breadcrumbs={breadcrumbItems} faqs={faqs} jsonLd={pageLd}>
+  <div class="container section content-width">
+    <Breadcrumbs items={breadcrumbItems} />
+    <h1 class="heading-accent">Work With Resurgence Builds</h1>
+
+    <div class="prose">
+      <p>
+        <strong>Resurgence Builds</strong> is an independent fan site for <em>Tom Clancy's The Division Resurgence</em>, online
+        since May 2026 and run by one player, RapidF5. This page is for Ubisoft, controller and phone makers, creators
+        and press: who reads the site, what it will and will not do, and how to reach it. Numbers are as of {asOf}.
+      </p>
+
+      <h2 id="audience">Who reads the site</h2>
+      <div class="pt-stats" role="list">
+        <div class="pt-stat" role="listitem"><span class="pt-stat__n">{n(stats.users)}</span><span class="pt-stat__l">users in 28 days</span></div>
+        <div class="pt-stat" role="listitem"><span class="pt-stat__n">{n(stats.pageViews)}</span><span class="pt-stat__l">page views</span></div>
+        <div class="pt-stat" role="listitem"><span class="pt-stat__n">{n(stats.searchImpressions)}</span><span class="pt-stat__l">times shown in Google Search</span></div>
+        <div class="pt-stat" role="listitem"><span class="pt-stat__n">{n(stats.aiImpressions)}</span><span class="pt-stat__l">times shown in Google's AI answers</span></div>
+      </div>
+      <table>
+        <thead>
+          <tr><th scope="col">Measure</th><th scope="col">Number</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Users</td><td>{n(stats.users)}</td></tr>
+          <tr><td>Visits</td><td>{n(stats.visits)}</td></tr>
+          <tr><td>Page views</td><td>{n(stats.pageViews)} ({stats.viewsPerUser} per user)</td></tr>
+          <tr><td>Time on the site</td><td>{stats.engagedTimePerUser} per user</td></tr>
+          <tr><td>Visits sent by ChatGPT</td><td>{stats.chatgptVisits}</td></tr>
+          <tr><td>Clicks from Google Search</td><td>{n(stats.searchClicks)}</td></tr>
+          <tr><td>Times shown in Google Search</td><td>{n(stats.searchImpressions)}, average position {stats.searchPosition}</td></tr>
+          <tr><td>Times shown in Google's AI answers</td><td>{n(stats.aiImpressions)}, across {stats.aiPagesCited} of our pages</td></tr>
+        </tbody>
+      </table>
+      <p>
+        <strong>Sources.</strong> The first five rows are from Google Analytics, {stats.analyticsPeriod}. The last three
+        are from Google Search Console, {stats.searchPeriod}; the AI figure is from its report on AI Overviews and AI Mode.
+      </p>
+      <p>
+        <strong>Where readers are.</strong> Share of Google Search clicks:
+        {stats.countries.map((c, i) => `${c.name} ${c.share}%${i < stats.countries.length - 1 ? ', ' : ''}`).join('')}.
+        The rest is spread over many more countries: Google showed the site in {stats.searchCountries} countries and
+        territories in the period. The site is in English.
+      </p>
+      <p>
+        These are the site's own numbers, read from Google's tools, not estimates from a traffic-ranking service. We
+        will share the screens behind them on request.
+      </p>
+
+      <h2 id="what">What the site publishes</h2>
+      <ul>
+        <li><strong>{builds.length} build guides</strong> for all five specializations, each credited to the player who made it ({creators.size} creators so far), with a loadout checked against the game's own roll lists.</li>
+        <li><strong>A build planner</strong> that only offers combinations the game allows, and a <strong>database</strong> of {weapons.length} weapons, {weaponTalents.length} weapon talents, {osProtocols.length} OS Protocols and {gearSets.length} gear sets.</li>
+        <li><strong>Tier lists ranked by players</strong>: readers vote, the list moves.</li>
+        <li><strong>An interactive map</strong> of the game's New York, {guides.length} guides, and all {patchNotes.filter((p) => !p.id.startsWith('_')).length} sets of patch notes, each citing Ubisoft's own notes.</li>
+        <li><strong>{reviews.length} reviews</strong> of things the owner owns: the controller he plays on and the Division books and comics.</li>
+      </ul>
+
+      <h2 id="ubisoft">For Ubisoft</h2>
+      <p>The site exists to help people enjoy the game and stay in it. In practice that means:</p>
+      <ul>
+        <li><strong>New players get through the first hours.</strong> The <a href="/guides/division-resurgence-beginner-guide/">beginner guide</a>, the <a href="/guides/which-specialization-to-pick/">class picker</a>, the <a href="/guides/division-resurgence-device-compatibility/">system requirements</a> and the <a href="/guides/division-resurgence-crossplay/">crossplay</a> and <a href="/guides/division-resurgence-steam-pc-guide/">PC</a> guides answer the questions people ask before and just after installing.</li>
+        <li><strong>Returning players find a reason to log in.</strong> Builds, the planner and the tier lists turn "what should I run now?" into a plan.</li>
+        <li><strong>Official information stays official.</strong> Patch notes, news and requirements cite and link Ubisoft's own posts, and the site says so when Ubisoft has not announced something yet.</li>
+        <li><strong>Mistakes get fixed.</strong> Every game fact traces to the game itself or to an official Ubisoft source (<a href="/editorial-policy/">how we check facts</a>). If something here is wrong, tell us and it is corrected first.</li>
+      </ul>
+      <p><strong>What the site does not publish:</strong> anything datamined from the game files, cheats, hacks or modified clients, account selling or boosting, or unofficial currency sellers. Unannounced content is reported only when it has been seen in public, and it is labeled unconfirmed until Ubisoft confirms it. Comments are moderated.</p>
+      <p><strong>What would help us serve players better:</strong> a place on the press list for patch notes and assets, a contact for fact checks, and guidance on anything Ubisoft would like a fan site to do differently. The site is a fan project and is not affiliated with or endorsed by Ubisoft.</p>
+
+      <h2 id="hardware">For controller, phone and accessory makers</h2>
+      <p>
+        Players ask us what to play on. The <a href="/guides/division-resurgence-controller-guide/">controller guide</a>
+        lists what Ubisoft says the game supports and what we have tested ourselves, and the
+        <a href="/reviews/">reviews</a> cover hardware the owner actually owns and plays on.
+      </p>
+      <ul>
+        <li><strong>Testing.</strong> You can send a product for testing with the game. We check whether the game detects it on the platforms we can test, which button prompts it shows, whether a mission can be played without touching the screen, and how it pairs and charges, and we photograph or record what we find.</li>
+        <li><strong>No paid coverage.</strong> A sample does not buy a review, a place in a guide or a positive verdict. If we publish, the page says how we got the product and what we did not test.</li>
+        <li><strong>Corrections.</strong> If a spec or a compatibility note on the site is out of date, send the source and we will fix it.</li>
+        <li><strong>Affiliate links.</strong> Product links are affiliate links where a program exists, and they are labeled. They never change what a page says.</li>
+      </ul>
+
+      <h2 id="sponsorship">Advertising and sponsorship</h2>
+      <p>
+        Ads on the site are sold through Journey by Mediavine. Beyond that, we are open to one labeled sponsor at a time
+        for a tool page (the build planner, the interactive map or the tier lists), from a company whose product a
+        Division player would actually use. A sponsor gets a clearly marked placement and nothing else: no say over
+        builds, rankings, reviews or news. We do not publish sponsored articles written to look like our own.
+      </p>
+
+      <h2 id="creators">For creators</h2>
+      <p>
+        Every build on the site names the player who made it and links to the video it came from. If you make
+        Resurgence builds, <a href="/contact/?topic=build">send us one</a>: you get a written build sheet with every
+        piece checked against the game's roll lists, a planner link your viewers can open, and a credit and link back
+        to your channel. If we have credited you and something is wrong or missing, tell us.
+      </p>
+
+      <h2 id="facts">Fact sheet</h2>
+      <table>
+        <tbody>
+          <tr><th scope="row">Name</th><td>Resurgence Builds</td></tr>
+          <tr><th scope="row">Address</th><td class="pt-wrap">https://resurgencebuilds.com</td></tr>
+          <tr><th scope="row">Covers</th><td>Tom Clancy's The Division Resurgence (iOS, Android, PC)</td></tr>
+          <tr><th scope="row">Online since</th><td>May 2026</td></tr>
+          <tr><th scope="row">Run by</th><td><a href="/author/rapidf5/">RapidF5</a>, United States</td></tr>
+          <tr><th scope="row">Language</th><td>English</td></tr>
+          <tr><th scope="row">Relationship to Ubisoft</th><td>None. Independent fan site.</td></tr>
+          <tr><th scope="row">Policies</th><td><a href="/editorial-policy/">Editorial policy</a>, <a href="/privacy/">privacy</a>, <a href="/terms/">terms</a></td></tr>
+          <tr><th scope="row">Feeds</th><td><a href="/rss.xml">RSS</a>, <a href="/llms.txt">llms.txt</a></td></tr>
+          <tr><th scope="row">Social</th><td><a href="https://x.com/ResurgenceBuild" target="_blank" rel="noopener noreferrer">@ResurgenceBuild on X</a></td></tr>
+        </tbody>
+      </table>
+
+      <h2 id="contact">Contact</h2>
+      <p>
+        Use the <a href="/contact/?topic=partnership">contact form</a> and choose <strong>Partnership Inquiry</strong>.
+        It reaches the owner directly, and partnership and correction messages are answered first.
+      </p>
+      <p><a class="btn btn--primary" href="/contact/?topic=partnership">Get in touch</a></p>
+
+      <div class="faq-section" id="faq">
+        <h2>Questions</h2>
+        <div class="faq-list">
+          {faqs.map((faq) => (
+            <details class="faq-item">
+              <summary class="faq-question">{faq.question}</summary>
+              <p class="faq-answer">{faq.answer}</p>
+            </details>
+          ))}
+        </div>
+      </div>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .pt-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 10.5rem), 1fr));
+    gap: var(--sp-3);
+    margin: var(--sp-5) 0;
+    max-width: none;
+  }
+  .pt-stat {
+    display: flex;
+    flex-direction: column;
+    gap: var(--sp-1);
+    padding: var(--pad-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    background: rgba(255, 255, 255, 0.03);
+  }
+  .pt-stat__n {
+    font-family: var(--font-heading);
+    font-size: var(--step-3);
+    font-weight: 700;
+    line-height: var(--lh-tight);
+    color: var(--accent);
+  }
+  .pt-stat__l {
+    font-size: var(--step--1);
+    line-height: var(--lh-small);
+    color: var(--ink-muted);
+  }
+  .pt-wrap { overflow-wrap: anywhere; }
+  .faq-list { display: flex; flex-direction: column; gap: var(--sp-2); }
+</style>

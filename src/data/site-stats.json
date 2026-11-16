@@ -1,0 +1,32 @@
+{
+  "_about": "First-party audience numbers shown on /partners/. Rules: only numbers read from Google Analytics or Google Search Console by someone signed in to them, never estimates, never rounded up. Update every number together and move asOf (the last day the period covers). The country list is each country's share of Google Search clicks. The daily run cannot read these tools, so the block is refreshed by hand in a session that has Search Console and Analytics open (first week of a month is the habit).",
+  "asOf": "2026-11-14",
+  "analyticsPeriod": "October 18 to November 14, 2026",
+  "users": 2710,
+  "visits": 4957,
+  "pageViews": 12392,
+  "viewsPerUser": 4.6,
+  "engagedTimePerUser": "2 minutes 52 seconds",
+  "searchPeriod": "October 17 to November 13, 2026",
+  "searchClicks": 2650,
+  "searchImpressions": 58900,
+  "searchPosition": 5.9,
+  "aiImpressions": 15200,
+  "aiPagesCited": 274,
+  "searchCountries": 198,
+  "chatgptVisits": 155,
+  "countries": [
+    { "name": "United States", "share": 25 },
+    { "name": "Germany", "share": 7 },
+    { "name": "United Kingdom", "share": 5 },
+    { "name": "Canada", "share": 3 },
+    { "name": "France", "share": 3 },
+    { "name": "Indonesia", "share": 3 },
+    { "name": "India", "share": 3 },
+    { "name": "Philippines", "share": 3 },
+    { "name": "Poland", "share": 3 },
+    { "name": "Brazil", "share": 2 },
+    { "name": "Russia", "share": 2 },
+    { "name": "Japan", "share": 2 }
+  ]
+}

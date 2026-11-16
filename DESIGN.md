@@ -45,7 +45,10 @@ Rules of thumb:
 - Grids: `minmax(0, 1fr)` for flexible columns and `repeat(auto-fit, minmax(min(100%, Xrem), 1fr))` for card grids,
   so a wide child can't push the page sideways. Long words and codes: `overflow-wrap: anywhere`.
 - Images: always `width` and `height` attributes. `loading="lazy"` only below the first screen (cards take an
-  `eager` prop for the first three on a listing).
+  `eager` prop for the first three on a listing). The home page is the exception since November 16, 2026: its
+  first-screen picture is the banner (phones get `hero-banner-phone.webp` through `<picture>`), and its cards are all
+  lazy, because on a phone they sit below the fold and were downloading before the banner. `scripts/design-audit.cjs`
+  reports the top row of cards there as "lazy on first screen" at desktop width; that is expected.
 
 ## Breakpoints
 
