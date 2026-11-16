@@ -17,9 +17,9 @@
 /builder-legacy   /builder/  301
 
 # Legacy policy page redirects
-/privacy-policy        /privacy   301
+/privacy-policy        /privacy/  301
 /privacy-policy/       /privacy/  301
-/terms-of-service      /terms     301
+/terms-of-service      /terms/    301
 /terms-of-service/     /terms/    301
 
 # Weapon talent renamed to its in-game name (2026-10-28): Precision Support is Precise Support.
@@ -310,6 +310,9 @@
 
 # Domain-level rules go last: Cloudflare wants static redirects before dynamic ones (splats), and with these
 # three at the top only the first ~100 rules of this file were being applied.
+# Note (audit, November 16, 2026): Cloudflare Pages does not support domain-level redirects in this file, so
+# these three do nothing; the www host is redirected to the apex by Cloudflare itself. Kept, harmlessly, until
+# the owner confirms that redirect in the dashboard.
 https://www.resurgencebuilds.com/* https://resurgencebuilds.com/:splat 301
 http://www.resurgencebuilds.com/* https://resurgencebuilds.com/:splat 301
 http://resurgencebuilds.com/* https://resurgencebuilds.com/:splat 301
