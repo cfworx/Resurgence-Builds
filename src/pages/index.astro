@@ -282,15 +282,6 @@ const itemListLd = {
     </div>
   </section>
 
-</BaseLayout>
-
-<style>
-  .gear-links { display: flex; flex-wrap: wrap; gap: var(--sp-2) var(--sp-5); margin: 0 0 var(--sp-6); max-width: none; font-size: var(--text-sm); }
-  .gear-links a { display: inline-flex; align-items: center; min-height: var(--control); color: var(--accent); text-decoration: none; font-weight: 700; }
-  .gear-links a:hover { text-decoration: underline; }
-</style>
-
-
 <script>
   const filterBar = document.getElementById('tag-filters');
   const grid = document.getElementById('posts-grid');
@@ -415,3 +406,13 @@ const itemListLd = {
   // Initial render
   filterPosts();
 </script>
+
+</BaseLayout>
+
+<style>
+  .gear-links { display: flex; flex-wrap: wrap; gap: var(--sp-2) var(--sp-5); margin: 0 0 var(--sp-6); max-width: none; font-size: var(--text-sm); }
+  .gear-links a { display: inline-flex; align-items: center; min-height: var(--control); color: var(--accent); text-decoration: none; font-weight: 700; }
+  .gear-links a:hover { text-decoration: underline; }
+</style>
+
+
