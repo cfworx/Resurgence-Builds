@@ -148,7 +148,7 @@ add('---', '', '## Skill Mod Combos', '');
 
 if (fs.existsSync(path.join(DATA, 'skill-mod-combos.json'))) {
   const combos = load('skill-mod-combos.json');
-  add(`There are ${combos.length} skill mod combos in The Division Resurgence.`, '');
+  add(`There are ${combos.length} skill mod combos in The Division Resurgence. The 3-piece numbers below are each set's lowest tier, the value the in-game database shows; better sets read more (up to about 2.5 times), and the notes give readings from equipped sets.`, '');
   
   const combosBySpec = {};
   for (const c of combos) {

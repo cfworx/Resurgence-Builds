@@ -112,6 +112,10 @@
   /* A note marked caveat: true qualifies the item's effect text, so it is shown as small print
      wherever that text is shown. Other notes are patch history and stay out. Notes are never parsed. */
   const caveatOf = (x) => (x && x.caveat === true ? str(x.note).trim() : '');
+  /* A skill mod set's 3-piece text is the lowest of its tiers (the value the in-game database shows); its note, when it has
+     one, is a reading from a better set or a patch change, so the planner shows it under the text. */
+  const mod3 = (m) => `3pc${/\d/.test(str(m.bonus3)) ? ' (lowest tier)' : ''}: ${str(m.bonus3)}`;
+  const modNote = (m) => (m && str(m.note).trim() ? { caveat: true, note: str(m.note) } : null);
   const BODY = pool(DATA.bodyArmorTalents);
   const PACK = pool(DATA.backpackTalents);
   const SETS = pool(DATA.gearSets);
@@ -902,8 +906,8 @@
       setText('.skill-slot__skill', skill || (m && m.skill ? str(m.skill) : `Skill mod ${i + 1}`), btn);
       setText('.skill-slot__nm', m ? m.name : S.spec ? 'Add a mod' : 'Pick a specialization first', btn);
       setText('.skill-slot__sub', m ? `2pc ${bonusText(m.bonus2)}` : '', btn);
-      effectText($('.skill-slot__desc', btn), m ? `3pc: ${str(m.bonus3)}` : '', m);
-      btn.title = m ? `3pc: ${str(m.bonus3)}` : '';
+      effectText($('.skill-slot__desc', btn), m ? mod3(m) : '', modNote(m));
+      btn.title = m ? mod3(m) : '';
       btn.setAttribute('aria-label', `${skill ? skill + ' mod' : 'Skill mod ' + (i + 1)}: ${m ? m.name : 'not set'}`);
     });
     setText('#skillCount', `${S.mods.filter(Boolean).length} / 3`);
@@ -1497,8 +1501,8 @@
         const used = S.mods.indexOf(str(m.id));
         return {
           id: str(m.id), name: m.name, tag: '', group: hasSkill ? str(m.skill) || 'Other' : '', img: imgOf(m.id),
-          desc: `2pc: ${bonusText(m.bonus2)}. 3pc: ${str(m.bonus3)}`,
-          alias: aliasText(m), find: guessedAliases(m), note: caveatOf(m),
+          desc: `2pc: ${bonusText(m.bonus2)}. ${mod3(m)}`,
+          alias: aliasText(m), find: guessedAliases(m), note: caveatOf(modNote(m)),
           disabled: used >= 0 && used !== i, why: `Already in slot ${used + 1}.`,
         };
       }),

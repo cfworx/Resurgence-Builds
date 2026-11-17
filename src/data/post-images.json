@@ -305,6 +305,30 @@
   "small": "/images/builds/division-resurgence-tactical-pharma-season-2-build-ggreborn-loadout-480.webp",
   "thumb": "/images/builds/division-resurgence-tactical-pharma-season-2-build-ggreborn-loadout-thumb.webp"
  },
+ "/images/builds/division-resurgence-unflinching-bulwark-build-tiktokandy-loadout-1200.webp": {
+  "width": 1200,
+  "height": 553,
+  "srcset": [
+   [
+    480,
+    "/images/builds/division-resurgence-unflinching-bulwark-build-tiktokandy-loadout-480.webp"
+   ],
+   [
+    800,
+    "/images/builds/division-resurgence-unflinching-bulwark-build-tiktokandy-loadout-800.webp"
+   ],
+   [
+    1200,
+    "/images/builds/division-resurgence-unflinching-bulwark-build-tiktokandy-loadout-1200.webp"
+   ],
+   [
+    1600,
+    "/images/builds/division-resurgence-unflinching-bulwark-build-tiktokandy-loadout-1600.webp"
+   ]
+  ],
+  "small": "/images/builds/division-resurgence-unflinching-bulwark-build-tiktokandy-loadout-480.webp",
+  "thumb": "/images/builds/division-resurgence-unflinching-bulwark-build-tiktokandy-loadout-thumb.webp"
+ },
  "/images/builds/involuntary-nap-time-bulwark-juggernaut-build.webp": {
   "width": 1200,
   "height": 552,
@@ -1197,49 +1221,29 @@
   "small": "/images/guides/the-division-gift-guide-books-and-controller-480.webp",
   "thumb": "/images/guides/the-division-gift-guide-books-and-controller-thumb.webp"
  },
- "/images/news/division-3-builds-home-page-status-board-1148.webp": {
-  "width": 1148,
-  "height": 1040,
-  "srcset": [
-   [
-    480,
-    "/images/news/division-3-builds-home-page-status-board-480.webp"
-   ],
-   [
-    800,
-    "/images/news/division-3-builds-home-page-status-board-800.webp"
-   ],
-   [
-    1148,
-    "/images/news/division-3-builds-home-page-status-board-1148.webp"
-   ]
-  ],
-  "small": "/images/news/division-3-builds-home-page-status-board-480.webp",
-  "thumb": "/images/news/division-3-builds-home-page-status-board-thumb.webp"
- },
- "/images/news/division-3-builds-sister-site-doorway-1200.webp": {
+ "/images/news/division-3-builds-home-page-screenshot-1200.webp": {
   "width": 1200,
   "height": 630,
   "srcset": [
    [
     480,
-    "/images/news/division-3-builds-sister-site-doorway-480.webp"
+    "/images/news/division-3-builds-home-page-screenshot-480.webp"
    ],
    [
     800,
-    "/images/news/division-3-builds-sister-site-doorway-800.webp"
+    "/images/news/division-3-builds-home-page-screenshot-800.webp"
    ],
    [
     1200,
-    "/images/news/division-3-builds-sister-site-doorway-1200.webp"
+    "/images/news/division-3-builds-home-page-screenshot-1200.webp"
    ],
    [
     1600,
-    "/images/news/division-3-builds-sister-site-doorway-1600.webp"
+    "/images/news/division-3-builds-home-page-screenshot-1600.webp"
    ]
   ],
-  "small": "/images/news/division-3-builds-sister-site-doorway-480.webp",
-  "thumb": "/images/news/division-3-builds-sister-site-doorway-thumb.webp"
+  "small": "/images/news/division-3-builds-home-page-screenshot-480.webp",
+  "thumb": "/images/news/division-3-builds-home-page-screenshot-thumb.webp"
  },
  "/images/news/division-3-everything-we-know-doko-corner-1200.webp": {
   "width": 1200,

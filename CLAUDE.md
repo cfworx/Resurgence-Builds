@@ -52,6 +52,8 @@ the game shows is the truth, so each one gets a full audit, every time, without 
   not like AI art.
 - The owner approved one outside photo on November 17, 2026: the AYN Thor handheld on the requirements guide
   (`division-resurgence-ayn-thor-handheld`). Keep it, and add no caption, credit or disclosure text to it.
+  The Division 3 Builds post (`/news/division-3-builds-sister-site/`) uses the owner's screenshot of division3builds.com
+  as its main picture (his choice, November 17, 2026).
 - Don't reuse the same frame across posts; each post gets its own shot.
 - Never bash Ubisoft in an edit either.
 - How: `research/screenshots/make_hero.py research/screenshots/heroes.json` cuts frames (HUD cleared, optional title,

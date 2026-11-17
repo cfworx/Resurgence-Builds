@@ -4,8 +4,8 @@ publishDate: 2026-11-16
 author: "RapidF5"
 tags: ["News", "The Division 3", "Site News"]
 description: "We launched division3builds.com: every Division 3 fact with its source, no invented builds, and alerts for the release date, a test and real builds."
-featuredImage: "/images/news/division-3-builds-sister-site-doorway-1200.webp"
-imageAlt: "An agent with a red jacket and a rifle on his backpack pushes open a green door into the next room of a safe house in The Division Resurgence, with the title Division 3 Builds"
+featuredImage: "/images/news/division-3-builds-home-page-screenshot-1200.webp"
+imageAlt: "The Division 3 Builds home page at division3builds.com: the headline No Division 3 builds exist yet, here is what is confirmed, above a status board marking the release date, platforms and setting as not announced and gameplay as not shown, with Massive Entertainment as developer, in production, on the Snowdrop engine"
 shareTitle: "We built a Division 3 site. It has no builds yet, on purpose."
 shareText: "Division 3 Builds tracks every confirmed Division 3 fact with its source, and saves the builds for when the game has real gear."
 faqs:
@@ -23,7 +23,6 @@ faqs:
 
 We built a second site. **[Division 3 Builds](https://division3builds.com/)** is live as of today, and it does for The Division 3 what this site does for Resurgence: facts you can check, and builds only when they can be real.
 
-![The Division 3 Builds home page at division3builds.com: the headline "No Division 3 builds exist yet. Here is what is confirmed." above a status board that marks the release date, platforms and setting as not announced and gameplay as not shown, and lists Massive Entertainment as the developer, the game as in production and the Snowdrop engine as reported, each with its source](/images/news/division-3-builds-home-page-status-board.webp "The status board on division3builds.com, November 17, 2026")
 
 ## Why it has no builds yet
 
