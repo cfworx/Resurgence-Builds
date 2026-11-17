@@ -1197,6 +1197,26 @@
   "small": "/images/guides/the-division-gift-guide-books-and-controller-480.webp",
   "thumb": "/images/guides/the-division-gift-guide-books-and-controller-thumb.webp"
  },
+ "/images/news/division-3-builds-home-page-status-board-1148.webp": {
+  "width": 1148,
+  "height": 1040,
+  "srcset": [
+   [
+    480,
+    "/images/news/division-3-builds-home-page-status-board-480.webp"
+   ],
+   [
+    800,
+    "/images/news/division-3-builds-home-page-status-board-800.webp"
+   ],
+   [
+    1148,
+    "/images/news/division-3-builds-home-page-status-board-1148.webp"
+   ]
+  ],
+  "small": "/images/news/division-3-builds-home-page-status-board-480.webp",
+  "thumb": "/images/news/division-3-builds-home-page-status-board-thumb.webp"
+ },
  "/images/news/division-3-builds-sister-site-doorway-1200.webp": {
   "width": 1200,
   "height": 630,
@@ -1220,30 +1240,6 @@
   ],
   "small": "/images/news/division-3-builds-sister-site-doorway-480.webp",
   "thumb": "/images/news/division-3-builds-sister-site-doorway-thumb.webp"
- },
- "/images/news/division-3-builds-status-board-1200.webp": {
-  "width": 1200,
-  "height": 968,
-  "srcset": [
-   [
-    480,
-    "/images/news/division-3-builds-status-board-480.webp"
-   ],
-   [
-    800,
-    "/images/news/division-3-builds-status-board-800.webp"
-   ],
-   [
-    1200,
-    "/images/news/division-3-builds-status-board-1200.webp"
-   ],
-   [
-    1600,
-    "/images/news/division-3-builds-status-board-1600.webp"
-   ]
-  ],
-  "small": "/images/news/division-3-builds-status-board-480.webp",
-  "thumb": "/images/news/division-3-builds-status-board-thumb.webp"
  },
  "/images/news/division-resurgence-a-new-enemy-speedrun-july-festive-street-1200.webp": {
   "width": 1200,

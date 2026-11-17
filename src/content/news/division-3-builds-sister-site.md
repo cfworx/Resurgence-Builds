@@ -23,7 +23,7 @@ faqs:
 
 We built a second site. **[Division 3 Builds](https://division3builds.com/)** is live as of today, and it does for The Division 3 what this site does for Resurgence: facts you can check, and builds only when they can be real.
 
-![The Division 3 Builds home page: a status board that lists the release date, platforms, setting and gameplay as not announced, and the developer, development stage and engine with their sources](/images/news/division-3-builds-status-board-1200.webp)
+![The Division 3 Builds home page at division3builds.com: the headline "No Division 3 builds exist yet. Here is what is confirmed." above a status board that marks the release date, platforms and setting as not announced and gameplay as not shown, and lists Massive Entertainment as the developer, the game as in production and the Snowdrop engine as reported, each with its source](/images/news/division-3-builds-home-page-status-board.webp "The status board on division3builds.com, November 17, 2026")
 
 ## Why it has no builds yet
 
