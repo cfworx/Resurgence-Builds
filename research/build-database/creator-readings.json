@@ -522,13 +522,13 @@
     {
       "topic": "Skill mod combo",
       "item": "Camp Fire (Bulwark, Shockwave Spike Mk.3)",
-      "reading": "+28% Armor while within 30 meters of the Shockwave Spike Mk.3, on his gold (top tier) mods (our record: +14% Armor within 10 meters, lowest tier). Radius differs: needs a screenshot.",
+      "reading": "Camp Fire (3/3), set of one purple and two gold pieces: 2 pieces +6.4% Skill Duration; 3 pieces: Grants +28% Armor while located within 10 meter(s) of the Shockwave Spike Mk.3. Our record (lowest tier): +14% within 10 m, and 2-piece range 3.2% to 6.4%.",
       "creator": "TikTokAndy",
       "videoId": "4GoB017732U",
       "videoDate": "2026-11-14",
       "timestamp": "",
       "url": "https://www.youtube.com/watch?v=4GoB017732U",
-      "note": "Read aloud from the tooltip in the video (owner sent the transcript, no timestamps); not checked on screen."
+      "note": "Read from the owner's screenshots of the video (November 17, 2026). In the video he says \"30 meters\"; the card says 10. Fits the site note that better sets read up to about 2.5 times the lowest tier (here 2x)."
     },
     {
       "topic": "Weapon",
@@ -584,6 +584,61 @@
       "timestamp": "",
       "url": "https://www.youtube.com/watch?v=g4asgpLn-rw",
       "note": "Spoken in the video (transcript only, no timestamps). Launch-week build of the game."
+    },
+    {
+      "topic": "Skill mod",
+      "item": "Shockwave Spike Mk.3 Software - Camp Fire (gold, ◆3)",
+      "reading": "Power Score 213; Shockwave Spike Mk.3 Radius +14.64%; Weapon Critical Hit Chance +3.85%; Signature Ability Charge Efficiency +7.66%.",
+      "creator": "TikTokAndy",
+      "videoId": "4GoB017732U",
+      "videoDate": "2026-11-14",
+      "timestamp": "",
+      "url": "https://www.youtube.com/watch?v=4GoB017732U",
+      "note": "Read from the owner's screenshot of the video (November 17, 2026)."
+    },
+    {
+      "topic": "Skill mod",
+      "item": "Shockwave Spike Mk.3 Firmware - Camp Fire (purple, ◆5)",
+      "reading": "Power Score 203; Shockwave Spike Mk.3 Radius +13.08%; Weapon Critical Hit Chance +4.02%; Armor +8.26%.",
+      "creator": "TikTokAndy",
+      "videoId": "4GoB017732U",
+      "videoDate": "2026-11-14",
+      "timestamp": "",
+      "url": "https://www.youtube.com/watch?v=4GoB017732U",
+      "note": "Read from the owner's screenshot of the video (November 17, 2026)."
+    },
+    {
+      "topic": "Skill mod",
+      "item": "Shockwave Spike Mk.3 Chipset - Camp Fire (gold, ◆1)",
+      "reading": "Main stat +8.42% (label cut off in the frame); Armor +6.67%; Received Healing +6.68%.",
+      "creator": "TikTokAndy",
+      "videoId": "4GoB017732U",
+      "videoDate": "2026-11-14",
+      "timestamp": "",
+      "url": "https://www.youtube.com/watch?v=4GoB017732U",
+      "note": "Read from the owner's screenshot of the video (November 17, 2026)."
+    },
+    {
+      "topic": "Loadout",
+      "item": "TikTokAndy Unflinching Bulwark (Agent White)",
+      "reading": "Bulwark (Toughness focus). Power Score 25.25k; Firepower 439, Toughness 2.73k, Engineering 357; DPS 85.03k; Armor 13,405; Health 469,379. Level 50 LMG and level 50 SMG; level 50 OS Protocol with a Toughness core; gear: mask 50 (Toughness core), body armor 50 (Firepower), backpack 40 (Firepower), gloves 40 (Firepower), holster 50 (Toughness), kneepads 50 (Toughness). Equipment 176/180, Mods 219/400.",
+      "creator": "TikTokAndy",
+      "videoId": "4GoB017732U",
+      "videoDate": "2026-11-14",
+      "timestamp": "",
+      "url": "https://www.youtube.com/watch?v=4GoB017732U",
+      "note": "Read from the owner's screenshot of the video (November 17, 2026). Webcam removed in our copy."
+    },
+    {
+      "topic": "Loadout",
+      "item": "GGReborn Vanguard, updated build (GGREBORN)",
+      "reading": "Vanguard (Firepower focus). Power Score 26.20k; Firepower 2.40k, Toughness 501, Engineering 417; DPS 1.01m; Armor 11,971; Health 119,993. Level 50 Double Barrel shotgun (Firepower); level 50 second weapon on a red card, a scoped rifle; level 50 OS Protocol with a Firepower core; six level 50 gear pieces, all Firepower cores. Equipment 138/150, Mods 361/400.",
+      "creator": "GGReborn",
+      "videoId": "Lw8_IyC1WJ8",
+      "videoDate": "2026-11-16",
+      "timestamp": "",
+      "url": "https://www.youtube.com/watch?v=Lw8_IyC1WJ8",
+      "note": "Read from the owner's screenshot of the video (November 17, 2026). Our page (October 31) shows 933.32k DPS, a level 40 G36-C and Close Quarters Menace: the second weapon and OS Protocol have changed."
     }
   ]
 }
