@@ -557,6 +557,22 @@
   "thumb": "/images/guides/division-resurgence-account-server-guide-hero-thumb.webp",
   "legacy": true
  },
+ "/images/guides/division-resurgence-ayn-thor-handheld-667.webp": {
+  "width": 667,
+  "height": 720,
+  "srcset": [
+   [
+    480,
+    "/images/guides/division-resurgence-ayn-thor-handheld-480.webp"
+   ],
+   [
+    667,
+    "/images/guides/division-resurgence-ayn-thor-handheld-667.webp"
+   ]
+  ],
+  "small": "/images/guides/division-resurgence-ayn-thor-handheld-480.webp",
+  "thumb": "/images/guides/division-resurgence-ayn-thor-handheld-thumb.webp"
+ },
  "/images/guides/division-resurgence-beginner-guide-new-york-street-1200.webp": {
   "width": 1200,
   "height": 630,

@@ -50,6 +50,8 @@ the game shows is the truth, so each one gets a full audit, every time, without 
   "Reviews, gear and gift pages" below.) Editing an in-game picture is fine and encouraged: remove HUD or UI clutter,
   swap the text on a sign or poster for a joke, add a title. It has to still look like the game with something added,
   not like AI art.
+- The owner approved one outside photo on November 17, 2026: the AYN Thor handheld on the requirements guide
+  (`division-resurgence-ayn-thor-handheld`). Keep it, and add no caption, credit or disclosure text to it.
 - Don't reuse the same frame across posts; each post gets its own shot.
 - Never bash Ubisoft in an edit either.
 - How: `research/screenshots/make_hero.py research/screenshots/heroes.json` cuts frames (HUD cleared, optional title,
