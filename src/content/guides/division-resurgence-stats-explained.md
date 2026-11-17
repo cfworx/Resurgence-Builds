@@ -99,11 +99,16 @@ Talents come in ranks, written as "II" (or "2") after the name. Ubisoft doesn't 
 | Precise Support | +7% Armor per stack | +9.80% (TikTokAndy's tooltip, October 27; Nadie's screenshots, from his build submission) | 1.4x |
 | Still Alive | 30% of missing Health | 42% (TikTokAndy) | 1.4x |
 | Torrential Downpour | +22.50% Engineering | +31.50% (TikTokAndy) | 1.4x |
+| Unflinching (body armor) | 300% of Toughness | 420% (TikTokAndy, November 14) | 1.4x |
+| Thick Skin | +2.10% Armor per stack | +2.94% (TikTokAndy, November 14) | 1.4x |
+| Swift Taunt | 25% Max Health | 35% (TikTokAndy, November 14) | 1.4x |
+| Precise Crit | +15% Critical Damage to allies | +21% (TikTokAndy, November 14) | 1.4x |
+| Revitalize | 4.20% Max Health | 6% (TikTokAndy, November 14) | about 1.4x |
 | Slaughter Fortitude | +12% Armor per stack | +18% (TikTokAndy's tooltip, September 16) | 1.5x |
 | Inspiration | +30% Rate of Fire when Skills are deployed | +42% (the game's blueprint screen, on GGReborn's All Hazards Nitro Backpack, October 31) | 1.4x |
 | Ammo Supply | 54% chance | 65% (TikTokAndy's tooltip, September 16) | 1.2x |
 
-AgentHuntzman shows the same thing on another talent in the Build Database: Blood for Blood's bonus damage goes from 0.50% of max Health to 0.70% at level two. The last two rows are the exceptions: both are read straight off TikTokAndy's tooltips, and they come out at 1.5 and 1.2 times our rank I numbers. Either those talents scale differently or our rank I captures are off, and we're re-checking them. So when you see a II talent on a drop, expect about 40% more of whatever the base version does, then check the tooltip. Our database lists base (rank I) text unless it says otherwise.
+Timers can move the other way: TikTokAndy reads Backup Magazine II as reloading your other weapon after 3 seconds, where rank I waits 4. AgentHuntzman shows the same thing on another talent in the Build Database: Blood for Blood's bonus damage goes from 0.50% of max Health to 0.70% at level two. The last two rows are the exceptions: both are read straight off TikTokAndy's tooltips, and they come out at 1.5 and 1.2 times our rank I numbers. Either those talents scale differently or our rank I captures are off, and we're re-checking them. So when you see a II talent on a drop, expect about 40% more of whatever the base version does, then check the tooltip. Our database lists base (rank I) text unless it says otherwise.
 
 ## How OS Protocols scale
 

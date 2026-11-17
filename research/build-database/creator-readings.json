@@ -1,6 +1,6 @@
 {
   "_about": "On-screen readings from creator videos that add to or confirm the in-game Build-Making Database record. Checked 2026-10-29 from frames captured in the browser; timestamps point at the frame. Rows read from the owner's screenshots say so in the note.",
-  "checked": "2026-10-31",
+  "checked": "2026-11-17",
   "readings": [
     {
       "topic": "Specialization focus",
@@ -452,6 +452,138 @@
       "timestamp": "",
       "url": "https://www.youtube.com/watch?v=NBB6j05PvsE",
       "note": "Owner's screenshot of the gear card. What the sign and icon mean isn't confirmed. Timestamp not recorded."
+    },
+    {
+      "topic": "Body armor talent, rank II",
+      "item": "Unflinching II",
+      "reading": "Taking damage has a 70% chance of restoring Health equal to 420% Toughness. Talent Cooldown: 2 seconds (rank I 300%).",
+      "creator": "TikTokAndy",
+      "videoId": "4GoB017732U",
+      "videoDate": "2026-11-14",
+      "timestamp": "",
+      "url": "https://www.youtube.com/watch?v=4GoB017732U",
+      "note": "Read aloud from the tooltip in the video (owner sent the transcript, no timestamps); not checked on screen."
+    },
+    {
+      "topic": "Weapon talent, rank II",
+      "item": "Thick Skin II",
+      "reading": "Dealing damage grants +2.94% Armor, 10 stacks named; kills grant 10 stacks (rank I +2.10%, up to 20 stacks).",
+      "creator": "TikTokAndy",
+      "videoId": "4GoB017732U",
+      "videoDate": "2026-11-14",
+      "timestamp": "",
+      "url": "https://www.youtube.com/watch?v=4GoB017732U",
+      "note": "Read aloud from the tooltip in the video (owner sent the transcript, no timestamps); not checked on screen."
+    },
+    {
+      "topic": "Weapon talent, rank II",
+      "item": "Swift Taunt II",
+      "reading": "Hitting 3 enemies within 5 seconds taunts nearby enemies and grants Extra Health equal to 35% Max Health for 10 seconds (rank I 25%).",
+      "creator": "TikTokAndy",
+      "videoId": "4GoB017732U",
+      "videoDate": "2026-11-14",
+      "timestamp": "",
+      "url": "https://www.youtube.com/watch?v=4GoB017732U",
+      "note": "Read aloud from the tooltip in the video (owner sent the transcript, no timestamps); not checked on screen."
+    },
+    {
+      "topic": "Weapon talent, rank II",
+      "item": "Precise Crit II",
+      "reading": "+21% Weapon and Skill Critical Damage to all allies for 10 seconds (rank I 15%).",
+      "creator": "TikTokAndy",
+      "videoId": "4GoB017732U",
+      "videoDate": "2026-11-14",
+      "timestamp": "",
+      "url": "https://www.youtube.com/watch?v=4GoB017732U",
+      "note": "Read aloud from the tooltip in the video (owner sent the transcript, no timestamps); not checked on screen."
+    },
+    {
+      "topic": "Weapon talent, rank II",
+      "item": "Revitalize II",
+      "reading": "Every 1 kill and assist restores 6% Max Health for 3 seconds; cooldown 4 seconds (rank I 4.20%; 1.4x would be 5.88%).",
+      "creator": "TikTokAndy",
+      "videoId": "4GoB017732U",
+      "videoDate": "2026-11-14",
+      "timestamp": "",
+      "url": "https://www.youtube.com/watch?v=4GoB017732U",
+      "note": "Read aloud from the tooltip in the video (owner sent the transcript, no timestamps); not checked on screen."
+    },
+    {
+      "topic": "Weapon talent, rank II",
+      "item": "Backup Magazine II",
+      "reading": "Swapping to this weapon reloads your second weapon after 3 seconds (rank I 4 seconds).",
+      "creator": "TikTokAndy",
+      "videoId": "4GoB017732U",
+      "videoDate": "2026-11-14",
+      "timestamp": "",
+      "url": "https://www.youtube.com/watch?v=4GoB017732U",
+      "note": "Read aloud from the tooltip in the video (owner sent the transcript, no timestamps); not checked on screen."
+    },
+    {
+      "topic": "Skill mod combo",
+      "item": "Camp Fire (Bulwark, Shockwave Spike Mk.3)",
+      "reading": "+28% Armor while within 30 meters of the Shockwave Spike Mk.3, on his gold (top tier) mods (our record: +14% Armor within 10 meters, lowest tier). Radius differs: needs a screenshot.",
+      "creator": "TikTokAndy",
+      "videoId": "4GoB017732U",
+      "videoDate": "2026-11-14",
+      "timestamp": "",
+      "url": "https://www.youtube.com/watch?v=4GoB017732U",
+      "note": "Read aloud from the tooltip in the video (owner sent the transcript, no timestamps); not checked on screen."
+    },
+    {
+      "topic": "Weapon",
+      "item": "Military MK46",
+      "reading": "550 RPM; 130 rounds with an extended magazine (base 100); +30% Signature Ability Charge Efficiency named as the weapon bonus.",
+      "creator": "TikTokAndy",
+      "videoId": "4GoB017732U",
+      "videoDate": "2026-11-14",
+      "timestamp": "",
+      "url": "https://www.youtube.com/watch?v=4GoB017732U",
+      "note": "Read aloud from the tooltip in the video (owner sent the transcript, no timestamps); not checked on screen."
+    },
+    {
+      "topic": "Skill stats",
+      "item": "Shockwave Spike Mk.3 (Bulwark)",
+      "reading": "Cooldown 14 s, 5 s if picked up; duration 6.68 s; stun 2 s; radius 6.7 m (his build, with mods).",
+      "creator": "TikTokAndy",
+      "videoId": "4GoB017732U",
+      "videoDate": "2026-11-14",
+      "timestamp": "",
+      "url": "https://www.youtube.com/watch?v=4GoB017732U",
+      "note": "Read aloud from the tooltip in the video (owner sent the transcript, no timestamps); not checked on screen."
+    },
+    {
+      "topic": "Skill stats",
+      "item": "Phalanx Shield (Bulwark)",
+      "reading": "Cooldown 3.75 s when put away, 14 s when destroyed (his build, with mods).",
+      "creator": "TikTokAndy",
+      "videoId": "4GoB017732U",
+      "videoDate": "2026-11-14",
+      "timestamp": "",
+      "url": "https://www.youtube.com/watch?v=4GoB017732U",
+      "note": "Read aloud from the tooltip in the video (owner sent the transcript, no timestamps); not checked on screen."
+    },
+    {
+      "topic": "Damage reduction cap",
+      "item": "Damage Reduction",
+      "reading": "\"You can only build up to 80% damage reduction.\"",
+      "creator": "TikTokAndy",
+      "videoId": "4GoB017732U",
+      "videoDate": "2026-11-14",
+      "timestamp": "",
+      "url": "https://www.youtube.com/watch?v=4GoB017732U",
+      "note": "Read aloud from the tooltip in the video (owner sent the transcript, no timestamps); not checked on screen."
+    },
+    {
+      "topic": "Device performance",
+      "item": "Android handhelds (AYN Thor, Retroid Pocket 5/6, Retroid Flip 2, AYN Odin 2 Portal)",
+      "reading": "Snapdragon 8 Gen 2 (12 GB and 8 GB): highest settings available. Snapdragon 865: lower settings only, frame rate locked at 45. Dimensity 8300 (12 GB): named, settings not clear from the transcript.",
+      "creator": "Retro Game Testing",
+      "videoId": "g4asgpLn-rw",
+      "videoDate": "2026-04-01",
+      "timestamp": "",
+      "url": "https://www.youtube.com/watch?v=g4asgpLn-rw",
+      "note": "Spoken in the video (transcript only, no timestamps). Launch-week build of the game."
     }
   ]
 }

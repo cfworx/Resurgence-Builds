@@ -233,6 +233,7 @@ In the spirit of not making things up, here is what we are honestly unsure about
 - **Logitech G Cloud.** A 2024 closed beta forum post said it was incompatible, but that was before the global launch. We have not confirmed the current status.
 - **Most Chromebooks** outside the specific Intel and AMD models Ubisoft has named.
 - **Steam Deck** and other handheld PCs. Since the Steam launch, Ubisoft's Season 2 Phase 2 patch notes have mentioned improved "Steam Deck control configuration," so Deck players clearly exist. We haven't checked the game's official Steam Deck compatibility rating, and the store page still lists Windows 11 as the minimum OS, so we're not calling it officially supported. Earlier, players who installed Windows on their Deck reported it works.
+- **Android gaming handhelds.** These run the Android version, so the device list above is what counts. In a launch-week test (April 1, 2026), Retro Game Testing ran the game on the AYN Thor, Retroid Pocket 5 and 6, Retroid Flip 2 and AYN Odin 2 Portal. On the Snapdragon 8 Gen 2 models the game offered its highest settings; on the Snapdragon 865 model it allowed lower settings only and locked the frame rate at 45. That is one creator's test of an early build, not Ubisoft's word, and settings may have changed since. [Watch the test](https://www.youtube.com/watch?v=g4asgpLn-rw).
 
 We will update this page as Ubisoft expands the list or confirms more platforms.
 
