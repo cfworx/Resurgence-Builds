@@ -1241,6 +1241,30 @@
   "small": "/images/news/division-3-builds-sister-site-doorway-480.webp",
   "thumb": "/images/news/division-3-builds-sister-site-doorway-thumb.webp"
  },
+ "/images/news/division-3-everything-we-know-doko-corner-1200.webp": {
+  "width": 1200,
+  "height": 630,
+  "srcset": [
+   [
+    480,
+    "/images/news/division-3-everything-we-know-doko-corner-480.webp"
+   ],
+   [
+    800,
+    "/images/news/division-3-everything-we-know-doko-corner-800.webp"
+   ],
+   [
+    1200,
+    "/images/news/division-3-everything-we-know-doko-corner-1200.webp"
+   ],
+   [
+    1600,
+    "/images/news/division-3-everything-we-know-doko-corner-1600.webp"
+   ]
+  ],
+  "small": "/images/news/division-3-everything-we-know-doko-corner-480.webp",
+  "thumb": "/images/news/division-3-everything-we-know-doko-corner-thumb.webp"
+ },
  "/images/news/division-resurgence-a-new-enemy-speedrun-july-festive-street-1200.webp": {
   "width": 1200,
   "height": 630,

@@ -37,6 +37,8 @@ So the home page opens with a status board instead: release date, platforms, set
 - **It is in production.** Executive producer Julian Gerighty said so at the New Game+ Showcase in January 2026: "This is not a secret, it's been announced," as Windows Central reported.
 - **Nothing else is.** No release date, no platforms, no setting, no trailer. The [full list with every source](https://division3builds.com/everything-we-know/) is on the new site, along with a [timeline](https://division3builds.com/timeline/) and a [release date page](https://division3builds.com/release-date/) that stays honest about the word "unknown."
 
+Our own rundown here, with what the job listings suggest and which rumors to ignore: [The Division 3: everything we know so far](/news/division-3-everything-we-know/).
+
 ## What it means for Resurgence Builds
 
 Nothing changes here. Resurgence Builds stays about The Division Resurgence: the [builds](/builds/), the [tier list](/tier-list/), the [database](/database/) and the [build planner](/builder/). The two sites follow the same rule we already use here: a game fact comes from the game or from Ubisoft, and we never borrow numbers from one Division game for another.

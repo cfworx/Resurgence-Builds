@@ -1439,5 +1439,49 @@
   "subtitle": "Our new sister site",
   "align": "left",
   "titleY": 0.28
+ },
+ {
+  "out": "research/screenshots/masters/news/division-3-everything-we-know-doko-corner.webp",
+  "video": "2026-10-29_09-55-56.mp4",
+  "t": 63,
+  "crop": [
+   420,
+   200,
+   1900
+  ],
+  "title": "Division 3",
+  "subtitle": "Everything we know so far",
+  "align": "right",
+  "titleY": 0.24,
+  "hud": [
+   [
+    1195,
+    630,
+    1370,
+    805,
+    "white"
+   ],
+   [
+    1222,
+    780,
+    1298,
+    845,
+    "orange"
+   ],
+   [
+    1982,
+    978,
+    2092,
+    1088,
+    "orange"
+   ],
+   [
+    1982,
+    978,
+    2092,
+    1088,
+    "white"
+   ]
+  ]
  }
 ]
