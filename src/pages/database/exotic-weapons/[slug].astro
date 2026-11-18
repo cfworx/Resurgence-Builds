@@ -45,6 +45,11 @@ const siteUrl = 'https://resurgencebuilds.com';
 // From the in-game Build-Making Database card: the red header with the weapon, and the whole card.
 const heroImage = dbImage(`exotic-weapons/${slug}`, 'hero');
 const cardImage = dbImage(`exotic-weapons/${slug}`, 'card');
+// The whole gun, for exotics whose card cuts the art off, and where that picture comes from.
+const gunImage = dbImage(`exotic-weapons/${slug}`, 'gun');
+const GUN_SOURCE: Record<string, string> = {
+  'the-bighorn': "a weapon slot on GGReborn's loadout screen (his video of November 16, 2026), with his slot number, level and talent icons left out",
+};
 
 const weaponLd = {
   '@context': 'https://schema.org',
@@ -105,6 +110,17 @@ const itemLd = {
             sizes="(max-width: 640px) calc(100vw - 32px), 558px"
             eager
           />
+        </figure>
+      )}
+
+      {gunImage && (
+        <figure class="game-figure game-figure--hero">
+          <GameImage
+            image={gunImage}
+            alt={`The whole ${weapon.name}, the exotic ${weapon.type}, in a weapon slot on a loadout screen in The Division Resurgence`}
+            sizes="(max-width: 640px) calc(100vw - 32px), 558px"
+          />
+          {GUN_SOURCE[slug] && <figcaption>The card cuts the gun off, so here's all of it: {GUN_SOURCE[slug]}.</figcaption>}
         </figure>
       )}
 

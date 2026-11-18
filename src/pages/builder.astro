@@ -17,7 +17,7 @@ import gearSources from '../data/gear-sources.json';
 import { getCollection } from 'astro:content';
 import { CURRENT_PATCH } from '../data/site-config';
 import { SOURCES_RECORDED, RECAL_FIX } from '../utils/rolls';
-import { dbImage, type DbImage } from '../utils/db-images';
+import { dbImage, exoticPicture, type DbImage } from '../utils/db-images';
 
 // Templates: every build guide with a plannerHash, grouped by specialization in the picker
 const notes: Record<string, unknown> = templateNotes;
@@ -98,7 +98,7 @@ const put = (id: string, url?: string) => { if (url) img[id] = url.replace(/^\/i
 const smallest = (im?: DbImage) => im?.srcset[0]?.[1];
 for (const w of standardWeapons as any[]) put(w.id, dbImage(`weapon-icons/${slugify(w.name)}`, 'card')?.src);
 for (const e of exoticWeapons as any[]) {
-  put(e.id, dbImage(`exotic-weapons/${slugify(e.name)}`, 'hero')?.src);
+  put(e.id, exoticPicture(slugify(e.name))?.src);
   put(`et:${e.id}`, smallest(dbImage(`weapon-talents/${slugify(e.talentName)}`, 'icon')));
 }
 for (const [list, folder] of [[weaponTalents, 'weapon-talents'], [gearSets, 'gear-set-effects'], [bodyArmorTalents, 'body-armor-talents'],

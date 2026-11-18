@@ -10,7 +10,7 @@ import backpackTalents from '../data/backpack-talents.json';
 import osProtocols from '../data/os-protocols.json';
 import skillModCombos from '../data/skill-mod-combos.json';
 import gearSources from '../data/gear-sources.json';
-import { dbImage, type DbImage } from './db-images';
+import { dbImage, exoticPicture, type DbImage } from './db-images';
 
 export const slugify = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
 
@@ -92,7 +92,7 @@ export function resolveLoadout(lo: LoadoutData) {
       const slug = slugify(e.name);
       return {
         role: w.role, name: e.name, slug, exotic: true, href: `/database/exotic-weapons/${slug}/`,
-        image: dbImage(`exotic-weapons/${slug}`, 'hero'), meta: [`Exotic ${e.type}`, w.note].filter(Boolean).join(' · '),
+        image: exoticPicture(slug), meta: [`Exotic ${e.type}`, w.note].filter(Boolean).join(' · '),
         talents: [e.talentName, ...(w.talents ?? [])].filter(Boolean).map((n: string) => {
           try { return talentChip(n); } catch { return { name: n, slug: slugify(n), href: `/database/exotic-weapons/${slug}/` }; }
         }),

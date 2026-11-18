@@ -319,6 +319,7 @@ function armoryNames() {
 async function main() {
   const only = process.argv.slice(2);
   const manifest = only.length && fs.existsSync(MANIFEST) ? JSON.parse(fs.readFileSync(MANIFEST, 'utf8')) : {};
+  const order = Object.keys(manifest); // a partial run keeps every key where it was, so the diff shows only real changes
   for (const key of Object.keys(manifest)) if (only.includes(key.split('/')[0])) delete manifest[key];
   const names = armoryNames();
   let files = 0;
@@ -385,6 +386,15 @@ async function main() {
         entry.hero = await writeVariants(hero, outDir, `${slug}-exotic-weapon-division-resurgence${suffix}`, cfg.widths, width);
         files += entry.hero.srcset.length;
       }
+      // evidence/<section>/guns/<slug>.webp: the whole weapon, for exotics whose database card cuts the
+      // art off (The Bighorn shows little more than its barrel). An in-game weapon slot with the
+      // owner's or a creator's own markings left out; the loadout panels and the planner use it.
+      const gunFile = path.join(srcDir, 'guns', name);
+      if (cfg.hero && fs.existsSync(gunFile)) {
+        const gunMeta = await sharp(gunFile).metadata();
+        entry.gun = await writeVariants(await sharp(gunFile).toBuffer(), outDir, `${slug}-exotic-weapon-whole-division-resurgence${suffix}`, cfg.widths, gunMeta.width);
+        files += entry.gun.srcset.length;
+      }
       if (cfg.icon) {
         // From the raw stitched frame (ICON is measured on it, before the trim).
         const icon = await sharp(input).extract({ left: ICON.left, top: ICON.top, width: ICON.size, height: ICON.size }).toBuffer();
@@ -396,7 +406,10 @@ async function main() {
     }
   }
   if (!only.length || only.includes('os-protocols')) files += await osProtocolIcons(manifest);
-  fs.writeFileSync(MANIFEST, JSON.stringify(manifest, null, 1) + '\n');
+  const ordered = {};
+  for (const k of order) if (k in manifest) ordered[k] = manifest[k];
+  for (const k of Object.keys(manifest)) if (!(k in ordered)) ordered[k] = manifest[k];
+  fs.writeFileSync(MANIFEST, JSON.stringify(ordered, null, 1) + '\n');
   const bytes = (dir) => fs.readdirSync(dir, { recursive: true }).reduce((s, f) => {
     const p = path.join(dir, f);
     return fs.statSync(p).isFile() ? s + fs.statSync(p).size : s;

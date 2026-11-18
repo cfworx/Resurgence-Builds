@@ -8,8 +8,9 @@ const SITE = 'https://resurgencebuilds.com';
 const images = manifest as unknown as Record<string, Record<string, DbImage>>;
 const lists = manifest as unknown as Record<string, { names?: string[] }>;
 
-/** e.g. dbImage('os-protocols/ambusher'), dbImage('exotic-weapons/scorpio', 'hero') or dbImage('weapon-talents/in-sync', 'icon') */
-export function dbImage(id: string, variant: 'card' | 'hero' | 'icon' = 'card'): DbImage | undefined {
+/** e.g. dbImage('os-protocols/ambusher'), dbImage('exotic-weapons/scorpio', 'hero') or dbImage('weapon-talents/in-sync', 'icon').
+ *  'gun' is the whole weapon, for exotics whose card cuts the art off; use exoticPicture() for a weapon's picture. */
+export function dbImage(id: string, variant: 'card' | 'hero' | 'icon' | 'gun' = 'card'): DbImage | undefined {
   return images[id]?.[variant];
 }
 
@@ -31,3 +32,8 @@ export function imageObject(img: DbImage) {
 
 /** Recording date of the evidence frames (research/build-database/recordings.json). */
 export const CARDS_RECORDED = 'October 28, 2026';
+
+/** The picture to show for an exotic weapon: the whole gun where we have one, otherwise the top of its card. */
+export function exoticPicture(slug: string): DbImage | undefined {
+  return images[`exotic-weapons/${slug}`]?.gun ?? images[`exotic-weapons/${slug}`]?.hero;
+}

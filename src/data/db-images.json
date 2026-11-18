@@ -157,6 +157,21 @@
      "/images/db/exotic-weapons/the-bighorn-exotic-weapon-division-resurgence-v2-558.webp"
     ]
    ]
+  },
+  "gun": {
+   "src": "/images/db/exotic-weapons/the-bighorn-exotic-weapon-whole-division-resurgence-v2-580.webp",
+   "width": 580,
+   "height": 273,
+   "srcset": [
+    [
+     290,
+     "/images/db/exotic-weapons/the-bighorn-exotic-weapon-whole-division-resurgence-v2-290.webp"
+    ],
+    [
+     580,
+     "/images/db/exotic-weapons/the-bighorn-exotic-weapon-whole-division-resurgence-v2-580.webp"
+    ]
+   ]
   }
  },
  "exotic-weapons/warlord": {

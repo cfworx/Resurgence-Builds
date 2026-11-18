@@ -94,6 +94,10 @@ formulas) is built by `tools/make_workbook.py OUT.xlsx`.
   39.8, 56.8, 80.0 and 98.5 seconds in: Lady Death, Warlord, Strawberry Milkshake, Scorpio, The Bighorn, Diamondback). The
   card's name bar stays put while the rest scrolls, so the stitched cards can show a seam just under it; the site's images
   use these frames for the top of every exotic card instead.
+- `evidence/exotic-weapons/guns/`: the whole weapon, 558 x 311, for exotics whose card cuts the art off. `the-bighorn.webp`
+  is the weapon slot on GGReborn's Equipment screen (his November 16, 2026 video, `Lw8_IyC1WJ8`, at 6:28), with his slot
+  number, level, pips and talent icons left out and the slot's red background carried to the edges. The loadout panels,
+  the planner and the weapon's database page use it (`scripts/build-db-images.mjs` makes the `gun` variant).
 - `evidence/os-protocols/clean/`: every OS Protocol card rebuilt by `tools/clean_os_protocol_cards.py`. The stitched cards
   have the same seam problem under the title bar (an "OS Protocols" tag cut in half, a stray black band, half a line of text),
   and on some the top of the header is missing because the card was already scrolling. The tool takes the frame where the
