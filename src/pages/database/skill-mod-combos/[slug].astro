@@ -192,7 +192,7 @@ const toModSlug = (name: string) => name.toLowerCase().replace(/[^a-z0-9]+/g, '-
           <p class="smc-bonus-card__text">{bonus3}</p>
         </div>
         {/\d/.test(mod.bonus3 || '') && (
-          <p class="smc-tier-note">The numbers in the 3-piece text are the set's lowest tier, the value the in-game database shows. Better sets read more, up to about two and a half times as much. <a href="/database/skill-mod-combos/#tiers">How the tiers work</a>.</p>
+          <p class="smc-tier-note">The numbers in the 3-piece text are the set's lowest tier, the value the in-game database shows. Equipped sets read more, and so far more gold pieces have meant more: up to about two and a half times as much (2.75 on one all-gold set). <a href="/database/skill-mod-combos/#tiers">How the tiers work</a>.</p>
         )}
         {mod.rarities?.length > 0 && (
           <p class="smc-rarities">Rarities in the in-game database: {mod.rarities.map((r: string, i: number) => (

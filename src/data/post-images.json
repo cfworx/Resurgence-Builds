@@ -137,6 +137,30 @@
   "small": "/images/builds/division-resurgence-four-shell-double-barrel-vanguard-build-ggreborn-loadout-480.webp",
   "thumb": "/images/builds/division-resurgence-four-shell-double-barrel-vanguard-build-ggreborn-loadout-thumb.webp"
  },
+ "/images/builds/division-resurgence-ggreborn-double-barrel-four-shells-behind-cover-1200.webp": {
+  "width": 1200,
+  "height": 539,
+  "srcset": [
+   [
+    480,
+    "/images/builds/division-resurgence-ggreborn-double-barrel-four-shells-behind-cover-480.webp"
+   ],
+   [
+    800,
+    "/images/builds/division-resurgence-ggreborn-double-barrel-four-shells-behind-cover-800.webp"
+   ],
+   [
+    1200,
+    "/images/builds/division-resurgence-ggreborn-double-barrel-four-shells-behind-cover-1200.webp"
+   ],
+   [
+    1600,
+    "/images/builds/division-resurgence-ggreborn-double-barrel-four-shells-behind-cover-1600.webp"
+   ]
+  ],
+  "small": "/images/builds/division-resurgence-ggreborn-double-barrel-four-shells-behind-cover-480.webp",
+  "thumb": "/images/builds/division-resurgence-ggreborn-double-barrel-four-shells-behind-cover-thumb.webp"
+ },
  "/images/builds/division-resurgence-lightweight-m4-commando-vanguard-build-tiktokandy-loadout-1200.webp": {
   "width": 1200,
   "height": 595,

@@ -101,7 +101,7 @@ loadout:
 ---
 Three shells in a two-shell shotgun was already greedy. **GGReborn stacks Magazine Size until the Double Barrel holds four, then lets Misdirection Insurance and the Commando kit keep it fed.**
 
-Build by **GGReborn**, posted October 31, 2026 on Season 2 Phase 2. **Update:** on November 16 he posted a new version with The Bighorn in the second slot: [Bighorn Double Barrel Vanguard](/builds/bighorn-double-barrel-vanguard-build-ggreborn/).
+Build by **GGReborn**, posted October 31, 2026 on Season 2 Phase 2. **Update:** on November 16 he posted a new version with three Double Barrels, one for team play and one for solo runs: [Team or Solo Double Barrel Vanguard](/builds/bighorn-double-barrel-vanguard-build-ggreborn/).
 
 ## How It Works
 

@@ -102,7 +102,10 @@ Talents come in ranks, written as "II" (or "2") after the name. Ubisoft doesn't 
 | Unflinching (body armor) | 300% of Toughness | 420% (TikTokAndy, November 14) | 1.4x |
 | Thick Skin | +2.10% Armor per stack | +2.94% (TikTokAndy, November 14) | 1.4x |
 | Swift Taunt | 25% Max Health | 35% (TikTokAndy, November 14) | 1.4x |
-| Precise Crit | +15% Critical Damage to allies | +21% (TikTokAndy, November 14) | 1.4x |
+| Precise Crit | +15% Critical Damage to allies | +21% (TikTokAndy, November 14; GGReborn, November 16) | 1.4x |
+| Predatory Aura | (240 x Firepower)% Health on a kill | (336 x Firepower)% (GGReborn, November 16) | 1.4x |
+| Adaptation | +4.80% Skill Duration, +6% Skill Intensity | +6.72%, +8.40% (GGReborn, November 16) | 1.4x |
+| Target Acquisition | +2.50% Incoming Damage per stack | +3.50% (GGReborn's The Bighorn, November 16) | 1.4x |
 | Revitalize | 4.20% Max Health | 6% (TikTokAndy, November 14) | about 1.4x |
 | Slaughter Fortitude | +12% Armor per stack | +18% (TikTokAndy's tooltip, September 16) | 1.5x |
 | Inspiration | +30% Rate of Fire when Skills are deployed | +42% (the game's blueprint screen, on GGReborn's All Hazards Nitro Backpack, October 31) | 1.4x |
