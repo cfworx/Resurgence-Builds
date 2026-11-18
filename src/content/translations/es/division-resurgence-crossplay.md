@@ -47,6 +47,8 @@ sources:
     <a href="https://steamcommunity.com/games/3749720/announcements/detail/711153447479547542" target="_blank" rel="noopener noreferrer">Ubisoft en Steam: anuncio del lanzamiento en Steam</a>, 5 de agosto de 2026
   - >-
     <a href="https://store.steampowered.com/app/3749720/The_Division_Resurgence/" target="_blank" rel="noopener noreferrer">Página de la tienda de Steam</a>, consultada el 15 de noviembre de 2026
+  - >-
+    <a href="https://www.youtube.com/watch?v=m6RW59IND00" target="_blank" rel="noopener noreferrer">GGReborn: AEGIS The ULTIMATE TANK (YouTube)</a>, 12 de noviembre de 2026, por la pantalla de Mission Completed
 ---
 
 **Comprobado el 15 de noviembre de 2026.** Sí. The Division Resurgence tiene crossplay total (juego multiplataforma) entre iPhone, Android y PC, y tu progreso va con tu cuenta de Ubisoft Connect de un dispositivo a otro. Ubisoft pone dos condiciones: tienes que estar en el **mismo servidor regional** que tus amigos, y para conservar tu personaje tienes que iniciar sesión con la **misma cuenta de Ubisoft Connect**.
@@ -83,6 +85,7 @@ Nadie te obliga a jugar contra gente que usa otro tipo de dispositivo.
 - La [Temporada 2 Fase 1](/patch-notes/season-2-phase-1-the-call/) (en inglés), del 5 de agosto de 2026, añadió un botón dedicado para el selector de crossplay con opciones de emparejamiento y notificaciones, y un mejor emparejamiento entre jugadores de Android y de iOS.
 - El mismo parche permite que los grupos formados solo por jugadores de dispositivos móviles se queden en instancias de la Zona Oscura para dispositivos móviles, en lugar de ser asignados a instancias multiplataforma.
 - La [Temporada 2 Fase 2](/patch-notes/season-2-phase-2/) (en inglés), del 16 de septiembre de 2026, mejoró el emparejamiento de la Zona Oscura para grupos de dispositivos móviles y grupos multiplataforma, y corrigió que el ajuste de crossplay mostrara a veces un estado incorrecto.
+- La pantalla de resultados de una misión también muestra el ajuste: la partida de GGReborn en On The Radio en dificultad Legendary, el 12 de noviembre de 2026, termina en una pantalla de Mission Completed marcada con "Crossplay Off".
 
 Todavía no hemos grabado el selector en sí, así que aquí no describimos sus opciones. Cuando tengamos una imagen, la pondremos en esta página.
 

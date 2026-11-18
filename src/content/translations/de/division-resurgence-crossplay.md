@@ -47,6 +47,8 @@ sources:
     <a href="https://steamcommunity.com/games/3749720/announcements/detail/711153447479547542" target="_blank" rel="noopener noreferrer">Ubisoft auf Steam: Ankündigung zum Steam-Launch</a>, 5. August 2026
   - >-
     <a href="https://store.steampowered.com/app/3749720/The_Division_Resurgence/" target="_blank" rel="noopener noreferrer">Steam-Shopseite</a>, abgerufen am 15. November 2026
+  - >-
+    <a href="https://www.youtube.com/watch?v=m6RW59IND00" target="_blank" rel="noopener noreferrer">GGReborn: AEGIS The ULTIMATE TANK (YouTube)</a>, 12. November 2026, für den Mission Completed-Bildschirm
 ---
 
 **Stand: 15. November 2026.** Ja. The Division Resurgence bietet volles Crossplay zwischen iPhone, Android und PC, und dein Fortschritt folgt deinem Ubisoft Connect-Konto von einem Gerät zum nächsten. Ubisoft stellt zwei Bedingungen: Du und deine Freunde müsst auf **demselben regionalen Server** sein, und um deinen Charakter zu behalten, musst du dich mit **demselben Ubisoft Connect-Konto** anmelden.
@@ -83,6 +85,7 @@ Du bist nicht gezwungen, gegen Spieler auf einer anderen Art von Gerät anzutret
 - [Season 2 Phase 1](/patch-notes/season-2-phase-1-the-call/) (auf Englisch) vom 5. August 2026 brachte eine eigene Schaltfläche für die Crossplay-Auswahl mit Matchmaking-Optionen und Benachrichtigungen sowie besseres Matchmaking zwischen Android- und iOS-Spielern.
 - Seit demselben Patch können Gruppen, die nur aus Mobile-Spielern bestehen, in mobilen Dark Zone-Instanzen bleiben, statt in plattformübergreifende eingeteilt zu werden.
 - [Season 2 Phase 2](/patch-notes/season-2-phase-2/) (auf Englisch) vom 16. September 2026 verbesserte das Dark Zone-Matchmaking für mobile und plattformübergreifende Gruppen und behob das Problem, dass die Crossplay-Einstellung manchmal den falschen Status anzeigte.
+- Auch der Ergebnisbildschirm einer Mission zeigt die Einstellung: GGReborns Durchgang von On The Radio auf Legendary am 12. November 2026 endet mit einem Mission Completed-Bildschirm, auf dem "Crossplay Off" steht.
 
 Die Auswahl selbst haben wir noch nicht aufgezeichnet, deshalb beschreiben wir ihre Optionen hier nicht. Ein Bild davon kommt auf diese Seite, sobald wir eins haben.
 

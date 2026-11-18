@@ -47,6 +47,8 @@ sources:
     <a href="https://steamcommunity.com/games/3749720/announcements/detail/711153447479547542" target="_blank" rel="noopener noreferrer">Ubisoft（Steam）：Steam配信開始のお知らせ</a>、2026年8月5日
   - >-
     <a href="https://store.steampowered.com/app/3749720/The_Division_Resurgence/" target="_blank" rel="noopener noreferrer">Steamストアページ</a>、2026年11月15日閲覧
+  - >-
+    <a href="https://www.youtube.com/watch?v=m6RW59IND00" target="_blank" rel="noopener noreferrer">GGReborn: AEGIS The ULTIMATE TANK (YouTube)</a>、2026年11月12日（Mission Completed画面）
 ---
 
 **2026年11月15日確認**。答えは「はい」です。『ディビジョン リサージェンス』は、iPhone、Android、PCの間で完全なクロスプレイに対応しています。進行状況はUbisoft Connectアカウントにひも付いているので、端末を替えてもそのまま引き継がれます。Ubisoftが定める条件は2つです。自分とフレンドが**同じリージョンサーバー**にいること、そして同じキャラクターを使い続けるには**同じUbisoft Connectアカウント**でログインすることです。
@@ -83,6 +85,7 @@ Ubisoftは2026年4月28日のPC版の発表で、本作を「fully cross-play on
 - 2026年8月5日の[シーズン2フェーズ1](/patch-notes/season-2-phase-1-the-call/)（英語）では、マッチメイキングのオプションと通知を備えたクロスプレイ専用の選択ボタンが追加され、AndroidとiOSのプレイヤー間のマッチメイキングも改善されました。
 - 同じパッチで、モバイルプレイヤーだけのグループは、クロスプラットフォームのインスタンスに振り分けられず、モバイルのダークゾーンインスタンスにとどまれるようになりました。
 - 2026年9月16日の[シーズン2フェーズ2](/patch-notes/season-2-phase-2/)（英語）では、モバイルのグループとクロスプラットフォームのグループを対象にダークゾーンのマッチメイキングが改善され、クロスプレイ設定が誤った状態で表示されることがある問題が修正されました。
+- この設定はミッションの結果画面にも表示されます。GGRebornが2026年11月12日にLegendaryでプレイしたOn The Radioは、「Crossplay Off」と書かれたMission Completed画面で終わります。
 
 この選択ボタン自体はまだ録画できていないため、ここではそのオプションについて説明していません。画像が用意でき次第、このページに掲載します。
 

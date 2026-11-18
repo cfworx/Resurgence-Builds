@@ -30,6 +30,7 @@ sources:
   - '<a href="https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2476-will-the-game-be-cross-play-or-have-cross-progression-with-the-hd-titles/" target="_blank" rel="noopener noreferrer">Ubisoft help center: cross-play and cross-progression with the other Division games</a>'
   - '<a href="https://steamcommunity.com/games/3749720/announcements/detail/711153447479547542" target="_blank" rel="noopener noreferrer">Ubisoft on Steam: Steam launch announcement</a>, August 5, 2026'
   - '<a href="https://store.steampowered.com/app/3749720/The_Division_Resurgence/" target="_blank" rel="noopener noreferrer">Steam store page</a>, read November 15, 2026'
+  - '<a href="https://www.youtube.com/watch?v=m6RW59IND00" target="_blank" rel="noopener noreferrer">GGReborn: AEGIS The ULTIMATE TANK (YouTube)</a>, November 12, 2026, for the Mission Completed screen'
 ---
 
 **Checked November 15, 2026.** Yes. The Division Resurgence has full crossplay between iPhone, Android and PC, and your progress follows your Ubisoft Connect account from one device to the next. Ubisoft sets two conditions: you and your friends have to be on the **same regional server**, and to keep your character you have to sign in with the **same Ubisoft Connect account**.
@@ -66,6 +67,7 @@ You are not forced to play against people on a different kind of device.
 - [Season 2 Phase 1](/patch-notes/season-2-phase-1-the-call/) (August 5, 2026) added a dedicated crossplay selector button with matchmaking options and notifications, and better matchmaking between Android and iOS players.
 - The same patch lets groups made up only of mobile players stay in mobile Dark Zone instances instead of being placed in cross-platform ones.
 - [Season 2 Phase 2](/patch-notes/season-2-phase-2/) (September 16, 2026) improved Dark Zone matchmaking for mobile and cross-platform groups and fixed the crossplay setting sometimes showing the wrong state.
+- The mission result screen shows the setting: GGReborn's Legendary run of On The Radio on November 12, 2026 ends on a Mission Completed screen marked "Crossplay Off".
 
 We have not recorded the selector itself yet, so we do not describe its options here. A picture of it goes on this page when we have one.
 
