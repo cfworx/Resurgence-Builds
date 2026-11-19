@@ -103,7 +103,8 @@ add(`There are ${weaponTalents.length} weapon talents in The Division Resurgence
 add('| Talent | Description |');
 add('|---|---|');
 for (const t of weaponTalents) {
-  add(`| ${t.name} | ${t.description || t.talentDescription || 'N/A'}${t.note ? ` (Note: ${t.note})` : ''} |`);
+  const rank2 = t.upgradedDescription ? ` Rank II (${t.upgradedName}, as the game shows it): ${t.upgradedDescription}` : '';
+  add(`| ${t.name} | ${t.description || t.talentDescription || 'N/A'}${rank2}${t.note ? ` (Note: ${t.note})` : ''} |`);
 }
 add('');
 

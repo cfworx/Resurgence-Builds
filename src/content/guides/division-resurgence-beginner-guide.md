@@ -130,7 +130,7 @@ Recalibration rerolls one talent or attribute bonus on a piece of gear. The game
 
 - The piece has to meet a minimum quality ("advanced" or better, in that client's wording).
 - You pick one talent or attribute bonus, and **only one attribute per piece can be recalibrated**.
-- The eye icon previews the possible results before you spend anything.
+- The eye icon previews the possible results before you spend anything, each with its chance. On TikTokAndy's Copperhead ([November 14](https://www.youtube.com/watch?v=4GoB017732U&t=3210s)) one talent line offered nine talents, each 9.09% at rank I and 2.27% at rank II, so a rank II result is a quarter as likely.
 - After the roll you choose whether to keep it, and keeping it replaces the old attribute.
 
 So decide which slot is worth it before the first roll, because it's the only one you'll get on that piece. Spend it on what your build is for, not on comfort stats: our [hidden mechanics guide](/guides/hidden-mechanics-explained/) explains why.

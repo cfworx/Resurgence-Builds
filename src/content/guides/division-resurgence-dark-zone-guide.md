@@ -38,7 +38,7 @@ Ubisoft calls the Dark Zone a "PvPvE extraction mode": you fight NPCs for loot, 
 - **The loot:** everything you pick up is contaminated until you extract it, and it rides in a backpack you drop if you die.
 - **The way out:** a helicopter at an extraction zone, or the **Smuggler** in a safe house.
 - **The danger:** NPCs, contamination, and any agent who decides to go **Rogue**. PvP is off until someone does.
-- **Stats are evened out for PvP:** the game's activity list tags the Dark Zone, like Conflict, with "normalized PvP attributes" ([Porps's October 28 stream](https://www.youtube.com/watch?v=FOrckQW_S8c), Portuguese client, our translation). That screen doesn't spell out how, but expect your sheet numbers not to carry over one to one against other agents.
+- **Stats are evened out for PvP:** the game's activity list tags the Dark Zone, like Conflict, with "Normalized PVP Attributes". Its Dark Zone card reads PVPVE activity, matchmaking for 20 players, solo or team-based ([TikTokAndy's November 14 video](https://www.youtube.com/watch?v=4GoB017732U&t=1346s); [Porps's October 28 stream](https://www.youtube.com/watch?v=FOrckQW_S8c) shows the same in Portuguese). That screen doesn't spell out how the stats are evened out, but expect your sheet numbers not to carry over one to one against other agents.
 - **The payoff:** gear, skill mods (creators call them chips, and the gold ones are the prize), and **DZ Credits** for the Dark Zone vendor, which sells exotics.
 
 ---
@@ -61,7 +61,7 @@ Contamination is the Dark Zone's way of saying "hurry up."
 
 - **Contaminated areas** raise a contamination meter while you're inside. At 100%, AllThings.How says you die a few seconds later, even if you've already left. The Dark Zone is the eastern part of our [interactive map](/division-resurgence-interactive-map/), which marks 23 Extremely Contaminated Areas; that layer is off by default, so switch on **Extremely Contaminated** under Dark Zone.
 - **It climbs faster than you expect.** On his second Dark Zone video, TikTokAndy went underground to take on a boss, made a grab for the loot with his contamination at 93% and died: "I didn't realize my contamination's going up that fast." Earlier he walked out of one at 92% and lived to complain about it.
-- **The clock does the same thing.** When the 20-minute timer ends, AllThings.How says a short countdown starts, then contamination drains your Health in about five to seven seconds. Anything you haven't extracted by then stays in the Dark Zone, which is why TikTokAndy doesn't care if he dies at the very end, as long as the bag already left.
+- **The clock does the same thing.** When the 20-minute timer ends, AllThings.How says a short countdown starts, then contamination drains your Health in about five to seven seconds. The game's own loading tip ("Dark Zone Restrictions", in [TikTokAndy's November 14 video](https://www.youtube.com/watch?v=4GoB017732U&t=1348s)) says the same in fewer words: you can only stay in the Dark Zone for a limited time at once, and staying past it brings an infection that leads to death. Anything you haven't extracted by then stays in the Dark Zone, which is why TikTokAndy doesn't care if he dies at the very end, as long as the bag already left.
 - **The Smuggler can reset it.** AllThings.How says the Smuggler in a safe house can also clear your contamination meter.
 
 ---

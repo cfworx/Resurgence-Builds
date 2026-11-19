@@ -253,7 +253,7 @@ For solo PvE, **Vanguard** and **Demolitionist** are the path of least resistanc
 
 ## Which Specialization Should You Pick for PvP?
 
-**Vanguard** and **Bulwark** dominate Conflict (Domination was the only Conflict mode when we wrote this, and the game's activity list on [Porps's October 28 stream](https://www.youtube.com/watch?v=FOrckQW_S8c) still shows it as 4v4 with "normalized PvP attributes", which suggests your gear counts for less there than in PvE). Vanguard wins aggressive engagements. Bulwark wins holding engagements, with shorter stuns than it had in spring (see its Season 2 status above). The Domination point is 10 meters wide: whoever controls it wins, and whoever controls the Bulwark player usually controls it.
+**Vanguard** and **Bulwark** dominate Conflict (Domination was the only Conflict mode when we wrote this, and the game's activity list on [Porps's October 28 stream](https://www.youtube.com/watch?v=FOrckQW_S8c) and [TikTokAndy's November 14 video](https://www.youtube.com/watch?v=4GoB017732U&t=1346s) still shows it as 8 players in 4-player teams with "Normalized PVP Attributes", which suggests your gear counts for less there than in PvE). Vanguard wins aggressive engagements. Bulwark wins holding engagements, with shorter stuns than it had in spring (see its Season 2 status above). The Domination point is 10 meters wide: whoever controls it wins, and whoever controls the Bulwark player usually controls it.
 
 **Demolitionist** is situational in PvP. The grenade launcher signature is crowd-control capable but the fight distance in Conflict is often shorter than you'd like for AOE. **Field Medic** and **Tech Operator** can contribute but are building into damage-output deficits against optimized PvP specs.
 

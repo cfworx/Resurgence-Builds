@@ -14,6 +14,7 @@ import { publicImageSize } from '../../../utils/image-dims.mjs';
 import weaponTalents from '../../../data/weapon-talents.json';
 import { getCollection } from 'astro:content';
 import { weaponPool, TALENT_ROLE, ROLE_ORDER, talentDescription, POOL_TALENT_COUNT, SOURCES_RECORDED, RECAL_FIX, recalFixed } from '../../../utils/rolls';
+import talentSlots from '../../../data/weapon-talent-slots.json';
 
 export function getStaticPaths() {
   return standardWeapons.map((weapon: any) => ({
@@ -49,6 +50,9 @@ const sourcesRecorded = SOURCES_RECORDED;
 const recalNote = recalFixed(weapon.id)
   ? `One exception: until ${RECAL_FIX.patch} (${RECAL_FIX.dateText}), recalibrating the ${weapon.name} pulled talents from the wrong pool, so copies recalibrated before that patch can carry a talent that isn't on this list. Ubisoft fixed it, and a copy you get or recalibrate now rolls from this list.`
   : '';
+// Where a recalibration preview has shown which talents each talent line can roll (one gun so far).
+const slotSplit = (talentSlots as Record<string, any>)[slug];
+const talentSlug = (name: string) => pool.find((t) => t.name === name)?.slug;
 const poolGroups = ROLE_ORDER.map((role) => ({ role, talents: pool.filter((t) => TALENT_ROLE[t.name] === role) })).filter((g) => g.talents.length);
 // Our build guides that use this weapon, with the talents they run on it.
 const talentNameById: Record<string, string> = Object.fromEntries((weaponTalents as any[]).map((t) => [t.id, t.name]));
@@ -173,6 +177,14 @@ const itemLd = {
           <h2 id="weapon-rolls-title" class="weapon-rolls__title">Weapon Talents the {weapon.name} Can Roll</h2>
           <p class="weapon-rolls__lead">{pool.length} of the {POOL_TALENT_COUNT} weapon talents, the same at every rarity. A talent that isn't listed never rolls on the {weapon.name} (the game's Source lists, recorded {sourcesRecorded}).</p>
           {recalNote && <p class="weapon-rolls__lead">{recalNote} <a href={RECAL_FIX.notes} style="color: var(--accent);">Patch notes</a>.</p>}
+          {slotSplit && (
+            <p class="weapon-rolls__lead">
+              The two talent lines don't share the whole list. On <a href={slotSplit.source.url} style="color: var(--accent);" target="_blank" rel="noopener noreferrer">{slotSplit.source.label}</a> ({slotSplit.seen}), the {weapon.name}'s second talent line can roll only these nine, {slotSplit.odds}:{' '}
+              {slotSplit.second.map((name: string, i: number) => (
+                <>{i > 0 && (i === slotSplit.second.length - 1 ? ' and ' : ', ')}{talentSlug(name) ? <a href={`/database/weapon-talents/${talentSlug(name)}/`}>{name}</a> : name}</>
+              ))}. {slotSplit.firstNote}
+            </p>
+          )}
           {poolGroups.map((g) => (
             <div class="weapon-rolls__group">
               <h3 class="weapon-rolls__role">{g.role} <span>{g.talents.length}</span></h3>

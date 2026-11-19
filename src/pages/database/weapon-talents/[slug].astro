@@ -203,6 +203,11 @@ const talentLd = {
           </h2>
           <div style="padding: var(--sp-5); background: rgba(242,104,34,0.05); border-left: 3px solid var(--accent); border-radius: 0 8px 8px 0;">
             <p style="margin: 0; color: #e8e8f0; line-height: 1.75; font-size: var(--text-base); font-weight: 500;">{talent.upgradedDescription || 'Tier II values not recorded yet.'}</p>
+            {talent.upgradedDescription && talent.upgradedSource && (
+              <p style="margin: var(--sp-3) 0 0; color: var(--ink-muted); line-height: 1.6; font-size: var(--text-xs);">
+                Read off <a href={talent.upgradedSource.url} style="color: var(--accent);" target="_blank" rel="noopener noreferrer">{talent.upgradedSource.label}</a>.
+              </p>
+            )}
           </div>
         </div>
       )}

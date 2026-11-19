@@ -353,6 +353,26 @@
   "small": "/images/builds/division-resurgence-tactical-pharma-season-2-build-ggreborn-loadout-480.webp",
   "thumb": "/images/builds/division-resurgence-tactical-pharma-season-2-build-ggreborn-loadout-thumb.webp"
  },
+ "/images/builds/division-resurgence-tiktokandy-big-drum-unflinching-ii-card-846.webp": {
+  "width": 846,
+  "height": 548,
+  "srcset": [
+   [
+    480,
+    "/images/builds/division-resurgence-tiktokandy-big-drum-unflinching-ii-card-480.webp"
+   ],
+   [
+    800,
+    "/images/builds/division-resurgence-tiktokandy-big-drum-unflinching-ii-card-800.webp"
+   ],
+   [
+    846,
+    "/images/builds/division-resurgence-tiktokandy-big-drum-unflinching-ii-card-846.webp"
+   ]
+  ],
+  "small": "/images/builds/division-resurgence-tiktokandy-big-drum-unflinching-ii-card-480.webp",
+  "thumb": "/images/builds/division-resurgence-tiktokandy-big-drum-unflinching-ii-card-thumb.webp"
+ },
  "/images/builds/division-resurgence-unflinching-bulwark-build-tiktokandy-loadout-1200.webp": {
   "width": 1200,
   "height": 553,

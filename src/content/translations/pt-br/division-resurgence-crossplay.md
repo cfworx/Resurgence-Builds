@@ -49,6 +49,8 @@ sources:
     <a href="https://store.steampowered.com/app/3749720/The_Division_Resurgence/" target="_blank" rel="noopener noreferrer">Página da loja do Steam</a>, acessada em 15 de novembro de 2026
   - >-
     <a href="https://www.youtube.com/watch?v=m6RW59IND00" target="_blank" rel="noopener noreferrer">GGReborn: AEGIS The ULTIMATE TANK (YouTube)</a>, 12 de novembro de 2026, pela tela de Mission Completed
+  - >-
+    <a href="https://www.youtube.com/watch?v=4GoB017732U&t=1110s" target="_blank" rel="noopener noreferrer">TikTokAndy: Testing "Unflinching II" Talent With Bulwark! (YouTube)</a>, 14 de novembro de 2026, pela etiqueta no mundo aberto
 ---
 
 **Verificado em 15 de novembro de 2026.** Sim. The Division Resurgence tem crossplay total (multiplataforma) entre iPhone, Android e PC, e o seu progresso acompanha a sua conta Ubisoft Connect de um dispositivo para o outro. A Ubisoft impõe duas condições: você e seus amigos precisam estar no **mesmo servidor regional**, e, para manter o seu personagem, você precisa fazer login com a **mesma conta Ubisoft Connect**.
@@ -85,7 +87,7 @@ Ninguém obriga você a jogar contra pessoas que usam outro tipo de dispositivo.
 - A [Temporada 2 Fase 1](/patch-notes/season-2-phase-1-the-call/) (em inglês), de 5 de agosto de 2026, adicionou um botão dedicado para o seletor de crossplay, com opções de matchmaking e notificações, e um matchmaking melhor entre jogadores de Android e de iOS.
 - O mesmo patch permite que grupos formados só por jogadores de dispositivos móveis fiquem em instâncias da Zona Cega para dispositivos móveis, em vez de serem colocados em instâncias multiplataforma.
 - A [Temporada 2 Fase 2](/patch-notes/season-2-phase-2/) (em inglês), de 16 de setembro de 2026, melhorou o matchmaking da Zona Cega para grupos de dispositivos móveis e grupos multiplataforma, e corrigiu a configuração de crossplay, que às vezes mostrava o estado errado.
-- A tela de resultado de uma missão também mostra a configuração: a partida de GGReborn em On The Radio na dificuldade Legendary, em 12 de novembro de 2026, termina em uma tela de Mission Completed marcada com "Crossplay Off".
+- O jogo mostra a configuração na tela: a partida de GGReborn em On The Radio na dificuldade Legendary, em 12 de novembro de 2026, termina em uma tela de Mission Completed marcada com "Crossplay Off", e na de TikTokAndy na mesma missão, dois dias depois, uma etiqueta "Crossplay Off" aparece sobre os nomes de outros agentes no mundo aberto.
 
 Ainda não gravamos o seletor em si, então não descrevemos as opções dele aqui. Uma imagem dele entra nesta página quando tivermos uma.
 

@@ -14,7 +14,7 @@ faqs:
   - question: "What are Tactical Augmentation Modules in Division Resurgence?"
     answer: "Long-term upgrades you apply in the Armory. Ubisoft's own description: they 'improve a specific model of weapon,' so an upgrade applies to every copy of that model you find or loot. Creators show gear versions too, which stack Health and Armor. Think of them as a loyalty program for your favorite gun, except the gun never sends you emails."
   - question: "How much do Tactical Augmentation Modules add?"
-    answer: "Ubisoft doesn't publish a table, so here are creator readings. On gear, Died Again Gaming's screen showed +10% Health for the first module, then 40%, 70% and finally +100% Health and Armor, but tracks vary by piece: TikTokAndy's backpack starts with +11.67% Armor, and his holster has only three stages (+10% total Health, then +50% and +100% Health). On weapons it varies by model: TikTokAndy got +20% damage from his first Bighorn module and reached +40% damage on his Double Barrel with his third. Check the Armory screen for your own gun before you plan around a number."
+    answer: "Ubisoft doesn't publish a table, so here are creator readings. On gear, Died Again Gaming's screen showed +10% Health for the first module, then 40%, 70% and finally +100% Health and Armor, but tracks vary by slot: backpacks and gloves start with +11.67% Armor, masks and knee pads with 5% Damage Reduction, and masks, gloves, holsters and knee pads have three stages instead of four. On weapons it varies by model: TikTokAndy got +20% damage from his first Bighorn module and reached +40% damage on his Double Barrel with his third. Check the Armory screen for your own gun before you plan around a number."
   - question: "Where do you get Tactical Augmentation Modules?"
     answer: "The Clan Vendor (clan credits), the Dark Zone vendor (a weekly random TAM crate plus exotic TAMs), Classified Ops Pass tracks, event rewards like the Diamondback module in Season 2 Phase 2, and the Exotic Sealed Caches, where each exotic's module is a 1.43% roll in Ubisoft's drop table. Died Again Gaming also showed an Exotic TAM Selection Cache for 1,200 Encrypted Data in June."
   - question: "Are tactical augmentation manuals the same as modules?"
@@ -59,14 +59,18 @@ Ubisoft doesn't publish a table of module stages, so everything in this section 
 
 TikTokAndy's October readings mostly line up: a vest with "all the tactical augmentations" for **+100% Health and Armor** (October 6), and on his October 27 Lightweight M4 build, four modules on the chest piece plus a few Armor mods put him at about **10,000 Armor**. His mask on October 6 is the odd one out: "one augmentation" on it read **+5% Damage Reduction**, not Health (he doesn't say whether that one is a module or a manual).
 
-His [October 10 healer video](https://www.youtube.com/watch?v=VHKfmW4BtEk) settles the rest, because the Armory screens show each piece's track, and they aren't all the same:
+His [October 10 healer video](https://www.youtube.com/watch?v=VHKfmW4BtEk) showed the first two tracks on his Armory screens, and in November he and GGReborn opened the TAM popup on all six slots ([TikTokAndy, November 14](https://www.youtube.com/watch?v=4GoB017732U&t=3434s); [GGReborn, November 16](https://www.youtube.com/watch?v=Lw8_IyC1WJ8&t=258s)). The track follows the slot, not the piece: different pieces in the same slot show the same stages.
 
-| Piece (TikTokAndy, October 10) | Stages | Stage 1 | Then |
-|---|---|---|---|
-| Backpack (Mountain Hiking Pack) | 4 | Increase Armor by 11.67% | +40%, +70%, +100% Health |
-| Holster (Jaivardhan Thigh Rig) | 3 | Increase Total Health by 10% | +50%, +100% Health |
+| Slot | Stages | Stage 1 | Then | Seen on |
+|---|---|---|---|---|
+| Mask | 3 | Gain 5% Damage Reduction | +50%, +100% Health | TikTokAndy's Half mask respirator |
+| Body armor | 4 | Increase Total Health by 10% | +40%, +70%, +100% Health and Armor | TikTokAndy's "Big Drum" Body Armor, GGReborn's X-TREYME Pro Ribcage |
+| Backpack | 4 | Increase Armor by 11.67% | +40%, +70%, +100% Health | TikTokAndy's Mountain Hiking Pack and Roamer Pack "Sow", GGReborn's All Hazards Nitro Backpack |
+| Gloves | 3 | Increase Armor by 11.67% | +50%, +100% Health and Armor | TikTokAndy's Gustavo Association Gloves, GGReborn's "Neptune" Protection Gloves |
+| Holster | 3 | Increase Total Health by 10% | +50%, +100% Health | Jaivardhan Thigh Rig (both creators), TikTokAndy's Tepes Holster |
+| Knee pads | 3 | Gain 5% Damage Reduction | +50%, +100% Health and Armor | TikTokAndy's Pivot Pads, GGReborn's "Patella" Knee Cups |
 
-That explains the "50 health and armor" he read out for two modules on that video: his holster's second stage is +50% Health, on a three-stage track. The stage count shows next to the TAM label, too: GGReborn's mask reads TAM (1/3) on [October 28](https://www.youtube.com/watch?v=AUfSHF6gYjg), the regular weapons we've seen have five stages (TAM 2/5 on TikTokAndy's MP7, 4/5 on GGReborn's Lightweight M4), and every exotic's card in the in-game database shows six (0/6). So gear pieces don't share one track. Trust your own screen.
+That explains the "50 health and armor" he read out for two modules on the October video: his holster's second stage is +50% Health, on a three-stage track. It also explains his October 6 mask, where "one augmentation" read +5% Damage Reduction: that's the mask's first stage. The two 5% stages are worth knowing on a tank. TikTokAndy counts them in his Damage Reduction total, and the game stops counting at 80% ("Damage Reduction above 80% will not be applied," says its tooltip). The stage count shows next to the TAM label, too: GGReborn's mask reads TAM (1/3) on [October 28](https://www.youtube.com/watch?v=AUfSHF6gYjg), the regular weapons we've seen have five stages, and every exotic's card in the in-game database shows six (0/6).
 
 TikTokAndy's back-of-the-envelope math, the day after his first trip into the level 40 Dark Zone: +100% on each of six pieces is "an extra 600%." Ubisoft hasn't said how the bonuses stack, so we wouldn't put that number on a T-shirt, but the direction is right: maxed gear modules are the reason veterans feel unkillable.
 
@@ -76,12 +80,14 @@ TikTokAndy's back-of-the-envelope math, the day after his first trip into the le
 |---|---|---|
 | The Bighorn | +20% damage from the first module | TikTokAndy, September 16 |
 | Enhanced ACR | Two modules: +20% damage, +18% damage to elites, +20% accuracy | TikTokAndy, September 19 |
-| Double Barrel | +12% Critical Hit Chance from the first module; +40% damage once he slotted his third | TikTokAndy, October 6 and October 2 |
+| Double Barrel | First stage: +12% Weapon and Skill Critical Hit Chance; then +20%, +40%, +60% and +80% Damage (GGReborn's TAM popup, 4 of 5 unlocked) | TikTokAndy, October 6 and October 2; [GGReborn, November 16](https://www.youtube.com/watch?v=Lw8_IyC1WJ8&t=209s) |
+| Military MK46 | First stage: +30% Signature Ability Charge Efficiency and +40% Vertical Stability; then the same four Damage stages | [TikTokAndy, November 14](https://www.youtube.com/watch?v=4GoB017732U&t=3340s), on screen |
+| Copperhead | First stage: +30% Signature Ability Charge Efficiency and +40% Horizontal Stability; then the same four Damage stages | [TikTokAndy, November 14](https://www.youtube.com/watch?v=4GoB017732U&t=3375s), on screen |
 | An SMG | First stage: Magazine Size +45 and vertical stability +40, as he read them, "and so on and so forth" from there | Died Again Gaming, May 28 |
 | Another weapon | First stage: +30% Signature Ability Charge Efficiency, then damage | Died Again Gaming, May 28 |
 | MP7 | +10% Skill Intensity from one module | TikTokAndy, October 10 |
 
-Two patterns stand out. First, each model has its own track: on his Aegis healer, where the MP7 is his primary for its Enhancement Trade II and Adaptation II talents, TikTokAndy points out as a fun fact that one module on it adds +10% Skill Intensity. Second, the big damage stages don't always come first. On the Bighorn, his first module gave +20% damage and the screen showed +40% for the next stage, which he found out "you need two to activate." On the Double Barrel, the first module gave +12% Critical Hit Chance and the +40% damage arrived with his third. Same creator, two guns, two tracks, so read the Armory screen for your own weapon before you spend.
+Two patterns stand out. First, each model has its own track: on his Aegis healer, where the MP7 is his primary for its Enhancement Trade II and Adaptation II talents, TikTokAndy points out as a fun fact that one module on it adds +10% Skill Intensity. Second, the big damage stages don't always come first. On the Bighorn, his first module gave +20% damage and the screen showed +40% for the next stage, which he found out "you need two to activate." On the Double Barrel, the first module gave +12% Critical Hit Chance and the +40% damage arrived with his third. Same creator, two guns, two tracks, so read the Armory screen for your own weapon before you spend. On the three regular weapons whose whole track we've seen, the Double Barrel, the Military MK46 and the Copperhead, only the first stage differs, and the other four are +20%, +40%, +60% and +80% Damage.
 
 ## Where to get them
 

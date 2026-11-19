@@ -20,7 +20,7 @@ faqs:
   - question: "Should I stack crit chance or crit damage first?"
     answer: "Crit chance first. AgentHuntzman's rule is at least 50% Critical Hit Chance before you invest everything into Critical Hit Damage, because a thousand percent crit damage at one percent crit chance only matters once every hundred shots. Remember that skills and buffs add crit chance during fights: TikTokAndy's Commando sits at 51% on the sheet and about 90% with Scanning Pulse and Tactical Link up."
   - question: "What's the difference between a talent and its II version?"
-    answer: "The II version is the same effect at a higher rank, and in most cases we've checked it's about 1.4 times the base value. Ubisoft's own Season 2 Phase 2 notes give the cleanest example: the Strained talent is 10% at tier 1 and 14% at tier 2. Creator readings mostly follow the same pattern, for example Siege at 37.5% Extra Health and Siege II at about 52%. Two on-screen tooltips don't fit, Slaughter Fortitude II and Ammo Supply II, so check the tooltip before you do the math."
+    answer: "The II version is the same effect at a higher rank, and in most cases we've checked it's about 1.4 times the base value. Ubisoft's own Season 2 Phase 2 notes give the cleanest example: the Strained talent is 10% at tier 1 and 14% at tier 2. The game's own recalibration preview shows most talents following that pattern, for example Misdirection Insurance at 30% and Misdirection Insurance II at 42%. A few step up more or less: Slaughter Fortitude, Slaughter Healing and Steady Handed by 1.5 times, Rock Solid by about 1.33, so check the tooltip before you do the math."
 ---
 
 Your stat sheet in The Division Resurgence is long, and about half of it sounds the same. This guide translates it: the three main attributes, what every secondary stat actually does, the rules of thumb creators swear by, the official caps and changes, and the math behind talent ranks and OS Protocol upgrades, which nobody in the game explains.
@@ -88,30 +88,47 @@ These are creator opinions, not game rules, but they come up in almost every bui
 
 ## How talent ranks scale: usually 1.4x
 
-Talents come in ranks, written as "II" (or "2") after the name. Ubisoft doesn't publish a rank table, but its Season 2 Phase 2 notes give one clean example while fixing a tooltip: the **Strained** weapon talent is **10% at tier 1 and 14% at tier 2**. That's exactly 1.4 times, and most creator readings we've compared to our database follow the same pattern:
+Talents come in ranks, written as "II" (or "2") after the name. Ubisoft doesn't publish a rank table, but its Season 2 Phase 2 notes give one clean example while fixing a tooltip: the **Strained** weapon talent is **10% at tier 1 and 14% at tier 2**. That's exactly 1.4 times.
+
+The best evidence is the game's own recalibration preview, which lists a weapon's possible talents at both ranks with their full text. TikTokAndy's Copperhead shows 17 of them in [his November 14 video](https://www.youtube.com/watch?v=4GoB017732U&t=2990s), and most follow the same 1.4 times:
 
 | Talent | Rank I (our database) | Rank II (reading) | Ratio |
 |---|---|---|---|
 | Strained | 10% Critical Hit Damage | 14% | 1.4x (Ubisoft's notes) |
-| Siege | 37.50% Extra Health | about 52% (TikTokAndy) | about 1.4x |
-| Toymaker | +15% Skill Multi-Shot Chance | +21% (TikTokAndy) | 1.4x |
-| Suppressive Fire | +18% Magazine Size, +6% Rate of Fire | +25%, +8.4% (TikTokAndy) | about 1.4x |
-| Precise Support | +7% Armor per stack | +9.80% (TikTokAndy's tooltip, October 27; Nadie's screenshots, from his build submission) | 1.4x |
-| Still Alive | 30% of missing Health | 42% (TikTokAndy) | 1.4x |
-| Torrential Downpour | +22.50% Engineering | +31.50% (TikTokAndy) | 1.4x |
-| Unflinching (body armor) | 300% of Toughness | 420% (TikTokAndy, November 14) | 1.4x |
-| Thick Skin | +2.10% Armor per stack | +2.94% (TikTokAndy, November 14) | 1.4x |
-| Swift Taunt | 25% Max Health | 35% (TikTokAndy, November 14) | 1.4x |
-| Precise Crit | +15% Critical Damage to allies | +21% (TikTokAndy, November 14; GGReborn, November 16) | 1.4x |
+| Misdirection Insurance | 30% chance | 42% (both ranks on the recalibration preview) | 1.4x |
+| Damage Trade | +6% Weapon Damage per stack | +8.40% (both ranks on the preview) | 1.4x |
+| Swift Taunt | 25% Max Health | 35% (both ranks on the preview) | 1.4x |
+| Thick Skin | +2.10% Armor per stack | +2.94% (both ranks on the preview) | 1.4x |
+| Revitalize | 4.20% Max Health | 6% (both ranks on the preview) | about 1.4x |
+| Precise Support | +7% Armor per stack | +9.80% (both ranks on the preview; Rescue Efficiency stays +40%) | 1.4x |
+| Steady Suppression | +18% Damage Reduction | +25% (the preview) | about 1.4x |
+| In Sync | +9% Skill and Weapon Damage | +12.60% (the preview) | 1.4x |
+| Spirited | 9%, 12% and 15% Damage Reduction | 12.60%, 16.80% and 21% (the preview) | 1.4x |
+| Tactical Targeting | 15% Extra Health | 21% (the preview) | 1.4x |
+| Backup Battery | +22.50% Engineering | +31.50% (the preview) | 1.4x |
+| Target Acquisition | +2.50% Incoming Damage per stack | +3.50% (the preview; GGReborn's The Bighorn, November 16) | 1.4x |
+| Precise Crit | +15% Critical Damage to allies | +21% (the preview; GGReborn's Double Barrel, November 16) | 1.4x |
+| Rapid Charge | 50 Signature Ability Charge | 70 (TikTokAndy's Vector 45 ACP, November 14) | 1.4x |
+| Shooting Repair | 2.50% Missing Health of your Skills | 3.50% (TikTokAndy's Naval MP5, November 14) | 1.4x |
+| Steady Reload | +5% Weapon Damage per stack | +7% (a teammate's Double Barrel in TikTokAndy's November 14 run) | 1.4x |
 | Predatory Aura | (240 x Firepower)% Health on a kill | (336 x Firepower)% (GGReborn, November 16) | 1.4x |
 | Adaptation | +4.80% Skill Duration, +6% Skill Intensity | +6.72%, +8.40% (GGReborn, November 16) | 1.4x |
-| Target Acquisition | +2.50% Incoming Damage per stack | +3.50% (GGReborn's The Bighorn, November 16) | 1.4x |
-| Revitalize | 4.20% Max Health | 6% (TikTokAndy, November 14) | about 1.4x |
-| Slaughter Fortitude | +12% Armor per stack | +18% (TikTokAndy's tooltip, September 16) | 1.5x |
-| Inspiration | +30% Rate of Fire when Skills are deployed | +42% (the game's blueprint screen, on GGReborn's All Hazards Nitro Backpack, October 31) | 1.4x |
+| Unflinching (body armor) | 300% of Toughness | 420% (TikTokAndy's "Big Drum" Body Armor, November 14) | 1.4x |
+| Suppressive Fire (body armor) | +18% Magazine Size, +6% Rate of Fire | +25%, +8.40% (TikTokAndy; a teammate's card in his November 14 run reads the same) | about 1.4x |
+| Inspiration (backpack) | +30% Rate of Fire when Skills are deployed | +42% (the game's blueprint screen, on GGReborn's All Hazards Nitro Backpack, October 31) | 1.4x |
+| Siege | 37.50% Extra Health | about 52% (TikTokAndy) | about 1.4x |
+| Toymaker | +15% Skill Multi-Shot Chance | +21% (TikTokAndy) | 1.4x |
+| Still Alive | 30% of missing Health | 42% (TikTokAndy) | 1.4x |
+| Torrential Downpour | +22.50% Engineering | +31.50% (TikTokAndy) | 1.4x |
+| Slaughter Fortitude | +12% Armor per stack | +18% (both ranks on the preview) | 1.5x |
+| Steady Handed | +1.20% Accuracy and Stability per stack | +1.80% (both ranks on the preview) | 1.5x |
+| Slaughter Healing | +7% Incoming Healing per stack | +10.50% (the preview) | 1.5x |
+| Rock Solid (backpack) | +15% Damage Reduction | +20% (TikTokAndy's Healing Roamer Pack "Sow", November 14; his rank I pack reads +15%) | about 1.33x |
 | Ammo Supply | 54% chance | 65% (TikTokAndy's tooltip, September 16) | 1.2x |
 
-Timers can move the other way: TikTokAndy reads Backup Magazine II as reloading your other weapon after 3 seconds, where rank I waits 4. AgentHuntzman shows the same thing on another talent in the Build Database: Blood for Blood's bonus damage goes from 0.50% of max Health to 0.70% at level two. The last two rows are the exceptions: both are read straight off TikTokAndy's tooltips, and they come out at 1.5 and 1.2 times our rank I numbers. Either those talents scale differently or our rank I captures are off, and we're re-checking them. So when you see a II talent on a drop, expect about 40% more of whatever the base version does, then check the tooltip. Our database lists base (rank I) text unless it says otherwise.
+Not every number in a talent climbs. Unflinching II keeps its 70% chance and 2 second cooldown, Precise Support II keeps +40% Rescue Efficiency, and timers can move the other way: Backup Magazine II reloads your other weapon after 3 seconds, where rank I waits 4, and the preview shows both. AgentHuntzman shows the same thing on another talent in the Build Database: Blood for Blood's bonus damage goes from 0.50% of max Health to 0.70% at level two.
+
+The last five rows are the exceptions. Slaughter Fortitude and Steady Handed show both ranks on the same in-game screen, so they really do step up 1.5 times; Slaughter Healing's rank II on that screen is 1.5 times our rank I; and Rock Solid shows +15% and +20% on two of TikTokAndy's own backpacks. Ammo Supply is still one creator tooltip against our capture, so we're re-checking it. So when you see a II talent on a drop, expect about 40% more of whatever the base version does, then check the tooltip. Our database lists base (rank I) text, and each weapon talent page shows the game's own rank II text where we've seen it.
 
 ## How OS Protocols scale
 
@@ -123,6 +140,7 @@ OS Protocols grow two ways, and Ubisoft's own patch notes show the pattern for o
 - **Dominating Presence** (Season 2 Phase 2): maximum scaling reduced to 35, 42, 49, 56, 63 and 70%.
 - **Recursive Treatment** on screen: TikTokAndy's copy with two of five upgrade diamonds reads +28% Skill Intensity on a +20% base, two steps of 4 (his October 10 video).
 - **Close Quarters Menace** on screen: GGReborn's level 50 card shows four of five upgrade diamonds and +27% on a 15% base, four steps of 3 (his October 31 video).
+- **Blitz Tactics** on screen: TikTokAndy's level 50 card shows three of five upgrade diamonds and +19.20% Incoming Healing on a 12% base, plus 12.80% Max Health on an 8% base, three steps each (his November 14 video). A teammate's copy in the same run, at two of five, reads +16.80%.
 
 **Levels (up to 50).** Creator readings say a protocol's percentage main stat doubles by level 50, and the on-screen ones in between fit a simple ladder: **+10% of the base every 5 levels**. That's our reading of the screenshots below, not a rule Ubisoft has published:
 
@@ -134,8 +152,9 @@ OS Protocols grow two ways, and Ubisoft's own patch notes show the pattern for o
 | Explosive Round | +22.50% Firepower | 42.75% at level 45 (on screen), "45" at max | 1.9x | TikTokAndy, October 27 |
 | Close Quarters Menace | +18% Firepower | 36% at level 50 (on screen) | 2x | GGReborn, October 31 |
 | Assault Charge | +18% Weapon Critical Hit Chance | 36% at level 50 (on screen) | 2x | GGReborn, October 31 |
+| Blitz Tactics | +18% Toughness | 36% at level 50 (on screen) | 2x | TikTokAndy, November 14 |
 
-The flat attributes climb much faster than the percentage: the same level 42 Recursive Treatment shows +285 Engineering against the +77 in our level 1 data, about 3.7 times, and AgentHuntzman's level 50 Pressing Matter shows +358 Engineering, about 4.6 times. GGReborn's level 50 protocols land on the same 4.6: Close Quarters Menace shows +358 Firepower (+77 here) and Assault Charge +447 (+97).
+The flat attributes climb much faster than the percentage: the same level 42 Recursive Treatment shows +285 Engineering against the +77 in our level 1 data, about 3.7 times, and AgentHuntzman's level 50 Pressing Matter shows +358 Engineering, about 4.6 times. GGReborn's level 50 protocols land on the same 4.6: Close Quarters Menace shows +358 Firepower (+77 here) and Assault Charge +447 (+97), and TikTokAndy's level 50 Blitz Tactics reads +358 Toughness, +286 All Weapon Damage and +9,402 Health, the same three numbers as GGReborn's Close Quarters Menace.
 
 So when you compare two protocols, compare them at the same level and upgrade step, or you're comparing a puppy to a dog. The [OS Protocol database](/database/os-protocols/) lists base values; the [tier list](/tier-list/os-protocols/) shows how players rank them.
 

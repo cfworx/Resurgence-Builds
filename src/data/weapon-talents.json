@@ -3,7 +3,13 @@
     "id": "wt-1",
     "name": "Adaptation",
     "description": "Body shots grant +4.80% Skill Duration for 8 seconds. Headshots grant +6% Skill Intensity for 8 seconds.",
-    "verifiedInGame": "2026-10-28"
+    "verifiedInGame": "2026-10-28",
+    "upgradedName": "Adaptation II",
+    "upgradedDescription": "Body shots grant +6.72% Skill Duration for 8 seconds. Headshots grant +8.40% Skill Intensity for 8 seconds.",
+    "upgradedSource": {
+      "label": "GGReborn's solo Double Barrel card (YouTube, November 16, 2026, 2:48)",
+      "url": "https://www.youtube.com/watch?v=Lw8_IyC1WJ8&t=168s"
+    }
   },
   {
     "id": "wt-2",
@@ -25,13 +31,23 @@
     "verifiedInGame": "2026-10-28",
     "upgradedName": "Backup Battery II",
     "upgradedDescription": "Swapping to this weapon grants +31.50% Engineering for 8 seconds. Talent Cooldown: 8 seconds.",
-    "icon": "/images/ui/talents/backup-battery.webp"
+    "icon": "/images/ui/talents/backup-battery.webp",
+    "upgradedSource": {
+      "label": "the game's recalibration preview on TikTokAndy's Copperhead (YouTube, November 14, 2026, 49:50)",
+      "url": "https://www.youtube.com/watch?v=4GoB017732U&t=2990s"
+    }
   },
   {
     "id": "wt-5",
     "name": "Backup Magazine",
     "description": "Swapping to this weapon reloads your second weapon after 4 seconds.",
-    "verifiedInGame": "2026-10-28"
+    "verifiedInGame": "2026-10-28",
+    "upgradedName": "Backup Magazine II",
+    "upgradedDescription": "Swapping to this weapon reloads your second weapon after 3 seconds.",
+    "upgradedSource": {
+      "label": "the game's recalibration preview on TikTokAndy's Copperhead (YouTube, November 14, 2026, 53:30)",
+      "url": "https://www.youtube.com/watch?v=4GoB017732U&t=3210s"
+    }
   },
   {
     "id": "wt-6",
@@ -94,7 +110,13 @@
     "id": "wt-15",
     "name": "Damage Trade",
     "description": "Grants +6% Weapon Damage for each 20% of the Magazine Size emptied, up to 4 stacks. Reloading removes all stacks.",
-    "verifiedInGame": "2026-10-28"
+    "verifiedInGame": "2026-10-28",
+    "upgradedName": "Damage Trade II",
+    "upgradedDescription": "Grants +8.40% Weapon Damage for each 20% of the Magazine Size emptied, up to 4 stacks. Reloading removes all stacks.",
+    "upgradedSource": {
+      "label": "the game's recalibration preview on TikTokAndy's Copperhead (YouTube, November 14, 2026, 53:30)",
+      "url": "https://www.youtube.com/watch?v=4GoB017732U&t=3210s"
+    }
   },
   {
     "id": "wt-16",
@@ -136,7 +158,13 @@
     "id": "wt-22",
     "name": "In Sync",
     "description": "Weapon Hits grant +9% Skill Damage for 8 seconds. Skill Hits grant +9% Weapon Damage for 8 seconds. Bonus is doubled when both buffs are active at the same time.",
-    "verifiedInGame": "2026-10-28"
+    "verifiedInGame": "2026-10-28",
+    "upgradedName": "In Sync II",
+    "upgradedDescription": "Weapon Hits grant +12.60% Skill Damage for 8 seconds. Skill Hits grant +12.60% Weapon Damage for 8 seconds. Bonus is doubled when both buffs are active at the same time.",
+    "upgradedSource": {
+      "label": "the game's recalibration preview on TikTokAndy's Copperhead (YouTube, November 14, 2026, 49:50)",
+      "url": "https://www.youtube.com/watch?v=4GoB017732U&t=2990s"
+    }
   },
   {
     "id": "wt-23",
@@ -180,7 +208,13 @@
     "id": "wt-29",
     "name": "Misdirection Insurance",
     "description": "Missing a shot has a 30% chance of returning the bullet to the magazine.",
-    "verifiedInGame": "2026-10-28"
+    "verifiedInGame": "2026-10-28",
+    "upgradedName": "Misdirection Insurance II",
+    "upgradedDescription": "Missing a shot has a 42% chance of returning the bullet to the magazine.",
+    "upgradedSource": {
+      "label": "the game's recalibration preview on TikTokAndy's Copperhead (YouTube, November 14, 2026, 53:30)",
+      "url": "https://www.youtube.com/watch?v=4GoB017732U&t=3210s"
+    }
   },
   {
     "id": "wt-30",
@@ -223,7 +257,13 @@
     "id": "wt-36",
     "name": "Precise Crit",
     "description": "Hitting an enemy 10 times grants +15% Weapon & Skill Critical Damage to all allies within 40 meters for 10 seconds.",
-    "verifiedInGame": "2026-10-28"
+    "verifiedInGame": "2026-10-28",
+    "upgradedName": "Precise Crit II",
+    "upgradedDescription": "Hitting an enemy 10 times grants +21% Weapon & Skill Critical Damage to all allies within 40 meters for 10 seconds.",
+    "upgradedSource": {
+      "label": "the game's recalibration preview on TikTokAndy's Copperhead (YouTube, November 14, 2026, 49:50)",
+      "url": "https://www.youtube.com/watch?v=4GoB017732U&t=2990s"
+    }
   },
   {
     "id": "wt-37",
@@ -236,13 +276,25 @@
     "name": "Precise Support",
     "description": "Hitting an enemy 6 times grants +7% Armor and +40% Rescue Efficiency for 10 seconds, up to 5 stacks.",
     "verifiedInGame": "2026-10-28",
-    "note": "The in-game Build-Making Database calls this talent Precision Support (checked October 28, 2026); TikTokAndy's Lightweight M4 tooltip reads Precise Support II (October 27, 2026). Rank II reads +9.80% Armor and +40% Rescue Efficiency on that tooltip."
+    "note": "The in-game Build-Making Database calls this talent Precision Support (checked October 28, 2026); TikTokAndy's Lightweight M4 tooltip reads Precise Support II (October 27, 2026). Rank II reads +9.80% Armor and +40% Rescue Efficiency on that tooltip.",
+    "upgradedName": "Precise Support II",
+    "upgradedDescription": "Hitting an enemy 6 times grants +9.80% Armor and +40% Rescue Efficiency for 10 seconds, up to 5 stacks.",
+    "upgradedSource": {
+      "label": "the game's recalibration preview on TikTokAndy's Copperhead (YouTube, November 14, 2026, 53:30)",
+      "url": "https://www.youtube.com/watch?v=4GoB017732U&t=3210s"
+    }
   },
   {
     "id": "wt-39",
     "name": "Predatory Aura",
     "description": "Weapon kills within 20 meters restore (240 x Firepower)% Health for 3 seconds.",
-    "verifiedInGame": "2026-10-28"
+    "verifiedInGame": "2026-10-28",
+    "upgradedName": "Predatory Aura II",
+    "upgradedDescription": "Weapon kills within 20 meters restore (336 x Firepower)% Health for 3 seconds.",
+    "upgradedSource": {
+      "label": "GGReborn's solo Double Barrel card (YouTube, November 16, 2026, 2:48)",
+      "url": "https://www.youtube.com/watch?v=Lw8_IyC1WJ8&t=168s"
+    }
   },
   {
     "id": "wt-40",
@@ -262,13 +314,25 @@
     "id": "wt-42",
     "name": "Rapid Charge",
     "description": "Hitting an enemy 5 times in 3 seconds grants 50 Signature Ability Charge.",
-    "verifiedInGame": "2026-10-28"
+    "verifiedInGame": "2026-10-28",
+    "upgradedName": "Rapid Charge II",
+    "upgradedDescription": "Hitting an enemy 5 times in 3 seconds grants 70 Signature Ability Charge.",
+    "upgradedSource": {
+      "label": "TikTokAndy's Vector 45 ACP card (YouTube, November 14, 2026, 47:01)",
+      "url": "https://www.youtube.com/watch?v=4GoB017732U&t=2821s"
+    }
   },
   {
     "id": "wt-43",
     "name": "Revitalize",
     "description": "Every 1 kills and assists restores 4.20% Max Health for 3 seconds. Talent Cooldown: 4 seconds.",
-    "verifiedInGame": "2026-10-28"
+    "verifiedInGame": "2026-10-28",
+    "upgradedName": "Revitalize II",
+    "upgradedDescription": "Every 1 kills and assists restores 6% Max Health for 3 seconds. Talent Cooldown: 4 seconds.",
+    "upgradedSource": {
+      "label": "the game's recalibration preview on TikTokAndy's Copperhead (YouTube, November 14, 2026, 53:30)",
+      "url": "https://www.youtube.com/watch?v=4GoB017732U&t=3210s"
+    }
   },
   {
     "id": "wt-44",
@@ -286,20 +350,38 @@
     "id": "wt-46",
     "name": "Shooting Repair",
     "description": "Shooting 10 bullets restores 2.50% Missing Health of your deployed Skills.",
-    "verifiedInGame": "2026-10-28"
+    "verifiedInGame": "2026-10-28",
+    "upgradedName": "Shooting Repair II",
+    "upgradedDescription": "Shooting 10 bullets restores 3.50% Missing Health of your deployed Skills.",
+    "upgradedSource": {
+      "label": "TikTokAndy's Naval MP5 card (YouTube, November 14, 2026, 45:20)",
+      "url": "https://www.youtube.com/watch?v=4GoB017732U&t=2720s"
+    }
   },
   {
     "id": "wt-47",
     "name": "Slaughter Fortitude",
     "description": "Kills and assists grant +12% Armor for 10 seconds, up to 3 stacks.",
     "verifiedInGame": "2026-10-28",
-    "note": "The in-game Build-Making Database confirms +12% at rank I (checked October 28, 2026). Rank II reads +18% Armor per stack on screen: TikTokAndy's Level 40 MP40 in his September 16, 2026 video (15:40), 1.5 times rank I, where most talents step up 1.4 times."
+    "note": "The in-game Build-Making Database confirms +12% at rank I (checked October 28, 2026). Rank II reads +18% Armor per stack on screen: TikTokAndy's Level 40 MP40 in his September 16, 2026 video (15:40), 1.5 times rank I, where most talents step up 1.4 times.",
+    "upgradedName": "Slaughter Fortitude II",
+    "upgradedDescription": "Kills and assists grant +18% Armor for 10 seconds, up to 3 stacks.",
+    "upgradedSource": {
+      "label": "the game's recalibration preview on TikTokAndy's Copperhead (YouTube, November 14, 2026, 53:30)",
+      "url": "https://www.youtube.com/watch?v=4GoB017732U&t=3210s"
+    }
   },
   {
     "id": "wt-48",
     "name": "Slaughter Healing",
     "description": "Kills and assists grant +7% Incoming Healing for 10 seconds to all allies within 40 meters, up to 3 stacks.",
-    "verifiedInGame": "2026-10-28"
+    "verifiedInGame": "2026-10-28",
+    "upgradedName": "Slaughter Healing II",
+    "upgradedDescription": "Kills and assists grant +10.50% Incoming Healing for 10 seconds to all allies within 40 meters, up to 3 stacks.",
+    "upgradedSource": {
+      "label": "the game's recalibration preview on TikTokAndy's Copperhead (YouTube, November 14, 2026, 49:50)",
+      "url": "https://www.youtube.com/watch?v=4GoB017732U&t=2990s"
+    }
   },
   {
     "id": "wt-49",
@@ -311,7 +393,13 @@
     "id": "wt-50",
     "name": "Spirited",
     "description": "Grants +9% Damage Reduction while below 75% Health. Grants +12% Damage Reduction while below 50% Health. Grants +15% Damage Reduction while below 25% Health.",
-    "verifiedInGame": "2026-10-28"
+    "verifiedInGame": "2026-10-28",
+    "upgradedName": "Spirited II",
+    "upgradedDescription": "Grants +12.60% Damage Reduction while below 75% Health. Grants +16.80% Damage Reduction while below 50% Health. Grants +21% Damage Reduction while below 25% Health.",
+    "upgradedSource": {
+      "label": "the game's recalibration preview on TikTokAndy's Copperhead (YouTube, November 14, 2026, 49:50)",
+      "url": "https://www.youtube.com/watch?v=4GoB017732U&t=2990s"
+    }
   },
   {
     "id": "wt-51",
@@ -323,7 +411,13 @@
     "id": "wt-52",
     "name": "Steady Handed",
     "description": "Hits grant +1.20% Accuracy and Stability, up to 30 stacks. At 30 stacks, consume them to refill the magazine.",
-    "verifiedInGame": "2026-10-28"
+    "verifiedInGame": "2026-10-28",
+    "upgradedName": "Steady Handed II",
+    "upgradedDescription": "Hits grant +1.80% Accuracy and Stability, up to 30 stacks. At 30 stacks, consume them to refill the magazine.",
+    "upgradedSource": {
+      "label": "the game's recalibration preview on TikTokAndy's Copperhead (YouTube, November 14, 2026, 53:30)",
+      "url": "https://www.youtube.com/watch?v=4GoB017732U&t=3210s"
+    }
   },
   {
     "id": "wt-53",
@@ -338,7 +432,13 @@
     "name": "Steady Reload",
     "description": "Reloading grants +5% Weapon Damage for 10 seconds, up to 5 stacks.",
     "verifiedInGame": "2026-10-28",
-    "note": "Season 2 Phase 1 cut this from 18% to 5% Weapon Damage, raised the duration from 5 to 10 seconds, and removed a hidden bonus some weapons got from bolting."
+    "note": "Season 2 Phase 1 cut this from 18% to 5% Weapon Damage, raised the duration from 5 to 10 seconds, and removed a hidden bonus some weapons got from bolting.",
+    "upgradedName": "Steady Reload II",
+    "upgradedDescription": "Reloading grants +7% Weapon Damage for 10 seconds, up to 5 stacks.",
+    "upgradedSource": {
+      "label": "a teammate's Double Barrel card in TikTokAndy's run (YouTube, November 14, 2026, 4:04)",
+      "url": "https://www.youtube.com/watch?v=4GoB017732U&t=244s"
+    }
   },
   {
     "id": "wt-55",
@@ -346,7 +446,12 @@
     "description": "Grants +18% Damage Reduction while firing.",
     "verifiedInGame": "2026-10-28",
     "upgradedName": "Steady Suppression II",
-    "icon": "/images/ui/talents/steady-suppression.webp"
+    "icon": "/images/ui/talents/steady-suppression.webp",
+    "upgradedDescription": "Grants +25% Damage Reduction while firing.",
+    "upgradedSource": {
+      "label": "the game's recalibration preview on TikTokAndy's Copperhead (YouTube, November 14, 2026, 49:50)",
+      "url": "https://www.youtube.com/watch?v=4GoB017732U&t=2990s"
+    }
   },
   {
     "id": "wt-56",
@@ -380,7 +485,13 @@
     "id": "wt-60",
     "name": "Swift Taunt",
     "description": "Hitting 3 enemies within 5 seconds taunts nearby enemies and grants Extra Health equal to 25% Max Health for 10 seconds.",
-    "verifiedInGame": "2026-10-28"
+    "verifiedInGame": "2026-10-28",
+    "upgradedName": "Swift Taunt II",
+    "upgradedDescription": "Hitting 3 enemies within 5 seconds taunts nearby enemies and grants Extra Health equal to 35% Max Health for 10 seconds.",
+    "upgradedSource": {
+      "label": "the game's recalibration preview on TikTokAndy's Copperhead (YouTube, November 14, 2026, 53:30)",
+      "url": "https://www.youtube.com/watch?v=4GoB017732U&t=3210s"
+    }
   },
   {
     "id": "wt-61",
@@ -392,7 +503,13 @@
     "id": "wt-62",
     "name": "Tactical Targeting",
     "description": "Skill Hits apply a mark on the target for 10 seconds. Killing a marked enemy grants 15% Extra Health for 10 seconds (based on Max Health).",
-    "verifiedInGame": "2026-10-28"
+    "verifiedInGame": "2026-10-28",
+    "upgradedName": "Tactical Targeting II",
+    "upgradedDescription": "Skill Hits apply a mark on the target for 10 seconds. Killing a marked enemy grants 21% Extra Health for 10 seconds (based on Max Health).",
+    "upgradedSource": {
+      "label": "the game's recalibration preview on TikTokAndy's Copperhead (YouTube, November 14, 2026, 49:50)",
+      "url": "https://www.youtube.com/watch?v=4GoB017732U&t=2990s"
+    }
   },
   {
     "id": "wt-63",
@@ -405,13 +522,25 @@
     "name": "Target Acquisition",
     "description": "Hitting an enemy 5 consecutive times inflicts +2.50% Incoming Damage on them for 5 seconds, up to 3 stacks.",
     "verifiedInGame": "2026-10-28",
-    "note": "Not the Commando specialization talent of the same name that Season 2 Phase 1 nerfed."
+    "note": "Not the Commando specialization talent of the same name that Season 2 Phase 1 nerfed.",
+    "upgradedName": "Target Acquisition II",
+    "upgradedDescription": "Hitting an enemy 5 consecutive times inflicts +3.50% Incoming Damage on them for 5 seconds, up to 3 stacks.",
+    "upgradedSource": {
+      "label": "the game's recalibration preview on TikTokAndy's Copperhead (YouTube, November 14, 2026, 49:50)",
+      "url": "https://www.youtube.com/watch?v=4GoB017732U&t=2990s"
+    }
   },
   {
     "id": "wt-65",
     "name": "Thick Skin",
     "description": "Dealing damage grants +2.10% Armor for 5 seconds, up to 20 stacks. Kills grant 10 stacks.",
-    "verifiedInGame": "2026-10-28"
+    "verifiedInGame": "2026-10-28",
+    "upgradedName": "Thick Skin II",
+    "upgradedDescription": "Dealing damage grants +2.94% Armor for 5 seconds, up to 20 stacks. Kills grant 10 stacks.",
+    "upgradedSource": {
+      "label": "the game's recalibration preview on TikTokAndy's Copperhead (YouTube, November 14, 2026, 53:30)",
+      "url": "https://www.youtube.com/watch?v=4GoB017732U&t=3210s"
+    }
   },
   {
     "id": "wt-66",
