@@ -1079,6 +1079,26 @@
   "small": "/images/guides/division-resurgence-phoenix-credits-gift-store-480.webp",
   "thumb": "/images/guides/division-resurgence-phoenix-credits-gift-store-thumb.webp"
  },
+ "/images/guides/division-resurgence-precious-cargo-four-bosses-880.webp": {
+  "width": 880,
+  "height": 388,
+  "srcset": [
+   [
+    480,
+    "/images/guides/division-resurgence-precious-cargo-four-bosses-480.webp"
+   ],
+   [
+    800,
+    "/images/guides/division-resurgence-precious-cargo-four-bosses-800.webp"
+   ],
+   [
+    880,
+    "/images/guides/division-resurgence-precious-cargo-four-bosses-880.webp"
+   ]
+  ],
+  "small": "/images/guides/division-resurgence-precious-cargo-four-bosses-480.webp",
+  "thumb": "/images/guides/division-resurgence-precious-cargo-four-bosses-thumb.webp"
+ },
  "/images/guides/division-resurgence-purple-gold-mods-farming-firefight-1200.webp": {
   "width": 1200,
   "height": 630,

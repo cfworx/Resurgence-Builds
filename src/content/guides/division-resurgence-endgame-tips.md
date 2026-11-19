@@ -202,10 +202,16 @@ TikTokAndy calls Precious Cargo the final mission in the game and, from his expe
 
 - **Snipers first, then the Grenadier.**
 - **Save Tactical Link for the second wave,** which comes out of the door on your left.
-- **Don't count on Kevin.** The NPC who comes along with you likes to take the lead, and your cover.
+- **Don't count on Kevin.** The NPC who comes along with you (Kevin Zeng, in the game's subtitles) likes to take the lead, and your cover.
 - **The mission ends as soon as all four bosses are down.**
 
 For the finale his two videos disagree: solo with a shotgun he fights from a nook by the shipping container, and as a team healer he prefers the bridge you start on. His builds for those runs: the [Double Barrel Commando](/builds/misdirection-double-barrel-commando-build-tiktokandy/) and the [Aegis Team Healer](/builds/aegis-team-healer-tech-operator-build-tiktokandy/).
+
+[GGReborn's two-player Legendary run](https://www.youtube.com/watch?v=niOtrLdkPrI) with a Vanguard teammate (12:41 on the clock, nobody downed) shows the steps by name. The mission has ten (the video picks up at the second), most of them headed "Rescue Gabrielle Liu": clear the Freemen reinforcements, open the hostages' cells, activate an ECHO, reach the bridge, survive a Freemen ambush ("Defend Kevin"), take the elevator, then **(9/10) Hold the Freemen off** against four named bosses. When the last one drops the game calls "Mission Completed" right away, while step 10, extracting Sean O'Neill's blood samples, still says to leave the Freemen Headquarters. TikTokAndy's tip holds.
+
+![The objective tracker in The Division Resurgence's Precious Cargo mission on Legendary: (9/10) Hold the Freemen off, with four bosses and their bars, Arthur "Exit Guy" King, Bert "RC" Lindstrom with a red bar, Kyrone "Sawbones" Small and Keith "Flashbulb" Donner](/images/guides/division-resurgence-precious-cargo-four-bosses.webp "The finale's four bosses on the tracker. Frame from GGReborn's video.")
+
+The bar colors give away their weaknesses: Bert "RC" Lindstrom's is red, Blast by our [color key](/guides/damage-types-color-bar-weakness-guide/), and the other three are blue, Arthur's a deeper shade than Kyrone's and Keith's. GGReborn's pair took Keith down first, then Bert, Arthur and Kyrone last. The scoreboard shows the split: the Vanguard dealt 253.38M damage and took 709.56K, while GGReborn's Aegis dealt 26.68M and took 4.39M, six times as much.
 
 ### Lone Wolf Challenge
 
@@ -248,6 +254,7 @@ The Heroic Hostile Nest with a named boss is the mod farm in our [mod farming gu
 - [TikTokAndy: 11 Kill P90/Lightweight M4 Solo Manhunt (YouTube, September 27, 2026)](https://www.youtube.com/watch?v=oJ_iNQqTL9g)
 - [TikTokAndy: Lone Star Stage 20 Complete (YouTube, October 2, 2026)](https://www.youtube.com/watch?v=9nQ-jGnc7gU)
 - [TikTokAndy: Precious Cargo Legendary Difficulty But I'm Solo (YouTube, October 6, 2026)](https://www.youtube.com/watch?v=D3yrRSUwhq0)
+- [GGReborn: Aegis + Vanguard, The BEST Duo Combo for Legendary (YouTube)](https://www.youtube.com/watch?v=niOtrLdkPrI) (a two-player Legendary Precious Cargo: its steps, the four bosses, the scoreboard; the tracker picture is a frame from it)
 - [TikTokAndy: Most Overpowered Team Healer Build, Striker + Aegis (YouTube, October 10, 2026)](https://www.youtube.com/watch?v=VHKfmW4BtEk)
 - [GGReborn: How Stats REALLY Work, Testing 3 Builds (YouTube, October 22, 2026)](https://www.youtube.com/watch?v=f1q44KbdS6g)
 - [GGReborn: Which OS Protocol Is BEST? Testing 4 Protocols (YouTube, October 23, 2026)](https://www.youtube.com/watch?v=Kz9YlTUl_1s)
