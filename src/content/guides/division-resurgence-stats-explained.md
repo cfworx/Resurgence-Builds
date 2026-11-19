@@ -50,6 +50,11 @@ The game's own tooltips use Firepower, Toughness and Engineering: Explosive Roun
 
 AgentHuntzman calls the character Attributes screen "your best friend throughout the whole game." It's the first of four tabs on the character screen (Attributes, Specialization Focus, Combat Skills and Agent's Identity), and its first list is **Offensive Attributes**: Damage Bonus, Weapon Critical Hit Chance and Damage, Weapon Multi-Shot Chance, Headshot Damage, Weapon Damage, Rate of Fire, Reload Speed, Magazine Size, Skill Critical Chance and Damage, and more as you scroll. The icons down the right side open the other lists. That's the screen as GGReborn showed it on October 31.
 
+**The sheet follows the gun in your hands.** In [SannoNYC's Vanguard build video](https://www.youtube.com/watch?v=RVgOTMB4B8o) the same loadout reads Firepower 2.68k, Toughness 498, Engineering 215, 11,614 Armor and 136,148 Health while he holds his Double Barrel, and 2.80k, 521, 233, 13,194 Armor and 137,230 Health once he switches to his First Wave Vector 45 ACP. The Vector's card carries 23 more Toughness and 18 more Engineering than the shotgun's, and an Armor +23.05% roll: those land on the sheet only while it's the gun out. So compare loadouts with the same weapon in hand, and remember that a defensive roll on your second gun only shows on the sheet while you hold that gun.
+
+![SannoNYC's loadout stats in The Division Resurgence while he holds his Double Barrel shotgun: Power Score 26.32k, Firepower 2.68k, Toughness 498, Engineering 215, DPS 483.31k, Armor 11,614, Health 136,148](/images/guides/division-resurgence-stats-sheet-double-barrel-in-hand.webp "Double Barrel in hand: 11,614 Armor, 136,148 Health.")
+![The same loadout while he holds his First Wave Vector 45 ACP: Power Score 26.32k, Firepower 2.80k, Toughness 521, Engineering 233, DPS 450.59k, Armor 13,194, Health 137,230](/images/guides/division-resurgence-stats-sheet-vector-in-hand.webp "Vector in hand: 13,194 Armor, 137,230 Health. Frames from his video.")
+
 By what they do, the stats fall into three groups:
 
 | Group | What's in it | Who should live here |
@@ -62,10 +67,10 @@ By what they do, the stats fall into three groups:
 
 - **Multi-Shot Chance:** when it triggers, a bullet "actually hits the enemy 2 times instead of 1," as TikTokAndy puts it. Skill Multi-Shot Chance is the skill-side version; TikTokAndy only explained the weapon one.
 - **Skill Intensity:** makes a skill's effects stronger, its healing and buffs included, not just its damage. TikTokAndy's Aegis healer leans on it for that reason.
-- **Skill Duration vs Cooldown Recovery:** AgentHuntzman's "breaking point": once a skill lasts longer than its cooldown, you have permanent uptime, and more cooldown recovery becomes less valuable. Our [hidden mechanics guide](/guides/hidden-mechanics-explained/) has the full explanation.
+- **Skill Duration vs Cooldown Recovery:** AgentHuntzman's "breaking point": once a skill lasts longer than its cooldown, you have permanent uptime, and more cooldown recovery becomes less valuable. Our [hidden mechanics guide](/guides/hidden-mechanics-explained/) has the full explanation. On a gear card, Skill Cooldown Recovery shows with a minus sign (SannoNYC's Combat Mask "Cete" reads -4.34%). That's the cut to your cooldowns, not a penalty: the game describes it as "the extent to which Skill Cooldown is reduced."
 - **Signature Ability Charge Efficiency:** how fast your specialization's signature ability (the "super") fills.
 - **Healing Intensity vs Received Healing:** Healing Intensity boosts the heals you give; Received Healing boosts the heals you get, your own included. AgentHuntzman tested Received Healing on his medic in his May video, and his heals jumped from about 3,400 to about 5,000.
-- **All Weapon Damage vs damage types:** since Season 2 Phase 1, weapons no longer roll Blast, Shredding or Piercing damage bonuses. Ubisoft replaced them "in favor of All Weapon Damage or All Skill Damage" because a damage-type bonus on a gun of another type "didn't bring any benefits and was frustrating."
+- **All Weapon Damage vs damage types:** since Season 2 Phase 1, weapons no longer roll Blast, Shredding or Piercing damage bonuses. Ubisoft replaced them "in favor of All Weapon Damage or All Skill Damage" because a damage-type bonus on a gun of another type "didn't bring any benefits and was frustrating." A weapon can still show one, though: SannoNYC's level 50 Double Barrel reads Weapon Blast Damage +7.23%, so check your own guns' cards rather than assume.
 
 ## Health, Armor and the 80% cap
 
@@ -116,6 +121,8 @@ The best evidence is the game's own recalibration preview, which lists a weapon'
 | Unflinching (body armor) | 300% of Toughness | 420% (TikTokAndy's "Big Drum" Body Armor, November 14) | 1.4x |
 | Suppressive Fire (body armor) | +18% Magazine Size, +6% Rate of Fire | +25%, +8.40% (TikTokAndy; a teammate's card in his November 14 run reads the same) | about 1.4x |
 | Inspiration (backpack) | +30% Rate of Fire when Skills are deployed | +42% (the game's blueprint screen, on GGReborn's All Hazards Nitro Backpack, October 31) | 1.4x |
+| Emergency Measures (backpack) | 50% Max Health below 20% Health | 70% (SannoNYC's All Hazards Nitro Backpack; the 30 second cooldown stays) | 1.4x |
+| Performer | +18% Weapon Damage within 20 m, -6% farther out | +25%, -8% (SannoNYC's First Wave Vector 45 ACP) | about 1.4x |
 | Siege | 37.50% Extra Health | about 52% (TikTokAndy) | about 1.4x |
 | Toymaker | +15% Skill Multi-Shot Chance | +21% (TikTokAndy) | 1.4x |
 | Still Alive | 30% of missing Health | 42% (TikTokAndy) | 1.4x |
@@ -139,7 +146,7 @@ OS Protocols grow two ways, and Ubisoft's own patch notes show the pattern for o
 - **Applied Demolition** (Season 1 Phase 3 buff): 43.2%, 51.84%, 60.48%, 69.12%, 77.76%, then 86.2% (as printed; the pattern says 86.4) of Skill Critical Damage.
 - **Dominating Presence** (Season 2 Phase 2): maximum scaling reduced to 35, 42, 49, 56, 63 and 70%.
 - **Recursive Treatment** on screen: TikTokAndy's copy with two of five upgrade diamonds reads +28% Skill Intensity on a +20% base, two steps of 4 (his October 10 video).
-- **Close Quarters Menace** on screen: GGReborn's level 50 card shows four of five upgrade diamonds and +27% on a 15% base, four steps of 3 (his October 31 video).
+- **Close Quarters Menace** on screen: GGReborn's level 50 card shows four of five upgrade diamonds and +27% on a 15% base, four steps of 3 (his October 31 video). SannoNYC's level 50 copy, with all five diamonds lit, reads +30%: the fifth step is 3 as well, and a fully upgraded talent lands on exactly double ([his Vanguard build video](https://www.youtube.com/watch?v=RVgOTMB4B8o)).
 - **Blitz Tactics** on screen: TikTokAndy's level 50 card shows three of five upgrade diamonds and +19.20% Incoming Healing on a 12% base, plus 12.80% Max Health on an 8% base, three steps each (his November 14 video). A teammate's copy in the same run, at two of five, reads +16.80%.
 
 **Levels (up to 50).** Creator readings say a protocol's percentage main stat doubles by level 50, and the on-screen ones in between fit a simple ladder: **+10% of the base every 5 levels**. That's our reading of the screenshots below, not a rule Ubisoft has published:
@@ -193,6 +200,7 @@ For browsing outside the game, our [database](/database/) collects gear sets, ta
 - Our [Muscular Nurse build](/builds/muscular-nurse-combat-medicine-build-nadie/) (Nadie's Precise Support II screenshots)
 - [TikTokAndy: Vanguard - Commando With A Lightweight M4 (YouTube, October 27, 2026)](https://www.youtube.com/watch?v=RYtZyN_0P0Y) (Precise Support II tooltip at 1:00, Explosive Round at level 45 at 6:47)
 - [GGReborn: BEST Vanguard DB Spamming Build! (YouTube, October 31, 2026)](https://www.youtube.com/watch?v=NBB6j05PvsE) (the Attributes screen; Close Quarters Menace and Assault Charge at level 50; Inspiration II)
+- [SannoNYC: The Division Resurgence Vanguard Build (YouTube)](https://www.youtube.com/watch?v=RVgOTMB4B8o) (the sheet changing with the gun in hand; Performer II and Emergency Measures II; Close Quarters Menace at five of five)
 - [@TheDivMobile: June 26, 2026 server hotfix](https://x.com/TheDivMobile/status/2070483985642197252) (80% damage reduction cap)
 - [Ubisoft Help Center: Patch Note, Season 1 Phase 3](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2521-patch-note---season-1-phase-3/) (Applied Demolition values)
 - [Ubisoft Help Center: Patch Note, Season 2 Phase 2](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2566-patch-note---season-2-phase-2/) (Strained, Dominating Presence)

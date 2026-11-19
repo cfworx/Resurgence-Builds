@@ -1172,6 +1172,46 @@
   "small": "/images/guides/division-resurgence-stats-explained-shooting-range-480.webp",
   "thumb": "/images/guides/division-resurgence-stats-explained-shooting-range-thumb.webp"
  },
+ "/images/guides/division-resurgence-stats-sheet-double-barrel-in-hand-1000.webp": {
+  "width": 1000,
+  "height": 636,
+  "srcset": [
+   [
+    480,
+    "/images/guides/division-resurgence-stats-sheet-double-barrel-in-hand-480.webp"
+   ],
+   [
+    800,
+    "/images/guides/division-resurgence-stats-sheet-double-barrel-in-hand-800.webp"
+   ],
+   [
+    1000,
+    "/images/guides/division-resurgence-stats-sheet-double-barrel-in-hand-1000.webp"
+   ]
+  ],
+  "small": "/images/guides/division-resurgence-stats-sheet-double-barrel-in-hand-480.webp",
+  "thumb": "/images/guides/division-resurgence-stats-sheet-double-barrel-in-hand-thumb.webp"
+ },
+ "/images/guides/division-resurgence-stats-sheet-vector-in-hand-1000.webp": {
+  "width": 1000,
+  "height": 636,
+  "srcset": [
+   [
+    480,
+    "/images/guides/division-resurgence-stats-sheet-vector-in-hand-480.webp"
+   ],
+   [
+    800,
+    "/images/guides/division-resurgence-stats-sheet-vector-in-hand-800.webp"
+   ],
+   [
+    1000,
+    "/images/guides/division-resurgence-stats-sheet-vector-in-hand-1000.webp"
+   ]
+  ],
+  "small": "/images/guides/division-resurgence-stats-sheet-vector-in-hand-480.webp",
+  "thumb": "/images/guides/division-resurgence-stats-sheet-vector-in-hand-thumb.webp"
+ },
  "/images/guides/division-resurgence-steam-pc-guide-hero.webp": {
   "width": 1200,
   "height": 634,

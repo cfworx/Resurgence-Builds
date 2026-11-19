@@ -325,7 +325,7 @@ const GEAR = [
 
         <section class="intel" id="statsPanel" aria-labelledby="statsTitle">
           <h2 class="pl-h" id="statsTitle">Stats</h2>
-          <p class="intel__hint">Set bonuses, OS stats, skill mod 2pc and your roll values. Talents aren't counted.</p>
+          <p class="intel__hint">Set bonuses, OS stats, skill mod 2pc and your roll values, with your primary in hand: the game only counts the gun you're holding, so your secondary's rolls are listed, not added. Talents aren't counted.</p>
           <div class="stat-list" id="statList"><p class="empty">Nothing to add up yet.</p></div>
         </section>
       </aside>
@@ -422,7 +422,7 @@ const GEAR = [
   </div>
 
   <script type="application/json" id="builder-data" set:html={dataPayload}></script>
-  <script is:inline src="/js/builder-v3-engine.js?v=14"></script>
+  <script is:inline src="/js/builder-v3-engine.js?v=15"></script>
   <script is:inline>
     // If the engine didn't start (blocked or failed to load), say so instead of showing dead buttons
     if (!document.getElementById('lab').hasAttribute('data-ready')) document.getElementById('labError').hidden = false;

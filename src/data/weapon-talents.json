@@ -244,7 +244,13 @@
     "id": "wt-34",
     "name": "Performer",
     "description": "Grants +18% Weapon Damage on enemies within 20 meters. Inflicts -6% Weapon Damage on enemies farther than 20 meters away.",
-    "verifiedInGame": "2026-10-28"
+    "verifiedInGame": "2026-10-28",
+    "upgradedName": "Performer II",
+    "upgradedDescription": "Grants +25% Weapon Damage on enemies within 20 meters. Inflicts -8% Weapon Damage on enemies farther than 20 meters away.",
+    "upgradedSource": {
+      "label": "SannoNYC's First Wave Vector 45 ACP in his Vanguard build video (YouTube, 0:46)",
+      "url": "https://www.youtube.com/watch?v=RVgOTMB4B8o&t=46s"
+    }
   },
   {
     "id": "wt-35",

@@ -505,8 +505,16 @@
   function computeStats(st) {
     const rows = new Map();
     const row = (stat) => {
-      if (!rows.has(stat)) rows.set(stat, { stat, pct: null, flat: null, unvalued: 0, sources: [] });
+      if (!rows.has(stat)) rows.set(stat, { stat, pct: null, flat: null, unvalued: 0, held: 0, sources: [] });
       return rows.get(stat);
+    };
+    /* Listed under the stat but not added: the game's sheet only counts the gun in your hands. */
+    const note = (stat, src, text) => {
+      const name = str(stat).trim();
+      if (!name) return;
+      const r = row(name);
+      r.held++;
+      r.sources.push({ src, text });
     };
     const add = (stat, part, src) => {
       const name = str(stat).trim();
@@ -537,11 +545,15 @@
         if (x.a) add(x.a, x.v == null ? null : { min: x.v, max: x.v, pct: true }, s.label);
       }
     }
+    /* Weapon rolls: the in-game sheet counts only the gun in your hands (Armor, Health and the
+       three core stats change when you switch), so the totals assume the primary is out and the
+       secondary's rolls are listed without being added. */
     st.w.forEach((w, i) => {
       const wp = getWeapon(w.id);
       if (!wp) return;
       for (const x of w.attrs) {
-        if (x.a) add(x.a, x.v == null ? null : { min: x.v, max: x.v, pct: true }, `${WEAPON_LABEL[i]}: ${wp.name}`);
+        if (x.a && i > 0) note(x.a, `${WEAPON_LABEL[i]}: ${wp.name}`, x.v == null ? 'No value entered, counts while in hand' : `${fmtRange(x.v, x.v, true)} while in hand`);
+        else if (x.a) add(x.a, x.v == null ? null : { min: x.v, max: x.v, pct: true }, `${WEAPON_LABEL[i]}: ${wp.name}`);
       }
     });
     const os = OSP.get(st.os);
@@ -974,7 +986,7 @@
       nodes.push(h('div', { class: 'stat-group' },
         h('h3', { class: 'stat-group__hd ' + catClass(c) }, c),
         rows.map((r) => {
-          const total = totalText(r);
+          const total = totalText(r) || (!r.unvalued && r.held ? 'Secondary only' : '');
           const extra = r.unvalued ? `${total ? '+' : ''}${r.unvalued} ${plural(r.unvalued, 'roll', 'rolls')}` : '';
           return h('details', { class: 'stat-row', 'data-stat': r.stat, open: open.has(r.stat) },
             h('summary', null,

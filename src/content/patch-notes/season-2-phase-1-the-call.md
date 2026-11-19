@@ -90,7 +90,7 @@ This is the change that quietly rewrites every build guide on the internet. Ubis
 
 > "It was previously possible to get Damage Type bonus attribute on a weapon of a different damage type, which didn't bring any benefits and was frustrating. As such, all damage type bonuses have been removed in favor of 'All Weapon Damage' or 'All Skill Damage'."
 
-In practice: Blast, Shredding and Piercing Weapon or Skill Damage were removed from the pool of bonus attributes for weapons. No more Piercing Damage rolls on a Blast gun. Damage types themselves still matter for enemy color bars, which our [damage types guide](/guides/damage-types-color-bar-weakness-guide/) covers. The notes describe the roll pool, so don't assume a weapon you already own was converted. Check its attributes in the Armory.
+In practice: Blast, Shredding and Piercing Weapon or Skill Damage were removed from the pool of bonus attributes for weapons. No more Piercing Damage rolls on a Blast gun. Damage types themselves still matter for enemy color bars, which our [damage types guide](/guides/damage-types-color-bar-weakness-guide/) covers. The notes describe the roll pool, so don't assume a weapon you already own was converted. Check its attributes in the Armory: in [SannoNYC's Vanguard build video](https://www.youtube.com/watch?v=RVgOTMB4B8o), his level 50 Double Barrel still reads Weapon Blast Damage +7.23%.
 
 ## Weapon mod rework
 
