@@ -46,7 +46,7 @@ Not at 40 yet? Our [beginner guide](/guides/division-resurgence-beginner-guide/)
 - **Tier 2 chances on dailies:** Weapon Kill quests reward weapons matching the quest's weapon type, and Main Mission quests reward random weapons and gear, both "with chances of T2 at level 40" (Season 2 Phase 2).
 - **No daily XP cap:** Phase 2 removed it "to support longer progression sessions."
 
-One unofficial extra: Died Again Gaming says XP past 40 fills a gauge that pays out a Field Proficiency Cache, with two items and some resources. His were T0 in June, and he didn't know whether they can roll T2. With the daily XP cap gone you'll open more of them, so let us know if one ever does.
+One more, in the game's own words. The Field Proficiency Caches item reads: "After you reach the max character level, gained Character XP will be converted into Field Proficiency. Increasing Field Proficiency can earn you Field Proficiency Caches that grant random equipment, mods, and materials as rewards." [GGReborn's inventory](https://www.youtube.com/watch?v=i85WYzmiTuw&t=145s) had 205 of them waiting. Died Again Gaming opened his in June: two items and some resources each, T0 at the time, and he didn't know whether they can roll T2. With the daily XP cap gone you'll open more of them, so let us know if one ever does.
 
 ## Your daily routine
 
@@ -83,7 +83,7 @@ From Ubisoft's Season 1 Phase 2, Season 2 Phase 1 and Season 2 Phase 2 notes:
 - **Weekly Rewards** include SHD Keys and Exclusive SHD Keys, and give more Classified Ops Pass XP than they used to.
 - **Weekly Quest** and **Elite Mission Challenge chest:** one random exotic mod each.
 - **Dark Zone vendor:** a random exotic mod crate for each exotic weapon every week (2,500 DZ Credits each), exotic weapons at 15,000 DZ Credits (down from 17,500), the Scorpio (added in Season 2 Phase 1) and a weekly Random Tactical Augmentation Module Crate (added in Season 1 Phase 2).
-- **Weekly Bounties:** new mission sets arrived with Season 2 Phase 1.
+- **Weekly Bounties:** new mission sets arrived with Season 2 Phase 1. The tab sits next to Map and Missions and lists three targets, each with its location and Possible Rewards, then a Main Target that opens at 3/3. On [GGReborn's screen](https://www.youtube.com/watch?v=i85WYzmiTuw&t=459s) every target showed a random OS Protocol (a blue tile on the three targets, a purple one on the Main Target), a T0 High-End gear piece and XP, and each had a Replay button once it was marked Eliminated.
 
 Creator layer: Oldfartsgaming buys the vendor's weekly upgrade materials every week, both purple items included, plus the maximum of everything else, even the green stuff. He says you'll need all of it. And the Weekly Bounty looks better than it did in April, when AgentHuntzman described a chance of gold: Died Again Gaming says the fourth boss's Key Rewards now guarantee a **gold OS Protocol**, so that's one a week. He calls it a really good change, and if it holds, we're not going to argue. His SHD Keys chase the same thing: back in July he recommended spending Exclusive SHD Keys only on the OS Protocol Sealed Cache, calling it one of the few routes to a gold outside the Weekly Bounty's Key Rewards.
 
@@ -184,11 +184,11 @@ GGReborn's other gear mistakes deserve a line each: judging gear by level and ra
 
 ## Rule 8: learn the missions you'll farm
 
-Some missions you'll run dozens of times, so a few creator notes go a long way. Most of these come from TikTokAndy's runs (the Lone Wolf notes add Ubisoft's patch notes, GGReborn's tests and a Died Again Gaming tip); the full routes are on the build pages linked below.
+Some missions you'll run dozens of times, so a few creator notes go a long way. Most of these come from TikTokAndy's runs (GGReborn and Demø2x add a run each, and the Lone Wolf notes add Ubisoft's patch notes, GGReborn's tests and a Died Again Gaming tip); the full routes are on the build pages linked below.
 
-### Chinatown (Heroic)
+### Chinatown Rescue (Heroic)
 
-TikTokAndy calls Chinatown the main mission you'll want to be able to solo, "because you're probably going to have to run this mission a lot." The payout he names: Superior Fabric, random T1 gear and weapon components to take your weapons to level 50. From his solo Heroic run:
+TikTokAndy calls Chinatown Rescue the main mission you'll want to be able to solo, "because you're probably going to have to run this mission a lot." The payout he names: Superior Fabric, random T1 gear and weapon components to take your weapons to level 50. From his solo Heroic run:
 
 - **Bring two damage types:** Piercing for most of the mission, Blast for the final boss.
 - **Kill the Grenadier first,** keep everything in front of you, and watch the minimap.
@@ -212,6 +212,17 @@ For the finale his two videos disagree: solo with a shotgun he fights from a noo
 ![The objective tracker in The Division Resurgence's Precious Cargo mission on Legendary: (9/10) Hold the Freemen off, with four bosses and their bars, Arthur "Exit Guy" King, Bert "RC" Lindstrom with a red bar, Kyrone "Sawbones" Small and Keith "Flashbulb" Donner](/images/guides/division-resurgence-precious-cargo-four-bosses.webp "The finale's four bosses on the tracker. Frame from GGReborn's video.")
 
 The bar colors give away their weaknesses: Bert "RC" Lindstrom's is red, Blast by our [color key](/guides/damage-types-color-bar-weakness-guide/), and the other three are blue, Arthur's a deeper shade than Kyrone's and Keith's. GGReborn's pair took Keith down first, then Bert, Arthur and Kyrone last. The scoreboard shows the split: the Vanguard dealt 253.38M damage and took 709.56K, while GGReborn's Aegis dealt 26.68M and took 4.39M, six times as much.
+
+### Take The Castle (Legendary)
+
+[Demø2x's four-player Legendary run](https://www.youtube.com/watch?v=qFG1it9DFBA) (10:23 on the clock, nobody downed) shows the mission's eight steps by name. You get into the Rikers' compound through an electronics store, where you open the rolling shutter. Then: secure the compound's main alley, open the main gate to let the JTF reinforcements in, hold off the Rikers reinforcements, find the JTF hostages (there's an ECHO to activate), clear the way to the "Freezer" and open its door, and **(7/8) Take down Ken Ito**.
+
+- **The game waits for stragglers before the boss.** On the way to Ken Ito the tracker switched to "Wait for the other agents" with a countdown (00:56 when it came up on his screen), and then the next area loaded.
+- **Ken Ito's bar has layers.** On the tracker it starts as a thin red strip on top of six blue segments. The red went first (red is Blast by our [color key](/guides/damage-types-color-bar-weakness-guide/)), then the segments, one at a time, until the fight was over.
+- **Know who you're visiting.** Jorge Navarro's briefing on the way in describes the Rikers' leader as "some slick psycho who never says a word more than necessary." So don't expect a monologue.
+- **It ends like Precious Cargo.** Once the room is clear after Ken Ito, step 8, "Exit the Rikers' compound," comes up with "Mission Completed" already on screen.
+
+The result screen is worth a look if you play support. Next to Damage Dealt and Damage Taken it has an **Assists** tab with Healing, Defense Buff and Rescues. Demø2x's Aegis Operations build logged 30.84M of Defense Buff against 123.08K of healing, while nobody else on the team reached 1M. His loadout from that run is on our [Triple Threat Aegis Hybrid](/builds/triple-threat-aegis-hybrid-tech-operator-build-demo2x/) page.
 
 ### Lone Wolf Challenge
 
@@ -255,6 +266,8 @@ The Heroic Hostile Nest with a named boss is the mod farm in our [mod farming gu
 - [TikTokAndy: Lone Star Stage 20 Complete (YouTube, October 2, 2026)](https://www.youtube.com/watch?v=9nQ-jGnc7gU)
 - [TikTokAndy: Precious Cargo Legendary Difficulty But I'm Solo (YouTube, October 6, 2026)](https://www.youtube.com/watch?v=D3yrRSUwhq0)
 - [GGReborn: Aegis + Vanguard, The BEST Duo Combo for Legendary (YouTube)](https://www.youtube.com/watch?v=niOtrLdkPrI) (a two-player Legendary Precious Cargo: its steps, the four bosses, the scoreboard; the tracker picture is a frame from it)
+- [Demø2x: Triple Threat Aegis Hybrid build (YouTube)](https://www.youtube.com/watch?v=qFG1it9DFBA) (a four-player Legendary Take The Castle: its steps, Ken Ito's bar, the Assists tab)
+- [GGReborn: COMPLETE Beginner's Guide, 7 Things You MUST Understand (YouTube)](https://www.youtube.com/watch?v=i85WYzmiTuw&t=145s) (the Field Proficiency Caches item text; the Weekly Bounties tab at 7:39)
 - [TikTokAndy: Most Overpowered Team Healer Build, Striker + Aegis (YouTube, October 10, 2026)](https://www.youtube.com/watch?v=VHKfmW4BtEk)
 - [GGReborn: How Stats REALLY Work, Testing 3 Builds (YouTube, October 22, 2026)](https://www.youtube.com/watch?v=f1q44KbdS6g)
 - [GGReborn: Which OS Protocol Is BEST? Testing 4 Protocols (YouTube, October 23, 2026)](https://www.youtube.com/watch?v=Kz9YlTUl_1s)

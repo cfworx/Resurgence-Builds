@@ -88,6 +88,8 @@ const tierPhrase = tiers.length === 3 ? 'T0, T1 and T2 gear' : tiers.length === 
 const pieceCount = tierPieces.reduce((n, t) => n + t.pieces.length, 0);
 const countWord = (n: number) => ['no', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten'][n] ?? String(n);
 const dropIntro = `${set.name} rolls on ${tierPhrase}. The Armory shows one piece per slot${tiers.length > 1 ? ' at each tier' : ''} that can carry it, ${countWord(pieceCount)} in all. The same pieces can also come with ${listJoin(sisterSets)}, so a drop of one of them isn't always ${set.name}.`;
+// How to tell which set a dropped copy carries: the tag in front of its name on the item card (two creators' cards of the same holster).
+const tagTip = `The item card tells you which set a copy carries, with a tag in front of the piece's name: GGReborn's Jaivardhan Thigh Rig reads "Phalanx" for Phalanx Attack, and Demø2x's reads "Cycle" for Fire Cycle.`;
 const LATER_TIERS = 'T2 comes at level 40 from daily quests, Elite missions and their weekly chest, and Legendary runs.';
 const farmTip = tiers[0] === 'T0'
   ? `T0 pieces come from the story, but AgentHuntzman's advice is to build your first real set on T1, which starts dropping around Challenging difficulty and becomes the farm on Heroic. ${LATER_TIERS}`
@@ -202,7 +204,7 @@ const bonuses = [
       <div class="gearset-section">
         <h2 class="gearset-section__title">Where It Drops</h2>
         <div class="gearset-prose">
-          <p>{dropIntro}</p>
+          <p>{dropIntro} {tagTip}</p>
           <p>{farmTip} Our <a href="/guides/division-resurgence-gear-farming-guide/">gear farming guide</a> has the details.</p>
         </div>
         <div class="gearset-tiers">

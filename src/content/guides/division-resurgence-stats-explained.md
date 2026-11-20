@@ -40,6 +40,8 @@ Every gear piece carries Firepower, Toughness and Engineering values in differen
 | **Toughness** | Health and survivability (and, on a Toughness medic, healing) | Bulwark Juggernaut, Combat Medicine | |
 | **Engineering** | Skill damage, healing and buffs | Demolitionist HE Munitions, Tech Operator, Tactical Pharma, Vanguard Recon | "electronics," the same habit |
 
+The game sums up all three in its Core Attributes popup on the loadout screen: "Firepower increases the damage of equipped weapons." "Toughness increases Max Health." "Engineering increases the intensity of Skill effects (damage, healing, etc.)." [GGReborn's beginner guide](https://www.youtube.com/watch?v=i85WYzmiTuw&t=97s) shows it, and tapping the Firepower number on his shotgun's card brings up the same sentence.
+
 The game's own tooltips use Firepower, Toughness and Engineering: Explosive Round's explosion deals "2000% Firepower" (TikTokAndy reads it out), and Collateral Damage's talent text reads "3000% Engineering." A few things creators have measured:
 
 - **Engineering feeds buffs, not just damage.** AgentHuntzman's Recon build shows Smart Cover granting allies weapon damage equal to 24% of his Engineering, which is why support Vanguards stack it.
@@ -123,10 +125,11 @@ The best evidence is the game's own recalibration preview, which lists a weapon'
 | Inspiration (backpack) | +30% Rate of Fire when Skills are deployed | +42% (the game's blueprint screen, on GGReborn's All Hazards Nitro Backpack, October 31) | 1.4x |
 | Emergency Measures (backpack) | 50% Max Health below 20% Health | 70% (SannoNYC's All Hazards Nitro Backpack; the 30 second cooldown stays) | 1.4x |
 | Performer | +18% Weapon Damage within 20 m, -6% farther out | +25%, -8% (SannoNYC's First Wave Vector 45 ACP) | about 1.4x |
+| Calm and Collected | +30% Reload Speed behind cover | +42% (Demø2x's Scorpio) | 1.4x |
 | Siege | 37.50% Extra Health | about 52% (TikTokAndy) | about 1.4x |
 | Toymaker | +15% Skill Multi-Shot Chance | +21% (TikTokAndy) | 1.4x |
 | Still Alive | 30% of missing Health | 42% (TikTokAndy) | 1.4x |
-| Torrential Downpour | +22.50% Engineering | +31.50% (TikTokAndy) | 1.4x |
+| Torrential Downpour | +22.50% Engineering | +31.50% (TikTokAndy; Demø2x's Modified USC and GGReborn's First Wave Vector 45 ACP read the same) | 1.4x |
 | Slaughter Fortitude | +12% Armor per stack | +18% (both ranks on the preview) | 1.5x |
 | Steady Handed | +1.20% Accuracy and Stability per stack | +1.80% (both ranks on the preview) | 1.5x |
 | Slaughter Healing | +7% Incoming Healing per stack | +10.50% (the preview) | 1.5x |
@@ -147,6 +150,7 @@ OS Protocols grow two ways, and Ubisoft's own patch notes show the pattern for o
 - **Dominating Presence** (Season 2 Phase 2): maximum scaling reduced to 35, 42, 49, 56, 63 and 70%.
 - **Recursive Treatment** on screen: TikTokAndy's copy with two of five upgrade diamonds reads +28% Skill Intensity on a +20% base, two steps of 4 (his October 10 video).
 - **Close Quarters Menace** on screen: GGReborn's level 50 card shows four of five upgrade diamonds and +27% on a 15% base, four steps of 3 (his October 31 video). SannoNYC's level 50 copy, with all five diamonds lit, reads +30%: the fifth step is 3 as well, and a fully upgraded talent lands on exactly double ([his Vanguard build video](https://www.youtube.com/watch?v=RVgOTMB4B8o)).
+- **Collateral Damage** on screen: [Demø2x's level 50 copy](https://www.youtube.com/watch?v=qFG1it9DFBA&t=680s), with one of five upgrade diamonds, reads 3600% Engineering on a 3000% base, and [GGReborn's](https://www.youtube.com/watch?v=i85WYzmiTuw&t=385s), with three, reads 4800%: steps of 600.
 - **Blitz Tactics** on screen: TikTokAndy's level 50 card shows three of five upgrade diamonds and +19.20% Incoming Healing on a 12% base, plus 12.80% Max Health on an 8% base, three steps each (his November 14 video). A teammate's copy in the same run, at two of five, reads +16.80%.
 
 **Levels (up to 50).** Creator readings say a protocol's percentage main stat doubles by level 50, and the on-screen ones in between fit a simple ladder: **+10% of the base every 5 levels**. That's our reading of the screenshots below, not a rule Ubisoft has published:
@@ -160,8 +164,12 @@ OS Protocols grow two ways, and Ubisoft's own patch notes show the pattern for o
 | Close Quarters Menace | +18% Firepower | 36% at level 50 (on screen) | 2x | GGReborn, October 31 |
 | Assault Charge | +18% Weapon Critical Hit Chance | 36% at level 50 (on screen) | 2x | GGReborn, October 31 |
 | Blitz Tactics | +18% Toughness | 36% at level 50 (on screen) | 2x | TikTokAndy, November 14 |
+| Collateral Damage | +22.50% Engineering | 45% at level 50 (on screen) | 2x | Demø2x and GGReborn |
+| Relentless Assault | +30% Skill Critical Damage | 60% at level 50 (on screen) | 2x | GGReborn |
+| Tactical Persistence | +24% Skill Critical Damage | 48% at level 50 (on screen) | 2x | GGReborn |
+| Brains Over Brawn | +10.80% Skill Critical Chance | 21.60% at level 50 (on screen) | 2x | GGReborn |
 
-The flat attributes climb much faster than the percentage: the same level 42 Recursive Treatment shows +285 Engineering against the +77 in our level 1 data, about 3.7 times, and AgentHuntzman's level 50 Pressing Matter shows +358 Engineering, about 4.6 times. GGReborn's level 50 protocols land on the same 4.6: Close Quarters Menace shows +358 Firepower (+77 here) and Assault Charge +447 (+97), and TikTokAndy's level 50 Blitz Tactics reads +358 Toughness, +286 All Weapon Damage and +9,402 Health, the same three numbers as GGReborn's Close Quarters Menace.
+The flat attributes climb much faster than the percentage: the same level 42 Recursive Treatment shows +285 Engineering against the +77 in our level 1 data, about 3.7 times, and AgentHuntzman's level 50 Pressing Matter shows +358 Engineering, about 4.6 times. GGReborn's level 50 protocols land on the same 4.6: Close Quarters Menace shows +358 Firepower (+77 here) and Assault Charge +447 (+97), and TikTokAndy's level 50 Blitz Tactics reads +358 Toughness, +286 All Weapon Damage and +9,402 Health, the same three numbers as GGReborn's Close Quarters Menace. His level 50 Brains Over Brawn, a Specialized protocol, reads +268, +215 and +7,052 against +58, +46 and +1,532 at level 1, so the 4.6 holds at every rarity we've seen.
 
 So when you compare two protocols, compare them at the same level and upgrade step, or you're comparing a puppy to a dog. The [OS Protocol database](/database/os-protocols/) lists base values; the [tier list](/tier-list/os-protocols/) shows how players rank them.
 
@@ -200,6 +208,8 @@ For browsing outside the game, our [database](/database/) collects gear sets, ta
 - Our [Muscular Nurse build](/builds/muscular-nurse-combat-medicine-build-nadie/) (Nadie's Precise Support II screenshots)
 - [TikTokAndy: Vanguard - Commando With A Lightweight M4 (YouTube, October 27, 2026)](https://www.youtube.com/watch?v=RYtZyN_0P0Y) (Precise Support II tooltip at 1:00, Explosive Round at level 45 at 6:47)
 - [GGReborn: BEST Vanguard DB Spamming Build! (YouTube, October 31, 2026)](https://www.youtube.com/watch?v=NBB6j05PvsE) (the Attributes screen; Close Quarters Menace and Assault Charge at level 50; Inspiration II)
+- [GGReborn: COMPLETE Beginner's Guide, 7 Things You MUST Understand (YouTube)](https://www.youtube.com/watch?v=i85WYzmiTuw) (the Core Attributes popup at 1:37; seven of his OS Protocols from 6:25)
+- [Demø2x: Triple Threat Aegis Hybrid build (YouTube)](https://www.youtube.com/watch?v=qFG1it9DFBA) (Calm and Collected II at 12:10, Collateral Damage at level 50 at 11:20)
 - [SannoNYC: The Division Resurgence Vanguard Build (YouTube)](https://www.youtube.com/watch?v=RVgOTMB4B8o) (the sheet changing with the gun in hand; Performer II and Emergency Measures II; Close Quarters Menace at five of five)
 - [@TheDivMobile: June 26, 2026 server hotfix](https://x.com/TheDivMobile/status/2070483985642197252) (80% damage reduction cap)
 - [Ubisoft Help Center: Patch Note, Season 1 Phase 3](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2521-patch-note---season-1-phase-3/) (Applied Demolition values)

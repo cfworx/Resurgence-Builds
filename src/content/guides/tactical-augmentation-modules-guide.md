@@ -34,7 +34,9 @@ This guide sorts what Ubisoft has actually said (patch notes, its drop-rate tabl
 
 Ubisoft described the system before launch, in its June 2023 preview: the Armory "works like a catalog of all the weapons and gear in the game," and it lets you use Tactical Augmentation Modules "to improve a specific model of weapon." The key line: "any upgrade you apply here will apply to all of the, say, M700 marksman rifles you find or loot."
 
-That's the part that changes how you farm. A module doesn't upgrade one lucky drop. It upgrades the **model**, so when a better-rolled copy of the same gun drops later, the upgrade is already there. We can't find a 2026 post that restates the rule, and nothing creators have shown since contradicts it. When TikTokAndy slotted his first gear module in September, he wondered aloud whether it applied to all his Fury Strike chests, and guessed that it did.
+That's the part that changes how you farm. A module doesn't upgrade one lucky drop. It upgrades the **model**, so when a better-rolled copy of the same gun drops later, the upgrade is already there.
+
+The game says the same on the modules themselves. An exotic's module, The Bighorn's for one, reads: "You can enhance your fighting abilities with all the copies of this Exotic Weapon by slotting its corresponding Tactical Augmentation Module(s) into its ISAC entry in the Armory menu." Gear modules are named for a slot, and a **Knee Pads Tactical Augmentation Module** reads: "You can enhance your fighting abilities with all the copies of a specific Gear piece of this type by slotting its corresponding Tactical Augmentation Module(s) into its ISAC entry in the Armory menu. This module can be used on any Gear piece of Knee Pads type." So a gear module fits any piece in its slot, you choose the piece when you slot it, and every copy of that piece gets the upgrade. Both cards are in [GGReborn's inventory](https://www.youtube.com/watch?v=i85WYzmiTuw&t=513s). That answers what TikTokAndy wondered aloud when he slotted his first gear module in September: whether it applied to all his Fury Strike chests. To every copy of that chest piece, yes.
 
 There are three kinds, going by Ubisoft's patch notes:
 
@@ -100,6 +102,8 @@ Two patterns stand out. First, each model has its own track: on his Aegis healer
 | **Exotic Sealed Caches** | Every exotic's module at **1.43%** per cache, in the Tier A pool | Official (Help Center drop table) |
 | **Encrypted Data store** | An **Exotic TAM Selection Cache** for 1,200 Encrypted Data, where you pick the gun | Creator reading (Died Again Gaming, June 24) |
 | **Dark Zone quests** | Tactical Augmentation rewards: patch 1.1.2.2 fixed the Shotgun module from the "Ringleaders" mission not being granted, and patch 1.2.1 still listed another Dark Zone quest's module as unclaimable | Official (notes) |
+
+The game's own **Find** button agrees on where gear modules come from. On that Knee Pads module it lists four places: the Dark Zone Vendor, the Clan Vendor, Sealed Cache and the Encrypted Store ([GGReborn, at 8:37](https://www.youtube.com/watch?v=i85WYzmiTuw&t=517s)).
 
 ### What a clan vendor module costs
 
@@ -173,3 +177,4 @@ Clan credits are the slowest but steadiest route, which is why GGReborn put "not
 - [TikTokAndy: Vanguard - Commando With A Lightweight M4 (YouTube, October 27, 2026)](https://www.youtube.com/watch?v=RYtZyN_0P0Y)
 - [GGReborn: Why Your Division Resurgence Gear Build Is Failing You (YouTube, September 29, 2026)](https://www.youtube.com/watch?v=wFqepeXdCTs)
 - [GGReborn: This Build With Meditation II, Solo Legendary Test (YouTube, October 28, 2026)](https://www.youtube.com/watch?v=AUfSHF6gYjg) (TAM stage counts on his mask and Lightweight M4)
+- [GGReborn: COMPLETE Beginner's Guide, 7 Things You MUST Understand (YouTube)](https://www.youtube.com/watch?v=i85WYzmiTuw&t=513s) (the module item cards and the Find list)

@@ -26,3 +26,19 @@ picture: `/images/*` is cached for 30 days.
 
 Build loadout screenshots from creators' YouTube videos are captured by the owner (we can't download YouTube); ask for
 the link and timestamp.
+
+## Frames cut from video files the owner sends
+
+When the owner sends a creator's video as a file, frames can be cut from it directly. They go into `masters/` like any
+other picture. What was done to each, so it can be redone:
+
+| Master | Video file | Where in it | What was done |
+|---|---|---|---|
+| `builds/division-resurgence-triple-threat-aegis-hybrid-build-demo2x-loadout` | `qFG1it9DFBA` | 10:38.8 | Black side bars cropped (x 134 to 1786 of 1920). The screen recorder's grey touch dot (centre 960, 392, radius 20) painted out with OpenCV inpainting; nothing else changed. |
+| `builds/division-resurgence-demo2x-hazardous-area-combat-enhancer-teamfight-sets` | `qFG1it9DFBA` | 10:49.3, 10:55.5 and 11:02.7 | The "Combo Set Bonus" block of three skill cards, stacked. Each is from the last frame before the video's red circle is drawn over it. The touch dot is left in. |
+| `builds/division-resurgence-unflinching-bulwark-build-tiktokandy-loadout`, `builds/division-resurgence-tiktokandy-big-drum-unflinching-ii-card` | `4GoB017732U` | see the build page's commit | Cropped to the game screen (no webcam). |
+| `guides/division-resurgence-stats-sheet-double-barrel-in-hand`, `guides/division-resurgence-stats-sheet-vector-in-hand` | `RVgOTMB4B8o` | see the stats guide's commit | Cropped to the stats panel. |
+| `guides/division-resurgence-precious-cargo-four-bosses` | `niOtrLdkPrI` | 10:56 | Cropped to the objective tracker. |
+
+Rules for these: never a frame with another player's name readable in it (crop it out or pick another frame), never a
+creator's logo, webcam or caption, and never paint a logo or watermark out: pick a clean frame or skip the picture.

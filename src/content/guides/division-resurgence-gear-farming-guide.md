@@ -81,13 +81,13 @@ According to AgentHuntzman, most repeatable missions lean toward certain weapons
 | Water is Life | Sniper and marksman rifles, backpacks |
 | On The Radio | Shotguns, holsters |
 | Precious Cargo | SMGs, masks |
-| Take the Castle | Random gear |
+| Take The Castle | Random gear |
 
 Three things to know before you queue:
 
 - **It's a lean, not a lock.** Other slots still drop from every mission, and longer missions give you more chances at extra pieces, he says.
 - **Start with the backpack and the body armor.** In his opinion they matter most early, because they carry the talents.
-- **Take the Castle's reward list showed a T2 key item in June** that he never got in about 40 runs, so he suspected a display bug. No patch note mentions it either way.
+- **Take The Castle's reward list showed a T2 key item in June** that he never got in about 40 runs, so he suspected a display bug. No patch note mentions it either way.
 
 TikTokAndy adds the payout that makes Chinatown worth repeating on Heroic: Superior Fabric, random T1 gear and the weapon components you need to take weapons to level 50. His solo route is on our [Any-Weapon Commando](/builds/any-weapon-commando-beginner-vanguard-build-tiktokandy/) page.
 
@@ -103,7 +103,7 @@ Season 2 Phase 2 helps here too: Ubisoft increased the weapon and gear rewards f
 | Main Mission daily quests | Official (Season 2 Phase 2): random weapons and gear, same T2 chance at level 40 |
 | Elite missions | "The best place" for T2, per AgentHuntzman. TikTokAndy says the week's Elite Legendary mission drops T2 guns "quite regularly" |
 | Elite Mission Challenge chest (weekly) | Official: High-End Gear and Weapon Selection Crates (Season 1 Phase 3 notes), plus one random exotic mod since Season 2 Phase 1. AgentHuntzman and Died Again Gaming both said in June that you can claim it twice a week by finishing the mission twice, and Died Again Gaming says each chest holds two T2 pieces, so that's four a week. He also says the Elite reward pool is T2 only, and that regular enemies in the mission can drop it too, not just the bosses |
-| Legendary missions | TikTokAndy's solo Legendary Precious Cargo run ended with "a bunch of T2 gear". GGReborn's four-player Legendary On The Radio run on November 12 shows five T2 cards on its reward screen: knee pads, body armor, an LMG, a rifle and one more gun. TikTokAndy's four-player run of the same mission on November 14 shows ten level 40 T2 cards, six High-End and four Superior, from gear in five slots to two guns. GGReborn's two-player Legendary Precious Cargo shows a single one, a level 40 T2 backpack, next to four stacks of materials, so the haul swings a lot from run to run |
+| Legendary missions | TikTokAndy's solo Legendary Precious Cargo run ended with "a bunch of T2 gear". GGReborn's four-player Legendary On The Radio run on November 12 shows five T2 cards on its reward screen: knee pads, body armor, an LMG, a rifle and one more gun. TikTokAndy's four-player run of the same mission on November 14 shows ten level 40 T2 cards, six High-End and four Superior, from gear in five slots to two guns. GGReborn's two-player Legendary Precious Cargo shows a single one, a level 40 T2 backpack, next to four stacks of materials, so the haul swings a lot from run to run. [Demø2x's four-player Legendary Take The Castle](https://www.youtube.com/watch?v=qFG1it9DFBA&t=622s) paid five level 40 T2 cards: a holster, knee pads and three guns |
 | Lone Wolf Challenge | One-time floor rewards. Died Again Gaming spotted random T2 gear among them in June and again on his October 25 stream. Officially the challenge refreshes every three weeks ([patch 1.2.1](/patch-notes/patch-1-2-1/)), so it's a top-up, not a farm |
 | Dark Zone Heroic landmarks | Rare. AgentHuntzman says the Q Building, the Heroic landmark, gives the most, and by June he'd had two T2 pieces from it. Died Again Gaming (June) calls it a very small chance |
 | Dark Zone enemy leaders | AgentHuntzman calls the Heroic enemy leader and his cache the best Dark Zone farm for it |
@@ -184,6 +184,7 @@ Where to get them: Heroic Hostile Nests. His trick is to run the nest again as s
 - [GGReborn: AEGIS The ULTIMATE TANK (YouTube, November 12, 2026)](https://www.youtube.com/watch?v=m6RW59IND00) (a Legendary On The Radio run and its rewards)
 - [GGReborn: Aegis + Vanguard, The BEST Duo Combo for Legendary (YouTube)](https://www.youtube.com/watch?v=niOtrLdkPrI&t=743s) (a two-player Legendary Precious Cargo run and its rewards)
 - [TikTokAndy: Testing "Unflinching II" Talent With Bulwark! (YouTube, November 14, 2026)](https://www.youtube.com/watch?v=4GoB017732U) (a Legendary On The Radio run and its rewards, at 17:41)
+- [Demø2x: Triple Threat Aegis Hybrid build (YouTube)](https://www.youtube.com/watch?v=qFG1it9DFBA&t=622s) (a four-player Legendary Take The Castle run and its rewards)
 - [TikTokAndy: My First Time In The Level 40 Dark Zone (YouTube, September 16, 2026)](https://www.youtube.com/watch?v=lBIQT-SeBZg)
 - [Oldfartsgaming: 7 Things I Wish I Knew Before Endgame (YouTube, October 11, 2026)](https://www.youtube.com/watch?v=7JtJCeEE8NI)
 - [GGReborn: Why Your Division Resurgence Gear Build Is Failing You (YouTube, September 29, 2026)](https://www.youtube.com/watch?v=wFqepeXdCTs)

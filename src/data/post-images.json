@@ -113,6 +113,18 @@
   "small": "/images/builds/division-resurgence-bighorn-double-barrel-vanguard-build-ggreborn-loadout-480.webp",
   "thumb": "/images/builds/division-resurgence-bighorn-double-barrel-vanguard-build-ggreborn-loadout-thumb.webp"
  },
+ "/images/builds/division-resurgence-demo2x-hazardous-area-combat-enhancer-teamfight-sets-418.webp": {
+  "width": 418,
+  "height": 806,
+  "srcset": [
+   [
+    418,
+    "/images/builds/division-resurgence-demo2x-hazardous-area-combat-enhancer-teamfight-sets-418.webp"
+   ]
+  ],
+  "small": "/images/builds/division-resurgence-demo2x-hazardous-area-combat-enhancer-teamfight-sets-418.webp",
+  "thumb": "/images/builds/division-resurgence-demo2x-hazardous-area-combat-enhancer-teamfight-sets-thumb.webp"
+ },
  "/images/builds/division-resurgence-four-shell-double-barrel-vanguard-build-ggreborn-loadout-1200.webp": {
   "width": 1200,
   "height": 542,
@@ -372,6 +384,30 @@
   ],
   "small": "/images/builds/division-resurgence-tiktokandy-big-drum-unflinching-ii-card-480.webp",
   "thumb": "/images/builds/division-resurgence-tiktokandy-big-drum-unflinching-ii-card-thumb.webp"
+ },
+ "/images/builds/division-resurgence-triple-threat-aegis-hybrid-build-demo2x-loadout-1200.webp": {
+  "width": 1200,
+  "height": 569,
+  "srcset": [
+   [
+    480,
+    "/images/builds/division-resurgence-triple-threat-aegis-hybrid-build-demo2x-loadout-480.webp"
+   ],
+   [
+    800,
+    "/images/builds/division-resurgence-triple-threat-aegis-hybrid-build-demo2x-loadout-800.webp"
+   ],
+   [
+    1200,
+    "/images/builds/division-resurgence-triple-threat-aegis-hybrid-build-demo2x-loadout-1200.webp"
+   ],
+   [
+    1600,
+    "/images/builds/division-resurgence-triple-threat-aegis-hybrid-build-demo2x-loadout-1600.webp"
+   ]
+  ],
+  "small": "/images/builds/division-resurgence-triple-threat-aegis-hybrid-build-demo2x-loadout-480.webp",
+  "thumb": "/images/builds/division-resurgence-triple-threat-aegis-hybrid-build-demo2x-loadout-thumb.webp"
  },
  "/images/builds/division-resurgence-unflinching-bulwark-build-tiktokandy-loadout-1200.webp": {
   "width": 1200,

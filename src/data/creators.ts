@@ -26,6 +26,7 @@ export const CREATORS: Creator[] = [
   { slug: 'pve-enjoyer', name: 'PVE Enjoyer', where: 'YouTube', href: 'https://www.youtube.com/@PVE-Enjoyer', linkLabel: 'PVE Enjoyer on YouTube', checked: '2026-11-15' },
   { slug: 'tampishach', name: 'Tampishach', where: 'YouTube video' },
   { slug: 'ltfoe', name: 'LtFoe', where: 'Sent to us directly' },
+  { slug: 'demo2x', name: 'Demø2x', where: 'YouTube' },
 ];
 
 /** The creator name a build's author line credits, or null for our own builds. */

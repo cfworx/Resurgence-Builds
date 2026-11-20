@@ -1,7 +1,7 @@
 {
   "_comment": "Per-combo editorial content written by RapidF5. Keyed by combo slug. Items present here render unique Field Notes / Meta Builds / Patch History sections and become indexable once their unique text clears the thin-content threshold. Patch history entries must be sourced from published patch notes.",
   "hazardous-area": {
-    "usageNotes": "Hazardous Area turns the Defender Drone from a bodyguard into a slow cooker: with the 3-piece equipped, everything inside the drone's radius takes damage every second. Glass-cannon Tech Op builds love it because the drone is already glued to you for the damage-soak, and the mod set makes your personal safety bubble double as a DoT aura, so kiting melee rushers through your own drone radius becomes a damage rotation. The 2-piece Engineering roll is exactly what a skill build wants anyway, so nothing in the set feels like a tax. The aura also solves the Defender Drone's oldest complaint: that a defensive skill contributes nothing to clear speed. With this set, tanking mode and farming mode are the same loadout, which is exactly what a two-slot mobile player wants.",
+    "usageNotes": "Hazardous Area turns the Defender Drone from a bodyguard into a slow cooker: with the 3-piece equipped, everything inside the drone's radius takes damage every second. Glass-cannon Tech Op builds love it because the drone can stay on you for the damage-soak (its card says it \"can either follow the Agent or go to a specific location\"), and the mod set makes your personal safety bubble double as a DoT aura, so kiting melee rushers through your own drone radius becomes a damage rotation. The 2-piece Engineering roll is exactly what a skill build wants anyway, so nothing in the set feels like a tax. The aura also solves the Defender Drone's oldest complaint: that a defensive skill contributes nothing to clear speed. With this set, tanking mode and farming mode are the same loadout, which is exactly what a two-slot mobile player wants.",
     "metaBuilds": [
       {
         "title": "The Double Agent Glass Cannon Tech Op",
@@ -10,6 +10,10 @@
       {
         "title": "Tech Aegis 237k DPS Skill Crit",
         "url": "/builds/tech-aegis-engineering-build-tampishach/"
+      },
+      {
+        "title": "Triple Threat Aegis Hybrid",
+        "url": "/builds/triple-threat-aegis-hybrid-tech-operator-build-demo2x/"
       }
     ]
   },

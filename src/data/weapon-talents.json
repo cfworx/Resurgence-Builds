@@ -86,7 +86,13 @@
     "id": "wt-11",
     "name": "Calm and Collected",
     "description": "Grants +30% Reload Speed while behind cover.",
-    "verifiedInGame": "2026-10-28"
+    "verifiedInGame": "2026-10-28",
+    "upgradedName": "Calm and Collected II",
+    "upgradedDescription": "Grants +42% Reload Speed while behind cover.",
+    "upgradedSource": {
+      "label": "Demø2x's Scorpio card in his Aegis build video (YouTube, 12:10)",
+      "url": "https://www.youtube.com/watch?v=qFG1it9DFBA&t=730s"
+    }
   },
   {
     "id": "wt-12",
@@ -552,7 +558,13 @@
     "id": "wt-66",
     "name": "Torrential Downpour",
     "description": "Hitting enemies 10 times within 5 seconds grants +22.50% Engineering for 12 seconds.",
-    "verifiedInGame": "2026-10-28"
+    "verifiedInGame": "2026-10-28",
+    "upgradedName": "Torrential Downpour II",
+    "upgradedDescription": "Hitting enemies 10 times within 5 seconds grants +31.50% Engineering for 12 seconds.",
+    "upgradedSource": {
+      "label": "Demø2x's Modified USC card in his Aegis build video (YouTube, 12:20)",
+      "url": "https://www.youtube.com/watch?v=qFG1it9DFBA&t=740s"
+    }
   },
   {
     "id": "wt-67",

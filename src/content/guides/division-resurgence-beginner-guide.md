@@ -47,6 +47,8 @@ The rest of this page explains each step and why.
 
 There are five specializations: **Vanguard, Demolitionist, Bulwark, Field Medic and Tech Operator**. Each has two **Focuses**, talent trees that change how it plays: Field Medic can heal (Combat Medicine) or melt rooms with chemicals (Tactical Pharma), and Tech Operator can run attack drones (Offensive Operations) or healing and defensive drones (Aegis Operations). Ubisoft's 2023 preview said skill points you earn count toward both Focuses of a specialization, so trying the other Focus isn't a restart. Each specialization levels on its own, to 30, with 49 talent points to spend, going by the specialization screen on [Porps's October 28 stream](https://www.youtube.com/watch?v=FOrckQW_S8c) (a brand-new account, Portuguese client, our translation).
 
+The game gives you a hint of its own. The Change Specialization screen labels each one (Weapons Expert for the Vanguard, Explosives Expert for the Demolitionist, Drone Expert for the Tech Operator, Defense Expert for the Bulwark, Healing & Skills Expert for the Field Medic) and rates its difficulty out of five stars: 1 for the Tech Operator, 2 for the Demolitionist, 3 for the Vanguard and 3.5 for the Bulwark, on Porps's screen and [GGReborn's](https://www.youtube.com/watch?v=i85WYzmiTuw&t=70s). We haven't seen the Field Medic's stars.
+
 Our [specialization guide](/guides/which-specialization-to-pick/) covers each one, and the [build tier list](/tier-list/) shows how players rank every build.
 
 Then commit. AgentHuntzman calls switching your main every few days one of the biggest progression traps: your farming targets, gear and stat needs change every time, and he says he has wasted more recalibrations than he can count. Switching itself is easy, and the specialization screen's reset button refunds what you spent on skills. What you can't refund is the materials and recalibrations you put into gear for the old build.
@@ -60,6 +62,8 @@ Every gear piece carries Firepower, Toughness and Engineering in different amoun
 | **Firepower** | Weapon damage | Vanguard Commando, Bulwark Breacher, Demolitionist Field Grenadier, gun builds |
 | **Toughness** | Health and survivability | Bulwark Juggernaut, Combat Medicine |
 | **Engineering** | Skill damage, healing and buffs | Demolitionist HE Munitions, Tech Operator, Tactical Pharma, Vanguard Recon |
+
+The game's own Core Attributes popup puts it in three lines: "Firepower increases the damage of equipped weapons." "Toughness increases Max Health." "Engineering increases the intensity of Skill effects (damage, healing, etc.)."
 
 AgentHuntzman's rule from his May videos: builds that put "a little bit of everything" everywhere feel weak, so pick the stat your specialization uses and lean into it. Oldfartsgaming adds a shortcut: the stat icons are color-coded, red for offensive and blue for tank or healer. Full details, crit rules and what every secondary stat does are in our [stats guide](/guides/division-resurgence-stats-explained/).
 
@@ -191,6 +195,7 @@ These come from AgentHuntzman's May video on endgame mistakes and GGReborn's Sep
 - [TikTokAndy: UNLIMITED Purple & Gold Mods & Weapon Attachments (YouTube, September 26, 2026)](https://www.youtube.com/watch?v=UJTNo_5nQA0) (the stash timer)
 - [GGReborn: Why Your Division Resurgence Gear Build Is Failing You (YouTube, September 29, 2026)](https://www.youtube.com/watch?v=wFqepeXdCTs)
 - [Oldfartsgaming: 7 Things I Wish I Knew Before Endgame (YouTube, October 11, 2026)](https://www.youtube.com/watch?v=7JtJCeEE8NI)
+- [GGReborn: COMPLETE Beginner's Guide, 7 Things You MUST Understand (YouTube)](https://www.youtube.com/watch?v=i85WYzmiTuw) (the Change Specialization screen at 1:10, the Core Attributes popup at 1:37)
 - [Porps: The Division Resurgence ao vivo (YouTube live stream in Portuguese, October 28, 2026)](https://www.youtube.com/watch?v=FOrckQW_S8c) (specialization levels, the dismantle refund, inventory counters, new-player events, the recalibration tutorial)
 - [Ubisoft News: The Division Resurgence amps up specializations (June 12, 2023)](https://news.ubisoft.com/en-us/article/6Jn7afkUJmUJR14VMbv5VK/the-division-resurgence-amps-up-specializations-launch-slated-for-fall-2023) (Focuses, damage types, the Armory)
 - [Ubisoft Help Center: Patch Note, Season 2 Phase 2](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2566-patch-note---season-2-phase-2/)
