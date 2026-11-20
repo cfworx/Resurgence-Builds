@@ -318,6 +318,9 @@ What we know is **not** the issue: Phase 2 of Season 1 (May 12, 2026) did not ad
 ---
 
 **Related Reading:**
+- [Interactive Map with every crate pinned](/division-resurgence-interactive-map/)
+- [All 13 SHD Crate Locations](/guides/division-resurgence-shd-crate-locations/)
+- [All 24 ECHO Locations](/guides/division-resurgence-echo-locations/)
 - [Division Resurgence Codes](/guides/division-resurgence-codes/)
 - [Division Resurgence Error Codes](/guides/division-resurgence-error-codes/)
 - [Division Resurgence Device Compatibility](/guides/division-resurgence-device-compatibility/)

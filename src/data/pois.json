@@ -1,6 +1,6 @@
 {
  "version": 2,
- "generated": "2026-10-24",
+ "generated": "2026-11-20",
  "image": {
   "width": 2190,
   "height": 1920
@@ -13,12 +13,31 @@
   ],
   "license": "https://creativecommons.org/licenses/by-sa/3.0/"
  },
+ "checked": "2026-11-20",
+ "collections": {
+  "echo": {
+   "label": "ECHOs",
+   "total": 24,
+   "stageReward": "Each reward stage paid 20 Phoenix Credits, 2,000 credits and two crafting materials (two of each) in the footage."
+  },
+  "Mysteries": {
+   "total": 5,
+   "stageReward": "Each reward stage paid 10 Phoenix Credits, 2,000 credits and two crafting materials (five of each) in the footage."
+  },
+  "Freemen": {
+   "total": 11
+  },
+  "shd_crate": {
+   "total": 13,
+   "reward": "Each SHD crate gives a purple skill mod chipset for your specialization, 40 Phoenix Credits, 5,000 credits and some materials, and opening them counts toward the exploration commendations."
+  }
+ },
  "categories": [
   {
    "id": "safe_house",
    "label": "Safe Houses",
    "group": "Hubs",
-   "color": "#F26822",
+   "color": "#F7841F",
    "icon": "house",
    "defaultOn": true,
    "count": 11
@@ -27,7 +46,7 @@
    "id": "base",
    "label": "Base of Operations",
    "group": "Hubs",
-   "color": "#FFB020",
+   "color": "#F7841F",
    "icon": "base",
    "defaultOn": true,
    "count": 1
@@ -36,8 +55,8 @@
    "id": "settlement",
    "label": "Settlements",
    "group": "Hubs",
-   "color": "#34D399",
-   "icon": "tent",
+   "color": "#9BE564",
+   "icon": "house",
    "defaultOn": true,
    "count": 1
   },
@@ -45,8 +64,8 @@
    "id": "clan_fob",
    "label": "Clan FOB",
    "group": "Hubs",
-   "color": "#A78BFA",
-   "icon": "flag",
+   "color": "#9BE564",
+   "icon": "shield",
    "defaultOn": true,
    "count": 1
   },
@@ -63,9 +82,9 @@
    "id": "landmark",
    "label": "Landmarks",
    "group": "Hubs",
-   "color": "#E5E7EB",
-   "icon": "landmark",
-   "defaultOn": false,
+   "color": "#F7841F",
+   "icon": "pin",
+   "defaultOn": true,
    "count": 4
   },
   {
@@ -90,16 +109,25 @@
    "id": "instance",
    "label": "Mission Instances",
    "group": "Missions & Activities",
-   "color": "#F472B6",
-   "icon": "portal",
+   "color": "#E8E8EA",
+   "icon": "hex",
    "defaultOn": true,
    "count": 5
+  },
+  {
+   "id": "offmap",
+   "label": "Off-map Missions",
+   "group": "Missions & Activities",
+   "color": "#E8E8EA",
+   "icon": "hex",
+   "defaultOn": true,
+   "count": 3
   },
   {
    "id": "world_event",
    "label": "World Events",
    "group": "Missions & Activities",
-   "color": "#FB923C",
+   "color": "#EF4B3C",
    "icon": "alert",
    "defaultOn": false,
    "wip": true,
@@ -109,11 +137,11 @@
    "id": "nest",
    "label": "Hostile Nests",
    "group": "Missions & Activities",
-   "color": "#EF4444",
+   "color": "#EF4B3C",
    "icon": "nest",
    "defaultOn": false,
    "wip": true,
-   "count": 7
+   "count": 8
   },
   {
    "id": "nest_investigation",
@@ -149,7 +177,7 @@
    "id": "shd_crate",
    "label": "SHD Crates",
    "group": "Collectibles",
-   "color": "#10B981",
+   "color": "#F5C518",
    "icon": "crate",
    "defaultOn": false,
    "trackable": true,
@@ -159,7 +187,7 @@
    "id": "echo",
    "label": "ECHOs",
    "group": "Collectibles",
-   "color": "#38BDF8",
+   "color": "#4FC3F7",
    "icon": "echo",
    "defaultOn": false,
    "trackable": true,
@@ -169,8 +197,8 @@
    "id": "artifact",
    "label": "Artifacts",
    "group": "Collectibles",
-   "color": "#FDE047",
-   "icon": "gem",
+   "color": "#E9B949",
+   "icon": "frame",
    "defaultOn": false,
    "trackable": true,
    "count": 53
@@ -179,7 +207,7 @@
    "id": "audio_log",
    "label": "Audio Logs",
    "group": "Collectibles",
-   "color": "#C084FC",
+   "color": "#B794F6",
    "icon": "audio",
    "defaultOn": false,
    "trackable": true,
@@ -188,8 +216,8 @@
   {
    "id": "ammo",
    "label": "Ammo Crates",
-   "group": "Collectibles",
-   "color": "#94A3B8",
+   "group": "Hubs",
+   "color": "#D9DCE1",
    "icon": "ammo",
    "defaultOn": false,
    "count": 28
@@ -249,17 +277,30 @@
   {
    "type": "Mission instance",
    "name": "Chinatown Rescue",
-   "note": "Instanced mission outside the open-world map. Launch it from its bubble on the edge of the in-game map."
+   "note": "Instanced mission outside the open-world map. Launch it from its bubble on the edge of the in-game map.",
+   "distance": "3.89km"
   },
   {
    "type": "Mission instance",
    "name": "Wall Street Woes",
-   "note": "Instanced mission outside the open-world map. Launch it from its bubble on the edge of the in-game map."
+   "note": "Instanced mission outside the open-world map. Launch it from its bubble on the edge of the in-game map.",
+   "inside": [
+    {
+     "type": "ECHO",
+     "name": "Liberty Island",
+     "district": "Garment",
+     "gameText": "Jax informs his entourage that they're going to Liberty Island."
+    }
+   ],
+   "distance": "5.14km",
+   "about": "The Trinity Church Field Hospital near Wall Street in Lower Manhattan has come under heavy attack."
   },
   {
    "type": "Mission instance",
    "name": "Liberty and Justice for All",
-   "note": "Instanced mission outside the open-world map. Launch it from its bubble on the edge of the in-game map."
+   "note": "Instanced mission outside the open-world map. Launch it from its bubble on the edge of the in-game map.",
+   "distance": "7.98km",
+   "bubble": "Liberty Island"
   },
   {
    "type": "Main mission",
@@ -272,85 +313,92 @@
    "id": "safe_house-the-cavern",
    "category": "safe_house",
    "name": "The Cavern",
-   "x": 1263,
-   "y": 962,
+   "x": 1264,
+   "y": 951,
    "amenities": [
     "Ammo Crate",
     "Stash"
-   ]
+   ],
+   "verified": true
   },
   {
    "id": "safe_house-the-meat-locker",
    "category": "safe_house",
    "name": "The Meat Locker",
-   "x": 1336,
-   "y": 1445,
+   "x": 1353,
+   "y": 1447,
    "amenities": [
     "Ammo Crate",
     "Stash"
-   ]
+   ],
+   "verified": true
   },
   {
    "id": "safe_house-camp-hudson",
    "category": "safe_house",
    "name": "Camp Hudson",
-   "x": 254,
-   "y": 1613,
+   "x": 262,
+   "y": 1629,
    "amenities": [
     "Ammo Crate",
     "Stash"
-   ]
+   ],
+   "verified": true
   },
   {
    "id": "safe_house-kerman-station",
    "category": "safe_house",
    "name": "Kerman Station",
-   "x": 445,
-   "y": 1013,
+   "x": 452,
+   "y": 1004,
    "amenities": [
     "Ammo Crate",
     "Stash"
-   ]
+   ],
+   "verified": true
   },
   {
    "id": "safe_house-dante-s-run",
    "category": "safe_house",
    "name": "Dante's Run",
-   "x": 680,
-   "y": 660,
+   "x": 702,
+   "y": 649,
    "amenities": [
     "Ammo Crate",
     "Stash"
-   ]
+   ],
+   "verified": true
   },
   {
    "id": "safe_house-lazarus-rest",
    "category": "safe_house",
    "name": "Lazarus Rest",
-   "x": 963,
-   "y": 462,
+   "x": 981,
+   "y": 464,
    "amenities": [
     "Ammo Crate",
     "Stash"
-   ]
+   ],
+   "verified": true
   },
   {
    "id": "safe_house-autumn-s-hope",
    "category": "safe_house",
    "name": "Autumn's Hope",
-   "x": 1234,
+   "x": 1256,
    "y": 413,
    "amenities": [
     "Ammo Crate",
     "Stash"
-   ]
+   ],
+   "verified": true
   },
   {
    "id": "base-nyc-base-of-operations",
    "category": "base",
    "name": "NYC Base of Operations",
-   "x": 1030,
-   "y": 1171,
+   "x": 1031,
+   "y": 1169,
    "amenities": [
     "Dark Zone Vendor",
     "Specialization Quartermaster",
@@ -360,61 +408,69 @@
     "Gear Crafting Station",
     "Weapon Crafting Station",
     "Vendor"
-   ]
+   ],
+   "verified": true
   },
   {
    "id": "landmark-south-entrance-of-times-square",
    "category": "landmark",
    "name": "South Entrance of Times Square",
    "x": 1369,
-   "y": 628
+   "y": 628,
+   "verified": true
   },
   {
    "id": "landmark-hearst-tower",
    "category": "landmark",
    "name": "Hearst Tower",
    "x": 1186,
-   "y": 256
+   "y": 256,
+   "verified": true
   },
   {
    "id": "landmark-disaster-recovery-center",
    "category": "landmark",
    "name": "Disaster Recovery Center",
    "x": 903,
-   "y": 1719
+   "y": 1719,
+   "verified": true
   },
   {
    "id": "landmark-hudson-river-pier",
    "category": "landmark",
    "name": "Hudson River Pier",
    "x": 219,
-   "y": 1326
+   "y": 1326,
+   "verified": true
   },
   {
    "id": "settlement-spring-blossom-settlement",
    "category": "settlement",
    "name": "Spring Blossom Settlement",
-   "x": 878,
-   "y": 954,
+   "x": 903,
+   "y": 962,
    "amenities": [
     "Gear Crafting Station",
     "Weapon Crafting Station",
     "Equipment Improvement Station",
     "Stash",
     "Ammo Crate"
-   ]
+   ],
+   "verified": true
   },
   {
    "id": "instance-take-the-castle",
    "category": "instance",
    "name": "Take The Castle",
-   "x": 715,
-   "y": 425,
+   "x": 722,
+   "y": 428,
    "description": "Unlocks at level 19.",
    "inside": [
     {
      "type": "ECHO",
-     "name": "Triage"
+     "name": "Triage",
+     "district": "Clinton",
+     "gameText": "A captive JTF soldier pleads for medical attention. It doesn't go well."
     },
     {
      "type": "Audio log",
@@ -424,67 +480,84 @@
      "type": "Audio log",
      "name": "Bargaining Chips"
     }
-   ]
+   ],
+   "verified": true
   },
   {
    "id": "instance-precious-cargo",
    "category": "instance",
    "name": "Precious Cargo",
-   "x": 382,
-   "y": 1816,
+   "x": 371,
+   "y": 1828,
    "description": "Unlocked at level 31.",
    "inside": [
     {
      "type": "ECHO",
-     "name": "Kidnapped"
+     "name": "Kidnapped",
+     "district": "Chelsea",
+     "gameText": "Freemen leader Arthur King and his lackeys interrogate Gabrielle Liu."
     },
     {
      "type": "Audio log",
-     "name": "Incompetent"
+     "name": "Incompetent",
+     "district": "Chelsea",
+     "gameText": "Two Freemen discuss what to do with a clumsy slave."
     },
     {
      "type": "Audio log",
-     "name": "Glad To Be Freemen"
+     "name": "Glad To Be Freemen",
+     "district": "Chelsea",
+     "gameText": "Freemen talk about how they're glad they joined up."
     },
     {
      "type": "Audio log",
-     "name": "Rust Bucket"
+     "name": "Rust Bucket",
+     "district": "Chelsea",
+     "gameText": "Freemen complain about living on a ship."
     }
-   ]
+   ],
+   "verified": true
   },
   {
    "id": "instance-on-the-radio",
    "category": "instance",
    "name": "On The Radio",
-   "x": 671,
-   "y": 1386,
-   "description": "Unlocks at level 24.",
+   "x": 673,
+   "y": 1397,
+   "description": "Requires level 26. Recommended power score 4.0k.",
    "inside": [
     {
      "type": "Audio log",
-     "name": "Know-how"
+     "name": "Know-how",
+     "district": "Chelsea",
+     "gameText": "Freemen Conclave Member Tony Barr talks about life before the crisis."
     }
-   ]
+   ],
+   "verified": true,
+   "level": 26,
+   "power": "4.0k"
   },
   {
    "id": "instance-water-is-life",
    "category": "instance",
    "name": "Water is Life",
-   "x": 1302,
-   "y": 1705,
+   "x": 1321,
+   "y": 1700,
    "inside": [
     {
      "type": "Audio log",
      "name": "Priorities"
     }
-   ]
+   ],
+   "verified": true
   },
   {
    "id": "instance-a-new-enemy",
    "category": "instance",
    "name": "A New Enemy",
-   "x": 902,
-   "y": 911
+   "x": 919,
+   "y": 916,
+   "verified": true
   },
   {
    "id": "clan_fob-clan-fob",
@@ -492,14 +565,15 @@
    "name": "Clan FOB",
    "x": 1526,
    "y": 81,
-   "description": "Instanced clan hub. On the in-game map it appears as a bubble at the top edge."
+   "description": "Instanced clan hub. On the in-game map it is a bubble at the top edge, 5.31km away.",
+   "verified": true
   },
   {
    "id": "main_mission-main-missions-at-spring-blossom-settlement",
    "category": "main_mission",
    "name": "Main missions at Spring Blossom Settlement",
-   "x": 893,
-   "y": 948,
+   "x": 918,
+   "y": 956,
    "description": "9 missions start here. Unlock levels per the community map.",
    "missions": [
     {
@@ -560,8 +634,8 @@
    "id": "main_mission-main-missions-at-nyc-base-of-operations",
    "category": "main_mission",
    "name": "Main missions at NYC Base of Operations",
-   "x": 1005,
-   "y": 1164,
+   "x": 1006,
+   "y": 1162,
    "description": "2 missions start here. Unlock levels per the community map.",
    "missions": [
     {
@@ -597,7 +671,8 @@
     },
     {
      "name": "On The Radio",
-     "level": 24
+     "level": 26,
+     "verified": true
     },
     {
      "name": "Nowhere to Hide",
@@ -609,8 +684,8 @@
    "id": "side_mission-side-missions-at-kerman-station",
    "category": "side_mission",
    "name": "Side missions at Kerman Station",
-   "x": 450,
-   "y": 1008,
+   "x": 457,
+   "y": 999,
    "description": "4 missions start here. Unlock levels per the community map.",
    "missions": [
     {
@@ -635,8 +710,8 @@
    "id": "side_mission-side-missions-at-dante-s-run",
    "category": "side_mission",
    "name": "Side missions at Dante's Run",
-   "x": 684,
-   "y": 655,
+   "x": 706,
+   "y": 644,
    "description": "3 missions start here. Unlock levels per the community map.",
    "missions": [
     {
@@ -711,8 +786,8 @@
    "id": "side_mission-side-missions-at-lazarus-rest",
    "category": "side_mission",
    "name": "Side missions at Lazarus Rest",
-   "x": 966,
-   "y": 458,
+   "x": 984,
+   "y": 460,
    "description": "2 missions start here. Unlock levels per the community map.",
    "missions": [
     {
@@ -747,8 +822,8 @@
    "id": "side_mission-side-missions-at-nyc-base-of-operations",
    "category": "side_mission",
    "name": "Side missions at NYC Base of Operations",
-   "x": 1011,
-   "y": 1159,
+   "x": 1012,
+   "y": 1157,
    "description": "4 missions start here. Unlock levels per the community map.",
    "missions": [
     {
@@ -773,8 +848,8 @@
    "id": "side_mission-side-missions-at-spring-blossom-settlement",
    "category": "side_mission",
    "name": "Side missions at Spring Blossom Settlement",
-   "x": 881,
-   "y": 951,
+   "x": 906,
+   "y": 959,
    "description": "2 missions start here. Unlock levels per the community map.",
    "missions": [
     {
@@ -800,8 +875,8 @@
    "id": "side_mission-side-missions-at-the-meat-locker",
    "category": "side_mission",
    "name": "Side missions at The Meat Locker",
-   "x": 1339,
-   "y": 1440,
+   "x": 1356,
+   "y": 1442,
    "description": "2 missions start here. Unlock levels per the community map.",
    "missions": [
     {
@@ -817,17 +892,23 @@
   {
    "id": "echo-street-justice-echo-13",
    "category": "echo",
-   "name": "Street Justice (ECHO 13)",
+   "name": "Street Justice",
    "x": 1252,
-   "y": 299
+   "y": 299,
+   "number": 13,
+   "district": "Times Square",
+   "gameText": "To a low-level drug dealer, Agent Sarah Kelly is judge, jury, and executioner."
   },
   {
    "id": "artifact-black-jade-cat",
    "category": "artifact",
    "name": "Black Jade Cat",
-   "x": 1129,
-   "y": 296,
-   "description": "Collection: Mysteries"
+   "x": 1096,
+   "y": 297,
+   "verified": true,
+   "collection": "Mysteries",
+   "district": "Clinton",
+   "gameText": "This statuette is a testimony of cats' extended presence in human culture."
   },
   {
    "id": "audio_log-the-worst-of-the-worst",
@@ -835,7 +916,7 @@
    "name": "The Worst of the Worst",
    "x": 1203,
    "y": 301,
-   "description": "Collection: JTF"
+   "collection": "JTF"
   },
   {
    "id": "encrypted_crate-encrypted-crate-1",
@@ -852,28 +933,32 @@
    "category": "shd_crate",
    "name": "SHD Crate 1",
    "x": 964,
-   "y": 609
+   "y": 609,
+   "verified": true
   },
   {
    "id": "shd_crate-shd-crate-2",
    "category": "shd_crate",
    "name": "SHD Crate 2",
    "x": 583,
-   "y": 625
+   "y": 625,
+   "verified": true
   },
   {
    "id": "shd_crate-shd-crate-3",
    "category": "shd_crate",
    "name": "SHD Crate 3",
    "x": 1233,
-   "y": 741
+   "y": 741,
+   "verified": true
   },
   {
    "id": "shd_crate-shd-crate-5",
    "category": "shd_crate",
    "name": "SHD Crate 5",
    "x": 1402,
-   "y": 1082
+   "y": 1082,
+   "verified": true
   },
   {
    "id": "shd_crate-shd-crate-6",
@@ -881,28 +966,32 @@
    "name": "SHD Crate 6",
    "x": 1082,
    "y": 1124,
-   "description": "Location: Behind the CERA sign, accessible by climbing over the forklift and the containers."
+   "description": "Location: Behind the CERA sign, accessible by climbing over the forklift and the containers.",
+   "verified": true
   },
   {
    "id": "shd_crate-shd-crate-9",
    "category": "shd_crate",
    "name": "SHD Crate 9",
    "x": 995,
-   "y": 1268
+   "y": 1268,
+   "verified": true
   },
   {
    "id": "shd_crate-shd-crate-7",
    "category": "shd_crate",
    "name": "SHD Crate 7",
    "x": 689,
-   "y": 1263
+   "y": 1263,
+   "verified": true
   },
   {
    "id": "shd_crate-shd-crate-8",
    "category": "shd_crate",
    "name": "SHD Crate 8",
    "x": 783,
-   "y": 1262
+   "y": 1262,
+   "verified": true
   },
   {
    "id": "shd_crate-shd-crate-10",
@@ -910,7 +999,8 @@
    "name": "SHD Crate 10",
    "x": 481,
    "y": 1329,
-   "description": "Location: In the construction yard, on top of a detached building."
+   "description": "Location: In the construction yard, on top of a detached building.",
+   "verified": true
   },
   {
    "id": "shd_crate-shd-crate-11",
@@ -918,7 +1008,8 @@
    "name": "SHD Crate 11",
    "x": 1534,
    "y": 1385,
-   "description": "Location: Top of storage containers in 'Outpost Restoration' area."
+   "description": "Location: Top of storage containers in 'Outpost Restoration' area.",
+   "verified": true
   },
   {
    "id": "shd_crate-shd-crate-12",
@@ -926,7 +1017,9 @@
    "name": "SHD Crate 12",
    "x": 932,
    "y": 1668,
-   "description": "Location: East end of the courtyard between the buildings."
+   "description": "Location: East end of the courtyard between the buildings.",
+   "verified": true,
+   "note": "Players reported in April that this crate could not be reached. Tell us if you open it."
   },
   {
    "id": "shd_crate-shd-crate-13",
@@ -934,14 +1027,16 @@
    "name": "SHD Crate 13",
    "x": 804,
    "y": 1746,
-   "description": "Location: On the roof, accessible via ladder in the alley."
+   "description": "Location: On the roof, accessible via ladder in the alley.",
+   "verified": true
   },
   {
    "id": "shd_crate-shd-crate-4",
    "category": "shd_crate",
    "name": "SHD Crate 4",
    "x": 346,
-   "y": 820
+   "y": 820,
+   "verified": true
   },
   {
    "id": "encrypted_crate-encrypted-crate-2",
@@ -1146,179 +1241,247 @@
   {
    "id": "echo-clearing-out-the-cleaners-echo-16",
    "category": "echo",
-   "name": "Clearing out the Cleaners (ECHO 16)",
+   "name": "Clearing out the Cleaners",
    "x": 932,
-   "y": 340
+   "y": 340,
+   "number": 16,
+   "district": "Clinton",
+   "gameText": "Ken Ito watches his men have some fun with a handful of defeated Cleaners."
   },
   {
    "id": "echo-lambs-to-slaughter-echo-19",
    "category": "echo",
-   "name": "Lambs to Slaughter (ECHO 19)",
+   "name": "Lambs to Slaughter",
    "x": 770,
-   "y": 408
+   "y": 408,
+   "number": 19,
+   "district": "Clinton",
+   "gameText": "Two Rikers talk about murdering innocent civilians."
   },
   {
    "id": "echo-hope-echo-07",
    "category": "echo",
-   "name": "Hope (ECHO 07)",
+   "name": "Hope",
    "x": 787,
-   "y": 592
+   "y": 592,
+   "number": 7,
+   "district": "Hell's Kitchen",
+   "gameText": "A civilian has a hard time dealing with the loss of her husband."
   },
   {
    "id": "echo-happy-birthday-echo-06",
    "category": "echo",
-   "name": "Happy Birthday (ECHO 06)",
+   "name": "Happy Birthday",
    "x": 1088,
-   "y": 605
+   "y": 605,
+   "number": 6,
+   "district": "Hell's Kitchen",
+   "gameText": "Two parents throw a makeshift birthday party for their little girl."
   },
   {
    "id": "echo-survival-of-the-fittest-echo-15",
    "category": "echo",
-   "name": "Survival of the Fittest (ECHO 15)",
+   "name": "Survival of the Fittest",
    "x": 479,
-   "y": 716
+   "y": 716,
+   "number": 15,
+   "district": "Hell's Kitchen",
+   "gameText": "A civilian tries to take advantage of a fight between Rikers and Raiders."
   },
   {
    "id": "echo-ambush-echo-21",
    "category": "echo",
-   "name": "Ambush (ECHO 21)",
+   "name": "Ambush",
    "x": 247,
-   "y": 888
+   "y": 888,
+   "number": 21,
+   "district": "Hudson Yards",
+   "gameText": "A JTF escort is ambushed by two Rikers."
   },
   {
    "id": "echo-slave-trade-echo-10",
    "category": "echo",
-   "name": "Slave Trade (ECHO 10)",
+   "name": "Slave Trade",
    "x": 412,
-   "y": 1046
+   "y": 1046,
+   "number": 10,
+   "district": "Hudson Yards",
+   "gameText": "Freemen sort through captured slaves and decide where to put them to work."
   },
   {
    "id": "echo-false-leads-echo-01",
    "category": "echo",
-   "name": "False Leads (ECHO 01)",
+   "name": "False Leads",
    "x": 875,
    "y": 1101,
-   "description": "Side Mission: Desperate Measures"
+   "description": "Side Mission: Desperate Measures",
+   "number": 1,
+   "district": "Pennsylvania Plaza",
+   "gameText": "Desperate civilians steal JTF supplies and try to frame someone else for the deed."
   },
   {
    "id": "echo-building-spring-blossom-echo-03",
    "category": "echo",
-   "name": "Building Spring Blossom (ECHO 03)",
+   "name": "Building Spring Blossom",
    "x": 1025,
    "y": 1164,
-   "description": "Location: Outside the N.Y.C. Base of Operations"
+   "description": "Location: Outside the N.Y.C. Base of Operations",
+   "number": 3
   },
   {
    "id": "echo-a-difference-of-opinion-echo-23",
    "category": "echo",
-   "name": "A Difference of Opinion (ECHO 23)",
+   "name": "A Difference of Opinion",
    "x": 1452,
-   "y": 1039
+   "y": 1039,
+   "number": 23,
+   "district": "Garment District",
+   "gameText": "Freemen fight over supplies."
   },
   {
    "id": "echo-squab-echo-02",
    "category": "echo",
-   "name": "Squab (ECHO 02)",
+   "name": "Squab",
    "x": 1424,
-   "y": 1189
+   "y": 1189,
+   "number": 2
   },
   {
    "id": "echo-baby-echo-22",
    "category": "echo",
-   "name": "Baby (ECHO 22)",
+   "name": "Baby",
    "x": 451,
-   "y": 1299
+   "y": 1299,
+   "number": 22,
+   "district": "Hudson Yards",
+   "gameText": "Two Cleaners argue over killing a baby."
   },
   {
    "id": "echo-no-escape-echo-12",
    "category": "echo",
-   "name": "No Escape (ECHO 12)",
+   "name": "No Escape",
    "x": 250,
-   "y": 1441
+   "y": 1441,
+   "number": 12,
+   "district": "Chelsea",
+   "gameText": "A small group of civilians try to escape Manhattan."
   },
   {
    "id": "echo-deadly-confrontation-echo-18",
    "category": "echo",
-   "name": "Deadly Confrontation (ECHO 18)",
+   "name": "Deadly Confrontation",
    "x": 548,
-   "y": 1676
+   "y": 1676,
+   "number": 18,
+   "district": "Chelsea",
+   "gameText": "An encounter between the JTF, SHD and the Freemen goes south and causes heavy casualties."
   },
   {
    "id": "echo-run-echo-20",
    "category": "echo",
-   "name": "Run! (ECHO 20)",
+   "name": "Run!",
    "x": 828,
-   "y": 1550
+   "y": 1550,
+   "number": 20,
+   "district": "Chelsea",
+   "gameText": "A woman escapes from the Cleaners."
   },
   {
    "id": "echo-up-close-and-personal-echo-24",
    "category": "echo",
-   "name": "Up Close and Personal (ECHO 24)",
+   "name": "Up Close and Personal",
    "x": 781,
-   "y": 1584
+   "y": 1584,
+   "number": 24,
+   "district": "Chelsea",
+   "gameText": "Rogue Agent Javier Kajika ambushes a squad of JTF soldiers."
   },
   {
    "id": "echo-begging-for-mercy-echo-04",
    "category": "echo",
-   "name": "Begging for Mercy (ECHO 04)",
+   "name": "Begging for Mercy",
    "x": 1279,
    "y": 1603,
-   "description": "Side Mission: Father And Son"
+   "description": "Side Mission: Father And Son",
+   "number": 4,
+   "district": "Tenderloin",
+   "gameText": "An elderly civilian tries to convince the Cleaners that he and his friends are not contagious."
   },
   {
    "id": "echo-cleaners-on-the-ropes-echo-05",
    "category": "echo",
-   "name": "Cleaners on the Ropes (ECHO 05)",
+   "name": "Cleaners on the Ropes",
    "x": 1382,
-   "y": 1704
+   "y": 1704,
+   "number": 5,
+   "district": "Tenderloin",
+   "gameText": "An encounter between Cleaners and a JTF patrol."
   },
   {
    "id": "echo-little-boy-lost-echo-09",
    "category": "echo",
-   "name": "Little Boy Lost (ECHO 09)",
+   "name": "Little Boy Lost",
    "x": 904,
    "y": 433,
-   "description": "Side Mission: New Shelter"
+   "description": "Side Mission: New Shelter",
+   "number": 9,
+   "district": "Clinton",
+   "gameText": "Little Noah is looking for his aunt."
   },
   {
    "id": "echo-power-struggle-echo-17",
    "category": "echo",
-   "name": "Power Struggle (ECHO 17)",
+   "name": "Power Struggle",
    "x": 672,
    "y": 1224,
-   "description": "Side Mission: Competition For Power"
+   "description": "Side Mission: Competition For Power",
+   "number": 17,
+   "district": "Hudson Yards",
+   "gameText": "Upon the death of Arthur King, the Freemen splintered into factions that went for each other's throats."
   },
   {
    "id": "artifact-antique-bird-call",
    "category": "artifact",
    "name": "Antique bird call",
-   "x": 1201,
-   "y": 312,
-   "description": "Collection: Mysteries"
+   "x": 1200,
+   "y": 361,
+   "verified": true,
+   "collection": "Mysteries",
+   "district": "Times Square",
+   "gameText": "Vintage Victorian bird call whistle. Reproduces the song of a Yellow-billed magpie."
   },
   {
    "id": "artifact-handmade-dreamcatcher",
    "category": "artifact",
    "name": "Handmade dreamcatcher",
-   "x": 503,
-   "y": 847,
-   "description": "Collection: Mysteries"
+   "x": 490,
+   "y": 863,
+   "verified": true,
+   "collection": "Mysteries",
+   "district": "Hudson Yards"
   },
   {
    "id": "artifact-wishbone",
    "category": "artifact",
    "name": "Wishbone",
-   "x": 1716,
-   "y": 1364,
-   "description": "Collection: Mysteries"
+   "x": 1737,
+   "y": 1373,
+   "verified": true,
+   "collection": "Mysteries",
+   "district": "Tenderloin",
+   "gameText": "A wishbone from a turkey. Good luck for the person. Not the chicken."
   },
   {
    "id": "artifact-medicinal-plants-book",
    "category": "artifact",
    "name": "Medicinal Plants Book",
-   "x": 794,
-   "y": 1756,
-   "description": "Collection: Mysteries · Location: In the back alley."
+   "x": 786,
+   "y": 1777,
+   "description": "Location: In the back alley.",
+   "verified": true,
+   "collection": "Mysteries",
+   "district": "Chelsea",
+   "gameText": "This kind of book, exposing how common plants can help with lesser harms, regained massive popularity."
   },
   {
    "id": "artifact-cryptex-and-secret-recipe",
@@ -1326,7 +1489,7 @@
    "name": "Cryptex and secret recipe",
    "x": 1256,
    "y": 1661,
-   "description": "Collection: Signature item"
+   "collection": "Signature item"
   },
   {
    "id": "artifact-a-pair-of-ice-skates",
@@ -1334,7 +1497,7 @@
    "name": "A pair of ice skates",
    "x": 1029,
    "y": 1674,
-   "description": "Collection: Abandoned objects"
+   "collection": "Abandoned objects"
   },
   {
    "id": "artifact-a-family-photo",
@@ -1342,7 +1505,7 @@
    "name": "A family photo",
    "x": 782,
    "y": 1054,
-   "description": "Collection: Abandoned objects"
+   "collection": "Abandoned objects"
   },
   {
    "id": "artifact-a-spring-blossom-restaurant-menu",
@@ -1350,7 +1513,7 @@
    "name": "A Spring Blossom Restaurant menu",
    "x": 880,
    "y": 942,
-   "description": "Collection: Abandoned objects"
+   "collection": "Abandoned objects"
   },
   {
    "id": "artifact-a-map-of-the-metropolitan-museum",
@@ -1358,7 +1521,7 @@
    "name": "A map of the Metropolitan Museum",
    "x": 1036,
    "y": 728,
-   "description": "Collection: Abandoned objects"
+   "collection": "Abandoned objects"
   },
   {
    "id": "artifact-the-grown-man",
@@ -1366,7 +1529,7 @@
    "name": "The Grown Man",
    "x": 1222,
    "y": 556,
-   "description": "Collection: Stolen treasure"
+   "collection": "Stolen treasure"
   },
   {
    "id": "artifact-the-archaic-crown",
@@ -1374,7 +1537,7 @@
    "name": "The Archaic Crown",
    "x": 1161,
    "y": 727,
-   "description": "Collection: Stolen treasure"
+   "collection": "Stolen treasure"
   },
   {
    "id": "artifact-washington-crossing-the-delaware",
@@ -1382,7 +1545,7 @@
    "name": "Washington Crossing the Delaware",
    "x": 1205,
    "y": 1336,
-   "description": "Collection: Stolen treasure"
+   "collection": "Stolen treasure"
   },
   {
    "id": "artifact-an-antique-kaleidoscope",
@@ -1390,7 +1553,7 @@
    "name": "An antique kaleidoscope",
    "x": 1635,
    "y": 1715,
-   "description": "Collection: Stolen treasure"
+   "collection": "Stolen treasure"
   },
   {
    "id": "artifact-presidential-prophet",
@@ -1398,7 +1561,7 @@
    "name": "Presidential Prophet",
    "x": 1035,
    "y": 421,
-   "description": "Collection: New York souvenirs"
+   "collection": "New York souvenirs"
   },
   {
    "id": "artifact-a-bridge-model",
@@ -1406,7 +1569,7 @@
    "name": "A bridge model",
    "x": 1400,
    "y": 786,
-   "description": "Collection: New York souvenirs"
+   "collection": "New York souvenirs"
   },
   {
    "id": "artifact-a-taxi-toy",
@@ -1414,7 +1577,7 @@
    "name": "A taxi toy",
    "x": 1276,
    "y": 977,
-   "description": "Collection: New York souvenirs"
+   "collection": "New York souvenirs"
   },
   {
    "id": "artifact-a-cruise-ship-model",
@@ -1422,7 +1585,7 @@
    "name": "A cruise ship model",
    "x": 1389,
    "y": 1294,
-   "description": "Collection: New York souvenirs"
+   "collection": "New York souvenirs"
   },
   {
    "id": "artifact-fireman-santa",
@@ -1430,7 +1593,7 @@
    "name": "Fireman Santa",
    "x": 737,
    "y": 656,
-   "description": "Collection: New York souvenirs"
+   "collection": "New York souvenirs"
   },
   {
    "id": "artifact-daily-meditation",
@@ -1438,7 +1601,7 @@
    "name": "Daily Meditation",
    "x": 954,
    "y": 527,
-   "description": "Collection: Enemy notes"
+   "collection": "Enemy notes"
   },
   {
    "id": "artifact-a-prepper-old-letter",
@@ -1446,7 +1609,7 @@
    "name": "A prepper old letter",
    "x": 1228,
    "y": 556,
-   "description": "Collection: Enemy notes"
+   "collection": "Enemy notes"
   },
   {
    "id": "artifact-fitting-for-the-job",
@@ -1454,7 +1617,7 @@
    "name": "Fitting for the job",
    "x": 1272,
    "y": 731,
-   "description": "Collection: Enemy notes"
+   "collection": "Enemy notes"
   },
   {
    "id": "artifact-a-historical-purpose",
@@ -1462,7 +1625,8 @@
    "name": "A historical purpose",
    "x": 1526,
    "y": 850,
-   "description": "Although it seems like it is inside the Dark Zone on the map, it is not. · Collection: Enemy notes"
+   "description": "Although it seems like it is inside the Dark Zone on the map, it is not.",
+   "collection": "Enemy notes"
   },
   {
    "id": "artifact-payback-time",
@@ -1470,7 +1634,7 @@
    "name": "Payback time",
    "x": 715,
    "y": 967,
-   "description": "Collection: Enemy notes"
+   "collection": "Enemy notes"
   },
   {
    "id": "artifact-a-cleaner-motivation",
@@ -1478,7 +1642,7 @@
    "name": "A Cleaner motivation",
    "x": 1456,
    "y": 1312,
-   "description": "Collection: Enemy notes"
+   "collection": "Enemy notes"
   },
   {
    "id": "artifact-freemen-instructions",
@@ -1486,7 +1650,8 @@
    "name": "Freemen instructions",
    "x": 475,
    "y": 1620,
-   "description": "Collection: Enemy notes · Location: On the first accessible roof nearby the Supply Run location."
+   "description": "Location: On the first accessible roof nearby the Supply Run location.",
+   "collection": "Enemy notes"
   },
   {
    "id": "artifact-maintenance-instruction-wind-turbines",
@@ -1494,7 +1659,8 @@
    "name": "Maintenance Instruction - Wind Turbines",
    "x": 1524,
    "y": 101,
-   "description": "Collection: JTF notes · Location: Inside Clan FOB, northwest of the Main Power Generator, on top of the green shipping containers."
+   "description": "Location: Inside Clan FOB, northwest of the Main Power Generator, on top of the green shipping containers.",
+   "collection": "JTF notes"
   },
   {
    "id": "artifact-mission-brief",
@@ -1502,7 +1668,7 @@
    "name": "Mission Brief",
    "x": 857,
    "y": 452,
-   "description": "Collection: JTF notes"
+   "collection": "JTF notes"
   },
   {
    "id": "artifact-psychological-report",
@@ -1510,7 +1676,7 @@
    "name": "Psychological Report",
    "x": 682,
    "y": 646,
-   "description": "Collection: JTF notes"
+   "collection": "JTF notes"
   },
   {
    "id": "artifact-complaint-report-grim-business",
@@ -1518,7 +1684,7 @@
    "name": "Complaint Report - Grim business",
    "x": 589,
    "y": 678,
-   "description": "Collection: JTF notes"
+   "collection": "JTF notes"
   },
   {
    "id": "artifact-security-instruction-dark-zone",
@@ -1526,7 +1692,7 @@
    "name": "Security Instruction - Dark Zone",
    "x": 1583,
    "y": 1000,
-   "description": "Collection: JTF notes"
+   "collection": "JTF notes"
   },
   {
    "id": "artifact-liability-report-agent-kelly",
@@ -1534,7 +1700,7 @@
    "name": "Liability Report - Agent Kelly",
    "x": 1225,
    "y": 1247,
-   "description": "Collection: JTF notes"
+   "collection": "JTF notes"
   },
   {
    "id": "artifact-progress-report-public-health-protocols",
@@ -1542,7 +1708,7 @@
    "name": "Progress Report - Public Health Protocols",
    "x": 766,
    "y": 1463,
-   "description": "Collection: JTF notes"
+   "collection": "JTF notes"
   },
   {
    "id": "artifact-medical-vocation",
@@ -1550,7 +1716,7 @@
    "name": "Medical vocation",
    "x": 1905,
    "y": 1629,
-   "description": "Collection: JTF notes"
+   "collection": "JTF notes"
   },
   {
    "id": "artifact-moral-conflict",
@@ -1558,7 +1724,7 @@
    "name": "Moral conflict",
    "x": 1209,
    "y": 500,
-   "description": "Collection: Citizen Notes"
+   "collection": "Citizen Notes"
   },
   {
    "id": "artifact-christmas-list",
@@ -1566,7 +1732,7 @@
    "name": "Christmas List",
    "x": 1325,
    "y": 621,
-   "description": "Collection: Citizen Notes"
+   "collection": "Citizen Notes"
   },
   {
    "id": "artifact-scam-warning",
@@ -1574,7 +1740,7 @@
    "name": "Scam warning",
    "x": 961,
    "y": 883,
-   "description": "Collection: Citizen Notes"
+   "collection": "Citizen Notes"
   },
   {
    "id": "artifact-to-do-list-spring-blossom",
@@ -1582,7 +1748,7 @@
    "name": "TO DO LIST - SPRING BLOSSOM",
    "x": 883,
    "y": 942,
-   "description": "Collection: Citizen Notes"
+   "collection": "Citizen Notes"
   },
   {
    "id": "artifact-a-daughter-s-letter",
@@ -1590,7 +1756,7 @@
    "name": "A daughter's letter",
    "x": 1000,
    "y": 1176,
-   "description": "Collection: Citizen Notes"
+   "collection": "Citizen Notes"
   },
   {
    "id": "artifact-thank-you-note",
@@ -1598,7 +1764,7 @@
    "name": "Thank you note",
    "x": 1338,
    "y": 1435,
-   "description": "Collection: Citizen Notes"
+   "collection": "Citizen Notes"
   },
   {
    "id": "artifact-supreme-jewelry-store-order-receipt",
@@ -1606,7 +1772,7 @@
    "name": "Supreme Jewelry Store - Order Receipt",
    "x": 636,
    "y": 1624,
-   "description": "Collection: Citizen Notes"
+   "collection": "Citizen Notes"
   },
   {
    "id": "artifact-mouse-chili",
@@ -1614,7 +1780,7 @@
    "name": "Mouse chili",
    "x": 1272,
    "y": 1751,
-   "description": "Collection: Citizen Notes"
+   "collection": "Citizen Notes"
   },
   {
    "id": "artifact-love-at-first-sight",
@@ -1622,7 +1788,7 @@
    "name": "Love at first sight",
    "x": 999,
    "y": 356,
-   "description": "Collection: Cryptic Clues"
+   "collection": "Cryptic Clues"
   },
   {
    "id": "artifact-secret-message",
@@ -1630,7 +1796,7 @@
    "name": "Secret message",
    "x": 896,
    "y": 403,
-   "description": "Collection: Cryptic Clues"
+   "collection": "Cryptic Clues"
   },
   {
    "id": "artifact-memory-helper",
@@ -1638,7 +1804,7 @@
    "name": "Memory helper",
    "x": 959,
    "y": 492,
-   "description": "Collection: Cryptic Clues"
+   "collection": "Cryptic Clues"
   },
   {
    "id": "artifact-order-at-disposal",
@@ -1646,7 +1812,8 @@
    "name": "Order at disposal",
    "x": 472,
    "y": 874,
-   "description": "Location: Next to train car · Collection: Cryptic Clues"
+   "description": "Location: Next to train car",
+   "collection": "Cryptic Clues"
   },
   {
    "id": "artifact-wedding-invitation-card",
@@ -1654,7 +1821,7 @@
    "name": "Wedding Invitation Card",
    "x": 1317,
    "y": 880,
-   "description": "Collection: Cryptic Clues"
+   "collection": "Cryptic Clues"
   },
   {
    "id": "artifact-couple-reminder",
@@ -1662,7 +1829,7 @@
    "name": "Couple Reminder",
    "x": 1320,
    "y": 879,
-   "description": "Collection: Cryptic Clues"
+   "collection": "Cryptic Clues"
   },
   {
    "id": "artifact-missing-daughter",
@@ -1670,7 +1837,7 @@
    "name": "Missing daughter",
    "x": 1243,
    "y": 392,
-   "description": "Collection: Cryptic Clues"
+   "collection": "Cryptic Clues"
   },
   {
    "id": "artifact-insurance",
@@ -1678,7 +1845,7 @@
    "name": "Insurance",
    "x": 1480,
    "y": 1189,
-   "description": "Collection: Cryptic Clues"
+   "collection": "Cryptic Clues"
   },
   {
    "id": "artifact-birthday-gift",
@@ -1686,7 +1853,7 @@
    "name": "Birthday Gift",
    "x": 1202,
    "y": 1241,
-   "description": "Collection: Cryptic Clues"
+   "collection": "Cryptic Clues"
   },
   {
    "id": "artifact-missing-boss",
@@ -1694,7 +1861,7 @@
    "name": "Missing boss",
    "x": 1158,
    "y": 1328,
-   "description": "Collection: Cryptic Clues"
+   "collection": "Cryptic Clues"
   },
   {
    "id": "artifact-closed-restaurant",
@@ -1702,7 +1869,7 @@
    "name": "Closed restaurant",
    "x": 1862,
    "y": 1598,
-   "description": "Collection: Cryptic Clues"
+   "collection": "Cryptic Clues"
   },
   {
    "id": "audio_log-top-dog",
@@ -1710,7 +1877,7 @@
    "name": "Top Dog",
    "x": 959,
    "y": 488,
-   "description": "Collection: Sarah Kelly"
+   "collection": "Sarah Kelly"
   },
   {
    "id": "audio_log-a-complete-failure-of-governance",
@@ -1718,7 +1885,7 @@
    "name": "A Complete Failure of Governance",
    "x": 952,
    "y": 730,
-   "description": "Collection: Sarah Kelly"
+   "collection": "Sarah Kelly"
   },
   {
    "id": "audio_log-shared-sentiments",
@@ -1726,7 +1893,7 @@
    "name": "Shared Sentiments",
    "x": 444,
    "y": 897,
-   "description": "Collection: Sarah Kelly"
+   "collection": "Sarah Kelly"
   },
   {
    "id": "audio_log-doctor-s-orders",
@@ -1734,7 +1901,7 @@
    "name": "Doctor's Orders",
    "x": 1214,
    "y": 1118,
-   "description": "Collection: Sarah Kelly"
+   "collection": "Sarah Kelly"
   },
   {
    "id": "audio_log-pick-a-side",
@@ -1742,7 +1909,7 @@
    "name": "Pick a Side",
    "x": 626,
    "y": 599,
-   "description": "Collection: Raiders"
+   "collection": "Raiders"
   },
   {
    "id": "audio_log-apologies",
@@ -1750,7 +1917,7 @@
    "name": "Apologies",
    "x": 496,
    "y": 1262,
-   "description": "Collection: Raiders"
+   "collection": "Raiders"
   },
   {
    "id": "audio_log-hey-douchebag",
@@ -1758,7 +1925,7 @@
    "name": "Hey Douchebag",
    "x": 963,
    "y": 1279,
-   "description": "Collection: Raiders"
+   "collection": "Raiders"
   },
   {
    "id": "audio_log-law-of-the-jungle",
@@ -1766,7 +1933,7 @@
    "name": "Law of the Jungle",
    "x": 1012,
    "y": 1436,
-   "description": "Collection: Raiders"
+   "collection": "Raiders"
   },
   {
    "id": "audio_log-the-man-the-myth",
@@ -1774,7 +1941,8 @@
    "name": "The Man, the Myth",
    "x": 946,
    "y": 1746,
-   "description": "Collection: Raiders · Location: Corner of the wall."
+   "description": "Location: Corner of the wall.",
+   "collection": "Raiders"
   },
   {
    "id": "audio_log-family-first",
@@ -1782,7 +1950,7 @@
    "name": "Family First",
    "x": 1143,
    "y": 280,
-   "description": "Collection: Rikers"
+   "collection": "Rikers"
   },
   {
    "id": "audio_log-trapped",
@@ -1790,7 +1958,7 @@
    "name": "Trapped",
    "x": 632,
    "y": 577,
-   "description": "Collection: Rikers"
+   "collection": "Rikers"
   },
   {
    "id": "audio_log-enemy-informant",
@@ -1798,7 +1966,8 @@
    "name": "Enemy Informant",
    "x": 767,
    "y": 684,
-   "description": "Side Mission: No Coincidence · Collection: Rikers"
+   "description": "Side Mission: No Coincidence",
+   "collection": "Rikers"
   },
   {
    "id": "audio_log-a-glimmer-of-hope",
@@ -1806,7 +1975,8 @@
    "name": "A Glimmer of Hope",
    "x": 249,
    "y": 742,
-   "description": "Side Mission: Throat Slitter · Collection: Rikers"
+   "description": "Side Mission: Throat Slitter",
+   "collection": "Rikers"
   },
   {
    "id": "audio_log-heading-downtown",
@@ -1814,7 +1984,8 @@
    "name": "Heading Downtown",
    "x": 495,
    "y": 1282,
-   "description": "Side Mission: Resurgence Of Flame · Collection: Cleaners"
+   "description": "Side Mission: Resurgence Of Flame",
+   "collection": "Cleaners"
   },
   {
    "id": "audio_log-don-t-alert-the-cleaners",
@@ -1822,7 +1993,7 @@
    "name": "Don't Alert the Cleaners",
    "x": 848,
    "y": 699,
-   "description": "Collection: Cleaners"
+   "collection": "Cleaners"
   },
   {
    "id": "audio_log-exterminators",
@@ -1830,7 +2001,8 @@
    "name": "Exterminators",
    "x": 580,
    "y": 1586,
-   "description": "Collection: Cleaners · Location: In a pile of garbage at an alley east of the nearby Supply Run location."
+   "description": "Location: In a pile of garbage at an alley east of the nearby Supply Run location.",
+   "collection": "Cleaners"
   },
   {
    "id": "audio_log-cleaners-vs-freemen",
@@ -1838,7 +2010,7 @@
    "name": "Cleaners vs Freemen",
    "x": 1026,
    "y": 1689,
-   "description": "Collection: Cleaners"
+   "collection": "Cleaners"
   },
   {
    "id": "audio_log-power-struggle",
@@ -1846,7 +2018,7 @@
    "name": "Power Struggle",
    "x": 1613,
    "y": 1491,
-   "description": "Collection: Cleaners"
+   "collection": "Cleaners"
   },
   {
    "id": "audio_log-the-old-days",
@@ -1854,7 +2026,7 @@
    "name": "The Old Days",
    "x": 1335,
    "y": 1670,
-   "description": "Collection: Cleaners"
+   "collection": "Cleaners"
   },
   {
    "id": "audio_log-hard-choices",
@@ -1862,7 +2034,7 @@
    "name": "Hard Choices",
    "x": 1722,
    "y": 1720,
-   "description": "Collection: Cleaners"
+   "collection": "Cleaners"
   },
   {
    "id": "audio_log-gift-exchange",
@@ -1870,7 +2042,7 @@
    "name": "Gift Exchange",
    "x": 1031,
    "y": 453,
-   "description": "Collection: Civilians"
+   "collection": "Civilians"
   },
   {
    "id": "audio_log-down-comforter",
@@ -1878,7 +2050,7 @@
    "name": "Down Comforter",
    "x": 777,
    "y": 591,
-   "description": "Collection: Civilians"
+   "collection": "Civilians"
   },
   {
    "id": "audio_log-chopin",
@@ -1886,7 +2058,7 @@
    "name": "Chopin",
    "x": 1235,
    "y": 404,
-   "description": "Collection: Civilians"
+   "collection": "Civilians"
   },
   {
    "id": "audio_log-creepy-calls",
@@ -1894,7 +2066,7 @@
    "name": "Creepy Calls",
    "x": 809,
    "y": 824,
-   "description": "Collection: Civilians"
+   "collection": "Civilians"
   },
   {
    "id": "audio_log-a-question-of-defense",
@@ -1902,7 +2074,7 @@
    "name": "A Question of Defense",
    "x": 798,
    "y": 876,
-   "description": "Collection: Civilians"
+   "collection": "Civilians"
   },
   {
    "id": "audio_log-knicks-tickets",
@@ -1910,7 +2082,7 @@
    "name": "Knicks Tickets",
    "x": 1117,
    "y": 897,
-   "description": "Collection: Civilians"
+   "collection": "Civilians"
   },
   {
    "id": "audio_log-whiners",
@@ -1918,7 +2090,7 @@
    "name": "Whiners",
    "x": 880,
    "y": 938,
-   "description": "Collection: Civilians"
+   "collection": "Civilians"
   },
   {
    "id": "audio_log-chicken-vs-chicken",
@@ -1926,7 +2098,7 @@
    "name": "Chicken vs Chicken",
    "x": 883,
    "y": 938,
-   "description": "Collection: Civilians"
+   "collection": "Civilians"
   },
   {
    "id": "audio_log-the-essentials",
@@ -1934,7 +2106,7 @@
    "name": "The Essentials",
    "x": 815,
    "y": 1276,
-   "description": "Collection: Civilians"
+   "collection": "Civilians"
   },
   {
    "id": "audio_log-missing",
@@ -1942,7 +2114,7 @@
    "name": "Missing",
    "x": 1579,
    "y": 1138,
-   "description": "Collection: Civilians"
+   "collection": "Civilians"
   },
   {
    "id": "audio_log-bedtime-story",
@@ -1950,7 +2122,7 @@
    "name": "Bedtime Story",
    "x": 1265,
    "y": 951,
-   "description": "Collection: Civilians"
+   "collection": "Civilians"
   },
   {
    "id": "audio_log-goodbye-mom",
@@ -1958,7 +2130,7 @@
    "name": "Goodbye Mom",
    "x": 168,
    "y": 1706,
-   "description": "Collection: Civilians"
+   "collection": "Civilians"
   },
   {
    "id": "audio_log-first-date",
@@ -1966,7 +2138,7 @@
    "name": "First Date",
    "x": 1058,
    "y": 1542,
-   "description": "Collection: Civilians"
+   "collection": "Civilians"
   },
   {
    "id": "audio_log-on-your-own",
@@ -1974,7 +2146,7 @@
    "name": "On Your Own",
    "x": 1240,
    "y": 404,
-   "description": "Collection: JTF"
+   "collection": "JTF"
   },
   {
    "id": "audio_log-fools",
@@ -1982,7 +2154,7 @@
    "name": "Fools",
    "x": 964,
    "y": 453,
-   "description": "Collection: JTF"
+   "collection": "JTF"
   },
   {
    "id": "audio_log-daughters",
@@ -1990,7 +2162,7 @@
    "name": "Daughters",
    "x": 384,
    "y": 774,
-   "description": "Collection: JTF"
+   "collection": "JTF"
   },
   {
    "id": "audio_log-that-agent",
@@ -1998,7 +2170,8 @@
    "name": "That Agent",
    "x": 1017,
    "y": 1189,
-   "description": "Location: Outside the N.Y.C. Base of Operations · Collection: JTF"
+   "description": "Location: Outside the N.Y.C. Base of Operations",
+   "collection": "JTF"
   },
   {
    "id": "audio_log-the-liberty-island-debacle",
@@ -2006,7 +2179,7 @@
    "name": "The Liberty Island Debacle",
    "x": 480,
    "y": 1342,
-   "description": "Collection: JTF"
+   "collection": "JTF"
   },
   {
    "id": "audio_log-broken-watch",
@@ -2014,7 +2187,7 @@
    "name": "Broken Watch",
    "x": 1421,
    "y": 1363,
-   "description": "Collection: JTF"
+   "collection": "JTF"
   },
   {
    "id": "audio_log-saved",
@@ -2022,7 +2195,7 @@
    "name": "Saved",
    "x": 1339,
    "y": 1431,
-   "description": "Collection: JTF"
+   "collection": "JTF"
   },
   {
    "id": "audio_log-under-heavy-fire",
@@ -2030,7 +2203,7 @@
    "name": "Under Heavy Fire",
    "x": 1292,
    "y": 1642,
-   "description": "Collection: JTF"
+   "collection": "JTF"
   },
   {
    "id": "audio_log-happy-birthday",
@@ -2038,7 +2211,8 @@
    "name": "Happy Birthday",
    "x": 899,
    "y": 1748,
-   "description": "Collection: JTF · Location: On the table, inside of the tent."
+   "description": "Location: On the table, inside of the tent.",
+   "collection": "JTF"
   },
   {
    "id": "audio_log-backed-into-a-corner",
@@ -2046,7 +2220,10 @@
    "name": "Backed into a Corner",
    "x": 713,
    "y": 1791,
-   "description": "Side Mission: Pour Oil on the Fire · Collection: Freemen"
+   "description": "Side Mission: Pour Oil on the Fire",
+   "collection": "Freemen",
+   "district": "Chelsea",
+   "gameText": "The Freemen call for reinforcements."
   },
   {
    "id": "audio_log-heated-debate",
@@ -2054,7 +2231,9 @@
    "name": "Heated Debate",
    "x": 1583,
    "y": 1043,
-   "description": "Collection: Freemen"
+   "collection": "Freemen",
+   "district": "Garment",
+   "gameText": "Two Freemen argue about what to scavenge."
   },
   {
    "id": "audio_log-pecking-order",
@@ -2062,7 +2241,9 @@
    "name": "Pecking Order",
    "x": 678,
    "y": 1262,
-   "description": "Collection: Freemen"
+   "collection": "Freemen",
+   "district": "Hudson",
+   "gameText": "Freemen talk about what it takes to move up the ranks."
   },
   {
    "id": "audio_log-voluntary-resignation",
@@ -2070,7 +2251,10 @@
    "name": "Voluntary Resignation",
    "x": 243,
    "y": 1375,
-   "description": "Collection: Freemen · Location: Behind the truck, southeast of Hudson River Pier Landmark."
+   "description": "Location: Behind the truck, southeast of Hudson River Pier Landmark.",
+   "collection": "Freemen",
+   "district": "Chelsea",
+   "gameText": "A Freemen leader is told to step down or face retribution."
   },
   {
    "id": "audio_log-fighting-for-scraps",
@@ -2078,7 +2262,9 @@
    "name": "Fighting for Scraps",
    "x": 404,
    "y": 1009,
-   "description": "Collection: Freemen"
+   "collection": "Freemen",
+   "district": "Hudson",
+   "gameText": "A Freemen member radios headquarters about an internal conflict out in the field."
   },
   {
    "id": "audio_log-vandals",
@@ -2086,7 +2272,9 @@
    "name": "Vandals",
    "x": 495,
    "y": 883,
-   "description": "Collection: Freemen"
+   "collection": "Freemen",
+   "district": "Hudson Yards",
+   "gameText": "Rioters destroy beautiful street art."
   },
   {
    "id": "audio_log-homemade-weapon",
@@ -2094,7 +2282,9 @@
    "name": "Homemade Weapon",
    "x": 516,
    "y": 931,
-   "description": "Collection: Freemen"
+   "collection": "Freemen",
+   "district": "Hudson Yards",
+   "gameText": "The Freemen are stealing strange auto parts."
   },
   {
    "id": "side_mission-clinic-under-fire",
@@ -2111,7 +2301,8 @@
    "name": "JTF Communication",
    "x": 1010,
    "y": 1549,
-   "description": "Side Mission: Clinic Under Fire · Collection: JTF"
+   "description": "Side Mission: Clinic Under Fire",
+   "collection": "JTF"
   },
   {
    "id": "side_mission-lord-of-street",
@@ -2713,8 +2904,10 @@
    "name": "Competition For Power",
    "x": 633,
    "y": 1194,
-   "description": "Unlocks at level 33 (per the community map).",
-   "level": 33
+   "description": "Requires level 33. Recommended power score 4.1k.",
+   "level": 33,
+   "power": "4.1k",
+   "verified": true
   },
   {
    "id": "nest_investigation-nyc-349",
@@ -3336,6 +3529,50 @@
    "y": 1220,
    "difficulty": "Challenging",
    "approx": true
+  },
+  {
+   "id": "nest-hells-kitchen-west",
+   "category": "nest",
+   "name": "Hostile Nest",
+   "x": 418,
+   "y": 738,
+   "description": "On the in-game map at the west end of Hell's Kitchen.",
+   "verified": true
+  },
+  {
+   "id": "offmap-chinatown-rescue",
+   "category": "offmap",
+   "name": "Chinatown Rescue",
+   "x": 70,
+   "y": 589,
+   "verified": true,
+   "description": "A bubble on the left edge of the in-game map, 3.89km away. Open it there to launch the mission."
+  },
+  {
+   "id": "offmap-wall-street-woes",
+   "category": "offmap",
+   "name": "Wall Street Woes",
+   "x": 70,
+   "y": 812,
+   "verified": true,
+   "description": "A bubble on the left edge of the in-game map, 5.14km away. Open it there to launch the mission. The Trinity Church Field Hospital near Wall Street in Lower Manhattan has come under heavy attack.",
+   "inside": [
+    {
+     "type": "ECHO",
+     "name": "Liberty Island",
+     "district": "Garment",
+     "gameText": "Jax informs his entourage that they're going to Liberty Island."
+    }
+   ]
+  },
+  {
+   "id": "offmap-liberty-and-justice-for-all",
+   "category": "offmap",
+   "name": "Liberty and Justice for All",
+   "x": 70,
+   "y": 1069,
+   "verified": true,
+   "description": "Shown as \"Liberty Island\" on the left edge of the in-game map, 7.98km away. Open it there to launch the mission."
   }
  ]
 }

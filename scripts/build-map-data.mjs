@@ -69,27 +69,27 @@ const slug = (s) => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g
 /* ---------- Categories ---------- */
 const CATEGORIES = [
   // Hubs
-  { id: 'safe_house', label: 'Safe Houses', group: 'Hubs', color: '#F26822', icon: 'house', defaultOn: true },
-  { id: 'base', label: 'Base of Operations', group: 'Hubs', color: '#FFB020', icon: 'base', defaultOn: true },
-  { id: 'settlement', label: 'Settlements', group: 'Hubs', color: '#34D399', icon: 'tent', defaultOn: true },
-  { id: 'clan_fob', label: 'Clan FOB', group: 'Hubs', color: '#A78BFA', icon: 'flag', defaultOn: true },
+  { id: 'safe_house', label: 'Safe Houses', group: 'Hubs', color: '#F7841F', icon: 'house', defaultOn: true },
+  { id: 'base', label: 'Base of Operations', group: 'Hubs', color: '#F7841F', icon: 'base', defaultOn: true },
+  { id: 'settlement', label: 'Settlements', group: 'Hubs', color: '#9BE564', icon: 'house', defaultOn: true },
+  { id: 'clan_fob', label: 'Clan FOB', group: 'Hubs', color: '#9BE564', icon: 'shield', defaultOn: true },
   { id: 'services', label: 'Vendors & Stations', group: 'Hubs', color: '#60A5FA', icon: 'wrench', defaultOn: false },
-  { id: 'landmark', label: 'Landmarks', group: 'Hubs', color: '#E5E7EB', icon: 'landmark', defaultOn: false },
+  { id: 'landmark', label: 'Landmarks', group: 'Hubs', color: '#F7841F', icon: 'pin', defaultOn: true },
   // Missions & activities
   { id: 'main_mission', label: 'Main Missions', group: 'Missions & Activities', color: '#F87171', icon: 'star', defaultOn: true },
   { id: 'side_mission', label: 'Side Missions', group: 'Missions & Activities', color: '#FBBF24', icon: 'side', defaultOn: false },
-  { id: 'instance', label: 'Mission Instances', group: 'Missions & Activities', color: '#F472B6', icon: 'portal', defaultOn: true },
-  { id: 'world_event', label: 'World Events', group: 'Missions & Activities', color: '#FB923C', icon: 'alert', defaultOn: false, wip: true },
-  { id: 'nest', label: 'Hostile Nests', group: 'Missions & Activities', color: '#EF4444', icon: 'nest', defaultOn: false, wip: true },
+  { id: 'instance', label: 'Mission Instances', group: 'Missions & Activities', color: '#E8E8EA', icon: 'hex', defaultOn: true },
+  { id: 'world_event', label: 'World Events', group: 'Missions & Activities', color: '#EF4B3C', icon: 'alert', defaultOn: false, wip: true },
+  { id: 'nest', label: 'Hostile Nests', group: 'Missions & Activities', color: '#EF4B3C', icon: 'nest', defaultOn: false, wip: true },
   { id: 'nest_investigation', label: 'Nest Investigations', group: 'Missions & Activities', color: '#FCA5A5', icon: 'search', defaultOn: false, wip: true },
   { id: 'missing_signal', label: 'Missing Signals', group: 'Missions & Activities', color: '#22D3EE', icon: 'radar', defaultOn: false, wip: true },
   // Collectibles (trackable)
   { id: 'encrypted_crate', label: 'Encrypted Crates', group: 'Collectibles', color: '#F59E0B', icon: 'lock', defaultOn: true, trackable: true },
-  { id: 'shd_crate', label: 'SHD Crates', group: 'Collectibles', color: '#10B981', icon: 'crate', defaultOn: false, trackable: true },
-  { id: 'echo', label: 'ECHOs', group: 'Collectibles', color: '#38BDF8', icon: 'echo', defaultOn: false, trackable: true },
-  { id: 'artifact', label: 'Artifacts', group: 'Collectibles', color: '#FDE047', icon: 'gem', defaultOn: false, trackable: true },
-  { id: 'audio_log', label: 'Audio Logs', group: 'Collectibles', color: '#C084FC', icon: 'audio', defaultOn: false, trackable: true },
-  { id: 'ammo', label: 'Ammo Crates', group: 'Collectibles', color: '#94A3B8', icon: 'ammo', defaultOn: false },
+  { id: 'shd_crate', label: 'SHD Crates', group: 'Collectibles', color: '#F5C518', icon: 'crate', defaultOn: false, trackable: true },
+  { id: 'echo', label: 'ECHOs', group: 'Collectibles', color: '#4FC3F7', icon: 'echo', defaultOn: false, trackable: true },
+  { id: 'artifact', label: 'Artifacts', group: 'Collectibles', color: '#E9B949', icon: 'frame', defaultOn: false, trackable: true },
+  { id: 'audio_log', label: 'Audio Logs', group: 'Collectibles', color: '#B794F6', icon: 'audio', defaultOn: false, trackable: true },
+  { id: 'ammo', label: 'Ammo Crates', group: 'Hubs', color: '#D9DCE1', icon: 'ammo', defaultOn: false },
   // Dark Zone
   { id: 'dz_extraction', label: 'Extraction Zones', group: 'Dark Zone', color: '#2DD4BF', icon: 'extract', defaultOn: true, approx: true },
   { id: 'dz_landmark', label: 'DZ Landmarks', group: 'Dark Zone', color: '#FACC15', icon: 'landmark', defaultOn: true, approx: true },
@@ -284,6 +284,79 @@ for (const g of merged) {
   pois.push(poi);
 }
 
+/* ---------- What we checked in the game itself (src/data/map-sources/game-checks.json) ---------- */
+const GAME = read('src/data/map-sources/game-checks.json');
+const byId = Object.fromEntries(pois.map((p) => [p.id, p]));
+// Positions measured on the in-game map. Mission groups that sit on a hub move with it.
+for (const [id, [x, y]] of Object.entries(GAME.moves)) {
+  const p = byId[id];
+  if (!p) { console.error(`game-checks: no marker ${id}`); process.exit(1); }
+  const dx = x - p.x; const dy = y - p.y;
+  p.x = x; p.y = y; p.verified = true;
+  if (HUB_CATS.has(p.category)) {
+    for (const q of pois) {
+      if ((q.category === 'main_mission' || q.category === 'side_mission') && q.name.endsWith(` at ${p.name}`)) { q.x += dx; q.y += dy; }
+    }
+  }
+}
+for (const p of pois) {
+  if ((GAME.verifiedCategories.includes(p.category) && !p.approx) || GAME.verifiedIds.includes(p.id)) p.verified = true;
+}
+for (const a of GAME.add) { pois.push({ ...a, verified: true }); byId[a.id] = a; }
+// Collection, district and the game's own description for collectibles.
+const collOf = (p) => (/Collection:\s*([^·]+?)(?:\s·|$)/.exec(p.description || '') || [])[1];
+const itemInfo = (name, cat) => GAME.items[`${name}#${cat}`] || GAME.items[name];
+for (const p of pois) {
+  if (!['echo', 'artifact', 'audio_log', 'shd_crate', 'encrypted_crate'].includes(p.category)) continue;
+  const m = /^(.*?)\s*\(ECHO (\d+)\)$/.exec(p.name);
+  if (m) { p.name = m[1]; p.number = Number(m[2]); }
+  const coll = collOf(p);
+  if (coll) p.collection = coll.trim();
+  // keep only the "where" part of the community description; the collection has its own field now
+  if (p.description) {
+    const rest = p.description.split(' · ').filter((s) => !/^Collection:/.test(s)).join(' · ').trim();
+    if (rest) p.description = rest; else delete p.description;
+  }
+  const info = itemInfo(p.name, p.category === 'echo' ? 'echo' : p.category === 'audio_log' ? 'audio' : p.category);
+  if (info && info.district) {
+    p.district = info.district;
+    if (info.text) p.gameText = info.text;
+  }
+  const note = GAME.notes[p.name];
+  if (note) p.note = note;
+}
+// Items inside instanced missions get the game's district and text too.
+const enrichInside = (list) => (list || []).map((i) => {
+  const info = itemInfo(i.name, i.type === 'ECHO' ? 'echo' : 'audio');
+  return { ...i, ...(info?.district ? { district: info.district } : {}), ...(info?.text ? { gameText: info.text } : {}) };
+});
+for (const p of pois) if (p.inside) p.inside = enrichInside(p.inside);
+// Mission levels read off the game's mission panels.
+for (const p of pois) {
+  const lv = GAME.levels[p.name];
+  if (lv && (p.category === 'instance' || p.category === 'side_mission' || p.category === 'main_mission')) {
+    p.level = lv.level; p.power = lv.power; p.description = `Requires level ${lv.level}. Recommended power score ${lv.power}.`; p.verified = true;
+  }
+  if (p.missions) for (const m of p.missions) if (GAME.levels[m.name]) { m.level = GAME.levels[m.name].level; m.verified = true; }
+}
+// Off-map instances: bubbles on the edge of the in-game map. They get an edge marker so they can be found and shared.
+for (const o of offMap) {
+  if (insideInstances[o.name]) o.inside = enrichInside(insideInstances[o.name]);
+  const b = GAME.offMapBubbles.find((x) => x.name === o.name);
+  if (b) {
+    o.distance = b.distance; if (b.about) o.about = b.about; if (b.bubble) o.bubble = b.bubble;
+    pois.push({
+      id: `offmap-${slug(o.name)}`, category: 'offmap', name: o.name, x: 70, y: b.y, verified: true,
+      description: `${b.bubble ? `Shown as "${b.bubble}" on` : 'A bubble on'} the left edge of the in-game map, ${b.distance} away. Open it there to launch the mission.${b.about ? ' ' + b.about : ''}`,
+      ...(o.inside ? { inside: o.inside } : {}),
+    });
+  }
+}
+const clanFob = pois.find((p) => p.category === 'clan_fob');
+if (clanFob) { clanFob.verified = true; clanFob.description = `Instanced clan hub. On the in-game map it is a bubble at the top edge, ${GAME.offMapBubbles.find((b) => b.name === 'Clan FOB').distance} away.`; }
+CATEGORIES.splice(CATEGORIES.findIndex((c) => c.id === 'instance') + 1, 0,
+  { id: 'offmap', label: 'Off-map Missions', group: 'Missions & Activities', color: '#E8E8EA', icon: 'hex', defaultOn: true });
+
 // Sanity: everything must sit inside the coordinate space.
 const outside = pois.filter((p) => p.x < 0 || p.y < 0 || p.x > COORD_W || p.y > COORD_H);
 if (outside.length) {
@@ -302,6 +375,8 @@ const out = {
     sources: [NYC.source, DZ.source],
     license: 'https://creativecommons.org/licenses/by-sa/3.0/',
   },
+  checked: GAME.checked,
+  collections: GAME.collections,
   categories: CATEGORIES.map((c) => ({ ...c, count: counts[c.id] || 0 })).filter((c) => c.count > 0),
   offMap,
   pois,

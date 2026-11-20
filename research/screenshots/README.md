@@ -39,6 +39,11 @@ other picture. What was done to each, so it can be redone:
 | `builds/division-resurgence-unflinching-bulwark-build-tiktokandy-loadout`, `builds/division-resurgence-tiktokandy-big-drum-unflinching-ii-card` | `4GoB017732U` | see the build page's commit | Cropped to the game screen (no webcam). |
 | `guides/division-resurgence-stats-sheet-double-barrel-in-hand`, `guides/division-resurgence-stats-sheet-vector-in-hand` | `RVgOTMB4B8o` | see the stats guide's commit | Cropped to the stats panel. |
 | `guides/division-resurgence-precious-cargo-four-bosses` | `niOtrLdkPrI` | 10:56 | Cropped to the objective tracker. |
+| `guides/division-resurgence-echo-locations-echo-hologram` | `8tbQ7WIrXu8` | 0:30 | Cropped above the subtitles and the Skip button; the recorder's touch dot painted out. Creator not credited (owner's request). |
+| `guides/division-resurgence-echo-locations-collectibles-screen` | `8tbQ7WIrXu8` | 0:17 | Full frame; mouse cursor painted out. |
+| `guides/division-resurgence-shd-crate-locations-in-game-map` | `LH_49KKa_eg` | 0:06 | Cropped to the map (no tabs, no filter column); cursor and touch dot painted out. |
+| `guides/division-resurgence-collectibles-guide-mysteries-screen` | `VOZD9huBi2c` | 1:30.5 | Full frame; mouse cursor painted out. |
+| `guides/division-resurgence-collectibles-guide-tracked-artifact-map` | `VOZD9huBi2c` | 0:00.5 | Cropped below the tabs and left of the filter column; touch dot and cursor painted out. |
 
 Rules for these: never a frame with another player's name readable in it (crop it out or pick another frame), never a
 creator's logo, webcam or caption, and never paint a logo or watermark out: pick a clean frame or skip the picture.

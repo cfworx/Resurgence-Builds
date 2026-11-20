@@ -1,0 +1,322 @@
+{
+ "_about": "What we checked against the game itself (owner's in-game map screenshots and collectible footage, November 20, 2026). scripts/build-map-data.mjs applies it on top of the community map. Positions are map coordinates (2190x1920). Icon positions were measured by lining the game's map up with our base map (feature matching, about 1 to 2 px error) and taking the ground point under each icon.",
+ "checked": "2026-11-20",
+ "moves": {
+  "safe_house-dante-s-run": [
+   702,
+   649
+  ],
+  "safe_house-camp-hudson": [
+   262,
+   1629
+  ],
+  "safe_house-autumn-s-hope": [
+   1256,
+   413
+  ],
+  "safe_house-kerman-station": [
+   452,
+   1004
+  ],
+  "safe_house-the-cavern": [
+   1264,
+   951
+  ],
+  "safe_house-lazarus-rest": [
+   981,
+   464
+  ],
+  "safe_house-the-meat-locker": [
+   1353,
+   1447
+  ],
+  "settlement-spring-blossom-settlement": [
+   903,
+   962
+  ],
+  "base-nyc-base-of-operations": [
+   1031,
+   1169
+  ],
+  "instance-take-the-castle": [
+   722,
+   428
+  ],
+  "instance-precious-cargo": [
+   371,
+   1828
+  ],
+  "instance-on-the-radio": [
+   673,
+   1397
+  ],
+  "instance-water-is-life": [
+   1321,
+   1700
+  ],
+  "instance-a-new-enemy": [
+   919,
+   916
+  ],
+  "artifact-antique-bird-call": [
+   1200,
+   361
+  ],
+  "artifact-black-jade-cat": [
+   1096,
+   297
+  ],
+  "artifact-handmade-dreamcatcher": [
+   490,
+   863
+  ],
+  "artifact-wishbone": [
+   1737,
+   1373
+  ],
+  "artifact-medicinal-plants-book": [
+   786,
+   1777
+  ]
+ },
+ "verifiedCategories": [
+  "safe_house",
+  "base",
+  "settlement",
+  "landmark",
+  "instance",
+  "shd_crate"
+ ],
+ "verifiedIds": [
+  "artifact-antique-bird-call",
+  "artifact-black-jade-cat",
+  "artifact-handmade-dreamcatcher",
+  "artifact-wishbone",
+  "artifact-medicinal-plants-book"
+ ],
+ "add": [
+  {
+   "id": "nest-hells-kitchen-west",
+   "category": "nest",
+   "name": "Hostile Nest",
+   "x": 418,
+   "y": 738,
+   "description": "On the in-game map at the west end of Hell's Kitchen."
+  }
+ ],
+ "levels": {
+  "On The Radio": {
+   "level": 26,
+   "power": "4.0k",
+   "district": "Pennsylvania Plaza"
+  },
+  "Competition For Power": {
+   "level": 33,
+   "power": "4.1k",
+   "district": "Hudson Yards"
+  }
+ },
+ "offMapBubbles": [
+  {
+   "name": "Clan FOB",
+   "edge": "top",
+   "distance": "5.31km"
+  },
+  {
+   "name": "Chinatown Rescue",
+   "edge": "left",
+   "distance": "3.89km",
+   "y": 589
+  },
+  {
+   "name": "Wall Street Woes",
+   "edge": "left",
+   "distance": "5.14km",
+   "y": 812,
+   "about": "The Trinity Church Field Hospital near Wall Street in Lower Manhattan has come under heavy attack."
+  },
+  {
+   "name": "Liberty and Justice for All",
+   "edge": "left",
+   "distance": "7.98km",
+   "bubble": "Liberty Island",
+   "y": 1069
+  }
+ ],
+ "collections": {
+  "echo": {
+   "label": "ECHOs",
+   "total": 24,
+   "stageReward": "Each reward stage paid 20 Phoenix Credits, 2,000 credits and two crafting materials (two of each) in the footage."
+  },
+  "Mysteries": {
+   "total": 5,
+   "stageReward": "Each reward stage paid 10 Phoenix Credits, 2,000 credits and two crafting materials (five of each) in the footage."
+  },
+  "Freemen": {
+   "total": 11
+  },
+  "shd_crate": {
+   "total": 13,
+   "reward": "Each SHD crate gives a purple skill mod chipset for your specialization, 40 Phoenix Credits, 5,000 credits and some materials, and opening them counts toward the exploration commendations."
+  }
+ },
+ "items": {
+  "False Leads": {
+   "district": "Pennsylvania Plaza",
+   "text": "Desperate civilians steal JTF supplies and try to frame someone else for the deed."
+  },
+  "Squab": {},
+  "Building Spring Blossom": {},
+  "Begging for Mercy": {
+   "district": "Tenderloin",
+   "text": "An elderly civilian tries to convince the Cleaners that he and his friends are not contagious."
+  },
+  "Cleaners on the Ropes": {
+   "district": "Tenderloin",
+   "text": "An encounter between Cleaners and a JTF patrol."
+  },
+  "Happy Birthday#echo": {
+   "district": "Hell's Kitchen",
+   "text": "Two parents throw a makeshift birthday party for their little girl."
+  },
+  "Hope": {
+   "district": "Hell's Kitchen",
+   "text": "A civilian has a hard time dealing with the loss of her husband."
+  },
+  "Triage": {
+   "district": "Clinton",
+   "text": "A captive JTF soldier pleads for medical attention. It doesn't go well."
+  },
+  "Little Boy Lost": {
+   "district": "Clinton",
+   "text": "Little Noah is looking for his aunt."
+  },
+  "Slave Trade": {
+   "district": "Hudson Yards",
+   "text": "Freemen sort through captured slaves and decide where to put them to work."
+  },
+  "Kidnapped": {
+   "district": "Chelsea",
+   "text": "Freemen leader Arthur King and his lackeys interrogate Gabrielle Liu."
+  },
+  "No Escape": {
+   "district": "Chelsea",
+   "text": "A small group of civilians try to escape Manhattan."
+  },
+  "Street Justice": {
+   "district": "Times Square",
+   "text": "To a low-level drug dealer, Agent Sarah Kelly is judge, jury, and executioner."
+  },
+  "Liberty Island": {
+   "district": "Garment",
+   "text": "Jax informs his entourage that they're going to Liberty Island."
+  },
+  "Survival of the Fittest": {
+   "district": "Hell's Kitchen",
+   "text": "A civilian tries to take advantage of a fight between Rikers and Raiders."
+  },
+  "Clearing out the Cleaners": {
+   "district": "Clinton",
+   "text": "Ken Ito watches his men have some fun with a handful of defeated Cleaners."
+  },
+  "Power Struggle#echo": {
+   "district": "Hudson Yards",
+   "text": "Upon the death of Arthur King, the Freemen splintered into factions that went for each other's throats."
+  },
+  "Deadly Confrontation": {
+   "district": "Chelsea",
+   "text": "An encounter between the JTF, SHD and the Freemen goes south and causes heavy casualties."
+  },
+  "Lambs to Slaughter": {
+   "district": "Clinton",
+   "text": "Two Rikers talk about murdering innocent civilians."
+  },
+  "Run!": {
+   "district": "Chelsea",
+   "text": "A woman escapes from the Cleaners."
+  },
+  "Ambush": {
+   "district": "Hudson Yards",
+   "text": "A JTF escort is ambushed by two Rikers."
+  },
+  "Baby": {
+   "district": "Hudson Yards",
+   "text": "Two Cleaners argue over killing a baby."
+  },
+  "A Difference of Opinion": {
+   "district": "Garment District",
+   "text": "Freemen fight over supplies."
+  },
+  "Up Close and Personal": {
+   "district": "Chelsea",
+   "text": "Rogue Agent Javier Kajika ambushes a squad of JTF soldiers."
+  },
+  "Heated Debate": {
+   "district": "Garment",
+   "text": "Two Freemen argue about what to scavenge."
+  },
+  "Pecking Order": {
+   "district": "Hudson",
+   "text": "Freemen talk about what it takes to move up the ranks."
+  },
+  "Voluntary Resignation": {
+   "district": "Chelsea",
+   "text": "A Freemen leader is told to step down or face retribution."
+  },
+  "Fighting for Scraps": {
+   "district": "Hudson",
+   "text": "A Freemen member radios headquarters about an internal conflict out in the field."
+  },
+  "Vandals": {
+   "district": "Hudson Yards",
+   "text": "Rioters destroy beautiful street art."
+  },
+  "Homemade Weapon": {
+   "district": "Hudson Yards",
+   "text": "The Freemen are stealing strange auto parts."
+  },
+  "Backed into a Corner": {
+   "district": "Chelsea",
+   "text": "The Freemen call for reinforcements."
+  },
+  "Know-how": {
+   "district": "Chelsea",
+   "text": "Freemen Conclave Member Tony Barr talks about life before the crisis."
+  },
+  "Incompetent": {
+   "district": "Chelsea",
+   "text": "Two Freemen discuss what to do with a clumsy slave."
+  },
+  "Glad To Be Freemen": {
+   "district": "Chelsea",
+   "text": "Freemen talk about how they're glad they joined up."
+  },
+  "Rust Bucket": {
+   "district": "Chelsea",
+   "text": "Freemen complain about living on a ship."
+  },
+  "Antique bird call": {
+   "district": "Times Square",
+   "text": "Vintage Victorian bird call whistle. Reproduces the song of a Yellow-billed magpie."
+  },
+  "Black Jade Cat": {
+   "district": "Clinton",
+   "text": "This statuette is a testimony of cats' extended presence in human culture."
+  },
+  "Handmade dreamcatcher": {
+   "district": "Hudson Yards"
+  },
+  "Wishbone": {
+   "district": "Tenderloin",
+   "text": "A wishbone from a turkey. Good luck for the person. Not the chicken."
+  },
+  "Medicinal Plants Book": {
+   "district": "Chelsea",
+   "text": "This kind of book, exposing how common plants can help with lesser harms, regained massive popularity."
+  }
+ },
+ "notes": {
+  "SHD Crate 12": "Players reported in April that this crate could not be reached. Tell us if you open it."
+ }
+}

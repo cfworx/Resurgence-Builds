@@ -791,6 +791,54 @@
   "thumb": "/images/guides/division-resurgence-codes-redeem-guide-hero-thumb.webp",
   "legacy": true
  },
+ "/images/guides/division-resurgence-collectibles-guide-mysteries-screen-1200.webp": {
+  "width": 1200,
+  "height": 675,
+  "srcset": [
+   [
+    480,
+    "/images/guides/division-resurgence-collectibles-guide-mysteries-screen-480.webp"
+   ],
+   [
+    800,
+    "/images/guides/division-resurgence-collectibles-guide-mysteries-screen-800.webp"
+   ],
+   [
+    1200,
+    "/images/guides/division-resurgence-collectibles-guide-mysteries-screen-1200.webp"
+   ],
+   [
+    1600,
+    "/images/guides/division-resurgence-collectibles-guide-mysteries-screen-1600.webp"
+   ]
+  ],
+  "small": "/images/guides/division-resurgence-collectibles-guide-mysteries-screen-480.webp",
+  "thumb": "/images/guides/division-resurgence-collectibles-guide-mysteries-screen-thumb.webp"
+ },
+ "/images/guides/division-resurgence-collectibles-guide-tracked-artifact-map-1200.webp": {
+  "width": 1200,
+  "height": 669,
+  "srcset": [
+   [
+    480,
+    "/images/guides/division-resurgence-collectibles-guide-tracked-artifact-map-480.webp"
+   ],
+   [
+    800,
+    "/images/guides/division-resurgence-collectibles-guide-tracked-artifact-map-800.webp"
+   ],
+   [
+    1200,
+    "/images/guides/division-resurgence-collectibles-guide-tracked-artifact-map-1200.webp"
+   ],
+   [
+    1600,
+    "/images/guides/division-resurgence-collectibles-guide-tracked-artifact-map-1600.webp"
+   ]
+  ],
+  "small": "/images/guides/division-resurgence-collectibles-guide-tracked-artifact-map-480.webp",
+  "thumb": "/images/guides/division-resurgence-collectibles-guide-tracked-artifact-map-thumb.webp"
+ },
  "/images/guides/division-resurgence-controller-guide-gamesir-1200.webp": {
   "width": 1200,
   "height": 630,
@@ -907,6 +955,54 @@
   ],
   "small": "/images/guides/division-resurgence-download-food-market-street-480.webp",
   "thumb": "/images/guides/division-resurgence-download-food-market-street-thumb.webp"
+ },
+ "/images/guides/division-resurgence-echo-locations-collectibles-screen-1200.webp": {
+  "width": 1200,
+  "height": 675,
+  "srcset": [
+   [
+    480,
+    "/images/guides/division-resurgence-echo-locations-collectibles-screen-480.webp"
+   ],
+   [
+    800,
+    "/images/guides/division-resurgence-echo-locations-collectibles-screen-800.webp"
+   ],
+   [
+    1200,
+    "/images/guides/division-resurgence-echo-locations-collectibles-screen-1200.webp"
+   ],
+   [
+    1600,
+    "/images/guides/division-resurgence-echo-locations-collectibles-screen-1600.webp"
+   ]
+  ],
+  "small": "/images/guides/division-resurgence-echo-locations-collectibles-screen-480.webp",
+  "thumb": "/images/guides/division-resurgence-echo-locations-collectibles-screen-thumb.webp"
+ },
+ "/images/guides/division-resurgence-echo-locations-echo-hologram-1200.webp": {
+  "width": 1200,
+  "height": 675,
+  "srcset": [
+   [
+    480,
+    "/images/guides/division-resurgence-echo-locations-echo-hologram-480.webp"
+   ],
+   [
+    800,
+    "/images/guides/division-resurgence-echo-locations-echo-hologram-800.webp"
+   ],
+   [
+    1200,
+    "/images/guides/division-resurgence-echo-locations-echo-hologram-1200.webp"
+   ],
+   [
+    1456,
+    "/images/guides/division-resurgence-echo-locations-echo-hologram-1456.webp"
+   ]
+  ],
+  "small": "/images/guides/division-resurgence-echo-locations-echo-hologram-480.webp",
+  "thumb": "/images/guides/division-resurgence-echo-locations-echo-hologram-thumb.webp"
  },
  "/images/guides/division-resurgence-endgame-tips-patrol-schedules-1200.webp": {
   "width": 1200,
@@ -1203,6 +1299,30 @@
   ],
   "small": "/images/guides/division-resurgence-server-status-no-entry-checkpoint-480.webp",
   "thumb": "/images/guides/division-resurgence-server-status-no-entry-checkpoint-thumb.webp"
+ },
+ "/images/guides/division-resurgence-shd-crate-locations-in-game-map-1200.webp": {
+  "width": 1200,
+  "height": 675,
+  "srcset": [
+   [
+    480,
+    "/images/guides/division-resurgence-shd-crate-locations-in-game-map-480.webp"
+   ],
+   [
+    800,
+    "/images/guides/division-resurgence-shd-crate-locations-in-game-map-800.webp"
+   ],
+   [
+    1200,
+    "/images/guides/division-resurgence-shd-crate-locations-in-game-map-1200.webp"
+   ],
+   [
+    1400,
+    "/images/guides/division-resurgence-shd-crate-locations-in-game-map-1400.webp"
+   ]
+  ],
+  "small": "/images/guides/division-resurgence-shd-crate-locations-in-game-map-480.webp",
+  "thumb": "/images/guides/division-resurgence-shd-crate-locations-in-game-map-thumb.webp"
  },
  "/images/guides/division-resurgence-stats-explained-shooting-range-1200.webp": {
   "width": 1200,
