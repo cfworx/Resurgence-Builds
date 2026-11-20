@@ -1,0 +1,55 @@
+name: Google Search Console
+
+# After every push to main: wait until the live site serves the new commit, resubmit the sitemap if
+# Google hasn't seen its newest version, and report what Google knows about the pages that changed
+# (indexed or not, last crawl), with links to Search Console. See scripts/google-search-console.mjs.
+#
+# Needs the repository secret GOOGLE_SERVICE_ACCOUNT_JSON: the JSON key of a service account that is a
+# Full user on the resurgencebuilds.com property. Without it the run only leaves a warning.
+# It does not use the Indexing API: Google only accepts that for job posting and livestream pages.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      pages:
+        description: Pages to inspect as well, separated by spaces (for example /guides/x/ /builds/y/)
+        required: false
+        default: ''
+      force:
+        description: Resubmit the sitemap even if nothing in it is newer
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+concurrency:
+  group: google-search-console
+  cancel-in-progress: true
+
+jobs:
+  google:
+    # Commits marked [CF-Pages-Skip] don't deploy, so there is nothing new to tell Google.
+    if: github.event_name == 'workflow_dispatch' || !contains(github.event.head_commit.message, '[CF-Pages-Skip]')
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 50
+          filter: blob:none
+          sparse-checkout: scripts
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Wait for the deploy, then tell Google
+        env:
+          GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
+          EXTRA_PATHS: ${{ inputs.pages }}
+          BEFORE: ${{ github.event.before }}
+          FORCE: ${{ inputs.force && '--force' || '' }}
+        run: node scripts/google-search-console.mjs --wait-for "$GITHUB_SHA" --since "$BEFORE" $FORCE

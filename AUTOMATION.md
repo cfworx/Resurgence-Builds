@@ -260,6 +260,14 @@ node scripts/indexnow.mjs          # pages whose sitemap date is within the last
 Bing's index is what ChatGPT, Copilot and DuckDuckGo search, so this is how a new post reaches them the same day instead
 of days later. It prints the pages it sent and "accepted". Skip it on `[CF-Pages-Skip]` state-only pushes.
 
+Google needs nothing from you: the GitHub workflow **Google Search Console** (`.github/workflows/google-search-console.yml`)
+runs after every push to main. It waits until the live site serves the new commit (the build writes it to `/build.txt`),
+resubmits the sitemap through the Search Console API when Google hasn't seen its newest version, and lists what Google
+knows about the changed pages (indexed or not, last crawl) in the run's summary on GitHub. It reads the repository
+secret `GOOGLE_SERVICE_ACCOUNT_JSON`; without it the run only leaves a warning. To inspect particular pages, run it from
+the Actions tab with their paths. Never add Google Indexing API calls: Google only accepts them for job postings and
+livestreams, and the service account also serves a job site that depends on that API.
+
 If nothing was post-worthy, still save the state, alone, with a commit message that **starts with `[CF-Pages-Skip]`**
 (Cloudflare Pages then skips the deploy, so there's no empty deploy):
 

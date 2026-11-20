@@ -73,6 +73,12 @@
 /llms-full.txt
   X-Robots-Tag: noindex
 
+# The commit this deploy was built from (scripts/write-build-stamp.mjs). Never cached, so the Google
+# Search Console workflow sees a new deploy the moment it is live; not a page for search results.
+/build.txt
+  Cache-Control: no-store
+  X-Robots-Tag: noindex
+
 # =============================================================================
 # Cloudflare hostnames: keep them out of search results
 # =============================================================================
