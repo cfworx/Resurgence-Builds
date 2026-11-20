@@ -48,6 +48,7 @@ const SCOPE = 'https://www.googleapis.com/auth/webmasters';
 // The two overrides exist only for testing against a local mock.
 const WEBMASTERS = process.env.GSC_TEST_WEBMASTERS || 'https://www.googleapis.com/webmasters/v3';
 const INSPECT = process.env.GSC_TEST_INSPECT || 'https://searchconsole.googleapis.com/v1/urlInspection/index:inspect';
+const RETRY_WAIT_MS = Number(process.env.GSC_TEST_RETRY_MS || 4000);
 
 const args = process.argv.slice(2);
 const flag = (name) => args.includes(name);
@@ -205,17 +206,23 @@ async function accessToken(cred) {
 }
 
 async function api(token, method, url, body) {
-  const res = await fetch(url, {
-    method,
-    headers: { Authorization: `Bearer ${token}`, ...(body ? { 'Content-Type': 'application/json' } : {}) },
-    body: body ? JSON.stringify(body) : undefined,
-  });
-  const text = await res.text();
-  let json = {};
-  try {
-    json = text ? JSON.parse(text) : {};
-  } catch {}
-  return { ok: res.ok, status: res.status, json, message: json.error?.message || text.slice(0, 300) };
+  // Google's side answers 500, 502 or 503 now and then ("The service is currently unavailable"): wait and ask again, twice at most.
+  for (let attempt = 0; ; attempt++) {
+    const res = await fetch(url, {
+      method,
+      headers: { Authorization: `Bearer ${token}`, ...(body ? { 'Content-Type': 'application/json' } : {}) },
+      body: body ? JSON.stringify(body) : undefined,
+    }).catch((e) => ({ ok: false, status: 0, text: async () => String(e?.message || e) }));
+    const text = await res.text();
+    let json = {};
+    try {
+      json = text ? JSON.parse(text) : {};
+    } catch {}
+    const out = { ok: res.ok, status: res.status, json, message: json.error?.message || text.slice(0, 300) };
+    const temporary = res.status === 0 || res.status === 500 || res.status === 502 || res.status === 503;
+    if (!temporary || attempt >= 2) return out;
+    await new Promise((r) => setTimeout(r, RETRY_WAIT_MS * (attempt + 1)));
+  }
 }
 
 const notEnabled = (r) => r.status === 403 && /has not been used|is disabled|SERVICE_DISABLED|accessNotConfigured/i.test(r.message + JSON.stringify(r.json));
@@ -318,7 +325,7 @@ for (const url of toInspect) {
   const s = result.indexStatusResult || {};
   const notes = [];
   if (s.googleCanonical && s.userCanonical && s.googleCanonical !== s.userCanonical) notes.push(`Google picked ${s.googleCanonical} as canonical`);
-  if (s.robotsTxtState && s.robotsTxtState !== 'ALLOWED') notes.push(`robots.txt: ${s.robotsTxtState}`);
+  if (s.robotsTxtState === 'DISALLOWED') notes.push('blocked by robots.txt');
   if (s.pageFetchState && !['SUCCESSFUL', 'PAGE_FETCH_STATE_UNSPECIFIED'].includes(s.pageFetchState)) notes.push(`fetch: ${s.pageFetchState}`);
   for (const item of result.richResultsResult?.detectedItems || []) {
     for (const it of item.items || []) {
