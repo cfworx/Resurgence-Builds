@@ -341,6 +341,30 @@
   "small": "/images/builds/division-resurgence-super-spreader-n95-agent-lab-480.webp",
   "thumb": "/images/builds/division-resurgence-super-spreader-n95-agent-lab-thumb.webp"
  },
+ "/images/builds/division-resurgence-tactical-pharma-build-pym-gamecat-loadout-1200.webp": {
+  "width": 1200,
+  "height": 675,
+  "srcset": [
+   [
+    480,
+    "/images/builds/division-resurgence-tactical-pharma-build-pym-gamecat-loadout-480.webp"
+   ],
+   [
+    800,
+    "/images/builds/division-resurgence-tactical-pharma-build-pym-gamecat-loadout-800.webp"
+   ],
+   [
+    1200,
+    "/images/builds/division-resurgence-tactical-pharma-build-pym-gamecat-loadout-1200.webp"
+   ],
+   [
+    1600,
+    "/images/builds/division-resurgence-tactical-pharma-build-pym-gamecat-loadout-1600.webp"
+   ]
+  ],
+  "small": "/images/builds/division-resurgence-tactical-pharma-build-pym-gamecat-loadout-480.webp",
+  "thumb": "/images/builds/division-resurgence-tactical-pharma-build-pym-gamecat-loadout-thumb.webp"
+ },
  "/images/builds/division-resurgence-tactical-pharma-season-2-build-ggreborn-loadout-1200.webp": {
   "width": 1200,
   "height": 567,

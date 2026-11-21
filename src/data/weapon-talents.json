@@ -232,7 +232,13 @@
     "id": "wt-31",
     "name": "Multitasking",
     "description": "Dealing damage to 3 enemies within 5 seconds grants +30% Skill Critical Damage for 12 seconds. Talent Cooldown: 8 seconds.",
-    "verifiedInGame": "2026-10-28"
+    "verifiedInGame": "2026-10-28",
+    "upgradedName": "Multitasking II",
+    "upgradedDescription": "Dealing damage to 3 enemies within 5 seconds grants +42% Skill Critical Damage for 12 seconds. Talent Cooldown: 8 seconds.",
+    "upgradedSource": {
+      "label": "PYM GameCat's Lady Death card (YouTube, 0:22)",
+      "url": "https://www.youtube.com/watch?v=-yH8RNiWBKQ&t=22s"
+    }
   },
   {
     "id": "wt-32",

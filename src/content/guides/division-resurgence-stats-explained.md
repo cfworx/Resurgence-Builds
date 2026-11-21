@@ -69,7 +69,7 @@ By what they do, the stats fall into three groups:
 
 - **Multi-Shot Chance:** when it triggers, a bullet "actually hits the enemy 2 times instead of 1," as TikTokAndy puts it. Skill Multi-Shot Chance is the skill-side version; TikTokAndy only explained the weapon one.
 - **Skill Intensity:** makes a skill's effects stronger, its healing and buffs included, not just its damage. TikTokAndy's Aegis healer leans on it for that reason.
-- **Skill Duration vs Cooldown Recovery:** AgentHuntzman's "breaking point": once a skill lasts longer than its cooldown, you have permanent uptime, and more cooldown recovery becomes less valuable. Our [hidden mechanics guide](/guides/hidden-mechanics-explained/) has the full explanation. On a gear card, Skill Cooldown Recovery shows with a minus sign (SannoNYC's Combat Mask "Cete" reads -4.34%). That's the cut to your cooldowns, not a penalty: the game describes it as "the extent to which Skill Cooldown is reduced."
+- **Skill Duration vs Cooldown Recovery:** AgentHuntzman's "breaking point": once a skill lasts longer than its cooldown, you have permanent uptime, and more cooldown recovery becomes less valuable. Our [hidden mechanics guide](/guides/hidden-mechanics-explained/) has the full explanation. On a gear card, Skill Cooldown Recovery shows with a minus sign (SannoNYC's Combat Mask "Cete" reads -4.34%). The Attributes tab totals it the same way: his whole loadout reads Skill Cooldown Recovery -15.96% in [a later video of the same build](https://www.youtube.com/watch?v=0c6ZAYPDsEE&t=25s). That's the cut to your cooldowns, not a penalty: the game describes it as "the extent to which Skill Cooldown is reduced."
 - **Signature Ability Charge Efficiency:** how fast your specialization's signature ability (the "super") fills.
 - **Healing Intensity vs Received Healing:** Healing Intensity boosts the heals you give; Received Healing boosts the heals you get, your own included. AgentHuntzman tested Received Healing on his medic in his May video, and his heals jumped from about 3,400 to about 5,000.
 - **All Weapon Damage vs damage types:** since Season 2 Phase 1, weapons no longer roll Blast, Shredding or Piercing damage bonuses. Ubisoft replaced them "in favor of All Weapon Damage or All Skill Damage" because a damage-type bonus on a gun of another type "didn't bring any benefits and was frustrating." A weapon can still show one, though: SannoNYC's level 50 Double Barrel reads Weapon Blast Damage +7.23%, so check your own guns' cards rather than assume.
@@ -126,6 +126,8 @@ The best evidence is the game's own recalibration preview, which lists a weapon'
 | Emergency Measures (backpack) | 50% Max Health below 20% Health | 70% (SannoNYC's All Hazards Nitro Backpack; the 30 second cooldown stays) | 1.4x |
 | Performer | +18% Weapon Damage within 20 m, -6% farther out | +25%, -8% (SannoNYC's First Wave Vector 45 ACP) | about 1.4x |
 | Calm and Collected | +30% Reload Speed behind cover | +42% (Demø2x's Scorpio) | 1.4x |
+| Multitasking | +30% Skill Critical Damage for 12 seconds | +42% (PYM GameCat's Lady Death; the 8 second cooldown stays) | 1.4x |
+| Deep Focus (body armor) | +28% Skill Duration, -10% Skill Radius | +40%, -10% (PYM GameCat's Chatzatz Chest) | about 1.4x (the Radius penalty stays) |
 | Siege | 37.50% Extra Health | about 52% (TikTokAndy) | about 1.4x |
 | Toymaker | +15% Skill Multi-Shot Chance | +21% (TikTokAndy) | 1.4x |
 | Still Alive | 30% of missing Health | 42% (TikTokAndy) | 1.4x |
@@ -211,6 +213,8 @@ For browsing outside the game, our [database](/database/) collects gear sets, ta
 - [GGReborn: COMPLETE Beginner's Guide, 7 Things You MUST Understand (YouTube)](https://www.youtube.com/watch?v=i85WYzmiTuw) (the Core Attributes popup at 1:37; seven of his OS Protocols from 6:25)
 - [Demø2x: Triple Threat Aegis Hybrid build (YouTube)](https://www.youtube.com/watch?v=qFG1it9DFBA) (Calm and Collected II at 12:10, Collateral Damage at level 50 at 11:20)
 - [SannoNYC: The Division Resurgence Vanguard Build (YouTube)](https://www.youtube.com/watch?v=RVgOTMB4B8o) (the sheet changing with the gun in hand; Performer II and Emergency Measures II; Close Quarters Menace at five of five)
+- [PYM GameCat: Tactical Pharma Build & Tactics (YouTube)](https://www.youtube.com/watch?v=-yH8RNiWBKQ) (Multitasking II at 0:22, Deep Focus II at 0:49)
+- [SannoNYC: The Division Resurgence Vanguard Build 2026 (YouTube)](https://www.youtube.com/watch?v=0c6ZAYPDsEE) (the same build later, with its full skill attributes at 0:25)
 - [@TheDivMobile: June 26, 2026 server hotfix](https://x.com/TheDivMobile/status/2070483985642197252) (80% damage reduction cap)
 - [Ubisoft Help Center: Patch Note, Season 1 Phase 3](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2521-patch-note---season-1-phase-3/) (Applied Demolition values)
 - [Ubisoft Help Center: Patch Note, Season 2 Phase 2](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2566-patch-note---season-2-phase-2/) (Strained, Dominating Presence)
