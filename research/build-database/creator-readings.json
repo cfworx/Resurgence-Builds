@@ -2674,6 +2674,39 @@
    "timestamp": "1:32-1:40",
    "url": "https://www.youtube.com/watch?v=-yH8RNiWBKQ&t=92s",
    "note": "Read from the video file the owner sent (November 21, 2026). No commentary; the upload date is not in the file."
+  },
+  {
+   "topic": "Missions",
+   "item": "Precious Cargo run (\"How Good Is 3-Star Collateral Damage?\")",
+   "reading": "A run of Rescue Gabrielle Liu (Precious Cargo) with a skill build: HUD shows Oxidizing Hive and two more skills; step 8 of 10 \"Reach the bridge\" at 14:11. Difficulty not shown in the frames read.",
+   "creator": "GGReborn",
+   "videoId": "0mQZ4wlvSRE",
+   "videoDate": "",
+   "timestamp": "0:00-21:00",
+   "url": "https://www.youtube.com/watch?v=0mQZ4wlvSRE&t=0s",
+   "note": "Read from the video file the owner sent (November 21, 2026). Gameplay with no commentary; the OS Protocol card is never opened, so the 3-star value is not on screen. The upload date is not in the file."
+  },
+  {
+   "topic": "Loadout stats",
+   "item": "GGReborn mid-mission loadout before a weapon swap",
+   "reading": "Power Score 27.65k; Firepower 229, Toughness 591, Engineering 2.85k; DPS 997.33k; Armor 11,004; Health 150,477. Equipment 150/150, Mods 394/400. The mid-mission menu answers \"Can't open now.\" for some tabs.",
+   "creator": "GGReborn",
+   "videoId": "0mQZ4wlvSRE",
+   "videoDate": "",
+   "timestamp": "14:02",
+   "url": "https://www.youtube.com/watch?v=0mQZ4wlvSRE&t=842s",
+   "note": "Read from the video file the owner sent (November 21, 2026). Gameplay with no commentary; the OS Protocol card is never opened, so the 3-star value is not on screen. The upload date is not in the file."
+  },
+  {
+   "topic": "Loadout stats",
+   "item": "GGReborn after equipping a Modified USC mid-mission",
+   "reading": "Power Score 26.96k (the toast reads 26958, -696); Firepower 191, Toughness 489, Engineering 3.06k; DPS 940.97k; Armor 11,004; Health 128,097. Modified USC level 50 T2: RPM 650, MAG 30, +21 / +86 / +505, Weapon Damage +4.99%, Skill Multi-Shot Chance +4.35%. The swap overlay compares weapon handling as percentages: Reload Speed 10% (+5%), Accuracy 28% (+18%), Vertical Stability 60% (-28%), Horizontal Stability 48% (-36%).",
+   "creator": "GGReborn",
+   "videoId": "0mQZ4wlvSRE",
+   "videoDate": "",
+   "timestamp": "14:09",
+   "url": "https://www.youtube.com/watch?v=0mQZ4wlvSRE&t=849s",
+   "note": "Read from the video file the owner sent (November 21, 2026). Gameplay with no commentary; the OS Protocol card is never opened, so the 3-star value is not on screen. The upload date is not in the file."
   }
  ]
 }
