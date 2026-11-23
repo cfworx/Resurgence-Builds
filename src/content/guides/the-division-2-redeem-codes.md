@@ -12,7 +12,7 @@ shareTitle: "Division 2 codes, without the filler"
 shareText: "The Division 2 has a real code site and no public code list. Here is what is actually free right now."
 faqs:
   - question: "Are there any free The Division 2 redeem codes right now?"
-    answer: "None that we could confirm as of November 16, 2026. Ubisoft publishes no list of free codes for The Division 2: codes are handed out with promotions, partner offers, purchases and creator campaigns. The last public code that was widely reported dates from May 2025. What is free right now comes from Twitch Drops, the Event Pass free track, in-game events, friend referrals and the cross-game rewards with The Division Resurgence."
+    answer: "None that we could confirm as of November 23, 2026. Ubisoft publishes no list of free codes for The Division 2: codes are handed out with promotions, partner offers, purchases and creator campaigns. The last public code that was widely reported dates from May 2025. What is free right now comes from the Event Pass free track, in-game events, friend referrals and the cross-game rewards with The Division Resurgence, plus Twitch Drops whenever Ubisoft runs a campaign."
   - question: "Where do I redeem a code for The Division 2?"
     answer: "On Ubisoft's official code site for the game, redeem.ubisoft.com/thedivision2. Log in with your Ubisoft account, type the code and submit it. Ubisoft says the content is available the next time you start the game. The site covers PC, PlayStation and Xbox."
   - question: "What does a The Division 2 code look like?"
@@ -34,7 +34,7 @@ sources:
 > [!INFO]
 > This page is about **The Division 2** on PC, PlayStation and Xbox. For the mobile and PC game this site covers, see [The Division Resurgence codes](/guides/division-resurgence-codes/).
 
-**Checked November 16, 2026.** The Division 2 has an official code site, but Ubisoft does not publish a list of free codes for it, and we could not confirm any public code that works this month. Codes come attached to promotions, partner offers, purchases and creator campaigns. What you can get free right now comes from Twitch Drops, the Event Pass, events, referrals and the rewards for also playing The Division Resurgence.
+**Checked November 23, 2026.** The Division 2 has an official code site, but Ubisoft does not publish a list of free codes for it, and we could not confirm any public code that works this month. Codes come attached to promotions, partner offers, purchases and creator campaigns. What you can get free right now comes from the Event Pass, events, referrals and the rewards for also playing The Division Resurgence. Ubisoft has announced no Twitch Drops since the campaign that ended November 17.
 
 ## Where codes are redeemed
 
@@ -59,13 +59,12 @@ A page that promises "active codes" for The Division 2 every month is filling sp
 
 | What | When | What you get | How |
 |---|---|---|---|
-| Twitch Drops, Echoes of Central Park | November 10 to 17, 2026 | 30 minutes: Gnarled Arm Patch. 1 hour: a Named Cache. 2 hours: Wrong Path Arm Patch. 3 hours: an Exotic Cache. 4 hours: The Block Weapon Skin | Link Twitch to your Ubisoft account, watch a Division 2 stream with drops enabled, claim on Twitch, then log in to the game |
-| Event Pass, free track | November 10 to 24, 2026 | Mire Mask, Mire Weapon Skin, Thorn Mask, Thorn Weapon Skin, Guardian Outfit, 2 Named Item Caches | Earned on the pass's free track while the event runs |
-| Shepherd event | November 17 to 26, 2026 | Rewards from a chain of six projects | Answer Calls for Backup and help other agents |
+| Event Pass, free track | Until November 24, 2026 | Mire Mask, Mire Weapon Skin, Thorn Mask, Thorn Weapon Skin, Guardian Outfit, 2 Named Item Caches | Earned on the pass's free track while the event runs |
+| Shepherd event | Until November 26, 2026 | A chain of six projects. Each gives 10 Exotic Components and 700,000 XP, the first five a Reconstructed Cache each, and the last one Malinois, a named Mk16 | Answer Calls for Backup and help other agents |
 | Friend Referral | Ongoing | Cyclops Outfit for the first friend, Esprit de Corps Outfit for the second | Get your link on Ubisoft's [referral site](https://referral.ubisoft.com/the-division-2-referral/); each friend has to play at least 2 hours |
 | Cross-game rewards | Since March 31, 2026, "for a limited time" | Resurgence Jacket, Resurgence Shirt, Resurgence Hat and a Level 40 boost | See the next section |
 
-Ubisoft also ran drops campaigns on October 15 to 22 and November 3 to 10, one with each recent event or release. The dates above are from Ubisoft's own posts, linked under Sources.
+The most recent Twitch Drops ran November 10 to 17 (Gnarled Arm Patch, a Named Cache, Wrong Path Arm Patch, an Exotic Cache and The Block Weapon Skin for up to 4 hours of watching). Ubisoft also ran drops campaigns on October 15 to 22 and November 3 to 10, one with each recent event or release, so watch for the next one with the next event. The dates above are from Ubisoft's own posts, linked under Sources.
 
 ## The rewards for playing both Division games
 

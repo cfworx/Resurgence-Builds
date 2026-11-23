@@ -4,7 +4,7 @@ category: "General"
 publishDate: 2026-11-15
 lastUpdated: 2026-11-15
 tags: ["gift-guide", "controllers", "the-division-books"]
-description: "Gift ideas for someone who plays The Division Resurgence or loves The Division: controllers that work with the game, the books and comics worth giving, official merch, and what to skip. Checked November 15, 2026."
+description: "Gift ideas for someone who plays The Division Resurgence or loves The Division: controllers that work with the game, the books and comics worth giving, official merch, and what to skip. Checked November 23, 2026."
 author: "RapidF5"
 featuredImage: "/images/guides/the-division-gift-guide-books-and-controller-1200.webp"
 imageAlt: "The Division Resurgence being played on a phone in a GameSir controller, beside four Division books: New York Collapse, The Art of Tom Clancy's The Division, Extremis Malis and Broken Dawn"
@@ -14,14 +14,14 @@ faqs:
   - question: "What is a good gift for someone who plays The Division Resurgence?"
     answer: "A phone controller is the gift they will use most: Ubisoft says the game supports PlayStation 5, Xbox and Backbone controllers, and we play on a GameSir G8 Plus over Bluetooth. For a fan of the world, The World of Tom Clancy's The Division is the lore book that explains the series. For a reader, the novel Broken Dawn is inexpensive and still sold new."
   - question: "Is there official Division Resurgence merchandise?"
-    answer: "We found none specific to Resurgence when we checked on November 15, 2026. The official Ubisoft Gear Shop sells a The Division range with the SHD phoenix crest: a mug, a mouse pad, a beanie, hats, T-shirts, a sweatshirt, hoodies and a hockey jersey. The shop's footer says Snow Commerce sells the merchandise under license from Ubisoft."
+    answer: "We found none specific to Resurgence when we checked on November 23, 2026. The official Ubisoft Gear Shop sells a The Division range with the SHD phoenix crest: a mug, a mouse pad, a beanie, hats, T-shirts, a sweatshirt, hoodies and a hockey jersey. The shop's footer says Snow Commerce sells the merchandise under license from Ubisoft."
   - question: "Which controller should I buy as a gift if I do not know their phone?"
     answer: "Pick a Bluetooth one, because it does not depend on the phone's charging port. The GameSir G8 Plus is Bluetooth and its maker lists both iPhone and Android. A PS5 or Xbox controller also connects to both by Bluetooth. Plug-in pads such as the Backbone One come in USB-C and Lightning versions, so you need to know the phone."
   - question: "Which Division book makes the best gift?"
     answer: "For most people, The World of Tom Clancy's The Division: a large illustrated hardcover that needs no knowledge of the games. For someone who loves the look of the series, The Art of Tom Clancy's The Division. For a collector, New York Collapse, which appears to be out of print and sells at collector prices."
 sources:
   - '<a href="https://www.ubisoft.com/en-us/game/the-division/resurgence/news-updates/1wetWFRDXzvICd2JuTQwBO/controller-layout-update" target="_blank" rel="noopener noreferrer">Ubisoft: Controller layout update</a>, March 18, 2026'
-  - '<a href="https://ubisoftgearshop.com/collections/the-division" target="_blank" rel="noopener noreferrer">Ubisoft Gear Shop: The Division collection</a>, seen November 15, 2026'
+  - '<a href="https://ubisoftgearshop.com/collections/the-division" target="_blank" rel="noopener noreferrer">Ubisoft Gear Shop: The Division collection</a>, seen November 23, 2026'
   - '<a href="https://store.ubisoft.com/us/the-division?lang=en_US" target="_blank" rel="noopener noreferrer">Ubisoft Store: The Division</a>, seen November 15, 2026'
   - '<a href="https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2476-will-the-game-be-cross-play-or-have-cross-progression-with-the-hd-titles/" target="_blank" rel="noopener noreferrer">Ubisoft help center: no cross-progression with the other Division games</a>'
   - '<a href="https://www.geeknative.com/236462/tom-clancys-the-division-activating-the-official-ttrpg/" target="_blank" rel="noopener noreferrer">Geek Native: The Division tabletop RPG</a>'
@@ -29,7 +29,7 @@ sources:
   - 'Publisher pages for each book are linked from <a href="/guides/the-division-books-in-order/">The Division books in order</a>'
 ---
 
-**Checked November 15, 2026.** Buying a Christmas or birthday present for someone who plays The Division Resurgence, or who has loved The Division since the first game? Here is the short list.
+**Checked November 23, 2026.** Buying a Christmas or birthday present for someone who plays The Division Resurgence, or who has loved The Division since the first game? Here is the short list.
 
 - **They play on a phone:** a controller. It is the one gift on this page that changes how the game feels.
 - **They are new to the series:** [The World of Tom Clancy's The Division](/reviews/world-of-tom-clancys-the-division-book/), the lore book.
@@ -41,7 +41,7 @@ Everything with a review link is something we own, and the photos are ours. We d
 
 ## By budget
 
-The book prices here are the publishers' cover prices, printed on our own copies. The merch prices are what the Ubisoft Gear Shop showed on November 15, 2026. Shops charge more or less than that from day to day, so check before you buy.
+The book prices here are the publishers' cover prices, printed on our own copies. The merch prices are what the Ubisoft Gear Shop showed on November 23, 2026. Shops charge more or less than that from day to day, so check before you buy.
 
 | Budget | Ideas |
 |---|---|
@@ -87,14 +87,14 @@ If they have read all of those, the three newer novels (Recruited, Compromised, 
 
 ## Official merch, to wear or put on a desk
 
-Ubisoft's own store now lists only digital items for The Division. The physical merchandise is at the official [Ubisoft Gear Shop](https://ubisoftgearshop.com/collections/the-division), whose footer says Snow Commerce sells the merchandise under license from Ubisoft. On November 15, 2026 its Division collection had 11 items, all with the SHD name or the phoenix crest:
+Ubisoft's own store now lists only digital items for The Division. The physical merchandise is at the official [Ubisoft Gear Shop](https://ubisoftgearshop.com/collections/the-division), whose footer says Snow Commerce sells the merchandise under license from Ubisoft. On November 23, 2026 its Division collection had 11 items, all with the SHD name or the phoenix crest:
 
 - a black mug and a gaming mouse pad
 - a beanie and two snapback hats
 - two T-shirts and a sweatshirt
 - a hoodie, a zip-up hoodie and a hockey jersey
 
-Prices that day ran from about $16 for the mug to about $80 for the zip-up hoodie. We do not earn anything from that shop. We have not bought from it either, so we cannot tell you how the clothes fit.
+Prices that day ran from about $16 for the mug to about $80 for the zip-up hoodie, unchanged since our first look on November 15. We do not earn anything from that shop. We have not bought from it either, so we cannot tell you how the clothes fit.
 
 There was nothing specific to Resurgence. The SHD crest is the same emblem either way.
 
