@@ -129,6 +129,16 @@ Base values from the in-game Build-Making Database. His ranked-up copies read hi
 
 <div class="stat-tiles"><div class="stat-tile"><p class="stat-tile__big">854k</p><p class="stat-tile__label">DPS on his loadout screen, October 16</p></div><div class="stat-tile"><p class="stat-tile__big">24.97k</p><p class="stat-tile__label">Power Score, everything at Level 50</p></div><div class="stat-tile"><p class="stat-tile__big">~69%</p><p class="stat-tile__label">Skill Crit Chance. He&#x27;d rather run 55 to 60% and push Skill Crit Damage</p></div></div>
 
+## His Later Loadout
+
+In a later video, "How to MELT Elite Enemies with Tactical Pharma!", GGReborn runs the same build solo through **Wall Street Woes on Legendary in 14:11**. His loadout screen shows the same core: Jackpot on the mask, chest, gloves and knee pads, Fire Cycle on the backpack and holster, Brains Over Brawn at level 50, and an assault rifle with a First Wave Vector 45 ACP.
+
+- **His sheet:** 25.95k Power Score, 981.79k DPS, 10,111 Armor, 117,585 Health, Engineering 2.02k. Comparing the Vector against another gun, the game reads 243.8% Skill Critical Damage, 70.49% Skill Intensity and 45.1% Skill Multi-Shot Chance.
+- **A newer Vector:** level 50 T2, Skill Critical Damage +10.17% and Received Healing +22.24%. He doesn't open its talents.
+- **A gun he tried and put back:** a Modified USC with Torrential Downpour II (+31.50% Engineering) and Sentinel Aura II. With it his sheet dropped to 25.22k and 823k DPS, so he went back to the Vector before the next fight.
+
+The video has no commentary, so that's what his screens show.
+
 ## Four OS Protocols, Five Seconds Apart
 
 <div class="stat-tiles"><div class="stat-tile"><p class="stat-tile__big">807 s</p><p class="stat-tile__label">Chain Reaction: kills stack Skill Intensity</p></div><div class="stat-tile"><p class="stat-tile__big">804 s</p><p class="stat-tile__label">Tactical Persistence: Skill Hits can stack Skill Intensity</p></div><div class="stat-tile"><p class="stat-tile__big">804 s</p><p class="stat-tile__label">Collateral Damage: Skill Damage splashes within 5 m</p></div><div class="stat-tile"><p class="stat-tile__big">802 s</p><p class="stat-tile__label">Brains Over Brawn, his pick</p></div></div>
@@ -156,6 +166,7 @@ He runs 55% Skill Crit Chance and 200% Skill Crit Damage and wants more Engineer
 
 - [GGReborn: BEST Tactical Pharma Build + Solo Legendary Gameplay (YouTube, October 16, 2026)](https://www.youtube.com/watch?v=OVnksyrlj88)
 - GGReborn's follow-ups: [three stat setups](https://www.youtube.com/watch?v=f1q44KbdS6g) (October 22), [four OS Protocols](https://www.youtube.com/watch?v=Kz9YlTUl_1s) (October 23), [Chain Reaction gameplay](https://www.youtube.com/watch?v=yR7YWOzqVlA) (October 24), [Meditation II](https://www.youtube.com/watch?v=AUfSHF6gYjg) (October 28).
+- [GGReborn: How to MELT Elite Enemies with Tactical Pharma! (YouTube)](https://www.youtube.com/watch?v=cG0RNbQo75M&t=499s), for "His Later Loadout": loadout at 8:19, the Vector and Modified USC at 8:22 to 8:30, the comparison at 11:07, Wall Street Woes Legendary 14:11 at 15:00.
 - TikTokAndy: [Tactical Pharma and Dark Zone](https://www.youtube.com/watch?v=f20v8_cv9Ls) (October 15), [solo vs. squads montage](https://www.youtube.com/watch?v=lbk6aUoOtds) (October 22).
 - In-game Build-Making Database, recorded October 28 and 29, 2026. Browse it in our [database](/database/).
 - [Ubisoft's drop rates](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2522-drop-rates/), and [ours](/database/drop-rates/). Patch notes: [Season 2 Phase 1](/patch-notes/season-2-phase-1-the-call/), [Season 2 Phase 2](/patch-notes/season-2-phase-2/).
