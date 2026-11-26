@@ -2420,6 +2420,30 @@
   "small": "/images/news/division-resurgence-take-the-castle-speedrun-street-480.webp",
   "thumb": "/images/news/division-resurgence-take-the-castle-speedrun-street-thumb.webp"
  },
+ "/images/news/division-resurgence-winter-update-snowy-street-christmas-tree-1200.webp": {
+  "width": 1200,
+  "height": 675,
+  "srcset": [
+   [
+    480,
+    "/images/news/division-resurgence-winter-update-snowy-street-christmas-tree-480.webp"
+   ],
+   [
+    800,
+    "/images/news/division-resurgence-winter-update-snowy-street-christmas-tree-800.webp"
+   ],
+   [
+    1200,
+    "/images/news/division-resurgence-winter-update-snowy-street-christmas-tree-1200.webp"
+   ],
+   [
+    1387,
+    "/images/news/division-resurgence-winter-update-snowy-street-christmas-tree-1387.webp"
+   ]
+  ],
+  "small": "/images/news/division-resurgence-winter-update-snowy-street-christmas-tree-480.webp",
+  "thumb": "/images/news/division-resurgence-winter-update-snowy-street-christmas-tree-thumb.webp"
+ },
  "/images/news/reddit-weekly-highlights-may-28-hero.jpg": {
   "width": 1200,
   "height": 630,

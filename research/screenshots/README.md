@@ -44,6 +44,7 @@ other picture. What was done to each, so it can be redone:
 | `guides/division-resurgence-shd-crate-locations-in-game-map` | `LH_49KKa_eg` | 0:06 | Cropped to the map (no tabs, no filter column); cursor and touch dot painted out. |
 | `guides/division-resurgence-collectibles-guide-mysteries-screen` | `VOZD9huBi2c` | 1:30.5 | Full frame; mouse cursor painted out. |
 | `guides/division-resurgence-collectibles-guide-tracked-artifact-map` | `VOZD9huBi2c` | 0:00.5 | Cropped below the tabs and left of the filter column; touch dot and cursor painted out. |
+| `news/division-resurgence-winter-update-snowy-street-christmas-tree` | `8tbQ7WIrXu8` | 0:44 | Cropped below the Skip button and above the speaker label; the recorder's touch dot painted out. Creator not credited (owner's request). |
 
 Rules for these: never a frame with another player's name readable in it (crop it out or pick another frame), never a
 creator's logo, webcam or caption, and never paint a logo or watermark out: pick a clean frame or skip the picture.

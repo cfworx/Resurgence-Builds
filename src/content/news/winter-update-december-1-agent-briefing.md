@@ -2,6 +2,8 @@
 title: "Winter Update Lands December 1"
 publishDate: 2026-11-24
 author: "RapidF5"
+featuredImage: "/images/news/division-resurgence-winter-update-snowy-street-christmas-tree-1200.webp"
+imageAlt: "A snowy Manhattan street at night in The Division Resurgence: two agents walk past church steps and a Christmas tree with green lights, a burnt-out car smolders by a lamppost, and an orange ECHO hologram replays two figures in the foreground"
 tags: ["News", "Roadmap", "Season 2", "Steam", "Dev Stream"]
 description: "Ubisoft dated the big Division Resurgence update: Agent Briefing November 30, Winter Update December 1, dev livestream December 3. What we know."
 shareTitle: "The big update has a date: December 1"
