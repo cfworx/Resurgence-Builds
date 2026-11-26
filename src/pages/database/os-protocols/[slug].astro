@@ -157,14 +157,15 @@ const ogImage = cardImage?.src || (protocol.image ? `${siteUrl}${protocol.image}
         </figure>
       )}
 
-      <DbItemExtras kind="os-protocol" name={protocol.name}>
-        <p slot="drops-note" class="item-note">Protocols also drop from regular play, without published odds. The <a href="/database/os-protocols/#faq">OS Protocols FAQ</a> covers where each rarity comes from.</p>
+      <!-- Pity and the drops from regular play are the same for every protocol: they live once, in the
+           OS Protocols FAQ (#faq), and each page keeps only its own odds and one link there. -->
+      <DbItemExtras kind="os-protocol" name={protocol.name} brief>
+        <p slot="drops-note" class="item-note">Protocols also drop in regular play, without published odds: see the <a href="/database/os-protocols/#faq">OS Protocols FAQ</a>.</p>
       </DbItemExtras>
 
-      <!-- Related Links -->
+      <!-- Related Links (the vote box above already links the OS Protocol tier list) -->
       <div class="protocol-related">
         <a href="/database/os-protocols/" class="protocol-back">&larr; All OS Protocols</a>
-        <a href="/tier-list/os-protocols/" class="protocol-back">OS Protocol Tier List</a>
         <a href="/guides/best-os-protocol/" class="protocol-back">Best Protocol Per Class</a>
       </div>
     </div>
