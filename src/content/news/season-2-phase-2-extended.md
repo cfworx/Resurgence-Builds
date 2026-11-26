@@ -57,7 +57,7 @@ Six weeks after September 16 would have landed around **October 28**. Instead, P
 Two breadcrumbs are on the record, and we're labeling them as exactly that:
 
 - On October 19, @TheDivMobile posted "We have a letter for you! Can we count on you to help us save New York?" with a link to the game's website. What the letter is about, we can't say yet.
-- Ubisoft's official Exotic Cache drop table lists a seventh exotic, **Deadlock**, that hasn't been announced anywhere else ([details](/guides/exotic-sealed-caches/)).
+- Ubisoft's official Exotic Cache drop table lists a seventh exotic, **Deadlock**. Ubisoft's Season 2 launch trailer had shown it as the free exotic of a third pass, Classified Ops Pass 2.3, which this extension puts on hold ([details](/guides/exotic-sealed-caches/)).
 
 Neither one is confirmation of anything. If they turn into real news, you'll read it here.
 

@@ -18,7 +18,7 @@ faqs:
   - question: "How many Exotic Sealed Caches does it take to get a specific exotic?"
     answer: "On average about 220, by our math. With a 2% Tier S rate and pity at 50, an S result takes about 32 caches on average, and each S result is one of seven exotics, so landing the specific one you want averages around seven S results. That assumes duplicates can drop and the pity resets on any S result; Ubisoft's table doesn't say otherwise. Bring snacks."
   - question: "What is the Deadlock exotic in Division Resurgence?"
-    answer: "Good question, and we'd love to know too. 'Deadlock Cache' and a 'Deadlock Tactical Augmentation Module' sit in Ubisoft's official Exotic Cache drop table next to the six exotics we know, but as of October 24, 2026 Ubisoft hasn't announced a Deadlock anywhere else we can find. No weapon type, no talent. We'll update when it shows up."
+    answer: "An exotic that isn't out yet. 'Deadlock Cache' and a 'Deadlock Tactical Augmentation Module' sit in Ubisoft's official Exotic Cache drop table next to the six exotics we know, and Ubisoft's Season 2 launch trailer listed Deadlock as the free exotic of Classified Ops Pass 2.3, the pass after the Diamondback's. Season 2 Phase 2 was extended instead, so it hasn't arrived. No weapon type or talent yet. We'll update when it shows up."
   - question: "Are Exotic Sealed Caches worth it?"
     answer: "Depends what you want out of them. Ninety-eight percent of the time you get a TAM, a mod selection or recalibration material, which is useful if you already own the exotics. If you only want one specific weapon, check the cheaper routes first: the Dark Zone vendor sells exotics for 15,000 DZ Credits since Season 2 Phase 2, and the current pass carries the Diamondback on its free track."
 ---
@@ -76,11 +76,11 @@ If you already own most of the pool, the math gets a little better in spirit but
 
 ## The Deadlock mystery
 
-The Exotic Cache table lists a **seventh exotic, Deadlock**, with its own cache, its own Tactical Augmentation Module and its own mod selection. As of October 24, 2026, Ubisoft hasn't announced a Deadlock in any patch note, article, Steam post or X post we've checked. We don't know its weapon type, its talent or when it arrives.
+The Exotic Cache table lists a **seventh exotic, Deadlock**, with its own cache, its own Tactical Augmentation Module and its own mod selection. No patch note, article, Steam post or X post we've checked mentions it, but [Ubisoft's Season 2 "The Call" launch trailer](https://www.youtube.com/watch?v=LsL2vqPnIac&t=148s) does: its closing card lists **Classified Ops Pass 2.3** with the Jogging Enthusiast apparel set, the Stickers Galore weapon skin and **Deadlock as the free exotic weapon**. Pass 2.3 never started, because Season 2 Phase 2 was extended. We don't know its weapon type, its talent or when it arrives.
 
-Two things we can say without turning them into a rumor:
+What we can say without turning it into a rumor:
 
-- Every other exotic in the table is already in the game, so a listed-but-unannounced weapon is unusual.
+- Every other exotic in the table is already in the game; Deadlock is the one still waiting for its pass.
 - On October 21 Ubisoft extended Season 2 Phase 2 "until we are ready to release a much bigger update later this year" ([our coverage](/news/season-2-phase-2-extended/)). Whether Deadlock belongs to that update is anyone's guess, including ours.
 
 ## How do you get Exotic Sealed Caches?
@@ -112,6 +112,7 @@ Exotic Sealed Caches are good news for collectors and a long shot for people cha
 ## Sources
 
 - [Ubisoft Help Center: Drop rates](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2522-drop-rates/)
+- [Ubisoft: The Division Resurgence Season 2 Phase 1 launch trailer (YouTube, uploaded by GamesParade)](https://www.youtube.com/watch?v=LsL2vqPnIac) (its closing card lists Classified Ops Passes 2.1, 2.2 and 2.3, at 2:28)
 - [Ubisoft Help Center: Patch Note, Season 2 Phase 2](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2566-patch-note---season-2-phase-2/)
 - [Ubisoft News: Season 2 Phase 2 is out now](https://news.ubisoft.com/en-us/article/2vmOLuRVDMIMBxG3MZlPQX/the-division-resurgence-season-2-phase-2-is-out-now)
 - [GameJoy Explained: Should you play The Division Resurgence on Steam? (YouTube)](https://www.youtube.com/watch?v=mPqzSGmBlS0)

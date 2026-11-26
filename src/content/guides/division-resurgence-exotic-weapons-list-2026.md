@@ -9,12 +9,12 @@ imageAlt: "A Division agent in a red jacket standing beside a red Exotic sign in
 description: "Every Division Resurgence exotic weapon as of Season 2 Phase 2: talents, verified stats and how to get each, from Lady Death to the Diamondback."
 tags: ["exotic-weapons", "lady-death", "warlord", "strawberry-milkshake", "guide", "scorpio", "diamondback", "bighorn"]
 shareTitle: "Every exotic, one page"
-shareText: "Six live exotics, one mystery seventh in Ubisoft's own drop table, and the cheapest way to get each one in Season 2."
+shareText: "Six live exotics, a seventh already in Ubisoft's drop table and trailer, and the cheapest way to get each one in Season 2."
 faqs:
   - question: "How many exotic weapons are in Division Resurgence?"
-    answer: "Six are live as of October 24, 2026: Lady Death (SMG), Warlord (assault rifle), Strawberry Milkshake (LMG), Scorpio (shotgun), The Bighorn (assault rifle, Season 2 Phase 1) and the Diamondback (rifle, Season 2 Phase 2). A seventh, Deadlock, appears in Ubisoft's official Exotic Cache drop table but hasn't been announced anywhere else."
+    answer: "Six are live as of October 24, 2026: Lady Death (SMG), Warlord (assault rifle), Strawberry Milkshake (LMG), Scorpio (shotgun), The Bighorn (assault rifle, Season 2 Phase 1) and the Diamondback (rifle, Season 2 Phase 2). A seventh, Deadlock, appears in Ubisoft's official Exotic Cache drop table, and Ubisoft's Season 2 launch trailer showed it as the free exotic of a Classified Ops Pass 2.3 that hasn't come out."
   - question: "When is the next exotic weapon coming to Division Resurgence?"
-    answer: "Nothing is announced. Ubisoft extended Season 2 Phase 2 on October 21 'until we are ready to release a much bigger update later this year,' which pauses the one-exotic-per-phase rhythm. Deadlock sitting in the official drop table is the only breadcrumb, and we're not going to dress a breadcrumb up as a loaf."
+    answer: "Nothing is announced. Ubisoft extended Season 2 Phase 2 on October 21 'until we are ready to release a much bigger update later this year,' which pauses the one-exotic-per-phase rhythm. Deadlock is the only breadcrumb: it sits in the official drop table, and the Season 2 launch trailer listed it as the free exotic of Classified Ops Pass 2.3, the pass the extension put on hold. Ubisoft hasn't given it a date."
   - question: "Can I get the Warlord if I missed it?"
     answer: "Yes. The Dark Zone vendor has sold the Warlord since Season 1 Phase 2, at 15,000 DZ Credits since Season 2 Phase 2 (down from 17,500). It's also in the Exotic Sealed Cache pool. Fair warning: 15,000 DZ Credits is a lot of Dark Zone time."
   - question: "Is the Scorpio in Division Resurgence the same as the Scorpio in Division 2?"
@@ -25,7 +25,7 @@ faqs:
     answer: "Partially, as far as we can tell. The unique exotic talent is fixed; the other two talents roll from that exotic's own pool of 18, which each exotic's database page lists. Exotic Weapon Recalibration Booklets and Manuals are the materials for recalibrating the rest of the gun. Season 2 Phase 1 fixed them so they can be looted in the Dark Zone as intended, and they're also in the bottom tier of Exotic Sealed Caches."
 ---
 
-Six exotic weapons are live in Division Resurgence as of **October 24, 2026 (Season 2 Phase 2)**: **Lady Death** (SMG), **Warlord** (assault rifle), **Strawberry Milkshake** (LMG), **Scorpio** (shotgun), **The Bighorn** (assault rifle) and **Diamondback** (rifle). A seventh name, **Deadlock**, sits in Ubisoft's official drop table and nowhere else. This page is our single source of truth for every exotic: what it does, how to get it today, and what's still unconfirmed.
+Six exotic weapons are live in Division Resurgence as of **October 24, 2026 (Season 2 Phase 2)**: **Lady Death** (SMG), **Warlord** (assault rifle), **Strawberry Milkshake** (LMG), **Scorpio** (shotgun), **The Bighorn** (assault rifle) and **Diamondback** (rifle). A seventh, **Deadlock**, sits in Ubisoft's official drop table and was shown in the Season 2 launch trailer as the free exotic of a pass that hasn't come out yet. This page is our single source of truth for every exotic: what it does, how to get it today, and what's still unconfirmed.
 
 > [!INFO] Update (October 28, 2026)
 > Every stat table on this page comes from the in-game Build-Making Database: Level 1, T1 base values with no mods, checked on October 28, 2026.
@@ -199,9 +199,11 @@ The Division 2 has a lever-action rifle with the same name, and we're not going 
 
 Since Season 2 Phase 2 is extended "until we are ready to release a much bigger update later this year," the Diamondback pass is sticking around longer than usual. If you want a free exotic right now, this is it.
 
-## Listed but unannounced: Deadlock
+## Shown but not out yet: Deadlock
 
-Ubisoft's official Exotic Cache drop table includes a **Deadlock Cache**, a **Deadlock Tactical Augmentation Module** and a **Weapon Mod Selection: Deadlock**, right next to the six live exotics. As of October 24, 2026, Ubisoft hasn't mentioned Deadlock in any patch note, article, Steam post or X post we've checked. The in-game Build-Making Database doesn't list it either: its Exotic Weapon section showed only the six live exotics when we recorded it on October 28. Weapon type, talent and release date: all unknown. Details in our [Exotic Sealed Caches guide](/guides/exotic-sealed-caches/).
+Ubisoft's official Exotic Cache drop table includes a **Deadlock Cache**, a **Deadlock Tactical Augmentation Module** and a **Weapon Mod Selection: Deadlock**, right next to the six live exotics. And [Ubisoft's Season 2 "The Call" launch trailer](https://www.youtube.com/watch?v=LsL2vqPnIac&t=148s) ends on a card with three Classified Ops Passes: **Pass 2.1** (the Vintage Elegance apparel set, The Bighorn and the Antique Weaponry skin), **Pass 2.2** (Football League, the Diamondback and Milky Way) and **Pass 2.3**: the Jogging Enthusiast apparel set, the Stickers Galore weapon skin and **Deadlock, "Free Exotic Weapon"**.
+
+Pass 2.3 hasn't happened: on October 21 Ubisoft extended Season 2 Phase 2, the Diamondback's pass, "until we are ready to release a much bigger update later this year", and that update is now dated [December 1](/news/winter-update-december-1-agent-briefing/). Whether Deadlock comes with it, Ubisoft hasn't said. The in-game Build-Making Database doesn't list Deadlock either: its Exotic Weapon section showed only the six live exotics when we recorded it on October 28. Its weapon type, talent and release date are still unknown. Details in our [Exotic Sealed Caches guide](/guides/exotic-sealed-caches/).
 
 ## Quick comparison
 
@@ -213,7 +215,7 @@ Ubisoft's official Exotic Cache drop table includes a **Deadlock Cache**, a **De
 | Scorpio | Shotgun | 1.68k Piercing | 130 | 16m | Venom debuff ladder | DZ vendor (15,000 DZ Credits), caches |
 | The Bighorn | AR | 216 Shredding | 800 | 23m | Big Game Hunter: aimed semi-auto shots deal +300% Weapon Damage, headshots stack Headshot Damage | Exotic Sealed Caches |
 | Diamondback | Rifle | 1.95k Shredding | 100 | 31m | Agonizing Bite: hit the marked enemy, then every shot crits for 5 seconds | Current pass (free and premium track) |
-| Deadlock | Unknown | Unknown | Unknown | Unknown | Unknown | Only listed in the drop table |
+| Deadlock | Unknown | Unknown | Unknown | Unknown | Unknown | Not out yet (planned for Classified Ops Pass 2.3) |
 
 ## How to get exotic weapons in Season 2
 
@@ -262,5 +264,6 @@ We update this page every phase. If a new exotic ships, shows up in a drop table
 - [Ubisoft: Season 2 has just begun](https://www.ubisoft.com/en-us/game/the-division/resurgence/news-updates/1R5zWiBS0MQZNcWGYkroYT/season-2-has-just-begun)
 - [Ubisoft News: Season 2 Phase 2 is out now](https://news.ubisoft.com/en-us/article/2vmOLuRVDMIMBxG3MZlPQX/the-division-resurgence-season-2-phase-2-is-out-now)
 - [Ubisoft: A New Fire, Season 1 Phase 3](https://www.ubisoft.com/en-us/game/the-division/resurgence/news-updates/wE8oLT7RqyLCfnCJomXij/a-new-fire-season-1-phase-3)
+- [Ubisoft: The Division Resurgence Season 2 Phase 1 launch trailer (YouTube, uploaded by GamesParade)](https://www.youtube.com/watch?v=LsL2vqPnIac) (its closing card lists Classified Ops Passes 2.1, 2.2 and 2.3, at 2:28)
 - [TikTokAndy: My First Time In The Level 40 Dark Zone (YouTube, September 16, 2026)](https://www.youtube.com/watch?v=lBIQT-SeBZg) (The Bighorn's card and talent, at 13:00)
 - [Capitão Wasabi: Liberei a nova exótica "Diamondback" (YouTube, September 23, 2026)](https://www.youtube.com/watch?v=cwmO9_0k8Fc) (the Diamondback's card and talent, Portuguese client, at 1:28 and 2:10)

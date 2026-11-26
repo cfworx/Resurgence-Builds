@@ -44,7 +44,7 @@ There are three kinds, going by Ubisoft's patch notes:
 |---|---|---|
 | **Weapon** TAMs | A weapon model, for example a shotgun module from a Dark Zone mission | Season 1 Phase 2 notes; patch 1.1.2.2 (the "Ringleaders" shotgun reward fix) |
 | **Gear** TAMs | Gear | Season 1 Phase 2 notes (Clan Vendor stock) |
-| **Exotic** TAMs | One exotic: Lady Death, Warlord, Strawberry Milkshake, Scorpio, The Bighorn, The Diamondback, plus an unannounced Deadlock in the drop table | Pass rewards, Dark Zone vendor, Exotic Sealed Caches |
+| **Exotic** TAMs | One exotic: Lady Death, Warlord, Strawberry Milkshake, Scorpio, The Bighorn, The Diamondback, plus Deadlock, in the drop table but not out yet | Pass rewards, Dark Zone vendor, Exotic Sealed Caches |
 
 ## What they add: creator readings
 

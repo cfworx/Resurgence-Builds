@@ -49,6 +49,8 @@ Everything below comes from the official patch notes the developers posted on Re
 
 The new pass has 50 tiers on two tracks. Ubisoft's article lists the free track rewards as **The Bighorn** exotic weapon and **The Bighorn Tactical Augmentation Module**, and the premium track as the **Vintage Elegance** apparel set and the **Antique Weaponry** weapon cosmetic. Ubisoft also sold an **Elite Pass** on top of Premium "as an exclusive to The Call," which gives a one-off pass progress boost and bonus items.
 
+The Season 2 launch trailer names the guns the Antique Weaponry skin covers: the MG5, DSR, G36, AUG, SVD and AA12. Its closing card also lays out the whole season as three passes: 2.1 (Vintage Elegance, The Bighorn, Antique Weaponry), 2.2 (Football League, the Diamondback, Milky Way) and 2.3 (Jogging Enthusiast, a Deadlock exotic and Stickers Galore), plus the Street Racer apparel sets and Porcelain Dreams weapon skins "available this season". Pass 2.3 hasn't happened yet: Ubisoft [extended Season 2 Phase 2](/news/season-2-phase-2-extended/) on October 21.
+
 The Bighorn is Ubisoft's own description of fun: an assault rifle that fires full auto from the hip and switches to semi-auto when you aim down sights, where "each headshot will add extra damage, and more headshots mean more stacked bonuses." In other words, it rewards the one thing most of us are worst at. Full details and how it compares with the other exotics are in our [exotic weapons list](/guides/division-resurgence-exotic-weapons-list-2026/).
 
 ### Limited-time events
@@ -190,5 +192,6 @@ The in-game Build-Making Database still showed Ammo Refill's old text (a 29% cha
 
 - [Season 2 Phase 1 patch notes (The Division Wiki mirror of the official developer post)](https://thedivision.fandom.com/wiki/Season_2_Phase_1_-_Patch_Notes)
 - [Ubisoft: Season 2 has just begun](https://www.ubisoft.com/en-us/game/the-division/resurgence/news-updates/1R5zWiBS0MQZNcWGYkroYT/season-2-has-just-begun)
+- [Ubisoft: The Division Resurgence Season 2 Phase 1 launch trailer (YouTube, uploaded by GamesParade)](https://www.youtube.com/watch?v=LsL2vqPnIac) (its closing card lists Classified Ops Passes 2.1, 2.2 and 2.3, at 2:28)
 - [Ubisoft News: Season 2 Phase 1, limited-time speedrunning events, new Classified Ops Pass, play free on Steam](https://news.ubisoft.com/en-us/article/7MMMG14zd82UNs7zcmOv6t/the-division-resurgence-season-2-phase-1-limitedtime-speedrunning-events-new-classified-ops-pass-play-free-on-steam)
 - [Ubisoft: Now available on Steam](https://www.ubisoft.com/en-us/game/the-division/resurgence/news-updates/1dqH85Pad1ydYGwCOdlDp7/now-available-on-steam)
