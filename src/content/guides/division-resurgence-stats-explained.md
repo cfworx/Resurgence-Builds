@@ -132,15 +132,18 @@ The best evidence is the game's own recalibration preview, which lists a weapon'
 | Toymaker | +15% Skill Multi-Shot Chance | +21% (TikTokAndy) | 1.4x |
 | Still Alive | 30% of missing Health | 42% (TikTokAndy) | 1.4x |
 | Torrential Downpour | +22.50% Engineering | +31.50% (TikTokAndy; Demø2x's Modified USC and GGReborn's First Wave Vector 45 ACP read the same) | 1.4x |
+| Unhinged | +18% Weapon Damage | +25% (Banjru's First Wave Vector 45 ACP, November 25; the -10% Stability and Accuracy stay) | about 1.4x |
+| Spec-Ops | +20% Rate of Fire, +5% Incoming Healing | +28%, +7% (Banjru's Scorpio, November 25) | 1.4x |
+| Sentinel Aura | (600 x Toughness)% Health | (840 x Toughness)% (Banjru's Scorpio, November 25; the 5 second cooldown stays) | 1.4x |
 | Slaughter Fortitude | +12% Armor per stack | +18% (both ranks on the preview) | 1.5x |
 | Steady Handed | +1.20% Accuracy and Stability per stack | +1.80% (both ranks on the preview) | 1.5x |
 | Slaughter Healing | +7% Incoming Healing per stack | +10.50% (the preview) | 1.5x |
-| Rock Solid (backpack) | +15% Damage Reduction | +20% (TikTokAndy's Healing Roamer Pack "Sow", November 14; his rank I pack reads +15%) | about 1.33x |
+| Rock Solid (backpack) | +15% Damage Reduction | +20% (TikTokAndy's Healing Roamer Pack "Sow", November 14, where his rank I pack reads +15%; Banjru's Shield Roamer Pack "Sow" reads +20% too) | about 1.33x |
 | Ammo Supply | 54% chance | 65% (TikTokAndy's tooltip, September 16) | 1.2x |
 
 Not every number in a talent climbs. Unflinching II keeps its 70% chance and 2 second cooldown, Precise Support II keeps +40% Rescue Efficiency, and timers can move the other way: Backup Magazine II reloads your other weapon after 3 seconds, where rank I waits 4, and the preview shows both. AgentHuntzman shows the same thing on another talent in the Build Database: Blood for Blood's bonus damage goes from 0.50% of max Health to 0.70% at level two.
 
-The last five rows are the exceptions. Slaughter Fortitude and Steady Handed show both ranks on the same in-game screen, so they really do step up 1.5 times; Slaughter Healing's rank II on that screen is 1.5 times our rank I; and Rock Solid shows +15% and +20% on two of TikTokAndy's own backpacks. Ammo Supply is still one creator tooltip against our capture, so we're re-checking it. So when you see a II talent on a drop, expect about 40% more of whatever the base version does, then check the tooltip. Our database lists base (rank I) text, and each weapon talent page shows the game's own rank II text where we've seen it.
+The last five rows are the exceptions. Slaughter Fortitude and Steady Handed show both ranks on the same in-game screen, so they really do step up 1.5 times; Slaughter Healing's rank II on that screen is 1.5 times our rank I; and Rock Solid shows +15% and +20% on two of TikTokAndy's own backpacks, and +20% again on Banjru's. Ammo Supply is still one creator tooltip against our capture, so we're re-checking it. So when you see a II talent on a drop, expect about 40% more of whatever the base version does, then check the tooltip. Our database lists base (rank I) text, and each weapon talent page shows the game's own rank II text where we've seen it.
 
 ## How OS Protocols scale
 

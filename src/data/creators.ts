@@ -28,6 +28,7 @@ export const CREATORS: Creator[] = [
   { slug: 'ltfoe', name: 'LtFoe', where: 'Sent to us directly' },
   { slug: 'demo2x', name: 'Demø2x', where: 'YouTube' },
   { slug: 'pym-gamecat', name: 'PYM GameCat', where: 'YouTube' },
+  { slug: 'banjru', name: 'Banjru', where: 'YouTube' },
 ];
 
 /** The creator name a build's author line credits, or null for our own builds. */

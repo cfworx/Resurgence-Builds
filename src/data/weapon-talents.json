@@ -362,7 +362,13 @@
     "id": "wt-45",
     "name": "Sentinel Aura",
     "description": "Hits within 20 meters restore (600 x Toughness)% Health. Talent Cooldown: 5 seconds.",
-    "verifiedInGame": "2026-10-28"
+    "verifiedInGame": "2026-10-28",
+    "upgradedName": "Sentinel Aura II",
+    "upgradedDescription": "Hits within 20 meters restore (840 x Toughness)% Health. Talent Cooldown: 5 seconds.",
+    "upgradedSource": {
+      "label": "Banjru's Scorpio card in his Bulwark Juggernaut build (owner's screenshot, November 25, 2026)",
+      "url": "/builds/bulwark-juggernaut-tank-dps-build-banjru/"
+    }
   },
   {
     "id": "wt-46",
@@ -405,7 +411,13 @@
     "id": "wt-49",
     "name": "Spec-Ops",
     "description": "Hits within 20 meters grant +20% Rate of Fire and +5% Incoming Healing for 3 seconds.",
-    "verifiedInGame": "2026-10-28"
+    "verifiedInGame": "2026-10-28",
+    "upgradedName": "Spec-Ops II",
+    "upgradedDescription": "Hits within 20 meters grant +28% Rate of Fire and +7% Incoming Healing for 3 seconds.",
+    "upgradedSource": {
+      "label": "Banjru's Scorpio card in his Bulwark Juggernaut build (owner's screenshot, November 25, 2026)",
+      "url": "/builds/bulwark-juggernaut-tank-dps-build-banjru/"
+    }
   },
   {
     "id": "wt-50",
@@ -583,7 +595,13 @@
     "id": "wt-68",
     "name": "Unhinged",
     "description": "Grants +18% Weapon Damage. Inflicts -10% Stability and -10% Accuracy.",
-    "verifiedInGame": "2026-10-28"
+    "verifiedInGame": "2026-10-28",
+    "upgradedName": "Unhinged II",
+    "upgradedDescription": "Grants +25% Weapon Damage. Inflicts -10% Stability and -10% Accuracy.",
+    "upgradedSource": {
+      "label": "Banjru's First Wave Vector 45 ACP card in his Bulwark Juggernaut build (owner's screenshot, November 25, 2026)",
+      "url": "/builds/bulwark-juggernaut-tank-dps-build-banjru/"
+    }
   },
   {
     "id": "wt-69",
