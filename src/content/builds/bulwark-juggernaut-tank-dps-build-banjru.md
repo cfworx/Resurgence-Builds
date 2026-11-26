@@ -138,7 +138,7 @@ All six pieces are level 50 T2.
 | Slot | Piece | Set | Rolls | Talent |
 |---|---|---|---|---|
 | Mask | Half mask respirator | Healing Elites | Damage to Elites +4.91%, Weapon Critical Hit Damage +5.94% | |
-| Body Armor | "Big Drum" Body Armor | Healing Elites | Armor +8.78%, Skill Cooldown Recovery -4.89% | Unflinching |
+| Body Armor | “Big Drum” Body Armor | Healing Elites | Armor +8.78%, Skill Cooldown Recovery -4.89% | Unflinching |
 | Backpack | Roamer Pack "Sow" | Self-Propelled Shield | Signature Ability Charge Efficiency +9.34%, Skill Duration +5.25% | Rock Solid II |
 | Gloves | Gustavo Association Gloves | Healing Elites | Damage Reduction +4.68%, Skill Radius +9.5% | |
 | Holster | Tepes Holster | Self-Propelled Shield | Weapon Multi-Shot Chance +4.31%, Armor +10.63% | |
