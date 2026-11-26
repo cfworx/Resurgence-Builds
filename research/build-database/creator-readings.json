@@ -2905,6 +2905,50 @@
    "timestamp": "",
    "url": "https://www.youtube.com/watch?v=iH97-u0bvqM",
    "note": "From the owner's screenshots of Banjru's screens (November 25, 2026). Timestamp not recorded."
+  },
+  {
+   "topic": "Loadout and Attributes",
+   "item": "GGReborn's solo Vanguard (Commando), Double Barrel equipped",
+   "reading": "Power Score 26.59k; Firepower 2.41k, Toughness 442, Engineering 384; DPS 1.07m; Armor 13,363; Health 117,268. Attributes: Weapon Critical Hit Chance 54.44%, Weapon Critical Hit Damage 168.93%, Weapon Multi-Shot Chance 38.04%, Headshot Damage 55.60%, Weapon Damage 64.69%, Rate of Fire 18.00%, Reload Speed 23.00%, Magazine Size 45.00%, Skill Critical Chance 17.00%. Same gear, sets (3 Quick Draw, 3 Phalanx Attack), OS Protocol (Close Quarters Menace, level 50) and Tactical Loop as his November 16 video; the solo Double Barrel (Predatory Aura II, Adaptation II) and The Bighorn (Big Game Hunter, Target Acquisition II, Adaptation II) equipped.",
+   "creator": "GGReborn",
+   "videoId": "nEYcv2JG3dA",
+   "videoDate": "",
+   "timestamp": "0:36-4:08",
+   "url": "https://www.youtube.com/watch?v=nEYcv2JG3dA&t=36s",
+   "note": "Read from the video file the owner sent (November 26, 2026). No commentary; caption 'This is the build I'm using'."
+  },
+  {
+   "topic": "Skill mod combo, 3-piece",
+   "item": "Compound Effect (smc-58) on Scanning Pulse, three purple pieces",
+   "reading": "Firmware purple ◆5: a Chance roll +3.54% and a second roll +3.86% (names cut off). Software purple ◆5, PS 205, Scanning Pulse Radius +13.5%, Weapon Multi-Shot Chance +3.84%, Damage Reduction +3.06%. Chipset purple ◆5, PS 212, Scanning Pulse Radius +13.42%, a Chance roll +4.68% and a second roll +3.36% (names cut off). Set (3/3): 2 pieces 2.0% Skill Cooldown Recovery (bottom of the database's 2.0~4.0%).",
+   "creator": "GGReborn",
+   "videoId": "nEYcv2JG3dA",
+   "videoDate": "",
+   "timestamp": "3:33-3:42",
+   "url": "https://www.youtube.com/watch?v=nEYcv2JG3dA&t=213s",
+   "note": "Read from the video file the owner sent (November 26, 2026). Replaces Field Supplies from his November 16 video."
+  },
+  {
+   "topic": "Weekly Bounty",
+   "item": "Target Instance card: Fredrick \"Gearhead\" Montano",
+   "reading": "Location Wall Street Woes. Text: 'Defeat the Target at the designated location to claim their Weekly Bounty rewards and make progress toward identifying the Main Target.' Dropdown set to Solo; Enemy Armor Weakness Type (two icons); Difficulty Normal; Target resets in 4 d 21 h. Objectives: Neutralize Fredrick \"Gearhead\" Montano, Clear the way to the NYSE, Secure the area, Clear the way to Trinity Church's Cemetery. Completion screen: 'Take down Gearhead', Normal, 02:25.",
+   "creator": "PYM GameCat",
+   "videoId": "2x8dTe9CeMw",
+   "videoDate": "",
+   "timestamp": "0:00",
+   "url": "https://www.youtube.com/watch?v=2x8dTe9CeMw",
+   "note": "Read from the video file the owner sent (November 26, 2026). Video title: Weekly Bounties Week 2 (Boss #2), Tactical Pharma Solo. PC client."
+  },
+  {
+   "topic": "Weekly Bounty",
+   "item": "Rewards from the Gearhead target (Normal, solo)",
+   "reading": "During the run: +2000 Basic Credits, +3240 Specialization XP, +1 OS Protocol - Seasoned Veteran (green, level 01), +2 Specialized Algorithm Data, +3 Standard Algorithm Data, +1 Standard Fabric. End screen: level 40 gold T0 shotgun, level 40 purple T0 Jackpot gear piece, level 40 purple T1 rifle, 2 Specialized Algorithm Data, the Seasoned Veteran protocol, green fabric, green material, 3 Standard Algorithm Data, 5 grey fabric. +18566 on the middle progress bar (108978/187156).",
+   "creator": "PYM GameCat",
+   "videoId": "2x8dTe9CeMw",
+   "videoDate": "",
+   "timestamp": "2:24-2:42",
+   "url": "https://www.youtube.com/watch?v=2x8dTe9CeMw&t=144s",
+   "note": "Read from the video file the owner sent (November 26, 2026)."
   }
  ]
 }

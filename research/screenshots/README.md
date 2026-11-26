@@ -49,6 +49,7 @@ other picture. What was done to each, so it can be redone:
 | `news/division-resurgence-season-2-trailer-agent-gramophone-echo` | `LsL2vqPnIac` | 0:20 | Full frame, no text. Not used on a page yet. |
 | `news/division-resurgence-season-2-trailer-squad-ruined-street` | `LsL2vqPnIac` | 2:21.1 | Full frame, before the logo appears. Not used on a page yet. |
 | `news/division-resurgence-deadlock-season-2-pass-card` | `LsL2vqPnIac` | 2:32 | Cropped to the three pass columns of the closing card. |
+| `guides/division-resurgence-weekly-bounty-target-instance-gearhead` | `2x8dTe9CeMw` | 0:00.5 | Cropped to the Target Instance card. Endgame tips, Weekly Bounties. |
 
 Rules for these: never a frame with another player's name readable in it (crop it out or pick another frame), never a
 creator's logo, webcam or caption, and never paint a logo or watermark out: pick a clean frame or skip the picture.

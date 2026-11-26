@@ -24,8 +24,10 @@ faqs:
     answer: "GGReborn's split: Precise Crit II and Last Stand with a team or on Dark Zone bosses, since Precise Crit buffs every ally within 40 meters. Predatory Aura II and Adaptation II when he's alone, for Health on kills and Skill Duration. Steady Reload with Misdirection Insurance is his third copy, which he doesn't use often but still rates."
   - question: "Does the Double Barrel still hold four shells?"
     answer: "Yes. His equipped Double Barrel reads MAG 4, and his gameplay shows four in the magazine. The recipe is October's: the Shotgun Extended Magazine (+30% Magazine Size), Suppressive Fire on the X-TREYME Pro Ribcage (+18%), 3 Quick Draw (+27%) and 3 Phalanx Attack (+18%). Four shells in a two-shell shotgun. Physics has filed a complaint."
+  - question: "Is GGReborn's SOLO VANGUARD BUILD video a different build?"
+    answer: "No. It's this build with his solo Double Barrel (Predatory Aura II and Adaptation II) equipped: the same six gear pieces, 3 Quick Draw and 3 Phalanx Attack, The Bighorn in slot 2, Close Quarters Menace and Tactical Loop. The one change is on Scanning Pulse, where three purple Compound Effect pieces replace Field Supplies. His sheet reads 26.59k Power Score and 1.07m DPS."
   - question: "What skill mods does GGReborn use on Vanguard?"
-    answer: "Optimized Armor on Smart Cover, Field Supplies on Scanning Pulse and Tactical Loop on Tactical Link. His Tactical Loop is three gold pieces and reads up to 22 stacks, where our database card shows 8. He's also farming Compound Effect, another Scanning Pulse set, for Skill Cooldown Recovery."
+    answer: "Optimized Armor on Smart Cover, Field Supplies on Scanning Pulse and Tactical Loop on Tactical Link. His Tactical Loop is three gold pieces and reads up to 22 stacks, where our database card shows 8. In his later SOLO VANGUARD BUILD video he has swapped Field Supplies for Compound Effect, three purple pieces, for Skill Cooldown Recovery."
 videoId: "Lw8_IyC1WJ8"
 videoTitle: "GGReborn: BEST Vanguard Build UPDATED! High DPS & Survivability"
 videoChannel: "GGReborn"
@@ -123,6 +125,16 @@ Build by **GGReborn**, posted November 16, 2026 on Season 2 Phase 2. He walks th
 
 ![GGReborn's Vanguard firing the Double Barrel Shotgun from behind cover in The Division Resurgence, with 4 shells in the magazine, 29300 damage numbers and the message + Damage Reduction and a chance for bullets to be replenished upon successful hits](/images/builds/division-resurgence-ggreborn-double-barrel-four-shells-behind-cover.webp "Four shells loaded (4/105 at the bottom) and Optimized Armor's buff on screen as he fires from behind cover. Frame from GGReborn's video.")
 
+## His Solo Version
+
+A later GGReborn video, "SOLO VANGUARD BUILD!", is this build again with the **solo Double Barrel** (Predatory Aura II, Adaptation II) in his hands. The gear, the sets, The Bighorn, Close Quarters Menace, Smart Cover with Optimized Armor and Tactical Link with three gold Tactical Loop pieces are all the same. What changed:
+
+- **Scanning Pulse now runs [Compound Effect](/database/skill-mod-combos/compound-effect/)**, the set he was farming: three purple pieces. The 2-piece reads 2.0% Skill Cooldown Recovery, and the 3-piece takes 1.50 s off the cooldown when you deploy Scanning Pulse while Fortified. His Software piece rolls Weapon Multi-Shot Chance +3.84% and Damage Reduction +3.06%.
+- **His sheet:** 26.59k Power Score, 1.07m DPS, 13,363 Armor, 117,268 Health. His Attributes screen reads 54.44% Weapon Critical Hit Chance, 168.93% Critical Hit Damage, 38.04% Multi-Shot Chance, 55.60% Headshot Damage, 64.69% Weapon Damage, 23.00% Reload Speed and the same 45.00% Magazine Size.
+- **The Bighorn's card** shows its exotic talent Big Game Hunter with Target Acquisition II and Adaptation II.
+
+So if you've set up this page's build, his solo video needs one change: Compound Effect on Scanning Pulse once you have it.
+
 ## What Changed Since October
 
 | | October 31 | November 16 |
@@ -171,7 +183,7 @@ On his chips he goes for Weapon Critical Hit Damage, Critical Hit Chance and Mul
 | [Optimized Armor](/database/skill-mod-combos/optimized-armor/) (Smart Cover) | 1 gold, 2 purple | +4.80% Damage Reduction, a 7.20% chance to restore 1 bullet | +3.20%, 4.80% |
 | [Field Supplies](/database/skill-mod-combos/field-supplies/) (Scanning Pulse) | 3 purple | 6% Health, 6.40% of the magazine | The same |
 
-More gold pieces, bigger numbers: every set we've seen with its pieces on screen fits that so far, and the [skill mod database](/database/skill-mod-combos/#tiers) has the details. He runs Optimized Armor "as usual" and keeps his purple Software and Chipset because they're better than the gold ones he has. On Scanning Pulse he's farming [Compound Effect](/database/skill-mod-combos/compound-effect/) for Skill Cooldown Recovery: deploying Scanning Pulse while Fortified takes 1.50 s off the cooldown.
+More gold pieces, bigger numbers: every set we've seen with its pieces on screen fits that so far, and the [skill mod database](/database/skill-mod-combos/#tiers) has the details. He runs Optimized Armor "as usual" and keeps his purple Software and Chipset because they're better than the gold ones he has. On Scanning Pulse he was farming [Compound Effect](/database/skill-mod-combos/compound-effect/) for Skill Cooldown Recovery, and his solo video shows it equipped (above).
 
 ## Gear, Mods and TAM
 
@@ -201,6 +213,7 @@ More from GGReborn on [his creator page](/creators/ggreborn/), his October versi
 
 ## Sources
 
-- [GGReborn: BEST Vanguard Build UPDATED! High DPS & Survivability (YouTube, November 16, 2026)](https://www.youtube.com/watch?v=Lw8_IyC1WJ8). Every card, caption and number on this page is from this video; the loadout picture and the gameplay frame are taken from it.
+- [GGReborn: BEST Vanguard Build UPDATED! High DPS & Survivability (YouTube, November 16, 2026)](https://www.youtube.com/watch?v=Lw8_IyC1WJ8). Every card, caption and number on this page is from this video except the "His Solo Version" section; the loadout picture and the gameplay frame are taken from it.
 - [GGReborn: BEST Vanguard DB Spamming Build! (YouTube, October 31, 2026)](https://www.youtube.com/watch?v=NBB6j05PvsE), for the October numbers.
+- [GGReborn: SOLO VANGUARD BUILD! (YouTube)](https://www.youtube.com/watch?v=nEYcv2JG3dA), for "His Solo Version": gear and weapon cards from 0:36, skill mods at 3:00 to 3:42, Attributes at 3:48.
 - In-game Build-Making Database, recorded October 28 and 29, 2026. Browse it in our [database](/database/).

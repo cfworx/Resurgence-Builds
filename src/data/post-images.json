@@ -1481,6 +1481,30 @@
   "small": "/images/guides/division-resurgence-tactical-augmentation-modules-guide-map-room-480.webp",
   "thumb": "/images/guides/division-resurgence-tactical-augmentation-modules-guide-map-room-thumb.webp"
  },
+ "/images/guides/division-resurgence-weekly-bounty-target-instance-gearhead-1200.webp": {
+  "width": 1200,
+  "height": 688,
+  "srcset": [
+   [
+    480,
+    "/images/guides/division-resurgence-weekly-bounty-target-instance-gearhead-480.webp"
+   ],
+   [
+    800,
+    "/images/guides/division-resurgence-weekly-bounty-target-instance-gearhead-800.webp"
+   ],
+   [
+    1200,
+    "/images/guides/division-resurgence-weekly-bounty-target-instance-gearhead-1200.webp"
+   ],
+   [
+    1360,
+    "/images/guides/division-resurgence-weekly-bounty-target-instance-gearhead-1360.webp"
+   ]
+  ],
+  "small": "/images/guides/division-resurgence-weekly-bounty-target-instance-gearhead-480.webp",
+  "thumb": "/images/guides/division-resurgence-weekly-bounty-target-instance-gearhead-thumb.webp"
+ },
  "/images/guides/the-division-2-redeem-codes-billboard-plaza-1200.webp": {
   "width": 1200,
   "height": 630,

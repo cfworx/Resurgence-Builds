@@ -112,6 +112,8 @@ loadout:
 
 Build by **PYM GameCat**. His video has no commentary: it opens the loadout and goes through every card, the OS Protocol, the Attributes screen and the three skills. So this page is what his screens show, and we haven't tested it ourselves.
 
+Want to see a Tactical Pharma of his in a fight? He also runs one solo through a [Weekly Bounty](/guides/division-resurgence-endgame-tips/) target, Fredrick "Gearhead" Montano in Wall Street Woes, on Normal in 2:25 ([video](https://www.youtube.com/watch?v=2x8dTe9CeMw)). He doesn't open his gear in that one, so we can't promise it's this exact loadout.
+
 ## His Numbers
 
 Power Score 27.94k: Firepower 245, Toughness 381, Engineering 2.33k, **DPS 1.35m**, Armor 10,155, Health 118,484. Holding the MPX, his Attributes screen reads:
