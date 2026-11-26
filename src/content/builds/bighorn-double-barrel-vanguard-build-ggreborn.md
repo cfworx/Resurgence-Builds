@@ -135,6 +135,8 @@ A later GGReborn video, "SOLO VANGUARD BUILD!", is this build again with the **s
 
 So if you've set up this page's build, his solo video needs one change: Compound Effect on Scanning Pulse once you have it.
 
+To watch it in a full mission, his ["4 Bullets, 1 Vanguard!" video](https://www.youtube.com/watch?v=4ikGBfSeEIA) runs the same Double Barrel and Bighorn with Scanning Pulse, Tactical Link and Smart Cover solo through Wall Street Woes on Legendary. It has no commentary and no loadout screen, so it's gameplay only.
+
 ## What Changed Since October
 
 | | October 31 | November 16 |
@@ -215,5 +217,6 @@ More from GGReborn on [his creator page](/creators/ggreborn/), his October versi
 
 - [GGReborn: BEST Vanguard Build UPDATED! High DPS & Survivability (YouTube, November 16, 2026)](https://www.youtube.com/watch?v=Lw8_IyC1WJ8). Every card, caption and number on this page is from this video except the "His Solo Version" section; the loadout picture and the gameplay frame are taken from it.
 - [GGReborn: BEST Vanguard DB Spamming Build! (YouTube, October 31, 2026)](https://www.youtube.com/watch?v=NBB6j05PvsE), for the October numbers.
+- [GGReborn: 4 Bullets, 1 Vanguard! Solo Legendary Wall Street Woes (YouTube)](https://www.youtube.com/watch?v=4ikGBfSeEIA), gameplay only.
 - [GGReborn: SOLO VANGUARD BUILD! (YouTube)](https://www.youtube.com/watch?v=nEYcv2JG3dA), for "His Solo Version": gear and weapon cards from 0:36, skill mods at 3:00 to 3:42, Attributes at 3:48.
 - In-game Build-Making Database, recorded October 28 and 29, 2026. Browse it in our [database](/database/).
