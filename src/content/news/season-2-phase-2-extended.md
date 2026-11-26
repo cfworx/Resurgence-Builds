@@ -22,6 +22,9 @@ faqs:
     answer: "Ubisoft's announcement doesn't mention the pass. The Season 2 Phase 2 Classified Ops Pass, with the Diamondback on its free track, belongs to the phase that got extended, so in our reading you have more time than the usual six weeks, but check the pass timer in game rather than taking our word for it."
 ---
 
+> [!INFO] Now dated
+> On November 24, 2026 Ubisoft announced the date: the Winter Update arrives on December 1, after an Agent Briefing showcase on November 30. [Here's the schedule](/news/winter-update-december-1-agent-briefing/).
+
 **Ubisoft has extended Season 2 Phase 2.** On **October 21, 2026**, the official @TheDivMobile account posted: "We have decided to extend Season 2 Phase 2 until we are ready to release a much bigger update later this year." The post came with a video and a nudge to watch the game's social channels for updates. No date for the bigger update, and no Season 2 Phase 3 announcement.
 
 Here's what that changes, what it doesn't, and what's still a question mark.

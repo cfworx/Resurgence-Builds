@@ -1,0 +1,64 @@
+---
+title: "Winter Update Lands December 1"
+publishDate: 2026-11-24
+author: "RapidF5"
+tags: ["News", "Roadmap", "Season 2", "Steam", "Dev Stream"]
+description: "Ubisoft dated the big Division Resurgence update: Agent Briefing November 30, Winter Update December 1, dev livestream December 3. What we know."
+shareTitle: "The big update has a date: December 1"
+shareText: "Ubisoft's Steam post sets a showcase on November 30, the Winter Update on December 1 and a dev livestream on December 3. Here's the schedule."
+faqs:
+  - question: "When is the Division Resurgence Winter Update?"
+    answer: "December 1, 2026. Ubisoft's November 24 Steam post says: 'The biggest update yet comes to The Division Resurgence on December 1st, 2026.' Ubisoft didn't give a time of day or a maintenance window, so clear your calendar loosely and your inventory firmly."
+  - question: "What time is the Division Resurgence Agent Briefing?"
+    answer: "Monday, November 30, 2026 at 6 PM CET, on Ubisoft's Twitch channel twitch.tv/thedivisiongame. That works out to 17:00 UTC, 12 PM Eastern and 9 AM Pacific, which is right when your boss schedules the meeting that could have been an email."
+  - question: "Is the Winter Update Season 3?"
+    answer: "Ubisoft hasn't said. The November 24 post calls it the 'Winter Update' and 'the biggest update yet', and never uses the words Season 3. The April roadmap promised a Season 3 story expansion this winter, but connecting those two is our job only after Ubisoft does it first."
+  - question: "When are the Winter Update patch notes coming out?"
+    answer: "Ubisoft says 'the blog post and full patch notes will be published right after the showcase', so on or after November 30. We'll break them down on our patch notes page as soon as they're up, probably while the coffee is still too hot."
+  - question: "What's in the Division Resurgence Winter Update?"
+    answer: "Nobody outside Ubisoft knows yet. The post only gives dates and says 'That's all we can say for now.' The November 30 showcase is where the team will 'walk you through everything coming in the update.' Anyone listing features before then is guessing."
+---
+
+**The "much bigger update" finally has a date.** On **November 24, 2026**, Ubisoft posted the schedule on the game's Steam page: an **Agent Briefing on November 30**, the **Winter Update on December 1**, and a **dev livestream on December 3**. Ubisoft calls it "the biggest update yet."
+
+If you've been grinding the same Season 2 Phase 2 pass since September 16 and wondering whether your agent had quietly retired, this is the post you wanted.
+
+## The schedule
+
+| Date | What | Details from Ubisoft |
+|---|---|---|
+| **Monday, November 30** | Agent Briefing | The next Dev Update Showcase, 6 PM CET on [twitch.tv/thedivisiongame](https://www.twitch.tv/thedivisiongame). "The team will walk you through everything coming in the update." |
+| **Tuesday, December 1** | Winter Update | "The biggest update yet comes to The Division Resurgence on December 1st, 2026." |
+| **Thursday, December 3** | Dev Livestream | "Two days after launch, the team goes live to play the new content with you and answer your questions." |
+
+For the time-zone math: 6 PM CET on November 30 is **17:00 UTC**, **12 PM Eastern** and **9 AM Pacific**. Ubisoft didn't give a time for the update itself on December 1, or say whether there will be maintenance.
+
+## Why this matters
+
+On October 21, Ubisoft [extended Season 2 Phase 2](/news/season-2-phase-2-extended/) "until we are ready to release a much bigger update later this year." The November 24 post opens by tying itself straight back to that: "A few weeks ago we told you we were extending Season 2 Phase 2 to prepare a much bigger update later this year. The wait is almost over, and we can now share the dates."
+
+So this is that update. December 1 also keeps the promise of "later this year" with a month to spare.
+
+Ubisoft also says "the blog post and full patch notes will be published right after the showcase." That means we should get the full list of changes on November 30, a day before it goes live, instead of finding out what changed by noticing that our build suddenly hits like a wet paper towel.
+
+## What we don't know yet
+
+- **What's in it.** Ubisoft's post is dates only: "That's all we can say for now."
+- **Whether it's Season 3.** Ubisoft calls it the Winter Update. The April roadmap said Season 3 "this winter will bring a major story expansion to the game," but the November 24 post doesn't use the words Season 3 or story expansion, so we won't either.
+- **What happens to the current pass.** The post doesn't mention the Season 2 Phase 2 pass or the Diamondback. If you still have tiers left, the in-game timer is the only clock that counts, and finishing it before December 1 is the safe play.
+- **Patch size, downtime and platforms.** Not announced. Ubisoft says to "keep an eye on our channels this week."
+
+## What to do before December 1
+
+1. **Watch the showcase** on November 30, or read our write-up after it. We'll cover the patch notes the moment they're published on our [patch notes page](/patch-notes/).
+2. **Finish what you can on the current pass**, since Ubisoft hasn't said what happens to it.
+3. **Write down your build.** Big updates tend to move numbers, and it's easier to fix a build you remember. Ours are on the [builds page](/builds/), each with what [Season 2 Phase 2](/patch-notes/season-2-phase-2/) changed.
+4. **Bring questions to December 3.** The dev livestream is where the team says it will "answer your questions," so that's the place for the ones the patch notes don't settle.
+
+We'll update this post with the showcase details on November 30.
+
+## Sources
+
+- [Steam: Upcoming schedule: Agent Briefing on November 30th, update on December 1st (November 24, 2026)](https://steamcommunity.com/games/3749720/announcements/detail/705537268888110627)
+- [@TheDivMobile: Season 2 Phase 2 extension (October 21, 2026)](https://x.com/TheDivMobile/status/2112936959467561123)
+- [Ubisoft News: Roadmap, PC launch, story expansion and more (April 28, 2026)](https://news.ubisoft.com/en-us/article/9ZzMWcx5ADnaxAiOO3e0w/the-division-resurgence-roadmap-pc-launch-story-expansion-and-more)

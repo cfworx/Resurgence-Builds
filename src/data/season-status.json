@@ -2,7 +2,7 @@
   "_about": "Drives the 'Live now' strip on the homepage. Update when a new season or phase goes live (see AUTOMATION.md). Every claim here must match an official Ubisoft source. Keep the headline to about ten words (the owner asked for it short on 2026-10-31); the links carry the detail. Links: only this phase's news and patch notes (the owner removed the interactive map link on 2026-10-25; don't add it back). The 'next' block feeds the 'Where the game is now' box on /patch-notes/: what Ubisoft has said about the next update, in one or two sentences with the date it said it, and a link to our post on it. No guesses: when Ubisoft has said nothing, say that.",
   "season": "Season 2 Phase 2",
   "since": "2026-09-16",
-  "headline": "Diamondback on the pass. Extended until a bigger update.",
+  "headline": "Diamondback on the pass. Winter Update lands December 1.",
   "links": [
     {
       "label": "Patch notes",
@@ -14,9 +14,9 @@
     }
   ],
   "next": {
-    "text": "No date yet. On October 21, 2026 Ubisoft extended Season 2 Phase 2 \"until we are ready to release a much bigger update later this year.\"",
-    "label": "What the extension means",
-    "href": "/news/season-2-phase-2-extended/"
+    "text": "December 1, 2026. On November 24 Ubisoft dated \"the biggest update yet\": the Winter Update on December 1, after an Agent Briefing showcase on November 30 (6 PM CET) with the patch notes right after it.",
+    "label": "The Winter Update schedule",
+    "href": "/news/winter-update-december-1-agent-briefing/"
   },
-  "checked": "2026-11-23"
+  "checked": "2026-11-26"
 }
