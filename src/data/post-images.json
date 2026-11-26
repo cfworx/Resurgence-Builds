@@ -1862,6 +1862,26 @@
   "small": "/images/news/division-resurgence-community-feedback-base-cafe-480.webp",
   "thumb": "/images/news/division-resurgence-community-feedback-base-cafe-thumb.webp"
  },
+ "/images/news/division-resurgence-deadlock-season-2-pass-card-1095.webp": {
+  "width": 1095,
+  "height": 972,
+  "srcset": [
+   [
+    480,
+    "/images/news/division-resurgence-deadlock-season-2-pass-card-480.webp"
+   ],
+   [
+    800,
+    "/images/news/division-resurgence-deadlock-season-2-pass-card-800.webp"
+   ],
+   [
+    1095,
+    "/images/news/division-resurgence-deadlock-season-2-pass-card-1095.webp"
+   ]
+  ],
+  "small": "/images/news/division-resurgence-deadlock-season-2-pass-card-480.webp",
+  "thumb": "/images/news/division-resurgence-deadlock-season-2-pass-card-thumb.webp"
+ },
  "/images/news/division-resurgence-double-xp-weekend-street-fight-1200.webp": {
   "width": 1200,
   "height": 630,
@@ -2323,6 +2343,78 @@
   ],
   "small": "/images/news/division-resurgence-season-2-the-call-live-signal-source-480.webp",
   "thumb": "/images/news/division-resurgence-season-2-the-call-live-signal-source-thumb.webp"
+ },
+ "/images/news/division-resurgence-season-2-trailer-agent-gramophone-echo-1200.webp": {
+  "width": 1200,
+  "height": 675,
+  "srcset": [
+   [
+    480,
+    "/images/news/division-resurgence-season-2-trailer-agent-gramophone-echo-480.webp"
+   ],
+   [
+    800,
+    "/images/news/division-resurgence-season-2-trailer-agent-gramophone-echo-800.webp"
+   ],
+   [
+    1200,
+    "/images/news/division-resurgence-season-2-trailer-agent-gramophone-echo-1200.webp"
+   ],
+   [
+    1600,
+    "/images/news/division-resurgence-season-2-trailer-agent-gramophone-echo-1600.webp"
+   ]
+  ],
+  "small": "/images/news/division-resurgence-season-2-trailer-agent-gramophone-echo-480.webp",
+  "thumb": "/images/news/division-resurgence-season-2-trailer-agent-gramophone-echo-thumb.webp"
+ },
+ "/images/news/division-resurgence-season-2-trailer-squad-ruined-street-1200.webp": {
+  "width": 1200,
+  "height": 675,
+  "srcset": [
+   [
+    480,
+    "/images/news/division-resurgence-season-2-trailer-squad-ruined-street-480.webp"
+   ],
+   [
+    800,
+    "/images/news/division-resurgence-season-2-trailer-squad-ruined-street-800.webp"
+   ],
+   [
+    1200,
+    "/images/news/division-resurgence-season-2-trailer-squad-ruined-street-1200.webp"
+   ],
+   [
+    1600,
+    "/images/news/division-resurgence-season-2-trailer-squad-ruined-street-1600.webp"
+   ]
+  ],
+  "small": "/images/news/division-resurgence-season-2-trailer-squad-ruined-street-480.webp",
+  "thumb": "/images/news/division-resurgence-season-2-trailer-squad-ruined-street-thumb.webp"
+ },
+ "/images/news/division-resurgence-season-2-trailer-three-agents-street-1200.webp": {
+  "width": 1200,
+  "height": 675,
+  "srcset": [
+   [
+    480,
+    "/images/news/division-resurgence-season-2-trailer-three-agents-street-480.webp"
+   ],
+   [
+    800,
+    "/images/news/division-resurgence-season-2-trailer-three-agents-street-800.webp"
+   ],
+   [
+    1200,
+    "/images/news/division-resurgence-season-2-trailer-three-agents-street-1200.webp"
+   ],
+   [
+    1600,
+    "/images/news/division-resurgence-season-2-trailer-three-agents-street-1600.webp"
+   ]
+  ],
+  "small": "/images/news/division-resurgence-season-2-trailer-three-agents-street-480.webp",
+  "thumb": "/images/news/division-resurgence-season-2-trailer-three-agents-street-thumb.webp"
  },
  "/images/news/division-resurgence-steam-launch-reviews-cavern-talk-1200.webp": {
   "width": 1200,

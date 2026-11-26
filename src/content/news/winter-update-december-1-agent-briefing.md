@@ -48,6 +48,7 @@ Ubisoft also says "the blog post and full patch notes will be published right af
 - **What's in it.** Ubisoft's post is dates only: "That's all we can say for now."
 - **Whether it's Season 3.** Ubisoft calls it the Winter Update. The April roadmap said Season 3 "this winter will bring a major story expansion to the game," but the November 24 post doesn't use the words Season 3 or story expansion, so we won't either.
 - **What happens to the current pass.** The post doesn't mention the Season 2 Phase 2 pass or the Diamondback. If you still have tiers left, the in-game timer is the only clock that counts, and finishing it before December 1 is the safe play.
+- **Whether Deadlock arrives.** Ubisoft's Season 2 trailer showed a Deadlock exotic as the free reward of a Classified Ops Pass 2.3 that never started. [What we know about Deadlock](/news/deadlock-exotic-what-we-know/).
 - **Patch size, downtime and platforms.** Not announced. Ubisoft says to "keep an eye on our channels this week."
 
 ## What to do before December 1
