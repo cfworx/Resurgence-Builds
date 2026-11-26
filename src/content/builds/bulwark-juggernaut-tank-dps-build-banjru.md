@@ -19,9 +19,9 @@ faqs:
   - question: "What is Banjru's Bulwark Juggernaut tank build?"
     answer: "A Bulwark Juggernaut tank that keeps a real gun: 4 pieces of Healing Elites and 2 of Self-Propelled Shield, the Blitz Tactics OS Protocol, a First Wave Vector 45 ACP with Unhinged II and Performer II, and the exotic Scorpio with Spec-Ops II and Sentinel Aura II. His loadout screen reads 27.23k Power Score, 430,521 Health, 17,838 Armor and 159.05k DPS. Every number on this page is from his in-game screens; we haven't re-tested it ourselves."
   - question: "How does a tank put out 159K DPS?"
-    answer: "Rudely. The Vector carries Unhinged II (+25% Weapon Damage) and Performer II (+25% more within 20 meters), both guns roll Weapon Critical Hit Damage, the mask and the Scorpio add Damage to Elites, and his nine skill mod pieces are stuffed with Critical Hit Chance, Critical Hit Damage and Multi-Shot Chance instead of more Armor. The 159.05k is his loadout screen's number, not a damage test."
+    answer: "From the guns and the skill mods. The Vector carries Unhinged II (+25% Weapon Damage) and Performer II (+25% more within 20 meters), both guns roll Weapon Critical Hit Damage, the mask and the Scorpio add Damage to Elites, and his nine skill mod pieces are stuffed with Critical Hit Chance, Critical Hit Damage and Multi-Shot Chance instead of more Armor. The 159.05k is his loadout screen's number, not a damage test."
   - question: "Why does everything on this build say 20 meters?"
-    answer: "Because personal space is for builds without a shield. Performer, Spec-Ops and Sentinel Aura only work on enemies within 20 meters, and Blitz Tactics counts enemies within 20 meters who are targeting you. So the build wants you up close, which is where a Bulwark stands anyway."
+    answer: "Performer, Spec-Ops and Sentinel Aura only work on enemies within 20 meters, and Blitz Tactics counts enemies within 20 meters who are targeting you. So the build wants you up close, which is where a Bulwark stands anyway."
   - question: "What if I don't have the Scorpio?"
     answer: "Then you lose the healing half of the guns. No standard weapon in the game rolls both Spec-Ops and Sentinel Aura, so pick the one that matters more: Sentinel Aura heals you on hits, and healing is what switches on Rock Solid's Damage Reduction. Its database page lists every gun that rolls it."
   - question: "Do I need Rock Solid II on the backpack?"
@@ -164,7 +164,7 @@ His cards show the recalibrated mark on the mask's Weapon Critical Hit Damage, t
 
 ## OS Protocol and Skill Mods
 
-**[Blitz Tactics](/database/os-protocols/blitz-tactics/)**, level 50, with four upgrade pips lit on his loadout screen: +12% Incoming Healing for each enemy within 20 meters who is targeting you, and taking weapon damage restores 8% Max Health (5 second cooldown), at the lowest level. Levels and upgrades raise both, and level 50 doubles its Toughness bonus to +36%. His protocol card isn't on the screens we have.
+**[Blitz Tactics](/database/os-protocols/blitz-tactics/)**, level 50, with four upgrade pips lit on his loadout screen: +12% Incoming Healing for each enemy within 20 meters who is targeting you, and taking weapon damage restores 8% Max Health (5 second cooldown), at the lowest level. Talent upgrades raise both (each adds 20% of the base value, by our [OS Protocol readings](/database/os-protocols/)), and level 50 doubles the protocol's +18% Toughness to +36%. His protocol card isn't on the screens we have.
 
 | Skill | Set | His pieces | What they read |
 |---|---|---|---|
