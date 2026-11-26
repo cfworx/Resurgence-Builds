@@ -135,6 +135,11 @@ The best evidence is the game's own recalibration preview, which lists a weapon'
 | Unhinged | +18% Weapon Damage | +25% (Banjru's First Wave Vector 45 ACP, November 25; the -10% Stability and Accuracy stay) | about 1.4x |
 | Spec-Ops | +20% Rate of Fire, +5% Incoming Healing | +28%, +7% (Banjru's Scorpio, November 25) | 1.4x |
 | Sentinel Aura | (600 x Toughness)% Health | (840 x Toughness)% (Banjru's Scorpio, November 25; the 5 second cooldown stays) | 1.4x |
+| Emergency Retreat (body armor) | +37.50% Damage Reduction near enemies | +52.50% (both ranks on Smakt's Ops Armor recalibration preview; the +10% Movement Speed stays) | 1.4x |
+| Instant Triage (body armor) | +22.50% Damage Reduction when an ally is down | +31.50% (the same preview; +50% Rescue Efficiency stays) | 1.4x |
+| Fearless Charge (body armor) | +21% Damage Reduction while sprinting | +30% (the same preview) | about 1.4x |
+| Battlelust (body armor) | +6% Weapon Damage per stack | +8.40% (the same preview) | 1.4x |
+| Rescue Signal (body armor) | +10% Movement Speed for allies | +15% (the same preview; +100% Rescue Efficiency stays) | 1.5x |
 | Slaughter Fortitude | +12% Armor per stack | +18% (both ranks on the preview) | 1.5x |
 | Steady Handed | +1.20% Accuracy and Stability per stack | +1.80% (both ranks on the preview) | 1.5x |
 | Slaughter Healing | +7% Incoming Healing per stack | +10.50% (the preview) | 1.5x |
@@ -143,7 +148,12 @@ The best evidence is the game's own recalibration preview, which lists a weapon'
 
 Not every number in a talent climbs. Unflinching II keeps its 70% chance and 2 second cooldown, Precise Support II keeps +40% Rescue Efficiency, and timers can move the other way: Backup Magazine II reloads your other weapon after 3 seconds, where rank I waits 4, and the preview shows both. AgentHuntzman shows the same thing on another talent in the Build Database: Blood for Blood's bonus damage goes from 0.50% of max Health to 0.70% at level two.
 
-The last five rows are the exceptions. Slaughter Fortitude and Steady Handed show both ranks on the same in-game screen, so they really do step up 1.5 times; Slaughter Healing's rank II on that screen is 1.5 times our rank I; and Rock Solid shows +15% and +20% on two of TikTokAndy's own backpacks, and +20% again on Banjru's. Ammo Supply is still one creator tooltip against our capture, so we're re-checking it. So when you see a II talent on a drop, expect about 40% more of whatever the base version does, then check the tooltip. Our database lists base (rank I) text, and each weapon talent page shows the game's own rank II text where we've seen it.
+The last six rows are the exceptions. Rescue Signal, Slaughter Fortitude and Steady Handed show both ranks on the same in-game screen, so they really do step up 1.5 times; Slaughter Healing's rank II on that screen is 1.5 times our rank I; and Rock Solid shows +15% and +20% on two of TikTokAndy's own backpacks, and +20% again on Banjru's. Ammo Supply is still one creator tooltip against our capture, so we're re-checking it. So when you see a II talent on a drop, expect about 40% more of whatever the base version does, then check the tooltip. Our database lists base (rank I) text, and each weapon talent page shows the game's own rank II text where we've seen it.
+
+
+### The odds when you recalibrate a talent
+
+The recalibration screen prints the chance of every talent you could roll. On Smakt's T2 Ops Armor, recalibrating away from Recycling, each of the other 11 rank I talents shows a **7.14% chance** (1 in 14), and each rank II talent shows **1.79%** (1 in 56), Recycling II included. His list scrolls past the first six rank II talents, but the numbers add up if all 12 are there: 11 times 7.14% plus 12 times 1.79% is 100%. So roughly one recalibration in five lands on a rank II talent, and any one rank II talent you want is a 1 in 56 shot. The 11 rank I talents it lists are exactly the ones our [body armor database](/database/body-armor-talents/) has for Ops Armor.
 
 ## How OS Protocols scale
 
@@ -220,6 +230,7 @@ For browsing outside the game, our [database](/database/) collects gear sets, ta
 - [SannoNYC: The Division Resurgence Vanguard Build 2026 (YouTube)](https://www.youtube.com/watch?v=0c6ZAYPDsEE) (the same build later, with its full skill attributes at 0:25)
 - [@TheDivMobile: June 26, 2026 server hotfix](https://x.com/TheDivMobile/status/2070483985642197252) (80% damage reduction cap)
 - [Ubisoft Help Center: Patch Note, Season 1 Phase 3](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2521-patch-note---season-1-phase-3/) (Applied Demolition values)
+- [Smakt: HUGE NEW DIVISION RESURGENCE BUILD (YouTube)](https://www.youtube.com/watch?v=Y7STYxiUCTc&t=5144s) (his Ops Armor recalibration preview at 1:25:44, with both talent ranks and their chances)
 - [Ubisoft Help Center: Patch Note, Season 2 Phase 2](https://ubisoft-mobile.helpshift.com/hc/en/41-the-division-resurgence/faq/2566-patch-note---season-2-phase-2/) (Strained, Dominating Presence)
 - [Season 2 Phase 1 patch notes (The Division Wiki mirror of the official developer post)](https://thedivision.fandom.com/wiki/Season_2_Phase_1_-_Patch_Notes) (weapon rolls and mods)
 - [Ubisoft News: The Division Resurgence amps up specializations (June 12, 2023)](https://news.ubisoft.com/en-us/article/6Jn7afkUJmUJR14VMbv5VK/the-division-resurgence-amps-up-specializations-launch-slated-for-fall-2023) (damage types, the Armory)

@@ -473,7 +473,14 @@ body.has-dialog #main-content { z-index: 10002; }
 .cardx__v { font-family: var(--pl-display); font-weight: 700; font-size: 17px; color: var(--pl-ink); }
 .cardx__score { margin-left: auto; text-align: right; }
 .cardx__score b { display: block; font-family: var(--pl-display); font-weight: 700; font-size: 46px; line-height: 1; color: var(--pl-orange-2); text-shadow: 0 0 24px rgba(242, 104, 34, 0.5); }
-@media (min-width: 640px) { .card-preview { aspect-ratio: 1200 / 630; } .cardx { position: absolute; inset: 0; padding: 5.5%; } .cardx__row { margin-top: auto; } }
+/* At least the 1200 x 630 shape of the PNG, and taller when a long name wraps, so nothing is cut off:
+   the spacer holds the shape and the card shares its grid cell. */
+@media (min-width: 640px) {
+  .card-preview { display: grid; }
+  .card-preview::before { content: ''; grid-area: 1 / 1; padding-top: 52.5%; }
+  .cardx { grid-area: 1 / 1; padding: 5.5%; }
+  .cardx__row { margin-top: auto; }
+}
 .card-actions { display: flex; flex-wrap: wrap; gap: var(--sp-2); padding: 0 var(--sp-5) var(--sp-3); }
 .card-actions .pl-btn { min-height: 48px; }
 .card-note { margin: 0; padding: 0 var(--sp-5) var(--sp-5); font-size: var(--step--2); line-height: 1.5; color: var(--pl-ink-3); }
