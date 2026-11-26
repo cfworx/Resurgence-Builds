@@ -28,6 +28,12 @@ const INDEXED_TAGS = new Set(Object.keys(tagIntros));
 // Thin database item pages carry a noindex meta tag (see src/utils/indexability.mjs).
 // The sitemap must contain ONLY indexable pages, so exclude the same set here.
 const NOINDEXED_DB_PATHS = getNoindexedDatabasePaths();
+// News posts marked `noindex: true` (community roundups kept for readers) stay out of the sitemap too.
+const NOINDEXED_NEWS_PATHS = new Set(
+  fs.readdirSync('./src/content/news')
+    .filter((f) => f.endsWith('.md') && /^noindex:\s*true\s*$/m.test(fs.readFileSync(path.join('./src/content/news', f), 'utf-8')))
+    .map((f) => `/news/${f.replace(/\.md$/, '')}/`)
+);
 
 export default defineConfig({
   site: 'https://resurgencebuilds.com',
@@ -67,6 +73,7 @@ export default defineConfig({
         // Exclude noindexed (thin) database item pages — sitemap must match robots meta.
         const pathname = new URL(page).pathname;
         if (NOINDEXED_DB_PATHS.has(pathname)) return false;
+        if (NOINDEXED_NEWS_PATHS.has(pathname)) return false;
 
         return true;
       },

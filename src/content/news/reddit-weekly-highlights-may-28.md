@@ -18,6 +18,7 @@ faqs:
     answer: "No. He is still sweeping. He has been sweeping since launch. Multiple agents have offered to help. He declined. He has never appeared in a patch note, which means he isn't a bug. He's just dedicated. This is his burden. He will carry it alone."
   - question: "Should I read the gear descriptions in Division Resurgence?"
     answer: "Technically yes. Realistically, you are going to look at Crit Chance, Crit Damage, and maybe the color of the icon, and that is fine. Somebody wrote all those descriptions and they know we skip them. We are sorry."
+noindex: true
 ---
 
 This week on r/thedivisionresurgence: a Cleaner defied gravity and moved to the ceiling, the NYC janitor is still sweeping and will outlive us all, the vendor came back from his mental health leave and immediately started overpaying by 60x, a man filed the most professional cosmetic bug report in gaming history using MS Paint, and someone realized the game has more required reading than a college syllabus. The subreddit went from doomposting to roast mode in record time, and honestly? The memes are better content than most gaming outlets are putting out right now. Here are the 10 best posts from the last 10 days.

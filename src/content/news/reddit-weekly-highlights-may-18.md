@@ -17,6 +17,7 @@ faqs:
     answer: "By gaming subreddit standards? It's actually pretty civil. People are passionate about the game, which means debates get heated, but outright toxicity gets moderated. The DZ complaints are loud. The build theorycrafting is genuinely helpful. And the memes are mid-tier at best, which means there's room for you to be the hero this community deserves."
   - question: "Does Ubisoft read the Division Resurgence subreddit?"
     answer: "Yes. The developer account u/TDResurgence posts there, and Ubisoft published the full Season 2 Phase 1 patch notes on the subreddit and linked them from its own news article. For bugs, the best channel now is Ubisoft's official bug reporter, where you can upvote an existing issue or file a new one with screenshots. Specific, screenshot-backed reports travel a lot further than all-caps ones. Ask us how we know."
+noindex: true
 ---
 
 Every week, the Division Resurgence subreddit delivers a masterclass in communal suffering, accidental comedy, and the kind of raw, unfiltered gamer rage that would make a therapist retire early. We read it all so you don't have to. Here are the 10 best posts from the last two weeks, ranked by how hard they made us laugh, cry, or both.

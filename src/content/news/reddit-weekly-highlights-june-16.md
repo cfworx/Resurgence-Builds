@@ -18,6 +18,7 @@ faqs:
     answer: "Nobody official has explained SHD Recruiter as far as we can find. The thread guessed a content creator perk, a beta reward or a referral title, and none of those is confirmed. What is confirmed: some titles come from limited-time events (Season 2's speedrun events handed out 'Lightspeed Agent'). Our guess for any title that isn't in your list is an event or promo you missed, not a glitch in your eyeballs."
   - question: "Is the PKM good in Division Resurgence?"
     answer: "The community consensus at patch 1.1.2.2 was that LMG reload speed and magazine size were not in a good place, and the PKM was the loudest example. It can still hit, but the downtime between sprays makes it tough to take into elite or legendary content without a tight cover loop. As of Season 2 Phase 2, none of Ubisoft's patch notes have changed the PKM directly, so it is still in timeout unless your own testing says otherwise."
+noindex: true
 ---
 
 The Steam announcement landed, the Trello board got its weekly round of red cards, an agent floated into the sky like a balloon at a dad's birthday party, and somebody fanart-ed an NPC nobody can name. The subreddit has been doing its best impression of a Discord chat at 2 AM after the third energy drink. Half the posts this stretch were wild screenshots of things nobody expected to find in-game, and the other half were players trying to figure out where the loot went. Both halves were funnier than they had any right to be.

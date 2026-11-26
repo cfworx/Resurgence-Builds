@@ -19,6 +19,7 @@ faqs:
     answer: "Not yet. A community campaign this month asked for one-attribute mod recalibration, like weapons and armor already have, and it's on Ubisoft's bug reporter as TDR-652 for players to upvote. Until then, mods are an RNG relationship and you're not in charge."
   - question: "Where can I read previous Division Resurgence Reddit highlights?"
     answer: "Scroll to Keep Reading at the bottom. Previous editions cover June 17 to July 2, June 16, May 28 and May 18. This edition picks up after our summer break, so think of it as the 'previously on' episode with extra hearts on screen."
+noindex: true
 ---
 
 Our Reddit roundup is back after a summer off, and the subreddit did not take the summer off. Between **September 25 and October 24, 2026** the community on r/thedivisionresurgence lived through a revive bug that took two official fixes (and some players say still isn't fully gone), got the Heavy Weight nerf some players had campaigned for, digested the [Season 2 Phase 2 extension](/news/season-2-phase-2-extended/), and asked the most important lore question of the season. Here are the posts that defined the month.

@@ -170,6 +170,8 @@ const news = defineCollection({
       answer: z.string(),
     })).optional(),
     sources: z.array(z.string()).optional(),
+    /** Kept for readers but out of Google: "noindex, follow" and left out of the sitemap (astro.config.mjs). */
+    noindex: z.boolean().optional(),
   }),
 });
 

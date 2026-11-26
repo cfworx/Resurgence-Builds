@@ -18,6 +18,7 @@ faqs:
     answer: "The dev team upgraded the game security protection on June 17, 2026, targeting speed hacks, mods, and other hacking tools. They warned that some legitimate players might be flagged and directed them to contact support."
   - question: "Where can I read previous Division Resurgence Reddit highlights?"
     answer: "You scrolled past the Keep Reading section to get here, which means you are exactly the kind of thorough agent we respect. Previous editions cover the June 16 highlights, the May 28 highlights, and the May 18 highlights. Each edition pulls the best community posts from a multi-week window on r/thedivisionresurgence. Scroll back up. The links are right there. We believe in you."
+noindex: true
 ---
 
 The stretch between June 17 and July 2 covered anti-cheat rollouts, the Phase 3 "A New Fire" patch, a [server hotfix on June 26](/news/server-hotfix-june-26-2026/), and the quiet midweek moment when the community discovered a hidden story mission before anyone could announce it. Some posts made us laugh, some made us scratch our heads, and one player was clearly overjoyed about a mission that finally worked. Here are ten posts from [r/thedivisionresurgence](https://www.reddit.com/r/thedivisionresurgence/) worth pulling out of the feed.

@@ -27,6 +27,10 @@ Either way, save what you checked to `automation/state.json` (section 7 explains
    author `RapidF5`, internal links, a `## Sources` section.
 5. **Don't circumvent blocks.** Reddit is blocked for the agent's web tools; do not scrape it through mirrors, archives
    (e.g. Arctic Shift) or proxies. Only use Reddit data the site owner exports and provides.
+5a. **Add something of our own.** No more pure Reddit roundups or patch note recaps (the five old Reddit
+   roundups are `noindex: true` since November 26, 2026: kept for readers, out of Google). A patch or community post
+   ships only with something original: what the change means for our builds or tier lists, a test, a screenshot from
+   the owner's recordings, or a bug written up with how it happens.
 6. **Small, safe changes.** At most 2 new posts per run (combine smaller items into one roundup). Never delete content,
    never change slugs/URLs, never touch `astro.config.mjs` redirects or SEO plumbing in an automated run.
 
