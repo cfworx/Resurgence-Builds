@@ -18,7 +18,11 @@ import allExoticWeapons from '../../data/exotic-weapons.json';
 const exoticWeapons = allExoticWeapons.filter((w: any) => w.statsVerified !== false);
 import dropRates from '../../data/drop-rates.json';
 import { verifiedPatch } from '../../data/site-config';
-const lastVerified = verifiedPatch('Patch 1.1.2.2'); // Bump: drop the arg ONLY after re-verifying this page's content in-game (CURRENT_PATCH is a ceiling, not an auto-bump)
+// The hub's stamp counts the entries whose own page is stamped for the current patch: almost all of them were read off
+// the in-game Build-Making Database and Armory on October 28 and 29, 2026 (Season 2 Phase 2), and the drop rates are
+// Ubisoft's table, checked October 24. The rest keep the older stamp their own page shows (see each page's
+// verifiedPatch() call), so they are counted out here instead of being rounded up.
+const lastVerified = verifiedPatch();
 
 const title = "The Division Resurgence Wiki and Database";
 const description = `The Division Resurgence wiki and database: OS Protocols, weapons, gear sets, talents, skill mods and bonus attributes, updated for the Season 2 Phase 2 patch notes.`;
@@ -124,11 +128,24 @@ const ICON_SVG: Record<string, string> = {
 };
 
 const totalItems = sections.reduce((sum, s) => sum + s.count, 0);
+const OLD_STAT_KEYS = ['rpm', 'mag', 'accuracy', 'reloadSpeed', 'stability'];
+const olderStamp =
+  osProtocols.filter((p: any) => !p.verifiedInGame).length +
+  skillModCombos.filter((m: any) => !m.verifiedInGame).length +
+  weaponTalents.filter((t: any) => !t.verifiedInGame).length +
+  standardWeapons.filter((w: any) => OLD_STAT_KEYS.some((k) => w[k])).length +
+  backpackTalents.filter((t: any) => !t.verifiedInGame).length +
+  bodyArmorTalents.filter((t: any) => !t.verifiedInGame).length +
+  gearSetEffects.filter((g: any) => !g.verifiedInGame).length +
+  exoticWeapons.filter((e: any) => !e.verifiedInGame).length +
+  // Bonus attributes are still stamped Patch 1.2.1 on their page
+  bonusAttributes.reduce((n: number, c: any) => n + c.attributes.length, 0);
+const checkedNow = totalItems - olderStamp;
 
 const faqs = [
   {
     question: "How is the Resurgence Builds database different from a wiki?",
-    answer: "Every entry was checked in-game for the patch on its 'Last verified' stamp, and when Ubisoft's patch notes change a number after that, we update it from the notes and flag the change on the entry."
+    answer: `Every entry was checked for the patch on its own 'Last verified' stamp: ${checkedNow} of the ${totalItems} were read off the game's Build-Making Database and Armory in Season 2 Phase 2 (October 28 and 29, 2026) or come from Ubisoft's drop rate table, and the rest show the older patch they were checked on. When Ubisoft's patch notes change a number after that, we update it from the notes and flag the change on the entry.`
   },
   {
     question: "How often is the database updated?",
@@ -151,7 +168,7 @@ const articleLd = {
   mainEntityOfPage: { '@type': 'WebPage', '@id': `${siteUrl}/database/` },
   datePublished: '2026-05-30',
   // Last change to this hub page itself (section cards and counts), not to the item pages.
-  dateModified: '2026-10-28',
+  dateModified: '2026-11-26',
   image: { '@type': 'ImageObject', url: `${siteUrl}/images/resurgence-builds-official-logo.png`, width: 1024, height: 1024 },
 };
 ---
@@ -164,7 +181,7 @@ const articleLd = {
 
     <div style="display: inline-flex; align-items: center; gap: 6px; font-family: var(--font-mono); font-size: var(--text-xs); color: #6DAA45; background: rgba(109, 170, 69, 0.1); border: 1px solid rgba(109, 170, 69, 0.25); padding: 6px 14px; border-radius: 999px; margin-bottom: var(--sp-6); letter-spacing: 0.02em;">
       <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
-      <span>Last verified for <strong>{lastVerified}</strong> · {totalItems} entries</span>
+      <span>Last verified for <strong>{lastVerified}</strong> · {checkedNow} of {totalItems} entries</span>
     </div>
 
     <p style="color: var(--ink-muted); margin-bottom: var(--sp-8); font-size: var(--text-base); max-width: var(--measure); line-height: 1.7;">

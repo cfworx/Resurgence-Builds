@@ -1774,7 +1774,8 @@
     toast('Couldn\'t copy automatically. Copy the text below.');
   }
 
-  function openCard() {
+  /* What the build card shows: the preview in the dialog and the PNG are drawn from the same data */
+  function cardData() {
     const a = analyze(S, computeStats(S));
     const sets = [...setCounts(S)]
       .map(([id, n]) => ({ set: SETS.get(id), n }))
@@ -1783,6 +1784,177 @@
     const wps = S.w.map((w) => getWeapon(w.id)).filter(Boolean);
     const os = OSP.get(S.os);
     const sp = specOf(S.spec);
+    const icons = [
+      ...wps.map((wp) => ({ url: imgOf(wp.id), wide: true })),
+      os ? { url: imgOf(os.id) } : null,
+      ...S.mods.map((id) => (MODS.get(id) ? { url: imgOf(id) } : null)),
+      ...[...setCounts(S).keys()].map((id) => ({ url: imgOf(id) })),
+    ].filter((x) => x && x.url);
+    return {
+      a, sets, wps, os, sp, icons,
+      name: S.name || 'Untitled build',
+      spec: S.spec ? `${S.spec}, ${S.focus}` : 'No specialization',
+      weapons: wps.map((w) => w.name).join(', ') || 'None',
+      osName: os ? os.name : 'None',
+    };
+  }
+
+  /* The build card as a 1200 x 630 PNG (the size Discord, Reddit and X preview well), drawn on a canvas from the
+     planner's own data and same-site images, so nothing leaves the browser. */
+  const loadImg = (url) => new Promise((resolve) => {
+    if (!url) { resolve(null); return; }
+    const im = new Image();
+    im.onload = () => resolve(im);
+    im.onerror = () => resolve(null);
+    im.src = url;
+  });
+  function fitText(ctx, text, maxW) {
+    if (ctx.measureText(text).width <= maxW) return text;
+    let t = text;
+    while (t.length > 1 && ctx.measureText(t + '…').width > maxW) t = t.slice(0, -1);
+    return t.trimEnd() + '…';
+  }
+  // Up to `max` lines, breaking at spaces (after commas where it can); the last line ends in an ellipsis if cut
+  function wrapLines(ctx, text, maxW, max) {
+    const words = String(text).split(' ');
+    const lines = [];
+    let line = '';
+    for (let i = 0; i < words.length; i++) {
+      const test = line ? line + ' ' + words[i] : words[i];
+      if (ctx.measureText(test).width <= maxW || !line) { line = test; continue; }
+      lines.push(line);
+      line = words[i];
+      if (lines.length === max - 1) { line = words.slice(i).join(' '); break; }
+    }
+    lines.push(line);
+    return lines.slice(0, max).map((l, i) => (i === max - 1 ? fitText(ctx, l, maxW) : l));
+  }
+  function roundRect(ctx, x, y, w, hgt, r) {
+    ctx.beginPath();
+    ctx.moveTo(x + r, y);
+    ctx.arcTo(x + w, y, x + w, y + hgt, r);
+    ctx.arcTo(x + w, y + hgt, x, y + hgt, r);
+    ctx.arcTo(x, y + hgt, x, y, r);
+    ctx.arcTo(x, y, x + w, y, r);
+    ctx.closePath();
+  }
+  async function drawCardPng() {
+    const d = cardData();
+    const W = 1200, H = 630, P = 66;
+    const cv = document.createElement('canvas');
+    cv.width = W; cv.height = H;
+    const ctx = cv.getContext('2d');
+    const DISPLAY = "'Rajdhani', 'DM Sans', sans-serif";
+    const TEXT = "'DM Sans', sans-serif";
+    try {
+      await Promise.all(['600 28px Rajdhani', '700 64px Rajdhani', '700 22px "DM Sans"', '400 18px "DM Sans"'].map((f) => document.fonts.load(f)));
+    } catch (e) { /* draws with fallback fonts */ }
+    const [specImg, ...iconImgs] = await Promise.all([loadImg(d.sp && d.sp.icon ? str(d.sp.icon) : ''), ...d.icons.map((ic) => loadImg(ic.url))]);
+
+    // background, glow and frame, as in the preview
+    const bg = ctx.createLinearGradient(0, 0, W, H);
+    bg.addColorStop(0, '#12141A'); bg.addColorStop(1, '#0A0B0E');
+    ctx.fillStyle = bg; ctx.fillRect(0, 0, W, H);
+    const glow = ctx.createRadialGradient(W * 0.8, -60, 0, W * 0.8, -60, 700);
+    glow.addColorStop(0, 'rgba(242, 104, 34, 0.26)'); glow.addColorStop(1, 'rgba(242, 104, 34, 0)');
+    ctx.fillStyle = glow; ctx.fillRect(0, 0, W, H);
+    ctx.strokeStyle = 'rgba(242, 104, 34, 0.55)'; ctx.lineWidth = 2;
+    ctx.strokeRect(1, 1, W - 2, H - 2);
+
+    ctx.textBaseline = 'alphabetic';
+    ctx.fillStyle = '#FF8A3D'; ctx.font = `700 22px ${TEXT}`;
+    ctx.fillText('Resurgence Builds Build Planner', P, P + 12);
+    ctx.fillStyle = '#959AA1'; ctx.font = `400 20px ${TEXT}`;
+    ctx.textAlign = 'right'; ctx.fillText('resurgencebuilds.com/builder', W - P, P + 12); ctx.textAlign = 'left';
+
+    // the class icon, the build name and the specialization
+    let x = P;
+    const headY = P + 44;
+    if (specImg) {
+      ctx.save(); ctx.shadowColor = 'rgba(242, 104, 34, 0.55)'; ctx.shadowBlur = 18;
+      ctx.drawImage(specImg, P, headY, 88, 88); ctx.restore();
+      x = P + 88 + 22;
+    }
+    let size = 64;
+    ctx.font = `700 ${size}px ${DISPLAY}`;
+    while (size > 40 && ctx.measureText(d.name).width > W - P - x) { size -= 2; ctx.font = `700 ${size}px ${DISPLAY}`; }
+    ctx.fillStyle = '#FFFFFF';
+    ctx.fillText(fitText(ctx, d.name, W - P - x), x, headY + 52);
+    ctx.fillStyle = '#E2B33C'; ctx.font = `600 28px ${DISPLAY}`;
+    ctx.fillText(fitText(ctx, d.spec, W - P - x), x, headY + 88);
+
+    // weapon, OS Protocol, skill mod and gear set icons, wrapped onto two rows at most
+    let ix = P, iy = 268;
+    d.icons.forEach((ic, i) => {
+      const im = iconImgs[i];
+      const w = ic.wide ? 150 : 64, hgt = ic.wide ? 70 : 64;
+      if (ix + w > W - P) { ix = P; iy += 82; }
+      if (iy > 268 + 82) return;
+      ctx.save();
+      if (ic.wide) roundRect(ctx, ix, iy, w, hgt, 10); else { ctx.beginPath(); ctx.arc(ix + 32, iy + 32, 32, 0, Math.PI * 2); }
+      ctx.fillStyle = 'rgba(255, 255, 255, 0.06)'; ctx.fill(); ctx.clip();
+      if (im) {
+        const r = Math.min(w / im.width, hgt / im.height) * (ic.wide ? 1 : 0.86);
+        const dw = im.width * r, dh = im.height * r;
+        ctx.drawImage(im, ix + (w - dw) / 2, iy + (hgt - dh) / 2, dw, dh);
+      }
+      ctx.restore();
+      ix += w + 12;
+    });
+
+    // the three columns (two lines each, so set and weapon names fit) and the score
+    const colY = H - P - 66;
+    const scoreW = 220;
+    const colW = (W - P * 2 - scoreW - 40) / 3;
+    [['Gear sets', d.sets], ['Weapons', d.weapons], ['OS Protocol', d.osName]].forEach(([k, v], i) => {
+      const cx = P + i * (colW + 20);
+      ctx.fillStyle = '#959AA1'; ctx.font = `400 18px ${TEXT}`;
+      ctx.fillText(k, cx, colY);
+      ctx.fillStyle = '#E6E3DC'; ctx.font = `700 26px ${DISPLAY}`;
+      wrapLines(ctx, v, colW - 8, 2).forEach((line, n) => ctx.fillText(line, cx, colY + 34 + n * 30));
+    });
+    ctx.textAlign = 'right';
+    ctx.fillStyle = '#959AA1'; ctx.font = `400 18px ${TEXT}`;
+    ctx.fillText(d.a.grade, W - P, colY - 26);
+    ctx.save(); ctx.shadowColor = 'rgba(242, 104, 34, 0.55)'; ctx.shadowBlur = 26;
+    ctx.fillStyle = '#FF8A3D'; ctx.font = `700 92px ${DISPLAY}`;
+    ctx.fillText(String(d.a.score), W - P, colY + 64); ctx.restore();
+    ctx.textAlign = 'left';
+    return new Promise((resolve) => cv.toBlob((b) => resolve(b), 'image/png'));
+  }
+  const fileName = () => ((S.name || 'resurgence-build').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '') || 'resurgence-build') + '.png';
+  async function downloadCard() {
+    const btn = $('#cardDownload');
+    if (btn) btn.disabled = true;
+    try {
+      const blob = await drawCardPng();
+      if (!blob) throw new Error('no image');
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.href = url; link.download = fileName();
+      document.body.appendChild(link); link.click(); link.remove();
+      setTimeout(() => URL.revokeObjectURL(url), 4000);
+      toast('Build card saved as an image.');
+    } catch (e) {
+      toast('Couldn\'t make the image. Take a screenshot instead.');
+    } finally {
+      if (btn) btn.disabled = false;
+    }
+  }
+  async function shareCard() {
+    try {
+      const blob = await drawCardPng();
+      const file = new File([blob], fileName(), { type: 'image/png' });
+      writeUrl();
+      await navigator.share({ files: [file], title: S.name || 'My Resurgence build', text: buildUrl() });
+    } catch (e) {
+      if (e && e.name === 'AbortError') return;
+      downloadCard();
+    }
+  }
+
+  function openCard() {
+    const { a, sets, wps, os, sp } = cardData();
     const icon = (url, wide) => (url ? h('img', { src: url, alt: '', class: wide ? 'wide' : null, width: wide ? '96' : '40', height: wide ? '45' : '40' }) : null);
     const icons = [
       ...wps.map((wp) => icon(imgOf(wp.id), true)),
@@ -2532,6 +2704,16 @@
     else if ((k === 'z' && e.shiftKey) || k === 'y') { e.preventDefault(); redo(); }
   });
   $('#cardBtn').addEventListener('click', openCard);
+  $('#cardDownload')?.addEventListener('click', downloadCard);
+  // phones that can share a picture straight to an app get a Share button too
+  (() => {
+    const shareBtn = $('#cardShare');
+    if (!shareBtn) return;
+    let canShare = false;
+    try { canShare = !!(navigator.canShare && navigator.canShare({ files: [new File([new Blob()], 'x.png', { type: 'image/png' })] })); } catch (e) { canShare = false; }
+    shareBtn.hidden = !canShare;
+    shareBtn.addEventListener('click', shareCard);
+  })();
   // The slot machine. Its art loads the first time someone points at, focuses or touches the button.
   if (slotBtn) {
     slotBtn.addEventListener('click', spinBuild);

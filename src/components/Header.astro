@@ -2,8 +2,12 @@
 import SearchModal from './SearchModal.astro';
 
 const pathname = Astro.url.pathname;
-const navItems = [
-  { label: 'Home', href: '/' },
+// mobileOnly: in the phone menu only (the logo is the way home on desktop, where the bar is tight).
+// exact: a hub link inside a dropdown that is only "current" on the hub itself, not on every page under it.
+type NavChild = { label: string; href: string; exact?: boolean };
+type NavItem = { label: string; href: string; short?: string; mobileOnly?: boolean; children?: NavChild[] };
+const navItems: NavItem[] = [
+  { label: 'Home', href: '/', mobileOnly: true },
   { 
     label: 'Tier Lists', 
     href: '#',
@@ -14,7 +18,18 @@ const navItems = [
     ]
   },
   { label: 'Builds', href: '/builds/' },
-  { label: 'Guides', href: '/guides/' },
+  {
+    label: 'Guides',
+    href: '#',
+    children: [
+      { label: 'All Guides', href: '/guides/', exact: true },
+      { label: 'Redeem Codes', href: '/guides/division-resurgence-codes/' },
+      { label: 'Safe Codes', href: '/guides/division-resurgence-safe-codes/' },
+      { label: "Beginner's Guide", href: '/guides/division-resurgence-beginner-guide/' },
+      { label: 'Endgame Tips', href: '/guides/division-resurgence-endgame-tips/' },
+      { label: 'Which Class to Pick', href: '/guides/which-specialization-to-pick/' },
+    ]
+  },
   {
     label: 'Gear',
     href: '#',
@@ -26,14 +41,16 @@ const navItems = [
     ]
   },
   { label: 'Build Planner', href: '/builder/' },
-  // short: the label in the desktop bar, where ten items only fit on one line with this one shortened
-  { label: 'Interactive Map', short: 'Map', href: '/division-resurgence-interactive-map/' },
+  // short: a shorter label for the desktop bar, if an item ever needs one to keep the bar on one line. "Interactive
+  // Map" fits in full since Home moved to the phone menu (November 26, 2026), so both menus use the same name.
+  { label: 'Interactive Map', href: '/division-resurgence-interactive-map/' },
   { label: 'News', href: '/news/' },
   { label: 'Patch Notes', href: '/patch-notes/' },
   { 
     label: 'Database', 
     href: '#',
     children: [
+      { label: 'Database Home', href: '/database/', exact: true },
       { label: 'OS Protocols', href: '/database/os-protocols/' },
       { label: 'Exotic Weapons', href: '/database/exotic-weapons/' },
       { label: 'Skill Mod Combos', href: '/database/skill-mod-combos/' },
@@ -56,7 +73,7 @@ const navItems = [
     </a>
 
     <nav class="desktop-nav" aria-label="Primary navigation">
-      {navItems.map((item) => (
+      {navItems.filter((item) => !item.mobileOnly).map((item) => (
         item.children ? (
           <div class="nav-dropdown">
             <button class="nav-dropdown__btn" aria-expanded="false" aria-controls={`dropdown-${item.label.toLowerCase().replace(/\s+/g, '-')}`}>
@@ -68,7 +85,7 @@ const navItems = [
             <ul class="nav-dropdown__menu" id={`dropdown-${item.label.toLowerCase().replace(/\s+/g, '-')}`}>
               {item.children.map(child => (
                 <li>
-                  <a href={child.href} aria-current={pathname.startsWith(child.href) ? 'page' : undefined}>
+                  <a href={child.href} aria-current={(child.exact ? pathname === child.href : pathname.startsWith(child.href)) ? 'page' : undefined}>
                     {child.label}
                   </a>
                 </li>
@@ -84,7 +101,7 @@ const navItems = [
                 : pathname.startsWith(item.href) ? 'page' : undefined
             }
           >
-            {'short' in item ? item.short : item.label}
+            {item.short ?? item.label}
           </a>
         )
       ))}
@@ -130,7 +147,7 @@ const navItems = [
           <ul class="mobile-dropdown__menu" id={`mobile-dropdown-${item.label.toLowerCase().replace(/\s+/g, '-')}`}>
             {item.children.map(child => (
               <li>
-                <a href={child.href} aria-current={pathname.startsWith(child.href) ? 'page' : undefined}>
+                <a href={child.href} aria-current={(child.exact ? pathname === child.href : pathname.startsWith(child.href)) ? 'page' : undefined}>
                   {child.label}
                 </a>
               </li>

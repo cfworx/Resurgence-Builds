@@ -3,7 +3,7 @@
  * TierBoard.astro: a tier list ranked by player votes. Rows S to D plus "Unranked"; each card shows its vote spread
  * and count. Drawn from the deploy-time snapshot; public/js/tier-votes.js loads the live totals, re-sorts the cards
  * (animated) and keeps polling while the page is open. With `quick`, every card has a Rank button that votes right
- * there (OS Protocols); otherwise its "Rank it" link goes to the item's vote bar (builds). See VOTES.md.
+ * there (both tier lists since November 26, 2026); otherwise its "Rank it" link goes to the item's vote bar. See VOTES.md.
  */
 import '../styles/tier-votes.css';
 import { TIERS, TIER_WORDS, compareItems, snapshotItems, voteCount, type VoteKind } from '../utils/votes';
@@ -47,7 +47,7 @@ const eager = new Set(rows.flatMap((r) => groups[r.key]).slice(0, 6).map((it) =>
 
 <div class="tb" role="group" data-tv-board data-kind={kind} aria-label={`Tier list of ${label}, ranked by player votes`}>
   {rows.map((row) => (
-    <section class={`tb__row tb__row--${row.key.toLowerCase()}${groups[row.key].length ? '' : ' is-empty'}`} data-tv-row={row.key} aria-label={row.key === 'U' ? `Unranked ${label}` : `${row.key} tier`}>
+    <section class={`tb__row tb__row--${row.key.toLowerCase()}${groups[row.key].length ? '' : ' is-empty'}`} data-tv-row={row.key} data-tv-empty={row.empty} aria-label={row.key === 'U' ? `Unranked ${label}` : `${row.key} tier`}>
       <div class="tb__label" aria-hidden="true">
         <span class="tb__labelin">
           <b>{row.key === 'U' ? 'Unranked' : row.key}</b>
@@ -84,8 +84,9 @@ const eager = new Set(rows.flatMap((r) => groups[r.key]).slice(0, 6).map((it) =>
           </article>
         ))}
       </div>
-      <p class="tb__empty">{row.empty}</p>
+      {/* Only an empty row says so: tier-votes.js adds or removes this line when live votes empty or fill a row */}
+      {groups[row.key].length === 0 && <p class="tb__empty">{row.empty}</p>}
     </section>
   ))}
 </div>
-<script is:inline src="/js/tier-votes.js?v=1" defer></script>
+<script is:inline src="/js/tier-votes.js?v=2" defer></script>

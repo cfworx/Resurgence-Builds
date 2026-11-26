@@ -67,15 +67,15 @@ const faqs = [
   },
   {
     question: 'How does the build tier list work?',
-    answer: 'Players rank it. Every build guide ends with an S to D vote. Each vote is worth points (S 5, A 4, B 3, C 2, D 1), and a build\'s average sets its tier, so even one vote places it. The list re-sorts live as votes come in.',
+    answer: 'Players rank it. Every build has a Rank button here, and every build guide ends with the same S to D vote. Each vote is worth points (S 5, A 4, B 3, C 2, D 1), and a build\'s average sets its tier, so even one vote places it. The list re-sorts live as votes come in.',
   },
   {
     question: 'Can I change my vote?',
-    answer: 'Yes. Open the build and pick another tier: the new pick replaces your old one. It\'s one vote per build, and you don\'t need an account.',
+    answer: 'Yes. Tap Rank again, or open the build, and pick another tier: the new pick replaces your old one. It\'s one vote per build, and you don\'t need an account.',
   },
   {
     question: 'Why is a build unranked?',
-    answer: 'Nobody has voted on it yet. Open it, scroll to the end and rank it: the first vote sets its tier.',
+    answer: 'Nobody has voted on it yet. Tap Rank on its card, or read it first and rank it at the end: the first vote sets its tier.',
   },
   {
     question: 'How do you stop people from spamming votes?',
@@ -121,12 +121,12 @@ const faqs = [
     </p>
 
     <ol class="thow">
-      <li><b>1</b><span>Open a build</span></li>
-      <li><b>2</b><span>Rank it at the end <span class="tier-chips" aria-hidden="true">{TIERS.map((t) => <span class={`tier-chip tier-chip--${t.toLowerCase()}`}>{t}</span>)}</span></span></li>
+      <li><b>1</b><span>Find a build</span></li>
+      <li><b>2</b><span>Tap Rank <span class="tier-chips" aria-hidden="true">{TIERS.map((t) => <span class={`tier-chip tier-chip--${t.toLowerCase()}`}>{t}</span>)}</span></span></li>
       <li><b>3</b><span>The average sets its tier</span></li>
     </ol>
 
-    <TierBoard kind="build" items={items} label="builds" />
+    <TierBoard kind="build" items={items} quick label="builds" />
 
     <details class="tl-fine">
       <summary>How the ranking works</summary>

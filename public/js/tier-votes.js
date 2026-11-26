@@ -164,9 +164,20 @@
       }
     });
   }
+  // An empty row shows its line (from data-tv-empty); a row with cards has no such line in the page at all.
   function updateEmpty(board) {
     all('[data-tv-row]', board).forEach(function (row) {
-      row.classList.toggle('is-empty', !row.querySelector('[data-tv-card]:not([hidden])'));
+      var empty = !row.querySelector('[data-tv-card]:not([hidden])');
+      row.classList.toggle('is-empty', empty);
+      var line = row.querySelector('.tb__empty');
+      if (empty && !line && row.getAttribute('data-tv-empty')) {
+        line = document.createElement('p');
+        line.className = 'tb__empty';
+        line.textContent = row.getAttribute('data-tv-empty');
+        row.appendChild(line);
+      } else if (!empty && line) {
+        line.remove();
+      }
     });
   }
 

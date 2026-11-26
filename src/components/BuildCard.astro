@@ -15,9 +15,13 @@ export interface Props {
   imageAlt?: string;
   /** true for the first cards on a listing (first screen) */
   eager?: boolean;
+  /** Who made the build ("GGReborn", or "RapidF5" for our own), shown after the patch. Left out on a creator's own page. */
+  creator?: string;
+  /** The creator's page on this site, when they have one */
+  creatorHref?: string;
 }
 
-const { title, href, specialization, playstyle, description, patch, pve, pvp, tags = [], featuredImage, imageAlt, eager = false } = Astro.props;
+const { title, href, specialization, playstyle, description, patch, pve, pvp, tags = [], featuredImage, imageAlt, eager = false, creator, creatorHref } = Astro.props;
 // Sized copies of in-game images (scripts/build-post-images.mjs). Wide loadout screenshots are shown
 // whole (contain) over the blurred copy instead of being cropped to the card's 16:9 frame.
 const img = postImage(featuredImage);
@@ -77,7 +81,10 @@ const getSpecClass = (spec: string) => {
       <p class="card__title">
         <a href={href} class="card__link">{title}</a>
       </p>
-      <p class="card__meta">{/^\d/.test(patch) ? `Patch ${patch}` : patch}</p>
+      <p class="card__meta">
+        {/^\d/.test(patch) ? `Patch ${patch}` : patch}
+        {creator && <span class="build-card__by"> · by {creatorHref ? <a href={creatorHref} class="build-card__by-link">{creator}</a> : creator}</span>}
+      </p>
       <p class="card__description">{description}</p>
     </div>
 
@@ -151,6 +158,14 @@ const getSpecClass = (spec: string) => {
     position: relative;
     z-index: 2;
   }
+  .build-card__by-link {
+    position: relative;
+    z-index: 2;
+    color: inherit;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+  .build-card__by-link:hover { color: var(--accent); }
 </style>
 
 <script>

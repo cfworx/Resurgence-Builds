@@ -5,6 +5,7 @@ import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import SectionTag from '../../components/SectionTag.astro';
 import { getCollection } from 'astro:content';
 import { verifiedPatch } from '../../data/site-config';
+import { CREATORS, OWN_PAGE_MIN, buildsOf, creditedName } from '../../data/creators';
 const lastVerified = verifiedPatch('Patch 1.1.2.2'); // Bump: drop the arg ONLY after re-verifying this page's content in-game (CURRENT_PATCH is a ceiling, not an auto-bump)
 
 export async function getStaticPaths() {
@@ -189,6 +190,14 @@ const faqs = [
 const boldStars = (t: string) => t
   .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
   .replace(/\*\*(.+?)\*\*/g, '<strong style="color: var(--ink);">$1</strong>');
+// Who made each build (the same byline the builds page shows), linked to the creator's page when they have one
+const everyBuild = await getCollection('builds');
+const creatorPage = new Map(CREATORS.filter((c) => buildsOf(c, everyBuild).length >= OWN_PAGE_MIN).map((c) => [c.name, `/creators/${c.slug}/`]));
+const bylineOf = (author: string) => {
+  const name = creditedName(author) ?? author.replace(/\s*\(.*$/, '').trim();
+  return { name, href: creatorPage.get(name) };
+};
+
 ---
 
 <BaseLayout
@@ -317,6 +326,8 @@ const boldStars = (t: string) => t
               tags={build.data.tags}
               featuredImage={build.data.featuredImage}
               imageAlt={build.data.imageAlt}
+              creator={bylineOf(String(build.data.author || 'RapidF5')).name}
+              creatorHref={bylineOf(String(build.data.author || 'RapidF5')).href}
             />
           </div>
         ))}

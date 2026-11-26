@@ -106,7 +106,9 @@ screenshots in phone emulation are misleading).
   `.ti-sort__btn`, `.ti-filter__btn`): square mono buttons, 44px tall. Set `--filter-color` on a button to
   tint its selected state. Don't restyle these in page styles.
 - Builds page: one wrapped filter row. No separate "Class hubs" row; picking a class shows that class's
-  guide link under the filters.
+  guide link under the filters. Since November 26, 2026 the chips work in two groups (mode, class: one pick each, tap
+  again to clear, All clears everything), and under them sit three selects (Role, Patch, Sort: newest or top rated by
+  players, from the live votes) and a count. Cards say who made the build after the patch ("by GGReborn").
 - Card descriptions use the body size (`--step-0`), not 15px.
 
 ## Database pages and ads, November 15, 2026
@@ -197,7 +199,13 @@ screenshots in phone emulation are misleading).
 - Photos inside a post are figures with captions (`.shot` in global.css). Portrait pictures are narrower and centred
   (`.shot--tall`); two pictures written on neighboring lines sit side by side (`.shot-row`), which is how a front and a
   back cover are shown.
-- The desktop menu has ten items and they only just fit on one line: "Interactive Map" shows as "Map" there, the gap is
-  20px and labels cannot wrap. Measure (about 40px to spare at 1152px wide) before adding or lengthening an item.
+- The desktop menu has nine items since November 26, 2026: Home is in the phone menu only (the logo goes home), which
+  made room for "Interactive Map" in full, the same name as in the phone menu. Guides is a dropdown (All Guides, Redeem
+  Codes, Safe Codes and the most-read guides) and Database starts with Database Home. The gap is 20px and labels
+  cannot wrap: measure at 1152px wide before adding or lengthening an item.
+- The home page, top to bottom: hero (Browse Builds, Build Planner, Interactive Map), the Live now strip, one row of
+  tool links (tier lists, OS Protocols, database, codes, drop rates), then the Latest feed. The feed carries the newest
+  36 posts plus the newest 9 of each filter, with links to every section for older posts (it used to carry all of
+  them: 113 cards and 305 KB of HTML).
 - The home page keeps reviews out of the Latest feed and shows three of them in their own row below it, with links to
   the controller guide, the gift guide and the books-in-order guide.

@@ -4,12 +4,28 @@ import BuildCard from '../../components/BuildCard.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import SectionTag from '../../components/SectionTag.astro';
 import { getCollection } from 'astro:content';
-import { CURRENT_PATCH_PLAIN } from '../../data/site-config';
+import { CURRENT_PATCH, CURRENT_PATCH_PLAIN } from '../../data/site-config';
+import { CREATORS, OWN_PAGE_MIN, buildsOf, creditedName } from '../../data/creators';
+import { snapshotItems, TIERS } from '../../utils/votes';
 
 const allBuilds = await getCollection('builds');
 const sorted = allBuilds.sort((a, b) => b.data.lastUpdated.getTime() - a.data.lastUpdated.getTime());
 
 const specs = [...new Set(allBuilds.map(b => b.data.specialization))];
+// Roles in a fixed order, only the ones some build has
+const roles = ['DPS', 'Tank', 'Support', 'Hybrid'].filter((r) => allBuilds.some((b) => b.data.playstyle === r));
+const currentCount = allBuilds.filter((b) => b.data.patch === CURRENT_PATCH).length;
+
+// Who made each build, and the creator's page when they have one (two or more builds)
+const creatorPage = new Map(CREATORS.filter((c) => buildsOf(c, allBuilds).length >= OWN_PAGE_MIN).map((c) => [c.name, `/creators/${c.slug}/`]));
+const byline = (author: string) => {
+  const name = creditedName(author) ?? author.replace(/\s*\(.*$/, '').trim();
+  return { name, href: creatorPage.get(name) };
+};
+
+// Player votes at deploy time (the page script swaps in the live totals): for the "Top rated" sort
+const snap = snapshotItems('build');
+const tierRank = (t: string | null | undefined) => (t ? TIERS.length - TIERS.indexOf(t as any) : 0);
 
 const breadcrumbItems = [{ name: 'Builds', url: '/builds/' }];
 
@@ -38,17 +54,42 @@ const itemListLd = {
     <SectionTag label="Builds" />
     <h1 class="heading-accent">Division Resurgence Builds</h1>
     <p style="color:var(--ink-muted);margin-bottom:var(--sp-6);">
-      Every build guide on the site, our own and the <a href="/creators/" style="color:var(--accent);text-decoration:underline;text-underline-offset:2px;">creators'</a> we've documented. Each card shows the patch it was verified on.
+      Every build guide on the site, our own and the <a href="/creators/" style="color:var(--accent);text-decoration:underline;text-underline-offset:2px;">creators'</a> we've documented: {sorted.length} builds for {specs.length} specializations, {currentCount} of them written for {CURRENT_PATCH_PLAIN}. Each card shows the patch it was checked on, and players rank them on the <a href="/tier-list/" style="color:var(--accent);text-decoration:underline;text-underline-offset:2px;">build tier list</a>.
     </p>
 
     <div class="filter-bar" id="build-filters" role="group" aria-label="Filter builds">
-      <button class="filter-btn is-active" data-filter="all">All</button>
+      <button class="filter-btn is-active" data-group="all" aria-pressed="true">All</button>
       <div class="filter-separator" aria-hidden="true"></div>
-      <button class="filter-btn" data-filter="pve">PvE</button>
-      <button class="filter-btn" data-filter="pvp">PvP</button>
-      <button class="filter-btn" data-filter="pvepvp">PvE/PvP</button>
+      <button class="filter-btn" data-group="mode" data-value="pve" aria-pressed="false">PvE</button>
+      <button class="filter-btn" data-group="mode" data-value="pvp" aria-pressed="false">PvP</button>
+      <button class="filter-btn" data-group="mode" data-value="pvepvp" aria-pressed="false">PvE/PvP</button>
       <div class="filter-separator" aria-hidden="true"></div>
-      {specs.map(s => <button class="filter-btn" data-filter={s}>{s}</button>)}
+      {specs.map(s => <button class="filter-btn" data-group="spec" data-value={s} aria-pressed="false">{s}</button>)}
+    </div>
+
+    <div class="build-tools">
+      <label class="build-tools__field">
+        <span class="build-tools__label">Role</span>
+        <select id="role-filter">
+          <option value="all">All roles</option>
+          {roles.map((r) => <option value={r}>{r}</option>)}
+        </select>
+      </label>
+      <label class="build-tools__field">
+        <span class="build-tools__label">Patch</span>
+        <select id="patch-filter">
+          <option value="all">All patches</option>
+          <option value="current">{CURRENT_PATCH_PLAIN} only ({currentCount})</option>
+        </select>
+      </label>
+      <label class="build-tools__field">
+        <span class="build-tools__label">Sort</span>
+        <select id="sort-builds">
+          <option value="new">Newest first</option>
+          <option value="top">Top rated by players</option>
+        </select>
+      </label>
+      <p class="build-tools__count" id="build-count" aria-live="polite">{sorted.length} builds</p>
     </div>
 
     {/* The class guide link shows up when its class is picked in the filter row above */}
@@ -58,13 +99,18 @@ const itemListLd = {
 
     <div class="grid grid--3" id="builds-grid">
       {sorted.map((build, i) => (
-        <div 
+        <div
           style="display: flex; height: 100%;"
-          data-spec={build.data.specialization} 
+          data-build={build.id}
+          data-spec={build.data.specialization}
           data-playstyle={build.data.playstyle}
           data-pve={build.data.pve ? 'true' : 'false'}
           data-pvp={build.data.pvp ? 'true' : 'false'}
-          data-tags={JSON.stringify(build.data.tags || [])}
+          data-current={build.data.patch === CURRENT_PATCH ? 'true' : 'false'}
+          data-order={i}
+          data-tier={tierRank(snap[build.id]?.tier)}
+          data-avg={snap[build.id]?.avg ?? 0}
+          data-n={snap[build.id]?.n ?? 0}
         >
           <BuildCard
             title={build.data.title}
@@ -79,6 +125,8 @@ const itemListLd = {
             featuredImage={build.data.featuredImage}
             imageAlt={build.data.imageAlt}
             eager={i < 3}
+            creator={byline(String(build.data.author || 'RapidF5')).name}
+            creatorHref={byline(String(build.data.author || 'RapidF5')).href}
           />
         </div>
       ))}
@@ -104,7 +152,11 @@ const itemListLd = {
   const grid = document.getElementById('builds-grid');
   const noResults = document.getElementById('no-results');
   const clearBtn = document.getElementById('clear-filter');
-  
+  const roleSel = document.getElementById('role-filter') as HTMLSelectElement | null;
+  const patchSel = document.getElementById('patch-filter') as HTMLSelectElement | null;
+  const sortSel = document.getElementById('sort-builds') as HTMLSelectElement | null;
+  const countEl = document.getElementById('build-count');
+
   const paginationControls = document.getElementById('pagination-controls');
   const prevBtn = document.getElementById('prev-page');
   const nextBtn = document.getElementById('next-page');
@@ -112,69 +164,53 @@ const itemListLd = {
 
   const ITEMS_PER_PAGE = 9;
   let currentPage = 1;
-  let currentFilter = 'all';
+  // One pick per group (mode, class); 'all' means no filter in that group
+  const state: Record<string, string> = { mode: 'all', spec: 'all' };
+
+  const cardsOf = () => Array.from(grid?.querySelectorAll<HTMLElement>('[data-build]') ?? []);
+  const num = (el: HTMLElement, k: string) => Number(el.dataset[k]) || 0;
+
+  function sortCards() {
+    if (!grid) return;
+    const top = sortSel?.value === 'top';
+    const cards = cardsOf().sort((a, b) => top
+      // tier first, then the average, then the number of votes; unranked builds keep newest-first after them
+      ? (num(b, 'tier') - num(a, 'tier')) || (num(b, 'avg') - num(a, 'avg')) || (num(b, 'n') - num(a, 'n')) || (num(a, 'order') - num(b, 'order'))
+      : num(a, 'order') - num(b, 'order'));
+    cards.forEach((c) => grid.appendChild(c));
+  }
+
+  function matches(el: HTMLElement) {
+    const mode = state.mode;
+    if (mode === 'pve' && el.dataset.pve !== 'true') return false;
+    if (mode === 'pvp' && el.dataset.pvp !== 'true') return false;
+    if (mode === 'pvepvp' && !(el.dataset.pve === 'true' && el.dataset.pvp === 'true')) return false;
+    if (state.spec !== 'all' && el.dataset.spec !== state.spec) return false;
+    if (roleSel && roleSel.value !== 'all' && el.dataset.playstyle !== roleSel.value) return false;
+    if (patchSel && patchSel.value === 'current' && el.dataset.current !== 'true') return false;
+    return true;
+  }
 
   function filterBuilds() {
     if (!grid) return;
+    const cards = cardsOf();
+    const matched = cards.filter(matches);
+    cards.forEach((el) => { if (!matched.includes(el)) el.style.display = 'none'; });
 
-    const cards = Array.from(grid.querySelectorAll<HTMLElement>('[data-spec]'));
-    let matchedCards: HTMLElement[] = [];
-
-    cards.forEach((el) => {
-      let show = false;
-      if (currentFilter === 'all') {
-        show = true;
-      } else if (currentFilter === 'pve') {
-        show = el.dataset.pve === 'true';
-      } else if (currentFilter === 'pvp') {
-        show = el.dataset.pvp === 'true';
-      } else if (currentFilter === 'pvepvp') {
-        show = el.dataset.pve === 'true' && el.dataset.pvp === 'true';
-      } else {
-        show = el.dataset.spec === currentFilter;
-      }
-
-      if (show) {
-        matchedCards.push(el);
-      } else {
-        el.style.display = 'none';
-      }
-    });
-
-    const totalPages = Math.ceil(matchedCards.length / ITEMS_PER_PAGE);
+    const totalPages = Math.ceil(matched.length / ITEMS_PER_PAGE);
     if (currentPage > totalPages) currentPage = totalPages || 1;
+    const start = (currentPage - 1) * ITEMS_PER_PAGE;
+    matched.forEach((card, i) => { card.style.display = i >= start && i < start + ITEMS_PER_PAGE ? '' : 'none'; });
 
-    const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
-    const endIndex = startIndex + ITEMS_PER_PAGE;
-
-    matchedCards.forEach((card, index) => {
-      if (index >= startIndex && index < endIndex) {
-        card.style.display = '';
-      } else {
-        card.style.display = 'none';
-      }
-    });
-
-    if (noResults) {
-      noResults.style.display = matchedCards.length === 0 ? '' : 'none';
-    }
+    if (countEl) countEl.textContent = matched.length === cards.length ? `${cards.length} builds` : `${matched.length} of ${cards.length} builds`;
+    if (noResults) noResults.style.display = matched.length === 0 ? '' : 'none';
 
     if (paginationControls && prevBtn && nextBtn && pageInfo) {
       if (totalPages > 1) {
         paginationControls.style.display = 'flex';
         pageInfo.textContent = `Page ${currentPage} of ${totalPages}`;
-        
-        if (currentPage === 1) {
-          prevBtn.setAttribute('disabled', 'true');
-        } else {
-          prevBtn.removeAttribute('disabled');
-        }
-
-        if (currentPage === totalPages) {
-          nextBtn.setAttribute('disabled', 'true');
-        } else {
-          nextBtn.removeAttribute('disabled');
-        }
+        if (currentPage === 1) prevBtn.setAttribute('disabled', 'true'); else prevBtn.removeAttribute('disabled');
+        if (currentPage === totalPages) nextBtn.setAttribute('disabled', 'true'); else nextBtn.removeAttribute('disabled');
       } else {
         paginationControls.style.display = 'none';
       }
@@ -182,63 +218,102 @@ const itemListLd = {
   }
 
   const classGuide = document.getElementById('class-guide');
-  function setActiveButton(activeBtn: Element) {
-    filterBar?.querySelectorAll('.filter-btn').forEach((b) => b.classList.remove('is-active'));
-    activeBtn.classList.add('is-active');
-    // show the guide link for the class that was picked, if the filter is a class
-    const picked = activeBtn.getAttribute('data-filter');
+  function paintButtons() {
+    filterBar?.querySelectorAll<HTMLElement>('.filter-btn').forEach((b) => {
+      const g = b.dataset.group || '';
+      const on = g === 'all' ? state.mode === 'all' && state.spec === 'all' : state[g] === b.dataset.value;
+      b.classList.toggle('is-active', on);
+      b.setAttribute('aria-pressed', String(on));
+    });
+    // the guide link for the class that's picked, if one is
     let any = false;
     classGuide?.querySelectorAll<HTMLElement>('a[data-spec]').forEach((a) => {
-      a.hidden = a.dataset.spec !== picked;
+      a.hidden = a.dataset.spec !== state.spec;
       if (!a.hidden) any = true;
     });
     if (classGuide) classGuide.hidden = !any;
   }
 
-  if (filterBar) {
-    filterBar.addEventListener('click', (e) => {
-      const btn = (e.target as HTMLElement).closest('.filter-btn');
-      if (!btn) return;
-      setActiveButton(btn);
-      currentFilter = btn.getAttribute('data-filter') || 'all';
-      currentPage = 1;
-      filterBuilds();
-    });
+  function resetAll() {
+    state.mode = 'all';
+    state.spec = 'all';
+    if (roleSel) roleSel.value = 'all';
+    if (patchSel) patchSel.value = 'all';
   }
 
-  if (clearBtn) {
-    clearBtn.addEventListener('click', () => {
-      const allBtn = filterBar?.querySelector('[data-filter="all"]');
-      if (allBtn) setActiveButton(allBtn);
-      currentFilter = 'all';
-      currentPage = 1;
-      filterBuilds();
-    });
-  }
+  filterBar?.addEventListener('click', (e) => {
+    const btn = (e.target as HTMLElement).closest<HTMLElement>('.filter-btn');
+    if (!btn) return;
+    const g = btn.dataset.group || 'all';
+    if (g === 'all') resetAll();
+    // picking the active one again clears that group
+    else state[g] = state[g] === btn.dataset.value ? 'all' : (btn.dataset.value || 'all');
+    currentPage = 1;
+    paintButtons();
+    filterBuilds();
+  });
 
-  if (prevBtn) {
-    prevBtn.addEventListener('click', () => {
-      if (currentPage > 1) {
-        currentPage--;
-        filterBuilds();
-        grid?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }
-    });
-  }
+  [roleSel, patchSel].forEach((sel) => sel?.addEventListener('change', () => { currentPage = 1; filterBuilds(); }));
+  sortSel?.addEventListener('change', () => { currentPage = 1; sortCards(); filterBuilds(); });
 
-  if (nextBtn) {
-    nextBtn.addEventListener('click', () => {
-      currentPage++;
+  clearBtn?.addEventListener('click', () => {
+    resetAll();
+    currentPage = 1;
+    paintButtons();
+    filterBuilds();
+  });
+
+  prevBtn?.addEventListener('click', () => {
+    if (currentPage > 1) {
+      currentPage--;
       filterBuilds();
       grid?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    });
-  }
+    }
+  });
+  nextBtn?.addEventListener('click', () => {
+    currentPage++;
+    filterBuilds();
+    grid?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
 
+  // The page was drawn with the votes at deploy time; swap in the live totals for "Top rated"
+  const TIER_ORDER: Record<string, number> = { S: 5, A: 4, B: 3, C: 2, D: 1 };
+  fetch('/api/votes?kind=build', { credentials: 'same-origin' })
+    .then((r) => (r.ok ? r.json() : null))
+    .then((d) => {
+      if (!d || !d.items) return;
+      cardsOf().forEach((el) => {
+        const it = d.items[el.dataset.build || ''];
+        el.dataset.tier = String(it && it.n ? TIER_ORDER[it.tier] || 0 : 0);
+        el.dataset.avg = String(it && it.n ? it.avg : 0);
+        el.dataset.n = String(it ? it.n : 0);
+      });
+      if (sortSel?.value === 'top') { sortCards(); filterBuilds(); }
+    })
+    .catch(() => {});
+
+  // Selects can come back filled in after a reload or Back
+  sortCards();
+  paintButtons();
   filterBuilds();
 </script>
 
 <style>
-  #build-filters { margin-bottom: var(--sp-4); }
+  #build-filters { margin-bottom: var(--sp-3); }
+  .build-tools { display: flex; flex-wrap: wrap; align-items: flex-end; gap: var(--sp-3) var(--sp-4); margin: 0 0 var(--sp-4); }
+  .build-tools__field { display: flex; flex-direction: column; gap: var(--sp-1); }
+  .build-tools__label { font-family: var(--font-mono); font-size: var(--step--2); color: var(--ink-muted); }
+  .build-tools select {
+    min-height: var(--control); padding: 0 var(--sp-8) 0 var(--sp-3); font: inherit; font-size: 16px; color: var(--ink);
+    background: var(--surface) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23999' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E") no-repeat right 12px center;
+    border: 1px solid var(--line-strong); border-radius: var(--radius-xs); appearance: none; -webkit-appearance: none; cursor: pointer;
+  }
+  .build-tools__count { margin: 0 0 0 auto; align-self: center; font-family: var(--font-mono); font-size: var(--step--1); color: var(--ink-muted); }
+  @media (max-width: 44.99em) {
+    .build-tools__field { flex: 1 1 9rem; }
+    .build-tools select { width: 100%; }
+    .build-tools__count { flex-basis: 100%; margin: 0; }
+  }
   .class-guide { margin: 0 0 var(--sp-4); font-size: var(--step--1); }
   #builds-grid { margin-top: var(--sp-4); }
   .filter-separator { width: 1px; height: 1.5rem; background: var(--border); margin: 0 var(--sp-2); align-self: center; }

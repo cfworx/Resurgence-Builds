@@ -80,6 +80,11 @@ const posts: UnifiedPost[] = [
 // Sort by date (newest first)
 posts.sort((a, b) => b.date.getTime() - a.date.getTime());
 
+// The feed carries the newest 36 posts, plus the newest 9 of each kind so every filter button still fills a page.
+// Older posts are a click away in their own sections (links under the feed), which keeps the home page light.
+const FEED_NEWEST = 36;
+const FEED_PER_KIND = 9;
+
 // Fixed tag list
 const filterTags = [
   { label: 'News', value: 'news' },
@@ -87,6 +92,28 @@ const filterTags = [
   { label: 'Builds', value: 'build' },
   { label: 'Guides', value: 'guide' },
   { label: 'Patch Notes', value: 'patch-notes' },
+];
+
+const kept = new Set(posts.slice(0, FEED_NEWEST));
+for (const t of filterTags) posts.filter((p) => p.type === t.value).slice(0, FEED_PER_KIND).forEach((p) => kept.add(p));
+const feed = posts.filter((p) => kept.has(p));
+
+// Tier lists, tools and the pages people look up most, under the hero
+const ICON: Record<string, string> = {
+  trophy: '<path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0V4z"/><path d="M17 5h3v2a3 3 0 0 1-3 3M7 5H4v2a3 3 0 0 0 3 3"/>',
+  rows: '<path d="M4 6h16M4 12h16M4 18h10"/>',
+  chip: '<rect x="7" y="7" width="10" height="10" rx="1"/><path d="M9 3v4M15 3v4M9 17v4M15 17v4M3 9h4M3 15h4M17 9h4M17 15h4"/>',
+  grid: '<rect x="4" y="4" width="7" height="7" rx="1"/><rect x="13" y="4" width="7" height="7" rx="1"/><rect x="4" y="13" width="7" height="7" rx="1"/><rect x="13" y="13" width="7" height="7" rx="1"/>',
+  gift: '<rect x="3" y="8" width="18" height="4" rx="1"/><path d="M12 8v13M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7"/><path d="M7.5 8a2.5 2.5 0 0 1 0-5C10 3 12 8 12 8s2-5 4.5-5a2.5 2.5 0 0 1 0 5"/>',
+  dice: '<rect x="4" y="4" width="16" height="16" rx="3"/><circle cx="9" cy="9" r="1.2"/><circle cx="15" cy="15" r="1.2"/><circle cx="15" cy="9" r="1.2"/><circle cx="9" cy="15" r="1.2"/>',
+};
+const tools = [
+  { href: '/tier-list/', label: 'Build Tier List', desc: 'Ranked by players', icon: 'trophy' },
+  { href: '/tier-list/classes/', label: 'Class Tier List', desc: 'From published lists', icon: 'rows' },
+  { href: '/database/os-protocols/', label: 'OS Protocols', desc: 'Every protocol', icon: 'chip' },
+  { href: '/database/', label: 'Database', desc: 'Talents and gear', icon: 'grid' },
+  { href: '/guides/division-resurgence-codes/', label: 'Redeem Codes', desc: 'Active codes', icon: 'gift' },
+  { href: '/database/drop-rates/', label: 'Drop Rates', desc: "Ubisoft's odds", icon: 'dice' },
 ];
 
 const faqs = [
@@ -116,7 +143,7 @@ const itemListLd = {
   '@context': 'https://schema.org',
   '@type': 'ItemList',
   name: 'Latest Division Resurgence Builds, Guides & News',
-  itemListElement: posts.slice(0, 12).map((p, i) => ({
+  itemListElement: feed.slice(0, 12).map((p, i) => ({
     '@type': 'ListItem',
     position: i + 1,
     url: `https://resurgencebuilds.com${p.href}`,
@@ -156,8 +183,9 @@ const itemListLd = {
           Division Resurgence Builds, Guides <span style="color:var(--accent);">&amp;</span> Patch Notes
           <span class="hero__subtitle">The #1 Independent Source for The Division Resurgence</span>
         </h1>
-        <div class="hero__actions">
-          <a href="/builder/" class="btn btn--primary">Build Planner</a>
+        <div class="hero__actions hero__actions--three">
+          <a href="/builds/" class="btn btn--primary">Browse Builds</a>
+          <a href="/builder/" class="btn btn--outline">Build Planner</a>
           <a href="/division-resurgence-interactive-map/" class="btn btn--outline">Interactive Map</a>
         </div>
       </div>
@@ -175,6 +203,16 @@ const itemListLd = {
       </span>
     </div>
   </section>
+
+  <!-- Tier lists, tools and the most looked-up pages -->
+  <nav class="home-tools container" aria-label="Tier lists, tools and codes">
+    {tools.map((t) => (
+      <a href={t.href} class="home-tools__link">
+        <span class="home-tools__icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" set:html={ICON[t.icon]}></svg></span>
+        <span class="home-tools__text"><strong>{t.label}</strong><small>{t.desc}</small></span>
+      </a>
+    ))}
+  </nav>
 
   <hr class="divider" style="max-width:var(--max-width);margin:0 auto;" />
 
@@ -198,7 +236,7 @@ const itemListLd = {
 
       <!-- Posts Grid -->
       <div class="grid grid--3" id="posts-grid">
-        {posts.map((post, i) => (
+        {feed.map((post, i) => (
           <PostCard
             startHidden={i >= 9}
             title={post.title}
@@ -223,6 +261,14 @@ const itemListLd = {
         <span id="page-info" style="color:var(--ink); font-family:var(--font-mono); font-size:var(--step--1); white-space:nowrap;">Page 1 of 1</span>
         <button class="btn btn--outline" id="next-page" disabled>Next</button>
       </div>
+
+      <p class="feed-more">
+        <span>Older posts:</span>
+        <a href="/builds/">All builds</a>
+        <a href="/guides/">All guides</a>
+        <a href="/news/">All news</a>
+        <a href="/patch-notes/">All patch notes</a>
+      </p>
 
       <!-- Empty state (hidden by default) -->
       <div id="no-results" style="display:none;text-align:center;padding:var(--sp-12) 0;">
@@ -410,6 +456,36 @@ const itemListLd = {
 </BaseLayout>
 
 <style>
+  /* Three hero buttons: the same width side by side; on phones Browse Builds takes the full row above the other two */
+  .hero-box .hero__actions--three .btn { min-width: 12rem; }
+  @media (max-width: 34.99em) {
+    .hero-box .hero__actions--three { gap: var(--sp-3); }
+    .hero-box .hero__actions--three .btn { min-width: 0; flex: 1 1 40%; }
+    .hero-box .hero__actions--three .btn--primary { flex-basis: 100%; }
+  }
+
+  .home-tools {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 10.5rem), 1fr));
+    gap: var(--sp-3);
+    padding-block: var(--sp-6);
+  }
+  @media (max-width: 34.99em) { .home-tools { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--sp-2); } }
+  .home-tools__link {
+    display: flex; align-items: center; gap: var(--sp-3); min-height: 64px; padding: var(--sp-3);
+    border: 1px solid var(--border); border-radius: var(--radius-sm); background: var(--surface);
+    color: var(--ink); text-decoration: none; transition: border-color 0.2s, background 0.2s;
+  }
+  .home-tools__link:hover { border-color: var(--accent); background: rgba(242, 104, 34, 0.06); }
+  .home-tools__icon { display: inline-flex; flex: none; color: var(--accent); }
+  .home-tools__text { display: flex; flex-direction: column; min-width: 0; line-height: var(--lh-snug); }
+  .home-tools__text strong { font-size: var(--step--1); color: var(--ink-heading); }
+  .home-tools__text small { font-size: var(--step--2); color: var(--ink-muted); overflow-wrap: anywhere; }
+
+  .feed-more { display: flex; flex-wrap: wrap; align-items: center; gap: var(--sp-2) var(--sp-5); margin: var(--sp-6) 0 0; max-width: none; font-size: var(--step--1); color: var(--ink-muted); }
+  .feed-more a { display: inline-flex; align-items: center; min-height: var(--control); color: var(--accent); font-weight: 700; text-decoration: none; }
+  .feed-more a:hover { text-decoration: underline; }
+
   .gear-links { display: flex; flex-wrap: wrap; gap: var(--sp-2) var(--sp-5); margin: 0 0 var(--sp-6); max-width: none; font-size: var(--text-sm); }
   .gear-links a { display: inline-flex; align-items: center; min-height: var(--control); color: var(--accent); text-decoration: none; font-weight: 700; }
   .gear-links a:hover { text-decoration: underline; }

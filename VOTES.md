@@ -1,8 +1,8 @@
 # Player votes (the tier lists)
 
 Since October 31, 2026 both tier lists are ranked by readers, not by us. Every build page ends with "How would you
-rank this build?" and five buttons, S to D. Every OS Protocol has the same vote on its database page, and the OS
-Protocol tier list has a Rank button on each card. No account, one vote per reader per item, changeable anytime. The
+rank this build?" and five buttons, S to D. Every OS Protocol has the same vote on its database page, and both tier
+lists have a Rank button on each card (the build list since November 26, 2026). No account, one vote per reader per item, changeable anytime. The
 tier lists re-sort live in the browser and are redrawn from the latest votes at every deploy.
 
 ## How a tier is worked out
@@ -18,7 +18,7 @@ tier lists re-sort live in the browser and are redrawn from the latest votes at 
 |---|---|
 | Vote bar ("How would you rank...?") | `src/components/TierVote.astro`. On build pages (BuildLayout puts it above the comments) and OS Protocol pages. |
 | Player-rank badge | `src/components/TierBadge.astro`, in the badge row of build pages and OS Protocol pages. |
-| Tier boards | `src/components/TierBoard.astro`, used by `src/pages/tier-list/index.astro` (builds) and `os-protocols.astro`. |
+| Tier boards | `src/components/TierBoard.astro`, used by `src/pages/tier-list/index.astro` (builds) and `os-protocols.astro`. A row's "empty" line is only in the page when the row is empty (the text sits in `data-tv-empty`, and the script adds or removes the line as live votes move cards), so a full row never carries a line saying it's empty. |
 | Styles | `src/styles/tier-votes.css`; tier colors are the `--tier-*` tokens in `src/styles/global.css`. |
 | Browser script | `public/js/tier-votes.js`: loads totals, sends votes, re-sorts boards (animated), polls every 30 s while a tier list is open, pauses after 20 idle minutes. Bump `?v=` in the three components when it changes. |
 | API | `functions/api/votes.js`: `GET /api/votes?kind=build|os` (totals, cached 20 s at Cloudflare and in the browser), `POST /api/votes` `{kind, id, tier, elapsed}`. Shared code: `lib/votes.mjs`. Unit tests: `npm run test:votes`. |

@@ -16,4 +16,4 @@ const now = snapshotItems(kind)[id];
   <span class={`tier-chip ${now?.tier ? `tier-chip--${now.tier.toLowerCase()}` : 'tier-chip--none'}`} data-tv-letter>{now?.tier ?? '?'}</span>
   <span data-tv-count>{now ? voteCount(now.n) : 'Unranked: rank it'}</span>
 </a>
-<script is:inline src="/js/tier-votes.js?v=1" defer></script>
+<script is:inline src="/js/tier-votes.js?v=2" defer></script>
