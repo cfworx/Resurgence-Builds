@@ -10,7 +10,7 @@ shareTitle: "The big update has a date: December 1"
 shareText: "Ubisoft's Steam post sets a showcase on November 30, the Winter Update on December 1 and a dev livestream on December 3. Here's the schedule."
 faqs:
   - question: "When is the Division Resurgence Winter Update?"
-    answer: "December 1, 2026. Ubisoft's November 24 Steam post says: 'The biggest update yet comes to The Division Resurgence on December 1st, 2026.' Ubisoft didn't give a time of day or a maintenance window, so clear your calendar loosely and your inventory firmly."
+    answer: "December 1, 2026. Ubisoft's November 24 Steam post says: 'The biggest update yet comes to The Division Resurgence on December 1st, 2026.' Ubisoft's November 27 reminder says 'the update itself goes live the next morning' after the November 30 showcase, but gives no exact time, time zone or maintenance window, so clear your calendar loosely and your inventory firmly."
   - question: "What time is the Division Resurgence Agent Briefing?"
     answer: "Monday, November 30, 2026 at 6 PM CET, on Ubisoft's Twitch channel twitch.tv/thedivisiongame. That works out to 17:00 UTC, 12 PM Eastern and 9 AM Pacific, which is right when your boss schedules the meeting that could have been an email."
   - question: "Is the Winter Update Season 3?"
@@ -33,7 +33,7 @@ If you've been grinding the same Season 2 Phase 2 pass since September 16 and wo
 | **Tuesday, December 1** | Winter Update | "The biggest update yet comes to The Division Resurgence on December 1st, 2026." |
 | **Thursday, December 3** | Dev Livestream | "Two days after launch, the team goes live to play the new content with you and answer your questions." |
 
-For the time-zone math: 6 PM CET on November 30 is **17:00 UTC**, **12 PM Eastern** and **9 AM Pacific**. Ubisoft didn't give a time for the update itself on December 1, or say whether there will be maintenance.
+For the time-zone math: 6 PM CET on November 30 is **17:00 UTC**, **12 PM Eastern** and **9 AM Pacific**. For the update itself, Ubisoft's November 27 reminder only says "the update itself goes live the next morning". It gives no exact time or time zone, and doesn't say whether there will be maintenance.
 
 ## Why this matters
 
@@ -45,7 +45,7 @@ Ubisoft also says "the blog post and full patch notes will be published right af
 
 ## What we don't know yet
 
-- **What's in it.** Ubisoft's post is dates only: "That's all we can say for now."
+- **What's in it.** The November 24 post is dates only: "That's all we can say for now." The November 27 reminder adds a hint, not a list: the showcase covers "what's new, what's changed, and what you asked for," and if you've posted about the game on Steam, Reddit, Discord or X, "chances are you'll recognize some of it."
 - **Whether it's Season 3.** Ubisoft calls it the Winter Update. The April roadmap said Season 3 "this winter will bring a major story expansion to the game," but the November 24 post doesn't use the words Season 3 or story expansion, so we won't either.
 - **What happens to the current pass.** The post doesn't mention the Season 2 Phase 2 pass or the Diamondback. If you still have tiers left, the in-game timer is the only clock that counts, and finishing it before December 1 is the safe play.
 - **Whether Deadlock arrives.** Ubisoft's Season 2 trailer showed a Deadlock exotic as the free reward of a Classified Ops Pass 2.3 that never started. [What we know about Deadlock](/news/deadlock-exotic-what-we-know/).
@@ -58,10 +58,14 @@ Ubisoft also says "the blog post and full patch notes will be published right af
 3. **Write down your build.** Big updates tend to move numbers, and it's easier to fix a build you remember. Ours are on the [builds page](/builds/), each with what [Season 2 Phase 2](/patch-notes/season-2-phase-2/) changed.
 4. **Bring questions to December 3.** The dev livestream is where the team says it will "answer your questions," so that's the place for the ones the patch notes don't settle.
 
+> [!INFO] November 27 reminder
+> Ubisoft posted a reminder on Steam on November 27: same showcase (Monday, November 30, 6 PM CET on twitch.tv/thedivisiongame), same update date (December 1), and a promise that this "isn't a quick sizzle." The one new detail is timing: "the update itself goes live the next morning."
+
 We'll update this post with the showcase details on November 30.
 
 ## Sources
 
+- [Steam: Watch the AGIENT BRIEFING live! (November 27, 2026)](https://steamcommunity.com/games/3749720/announcements/detail/705537902631716547)
 - [Steam: Upcoming schedule: Agent Briefing on November 30th, update on December 1st (November 24, 2026)](https://steamcommunity.com/games/3749720/announcements/detail/705537268888110627)
 - [@TheDivMobile: Season 2 Phase 2 extension (October 21, 2026)](https://x.com/TheDivMobile/status/2112936959467561123)
 - [Ubisoft News: Roadmap, PC launch, story expansion and more (April 28, 2026)](https://news.ubisoft.com/en-us/article/9ZzMWcx5ADnaxAiOO3e0w/the-division-resurgence-roadmap-pc-launch-story-expansion-and-more)
