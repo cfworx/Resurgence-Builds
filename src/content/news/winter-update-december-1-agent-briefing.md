@@ -14,7 +14,7 @@ faqs:
   - question: "What time is the Division Resurgence Agent Briefing?"
     answer: "Monday, November 30, 2026 at 6 PM CET, on Ubisoft's Twitch channel twitch.tv/thedivisiongame. That works out to 17:00 UTC, 12 PM Eastern and 9 AM Pacific, which is right when your boss schedules the meeting that could have been an email."
   - question: "Where can I watch the Division Resurgence Winter Showcase 2026?"
-    answer: "Two places. Ubisoft's Twitch channel, twitch.tv/thedivisiongame, carries the Agent Briefing at 6 PM CET on November 30, and Ubisoft has also scheduled it as a YouTube premiere called 'The Division Resurgence Winter Showcase 2026' for the same day. Hit Notify on the premiere if YouTube is where you watch."
+    answer: "Two places. Ubisoft's Twitch channel, twitch.tv/thedivisiongame, carries the Agent Briefing at 6 PM CET on November 30, and Ubisoft has also scheduled it as a YouTube premiere called 'The Division Resurgence Winter Showcase 2026'. Its description says 'Join us November 30th at 9am PT', the same moment as the Twitch start. Hit Notify on the premiere if YouTube is where you watch."
   - question: "Is the Winter Update Season 3?"
     answer: "Ubisoft hasn't said. The November 24 post calls it the 'Winter Update' and 'the biggest update yet', and never uses the words Season 3. The April roadmap promised a Season 3 story expansion this winter, but connecting those two is our job only after Ubisoft does it first."
   - question: "When are the Winter Update patch notes coming out?"
@@ -64,13 +64,13 @@ Ubisoft also says "the blog post and full patch notes will be published right af
 > Ubisoft posted a reminder on Steam on November 27: same showcase (Monday, November 30, 6 PM CET on twitch.tv/thedivisiongame), same update date (December 1), and a promise that this "isn't a quick sizzle." The one new detail is timing: "the update itself goes live the next morning."
 
 > [!INFO] YouTube premiere
-> Ubisoft has also set the showcase up as a YouTube premiere, ["The Division Resurgence Winter Showcase 2026"](https://www.youtube.com/watch?v=WtdLpIB02Xc), with a title card dated 30/11/2026. So "Agent Briefing" and "Winter Showcase" are the same November 30 show: pick Twitch or YouTube.
+> Ubisoft has also set the showcase up as a YouTube premiere, ["The Division Resurgence Winter Showcase 2026"](https://www.youtube.com/watch?v=WtdLpIB02Xc), posted November 26. Its description: "Join us November 30th at 9am PT for The Division Resurgence Winter Showcase 2026 and discover everything you can expect for next update!" 9 AM Pacific is the same 6 PM CET as the Twitch stream, so "Agent Briefing" and "Winter Showcase" are one show: pick Twitch or YouTube.
 
 We'll update this post with the showcase details on November 30.
 
 ## Sources
 
-- [Ubisoft: The Division Resurgence Winter Showcase 2026 (YouTube premiere, November 30, 2026)](https://www.youtube.com/watch?v=WtdLpIB02Xc)
+- [Ubisoft: The Division Resurgence Winter Showcase 2026 (YouTube premiere, posted November 26, 2026)](https://www.youtube.com/watch?v=WtdLpIB02Xc)
 - [Steam: Watch the AGIENT BRIEFING live! (November 27, 2026)](https://steamcommunity.com/games/3749720/announcements/detail/705537902631716547)
 - [Steam: Upcoming schedule: Agent Briefing on November 30th, update on December 1st (November 24, 2026)](https://steamcommunity.com/games/3749720/announcements/detail/705537268888110627)
 - [@TheDivMobile: Season 2 Phase 2 extension (October 21, 2026)](https://x.com/TheDivMobile/status/2112936959467561123)

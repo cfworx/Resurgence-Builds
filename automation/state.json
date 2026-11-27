@@ -889,6 +889,9 @@
     "suggested": [],
     "lastChecked": "2026-11-27",
     "status": "blocked",
-    "note": "RSS feeds returned robots_disallowed to WebFetch on 2026-10-25; per rules no other way was tried."
+    "note": "Ubisoft channel feed https://www.youtube.com/feeds/videos.xml?user=ubisoft, Resurgence titles only (AUTOMATION.md source 9)",
+    "seen": [
+      "WtdLpIB02Xc"
+    ]
   }
 }
