@@ -172,6 +172,21 @@ Base values from the in-game Build-Making Database. His ranked-up copies read hi
 
 **Getting the Warlord:** the Dark Zone vendor, 15,000 DZ Credits since Season 2 Phase 2, without exotic mods. Recalibrating? The skill talents in [its pool](/database/exotic-weapons/warlord/) include Enhancement Trade and Ammo Charge (Skill Intensity), In Sync (Skill Damage) and Fully Charged (Engineering). None adds Skill Multi-Shot.
 
+## A Glass Cannon Version in the Dark Zone
+
+Demø2x's "The Build That Never Misses" runs a close cousin of this build through the Dark Zone, and shows one way to get Glass Cannon: a **Flimsy Body Armor v2** with Glass Cannon II (+28% Damage, -10% Damage Reduction). That chest is Boom-Shakalaka, so his split is **4 Fire Cycle and 2 Boom-Shakalaka**:
+
+| Slot | Piece | Set | Rolls | Talent |
+|---|---|---|---|---|
+| Mask | Javelina Mask (T2) | Fire Cycle | Skill Multi-Shot Chance +3.89%, Skill Crit Chance +4.74% | |
+| Body Armor | Flimsy Body Armor v2 (T1) | Boom-Shakalaka | Skill Duration +5.53%, Skill Crit Chance +5.52% | Glass Cannon II |
+| Backpack | "Horo" CarryBack (T1) | Boom-Shakalaka | Skill Multi-Shot Chance +2.77%, Skill Crit Damage +9.97% | Intense Performance |
+| Gloves | "Neptune" Protection Gloves (T2) | Fire Cycle | Skill Crit Damage +9.43%, Skill Crit Chance +4.92% | |
+| Holster | Jaivardhan Thigh Rig (T2) | Fire Cycle | Skill Crit Chance +4.05%, Skill Multi-Shot Chance +4.49% | |
+| Knee Pads | "Patella" Knee Cups (T2) | Fire Cycle | Skill Duration +7.36%, Skill Crit Damage +8.76% | |
+
+Boom-Shakalaka's two pieces add -6.0% Skill Cooldown Recovery; Fire Cycle's four add +12% Skill Crit Damage, +18% Signature Ability Charge Efficiency and +12% Skill Multi-Shot Chance. His sheet: 27.36k Power Score, 933.67k DPS, 131,759 Health, Engineering 2.94k, 61.35% Skill Crit Chance, 184.31% Skill Crit Damage and 34.26% Skill Multi-Shot Chance, holding a G36-C. He doesn't open his weapon talents, OS Protocol or skills, and the video has no commentary, so this is his gear only.
+
 ## What He Says
 
 - **Engineering first.** He calls his Warlord's Firepower core (+397 Firepower, +40 Engineering) a bad roll and is hunting an Engineering one, mods included.
@@ -181,5 +196,6 @@ Base values from the in-game Build-Making Database. His ranked-up copies read hi
 ## Sources
 
 - [PVE Enjoyer: Demolitionist Build Guide (YouTube, April 2026)](https://www.youtube.com/watch?v=zJ5t0lGR1gU)
+- [Demø2x: The Build That Never Misses (YouTube)](https://www.youtube.com/watch?v=XQXDkEt231Y), for the Dark Zone version: Attributes at 6:40, gear cards at 6:55 to 7:20.
 - In-game Build-Making Database, recorded October 28 and 29, 2026. Browse it in our [database](/database/).
 - Patch notes: [Season 2 Phase 1](/patch-notes/season-2-phase-1-the-call/), [Season 2 Phase 2](/patch-notes/season-2-phase-2/).

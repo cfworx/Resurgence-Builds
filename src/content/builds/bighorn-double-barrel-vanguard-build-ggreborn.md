@@ -135,6 +135,8 @@ A later GGReborn video, "SOLO VANGUARD BUILD!", is this build again with the **s
 
 So if you've set up this page's build, his solo video needs one change: Compound Effect on Scanning Pulse once you have it.
 
+**Close Quarters Menace or Explosive Round?** GGReborn put two Wall Street Woes runs side by side in ["Explosive Round vs Close Quarters Menace"](https://www.youtube.com/watch?v=UPZPHKU9qfE): the same Double Barrel and Bighorn kit, one with a level 50 gold Explosive Round, one with a level 50 purple Close Quarters Menace. The Explosive Round run reaches Mission Completed at 11:29 while the Close Quarters Menace run is still fighting. He gives no verdict and no damage numbers, and the two runs don't play out identically, so take it as one comparison, not a test.
+
 To watch it in a full mission, his ["4 Bullets, 1 Vanguard!" video](https://www.youtube.com/watch?v=4ikGBfSeEIA) runs the same Double Barrel and Bighorn with Scanning Pulse, Tactical Link and Smart Cover solo through Wall Street Woes on Legendary. It has no commentary and no loadout screen, so it's gameplay only.
 
 ## What Changed Since October
