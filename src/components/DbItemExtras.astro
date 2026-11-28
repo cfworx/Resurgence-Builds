@@ -11,8 +11,12 @@ interface Props {
   drops?: boolean;
   /** Build URLs the page already lists in a curated section, so they aren't repeated. */
   exclude?: string[];
+  /** Keep only the item's own odds, their source and the checked date. The general lines (pity, other
+   *  ways to get it, the link to the full table) are left to the section FAQ, which the page links in
+   *  its drops-note. Used by OS Protocol pages, where those lines read the same on all 66. */
+  brief?: boolean;
 }
-const { kind, name, drops = true, exclude = [] } = Astro.props;
+const { kind, name, drops = true, exclude = [], brief = false } = Astro.props;
 
 const rows = drops ? dropRowsFor(kind, name) : [];
 const rules = cacheRules(rows);
@@ -30,7 +34,7 @@ const dropsNote = Astro.slots.has('drops-note') ? await Astro.slots.render('drop
 {rows.length > 0 && (
   <section class="dbx-section" aria-labelledby="dbx-drops">
     <h2 id="dbx-drops" class="dbx-title">Official Drop Odds</h2>
-    <p>Chance per cache opened, from Ubisoft's published odds.{rules && <> Pity guarantees a Tier S result within {rules.pity.S} pulls and Tier A within {rules.pity.A}, not this specific item.</>}</p>
+    {!brief && <p>Chance per cache opened, from Ubisoft's published odds.{rules && <> Pity guarantees a Tier S result within {rules.pity.S} pulls and Tier A within {rules.pity.A}, not this specific item.</>}</p>}
     <div class="dbx-table-wrap">
       <table class="dbx-table t-cards">
         <thead><tr><th scope="col">Cache</th><th scope="col">Entry</th><th scope="col">Tier</th><th scope="col">Chance</th></tr></thead>
@@ -41,7 +45,9 @@ const dropsNote = Astro.slots.has('drops-note') ? await Astro.slots.render('drop
         </tbody>
       </table>
     </div>
-    <p class="dbx-note">Source: <a href={dropSource} target="_blank" rel="noopener noreferrer">Ubisoft Help Center, "Drop rates"</a>, checked {fmtDate(dropChecked)}. Full table{cacheIds.length > 1 ? 's' : ''} on our <a href={`/database/drop-rates/#${cacheIds[0]}`}>drop rates page</a>. Caches are one way to get it, not the only one.</p>
+    {brief
+      ? <p class="dbx-note">Chance per cache opened, from <a href={dropSource} target="_blank" rel="noopener noreferrer">Ubisoft Help Center, "Drop rates"</a>, checked {fmtDate(dropChecked)}.</p>
+      : <p class="dbx-note">Source: <a href={dropSource} target="_blank" rel="noopener noreferrer">Ubisoft Help Center, "Drop rates"</a>, checked {fmtDate(dropChecked)}. Full table{cacheIds.length > 1 ? 's' : ''} on our <a href={`/database/drop-rates/#${cacheIds[0]}`}>drop rates page</a>. Caches are one way to get it, not the only one.</p>}
     {dropsNote && <Fragment set:html={dropsNote} />}
   </section>
 )}
@@ -61,7 +67,7 @@ const dropsNote = Astro.slots.has('drops-note') ? await Astro.slots.render('drop
 </section>
 )}
 
-<p class="dbx-dates">Page updated <time datetime={DATABASE_UPDATED}>{fmtDate(DATABASE_UPDATED)}</time>.{rows.length > 0 && <> Drop odds checked <time datetime={dropChecked}>{fmtDate(dropChecked)}</time>.</>}</p>
+<p class="dbx-dates">Page updated <time datetime={DATABASE_UPDATED}>{fmtDate(DATABASE_UPDATED)}</time>.{rows.length > 0 && !brief && <> Drop odds checked <time datetime={dropChecked}>{fmtDate(dropChecked)}</time>.</>}</p>
 
 <style>
   .dbx-section { margin-bottom: var(--sp-8); color: var(--ink); line-height: 1.75; font-size: var(--text-base); }
