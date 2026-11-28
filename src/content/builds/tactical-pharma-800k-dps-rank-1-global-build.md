@@ -1,5 +1,5 @@
 ---
-title: "Tactical Pharma 800k DPS | Rank 1 Global Player Build"
+title: "Tactical Pharma Build: 800k DPS"
 specialization: "Field Medic"
 subclass: "Tactical Pharma"
 playstyle: DPS
@@ -8,7 +8,7 @@ pvp: true
 lastUpdated: 2026-10-28T00:00:00Z
 patch: "1.2.1"
 tags: ["Tactical Pharma", "jackpot", "fire-cycle", "chemical-trap", "glass-cannon", "backup-battery", "roguemadras", "field-medic-build", "800k-dps", "skill-damage"]
-description: "RogueMadras's 800k DPS Tactical Pharma build: Chemical Trap + Oxidizing Hive, Jackpot 4pc, Fire Cycle 2pc. Full gear, talents, and skill mods."
+description: "RogueMadras's Tactical Pharma build for The Division Resurgence: Chemical Trap, Oxidizing Hive, Jackpot 4pc, Fire Cycle 2pc and the full loadout."
 author: "RapidF5 (via RogueMadras)"
 featuredImage: "/images/division-resurgence-tactical-pharma-800k-dps-field-medic-build.png"
 imageAlt: "Division Resurgence Tactical Pharma Field Medic 800k DPS build stats from Rank 1 Global player RogueMadras showing 704k DPS with Jackpot and Fire Cycle gear"
